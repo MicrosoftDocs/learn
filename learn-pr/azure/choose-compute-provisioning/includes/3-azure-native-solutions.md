@@ -52,7 +52,7 @@ DSC is easy to read, update, and store. DSC configurations help you declare the 
 
 - **Ease of setup.** Automation state configuration is not difficult to set up but it requires the user to be familiar with the Azure portal.
 - **Management.** The service manages all of the virtual machines for you automatically. Each virtual machine can send you detailed reports concerning its state, which allows you to draw insights from this data. Automation state configuration also helps you to manage your DSC configurations more easily.
-- **Interoperability.** Automation state configation requires DSC configurations. It works with your Azure virtual machines automatically, as well as any virtual machines that you have on-premises or on another cloud provider.
+- **Interoperability.** Automation state configuration requires DSC configurations. It works with your Azure virtual machines automatically, as well as any virtual machines that you have on-premises or on another cloud provider.
 - **Configuration language.** Use PowerShell.
 - **Limitations and drawbacks.** You can only use PowerShell to define configurations.
 

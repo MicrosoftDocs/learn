@@ -6,13 +6,13 @@ In this exercise, you'll provision a web server to meet the requirements.
 
 ## Provision a web server
 
-You'll use a couple of tools together. Azure Resource Manager templates will enable you to create a template outlining the environment for your web server. Your Azure Resource Manager template can also help you define a state that you apply to your web server at the point of provisioning. You can apply your desired state by linking to a DSC extension handler inside of your Azure Resource Manager template. The DSC handler helps you enforce a state that you define in a DSC configuration.
+You'll use a couple of tools together. Azure Resource Manager templates will enable you to create a template outlining the environment for your web server. Your Resource Manager template can also help you define a state that you apply to your web server at the point of provisioning. You can apply your desired state by linking to a DSC extension handler inside of your Resource Manager template. The DSC handler helps you enforce a state that you define in a DSC configuration.
 
-In the following exercise, you'll use an Azure Resource Manager template to provision a virtual machine. The DSC extension handler that will be included in the template will enforce your state on the virtual machine. You'll use an Azure storage account to host your DSC configuration file.
+In the following exercise, you'll use an Resource Manager template to provision a virtual machine. The DSC extension handler that will be included in the template will enforce your state on the virtual machine. You'll use an Azure storage account to host your DSC configuration file.
 
 ## Clone the configuration and template
 
-Let's start by obtaining a configuration file and Azure Resource Manager (ARM) template from GitHub:
+Let's start by obtaining a configuration file and Resource Manager template from GitHub:
 
 1. In the Cloud Shell on the right, to clone the GitHub repository, run these commands:
 
@@ -74,7 +74,7 @@ The state configuration is defined in the Webserver.ps1 file, which includes the
 
 ## Configure the template
 
-The GitHub repository that you cloned also contains an ARM template. Let's add the location of the zipped configuration file to it:
+The GitHub repository that you cloned also contains a Resource Manager template. Let's add the location of the zipped configuration file to it:
 
 1. In the Cloud Shell, use this command to open the template:
 
@@ -83,6 +83,7 @@ The GitHub repository that you cloned also contains an ARM template. Let's add t
     ```
 
 1. In the **template.json** code file, in the `<parameters>` section, notice that some properties, such as `vmName`, don't include default values. You'll be prompted to enter values for those properties, when you use the template.
+
 1. To provide a default value for the configuration file URL, in the **template.json** code file, locate this code:
 
     ```json
@@ -96,8 +97,6 @@ The GitHub repository that you cloned also contains an ARM template. Let's add t
 
 1. Replace that code with this code:
 
-<!-- NOTE: this URL won't work until my PR is merged into the repo. If you want to test it before merging, use https://github.com/alistairmatthews/mslearn-choose-compute-provisioning/raw/master/Webserver.zip -->
-
     ```json
     "modulesUrl": {
         "type": "string",
@@ -109,13 +108,16 @@ The GitHub repository that you cloned also contains an ARM template. Let's add t
     ```
 
 1. To save the template, press <kbd>CTRL + S</kbd>.
+
 1. In the `<variables>` section of the **template.json**, notice that values are stored to configure networking for the virtual machine.
+
 1. In the `<resources>` section, notice that the template will create an IP address, a virtual network, and other resources, as well as the virtual machine itself.
+
 1. To close the `code` editor, press <kbd>CTRL + Q</kbd>.
 
 ## Validate your template
 
-Now that you have a completed ARM template and zipped configuration file, you can use the Azure CLI to perform a deployment. Before you deploy, you can validate your files to see if the deployment would be successful:
+Now that you have a completed template and zipped configuration file, you can use the Azure CLI to perform a deployment. Before you deploy, you can validate your files to see if the deployment would be successful:
 
 1. In the Cloud Shell to the right, to validate your deployment, run this command:
 
@@ -153,6 +155,7 @@ Now that we know the template is valid, we can perform the deployment:
     ```
 
 1. Follow the prompts to complete your deployment. If you are running on a sandbox, this deployment will take around 10 minutes.  As long as you see the response "Running.." the deployment is still busy.
+
 1. Once everything has been set up, you will have a virtual machine configured as an IIS web server. To list all of the resources in the resource group and confirm that everything has been set up, run this command:
 
     ```bash
@@ -161,6 +164,7 @@ Now that we know the template is valid, we can perform the deployment:
     ```
 
 1. You'll see all of your resources listed, which means your deployment was successful.
+
 1. To test if your IIS server is running, run this command in the shell:
 
     ```bash
@@ -173,4 +177,4 @@ Now that we know the template is valid, we can perform the deployment:
 
     ![IIS server](../media/5-iis-server-runs.png)
 
-You've provisioned a web server using Azure Resource Manager templates and enforced a desired state configuration on your machine through a DSC extension handler.
+You've provisioned a web server using Resource Manager templates and enforced a desired state configuration on your machine through a DSC extension handler.
