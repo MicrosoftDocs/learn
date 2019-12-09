@@ -21,7 +21,7 @@ prerequisites: |
   - Visual Studio Code
   - Git
   - A GitHub account
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/azure-devops/configure-infrastructure-azure-pipelines.svg
 levels:
 - beginner
 roles:
