@@ -30,7 +30,7 @@ The IoT remote device also sends out all telemetry, and logging, data. The IoT H
 
 ### Issues with lambda architecture
 
-Similar to most hybrid systems, there are issues. One of the main ones with IoT is the duplication of data and code. The more duplication there is, the greater the chance of an unwanted divergence between the duplicate copies. Developers of the IoT device sensor code need to ensure that the telemetry data being sent in the two messages is identical, where it should be. There may be code duplication in the analysis apps for the hot and cold paths. Duplication needs to be handled carefully, though is a near unavoidable consequence of a hybrid system.
+Similar to most hybrid systems, there are complexity issues. One of the main issues with IoT is the duplication of data and code. The more duplication there is, the greater the chance of an unwanted divergence between the duplicate copies. Developers of the IoT device sensor code need to ensure that the telemetry data being sent in the two messages is identical, where it should be. Also, there may be code duplication in the analysis apps, if there are separate apps for the hot and cold paths. Duplication needs to be handled carefully, though is a near unavoidable consequence of a hybrid system.
 
 ## First steps
 
