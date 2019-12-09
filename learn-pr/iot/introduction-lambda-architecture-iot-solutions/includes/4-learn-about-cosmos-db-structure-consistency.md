@@ -1,7 +1,7 @@
 
 Cosmos, another word for "universe", implies that Cosmos DB is the solution for world-wide applications. Another feature of the Cosmos DB resource is that it's well structured, not the collection of stuff that can be stored in a blob. The obvious example is a database, where each entry in the database has a consistent set of fields.
 
-Access to the data in a Cosmos DB resource is made through queries built from API calls. Cosmos DB supports a range of APIs, including, SQL API, Mongo API, Graph API, Table API, and the Cassandra API.
+Access to the data in a Cosmos DB resource is made through queries built from API calls. Cosmos DB supports a range of APIs, including, SQL API, Mongo API, Gremlin (graph) API, Azure Table API, and the Cassandra API. At the lowest level, a Cosmos DB consists of Json objects.
 
 A Cosmos DB resource is about big data, and world-wide access. An example might help.
 
