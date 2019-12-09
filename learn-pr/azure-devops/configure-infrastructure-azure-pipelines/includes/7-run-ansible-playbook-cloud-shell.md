@@ -83,6 +83,9 @@ To do so, they need to add the `become` directive to their configuration, like t
 
 A related setting, not shown here, is `become_user`. The default value of this setting is `root`. When this configuration runs, Ansible activates privilege escalation as the *root* user.
 
+> [!NOTE]
+> The meaning of `become` can vary based on the kind of system you're working with. But on Linux systems, you can think of `become` as applying the configuration with `sudo` privileges.
+
 ## Create the users playbook
 
 Now that you've verified that your VMs are connectable through Ansible, here you apply a playbook that configures service accounts on your VMs.
