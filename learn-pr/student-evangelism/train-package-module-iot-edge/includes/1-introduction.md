@@ -4,24 +4,24 @@ Suppose you work as a data scientist and would like to deploy trained machine le
 
 ![An illustration showing the flow for deploying azure machine learning module to the Edge device](../media/train-package-module.png)
 
- In this module, you'll develop a machine learning module and deploy it to a Linux device running Azure IoT Edge. Your solution will:
+In this module, you'll develop a machine learning module and deploy it to a Linux device running Azure IoT Edge. Your solution will:
 
 - Create an Azure Machine Learning module
 - Push a module container to an Azure container registry
 - Deploy an Azure Machine Learning module to your IoT Edge device
-
 - View generated data
 
 ## Learning objectives
 
-In this module, you'll:
--  Launch a module from Azure portal to IoT Edge using a container
+In this module, you will:
+- Launch a module from Azure portal to IoT Edge using a container
 - Generate simulated data from an edge device
 - Verify data generated from the edge device
 
-## Prerequisites Ability to use IoT Hub in Azure
+## Prerequisites
 
 - Ability to use IoT Hub in Azure
 - Ability to use Azure Cloud Shell
 - Experience creating and managing resources using the Azure portal or Azure Cloud Shell at the beginner level
-
+- IoT Hub
+- IoT Edge device

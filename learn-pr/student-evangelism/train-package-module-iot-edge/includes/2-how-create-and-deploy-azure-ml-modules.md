@@ -13,11 +13,8 @@ Finally, you'll **deploy the container to Azure IoT Edge device**. You create a 
 Building the machine learning is only the first step towards deploying it in production on edge devices. The workflow for deploying models production is:  
 
 1.	Register the model.
-
 2.	Prepare to deploy. (Specify assets, usage, compute target.)
-
 3.	Deploy the model to the compute target.
-
 4.	Test the deployed model as a web service.
 
 Firstly, after building the model, you must register it. A registered model is a logical grouping for one or more files that make up your model. The model is then packaged into a Docker image.  Ultimately, you deploy the model as a web service in the cloud or locally. Some additional steps may be needed during deployment. These include profiling to determine the ideal CPU and memory settings or model conversion to optimize performance.  
@@ -26,21 +23,14 @@ Firstly, after building the model, you must register it. A registered model is a
 
 You can use the following compute targets/compute resources to host your web service deployment.  
 
-Local web service
-
-Azure Machine Learning compute instance web service
-
-Azure Kubernetes Service (AKS)
-
-Azure Container Instances
-
-Azure Machine Learning compute clusters
-
-Azure Functions
-
-Azure IoT Edge
-
-Azure Data Box Edge.  
+- Local web service
+- Azure Machine Learning compute instance web service
+- Azure Kubernetes Service (AKS)
+- Azure Container Instances
+- Azure Machine Learning compute clusters
+- Azure Functions
+- Azure IoT Edge
+- Azure Data Box Edge.  
 
 In this instance, you'll use **Azure Container Instance** as a compute target.  After the model is created in a container, you can deploy the model as a container as a web service to IoT Edge devices.
 
@@ -71,4 +61,4 @@ To deploy the image you created, you first need to specify the target you want t
 
 ### Deploy container to Azure IoT Edge device
 
-You create a deployment.json file that contains the modules you want to deploy to the device and the routes. You should then push this file to the IoT Hub, which will then send it to the IoT Edge device. The IoT Edge agent will then pull the Docker images and run them. At this point, you should be able to monitor messages from your edge device to your IoT Hub. 
+You create a deployment.json file that contains the modules you want to deploy to the device and the routes. You should then push this file to the IoT Hub, which will then send it to the IoT Edge device. The IoT Edge agent will then pull the Docker images and run them. At this point, you should be able to monitor messages from your edge device to your IoT Hub.
