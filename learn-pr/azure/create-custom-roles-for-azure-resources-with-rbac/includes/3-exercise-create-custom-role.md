@@ -6,104 +6,73 @@ In this unit, you'll create and assign an RBAC role.
 
 ## Create role
 
-Create a custom role within Azure for the new employee:
+Create a custom role within Azure for the new employee.
 
-1. First, export the built-in **Virtual Machine Contributor** permissions, by running the following command:
-
-   ```azurecli
-   az role definition list --name "Virtual Machine Contributor" --output json | jq '.[] | .permissions[0].actions'
-   ```
-
-1. By taking the actions from this output and adding the required metadata, you'll have the following role definition:
-
-   ```JSON
-        {   
-        "Name": "Virtual Machine Support",
-        "Description": "Lets you manage virtual machines",
-        "IsCustom": true,
-        "Actions": [
-          "Microsoft.Authorization/*/read",
-          "Microsoft.Compute/availabilitySets/*",
-          "Microsoft.Compute/locations/*",
-          "Microsoft.Compute/virtualMachines/*",
-          "Microsoft.Compute/virtualMachineScaleSets/*",
-          "Microsoft.DevTestLab/schedules/*",
-          "Microsoft.Insights/alertRules/*",
-          "Microsoft.Network/applicationGateways/backendAddressPools/join/action",
-          "Microsoft.Network/loadBalancers/backendAddressPools/join/action",
-          "Microsoft.Network/loadBalancers/inboundNatPools/join/action",
-          "Microsoft.Network/loadBalancers/inboundNatRules/join/action",
-          "Microsoft.Network/loadBalancers/probes/join/action",
-          "Microsoft.Network/loadBalancers/read",
-          "Microsoft.Network/locations/*",
-          "Microsoft.Network/networkInterfaces/*",
-          "Microsoft.Network/networkSecurityGroups/join/action",
-          "Microsoft.Network/networkSecurityGroups/read",
-          "Microsoft.Network/publicIPAddresses/join/action",
-          "Microsoft.Network/publicIPAddresses/read",
-          "Microsoft.Network/virtualNetworks/read",
-          "Microsoft.Network/virtualNetworks/subnets/join/action",
-          "Microsoft.RecoveryServices/locations/*",
-          "Microsoft.RecoveryServices/Vaults/backupFabrics/backupProtectionIntent/write",
-          "Microsoft.RecoveryServices/Vaults/backupFabrics/protectionContainers/protectedItems/*/read",
-          "Microsoft.RecoveryServices/Vaults/backupFabrics/protectionContainers/protectedItems/read",
-          "Microsoft.RecoveryServices/Vaults/backupFabrics/protectionContainers/protectedItems/write",
-          "Microsoft.RecoveryServices/Vaults/backupPolicies/read",
-          "Microsoft.RecoveryServices/Vaults/backupPolicies/write",
-          "Microsoft.RecoveryServices/Vaults/read",
-          "Microsoft.RecoveryServices/Vaults/usages/read",
-          "Microsoft.RecoveryServices/Vaults/write",
-          "Microsoft.ResourceHealth/availabilityStatuses/read",
-          "Microsoft.Resources/deployments/*",
-          "Microsoft.Resources/subscriptions/resourceGroups/read",
-          "Microsoft.SqlVirtualMachine/*",
-          "Microsoft.Storage/storageAccounts/listKeys/action",
-          "Microsoft.Storage/storageAccounts/read",
-          "Microsoft.Support/*",
-          "Microsoft.Compute/virtualMachines/start/action",
-          "Microsoft.Compute/virtualMachines/restart/action"
-        ],
-        "NotActions": [],
-        "DataActions": [],
-        "NotDataActions": [],
-        "assignableScopes": [
-          "/subscriptions/{subscriptionId}"
-        ]
-        }
-   ```
-
-1. You should also see the last two permissions are extra, which allows the new employee to start and restart the VMs.
-1. In the `AssignableScopes` section, you'll need to replace **{subscriptionId}** with the output of the following command:
+1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
+1. Select **Cloud Shell** from the top right-hand side menu bar.
+1. Run the following command to get the subscription ID to use for your custom role definition. Copy the subscription ID.
 
    ```azurecli
-   az account list  --output json | jq '.[] | .id'
+    az account list  --output json | jq '.[] | .id, .name'
    ```
+1. Type **Code** into Cloud Shell.
+1. Paste the following role definition  into the editor. This is role definition we identified in the previous unit.
 
-1. Type **Code** into the cloud shell. Paste the definition above into the editor, then select **Save** from the three-dot menu using **VM-Support-Role.json** as the filename.
-1. To create the role, you now run the following command in the cloud shell, which should return the same JSON back in the output – a few ID fields are added:
+    ```JSON
+   {
+   "Name": "Virtual Machine Operator",
+   "Id": "88888888-8888-8888-8888-888888888888",
+   "IsCustom": true,
+   "Description": "Can monitor and restart virtual machines.",
+   "Actions": [
+     "Microsoft.Storage/*/read",
+     "Microsoft.Network/*/read",
+     "Microsoft.Compute/*/read",
+     "Microsoft.Compute/virtualMachines/start/action",
+     "Microsoft.Compute/virtualMachines/restart/action",
+     "Microsoft.Authorization/*/read",
+     "Microsoft.ResourceHealth/availabilityStatuses/read",
+     "Microsoft.Resources/subscriptions/resourceGroups/read",
+     "Microsoft.Insights/alertRules/*",
+     "Microsoft.Insights/diagnosticSettings/*",
+     "Microsoft.Support/*"
+   ],
+   "NotActions": [],
+   "DataActions": [],
+   "NotDataActions": [],
+   "AssignableScopes": [
+      "/subscriptions/{subscriptionId1}"
+   ]
+   }
+    ```
+
+1. In the `AssignableScopes` section, replace **{subscriptionId}** with the value you got from the previous step.
+1. Select **Save** from the three-dot menu on the top right-hand side of the Cloud Shell pane. 
+1. Enter **vm-operator-role.json** as the filename.
+1. Run the following command in the Cloud Shell to create the custom role:
 
    ```azurecli
-   az role definition create --role-definition VM-Support-Role.json
+   az role definition create --role-definition vm-operator-role.json
    ```
 
-1. Finally, you list all the custom roles to see if your new role is listed.
+1. Run the following command to list all the custom roles and verify yours is listed.
 
    ```azurecli
    az role definition list --custom-role-only true
    ```
 
-## Assigning roles
+## Assign role
 
-When the custom role is created, you assign it to the correct group of people/person. In the scenario, you would now assign the custom role to the new employee.
+When the custom role is created, you can assign it to a user or group. For our scenario, assign the custom role to the new employee.
 
-1. You can assign the custom role to the user as follows:
+1. Run the following command to assign the custom role to the user.
 
    ```azurecli
    USER = az ad user list --output json | jq '.[0] | .userPrincipalName' 
    az role assignment create --assignee $USER --role "Virtual Machine Support"
    ```
 
-1. You'll now list the role assignments by typing the following command into the cloud shell:
+1. Run the following command to list the role assignments and verify the you've assigned the new custom role.
 
    ```azurecli
    az role assignment list

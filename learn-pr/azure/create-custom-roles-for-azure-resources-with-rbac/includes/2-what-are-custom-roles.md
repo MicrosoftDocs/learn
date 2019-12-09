@@ -78,34 +78,94 @@ The parameter can be one of the following actions:
 - action
 - delete
 
-Using the scenario, here's an example of a custom role for managing VMs. You'll see there's a wide variety of actions that can be applied. Learning the actions available will help you better implement RBAC solutions.
+## Define custom role to manage VMs
+
+To help you identify what permissions to include in a role definition, look at built-in roles that have permissions similar to what you need. For example, for our scenario, the Virtual Machine Contributor built-in role has more permissions than the employee needs and Virtual Machine Administrator Login doesn't have enough.
+
+The following command returns the permissions for Virtual Machine Contributor.
+
+```azurecli
+az role definition list --name "Virtual Machine Contributor" --output json | jq '.[] | .permissions[0].actions'
+```
+
+The following list is the permissions for 
+Virtual Machine Contributor.
 
 ```JSON
-{
-  "Name": "Virtual Machine Operator",
-  "Id": "88888888-8888-8888-8888-888888888888",
-  "IsCustom": true,
-  "Description": "Can monitor and restart virtual machines.",
-  "Actions": [
-    "Microsoft.Storage/*/read",
-    "Microsoft.Network/*/read",
-    "Microsoft.Compute/*/read",
-    "Microsoft.Compute/virtualMachines/start/action",
-    "Microsoft.Compute/virtualMachines/restart/action",
-    "Microsoft.Authorization/*/read",
-    "Microsoft.ResourceHealth/availabilityStatuses/read",
-    "Microsoft.Resources/subscriptions/resourceGroups/read",
-    "Microsoft.Insights/alertRules/*",
-    "Microsoft.Insights/diagnosticSettings/*",
-    "Microsoft.Support/*"
-  ],
-  "NotActions": [],
-  "DataActions": [],
-  "NotDataActions": [],
-  "AssignableScopes": [
-    "/subscriptions/{subscriptionId1}",
-    "/subscriptions/{subscriptionId2}",
-    "/subscriptions/{subscriptionId3}"
-  ]
-}
+[
+  "Microsoft.Authorization/*/read",
+  "Microsoft.Compute/availabilitySets/*",
+  "Microsoft.Compute/locations/*",
+  "Microsoft.Compute/virtualMachines/*",
+  "Microsoft.Compute/virtualMachineScaleSets/*",
+  "Microsoft.DevTestLab/schedules/*",
+  "Microsoft.Insights/alertRules/*",
+  "Microsoft.Network/applicationGateways/backendAddressPools/join/action",
+  "Microsoft.Network/loadBalancers/backendAddressPools/join/action",
+  "Microsoft.Network/loadBalancers/inboundNatPools/join/action",
+  "Microsoft.Network/loadBalancers/inboundNatRules/join/action",
+  "Microsoft.Network/loadBalancers/probes/join/action",
+  "Microsoft.Network/loadBalancers/read",
+  "Microsoft.Network/locations/*",
+  "Microsoft.Network/networkInterfaces/*",
+  "Microsoft.Network/networkSecurityGroups/join/action",
+  "Microsoft.Network/networkSecurityGroups/read",
+  "Microsoft.Network/publicIPAddresses/join/action",
+  "Microsoft.Network/publicIPAddresses/read",
+  "Microsoft.Network/virtualNetworks/read",
+  "Microsoft.Network/virtualNetworks/subnets/join/action",
+  "Microsoft.RecoveryServices/locations/*",
+  "Microsoft.RecoveryServices/Vaults/backupFabrics/backupProtectionIntent/write",
+  "Microsoft.RecoveryServices/Vaults/backupFabrics/protectionContainers/protectedItems/*/read",
+  "Microsoft.RecoveryServices/Vaults/backupFabrics/protectionContainers/protectedItems/read",
+  "Microsoft.RecoveryServices/Vaults/backupFabrics/protectionContainers/protectedItems/write",
+  "Microsoft.RecoveryServices/Vaults/backupPolicies/read",
+  "Microsoft.RecoveryServices/Vaults/backupPolicies/write",
+  "Microsoft.RecoveryServices/Vaults/read",
+  "Microsoft.RecoveryServices/Vaults/usages/read",
+  "Microsoft.RecoveryServices/Vaults/write",
+  "Microsoft.ResourceHealth/availabilityStatuses/read",
+  "Microsoft.Resources/deployments/*",
+  "Microsoft.Resources/subscriptions/resourceGroups/read",
+  "Microsoft.SqlVirtualMachine/*",
+  "Microsoft.Storage/storageAccounts/listKeys/action",
+  "Microsoft.Storage/storageAccounts/read",
+  "Microsoft.Support/*"
+]
 ```
+
+For our scenario, we want a custom role that can be used for monitoring and restarting virtual machines for a specific subscription. So we want to include the following actions scoped at the subscription level: 
+- Read access to the compute, network, and storage resources
+- Ability to start and restart virtual machines
+- Access to the resource groups in the subscription
+- Access to monitoring resources
+
+We end up with the following role definition for our custom role.  
+
+```JSON
+   {
+   "Name": "Virtual Machine Operator",
+   "Id": "88888888-8888-8888-8888-888888888888",
+   "IsCustom": true,
+   "Description": "Can monitor and restart virtual machines.",
+   "Actions": [
+     "Microsoft.Storage/*/read",
+     "Microsoft.Network/*/read",
+     "Microsoft.Compute/*/read",
+     "Microsoft.Compute/virtualMachines/start/action",
+     "Microsoft.Compute/virtualMachines/restart/action",
+     "Microsoft.Authorization/*/read",
+     "Microsoft.ResourceHealth/availabilityStatuses/read",
+     "Microsoft.Resources/subscriptions/resourceGroups/read",
+     "Microsoft.Insights/alertRules/*",
+     "Microsoft.Insights/diagnosticSettings/*",
+     "Microsoft.Support/*"
+   ],
+   "NotActions": [],
+   "DataActions": [],
+   "NotDataActions": [],
+   "AssignableScopes": [
+      "/subscriptions/{subscriptionId1}" 
+   ]
+   }
+    ```

@@ -7,15 +7,15 @@ Let's use the Azure portal to find out about the custom roles in your subscripti
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account with which you activated the sandbox.
 1. In the search bar, type **Subscription** and select the subscription option.
 1. Select the subscription from the list.
-1. Select **Access Control** from the left menu.
+1. Select **Access control (IAM)** > **Roles**.
 
-    ![List all the custom roles](../media/5-users.png)
+    ![Screenshot that how to get to Access control (IAM) and Roles](../media/5-users.png)
 
-1. Select **Roles** and select **custom roles** type.
+1. Select **Type** > **CustomRole**.
 
-    ![List all the custom roles](../media/5-custom-roles.png)
+    ![Screenshot that shows custom roles selected from drop-down list](../media/5-custom-roles.png)
 
-    This action shows all the custom roles in your organization.
+    You see all the custom roles in your organization.
 
 ## Update a custom role
 
