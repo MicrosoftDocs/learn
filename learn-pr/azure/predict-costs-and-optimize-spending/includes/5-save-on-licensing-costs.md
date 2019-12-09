@@ -6,7 +6,7 @@ Many of the Azure services you deploy have the choice of running on Windows or L
 
 ## Azure Hybrid Benefit for Windows Server
 
-Many customers have invested in Windows Server licenses and would like to repurpose this investment on Azure. The Azure Hybrid Benefit gives customers the right to use these licenses for virtual machines on Azure. 
+Many customers have invested in Windows Server licenses and would like to repurpose this investment on Azure. The Azure Hybrid Benefit gives customers the right to use these licenses for virtual machines on Azure.
 
 To be eligible for this benefit, your Windows licenses must be covered by Software Assurance. The following guidelines will also apply:
 
