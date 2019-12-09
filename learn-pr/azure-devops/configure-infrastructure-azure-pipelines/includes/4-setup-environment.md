@@ -1,19 +1,21 @@
+Andy and Tim have decided to try Ansible. Before they set anything up in Azure Pipelines, they'll first run Ansible directly in Azure Cloud Shell and then locally from Visual Studio Code by using the Ansible extension.
 
-TODO: Explain that this is to progressively explore how Ansible works. In practice, you can choose the X and Y you prefer as you build and test your configurations.
+First, they need to set up their local development environment. Here, you'll do the same. By the end of this module, you'll have an Ansible playbook in a Git repository that you connect to Azure Pipelines.
 
-* From Cloud Shell, use Ansible to run the ping module.
-* From Cloud Shell, use Ansible to run a playbook.
-* From Visual Studio Code, use Ansbile to run a playbook using an extension.
-* From Azure Pipelines, ...
+In this exercise, you:
 
 > [!div class="checklist"]
-> * Create two VMs on Azure to configure.
+> * Create a Git repository.
+> * Connect to your Azure subscription and bring up Cloud Shell through VS Code.
+> * Create an SSH key pair and upload your key pair to Cloud Shell.
 
 ## Create a Git repository
 
+Here, you create a working directory, configure Git, and then create a Git repository.
+
 ### Add Visual Studio Code to your system PATH
 
-TODO: This step ensures that you can launch Visual Studio Code from the terminal.
+Before you set up Git, here you add Visual Studio Code to your system PATH. This step makes it easier to set up projects through Visual Studio Code from the integrated terminal.
 
 1. Open Visual Studio Code.
 1. In VS Code, select <kbd>F1</kbd> or select **View > Command Palette** to access the command palette.
@@ -21,7 +23,7 @@ TODO: This step ensures that you can launch Visual Studio Code from the terminal
 
 ### Create a working directory
 
-Here, you create a directory to hold your Ansible playbook. Doing so helps keep your Ansible code separate from your other work.
+Here, you create a directory to hold your Git repository.
 
 1. On the **View** menu, select **Terminal** or **Integrated Terminal**. (The option you see depends on your operating system.)
 1. In the drop-down list, select **bash**:
@@ -47,11 +49,11 @@ Here, you create a directory to hold your Ansible playbook. Doing so helps keep 
 
 ### Configure Git
 
-If you're new to Git and GitHub, you'll first need to run a few commands to associate your identity with Git and authenticate with GitHub.
+If you're new to Git and GitHub, you first need to run a few commands to associate your identity with Git and authenticate with GitHub.
 
 [Set up Git](https://help.github.com/articles/set-up-git?azure-portal=true) explains the process in greater detail.
 
-At a minimum, you'll need to complete the following steps. Run these commands from the Visual Studio Code integrated terminal:
+At a minimum, you'll need to complete the following steps. Run these commands from the integrated terminal in Visual Studio Code:
 
 1. [Set your username](https://help.github.com/articles/setting-your-username-in-git?azure-portal=true).
 1. [Set your commit email address](https://help.github.com/articles/setting-your-commit-email-address-in-git?azure-portal=true).
@@ -62,33 +64,39 @@ At a minimum, you'll need to complete the following steps. Run these commands fr
 >
 > Treat your access token like you would a password. Keep it in a safe place.
 
-### Create a Git repository
+### Create the Git repository
+
+Run `git init` to create your Git repository. Later, you'll upload your local repository to GitHub.
 
 ```bash
 git init
 ```
 
-In practice, you might add your Ansible files to an existing Git repository that contains your application code.
+In practice, you might add your Ansible playbooks to an existing Git repository that contains your application code.
 
 ### Open the project in Visual Studio Code
 
-1. Run the following command to open the TODO
+Currently, Visual Studio Code is not pointing to the directory that contains your Git repository. Here, you reopen Visual Studio Code to point to the current directory in your terminal.
+
+1. In the terminal, run the following command to reopen VS Code in the current directory.
 
     ```bash
     code -r .
     ```
 
-    TODO: NO FILES YET. YOU'LL ADD SOME SHORTLY
+    From the files pane, you see that there are no files listed. You'll add an Ansible inventory file and an Ansible playbook shortly.
 
 1. Reopen the integrated terminal.
 
 ## Connect to your Azure subscription through VS Code
 
+Here, you connect to your Azure subscription through VS Code. This step enables you to run commands through Cloud Shell in your Azure subscription.
+
 ### Install the Azure Account extension
 
-TODO: WHY
+The Azure Account extension enables you to connect to your Azure subscription through VS Code.
 
-The **Azure Account** extension is not installed by default in Visual Studio Code. Let's start by installing it:
+The Azure Account extension is not installed by default in Visual Studio Code. Let's start by installing it.
 
 1. In VS Code, on the **View** menu, select **Extensions**.
 1. In the **Search Extensions in Marketplace** textbox, enter *Azure Account*, and then select the **Azure Account** extension.
@@ -100,7 +108,7 @@ The **Azure Account** extension is not installed by default in Visual Studio Cod
 
 ### Sign in to Azure
 
-TODO
+Now that you've installed the Azure Account extension, you can sign in to Azure through VS Code.
 
 1. In VS Code, select <kbd>F1</kbd> or select **View > Command Palette** to access the command palette.
 1. In the command palette, enter *Azure: Sign In*.
@@ -123,7 +131,7 @@ With key-based authentication, there are two keys. The public key is stored on t
 
 Here, we use key-based authentication because it's generally more secure than using passwords. Although you might create separate SSH keys for each VM you create, here you create one SSH key that you share with each of them to make the process easier to follow.
 
-In VS Code, go to the terminal and run the following `ssh-keygen` command to create an SSH public/private keypair.
+In VS Code, go to the terminal and run the following `ssh-keygen` command to create an SSH public/private key pair.
 
 ```bash
 ssh-keygen -m PEM -t rsa -b 2048 -C "azureuser@azure" -f ~/.ssh/ansible_rsa -N ""
@@ -134,13 +142,13 @@ This command creates these two files in your *~./ssh* directory:
 * The public key, *ansible_rsa.pub*.
 * The private key, *ansible_rsa*.
 
-### Bring up Cloud Shell through the Visual Studio Code
+Shortly, you'll create Linux VMs on Azure that use this SSH key pair to authenticate access.
 
-TODO: In previous modules...
+### Bring up Cloud Shell through VS Code
 
-Here, you bring up Cloud Shell through the Azure portal so that you can work with Ansible code and run your configuration. We use Cloud Shell here because it comes with Ansible already set up for you.
+Here, you bring up Cloud Shell through VS Code so that you can work with Ansible code and run your configuration. We use Cloud Shell here because it comes with Ansible already set up for you.
 
-You can also install and run Ansible locally from a terminal or Visual Studio Code. Later, you'll run Ansible from Azure Pipelines.
+In practice, you can also install and run Ansible locally from a terminal or VS Code. Later, you'll run Ansible from Azure Pipelines.
 
 1. In VS Code, select <kbd>F1</kbd> or select **View > Command Palette** to access the command palette.
 1. In the command palette, enter *Azure: Open Bash in Cloud Shell*.
@@ -155,7 +163,7 @@ You can also install and run Ansible locally from a terminal or Visual Studio Co
 
 ### Upload your SSH key to Cloud Shell
 
-Here, you upload your SSH private key and SSH public key to Cloud Shell so that you can connect to your VMs from your Cloud Shell session.
+Here, you upload your SSH key pair to Cloud Shell so that you can connect to your VMs from your Cloud Shell session.
 
 1. In VS Code, switch from your Cloud Shell session to your Bash session. To do so, select **bash** in the terminal.
 
@@ -169,7 +177,7 @@ Here, you upload your SSH private key and SSH public key to Cloud Shell so that 
 
     ![](../media/4-code-terminals.png)
 
-1. Move your SSH key files to the *~/.ssh* directory:
+1. In Cloud Shell, move your SSH key files to the *~/.ssh* directory:
 
     ```bash
     mv ~/ansible_rsa ~/.ssh
