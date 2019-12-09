@@ -4,13 +4,14 @@ During the process, you:
 
 > [!div class="checklist"]
 > * Walk through a basic Ansible playbook so that you understand what each piece does.
-> * Create a dynamic Ansible inventory that includes your VMs.
-> * Run an ad-hoc configuration command and then a more complete configuration that's defined in a playbook.
-> * Verify the configuration and then run the playbook a second time and see that 
+> * Create the Ansible playbook locally and then upload the playbook to Cloud Shell.
+> * Run the Ansbile playbook on your Linux VMs.
+> * Verify that your VMs were configured as you expect.
+> * Run the playbook a second time to see idempotency in action.
 
 ## Define your requirements
 
-The first step when working with any configuration management tool is to first define your requirements. You then map those requirements to configuration code.
+The first step when working with any configuration management tool is to define your requirements. You then map those requirements to configuration code.
 
 Let's join Tim and Andy as they define the requirements for their prototype.
 
@@ -30,7 +31,9 @@ _Tim moves to the whiteboard._
 * Provides no login shell.
 * Provides no password or way to sign in as that user.
 
-I say we define two users for our test. Let's call them "testuser1" and "testuser2".
+I say we define two users for our test. Let's call them *testuser1* and *testuser2*.
+
+### Define the basic configuration
 
 Tim and Andy discover documentation for the [user](https://docs.ansible.com/ansible/latest/modules/user_module.html?azure-pipelines=true) module. The `user` module enables you to manage user accounts, including service accounts.
 
@@ -46,72 +49,43 @@ They define this configuration in Ansible:
       comment: service account
       create_home: no
       shell: /usr/sbin/nologin
-      password: '*'
       state: present
 ```
 
-TODO: DESCRIBE.
+The `hosts` part specifies to run the playbook on all hosts in the inventory.
 
-TODO:
-The `hosts` attribute blah blah. TODO: For each play in a playbook, you get to choose which machines in your infrastructure to target and what remote user to complete the steps (called tasks) as.
+The `tasks` part defines each module to apply. This configuration defines one module, the `user` module.
 
-TODO:
-tasks. Indicates the start of the modules where the actual configuration is defined.
+The `user` module defines the user account named *testuser1*. This module specifies:
 
+* A descriptive comment for the user account.
+* Not to create the home directory for the user.
+* The user's login shell. The `/usr/sbin/nologin` prevents login.
+* That the account should exist. You could use the `absent` state to remove the user from the system.
 
+### Use the loop block to add a second user
 
-Notice that this configuration creates just one user: "testuser1". Although you could add a second task that performs the same function, you can use the `loop` keyword to repeat the task multiple times.
+Notice that this configuration creates just one user: *testuser1*. Although you could add a second task that performs the same function, you can use the `loop` keyword to repeat the task multiple times.
 
 Tim and Andy update their configuration, like this:
 
-```yml
----
-- hosts: all
-  tasks:
-  - name: Add service accounts
-    user:
-      name: "{{ item }}"
-      comment: service account
-      create_home: no
-      shell: /usr/sbin/nologin
-      password: '*'
-      state: present
-    loop:
-    - testuser1
-    - testuser2
-```
+[!code-yml[](code/6-users-1.yml?highlight=11-13)]
 
 The `loop` block applies the configuration for each item in the list. The `name` attribute uses the `{{ }}` syntax to interpolate, or replace, the value with the current element in the list.
 
-Next, Tim and Andy need to consider under which user account the configuration will run. When they create their VMs on Azure, they'll specify "azureuser" as the administrator name. They update their configuration like this:
+### Activate privilege escalation as the root user
 
-```yml
----
-- hosts: all
-  remote_user: azureuser
-  become: yes
-  tasks:
-  - name: Add service accounts
-    user:
-      name: "{{ item }}"
-      comment: service account
-      create_home: no
-      shell: /usr/sbin/nologin
-      password: '*'
-      state: present
-    loop:
-    - testuser1
-    - testuser2
-```
+Next, Tim and Andy need to consider under which user account the configuration will run. When they created their VMs on Azure, they specified *azureuser* as the administrator name. But to configure user accounts, they need to activate privilege escalation as the *root* user.
 
-TODO: Describe this.
-Here, `remote_user` specifies the user to use to connect to complete the tasks.
+To do so, they need to add the `become` directive to their configuration, like this:
 
-`become` 
+[!code-yml[](code/6-users-1.yml?highlight=3)]
+
+A related setting, not shown here, is `become_user`. The default value of this setting is `root`. When this configuration runs, Ansible activates privilege escalation as the *root* user.
 
 ## Create the users playbook
 
-Now that you've verified that your VMs are connectable through Ansible, here you apply a playbook that configures service accounts on your VMs. You reviewed this playbook in the previous unit.
+Now that you've verified that your VMs are connectable through Ansible, here you apply a playbook that configures service accounts on your VMs.
 
 1. In VS Code, select **New File** from the files pane. Name the file *users.yml*.
 
@@ -120,7 +94,6 @@ Now that you've verified that your VMs are connectable through Ansible, here you
     ```yml
     ---
     - hosts: all
-      remote_user: azureuser
       become: yes
       tasks:
       - name: Add service accounts
@@ -129,7 +102,6 @@ Now that you've verified that your VMs are connectable through Ansible, here you
           comment: service account
           create_home: no
           shell: /usr/sbin/nologin
-          password: '*'
           state: present
         loop:
         - testuser1
@@ -143,6 +115,8 @@ Now that you've verified that your VMs are connectable through Ansible, here you
     1. Select *users.yml*.
 
 ## Run the users playbook on your VMs
+
+Here, you run the `users` playbook on your VMs from your Cloud Shell session.
 
 1. In VS Code, switch to your Cloud Shell session.
 1. Run the following `ls` command to verify that *users.yml* exists in your Cloud Shell.
@@ -160,6 +134,8 @@ Now that you've verified that your VMs are connectable through Ansible, here you
       --private-key ~/.ssh/ansible_rsa \
       users.yml
     ```
+
+    The `--user` argument specifies the user to connect as. Here, you specify your administrator user, *azureuser*. Recall that the playbook activates privilege escalation as the *root* user.
 
     You see from the output that both user accounts were added to each VM in your inventory:
 
