@@ -115,7 +115,7 @@ Now that you've installed the Azure Account extension, you can sign in to Azure 
 
     A window appears that instructs you to authenticate from a web browser.
 
-    ![](../media/4-azure-account-sign-in.png)
+    ![Visual Studio Code showing the sign in URL and authentication code](../media/4-azure-account-sign-in.png)
 
 1. Select **Copy & Open**.
 
@@ -155,11 +155,11 @@ In practice, you can also install and run Ansible locally from a terminal or VS 
 
     You see Cloud Shell open in the terminal.
 
-    ![](../media/4-cloud-shell-vs-code.png)
+    ![Azure Cloud Shell in Visual Studio Code](../media/4-cloud-shell-vs-code.png)
 
     You can use the drop-down menu to switch between your Cloud Shell session and your local shell.
 
-    ![](../media/4-code-terminals.png)
+    ![Switching between Bash and Azure Cloud Shell in Visual Studio Code](../media/4-code-terminals.png)
 
 ### Upload your SSH key to Cloud Shell
 
@@ -167,7 +167,7 @@ Here, you upload your SSH key pair to Cloud Shell so that you can connect to you
 
 1. In VS Code, switch from your Cloud Shell session to your Bash session. To do so, select **bash** in the terminal.
 
-    ![](../media/4-code-terminals.png)
+    ![Switching between Bash and Azure Cloud Shell in Visual Studio Code](../media/4-code-terminals.png)
 
 1. Select <kbd>F1</kbd> or select **View > Command Palette** to access the command palette.
 1. In the command palette, enter *Azure: Upload to Cloud Shell*.
@@ -175,7 +175,7 @@ Here, you upload your SSH key pair to Cloud Shell so that you can connect to you
 1. Repeat the process to upload your SSH public key, *~/.ssh/ansible_rsa.pub*.
 1. Switch from your Bash session to your Cloud Shell session. To do so, select **Bash in Cloud Shell** in the terminal.
 
-    ![](../media/4-code-terminals.png)
+    ![Switching between Bash and Azure Cloud Shell in Visual Studio Code](../media/4-code-terminals.png)
 
 1. In Cloud Shell, move your SSH key files to the *~/.ssh* directory:
 

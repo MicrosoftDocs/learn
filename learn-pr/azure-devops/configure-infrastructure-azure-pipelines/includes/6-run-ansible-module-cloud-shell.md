@@ -11,7 +11,7 @@ Ansible reads configuration settings from *~/ansible.cfg*. Here, you add setting
 
 1. In VS Code, select **New File** from the files pane. Name the file *ansible.cfg*.
 
-    ![](../media/6-vs-code-add-file.png)
+    ![Adding a file in Visual Studio Code](../media/6-vs-code-add-file.png)
 
 1. Add these contents to *ansible.cfg* and then save the file:
 
@@ -27,7 +27,7 @@ Here, you specify your machine inventory. Recall that the inventory specifies th
 
 1. In VS Code, select **New File** from the files pane. Name the file *azure_rm.yml*.
 
-    ![](../media/6-vs-code-add-file.png)
+    ![Adding a file in Visual Studio Code](../media/6-vs-code-add-file.png)
 
 1. Add these contents to *azure_rm.yml* and then save the file:
 
@@ -59,7 +59,7 @@ Remember that we use Cloud Shell in this module because Cloud Shell comes with A
 
 1. In VS Code, switch from your Bash session to your Cloud Shell session. To do so, select **Bash in Cloud Shell** in the terminal.
 
-    ![](../media/4-code-terminals.png)
+    ![Switching between Bash and Azure Cloud Shell in Visual Studio Code](../media/4-code-terminals.png)
 
 1. Run the following `ls` command to verify that your Ansible configuration file and your inventory file were successfully uploaded to Cloud Shell:
 

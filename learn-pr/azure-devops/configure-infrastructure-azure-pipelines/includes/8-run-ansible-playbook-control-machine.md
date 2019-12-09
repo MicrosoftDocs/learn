@@ -141,7 +141,7 @@ Here, you create the control machine by using the Red Hat Ansible instance on Li
 1. In the search bar, enter *Ansible*.
 1. Select **Create**.
 
-    ![](../media/8-portal-ansible.png)
+    ![Creating the Ansible control machine in the Azure portal](../media/8-portal-ansible.png)
 
 1. Under **Basics**, fill in these fields:
 
@@ -163,7 +163,7 @@ Here, you create the control machine by using the Red Hat Ansible instance on Li
 
     You can monitor your deployment's progress from the **Notifications** tab at the top of the page.
 
-    ![](../media/8-notifications-deployment.png)
+    ![Monitoring deployment progress in the Azure portal](../media/8-notifications-deployment.png)
 
 ## Get your control machine's hostname
 
@@ -279,7 +279,7 @@ Before you run the extension, there are a few additional options that you need t
 
     Your settings resemble this:
 
-    ![](../media/8-vs-code-user-settings.png)
+    ![Visual Studio Code showing user settings for Ansible](../media/8-vs-code-user-settings.png)
 
 ### Run Ansible
 

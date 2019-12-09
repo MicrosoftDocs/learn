@@ -98,7 +98,7 @@ Here, you install an extension that provides access to the `Ansible@0` task in A
 1. On the **Azure DevOps** tab, search for "Ansible."
 1. Select the **Ansible** extension.
 
-    ![](../media/9-marketplace-ansible.png)
+    ![The Ansible extension on the Visual Studio Marketplace](../media/9-marketplace-ansible.png)
 1. Select **Get it free**.
 1. Select your Azure DevOps organization.
 1. Select **Install**.
@@ -168,7 +168,7 @@ On the build screen, select the job and trace the pipeline as it runs.
 
 You see that the **Ansible** task runs and produces the same output as before:
 
-![](../media/9-pipeline-ansible-task.png)
+![The Ansible task running in Azure Pipelines](../media/9-pipeline-ansible-task.png)
 
 ## See Ansible repair the configuration
 
@@ -211,6 +211,6 @@ This process helps you see how Ansible can repair your configuration if it's acc
 
     You see that the user added once again to the VM:
 
-    ![](../media/9-pipeline-ansible-task-repair.png)
+    ![The Ansible task in Azure Pipelines showing a repaired configuration](../media/9-pipeline-ansible-task-repair.png)
 
     Ansible does not make configuration changes to *vm2* because you removed *testuser1* only from the first VM, *vm1*.
