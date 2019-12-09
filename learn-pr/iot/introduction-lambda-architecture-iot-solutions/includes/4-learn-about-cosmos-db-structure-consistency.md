@@ -1,5 +1,5 @@
 
-Cosmos, another word for "universe", implies that Cosmos DB is the solution for world-wide applications. Another feature of the Cosmos DB resource is that it's well structured, not the collection of stuff that can be stored in a blob. The obvious example is a database, where each entry in the database has a consistent set of fields.
+Cosmos, another word for "universe", implies that Cosmos DB is the solution for world-wide applications. Another feature of the Cosmos DB resource is that it's well structured. Not the collection of stuff that can be stored in a blob. The obvious example is a database, where each entry in the database has a consistent set of fields.
 
 Access to the data in a Cosmos DB resource is made through queries built from API calls. Cosmos DB supports a range of APIs, including, SQL API, Mongo API, Gremlin (graph) API, Azure Table API, and the Cassandra API. At the lowest level, a Cosmos DB consists of Json objects.
 
@@ -19,7 +19,7 @@ Whenever new telemetry values are set in the US West location, that update is au
 
 ### Prepare for the worst
 
-Secondary read locations should not be confused with _failover_ locations. A failover location, which is also set in the Azure portal, specifies the regional servers, which should take over when something bad happens in your primary region. Something bad could be a natural disaster, power outages, civil disturbance, or anything that might bring the reliability of cloud servers in that region into question. Sometimes a cloud user will specify a _manual failover_, where human operator intervention is needed to trigger the failover. Sometimes _automatic failover_ is required, where the responsiveness of a region is constantly tested, and a failover occurs if the tests are failed. Leaving things entirely up to automated testing though, can be a bit scary.
+Secondary read locations shouldn't be confused with _failover_ locations. A failover location, which is also set in the Azure portal, specifies the regional servers, which should take over when something bad happens in your primary region. Something bad could be a natural disaster, power outages, or civil disturbance. Or anything else that might bring the reliability of servers in the primary region into question. Sometimes a cloud user will specify a _manual failover_, where human operator intervention is needed to trigger the failover. Sometimes _automatic failover_ is specified, where the responsiveness of a region is constantly tested, and a failover occurs if the tests fail. Leaving things entirely up to automated tests though, can be a bit scary.
 
 Having set up your database, you have to consider how important it's that everyone the world over gets exactly the same data at exactly the same time.
 
@@ -35,7 +35,7 @@ In _Strong_ consistency, every location will get identical data on every read. N
 
 ![Screenshot showing the Strong consistency option for a Cosmos DB, in the Azure portal](../media/lambda-consistency-strong.png)
 
-At the other end of the spectrum, there's _Eventual_ consistency. In this scenario, each location gets the update when it arrives. This process clearly means some locations might have stale data for a short while, before the local data is updated. Notice too, in the following image, that if the latency is long enough, several writes might be replaced by a single value in a read location, as the writes arrived at about the same time, and only the latest of these writes would be visible in that locale.
+At the other end of the spectrum, there's _Eventual_ consistency. In this scenario, each location gets the update when it arrives. This process clearly means some locations might have stale data for a short while, before the local data is updated. Notice too, in the following image, that if the latency is long enough, several writes might be replaced by a single value in a read location. This anomaly occurs if the writes arrived at about the same time, and only the latest of these writes is stored in that locale.
 
 ![Screenshot showing the Eventual consistency option for a Cosmos DB, in the Azure portal](../media/lambda-consistency-eventual.png)
 

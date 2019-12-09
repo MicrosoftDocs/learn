@@ -46,4 +46,4 @@ Blob storage is your _go to_ solution for cloud IoT storage. Blob storage is alm
 
 In the next unit, we'll look at the solution for _structured_ storage, when your data is more akin to a database, than a collection of files and folders.
 
-You are half way through this module, time for a quick knowledge check!
+You're half way through this module, time for a quick knowledge check!
