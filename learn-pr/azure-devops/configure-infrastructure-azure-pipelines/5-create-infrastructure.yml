@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.azdo.configure-infrastructure-azure-pipelines.4b-create-infrastructure
+uid: learn.azdo.configure-infrastructure-azure-pipelines.5-create-infrastructure
 title: Exercise - Create infrastructure to manage
 metadata:
   title: Exercise - Create infrastructure to manage
   description: "Create virtual machines on Azure that you'll later manage with Ansible."
-  ms.date: 12/04/2019
+  ms.date: 12/09/2019
   author: tpetchel
   ms.author: thpetche
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 15
 content: |
-  [!include[](includes/4b-create-infrastructure.md)]
+  [!include[](includes/5-create-infrastructure.md)]

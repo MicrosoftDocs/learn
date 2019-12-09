@@ -3,7 +3,7 @@ uid: learn.azdo.configure-infrastructure-azure-pipelines
 metadata:
   title: Configure infrastructure in Azure Pipelines - Learn
   description: Run configuration management tools in Azure Pipelines to help keep your infrastructure configured as you need.
-  ms.date: 12/06/2019
+  ms.date: 12/09/2019
   author: tpetchel
   ms.author: thpetche
   ms.topic: interactive-tutorial
@@ -37,12 +37,12 @@ units:
 - learn.azdo.configure-infrastructure-azure-pipelines.2-what-is-configuration-as-code
 - learn.azdo.configure-infrastructure-azure-pipelines.3-tools-overview
 - learn.azdo.configure-infrastructure-azure-pipelines.4-setup-environment
-- learn.azdo.configure-infrastructure-azure-pipelines.4b-create-infrastructure
-- learn.azdo.configure-infrastructure-azure-pipelines.5-run-ansible-module-cloud-shell
-- learn.azdo.configure-infrastructure-azure-pipelines.6-run-ansible-playbook-cloud-shell
-- learn.azdo.configure-infrastructure-azure-pipelines.7-run-ansible-playbook-control-machine
-- learn.azdo.configure-infrastructure-azure-pipelines.8-run-ansible-playbook-pipeline
-- learn.azdo.configure-infrastructure-azure-pipelines.9-cleanup-resources
-- learn.azdo.configure-infrastructure-azure-pipelines.10-summary
+- learn.azdo.configure-infrastructure-azure-pipelines.5-create-infrastructure
+- learn.azdo.configure-infrastructure-azure-pipelines.6-run-ansible-module-cloud-shell
+- learn.azdo.configure-infrastructure-azure-pipelines.7-run-ansible-playbook-cloud-shell
+- learn.azdo.configure-infrastructure-azure-pipelines.8-run-ansible-playbook-control-machine
+- learn.azdo.configure-infrastructure-azure-pipelines.9-run-ansible-playbook-pipeline
+- learn.azdo.configure-infrastructure-azure-pipelines.10-cleanup-resources
+- learn.azdo.configure-infrastructure-azure-pipelines.11-summary
 badge:
   uid: learn.azdo.configure-infrastructure-azure-pipelines.badge

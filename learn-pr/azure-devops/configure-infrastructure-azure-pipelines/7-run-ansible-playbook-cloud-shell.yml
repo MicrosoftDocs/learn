@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.azdo.configure-infrastructure-azure-pipelines.7-run-ansible-playbook-control-machine
+uid: learn.azdo.configure-infrastructure-azure-pipelines.7-run-ansible-playbook-cloud-shell
 title: Plan configuration tasks for Azure Pipelines
 metadata:
   title: Plan configuration tasks for Azure Pipelines
   description: Introduction
-  ms.date: 12/06/2019
+  ms.date: 12/09/2019
   author: tpetchel
   ms.author: thpetche
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 1
 content: |
-  [!include[](includes/7-run-ansible-playbook-control-machine.md)]
+  [!include[](includes/7-run-ansible-playbook-cloud-shell.md)]
