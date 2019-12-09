@@ -1,38 +1,26 @@
-TODO: INTRO
+In this part, you learn about these popular configuration management tools:
 
 * Ansible
 * Azure Automation
 * Azure Custom Script Extension
 * Chef
-* Cloud-init 
+* Cloud-init
 * PowerShell DSC
 * Puppet
 
+For each tool, you'll get a general sense for how it works, which programming languages are involved, and how it integrates with Azure. At the end, Andy and Tim will choose one to try.
+
 ## Ansible
-
-TODO: Knowledge: ad-hoc commmands vs plays/playbooks
-TODO: Knowledge: modules (-m ping example)
-https://docs.ansible.com/ansible/latest/user_guide/intro_adhoc.html
-
-TODO: Facts
-
-TODO: "The Ansible inventory file defines the hosts and groups of hosts upon which commands, modules, and tasks in a playbook operate. The file can be in one of many formats depending on your Ansible environment and plugins."
-
-TODO:
-
-* basic concepts https://docs.ansible.com/ansible/latest/user_guide/basic_concepts.html
-* inventory https://docs.ansible.com/ansible/latest/user_guide/intro_inventory.html
-
 
 Ansible is an open-source product, sponsored by Red Hat, that automates cloud provisioning, configuration management, and application deployments. You can use Ansible to provision Azure resources such as virtual machines, containers, networks, and even complete cloud infrastructures. You can also use Ansible to configure your Azure resources after they're provisioned, which is the focus in this module.
 
-In addition to Azure, Ansible supports other public clouds and private cloud frameworks.
+In addition to Azure, Ansible supports other public clouds as well as private cloud frameworks.
 
-You can run Ansible commands directly to configure your systems. But a more common approach is to write _playbooks_ to deploy more complex configurations. A playbook is a YAML file, making it a form of declarative automation.
+With Ansible, you write _playbooks_ that express your desired configuration. A playbook is a YAML file, making it a form of declarative automation.
 
-A playbook is made up of _modules_. Ansible provides built-in modules that enable you to configure various parts of the system. For example, the `file` module enables you to manage a file. The `user` module enables you to manage a user account.
+A playbook is made up of _modules_. Ansible provides built-in module types that configure various parts of the system. For example, the `file` module enables you to manage a file. The `user` module enables you to manage a user account.
 
-Here's a basic example that you'll work with later. It defines service accounts for users named "testuser1" and "testuser2".
+Here's a basic example that you'll work with later. It defines service accounts for users named *testuser1* and *testuser2*.
 
 ```yml
 ---
@@ -70,19 +58,41 @@ If you run this command multiple times, Ansible configures the user accounts onl
 
 Ansible is also agentless, so you do not have to install Ansible software on the managed machines. However, you do need to install Python on your managed machines. By default, Ansible connects to Linux machines over the SSH protocol and Windows machines over WinRM.
 
-You typically use a _control machine_ to manage your systems. A control machine includes the Ansible software and the playbooks you need to run. Later in this module, you'll set up a control machine and run Ansible playbooks from that machine in Azure Pipelines to manage your systems.
+You typically use a _control machine_ to manage your systems. A control machine includes the Ansible software and the playbooks you need to run. The control machine pushes configuration changes to your nodes. Later in this module, you'll set up a control machine and run Ansible playbooks from that control machine in Azure Pipelines.
 
 Although Ansible is agentless, both the control machine and managed nodes require Python to enable Ansible to connect to remote systems and issue commands on those systems.
 
-### Facts
+### Ansible inventories
 
-_Facts_ are data points about the remote system that Ansible is managing. When you run a playbook, Ansible gathers facts about the state of the environment to determine the state before executing the playbook.
+In Ansible, the _inventory_ is a file that defines the hosts upon which the tasks in a playbook operate. Ansible represents what systems it manages by using an _.ini_ or YAML file that puts all of your managed machines in groups of your own choosing.
 
-### Inventory
+For a VM deployment on Azure, you *could* define each VM and its IP address or hostname, similar to this:
 
-TODO: Fix this; show example with static inventory; talk about dynamic inventories; show example.
+```yml
+hosts:
+  vm1:
+    ansible_host: 13.79.22.89
+  vm2:
+    ansible_host: 40.87.135.194
+```
 
-The _inventory_ is a list of managed nodes. Ansible represents what machines it manages by using an _.ini_ file that puts all of your managed machines in groups of your own choosing. When adding new machines, you do not need to use additional SSL-signing servers, thus avoiding Network Time Protocol (NTP) and Domain Name System (DNS) issues. You can create the inventory manually, or for Azure, Ansible supports dynamic inventories, which means that the host inventory is dynamically generated at runtime. Ansible supports host inventories for other managed hosts as well.
+This is an example of a _static inventory_. If these IP addresses change, or if you add or remove systems, you would need to update this inventory file over time.
+
+A more flexible approach is to use a _dynamic inventory_. A dynamic inventory enables Ansible to discover which systems to configure at run time.
+
+Here's the dynamic inventory file you're going to use in this module:
+
+```yml
+plugin: azure_rm
+include_vm_resource_groups:
+- learn-ansible-rg
+auth_source: auto
+keyed_groups:
+- prefix: tag
+  key: tags
+```
+
+This inventory specifies that each VM in the `learn-ansible-rg` resource group belongs to the inventory. The `keyed_groups` part groups VMs by their tag names. You'll work with a complete example later in this module.
 
 ### Ansible on Azure
 
@@ -97,7 +107,7 @@ On the [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace?az
 * [Ansible Tower](https://azuremarketplace.microsoft.com/marketplace/apps/redhat.ansible-tower?azure-portal=true), published by Red Hat. Ansible Tower helps organizations scale IT automation and manage complex deployments across physical, virtual, and cloud infrastructures. With Ansible Tower, you can:
 
   * Provision Azure environments using pre-built Ansible playbooks.
-  * Use role-based access control (RBAC) for secure, efficient management.
+  * Use role-based access control (RBAC) to define who or what can see, change, or delete objects or utilize specific capabilities.
   * Maintain centralized logging for complete auditability and compliance.
   * Utilize the large community of content available on Ansible Galaxy.
 
@@ -105,26 +115,26 @@ You can also set up Ansible on a Linux VM running on Azure or in your datacenter
 
 ## Azure Automation
 
-Azure Automation is an Azure service that helps you automate manual tasks. Azure Automation has the concept of a _runbook_, which is a set of tasks that perform some automated procedure in Azure Automation. Tasks in a runbook are written in PowerShell, [Powershell Workflow](https://docs.microsoft.com/system-center/sma/overview-powershell-workflows?azure-portal=true), or Python. You can run a runbook either manually or on a defined schedule.
+Azure Automation is a service in Azure that helps you automate manual tasks. Azure Automation has the concept of a _runbook_, which is a set of tasks that perform some automated procedure in Azure Automation. Tasks in a runbook are written in PowerShell, [Powershell Workflow](https://docs.microsoft.com/system-center/sma/overview-powershell-workflows?azure-portal=true), or Python. You can run a runbook either manually or on a schedule.
 
 Here's a basic example that uses Powershell Workflow to stop a running service:
 
 ```powershell
 Workflow Stop-MyService
 {
-    $Output = InlineScript {
-        $Service = Get-Service -Name MyService
-        $Service.Stop()
-        $Service
-    }
+  $Output = InlineScript {
+    $Service = Get-Service -Name MyService
+    $Service.Stop()
+    $Service
+  }
 
-    $Output.Name
+  $Output.Name
 }
 ```
 
 Although the name implies that you can use Azure Automation only on Azure, it's more flexible than that. Azure Automation has a feature called Hybrid Runbook Worker. Hybrid Runbook Worker gives Azure Automation access to resources in other clouds or in your on-premises environment that would otherwise be blocked by a firewall.
 
-Azure Automation also provides a Desired State Configuration (DSC) service that allows you to create definitions for how a given set of VMs should be configured. DSC then ensures that the required configuration is applied and the VM stays consistent. Azure Automation DSC runs on both Windows and Linux machines.
+Azure Automation also provides a Desired State Configuration (DSC) pull server that enables you to create definitions for how a given set of VMs should be configured. DSC then ensures that the required configuration is applied and that the VM stays consistent. Azure Automation DSC runs on both Windows and Linux.
 
 ## Azure Custom Script Extension
 
@@ -147,11 +157,11 @@ az vm extension set \
 
 ## Chef
 
-Chef is an infrastructure automation tool helps you to configure and manage your systems.
+Chef is an infrastructure automation tool that enables you to configure and manage your systems.
 
 Chef helps you to manage your infrastructure in the cloud, on-premises, or in a hybrid environment. You express you configurations by writing _recipes_ that describe everything your systems need to run your application. Chef recipes use a declarative syntax that's based on the Ruby programming language. A recipe uses the *.rb* file extension.
 
-A Chef recipe is made up of _resources_. Chef provides built-in resource types that enable you to configure various parts of the system. For example, the `file` resource enables you to manage a file. The `service` resource enables you to manage a service.
+A Chef recipe is made up of _resources_. Chef provides built-in resource types that enable you to configure various parts of the system. For example, the `package` resource enables you to install or remove a package. The `service` resource enables you to manage a service.
 
 Here's the Chef recipe that installs Internet Information Services (IIS) web server on Windows, which you saw earlier in this module:
 
@@ -171,11 +181,13 @@ template 'c:\inetpub\wwwroot\Default.htm' do
 end
 ```
 
+Most Chef resources are idempotent, meaning you can apply the same configuration repeatedly.
+
 You can package multiple recipes into a _cookbook_. A cookbook might contain recipes that configure the various parts of MySQL, Nginx, OpenSSL, or any other kind of software.
 
-Building on the previous code example, an IIS cookbook might contains recipes that configure application pools, virtual directories, virtual sites, and so on. You can define a _role_ to specify which recipes are applied to your systems.
+Building on the previous code example, an IIS cookbook might contains recipes that configure application pools, virtual directories, virtual sites, and so on. You can define _roles_ to specify which recipes are applied to a system based on that system's function. For example, you might define the "webserver" role to run recipes that install and configure IIS, Apache, or Nginx web servers. The "database" role might run recipes that install and configure MySQL or Microsoft SQL Server.
 
-You can find cookbooks that are maintained by Chef and the Chef community at [Chef Supermarket](https://supermarket.chef.io/?azure-portal=true).
+You can find cookbooks that are maintained by Chef and the Chef community on [Chef Supermarket](https://supermarket.chef.io/?azure-portal=true).
 
 ### Chef on Azure
 
@@ -193,7 +205,7 @@ You can also set up Chef on a Linux or Windows VM running on Azure or in your da
 
 ### Cloud-init
 
-Cloud-init, by Canonical, is a way to customize a Linux VM as it boots for the first time. You can use cloud-init to install packages, write files, and configure users and more.
+Cloud-init, by Canonical, is a way to customize a Linux VM as it boots for the first time. You can use cloud-init to install packages, write files, configure users, and more.
 
 You write cloud-init files by using YAML. Consider this basic cloud-init configuration that installs PIP, the package manager for Python, and NumPy, a package for scientific computing with Python.
 
@@ -227,7 +239,7 @@ The `--custom-data` argument specifies the cloud-init configuration to run when 
 
 PowerShell Desired State Configuration (DSC) is a management platform that defines the configuration of target machines. You can use PowerShell DSC to manage Windows or Linux systems.
 
-DSC configurations define what to install on a machine and how to configure the host. A Local Configuration Manager (LCM) engine runs on each target node that processes requested actions based on pushed configurations. A pull server is a web service that runs on a central host to store the DSC configurations and associated resources. The pull server communicates with the LCM engine on each target node to provide the required configurations and report on compliance.
+DSC configurations define what to install and configure on a machine. A Local Configuration Manager (LCM) engine runs on each target node that processes requested actions based on pushed configurations. A pull server is a web service that runs on a central host to store the DSC configurations and associated resources. The pull server communicates with the LCM engine on each target node to provide the required configurations and report on compliance.
 
 Here's a basic example that uses PowerShell DSC to configure IIS on Windows.
 
@@ -252,7 +264,7 @@ You would then compile this configuration into a Management Object Format (MOF) 
 MyWebsite
 ```
 
-The first line makes the configuration function available in the console. The second line runs the configuration. The result is that a new folder, named *MyWebsite*, which contains a file named *localhost.mof*.
+The first line makes the configuration function available in the console. The second line runs the configuration. The result is a folder, named *MyWebsite*, which contains a file named *localhost.mof*.
 
 To apply the configuration, you run the `Start-DscConfiguration` cmdlet, like this:
 
@@ -262,9 +274,9 @@ Start-DscConfiguration .\MyWebsite
 
 ## Puppet
 
-Puppet is an automation platform that handles the application delivery and deployment process. Agents are installed on target machines to allow Puppet Master to run manifests that define the desired configuration of the Azure infrastructure and VMs.
+Puppet is an automation platform that handles the application delivery and deployment process. Agents are installed on target machines to allow Puppet Master to run manifests that define the desired configuration of your infrastructure.
 
-You express you configurations by writing manifest files known as Puppet Program files. Manifests describe everything your systems need to run your application. Puppet manifests use a declarative syntax that's based on the Ruby programming language. A manifest uses the *.pp* file extension.
+You express your configurations by writing manifest files known as Puppet Program files. Manifests describe everything your systems need to run your application. Puppet manifests use a declarative syntax that's based on the Ruby programming language. A manifest uses the *.pp* file extension.
 
 A Puppet manifest is made up of _resources_. Puppet provides built-in resource types that enable you to configure various parts of the system. For example, the `file` resource enables you to manage a file. The `service` resource enables you to manage a service.
 
@@ -288,9 +300,9 @@ There are a number of ways you can use Puppet on Azure.
 
 On the [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace?azure-portal=true), you'll find a number of images that you can use. They include:
 
-* [Puppet Agent](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/Puppet.puppet-agent-windows-arm?azure-portal=true), published by Puppet, is a virtual machine extension that image installs the Puppet agent on your Windows VM.
+* [Puppet Agent](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/Puppet.puppet-agent-windows-arm?azure-portal=true), published by Puppet, is a virtual machine extension that installs the Puppet agent on your Windows VM.
 
-* [Puppet Enterprise](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/puppet.puppet-enterprise?azure-portal=true), published by Puppet, Puppet Enterprise enables you to automate the entire lifecycle of your Azure infrastructure. 
+* [Puppet Enterprise](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/puppet.puppet-enterprise?azure-portal=true), published by Puppet, enables you to automate the entire lifecycle of your infrastructure.
 
 You can also set up Puppet on a Linux or Windows VM running on Azure or in your datacenter.
 
@@ -304,7 +316,7 @@ _Andy looks at Tim._
 
 **Tim:** I like many of these options. Can we continue to use Terraform to configure our systems?
 
-**Andy:** Terraform is great for building infrastructure. It's designed, out of the box, to interact directly with cloud providers, to help you plan that infrastructure and then to build it. However, Terraform is not a configuration management tool. That said, you can use Terraform to build your infrastructure, and then use what's called a _provisioner_ to configure your infrastructure using your favorite tools.
+**Andy:** Terraform is great for building infrastructure. It's designed, out of the box, to interact directly with cloud providers, to help you plan that infrastructure, and then to build it. However, Terraform is not a configuration management tool. That said, you can use Terraform to build your infrastructure, and then use what's called a _provisioner_ to configure your infrastructure using your favorite tools.
 
 _Tim thinks for a minute._
 

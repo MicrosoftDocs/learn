@@ -77,10 +77,10 @@ For example, your CI/CD pipeline might use an Azure Resource Manager template, T
 
 Soon, you'll learn about some of the configuration management tools that you can use. But first, there are a few concepts you should understand. They are:
 
-* Idempotency
-* Imperative code versus declarative code
-* Agent model versus agentless model
-* Push model versus pull model
+* Idempotency.
+* Imperative code versus declarative code.
+* Agent model versus agentless model.
+* Push model versus pull model.
 
 ### Idempotency
 

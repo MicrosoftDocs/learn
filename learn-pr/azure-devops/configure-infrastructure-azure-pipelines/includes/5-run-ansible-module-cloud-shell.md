@@ -26,35 +26,7 @@ Ansible reads configuration settings from *~/ansible.cfg*. Here, you add setting
 
 ### Create the inventory file
 
-Here, you specify your machine inventory. Recall that the _inventory_ is a list of managed nodes. You typically describe your inventory in an *.ini* file or a YAML file.
-
-For your VM deployment on Azure, you *could* define each VM and its IP address, similar to this:
-
-```yml
-hosts:
-  vm1:
-    ansible_host: 13.79.22.89
-  vm2:
-    ansible_host: 40.87.135.194
-```
-
-If these IP addresses change, or if you add or remove systems, you would need to update this inventory file over time.
-
-A more flexible approach is to use a _dynamic inventory_. A dynamic inventory enables Ansible to discover which systems to configure at run time.
-
-The format of the dynamic inventory file depends on your environment. Ansible provides inventory plugins for Azure and other cloud providers, as well as environments such as Docker, Kubernetes, and VMware.
-
-Here's the dynamic inventory file you're going to use:
-
-```yml
-plugin: azure_rm
-include_vm_resource_groups:
-- learn-ansible-rg
-auth_source: auto
-keyed_groups:
-- prefix: tag
-  key: tags
-```
+Here, you specify your machine inventory. Recall that the _inventory_ is a list of managed nodes. 
 
 TODO: keyed_groups is wrong. Fix it or remove it.
 
