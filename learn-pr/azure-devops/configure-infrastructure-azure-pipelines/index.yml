@@ -42,7 +42,7 @@ units:
 - learn.azdo.configure-infrastructure-azure-pipelines.6-run-ansible-playbook-cloud-shell
 - learn.azdo.configure-infrastructure-azure-pipelines.7-run-ansible-playbook-control-machine
 - learn.azdo.configure-infrastructure-azure-pipelines.8-run-ansible-playbook-pipeline
-- learn.azdo.configure-infrastructure-azure-pipelines.9-cleanup-environment
+- learn.azdo.configure-infrastructure-azure-pipelines.9-cleanup-resources
 - learn.azdo.configure-infrastructure-azure-pipelines.10-summary
 badge:
   uid: learn.azdo.configure-infrastructure-azure-pipelines.badge

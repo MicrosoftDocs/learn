@@ -1,13 +1,13 @@
 Talk about all the file scping, and how you would normally choose one:
 
-* Run Ansbile directly, either locally or from CS.
+* Run Ansible directly, either locally or from CS.
 * Use the VS Code XYZ extension.
 
 Here, you saw both to XYZ. 
 
 This is a placeholder.
 
-TODO: Here you used Ansbile. You'll probably want to know about other options. Explore them. yada yada
+TODO: Here you used Ansible. You'll probably want to know about other options. Explore them. yada yada
 
 List of modules:
 

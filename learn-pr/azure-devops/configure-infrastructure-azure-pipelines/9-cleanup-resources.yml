@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azdo.configure-infrastructure-azure-pipelines.9-cleanup-resources
+title: Exercise - Clean up Azure resources
+metadata:
+  title: Exercise - Clean up Azure resources
+  description: Clean up your Azure resources.
+  ms.date: 12/06/2019
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 7
+content: |
+  [!include[](includes/9-cleanup-resources.md)]

@@ -1,11 +1,6 @@
-In this exercise, you run an Ansible playbook that configures user accounts on Linux VMs running on Azure. By the end, you'll have two Linux VMs that are configured in the exact same way.
+In this exercise, you create an Ansible configuration file and  the inventory file. Then you run an Ansible module that verifies that Ansible can connect to your VMs.
 
-During the process, you:
-
-> [!div class="checklist"]
-> * Run an ad-hoc configuration command and then a more complete configuration that's defined in a playbook.
-
-TODO: You create files locally because you'll use them later in Azure Pipelines. Here, you create them locally and them upload them to Cloud Shell so that you can run Ansible.
+You start by creating these files locally. You then upload the files to Cloud Shell so that you can run Ansible. By storing these files locally, you build out a Git repository that you later push to GitHub and then connect to Azure Pipelines.
 
 ## Create the Ansible configuration file
 
@@ -14,7 +9,7 @@ Ansible reads configuration settings from *~/ansible.cfg*. Here, you add setting
 * Hide warnings that you don't yet need to understand.
 * Disables host key checking so that you're not prompted to verify the authenticity of your servers.
 
-1. In VS Code, select **New File** from the files pane. Name the file *ansible.cfg*.
+1. In VS Code, select **New File** from the files pane. Name the file *ansible.cfg* in your Git repository.
 
 1. Add these contents to *ansible.cfg* and then save the file:
 
@@ -24,18 +19,9 @@ Ansible reads configuration settings from *~/ansible.cfg*. Here, you add setting
     host_key_checking = False
     ```
 
-### Create the inventory file
+## Create the inventory file
 
-Here, you specify your machine inventory. Recall that the _inventory_ is a list of managed nodes. 
-
-TODO: keyed_groups is wrong. Fix it or remove it.
-
-Here's what each part means:
-
-* `plugin` tells Ansible that the inventory is stored on Azure.
-* `include_vm_resource_groups` specifies the list of resource groups to search for virtual machines.
-* `auth_source` specifies how to authenticate with Azure. Here, we specify `auto` to use Ansible's default precedence for authenticating with Azure. You can configure Ansible to authenticate by using an Azure CLI profile, environment variables, or a credentials file.
-* `keyed_groups` specifies filters Ansible should use to select which virtual machines to configure. This configuration filters VMs by tag name. When you run Ansible, you specify which tags to include. You can filter by other tags as well, such as a VMs location in Azure.
+Here, you specify your machine inventory. Recall that the inventory specifies the list of nodes under management. In this module, you define a dynamic inventory to enable Ansible to discover your nodes at runtime.
 
 1. In VS Code, select **New File** from the files pane. Name the file *azure_rm.yml*.
 
@@ -56,7 +42,9 @@ Here's what each part means:
 
 ## Upload files to Cloud Shell
 
-TODO: Uploaded to home dir
+Here, you upload your Ansible configuration file and your inventory file to the home directory in Cloud Shell.
+
+Remember that we use Cloud Shell in this module because Cloud Shell comes with Ansible already set up for you.
 
 1. In VS Code, select <kbd>F1</kbd> or select **View > Command Palette** to access the command palette.
 1. In the command palette, enter *Azure: Upload to Cloud Shell*.
@@ -69,13 +57,15 @@ TODO: Uploaded to home dir
 
     ![](../media/4-code-terminals.png)
 
-1. Run the following `ls` command to verify that your Ansible inventory and your Ansible configuration were successfully uploaded to Cloud Shell:
+1. Run the following `ls` command to verify that your Ansible configuration file and your inventory file were successfully uploaded to Cloud Shell:
 
     ```bash
     ls azure_rm.yml ansible.cfg
     ```
 
-1. Run the following `ansible-config` command to verify your settings:
+    You see both files listed.
+
+1. Run the following `ansible-config` command to verify your configuration settings:
 
     ```bash
     ansible-config view
@@ -111,7 +101,7 @@ Although you typically write _playbooks_ to express your desired configurations,
 
 To verify that Ansible can apply configuration changes to your inventory, here you run the `ping` module directly to ensure that your VMs are discoverable and that Ansible can connect to each VM.
 
-Unlike what the name suggests, the `ping` module doesn't connect over ICMP. Rather, it connects over SSH just like every other Ansible module. Think of this module as a way to verify that Ansible can connect and that Python is correctly installed on each node. You typically wouldn't use this module in a playbook.
+Unlike what the name suggests, the `ping` module doesn't connect over the ICMP protocol. Rather, it connects over SSH just like every other Ansible module. Think of the `ping` module as a way to verify that Ansible can connect and that Python is correctly installed on each node. You typically wouldn't use this module in a playbook.
 
 To run the `ping` module directly, run this `ansible` command:
 
@@ -124,11 +114,9 @@ ansible \
   tag_Ansible_mslearn
 ```
 
-The `tag_Ansible_mslearn` argument relates to the `keyed_groups` section in your inventory file. It ensures that the `ping` module is run only on the VMs that are tagged in your resource group.
+The `tag_Ansible_mslearn` argument relates to the `keyed_groups` section in your inventory file. Recall that when you created your VMs, you provided the `--tags Ansible=mslearn` to create a tag named "Ansible" whose value is "mslearn". In the `tag_Ansible_mslearn` argument:
 
-Recall that when you created your VMs, you provided the `--tags Ansible=mslearn` to create a tag named "Ansible" whose value is "mslearn". In the `tag_Ansible_mslearn` argument:
-
-* `tag` maps to the feature you're grouping by.
+* `tag` maps to the feature you're grouping by. Here, you're grouping by resource tag.
 * `Ansible` maps to the tag name.
 * `mslearn` maps to the tag's value.
 
@@ -153,6 +141,6 @@ vm1_1bbf | SUCCESS => {
 
 You see "SUCCESS" as well as "pong" in the output, which tell you that the command succeeded.
 
-TODO: Talk about how Ansible requires Python on the node; `discovered_interpreter_python` shows the path where Python is found.
+The `discovered_interpreter_python` part shows the path where Python is found on each node. The Ubuntu image on Azure comes with Python installed. If Python were not to be installed, you would see an error message that reminds you to install Python on each node.
 
-Keep your Cloud Shell session in VS Code open for the next exercise.
+Your Cloud Shell session is all set up to run Ansible on your VMs. Keep your Cloud Shell session in VS Code open for the next exercise.
