@@ -44,7 +44,7 @@ With single sign-on (SSO), users need to remember only one ID and one password. 
   :::column:::
     ![A thumbprint representing Azure Active Directory](../media/3-sso-with-azure-ad.png)
   :::column-end:::
-	:::column span="3":::
+  :::column span="3":::
 **SSO with Azure Active Directory**
 
 By leveraging Azure AD for SSO you'll also have the ability to combine multiple data sources into an intelligent security graph. This security graph enables the ability to provide threat analysis and real-time identity protection to all accounts in Azure AD, including accounts that are synchronized from your on-premises AD. By using a centralized identity provider, you'll have centralized the security controls, reporting, alerting, and administration of your identity infrastructure.
@@ -79,7 +79,7 @@ Azure AD addresses this problem through two methods: service principals and mana
   :::column:::
     ![Image representing various roles](../media/3-service-principals.png)
   :::column-end:::
-	:::column span="3":::
+  :::column span="3":::
 **Service principals**
 
 To understand service principals, it's useful to first understand the words **identity** and **principal**, because of how they are used in the identity management world.
@@ -96,7 +96,7 @@ A **service principal** is an identity that is used by a service or application.
   :::column:::
     ![Image representing managed identities](../media/3-managed-service-identities.png)
   :::column-end:::
-	:::column span="3":::
+  :::column span="3":::
 **Managed identities for Azure services**
 
 The creation of service principals can be a tedious process, and there are a lot of touch points that can make maintaining them difficult. Managed identities for Azure services are much easier and will do most of the work for you.
