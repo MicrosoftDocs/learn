@@ -3,7 +3,7 @@ uid: learn.azdo.configure-infrastructure-azure-pipelines.2-what-is-configuration
 title: What is configuration as code?
 metadata:
   title: What is configuration as code?
-  description: Introduction
+  description: Learn how _configuration as code_ helps you describe the configuration you need to run your application or service.
   ms.date: 12/09/2019
   author: tpetchel
   ms.author: thpetche

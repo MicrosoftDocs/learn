@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azdo.configure-infrastructure-azure-pipelines.9-run-ansible-playbook-pipeline
-title: Exercise - Configure Azure resources in Azure Pipelines with Ansible
+title: Exercise - Run an Ansible playbook from Azure Pipelines
 metadata:
-  title: Exercise - Configure Azure resources in Azure Pipelines with Ansible
-  description: Introduction
+  title: Exercise - Run an Ansible playbook from Azure Pipelines
+  description: Run your Ansible playbook in Azure Piplines, using your control machine and the Ansible extension for Azure Pipelines.
   ms.date: 12/09/2019
   author: tpetchel
   ms.author: thpetche

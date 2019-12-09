@@ -3,7 +3,7 @@ uid: learn.azdo.configure-infrastructure-azure-pipelines.4-setup-environment
 title: Exercise - Set up your development environment
 metadata:
   title: Exercise - Set up your development environment
-  description: Create your Azure DevOps project and Azure resources.
+  description: Create a Git repository and set up Visual Studio Code for Ansible development.
   ms.date: 12/09/2019
   author: tpetchel
   ms.author: thpetche

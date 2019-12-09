@@ -3,7 +3,7 @@ uid: learn.azdo.configure-infrastructure-azure-pipelines.10-cleanup-resources
 title: Exercise - Clean up Azure resources
 metadata:
   title: Exercise - Clean up Azure resources
-  description: Clean up your Azure resources.
+  description: Clean up Azure resources that you no longer need.
   ms.date: 12/09/2019
   author: tpetchel
   ms.author: thpetche

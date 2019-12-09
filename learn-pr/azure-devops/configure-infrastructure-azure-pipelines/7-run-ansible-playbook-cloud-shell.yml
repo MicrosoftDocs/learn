@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azdo.configure-infrastructure-azure-pipelines.7-run-ansible-playbook-cloud-shell
-title: Plan configuration tasks for Azure Pipelines
+title: Exercise - Run an Ansible playbook in Azure Cloud Shell
 metadata:
-  title: Plan configuration tasks for Azure Pipelines
-  description: Introduction
+  title: Exercise - Run an Ansible playbook in Azure Cloud Shell
+  description: Run an Ansible playbook that configures user accounts on Linux VMs running on Azure.
   ms.date: 12/09/2019
   author: tpetchel
   ms.author: thpetche

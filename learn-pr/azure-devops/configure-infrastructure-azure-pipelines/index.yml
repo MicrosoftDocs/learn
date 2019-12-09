@@ -38,7 +38,7 @@ units:
 - learn.azdo.configure-infrastructure-azure-pipelines.3-tools-overview
 - learn.azdo.configure-infrastructure-azure-pipelines.4-setup-environment
 - learn.azdo.configure-infrastructure-azure-pipelines.5-create-infrastructure
-- learn.azdo.configure-infrastructure-azure-pipelines.6-run-ansible-module-cloud-shell
+- learn.azdo.configure-infrastructure-azure-pipelines.6-configure-ansible-cloud-shell
 - learn.azdo.configure-infrastructure-azure-pipelines.7-run-ansible-playbook-cloud-shell
 - learn.azdo.configure-infrastructure-azure-pipelines.8-run-ansible-playbook-control-machine
 - learn.azdo.configure-infrastructure-azure-pipelines.9-run-ansible-playbook-pipeline

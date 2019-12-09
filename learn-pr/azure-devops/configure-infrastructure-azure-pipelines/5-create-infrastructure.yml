@@ -3,7 +3,7 @@ uid: learn.azdo.configure-infrastructure-azure-pipelines.5-create-infrastructure
 title: Exercise - Create infrastructure to manage
 metadata:
   title: Exercise - Create infrastructure to manage
-  description: "Create virtual machines on Azure that you'll later manage with Ansible."
+  description: Create virtual machines on Azure so you can practice configuration management with Ansible.
   ms.date: 12/09/2019
   author: tpetchel
   ms.author: thpetche

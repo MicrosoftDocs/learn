@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azdo.configure-infrastructure-azure-pipelines.8-run-ansible-playbook-control-machine
-title: Plan configuration tasks for Azure Pipelines
+title: Exercise - Run an Ansible playbook from a control machine
 metadata:
-  title: Plan configuration tasks for Azure Pipelines
-  description: Introduction
+  title: Exercise - Run an Ansible playbook from a control machine
+  description: Learn how a control machine makes it easy to run an Ansible playbook from Visual Studio Code.
   ms.date: 12/09/2019
   author: tpetchel
   ms.author: thpetche
