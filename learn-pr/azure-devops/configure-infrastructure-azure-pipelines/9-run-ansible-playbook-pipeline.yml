@@ -9,6 +9,6 @@ metadata:
   ms.author: thpetche
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 1
+durationInMinutes: 12
 content: |
   [!include[](includes/9-run-ansible-playbook-pipeline.md)]
