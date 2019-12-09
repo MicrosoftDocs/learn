@@ -1,4 +1,4 @@
-As the owner of the subscription in the scenario, you wish to manage the roles that have been created and assigned. You'll then control the governance of the subscription.
+As the owner of the subscription in the scenario, you want to manage the roles that have been created and assigned. You'll then control the governance of the subscription.
 
 ## View custom roles within the portal
 
@@ -80,24 +80,24 @@ Custom roles can easily be updated through the Azure CLI:
           }
         ```
 
-1. Finally, you use this file to update the role you created in section 2, by typing the following into the cloud shell:
+1. Finally, you use this file to update the role you created in section 2, by typing the following command into the cloud shell:
 
-        ```Azure CLI
-            az role definition update --role-definition VM-Support-Role-New.json
-        ```
+   ```Azure CLI
+   az role definition update --role-definition VM-Support-Role-New.json
+   ```
 
 ## Delete a custom role
 
 Deleting custom roles is also a simple task with the Azure CLI.
 
-1. To delete the role, type the following into your cloud shell:
+1. To delete the role, type the following command into your cloud shell:
 
-        ```Azure CLI
-            az role definition delete --name "Virtual Machine Support"
-        ```
+   ```Azure CLI
+   az role definition delete --name "Virtual Machine Support"
+   ```
 
 1. Now list the roles to check if it has been removed.
 
-        ```Azure CLI
-        az role definition list --custom-role-only true
-        ```
+   ```Azure CLI
+   az role definition list --custom-role-only true
+   ```

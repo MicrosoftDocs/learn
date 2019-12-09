@@ -8,9 +8,7 @@ In this unit, you learn about RBAC roles and how to create and assign them.
 
 These role types are often confused when you first work with Azure. Active Directory roles provide the mechanism for managing permissions to AD resources only. RBAC provides a wealth of capabilities for managing every resource in Azure at a granular level.
 
-<!--Image taken from https://docs.microsoft.com/azure/role-based-access-control/rbac-and-directory-admin-roles#differences-between-azure-rbac-roles-and-azure-ad-administrator-roles -->
-
-![RBAC v AD](../media/2-azure-office-roles.png)
+![Diagram that shows relationship of RBAC and Azure AD administrator roles](../media/2-azure-office-roles.png)
 
 The subtle differences between how the two can be set up and managed are listed below:
 
@@ -43,9 +41,7 @@ This assignment and related permissions can be scoped to different levels within
 - Resource group
 - Individual resource
 
-<!--Image taken from https://docs.microsoft.com/en-us/azure/role-based-access-control/overview Can the '3 Scope' be removed please-->
-
-![RBAC scopes](../media/2-rbac-scope.png)
+![Diagram that shows scopes for role assignment](../media/2-rbac-scope.png)
 
 ## Role definition and structure
 
@@ -67,14 +63,14 @@ A custom role definition breaks down into a collection of different permissions.
 ```
 
 <!--Image taken from https://docs.microsoft.com/en-us/azure/role-based-access-control/overview - Can the '3 Role Definition' be removed please-->
-
-![Role definition](../media/2-rbac-role-definition.png)
+The following example shows the role definition for the Contributor role. 
+![Illustration that shows an example role definition for Contributor](../media/2-rbac-role-definition.png)
 
 Any role definition is declared using the following format:
 
 `{Company}.{ProviderName}/{resourceType}/{action}`
 
-The action parameter can be one of the following:
+The parameter can be one of the following actions:
 
 - \*
 - read

@@ -14,8 +14,7 @@ To list all the current roles, you use the following Azure CLI command:
 az role definition list --custom-role-only true --output json | jq '.[] | {"roleName":.roleName, "roleType":.roleType}'
 ```
 
-> [!TIP]
-> Notice how the command only asks for role name and role type. This makes it easier to view lots of roles rather than each having a verbose entry.
+Notice how the command only asks for role name and role type. This makes it easier to view lots of roles rather than each having a verbose entry.
 
 ## Viewing a specified role
 
@@ -65,9 +64,9 @@ This command gives an output similar to:
 
 ## Role assignments
 
-To understand the governance of your organization in Azure, it's essential to be able to see who is assigned the roles.
+To understand the governance of your organization in Azure, it's essential that you're able to see how the roles are assigned.
 
-The following allows you to view every role assignment within your organization:
+The following command allows you to view every role assignment within your organization:
 
 ```Azure CLI
 az role assignment list [--all]
