@@ -82,7 +82,7 @@ Custom roles can easily be updated through the Azure CLI:
 
 1. Finally, you use this file to update the role you created in section 2, by typing the following command into the cloud shell:
 
-   ```Azure CLI
+   ```azurecli
    az role definition update --role-definition VM-Support-Role-New.json
    ```
 
@@ -92,12 +92,12 @@ Deleting custom roles is also a simple task with the Azure CLI.
 
 1. To delete the role, type the following command into your cloud shell:
 
-   ```Azure CLI
+   ```azurecli
    az role definition delete --name "Virtual Machine Support"
    ```
 
 1. Now list the roles to check if it has been removed.
 
-   ```Azure CLI
+   ```azurecli
    az role definition list --custom-role-only true
    ```

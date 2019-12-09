@@ -75,7 +75,7 @@ Create a custom role within Azure for the new employee:
 1. You should also see the last two permissions are extra, which allows the new employee to start and restart the VMs.
 1. In the `AssignableScopes` section, you'll need to replace **{subscriptionId}** with the output of the following command:
 
-   ```Azure CLI
+   ```azurecli
    az account list  --output json | jq '.[] | .id'
    ```
 
@@ -88,7 +88,7 @@ Create a custom role within Azure for the new employee:
 
 1. Finally, you list all the custom roles to see if your new role is listed.
 
-   ```Azure CLI
+   ```azurecli
    az role definition list --custom-role-only true
    ```
 
@@ -98,13 +98,13 @@ When the custom role is created, you assign it to the correct group of people/pe
 
 1. You can assign the custom role to the user as follows:
 
-   ```Azure CLI
+   ```azurecli
    USER = az ad user list --output json | jq '.[0] | .userPrincipalName' 
    az role assignment create --assignee $USER --role "Virtual Machine Support"
    ```
 
 1. You'll now list the role assignments by typing the following command into the cloud shell:
 
-   ```Azure CLI
+   ```azurecli
    az role assignment list
    ```
