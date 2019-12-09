@@ -11,7 +11,7 @@ Ansible reads configuration settings from *~/ansible.cfg*. Here, you add setting
 
 1. In VS Code, select **New File** from the files pane. Name the file *ansible.cfg*.
 
-    ![](../media/5-vs-code-add-file.png)
+    ![](../media/6-vs-code-add-file.png)
 
 1. Add these contents to *ansible.cfg* and then save the file:
 
@@ -27,7 +27,7 @@ Here, you specify your machine inventory. Recall that the inventory specifies th
 
 1. In VS Code, select **New File** from the files pane. Name the file *azure_rm.yml*.
 
-    ![](../media/5-vs-code-add-file.png)
+    ![](../media/6-vs-code-add-file.png)
 
 1. Add these contents to *azure_rm.yml* and then save the file:
 

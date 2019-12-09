@@ -141,7 +141,7 @@ Here, you create the control machine by using the Red Hat Ansible instance on Li
 1. In the search bar, enter *Ansible*.
 1. Select **Create**.
 
-    ![](../media/7-portal-ansible.png)
+    ![](../media/8-portal-ansible.png)
 
 1. Under **Basics**, fill in these fields:
 
@@ -163,7 +163,7 @@ Here, you create the control machine by using the Red Hat Ansible instance on Li
 
     You can monitor your deployment's progress from the **Notifications** tab at the top of the page.
 
-    ![](../media/7-notifications-deployment.png)
+    ![](../media/8-notifications-deployment.png)
 
 ## Get your control machine's hostname
 
@@ -244,7 +244,7 @@ The Ansible extension is not installed by default in VS Code. Let's start by ins
 1. In VS Code, on the **View** menu, select **Extensions**.
 1. In the **Search Extensions in Marketplace** textbox, enter *Ansible*, and then select the **Ansible** extension.
 
-    ![Adding the Azure Account extension in VS Code](../media/4-add-ansible-extension.png)
+    ![Adding the Azure Account extension in VS Code](../media/8-add-ansible-extension.png)
 
 1. Select **Install**.
 1. Select **Reload** to activate the extension.
@@ -279,7 +279,7 @@ Before you run the extension, there are a few additional options that you need t
 
     Your settings resemble this:
 
-    ![](../media/4-vs-code-user-settings.png)
+    ![](../media/8-vs-code-user-settings.png)
 
 ### Run Ansible
 

@@ -65,7 +65,7 @@ From Azure DevOps:
 1. Select the ellipsis (...) button, then select **User settings**, and then select **Preview features**.
 1. Turn off **New service connections experience**.
 
-    ![Turning off the new service connections experience from Azure DevOps](../media/8-new-service-connection-experience.png)
+    ![Turning off the new service connections experience from Azure DevOps](../media/9-new-service-connection-experience.png)
 
 ## Create a service connection
 
@@ -98,7 +98,7 @@ Here, you install an extension that provides access to the `Ansible@0` task in A
 1. On the **Azure DevOps** tab, search for "Ansible."
 1. Select the **Ansible** extension.
 
-    ![](../media/8-marketplace-ansible.png)
+    ![](../media/9-marketplace-ansible.png)
 1. Select **Get it free**.
 1. Select your Azure DevOps organization.
 1. Select **Install**.
@@ -168,7 +168,7 @@ On the build screen, select the job and trace the pipeline as it runs.
 
 You see that the **Ansible** task runs and produces the same output as before:
 
-![](../media/8-pipeline-ansible-task.png)
+![](../media/9-pipeline-ansible-task.png)
 
 ## See Ansible repair the configuration
 
@@ -211,6 +211,6 @@ This process helps you see how Ansible can repair your configuration if it's acc
 
     You see that the user added once again to the VM:
 
-    ![](../media/8-pipeline-ansible-task-repair.png)
+    ![](../media/9-pipeline-ansible-task-repair.png)
 
     Ansible does not make configuration changes to *vm2* because you removed *testuser1* only from the first VM, *vm1*.
