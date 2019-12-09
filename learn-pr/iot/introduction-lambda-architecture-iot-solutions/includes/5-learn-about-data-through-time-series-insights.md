@@ -1,12 +1,12 @@
-With IoT telemetry data streaming in hot from your IoT devices, you might well like to visualize that data quickly and easily.
+With IoT telemetry data streaming in hot from your IoT devices, you might well like to visualize that data quickly, and easily.
 
-The basis of an IoT solution is often the IoT Hub, the cloud service built to handle millions of telemetry readings, and channel that data somewhere useful. Perhaps to blob storage for archive, perhaps to blob storage for a colder deeper analysis. Also, the data can be routed to some immediate queries, for some warmer analytics to be run.
+The basis of an IoT solution is often the IoT Hub, the cloud service built to handle millions of telemetry readings, and channel that data somewhere useful. The data can be routed for some real-time analytics. And perhaps routed to blob storage for archive, or for a colder deeper analysis.
 
-Another option, is to route the data to the built-in _Time Series Analytics_ services. These services enable you to visualize your data without writing any SQL queries, or doing any dirty work. This routing and visualization can all be done via the Azure portal.
+Another option, is to route the data to the built-in _Time Series Analytics_ services. These services enable you to visualize your data without writing any code, or SQL queries. This routing and visualization can all be done via the Azure portal.
 
 Using the portal, you create the required resources, then route the data. Now you can start looking at some charts.
 
-In the image below, conveyor belt data is being read and displayed. The chart shows when the belt is running fast, slow, or stopped. We usually don't want our delivery conveyor belt to stop, so checking this chart can indicate something might be wrong.
+In the image below, conveyor belt data is being read and displayed. The chart shows when the belt is running fast, slow, or stopped. We usually don't want our delivery conveyor belt to stop, so checking this chart might indicate something is wrong.
 
 ![Screenshot of the chart page, when using Time Series Insights on conveyor belt data](../media/lambda-tsi-chart.png)
 

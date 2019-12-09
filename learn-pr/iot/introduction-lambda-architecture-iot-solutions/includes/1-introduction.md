@@ -18,13 +18,13 @@ In this module you will:
 
 ## Learn the basics of Azure IoT
 
-The concept of the Internet of Things (IoT) is that one or more, could be thousands, of remote sensor devices are pumping out telemetry values. These values are being received by an IoT Hub, an Azure resource designed to handle telemetry readings from all these sources. The IoT Hub routes the data to the storage or analysis processes that you specify.
+The concept of the Internet of Things (IoT) is that one or more, could be thousands, of remote sensor devices are pumping out telemetry values. These values are received by an IoT Hub, an Azure resource designed to handle telemetry readings from all these sources. The IoT Hub routes the data to the storage or analysis processes that you specify.
 
 ![Graph illustration of telemetry](../media/lambda-telemetry.png)
 
 There are several distinct purposes of recording telemetry readings:
 
-- To be analyzed for anomalies, for preventive maintenance.
+- To be analyzed for anomalies, as part of a preventive maintenance process.
 - For visualization by a remote human operator, to help in decision making.
 - To be archived, perhaps for later analysis.
 

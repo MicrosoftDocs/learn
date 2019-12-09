@@ -9,23 +9,23 @@ A Cosmos DB resource is about big data, and world-wide access. An example might 
 
 Suppose you run a company that packages and ships products from one location in the US. The packages run along a conveyor belt, which, like most machinery, vibrates. If the vibration gets out of hand, you have to stop the belt and your business grinds to a halt. Sensors on that conveyor belt detect vibration, and the vibration telemetry is sent to an Azure Cosmos DB database in the West US region, for real-time analysis. However, you have two partners in Australia. One partner reads your telemetry data for a deep analysis. The second partner is a university, and you provide your data for research purposes. Each location has its own copy of all the data.
 
-You might define the following regions when you set up your Cosmos DB database.
+You might define the following **Write Region** and **Read Regions**, when you set up your Cosmos DB database.
 
 ![Screenshot showing how to specify write and read regions for a Cosmos DB, in the Azure portal](../media/lambda-write-read-regions.png)
 
 The reason that there are local versions of the data, is that there will be less latency when your partners access the data. And, important to your partners, it's less costly to work from local cloud storage.
 
-Whenever new telemetry values are set in the US West location, that update is automatically propagated to all read locations. You _can_ have multiple write locations, but as that complicates the explanation of data consistency, we'll leave it out for now!
+Whenever new telemetry values are set in the US West location, that update is automatically propagated to all read locations. You _can_ have multiple write locations, but as that complicates the explanation of data consistency, we'll leave it out for now.
 
 ### Prepare for the worst
 
-Secondary read locations shouldn't be confused with _failover_ locations. A failover location, which is also set in the Azure portal, specifies the regional servers, which should take over when something bad happens in your primary region. Something bad could be a natural disaster, power outages, or civil disturbance. Or anything else that might bring the reliability of servers in the primary region into question. Sometimes a cloud user will specify a _manual failover_, where human operator intervention is needed to trigger the failover. Sometimes _automatic failover_ is specified, where the responsiveness of a region is constantly tested, and a failover occurs if the tests fail. Leaving things entirely up to automated tests though, can be a bit scary.
+Secondary read locations shouldn't be confused with _failover_ locations. A failover location, which is also set in the Azure portal, specifies the region which should take over when something bad happens in your primary region. Something bad could be a natural disaster, power outages, or civil disturbance. Or anything else that might bring the reliability of servers in the primary region into question. Sometimes a cloud user will specify a _manual failover_, where human operator intervention is needed to trigger the failover. Sometimes _automatic failover_ is specified, where the responsiveness of a region is constantly tested, and a failover occurs if the tests fail. Leaving things entirely up to automated tests though, can be a bit scary.
 
-Having set up your database, you have to consider how important it's that everyone the world over gets exactly the same data at exactly the same time.
+Having set up your database, you have to consider how important it is that everyone the world over gets exactly the same data at exactly the same time.
 
 ## Set the data consistency
 
-In our scenario, there are three company data locations: US West, Australia East, and Australia Central. Only US West writes to the data, but all three locations can read it. Data consistency answers the following question. After US West writes an update to the data, what should all read locations get when they read the data. If there was zero latency, then this question would be mute. However, latency is a real issue in the cloud and it needs to be addressed.
+In our scenario, there are three company data locations: US West, Australia East, and Australia Central. Only US West writes to the data, but all three locations can read it. Data consistency answers the following question: After US West writes an update to the data, what should all read locations get when they read the data? If there is zero latency, then this question would be mute. However, latency is a real issue in the cloud, and it needs to be addressed.
 
 When a write is made to update data in US West, that change will be propagated automatically to the other locations. However, the update will exist in an inaccessible state, until the go-ahead is received that the update can now be read. This inaccessible state exists in all three locations, even the write location.
 
@@ -35,7 +35,7 @@ In _Strong_ consistency, every location will get identical data on every read. N
 
 ![Screenshot showing the Strong consistency option for a Cosmos DB, in the Azure portal](../media/lambda-consistency-strong.png)
 
-At the other end of the spectrum, there's _Eventual_ consistency. In this scenario, each location gets the update when it arrives. This process clearly means some locations might have stale data for a short while, before the local data is updated. Notice too, in the following image, that if the latency is long enough, several writes might be replaced by a single value in a read location. This anomaly occurs if the writes arrived at about the same time, and only the latest of these writes is stored in that locale.
+At the other end of the spectrum, there's _Eventual_ consistency. In this scenario, each location gets the update when it arrives. This process clearly means some locations might have stale data for a short while, before the local data is updated. Notice too, in the following image, that if the latency is long enough, several writes might be replaced by a single value in a read location. This anomaly occurs if the writes arrived at about the same time, and only the latest of these writes is stored in that locale. Notice too, that updates can arrive out of order.
 
 ![Screenshot showing the Eventual consistency option for a Cosmos DB, in the Azure portal](../media/lambda-consistency-eventual.png)
 
@@ -59,4 +59,4 @@ So what consistency level would be right for our vibration data example?  _Stron
 
 ## In summary
 
-A Cosmos DB resource is usually a more expensive option than blob storage. Create a Cosmos DB resource when you have a mass of well-structured time critical data that needs to be available in several locations across the globe.
+A Cosmos DB resource is usually a more expensive option than blob storage. Create a Cosmos DB resource when you have a mass of well-structured, time critical data. The case for a Cosmos DB is stronger still, if the data needs to be available in several locations across the globe.
