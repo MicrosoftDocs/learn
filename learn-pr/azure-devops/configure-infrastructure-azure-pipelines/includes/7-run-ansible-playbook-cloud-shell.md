@@ -89,6 +89,8 @@ Now that you've verified that your VMs are connectable through Ansible, here you
 
 1. In VS Code, select **New File** from the files pane. Name the file *users.yml*.
 
+    ![](../media/5-vs-code-add-file.png)
+
 1. Add these contents to *users.yml* and then save the file:
 
     ```yml

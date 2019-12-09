@@ -52,7 +52,7 @@ ansible-playbook \
 
 You'll see this process in greater detail later in this module.
 
-If you run this command multiple times, Ansible configures the user accounts only if they do not exist or have changed. This makes this process an idempotent operation.
+If you run this command multiple times, Ansible configures the user accounts only if they do not exist or have changed. This command is therefore an idempotent operation.
 
 Ansible is also agentless, so you do not have to install Ansible software on the managed machines. However, you do need to install Python on your managed machines. By default, Ansible connects to Linux machines over the SSH protocol and Windows machines over WinRM.
 
@@ -102,12 +102,14 @@ On the [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace?az
 
     You can use this image to bring up a control machine, which includes Ansible, the Azure CLI, and other tools, to manage your fleet.
 
-* [Ansible Tower](https://azuremarketplace.microsoft.com/marketplace/apps/redhat.ansible-tower?azure-portal=true), published by Red Hat. Ansible Tower helps organizations scale IT automation and manage complex deployments across physical, virtual, and cloud infrastructures. With Ansible Tower, you can:
+* [Ansible Tower](https://azuremarketplace.microsoft.com/marketplace/apps/redhat.ansible-tower?azure-portal=true), published by Red Hat. 
 
-  * Provision Azure environments using pre-built Ansible playbooks.
-  * Use role-based access control (RBAC) to define who or what can see, change, or delete objects or utilize specific capabilities.
-  * Maintain centralized logging for complete auditability and compliance.
-  * Utilize the large community of content available on Ansible Galaxy.
+    Ansible Tower helps organizations scale IT automation and manage complex deployments across physical, virtual, and cloud infrastructures. With Ansible Tower, you can:
+
+    * Provision Azure environments using pre-built Ansible playbooks.
+    * Use role-based access control (RBAC) to define who or what can see, change, or delete objects or utilize specific capabilities.
+    * Maintain centralized logging for complete auditability and compliance.
+    * Utilize the large community of content available on Ansible Galaxy.
 
 You can also set up Ansible on a Linux VM running on Azure or in your datacenter and use that as your control machine. Although Ansible does not support Windows as the control machine, you can run Ansible from Windows through Windows Subsystem for Linux, Cloud Shell, or Visual Studio Code.
 
@@ -157,7 +159,7 @@ az vm extension set \
 
 Chef is an infrastructure automation tool that enables you to configure and manage your systems.
 
-Chef helps you to manage your infrastructure in the cloud, on-premises, or in a hybrid environment. You express you configurations by writing _recipes_ that describe everything your systems need to run your application. Chef recipes use a declarative syntax that's based on the Ruby programming language. A recipe uses the *.rb* file extension.
+Chef helps you to manage your infrastructure in the cloud, on-premises, or in a hybrid environment. You express your configurations by writing _recipes_ that describe everything your systems need to run your application. Chef recipes use a declarative syntax that's based on the Ruby programming language. A recipe uses the *.rb* file extension.
 
 A Chef recipe is made up of _resources_. Chef provides built-in resource types that enable you to configure various parts of the system. For example, the `package` resource enables you to install or remove a package. The `service` resource enables you to manage a service.
 

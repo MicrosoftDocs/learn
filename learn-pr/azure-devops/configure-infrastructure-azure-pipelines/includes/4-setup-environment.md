@@ -15,7 +15,7 @@ Here, you create a working directory, configure Git, and then create a Git repos
 
 ### Add VS Code to your system PATH
 
-Before you set up Git, here you addVS Code to your system PATH. This step makes it easier to set up projects through VS Code from the integrated terminal.
+Before you set up Git, here you add VS Code to your system PATH. This step makes it easier to set up projects through VS Code from the integrated terminal.
 
 1. Open VS Code.
 1. In VS Code, select <kbd>F1</kbd> or select **View > Command Palette** to access the command palette.

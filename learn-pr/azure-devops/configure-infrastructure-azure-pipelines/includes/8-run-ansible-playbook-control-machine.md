@@ -299,6 +299,13 @@ You're now ready to run Ansible from your control machine. To do that:
     ```
 1. Replace `your host` with your Ansible control machine's hostname, such as *test1234.northeurope.cloudapp.azure.com*.
 1. Replace `your private key` with the full path to your SSH private key file, *ansible_rsa*, on your local computer.
+
+    An easy way to get the full path is to run this command from your local Bash session:
+
+    ```bash
+    echo ~/.ssh/ansible_rsa
+    ```
+
 1. Save the file as *~/.ssh/servers.json*.
 
     Here's an example of the complete file:

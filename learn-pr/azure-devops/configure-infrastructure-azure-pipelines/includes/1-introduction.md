@@ -28,7 +28,7 @@ To follow the progression from the beginning, be sure to first complete these le
 
 We also recommend that you go through the previous module, [Provision infrastructure in Azure Pipelines](/learn/modules/provision-infrastructure-azure-pipelines?azure-portal=true).
 
-If you want to start with this learning path, you need to set up a development environment on your Windows, macOS, or Linux system. You need:
+If you want to take just this module, you need to set up a development environment on your Windows, macOS, or Linux system. You need:
 
 * An [Azure DevOps organization](https://dev.azure.com?azure-portal=true)
 * An [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true)

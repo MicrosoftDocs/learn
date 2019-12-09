@@ -1,6 +1,6 @@
 _Configuration as code_ enables you to describe the configuration you need to run your application or service. In this section, you learn some of the important concepts that relate to configuration management and how configuration management tools work.
 
-In [Provision infrastructure in Azure Pipelines](/learn/modules/provision-infrastructure-azure-pipelines?azure-portal=true), you used Terraform to provision the _Space Game_ website on Azure. Tim's happy with how Terraform and other infrastructure tools make it easy to scale out. He can see how having a single configuration file that's kept in version control simplifies his life. He can control the deployment environments just by editing a single file and running it through the pipeline. Everything feels much better organized, it's easy to keep track of when changes happen and, if there's a problem, he can always roll back to the last version of the configuration file until he figures out what went wrong.
+In [Provision infrastructure in Azure Pipelines](/learn/modules/provision-infrastructure-azure-pipelines?azure-portal=true), you used Terraform to provision the _Space Game_ website on Azure. Tim's happy with how Terraform and other infrastructure tools make it easy to scale out. He can see how having a single configuration file that's kept in version control simplifies his life. He can control the deployment environments just by editing a file and running it through the pipeline. Everything feels much better organized, it's easy to keep track of when changes happen and, if there's a problem, he can always roll back to the last version of the configuration file until he figures out what went wrong.
 
 Although the _Space Game_ web application runs on Azure App Service, Tim also maintains a growing number of virtual machines (VMs) that support billing and other functions. Tim is wondering how automation can help him get control of all the VMs that he needs to manage. His network is getting too large to maintain them on a server-by-server basis.
 
@@ -16,7 +16,7 @@ Andy has offered to help. Tim sets up a meeting with him at Andy's favorite coff
 
 **Andy:** What's that exactly?
 
-**Tim:** Configuration drift is where servers become more and more different as time goes on. The state of the machine deviates, or drifts, from the baseline because of manual changes and updates.
+**Tim:** Configuration drift is where servers differ more and more as time goes on. The state of the machine deviates, or drifts, from the baseline because of manual changes and updates.
 
 I used to think configuration drift was inevitable and just a part of running a datacenter. Now, I suspect it's because a lot of changes are rough, cobbled-together solutions. They might be put in place to fix an immediate problem and they're not even written down. I think automation can fix the problem.
 
@@ -55,7 +55,7 @@ Configuration as code helps you implement a configuration management strategy. A
 
 _Configuration drift_ happens when resources change over time from their original deployment state. This is caused by changes made by people, processes, or programs and can happen manually or through automated processes.
 
-Eventually, an environment may become a _snowflake_. A snowflake is a unique configuration that cannot be reproduced automatically, and is typically a result of configuration drift. Inconsistency among environments can lead to unexpected issues during deployment. With snowflakes, infrastructure administration and maintenance typically become manual processes, which can be hard to track and prone to human error. The more an environment drifts from its original state, the more likely it is for an application to encounter issues. The greater the degree of configuration drift, the longer it takes to troubleshoot and fix issues.
+Eventually, an environment may become a _snowflake_. A snowflake is a unique configuration that cannot be reproduced automatically, and is typically a result of configuration drift. Inconsistency among environments can lead to unexpected issues during deployment. With snowflakes, infrastructure administration and maintenance typically become manual processes, which can be hard to track and are prone to human error. The more an environment drifts from its original state, the more likely it is for an application to encounter issues. The greater the degree of configuration drift, the longer it takes to troubleshoot and fix issues.
 
 ### Security considerations
 
@@ -71,7 +71,7 @@ While eliminating configuration drift entirely can be difficult, running a confi
 
 The concept of configuration as code is similar to the concept of infrastructure as code. In fact, you can combine the two models to automatically provision and then configure your systems all in one step.
 
-For example, your CI/CD pipeline might use an Azure Resource Manager template, Terraform, or other automated provisioning process to bring up your infrastructure. Then, you might run Chef, Puppet, Ansible, or other configuration tool to configure to set up your infrastructure with everything your application or service needs to run. You'll learn about these tools shortly.
+For example, your CI/CD pipeline might use an Azure Resource Manager template, Terraform, or other automated provisioning process to bring up your infrastructure. Then, you might run Chef, Puppet, Ansible, or other configuration tool to set up your infrastructure with everything your application or service needs to run. You'll learn about these tools shortly.
 
 ## How do configuration management tools work?
 

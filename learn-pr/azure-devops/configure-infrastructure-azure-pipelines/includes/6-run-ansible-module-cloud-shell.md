@@ -9,7 +9,9 @@ Ansible reads configuration settings from *~/ansible.cfg*. Here, you add setting
 * Hide warnings that you don't yet need to understand.
 * Disables host key checking so that you're not prompted to verify the authenticity of your servers.
 
-1. In VS Code, select **New File** from the files pane. Name the file *ansible.cfg* in your Git repository.
+1. In VS Code, select **New File** from the files pane. Name the file *ansible.cfg*.
+
+    ![](../media/5-vs-code-add-file.png)
 
 1. Add these contents to *ansible.cfg* and then save the file:
 
@@ -24,6 +26,8 @@ Ansible reads configuration settings from *~/ansible.cfg*. Here, you add setting
 Here, you specify your machine inventory. Recall that the inventory specifies the list of nodes under management. In this module, you define a dynamic inventory to enable Ansible to discover your nodes at runtime.
 
 1. In VS Code, select **New File** from the files pane. Name the file *azure_rm.yml*.
+
+    ![](../media/5-vs-code-add-file.png)
 
 1. Add these contents to *azure_rm.yml* and then save the file:
 
@@ -101,7 +105,7 @@ Although you typically write _playbooks_ to express your desired configurations,
 
 To verify that Ansible can apply configuration changes to your inventory, here you run the `ping` module directly to ensure that your VMs are discoverable and that Ansible can connect to each VM.
 
-Unlike what the name suggests, the `ping` module doesn't connect over the ICMP protocol. Rather, it connects over SSH just like every other Ansible module. Think of the `ping` module as a way to verify that Ansible can connect and that Python is correctly installed on each node. You typically wouldn't use this module in a playbook.
+Unlike what the name suggests, the `ping` module doesn't connect over the ICMP protocol. Rather, it connects over SSH just like every other Ansible module. Think of the `ping` module as a way to verify that Ansible can connect and that Python is correctly installed on each node. You don't typically use this module in a playbook.
 
 To run the `ping` module directly, run this `ansible` command:
 
@@ -114,7 +118,7 @@ ansible \
   tag_Ansible_mslearn
 ```
 
-The `tag_Ansible_mslearn` argument relates to the `keyed_groups` section in your inventory file. Recall that when you created your VMs, you provided the `--tags Ansible=mslearn` to create a tag named "Ansible" whose value is "mslearn". In the `tag_Ansible_mslearn` argument:
+The `tag_Ansible_mslearn` argument relates to the `keyed_groups` section in your inventory file. Recall that when you created your VMs, you provided the `--tags Ansible=mslearn` argument to create a tag named "Ansible" whose value is "mslearn". In the `tag_Ansible_mslearn` argument:
 
 * `tag` maps to the feature you're grouping by. Here, you're grouping by resource tag.
 * `Ansible` maps to the tag name.

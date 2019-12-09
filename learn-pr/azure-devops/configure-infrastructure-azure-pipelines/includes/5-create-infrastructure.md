@@ -1,7 +1,7 @@
 Here, you create two Linux VMs that you'll later use to configure user accounts by using Ansible. Although you could use an infrastructure tool such as an Azure Resource Manager template, Terraform, or even Ansible to bring up your VMs, for learning purposes, here you use the Azure CLI.
 
 > [!IMPORTANT]
-> The [Clean up Azure resources](/learn/modules/configure-infrastructure-azure-pipelines/10-cleanup-resources.md?azure-portal=true) page in this module contains important cleanup steps. These steps ensure that you're not charged for Azure resources you no longer need. Be sure to perform the cleanup steps even if you don't complete this module.
+> The [Clean up Azure resources](/learn/modules/configure-infrastructure-azure-pipelines/10-cleanup-resources?azure-portal=true) page in this module contains important cleanup steps. These steps ensure that you're not charged for Azure resources you no longer need. Be sure to perform the cleanup steps even if you don't complete this module.
 
 ## Select an Azure region
 

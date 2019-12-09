@@ -10,7 +10,7 @@ To do so, you:
 > * Create the pipeline in Azure Pipelines and add a task that runs Ansible from your control machine.
 > * Remove a user from one of your VMs and then manually run the pipeline to see Ansible repair the configuration.
 
-In previous modules, we provided a template that sets up a project in Azure DevOps for you. Here, you set up the project manually because you already have most of the pieces you need to run Ansible in Azure Pipelines.
+In previous modules, we provide a template that sets up a project in Azure DevOps for you. Here, you set up the project manually because you already have most of the pieces you need to run Ansible in Azure Pipelines.
 
 The Ansible extension for Azure Pipelines provides the `Ansible@0` task, which simplifies the process of connecting to your control machine and running your Ansible playbook.
 
@@ -213,4 +213,4 @@ This process helps you see how Ansible can repair your configuration if it's acc
 
     ![](../media/8-pipeline-ansible-task-repair.png)
 
-    Ansible does not make configuration changes to *vm2* because you removed *testuser1* only from the first VM, *vm1.
+    Ansible does not make configuration changes to *vm2* because you removed *testuser1* only from the first VM, *vm1*.
