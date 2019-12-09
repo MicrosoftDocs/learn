@@ -17,7 +17,7 @@ abstract:  |
   - Stash changes
   - Push your changes and update your repo by pulling
 prerequisites: None
-iconUrl: /learn/achievements/student-evangelism/collaborate-with-git.svg
+iconUrl: /learn/achievements/student-evangelism/collaborate-with-git-badge.svg
 levels:
 - beginner
 roles:
