@@ -1,4 +1,4 @@
-In this exercise, you will set up Visual Studio Code to monitor device-to-cloud messages that arrive at your IoT hub. Note: to view the device-to-cloud messages that your IoT hub receives, you need the [Azure IoT Hub Toolkit extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.azure-iot-toolkit) (formerly Azure IoT Toolkit extension).
+In this exercise, you'll set up Visual Studio Code to monitor device-to-cloud messages that arrive at your IoT hub. Note: to view the device-to-cloud messages that your IoT hub receives, you need the [Azure IoT Hub Toolkit extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.azure-iot-toolkit) (formerly Azure IoT Toolkit extension).
 
 1. In Visual Studio Code, select **IoT Hub Devices**.
 2. Then select **Set IoT Hub Connection String** from the menu.
