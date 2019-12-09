@@ -57,6 +57,6 @@ After a Cosmos DB resource has been set up, you get to choose the default consis
 
 So what consistency level would be right for our vibration data example?  _Strong_ consistency would unnecessarily delay the US West location's real-time analysis. _Eventual_ consistency might provide unwanted skipped data for deeper analysis. Probably the default _Session_ consistency would work well.
 
-## In summary
+## Best Practices
 
 A Cosmos DB resource is usually a more expensive option than blob storage. Create a Cosmos DB resource when you have a mass of well-structured, time critical data. The case for a Cosmos DB is stronger still, if the data needs to be available in several locations across the globe.

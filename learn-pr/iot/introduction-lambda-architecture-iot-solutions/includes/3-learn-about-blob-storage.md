@@ -40,7 +40,7 @@ Security in a data lake is on the file, or folder, level, or greater granularity
 
 Finally, data lake analytics, available through REST APIs, are optimized for big data. Your queries should still run in a decent amount of time, even if they're trawling through a sea of data.
 
-### In summary
+## Best Practices
 
 Blob storage is your _go to_ solution for cloud IoT storage. Blob storage is almost always the right starting point for any venture into Azure IoT. You may never need to look at other storage options. However, for _big data_ there's the option of upgrading to a data lake. Upgrade if organization, security, or analytics performance, become an issue with your blob storage.
 
