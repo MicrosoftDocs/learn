@@ -13,11 +13,11 @@ In this exercise, you:
 
 Here, you create a working directory, configure Git, and then create a Git repository.
 
-### Add Visual Studio Code to your system PATH
+### Add VS Code to your system PATH
 
-Before you set up Git, here you add Visual Studio Code to your system PATH. This step makes it easier to set up projects through Visual Studio Code from the integrated terminal.
+Before you set up Git, here you addVS Code to your system PATH. This step makes it easier to set up projects through VS Code from the integrated terminal.
 
-1. Open Visual Studio Code.
+1. Open VS Code.
 1. In VS Code, select <kbd>F1</kbd> or select **View > Command Palette** to access the command palette.
 1. In the command palette, enter *Shell Command: Install 'code' command in PATH*.
 
@@ -53,7 +53,7 @@ If you're new to Git and GitHub, you first need to run a few commands to associa
 
 [Set up Git](https://help.github.com/articles/set-up-git?azure-portal=true) explains the process in greater detail.
 
-At a minimum, you'll need to complete the following steps. Run these commands from the integrated terminal in Visual Studio Code:
+At a minimum, you'll need to complete the following steps. Run these commands from the integrated terminal in VS Code:
 
 1. [Set your username](https://help.github.com/articles/setting-your-username-in-git?azure-portal=true).
 1. [Set your commit email address](https://help.github.com/articles/setting-your-commit-email-address-in-git?azure-portal=true).
@@ -74,9 +74,9 @@ git init
 
 In practice, you might add your Ansible playbooks to an existing Git repository that contains your application code.
 
-### Open the project in Visual Studio Code
+### Open the project in VS Code
 
-Currently, Visual Studio Code is not pointing to the directory that contains your Git repository. Here, you reopen Visual Studio Code to point to the current directory in your terminal.
+Currently, VS Code is not pointing to the directory that contains your Git repository. Here, you reopen VS Code to point to the current directory in your terminal.
 
 1. In the terminal, run the following command to reopen VS Code in the current directory.
 
@@ -96,7 +96,7 @@ Here, you connect to your Azure subscription through VS Code. This step enables 
 
 The Azure Account extension enables you to connect to your Azure subscription through VS Code.
 
-The Azure Account extension is not installed by default in Visual Studio Code. Let's start by installing it.
+The Azure Account extension is not installed by default in VS Code. Let's start by installing it.
 
 1. In VS Code, on the **View** menu, select **Extensions**.
 1. In the **Search Extensions in Marketplace** textbox, enter *Azure Account*, and then select the **Azure Account** extension.

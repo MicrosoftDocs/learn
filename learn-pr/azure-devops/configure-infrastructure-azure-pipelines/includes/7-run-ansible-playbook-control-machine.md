@@ -1,38 +1,27 @@
-TODO: Point to Docs page about setting up your own control machine. Promise that link here.
+In this exercise, you set up a control machine and run your Ansbile playbook from the control machine. You run the playbook on the control machine by using a VS Code extension.
 
-Recall that with Ansible, you use a _control machine_ to manage your systems. A control machine includes the Ansible software, Python, your inventory file, and the playbooks you need to run.
+In the last part, you ran Ansible commands from Cloud Shell. You did so to get a sense for how Ansbile works.
 
-* [Red Hat Ansible instance on Linux](https://azuremarketplace.microsoft.com/marketplace/apps/azure-oss.ansible?azure-portal=true), published by Microsoft.
+But recall that in practice, you typically use a _control machine_ to manage your systems. A control machine includes the Ansible software, Python, your inventory file, and the playbooks you need to run.
 
-    You can use this image to bring up a control machine, which includes Ansible, the Azure CLI, and other tools, to manage your fleet.
+You can set up a control machine manually, either in the cloud or in your datacenter. Or you can use the [Red Hat Ansible instance on Linux](https://azuremarketplace.microsoft.com/marketplace/apps/azure-oss.ansible?azure-portal=true) image from the Azure Marketplace.
 
-Two approaches:
+Here, you create a control machine VM by using the marketplace image. To enable the VM to authenticate with Azure, you create a service principal. A _service principal_ is an identity with a limited role that can access Azure resources. Think of a service principal as a service account that can perform automated tasks on your behalf. You create a service principal in Cloud Shell, and then add details about your service principal to a credentials file that you upload to your control machine.
 
-1. Create an admin, or "jump" box.
-    1. Steps
-1. Configure your deployment directly from the agent. (could be Microsoft-hosted or your own. Point to 'own' module.)
-    1. Steps
-    1. 
+## Create a service principal
 
-Auth types
+Here, you create the service principal. During the process, you collect information about your service principal that you add to a credentials file, named *credentials*.
 
-Auto (MSI) - 
-Manual - you provide your own security principal details
-Off - ??
+A service principal's name must be unique across Azure. Here, you use a random number to make your service principal's name unique. In practice, you would give your service principal a name that reflects the purpose of the application or service that you're building.
 
-### Create a service principal
-
-You've configured Terraform to access the state file remotely. Next, you create the service principal that can authenticate with Azure on your behalf.
-
-During the process, you collect information about your service principal that you'll later need when you run your configuration in Azure Pipelines.
-
-1. Create unique ID (TODO)
+1. In VS Code, go to your Cloud Shell session.
+1. Create a unique identifier.
 
     ```bash
     UNIQUE_ID=$RANDOM
     ```
 
-1. Run the following `az account list` to get your Azure subscription ID.
+1. Run the following `az account list` to get your Azure subscription ID and save it as a Bash variable named `ARM_SUBSCRIPTION_ID`.
 
     ```azurecli
     ARM_SUBSCRIPTION_ID=$(az account list \
@@ -106,9 +95,9 @@ During the process, you collect information about your service principal that yo
 
     Each value is a GUID, or a long series of letters and numbers.
 
-    Might store these somewhere safe. You'll need them later.
+    Store these values somewhere safe for later.
 
-1. TODO: Create credentials file so that control machine can authenticate access to Azure resources.
+1. Run the following `echo` and `tee` commands to create a credentials file that contains information about your service principal.
 
     ```bash
     echo "\
@@ -119,9 +108,13 @@ During the process, you collect information about your service principal that yo
     tenant=$ARM_TENANT_ID" | tee credentials
     ```
 
+1. Print out the credentials file to verify its contents.
+
     ```bash
     cat credentials
     ```
+
+    Your output resembles this:
 
     ```output
     [default]
@@ -132,6 +125,8 @@ During the process, you collect information about your service principal that yo
     ```
 
 ## Create the control machine
+
+Here, you create the control machine by using the Red Hat Ansible instance on Linux image on the Azure Marketplace.
 
 1. From Cloud Shell, print out the SSH public key that you created earlier.
 
@@ -172,6 +167,8 @@ During the process, you collect information about your service principal that yo
 
 ## Get your control machine's hostname
 
+Run this command to get your control machine's hostname so that you can connect to it from VS Code and then later from Azure Pipelines.
+
 ```azurecli
 az network public-ip list \
   --resource-group learn-ansible-control-machine-rg \
@@ -187,51 +184,62 @@ Copy the output somewhere for later.
 
 ## Copy files to your control machine
 
-* SSH private keys => VMs under management
-* NO - .cfg file
-* NO - inventory file
-* Service principal - credentials file
+Here, you copy the following information from your Cloud Shell session to your control machine:
 
-```bash
-IPADDRESS=$(az vm list-ip-addresses \
-  --resource-group learn-ansible-control-machine-rg \
-  --name ansiblehost \
-  --query [0].virtualMachine.network.publicIpAddresses[0].ipAddress \
-  --output tsv)
-```
+* Your SSH private key, *ansible_rsa*. This enables your control machine to connect to your VMs under management.
+* Your credentials file that provides details about your service principal.
+* Your Ansible configuration file, *ansible.cfg*.
+* Your Ansible inventory file, *azure_rm.yml*.
+* Your Ansible playbook, *users.yml*.
 
-```bash
-ssh -i ~/.ssh/ansible_rsa -o StrictHostKeyChecking=no \
-  azureuser@$IPADDRESS 'mkdir -p /home/azureuser/.azure'
-```
+1. In Cloud Shell, get your control machine's IP address:
 
-```bash
-scp -i ~/.ssh/ansible_rsa -o StrictHostKeyChecking=no \
-  ~/.ssh/ansible_rsa \
-  azureuser@$IPADDRESS:/home/azureuser/.ssh
+    ```bash
+    IPADDRESS=$(az vm list-ip-addresses \
+      --resource-group learn-ansible-control-machine-rg \
+      --name ansiblehost \
+      --query [0].virtualMachine.network.publicIpAddresses[0].ipAddress \
+      --output tsv)
+    ```
 
-scp -i ~/.ssh/ansible_rsa -o StrictHostKeyChecking=no \
-  ~/credentials \
-  azureuser@$IPADDRESS:/home/azureuser/.azure
+1. Run this `ssh` command to create a directory named *.azure* in the home directory on your control machine:
 
-scp -i ~/.ssh/ansible_rsa -o StrictHostKeyChecking=no \
-  ~/ansible.cfg \
-  azureuser@$IPADDRESS:/home/azureuser
+    ```bash
+    ssh -i ~/.ssh/ansible_rsa -o StrictHostKeyChecking=no \
+      azureuser@$IPADDRESS 'mkdir -p /home/azureuser/.azure'
+    ```
 
-scp -i ~/.ssh/ansible_rsa -o StrictHostKeyChecking=no \
-  ~/azure_rm.yml \
-  azureuser@$IPADDRESS:/home/azureuser
+    You need this directory to hold your credentials file.
 
-scp -i ~/.ssh/ansible_rsa -o StrictHostKeyChecking=no \
-  ~/users.yml \
-  azureuser@$IPADDRESS:/home/azureuser
-```
+1. Run the following `scp` commands to copy the files listed earlier to your control machine:
+
+    ```bash
+    scp -i ~/.ssh/ansible_rsa -o StrictHostKeyChecking=no \
+      ~/.ssh/ansible_rsa \
+      azureuser@$IPADDRESS:/home/azureuser/.ssh
+
+    scp -i ~/.ssh/ansible_rsa -o StrictHostKeyChecking=no \
+      ~/credentials \
+      azureuser@$IPADDRESS:/home/azureuser/.azure
+
+    scp -i ~/.ssh/ansible_rsa -o StrictHostKeyChecking=no \
+      ~/ansible.cfg \
+      azureuser@$IPADDRESS:/home/azureuser
+
+    scp -i ~/.ssh/ansible_rsa -o StrictHostKeyChecking=no \
+      ~/azure_rm.yml \
+      azureuser@$IPADDRESS:/home/azureuser
+
+    scp -i ~/.ssh/ansible_rsa -o StrictHostKeyChecking=no \
+      ~/users.yml \
+      azureuser@$IPADDRESS:/home/azureuser
+    ```
 
 ## Install the Ansible extension in VS Code
 
-TODO: WHY
+Here, you install the Ansible extension in VS Code. This extension enables you to run your Ansible playbook on your control machine from VS Code.
 
-The **Ansible** extension is not installed by default in Visual Studio Code. Let's start by installing it:
+The Ansible extension is not installed by default in VS Code. Let's start by installing it:
 
 1. In VS Code, on the **View** menu, select **Extensions**.
 1. In the **Search Extensions in Marketplace** textbox, enter *Ansible*, and then select the **Ansible** extension.
@@ -249,7 +257,7 @@ You run the Ansible extension from the command palette. The process prompts you 
 
 ### Specify additional options in your user settings
 
-There are a few additional options that you need to specify, including the location of your SSH private key and the path to your inventory file. These options are stored in your VS Code user settings. Here's how to TODO:
+Before you run the extension, there are a few additional options that you need to specify, including the location of your SSH private key and the path to your inventory file. These options are stored in your VS Code user settings. Here's how to set that up:
 
 1. In VS Code, select <kbd>F1</kbd> or select **View > Command Palette** to access the command palette.
 1. In the command palette, enter *Preferences: Open User Settings*.
@@ -275,7 +283,7 @@ There are a few additional options that you need to specify, including the locat
 
 ### Run Ansible
 
-TODO: 
+You're now ready to run Ansible from your control machine. To do that:
 
 1. In VS Code, select **File > New File**. Then add these contents:
 
@@ -314,10 +322,12 @@ TODO:
     * The full path to your playbook file, *users.yml*.
     * Your control machine's hostname, such as *test1234.northeurope.cloudapp.azure.com*.
 
-    From the output, you see that (TODO: Succeeded, but no changes are made; show sample output)
+    From the output, you see that the run succeeded, but Ansible made no changes to your VMs.
 
     ```output
     PLAY RECAP *********************************************************************************************************************************************************************************************
     vm1_1bbf                   : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
     vm2_867a                   : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
     ```
+
+     This is expected. Earlier, you ran the same Ansible playbook on your VMs from Cloud Shell. The user accounts are already present on your VMs.

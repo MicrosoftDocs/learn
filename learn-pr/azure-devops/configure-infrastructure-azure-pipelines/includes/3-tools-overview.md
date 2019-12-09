@@ -25,7 +25,6 @@ Here's a basic example that you'll work with later. It defines service accounts 
 ```yml
 ---
 - hosts: all
-  remote_user: azureuser
   become: yes
   tasks:
   - name: Add service accounts
@@ -34,7 +33,6 @@ Here's a basic example that you'll work with later. It defines service accounts 
       comment: service account
       create_home: no
       shell: /usr/sbin/nologin
-      password: '*'
       state: present
     loop:
     - testuser1
