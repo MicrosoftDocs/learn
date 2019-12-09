@@ -10,7 +10,7 @@ Create a custom role within Azure for the new employee:
 
 1. First, export the built-in **Virtual Machine Contributor** permissions, by running the following command:
 
-   ```Azure CLI
+   ```azurecli
    az role definition list --name "Virtual Machine Contributor" --output json | jq '.[] | .permissions[0].actions'
    ```
 
@@ -82,7 +82,7 @@ Create a custom role within Azure for the new employee:
 1. Type **Code** into the cloud shell. Paste the definition above into the editor, then select **Save** from the three-dot menu using **VM-Support-Role.json** as the filename.
 1. To create the role, you now run the following command in the cloud shell, which should return the same JSON back in the output – a few ID fields are added:
 
-   ```Azure CLI
+   ```azurecli
    az role definition create --role-definition VM-Support-Role.json
    ```
 

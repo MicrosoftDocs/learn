@@ -10,7 +10,7 @@ A subscription owner often wants to see all the current custom roles within an o
 
 To list all the current roles, you use the following Azure CLI command:
 
-```Azure CLI
+```azurecli
 az role definition list --custom-role-only true --output json | jq '.[] | {"roleName":.roleName, "roleType":.roleType}'
 ```
 
@@ -20,7 +20,7 @@ Notice how the command only asks for role name and role type. This makes it easi
 
 If you wish to see the full verbose entry for a specific role, you use the following Azure CLI command:
 
-```Azure CLI
+```azurecli
 az role definition list --name "Virtual Machine Manager"
 ```
 
@@ -68,7 +68,7 @@ To understand the governance of your organization in Azure, it's essential that 
 
 The following command allows you to view every role assignment within your organization:
 
-```Azure CLI
+```azurecli
 az role assignment list [--all]
                         [--assignee]
                         [--include-classic-administrators {false, true}]
