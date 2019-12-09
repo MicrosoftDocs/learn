@@ -1,11 +1,11 @@
 You're all done with the tasks for this module. Here, you'll clean up your Azure resources.
 
 > [!IMPORTANT]
-> This page contains important cleanup steps. Cleaning up helps ensure that you don't run out of free build minutes. It also helps ensure that you're not charged for Azure resources after you complete this module.
+> This page contains important cleanup steps. Cleaning up ensures that you're not charged for Azure resources after you complete this module.
 
 ## Clean up Azure resources
 
-Here, you delete your VMs under management, your Ansible control machine, and your service principal. Earlier, you worked with Azure resources through Azure Cloud Shell in the VS Code. Here, you do the same.
+Here, you delete your VMs under management, your Ansible control machine, and your service principal. Earlier, you worked with Azure resources through Cloud Shell in the VS Code. Here, you do the same.
 
 The easiest way to delete your VMs is to delete their parent resource groups. Deleting a resource group deletes all resources in that group.
 

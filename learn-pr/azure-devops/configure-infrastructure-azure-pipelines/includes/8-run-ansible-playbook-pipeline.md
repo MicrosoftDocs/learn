@@ -1,6 +1,18 @@
-TODO: Add intro
+In this part, you run your Ansible playbook in Azure Pipelines. You configure the pipeline to run Ansible from your control machine, on the same Linux VMs that you set up earlier.
 
-TODO: No "Space Game" -> Microsoft Learn - Ansible
+To do so, you:
+
+> [!div class="checklist"]
+> * Create a repository on GitHub and then push your local Git repository to GitHub.
+> * Create the project in Azure DevOps.
+> * Create a service connection that enables Azure Pipelines to access your Azure subscription.
+> * Install the Ansible extension for Azure Pipelines.
+> * Create the pipeline in Azure Pipelines and add a task that runs Ansible from your control machine.
+> * Remove a user from one of your VMs and then manually run the pipeline to see Ansible repair the configuration.
+
+In previous modules, we provided a template that sets up a project in Azure DevOps for you. Here, you set up the project manually because you already have most of the pieces you need to run Ansible in Azure Pipelines.
+
+The Ansible extension for Azure Pipelines provides the `Ansible@0` task, which simplifies the process of connecting to your control machine and running your Ansible playbook.
 
 ## Create your repository on GitHub
 
@@ -10,6 +22,8 @@ TODO: No "Space Game" -> Microsoft Learn - Ansible
 1. Select **Create repository**.
 
 ## Push your local Git repository to GitHub
+
+Here, you push your local Git repository to GitHub. To do so, you add a remote that points to your GitHub repository.
 
 1. In VS Code, go to your Bash session.
 1. Add and commit your inventory file, *azure_rm.yml*, and your playbook, *users.yml*, to your repository.
@@ -55,7 +69,7 @@ From Azure DevOps:
 
 ## Create a service connection
 
-Here, you create a service connection that enables Azure Pipelines to access your Azure subscription. Azure Pipelines uses this service connection to TODO:
+Here, you create a service connection that enables Azure Pipelines to access your Azure subscription. Azure Pipelines uses this service connection to securely connect to your control machine.
 
 1. In Azure DevOps, go to your **Microsoft Learn - Ansible** project.
 1. Select **Project settings** from the bottom corner of the page.
@@ -78,9 +92,7 @@ Here, you create a service connection that enables Azure Pipelines to access you
 
 ## Install the Ansible extension for Azure Pipelines
 
-Install add-in that provides access to the `Ansible@0` task in Azure Pipelines.
-
-Knowledge: This add-in (could use commands or use this task, which handles many of the details for you.)
+Here, you install an extension that provides access to the `Ansible@0` task in Azure Pipelines.
 
 1. From a new browser tab, go to [marketplace.visualstudio.com](https://marketplace.visualstudio.com?azure-portal=true).
 1. On the **Azure DevOps** tab, search for "Ansible."
@@ -92,6 +104,8 @@ Knowledge: This add-in (could use commands or use this task, which handles many 
 1. Select **Install**.
 
 ## Create the pipeline in Azure Pipelines
+
+Here, you create the pipeline in Azure Pipelines. During the process, you create your pipeline configuration file, *azure-piplines.yml*.
 
 1. In Azure DevOps, go to your project.
 1. Select **Pipelines**, either from the project page or from the left pane.
@@ -156,11 +170,14 @@ You see that the **Ansible** task runs and produces the same output as before:
 
 ![](../media/8-pipeline-ansible-task.png)
 
-## See repair in action
+## See Ansible repair the configuration
 
-From CloudShell, remove user
+Here, you remove the *testuser1* user from your VM named *vm1*. You then run the pipeline a second time to see Ansible repair the configuration on the VM.
 
-1. Get IP address.
+This process helps you see how Ansible can repair your configuration if it's accidentally changed by an outside person or process.
+
+1. In VS Code, switch to your Cloud Shell session.
+1. Get IP address of your VM named *vm1*:
 
     ```azurecli
     IP_ADDRESS=$(az vm list-ip-addresses \
@@ -170,19 +187,19 @@ From CloudShell, remove user
       --output tsv)
     ```
 
-1. See the user.
+1. Verify that the user *testuser1* exists on the VM:
 
     ```bash
     ssh -i ~/.ssh/ansible_rsa azureuser@$IP_ADDRESS "/usr/bin/getent passwd testuser1"
     ```
 
-1. Remove the user.
+1. Remove the user *testuser1* exists from the VM:
 
     ```bash
     ssh -i ~/.ssh/ansible_rsa azureuser@$IP_ADDRESS "sudo /usr/sbin/userdel testuser1"
     ```
 
-1. Verify user not present
+1. Verify that the user *testuser1* no longer exists on the VM:
 
     ```bash
     ssh -i ~/.ssh/ansible_rsa azureuser@$IP_ADDRESS "/usr/bin/getent passwd testuser1"
@@ -190,10 +207,10 @@ From CloudShell, remove user
 
     You don't see any output, which tells you the user is not present.
 
-1. Manually run pipeline. To do so, go to your pipeline in Azure Pipelines and select **Run pipeline**. Make sure **master** is selected branch and then select **Run**.
+1. Manually run pipeline. To do so, go to your pipeline in Azure Pipelines and select **Run pipeline**. Make sure **master** is the selected branch and then select **Run**.
 
     You see that the user added once again to the VM:
 
     ![](../media/8-pipeline-ansible-task-repair.png)
 
-    Ansible does not make configuration changes to the other VM because you removed *testuser1* only from the first VM.
+    Ansible does not make configuration changes to *vm2* because you removed *testuser1* only from the first VM, *vm1.

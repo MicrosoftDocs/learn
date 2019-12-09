@@ -1,36 +1,31 @@
-Talk about all the file scping, and how you would normally choose one:
+Great work! You successfully configured Azure Pipelines to run a basic Ansible configuration on two virtual machines.
 
-* Run Ansible directly, either locally or from CS.
-* Use the VS Code XYZ extension.
+You started by creating an inventory file, a configuration file, and a playbook locally. You uploaded these files to Cloud Shell and to your control machine.
 
-Here, you saw both to XYZ. 
+In practice, you typically won't need to copy so many files. Here, you started by running Ansible from Cloud Shell to get a sense for how the process works. You then ran Ansible on your control machine through Visual Studio Code to see how the Ansible extension for VS Code helps make the process easier. In practice, you would choose the technique that best fits your preferred workflow.
 
-This is a placeholder.
+## Learn more
 
-TODO: Here you used Ansible. You'll probably want to know about other options. Explore them. yada yada
+If you're interested in Ansible, here are some resources where you can learn more:
 
-List of modules:
+* [ansible.com](https://www.ansible.com/?azure-portal=true)
+* [Ansible on Azure](https://docs.microsoft.com/azure/ansible/?azure-portal=true)
+* [Microsoft Azure Guide](https://docs.ansible.com/ansible/latest/scenario_guides/guide_azure.html?azure-portal=true)
+* [Ansible playbooks for Azure](https://github.com/Azure-Samples/ansible-playbooks?azure-portal=true)
+* [How to build your inventory](https://docs.ansible.com/ansible/latest/user_guide/intro_inventory.html?azure-portal=true)
+* [Quickstart: Deploy the Ansible solution template for Azure to CentOS](https://docs.microsoft.com/azure/ansible/ansible-deploy-solution-template?azure-portal=true)
+* [Visual Studio Code extension for Ansible](https://marketplace.visualstudio.com/items?itemName=vscoss.vscode-ansible&azure-portal=true)
 
-https://docs.ansible.com/ansible/latest/modules/list_of_cloud_modules.html#azure
+In this module, you saw a few tools that you can use to automate your configuration. Here are additional resources where you can learn more about each option:
 
-https://docs.microsoft.com/en-us/azure/virtual-machines/windows/infrastructure-automation
-
-More about:
-
-If you like ANsible, try the 
-https://marketplace.visualstudio.com/items?itemName=vscoss.vscode-ansible
-
-* Ansible
-  * [Ansible on Azure](https://docs.microsoft.com/en-us/azure/ansible/?ocid=AID754288&wt.mc_id=CFID0352) documentation website.
-  * [Microsoft Azure Guide](https://docs.ansible.com/ansible/latest/scenario_guides/guide_azure.html).
-  * Ansible Playbook samples for Azure are available on GitHub on the [Ansible Playbook Samples for Azure](https://github.com/Azure-Samples/ansible-playbooks) page.
-  * https://docs.ansible.com/ansible/latest/user_guide/intro_inventory.html
-  * https://docs.microsoft.com/en-us/azure/ansible/ansible-deploy-solution-template
-* Azure Automation
-* Azure Custom Script Extension
-* [Windows PowerShell Desired State Configuration Overview](https://docs.microsoft.com/en-us/powershell/dsc/overview/overview)
-* Cloud init
-  * [Cloud Config Data](https://cloudinit.readthedocs.io/en/latest/topics/format.html#cloud-config-data)
-  * https://docs.microsoft.com/en-us/azure/virtual-machines/linux/using-cloud-init
-
-
+* [Azure Automation](https://docs.microsoft.com/azure/automation/automation-intro?azure-portal=true)
+* [Azure virtual machine extensions](https://docs.microsoft.com/azure/virtual-machines/extensions/overview?azure-portal=true)
+* Chef:
+  * [chef.io](https://www.chef.io/?azure-portal=true)
+  * [Learn Chef Rally](https://learn.chef.io/?azure-portal=true)
+  * [Chef Software on Azure](https://docs.microsoft.com/azure/chef/?azure-portal=true)
+* Cloud-init:
+  * [cloudinit.readthedocs.io](https://cloudinit.readthedocs.io/?azure-portal=true)
+  * [Cloud-init support for virtual machines in Azure](https://docs.microsoft.com/azure/virtual-machines/linux/using-cloud-init?azure-portal=true)
+* [PowerShell DSC](https://docs.microsoft.com/powershell/scripting/dsc/overview/overview?view=powershell-6?azure-portal=true)
+* [Puppet](https://puppet.com/?azure-portal=true)

@@ -5,7 +5,7 @@ During the process, you:
 > [!div class="checklist"]
 > * Walk through a basic Ansible playbook so that you understand what each piece does.
 > * Create the Ansible playbook locally and then upload the playbook to Cloud Shell.
-> * Run the Ansbile playbook on your Linux VMs.
+> * Run the Ansible playbook on your Linux VMs.
 > * Verify that your VMs were configured as you expect.
 > * Run the playbook a second time to see idempotency in action.
 

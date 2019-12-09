@@ -1,6 +1,6 @@
-In this exercise, you set up a control machine and run your Ansbile playbook from the control machine. You run the playbook on the control machine by using a VS Code extension.
+In this exercise, you set up a control machine and run your Ansible playbook from the control machine. You run the playbook on the control machine by using a VS Code extension.
 
-In the last part, you ran Ansible commands from Cloud Shell. You did so to get a sense for how Ansbile works.
+In the last part, you ran Ansible commands from Cloud Shell. You did so to get a sense for how Ansible works.
 
 But recall that in practice, you typically use a _control machine_ to manage your systems. A control machine includes the Ansible software, Python, your inventory file, and the playbooks you need to run.
 
