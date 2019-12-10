@@ -110,11 +110,11 @@ Extensions are then able to leverage the service endpoint to acquire the stored 
 
 ### Concurrent pipelines
 
-You can run concurrent pipelines (also called parallel jobs) in Azure Pipelines. One parallel job in Azure Pipeline lets you run a single build or elease job at any given time. This rule is true whether you run the job on Microsoft-hosted or self-hosted agents. Parallel jobs are purchased at the organization level, and they are shared by all projects in an organization. 
+You can run concurrent pipelines (also called parallel jobs) in Azure Pipelines. One parallel job in Azure Pipeline lets you run a single build or release job at any given time. This rule is true whether you run the job on Microsoft-hosted or self-hosted agents. Parallel jobs are purchased at the organization level, and they are shared by all projects in an organization.
 
 #### Microsoft-hosted CI/CD
 
-If you want to run your builds and releases on machines that Microsoft manages, use Microsoft-hosted parallel jobs. Your jobs run on the pool of hosted agents. Microsoft provides a free tier of service by default for every organization. Consult the Azure DevOps documentation to see the criteria.
+If you want to run your builds and releases on machines that Microsoft manages, use Microsoft-hosted parallel jobs. Your jobs run on the pool of hosted agents. Microsoft provides a free tier of service by default for every organization. [Consult the Azure DevOps documentation](https://docs.microsoft.com/azure/devops/pipelines/licensing/concurrent-jobs?view=azure-devops&azure-portal=true) to see the criteria.
 
 If you want Azure Pipelines to orchestrate your builds and releases, but use your own machines to run them, use self-hosted parallel jobs. You start by deploying agents on your machines. You can register any number of these self-hosted agents in your organization. Microsoft charges based on the number of jobs you want to run at a time, not the number of agents registered.
 
@@ -131,8 +131,5 @@ Begin by seeing if the free tier offered in your organization is enough for your
 Here are some examples of where you might need multiple parallel jobs.
 
 * If you have multiple teams, and if each of them requires a CI build, you'll likely need a parallel job for each team.
-
 * If your CI build trigger applies to multiple branches, you'll likely need a parallel job for each active branch.
-
 * If you develop multiple applications by using one organization or server, you'll likely need additional parallel jobs, one to deploy each application at the same time.
-

@@ -38,19 +38,19 @@ Now that you're familiar with Git, let's talk briefly about how to migrate to Gi
 
 Most teams wish they could reorganize their source control structure. Typically, the structure the team is using today was set up a decade ago and it's no longer suitable. Migrating to Git could be a good opportunity to restructure your repo. 
 
-This brings up the question of whether to migrate your history along with the code. Only migrating the code is called “migrating the tip." As the name indicates, you're not carrying forward any history from your TFVC repository. You're simply taking the last version of the code and setting that up in Git.
+This brings up the question of whether to migrate your history along with the code. Only migrating the code is called "migrating the tip." As the name indicates, you're not carrying forward any history from your TFVC repository. You're simply taking the last version of the code and setting that up in Git.
 
 In general, migrating the tip is the better approach than migrating the history as well. TFVC and Git are fundamentally different. TFVC stores branches as individual folders and changes are stored as chain sets. Git works in a completely different way. You're relying on the migration to transform the history from one mechanism into a completely different mechanism that Git understands.
 
-Also, if you're going to use the migration as an opportunity to restructure your repo, it probably doesn't make sense to migrate history since you're going to restructure the code (or break the code into multiple repos). 
+Also, if you're going to use the migration as an opportunity to restructure your repo, it probably doesn't make sense to migrate history since you're going to restructure the code (or break the code into multiple repos).
 
 #### Single Branch Import
 
-If you're on TFVC and you're in Azure DevOps then you have the option of a simple single-branch import. Just click on **Import repository** from the Azure Repos top level drop-down menu to open the dialog. Then, enter the path to the branch you're migrating and if you want history or not (up to 180 days). Finally, name the repo and the import will be triggered. This is a very simple but effective way to do the migration.
+If you're on TFVC and you're in Azure DevOps, then you have the option of a simple single-branch import. Just click on **Import repository** from the Azure Repos top level drop-down menu to open the dialog. Then, enter the path to the branch you're migrating and if you want history or not (up to 180 days). Finally, name the repo and the import will be triggered. This is a very simple but effective way to do the migration.
 
 #### Git-tfs
 
-What if you need to migrate more than a single branch and retain branch relationships? Or you're going to take all the history with you? In that case, you're going to have to use [Git-tfs](https://github.com/git-tfs/git-tfs). This is an open-source project that synchronizes Git and TFVC repos. Git-tfs can migrate multiple branches and will preserve the relationships so that you can merge branches in Git after you migrate. Be warned that it can take a while to do this conversion - especially for large repos or repos with long history. One approach is to do a dry-run migration locally, solve any issues and then do it for real.
+What if you need to migrate more than a single branch and retain branch relationships? Or you're going to take all the history with you? In that case, you're going to have to use [Git-tfs](https://github.com/git-tfs/git-tfs?azure-portal=true). This is an open-source project that synchronizes Git and TFVC repos. Git-tfs can migrate multiple branches and will preserve the relationships so that you can merge branches in Git after you migrate. Be warned that it can take a while to do this conversion - especially for large repos or repos with long history. One approach is to do a dry-run migration locally, resolve any issues, and then do it for real.
 
 ### Implement branch strategies
 
@@ -66,13 +66,13 @@ The Feature Branch Workflow assumes a central repository, and master represents 
 
 The Gitflow Workflow defines a strict branching model designed around the project's release. It provides a robust framework for managing larger projects.
 
-Gitflow is ideally suited for projects that have a scheduled release cycle. This workflow doesn’t add any new concepts or commands beyond what’s required for the Feature Branch Workflow. Instead, it assigns very specific roles to different branches and defines how and when they should interact. In addition to feature branches, it uses individual branches for preparing, maintaining, and recording releases. Of course, you also get to leverage all the benefits of the Feature Branch Workflow: pull requests, isolated experiments, and more efficient collaboration.
+Gitflow is ideally suited for projects that have a scheduled release cycle. This workflow doesn't add any new concepts or commands beyond what's required for the Feature Branch Workflow. Instead, it assigns very specific roles to different branches and defines how and when they should interact. In addition to feature branches, it uses individual branches for preparing, maintaining, and recording releases. Of course, you also get to leverage all the benefits of the Feature Branch Workflow: pull requests, isolated experiments, and more efficient collaboration.
 
 Gitflow uses a central server model called origin. Instead of a single master branch, this workflow uses two branches to record the history of the project. The master branch stores the official release history, and the develop branch serves as an integration branch for features. Feature branches may branch off from develop branch and must merge back into develop.  Release branches may branch off from the develop branch and must merge back into the develop and master branches. For hotfixes, you use the hotfix branch, which is cut from the master branch, and then merged back into the master and develop branches.
 
 #### Forking Branch Workflow
 
-The Forking Workflow is fundamentally different than other popular Git workflows. Instead of using a single server-side repository to act as the “central” codebase, it gives every developer their own server-side repository. This means that each contributor has not one, but two Git repositories: a private local one and a public server-side one. The Forking Workflow is most often seen in public open source projects.
+The Forking Workflow is fundamentally different than other popular Git workflows. Instead of using a single server-side repository to act as the "central" codebase, it gives every developer their own server-side repository. This means that each contributor has not one, but two Git repositories: a private local one and a public server-side one. The Forking Workflow is most often seen in public open source projects.
 
 The main advantage of the Forking Workflow is that contributions can be integrated without the need for everybody to push to a single central repository. Developers push to their own server-side repositories, and only the project maintainer can push to the official repository. This allows the maintainer to accept commits from any developer without giving them write access to the official codebase.
 
@@ -95,7 +95,7 @@ Git is all about collaboration, and pull requests let you tell others about chan
 
 Pull requests are commonly used by teams and organizations that have a shared repositor, where everyone shares a single repository and branches are used to develop features and isolate changes. Many open source projects on Github use pull requests to manage changes from contributors. They provide a way to notify project maintainers about changes one has made and in initiating code review and general discussion about a set of changes before merging them into the main branch.
 
-Pull requests combine the review and merge of your code into a single collaborative process. Once you’re done fixing a bug or new feature in a branch, create a new pull request. Add the members of the team to the pull request so they can review and vote on your changes. Use pull requests to review works in progress and get early feedback on changes. There’s no commitment to merge the changes as the owner can abandon the pull request at any time.
+Pull requests combine the review and merge of your code into a single collaborative process. Once you're done fixing a bug or new feature in a branch, create a new pull request. Add the members of the team to the pull request so they can review and vote on your changes. Use pull requests to review works in progress and get early feedback on changes. There's no commitment to merge the changes as the owner can abandon the pull request at any time.
 
 There are a few critical branches in your repo, such as the master branch, that you may want to protect with some pull request policies. Pull requests should be mandatory if a developer wants to make changes on a critical branch. Developers pushing changes directly to these branches will have their pushes rejected.
 

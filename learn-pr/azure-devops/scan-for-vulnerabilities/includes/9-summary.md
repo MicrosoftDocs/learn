@@ -55,7 +55,7 @@ Certificate Management - Azure Key Vault is also a service that lets you easily 
 
 Centralizing storage of application secrets in Azure Key Vault allows you to control their distribution. Key Vault greatly reduces the chances that secrets may be accidentally leaked. When using Key Vault, application developers no longer need to store security information in their application. This eliminates the need to make this information part of the code. For example, an application may need to connect to a database. Instead of storing the connection string in the app codes, store it securely in Key Vault.
 
-Your applications can securely access the information they need by using URIs that allow them to retrieve specific versions of a secret after the application’s key or secret is stored in Azure Key Vault. This happens without having to write custom code to protect any of the secret information.
+Your applications can securely access the information they need by using URIs that allow them to retrieve specific versions of a secret after the application's key or secret is stored in Azure Key Vault. This happens without having to write custom code to protect any of the secret information.
 
 ### Securely store secrets and keys
 
@@ -90,4 +90,4 @@ As a secure store in Azure, Key Vault has been used to simplify scenarios like A
 
 Azure Key Vault and Kubernetes make a good combination. It may seem that Kubernetes alone is sufficient since Kubernetes supports both a ConfigMap store and Secret store. Remember, however, the principle around the separation of concerns and how we can ensure enhanced security by separating out configuration from secrets. 
 
-Having secrets in the same cluster as the configuration store can make them prone to higher risks. An additional benefit is maintainability. Azure Key Vault gives the ability to provide a distributed “Secure Store as a Service” option that provides not just secret management but also Certificates and Key management as part of the service. The SecOps engineers can lock down access to the store without need of cluster admins permissions which allows for clear delineation of responsibilities and access.
+Having secrets in the same cluster as the configuration store can make them prone to higher risks. An additional benefit is maintainability. Azure Key Vault gives the ability to provide a distributed "Secure Store as a Service" option that provides not just secret management but also Certificates and Key management as part of the service. The SecOps engineers can lock down access to the store without need of cluster admins permissions which allows for clear delineation of responsibilities and access.
