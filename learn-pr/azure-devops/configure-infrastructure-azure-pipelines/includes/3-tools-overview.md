@@ -199,7 +199,7 @@ On the [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace?az
 
     These images come with the Chef Client. Chef Client is an agent that runs on each node that's managed through Chef. Chef Client applies the cookbooks and recipes you specify. Chef Client can also send reporting data back to a Chef Server or a Chef Automate server so that you can track and audit your configuration runs over time.
 
-* [Chef Automate](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/chef-software.chef-automate?azure-portal=true), published by Chef Software. Chef Automate enables you to package and test your applications, and provision and update your infrastructure. Using Chef, you can manage all of it with compliance and security checks, and dashboards that give you visibility into your entire stack.
+* [Chef Automate](https://azuremarketplace.microsoft.com/marketplace/apps/chef-software.chef-automate?azure-portal=true), published by Chef Software. Chef Automate enables you to package and test your applications, and provision and update your infrastructure. Using Chef, you can manage all of it with compliance and security checks, and dashboards that give you visibility into your entire stack.
 
 You can also set up Chef on a Linux or Windows VM running on Azure or in your datacenter.
 
@@ -300,9 +300,9 @@ There are a number of ways you can use Puppet on Azure.
 
 On the [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace?azure-portal=true), you'll find a number of images that you can use. They include:
 
-* [Puppet Agent](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/Puppet.puppet-agent-windows-arm?azure-portal=true), published by Puppet, is a virtual machine extension that installs the Puppet agent on your Windows VM.
+* [Puppet Agent](https://azuremarketplace.microsoft.com/marketplace/apps/Puppet.puppet-agent-windows-arm?azure-portal=true), published by Puppet, is a virtual machine extension that installs the Puppet agent on your Windows VM.
 
-* [Puppet Enterprise](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/puppet.puppet-enterprise?azure-portal=true), published by Puppet, enables you to automate the entire lifecycle of your infrastructure.
+* [Puppet Enterprise](https://azuremarketplace.microsoft.com/marketplace/apps/puppet.puppet-enterprise?azure-portal=true), published by Puppet, enables you to automate the entire lifecycle of your infrastructure.
 
 You can also set up Puppet on a Linux or Windows VM running on Azure or in your datacenter.
 
