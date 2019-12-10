@@ -39,7 +39,7 @@ While you can continue to work with your existing artifact repositories in their
 
 ### Designing a licensing strategy
 
-Azure DevOps has manydifferent licensing policies designed to suit many different situations. To get a quick overview, go to [Pricing for Azure DevOps](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/?azure-portal=true) to see what's available.
+Azure DevOps has many different licensing policies designed to suit many different situations. To get a quick overview, go to [Pricing for Azure DevOps](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/?azure-portal=true) to see what's available.
 
 There is also a large number of both free and paid extensions, many of which you use to integrate third-party applications. Depending upon your current configuration, you might also decide to implement Group-Based Licensing. This makes it easier to manage licenses in Azure DevOps.
 If you're planning to make this change though, it's important to avoid a situation where migration to Group-Based Licensing results in users temporarily losing their currently assigned licenses.
