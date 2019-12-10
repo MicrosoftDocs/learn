@@ -39,7 +39,7 @@ A _canary release_ is a way to identify potential problems as soon as possible w
 
 ![Diagram of load balancer sending some traffic to a canary version](../media/2-canary-deployment.png)
 
-We would monitor what happens when we release the the feature. If the canary release has problems, we can apply a fix. After the canary release is known to be stable, we can move it to the actual production environment.
+We would monitor what happens when we release the feature. If the canary release has problems, we can apply a fix. After the canary release is known to be stable, we can move it to the actual production environment.
 
 ## Feature toggles
 
