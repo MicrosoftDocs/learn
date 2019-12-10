@@ -14,11 +14,11 @@ We'll go deeper into Azure DevOps in future modules. You can also check out thes
 
 ## Recommendations for KPIs and quality metrics
 
- DevOps encourages teams to have goals that are specific, measurable, and time-bound. To ensure that these goals are measurable, it's important for the team to agree on appropriate metrics and Key Performance Indicators (KPIs). It's important to choose metrics that focus on specific business outcomes, and that achieve a return on investment and increased business value. Here is a list of commonly used metrics and KPIs that apply to all DevOps projects:
+ DevOps encourages teams to have goals that are specific, measurable, and time-bound. To ensure that these goals are measurable, it's important for the team to agree on appropriate metrics and Key Performance Indicators (KPIs). It's important to choose metrics that focus on specific business outcomes, and that achieve a return on investment and increased business value. Here is a list of commonly used metrics and KPIs that apply to all DevOps teams:
 
 ### Faster Outcomes
 
-* Deployment Frequency. Increasing the frequency of deployments is often a critical driver in DevOps projects.
+* Deployment Frequency. Increasing the frequency of deployments is often a critical driver in DevOps teams.
 * Deployment Speed. As well as increasing how often deployments happen, it's important to decrease the time that they take.
 * Deployment Size. How many features, stories, and bug fixes are being deployed each time?
 * Lead Time. How long does it take from starting on a work item, until it is deployed?
