@@ -20,7 +20,7 @@ abstract: |
 
 prerequisites: |
     None
-iconUrl: /learn/achievements/student-evangelism/introduction-iot-badge.png
+iconUrl: /learn/achievements/student-evangelism/introduction-to-iot-badge.svg
 badge:
   uid: learn.introduction-to-iot.badge
 levels:
