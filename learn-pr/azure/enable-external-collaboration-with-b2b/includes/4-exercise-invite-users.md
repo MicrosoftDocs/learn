@@ -44,13 +44,13 @@ Invite a guest user to add them to your directory.
 
 1. Select **Invite** to send your invitation.
 
-1. An invitation email will be sent to the email address you've specified. Go to the email inbox. Open the email. Select **Get started**.
+1. An invitation email will be sent to the email address you've specified. Go to the email inbox. Open the email. Then select **Get started**.
 
-    ![text](../media/4-email-confirmation.png)
+    ![Email confirmation](../media/4-email-confirmation.png)
 
 1. The guest will login with their Microsoft account.
 
-    ![text](../media/4-sign-in-experience.png)
+    ![Sign-in experience](../media/4-sign-in-experience.png)
 
 ## Add a guest user to a group
 
@@ -76,7 +76,7 @@ Now give your guest user access to an application.
 
 1. In the search box look for Twitter, then select **Twitter** in the returned list, then select **Add**.
 
-    ![text](../media/4-add-application.png)
+    ![Add application](../media/4-add-application.png)
 
 1. Go to your newly added application. Select **Azure Active Directory > Enterprise applications > All applications**, then select **Twitter**.
 
