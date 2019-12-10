@@ -178,13 +178,13 @@ Our existing _Test_ stage includes one job. That job deploys the website to App 
 
 We've just seen the team decide on how they'll implement their first functional tests. If your team is just starting to incorporate functional tests into their pipeline (or even if you're already doing that), remember that you always need a plan.
 
-Many times, when someone asks team members about their performance testing plan, it's common for  them to respond with a list of tools they are going to use. However, a a list of tools isn't a plan. You also must work out how the testing environments will be configured, you need to determine the processes to be used, and you need to determine what success or failure looks like.
+Many times, when someone asks team members about their performance testing plan, it's common for  them to respond with a list of tools they are going to use. However, a list of tools isn't a plan. You also must work out how the testing environments will be configured, you need to determine the processes to be used, and you need to determine what success or failure looks like.
 
 Make sure your plan:
 
 * Takes the expectations of the business into account.
 * Takes the expectations of the target users into account.
-* Defines the metrics you will use. 
+* Defines the metrics you will use.
 * Defines the KPIs you will use.
 
 Performance testing needs to be part of your planning, right from the start. If you use a story or Kanban board, you might consider having an area near it where you can plan out your testing strategy. As part of the iteration planning, gaps in the testing strategy should be highlighted. It is also important to work out how you will monitor performance once the application has been deployed, and not just measure performance before it's released.

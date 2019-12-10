@@ -1,8 +1,9 @@
 The first step to setting up a DevOps practice is to assess your current process. This means analyzing:
-* your existing artifacts, such as deployment packages and NuGet, as well as your container repositories
-* your existing test management tools
-* your existing work management tools
-* recommending migration and integration strategies 
+
+* Your existing artifacts, such as deployment packages and NuGet, as well as your container repositories.
+* Your existing test management tools.
+* Your existing work management tools.
+* Recommending migration and integration strategies.
 
 Let's do that with the Tailspin team and see how DevOps can help.
 
