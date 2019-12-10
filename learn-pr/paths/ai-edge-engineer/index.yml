@@ -11,10 +11,10 @@ metadata:
 ms.prod: learning-azure
 title: AI Edge Engineer
 summary: |
-  The interplay between AI, Cloud and Edge is a rapidly evolving domain. Currently, many IoT solutions are based on basic telemetry. The telemetry function captures data from edge devices and stores it in a data store. Our approach extends beyond basic telemetry. We aim to model problems in the real world through machine learning and deep learning algorithms and implement the model through AI and Cloud on to edge devices. The model is trained in the cloud and deployed on the edge device. The deployment to the edge provides a feedback loop to improve the business process (digital transformation). 
- 
+  The interplay between AI, Cloud and Edge is a rapidly evolving domain. Currently, many IoT solutions are based on basic telemetry. The telemetry function captures data from edge devices and stores it in a data store. Our approach extends beyond basic telemetry. We aim to model problems in the real world through machine learning and deep learning algorithms and implement the model through AI and Cloud on to edge devices. The model is trained in the cloud and deployed on the edge device. The deployment to the edge provides a feedback loop to improve the business process (digital transformation).
+
   In this learning path, we take an interdisciplinary engineering approach. We aspire to create a standard template for many complex areas for deployment of AI on Edge devices such as Drones, Autonomous vehicles etc. The learning path presents implementation strategies for an evolving landscape of complex AI applications. Containers are central to this approach. When deployed to edge devices, containers can encapsulate deployment environments for a range of diverse hardware. CICD (Continuous integration - continuous deployment) is a logical extension to deploying containers on edge devices. In future modules in this learning path, we may include other techniques such as serverless computing and deployment on Microcontroller Units.
-	
+
   The engineering-led approach underpins themes / pedagogies for engineering education such as 
     - Systems thinking
     - Experimentation and Problem solving
@@ -30,10 +30,9 @@ summary: |
     - The societal impact of engineering
     - The aesthetical impact of design and engineering
     - Deployments at scale
-    - Solving complex business problems by an end-to-end deployment of AI, Edge and Cloud.  
- 
-  Ultimately, AI, Cloud and Edge technologies deployed as containers in CICD mode can transform whole industries by creating an industry-specific, self-learning ecosystem spanning the entire value chain. We aspire to design such a set of templates/methodologies for the deployment of AI to Edge devices in the context of the cloud.
+    - Solving complex business problems by an end-to-end deployment of AI, Edge and Cloud.
 
+  Ultimately, AI, Cloud and Edge technologies deployed as containers in CICD mode can transform whole industries by creating an industry-specific, self-learning ecosystem spanning the entire value chain. We aspire to design such a set of templates/methodologies for the deployment of AI to Edge devices in the context of the cloud.
   In this learning path, you will:
     - Learn about creating solutions using IoT and the cloud
     - Understand the process of deploying IoT based solutions on edge devices

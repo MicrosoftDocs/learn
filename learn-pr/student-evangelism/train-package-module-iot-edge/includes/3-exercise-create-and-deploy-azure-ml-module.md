@@ -6,7 +6,7 @@ First step:
    - You can give a memorable name to this repo but you could also use the same name
    - You can keep the repository private if you want.
 
-![An illustration showing how to upload GitHub repo](..media/upload-github-repo.png)
+![An illustration showing how to upload GitHub repo](../media/upload-github-repo.png)
 
 4. Note that the process of importing could take some time  
 
@@ -18,7 +18,7 @@ First step:
 
 6. A new tab would be opened in the browser. Ensure that the notebook is running on free compute (as per the previous tab) to avoid charges.
 
-![An illustration showing status of compute](..media/check-status.png)
+![An illustration showing status of compute](../media/check-status.png)
 
 7. Go to the new tab and you'll see the notebook is running with the project you just imported from the GitHub.
 
@@ -34,7 +34,7 @@ First step:
 
 **Loading azure iot extension**
 
-![An illustration showing how to  load iot extension](..media/load-iot-extension.png)
+![An illustration showing how to  load iot extension](../media/load-iot-extension.png)
 
 **Login Azure**
 
