@@ -1,16 +1,16 @@
 ### YamlMime:Module
 uid: learn.iot.data-anomaly-search-using-iot-hub
 metadata:
-  title: Search for data anomalies using Azure machine learning, IoT Hub routing, and Stream Analytics
-  description:  Learn about Azure IoT Hub message routing, and Stream Analytics anomaly detection. Start by creating an app that simulates issues with conveyor belt vibration. Then use the Azure portal to route the vibration data for analysis. And to route all the data to an archive in blob storage.
+  title: Search for data anomalies using IoT Hub routing, Stream Analytics, and a built-in ML model
+  description:  Learn about Azure IoT Hub message routing, and Stream Analytics anomaly detection. Start by creating an app that simulates issues with conveyor belt vibration. Then, use the Azure portal to route all the data for archiving in blob storage. Finish by routing the vibration data to anomaly detection, using a built-in ML model.
   ms.date: 11/26/2019
   author: PeterTurcan
   ms.author: Olivier.Bloch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Search for data anomalies using Azure machine learning, IoT Hub routing, and Stream Analytics
+title: Search for data anomalies using IoT Hub routing, Stream Analytics, and a built-in ML model
 summary: >
-  Learn about Azure IoT Hub message routing, and Stream Analytics anomaly detection. Start by creating an app that simulates issues with conveyor belt vibration. Then use the Azure portal to route the vibration data for analysis. And to route all the data to an archive in blob storage.
+  Learn about Azure IoT Hub message routing, and Stream Analytics anomaly detection. Start by creating an app that simulates issues with conveyor belt vibration. Then, use the Azure portal to route all the data for archiving in blob storage. Finish by routing the vibration data to anomaly detection, using a built-in ML model.
 abstract: | 
   In this module, you will:
   - Create an Azure IoT Hub, using the Azure portal
@@ -34,7 +34,6 @@ roles:
 products:
 - azure-iot-hub
 - azure-stream-analytics
-- azure-machine-learning-service
 - azure-storage
 - power-bi
 units:
@@ -44,8 +43,8 @@ units:
 - learn.iot.data-anomaly-search-using-iot-hub.exercise-write-code-device-telemetry
 - learn.iot.data-anomaly-search-using-iot-hub.create-iot-stream-analytics-job
 - learn.iot.data-anomaly-search-using-iot-hub.exercise-create-iot-stream-analytics-job
-- learn.iot.data-anomaly-search-using-iot-hub.search-anomalies-machine-learning-query
-- learn.iot.data-anomaly-search-using-iot-hub.exercise-search-anomalies-machine-learning-query
+- learn.iot.data-anomaly-search-using-iot-hub.search-anomalies-built-in-model-query
+- learn.iot.data-anomaly-search-using-iot-hub.exercise-search-anomalies-built-in-model-query
 - learn.iot.data-anomaly-search-using-iot-hub.summary
 badge:
   uid: learn.iot.iot-hub-conveyor-belt-vibration-detection.badge

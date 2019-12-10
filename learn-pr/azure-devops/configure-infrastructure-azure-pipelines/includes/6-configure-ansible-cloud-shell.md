@@ -59,7 +59,7 @@ Remember that we use Cloud Shell in this module because Cloud Shell comes with A
 
 1. In VS Code, switch from your Bash session to your Cloud Shell session. To do so, select **Bash in Cloud Shell** in the terminal.
 
-    ![Switching between Bash and Azure Cloud Shell in Visual Studio Code](../media/4-code-terminals.png)
+    ![Switching between Bash and Azure Cloud Shell in Visual Studio Code](../media/4-code-bash-cloud-shell.png)
 
 1. Run the following `ls` command to verify that your Ansible configuration file and your inventory file were successfully uploaded to Cloud Shell:
 

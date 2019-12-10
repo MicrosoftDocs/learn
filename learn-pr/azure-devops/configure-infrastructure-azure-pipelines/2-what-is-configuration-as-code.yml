@@ -19,7 +19,7 @@ quiz:
     choices:
     - content: "They both refer to the same concept."
       isCorrect: false
-      explanation: "Although these concepts are simlar, they focus on different aspects of systems automation."
+      explanation: "Although these concepts are similar, they focus on different aspects of systems automation."
     - content: "Infrastructure as code uses imperative code. Configuration as code uses declarative code."
       isCorrect: false
       explanation: "Infrastructure as code and configuration as code frameworks can both be imperative or declarative."

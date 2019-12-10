@@ -4,7 +4,8 @@ When talking about cloud computing, there are three major categories. It's impor
 
 #### IaaS versus SaaS versus PaaS
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2yEbs]
+[//]: # (Video temporarily removed until confusing graphics can be updated.)
+[//]: # (> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2yEbs])
 
 :::row:::
   :::column:::

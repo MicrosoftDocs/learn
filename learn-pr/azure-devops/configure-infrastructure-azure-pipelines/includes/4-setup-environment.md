@@ -153,13 +153,16 @@ In practice, you can also install and run Ansible locally from a terminal or VS 
 1. In VS Code, select <kbd>F1</kbd> or select **View > Command Palette** to access the command palette.
 1. In the command palette, enter *Azure: Open Bash in Cloud Shell*.
 
+    > [!NOTE]
+    > If prompted, follow the link to install Node.js. Then restart VS Code.
+
     You see Cloud Shell open in the terminal.
 
     ![Azure Cloud Shell in Visual Studio Code](../media/4-cloud-shell-vs-code.png)
 
     You can use the drop-down menu to switch between your Cloud Shell session and your local shell.
 
-    ![Switching between Bash and Azure Cloud Shell in Visual Studio Code](../media/4-code-terminals.png)
+    ![Switching between Bash and Azure Cloud Shell in Visual Studio Code](../media/4-code-cloud-shell-bash.png)
 
 ### Upload your SSH key to Cloud Shell
 
@@ -167,7 +170,7 @@ Here, you upload your SSH key pair to Cloud Shell so that you can connect to you
 
 1. In VS Code, switch from your Cloud Shell session to your Bash session. To do so, select **bash** in the terminal.
 
-    ![Switching between Bash and Azure Cloud Shell in Visual Studio Code](../media/4-code-terminals.png)
+    ![Switching between Bash and Azure Cloud Shell in Visual Studio Code](../media/4-code-cloud-shell-bash.png)
 
 1. Select <kbd>F1</kbd> or select **View > Command Palette** to access the command palette.
 1. In the command palette, enter *Azure: Upload to Cloud Shell*.
@@ -175,7 +178,7 @@ Here, you upload your SSH key pair to Cloud Shell so that you can connect to you
 1. Repeat the process to upload your SSH public key, *~/.ssh/ansible_rsa.pub*.
 1. Switch from your Bash session to your Cloud Shell session. To do so, select **Bash in Cloud Shell** in the terminal.
 
-    ![Switching between Bash and Azure Cloud Shell in Visual Studio Code](../media/4-code-terminals.png)
+    ![Switching between Bash and Azure Cloud Shell in Visual Studio Code](../media/4-code-bash-cloud-shell.png)
 
 1. In Cloud Shell, move your SSH key files to the *~/.ssh* directory:
 

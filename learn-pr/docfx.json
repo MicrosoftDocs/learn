@@ -202,6 +202,32 @@
                 "dest": "modules"
             },
             {
+                "src": "wwl-data-ai",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },
+            {
+                "src": "wwl-azure",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },                   
+            {
                 "files": [
                     "**/*.md",
                     "**/*.yml"
@@ -407,26 +433,19 @@
                     "tr-tr",
                     "sv-se"
                 ],
-                "iot/**/*.yml": [
-                    "de-de",
-                    "es-es",
-                    "fr-fr",
-                    "it-it",
-                    "ru-ru",
-                    "pt-br",
+                "wwl-mba/**/*.yml": [
                     "ja-jp",
                     "ko-kr",
                     "zh-cn",
-                    "zh-tw",
-                    "cs-cz",
-                    "hu-hu",
-                    "nl-nl",
-                    "pl-pl",
-                    "pt-pt",
-                    "tr-tr",
-                    "sv-se"
+                    "zh-tw"
                 ],
-                "wwl-mba/**/*.yml": [
+                "wwl-data-ai/**/*.yml": [
+                    "ja-jp",
+                    "ko-kr",
+                    "zh-cn",
+                    "zh-tw"
+                ],
+                "wwl-azure/**/*.yml": [
                     "ja-jp",
                     "ko-kr",
                     "zh-cn",
