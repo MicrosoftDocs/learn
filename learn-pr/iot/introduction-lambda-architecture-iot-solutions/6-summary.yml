@@ -50,11 +50,11 @@ quiz:
     choices:  
     - content: 'Charts, Heat maps, Tables'
       isCorrect: true
-      explanation: There are options within each of these types of display, such as line charts and bar charts.
-    - content: 'Line charts, Heat maps, Tables'
+      explanation: These displays can be customized using the WHERE, MEASURE, and SPLIT BY entries.
+    - content: 'Line charts, Heat maps, Graphs'
       isCorrect: false
-      explanation: Charts are not limited to line charts.
-    - content: 'Hot maps, cold maps, tables'
+      explanation: There isn't a Graphs option.
+    - content: 'Hot maps, Cold maps, Tables'
       isCorrect: false
       explanation: There's no such concept as hot or cold maps.
     - content: 'Charts, Heat maps, Telemetry'
@@ -71,10 +71,10 @@ quiz:
       explanation: Failover is only used when a local disaster of some sort occurs. Secondary regions are active all the time.
     - content: 'A failover region takes over primary control, when the primary region fails. A secondary read region reads and writes data.'
       isCorrect: false
-      explanation: Read regions do not write data.
+      explanation: Read regions don't write data.
     - content: "A failover region is bypassed if a disaster occurs in the primary region. A secondary read region receives data updates from the primary region, but can't write data."
       isCorrect: false
-      explanation: Failover regions are not bypassed if a primary region disaster occurs.
+      explanation: Failover regions aren't bypassed if a primary region disaster occurs.
 
 
   

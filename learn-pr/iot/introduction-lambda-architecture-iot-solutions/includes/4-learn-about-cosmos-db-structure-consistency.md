@@ -1,7 +1,7 @@
 
 Cosmos, another word for "universe", implies that Cosmos DB is the solution for world-wide applications. Another feature of the Cosmos DB resource is that it's well structured. Not the collection of stuff that can be stored in a blob. The obvious example is a database, where each entry in the database has a consistent set of fields.
 
-Access to the data in a Cosmos DB resource is made through queries built from API calls. Cosmos DB supports a range of APIs, including, SQL API, Mongo API, Gremlin (graph) API, Azure Table API, and the Cassandra API. At the lowest level, a Cosmos DB consists of Json objects.
+Access to the data in a Cosmos DB resource is made through queries built from API calls. Cosmos DB supports a range of APIs, including SQL API, Mongo API, Gremlin (graph) API, Azure Table API, and the Cassandra API. At the lowest level, a Cosmos DB consists of JSON objects.
 
 A Cosmos DB resource is about big data, and world-wide access. An example might help.
 
@@ -19,7 +19,7 @@ Whenever new telemetry values are set in the US West location, that update is au
 
 ### Prepare for the worst
 
-Secondary read locations shouldn't be confused with _failover_ locations. A failover location, which is also set in the Azure portal, specifies the region which should take over when something bad happens in your primary region. Something bad could be a natural disaster, power outages, or civil disturbance. Or anything else that might bring the reliability of servers in the primary region into question. Sometimes a cloud user will specify a _manual failover_, where human operator intervention is needed to trigger the failover. Sometimes _automatic failover_ is specified, where the responsiveness of a region is constantly tested, and a failover occurs if the tests fail. Leaving things entirely up to automated tests though, can be a bit scary.
+Secondary read locations shouldn't be confused with _failover_ locations. A failover location, which is also set in the Azure portal, specifies the region which should take over when something bad happens in your primary region. Something bad could be a natural disaster, power outages, or civil disturbance. Or anything else that might bring the reliability of servers in the primary region into question. Sometimes a cloud user will specify a _manual failover_, where human operator intervention is needed to trigger the failover. Sometimes _automatic failover_ is specified, where the responsiveness of a region is constantly tested, and a failover occurs if the tests fail. Leaving things entirely up to automated tests though, can be a bit daunting.
 
 Having set up your database, you have to consider how important it is that everyone the world over gets exactly the same data at exactly the same time.
 
