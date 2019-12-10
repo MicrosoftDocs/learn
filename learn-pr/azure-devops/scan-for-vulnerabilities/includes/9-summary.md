@@ -31,7 +31,7 @@ Thinking about security is part of every phase of your development lifecycle. Mi
 In this module, you learned about some of the tools and processes you can use to analyze your code. Here's where you can learn more:
 
 * [OWASP](http://www.owasp.org?azure-portal=true)
-* [Roslyn analyzers](https://docs.microsoft.com/visualstudio/code-quality/roslyn-analyzers-overview?view=vs-2017#roslyn-analyzers-vs-static-code-analysis&azure-portal=true)
+* [Roslyn analyzers](https://docs.microsoft.com/visualstudio/code-quality/roslyn-analyzers-overview?view=vs-2017#source-code-analysis-versus-legacy-analysis)
 * [Common Weakness Enumeration](https://cwe.mitre.org/index.html?azure-portal=true) (CWE)
 * [Common Vulnerabilities and Exposures](https://cve.mitre.org/cve/?azure-portal=true) (CVE)
 * [Microsoft Security Development Lifecycle](https://www.microsoft.com/securityengineering/sdl/?azure-portal=true)
@@ -43,23 +43,22 @@ Here are some resources that relate to Azure Pipelines features you used in this
 
 ## The reasons for technical debt
 
-This module introduced the term "technical debt," which is a real problem for most development teams if they're not working on a brand new project. Let's talk a little bit more about it. 
+This module introduced the term _technical debt_, which is a real problem for most development teams if they're not working on a brand new project. Let's talk a little bit more about it.
 
-Technical debt is a term that describes the future cost that will be incurred by choosing 
-an easy solution today instead of using better practices that take longer to complete. It’s one of the main reasons that projects fail to meet their deadlines.
+Technical debt is a term that describes the future cost that will be incurred by choosing an easy solution today instead of using better practices that take longer to complete. It's one of the main reasons that projects fail to meet their deadlines.
 
 Technical debt can build up to the point where developers are spending almost all their time sorting out problems and doing rework, either planned or unplanned, rather than adding value. There are many reasons technical debt accrues.
 
-One of the most common is tight deadlines. When developers are forced to create code quickly, they'll often take shortcuts. As an example, instead of refactoring a method to include new functionality, developers will copy it to create a new version. The reasoning is they will only have to test the new code because they’re using the original method. The problem is that there are now two copies of the same code that need to be maintained.
+One of the most common is tight deadlines. When developers are forced to create code quickly, they'll often take shortcuts. As an example, instead of refactoring a method to include new functionality, developers will copy it to create a new version. The reasoning is they will only have to test the new code because they're using the original method. The problem is that there are now two copies of the same code that need to be maintained.
 
-Other reasons for technical debt can be: 
+Other reasons for technical debt can be:
 
-* A lack of technical skills and maturity among the developers 
-* No clear product ownership or direction. 
-* Lack of coding standards. 
+* A lack of technical skills and maturity among the developers.
+* No clear product ownership or direction.
+* Lack of coding standards.
 * No code quality testing, whether manual or automated.
 * Lack of clear requirements.
-* Last minute changes. 
-* Delaying refactoring work. 
+* Last minute changes.
+* Delaying refactoring work.
 
-In the end, technical debt makes it harder to deliver value to customers in a reasonable time frame and at a reasonable cost. This means it’s important to integrate the assessment and measurement of technical debt and of code quality into your pipeline. You saw the Tailspin team do this by using SonarCloud.
+In the end, technical debt makes it harder to deliver value to customers in a reasonable time frame and at a reasonable cost. This means it's important to integrate the assessment and measurement of technical debt and of code quality into your pipeline. You saw the Tailspin team do this by using SonarCloud.

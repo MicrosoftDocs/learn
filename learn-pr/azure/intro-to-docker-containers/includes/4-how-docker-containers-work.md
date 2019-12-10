@@ -24,12 +24,12 @@ Finally, we use the remove command to remove containers that are in a stopped st
 
 ## How to view available containers
 
-We use the `docker ps` command to list running containers.  If you want to see all containers in all states, use the `docker -ps -a` command.
+We use the `docker ps` command to list running containers.  If you want to see all containers in all states, pass the `-a` argument.
 
 Here is an example.
 
 ```code
-docker -ps -a
+docker ps -a
 ```
 
 Here is the output from the above command.
