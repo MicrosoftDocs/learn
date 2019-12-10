@@ -1,15 +1,15 @@
 To send and receive messages through Azure Relay, you must understand how to write the necessary code.
 
-Suppose you've created the relay for the credit check service in Azure Relay. Now, you want to modify your credit check service and the clients that call it, so that they send messages through the relay. You need to know how to write this code.
+Suppose you've created the relay for the credit-checking service in Azure Relay. Now, you want to modify your credit-checking service and the clients that call it, so that they send messages through the relay. You need to know how to write this code.
 
-Here, you see how to use classes such as `HybridConnectionListener` and `HttpRequestMessage` to send and respond to messages.
+Here, you'll see how to use classes such as `HybridConnectionListener` and `HttpRequestMessage` to send and respond to messages.
 
 > [!NOTE]
-> Because the relay, listener, and sender are all hosted in different locations, they can take some time to respond to messages. So it's important to use asynchronous code for these messages to ensure that your app doesn't hang as it waits for responses. You'll notice the asynchronous `await` keyword and asynchronous method names in the code below.
+> Because the relay, listener, and sender are all hosted in different locations, they might take some time to respond to messages. It's important to use asynchronous code for these messages to ensure your app doesn't hang as it waits for responses. You'll notice the asynchronous `await` keyword and asynchronous method names in the code below.
 
 ## Use a TokenProvider to pass credentials
 
-Both the listener and the sender components must identify themselves to Azure Relay when they connect. For any hybrid connection, you can use the .NET `TokenProvider` class to pass this information. When you created a shared access policy in your namespace, Azure created a primary and secondary key. This key is the credential you add to the `TokenProvider` to secure communications.
+The listener and sender components must identify themselves to Azure Relay when they connect. For any hybrid connection, you use the .NET `TokenProvider` class to pass this information. When you created a shared access policy in your namespace, Azure created a primary and secondary key. This key is the credential you add to the `TokenProvider` to secure communications.
 
 This code shows how to configure the credentials and add them to the `TokenProvider`:
 
@@ -24,7 +24,7 @@ var tokenProvider = TokenProvider.CreateSharedAccessSignatureTokenProvider(KeyNa
 
 ## Connect a listener to Azure Relay
 
-To connect a listener to the Azure Relay service, you have to create and configure an instance of the `HybridConnectionListener` class. Pass the URI for the relay and the `TokenProvider` to the constructor:
+To connect a listener to the Azure Relay service, you create and configure an instance of the `HybridConnectionListener` class. Pass the URI for the relay and the `TokenProvider` to the constructor:
 
 ```c#
 // Store the connection details
@@ -61,13 +61,13 @@ listener.RequestHandler = (context) =>
 };
 ```
 
-Once you have configured the listener, you can open it to begin listening for messages:
+When you've configured the listener, you open it to begin listening for messages:
 
 ```c#
 await listener.OpenAsync()
 ```
 
-Also remember to close the listener at an appropriate point in your code:
+Remember to close the listener at an appropriate point in your code:
 
 ```c#
 await listener.CloseAsync();
@@ -75,7 +75,7 @@ await listener.CloseAsync();
 
 ## Connect a sender to Azure Relay
 
-For the sender, there is no Azure Relay specific object, because you can use a standard `HttpRequestMessage` object, as you would when you call any web service:
+For the sender, there's no Azure Relay specific object. You can use a standard `HttpRequestMessage` object, as you would when you call any web service:
 
 ```c#
 // Store the connection details

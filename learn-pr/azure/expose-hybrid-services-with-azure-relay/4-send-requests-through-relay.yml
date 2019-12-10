@@ -2,7 +2,7 @@
 uid: learn.expose-hybrid-services-with-azure-relay.4-send-requests-through-relay
 metadata:
   title: Send requests through a Relay Hybrid Connection
-  description: Send requests through a Relay Hybrid Connection
+  description: In this unit, you'll learn how to write code in C# that sends messages through Azure Relay.
   ms.date: 12/30/2019
   author: jboeshart
   ms.author: jaboes
