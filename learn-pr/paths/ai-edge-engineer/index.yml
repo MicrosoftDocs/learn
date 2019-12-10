@@ -49,7 +49,7 @@ levels:
 roles:
 - ai-engineer
 - data-scientist
--products:
+products:
 - azure
 - azure-notebooks
 - azure-cloud-shell
