@@ -153,6 +153,9 @@ In practice, you can also install and run Ansible locally from a terminal or VS 
 1. In VS Code, select <kbd>F1</kbd> or select **View > Command Palette** to access the command palette.
 1. In the command palette, enter *Azure: Open Bash in Cloud Shell*.
 
+    > [!NOTE]
+    > If prompted, follow the link to install Node.js. Then restart VS Code.
+
     You see Cloud Shell open in the terminal.
 
     ![Azure Cloud Shell in Visual Studio Code](../media/4-cloud-shell-vs-code.png)
