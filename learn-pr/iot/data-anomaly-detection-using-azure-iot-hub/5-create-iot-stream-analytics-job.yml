@@ -2,7 +2,7 @@
 uid: learn.iot.data-anomaly-search-using-iot-hub.create-iot-stream-analytics-job
 metadata:
   title: Create a message route to Azure blob storage
-  description: Create the first of two routes, the logging route. This route takes all the telemetry data and archives it in blob storage.
+  description: Describes the first of two routes, the logging route. This route takes all the telemetry data and archives it in blob storage.
   ms.date: 11/26/2019
   author: PeterTurcan
   ms.author: Olivier.Bloch
