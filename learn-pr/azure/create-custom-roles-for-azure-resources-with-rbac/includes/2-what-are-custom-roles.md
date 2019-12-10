@@ -1,31 +1,31 @@
-Sometimes, the roles built into Azure don't grant the precise level of access you need.
+Sometimes, the built-in roles for Azure resources don't grant the precise level of access you need. Custom roles allow you to define roles that meet the specific needs of your organization. You can assign the custom roles you create to users, groups, and service principals at the scope of subscription, resource group, or resource.
 
-Suppose you want to assign permissions in Azure for your new employee, who's responsible for managing VMs within the subscription. You want to understand whether to use Azure Active Directory (Azure AD) roles or Role-Based Access Control (RBAC) for these permissions.
+In this unit, you learn about custom roles in role-based access control (RBAC) for Azure resources.
 
-In this unit, you learn about RBAC roles and how to create and assign them.
+## Azure Active Directory and RBAC roles
 
-## Active Directory and RBAC
-
-These role types are often confused when you first work with Azure. Active Directory roles provide the mechanism for managing permissions to AD resources only. RBAC provides a wealth of capabilities for managing every resource in Azure at a granular level.
+Azure Active Directory (Azure AD) and RBAC roles are often confused when you first work with Azure. Azure AD roles provide the mechanism for managing permissions to AD resources like user accounts and passwords. RBAC provides a wealth of capabilities for managing Azure resources like virtual machines (VMs) at a granular level.
 
 ![Diagram that shows relationship of RBAC and Azure AD administrator roles](../media/2-azure-office-roles.png)
 
-The subtle differences between how the two can be set up and managed are listed below:
+The subtle differences between how the two can be set up and managed are in the following table:
 
-Azure RBAC roles | Azure AD administrator roles
+RBAC roles for Azure | Azure AD administrator roles
 --- | ---
-Manage access to Azure resources | Manage access to Azure Active Directory resources
+Manage access to Azure resources like VMs, storage, networks and more | Manage access to Azure Active Directory resources like user accounts and passwords 
 Allows custom roles | Allows custom roles
 Multiple scope levels (management group, subscription, resource group, resource) | Scope only at tenant level
-Role information accessible through Azure portal, Azure CLI, Azure PowerShell, Azure Resource Manager templates, REST API | Role information can be accessed in Azure admin portal, Microsoft 365 admin center, Microsoft Graph, AzureAD PowerShell
+Role information accessible through Azure portal, Azure CLI, Azure PowerShell, Azure Resource Manager templates, REST API | Role information accessible in Azure admin portal, Microsoft 365 admin center, Microsoft Graph, Azure AD PowerShell
 
-## Assigning custom roles
+For our scenario, we need a custom role to manage Azure VMs at the subscription scope. So we need to use custom roles in RBAC for Azure resources.
+
+## Assign custom roles
 
 To add or remove custom roles, you must have role permissions such as:
 
 `Microsoft.Authorization/roleAssignments/write` and `Microsoft.Authorization/roleAssignments/delete`.
 
-These role permissions are given to User access administrators and owners. Custom roles can be assigned to:
+These role permissions are given to users with the roles User Access Administrator and Owner. Custom roles can be assigned to:
 
 Security principal | Summary
 --- | ---
@@ -34,7 +34,7 @@ Security principal | Summary
 **Service principals** | A security identity used by applications or services to access specific Azure resources
 **Managed identity** | An identity in Azure Active Directory that is automatically managed by Azure
 
-This assignment and related permissions can be scoped to different levels within Azure. In the example, the new employee could be assigned a custom role at the subscription level (assuming the VMs are contained within your subscription). The different scopes are:
+You can scope the assignment and related permissions to different levels within Azure. The different scopes are:
 
 - Management group
 - Subscription
@@ -80,16 +80,21 @@ The parameter can be one of the following actions:
 
 ## Define custom role to manage VMs
 
-To help you identify what permissions to include in a role definition, look at built-in roles that have permissions similar to what you need. For example, for our scenario, the Virtual Machine Contributor built-in role has more permissions than the employee needs and Virtual Machine Administrator Login doesn't have enough.
+To help you identify what permissions to include in a role definition, use the Azure Resource Manager resource provider operations list and look at built-in roles that have permissions similar to what you need. 
 
-The following command returns the permissions for Virtual Machine Contributor.
+The operation strings that go in the role definitions have the following format: `{Company}.{ProviderName}/{resourceType}/{action}`.
+
+### Review built-in roles
+
+For our scenario, the Virtual Machine Contributor built-in role has more permissions than the employee needs and Virtual Machine Administrator Login doesn't have enough.
+
+The following command returns the permissions for the build-in role Virtual Machine Contributor.
 
 ```azurecli
 az role definition list --name "Virtual Machine Contributor" --output json | jq '.[] | .permissions[0].actions'
 ```
 
-The following list is the permissions for 
-Virtual Machine Contributor.
+The following list is the permissions for the build-in role Virtual Machine Contributor.
 
 ```JSON
 [
@@ -134,13 +139,39 @@ Virtual Machine Contributor.
 ]
 ```
 
-For our scenario, we want a custom role that can be used for monitoring and restarting virtual machines for a specific subscription. So we want to include the following actions scoped at the subscription level: 
+For our scenario, we want a custom role that can be used for monitoring and restarting virtual machines for a specific subscription. So we want to include the following actions scoped at the subscription level:
+
 - Read access to the compute, network, and storage resources
 - Ability to start and restart virtual machines
 - Access to the resource groups in the subscription
 - Access to monitoring resources
 
-We end up with the following role definition for our custom role.  
+There are some operations in the Virtual Machine Contributor role definition we can use like `"Microsoft.Insights/alertRules/*"` for monitoring. But restart and some others aren't listed as actions in that role definition.
+
+### Find resource provider operations
+
+We can find the VM restart action in the Azure Resource Manager resource provider operations list or by running the following command to return operations for VMs:
+
+  ```PowerShell
+ Get-AzProviderOperation */virtualMachines/*
+ ```
+
+The following operation for restart is returned in the list.
+
+```PowerShell
+Operation         : Microsoft.Compute/virtualMachines/restart/action
+OperationName     : Restart Virtual Machine
+ProviderNamespace : Microsoft Compute
+ResourceName      : Virtual Machines
+Description       : Restarts the virtual machine
+IsDataAction      : False
+```
+
+The `Get-AzProviderOperation` is useful to get the most current list of resource provider operations. You can also find a published list of resource providers and operations in the Azure Resource Manager content on Docs. 
+
+### Create VM Operator role definition
+
+Let's assume we've picked out what we need by looking at the related build-in role definitions and the resource provider operations list. We end up with the following role definition for our custom role. We'll use this role definition for our custom role.
 
 ```JSON
    {

@@ -8,3 +8,4 @@ The built-in RBAC roles in Azure are versatile and often satisfactory for many o
 
 - [Built-in roles for Azure resources](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles)
 - [Azure Resource Manager resource provider operations](https://docs.microsoft.com/azure/role-based-access-control/resource-provider-operations)
+- [Resource providers for Azure services](https://docs.microsoft.com/azure/azure-resource-manager/azure-services-resource-providers)
