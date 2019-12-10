@@ -15,7 +15,10 @@ abstract: |
   - Identify the solutions available to provision compute on Azure
   - Choose an appropriate provisioning platform based on your requirements
 prerequisites: | 
-  - Basic knowledge of Azure virtual machines
+ - Basic knowledge of Azure virtual machines.
+ - Basic knowledge of PowerShell.
+ - git installed on your local machine.
+ - Azure CLI installed on your local machine.
 iconUrl: /learn/achievements/choose-compute-provisioning.svg
 levels:
 - beginner
@@ -25,7 +28,7 @@ products:
 - azure
 units:
 - learn.choose-compute-provisioning.1-introduction
-- learn.choose-compute-provisioning.2-provisioning-technologies
+- learn.choose-compute-provisioning.2-provisioning-solutions
 - learn.choose-compute-provisioning.3-azure-native-solutions
 - learn.choose-compute-provisioning.4-third-party-solutions
 - learn.choose-compute-provisioning.5-exercise-deploy-template
