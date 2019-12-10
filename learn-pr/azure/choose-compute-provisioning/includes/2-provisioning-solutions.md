@@ -6,7 +6,7 @@ Creating and managing compute resources manually would require much administrati
 
 It would take a long time to implement an architecture with many servers manually. You'd need to configure the operating system, install software, configure that software, and apply updates. You'd need to do these tasks for each virtual machine. The tasks can become complex. When you have to carry out those complex tasks many times, it's easy to make mistakes.
 
-You may also need to redeploy your architecture, for example to recover from an attack or disaster. Your architecture might need to support software testing, so you'd need to be able to redeploy it for every testing cycle. If your manual deployment takes several hours, it isn't ideal.
+You might also need to redeploy your architecture, for example to recover from an attack or disaster. Your architecture might need to support software testing, so you'd need to be able to redeploy it for every testing cycle. If your manual deployment takes several hours, it isn't ideal.
 
 You need some way to automate the deployment of virtual machines, to deal with these issues and difficulties. For each virtual machine, such a solution must be able to:
 
@@ -28,7 +28,7 @@ You can have a PowerShell script that is on your local file server, GitHub, Azur
 
 Below is a Custom Script Extension configuration, which can be added to an Azure Resource Manager Template for a virtual machine. You use the *fileUris* property to point to your script file.
 
-```JSON
+```json
 {
     "apiVersion": "2019-06-01",
     "type": "Microsoft.Compute/virtualMachines/extensions",
@@ -55,13 +55,13 @@ Below is a Custom Script Extension configuration, which can be added to an Azure
 
 ## DSC extensions
 
-Desired State Configuration (DSC) extensions make it possible for you to deal with the configurations on your infrastructure that may need more complex installation procedures, such as reboots. DSC helps you define a state for your machines, rather than having to write detailed instructions on how to achieve that state for each machine. State configurations are relatively easy to read and implement.
+Desired State Configuration (DSC) extensions make it possible for you to deal with the configurations on your infrastructure that might need more complex installation procedures, such as reboots. DSC helps you define a state for your machines instead of writing detailed manual instructions on how to achieve that state for each machine. State configurations are relatively easy to read and implement.
 
 By using a DSC extension handler, which you can define for a virtual machine, you can enforce your states. The configurations for your states can be located in various places, including Azure blob storage or your internal file storage. The DSC extension handler grabs the configuration and implements the state on the target virtual machine. If reboots are necessary for a configuration, DSC continues to execute the state configuration after the reboots are completed.
 
 Below is an example, which defines a DSC extension handler for a virtual machine in an Azure Resource Manager template. The *script* property points to a configuration script in blob storage:
 
-```powershell
+```json
 {
 	"type": "Microsoft.Compute/virtualMachines/extensions",
 	"name": "Microsoft.Powershell.DSC",
@@ -97,21 +97,22 @@ A Chef server is typically hosted for you and runs as a service. Chef works by u
 
 Below is an example showing how a knife command can be used to create a virtual machine on Azure. The command simultaneously applies a recipe that installs a webserver on the machine.
 
-```powershell
+```cmd
 knife azurerm server create `
---azure-resource-group-name rg-chefdeployment `
---azure-storage-account store `
---azure-vm-name chefvm `
---azure-vm-size 'Standard_DS2_v2' `
---azure-service-location 'eastus' `
---azure-image-reference-offer 'WindowsServer' `
---azure-image-reference-publisher 'MicrosoftWindowsServer' `
---azure-image-reference-sku '2016-Datacenter' `
---azure-image-reference-version 'latest' `
--x myuser -P yourPassword `
---tcp-endpoints '80,3389' `
---chef-daemon-interval 1 `
--r "recipe[webserver]"
+    --azure-resource-group-name rg-chefdeployment `
+    --azure-storage-account store `
+    --azure-vm-name chefvm `
+    --azure-vm-size 'Standard_DS2_v2' `
+    --azure-service-location 'eastus' `
+    --azure-image-reference-offer 'WindowsServer' `
+    --azure-image-reference-publisher 'MicrosoftWindowsServer' `
+    --azure-image-reference-sku '2016-Datacenter' `
+    --azure-image-reference-version 'latest' `
+    -x myuser `
+    -P yourPassword `
+    --tcp-endpoints '80,3389' `
+    --chef-daemon-interval 1 `
+    -r "recipe[webserver]"
 ```
 
 You can also use the Chef extension to apply recipes to the target machines.
@@ -167,11 +168,11 @@ end
 
 ## Terraform
 
-Terraform is an open source infrastructure-as-code software tool. You can create infrastructures using Hashicorp Configuration Language (HCL). This language is created by Hashicorp. You can also use JSON. Terraform lets you create relatively easy-to-read script templates that define what type of resources to create, regardless of the cloud service provider. You can build your environments using different cloud service providers, including Microsoft Azure and Amazon Web Services (AWS). This way you can ensure your environments are identical across cloud providers. The process requires you to install Terraform, either locally or on Azure. You can then use Terraform to execute a Terraform script.
+Terraform is an open source infrastructure-as-code software tool. You can create infrastructures using Hashicorp Configuration Language (HCL). This language is created by Hashicorp. You can also use JSON. Terraform lets you create relatively easy-to-read script templates that define what type of resources to create, regardless of the cloud service provider. You can build your environments using different cloud service providers, including Microsoft Azure and Amazon Web Services (AWS). This way you can ensure that your environments are identical across cloud providers. The process requires you to install Terraform, either locally or on Azure. You can then use Terraform to execute a Terraform script.
 
 Below is an example of a Terraform script that provisions a virtual machine on Azure:
 
-```HCL
+```hcl
 # Configure the Microsoft Azure as a provider
 provider "azurerm" {
     subscription_id = "xxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
@@ -237,25 +238,23 @@ resource "azurerm_virtual_machine" "myterraformvirtual machine" {
 
 To use this script, you can execute the following command using Terraform:
 
-```
+```cmd
 terraform apply
 ```
 
 ## Azure Automation State Configuration
 
-Azure Automation State Configuration is the service you would use to make sure your DSC configurations are managed properly and deployed across your nodes (virtual machines). Azure Automation State Configuration works with both Azure virtual machines and machines on-premises, or with machines on other cloud providers. Through an intuitive Azure portal process, you can apply configurations to all of your nodes.
+Azure Automation State Configuration is the service you would use to make sure that your DSC configurations are managed properly and deployed across your nodes (virtual machines). Azure Automation State Configuration works with both Azure virtual machines and machines on-premises, or with machines on other cloud providers. Through an intuitive Azure portal process, you can apply configurations to all of your nodes.
 
-![](../media/2-automation-state-config.png)
+![Screen shot of the state configuration panel in the Azure portal](../media/2-automation-state-config.png)
 
-<!-- Original image: https://docs.microsoft.com/en-us/azure/automation/media/automation-dsc-getting-started/nodestab.png -->
-
-Azure Automation State Configuration makes it possible for you to ensure that all target machines are assigned the correct configurations automatically, and also ensures that each machine reports back on what its current state is and shows whether it has achieved the desired state. You can send this information for reporting and for further decision making. You can interact with Azure Automation State Configuration through the Azure portal or through Azure PowerShell.
+Azure Automation State Configuration makes it possible for you to ensure that all target machines are assigned the correct configurations automatically. It also ensures that each machine reports back on what its current state is and shows whether it has achieved the desired state. You can send this information for reporting and for further decision making. You can interact with Azure Automation State Configuration through the Azure portal or through Azure PowerShell.
 
 ## Azure Resource Manager templates
 
 Azure Resource Manager templates are JSON files that allow you to define the Azure resources you want to provision in Azure through object notation. You can define an entire infrastructure this way. They're relatively easy to read and work with, depending on your exposure to JSON.
 
-Azure Resource Manager templates allow you to make sure your deployments are consistent. You can ensure, for example, that all virtual machines you create have the same properties. And embed extensions into virtual machines in a template to make sure their configuration is exactly the same. You deploy any Azure Resource Manager template through Azure PowerShell, Azure CLI, or the Azure portal. Azure Resource Manager templates should be tested before they're deployed. When you test your deployment, you'll ensure your template is something Azure can deploy before attempting a real deployment.
+Azure Resource Manager templates allow you to make sure that your deployments are consistent. You can ensure, for example, that all virtual machines you create have the same properties. And embed extensions into virtual machines in a template to make sure that their configuration is the same. You deploy any Azure Resource Manager template through Azure PowerShell, Azure CLI, or the Azure portal. Azure Resource Manager templates should be tested before they're deployed. When you test your deployment, you'll ensure that your template is something Azure can deploy before attempting a real deployment.
 
 Below is an example of how a virtual machine would be defined in an Azure Resource Manager template. You can see the type of the virtual machine, the operating system, and its storage details among other things.
 

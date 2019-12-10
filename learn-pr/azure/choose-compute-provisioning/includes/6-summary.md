@@ -12,7 +12,3 @@ With the help of the provisioning tools on Azure, we are able to improve the pro
 - [Introduction to the Azure Desired State Configuration extension handler](https://docs.microsoft.com/azure/virtual-machines/extensions/dsc-overview)
 - [Chef Software on Azure documentation](https://docs.microsoft.com/azure/chef/)
 - [Terraform on Azure documentation](https://docs.microsoft.com/azure/terraform/)
-
-## Clean up resources
-
-[!include[](../../../includes/azure-sandbox-cleanup.md)]

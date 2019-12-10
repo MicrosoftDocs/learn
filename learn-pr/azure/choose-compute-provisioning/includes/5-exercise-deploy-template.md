@@ -8,13 +8,13 @@ In this exercise, you'll provision a web server to meet the requirements.
 
 You'll use a couple of tools together. Azure Resource Manager templates will enable you to create a template outlining the environment for your web server. Your Resource Manager template can also help you define a state that you apply to your web server at the point of provisioning. You can apply your desired state by linking to a DSC extension handler inside of your Resource Manager template. The DSC handler helps you enforce a state that you define in a DSC configuration.
 
-In the following exercise, you'll use an Resource Manager template to provision a virtual machine. The DSC extension handler that will be included in the template will enforce your state on the virtual machine. You'll use an Azure storage account to host your DSC configuration file.
+In the following exercise, you'll use a Resource Manager template to provision a virtual machine. The DSC extension handler that is included in the template enforces your state on the virtual machine. You'll use an Azure storage account to host your DSC configuration file.
 
 ## Clone the configuration and template
 
-Let's start by obtaining a configuration file and Resource Manager template from GitHub:
+Let's start by obtaining a configuration file and Resource Manager template from GitHub.
 
-1. In the Cloud Shell on the right, to clone the GitHub repository, run these commands:
+1. In the Cloud Shell on the right, run this command to clone the GitHub repository.
 
     ```bash
     git clone https://github.com/MicrosoftDocs/mslearn-choose-compute-provisioning.git
@@ -31,7 +31,7 @@ The state configuration is defined in the Webserver.ps1 file, which includes the
     code Webserver.ps1
     ```
 
-1. The configuration file includes the following code. Notice that it installs IIS, ASP.NET, and the IIS Management console:
+1. The configuration file includes the following code. Notice that it installs IIS, ASP.NET, and the IIS Management console.
 
     ```powershell
     Configuration Webserver
@@ -111,7 +111,7 @@ The GitHub repository that you cloned also contains a Resource Manager template.
 
 1. In the `<variables>` section of the **template.json**, notice that values are stored to configure networking for the virtual machine.
 
-1. In the `<resources>` section, notice that the template will create an IP address, a virtual network, and other resources, as well as the virtual machine itself.
+1. In the `<resources>` section, notice that the template will create an IP address, a virtual network, the virtual machine, and other related resources.
 
 1. To close the `code` editor, press <kbd>CTRL + Q</kbd>.
 

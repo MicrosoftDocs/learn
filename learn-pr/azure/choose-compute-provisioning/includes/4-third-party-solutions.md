@@ -14,7 +14,7 @@ Your organization has decided to let the developers create some virtual machines
 
 The scenario is ideal for Chef, since you're letting the programmers create their own environments by using their own Ruby configuration scripts. They're already familiar with Ruby, since they've written applications with the language.
 
-### Summary
+### Solution summary
 
 Chef is suitable for large-scale infrastructure deployment and configuration, and makes it easy for you to automate the deployment of an entire infrastructure, such as in the workflow of a development team.
 
@@ -32,6 +32,6 @@ Your organization has gained a new client who wants to create multiple virtual m
 
 Terraform would be a good solution for this scenario and would make it possible for you to create virtual machines and other resources on multiple providers easily.
 
-### Summary
+### Solution summary
 
 Terraform allows you to plan the infrastructure as code, and gives you a preview of what the code will create. You can have that code peer-reviewed, to minimize errors in configuration. Terraform supports infrastructure configurations across multiple different cloud service providers.

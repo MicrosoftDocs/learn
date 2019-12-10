@@ -3,12 +3,11 @@ uid: learn.choose-compute-provisioning.5-exercise-deploy-template
 metadata:
   title: Exercise - Analyse a scenario and map it to a technology option
   description: Analyse a scenario and map it to a technology option
-  ms.date: 04/30/2019
+  ms.date: 12/11/2019
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 title: Exercise - Analyse a scenario and map it to a technology option
 durationInMinutes: 10
 interactive: bash

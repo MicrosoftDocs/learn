@@ -1,6 +1,6 @@
 Your organization has several requirements for moving its applications to Azure virtual machines. You'll select the appropriate tool based on your organization's needs.
 
-The right provisioning tools depend on your problem, the size of your infrastructure, and the outcome you want to achieve. As these criteria would vary from network to network, here are a few fundamental metrics that we can use to determine which tool is more suitable for provisioning compute:
+The right provisioning tools depend on your problem, the size of your infrastructure, and the outcome you want to achieve. As these criteria would vary from network to network, here are a few fundamental metrics that we can use to determine which tool is more suitable to provision compute:
 
 - Ease of setup
 - Management
@@ -22,11 +22,11 @@ Let's consider each of the following tools' advantages or disadvantages using ea
 
 The organization you work for has been given a new contract to work for a new client. They have a handful of virtual machines running on Azure. The development team decides they need to install a small application that they have written to help increase their team's productivity and make sure they can meet new deadlines. This application doesn't require a restart.
 
-The team asks you to implement a solution to ensure these virtual machines all have the application installed properly, and in the fastest and least complex manner possible.
+The team asks you to implement a solution to ensure that these virtual machines all have the application installed properly, and in the fastest and least complex manner possible.
 
-You decide that a custom script can help ensure this application is set up on all of the machines with minimal effort. You use the Azure portal to set the extensions on the virtual machines within a few clicks.
+You decide that a custom script can help ensure that this application is set up on all of the machines with minimal effort. You use the Azure portal to set the extensions on the virtual machines within a few clicks.
 
-### Summary
+### Solution summary
 
 The custom script extension is good for small configurations after provisioning, or if you need to add or update some applications on a target machine quickly. It’s imperative for ad-hoc cross-platform scripting.
 
@@ -44,7 +44,7 @@ The organization you work for is testing a new application, which requires new v
 
 You decide to use DSC. DSC configurations are easy to read. You can declare a singular identical state for all virtual machines. You can abstract any error handling logic from your state configurations and maintain simple and clean state configurations. You can also ensure that the configurations are successful even after a reboot.
 
-### Summary
+### Solution summary
 
 DSC is easy to read, update, and store. DSC configurations help you declare the state your machines should be in at the point they are provisioned, rather than having instructions that detail how to put the machines in a certain state. Without Azure Automation State Configuration, you have to manage your own DSC configurations and orchestration. DSC can achieve more when coupled with Azure Automation State Configuration.
 
@@ -52,7 +52,7 @@ DSC is easy to read, update, and store. DSC configurations help you declare the 
 
 - **Ease of setup.** Automation state configuration is not difficult to set up but it requires the user to be familiar with the Azure portal.
 - **Management.** The service manages all of the virtual machines for you automatically. Each virtual machine can send you detailed reports concerning its state, which allows you to draw insights from this data. Automation state configuration also helps you to manage your DSC configurations more easily.
-- **Interoperability.** Automation state configuration requires DSC configurations. It works with your Azure virtual machines automatically, as well as any virtual machines that you have on-premises or on another cloud provider.
+- **Interoperability.** Automation state configuration requires DSC configurations. It works with your Azure virtual machines automatically, and any virtual machines that you have on-premises or on another cloud provider.
 - **Configuration language.** Use PowerShell.
 - **Limitations and drawbacks.** You can only use PowerShell to define configurations.
 
@@ -62,7 +62,7 @@ You learn that the company you work for wants to be able to create hundreds of v
 
 Based on the requirements provided to you by your organization, you decide that the best solution is to use Azure Automation State Configuration with DSC configurations declaring the states. Azure Automation State Configuration can automatically set your DSC state configurations on all of your nodes. This approach would also ensure the machines report what the state of each node is, and you can also forward this data to Azure Monitor Logs. You use Azure Automation State Configuration to improve the management of your DSC state configurations.
 
-### Summary
+### Solution summary
 
 The Azure Automation State Configuration service is good for automating your DSC configurations, along with the management of machines that need those configurations, and getting centralized reporting back from each machine. You can use DSC without Azure Automation State Configuration, particularly if you want to administer a smaller number of machines. For larger and more complicated scenarios that need orchestration, Azure Automation State Configuration is the solution you need. All of the configurations and features that you need can be pushed to all of the machines, and applied equally, with minimal effort.
 
@@ -80,6 +80,6 @@ Each developer should be able to automatically provision an entire group of virt
 
 You decide to introduce Azure Resource Manager templates to the developers. This way, you can collaborate with the developers to decide which resources they will need on Azure, and agree on a template that will satisfy their requirements. Since the template is JSON-based and easily deployable, the developers will be able to rapidly learn how to provision Azure resources, and deploy it themselves when the time comes.
 
-### Summary
+### Solution summary
 
 Resource Manager templates can be used for small ad-hoc infrastructures. They're also ideal for deploying larger infrastructures with multiple services along with their dependencies. Resource templates can fit well into developers' workflows. You use the same template to deploy your application repeatedly during every stage of the application lifecycle.
