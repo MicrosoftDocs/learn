@@ -1,6 +1,6 @@
 In this module, you learned about what DevOps is (and what it's *not*) and about the Microsoft DevOps suite, Azure DevOps. You also set up an account in Azure DevOps and created an organization.
 
-In a comparison between elite performers and low performers, elite performers deploy more frequently, more quickly, and with fewer failures. This helps them better adapt to changing market conditions, experiment with new features, and recover from incidents with greater resiliency. DevOps gives you a path to becoming an elite performer.
+In a comparison between elite performers and low performers, elite performers deploy more frequently, more quickly, and with fewer failures. This mindset helps them better adapt to changing market conditions, experiment with new features, and recover from incidents with greater resiliency. DevOps gives you a path to becoming an elite performer.
 
 Even for elite performers, change happens gradually, often starting with the most immediate challenges or pain points. Adopting DevOps practices takes time.
 
@@ -26,14 +26,14 @@ We'll go deeper into Azure DevOps in future modules. You can also check out thes
 ### Efficiency
 
 * Server to Admin Ratio. Are the projects reducing the number of administrators required for a given number of servers?
-* Staff Member to Customers Ratio. Is it possible for less staff members to serve a given number of customers?
+* Staff Member to Customers Ratio. Is it possible for fewer staff members to serve a given number of customers?
 * Application Usage. How busy is the application?
 * Application Performance. Is the application performance improving or dropping? (Based upon application metrics.)
 
 ### Quality and Security
 
 * Deployment Failure Rates. How often do deployments (and/or applications) fail?
-* Application Failure Rates. How often do application failures occur, such as configuration failures, performance timeouts, etc?
+* Application Failure Rates. How often do application failures occur, such as configuration failures, performance timeouts, and so on?
 * Mean Time to Recover. How quickly can you recover from a failure?
 * Bug Report Rates. You don't want customers finding bugs in your code. Is the amount they are finding increasing or decreasing?
 * Test Pass Rates. How well is your automated testing working?
@@ -44,10 +44,10 @@ We'll go deeper into Azure DevOps in future modules. You can also check out thes
 
 ### Culture
 
-* Employee Morale. Are employees happy with the transformation and where the organization is heading? Are they still willing to respond to further changes? (This can be very difficult to measure.)
+* Employee Morale. Are employees happy with the transformation and where the organization is heading? Are they still willing to respond to further changes?
 * Retention Rates. Is the organization losing staff?
 
-One of the promises of DevOps is to deliver software faster and with higher quality. It many seem that these promises are contradictory. Traditionally, the faster you delivered the software, the lower the quality. Higher quality software always took longer. However, DevOps processes can help you to find problems earlier, and this usually means that they take less time to fix.
+One of the promises of DevOps is to deliver software faster and with higher quality. It many seem that these promises are contradictory. Traditionally, the faster you delivered the software, the lower the quality. Higher-quality software always took longer. However, DevOps processes can help you to find problems earlier, and this usually means that they take less time to fix.
 
 ### Common quality metrics
 

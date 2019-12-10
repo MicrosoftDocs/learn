@@ -15,7 +15,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Your customer service team is receiving too many refund requests from customers who accidently make purchases from your mobile application. Customers report that the **Purchase** and **Cancel** buttons are too close together. Which kind of functional testing might help catch this sort of problem before it reaches your users?"
+  - content: "Your customer service team is receiving too many refund requests from customers who accidentally make purchases from your mobile application. Customers report that the **Purchase** and **Cancel** buttons are too close together. Which kind of functional testing might help catch this sort of problem before it reaches your users?"
     choices:
     - content: "UI testing."
       isCorrect: false
@@ -25,7 +25,7 @@ quiz:
       explanation: "While integration testing can tell you whether the **Purchase** button successfully fulfills the order, it won't help you validate whether the user has a good experience."
     - content: "Usability testing."
       isCorrect: true
-      explanation: "Usability testing helps you validate your application from the user's perspective. You can combine usabilty testing with user acceptance testing to get feedback from real customers."
+      explanation: "Usability testing helps you validate your application from the user's perspective. You can combine usability testing with user acceptance testing to get feedback from real customers."
   - content: "Your user experience (UX) team has proposed some drastic changes to your website's homepage. Which kind of functional testing might you use to ensure that each button on the page performs the correct function?"
     choices:
     - content: "UI testing."
@@ -36,7 +36,7 @@ quiz:
       explanation: "Although integration testing might verify that the UI receives data correctly from say, a database, it won't verify whether that result functions as expected for the user."
     - content: "Unit testing."
       isCorrect: false
-      explanation: "Although unit testing might verify that your application's buisness logic produces the correct result given certain inputs, it won't verify whether that result functions as expected for the user."
+      explanation: "Although unit testing might verify that your application's business logic produces the correct result given certain inputs, it won't verify whether that result functions as expected for the user."
   - content: "Which kind of functional testing is typically performed by humans, rather than through automation?"
     choices:
     - content: "Unit testing."
