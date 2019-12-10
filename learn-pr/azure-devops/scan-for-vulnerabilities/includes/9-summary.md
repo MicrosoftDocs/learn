@@ -76,11 +76,7 @@ Once you have created a couple of Key Vaults, you will want to monitor how and w
 * Archive to a storage account.
 * Stream to an event hub.
 * Send the logs to Log Analytics.
-* You have control over your logs and you can restrict access and delete logs. 
-
-### Simplified administration of application secret
-
-When storing valuable data, you must take several steps. Security information must be secured, it must follow a lifecycle, and it must be highly available. Azure Key Vault simplifies a lot of this by:
+* You have control over your logs and you can restrict access and delete logs.
 
 ### Integrate with other Azure services
 
@@ -88,6 +84,6 @@ As a secure store in Azure, Key Vault has been used to simplify scenarios like A
 
 ## Kubernetes and Azure Key Vault
 
-Azure Key Vault and Kubernetes make a good combination. It may seem that Kubernetes alone is sufficient since Kubernetes supports both a ConfigMap store and Secret store. Remember, however, the principle around the separation of concerns and how we can ensure enhanced security by separating out configuration from secrets. 
+Azure Key Vault and Kubernetes make a good combination. It may seem that Kubernetes alone is sufficient since Kubernetes supports both a ConfigMap store and Secret store. Remember, however, the principle around the separation of concerns and how we can ensure enhanced security by separating out configuration from secrets.
 
 Having secrets in the same cluster as the configuration store can make them prone to higher risks. An additional benefit is maintainability. Azure Key Vault gives the ability to provide a distributed "Secure Store as a Service" option that provides not just secret management but also Certificates and Key management as part of the service. The SecOps engineers can lock down access to the store without need of cluster admins permissions which allows for clear delineation of responsibilities and access.
