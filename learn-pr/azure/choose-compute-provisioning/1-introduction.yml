@@ -3,12 +3,11 @@ uid: learn.choose-compute-provisioning.1-introduction
 metadata:
   title: Introduction
   description: In this unit, you'll learn about a business that must decide on its Azure compute resources.
-  ms.date: 04/30/2019
+  ms.date: 12/11/2019
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 title: Introduction
 durationInMinutes: 5
 content: |
