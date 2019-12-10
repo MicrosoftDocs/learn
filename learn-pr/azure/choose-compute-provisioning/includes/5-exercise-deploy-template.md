@@ -68,7 +68,7 @@ The state configuration is defined in the Webserver.ps1 file, which includes the
 1. To see the contents of the `git` repository, type this command:
 
     ```bash
-    ls
+    ls -al
     ```
 
     Notice that the repository contains both the **Webserver.ps1** file, and the **Webserver.zip** compressed file. You'll use the zipped file later in this exercise.
@@ -125,17 +125,11 @@ Now that you have a completed template and zipped configuration file, you can us
     ```azurecli
     az group deployment validate \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
-        --template-file template.json
+        --template-file template.json \
+        --parameters vmName=hostVM1 adminUsername=serveradmin
     ```
 
-1. You'll be prompted to enter a **vmName**.  This name will be given to the virtual machine. Type **hostVM1** and then press <kbd>Enter</kdb>.
-1. When you are asked for **adminUsername** and **adminPassword**, use a username that has at least one uppercase letter, a symbol, and a number. Remember that the password you use must be between 8-123 characters long and must satisfy at least 3 of these requirements:
-
-    - Contains an uppercase character
-    - Contains a lowercase character
-    - Contains a numeric digit
-    - Contains a special character
-    - Control characters are not allowed
+1. When prompted for a password, enter a complex password of your choice.
 
 1. If your deployment is validated, you'll see information about your deployment. Pay special attention to the `error` property, which can be found by scrolling back through the output text. It should be null.
 
@@ -152,7 +146,8 @@ Now that we know the template is valid, we can perform the deployment:
     ```azurecli
     az group deployment create \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
-        --template-file template.json
+        --template-file template.json \
+        --parameters vmName=hostVM1 adminUsername=serveradmin
     ```
 
 1. Follow the prompts to complete your deployment. If you are running on a sandbox, this deployment will take around 10 minutes.  As long as you see the response `Running..` the deployment is still busy.
@@ -161,23 +156,25 @@ Now that we know the template is valid, we can perform the deployment:
 
     ```azurecli
     az resource list \
-        --resource-group <rgn>[sandbox resource group name]</rgn>
+        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --output table \
+        --query "[*].{Name:name, Type:type}"
     ```
 
 1. You'll see all of your resources listed, which means your deployment was successful.
 
-1. To test if your IIS server is running, run this command in the shell:
+1. Run this command to generate the URL for your web server so you can confirm IIS was successfully installed:
 
     ```azurecli
-    az vm show \
+    echo http://$(az vm show \
         --show-details \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
         --name hostVM1 \
         --query publicIps \
-        --output tsv
+        --output tsv)
     ```
 
-1. Copy the IP address that is returned, and paste it into a new browser window. You should see your IIS server running:
+1. Click on the URL, or copy and paste it into a new browser window. You should see your IIS server running:
 
     ![Screenshot of the default IIS page on the virtual machine that was deployed](../media/5-iis-server-runs.png)
 
