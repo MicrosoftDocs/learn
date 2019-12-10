@@ -22,7 +22,7 @@ Let's start by obtaining a configuration file and Resource Manager template from
 
 ## Examine and compress the state configuration file
 
-The state configuration is defined in the Webserver.ps1 file, which includes the IIS web server on your virtual machine. Let's examine that file:
+The state configuration is defined in the Webserver.ps1 file, which includes the IIS web server on your virtual machine. Let's examine that file.
 
 1. To open the file, run these commands:
 
@@ -118,7 +118,7 @@ The GitHub repository that you cloned also contains a Resource Manager template.
 
 ## Validate your template
 
-Now that you have a completed template and zipped configuration file, you can use the Azure CLI to perform a deployment. Before you deploy, you can validate your files to see if the deployment would be successful:
+Now that you have a completed template and zipped configuration file, you can use the Azure CLI to perform a deployment. Before you deploy, you can validate your files to see if the deployment would be successful.
 
 1. In the Cloud Shell to the right, to validate your deployment, run this command:
 
@@ -131,7 +131,7 @@ Now that you have a completed template and zipped configuration file, you can us
 
 1. When prompted for a password, enter a complex password of your choice.
 
-1. If your deployment is validated, you'll see information about your deployment. Pay special attention to the `error` property, which can be found by scrolling back through the output text. It should be null.
+1. If your deployment is validated, you'll see information about your deployment. Pay special attention to the `error` property, which can be found by scrolling back through the output text. It should be `null`.
 
     ![Screenshot of the Cloud shell showing a successful template validation](../media/5-error-null.png)
 
@@ -139,7 +139,7 @@ Now that you have a completed template and zipped configuration file, you can us
 
 ## Deploy your template
 
-Now that we know the template is valid, we can perform the deployment:
+Now that we know the template is valid, we can perform the deployment.
 
 1. To deploy the template, run this command:
 
@@ -150,9 +150,9 @@ Now that we know the template is valid, we can perform the deployment:
         --parameters vmName=hostVM1 adminUsername=serveradmin
     ```
 
-1. Follow the prompts to complete your deployment. If you are running on a sandbox, this deployment will take around 10 minutes.  As long as you see the response `Running..` the deployment is still busy.
+    This will take several minutes to deploy.
 
-1. Once everything has been set up, you will have a virtual machine configured as an IIS web server. To list all of the resources in the resource group and confirm that everything has been set up, run this command:
+1. When the deployment completes, you will have a virtual machine configured as an IIS web server. To list all of the resources in the resource group and confirm that everything has been set up, run this command:
 
     ```azurecli
     az resource list \
@@ -161,7 +161,7 @@ Now that we know the template is valid, we can perform the deployment:
         --query "[*].{Name:name, Type:type}"
     ```
 
-1. You'll see all of your resources listed, which means your deployment was successful.
+    You'll see all of your resources listed, which means your deployment was successful.
 
 1. Run this command to generate the URL for your web server so you can confirm IIS was successfully installed:
 
@@ -174,7 +174,7 @@ Now that we know the template is valid, we can perform the deployment:
         --output tsv)
     ```
 
-1. Click on the URL, or copy and paste it into a new browser window. You should see your IIS server running:
+1. Click on the URL, or copy and paste it into a new browser window. You should see the default IIS page.
 
     ![Screenshot of the default IIS page on the virtual machine that was deployed](../media/5-iis-server-runs.png)
 
