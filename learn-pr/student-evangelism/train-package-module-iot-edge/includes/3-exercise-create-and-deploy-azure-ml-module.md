@@ -6,11 +6,11 @@ First step:
    - You can give a memorable name to this repo but you could also use the same name
    - You can keep the repository private if you want.
 
-![An illustration showing how to upload GitHub repo](../media/train-package-module-iot-edge/media/upload-github-repo.png)
+![An illustration showing how to upload GitHub repo](..media/upload-github-repo.png)
 
 4. Note that the process of importing could take some time  
 
-![An illustration showing importing repo](../media/train-package-module-iot-edge/media/import.png)
+![An illustration showing importing repo](../media/import.png)
 
 5. After this stage, press run on free compute as below.
 
