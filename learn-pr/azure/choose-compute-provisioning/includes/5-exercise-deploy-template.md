@@ -64,6 +64,7 @@ The state configuration is defined in the Webserver.ps1 file, which includes the
     ```
 
 1. To close the `code` editor, press <kbd>CTRL + Q</kbd>.
+
 1. To see the contents of the `git` repository, type this command:
 
     ```bash
@@ -121,10 +122,10 @@ Now that you have a completed template and zipped configuration file, you can us
 
 1. In the Cloud Shell to the right, to validate your deployment, run this command:
 
-    ```bash
+    ```azurecli
     az group deployment validate \
-      --resource-group <rgn>[sandbox resource group name]</rgn> \
-      --template-file template.json
+        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --template-file template.json
     ```
 
 1. You'll be prompted to enter a **vmName**.  This name will be given to the virtual machine. Type **hostVM1** and then press <kbd>Enter</kdb>.
@@ -138,7 +139,7 @@ Now that you have a completed template and zipped configuration file, you can us
 
 1. If your deployment is validated, you'll see information about your deployment. Pay special attention to the `error` property, which can be found by scrolling back through the output text. It should be null.
 
-    ![No error](../media/5-error-null.png)
+    ![Screenshot of the Cloud shell showing a successful template validation](../media/5-error-null.png)
 
 1. If there are no errors, your template has been validated and can be deployed.
 
@@ -148,33 +149,36 @@ Now that we know the template is valid, we can perform the deployment:
 
 1. To deploy the template, run this command:
 
-    ```bash
+    ```azurecli
     az group deployment create \
-      --resource-group <rgn>[sandbox resource group name]</rgn> \
-      --template-file template.json
+        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --template-file template.json
     ```
 
-1. Follow the prompts to complete your deployment. If you are running on a sandbox, this deployment will take around 10 minutes.  As long as you see the response "Running.." the deployment is still busy.
+1. Follow the prompts to complete your deployment. If you are running on a sandbox, this deployment will take around 10 minutes.  As long as you see the response `Running..` the deployment is still busy.
 
 1. Once everything has been set up, you will have a virtual machine configured as an IIS web server. To list all of the resources in the resource group and confirm that everything has been set up, run this command:
 
-    ```bash
+    ```azurecli
     az resource list \
-      --resource-group <rgn>[sandbox resource group name]</rgn>
+        --resource-group <rgn>[sandbox resource group name]</rgn>
     ```
 
 1. You'll see all of your resources listed, which means your deployment was successful.
 
 1. To test if your IIS server is running, run this command in the shell:
 
-    ```bash
-    az vm show -d \
-      -g <rgn>[sandbox resource group name]</rgn> \
-      -n hostVM1 --query publicIps -o tsv
+    ```azurecli
+    az vm show \
+        --show-details \
+        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --name hostVM1 \
+        --query publicIps \
+        --output tsv
     ```
 
 1. Copy the IP address that is returned, and paste it into a new browser window. You should see your IIS server running:
 
-    ![IIS server](../media/5-iis-server-runs.png)
+    ![Screenshot of the default IIS page on the virtual machine that was deployed](../media/5-iis-server-runs.png)
 
 You've provisioned a web server using Resource Manager templates and enforced a desired state configuration on your machine through a DSC extension handler.
