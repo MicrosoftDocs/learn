@@ -43,7 +43,7 @@ We would monitor what happens when we release the feature. If the canary release
 
 ## Feature toggles
 
-_Feature toggles_ let us "flip a switch” at runtime. We can deploy new software without exposing any other new or changed functionality to our users. Mara and I would build new features behind a toggle. When a release occurs, the feature is “off” so it's not impacting the production software. Depending on how we configure the toggle, we can flip the switch to "on" and expose it how we want.
+_Feature toggles_ let us "flip a switch" at runtime. We can deploy new software without exposing any other new or changed functionality to our users. Mara and I would build new features behind a toggle. When a release occurs, the feature is "off" so it's not impacting the production software. Depending on how we configure the toggle, we can flip the switch to "on" and expose it how we want.
 
 ![Diagram of coded if statement for on or off feature](../media/2-feature-toggles.png)
 
