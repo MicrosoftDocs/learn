@@ -1,13 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.azdo.recommend-system-feedback-mechanisms.5-automate-application-analytics
+uid: learn.azdo.recommend-system-feedback-mechanisms.6-automate-application-analytics
 title: Design process to automate application analytics
 metadata:
   title: Design process to automate application analytics
   description: Learn ...
+  ms.date: 12/20/2019
   author: tpetchel
   ms.author: thpetche
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3
 content: |
-  [!include[](includes/5-automate-application-analytics.md)]
+  [!include[](includes/6-automate-application-analytics.md)]

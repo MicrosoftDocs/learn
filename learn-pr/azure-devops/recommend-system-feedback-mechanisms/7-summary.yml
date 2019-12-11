@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.azdo.recommend-system-feedback-mechanisms.1-introduction
-title: Introduction
+uid: learn.azdo.recommend-system-feedback-mechanisms.7-summary
+title: Summary
 metadata:
-  title: Introduction
+  title: Summary
   description: Learn...
   ms.date: 12/20/2019
   author: tpetchel
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 1
 content: |
-  [!include[](includes/1-introduction.md)]
+  [!include[](includes/7-summary.md)]

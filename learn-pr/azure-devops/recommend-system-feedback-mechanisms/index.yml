@@ -30,9 +30,11 @@ products:
 - azure-devops
 units:
 - learn.azdo.recommend-system-feedback-mechanisms.1-introduction
-- learn.azdo.recommend-system-feedback-mechanisms.2-continuous-experimentation-mindset
-- learn.azdo.recommend-system-feedback-mechanisms.3-measure-end-user-satisfaction
-- learn.azdo.recommend-system-feedback-mechanisms.4-capture-analyze-user-feedback
-- learn.azdo.recommend-system-feedback-mechanisms.5-automate-application-analytics
+- learn.azdo.recommend-system-feedback-mechanisms.2-the-inner-loop
+- learn.azdo.recommend-system-feedback-mechanisms.3-continuous-experimentation-mindset
+- learn.azdo.recommend-system-feedback-mechanisms.4-measure-end-user-satisfaction
+- learn.azdo.recommend-system-feedback-mechanisms.5-capture-analyze-user-feedback
+- learn.azdo.recommend-system-feedback-mechanisms.6-automate-application-analytics
+- learn.azdo.recommend-system-feedback-mechanisms.7-summary
 badge:
   uid: learn.azdo.recommend-system-feedback-mechanisms.badge
