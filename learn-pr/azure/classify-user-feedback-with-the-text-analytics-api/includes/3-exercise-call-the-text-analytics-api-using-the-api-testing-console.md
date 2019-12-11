@@ -8,7 +8,7 @@ Every call to Text Analytics API requires a subscription key. Often called an ac
 
 1. Click **Create a resource**.
 
-1. In the **Search the Marketplace** search box, type in *text analytics* and hit return.
+1. In the **Search the Marketplace** search box, type in *text analytics* and hit the <kbd>Enter</kbd> or <kbd>Return</kbd> key.
 
 1. Select **Text Analytics** in the search results and then select the **Create** button in the bottom right of the screen.
 
