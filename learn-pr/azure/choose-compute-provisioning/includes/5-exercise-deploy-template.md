@@ -1,0 +1,179 @@
+Your organization grows, and demand rises in Europe and Asia. Your organization is based in the USA. Most of your infrastructure is cloud-based. Your European users are reporting a slow website. To provide better service to the customers in Europe, your company has asked you to create a new and improved web server for Europe. The machine must be configured as an IIS web server when it's provisioned.
+
+You have been asked to choose appropriate provisioning tools. Your tools should also be easy to use and easily customizable.
+
+In this exercise, you'll provision a web server to meet the requirements.
+
+## Provision a web server
+
+You'll use a couple of tools together. Azure Resource Manager templates will enable you to create a template outlining the environment for your web server. Your Resource Manager template can also help you define a state that you apply to your web server at the point of provisioning. You can apply your desired state by linking to a DSC extension handler inside of your Resource Manager template. The DSC handler helps you enforce a state that you define in a DSC configuration.
+
+In the following exercise, you'll use a Resource Manager template to provision a virtual machine. The DSC extension handler that is included in the template enforces your state on the virtual machine. You'll use an Azure storage account to host your DSC configuration file.
+
+## Clone the configuration and template
+
+Let's start by obtaining a configuration file and Resource Manager template from GitHub.
+
+1. In the Cloud Shell on the right, run this command to clone the GitHub repository.
+
+    ```bash
+    git clone https://github.com/MicrosoftDocs/mslearn-choose-compute-provisioning.git
+    ```
+
+## Examine and compress the state configuration file
+
+The state configuration is defined in the Webserver.ps1 file, which includes the IIS web server on your virtual machine. Let's examine that file.
+
+1. To open the file, run these commands:
+
+    ```bash
+    cd mslearn-choose-compute-provisioning
+    code Webserver.ps1
+    ```
+
+1. The configuration file includes the following code. Notice that it installs IIS, ASP.NET, and the IIS Management console.
+
+    ```powershell
+    Configuration Webserver
+    {
+        param ($MachineName)
+
+        Node $MachineName
+        {
+            #Install the IIS Role
+            WindowsFeature IIS
+            {
+                Ensure = "Present"
+                Name = "Web-Server"
+            }
+
+            #Install ASP.NET 4.5
+            WindowsFeature ASP
+            {
+                Ensure = "Present"
+                Name = "Web-Asp-Net45"
+            }
+
+            WindowsFeature WebServerManagementConsole
+            {
+                Name = "Web-Mgmt-Console"
+                Ensure = "Present"
+            }
+        }
+    }
+    ```
+
+1. To close the `code` editor, press <kbd>CTRL + Q</kbd>.
+
+1. To see the contents of the cloned repository, type this command:
+
+    ```bash
+    ls -al
+    ```
+
+    Notice that the repository contains both the **Webserver.ps1** file, and the **Webserver.zip** compressed file. You'll use the zipped file later in this exercise.
+
+## Configure the template
+
+The GitHub repository that you cloned also contains a Resource Manager template. Let's add the location of the zipped configuration file to it.
+
+1. In the Cloud Shell, use this command to open the template:
+
+    ```bash
+    code template.json
+    ```
+
+1. In the **template.json** code file, in the `<parameters>` section, notice that some properties, such as `vmName`, don't include default values. You'll be prompted to enter values for those properties, when you use the template.
+
+1. To provide a default value for the configuration file URL, in the **template.json** code file, locate this code:
+
+    ```json
+    "modulesUrl": {
+        "type": "string",
+        "metadata": {
+            "description": "URL for the DSC configuration module."
+        }
+    },
+    ```
+
+1. Replace that code with this code:
+
+    ```json
+    "modulesUrl": {
+        "type": "string",
+        "defaultValue": "https://github.com/MicrosoftDocs/mslearn-choose-compute-provisioning/raw/master/Webserver.zip",
+        "metadata": {
+            "description": "URL for the DSC configuration module."
+        }
+    },
+    ```
+
+1. To save the template, press <kbd>CTRL + S</kbd>.
+
+1. In the `<variables>` section of the **template.json**, notice that values are stored to configure networking for the virtual machine.
+
+1. In the `<resources>` section, notice that the template will create an IP address, a virtual network, the virtual machine, and other related resources.
+
+1. To close the `code` editor, press <kbd>CTRL + Q</kbd>.
+
+## Validate your template
+
+Now that you have a completed template and zipped configuration file, you can use the Azure CLI to perform a deployment. Before you deploy, you can validate your files to see if the deployment would be successful.
+
+1. In the Cloud Shell, run the following command to validate your deployment. When prompted for a password, enter a complex password of your choice.
+
+    ```azurecli
+    az group deployment validate \
+        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --template-file template.json \
+        --parameters vmName=hostVM1 adminUsername=serveradmin
+    ```
+
+1. If your deployment is validated, you'll see information about your deployment. Pay special attention to the `error` property, which can be found by scrolling back through the output text. It should be `null`.
+
+    ![Screenshot of the Cloud shell showing a successful template validation](../media/5-error-null.png)
+
+1. If there are no errors, your template has been validated and can be deployed.
+
+## Deploy your template
+
+Now that we know the template is valid, we can perform the deployment.
+
+1. To deploy the template, run the following command. When prompted for a password, enter a complex password of your choice.
+
+    ```azurecli
+    az group deployment create \
+        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --template-file template.json \
+        --parameters vmName=hostVM1 adminUsername=serveradmin
+    ```
+
+    This will take several minutes to deploy.
+
+1. When the deployment completes, you will have a virtual machine configured as an IIS web server. To list all of the resources in the resource group and confirm that everything has been set up, run this command:
+
+    ```azurecli
+    az resource list \
+        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --output table \
+        --query "[*].{Name:name, Type:type}"
+    ```
+
+    You'll see all of your resources listed, which means your deployment was successful.
+
+1. Run this command to generate the URL for your web server so you can confirm IIS was successfully installed:
+
+    ```azurecli
+    echo http://$(az vm show \
+        --show-details \
+        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --name hostVM1 \
+        --query publicIps \
+        --output tsv)
+    ```
+
+1. Click on the URL, or copy and paste it into a new browser window. You should see the default IIS page.
+
+    ![Screenshot of the default IIS page on the virtual machine that was deployed](../media/5-iis-server-runs.png)
+
+You've provisioned a web server using Resource Manager templates and enforced a desired state configuration on your machine through a DSC extension handler.
