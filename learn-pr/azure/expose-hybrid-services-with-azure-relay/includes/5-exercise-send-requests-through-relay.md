@@ -8,33 +8,26 @@ Here, you'll write the Azure Relay code in both the sender and listener applicat
 
 You have two command-line apps that will send messages to, and listen for messages from, the relay you created earlier. Most of the code is finished, but you must add the Azure Relay code to the apps. Let's start by obtaining the code:
 
-1. Start a command prompt on your local machine and create a new directory:
-
-    ```ms-dos
-    mkdir CreditCheckApps
-    cd CreditCheckApps
-    ```
-
-1. Now, use `git` to clone the sample apps:
+1. In the Cloud Shell on the right, use `git` to clone the sample apps:
 
     <!-- TODO: The link here won't work until my PR is merged with it. Until then, you can use: https://github.com/alistairmatthews/mslearn-expose-hybrid-services-with-azure-relay -->
 
-    ```ms-dos
+    ```bash
     git clone https://github.com/MicrosoftDocs/mslearn-expose-hybrid-services-with-azure-relay.git
     ```
 
 ## Configure the listener app
 
-First, let's ensure that the listener app can connect to the relay. The app needs the address of the namespace, the name of the hybrid connection, the key name, and the primary connection key you saved, in a text file:
+First, let's ensure that the listener app can connect to the relay. The app needs the address of the namespace, the name of the hybrid connection, the key name, and the primary connection key, which you saved in a text file:
 
-1. Change directory into the starter code for the listener app, and then start Visual Studio Code:
+1. Change directory into the starter code for the listener app, and then start the `code` editor:
 
-    ```ms-dos
+    ```bash
     cd mslearn-expose-hybrid-services-with-azure-relay/starter/listener
     code .
     ```
 
-1. In the **Explorer** window, click **Program.cs**.
+1. In the **FILES** window, click **Program.cs**.
 1. Locate the comment `// Details of the Azure Relay`. Immediately after that comment, add this code:
 
     ```c#
@@ -86,18 +79,24 @@ You must add the credit-checking service to your relay as a listener, so that it
     Console.WriteLine("Server listening");
     ```
 
+1. To save your changes, press <kbd>CTRL + S</kbd>, and then to close the `code` editor, press <kbd>CTRL + Q</kbd>.
+
 ## Configure the sender app
 
 Apps that want to check a customer's credit record send a request to the relay, which forwards it to the listener. As for the listener, you configure the sender app with connection details for the relay:
 
-1. In the command prompt, change directory into the starter code for the sender app, and then start another instance of Visual Studio Code:
+1. In the Cloud Shell, change directory into the starter code for the sender app, and then start the `code` editor:
 
-    ```ms-dos
+    ```bash
     cd ../sender
     code .
     ```
 
-1. In the **Explorer** window, click **Program.cs**.
+1. In the **FILES** window, click **Program.cs**.
+
+    > [!NOTE]
+    > When the `code` editor opens, it may display the **Program.cs** file from the listener, which was open when you closed the tool earlier. Make sure you click on the **Program.cs** file in the **FILES** window to edit the right file.
+
 1. Locate the comment `// Details of the Azure Relay`. Immediately after that comment, add this code:
 
     ```c#
@@ -140,14 +139,38 @@ To request a credit check, the sender app sends a name in an HTTP GET request to
     Console.WriteLine(await response.Content.ReadAsStringAsync());
     ```
 
+1. To save your changes, press <kbd>CTRL + S</kbd>, and then to close the `code` editor, press <kbd>CTRL + Q</kbd>.
+
+## Start the apps
+
+The listener and sender apps are complete. You can now run both apps, use the sender to request a credit check, and then observe the results in both apps. To run both apps at once, we'll use a second instance of the Cloud Shell to host the sender:
+
+1. In the Cloud Shell to the right, to run the listener app, execute these commands:
+
+    ```bash
+    cd ../listener
+    dotnet build
+    dotnet bin/Debug/netcoreapp2.2/listener.dll
+    ```
+
+1. When you receive the message **Server listening** you can start the sender. Open a new instance of your browser and navigate to **https://shell.azure.com**
+1. If you are asked to **Select a directory**, choose **Microsoft Learn Sandbox**
+1. In the top left of the Cloud Shell, ensure that **Bash** is selected.
+1. To run the sender app, execute these commands:
+
+    ```bash
+    cd ~/mslearn-expose-hybrid-services-with-azure-relay/starter/sender
+    dotnet build
+    dotnet bin/Debug/netcoreapp2.2/sender.dll
+    ```
+
 ## Test the apps
 
-The listener and sender apps are complete. You can now run both apps, use the sender to request a credit check, and then observe the results in both apps:
+Now that the apps are both running in separate instances of the Cloud Shell, let's test them by checking a credit record:
 
-1. Switch to the instance of Visual Studio Code that shows the listener app. 
-1. On the **Debug** menu, click **Start Debugging**. A new command prompt is shown to run the app. Wait until the message **Server listening** is displayed.
-1. Switch to the instance of Visual Studio Code that shows the sender app.
-1. On the **Debug** menu, click **Start Debugging**. A new command prompt is shown to run the app. Wait until the message **Enter a name to check:** is displayed.
-1. In the sender app, type a name of your choice, and then press Enter. 
-1. In the listener app, the name you typed should be displayed with the result of the credit check.
-1. In the sender app, the reply from the listener is displayed.
+1. Arrange the two browser windows so that you can see both.
+1. In the sender app, type a name of your choice, and then press Enter.
+1. In the listener app, the name you typed should be displayed.
+1. In the sender app, the reply from the listener is displayed with the result of the credit check.
+1. To exit the sender app, press <kbd>Enter</kbd>. You can run the app again to check other names. When you're finished, close the browser window.
+1. To exit the listener app, press <kbd>CTRL + C</kbd>

@@ -39,7 +39,7 @@ Azure Relay maintains security by requiring that applications supply an access k
     ![Obtain the access key for the relay](../media/3-obtain-access-key.png)
 
 1. To the right of the **Primary Key** text box, click the **Copy to clipboard** button.
-1. Start a new instance of **Notepad**, or another text editor, on your laptop and paste the key into it.
+1. Start a new instance of **Notepad**, or another text editor, on your computer and paste the key into it.
 1. To the right of the **Primary Connection String** text box, click the **Copy to clipboard** button.
 1. In the text editor, paste the connection string on a new line.
 1. Save the text file in a local folder of your choice. Name the file **AccessKeys.txt**.

@@ -10,7 +10,6 @@ metadata:
   ms.prod: learning-azure
 title: Exercise - Create an Azure Relay Hybrid Connection
 durationInMinutes: 10
-interactive: bash
 azureSandbox: true
 content: |
   [!include[](includes/3-exercise-create-azure-relay-hybrid-connection.md)]
