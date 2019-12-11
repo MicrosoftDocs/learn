@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.react-to-state-changes-using-event-grid.4-build-logic-respond-event
+metadata:
+  title: Build logic that responds to an event
+  description: Build logic that responds to an event
+  ms.date: 04/30/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Build logic that responds to an event
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-build-logic-respond-event.md)]

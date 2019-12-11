@@ -1,15 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: 
-title: Introduction
+uid: learn.react-to-state-changes-using-event-grid.1-introduction
 metadata:
   title: Introduction
-  description: Learn about the kind of problems that Event Grid can solve.
-  ms.date: 
-  author: nickwalkmsft
-  ms.author: nickwalk
+  description: Introduction
+  ms.date: 04/30/2019
+  author: jboeshart
+  ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
+title: Introduction
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]

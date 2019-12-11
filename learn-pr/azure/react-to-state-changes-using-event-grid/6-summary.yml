@@ -1,15 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: 
-title: Summary
+uid: learn.react-to-state-changes-using-event-grid.6-summary
 metadata:
   title: Summary
-  description: Summary and cleanup
-  ms.date: 
-  author: nickwalkmsft
-  ms.author: nickwalk
+  description: Summary
+  ms.date: 04/30/2019
+  author: jboeshart
+  ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
-durationInMinutes: 2
+title: Summary
+durationInMinutes: 5
 content: |
   [!include[](includes/6-summary.md)]

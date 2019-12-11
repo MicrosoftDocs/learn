@@ -1,32 +1,37 @@
 ### YamlMime:Module
-uid: 
+uid: learn.react-to-state-changes-using-event-grid
 metadata:
-  title: React to state changes in your Azure services using Event Grid
-  description: Build serverless application architecture, automate your operations, and integrate applications with by handling Azure events with Event Grid.
-  ms.date: 03/27/2019
-  author: nickwalkmsft
-  ms.author: nickwalk
+  title: React to state changes in your Azure services using Event Grid 
+  description: TODO
+  ms.date: 04/30/2019
+  author: jboeshart
+  ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: React to state changes in your Azure services using Event Grid
-summary: Build serverless application architecture, automate your operations, and integrate applications with by handling Azure events with Event Grid.
+title: React to state changes in your Azure services using Event Grid 
+summary: TODO
 abstract: | 
   In this module, you will:
-  - Create a virtual machine.
-  - Create a Logic App which can be triggered by Event Grid.
-  - Configure the Event Grid connector.
-  - Send a notification email.
-prerequisites: |
-  - 
-iconUrl: 
+  - TODO
+  - TODO
+  - TODO
+prerequisites: | 
+  - TODO
+iconUrl: http://via.placeholder.com/120x120
 levels:
 - intermediate
 roles:
-- developer
 - solution-architect
 products:
-
+- azure
+- azure-event-grid
+- azure-logic-apps
 units:
-
+- learn.react-to-state-changes-using-event-grid.1-introduction
+- learn.react-to-state-changes-using-event-grid.2-respond-using-event-grid
+- learn.react-to-state-changes-using-event-grid.3-exercise-trigger-logic-app
+- learn.react-to-state-changes-using-event-grid.4-build-logic-respond-event
+- learn.react-to-state-changes-using-event-grid.5-exercise-email-vm-change
+- learn.react-to-state-changes-using-event-grid.6-summary
 badge:
-  uid: 
+  uid: learn.react-to-state-changes-using-event-grid.badge
