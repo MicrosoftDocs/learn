@@ -65,7 +65,7 @@ The state configuration is defined in the Webserver.ps1 file, which includes the
 
 1. To close the `code` editor, press <kbd>CTRL + Q</kbd>.
 
-1. To see the contents of the `git` repository, type this command:
+1. To see the contents of the cloned repository, type this command:
 
     ```bash
     ls -al
@@ -75,7 +75,7 @@ The state configuration is defined in the Webserver.ps1 file, which includes the
 
 ## Configure the template
 
-The GitHub repository that you cloned also contains a Resource Manager template. Let's add the location of the zipped configuration file to it:
+The GitHub repository that you cloned also contains a Resource Manager template. Let's add the location of the zipped configuration file to it.
 
 1. In the Cloud Shell, use this command to open the template:
 
@@ -120,7 +120,7 @@ The GitHub repository that you cloned also contains a Resource Manager template.
 
 Now that you have a completed template and zipped configuration file, you can use the Azure CLI to perform a deployment. Before you deploy, you can validate your files to see if the deployment would be successful.
 
-1. In the Cloud Shell to the right, to validate your deployment, run this command:
+1. In the Cloud Shell, run the following command to validate your deployment. When prompted for a password, enter a complex password of your choice.
 
     ```azurecli
     az group deployment validate \
@@ -128,8 +128,6 @@ Now that you have a completed template and zipped configuration file, you can us
         --template-file template.json \
         --parameters vmName=hostVM1 adminUsername=serveradmin
     ```
-
-1. When prompted for a password, enter a complex password of your choice.
 
 1. If your deployment is validated, you'll see information about your deployment. Pay special attention to the `error` property, which can be found by scrolling back through the output text. It should be `null`.
 
@@ -141,7 +139,7 @@ Now that you have a completed template and zipped configuration file, you can us
 
 Now that we know the template is valid, we can perform the deployment.
 
-1. To deploy the template, run this command:
+1. To deploy the template, run the following command. When prompted for a password, enter a complex password of your choice.
 
     ```azurecli
     az group deployment create \
