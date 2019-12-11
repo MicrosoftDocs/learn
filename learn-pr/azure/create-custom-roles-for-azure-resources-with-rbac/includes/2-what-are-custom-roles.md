@@ -194,4 +194,4 @@ Let's assume we've picked out what we need by looking at the related build-in ro
       "/subscriptions/{subscriptionId1}" 
    ]
    }
-    ```
+   ```
