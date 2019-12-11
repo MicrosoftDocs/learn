@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-hub
 title: "Deploy a prebuilt module to the Edge device"
-summary: "."
+summary: "Deploy a pre-built temperature simulator module to the edge using a container. The pre-built module will be deployed to an IoT edge device. You will check that the module was successfully created and deployed to the edge. You will view the simulated data from the deployed module."
 abstract: |
     In this module, you will:  
     - Launch a module from Azure portal to IoT Edge 
