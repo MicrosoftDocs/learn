@@ -43,7 +43,7 @@ summary: |
 
 cardDescription: The AI Edge Engineer learning path takes an engineering-led approach for the deployment of AI to Edge devices within the framework of the cloud. This learning path helps the participants to learn skills in AI (broadly covering machine learning and deep learning algorithms), IoT and DevOps.
 prerequisites: None
-iconUrl: learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/generic-trophy.svg
 levels:
 - beginner
 roles:
@@ -61,10 +61,6 @@ products:
 - azure-resource-manager
 - azure-virtual-machines
 modules:
-- learn.oxford.intro-to-iot
-- learn.oxford.intro-to-iot-hub
-- learn.oxford.intro-to-iot-edge
-- learn.oxford.deploy-prebuilt-module-edge-device
 - learn.oxford.train-package-azure-ml-module-iot-edge
 trophy:
   uid: learn.oxford.ai-edge-engineer.trophy
