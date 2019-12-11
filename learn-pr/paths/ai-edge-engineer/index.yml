@@ -59,8 +59,7 @@ products:
 - azure-iot-hub
 - azure-machine-learning-service
 - azure-resource-manager
-- azure-virtual-machines 
-- azurecli
+- azure-virtual-machines
 modules:
 - learn.oxford.intro-to-iot
 - learn.oxford.intro-to-iot-hub
