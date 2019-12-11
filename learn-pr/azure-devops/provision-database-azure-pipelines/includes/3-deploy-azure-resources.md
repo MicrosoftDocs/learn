@@ -1,18 +1,18 @@
-In this exercise, you use a template that creates an Azure SQL Server logical instance, an Azure App Service plan, and an Azure App Service instance. You deploy this template from Azure Cloud Shell and see that the resources are deployed. Then you delete the resource group and all of the resources in it.
+In this exercise, you use a template that creates a SQL Server logical instance, an Azure App Service plan, and an App Service instance. You deploy this template from Azure Cloud Shell and see that the resources are deployed. Then you delete all the resources in the resource group.
 
-## Bring up Cloud Shell through the Azure portal
+## Open Cloud Shell through the Azure portal
 
-Here, you bring up Cloud Shell through the Azure portal so that you can run your Azure Resource Manager template.
+Here, you open Cloud Shell through the Azure portal so that you can run your Azure Resource Manager template.
 
-You can also [install and run Azure CLI locally](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&azure-portal=true).
+You can also [install and run the Azure CLI locally](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&azure-portal=true).
 
 1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true) and sign in.
-1. From the menu bar, select Cloud Shell. Select the **Bash** experience.
+1. From the menu bar, select **Cloud Shell**. Select the **Bash** experience.
 
     ![Selecting Cloud Shell from the menu bar](../../shared/media/azure-portal-menu-cloud-shell.png)
 
     > [!NOTE]
-    > Cloud Shell requires an Azure storage resource to persist any files you create while working in Cloud Shell. On first launch, Cloud Shell prompts to create a resource group, storage account, and Azure Files share on your behalf. This is a one-time step and will be automatically attached for all future Cloud Shell sessions.
+    > Cloud Shell requires an Azure storage resource to persist any files that you create while working in Cloud Shell. The first time you open Cloud Shell, it prompts you with an offer to create a resource group, storage account, and Azure Files share on your behalf. This is a one-time step and will be automatically attached for all future Cloud Shell sessions.
 
 ## Create a working directory
 
@@ -48,7 +48,9 @@ Here, you create a basic Resource Manager template in a file named *template.jso
 
 Here, you briefly walk through each section of the Resource Manager template to better understand how it works.
 
-The `parameters` section of the template file specifies the information that needs to be passed in to the template. It has parameters for the names of the resources to be created. The defaults are the base names that will have the deployment prefix and unique suffix added to it. The deployment prefix, unique suffix, and admin password will be passed in. The location will be set by default to be the location of the resource group you are deploying into.
+The `parameters` section of the template file specifies the information that needs to be passed in to the template. It has parameters for the names of the resources to be created. The defaults are the base names that will have the deployment prefix and unique suffix added to them. 
+
+The deployment prefix, unique suffix, and admin password will be passed in. The location will be set by default as the location of the resource group you're deploying into.
 
 ```json
 "parameters": {
@@ -84,7 +86,7 @@ The `parameters` section of the template file specifies the information that nee
 },
 ```
 
-The variables section creates a `uniqueName` variable that is a combination of the `deploymentPrefix` parameter and the `uniqueSuffix` parameter. This will be used to create unique names for the resources.
+The variables section creates a `uniqueName` variable that's a combination of the `deploymentPrefix` parameter and the `uniqueSuffix` parameter. This variable will be used to create unique names for the resources.
 
 ```json
 "variables": {
@@ -94,9 +96,9 @@ The variables section creates a `uniqueName` variable that is a combination of t
 
 The rest of the file defines the resources that will be created. Take a moment to read through those.
 
-### The SQL Server instance
+### SQL Server instance
 
-Notice the `name` parameter. Here you use the default name of the resource you set up in the parameters section and concatenate the `uniqueName` from the variables section. You get the administrator login password from the `adminPassword` parameter.
+Notice the `name` parameter. Here, you use the default name of the resource that you set up in the parameters section and concatenate the `uniqueName` variable from the variables section. You get the administrator login password from the `adminPassword` parameter.
 
 ```json
 "type": "Microsoft.Sql/servers",
@@ -111,7 +113,7 @@ Notice the `name` parameter. Here you use the default name of the resource you s
     }
 ```
 
-You also set a firewall rule to allow Azure to access the server. You need this to deploy the database to the server. We add database deployment to the template when we deploy in the pipeline later.
+You also set a firewall rule to allow Azure to access the server. You need this rule to deploy the database to the server. We add database deployment to the template when we deploy in the pipeline later.
 
 ```json
 "type": "Microsoft.Sql/servers/firewallRules",
@@ -126,7 +128,7 @@ You also set a firewall rule to allow Azure to access the server. You need this 
     }
 ```
 
-### The App Service plan
+### App Service plan
 
 The App Service plan does not need the unique suffix. It uses the name of the plan directly from the parameter's default value.
 
@@ -148,9 +150,9 @@ The App Service plan does not need the unique suffix. It uses the name of the pl
     }
 ```
 
-### The App Service instance
+### App Service instance
 
-Here, the name property concatenates the name of the web site from the parameter default with the unique suffix. You also disable SSL in the `hostNameSslStates` property.
+Here, the name property concatenates the name of the website from the parameter default with the unique suffix. You also disable SSL in the `hostNameSslStates` property.
 
 ```json
 "type": "Microsoft.Web/sites",
@@ -179,7 +181,7 @@ Here, the name property concatenates the name of the web site from the parameter
     }
 ```
 
-The `hostNameBindings` type sets the web site name and the type.
+The `hostNameBindings` type sets the website name and the type.
 
 ```json
 "type": "Microsoft.Web/sites/hostNameBindings",
@@ -196,11 +198,11 @@ The `hostNameBindings` type sets the web site name and the type.
 ```
 
 > [!TIP]
-> In Cloud Shell, you can close the editor now if you'd like. But leave the command window open for the next part.
+> In Cloud Shell, you can close the editor now if you want. But leave the command window open for the next part.
 
 ## Select an Azure region for deployment
 
-A _region_ is one or more Azure datacenters within a specific geographic location. East US, West US, and North Europe are examples of regions. Every Azure resource, including an App Service instance or SQL Database, is assigned a region.
+A _region_ is one or more Azure datacenters within a specific geographic location. East US, West US, and North Europe are examples of regions. Every Azure resource, including an App Service instance or a SQL database, is assigned a region.
 
 To make the commands easier to run, start by selecting a default region. After you specify the default region, later commands use that region unless you specify a different region.
 
@@ -212,7 +214,7 @@ To make the commands easier to run, start by selecting a default region. After y
       --output table
     ```
 
-1. From the **Name** column in the output, choose a region that's close to you, for example, **eastasia** or **westus2**.
+1. From the **Name** column in the output, choose a region that's close to you. For example, choose **eastasia** or **westus2**.
 
 1. Run the following `read` command to set a Bash variable that's named `AZ_LOCATION`.
 
@@ -224,7 +226,7 @@ To make the commands easier to run, start by selecting a default region. After y
 
     This Bash variable makes it easier to run the command that comes next. In practice, this Bash variable isn't required.
 
-1. Print the Bash variable to verify it was set correctly.
+1. Print the Bash variable to verify that it was set correctly.
 
     ```bash
     echo $AZ_LOCATION
@@ -250,7 +252,7 @@ For learning purposes, here you generate a random number and assign it to the `U
     UNIQUE_ID=$RANDOM
     ```
 
-1. Print this  to the console. Write it down for later.
+1. Print this to the console. Write it down for later.
 
     ```bash
     echo $UNIQUE_ID
@@ -264,11 +266,11 @@ For learning purposes, here you generate a random number and assign it to the `U
 
 ## Create a random password
 
-Here, you generate a random password to use with your Azure SQL Database.
+Here, you generate a random password to use with your SQL database.
 
-There are many ways generate random passwords. The method you choose depends on your workflow and requirements. This method uses the **openssl** utility to generate 32 random bytes and base64 encode the output. Base64 encoding ensures that the result contains only printable characters.
+There are many ways generate random passwords. The method you choose depends on your workflow and requirements. This method uses the **openssl** tool to generate 32 random bytes and base64 encode the output. Base64 encoding ensures that the result contains only printable characters.
 
-Run the **openssl** utility to generate a random password.
+Run the **openssl** tool to generate a random password.
 
 ```bash
 SQL_PASSWORD=$(openssl rand -base64 32)
@@ -276,13 +278,13 @@ SQL_PASSWORD=$(openssl rand -base64 32)
 
 ## Run the template
 
-1. Run the following to create a resource group for the template to deploy into.
+1. Run the following command to create a resource group for the template to deploy into.
 
     ```azurecli
     az group create --name tailspin-spacegame-web-rg
     ```
 
-1. Run the following to deploy the template.
+1. Run the following command to deploy the template.
 
     ```azurecli
     az group deployment create \
@@ -292,9 +294,9 @@ SQL_PASSWORD=$(openssl rand -base64 32)
       --parameters deployPrefix="-dev-" uniqueSuffix=$UNIQUE_ID adminPassword="$SQL_PASSWORD"
     ```
 
-    Wait for the deployment to finish. Notice that we are passing in the parameters we need. Later you'll move them to a parameters file, pipeline variables, and Azure Key Vault.
+    Wait for the deployment to finish. Notice that we are passing in the parameters that we need. Later you'll move them to a parameters file, pipeline variables, and key vault.
 
-1. Go to the Azure portal and choose **Resource groups**, then the **tailspin-spacegame-web-rg** resource group. Notice that you have an App Service plan, App Service, and a SQL Server instance. Take note of the suffix on each of these resources. It is made from the `deployPrefix` and your `uniqueSuffix`.
+1. Go to the Azure portal and select **Resource groups**, and then select the **tailspin-spacegame-web-rg** resource group. Notice that you have an App Service plan, an App Service instance, and a SQL Server instance. Take note of the suffix on each of these resources. It's made from the `deployPrefix` variable and your `uniqueSuffix` variable.
 
     ![List of resources created by the template run](../media/3-resource-list.png)
 
@@ -308,12 +310,14 @@ SQL_PASSWORD=$(openssl rand -base64 32)
       --parameters deployPrefix="-dev-" uniqueSuffix=$UNIQUE_ID adminPassword="$SQL_PASSWORD"
     ```
 
-    Notice that the operation is idempotent, meaning it doesn't try to create a resource that is already there. However, if you delete a resource or change some of its properties, the new resource or resource changes will be created.
+    Notice that the operation is idempotent, meaning that it doesn't try to create a resource that's already there. However, if you delete a resource or change some of its properties, the new resource or resource changes will be created.
 
 ## Clean up
 
 Here, you delete everything in your resource group, but not the resource group itself. You'll add more resources to your resource group shortly.
 
-From the Azure portal, delete the resources group by selecting the resources in the resource group and then selecting **Delete** from the menu bar. Do not delete the resource group. When prompted, enter *Yes* to confirm. This deletes everything in the resource group but not the resource group itself. Verify that the resources are deleted but the resource group remains.
+From the Azure portal, delete the resources by selecting them in the resource group and then selecting **Delete** from the menu bar. Do not delete the resource group. 
+
+When you're prompted, enter **Yes** to confirm. Verify that the resources are deleted but the resource group remains.
 
 ![Delete resources in the resource group](../media/3-delete-resources.png)
