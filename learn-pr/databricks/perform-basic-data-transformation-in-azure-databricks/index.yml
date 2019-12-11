@@ -1,5 +1,6 @@
 ### YamlMime:Module
 uid: learn.perform-basic-data-transformation-in-azure-databricks
+hidden: true
 metadata:
   title: Perform basic data transformations in Azure Databricks
   description: Find out how to use DataFrames in Azure Databricks to query, process, and change the original structure of the data.
