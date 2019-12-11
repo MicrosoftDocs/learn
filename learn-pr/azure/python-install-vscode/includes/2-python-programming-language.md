@@ -51,7 +51,7 @@ If the first number is `2`, then you'll need to install Python 3.  We'll walk th
 To determine if your Linux computer already has Python 3 installed:
 
 - Open a Linux terminal session.  The way you do this is different depending on your distribution and version of Linux.  Consult the online documentation for your Linux distribution for instructions on how to open a terminal.
-- Type the following command and select the `Enter` or `Return` key on your keyboard:
+- Type the following command and select the <kbd>Enter</kbd> key on your keyboard:
 
 ```bash
 python3 --version

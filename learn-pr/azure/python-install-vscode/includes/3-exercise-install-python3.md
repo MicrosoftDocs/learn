@@ -52,7 +52,7 @@ Click the `Close` button.
 
 #### Step 6 - Check your installation.
 
-To confirm that Python 3 is installed correctly, type the following command at the bash prompt and press the `Enter` or `Return` key on your keyboard:
+To confirm that Python 3 is installed correctly, type the following command at the bash prompt and select the <kbd>Enter</kbd> key on your keyboard:
 
 ```bash
 py --version
@@ -93,11 +93,11 @@ The `apt-get update` command updates the list of packages (the package indexes) 
 
 Using the `sudo` command temporarily elevates your permissions to root, the most powerful level of the system.  Invoking `sudo` usually means you'll be asked for your user account's password.
 
-`apt-get update` will display all of the items it will update, and may ask you to approve by typing `y` or `yes`, then the `enter` or `return` key.
+`apt-get update` will display all of the items it will update, and may ask you to approve by typing `y` or `yes`, then select the <kbd>Enter</kbd> key on your keyboard.
 
 #### Step 3 - Install Python 3.
 
-Type the following command at the bash prompt and press the `Enter` or `Return` key on your keyboard:
+Type the following command at the bash prompt and select the <kbd>Enter</kbd> key on your keyboard:
 
 ```bash
 sudo apt-get install python3
@@ -107,7 +107,7 @@ sudo apt-get install python3
 
 #### Step 4 - Check your installation.
 
-To confirm that Python 3 is installed correctly, type the following command at the bash prompt and press the `Enter` or <kbd>Return</kbd> key on your keyboard:
+To confirm that Python 3 is installed correctly, type the following command at the bash prompt and select the <kbd>Enter</kbd> key on your keyboard:
 
 ```bash
 python3 --version
