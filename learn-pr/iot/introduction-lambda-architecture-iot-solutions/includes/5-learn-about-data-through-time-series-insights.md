@@ -2,7 +2,7 @@ With IoT telemetry data streaming in hot from your IoT devices, you might wish t
 
 The basis of an IoT solution is often the IoT Hub, the cloud service built to handle millions of telemetry readings, and channel that data somewhere useful. The data can be routed for some real-time analytics. And  routed to blob storage for archive, or for a colder deeper analysis.
 
-Another option, is to route the data to the built-in _Time Series Analytics_ service. This service enables you to visualize your data without writing any code, or SQL queries. The routing and visualization can all be done via the Azure portal.
+Another option, is to route the data to the built-in _Time Series Insights_ service. This service enables you to visualize your data without writing any code, or SQL queries. The routing and visualization can all be done via the Azure portal.
 
 Using the portal, you create the required resources, then route the data. Now you can start looking at some charts.
 

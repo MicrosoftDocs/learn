@@ -2,7 +2,7 @@ Hybrid systems are the result of conflicting goals. However, having conflicting 
 
 ## Data paths
 
-The conflict in Azure IoT is as follows. Telemetry data is coming in hot, there's lots of it, and it needs to be analyzed quickly. Preventive maintenance is the goal of this analysis. Also, all the data should be stored, both to archive it, and to run some deeper analysis over longer time periods. The deeper analysis is to try to detect longer term trends, or failure patterns, that might be difficult to detect with a shorter real-time sample.
+The conflict in IoT applications is as follows. Telemetry data is coming in hot, there's lots of it, and it needs to be analyzed quickly. Preventive maintenance is the goal of this analysis. Also, all the data should be stored, both to archive it, and to run some deeper analysis over longer time periods. The deeper analysis is to try to detect longer term trends, or failure patterns, that might be difficult to detect with a shorter real-time sample.
 
 One of the easiest ways of handling this duality at the device sensor end of things, is to send two messages. The first message contains only the telemetry data that needs analyzed in real time. The second message contains the telemetry, and all the other data that might be needed for deeper analysis or archiving.
 

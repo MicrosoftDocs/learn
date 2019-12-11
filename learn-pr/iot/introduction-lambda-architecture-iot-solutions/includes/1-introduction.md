@@ -1,5 +1,5 @@
 
-Taking a first step into building an Azure IoT app, even a short test app, is going to require you to think about your storage options. If you're new to Azure, the range of resources available can be bewildering. This module introduces the architectural concepts of IoT, and how they relate to cloud storage. The most common storage options are described at a high level. You won't be asked to do any coding, nor build an app using the portal. To complete the module you'll have to read the units, and pass a few knowledge checks along the way!
+Taking a first step into building an Azure IoT app, even a short test app, is going to require you to think about your storage options. If you're new to Azure, the range of resources available can be bewildering. This module introduces the architectural concepts of cloud storage solutions, and how they relate to IoT applications. The most common storage options are described at a high level. You won't be asked to do any coding, nor build an app using the portal. To complete the module you'll have to read the units, and pass a few knowledge checks along the way!
 
 The purpose of this module is to give you enough info on Azure storage for IoT, that you can make an informed decision when you do build your first IoT app.
 
@@ -8,9 +8,9 @@ The purpose of this module is to give you enough info on Azure storage for IoT, 
 In this module you will:
 
 - Learn about the hybrid lambda architecture of IoT
-- Learn when to use blob storage, and data lake storage
+- Learn when to use Azure Blob storage, and when to upgrade to Azure Data Lake storage
 - Learn when to create a Cosmos DB database
-- Learn the basics of Time Series Insights
+- Learn the visualizations of Time Series Insights
 
 ## Prerequisites
 
@@ -28,4 +28,4 @@ There are several distinct purposes of recording telemetry readings:
 - For visualization by a remote human operator, to help in decision making.
 - To be archived, perhaps for later analysis.
 
-These distinct purposes have conflicting storage requirements. This module discusses the storage issues, and gives some introductory advice for newcomers to Azure IoT.
+These distinct purposes have conflicting storage requirements. This module discusses the various Azure storage solutions specifics, and gives some introductory advice for newcomers to Azure IoT.
