@@ -2,8 +2,8 @@
 uid: learn.azure.create-custom-roles-rbac
 metadata:
   title: Create custom roles for Azure resources with role-based access control (RBAC)
-  description: Learn how to create custom roles for Azure resources with role-based access control (RBAC) 
-  ms.date: 09/04/2019
+  description: Learn how to create custom roles for Azure resources with role-based access control (RBAC). 
+  ms.date: 12/20/2019
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial
@@ -17,6 +17,7 @@ abstract:  |
 
 prerequisites: |
   - Basic knowledge of access management concepts in Azure like role-based access control (RBAC) for Azure resources
+  - Access to an Azure subscription where you have the User Access Administrator or Owner role for your account (optional)
 iconUrl: /learn/achievements/create-custom-roles-for-azure-resources-with-rbac.svg
 levels:
 - beginner

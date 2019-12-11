@@ -1,28 +1,23 @@
 Azure makes it easy for you to find out who can do what actions in your subscription.
 
-Suppose your company wants to manage their own custom roles. They need to view custom roles and assignments to keep on top of all the permissions within the company.
-
 In this unit, you'll learn how to list the custom roles and view assignments from those roles.
 
-## Listing custom roles
+## List custom roles
 
-A subscription owner often wants to see all the current custom roles within an organization. This facility allows them to fully understand the current role structure and permissions.
+To list all the custom roles, use the following Azure CLI command:
 
-To list all the current roles, you use the following Azure CLI command:
-
-```Azure CLI
+```azurecli
 az role definition list --custom-role-only true --output json | jq '.[] | {"roleName":.roleName, "roleType":.roleType}'
 ```
 
-> [!TIP]
-> Notice how the command only asks for role name and role type. This makes it easier to view lots of roles rather than each having a verbose entry.
+Notice how the command only asks for role name and role type. This makes it easier to view lots of roles.
 
-## Viewing a specified role
+## View a specified role
 
-If you wish to see the full verbose entry for a specific role, you use the following Azure CLI command:
+To see the full definition for a specific role,  use the following Azure CLI command:
 
-```Azure CLI
-az role definition list --name "Virtual Machine Manager"
+```azurecli
+az role definition list --name "Virtual Machine Operator"
 ```
 
 This command gives an output similar to:
@@ -65,11 +60,11 @@ This command gives an output similar to:
 
 ## Role assignments
 
-To understand the governance of your organization in Azure, it's essential to be able to see who is assigned the roles.
+To understand the governance of your organization in Azure, it's essential that you're able to see how the roles are assigned.
 
-The following allows you to view every role assignment within your organization:
+The following command allows you to view every role assignment within your organization:
 
-```Azure CLI
+```azurecli
 az role assignment list [--all]
                         [--assignee]
                         [--include-classic-administrators {false, true}]
@@ -81,7 +76,7 @@ az role assignment list [--all]
                         [--subscription]
 ```
 
-## Who can edit roles?
+## Who can manage custom roles?
 
 The **AssignableScopes** property is used to determine who can create, delete, update, or view a custom role.
 
