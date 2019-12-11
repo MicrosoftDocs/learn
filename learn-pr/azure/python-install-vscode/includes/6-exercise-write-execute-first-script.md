@@ -6,9 +6,9 @@ Visual Studio Code is a great light-weight general purpose code editor.  Extensi
 
 ### Step 1 - Open the Extensions view
 
-You can browse and install extensions from within Visual Studio Code. Bring up the Extensions view by clicking on the Extensions icon in the Activity Bar on the left side of Visual Studio Code or the keyboard shortcut <kbd>Ctrl+Shift+X</kbd>.
+You can browse and install extensions from within Visual Studio Code. Bring up the Extensions view by clicking on the Extensions icon in the Activity Bar on the left side of Visual Studio Code or the keyboard shortcut <kbd>Control</kbd> + <kbd>Shift</kbd> + <kbd>X</kbd>.
 
-This will show you a list of the most popular VS Code extensions on the VS Code Marketplace.
+This will show you a list of the most popular Visual Studio Code extensions on the Visual Studio Code Marketplace.
 
 ### Step 2 - Search for the Python Extension
 
@@ -80,7 +80,7 @@ Once you select the new `hello` folder, back in the Explorer view, you should se
 To create a new script file in your `hello` folder, either:
 
 - Hover your mouse cursor over the `hello` section of the Explorer view, then select the `New File` icon, or ...
-- Use the keyboard shortcut <kbd>Ctrl+n</kbd>
+- Use the keyboard shortcut <kbd>Control</kbd> + <kbd>N</kbd>
 - Select the `File` menu's `New File (Ctrl + N)` option
 
 In the main area, the new file appears.
@@ -141,7 +141,7 @@ print('Hello World!')
 
 Save the changes to this file by either:
 
-- Using the <kbd>Ctrl+s</kbd> keyboard shortcut
+- Using the <kbd>Control</kbd> + <kbd>s</kbd> keyboard shortcut
 - Using the `File` menu's `Save` option
 
 ![Note]
@@ -155,10 +155,10 @@ Visual Studio Code includes a built-in terminal so you can conveniently switch b
 
 By default, the terminal will open into the folder you opened in Step 4, above.
 
-To open your code file, use the <kbd>Ctrl+\`</kbd> keyboard shortcut, or select the `View` menu's ``Terminal [Ctrl+`] `` option.
+To open your code file, use the <kbd>Ctrl</kbd> + <kbd>\`</kbd> keyboard shortcut, or select the `View` menu's ``Terminal [Ctrl+`] `` option.
 
 ![Note]
-You can use the <kbd>Ctrl+[space]</kbd> keyboard shortcut to toggle between the last code file you worked in and the terminal window.  This is a useful shortcut to memorize and use frequently.
+You can use the <kbd>Control</kbd> + <kbd>Spacebar</kbd> keyboard shortcut to toggle between the last code file you worked in and the terminal window.  This is a useful shortcut to memorize and use frequently.
 
 ### Step 8 - Execute your script
 

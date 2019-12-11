@@ -2,20 +2,20 @@ As you learned in the previous module, before you can begin writing Python code,
 
 - The Python installer, which contains the interpreter that compiles and executes your code, additional code libraries and other useful tools for Python developers.  It's possible you already have it installed.  In a moment, we'll check whether you have it installed.
 
-- A code editor, ideally one with features that can help you write Python code.  In this module, we'll walk through the installation of Visual Studio Code, one of the most popular free code editors.  Furthermore, we'll install the Python extension for Visual Studio Code to add enhanced functionality.
+- A code editor, ideally one with features that can help you write Python code. In this module, we'll walk through the installation of Visual Studio Code, one of the most popular free code editors. Furthermore, we'll install the Python extension for Visual Studio Code to add enhanced functionality.
 
 ### Python 2 versus Python 3
 
-In this module, we make an effort to distinguish between Python versions 2 and 3.  We make this distinction because the creators of Python discourage developers from using Python 2 from now on.  Significant improvements were made in Python version 3 and some of those changes impacted code that was written originally using Python version 2.
+In this module, we make an effort to distinguish between Python versions 2 and 3. We make this distinction because the creators of Python discourage developers from using Python 2 from now on. Significant improvements were made in Python version 3 and some of those changes impacted code that was written originally using Python version 2.
 
 The key idea is that you want to use Python version 3 from now on.
 
 ![Note]
-Why is it important to emphasize the need to use Python version 3?  Computers running macOS and some distributions of Linux have Python 2 pre-installed, so you'll need to take extra steps to install Python 3.
+Why is it important to emphasize the need to use Python version 3? Computers running macOS and some distributions of Linux have Python 2 pre-installed, so you'll need to take extra steps to install Python 3.
 
 ### How do I know if I already have Python 3 installed on my computer?
 
-It's possible you already have Python 3 installed on your computer.  Sometimes this can happen because another application installed Python 3 without your awareness.
+It's possible you already have Python 3 installed on your computer. Sometimes this can happen because another application installed Python 3 without your awareness.
 
 Select the appropriate tab below that represents your operating system.
 
@@ -38,9 +38,9 @@ However, if you see the word `Python` with a set of numbers separated with the `
 ```output
 Python 3.8.0
 ```
-As long as the first of the three numbers is `3`, you're all set.  There's nothing more to do.  You can skip the next unit where we install Python on Windows.
+As long as the first number is `3`, you're all set.  There's nothing more to do.  You can skip the next unit where we install Python on Windows.
 
-If the first of the three numbers is `2`, then you'll need to install Python 3.  We'll walk through installation of Python 3 in the next unit.
+If the first number is `2`, then you'll need to install Python 3.  We'll walk through installation of Python 3 in the next unit.
 
 ::: zone-end
 
@@ -62,7 +62,7 @@ You might see the word `Python` with a set of numbers separated with the `.` cha
 ```output
 Python 3.6.7
 ```
-As long as the first of the three numbers is `3`, you're all set.  There's nothing more to do.
+As long as the first number is `3`, you're all set.  There's nothing more to do.
 
 Python is pre-installed on some Linux distributions (like Ubuntu).  Even if it's not the most up-to-date version, you'll be able to follow along in all of these beginner-focused Python modules on Microsoft Learn.
 
@@ -81,7 +81,7 @@ In this case, you'll need to install Python 3.  We'll walk through the installat
 
 To determine if your macOS computer already has Python 3 installed:
 
-- Open the Terminal app.  To locate and launch it, you can use the `command` + `[space bar]` key combination to search using Spotlight.  In the search bar, type `Terminal`.  This should highlight the Terminal app in the results.  Use the `[return]` key to launch the app.
+- Open the Terminal app.  To locate and launch it, you can use the <kbd>Command</kbd> + <kbd>Spacebar</kbd> key combination to search using Spotlight.  In the search bar, type `Terminal`.  This should highlight the Terminal app in the results.  Use the <kbd>Return</kbd> key to launch the app.
 - Type the following instruction at the command prompt:
 
 ```bash
@@ -93,9 +93,9 @@ You might see the word `Python` with a set of numbers separated with the `.` cha
 ```output
 Python 3.6.7
 ```
-As long as the first of the three numbers is `3`, you're all set.  There's nothing more to do.
+As long as the first number is `3`, you're all set.  There's nothing more to do.
 
-Python 3 is **not** pre-installed on macOS, but it's possible that you or some program you use installed Python 3.  Even if it's not the most up-to-date version, you can still follow along with the beginner-focused Python modules on Microsoft Learn.
+Python 3 is **not** pre-installed on macOS, but it's possible that you or some program you use installed Python 3 previously.  Even if it's not the most up-to-date version, you can still follow along with the beginner-focused Python modules on Microsoft Learn.
 
 However, it's likely that you saw the following output instead.
 

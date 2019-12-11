@@ -107,7 +107,7 @@ sudo apt-get install python3
 
 #### Step 4 - Check your installation.
 
-To confirm that Python 3 is installed correctly, type the following command at the bash prompt and press the `Enter` or `Return` key on your keyboard:
+To confirm that Python 3 is installed correctly, type the following command at the bash prompt and press the `Enter` or <kbd>Return</kbd> key on your keyboard:
 
 ```bash
 python3 --version
@@ -118,7 +118,7 @@ You should see the word `Python` with a set of numbers separated with the `.` ch
 ```output
 Python 3.6.7
 ```
-As long as the first of the three numbers is `3`, then Python 3 was successfully installed on your system.
+As long as the first number is `3`, then Python 3 was successfully installed on your system.
 
 However, if the installation failed, you may see an error message.  Use a search engine and type the exact error message into the search bar to find possible causes and solutions.
 
@@ -133,7 +133,7 @@ Assuming you're running a Linux graphical user interface desktop environment, lo
 
 #### Step 2 - Update the YUM package indexes.
 
-Type the following command at the bash prompt and select the `Enter` or `Return` keys on your keyboard:
+Type the following command at the bash prompt and select the <kbd>Enter</kbd> key on your keyboard:
 
 ```bash
 sudo yum update
@@ -142,7 +142,7 @@ sudo yum update
 
 #### Step 3 - Install Python 3.
 
-Type the following command at the bash prompt and select the `Enter` or `Return` keys on your keyboard:
+Type the following command at the bash prompt and select the <kbd>Enter</kbd> key on your keyboard:
 
 ```bash
 yum install rh-python36
@@ -150,7 +150,7 @@ yum install rh-python36
 
 #### Step 4 - Check your installation.
 
-To confirm that Python 3 is installed correctly, type the following command at the bash prompt and press the `Enter` or `Return` key on your keyboard:
+To confirm that Python 3 is installed correctly, type the following command at the bash prompt and select the <kbd>Enter</kbd> key on your keyboard:
 
 ```bash
 python3 --version
@@ -161,13 +161,13 @@ You should see the word `Python` with a set of numbers separated with the `.` ch
 ```output
 Python 3.6.7
 ```
-As long as the first of the three numbers is `3`, then Python 3 was successfully installed on your system.
+As long as the first number is `3`, then Python 3 was successfully installed on your system.
 
 However, if the installation failed, you may see an error message.  If this happens, continue on to Step 5, below.
 
 #### Step 5 - (Optional) Enable the Software Collections feature in bash
 
-Software Collections allow you to install multiple versions of the same software components on your system.  Therefore, you must specify which 
+Software Collections allow you to install multiple versions of the same software components on your system.  Therefore, you must specify which version of Python you want to run in the shell.  Enter the following command at the bash prompt and select the <kbd>Enter</kbd> key on your keyboard:
 
 ```bash
 scl enable rh-python36 bash
@@ -177,7 +177,7 @@ Now, retry Step 4.  The output should resemble the following output:
 ```output
 Python 3.6.7
 ```
-As long as the first of the three numbers is `3`, the Python 3 was successfully installed on your system, albeit in the context of a Software Collection.
+As long as the first number is `3`, the Python 3 was successfully installed on your system, albeit in the context of a Software Collection.
 
 `scl enable` launches a new bash session setting Python 3.6 as the default Python version.  However, Python 3.6 is only the default Python for the current shell session.  If you exit the session or open a new session from another terminal, then bash will revert to Python 2.7 as the default Python version.
 
@@ -196,6 +196,9 @@ If you needed to use `scl enable` to run `python3 --version`, then you may need 
 ### Install Python on macOS
 
 The steps that follow will download the Python installer directly from the Python website.
+
+![Note]
+At the time of this writing, Python 3.8.0 was the most current version, so that version is referenced specifically in the instructions.  However, you should install the latest version available to you.  In this case, the text of buttons and files might be slightly different from what you see.
 
 ![Note]
 Alternatively, you can use Homebrew to install Python and Visual Studio Code.  For instructions, visit this URL instead:
@@ -223,9 +226,9 @@ If you're prompted to move the Python installer to the Trash, you may do so.
 
 #### Step 3: Check to ensure that Python 3 was installed correctly.
 
-Using Spotlight (`[command]` + `[spacebar]`) type `terminal` and use the `[return]` (or `[enter]`) key to launch Terminal.
+Using Spotlight (<kbd>Command</kbd> + <kbd>Spacebar</kbd>) type `terminal` and select the <kbd>Return</kbd> key on your keyboard to launch Terminal.
 
-At the Terminal prompt, type the following and press the `[return]` (or `[enter]`) key.  
+At the Terminal prompt, type the following and select the <kbd>Return</kbd> key on your keyboard:
 
 ```bash
 python3 --version
@@ -236,7 +239,7 @@ You should see the word `Python` with a set of numbers separated with the `.` ch
 ```output
 Python 3.8.0
 ```
-As long as the first of the three numbers is `3`, then Python 3 was successfully installed on your system.
+As long as the first number is `3`, then Python 3 was successfully installed on your system.
 
 
 ::: zone-end

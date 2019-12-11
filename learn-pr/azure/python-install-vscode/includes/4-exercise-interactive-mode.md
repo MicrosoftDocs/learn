@@ -15,7 +15,7 @@ Interactive Mode allows you to experiment with Python without having to perform 
 
 #### Launch Python's Interactive Mode in Windows
 
-At the command prompt, type the following line of code and press the `enter` key on your keyboard:
+At the command prompt, type the following line of code and select the <kbd>Enter</kbd> key on your keyboard:
 
 ```console
 py -3
@@ -28,54 +28,13 @@ You should now see the following prompt:
 >>>
 ```
 
-::: zone-end
-
-::: zone pivot="linux"
-
-#### Launch Python's Interactive Mode in Linux
-
-At the bash prompt, type the following line of code and press the `enter` key on your keyboard:
-
-```bash
-python3
-```
-
-When used in this way, the `python3` utility will launch Python in Interactive Mode.
-
-You should now see the following prompt:
-
-```output
->>>
-```
-
-::: zone-end
-
-::: zone pivot="macos"
-
-#### Launch Python's Interactive Mode in macOS
-
-At the bash prompt, type the following line of code and press the `enter` key on your keyboard:
-
-```bash
-python3
-```
-When used in this way, the `python3` utility will launch Python in Interactive Mode.
-
-You should now see the following prompt:
-
-```output
->>>
-```
-
-::: zone-end
-
 The three arrows `>>>` are called a *primary prompt*.  We'll discover a *secondary prompt* later.
 
 The primary prompt is where you can write and execute one line of Python at a time.  Let's try it.
 
 ### Step 2 - Write your first line of Python code
 
-After the primary prompt `>>>` type the following Python code, then press the `Enter` or `Return key on your keyboard:
+After the primary prompt `>>>` type the following Python code, then select the <kbd>Enter</kbd> key on your keyboard:
 
 ```python
 print('Hello World!')
@@ -92,12 +51,114 @@ In the next module, we'll examine this line of code to learn about Python's synt
 
 ### Step 3 - Exit interactive mode
 
-We're finished working in Interactive Mode, but we'll use it again throughout this series of modules.  For now, you can exit interactive mode by typing the following command after the primary prompt `>>>` then pressing the `Enter` or `Return` key on your keyboard:
+We're finished working in Interactive Mode, but we'll use it again throughout this series of modules.  For now, you can exit interactive mode by typing the following command after the primary prompt `>>>` then select the <kbd>Enter</kbd> key on your keyboard:
 
 ```python
 exit()
 ```
 You should be returned back to your command or bash prompt.
+
+::: zone-end
+
+::: zone pivot="linux"
+
+#### Launch Python's Interactive Mode in Linux
+
+At the bash prompt, type the following line of code select the <kbd>Enter</kbd> key on your keyboard:
+
+```bash
+python3
+```
+
+When used in this way, the `python3` utility will launch Python in Interactive Mode.
+
+You should now see the following prompt:
+
+```output
+>>>
+```
+
+The three arrows `>>>` are called a *primary prompt*.  We'll discover a *secondary prompt* later.
+
+The primary prompt is where you can write and execute one line of Python at a time.  Let's try it.
+
+### Step 2 - Write your first line of Python code
+
+After the primary prompt `>>>` type the following Python code, then select the <kbd>Enter</kbd> key on your keyboard:
+
+```python
+print('Hello World!')
+```
+You should see the following output displayed on the next line:
+
+```output
+Hello World!
+```
+
+If you got an error message instead of the output, retype the code paying close attention to each character and make sure your code looks exactly like the code, above.  Even one tiny punctuation error can cause significant problems when writing code.
+
+In the next module, we'll examine this line of code to learn about Python's syntax.  We'll learn the job that each individual word and punctuation mark performs in our code.
+
+### Step 3 - Exit interactive mode
+
+We're finished working in Interactive Mode, but we'll use it again throughout this series of modules.  For now, you can exit interactive mode by typing the following command after the primary prompt `>>>` then select the <kbd>Enter</kbd> key on your keyboard:
+
+```python
+exit()
+```
+You should be returned back to your command or bash prompt.
+
+::: zone-end
+
+::: zone pivot="macos"
+
+#### Launch Python's Interactive Mode in macOS
+
+At the bash prompt, type the following line of code and select the <kbd>Return</kbd> key on your keyboard:
+
+```bash
+python3
+```
+When used in this way, the `python3` utility will launch Python in Interactive Mode.
+
+You should now see the following prompt:
+
+```output
+>>>
+```
+The three arrows `>>>` are called a *primary prompt*.  We'll discover a *secondary prompt* later.
+
+The primary prompt is where you can write and execute one line of Python at a time.  Let's try it.
+
+### Step 2 - Write your first line of Python code
+
+After the primary prompt `>>>` type the following Python code, then select the <kbd>Return</kbd> key on your keyboard:
+
+```python
+print('Hello World!')
+```
+You should see the following output displayed on the next line:
+
+```output
+Hello World!
+```
+
+If you got an error message instead of the output, retype the code paying close attention to each character and make sure your code looks exactly like the code, above.  Even one tiny punctuation error can cause significant problems when writing code.
+
+In the next module, we'll examine this line of code to learn about Python's syntax.  We'll learn the job that each individual word and punctuation mark performs in our code.
+
+### Step 3 - Exit interactive mode
+
+We're finished working in Interactive Mode, but we'll use it again throughout this series of modules.  For now, you can exit interactive mode by typing the following command after the primary prompt `>>>` then select the <kbd>Return</kbd> key on your keyboard:
+
+```python
+exit()
+```
+You should be returned back to your command or bash prompt.
+
+
+::: zone-end
+
 
 ## Recap
 
@@ -105,4 +166,4 @@ The important takeaways from this unit:
 
 - Writing code requires precision.  Even one small mistake can cause an error.
 - You can use Interactive Mode to quickly try writing Python.  Each line will be interpreted and executed immediately.
-- To exit Interactive Mode, use `ctrl` + `d`, or enter the `exit()` command.
+- To exit Interactive Mode, use the `exit()` command.
