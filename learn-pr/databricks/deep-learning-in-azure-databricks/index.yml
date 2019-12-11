@@ -1,5 +1,6 @@
 ### YamlMime:Module
 uid: learn.deep-learning-in-azure-databricks
+hidden: true
 metadata:
   title: Deep learning with Azure Databricks
   description: Investigate techniques for developing machine-learning models based on neural networks to build your understanding of deep learning. 
