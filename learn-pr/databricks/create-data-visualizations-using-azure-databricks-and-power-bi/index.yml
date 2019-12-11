@@ -1,5 +1,6 @@
 ### YamlMime:Module
 uid: learn.create-data-visualizations-using-azure-databricks-and-power-bi
+hidden: true
 metadata:
   title: Create data visualizations by using Azure Databricks and Power BI
   description: Learn how to use Azure Databricks to create Matplotlib visualizations connected to Power BI to create shared dashboards.
