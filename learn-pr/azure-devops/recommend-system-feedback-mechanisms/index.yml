@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.azdo.design-system-feedback-mechanisms
+uid: learn.azdo.recommend-system-feedback-mechanisms
 metadata:
   title: Recommend and design system feedback mechanisms - Learn
   description: Learn ...
@@ -29,10 +29,10 @@ roles:
 products:
 - azure-devops
 units:
-- learn.azdo.design-system-feedback-mechanisms.1-introduction
-- learn.azdo.design-system-feedback-mechanisms.2-continuous-experimentation-mindset
-- learn.azdo.design-system-feedback-mechanisms.3-measure-end-user-satisfaction
-- learn.azdo.design-system-feedback-mechanisms.4-capture-analyze-user-feedback
-- learn.azdo.design-system-feedback-mechanisms.5-automate-application-analytics
+- learn.azdo.recommend-system-feedback-mechanisms.1-introduction
+- learn.azdo.recommend-system-feedback-mechanisms.2-continuous-experimentation-mindset
+- learn.azdo.recommend-system-feedback-mechanisms.3-measure-end-user-satisfaction
+- learn.azdo.recommend-system-feedback-mechanisms.4-capture-analyze-user-feedback
+- learn.azdo.recommend-system-feedback-mechanisms.5-automate-application-analytics
 badge:
-  uid: learn.azdo.design-system-feedback-mechanisms.badge
+  uid: learn.azdo.recommend-system-feedback-mechanisms.badge
