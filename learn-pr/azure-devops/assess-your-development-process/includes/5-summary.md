@@ -19,10 +19,10 @@ You've seen how analyzing all your existing artifacts and tools is the first ste
 
 ### Designing an authentication and access strategy
 
-Azure DevOps Services uses enterprise-grade authentication. You can use either a Microsoft account or Azure Active Directory (AAD) to protect and secure your data. Many client applications such as
-Visual Studio or Visual Studio code, natively support authentication by either Microsoft Accounts or AAD. Eclipse can also support this, if you install a Team Explorer Everywhere plugin.
+Azure DevOps Services uses enterprise-grade authentication. You can use either a Microsoft account or Azure Active Directory (Azure AD) to protect and secure your data. Many client applications such as
+Visual Studio or Visual Studio code, natively support authentication by either Microsoft Accounts or Azure AD. Eclipse can also support this, if you install a Team Explorer Everywhere plugin.
 
-When you need a non-Microsoft tool to integrate directly with Azure DevOps Services and the tools don't directly support a Microsoft account or an AAD account for authentication, you can still use them by setting up personal access tokens. These tokens can be set up using Git credential managers or you can create them manually.
+When you need a non-Microsoft tool to integrate directly with Azure DevOps Services and the tools don't directly support a Microsoft account or an Azure AD account for authentication, you can still use them by setting up personal access tokens. These tokens can be set up using Git credential managers or you can create them manually.
 
 Personal access tokens are also useful when you need to establish access in command line tools,
 or in tools and tasks in build pipelines and when calling REST-based APIs, because you don't have a UI popping out to perform the authentication. When access is no longer required you can then just revoke the personal access token.
