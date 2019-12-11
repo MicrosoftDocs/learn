@@ -1,31 +1,8 @@
-The goal of this module is to help you install the software you'll need on your local computer to write Python code.  While there are ways to learn and run Python code solely in your browser, we think you'll gain deeper insights into how Python works by installing the tools locally as a first step.
+As you learned in the previous module, before you can begin writing Python code, you'll need to install a few tools on your local computer.  You'll need:
 
-### What is a programming language?
+- The Python installer, which contains the interpreter that compiles and executes your code, additional code libraries and other useful tools for Python developers.  It's possible you already have it installed.  In a moment, we'll check whether you have it installed.
 
-Programming languages like Python allow you to write instructions that you want the computer to carry out. Each programming language has a different syntax, but after you learn your first programming language and then attempt to learn a second one, you'll quickly realize that they all share many similar ideas. 
-
-A programming language's job is to enable a human to write instructions in a human-readable and understandable way. The instructions you write in a programming language is called "source code", or just "code".
-
-Once you write Python source code, you must use a tool called an interpreter to compile and execute your code on your computer.  Its job is to translate between human-readable code into computer-understandable code.
-
-We'll learn much more about Python syntax and Python tools in the next module in this learning path.  In this module, we'll focus on installing these tools so you can get started.
-
-## Why learn Python?
-
-In the introduction, we noted that Python could be used to build a variety of different applications.  Python is a great general purpose programming language!  However, it excels at some tasks, like:
-
-- **automation and scripting** - Python can be used to tie together several file system, file, data, network, and internet activities into an automated workflow.
-- **web-based applications** - Python can be used to build dynamic database-backed web applications like a Content Management System, eCommerce application or Web API.
-- **data science** - Python can be used to load data from sources, perform analysis on the data, and present the data in meaningful ways.
-
-Another reason to learn Python is because it's widely considered as one of the easiest programming languages to learn.
-
-## How do I get started?
-
-Before you can begin writing Python code, you'll need to install a few tools on your local computer.  You'll need:
-
-- Python 3, which contains the interpreter that compiles and executes your code, additional code libraries and other useful tools for Python developers.  It's possible you already have it installed.  In a moment, we'll check whether you have it installed.
-- A code editor, ideally one with features that can help you write Python code.  In this module, we'll walk through the installation of Visual Studio Code, one of the most popular free code editors.
+- A code editor, ideally one with features that can help you write Python code.  In this module, we'll walk through the installation of Visual Studio Code, one of the most popular free code editors.  Furthermore, we'll install the Python extension for Visual Studio Code to add enhanced functionality.
 
 ### Python 2 versus Python 3
 

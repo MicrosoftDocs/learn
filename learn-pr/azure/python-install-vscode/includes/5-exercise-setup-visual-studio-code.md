@@ -12,11 +12,11 @@ While you can use a text editor, you will likely want to use a tool that is bett
 
 Microsoft also provides the **Python extension for Visual Studio Code, which provides features like syntax highlighting, code navigation and code formatting support, and more.  One feature in particular named Intellisense is invaluable as you're getting started.  It will provide contextual help as you type.  We'll install that in the next unit.
 
-## Install Visual Studio Code
-
-The setup instructions for Visual Studio Code are different for each operating system.  Choose your operating system and follow the instructions below.
-
 ::: zone pivot="windows"
+
+## Install Visual Studio Code on Windows
+
+This module will walk you through downloading the installer from the Visual Studio Code website.
 
 ### Step 1 - Download the installer
 
@@ -84,7 +84,11 @@ Click the Visual Studio Code icon to launch the application.
 
 ::: zone pivot="macos"
 
-### Step 1 - Download the installer using your web browser.
+## Install Visual Studio Code on macOS
+
+This module will walk you through downloading the app from the website and installing Visual Studio Code.
+
+### Step 1 - Download Visual Studio Code using your web browser.
 
 Open a web browser and navigate to:
 
@@ -92,14 +96,19 @@ Open a web browser and navigate to:
 
 The web page displays logos for Windows, Linux, and Mac.
 
-Download the Mac installer.  Most browsers offer the opportunity to save the file to your local computer (usually in your user's `Downloads` folder) or immediately run the installer file.
+Download the Mac version.  Most browsers offer the opportunity to save the file to your local computer (usually in your user's `Downloads` folder) or immediately execute the file.
 
-### Step 2 - Launch the installer
+You should move the file to the Applications folder before launching it, as described in the next step.
 
-If you downloaded the installer, you may need to open your file explorer and navigate to your `Downloads` directory, or wherever your web browser saved the installer file.
+### Step 2 - Move the app from the Downloads folder to the Applications folder.
 
-### Step 3 - Launch Visual Studio Code
+Open Finder.  Drag the Visual Studio Code file from the Downloads stack on the Dock to the Applications folder in Finder.
 
-TBD
+### Step 3 - Launch Visual Studio Code from the Applications folder.
+
+Double-click the Visual Studio Code app from the Applications folder.  
+
+![Important]
+You might see a warning that Visual Studio Code can't be opened because Apple cannot check it for malicious software. If this happens, click "OK" to dismiss that message, then right-click Visual Studio Code in the Applications folder and select the Open menu option from the context menu. This should open Visual Studio Code without any further issues.
 
 ::: zone-end

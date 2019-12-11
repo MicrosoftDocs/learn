@@ -18,11 +18,41 @@ You will see a long list of possible extensions.  Select the extension that is p
 
 Selecting an extension from the list will open the details about that extension in a tab in the main area to the right.
 
+::: zone pivot="windows"
+
 ### Step 3 - Install the Python Extension
 
 In the main area where you see the details about the Python extension, click the green `Install` button.  
 
 When complete, the button's text will change to `Uninstall`.  This lets you know that you've successfully installed the Python extension.
+
+
+::: zone-end
+
+::: zone pivot="linux"
+
+### Step 3 - Install the Python Extension
+
+In the main area where you see the details about the Python extension, click the green `Install` button.  
+
+When complete, the button's text will change to `Uninstall`.  This lets you know that you've successfully installed the Python extension.
+
+
+::: zone-end
+
+::: zone pivot="macos"
+
+### Step 3 - Install the Python Extension
+
+In the main area where you see the details about the Python extension, click the green `Install` button.  
+
+When complete, the button's text will change to `Uninstall`.  This lets you know that you've successfully installed the Python extension.
+
+![Important]
+It's possible that once you install the Python extension, you'll see a dialog appear that will ask you whether you want to install the command line developer tools.  You should click the "Install" button.  You will be required to agree to the Command Line Tools License Agreement.  The download and installation process could take as much as 20 minutes or more, depending on the speed of your internet connection.  Once it is complete, you'll see a dialog stating that the software was installed.  You can click the "Done" button to proceed.
+
+::: zone-end
+
 
 ## Write and execute Python code in a script
 

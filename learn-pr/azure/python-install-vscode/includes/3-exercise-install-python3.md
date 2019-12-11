@@ -195,6 +195,48 @@ If you needed to use `scl enable` to run `python3 --version`, then you may need 
 
 ### Install Python on macOS
 
-TBD
+The steps that follow will download the Python installer directly from the Python website.
+
+![Note]
+Alternatively, you can use Homebrew to install Python and Visual Studio Code.  For instructions, visit this URL instead:
+[https://docs.brew.sh/Homebrew-and-Python](https://docs.brew.sh/Homebrew-and-Python?azure-portal=true)
+
+#### Step 1: Navigate to the Python downloads website and download the installer.
+
+Navigate your web browser to:
+
+[https://www.python.org/downloads/](https://www.python.org/downloads/?azure-portal=true)
+
+The website should automatically direct you to a page specifically for `Mac OS X`.  Click the large button with the text "Download Python 3.8.0".
+
+You may see a popup asking whether you allow downloads on "python.org".  Click the "Allow" button.
+
+After a few moments, a file named `python-3.8.0-mascosx10.9.pkg' should be downloaded to the Downloads stack in your Dock.
+
+#### Step 2: Launch the Python installer and allow a accept options for a standard install.
+
+Double-click the `.pkg` file you just downloaded to launch the installer.  The Python installer will ask to install, verify and accept various options and license agreements.  Please take the time to read through these prompts to understand what the installer will do to your computer.
+
+When the installation process finishes, a Finder window will appear with the contents of the Python folder.  You also should see a "Congratulations!" screen at the successful completion of the installation process, at which point you can choose the "Close" button to exit the installer.
+
+If you're prompted to move the Python installer to the Trash, you may do so.
+
+#### Step 3: Check to ensure that Python 3 was installed correctly.
+
+Using Spotlight (`[command]` + `[spacebar]`) type `terminal` and use the `[return]` (or `[enter]`) key to launch Terminal.
+
+At the Terminal prompt, type the following and press the `[return]` (or `[enter]`) key.  
+
+```bash
+python3 --version
+```
+
+You should see the word `Python` with a set of numbers separated with the `.` character.  Here's an example of the output you might see:
+
+```output
+Python 3.8.0
+```
+As long as the first of the three numbers is `3`, then Python 3 was successfully installed on your system.
+
 
 ::: zone-end
