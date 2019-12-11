@@ -15,8 +15,8 @@ abstract: |
   - Identify the solutions available to provision compute on Azure
   - Choose an appropriate provisioning platform based on your requirements
 prerequisites: | 
- - Basic knowledge of Azure virtual machines.
- - Basic knowledge of PowerShell.
+ - Basic knowledge of Azure virtual machines
+ - Basic knowledge of PowerShell
 iconUrl: /learn/achievements/choose-compute-provisioning.svg
 levels:
 - beginner
