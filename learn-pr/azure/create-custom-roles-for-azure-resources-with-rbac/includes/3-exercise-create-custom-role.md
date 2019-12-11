@@ -18,60 +18,52 @@ Create a custom role within Azure for the new employee.
 
     ```JSON
    {
-   "Name": "Virtual Machine Operator",
-   "Id": "88888888-8888-8888-8888-888888888888",
-   "IsCustom": true,
-   "Description": "Can monitor and restart virtual machines.",
-   "Actions": [
-     "Microsoft.Storage/*/read",
-     "Microsoft.Network/*/read",
-     "Microsoft.Compute/*/read",
-     "Microsoft.Compute/virtualMachines/start/action",
-     "Microsoft.Compute/virtualMachines/restart/action",
-     "Microsoft.Authorization/*/read",
-     "Microsoft.ResourceHealth/availabilityStatuses/read",
-     "Microsoft.Resources/subscriptions/resourceGroups/read",
-     "Microsoft.Insights/alertRules/*",
-     "Microsoft.Support/*"
-   ],
-   "NotActions": [],
-   "DataActions": [],
-   "NotDataActions": [],
-   "AssignableScopes": [
-      "/subscriptions/{subscriptionId1}"
-   ]
+     "Name": "Virtual Machine Operator",
+     "IsCustom": true,
+     "Description": "Can monitor and restart virtual machines.",
+     "Actions": [
+       "Microsoft.Storage/*/read",
+       "Microsoft.Network/*/read",
+       "Microsoft.Compute/*/read",
+       "Microsoft.Compute/virtualMachines/start/action",
+       "Microsoft.Compute/virtualMachines/restart/action",
+       "Microsoft.Authorization/*/read",
+       "Microsoft.ResourceHealth/availabilityStatuses/read",
+       "Microsoft.Resources/subscriptions/resourceGroups/read",
+       "Microsoft.Insights/alertRules/*",
+       "Microsoft.Support/*"
+     ], 
+     "NotActions": [],
+     "DataActions": [],
+     "NotDataActions": [],
+     "AssignableScopes": [
+       "/subscriptions/{subscriptionId1}"
+     ]
    }
     ```
 
 1. In the `AssignableScopes` section, replace **{subscriptionId}** with the value you got from the previous step.
-1. Select **Save** from the three-dot menu on the top right-hand side of the Cloud Shell pane. 
+1. Select **Save** from the three-dot menu on the top right-hand side of the Cloud Shell pane.
 1. Enter **vm-operator-role.json** as the filename.
+1. Select **Close Editor** from the three-dot menu on the top right-hand side of the Cloud Shell pane.
 1. Run the following command in the Cloud Shell to create the custom role:
 
    ```azurecli
    az role definition create --role-definition vm-operator-role.json
    ```
 
-1. Run the following command to list all the custom roles and verify yours is listed.
-
-   ```azurecli
-   az role definition list --custom-role-only true
-   ```
-
 ## Assign role
 
 When the custom role is created, you can assign it to a user or group. To make things simple for our scenario, assign the custom role to yourself.
 
-1. Copy and edit the following command to set the USER parameter. Replace the brackets and "your sign in name" with your Azure sign-in name. The sign-in format looks something like patlong@contoso.com.
+1. Run the following command to assign the custom role where you replace "your display name" with what's likely your first and last name. In the Azure portal, your display name appears on your profile card from the top right-hand side.
 
     ```azurecli
-    USER = <your Azure sign-in name>
+    USER=$(az ad user list --display-name "your display name" --query [0].userPrincipalName --output tsv)
+    echo $USER
+    ```
+1. Run the following command to assign the custom role to yourself.
+
+    ```azurecli
     az role assignment create --assignee $USER --role "Virtual Machine Operator"
     ```
-
-1. Run the command to assign the custom role to yourself.
-1. Run the following command to list the role assignments and verify that you've assigned the new custom role.
-
-   ```azurecli
-   az role assignment list
-   ```

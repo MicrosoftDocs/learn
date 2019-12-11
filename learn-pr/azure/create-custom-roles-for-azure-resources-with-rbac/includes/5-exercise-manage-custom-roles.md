@@ -4,12 +4,12 @@ In this unit, you'll see how to manage your custom roles.
 
 Let's use the Azure portal to see the custom roles in your subscription.
 
-1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account with which you activated the sandbox.
-1. In the search bar, type **Subscription** and select the subscription option.
-1. Select the subscription from the list.
+1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
+1. Search for and select **Subscriptions** from the top of the Azure portal.
+1. Select the subscription that you associated your custom role to.
 1. Select **Access control (IAM)** > **Roles**.
 
-    ![Screenshot that how to get to Access control (IAM) and Roles](../media/5-users.png)
+    ![Screenshot that how to get to Access control (IAM) and Roles](../media/5-subscription-iam-roles.png)
 
 1. Select **Type** > **CustomRole**.
 
@@ -19,7 +19,7 @@ Let's use the Azure portal to see the custom roles in your subscription.
 
 ## Update the custom role
 
-We need update the Virtual Machine Operator role to add permissions to a monitoring operation. We'll update that custom role to include the action _Microsoft.Insights/diagnosticSettings/_.
+We need to update the Virtual Machine Operator role to add permissions for a monitoring operation. We'll update that custom role to include the action _Microsoft.Insights/diagnosticSettings/_.
 
 1. Select **Cloud Shell** from the top right-hand side of the Azure portal.
 1. Type **Code** into the cloud shell.
@@ -28,29 +28,28 @@ We need update the Virtual Machine Operator role to add permissions to a monitor
 
     ```JSON
    {
-   "Name": "Virtual Machine Operator",
-   "Id": "88888888-8888-8888-8888-888888888888",
-   "IsCustom": true,
-   "Description": "Can monitor and restart virtual machines.",
-   "Actions": [
-     "Microsoft.Storage/*/read",
-     "Microsoft.Network/*/read",
-     "Microsoft.Compute/*/read",
-     "Microsoft.Compute/virtualMachines/start/action",
-     "Microsoft.Compute/virtualMachines/restart/action",
-     "Microsoft.Authorization/*/read",
-     "Microsoft.ResourceHealth/availabilityStatuses/read",
-     "Microsoft.Resources/subscriptions/resourceGroups/read",
-     "Microsoft.Insights/alertRules/*",
-     "Microsoft.Insights/diagnosticSettings/*",
-     "Microsoft.Support/*"
-   ],
-   "NotActions": [],
-   "DataActions": [],
-   "NotDataActions": [],
-   "AssignableScopes": [
-      "/subscriptions/{subscriptionId1}"
-   ]
+     "Name": "Virtual Machine Operator",
+     "IsCustom": true,
+     "Description": "Can monitor and restart virtual machines.",
+     "Actions": [
+       "Microsoft.Storage/*/read",
+       "Microsoft.Network/*/read",
+       "Microsoft.Compute/*/read",
+       "Microsoft.Compute/virtualMachines/start/action",
+       "Microsoft.Compute/virtualMachines/restart/action",
+       "Microsoft.Authorization/*/read",
+       "Microsoft.ResourceHealth/availabilityStatuses/read",
+       "Microsoft.Resources/subscriptions/resourceGroups/read",
+       "Microsoft.Insights/alertRules/*",
+       "Microsoft.Insights/diagnosticSettings/*",
+       "Microsoft.Support/*"
+     ],
+    "NotActions": [],
+    "DataActions": [],
+    "NotDataActions": [],
+    "AssignableScopes": [
+       "/subscriptions/{subscriptionId1}"
+     ]
    }
     ```
 1. In the `AssignableScopes` section, replace **{subscriptionId}** with your subscription ID. If you didn't save that value from the previous exercise, run the following command to get it.
@@ -59,6 +58,7 @@ We need update the Virtual Machine Operator role to add permissions to a monitor
    ```
 1. Select **Save** from the three-dot menu on the top right-hand side of the Cloud Shell pane. 
 1. Enter **vm-operator-role-new.json** as the filename.
+1. Select **Close Editor** from the three-dot menu on the top right-hand side of the Cloud Shell pane.
 1. Run the following command to update the Virtual Machine Operator custom role.
 
    ```azurecli
@@ -72,9 +72,15 @@ We need update the Virtual Machine Operator role to add permissions to a monitor
 
 ## Delete the custom role
 
-If you decide you no longer need the custom role, it's easy to delete.
+If you decide you no longer need the custom role, you need to remove the role assignments before you can delete the role.
 
-1. Run the following command to delete the custom role.
+1. Run the following command to remove the role assignments for the custom role.
+
+   ```azurecli
+   az role assignment delete --role "Virtual Machine Operator"
+   ```
+   
+1. Run the following command to delete the custom role definition.
 
    ```azurecli
    az role definition delete --name "Virtual Machine Operator"
