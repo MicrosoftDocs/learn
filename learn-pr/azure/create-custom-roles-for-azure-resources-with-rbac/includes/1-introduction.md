@@ -11,4 +11,5 @@ In this module, you'll:
 
 ## Prerequisites
 
-Basic knowledge of access management concepts in Azure, like role-based access control (RBAC) for Azure resources.
+- Basic knowledge of access management concepts in Azure, like role-based access control (RBAC) for Azure resources.
+- Access to an Azure subscription where you have the User Access Administrator or Owner role for your account (optional)

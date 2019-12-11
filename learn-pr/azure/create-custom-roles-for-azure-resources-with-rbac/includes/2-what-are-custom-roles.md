@@ -19,13 +19,11 @@ Role information accessible through Azure portal, Azure CLI, Azure PowerShell, A
 
 For our scenario, we need a custom role to manage Azure VMs at the subscription scope. So we need to use custom roles in RBAC for Azure resources.
 
-## Assign custom roles
+## Assignment and scope of custom roles
 
-To add or remove custom roles, you must have role permissions such as:
+Users with the roles User Access Administrator or Owner can create or assign custom roles in RBAC for Azure resources.
 
-`Microsoft.Authorization/roleAssignments/write` and `Microsoft.Authorization/roleAssignments/delete`.
-
-These role permissions are given to users with the roles User Access Administrator and Owner. Custom roles can be assigned to:
+Custom roles can be assigned to:
 
 Security principal | Summary
 --- | ---
@@ -81,8 +79,6 @@ The parameter can be one of the following actions:
 ## Define custom role to manage VMs
 
 To help you identify what permissions to include in a role definition, use the Azure Resource Manager resource provider operations list and look at built-in roles that have permissions similar to what you need. 
-
-The operation strings that go in the role definitions have the following format: `{Company}.{ProviderName}/{resourceType}/{action}`.
 
 ### Review built-in roles
 
@@ -189,7 +185,6 @@ Let's assume we've picked out what we need by looking at the related build-in ro
      "Microsoft.ResourceHealth/availabilityStatuses/read",
      "Microsoft.Resources/subscriptions/resourceGroups/read",
      "Microsoft.Insights/alertRules/*",
-     "Microsoft.Insights/diagnosticSettings/*",
      "Microsoft.Support/*"
    ],
    "NotActions": [],

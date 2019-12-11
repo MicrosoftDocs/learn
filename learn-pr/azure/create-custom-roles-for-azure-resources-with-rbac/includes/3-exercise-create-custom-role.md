@@ -1,8 +1,6 @@
-With Role-Based Access Control (RBAC) in Azure, you use JSON to create and assign roles.
+In this unit, you'll create a custom role for Virtual Machine Operator and assign it to yourself in Azure.
 
-Suppose you're ready to create a new role for the employee who manages the company VMs. You want to create the new role based on the Virtual Machine Contributor role and you assume that the machines are all contained in the subscription that you manage.
-
-In this unit, you'll create and assign an RBAC role.
+This exercise is optional. To complete the exercise, you need access to an Azure account that has the User Access Administrator or Owner role that's associated to an Azure subscription.
 
 ## Create role
 
@@ -34,7 +32,6 @@ Create a custom role within Azure for the new employee.
      "Microsoft.ResourceHealth/availabilityStatuses/read",
      "Microsoft.Resources/subscriptions/resourceGroups/read",
      "Microsoft.Insights/alertRules/*",
-     "Microsoft.Insights/diagnosticSettings/*",
      "Microsoft.Support/*"
    ],
    "NotActions": [],
@@ -63,16 +60,17 @@ Create a custom role within Azure for the new employee.
 
 ## Assign role
 
-When the custom role is created, you can assign it to a user or group. For our scenario, assign the custom role to the new employee.
+When the custom role is created, you can assign it to a user or group. To make things simple for our scenario, assign the custom role to yourself.
 
-1. Run the following command to assign the custom role to the user.
+1. Copy and edit the following command to set the USER parameter. Replace the brackets and "your sign in name" with your Azure sign-in name. The sign-in format looks something like patlong@contoso.com.
 
-   ```azurecli
-   USER = az ad user list --output json | jq '.[0] | .userPrincipalName' 
-   az role assignment create --assignee $USER --role "Virtual Machine Support"
-   ```
+    ```azurecli
+    USER = <your Azure sign-in name>
+    az role assignment create --assignee $USER --role "Virtual Machine Operator"
+    ```
 
-1. Run the following command to list the role assignments and verify the you've assigned the new custom role.
+1. Run the command to assign the custom role to yourself.
+1. Run the following command to list the role assignments and verify that you've assigned the new custom role.
 
    ```azurecli
    az role assignment list
