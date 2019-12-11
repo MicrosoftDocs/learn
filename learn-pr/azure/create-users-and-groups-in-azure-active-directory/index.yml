@@ -12,9 +12,9 @@ title: Create Azure users and groups in Azure Active Directory
 summary: Create users in Azure Active Directory. Understand different types of groups. Create a group and add members. Manage business-to-business guest accounts.
 abstract: | 
   In this module, you will:
-  - Add users to Azure Active Directory
-  - Manage app and resource access using Azure Active Directory groups
-  - Give guest users access in Azure Active Directory B2B
+  - Add users to Azure Active Directory.
+  - Manage app and resource access by using Azure Active Directory groups.
+  - Give guest users access in Azure Active Directory business to business (B2B).
 prerequisites: | 
   - None
 iconUrl: /learn/achievements/create-users-and-groups-in-azure-active-directory.svg

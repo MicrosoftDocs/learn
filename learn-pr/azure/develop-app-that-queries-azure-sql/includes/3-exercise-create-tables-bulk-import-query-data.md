@@ -127,7 +127,16 @@ Let's create the database and server to store the data for the app.
     | Password | Enter a password that meets the requirements. |
     | Confirm password | Confirm your password. |
     | Location | Central US |
-    | Allow Azure services to access server | Checked |
+
+1. Select **Next : Networking >**.
+
+1. On the **Networking** pane, configure the following values:
+
+    | Property  | Value  |
+    |---|---|
+    | Connectivity method | Public endpoint |
+    | Allow Azure services and resources to access this server | Yes |
+    | Add current client IP address | Yes |
 
 1. Select **Review + create**.
 

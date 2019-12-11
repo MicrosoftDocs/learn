@@ -39,11 +39,11 @@ A _canary release_ is a way to identify potential problems as soon as possible w
 
 ![Diagram of load balancer sending some traffic to a canary version](../media/2-canary-deployment.png)
 
-We would monitor what happens when we release the the feature. If the canary release has problems, we can apply a fix. After the canary release is known to be stable, we can move it to the actual production environment.
+We would monitor what happens when we release the feature. If the canary release has problems, we can apply a fix. After the canary release is known to be stable, we can move it to the actual production environment.
 
 ## Feature toggles
 
-_Feature toggles_ let us "flip a switch” at runtime. We can deploy new software without exposing any other new or changed functionality to our users. Mara and I would build new features behind a toggle. When a release occurs, the feature is “off” so it's not impacting the production software. Depending on how we configure the toggle, we can flip the switch to "on" and expose it how we want.
+_Feature toggles_ let us "flip a switch" at runtime. We can deploy new software without exposing any other new or changed functionality to our users. Mara and I would build new features behind a toggle. When a release occurs, the feature is "off" so it's not impacting the production software. Depending on how we configure the toggle, we can flip the switch to "on" and expose it how we want.
 
 ![Diagram of coded if statement for on or off feature](../media/2-feature-toggles.png)
 
