@@ -66,7 +66,7 @@ Under the Linux logo, choose either the `.deb` installer (for `.deb` based packa
 
 If you downloaded the installer, you may need to open your file explorer and navigate to your `Downloads` directory, or wherever your web browser saved the installer file.
 
-Double-click the installer file to begin the installation process.  On Ubuntu and Fedora, this opens the Software application, providing a convenient way to view details about the application you're about to install.  In this case, click the `Install` button.
+Double-click the installer file to begin the installation process.  On Ubuntu and Fedora, double-clicking the installer opens the "Software" application, providing a convenient way to view details about the application you're about to install.  In this case, click the `Install` button.
 
 You may be asked to authenticate using your account password.
 
@@ -109,6 +109,6 @@ Open Finder.  Drag the Visual Studio Code file from the Downloads stack on the D
 Double-click the Visual Studio Code app from the Applications folder.  
 
 ![Important]
-You might see a warning that Visual Studio Code can't be opened because Apple cannot check it for malicious software. If this happens, click "OK" to dismiss that message, then right-click Visual Studio Code in the Applications folder and select the Open menu option from the context menu. This should open Visual Studio Code without any further issues.
+You might see a warning that Visual Studio Code can't be opened because Apple cannot check it for malicious software. If this happens, click "OK" to dismiss that message, then right-click Visual Studio Code in the Applications folder and select the Open menu option from the context menu. Using the "Open" contextual menu option should open Visual Studio Code without any further issues.
 
 ::: zone-end

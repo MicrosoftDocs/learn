@@ -1,7 +1,4 @@
-
-
-
-In this module, you will build a Python development environment that will allow you to learn and build many types of applications.  You'll learn what Python is, popular uses, and the overall process of writing and executing your code.  You'll learn the roles of the various tools in your development environment and how they help you achieve your desired result.
+In this module, you will build a Python development environment that will allow you to learn and build many types of applications.  You'll learn how to execute Python code in interactive mode, and use Visual Studio Code to create a Python code file, write Python code in the file, then execute that file.
 
 By the end of this module, you'll have installed the tools on your computer to move forward towards your goal of building real applications with Python.
 

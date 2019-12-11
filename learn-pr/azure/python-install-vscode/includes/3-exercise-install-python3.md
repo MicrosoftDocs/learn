@@ -1,6 +1,6 @@
 In the previous unit, you ran a command to determine whether you had Python 3 installed.  If you need to install Python 3, choose your operating system, below, then follow the instructions.
 
-If you determined that you already have Python 3 installed, please scroll to the bottom of this page and click the `Continue` button.
+If you determined that you already have Python 3 installed, scroll to the bottom of this page and click the `Continue` button.
 
 ::: zone pivot="windows"
 
@@ -129,7 +129,7 @@ The YUM package manager is used primarily by Red Hat based systems, like Red Hat
 
 #### Step 1 - Open a Terminal window.
 
-Assuming you're running a Linux graphical user interface desktop environment, locate and launch a terminal window using the Terminal icon.
+Assuming you're running a Linux graphical user interface desktop environment, locate, and launch a terminal window using the Terminal icon.
 
 #### Step 2 - Update the YUM package indexes.
 
@@ -138,7 +138,7 @@ Type the following command at the bash prompt and select the `Enter` or `Return`
 ```bash
 sudo yum update
 ```
-`yum update` will make sure all packages and their dependencies are up to date.  This is a good practice before installing new software.
+`yum update` will make sure all packages and their dependencies are up to date.  Updating the package list is a good practice before installing new software.
 
 #### Step 3 - Install Python 3.
 
@@ -179,14 +179,14 @@ Python 3.6.7
 ```
 As long as the first of the three numbers is `3`, the Python 3 was successfully installed on your system, albeit in the context of a Software Collection.
 
-`scl enable` launches a new bash session setting Python 3.6 as the default Python version.  However, Python 3.6 is only the default Python for this shell session.  If you exit the session or open a new session from another terminal, then bash will revert to Python 2.7 as the default Python version.
+`scl enable` launches a new bash session setting Python 3.6 as the default Python version.  However, Python 3.6 is only the default Python for the current shell session.  If you exit the session or open a new session from another terminal, then bash will revert to Python 2.7 as the default Python version.
 
 For more information about working with Software Collections, view the following hyperlink:
 
 [https://access.redhat.com/documentation/en-us/red_hat_software_collections/2/html/2.4_release_notes/chap-rhscl](https://access.redhat.com/documentation/en-us/red_hat_software_collections/2/html/2.4_release_notes/chap-rhscl?azure-portal=true).
 
 ![Important]
-If you needed to use `scl enable` to run `python3 --version`, then you may need to enter this command each time you want to work in Python.  There are workarounds to this, but this is the intended functionality of Software Collections.  See the following article for a possible work-around: [https://access.redhat.com/solutions/527703](https://access.redhat.com/solutions/527703?azure-portal=true).
+If you needed to use `scl enable` to run `python3 --version`, then you may need to enter this command each time you want to work in Python.  There are workarounds, but this is the intended functionality of Software Collections.  See the following article for a possible work-around: [https://access.redhat.com/solutions/527703](https://access.redhat.com/solutions/527703?azure-portal=true).
 
 ::: zone-end
 
@@ -215,7 +215,7 @@ After a few moments, a file named `python-3.8.0-mascosx10.9.pkg' should be downl
 
 #### Step 2: Launch the Python installer and allow a accept options for a standard install.
 
-Double-click the `.pkg` file you just downloaded to launch the installer.  The Python installer will ask to install, verify and accept various options and license agreements.  Please take the time to read through these prompts to understand what the installer will do to your computer.
+Double-click the `.pkg` file you just downloaded to launch the installer.  The Python installer will ask to install, verify and accept various options and license agreements.  Take the time to read through these prompts to understand what the installer will do to your computer.
 
 When the installation process finishes, a Finder window will appear with the contents of the Python folder.  You also should see a "Congratulations!" screen at the successful completion of the installation process, at which point you can choose the "Close" button to exit the installer.
 

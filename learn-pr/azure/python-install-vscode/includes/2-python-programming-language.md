@@ -6,7 +6,7 @@ As you learned in the previous module, before you can begin writing Python code,
 
 ### Python 2 versus Python 3
 
-In this module, we make an effort to distinguish between Python versions 2 and 3.  This is because the creators of Python discourage developers from using Python 2 from now on.  Significant improvements were made in Python version 3 and some of those changes impacted code that was written originally using Python version 2.
+In this module, we make an effort to distinguish between Python versions 2 and 3.  We make this distinction because the creators of Python discourage developers from using Python 2 from now on.  Significant improvements were made in Python version 3 and some of those changes impacted code that was written originally using Python version 2.
 
 The key idea is that you want to use Python version 3 from now on.
 
@@ -95,7 +95,7 @@ Python 3.6.7
 ```
 As long as the first of the three numbers is `3`, you're all set.  There's nothing more to do.
 
-Python 3 is **not** pre-installed on macOS, but it's possible that you or some program you use installed Python 3.  Even if it's not the most up-to-date version, you'll be able to follow along in all of these beginner-focused Python modules on Microsoft Learn.
+Python 3 is **not** pre-installed on macOS, but it's possible that you or some program you use installed Python 3.  Even if it's not the most up-to-date version, you can still follow along with the beginner-focused Python modules on Microsoft Learn.
 
 However, it's likely that you saw the following output instead.
 
@@ -109,4 +109,4 @@ We'll walk through installation of Python 3 on macOS in the next unit.
 
 ## Recap
 
-The main takeaway from this unit is that Python version 2 should no longer be used and you should write new code using Python version 3 from now on.  You should always use Python's `--version` flag to be sure you know which version of Python you're currently working with.
+The main takeaway from this unit is that Python version 2 should no longer be used and you should write new code using Python version 3 from now on.  Use Python's `--version` flag to be sure you know which version of Python you're currently working with.

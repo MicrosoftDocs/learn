@@ -6,7 +6,7 @@ Visual Studio Code is a great light-weight general purpose code editor.  Extensi
 
 ### Step 1 - Open the Extensions view
 
-You can browse and install extensions from within Visual Studio Code. Bring up the Extensions view by clicking on the Extensions icon in the Activity Bar on the left side of Visual Studio Code or the keyboard shortcut `ctrl` + `shift` + `X`.
+You can browse and install extensions from within Visual Studio Code. Bring up the Extensions view by clicking on the Extensions icon in the Activity Bar on the left side of Visual Studio Code or the keyboard shortcut <kbd>Ctrl+Shift+X</kbd>.
 
 This will show you a list of the most popular VS Code extensions on the VS Code Marketplace.
 
@@ -60,7 +60,7 @@ With the Python extension for Visual Studio Code installed, let's write our firs
 
 ### Step 4 - Open Visual Studio Code's Explorer and open a new folder
 
-Bring up the Explorer view by clicking on the Explorer icon in the Activity Bar on the left side of Visual Studio Code or the keyboard shortcut `ctrl` + `shift` + `E`.
+Bring up the Explorer view by clicking on the Explorer icon in the Activity Bar on the left side of Visual Studio Code or the keyboard shortcut <kbd>Ctrl+Shift+E</kbd>.
 
 The Explorer displays two sections: 
 
@@ -80,7 +80,7 @@ Once you select the new `hello` folder, back in the Explorer view, you should se
 To create a new script file in your `hello` folder, either:
 
 - Hover your mouse cursor over the `hello` section of the Explorer view, then select the `New File` icon, or ...
-- Use the keyboard shortcut `ctrl` + `n`
+- Use the keyboard shortcut <kbd>Ctrl+n</kbd>
 - Select the `File` menu's `New File (Ctrl + N)` option
 
 In the main area, the new file appears.
@@ -141,7 +141,7 @@ print('Hello World!')
 
 Save the changes to this file by either:
 
-- Using the `ctrl` + `s` keyboard shortcut
+- Using the <kbd>Ctrl+s</kbd> keyboard shortcut
 - Using the `File` menu's `Save` option
 
 ![Note]
@@ -155,10 +155,10 @@ Visual Studio Code includes a built-in terminal so you can conveniently switch b
 
 By default, the terminal will open into the folder you opened in Step 4, above.
 
-To open your code file, use the `ctrl` + ``` `` keyboard shortcut, or select the `View` menu's ``Terminal [Ctrl+`] `` option.
+To open your code file, use the <kbd>Ctrl+\`</kbd> keyboard shortcut, or select the `View` menu's ``Terminal [Ctrl+`] `` option.
 
 ![Note]
-You can use the `ctrl` + ``` `` keyboard shortcut to toggle between the last code file you worked in and the terminal window.  This is a useful shortcut to memorize and use frequently.
+You can use the <kbd>Ctrl+[space]</kbd> keyboard shortcut to toggle between the last code file you worked in and the terminal window.  This is a useful shortcut to memorize and use frequently.
 
 ### Step 8 - Execute your script
 
@@ -168,7 +168,7 @@ To execute your script, you'll use a different command depending on your operati
 
 #### Execute a Python script in Windows
 
-Type the following command at the DOS prompt followed by the `Enter` key on your keyboard:
+Type the following command at the DOS prompt followed by the <kbd>Enter</kbd> key on your keyboard:
 
 ```console
 py hello.py
