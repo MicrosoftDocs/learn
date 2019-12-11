@@ -2,7 +2,7 @@ Copied from ILT
 
 ## Design a process to capture and analyze user feedback
 
-“People are talking about you and your competitors constantly. They could be asking for help, complaining about a bug, or raving about how much they love you. And you want to stay on top of all those conversations. Your customers' opinions matter, not just to PR & marketing, but to every team – from customer support to product development to sales. But sifting through irrelevant posts on multiple channels is overwhelming and can be a huge time drain. Sometimes it's not even possible when they don't tag or link to you. That’s where scanning tools comes in. Scanning tools make it easy for you to find people talking about you, but not necessarily to you (when they don't @mention your account) - and reach out or take notes when necessary. There are so many business opportunities to uncover if you know where to look.”
+"People are talking about you and your competitors constantly. They could be asking for help, complaining about a bug, or raving about how much they love you. And you want to stay on top of all those conversations. Your customers' opinions matter, not just to PR & marketing, but to every team – from customer support to product development to sales. But sifting through irrelevant posts on multiple channels is overwhelming and can be a huge time drain. Sometimes it's not even possible when they don't tag or link to you. That’s where scanning tools comes in. Scanning tools make it easy for you to find people talking about you, but not necessarily to you (when they don't @mention your account) - and reach out or take notes when necessary. There are so many business opportunities to uncover if you know where to look."
 
 Although there isn’t a specific survey question you can ask … it’s important to get a general pulse on what your customers are saying over time about your company. Here’s the pros and cons:
 
@@ -17,13 +17,13 @@ So, if you’re just collecting feedback ‘as and when’ it comes in, you’re
 
 Here’s the kind of end result you can get with this
 
-![A something here](../media/4-feedback-results.png)
+![A something here](../media/5-feedback-results.png)
 
 The outcome of AI analysis on Slack reviews. The categories on the left refer to different parts of Slack’s product, and the bars represent how positively or negatively customers feel about each.
 
-![A something here](../media/4-sentiment.png)
+![A something here](../media/5-sentiment.png)
 
-As the saying goes, “For every customer who bothers to complain, 20 other customers remain silent.”
+As the saying goes, "For every customer who bothers to complain, 20 other customers remain silent."
 
 Unless the experience is really bad, customers usually don’t bother to share feedback about an experience that didn’t meet their expectations. Instead, they decide never to do business with the service provider again. That’s a high price to pay for lost feedback.
 
@@ -31,11 +31,11 @@ An excellent source of feedback is on other websites, such as online communities
 
 ## Release Gates
 
-Any responsible DevOps practice uses techniques to limit the damage done by bugs that get deployed into production. One of the common techniques is to break up a production environment into a set of separate instances of an app and then configure deployments to only update one instance at a time, with a waiting period between them. During that waiting period, you watch for any signs (telemetry, customer complaints, etc.) that there is a problem and if so, halt the deployment, fix the issue and then continue the deployment. This way, any bug you deploy only affects a small fraction of your user base. In fact, often, the first product environment in the sequence is often one only available to internal people in your organization so you can validate the changes before they hit “real” customers. None-the-less, sometimes issues make it through.
+Any responsible DevOps practice uses techniques to limit the damage done by bugs that get deployed into production. One of the common techniques is to break up a production environment into a set of separate instances of an app and then configure deployments to only update one instance at a time, with a waiting period between them. During that waiting period, you watch for any signs (telemetry, customer complaints, etc.) that there is a problem and if so, halt the deployment, fix the issue and then continue the deployment. This way, any bug you deploy only affects a small fraction of your user base. In fact, often, the first product environment in the sequence is often one only available to internal people in your organization so you can validate the changes before they hit "real" customers. None-the-less, sometimes issues make it through.
 
-Release gates automate the waiting period between environments in release pipelines. They enable you to configure conditions that will cause the release wait. Out of the box, a few conditions are supported namely Azure monitoring alerts and Work item queries. Using the first, you can have your release hold if your monitoring alerts are indicating that the environments you’ve already deployed to are unhealthy. And the second allows you to automatically pause releases if anyone files a “blocking bug” against the release.
+Release gates automate the waiting period between environments in release pipelines. They enable you to configure conditions that will cause the release wait. Out of the box, a few conditions are supported namely Azure monitoring alerts and Work item queries. Using the first, you can have your release hold if your monitoring alerts are indicating that the environments you’ve already deployed to are unhealthy. And the second allows you to automatically pause releases if anyone files a "blocking bug" against the release.
 
-However, one of the things you'll quickly learn is that no amount of monitoring will catch every single problem and, particularly, if you have a popular application, your users will know within seconds and turn very quickly to Twitter to start asking about the problem. Twitter can be a wonderful “alert” to let you know something is wrong with your app.
+However, one of the things you'll quickly learn is that no amount of monitoring will catch every single problem and, particularly, if you have a popular application, your users will know within seconds and turn very quickly to Twitter to start asking about the problem. Twitter can be a wonderful "alert" to let you know something is wrong with your app.
 
 The Twitter sentiment release gate that can be downloaded from the Visual Studio Marketplace enables exactly this. It leverages Azure DevOps, Azure functions and Microsoft AI to analyze sentiment on your Twitter handle and gate your release progress based on it. The current implementation of the analysis is relatively simple and serves as a sample as much as anything else. It shows how easy it is to extend Azure DevOps release gates to measure any signal you choose and use that signal to manage your release process.
 

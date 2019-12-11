@@ -1,14 +1,14 @@
-It's not clear who coined the term “inner loop” in the context of software engineering, but within Microsoft at least the term seems to have stuck. Many of the internal teams that I work with see it as something that they want to keep as short as possible - but what is the inner loop?
+It's not clear who coined the term "inner loop" in the context of software engineering, but within Microsoft at least the term seems to have stuck. Many of the internal teams that I work with see it as something that they want to keep as short as possible - but what is the inner loop?
 
 Definitions
 
 The easiest way to define the inner loop is the iterative process that a developer performs when they write, build, and debug code. There are other things that a developer does, but this is the tight set of steps that are performed over and over before they share their work with their team or the rest of the world.
 
-![A drawing of the design build test loop](../media/1-inner-loop.png)
+![A drawing of the design build test loop](../media/2-inner-loop.png)
 
 Exactly what goes into an individual developer's inner loop will depend a great deal on the technologies that they are working with, the tools being used and of course their own preferences. If I was working on a library my inner loop would include coding, build, test execution & debugging with regular commits to my local Git repository. On the other hand if I was doing some web front-end work I would probably be optimized around hacking on HTML & JavaScript, bundling and refreshing the browser (followed by regular commits).
 
-![A drawing of the design build test loop](../media/1-inner-loop-2.png)
+![A drawing of the design build test loop](../media/2-inner-loop-2.png)
 
 In reality most codebases are comprised of multiple moving parts and so the definition of a developer's inner loop on any single codebase might alternate depending on what is being worked on.
 
@@ -24,7 +24,7 @@ Of all the steps in the inner loop, coding is the only one that adds customer va
 
 Putting committing code in the tax bucket is perhaps a bit harsh, but the purpose of the bucket is to call out those activities that neither add value, or provide feedback. Tax is necessary work, if its unnecessary work then it is waste and should be eliminated.
 
-![A drawing of the design build test loop](../media/1-inner-loop-3.png)
+![A drawing of the design build test loop](../media/2-inner-loop-3.png)
 
 ### Loop Optimization
 
@@ -53,7 +53,7 @@ To do this you would pull that code into a separate repository (optional, but th
 
 When someone needs to change this framework code they clone down the repository, make their changes (a separate inner loop) and submit a PR which is the transition of the workflow from the inner loop to the outer loop. The framework package would then be available to be pulled into dependent applications (in this case the monolith).
 
-![A drawing of the design build test loop](../media/1-inner-loop-4.png)
+![A drawing of the design build test loop](../media/2-inner-loop-4.png)
 
 Initially things might work out well, however at some point in the future it is likely that you'll want to develop a new feature in the application that requires extensive new capabilities to be added to the framework. This is where teams that have broken their codebases up in sub-optimal ways will start to feel pain.
 
@@ -61,7 +61,7 @@ If you are having to co-evolve code in two separate repositories where a binary/
 
 Outer loops include a lot of tax such as code reviews, scanning passes, binary signing, release pipelines and approvals. You don't want to pay that every time you've added a method to an class in the framework and now want to use it in your application.
 
-![A drawing of the design build test loop](../media/1-inner-loop-5.png)
+![A drawing of the design build test loop](../media/2-inner-loop-5.png)
 
 What generally ends up happening next is a series of local hacks by the developer to try and stitch the inner loops together so that they can move forward efficiently - but it gets pretty messy quick and you have to pay that outer loop tax at some point.
 

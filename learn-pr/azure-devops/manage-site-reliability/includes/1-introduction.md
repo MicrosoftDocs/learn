@@ -8,7 +8,7 @@ What is site reliability engineering?
 
 Site reliability engineering (SRE) empowers software developers to own the ongoing daily operation of their applications in production. The goal is to bridge the gap between the development team that wants to ship things as fast as possible and the operations team that doesn’t want anything to blow up in production. In many organizations, you could argue that site reliability engineering eliminates much of the IT operations workload related to application monitoring. It shifts the responsibility to be part of the development team itself.
 
-“Fundamentally, it’s what happens when you ask a software engineer to design an operations function.” – Niall Murphy, Google
+"Fundamentally, it’s what happens when you ask a software engineer to design an operations function." – Niall Murphy, Google
 
 Site reliability engineers typically spend up to 50% of their time dealing with the daily care and feeding of software applications. They spend the rest of their time writing code like any other software developer would.
 

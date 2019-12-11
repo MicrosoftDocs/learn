@@ -2,7 +2,7 @@ Copied form ILT
 
 ## design practices to measure end-user satisfaction
 
-“Measurement is the first step that leads to control and eventually to improvement. If you can’t measure something, you can’t understand it. If you can’t understand it, you can’t control it. If you can’t control it, you can’t improve it.” ― H. James Harrington
+"Measurement is the first step that leads to control and eventually to improvement. If you can’t measure something, you can’t understand it. If you can’t understand it, you can’t control it. If you can’t control it, you can’t improve it." ― H. James Harrington
 
 ’User experience’ encompasses all aspects of the end-user’s interaction with the company, its services, and its products. UI (user interface) is not UX (user experience). A car with all its looks, dashboard and steering wheel is the UI. Driving it is the UX. So the interface directly contributes to the experience (beautiful car interior makes a better experience sitting in one), but is not the experience itself.
 
@@ -10,7 +10,7 @@ The only real measure of software quality that’s worth its salt is end-user sa
 
 Of course, there are multiple ways you can execute said survey, from the survey design to timing, sample, and even how you analyze the data. Let's briefly cover the five steps to easily measuring customer satisfaction.
 
-1. Outline your goals, and make a plan When embarking on any sort of campaign, it's helpful to take a step back and ask, “Why are we doing this?” In business, one must weigh the value of additional information (i.e. the customer satisfaction data) in relation to the cost of collecting it (i.e. the survey process). To be honest, if you won't change anything after collecting your customer satisfaction data, you're better off not collecting it. It's going to take time and effort, so you need to put it to use.
+1. Outline your goals, and make a plan When embarking on any sort of campaign, it's helpful to take a step back and ask, "Why are we doing this?" In business, one must weigh the value of additional information (i.e. the customer satisfaction data) in relation to the cost of collecting it (i.e. the survey process). To be honest, if you won't change anything after collecting your customer satisfaction data, you're better off not collecting it. It's going to take time and effort, so you need to put it to use.
 
 Depending on your business or organizational capabilities, there is a lot you can do with the information. One use is simply to wake you up to the reality of any business: A portion of your customers is going to have an unsatisfactory experience. Every business faces this problem.
 
@@ -20,31 +20,31 @@ Improve key UX bottlenecks that contribute to poor customer experience.
 Expedite customer support interactions with the most frustrated customers.
 Operationalize proactive support like a knowledge base and customer education.
 Test different live chat scripts and support strategies.
-The specific solution isn't necessarily the important part here. The important part is stepping back and saying, “If we see that a segment of our customers is unsatisfied, what will we do about it?”
+The specific solution isn't necessarily the important part here. The important part is stepping back and saying, "If we see that a segment of our customers is unsatisfied, what will we do about it?"
 
 2. Create a customer satisfaction survey. What types of metrics measure customer satisfaction? You can choose among a few different options for customer satisfaction surveys. There's no unanimous agreement on which one is best. A few popular methods are:
 
 Customer Satisfaction Score (CSAT)
 Customer Effort Score (CES)
 Net Promoter Score® (NPS)
-These are all “one-question” methods that vastly simplify the process of collecting customer insights.
+These are all "one-question" methods that vastly simplify the process of collecting customer insights.
 
 While you may not think the survey methodology matters much, how you ask the question does seem to measure slightly different things.
 
-For instance, a 2010 study found twenty percent of “satisfied” customers said they intended to leave the company in question; 28% of the "dissatisfied" customers intended to stay. So “satisfied” doesn't necessarily equate to "loyal."
+For instance, a 2010 study found twenty percent of "satisfied" customers said they intended to leave the company in question; 28% of the "dissatisfied" customers intended to stay. So "satisfied" doesn't necessarily equate to "loyal."
 
-Customer Satisfaction Score (CSAT) is the most commonly used satisfaction method. You just ask your customers to rate their satisfaction on a linear scale. Your survey scale can be 1 – 3, 1 – 5, or 1 – 10, and there is no universal agreement on which scale is best to use. CSAT is a metric used to immediately evaluate a customer's specific experience. “CSAT is a transactional metric that is based on what's happening now to a user's satisfaction with a product or service.”
+Customer Satisfaction Score (CSAT) is the most commonly used satisfaction method. You just ask your customers to rate their satisfaction on a linear scale. Your survey scale can be 1 – 3, 1 – 5, or 1 – 10, and there is no universal agreement on which scale is best to use. CSAT is a metric used to immediately evaluate a customer's specific experience. "CSAT is a transactional metric that is based on what's happening now to a user's satisfaction with a product or service."
 Customer Effort Score (CES) is very similar, but instead of asking how satisfied the customer was, you ask them to gauge the ease of their experience. You're still measuring satisfaction, but in this way, you're gauging effort (the assumption being that the easier it is to complete a task, the better the experience). As it turns out, making an experience a low-effort one is one of the greatest ways to reduce frustration and disloyalty.
-Net Promoter Score (NPS) asks the question, “How likely is it that you would recommend this company to a friend or colleague?” This attempts to measure customer satisfaction but also customer loyalty. In doing so, you can come up with an aggregate score, but you can also easily segment your responses into three categories: detractors, passives, and promoters. You calculate your Net Promoter Score by subtracting the percentage of Detractors from the percentage of Promoters.
+Net Promoter Score (NPS) asks the question, "How likely is it that you would recommend this company to a friend or colleague?" This attempts to measure customer satisfaction but also customer loyalty. In doing so, you can come up with an aggregate score, but you can also easily segment your responses into three categories: detractors, passives, and promoters. You calculate your Net Promoter Score by subtracting the percentage of Detractors from the percentage of Promoters.
 You can, of course, use more than one methodology, as well (since they all measure something very slightly different). You can optionally combine multiple scores for a greater picture:
 
 For example, a customer that has had 3 continuous negative CSAT scores over a period and is also a detractor on NPS would be an immediate at-risk customer, while a customer with positive CSAT and a promoter on NPS are potentially the best source of advocates & candidates to cross-sell/upsell since they already have seen the value in their interactions with the process & product.
 
-In addition, I recommend always appending a qualitative open-ended question, regardless of the customer satisfaction survey you use. Without an open-ended question, you risk limiting your insight into “why” the dissatisfaction may be occurring. Qualitative user feedback can give you tons of ideas when it comes to implementing solutions.
+In addition, I recommend always appending a qualitative open-ended question, regardless of the customer satisfaction survey you use. Without an open-ended question, you risk limiting your insight into "why" the dissatisfaction may be occurring. Qualitative user feedback can give you tons of ideas when it comes to implementing solutions.
 
 3. Choose your survey's trigger and timing. This step is all about to whom you send the survey and when you send it. If you go back to your goals outline, this shouldn't be too hard to determine, at least strategically. People tend to forget this step, though, but it's of crucial importance and affects the quality and utility of your data. Tactically, you can trigger a survey pretty much anywhere at any time and to anyone nowadays, but strategically, it matters specifically when and where.
 
-"Although there is no “one size fits all” approach to customer satisfaction surveys, there are 3 factors that every company should consider before surveying: What event or action took place before you asked for feedback (these can be time or action based events like completing your onboarding campaign), the time since your last survey to the customer, and is your team's ability to reply to feedback in a timely manner.
+"Although there is no "one size fits all" approach to customer satisfaction surveys, there are 3 factors that every company should consider before surveying: What event or action took place before you asked for feedback (these can be time or action based events like completing your onboarding campaign), the time since your last survey to the customer, and is your team's ability to reply to feedback in a timely manner.
 
 Good examples of event data that can be used to fire a survey are:
 
@@ -95,7 +95,7 @@ If you sell a software product, asking for feedback directly inside the app is a
 
 It helps you narrow in on specific issues your customers are experiencing. However, it can also feel like paradox of choice since you can ask ANY question. Here are a few example questions that may be helpful to ask:
 
-“What is {insert product feature} helping you accomplish?” “What issues, if any, are you having with {insert product feature}?” “What features do you think we’re missing today for {insert product feature}?”
+"What is {insert product feature} helping you accomplish?" "What issues, if any, are you having with {insert product feature}?" "What features do you think we’re missing today for {insert product feature}?"
 
 There are hundreds of in-app questions you can ask. Here’s a preview of the pros and cons for in-app surveys.
 
@@ -123,6 +123,6 @@ Builds a sense of community and heightened loyalty when you can collaborate with
 Provides a channel through which you can make users feel appreciated for their contributions by letting them know that you’re taking action on their suggestions.	
 Feature Request Board
 
-A massive part of build a product is identifying new features customers desire. The easiest way to figure it out? Ask them! Creating a “feature request board” is a common tool for gauging product feedback from existing customers. Let's see how the integration between User Voice and Azure DevOps can help you create your own feature board for opening the feedback channels with your customers…
+A massive part of build a product is identifying new features customers desire. The easiest way to figure it out? Ask them! Creating a "feature request board" is a common tool for gauging product feedback from existing customers. Let's see how the integration between User Voice and Azure DevOps can help you create your own feature board for opening the feedback channels with your customers…
 
 https://feedback.uservoice.com/knowledgebase/articles/363410-vsts-azure-devops-integration
