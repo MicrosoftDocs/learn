@@ -1,6 +1,7 @@
 To deploy the Simulated temperature sensor module from the Azure Marketplace, use the following steps:
 
 1. In the Azure portal, enter Simulated Temperature Sensor into the search and open the Marketplace result.
+
 ![Simulated Temperature Sensor in Azure portal search](../media/prebuilt-module-azure-marketplace.png)
 
 2. Choose an IoT Edge device to receive this module. On the Target Devices for IoT Edge Module page, provide the following information: Subscription: select the subscription that contains the IoT hub you're using; IoT Hub: select the name of the IoT hub you're using; IoT Edge Device Name:  as selected before  
