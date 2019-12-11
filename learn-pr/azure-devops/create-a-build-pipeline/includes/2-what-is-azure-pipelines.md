@@ -72,9 +72,10 @@ Now that you and the team are familiar with Azure Pipelines, let's discuss a few
 
 ### Build agents
 
-As you know, a build agent is a piece of installable software that runs one build or deployment job at a time. To build your code or deploy your software you need at least one agent. As you add more code and people, you'll eventually need more than one.  Let's examine build agents in a bit more depth. 
+As you know, a build agent is a piece of installable software that runs one build or deployment job at a time. To build your code or deploy your software you need at least one agent. As you add more code and people, you'll eventually need more than one.  Let's examine build agents in a bit more depth.
 
-### The differences between implemnting hosted and private agents.
+### The differences between implementing hosted and private agents
+
 You can use either a Microsoft-hosted or a private agent. What are the differences?
 
 If your pipelines are in Azure Pipelines, then you've got a convenient option to build and deploy using a Microsoft-hosted agent. With Microsoft-hosted agents, maintenance and upgrades are taken care of for you. Each time you run a pipeline, you get a fresh virtual machine. The virtual machine is discarded after one use.
@@ -94,11 +95,12 @@ A project agent pool provides access to an organization agent pool. When you cre
 To share an agent pool with multiple projects, in each of those projects, you create a project agent pool pointing to an organization agent pool. While multiple pools across projects can use the same organization agent pool, multiple pools within a project cannot use the same organization agent pool. Also, each project agent pool can use only one organization agent pool.
 
 ### Agent queues
+
 If you are a project team member, you create and manage agent build queues from the agent pools tab in project settings.
 
 ### Service endpoints for integration with third-party systems
 
-Service endpoints are a way for Azure DevOps services to connect to external systems or services. They are a bundle of securely stored properties that includes but is not limited to:
+Service endpoints are a way for Azure DevOps to connect to external systems or services. They are a bundle of securely stored properties that includes but is not limited to:
 
 * Service name
 * Description

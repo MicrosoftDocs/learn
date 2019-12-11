@@ -50,21 +50,21 @@ These resources provide more information about some of the topics in this module
 
 ## Implement a mobile DevOps strategy
 
-So far, you've deployed the _Space Game_ website to Azure App Service but there are, of course, other opportunities for deploying your app and one of them is to mobile devices. You'll need the same committment and cultural changes as with any other DevOps project and, of course, you'll also need the right toolset. Microsoft offers this toolset through Visual Studio Mobile Center (also called App Center), which brings together multiple services commonly used by mobile developers into an integrated cloud solution. Let's look at some of these services.
+So far, you've deployed the _Space Game_ website to Azure App Service but there are, of course, other opportunities for deploying your app and one of them is to mobile devices. You'll need the same commitment and cultural changes as with any other DevOps project and, of course, you'll also need the right toolset. Microsoft offers this toolset through Visual Studio Mobile Center (also called App Center), which brings together multiple services commonly used by mobile developers into an integrated cloud solution. Let's look at some of these services.
 
 ### Distribution groups
 
-Distribution Groups control access to releases. A Distribution Group represents a set of users that can be managed jointly and can have common access to releases. Examples of Distribution Groups can be teams of users, like the QA Team or External Beta Testers, or can represent stages or rings of releases, such as staging.
+Distribution groups control access to releases. A distribution group represents a set of users that can be managed jointly and can have common access to releases. Examples of distribution groups can be teams of users, like the QA Team or External Beta Testers, or can represent stages or rings of releases, such as staging.
 
-#### Creating a Distribution Group
+#### Creating a distribution group
 
-To create a new Distribution Group log into the App Center portal, select your desired app, click **Distribute** in the navigation pane, and then select the **New Group** group button from the top of the screen. Provide a name for the Distribution Group. You can then add users to this group by email. You can also add additional users after the group has been created.
+To create a new distribution group log into the App Center portal, select your desired app, click **Distribute** in the navigation pane, and then select the **New Group** group button from the top of the screen. Provide a name for the distribution group. You can then add users to this group by email. You can also add additional users after the group has been created.
 
-#### Private Distribution Groups
+#### Private distribution groups
 
 In App Center, distribution groups are private by default. This means only testers invited through email can access the releases available to this group. Testers added to this group will receive a notification that they have been added to the app to test. After a release, testers that were previously added to this group will receive the new release notification email and will be required to login to their App Center account in order to access and download releases.
 
-#### Public Distribution Groups
+#### Public distribution groups
 
 Distribution groups must be public to enable unauthenticated installs from public links. When creating a new distribution group, the options is available during the setup process. After giving your group a name, you can enable Allow public access.
 
@@ -74,15 +74,15 @@ As with private distribution groups, testers will receive an email notifying the
 
 In addition to this, a public download link is displayed underneath the distribution group name at the top of the distribution group page. Anyone, including testers who aren't explicitly added to the distribution group, can access the release without signing in using the public download link.
 
-#### Managing Users in a Distribution Group
+#### Managing users in a distribution group
 
-Clicking on a Distribution Group allows you to manage the group. For example, you can use the invitation box to add additional users. You can select users from the table to remove them from the group. You can also see the full release history for this Distribution Group by clicking on the **Releases** tab.
+Clicking on a distribution group allows you to manage the group. For example, you can use the invitation box to add additional users. You can select users from the table to remove them from the group. You can also see the full release history for this distribution group by clicking on the **Releases** tab.
 
 It's easy to add automated UI tests into your App Center builds. App Center has thousands of physical Apple and Android devices on which to run your newly-built app, and App Center supports the most popular UI testing frameworks such as Espresso, XCUITest, Appium, and Xamarin.UITest.
 
-#### Adding Azure Active Directory (AAD) groups to a Distribution Group
+#### Adding Azure Active Directory (Azure AD) groups to a distribution group
 
-In addition to adding testers though email, you can also add AAD groups to a distribution group. Any member of an AAD group can link their organization's subscription to their AAD tenant in App Center.
+In addition to adding testers though email, you can also add Azure AD groups to a distribution group. Any member of an Azure AD group can link their organization's subscription to their Azure AD tenant in App Center.
 
 ### Manage target UI test device tests
 
@@ -106,7 +106,7 @@ Getting your app onto your own device, or in the hands of potential testers, can
 
 App Center supports the release of auto-provisioning capabilities. This enables iOS developers to spend more time creating and shipping great apps, rather than managing device provisioning. With the auto-provisioning capability, you no longer need to know the device IDs of testers, coworkers, or stakeholders when building a new beta version of your app for testing. App Center integrates this capability directly into the install portal, so you can automate the distribution process and enable testers and team members to install your app with one click.
 
-#### Setting Up Auto-Provisioning
+#### Setting Up auto-provisioning
 
 All you need to get started with auto-provisioning is an ad-hoc provisioning profile and a production certificate (both of which are created in the Apple Developer portal) to produce a signed app ready for our distribution service.
 
