@@ -15,7 +15,7 @@ Let's start by creating a new Azure Relay namespace.
 
     | Setting | Value |
     | --- | --- |
-    | Name | Use a name that's unique within the **servicebus.windows.net** domain. For example, use **creditcheck&lt;your initials&gt;** |
+    | Name | Use a name that's unique within the **servicebus.windows.net** domain. For example, use `creditcheckrelay-ab`, replacing `ab` with your initials or another text string. |
     | Subscription | Concierge Subscription |
     | Resource groups | <rgn>[sandbox resource group name]</rgn> |
     | Location | Choose a location near you |
@@ -29,7 +29,7 @@ Azure creates and deploys the new namespace. This deployment may take several mi
 
 Azure Relay maintains security by requiring that applications supply an access key when they connect. Obtain that key now, so you can use it in the app code later in the module.
 
-1. When the namespace deployment has completed, in the left Azure menu, click **All resources**, and then click the relay you just created.
+1. When the namespace deployment has completed, in the left Azure menu, click **All resources**, and then click the relay you created.
 1. Under **Settings**, click **Shared access policies**, and then click the **RootManageSharedAccessKey** policy.
 
     ![Obtain the access key for the relay](../media/3-obtain-access-key.png)

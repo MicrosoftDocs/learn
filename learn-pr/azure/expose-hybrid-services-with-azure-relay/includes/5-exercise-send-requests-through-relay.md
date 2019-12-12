@@ -147,7 +147,7 @@ The listener and sender apps are complete. You can now run both apps, use the se
     dotnet bin/Debug/netcoreapp2.2/listener.dll
     ```
 
-1. When you receive the message **Server listening** you can start the sender. Open a new instance of your browser and navigate to **https://shell.azure.com**
+1. When you receive the message **Server listening**, you can start the sender. Open a new instance of your browser and navigate to **https://shell.azure.com**
 1. If you are asked to **Select a directory**, choose **Microsoft Learn Sandbox**
 1. To build and run the sender app, execute these commands:
 
