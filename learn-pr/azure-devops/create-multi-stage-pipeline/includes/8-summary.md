@@ -23,13 +23,13 @@ In this module, you worked with conditions, triggers, and approvals. Explore the
 * [Build pipeline triggers](https://docs.microsoft.com/azure/devops/pipelines/build/triggers?view=azure-devops&tabs=yaml&azure-portal=true)
 * [Approvals and other checks](https://docs.microsoft.com/azure/devops/pipelines/process/approvals?view=azure-devops&azure-portal=true)
 
-## More build options
+## Explore additional build options
 
 Now that you're familiar with making your builds part of an automated pipeline, you might want to think about a few more possibilities.
 
 ### Implement a hybrid build process
 
-Implementing (CI/CD) to deploy applications is difficult when your build and operate on-premises applications differently than cloud applications. If this is your situation, consider using [Azure Stack Hub](https://azure.microsoft.com/solutions/architecture/hybrid-ci-cd?azure-portal=true). Azure Stack Hub is a hybrid cloud platform that lets you use Azure services from your company's or service provider's datacenter. 
+Implementing CI/CD to deploy applications is difficult when you build and operate on-premises applications differently than cloud applications. If this is your situation, consider [Azure Stack Hub](https://docs.microsoft.com/azure-stack/operator/azure-stack-overview?azure-portal=true). Azure Stack Hub is a hybrid cloud platform that enables you to use Azure services from your company's or service provider's datacenter.
 
 As a developer, you can build apps on Azure Stack Hub. You can then deploy them to Azure Stack Hub, to Azure, or you can build truly hybrid apps that leverage the connectivity between an Azure Stack Hub cloud and Azure.
 
@@ -39,28 +39,28 @@ You can use multiple build agents to support multiple build machines, either to 
 
 ### Implement a container build strategy
 
-If you're not using them yet, at some point you'll probably want to include containers in your CI/CD pipeline. Azure provides serveral services that will help you include them in the build process, including: 
+If you're not using them yet, at some point you'll probably want to include containers in your CI/CD pipeline. Azure provides serveral services that will help you include them in the build process, including:
 
-* Azure Kubernetes Service (AKS). Kubernetes has quickly become the de facto standard for container orchestration. AKS lets you easily deploy and manage Kubernetes, to scale and run applications, while maintaining strong overall security.
+* Azure Kubernetes Service (AKS). Kubernetes has quickly become the standard for container orchestration. AKS lets you easily deploy and manage Kubernetes, to scale and run applications, while maintaining strong overall security.
 
-* Azure Container Registry (ACR). This service lets you store and manage container images in a central registry. It provide you with a Docker private registry as a first-class Azure resource.
+* Azure Container Registry (ACR). ACR lets you store and manage container images in a central registry. It provides you with a Docker private registry as a first-class Azure resource.
 
-* Azure Service Fabric. Azure Service Fabric allows you to build and operate always-on, scalable, distributed apps. It can host and orchestrate containers, including stateful containers.
+* Azure Service Fabric. Service Fabric allows you to build and operate always-on, scalable, distributed apps. It can host and orchestrate containers, including stateful containers.
 
-* Azure App Service. Azure Web Apps provides a managed service for both Windows- and Linux-based web applications, and provides the ability to deploy and run containerized applications for both platforms. 
+* Azure App Service. App Service provides a managed service for both Windows- and Linux-based web applications, and provides the ability to deploy and run containerized applications for both platforms.
 
 #### Use Docker multi-stage builds
 
-If you're building Docker images and are struggling to optimize your Dockerfiles, while keeping them easy to read and maintain, consider using multi-stage builds, which is a new feature that requires Docker 17.05 or higher on the daemon and client. 
+If you're building Docker images and are struggling to optimize your Dockerfiles, while keeping them easy to read and maintain, consider using multi-stage builds.
 
-With multi-stage builds, you use multiple `FROM` statements in your Dockerfile. Each `FROM` instruction can use a different base, and each of them begins a new stage of the build. You can selectively copy artifacts from one stage to another, leaving behind everything you don’t want in the final image.
+With multi-stage builds, you use multiple `FROM` statements in your Dockerfile. Each `FROM` instruction can use a different base, and each of them begins a new stage of the build. You can selectively copy artifacts from one stage to another, leaving behind everything you don't want in the final image.
 
 ### Integrate Jenkins with Azure Pipelines
 
-As we've mentioned before, Jenkins is a very popular third-party CI tool. We've also mentioned that Azure Pipelines supports integration with Jenkins. You can use Jenkins for CI while gaining several DevOps benefits from an Azure Pipelines release pipeline that deploys to Azure, such as:
+As we've mentioned before, Jenkins is a popular third-party CI tool. We've also mentioned that Azure Pipelines supports integration with Jenkins. You can use Jenkins for CI while gaining several DevOps benefits from an Azure Pipelines release pipeline that deploys to Azure, such as:
 
 * Reuse your existing investments in Jenkins build jobs.
 * Track work items and related code changes.
 * Get end-to-end traceability for your CI/CD workflow.
 
-A typical approach is to use Jenkins to build an app from source code hosted in a Git repository such as GitHub and then deploy it to Azure using Azure Pipelines. If you want a procedure for integrating the two tools, see [Continuously deploy from a Jenkins build](https://docs.microsoft.com/azure/devops/pipelines/release/integrate-jenkins-pipelines-cicd?view=azure-devops&tabs=yaml?azure-portal=true).
+A typical approach is to use Jenkins to build an app from source code hosted in a Git repository such as GitHub and then deploy it to Azure by using Azure Pipelines. If you want a procedure for integrating the two tools, see [Continuously deploy from a Jenkins build](https://docs.microsoft.com/azure/devops/pipelines/release/integrate-jenkins-pipelines-cicd?view=azure-devops&tabs=yaml&azure-portal=true).

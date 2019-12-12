@@ -52,19 +52,20 @@ When they first start to adopt Agile techniques and practices, some teams decide
 If collaboration is the key to becoming successful at Agile, what are some of the ways you can encourage it? Here are some ideas.
 
 #### Cultural change
-When changing a culture, keep a few things in mind. It’s important that team members have a quiet, comfortable place to work. They need spaces where they can focus, without a lot of distractions and noise.
 
-Meetings are a fact of life and they can feel like they take over a person’s working life. To give team members more control, meetings need an agenda and strict time frames.
+When changing a culture, keep a few things in mind. It's important that team members have a quiet, comfortable place to work. They need spaces where they can focus, without a lot of distractions and noise.
+
+Meetings are a fact of life and they can feel like they take over a person's working life. To give team members more control, meetings need an agenda and strict time frames.
 
 Asynchronous communications, such as email and messages, can feel overwhelming and people often feel they have to be answered right away. Make it clear that not all of these communications need an immediate response.
 
-Remote team members are now the norm in many companies. Everyone needs to feel comfortable with all their team members and to treat them equally, whether they’re in the office or working offsite. Collaboration via communication should become part of the organization's DNA.
+Remote team members are now the norm in many companies. Everyone needs to feel comfortable with all their team members and to treat them equally, whether they're in the office or working offsite. Collaboration via communication should become part of the organization's DNA.
 
-The importance of good communication can’t be overemphasized, even when there are disagreements. Conflict resolution is a good skill for any Agile team to have.
+The importance of good communication can't be overemphasized, even when there are disagreements. Conflict resolution is a good skill for any Agile team to have.
 
 #### Cross-functional teams
 
-Just as it’s important for team members to work collaboratively, it’s also important for teams to collaborate with each other. Cross-functional teams add new skills and perspectives that can broaden everyone’s ability to solve challenges creatively. Cross-functional teams also make the entire organization more cohesive. They reduce turf wars and increase the sense that everyone is working toward a common goal.
+Just as it's important for team members to work collaboratively, it's also important for teams to collaborate with each other. Cross-functional teams add new skills and perspectives that can broaden everyone's ability to solve challenges creatively. Cross-functional teams also make the entire organization more cohesive. They reduce turf wars and increase the sense that everyone is working toward a common goal.
 
 #### Tools for collaboration
 
