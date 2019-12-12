@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.choose-compute-provisioning.4-third-party-solutions
+metadata:
+  title: Choose a third party solution
+  description: Choose a third party solution
+  ms.date: 12/11/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Choose a third party solution
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-third-party-solutions.md)]

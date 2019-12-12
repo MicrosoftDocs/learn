@@ -1,0 +1,45 @@
+### YamlMime:LearningPath
+uid: learn.azdo.automate-deployments-azure-devops
+metadata:
+  title: Automate your deployments with Azure DevOps learning path
+  description: Learn how to combine automation techniques such as infrastructure as code with automated pipelines to provision and configure the infrastructure you need to run your applications and services.
+  brand: azure
+  ms.date: 12/09/2019
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Automate your deployments with Azure DevOps
+summary: |
+  Azure DevOps enables you to build, test, and deploy any application to any cloud or on premises. Learn how to combine automation techniques such as infrastructure as code with automated pipelines to provision and configure the infrastructure you need to run your applications and services.
+
+  In this learning path, you will:
+  - Learn what we mean by _infrastrure as code_ and _configuration as code_, along with popular tools you can use to automate your deployments.
+  - Build and apply a Terraform plan that automatically provisions Azure App Service in Azure Pipelines.
+  - Run an Ansible playbook that automatically configures virtual machines running on Azure.
+  - Use an Azure Resource Manager template to automatically provision and configure Azure SQL Database in Azure Pipelines.
+
+  Take this learning path to help prepare for [Exam AZ-400: Microsoft Azure DevOps Solutions](https://www.microsoft.com/learning/exam-az-400.aspx).
+cardDescription: Learn how to combine automation techniques such as infrastructure as code with automated pipelines to provision and configure the infrastructure you need to run your applications and services.
+prerequisites: |
+  - [Evolve your DevOps practices](/learn/paths/evolve-your-devops-practices)
+  - [Build applications with Azure DevOps](/learn/paths/build-applications-with-azure-devops)
+  - [Deploy applications with Azure DevOps](/learn/paths/deploy-applications-with-azure-devops)
+  - An [Azure subscription](https://azure.microsoft.com/free/)
+  - An [organization in Azure DevOps](https://dev.azure.com)
+iconUrl: /learn/achievements/azure-devops/automate-deployments-azure-devops.svg
+levels:
+- intermediate
+roles:
+- devops-engineer
+- administrator
+- developer
+products:
+- azure
+- azure-devops
+modules:
+- learn.azdo.provision-infrastructure-azure-pipelines
+- learn.azdo.configure-infrastructure-azure-pipelines
+- learn.azdo.provision-databases-azure-pipelines
+trophy:
+  uid: learn.azdo.automate-deployments-azure-devops.trophy

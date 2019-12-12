@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.design-monitoring-strategy-on-azure.7-unifying-monitoring-solutions
 metadata:
-  title: Unifying monitoring solutions in Azure
-  description: Unifying monitoring solutions in Azure
+  title: Unify monitoring solutions in Azure
+  description: Unify monitoring solutions in Azure
   ms.date: 12/03/2019
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Unifying monitoring solutions in Azure
+title: Unify monitoring solutions in Azure
 durationInMinutes: 5
 content: |
   [!include[](includes/7-unifying-monitoring-solutions.md)]
@@ -34,15 +34,15 @@ quiz:
     - content: Use an instance of Application Insights.
       isCorrect: false
       explanation: Application Insights is used to collect information about your application's health.
-    - content: Use a cross-resource-query.
+    - content: Use a cross-resource query.
       isCorrect: false
       explanation: Use the Log Analytics agent. You use cross-resource querying to analyze the log data collected from separate workspaces. 
-  - content: How can you analyze both security-related data, and application performance data, together?
+  - content: How can you analyze both security-related data and application performance data together?
     choices:
-    - content: Use Log Analytics agent to query Azure Security Center and Application Insights workspaces together.
+    - content: Use the Log Analytics agent to query Azure Security Center and Application Insights workspaces together.
       isCorrect: false
-      explanation: Use a cross-resource-query. The agent gathers security-related information from resources into a workspace.
-    - content: Use a cross-query to query Azure Security Center and Application Insights workspaces together.
+      explanation: Use a cross-resource query. The agent gathers security-related information from resources into a workspace.
+    - content: Use a cross-resource query to query Azure Security Center and Application Insights workspaces together.
       isCorrect: true
       explanation: You use cross-resource querying to analyze the log data collected from separate workspaces. 
     - content: Use automatic provisioning to query Azure Security Center and Application Insights workspaces together.

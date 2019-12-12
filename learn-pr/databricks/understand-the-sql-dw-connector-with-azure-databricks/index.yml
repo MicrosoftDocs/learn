@@ -1,5 +1,6 @@
 ### YamlMime:Module
 uid: learn.understanding-the-sql-dw-connector-with-azure-databricks
+hidden: true
 metadata:
   title: Access SQL Data Warehouse instances with Azure Databricks
   description: Discover how the Azure SQL Data Warehouse connector with Azure Databricks transfers volumes of data between a Databricks cluster and a SQL Data Warehouse.

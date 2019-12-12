@@ -47,7 +47,7 @@ Our goal is to give our customers games they'll love. We do that by working toge
 - **Agile planning**. Together, we'll create a backlog of work that everyone on the team and in management can see. We'll prioritize the items so we know what we need to work on first. The backlog can include user stories, bugs, and any other information that helps us.
 - **Continuous integration (CI)**. We'll automate how we build and test our code. We'll run that every time a team member commits changes to version control.
 - **Continuous delivery (CD)**. CD is how we test, configure, and deploy from a build to a QA or production environment.
-- **Monitoring**. We'll use telemetry to get information about an application’s performance and usage patterns. We can use that information to improve as we iterate.
+- **Monitoring**. We'll use telemetry to get information about an application's performance and usage patterns. We can use that information to improve as we iterate.
 
 **Amita**: I don't know about automated testing. My tests are manual and I do them after Andy hands off the code to me. I don't have time to change how I do everything.
 
