@@ -4,11 +4,9 @@ In your financial organization, for the credit-checking service, your developers
 
 Here, you'll create a new Azure Relay namespace and store the primary key and connection string, which we'll use later in our app code.
 
-[!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
-
 ## Create a new namespace in Azure Relay
 
-Let's start by creating a new Azure Relay namespace:
+Let's start by creating a new Azure Relay namespace.
 
 1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), in the left menu, click **Create a resource**.
 1. In the **Search the Marketplace** text box, type **Relay**, and then click **Enter**.
@@ -20,18 +18,16 @@ Let's start by creating a new Azure Relay namespace:
     | Name | Use a name that's unique within the **servicebus.windows.net** domain. For example, use **creditcheck&lt;your initials&gt;** |
     | Subscription | Concierge Subscription |
     | Resource groups | <rgn>[sandbox resource group name]</rgn> |
-    | Location | Choose a location near you from the above list |
+    | Location | Choose a location near you |
     | | |
 
     ![Create a new namespace in Azure Relay](../media/3-create-namespace.png)
-
-<!-- TODO: This causes a policy violation in the sandbox I used for tests. Change of policy required? -->
 
 Azure creates and deploys the new namespace. This deployment may take several minutes.
 
 ## Get the primary connection string and primary key, and store them for later use
 
-Azure Relay maintains security by requiring that applications supply an access key when they connect. Obtain that key now, so you can use it in the app code later in the module:
+Azure Relay maintains security by requiring that applications supply an access key when they connect. Obtain that key now, so you can use it in the app code later in the module.
 
 1. When the namespace deployment has completed, in the left Azure menu, click **All resources**, and then click the relay you just created.
 1. Under **Settings**, click **Shared access policies**, and then click the **RootManageSharedAccessKey** policy.
@@ -46,7 +42,7 @@ Azure Relay maintains security by requiring that applications supply an access k
 
 ## Create a new hybrid connection in the namespace
 
-For your credit-checking web service, you want to use hybrid connections, not WCF connections. Let's add that capability to the relay:
+For your credit-checking web service, you want to use hybrid connections, not WCF connections. Let's add that capability to the relay.
 
 1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), in the left menu, click **All resources**.
 1. Click the relay you created earlier.

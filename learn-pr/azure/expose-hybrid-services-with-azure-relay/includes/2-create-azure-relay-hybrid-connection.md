@@ -38,8 +38,6 @@ Because both the cloud-hosted and on-premises components initiate the connection
 
 This diagram shows how the connection is made:
 
-<!-- TODO: This image is taken from https://docs.microsoft.com/azure/service-bus-relay/relay-what-is-it Please revise in learn style. Keep the numbers, which correspond to the text below the image -->
-
 ![How Azure Relay exchanges messages](../media/2-how-relay-works.png)
 
 1. A listener requests a connection to Azure Relay. The request is sent to a Relay gateway by the Azure Load Balancer.
