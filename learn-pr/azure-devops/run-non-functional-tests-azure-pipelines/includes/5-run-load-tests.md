@@ -43,7 +43,7 @@ Here's how the `hostname` variable is defined in JMeter:
 
 ![Setting the hostname variable in Apache JMeter](../media/5-jmeter-hostname-variable.png)
 
-Here's how the `hostname` variable uses the [__P](http://jmeter.apache.org/usermanual/functions.html#__P?azure-portal=true) function to read the `hostname` variable.
+Here's how the `hostname` variable uses the [__P](http://jmeter.apache.org/usermanual/functions.html?azure-portal=true#__P) function to read the `hostname` variable.
 
 ![Reading the hostname variable in Apache JMeter](../media/5-jmeter-httprequest-server-name.png)
 
