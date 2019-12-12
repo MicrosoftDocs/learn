@@ -24,11 +24,11 @@ There are upper limits to blob storage page and block sizes, but these limits ar
 
 ### Use APIs to access blob storage
 
-Blob storage can be accessed via .NET language API calls. Developers can write apps, of any complexity, to read and write data held in blob storage.
+Blob storage can be accessed via API calls. Developers can write apps, of any complexity, to read and write data held in blob storage. The APIs are available via REST calls, Azure PowerShell, or the Azure CLI. Client libraries are available for .NET, Java, Python, Node.js, and other languages.
 
 ### Consider data security
 
-Azure blob storage is automatically mirrored, at no extra cost and with no extra setup. Disaster recovery is built into blob storage.
+Azure Blob storage is automatically encrypted , at no extra cost and with no extra setup. The system used is called _Storage Service Encryption_, or SSE. In addition, data can be secured _in transit_, between an app and Azure, using _Client-Side Encryption_, HTTPS, or SMB 3.0.
 
 ## Upgrade to Data Lake Storage Gen2
 
@@ -36,7 +36,7 @@ The time to consider upgrading from blob to data lake storage comes when you hav
 
 To help organize data, a concept called _hierarchical namespaces_ is available in a data lake. A hierarchical namespace can be used to encapsulate a collection, large or small, of data objects and files. It basically adds another level of reference, that is used to make access to the data more efficient.
 
-Security in a data lake is on the file, or folder, level, or greater granularity if needed.
+Security in Azure Data Lake is on the file, or folder, level, or greater granularity if needed. All the security, and API access, features of Blob storage apply to Data Lake storage.
 
 Finally, data lake analytics, available through REST APIs, are optimized for big data. Your queries should still run in a decent amount of time, even if they're trawling through a sea of data.
 

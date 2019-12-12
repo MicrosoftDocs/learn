@@ -1,8 +1,8 @@
-With IoT telemetry data streaming in hot from your IoT devices, you might wish to visualize that data quickly, and easily.
+With IoT telemetry data streaming in hot from your IoT devices, you might wish to visualize that data quickly, and easily. A key feature of telemetry is that it is time-stamped: time and order are critical elements of the data.
 
-The basis of an IoT solution is often the IoT Hub, the cloud service built to handle millions of telemetry readings, and channel that data somewhere useful. The data can be routed for some real-time analytics. And  routed to blob storage for archive, or for a colder deeper analysis.
+The basis of an IoT solution is often the IoT Hub, the cloud service built to handle millions of telemetry readings, and channel that data somewhere useful. The data can be routed for some real-time analytics. And routed to blob storage for archive, or for a colder deeper analysis.
 
-Another option, is to route the data to the built-in _Time Series Insights_ service. This service enables you to visualize your data without writing any code, or SQL queries. The routing and visualization can all be done via the Azure portal.
+The first place to look for time-based analytics is the built-in _Time Series Insights_ service. This service both enables you to visualize your data without writing any code, or SQL queries, and enables you to perform simple or complex analytics. The routing, analytics, and visualization can all be done via the Azure portal.
 
 Using the portal, you create the required resources, then route the data. Now you can start looking at some charts.
 
@@ -17,6 +17,10 @@ The second display option is to visualize the data using a _heat map_. The time 
 The third option is a table of results, again divided up into time chunks. A table isn't as fun to look at as the chart or heat map. But, depending on your application, this format might indeed be a helpful way of visualizing your data.
 
 ![Screenshot of the table page, when using Time Series Insights on conveyor belt data](../media/lambda-tsi-table.png)
+
+## A simple query
+
+TBD
 
 ## Best Practices
 

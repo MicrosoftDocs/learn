@@ -57,6 +57,14 @@ After a Cosmos DB resource has been set up, you get to choose the default consis
 
 So what consistency level would be right for our vibration data example?  _Strong_ consistency would unnecessarily delay the US West location's real-time analysis. _Eventual_ consistency might provide unwanted skipped data for deeper analysis. Probably the default _Session_ consistency would work well.
 
+A more complex scenario exists if your IoT devices are in multiple regions. You would have to enable multiple write regions. Keeping the data in sync is a likely priority, if running analysis on the combined data. In this case, set a stronger consistency level such as Strong, or Bounded.
+
+In the scenario where the read regions are only storing the data, or performing cold analysis, the Prefix consistency level would work well too. Given the order of telemetry readings is important for analysis, the lowest consistency level, Eventual, is unlikely to be appropriate for many IoT applications.
+
+### Consider the response time to time-critical data
+
+Another issue you need to consider in your choice of IoT cloud services, is the speed of response to an apparent issue in the data. In our conveyor belt example, there is analysis of vibrations to give early warning of failure. How much lag can there be after data anomalies are detected, before preventive maintenance is required? The kind of services you will need will depend on whether this answer is days, hours, minutes, or seconds. Mechanical systems lean towards the longer time spans, high-energy systems might need very quick intervention!
+
 ## Best Practices
 
 A Cosmos DB resource is usually a more expensive option than blob storage. Create a Cosmos DB resource when you have a mass of well-structured, time critical data. The case for a Cosmos DB is stronger still, if the data needs to be available in several locations across the globe.
