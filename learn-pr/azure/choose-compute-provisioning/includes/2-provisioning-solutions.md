@@ -26,7 +26,7 @@ You can have a PowerShell script that's on your local file server, GitHub, Azure
 > [!NOTE]
 > Take care if your configuration or management task requires a restart. A custom script extension won't continue after a restart.
 
-The following custom script extension configuration can be added to an Azure Resource Manager template for a virtual machine. Use the *fileUris* property to point to your script file.
+The following custom script extension configuration can be added to an Azure Resource Manager template for a virtual machine. Use the `fileUris` property to point to your script file.
 
 ```json
 {
@@ -59,7 +59,7 @@ Desired State Configuration (DSC) extensions make it possible for you to deal wi
 
 By using a DSC extension handler, which you can define for a virtual machine, you can enforce your states. The configurations for your states can be located in various places, such as Azure Blob storage or your internal file storage. The DSC extension handler grabs the configuration and implements the state on the target virtual machine. If reboots are necessary for a configuration, DSC continues to execute the state configuration after the reboots are completed.
 
-The following example defines a DSC extension handler for a virtual machine in an Azure Resource Manager template. The *script* property points to a configuration script in blob storage.
+The following example defines a DSC extension handler for a virtual machine in an Azure Resource Manager template. The `script` property points to a configuration script in blob storage.
 
 ```json
 {
@@ -116,7 +116,7 @@ knife azurerm server create `
 ```
 
 You can also use the Chef extension to apply recipes to the target machines.
-The following example defines a Chef extension for a virtual machine in an Azure Resource Manager template. It points to a Chef server by using the *chef_server_url* property. It points to a recipe to run on the virtual machine to put it in the desired state.
+The following example defines a Chef extension for a virtual machine in an Azure Resource Manager template. It points to a Chef server by using the `chef_server_url` property. It points to a recipe to run on the virtual machine to put it in the desired state.
 
 ```json
 {
