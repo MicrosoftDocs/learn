@@ -1,10 +1,10 @@
-The ultimate goal of DevOps is to increase the speed and quality of software services, something every IT organization needs. But how can the parties involved in DevOps accelerate delivery if they don't understand what they deliver or know their customers? Despite great advancements in delivery, quality service still begins with understanding the needs of customers.
+The ultimate goal of DevOps is to increase the speed and quality of software services, something every IT organization needs. But how can DevOps teams accelerate delivery if they don't understand what they deliver or who their customers are? Despite advancements in delivery methods, quality service still begins with understanding the needs of customers.
 
 Dissatisfied customers can cost you money. The first step to overcoming this is to admit that you have room for improvement. The second step is to measure customer satisfaction to find out where you currently stand.
 
-Engaging customers throughout your product lifecycle is a primary Agile principle. Empower each team to interact directly with customers on the feature sets they own.
+Engaging customers throughout your product lifecycle is a primary Agile principle. They key is to empower each team to interact directly with customers on the feature sets they own.
 
-TODO: In this module...
+TODO In this module, 
 
 - Continuous feedback: Build in customer feedback loops. These can take many forms:
   - Customer voice: Make it easy for customers to give feedback, add ideas, and vote on next generation features.
