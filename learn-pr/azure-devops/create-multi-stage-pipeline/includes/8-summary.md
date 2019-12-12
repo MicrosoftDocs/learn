@@ -39,7 +39,7 @@ You can use multiple build agents to support multiple build machines, either to 
 
 ### Implement a container build strategy
 
-If you're not using them yet, at some point you'll probably want to include containers in your CI/CD pipeline. Azure provides serveral services that will help you include them in the build process, including:
+If you're not using them yet, at some point you'll probably want to include containers in your CI/CD pipeline. Azure provides several services that will help you include them in the build process, including:
 
 * Azure Kubernetes Service (AKS). Kubernetes has quickly become the standard for container orchestration. AKS lets you easily deploy and manage Kubernetes, to scale and run applications, while maintaining strong overall security.
 

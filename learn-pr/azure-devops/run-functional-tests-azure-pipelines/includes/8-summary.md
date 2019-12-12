@@ -50,7 +50,7 @@ Azure Test Plans provides three main types of test management artifacts: test pl
 
 The [Test & Feedback extension](https://docs.microsoft.com/azure/devops/test/perform-exploratory-tests?view=azure-devops) enables exploratory testing techniques in Azure Test Plans. With it, you can:
 
-* Capture your findings along with rich diagnostic data. This includes comments, screenshots with annotations, and audio or video recordings that describe your findings and highlight issues. In the background, the extension captures additional information such as user actions through the image action log, page load data, and system information about the browser, operating system, and more that later help in debugging or reproducing the issue.
+* Capture your findings along with rich diagnostic data. This data includes comments, screenshots with annotations, and audio or video recordings that describe your findings and highlight issues. In the background, the extension captures additional information such as user actions through the image action log, page load data, and system information about the browser, operating system, and more that later help in debugging or reproducing the issue.
 
 * Create work items such as bugs, tasks, and test cases from within the extension. The captured information automatically becomes part of the filed work item and helps with end-to-end traceability.
 
