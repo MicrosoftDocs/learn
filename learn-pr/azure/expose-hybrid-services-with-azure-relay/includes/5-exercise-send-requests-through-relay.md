@@ -6,7 +6,7 @@ Here, you'll write the Azure Relay code in both the sender and listener applicat
 
 ## Clone the sample apps
 
-You have two command-line apps that will send messages to, and listen for messages from, the relay you created earlier. Most of the code is finished, but you must add the Azure Relay code to the apps. Let's start by obtaining the code:
+You have two command-line apps that will send messages to, and listen for messages from, the relay you created earlier. Most of the code is finished, but you must add the Azure Relay code to the apps. Let's start by obtaining the code.
 
 1. In the Cloud Shell on the right, use `git` to clone the sample apps:
 
@@ -18,7 +18,7 @@ You have two command-line apps that will send messages to, and listen for messag
 
 ## Configure the listener app
 
-First, let's ensure that the listener app can connect to the relay. The app needs the address of the namespace, the name of the hybrid connection, the key name, and the primary connection key, which you saved in a text file:
+First, let's ensure that the listener app can connect to the relay. The app needs the address of the namespace, the name of the hybrid connection, the key name, and the primary connection key, which you saved in a text file.
 
 1. Change directory into the starter code for the listener app, and then start the `code` editor:
 
@@ -43,7 +43,7 @@ The listener app now has all the information it needs to connect to and authenti
 
 ## Respond to requests in the listener app
 
-You must add the credit-checking service to your relay as a listener, so that it receives requests sent to the relay. Your code must configure the listener to subscribe to events, process any requests, and formulate responses. The credit-checking service, for example, must obtain the name from the request, and then respond with the credit history for that person. When you've set up the listener, call the `OpenAsync()` method to start listening for requests:
+You must add the credit-checking service to your relay as a listener, so that it receives requests sent to the relay. Your code must configure the listener to subscribe to events, process any requests, and formulate responses. The credit-checking service, for example, must obtain the name from the request, and then respond with the credit history for that person. When you've set up the listener, call the `OpenAsync()` method to start listening for requests.
 
 1. In the **Program.cs** code file for the listener app, locate the comment `\\ Subscribe to the status events`. Immediately after that comment, add this code:
 
@@ -83,7 +83,7 @@ You must add the credit-checking service to your relay as a listener, so that it
 
 ## Configure the sender app
 
-Apps that want to check a customer's credit record send a request to the relay, which forwards it to the listener. As for the listener, you configure the sender app with connection details for the relay:
+Apps that want to check a customer's credit record send a request to the relay, which forwards it to the listener. As for the listener, you configure the sender app with connection details for the relay.
 
 1. In the Cloud Shell, change directory into the starter code for the sender app, and then start the `code` editor:
 
@@ -112,7 +112,7 @@ The sender app now has all the information it needs to connect to and authentica
 
 ## Send requests from the sender app
 
-To request a credit check, the sender app sends a name in an HTTP GET request to the relay. Let's write the code that formulates that request:
+To request a credit check, the sender app sends a name in an HTTP GET request to the relay. Let's write the code that formulates that request.
 
 1. In the **Program.cs** code file for the sender app, locate the comment `// Create an HttpClient and formulate the request`. Immediately after that comment, add this code:
 
@@ -143,7 +143,7 @@ To request a credit check, the sender app sends a name in an HTTP GET request to
 
 ## Start the apps
 
-The listener and sender apps are complete. You can now run both apps, use the sender to request a credit check, and then observe the results in both apps. To run both apps at once, we'll use a second instance of the Cloud Shell to host the sender:
+The listener and sender apps are complete. You can now run both apps, use the sender to request a credit check, and then observe the results in both apps. To run both apps at once, we'll use a second instance of the Cloud Shell to host the sender.
 
 1. In the Cloud Shell to the right, to run the listener app, execute these commands:
 
@@ -166,7 +166,7 @@ The listener and sender apps are complete. You can now run both apps, use the se
 
 ## Test the apps
 
-Now that the apps are both running in separate instances of the Cloud Shell, let's test them by checking a credit record:
+Now that the apps are both running in separate instances of the Cloud Shell, let's test them by checking a credit record.
 
 1. Arrange the two browser windows so that you can see both.
 1. In the sender app, type a name of your choice, and then press Enter.
