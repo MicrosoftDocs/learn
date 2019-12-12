@@ -17,8 +17,6 @@ abstract: |
 prerequisites: | 
   - Familiarity with HTTP requests and responses
   - Familiarity with C# programming
-  - Git installed locally
-  - Visual Studio Code installed locally
 iconUrl: /learn/achievements/expose-hybrid-services-with-azure-relay.png
 levels:
 - beginner

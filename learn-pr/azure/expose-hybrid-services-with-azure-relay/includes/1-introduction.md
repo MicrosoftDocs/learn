@@ -15,5 +15,3 @@ By the end of this module, you'll identify situations where Azure Relay is helpf
 
 - Familiarity with HTTP requests and responses
 - Familiarity with C# programming
-- Git installed locally
-- Visual Studio Code installed locally
