@@ -10,8 +10,6 @@ You have two command-line apps that will send messages to, and listen for messag
 
 1. In the Cloud Shell on the right, use `git` to clone the sample apps:
 
-    <!-- TODO: The link here won't work until my PR is merged with it. Until then, you can use: https://github.com/alistairmatthews/mslearn-expose-hybrid-services-with-azure-relay -->
-
     ```bash
     git clone https://github.com/MicrosoftDocs/mslearn-expose-hybrid-services-with-azure-relay.git
     ```
@@ -24,10 +22,9 @@ First, let's ensure that the listener app can connect to the relay. The app need
 
     ```bash
     cd mslearn-expose-hybrid-services-with-azure-relay/starter/listener
-    code .
+    code Program.cs
     ```
 
-1. In the **FILES** window, click **Program.cs**.
 1. Locate the comment `// Details of the Azure Relay`. Immediately after that comment, add this code:
 
     ```c#
@@ -79,7 +76,7 @@ You must add the credit-checking service to your relay as a listener, so that it
     Console.WriteLine("Server listening");
     ```
 
-1. To save your changes, press <kbd>CTRL + S</kbd>, and then to close the `code` editor, press <kbd>CTRL + Q</kbd>.
+1. To save your changes, press <kbd>CTRL + s</kbd>, and then to close the `code` editor, press <kbd>CTRL + q</kbd>.
 
 ## Configure the sender app
 
@@ -89,13 +86,10 @@ Apps that want to check a customer's credit record send a request to the relay, 
 
     ```bash
     cd ../sender
-    code .
+    code Program.cs
     ```
 
 1. In the **FILES** window, click **Program.cs**.
-
-    > [!NOTE]
-    > When the `code` editor opens, it may display the **Program.cs** file from the listener, which was open when you closed the tool earlier. Make sure you click on the **Program.cs** file in the **FILES** window to edit the right file.
 
 1. Locate the comment `// Details of the Azure Relay`. Immediately after that comment, add this code:
 
@@ -139,7 +133,7 @@ To request a credit check, the sender app sends a name in an HTTP GET request to
     Console.WriteLine(await response.Content.ReadAsStringAsync());
     ```
 
-1. To save your changes, press <kbd>CTRL + S</kbd>, and then to close the `code` editor, press <kbd>CTRL + Q</kbd>.
+1. To save your changes, press <kbd>CTRL + s</kbd>, and then to close the `code` editor, press <kbd>CTRL + q</kbd>.
 
 ## Start the apps
 
@@ -172,5 +166,5 @@ Now that the apps are both running in separate instances of the Cloud Shell, let
 1. In the sender app, type a name of your choice, and then press Enter.
 1. In the listener app, the name you typed should be displayed.
 1. In the sender app, the reply from the listener is displayed with the result of the credit check.
-1. To exit the sender app, press <kbd>Enter</kbd>. You can run the app again to check other names. When you're finished, close the browser window.
-1. To exit the listener app, press <kbd>CTRL + C</kbd>
+1. To exit the sender app, select <kbd>Enter</kbd>. You can run the app again to check other names. When you're finished, close the browser window.
+1. To exit the listener app, press <kbd>CTRL + c</kbd>
