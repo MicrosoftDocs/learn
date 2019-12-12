@@ -17,7 +17,7 @@ abstract: |
 prerequisites: | 
   - Familiarity with HTTP requests and responses
   - Familiarity with C# programming
-iconUrl: http://via.placeholder.com/120x120
+iconUrl: /learn/achievements/expose-hybrid-services-with-azure-relay.svg
 levels:
 - beginner
 roles:
