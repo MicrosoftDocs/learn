@@ -19,7 +19,7 @@ prerequisites: |
   - Familiarity with C# programming
   - Git installed locally
   - Visual Studio Code installed locally
-iconUrl: http://via.placeholder.com/120x120
+iconUrl: /learn/achievements/expose-hybrid-services-with-azure-relay.png
 levels:
 - beginner
 roles:
