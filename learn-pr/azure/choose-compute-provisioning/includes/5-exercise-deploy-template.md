@@ -63,7 +63,7 @@ The state configuration is defined in the *Webserver.ps1* file, which includes t
     }
     ```
 
-1. To close the code editor, select **Ctrl+Q**.
+1. To close the code editor, select <kbd>Ctrl+q</kbd>.
 
 1. To see the contents of the cloned repository, enter this command:
 
@@ -108,13 +108,13 @@ The GitHub repository that you cloned also contains a Resource Manager template.
     },
     ```
 
-1. To save the template, select **Ctrl+S**.
+1. To save the template, select <kbd>Ctrl+s</kbd>.
 
 1. In the `<variables>` section of the *template.json* code file, notice that values are stored to configure networking for the virtual machine.
 
 1. In the `<resources>` section, notice that the template creates an IP address, a virtual network, the virtual machine, and other related resources.
 
-1. To close the code editor, select **Ctrl+Q**.
+1. To close the code editor, select <kbd>Ctrl+q</kbd>.
 
 ## Validate your template
 
