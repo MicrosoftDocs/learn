@@ -12,8 +12,8 @@ title: Choose a compute provisioning solution for your application
 summary: Discover the services and tools available to automate the deployment and configuration of your Azure infrastructure.
 abstract: | 
   In this module, you will:
-  - Identify the solutions available to provision compute on Azure.
-  - Choose an appropriate provisioning platform based on your requirements.
+  - Identify the solutions available to provision compute on Azure
+  - Choose an appropriate provisioning platform based on your requirements
 prerequisites: | 
  - Basic knowledge of Azure virtual machines
  - Basic knowledge of PowerShell
