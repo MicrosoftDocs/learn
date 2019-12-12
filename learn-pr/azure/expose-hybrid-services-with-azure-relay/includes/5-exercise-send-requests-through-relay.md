@@ -21,7 +21,7 @@ First, let's ensure that the listener app can connect to the relay. The app need
 1. Change directory into the starter code for the listener app, and then start the `code` editor:
 
     ```bash
-    cd mslearn-expose-hybrid-services-with-azure-relay/starter/listener
+    cd ~/mslearn-expose-hybrid-services-with-azure-relay/starter/listener
     code Program.cs
     ```
 
@@ -85,7 +85,7 @@ Apps that want to check a customer's credit record send a request to the relay, 
 1. In the Cloud Shell, change directory into the starter code for the sender app, and then start the `code` editor:
 
     ```bash
-    cd ../sender
+    cd ~/mslearn-expose-hybrid-services-with-azure-relay/starter/sender
     code Program.cs
     ```
 
@@ -139,18 +139,17 @@ To request a credit check, the sender app sends a name in an HTTP GET request to
 
 The listener and sender apps are complete. You can now run both apps, use the sender to request a credit check, and then observe the results in both apps. To run both apps at once, we'll use a second instance of the Cloud Shell to host the sender.
 
-1. In the Cloud Shell to the right, to run the listener app, execute these commands:
+1. In the Cloud Shell to the right, to build and run the listener app, execute these commands:
 
     ```bash
-    cd ../listener
+    cd ~/mslearn-expose-hybrid-services-with-azure-relay/starter/listener
     dotnet build
     dotnet bin/Debug/netcoreapp2.2/listener.dll
     ```
 
 1. When you receive the message **Server listening** you can start the sender. Open a new instance of your browser and navigate to **https://shell.azure.com**
 1. If you are asked to **Select a directory**, choose **Microsoft Learn Sandbox**
-1. In the top left of the Cloud Shell, ensure that **Bash** is selected.
-1. To run the sender app, execute these commands:
+1. To build and run the sender app, execute these commands:
 
     ```bash
     cd ~/mslearn-expose-hybrid-services-with-azure-relay/starter/sender
