@@ -39,7 +39,7 @@ The team is getting ready to take their first steps toward adopting Agile. Here 
 
 ### Create an organizational structure that supports Agile practices
 
-For most organizations, adopting Agile can be difficult. It requires a mind-shift and a culture-shift that challenges many existing policies and processes within the organization. Traditionally, most companies use a horizontal team structure. In practice, this means teams correspond to the software architechture. For example, there might be a team responsible for an application's user interface, another team responsible for data, and another team responsible for the service-oriented architechture.
+For most organizations, adopting Agile can be difficult. It requires a mind-shift and a culture-shift that challenges many existing policies and processes within the organization. Traditionally, most companies use a horizontal team structure. In practice, this means teams correspond to the software architecture. For example, there might be a team responsible for an application's user interface, another team responsible for data, and another team responsible for the service-oriented architecture.
 
 However, vertical teams provide better results for Agile projects. Vertical teams span the architecture and are aligned with product outcomes. For example, there might be a team responsible for the email portion of the app and team members come from all three of the abovementioned disciplines. Another benefit of the vertical team structure is that scaling occurs by adding teams. 
 
@@ -52,19 +52,20 @@ When they first start to adopt Agile techniques and practices, some teams decide
 If collaboration is the key to becoming successful at Agile, what are some of the ways you can encourage it? Here are some ideas.
 
 #### Cultural change
-When changing a culture, keep a few things in mind. It’s important that team members have a quiet, comfortable place to work. They need spaces where they can focus, without a lot of distractions and noise.
 
-Meetings are a fact of life and they can feel like they take over a person’s working life. To give team members more control, meetings need an agenda and strict time frames.
+When changing a culture, keep a few things in mind. It's important that team members have a quiet, comfortable place to work. They need spaces where they can focus, without a lot of distractions and noise.
+
+Meetings are a fact of life and they can feel like they take over a person's working life. To give team members more control, meetings need an agenda and strict time frames.
 
 Asynchronous communications, such as email and messages, can feel overwhelming and people often feel they have to be answered right away. Make it clear that not all of these communications need an immediate response.
 
-Remote team members are now the norm in many companies. Everyone needs to feel comfortable with all their team members and to treat them equally, whether they’re in the office or working offsite. Collaboration via communication should become part of the organization's DNA.
+Remote team members are now the norm in many companies. Everyone needs to feel comfortable with all their team members and to treat them equally, whether they're in the office or working offsite. Collaboration via communication should become part of the organization's DNA.
 
-The importance of good communication can’t be overemphasized, even when there are disagreements. Conflict resolution is a good skill for any Agile team to have.
+The importance of good communication can't be overemphasized, even when there are disagreements. Conflict resolution is a good skill for any Agile team to have.
 
 #### Cross-functional teams
 
-Just as it’s important for team members to work collaboratively, it’s also important for teams to collaborate with each other. Cross-functional teams add new skills and perspectives that can broaden everyone’s ability to solve challenges creatively. Cross-functional teams also make the entire organization more cohesive. They reduce turf wars and increase the sense that everyone is working toward a common goal.
+Just as it's important for team members to work collaboratively, it's also important for teams to collaborate with each other. Cross-functional teams add new skills and perspectives that can broaden everyone's ability to solve challenges creatively. Cross-functional teams also make the entire organization more cohesive. They reduce turf wars and increase the sense that everyone is working toward a common goal.
 
 #### Tools for collaboration
 
