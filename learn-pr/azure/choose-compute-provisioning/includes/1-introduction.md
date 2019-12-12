@@ -13,5 +13,5 @@ At the end of this module, you'll be able to:
 
 ## Prerequisites
 
-- Basic knowledge of Azure virtual machines.
-- Basic knowledge of PowerShell.
+- Basic knowledge of Azure virtual machines
+- Basic knowledge of PowerShell

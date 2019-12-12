@@ -34,9 +34,9 @@ The custom script extension is good for small configurations after provisioning.
 
 - **Ease of setup.** Desired State Configurations (DSCs) are easy to read, update, and store. Configurations define what state you want to achieve. The author doesn't need to know how that state is reached.
 - **Management.** DSC democratizes configuration management across servers.
-- **Interoperability.** DSCs are used with Azure Automation State Configuration. They can be configured through the Azure portal, Azure PowerShell, or Azure Resource Manager templates.
+- **Interoperability.** DSCs are used with Azure automation state configuration. They can be configured through the Azure portal, Azure PowerShell, or Azure Resource Manager templates.
 - **Configuration language.** Use PowerShell to configure DSC.
-- **Limitations and drawbacks.** You can only use PowerShell to define configurations. If you use DSC without Azure Automation State Configuration, you have to take care of your own orchestration and management.
+- **Limitations and drawbacks.** You can only use PowerShell to define configurations. If you use DSC without Azure automation state configuration, you have to take care of your own orchestration and management.
 
 ### Scenario
 
@@ -46,13 +46,13 @@ You decide to use DSC. DSC configurations are easy to read. You can declare a si
 
 ### Solution summary
 
-DSC is easy to read, update, and store. DSC configurations help you declare the state your machines should be in at the point they are provisioned, rather than having instructions that detail how to put the machines in a certain state. Without Azure Automation State Configuration, you have to manage your own DSC configurations and orchestration. DSC can achieve more when it's coupled with Azure Automation State Configuration.
+DSC is easy to read, update, and store. DSC configurations help you declare the state your machines should be in at the point they are provisioned, rather than having instructions that detail how to put the machines in a certain state. Without Azure automation state configuration, you have to manage your own DSC configurations and orchestration. DSC can achieve more when it's coupled with Azure automation state configuration.
 
-## Azure Automation State Configuration
+## Azure automation state configuration
 
-- **Ease of setup.** Automation State Configuration isn't difficult to set up, but it requires the user to be familiar with the Azure portal.
-- **Management.** The service manages all of the virtual machines for you automatically. Each virtual machine can send you detailed reports about its state, which you can use to draw insights from this data. Automation State Configuration also helps you to manage your DSC configurations more easily.
-- **Interoperability.** Automation State Configuration requires DSC configurations. It works with your Azure virtual machines automatically, and any virtual machines that you have on-premises or on another cloud provider.
+- **Ease of setup.** Automation state configuration isn't difficult to set up, but it requires the user to be familiar with the Azure portal.
+- **Management.** The service manages all of the virtual machines for you automatically. Each virtual machine can send you detailed reports about its state, which you can use to draw insights from this data. Automation state configuration also helps you to manage your DSC configurations more easily.
+- **Interoperability.** Automation state configuration requires DSC configurations. It works with your Azure virtual machines automatically, and any virtual machines that you have on-premises or on another cloud provider.
 - **Configuration language.** Use PowerShell.
 - **Limitations and drawbacks.** You can only use PowerShell to define configurations.
 
@@ -60,11 +60,11 @@ DSC is easy to read, update, and store. DSC configurations help you declare the 
 
 You learn that the company you work for wants to be able to create hundreds of virtual machines, with identical configurations. They want to report back on these configurations. They want to be able to see which machines accept which configurations without problems. They also want to see those problems when a machine doesn't achieve a desired state. In addition, they want to be able to feed all of this data into a monitoring tool so they can analyze all of the data and learn from it.
 
-Based on the requirements provided to you by your organization, you decide that the best solution is to use Azure Automation State Configuration with DSC configurations declaring the states. Azure Automation State Configuration can automatically set your DSC state configurations on all of your nodes. This approach also ensures that the machines report the state of each node. You can also forward this data to Azure Monitor logs. You use Azure Automation State Configuration to improve the management of your DSC state configurations.
+Based on the requirements provided to you by your organization, you decide that the best solution is to use Azure automation state configuration with DSC configurations declaring the states. Azure automation state configuration can automatically set your DSC state configurations on all of your nodes. This approach also ensures that the machines report the state of each node. You can also forward this data to Azure Monitor logs. You use Azure automation state configuration to improve the management of your DSC state configurations.
 
 ### Solution summary
 
-The Azure Automation State Configuration service is good for automating your DSC configurations, along with the management of machines that need those configurations, and getting centralized reporting back from each machine. You can use DSC without Azure Automation State Configuration, particularly if you want to administer a smaller number of machines. For larger and more complicated scenarios that need orchestration, Azure Automation State Configuration is the solution you need. All of the configurations and features that you need can be pushed to all of the machines, and applied equally, with minimal effort.
+The Azure automation state configuration service is good for automating your DSC configurations, along with the management of machines that need those configurations, and getting centralized reporting back from each machine. You can use DSC without Azure automation state configuration, particularly if you want to administer a smaller number of machines. For larger and more complicated scenarios that need orchestration, Azure automation state configuration is the solution you need. All of the configurations and features that you need can be pushed to all of the machines, and applied equally, with minimal effort.
 
 ## Azure Resource Manager templates
 

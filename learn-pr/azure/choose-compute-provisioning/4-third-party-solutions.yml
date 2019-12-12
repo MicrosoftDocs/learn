@@ -8,7 +8,7 @@ metadata:
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Choose a third party solution
+title: Choose a third-party solution
 durationInMinutes: 10
 content: |
   [!include[](includes/4-third-party-solutions.md)]
