@@ -10,7 +10,7 @@ In this module you will:
 - Learn about the hybrid lambda architecture of IoT
 - Learn when to use Azure Blob storage, and when to upgrade to Azure Data Lake storage
 - Learn when to create a Cosmos DB database
-- Learn the visualizations of Time Series Insights
+- Learn the features of Time Series Insights
 
 ## Prerequisites
 

@@ -1,5 +1,5 @@
 
-Cosmos, another word for "universe", implies that Cosmos DB is the solution for world-wide applications. Another feature of the Cosmos DB resource is that it's well structured. Not the collection of stuff that can be stored in a blob. The obvious example is a database, where each entry in the database has a consistent set of fields.
+Cosmos, another word for "universe", implies that Cosmos DB is the solution for world-wide applications. Another feature of the Cosmos DB resource is that it's well structured. Not the collection of stuff that can be stored in a Blob. The obvious example is a database, where each entry in the database has a consistent set of fields.
 
 Access to the data in a Cosmos DB resource is made through queries built from API calls. Cosmos DB supports a range of APIs, including SQL API, Mongo API, Gremlin (graph) API, Azure Table API, and the Cassandra API. At the lowest level, a Cosmos DB consists of JSON objects.
 
@@ -67,4 +67,4 @@ Another issue you need to consider in your choice of IoT cloud services, is the 
 
 ## Best Practices
 
-A Cosmos DB resource is usually a more expensive option than blob storage. Create a Cosmos DB resource when you have a mass of well-structured, time critical data. The case for a Cosmos DB is stronger still, if the data needs to be available in several locations across the globe.
+A Cosmos DB resource is usually a more expensive option than Blob storage. Create a Cosmos DB resource when you have a mass of well-structured, time critical data. The case for a Cosmos DB is stronger still, if the data needs to be available in several locations across the globe.

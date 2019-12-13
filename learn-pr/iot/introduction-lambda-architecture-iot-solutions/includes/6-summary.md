@@ -3,7 +3,7 @@ In this module, you learned about:
 - The hybrid lambda architecture of IoT
 - Azure Blob storage, and Azure Data Lake storage
 - Cosmos DB databases
-- The visualizations available in Time Series Insights
+- The features of the Time Series Insights service
 
 And you learned that Azure IoT can have a worldwide reach!
 

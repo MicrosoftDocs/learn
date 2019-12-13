@@ -1,6 +1,6 @@
 With IoT telemetry data streaming in hot from your IoT devices, you might wish to visualize that data quickly, and run some analytics. A key feature of telemetry is that it is time-stamped: time and order are critical elements of the data.
 
-The basis of an IoT solution is the IoT Hub, the cloud service built to handle millions of telemetry readings, and channel that data somewhere useful. The data can be routed for some real-time analytics. And routed to blob storage for archive, or for a colder deeper analysis.
+The basis of an IoT solution is the IoT Hub, the cloud service built to handle millions of telemetry readings, and channel that data somewhere useful. The data can be routed for some real-time analytics. And routed to Blob storage for archive, or for a colder deeper analysis.
 
 The first place to look for time-based analytics is the built-in _Time Series Insights_ service. This service both enables you to visualize your data without writing any code, and enables you to perform regular expression based analytics. The routing, visualization, and analytics, can all be done via the Azure portal. For simpler analytics, the UI can be used to create the expressions. For deeper analysis, and for integration with programming languages, there is a REST based API.
 
