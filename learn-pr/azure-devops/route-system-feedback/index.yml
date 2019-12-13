@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.azdo.route-system-feedback-to-development-teams
+uid: learn.azdo.route-system-feedback
 metadata:
   title: Implement Process for Routing System Feedback to Development Teams - Learn
   description: Learn ...n.
@@ -29,10 +29,10 @@ roles:
 products:
 - azure-devops
 units:
-- learn.azdo.route-system-feedback-to-development-teams.1-introduction
-- learn.azdo.route-system-feedback-to-development-teams.2-tools-track-usage-flow
-- learn.azdo.route-system-feedback-to-development-teams.3-monitoring-status-dashboards
-- learn.azdo.route-system-feedback-to-development-teams.4-ticketing-systems
-- learn.azdo.route-system-feedback-to-development-teams.5-summary
+- learn.azdo.route-system-feedback.1-introduction
+- learn.azdo.route-system-feedback.2-tools-track-usage-flow
+- learn.azdo.route-system-feedback.3-monitoring-status-dashboards
+- learn.azdo.route-system-feedback.4-ticketing-systems
+- learn.azdo.route-system-feedback.5-summary
 badge:
-  uid: learn.azdo.route-system-feedback-to-development-teams.badge
+  uid: learn.azdo.route-system-feedback.badge
