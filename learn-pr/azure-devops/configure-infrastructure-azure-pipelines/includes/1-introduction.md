@@ -4,16 +4,16 @@ In the [Provision infrastructure in Azure Pipelines](/learn/modules/provision-in
 
 _Configuration as code_ is a similar concept. However, instead of describing the infrastructure itself, with configuration as code you describe how your infrastructure needs to be configured to run your application or service.
 
-If you've ever received an emergency support call in the middle of the night because of a crashed server, you know the pain of searching through multiple spreadsheets &mdash; or even your memory &mdash; to access the manual steps of setting up a new machine. There is also the difficulty of keeping the development and production environments consistent. An easier way to remove the possibility of human error when initializing machines is to configure them automatically through code. By treating configuration as code, you can configure many systems identically from a single consistent definition.
+Ever received an emergency support call in the middle of the night because of a crashed server? Then you know the pain of searching through multiple spreadsheets, or even your memory, to access the manual steps of setting up a new machine. There's also the difficulty of keeping the development and production environments consistent. An easier way to remove the possibility of human error when initializing machines is to configure them automatically through code. By treating configuration as code, you can configure many systems identically from a single consistent definition.
 
-In this module, you continue your journey with the Tailspin team as they add automatic configuration tasks to their CI/CD pipeline.
+In this module, you continue your journey with the Tailspin team, as they add automatic configuration tasks to their CI/CD pipeline.
 
 ## Learning objectives
 
 In this module, you'll:
 
 - Learn what we mean by _configuration as code_ and discover the kinds of tools you can use to configure your systems.
-- Apply a Ansible playbook that configures service accounts on a Linux virtual machine running on Azure.
+- Apply an Ansible playbook that configures service accounts on a Linux virtual machine running on Azure.
 - Create a pipeline in Azure Pipelines that configures your infrastructure when the pipeline runs.
 
 ## Prerequisites
