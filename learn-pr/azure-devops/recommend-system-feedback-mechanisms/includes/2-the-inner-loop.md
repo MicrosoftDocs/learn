@@ -14,7 +14,7 @@ Both loops might include a fourth step, where you commit and integrate your chan
 
 In reality, most codebases consist of multiple moving parts. The definition of a developer's inner loop on any single codebase might vary depending on what they're working on.
 
-## What steps in the inner loop add value?
+## Which steps in the inner loop add value?
 
 You can group the steps within the inner loop into three broad categories: *experimentation*, *feedback collection*, and *tax*.
 

@@ -3,7 +3,7 @@ uid: learn.azdo.recommend-system-feedback-mechanisms
 metadata:
   title: Recommend and design system feedback mechanisms - Learn
   description: Learn ...
-  ms.date: 06/21/2019
+  ms.date: 12/20/2019
   author: tpetchel
   ms.author: thpetche
   ms.topic: interactive-tutorial
@@ -32,7 +32,7 @@ units:
 - learn.azdo.recommend-system-feedback-mechanisms.1-introduction
 - learn.azdo.recommend-system-feedback-mechanisms.2-the-inner-loop
 - learn.azdo.recommend-system-feedback-mechanisms.3-continuous-experimentation-mindset
-- learn.azdo.recommend-system-feedback-mechanisms.4-measure-end-user-satisfaction
+- learn.azdo.recommend-system-feedback-mechanisms.4-measure-customer-satisfaction
 - learn.azdo.recommend-system-feedback-mechanisms.5-capture-analyze-user-feedback
 - learn.azdo.recommend-system-feedback-mechanisms.6-automate-application-analytics
 - learn.azdo.recommend-system-feedback-mechanisms.7-summary
