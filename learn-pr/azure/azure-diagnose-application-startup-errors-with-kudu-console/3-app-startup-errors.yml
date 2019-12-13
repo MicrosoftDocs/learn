@@ -32,7 +32,7 @@ quiz:
     - content: "Alerts"
       isCorrect: false
       explanation: "Kudu console does not automatically generate alerts to monitor issues."
-    - content: "Automatic faliure detection"
+    - content: "Automatic failure detection"
       isCorrect: false
       explanation: "Automatic failure detection in web apps is not supported by Kudu console."
     - content: "Run git commands to diagnose issues."
