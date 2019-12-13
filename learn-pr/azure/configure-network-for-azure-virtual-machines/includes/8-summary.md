@@ -10,4 +10,9 @@ Azure VPN gateways can enable communication with on-premises clients or networks
 
 ## Cleanup
 
-The interactive exercises in this module created two resource groups, `VpnGatewayDemo` and `vm-networks`. Delete these resource groups to clean up the resources created during the exercises.
+The interactive exercises in this module created two resource groups, `VpnGatewayDemo` and `vm-networks`. Run the following commands to delete these resource groups and the resources they contain:
+
+```PowerShell
+Remove-AzResourceGroup -Name vm-networks `
+Remove-AzResourceGroup -Name VpnGatewayDemo
+```
