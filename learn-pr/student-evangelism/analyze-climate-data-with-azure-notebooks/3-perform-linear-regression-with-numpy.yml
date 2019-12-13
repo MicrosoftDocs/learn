@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.analyze-climate-data-with-azure-notebooks.perform-linear-regression-with-numpy
-title: Perform Linear Regression with Numpy
+title: Exercise - Perform Linear Regression with Numpy
 metadata:
-  title: Perform Linear Regression with Numpy
+  title: Exercise - Perform Linear Regression with Numpy
   description: Perform Linear Regression with Numpy
   ms.date: 02/25/2019
   author: JeffProsise

@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.analyze-climate-data-with-azure-notebooks.upload-data-and-create-scatterplot
-title: Upload Data and Create Scatterplot
+title: Exercise - Upload Data and Create Scatterplot
 metadata:
-  title: Upload Data and Create Scatterplot
+  title: Exercise - Upload Data and Create Scatterplot
   description: Upload Data and Create Scatterplot
   ms.date: 02/25/2019
   author: JeffProsise
