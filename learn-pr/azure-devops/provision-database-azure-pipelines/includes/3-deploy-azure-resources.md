@@ -294,7 +294,7 @@ SQL_PASSWORD=$(openssl rand -base64 32)
       --parameters deployPrefix="-dev-" uniqueSuffix=$UNIQUE_ID adminPassword="$SQL_PASSWORD"
     ```
 
-    Wait for the deployment to finish. Notice that we are passing in the parameters that we need. Later you'll move them to a parameters file, pipeline variables, and key vault.
+    Wait for the deployment to finish. Notice that we're passing in the parameters that we need. Later you'll move them to a parameters file, pipeline variables, and key vault.
 
 1. Go to the Azure portal and select **Resource groups**, and then select the **tailspin-spacegame-web-rg** resource group. Notice that you have an App Service plan, an App Service instance, and a SQL Server instance. Take note of the suffix on each of these resources. It's made from the `deployPrefix` variable and your `uniqueSuffix` variable.
 

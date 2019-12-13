@@ -1,6 +1,6 @@
 This module is about building automation to provision databases in Azure Pipelines, by using Azure Resource Manager templates and Azure SQL Database as an example.
 
-In this module, you use _infrastructure as code_ to deploy the _Space Game_ web application that's using a SQL database. You deploy your infrastructure by using an Azure Resource Manager template and a multistage pipeline with Azure Pipelines. This pipeline will also manage changes to the database schema. You use Azure Key Vault to store secrets and later access those secrets from the Azure Resource Manager template as well as Azure Pipelines.
+In this module, you use _infrastructure as code_ to deploy the _Space Game_ web application that's using a SQL database. You deploy your infrastructure by using an Azure Resource Manager template and a multistage pipeline with Azure Pipelines. This pipeline will also manage changes to the database schema. You use Azure Key Vault to store secrets and later access those secrets from the Azure Resource Manager template and Azure Pipelines.
 
 In [Manage database changes in Azure Pipelines](/learn/modules/manage-database-changes-in-azure-pipelines/?azure-portal=true), you added stages to your pipeline. These stages checked for database schema changes, waited for DBA approval of those changes, and then applied the changes to the database.
 
@@ -26,7 +26,7 @@ To follow the progression from the beginning, be sure to first complete these le
 
 This module builds on [Manage database changes in Azure Pipelines](/learn/modules/manage-database-changes-in-azure-pipelines/?azure-portal=true), from the [Deploy applications with Azure DevOps](/learn/paths/deploy-applications-with-azure-devops?azure-portal=true) learning path. In that module, you provisioned infrastructure manually. In this module, you build an Azure Resource Manager template that produces the same result through automation.
 
-We also recommend you start at the beginning of this learning path: [Automate your deployments with Azure DevOps](/learn/paths/automate-deployments-azure-devops?azure-portal=true).
+We also recommend that you start at the beginning of this learning path: [Automate your deployments with Azure DevOps](/learn/paths/automate-deployments-azure-devops?azure-portal=true).
 
 If you want to go through just this module, you need to set up a development environment on your Windows, macOS, or Linux system. You need:
 

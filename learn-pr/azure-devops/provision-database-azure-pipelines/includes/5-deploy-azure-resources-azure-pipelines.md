@@ -124,7 +124,7 @@ In the previous exercise, you forked and cloned the repo you'll need for this mo
     * **uniqueSuffix.value**: Any combination of four or five digits. This suffix helps keep your resource names unique.
     * **keyVault.id**: The key vault ID that you obtained earlier. There are two occurrences of this value. Be sure to set both.
 
-    If you need help setting these values, run the following commands in Cloud Shell:
+    If you need help with setting these values, run the following commands in Cloud Shell:
 
     **keyVaultName.value**:
 
@@ -231,7 +231,7 @@ Add a variable group and variables to the pipeline.
     | **keyVaultName** | Your key vault name. |
     | **uniqueSuffix** | Your unique suffix. This is the **uniqueSuffix.value** value that you set in *deploymentParameters.json*. |
 
-    If you need help setting these values, run the following commands in Cloud Shell:
+    If you need help with setting these values, run the following commands in Cloud Shell:
 
     **location**:
 
@@ -241,7 +241,7 @@ Add a variable group and variables to the pipeline.
       --output table
     ```
 
-    Select a location near you, for example, **eastus**.
+    Select a location near you. For example, select **eastus**.
 
     **subscription**:
 
@@ -296,7 +296,7 @@ Add a variable group and variables to the pipeline.
 
     Remember that you can create a template from scratch, download a starter template, or generate one from resources you already have. The [Manage database changes in Azure Pipelines](/learn/modules/manage-database-changes-in-azure-pipelines/?azure-portal=true) module had you create the necessary infrastructure manually in the Azure portal. This template file is the result of exporting the resource group that was created in that module. It has been modified to add the parts that the team discussed for pipeline deployment, and to remove the _Test_ and _Staging_ App Service deployments. For learning purposes, the default policies have also been removed.
 
-    Notice the creation of the database. Just as in the [Manage database changes in Azure Pipelines](/learn/modules/manage-database-changes-in-azure-pipelines/?azure-portal=true) module, the database is created and the data is inserted by using a *.bacpac* file and an import extension in the resources section in a resource called `Import`. You don't want to import the database twice, so you use the `firstRun` parameter as a condition here.
+    Notice the creation of the database. As in the [Manage database changes in Azure Pipelines](/learn/modules/manage-database-changes-in-azure-pipelines/?azure-portal=true) module, the database is created and the data is inserted by using a *.bacpac* file and an import extension in the resources section in a resource called `Import`. You don't want to import the database twice, so you use the `firstRun` parameter as a condition here.
 
     ```json
     {

@@ -10,7 +10,7 @@ As a reminder, here's the pipeline diagram from that previous module.
 
 The _Build_ stage has a job to build the web app and a job to build the database project. ![Callout 1](../../shared/media/callout-01.png) The database project produces a _.dacpac_ file that is a build artifact.
 
-The next stage ![Callout 2](../../shared/media/callout-02.png) scripts the database changes so that the ![Callout 3](../../shared/media/callout-03.png) DBA can verify the changes before they're are applied.
+The next stage ![Callout 2](../../shared/media/callout-02.png) scripts the database changes so that the ![Callout 3](../../shared/media/callout-03.png) DBA can verify the changes before they're applied.
 
 An ![Callout 4](../../shared/media/callout-04.png) approval is added to the next stage that ![Callout 5](../../shared/media/callout-05.png) applies the database changes. The last three stages ![Callout 6](../../shared/media/callout-06.png) deploy to _Dev_, _Test_, and _Staging_ environments.
 
@@ -20,7 +20,7 @@ In this section, you:
 
 > [!div class="checklist"]
 > * Learn about infrastructure as code using Resource Manager templates.
-> * Design a Resource Manager template for Azure App Service and SQL Database to use in Azure Pipelines.
+> * Design a Resource Manager template for Azure App Service and Azure SQL Database to use in Azure Pipelines.
 > * Understand how to use Azure Key Vault to store and retrieve secrets by using Resource Manager templates and Azure Pipelines.
 > * Learn what you need to add a Resource Manager template to Azure Pipelines.
 
@@ -84,7 +84,7 @@ So now we have Key Vault and another parameter.
 
 **Tim:** Wait. The connection string to the database is sensitive data too, and we may need it again just like the administrator password. I suggest we add it to Key Vault as well.
 
-**Mara:** Excellent idea! We can use the template to add the connection string to Key Vault. This means we need the Key Vault name in the parameter file too. The template will need it.
+**Mara:** Excellent idea! We can use the template to add the connection string to Key Vault. This means we need the name of the key vault in the parameter file too. The template will need it.
 
 *Andy updates the whiteboard.*
 
