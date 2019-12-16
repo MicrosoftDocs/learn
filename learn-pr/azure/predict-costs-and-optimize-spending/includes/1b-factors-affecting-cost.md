@@ -37,9 +37,9 @@ A **Zone** is a geographical grouping of Azure Regions for billing purposes. The
 
 | Zone | Areas |
 |------|---------|
-| Zone 1 | United States, Europe, Canada, UK, France | 
-| Zone 2 | Asia Pacific, Japan, Australia, India, Korea |
-| Zone 3 | Brazil |
+| Zone 1 | United States, US Government, Europe, Canada, UK, France, Switzerland | 
+| Zone 2 | East Asia, Southeast Asia, Japan, Australia, India, Korea |
+| Zone 3 | Brazil, South Africa, UAE |
 | DE Zone 1 | Germany |
 
 In most zones, the first outbound 5 GB per month is free. After that, you are billed a fixed price per GB.
