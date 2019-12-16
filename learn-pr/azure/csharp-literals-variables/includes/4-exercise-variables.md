@@ -108,7 +108,7 @@ Grant
 
 ### Step 7: Initialize the variable.
 
-You must set variable to a value before you can get the value from the variable.  Otherwise, you'll see an error.
+You must set a variable to a value before you can get the value from the variable.  Otherwise, you'll see an error.
 
 Modify the code you wrote in Step 6 to match the following code:
 
