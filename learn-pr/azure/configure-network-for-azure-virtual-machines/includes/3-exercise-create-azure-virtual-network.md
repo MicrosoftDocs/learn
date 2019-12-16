@@ -12,38 +12,26 @@ Sign in to Azure either by using the PowerShell cmdlet `Connect-AzAccount` on yo
 First, create a resource group to contain all of the resources you'll create in this module. Name it `vm-networks` and replace `EastUS` in the following command with the name of the region in which you'd like the group to be created.
 
 ```PowerShell
-New-AzResourceGroup -Name vm-networks -Location EastUS
+$Location = "EastUS" 
+New-AzResourceGroup -Name vm-networks -Location $Location
 ```
 
-## Create a virtual network and subnet
+## Create a subnet and virtual network
 
-To create a virtual network, enter the following command.
-
-
-```PowerShell
- New-AzVirtualNetwork `
-  -ResourceGroupName vm-networks `
-  -Location EastUS `
-  -Name myVnet `
-  -AddressPrefix 10.0.0.0/16
-```
-
-To create a subnet, run the following command.
+To create a subnet and virtual network, run the following command.
 
 ```PowerShell
- Add-AzVirtualNetworkSubnetConfig `
-  -Name default `
-  -AddressPrefix 10.0.0.0/24 `
-  -VirtualNetwork myVnet
+ $Subnet= New-AzVirtualNetworkSubnetConfig -Name default -AddressPrefix 10.0.0.0/24
+ New-AzVirtualNetwork -Name myVnet -ResourceGroupName vm-networks -Location $Location -AddressPrefix 10.0.0.0/16 -Subnet $Subnet
 ```
 
 ## Create two virtual machines
 
-All Azure virtual machines are connected to a virtual network. If you create a virtual machine using the Azure CLI and don't specify the name of an existing virtual network, the CLI will search the target resource group for an appropriate virtual network to use, based on location and subnet availability. If no match is found, a new virtual network will be created automatically.
+All Azure virtual machines are connected to a virtual network. If you create a virtual machine using Azure PowerShell and don't specify the name of an existing virtual network, Azure PowerShell creates a new virtual network automatically.
 
-Here, we create two virtual machines without specifying any virtual network information. The default network specifications match the attributes of `myVnet`, so the CLI will automatically locate and use it.
+Here, we create two virtual machines and specify the virtual network.
 
-1. To create the first virtual machine, run the following command to create a Windows VM with a public IP address that is accessible over port 3389 (Remote Desktop). This creates a Windows 2016 Datacenter VM named `dataProcStage1`.
+1. To create the first virtual machine, run the following command to create a Windows VM with a public IP address that is accessible over port 3389 (Remote Desktop). This creates a Windows 2016 Datacenter VM named `dataProcStage1` that uses the myVnet virtual network.
 
    ```PowerShell
    New-AzVm `
@@ -51,31 +39,50 @@ Here, we create two virtual machines without specifying any virtual network info
     -Name "dataProcStage1" `
     -VirtualNetworkName "myVnet" `
     -SubnetName "default" `
-    -image "Win2016Datacenter"
+    -image "Win2016Datacenter" `
+    -Size "Standard_DS2_v2"
     ```
 
     Port 3389 is opened automatically by default when you create a Windows VM in Azure.
 
 1. Enter a user name and password for the VM. Write down user name and password. You need it later to sign in to the server.
 
-1. Copy the **publicIpAddress** value in the returned JSON from creating your VM so you can use it later.
+1. Run the following command to get the public IP address for your VM so you can use it later. Copy the **IpAddress**.
 
-1. Create the second VM named `dataProcStage2` with no public IP address.
+   ```PowerShell
+   Get-AzPublicIpAddress -Name dataProcStage1
+    ```
+
+1. Create the second VM named `dataProcStage2`.
 
    ```PowerShell
    New-AzVm `
     -ResourceGroupName "vm-networks" `
     -Name "dataProcStage2" `
-    -image "Win2016Datacenter"
-   ```
+    -VirtualNetworkName "myVnet" `
+    -SubnetName "default" `
+    -image "Win2016Datacenter" `
+    -Size "Standard_DS2_v2"
+    ```
 
 1. Enter a user name and password for the VM. Write down user name and password. You need it later to sign in to the server.
+1. Disassociate the public IP address that was created by default for the VM.
+
+   ```PowerShell
+   $nic = Get-AzNetworkInterface -Name dataProcStage2 -ResourceGroup vm-networks
+   $nic.IpConfigurations.publicipaddress.id = $null
+   Set-AzNetworkInterface -NetworkInterface $nic 
+   ```
 
 ## Connect to dataProcStage1 using Remote Desktop
 
-1. Open Remote Desktop and connect to `dataProcStage1` with the public IP address you noted from the previous steps.
+1. Open Remote Desktop and connect to `dataProcStage1` with the public IP address you noted from the previous steps. If you're using PowerShell locally, use the following command and replace `publicIpAddress` with the VM's public IP address.
 
-1. Log into the remote machine with the username and the password you created.
+   ```PowerShell
+   mstsc /v:publicIpAddress
+   ```
+
+1. Sign into the remote machine with the username and the password you created.
 
 1. In the remote session, open the Windows command prompt and run the following command:
 
@@ -87,7 +94,7 @@ Here, we create two virtual machines without specifying any virtual network info
 
 ## Connect to dataProcStage2 using Remote Desktop
 
-You'll configure the Windows Firewall on `dataProcStage2` using a new remote desktop session. However, you'll not able to access `dataProcStage2` from your desktop. Recall, `dataProcStage2` does not have a public IP address. You will use remote desktop from `dataProcStage1` to connect to `dataProcStage2`.
+Configure the Windows Firewall on `dataProcStage2` using a new remote desktop session. You can't access `dataProcStage2` from your desktop because `dataProcStage2` doesn't have a public IP address. You'll use remote desktop from `dataProcStage1` to connect to `dataProcStage2`.
 
 1. In the `dataProcStage1` remote session, open Remote Desktop.
 
