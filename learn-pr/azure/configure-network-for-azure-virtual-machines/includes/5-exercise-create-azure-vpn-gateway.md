@@ -12,9 +12,11 @@ You will carry out the following process:
 
 ## Setup
 
-To complete this module, you will use Azure PowerShell from your local Windows 10 computer.
+To complete this module, use Azure PowerShell from your local Windows 10 computer.
 
-We'll start by setting up variables to be used when we create a virtual network. Open a new PowerShell session, copy and paste in the following variables
+1. Open a new PowerShell session on your local Windows 10 computer where you have the Azure PowerShell module installed.
+1. Sign in to Azure by using the PowerShell cmdlet `Connect-AzAccount`.
+1. Set up variables you'll use to create a virtual network. Copy and paste in the following variables into PowerShell.
 
 ```PowerShell
 $VNetName  = "VNetData"
@@ -129,7 +131,8 @@ With our certificates generated, we need to export our root certificate's public
 
 1. Run `certmgr` from PowerShell to open the Certificate Manager.
 
-1. Navigate to **Personal** > **Certificates**. Find and right-click the **P2SRootCert** certificate in the list and select **All tasks** > **Export...**.
+1. Go to **Personal** > **Certificates**.
+1. Right-click the **P2SRootCert** certificate in the list and select **All tasks** > **Export...**.
 
 1. In the Certificate Export Wizard, click **Next**.
 
