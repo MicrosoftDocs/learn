@@ -82,7 +82,7 @@ Here, we create two virtual machines and specify the virtual network.
    mstsc /v:publicIpAddress
    ```
 
-1. Sign into the remote machine with the username and the password you created.
+1. Sign in to the remote machine with the username and the password you created.
 
 1. In the remote session, open the Windows command prompt and run the following command:
 
