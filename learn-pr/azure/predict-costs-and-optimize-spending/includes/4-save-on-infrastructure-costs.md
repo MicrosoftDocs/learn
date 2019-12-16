@@ -45,7 +45,7 @@ The cost of Azure products, services, and resources can vary across locations an
 
 ## Research available cost-saving offers
 
-Keep up-to-date with the latest Azure customer and subscription offers, and switch to offers that provide the most significant cost-saving benefit.
+Keep up to date with the latest Azure customer and subscription offers, and switch to offers that provide the most significant cost-saving benefit.
 
 You can check the [Azure Updates page](https://azure.microsoft.com/updates/) for information about the latest updates to Azure products, services, and features, as well as product roadmaps and announcements.
 
