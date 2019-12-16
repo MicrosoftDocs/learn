@@ -10,7 +10,7 @@ In this module you will:
 - Learn about the hybrid lambda architecture of IoT
 - Learn when to use Azure Blob storage, and when to upgrade to Azure Data Lake storage
 - Learn when to create a Cosmos DB database
-- Learn the features of Time Series Insights
+- Learn the purpose of Time Series Insights
 
 ## Prerequisites
 
@@ -18,7 +18,7 @@ In this module you will:
 
 ## Learn the basics of Azure IoT
 
-The concept of the Internet of Things (IoT) is that one or more, could be thousands, of remote sensor devices are pumping out telemetry values. These values are received by an IoT Hub, an Azure resource designed to handle telemetry readings from all these sources. The IoT Hub routes the data to the storage or analysis processes that you specify.
+The concept of the Internet of Things (IoT) is that one or more, could be thousands, of remote sensor devices are pumping out telemetry values. These values are received by an IoT Hub, an Azure resource designed to handle telemetry readings from all these devices. The IoT Hub routes the data to the storage, or analysis, processes that you specify.
 
 ![Graph illustration of telemetry](../media/lambda-telemetry.png)
 

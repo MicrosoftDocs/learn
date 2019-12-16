@@ -59,7 +59,7 @@ So what consistency level would be right for our vibration data example?  _Stron
 
 A more complex scenario exists if your IoT devices are in multiple regions. You would have to enable multiple write regions. Keeping the data in sync is a likely priority, if running analysis on the combined data. In this case, set a stronger consistency level such as Strong, or Bounded.
 
-In the scenario where the read regions are only storing the data, or performing cold analysis, the Prefix consistency level would work well too. Given the order of telemetry readings is important for analysis, the lowest consistency level, Eventual, is unlikely to be appropriate for many IoT applications.
+In the scenario where the read regions are only storing the data, or performing cold analysis, the Prefix consistency level would work well too. Given the order of telemetry readings is important for analysis, the lowest consistency level, Eventual, is unlikely to be appropriate for most IoT applications.
 
 ### Consider the response time to time-critical data
 

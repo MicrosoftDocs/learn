@@ -16,7 +16,7 @@ abstract: |
   - Learn about the hybrid lambda architecture of IoT
   - Learn when to use Azure Blob storage, and when to upgrade to Azure Data Lake storage
   - Learn when to create a Cosmos DB database
-  - Learn the features of Time Series Insights
+  - Learn the purpose of Time Series Insights
 prerequisites: | 
   - An introductory knowledge of Azure IoT
 iconUrl: /learn/achievements/iot/introduction-lambda-architecture-iot-solutions.svg

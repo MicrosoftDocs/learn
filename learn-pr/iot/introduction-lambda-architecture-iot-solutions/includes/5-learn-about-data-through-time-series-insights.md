@@ -20,6 +20,6 @@ The third option is a table of results, again divided up into time chunks. A tab
 
 ## Best Practices
 
-The key point here is that the three visualization methods shown above are easily made available through an Azure Time Series Insights resource. Set up time is measured in minutes, and off you go! Multiple charts can be displayed on one page. Precise queries can be constructed, either by using the user interface, or typing in some regular expressions.
+The key point here is that the three visualization methods shown above are easily made available through an Azure Time Series Insights resource. Set up time is measured in minutes, and off you go! Multiple charts can be displayed on one page. Precise queries can be constructed, either by using the user interface, or by typing in some regular expressions.
 
 It makes sense to check out the out-of-the-box abilities and features of Time Series Insights, before engaging in more costly options. If the resource works well with your data, consider developing your own dashboards, or analytics tools, using the API.
