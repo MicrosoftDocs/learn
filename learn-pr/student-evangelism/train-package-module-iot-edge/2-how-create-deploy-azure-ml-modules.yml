@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure-iot-hub
 durationInMinutes: 10 # dummy number at present
 content: |
-  [!include[](includes/2-how-create-and-deploy-azure-ml-modules.md)]
+  [!include[](includes/2-how-create-deploy-azure-ml-modules.md)]
