@@ -32,9 +32,9 @@ To clean up your resource group:
 
 ## Move the work item to Done
 
-Move the work item that you assigned to yourself earlier in this module, **Manage database schema changes**, to the **Done** column.
+Move the work item that you assigned to yourself earlier in this module, **Provision a database in each environment**, to the **Done** column.
 
-In practice, the definition of "done" often means functioning software your users. For learning purposes, here you'll mark this work as complete because the goal for the Tailspin team is to provision the database through automation.
+In practice, the definition of "done" often means functioning software for your users. For learning purposes, here you'll mark this work as complete because the goal for the Tailspin team is to provision the database through automation.
 
 At the end of each sprint or work iteration, you and your team might hold a retrospective meeting. There, you share the work that you completed, what went well in the sprint, and what can be improved.
 

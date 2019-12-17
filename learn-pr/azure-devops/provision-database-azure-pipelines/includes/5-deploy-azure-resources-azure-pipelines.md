@@ -32,7 +32,7 @@ In the previous exercise, you forked and cloned the repo you'll need for this mo
     UNIQUE_ID=$RANDOM
     ```
 
-1. Run the following code to create a key vault to store `adminPassword`. Notice the `enabled-for-template-deployment` parameter. It enables your template to query the key vault after permissions are established.
+1. Run the following command to create a key vault to store `adminPassword`. Notice the `enabled-for-template-deployment` parameter. It enables your template to query the key vault after permissions are established.
 
     ```azurecli
     az keyvault create \
@@ -55,7 +55,7 @@ In the previous exercise, you forked and cloned the repo you'll need for this mo
     SQL_PASSWORD=$(openssl rand -base64 32)
     ```
 
-1. Run the following code to set the secret in the key vault.
+1. Run the following command to set the secret in the key vault.
 
     ```azurecli
     az keyvault secret set \

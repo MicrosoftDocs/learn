@@ -252,7 +252,7 @@ For learning purposes, here you generate a random number and assign it to the `U
     UNIQUE_ID=$RANDOM
     ```
 
-1. Print this to the console. Write it down for later.
+1. Print this `UNIQUE_ID` to the console. Write it down for later.
 
     ```bash
     echo $UNIQUE_ID
