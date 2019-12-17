@@ -1,92 +1,92 @@
-Cpoied from ILT
 
-## Azure Dashboards
+## Azure dashboards
 
-Visualizations such as charts and graphs can help you analyze your monitoring data to drill-down on issues and identify patterns. Depending on the tool you use, you may also have the option to share visualizations with other users inside and outside of your organization.
+Visualizations, such as charts and graphs, can help you analyze your monitoring data to drill-down on issues and identify patterns. Depending on the tool you use, you may also have the option to share visualizations with other users inside and outside of your organization.
 
-Azure Dashboards
+[Dashboards](https://docs.microsoft.com/en-us/azure/azure-portal/azure-portal-dashboards) provide a way for you to create a focused and organized view in the Azure portal of your cloud resources. They provide a "single pane of glass" over your Azure infrastructure and services, which enables you to  identify important issues more quickly.
 
-Azure dashboards are the primary dashboarding technology for Azure. They're particularly useful in providing single pane of glass over your Azure infrastructure and services allowing you to quickly identify important issues.
+TODO: Here's a ...
 
 ![A drawing of ...](../media/3-azure-dashboards.png)
 
-Advantages
+### Advantages
 
-Deep integration into Azure. Visualizations can be pinned to dashboards from multiple Azure pages including metrics analytics, log analytics, and Application Insights.
-Supports both metrics and logs.
-Combine data from multiple sources including output from Metrics explorer, Log Analytics queries, and maps and availability in Application Insights.
-Option for personal or shared dashboards. Integrated with Azure role based authentication (RBAC).
-Automatic refresh. Metrics refresh depends on time range with minimum of five minutes. Logs refresh at one minute.
-Parametrized metrics dashboards with timestamp and custom parameters.
-Flexible layout options.
-Full screen mode.
+* Deep integration into Azure. Visualizations can be pinned to dashboards from multiple Azure pages including metrics analytics, log analytics, and Application Insights.
+* Supports both metrics and logs.
+* Combine data from multiple sources including output from [Metrics explorer](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/metrics-charts), [Log Analytics queries](https://docs.microsoft.com/en-us/azure/azure-monitor/log-query/log-query-overview), and [maps](https://docs.microsoft.com/en-us/azure/azure-monitor/app/app-map) and [availability](https://docs.microsoft.com/en-us/azure/azure-monitor/visualizations?toc=/azure/azure-monitor/toc.json) in Application Insights.
+* Option for personal or shared dashboards. Integrated with Azure [role based authentication (RBAC)](https://docs.microsoft.com/en-us/azure/role-based-access-control/overview).
+* Automatic refresh. Metrics refresh depends on time range with minimum of five minutes. Logs refresh at one minute.
+* Parametrized metrics dashboards with timestamp and custom parameters.
+* Flexible layout options.
+* Full screen mode.
 
-Limitations
+### Limitations
 
-Limited control over log visualizations with no support for data tables. Total number of data series is limited to 10 with further data series grouped under an other bucket.
-No custom parameters support for log charts.
-Log charts are limited to last 30 days.
-Log charts can only be pinned to shared dashboards.
-No interactivity with dashboard data.
-Limited contextual drill-down.
+* Limited control over log visualizations with no support for data tables. Total number of data series is limited to 10 with further data series grouped under an other bucket.
+* No custom parameters support for log charts.
+* Log charts are limited to last 30 days.
+* Log charts can only be pinned to shared dashboards.
+* No interactivity with dashboard data.
+* Limited contextual drill-down.
 
 ## Azure Monitor Views
 
-Views in Azure Monitor allow you to create custom visualizations with log data. They are used by monitoring solutions to present the data they collect.
+[Views in Azure Monitor](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/view-designer) enable you to create custom visualizations with log data. They are used by monitoring solutions to present the data they collect.
 
 ![A drawing of ...](../media/3-azure-monitor-views.png)
 
-Advantages
+### Advantages
 
-Rich visualizations for log data.
-Export and import views to transfer them to other resource groups and subscriptions.
-Integrates into Log Analytic management model with workspaces and monitoring solutions.
-Filters for custom parameters.
-Interactive, supports multi-level drill-in (view that drills into another view)
+* Rich visualizations for log data.
+* Export and import views to transfer them to other resource groups and subscriptions.
+* Integrates into Log Analytic management model with workspaces and monitoring solutions.
+* [Filters](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/view-designer-filters) for custom parameters.
+* Interactive, supports multi-level drill-in (view that drills into another view)
 
-Limitations
+### Limitations
 
-Supports logs but not metrics.
-No personal views. Available to all users with access to the workspace.
-No automatic refresh.
-Limited layout options.
-No support for querying across multiple workspaces or Application Insights applications.
-Queries are limited in response size to 8MB and query execution time of 110 seconds.
+* Supports logs but not metrics.
+* No personal views. Available to all users with access to the workspace.
+* No automatic refresh.
+* Limited layout options.
+* No support for querying across multiple workspaces or Application Insights applications.
+* Queries are limited in response size to 8 MB and query execution time of 110 seconds.
 
-## Application Insights Workbooks
+## Application Insights workbooks
 
-Workbooks are interactive documents that provide deep insights into your data, investigation, and collaboration inside the team. Specific examples where workbooks are useful are troubleshooting guides and incident postmortem.
+[Workbooks](https://docs.microsoft.com/en-us/azure/application-insights/app-insights-usage-workbooks) are interactive documents that provide deep insights into your data, investigation, and collaboration inside the team. Specific examples where workbooks are useful are troubleshooting guides and incident postmortem.
 
 ![A drawing of ...](../media/3-application-insights-workbooks.png)
 
-Advantages
+### Advantages
 
-Supports both metrics and logs.
-Supports parameters enabling interactive reports where selecting an element in a table will dynamically update associated charts and visualizations.
-Document-like flow.
-Option for personal or shared workbooks.
-Easy, collaborative-friendly authoring experience.
-Templates support public GitHub-based template gallery.
-Limitations
+* Supports both metrics and logs.
+* Supports parameters enabling interactive reports where selecting an element in a table will dynamically update associated charts and visualizations.
+* Document-like flow.
+* Option for personal or shared workbooks.
+* Easy, collaborative-friendly authoring experience.
+* Templates support public GitHub-based template gallery.
 
-No automatic refresh.
-No dense layout like dashboards, which make workbooks less useful as a single pane of glass. Intended more for providing deeper insights.
+### Limitations
+
+* No automatic refresh.
+* No dense layout like dashboards, which make workbooks less useful as a single pane of glass. Intended more for providing deeper insights.
 
 ## Power BI
 
-Power BI is particularly useful for creating business-centric dashboards and reports, as well as reports analyzing long-term KPI trends. You can import the results of a log query into a Power BI dataset so you can take advantage of its features such as combining data from different sources and sharing reports on the web and mobile devices.
+[Power BI](https://powerbi.microsoft.com/documentation/powerbi-service-get-started/) is particularly useful for creating business-centric dashboards and reports, as well as reports analyzing long-term KPI trends. You can [import the results of a log query](https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-powerbi) into a Power BI dataset so you can take advantage of its features such as combining data from different sources and sharing reports on the web and mobile devices.
 
 ![A drawing of ...](../media/3-power-bi.png)
 
-Advantages
+### Advantages
 
-Rich visualizations.
-Extensive interactivity including zoom-in and cross-filtering.
-Easy to share throughout your organization.
-Integration with other data from multiple data sources.
-Better performance with results cached in a cube.
+* Rich visualizations.
+* Extensive interactivity including zoom-in and cross-filtering.
+* Easy to share throughout your organization.
+* Integration with other data from multiple data sources.
+* Better performance with results cached in a cube.
 
-Limitations
+### Limitations
 
 Supports logs but not metrics.
 No Azure integration. Can't manage dashboards and models through Azure Resource Manager.
@@ -95,31 +95,32 @@ Limited data refresh of eight times per day.
 
 ## Grafana
 
-Grafana is an open platform that excels in operational dashboards. It's particularly useful for detecting and isolating and triaging operational incidents. You can add Grafana Azure Monitor data source plugin to your Azure subscription to have it visualize your Azure metrics data.
+[Grafana](https://grafana.com/) is an open platform that excels in operational dashboards. It's particularly useful for detecting and isolating and triaging operational incidents. You can add [Grafana Azure Monitor data source plugin](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/grafana-plugin) to your Azure subscription to have it visualize your Azure metrics data.
 
 ![A drawing of ...](../media/3-graphana.png)
 
-Advantages
+### Advantages
 
-Rich visualizations.
-Rich ecosystem of datasources.
-Data interactivity including zoom in.
-Supports parameters.
-3-graphana
-Limitations
+* Rich visualizations.
+* Rich ecosystem of datasources.
+* Data interactivity including zoom in.
+* Supports parameters.
 
-Supports metrics but not logs.
-No Azure integration. Can't manage dashboards and models through Azure Resource Manager.
-Cost to support additional Grafana infrastructure or additional cost for Grafana Cloud.
+### Limitations
 
-## Build Your Own Custom Application
+* Supports metrics but not logs.
+* No Azure integration. Can't manage dashboards and models through Azure Resource Manager.
+* Cost to support additional Grafana infrastructure or additional cost for Grafana Cloud.
+
+## Build your own custom application
 
 You can access data in log and metric data in Azure Monitor through their API using any REST client, which allows you to build your own custom websites and applications.
 
-Advantages
+### Advantages
 
-Complete flexibility in UI, visualization, interactivity, and features.
-Combine metrics and log data with other data sources.
-Disadvantages
+* Complete flexibility in UI, visualization, interactivity, and features.
+* Combine metrics and log data with other data sources.
 
-Significant engineering effort required.
+### Disadvantages
+
+* Significant engineering effort required.
