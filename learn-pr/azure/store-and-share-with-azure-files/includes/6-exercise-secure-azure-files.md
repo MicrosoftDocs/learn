@@ -1,22 +1,22 @@
-Azure gives you several options to improve the security and restrict access to files shares you've created. 
+Azure provides several options to improve security and restrict access to file shares you've created. 
 
-The finance company you are working for wants to migrate their existing data files from their on-premises file shares. Before moving these files to the cloud, they want to ensure that only their data center and branch offices can access them. To ensure security is in place, you'll enable secure transfers and then only allow access from a specific set of IP addresses.
+The finance company you're working for wants to migrate existing data files from their on-premises file shares. Before moving these files to the cloud, the company wants to ensure that only their data center and branch offices can access them. To ensure security is in place, you'll enable secure transfers, and then only allow access from a specific set of IP addresses.
 
-In this exercise, you'll check that secure transfers are enforced on the file shares you created previously. Once checked, you'll add firewall rules to restrict access to a specific IP address and then test it can't be accessed from anywhere else. You'll use AzCopy to move all the local files to Azure now that adequate security is in place.
+In this exercise, you'll check that secure transfers are enforced on the file shares you created previously. After checking, you'll add firewall rules to restrict access to a specific IP address, then test that it can't be accessed from anywhere else. You'll use AzCopy to move all the local files to Azure now that adequate security is in place.
 
 ## Enable secure file transfer
 
 1. Connect to your VM using the Remote Desktop Connection.
 1. Use the browser to sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true).
-1. In the portal menu on the left select **Storage Accounts**.
-1. Select the created storage account, it should be named **learnazurefileshare** followed by random numbers.
+1. In the portal menu on the left, select **Storage Accounts**.
+1. Select the created storage account that should be named **learnazurefileshare** followed by random numbers.
 1. Under **Settings**, select **Configuration**.
 
     ![Screenshot of the configuration page of storage accounts](../media/5-secure-transfer.png)
 
 1. Check that **Secure transfer required** is enabled.
 
-## Add a firewall rule to restrict access to an IP Address
+## Add a firewall rule to restrict access to an IP address
 
 1. Under **Settings**, select **Firewalls and virtual networks**.
 
@@ -29,9 +29,9 @@ In this exercise, you'll check that secure transfers are enforced on the file sh
 ## Test security of the file share
 
 1. On your host machine, try to mount one of the network shares.
-1. In your browser sign-in to the [Azure portal](https://portal.azure.com/?azure-portal=true).
-1. In the portal menu on the left select **Storage Accounts**.
-1. Select the created storage account, it should be named **learnazurefileshare** followed by random numbers.
+1. In your browser, sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true).
+1. In the portal menu on the left, select **Storage Accounts**.
+1. Select the created storage account. It should be named **learnazurefileshare** followed by random numbers.
 1. Select **File shares**.
 
     ![Screenshot of the Azure portal showing the storage account overview](../media/4-select-file-shares.png)
@@ -41,15 +41,15 @@ In this exercise, you'll check that secure transfers are enforced on the file sh
     ![Screenshot showing access is denied to the share](../media/6-access-denied.png)
 
 1. Return to the **Firewalls and virtual networks** settings.
-1. Select the **Add your client IP address** checkbox.
+1. Select the **Add your client IP address** check box.
 1. Select **Save**.
 1. Select **Overview**, then select **File shares**.
 1. Select the **data** file share.
 
-## Install AzCopy and login to Azure
+## Install AzCopy and log in to Azure
 
 1. Connect to your VM using the Remote Desktop Connection.
-1. User the browser to download AzCopy by navigating to [https://aka.ms/downloadazcopy-v10-windows](https://aka.ms/downloadazcopy-v10-windows).
+1. Use the browser to download AzCopy by going to [https://aka.ms/downloadazcopy-v10-windows](https://aka.ms/downloadazcopy-v10-windows).
 1. In the browser, select **Save**.
 1. Open the folder containing the zip file.
 
@@ -58,7 +58,7 @@ In this exercise, you'll check that secure transfers are enforced on the file sh
 1. Select the **azcopy_windows_amd64** zip file.
 1. In the menu, select **Compressed Folder Tools**, then select **Extract all**.
 1. In the Extract Compressed (Zipped) Folders window, select **Extract**.
-1. Select **Start**, then the **Windows PowerShell folder**, then **Windows PowerShell**.
+1. Select **Start**, then the **Windows PowerShell folder**, then select **Windows PowerShell**.
 1. Move to the folder containing **AzCopy**.
 
     ```powershell
@@ -71,7 +71,7 @@ In this exercise, you'll check that secure transfers are enforced on the file sh
     .\azcopy.exe login
     ```
 
-1. The console prompts you to browse to [https://microsoft.com/devicelogin](https://microsoft.com/devicelogin), then use the code displayed.
+1. The console prompts you to browse to [https://microsoft.com/devicelogin](https://microsoft.com/devicelogin). Use the code displayed.
 
 ## Copy local files with AzCopy to Azure
 
@@ -82,13 +82,13 @@ In this exercise, you'll check that secure transfers are enforced on the file sh
     ```
 
 1. Sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true).
-1. In the portal menu, on the left, select **Storage Accounts**.
+1. In the portal menu on the left, select **Storage Accounts**.
 1. Select the created storage account. It should be named **learnazurefileshare** followed by random numbers.
 1. Under **Settings**, select **Shared access signatures**.
 
     ![text](../media/6-SAS-connection-string.png)
 
-1. AzCopy requires a Shared access signature to authorize access to the share. 
+1. AzCopy requires a shared access signature to authorize access to the share. 
 1. Select **Generate SAS and connection string**.
 1. Copy the **File service SAS URL**.
 1. Paste the connection string into notepad and add a path to the data share. Change the string by adding `data/` to the path from:
@@ -128,7 +128,7 @@ In this exercise, you'll check that secure transfers are enforced on the file sh
 
 ## Create a share snapshot
 
-1. On the [Azure portal](https://portal.azure.com/?azure-portal=true), in the portal menu on the left select **Storage Accounts**.
+1. On the [Azure portal](https://portal.azure.com/?azure-portal=true), in the portal menu on the left, select **Storage Accounts**.
 1. Select the created storage account. It should be named **learnazurefileshare** followed by random numbers.
 1. Select **File shares**, then select the **data** share.
 1. At the top of the pane, select **Create Snapshot**.

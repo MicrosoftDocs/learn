@@ -1,8 +1,8 @@
 There are two steps to creating Azure file shares. The first step is to create a storage account, choosing the correct options. The second step involves creating the file shares themselves.
 
-After you've reviewed all the options, you're going to propose to the finance company that they use a Geo-redundant storage (GRS) account. This provides the highest level of resilience for the stored files. You'll use this storage account and create files shares for reports and application data.
+After you've reviewed all the options, you're going to propose to the finance company that they use a geo-redundant storage (GRS) account. This type of account provides the highest level of resilience for the stored files. You'll use this storage account and create file shares for reports and application data.
 
-In this unit, you'll see how to use Azure CLI commands to create the storage account you need. Then you'll learn how to authenticate with Azure and persist credentials to allow the company's satellite offices to maintain connections to the file shares.
+In this unit, you'll see how to use Azure CLI commands to create the storage account you need. You'll learn how to authenticate with Azure and persist credentials to allow the company's satellite offices to maintain connections to the file shares.
 
 ## Create a storage account with Azure CLI
 
@@ -10,9 +10,9 @@ In this unit, you'll see how to use Azure CLI commands to create the storage acc
 az storage account create
 ```
 
-The CLI command to create a storage account has lots of options. However, they can be narrowed down to the ones you need if you know the sku of account you need.
+The CLI command to create a storage account has many options. However, these options can be narrowed down to the ones required if you know the sku of account you need.
 
-For the finance company you've decided that GRS is the best choice. This limits the arguments to be concerned with to `--sku`. The allowed values for this argument are Premium_LRS, Premium_ZRS, Standard_GRS, Standard_GZRS, Standard_LRS, Standard_RAGRS, Standard_RAGZRS, or Standard_ZRS. The argument should be set to `Standard_GRS` in our scenario.
+For the finance company, you've decided that GRS is the best choice. This decision limits the arguments to be concerned with to `--sku`. The allowed values for this argument are Premium_LRS, Premium_ZRS, Standard_GRS, Standard_GZRS, Standard_LRS, Standard_RAGRS, Standard_RAGZRS, or Standard_ZRS. In our scenario, the argument should be set to `Standard_GRS`.
 
 There are only two other required arguments for the command, `--name` and --`resource-group`.
 
@@ -31,7 +31,7 @@ az storage account create \
 az storage share create
 ```
 
-The only required argument to the above command is `--name`. This won't enable you to create a share on its own. You also need to provide the storage account information. There are two ways you can provide the information to the command.
+The only required argument to the above command is `--name` but it won't enable you to create a share on its own. You also need to provide the storage account information. There are two ways you can provide the information to the command.
 
 1. Using the `--account-name` and either an `--account-key`, or  a `--sas-token` argument.
 1. Using a storage account connection string with `--connection-string`.
@@ -49,7 +49,7 @@ az storage share create \
 
 ## Connect to an Azure file share with SMB
 
-With the Azure file share created, you can connect to it from a Windows, Linux, or macOS computer. There are guides for each operating system online, and links to these guides are in the summary unit. This module assumes you're going to be working with Windows machines.
+With the Azure file share created, you connect to it from a Windows, Linux, or macOS computer. There are guides for each operating system online, and links to them are in the summary unit. This module assumes you're going to be working with Windows machines.
 
 The Azure portal makes it easy to connect to your new share by providing the PowerShell commands to run.
 
@@ -57,13 +57,13 @@ The Azure portal makes it easy to connect to your new share by providing the Pow
 
 ### Authenticate with Azure Active Directory (AD)
 
-AD authentication is possible if the machine that needs access to the file share is a domain-joined Windows-based VM hosted on Azure. Using this method is a great solution to secure your file shares, and offers advantages over using a shared key:
+AD authentication is possible if the machine that needs access to the file share is a domain-joined Windows-based VM hosted on Azure. This method provides a great solution to secure your file shares, and offers advantages over using a shared key:
 
 - You can enforce more granular control over file access based on role-based access.
-- On-premises discretionary access control lists (DACL) can be copied along with the files over SMB to preserve a company's existing permissions.
+- On-premises discretionary access control lists (DACL) can be copied, along with the files, over SMB to preserve a company's existing permissions.
 
 ### Authenticate with a shared key
 
-Currently, Azure doesn't support authenticating with Kerberos over SMB. You can create file shares using a shared key until this option becomes available. The downsides are that this method of authentication grants any user with the shared key full administration access to all files and folders contained in the file share. If this level of access is unacceptable, you'll need to use Azure File Sync, as this can supports DACLs.
+Currently, Azure doesn't support authenticating with Kerberos over SMB. You can create file shares using a shared key until this option becomes available. The downside is that this method of authentication grants any user who has the shared key full administration access to all files and folders contained in the file share. If this level of access is unacceptable, you'll need to use Azure File Sync, as it supports DACLs.
 
-For the finance company, their file shares need to be used by individuals in satellite offices and a combination of hosted and on-premises Windows machines. This leads you to choose a shared key on all those machines to access the file shares. You can persist the key on those machines using the `cmdkey` utility. As you'll see in a later unit, you can add extra security to the file shares.
+The finance company's file shares need to be used by individuals in satellite offices, and by a combination of hosted and on-premises Windows machines. This scenario leads you to choose a shared key on all those machines to access the file shares. You can persist the key on those machines using the `cmdkey` utility. As you'll see in a later unit, you can add extra security to the file shares.

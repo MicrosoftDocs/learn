@@ -9,31 +9,47 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Plan your Azure Files deployment
-durationInMinutes: 10
+durationInMinutes: 7
 content: |
   [!include[](includes/2-plan-azure-files-deployment.md)]
 quiz:
   title: Check your knowledge
   questions:
-  - content: "You have created a service principal in Azure Active Directory, and you have successfully authenticated the service principal using the LoginSilentAsync method. When you call MetricDefinitions.ListAsync, you receive an access denied message. How should you resolve this problem?"
+  - content: "You've been asked by a local manufacturing company that runs dedicated software in their warehouse to keep track of stock. 
+  The software needs to run on machines in the warehouse, but the management team would like to access the output from head office. 
+  The limited bandwidth available in the warehouse has caused them problems in the past when trying cloud-based solutions. 
+  You recommend that they use Azure File, which is the best method to sync the files with the cloud?"
     choices:
-    - content: "Call the Metrics.ListAsync method instead of the MetricDefinitions.ListAsync method."
+    - content: "Create an Azure File Share and directly mount shares on the machines in the warehouse."
       isCorrect: false
-      explanation: "If you have been denied access to metric definitions, you will also be denied access to metric values. Instead, you must assign the service principal to a role in Azure with permissions to access Azure Monitor."
-    - content: "Assign the service principal to an appropriate role in Azure."
+      explanation: "This isn't the best answer due to the compute needing to run on-premises, and there's low bandwidth."
+    - content: "Use a machine in the warehouse to host a file share, install Azure File Sync, and share a drive with rest of the warehouse."
       isCorrect: true
-      explanation: "Even though you have created the service principal correctly, and you can authenticate without errors, you cannot access resources because you have not assigned the service principal to a role in Azure with permissions to access Azure Monitor."
-    - content: "Create an access key for the service principal in Azure."
+      explanation: "This is the best answer as the low bandwidth means Azure File Sync will handle the updating and syncing of files efficiently over the low-bandwidth network."
+    - content: "Install Azure File Sync on every machine in the warehouse and head office."
       isCorrect: false
-      explanation: "Even though you have created the service principal correctly including the access key, and you can authenticate without errors, you cannot access resources because you have not assigned the service principal to a role in Azure with permissions to access Azure Monitor."
-  - content: "You have written code that successfully retrieves metric definitions for an Azure Storage account from Azure Monitor. Now you want to retrieve values of the UsedCapacity metric. Which method should you call?"
+      explanation: "This isn't the recommend way to use Azure File Sync. You would normally install it on a single machine, and the head office machines will mount the file shares directly."
+  - content: "The manufacturing company has a number of sensors that record time relative data. Only the most recent data is useful. The company would like the lowest cost storage for this data.
+    What is the best kind of storage account for them?"
     choices:
-    - content: "MetricDefinitions.ListAsync"
-      isCorrect: false
-      explanation: "This method gets a list of definitions. To get a list of values for a metric, call Metrics.ListAsync."
-    - content: "Metrics.ListAsync"
+    - content: "LRS"
       isCorrect: true
-      explanation: "Once you have retrieved a list of the definitions that are available by using MetricDefinitions.ListAsync, you can call Metrics.ListAsync to retrieve the values of a specific metric."
-    - content: "The monitor client constructor"
+      explanation: "This is the best option as it is the lowest cost, and the data is being continuously being created, data loss isn't an issue."
+    - content: "GRS"
+      isCorrect: true
+      explanation: "This is a good option, but would incur more cost that other options."
+    - content: "ZRS"
       isCorrect: false
-      explanation: "You call the monitor client constructor to authenticate with Azure. To find the values of a specific metric, use Metrics.ListAsync."
+      explanation: "This is a good option, but would incur more cost that other options."
+  - content: "The manufacturing company's finance department would like to control how they data is being transferred to Azure Files. They'd like a graphical tool to manage the process, but they don't want to use the Azure portal.
+  What tool should you recommend they use?"
+    choices:
+    - content: "Azure Data Box"
+      isCorrect: true
+      explanation: "This data transfer method isn't a GUI application."
+    - content: "Robocopy"
+      isCorrect: true
+      explanation: "This is a command-line tool, not a GUI."
+    - content: "Azure Storage Explorer "
+      isCorrect: false
+      explanation: "This is the best option if the finance department doesn't want to use the Azure portal."
