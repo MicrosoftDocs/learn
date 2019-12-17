@@ -18,7 +18,7 @@ The third option is a table of results, again divided up into time chunks. A tab
 
 ![Screenshot of the table page, when using Time Series Insights on conveyor belt data](../media/lambda-tsi-table.png)
 
-## Best Practices
+## Best practices
 
 The key point here is that the three visualization methods shown above are easily made available through an Azure Time Series Insights resource. Set up time is measured in minutes, and off you go! Multiple charts can be displayed on one page. Precise queries can be constructed, either by using the user interface, or by typing in some regular expressions.
 
