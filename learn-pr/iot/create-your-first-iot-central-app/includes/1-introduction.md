@@ -10,14 +10,14 @@ In this module you will:
 
 - Create an Azure IoT Central custom app, using the IoT Central portal
 - Create a device template for a custom device, using the IoT Central portal
-- Add Node.js code to support simulated devices, with routes selected by Azure Maps, using Visual Studio Code, or Visual Studio
+- Create a programming project to simulate refrigerated trucks, with routes selected by Azure Maps, using Visual Studio Code, or Visual Studio
 - Monitor and command the simulated devices, from an IoT Central dashboard
 
 ## Prerequisites
 
 - An introductory knowledge of the purpose of Azure IoT
 - Ability to navigate Azure IoT portal
-- Ability to use Node.js, at the beginner level
+- Ability to use Node.js, or C#, at the beginner level
 - Experience using Visual Studio, or Visual Studio Code, at the beginner level
 - Must have, or be able to open, an Azure Maps account
 

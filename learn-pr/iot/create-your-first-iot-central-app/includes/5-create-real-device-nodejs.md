@@ -1,10 +1,12 @@
-In this unit, you are going to add Node.js code for a simulated refrigerated truck, which enables you to test the code long before requiring a real truck. IoT Central treats this simulation as "real" because the communication code between the Node.js app and the IoT Central app would be the same for a real truck. In other words, in a real situation (where you run a refrigerated truck company), you would start with simulated code similar to that in this unit, and, after it worked to your satisfaction, the simulation specific code would be replaced with real code. And the communication code would remain the same. This latter fact makes writing the following code a valuable experience.
+In this unit, you are going to create a programming project to simulate a sensor device in a refrigerated truck. This simulation enables you to test the code long before requiring a real truck! IoT Central treats this simulation as "real" because the communication code between the device app and the IoT Central app would be the same for a real truck. In other words, in a real situation (where you run a refrigerated truck company), you would start with simulated code similar to that in this unit, and, after it worked to your satisfaction, the simulation specific code would be replaced with real code. And the communication code would remain the same. This latter fact makes writing the following code a valuable experience.
 
-## Create the Node.js app
+## Create the device app
 
-Using your preferred development environment, build a Node.js app. Visual Studio Code and Visual Studio examples are available in this unit. Node.js is a platform for building server apps, based on JavaScript. All the JavaScript code you will need is provided below, so you do not need to be a JavaScript developer to get this app up and running.
+Using your preferred development environment, build the device sensor app. Visual Studio Code and Visual Studio examples are available in this unit.
 
-::: zone pivot="vscode"
+::: zone pivot="vscode-node"
+
+Node.js is a platform for building server apps, based on JavaScript. All the JavaScript code you will need is provided below, so you do not need to be a JavaScript developer to get this app up and running.
 
 1. Open Visual Studio Code. From the **Terminal** menu, open a **New Terminal**.
 
@@ -19,7 +21,27 @@ Using your preferred development environment, build a Node.js app. Visual Studio
 1. After you have entered the code below into the app.js file, you can run it from the terminal by entering `node app.js`. Ensure that the RefrigeratedTrucks folder is the current folder of the terminal, when you run the app.
 
 ::: zone-end
-::: zone pivot="vstudio"
+::: zone pivot="vscode-csharp"
+
+1. To use C# in Visual Studio Code, ensure both [.NET Core](https://dotnet.microsoft.com/download), and the [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp) are installed.
+
+1. Open a terminal in Visual Studio Code, and create a folder called "cheesecavedevice" (enter `mkdir cheesecavedevice`). Navigate to the cheesecavedevice folder.
+
+1. Enter the following command in the terminal: `dotnet new console`. This command creates a Program.cs file in your folder, along with a project file.
+
+1. Enter `dotnet restore` in the terminal. This command gives your app access to the required .NET packages.
+
+1. In the terminal, install the required libraries. Enter:
+    * **dotnet add package Microsoft.Azure.Devices.Client**
+    * **dotnet add package Microsoft.Azure.Devices.Shared**
+    * **dotnet add package Newtonsoft.Json**
+
+1. From the **File** menu, open up the Program.cs file, and delete the default contents.
+
+1. After you've entered the code below into the Program.cs file, you can run the app with the command `dotnet run`. This command will run the Program.cs file in the current folder, so ensure you are in the cheesecavedevice folder.
+
+::: zone-end
+::: zone pivot="vs-node"
 
 1. Navigate to the **JavaScript** project types, and create a new **Blank Node.js Console Application** project, called "RefrigeratedTruck".
 
@@ -36,8 +58,26 @@ Using your preferred development environment, build a Node.js app. Visual Studio
 1. When you have entered the code below, you will be able to run the app with the **Start Without Debugging**, or **Start Debugging**, options. In the latter case you can set breakpoints, examine data, and perform other debugging tasks.
 
 ::: zone-end
+::: zone pivot="vs-csharp"
 
-## Write the Node.js app
+1. Open Visual Studio, and create a new **Visual C#/Windows Desktop** project. Select **Console App (.NET Framework)**.
+
+1. Give the project a friendly name, such as "CheeseCaveDevice".
+
+1. Under **Tools/NuGet Package Manager**, select **Manage NuGet Packages for Solution**. Install the following libraries:
+    * **Microsoft.Azure.Devices.Client**
+    * **Microsoft.Azure.Devices.Shared**
+    * **Newtonsoft.Json**
+
+1. Delete the default contents of the Program.cs file.
+
+1. Add all the code that follows to the Program.cs file.
+
+::: zone-end
+
+## Write the device app
+
+::: zone pivot="vs-node,vscode-node"
 
 In the blank app.js file, insert the following code. Each additional section of code should be appended to the end of the file, in the order listed here.
 
@@ -682,5 +722,12 @@ In the blank app.js file, insert the following code. Each additional section of 
     // Start the device,and connect it to Azure IoT Central.
     client.open(connectCallback);
     ```
+
+::: zone-end
+::: zone pivot="vs-csharp,vscode-csharp"
+
+TBD
+
+::: zone-end
 
 Fantastic! You are now ready to test your code.

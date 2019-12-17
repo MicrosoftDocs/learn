@@ -144,4 +144,4 @@ If you do not already have an Azure Maps account, you will need to create one.
 
 ## Next steps
 
-You have now completed the preparatory steps of connecting your first IoT Central app to real devices. The next step is to use the connection string in a Node.js app.
+You have now completed the preparatory steps of connecting your first IoT Central app to real devices. The next step is to use the connection string in a device app.

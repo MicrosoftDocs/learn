@@ -29,17 +29,17 @@ quiz:
       isCorrect: false
       explanation: Secondary Key is not needed.
       
-  - content: 'In our scenario, what does the following Node.js statement do:  setInterval(sendTruckTelemetry, 5000)?'
+  - content: 'In our scenario, what states can the cooling fan be in?'
     choices: 
-    - content: 'Specifies that the sendTruckTelemetry function should be called every five seconds.'
+    - content: 'On, Off, and Failed'
       isCorrect: true
-      explanation: This is an important call set in the device callback, determining how often telemetry is sent.
-    - content: 'Specifies that the sendTruckTelemetry function should be called every 0.5 of a second.'
+      explanation: A failing cooling fan triggers a series of events, melting contents, truck recalls, that is helpful to simulate.
+    - content: 'On, Off, and Melting.'
       isCorrect: false
-      explanation: 0.5 is not the correct interval.
-    - content: 'Specifies that sendTruckTelemetry is a data structure, that should be communicated at the specified interval.'
+      explanation: A melting cooling fan would be bad, but is not something that is simulated.
+    - content: 'On and Off.'
       isCorrect: false
-      explanation: The sendTruckTelemetry name does not identify a data structure.
+      explanation: Unfortunately, mechanical systems are not this perfect.
 
   - content: 'In our scenario, the simulated time interval is 60 seconds, the actual time interval is 5 seconds. What does this mean?'
     choices:    
@@ -53,14 +53,14 @@ quiz:
       isCorrect: true
       explanation: Many simulations are set to run faster than real time.
       
-  - content: "In our scenario, interpret the following line of code:  client.onDeviceMethod('cmdGoTo', CmdGoToCustomer)?"
+  - content: "In one of the direct methods of the scenario, what do the strings 'cmdGoTo' and CmdGoToCustomer refer to?"
     choices:
-    - content: 'The IoT Central app has a command with Field Name "cmdGoTo", and the Node.js app has a function "CmdGoToCustomer" to be called when the operator invokes cmdGoTo.'
+    - content: 'The IoT Central app has a command with Field Name "cmdGoTo", and the device app has a function "CmdGoToCustomer" to be called when the operator invokes cmdGoTo.'
       isCorrect: true
-      explanation: The order of parameters in most references to IoT Central is the Field Name followed by the Node.js app name. This applies to Telemetry, Events, Properties, Settings, as well as Commands.
-    - content: 'The IoT Central app has a command with Field Name "CmdGoToCustomer", and the Node.js app has a function "cmdGoTo" to be called when the operator invokes CmdGoToCustomer.'
+      explanation: The order of parameters in most references to IoT Central is the Field Name followed by the device app name. This applies to Telemetry, Events, Properties, Settings, as well as Commands.
+    - content: 'The IoT Central app has a command with Field Name "CmdGoToCustomer", and the device app has a function "cmdGoTo" to be called when the operator invokes CmdGoToCustomer.'
       isCorrect: false
       explanation: The names are the wrong way round.
-    - content: 'Two commands, with functions named CmdGoToCustomer and cmdGoTo, are defined in the Node.js app.'
+    - content: 'Two commands, with functions named CmdGoToCustomer and cmdGoTo, are defined in the device app.'
       isCorrect: false
-      explanation: These two names refer to one command.
+      explanation: These two names refer to one direct method.
