@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.iot.automate-iot-devices-management-with-azure-iot-hub.9-summary
+metadata:
+  title: Summary
+  description: ...
+  ms.date: ...
+  author: olivierbloch
+  ms.author: Olivier.Bloch
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Summary
+durationInMinutes: 1
+content: |
+  [!include[](includes/9-summary.md)]

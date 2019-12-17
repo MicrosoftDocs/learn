@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.iot.automate-iot-devices-management-with-azure-iot-hub.firmware-update-mechanism
+metadata:
+  title: Firmware update mechanism
+  description: ...
+  ms.date: 12/17/2019
+  author: olivierbloch
+  ms.author: Olivier.Bloch
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Firmware update mechanism
+durationInMinutes: 1
+content: |
+  [!include[](includes/3-firmware-update-mechanism.md)]
