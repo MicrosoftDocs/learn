@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azdo.provision-databases-azure-pipelines.4-setup-environment
-title: Exercise - Set up your Environment
+title: Exercise - Set up your environment
 metadata:
-  title: Exercise - Set up your Environment
+  title: Exercise - Set up your environment
   description: Run a template to set up your Azure DevOps environment
   ms.date: 11/25/2019
   author: jamcneil
