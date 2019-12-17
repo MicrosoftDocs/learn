@@ -1,4 +1,3 @@
-
 Azure IoT Hub is a cloud service that can handle large volumes of telemetry sent from remote devices. The remote devices typically contain a number of sensors (temperature, humidity, location, velocity, to name a few). These sensors send out telemetry on a regular basis. An IoT Hub processes this data in a number of ways, including storing it, or running a back-end app on the data. The IoT Hub also communicates new settings back to the devices.
 
 An IoT Hub can scale to handle millions of devices. An IoT device can upload files, as well as send telemetry.
