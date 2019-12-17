@@ -55,9 +55,9 @@ The heavy-lifting of this module has been completed, the process of extending ou
 
 1. Verify that each connection string ends with an exact copy of the **Primary Key**, just in case there is spurious text at the end of any of the **connection#.txt** files.
 
-## Update the Node.js app to handle multiple devices
+## Update the device app to handle multiple devices
 
-1. Open up your Node.js app in the development environment you are using.
+1. Open up your device app in the development environment you are using.
 
 1. Locate the `switch` statement at the top of the file, and add four entries:
 
@@ -89,9 +89,9 @@ The heavy-lifting of this module has been completed, the process of extending ou
 
 1. Take a moment to verify you have copied all four exactly, each connection string should be of identical length.
 
-## Run five versions of the Node.js app
+## Run five versions of the device app
 
-Each truck is simulated by one running copy of the Node.js app. So, you need five versions of this app running simultaneously.
+Each truck is simulated by one running copy of the device app. So, you need five versions of this app running simultaneously.
 
 1. With the line  `const truckNum = 1`, run the app, but _not_ in debugging mode. (Debugging mode might not work with five versions running together.)
 
@@ -117,4 +117,4 @@ Exciting, isn't it? You now have five console windows open, with five simulated 
 
 Clearly the map view is one of the most useful, at least in terms of giving the operator some confidence that they can see the larger picture. It is tough to have this confidence when each truck is shown on a different map. In the next unit, you will look about resolving this complexity by creating a _Device set_, which enables all device locations to appear on a single map.
 
-You can leave all five Node.js apps running, the trucks will have returned to their base and will be ready for the next unit when needed.
+You can leave all five device apps running, the trucks will return to their base, and be ready for the next unit when needed.

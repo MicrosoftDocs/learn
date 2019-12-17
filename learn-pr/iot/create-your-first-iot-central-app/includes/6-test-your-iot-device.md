@@ -1,6 +1,6 @@
 To fully test our one refrigerated truck device, it helps to break down the testing into a number of discreet checks:
 
-1. The Node.js app connects to Azure IoT Central.
+1. The device app connects to Azure IoT Central.
 1. The telemetry functions send data on the specified interval, and that data is picked up correctly by IoT Central.
 1. The command to send the truck to a specified customer works as expected.
 1. The command to recall the truck works as expected.
@@ -8,9 +8,9 @@ To fully test our one refrigerated truck device, it helps to break down the test
 
 In addition to this list, there are edge-cases you could also investigate, such as what happens when the truck's contents start to melt. However, as you have left this state up to chance in our simulation (note the use of random numbers in our code in the previous unit), you can perhaps leave this check out of our first round of testing.
 
-To begin the testing, with your [Azure IoT Central](https://apps.azureiotcentral.com/?azure-portal=true) app open in a browser, run the Node.js app (**Debug/Start without Debugging** from Visual Studio, or enter `node app.js` into a terminal in Visual Studio Code). A console screen should open, with the text: **Starting Truck number 1**.
+To begin the testing, with your [Azure IoT Central](https://apps.azureiotcentral.com/?azure-portal=true) app open in a browser, run the device app (**Debug/Start without Debugging** from Visual Studio, or enter `node app.js` or `node Program.cs` into a terminal in Visual Studio Code). A console screen should open, with the text: **Starting Truck number 1**.
 
-## Confirm the Node.js app connects to Azure IoT Central
+## Confirm the device app connects to Azure IoT Central
 
 1. If the second line on the console is **Device successfully connected to Azure IoT Central** you have made the connection.
 1. The "connected" line should be followed by some text verifying the settings and properties were sent successfully. If you do not get this message, it usually means either the IoT Central app is not running, or the connection string is not correct.
@@ -24,11 +24,11 @@ To begin the testing, with your [Azure IoT Central](https://apps.azureiotcentral
     >[!TIP]
     > These steps are an exciting time in IoT Central development! It can be helpful to have multiple monitors available for all the screens that are active.
 
-1. Verify approximately that the temperatures being sent by the Node.js app, in the console window, match the data being shown in the telemetry view of the IoT Central app.
+1. Verify approximately that the temperatures being sent by the device app, in the console window, match the data being shown in the telemetry view of the IoT Central app.
 
-    | Node.js | IoT Central |
+    | Device app | IoT Central |
     | --- | --- |
-    | ![Screenshot showing the console output from the Node.js app, showing the truck contents temperatures](../media/refrigerated-trucks-console.png) | ![Screenshot showing the chart view in IoT Central, receiving the truck temperatures](../media/refrigerated-trucks-central.png) |
+    | ![Screenshot showing the console output from the device app, showing the truck contents temperatures](../media/refrigerated-trucks-console.png) | ![Screenshot showing the chart view in IoT Central, receiving the truck temperatures](../media/refrigerated-trucks-central.png) |
 
 1. Hover the mouse over the states in the IoT Central app, in the charts view, just to verify the truck and its contents are in the expected state.
 
@@ -40,7 +40,7 @@ To begin the testing, with your [Azure IoT Central](https://apps.azureiotcentral
 
 1. Now for the best fun of all. Click the **Commands** title for the device. Enter a customer ID, say "6" ("0" through "9" are valid customer IDs), and click **Run**.
 
-1. In the console for the Node.js app, you should see **Number of points=**, followed by a list of lat/lon coordinates. If you see a message including the text "Access denied due to invalid subscription key", then check your subscription key to Azure Maps.
+1. In the console for the device app, you should see **Number of points=**, followed by a list of lat/lon coordinates. If you see a message including the text "Access denied due to invalid subscription key", then check your subscription key to Azure Maps.
 
 1. Go back to the **Measurements** view in IoT Central. Hover over the Truck state bar chart, does it say "enroute"? Now, select the map view. Is your truck on its way?
 

@@ -2,7 +2,7 @@
 uid: learn.iot.create-your-first-iot-central-app
 metadata:
   title: Create your first Azure IoT Central app
-  description: Create an app to monitor and command multiple remote devices. Use the IoT Central portal to create the IoT Central app, then use Node. code for each simulated device. The scenario is you control a fleet of refrigerated trucks.
+  description: This module builds an IoT Central app to monitor and command a fleet of refrigerated trucks. The first unit creates the app, the second unit defines a device template for a refrigerated truck. Then, a programming project is created, and code is added and tested for a single truck. Finally, code is added for multiple trucks, and these trucks are monitored through a custom dashboard.
   ms.date: 10/17/2019
   author: PeterTurcan
   ms.author: Olivier.Bloch

@@ -36,7 +36,7 @@ quiz:
       explanation: A failing cooling fan triggers a series of events, melting contents, truck recalls, that is helpful to simulate.
     - content: 'On, Off, and Melting.'
       isCorrect: false
-      explanation: A melting cooling fan would be bad, but is not something that is simulated.
+      explanation: A melting cooling fan would be bad, but isn't something that is simulated.
     - content: 'On and Off.'
       isCorrect: false
       explanation: Unfortunately, mechanical systems are not this perfect.
