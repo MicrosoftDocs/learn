@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: >-
+  learn.iot.automate-iot-devices-management-with-azure-iot-hub.test-firmware-update-on-device-using-device-twin
+metadata:
+  title: Test firmware update on device using device twin
+  description: ...
+  ms.date: 12/17/2019
+  author: olivierbloch
+  ms.author: Olivier.Bloch
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Test firmware update on device using device twin
+durationInMinutes: 1
+content: |
+  [!include[](includes/5-test-firmware-update-on-device-using-device-twin.md)]
