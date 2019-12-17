@@ -1,8 +1,10 @@
-People are talking about you and your competitors constantly. They could be asking for help, complaining about a bug, or raving about how much they love you. And you want to stay on top of all those conversations. Your customers' opinions matter, not just to PR and marketing, but to every team – from customer support to product development to sales.
+TODO: Any introduction from the TS team?
 
-But sifting through irrelevant posts on multiple channels is overwhelming and can be a huge time drain. Sometimes it's not even possible when they don't tag or link to you.
+People are talking about you and your competitors constantly. They could be asking for help, complaining about a bug, or raving about how much they love you. And you want to stay on top of all those conversations. Your customers' opinions matter, not just to public relations and marketing, but to every team – from customer support to product development to sales.
 
-That's where scanning tools comes in. Scanning tools make it easy for you to find people who are talking about you, but not necessarily to you, and reach out or take notes when necessary. There are so many business opportunities to uncover if you know where to look.
+But sifting through irrelevant posts on multiple channels is overwhelming and can be a huge time drain. Sometimes it's not even possible when they don't tag you or link to you.
+
+That's where scanning tools come in. Scanning tools make it easy for you to find people who are talking about you, but not necessarily to you, and reach out or take notes when necessary. There are so many business opportunities to uncover if you know where to look.
 
 Although there isn't a specific survey question you can ask, it's important to get a general sense of what your customers are saying about your company over time.
 
@@ -45,4 +47,7 @@ _Release gates_ automate the waiting period between environments in release pipe
 
 However, one thing you'll quickly learn is that no amount of monitoring will catch every single problem and, particularly, if you have a popular application, your users will know within seconds and turn very quickly to Twitter to start asking about the problem. Twitter can be a wonderful "alert" to let you know something is wrong with your app.
 
-You can use the [Twitter Sentiment Analysis](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vss-services-twittersentimentanalysis?azure-portal=true) extension to create a release gate that calculates the average sentiment of tweets made for a hashtag. It combines Azure DevOps, Azure functions, and Microsoft AI to analyze sentiment on your Twitter handle and gate your release progress based on sentiment. The analysis is relatively simple, but shows how easy it is to extend Azure DevOps release gates to measure any signal you choose and use that signal to manage your release process.
+You can use the [Twitter Sentiment Analysis](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vss-services-twittersentimentanalysis?azure-portal=true) extension to create a release gate that calculates the average sentiment of tweets made for a given hashtag. This extension combines Azure DevOps, Azure functions, and Microsoft AI to analyze sentiment on your Twitter handle and gate your release progress based on sentiment. The analysis is relatively simple, but shows how easy it is to extend Azure DevOps release gates to measure any signal you choose and use that signal to manage your release process.
+
+TODO: Summarize any interesting observations here.
+TODO: Any observations from the TS team?

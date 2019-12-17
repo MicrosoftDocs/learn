@@ -4,11 +4,43 @@ Dissatisfied customers can cost you money. The first step to overcoming this is 
 
 Engaging customers throughout your product lifecycle is a primary Agile principle. They key is to empower each team to interact directly with customers on the feature sets they own.
 
-TODO In this module, 
+TODO: In this module, ...
 
-- Continuous feedback: Build in customer feedback loops. These can take many forms:
-  - Customer voice: Make it easy for customers to give feedback, add ideas, and vote on next generation features.
-  - Product feedback: In-product feedback buttons are another way to solicit feedback about the product experience or specific features.
-  - Customer demos: Regularly scheduled demos that solicit feedback from your customers can help shape next generation products and keep you on track to build applications your customers want to consume.
-- Early adopter programs: Such programs should be developed with the idea that all teams may want to participate as some point. Early adopters gain access to early versions of working software which they then can provide feedback. Oftentimes, these programs work by turning select feature flags on for an early adopter list.
-- Data-driven decisions: Find ways to instrument your product to obtain useful data and that can test various hypotheses. Help drive to an experiment-friendly culture that celebrates learning.
+## Learning objectives
+
+In this module, you'll:
+
+- TODO
+- TODO
+- TODO
+
+## Prerequisites
+
+The modules in this learning path and previous learning paths form a progression.
+
+You can take just this module, but if you want to follow the progression from the beginning, be sure to first complete these learning paths:
+
+* [Evolve your DevOps practices](/learn/paths/evolve-your-devops-practices?azure-portal=true)
+* [Build applications with Azure DevOps](/learn/paths/build-applications-with-azure-devops?azure-portal=true)
+* [Deploy applications with Azure DevOps](/learn/paths/deploy-applications-with-azure-devops/?azure-portal=true)
+* [Automate your deployments with Azure DevOps](/learn/paths/automate-deployments-azure-devops/?azure-portal=true)
+
+## Meet the team
+
+You met the _Space Game_ web team at Tailspin Toys in previous modules. As a refresher, here's who you'll work with in this module.
+
+:::row:::
+
+[!include[](../../shared/includes/meet-andy-short-col.md)]
+
+[!include[](../../shared/includes/meet-amita-short-col.md)]
+
+[!include[](../../shared/includes/meet-tim-short-col.md)]
+
+[!include[](../../shared/includes/meet-mara-short-col.md)]
+
+[!include[](../../shared/includes/meet-irwin-short-col.md)]
+
+:::row-end:::
+
+Mara has prior experience with DevOps. She's helping the team adopt a more streamlined process by using Azure DevOps.

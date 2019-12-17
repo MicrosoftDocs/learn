@@ -1,12 +1,14 @@
-In the era of continuous delivery, we are expected to rapidly deliver software that is stable and performs well. Development teams embrace CI/CD tools to automate their builds, test passes, and deployments, all at an accelerated pace.
+TODO: Any introduction from the TS team?
+
+In the era of continuous delivery, we're expected to quickly deliver software that is stable and performs well. Development teams embrace CI/CD tools to automate their builds, test passes, and deployments, all at an accelerated pace.
 
 Teams rely on various forms of testing to identify all issues before a release hits production. Teams primarily rely on version control systems or configuration files to control feature releases. Once a release is in production, it is basically out in the wild. Without proper controls, rolling back to previous versions becomes a code deployment exercise, requiring engineering expertise and increasing the potential for downtime.
 
 One way to mitigate risk in feature releases is to introduce _feature flags_ (also known as _feature toggles_) into the continuous delivery process. These flags allow features (or any piece of code) to be turned on or off for particular users. Feature flags are a powerful technique that enable teams to modify behavior without changing code.
 
-Software development and operations capabilities set the boundaries for success. The first step to creating a company-wide culture of experimentation is for executives, business planners, developers, and ops, as well as other key stakeholders, to understand how changes in engineering productivity align with business outcomes.
+Software development and operations capabilities set the boundaries for success. The first step to creating a company-wide culture of experimentation is for executives, business planners, developers, operations, and other stakeholders to understand how changes in engineering productivity align with business outcomes.
 
-Innovation is the key to success, and success depends on testing hypotheses through experimentation. By adopting a culture of continuous experimentation, you can test features by creating an instrumented minimal viable product rapidly and release to a subset of customers in production for testing. This enables the team to make decisions based on facts and quickly evolve towards the optimal solution.
+Innovation is the key to success, and success depends on testing hypotheses through experimentation. By adopting a culture of continuous experimentation, you can quickly test features by creating an instrumented minimal viable product (MVP) and then release those features to a subset of customers in production for testing. This enables the team to make decisions based on facts and move quickly towards the optimal solution.
 
 The following illustrates a typical software delivery timeline:
 
@@ -24,3 +26,6 @@ Here are some of the benefits of a standard continuous delivery pipeline compare
 | Reduced development risk           | Percentage rollouts and targeted releases  |
 | Better development coordination    | Feature rollbacks without redeploying      |
 | Quickly adapt to shifting markets  | Configuration and long-term management     |
+
+TODO: Summarize any interesting observations here.
+TODO: Any observations from the TS team?
