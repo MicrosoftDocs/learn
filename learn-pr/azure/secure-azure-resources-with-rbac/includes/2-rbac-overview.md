@@ -87,7 +87,7 @@ The following example shows how the Marketing group has been assigned the Contri
 
 ## RBAC is an allow model
 
-RBAC is an allow model. What this means is that when you are assigned a role, RBAC allows you to perform certain actions, such as read, write, or delete. So, if one role assignment grants you read permissions to a resource group and a different role assignment grants you write permissions to the same resource group, you will have write permissions on that resource group.
+RBAC is an allow model. What this means is that when you are assigned a role, RBAC allows you to perform certain actions, such as read, write, or delete. So, if one role assignment grants you read permissions to a resource group and a different role assignment grants you write permissions to the same resource group, you will have read and write permissions on that resource group.
 
 RBAC has something called `NotActions` permissions. Use `NotActions` to create a set of allowed permissions. The access granted by a role, the effective permissions, is computed by subtracting the `NotActions` operations from the `Actions` operations. For example, the [Contributor](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor) role has both `Actions` and `NotActions`. The wildcard (*) in `Actions` indicates that it can perform all operations on the control plane. Then you subtract the following operations in `NotActions` to compute the effective permissions:
 
