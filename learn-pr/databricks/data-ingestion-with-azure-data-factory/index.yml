@@ -1,5 +1,6 @@
 ### YamlMime:Module
 uid: learn.data-ingestion-with-azure-data-factory
+hidden: true
 metadata:
   title: Data ingestion with Azure data factory
   description: Learn how to read and write data by using Azure Databricks and multiple data sources and destinations.

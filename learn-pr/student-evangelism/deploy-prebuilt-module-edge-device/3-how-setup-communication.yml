@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.oxford.deploy-prebuilt-module-edge-device.3-how-setup-communication
+title: How to set up communication between IoT Hub and IoT Edge
+metadata:
+  title: How to set up communication between IoT Hub and IoT Edge
+  description: In this section, we provide definition of resource group, how to create an IoT Edge device, and an IoT Hub, how to set up communication between IoT Edge and IoT Hub
+  ms.date: 12/5/2019
+  author: leestott
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-hub
+durationInMinutes: 7 # dummy number at present
+content: |
+  [!include[](includes/3-how-setup-communication.md)]

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.oxford.intro-to-iot-hub.how-iot-hub-works
+title: How IoT Hub works
+metadata:
+  title: How IoT Hub works
+  description: In this section, we provide a high-level explanation of the parts of the product and explain how these parts work together. We also show how the product would work when solving the scenario outlined in the introduction section
+  ms.date: 9/29/2019
+  author: leestott
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-hub
+durationInMinutes: 7 # dummy number at present
+content: |
+  [!include[](includes/3-how-iot-hub-works.md)]
