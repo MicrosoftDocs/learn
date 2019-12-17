@@ -48,7 +48,7 @@ Invite a guest user to add them to your directory.
 
 1. Select **Invite** to send your invitation.
 
-1. An invitation email will be sent to the address you've specified. Go to the email inbox, and open the email. Select **Get started**.
+1. An invitation email will be sent to the address you've specified. In different internet browser, go to the email inbox, and open the email. Select **Get started**.
 
     ![Email confirmation](../media/4-email-confirmation.png)
 
@@ -64,7 +64,7 @@ Invite a guest user to add them to your directory.
 
 Your guest user can also be made a member of a particular group.
 
-1. [Sign in](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) with the same account you used to activate your sandbox. Select the **Show portal menu** button, then select **Azure Active Directory** to go back to your Azure Active Directory pane..
+1. Go back to your internet browser instance that's showing your Azure portal. Select the **Show portal menu** button, then select **Azure Active Directory** to go back to your Azure Active Directory pane.
 
     ![Go to Azure AD](../media/4-select-azure-active-directory.png)
 
