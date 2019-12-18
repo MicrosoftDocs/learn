@@ -52,27 +52,3 @@ quiz:
     - content: "A parameter that automatically and frequently changes value during a single model training run."
       isCorrect: false
       explanation: "This is not correct.  A Hyperparameter is set before each model training execution."
-
-  - content: "Before you can train and run experiments in your code, you must do which of the following?"
-    choices: 
-    - content: "Create a virtual machine"
-      isCorrect: false
-      explanation: "That is not correct.  You do not need to create a virtual machine."
-    - content: "Log out of the Azure portal"
-      isCorrect: false
-      explanation: "That is not correct.  You do not need to log out of the Azure portal."
-    - content: "Write a model scoring script"
-      isCorrect: true 
-      explanation: "That is correct.  Your Python script needs to connect to the Azure ML workspace before you can train and run experiments."
-  
-  - content: "Which of the following is a technique for determining hyperparameter values?"
-    choices: 
-    - content: "grid searching"
-      isCorrect: true
-      explanation: "That is correct.  Grid searching is often used by data scientists to find the best hyperparamter value."
-    - content: "Bayesian sampling"
-      isCorrect: false
-      explanation: "That is not correct.  Bayesian sampling is not a valid method to determin hyperparamter values."
-    - content: "hyper searching"
-      isCorrect: false 
-      explanation: "That is not correct.  Hyper searching is not a valid method to determin hyperparamter values."
