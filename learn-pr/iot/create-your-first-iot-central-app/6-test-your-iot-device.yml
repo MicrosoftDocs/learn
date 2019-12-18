@@ -17,11 +17,11 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'A connection string is an encoded version of what?'
+  - content: 'What keys are required to connect an app to IoT Central?'
     choices: 
     - content: 'Device ID and Primary Key'
       isCorrect: false
-      explanation: Both these are needed, but more information is needed to complete the string.
+      explanation: Both these are needed, but more information is needed to complete a connection.
     - content: 'Scope ID, Device ID, and Primary Key'
       isCorrect: true
       explanation: These three strings identify the app, the device, and permission to communicate with IoT Central.

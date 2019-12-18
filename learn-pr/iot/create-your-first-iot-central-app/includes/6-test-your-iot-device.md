@@ -30,6 +30,9 @@ To begin the testing, with your [Azure IoT Central](https://apps.azureiotcentral
     | --- | --- |
     | ![Screenshot showing the console output from the device app, showing the truck contents temperatures](../media/refrigerated-trucks-console.png) | ![Screenshot showing the chart view in IoT Central, receiving the truck temperatures](../media/refrigerated-trucks-central.png) |
 
+    > [!NOTE]
+    > The screenshots in this module are taken from the Node.js version of the app. The C# app screens will be similar, but not identical.
+
 1. Hover the mouse over the states in the IoT Central app, in the charts view, just to verify the truck and its contents are in the expected state.
 
 1. Check the map view for the device. A blue circle near Seattle, USA shows our truck ready to go. You may have to zoom in a bit. Remember too, to make sure the visibility icon for **Location** is enabled.

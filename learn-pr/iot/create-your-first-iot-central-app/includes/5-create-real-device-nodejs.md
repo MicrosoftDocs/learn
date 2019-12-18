@@ -10,22 +10,22 @@ Node.js is a platform for building server apps, based on JavaScript. All the Jav
 
 1. Open Visual Studio Code. From the **Terminal** menu, open a **New Terminal**.
 
-1. In the opened terminal, create an empty folder where you will develop your code, called "RefrigeratedTrucks", by entering `mkdir RefrigeratedTrucks`. Then, navigate to that folder with `cd RefrigeratedTrucks`.
+1. In the opened terminal, create an empty folder where you will develop your code, called "RefrigeratedTruck", by entering `mkdir RefrigeratedTruck`. Then, navigate to that folder with `cd RefrigeratedTruck`.
 
-1. From the **File** menu, create a new file. Insert a single line as a comment, such as `// Refrigerated Truck app`. Save the file to the "RefrigeratedTrucks" folder (locating this folder might involve a bit of navigation), with the name "app.js". By using the .js file extension, Visual Studio Code interprets this file as JavaScript and evaluates the contents with the JavaScript language service.
+1. From the **File** menu, create a new file. Insert a single line as a comment, such as `// Refrigerated Truck app`. Save the file to the "RefrigeratedTruck" folder (locating this folder might involve a bit of navigation), with the name "app.js". By using the .js file extension, Visual Studio Code interprets this file as JavaScript and evaluates the contents with the JavaScript language service.
 
     ![Screenshot showing how to save the JavaScript file, in Visual Studio Code](../media/refrigerated-trucks-vscode.png)
 
 1. Back in the terminal, enter **npm install azure-iot-device**. When this package has installed, enter **npm install azure-maps-rest**.
 
-1. After you have entered the code below into the app.js file, you can run it from the terminal by entering `node app.js`. Ensure that the RefrigeratedTrucks folder is the current folder of the terminal, when you run the app.
+1. After you have entered the code below into the app.js file, you can run it from the terminal by entering `node app.js`. Ensure that the RefrigeratedTruck folder is the current folder of the terminal, when you run the app.
 
 ::: zone-end
 ::: zone pivot="vscode-csharp"
 
 1. To use C# in Visual Studio Code, ensure both [.NET Core](https://dotnet.microsoft.com/download), and the [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp) are installed.
 
-1. Open a terminal in Visual Studio Code, and create a folder called "cheesecavedevice" (enter `mkdir cheesecavedevice`). Navigate to the cheesecavedevice folder.
+1. Open a terminal in Visual Studio Code, and create a folder called "RefrigeratedTruck" (enter `mkdir RefrigeratedTruck`). Navigate to the RefrigeratedTruck folder.
 
 1. Enter the following command in the terminal: `dotnet new console`. This command creates a Program.cs file in your folder, along with a project file.
 
@@ -33,12 +33,14 @@ Node.js is a platform for building server apps, based on JavaScript. All the Jav
 
 1. In the terminal, install the required libraries. Enter:
     * **dotnet add package AzureMapsRestToolkit**
-    * **dotnet add package Microsoft.Azure.Devices.Shared**
+    * **dotnet add package Microsoft.Azure.Devices.Client**
+    * **dotnet add package Microsoft.Azure.Devices.Provisioning.Client**
+    * **dotnet add package Microsoft.Azure.Devices.Provisioning.Transport.Mqtt**
     * **dotnet add package Newtonsoft.Json**
 
 1. From the **File** menu, open up the Program.cs file, and delete the default contents.
 
-1. After you've entered the code below into the Program.cs file, you can run the app with the command `dotnet run`. This command will run the Program.cs file in the current folder, so ensure you are in the cheesecavedevice folder.
+1. After you've entered the code below into the Program.cs file, you can run the app with the command `dotnet run`. This command will run the Program.cs file in the current folder, so ensure you are in the RefrigeratedTruck folder.
 
 ::: zone-end
 ::: zone pivot="vs-node"
@@ -62,11 +64,13 @@ Node.js is a platform for building server apps, based on JavaScript. All the Jav
 
 1. Open Visual Studio, and create a new **Visual C#/Windows Desktop** project. Select **Console App (.NET Framework)**.
 
-1. Give the project a friendly name, such as "CheeseCaveDevice".
+1. Give the project a friendly name, such as "RefrigeratedTruck".
 
 1. Under **Tools/NuGet Package Manager**, select **Manage NuGet Packages for Solution**. Install the following libraries:
     * **AzureMapsRestToolkit**
-    * **Microsoft.Azure.Devices.Shared**
+    * **Microsoft.Azure.Devices.Client**
+    * **Microsoft.Azure.Devices.Provisioning.Client**
+    * **Microsoft.Azure.Devices.Provisioning.Transport.Mqtt**
     * **Newtonsoft.Json**
 
 1. Delete the default contents of the Program.cs file.
@@ -604,7 +608,7 @@ In the blank app.js file, insert the following code. Each additional section of 
     ```
 
     > [!NOTE]
-    > The `sendTruckTelemetry` is an important function, handling the sending of telemetry, states, and events to IoT Central. Note the use of JSON strings to send the data, and that an acknowledgement message is sent at the end of the function.
+    > The `sendTruckTelemetry` is an important function, handling the sending of telemetry, states, and events to IoT Central. Note the use of JSON strings to send the data.
 
 1. Add the code to handle settings and properties. You only have one setting and one property in our app, though if there are more, they are easily added.
 
@@ -731,7 +735,7 @@ In the blank app.js file, insert the following code. Each additional section of 
    > [!NOTE]
    > If you would like to skip this unit, and load all of the code into your app, then download and copy all of the contents of Program.cs from [MicrosoftDocs/mslearn-your-first-iot-central-app](https://github.com/MicrosoftDocs/mslearn-your-first-iot-central-app) into the Program.cs file of your project. If you copy this code (and replace the connection and subscription strings) then go straight to the next unit, and start testing!
 
-1. Add the `using` statement, including for Azure IoT Central and Azure Maps.
+1. Add the `using` statements, including for Azure IoT Central and Azure Maps.
 
    ```cs
     using System;
@@ -748,9 +752,6 @@ In the blank app.js file, insert the following code. Each additional section of 
     using AzureMapsToolkit;
     using AzureMapsToolkit.Common;
     ```
-
-    > [!NOTE]
-    > tbd
 
 1. Add the namespace, class, and global variables.
 
@@ -870,10 +871,10 @@ In the blank app.js file, insert the following code. Each additional section of 
             static string AzureMapsKey = "-Sg7hD_YKJo9i2H9AbNKkrcCesoLicHEZ4AOP7cP7ao";
     ```
 
-1. Add the functions to get a route via Azure Maps.
+1. Add the methods to get a route via Azure Maps.
 
    ```cs
-         static double Degrees2Radians(double deg)
+        static double Degrees2Radians(double deg)
         {
             return deg * Math.PI / 180;
         }
@@ -988,12 +989,13 @@ In the blank app.js file, insert the following code. Each additional section of 
                 // Update the state now the route has arrived. One of: enroute or returning.
                 state = newState;
             }
-        }           ```
+        }
+    ```
 
     > [!NOTE]
-    > tbd
+    > The key call here is `var directions = azureMapsServices.GetRouteDirections(req).Result;`. The `directions` structure is complex. Consider setting a breakpoint in this method, and examining the contents of `directions`.
 
-1. Add the command to deliver to a customer.
+1. Add the direct method to deliver to a customer.
 
    ```cs
         static Task<MethodResponse> CmdGoToCustomer(MethodRequest methodRequest, object userContext)
@@ -1063,9 +1065,9 @@ In the blank app.js file, insert the following code. Each additional section of 
     ```
 
     > [!NOTE]
-    > The statement `var dict = JsonConvert.DeserializeObject<Dictionary<string, string>>(payloadString);` shows how data is passed from the IoT Central app in a command. Note, too, that the device responds with a conflict if it is not in the correct state, and that the command itself is acknowledged at the end of the function. The recall command that follows in the next step handles things very similarly.
+    > The statement `var dict = JsonConvert.DeserializeObject<Dictionary<string, string>>(payloadString);` shows how to create a dictionary of name/value pairs, from the payload of the command. The device responds with a conflict, if the device is not in the correct state. The command itself is acknowledged at the end of the method. The recall command that follows in the next step handles things similarly.
 
-1. Add the recall command.
+1. Add the recall direct method.
 
    ```cs
         static void ReturnToBase()
@@ -1116,7 +1118,7 @@ In the blank app.js file, insert the following code. Each additional section of 
         }
     ```
 
-1. Add the function that updates the truck simulation at each time interval.
+1. Add the method that updates the truck simulation at each time interval.
 
    ```cs
         static double DieRoll(double max)
@@ -1275,9 +1277,9 @@ In the blank app.js file, insert the following code. Each additional section of 
     ```
 
     > [!NOTE]
-    > This function is called every time interval. The actual time interval is set later on (at 5 seconds), though the "simulated time" (the number of seconds you specify that has passed each time this function is called) is set by the global `static double interval = 60`. Setting this value at 60 means the simulation runs at a rate of 60 divided by 5, or 12 times real time. To lower the simulated time, reduce the interval to, say, 30 (for a simulation that runs at six times real-time). Setting interval at 5 would run the simulation in real-time. Though realistic, this speed would be a bit slow, given the real driving times to the customer destinations.
+    > This function is called every time interval. The actual time interval is set at 5 seconds, though the _simulated time_ (the number of simulated seconds you specify that has passed each time this function is called) is set by the global `static double interval = 60`. Setting this value at 60 means the simulation runs at a rate of 60 divided by 5, or 12 times real time. To lower the simulated time, reduce `interval` to, say, 30 (for a simulation that runs at six times real-time). Setting `interval` at 5 would run the simulation in real-time. Though realistic, this speed would be a bit slow, given the real driving times to the customer destinations.
 
-1. Add the function to send truck telemetry and events, if any have occurred.
+1. Add the methods to send truck telemetry. Send events too, if any have occurred.
 
    ```cs
         static void colorMessage(string text, ConsoleColor clr)
@@ -1321,7 +1323,6 @@ In the blank app.js file, insert the following code. Each additional section of 
                     {
                         eventConflict = conflict,
                     };
-                    // try this first!! tbd
                     telemetryMessage.Properties.Add("eventConflict", conflict);
                     conflict = noEvent;
                 }
@@ -1339,7 +1340,7 @@ In the blank app.js file, insert the following code. Each additional section of 
 
                 Console.WriteLine($"\nTelemetry data: {telemetryMessageString}");
 
-                // Bail if requested.
+                // Exit, if requested.
                 token.ThrowIfCancellationRequested();
 
                 // Send the telemetry message.
@@ -1352,7 +1353,7 @@ In the blank app.js file, insert the following code. Each additional section of 
     ```
 
     > [!NOTE]
-    > The `SendTruckTelemetryAsync` is an important function, handling the sending of telemetry, states, and events to IoT Central. Note the use of JSON strings to send the data, and that an acknowledgement message is sent at the end of the function.
+    > The `SendTruckTelemetryAsync` is an important function, handling the sending of telemetry, states, and events to IoT Central. Note the use of JSON strings to send the data.
 
 1. Add the code to handle settings and properties. You only have one setting and one property in our app, though if there are more, they are easily added.
 
@@ -1374,7 +1375,7 @@ In the blank app.js file, insert the following code. Each additional section of 
             {
                 BuildAcknowledgement(desiredProperties, setting);
             }
-            
+
             Console.WriteLine("Send settings changed acknowledgement...");
             await s_deviceClient.UpdateReportedPropertiesAsync(reportedProperties);
         }
@@ -1468,7 +1469,7 @@ In the blank app.js file, insert the following code. Each additional section of 
     ```
 
     > [!NOTE]
-    > tbd.
+    > Direct methods are set in the client using statements such as `s_deviceClient.SetMethodHandlerAsync("cmdGoTo", CmdGoToCustomer, null).Wait();`.
 
 1. Complete the app by entering closing braces for the class and namespace.
 
