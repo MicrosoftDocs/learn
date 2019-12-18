@@ -2,8 +2,8 @@
 uid: learn.azdo.run-quality-tests-build-pipeline
 metadata:
   title: Run quality tests in your build pipeline by using Azure Pipelines - Learn
-  description: Set up automated testing in your pipeline to improve code quality.
-  ms.date: 06/21/2019
+  description: Find out about automated testing that proves your code to be maintainable, understandable, and functioning without repetitive manual testing.
+  ms.date: 11/04/2019
   author: tpetchel
   ms.author: thpetche
   ms.topic: interactive-tutorial

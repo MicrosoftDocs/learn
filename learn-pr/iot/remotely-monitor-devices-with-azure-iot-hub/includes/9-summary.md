@@ -1,4 +1,3 @@
-
 In this module, you learned how to:
 
 - Create a custom Azure IoT Hub, using the Azure portal
@@ -12,7 +11,7 @@ In this module, you learned how to:
 
 ## Clean up
 
-When you're satisfied you do not need to return to the CheeseCaveHub, delete the device, then delete the hub. These options are available in your [Azure portal](https://ms.portal.azure.com/#home).
+When you're satisfied you don't need to return to the CheeseCaveHub, delete the device, then delete the hub. These options are available in your [Azure portal](https://ms.portal.azure.com/#home).
 
 No need to delete your project code though, keep it for future reference!
 
@@ -22,7 +21,7 @@ Take your interest further with:
 
 - [Azure IoT Hub Documentation](https://docs.microsoft.com/azure/iot-hub//)
 - [Azure Certified for IoT device catalog](https://catalog.azureiotsolutions.com/)
-- [Develop IoT Edge modules for Windows devices](https://docs.microsoft.com/en-us/azure/iot-edge/tutorial-develop-for-windows#set-up-visual-studio-and-tools)
+- [Develop IoT Edge modules for Windows devices](https://docs.microsoft.com/azure/iot-edge/tutorial-develop-for-windows#set-up-visual-studio-and-tools)
 
 And look out for additional Learn modules on IoT Hub.
 

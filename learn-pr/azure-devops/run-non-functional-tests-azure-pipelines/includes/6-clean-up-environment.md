@@ -34,7 +34,7 @@ To clean up your resource group:
 
 Here, you'll move the work item you assigned to yourself earlier in this module, **Automate performance tests**, to the **Done** column.
 
-In practice, the definition of "Done" often means working software in the hands of your users. For learning purposes, here you'll mark this work as complete because you have working load tests set up in your pipeline.
+In practice, the definition of "Done" often means putting working software into the hands of your users. For learning purposes, here you'll mark this work as complete because you have working load tests set up in your pipeline.
 
 At the end of each Sprint, or work iteration, you and your team might hold a retrospective meeting, where you share the work you completed, what went well in the sprint, and what could be improved.
 
@@ -63,7 +63,7 @@ To disable the pipeline:
 1. Click the **Edit** button.
 
     ![Azure Pipelines showing the location of the Edit button](../../shared/media/azure-pipelines-edit-button.png)
-1. From the menu in the upper corner, select **Settings**.
+1. Select **Edit**. From the menu in the upper corner, select **Settings**.
 
     ![Azure Pipelines showing the Settings menu option](../../shared/media/azure-pipelines-settings-button.png)
 1. Under **Processing of new run requests**, select **Disabled** and then click **Save**.

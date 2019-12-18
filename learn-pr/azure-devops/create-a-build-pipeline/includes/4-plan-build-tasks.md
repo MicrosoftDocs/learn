@@ -64,6 +64,8 @@ After she runs the script, Mara realizes that it's incomplete. For example, it d
 
 ## What are Azure Pipelines tasks?
 
+In Azure Pipelines, a _task_ is a packaged script or procedure that's been abstracted with a set of inputs.
+
 An Azure Pipelines task abstracts away the underlying details. This abstraction makes it easier to run common build functions, like downloading build tools or packages your application depends on or running Visual Studio or Xcode to build your project.
 
 Here's an example that uses the `DotNetCoreCLI@2` task to build a C# project that targets .NET Core:
@@ -107,7 +109,7 @@ Mara can use one of two methods to configure her pipeline:
 
     ![The Azure Pipelines visual designer showing build tasks for a .NET Core application](../media/4-visual-designer.png)
 
-* A YAML file. YAML is a compact format that makes it easy to structure the kind of data that’s in configuration files. You typically maintain this YAML file directly with your application's source code.
+* A YAML file. YAML is a compact format that makes it easy to structure the kind of data that's in configuration files. You typically maintain this YAML file directly with your application's source code.
 
 Mara considers her options. She's used YAML previously to define similar build tasks and configurations. And she likes the idea of maintaining the build definition as code, just as she would any other part of her project.
 

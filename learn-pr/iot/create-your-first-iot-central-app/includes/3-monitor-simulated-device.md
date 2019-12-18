@@ -30,3 +30,4 @@ Complete validation of the device template will not be possible until you have s
 1. Clicking on any of the blue circles provides more location information.
 
 Let's take a break and test your knowledge so far.
+

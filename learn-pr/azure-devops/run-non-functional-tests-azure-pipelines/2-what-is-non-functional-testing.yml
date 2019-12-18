@@ -15,7 +15,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "You recently connected your webapp to a database. Database records are shown when the page loads. You want to verify that database calls don't cause the page to take over one second to load. Which kind of non-functional testing might you use?"
+  - content: "You recently connected your web app to a database. Database records are shown when the page loads. You want to verify that database calls don't cause the page to take over one second to load. Which kind of non-functional testing might you use?"
     choices:
     - content: "Load testing."
       isCorrect: true

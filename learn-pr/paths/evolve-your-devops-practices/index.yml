@@ -2,7 +2,7 @@
 uid: learn.azdo.evolve-your-devops-practices
 metadata:
   title: Evolve your DevOps practices learning path
-  description: Azure DevOps enables you to build, test, and deploy any application to any cloud. Learn how Azure DevOps can help bring together people, process, and products to enable continuous delivery of value to your end users.
+  description: In this learning path, find out how Azure DevOps enables transparency and cooperation with continuous delivery and deployment for your development lifecycle.
   brand: azure
   ms.date: 9/1/2019
   author: tpetchel
@@ -16,7 +16,7 @@ summary: |
 
   In this learning path, you will get started on your DevOps journey. You will:
     - See how value stream maps can help you evaluate your current processes and technologies
-    - Sign up for your free Azure DevOps account
+    - Sign up for your free Azure DevOps organization
     - Learn how to plan and track work items using Azure Boards
 
   Take this learning path to help prepare for [Exam AZ-400: Microsoft Azure DevOps Solutions](https://www.microsoft.com/learning/exam-az-400.aspx).
@@ -29,7 +29,6 @@ roles:
 - devops-engineer
 - administrator
 - developer
-- solution-architect
 products:
 - azure-devops
 modules:

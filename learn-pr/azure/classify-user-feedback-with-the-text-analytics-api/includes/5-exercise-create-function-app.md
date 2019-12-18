@@ -30,7 +30,7 @@
     Congratulations! You've created and deployed your function app.
 
 > [!TIP]
-> Having trouble finding your function apps in the portal? Try [adding Function Apps to your favorites in the Azure portal](https://docs.microsoft.com/azure/azure-functions/functions-how-to-use-azure-function-app-settings#favorite).
+> Having trouble finding your function apps in the portal? Try [adding Function Apps to your favorites in the Azure portal](https://docs.microsoft.com/azure/azure-functions/functions-how-to-use-azure-function-app-settings).
 
 ## Create a function to execute our logic
 

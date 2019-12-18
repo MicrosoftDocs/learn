@@ -30,9 +30,9 @@ quiz:
       explanation: "Correct!"
   - content: "Which of the choices below is **NOT** a valid operator?"
     choices:
-    - content: "`??`"
+    - content: "`%%`"
       isCorrect: true
-      explanation: "Correct!  `??` has no meaning in C#."
+      explanation: "Correct!  The double percentage-sign symbol `%%` has no meaning in C# and is not a valid operator."
     - content: "`&&`"
       isCorrect: false
       explanation: "`&&` is the C# logical AND operator.  We learned about it in this module."

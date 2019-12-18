@@ -9,15 +9,15 @@ Using RBAC, you can:
 - Allow a user to manage all resources in a resource group, such as VMs, websites, and virtual subnets.
 - Allow an application to access all resources in a resource group.
 
-To view access permissions, use the **Access Control** (IAM) blade in the Azure portal. On this blade, you can see who has access to an area and their role. Using this same blade, you can also grant or remove access.
+To view access permissions, use the **Access control (IAM)** panel for the resource in the Azure portal. On this panel, you can see who has access to an area and their role. Using this same panel, you can also grant or remove access.
 
-![Screenshot of the Access control - Role assignment blade. In the Access control (IAM) pane, settings, and permissions for a user display](../media/5-resource-group-access-control.png)
+![Screenshot of the Access control - Role assignment pane. In the Access control (IAM) pane, settings, and permissions for a user display](../media/5-resource-group-access-control.png)
 
 In the above screenshot, **Alain Charon** has been assigned the **Backup Operator** role for this resource group.
 
 ### How RBAC defines access
 
-RBAC uses an **allow model** for access. When you are assigned to a role, RBAC _allows_ you to perform specific actions, such as read, write, or delete. Therefore, if one role assignment grants you read permissions to a resource group, and a different role assignment grants you write permissions to the same resource group, you will have write permissions on that resource group.
+RBAC uses an **allow model** for access. When you are assigned to a role, RBAC _allows_ you to perform specific actions, such as read, write, or delete. Therefore, if one role assignment grants you read permissions to a resource group, and a different role assignment grants you write permissions to the same resource group, you will have both read and write permissions on that resource group.
 
 ## Best Practices for RBAC
 

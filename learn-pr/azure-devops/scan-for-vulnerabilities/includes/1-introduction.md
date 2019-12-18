@@ -1,4 +1,4 @@
-This module shows you how to make sure that you write code that's secure by scanning it for potential vulnerabilities. You also learn some techniques that can ensure that the code you write is of high quality and is easily maintainable.
+This module shows you how to make sure that you write code that's secure by scanning it for potential vulnerabilities. You also learn some techniques that can help ensure that the code you write is of high quality and is easily maintainable.
 
 Are you certain that the code you write is secure? Have you ever inadvertently added a vulnerability that could be exploited? As a developer, you need to be sure that you don't deploy code that could compromise the integrity of your software. You can detect potential code security issues by _shifting left_, which means scanning your code for potential issues early in the development process.
 

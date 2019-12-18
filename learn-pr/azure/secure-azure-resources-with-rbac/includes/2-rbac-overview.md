@@ -7,7 +7,7 @@ Azure Active Directory (Azure AD) and Role-Based Access Control (RBAC) work toge
 
 ## Azure subscriptions
 
-First, remember that each Azure subscription is associated a single Azure AD directory. Users, groups, and applications in that directory can manage resources in the Azure subscription. The subscriptions use Azure AD for single sign-on (SSO) and access management. You can extend your on-premises Active Directory to the cloud by using **Azure AD Connect**. This feature allows your employees to manage their Azure subscriptions by using their existing work identities. When you disable an on-premises Active Directory account, it automatically loses access to all Azure subscriptions connected with Azure AD.
+First, remember that each Azure subscription is associated with a single Azure AD directory. Users, groups, and applications in that directory can manage resources in the Azure subscription. The subscriptions use Azure AD for single sign-on (SSO) and access management. You can extend your on-premises Active Directory to the cloud by using **Azure AD Connect**. This feature allows your employees to manage their Azure subscriptions by using their existing work identities. When you disable an on-premises Active Directory account, it automatically loses access to all Azure subscriptions connected with Azure AD.
 
 ## What is RBAC?
 
@@ -38,11 +38,11 @@ Here are some scenarios you can implement with RBAC.
 
 ## RBAC in the Azure portal
 
-In several areas in the Azure portal, you'll see a blade named **Access control (IAM)**, also known as identity and access management. On this blade, you can see who has access to that area and their role. Using this same blade, you can grant or remove access.
+In several areas in the Azure portal, you'll see a pane named **Access control (IAM)**, also known as identity and access management. On this pane, you can see who has access to that area and their role. Using this same pane, you can grant or remove access.
 
-The following shows an example of the Access control (IAM) blade for a resource group. In this example, Alain Charon has been assigned the Backup Operator role for this resource group.
+The following shows an example of the Access control (IAM) pane for a resource group. In this example, Alain Charon has been assigned the Backup Operator role for this resource group.
 
-![Screenshot of the Azure portal showing the Access control-Role assignment blade with the Backup operator section highlighted](../media/2-resource-group-access-control.png)
+![Screenshot of the Azure portal showing the Access control-Role assignment pane with the Backup operator section highlighted](../media/2-resource-group-access-control.png)
 
 ## How does RBAC work?
 
@@ -87,7 +87,7 @@ The following example shows how the Marketing group has been assigned the Contri
 
 ## RBAC is an allow model
 
-RBAC is an allow model. What this means is that when you are assigned a role, RBAC allows you to perform certain actions, such as read, write, or delete. So, if one role assignment grants you read permissions to a resource group and a different role assignment grants you write permissions to the same resource group, you will have write permissions on that resource group.
+RBAC is an allow model. What this means is that when you are assigned a role, RBAC allows you to perform certain actions, such as read, write, or delete. So, if one role assignment grants you read permissions to a resource group and a different role assignment grants you write permissions to the same resource group, you will have read and write permissions on that resource group.
 
 RBAC has something called `NotActions` permissions. Use `NotActions` to create a set of allowed permissions. The access granted by a role, the effective permissions, is computed by subtracting the `NotActions` operations from the `Actions` operations. For example, the [Contributor](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor) role has both `Actions` and `NotActions`. The wildcard (*) in `Actions` indicates that it can perform all operations on the control plane. Then you subtract the following operations in `NotActions` to compute the effective permissions:
 

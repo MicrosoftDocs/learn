@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.oxford.deploy-prebuilt-module-edge-device.6-exercise-deploying-prebuilt-module
+title: Exercise - Deploying a pre-built module to the IoT Edge
+metadata:
+  title: Exercise - Deploying a pre-built module to the IoT Edge
+  description: In this section, the exercise guides the learners how to deploy prebuilt module from Azure Marketplace
+  ms.date: 12/5/2019
+  author: leestott
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-hub
+durationInMinutes: 15 # dummy number at present
+content: |
+  [!include[](includes/6-exercise-deploying-prebuilt-module.md)]

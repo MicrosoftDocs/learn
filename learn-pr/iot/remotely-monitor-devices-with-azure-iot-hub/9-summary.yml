@@ -4,7 +4,7 @@ metadata:
   title: Summary
   description: Summary
   ms.date: 10/01/2019
-  author: PeterTurcan
+  author: olivierbloch
   ms.author: Olivier.Bloch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
@@ -20,10 +20,10 @@ quiz:
     choices:  
     - content: 'Build date of the remote IoT Hub device'
       isCorrect: false
-      explanation: This would be a property of the device, not telemetry.
+      explanation: This date would be a property of the device, not telemetry.
     - content: 'Sensor ID'
       isCorrect: false
-      explanation: This could be a property of the device, or a tag in a device twin.
+      explanation: This ID could be a property of the device, or a tag in a device twin.
     - content: 'Heartbeat'
       isCorrect: true
       explanation: A heart-rate monitor sends out a heartbeat as its telemetry.

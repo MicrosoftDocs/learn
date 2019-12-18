@@ -2,12 +2,11 @@
 uid: learn.data-ai.get-started-with-azure-dsvm
 metadata:
   title: Get started with Machine Learning with an Azure Data Science Virtual Machine
-  description: Azure includes a pre-configured virtual machine service for performing Data Science tasks. Learn how to use the Azure Data Science Virtual Machine to do common data analysis and machine learning tasks
+  description: In this learning path, discover Azure's pre-configured virtual machine images designed for data science and how to get a jump start in your data science work.
   brand: azure
   ms.date: 03/15/2019
-  author: bcafferky
-  ms.author: brcaffer
-  #ms.learn-contact: smmark
+  author: GraemeMalcolm
+  ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Get started with Machine Learning with an Azure Data Science Virtual Machine

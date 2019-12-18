@@ -1,4 +1,4 @@
-In this unit, we will first create an IoT Hub, and add a single device to that hub. Then we record the connection strings we need for the coding sections of this module.
+In this unit, we'll first create an IoT Hub, and add a single device to that hub. Then we record the connection strings we need for the coding sections of this module.
 
 ## Create a custom IoT Hub
 
@@ -32,7 +32,7 @@ Now we need to create a single device identity, the sensor monitoring the cheese
 1. You should now see your device in the list of devices for the IoT Hub. Click on the device name. Copy your **Device ID**, and the **Primary Connection String** to a text file (using Notepad, or similar text editor).
 
     > [!IMPORTANT]
-    > The connection string you've just copied is the _device_ connection string. There are many other connection strings , including the _service_ connection string, that we also will need. Add a note to your text file that this is the device connection string.
+    > The connection string you've just copied is the _device_ connection string. There are many other connection strings, including the _service_ connection string, that we also will need. Add a note to your text file that this is the device connection string.
 
 1. In the left-hand menu for your IoT Hub, select **Shared access policies**.
 1. Click the **iothubowner** entry under **Policy**, then, on the right-hand side, copy the **Connection string-primary key** and paste it into your text file. Again, add a note, this text is the service connection string.
@@ -46,14 +46,14 @@ For C# versions of the code, you also need the _Event Hubs-compatible endpoint_,
 
 1. Open an [Azure Cloud Shell](https://shell.azure.com/).
 
-1. Copy the following three commands to your text file, and replace {YourIoTHubName} with the name of your hub.
+1. Copy the following three commands to your text file, and replace &lt;YourIoTHubName&gt; with the name of your hub.
 
     ``` Azure CLI
-    az iot hub show --query properties.eventHubEndpoints.events.endpoint --name {YourIoTHubName}
+    az iot hub show --query properties.eventHubEndpoints.events.endpoint --name <YourIoTHubName>
 
-    az iot hub show --query properties.eventHubEndpoints.events.path --name {YourIoTHubName}
+    az iot hub show --query properties.eventHubEndpoints.events.path --name <YourIoTHubName>
 
-    az iot hub policy show --name service --query primaryKey --hub-name {YourIoTHubName}
+    az iot hub policy show --name service --query primaryKey --hub-name <YourIoTHubName>
     ```
 
 1. One at a time, copy the commands from the text file into the Azure Cloud Shell, and run them. Record the results back into your text file.

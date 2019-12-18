@@ -1,10 +1,10 @@
 Now that we have our IoT hub connected to the blob container, let's connect a Stream Analytics job to process the input.
 
-1. Select **+ Create a resource** in the left-hand sidebar of the Azure portal, followed by **Internet of Things** and **Stream Analytics job**.
+1. Select **+ Create a resource** in the left-hand navigation menu of the Azure portal, followed by **Internet of Things** and **Stream Analytics job**.
 
     ![Creating a Stream Analytics job](../media/6-new-stream-analytics-job.png)
 
-1. Name the job "polar-bear-analytics" and place it in the resource group that you created earlier.
+1. Name the job `polar-bear-analytics` and place it in the resource group that you created earlier.
 
 1. Specify **South Central US** as the location. This was the same location used for the IoT Hub.
 

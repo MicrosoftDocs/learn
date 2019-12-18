@@ -1,10 +1,10 @@
 In this module, you'll add functional tests &mdash; tests that verify an application's behavior &mdash; to the pipeline.
 
-In [Create a multi-stage pipeline with Azure Pipelines](/learn/modules/create-multi-stage-pipeline?azure-portal=true), you helped the Tailspin web team design and build a release management workflow. This workflow enables the team to move changes through a series of stages, such as the _Dev_ stage and the _Test_ stage, all the way out to a _Staging_ environment that resembles production.
+In [Manage database changes in Azure Pipelines](/learn/modules/manage-database-changes-in-azure-pipelines?azure-portal=true), you helped the Tailspin web team connect their web application to Azure SQL Database. You also used a release approval to help coordinate changes to the database schema between the developers and the database administrator.
 
 The stages that you and the team defined provide the overall shape of your pipeline, but there's more that you can add to each stage. For example, in the _Test_ stage, Amita still tests the web application manually as she always has. When she's satisfied, she manually promotes the application to _Staging_, where management can review the new features and decide if they want to make the release publicly available.
 
-In [Run quality tests in your build pipeline using Azure Pipelines](/learn/modules/run-quality-tests-build-pipeline?azure-portal=true), you incorporated unit and code coverage tests into the build process. These help ensure that there are no regression bugs and that the code meets a company's standards for quality and style. But what kinds of tests can you run once a service is operational and actually deployed to an environment?
+In [Run quality tests in your build pipeline using Azure Pipelines](/learn/modules/run-quality-tests-build-pipeline?azure-portal=true), you incorporated unit and code coverage tests into the build process. These help ensure that there are no regression bugs and that the code meets the company's standards for quality and style. But what kinds of tests can you run once a service is operational and actually deployed to an environment?
 
 ## Learning objectives
 
@@ -34,7 +34,7 @@ If you want to go through just this module, you need to set up a development env
 * [.NET Core 2.1](https://www.microsoft.com/net/download?azure-portal=true)
 * [Git](https://git-scm.com/downloads?azure-portal=true)
 
-You can get started with Azure and Azure DevOps for free.
+You can get started with Azure and Azure DevOps for free. You don't need an Azure subscription to work with Azure DevOps, but here you'll use Azure DevOps to deploy to Azure resources that exist in your Azure subscription.
 
 This environment lets you complete the exercises in this and future modules. You can also use it to apply your new skills to your own projects.
 

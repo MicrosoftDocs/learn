@@ -41,13 +41,13 @@ A queue must be part of a storage account. You can create a storage account usin
 
 The following screenshot shows the location of the Storage accounts category.
 
-![Screenshot of the All services blade with the Storage accounts category highlighted.](../media/2-create-storage-account-1.png)
+![Screenshot of the All services pane with the Storage accounts category highlighted.](../media/2-create-storage-account-1.png)
 
-There are several options you can supply when you create the account, most of which you can use the default selection. We covered these options in a previous module, but you can hover over the `(i)` tip associated with each option to get a reminder of what it does. Here's an example of filling out the portal blade.
+There are several options you can supply when you create the account, most of which you can use the default selection. We covered these options in a previous module, but you can hover over the `(i)` tip associated with each option to get a reminder of what it does. Here's an example of filling out the portal pane.
 
-The following screenshot displays the Create storage account blade and the information required to create a storage account.
+The following screenshot displays the Create storage account pane and the information required to create a storage account.
 
-![Screenshot of the Create storage account blade showing the options to specify when creating a storage account.](../media/2-create-storage-account-2.png)
+![Screenshot of the Create storage account pane showing the options to specify when creating a storage account.](../media/2-create-storage-account-2.png)
 
 ### Settings for queues
 When you create a storage account that will contain queues, you should consider the following settings:
