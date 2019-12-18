@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azdo.route-system-feedback.2-tools-track-usage-flow
-title: Implement Tools to Track System Usage, Feature Usage, and Flow  
+title: Continuously monitor your applications and services
 metadata:
-  title: Implement Tools to Track System Usage, Feature Usage, and Flow  
+  title: Continuously monitor your applications and services
   description: Learn ...
   ms.date: 06/21/2019
   author: tpetchel
