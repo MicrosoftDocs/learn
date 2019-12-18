@@ -44,65 +44,65 @@ The following sections present some commonly used functional tests.
 
 _Smoke testing_ verifies the most basic functionality of your application or service. These tests are often run before more complete and exhaustive tests. Smoke tests should run quickly.
 
-For example, say you're developing a website. Your smoke test might use `curl` to verify that the site is reachable and that fetching the home page produces a 200 (OK) HTTP status. If fetching the home page produces another status code, such as 404 (Not Found) or 500 (Internal Server Error), then you know that the website isn't working. You also know that there's no point to running other tests. Instead, you diagnose the error, fix it, and restart your tests.
+For example, say you're developing a website. Your smoke test might use `curl` to verify that the site is reachable and that fetching the home page produces . If fetching the home page produces another status code, such as 404 (Not Found) or 500 (Internal Server Error), then you know that the website isn't working. You also know that there's no point to running other tests. Instead, you diagnose the error, fix it, and restart your tests.
 
 ### Unit testing
 
 You worked with unit tests in the [Run quality tests in your build pipeline using Azure Pipelines](/learn/modules/run-quality-tests-build-pipeline?azure-portal=true) module.
 
-In short, _unit testing_ verifies the most fundamental components of your program or library, such as an individual function or method. You specify one or more inputs along with the expected results. The test runner performs each test and checks to see whether the actual and expected results match.
+In short, _unit testing_ verifies the most fundamental components of your program or library, such as an individual function or method. You specify one or more inputs along with the expected results. The test runner performs each test and checks to see whether the actual results match the expected results.
 
-As an example, let's say you have a function that performs an arithmetic operation that includes division. You might specify a few values that you expect your users to enter along with edge-case values such as 0 and -1. If a certain input should produce an error or exception, you can verify that the function does, in fact, produce that error.
+As an example, let's say you have a function that performs an arithmetic operation that includes division. You might specify a few values that you expect your users to enter. You also specify edge-case values such as 0 and -1. If you expect a certain input to produce an error or exception, you can verify that the function produces that error.
 
-The UI tests you'll run later in this module are a form of unit tests.
+The UI tests that you'll run later in this module are unit tests.
 
 ### Integration testing
 
-_Integration testing_ verifies that multiple software components work together to form a complete system. For example, an e-commerce system might include a website, a products database, and a payment system. You might write an integration test that adds items to the shopping cart and then purchases them. The test verifies that the web application can connect to the products database and then successfully fulfill the order.
+_Integration testing_ verifies that multiple software components work together to form a complete system. For example, an e-commerce system might include a website, a products database, and a payment system. You might write an integration test that adds items to the shopping cart and then purchases the items. The test verifies that the web application can connect to the products database and then fulfill the order.
 
-Combining unit and integration tests helps you create a layered approach to your testing strategy. For example, you might run unit tests on each of your components before running the integration tests. If all unit tests pass, you can move on to the integration test phase with greater confidence.
+You can combine unit tests and integration tests to create a layered testing strategy. For example, you might run unit tests on each of your components before you run the integration tests. If all unit tests pass, you can move on to the integration test phase with greater confidence.
 
 ### Regression testing
 
-A _regression_ occurs when existing behavior changes or breaks when a feature is either added or changed. _Regression testing_ helps determine whether code, configuration, or other changes affect the software's overall behavior.
+A _regression_ occurs when existing behavior either changes or breaks after you add or change a feature. _Regression testing_ helps determine whether code, configuration, or other changes affect the software's overall behavior.
 
-Regression testing is important because a change in one component can affect the behavior of another. For example, say you optimize a database for write performance. The read performance of that database, which is handled by another component, might unexpectedly drop. The drop in read performance is a regression.
+Regression testing is important because a change in one component can affect the behavior of another component. For example, say you optimize a database for write performance. The read performance of that database, which is handled by another component, might unexpectedly drop. The drop in read performance is a regression.
 
-There are various types of regression testing strategies. These strategies typically vary by the number of tests you run to verify that a new feature or bug fix doesn't break existing functionality. However, when tests are automated, regression testing might simply involve running all unit and integration tests each time the software undergoes a change.
+There are various types of regression testing strategies. These strategies typically vary by the number of tests you run to verify that a new feature or bug fix doesn't break existing functionality. However, when tests are automated, regression testing might simply involve running all unit tests and integration tests each time the software changes.
 
 ### Sanity testing
 
-_Sanity testing_ involves testing each major component of a piece of software to verify that software appears to be working and can undergo more thorough testing. You can think of sanity tests as being less thorough than regression or unit tests, but broader than smoke tests.
+_Sanity testing_ involves testing each major component of a piece of software to verify that the software appears to be working and can undergo more thorough testing. You can think of sanity tests as being less thorough than regression tests or unit tests, but broader than smoke tests.
 
 Although sanity testing can be automated, it's often done manually in response to a feature change or a bug fix. For example, when validating a bug fix, a software tester might also verify that other features are working by entering some typical values. If the software appears to be working as expected, it can then go through a more thorough test pass.
 
-### User interface (UI) testing
+### User interface testing
 
-_UI testing_ verifies the behavior of an application's user interface. UI tests help verify that the sequence, or order, of user interactions leads to the expected result. They also help verify that input devices, such as the keyboard or mouse, affect the user interface properly. You can run UI tests to verify the behavior of a native Windows, macOS, or Linux application, or to verify that the UI behaves as expected across web browsers.
+_User interface (UI) testing_ verifies the behavior of an application's user interface. UI tests help verify that the sequence, or order, of user interactions leads to the expected result. These tests also help verify that input devices, such as the keyboard or mouse, affect the user interface properly. You can run UI tests to verify the behavior of a native Windows, macOS, or Linux application. Or you can use UI tests to verify that the UI behaves as expected across web browsers.
 
-Although a unit or integration test might verify that the UI _receives_ data correctly, UI testing helps verify that the user interface _displays_ correctly and that the result functions as expected for the user.
+A unit test or integration test might verify that the UI _receives_ data correctly. But UI testing helps verify that the user interface _displays_ correctly and that the result functions as expected for the user.
 
 For example, a UI test might verify that the correct animation appears in response to a button click. A second test might verify that the same animation appears correctly when the window is resized.
 
-In this module, you work with UI tests that are coded by hand. But you can also use a capture and replay system to automatically build your UI tests.
+In this module, you work with UI tests that are coded by hand. But you can also use a capture-and-replay system to automatically build your UI tests.
 
 ### Usability testing
 
-_Usability testing_ is a form of manual testing that verifies an application's behavior from the user's perspective. Usability testing is typically performed by the team who builds the software.
+_Usability testing_ is a form of manual testing that verifies an application's behavior from the user's perspective. Usability testing is typically done by the team that builds the software.
 
-While UI testing focuses on whether a feature behaves as expected, usability testing helps verify that the software is intuitive and meets the user's needs. In other words, usability testing helps verify whether the software is "usable."
+Whereas UI testing focuses on whether a feature behaves as expected, usability testing helps verify that the software is intuitive and meets the user's needs. In other words, usability testing helps verify whether the software is "usable."
 
-For example, say you have a website that includes a link to the user's profile. A UI test can verify that the link is present and brings up the user's profile when clicked. However, if humans cannot easily locate this link, they may become frustrated when they try to access their profile.
+For example, say you have a website that includes a link to the user's profile. A UI test can verify that the link is present and that it brings up the user's profile when the link is clicked. However, if humans can't easily locate this link, they might become frustrated when they try to access their profile.
 
-### User acceptance testing (UAT)
+### User acceptance testing
 
-_User acceptance testing_, like usability testing, focuses on an application's behavior from the user's perspective. However, unlike acceptance testing, user acceptance testing is typically performed with real end users.
+_User acceptance testing (UAT)_, like usability testing, focuses on an application's behavior from the user's perspective. Unlike acceptance testing, UAT is typically done by real end users.
 
-Depending on the software, end users might be asked to complete specific tasks or they might be allowed to explore the software without any specific guidelines. For custom software, UAT typically happens directly with the client. For more general-purpose software, teams might run "beta" tests where select users from different geographic regions or users with certain interests are given early access to the software.
+Depending on the software, end users might be asked to complete specific tasks. Or they might be allowed to explore the software without following any specific guidelines. For custom software, UAT typically happens directly with the client. For more general-purpose software, teams might run _beta_ tests. In beta tests, users from different geographic regions or users who have certain interests receive early access to the software.
 
-Feedback from testers can be direct or indirect. Direct feedback might come in the form of verbatim comments. Indirect feedback can come in the form of measuring testers' body language or eye movements, or the time it takes them to complete certain tasks.
+Feedback from testers can be direct or indirect. Direct feedback might come in the form of verbal comments. Indirect feedback can come in the form of measuring testers' body language, eye movements, or the time they take to complete certain tasks.
 
-**Mara:** I know we covered this already, but just to emphasize the importance of writing tests, here's a short video where Abel Wang, Cloud Advocate at Microsoft, explains how to ensure you maintain quality in your DevOps plan.
+**Mara:** I know we covered the importance of writing tests already. But just to emphasize it, here's a short video where Abel Wang, Cloud Advocate at Microsoft, explains how to help ensure quality in your DevOps plan.
 
 **Ask Abel**
 
