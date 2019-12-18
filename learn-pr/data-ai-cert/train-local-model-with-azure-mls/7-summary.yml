@@ -27,16 +27,16 @@ quiz:
       explanation: "That is not correct. An Experiment does not contain a Docker image."
     - content: "The data used for model training"
       isCorrect: false
-      explanation: "This is not correct.  An Experiment does not contain the data for model training."
+      explanation: "This is not correct. An Experiment does not contain the data for model training."
   
   - content: "A run refers to which of the following?"
     choices: 
     - content: "Python code for a specific task such as training a model or tuning hyperparameters. Run does the job of logging metrics and uploading the results to Azure platform."
       isCorrect: true
       explanation: "That is correct.  Spark is not a part of the service."
-    - content: "A set of containers managed by Kubertes to run your models."
+    - content: "A set of containers managed by Kubernetes to run your models."
       isCorrect: false
-      explanation: "That is not correct.  A run is not containers manged by Kubernetes."
+      explanation: "That is not correct. A run is not containers managed by Kubernetes."
     - content: "A Spark cluster."
       isCorrect: false
       explanation: "That is not correct.  A run is not a Spark cluster."
@@ -51,4 +51,4 @@ quiz:
       explanation: "That is not correct. Hyperparameters cannot be determined from the source data."
     - content: "A parameter that automatically and frequently changes value during a single model training run."
       isCorrect: false
-      explanation: "This is not correct.  A Hyperparameter is set before each model training execution."
+      explanation: "This is not correct. A Hyperparameter is set before each model training execution."
