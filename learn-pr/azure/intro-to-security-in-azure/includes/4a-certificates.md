@@ -19,7 +19,7 @@ You can manage service certificates separately from your services, and you can h
 
 ### Management certificates
 
-Management certificates allow you to authenticate with the classic deployment model. Many programs and tools (such as Visual Studio or the Azure SDK) use these certificates to automate configuration and deployment of various Azure services. However, these are not really related to cloud services.
+Management certificates allow you to authenticate with the classic deployment model. Many programs and tools (such as Visual Studio or the Azure SDK) use these certificates to automate configuration and deployment of various Azure services. However, these types of certificates are not related to cloud services.
 
 ## Using Azure Key Vault with certificates
 
@@ -27,7 +27,7 @@ You can store your certificates in Azure Key Vault - much like any other secret.
 
 - You can create certificates in Key Vault, or import existing certificates
 - You can securely store and manage certificates without interaction with private key material.
-- You can create a policy that directs Key Vault to manage the life-cycle of a certificate.
+- You can create a policy that directs Key Vault to manage the life cycle of a certificate.
 - You can provide contact information for notification about life-cycle events of expiration and renewal of certificate.
 - You can automatically renew certificates with selected issuers - Key Vault partner x509 certificate providers / certificate authorities.
 
