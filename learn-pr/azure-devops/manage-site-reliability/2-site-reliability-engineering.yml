@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azdo.manage-site-reliability.2-site-reliability-engineering
+title: Site reliability engineering
+metadata:
+  title: Site reliability engineering
+  description: Learn how ...
+  ms.date: 06/21/2019
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-site-reliability-engineering.md)]

@@ -2,7 +2,7 @@
 uid: learn.azdo.manage-site-reliability
 metadata:
   title: Manage site reliability - Learn
-  description: Learn with the Space Game web team how to use manage your site reliability.
+  description: Learn how to manage your site reliability.
   ms.date: 06/21/2019
   author: tpetchel
   ms.author: thpetche
@@ -30,9 +30,11 @@ products:
 - azure-devops
 units:
 - learn.azdo.manage-site-reliability.1-introduction
-- learn.azdo.manage-site-reliability.2-analyze-telemetry-baseline
-- learn.azdo.manage-site-reliability.3-perform-ongoing-tuning
-- learn.azdo.manage-site-reliability.4-analyze-alerts-baseline
-- learn.azdo.manage-site-reliability.5-blameless-postmortem
+- learn.azdo.manage-site-reliability.2-site-reliability-engineering
+- learn.azdo.manage-site-reliability.3-analyze-telemetry-baseline
+- learn.azdo.manage-site-reliability.4-perform-ongoing-tuning
+- learn.azdo.manage-site-reliability.5-analyze-alerts-baseline
+- learn.azdo.manage-site-reliability.6-blameless-postmortem
+- learn.azdo.manage-site-reliability.7-summary
 badge:
   uid: learn.azdo.manage-site-reliability.badge
