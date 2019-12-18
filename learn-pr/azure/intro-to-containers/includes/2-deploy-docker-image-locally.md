@@ -35,7 +35,7 @@ Docker images are stored and made available in *registries*. A registry is a web
 
 A registry is organized as a series of *repositories*. Each repository contains multiple Docker images that share a common name and generally the same purpose and functionality. These images normally have different versions identified with a tag. This mechanism enables you to publish and retain multiple versions of images for compatibility reasons. When you download and run an image, you must specify the registry, repository, and version tag for the image. Tags are text labels, and you can use your version numbering system (v1.0, v1.1, v1.2, v2.0, and so on).
 
-Suppose you want to use the ASP.NET Core Runtime Docker image. This image is available in two versions:
+Suppose you want to use the ASP.NET Core Runtime Docker image. This image is available in two versions.
 
 - `mcr.microsoft.com/dotnet/core/aspnet:2.2`
 - `mcr.microsoft.com/dotnet/core/aspnet:2.1`
