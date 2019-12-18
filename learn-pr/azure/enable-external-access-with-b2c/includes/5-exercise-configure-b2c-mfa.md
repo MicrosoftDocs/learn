@@ -8,7 +8,11 @@ First, you create an Azure AD B2C tenant.
 
 1. [Sign in](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) to the Azure portal as a global administrator. If you're the person who signed up for the Azure account, you'll be the global administrator.
 
-1. Create a new resource by selecting **Create a resource** on the left of the Azure portal. Search for **Active Directory B2C**, select the search result.
+1. Create a new resource by selecting **Create a resource** on the left of the Azure portal.
+
+    ![Create resource](../media/5-portal-home.png)
+
+1. Search for **Active Directory B2C**, select the search result.
 
     ![Create a B2C resource](../media/5-create-b2c-resource.png)
 
@@ -40,7 +44,11 @@ First, you create an Azure AD B2C tenant.
 
 You need to register your application.
 
-1. Select **All services**, then search for **Azure AD B2C**, and select the top search result.
+1. Switch to your newly created B2C tenant. Select **Directory + Subscription** at the top of the Azure portal, then select your tenant in the list.
+
+    ![Azure AD B2C tenant](../media/5-changeto-azureadb2c-tenant.png)
+
+1. Select the **Show portal menu** button at the top left corner of the Azure portal to show the portal menu. Select **All services**, then search for **Azure AD B2C**, and select the top search result.
 
     ![Search for AD B2C in all services](../media/5-all-services.png)
 
@@ -113,9 +121,15 @@ You now test the user flow to try the experience from the user's perspective.
 
     ![Sign up form](../media/5-signup-form.png)
 
-1. Enter a number for multi-factor authentication and select a method to receive the code.
+1. Select **Send verficiation code**.
 
-    ![Configure MFA details](../media/5-configure-mfa-enter-number.png)
+1. Go to the inbox of the email address you've provided. Open the verification code email, and copy the code.
+
+    ![Verification code received](../media/5-verification-code-received.png)
+
+1. Copy the the code into the **Verfication code** box in your sign-up form. Select **Verify code**. Then select **Create** at the bottom of the form.
+
+1. Now provide a phone number for multi-factor authentication in the **Phone Number** field. Select **Send Code** or **Call me** to receive the code.
 
 1. When your authentication code is verified, your account will be created. You're forwarded to the test app at `https://jwt.ms`. The test app shows all the claims you chose to return to the application when you configured the user flow.
 
@@ -125,7 +139,7 @@ You now test the user flow to try the experience from the user's perspective.
 
 1. Run the user flow again by following step 1 and step 2 from the previous section. The sign-in form will appear.
 
-1. Fill in the sign-in form.
+1. Fill in the sign-in form. Then select **Sign in**.
 
     ![Sign-in form](../media/5-signin-form.png)
 

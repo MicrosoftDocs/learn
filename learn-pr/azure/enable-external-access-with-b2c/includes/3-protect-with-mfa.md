@@ -30,6 +30,6 @@ Use these different methods to cater to your users' needs. For example, for acce
 
 ## Enable multi-factor authentication
 
-You enable multi-factor authentication for your Azure AD B2C application through the Azure portal. When you create user sign-in and sign-up flows, you enable multi-factor authentication with a toggle.  If necessary, use the same toggle in your user flow to disable multi-factor authentication for your application.
+You enable multi-factor authentication for your Azure AD B2C application through the Azure portal. When you create user sign-in and sign-up flows, you enable multi-factor authentication with a toggle. If necessary, use the same toggle in your user flow to disable multi-factor authentication for your application.
 
 ![Enable MFA in user flow](../media/3-enable-mfa-user-flow.png)

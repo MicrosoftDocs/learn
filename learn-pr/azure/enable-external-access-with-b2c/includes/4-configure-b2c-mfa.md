@@ -1,4 +1,4 @@
-Your healthcare application is a web application that handles sensitive patient data.  The app must remain secure, even if a patient's username or password is compromised. You'll need to configure Azure AD B2C with multi-factor authentication to protect the patients' access to the application. Your healthcare web application handles sensitive patient data. The app must remain secure, even if a patient's username or password is compromised. You've been asked to configure Azure AD B2C with multi-factor authentication (MFA) to protect patients' access to the application.
+Your healthcare application is a web application that handles sensitive patient data.  The app must remain secure, even if a patient's username or password is compromised. You'll need to configure Azure AD B2C with multi-factor authentication to protect the patients' access to the application. 
 
 You'll configure a few components for your healthcare application to take advantage of the combined benefits of Azure AD B2C and multi-factor authentication (MFA). You'll need to configure a tenant, register your application, and create a user flow.
 
@@ -17,21 +17,21 @@ An Azure Active Directory B2C tenant isn't the same as an Azure Active Directory
 When you create a new Azure AD B2C tenant, you'll see it in your list of directories in the portal.
 
 ![View your new Azure AD B2C tenant](../media/4-created-b2c-tenant.png)
-<!-- Original image: https://docs.microsoft.com/en-us/azure/active-directory-b2c/media/tutorial-create-tenant/portal-07-select-tenant-directory.png -->
 
-You'll switch to your new Azure AD B2C tenant and register it with your application.
+
+You would switch to your new Azure AD B2C tenant to register it with your application.
 
 ### Register your application
 
-When you've switched to the new Azure AD B2C tenant, you register the application. You'll go to the Azure AD B2C resource you've created.
+When you've switched to the new Azure AD B2C tenant, you'll be able to register the application. You'll go to the Azure AD B2C resource you've created.
 
 ![Register an application](../media/4-azuread-b2c-register-application.png)
 
-Use a form to register your application from the Azure AD B2C overview pane. Provide the name of your application and specify whether it's a web application or API. Also, you'll need to say whether it's a native application, such as for desktop, or a mobile app.
+You'll use a form to register your application. You provide the name of your application and specify whether it's a web application or API. Also, you'll need to say whether it's a native application, such as for desktops, or a mobile app.
 
 ![New application form](../media/4-register-application-form.png)
 
-Your health application is a web app, so you'll need to provide a reply URL. The reply URL is the endpoint where your Azure AD B2C should send tokens for the application requests. You can also use a local URL like`https://localhost:44322`. Your reply URL, which is also case-sensitive, is only valid if it begins with `https`.
+Your health application is a web app, so you'll need to provide a reply URL. The reply URL is the endpoint where your Azure AD B2C should send tokens for the application requests. You can also use a local URL like `https://localhost:{port}`. Your reply URL, which is also case-sensitive, is only valid if it begins with `https`.
 
 ### Create user flows
 
@@ -39,7 +39,7 @@ You use user flows to manage things like your user sign-ins and sign-ups. Your A
 
 ![Create user flows](../media/4-create-user-flows.png)
 
-You'll create a user flow for sign-ups and sign-ins for your users. You use the sign-up and sign-in user flow to handle the steps necessary for your users to create an account for the app and access the account. This user flow will guide the users through several pages that help them to sign in or sign up.
+You'll create a user flow for sign-ups and sign-ins for your users. You use the sign-up and sign-in user flow to handle the steps necessary for your users to create an account for the app and access the application. This user flow will guide the users through several pages that help them to sign in or sign up.
 
 ![Create a sign-up user flow](../media/4-create-sign-up-flow.png)
 
@@ -47,7 +47,7 @@ When you create a sign-up or sign-in user flow, you'll specify a name for it. Yo
 
 ### Enable multi-factor authentication
 
-As you've already seen, you enable multi-factor authentication for a user flow when you create one. You can also return to previously created user flows, and retroactively enable or disable multi-factor authentication. Go to your user flow and use the **Multifactor authentication** toggle.
+As you've already seen, you enable multi-factor authentication for a user flow when you create one. You can also return to previously created user flows, and retroactively enable or disable multi-factor authentication. You'd go to your existing user flow and use the **Multifactor authentication** toggle.
 
 ![Enable MFA](../media/4-enable-mfa.png)
 
@@ -55,7 +55,7 @@ As you've already seen, you enable multi-factor authentication for a user flow w
 
 After your user's flow and multi-factor authentication has been configured, the application is ready to use.
 
-Because your application is a web app, the user accesses it through their browser. Your user has to sign up to your application if they don't already have an account. In the sign-up page, they're expected to provide the information you wanted to collect in your user flow. The sign-up form might look like this:
+Because your healthcare application is a web app, the user accesses it through their browser. Your user has to sign up to your application if they don't already have an account. In the sign-up page, they're expected to provide the information you wanted to collect in your user flow. The sign-up form might look like this:
 
 ![Sign-up form](../media/4-sign-up-form.png)
 
