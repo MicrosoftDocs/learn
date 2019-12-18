@@ -1,7 +1,5 @@
 In this unit, you will prepare the process to connect a real device to IoT Central. By "real" IoT Central understands that there is a remote app running - the app can be in a real device, taking input from real sensors, or running a simulation. Both options are treated as a connection to a real device.
 
-The essential component for communication between a device and IoT Central is a _connection string_. There are some tools that make generating these strings easy. In this unit, you will access these tools in such as way that you can reuse them later on. To start with, you need some information on our real device.
-
 ## Add a real device
 
 1. With your Refrigerated Truck app open in the [Azure IoT Central](https://apps.azureiotcentral.com/?azure-portal=true) portal, select **Devices** from the left-hand menu.
@@ -21,6 +19,10 @@ The essential component for communication between a device and IoT Central is a 
 1. Save the text file. You will be using these values after installing and running a few utilities to generate connection strings.
 
 1. In the IoT Central portal, click the **Close** button.
+
+::: zone pivot="vs-node,vscode-node"
+
+The essential component for communication between a device and IoT Central is a _connection string_. There are some tools that make generating these strings easy. In this unit, you will access these tools in such as way that you can reuse them later on. To start with, you need some information on our real device.
 
 ## Generate a connection string
 
@@ -81,6 +83,11 @@ All of the work to generate connection strings is handled through Azure Cloud Sh
 
 You now have the all important connection string. The Scope ID identifies the app, the Device ID the real device, and the Primary Key gives you permission for the connection.
 
+::: zone-end
+::: zone pivot="vs-csharp,vscode-csharp"
+
+::: zone-end
+
 ## Create a free Azure Maps account
 
 If you do not already have an Azure Maps account, you will need to create one.
@@ -89,7 +96,7 @@ If you do not already have an Azure Maps account, you will need to create one.
 
 1. Follow the prompts to create a free account. When your account is set up, you will need the **Subscription Key** for the account. Copy and paste this key into your text document, with a note that it applies to Azure Maps.
 
-1. You can (optionally) verify your Azure Maps subscription key works. Save the following HTML to an .html file (after replacing the **subscriptionKey** entry with your own key) with any filename. Then, load the file in a web browser. Do you see a map of the world?
+1. You can (optionally) verify your Azure Maps subscription key works. Save the following HTML to an .html file. Replace the **subscriptionKey** entry with your own key. Then, load the file into a web browser. Do you see a map of the world?
 
 ```html
 <!DOCTYPE html>
@@ -144,4 +151,4 @@ If you do not already have an Azure Maps account, you will need to create one.
 
 ## Next steps
 
-You have now completed the preparatory steps of connecting your first IoT Central app to real devices. The next step is to use the connection string in a device app.
+You have now completed the preparatory steps of connecting your first IoT Central app to real devices. The next step is to create the device app.

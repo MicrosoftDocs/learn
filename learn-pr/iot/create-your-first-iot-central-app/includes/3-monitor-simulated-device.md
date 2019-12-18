@@ -5,7 +5,7 @@ Even before a device template is complete, the automatically created simulated d
 
 Complete validation of the device template will not be possible until you have some real devices. However, the simulated device allows you both to check the completeness of what you have done so far, and to provide a helpful UI to learn the basics of managing devices through IoT Central.
 
-1. Inside the [Azure IoT Central](https://apps.azureiotcentral.com/?azure-portal=true) portal (which you may still have open), select the **Devices** entry in the left-hand menu, then click the one device you have so far (**RefrigeratedTruck-1**). In the range of **Views**, if it is not already selected, click the _chart_ entry (the left-most of the three view options, highlighted below).
+1. Inside the [Azure IoT Central](https://apps.azureiotcentral.com/?azure-portal=true) portal, select the **Devices** entry in the left-hand menu, then click the one device you have so far (**RefrigeratedTruck-1**). In the range of **Views**, if it is not already selected, click the _chart_ entry (the left-most of the three view options, highlighted below).
 
     ![Screenshot showing the telemetry line chart, and the state bar charts, for the simulated device](../media/refrigerated-trucks-simview1.png)
 
@@ -29,34 +29,4 @@ Complete validation of the device template will not be possible until you have s
 
 1. Clicking on any of the blue circles provides more location information.
 
-1. Investigate the map icons top-right of the screen. You can zoom in and out, rotate the map, show various backgrounds, and reset the map to the starting point. Open up the background options, and select _night_ view.
-
-    ![Screenshot showing the night-time map for the simulated device](../media/refrigerated-trucks-night.png)
-
-1. You are interested in the night view, or the dark gray-scale view, as there is greater contrast with the device icons (the circles). These dark views can be helpful when the map view shows state information for each device, which will be shown as different colored circles.
-
-## Create an elementary dashboard
-
-In this final exercise for this unit, you create a dashboard to monitor a single device. Later on in this series of units, you are going to create a more specific dashboard for all devices. The two processes are similar, so the experience you gain here will be useful in creating any IoT dashboard.
-
-1. In the left-hand menu, open **Device Templates**, then select the **RefrigeratedTruck** template.
-
-1. Click on **Dashboard** (not the one in the left-hand menu, the one to the right of **Rules**), then select **New** top-right of the screen.
-
-1. Select the **Map** from the range of **Library** options.
-
-1. Then enter a title, "Map" works. Select **Location** as the only option for Location. For **State Measurement**, select any one of the three truck states to be shown on the map. Turn on **Show location history**.
-
-1. Click **Save**, to complete the map entry on the dashboard. Perhaps expand the map on the dashboard using the lower-right corner icon.
-
-1. Select **KPI** from the **Library**, and set the value to the temperature telemetry from the simulated truck, after selecting the other fields and giving this dashboard entry a title, perhaps "Temp (degC)".
-
-1. Click the eye icon in the **Measures** box to make the value visible. Then you will be able to click **Save**. A tile will be added to your dashboard, which will be set to a much smaller default size than the map.
-
-1. Add any other elements to the dashboard that pique your interest. The dashboard is an alternative method of viewing device data in IoT Central, to the device views described earlier in this unit.
-
-    ![Screenshot showing the simulated device dashboard](../media/refrigerated-trucks-simdashboard.png)
-
-1. Verify (by watching the dashboard) that your simulated truck is moving around on the dashboard map, albeit with superpowers. Verify too that the temperature of the contents is changing.
-
-When you feel you have gained some insights into the workings of a dashboard, let's take a break and test your knowledge so far.
+Let's take a break and test your knowledge so far.

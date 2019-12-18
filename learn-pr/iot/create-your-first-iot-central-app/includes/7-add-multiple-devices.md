@@ -27,6 +27,8 @@ The heavy-lifting of this module has been completed, the process of extending ou
 
 1. When you have completed connecting all four new trucks, notice that the **Provisioning Status** is still **Registered**. Not until you actually make the connection will this change.
 
+::: zone pivot="vs-node,vscode-node"
+
 ## Create connection strings for the new devices
 
 1. In your text file, create four strings that match the following outline, replacing **{scope_id}** with the actual value for the first truck, and the appropriate device values for each `{device_id#}` and `{primary_key#}` placeholder. To make things clear, the name of the output text file is changed to match the truck number.
@@ -102,6 +104,15 @@ Each truck is simulated by one running copy of the device app. So, you need five
 1. Repeat this process for trucks 3 through 5, changing the `const truckNum` line, and running the app again.
 
 Exciting, isn't it? You now have five console windows open, with five simulated refrigerated trucks waiting for their commands!
+
+::: zone-end
+::: zone pivot="vs-csharp,vscode-csharp"
+
+MULITPLE C# CODE GOES HERE
+
+
+::: zone-end
+
 
 ## Monitor and command the trucks from IoT Central
 

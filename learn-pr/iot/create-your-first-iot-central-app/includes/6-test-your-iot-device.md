@@ -13,7 +13,7 @@ To begin the testing, with your [Azure IoT Central](https://apps.azureiotcentral
 ## Confirm the device app connects to Azure IoT Central
 
 1. If the second line on the console is **Device successfully connected to Azure IoT Central** you have made the connection.
-1. The "connected" line should be followed by some text verifying the settings and properties were sent successfully. If you do not get this message, it usually means either the IoT Central app is not running, or the connection string is not correct.
+1. The "connected" line should be followed by some text verifying the settings and properties were sent successfully. If you do not get this message, it usually means either the IoT Central app is not running, or the connection key strings are not correct.
 
 ## Confirm the telemetry functions send data on the specified interval, and that data is picked up correctly by IoT Central
 

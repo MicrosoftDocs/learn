@@ -16,7 +16,11 @@ Node.js is a platform for building server apps, based on JavaScript. All the Jav
 
     ![Screenshot showing how to save the JavaScript file, in Visual Studio Code](../media/refrigerated-trucks-vscode.png)
 
-1. Back in the terminal, enter **npm install azure-iot-device**. When this package has installed, enter **npm install azure-maps-rest**.
+1. Back in the terminal, load the libraries you need with the following commands:
+
+    * **npm install azure-iot-device**
+    * **npm install azure-iot-device-mqtt**
+    * **npm install azure-maps-rest**
 
 1. After you have entered the code below into the app.js file, you can run it from the terminal by entering `node app.js`. Ensure that the RefrigeratedTruck folder is the current folder of the terminal, when you run the app.
 
@@ -49,9 +53,13 @@ Node.js is a platform for building server apps, based on JavaScript. All the Jav
 
     ![Screenshot showing how to create a new blank Node.js project, in Visual Studio](../media/refrigerated-trucks-vs-project.png)
 
-1. Install azure-iot-device and azure-maps-rest npm packages by right-clicking on the **npm** entry in Solution Explorer, and select **Install New npm Packages...**.
+1. Right-click on the **npm** entry in Solution Explorer, and select **Install New npm Packages...**.
 
-1. In the dialog that follows, search for and install **azure-iot-device**, then **azure-maps-rest**.
+1. In the dialog that follows, search for and install the following libraries:
+
+    * **azure-iot-device**
+    * **azure-iot-device-mqtt**
+    * **azure-maps-rest**
 
     ![Screenshot showing how to add an npm package, in Visual Studio](../media/refrigerated-trucks-vs-npm.png)
 
@@ -362,7 +370,7 @@ In the blank app.js file, insert the following code. Each additional section of 
     ```
 
     > [!NOTE]
-    > The statement `var num = request.payload.customerId;` shows how data (text, numbers, toggles, dates) are passed from the IoT Central app in a command. Note, too, that the device responds with a conflict if it is not in the correct state, and that the command itself is acknowledged at the end of the function. The recall command that follows in the next step handles things very similarly.
+    > The statement `var num = request.payload.customerId;` shows how data (text, numbers, toggles, dates) are passed from the IoT Central app in a command. Note, too, that the device responds with a conflict if it is not in the correct state, and that the command itself is acknowledged at the end of the function. The recall command that follows in the next step handles things similarly.
 
 1. Add the recall command.
 
@@ -546,7 +554,7 @@ In the blank app.js file, insert the following code. Each additional section of 
     ```
 
     > [!NOTE]
-    > This function is called every time interval. The actual time interval is set later on (at 5 seconds), though the "simulated time" (the number of seconds you specify that has passed each time this function is called) is set by the global `var interval = 60`, which means the simulation runs at a rate of 60 divided by 5, or 12 times the speed of real time. To lower the simulated time, reduce the `var interval` to, say, 30 (for a simulation that runs at six times real-time). Setting `var interval = 5` would run the simulation in real-time (which would be a bit slow, given the real driving times to the customer destinations).
+    > This function is called every time interval. The actual time interval is set later on (at 5 seconds), though the "simulated time" (the number of seconds you specify that has passed each time this function is called) is set by the global `var interval = 60`, which means the simulation runs at a rate of 60 divided by 5, or 12 times the speed of real time. To lower the simulated time, reduce the `var interval` to, say, 30 (for a simulation that runs at six times real-time). Setting `var interval = 5` would run the simulation in real-time. Thus would be realistic, but a bit slow, given the real driving times to the customer destinations.
 
 1. Add the function to send truck telemetry and events, if any have occurred.
 
@@ -730,7 +738,7 @@ In the blank app.js file, insert the following code. Each additional section of 
 ::: zone-end
 ::: zone pivot="vs-csharp,vscode-csharp"
 
-In the blank app.js file, insert the following code. Each additional section of code should be appended to the end of the file, in the order listed here.
+In the blank Program.cs file, insert the following code. Each additional section of code should be appended to the end of the file, in the order listed here.
 
    > [!NOTE]
    > If you would like to skip this unit, and load all of the code into your app, then download and copy all of the contents of Program.cs from [MicrosoftDocs/mslearn-your-first-iot-central-app](https://github.com/MicrosoftDocs/mslearn-your-first-iot-central-app) into the Program.cs file of your project. If you copy this code (and replace the connection and subscription strings) then go straight to the next unit, and start testing!
@@ -1401,7 +1409,7 @@ In the blank app.js file, insert the following code. Each additional section of 
         static void Main(string[] args)
         {
             rand = new Random();
-            colorMessage("Refrigerated truck sensor device app.\n", ConsoleColor.Yellow);
+            colorMessage($"Starting {truckIdentification}", ConsoleColor.Yellow);
             currentLat = baseLat;
             currentLon = baseLon;
 
@@ -1421,6 +1429,8 @@ In the blank app.js file, insert the following code. Each additional section of 
                     IAuthenticationMethod auth = new DeviceAuthenticationWithRegistrySymmetricKey(result.DeviceId, (security as SecurityProviderSymmetricKey).GetPrimaryKey());
                     s_deviceClient = DeviceClient.Create(result.AssignedHub, auth, TransportType.Mqtt);
                 }
+                greenMessage("Device successfully connected to Azure IoT Central");
+
                 SendDevicePropertiesAsync().GetAwaiter().GetResult();
 
                 Console.Write("Register settings changed handler...");
@@ -1441,8 +1451,7 @@ In the blank app.js file, insert the following code. Each additional section of 
             }
             catch (Exception ex)
             {
-                Console.WriteLine();
-                Console.WriteLine(ex.Message);
+                redMessage(ex.Message);
             }
         }
 
