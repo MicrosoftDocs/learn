@@ -27,7 +27,7 @@ A query request is a list or words (search terms) and query operators (simple or
 Search explorer uses the REST API. When using Search explorer, you can select the index and API version you want to use (service endpoint and API key are implicit). In the query you provide, you are only concerned with the last two items. Let's look what components make up a search query. Consider this search:
 
 ```
-calm easy meditation (-"iyengar yoga" + -"hot pilates)"
+calm easy meditation (-"iyengar yoga" + -"hot pilates")
 ```
 
 The above query is trying to find any video in your company's catalog that is calm and relaxing, but the person searching wants to exclude iyengar yoga and hot pilates.

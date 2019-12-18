@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.oxford.intro-to-iot-hub.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: In this section, we create interactive questions that validate if the learner has understood the learning objectives
+  ms.date: 9/29/2019
+  author: leestott
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-hub
+durationInMinutes: 5 # dummy number at present
+content: |
+quiz:
+  questions:
+  - content: "Suppose you work for manufacturing company. You're responsible for managing the authenticity of data from different kinds of sensors. All the devices are connected to IoT Hub. In this scenario, IoT Hub is suitable because:"
+    choices:
+    - content: "IoT Hub provides per device identity."
+      isCorrect: true
+      explanation: "IoT Hub contains an identity registry that stores information about the devices and modules permitted to connect to the IoT Hub."
+    - content: "IoT Hub supports many languages and platforms."
+      isCorrect: false
+      explanation: "The support for multiple languages doesn't affect the authenticity of the data from the devices."
+    - content: "IoT Hub enables bi-directional communication between devices and IoT Hub."
+      isCorrect: false
+      explanation: "The support for bi-directional communication doesn't affect the authenticity of the data from the devices."
+  - content: "Suppose you're managing a number of IoT devices in a building. You need to manage the lifecycle of  these devices at scale. IoT Hub is suitable for this scenario because:"
+    choices:
+    - content: "IoT Hub can integrate with third-party services."
+      isCorrect: false
+      explanation: "The ability to integrate to third-party services doesn't impact the management of the devices."
+    - content: "IoT Hub can provide message routing."
+      isCorrect: false
+      explanation: "The ability to provide message routing doesn't impact the management of the devices."
+    - content: "IoT Hub can provision devices at scale."
+      isCorrect: true
+      explanation: " IoT hub provides the ability to provision devices at scale without hardcoding IoT Hub connection information at the factory."
+  - content: "IoT Hub-based application performs distributed processing. Which tier of IoT Hub should you use?"
+    choices:
+    - content: "Basic tier"
+      isCorrect: false
+      explanation: "The basic tier is used for applications based around collecting data from devices."
+    - content: "Standard tier"
+      isCorrect: true
+      explanation: "The standard tier is used for advanced processing requirements such as distributed processing."
+    - content: "Advanced tier"
+      isCorrect: false
+      explanation: "IoT Hub comes with only two types of tiers: Basic and Standard.s"
+    
+    

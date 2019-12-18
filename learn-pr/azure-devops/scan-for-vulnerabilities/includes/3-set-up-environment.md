@@ -7,18 +7,15 @@ To do this, you:
 > * Move the work item for this module on Azure Boards to the **Doing** column.
 > * Make sure your project is set up locally so that you can push changes to the pipeline.
 
-The modules in this learning path form a progression, where you follow the Tailspin web team through their DevOps journey.
+## Get the Azure DevOps project
 
-This learning path also builds on the [Evolve your DevOps practices](/learn/paths/evolve-your-devops-practices?azure-portal=true) learning path. There, you set up your Azure DevOps organization and created a task backlog on Azure Boards by using the Basic process.
+Here, you make sure that your Azure DevOps organization is set up to complete the rest of this module. You do this by running a template that creates a project for you in Azure DevOps.
 
-## Run the template
+The modules in this learning path form a progression, where you follow the Tailspin web team through their DevOps journey. For learning purposes, each module has an associated Azure DevOps project.
 
-At this point, you have two options:
+### Run the template
 
-1. Continue with the Azure DevOps project you created in the _Evolve your DevOps practices_ learning path.
-1. Run a template that sets up everything for you in your Azure DevOps organization.
-
-You can continue using your existing project if you completed the previous modules and have the Tailspin project set up in Azure DevOps. Run the template if you don't have the project set up or want to repeat this module from a fresh environment.
+Run a template that sets up everything for you in your Azure DevOps organization.
 
 > [!div class="nextstepaction"]
 > [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?name=scan-for-vulnerabilities&azure-portal=true)
@@ -40,6 +37,8 @@ From the Azure DevOps Demo Generator site, perform these steps to run the templa
 
 > [!IMPORTANT]
 > The [Clean up your Azure DevOps environment](/learn/modules/scan-for-vulnerabilities/8-clean-up-environment?azure-portal=true) page in this module contains important cleanup steps. Cleaning up helps to ensure that you don't run out of free build minutes. Be sure to perform the cleanup steps even if you don't complete this module.
+
+[!include[](../../shared/includes/project-visibility.md)]
 
 ## Move the work item to Doing
 

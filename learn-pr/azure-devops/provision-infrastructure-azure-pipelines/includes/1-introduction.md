@@ -1,8 +1,8 @@
-This module is about expressing your infrastructure requirements as code so that you can automatically provision the infrastructure you need for your application or service.
+This module is about expressing your infrastructure requirements as code. By adopting this practice, you can automatically provision the infrastructure that you need for your application or service.
 
 In the [Deploy applications with Azure DevOps](https://docs.microsoft.com/learn/paths/deploy-applications-with-azure-devops?azure-portal=true) learning path, you built a release pipeline in Azure Pipelines. You deployed a web application to Azure App Service instances that you brought up manually through the Azure portal and through the Azure CLI.
 
-Keeping up with changes in your infrastructure is a challenge. New resources need to be built. Old resources need maintenance. And environments need to be consistent. _Infrastructure as code_ enables you to describe, through code, the infrastructure you need for your application.
+Keeping up with changes in your infrastructure is a challenge. New resources need to be built. Old resources need maintenance. Environments need to be consistent. _Infrastructure as code_ enables you to describe, through code, the infrastructure that you need for your application.
 
 The Tailspin team is making great progress. But how can they further automate their processes to allow them to scale and release even faster?
 
@@ -35,7 +35,7 @@ If you want to start with this learning path, you need to set up a development e
 * [.NET Core 2.1](https://www.microsoft.com/net/download?azure-portal=true)
 * [Git](https://git-scm.com/downloads?azure-portal=true)
 
-You can get started with Azure and Azure DevOps for free. You don't need an Azure subscription to work with Azure DevOps, but here you'll use Azure DevOps to deploy to Azure resources that exist in your Azure subscription.
+You can get started with Azure and Azure DevOps for free. You don't need an Azure subscription to work with Azure DevOps, but here you'll use Azure DevOps to deploy to resources that exist in your Azure subscription.
 
 This environment lets you complete the exercises in this and future modules. You can also use it to apply your new skills to your own projects.
 
@@ -59,4 +59,4 @@ You met the _Space Game_ web team at Tailspin Toys in previous modules. As a ref
 
 :::row-end:::
 
-Mara has prior experience with DevOps and is helping the team adopt a more streamlined process using Azure DevOps.
+Mara has prior experience with DevOps and is helping the team adopt a more streamlined process by using Azure DevOps.

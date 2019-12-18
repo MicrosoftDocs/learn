@@ -6,7 +6,7 @@ The first step toward using Spark Structured Streaming is setting up Azure Event
 
     ![Screenshot of the Azure portal with selections for creating an event hub](../media/create-event-hubs.PNG)
 
-1. In the **Create Namespace** blade, enter the following information:
+1. In the **Create Namespace** pane, enter the following information:
 
    - **Name**: Enter a unique name, such as **databricksdemoeventhubs**. Uniqueness will be indicated by a green check mark.
    - **Pricing tier**: Select **Basic**.
@@ -16,7 +16,7 @@ The first step toward using Spark Structured Streaming is setting up Azure Event
    
    Select **Create**.
 
-   ![Screenshot of the "Create Namespace" blade](../media/create-event-hubs-namespace.PNG)
+   ![Screenshot of the "Create Namespace" pane](../media/create-event-hubs-namespace.PNG)
 
 ## Create an event hub
 
@@ -24,14 +24,14 @@ The first step toward using Spark Structured Streaming is setting up Azure Event
  
    ![Screenshot of an Event Hubs namespace with the button for adding an event hub highlighted](../media/add-event-hub.PNG)
 
-1. On the **Create Event Hub** blade, enter:
+1. On the **Create Event Hub** pane, enter:
 
    - **Name**: Enter **databricks-demo-eventhub**.
    - **Partition Count**: Enter **2**.
     
    Select **Create**.
 
-   ![Screenshot of the "Create Event Hub" blade](../media/create-new-event-hubs.PNG)
+   ![Screenshot of the "Create Event Hub" pane](../media/create-new-event-hubs.PNG)
 
 ## Create a shared access policy
 
@@ -39,7 +39,7 @@ The first step toward using Spark Structured Streaming is setting up Azure Event
 
    ![Screenshot of "Event Hubs" under "Entities"](../media/select-event-hubs-entity.PNG)
 
-1. On the blade for your event hub, select **Shared access policies** under **Settings** in the left menu.
+1. On the pane for your event hub, select **Shared access policies** under **Settings** in the left menu.
 
    ![Location of the shared access policy](../media/shared-access-policy-location.PNG)
 
@@ -47,7 +47,7 @@ The first step toward using Spark Structured Streaming is setting up Azure Event
 
    !["Add" button for shared access policy](../media/shared-access-policy-add-button.PNG)
 
-1. On the **Add SAS Policy** blade, enter the following information:
+1. On the **Add SAS Policy** pane, enter the following information:
 
    - **Policy name**: Enter **both**.
    - **Manage**: Leave unselected.
@@ -56,7 +56,7 @@ The first step toward using Spark Structured Streaming is setting up Azure Event
     
    Select **Create**.
 
-   ![Screenshot of the "Add SAS policy" blade](../media/add-sas-policy.PNG)
+   ![Screenshot of the "Add SAS policy" pane](../media/add-sas-policy.PNG)
 
 ## Capture the connection string's primary key for the shared access policy
 

@@ -13,7 +13,7 @@ title: Architect message brokering and serverless applications in Azure
 summary: Learn how to create reliable messaging for your applications, and how to take advantage of serverless application services in Azure.
 prerequisites: |
   - Familiarity with C#
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/architect-messaging-serverless.svg
 levels:
 - intermediate
 roles:

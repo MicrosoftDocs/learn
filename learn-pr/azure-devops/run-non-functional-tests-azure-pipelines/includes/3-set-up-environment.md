@@ -49,6 +49,8 @@ From the Azure DevOps Demo Generator site, perform these steps to run the templa
 > [!IMPORTANT]
 > The [Clean up your Azure DevOps environment](/learn/modules/run-non-functional-tests-azure-pipelines/6-clean-up-environment?azure-portal=true) page in this module contains important cleanup steps. Cleaning up helps ensure that you don't run out of free build minutes. Be sure to perform the cleanup steps even if you don't complete this module.
 
+[!include[](../../shared/includes/project-visibility.md)]
+
 ## Move the work item to Doing
 
 In this part, you assign a work item to yourself on Azure Boards that relates to this module. You also move the work item to the **Doing** state. In practice, you and your team would assign work items at the start of each sprint, or work iteration.
@@ -249,20 +251,19 @@ Here, you create a service connection that enables Azure Pipelines to access you
 1. In Azure DevOps, go to your **Space Game - web - Non-functional tests** project.
 1. Select **Project settings** from the bottom corner of the page.
 1. Under **Pipelines**, select **Service connections**.
-1. Select **+ New service connection** and then choose **Azure Resource Manager**.
-
-    The **Add an Azure Resource Manager service connection** dialog appears.
-1. From the dialog, ensure **Service Principal Authentication** is selected. Then fill in these fields:
+1. Select **New service connection**, then choose **Azure Resource Manager**, then select **Next**.
+1. Select **Service principal (automatic)**, then select **Next**.
+1. Fill in these fields:
 
     | Field               | Value                                        |
     |---------------------|----------------------------------------------|
-    | **Connection name** | **Resource Manager - Tailspin - Space Game** |
-    | **Scope level**     | **Subscription**                             |
-    | **Subscription**    | Your Azure subscription                      |
-    | **Resource Group**  | **tailspin-space-game-rg**                   |
+    | Scope level     | **Subscription**                             |
+    | Subscription    | Your Azure subscription                      |
+    | Resource Group  | **tailspin-space-game-rg**                   |
+    | Service connection name | *Resource Manager - Tailspin - Space Game* |
 
     During the process, you might be prompted to sign in to your Microsoft account.
 
-1. Select **OK**.
+1. Select **Save**.
 
     Azure DevOps performs a test connection to verify that it can connect to your Azure subscription. If Azure DevOps is unable to connect, you'll have the chance to sign in a second time.

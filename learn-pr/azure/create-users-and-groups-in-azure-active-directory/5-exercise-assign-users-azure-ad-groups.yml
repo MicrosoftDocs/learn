@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.create-users-and-groups-in-azure-active-directory.exercise-assign-users-azure-ad-groups
+title: Exercise - Assign users to Azure Active Directory groups
+metadata:
+  title: Exercise - Assign users to Azure Active Directory groups
+  description: Exercise - Assign users to Azure Active Directory groups
+  ms.date: 10/25/2019
+  author: cwatson-cat
+  ms.author: cwatson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+azureSandbox: true
+content: |
+  [!include[](includes/5-exercise-assign-users-azure-ad-groups.md)]

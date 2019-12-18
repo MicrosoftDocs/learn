@@ -75,13 +75,12 @@ Let's map these aspects to an example Dockerfile. Suppose we're creating a Docke
 FROM ubuntu:18.04
 
 # Step 2: Update OS packages and install additional software
-RUN apt -y update &&  
-    apt install -y wget nginx software-properties-common apt-transport-https &&  
-    wget -q https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb &&  
-    dpkg -i packages-microsoft-prod.deb &&  
-    add-apt-repository universe &&  
-    apt -y update &&  
-    apt install -y dotnet-sdk-2.2=2.2.203-1
+RUN apt -y update &&  apt install -y wget nginx software-properties-common apt-transport-https \
+	&& wget -q https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb \
+	&& dpkg -i packages-microsoft-prod.deb \
+	&& add-apt-repository universe \
+	&& apt -y update \
+	&& apt install -y dotnet-sdk-3.0
 
 # Step 3: Configure Nginx environment
 CMD service nginx start
@@ -130,7 +129,7 @@ Here is the output generated from the build command:
 Sending build context to Docker daemon  4.69MB
 Step 1/8 : FROM ubuntu:18.04
  ---> a2a15febcdf3
-Step 2/8 : RUN apt -y update && apt install -y wget nginx software-properties-common apt-transport-https && wget -q https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb && dpkg -i packages-microsoft-prod.deb && add-apt-repository universe && apt -y update && apt install -y dotnet-sdk-2.2=2.2.203-1
+Step 2/8 : RUN apt -y update && apt install -y wget nginx software-properties-common apt-transport-https && wget -q https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb && dpkg -i packages-microsoft-prod.deb && add-apt-repository universe && apt -y update && apt install -y dotnet-sdk-3.0
  ---> Using cache
  ---> feb452bac55a
 Step 3/8 : CMD service nginx start

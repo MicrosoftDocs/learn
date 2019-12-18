@@ -1,20 +1,21 @@
 ### YamlMime:Module
 uid: learn.student-evangelism.build-ml-model-with-azure-stream-analytics
+hidden: true
 metadata:
-  title: Analyze images in real-time with machine learning, Azure IoT Hub and Azure Stream Analytics
-  description: Analyze streaming data with a machine learning model and visualize the output. 
+  title: Analyze images in real time with machine learning, Azure IoT Hub, and Azure Stream Analytics
+  description: Find out how to use Azure Storage, Azure IoT Hub, and Azure Stream Analytics to analyze streaming data with a machine learning model and visualize the output. 
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.date: 5/1/2019
   author: ShanaMatthews
   ms.author: shanama
-title: Analyze images in real-time with machine learning, Azure IoT Hub and Azure Stream Analytics
+title: Analyze images in real time with machine learning, Azure IoT Hub, and Azure Stream Analytics
 summary: Analyze streaming data with a machine learning model and visualize the output.
 abstract:  | 
   In this module, you will:
-  - Create an Azure Storage account and an IoT hub and use a Node.js app to connect them to a simulated camera
+  - Create an Azure Storage account, an IoT hub, and use a Node.js app to connect them to a simulated camera
   - Use Azure Stream Analytics to run queries on live streams to analyze input and an Azure Function to return output
-  - Use Microsoft Cognitive Services to train an image classification model and call the model from an app or service
+  - Use Azure Cognitive Services to train an image classification model and call the model from an app or service
   - Connect Power BI to an Azure SQL database and visualize data from the database
 prerequisites: |
   - An Azure subscription
