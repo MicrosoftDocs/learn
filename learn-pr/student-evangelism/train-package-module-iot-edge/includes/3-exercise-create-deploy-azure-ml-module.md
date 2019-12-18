@@ -108,6 +108,10 @@ First step:
 
 ![An illustration showing how to test web service](../media/test-web-service.png)
 
+**Loading Azure ML workspace**
+
+![An illustration showing how to load ml workspace](../media/load-ml-workspace.png)
+
 **Getting container details**
 
 ![An illustration showing how to get container details](../media/get-container-details.png)

@@ -2,7 +2,7 @@
 
 In this module, your objective is to train a machine learning model and deploy the trained model into an Azure Machine Learning container. The components required for training the model and deploying the container are in the [AI Toolkit for Azure IoT Edge Git repo](https://github.com/Azure/ai-toolkit-iot-edge/tree/master/IoT Edge anomaly detection tutorial). You'll run the notebook in the exercise below.  
 
-Firstly, you **set up the parameters** for the IoT Hub and Azure ML workspace. These include the resource group, the Azure region, your Azure IoT Hub name, IoT Edge device ID, Azure subscription ID, your Azure ML service workspace name. You should also specify the module name that is "machinelearningmodule". In this case, **we're using the decision tree classifier as an anomaly detector**. You'll **build, evaluate, and test** the model. You'll also **store the model to disk** and then **register the model**  
+Firstly, you **set up the parameters** for the IoT Hub and Azure ML workspace. These include the resource group, the Azure region, your Azure IoT Hub name, IoT Edge device ID, Azure subscription ID, your Azure ML service workspace name. You should also specify the module name that is "machinelearningmodule". In this case, **we're using the decision tree classifier as an anomaly detector**. You'll **build, evaluate, and test** the model. You'll also **store the model to disk** and then **register the model**.
 
 You'll next use the registered model to **create a docker image**. You can then **test the performance of your model** by deploying the container to Azure container instance (ACI).  Call the web service with some dummy input data to **get a prediction**.
 
@@ -49,7 +49,7 @@ The script contains two functions that load and run the model:
 - init(): Typically, this function loads the model into a global object. This function is run only once when the Docker container for your web service is started.
 - run(input_data): This function uses the model to predict a value based on the input data. Inputs and outputs of the run typically use JSON for serialization and deserialization. You can also work with raw binary data. You can transform the data before sending it to the model or before returning it to the client.
 
-### Create Docker Image
+### Create Docker image
 
 Deployed models are packaged as a docker image. The image contains the dependencies needed to run the model all along with the logic to score new data. For Azure Container Instance, the azureml.core.image.ContainerImage class is used to create an image configuration. The image configuration is then used to create a new Docker image.
 
