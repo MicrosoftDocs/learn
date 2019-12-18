@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azdo.provision-databases-azure-pipelines.5-deploy-azure-resources-azure-pipelines
-title: Exercise - Deploy Azure Resources in Azure Pipelines by using an Azure Resource Manager template
+title: Exercise - Deploy Azure resources in Azure Pipelines by using an Azure Resource Manager template
 metadata:
-  title: Exercise - Deploy Azure Resources in Azure Pipelines by using an Azure Resource Manager template
-  description: Deploy Azure Resources in Azure Pipelines by using an Azure Resource Manager template and Azure Key Vault
+  title: Exercise - Deploy Azure resources in Azure Pipelines by using an Azure Resource Manager template
+  description: Deploy Azure resources in Azure Pipelines by using an Azure Resource Manager template and Azure Key Vault
   ms.date: 11/25/2019
   author: jamcneil
   ms.author: jumcn
