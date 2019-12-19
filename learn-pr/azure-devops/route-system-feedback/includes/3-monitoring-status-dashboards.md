@@ -1,4 +1,6 @@
-TODO: In this part, you ...
+Visualizations, such as charts and graphs, can help you analyze your monitoring data to drill-down on issues and identify patterns. Depending on the tool you use, you may also be able to share these visualizations with other users inside and outside of your organization.
+
+In this part, you explore some of the ways you can build a monitoring and status dashboard for your application. You'll look at:
 
 * Azure dashboards
 * Azure Monitor Views
@@ -9,13 +11,11 @@ TODO: In this part, you ...
 
 TODO: Any introduction from the TS team?
 
-Visualizations, such as charts and graphs, can help you analyze your monitoring data to drill-down on issues and identify patterns. Depending on the tool you use, you may also have the option to share visualizations with other users inside and outside of your organization.
-
 ## What are Azure dashboards?
 
-[Dashboards](https://docs.microsoft.com/en-us/azure/azure-portal/azure-portal-dashboards) provide a way for you to create a focused and organized view in the Azure portal of your cloud resources. They provide a "single pane of glass" over your Azure infrastructure and services, which enables you to identify important issues more quickly.
+[Dashboards](https://docs.microsoft.com/azure/azure-portal/azure-portal-dashboards?azure-portal=true) enable you to create a focused and organized view in the Azure portal of your cloud resources. They provide a "single pane of glass" over your Azure infrastructure and services, which enables you to identify important issues more quickly.
 
-TODO: Here's a ...
+Here's an example dashboard:
 
 ![A drawing of ...](../media/3-azure-dashboards.png)
 
@@ -23,15 +23,14 @@ TODO: Here's a ...
 
 Azure dashboards provide:
 
-* Deep integration with Azure services. Visualizations can be pinned to dashboards from multiple Azure pages including metrics analytics, log analytics, and Application Insights.
+* Deep integration with Azure services. You can pin visualizations to your dashboard from multiple Azure pages including metrics analytics, log analytics, and Application Insights.
 * Support for both metrics and log data.
 * A way to combine data from multiple sources, including output from:
-  * [Metrics explorer](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/metrics-charts)
-  * [Log Analytics queries](https://docs.microsoft.com/en-us/azure/azure-monitor/log-query/log-query-overview)
-  * [maps](https://docs.microsoft.com/en-us/azure/azure-monitor/app/app-map)
-  * [availability](https://docs.microsoft.com/en-us/azure/azure-monitor/visualizations)
-* An option for personal or shared dashboards. Dashboards are integrated with Azure [role based authentication](https://docs.microsoft.com/en-us/azure/role-based-access-control/overview) (RBAC).
-* Automatic refresh. Metrics refresh depends on time range with a minimum of five minutes. Logs refresh every minute.
+  * [Metrics Explorer](https://docs.microsoft.com/azure/azure-monitor/platform/metrics-charts?azure-portal=true)
+  * [Log queries](https://docs.microsoft.com/azure/azure-monitor/log-query/log-query-overview?azure-portal=true)
+  * [Application Map](https://docs.microsoft.com/azure/azure-monitor/app/app-map?azure-portal=true)
+* An option for personal or shared dashboards. Dashboards are integrated with Azure [role based authentication](https://docs.microsoft.com/azure/role-based-access-control/overview?azure-portal=true) (RBAC).
+* Automatic refresh.
 * Parametrized metrics dashboards with timestamp and custom parameters.
 * Flexible layout options.
 * Full screen mode.
@@ -48,7 +47,7 @@ Azure dashboards do not provide:
 
 ## What are Azure Monitor Views?
 
-[Views in Azure Monitor](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/view-designer) enable you to create custom visualizations with log data. They are used by monitoring solutions to present the data they collect.
+[Views in Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/platform/view-designer?azure-portal=true) enable you to create custom visualizations with log data. They are used by monitoring solutions to present the data they collect.
 
 ![A drawing of ...](../media/3-azure-monitor-views.png)
 
@@ -59,7 +58,7 @@ Azure Monitor Views provide:
 * Rich visualizations for log data.
 * Export and import views to transfer them to other resource groups and subscriptions.
 * Integration with Log Analytic management model with workspaces and monitoring solutions.
-* [Filters](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/view-designer-filters) for custom parameters.
+* [Filters](https://docs.microsoft.com/azure/azure-monitor/platform/view-designer-filters?azure-portal=true) for custom parameters.
 * Interactive views that can drill down into other views.
 
 ### Limitations of Azure Monitor Views
@@ -75,9 +74,9 @@ Azure Monitor Views do not:
 
 ## What are Application Insights workbooks?
 
-[Workbooks](https://docs.microsoft.com/en-us/azure/application-insights/app-insights-usage-workbooks) are interactive documents that provide deep insights into your data, investigation, and collaboration inside the team. Specific examples where workbooks are useful are troubleshooting guides and incident postmortem.
+[Workbooks](https://docs.microsoft.com/azure/application-insights/app-insights-usage-workbooks?azure-portal=true) are interactive documents that provide deep insights into your data, investigation, and collaboration inside the team. Workbooks can serve as a troubleshooting guide or to capture details from an incident postmortem.
 
-TODO: Here's a ...
+Here's a diagram to give you a sense of what a workbook looks like.
 
 ![A drawing of ...](../media/3-application-insights-workbooks.png)
 
@@ -86,10 +85,12 @@ TODO: Here's a ...
 Application Insights workbooks:
 
 * Support both metrics and logs.
-* Support parameters that enable you to build interactive reports where selecting an element in a table dynamically updates associated charts and visualizations.
+* Support parameters that enable you to build interactive reports.
+
+    For example, you might select an element in a table to dynamically update other charts and visualizations.
 * Provide a document-like flow.
 * Provide options for personal or shared workbooks.
-* Provide templates that support public GitHub-based template galleries.
+* Provide templates that support public GitHub template galleries.
 
 ### Limitations of Application Insights workbooks
 
@@ -100,9 +101,9 @@ Application Insights workbooks do not:
 
 ## What is Power BI?
 
-[Power BI](https://powerbi.microsoft.com/documentation/powerbi-service-get-started/) enables you to create business-centric dashboards and reports, as well as reports analyzing long-term KPI trends. You can [import the results of a log query](https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-powerbi) into a Power BI dataset so you can combine data from different sources and share reports on the web and on mobile devices.
+[Power BI](https://powerbi.microsoft.com/documentation/powerbi-service-get-started/?azure-portal=true) enables you to create business-centric dashboards and reports, as well as reports analyzing long-term KPI trends. You can [import the results of a log query](https://docs.microsoft.com/azure/log-analytics/log-analytics-powerbi?azure-portal=true) into a Power BI dataset so you can combine data from different sources and share reports on the web and on mobile devices.
 
-TODO: Here's a ...
+Here's what Power BI looks like:
 
 ![A drawing of ...](../media/3-power-bi.png)
 
@@ -126,11 +127,11 @@ Power BI does not:
 
 ## Grafana
 
-[Grafana](https://grafana.com/) is an open platform that provides operational dashboards. It helps you detect, isolate and, and triage operational incidents. You can add the [Grafana Azure Monitor data source plugin](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/grafana-plugin) to your Azure subscription to visualize your Azure metrics data.
+[Grafana](https://grafana.com/?azure-portal=true) is an open platform that provides operational dashboards. It helps you detect, isolate, and triage operational incidents. You can add the [Grafana Azure Monitor data source plugin](https://docs.microsoft.com/azure/azure-monitor/platform/grafana-plugin?azure-portal=true) to your Azure subscription to visualize your Azure metrics data.
 
-TODO: Here's a ...
+Here's what Grafana looks like:
 
-![A drawing of ...](../media/3-graphana.png)
+![A screen capture of Grafana](../media/3-graphana.png)
 
 ### Advantages of Grafana
 
@@ -149,7 +150,7 @@ Grafana does not:
 
 ## Build your own custom application
 
-You can access data in log and metric data in Azure Monitor through their API by using REST calls. This enables you to build your own custom websites and applications.
+You can access log and metric data in Azure Monitor through their API by using REST calls. This enables you to build your own custom websites and applications.
 
 ### Advantages of building your own custom application
 
@@ -163,4 +164,5 @@ With a custom application, you have:
 With a custom application, it's up to you to build the functionality that you need. Significant engineering effort may be required.
 
 TODO: Summarize any interesting observations here.
+
 TODO: Any observations from the TS team?
