@@ -10,7 +10,7 @@ Also, your moved resources don't change location. For example, if you have a sto
 
 As mentioned before, depending on the resource type, you can move your resources between subscriptions or between resource groups within the same subscription.
 
-For our scenario, we just need to move a pair of storage accounts to a different resource group within the same subscription. If, for billing reasons, we needed to move something like an Azure Web App, and all its dependant resources under a different subscription, that might include more steps. As mentioned in unit 2, you'd need to move all dependant resources into one resource group before you can move those resources into a new resource group  under a different subscription. The following diagram shows the steps you might need to take.
+For our scenario, we just need to move a pair of storage accounts to a different resource group within the same subscription. If, for billing reasons, we needed to move something like an Azure Web App, and all its dependant resources under a different subscription, that might include more steps. As mentioned in unit 2, you'd need to move all dependant resources into one resource group before you can move those resources into a new resource group under a different subscription. The following diagram shows the steps you might need to take.
 
 ![Diagram that shows three steps to take when moving resources in multiple resource groups to a resource group in another subscription](../media/6-subscription-scenario-move-resources.png)
 
@@ -19,7 +19,7 @@ For our scenario, we just need to move a pair of storage accounts to a different
 
 After you've identified the resources you want to move and verified they can be moved, you create a resource group and move the resources into that resource group.
 
-You can use the Azure portal, Azure CLI, PowerShell, or Azure REST API to move your resources. In the next unit, you'll use the Azure portal to move storage accounts to a new resource group. So let's see what commands you'd use to move resources by using Azure CLI or PowerShell.
+You can use the Azure portal, Azure CLI, PowerShell, or Azure REST API to move your resources. In the next unit, you'll use the Azure portal to move storage accounts to a new resource group. So, in this unit, let's see what commands you'd use to move resources with Azure CLI or PowerShell.
 
 ### Move resources by using Azure CLI
 
