@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.azdo.manage-site-reliability.7-summary
+uid: learn.azdo.manage-site-reliability.8-summary
 title: Summary
 metadata:
   title: Summary
   description: Learn... .
-  ms.date: 06/21/2019
+  ms.date: 12/24/2019
   author: tpetchel
   ms.author: thpetche
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 1
 content: |
-  [!include[](includes/7-summary.md)]
+  [!include[](includes/8-summary.md)]

@@ -35,6 +35,7 @@ units:
 - learn.azdo.manage-site-reliability.4-perform-ongoing-tuning
 - learn.azdo.manage-site-reliability.5-analyze-alerts-baseline
 - learn.azdo.manage-site-reliability.6-blameless-postmortem
-- learn.azdo.manage-site-reliability.7-summary
+- learn.azdo.manage-site-reliability.7-knowledge-check
+- learn.azdo.manage-site-reliability.8-summary
 badge:
   uid: learn.azdo.manage-site-reliability.badge

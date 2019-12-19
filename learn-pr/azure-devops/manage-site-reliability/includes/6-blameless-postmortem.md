@@ -1,7 +1,7 @@
 
 Organizations that practice DevOps want to view mistakes, and errors with a goal of *learning*. Having blameless postmortems on outages and accidents are part of goal.
 
-## A Blameless Post-Mortem
+## A Blameless Postmortem
 
 Having a *Just Culture* means that you’re making an effort to balance safety and accountability. It means that by investigating mistakes in a way that focuses on the situational aspects of a failure’s mechanism and the decision-making process of individuals proximate to the failure, an organization can come out safer than it would normally be if it had simply punished the actors involved as a remediation.
 
@@ -36,7 +36,7 @@ A funny thing happens when engineers make mistakes and feel safe when giving det
 - Gather details from multiple perspectives on failures, and don’t punish people for making mistakes.
 - Instead of punishing engineers, we instead give them the requisite authority to improve safety by allowing them to give detailed accounts of their contributions to failures.
 - Enable and encourage people who do make mistakes to be the experts on educating the rest of the organization how not to make them in the future.
-- Accept that there is always a discretionary space where humans can decide to make actions or not, and that the judgement of those decisions lie in hindsight.
+- Accept that there is always a discretionary space where humans can decide to make actions or not, and that the judgment of those decisions lies in hindsight.
 - Accept that the [Hindsight Bias](https://en.wikipedia.org/wiki/Hindsight_bias?azure-portal=true) will continue to cloud our assessment of past events, and work hard to eliminate it.
 - Accept that the [Fundamental Attribution Error](https://en.wikipedia.org/wiki/Fundamental_attribution_error?azure-portal=true) is also difficult to escape, so we focus on the environment and circumstances people are working in when investigating accidents.
 - Strive to make sure that the blunt end of the organization understands how work is actually getting done (as opposed to how they imagine it’s getting done, via Gantt charts and procedures) on the sharp end.
