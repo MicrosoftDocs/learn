@@ -24,9 +24,9 @@ quiz:
     - content: "In-preview SAP S/4HANA and BW/4HANA"
       isCorrect: false
       explanation: "That's incorrect. SAP S/HANA and BW/4HANA are supported by SAP CAL, but In-preview is not the easiest way to deploy and test SAP."
-    - content: "ARM templates"
+    - content: "Azure Resource Manager templates"
       isCorrect: false
-      explanation: "That's incorrect. ARM templates are not used for testing the underlying infrastructure for deploying SAP."
+      explanation: "That's incorrect. Azure Resource Manager templates are not used for testing the underlying infrastructure for deploying SAP."
   - content: "For any SAP production system installed on Azure, it is required that you operate in Virtual Private Networks which are connected to your datacenters using what form of connectivity?"
     choices:
     - content: "SAPRouter"
