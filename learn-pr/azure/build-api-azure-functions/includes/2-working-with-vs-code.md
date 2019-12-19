@@ -1,6 +1,6 @@
-At this highly prestigous (and ficticious) hardware company, you will be doing all of your development in VS Code.
+At Tailwind Traders, a highly prestigious (and fictitious) hardware company, you'll be doing all of your development in VS Code.
 
-VS Code is, at it's core, a text editor. Out of the box it doesn't aim to be much more than that. The difference between VS Code and your standard text editor is that VS Code is like a dial that can be turned. It has thousands of available extensions that allow you to turn the dial from text editor to integrated development environment.
+VS Code is, at its core, a text editor. Out of the box it doesn't aim to be much more than that. The difference between VS Code and your standard text editor is that VS Code is like a dial. It has thousands of available extensions. These extensions allow you to turn the dial from "text editor" to "integrated development environment".
 
 ## Azure Extensions for VS Code
 
@@ -8,20 +8,20 @@ When you install Azure extensions for VS Code, such as the Azure Functions exten
 
 Inside this new Azure Explorer view, each extension that you have installed will show up as a section. There will be a menu item that says "Log In". Once you do, you will see any Azure subscriptions that you have access to under each section.
 
-![VS Code with the Azure item in the ActivityBar outlined as well as an outline around the Azure explorer view](../media/activitybar-azure.png)
+![VS Code with the Azure item in the ActivityBar outlined and an outline around the Azure explorer view](../media/activitybar-azure.png)
 
 > [!TIP]
 > You can filter the subscriptions that you see in these extensions by opening the Command Palette (F1) and selecting "Azure: Select Subscriptions"
 
 ## Azure Functions Extension
 
-If you have completed previous Learn modules, you will be familiar with using the CLI to create Azure Function projects, run them locally, publish them to Azure, ect.
+If you have completed previous Learn modules, you'll be familiar with using the CLI to create Azure Function projects, run them locally, publish them to Azure, ect.
 
-The Azure Functions extension for VS Code wraps the Azure Functions CLI. This means that virtually anything you can do on the CLI can be done visually from within VS Code. That increases initial productivity because you can immediately see what you are doing.
+The Azure Functions extension for VS Code wraps the Azure Functions CLI. This means that virtually anything that can be done on the CLI can also be done from within VS Code. That increases initial productivity because you can immediately see what you are doing.
 
 All Azure Functions extension actions can be accessed two ways - either from the Azure Functions explorer item header icons, or from the Command Palette. The Command Palette contains every command available in VS Code. You can open the Command Palette by pressing <kbd>F1</kbd>.
 
-![VS Code with the Azure item in the ActivityBar outlined as well as an outline around the Azure explorer view](../media/activitybar-azure.png)
+![VS Code Command Palette with all Azure Functions options shown](../media/extension-command-palette.png)
 
 > [!TIP]
 > You can also summon the Command Palette by pressing <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>. Some find this easier, paticularly if you don't have function keys or if those function keys are mapped to, well, other functions.
@@ -30,11 +30,11 @@ All Azure Functions extension actions can be accessed two ways - either from the
 
 Similar to the Azure Functions extension, the Cosmos DB extension wraps the Azure CLI. If you have completed previous modules on Cosmos DB, you may be familiar with using the Azure CLI to create, delete and otherwise manage Cosmos DB accounts.
 
-In addition, the extension lets you do things like view documents within collections, as well as upload a document locally into Cosmos DB. Just like the Functions extension, all available Cosmos DB commands are located in the Command Palette.
+The extension also lets you do things like view documents within collections and upload a document locally into Cosmos DB. Just like the Functions extension, all available Cosmos DB commands are located in the Command Palette.
 
 ## Workspaces
 
-Another feature that VS Code offers that makes it well suited for the kind of application that you're building in this module is something called "Workspaces". This is where you are able to load two top-level projects into VS Code at the same time, even though they are separate projects.
+Another feature in VS Code that makes it well suited for the kind of application that you're building in this module is something called "Workspaces". This is where you're able to load two top-level projects into VS Code at the same time, even though they're separate projects.
 
 In the case of an application like the one in this exercise, there is a "frontend" project and an "api" project. Both of these are separate projects, but together they create a complete solution, so it's likely that you will have both of these projects together in the same workspace.
 

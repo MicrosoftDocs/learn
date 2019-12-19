@@ -1,4 +1,4 @@
-Before you create the HTTP API with Azure Functions, you need to setup the database and the frontend web project that will be used in these exercises. First, you'll clone the main repo, which already contains a frontend for the API you will be building. Then you'll run a script which will create the products database and populate it with product data.
+In this exercise, you'll create the database that will provide data to your API. You'll also configure VS Code for use with this module.
 
 ## Create the database
 
