@@ -64,3 +64,83 @@ As we've mentioned before, Jenkins is a popular third-party CI tool. We've also 
 * Get end-to-end traceability for your CI/CD workflow.
 
 A typical approach is to use Jenkins to build an app from source code hosted in a Git repository such as GitHub and then deploy it to Azure by using Azure Pipelines. If you want a procedure for integrating the two tools, see [Continuously deploy from a Jenkins build](https://docs.microsoft.com/azure/devops/pipelines/release/integrate-jenkins-pipelines-cicd?view=azure-devops&tabs=yaml&azure-portal=true).
+
+## Scale your release pipeline
+
+In this module, you created a multi-stage release platform that deployed to App Service. As your projects become larger, you may need to scale out your pipeline so you can deploy to multiple endpoints. For example, you may need multiple deployment groups, or you might want to deploy to another service, such as Azure Kubernetes Service.
+
+### Multiple deployment groups
+
+A deployment group is a logical set of deployment target machines, where each machine has an agent installed on it. Deployment groups represent the physical environments; for example, "Dev", "Test", "UAT", and "Production". In effect, a deployment group is just another grouping of agents, much like an agent pool.
+
+You create deployment groups on the **Deployment Groups** tab of the **Azure Pipelines** section, and install the agent on each server in the group. You specify the security context and runtime targets for the agents. You can add users and give them appropriate permissions to administer, manage, view, and use the group.
+
+For more information on creating deployment groups, see [Deployment groups](https://docs.microsoft.com/azure/devops/pipelines/release/deployment-groups/?view=azure-devops?azure-portal=true).
+
+### Azure Kubernetes Service
+
+You can set up continuous deployment of your containerized application to an Azure Kubernetes Service (AKS) using Azure Pipelines. After you commit and push a code change, it will be automatically built and deployed to the target Kubernetes cluster.
+
+For a step-by-step procedure, see [Deploy a Docker container app to Azure Kubernetes Service](https://docs.microsoft.com/azure/devops/pipelines/apps/cd/deploy-aks?view=azure-devops&tabs=java?azure-portal=true).
+
+## Manage and modularize tasks and variable groups
+
+As the complexity of your releases grows, you want to think about reusability. For example, if you deploy to the same set of servers and use the same connection strings, you might want to store the values in one place so you can easily update them. The same is true for actions you always want to perform together. Common examples of these actions are stopping a website, running a script, and starting a website.
+
+You might even want to write a reusable task that you can use in your organization or even make public. This is an excellent way to encapsulate logic and distribute it safely and securely.
+
+Within Azure DevOps, three important concepts enable reusability. They are:
+
+* Task groups
+* Variable groups
+* Custom build and release tasks
+
+### Task groups
+
+A *task group* enables you to encapsulate a sequence of tasks, already defined in a build or a release pipeline, into a single reusable task that can be added to any build or release pipeline. You can extract the parameters from the encapsulated tasks as configuration variables and abstract the rest of the task information.
+
+Task groups are a way to standardize and centrally manage deployment steps for all your applications. When you include a task group in your definitions and then make a change centrally to the task group, the change is automatically reflected in all the definitions that use the task group. There is no need to change each one individually.
+
+### Variable groups
+
+A *variable group* stores values that you want to make available across multiple builds and release pipelines. Here are some examples;
+
+* Store the username and password for a shared server.
+* Store a share connection string.
+* Store the geolocation of an application.
+* Store all settings for a specific application.
+
+### Custom tasks
+
+Instead of using out-of-the-box tasks, or a command line or shell script, you can also create custom build and release task. Creating your own task has these advantages:
+
+* You get access to variables that are otherwise not accessible.
+* You can use and reuse a secure endpoint to a target server.
+* You can safely and efficiently distribute the tasks across your entire organization.
+* Other users don't see the implementation details.
+
+## Integrate secrets within the release pipeline
+
+When you deploy your applications to a target environment, there are almost always secrets involved. Examples of these secrets are:
+
+* Secrets to access the target environment such as servers and storage accounts.
+* Secrets to access resources such as connections strings, tokens, and passwords.
+* Secrets that your application uses, such as configuration files.
+
+As your software moves through the different stages of the pipeline, you need to insert these secrets. We say "insert" mainly because secrets are generally different from one stage and environment. However, another reason is that secrets should never be part of your source control repository.
+
+How do you integrate secrets into your release pipeline? Two options are service connections and Azure Key Vault.
+
+### Service connections
+
+A service connection is a securely stored configuration of a connection to a server or service. By using a service connection, pipeline tasks can execute securely against the endpoint.
+
+With a service connection, you can use secret variables. These variables give you a straightforward and convenient way to add secrets to your pipeline. When you make a variable secret, it's hidden in all the log files and is unrecoverable.
+
+Secret variables are often used to store secrets, such as connection strings, and are used as replacement values in the pipeline. By creating placeholders in a target file and replacing the placeholder with the real value in the pipeline, you create a secret-free repository.
+
+### Azure Key Vault
+
+Another option for securing passwords and secrets is to use an Azure Key Vault. Key Vault enables you to keep the secrets outside of the pipeline. Then, if you have the appropriate permissions, you can retrieve them with a variable group that you created. If you don't want to use a variable group to access the secret variables in the vault, you can also use a dedicated build task.
+
+To learn more about linking secrets from Key Vault, see [Variable groups](https://docs.microsoft.com/en-us/azure/devops/pipelines/library/variable-groups?view=azure-devops&tabs=yaml#link-secrets-from-an-azure-key-vault&azure-portal=true)
