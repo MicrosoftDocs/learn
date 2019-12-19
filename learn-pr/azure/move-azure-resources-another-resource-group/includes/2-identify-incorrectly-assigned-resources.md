@@ -10,7 +10,9 @@ Generally, resource groups hold resources that are related. For example, you can
 
 Make sure that all the resources in your resource group have a single life cycle. You should be able to update, delete, or deploy these resources together. If you believe a resource doesn't fit into the life cycle of other resources, move it to another resource group.
 
-You can control which resources are available to different types of users. In this way, these groups help you protect your resources and control costs.
+You can control which resources are available to different types of users. In this way, resource groups help you protect your resources and control costs.
+
+You might need to change who's billed for resources in resource groups. You can move resources from one resource group to another resource group in a different subscription. In this case, you'd need to put any dependent resources into one resource group. Then move the resources from that resource group into a new resource group in the other subscription.
 
 ## Use consistent naming convention
 

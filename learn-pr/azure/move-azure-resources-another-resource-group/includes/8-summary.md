@@ -17,9 +17,8 @@ Delete the resources you created. Resources left running can cost you money. You
 
 ## Learn more
 
-- [Tag support for Azure resources](https://docs.microsoft.com/azure/azure-resource-manager/tag-support)
-- [Move operation support for resources](https://docs.microsoft.com/azure/azure-resource-manager/move-support-resources)
 - [Azure Resource Manager overview - Resource groups](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#resource-groups)
 - [Azure resource providers and types](https://docs.microsoft.com/azure/azure-resource-manager/resource-manager-supported-services)
+- [Move operation support for resources](https://docs.microsoft.com/azure/azure-resource-manager/move-support-resources)
 - [Move resources to a new resource group or subscription](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-move-resources)
 - [Use tags to organize your Azure resources](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags)

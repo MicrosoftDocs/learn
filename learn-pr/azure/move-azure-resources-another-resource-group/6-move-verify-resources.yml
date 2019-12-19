@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.move-azure-resources-to-another-resource-group.move-verify-resources
-title: Move and verify resources between Azure resource groups
+title: Identify steps to move resources between Azure resource groups
 metadata:
-  title: Move and verify resources between Azure resource groups
-  description: Move and verify resources between Azure resource groups
-  ms.date: 12/06/2019
+  title: Identify steps to move resources between Azure resource groups
+  description: Learn what steps you might need to take to move and verify resources between Azure resource groups
+  ms.date: 12/20/2019
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial
