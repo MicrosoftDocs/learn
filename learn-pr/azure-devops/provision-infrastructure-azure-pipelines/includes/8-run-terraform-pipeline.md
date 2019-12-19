@@ -138,3 +138,49 @@ To see this repair process in action, here you delete your App Service instance 
 ## The result
 
 **Tim:** I think we've got this! Let's show the team.
+
+## Provision and configure different target environments
+
+Now that you've learned how to set up a specific set of target environments, let's consider some of the options that are available to you.
+
+The release pipeline deploys software to a target environment. However, it's not only the software that's deployed with the release pipeline. If you're truly focusing on CD, then infrastructure as code and spinning up infrastructure as part of your release pipeline are very important.
+
+When you focus on the deployment of the infrastructure, first consider the differences between the target environments that you can deploy to.
+
+### On-premises servers
+
+In most cases, when you deploy to an on-premises server, the hardware and the operating system is already in place. The server is already there and ready. In this case, the release pipeline can simply deploy the application.
+
+In some cases, you might want to start or stop a virtual machine (for example, on Hyper-V or VMware). The scripts that you use to start or stop the on-premises servers should be part of your source control and be delivered to your release pipeline as a build artifact. You can use a task in the release pipeline to run the script that starts or stops the servers.
+
+If you want to configure the server as well, take a look at technologies like PowerShell Desired State Configuration (DSC), or third-party tools like Puppet or Chef. All these products will maintain your server and keep it in a particular state.
+
+### Infrastructure as a Service
+
+When you use the cloud as your target environment, things change a bit. Some organizations can do what's called a "lift and shift" from their on-premises server to cloud servers. In this case, your deployment works the same as it did on the on-premises server. But when you use the cloud to provide you with Infrastructure as a Service (IaaS), you can leverage the power of the cloud to start and create servers when you need them.
+
+This is where infrastructure as code plays a significant role. By using a script or template, you can create a server or other infrastructure components, such as a SQL server, a network, or an IP address, in the cloud. That script or template can be a part of your CD pipeline, which creates your infrastructure programmatically. After that, you can execute the steps to deploy the software.
+
+Technologies like Azure Resource Manager or Terraform are great tools for creating infrastructure on demand.
+
+### Platform as a Service
+
+With Platform as a Service (PaaS), the cloud provides the infrastructure for you as a service, instead of you setting it yourself as you do with IaaS.
+
+For example, in Azure, you can choose to create a web application. The server, the hardware, the network, the public IP address, the storage account, and even the web server, is set up for you by the cloud.
+
+The only thing that you need to do is to provide the templates which instruct the cloud to create a WebApp. The same goes for Functions as a Service (FaaS or Serverless technologies).
+
+You only need to deploy your application and the cloud takes care of the rest. However, you need to instruct the platform (the cloud) to create a placeholder where your application can be hosted. You can define this template in Azure Resource Manager or in Terraform. The infrastructure is defined in a script file that lives alongside the application code in source control.
+
+### Clusters
+
+You can also deploy your software to a cluster. A cluster is a group of servers that work together to host high-scale applications.
+
+If you run a cluster as IaaS, you need to create and maintain the cluster. This means that you need to provide the templates to create the cluster. You also need to make sure that you roll out updates, bug fixes and patches to your cluster.
+
+On the other hand, a hosted cluster is similar to PaaS. You instruct the cloud to create the cluster and you deploy your software to the cluster. When you run a container cluster, you can use container cluster technologies like Kubernetes or Docker Swarm.
+
+### Summary
+
+Regardless of the technology you choose to host your application, the creation, or at least configuration of your infrastructure, should be part of your release pipeline and part of your source control repository. Infrastructure as code is a fundamental part of CD and gives you the freedom to create servers and environments on demand.

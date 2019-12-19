@@ -9,7 +9,7 @@ metadata:
   ms.author: thpetche
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 11
+durationInMinutes: 15
 content: |
   [!include[](includes/2-design-the-pipeline.md)]
 quiz:
