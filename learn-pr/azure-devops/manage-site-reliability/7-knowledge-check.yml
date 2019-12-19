@@ -26,7 +26,7 @@ quiz:
       isCorrect: false
       explanation: "SREs are concerned with the product reliability, so proactively monitoring and reviewing application performance would be an action the SRE does."
 
-  - content: "Application Insights will send a performance degradation notification in which of the following scenarios?."
+  - content: "Application Insights will send a performance degradation notification in which of the following scenarios?"
     choices:
     - content: A site dependency is responding more slowly than it used to.
       isCorrect: true
@@ -38,7 +38,7 @@ quiz:
       isCorrect: false
       explanation: "Smart detection notifications for degraded performance are triggered three ways: response time degradation, dependency duration degradation, and a slow performance pattern of page load times, request response times, and dependency response times."
 
-  - content: "When writing alerts you want to alert on symptoms rather than causes. What is an example of a symptom-based alert?"
+  - content: "When writing alerts, you want to alert on symptoms rather than causes. What is an example of a symptom-based alert?"
     choices:
     - content: The data sync from the replicated server failed.
       isCorrect: false
