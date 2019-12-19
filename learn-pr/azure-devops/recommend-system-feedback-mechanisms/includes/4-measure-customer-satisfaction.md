@@ -1,3 +1,4 @@
+TODO: In this part...
 
 > "Measurement is the first step that leads to control and eventually to improvement. If you can't measure something, you can't understand it. If you can't understand it, you can't control it. If you can't control it, you can't improve it."
 >
@@ -7,13 +8,13 @@
 
 The team is still in a meeting. Now they're trying to decide how to get data about how well the beta testers like the website.
 
-**Andy**: I know there are a lot of approaches. I tend to think in terms of continuous feedback, which means we have built-in customer feedback loops. There's a lot of ways we can make it easy for customers to tell us their reactions.
+**Andy**: I know there are a lot of approaches. I tend to think in terms of continuous feedback, which means we have built-in customer feedback loops. There are a lot of ways we can make it easy for customers to tell us their reactions.
 
 ## Measure customer satisfaction
 
 The team is trying to decide how to gauge customer satisfaction. They want data about all aspects of the user's experience, which includes the customer's interaction with the company, its services, and its products.  In other words, don't confuse UI, the user _interface_, with UX, the user _experience_.
 
-As an analogy, consider a car. A car's external appearance, its dashboard, and its steering wheel, all define its UI. The act of driving the car is the UX. The interface directly contributes to the experience (a beautiful car interior makes for a better experience of sitting in one), but it's not the experience itself.
+As an analogy, consider a car. A car's external appearance, its dashboard, and its steering wheel, all define its UI. The act of driving the car is the UX. The interface directly contributes to the experience. For example, a beautiful car interior makes for a better experience of sitting in one, but it's not the experience itself.
 
 The only real measure of software quality that matters is customer satisfaction and measuring customer satisfaction doesn't have to be complicated or expensive. In fact, it's fairly simple to incorporate customer satisfaction measurements into your existing customer success strategy. 
 
@@ -57,7 +58,7 @@ NPS asks the question: "How likely is it that you would recommend this company t
 
 NPS measures not only customer satisfaction but also customer loyalty. You can come up with an aggregate score, but you can also easily segment your responses into three categories: *detractors*, *passives*, and *promoters*. You calculate NPS by subtracting the percentage of detractors from the percentage of promoters.
 
-### Combine methods to gain a larger picture
+### Combine methods to see the bigger picture
 
 Because each measurement provides you with different information, you can combine them.
 
@@ -110,7 +111,7 @@ After you collect your data, make sure it doesn't just sit there dormant and unu
 
 ## Step 5: Make adjustments and repeat
 
-Now that you have these insights, what are you going to do about it? Ultimately, this a decision reflects on your own findings and capabilities. You may find that a whole segment is dissatisfied because of a particular experience. In that case, you may need to further investigate why that experience causes dissatisfaction and then run experiments to try to improve it. You may find that you have a small percentage of super fans. How can you get them to recommend you to others?
+Now that you have these insights, what are you going to do about it? Ultimately, this decision reflects on your own findings and capabilities. You may find that a whole segment is dissatisfied because of a particular experience. In that case, you may need to further investigate why that experience causes dissatisfaction and then run experiments to try to improve it. You may find that you have a small percentage of super fans. How can you get them to recommend you to others?
 
 If you won't change anything after collecting your customer satisfaction data, you're better off not collecting it. It's going to take time and effort, so you need to put it to good use.
 
@@ -164,11 +165,9 @@ Providing these users with a way to share feedback with you from within the cont
 * Too much feedback.
 
     The volume of feedback you receive can be overwhelming. If you don't have the means to review it all, you lose the opportunity to gain insights from your customers.
-
 * Not enough detail.
 
     If you post surveys on your site, the information you get back from respondents may not be detailed enough to take action on.
-
 * It limits future follow-up.
 
     Depending on the tools you're using to collect feedback, you may not have enough contact information to connect directly with the customer who submitted the feedback and go deeper.
@@ -205,7 +204,7 @@ Here are a few pros and cons you should consider before you publish your product
 
 | Pros                                                                                                                                                              | Cons                                                                                                                                                            |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Customers feel that they're an active part of building your product roadmap. It provides a place to make customers feel like their voice is heard.                     | Likely biased towards your most engaged users. The people who aren't using your product are much more likely to withhold feedback or product suggestions. |
+| Customers feel that they're an active part of building your product roadmap. It provides a place to make customers feel like their voices are heard.                     | Likely biased towards your most engaged users. The people who aren't using your product are much more likely to withhold feedback or product suggestions. |
 | Builds a sense of community and heightened loyalty when you can collaborate with the company on ideas.                                                            | Low volume unless customers are explicitly prompted to suggest an idea on the board.                                                                            |
 | Provides a channel through which you can make users feel appreciated for their contributions by letting them know that you're taking action on their suggestions. |                                                                                                                                                                 |
 

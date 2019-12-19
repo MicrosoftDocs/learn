@@ -1,18 +1,20 @@
+TODO: LEAD IN
+
 Today, Irwin, the product manager is joining the team meeting. He has exciting news.
 
 ## The meeting
 
-Irwin: As you know, we're gearing up for a new release of the game and the website. We've decided that, to make our products the best they can be, we're going to do beta testing. Marketing has picked a few of our most dedicated gamers, and we're going to give them access to the staging environnments and let them play.
+**Irwin**: As you know, we're gearing up for a new release of the game and the website. We've decided that, to make our products the best they can be, we're going to do beta testing. Marketing has picked a few of our most dedicated gamers, and we're going to give them access to the staging environments and let them play. They'll also be checking out the website that you all have been building.
 
-Our first priority will be to fix the bugs they find. At least for the website, now that you've got that cool CD pipeline in place, you should have a really fast turnaround. We could probably even add new features to the website, if they ask for them!
+Our first priority will be to fix the bugs they find. At least for the website, now that you have a CI/CD pipeline in place, you should have a really fast turnaround. We could probably even add new features to the website, if they ask for them!
 
-We'll also need to figure out how to collect data about what they're doing. It's not just for you technial folks. Marketing wants data, too. Why don't you think about what data you want about the website? Oh, and t-shirts. Think about cool t-shirt designs. Those are really important. Thanks! You're the best! Got another meeting, so just let me know what you decide. Bye!
+We'll also need to figure out how to collect data about what they're doing. It's not just for you technical folks. Marketing wants data, too. Why don't you think about what data you want about the website? Oh, and t-shirts. Think about cool t-shirt designs. Those are really important. Thanks! You're the best! Got another meeting, so just let me know what you decide. Bye!
 
-Tim looks around. 
+_Tim looks around._
 
 **Tim**: Why do I feel like I'm being punished for doing a good job?
 
-**Andy**: You know, I think we have to face the fact that we're always going to be asked for more, faster, with the assumption that there won't be any problems once the software's in production. I'm going to share some of the things I learned in a course I'm taking on how to improve the software lifecycle processes. Get ready to take notes. 
+**Andy**: You know, I think we have to face the fact that we're always going to be asked for more, faster, with the assumption that there won't be any problems once the software's in production. I'm going to share some of the things I learned in a course I'm taking on how to improve the software lifecycle processes. Get ready to take notes.
 
 ## What's the inner loop?
 
@@ -32,7 +34,7 @@ The following illustrates these two types of inner loops:
 
 ![A comparison of two types of inner loops](../media/2-inner-loop-2.png)
 
-Each of these loops might include a fourth step, where you commit and integrate your changes with the team's central repository.
+Each of these loops might include a fourth step, where you commit and integrate your changes with the team's central repository, for example, on GitHub.
 
 In reality, most codebases consist of multiple moving parts. The definition of an inner loop on any single codebase can vary, depending on the project.
 
@@ -53,11 +55,11 @@ In the example of building a C# library, here's how you might categorize each st
 
 Here's a diagram that shows this mapping:
 
-![A drawing of the design build test loop](../media/2-inner-loop-3.png)
+![A drawing of the design, build, test loop](../media/2-inner-loop-3.png)
 
 Of all the steps in the inner loop, coding is the only one that adds customer value. Building and testing code are important, but ultimately you use these as tools to gain feedback about whether the changes provide sufficient value. For example, does the code compile? Does the feature satisfy the requirements? Does the feature work correctly with other features?
 
-A tax defines work that neither adds value nor provides feedback, but is still necessary. In contrast, you can categorize unnecessary work as waste and then eliminate that work.
+A *tax* defines work that neither adds value nor provides feedback, but is still necessary. In contrast, you can categorize unnecessary work as waste and then eliminate that work.
 
 ## How can I optimize the inner loop?
 
@@ -85,7 +87,7 @@ You can gain immediate benefits by implementing the first two recommendations. H
 
 A _tangled loop_ happens when multiple processes, each with its own inner loop, become dependent on one another.
 
-Say that your monolithic codebase has some set of core functionality that does a lot of the difficult work your application needs to perform. You might separate and package that code into a helper library.
+Say that your monolithic codebase has some set of core functionality that does a lot of the difficult work your application needs to perform. You might package that code into a helper library.
 
 To do this, you would typically move your library code to a separate repository and then set up a CI/CD pipeline that builds, tests, and packages the library. The pipeline might then publish the result to a package server. You would then configure your application to pull that library from the package server.
 
@@ -105,11 +107,11 @@ In practice, this situation can force developers to work around processes or cod
 
 This doesn't mean that breaking code up into separate packages is a bad thing. You just need to carefully consider the impact your decisions have on the outer loop.
 
-Andy takes a deep breath. 
+Andy takes a deep breath.
 
 **Andy**: Any questions?
 
-**Mara**: I'm willing to take a look at any dependencies we might have. 
+**Mara**: I'm willing to take a look at any dependencies we might have.
 
 **Andy**: Great. Will you work with me on updating the value stream map we made? I think we might be able to look at it in terms of experimentation, feedback collection and tax.
 

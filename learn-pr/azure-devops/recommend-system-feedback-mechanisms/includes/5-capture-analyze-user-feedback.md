@@ -1,8 +1,8 @@
 The team is still planning out their strategy for collecting feedback from their beta testers.
 
-**Tim**: One thing we've overlooked is what our testers our going to be telling each other, and their friends, and any other gamer out there, on Twitter and Reddit and who knows where else. That could me more important than what they tell us.
+**Tim**: One thing we've overlooked is what our testers are going to be telling each other, and their friends, and any other gamer out there, on Twitter and Reddit and who knows where else. That could me more important than what they tell us.
 
-**Mara**: Oh, good point. 
+**Mara**: Oh, good point.
 
 **Andy**: And bad news travels fast. We could put some controls into the code that would let us shut off any problem areas. Something like a release gate.
 
@@ -39,7 +39,7 @@ With the data, you can also build a summary that helps you focus on the most pos
 
 As the saying goes, "For every customer who bothers to complain, 20 other customers remain silent."
 
-An excellent source of feedback is on other websites, such as online communities, blogs, local listings, and so on. If your customers aren't happy with the resolution to a negative experience, they're likely to vent their frustrations on these forums. A frustrated customer more than a potentially lost customer. Studies have shown that each dissatisfied customer typically shares the unsatisfactory experience with eight to 10 (sometimes 20 or more) others. Now, with social media, it's not uncommon for negative feedback to go viral and hurt the credibility of a brand.
+An excellent source of feedback is on other websites, such as online communities, blogs, local listings, and so on. If your customers aren't happy with the resolution to a negative experience, they're likely to vent their frustrations on these forums. A frustrated customer is more than a potentially lost customer. Studies have shown that each dissatisfied customer typically shares the unsatisfactory experience with eight to 10 (sometimes 20 or more) others. Now, with social media, it's not uncommon for negative feedback to go viral and hurt the credibility of a brand.
 
 ## Use release gates to validate your deployments
 
@@ -51,12 +51,12 @@ _Release gates_ automate the waiting period between environments in release pipe
 
 However, one thing you'll quickly learn is that no amount of monitoring will catch every single problem. If you have a popular application, your users will know about a problem within seconds and turn very quickly to Twitter to start asking about it. Twitter can be a wonderful "alert" to let you know something is wrong with your app.
 
-You can use the [Twitter Sentiment Analysis](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vss-services-twittersentimentanalysis?azure-portal=true) extension to create a release gate that calculates the average sentiment of tweets made for a given hashtag. This extension combines Azure DevOps, Azure functions, and Microsoft AI to analyze sentiment on your Twitter handle and gate your release progress based on sentiment. The analysis is relatively simple, but shows how easy it is to extend Azure DevOps release gates to measure any signal you choose and use that signal to manage your release process.
+You can use the [Twitter Sentiment Analysis](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vss-services-twittersentimentanalysis?azure-portal=true) extension to create a release gate that calculates the average sentiment of tweets made for a given hashtag. This extension combines Azure DevOps, Azure functions, and Microsoft AI to analyze sentiment on your Twitter handle and gate your release progress based on sentiment. The analysis is relatively simple, but shows how easy it is to extend release gates in Azure DevOps to measure any signal you choose and use that signal to manage your release process.
 
 ## The decision
 
 **Tim**: I'm happy to keep an eye on tweets, subreddits and such. I enjoy lurking.
 
-**Andy** Thanks. Mara, you and I can think about release gates. 
+**Andy**: Thanks. Mara, you and I can think about release gates.
 
-**Tim** Since we're talking about data collection, there's one more point I want to bring up.
+**Tim**: Since we're talking about data collection, there's one more point I want to bring up.

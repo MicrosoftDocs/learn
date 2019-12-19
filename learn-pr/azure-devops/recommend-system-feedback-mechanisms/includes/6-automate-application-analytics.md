@@ -12,30 +12,23 @@ Teams have to conduct an extremely rapid investigation to identify the root caus
 
 Traditionally, teams examine the infrastructure and application logs as part of the investigation. However, the massive amount of log records that are produced makes it virtually impossible to do examination manually. It's similar to finding a needle in a haystack. 
 
-In most cases, these investigations are conducted by using log management and analysis systems that collect and aggregate these logs (both from infrastructure and from applications), centralizing them in one place and then providing search capabilities to explore the data. These systems certainly help but they still rely completely on the investigative skills and the knowledge of the operator. The operator must know exactly what to search for and have a deep understanding of the environment in order to use these tools effectively.
+In most cases, these investigations are conducted by using log management and analysis systems that collect and aggregate these logs (both from infrastructure and from applications), centralizing them in one place, and then providing search capabilities to explore the data. These systems certainly help but they still rely completely on the investigative skills and the knowledge of the operator. The operator must know exactly what to search for and have a deep understanding of the environment in order to use these tools effectively.
 
 Another complication is that the log files of applications are far less predictable than the log files of infrastructure. Application logs typically include error messages and error numbers that developers have added to the code over time, often inconsistently. In most cases, search queries produce thousands of results, many of them unimportant, even when the operator is skilled. That leaves the operator with the same "needle in the haystack" situation.
 
 ## Assisting DevOps with augmented search
 
-A new type of log management and analysis technology has emerged to solve this challenge. This technology uses augemented search to expedite the investigation. Designed specifically to deal with the chaotic and unpredictable nature of application logs, augmented search takes into consideration that operators don't necessarily know what to search for.
+A new type of log management and analysis technology has emerged to solve this challenge. This technology uses *augmented search* to expedite the investigation. Designed specifically to deal with the chaotic and unpredictable nature of application logs, augmented search takes into consideration that operators don't necessarily know what to search for.
 
 The analysis algorithm automatically identifies errors, risk factors, and problem indicators, while analyzing their severity by combining semantic processing, statistical models, and machine learning to analyze and "understand" the events in the logs. These insights are displayed as intelligence layers on top of the search results, helping you to quickly discover the most relevant and important information.
 
-Information layers helps operators focus on the important problems that occurred during the period of interest. The combination of the user's intellect, an understanding of the system's architecture, and augmented search machine learning capabilities makes it faster and easier to focus on the most relevant data. Let's look at an example of how that works in practice.
-
-TODO: I don't understand how it can be both down and up.
-TODO: I think you should take out this example. It's just confusing. (RL)
-
-Let's say that one of the servers went down and any attempt to restart the server has failed. However, since the process is running, the server seems to be up. In this case, customers are complaining that an application is not responding. This symptom could be related to many problems in a complex environment with a large number of servers.
-
-Focusing on the server that is behind this problem can be , as it seems to be up. But finding the root cause of the problem requires a lengthy investigation, even when you know which server is behind this problem.
+Information layers helps operators focus on the important problems that occurred during the period of interest. The combination of the user's intellect, an understanding of the system's architecture, and augmented search machine learning capabilities makes it faster and easier to focus on the most relevant data.
 
 By using augmented search, DevOps engineers can identify a problem and the root cause in a matter of seconds instead of examining thousands of log events or running multiple checks on the various servers. Adding this type of visibility to log analysis, and the ability to surface critical events out of tens of thousands - and often millions - of events, is essential in a fast paced environment, in which changes are constantly introduced.
 
 ## Recommend system and feature usage tracking tools
 
-A key factor to automating feedback is telemetry. By inserting telemetric data into your production application and environment, a DevOps team can automate feedback mechanisms while monitoring applications in real time. DevOps teams use telemetry to see and solve problems as they occur, but this data can also be useful to business users.
+A key factor to automating feedback is telemetry. By inserting telemetric data into your production application and environment, a DevOps team can automate feedback mechanisms while monitoring applications in real time. DevOps teams use telemetry to discover and solve problems as they occur, but this data can also be useful to business users.
 
 When properly instrumented, telemetry can help you understand, in real time, how customers are engaging with the application. This could be critical information for product managers, marketing teams, and customer support. Therefore, it's important that feedback mechanisms share continuous intelligence with all stakeholders.
 
@@ -56,18 +49,18 @@ Telemetry enables you to answer questions such as:
 * Are your customers using the features you expect?
 * How are they engaging with your product?
 * How frequently are users engaging with your app, and for what duration?
-* What settings or options to users select most?
-* Do they prefer certain display types, input modalities, screen orientation, or other device configurations?
+* What settings or options do users select most?
+* Do users prefer certain display types, input modalities, screen orientation, or other device configurations?
 * What happens when crashes occur?
 * Are crashes happening more frequently when certain features or functions are used?
 
-The answers to these and the many other questions enables you to make continuous improvements and to introduce new features. To your end users, it may seem as though you've been reading their minds – which you have been, thanks to telemetry.
+The answers to these and many other questions enables you to make continuous improvements and to introduce new features. To your end users, it may seem as though you've been reading their minds – which you have been, thanks to telemetry.
 
 ### What are the challenges of telemetry?
 
 Although telemetry provides many clear benefits, it comes with its own set of challenges. Perhaps its largest challenge – and a commonly occurring issue – is not with telemetry itself, but with your end users and their willingness to allow what some see as a violation of privacy. Some users immediately turn data collection off when they notice it. This means any data generated from their use of your product won't be gathered or reported.
 
- Although this isn't necessarily a problem by itself, the issue is that users who tend to disallow these types of technologies can tend to fall into the more tech-savvy portion of your user base. This can result in the "dumbing-down" of software. Other users, on the other hand, take no notice of telemetry collection going on behind the scenes.
+Although this isn't necessarily a problem by itself, the issue is that users who tend to disallow these types of technologies can tend to fall into the more tech-savvy portion of your user base. This can result in the "dumbing-down" of software. Many users, on the other hand, take no notice of telemetry collection going on behind the scenes.
 
 It's a problem without a clear solution; It certainly doesn't negate the overall power of telemetry for driving development. However, keep this limitation in mind as you analyze your data. When you design a strategy for how you use telemetry data, it's important to account for users who don't participate.
 
@@ -75,7 +68,7 @@ It's a problem without a clear solution; It certainly doesn't negate the overall
 
 Continuous monitoring of applications in production environments is typically implemented with application performance management (APM) solutions that intelligently monitor, analyze, and manage cloud, on-premises, and hybrid applications and IT infrastructure. APM solutions enable you to monitor your users' experience and improve the stability of your application infrastructure. It helps identify the root cause of issues quickly to proactively prevent outages and keep users satisfied.
 
-With a DevOps approach, we are also seeing more customers broaden the scope of continuous monitoring into the staging, testing, and even development environments. This is possible because development and test teams that follow a DevOps approach strive to use production-like environments for testing as much as possible. By running APM solutions earlier in the life cycle, development teams get feedback in advance of how applications will eventually perform in production and can take corrective action much earlier. In addition, operations teams that, because of DevOps, advise the development teams, get advance knowledge and experience to better prepare and tune the production environment. The result is far more stable releases to production.
+With a DevOps approach, we are also seeing more customers broaden the scope of continuous monitoring into the staging, testing, and even development environments. This is possible because development and test teams that follow a DevOps approach strive to use production-like environments for testing as much as possible. By running APM solutions earlier in the lifecycle, development teams get feedback in advance of how applications will eventually perform in production and can take corrective action much earlier. In addition, operations teams that, because of DevOps, advise the development teams, get advance knowledge and experience to better prepare and tune the production environment. The result is far more stable releases to production.
 
 When choosing a monitoring tool, look for these features:
 
@@ -84,17 +77,14 @@ When choosing a monitoring tool, look for these features:
     _Synthetic monitoring_ uses a set of transactions to assess performance and availability. Synthetic transactions are predictable tests that have the advantage of allowing comparison from release to release in a highly predictable manner.
 
     Developers, testers, and operations staff all need to ensure that their internet and intranet mobile applications and web applications are tested and operate successfully from different points of presence around the world.
-
 * Alert management
 
-    Developers, testers, and operations teams all need the ability to send notifications through email, voice mail, text, mobile push notifications and instant messages when specific situations or events occur in development, testing or production environments. This gets the right people's attention at the right times.
-
+    Developers, testers, and operations teams all need the ability to send notifications through email, voice mail, text, mobile push notifications and instant messages when specific situations or events occur in development, testing, or production environments. This gets the right people's attention at the right times.
 * Deployment automation
 
     Developers, testers, and operations staff use different tools to schedule and deploy complex applications and configure them in development, testing, and production environments.
-
 * Analytics
 
-    Developers need to be able to look for patterns in log messages to identify if there is a problem in the code. Operators need to perform root cause analysis across multiple log files to identify the source of the problem in complex application and systems.
+    Developers need to be able to look for patterns in log messages to identify if there is a problem in the code. Operators need to perform root cause analysis across multiple log files to identify the source of the problem in complex applications and systems.
 
 **Andy**: Thanks for bringing that up. I like that we're thinking ahead and not just reacting. But, speaking of reacting, let's get ready for beta!

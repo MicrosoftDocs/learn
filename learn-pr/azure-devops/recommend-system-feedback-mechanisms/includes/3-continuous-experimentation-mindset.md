@@ -1,6 +1,8 @@
-The team is still discussing the repercussions of Irwin's announcement. The company is going to use some of their customers to do beta testing and Irwin expects fast responses from the team for bug fixes, new features and customer data. Right now, they're talking about the conflict between speed an stability.
+The team is still discussing the repercussions of Irwin's announcement. The company is going to use some of their customers to do beta testing and Irwin expects fast responses from the team for bug fixes, new features, and customer data. Right now, they're talking about the conflict between speed and stability.
 
 ## The discussion
+
+In [Manage release cadence in Azure Pipelines with deployment patterns](/learn/modules/manage-release-cadence/?azure-portal=true), you and the Tailspin team looked at the various deployment pattern that help you smoothly roll out new application features to your users.
 
 **Mara**: I was wondering if one thing we could do to resolve the problem is to institute feature toggles, or flags. We talked about it once, when we were deciding on deployment patterns. Then, we opted for the blue-green pattern. Feature flags seemed too advanced at the time, but now might be a good time to think about them, especially since we'll be doing beta testing with a selected group.
 
@@ -16,11 +18,11 @@ A culture of continuous experimentation is an environment where you can quickly 
 
 How do you reduce risk in such a culture? Teams have a number of ways to identify issues before a release reaches production. One is to rely on version control systems or configuration files to control feature releases. However, what happens after the release is in production? Without proper controls, rolling back to previous versions if there's a problem becomes a code deployment exercise, requiring engineering expertise and increasing the potential for downtime.
 
-One way to mitigate risk in feature releases is to introduce _feature flags_ (also known as _feature toggles_) into the continuous delivery process. These flags allow features (or any piece of code) to be turned on or off for particular users. Feature flags are a power
+One way to mitigate risk in feature releases is to introduce _feature flags_ (also known as _feature toggles_) into the continuous delivery process. These flags allow features (or any piece of code) to be turned on or off for particular users.
 
 The following illustrates a typical software delivery timeline:
 
-![A a graphic showing software delivery timelines](../media/3-software-delivery.png)
+![A graphic showing software delivery timelines](../media/3-software-delivery.png)
 
 By including feature flags in the continuous delivery process, teams can more efficiently integrate release, deployment, and operational management into the software development cycle.
 

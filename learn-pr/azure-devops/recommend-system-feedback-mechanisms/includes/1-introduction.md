@@ -1,4 +1,4 @@
-The ultimate goal of DevOps is to increase the quality of the software a team produces while, at the same time, increasing the speed at which they deliver that softer. But how can DevOps teams meet that goal if they don't understand what they should deliver or who their customers are? Despite advancements in delivery methods, quality service still begins with understanding the needs of customers.
+The ultimate goal of DevOps is to increase the quality of the software a team produces while, at the same time, increasing the speed at which they deliver that software. But how can DevOps teams meet that goal if they don't understand what they should deliver or who their customers are? Despite advancements in delivery methods, quality service still begins with understanding the needs of customers.
 
 Dissatisfied customers can cost you money. The first step toward meeting customer needs is to admit that you have room for improvement. The second step is to measure customer satisfaction to find out where you currently stand.
 
@@ -6,9 +6,9 @@ Engaging customers throughout your product lifecycle is a primary Agile principl
 
 In this module, you will:
 
-* Examine the tensions between speed and risk
-* Learn different techniques for gathering customer feedback
-* Learn how automation can help with troubleshooting complex problems
+* Examine the tensions between speed and risk.
+* Learn different techniques for gathering customer feedback.
+* Learn how automation can help with troubleshooting complex problems.
 
 ## Prerequisites
 
