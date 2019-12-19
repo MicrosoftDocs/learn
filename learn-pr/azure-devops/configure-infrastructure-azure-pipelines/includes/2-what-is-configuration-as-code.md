@@ -108,7 +108,7 @@ On Windows, this configuration:
 
 * Installs Internet Information Services (IIS) web server.
 * Starts the World Wide Web Publishing Service (W3SVC), the service that powers IIS.
-* Sets the default homepage, to *c:\inetpub\wwwroot\Default.htm*.
+* Sets the contents of the default homepage, *c:\inetpub\wwwroot\Default.htm*.
 
 When you run this configuration for the first time, Chef ensures that IIS is installed, W3SVC is running, and that the home page is set. When you run this configuration a second time, Chef applies the configuration only if the desired state doesn't match. In other words, Chef applies the configuration only when there's work to do. In most cases, Chef makes no changes because the system is already in the desired state, so this configuration is safe to apply as many times as you'd like.
 

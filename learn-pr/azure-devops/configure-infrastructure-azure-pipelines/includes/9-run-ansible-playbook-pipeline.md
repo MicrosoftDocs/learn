@@ -82,7 +82,7 @@ Create a service connection that enables Azure Pipelines to access your Azure su
     | Field               | Value |
     |---------------------|-------|
     | **Connection name** | **SSH - Ansible VM** |
-    | **Host name**       | Your control machine's hostname. For example, *test1234.northeurope.cloudapp.azure.com*. |
+    | **Host name**       | Your control machine's hostname. For example, *test1234.northeurope.cloudapp.azure.com* |
     | **Port number**     | **22** |
     | **User name**       | **azureuser** |
     | **Password or passphrase**        | Leave blank |
