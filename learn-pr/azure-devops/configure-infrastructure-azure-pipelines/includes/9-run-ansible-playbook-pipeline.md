@@ -176,7 +176,7 @@ Here, you remove the *testuser1* user from your VM named *vm1*. You then run the
 
 This process helps you see how Ansible can repair your configuration if it's accidentally changed by an outside person or process.
 
-1. In VS Code, switch to your Cloud Shell session.
+1. In VS Code, switch to your Azure Cloud Shell session.
 1. Get the IP address of your VM named *vm1*:
 
     ```azurecli
@@ -209,7 +209,7 @@ This process helps you see how Ansible can repair your configuration if it's acc
 
 1. Manually run the pipeline. To do so, go to your pipeline in Azure Pipelines, and select **Run pipeline**. Make sure **master** is the selected branch, and then select **Run**.
 
-    You see that the user is added once again to the VM:
+    You see that the user is added again to the VM:
 
     ![Screenshot of the Ansible task in Azure Pipelines showing a repaired configuration](../media/9-pipeline-ansible-task-repair.png)
 

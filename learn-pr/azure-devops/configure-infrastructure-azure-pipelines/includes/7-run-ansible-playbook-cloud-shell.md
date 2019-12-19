@@ -61,11 +61,11 @@ The `user` module defines the user account named *testuser1*. This module specif
 * A descriptive comment for the user account.
 * Not to create the home directory for the user.
 * The user's login shell. The `/usr/sbin/nologin` prevents login.
-* That the account should exist. You could use the `absent` state to remove the user from the system.
+* That the account should exist. You can use the `absent` state to remove the user from the system.
 
 ### Use the loop block to add a second user
 
-Notice that this configuration creates just one user: *testuser1*. Although you could add a second task that performs the same function, you can use the `loop` keyword to repeat the task multiple times.
+Notice that this configuration creates just one user: *testuser1*. Although you can add a second task that performs the same function, you can use the `loop` keyword to repeat the task multiple times.
 
 Tim and Andy update their configuration, like this:
 

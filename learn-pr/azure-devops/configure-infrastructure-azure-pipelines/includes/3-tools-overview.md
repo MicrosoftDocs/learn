@@ -111,11 +111,11 @@ On [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace?azure-
     * Maintain centralized logging for complete auditability and compliance.
     * Use the many content resources available on Ansible Galaxy.
 
-You can also set up Ansible on a Linux VM running on Azure, or in your datacenter, and use that as your control machine. Although Ansible doesn't support Windows as the control machine, you can run Ansible from Windows through Windows Subsystem for Linux, Cloud Shell, or Visual Studio Code.
+You can also set up Ansible on a Linux VM running on Azure, or in your datacenter, and use that as your control machine. Although Ansible doesn't support Windows as the control machine, you can run Ansible from Windows through Windows Subsystem for Linux, Azure Cloud Shell, or Visual Studio Code.
 
 ## Azure Automation
 
-Azure Automation is a service in Azure that helps you automate manual tasks. Automation has the concept of a _runbook_, which is a set of tasks that perform some automated procedure in Automation. Tasks in a runbook are written in PowerShell, [Powershell Workflow](https://docs.microsoft.com/system-center/sma/overview-powershell-workflows?azure-portal=true), or Python. You can run a runbook either manually or on a schedule.
+Azure Automation is a service in Azure that helps you automate manual tasks. Automation has the concept of a _runbook_, which is a set of tasks that perform some automated procedure in Automation. Tasks in a runbook are written in PowerShell, [PowerShell Workflow](https://docs.microsoft.com/system-center/sma/overview-powershell-workflows?azure-portal=true), or Python. You can run a runbook either manually or on a schedule.
 
 Here's a basic example that uses PowerShell Workflow to stop a running service:
 
@@ -134,7 +134,7 @@ Workflow Stop-MyService
 
 Although the name implies that you can use Azure Automation only on Azure, it's more flexible than that. Automation has a feature called hybrid runbook worker. This feature gives Automation access to resources in other clouds or in your on-premises environment that would otherwise be blocked by a firewall.
 
-Automation also provides a Desired State Configuration (DSC) pull server that enables you to create definitions for how a given set of VMs should be configured. DSC then ensures that the required configuration is applied and that the VM stays consistent. Automation DSC runs on both Windows and Linux.
+Automation also provides a Desired State Configuration (DSC) pull server that enables you to create definitions for how a specified set of VMs should be configured. DSC then ensures that the required configuration is applied and that the VM stays consistent. Automation DSC runs on both Windows and Linux.
 
 ## Azure Custom Script Extension
 

@@ -38,7 +38,7 @@ Just like the Terraform plan you built in the [Provision infrastructure in Azure
 
 _Configuration management_ is a term that's associated with configuration as code. Configuration management refers to the automated management of configuration, typically in the form of automated scripts or programs that you run regularly on your deployments.
 
-For example, say you have dozens or even hundreds of systems that serve the same or similar function, and you need each of them to be configured in the exact same way. How might you open a new firewall port on each system? You could connect to each system remotely and open the port. However, that task is time-consuming and prone to errors. A better way might be to modify an existing configuration management script. Then, through automation, you apply that script to your fleet. Doing so takes much less time and is less prone to error.
+For example, say you have dozens or even hundreds of systems that serve the same or similar function, and you need each of them to be configured in the exact same way. How might you open a new firewall port on each system? You might connect to each system remotely and open the port. However, that task is time-consuming and prone to errors. A better way might be to modify an existing configuration management script. Then, through automation, you apply that script to your fleet. Doing so takes much less time and is less prone to error.
 
 Comparing manual configuration processes to those that are more automated, automated processes typically enable you to:
 
@@ -55,7 +55,7 @@ Configuration as code helps you implement a configuration management strategy. A
 
 _Configuration drift_ happens when resources change over time from their original deployment state. This is caused by changes made by people, processes, or programs, and can happen manually or through automated processes.
 
-Eventually, an environment may become a _snowflake_. A snowflake is a unique configuration that can't be reproduced automatically, and is typically a result of configuration drift. Inconsistency among environments can lead to unexpected issues during deployment. With snowflakes, infrastructure administration and maintenance typically become manual processes, which can be hard to track and are prone to human error. The more an environment drifts from its original state, the more likely it is for an application to encounter issues. The greater the degree of configuration drift, the longer it takes to troubleshoot and fix issues.
+Eventually, an environment can become a _snowflake_. A snowflake is a unique configuration that can't be reproduced automatically, and is typically a result of configuration drift. Inconsistency among environments can lead to unexpected issues during deployment. With snowflakes, infrastructure administration and maintenance typically become manual processes, which can be hard to track and are prone to human error. The more an environment drifts from its original state, the more likely it is for an application to encounter issues. The greater the degree of configuration drift, the longer it takes to troubleshoot and fix issues.
 
 ### Security considerations
 
