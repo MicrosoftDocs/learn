@@ -9,6 +9,6 @@ metadata:
   ms.author: thpetche
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 4
+durationInMinutes: 5
 content: |
   [!include[](includes/3-continuous-experimentation-mindset.md)]
