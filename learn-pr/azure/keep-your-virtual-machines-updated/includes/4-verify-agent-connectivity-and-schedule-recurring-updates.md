@@ -15,8 +15,6 @@ The following configurations are used to perform assessment and update deploymen
 
 Update Management will perform a scan for update compliance. A compliance scan is by default, performed every 12 hours on a Windows computer and every 3 hours on a Linux computer. In addition to the scan schedule, a compliance scan is initiated within 15 minutes if the MMA is restarted, before update installation, and after update installation. After a computer performs a scan for update compliance, the agent forwards the information in bulk to Azure Log Analytics.
 
-In addition to the scan schedule, the scan for update compliance is initiated within 15 minutes if the MMA is restarted, before update installation, and after update installation.
-
 It can take between 30 minutes and 6 hours for the dashboard to display updated data from managed computers.
 
 ## Recurring Updates

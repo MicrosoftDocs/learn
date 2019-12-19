@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.iot.introduction-lambda-architecture-iot-solutions.introduction
+metadata:
+  title: Introduction
+  description: Describes the learning objectives of this module.
+  ms.date: 12/20/2019
+  author: PeterTurcan
+  ms.author: Olivier.Bloch
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]
