@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.oxford.intro-to-iot-edge.what-is-iot-edge
+title: What is IoT Edge?
+metadata:
+  title: What is IoT Edge?
+  description: What is IoT Edge?
+  ms.date: 09/22/2019
+  author: leestott
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-edge
+durationInMinutes: 5 # dummy number at present
+content: |
+  [!include[](includes/2-what-is-iot-edge.md)]
