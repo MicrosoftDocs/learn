@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.build-api-azure-functions.3-ex-setup-environment
-title: Setup the project environment
+title: Exercise - Setup the project environment
 metadata:
-  title: Setup the project environment
-  description: Setup the project environment
+  title: Exercise - Setup the project environment
+  description: Exercise - Setup the project environment
   ms.date: 12/19/2019
   author: burkeholland
   ms.author: buhollan
