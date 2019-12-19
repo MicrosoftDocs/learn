@@ -105,7 +105,7 @@ Here, you install an extension that provides access to the `Ansible@0` task in A
 
 ## Create the pipeline in Azure Pipelines
 
-During this process, you create your pipeline configuration file, *azure-piplines.yml*.
+During this process, you create your pipeline configuration file, *azure-pipelines.yml*.
 
 1. In Azure DevOps, go to your project.
 1. Select **Pipelines**, either from the project page or from the left pane.
