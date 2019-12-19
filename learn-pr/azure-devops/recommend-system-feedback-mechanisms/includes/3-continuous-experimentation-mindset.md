@@ -1,18 +1,28 @@
-TODO: Any introduction from the TS team?
+The team is still discussing the repercussions of Irwin's announcement. The company is going to use some of their customers to do beta testing and Irwin expects fast responses from the team for bug fixes, new features, and customer data. Right now, they're talking about the conflict between speed and stability.
 
-In the era of continuous delivery, we're expected to quickly deliver software that is stable and performs well. Development teams embrace CI/CD tools to automate their builds, test passes, and deployments, all at an accelerated pace.
+## The discussion
 
-Teams rely on various forms of testing to identify all issues before a release hits production. Teams primarily rely on version control systems or configuration files to control feature releases. Once a release is in production, it is basically out in the wild. Without proper controls, rolling back to previous versions becomes a code deployment exercise, requiring engineering expertise and increasing the potential for downtime.
+In [Manage release cadence in Azure Pipelines with deployment patterns](/learn/modules/manage-release-cadence/?azure-portal=true), you and the Tailspin team looked at the various deployment pattern that help you smoothly roll out new application features to your users.
 
-One way to mitigate risk in feature releases is to introduce _feature flags_ (also known as _feature toggles_) into the continuous delivery process. These flags allow features (or any piece of code) to be turned on or off for particular users. Feature flags are a powerful technique that enable teams to modify behavior without changing code.
+**Mara**: I was wondering if one thing we could do to resolve the problem is to institute feature toggles, or flags. We talked about it once, when we were deciding on deployment patterns. Then, we opted for the blue-green pattern. Feature flags seemed too advanced at the time, but now might be a good time to think about them, especially since we'll be doing beta testing with a selected group.
 
-Software development and operations capabilities set the boundaries for success. The first step to creating a company-wide culture of experimentation is for executives, business planners, developers, operations, and other stakeholders to understand how changes in engineering productivity align with business outcomes.
+## The expectations of continuous delivery
 
-Innovation is the key to success, and success depends on testing hypotheses through experimentation. By adopting a culture of continuous experimentation, you can quickly test features by creating an instrumented minimal viable product (MVP) and then release those features to a subset of customers in production for testing. This enables the team to make decisions based on facts and move quickly towards the optimal solution.
+Mara is offering a solution to an issue that DevOps and CD has made very apparent. In the era of continuous delivery (CD), we're expected to quickly deliver software that is stable and performs well. Development teams embrace CD tools to automate their builds, their test passes, and their deployments, all at an accelerated pace.
+
+Because teams want to deliver their new features and applications faster, there is always tension between the need for innovation and the need for stability. How can you encourage innovation while still mitigating risk?
+
+On the innovation side, the first step is to create a culture where executives, business planners, developers, operations, and other stakeholders understand how innovations in engineering productivity align with business outcomes. Next, to prove that specific innovations improve those outcomes, test the hypotheses through continuous experimentation. 
+
+A culture of continuous experimentation is an environment where you can quickly test features by creating an instrumented minimal viable product (MVP). You then release that MVP to a subset of customers for testing. This limited release enables the team to make decisions based on facts and to move quickly towards the optimal solution.
+
+How do you reduce risk in such a culture? Teams have a number of ways to identify issues before a release reaches production. One is to rely on version control systems or configuration files to control feature releases. However, what happens after the release is in production? Without proper controls, rolling back to previous versions if there's a problem becomes a code deployment exercise, requiring engineering expertise and increasing the potential for downtime.
+
+One way to mitigate risk in feature releases is to introduce _feature flags_ (also known as _feature toggles_) into the continuous delivery process. These flags allow features (or any piece of code) to be turned on or off for particular users.
 
 The following illustrates a typical software delivery timeline:
 
-![A a graphic showing software delivery timelines](../media/3-software-delivery.png)
+![A graphic showing software delivery timelines](../media/3-software-delivery.png)
 
 By including feature flags in the continuous delivery process, teams can more efficiently integrate release, deployment, and operational management into the software development cycle.
 
@@ -27,5 +37,8 @@ Here are some of the benefits of a standard continuous delivery pipeline compare
 | Better development coordination    | Feature rollbacks without redeploying      |
 | Quickly adapt to shifting markets  | Configuration and long-term management     |
 
-TODO: Summarize any interesting observations here.
-TODO: Any observations from the TS team?
+## The decision
+
+**Andy**: I agree, Mara. It's time to go with feature flags. We can even come up with a plan of how we want to disclose the features to the beta testers.
+
+**Amita** So, the next issue we have to think about is customer satisfaction. How do we figure out what they think about our website? 
