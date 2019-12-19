@@ -6,9 +6,13 @@ You'll learn:
 * How Azure Monitor and  Application Insights enable you to implement continuous monitoring.
 * How IT Service Management Connector can help you implement a ticketing system.
 
-TODO: Let's start by ...
+The Tailspin team is getting ready for the upcoming beta tests. They've put a plan in place for gathering customer feedback but there's more to think about.
 
 ## The meeting
+
+**Tim**: I know we've covered how we'll learn what our testers think of the website, but I need to know how the website impacts the infrastructure. I need metrics and logs for both. Of course, it needs to fit in with our pipeline. I've been doing a little research. Are any of you familiar with Azure Monitor?
+
+**Amita**: Tell us more.
 
 TODO: Frame up a team discussion around feedback. Remember, the Beta is coming up. Irwin wants the team to consider how they'll monitor the _Space Game_ web application...
 
@@ -16,21 +20,23 @@ TODO: Perhaps Tim bring up the terms continuous monitoring and observability. So
 
 ## What is continuous monitoring?
 
+The team wants to monitor the website and the infrastructure during the beta test. Tim has done some research and learned a few things.
+
 _Continuous monitoring_ refers to the processes and technologies that you can use to monitor each phase of your application's lifecycle. Continuous monitoring helps you validate the health, performance, and reliability of your application and infrastructure as changes move from development to production.
 
 Continuous monitoring builds on CI/CD concepts, which help you develop and deliver software faster and more reliably to provide continuous value to your users.
 
 ## What is observability?
 
-TODO: Define observability
+Observability refers to making data available from within the system that you wish to monitor. Monitoring is the actual task of collecting and displaying this data. 
 
 ## What is Azure Monitor?
 
-[Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview?azure-portal=true) is a service on Azure that provides full-stack observability across applications and infrastructure in the cloud and on-premises. It works with development tools such as Visual Studio and Visual Studio Code during your development and test phases. It integrates with Azure DevOps to provide release management and work item management during your deployment phases. It also integrates with your favorite IT service management (ITSM) and Security information and event management (SIEM) tools to help you track issues and incidents within your existing IT processes.
+[Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview?azure-portal=true) is a service on Azure that provides full-stack observability across applications and infrastructure both in the cloud and on-premises. It works with development tools such as Visual Studio and Visual Studio Code so you can use it during your development and test phases. It integrates with Azure DevOps to provide release management and work item management during your deployment phases. It also integrates with IT service management (ITSM) and Security information and event management (SIEM) tools to help you track issues and incidents within your existing IT processes.
 
 ### Enable monitoring on your applications
 
-In order to gain observability across your entire environment, you need to enable monitoring on all of your web applications and services. This enables you to more easily visualize the end-to-end transactions and connections across all components.
+Applications are complex, and have many interconnected components. To visualize the end-to-end transactions and connections across all system, you need to enable monitoring on all of your web applications and services. 
 
 You might start with [Azure DevOps Projects](https://docs.microsoft.com/azure/devops-project/overview?azure-portal=true), which makes it easy to create a starter CI/CD pipeline, using your existing code and Git repository.
 
@@ -38,7 +44,7 @@ Then, you can [add continuous monitoring to your release pipeline](https://docs.
 
 ### Enable monitoring on your infrastructure
 
-Applications are only as reliable as their underlying infrastructure. Having monitoring enabled across your entire infrastructure helps you achieve full observability and makes it easier to discover potential root causes when something fails. Azure Monitor helps you track the health and performance of your entire hybrid infrastructure, including virtual machines, containers, storage, and networks.
+Applications are only as reliable as their underlying infrastructure. Having monitoring enabled across your entire infrastructure helps you achieve full observability and makes it easier to discover root causes when something fails. Azure Monitor helps you track the health and performance of your entire hybrid infrastructure, including virtual machines, containers, storage, and networks.
 
 With Azure Monitor, you can collect:
 
@@ -57,7 +63,7 @@ To enable monitoring by using an infrastructure as code approach, you can use:
 
 A typical application on Azure includes compute resources such as virtual machines, Azure App Service, microservices, Azure Kubernetes Service (AKS) clusters, and Service Fabric. These applications frequently depend on data and networking services such as Azure Event Hubs, Azure Storage, Microsoft SQL Database, and Azure Service Bus.
 
-In Azure, a _resource group_ holds related Azure resources. Combine resources in a resource group to get full visibility across all your resources that make up your different applications. [Azure Monitor for resource groups](https://docs.microsoft.com/azure/azure-monitor/insights/resource-group-insights?azure-portal=true) provides a basic way to keep track of the health and performance of your entire application and enables you to drill down into individual components so that you can troubleshoot failures.
+In Azure, a _resource group_ holds related Azure resources. Combine resources in a resource group to get full observability across all the resources that make up your different applications. [Azure Monitor for resource groups](https://docs.microsoft.com/azure/azure-monitor/insights/resource-group-insights?azure-portal=true) provides a basic way to keep track of the health and performance of your entire application and enables you to drill down into individual components so that you can troubleshoot failures.
 
 ### Ensure quality through continuous deployment
 
@@ -66,9 +72,9 @@ CI/CD enables you to integrate and deploy code changes to your application autom
 Here are some recommended ways to ensure quality during your deployment process:
 
 * Use [Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines?azure-portal=true) to implement a CI/CD pipeline that automates your entire process, including running automated tests, from the time you commit code all the way to production.
-* Use [quality gates](https://docs.microsoft.com/azure/devops/pipelines/release/approvals/gates?view=azure-devops?azure-portal=true) to add monitoring into your pre-deployment and post-deployment environments. Doing so helps ensure that you meet the key health and performance metrics (KPIs) as your applications move from development to production. Quality gates also help ensure that any differences in the infrastructure environment or the way that you scale do not negatively impact your KPIs.
+* Use [quality gates](https://docs.microsoft.com/azure/devops/pipelines/release/approvals/gates?view=azure-devops?azure-portal=true) to add monitoring into your pre-deployment and post-deployment environments. Quality gates helps ensure that you meet key health and performance metrics (KPIs) as your applications move from development to production. Quality gates also help ensure that any differences in the infrastructure environment or the way that you scale do not negatively impact your KPIs.
 
-* [Maintain separate monitoring instances](https://docs.microsoft.com/azure/application-insights/app-insights-separate-resources?azure-portal=true) between your different deployment environments such as development, test, staging, and production. Doing so helps ensure that any data that's collected is relevant across applications and infrastructure. If you need to correlate data across environments, you can use [multi-resource charts in Metrics Explorer](https://docs.microsoft.com/azure/azure-monitor/platform/metrics-charts?azure-portal=true) or create [cross-resource queries in Log Analytics](https://docs.microsoft.com/azure/azure-monitor/log-query/cross-workspace-query?azure-portal=true).
+* [Maintain separate monitoring instances](https://docs.microsoft.com/azure/application-insights/app-insights-separate-resources?azure-portal=true) between your different deployment environments such as development, test, staging, and production. Separate monitoring instances helps ensure that any data that's collected is relevant across applications and infrastructure. If you need to correlate data across environments, you can use [multi-resource charts in Metrics Explorer](https://docs.microsoft.com/azure/azure-monitor/platform/metrics-charts?azure-portal=true) or create [cross-resource queries in Log Analytics](https://docs.microsoft.com/azure/azure-monitor/log-query/cross-workspace-query?azure-portal=true).
 
 ### Create alerts that you can act on
 
@@ -86,14 +92,14 @@ To ensure that your monitoring efforts are effective, you need to notify adminis
 
 ### Create dashboards and workbooks
 
-Ensuring that your development and operations teams have access to the same telemetry and tools enables them to view patterns across your entire environment and minimize your _Mean Time To Detect_ (MTTD) and _Mean Time To Restore_ (MTTR). Here are some ways to do that:
+Ensuring that your development and operations teams have access to the same telemetry and tools enables them to view patterns across your entire environment and minimizes your _Mean Time To Detect_ (MTTD) and _Mean Time To Restore_ (MTTR). Here are some ways to do that:
 
 * Create [custom dashboards](https://docs.microsoft.com/azure/application-insights/app-insights-tutorial-dashboards?azure-portal=true) that are based on common metrics and logs for the different roles in your organization. Dashboards can combine data from multiple Azure resources.
 * Create [Azure Monitor workbooks](https://docs.microsoft.com/azure/application-insights/app-insights-usage-workbooks?azure-portal=true) to share knowledge between development and operations teams. You can prepare a workbook as a dynamic report that contains charts and log summaries. Developers can create troubleshooting guides to help customer support or operations troubleshoot problems.
 
 ### Continuously optimize
 
-Monitoring is one of the fundamental aspects of the popular _Build - Measure - Learn_ philosophy, which recommends that you continuously track your KPIs and user behavior metrics and then optimize them through iterative planning exercises. Azure Monitor helps you collect metrics and logs that are relevant to your business and to add new data points in the next deployment as required.
+Monitoring is one of the fundamental aspects of the popular _Build - Measure - Learn_ philosophy, which recommends that you continuously track your KPIs and user behavior metrics and then optimize them through iterative planning exercises. Azure Monitor helps you collect metrics and logs that are relevant to your business and to add new data points in the next deployment.
 
 * Use tools in Application Insights to [track end-user behavior and engagement](https://docs.microsoft.com/azure/application-insights/app-insights-tutorial-users?azure-portal=true).
 * Use [Impact Analysis](https://docs.microsoft.com/azure/application-insights/app-insights-usage-impact?azure-portal=true) to help you prioritize which areas to focus on to improve on your most important KPIs.
@@ -226,13 +232,15 @@ Here are ways you can view and track your telemetry data:
 * Cherwell
 * System Center Service Manager
 
-You can use ITSMC to:
+You can integrate Azure monitoring tools with your ITSMC to:
 
 * Create or update work-items in the ITSM tools, based on Azure alerts.
 * Pull incident and change request data from ITSM tools into Azure Log Analytics.
 
-You can use ITSMC to implement a ticketing system. Azure monitoring tools enable you to to identify, analyze, and troubleshoot issues. However, the work items related to an issue are typically stored in an ITSM tool. Instead of going back and forth between your ITSM tool and Azure monitoring tools, you can get all the information that you need in one place. ITSMC improves the troubleshooting experience by reducing the time it takes to resolve issues.
+Azure monitoring tools enable you to to identify, analyze, and troubleshoot issues. However, the work items related to an issue are typically stored in an ITSM tool. It makes more sense to implement a ticketing system with the ITSMC. That way, instead of going back and forth between your ITSM tool and Azure monitoring tools, you can get all the information that you need in one place. ITSMC improves the troubleshooting experience by reducing the time it takes to resolve issues.
 
-TODO: Summarize any interesting observations here.
+## The decision
 
-TODO: Any observations from the TS team?
+**Tim**: Monitoring will make it easy for us to fix problems if they crop up. But it will also give me an idea of how to plan for the future as we scale up. It would be nice to have an idea of what I'll need before the fact and not after.
+
+**Andy**: Go for it.

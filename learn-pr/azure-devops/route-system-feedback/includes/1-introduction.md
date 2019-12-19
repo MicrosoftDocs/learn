@@ -2,11 +2,11 @@ TODO: In this module, ...
 
 ## Learning objectives
 
-In this module, you'll:
+In this module, you will learn:
 
-- TODO
-- TODO
-- TODO
+- Learn about Azure Monitor
+- Learn about Azure Application Insights
+- Learn how to visualize monitoring data
 
 ## Prerequisites
 

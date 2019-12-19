@@ -23,7 +23,7 @@ Here's an example dashboard:
 
 Azure dashboards provide:
 
-* Deep integration with Azure services. You can pin visualizations to your dashboard from multiple Azure pages including metrics analytics, log analytics, and Application Insights.
+* Integration with Azure services. You can pin visualizations to your dashboard from multiple Azure pages including metrics analytics, log analytics, and Application Insights.
 * Support for both metrics and log data.
 * A way to combine data from multiple sources, including output from:
   * [Metrics Explorer](https://docs.microsoft.com/azure/azure-monitor/platform/metrics-charts?azure-portal=true)
