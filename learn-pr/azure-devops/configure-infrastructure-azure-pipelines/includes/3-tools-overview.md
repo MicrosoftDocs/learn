@@ -52,9 +52,9 @@ ansible-playbook \
 
 You'll see this process in greater detail later in this module.
 
-If you run this command multiple times, Ansible configures the user accounts only if they do not exist or have changed. This command is therefore an idempotent operation.
+If you run this command multiple times, Ansible configures the user accounts only if they don't exist or have changed. This command is therefore an idempotent operation.
 
-Ansible is also agentless, so you do not have to install Ansible software on the managed machines. However, you do need to install Python on your managed machines. By default, Ansible connects to Linux machines over the SSH protocol and Windows machines over WinRM.
+Ansible is also agentless, so you don't have to install Ansible software on the managed machines. However, you do need to install Python on your managed machines. By default, Ansible connects to Linux machines over the SSH protocol, and Windows machines over WinRM.
 
 You typically use a _control machine_ to manage your systems. A control machine includes the Ansible software and the playbooks you need to run. The control machine pushes configuration changes to your nodes. Later in this module, you'll set up a control machine and run Ansible playbooks from that control machine in Azure Pipelines.
 
@@ -74,9 +74,9 @@ hosts:
     ansible_host: 40.87.135.194
 ```
 
-This is an example of a _static inventory_. If these IP addresses change, or if you add or remove systems, you would need to update this inventory file over time.
+This is an example of a _static inventory_. If these IP addresses change, or if you add or remove systems, you'd need to update this inventory file over time.
 
-A more flexible approach is to use a _dynamic inventory_. A dynamic inventory enables Ansible to discover which systems to configure at run time.
+A more flexible approach is to use a _dynamic inventory_. A dynamic inventory enables Ansible to discover which systems to configure at runtime.
 
 Here's the dynamic inventory file you're going to use in this module:
 
@@ -96,7 +96,7 @@ This inventory specifies that each VM in the `learn-ansible-rg` resource group b
 
 There are a number of ways you can use Ansible on Azure.
 
-On the [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace?azure-portal=true), you'll find a number of images that you can use. They include:
+On [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace?azure-portal=true), you'll find a number of images that you can use. They include:
 
 * [Red Hat Ansible instance on Linux](https://azuremarketplace.microsoft.com/marketplace/apps/azure-oss.ansible?azure-portal=true), published by Microsoft.
 
@@ -107,17 +107,17 @@ On the [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace?az
     Ansible Tower helps organizations scale IT automation and manage complex deployments across physical, virtual, and cloud infrastructures. With Ansible Tower, you can:
 
     * Provision Azure environments using pre-built Ansible playbooks.
-    * Use role-based access control (RBAC) to define who or what can see, change, or delete objects or utilize specific capabilities.
+    * Use role-based access control (RBAC) to define who or what can see, change, or delete objects, or utilize specific capabilities.
     * Maintain centralized logging for complete auditability and compliance.
-    * Utilize the large community of content available on Ansible Galaxy.
+    * Use the many content resources available on Ansible Galaxy.
 
-You can also set up Ansible on a Linux VM running on Azure or in your datacenter and use that as your control machine. Although Ansible does not support Windows as the control machine, you can run Ansible from Windows through Windows Subsystem for Linux, Cloud Shell, or Visual Studio Code.
+You can also set up Ansible on a Linux VM running on Azure, or in your datacenter, and use that as your control machine. Although Ansible doesn't support Windows as the control machine, you can run Ansible from Windows through Windows Subsystem for Linux, Cloud Shell, or Visual Studio Code.
 
 ## Azure Automation
 
-Azure Automation is a service in Azure that helps you automate manual tasks. Azure Automation has the concept of a _runbook_, which is a set of tasks that perform some automated procedure in Azure Automation. Tasks in a runbook are written in PowerShell, [Powershell Workflow](https://docs.microsoft.com/system-center/sma/overview-powershell-workflows?azure-portal=true), or Python. You can run a runbook either manually or on a schedule.
+Azure Automation is a service in Azure that helps you automate manual tasks. Automation has the concept of a _runbook_, which is a set of tasks that perform some automated procedure in Automation. Tasks in a runbook are written in PowerShell, [Powershell Workflow](https://docs.microsoft.com/system-center/sma/overview-powershell-workflows?azure-portal=true), or Python. You can run a runbook either manually or on a schedule.
 
-Here's a basic example that uses Powershell Workflow to stop a running service:
+Here's a basic example that uses PowerShell Workflow to stop a running service:
 
 ```powershell
 Workflow Stop-MyService
@@ -132,15 +132,15 @@ Workflow Stop-MyService
 }
 ```
 
-Although the name implies that you can use Azure Automation only on Azure, it's more flexible than that. Azure Automation has a feature called Hybrid Runbook Worker. Hybrid Runbook Worker gives Azure Automation access to resources in other clouds or in your on-premises environment that would otherwise be blocked by a firewall.
+Although the name implies that you can use Azure Automation only on Azure, it's more flexible than that. Automation has a feature called hybrid runbook worker. This feature gives Automation access to resources in other clouds or in your on-premises environment that would otherwise be blocked by a firewall.
 
-Azure Automation also provides a Desired State Configuration (DSC) pull server that enables you to create definitions for how a given set of VMs should be configured. DSC then ensures that the required configuration is applied and that the VM stays consistent. Azure Automation DSC runs on both Windows and Linux.
+Automation also provides a Desired State Configuration (DSC) pull server that enables you to create definitions for how a given set of VMs should be configured. DSC then ensures that the required configuration is applied and that the VM stays consistent. Automation DSC runs on both Windows and Linux.
 
 ## Azure Custom Script Extension
 
 The Custom Script Extension is a way to download and run scripts on your Azure VMs. You can run the extension when you create a VM, or any time after the VM is in use.
 
-You can store your scripts in Azure storage or in a public location such as GitHub. You can run scripts manually or as part of a more automated deployment.
+You can store your scripts in Azure Storage or in a public location, such as GitHub. You can run scripts manually or as part of a more automated deployment.
 
 You can use the Custom Script Extension with Windows or Linux VMs. Here's an example that uses the `az vm extension set` command to run a Bash script that installs Nginx web server on a Linux VM.
 
@@ -185,27 +185,29 @@ Most Chef resources are idempotent, meaning you can apply the same configuration
 
 You can package multiple recipes into a _cookbook_. A cookbook might contain recipes that configure the various parts of MySQL, Nginx, OpenSSL, or any other kind of software.
 
-Building on the previous code example, an IIS cookbook might contains recipes that configure application pools, virtual directories, virtual sites, and so on. You can define _roles_ to specify which recipes are applied to a system based on that system's function. For example, you might define the "webserver" role to run recipes that install and configure IIS, Apache, or Nginx web servers. The "database" role might run recipes that install and configure MySQL or Microsoft SQL Server.
+Building on the previous code example, an IIS cookbook might contain recipes that configure application pools, virtual directories, and virtual sites. You can define _roles_ to specify which recipes are applied to a system based on that system's function. For example, you might define the "webserver" role to run recipes that install and configure IIS, Apache, or Nginx web servers. The "database" role might run recipes that install and configure MySQL or Microsoft SQL Server.
 
-You can find cookbooks that are maintained by Chef and the Chef community on [Chef Supermarket](https://supermarket.chef.io/?azure-portal=true).
+Chef and the Chef community maintain cookbooks on [Chef Supermarket](https://supermarket.chef.io/?azure-portal=true).
 
 ### Chef on Azure
 
 There are a number of ways you can use Chef on Azure.
 
-On the [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace?azure-portal=true), you'll find a number of images that you can use. They include:
+On [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace?azure-portal=true), you'll find a number of images that you can use. They include:
 
 * Chef Extension for [Windows](https://azuremarketplace.microsoft.com/marketplace/apps/chef-software.chef-client-windows-arm?tab=Overview?azure-portal=true) and [Linux](https://azuremarketplace.microsoft.com/marketplace/apps/chef-software.chef-client-linux?azure-portal=true), published by Chef Software.
 
-    These images come with the Chef Client. Chef Client is an agent that runs on each node that's managed through Chef. Chef Client applies the cookbooks and recipes you specify. Chef Client can also send reporting data back to a Chef Server or a Chef Automate server so that you can track and audit your configuration runs over time.
+    These images come with the Chef Client. Chef Client is an agent that runs on each node that's managed through Chef. Chef Client applies the cookbooks and recipes you specify. Chef Client can also send reporting data back to a Chef Server or a Chef Automate server, so that you can track and audit your configuration runs over time.
 
-* [Chef Automate](https://azuremarketplace.microsoft.com/marketplace/apps/chef-software.chef-automate?azure-portal=true), published by Chef Software. Chef Automate enables you to package and test your applications, and provision and update your infrastructure. Using Chef, you can manage all of it with compliance and security checks, and dashboards that give you visibility into your entire stack.
+* [Chef Automate](https://azuremarketplace.microsoft.com/marketplace/apps/chef-software.chef-automate?azure-portal=true), published by Chef Software.
 
-You can also set up Chef on a Linux or Windows VM running on Azure or in your datacenter.
+  Chef Automate enables you to package and test your applications, and provision and update your infrastructure. Using Chef, you can manage all of it with compliance and security checks, and dashboards that give you visibility into your entire stack.
+
+You can also set up Chef on a Linux or Windows VM running on Azure, or in your datacenter.
 
 ### Cloud-init
 
-Cloud-init, by Canonical, is a way to customize a Linux VM as it boots for the first time. You can use cloud-init to install packages, write files, configure users, and more.
+Cloud-init, by Canonical, is a way to customize a Linux VM as it boots for the first time. You can use cloud-init to install packages, write files, and configure users.
 
 You write cloud-init files by using YAML. Consider this basic cloud-init configuration that installs PIP, the package manager for Python, and NumPy, a package for scientific computing with Python.
 
@@ -219,7 +221,7 @@ runcmd:
 
 In this example, `packages` specifies the list of packages to install. Here, we install **python-pip**. `runcmd` specifies the list of commands to run on first boot. Here, we use PIP to install the NumPy package.
 
-This configuration is declarative, meaning you don't need to specify _how_ to install **python-pip**. Cloud-init understands the Linux distribution that's running and can use the appropriate package manager to install the **python-pip** package, for example, **apt** on Debian-based systems or **yum** on Red Hat Enterprise Linux.
+This configuration is declarative, meaning you don't need to specify _how_ to install **python-pip**. Cloud-init recognizes the Linux distribution that's running, and can use the appropriate package manager to install the **python-pip** package. For example, it can install **apt** on Debian-based systems or **yum** on Red Hat Enterprise Linux.
 
 Here's an example that uses the Azure CLI to bring up an Ubuntu VM on Azure and apply this configuration.
 
@@ -239,7 +241,7 @@ The `--custom-data` argument specifies the cloud-init configuration to run when 
 
 PowerShell Desired State Configuration (DSC) is a management platform that defines the configuration of target machines. You can use PowerShell DSC to manage Windows or Linux systems.
 
-DSC configurations define what to install and configure on a machine. A Local Configuration Manager (LCM) engine runs on each target node that processes requested actions based on pushed configurations. A pull server is a web service that runs on a central host to store the DSC configurations and associated resources. The pull server communicates with the LCM engine on each target node to provide the required configurations and report on compliance.
+DSC configurations define what to install and configure on a machine. A local configuration manager (LCM) engine runs on each target node that processes requested actions based on pushed configurations. A pull server is a web service that runs on a central host to store the DSC configurations and associated resources. The pull server communicates with the LCM engine on each target node to provide the required configurations and report on compliance.
 
 Here's a basic example that uses PowerShell DSC to configure IIS on Windows.
 
@@ -290,7 +292,7 @@ iis_feature { $iis_features:
 }
 ```
 
-You can package multiple manifests into a _module_. You can find modules that are maintained by Puppet and their partners at [Puppet Forge](https://forge.puppet.com/?azure-portal=true).
+You can package multiple manifests into a _module_. Puppet and their partners maintain modules at [Puppet Forge](https://forge.puppet.com/?azure-portal=true).
 
 In this example, the `iis_feature` resource is provided by the [puppetlabs-iis](https://forge.puppet.com/puppetlabs/iis?azure-portal-true) module, which helps you manage IIS sites and application pools.
 
@@ -298,13 +300,13 @@ In this example, the `iis_feature` resource is provided by the [puppetlabs-iis](
 
 There are a number of ways you can use Puppet on Azure.
 
-On the [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace?azure-portal=true), you'll find a number of images that you can use. They include:
+On [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace?azure-portal=true), you'll find a number of images that you can use. They include:
 
 * [Puppet Agent](https://azuremarketplace.microsoft.com/marketplace/apps/Puppet.puppet-agent-windows-arm?azure-portal=true), published by Puppet, is a virtual machine extension that installs the Puppet agent on your Windows VM.
 
 * [Puppet Enterprise](https://azuremarketplace.microsoft.com/marketplace/apps/puppet.puppet-enterprise?azure-portal=true), published by Puppet, enables you to automate the entire lifecycle of your infrastructure.
 
-You can also set up Puppet on a Linux or Windows VM running on Azure or in your datacenter.
+You can also set up Puppet on a Linux or Windows VM running on Azure, or in your datacenter.
 
 ## The decision
 
@@ -316,10 +318,10 @@ _Andy looks at Tim._
 
 **Tim:** I like many of these options. Can we continue to use Terraform to configure our systems?
 
-**Andy:** Terraform is great for building infrastructure. It's designed, out of the box, to interact directly with cloud providers, to help you plan that infrastructure, and then to build it. However, Terraform is not a configuration management tool. That said, you can use Terraform to build your infrastructure, and then use what's called a _provisioner_ to configure your infrastructure using your favorite tools.
+**Andy:** Terraform is great for building infrastructure. It's designed, out of the box, to interact directly with cloud providers, to help you plan that infrastructure, and then to build it. However, Terraform is not a configuration management tool. That said, you can use Terraform to build your infrastructure, and then use what's called a _provisioner_ to configure your infrastructure by using your favorite tools.
 
 _Tim thinks for a minute._
 
-**Tim:** Let's go with Ansible. Maybe we can tie it in with Terraform at some point, but for now, I'd like to see it working and then add it to Azure Pipelines. Perhaps we can build a basic prototype and then later we can add in our details.
+**Tim:** Let's go with Ansible. Maybe we can tie it in with Terraform at some point, but for now, I'd like to see it working and then add it to Azure Pipelines. Perhaps we can build a basic prototype, and then later we can add in our details.
 
 **Andy:** Sounds great. Let's get to work.
