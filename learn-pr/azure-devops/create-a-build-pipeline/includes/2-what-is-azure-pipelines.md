@@ -108,7 +108,7 @@ Service endpoints are a way for Azure DevOps to connect to external systems or s
 * Certificates or tokens
 * User names and passwords
 
-Extensions are then able to leverage the service endpoint to acquire the stored details to perform the necessary operations on that service.
+Extensions are then able to access the service endpoint to get the stored details to perform the necessary operations on that service.
 
 ### Concurrent pipelines
 
