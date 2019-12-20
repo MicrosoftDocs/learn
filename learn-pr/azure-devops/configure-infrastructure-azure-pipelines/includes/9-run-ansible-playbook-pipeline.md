@@ -18,7 +18,7 @@ The Ansible extension for Azure Pipelines provides the `Ansible@0` task, which s
 
 1. In a web browser, go to [GitHub](https://github.com?azure-portal=true) and sign in.
 1. From the **Repositories** pane, select **New**.
-1. Under **Repository name** name, enter *mslearn-ansible*.
+1. Under **Repository name**, enter *mslearn-ansible*.
 1. Select **Create repository**.
 
 ## Push your local Git repository to GitHub
