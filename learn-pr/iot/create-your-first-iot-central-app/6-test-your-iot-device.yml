@@ -53,14 +53,3 @@ quiz:
       isCorrect: true
       explanation: Many simulations are set to run faster than real time.
       
-  - content: "In one of the direct methods of the scenario, what do the strings 'cmdGoTo' and CmdGoToCustomer refer to?"
-    choices:
-    - content: 'The IoT Central app has a command with Field Name "cmdGoTo", and the device app has a function "CmdGoToCustomer" to be called when the operator invokes cmdGoTo.'
-      isCorrect: true
-      explanation: The order of parameters in most references to IoT Central is the Field Name followed by the device app name. This applies to Telemetry, Events, Properties, Settings, as well as Commands.
-    - content: 'The IoT Central app has a command with Field Name "CmdGoToCustomer", and the device app has a function "cmdGoTo" to be called when the operator invokes CmdGoToCustomer.'
-      isCorrect: false
-      explanation: The names are the wrong way round.
-    - content: 'Two commands, with functions named CmdGoToCustomer and cmdGoTo, are defined in the device app.'
-      isCorrect: false
-      explanation: These two names refer to one direct method.

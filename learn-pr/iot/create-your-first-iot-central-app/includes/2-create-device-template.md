@@ -131,14 +131,12 @@ A location is probably the most important, and yet one of the easiest measuremen
     | --- | --- |
     | Display Name | Location |
     | Name | Location |
+    | Capability Type | Telemetry |
+    | Semantic type | Location |
+    | Schema | Geopoint |
 
     ![Screenshot showing how to create a truck location for the simulated device](../media/refrigerated-trucks-location.png)
 
-
-
-1. You should now have completed adding all the measurements you need. Validate the measurements you have created against the following image (your colors will differ from the colors in the image):
-
-    ![Screenshot to help validate you have entered all the measurements for the simulated device correctly](../media/refrigerated-trucks-measurements.png)
 
 ## Add properties
 
