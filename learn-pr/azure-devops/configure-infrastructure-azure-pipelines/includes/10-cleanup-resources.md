@@ -5,7 +5,7 @@ You're all done with the tasks for this module. Here, you'll clean up your Azure
 
 ## Clean up Azure resources
 
-Here, you delete your VMs under management, your Ansible control machine, and your service principal. Earlier, you worked with Azure resources through Cloud Shell in VS Code. Here, you do the same.
+Delete your VMs under management, your Ansible control machine, and your service principal. Earlier, you worked with Azure resources through Azure Cloud Shell in VS Code. Here, you do the same.
 
 The easiest way to delete your VMs is to delete their parent resource groups. Deleting a resource group deletes all resources in that group.
 
@@ -40,7 +40,7 @@ To delete your service principal:
     az ad sp list --show-mine --query [].servicePrincipalNames
     ```
 
-1. Locate the service principal that you created in this module. The name begins with **http://ansible-sp-** and ends with your unique ID. Here's an example:
+1. Locate the service principal that you created in this module. The name begins with `http://ansible-sp-`, and ends with your unique ID. Here's an example:
 
     ```json
     [
@@ -50,6 +50,7 @@ To delete your service principal:
       ]
     ]
     ```
+
 1. Run the following `az ad sp delete` command to delete your service principal. Replace the name shown here with yours.
 
     ```azurecli

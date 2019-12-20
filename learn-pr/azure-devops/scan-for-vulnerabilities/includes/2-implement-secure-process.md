@@ -26,7 +26,7 @@ There are many tools and processes you can use to analyze your code. You can eva
 
 ### OWASP
 
-The Open Web Application Security Project ([OWASP](http://www.owasp.org?azure-portal=true)) is a not-for-profit organization focused on improving the security of software. OWASP hosts global and regional events where practitioners from all industries can meet to share and learn the latest best practices around security management.
+The Open Web Application Security Project ([OWASP](https://www.owasp.org?azure-portal=true)) is a not-for-profit organization focused on improving the security of software. OWASP hosts global and regional events where practitioners from all industries can meet to share and learn the latest best practices around security management.
 
 OWASP also provides tools, code, and documentation to help practitioners understand potential threats in their code and to take action.
 

@@ -157,7 +157,7 @@ If you want to configure the server as well, take a look at technologies like Po
 
 ### Infrastructure as a Service
 
-When you use the cloud as your target environment, things change a bit. Some organizations can do what's called a "lift and shift" from their on-premises server to cloud servers. In this case, your deployment works the same as it did on the on-premises server. But when you use the cloud to provide you with Infrastructure as a Service (IaaS), you can leverage the power of the cloud to start and create servers when you need them.
+When you use the cloud as your target environment, things change a bit. Some organizations can do what's called a "lift and shift" from their on-premises server to cloud servers. In this case, your deployment works the same as it did on the on-premises server. But when you use the cloud to provide you with Infrastructure as a Service (IaaS), you can access the power of the cloud to create servers when you need them.
 
 This is where infrastructure as code plays a significant role. By using a script or template, you can create a server or other infrastructure components, such as a SQL server, a network, or an IP address, in the cloud. That script or template can be a part of your CD pipeline, which creates your infrastructure programmatically. After that, you can execute the steps to deploy the software.
 

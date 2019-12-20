@@ -115,7 +115,7 @@ You can press Ctrl-C to stop the image and then restart it as shown by the follo
 docker run -p 8080:80 -d mcr.microsoft.com/dotnet/core/samples:aspnetapp
 ```
 
-The command maps port 80 in the container to port 8080 on your computer. If you visit the page http://localhost:8080 in a browser, you'll see the sample web app.
+The command maps port 80 in the container to port 8080 on your computer. If you visit the page `http://localhost:8080` in a browser, you'll see the sample web app.
 
 ![Screenshot of the sample web app running in a browser](../media/2-sample-web-app.png)
 

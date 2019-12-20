@@ -197,7 +197,7 @@ Verify VM is registered with Azure Automation extension
 
 Verify that IIS is installed on the VM
 
-1. Attempt to connect to public IP of machine http://<public-ip>
+1. Attempt to connect to public IP of machine `http://<public-ip>`
 
 ### Unit 5: Summary + Cleanup
 
