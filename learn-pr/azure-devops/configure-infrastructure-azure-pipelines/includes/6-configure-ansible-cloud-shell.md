@@ -143,7 +143,7 @@ vm1_1bbf | SUCCESS => {
 }
 ```
 
-You see "SUCCESS" as well as "pong" in the output, which tell you that the command succeeded.
+You see "SUCCESS" and "pong" in the output, which tell you that the command succeeded.
 
 The `discovered_interpreter_python` part shows the path where Python is found on each node. The Ubuntu image on Azure comes with Python installed. If Python were not to be installed, you'd see an error message that reminds you to install Python on each node.
 
