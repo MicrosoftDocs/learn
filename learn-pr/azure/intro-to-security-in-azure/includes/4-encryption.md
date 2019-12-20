@@ -1,4 +1,4 @@
-For most organizations, data is the most valuable and irreplaceable asset. Encryption serves as the last and strongest line of defense in a layered security strategy. 
+For most organizations, data is the most valuable and irreplaceable asset. Encryption serves as the last and strongest line of defense in a layered security strategy.
 
 Contoso Shipping knows that encryption is the only protection its data has once it leaves the data center and is stored on mobile devices that could potentially be hacked or stolen.
 
@@ -10,7 +10,7 @@ Encryption is the process of making data unreadable and unusable to unauthorized
 
 **Asymmetric encryption** uses a public key and private key pair. Either key can encrypt but a single key can't decrypt its own encrypted data. To decrypt, you need the paired key. Asymmetric encryption is used for things like Transport Layer Security (TLS) (used in HTTPS) and data signing.
 
-Both symmetric and asymmetric encryption play a role in properly securing your data. Encryption is typically approached in two ways: 
+Both symmetric and asymmetric encryption play a role in properly securing your data. Encryption is typically approached in two ways:
 
 1. Encryption at rest
 1. Encryption in transit
@@ -45,7 +45,7 @@ Let's take a look at some ways that Azure enables you to encrypt data across ser
   :::column:::
     ![Image representing encrypted storage](../media/4-encrypt-raw-storage.png)
   :::column-end:::
-	:::column span="3":::  
+  :::column span="3":::
 **Encrypt raw storage**
 
 **Azure Storage Service Encryption** for data at rest helps you protect your data to meet your organizational security and compliance commitments. With this feature, the Azure storage platform automatically encrypts your data before persisting it to Azure Managed Disks, Azure Blob storage, Azure Files, or Azure Queue storage, and decrypts the data before retrieval. The handling of encryption, encryption at rest, decryption, and key management in Storage Service Encryption is transparent to applications using the services.
@@ -57,7 +57,7 @@ Let's take a look at some ways that Azure enables you to encrypt data across ser
   :::column:::
     ![Image representing an encrypted virtual machine](../media/4-encrypt-virtual-machines.png)
   :::column-end:::
-	:::column span="3":::  
+  :::column span="3":::
 **Encrypt virtual machine disks**
 
 Storage Service Encryption provides low-level encryption protection for data written to physical disk, but how do you protect the virtual hard disks (VHDs) of virtual machines? If malicious attackers gained access to your Azure subscription and got the VHDs of your virtual machines, how would you ensure they would be unable to access the stored data?
@@ -72,7 +72,7 @@ For Contoso Shipping, using VMs was one of the first moves toward the cloud. Hav
   :::column:::
     ![Image representing an encrypted database](../media/4-encrypt-databases.png)
   :::column-end:::
-	:::column span="3":::  
+  :::column span="3":::
 **Encrypt databases**
 
 **Transparent data encryption (TDE)** helps protect Azure SQL Database and Azure Data Warehouse against the threat of malicious activity. It performs real-time encryption and decryption of the database, associated backups, and transaction log files at rest without requiring changes to the application. By default, TDE is enabled for all newly deployed Azure SQL Database instances.
@@ -88,7 +88,7 @@ Because TDE is enabled by default, you are confident that Contoso Shipping has t
   :::column:::
     ![Image representing an encrypted secret](../media/4-encrypt-secrets.png)
   :::column-end:::
-	:::column span="3":::  
+  :::column span="3":::
 **Encrypt secrets**
 
 We've seen that the encryption services all use keys to encrypt and decrypt data, so how do we ensure that the keys themselves are secure? Corporations may also have passwords, connection strings, or other sensitive pieces of information that they need to securely store. In Azure, we can use **Azure Key Vault** to protect our secrets.
