@@ -127,12 +127,14 @@ A location is probably the most important, and yet one of the easiest measuremen
 
 1.  Use **+ New**, then click **Location**, and add a location for our trucks as follows.
 
-    ![Screenshot showing how to create a truck location for the simulated device](../media/refrigerated-trucks-location.png)
-
     | Entry summary | Value |
     | --- | --- |
     | Display Name | Location |
-    | Name | location |
+    | Name | Location |
+
+    ![Screenshot showing how to create a truck location for the simulated device](../media/refrigerated-trucks-location.png)
+
+
 
 1. You should now have completed adding all the measurements you need. Validate the measurements you have created against the following image (your colors will differ from the colors in the image):
 
@@ -162,7 +164,7 @@ A setting is a single value. If more complex sets of data need to be transmitted
 
 ## Properties
 
-Properties of a device are typically constant values, that are communicated to the IoT Central app once when communication is first initiated. In our refrigerated truck scenario, a good example of a property would be the license plate of the truck, or some similar unique truck ID.
+Properties of a device are typically constant values, that are communicated to the IoT Central app once when communication is first initiated. In our refrigerated truck scenario, a good example of a property is the license plate of the truck, or some similar unique truck ID.
 
 1. Click on the **Properties** title under the device template name, and add a single **Text** property to contain a truck ID.
 
