@@ -42,9 +42,9 @@ products:
 - azure-virtual-machines
 modules:
 - learn.principles-cloud-computing
+- learn.create-azure-account
 - learn.welcome-to-azure
 - learn.explore-azure-infrastructure
-- learn.create-azure-account
 - learn.tour-azure-portal-features
 - learn.intro-to-compute
 - learn.intro-to-data-in-azure

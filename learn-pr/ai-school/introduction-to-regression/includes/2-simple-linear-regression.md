@@ -12,7 +12,7 @@ This will be our *training data*, which allows linear regression to identify the
 
 ## Make predictions with simple linear regression
 
-The training data allows us to create a linear regression model that knows the trend in the data. Once we've used our existing data (both features and the label) to determine where the line belongs, we can use this model to make predictions make predictions at future labels given a feature.
+The training data allows us to create a linear regression model that knows the trend in the data. Once we've used our existing data (both features and the label) to determine where the line belongs, we can use this model to make predictions at future labels given a feature.
 
 With the previous example, we could predict a person’s shoe size when we only know their height. If we are asked to guess the shoe size of someone who is 180 centimeters tall, we can use that line to guess a little over 14.
 

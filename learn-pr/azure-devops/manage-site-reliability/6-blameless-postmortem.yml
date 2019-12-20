@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.azdo.manage-site-reliability.6-blameless-postmortem
-title: Blameless post-mortems
+title: Blameless postmortems
 metadata:
-  title: Blameless post-mortems
+  title: Blameless postmortems
   description: Learn ...
-  ms.date: 06/21/2019
+  ms.date: 12/24/2019
   author: tpetchel
   ms.author: thpetche
   ms.topic: interactive-tutorial

@@ -52,7 +52,7 @@ Similarly to artifacts, you might consider migrating your source control to Azur
 
 The Azure DevOps team recommends the following process:
 
-1. Evaluate the tools and processes you’re using.
+1. Evaluate the tools and processes you're using.
 1. Select a branching strategy for Git.
 1. Decide how to migrate history – or if you even want to.
 1. Maintain your old version control system.

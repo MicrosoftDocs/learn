@@ -13,9 +13,9 @@ title: Recommend and design system feedback mechanisms
 summary: Learn ...
 abstract: |
   In this module, you will:
-  - A
-  - B
-  - C
+  - Examine the tensions between speed and risk.
+  - Learn different techniques for gathering customer feedback.
+  - Learn how automation can help with troubleshooting complex problems.
 prerequisites: An Azure DevOps organization
 iconUrl: /learn/achievements/generic-badge.svg
 ratingEnabled: true
@@ -35,6 +35,7 @@ units:
 - learn.azdo.recommend-system-feedback-mechanisms.4-measure-customer-satisfaction
 - learn.azdo.recommend-system-feedback-mechanisms.5-capture-analyze-user-feedback
 - learn.azdo.recommend-system-feedback-mechanisms.6-automate-application-analytics
-- learn.azdo.recommend-system-feedback-mechanisms.7-summary
+- learn.azdo.recommend-system-feedback-mechanisms.7-knowledge-check
+- learn.azdo.recommend-system-feedback-mechanisms.8-summary
 badge:
   uid: learn.azdo.recommend-system-feedback-mechanisms.badge

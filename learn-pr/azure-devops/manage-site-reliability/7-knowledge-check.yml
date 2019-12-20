@@ -1,0 +1,63 @@
+### YamlMime:ModuleUnit
+uid: learn.azdo.manage-site-reliability.7-knowledge-check
+title: Knowledge check - site reliability & telemetry & alerts
+metadata:
+  title: Knowledge check - site reliability & telemetry & alerts
+  description: Knowledge check - site reliability & telemetry & alerts
+  ms.date: 12/24/2019
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: "Which action is NOT something a sight reliability engineer would do?"
+    choices:
+    - content: Ensure the software has good logging and diagnostics
+      isCorrect: false
+      explanation: "SREs are concerned with the product reliability, so ensuring the site has good logging and diagnostics would be an action the SRE does."
+    - content: Set up the server environment for testing.
+      isCorrect: true
+      explanation: "SREs are concerned with the product reliability, so setting up the server environment for testing would not be an action the SRE does."
+    - content: Proactively monitor and review application performance.
+      isCorrect: false
+      explanation: "SREs are concerned with the product reliability, so proactively monitoring and reviewing application performance would be an action the SRE does."
+
+  - content: "Application Insights will send a performance degradation notification in which of the following scenarios?"
+    choices:
+    - content: A site dependency is responding more slowly than it used to.
+      isCorrect: true
+      explanation: "Smart detection notifications for degraded performance are triggered three ways: response time degradation, dependency duration degradation, and a slow performance pattern of page load times, request response times, and dependency response times."
+    - content: A customer complaint bug is filed from the web site.
+      isCorrect: false
+      explanation: "Smart detection notifications for degraded performance are triggered three ways: response time degradation, dependency duration degradation, and a slow performance pattern of page load times, request response times, and dependency response times."
+    - content: The database query returns no rows and an error is logged.
+      isCorrect: false
+      explanation: "Smart detection notifications for degraded performance are triggered three ways: response time degradation, dependency duration degradation, and a slow performance pattern of page load times, request response times, and dependency response times."
+
+  - content: "When writing alerts, you want to alert on symptoms rather than causes. What is an example of a symptom-based alert?"
+    choices:
+    - content: The data sync from the replicated server failed.
+      isCorrect: false
+      explanation: "Data sync failure is a cause not a symptom. The symptom here might be that the user data is old."
+    - content: There was a network outage in the Eastern region.
+      isCorrect: false
+      explanation: "Network outage is a cause. The symptom might be that users in the Eastern region cannot get to the web site."
+    - content: Users in Australia cannot reach the web site.
+      isCorrect: true
+      explanation: "Users in Australia not being able to reach the web site is a symptom. The cause might be a network outage in the region."
+
+  - content: "What is the state of an alert that an administrator has reviewed?"
+    choices:
+    - content: New.
+      isCorrect: false
+      explanation: "The *New* state is when the issue has just been detected and has not yet been reviewed."
+    - content: Closed.
+      isCorrect: false
+      explanation: "The *Closed* state is when the issue has been resolved. After an alert has been closed, you can reopen it by changing it to another state."
+    - content: Acknowledged.
+      isCorrect: true
+      explanation: "The *Acknowledged* state is when an administrator has reviewed the alert and started working on it."

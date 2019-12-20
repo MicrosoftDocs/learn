@@ -11,8 +11,6 @@ oversee deployments, monitor overall performance, review error logs, and trouble
 
 That person is the SRE
 
-Copied from ILT
-
 ## What is site reliability engineering?
 
 Site reliability engineering (SRE) empowers software developers to own the ongoing daily operation of their applications in production. The goal is to bridge the gap between the development team that needs to ship continuously, and the operations team that that is responsible for the reliability of the production environment. Site reliability engineering shifts the responsibility of production reliability to the SRE on the development team.
