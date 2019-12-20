@@ -4,9 +4,9 @@ As a final unit in this module, let’s talk about where to go from here if you'
 
 For more detailed information about SRE, the best source is a trio of books that have been published on the subject
 
-1. [_Site Reliability Engineering: How Google Runs Production Systems_](http://shop.oreilly.com/product/0636920041528.do) (known as "The SRE Book")
-1. [_The Site Reliability Workbook: Practical Ways to Implement SRE_](http://shop.oreilly.com/product/0636920132448.do) (known as "The SRE Workbook")
-1. [_Seeking SRE: Conversations About Running Production Systems at Scale_](http://shop.oreilly.com/product/0636920063964.do)
+1. [_Site Reliability Engineering: How Google Runs Production Systems_](https://shop.oreilly.com/product/0636920041528.do) (known as "The SRE Book")
+1. [_The Site Reliability Workbook: Practical Ways to Implement SRE_](https://shop.oreilly.com/product/0636920132448.do) (known as "The SRE Workbook")
+1. [_Seeking SRE: Conversations About Running Production Systems at Scale_](https://shop.oreilly.com/product/0636920063964.do)
 
 (As a quick disclosure, the primary author of this module is the curator/editor of the third book)
 

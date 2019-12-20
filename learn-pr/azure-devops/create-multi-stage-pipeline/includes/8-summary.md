@@ -31,7 +31,7 @@ Now that you're familiar with making your builds part of an automated pipeline, 
 
 Implementing CI/CD to deploy applications is difficult when you build and operate on-premises applications differently than cloud applications. If this is your situation, consider [Azure Stack Hub](https://docs.microsoft.com/azure-stack/operator/azure-stack-overview?azure-portal=true). Azure Stack Hub is a hybrid cloud platform that enables you to use Azure services from your company's or service provider's datacenter.
 
-As a developer, you can build apps on Azure Stack Hub. You can then deploy them to Azure Stack Hub, to Azure, or you can build truly hybrid apps that leverage the connectivity between an Azure Stack Hub cloud and Azure.
+As a developer, you can build apps on Azure Stack Hub. You can then deploy them to Azure Stack Hub, to Azure, or you can build truly hybrid apps that connect between an Azure Stack Hub cloud and Azure.
 
 ### Implement multi-agent builds
 

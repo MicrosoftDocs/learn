@@ -43,7 +43,7 @@ Here's how the `hostname` variable is defined in JMeter:
 
 ![Setting the hostname variable in Apache JMeter](../media/5-jmeter-hostname-variable.png)
 
-Here's how the `hostname` variable uses the [__P](http://jmeter.apache.org/usermanual/functions.html?azure-portal=true#__P) function to read the `hostname` variable.
+Here's how the `hostname` variable uses the [__P](https://jmeter.apache.org/usermanual/functions.html?azure-portal=true#__P) function to read the `hostname` variable.
 
 ![Reading the hostname variable in Apache JMeter](../media/5-jmeter-httprequest-server-name.png)
 
@@ -72,7 +72,8 @@ Let's add the pipeline variable now, before you update your pipeline configurati
 1. Enter **STAGING_HOSTNAME** as the name of your variable. Enter the URL of the App Service instance that corresponds to your **staging** environment, such as **tailspin-space-game-web-dev-1234.azurewebsites.net**, as its value.
 
     > [!IMPORTANT]
-    > Be sure not to include the HTTP or HTTPS protocol, such as **http://**, in your value. JMeter provides the protocol when the tests run.
+    > Don't include the `http://` or `https://` protocol prefix in your value. JMeter provides the protocol when the tests run.
+
 1. Select **Save** near the top of the page to save your variable to the pipeline.
 
     Your variable group resembles this one:

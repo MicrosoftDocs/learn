@@ -67,7 +67,7 @@ The exercise also runs a client app that simulates a number of users issuing POS
     az webapp deployment source config-zip --src website.zip --name <your-webapp-name> --resource-group mslearn-scale
     ```
 
-1. Use your web browser to go to http://<your-webapp-name>.azurewebsites.net/api/reservations/1. You should see a JSON document that contains the details for reservation number 1:
+1. Use your web browser to go to `http://<your-webapp-name>.azurewebsites.net/api/reservations/1`. You should see a JSON document that contains the details for reservation number 1:
 
     ![Screenshot of the running web app, showing the details for reservation number 1](../media/3-web-app.png)
 

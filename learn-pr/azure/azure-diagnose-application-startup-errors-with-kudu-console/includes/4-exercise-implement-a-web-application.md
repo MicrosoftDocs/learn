@@ -32,7 +32,7 @@ Application started.
 
 The output describes the situation after starting your app: the application is running and listening at port 5000.
 
-If you are running the app on your own machine, you'd be able to open a browser to http://localhost:5000. To make this accessible from outside of our own machine, you'll need to deploy the app to somewhere with a public endpoint.
+If you are running the app on your own machine, you'd be able to open a browser to `http://localhost:5000`. To make this accessible from outside of our own machine, you'll need to deploy the app to somewhere with a public endpoint.
 
 ## Update the web project code
 

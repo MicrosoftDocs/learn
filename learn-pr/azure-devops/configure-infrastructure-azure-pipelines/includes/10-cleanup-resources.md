@@ -40,7 +40,7 @@ To delete your service principal:
     az ad sp list --show-mine --query [].servicePrincipalNames
     ```
 
-1. Locate the service principal that you created in this module. The name begins with **http://ansible-sp-**, and ends with your unique ID. Here's an example:
+1. Locate the service principal that you created in this module. The name begins with `http://ansible-sp-`, and ends with your unique ID. Here's an example:
 
     ```json
     [
@@ -50,6 +50,7 @@ To delete your service principal:
       ]
     ]
     ```
+
 1. Run the following `az ad sp delete` command to delete your service principal. Replace the name shown here with yours.
 
     ```azurecli
