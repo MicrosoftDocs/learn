@@ -10,9 +10,8 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-# If you don't the sandbox, remove these two lines...
 interactive: bash
 azureSandbox: true
 durationInMinutes: 10
-content: /
+content: |
   [!include[](includes/2-working-with-vs-code.md)]

@@ -14,5 +14,5 @@ metadata:
 interactive: bash
 azureSandbox: true
 durationInMinutes: 10
-content: /
+content: |
   [!include[](includes/4-functions-extension-for-vs-code.md)]
