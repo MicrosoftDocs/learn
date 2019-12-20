@@ -16,7 +16,7 @@ abstract: |
   - Use the Azure Security Center dashboard to identify potential security issues
   - Analyze the recommendations made by Security Center
 prerequisites: Basic familiarity with Azure services
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/identify-threats-with-azure-security-center.svg
 levels:
 - beginner
 roles:

@@ -4,11 +4,10 @@ metadata:
   title: Process images with the Computer Vision service
   description: Use the Computer Vision API to analyze images for insights, extract text from images, and generate high-quality thumbnails.  
   ms.date: 09/24/2018
-  author: MaximRouiller 
-  ms.author: marouill
+  author: jasallen
+  ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #ms.learn-contact: luken
 title: Process images with the Computer Vision service
 summary: Use the Computer Vision API to analyze images for insights, extract text from images, and generate high-quality thumbnails. 
 abstract: |

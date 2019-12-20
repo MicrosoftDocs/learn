@@ -1,12 +1,12 @@
-In this section, you join the Tailspin team as they define functional tests for their pipeline. _Functional tests_ verify that each function of the software does what it should.
+In this section, you join the Tailspin team as they define _functional tests_ for their pipeline. Functional tests verify that each function of the software does what it should.
 
-The team defines what a functional test covers, some of the kinds of functional tests that you can run, and then decide on one to add to their pipeline.
+The team first defines what a functional test covers and some types of functional tests that you can run. Then, they decide on the first test that they'll add to their pipeline.
 
 ## Weekly meeting
 
-The team is having their weekly meeting and Andy is demoing the CI/CD pipeline. They watch as a successful build moves through the pipeline, from one stage to another, until the webapp is finally deployed to _Staging_.
+The team is having their weekly meeting and Andy is demoing the release pipeline. They watch as a successful build moves through the pipeline, from one stage to another, until the web app is finally promoted to _Staging_.
 
-**Amita:** I'm so happy with the pipeline. It makes my life much easier. For one thing, I automatically get a release deployed to the test environment. That means I don't have to manually download and install build artifacts on my test servers. That's a big time saver.
+**Amita:** I'm so happy with the pipeline. It makes my life much easier. For one thing, I automatically get a release deployed to the **test** environment. That means I don't have to manually download and install build artifacts on my test servers. That's a big time saver.
 
 Also, the unit tests that Mara and Andy wrote eliminate all the regression bugs before I get the release. That's a major source of frustration gone and I don't spend time finding and documenting them.
 
@@ -32,19 +32,19 @@ _Non-functional tests_ check characteristics like performance and reliability. A
 
 **Tim:** They are, indeed. I need to think about this for a bit. I might want to add some automation to the pipeline myself but I'm not sure yet what I want to do. What kinds of automated tests can I run?
 
-**Mara:** For now, let's focus on functional testing. It's the kind of testing that Amita performs and it sounds like an area we want to improve on.
+**Mara:** For now, let's focus on functional testing. It's the kind of testing that Amita performs and it sounds like an area where we want to improve.
 
 ## What kinds of functional tests can I run?
 
 There are many kinds of functional tests. Each kind varies by the functionality you need to test for and the time (or effort) that's typically required to run it.
 
-Here are some of the more popular kinds of functional tests you can run.
+Here are some of the most commonly used functional tests.
 
 ### Smoke testing
 
-_Smoke testing_ verifies the most basic functionality of your application or service. Smoke tests are often run before running more complete and exhaustive tests. Smoke tests are intended to run quickly.
+_Smoke testing_ verifies the most basic functionality of your application or service. Smoke tests are often run before running more complete and exhaustive tests. Smoke tests should run quickly.
 
-For example, say you're developing a website. Your smoke test might use `curl` to verify that the site is reachable and that fetching the home page produces a 200 (OK) HTTP status. If fetching the home page produces another status code, such as 404 (Not Found) or 500 (Internal Server Error), then you know that the website is fundamentally not working and no further testing is required. From there, you would diagnose the error and restart your tests when the error is fixed.
+For example, say you're developing a website. Your smoke test might use `curl` to verify that the site is reachable and that fetching the home page produces a 200 (OK) HTTP status. If fetching the home page produces another status code, such as 404 (Not Found) or 500 (Internal Server Error), then you know that the website is fundamentally not working and there's no point to running other tests. Instead, you would diagnose the error and restart your tests when it's fixed.
 
 ### Unit testing
 
@@ -52,13 +52,13 @@ You worked with unit tests in the [Run quality tests in your build pipeline usin
 
 In short, _unit testing_ verifies the most fundamental components of your program or library, such as an individual function or method. You specify one or more inputs along with the expected results. The test runner performs each test and checks to see whether the actual and expected results match.
 
-As an example, let's say you have a function that performs an arithmetic operation that includes division. You might specify a few values that you expect your users to enter along with edge-case values such as 0 and -1. If a certain input produces an error or exception, you can verify that the function produces the same error.
+As an example, let's say you have a function that performs an arithmetic operation that includes division. You might specify a few values that you expect your users to enter along with edge-case values such as 0 and -1. If a certain input should produce an error or exception, you can verify that the function does, in fact, produce that error.
 
 The UI tests you'll run later in this module are a form of unit tests.
 
 ### Integration testing
 
-_Integration testing_ verifies that multiple software components work together to form a complete system. For example, an e-commerce system might include a website, a products database, a payment system, and so on. You might write an integration test that adds items to the shopping cart and then checks out the order. Such a test would verify that the web application can connect to the products database and then successfully fulfill the order.
+_Integration testing_ verifies that multiple software components work together to form a complete system. For example, an e-commerce system might include a website, a products database, and a payment system. You might write an integration test that adds items to the shopping cart and then purchases them. The test verifies that the web application can connect to the products database and then successfully fulfill the order.
 
 Combining unit and integration tests helps you create a layered approach to your testing strategy. For example, you might run unit tests on each of your components before running the integration tests. If all unit tests pass, you can move on to the integration test phase with greater confidence.
 
@@ -66,21 +66,21 @@ Combining unit and integration tests helps you create a layered approach to your
 
 A _regression_ occurs when existing behavior changes or breaks when a feature is either added or changed. _Regression testing_ helps determine whether code, configuration, or other changes affect the software's overall behavior.
 
-Regression testing is important because a change in one component can affect the behavior of another. For example, say you optimize a database for write performance. Read performance of that database from another component might drop in ways you did not expect. The regression is the database's drop in read performance.
+Regression testing is important because a change in one component can affect the behavior of another. For example, say you optimize a database for write performance. The read performance of that database, which is handled by another component, might unexpectedly drop. The drop in read performance is a regression.
 
-There are various types of regression testing strategies. These strategies typically vary by the number of tests that are run to verify that a new feature or bug fix doesn't break existing functionality. However, when tests are automated, regression testing might simply involve running all unit and integration tests each time the software undergoes a change.
+There are various types of regression testing strategies. These strategies typically vary by the number of tests you run to verify that a new feature or bug fix doesn't break existing functionality. However, when tests are automated, regression testing might simply involve running all unit and integration tests each time the software undergoes a change.
 
 ### Sanity testing
 
-_Sanity testing_ involves testing each major component of a piece of software to verify whether that software appears to be working and can undergo more thorough testing. You can think of sanity tests as being less thorough than regression or unit tests, but broader than smoke tests.
+_Sanity testing_ involves testing each major component of a piece of software to verify that software appears to be working and can undergo more thorough testing. You can think of sanity tests as being less thorough than regression or unit tests, but broader than smoke tests.
 
-Although sanity testing can be automated, it's often done manually in response to a feature change or a bug fix. For example, when validating a bug fix, a software tester might also verify that other features are working by entering values that a user might enter. If the software appears to be working as expected, it can then go through a more thorough test pass.
+Although sanity testing can be automated, it's often done manually in response to a feature change or a bug fix. For example, when validating a bug fix, a software tester might also verify that other features are working by entering some typical values. If the software appears to be working as expected, it can then go through a more thorough test pass.
 
 ### User interface (UI) testing
 
-_UI testing_ verifies the behavior of an application's user interface. UI tests help verify that the sequence, or order, of user interactions leads to the expected result. They also help verify that interaction methods, such as with the keyboard or mouse, affect the user interface properly. You can run UI tests to verify the behavior of a native Windows, macOS, or Linux application, or to verify that the UI behaves as expected across web browsers.
+_UI testing_ verifies the behavior of an application's user interface. UI tests help verify that the sequence, or order, of user interactions leads to the expected result. They also help verify that input devices, such as the keyboard or mouse, affect the user interface properly. You can run UI tests to verify the behavior of a native Windows, macOS, or Linux application, or to verify that the UI behaves as expected across web browsers.
 
-Although a unit or integration test might verify that the UI _receives_ data correctly, UI testing helps verify that the user interface _appears_ correctly and that the result functions as expected for the user.
+Although a unit or integration test might verify that the UI _receives_ data correctly, UI testing helps verify that the user interface _displays_ correctly and that the result functions as expected for the user.
 
 For example, a UI test might verify that the correct animation appears in response to a button click. A second test might verify that the same animation appears correctly when the window is resized.
 
@@ -90,7 +90,7 @@ In this module, you work with UI tests that are coded by hand. But you can also 
 
 _Usability testing_ is a form of manual testing that verifies an application's behavior from the user's perspective. Usability testing is typically performed by the team who builds the software.
 
-While UI testing focuses on whether a feature behaves as expected, usability testing helps verify that the software is intuitive and meets the user's needs. In other words, usability testing helps verify whether the software is "usable".
+While UI testing focuses on whether a feature behaves as expected, usability testing helps verify that the software is intuitive and meets the user's needs. In other words, usability testing helps verify whether the software is "usable."
 
 For example, say you have a website that includes a link to the user's profile. A UI test can verify that the link is present and brings up the user's profile when clicked. However, if humans cannot easily locate this link, they may become frustrated when they try to access their profile.
 
@@ -110,7 +110,7 @@ Feedback from testers can be direct or indirect. Direct feedback might come in t
 
 ## What does the team choose?
 
-**Tim:** I appreciate all the work Amita does for us, especially when she performs usability testing to bring in the user's perspective. Which of these should we tackle first?
+**Tim:** All of these tests sound important. Which should we tackle first?
 
 **Andy:** We already have working unit tests, and we're not yet ready to perform user acceptance testing. Based on what I hear, I think we should focus on UI testing. Right now, it's the slowest part of our process. Amita, do you agree?
 
@@ -140,7 +140,7 @@ Andy looks at Amita.
 
 ## How do I run functional test in the pipeline?
 
-In Azure Pipelines, you run functional tests just like you run any other process or test. When planning your tests, you might ask:
+In Azure Pipelines, you run functional tests just like you run any other process or test. Ask yourself:
 
 * In which stage will the tests run?
 * On what system will the tests run &mdash; the agent, or on the infrastructure that hosts the application?
@@ -173,3 +173,18 @@ Our existing _Test_ stage includes one job. That job deploys the website to App 
 **Andy:** I'll work with Amita on this one. Amita, let's meet tomorrow morning. I'd like to do a little bit of research before we meet.
 
 **Amita:** Great! See you then.
+
+## Creating a functional test plan
+
+We've just seen the team decide on how they'll implement their first functional tests. If your team is just starting to incorporate functional tests into their pipeline (or even if you're already doing that), remember that you always need a plan.
+
+Many times, when someone asks team members about their performance testing plan, it's common for  them to respond with a list of tools they are going to use. However, a list of tools isn't a plan. You also must work out how the testing environments will be configured, you need to determine the processes to be used, and you need to determine what success or failure looks like.
+
+Make sure your plan:
+
+* Takes the expectations of the business into account.
+* Takes the expectations of the target users into account.
+* Defines the metrics you will use.
+* Defines the KPIs you will use.
+
+Performance testing needs to be part of your planning, right from the start. If you use a story or Kanban board, you might consider having an area near it where you can plan out your testing strategy. As part of the iteration planning, gaps in the testing strategy should be highlighted. It is also important to work out how you will monitor performance once the application has been deployed, and not just measure performance before it's released.

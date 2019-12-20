@@ -1,44 +1,16 @@
-Whether you're an individual, a small business, an enterprise, or a student, you need a subscription to use Azure services. The typical approach is to start with a 12-month free subscription so that you can evaluate Azure services.
+You can purchase Azure directly from Microsoft by signing up on the Azure website or through a Microsoft representative. You can also purchase Azure through a Microsoft partner. Cloud Solution Provider partners offer a range of complete managed cloud solutions for Azure.
 
-With a free Azure account and subscription, you can build, test, and deploy enterprise applications, create custom web and mobile experiences, and gain insights from your data through machine learning and powerful analytics. When the trial period expires, you can convert from the free subscription to Pay-As-You-Go, or continue to use over [25 "always free" services](https://azure.microsoft.com/free/) such as App Service for hosting websites and AI services to translate text and identify faces.
+If you’re new to Azure, you can sign up for a free account on the Azure website to start exploring at no cost to you. Once you’re ready, you can choose to upgrade and start paying for the Azure services you use above the free amounts.
 
-## What is an Azure account?
 
-An _Azure account_ is an identity in either Azure AD, or a directory that is trusted by Azure AD, such as a work or school organization. It holds information such as:
+## What is the Azure free account?
 
-- Name, email, and contact preferences
-- Billing information such as a credit card
+The Azure free account includes free access to popular Azure products for 12 months, $200 USD credit to spend for the first 30 days, and access to more than 25 products that are always free. This is an excellent way for new users to get started and explore. To sign up, you need a phone number, a credit card, and a Microsoft or GitHub account. Credit card information is used for identity verification only. You won’t be charged for any services until you upgrade.
 
-You use an Azure account to sign in to the Azure website and administer or deploy services. Every Azure account is associated with one or more  _subscriptions_.
+## Azure purchasing options
 
-## What is an Azure subscription?
+With flexible purchasing options, you can choose the option that works best for you. Use one of the following three ways to buy Azure: 
 
-An _Azure subscription_ is a logical container used to provision resources in Microsoft Azure. It holds the details of all your resources like virtual machines, databases, and so on. Every Azure subscription is associated with Azure AD. Users and services that access the resources of the subscription first need to authenticate with Azure AD.
-
-### Subscription types
-
-Azure offers free and paid subscription options to suit different needs and requirements. The most commonly used subscriptions are:
-
-- Free
-- Pay-As-You-Go
-- Enterprise Agreement
-- Student
-
-#### Azure free subscription
-
-An Azure free subscription includes a **$200 credit** to spend on any service for the first 30 days, free access to the most popular Azure products for 12 months, and access to more than 25 products that are always free. This approach is an excellent way for new users to get started. To set up a free subscription, you need a phone number, a credit card, and a Microsoft account.
-
-> [!NOTE]
-> Credit card information is used for identity verification only. You won’t be charged for any services until you upgrade.
-
-#### Azure Pay-As-You-Go subscription
-
-A Pay-As-You-Go (PAYG) subscription charges you monthly for the services you used in that billing period. This subscription type is appropriate for a wide range of users, from individuals to small businesses, and many large organizations as well.
-
-#### Azure Enterprise Agreement
-
-An Enterprise Agreement provides flexibility to buy cloud services and software licenses under one agreement, with discounts for new licenses and Software Assurance. It's targeted at enterprise-scale organizations.
-
-#### Azure for Students subscription
-
-An Azure for Students subscription includes **$100 in Azure credits** to be used within the first 12 months plus select free services without requiring a credit card at sign-up. You must verify your student status through your organizational email address.
+- **Azure.com**:  Buying directly through [Azure.com](http://azure.com) is the fastest and easiest way for organizations of all sizes to get started with Azure. You can manage your Azure deployments and usage yourself and get a monthly bill from Microsoft for the services used.  
+- **Microsoft representative**: Buying Azure through a Microsoft representative is intended for large organizations or customers who already work with one. You’ll also manage your Azure deployments and usage yourself and get a monthly bill from Microsoft for the services used.  
+- **Microsoft partner**: If you buy Azure as a managed service through your partner, your partner will provide you with access to Azure, manage your billing, and provide support.

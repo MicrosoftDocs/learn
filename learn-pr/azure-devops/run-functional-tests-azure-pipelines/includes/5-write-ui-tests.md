@@ -1,6 +1,6 @@
 In this section, you help Andy and Amita write Selenium tests that verify the UI behaviors that Amita described.
 
-Although Amita normally runs her tests on Chrome, Firefox, and Edge, you'll set up tests that run on Chrome, Firefox, and Internet Explorer. For learning purposes, we choose these browsers because the Microsoft-hosted agent you'll use comes preconfigured to work with them. It does not yet provide support for Edge.
+Although Amita normally runs her tests on Chrome, Firefox, and Microsoft Edge, you'll set up tests that run on Chrome, Firefox, and Internet Explorer. For learning purposes, we choose these browsers because the Microsoft-hosted agent you'll use comes preconfigured to work with them. It does not yet support Microsoft Edge.
 
 You can checkout [Use a Microsoft-hosted agent](https://docs.microsoft.com/azure/devops/pipelines/agents/hosted?view=azure-devops&azure-portal=true#use-a-microsoft-hosted-agent) to see what kinds of agents Microsoft hosts and their capabilities. In practice, you can install additional software on your agent or provide your own agent that has the software you need preinstalled.
 
@@ -15,7 +15,7 @@ This branch contains the _Space Game_ project that you worked with in previous m
 
     ```bash
     git fetch upstream selenium
-    git checkout selenium
+    git checkout -b selenium upstream/selenium
     ```
 
     Recall that *upstream* refers to the Microsoft GitHub repository. Your project's Git configuration understands the upstream remote, because you set up that relationship when you forked the project from the Microsoft repository and cloned it locally.
@@ -30,9 +30,9 @@ This branch contains the _Space Game_ project that you worked with in previous m
 
 ## Write the unit test code
 
-Amita is impressed and feels a bit excited about writing code to control her web browser. Andy does some research on Selenium ahead of meeting with Amita to write their tests.
+Amita is excited about learning to write code that controls the web browser. 
 
-Amita and Andy sit down to write their Selenium tests. Andy has an empty NUnit project already set up. Throughout the process, they refer to the Selenium documentation, a few online tutorials, and the notes they took when Amita performed the tests manually. (We'll point you to more resources at the end of this module.)
+She and Andy will work together to write the Selenium tests. Andy has an empty NUnit project already set up. Throughout the process, they refer to the Selenium documentation, a few online tutorials, and the notes they took when Amita performed the tests manually. (We'll point you to more resources at the end of this module.)
 
 Let's review the process Andy and Amita use to write their tests. You can follow along by opening *HomePageTest.cs* under the *Tailspin.SpaceGame.Web.UITests* directory in Visual Studio Code.
 
@@ -64,7 +64,7 @@ Here's a diagram that shows the `IWebDriver` interface and a few of the classes 
 
 This diagram shows three of the methods `IWebDriver` provides: `Navigate`, `FindElement`, and `Close`.
 
-The three classes shown here, `ChromeDriver`, `FirefoxDriver`, and `InternetExplorerDriver`, each implement `IWebDriver` and its methods. There are other classes that implement `IWebDriver`, such as `SafariDriver`. Each driver class can control the web browser it represents.
+The three classes shown here, `ChromeDriver`, `FirefoxDriver`, and `InternetExplorerDriver`, each implement `IWebDriver` and its methods. There are also other classes that implement `IWebDriver`, such as `SafariDriver`. Each driver class can control the web browser it represents.
 
 Andy adds a member variable named `driver` to the `HomePageTest` class, like this:
 
@@ -156,7 +156,7 @@ switch(browser)
 1. Finding elements on the page, such as the links we click and the modal windows we expect to appear.
 1. Clicking elements on the page, such as the links that reveal the modal windows and the button that closes each modal.
 
-Let's write two helper methods, one that accomplishes each of these. Let's start with the method that finds an element on the page.
+Let's write two helper methods, one for each action. Let's start with the method that finds an element on the page.
 
 #### Write the FindElement helper method
 
@@ -192,7 +192,7 @@ private IWebElement FindElement(By locator, IWebElement parent = null, int timeo
 
 #### Write the ClickElement helper method
 
-**Andy:** Next, let's write a helper method that clicks links. Selenium provides a few ways to do that. From my research, we can use the `IJavaScriptExecutor` interface to click links by using JavaScript. This technique works well across web browsers because it can click links without the need to first scroll the link into view.
+**Andy:** Next, let's write a helper method that clicks links. Selenium provides a few ways to do that. One of them is the `IJavaScriptExecutor` interface. With it, we can programmatically click links using JavaScript. This approach works well because it can click links without first scrolling them into view.
 
 `ChromeDriver`, `FirefoxDriver`, and `InternetExplorerDriver` each implement `IJavaScriptExecutor`. We need to cast the driver to this interface and then call `ExecuteScript` to run the JavaScript `click()` method on the underlying HTML object.
 
@@ -214,7 +214,7 @@ private void ClickElement(IWebElement element)
 
 ### Define the test method
 
-**Andy:** Now we're ready to define the test method. Based on the manual tests we ran earlier, let's call this method `ClickLinkByXPath_ShouldDisplayModalByXPath`. It's common for test methods to have descriptive names that define precisely what the test accomplishes. Here, we want to click a link, given its XPath, and verify that the proper modal window appears, also by its XPath.
+**Andy:** Now we're ready to define the test method. Based on the manual tests we ran earlier, let's call this method `ClickLinkByXPath_ShouldDisplayModalByXPath`. It's a good practice for test methods to have descriptive names that define precisely what the test accomplishes. Here, we want to click a link, defined by its XPath, and verify that the proper modal window appears, also by its XPath.
 
 Andy adds starter code for their test method, like this:
 
@@ -233,9 +233,9 @@ public void ClickLinkByXPath_ShouldDisplayModalByXPath(string linkXPath, string 
 1. Close the modal.
 1. Verify that the modal was displayed successfully.
 
-**Andy:** Great. We'll also need to handle a few other things, such as ignoring the test if the driver could not be loaded and closing the modal only if the modal was successfully displayed.
+**Andy:** Great. We'll also need to handle a few other things, such as ignoring the test if the driver couldn't be loaded and closing the modal only if the modal was successfully displayed.
 
-After refilling their coffee mugs, Andy and Amita add code to their test method. They use the helper methods they wrote to handle locating page elements and clicking links and buttons. Here is the resulting method:
+After refilling their coffee mugs, Andy and Amita add code to their test method. They use the helper methods they wrote to handle locating page elements and clicking links and buttons. Here's the result:
 
 ```cs
 public void ClickLinkByXPath_ShouldDisplayModalByXPath(string linkXPath, string modalXPath)
@@ -279,7 +279,7 @@ public void ClickLinkByXPath_ShouldDisplayModalByXPath(string linkXPath, string 
 
 ### Define test case data
 
-**Andy:** In NUnit, there are a few ways to provide data to your tests. Here, we can use the `TestCase` attribute. This attribute takes arguments that it later passes back to the test method when it runs. We can have multiple `TestCase` attributes that each test a different feature of our app. Each `TestCase` attribute produces a test case that's included in the report.
+**Andy:** In NUnit, there are a few ways to provide data to your tests. Here, we can use the `TestCase` attribute. This attribute takes arguments that it later passes back to the test method when it runs. We can have multiple `TestCase` attributes that each test a different feature of our app. Each `TestCase` attribute produces a test case that's included in the report that appears at the end of a pipeline run.
 
 Andy adds these `TestCase` attributes to the test method. These attributes describe the **Download game** button, one of the game screens, and the top player on the leaderboard. Each attribute specifies two XPath expressions: one for the link to click and one for the corresponding modal window.
 
@@ -302,8 +302,8 @@ public void ClickLinkByXPath_ShouldDisplayModalByXPath(string linkXPath, string 
 ...
 ```
 
-**Andy:** For each `TestCase` attribute, the first parameter is the XPath to the link to click on. The second parameter is the XPath to the modal window that we expect to appear. See how these parameters correspond to the two string arguments in our test method.
+**Andy:** For each `TestCase` attribute, the first parameter is the XPath to the link to click on. The second parameter is the XPath to the modal window that we expect to appear. You can see how these parameters correspond to the two string arguments in our test method.
 
-**Amita:** I'm able to follow what you're doing. With some practice, I think I'll be able to add my own tests. So, when can we see these tests running in our pipeline?
+**Amita:** I do see that. With some practice, I think I'll be able to add my own tests. So, when can we see these tests running in our pipeline?
 
-**Andy:** Before I push changes through the pipeline, I first verify that the code complies and runs locally. Only after I get everything working as I expect do I commit and push my changes to GitHub and see the change move through the pipeline. Let's do that next.
+**Andy:** Before we push changes through the pipeline, let's first verify that the code compiles and runs locally. We'll only commit and push changes to GitHub and see them move through the pipeline after we verify that everything works. Let's run the tests locally next.

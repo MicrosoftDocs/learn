@@ -8,7 +8,6 @@ metadata:
   ms.author: chris.testaoneill
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #ms.learn-contact: smmark
 title: Import data into Azure SQL Data Warehouse by using PolyBase
 summary: Load petabytes of data into an Azure SQL Data Warehouse database in minutes by using PolyBase.
 abstract: | 

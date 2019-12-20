@@ -1,20 +1,19 @@
 ### YamlMime:Module
 uid: learn.secure-access-azure-ad-multi-factor-authentication
 metadata:
-  title: Secure your Azure resources with conditional access
-  description: There's a tradeoff between security and ease-of-access. The conditional-access feature of Azure Active Directory helps you implement a good balance between the two. It lets you require compensating controls like Azure Multi-Factor Authentication (MFA) for added security in specific circumstances. Here, you will see how to implement a conditional-access policy using Azure Active Directory.
+  title: Secure your Azure resources with Conditional Access
+  description: Learn to use Azure Active Directory to implement a secure Conditional Access policy with compensating controls such as Azure Multi-Factor Authentication.
   ms.date: 04/15/2019
   author: MicrosoftGuyJFlo 
   ms.author: joflore
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #ms.learn-contact: smmark
-title: Secure your Azure resources with conditional access
-summary: There's a tradeoff between security and ease-of-access. The conditional-access feature of Azure Active Directory helps you implement a good balance between the two. Learn how to implement a conditional-access policy using Azure Active Directory.
+title: Secure your Azure resources with Conditional Access
+summary: There's a tradeoff between security and ease-of-access. The Conditional Access feature of Azure Active Directory helps you implement a good balance between the two. Learn how to implement a Conditional Access policy using Azure Active Directory.
 abstract: |
   In this module, you will:
   - Create a test user and a user group
-  - Enable a conditional access policy that requires Multi-Factor Authentication (MFA)
+  - Enable a Conditional Access policy that requires Multi-Factor Authentication (MFA)
 prerequisites: |
   - Knowledge of basic Azure concepts, such as resource groups and subscriptions
 iconUrl: /learn/achievements/secure-azure-resources-with-conditional-access.svg

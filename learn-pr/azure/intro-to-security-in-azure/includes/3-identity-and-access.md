@@ -1,4 +1,4 @@
-Network perimeters, firewalls, and physical access controls used to be the primary protection for corporate data. But network perimeters have become increasingly porous with the explosion of bring your own device (BYOD), mobile apps, and cloud applications. 
+Network perimeters, firewalls, and physical access controls used to be the primary protection for corporate data. But network perimeters have become increasingly porous with the explosion of bring your own device (BYOD), mobile apps, and cloud applications.
 
 Identity has become the new primary security boundary. Therefore, proper authentication and assignment of privileges is critical to maintaining control of your data.
 
@@ -12,10 +12,10 @@ Two fundamental concepts that need to be understood when talking about identity 
 
 - *Authorization* is the process of establishing what level of access an authenticated person or service has. It specifies what data they're allowed to access and what they can do with it.
 
-> [!NOTE] 
+> [!NOTE]
 > Authentication is sometimes shortened to *AuthN*, and authorization is sometimes shortened to *AuthZ*.
 
-Azure provides services to manage both authentication and authorization through Azure Active Directory (Azure AD). 
+Azure provides services to manage both authentication and authorization through Azure Active Directory (Azure AD).
 
 ## What is Azure Active Directory?
 
@@ -44,7 +44,7 @@ With single sign-on (SSO), users need to remember only one ID and one password. 
   :::column:::
     ![A thumbprint representing Azure Active Directory](../media/3-sso-with-azure-ad.png)
   :::column-end:::
-	:::column span="3":::
+  :::column span="3":::
 **SSO with Azure Active Directory**
 
 By leveraging Azure AD for SSO you'll also have the ability to combine multiple data sources into an intelligent security graph. This security graph enables the ability to provide threat analysis and real-time identity protection to all accounts in Azure AD, including accounts that are synchronized from your on-premises AD. By using a centralized identity provider, you'll have centralized the security controls, reporting, alerting, and administration of your identity infrastructure.
@@ -65,7 +65,7 @@ Multi-factor authentication (MFA) provides additional security for your identiti
 
 Using MFA increases security of your identity by limiting the impact of credential exposure. An attacker who has a user's password would also need to have possession of their phone or their face in order to fully authenticate. Authentication with only a single factor verified is insufficient, and the attacker would be unable to use those credentials to authenticate. The benefits this brings to security are huge, and we can't emphasize enough the importance of enabling MFA wherever possible.
 
-Azure AD has MFA capabilities built in and will integrate with other third-party MFA providers. It's provided free of charge to any user who has the Global Administrator role in Azure AD, because these are highly sensitive accounts. All other accounts can have MFA enabled by purchasing licenses with this capability &mdash; as well as assigning a license to the account.
+Azure AD has MFA capabilities built in and will integrate with other third-party MFA providers. MFA should be used for users in the Global Administrator role in Azure AD, because these are highly sensitive accounts. All other accounts can have MFA enabled.
 
 For Contoso Shipping, you decide to enable MFA any time a user is signing in from a non-domain-connected computer &mdash; which includes the mobile apps your drivers use.
 
@@ -79,14 +79,14 @@ Azure AD addresses this problem through two methods: service principals and mana
   :::column:::
     ![Image representing various roles](../media/3-service-principals.png)
   :::column-end:::
-	:::column span="3":::
+  :::column span="3":::
 **Service principals**
 
 To understand service principals, it's useful to first understand the words **identity** and **principal**, because of how they are used in the identity management world.
 
 An **identity** is just a thing that can be authenticated. Obviously, this includes users with a user name and password, but it can also include applications or other servers, which might authenticate with secret keys or certificates.
 
-A **principal** is an identity acting with certain roles or claims. Usually, it is not useful to consider identity and principal separately, but think of using `sudo` on a Bash prompt in Linux or on Windows using "run as Administrator." In both those cases, you are still logged in as the same identity as before, but you've changed the role under which you are executing. Groups are often also considered principals because they can have rights assigned.
+A **principal** is an identity acting with certain roles or claims. Usually, it is not useful to consider identity and principal separately, but think of using 'sudo' on a Bash prompt in Linux or on Windows using "run as Administrator." In both those cases, you are still logged in as the same identity as before, but you've changed the role under which you are executing. Groups are often also considered principals because they can have rights assigned.
 
 A **service principal** is an identity that is used by a service or application. And like other identities, it can be assigned roles.
   :::column-end:::
@@ -96,10 +96,10 @@ A **service principal** is an identity that is used by a service or application.
   :::column:::
     ![Image representing managed identities](../media/3-managed-service-identities.png)
   :::column-end:::
-	:::column span="3":::
+  :::column span="3":::
 **Managed identities for Azure services**
 
-The creation of service principals can be a tedious process, and there are a lot of touch points that can make maintaining them difficult. Managed identities for Azure services are much easier and will do most of the work for you. 
+The creation of service principals can be a tedious process, and there are a lot of touch points that can make maintaining them difficult. Managed identities for Azure services are much easier and will do most of the work for you.
 
 A managed identity can be instantly created for any Azure service that supports it&mdash;and the list is constantly growing. When you create a managed identity for a service, you are creating an account on your organization's Active Directory (a specific organization's Active Directory instance is known as an "Active Directory Tenant"). The Azure infrastructure will automatically take care of authenticating the service and managing the account. You can then use that account like any other Azure AD account, including securely letting the authenticated service access other Azure resources.
   :::column-end:::

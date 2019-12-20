@@ -25,4 +25,4 @@ To avoid additional costs in your Azure account, delete the resource group you c
 Check out the following documentation links to learn more about using Azure Notebooks.
 
 - [Azure Notebooks quickstart](https://docs.microsoft.com/azure/notebooks/quickstart-sign-in-azure-notebooks)
-- [Explore HyperDrive with a Jupyter Notebook](https://github.com/Azure/MachineLearningNotebooks/blob/master/how-to-use-azureml/training-with-deep-learning/train-hyperparameter-tune-deploy-with-tensorflow/train-hyperparameter-tune-deploy-with-tensorflow.ipynb)
+- [How to Tune Hyperparameters](https://docs.microsoft.com/azure/machine-learning/service/how-to-tune-hyperparameters)

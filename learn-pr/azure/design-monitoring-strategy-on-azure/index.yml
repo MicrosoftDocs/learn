@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.design-monitoring-strategy-on-azure
+metadata:
+  title: Design a holistic monitoring strategy on Azure
+  description: Use monitoring services on Azure to bring operational excellence to your applications and infrastructure.
+  ms.date: 12/03/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Design a holistic monitoring strategy on Azure
+summary: Use monitoring services on Azure to bring operational excellence to your applications and infrastructure.
+abstract: | 
+  In this module, you will:
+  - Select the appropriate monitoring solution based on use case
+  - Integrate monitoring solutions to create a unified monitoring strategy
+prerequisites: | 
+  - Basic knowledge of Azure services
+  - Basic knowledge of operational concepts, such as monitoring, logging, and alerting
+iconUrl: /learn/achievements/design-monitoring-strategy-on-azure.svg
+levels:
+- intermediate
+roles:
+- solution-architect
+products:
+- azure
+- azure-monitor
+units:
+- learn.design-monitoring-strategy-on-azure.1-introduction
+- learn.design-monitoring-strategy-on-azure.2-continuous-monitoring
+- learn.design-monitoring-strategy-on-azure.3-azure-monitoring-options
+- learn.design-monitoring-strategy-on-azure.4-security-center
+- learn.design-monitoring-strategy-on-azure.5-application-insights
+- learn.design-monitoring-strategy-on-azure.6-sentinel
+- learn.design-monitoring-strategy-on-azure.7-unifying-monitoring-solutions
+- learn.design-monitoring-strategy-on-azure.8-summary
+badge:
+  uid: learn.design-monitoring-strategy-on-azure.badge

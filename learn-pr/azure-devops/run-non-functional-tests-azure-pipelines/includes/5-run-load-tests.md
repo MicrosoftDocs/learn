@@ -1,4 +1,4 @@
-In this section, you run the test plan that Mara and Tim created. The test plan executes load testing with Apache JMeter.
+In this section, you run the test plan that Mara and Tim created in the release pipeline. The test plan uses Apache JMeter to run load tests.
 
 Here's how you run the tests:
 
@@ -18,7 +18,7 @@ This branch contains the _Space Game_ project that you worked with in previous m
 
     ```bash
     git fetch upstream jmeter
-    git checkout jmeter
+    git checkout -b jmeter upstream/jmeter
     ```
 
     Recall that *upstream* refers to the Microsoft GitHub repository. Your project's Git configuration understands the upstream remote, because you set up that relationship when you forked the project from the Microsoft repository and cloned it locally.
@@ -35,7 +35,7 @@ This branch contains the _Space Game_ project that you worked with in previous m
 
 ## Add the STAGING_URL variable to Azure Pipelines
 
-Tim's original test plan provides a hard-coded value for the hostname of the _Space Game_ website that's running in their _Staging_ environment.
+Tim's original test plan provides a hard-coded value for the hostname of the _Space Game_ website that's running in their **staging** environment.
 
 To make the test plan more flexible, your version uses a JMeter property. Think of a property as a variable that you can set from the command line.
 
@@ -43,24 +43,24 @@ Here's how the `hostname` variable is defined in JMeter:
 
 ![Setting the hostname variable in Apache JMeter](../media/5-jmeter-hostname-variable.png)
 
-Here's how the `hostname` variable uses the [__P](http://jmeter.apache.org/usermanual/functions.html#__P?azure-portal=true) function to read the `hostname` variable.
+Here's how the `hostname` variable uses the [__P](http://jmeter.apache.org/usermanual/functions.html?azure-portal=true#__P) function to read the `hostname` variable.
 
 ![Reading the hostname variable in Apache JMeter](../media/5-jmeter-httprequest-server-name.png)
 
-The corresponding test plan file, *LoadTest.jmx* specifies and uses this variable to set the hostname.
+The corresponding test plan file, *LoadTest.jmx* specifies and uses this variable to set the host name.
 
 When you run JMeter from the command line, you use the `-J` argument to set the `hostname` property. Here's an example:
 
 ```bash
-apache-jmeter-5.1.1/bin/./jmeter -n -t LoadTest.jmx -o Results.xml -Jhostname=tailspin-space-game-web-staging-1234.azurewebsites.net
+apache-jmeter-5.2/bin/./jmeter -n -t LoadTest.jmx -o Results.xml -Jhostname=tailspin-space-game-web-staging-1234.azurewebsites.net
 ```
 
-Here, you set the `STAGING_HOSTNAME` variable in Azure Pipelines. This variable points to your site's hostname that's running on App Service for your _Staging_ environment.
+Here, you set the `STAGING_HOSTNAME` variable in Azure Pipelines. This variable points to your site's host name that's running on App Service for your **staging** environment.
 
 When the agent runs, this variable is automatically exported to the agent as an environment variable. Therefore, your pipeline configuration can run JMeter like this:
 
 ```bash
-apache-jmeter-5.1.1/bin/./jmeter -n -t LoadTest.jmx -o Results.xml -Jhostname=$(STAGING_HOSTNAME)
+apache-jmeter-5.2/bin/./jmeter -n -t LoadTest.jmx -o Results.xml -Jhostname=$(STAGING_HOSTNAME)
 ```
 
 Let's add the pipeline variable now, before you update your pipeline configuration. To do so:
@@ -69,7 +69,7 @@ Let's add the pipeline variable now, before you update your pipeline configurati
 1. Under **Pipelines**, select **Library**.
 1. Select the **Release** variable group.
 1. Under **Variables**, select **+ Add**.
-1. Enter **STAGING_HOSTNAME** as the name of your variable. Enter the URL of the App Service instance that corresponds do your _Staging_ environment, such as **tailspin-space-game-web-dev-1234.azurewebsites.net**, as its value.
+1. Enter **STAGING_HOSTNAME** as the name of your variable. Enter the URL of the App Service instance that corresponds to your **staging** environment, such as **tailspin-space-game-web-dev-1234.azurewebsites.net**, as its value.
 
     > [!IMPORTANT]
     > Be sure not to include the HTTP or HTTPS protocol, such as **http://**, in your value. JMeter provides the protocol when the tests run.
@@ -88,7 +88,7 @@ In this section, you modify the pipeline to run your load tests during the _Stag
     > [!TIP]
     > You can replace the entire file or just update the part that's highlighted.
 
-    [!code-yml[](code/5-azure-pipelines.yml?highlight=133-154)]
+    [!code-yml[](code/5-azure-pipelines.yml?highlight=133-155)]
 
     To summarize the changes:
 
@@ -110,7 +110,7 @@ In this section, you modify the pipeline to run your load tests during the _Stag
 
 ## Watch Azure Pipelines run the tests
 
-Here you watch the pipeline run, including the load tests, during _Staging_.
+Here you watch the pipeline run, including the load tests that run in _Staging_.
 
 1. In Azure Pipelines, go to the build and trace the build as it runs.
 
@@ -148,7 +148,7 @@ Here you watch the pipeline run, including the load tests, during _Staging_.
     ![The test report showing two successful test cases](../media/5-tests-junit-details.png)
 
 > [!NOTE]
-> Just remember that you're using the **B1** App Service plan, which runs on the **Basic** tier. This plan is intended for apps that have lower traffic requirements, such as a test environment. Therefore, the performance of your website may be less than you'd expect. In practice, you would choose a plan for the _Staging_ environment that more closely matches your production environment. For example, the **Standard** and **Premium** plans are for production workloads and run on dedicated virtual machine instances.
+> Just remember that you're using the **B1** App Service plan, which runs on the **Basic** tier. This plan is intended for apps that have lower traffic requirements, such as a test environment. Therefore, the performance of your website may be less than you'd expect. In practice, you would choose a plan for the **staging** environment that more closely matches your production environment. For example, the **Standard** and **Premium** plans are for production workloads and run on dedicated virtual machine instances.
 
 **Tim:** Mara, I don't need to tell you this, but at first I really resisted the changes you proposed. I feared losing control over my production environment. But even with all these changes, I still have control. Plus, we now get load testing earlier in the process. In the past, I waited until just before we released because the process was time-consuming. Now, we can continuously monitor how our websites perform. If performance drops, we know exactly which change caused it.
 

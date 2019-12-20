@@ -16,7 +16,7 @@ The exercise also runs a client app that simulates a number of users issuing POS
 
 1. Choose **Create a resource**, select **Web**, and then click **Web App**.
 
-    ![Screenshot of the New blade in the Azure portal showing the Web options available in the Azure Marketplace](../media/7-search-web-app-annotated.png)
+    ![Screenshot of the New pane in the Azure portal showing the Web options available in the Azure Marketplace](../media/7-search-web-app-annotated.png)
 
 1. Specify the values in the following table for the properties of the web app.
 
@@ -150,7 +150,7 @@ The exercise also runs a client app that simulates a number of users issuing POS
 
 1. While the client app is running, switch back to the Azure portal showing the autoscale settings for the web app, and click **Run history**. Under **show data for last**, click **1 hour**. Initially, the chart will be empty as it will take several minutes for autoscaling to kick in.
 
-1. While you're waiting for autoscaling events to occur, go to the blade for your web service (not the service plan), and under **Monitoring**, click **Metrics**.
+1. While you're waiting for autoscaling events to occur, go to the pane for your web service (not the service plan), and under **Monitoring**, click **Metrics**.
 
 1. Add the following metrics to the chart, set the time range to **Last 30 minutes**, and then pin the chart to the current dashboard:
 

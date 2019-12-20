@@ -20,7 +20,7 @@ Let's start by creating the problematic infrastructure, which includes a configu
     az group create --name $rg --location <location>
     ```
 
-1. In Azure Cloud Shell, run this command to create the virtual network **MyVNet1** and the subnet **FrontendSubnet**.
+1. In Azure Cloud Shell, run this command to create the virtual network **MyVNet1** and the subnet **FrontendSubnet**.
 
     ```azurecli
     az network vnet create \

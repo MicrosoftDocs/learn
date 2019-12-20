@@ -42,14 +42,14 @@ Make sure to substitute _ for value stored in the variable `daysUntilExpiration`
 **Rule 3.**  If the user's subscription will expire in one day, output the message:
 
 ```output
-Your subscription exires within a day!
+Your subscription expires within a day!
 Renew now and save 20%!
 ```
 
 **Rule 4.**  If the user's subscription has expired, output the message:
 
 ```output
-Your subsciption has expired.
+Your subscription has expired.
 ```
 
 **Rule 5.** If the user's subscription doesn't expire in 10 days or less, output nothing.

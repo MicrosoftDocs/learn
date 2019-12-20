@@ -6,21 +6,17 @@ A Device Set in IoT Central is a group of devices that match one Device Template
 
 1. Select your device template, and there should be a default device set, ending in **All devices**. Click this device set.
 
-1. Leave, or edit, the device set name, and verify the template (**RefrigeratedTruck 1.0.0**):
+1. Verify the template (**RefrigeratedTruck 1.0.0**):
 
-    ![Screenshot showing how to create a new Device Set, called "All refrigerated trucks"](../media/refrigerated-trucks-deviceset.png)
-
-1. Click **Save**.
-
-1. Click  **Dashboard** on the bar, click **Edit**, then click **Map** in the library of options. Give the map a title, such as "Delivery Map". The **Location** entry should just have the one option (**Location**). And select one of the three states to be displayed, say **Truck state**.
+1. Click  **Dashboard** on the bar (to the right of **Configuration**), click **Edit**, then click **Map** in the library of options. Give the map a title, such as "Delivery Map". The **Location** entry should just have the one option (**Location**). And select one of the three states to be displayed, say **Truck state**.
 
 1. Click **Save**.
 
-1. Click **Grid** in the library options, name it something like "Trucks", and add **Truck ID** and **Optimal temperature** to the columns to be displayed. And again, click **Save**.
+1. Click **Grid** in the library options, name it something like "Trucks", and add **Truck ID** and **Optimal temperature** to the columns to be displayed. Close the **Show Columns** dialog, and click **Save**.
 
 1. Click **Done** to save your device set dashboard.
 
-1. You may need to zoom out a bit on your Delivery Map; you should get a map with five trucks at base.
+1. You may need to zoom and scroll a bit on your Delivery Map; you should get a map with five trucks at base.
 
     ![Screenshot showing the Device Set dashboard, with a map showing the initial location of the five trucks at the base, and a table of the truck IDs and optimal temperatures](../media/refrigerated-trucks-deviceset-base.png)
 

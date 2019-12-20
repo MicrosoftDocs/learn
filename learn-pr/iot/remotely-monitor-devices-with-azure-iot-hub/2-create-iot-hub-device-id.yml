@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.iot.remotely-monitor-and-control-devices-with-azure-iot-hub.create-iot-hub-device-id
 metadata:
-  title: Exercise - Create an Azure IoT Hub, and a device ID
+  title: Exercise - Create an Azure IoT Hub, and a device ID, using the Microsoft Azure portal
   description: Describes the process of creating a new IoT Hub, a IoT Hub device identity, and obtaining the connection strings needed for the coding units.
   ms.date: 10/01/2019
-  author: PeterTurcan
+  author: olivierbloch
   ms.author: Olivier.Bloch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   zone_pivot_groups: dev-lang-csharp-node
-title: Exercise - Create an Azure IoT Hub, and a device ID
+title: Exercise - Create an Azure IoT Hub, and a device ID, using the Microsoft Azure portal
 azureSandbox: true
 durationInMinutes: 10
 content: |
@@ -37,10 +37,10 @@ quiz:
     choices:  
     - content: 'Primary Key'
       isCorrect: false
-      explanation: A primary key is part of a connection string, but these exact words do not appear.
+      explanation: A primary key is part of a connection string, but these exact words don't appear.
     - content: 'SharedAccessKey'
       isCorrect: false
-      explanation: This term does appear in connection strings, but does not start the string.  
+      explanation: This term does appear in connection strings, but doesn't start the string.  
     - content: 'HostName'
       isCorrect: true
       explanation: In our scenario, the host name will first reference your custom IoT Hub.

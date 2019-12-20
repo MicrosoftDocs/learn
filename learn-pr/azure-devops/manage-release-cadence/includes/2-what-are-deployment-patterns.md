@@ -4,13 +4,13 @@ In this section, you'll learn about some of the more common deployment patterns.
 
 ## Morning meeting
 
-The Tailspin team is feeling good. Their pipeline has really sped up their process. The team has a development environment where they can integrate the webapp with a database. Both Tim and Amita are happy about having automated tests that make their jobs easier. In general, they're seeing fewer delays and fewer bugs. But there is, as always, a problem. Let's drop in on their team meeting, where Tim is talking.
+The Tailspin team is feeling good. Their pipeline has really sped up their process. The team has a development environment where they can integrate the web app with a database. Both Tim and Amita are happy about having automated tests that make their jobs easier. In general, they're seeing fewer delays and fewer bugs. But there is, as always, a problem. Let's drop in on their team meeting, where Tim is talking.
 
 **Tim:** It's so hard to keep everyone happy. Irwin thinks it takes too long to release new features. I can't do anything until management approves the release and, right now, there's no smooth way to roll it out once they give the okay. Not only does it take a long time but it's messy, it's manual, and there's down time. The whole process can take five days. I know that's too long but what am I supposed to do? Maybe if I just drink more coffee the solution will come to me.
 
 **Andy:** Coffee is essential to all effective problem solving, no doubt. I also think that what we're talking about is called a *deployment pattern*.
 
-A deployment pattern is an automated way to do the cut-over, where we move the software from the final testing stage to live production. Picking the right pattern definitely addresses your problems, like minimizing down time. Another advantage is that a deployment pattern would give us a chance to run tests that should really happen in production.
+A deployment pattern is an automated way to do the cut-over, where we move the software from the final pre-production stage to live production. Picking the right pattern would definitely help you, like by minimizing downtime. Another advantage is that a deployment pattern would give us a chance to run tests that should really happen in production.
 
 Here are the possibilities for us to consider:
 
@@ -39,15 +39,15 @@ A _canary release_ is a way to identify potential problems as soon as possible w
 
 ![Diagram of load balancer sending some traffic to a canary version](../media/2-canary-deployment.png)
 
-We would monitor what happens when we release the the feature. If the canary release has problems, we can apply a fix. After the canary release is known to be stable, we can move it to the actual production environment.
+We would monitor what happens when we release the feature. If the canary release has problems, we can apply a fix. After the canary release is known to be stable, we can move it to the actual production environment.
 
 ## Feature toggles
 
-_Feature toggles_ let us "flip a switch” at runtime. We can deploy new software without exposing any other new or changed functionality to our users. Mara and I would build new features behind a toggle. When a release occurs, the feature is “off” so it's not impacting the production software. Depending on how we configure the toggle, we can flip the switch to "on" and expose it how we want.
+_Feature toggles_ let us "flip a switch" at runtime. We can deploy new software without exposing any other new or changed functionality to our users. Mara and I would build new features behind a toggle. When a release occurs, the feature is "off" so it's not impacting the production software. Depending on how we configure the toggle, we can flip the switch to "on" and expose it how we want.
 
 ![Diagram of coded if statement for on or off feature](../media/2-feature-toggles.png)
 
-For example, we could expose it to a small, select number of users to see how they react. We could expose it to a random sample of users. We could simply let it go live to everyone. Also, I'm not sure if this isn't more of a convenience for Mara and me. The big advantage to feature toggles is that it helps us avoid too much branching. Merging branches can be painful.
+For example, we could expose it to a small number of users first to see how they react. We could expose it to a random sample of users. We could simply let it go live to everyone. Although, I'm not sure if this isn't more of a convenience for Mara and me. The big advantage to feature toggles is that it helps us avoid too much branching. Merging branches can be painful.
 
 ## Dark launches
 
@@ -59,7 +59,7 @@ Those users don't know they're being used as test users and we wouldn't even hig
 
 ## A/B testing
 
-_A/B testing_ compares two versions of a webpage or app against each other to determine which one performs better. A/B testing is like an experiment we would run.
+_A/B testing_ compares two versions of a web page or app against each other to determine which one performs better. A/B testing is like an experiment we would run.
 
 ![Diagram of two apps and the analytics](../media/2-a-b-testing.png)
 
@@ -93,7 +93,7 @@ So the question is, how do we do this with our pipeline?
 
 **Andy:** Since we're using Azure App Service, we can take advantage of what are called *deployment slots*. Deployment slots are running apps that have their own host names.
 
-I know we're not yet ready to deploy the _Space Game_ website to production. But as a test, we can add a deployment slot to our _Staging_ environment.
+I know we're not yet ready to deploy the _Space Game_ website to production as part of the automated pipeline. But as a test, we can add a deployment slot to our **staging** environment.
 
 Instead of setting up a load balancer or a router, we can simply add a second slot to the App Service instance we use in our existing _Staging_ environment. We can call the primary slot *blue* and the secondary slot *green*.
 

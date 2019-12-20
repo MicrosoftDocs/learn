@@ -14,7 +14,9 @@ To do this, you:
 
 ## Add a user to Azure DevOps
 
-To complete this module, you need your own [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true). In this module, you connect to your Azure subscription from Azure Pipelines. To simplify the process, you need to sign in to both your Azure subscription and your Azure DevOps organization under the same Microsoft account.
+To complete this module, you need your own [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true). You can get started with Azure for free.
+
+Although you don't need an Azure subscription to work with Azure DevOps, here you'll use Azure DevOps to deploy to Azure resources that exist in your Azure subscription. To simplify the process, you need to sign in to both your Azure subscription and your Azure DevOps organization under the same Microsoft account.
 
 If you use different Microsoft accounts to sign into Azure and Azure DevOps, add a user to your DevOps organization under the Microsoft account you use to sign in to Azure. [Add users to your organization or project](https://docs.microsoft.com/azure/devops/organizations/accounts/add-organization-users?view=azure-devops&tabs=browser&azure-portal=true) explains how to add a user. When you add the user, choose the **Basic** access level.
 
@@ -28,7 +30,7 @@ The modules in this learning path form a progression, where you follow the Tails
 
 ### Run the template
 
-1. Run a template that sets up everything for you in your Azure DevOps organization.
+Run a template that sets up everything for you in your Azure DevOps organization.
 
 > [!div class="nextstepaction"]
 > [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?name=manage-release-cadence&azure-portal=true)
@@ -47,7 +49,9 @@ From the Azure DevOps Demo Generator site, perform these steps to run the templa
 1. Select **Navigate to project** to go to your project in Azure DevOps.
 
 > [!IMPORTANT]
-> The [Clean up your Azure DevOps environment](/learn/modules/manage-release-cadence/5-clean-up-environment?azure-portal=true) page in this module contains important cleanup steps. Cleaning up helps ensure that you don't run out of free build minutes. Be sure to perform the cleanup steps even if you don't complete this module.
+> The [Clean up your Azure DevOps environment](/learn/modules/manage-release-cadence/6-clean-up-environment?azure-portal=true) page in this module contains important cleanup steps. Cleaning up helps ensure that you don't run out of free build minutes. Be sure to perform the cleanup steps even if you don't complete this module.
+
+[!include[](../../shared/includes/project-visibility.md)]
 
 ## Move the work item to Doing
 
@@ -214,7 +218,7 @@ Here, you create the App Service instances for the three stages you'll deploy to
     ![The default home page on Azure App Service](../../shared/media/app-service-default.png)
 
 > [!IMPORTANT]
-> Remember, the [Clean up your Azure DevOps environment](/learn/modules/manage-release-cadence/5-clean-up-environment?azure-portal=true) page in this module contains important cleanup steps. Cleaning up helps ensure that you're not charged for Azure resources after you complete this module. Be sure to perform the cleanup steps even if you don't complete this module.
+> Remember, the [Clean up your Azure DevOps environment](/learn/modules/manage-release-cadence/6-clean-up-environment?azure-portal=true) page in this module contains important cleanup steps. Cleaning up helps ensure that you're not charged for Azure resources after you complete this module. Be sure to perform the cleanup steps even if you don't complete this module.
 
 ## Create pipeline variables in Azure Pipelines
 
@@ -260,21 +264,20 @@ Here, you create a service connection that enables Azure Pipelines to access you
 1. In Azure DevOps, go to your **Space Game - web - Deployment patterns** project.
 1. Select **Project settings** from the bottom corner of the page.
 1. Under **Pipelines**, select **Service connections**.
-1. Select **+ New service connection** and then choose **Azure Resource Manager**.
-
-    The **Add an Azure Resource Manager service connection** dialog appears.
-1. From the dialog, ensure **Service Principal Authentication** is selected. Then fill in these fields:
+1. Select **New service connection**, then choose **Azure Resource Manager**, then select **Next**.
+1. Select **Service principal (automatic)**, then select **Next**.
+1. Fill in these fields:
 
     | Field               | Value                                        |
     |---------------------|----------------------------------------------|
-    | **Connection name** | **Resource Manager - Tailspin - Space Game** |
-    | **Scope level**     | **Subscription**                             |
-    | **Subscription**    | Your Azure subscription                      |
-    | **Resource Group**  | **tailspin-space-game-rg**                   |
+    | Scope level     | **Subscription**                             |
+    | Subscription    | Your Azure subscription                      |
+    | Resource Group  | **tailspin-space-game-rg**                   |
+    | Service connection name | *Resource Manager - Tailspin - Space Game* |
 
     During the process, you might be prompted to sign in to your Microsoft account.
 
-1. Select **OK**.
+1. Select **Save**.
 
     Azure DevOps performs a test connection to verify that it can connect to your Azure subscription. If Azure DevOps is unable to connect, you'll have the chance to sign in a second time.
 
@@ -289,10 +292,10 @@ This branch contains the _Space Game_ project you worked with in the previous mo
 
     ```bash
     git fetch upstream blue-green
-    git checkout blue-green
+    git checkout -b blue-green upstream/blue-green
     ```
 
-    The format of this command enables you to get starter code from Microsoft's GitHub repository, known as `upstream`. Shortly, you'll push this branch up to your GitHub repository, known as `origin`.
+    The format of these commands enables you to get starter code from Microsoft's GitHub repository, known as `upstream`. Shortly, you'll push this branch up to your GitHub repository, known as `origin`.
 
 1. As an optional step, open *azure-pipelines.yml* from Visual Studio Code and familiarize yourself with the initial configuration.
 

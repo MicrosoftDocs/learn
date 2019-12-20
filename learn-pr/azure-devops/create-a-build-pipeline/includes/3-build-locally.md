@@ -77,10 +77,8 @@ To clone the *Space Game* web project to your computer:
 1. In Visual Studio Code, go to the terminal window and run the `git clone` command. Replace the URL that's shown here with the contents of your clipboard:
 
     ```bash
-    git clone --branch master --single-branch https://github.com/your-name/mslearn-tailspin-spacegame-web.git
+    git clone https://github.com/your-name/mslearn-tailspin-spacegame-web.git
     ```
-
-    You can typically omit the `--branch` and `--single-branch` arguments. We include them here to help you get starter code from the Microsoft repository in later modules.
 
 1. Move to the `mslearn-tailspin-spacegame-web` directory. This is the root directory of your repository.
 
@@ -150,6 +148,9 @@ Now that you have the web application, you can build and run it locally.
     ```bash
     dotnet build --configuration Release
     ```
+
+    > [!NOTE]
+    > If the `dotnet` command is not found, review the prerequisites at the start of this module. You may need to install .NET Core.
 
     .NET Core projects typically come with two build configurations: Debug and Release. Debug builds aren't optimized for performance. They make it easier for you to trace through your program and troubleshoot issues. Here we choose the Release configuration just to see the web app in action.
 
