@@ -9,6 +9,6 @@ metadata:
   ms.author: thpetche
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 4
+durationInMinutes: 9
 content: |
   [!include[](includes/3-analyze-telemetry-baseline.md)]

@@ -2,7 +2,7 @@
 uid: learn.azdo.manage-site-reliability
 metadata:
   title: Manage site reliability - Learn
-  description: Learn how to manage your site reliability.
+  description: Learn how to manage site reliability.
   ms.date: 12/20/2019
   author: tpetchel
   ms.author: thpetche
@@ -10,12 +10,14 @@ metadata:
   #ms.learn-contact: thpetche
   ms.prod: learning-azure
 title: Manage site reliability
-summary: Learn to ..
+summary: Learn how to manage site reliability.
 abstract: |
   In this module, you will:
-  - A
-  - B
-  - C
+
+  - Learn how site reliability engineering (SRE) empowers software developers to own the ongoing daily operation of their applications in production.
+  - Learn how Application Insights analyzes the performance of your web application and can warn you about potential problems.
+  - Learn about processes that you can implement to monitor site reliability.
+  - See how blameless postmortems encourage a "just culture" that balances safety and accountability.
 prerequisites: An Azure DevOps organization
 iconUrl: /learn/achievements/generic-badge.svg
 ratingEnabled: true

@@ -23,7 +23,7 @@ Here are some pros and cons you might consider when deciding whether to use a sc
 
 Startups thrive on feedback as their "north star", and are constantly evolving based on what their customers request and complain about. This also applies to enterprises, who know that customers are what make any company thrive, and are aware that, because of their size, they must often work harder than startups to stay relevant and to innovate.
 
-If you're just collecting feedback when it comes in, you're missing out on data that's just as important as page views or engagement. It's like deciding not to bother setting up Google Analytics on your homepage, or not properly configuring your CRM. In the end, you're deciding to not benefit from data that may have a transformative effect on your product strategy.
+If you're just collecting feedback when it comes in, you're missing out on data that's just as important as page views or engagement. In the end, you're deciding to not benefit from data that may have a transformative effect on your product strategy.
 
 With a dataset of feedback – whether that's from customer reviews, support tickets, or social media – you can dig into the words your customers are using to describe certain parts of your product and get insights into what they like, and perhaps more importantly, what they don't like.
 

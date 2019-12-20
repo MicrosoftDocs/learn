@@ -1,6 +1,6 @@
 Alerts proactively notify you when the monitoring system detects important issues. They allow you to identify and address those issues before the users of your system notice them.
 
-Here, you learn about the unified alert experience in Azure Monitor, which now includes Log Analytics and Application Insights. (The [previous alert experience](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-classic.overview?azure-portal=true) and alert types are called classic alerts. You can view this older experience and older alert type by clicking on **View classic alerts** at the top of the alert page.)
+Here, you learn about the alert experience in Azure Monitor, which includes Log Analytics and Application Insights.
 
 ## The meeting
 
@@ -12,47 +12,49 @@ Here, you learn about the unified alert experience in Azure Monitor, which now i
 
 ## Analyze alerts to establish a baseline
 
-The team needs to understand how they can establish a baseline with Application Insights. The diagram below represents the flow of alerts.
+The team needs to understand how they can establish a baseline with Application Insights. This diagram shows the flow of alerts:
 
 ![A drawing of alerts flowing from rule to action group or monitor condition](../media/4-flow-of-alerts.png)
 
 Alert rules are separated from alerts and the actions that are taken when an alert fires.
 
-Alert rule - The alert rule captures the target and criteria for alerting. The alert rule can be in an enabled or a disabled state. Alerts only fire when enabled.
+The alert rule captures the target and criteria for alerting. The alert rule can be in an enabled or a disabled state. Alerts only fire when enabled.
 
 The key attributes of an alert rule are:
 
-**Target Resource**: Defines the scope and signals available for alerting. A target can be any Azure resource. Example targets: a virtual machine, a storage account, a virtual machine scale set, a Log Analytics workspace, or an Application Insights resource. For certain resources (like Virtual Machines), you can specify multiple resources as the target of the alert rule.
+* **Target Resource**
 
-**Signal**: Signals are emitted by the target resource and can be of several types. Metric, Activity log, Application Insights, and Log.
+    Target Resource defines the scope and signals available for alerting. A target can be any Azure resource. Example targets include virtual machines, storage accounts, virtual machine scale sets, Log Analytics workspaces, or Application Insights resources. For certain resources (like virtual machines), you can specify multiple resources as the target of the alert rule.
 
-**Criteria**: Criteria is a combination of Signal and Logic applied on a Target resource. Examples:
+* **Signal**
 
-- Percentage CPU > 70%
-- Server Response Time > 4 ms
-- Result count of a log query > 100
+    Signals are emitted by the target resource and can be of several types: Metric, Activity log, Application Insights, and Log.
 
-**Alert Name**: A specific name for the alert rule configured by the user.
+* **Criteria / Logic Test**
 
-**Alert Description**: A description for the alert rule configured by the user.
+    Criteria is a combination of Signal and Logic applied on a Target resource. Examples include:
 
-**Severity**: The severity of the alert once the criteria specified in the alert rule is met. Severity can range from 0 to 4.
+    * CPU utilization above 70%.
+    * Server response time greater than 4 ms.
+    * Log queries that produce more than 100 results.
 
-**Action**: A specific action taken when the alert is fired. For more information, see [Action Groups](https://docs.microsoft.com/azure/azure-monitor/platform/action-groups?azure-portal=true).
+* **Action Group**
+
+    Action Group is a specific action that's taken when the alert is fired. To learn more, see [Create and manage action groups in the Azure portal](https://docs.microsoft.com/azure/azure-monitor/platform/action-groups?azure-portal=true).
 
 ## What you can alert on
 
-You can alert on metrics and logs as described in [monitoring data sources](https://docs.microsoft.com/azure/azure-monitor/platform/data-sources?azure-portal=true). These include but are not limited to:
+You can alert on metrics and logs as described in [Sources of monitoring data for Azure Monito](https://docs.microsoft.com/azure/azure-monitor/platform/data-sources?azure-portal=true). These alerts include, but are not limited to:
 
-- Metric values
-- Log search queries
-- Activity Log events
-- Health of the underlying Azure platform
-- Tests for web site availability
+- Metric values.
+- Log search queries.
+- Activity Log events.
+- Health of the underlying Azure platform.
+- Tests for web site availability.
 
 ## Manage alerts
 
-You can set the state of an alert to specify where it is in the resolution process. When the criteria specified in the alert rule is met, and an alert is created or fired, it has a status of **New**. You can change the status when you acknowledge an alert and when you close it. All state changes are stored in the history of the alert.
+You can set the state of an alert to specify where it is in the resolution process. When the criteria specified in the alert rule is met, and an alert is created or fired, it has a status of **New**. You can change the status when you acknowledge an alert and when you close it. All state changes are stored in the alert's history.
 
 The following alert states are supported:
 
@@ -62,17 +64,17 @@ The following alert states are supported:
 | Acknowledged | An administrator has reviewed the alert and started working on it.|
 | Closed                 | The issue has been resolved. After an alert has been closed, you can reopen it by changing it to another state.          |
 
-Alert state is different and independent of the monitor condition. Alert state is set by the user. Monitor condition is set by the system. When an alert fires, the alert's monitor condition is set to **fired**. When the underlying condition that caused the alert to fire clears, the monitor condition is set to **resolved**. The alert state isn't changed until the user changes it. Learn [how to change the state of your alerts and smart groups](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-managing-alert-states?toc=%2Fazure%2Fazure-monitor%2Ftoc.json&azure-portal=true).
+Alert state is different and independent of the monitor condition. Alert state is set by the user. Monitor condition is set by the system. When an alert fires, the alert's monitor condition is set to **fired**. When the underlying condition that caused the alert to fire clears, the monitor condition is set to **resolved**. The alert state isn't changed until the user changes it. Learn how to [Manage alert and smart group states](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-managing-alert-states?toc=%2Fazure%2Fazure-monitor%2Ftoc.json&azure-portal=true).
 
 ## Smart groups
 
-Smart groups are aggregations of alerts based on machine learning algorithms, which can help reduce alert noise and aid in trouble-shooting. [Learn more about Smart Groups](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-smartgroups-overview?toc=%2Fazure%2Fazure-monitor%2Ftoc.json&azure-portal=true) and [how to manage your smart groups](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-managing-smart-groups?toc=%2Fazure%2Fazure-monitor%2Ftoc.json&azure-portal=true).
+Smart groups are aggregations of alerts, based on machine learning algorithms, which can help reduce alert noise and aid in troubleshooting. Learn more about [Smart groups](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-smartgroups-overview?toc=%2Fazure%2Fazure-monitor%2Ftoc.json&azure-portal=true) and how to [Manage smart groups](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-managing-smart-groups?toc=%2Fazure%2Fazure-monitor%2Ftoc.json&azure-portal=true).
 
 ## Alerts experience
 
 The default **Alerts** page provides a summary of alerts that are created within a particular time window. It displays the total alerts for each severity with columns that identify the total number of alerts in each state for each severity. Select any of the severities to open the **All Alerts** page filtered by that severity.
 
-It does not show or track older classic alerts. You can change the subscriptions or filter parameters to update the page.
+Here's an example:
 
 ![A screenshot of the all alerts page](../media/4-all-alerts-page.png)
 
@@ -94,7 +96,9 @@ Select the following values at the top of the **Alerts** page to open another pa
 
 ## Manage alert rules
 
-Click on **Manage alert rules** to show the **Rules** page. The rules page is a single place for managing all alert rules across your Azure subscriptions. It lists all alert rules and can be sorted based on target resources, resource groups, rule name, or status. Alert rules can also be edited, enabled, or disabled from this page.
+Select **Manage alert rules** to show the **Rules** page. The rules page is a single place for managing all alert rules across your Azure subscriptions. It lists all alert rules and can be sorted based on target resources, resource groups, rule name, or status. Alert rules can also be edited, enabled, or disabled from this page.
+
+Here's an example:
 
 ![A screenshot of the rules page](../media/4-manage-alert-rules.png)
 
@@ -114,9 +118,9 @@ You can learn more about how to create alert rules in [Create, view, and manage 
 
 Alerts are available across several Azure monitoring services. For information about how and when to use each of these services, see [Monitoring Azure applications and resources](https://docs.microsoft.com/azure/azure-monitor/overview?azure-portal=true).
 
-## All Alerts page
+## The All Alerts page
 
-Click on **Total Alerts** to see the **All Alerts** page. Here you can view a list of alerts that were created within the selected time window. You can view either a list of the individual alerts or a list of the smart groups that contain the alerts. Select the banner at the top of the page to toggle between views.
+Click on **Total Alerts** to see the **All Alerts** page. Here, you can view a list of alerts that were created within the selected time window. You can view either a list of the individual alerts or a list of the smart groups that contain the alerts. Select the banner at the top of the page to toggle between views.
 
 ![A screenshot of the all alerts page with a list of alerts](../media/4-all-alerts-page2.png)
 
@@ -138,6 +142,6 @@ Select **Columns** at the top of the page to select which columns to display.
 
 ## The final step
 
-**Andy**: OK, that's quite a list of requirements. I'll write it up and we can review it before I take it to Irwin. I think we can make a good case for opeing up a new position. Our success with the pipeline has given us a lot of credibility.
+**Andy**: OK, that's quite a list of requirements. I'll write it up and we can review it before I take it to Irwin. I think we can make a good case for opening a new position. Our success with the pipeline has given us a lot of credibility.
 
-The last thing I want to bring up affects all of us. Pushing out to production exposes us a lot more. There will inevitably be problems, failures, stress and mistakes. How do we want to handle that?
+The last thing I want to bring up affects all of us. Pushing out to production exposes us a lot more. There will inevitably be problems, failures, stress, and mistakes. How do we want to handle that?
