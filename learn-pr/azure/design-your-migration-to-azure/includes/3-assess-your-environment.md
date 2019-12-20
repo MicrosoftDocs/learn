@@ -8,7 +8,7 @@ In this unit, you'll look at Azure Migrate, a service you use to assess readines
 
 Azure Migrate is a free service, provided by Microsoft, that assesses on-premises VMware virtual machines for running in Azure. The service helps with performance-based sizing calculations (virtual machine sizing, compute/storage) for the machines that you'll migrate. so you can estimate the ongoing cost of running these machines in Azure. Finally, the Azure Migrate supports the visualization of dependencies for those machines. It helps you create groups of machines that can be assessed together and ultimately migrated to Azure at the same time. Understanding the dependencies gives you confidence that nothing will be left behind.
 
-Azure Migrate has limitations: currently, it assesses only VMware-based virtual machines. When you use Azure Migrate, the assessments it produces are created within a *project* that is set up in the Azure portal. Each project has a collector appliance that discovers up to 1,500 VMs. You'll need to create additional projects if your company has more than 1,500 VMs or multiple vCenter Server instances. Up to 20 projects are supported per Azure subscription.
+Azure Migrate can assess both Hyper-V and VMware-based virtual machines, as well as physical servers. When you use Azure Migrate, the assessments it produces are created within a *project* that is set up in the Azure portal. Each project has a collector appliance that discovers up to 1,500 VMs. You'll need to create additional projects if your company has more than 1,500 VMs or multiple vCenter Server instances. Up to 20 projects are supported per Azure subscription.
 
 ## Work with Azure Migrate
 
