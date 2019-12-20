@@ -120,7 +120,7 @@ Generally speaking, _imperative_ code defines both _what_ the program should acc
 
 In contrast, _declarative_ code defines what the program should accomplish, but does _not_ define how to achieve the result.
 
-Think about how you write code in languages like Python, C#, or Java. Each of these languages are imperative. You use variables, conditional statements, and loops to control the state of your program and express the steps you need.
+Think about how you write code in languages like Python, C#, or Java. Each of these languages is imperative. You use variables, conditional statements, and loops to control the state of your program and express the steps you need.
 
 Compare these languages to HTML, which is declarative. HTML describes _what_ elements appear on the page, but it doesn't describe _how_ to display them. The "how" is the web browser's responsibility.
 
