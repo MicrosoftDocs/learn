@@ -9,7 +9,17 @@ In this part, you explore some of the ways you can build a monitoring and status
 * Grafana
 * Building your own custom application
 
+## The meeting
+
+**Amita**: I've been thinking about what Tim said, about how valuable monitoring the app and the infrastructure can be. I think it would be great to use that data in dashboards. I really like the visualizations for the pipeline. They're a great way to see what's happening quickly. Let's do the same for monitoring.
+
+**Mara**: I love pictures. Do you have any ideas?
+
+**Amita**: Of course. Let me tell you about Azure dashboards and some other tools.
+
 ## What are Azure dashboards?
+
+Amita wants to visualize the monitoring data Tim's collecting and she has some ideas about how to do it.
 
 [Dashboards](https://docs.microsoft.com/azure/azure-portal/azure-portal-dashboards?azure-portal=true) enable you to create a focused and organized view in the Azure portal of your cloud resources. They provide a "single pane of glass" over your Azure infrastructure and services, which enables you to identify important issues more quickly.
 
@@ -161,4 +171,16 @@ With a custom application, you have:
 
 ### Limitations of building your own custom application
 
+<<<<<<< HEAD
 With a custom application, it's up to you to build the functionality that you need. Significant engineering effort may be required.
+=======
+With a custom application, it's up to you to build the functionality that you need. Significant engineering effort may be required.
+
+## The decision
+
+**Mara**: That's a lot of options. Where do you want to start:
+
+**Amita**: I think I'll start with Azure dashboards. I think it's straightforward to make one, and I like that you can control the time range. Also, it's easy to share the dashboard. Tim, do you want to get together so we can decide what the dashboard should show?
+
+**Tim**: Sounds great. Off the top of my head, I think CPU, network and disk operations might make a good starting point but let's talk about it.
+>>>>>>> 891399833d27a52d5dc3ec63c983691545612a24
