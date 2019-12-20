@@ -49,7 +49,7 @@ With the rise of mobile and cloud computing, it's important to ensure all data -
 
 Encryption should be left to experts. A good general rule is to only use industry-vetted encryption libraries and ensure they're implemented in a way that allows them to be easily replaced if needed.
 
-For more information on encryption, see the [Microsoft SDL Cryptographic Recommendations](http://download.microsoft.com/download/6/3/A/63AFA3DF-BB84-4B38-8704-B27605B99DA7/Microsoft%20SDL%20Cryptographic%20Recommendations.pdf) whitepaper.
+For more information on encryption, see the [Microsoft SDL Cryptographic Recommendations](https://download.microsoft.com/download/6/3/A/63AFA3DF-BB84-4B38-8704-B27605B99DA7/Microsoft%20SDL%20Cryptographic%20Recommendations.pdf) whitepaper.
 
 ### Manage security risks from using third-party components
 
@@ -69,7 +69,7 @@ Define and publish a list of approved tools and their associated security checks
 
 For more information, see:
 
-* [Recommended Tools, Compilers and Options for x86, x64 and ARM](http://download.microsoft.com/download/6/3/A/63AFA3DF-BB84-4B38-8704-B27605B99DA7/Recommended%20Tools,%20Compilers%20and%20Options%20for%20x86,%20x64%20and%20ARM.pdf) (whitepaper)
+* [Recommended Tools, Compilers and Options for x86, x64 and ARM](https://download.microsoft.com/download/6/3/A/63AFA3DF-BB84-4B38-8704-B27605B99DA7/Recommended%20Tools,%20Compilers%20and%20Options%20for%20x86,%20x64%20and%20ARM.pdf) (whitepaper)
 
 * [SDL Resources](https://www.microsoft.com/securityengineering/sdl/resources)
 

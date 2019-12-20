@@ -57,7 +57,7 @@ _Figure 6: Mixed-OS environment offered by system virtualization._
 
 7. _Microsoft (2016). *Microsoft research project puts cloud in ocean for the first time*. <https://news.microsoft.com/features/microsoft-research-project-puts-cloud-in-ocean-for-the-first-time/>._
 
-8. _AirPac (2012). *How Google Saved 1 Billion Dollars in Data Center Cooling Costs*. <http://www.airpacinc.com/blog/bid/83313/How-Google-Saved-1-Billion-Dollars-in-Data-Center-Cooling-Costs>._
+8. _AirPac (2012). *How Google Saved 1 Billion Dollars in Data Center Cooling Costs*. <https://www.airpacinc.com/blog/bid/83313/How-Google-Saved-1-Billion-Dollars-in-Data-Center-Cooling-Costs>._
 
 9. _Chen and Noble (2001). \"When Virtual Is Better Than Real.\" IEEE Computer Society, Washington, DC, USA_
 
@@ -69,4 +69,4 @@ _Figure 6: Mixed-OS environment offered by system virtualization._
 
 [^7]: <https://news.microsoft.com/features/microsoft-research-project-puts-cloud-in-ocean-for-the-first-time/>  "Microsoft (2016). *Microsoft research project puts cloud in ocean for the first time*."
 
-[^8]: <http://www.airpacinc.com/blog/bid/83313/How-Google-Saved-1-Billion-Dollars-in-Data-Center-Cooling-Costs>  "AirPac (2012). *How Google Saved 1 Billion Dollars in Data Center Cooling Costs*."
+[^8]: <https://www.airpacinc.com/blog/bid/83313/How-Google-Saved-1-Billion-Dollars-in-Data-Center-Cooling-Costs>  "AirPac (2012). *How Google Saved 1 Billion Dollars in Data Center Cooling Costs*."
