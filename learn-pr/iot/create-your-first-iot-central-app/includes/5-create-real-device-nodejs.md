@@ -1,4 +1,6 @@
-In this unit, you are going to create a programming project to simulate a sensor device in a refrigerated truck. This simulation enables you to test the code long before requiring a real truck! IoT Central treats this simulation as "real" because the communication code between the device app and the IoT Central app would be the same for a real truck. In other words, in a real situation (where you run a refrigerated truck company), you would start with simulated code similar to that in this unit, and, after it worked to your satisfaction, the simulation specific code would be replaced with real code. And the communication code would remain the same. This latter fact makes writing the following code a valuable experience.
+In this unit, you are going to create a programming project to simulate a sensor device in a refrigerated truck. This simulation enables you to test the code long before requiring a real truck! 
+
+IoT Central treats this simulation as "real" because the communication code between the device app and the IoT Central app is the same for a real truck. In other words, if you do run a refrigerated truck company, you would start with simulated code similar to that in this unit. After this code works to your satisfaction, the simulation specific code would be replaced with code that receives sensor data. This limited update makes writing the following code a valuable experience.
 
 ## Create the device app
 
@@ -26,8 +28,6 @@ Node.js is a platform for building server apps, based on JavaScript. All the Jav
 
 ::: zone-end
 ::: zone pivot="vscode-csharp"
-
-1. To use C# in Visual Studio Code, ensure both [.NET Core](https://dotnet.microsoft.com/download), and the [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp) are installed.
 
 1. Open a terminal in Visual Studio Code, and create a folder called "RefrigeratedTruck" (enter `mkdir RefrigeratedTruck`). Navigate to the RefrigeratedTruck folder.
 

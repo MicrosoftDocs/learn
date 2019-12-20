@@ -1,7 +1,13 @@
-To fully test our one refrigerated truck device, it helps to break down the testing into a number of discreet checks:
+This unit is an exciting time in IoT Central development! Finally, you get to check whether all the moving parts you have created work together.
+
+  > [!TIP]
+  > It can be helpful to have multiple monitors available, to display all the browser windows and console screens that are active at the same time.
+
+To fully test the refrigerated truck device, it helps to break down the testing into a number of discreet checks:
 
 1. The device app connects to Azure IoT Central.
-1. The telemetry functions send data on the specified interval, and that data is picked up correctly by IoT Central.
+1. The telemetry functions send data on the specified interval.
+1. The data is picked up correctly by IoT Central.
 1. The command to send the truck to a specified customer works as expected.
 1. The command to recall the truck works as expected.
 1. Check customer and conflict events are transmitted correctly.
@@ -21,8 +27,7 @@ To begin the testing, with your [Azure IoT Central](https://apps.azureiotcentral
 
 1. To verify the data is being received at IoT Central, make sure your app is open, and select the **Devices** entry in the left-hand menu. Double-click the real device (**RefrigeratedTruck - 1**), not the simulated device, in the list of devices.
 
-    >[!TIP]
-    > These steps are an exciting time in IoT Central development! It can be helpful to have multiple monitors available for all the screens that are active.
+
 
 1. Verify approximately that the temperatures being sent by the device app, in the console window, match the data being shown in the telemetry view of the IoT Central app.
 

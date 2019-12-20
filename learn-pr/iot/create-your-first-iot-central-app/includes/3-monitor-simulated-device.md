@@ -1,33 +1,68 @@
+In this unit, you will first create a dashboard showing all the capabilities of the device template. Next, you will create a real device, and record the connection settings needed for the remote device app.
 
-Even before a device template is complete, the automatically created simulated device will start sending data. As you entered the measurements, and other entries for the device template, you will probably have noticed values appearing in line and bar charts to the right of the screen.
+## Create a rich dashboard
 
-## Validate the device template
+1. Click on the **Views** menu option, then on **Visualizing the device**.
 
-Complete validation of the device template will not be possible until you have some real devices. However, the simulated device allows you both to check the completeness of what you have done so far, and to provide a helpful UI to learn the basics of managing devices through IoT Central.
+    ![Screenshot showing how to create a new view](../media/refrigerated-trucks-add-view.png)
 
-1. Inside the [Azure IoT Central](https://apps.azureiotcentral.com/?azure-portal=true) portal, select the **Devices** entry in the left-hand menu, then click the one device you have so far (**RefrigeratedTruck-1**). In the range of **Views**, if it is not already selected, click the _chart_ entry (the left-most of the three view options, highlighted below).
+1. You should now see a list of all the **Telemetry**, **Properties**, and **Commands** you created, each with a check box.
 
-    ![Screenshot showing the telemetry line chart, and the state bar charts, for the simulated device](../media/refrigerated-trucks-simview1.png)
+1. Click the **Location** check box, then **Add tile**. Dashboards are made up of tiles. The reason we choose the location tile first, is that we want to expand it from its default size. Drag the lower right-hard corner so the tile is at least twice the default size. This tile is the most fun, it will show the location of the truck on a map.
 
-1. This view shows the line chart of the telemetry, and bar charts for states and events. Note the column of eye icons, determining whether the field is visible or not. Some of these icons may be light-gray (indicating the field is not visible), and if so, click the eye icons to turn the fields visible.
+1. Before adding more tiles, change the **View name** to something more specific, "Truck view", or something similar.
 
-1. Notice that the temperature telemetry falls within the minimum (-20 degC), and the maximum (20 degC), you set when defining this field. Hover over any telemetry, or any state in the bar charts, for a little more information.
+1. Now, click each of the rest of the telemetry and properties capabilities in turn, starting at the top, and **Add tile**. We are going for function over form here, we can prettify the dashboard later. For now, we just want a dashboard that will confirm all the telemetry being sent from our remote device. There is no need to add the commands to the dashboard, though that option does exist.
 
-1. The event chart is a bit less obvious than the telemetry and states, but notice the diamond icons (highlighted near the bottom edge of the image above) that represent an event that has been triggered. Clicking on any of these icons will give you more detail about the event. With the simulated device, this detail cannot be much more than that the event "occurred". With real devices, you can learn more about a real event.
+1. When you have added all the tiles, scroll around a bit on your dashboard, and check out the wording in the tiles.
 
-1. Now, click on the _table_ view (the second of the three views).
+    ![Screenshot showing some sample dashboard tiles](../media/refrigerated-trucks-sample-tiles.png)
 
-    ![Screenshot showing the telemetry, state, and event tables for the simulated device](../media/refrigerated-trucks-simview2.png)
+1. You can drag tiles around, and the portal will try to rearrange them neatly.
 
-1. The table view gives time slots, and a text description of the telemetry, state, or event. Again, click on the event link for some extra information. The table view is probably the least used of the three views, but is helpful in aligning what happened in any one time slot.
+1. When you are satisfied with your dashboard, click **Save**, then click **Publish**. You will now notice that in the dialog that appears, that the **Views** entry is **Yes**. Click **Publish** in the dialog.
 
-1. Now click on the third of the three views, the map.
+You can create as many views as you want to, giving each a friendly name. For this module though, one dashboard will work well.
 
-    ![Screenshot showing the location map for the simulated device](../media/refrigerated-trucks-simview3.png)
+The next step is to create a device.
 
-1. The map view is certainly a fun one, and you will probably be a bit surprised to see our "truck" has superpowers, and may even have ended up in the ocean after traveling directly to various random locations on land! The simulated device has no concept of anything other than a random location, but at least you have verified that location data is being transmitted, so has been set up correctly.
+## Create a real device
 
-1. Clicking on any of the blue circles provides more location information.
+By "real" IoT Central understands that there is a remote app running. The app can be in a real device, taking input from real sensors, or running a simulation. Both options are treated as a connection to a _real_ device.
+
+1. Click **Devices** in the left-hand menu.
+
+1. Click **RefrigeratedTruck** in the **Devices** menu, to ensure the device we create uses this device template. The device template you select will be shown in bold text.
+
+1. Click **+ New**. Verify in the dialog that the device name includes the **RefrigeratedTruck** text. If it does not, you have not selected the right device template.
+
+    ![Screenshot showing the dialog to create a device](../media/refrigerated-trucks-create-device.png)
+
+
+1. Change the **Device ID** to a friendlier name, say "RefrigeratedTruck1".
+
+1. Change the **Device name** to a friendlier name, say "RefrigeratedTruck - 1".
+
+1. Leave the **Simulated** setting at **Off**. We are going to be building a real truck here. Well, a simulated _real_ truck! Setting this value to **On** instructs IoT Central to pump out random values for our telemetry. This can be useful in validating a device template.
+
+1. Click **Create**. Wait a few seconds, then your device list should be populated with a single entry. Note the **Device status** is **Registered**. Not until the device status is **Provisioned** will the IoT Central app accept a connection to the device. The coding unit that follows shows how to provision a device.
+
+1. Click on the **RefrigeratedTruck - 1** name, and you will see the live dashboard, with lots of **Waiting for data** messages.
+
+1. Click on the **Commands** entry in the bar that includes **Truck view**. Notice that the two commands you entered are ready to be run.
+
+The next step is to create the keys that will allow a remote device to communicate with this app.
+
+### Record the connection keys
+
+1. Click **Connect** in the top right menu. Do _not_ click **Connect to gateway**.
+
+1. In the **Device connection** dialog that follows, carefully copy the **ID scope**, **Device ID**, and **Primary key** to a text file. Typically, use a tool like Notepad, and save the file with a meaningful name, say "Truck connections.txt".
+
+1. Leave the **Connect method** as **Shared access signature (SAS)**.
+
+1. When you have saved off the IDs and key, click **Close** on the dialog.
+
+Leave the IoT portal open in your browser, waiting as it is.
 
 Let's take a break and test your knowledge so far.
-

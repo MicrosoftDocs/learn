@@ -1,28 +1,11 @@
-In this unit, you will prepare the process to connect a real device to IoT Central. By "real" IoT Central understands that there is a remote app running - the app can be in a real device, taking input from real sensors, or running a simulation. Both options are treated as a connection to a real device.
 
-## Add a real device
+In this unit, Node.js developers go through the process of creating a _connection string_. C# developers do not use this process, though the device app code is slightly more involved as a result. In the unit that follows this one, we dive into the coding sections of the module.
 
-1. With your Refrigerated Truck app open in the [Azure IoT Central](https://apps.azureiotcentral.com/?azure-portal=true) portal, select **Devices** from the left-hand menu.
-
-1. Open the **+** dropdown menu, and select **Real**.
-
-    ![Screenshot showing how to create a real device, using the IoT Central portal](../media/refrigerated-trucks-new-real.png)
-
-1. Leave the **Device ID** as is, and change the default **Device Name** to something readable ("Refrigerated Truck - 1"), and then select **Create**.
-
-    ![Screenshot showing how to rename the real device to a friendly name](../media/refrigerated-trucks-new-real-create.png)
-
-    When the device is created, you will notice the phrase "Missing Data" where the telemetry would normally be. Not until the device starts transmitting data will this phrase change.
-
-1. Click on the **Connect** button for the device, top right of your screen. Take your time, and copy the **Scope ID**, **Device ID**, and **Primary Key**, to a text document, such as Notepad or TextEdit.
-
-1. Save the text file. You will be using these values after installing and running a few utilities to generate connection strings.
-
-1. In the IoT Central portal, click the **Close** button.
+To complete the unit, all developers need an Azure Maps account.
 
 ::: zone pivot="vs-node,vscode-node"
 
-The essential component for communication between a device and IoT Central is a _connection string_. There are some tools that make generating these strings easy. In this unit, you will access these tools in such as way that you can reuse them later on. To start with, you need some information on our real device.
+The essential component for communication between a Node.js device app, and IoT Central, is the connection string. There are some tools that make generating these strings easy. In this unit, you will access these tools in such as way that you can reuse them later on. To start with, you need some information on our real device.
 
 ## Generate a connection string
 
@@ -84,7 +67,11 @@ All of the work to generate connection strings is handled through Azure Cloud Sh
 You now have the all important connection string. The Scope ID identifies the app, the Device ID the real device, and the Primary Key gives you permission for the connection.
 
 ::: zone-end
-::: zone pivot="vs-csharp,vscode-csharp"
+::: zone pivot="vscode-csharp"
+
+## Install the C# extensions
+
+1. To use C# in Visual Studio Code, ensure both [.NET Core](https://dotnet.microsoft.com/download), and [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp) are installed.
 
 ::: zone-end
 
@@ -151,4 +138,6 @@ If you do not already have an Azure Maps account, you will need to create one.
 
 ## Next steps
 
-You have now completed the preparatory steps of connecting your first IoT Central app to real devices. The next step is to create the device app.
+You have now completed the preparatory steps of connecting your first IoT Central app to real devices. Good work!
+
+The next step is to create the device app.

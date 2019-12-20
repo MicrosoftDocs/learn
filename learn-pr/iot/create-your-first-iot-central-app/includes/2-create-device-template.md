@@ -46,7 +46,7 @@ Telemetry is the data values transmitted by sensors. The most important sensor i
 
 1. Your screen should now look like the following image.
 
-  ![Screenshot showing how to create temperature telemetry for the simulated device](../media/refrigerated-trucks-temperature.png)
+    ![Screenshot showing how to create temperature telemetry for the simulated device](../media/refrigerated-trucks-temperature.png)
 
     > [!IMPORTANT]
     > The names entered for the interface must be entered _exactly_ as shown in this unit. This is because an exact match is needed between these names, and entries in the code you will be adding later in this module.
@@ -125,7 +125,7 @@ Another event might be just to acknowledge, and record, the customer ID that a t
 
 A location is probably the most important, and yet one of the easiest measurements to add to a device template. Under the hood, it consists of a latitude, longitude, and an optional altitude, for the device.
 
-1.  Use **+ New**, then click **Location**, and add a location for our trucks as follows.
+1.  Use **+ Add capability**, and add a location for our truck as follows.
 
     | Entry summary | Value |
     | --- | --- |
@@ -137,79 +137,92 @@ A location is probably the most important, and yet one of the easiest measuremen
 
     ![Screenshot showing how to create a truck location for the simulated device](../media/refrigerated-trucks-location.png)
 
+### Add properties
 
-## Add properties
+A property of a device is typically a constant values, that is communicated to the IoT Central app when communication is first initiated. In our refrigerated truck scenario, a good example of a property is the license plate of the truck, or some similar unique truck ID.
 
-A Setting contains device configuration data. In our refrigerated truck example, you are going to define an _optimal temperature_ for the contents as a setting. This optimal temperature might change with different types of content, different weather conditions, or whatever might be appropriate. A setting has an initial default value, which may not need to be changed, but the ability to change it easily and quickly is there, if needed.
+Properties can also be device configuration data. We will define an _optimal temperature_ for the truck contents as a property. This optimal temperature might change with different types of content, different weather conditions, or whatever might be appropriate. A setting has an initial default value, which may not need to be changed, but the ability to change it easily and quickly is there, if needed. This kind of property is called a _writable property_.
 
-A setting is a single value. If more complex sets of data need to be transmitted to a device, a Command (see below) might be the more appropriate way of handling it.
+A property is a single value. If more complex sets of data need to be transmitted to a device, a Command (see below) is the more appropriate way of handling it.
 
-1. Click on the **Settings** title (just to the right of **Measurements**) under the device template name. Add a single setting to set an optimal contents temperature, by clicking on **Number**, then entering the following fields:
-
-    ![Screenshot showing how to create an optimal temperature setting for the simulated device](../media/refrigerated-trucks-optimal.png)
-
-    | Entry summary | Value |
-    | --- | --- |
-    | Display Name | Optimal temperature |
-    | Name | optimalTemperature |
-    | Unit of Measure | degC |
-    | Number of Decimal Places | 1 |
-    | Minimum Value | -20 |
-    | Maximum Value | 20 |
-    | Initial Value | -5 |
-
-1. Click **Save**.
-
-## Properties
-
-Properties of a device are typically constant values, that are communicated to the IoT Central app once when communication is first initiated. In our refrigerated truck scenario, a good example of a property is the license plate of the truck, or some similar unique truck ID.
-
-1. Click on the **Properties** title under the device template name, and add a single **Text** property to contain a truck ID.
-
-    ![Screenshot showing how to create a truck ID property for the simulated device](../media/refrigerated-trucks-id.png)
+1. Use **+ Add capability**, and add the truck ID property.
 
     | Entry summary | Value |
     | --- | --- |
     | Display Name | Truck ID |
-    | Name | truckId |
+    | Name | TruckID |
+    | Capability Type | Property |
+    | Semantic type | None |
+    | Schema | String |
+    | Writable | Off |
+    | Unit | None |
 
-1. Click **Save**.
+1. Next, add the optimal temperature property.
 
-## Add commands
+    | Entry summary | Value |
+    | --- | --- |
+    | Display Name | Optimal Temperature |
+    | Name | OptimalTemperature |
+    | Capability Type | Property |
+    | Semantic type | None |
+    | Schema | Double |
+    | Writable | On |
+    | Unit |  <sup>o</sup>F  |
+
+1. Confirm your properties have the following fields.
+
+      ![Screenshot showing how to create a truck ID and optimal temperature properties for the simulated device](../media/refrigerated-trucks-properties.png)
+
+### Add commands
 
 Commands are sent by the operator of the IoT Central app to the remote devices. Commands are similar to settings, but a command can contain any number of input fields, whereas a setting is limited to a single value.
 
 For refrigerated trucks, there are two commands you should add: a command to deliver the contents to a customer, and a command to recall the truck to base.
 
-1. Click the **Commands** title under the device template name, then click **New Command**.
-
-1. For the first command, to send the truck to a customer, enter the following display and Names, and click **+** beside the **Input Fields** title to enter a text field.
-
-    ![Screenshot showing how to create a go to customer command for the simulated device](../media/refrigerated-trucks-goto.png)
+1. Use **+ Add capability**, and add the first command.
 
     | Entry summary | Value |
     | --- | --- |
     | Display Name | Go to customer |
-    | Name | cmdGoTo |
-    | Input Fields Display Name | Customer ID |
-    | Input Fields Name | customerId |
+    | Name | GoToCustomer |
+    | Capability Type | Command |
+    | Command | Synchronous |
 
-1. Click **Save**.
+1. When you turn on the **Request** option, you will be able to enter more details of the command.
 
-    > [!TIP]
-    > You can use the corner icon in the lower-right corner of the box displaying the command, to stretch the bounding rectangle so that all elements of the command are displayed fully.
+    | Entry summary | Value |
+    | --- | --- |
+    | Request | On |
+    | Display name | Customer ID |
+    | Name | CustomerID |
+    | Schema | Integer |
+    | Unit | None |
 
-1. Enter another new command, this time with no input fields, but with "Recall" as the **Display Name**, and "cmdRecall" as the **Name**.
+1. Enter another new command, for recalling the truck.
 
-1. Click **Save**.
+    | Entry summary | Value |
+    | --- | --- |
+    | Display Name | Recall |
+    | Name | Recall |
+    | Capability Type | Command |
+    | Command | Synchronous |
+
+1. This time there are no additional parameters for the command, so leave **Request** off.
 
 1. Validate that your two commands match the image below.
 
-    ![Screenshot to help validate the two commands for the simulated device have been entered correctly](../media/refrigerated-trucks-cmds.png)
+    ![Screenshot to help validate the two commands for the simulated device have been entered correctly](../media/refrigerated-trucks-commands.png)
 
-### Publish the template
+1. Click **Save**. Before going any further carefully double check your interface. After an interface has been published, there are very limited editing options. It is important to get it right before publishing. If you click on the name of the device template, in the menu that ends with the **Views** option, you will get a summary of the capabilities.
 
+    ![Screenshot to help validate the capabilities of the simulated device](../media/refrigerated-trucks-capabilities.png)
+
+## Publish the template
+
+1. Click **Save** again, if you have made any changes since the last time you saved.
+
+1. Click **Publish**. You should see that the top-right word changes from **Draft** to **Published**.
 
 Preparing a device template does take some care and some time.
 
-In the next unit, you can do some validation of our device template.
+In the next unit, you use the capabilities of the device template to prepare a controllers dashboard. Preparing views can be done after a device template is published.
