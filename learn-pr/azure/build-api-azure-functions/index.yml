@@ -26,8 +26,9 @@ products:
   - azure-functions
 units:
   - learn.azure.build-api-azure-functions.1-introduction
-  - learn.azure.build-api-azure-functions.2-content
-  - learn.azure.build-api-azure-functions.3-exercise
-  - learn.azure.build-api-azure-functions.4-summary
+  - learn.azure.build-api-azure-functions.2-working-with-vs-code
+  - learn.azure.build-api-azure-functions.3-ex-setup-environment
+  - learn.azure.build-api-azure-functions.4-functions-extension-for-vs-code
+  - learn.azure.build-api-azure-functions.5-ex-create-function-project
 badge:
   uid: learn.azure.build-api-azure-functions.badge
