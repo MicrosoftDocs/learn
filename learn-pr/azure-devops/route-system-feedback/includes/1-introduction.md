@@ -25,6 +25,8 @@ You can take just this module, but if you want to follow the progression from th
 * [Deploy applications with Azure DevOps](/learn/paths/deploy-applications-with-azure-devops/?azure-portal=true)
 * [Automate your deployments with Azure DevOps](/learn/paths/automate-deployments-azure-devops/?azure-portal=true)
 
+We also recommend that you start at the beginning of the [Capture feedback and monitoring data to continuously improve your software](/learn/paths/capture-feedback-monitoring?azure-portal=true) learning path.
+
 ## Meet the team
 
 You met the _Space Game_ web team at Tailspin Toys in previous modules. As a refresher, here's who you'll work with in this module.
