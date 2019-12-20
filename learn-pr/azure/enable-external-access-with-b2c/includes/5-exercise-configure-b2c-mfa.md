@@ -1,6 +1,6 @@
 You've been asked to integrate your healthcare application with Azure AD B2C. Azure AD B2C must handle all the patients' registration and sign-in processes for the application. Any user who attempts to access the healthcare application must also be challenged with multi-factor authentication.
 
-You'll now create a B2C tenant, register an application, and put together a sign-up and sign-in user flow. You'll enable multi-factor authentication to take advantage of its protection. Also, you'll test patients' user experience by doing test runs for the user flow.
+You'll now create a B2C tenant, register an application, and put together a sign-up and sign-in user flow. You'll enable multi-factor authentication to take advantage of its protection. Also, you'll try out patients' user experience by doing test runs for the user flow.
 
 ## Create your Azure AD B2C tenant
 
@@ -12,7 +12,7 @@ First, you create an Azure AD B2C tenant.
 
     ![Create resource](../media/5-portal-home.png)
 
-1. Search for **Active Directory B2C**, select the search result.
+1. Search for **Active Directory B2C**, then select the search result.
 
     ![Create a B2C resource](../media/5-create-b2c-resource.png)
 
@@ -20,11 +20,11 @@ First, you create an Azure AD B2C tenant.
 
     ![text](../media/5-choose-azure-active-b2c.png)
 
-1. Select  **Create a new Azure AD B2C Tenant**. Fill in the form then select **Create**
+1. Select  **Create a new Azure AD B2C Tenant**. Fill in the form, then select **Create**.
 
     ![Create tenant form ](../media/5-create-tenant-form.png)
 
-1. Select the link at the top of your form, **Create new B2C Tenant or Link to existing Tenant**. 
+1. Select the **Create new B2C Tenant or Link to existing Tenant** link at the top of your form. 
 
     ![Select tenant link](../media/5-select-tenant-link.png)
 
@@ -38,17 +38,17 @@ First, you create an Azure AD B2C tenant.
 
     ![Link existing tenant form](../media/5-link-existing-tenant-form.png)
 
-1. Select **Create**. In the confirmation dialog select the new directory.
+1. Select **Create**. In the confirmation dialog, select the new directory.
 
 ## Register your application
 
-You need to register your application.
+Register your application, using the following steps:
 
 1. Switch to your newly created B2C tenant. Select **Directory + Subscription** at the top of the Azure portal, then select your tenant in the list.
 
     ![Azure AD B2C tenant](../media/5-changeto-azureadb2c-tenant.png)
 
-1. Select the **Show portal menu** button at the top left corner of the Azure portal to show the portal menu. Select **All services**, then search for **Azure AD B2C**, and select the top search result.
+1. Select the **Show portal menu** button at the top-left corner of the Azure portal to show the portal menu. Select **All services**, search for **Azure AD B2C**, then select the top search result.
 
     ![Search for AD B2C in all services](../media/5-all-services.png)
 
@@ -65,7 +65,7 @@ You need to register your application.
 
 ## Create user flow
 
-You'll create a user flow that lets your users sign up, and sign in to your application.
+You'll create a user flow that lets users sign up, and sign in to your application.
 
 1. Go back to your Azure AD B2C. Select **All services**, look for Azure AD B2C, and select the top search result.
 
@@ -77,11 +77,11 @@ You'll create a user flow that lets your users sign up, and sign in to your appl
 
     ![Select a user flow](../media/5-select-user-signin-flow.png)
 
-1. In the form that appears, give your user flow a name. Select **Email signup** in the **Identity providers** section. At this point, you could enable multi-factor authentication. However, we'll do it later to show how you can enable multi-factor authentication on existing user flows.
+1. In the form that appears, give your user flow a name. Select **Email signup** in the **Identity providers** section. At this point, you could enable multi-factor authentication. However, we'll do it later to show how you enable multi-factor authentication on existing user flows.
 
     ![Configure your user flow](../media/5-create-user-flow.png)
 
-1. In the **User attributes and claims** section, select the attributes you want to collect from the user at sign-up, and what you want to return to them at sign-in. For this exercise, you'll select **Given Name**, **Surname**, and **Country/Region**.
+1. In the **User attributes and claims** section, select the attributes you need to collect from the user at sign-up, and what you want to return to them at sign-in. For this exercise, you'll select **Given Name**, **Surname**, and **Country/Region**.
 
 1. Select **Create**.
 
@@ -101,7 +101,7 @@ You can enable multi-factor authentication when you create a user flow. But you 
 
 ## Test the user experience
 
-You now test the user flow to try the experience from the user's perspective.
+Now test the user flow to try the experience from the user's perspective.
 
 ### Test the sign-up process
 
@@ -121,15 +121,15 @@ You now test the user flow to try the experience from the user's perspective.
 
     ![Sign up form](../media/5-signup-form.png)
 
-1. Select **Send verficiation code**.
+1. Select **Send verification code**.
 
 1. Go to the inbox of the email address you've provided. Open the verification code email, and copy the code.
 
     ![Verification code received](../media/5-verification-code-received.png)
 
-1. Copy the the code into the **Verfication code** box in your sign-up form. Select **Verify code**. Then select **Create** at the bottom of the form.
+1. Copy the code into the **Verification code** box in your sign-up form. Select **Verify code**, then select **Create** at the bottom of the form.
 
-1. Now provide a phone number for multi-factor authentication in the **Phone Number** field. Select **Send Code** or **Call me** to receive the code.
+1. Provide a phone number for multi-factor authentication in the **Phone Number** field. Select **Send Code** or **Call me** to receive the code.
 
 1. When your authentication code is verified, your account will be created. You're forwarded to the test app at `https://jwt.ms`. The test app shows all the claims you chose to return to the application when you configured the user flow.
 
@@ -139,7 +139,7 @@ You now test the user flow to try the experience from the user's perspective.
 
 1. Run the user flow again by following step 1 and step 2 from the previous section. The sign-in form will appear.
 
-1. Fill in the sign-in form. Then select **Sign in**.
+1. Fill in the sign-in form, then select **Sign in**.
 
     ![Sign-in form](../media/5-signin-form.png)
 
