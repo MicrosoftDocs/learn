@@ -57,25 +57,25 @@ However, don't write cause-based rules that trigger on call alerts for symptoms 
 
 ## Tickets, reports, and email
 
-Alerts that need attention soon, but not right away are *sub-critical alerts*. Here are some suggestions for logging sub-critical alerts to follow-up on later:
+Alerts that need attention soon, but not right away are *subcritical alerts*. Here are some suggestions for logging subcritical alerts to follow up on later:
 
 - Bug or ticket-tracking systems can be useful for this type of alert.
 
-    An alert can open a bug, as long as the same alert gets correctly placed in a single ticket  or bug. These bugs can then go through a triage process to be assigned to someone to follow-up on. It's important that these types of issues be addressed before they become critical. Take into account how much of your team members' time can be devoted to fixing bug.
+    An alert can open a bug, as long as the same alert gets correctly placed in a single ticket  or bug. These bugs can then go through a triage process to be assigned to someone to follow up on. It's important that these types of issues be addressed before they become critical. Take into account how much of your team members' time can be devoted to fixing bug.
 - A daily (or more frequent) report can be useful.
 
-    Write sub-critical alerts that are long-lived, for example, the database is over 90% full, to a report that shows all active alerts. Assign someone to triage this report daily.
+    Write subcritical alerts that are long-lived, for example, the database is over 90% full, to a report that shows all active alerts. Assign someone to triage this report daily.
 - Every alert should be tracked through a workflow system to ensure that they're being seen and addressed.
 
 In general, create a system that promotes accountability for responsiveness, but doesn't have the high cost of immediate human intervention.
 
 ## Playbooks
 
-Playbooks, sometimes referred to as runbooks, are an important part of an alerting system. Have an entry in the playbook that explains what to do in the case of each alert or family of alerts that catch a symptom.
+Playbooks, sometimes referred to as runbooks, are an important part of an alerting system. Have an entry in the playbook that explains what to do for each alert or family of alerts that catch a symptom.
 
 ## Tracking and accountability
 
-If someone receives an alert and determines that there's nothing wrong, that's a sign that you need to remove the rule, demote it, or collect data in some other way. Alerts that are less than 50% accurate are considered to be broken. Even those that trigger false positives 10% of the time merit reevaluation.
+If someone receives an alert and determines that there's nothing wrong, that's a sign that you need to remove the rule, demote it, or collect data in some other way. Alerts that are less than 50% accurate are considered to be broken. Even those that trigger false positives 10% of the time merit re-evaluation.
 
 Having a weekly review of all triggered on-call alerts and analyzing quarterly alert statistics can help you to see patterns that are lost when focusing on individual alerts.
 
@@ -93,7 +93,7 @@ Here are some reasons you might break the above guidelines:
 
     For example, you've run out of quota. You need to alert someone before it's too late, and sometimes that means finding a cause to alert on. For example, your usage is greater than 80% and will run out in less than 4 hours at the growth rate of the last 1 hour.
 
-    However, you should also be able to find a similar cause that's less urgent. For example, your quota is greater than 90% and will run out in less than 4 days at the growth rate of the last day. That set of circumstances will catch most cases. You can then deal with the problem as a ticket or email alert or daily problem report, rather than the last-ditch escalation that an alert represents.
+    However, you should also be able to find a similar cause that's less urgent. For example, your quota is greater than 90% and will run out in less than four days at the growth rate of the last day. That set of circumstances will catch most cases. You can then deal with the problem as a ticket or email alert or daily problem report, rather than the last-ditch escalation that an alert represents.
 - Your alert setup is more complex than the problems they're trying to detect.
 
     The goal should be to move towards simple, robust, self-protecting systems.

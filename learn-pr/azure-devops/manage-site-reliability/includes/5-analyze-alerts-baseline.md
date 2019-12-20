@@ -44,7 +44,7 @@ The key attributes of an alert rule are:
 
 ## What you can alert on
 
-You can alert on metrics and logs as described in [Sources of monitoring data for Azure Monito](https://docs.microsoft.com/azure/azure-monitor/platform/data-sources?azure-portal=true). These alerts include, but are not limited to:
+You can alert on metrics and logs as described in [Sources of monitoring data for Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/platform/data-sources?azure-portal=true). These alerts include, but are not limited to:
 
 - Metric values.
 - Log search queries.
@@ -60,7 +60,7 @@ The following alert states are supported:
 
 | State      | Description    |
 |------------------------------------|--------------------------------------------|
-| New       | The issue has just been detected and has not yet been reviewed.   |
+| New       | The issue has been detected and has not yet been reviewed.   |
 | Acknowledged | An administrator has reviewed the alert and started working on it.|
 | Closed                 | The issue has been resolved. After an alert has been closed, you can reopen it by changing it to another state.          |
 
@@ -142,6 +142,6 @@ Select **Columns** at the top of the page to select which columns to display.
 
 ## The final step
 
-**Andy**: OK, that's quite a list of requirements. I'll write it up and we can review it before I take it to Irwin. I think we can make a good case for opening a new position. Our success with the pipeline has given us a lot of credibility.
+**Andy**: OK, that's quite a list of requirements. I'll write it up and we can review it before I take it to Irwin. I think we can make a good case for opening a new position. Our success with the pipeline has given us much credibility.
 
 The last thing I want to bring up affects all of us. Pushing out to production exposes us a lot more. There will inevitably be problems, failures, stress, and mistakes. How do we want to handle that?

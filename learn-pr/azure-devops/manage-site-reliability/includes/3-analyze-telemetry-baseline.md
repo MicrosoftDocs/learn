@@ -1,6 +1,6 @@
 The team is meeting to put together a job description for an SRE. They've come to a common understand of what an SRE is. Now, they want to define some specific skills.
 
-**Tim**: To my mind, an SRE needs to be able to anticipate problems and the only way to do that is with a monitoring system. Given that we're using Azure DevOps, I think they need experience with Application Insights.
+**Tim**: To my mind, an SRE needs to be able to anticipate problems and the only way to do that is to use a monitoring system. Given that we're using Azure DevOps, I think they need experience with Application Insights.
 
 **Mara**: Let's take a look at what it does.
 
@@ -24,7 +24,7 @@ Application Insights sends a notification when it detects that the performance o
 
     Your app has a performance issue that affects only some requests. For example, pages are loading more slowly on one type of browser than on others; or requests are being served more slowly from one particular server. Application Insights algorithms look at page load times, request response times, and dependency response times.
 
-[Smart Detection](https://docs.microsoft.com/azure/azure-monitor/app/proactive-diagnostics?azure-portal=true) is an Application Insights feature that warns you of potential performance problems and failure anomalies in your web application. It requires at least 8 days of telemetry, at a sufficient volume, to establish a baseline. After that time period, any significant issue produces a notification.
+[Smart Detection](https://docs.microsoft.com/azure/azure-monitor/app/proactive-diagnostics?azure-portal=true) is an Application Insights feature that warns you of potential performance problems and failure anomalies in your web application. It requires at least eight days of telemetry, at a sufficient volume, to establish a baseline. After that time period, any significant issue produces a notification.
 
 ## Does an alert always signify a problem?
 
@@ -48,7 +48,7 @@ Each alert notification includes diagnostic information. Here's an example of ho
 
 ## Configure email notifications
 
-Smart Detection notifications are enabled by default and sent to those who have *owners*, *contributors* and *readers* access to the Application Insights resource. To change this, either select **Configure** in the email notification or open **Smart Detection settings** in Application Insights.
+Smart Detection notifications are enabled by default and sent to those who have *owners*, *contributors*, and *readers* access to the Application Insights resource. To change this, either select **Configure** in the email notification or open **Smart Detection settings** in Application Insights.
 
 ![A screenshot of Smart Detection settings](../media/2-smart-detection-settings.png)
 
@@ -76,21 +76,21 @@ In diagnosing the issue, ask yourself these questions:
 
 * Where is the problem?
 * Is the server slow to respond?
-* Is the page very long?
-* Does the browser have to do a lot of work to display this page?
+* Is the page long?
+* Does the browser have to do much work to display this page?
 
 If you're investigating browser response times, open the **Browsers** metric. The segmented display of browser page load times shows where the time is going.
 
-- If **Send Request Time** is high, either the server is responding slowly or the request is a POST with a lot of data. Look at the [performance metrics](https://docs.microsoft.com/azure/azure-monitor/app/web-monitor-performance#metrics?azure-portal=true) to investigate response times.
+- If **Send Request Time** is high, either the server is responding slowly or the request is a POST with a large amount of data. Look at the [performance metrics](https://docs.microsoft.com/azure/azure-monitor/app/web-monitor-performance#metrics?azure-portal=true) to investigate response times.
 - Set up [dependency tracking](https://docs.microsoft.com/azure/azure-monitor/app/asp-net-dependencies?azure-portal=true) to see whether the delay is due to external services or your database.
-- If **Receiving Response** is predominant, your page and its dependent parts - JavaScript, CSS, images and so on (but not asynchronously loaded data) are long. Set up an [availability test](https://docs.microsoft.com/azure/azure-monitor/app/monitor-web-app-availability?azure-portal=true), and be sure to set the option to load dependent parts. When you get some results, open the detail of a result and expand it to see the load times of different files.
+- If **Receiving Response** is predominant, your page and its dependent parts - JavaScript, CSS, images, and so on (but not asynchronously loaded data) are long. Set up an [availability test](https://docs.microsoft.com/azure/azure-monitor/app/monitor-web-app-availability?azure-portal=true), and be sure to set the option to load dependent parts. When you get some results, open the detail of a result and expand it to see the load times of different files.
 - A **High Client Processing** time suggests scripts are running slowly. If the reason isn't obvious, consider adding some timing code and send the times in `trackMetric` calls.
 
 ### Improve slow pages
 
 Here are some places to get started when thinking about how to improve slow pages:
 
-- Slow loading because of big files.
+- Slow loading because of large files.
 
     Load the scripts and other parts asynchronously. Use script bundling. Break the main page into widgets that load their data separately. Don't send plain old HTML for long tables: use a script to request the data as JSON or other compact format, then fill the table in place.
 - Slow server dependencies.
@@ -106,8 +106,8 @@ A response time degradation notification tells you:
 
 - The response time as compared to the normal response time for this operation.
 - How many users are affected.
-- Average response time and 90th percentile response time for this operation on the day of the detection and 7 days before.
-- Count of operation requests on the day of the detection and 7 days before.
+- Average response time and 90th percentile response time for this operation on the day of the detection and seven days before.
+- Count of operation requests on the day of the detection and seven days before.
 - Correlation between degradation in this operation and degradations in related dependencies.
 - Resources to help you diagnose the problem.
   - Profiler traces help you view where operation time is spent (the link is available if Profiler trace examples were collected for this operation during the detection period).
@@ -127,19 +127,19 @@ This tells you:
 
 - The duration compared to normal response time for this operation.
 - How many users are affected.
-- Average duration and 90th percentile duration for this dependency on the day of the detection and 7 days before.
-- The number of dependency calls on the day of the detection and 7 days before.
+- Average duration and 90th percentile duration for this dependency on the day of the detection and seven days before.
+- The number of dependency calls on the day of the detection and seven days before.
 - Resources to help you diagnose the problem.
   - Performance reports in Metric Explorer for this dependency.
   - Search for this dependency's calls to view call properties.
-  - Failure reports - If there is one or more failures, this indicates there were failed dependency calls during the detection period that might have contributed to duration degradation.
+  - Failure reports. If there are one or more failures, this indicates there were failed dependency calls during the detection period that might have contributed to duration degradation.
   - Open Analytics with queries that calculate this dependency duration and count.
 
 ## Smart Detection of slow performing patterns
 
 Application Insights finds performance issues that might only affect some portion of your users, or only affect users in some cases. For example, you might see that slow page loads happen only with one kind of browser or in a given geographical area.
 
-Anomalies like these are very hard to detect just by inspecting the data, but they're more common than you might think. Often, they only surface when your customers complain.
+Anomalies like these are hard to detect just by inspecting the data, but they're more common than you might think. Often, they only surface when your customers complain.
 
 Application Insights algorithms look at page load times, request response times at the server, and dependency response times. You don't have to set any thresholds or configure rules. Machine learning and data mining algorithms are used to detect abnormal patterns. Here's an example of a notification:
 
@@ -152,7 +152,7 @@ The **What** field describes:
 - The problem that was detected.
 - The events that led to the problem behavior.
 
-The table compares the poorly-performing set with the average behavior of all other events.
+The table compares the poorly performing set with the average behavior of all other events.
 
 Select the links to open **Metric Explorer** and **Search** to find relevant reports that are filtered on the time and properties of the slow performing set. Then modify the time range and filters to explore the telemetry.
 

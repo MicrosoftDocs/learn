@@ -6,7 +6,7 @@ Let's listen in as they discuss their concerns.
 
 ## The morning meeting
 
-**Andy**: OK, folks, we're looking at a big change coming up. We'll be making the production environment a part of our pipeline. There are a lot of details to work out, but one issue I want to bring up is reliability. How do we make sure the production site is always reliable and always available?
+**Andy**: OK, folks, we're looking at a significant change coming up. We'll be making the production environment a part of our pipeline. There are many details to work out, but one issue I want to bring up is reliability. How do we make sure the production site is always reliable and always available?
 
 **Tim**: I think one part of that question is who's going to be responsible. Someone needs to oversee the site on a daily basis and none of us has the time to do that. That's a job and it's called a site reliability engineer, or SRE.
 
@@ -31,7 +31,7 @@ Some of the typical responsibilities of a site reliability engineer are to:
 - Ensure that the software has good logging and diagnostics.
 - Create and maintain operational runbooks.
 - Help triage escalated support tickets.
-- Work on feature requests, defects and other development tasks.
+- Work on feature requests, defects, and other development tasks.
 - Contribute to the overall product roadmap.
 - Perform live site reviews and capture feedback for system outages.
 
@@ -51,4 +51,4 @@ Other key skills for a good SRE focus on application monitoring and diagnostics.
 
 **Andy**: OK, all of us are clear on what SRE is. Now, what skill set are we looking for?
 
-**Tim:**: Let's define that next. I have some ideas.
+**Tim**: Let's define that next. I have some ideas.
