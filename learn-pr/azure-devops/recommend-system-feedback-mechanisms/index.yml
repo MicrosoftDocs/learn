@@ -2,7 +2,7 @@
 uid: learn.azdo.recommend-system-feedback-mechanisms
 metadata:
   title: Recommend and design system feedback mechanisms - Learn
-  description: Learn ...
+  description: Learn how surveys and application analytics create a feedback loop that helps you understand the voice of the customer.
   ms.date: 12/20/2019
   author: tpetchel
   ms.author: thpetche
@@ -10,7 +10,7 @@ metadata:
   #ms.learn-contact: thpetche
   ms.prod: learning-azure
 title: Recommend and design system feedback mechanisms
-summary: Learn ...
+summary: Learn how surveys and application analytics create a feedback loop that helps you understand the voice of the customer.
 abstract: |
   In this module, you will:
   - Examine the tensions between speed and risk.
