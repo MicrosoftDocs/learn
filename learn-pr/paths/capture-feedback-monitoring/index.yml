@@ -41,4 +41,4 @@ modules:
 - learn.azdo.route-system-feedback
 - learn.azdo.manage-site-reliability
 trophy:
-  uid: learn.azdo.deploy-applications-with-azure-devops.trophy
+  uid: learn.azdo.capture-feedback-monitoring.trophy
