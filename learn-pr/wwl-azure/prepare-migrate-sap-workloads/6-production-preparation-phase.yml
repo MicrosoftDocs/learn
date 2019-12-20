@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn-pr.wwl.preparing-migrate-sap-workloads-azure.production-preparation-phase
+title: Production preparation phase
+metadata:
+  title: Production preparation phase
+  description: Production preparation phase
+  ms.date: 12/20/2019
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/6-production-preparation-phase.md)]
