@@ -3,7 +3,7 @@ uid: learn.azdo.manage-site-reliability
 metadata:
   title: Manage site reliability - Learn
   description: Learn how to manage your site reliability.
-  ms.date: 06/21/2019
+  ms.date: 12/20/2019
   author: tpetchel
   ms.author: thpetche
   ms.topic: interactive-tutorial
@@ -20,7 +20,7 @@ prerequisites: An Azure DevOps organization
 iconUrl: /learn/achievements/generic-badge.svg
 ratingEnabled: true
 levels:
-- beginner
+- intermediate
 roles:
 - devops-engineer
 - administrator
