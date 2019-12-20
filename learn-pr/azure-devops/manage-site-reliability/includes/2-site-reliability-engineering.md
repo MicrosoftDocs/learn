@@ -1,13 +1,12 @@
-The Tailspin team is applying all of their DevOps skills in the devlvery and deployment of their web site. They are getting ready to move to the final stage and deploy to a live production environment so the reliability of their web site is on their minds as they get ready to go live. 
+The Tailspin team is applying all of their DevOps skills in the devlvery and deployment of their web site. They are getting ready to move to the final stage and deploy to a live production environment so the reliability of their web site is on their minds as they get ready to go live.
 
-Because they will be continuously publishing using their pipeline, they know that there may be reliability issues that need constant monitoring and the team will need to be notified so that they can address these issues. 
+Because they will be continuously publishing using their pipeline, they know that there may be reliability issues that need constant monitoring and the team will need to be notified so that they can address these issues.
 
 Let's listen in as they discuss their concerns.
 
 ## The morning meeting
 
-Talk about who is going to 
-oversee deployments, monitor overall performance, review error logs, and troubleshoot software defects. Who owns this area?
+Talk about who is going to oversee deployments, monitor overall performance, review error logs, and troubleshoot software defects. Who owns this area?
 
 That person is the SRE
 
