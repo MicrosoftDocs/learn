@@ -8,11 +8,11 @@ In [Manage release cadence in Azure Pipelines with deployment patterns](/learn/m
 
 ## The expectations of continuous delivery
 
-Mara is offering a solution to an issue that DevOps and CD has made very apparent. In the era of continuous delivery (CD), we're expected to quickly deliver software that is stable and performs well. Development teams embrace CD tools to automate their builds, their test passes, and their deployments, all at an accelerated pace.
+Mara is offering a solution to an issue that DevOps and CD has made apparent. In the era of continuous delivery (CD), we're expected to quickly deliver software that is stable and performs well. Development teams embrace CD tools to automate their builds, their test passes, and their deployments, all at an accelerated pace.
 
-Because teams want to deliver their new features and applications faster, there is always tension between the need for innovation and the need for stability. How can you encourage innovation while still mitigating risk?
+Because teams want to deliver their new features and applications faster, there's always tension between the need for innovation and the need for stability. How can you encourage innovation while still mitigating risk?
 
-On the innovation side, the first step is to create a culture where executives, business planners, developers, operations, and other stakeholders understand how innovations in engineering productivity align with business outcomes. Next, to prove that specific innovations improve those outcomes, test the hypotheses through continuous experimentation. 
+On the innovation side, the first step is to create a culture where executives, business Class Schedules, developers, operations, and other stakeholders understand how innovations in engineering productivity align with business outcomes. Next, to prove that specific innovations improve those outcomes, test the hypotheses through continuous experimentation.
 
 A culture of continuous experimentation is an environment where you can quickly test features by creating an instrumented minimal viable product (MVP). You then release that MVP to a subset of customers for testing. This limited release enables the team to make decisions based on facts and to move quickly towards the optimal solution.
 
@@ -22,7 +22,7 @@ One way to mitigate risk in feature releases is to introduce _feature flags_ (al
 
 The following illustrates a typical software delivery timeline:
 
-![A graphic showing software delivery timelines](../media/3-software-delivery.png)
+![A graphic showing a software delivery timeline](../media/3-software-delivery.png)
 
 By including feature flags in the continuous delivery process, teams can more efficiently integrate release, deployment, and operational management into the software development cycle.
 

@@ -1,18 +1,18 @@
 The team is wrapping up their discussion about collecting customer feedback during the beta tests. Tim has one more topic.
 
-**Tim**: This is something I've been thinking about for the future, but I might as well bring it up now so you know where I want to go. Our infrastructure's only going to get more complex, which means figuring out what's going on is only going to get harder.
+**Tim**: I have something I've been thinking about for the future. I might as well bring it up now so you know where I want to go. Our infrastructure's only going to get more complex, which means figuring out what's going on is only going to get harder.
 
 I've seen what automation can do, and I think it can help here, too. Have you ever heard of augmented search?
 
 ## Automate application analytics
 
-Tim is thinking about the difficulty in troubleshooting complex infrastructures. It's a problem that's becoming more apparent, especially as Agile becomes more popular. In an Agile environment, you typically find multiple development teams that work simultaneously. Each team introduces new code or code changes at least daily, and sometimes several times a day. In such a rapidly changing environment, it's extremely common for problems to "slip through the cracks," and to be discovered in production. By the time the team learns about the problem, the bugs have already impacted end-users, which means the issues have to be resolved immediately.
+Tim is thinking about the difficulty in troubleshooting complex infrastructures. It's a problem that's becoming more apparent, especially as Agile becomes more popular. In an Agile environment, you typically find multiple development teams that work simultaneously. Each team introduces new code or code changes at least daily, and sometimes several times a day. In such a rapidly changing environment, it's common for problems to "slip through the cracks," and to be discovered in production. By the time the team learns about the problem, the bugs have already affected end users, which mean the issues have to be resolved immediately.
 
-Teams have to conduct an extremely rapid investigation to identify the root cause of the problem. Identifying where the symptoms come from and then isolating the root cause is a challenging task. Symptoms can be found across various layers of a large hybrid IT environment, including the servers, the storage devices, the databases, all the way to the front-end and server-side code. Investigations that traditionally would take hours or days to complete must be done within minutes.
+Teams have to conduct a rapid investigation to identify the root cause of the problem. Identifying where the symptoms come from and then isolating the root cause is a challenging task. Symptoms can be found across various layers of a large hybrid IT environment, including the servers, the storage devices, the databases, all the way to the front-end and server-side code. Investigations that traditionally took hours or days to complete must be done within minutes.
 
-Traditionally, teams examine the infrastructure and application logs as part of the investigation. However, the massive amount of log records that are produced makes it virtually impossible to do examination manually. It's similar to finding a needle in a haystack. 
+Traditionally, teams examine the infrastructure and application logs as part of the investigation. However, the massive number of log records that are produced makes it impossible to do examination manually. It's similar to finding a needle in a haystack. 
 
-In most cases, these investigations are conducted by using log management and analysis systems that collect and aggregate these logs (both from infrastructure and from applications), centralizing them in one place, and then providing search capabilities to explore the data. These systems certainly help but they still rely completely on the investigative skills and the knowledge of the operator. The operator must know exactly what to search for and have a deep understanding of the environment in order to use these tools effectively.
+In most cases, these investigations are conducted by using log management and analysis systems that collect and aggregate these logs. These systems will collect data from both infrastructure and from applications and centralize them in one place. Then they provide search capabilities to explore the data. These systems certainly help but they still rely completely on the investigative skills and the knowledge of the operator. The operator must know exactly what to search for and have a deep understanding of the environment in order to use these tools effectively.
 
 Another complication is that the log files of applications are far less predictable than the log files of infrastructure. Application logs typically include error messages and error numbers that developers have added to the code over time, often inconsistently. In most cases, search queries produce thousands of results, many of them unimportant, even when the operator is skilled. That leaves the operator with the same "needle in the haystack" situation.
 
@@ -30,7 +30,7 @@ By using augmented search, DevOps engineers can identify a problem and the root 
 
 A key factor to automating feedback is telemetry. By inserting telemetric data into your production application and environment, a DevOps team can automate feedback mechanisms while monitoring applications in real time. DevOps teams use telemetry to discover and solve problems as they occur, but this data can also be useful to business users.
 
-When properly instrumented, telemetry can help you understand, in real time, how customers are engaging with the application. This could be critical information for product managers, marketing teams, and customer support. Therefore, it's important that feedback mechanisms share continuous intelligence with all stakeholders.
+When properly instrumented, telemetry can help you understand, in real time, how customers are engaging with the application. This telemetry could contain critical information for product managers, marketing teams, and customer support. Therefore, it's important that feedback mechanisms share continuous intelligence with all stakeholders.
 
 ### What is telemetry and why should I care?
 
@@ -42,7 +42,7 @@ The concept of telemetry is often confused with logging. Logging is a tool that 
 
 The primary benefit of telemetry is the ability to monitor the state of an object or environment while remaining removed from it physically. After you've shipped a product, you can't physically peer over the shoulders of thousands (or millions) of users as they engage with your product to find out what works, what's easy, and what's cumbersome. Thanks to telemetry, those insights can be delivered directly to a dashboard for you to analyze.
 
-Because telemetry provides insights into how well your product is working for your end users – as they use it – it's an incredibly valuable tool for ongoing performance monitoring and management. Plus, you can use the data you've gathered from version 1.0 to drive improvements and prioritize updates for your release of version 2.0.
+Because telemetry provides insights into how well your product is working for your end users as they use it, it's a valuable tool for ongoing performance monitoring and management. Plus, you can use the data you've gathered from version 1.0 to drive improvements and prioritize updates for your release of version 2.0.
 
 Telemetry enables you to answer questions such as:
 
@@ -60,7 +60,7 @@ The answers to these and many other questions enables you to make continuous imp
 
 Although telemetry provides many clear benefits, it comes with its own set of challenges. Perhaps its largest challenge – and a commonly occurring issue – is not with telemetry itself, but with your end users and their willingness to allow what some see as a violation of privacy. Some users immediately turn data collection off when they notice it. This means any data generated from their use of your product won't be gathered or reported.
 
-Although this isn't necessarily a problem by itself, the issue is that users who tend to disallow these types of technologies can tend to fall into the more tech-savvy portion of your user base. This can result in the "dumbing-down" of software. Many users, on the other hand, take no notice of telemetry collection going on behind the scenes.
+Although this isn't necessarily a problem by itself, the issue is that users who tend to disallow these types of technologies can tend to fall into the more tech-savvy portion of your user base. This can result in the "dumbing-down" of software. Many users, however, take no notice of telemetry collection going on behind the scenes.
 
 It's a problem without a clear solution; It certainly doesn't negate the overall power of telemetry for driving development. However, keep this limitation in mind as you analyze your data. When you design a strategy for how you use telemetry data, it's important to account for users who don't participate.
 

@@ -1,6 +1,6 @@
 The team is still planning out their strategy for collecting feedback from their beta testers.
 
-**Tim**: One thing we've overlooked is what our testers are going to be telling each other, and their friends, and any other gamer out there, on Twitter and Reddit and who knows where else. That could me more important than what they tell us.
+**Tim**: One thing we've overlooked is what our testers are going to be telling each other, and their friends, and any other gamer out there, on Twitter and Reddit and who knows where else. That could be more important than what they tell us.
 
 **Mara**: Oh, good point.
 
@@ -8,7 +8,7 @@ The team is still planning out their strategy for collecting feedback from their
 
 ## Capture and analyze user feedback
 
-The team needs to collect data from a lot of sources, including external ones and not just the sources they put in place themselves. Why? Because people are talking about you and your competitors constantly. They could be asking for help, complaining about a bug, or raving about how much they love you. And you want to stay on top of all those conversations. Your customers' opinions matter, not just to public relations and marketing, but to every team – from customer support to product development to sales.
+The team needs to collect data from many sources, including external ones and not just the sources they put in place themselves. Why? Because people are talking about you and your competitors constantly. They could be asking for help, complaining about a bug, or raving about how much they love you. And you want to stay on top of all those conversations. Your customers' opinions matter, not just to public relations and marketing, but to every team – from customer support to product development to sales.
 
 But sifting through irrelevant posts on multiple channels is overwhelming and can be a huge time sink. Sometimes it's not even possible when people don't tag you or link to you.
 
@@ -23,7 +23,7 @@ Here are some pros and cons you might consider when deciding whether to use a sc
 
 Startups thrive on feedback as their "north star", and are constantly evolving based on what their customers request and complain about. This also applies to enterprises, who know that customers are what make any company thrive, and are aware that, because of their size, they must often work harder than startups to stay relevant and to innovate.
 
-If you're just collecting feedback when it comes in, you're missing out on data that's just as important as page views or engagement. It's like deciding not to bother setting up Google Analytics on your homepage, or not properly configuring your CRM. In the end, you're deciding to not benefit from data that may have a transformative effect on your product strategy.
+If you're just collecting feedback when it comes in, you're missing data that's as important as page views or engagement. It's like deciding not to bother setting up Google Analytics on your homepage, or not properly configuring your CRM. In the end, you're deciding to not benefit from data that may have a transformative effect on your product strategy.
 
 With a dataset of feedback – whether that's from customer reviews, support tickets, or social media – you can dig into the words your customers are using to describe certain parts of your product and get insights into what they like, and perhaps more importantly, what they don't like.
 
@@ -49,13 +49,13 @@ One common technique is to break up a production environment into a set of separ
 
 _Release gates_ automate the waiting period between environments in release pipelines. They enable you to configure the conditions that cause the release to wait. For example, you can use Azure monitoring alerts to pause your release if monitoring alerts indicate that the environments you've deployed to are unhealthy. Or, you can use a work item query to automatically pause a release if anyone files a critical bug against the release.
 
-However, one thing you'll quickly learn is that no amount of monitoring will catch every single problem. If you have a popular application, your users will know about a problem within seconds and turn very quickly to Twitter to start asking about it. Twitter can be a wonderful "alert" to let you know something is wrong with your app.
+However, one thing you'll quickly learn is that no amount of monitoring will catch every single problem. If you have a popular application, your users will know about a problem within seconds and turn quickly to Twitter to start asking about it. Twitter can be a wonderful "alert" to let you know something is wrong with your app.
 
 You can use the [Twitter Sentiment Analysis](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vss-services-twittersentimentanalysis?azure-portal=true) extension to create a release gate that calculates the average sentiment of tweets made for a given hashtag. This extension combines Azure DevOps, Azure functions, and Microsoft AI to analyze sentiment on your Twitter handle and gate your release progress based on sentiment. The analysis is relatively simple, but shows how easy it is to extend release gates in Azure DevOps to measure any signal you choose and use that signal to manage your release process.
 
 ## The decision
 
-**Tim**: I'm happy to keep an eye on tweets, subreddits and such. I enjoy lurking.
+**Tim**: I'm happy to keep an eye on tweets, subreddits, and such. I enjoy lurking.
 
 **Andy**: Thanks. Mara, you and I can think about release gates.
 

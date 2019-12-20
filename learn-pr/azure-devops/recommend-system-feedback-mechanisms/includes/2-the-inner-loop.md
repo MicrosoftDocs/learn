@@ -4,11 +4,11 @@ Today, Irwin, the product manager is joining the team meeting. He has exciting n
 
 ## The meeting
 
-**Irwin**: As you know, we're gearing up for a new release of the game and the website. We've decided that, to make our products the best they can be, we're going to do beta testing. Marketing has picked a few of our most dedicated gamers, and we're going to give them access to the staging environments and let them play. They'll also be checking out the website that you all have been building.
+**Irwin**: As you know, we're gearing up for a new release of the game and the website. We've decided that, to make our products the best they can be, we're going to do beta testing. Marketing has picked a few of our most dedicated gamers. We're going to give them access to the staging environments and let them play. They'll also be checking out the website that you all have been building.
 
-Our first priority will be to fix the bugs they find. At least for the website, now that you have a CI/CD pipeline in place, you should have a really fast turnaround. We could probably even add new features to the website, if they ask for them!
+Our first priority will be to fix the bugs they find. At least for the website, now that you have a CI/CD pipeline in place, you should have a  fast turnaround. We could probably even add new features to the website, if they ask for them!
 
-We'll also need to figure out how to collect data about what they're doing. It's not just for you technical folks. Marketing wants data, too. Why don't you think about what data you want about the website? Oh, and t-shirts. Think about cool t-shirt designs. Those are really important. Thanks! You're the best! Got another meeting, so just let me know what you decide. Bye!
+We'll also need to figure out how to collect data about what they're doing. It's not just for technical folks. Marketing wants data, too. Why don't you think about what data you want about the website? Oh, and t-shirts. Think about cool t-shirt designs. Those are really important. Thanks! You're the best! Got another meeting, so just let me know what you decide. Bye!
 
 _Tim looks around._
 
@@ -85,7 +85,7 @@ You can gain immediate benefits by implementing the first two recommendations. H
 
 A _tangled loop_ happens when multiple processes, each with its own inner loop, become dependent on one another.
 
-Say that your monolithic codebase has some set of core functionality that does a lot of the difficult work your application needs to perform. You might package that code into a helper library.
+Say that your monolithic codebase has some set of core functionality that does much the difficult work your application needs to perform. You might package that code into a helper library.
 
 To do this, you would typically move your library code to a separate repository and then set up a CI/CD pipeline that builds, tests, and packages the library. The pipeline might then publish the result to a package server. You would then configure your application to pull that library from the package server.
 

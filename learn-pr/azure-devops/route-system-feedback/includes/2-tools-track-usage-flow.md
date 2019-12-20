@@ -132,9 +132,9 @@ Here's a diagram that shows the flow of monitoring data from live services into 
 
 ![A drawing of ...](../media/2-application-insights.png)
 
-You can also pull in telemetry data from your host environments. This data includes performance counters, Azure diagnostics, and Docker logs. You can also set up _synthetic monitoring_ tests. Synthetic monitoring uses a set of transactions to assess performance and availability. Synthetic transactions are predictable tests that enable you to compare results from release to release.
+You can also pull in telemetry data from your host environments. This data includes performance counters, Azure Diagnostics, and Docker logs. You can also set up _synthetic monitoring_ tests. Synthetic monitoring uses a set of transactions to assess performance and availability. Synthetic transactions are predictable tests that enable you to compare results from release to release.
 
-What's the overhead? The impact on your app's performance is typically very small. Tracking calls are non-blocking, and are batched and sent on a separate thread.
+What's the overhead? The impact on your app's performance is typically small. Tracking calls are non-blocking, and are batched and sent on a separate thread.
 
 ### What does Application Insights monitor?
 
@@ -241,7 +241,7 @@ You can integrate Azure monitoring tools with ITSMC to:
 * Create or update work-items in the ITSM tools, based on Azure alerts.
 * Pull incident and change request data from ITSM tools into Azure Log Analytics.
 
-Azure monitoring tools enable you to to identify, analyze, and troubleshoot issues. However, the work items related to an issue are typically stored in an ITSM tool. It makes more sense to implement a ticketing system with the ITSMC. That way, instead of going back and forth between your ITSM tool and Azure monitoring tools, you can get all the information that you need in one place. ITSMC improves the troubleshooting experience by reducing the time it takes to resolve issues.
+Azure monitoring tools enable you to identify, analyze, and troubleshoot issues. However, the work items related to an issue are typically stored in an ITSM tool. It makes more sense to implement a ticketing system with the ITSMC. That way, instead of going back and forth between your ITSM tool and Azure monitoring tools, you can get all the information that you need in one place. ITSMC improves the troubleshooting experience by reducing the time it takes to resolve issues.
 
 ## The decision
 

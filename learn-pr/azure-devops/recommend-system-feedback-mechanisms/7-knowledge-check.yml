@@ -19,7 +19,7 @@ quiz:
     - content: Regression testing.
       isCorrect: false
       explanation: "Regression testing provides feedback and is not considered a tax."
-    - content: Waiting for the database administrator (DBA) to sign-off on a database schema change.
+    - content: Waiting for the database administrator (DBA) to sign off on a database schema change.
       isCorrect: true
       explanation: "Waiting for DBA sign-off is neither adding value nor providing feedback. This is a tax."
     - content: Reading error logs.
