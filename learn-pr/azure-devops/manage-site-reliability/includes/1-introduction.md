@@ -1,6 +1,6 @@
-DevOps practices allow software developers to take a larger role in production operations and application monitoring. Where these were traditionally opperations tasks, modern tools are making it easier for developers to own their projects from ideation all the way to production.
+DevOps practices encourage software developers to take a larger role in production operations and application monitoring. Where these were traditionally opperations tasks, modern tools are making it easier for developers to own their projects from creation all the way to production.
 
-In this module, you learn about managing site reliability including telemetry analysis, alerting on site reliability symptoms, and analyzing and tuning your alerts.
+In this module, you learn about managing site reliability, which includes telemetry analysis, alerting on site reliability symptoms, and analyzing and tuning your alerts.
 
 ## Learning objectives
 
