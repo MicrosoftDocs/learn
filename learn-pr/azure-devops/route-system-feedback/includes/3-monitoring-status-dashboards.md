@@ -9,8 +9,6 @@ In this part, you explore some of the ways you can build a monitoring and status
 * Grafana
 * Building your own custom application
 
-TODO: Any introduction from the TS team?
-
 ## What are Azure dashboards?
 
 [Dashboards](https://docs.microsoft.com/azure/azure-portal/azure-portal-dashboards?azure-portal=true) enable you to create a focused and organized view in the Azure portal of your cloud resources. They provide a "single pane of glass" over your Azure infrastructure and services, which enables you to identify important issues more quickly.
@@ -49,7 +47,9 @@ Azure dashboards do not provide:
 
 [Views in Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/platform/view-designer?azure-portal=true) enable you to create custom visualizations with log data. They are used by monitoring solutions to present the data they collect.
 
-![A drawing of ...](../media/3-azure-monitor-views.png)
+Here's a screenshot:
+
+![A screenshot of Azure Monitor Views](../media/3-azure-monitor-views.png)
 
 ### Advantages of Azure Monitor Views
 
@@ -162,7 +162,3 @@ With a custom application, you have:
 ### Limitations of building your own custom application
 
 With a custom application, it's up to you to build the functionality that you need. Significant engineering effort may be required.
-
-TODO: Summarize any interesting observations here.
-
-TODO: Any observations from the TS team?
