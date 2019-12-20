@@ -1,4 +1,4 @@
-TODO: In this part...
+In this part, you learn about the five steps you can take to measure customer satisfaction. You also learn how and when to make feedback controls available within your products and when to publish your product roadmap for customers to comment and vote on.
 
 > "Measurement is the first step that leads to control and eventually to improvement. If you can't measure something, you can't understand it. If you can't understand it, you can't control it. If you can't control it, you can't improve it."
 >
@@ -16,7 +16,7 @@ The team is trying to decide how to gauge customer satisfaction. They want data 
 
 As an analogy, consider a car. A car's external appearance, its dashboard, and its steering wheel, all define its UI. The act of driving the car is the UX. The interface directly contributes to the experience. For example, a beautiful car interior makes for a better experience of sitting in one, but it's not the experience itself.
 
-The only real measure of software quality that matters is customer satisfaction and measuring customer satisfaction doesn't have to be complicated or expensive. In fact, it's fairly simple to incorporate customer satisfaction measurements into your existing customer success strategy. 
+The only real measure of software quality that matters is customer satisfaction and measuring customer satisfaction doesn't have to be complicated or expensive. In fact, it's fairly simple to incorporate customer satisfaction measurements into your existing customer success strategy.
 
 No matter how you look at it, measuring customer satisfaction comes down to gathering customer feedback. To accurately gauge customer sentiment, you simply need to ask them about their experience. A survey is an easy way to do that.
 

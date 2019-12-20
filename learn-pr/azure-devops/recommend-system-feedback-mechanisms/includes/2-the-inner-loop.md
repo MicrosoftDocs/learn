@@ -1,4 +1,4 @@
-TODO: LEAD IN
+In this part, you define the _inner loop_ and identify which parts of your inner loop add customer value. You also see how _tangled loops_ can form when you break your codebase into smaller units.
 
 Today, Irwin, the product manager is joining the team meeting. He has exciting news.
 
@@ -21,8 +21,6 @@ _Tim looks around._
 The _inner loop_ is the iterative process that developers perform when they write, build, and debug code. There are, of course, other things that a developer does, but the inner loop is the core set of steps that developers perform over and over before they share their work.
 
 Here's a diagram that illustrates this idea:
-
-TODO: Make smaller; remove border.
 
 ![A drawing of the design build test loop](../media/2-inner-loop.png)
 
