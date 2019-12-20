@@ -1,4 +1,4 @@
-Visualizations, such as charts and graphs, can help you analyze your monitoring data to drill-down on issues and identify patterns. Depending on the tool you use, you may also be able to share these visualizations with other users inside and outside of your organization.
+Visualizations, such as charts and graphs, can help you analyze your monitoring data to drill down on issues and identify patterns. Depending on the tool you use, you may also be able to share these visualizations with other users inside and outside of your organization.
 
 In this part, you explore some of the ways you can build a monitoring and status dashboard for your application. You'll look at:
 
@@ -179,4 +179,4 @@ With a custom application, it's up to you to build the functionality that you ne
 
 **Amita**: I think I'll start with Azure dashboards. I think it's straightforward to make one, and I like that you can control the time range. Also, it's easy to share the dashboard. Tim, do you want to get together so we can decide what the dashboard should show?
 
-**Tim**: Sounds great. Off the top of my head, I think CPU, network and disk operations might make a good starting point but let's talk about it.
+**Tim**: Sounds great. Off the top of my head, I think CPU, network, and disk operations might make a good starting point but let's talk about it.

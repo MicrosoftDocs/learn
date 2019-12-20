@@ -8,7 +8,7 @@ In this part, you learn about the five steps you can take to measure customer sa
 
 The team is still in a meeting. Now they're trying to decide how to get data about how well the beta testers like the website.
 
-**Andy**: I know there are a lot of approaches. I tend to think in terms of continuous feedback, which means we have built-in customer feedback loops. There are a lot of ways we can make it easy for customers to tell us their reactions.
+**Andy**: I know there are a lot of approaches. I tend to think in terms of continuous feedback, which means we have built-in customer feedback loops. There are numerous ways we can make it easy for customers to tell us their reactions.
 
 ## Measure customer satisfaction
 
@@ -36,7 +36,7 @@ What types of metrics measure customer satisfaction? When you create a customer 
 
 Each of these methods asks just one question, which can greatly simplify the process of collecting customer insights.
 
-While you may not think that the survey methodology matters much, how you ask the question does seem affect what you're measuring.
+While you may not think that the survey methodology matters much, how you ask the question does seem to affect what you're measuring.
 
 For instance, a 2010 study found that 20% of _satisfied_ customers said they intended to leave the company in question, while 28% of the _dissatisfied_ customers intended to stay. In this example, "satisfied" doesn't necessarily equate to "loyal."
 
@@ -111,7 +111,7 @@ After you collect your data, make sure it doesn't just sit there dormant and unu
 
 ## Step 5: Make adjustments and repeat
 
-Now that you have these insights, what are you going to do about it? Ultimately, this decision reflects on your own findings and capabilities. You may find that a whole segment is dissatisfied because of a particular experience. In that case, you may need to further investigate why that experience causes dissatisfaction and then run experiments to try to improve it. You may find that you have a small percentage of super fans. How can you get them to recommend you to others?
+Now that you have these insights, what are you going to do about it? Ultimately, this decision reflects on your own findings and capabilities. You may find that a whole segment is dissatisfied because of a particular experience. In that case, you need to investigate why that experience causes dissatisfaction and then run experiments to try to improve it. You may find that you have a small percentage of super fans. How can you get them to recommend you to others?
 
 If you won't change anything after collecting your customer satisfaction data, you're better off not collecting it. It's going to take time and effort, so you need to put it to good use.
 
