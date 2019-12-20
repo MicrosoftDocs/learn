@@ -21,11 +21,11 @@ Continuous monitoring builds on CI/CD concepts, which help you develop and deliv
 
 ## What is observability?
 
-Observability refers to making data available from within the system that you wish to monitor. Monitoring is the actual task of collecting and displaying this data.
+_Observability_ refers to making data available from within the system that you wish to monitor. Monitoring is the actual task of collecting and displaying this data.
 
 ## What is Azure Monitor?
 
-[Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview?azure-portal=true) is a service on Azure that provides full-stack observability across applications and infrastructure both in the cloud and on-premises.
+[Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview?azure-portal=true) is a service in Azure that provides full-stack observability across applications and infrastructure both in the cloud and on-premises.
 
 Azure Monitor works with development tools such as Visual Studio and Visual Studio Code so you can use it during your development and test phases. It integrates with Azure DevOps to provide release management and work item management during your deployment phases.
 

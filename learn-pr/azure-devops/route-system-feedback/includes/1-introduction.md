@@ -8,7 +8,7 @@ Effective monitoring happens not only in production, but at each stage along the
 
 ## Learning objectives
 
-In this module, you will learn:
+In this module, you'll learn:
 
 - How Azure Monitor and Application Insights enable continuous monitoring on your applications and on your infrastructure.
 - How IT Service Management Connector can help you implement a ticketing system.
