@@ -42,40 +42,43 @@ You should see the following output in the terminal (where "mydevice" is the dev
         "fwPackageCheckValue":"1234"
     }
     ```
-    
+
+
     :::image type="content" source="../media/devicemanagement-3.png" alt-text="Device Twin configuration":::
     
-1. In the Metrics blade we will define the metrics the Device Management will use to monitor progress. Enter the below metrics then click on "Next: Target devices >"
+1. In the Metrics blade we will define a custom metric to track the firmware update was effective. Create a new custom metric called "fwupdated" and type in the below criteria, then click on "Next: Target devices >"
 
     ``` SQL
-    oldfirmware
         SELECT deviceId FROM devices
-        WHERE properties.reported.firmware.fwUpdateStatus='current' AND properties.reported.firmware.currentFwVersion='1.0.0'
-
-    downloading
-        SELECT deviceId FROM devices
-        WHERE properties.reported.firmware.fwUpdateStatus = 'downloading'
-        
-    verifying
-        SELECT deviceId FROM devices
-        WHERE properties.reported.firmware.fwUpdateStatus = 'verifying'
-        
-    applying
-        SELECT deviceId FROM devices
-        WHERE properties.reported.firmware.fwUpdateStatus = 'applying'
-        
-    uptodate
-    SELECT deviceId FROM devices
-        WHERE properties.reported.firmware.fwUpdateStatus='current' AND properties.reported.firmware.currentFwVersion='1.0.1'
+            WHERE properties.reported.firmware.currentFwVersion='1.0.1'
     ```
     
     :::image type="content" source="../media/devicemanagement-4.png" alt-text="Metrics":::
     
 1. In the "Priority" field, type "10" and in the "Target Condition" field, type in the following query, replacing "\<your device id\>" with the device Id you used to create the device in unit 2, then click on "Next: Review + Create >"
 
+    ``` SQL
+        deviceId='<your device id>'
+    ```
+
     :::image type="content" source="../media/devicemanagement-5.png" alt-text="Target Devices":::
     
 1. On the next blade you should see the validation succeed for your new configuration. Click on "Create".
 
     :::image type="content" source="../media/devicemanagement-6.png" alt-text="Validation":::
+
+1. Once the configuration has been created you will see it in the automatic device management blade:
+
+    :::image type="content" source="../media/devicemanagement-7.png" alt-text="New Configuration added":::
+        
+## See the magic happen
+At this point IoT Hub will look for devices matching the configuration's target devices criteria, and will apply the firmware update configuration automatically.
+On the terminal you started the device on, you should see the following traces indicating the progress of the firmware update process on the device itself:
+
+    :::image type="content" source="../media/simulateddevice1.png" alt-text="Simulated Device executing FW update":::
     
+And on the Device Management Configuration you should see the following:
+
+    :::image type="content" source="../media/devicemanagement-8.png" alt-text="Configuration applied and successful":::
+    
+You have validated that the firmware update process on your simulated device works. Now let's get into the more serious business of deploying a firmware update configuration on a set of devices.
