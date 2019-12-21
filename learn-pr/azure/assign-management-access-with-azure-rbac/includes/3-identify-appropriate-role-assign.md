@@ -23,7 +23,7 @@ Here are a couple example built-in roles:
 
 Azure RBAC roles can be applied at four levels of scope: management groups, subscriptions, resource groups, and resources. The following diagram shows an example with the hierarchy for these four levels.
 
-![Diagram that shows the scope hierarchy](../media/2-scope.png)
+![Diagram that shows the scope hierarchy](../media/2-scope-levels-example.png)
 
 Azure management groups help you manage your Azure subscriptions by grouping them together. If your organization has many subscriptions, you may need a way to efficiently manage access, policies, and compliance for those subscriptions. Azure management groups provide a level of scope above subscriptions.
 
