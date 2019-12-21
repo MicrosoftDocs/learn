@@ -51,7 +51,7 @@ At the end of this unit, you'll have a device simulator awaiting for a firmware 
             static void LogToConsole(string text)
             {
                 // we prefix the logs with the device ID
-                Console.WriteLine("\t" + DeviceID + ": " + text);
+                Console.WriteLine(DeviceID + ": " + text);
             }
     
             // Function to retreive firmware version from the OS/HW
