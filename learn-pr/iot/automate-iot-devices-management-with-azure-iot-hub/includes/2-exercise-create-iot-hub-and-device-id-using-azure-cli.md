@@ -1,6 +1,6 @@
 In this unit, we'll first create an IoT Hub, and add a single device to that hub. Then we will record the connection strings we need for the coding sections of this module.
 
-## Create a custom IoT Hub
+## Create a new IoT Hub
 
 1. Make sure you've activated the sandbox, using the button above. The sandbox will give you access to free Azure resources for the duration of this module.
 1. In the below we are using the Azure IoT extension for Azure CLI which is already installed in the sandbox. If you want to use the extension for your developments, you can find instructions on how to install it [here](https://github.com/Azure/azure-iot-cli-extension).

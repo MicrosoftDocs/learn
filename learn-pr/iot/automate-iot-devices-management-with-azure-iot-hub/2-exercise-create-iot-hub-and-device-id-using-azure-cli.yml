@@ -2,14 +2,14 @@
 uid: >-
   learn.iot.automate-iot-devices-management-with-azure-iot-hub.exercise-create-iot-hub-and-device-id-using-azure-cli
 metadata:
-  title: Exercise - Create IoT Hub and device IC using Azure CLI
+  title: Exercise - Create an IoT Hub and a device ID using the Azure CLI
   description: ...
   ms.date: .12/17/2019..
   author: olivierbloch
   ms.author: Olivier.Bloch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Exercise - Create IoT Hub and device IC using Azure CLI
+title: Exercise - Create an IoT Hub and a device ID using the Azure CLI
 durationInMinutes: 1
 content: >-
   [!include[](includes/2-exercise-create-iot-hub-and-device-id-using-azure-cli.md)]
