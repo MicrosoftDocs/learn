@@ -82,7 +82,7 @@ More information is available at:
 * [Roslyn Security Guard Rules](https://dotnet-security-guard.github.io/rules.htm)
 * [Visual Studio Marketplace](https://marketplace.visualstudio.com/search?term=security&target=AzureDevOps&category=All%20categories&sortBy=Relevance)
 * [Analyzing C/C++ Code Quality by Using Code Analysis](https://msdn.microsoft.com/library/ms182025.aspx)
-* [Microsoft binskim on GitHub](https://github.com/Microsoft/binskim)
+* [Microsoft BinSkim on GitHub](https://github.com/Microsoft/binskim)
 
 ### Perform Dynamic Analysis Security Testing
 
