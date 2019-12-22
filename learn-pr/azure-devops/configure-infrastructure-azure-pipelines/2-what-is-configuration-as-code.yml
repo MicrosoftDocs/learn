@@ -25,12 +25,12 @@ quiz:
       explanation: "Infrastructure as code and configuration as code frameworks can both be imperative or declarative."
     - content: "Infrastructure as code refers to the automated provisioning of infrastructure. Configuration as code refers to automating how software is configured within your infrastructure."
       isCorrect: true
-      explanation: "You can combine the two models to automatically provision and then configure your systems all in one step."
+      explanation: "You can combine the two models to automatically provision and then configure your systems, all in one step."
   - content: "A co-worker manually installs a security patch on some, but not all, of the web servers in your deployment. This is likely an example of:"
     choices:
     - content: "Configuration drift"
       isCorrect: true
-      explanation: "Configuration drift happens when resources change over time from their original deployment state. This is caused by changes made by people, processes, or programs and can happen manually or through automated processes."
+      explanation: "Configuration drift happens when resources change over time from their original deployment state. This is caused by changes made by people, processes, or programs, and can happen manually or through automated processes."
     - content: "Configuration management"
       isCorrect: false
       explanation: "Configuration management refers to the automated management of configuration, and not manual processes."

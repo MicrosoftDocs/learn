@@ -18,7 +18,7 @@ The first step in using the REST API is to register the application. Azure uses 
 1. In the **New Application** pane, fill in the following details:
    - **Name**: Enter a name for your application (for example, **data-uploader**).
    - **Application type**: Select **Web app / API**.
-   - **Sign-on URL**: Enter a local sign-on URL using your own domain suffix (e.g. \http://sample.contoso.com). This value identifies the app. You can change it later if you need to.
+   - **Sign-on URL**: Enter a local sign-on URL using your own domain suffix (e.g. `http://sample.contoso.com`). This value identifies the app. You can change it later if you need to.
 1. Select **Create** to create the app registration.
 1. On the **Registered app** pane, next to **Application ID**, copy the key and paste it in Notepad.
 1. Open the **Settings** pane, and go to **Owner**. Make a note of the owner account in Notepad. You can change this owner account to a preferred service account for the registered application.

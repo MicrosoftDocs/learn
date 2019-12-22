@@ -18,7 +18,7 @@ Perform the following steps in the Azure portal to assess if connectivity betwee
 7. In the certificate warning dialog, click **Yes**.
 8. On the remote machine, click the Windows icon, and then click the **Control Panel** tile.
 9. In Control Panel, open **Microsoft Monitoring Agent** and then click on the **Azure Log Analytics (OMS)** tab.
-10. Observe that the agent displays the following message: **The Microsoft Monitoring Agent has successfully connected to Log Analytics.** as shown below.
+10. Observe that the agent displays the following message: **The Microsoft Monitoring Agent has successfully connected to Microsoft Operations Management Suite service.** as shown below.
 
 ![Microsoft Monitoring Agent](../media/5-microsoft-monitoring-agent.png "Microsoft Monitoring Agent")
 

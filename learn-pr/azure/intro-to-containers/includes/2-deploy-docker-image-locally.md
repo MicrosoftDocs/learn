@@ -35,7 +35,7 @@ Docker images are stored and made available in *registries*. A registry is a web
 
 A registry is organized as a series of *repositories*. Each repository contains multiple Docker images that share a common name and generally the same purpose and functionality. These images normally have different versions identified with a tag. This mechanism enables you to publish and retain multiple versions of images for compatibility reasons. When you download and run an image, you must specify the registry, repository, and version tag for the image. Tags are text labels, and you can use your version numbering system (v1.0, v1.1, v1.2, v2.0, and so on).
 
-Suppose you want to use the ASP.NET Core Runtime Docker image. This image is available in two versions:
+Suppose you want to use the ASP.NET Core Runtime Docker image. This image is available in two versions.
 
 - `mcr.microsoft.com/dotnet/core/aspnet:2.2`
 - `mcr.microsoft.com/dotnet/core/aspnet:2.1`
@@ -115,7 +115,7 @@ You can press Ctrl-C to stop the image and then restart it as shown by the follo
 docker run -p 8080:80 -d mcr.microsoft.com/dotnet/core/samples:aspnetapp
 ```
 
-The command maps port 80 in the container to port 8080 on your computer. If you visit the page http://localhost:8080 in a browser, you'll see the sample web app.
+The command maps port 80 in the container to port 8080 on your computer. If you visit the page `http://localhost:8080` in a browser, you'll see the sample web app.
 
 ![Screenshot of the sample web app running in a browser](../media/2-sample-web-app.png)
 
@@ -137,11 +137,12 @@ docker ps
 
 The output includes the status of the container. *Up* if it is running, *Exited* if it has terminated, among other values such as the command line flags specified when the image was started, and additional information. Docker lets you run multiple containers from the same image simultaneously, so each container is assigned a unique ID as well as a unique human-readable name. Most Docker commands used to manage individual containers can use either the ID or the name to refer to a specific container.
 
-In the output below, you can see two containers. The *PORTS* field shows that the container with ID `lucid-jang` is the image running with port 80 on the Docker host mapped to port 8080 on your computer. The `youthful_heisenberg` instance is the container for the previous run of the image. The *COMMAND* field shows the command that the container ran to start the application in the image. In this case, for both containers, it is *dotnet aspnetapp.dll*. Note that the image ID for the containers is also the same because both containers are executing the same image.
+In the output below, you can see two containers. The *PORTS* field shows that the container with ID `elegant_ramanujan` is the image running with port 80 on the Docker host mapped to port 8080 on your computer. The `youthful_heisenberg` instance is the container for the previous run of the image. The *COMMAND* field shows the command that the container ran to start the application in the image. In this case, for both containers, it is *dotnet aspnetapp.dll*. Note that the image ID for the containers is also the same because both containers are executing the same image.
 
 ```console
 CONTAINER ID IMAGE COMMAND CREATED STATUS PORTS NAMES
 57b9587583e3        mcr.microsoft.com/dotnet/core/samples:aspnetapp   "dotnet aspnetapp.dll"   42 seconds ago      Up 41 seconds       0.0.0.0:8080->80/tcp   elegant_ramanujan
+d27071f3ca27        mcr.microsoft.com/dotnet/core/samples:aspnetapp   "dotnet aspnetapp.dll"   5 minutes ago      Up 5 minutes       0.0.0.0:8081->80/tcp   youthful_heisenberg
 ```
 
 > [!NOTE]
@@ -153,11 +154,12 @@ You can stop an active container with the `docker stop` command and specify the 
 docker stop elegant_ramanujan
 ```
 
-If you run `docker ps` again, you'll see that the *lucid_jang* container is no longer present in the output. The container still exists, but is no longer hosting a running process. You can include stopped containers in the output of `docker ps` by including the `-a` flag:
+If you run `docker ps` again, you'll see that the *elegant_ramanujan* container is no longer present in the output. The container still exists, but is no longer hosting a running process. You can include stopped containers in the output of `docker ps` by including the `-a` flag:
 
 ```console
 CONTAINER ID IMAGE COMMAND CREATED STATUS PORTS NAMES
 57b9587583e3        mcr.microsoft.com/dotnet/core/samples:aspnetapp   "dotnet aspnetapp.dll"   2 minutes ago       Exited (0) 21 seconds ago                       elegant_ramanujan
+d27071f3ca27        mcr.microsoft.com/dotnet/core/samples:aspnetapp   "dotnet aspnetapp.dll"   7 minutes ago      Up 7 minutes       0.0.0.0:8081->80/tcp   youthful_heisenberg
 ```
 
 You can restart a stopped container with the `docker start` command. The main process of the container will be started anew.
