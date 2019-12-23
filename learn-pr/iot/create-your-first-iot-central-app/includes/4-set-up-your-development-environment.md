@@ -64,7 +64,7 @@ All of the work to generate connection strings is handled through Azure Cloud Sh
 
 1. Save off your text file.
 
-You now have the all important connection string. The Scope ID identifies the app, the Device ID the real device, and the Primary Key gives you permission for the connection.
+You now have the all important connection string. The **Scope ID** identifies the app, the **Device ID** the real device, and the **Primary Key** gives you permission for the connection.
 
 ::: zone-end
 ::: zone pivot="vscode-csharp"

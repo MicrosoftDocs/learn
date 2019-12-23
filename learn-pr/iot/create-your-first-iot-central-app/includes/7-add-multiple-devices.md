@@ -8,7 +8,7 @@ Now for the best fun of all.
 
 1. Enter a customer ID, say "1" ("0" through "9" are valid customer IDs), and click **Run**.
 
-1. In the console for the device app, you should see **Route found**.
+1. In the console for the device app, you should both see  **New customer** event, and a **Route found** message.
 
     ![Screenshot showing the map view of the truck at its base in Seattle](../media/refrigerated-trucks-route-points.png)
 
@@ -18,10 +18,6 @@ Now for the best fun of all.
 1. In the dashboard **Location** tile, is your truck on its way? You might have to wait a short time for the apps to sync up.
 
     ![Screenshot showing the map view of our first truck delivery route](../media/refrigerated-trucks-first-delivery.png)
-
-1. Verify the event text in the console.
-
-    ![Screenshot showing the new customer event text in the console window](../media/refrigerated-trucks-new-customer.png)
 
 1. Verify the event text in the dashboard tile.
 

@@ -2,12 +2,13 @@
 uid: learn.iot.create-your-first-iot-central-app.test-your-iot-device
 metadata:
   title: Test your IoT Central device
-  description: Test a device by giving it commands and monitoring the results on the dashboard.
+  description: Test a device by monitoring the results on the dashboard.
   ms.date: 10/17/2019
   author: PeterTurcan
   ms.author: Olivier.Bloch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  zone_pivot_groups: vs-vscode-language
 title: Test your IoT Central device
 # azureSandbox: true
 durationInMinutes: 10

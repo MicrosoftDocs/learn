@@ -45,13 +45,13 @@ In this module, you'll build the app displayed in the above image.
 
 1. Leave the **Application template** as **Preview application**.
 
-1. Select the free **7 day free trial** option, the seven days that the trial gives you'll be plenty of time to complete, and evaluate, the scenario.
+1. Select the free **7 day free trial** option. Seven days is plenty of time to complete the scenario.
 
     ![Screenshot showing how to create a new IoT Central app, using the IoT Central portal](../media/refrigerated-trucks-my-apps.png)
 
 1. Fill out your contact info, and click **Create**. Wait a few seconds whilst the app resource is built.
 
-1. You should now see a **Dashboard** with a few default links. 
+1. You should now see a **Dashboard** with a few default links.
 
 The next time you visit your Azure central home page, select **My apps** in the left-hand menu, and an icon for your  **Refrigerated Trucks** app should appear.
 

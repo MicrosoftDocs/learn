@@ -57,7 +57,7 @@ Let's add the rest of the template.
 
 States are important, they let the operator know what is going on. A state in IoT Central is a name associated with a range of values. In addition, you later get to choose a color to associate with each value.
 
-1. Use the **+ Add capability** control to add a state for the truck's refrigerated contents: _empty_, _full_, or _melting_.
+1. Use the **+ Add capability** control to add a state for the truck's refrigerated contents: one of _empty_, _full_, or _melting_.
 
     | Entry summary | Value |
     | --- | --- |
@@ -139,7 +139,7 @@ A location is probably the most important, and yet one of the easiest measuremen
 
 ### Add properties
 
-A property of a device is typically a constant values, that is communicated to the IoT Central app when communication is first initiated. In our refrigerated truck scenario, a good example of a property is the license plate of the truck, or some similar unique truck ID.
+A property of a device is typically a constant value, that is communicated to the IoT Central app when communication is first initiated. In our refrigerated truck scenario, a good example of a property is the license plate of the truck, or some similar unique truck ID.
 
 Properties can also be device configuration data. We will define an _optimal temperature_ for the truck contents as a property. This optimal temperature might change with different types of content, different weather conditions, or whatever might be appropriate. A setting has an initial default value, which may not need to be changed, but the ability to change it easily and quickly is there, if needed. This kind of property is called a _writable property_.
 
@@ -175,7 +175,7 @@ A property is a single value. If more complex sets of data need to be transmitte
 
 ### Add commands
 
-Commands are sent by the operator of the IoT Central app to the remote devices. Commands are similar to settings, but a command can contain any number of input fields, whereas a setting is limited to a single value.
+Commands are sent by the operator of the IoT Central app to the remote devices. Commands are similar to writable properties, but a command can contain any number of input fields, whereas a writable property is limited to a single value.
 
 For refrigerated trucks, there are two commands you should add: a command to deliver the contents to a customer, and a command to recall the truck to base.
 
@@ -221,8 +221,8 @@ For refrigerated trucks, there are two commands you should add: a command to del
 
 1. Click **Save** again, if you've made any changes since the last time you saved.
 
-1. Click **Publish**. You should see that the top-right word changes from **Draft** to **Published**.
+1. Click **Publish**. You should see that the annotation changes from **Draft** to **Published**.
 
 Preparing a device template does take some care and some time.
 
-In the next unit, you use the capabilities of the device template to prepare a controllers dashboard. Preparing views can be done after a device template is published.
+In the next unit, you use the capabilities of the device template to prepare a controllers dashboard. Preparing views can be done before, or after, a device template is published.

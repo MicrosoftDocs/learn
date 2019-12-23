@@ -1,15 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.iot.create-your-first-iot-central-app.add-multiple-devices
 metadata:
-  title: Add multiple devices
-  description: Create connection strings, and add code to your device app, to support a fleet of refrigerated trucks.
+  title: Continue the tests of your IoT Central device
+  description: Test a device by issuing commands, and monitoring the results on the dashboard.
   ms.date: 10/17/2019
   author: PeterTurcan
   ms.author: Olivier.Bloch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  zone_pivot_groups: vs-vscode-language
-title: Add multiple devices
+title: Continue the tests of your IoT Central device
 ### azureSandbox: true
 ### interactive: bash
 durationInMinutes: 10

@@ -43,7 +43,7 @@ Repeat this process to create as many devices as you need.
 
 1. In the Cloud Shell session, navigate to the `refrigerated-truck` folder.
 
-1. Copy across one at a time, from your text file, each of the strings (starting with **./dps_cstr...**) and press Enter after each is pasted into Azure Cloud Shell. Each will take a few seconds to run.
+1. Copy across one at a time, from your text file, each of the strings (starting with **./dps_cstr...**) and press Enter after each is pasted into Azure Cloud Shell. Each command will take a few seconds to run.
 
 1. Select the **{ }** icon to open up the file structure, open the **refrigerated-truck** folder.
 

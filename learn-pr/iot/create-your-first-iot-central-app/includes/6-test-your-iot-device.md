@@ -19,7 +19,23 @@ In addition to this list, there are edge-cases you could also investigate. One s
 
 To begin the testing, with your [Azure IoT Central](https://apps.azureiotcentral.com/?azure-portal=true) app open in a browser, run the device app.
 
-1. In Visual Studio, select **Debug/Start without Debugging**. Or enter `node app.js`, or `node Program.cs` into a terminal, in Visual Studio Code. A console screen should open, with the text: **Starting Truck number 1**.
+::: zone pivot="vs-csharp,vscode-csharp"
+
+1. Select **Debug/Start without Debugging**.
+
+::: zone-end
+::: zone pivot="vscode-node"
+
+1. In the terminal, enter `node app.js`.
+
+::: zone-end
+::: zone pivot="vscode-csharp"
+
+1. In the terminal, enter `node Program.cs`.
+
+::: zone-end
+
+A console screen should open, with the text: **Starting Truck number 1**.
 
 ### 1. Confirm the device app connects to Azure IoT Central
 
@@ -27,27 +43,25 @@ To begin the testing, with your [Azure IoT Central](https://apps.azureiotcentral
 
 1. The "connected" line should be followed by some text verifying the settings and properties were sent successfully.
 
+    ![Screenshot showing the connection to IoT Central from the device app was made correctly](../media/refrigerated-trucks-connected.png)
+
 If all goes well, go straight into the second test.
 
 ### 2. Confirm the telemetry functions send data on the specified interval
 
 1. A console message should appear every five seconds, with the contents temperature.
 
-    ![Screenshot showing the connection to IoT Central from the device app was made correctly](../media/refrigerated-trucks-connected.png)
-
 1. Watch the telemetry for a short while, and mentally prepare for the main test of this module!
 
 ### 3. Confirm the data is picked up correctly by IoT Central
 
-If you've left the IoT Central browser page open on your device, you can skip step 1.
-
-1. To verify the data is being received at IoT Central, make sure your IoT Central pp is open, and select the **Devices** entry in the left-hand menu. Double-click the real device (**RefrigeratedTruck - 1**), in the list of devices.
+1. To verify the data is being received at IoT Central, make sure your IoT Central pp is open, and the device selected. If not, select the **Devices** entry in the left-hand menu. Double-click the real device (**RefrigeratedTruck - 1**), in the list of devices.
 
 1. Locate the **Contents temperature** tile, and verify approximately that the temperatures being sent by the device app, in the console window, match the data being shown in the telemetry view of the IoT Central app.
 
-    | Device app | IoT Central |
+    | IoT Central | Device app |
     | --- | --- |
-    | ![Screenshot showing the console output from the device app, showing the truck contents temperatures](../media/refrigerated-trucks-console.png) | ![Screenshot showing the chart view in IoT Central, receiving the truck temperatures](../media/refrigerated-trucks-central.png) |
+    | ![Screenshot showing the chart view in IoT Central, receiving the truck temperatures](../media/refrigerated-trucks-central.png) | ![Screenshot showing the console output from the device app, showing the truck contents temperatures](../media/refrigerated-trucks-console.png) |
 
     > [!NOTE]
     > The screenshots in this module are taken from the C# version of the app. The Node.js app screens will be similar, but not identical.

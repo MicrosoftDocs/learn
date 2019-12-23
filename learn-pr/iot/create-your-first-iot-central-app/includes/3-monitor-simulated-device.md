@@ -8,7 +8,7 @@ In this unit, you'll first create a dashboard showing all the capabilities of th
 
 1. You should now see a list of all the **Telemetry**, **Properties**, and **Commands** you created, each with a check box.
 
-1. Click the **Location** check box, then **Add tile**. Dashboards are made up of tiles. The reason we choose the location tile first, is that we want to expand it from its default size. Drag the lower right-hard corner so the tile is at least twice the default size. This tile is the most fun, it will show the location of the truck on a map.
+1. Click the **Location** check box, then **Add tile**. Dashboards are made up of tiles. The reason we choose the location tile first, is that we want to expand it from its default size. Drag the lower right-hard corner of the tile, so that the tile is at least twice the default size. This tile is the most fun, it will show the location of the truck on a map of the world.
 
 1. Before adding more tiles, change the **View name** to something more specific, "Truck view", or something similar.
 
