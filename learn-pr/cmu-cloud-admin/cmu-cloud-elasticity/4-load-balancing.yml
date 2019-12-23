@@ -16,28 +16,21 @@ quiz:
   title: Check your knowledge
   questions:
 
-    - content: "Consider the following scenario: you're using a load balancer with a round-robin scheduler as a front end to two web servers. One web server is a medium instance that contains 2 cores and 8 GB RAM, while the other is a large instance with 4 cores and 16 GB RAM. Which of the following scenarios is likely?
-
-        I. Both instances will receive an equal number of requests.
-        II. Both instances will be equally utilized in terms of percentage of CPU and memory.
-        III. The large instance will receive twice as many requests as the medium instance.
-        IV. The medium instance will receive twice as many requests as the large instance.
-        V. The large instance will have twice the utilization (in terms of percentage of CPU and memory) of the medium Instance.
-        VI. The large instance will have half the utilization (in terms of percentage of CPU and memory) of the medium instance."
+    - content: "Consider the following scenario: you're using a load balancer with a round-robin scheduler as a front end to two web servers. One web server is a medium instance that contains 2 cores and 8 GB RAM, while the other is a large instance with 4 cores and 16 GB RAM. Which of the following scenarios is likely?"
       
       choices:
-      - content: "I and VI"
+      - content: "Both instances will receive an equal number of requests and the large instance will have half the utilization, in terms of percentage of CPU and memory, of the medium instance."
         isCorrect: true
         explanation: "Correct!"
-      - content: "III and V"
+      - content: "The large instance will receive twice as many requests as the medium instance and the large instance will have twice the utilization, in terms of percentage of CPU and memory, of the medium instance."
         isCorrect: false
         explanation: "Incorrect. Round-robin distribution effectively alternates in sending requests to each instance. It doesn't take into account the resource utilization of individual instances."
-      - content: "III and VI"
+      - content: "The large instance will receive twice as many requests as the medium instance and the large instance will have half the utilization, in terms of percentage of CPU and memory, of the medium instance."
         isCorrect: false
         explanation: "Incorrect. Round-robin distribution effectively alternates in sending requests to each instance. It doesn't take into account the resource utilization of individual instances."
-      - content: "II and IV"
+      - content: "Both instances will be equally utilized in terms of percentage of CPU and memory and the medium instance will receive twice as many requests as the large instance."
         isCorrect: false
         explanation: "Incorrect. Round-robin distribution effectively alternates in sending requests to each instance. It doesn't take into account the resource utilization of individual instances."
-      - content: "I and V"
+      - content: "Both instances will receive an equal number of requests and the large instance will have twice the utilization, in terms of percentage of CPU and memory, of the medium instance."
         isCorrect: false
         explanation: "Incorrect. Round-robin distribution effectively alternates in sending requests to each instance. It doesn't take into account the resource utilization of individual instances."
