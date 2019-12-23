@@ -68,7 +68,11 @@ We've created the policy, but we haven't actually put it into effect yet. To ena
 
 1. For **Policy definition**, click the blue **...**. In the **Type** drop-down, select **Custom**, select the **Enforce tag on resource** policy you created, then click **Select**.
 
-1. In the **Parameters** section, for **Tag name** enter **Department**. Click **Assign** to assign the policy.
+1. Select **Next** to go to the **Parameters** pane.
+
+1. On the **Parameters** pane, for **Tag name** enter **Department**.
+
+1. Select **Review + create** then select **Create** to create the assignment.
 
 ### Test out the policy
 

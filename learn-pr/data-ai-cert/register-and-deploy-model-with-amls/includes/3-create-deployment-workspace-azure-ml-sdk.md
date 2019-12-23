@@ -21,9 +21,9 @@ ws = Workspace.create(
             resource_group='rgAMLSLearnworkspace',
             create_resource_group=False,
             location='eastus2'
-
-print('Done')
 )
+print('Done')
+
 ```
 
 > [!IMPORTANT]

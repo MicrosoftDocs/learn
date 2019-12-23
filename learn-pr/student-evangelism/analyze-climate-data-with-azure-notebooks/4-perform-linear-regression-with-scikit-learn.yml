@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.analyze-climate-data-with-azure-notebooks.perform-linear-regression-with-scikit-learn
-title: Perform Linear Regression with Scikit Learn
+title: Exercise - Perform Linear Regression with Scikit Learn
 metadata:
-  title: Perform Linear Regression with Scikit Learn
+  title: Exercise - Perform Linear Regression with Scikit Learn
   description: Perform Linear Regression with Scikit Learn
   ms.date: 02/25/2019
   author: JeffProsise
