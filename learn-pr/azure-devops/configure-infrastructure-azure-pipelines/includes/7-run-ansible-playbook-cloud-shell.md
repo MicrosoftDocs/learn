@@ -90,7 +90,7 @@ A related setting, not shown here, is `become_user`. The default value of this s
 
 Now that you've verified that your VMs are connectable through Ansible, here you apply a playbook that configures service accounts on your VMs.
 
-1. In VS Code, select **New File** from the files pane. Name the file *users.yml*.
+1. In Visual Studio Code, select **New File** from the files pane. Name the file *users.yml*.
 
     ![Screenshot of adding a file in Visual Studio Code](../media/6-vs-code-add-file.png)
 
@@ -115,7 +115,7 @@ Now that you've verified that your VMs are connectable through Ansible, here you
 
 1. Upload *users.yml* to Cloud Shell. To do so:
 
-    1. In VS Code, select <kbd>F1</kbd> or select **View** > **Command Palette** to access the command palette.
+    1. In Visual Studio Code, select <kbd>F1</kbd> or select **View** > **Command Palette** to access the command palette.
     1. In the command palette, enter *Azure: Upload to Cloud Shell*.
     1. Select *users.yml*.
 
@@ -123,7 +123,7 @@ Now that you've verified that your VMs are connectable through Ansible, here you
 
 Run the `users` playbook on your VMs from your Cloud Shell session.
 
-1. In VS Code, switch to your Cloud Shell session.
+1. In Visual Studio Code, switch to your Cloud Shell session.
 1. Run the following `ls` command to verify that *users.yml* exists in your Cloud Shell.
 
     ```bash
@@ -270,4 +270,4 @@ That's because your Ansible playbook didn't change, and you haven't modified any
 
 Later, you'll see the benefit of this behavior when you configure your infrastructure in Azure Pipelines by running the same Ansible playbook.
 
-Keep your Cloud Shell session in VS Code open for the next exercise.
+Keep your Cloud Shell session in Visual Studio Code open for the next exercise.
