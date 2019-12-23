@@ -115,7 +115,7 @@ Now the app is complete, let's run it on your local computer and see if it shows
 
     This command tells `npm` to run the command in the package's `scripts.start` property. The Express Generator sets this property to start Node.js in the /bin/www folder. This starts the webapp locally.
 
-1. Open a web browser and navigate to the address **http://localhost:3000**.
+1. Open a web browser and navigate to the address `http://localhost:3000`.
 
     ![Browse the completed webapp](../media/3-complete-webapp.png)
 
