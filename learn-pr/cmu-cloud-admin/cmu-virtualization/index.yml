@@ -25,7 +25,7 @@ prerequisites: |
   - Understand what cloud computing is, including cloud service models, and common cloud providers
   - Recognize cloud service models such as IaaS, PaaS, and SaaS and differentiate between them
   - Understand how cloud resource provisioning works
-iconUrl: /learn/achievements/cmu-cloud-admin/cmu-virtualization.svg
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
 roles:
