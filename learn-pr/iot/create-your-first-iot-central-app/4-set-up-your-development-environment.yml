@@ -12,6 +12,6 @@ metadata:
 title:  Set up your development environment
 ### azureSandbox: true
 ### interactive: bash
-durationInMinutes: 15
+durationInMinutes: 10
 content: |
   [!include[](includes/4-set-up-your-development-environment.md)]

@@ -21,7 +21,7 @@ To begin the testing, with your [Azure IoT Central](https://apps.azureiotcentral
 
 1. In Visual Studio select **Debug/Start without Debugging**. Or enter `node app.js`, or `node Program.cs`, into a terminal in Visual Studio Code. A console screen should open, with the text: **Starting Truck number 1**.
 
-### Confirm the device app connects to Azure IoT Central
+### 1. Confirm the device app connects to Azure IoT Central
 
 1. If one of the next lines on the console is **Device successfully connected to Azure IoT Central** you have made the connection. If you do not get this message, it usually means either the IoT Central app is not running, or the connection key strings are not correct.
 
@@ -29,7 +29,7 @@ To begin the testing, with your [Azure IoT Central](https://apps.azureiotcentral
 
 If all goes well, go straight into the second test.
 
-### Confirm the telemetry functions send data on the specified interval
+### 2. Confirm the telemetry functions send data on the specified interval
 
 1. A console message should appear every five seconds, with the contents temperature.
 
@@ -37,7 +37,7 @@ If all goes well, go straight into the second test.
 
 1. Watch the telemetry for a short while, and mentally prepare for the main test of this module!
 
-### Confirm the data is picked up correctly by IoT Central
+### 3. Confirm the data is picked up correctly by IoT Central
 
 If you have left the IoT Central browser page open on your device, you can skip step 1.
 
@@ -60,7 +60,7 @@ If you have left the IoT Central browser page open on your device, you can skip 
 
 If all is well, this is great progress. The truck is at its base, in the correct state, and waiting for a command.
 
-### Confirm the command to send the truck to a specified customer works as expected
+### 4. Confirm the command to send the truck to a specified customer works as expected
 
 Now for the best fun of all.
 
@@ -89,13 +89,13 @@ Now for the best fun of all.
 
 Great progress! Take a moment to just watch the map update, and your truck deliver its contents.
 
-### Confirm the command to recall the truck works as expected
+### 5. Confirm the command to recall the truck works as expected
 
 1. When the truck returns to base, and is reloaded with contents, it's state will be **ready**. Try issuing another delivery command. Choose another customer ID.
 
 1. Issue a recall command before the truck reaches its customer, to check the truck responds to this command.
 
-### Check customer and conflict events are transmitted correctly
+### 6. Check customer and conflict events are transmitted correctly
 
 To test a conflict event, send a command that you know doesn't make sense.
 
@@ -103,7 +103,7 @@ To test a conflict event, send a command that you know doesn't make sense.
 
     ![Screenshot showing the console view with a conflict event](../media/refrigerated-trucks-already-at-base.png)
 
-### Check the truck properties, and change the optimal temperature
+### 7. Check the truck properties, and change the optimal temperature
 
 1. The simplest test is to check the **Truck ID** tile. This should have picked up the **Truck number 1** message when the apps were started.
 

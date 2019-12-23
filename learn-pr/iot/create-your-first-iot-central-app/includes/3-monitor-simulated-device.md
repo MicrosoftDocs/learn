@@ -38,7 +38,6 @@ By "real" IoT Central understands that there is a remote app running. The app ca
 
     ![Screenshot showing the dialog to create a device](../media/refrigerated-trucks-create-device.png)
 
-
 1. Change the **Device ID** to a friendlier name, say "RefrigeratedTruck1".
 
 1. Change the **Device name** to a friendlier name, say "RefrigeratedTruck - 1".

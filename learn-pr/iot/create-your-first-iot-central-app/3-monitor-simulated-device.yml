@@ -44,7 +44,7 @@ quiz:
       isCorrect: false
       explanation: Names are not descriptive text.
 
-  - content: 'What is meant by a Writeable Property?'
+  - content: 'What is meant by a Writable Property?'
     choices: 
     - content: 'A property that can be written to in the device app, but not changed by the IoT Central app.'
       isCorrect: false

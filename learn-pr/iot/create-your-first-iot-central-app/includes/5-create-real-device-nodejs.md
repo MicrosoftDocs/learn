@@ -40,7 +40,7 @@ Node.js is a platform for building server apps, based on JavaScript. All the Jav
     * **dotnet add package Microsoft.Azure.Devices.Client**
     * **dotnet add package Microsoft.Azure.Devices.Provisioning.Client**
     * **dotnet add package Microsoft.Azure.Devices.Provisioning.Transport.Mqtt**
-    * **dotnet add package Newtonsoft.Json**
+    * **dotnet add package System.Text.Json**
 
 1. From the **File** menu, open up the Program.cs file, and delete the default contents.
 
@@ -79,7 +79,7 @@ Node.js is a platform for building server apps, based on JavaScript. All the Jav
     * **Microsoft.Azure.Devices.Client**
     * **Microsoft.Azure.Devices.Provisioning.Client**
     * **Microsoft.Azure.Devices.Provisioning.Transport.Mqtt**
-    * **Newtonsoft.Json**
+    * **System.Text.Json**
 
 1. Delete the default contents of the Program.cs file.
 
