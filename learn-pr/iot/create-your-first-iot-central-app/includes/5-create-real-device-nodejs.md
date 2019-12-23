@@ -1,6 +1,6 @@
 In this unit, you are going to create a programming project to simulate a sensor device in a refrigerated truck. This simulation enables you to test the code long before requiring a real truck! 
 
-IoT Central treats this simulation as "real" because the communication code between the device app and the IoT Central app is the same for a real truck. In other words, if you do run a refrigerated truck company, you would start with simulated code similar to that in this unit. After this code works to your satisfaction, the simulation specific code would be replaced with code that receives sensor data. This limited update makes writing the following code a valuable experience.
+IoT Central treats this simulation as "real" because the communication code between the device app and the IoT Central app is the same for a real truck. In other words, if you do run a refrigerated truck company, you would start with simulated code similar to the code in this unit. After this code works to your satisfaction, the simulation-specific code would be replaced with code that receives sensor data. This limited update makes writing the following code a valuable experience.
 
 ## Create the device app
 
@@ -8,11 +8,11 @@ Using your preferred development environment, build the device sensor app. Visua
 
 ::: zone pivot="vscode-node"
 
-Node.js is a platform for building server apps, based on JavaScript. All the JavaScript code you will need is provided below, so you do not need to be a JavaScript developer to get this app up and running.
+Node.js is a platform for building server apps, based on JavaScript. All the JavaScript code you'll need is provided below, so you do not need to be a JavaScript developer to get this app up and running.
 
 1. Open Visual Studio Code. From the **Terminal** menu, open a **New Terminal**.
 
-1. In the opened terminal, create an empty folder where you will develop your code, called "RefrigeratedTruck", by entering `mkdir RefrigeratedTruck`. Then, navigate to that folder with `cd RefrigeratedTruck`.
+1. In the opened terminal, create an empty folder where you'll develop your code, called "RefrigeratedTruck", by entering `mkdir RefrigeratedTruck`. Then, navigate to that folder with `cd RefrigeratedTruck`.
 
 1. From the **File** menu, create a new file. Insert a single line as a comment, such as `// Refrigerated Truck app`. Save the file to the "RefrigeratedTruck" folder (locating this folder might involve a bit of navigation), with the name "app.js". By using the .js file extension, Visual Studio Code interprets this file as JavaScript and evaluates the contents with the JavaScript language service.
 
@@ -24,7 +24,7 @@ Node.js is a platform for building server apps, based on JavaScript. All the Jav
     * **npm install azure-iot-device-mqtt**
     * **npm install azure-maps-rest**
 
-1. After you have entered the code below into the app.js file, you can run it from the terminal by entering `node app.js`. Ensure that the RefrigeratedTruck folder is the current folder of the terminal, when you run the app.
+1. After you've entered the code below into the app.js file, you can run it from the terminal by entering `node app.js`. Ensure that the RefrigeratedTruck folder is the current folder of the terminal, when you run the app.
 
 ::: zone-end
 ::: zone pivot="vscode-csharp"
@@ -65,7 +65,7 @@ Node.js is a platform for building server apps, based on JavaScript. All the Jav
 
 1. Delete the default contents of the app.js file.
 
-1. When you have entered the code below, you will be able to run the app with the **Start Without Debugging**, or **Start Debugging**, options. In the latter case you can set breakpoints, examine data, and perform other debugging tasks.
+1. When you've entered the code below, you'll be able to run the app with the **Start Without Debugging**, or **Start Debugging**, options. In the latter case you can set breakpoints, examine data, and perform other debugging tasks.
 
 ::: zone-end
 ::: zone pivot="vs-csharp"
@@ -112,7 +112,7 @@ In the blank app.js file, insert the following code. Each additional section of 
             connectionString = "<your IoT Central connection string for truck 1>";
             break;
 
-        // You will be adding more trucks in a later unit....
+        // You'll be adding more trucks in a later unit....
     }
 
     console.log("Starting " + truckIdentification);
@@ -318,7 +318,7 @@ In the blank app.js file, insert the following code. Each additional section of 
     ```
 
     > [!NOTE]
-    > It is important to grasp the asynchronous nature of calls to Azure Maps, the call to the `calculateRouteDirections` function will end immediately after it is called while your app is waiting for the results from Azure Maps. When the results are returned from Azure Maps, the method passed in to `results.then(...)` will be called with the resulting route.
+    > It's important to grasp the asynchronous nature of calls to Azure Maps, the call to the `calculateRouteDirections` function will end immediately after it's called while your app is waiting for the results from Azure Maps. When the results are returned from Azure Maps, the method passed in to `results.then(...)` will be called with the resulting route.
 
 1. Add the command to deliver to a customer.
 
@@ -370,7 +370,7 @@ In the blank app.js file, insert the following code. Each additional section of 
     ```
 
     > [!NOTE]
-    > The statement `var num = request.payload.customerId;` shows how data (text, numbers, toggles, dates) are passed from the IoT Central app in a command. Note, too, that the device responds with a conflict if it is not in the correct state, and that the command itself is acknowledged at the end of the function. The recall command that follows in the next step handles things similarly.
+    > The statement `var num = request.payload.customerId;` shows how data (text, numbers, toggles, dates) are passed from the IoT Central app in a command. Note, too, that the device responds with a conflict if it isn't in the correct state, and that the command itself is acknowledged at the end of the function. The recall command that follows in the next step handles things similarly.
 
 1. Add the recall command.
 
@@ -580,7 +580,7 @@ In the blank app.js file, insert the following code. Each additional section of 
                 },
             });
 
-        // Add the conflict event string, if there is one.
+        // Add the conflict event string, if there's one.
         if (conflict != noEvent) {
             data += JSON.stringify(
                 {
@@ -590,7 +590,7 @@ In the blank app.js file, insert the following code. Each additional section of 
             conflict = noEvent;
         }
 
-        // Add the new customer event string, if there is one.
+        // Add the new customer event string, if there's one.
         if (newCustomerId != noEvent) {
             data += JSON.stringify(
                 {
@@ -1073,7 +1073,7 @@ In the blank Program.cs file, insert the following code. Each additional section
     ```
 
     > [!NOTE]
-    > The statement `var dict = JsonConvert.DeserializeObject<Dictionary<string, string>>(payloadString);` shows how to create a dictionary of name/value pairs, from the payload of the command. The device responds with a conflict, if the device is not in the correct state. The command itself is acknowledged at the end of the method. The recall command that follows in the next step handles things similarly.
+    > The statement `var dict = JsonConvert.DeserializeObject<Dictionary<string, string>>(payloadString);` shows how to create a dictionary of name/value pairs, from the payload of the command. The device responds with a conflict, if the device isn't in the correct state. The command itself is acknowledged at the end of the method. The recall command that follows in the next step handles things similarly.
 
 1. Add the recall direct method.
 
@@ -1324,7 +1324,7 @@ In the blank Program.cs file, insert the following code. Each additional section
                 var telemetryMessageString = JsonConvert.SerializeObject(telemetryDataPoint);
                 var telemetryMessage = new Message(Encoding.ASCII.GetBytes(telemetryMessageString));
 
-                // Add the conflict event string, if there is one.
+                // Add the conflict event string, if there's one.
                 if (conflict != noEvent)
                 {
                     var eventPoint1 = new
@@ -1335,7 +1335,7 @@ In the blank Program.cs file, insert the following code. Each additional section
                     conflict = noEvent;
                 }
 
-                // Add the new customer event string, if there is one.
+                // Add the new customer event string, if there's one.
                 if (newCustomerId != noEvent)
                 {
                     var eventPoint2 = new

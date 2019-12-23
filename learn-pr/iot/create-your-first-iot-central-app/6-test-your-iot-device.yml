@@ -10,7 +10,7 @@ metadata:
   ms.prod: learning-azure
 title: Test your IoT Central device
 # azureSandbox: true
-durationInMinutes: 15
+durationInMinutes: 10
 content: |
   [!include[](includes/6-test-your-iot-device.md)]
 quiz:
@@ -21,13 +21,13 @@ quiz:
     choices: 
     - content: 'Device ID and Primary Key'
       isCorrect: false
-      explanation: Both these are needed, but more information is needed to complete a connection.
+      explanation: Both of these values are needed, but more information is needed to complete a connection.
     - content: 'Scope ID, Device ID, and Primary Key'
       isCorrect: true
       explanation: These three strings identify the app, the device, and permission to communicate with IoT Central.
     - content:  'Scope ID, Device ID, Primary Key, and Secondary Key'
       isCorrect: false
-      explanation: Secondary Key is not needed.
+      explanation: Secondary Key isn't needed.
       
   - content: 'In our scenario, what states can the cooling fan be in?'
     choices: 
@@ -39,16 +39,16 @@ quiz:
       explanation: A melting cooling fan would be bad, but isn't something that is simulated.
     - content: 'On and Off.'
       isCorrect: false
-      explanation: Unfortunately, mechanical systems are not this perfect.
+      explanation: Unfortunately, mechanical systems aren't this perfect.
 
   - content: 'In our scenario, the simulated time interval is 60 seconds, the actual time interval is 5 seconds. What does this mean?'
     choices:    
     - content: 'The simulation runs in real time, with 12 sets of telemetry data communicated to IoT Central every minute.'
       isCorrect: false
-      explanation: Telemetry data is sent 12 times per minute, but the simulation does not run in real time.
+      explanation: Telemetry data is sent 12 times per minute, but the simulation doesn't run in real time.
     - content: 'The simulation runs at 60 times real time, with the telemetry reported every five seconds.'
       isCorrect: false
-      explanation: The simulation does not run at 60 times real time.
+      explanation: The simulation doesn't run at 60 times real time.
     - content: 'The simulation is run at 60/5 = 12 times real time.'
       isCorrect: true
       explanation: Many simulations are set to run faster than real time.

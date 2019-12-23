@@ -1,7 +1,7 @@
 
 The data communicated between a remote device, and IoT Central, is specified in a _device template_. The device template encapsulates all the details of the data, so that both the device and IoT Central have all they need to make sense of the communication.
 
-In this unit, you will create a device template for a refrigerated truck. 
+In this unit, you'll create a device template for a refrigerated truck. 
 
 ## Create a device template
 
@@ -9,7 +9,7 @@ In this unit, you will create a device template for a refrigerated truck.
 
 1. Click **+ New** to create a new template.
 
-1. You will next see a range  of template options, select **IoT device**. We are going to build the template from scratch.
+1. You'll next see a range  of template options, select **IoT device**. We are going to build the template from scratch.
 
     > [!TIP]
     > Take note of the other options. You may want to use those prebuilt template options in a future project!
@@ -49,7 +49,7 @@ Telemetry is the data values transmitted by sensors. The most important sensor i
     ![Screenshot showing how to create temperature telemetry for the simulated device](../media/refrigerated-trucks-temperature.png)
 
     > [!IMPORTANT]
-    > The names entered for the interface must be entered _exactly_ as shown in this unit. This is because an exact match is needed between these names, and entries in the code you will be adding later in this module.
+    > The names entered for the interface must be entered _exactly_ as shown in this unit. This is because an exact match is needed between these names, and entries in the code you'll be adding later in this module.
 
 Let's add the rest of the template.
 
@@ -75,7 +75,7 @@ States are important, they let the operator know what is going on. A state in Io
 
 1. Carefully check each capability before moving on. 
 
-1. Now, to add some uncertainty to our simulation, let's add a failure state for the cooling system. If the cooling system fails, as you will see in the following units, the chances of the contents melting increase considerably! Add _on_, _off_ and _failed_ entries for a cooling system. Start by clicking **+ Add capability**, and add another state.
+1. Now, to add some uncertainty to our simulation, let's add a failure state for the cooling system. If the cooling system fails, as you'll see in the following units, the chances of the contents melting increase considerably! Add _on_, _off_ and _failed_ entries for a cooling system. Start by clicking **+ Add capability**, and add another state.
 
     | Entry summary | Value |
     | --- | --- |
@@ -105,7 +105,7 @@ States are important, they let the operator know what is going on. A state in Io
 
 Events are issues triggered by the device, and communicated to the IoT Central app. Events can be one of three types: _Error_, _Warning_, or _Informational_.
 
-One possible event a device might trigger is a conflicting command. An example might be a truck is returning empty from a customer, but receives a command to deliver its contents to another customer. If a conflict occurs, it is a good idea for the device to trigger an event to warn the operator of the IoT Central app.
+One possible event a device might trigger is a conflicting command. An example might be a truck is returning empty from a customer, but receives a command to deliver its contents to another customer. If a conflict occurs, it's a good idea for the device to trigger an event to warn the operator of the IoT Central app.
 
 Another event might be just to acknowledge, and record, the customer ID that a truck is to deliver to.
 
@@ -188,7 +188,7 @@ For refrigerated trucks, there are two commands you should add: a command to del
     | Capability Type | Command |
     | Command | Synchronous |
 
-1. When you turn on the **Request** option, you will be able to enter more details of the command.
+1. When you turn on the **Request** option, you'll be able to enter more details of the command.
 
     | Entry summary | Value |
     | --- | --- |
@@ -213,13 +213,13 @@ For refrigerated trucks, there are two commands you should add: a command to del
 
     ![Screenshot to help validate the two commands for the simulated device have been entered correctly](../media/refrigerated-trucks-commands.png)
 
-1. Click **Save**. Before going any further carefully double check your interface. After an interface has been published, there are very limited editing options. It is important to get it right before publishing. If you click on the name of the device template, in the menu that ends with the **Views** option, you will get a summary of the capabilities.
+1. Click **Save**. Before going any further carefully double check your interface. After an interface has been published, there are very limited editing options. It's important to get it right before publishing. If you click on the name of the device template, in the menu that ends with the **Views** option, you'll get a summary of the capabilities.
 
     ![Screenshot to help validate the capabilities of the simulated device](../media/refrigerated-trucks-capabilities.png)
 
 ## Publish the template
 
-1. Click **Save** again, if you have made any changes since the last time you saved.
+1. Click **Save** again, if you've made any changes since the last time you saved.
 
 1. Click **Publish**. You should see that the top-right word changes from **Draft** to **Published**.
 

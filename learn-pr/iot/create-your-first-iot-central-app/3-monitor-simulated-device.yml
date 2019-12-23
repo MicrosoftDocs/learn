@@ -36,13 +36,13 @@ quiz:
       explanation: This purpose applies to the Display Name.
     - content: 'To act as a description of the element.'
       isCorrect: false
-      explanation: Sometimes a description field is available, but Name is not the name of this field.
+      explanation: Sometimes a description field is available, but Name isn't the name of this field.
     - content: 'To match the entries in the code running on the IoT device, to enable communications.'
       isCorrect: true
       explanation: Names must be copied exactly in the code running on the device.
     - content: 'To appear in tooltip type text boxes when the operator clicks on an element in the app UI.'
       isCorrect: false
-      explanation: Names are not descriptive text.
+      explanation: Names aren't descriptive text.
 
   - content: 'What is meant by a Writable Property?'
     choices: 

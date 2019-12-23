@@ -32,25 +32,25 @@ quiz:
     choices: 
     - content: 'Authenticating'
       isCorrect: false
-      explanation: Good try, but no, there is a specific name for authenticating devices.
+      explanation: Good try, but no, there's a specific name for authenticating devices.
     - content: 'Servicing'
       isCorrect: false
       explanation: Servicing is a broader term than authenticating devices.
     - content: 'Provisioning'
       isCorrect: true
-      explanation: This term is what you will see in the IoT Central portal.
+      explanation: This term is what you'll see in the IoT Central portal.
       
-  - content: 'Internally, what elements make up a Geopoint?'
+  - content: 'Internally, what elements make up a Geo-point?'
     choices: 
     - content: 'Latitude, Longitude, Altitude'
       isCorrect: true
-      explanation: Altitude is not needed in our scenario, but some applications will certainly need it.
+      explanation: Altitude isn't needed in our scenario, but some applications will certainly need it.
     - content: 'Latitude, Longitude'
       isCorrect: false
-      explanation: These two are all we needed in the refrigerated truck scenario, but there is more to a Geopoint.
-    - content: 'X and Y co-ordinates'
+      explanation: These two values are all we needed in the refrigerated truck scenario, but there's more to a Geo-point.
+    - content: 'X and Y coordinates'
       isCorrect: false
-      explanation: X and Y co-ordinates work best on 2D rectangular graphs, rather than a spheroid such as the Earth.
+      explanation: X and Y coordinates work best on 2D rectangular graphs, rather than a spheroid such as the Earth.
     - content: 'Latitude, Longitude, Time'
       isCorrect: false
-      explanation: The space-time dimension is not part of a Geopoint.
+      explanation: The space-time dimension isn't part of a Geo-point.
