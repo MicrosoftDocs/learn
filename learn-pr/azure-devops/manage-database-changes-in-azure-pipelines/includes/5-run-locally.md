@@ -143,7 +143,7 @@ Here you build and run the web application locally to verify that the applicatio
     dotnet run --configuration Release --no-build
     ```
 
-1. On a new browser tab, navigate to [http://localhost:5000](http://localhost:5000?azure-portal=true) to see the running application.
+1. On a new browser tab, navigate to `http://localhost:5000` to see the running application.
 
     You see this interface:
 
@@ -155,7 +155,7 @@ Here you build and run the web application locally to verify that the applicatio
     > 1. Run `dotnet dev-certs https --trust`. 
     > 1. When prompted, select **Yes**. For more information, see the blog post [Developing locally with ASP.NET Core under HTTPS, SSL, and self-signed certificates](https://www.hanselman.com/blog/DevelopingLocallyWithASPNETCoreUnderHTTPSSSLAndSelfSignedCerts.aspx?azure-portal=true).
     > 1. After your computer trusts your local SSL certificate, run the `dotnet run` command again.
-    > 1. From a new browser tab, go to [http://localhost:5000](http://localhost:5000?azure-portal=true) to see the running application.
+    > 1. From a new browser tab, go to `http://localhost:5000` to see the running application.
 
     You can interact with the page, including the leaderboard. When you select a player's name, you see details about that player.
 

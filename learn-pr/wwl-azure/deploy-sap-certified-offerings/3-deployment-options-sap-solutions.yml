@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-sap-certified-offerings.deployment-options-sap-solutions
+title: Deployment options for SAP solutions on Azure
+metadata:
+  title: Deployment options for SAP solutions on Azure
+  description: Deployment options for SAP solutions on Azure
+  ms.date: 12/20/2019
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 18
+content: |
+  [!include[](includes/3-deployment-options-sap-solutions.md)]

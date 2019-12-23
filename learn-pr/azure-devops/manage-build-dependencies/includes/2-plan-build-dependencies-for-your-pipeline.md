@@ -61,7 +61,7 @@ You can host packages on your own network, or you can use a hosting service. A h
 Here are popular hosting services for the package types we just discussed:
 
 * **NuGet**: [nuget.org](https://www.nuget.org?azure-portal=true)
-* **Maven**: [apache.org](http://www.apache.org?azure-portal=true)
+* **Maven**: [apache.org](https://www.apache.org?azure-portal=true)
 * **npm**: [npmjs.com](https://www.npmjs.com?azure-portal=true)
 * **Chocolatey**: [chocolatey.org](https://chocolatey.org?azure-portal=true)
 * **RubyGems**: [rubygems.org](https://rubygems.org?azure-portal=true)
