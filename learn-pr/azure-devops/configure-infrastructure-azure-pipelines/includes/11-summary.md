@@ -2,7 +2,7 @@ Great work! You successfully configured Azure Pipelines to run a basic Ansible c
 
 You started by creating an inventory file, a configuration file, and a playbook locally. You uploaded these files to Azure Cloud Shell and to your control machine.
 
-In practice, you typically won't need to copy so many files. Here, you started by running Ansible from Cloud Shell to get a sense for how the process works. You then ran Ansible on your control machine through Visual Studio Code to see how the Ansible extension for VS Code helps make the process easier. In practice, you'd choose the technique that best fits your preferred workflow.
+In practice, you typically won't need to copy so many files. Here, you started by running Ansible from Cloud Shell to get a sense for how the process works. You then ran Ansible on your control machine through Visual Studio Code to see how the Ansible extension for Visual Studio Code helps make the process easier. In practice, you'd choose the technique that best fits your preferred workflow.
 
 ## Learn more
 

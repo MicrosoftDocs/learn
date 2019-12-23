@@ -25,7 +25,7 @@ The Ansible extension for Azure Pipelines provides the `Ansible@0` task, which s
 
 Push your local Git repository to GitHub. To do so, you add a remote that points to your GitHub repository.
 
-1. In VS Code, go to your Bash session.
+1. In Visual Studio Code, go to your Bash session.
 1. Add and commit your inventory file, *azure_rm.yml*, and your playbook, *users.yml*, to your repository.
 
     ```bash
@@ -176,7 +176,7 @@ Here, you remove the *testuser1* user from your VM named *vm1*. You then run the
 
 This process helps you see how Ansible can repair your configuration if it's accidentally changed by an outside person or process.
 
-1. In VS Code, switch to your Azure Cloud Shell session.
+1. In Visual Studio Code, switch to your Azure Cloud Shell session.
 1. Get the IP address of your VM named *vm1*:
 
     ```azurecli
