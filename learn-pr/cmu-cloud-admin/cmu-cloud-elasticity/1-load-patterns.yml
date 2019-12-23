@@ -16,7 +16,7 @@ quiz:
   title: Check your knowledge
   questions:
 
-    - content: "Assume that one server can handle 5,000 requests per unit of time, and that a web site experiences loads that vary relatively evenly from a low of 5,000 to a peak of 25,000. Assuming the site is hosted in the cloud using virtual machines and that each VM costs $4 per day, what is the approximate annual difference in cost between providing elastic capacity that is sized to meet demand and constant capacity sized to handle peak loads?"
+    - content: "Assume one server can handle 5,000 requests per unit of time, and a web site experiences loads that vary relatively evenly from a low of 5,000 to a peak of 25,000. The site is hosted in the cloud using virtual machines and each VM costs $4 per day. What is the approximate annual difference in cost between providing elastic capacity that is sized to meet demand and constant capacity sized to handle peak loads?"
       choices:
       - content: "$600"
         isCorrect: false
