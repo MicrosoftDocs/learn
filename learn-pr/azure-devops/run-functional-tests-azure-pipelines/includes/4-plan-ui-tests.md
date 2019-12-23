@@ -2,13 +2,13 @@ In this section, you follow along with Amita and Andy as they talk about how to 
 
 ## Run UI tests manually
 
-Amita is waiting for Andy to show up. Andy is going to help Amita write a UI test that will be added to the _Test_ stage of the pipeline. He sees Amita scribbling in her notebook, crossing out something, muttering, and then tearing out the page. 
+Amita is waiting for Andy to show up. Andy is going to help Amita write a UI test that will be added to the _Test_ stage of the pipeline. When he arrives, Andy sees Amita scribbling in her notebook, crossing out something, muttering, and then tearing out the page. 
 
 **Andy:** Hi. You don't look happy.
 
 **Amita:** I'm not happy. I'm trying to figure out how to write an automated test, but I don't know where to start. I don't code. I feel like I'm obsolete.
 
-**Andy:** Wow, I don't think it's that bad. For one thing, we'll always need someone who can keep the user's perspective in mind. There's no way to automate that. For another, no one starts out knowing how to do this. We were all beginners at some point. Hopefully, I can make the learning process a bit easier.
+**Andy:** Wow, I don't think it's that bad. For one thing, we'll always need someone who has the user's perspective in mind. There's no way to automate that. For another, no one starts out knowing how to automate tests. We were all beginners at some point. Hopefully, I can make the learning process a bit easier.
 
 I think the best way to start is to automate something you regularly do manually. Pick a UI test. Then let's walk through it and write down the steps. Next we'll figure out how to automate those steps. What test should we pick?
 
@@ -18,7 +18,7 @@ Amita takes a deep breath.
 
 **Andy:** That sounds like a great place to start. You run the test. I'll write down the procedure.
 
-Amita opens her Windows laptop and launches Google Chrome. She goes to the web app and verifies that the home page comes up.
+Amita opens a Windows laptop and launches Google Chrome. She goes to the web app and verifies that the home page opens.
 
 > [!TIP]
 > For reference, Microsoft hosts a version of the [Space Game](http://tailspin-spacegame-web.azurewebsites.net?azure-portal=true) website. Go there if you want to follow along with Amita's manual tests. Otherwise, you can just read along.
@@ -43,22 +43,22 @@ Next Amita clicks the top player on the leaderboard. The player's profile appear
 
 ![A browser showing the leaderboard modal window on the Space Game website](../media/4-website-leaderboard.png)
 
-**Amita:** That covers the modal window tests. I run these tests on Windows because that's how most players visit our site. I run the tests on Chrome, and when I have time I also run them on Firefox and Microsoft Edge.
+**Amita:** That covers the modal window tests. I run these tests on Windows because that's what most players use to visit our site. I run the tests on Chrome, and when I have time I also run them on Firefox and Microsoft Edge.
 
-If I had time, I would run all the tests again on macOS and Linux, just to ensure we're compatible with any operating system our users visit the site from. But I need to run many other tests.
+If I had time, I would run all the tests again on macOS and Linux, just to ensure we're compatible with any operating system that the players use to visit the site. But I need to run many other tests.
 
 ## Get the XPath expressions for the HTML elements
 
-Here you follow along with Amita and Andy as they collect the XPath expressions for the buttons that Amita clicks and the resulting modal windows. XPath is a query language that lets you locate an XML element and retrieve information about it. XPath also works with HTML.
+Here you follow along with Amita and Andy as they collect the XPath expressions for the buttons that Amita clicks and for the resulting modal windows. XPath is a query language that lets you locate an XML element and retrieve information about it. XPath also works with HTML.
 
 **Andy:** I can see why these tests take so long and can be so frustrating. You're going to love automating them. I promise. 
 
-Here's what we'll do. We'll get the XPath expression for each button you click as well as the modal window that appears. The automated tests that we write can use these expressions to know which buttons to click and which modal windows to expect.
+Here's what we'll do. We'll get the XPath expression for each button you click and for the modal window that appears. The automated tests that we write can use these expressions to know which buttons to click and which modal windows to expect.
 
 Let's start by getting the XPath expression for the **Download game** button.
 
 > [!NOTE]
-> You can follow these steps if you want to, or just read along. The next section provides all of the XPath expressions you need when you run the automated tests.
+> You can follow these steps if you want to, or just read along. The next section provides all of the XPath expressions that you need when you run the automated tests.
 
 1. In Google Chrome, go to the _Space Game_ home page.
 1. Right-click the **Download game** button. Then select **Inspect**.
@@ -68,20 +68,20 @@ Let's start by getting the XPath expression for the **Download game** button.
     ![A browser showing the developer tools window and a selected HTML element](../media/4-website-inspect-button.png)
 
 1. Right-click the highlighted text. Point to **Copy** and then select **Copy XPath**.
-1. Paste the text into a document somewhere. We'll use it later.
+1. Paste the text into a document. We'll use it later.
 
     The XPath expression for the **Download game** button is `/html/body/div/div/section[2]/div[2]/a`.
 
 1. Select the **Download game** button. Then repeat steps 2 through 4 to get the XPath expression for the modal window that appears.
 1. Repeat the process for the four game screens and the top player on the leaderboard.
 
-Amita opens Microsoft Word and adds a table. The table contains the XPath expression for each link and the XPath expression for the corresponding modal window. To keep the table basic, she records:
+Amita opens Microsoft Word and adds a table. The table contains the XPath expression for each link and the XPath expression for the corresponding modal window. To keep the table basic, Amita records:
 
 * The **Download game** button.
 * Just one of the game screens.
 * The top player on the leaderboard.
 
-Here's what her table looks like:
+Here's what Amita's table looks like:
 
 > [!div class="mx-tableFixed"]
 > | Feature                  | Link XPath                                                             | Modal XPath                            |
@@ -104,6 +104,6 @@ Here's what her table looks like:
 1. Watch Selenium automatically run through the series of tests for each browser.
 1. In the console window, verify that all the tests pass.
 
-**Amita:** I'll be excited to see how quickly the tests run. Can we try this now?
+**Amita:** I'll be excited to see how quickly the tests run. Can we try the tests now?
 
 **Andy:** Absolutely. Let's move over to my laptop. I have the app code ready.
