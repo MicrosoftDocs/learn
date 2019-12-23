@@ -16,7 +16,7 @@ quiz:
   title: Check your knowledge
   questions:
 
-    - content: "Consider the following scenario: you are using a load balancer with a round-robin scheduler as a front-end to two web servers. One web server is a medium instance that contains 2 cores and 8 GB RAM, while the other is a large instance containing 4 cores and 16 GB RAM. Which of the following scenarios is likely?
+    - content: "Consider the following scenario: you're using a load balancer with a round-robin scheduler as a front end to two web servers. One web server is a medium instance that contains 2 cores and 8 GB RAM, while the other is a large instance with 4 cores and 16 GB RAM. Which of the following scenarios is likely?
 
         I. Both instances will receive an equal number of requests.
         II. Both instances will be equally utilized in terms of percentage of CPU and memory.
@@ -31,13 +31,13 @@ quiz:
         explanation: "Correct!"
       - content: "III and V"
         isCorrect: false
-        explanation: "Incorrect. Round-robin distribution effectively alternates in sending requests to each instance. It does not take into account the resource utilization of individual instances."
+        explanation: "Incorrect. Round-robin distribution effectively alternates in sending requests to each instance. It doesn't take into account the resource utilization of individual instances."
       - content: "III and VI"
         isCorrect: false
-        explanation: "Incorrect. Round-robin distribution effectively alternates in sending requests to each instance. It does not take into account the resource utilization of individual instances."
+        explanation: "Incorrect. Round-robin distribution effectively alternates in sending requests to each instance. It doesn't take into account the resource utilization of individual instances."
       - content: "II and IV"
         isCorrect: false
-        explanation: "Incorrect. Round-robin distribution effectively alternates in sending requests to each instance. It does not take into account the resource utilization of individual instances."
+        explanation: "Incorrect. Round-robin distribution effectively alternates in sending requests to each instance. It doesn't take into account the resource utilization of individual instances."
       - content: "I and V"
         isCorrect: false
-        explanation: "Incorrect. Round-robin distribution effectively alternates in sending requests to each instance. It does not take into account the resource utilization of individual instances."
+        explanation: "Incorrect. Round-robin distribution effectively alternates in sending requests to each instance. It doesn't take into account the resource utilization of individual instances."
