@@ -4,16 +4,20 @@ In this unit, you'll learn what steps you might need to take and what tools you 
 
 When you start a move operation, the resource group holding your resources and the new destination resource group are locked. You can't do write or delete operations on the resource groups until the move operation ends. Your resources aren't affected but you can't add, delete, or update any resources in these resource groups.
 
-Also, your moved resources don't change location. For example, if you have a storage account in the East US region, and you move it to another resource group, it keeps its East US region location.
+Your moved resources don't change location. For example, if you have a storage account in the East US region, and you move it to another resource group, it keeps its East US region location.
 
 ## Move resources between subscriptions
 
-As mentioned before, depending on the resource type, you can move your resources between subscriptions or between resource groups within the same subscription.
+Depending on the resource type, you can move your resources between subscriptions or between resource groups within the same subscription.
 
-For our scenario, we just need to move a pair of storage accounts to a different resource group within the same subscription. If, for billing reasons, we needed to move something like an Azure Web App, and all its dependant resources under a different subscription, that might include more steps. As mentioned in unit 2, you'd need to move all dependant resources into one resource group before you can move those resources into a new resource group under a different subscription. The following diagram shows the steps you might need to take.
+For our scenario, we just need to move a pair of storage accounts to a different resource group within the same subscription. If, for billing reasons, we needed to move something like an Azure Web App, and all its dependant resources under a different subscription, that might include more steps. As mentioned in unit 2, you'd need to move all dependant resources into one resource group. Then, you can move those resources into a new resource group under a different subscription. The following diagram shows the steps you might need to take. This example includes a resource with one dependent resource in a separate resource group.
 
-![Diagram that shows three steps to take when moving resources in multiple resource groups to a resource group in another subscription](../media/6-subscription-scenario-move-resources.png)
+![Diagram that shows three steps to take when moving resources in multiple resource groups to a resource group in another subscription](../media/6-cross-subscription-move-scenario.png)
 
+
+- Step 1: Move the dependent resources into one resource group with the resource.
+- Step 2: Move the resource and dependent resources together from the source subscription to the target subscription.
+- Step 3: Optionally, redistribute the dependent resources to different resource groups within the target subscription.
 
 ## How to move resources
 
