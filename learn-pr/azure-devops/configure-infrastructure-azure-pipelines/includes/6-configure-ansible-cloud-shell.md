@@ -9,7 +9,7 @@ Ansible reads configuration settings from *~/ansible.cfg*. Here, you add setting
 * Hide warnings that you don't yet need to understand.
 * Disable host key checking, so that you're not prompted to verify the authenticity of your servers.
 
-1. In VS Code, select **New File** from the files pane. Name the file *ansible.cfg*.
+1. In Visual Studio Code, select **New File** from the files pane. Name the file *ansible.cfg*.
 
     ![Screenshot of adding a file in Visual Studio Code](../media/6-vs-code-add-file.png)
 
@@ -25,7 +25,7 @@ Ansible reads configuration settings from *~/ansible.cfg*. Here, you add setting
 
 Specify your machine inventory. Recall that the inventory specifies the list of nodes under management. In this module, you define a dynamic inventory to enable Ansible to discover your nodes at runtime.
 
-1. In VS Code, select **New File** from the files pane. Name the file *azure_rm.yml*.
+1. In Visual Studio Code, select **New File** from the files pane. Name the file *azure_rm.yml*.
 
     ![Screenshot of adding a file in Visual Studio Code](../media/6-vs-code-add-file.png)
 
@@ -50,14 +50,14 @@ Upload your Ansible configuration file and your inventory file to the home direc
 
 Remember that we use Cloud Shell in this module because it comes with Ansible already set up for you.
 
-1. In VS Code, select <kbd>F1</kbd> or select **View** > **Command Palette** to access the command palette.
+1. In Visual Studio Code, select <kbd>F1</kbd> or select **View** > **Command Palette** to access the command palette.
 1. In the command palette, enter *Azure: Upload to Cloud Shell*.
 1. Select *ansible.cfg*.
 1. Repeat the process to upload *azure_rm.yml*.
 
 ## Verify the files in Cloud Shell
 
-1. In VS Code, switch from your Bash session to your Cloud Shell session. To do so, select **Bash in Cloud Shell** in the terminal.
+1. In Visual Studio Code, switch from your Bash session to your Cloud Shell session. To do so, select **Bash in Cloud Shell** in the terminal.
 
     ![Screenshot of switching between Bash and Azure Cloud Shell in Visual Studio Code](../media/4-code-bash-cloud-shell.png)
 
@@ -147,4 +147,4 @@ You see "SUCCESS" and "pong" in the output, which tell you that the command succ
 
 The `discovered_interpreter_python` part shows the path where Python is found on each node. The Ubuntu image on Azure comes with Python installed. If Python were not to be installed, you'd see an error message that reminds you to install Python on each node.
 
-Your Cloud Shell session is all set up to run Ansible on your VMs. Keep your Cloud Shell session in VS Code open for the next exercise.
+Your Cloud Shell session is all set up to run Ansible on your VMs. Keep your Cloud Shell session in Visual Studio Code open for the next exercise.
