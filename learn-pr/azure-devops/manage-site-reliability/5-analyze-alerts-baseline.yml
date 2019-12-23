@@ -3,7 +3,7 @@ uid: learn.azdo.manage-site-reliability.5-analyze-alerts-baseline
 title: Analyze alerts to establish a baseline
 metadata:
   title: Analyze alerts to establish a baseline
-  description: Learn ....
+  description: Learn about the alert experience in Azure Monitor, which includes Log Analytics and Application Insights.
   ms.date: 12/20/2019
   author: tpetchel
   ms.author: thpetche

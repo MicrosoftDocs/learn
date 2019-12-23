@@ -3,7 +3,7 @@ uid: learn.azdo.route-system-feedback.2-continuously-monitor
 title: Continuously monitor applications and services
 metadata:
   title: Continuously monitor applications and services
-  description: Learn ...
+  description: Learn how continuous monitoring Azure Monitor and Application Insights helps you validate the health, performance, and reliability of your application and infrastructure. Also, how IT Service Management Connector can help you implement a ticketing system.
   ms.date: 12/20/2019
   author: tpetchel
   ms.author: thpetche

@@ -3,7 +3,7 @@ uid: learn.azdo.manage-site-reliability.4-perform-ongoing-tuning
 title: Perform ongoing tuning to reduce meaningless alerts
 metadata:
   title: Perform ongoing tuning to reduce meaningless alerts
-  description: Learn ...
+  description: Learn about processes that you can implement to monitor site reliability. You also learn about ongoing tuning of your alerts to reduce meaningless alerts.
   ms.date: 12/20/2019
   author: tpetchel
   ms.author: thpetche
