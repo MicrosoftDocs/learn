@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.cmu-cloud-admin.cloud-elasticity.5-serverless-computing
-title: Summary
+uid: learn.cmu-cloud-admin.cmu-cloud-elasticity.5-serverless-computing
+title: Serverless computing
 metadata:
-  title: Summary
-  description: Summary
+  title: Serverless computing
+  description: Serverless computing
   ms.date: 08/15/2019
   author: shanamatthews
   ms.author: shanama
@@ -12,4 +12,24 @@ metadata:
 durationInMinutes: 6
 content: |
   [!include[](includes/5-serverless-computing.md)]
-  
+quiz:
+  title: Check your knowledge
+  questions:
+
+    - content: "Which of the following is NOT a scenario for which you would consider a serverless-computing solution?"  
+      choices:
+      - content: "Code that runs at a specified time each night to back up mission-critical data."
+        isCorrect: false
+        explanation: "Incorrect. This is an ideal application for serverless functions."
+      - content: "A database that experiences varying loads at different times of day, with occasional 10X spikes in traffic."
+        isCorrect: false
+        explanation: "Incorrect. This is an ideal application for serverless functions."
+      - content: "A web site that experiences varying loads at different times of day, with occasional 10X spikes in traffic."
+        isCorrect: true
+        explanation: "Correct! Serverless solutions are generally used for tasks that run frequently but not constantly."
+      - content: "A well-defined business workflow that kicks in every time an invoice is uploaded to cloud storage."
+        isCorrect: false
+        explanation: "Incorrect. This is an ideal application for serverless functions."
+      - content: "Code that serves as the 'glue' between other cloud services."
+        isCorrect: false
+        explanation: "Incorrect. This is an ideal application for serverless functions."

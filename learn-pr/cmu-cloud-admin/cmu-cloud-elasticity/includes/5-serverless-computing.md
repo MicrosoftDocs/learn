@@ -12,7 +12,7 @@ Serverless functions executed by function runtimes in the cloud are the most com
 
 Serverless computing offers three primary benefits to organizations that leverage cloud computing:
 
-**Lower computing costs**: Customers typically pay monthly charges for IaaS virtual machines and PaaS services such as Elastic Beanstalk and Azure App Service. Billing continues even if the services are idle. Most serverless-computing services, however, support *consumption pricing*, in which you are only billed for the time your code is executing. Imagine that you dedicate a \$100-per-month VM to running code that performs a nightly backup of mission-critical data, and that the code runs for 30 minutes each night. You are paying \$100 per month to execute code for 1/48^th^ of a month, or less than one day. Deploying the same code as a serverless function could cost you as little as a few dollars per month. With consumption pricing, you don't pay for idle time.
+**Lower computing costs**: Customers typically pay monthly charges for IaaS virtual machines and PaaS services such as Elastic Beanstalk and Azure App Service. Billing continues even if the services are idle. Most serverless-computing services, however, support *consumption pricing*, in which you are only billed for the time your code is executing. Imagine that you dedicate a 100-dollar-per-month VM to running code that performs a nightly backup of mission-critical data, and that the code runs for 30 minutes each night. You are paying 100 dollars per month to execute code for 1/48^th^ of a month, or less than one day. Deploying the same code as a serverless function could cost you as little as a few dollars per month. With consumption pricing, you don't pay for idle time.
 
 **Automatic scalability**: Cloud providers offer mechanisms for scaling IaaS services in products such as AWS Auto Scaling and Azure Virtual Machine Scale Sets. They also provide manual and automatic scaling options for PaaS services. But even if scaling is performed automatically, a cloud administrator has to enable auto-scaling and configure it so that the cloud provider knows how and when scaling should occur. One of the underlying considerations administrators must take into account is that since you pay for individual instances of IaaS and PaaS services, you want to configure the service to scale *enough* while not scaling *too much*. Serverless computing offers the option of transparently and automatically scaling out to meet increased demand and scaling in when demand subsides. A cloud administrator typically performs no configuration other than enabling this option in the service. If you get hit with 100 requests at once to execute a serverless function, the cloud service provider makes sure the requests can be executed in parallel (or mostly in parallel). Cost isn't impacted because with consumption pricing, it costs the same to execute a function 100 times, regardless of whether execution is serial or parallel.
 
@@ -30,7 +30,9 @@ Some cloud service providers offer support for stateful functions (Azure calls t
 
 ## Serverless functions
 
-The most common example of serverless computing is serverless functions. You upload code to the cloud and tell it when to execute. The code can be written in a variety of languages, including Java and C\#. Figure 11 lists the programming languages supported by serverless functions in Azure, AWS, and GCP at the time of this writing.
+The most common example of serverless computing is serverless functions. You upload code to the cloud and tell it when to execute. The code can be written in a variety of languages, including Java and C\#. 
+
+Figure 11 lists the programming languages supported by serverless functions in Azure, AWS, and GCP at the time of this writing:
 
 | Language             | Azure Functions | AWS Lambda | Google Cloud Functions |
 |----------------------|-----------------|------------|------------------------|
