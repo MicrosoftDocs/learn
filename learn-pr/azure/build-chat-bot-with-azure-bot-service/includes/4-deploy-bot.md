@@ -6,7 +6,7 @@ In this unit, you'll use Visual Studio Code to place the code in a local Git rep
 
 1. Create a folder named **factbot** in the location of your choice on your hard disk to hold the bot's source code.
 
-1. Return to the Azure portal in the browser and find the resource group created using the search box at the top, or the **Resource groups** section in the left-hand sidebar.
+1. In the Azure portal, search for and select the resource group you created.
 
 1. Locate and select the Web App Bot you created earlier.
 
