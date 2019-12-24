@@ -12,7 +12,7 @@ In order to start collecting the data from the Raspberry Pi simulator, you need 
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-1. From the Azure portal menu, select **Create a source**.
+1. From the Azure portal menu, select **Create a resource**.
 
     ![Screenshot of Azure portal menu and Create a resource option.](../media/create-a-resource.png)
 
