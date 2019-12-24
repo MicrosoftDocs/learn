@@ -73,7 +73,7 @@ The database we created currently does not allow access from any connections. Th
     ssh nnn.nnn.nnn.nnn
     ```
 
-    Where `nnn.nnn.nnn.nnn` is the value from the `publicIpAddress` in the previous exercise.
+    Where `nnn.nnn.nnn.nnn` is the value from the `publicIpAddress` in the previous unit.
 
 1. Recall the `sqlcmd` command we retrieved earlier. Go ahead and run it to attempt to connect to the database. Make sure you replace `[username]` and `[password]` with the `ADMINUSER` credentials you specified in the previous unit. Make sure to keep the single quotes around the username and password so that any special characters aren't misinterpreted by the shell.
 
