@@ -30,7 +30,7 @@ Azure AD provides services such as:
 Business-to-Customer (B2C) identity services. Customize and control how users sign up, sign in, and manage their profiles when using your apps with services.
 - **Device Management.** Manage how your cloud or on-premises devices access your corporate data.
 
-Let's explore a few of a few of these in more detail.
+Let's explore a few of these in more detail.
 
 ## Single sign-on
 
