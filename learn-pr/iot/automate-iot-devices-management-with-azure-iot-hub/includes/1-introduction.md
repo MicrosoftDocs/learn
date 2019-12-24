@@ -23,5 +23,14 @@ In this module you will:
 
 ## Learn the scenario
 
-Suppose you manage a gourmet cheese making company in a southern location. The company is proud of its cheese, and is careful to maintain the perfect temperature and humidity of a natural cave that is used to age the cheese. There are sensors in the cave that report on the temperature and humidity. A remote operator can set a fan to new settings if needed, to maintain the perfect environment for the aging cheese. The fan can heat and cool, and humidify and de-humidify.
-Your company is always enhancing the software running on the devices to better adapt to different types of cheeses and customers diverse types of rooms they use to store their cheese. In addition to the software updates, you also want to make sure the devices deployed at customers locations have the latest security patches to ensure privacy and prevent hackers to take control of the system. In order to do this, you need to keep the devices up to date by remotely updating their firmware.
+Suppose you manage a company that offers a solution to maintain and monitor cheese caves' temperature and humidity at optimal levels. You have been working with gourmet cheese making companies for a long time and established long term trust with these customers who value the quality of your product.Your solution consists in sensors and a climate system installed in the cave that report in real time on the temperature and humidity and an online portal customers can use to monitor and remotely operate their devices to adapt the temperature and humidity to the type of cheese they stored in their cave or to fine tune the environment for perfectly aging their cheese.
+Your company is always enhancing the software running on the devices to better adapt to your customers different cheeses and diverse types of rooms they use to store their cheese. In addition to the features updates, you also want to make sure the devices deployed at customers locations have the latest security patches to ensure privacy and prevent hackers to take control of the system. In order to do this, you need to keep the devices up to date by remotely updating their firmware.
+
+## What you will do in this module
+
+In the following units you will go through these steps:
+
+- Setup an Azure IoT environment: and Azure IoT Hub instance and a device Id
+- Write code for simulating the device that will implement the firmware update
+- Test the firmware update process on a single device using Azure IoT Hub automatic device management
+- Setup an automatic device management configuration to deploy the firmware update on a group of devices

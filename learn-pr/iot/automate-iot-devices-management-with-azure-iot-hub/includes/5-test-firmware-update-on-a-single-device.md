@@ -19,7 +19,7 @@ You should see the following output in the terminal (where "mydevice" is the dev
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
 1. Go to the IoT Hub blade. You can find your IoT Hub by typing in the search bar (on top) the name you used when creating it in unit 2.
-1. In the IoT Hub, find the Automatic Device Management blade and select "IoT Device COnfiguration", then select "Add Device Configuration"
+1. In the IoT Hub, find the Automatic Device Management blade and select "IoT Device Configuration", then select "Add Device Configuration"
 
     :::image type="content" source="../media/devicemanagement-1.png" alt-text="IoT Devive Configuration":::
     
@@ -81,4 +81,4 @@ And on the Device Management Configuration you should see the following:
 
     :::image type="content" source="../media/devicemanagement-8.png" alt-text="Configuration applied and successful":::
     
-You have validated that the firmware update process on your simulated device works. Now let's get into the more serious business of deploying a firmware update configuration on a set of devices.
+You have validated that the firmware update process on your simulated device works. You can stop the device simulator by simply pressing the "Enter" key in the terminal.

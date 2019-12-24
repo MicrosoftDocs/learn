@@ -1,0 +1,78 @@
+### YamlMime:ModuleUnit
+uid: >-
+  learn.iot.automate-iot-devices-management-with-azure-iot-hub.knowledge-check-simple-firmware-update-configuration
+metadata:
+  title: Knowledge Check - Simple firmware update configuration
+  description: ...
+  ms.date: 12/17/2019
+  author: olivierbloch
+  ms.author: Olivier.Bloch
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Knowledge Check - Simple firmware update configuration
+durationInMinutes: 1
+content: >-
+  [!include[](includes/6-knowledge-check-simple-firmware-update-configuration.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: 'question 1'
+    choices:  
+    - content: 'answer 1'
+      isCorrect: false
+      explanation: explanation 1.
+    - content: 'answer 2'
+      isCorrect: true
+      explanation: explanation 2.
+    - content: 'answer 3'
+      isCorrect: false
+      explanation: explanation 3.
+    - content: 'answer 4'
+      isCorrect: false
+      explanation: explanation 4.
+
+  - content: 'question 2'
+    choices:  
+    - content: 'answer 1'
+      isCorrect: false
+      explanation: explanation 1.
+    - content: 'answer 2'
+      isCorrect: true
+      explanation: explanation 2.
+    - content: 'answer 3'
+      isCorrect: false
+      explanation: explanation 3.
+    - content: 'answer 4'
+      isCorrect: false
+      explanation: explanation 4.
+
+  - content: 'question 3'
+    choices:  
+    - content: 'answer 1'
+      isCorrect: false
+      explanation: explanation 1.
+    - content: 'answer 2'
+      isCorrect: true
+      explanation: explanation 2.
+    - content: 'answer 3'
+      isCorrect: false
+      explanation: explanation 3.
+    - content: 'answer 4'
+      isCorrect: false
+      explanation: explanation 4.
+
+  - content: 'question 4'
+    choices:  
+    - content: 'answer 1'
+      isCorrect: false
+      explanation: explanation 1.
+    - content: 'answer 2'
+      isCorrect: true
+      explanation: explanation 2.
+    - content: 'answer 3'
+      isCorrect: false
+      explanation: explanation 3.
+    - content: 'answer 4'
+      isCorrect: false
+      explanation: explanation 4.
