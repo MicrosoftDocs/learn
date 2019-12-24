@@ -16,7 +16,7 @@ If you haven't already, verify the CDN is delivering the same content as your so
 
 1. In another tab, open a second copy of the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
 
-1. In the left-hand pane, click **Storage accounts**.
+1. On the Azure portal menu or from the **Home** page, click **Storage accounts**.
 
 1. Click the storage account you use to host the static website. It should be the **cdnsitestorageXXXX** resource we created earlier.
 

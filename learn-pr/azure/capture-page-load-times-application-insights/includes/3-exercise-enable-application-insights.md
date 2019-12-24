@@ -11,7 +11,7 @@ In this unit, we'll use the Azure portal to enable runtime instrumentation on a 
 We'll start by creating a web app to monitor. Follow these steps:
 
 1. Sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true).
-1. In the left pane, select **Create a resource**.
+1. On the Azure portal menu or from the Home page, select **Create a resource**.
 1. In the **Search the Marketplace** box, enter **web app**, and then select Enter.
 1. In the list of results, select **Web App**.
 1. On the **Web App** pane, select **Create**.
@@ -31,8 +31,7 @@ You need to set up a name, a resource group, a location, and some other properti
 1. Leave the default values for **App Service plan/Location**
 1. At the bottom of the pane, select **Review and create**.
 1. Review the configuration and select **Create**.
-1. When the web app is created, in the left pane, select **All resources**.
-1. In the list of resources, select the web app you just created.
+1. When the web app is created, in the Azure portal, search for and select the web app you just created.
 1. Scroll down on the **Overview** page. Notice that, even without Application Insights, some statistics appear, like the frequency of 500 errors and the rate of requests.
 
 ## Enable Application Insights for the web app
@@ -41,7 +40,7 @@ The limited set of statistics provided in the Azure portal isn't enough to help 
 
 To enable Application Insights on an app, follow these steps:
 
-1. If the web app's pane isn't already visible, select **All resources** in the left pane, and then select the web app you created earlier in this unit.
+1. If the web app's pane isn't already visible, in the Azure portal, search for and select the web app you created earlier in this unit.
 1. Under **Settings** on the left, select **Application Insights**.
 
     ![Web app navigation pane](../media/3-web-app-nav-pane.png)
@@ -49,14 +48,14 @@ To enable Application Insights on an app, follow these steps:
 1. On the **Application Insights** page, make sure **Enable** is selected.
 1. Under **Create a new resource**, in the **New resource name** box, enter **videoappinsights**.
 1. In the **Location** list, select a location, and then select **Apply**. If the **Apply monitoring settings** box appears, select **Yes**.
-1. After the changes are applied, in the left pane, select **All resources** and then, in the list of resources, select **videoappinsights**.
+1. After the changes are applied, in the Azure portal, search for and select **videoappinsights**.
 1. In the **Application Insights** pane, select **Application Dashboard**. Note the charts shown by default in the dashboard. If the charts don't appear within a few seconds, select F5 to refresh the page.
 
 ## Inject the Application Insights JavaScript SDK into the web app
 
 Because you can inject the Application Insights JavaScript SDK into the video web app without involving developers, and because this will generate more data for performance analysis, you want to enable client-side monitoring. To do this, follow these steps:
 
-1. If the web app's pane isn't already visible, select **All resources** in the left pane, and then select the web app you created earlier.
+1. If the web app's pane isn't already visible, in the Azure portal, search for and select the web app you created earlier.
 1. Under **Settings** on the left, select **Configuration**. You will be on the **Application Settings** tab.
 1. On the **Application Settings** page select **+ New application setting**.
 
