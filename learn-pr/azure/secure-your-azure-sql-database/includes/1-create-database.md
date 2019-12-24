@@ -18,7 +18,7 @@ Let's get things set up!
     export SERVERNAME=server$RANDOM
     export RESOURCEGROUP=<rgn>[sandbox resource group name]</rgn>
     # Set the location, we'll pull the location from our resource group.
-    export LOCATION=$(az group show --name <rgn>[sandbox resource group name]</rgn> | jq -r '.location')
+    export LOCATION=$(az group show --name $RESOURCEGROUP | jq -r '.location')
     ```
 
 1. Run the following command to create a new Azure SQL Database logical server.
