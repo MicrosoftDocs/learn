@@ -3,7 +3,7 @@ uid: learn.cmu-cloud-admin.cmu-cloud-elasticity
 metadata:
   title: Scale your cloud resources with elasticity
   description: Cloud Admin course from Dr. Majd Sakr at Carnegie Mellon University. Discover what cloud elasticity means and different ways to scale your cloud resources.
-  ms.date: 08/15/2019
+  ms.date: 12/31/2019
   author: shanamatthews
   ms.author: shanama
   ms.topic: interactive-tutorial
