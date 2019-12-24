@@ -58,7 +58,7 @@ Let's get things set up!
 
 Now let's create the Linux VM that we'll use through some examples.
 
-1. Run the following command to create the VM.
+1. Run the following command to create the VM; this might take several minutes to complete.
 
     ```azurecli
     az vm create \
@@ -69,11 +69,29 @@ Now let's create the Linux VM that we'll use through some examples.
       --generate-ssh-keys
     ```
 
-1. Once your VM is successfully created, connect to it via SSH.
+    When this command completes, you should see output that resembles the following example:
+
+    ```json
+    {
+      "fqdns": "",
+      "id": "/subscriptions/nnnnnnnn-nnnn-nnnn-nnnn-nnnnnnnnnnnn/resourceGroups/learn-nnnnnnnn-nnnn-nnnn-nnnn-nnnnnnnnnnnn/providers/Microsoft.Compute/virtualMachines/appServer",
+      "location": "westus",
+      "macAddress": "nn-nn-nn-nn-nn-nn",
+      "powerState": "VM running",
+      "privateIpAddress": "nn.nn.nn.nn",
+      "publicIpAddress": "nnn.nnn.nnn.nnn",
+      "resourceGroup": "learn-nnnnnnnn-nnnn-nnnn-nnnn-nnnnnnnnnnnn",
+      "zones": ""
+    }
+    ```
+
+1. Once your VM is successfully created, connect to its public IP address using SSH.
 
     ```azurecli
-    ssh [X.X.X.X]
+    ssh nnn.nnn.nnn.nnn
     ```
+
+    Where `nnn.nnn.nnn.nnn` is the value from the `publicIpAddress` output in the previous step.
 
     > [!NOTE]
     > Two things to note. First, we don't need a password because we generated an SSH key pair as part of the VM creation. Second, on the initial shell connection into the VM it will give you a prompt about the authenticity of the host. This occurs because we are connecting to an IP address instead of a host name. Answering "yes" will save the IP as a valid host for connection and allow the connection to proceed.
