@@ -69,4 +69,4 @@ quiz:
       explanation: The Views control is used to create dashboards.
     - content: 'Delete'
       isCorrect: false
-      explanation: No points for guessing what Delete does.
+      explanation: Delete is a very useful key.
