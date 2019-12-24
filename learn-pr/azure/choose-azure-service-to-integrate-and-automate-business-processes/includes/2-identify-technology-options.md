@@ -119,7 +119,7 @@ In most cases, the simple administration and more flexible coding model provided
 
 | | Azure WebJobs | Azure Functions |
 -- | -- | -- |
-Supported languages | C# if you are using the WebJobs SDK | C#, F#, JavaScript, Java |
+Supported languages | C# if you are using the WebJobs SDK | C#, Java, JavaScript, PowerShell, Python |
 Automatic scaling | No | Yes |
 Development and testing in a browser | No | Yes |
 Pay-per-use pricing | No | Yes |
