@@ -365,7 +365,7 @@ If the firewall is still switched on for the Azure Cosmos DB, the chat app can't
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you used to activate the sandbox.
 
-1. In the resources list on the left-hand side of the portal, select **Azure Cosmos DB**.
+1. On the Azure portal menu, select **Azure Cosmos DB**.
 
 1. In the list of database accounts, select the database account with a name beginning with **learn-cosmos-db-**.
 

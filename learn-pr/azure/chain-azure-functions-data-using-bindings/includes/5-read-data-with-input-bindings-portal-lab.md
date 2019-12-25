@@ -17,7 +17,9 @@ A database account is a container for managing one or more databases. Before we 
 
 1. Make sure you are signed into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-1. Select the **Create a resource** button found on the upper left-hand corner of the Azure portal, then select **Databases** > **Azure Cosmos DB**.
+1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
+
+1. Select **Databases** > **Azure Cosmos DB**.
 
 1. In the **Create Azure Cosmos DB Account** page, enter the settings for the new Azure Cosmos DB account.
 
