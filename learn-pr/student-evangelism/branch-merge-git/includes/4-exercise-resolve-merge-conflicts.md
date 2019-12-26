@@ -32,7 +32,7 @@ Let's assume Alice's role again and make a change to the Web site's home page by
     cd ../Alice
     ```
 
-1. Again, download the zip file containing the [resources that accompany this lesson](https://topcs.blob.core.windows.net/public/git-resources.zip), then unzip them with these commands:
+1. If you didn't download the resources previously, download the zip file containing the [resources that accompany this lesson](https://topcs.blob.core.windows.net/public/git-resources.zip), and then unzip them with these commands:
 
     ```bash
     wget https://topcs.blob.core.windows.net/public/git-resources.zip
@@ -50,13 +50,13 @@ Let's assume Alice's role again and make a change to the Web site's home page by
 1. Then open **index.html** and replace this line:
 
     ```html
-    <img src="Assets/bobcat2-317x240.jpg">
+    <img src="Assets/bobcat2-317x240.jpg" />
     ```
 
     With this one:
 
     ```html
-    <img class="cat" src="Assets/bombay-cat-180x240.jpg">
+    <img class="cat" src="Assets/bombay-cat-180x240.jpg" />
     ```
 
     Then save and close the file.
@@ -76,7 +76,7 @@ Finish up by confirming that the push succeeded.
 
 ## Make a change as Bob
 
-Without knowing what Alice is doing, Bob notices that Alice's last push added a CSS style named `cats` to **site.css**. So he decides to apply that class to his cat picture.
+Without knowing what Alice is doing, Bob notices that Alice's last push added a CSS style named `cats` to **site.css**. So Bob decides to apply that class to his cat picture.
 
 1. Return to the "Bob" directory:
 
@@ -87,7 +87,7 @@ Without knowing what Alice is doing, Bob notices that Alice's last push added a 
 1. Open **index.html**, add a `class="cat"` attribute to the `<img>` element, and save the file:
 
     ```html
-    <img class="cat" src="assets/bobcat2-317x240.jpg">
+    <img class="cat" src="assets/bobcat2-317x240.jpg" />
     ```
 
 1. Now commit the change, switch back to "master," do a pull, and merge:
@@ -111,7 +111,7 @@ The output identifies **index.html** as the source of the conflict. The question
 
 ## Resolve the merge conflict
 
-Bob has a few options at this point. One is to use `git merge --abort` to restore "master" to what it was before the attempted merge. Bob could then do a pull to get Alice's changes, create a new branch, make his changes, merge the branch into "master," and push his changes. Bob could also use `git reset --hard` to get back to where he was.
+Bob has a few options at this point. One is to use `git merge --abort` to restore "master" to what it was before the attempted merge. Bob could then do a pull to get Alice's changes, create a new branch, make his changes, merge the branch into "master," and push his changes. Bob could also use `git reset --hard` to get back to where they were.
 
 The preferred option in many cases is to resolve the conflict using information Git inserted into the affected files. When Git detects a conflict in a file, it inserts *both* conflicting versions into the file between lines starting with `<<<<<<<`, `=======`, and `>>>>>>>`.  
 

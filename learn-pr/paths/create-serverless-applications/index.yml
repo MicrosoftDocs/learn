@@ -31,6 +31,7 @@ modules:
 - learn.execute-azure-function-with-triggers
 - learn.chain-azure-functions-data-using-input-output-bindings
 - learn.azure-create-long-running-serverless-workflow-with-durable-functions
+- learn-pr.develop-test-deploy-azure-functions-core-tools
 - learn.develop-test-deploy-azure-functions-with-visual-studio
 - learn.azure.monitor-github-events-with-a-function-triggered-by-a-webhook
 - learn.advocates.azure-functions-and-signalr

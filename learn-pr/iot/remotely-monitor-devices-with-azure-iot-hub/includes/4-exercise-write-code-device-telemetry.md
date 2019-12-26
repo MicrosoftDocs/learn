@@ -196,8 +196,8 @@ This section adds code to send telemetry from a simulated device. The device sen
     setInterval(sendMessage, intervalInMilliseconds);
     ```
 
-  > [!NOTE]
-  > Read through the comments in the code, noting how the temperature and humidity settings from the description of the scenario in the introduction have worked their way into the code.
+    > [!NOTE]
+    > Read through the comments in the code, noting how the temperature and humidity settings from the description of the scenario in the introduction have worked their way into the code.
 
 1. Replace the &lt;your device connection string&gt; with the device connection string you saved off in the previous unit. No other lines of code need to be changed.
 
