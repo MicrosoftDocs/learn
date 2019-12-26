@@ -391,7 +391,7 @@ Use the following steps to clone the Chat App GitHub repository with `git`. You 
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-1. On the Azure portal menu, select **Azure Cosmos DB**.
+1. On the Azure portal menu or from the **Home** page, select **Azure Cosmos DB**.
 
 1. You should see a database account with a name beginning with **learn-cosmos-db-**. Select that database account.
 
@@ -414,7 +414,7 @@ To disable the firewall and let the app read and write to the Azure Cosmos DB da
 
 1. Visit the [Azure portal for sandbox](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-1. On the Azure portal menu, select **Azure Cosmos DB**.
+1. On the Azure portal menu or from the **Home** page, select **Azure Cosmos DB**.
 
 1. You should see a database account with a name beginning with **learn-cosmos-db-**. Select that database account.
 
@@ -433,7 +433,7 @@ This exercise shows how to detect an error in your app. So far, we just notify t
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-1. On the Azure portal menu, select **Azure Cosmos DB**.
+1. On the Azure portal menu or from the **Home** page, select **Azure Cosmos DB**.
 
 1. You should see a database account with a name beginning with **learn-cosmos-db-**. Select that database account.
 
@@ -456,7 +456,7 @@ To disable the firewall and let the app read and write to the Azure Cosmos DB da
 
 1. Visit the [Azure portal for sandbox](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-1. On the Azure portal menu, select **Azure Cosmos DB**.
+1. On the Azure portal menu or from the **Home** page, select **Azure Cosmos DB**.
 
 1. You should see a database account with a name beginning with **learn-cosmos-db-**. Select that database account.
 
@@ -475,7 +475,7 @@ This exercise shows how to detect an error in your app. So far, we just notify t
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-1. On the Azure portal menu, select **Azure Cosmos DB**.
+1. On the Azure portal menu or from the **Home** page, select **Azure Cosmos DB**.
 
 1. You should see a database account with a name beginning with **learn-cosmos-db-**. Select that database account.
 
@@ -498,7 +498,7 @@ To disable the firewall and let the app read and write to the Azure Cosmos DB da
 
 1. Visit the [Azure portal for sandbox](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-1. On the Azure portal menu, select **Azure Cosmos DB**.
+1. On the Azure portal menu or from the **Home** page, select **Azure Cosmos DB**.
 
 1. You should see a database account with a name beginning with **learn-cosmos-db-**. Select that database account.
 
