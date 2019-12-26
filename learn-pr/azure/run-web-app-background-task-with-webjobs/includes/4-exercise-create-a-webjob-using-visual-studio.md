@@ -48,7 +48,7 @@ You've now created a web application from the sample template and it is running 
 1. Ensure that your copy of Visual Studio is logged into the account you have used to log in to Microsoft Learn. This will ensure that the sandbox subscription is available for publishing.
 1. Right-click the **WatchesWebApp** project in Solution Explorer and select **Publish**.
 1. Select **App Service** as the publish target, select **Create New**, and then click **Publish**.
-1. In the **Create App Service** dialog, enter a name for your web application and make a note of it for later. You can accept the default name. This name must be globally unique. For **Subscription**, select the subscription in which you craetaed the mslearn-webjobs resource group. Select the resource group as well, then click **Create**.
+1. In the **Create App Service** dialog, enter a name for your web application and make a note of it for later. You can accept the default name. This name must be globally unique. For **Subscription**, select the subscription in which you created the mslearn-webjobs resource group. Select the resource group as well, then click **Create**.
 1. When deployment is complete, Visual Studio will open a new browser tab. After a short wait, the new web app will be displayed.
 
 ## Configure the web app

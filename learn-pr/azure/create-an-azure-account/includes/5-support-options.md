@@ -11,7 +11,7 @@ You have 24/7 access to the online documentation, community support, and new Azu
 
 ## Azure support plans
 
-Azure offers customers reactive and proactive technical support. Choose the support plan that best meet your needs. You can purchase the support plan on the Azure website or Azure portal. If you are working with a Microsoft representative or partner, you can purchase a support plan from them. Microsoft also provide support plans that cover Azure, Office 365 and Dynamics 365. Talk to your Microsoft representative or partner for more details.
+Azure offers customers reactive and proactive technical support. Choose the support plan that best meet your needs. You can purchase the support plan on the Azure website or Azure portal. If you are working with a Microsoft representative or partner, you can purchase a support plan from them. Microsoft also provides support plans that cover Azure, Office 365 and Dynamics 365. Talk to your Microsoft representative or partner for more details.
 
 
 

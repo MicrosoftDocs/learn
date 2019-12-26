@@ -28,7 +28,7 @@ Use these resources to discover more.
 >To open a resource link, right-click and select "Open in a new tab or window," that way, you can check out the resource and easily return to the module tab to unlock your achievement when done.
 
 Learn more about IoT Products:
-- [Azure IoT](http://azure.com/iot)
+- [Azure IoT](https://azure.com/iot)
 
 Learn more about IoT Reference Architecture:
 - [Azure IoT Reference Architecture](https://aka.ms/iotrefarchitecture)

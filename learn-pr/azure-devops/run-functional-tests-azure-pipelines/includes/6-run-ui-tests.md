@@ -68,7 +68,7 @@ Let's add the pipeline variable now, before you update your pipeline configurati
 1. Under **Pipelines**, select **Library**.
 1. Select the **Release** variable group.
 1. Under **Variables**, select **+ Add**.
-1. Enter **SITE_URL** as the name of your variable. Enter the URL of the App Service instance that corresponds do your **test** environment, such as **http://tailspin-space-game-web-dev-10529.azurewebsites.net**, as its value.
+1. Enter **SITE_URL** as the name of your variable. Enter the URL of the App Service instance that corresponds do your **test** environment, such as `http://tailspin-space-game-web-dev-10529.azurewebsites.net`, as its value.
 1. Select **Save** near the top of the page to save your variable to the pipeline.
 
     Your variable group resembles this one:

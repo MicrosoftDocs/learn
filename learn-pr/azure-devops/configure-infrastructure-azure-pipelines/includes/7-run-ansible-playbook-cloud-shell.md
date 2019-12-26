@@ -4,7 +4,7 @@ During the process, you:
 
 > [!div class="checklist"]
 > * Walk through a basic Ansible playbook so that you understand what each piece does.
-> * Create the Ansible playbook locally and then upload the playbook to Cloud Shell.
+> * Create the Ansible playbook locally, and then upload the playbook to Azure Cloud Shell.
 > * Run the Ansible playbook on your Linux VMs.
 > * Verify that your VMs were configured as you expect.
 > * Run the playbook a second time to see idempotency in action.
@@ -61,11 +61,11 @@ The `user` module defines the user account named *testuser1*. This module specif
 * A descriptive comment for the user account.
 * Not to create the home directory for the user.
 * The user's login shell. The `/usr/sbin/nologin` prevents login.
-* That the account should exist. You could use the `absent` state to remove the user from the system.
+* That the account should exist. You can use the `absent` state to remove the user from the system.
 
 ### Use the loop block to add a second user
 
-Notice that this configuration creates just one user: *testuser1*. Although you could add a second task that performs the same function, you can use the `loop` keyword to repeat the task multiple times.
+Notice that this configuration creates just one user: *testuser1*. Although you can add a second task that performs the same function, you can use the `loop` keyword to repeat the task multiple times.
 
 Tim and Andy update their configuration, like this:
 
@@ -90,9 +90,9 @@ A related setting, not shown here, is `become_user`. The default value of this s
 
 Now that you've verified that your VMs are connectable through Ansible, here you apply a playbook that configures service accounts on your VMs.
 
-1. In VS Code, select **New File** from the files pane. Name the file *users.yml*.
+1. In Visual Studio Code, select **New File** from the files pane. Name the file *users.yml*.
 
-    ![Adding a file in Visual Studio Code](../media/6-vs-code-add-file.png)
+    ![Screenshot of adding a file in Visual Studio Code](../media/6-vs-code-add-file.png)
 
 1. Add these contents to *users.yml* and then save the file:
 
@@ -115,15 +115,15 @@ Now that you've verified that your VMs are connectable through Ansible, here you
 
 1. Upload *users.yml* to Cloud Shell. To do so:
 
-    1. In VS Code, select <kbd>F1</kbd> or select **View > Command Palette** to access the command palette.
+    1. In Visual Studio Code, select <kbd>F1</kbd> or select **View** > **Command Palette** to access the command palette.
     1. In the command palette, enter *Azure: Upload to Cloud Shell*.
     1. Select *users.yml*.
 
 ## Run the users playbook on your VMs
 
-Here, you run the `users` playbook on your VMs from your Cloud Shell session.
+Run the `users` playbook on your VMs from your Cloud Shell session.
 
-1. In VS Code, switch to your Cloud Shell session.
+1. In Visual Studio Code, switch to your Cloud Shell session.
 1. Run the following `ls` command to verify that *users.yml* exists in your Cloud Shell.
 
     ```bash
@@ -166,7 +166,7 @@ Here, you run the `users` playbook on your VMs from your Cloud Shell session.
 
 The output shows that the Ansible playbook succeeded, but let's double-check the configuration.
 
-It can be useful to verify the result as you develop your configuration code to ensure that your code correctly expresses your needs. But once you have a working configuration in place, you don't need to verify the results each time.
+It can be useful to verify the result as you develop your configuration code, to ensure that your code correctly expresses your needs. But after you have a working configuration in place, you don't need to verify the results each time.
 
 On Linux, you can use the `getent passwd` command to get information about a user. One way to run this command is over SSH.
 
@@ -203,9 +203,9 @@ testuser1:x:1001:1001:service account:/home/testuser1:/usr/sbin/nologin
 Username
 ```
 
-You see that the account is set up as you specified. Although the `getent passwd` command shows */home/testuser1* as the home directory, the directory does not actually exist on the VM. That's because you specified `create_home: no`.
+You see that the account is set up as you specified. Although the `getent passwd` command shows */home/testuser1* as the home directory, the directory doesn't actually exist on the VM. That's because you specified `create_home: no`.
 
-This command tests only one VM. But say you had dozens or hundreds of VMs that you want to verify. You can use Ansible to run the same command on each of your VMs.
+This command tests only one VM. But let's say you have dozens or hundreds of VMs that you want to verify. You can use Ansible to run the same command on each of your VMs.
 
 To do that, run the following `ansible` command:
 
@@ -232,9 +232,9 @@ testuser1:x:1001:1001:service account:/home/testuser1:/usr/sbin/nologin
 
 ## Run the Ansible playbook a second time
 
-Ansible is idempotent. That means you can run it as many times as you'd like. Ansible applies configuration changes only when your playbook changes or the state of your systems don't match what's in your playbook.
+Ansible is idempotent. That means you can run it as many times as you'd like. Ansible applies configuration changes only when your playbook changes, or when the state of your systems doesn't match what's in your playbook.
 
-1. Run the following `ansible-playbook` command to apply your playbook a second time:
+Run the following `ansible-playbook` command to apply your playbook a second time:
 
     ```bash
     ansible-playbook \
@@ -264,10 +264,10 @@ Ansible is idempotent. That means you can run it as many times as you'd like. An
     vm2_867a                   : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
     ```
 
-    As you might expect, Ansible does not apply any changes. The `changed=0` part of the output tells you this.
+As you might expect, Ansible doesn't apply any changes. The `changed=0` part of the output tells you this.
 
-    That's because your Ansible playbook did not change and you haven't modified any of the user accounts on your VMs.
+That's because your Ansible playbook didn't change, and you haven't modified any of the user accounts on your VMs.
 
-    Later, you'll see the benefit of this behavior when you configure your infrastructure in Azure Pipelines by running the same Ansible playbook.
+Later, you'll see the benefit of this behavior when you configure your infrastructure in Azure Pipelines by running the same Ansible playbook.
 
-Keep your Cloud Shell session in VS Code open for the next exercise.
+Keep your Cloud Shell session in Visual Studio Code open for the next exercise.
