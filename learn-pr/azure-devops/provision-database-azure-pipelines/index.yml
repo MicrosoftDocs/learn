@@ -12,8 +12,8 @@ title: Provision databases in Azure Pipelines
 summary: Learn how to automatically provision Azure SQL Database in Azure Pipelines by using an Azure Resource Manager template.
 abstract: |
   In this module, you will:
-  - Deploy your infrastructure using an Azure Resource Manager template in Azure Pipelines.
-  - Create your Azure SQL Database with data from a *.bacpac* file in your Azure Resource Manager template.
+  - Deploy your infrastructure by using an Azure Resource Manager template in Azure Pipelines.
+  - Create your Azure SQL database with data from a *.bacpac* file in your Azure Resource Manager template.
   - Use Azure Key Vault to store and access secrets from Azure Pipelines and your Azure Resource Manager template. 
 prerequisites: |
   - An Azure DevOps organization

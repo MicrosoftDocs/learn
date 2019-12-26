@@ -31,7 +31,7 @@ Application started.
 
 The output describes the situation after starting your app: the application is running and listening at port 5000.
 
-If we were running the app on our own machine, we'd be able to open a browser to http://localhost:5000 and see our site. To make this accessible from outside of our own machine, we'll need to deploy the app to somewhere with a public endpoint. The App Service instance we created earlier is perfect for that.
+If we were running the app on our own machine, we'd be able to open a browser to `http://localhost:5000` and see our site. To make this accessible from outside of our own machine, we'll need to deploy the app to somewhere with a public endpoint. The App Service instance we created earlier is perfect for that.
 
 Press <kbd>Ctrl+C</kbd> to shut down the running app.
 

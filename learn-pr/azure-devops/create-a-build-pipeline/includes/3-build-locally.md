@@ -167,7 +167,7 @@ Now that you have the web application, you can build and run it locally.
 
 In development mode, the *Space Game* web site is configured to run on port 5000.
 
-From a new browser tab, navigate to [http://localhost:5000](http://localhost:5000?azure-portal=true) to see the running application.
+From a new browser tab, navigate to `http://localhost:5000` to see the running application.
 
 You see this:
 
@@ -177,7 +177,7 @@ You see this:
 > If you see an error in your browser that's related to a certificate error, select Ctrl+C from your terminal to stop the running application.
 > Then run `dotnet dev-certs https --trust` and select **Yes** when prompted. Or [see this blog post](https://www.hanselman.com/blog/DevelopingLocallyWithASPNETCoreUnderHTTPSSSLAndSelfSignedCerts.aspx?azure-portal=true) for more information.
 >
-> After your computer trusts your local SSL certificate, run the `dotnet run` command a second time and go to [http://localhost:5000](http://localhost:5000?azure-portal=true) from a new browser tab to see the running application.
+> After your computer trusts your local SSL certificate, run the `dotnet run` command a second time and go to `http://localhost:5000` from a new browser tab to see the running application.
 
 You can interact with the page, including the leaderboard. When you select a player's name, you see details about that player.
 

@@ -349,7 +349,7 @@ During the process, you collect information about your service principal that yo
       --output tsv)
     ```
 
-    The service principal's name begins with "http://tf-sp-" and ends with your unique ID.
+    The service principal's name begins with `http://tf-sp-` and ends with your unique ID.
 
     *Contributor* is the default role for a service principal. This role has full permissions to read and write to an Azure subscription.
 

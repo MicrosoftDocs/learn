@@ -1,15 +1,15 @@
-Here, you create two Linux VMs that you'll later use to configure user accounts by using Ansible. Although you could use an infrastructure tool such as an Azure Resource Manager template, Terraform, or even Ansible to bring up your VMs, for learning purposes, here you use the Azure CLI.
+Here, you create two Linux VMs that you'll later use to configure user accounts by using Ansible. Although you can use an infrastructure tool such as an Azure Resource Manager template, Terraform, or even Ansible to bring up your VMs, for learning purposes, here you use the Azure CLI.
 
 > [!IMPORTANT]
 > The [Clean up Azure resources](/learn/modules/configure-infrastructure-azure-pipelines/10-cleanup-resources?azure-portal=true) page in this module contains important cleanup steps. These steps ensure that you're not charged for Azure resources you no longer need. Be sure to perform the cleanup steps even if you don't complete this module.
 
 ## Select an Azure region
 
-A _region_ is one or more Azure datacenters within a specific geographic location. East US, West US, and North Europe are examples of regions. Every Azure resource, including an App Service instance, is assigned a region.
+A _region_ is one or more Azure datacenters within a specific geographic location. East US, West US, and North Europe are examples of regions. Every Azure resource, including an app service instance, is assigned a region.
 
 To make the commands easier to run, start by selecting a default region. After you specify the default region, later commands use that region unless you specify a different region.
 
-1. From Cloud Shell, run the following `az account list-locations` command to list the regions that are available from your Azure subscription.
+1. From Azure Cloud Shell, run the following `az account list-locations` command to list the regions that are available from your Azure subscription.
 
     ```azurecli
     az account list-locations \
