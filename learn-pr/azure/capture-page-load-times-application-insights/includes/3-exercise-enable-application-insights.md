@@ -11,7 +11,7 @@ In this unit, we'll use the Azure portal to enable runtime instrumentation on a 
 We'll start by creating a web app to monitor. Follow these steps:
 
 1. Sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true).
-1. On the Azure portal menu or from the Home page, select **Create a resource**.
+1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
 1. In the **Search the Marketplace** box, enter **web app**, and then select Enter.
 1. In the list of results, select **Web App**.
 1. On the **Web App** pane, select **Create**.
