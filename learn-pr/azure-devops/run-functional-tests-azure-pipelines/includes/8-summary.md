@@ -32,25 +32,25 @@ If you're interested in testing UI by using Selenium, check out these resources 
 * [UI testing by using Selenium](https://docs.microsoft.com/azure/devops/pipelines/test/continuous-test-selenium?view=azure-devops&azure-portal=true)
 * [UI testing considerations](https://docs.microsoft.com/azure/devops/pipelines/test/ui-testing-considerations?view=azure-devops&tabs=mstest&azure-portal=true)
 
-## Improve code quality with Azure Test Plans
+## Improve code quality by using Azure Test Plans
 
-Now that you're familiar with automated tests, let's talk about [Azure Test Plans](https://docs.microsoft.com/azure/devops/test/?view=azure-devops&azure-portal=true), which provides all the tools you need to successfully test your applications. You can create and run manual test plans, generate automated tests, and collect feedback from users.
+Now that you're familiar with automated tests, let's talk about [Azure Test Plans](https://docs.microsoft.com/azure/devops/test/?view=azure-devops&azure-portal=true), which provides all the tools you need to test your applications. You can create and run manual test plans, generate automated tests, and collect feedback from users.
 
 ### Manage test plans, test suites, and test cases
 
-Azure Test Plans provides three main types of test management artifacts: test plans, test suites, and test cases.
+Azure Test Plans provides three main types of test-management artifacts: test plans, test suites, and test cases.
 
-* Test plans group test suites and individual test cases together. Test plans include static test suites, requirement-based suites, and query-based suites.
+* Test plans group together test suites and individual test cases. Test plans include static test suites, requirement-based suites, and query-based suites.
 
-* Test suites group test cases into separate testing scenarios within a single test plan. Grouping test cases makes it easier to see which scenarios are complete.
+* Test suites group test cases into separate testing scenarios within a single test plan. By grouping test cases, you can better see which scenarios are complete.
 
 * Test cases validate individual parts of your code or app deployment. You can ensure your code works correctly, has no errors, and meets business and customer requirements.
 
-### Test & Feedback extension
+### Use the Test & Feedback extension
 
 The [Test & Feedback extension](https://docs.microsoft.com/azure/devops/test/perform-exploratory-tests?view=azure-devops) enables exploratory testing techniques in Azure Test Plans. With it, you can:
 
-* Capture your findings along with rich diagnostic data. This data includes comments, screenshots with annotations, and audio or video recordings that describe your findings and highlight issues. In the background, the extension captures additional information such as user actions through the image action log, page load data, and system information about the browser, operating system, and more that later help in debugging or reproducing the issue.
+* Capture your findings along with rich diagnostic data. This data includes comments, screenshots with annotations, and audio or video recordings that describe your findings and highlight issues. In the background, the extension captures additional information such as user actions. The extension uses the image action log, page load data, and system information about the browser, operating system, and more. This information later helps you debug or reproduce the issue.
 
 * Create work items such as bugs, tasks, and test cases from within the extension. The captured information automatically becomes part of the filed work item and helps with end-to-end traceability.
 
