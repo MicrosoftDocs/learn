@@ -31,7 +31,7 @@ In order to make these decisions, you'll need an up-to-date picture of all that 
 
 IoT Central provides all you need to handle this scenario. In the following image, the colored circles show the location of the truck, on its way to a customer.
 
-![Image of the finished app, showing Trucks on routes in an IoT Central dashboard](../media/refrigerated-trucks-intro-map.png)
+[![Image of the finished app, showing Trucks on routes in an IoT Central dashboard](../media/refrigerated-trucks-intro-map.png)](../media/refrigerated-trucks-intro-map.png#lightbox)
 
 In this module, you'll build the app displayed in the above image.
 
