@@ -19,7 +19,7 @@ Let's walk through the basic steps necessary to configure and enable Azure Multi
 
     This is where you would select the supported authentication methods, in the screen above, all of them are selected.
 
-    You can also enable or disable _app passwords_ here which allow users to create unique account passwords for apps which don't support multi-factor authentication. This feature let's the user authenticate with their Azure AD identity using a different password specific to that app.
+    You can also enable or disable _app passwords_ here which allow users to create unique account passwords for apps which don't support multi-factor authentication. This feature lets the user authenticate with their Azure AD identity using a different password specific to that app.
 
 ## Setup conditional access rules for MFA
 
