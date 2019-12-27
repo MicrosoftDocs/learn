@@ -22,6 +22,7 @@ In this module, you will:
 - Familiarity with Kubernetes and its concepts. If you are new to Kubernetes, start with the [basics of Kubernetes](https://azure.microsoft.com/topic/what-is-kubernetes/)
 - An Azure [subscription](https://azure.microsoft.com/free/services/kubernetes-service/)
 - [Azure Cloud Shell](https://shell.azure.com)
+- A [GitHub](https://github.com/join) account
 
 ## Source code
 
@@ -31,8 +32,8 @@ The application consists of 2 components, the API and the frontend. Both compone
 
 | Component                                          | Link                                                               |
 |----------------------------------------------------|--------------------------------------------------------------------|
-| An API `rating-api`                   | [GitHub repo](https://github.com/microsoft/rating-api)             |
-| A frontend `rating-web`          | [GitHub repo](https://github.com/microsoft/rating-web)             |
+| An API `rating-api`                   | [GitHub repo](https://github.com/MicrosoftDocs/mslearn-aks-workshop-ratings-api)             |
+| A frontend `rating-web`          | [GitHub repo](https://github.com/MicrosoftDocs/mslearn-aks-workshop-ratings-web)             |
 
 Once you're done, you'll have an experience similar to the below.
 
