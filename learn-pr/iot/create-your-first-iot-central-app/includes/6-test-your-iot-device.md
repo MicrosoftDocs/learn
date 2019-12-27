@@ -19,9 +19,9 @@ In addition to this list, there are edge-cases you could also investigate. One s
 
 To begin the testing, with your [Azure IoT Central](https://apps.azureiotcentral.com/?azure-portal=true) app open in a browser, run the device app.
 
-::: zone pivot="vs-csharp,vscode-csharp"
+::: zone pivot="vs-csharp,vs-node"
 
-1. Select **Debug/Start without Debugging**.
+1. In Visual Studio, select **Debug/Start without Debugging**.
 
 ::: zone-end
 ::: zone pivot="vscode-node"

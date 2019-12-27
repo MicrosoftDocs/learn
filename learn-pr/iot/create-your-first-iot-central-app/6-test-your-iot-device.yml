@@ -22,7 +22,7 @@ quiz:
     choices: 
     - content: 'Device ID and Primary Key'
       isCorrect: false
-      explanation: Both of these values are needed, but more information is needed to complete a connection.
+      explanation: Both of these values are needed, but more information is required to complete a connection.
     - content: 'Scope ID, Device ID, and Primary Key'
       isCorrect: true
       explanation: These three strings identify the app, the device, and permission to communicate with IoT Central.

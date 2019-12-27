@@ -40,17 +40,17 @@ quiz:
       isCorrect: true
       explanation: This term is what you'll see in the IoT Central portal.
       
-  - content: 'Internally, what elements make up a Geo-point?'
+  - content: 'Internally, what elements make up a Geopoint?'
     choices: 
     - content: 'Latitude, Longitude, Altitude'
       isCorrect: true
-      explanation: Altitude isn't needed in our scenario, but some applications will certainly need it.
+      explanation: Altitude isn't needed in our scenario, but some applications will certainly require it.
     - content: 'Latitude, Longitude'
       isCorrect: false
-      explanation: These two values are all we needed in the refrigerated truck scenario, but there's more to a Geo-point.
+      explanation: These two values are all we needed in the refrigerated truck scenario, but there's more to a Geopoint.
     - content: 'X and Y coordinates'
       isCorrect: false
       explanation: X and Y coordinates work best on 2D rectangular graphs, rather than a spheroid such as the Earth.
     - content: 'Latitude, Longitude, Time'
       isCorrect: false
-      explanation: The space-time dimension isn't part of a Geo-point.
+      explanation: The space-time dimension isn't part of a Geopoint.
