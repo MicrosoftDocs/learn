@@ -45,7 +45,7 @@ In this workshop, you’ll go through tasks that will help you master the basic 
     - https://aksworkshop.io/#appoverview
     - https://aksworkshop.io/#challenges
 
-    Add in more content to provide background on the application as necessary
+    Add in more content to provide background on the application as necessary. We should also include a link to the Azure Pricing Calculator with a pre-configured cost estimate for the resources in this workshop.
 
 1. **Deploy Kubernetes with Azure Kubernetes Service**
 
