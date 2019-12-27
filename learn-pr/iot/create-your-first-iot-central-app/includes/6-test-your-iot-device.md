@@ -31,7 +31,7 @@ To begin the testing, with your [Azure IoT Central](https://apps.azureiotcentral
 ::: zone-end
 ::: zone pivot="vscode-csharp"
 
-1. In the terminal, enter `node Program.cs`.
+1. In the terminal, enter `dotnet run`.
 
 ::: zone-end
 

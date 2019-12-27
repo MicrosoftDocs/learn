@@ -57,7 +57,7 @@ Repeat this process to create as many devices as you need.
 
 1. Open up your device app in the development environment you are using.
 
-1. Locate the `connectionString` statement at the top of the file, and replace it with code similar to the following:
+1. Locate the `connectionString` statement at the top of the file, and replace it with the following code:
 
     ```js
     var connectionString;
