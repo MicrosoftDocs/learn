@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.cmu-cloud-admin.cmu-orchestration.3-infrastructure-as-code-tools
-title: 
+title: Infastructure as code tools
 metadata:
-  title: 
-  description:
+  title: Infastructure as code tools
+  description: Introducing popular infrastructure as code tools like Azure Resource Manager Templates, Puppet, Chef, and Ansible
   ms.date: 12/31/2019
   author: shanamatthews
   ms.author: shanama

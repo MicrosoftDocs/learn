@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.cmu-cloud-admin.cmu-orchestration.2-infrastructure-as-code
-title: 
+title: Infrastructure as code
 metadata:
-  title: 
-  description: 
+  title: Infrastructure as code
+  description: Introduces the concept of infrastructure as code and how it is used in enterprise
   ms.date: 12/31/2019
   author: shanamatthews
   ms.author: shanama
