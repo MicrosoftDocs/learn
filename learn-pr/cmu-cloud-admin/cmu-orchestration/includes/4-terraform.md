@@ -1,10 +1,3 @@
-+-----------------------------------------------------------------------+
-| # Learning Objectives {#learning-objectives}                          |
-|                                                                       |
-| Understand Terraform's role as an infrastructure orchestrator and     |
-| describe how it differs from a conventional configuration manager     |
-+-----------------------------------------------------------------------+
-
 HashiCorp Terraform is an infrastructure orchestration tool created by
 Mitchell Hashimoto, a veteran Chef and Puppet user who realized he
 envisioned infrastructure in a different way, and then founded a company
@@ -53,7 +46,7 @@ Technically, it is not, for the following reasons:
     deals with one type of environment or the other. Terraform can
     manage an infrastructure in which both components play active roles.
 
-As Figure 6.9 depicts, Terraform itself has no remote, client-side
+As Figure 9 depicts, Terraform itself has no remote, client-side
 agents (though HashiCorp makes platform components that do), nor is its
 central component considered a server *per se*. HashiCorp calls this
 component the *core*. Rather than communicating with something designed
@@ -66,9 +59,9 @@ interprets as create, read, update, and delete. It's up to the
 intermediate plugins to map the commands the API provides to methods it
 can generally recognize.
 
-![](media/image1.png){width="5.9944444444444445in" height="2.45in"}
+![](../media/fig6-9.png)
 
-Figure 6.9: The Terraform core uses plugins that in turn call cloud
+Figure 9: The Terraform core uses plugins that in turn call cloud
 provider APIs.
 
 A CM system provisions resources for one set of requests at a time.

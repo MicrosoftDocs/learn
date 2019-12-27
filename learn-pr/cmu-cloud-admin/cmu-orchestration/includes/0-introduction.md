@@ -50,7 +50,7 @@ automation comes in three forms:
     to roll back to a previous version of a solution if an updated
     solution doesn't work as intended.
 
-Figure 6.1 shows how these approaches to automation relate to one
+Figure 1 shows how these approaches to automation relate to one
 another. Scripting is the most basic of the three and involves using
 scripting languages such as Bash or programming languages such as Python
 to automate repetitive tasks. Configuration management provides a layer
@@ -68,10 +68,9 @@ CloudFormation, or another prominent orchestration manager, takes
 responsibility not only for configuration management, but for versioning
 and other tasks as well.
 
-![](media/image1.png){width="5.7557414698162725in"
-height="3.119792213473316in"}
+![](../media/fig6-1.png)
 
-Figure 6.1: Levels of automation.
+Figure 1: Levels of automation.
 
 This module examines the three levels of automation and introduces the
 tools and techniques that administrators use to implement them. We begin

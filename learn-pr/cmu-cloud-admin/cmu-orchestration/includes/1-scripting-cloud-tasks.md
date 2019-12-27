@@ -1,10 +1,3 @@
-+-----------------------------------------------------------------------+
-| # Learning Objectives {#learning-objectives}                          |
-+=======================================================================+
-| Identify the advantages and disadvantages of automating cloud         |
-| deployments by scripting commands                                     |
-+-----------------------------------------------------------------------+
-
 The concept of scripting has been around almost as long as computers.
 For decades, IT personnel have interacted with computers by typing
 commands into a console. To this day, some users -- especially power
@@ -209,7 +202,7 @@ That's a lot of steps, especially if you need to execute them not just
 once, but several times. As an alternative to entering these commands
 manually, an administrator might elect to script them by creating a text
 file named *ccvm.sh* (short for "create and configure VM") containing
-the statements in Figure 6.2. The script doesn't merely recite the
+the statements in Figure 2. The script doesn't merely recite the
 commands an operator would type at the console. Note the call to the az
 vm show command to get the VM's public IP address and assign it to the
 variable named \$IP\_ADDRESS, the use of redirection to (\<\<) to inject
@@ -244,7 +237,7 @@ exit
 
 EOF
 
-Figure 6.2: Bash script for creating an Azure VM and installing a LAMP
+Figure 2: Bash script for creating an Azure VM and installing a LAMP
 stack.
 
 With this script in hand, an administrator could create a VM and install
@@ -295,7 +288,7 @@ management of cloud resources:
     requirement if scripts are to update existing cloud resources as
     well as provision new ones.
 
--   **Cloud specificity** -- The script shown in Figure 6.2 requires
+-   **Cloud specificity** -- The script shown in Figure 2 requires
     heavy modification -- in fact, rewriting -- to work with other cloud
     platforms such as AWS and GCP. The script could be written to run
     one way for Azure, another way for AWS, and yet another way for GCP

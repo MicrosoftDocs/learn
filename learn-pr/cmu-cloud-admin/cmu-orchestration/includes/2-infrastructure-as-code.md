@@ -1,10 +1,3 @@
-+-----------------------------------------------------------------------+
-| # Learning Objectives {#learning-objectives}                          |
-+=======================================================================+
-| Explain the concept of Infrastructure-as-Code and enumerate the       |
-| advantages that it offers over ordinary scripting                     |
-+-----------------------------------------------------------------------+
-
 Prior to the cloud, when an organization needed to build out its
 computing infrastructure, it deployed new physical servers and added
 them to the network behind a load balancer and firewall. When an
@@ -39,11 +32,11 @@ a solution looks like. It contains many of the elements of a program
 without necessarily relying on a programming language: declaration of
 assets (variables), reusable functions and procedures, error trapping
 and recovery, and most importantly of all, formal support for testing
-and debugging (Figure 6.3).
+and debugging (Figure 3).
 
-![](media/image1.png){width="5.99375in" height="4.297916666666667in"}
+![](../media/fig6-3.png)
 
-Figure 6.3. Parallels between Infrastructure-as-Code and software
+Figure 3. Parallels between Infrastructure-as-Code and software
 programs.
 
 IaC relies on configuration files that are analogous to the source code
