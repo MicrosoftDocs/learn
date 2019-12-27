@@ -237,8 +237,8 @@ exit
 
 EOF
 
-Figure 2: Bash script for creating an Azure VM and installing a LAMP
-stack.
+_Figure 2: Bash script for creating an Azure VM and installing a LAMP
+stack._
 
 With this script in hand, an administrator could create a VM and install
 a LAMP stack with a single command:

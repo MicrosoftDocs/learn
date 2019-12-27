@@ -14,7 +14,7 @@ Figure 1 shows how these approaches to automation relate to one another. Scripti
 
 ![Figure 1: Levels of automation](../media/fig6-1.png)
 
-Figure 1: Levels of automation.
+_Figure 1: Levels of automation._
 
 This module examines the three levels of automation and introduces the tools and techniques that administrators use to implement them. We begin with a look at scripting tools such as Bash and PowerShell. Next, we examine Infrastructure-as-Code and survey key IaC tools such as Azure Resource Manager (ARM) templates and third-party products such as Chef and Puppet. Then we discuss orchestration platforms that enable the declaration and provisioning of cloud resources in a manner similar to that of a computer program, effectively specifying a solution architecture and the steps required to replicate it. Finally, we examine one of these orchestration platforms up close: HashiCorp Terraform, which coordinates resources distributed across multiple cloud service providers at the highest level.
 

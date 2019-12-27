@@ -126,8 +126,8 @@ created or updated.
 
 }
 
-Figure 4: Simple ARM template for provisioning an Azure storage
-account.
+_Figure 4: Simple ARM template for provisioning an Azure storage
+account._
 
 ARM templates can be executed with CLI or PowerShell commands, by
 applications written in C\# and other programming languages, or from the
@@ -141,7 +141,7 @@ allowedValues enumeration in the template rather than entered free-form.
 
 ![Figure 5: ARM template rendered in the Azure Portal](../media/fig6-5.png)
 
-Figure 5: ARM template rendered in the Azure Portal.
+_Figure 5: ARM template rendered in the Azure Portal._
 
 Creating a storage account through the Azure Portal normally requires
 many inputs. The template reduces these to only those required for a
@@ -216,7 +216,7 @@ recognize the repository as an agent or a node.
 
 ![Figure 6: Puppet's standard deployment architecture](../media/fig6-6.png)
 
-Figure 6: Puppet's standard deployment architecture.
+_Figure 6: Puppet's standard deployment architecture._
 
 ## Chef
 
@@ -230,7 +230,7 @@ the server by way of the administrator's workstation.
 
 ![Figure 7: Chef's standard deployment architecture](../media/fig6-7.png)
 
-Figure 7: Chef's standard deployment architecture.
+_Figure 7: Chef's standard deployment architecture._
 
 Many metaphors in Chef are based around cooking. A Chef script is called
 a *recipe*. Its instructions are written in Ruby as opposed to a DSL
@@ -329,7 +329,7 @@ with\_items:
 
 \- localhost
 
-Figure 8: Sample Ansible script written in YAML.
+_Figure 8: Sample Ansible script written in YAML._
 
 ### Summary
 

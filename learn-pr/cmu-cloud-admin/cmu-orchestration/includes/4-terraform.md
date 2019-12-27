@@ -62,8 +62,8 @@ can generally recognize.
 ![Figure 9: The Terraform core uses plugins that in turn call cloud
 provider APIs](../media/fig6-9.png)
 
-Figure 9: The Terraform core uses plugins that in turn call cloud
-provider APIs.
+_Figure 9: The Terraform core uses plugins that in turn call cloud
+provider APIs._
 
 A CM system provisions resources for one set of requests at a time.
 Terraform takes into account the collective needs of all the services

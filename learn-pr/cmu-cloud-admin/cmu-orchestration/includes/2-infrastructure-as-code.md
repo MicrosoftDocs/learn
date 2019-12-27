@@ -37,8 +37,8 @@ and debugging (Figure 3).
 ![Figure 3: Parallels between Infrastructure-as-Code and software
 programs](../media/fig6-3.png)
 
-Figure 3: Parallels between Infrastructure-as-Code and software
-programs.
+_Figure 3: Parallels between Infrastructure-as-Code and software
+programs._
 
 IaC relies on configuration files that are analogous to the source code
 for application programs. An IaC configuration file might not look like
