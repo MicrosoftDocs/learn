@@ -17,7 +17,7 @@ To create a Service Bus namespace using the Azure portal, follow these steps:
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
 
-1. In the navigation on the left, click **All services**.
+1. On the Azure portal menu or from the **Home** page, select **All services**.
 
 1. In the **All Services** pane, scroll down to the **INTEGRATION** section, and then click **Service Bus**.
 

@@ -5,7 +5,7 @@
 Here you will create a new virtual machine to serve as a web server for the local media.
 
 1. Sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true).
-2. In the left navigation pane, click **Create a resource**.
+2. On the Azure portal menu or from the **Home** page, select **Create a resource**.
 3. In the **New** pane, click **Windows Server 2016 Datacenter**.
 4. Enter the following values in the **Create a virtual machine** window:
 
@@ -49,7 +49,7 @@ Here you'll enable Update Manager on the virtual machine you created.
 
 ## Examine Hybrid Worker Groups
 
-1. In the left navigation pane, click **All resources**.
+1. On the Azure portal menu or from the **Home** page, select **All resources**.
 1. In the **All resources** pane, examine the **TYPE** column to find the resource of type **Automation Account**, and then click the Automation account.
 1. In the Automation account pane, scroll down to the **Process Automation** section and in there, click **Hybrid worker groups**.
 1. In the Hybrid worker groups pane, click the **System hybrid worker groups** tab.

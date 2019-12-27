@@ -9,7 +9,7 @@ In this unit, you'll add an alert for your VM. Then you'll cause the VM CPU usag
 If CPU usage goes above 90 percent for one minute, you'd like to get a notification. 
 
 1. Go to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) and sign in with the account that you used to enable the sandbox.
-1. Select **Virtual machines**.
+1. On the Azure portal menu or from the **Home** page, select **Virtual machines**.
 1. Select the **monitored-linux-vm** virtual machine that you created.
 1. On the left, scroll down and select **Metrics**.
 1. Select **New alert rule**.
@@ -113,7 +113,7 @@ If CPU usage goes above 90 percent for one minute, you'd like to get a notificat
     sudo stress --cpu 16 -v -t 10m
     ```
 1. Return to the Azure portal.
-1. Go to **Dashboard** > **KPI Dashboard**.
+1. On the Azure portal menu or from the **Home** page, select **Dashboard** and then select **KPI Dashboard**.
 1. On the **Max CPU percentage guest OS for monitored-linux-vm** graph, select the ellipses (**...**) on the upper right, and then select **Refresh**.
 1. After a few minutes, the CPU should approach 100 percent and you'll receive an alert email.
 
