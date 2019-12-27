@@ -36,7 +36,7 @@ quiz:
       isCorrect: true
       explanation: "This is the best option as it is the lowest cost, and the data is being continuously being created, data loss isn't an issue."
     - content: "GRS"
-      isCorrect: true
+      isCorrect: false
       explanation: "This is a good option, but would incur more cost that other options."
     - content: "ZRS"
       isCorrect: false
@@ -45,11 +45,11 @@ quiz:
   What tool should you recommend they use?"
     choices:
     - content: "Azure Data Box"
-      isCorrect: true
+      isCorrect: false
       explanation: "This data transfer method isn't a GUI application."
     - content: "Robocopy"
-      isCorrect: true
+      isCorrect: false
       explanation: "This is a command-line tool, not a GUI."
     - content: "Azure Storage Explorer "
-      isCorrect: false
+      isCorrect: true
       explanation: "This is the best option if the finance department doesn't want to use the Azure portal."
