@@ -26,6 +26,14 @@ Here's an example build badge:
 
 ![The build badge on GitHub](../media/6-final-build-badge.png)
 
+For this exercise, you make your build badge visible to everyone. This might not be a good idea for your private projects since your build information will be made available to the public.
+
+1. To make sure your build badge is visible, navigate to **Project settings** in the left pane of your Azure DevOps project.
+1. Under **Pipelines** select **Settings**.
+1. Turn off **Disable anonymous access to badges**.
+
+You can do this for all projects in your organization if you wish by turning off the same setting in the organization's pipeline settings.
+
 ## Add the build badge
 
 Up until now, you created Git branches locally to make changes to the _Space Game_ project. You can also propose changes directly through GitHub. In this section, you do that to set up your status badge.
