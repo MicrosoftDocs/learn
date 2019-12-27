@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.aks-workshop.10-configure-cicd
+metadata:
+  title: Configure CI/CD for your application
+  description: Configure CI/CD for your application
+  ms.date: 01/30/2020
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Configure CI/CD for your application
+durationInMinutes: 10
+interactive: bash
+content: |
+  [!include[](includes/10-configure-cicd.md)]

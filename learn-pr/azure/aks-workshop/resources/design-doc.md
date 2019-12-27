@@ -91,7 +91,7 @@ In this workshop, you’ll go through tasks that will help you master the basic 
 
     https://aksworkshop.io/#mongostateful
 
-1. **Use Azure Key Vault for secrets**
+1. **Use Azure Key Vault to store secrets**
 
     https://aksworkshop.io/#azurekeyvault-flexvolumeplugin
 

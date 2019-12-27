@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.aks-workshop.01-introduction
+metadata:
+  title: Introduction
+  description: Introduction
+  ms.date: 01/30/2020
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction
+durationInMinutes: 5
+content: |
+  [!include[](includes/01-introduction.md)]
