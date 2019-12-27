@@ -21,6 +21,7 @@ Azure Kubernetes Service Workshop
 ## Prerequisites
 
 - Knowledge of Kubernetes and its concepts
+- Access to an Azure subscription
 
 ## Summary
 

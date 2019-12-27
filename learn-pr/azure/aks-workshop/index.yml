@@ -19,6 +19,7 @@ abstract: |
   - Scale using Virtual Nodes, set up SSL/TLS for your deployments, and use Azure Key Vault for secrets
 prerequisites: | 
   - Knowledge of Kubernetes and its concepts
+  - Access to an Azure subscription
 iconUrl: http://via.placeholder.com/120x120
 levels:
 - advanced
