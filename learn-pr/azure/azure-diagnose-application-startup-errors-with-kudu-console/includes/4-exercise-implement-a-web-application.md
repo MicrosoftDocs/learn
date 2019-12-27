@@ -19,7 +19,7 @@ Use the `dotnet` command line tool to create a new ASP.NET Core web project.
     dotnet run
     ```
 
-1. You should see output similiar to the following:
+1. You should see output similar to the following:
 
     ```output
     Using launch settings from /home/your-user/Documents/HotelApp/Properties/launchSettings.json...
