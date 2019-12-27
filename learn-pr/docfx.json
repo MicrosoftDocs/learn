@@ -226,7 +226,20 @@
                     "**/resources/**"
                 ],
                 "dest": "modules"
-            },                   
+            },  
+            {
+                "src": "xamarin",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },                    
             {
                 "files": [
                     "**/*.md",
@@ -454,6 +467,18 @@
                 "wwl/**/*.yml": [
                     "ja-jp",
                     "ko-kr",
+                    "zh-cn",
+                    "zh-tw"
+                ],
+                "xamarin/**/*.yml": [
+                    "de-de",
+                    "es-es",
+                    "fr-fr",
+                    "it-it",
+                    "ja-jp",
+                    "ko-kr",
+                    "pt-br",
+                    "ru-ru",
                     "zh-cn",
                     "zh-tw"
                 ]
