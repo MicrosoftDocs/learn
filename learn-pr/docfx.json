@@ -176,6 +176,19 @@
                 "dest": "modules"
             },
             {
+                "src": "windows",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },
+            {
                 "src": "wwl-mba",
                 "files": [
                     "**/*.yml",
@@ -432,6 +445,18 @@
                     "pt-pt",
                     "tr-tr",
                     "sv-se"
+                ],
+                "windows/**/*.yml": [
+                    "de-de",
+                    "es-es",
+                    "fr-fr",
+                    "it-it",
+                    "ja-jp",
+                    "ko-kr",
+                    "pt-br",
+                    "ru-ru",
+                    "zh-cn",
+                    "zh-tw"
                 ],
                 "wwl-mba/**/*.yml": [
                     "ja-jp",
