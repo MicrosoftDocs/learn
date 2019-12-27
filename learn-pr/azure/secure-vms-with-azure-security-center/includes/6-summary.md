@@ -10,7 +10,7 @@ Finally, you can protect your VMs and servers with _antimalware software_ that's
 
 We created two VM resources in this module. To ensure you don't continue to get charged for these VMs, go ahead and delete the **mslearnDeleteMe** resource group.
 
-1. Select **Resource groups** from the left-hand sidebar in the Azure portal.
+1. In Azure portal, search for and select **Resource groups**.
 
 1. Locate the **mslearnDeleteMe** resource group in the list and select the "..." context menu on the right side of the entry.
 
