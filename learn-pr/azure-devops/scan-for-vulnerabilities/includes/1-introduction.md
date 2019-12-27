@@ -23,7 +23,7 @@ If you want to go through just this module, you need to set up a development env
 * An [Azure DevOps organization](https://dev.azure.com?azure-portal=true)
 * A [GitHub](https://github.com/join?azure-portal=true) account
 * [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
-* [.NET Core 2.1](https://www.microsoft.com/net/download?azure-portal=true)
+* [.NET Core 2.1](https://dotnet.microsoft.com/download/dotnet-core/2.1?azure-portal=true)
 * [Git](https://git-scm.com/downloads?azure-portal=true)
 
 For this module, you also need:
