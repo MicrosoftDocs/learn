@@ -20,7 +20,7 @@ Node.js is a platform for building server apps, based on JavaScript. All the Jav
 
 1. Back in the terminal, load the libraries you need with the following commands:
 
-    ```cli
+    ```CLI
     npm install azure-iot-device
     npm install azure-iot-device-mqtt
     npm install azure-maps-rest
@@ -40,7 +40,7 @@ Node.js is a platform for building server apps, based on JavaScript. All the Jav
 
 1. In the terminal, install the required libraries:
 
-    ```cli
+    ```CLI
     dotnet add package AzureMapsRestToolkit
     dotnet add package Microsoft.Azure.Devices.Client
     dotnet add package Microsoft.Azure.Devices.Provisioning.Client
@@ -112,7 +112,7 @@ In the blank app.js file, insert the following code. Each additional section of 
 
     var truckIdentification = "Truck number " + truckNum;
 
-    var connectionString = "<your IoT Central connection string for truck 1>";
+    var connectionString = "<your IoT Central device connection string for truck 1>";
 
     console.log("Starting " + truckIdentification);
 
@@ -373,7 +373,7 @@ In the blank app.js file, insert the following code. Each additional section of 
     ```
 
     > [!NOTE]
-    > The statement `var num = request.payload.customerId;` shows how data (text, numbers, toggles, dates) are passed from the IoT Central app in a command. Note, too, that the device responds with a conflict if it isn't in the correct state, and that the command itself is acknowledged at the end of the function. The recall command that follows in the next step handles things similarly.
+    > The device responds with a conflict if it isn't in the correct state, and the command itself is acknowledged at the end of the function. The recall command that follows in the next step handles things similarly.
 
 1. Add the recall command.
 
@@ -622,7 +622,7 @@ In the blank app.js file, insert the following code. Each additional section of 
         var properties =
         {
             // Format is:
-            // <Property name in Azure IoT Central> ":" <value in Node.js app>
+            // <Property Name in Azure IoT Central> ":" <value in Node.js app>
             truckId: truckIdentification,
         };
 
@@ -636,7 +636,7 @@ In the blank app.js file, insert the following code. Each additional section of 
     var settings =
     {
         // Format is:
-        // '<name from Azure IoT Central>' ":" (newvalue, callback) ....
+        // '<Name from Azure IoT Central>' ":" (newvalue, callback) ....
         //  <variable name in NodeJS app> = newValue;
         //  callback(<variable name in NodeJS app>,'completed');
         'OptimalTemperature': (newValue, callback) => {
@@ -693,7 +693,7 @@ In the blank app.js file, insert the following code. Each additional section of 
         // Successfully connected.
         else {
     
-            // Notify the user
+            // Notify the user.
             greenMessage('Device successfully connected to Azure IoT Central');
     
             // Send telemetry measurements to Azure IoT Central every 5 seconds.

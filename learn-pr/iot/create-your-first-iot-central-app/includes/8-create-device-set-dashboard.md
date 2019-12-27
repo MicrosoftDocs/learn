@@ -1,4 +1,6 @@
-All the required units for this module have been completed. In this unit, we consider what steps would be necessary to add multiple trucks to our system. Feel free to skip this unit, completing it is optional!
+All the required units for this module have been completed. In this unit, we consider what steps would be necessary to add multiple trucks to our system. 
+
+Feel free to skip this unit, completing it is optional!
 
 ## Add multiple devices to the IoT Central app
 
@@ -39,6 +41,7 @@ Repeat this process to create as many devices as you need.
     ```bash
     ./dps_cstr {scope_id} {device_id2} {primary_key2} > connection2.txt
     ```
+
 1. Navigate to the [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true).
 
 1. In the Cloud Shell session, navigate to the `refrigerated-truck` folder.
@@ -73,14 +76,6 @@ Repeat this process to create as many devices as you need.
 
         case 3:
             connectionString = "<your third truck connection string>";
-            break;
-
-        case 4:
-            connectionString = "<your fourth truck connection string>";
-            break;
-
-        case 5:
-            connectionString = "<your fifth truck connection string>";
             break;
     }
     ```
