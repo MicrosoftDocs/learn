@@ -30,7 +30,7 @@ In this workshop, you’ll go through tasks that will help you master the basic 
 ## Learning objectives
 
 1. Configure Kubernetes deployments, services and ingress
-2. Deploy MongoDB using Helm 2
+2. Deploy MongoDB using Helm
 3. Configure Azure Monitor for Containers, Horizontal Pod Autoscaler and the Cluster Autoscaler
 4. Build CI/CD pipelines using Azure DevOps and Azure Container Registry
 5. Scale using Virtual Nodes, set up SSL/TLS for your deployments, and use Azure Key Vault for secrets
