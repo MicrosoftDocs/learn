@@ -68,7 +68,7 @@ CloudFormation, or another prominent orchestration manager, takes
 responsibility not only for configuration management, but for versioning
 and other tasks as well.
 
-![](../media/fig6-1.png)
+![Figure 1: Levels of automation](../media/fig6-1.png)
 
 Figure 1: Levels of automation.
 
@@ -84,3 +84,14 @@ architecture and the steps required to replicate it. Finally, we examine
 one of these orchestration platforms up close: HashiCorp Terraform,
 which coordinates resources distributed across multiple cloud service
 providers at the highest level.
+
+## Learning objectives
+  - Learn about how to automate cloud resource management with infrastructure as code tools like Terraform
+  - Explain the concept of Infrastructure-as-Code and enumerate the advantages that it offers over ordinary scripting
+  - List some of the tools that implement IaC for popular cloud platforms and describe some of the differences between them
+  - Understand Terraform’s role as an infrastructure orchestrator and describe how it differs from a conventional configuration manager
+
+## Prerequisites
+  - Understand what cloud computing is, including cloud service models, and common cloud providers
+  - Recognize cloud service models such as IaaS, PaaS, and SaaS and differentiate between them
+  - Understand how cloud resource provisioning works

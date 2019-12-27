@@ -22,7 +22,7 @@ There are pros and cons to both approaches. This lesson examines the
 basic stance and methodologies supported by prominent CM platforms and
 provides brief introductions to the platforms themselves.
 
-# Azure Resource Manager (ARM) Templates
+## Azure Resource Manager (ARM) templates
 
 Microsoft's Azure Resource Manager (ARM) template system is a tool for
 generating a very explicit specification for one or more cloud
@@ -139,7 +139,7 @@ section -- in this case, the storage-account name and type, the latter
 of which is selected from a drop-down list generated from the
 allowedValues enumeration in the template rather than entered free-form.
 
-![](../media/fig6-5.png)
+![Figure 5: ARM template rendered in the Azure Portal](../media/fig6-5.png)
 
 Figure 5: ARM template rendered in the Azure Portal.
 
@@ -159,7 +159,7 @@ used to automate deployments and updates. ARM templates are an example
 of Infrastructure-as-Code that uses a declarative approach to defining
 cloud infrastructure.
 
-# Puppet
+## Puppet
 
 The concept of Infrastructure-as-Code was originally intended to apply
 to cloud platforms in general, including public clouds as well as hybrid
@@ -214,11 +214,11 @@ instructions may be stored in, and retrieved from, a repository,
 although that connection need not be private, and Puppet itself does not
 recognize the repository as an agent or a node.
 
-![](../media/fig6-6.png)
+![Figure 6: Puppet's standard deployment architecture](../media/fig6-6.png)
 
 Figure 6: Puppet's standard deployment architecture.
 
-# Chef
+## Chef
 
 Chef is empowered by agents capable of looking into a system in
 real-time and reporting its configuration and status. The basic
@@ -228,7 +228,7 @@ including the server are loaded with Chef, although functionality is
 distributed among them. Client nodes receive scripted instructions from
 the server by way of the administrator's workstation.
 
-![](../media/fig6-7.png)
+![Figure 7: Chef's standard deployment architecture](../media/fig6-7.png)
 
 Figure 7: Chef's standard deployment architecture.
 
@@ -269,7 +269,7 @@ conditions have changed before committing important alterations to
 configurations. (That said, Chef has had evolutionary upgrades over the
 years that have necessitated structural changes to its own recipes.)
 
-# Red Hat Ansible
+## Red Hat Ansible
 
 Ansible is a CM tool that shares some traits with Puppet, although it
 also subscribes to the notion of a replete inventory list, like ARM
@@ -331,7 +331,7 @@ with\_items:
 
 Figure 8: Sample Ansible script written in YAML.
 
-# Summary
+### Summary
 
 Configuration management simplifies the job of managing cloud resources
 the way a combine harvester simplifies the job of gathering grain from
@@ -347,5 +347,7 @@ to manage cloud solutions efficiently and effectively. The next step up
 is orchestration platforms, one of the most popular of which is
 Terraform -- which, not coincidentally, is the subject of the next
 lesson.
+
+### References
 
 [^1]: https://github.com/jasodeep/ansible-lamp-stack-playbook/blob/master/roles/mysql/tasks/main.yml

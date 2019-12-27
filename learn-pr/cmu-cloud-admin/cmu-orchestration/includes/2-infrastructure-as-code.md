@@ -34,9 +34,10 @@ assets (variables), reusable functions and procedures, error trapping
 and recovery, and most importantly of all, formal support for testing
 and debugging (Figure 3).
 
-![](../media/fig6-3.png)
+![Figure 3: Parallels between Infrastructure-as-Code and software
+programs](../media/fig6-3.png)
 
-Figure 3. Parallels between Infrastructure-as-Code and software
+Figure 3: Parallels between Infrastructure-as-Code and software
 programs.
 
 IaC relies on configuration files that are analogous to the source code
@@ -56,7 +57,7 @@ that oversees their disposition should also transcend those boundaries,
 treating the entire cloud data center, on-premises and off-, as if it
 were one programmable, composable machine.
 
-# Configuration Management
+## Configuration management
 
 A multitude of industries besides IT benefit from configuration
 management (CM), particularly as it applies to manufacturing and
@@ -118,7 +119,7 @@ describing what that something is. The direction he prefers is
 *convergence*, which he compares to using a map depicting the
 destination and planning a route that leads back to where you are now.
 
-# Puppet and the Declarative Model
+## Puppet and the declarative model
 
 In 2006, open-source software developer Luke Kanies released under the
 General Public License (GPL) a tool he called *Puppet*. Describing it as
@@ -144,7 +145,7 @@ with more recent systems that incorporate containerization
 (virtualization based on workloads rather than servers), the
 instantiation of containers and the resources that support them.
 
-# Developers and Operators
+## Developers and operators
 
 Almost the very moment an enterprise begins serious consideration of
 leveraging the benefits of IaC, it begins discussing whether two
@@ -216,6 +217,8 @@ Of course, IaC is merely an abstract concept without tools to implement
 it. The next lesson introduces some of the more widely adopted
 configuration-management tools, all of which embrace the notion of
 Infrastructure-as-Code to varying degrees.
+
+### References
 
 [^1]: http://markburgess.org/bio.html
 

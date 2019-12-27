@@ -22,7 +22,7 @@ accounts, and other resources in Azure. Let us see how these same tasks
 might be accomplished with scripts and discuss the advantages as well as
 the limitations.
 
-# Scripting Languages
+## Scripting languages
 
 A scripting language is a programming language used to automate the
 execution of tasks. There is no shortage of scripting languages to
@@ -156,7 +156,7 @@ robust support for error handling and debugging. The downside, of
 course, is that you need programmers well versed in the language of
 choice and knowledgeable about cloud platforms and cloud SDKs.
 
-# Bash Scripting
+## Bash scripting
 
 Bash, short for "Bourne-again shell," is among the world's most popular
 scripting languages. It is an irreplaceable tool for system
@@ -319,6 +319,8 @@ this isn't the end of the story. In the next lesson, we introduce the
 notion of a data-center environment where coordination takes place as a
 matter of principle, and infrastructure is provisioned and updated based
 on explicitly defined requirements.
+
+### References
 
 [^1]: Wikipedia. *Scripting Languages*.
     <https://en.wikipedia.org/wiki/Category:Scripting_languages>.

@@ -59,7 +59,8 @@ interprets as create, read, update, and delete. It's up to the
 intermediate plugins to map the commands the API provides to methods it
 can generally recognize.
 
-![](../media/fig6-9.png)
+![Figure 9: The Terraform core uses plugins that in turn call cloud
+provider APIs](../media/fig6-9.png)
 
 Figure 9: The Terraform core uses plugins that in turn call cloud
 provider APIs.
@@ -71,7 +72,7 @@ resources as a group. From those requests, it assembles a working
 virtual network around components that need to share connectivity with
 one another.
 
-# Terraform Syntax
+## Terraform syntax
 
 Terraform works somewhat differently than the CM tools examined in the
 previous lesson. It does use a domain-specific language for declaring
@@ -125,7 +126,7 @@ It is the AWS plugin for Terraform that takes care of mapping these
 inputs to a command that AWS will recognize. When the command executes,
 the plugin also makes the results of the command available to the core.
 
-# Terraform Operation
+## Terraform operation
 
 It might seem as if there is no functional difference between Terraform
 and a CM system. Terraform does, after all, use a declarative language
@@ -219,7 +220,7 @@ create\_before\_destroy = true
 
 }
 
-# Configuration Management vs. Infrastructure Orchestration
+## Configuration management vs. infrastructure orchestration
 
 Orchestration can be achieved in a system without, to borrow a phrase
 from the marketing department, "making everything work seamlessly
@@ -238,6 +239,8 @@ that they themselves need to maintain a competitive edge, until IT can
 render a verdict as to whether side effects can be contained. This is
 the situation that infrastructure orchestration seeks to mitigate, and
 Terraform is a prime example of that effort put into action.
+
+### References
 
 [^1]: https://thenewstack.io/hashicorp-containers-should-be-managed-just-like-vms-so-where-does-that-leave-pets-and-cattle/
 
