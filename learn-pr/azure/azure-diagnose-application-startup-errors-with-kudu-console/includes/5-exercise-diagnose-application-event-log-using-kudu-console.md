@@ -3,7 +3,7 @@ In this unit, the application event log is analyzed through Kudu console.
 ## Access the Application Event Log through Azure Portal
 
 1. Go to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
-1. In the Azure Portal, open the **&lt;yourname&gt;HotelApp** app in **All resources**.
+1. In the Azure Portal, select **All resources**, then select your **HotelApp-####** app service you created, replacing #### with the name of your app service.
 1. Select **Diagnose and solve problems**.
 
 ![Diagnose and solve problems](../media/DiagnoseAndSolveProblems.png)
