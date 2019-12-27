@@ -20,10 +20,12 @@ Node.js is a platform for building server apps, based on JavaScript. All the Jav
 
 1. Back in the terminal, load the libraries you need with the following commands:
 
-    * **npm install azure-iot-device**
-    * **npm install azure-iot-device-mqtt**
-    * **npm install azure-maps-rest**
-    * **chalk**
+    ```cli
+    npm install azure-iot-device
+    npm install azure-iot-device-mqtt
+    npm install azure-maps-rest
+    npm install chalk
+    ```
 
 1. After you've entered the code below into the app.js file, you can run it from the terminal by entering `node app.js`. Ensure that the RefrigeratedTruck folder is the current folder of the terminal, when you run the app.
 

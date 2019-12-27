@@ -42,7 +42,7 @@ Telemetry is the data values transmitted by sensors. The most important sensor i
     | Capability Type | Telemetry |
     | Semantic type | Temperature |
     | Schema | Double |
-    | Unit | <sup>o</sup>F |
+    | Unit | <sup>o</sup>C |
 
 1. Your screen should now look like the following image.
 
@@ -167,7 +167,7 @@ A property is a single value. If more complex sets of data need to be transmitte
     | Semantic type | None |
     | Schema | Double |
     | Writable | On |
-    | Unit |  <sup>o</sup>F  |
+    | Unit |  <sup>o</sup>C  |
 
 1. Confirm your properties have the following fields.
 
