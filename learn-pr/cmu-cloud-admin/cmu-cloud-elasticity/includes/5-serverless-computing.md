@@ -8,7 +8,7 @@ You *could* take an IaaS approach by creating one or more VMs to run your code a
 
 Serverless functions executed by function runtimes in the cloud are the most common form of serverless computing, but they're not the only form. Amazon, Microsoft, and Google offer serverless versions of some of their other PaaS services, including serverless databases. Some providers offer support for *serverless workflows*, which let you define business workflows in the cloud and execute them in response to external events such as invoices being uploaded to cloud storage, timers that fire at specified intervals, or e-mails hitting an inbox -- often without writing a single line of code. Finally, many of the container services that cloud service providers offer, including Azure Container Instances and the AWS Elastic Container Service, qualify as examples of serverless computing because they let you run containers in the cloud while abstracting away the underlying infrastructure.
 
-## Benefits of Serverless Computing
+## Benefits of serverless computing
 
 Serverless computing offers three primary benefits to organizations that leverage cloud computing:
 
