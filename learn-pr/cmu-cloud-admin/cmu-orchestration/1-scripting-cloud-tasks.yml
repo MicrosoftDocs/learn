@@ -1,0 +1,65 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-admin.cmu-orchestration.1-scripting-cloud-tasks
+title: 
+metadata:
+  title:
+  description: 
+  ms.date: 12/31/2019
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 11
+content: |
+  [!include[](includes/1-scripting-cloud-tasks.md)]
+# quiz:
+#   title: Check your knowledge
+#   questions:
+
+#     - content: "What is the term used to describe programs that create and manage virtual machines?"
+#       choices:
+#       - content: "Hyper-V"
+#         isCorrect: false
+#         explanation: "Incorrect. Hyper-V is a product from Microsoft for creating virtual machines."
+#       - content: "Hypervisor"
+#         isCorrect: true
+#         explanation: "Correct! A hypervisor creates and manages virtual machines, typically using a combination of firmware and software."
+#       - content: "Hypermanager"
+#         isCorrect: false
+#         explanation: "Incorrect. A hypervisor creates and manages virtual machines, typically using a combination of firmware and software."
+#       - content: "Hyperhost"
+#         isCorrect: false
+#         explanation: "Incorrect. A hypervisor creates and manages virtual machines, typically using a combination of firmware and software."
+    
+#     - content: "Given that each virtual machine runs its own guest operating system, can two different operating systems (for example, Linux and Windows) run side by side in two VMs on the same host?"
+#       choices:
+#       - content: "Yes"
+#         isCorrect: true
+#         explanation: "Correct! One of the benefits of virtualization is that guest operating systems running in different VMs do not have to be identical."
+#       - content: "No"
+#         isCorrect: false
+#         explanation: "Incorrect. One of the benefits of virtualization is that guest operating systems running in different VMs do not have to be identical."
+    
+#     - content: "True or false? When a VM is rebooted, the host also has to be rebooted."
+#       choices:
+#       - content: "True"
+#         isCorrect: false
+#         explanation: "Incorrect. VMs can be rebooted without rebooting the computer that hosts them."
+#       - content: "False"
+#         isCorrect: true
+#         explanation: "Correct! VMs can be rebooted without rebooting the computer that hosts them."
+    
+#     - content: "Which of the following statements is true?"
+#       choices:
+#       - content: "A system VM can present an ISA different than that of the host system to the applications that it hosts, but a process VM cannot."
+#         isCorrect: false
+#         explanation: "Incorrect. System VMs and process VMs can both present ISAs other than the ones present in the host system."
+#       - content: "A Java Virtual Machine (JVM) is an example of a system VM."
+#         isCorrect: false
+#         explanation: "Incorrect. A JVM is an example of a process VM."
+#       - content: "A system VM can present four CPU cores to applications running on a two-core processor, while process VMs cannot."
+#         isCorrect: true
+#         explanation: "Correct! A system VM can present to the operating system and applications that it hosts resources that differ in quantity and type from the physical host."
+#       - content: "A single system VM can run on two servers at the same time, while a process VM cannot."
+#         isCorrect: false
+#         explanation: "Incorrect. System VMs can run on different servers over time, but can only run on one server at a time."
