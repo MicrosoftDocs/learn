@@ -52,7 +52,7 @@ Let's apply some tags to the resources you created. Recall that we created a res
 
     Back in the resource list you'll now see a **2** displayed as we now have two tags applied to each resource.
 
-1. Let's take a look at how we can use tags to filter your resources. On the main Azure menu on the left, select **All resources**.
+1. Let's take a look at how we can use tags to filter your resources. On the Azure portal menu or from the **Home** page, select **All resources**.
 
 1. In the **All tags** drop down, under **Environment** select **Training**. You should see only your two VNets displayed, since we tagged those resources with the **Environment:Training** tag.
 

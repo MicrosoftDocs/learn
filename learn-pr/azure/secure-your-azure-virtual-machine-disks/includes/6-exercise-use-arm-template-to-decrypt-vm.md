@@ -6,7 +6,7 @@ We're going to use a template Microsoft has published on GitHub that is specific
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) with the same account you activated the sandbox with.
 
-1. Click **Create a Resource** in the left sidebar.
+1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
 
 1. Type **Template** in the search box.
 
@@ -33,7 +33,7 @@ The deployment may take a few minutes to complete.
 
 ## Verify the encryption status of the VM
 
-1. In the sidebar of the Azure portal, click **Virtual machines** and select your VM **fmdata-vm01**. Alternatively, you can search for your VM by name from **All Resources**.
+1. On the Azure portal menu or from the **Home** page, select **Virtual machines** and select your VM **fmdata-vm01**. Alternatively, you can search for your VM by name from **All Resources**.
 
 1. On the **Virtual machine** pane, under **SETTINGS**, click **Disks**.
 
