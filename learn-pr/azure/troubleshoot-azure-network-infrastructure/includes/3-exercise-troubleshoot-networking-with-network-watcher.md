@@ -127,7 +127,9 @@ Now you can use Network Watcher to troubleshoot connectivity between two VMs in 
 
 1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true) by using the account that you used to activate the sandbox.
 
-1. Go to **All Services** > **Networking** > **Network Watcher**, and then select **Topology**.
+1. On the Azure portal menu, select **All services**. Then go to **Networking** > **Network Watcher**.
+
+1. Select **Topology**.
 
 1. In the drop-down lists, select the subscription and resource group. Network Watcher displays your network topology:
 
