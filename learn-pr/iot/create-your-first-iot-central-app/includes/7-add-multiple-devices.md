@@ -10,18 +10,18 @@ Now for the best fun of all.
 
 1. In the console for the device app, you should both see  **New customer** event, and a **Route found** message.
 
-    ![Screenshot showing the map view of the truck at its base in Seattle](../media/refrigerated-trucks-route-points.png)
+    [![Screenshot showing the map view of the truck at its base in Seattle](../media/refrigerated-trucks-route-points.png)](../media/refrigerated-trucks-route-points.png#lightbox)
 
    > [!NOTE]
    > If you see a message including the text **Access denied due to invalid subscription key**, then check your subscription key to Azure Maps.
 
 1. In the dashboard **Location** tile, is your truck on its way? You might have to wait a short time for the apps to sync up.
 
-    ![Screenshot showing the map view of our first truck delivery route](../media/refrigerated-trucks-first-delivery.png)
+    [![Screenshot showing the map view of our first truck delivery route](../media/refrigerated-trucks-first-delivery.png)](../media/refrigerated-trucks-first-delivery.png#lightbox)
 
 1. Verify the event text in the dashboard tile.
 
-    ![Screenshot showing the new customer event in the dashboard](../media/refrigerated-trucks-new-customer-tile.png)
+    [![Screenshot showing the new customer event in the dashboard](../media/refrigerated-trucks-new-customer-tile.png)](../media/refrigerated-trucks-new-customer-tile.png#lightbox)
 
 Great progress! Take a moment to just watch the map update, and your truck deliver its contents.
 
@@ -37,7 +37,7 @@ To test a conflict event, send a command that you know doesn't make sense.
 
 1. With your truck at the base, issue a Recall command. The truck should respond with the "already at base" event.
 
-    ![Screenshot showing the console view with a conflict event](../media/refrigerated-trucks-already-at-base.png)
+    [![Screenshot showing the console view with a conflict event](../media/refrigerated-trucks-already-at-base.png)](../media/refrigerated-trucks-already-at-base.png#lightbox)
 
 ### 7. Check the truck properties, and change the optimal temperature
 
@@ -53,13 +53,13 @@ To test a conflict event, send a command that you know doesn't make sense.
 
 1. Finally, set the value as **-10**.
 
-    ![Screenshot showing the completed Job](../media/refrigerated-trucks-job.png)
+    [![Screenshot showing the completed Job](../media/refrigerated-trucks-job.png)](../media/refrigerated-trucks-job.png#lightbox)
 
 1. Running this job should set the optimal temperature for all trucks in the device group, just one in our case. Click **Run**. Wait for the **Status** of the job to change from **Pending** to **Completed**. This change should only take a few seconds.
 
 1. Navigate back, via **Devices** to your dashboard. Verify the **Optimal temperature** has been set to -10, in the tile on the dashboard.
 
-    ![Screenshot showing the dashboard tile showing the new optimal temperature](../media/refrigerated-trucks-optimal-temp.png)
+    [![Screenshot showing the dashboard tile showing the new optimal temperature](../media/refrigerated-trucks-optimal-temp.png)](../media/refrigerated-trucks-optimal-temp.png#lightbox)
 
 ## Next steps
 

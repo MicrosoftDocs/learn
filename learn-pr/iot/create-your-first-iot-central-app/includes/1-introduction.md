@@ -31,7 +31,7 @@ In order to make these decisions, you'll need an up-to-date picture of all that 
 
 IoT Central provides all you need to handle this scenario. In the following image, the colored circles show the location of the truck, on its way to a customer.
 
-[![Image of the finished app, showing Trucks on routes in an IoT Central dashboard](../media/refrigerated-trucks-intro-map.png)](../media/refrigerated-trucks-intro-map.png#lightbox)
+[![Image of the finished app, showing a truck en-route in the IoT Central dashboard](../media/refrigerated-trucks-intro-map.png)](../media/refrigerated-trucks-intro-map.png#lightbox)
 
 In this module, you'll build the app displayed in the above image.
 
@@ -47,7 +47,10 @@ In this module, you'll build the app displayed in the above image.
 
 1. Select the free **7 day free trial** option. Seven days is plenty of time to complete the scenario.
 
-    ![Screenshot showing how to create a new IoT Central app, using the IoT Central portal](../media/refrigerated-trucks-my-apps.png)
+    [![Screenshot showing how to create a new IoT Central app, using the IoT Central portal](../media/refrigerated-trucks-my-apps.png)](../media/refrigerated-trucks-my-apps.png#lightbox)
+
+    > [!NOTE]
+    > Click on any image in this module, to display a full-sized image.
 
 1. Fill out your contact info, and click **Create**. Wait a few seconds whilst the app resource is built.
 

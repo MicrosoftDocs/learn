@@ -4,7 +4,7 @@ In this unit, you'll first create a dashboard showing all the capabilities of th
 
 1. Click on the **Views** menu option, then on **Visualizing the device**.
 
-    ![Screenshot showing how to create a new view](../media/refrigerated-trucks-add-view.png)
+    [![Screenshot showing how to create a new view](../media/refrigerated-trucks-add-view.png)](../media/refrigerated-trucks-add-view.png#lightbox)
 
 1. You should now see a list of all the **Telemetry**, **Properties**, and **Commands** you created, each with a check box.
 
@@ -16,7 +16,7 @@ In this unit, you'll first create a dashboard showing all the capabilities of th
 
 1. When you've added all the tiles, scroll around a bit on your dashboard, and check out the wording in the tiles.
 
-    ![Screenshot showing some sample dashboard tiles](../media/refrigerated-trucks-sample-tiles.png)
+    [![Screenshot showing some sample dashboard tiles](../media/refrigerated-trucks-sample-tiles.png)](../media/refrigerated-trucks-sample-tiles.png#lightbox)
 
 1. You can drag tiles around, and the portal will try to rearrange them neatly.
 
@@ -36,7 +36,7 @@ By "real" IoT Central understands that there's a remote app running. The app can
 
 1. Click **+ New**. Verify in the dialog that the device name includes the **RefrigeratedTruck** text. If it doesn't, you've not selected the right device template.
 
-    ![Screenshot showing the dialog to create a device](../media/refrigerated-trucks-create-device.png)
+    [![Screenshot showing the dialog to create a device](../media/refrigerated-trucks-create-device.png)](../media/refrigerated-trucks-create-device.png#lightbox)
 
 1. Change the **Device ID** to a friendlier name, say "RefrigeratedTruck1".
 

@@ -16,7 +16,7 @@ Node.js is a platform for building server apps, based on JavaScript. All the Jav
 
 1. From the **File** menu, create a new file. Insert a single line as a comment, such as `// Refrigerated Truck app`. Save the file to the "RefrigeratedTruck" folder (locating this folder might involve a bit of navigation), with the name "app.js". By using the .js file extension, Visual Studio Code interprets this file as JavaScript and evaluates the contents with the JavaScript language service.
 
-    ![Screenshot showing how to save the JavaScript file, in Visual Studio Code](../media/refrigerated-trucks-vscode.png)
+    [![Screenshot showing how to save the JavaScript file, in Visual Studio Code](../media/refrigerated-trucks-vscode.png)](../media/refrigerated-trucks-vscode.png#lightbox)
 
 1. Back in the terminal, load the libraries you need with the following commands:
 
@@ -57,7 +57,7 @@ Node.js is a platform for building server apps, based on JavaScript. All the Jav
 
 1. Navigate to the **JavaScript** project types, and create a new **Blank Node.js Console Application** project, called "RefrigeratedTruck".
 
-    ![Screenshot showing how to create a new blank Node.js project, in Visual Studio](../media/refrigerated-trucks-vs-project.png)
+    [![Screenshot showing how to create a new blank Node.js project, in Visual Studio](../media/refrigerated-trucks-vs-project.png)](../media/refrigerated-trucks-vs-project.png#lightbox)
 
 1. Right-click on the **npm** entry in Solution Explorer, and select **Install New npm Packages...**.
 
@@ -68,7 +68,7 @@ Node.js is a platform for building server apps, based on JavaScript. All the Jav
     * **azure-maps-rest**
     * **chalk**
 
-    ![Screenshot showing how to add an npm package, in Visual Studio](../media/refrigerated-trucks-vs-npm.png)
+    [![Screenshot showing how to add an npm package, in Visual Studio](../media/refrigerated-trucks-vs-npm.png)](../media/refrigerated-trucks-vs-npm.png#lightbox)
 
 1. Delete the default contents of the app.js file.
 

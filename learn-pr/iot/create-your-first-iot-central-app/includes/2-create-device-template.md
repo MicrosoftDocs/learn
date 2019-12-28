@@ -20,7 +20,7 @@ In this unit, you'll create a device template for a refrigerated truck.
 
 1. For **Create a capability model**, click **Custom**. You should now see a screen similar to the following image.
 
-    ![Screenshot showing how to name, and then create, a new device template](../media/refrigerated-trucks-new-template.png)
+    [![Screenshot showing how to name, and then create, a new device template](../media/refrigerated-trucks-new-template.png)](../media/refrigerated-trucks-new-template.png#lightbox)
 
     > [!NOTE]
     > Take note of a few important elements of the above image. Including that the template is in Draft form, and the locations of the **+ Add interface**, **Views**, and **Publish** controls.
@@ -46,7 +46,7 @@ Telemetry is the data values transmitted by sensors. The most important sensor i
 
 1. Your screen should now look like the following image.
 
-    ![Screenshot showing how to create temperature telemetry for the simulated device](../media/refrigerated-trucks-temperature.png)
+    [![Screenshot showing how to create temperature telemetry for the simulated device](../media/refrigerated-trucks-temperature.png)](../media/refrigerated-trucks-temperature.png#lightbox)
 
     > [!IMPORTANT]
     > The names entered for the interface must be entered _exactly_ as shown in this unit. This is because an exact match is needed between these names, and entries in the code you'll be adding later in this module.
@@ -71,7 +71,7 @@ States are important, they let the operator know what is going on. A state in Io
 
 1. Add two more state values: "full" and "melting". Again, the same text should appear in the **Display name**, **Name**, and **Value**.
 
-    ![Screenshot showing how to create contents state for the simulated device](../media/refrigerated-trucks-contents.png)
+    [![Screenshot showing how to create contents state for the simulated device](../media/refrigerated-trucks-contents.png)](../media/refrigerated-trucks-contents.png#lightbox)
 
 1. Carefully check each capability before moving on. 
 
@@ -87,7 +87,7 @@ States are important, they let the operator know what is going on. A state in Io
 
 1. Now add three values: on, off, and failed. Make sure that each word appears in the **Display name**, **Name**, and **Value** fields.
 
-    ![Screenshot showing how to create cooling system state for the simulated device](../media/refrigerated-trucks-cooling.png)
+    [![Screenshot showing how to create cooling system state for the simulated device](../media/refrigerated-trucks-cooling.png)](../media/refrigerated-trucks-cooling.png#lightbox)
 
 1. A more complex state is the state of the truck itself. If all goes well, a truck's normal routing might be: _ready_, _enroute_, _delivering_, _returning_, _loading_, and back to _ready_ again.  However, you should add the _dumping_ state to cater for when melted contents need to be disposed of! Using the same process as for the last two steps, create this new state.
 
@@ -99,7 +99,7 @@ States are important, they let the operator know what is going on. A state in Io
     | Semantic type | State |
     | Value schema | String |
 
-    ![Screenshot showing how to create truck state for the simulated device](../media/refrigerated-trucks-state.png)
+    [![Screenshot showing how to create truck state for the simulated device](../media/refrigerated-trucks-state.png)](../media/refrigerated-trucks-state.png#lightbox)
 
 ### Add event telemetry
 
@@ -119,7 +119,7 @@ Another event might be just to acknowledge, and record, the customer ID that a t
     | Semantic type | Event |
     | Schema | String |
 
-    ![Screenshot showing how to create a conflict event for the simulated device](../media/refrigerated-trucks-conflict.png)
+    [![Screenshot showing how to create a conflict event for the simulated device](../media/refrigerated-trucks-conflict.png)](../media/refrigerated-trucks-conflict.png#lightbox)
 
 ### Add location telemetry
 
@@ -135,7 +135,7 @@ A location is probably the most important, and yet one of the easiest measuremen
     | Semantic type | Location |
     | Schema | Geopoint |
 
-    ![Screenshot showing how to create a truck location for the simulated device](../media/refrigerated-trucks-location.png)
+    [![Screenshot showing how to create a truck location for the simulated device](../media/refrigerated-trucks-location.png)](../media/refrigerated-trucks-location.png#lightbox)
 
 ### Add properties
 
@@ -171,7 +171,7 @@ A property is a single value. If more complex sets of data need to be transmitte
 
 1. Confirm your properties have the following fields.
 
-      ![Screenshot showing how to create a truck ID and optimal temperature properties for the simulated device](../media/refrigerated-trucks-properties.png)
+      [![Screenshot showing how to create a truck ID and optimal temperature properties for the simulated device](../media/refrigerated-trucks-properties.png)](../media/refrigerated-trucks-properties.png#lightbox)
 
 ### Add commands
 
@@ -211,11 +211,11 @@ For refrigerated trucks, there are two commands you should add: a command to del
 
 1. Validate that your two commands match the image below.
 
-    ![Screenshot to help validate the two commands for the simulated device have been entered correctly](../media/refrigerated-trucks-commands.png)
+    [![Screenshot to help validate the two commands for the simulated device have been entered correctly](../media/refrigerated-trucks-commands.png)](../media/refrigerated-trucks-commands.png#lightbox)
 
 1. Click **Save**. Before going any further carefully double check your interface. After an interface has been published, there are very limited editing options. It's important to get it right before publishing. If you click on the name of the device template, in the menu that ends with the **Views** option, you'll get a summary of the capabilities.
 
-    ![Screenshot to help validate the capabilities of the simulated device](../media/refrigerated-trucks-capabilities.png)
+    [![Screenshot to help validate the capabilities of the simulated device](../media/refrigerated-trucks-capabilities.png)](../media/refrigerated-trucks-capabilities.png#lightbox)
 
 ## Publish the template
 
