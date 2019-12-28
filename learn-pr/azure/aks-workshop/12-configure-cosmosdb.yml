@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.aks-workshop.12-configure-cosmosdb
 metadata:
-  title: Configure MongoDB replication using a StatefulSet
-  description: Configure MongoDB replication using a StatefulSet
+  title: Swap out MongoDB to Azure Cosmos DB
+  description: Swap out MongoDB to Azure Cosmos DB
   ms.date: 01/30/2020
   author: sabbour
   ms.author: asabbour
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Configure MongoDB replication using a StatefulSet
+title: Swap out MongoDB to Azure Cosmos DB
 durationInMinutes: 10
 interactive: bash
 content: |

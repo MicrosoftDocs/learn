@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.aks-workshop.05-deploy-ratings-api
 metadata:
-  title: Deploy the Order Capture API
-  description: Deploy the Order Capture API
+  title: Deploy the ratings API
+  description: Deploy the ratings API
   ms.date: 01/30/2020
   author: sabbour
   ms.author: asabbour
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Deploy the Order Capture API
+title: Deploy the ratings API
 durationInMinutes: 10
 interactive: bash
 content: |
