@@ -4,7 +4,7 @@ In this module you created resources using your Azure subscription. You want to 
 
 1. In Azure, select **Resource groups** on the left.
 
-1. Find the **aksworkshop** resource group, or whatever resource group name you used,  and select it.
+1. Find the **aksworkshop** resource group, or whatever resource group name you used, and select it.
 
 1. In the **Overview** tab of the resource group, select **Delete resource group**.
 
