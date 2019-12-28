@@ -32,13 +32,5 @@ The application consists of 2 components, the API and the frontend. Both compone
 
 | Component                                          | Link                                                               |
 |----------------------------------------------------|--------------------------------------------------------------------|
-| An API `rating-api`                   | [GitHub repo](https://github.com/MicrosoftDocs/mslearn-aks-workshop-ratings-api)             |
-| A frontend `rating-web`          | [GitHub repo](https://github.com/MicrosoftDocs/mslearn-aks-workshop-ratings-web)             |
-
-Once you're done, you'll have an experience similar to the below.
-
-![Application](media/app-overview-1.png)
-
-![Application](media/app-overview-2.png)
-
-![Application](media/app-overview-3.png)
+| An API `ratings-api`                   | [GitHub repo](https://github.com/MicrosoftDocs/mslearn-aks-workshop-ratings-api)             |
+| A frontend `ratings-web`          | [GitHub repo](https://github.com/MicrosoftDocs/mslearn-aks-workshop-ratings-web)             |
