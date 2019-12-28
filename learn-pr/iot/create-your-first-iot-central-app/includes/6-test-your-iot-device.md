@@ -61,7 +61,7 @@ If all goes well, go straight into the second test.
 
     | IoT Central | Device app |
     | --- | --- |
-    | [![Screenshot showing the chart view in IoT Central, receiving the truck temperatures](../media/refrigerated-trucks-central.png)](../media/refrigerated-trucks-central.png#lightbox) | [![Screenshot showing the console output from the device app, showing the truck contents temperatures](../media/refrigerated-trucks-console.png)](../media/refrigerated-trucks-console.png#lightbox) |
+    | [![Screenshot showing a tile in IoT Central, receiving the truck temperatures](../media/refrigerated-trucks-central.png)](../media/refrigerated-trucks-central.png#lightbox) | [![Screenshot showing the console output from the device app, showing the truck contents temperatures](../media/refrigerated-trucks-console.png)](../media/refrigerated-trucks-console.png#lightbox) |
 
     > [!NOTE]
     > The screenshots in this module are taken from the C# version of the app. The Node.js app screens will be similar, but not identical.
@@ -70,7 +70,7 @@ If all goes well, go straight into the second test.
 
 1. Check the **Location** map view for the device. A blue circle near Seattle, USA shows our truck ready to go. You may have to zoom out a bit.
 
-    [![Screenshot showing the map view of the truck at its base in Seattle](../media/refrigerated-trucks-seattle.png)](../media/refrigerated-trucks-seattle.png#lightbox)
+    [![Screenshot showing the location of the truck at its base in Seattle](../media/refrigerated-trucks-seattle.png)](../media/refrigerated-trucks-seattle.png#lightbox)
 
 If all is well, this is great progress. The truck is at its base, in the correct state, and waiting for a command.
 

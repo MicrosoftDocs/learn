@@ -20,7 +20,7 @@ In this unit, you'll create a device template for a refrigerated truck.
 
 1. For **Create a capability model**, click **Custom**. You should now see a screen similar to the following image.
 
-    [![Screenshot showing how to name, and then create, a new device template](../media/refrigerated-trucks-new-template.png)](../media/refrigerated-trucks-new-template.png#lightbox)
+    [![Screenshot showing the most important controls when creating a device template](../media/refrigerated-trucks-new-template.png)](../media/refrigerated-trucks-new-template.png#lightbox)
 
     > [!NOTE]
     > Take note of a few important elements of the above image. Including that the template is in Draft form, and the locations of the **+ Add interface**, **Views**, and **Publish** controls.
@@ -119,7 +119,7 @@ Another event might be just to acknowledge, and record, the customer ID that a t
     | Semantic type | Event |
     | Schema | String |
 
-    [![Screenshot showing how to create a conflict event for the simulated device](../media/refrigerated-trucks-conflict.png)](../media/refrigerated-trucks-conflict.png#lightbox)
+    [![Screenshot showing how to create an event for the simulated device](../media/refrigerated-trucks-conflict.png)](../media/refrigerated-trucks-conflict.png#lightbox)
 
 ### Add location telemetry
 
