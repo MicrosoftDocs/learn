@@ -1,6 +1,7 @@
 Azure has a managed Kubernetes service, Azure Kubernetes Service (AKS), you'll use this to easily deploy a Kubernetes cluster.
 
 [!include[](../../../includes/azure-exercise-subscription-prerequisite.md)]
+[!include[](../../../includes/azure-cloudshell-copy-paste-tip.md)]
 
 ## Create a new resource group
 
@@ -37,6 +38,7 @@ Azure has a managed Kubernetes service, Azure Kubernetes Service (AKS), you'll u
       --name $AKS_CLUSTER_NAME \
       --location eastus \
       --kubernetes-version $VERSION
+      --generate-ssh-keys
     ```
 
     `$AKS_CLUSTER_NAME` specifies your AKS cluster name, `$VERSION` is the latest Kubernetes version retrieved before.
