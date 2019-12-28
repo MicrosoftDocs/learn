@@ -28,9 +28,9 @@ In this module, you will:
 
 The application consists of 2 components, the API and the frontend. Both components are written in Node.js. The API stores data in a MongoDB.
 
-![Application diagram](../media/app-overview.png)
-
 | Component                                          | Link                                                               |
 |----------------------------------------------------|--------------------------------------------------------------------|
 | An API `rating-api`                   | [GitHub repo](https://github.com/MicrosoftDocs/mslearn-aks-workshop-ratings-api)             |
 | A frontend `rating-web`          | [GitHub repo](https://github.com/MicrosoftDocs/mslearn-aks-workshop-ratings-web)             |
+
+![Application diagram](../media/app-overview.png)
