@@ -1,11 +1,11 @@
 ### YamlMime:Module
 uid: learn.aks-workshop
 metadata:
-  title: Azure Kuberntetes Service Workshop
+  title: Azure Kubernetes Service Workshop
   description: In this workshop, you’ll go through tasks that will help you master the basic and more advanced topics required to deploy a multi-container application to Kubernetes on Azure Kubernetes Service (AKS).
   ms.date: 01/30/2020
-  author: jboeshart
-  ms.author: jaboes
+  author: sabbour
+  ms.author: asabbour
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Azure Kuberntetes Service Workshop
@@ -31,17 +31,16 @@ products:
 units:
 - learn.aks-workshop.01-introduction
 - learn.aks-workshop.02-deploy-aks
-- learn.aks-workshop.03-deploy-mongodb
-- learn.aks-workshop.04-deploy-order-capture-api
-- learn.aks-workshop.05-deploy-ingress
-- learn.aks-workshop.06-enable-ssl
-- learn.aks-workshop.07-configure-monitoring
-- learn.aks-workshop.08-scale-application
-- learn.aks-workshop.09-create-container-registry
-- learn.aks-workshop.10-configure-cicd
-- learn.aks-workshop.11-configure-virtual-nodes
-- learn.aks-workshop.12-configure-mongodb-replication-statefulset
-- learn.aks-workshop.13-store-secrets-azure-key-vault
-- learn.aks-workshop.14-summary
+- learn.aks-workshop.03-deploy-acr
+- learn.aks-workshop.04-deploy-mongodb
+- learn.aks-workshop.05-deploy-ratings-api
+- learn.aks-workshop.06-deploy-ratings-web
+- learn.aks-workshop.07-deploy-ingress
+- learn.aks-workshop.08-enable-ssl
+- learn.aks-workshop.09-configure-monitoring
+- learn.aks-workshop.10-scale-application
+- learn.aks-workshop.11-configure-cicd
+- learn.aks-workshop.12-configure-cosmosdb
+- learn.aks-workshop.13-summary
 badge:
   uid: learn.aks-workshop.badge
