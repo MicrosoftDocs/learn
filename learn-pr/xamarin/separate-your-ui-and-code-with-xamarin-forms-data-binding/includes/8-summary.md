@@ -1,0 +1,3 @@
+In this module, we replaced imperative code with bindings. We used different capabilities of bindings depending on the need of the particular control. Finally, we used value converters to create bindings between mismatched types.
+
+Data binding lets us express that a data property and a UI property are related. The binding keeps the properties synchronized for us. We no longer need explicit code to handle data synchronization tasks. Using bindings improves code readability, which in turn makes for easier code maintenance. The binding framework also gives a consistent surface area for unit testing.
