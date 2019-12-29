@@ -1,6 +1,6 @@
 In this module, you'll add nonfunctional tests to the pipeline. These tests check characteristics like performance and reliability.
 
-In the [Run functional tests in Azure Pipelines](/learn/modules/run-functional-tests-azure-pipelines?azure-portal=true) module, you and the Tailspin Toys web team added UI tests to the pipeline. UI tests are a form of functional testing. Functional tests verify the functionality, or behavior, of software. In other words, functional tests verify that each function of the software does what it should.
+In [Run functional tests in Azure Pipelines](/learn/modules/run-functional-tests-azure-pipelines?azure-portal=true), you and the Tailspin Toys web team added UI tests to the pipeline. UI tests are a form of functional testing. Functional tests verify the functionality, or behavior, of software. In other words, functional tests verify that each function of the software does what it should.
 
 But what about the nonfunctional aspects of an application, such as performance and reliability? After your service is operational and deployed to an environment, how can you determine the application's performance under both realistic and heavy loads? Does your application expose any loopholes or weaknesses that might cause an information breach?
 
