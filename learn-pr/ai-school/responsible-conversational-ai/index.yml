@@ -1,0 +1,36 @@
+### YamlMime:Module
+uid: learn-wwl.responsible-conversational-ai
+metadata:
+  title: Responsible Conversational AI
+  description: When building any AI system it's important to do so responsibly. In this course you will learn about Microsoft' guidelines for the development of responsible conversational AI.
+  ms.date: 08/27/2019
+  author: RWortmanMorris
+  ms.author: rawortma
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  #ms.learn-contact: barlan
+title: Responsible Conversational AI
+summary: When building any AI system it's important to do so responsibly. In this course you will learn about Microsoft' guidelines for the development of responsible conversational AI.
+abstract: | 
+  In this module, you will:
+  - Learning objective 1
+prerequisites: None
+iconUrl: /learn/achievements/responsible-conversational-ai.svg
+levels: 
+- intermediate
+roles: 
+- functional-consultant
+- business-user
+products: 
+- azure
+- dynamics
+- m365
+units: 
+- learn-wwl.responsible-conversational-ai.introduction-to-responsible-conversational-ai
+- learn-wwl.responsible-conversational-ai.responsibility-imperatives
+- learn-wwl.responsible-conversational-ai.reliable-and-accessible
+- learn-wwl.responsible-conversational-ai.considering-consequential-use-cases
+- learn-wwl.responsible-conversational-ai.fairness-and-diversity
+- learn-wwl.responsible-conversational-ai.bot-security
+badge: 
+  uid: learn-wwl.responsible-conversational-ai.badge #add the uid for your achievement badge.

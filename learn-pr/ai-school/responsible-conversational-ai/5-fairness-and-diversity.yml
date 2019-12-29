@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.responsible-conversational-ai.fairness-and-diversity
+title: Fairness and diversity
+metadata:
+  title: Fairness and diversity
+  description: Since AI solutions are susceptible to bias it is important to make sure that you design your bot with fairness and diversity in mind. This article will explain how you can make sure that your conversational AI treats your users fairly and is inclusive of different cultures and backgrounds.
+  ms.date: 08/27/2019
+  author: RWortmanMorris
+  ms.author: rawortma
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 1
+content: |
+  [!include[](includes/5-fairness-and-diversity.md)] 

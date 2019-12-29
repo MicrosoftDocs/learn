@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.responsible-conversational-ai.bot-security
+title: Bot security
+metadata:
+  title: Bot security
+  description: Ensuring that your bot is secure from malicious attacks should be of high priority when designing and developing it. This section provides guidelines on how to make sure you protect your application and your users security.
+  ms.date: 08/27/2019
+  author: RWortmanMorris
+  ms.author: rawortma
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-bot-security.md)] 
