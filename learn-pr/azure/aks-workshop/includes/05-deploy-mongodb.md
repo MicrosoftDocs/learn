@@ -41,7 +41,7 @@ Charts are stored in Helm chart repositories. The official chart repository is m
     ```
 
     > [!NOTE]
-    > You provide parameters with the `--set` switch and a comma separated list of `key=value` pairs. Pay attention to the `mongodbUsername`, `mongodbPassword` and `mongodbDatabase` parameters. The application expects that the database is called **ratingsdb**. The `helm install` command is a very powerful command with many capabilities. To learn more about it, check out the [Using Helm Guide](https://helm.sh/docs/intro/using_helm/).
+    > You provide parameters with the `--set` switch and a comma separated list of `key=value` pairs. Pay attention to the `mongodbUsername`, `mongodbPassword` and `mongodbDatabase` parameters and their values, which set the username, password and database name respectively. The application expects that the database is called **ratingsdb**. The `helm install` command is a very powerful command with many capabilities. To learn more about it, check out the [Using Helm Guide](https://helm.sh/docs/intro/using_helm/).
 
     Once released, you should get an output similar to this. Make note of the MongoDB host, which should be **ratings-mongodb.ratingsapp.svc.cluster.local**, if you used the same parameters.
 
@@ -59,3 +59,4 @@ Charts are stored in Helm chart repositories. The official chart repository is m
     
         ratings-mongodb.ratingsapp.svc.cluster.local
     ```
+    
