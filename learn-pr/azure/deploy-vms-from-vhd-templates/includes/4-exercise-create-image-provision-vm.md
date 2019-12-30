@@ -27,7 +27,7 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
         --vm-name MyWindowsVM \
         --resource-group <rgn>[Sandbox resource group name]</rgn> \
         --publisher Microsoft.Compute \
-        --settings '{"commandToExecute":"powershell Add-WindowsFeature Web-Server; powershell Add-Content -Path \"C:\\inetpub\\wwwroot\\Default.htm\" -Value $($env:computername)"}'
+        --settings '{"commandToExecute":"powershell Add-WindowsFeature Web-Server,Web-Asp-Net45,NET-Framework-Features; powershell Invoke-WebRequest -Uri https://raw.githubusercontent.com/MicrosoftDocs/mslearn-deploy-vms-from-vhd-templates/master/Default.aspx -OutFile \"C:\\inetpub\\wwwroot\\Default.aspx\""}'
     ```
 
 1. Run the following command to open port 80 to the web server.
@@ -77,7 +77,7 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
         --name CustomScript \
         --vm-name MyUbuntuVM \
         --resource-group <rgn>[Sandbox resource group name]</rgn> \
-        --settings '{"commandToExecute":"apt-get -y update && apt-get -y install nginx && hostname > /var/www/html/index.html"}'
+        --settings '{"commandToExecute":"apt-get -y update && apt-get -y install nginx && hostname > /var/www/html/index.html && sudo crontab -l | { cat; echo \"@reboot hostname > /var/www/html/index.html\"; } | sudo crontab -"}'
     ```
 
 1. Run the following command to find the public IP address of the new virtual machine.
