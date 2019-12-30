@@ -32,6 +32,8 @@ Charts are stored in Helm chart repositories. The official chart repository is m
     # ... and many more
     ```
 
+## Install the MongoDB chart
+
 1. To install a chart, you can run the `helm install` command. In the example below, the release is called **ratings** and is deployed into the **ratingsapp** namespace.
 
     ```azurecli
