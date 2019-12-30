@@ -59,4 +59,38 @@ Charts are stored in Helm chart repositories. The official chart repository is m
     
         ratings-mongodb.ratingsapp.svc.cluster.local
     ```
+
+## Create a Kubernetes secret to hold the MongoDB details
+
+ Kubernetes has a concept of [secrets](https://kubernetes.io/docs/concepts/configuration/secret/). Secrets let you store and manage sensitive information, such as passwords. Putting this information in a secret is safer and more flexible than hard coding it in a Pod definition or in a container image.
+
+ In the previous step, you installed MongoDB using Helm, with a specified username, password and a database name. You're now going to store those details in a Kubernetes secret that will be used later.
+
+ 1. The ratings API expects to find the connection details to the MongoDB in the form of `mongodb://[username]:[password]@[endpoint]:27017/ratingsdb`. You’ll need to replace the **[username]**, **[password]** and **[endpoint]** with the ones you used when creating the database. For example `mongodb://ratingsuser:ratingspassword@ratings-mongodb.ratingsapp.svc.cluster.local:27017/ratingsdb`.
+
+ 1. Use the `kubectl create secret generic` command to create a secret called **mongosecret** in the **ratingsapp** namespace. A Kubernetes secret can hold several items, indexed by key. In this case, the secret will only contain one key, called **MONGOCONNECTION** and the value will be the constructed connection string from the previous step.
+
+     ```azurecli
+     kubectl create secret generic mongosecret --namespace ratingsapp --from-literal=MONGOCONNECTION="mongodb://ratingsuser:ratingspassword@ratings-mongodb.ratingsapp.svc.cluster.local:27017/ratingsdb"
+     ```
+
+1. You can validate that the secret has been created by running the `kubectl describe secret` command.
+
+    ```azurecli
+    kubectl describe secret mongosecret --namespace ratingsapp
+    ```
+
+    You should get an output similar to this.
+
+     ```output
+    Name:         mongosecret
+    Namespace:    ratingsapp
+    Labels:       <none>
+    Annotations:  <none>
     
+    Type:  Opaque
+    
+    Data
+    ====
+    MONGOCONNECTION:  98 bytes
+    ```
