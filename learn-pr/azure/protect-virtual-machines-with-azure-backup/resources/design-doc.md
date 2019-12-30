@@ -94,7 +94,7 @@ Identify the subtasks of *Protect your virtual machines with Azure Backup*
     Answer: Both if possible
 
     1. Ensure the Azure Backup Agent is running with your Virtual Machine, (Images from the Azure Marketplace have it as standard but Custom VM's will need it installed)
-    1. Sign in to the Azure Portal and filter the list in 'All Services' by the type 'Virtual Machines'
+    1. Sign in to the Azure Portal and search for and select 'Virtual Machines'
     1. From the list Select the VM you wish to backup and from the VM Menu, click 'Backup'
     1. In the Recovery Services Vault, select an existing Vault, or Create a new Vault, specifying its name.
     1. Choose the Backup policy settings you require, Frequency, Retention Range, or leave the DefaultPolicy selected which is a Daily Backup at 16:00hrs, and a Retention Range of 30 day(s)
