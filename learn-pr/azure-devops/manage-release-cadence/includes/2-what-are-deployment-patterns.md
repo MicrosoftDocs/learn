@@ -1,53 +1,57 @@
-A _deployment pattern_ is an automated way to smoothly roll out new application features to your users. Choosing an appropriate deployment pattern helps you minimize downtime. Some patterns also enable you to roll out new features progressively, allowing you to validate new features with select users before making those features available to everyone.
+A _deployment pattern_ is an automated way to smoothly roll out new application features to your users. Choosing an appropriate deployment pattern helps you minimize downtime. Some patterns also enable you to roll out new features progressively so you can validate new features with select users before you make those features available to everyone.
 
-In this section, you'll learn about some of the more common deployment patterns. You'll also learn how Azure App Service helps make it easy to implement the pattern that the Tailspin team chooses.
+In this section, you'll learn about some common deployment patterns. You'll also learn how Azure App Service helps to implement the pattern that the Tailspin team chooses.
 
 ## Morning meeting
 
-The Tailspin team is feeling good. Their pipeline has really sped up their process. The team has a development environment where they can integrate the web app with a database. Both Tim and Amita are happy about having automated tests that make their jobs easier. In general, they're seeing fewer delays and fewer bugs. But there is, as always, a problem. Let's drop in on their team meeting, where Tim is talking.
+The Tailspin team is feeling good. Their pipeline has really sped up their process. The team has a development environment where they can integrate the web app with a database. Both Tim and Amita are happy about having automated tests that simplify their jobs. In general, they see fewer delays and fewer bugs. But there is, as always, a problem. Let's drop in on the team meeting, where Tim is talking.
 
-**Tim:** It's so hard to keep everyone happy. Irwin thinks it takes too long to release new features. I can't do anything until management approves the release and, right now, there's no smooth way to roll it out once they give the okay. Not only does it take a long time but it's messy, it's manual, and there's down time. The whole process can take five days. I know that's too long but what am I supposed to do? Maybe if I just drink more coffee the solution will come to me.
+**Tim:** It's so hard to keep everyone happy. Irwin thinks it takes too long to release new features. I can't do anything until management approves the release and, right now, there's no smooth way to roll out the features after they give the OK. Not only does the process take a long time but it's messy, it's manual, and there's downtime. The whole process can take five days. I know that's too long, but what am I supposed to do? Maybe if I just drink more coffee the solution will come to me.
 
-**Andy:** Coffee is essential to all effective problem solving, no doubt. I also think that what we're talking about is called a *deployment pattern*.
+**Andy:** Coffee is essential to all effective problem solving, no doubt. I also think that the solution that we need is a *deployment pattern*.
 
-A deployment pattern is an automated way to do the cut-over, where we move the software from the final pre-production stage to live production. Picking the right pattern would definitely help you, like by minimizing downtime. Another advantage is that a deployment pattern would give us a chance to run tests that should really happen in production.
+A deployment pattern is an automated way to do the cutover. It's how we move the software from the final preproduction stage to live production. Picking the right pattern would definitely help you, like by minimizing downtime. Another advantage of a deployment pattern is that it gives us a chance to run tests that should really happen in production.
 
-Here are the possibilities for us to consider:
+Here are the possibilities we should consider:
 
-*Andy starts writing on the white board.*
+*Andy starts writing on the whiteboard.*
 
-* Blue-Green deployment
+* Blue-green deployment
 * Canary releases
 * Feature toggles
 * Dark launches
 * A/B testing
 * Progressive exposure deployment
 
-Let's briefly discuss each one.
+Let's briefly discuss each pattern.
 
 ## Blue-green deployments
 
-A _blue-green deployment_ reduces risk and downtime by running two identical environments. These environments are called *blue* and *green*. At any time, only one of the environments is live. A blue-green deployment typically involves a router or load balancer that helps us control the flow of traffic.
+A _blue-green deployment_ reduces risk and downtime by running two identical environments. These environments are called *blue* and *green*. At any time, only one of the environments is live. A blue-green deployment typically involves a router or load balancer that helps control the flow of traffic.
 
 ![Diagram of a load balancer distributing traffic in a blue-green deployment](../media/2-blue-green-deployment.png)
 
-Let's say blue is live. As we prepare a new release, we would do our final tests in the green environment. Once the software is working in the green environment, we would just switch the router so that all incoming requests go to the green environment. Blue-green deployment also gives us a fast way to do a rollback. If anything goes wrong in the green environment, we simply switch the router back to the blue environment.
+Let's say blue is live. As we prepare a new release, we would do our final tests in the green environment. After the software is working in the green environment, we would just switch the router so that all incoming requests go to the green environment. 
+
+Blue-green deployment also gives us a fast way to do a rollback. If anything goes wrong in the green environment, we simply switch the router back to the blue environment.
 
 ## Canary releases
 
-A _canary release_ is a way to identify potential problems as soon as possible without exposing all our users to the issue. The idea is that we would expose a new feature only to a small subset of users before making it available to everyone.
+A _canary release_ is a way to identify potential problems as soon as possible without exposing all users to the issue. The idea is that we expose a new feature to only a small subset of users before we make it available to everyone.
 
-![Diagram of load balancer sending some traffic to a canary version](../media/2-canary-deployment.png)
+![Diagram of a load balancer sending traffic to a canary version](../media/2-canary-deployment.png)
 
-We would monitor what happens when we release the feature. If the canary release has problems, we can apply a fix. After the canary release is known to be stable, we can move it to the actual production environment.
+We would monitor what happens when we release the feature. If the canary release has problems, we apply a fix. After the canary release is known to be stable, we move it to the actual production environment.
 
 ## Feature toggles
 
-_Feature toggles_ let us "flip a switch" at runtime. We can deploy new software without exposing any other new or changed functionality to our users. Mara and I would build new features behind a toggle. When a release occurs, the feature is "off" so it's not impacting the production software. Depending on how we configure the toggle, we can flip the switch to "on" and expose it how we want.
+_Feature toggles_ let us "flip a switch" at runtime. We can deploy new software without exposing any other new or changed functionality to our users. 
 
-![Diagram of coded if statement for on or off feature](../media/2-feature-toggles.png)
+Mara and I would build new features behind a toggle. When a release occurs, the feature is "off" so that it doesn't affect the production software. Depending on how we configure the toggle, we can flip the switch to "on" and expose it how we want.
 
-For example, we could expose it to a small number of users first to see how they react. We could expose it to a random sample of users. We could simply let it go live to everyone. Although, I'm not sure if this isn't more of a convenience for Mara and me. The big advantage to feature toggles is that it helps us avoid too much branching. Merging branches can be painful.
+![Diagram of a coded "if" statement for an on-off feature](../media/2-feature-toggles.png)
+
+For example, we could expose the feature to a small number of users first to see how they react. A random sample of users sees the feature. Or we could simply let the feature go live to everyone. Although, I'm not sure if this isn't more of a convenience for Mara and me. The big advantage to feature toggles is that it helps us avoid too much branching. Merging branches can be painful.
 
 ## Dark launches
 
@@ -75,7 +79,7 @@ With a ring-based deployment, we would deploy changes to risk-tolerant customers
 
 ## Implementing the blue-green deployment
 
-Andy looks at Tim.
+*Andy looks at Tim.*
 
 **Andy:** That's a lot, I know. Do you want to take some time to think about it, or you and I could...
 
