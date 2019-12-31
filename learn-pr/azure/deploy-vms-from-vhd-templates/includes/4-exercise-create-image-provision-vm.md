@@ -26,7 +26,7 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
         --vm-name MyWindowsVM \
         --resource-group <rgn>[Sandbox resource group name]</rgn> \
         --publisher Microsoft.Compute \
-        --settings '{"commandToExecute":"powershell Add-WindowsFeature Web-Server; powershell Add-Content -Path \"C:\\inetpub\\wwwroot\\Default.htm\" -Value $($env:computername)"}'
+        --settings '{"commandToExecute":"powershell Add-WindowsFeature Web-Server; powershell Add-Content -Path \"C:\\inetpub\\wwwroot\\Default.htm\" -Value $(hostname)"}'
     ```
 
 1. Run the following command to open port 80 to the web server.
@@ -311,7 +311,7 @@ az image create \
         --vm-name MyVMFromImage \
         --resource-group <rgn>[Sandbox resource group name]</rgn> \
         --publisher Microsoft.Compute \
-        --settings '{"commandToExecute":"powershell Add-Content -Path \"C:\\inetpub\\wwwroot\\Default.htm\" -Value $($env:computername)"}'
+        --settings '{"commandToExecute":"powershell Add-Content -Path \"C:\\inetpub\\wwwroot\\Default.htm\" -Value $(hostname)"}'
     ```
 
 1. Run the following command to open port 80 on the new virtual machine.
