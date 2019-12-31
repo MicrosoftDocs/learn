@@ -96,7 +96,7 @@ Here's what Amita's table looks like:
 
 **Andy:** I think we're ready to write our tests. Here's what we'll do:
 
-1. Create an NUnit project that includes Selenium. The project will exist along with the source code for the app.
+1. Create an NUnit project that includes Selenium. The project will be stored in the directory along with the app's source code.
 1. Write a test case that uses automation to click the specified link. The test case verifies that the expected modal window appears.
 1. Use the XPath data we saved to specify the parameters to the test case method. This task creates a sequence, or series, of tests.
 1. Configure the tests to run on Chrome, Firefox, and Microsoft Edge. This task creates a matrix of tests.
