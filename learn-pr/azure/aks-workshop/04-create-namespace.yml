@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
-uid: learn.aks-workshop.04-deploy-mongodb
+uid: learn.aks-workshop.04-create-namespace
 metadata:
-  title: Deploy MongoDB
-  description: Deploy MongoDB
+  title: Create namespace
+  description: Create namespace
   ms.date: 01/30/2020
   author: sabbour
   ms.author: asabbour
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Deploy MongoDB
+title: Create namespace
 durationInMinutes: 10
 interactive: bash
 content: |
-  [!include[](includes/04-deploy-mongodb.md)]
+  [!include[](includes/04-create-namespace.md)]

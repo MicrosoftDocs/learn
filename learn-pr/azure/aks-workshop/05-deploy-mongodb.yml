@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.aks-workshop.04-deploy-mongodb
+uid: learn.aks-workshop.05-deploy-mongodb
 metadata:
   title: Deploy MongoDB
   description: Deploy MongoDB
@@ -12,4 +12,4 @@ title: Deploy MongoDB
 durationInMinutes: 10
 interactive: bash
 content: |
-  [!include[](includes/04-deploy-mongodb.md)]
+  [!include[](includes/05-deploy-mongodb.md)]
