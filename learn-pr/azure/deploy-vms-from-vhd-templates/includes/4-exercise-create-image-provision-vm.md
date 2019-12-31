@@ -21,19 +21,18 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
 1. Run the following command to install IIS and set up a default webpage.
 
     ```azurecli
-        az vm extension set \
+    az vm extension set \
         --name CustomScriptExtension \
-        --version 1.9.4 \
         --vm-name MyWindowsVM \
         --resource-group <rgn>[Sandbox resource group name]</rgn> \
         --publisher Microsoft.Compute \
-        --settings '{"commandToExecute":"powershell Add-WindowsFeature Web-Server,Web-Asp-Net45,NET-Framework-Features; powershell Invoke-WebRequest -Uri https://raw.githubusercontent.com/MicrosoftDocs/mslearn-deploy-vms-from-vhd-templates/master/Default.aspx -OutFile \"C:\\inetpub\\wwwroot\\Default.aspx\""}'
+        --settings '{"commandToExecute":"powershell Add-WindowsFeature Web-Server; powershell Add-Content -Path \"C:\\inetpub\\wwwroot\\Default.htm\" -Value $($env:computername)"}'
     ```
 
 1. Run the following command to open port 80 to the web server.
 
     ```azurecli
-        az vm open-port \
+    az vm open-port \
         --name MyWindowsVM \
         --resource-group <rgn>[Sandbox resource group name]</rgn> \
         --port 80
@@ -73,11 +72,10 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
 
     az vm extension set \
         --publisher Microsoft.Azure.Extensions \
-        --version 2.0 \
         --name CustomScript \
         --vm-name MyUbuntuVM \
         --resource-group <rgn>[Sandbox resource group name]</rgn> \
-        --settings '{"commandToExecute":"apt-get -y update && apt-get -y install nginx && hostname > /var/www/html/index.html && sudo crontab -l | { cat; echo \"@reboot hostname > /var/www/html/index.html\"; } | sudo crontab -"}'
+        --settings '{"commandToExecute":"apt-get -y update && apt-get -y install nginx && hostname > /var/www/html/index.html"}'
     ```
 
 1. Run the following command to find the public IP address of the new virtual machine.
@@ -257,6 +255,17 @@ az image create \
       --generate-ssh-keys
     ```
 
+1. Run the following command to update the default web page with the server name.
+
+    ```azurecli
+        az vm extension set \
+        --publisher Microsoft.Azure.Extensions \
+        --name CustomScript \
+        --vm-name MyUbuntuVM \
+        --resource-group <rgn>[Sandbox resource group name]</rgn> \
+        --settings '{"commandToExecute":"hostname > /var/www/html/index.html"}'
+    ```
+
 1. Run the following command to open port 80 on the new virtual machine.
 
     ```azurecli
@@ -290,6 +299,17 @@ az image create \
       --name MyVMFromImage \
       --image MyVMImage \
       --admin-username azureuser
+    ```
+
+1. Run the following command update the default web page with the server name.
+
+    ```azurecli
+    az vm extension set \
+        --name CustomScriptExtension \
+        --vm-name MyWindowsVM \
+        --resource-group <rgn>[Sandbox resource group name]</rgn> \
+        --publisher Microsoft.Compute \
+        --settings '{"commandToExecute":"powershell Add-Content -Path \"C:\\inetpub\\wwwroot\\Default.htm\" -Value $($env:computername)"}'
     ```
 
 1. Run the following command to open port 80 on the new virtual machine.
