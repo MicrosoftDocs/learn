@@ -40,7 +40,7 @@ At the end of each *sprint*, or work iteration, your team might want to hold a r
 
 To complete the work item:
 
-1. In Azure DevOps, navigate to **Boards** and then select **Boards** from the menu.
+1. In Azure DevOps, go to **Boards**, and then select **Boards** from the menu.
 1. Move the **Automate quality tests** work item from the **Doing** column to the **Done** column.
 
     ![Azure Boards, showing the card in the Done column](../media/7-azure-boards-wi3-done.png)
@@ -59,7 +59,7 @@ This option disables the pipeline so that it doesn't process further build reque
 
 To disable the pipeline:
 
-1. In Azure Pipelines, navigate to your pipeline.
+1. In Azure Pipelines, go to your pipeline.
 1. Select the **Edit** button.
 
     ![Azure Pipelines, showing the location of the Edit button](../../shared/media/azure-pipelines-edit-button.png)
@@ -76,7 +76,7 @@ This option deletes your Azure DevOps project, including the content on Azure Bo
 
 To delete the project:
 
-1. In Azure DevOps, navigate to your project. Earlier, we recommended that you name this project **Space Game - web - Functional tests**.
+1. In Azure DevOps, go to your project. Earlier, we recommended that you name this project **Space Game - web - Functional tests**.
 1. Select the gear icon next to the project name.
 
     The icon might not appear until you move your mouse over that area.
@@ -85,6 +85,6 @@ To delete the project:
 1. At the bottom of the **Project details** area, select **Delete**.
 
     ![Azure DevOps, showing the Delete button to delete your project](../../shared/media/azure-devops-delete-project.png)
-1. In the window that appears, enter the project name and select **Delete** again.
+1. In the window that appears, enter the project name, and then select **Delete** again.
 
     Your project is now deleted.
