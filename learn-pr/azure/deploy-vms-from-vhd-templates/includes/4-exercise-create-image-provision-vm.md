@@ -250,6 +250,7 @@ az image create \
     az vm create \
       --resource-group <rgn>[Sandbox resource group name]</rgn> \
       --name MyVMFromImage \
+      --computer-name MyVMFromImage \
       --image MyVMImage \
       --admin-username azureuser \
       --generate-ssh-keys
@@ -297,6 +298,7 @@ az image create \
     az vm create \
       --resource-group <rgn>[Sandbox resource group name]</rgn> \
       --name MyVMFromImage \
+      --computer-name MyVMFromImage \
       --image MyVMImage \
       --admin-username azureuser
     ```
