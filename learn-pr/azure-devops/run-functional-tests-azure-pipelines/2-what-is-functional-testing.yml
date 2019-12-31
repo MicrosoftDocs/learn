@@ -47,4 +47,4 @@ quiz:
       explanation: "Usability testing is typically performed by humans to validate that the software is intuitive and meets the user's needs."
     - content: "Smoke testing"
       isCorrect: false
-      explanation: "Although you might occasionally smoke-test changes manually before you deploy, smoke tests are usually an automated process. If your smoke tests fail, then you know that no further testing is required."
+      explanation: "Although you might occasionally smoke-test changes manually before you deploy, smoke tests are usually an automated process. If your smoke tests fail, you know that no further testing is required."
