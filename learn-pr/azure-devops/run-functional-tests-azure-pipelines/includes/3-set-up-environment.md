@@ -33,7 +33,7 @@ Run a template that sets up everything in your Azure DevOps organization.
 > [!div class="nextstepaction"]
 > [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?name=run-functional-tests&azure-portal=true)
 
-From the Azure DevOps Demo Generator site, follow these steps to run the template.
+From the Azure DevOps Demo Generator site, follow these steps to run the template:
 
 1. Select **Sign In** and accept the usage terms.
 1. On the **Create New Project** page, select your Azure DevOps organization. Then enter a project name, such as *Space Game - web - Functional tests*.
@@ -68,7 +68,7 @@ Here you move the third item, **Automate quality tests**, to the **Doing** colum
 
 To set up the work item:
 
-1. From Azure DevOps, navigate to **Boards** and then select **Boards** from the menu.
+1. From Azure DevOps, go to **Boards**, and then select **Boards** from the menu.
 
     ![Azure DevOps, showing the Boards menu](../../shared/media/azure-devops-boards-menu.png)
 
