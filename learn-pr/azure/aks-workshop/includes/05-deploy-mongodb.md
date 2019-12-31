@@ -94,3 +94,14 @@ Charts are stored in Helm chart repositories. The official chart repository is m
     ====
     MONGOCONNECTION:  98 bytes
     ```
+
+## Summary
+
+By now, you should also have an Azure Kubernetes Service cluster created, and configured with a namespace called **ratingsapp**. In that namespace, there should be Kubernetes resources corresponding to the MongoDB deployed.
+
+- **Deployment/ratings-mongodb**. A deployment represents one or more identical pods, managed by the Kubernetes Deployment Controller. This deployment defines the number of replicas (pods) to create for MongoDB and the Kubernetes Scheduler ensures that if pods or nodes encounter problems, additional pods are scheduled on healthy nodes.
+- **Pod/ratings-mongodb-{random-string}**. Kubernetes uses pods to run an instance of MongoDB.
+- **Service/ratings-mongodb**. To simplify the network configuration, Kubernetes uses Services to logically group a set of pods together and provide network connectivity. Connectivity to the MongoDB is exposed via this service through the DNS name **ratings-mongodb.ratingsapp.svc.cluster.local**.
+- **Secret/mongosecret**. A Kubernetes Secret is used to inject sensitive data into pods, such as access credentials or keys. This secret holds the MongoDB connection details, and will be used in the next unit to configure the API to communicate with MongoDB.
+
+![Deployed resources on the Azure Kubernetes Service cluster](../media/arch-1.png)
