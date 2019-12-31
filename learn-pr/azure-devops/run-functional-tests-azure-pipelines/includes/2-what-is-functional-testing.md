@@ -132,7 +132,7 @@ Andy looks at Amita.
 
 **Amita:** Sure. It's better if one of us has some experience.
 
-## How do I run functional test in the pipeline?
+## How do I run functional tests in the pipeline?
 
 In Azure Pipelines, you run functional tests just like you run any other process or test. Ask yourself:
 
