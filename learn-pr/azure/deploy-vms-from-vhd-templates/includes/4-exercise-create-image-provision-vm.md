@@ -261,7 +261,7 @@ az image create \
         az vm extension set \
         --publisher Microsoft.Azure.Extensions \
         --name CustomScript \
-        --vm-name MyUbuntuVM \
+        --vm-name MyVMFromImage \
         --resource-group <rgn>[Sandbox resource group name]</rgn> \
         --settings '{"commandToExecute":"hostname > /var/www/html/index.html"}'
     ```
@@ -306,7 +306,7 @@ az image create \
     ```azurecli
     az vm extension set \
         --name CustomScriptExtension \
-        --vm-name MyWindowsVM \
+        --vm-name MyVMFromImage \
         --resource-group <rgn>[Sandbox resource group name]</rgn> \
         --publisher Microsoft.Compute \
         --settings '{"commandToExecute":"powershell Add-Content -Path \"C:\\inetpub\\wwwroot\\Default.htm\" -Value $($env:computername)"}'
