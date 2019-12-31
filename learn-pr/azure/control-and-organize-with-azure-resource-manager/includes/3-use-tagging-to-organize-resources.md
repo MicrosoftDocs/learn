@@ -56,7 +56,7 @@ Let's apply some tags to the resources you created. Recall that we created a res
 
 1. Select **Add filter**. In the **Tags**, select **Environment**, then select **Training**. You should see only your two VNets displayed, since we tagged those resources with the **Environment:Training** tag.
 
-    ![Image of all resources filtered on the Training tag](../media/3-all-resources-tag-filter.PNG)
+    ![Image of all resources filtered on the Training tag](../media/3-tag-filter.PNG)
 
 1. We can further filter these resources by additionally filtering on the **Department:Finance** or **Department:Marketing** tags.
 
