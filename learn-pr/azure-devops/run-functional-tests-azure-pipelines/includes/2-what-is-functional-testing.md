@@ -168,7 +168,7 @@ Our existing _Test_ stage includes one job. That job deploys the website to App 
 
 **Amita:** Great! See you then.
 
-## Creating a functional test plan
+## Create a functional test plan
 
 We've just seen the team decide on how they'll implement their first functional tests. If your team is just starting to incorporate functional tests into their pipeline (or even if you're already doing that), remember that you always need a plan.
 
