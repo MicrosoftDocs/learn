@@ -21,19 +21,18 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
 1. Run the following command to install IIS and set up a default webpage.
 
     ```azurecli
-        az vm extension set \
+    az vm extension set \
         --name CustomScriptExtension \
-        --version 1.9.4 \
         --vm-name MyWindowsVM \
         --resource-group <rgn>[Sandbox resource group name]</rgn> \
         --publisher Microsoft.Compute \
-        --settings '{"commandToExecute":"powershell Add-WindowsFeature Web-Server; powershell Add-Content -Path \"C:\\inetpub\\wwwroot\\Default.htm\" -Value $($env:computername)"}'
+        --settings '{"commandToExecute":"powershell Add-WindowsFeature Web-Server; Add-Content -Path \"C:\\inetpub\\wwwroot\\Default.htm\" -Value $(hostname)"}'
     ```
 
 1. Run the following command to open port 80 to the web server.
 
     ```azurecli
-        az vm open-port \
+    az vm open-port \
         --name MyWindowsVM \
         --resource-group <rgn>[Sandbox resource group name]</rgn> \
         --port 80
@@ -73,7 +72,6 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
 
     az vm extension set \
         --publisher Microsoft.Azure.Extensions \
-        --version 2.0 \
         --name CustomScript \
         --vm-name MyUbuntuVM \
         --resource-group <rgn>[Sandbox resource group name]</rgn> \
@@ -252,9 +250,21 @@ az image create \
     az vm create \
       --resource-group <rgn>[Sandbox resource group name]</rgn> \
       --name MyVMFromImage \
+      --computer-name MyVMFromImage \
       --image MyVMImage \
       --admin-username azureuser \
       --generate-ssh-keys
+    ```
+
+1. Run the following command to update the default web page with the server name.
+
+    ```azurecli
+        az vm extension set \
+        --publisher Microsoft.Azure.Extensions \
+        --name CustomScript \
+        --vm-name MyVMFromImage \
+        --resource-group <rgn>[Sandbox resource group name]</rgn> \
+        --settings '{"commandToExecute":"hostname > /var/www/html/index.html"}'
     ```
 
 1. Run the following command to open port 80 on the new virtual machine.
@@ -288,8 +298,20 @@ az image create \
     az vm create \
       --resource-group <rgn>[Sandbox resource group name]</rgn> \
       --name MyVMFromImage \
+      --computer-name MyVMFromImage \
       --image MyVMImage \
       --admin-username azureuser
+    ```
+
+1. Run the following command update the default web page with the server name.
+
+    ```azurecli
+    az vm extension set \
+        --name CustomScriptExtension \
+        --vm-name MyVMFromImage \
+        --resource-group <rgn>[Sandbox resource group name]</rgn> \
+        --publisher Microsoft.Compute \
+        --settings '{"commandToExecute":"powershell Clear-Content -Path \"C:\\inetpub\\wwwroot\\Default.htm\"; Add-Content -Path \"C:\\inetpub\\wwwroot\\Default.htm\" -Value $(hostname)"}'
     ```
 
 1. Run the following command to open port 80 on the new virtual machine.
