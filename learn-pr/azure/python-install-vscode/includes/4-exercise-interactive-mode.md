@@ -1,13 +1,19 @@
 Now that Python 3 is installed, let's write one line of Python code to see it working.  This tiny line of code will not win you any awards for software design, but it's the first step all software developers take as they begin their learning journey.
 
-## Using Python's Interactive Mode
+## Using the Python interpretters's Interactive Mode
 
 In this module, you'll learn that there are two workflows to write and execute Python code:
 
-- Using Python's Interactive Mode to write and execute one line of Python code at a time
+- Using the Python interpretter's Interactive Mode to write and execute one line of Python code at a time
 - Writing Python code in a script file, then using command-line tools to execute the contents of the script file
 
 Interactive Mode allows you to experiment with Python without having to perform additional setup, so it's great for learning new ideas.  However, it is limited: once you exit Interactive Mode, your code is gone forever.
+
+![Note]
+Sometimes "interactive mode" is referred to as the "REPL", which is an acronym for "read-eval-print loop".  Many programming languages have a REPL that can be used for this same purpose.
+
+![Important]
+The Python interpretter's Interactive Mode is different from Visual Studio Code's Python Interactive Window which we'll learn about in another module.
 
 ### Step 1 - Launch Python's Interactive Mode
 

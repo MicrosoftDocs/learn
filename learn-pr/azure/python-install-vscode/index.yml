@@ -2,14 +2,14 @@
 uid: learn.languages.python-install-vscode
 metadata:
   title: Setup your Python beginner development environment with Visual Studio Code
-  description: Get started learning Python by istalling and configuring the tools you'll need to build real applications.
+  description: Get started learning Python by installing and configuring the tools you'll need to build real applications.
   ms.date: 11/25/2019
   author: bobtabor-msft
   ms.author: rotabor
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Setup your Python beginner development environment with Visual Studio Code
-summary: Get started learning Python by istalling and configuring the tools you'll need to build real applications.
+summary: Get started learning Python by installing and configuring the tools you'll need to build real applications.
 abstract: |
   In this module, you will:
   - Determine which version of Python installed on your computer (if any)
