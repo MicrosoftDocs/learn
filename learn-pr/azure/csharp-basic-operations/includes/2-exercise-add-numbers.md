@@ -45,7 +45,7 @@ In this case, the C# compiler understands that we want to use the `+` symbol to 
 
 ### Step 3: Attempt a more advanced case of adding numbers and concatenating strings.
 
-Modify the code ion the .NET Editor to match the following code:
+Modify the code in the .NET Editor to match the following code:
 
 ```csharp-interactive
 string firstName = "Bob";
