@@ -1,10 +1,11 @@
-In this unit we will apply what we learned in the previous units to configure a firmware update on several groups of devices, illustrating a real life scenario. While we used the Azure Portal to setup a simple firmware update configuration for a single device, will use the Azure CLI for this unit in order to learn another method to work with Azure IoT Automatic Device Management.
+In this unit we will apply what we learned in the previous units to configure a firmware update on several groups of devices, illustrating a real life scenario.
+To create, manage and monitor Automatic Device Management configurations with Azure IoT Hub, you can use the portal like you did in previous exercises, but in order to integrate the device management operations into your IoT application, dealing with multiple configurations in parallel and automate part of the process, you will want to use a more programmatic method. The IoT extension for the Azure CLI allows you to easily create, update, monitor and delete configurations as you can see in the [documentation](https://docs.microsoft.com/azure/iot-hub/iot-hub-automatic-device-management-cli).
+We want to prepare a firmware update campaign to update all devices installed at 2 of our customers: Lewis and Smith. But as explained in the previous unit, we don't want to not take the risk of disrupting cheesse aging processes for too long and we can't afford a failure of all devices at the same time.
+We will go through the following steps:
 
-## Prepare new configurations using the Azure CLI
-
-Working in the same terminal you used to run the device simulator,
-<TODO>
-
+1. Create new device identities, setup their device twin tag and start simulators
+1. Create a first new Automatic Device Management configuration for the first batch of devices.
+1. Monitor the deployment of the new configuration, then, when successful, create the second configuration.
 
 ## Create new device identities and run simulators using the Azure CLI
 
@@ -41,4 +42,10 @@ We will create a script file that we will execute from the shell in order to cre
 1. In the terminal, run the script **createdevices.bat**
 
 You should see a series of commands passing by creating the device IDs in the IoT Hub, assigning device twin tags and starting simulators for 10 separate devices. Half of the devices are set with a tag indicating they have been installed at customer Smith, while the rest has a tag indicating they are at Lewis'.
+
+## Create new Automatic Device Management configurations using the Azure CLI
+
+Let's go through the following 
+Working in the same terminal you used to run the device simulator,
+<TODO>
 
