@@ -50,7 +50,7 @@ In this step, you'll use Azure CLI commands to create a php-based web app by usi
 
 In this step, you'll finalize the deployment of your web app by editing a configuration file. You'll then verify that the app works.
 
-1. In the Azure portal, select **App Services** in the left navigation pane.
+1. On the Azure portal menu, select **App Services**.
 1. In the **App Services** list, select **contosorentals\<number\>**. In the **Overview** section, select **Click to copy** to the right of the URL string.
 1. In the **Development Tools** section, select **App Service Editor (Preview)**, and then, in the **App Service Editor (Preview)** pane, select **Go**. 
 1. In the Azure App Service Editor, in the file list, expand **includes**, select **config.php**, and then, in line 10, paste the copied URL string to replace `app-url-here`. (Don't remove the quotation marks.)
