@@ -1,8 +1,8 @@
 The [ratings API](https://github.com/MicrosoftDocs/mslearn-aks-workshop-ratings-api) is a Node.js application written using the Express framework. It stores and retrieves items and their ratings in a MongoDB.
 
-In the [Create a private, highly available container registry](03-deploy-acr.md) unit, you used Azure Container Registry to build a Docker image of the API and store it in a repository.
+In the [Create a private, highly available container registry](03-deploy-acr) unit, you used Azure Container Registry to build a Docker image of the API and store it in a repository.
 
-In this exercise, you're going to deploy that Docker image of the API to the Azure Kubernetes Service (AKS) by creating a Kubernetes [deployment](https://docs.microsoft.com/en-us/azure/aks/concepts-clusters-workloads#deployments-and-yaml-manifests), and expose it through a load balancer by creating a Kubernetes [service](https://docs.microsoft.com/en-us/azure/aks/concepts-network#services). Additionally, you're going to configure the API to connect to the MongoDB created in the [Deploy MongoDB](05-deploy-mongodb.md) unit by attaching the Kubernetes [secret](https://docs.microsoft.com/en-us/azure/aks/concepts-security#kubernetes-secrets).
+In this exercise, you're going to deploy that Docker image of the API to the Azure Kubernetes Service (AKS) by creating a Kubernetes [deployment](https://docs.microsoft.com/en-us/azure/aks/concepts-clusters-workloads#deployments-and-yaml-manifests), and exposing it through a load balancer by creating a Kubernetes [service](https://docs.microsoft.com/en-us/azure/aks/concepts-network#services). Additionally, you're going to configure the API to connect to the MongoDB created in the [Deploy MongoDB](05-deploy-mongodb) unit by attaching the Kubernetes [secret](https://docs.microsoft.com/en-us/azure/aks/concepts-security#kubernetes-secrets).
 
 [!include[](../../../includes/azure-cloudshell-editor.md)]
 
@@ -22,14 +22,14 @@ In this exercise, you're going to deploy that Docker image of the API to the Azu
 
     **Replicas and image**
 
-    You will create a deployment with 2 replicas running the image you pushed in the [Create a private, highly available container registry](03-deploy-acr.md) unit, for example  **`acr4229.azurecr.io/ratings-api:v1`**. The container listens to port **3000**. The deployment and the pods are going to be labeled with **app=ratings-api**.
+    You will create a deployment with 2 replicas running the image you pushed in the [Create a private, highly available container registry](03-deploy-acr) unit, for example  **`acr4229.azurecr.io/ratings-api:v1`**. The container listens to port **3000**. The deployment and the pods are going to be labeled with **app=ratings-api**.
 
     > [!NOTE]
     > Make sure to update the `image` value with your own image name and Azure Container Registry repository name.
 
     **Environment variables and secrets**
 
-    The ratings API expects to find the connection details to the MongoDB in an environment variable named **MONGODB_URI** . By using ``valueFrom`` and ``secretRef``, you can reference values stored in the Kubernetes secret **mongosecret** created when you [deployed MongoDB.](05-deploy-mongodb.md).
+    The ratings API expects to find the connection details to the MongoDB in an environment variable named **MONGODB_URI** . By using ``valueFrom`` and ``secretRef``, you can reference values stored in the Kubernetes secret **mongosecret** created when you [deployed MongoDB.](05-deploy-mongodb).
 
     **Resource requests and limits**
 
@@ -102,7 +102,7 @@ In this exercise, you're going to deploy that Docker image of the API to the Azu
 1. Watch the pods rolling out. You're querying for pods in the **ratingsapp** namespace which are labeled with **app=ratings-api**.
 
     ```azurecli
-    kubectl get pods --namespace ratingsapp --label app=ratings-api -w
+    kubectl get pods --namespace ratingsapp -l app=ratings-api -w
     ```
 
     In a few seconds, you should see the pods transition to the `Running` state. You can use `CTRL+C` to stop watching.
