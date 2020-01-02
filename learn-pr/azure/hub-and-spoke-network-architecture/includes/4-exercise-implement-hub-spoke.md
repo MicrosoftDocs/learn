@@ -119,9 +119,9 @@ Now you associate the network security group to the virtual network.
 
 1. Select **OK** to associate the network security group.
 
-## Configure the network security group rule to stop inbound internet traffic
+## Configure the network security group rule to stop inbound HTTP traffic
 
-You have a security requirement to meet for the HR application to be hosted on HRappVnet. There shouldn't be any inbound internet traffic from the spoke, because only internal employees need access. Configure the network security group rule to meet this requirement.
+You have a security requirement to meet for the HR application to be hosted on HRappVnet. There shouldn't be any inbound HTTP traffic from the spoke, because only internal employees need access. Configure the network security group rule to meet this requirement.
 
 1. On the **HRNsg** pane, select **Inbound security rules** in the menu.
 
@@ -140,6 +140,6 @@ You have a security requirement to meet for the HR application to be hosted on H
 
 1. Select **Add** to add the rule.
 
-You've now blocked inbound internet access from the spoke on port 80.
+You've now blocked inbound HTTP access from the spoke on port 80 and 443.
 
-In this scenario, you created a spoke Azure virtual network, and then peered it with an existing hub virtual network. You then secured the traffic from this spoke by blocking inbound internet access on port 80, while ensuring it can connect via the hub.
+In this scenario, you created a spoke Azure virtual network, and then peered it with an existing hub virtual network. You then secured the traffic from this spoke by blocking inbound access on port 80 and 443, while ensuring it can connect via the hub.
