@@ -1,62 +1,102 @@
-Your company plans to migrate the majority of its on-premises resources to Azure. A small data center will remain on-premises and will need to be integrated into Azure network. The architectural model needs to consider Azure network connectivity for several satellite offices. You want to leverage a hybrid network architecture, which grants access to both your on-premises and cloud based resources.
+Your company plans to migrate the majority of its on-premises resources to Azure. However, a small datacenter must remain on-premises to be integrated into the Azure network. The architectural model needs to consider Azure network connectivity for several satellite offices. You want to use a hybrid network architecture that grants access to both your on-premises and cloud-based resources.
 
-You're going to produce a network integration plan for Azure that can be used for the migration. Which will include a selection of the best hybrid network options available in Azure that meet the organization's requirements for hybrid connectivity.
+To handle the migration, you'll produce a network integration plan for Azure that includes a selection of the best hybrid network options available in Azure that meet the organization's requirements for hybrid connectivity.
 
-In this unit, you'll explore on-premises connectivity in the Azure platform, see an overview of Azure Virtual Networks, and how to use VPN Gateways to secure traffic to an on-premises network.
+In this unit, you'll explore on-premises connectivity in the Azure platform. You'll also get an overview of Azure Virtual Network, and see how to use VPN Gateways to secure traffic to an on-premises network.
 
-## About Azure Virtual Networks
+## About Azure Virtual Network
 
-The Azure virtual network (VNet) is a service with a specific set of tools and resources for building a cloud-based network architecture for your organization. Azure virtual networks are a secure virtual communication channel for all permitted Azure resources within your subscription. With an Azure virtual network, You'll:
+The Microsoft Azure Virtual Network service has a specific set of tools and resources for building a cloud-based network architecture for your organization. Azure virtual networks provide a secure virtual communication channel for all permitted Azure resources within your subscription.
 
-- connect virtual machines to the internet,
-- provide secure communications between Azure resources hosted in different datacenters and regions,
-- isolate and manage Azure resources,
-- connect to on-premises computers, and
-- manage network traffic.
+With an Azure virtual network, You'll:
 
-All Azure resources within a virtual network, by default, have outbound connectivity to the internet. External inbound communication is supplied via a public-facing endpoint, and a private endpoint is used for internal resources.
+- Connect virtual machines to the internet
+- Provide secure communications between Azure resources hosted in different datacenters and regions
+- Isolate and manage Azure resources
+- Connect to on-premises computers
+- Manage network traffic
 
-While a virtual network is composed of many elements, including virtual machines, nics, load balancers, and public IP addresses. There are two features of any virtual network that should be mentioned. **virtual network Subnets (subnets)** and **Network Security Groups (NSGs)**.
+By default, all Azure resources within a virtual network have outbound connectivity to the internet. External inbound communication must come through a public-facing endpoint. All internal resources use a private endpoint to access the virtual network.
+
+A virtual network is composed of many elements including, but not limited to, virtual machines, NICs, load balancers, and public IP addresses.  Two essential features of any virtual network are **virtual network subnets (subnets)** and **Network Security Groups (NSGs)**.
 
   ![Image showing Azure virtual network component architecture](../media/2-azure-vnet-vm-arch.png)
 
-- **virtual network Subnet** - Let you segment your virtual network address space into usable subnetworks. As you would find in an on-premises network, virtual network subnets are used to organize your network usage and access.
-- **Network Security Groups** - Protect your subnets by filtering all traffic flow between Azure Resources.
+- **Virtual network subnets** let you segment your virtual network address space into usable subnetworks. As you would find in an on-premises network, virtual network subnets can organize your network usage and access
+- **Network Security Groups** protect your subnets by filtering all traffic flow between Azure resources
+
+## Parts of an IP address
+
+An IP address is made up of two parts: the network and the host. An IP address is typically expressed in the dotted-decimal notation; for example, 192.168.123.132.  In reality, this number is only the human-readable version of the 32-bit binary number: 11000000.10101000.01111011.10000100.
+The two parts of this IP address are:
+
+- Network: 192.168.123
+- Host: 132
+
+The network prefix can be any combination of 8, 16, or 24 bits.  The host prefix can be any combination 24, 16, or 8 bits respectively, giving a total of 32 bits.
+
+## Subnet masks
+
+Subnet masks are an essential part of any TCP/IP network.  The subnet mask determines if the host is on a remote network or the local subnet. 
+While subnet masks use the dotted-decimal format, similar to an IP address, a typical subnet mask of 255.255.255.0 becomes the 32-bit binary value 11111111.11111111.11111111.0000000.
+
+### Classless Inter-Domain Routing (CIDR)
+
+When you allocate a range of IP addresses, the subnet mask works to the nearest bit boundary or dot.  In this scenario, the smallest allocation was 256 addresses (8-bit host), and the next smallest was 65,536  addresses (16-bit host).  
+The CIDR notation, developed to allow variable-length subnet masks, allows for more accuracy when assigning network size.  Rather than specify a hard subnet mask, you now specify the number of bytes used for the network address.  You'd represent the CIDR notation as *IP-Address/Network byte size*.
+For example, 192.168.1.168/24 is the same as using a subnet mask of 255.255.255.0, which allows for 256 IP addresses.
+
+Here's a table that gives examples of CIDR and subnets.
+
+| No of network bits | No of host bits | Subnet mask     | CIDR notation |
+| ------------------ | --------------- | --------------- | ------------- |
+| 8                  | 24              | 255.0.0.0       | /8            |
+| 9                  | 23              | 255.128.0.0     | /9            |
+| 12                 | 20              | 255.240.0.0     | /12           |
+| 14                 | 18              | 255.252.0.0     | /14           |
+| 16                 | 16              | 255.255.0.0     | /16           |
+| 17                 | 15              | 255.255.128.0   | /17           |
+| 20                 | 12              | 255.255.240.0   | /20           |
+| 22                 | 10              | 255.255.252.0   | /22           |
+| 24                 | 8               | 255.255.255.0   | /24           |
+| 25                 | 7               | 255.255.255.128 | /25           |
+| 28                 | 4               | 255.255.255.240 | /28           |
+| 30                 | 2               | 255.255.255.252 | /30           |
 
 ## Routing traffic on an Azure virtual network
 
-Outbound traffic from a subnet is routed based on the destination IP address. A routing table defines how the traffic is routed and what happens next. Since a destination IP address could exist across multiple routing table prefix definitions, for example, 10.0.0.0/16 and 10.0.0.0/24, it uses an algorithm to find longest prefix match. So traffic heading for a 10.0.0.6 address would resolve to the 10.0.0.0/24 prefix and would be routed accordingly.
+Outbound traffic from a subnet is routed, based on the destination IP address. A routing table defines how the traffic routes and what happens next. A destination IP address can exist across multiple routing table prefix definitions; for example, 10.0.0.0/16 and 10.0.0.0/24. The router uses a sophisticated algorithm to find the longest prefix match. Traffic heading for a 10.0.0.6 address would resolve to the 10.0.0.0/24 prefix and route accordingly.
 
-There are two principle routing tables: System and Custom.
+There are two principle routing tables: system and custom.
 
 ### System routing tables
 
-By default, Azure will automatically create a set of default routing tables for the virtual network, and for each subnet mask within the virtual network. These system routes are fixed and cannot be overridden or deleted. However, you can override these default settings using a custom routing table.
+Azure automatically creates a set of default routing tables for the virtual network and each subnet mask within the virtual network. These system routes are fixed and can't be overridden or deleted. However, you can override the default settings using a custom routing table.
 
 A typical default routing table might look like this:
 
-| Source | Address prefixes | Next Hop Type |
+| Source | Address prefixes | Next hop type |
 | ---- |---|---|
-| Default | Unique to the virtual network | Virtual Network |
+| Default | Unique to the virtual network | Virtual network |
 | Default | 0.0.0.0/0 | Internet |
 | Default | 10.0.0.0/8 | None |
 | Default | 172.16.0.0/12 | None |
 | Default | 192.168.0.0/16 | None |
 | Default | 100.64.0.0/10 | None |
 
-A routing table is made up of a source, an address prefix, and a next hope type. All traffic leaving the subnet uses the routing table to find out where it should go next, what the next hop in its journey will be.
+A routing table is made up of a source, an address prefix, and a next hop type. All traffic leaving the subnet uses the routing table to find out where it should go next; effectively, looking for the next hop in its journey.
 
-There are three principal types of next hop. A next hop defines what happens to the traffic flow next, based on the prefix. There are three types of next hop:
+A next hop defines what happens to the traffic flow next, based on the prefix. There are three types of next hop:
 
-- **Virtual network**, traffic is routed according to the IP address within the virtual network.
-- **Internet**, directs the traffic out to the internet.
-- **None**, the traffic is dropped.
+- **Virtual network**: traffic is routed according to the IP address within the virtual network
+- **Internet**: routes the traffic to the internet
+- **None**: drops the traffic
 
 ### Custom routing tables
 
-As well as the system-defined routing tables, you can also create custom routing tables. These user-defined routing tables can override the default system table. There are some limitations on the number of routing items you can have in a custom table.
+Apart from system-defined routing tables, you can also create custom routing tables. These user-defined routing tables override the default system table. There are limitations on the number of routing items you can have in a custom table.
 
-| Resource | Default/Maximum |
+| Resource | Default/maximum |
 | ---- | ---- |
 | Virtual networks | 1,000 |
 | Subnets per virtual network | 3,000 |
@@ -65,87 +105,104 @@ As well as the system-defined routing tables, you can also create custom routing
 
 The table above shows a few of the many limitations that apply to virtual networks.
 
+> [!NOTE]
+> The limits may have changed. Please check the Microsoft Docs website for the current virtual networking limits.
+
 Much like the system routing table, custom routing tables also have a next hop type. These routings differ from the system routing table, and there are a few more options.
 
-- **Virtual appliance**, is usually a VM that runs a specific network application, for instance, a firewall.
-- **Virtual network gateway**, used when you want to send traffic to a virtual network gateway. A virtual network gateway must be of a type VPN. It cannot be of type ExpressRoute, which requires setting a BGP.
-- **None**, which will drop the traffic rather than forward it.
-- **Virtual Network**, lets you override a default system routing.
-- **Internet**, enables you to specify that any prefix will be forwarded to the internet. 
-
-> [!NOTE]
-> The limits were recently increased and may have changed. So please check the Microsoft docs website for the current virtual networking limits.
+- **Virtual appliance**: is usually a virtual machine that runs a specific network application, such as a firewall
+- **Virtual network gateway**: is used when you want to send traffic to a virtual network gateway. A virtual network gateway must be of a type VPN. It can't be of a type ExpressRoute, which requires setting a BGP
+- **None**: drops the traffic rather than forwarding it
+- **Virtual Network**: lets you override a default system routing
+- **Internet**: enables you to specify that any prefix forwards to the internet
 
 ## Connecting Azure virtual networks
 
-Virtual networks in Azure can be connected to each other via a VPN gateway, ExpressRoute, or directly using a method known as peering. Virtual networks can peer across subscriptions and Azure regions. Once peered, resources in these networks communicate with each other as if they are in the same network. The traffic gets routed between resources in a peered virtual network using only private IP addresses. Which is achieved by routing traffic through the Azure network, and keeping the connection private as part of the Azure backbone network. The backbone network provides low latency and high-bandwidth network connections.
+There are many different ways to connect your virtual networks.  You can use a VPN gateway, ExpressRoute, or directly use the peering method.
 
-## VPN Gateways on Azure
+### VPN Gateway on Azure
 
-When working towards integrating your on-premises network with Azure, there needs to be a bridge between them. VPN gateways are one of the services in Azure that provide this functionality. A VPN gateway is a particular type of gateway that can send encrypted traffic between the two networks. Gateways support multiple connections which route the VPN tunnels using the available bandwidth, although a virtual network can only have one gateway assigned. It's also possible to use a VPN gateway for virtual network-to-virtual network connections in Azure.
+When working towards integrating your on-premises network with Azure, there needs to be a bridge between them. VPN Gateway is an Azure service that provides this functionality. A VPN gateway can send encrypted traffic between the two networks. VPN gateways support multiple connections that enable them to route VPN tunnels using any available bandwidth. A virtual network can only have one gateway assigned. VPN gateways make connections possible from virtual network to virtual network in Azure.
 
-A VPN gateway is made up of several virtual machines (two or more) that get deployed to specific subnets that you create when provisioning the virtual network gateway, this subnet is known as the gateway subnet. The VMs get default configuration properties applied for routing and gateway services explicit to the provisioned gateway, these VMs can't be directly configured.
+Implementing a VPN gateway requires two or more virtual machines deployed to the subnet you create when provisioning the virtual network. In this instance, the subnet is also known as the gateway subnet. Each virtual machine is assigned a default configuration for routing and gateway services, explicit to the provisioned gateway. You can configure these virtual machines directly.
 
-Authentication between the on-premises VPN device and the Azure VPN gateway uses a secret ASCII string up to 128 characters.
+When you create a gateway, several topologies are available. These topologies, also known as gateway types, determine what's configured and the expected connection type.
 
-When creating a gateway, there are several topologies available, known as the gateway type. These determine what will be configured and what the expected connection type will be:
+#### Site-to-site
 
-- **Site-to-Site** connections are used for cross-premises and hybrid network configurations. This connection topology requires an on-premises VPN device to have a publicly accessible IP address, and it must not be located behind a NAT. The connection uses a secret, an ASCII string up to 128 characters, to authenticate between the gateway and the vpn device.
+You use a site-to-site connection for cross-premises and hybrid-network configurations. This connection topology requires an on-premises VPN device to have a publicly accessible IP address, and must not be behind a NAT. The connection uses a secret ASCII string of up to 128 characters, to authenticate between the gateway and the VPN device.
 
-- **Multi-Site** connections are similar to site-to-site but have a slight variation. Multi-site supports more than one vpn connection to on-premises vpn devices. It's designed for multiple on-premises sites instead of having numerous gateways. This connection topology requires a RouteBased VPN known as the dynamic gateway. It's important to note that all connections route through and share all the available bandwidth.
+#### Multi-site
 
-- **Point-to-Site** connections are used for connecting from an individual client machine. This connection topology, once provisioned, gets established by a client computer starting the connection and is designed to connect remote locations. The client computer must be authenticated either through Azure AD or by using Azure Certificate Authentication. This model is typically used from home working or in the instance that only a few clients need to connect to the virtual network in Azure.
+A multi-site connection is similar to site-to-site but has a slight variation. Multi-site supports multiple VPN connections to your on-premises VPN devices. This connection topology requires a RouteBased VPN known as a dynamic gateway. It's important to note that, with a multi-site configuration, all connections route through and share all available bandwidth.
 
-- **VNet-to-VNet** connections are used to connect between Azure virtual networks. This connection topology, unlike the others, doesn't require a public IP or VPN device. It can also be used in a multi-site configuration to establish combined cross-premises connections with inter-virtual network connectivity.
+#### Point-to-site
 
-- **ExpressRoute** creates a direct connection between your on-premises network and the Azure virtual network that does not use the internet. You can use it to seamlessly extend your local network across to the Azure virtual network space. The ExpressRoute service is offered by many third-party connectivity providers, and there are three different ExpressRoute connection types:
-  - CloudExchange Colocation
-  - Point-to-point Ethernet Connection
-  - Any-to-Any (IPVPN) Connection
+A point-to-site connection is suited to a remote individual client device that connects to your network. The client device must be authenticated either through Azure Active Directory or by using Azure Certificate Authentication. This model suits home working scenarios.
 
-   ![Image showing an ExpressRoute connection](../media/2-ExpressRoute-connection.png)
+#### VNet-to-VNet
+
+A virtual network to virtual network connection is used to create connections between multiple Azure virtual networks. This connection topology, unlike the others, doesn't require a public IP or VPN device. It can also be used in a multi-site configuration to establish combined cross-premises connections with inter-virtual network connectivity.
+
+### ExpressRoute
+
+ExpressRoute creates a direct connection between your on-premises network and the Azure virtual network that doesn't use the internet. You use ExpressRoute to seamlessly extend your local network across to the Azure virtual network space. The ExpressRoute service is offered by many third-party connectivity providers. There are three different ExpressRoute connection types:
+
+- CloudExchange Colocation
+- Point-to-point Ethernet Connection
+- Any-to-Any (IPVPN) Connection
+
+![Image showing an ExpressRoute connection](../media/2-ExpressRoute-connection.png)
+
+### Peering
+
+Virtual networks can peer across subscriptions and Azure regions. Once peered, resources in these networks communicate with each other as if they're in the same network. The traffic is routed between resources in a peered virtual network using only private IP addresses. Routing is achieved by routing traffic through the Azure network and keeping the connection private as part of the Azure backbone network. The backbone network provides low latency and high-bandwidth network connections.
 
 ## Using Resource Manager for VPN gateway deployment
 
-Setting up a VPN gateway requires the specific configuration and setup of multiple Azure resources. Some of the resources can be configured separately, yet others have dependencies, so the order of configuration is essential.
+Setting up a VPN gateway requires the specific configuration and setup of multiple Azure resources. Some resources can be configured independently, while others have dependencies. The order of configuration is essential.
 
-Resource Manager simplifies the setup and configuration of a VPN gateway and has the following features:
+Azure Resource Manager simplifies the setup and configuration of all your Azure-based resources.  For a VPN gateway, Resource Manager has the following features:
 
-  - Grouping of resources
-  - Improved management of all resources for your solution
-  - Repeatability of your solution when redeploying
-  - Managing resource dependency
+- Grouping of resources
+- Improved management of all resources for your solution
+- Repeatability of your solution when redeploying
+- Managing resource dependency
 
-Finally, the configuration will vary depending on the connectivity option that best suits your solution and should be considered against these factors:
+Configurations may vary depending on the connectivity option that best suits your solution, and should be considered against these factors:
 
-- Azure supported services,
-- Typical bandwidths,
-- Protocols supported,
-- Routing, and
-- Connection resiliency.
+- Azure supported services
+- Typical bandwidths
+- Protocols supported
+- Routing
+- Connection resiliency
 
-You'll learn more about VPN gateway configuration and scenarios later in this module.
+You'll learn more about VPN gateway configurations and scenarios later in this module.
 
-## VPN gateway reference architecture
+## Site-to-site VPN gateway reference architecture
+
+While there are many reference architectures available when designing a hybrid network, by far the most common is the site-to-site configuration. The simplified reference architecture shown below illustrates how you'd connect an on-premises network to your Azure cloud. The internet connection uses an IPsec VPN tunnel.
 
 ![Image showing Azure vpn reference architecture](../media/4-vpnarch.png)
 
-The above image shows a reference architecture for connecting your on-premises network to Azure using a VPN Gateway. The chosen topology in this solution is a Site-to-Site connection, so traffic flows through an IPsec VPN tunnel.
-
 The architecture is composed of several components:
 
-- **The on-premises network**, representing your on-premises network.
-- **Azure Stack**, responsible for sending encrypted traffic to a virtual IP address when using a public connection.
-- **A Virtual Network**, which holds any cloud applications, and any Azure VPN gateway components.
-- **An Azure VPN gateway**, provides the link between the virtual network and the on-premises network. It is composed of these elements:
+- The **on-premises network** that represents your on-premises Active Directory and any data or resources
+- The **gateway** is responsible for sending encrypted traffic to a virtual IP address when using a public connection
+- The **Azure virtual network** holds all your cloud applications and any Azure VPN gateway components
+- An **Azure VPN gateway** provides the encrypted link between the Azure virtual network and your on-premises network. An Azure VPN gateway is composed of these elements:
 
   - Virtual network gateway
   - Local network gateway
   - Connection
   - Gateway subnet
-- **Cloud application**, this is the Azure-hosted application.
-- **Internal load balancer** - situated in the front end, it routes cloud traffic through the app.
+- **Cloud applications** are the ones you have made available through Azure
+- An **internal load balancer**, located in the front end, which routes cloud traffic to the correct cloud-based application or resource
 
-The benefits of using this architecture are that it is easy to configure and maintain. All data and traffic is encrypted between the on-premises gateway and the Azure gateway. This architecture can be scaled and extended to meet your organizations networking needs.
+Some of the benefits of using this architecture are:
 
-The approach isn't applicable in all situations because it uses an existing internet connection as the link between the two gateway points. Bandwidth constraints can cause latency due to reusing the existing infrastructure.
+- The ease of configuration and maintenance
+- Using a VPN gateway ensures that all data and traffic is encrypted between the on-premises gateway and the Azure gateway
+- This architecture can be scaled and extended to meet your organization's networking needs
+
+This architecture isn't applicable in all situations because it uses an existing internet connection as the link between the two gateway points. Bandwidth constraints can cause latency issues due to reusing the existing infrastructure.
