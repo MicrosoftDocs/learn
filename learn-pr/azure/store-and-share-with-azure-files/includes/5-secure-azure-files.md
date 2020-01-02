@@ -52,7 +52,7 @@ The secure transfer option only allows requests to the storage account over a se
 
 The finance company is running their new reporting application on a VM hosted on Azure. That's why they'd like to set up Azure AS DS authentication to access the file shares. It's something they want to do before moving more of their processing into the cloud.
 
-The benefits of Azure AD DSi are that you can manage access with role-based access controls. Files inherit their existing NTFS DACLs.
+The benefits of Azure AD DS are that you can manage access with role-based access controls. Files inherit their existing NTFS DACLs.
 
 The first step to setting up Azure AD DS is to enable Azure AD Domain Services for the tenant and have the VM reside in the same VNET. With these things in place, you'll enable Azure AD DS authentication on the storage account. You can then grant access permissions to a share in the storage account. These permissions can be at the user, group, or service principal level.
 
