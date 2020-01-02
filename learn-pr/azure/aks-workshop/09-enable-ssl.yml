@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Enable SSL/TLS on the frontend Ingress
-durationInMinutes: 10
+durationInMinutes: 15
 interactive: bash
 content: |
   [!include[](includes/09-enable-ssl.md)]

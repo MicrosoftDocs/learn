@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Scale your application to meet demand
-durationInMinutes: 10
+durationInMinutes: 5
 interactive: bash
 content: |
   [!include[](includes/11-scale-application.md)]

@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Create namespace
-durationInMinutes: 10
+durationInMinutes: 5
 interactive: bash
 content: |
   [!include[](includes/04-create-namespace.md)]

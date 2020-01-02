@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Deploy MongoDB
-durationInMinutes: 10
+durationInMinutes: 15
 interactive: bash
 content: |
   [!include[](includes/05-deploy-mongodb.md)]
