@@ -67,7 +67,7 @@ The logs can be stored in an Azure Storage Account, streamed to an Azure Event H
 
 ## Network security with network security groups
 
-Network security groups (NSGs) enforce and control network traffic rules. Access is controlled by permitting or denying communication between workloads in a virtual network. NSGs are rules-based, and evaluate rules by priority. NSGs determine priority by using source, source port, destination, destination port, and protocol, to either allow or deny traffic.
+Network security groups (NSGs) enforce and control network traffic rules. Access is controlled by permitting or denying communication between workloads in a virtual network. NSGs are rules-based, and evaluate traffic using a 5-tuple method. NSGs evaluate traffic using source, source port, destination, destination port, and protocol, to determine if traffic is allowed or denied.
 
 ### Defining security rules
 
