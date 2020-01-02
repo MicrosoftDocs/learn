@@ -214,7 +214,7 @@ Now that the *:::no-loc text="Create.cshtml":::* Razor Page and its *:::no-loc t
 
 1. Open the *:::no-loc text="ContosoPets.Ui/Pages/Products/Index.cshtml":::* Razor Page file and add the `<a>` markup highlighted below:
 
-   [!code-csharp[](../code/7-create-pagemodel.cs?highlight=34)]
+   [!code-cshtml[](../code/7-create-pagemodel.cs?highlight=34)]
 
 1. Save your changes.
 
