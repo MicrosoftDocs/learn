@@ -2,14 +2,14 @@
 uid: learn.react-to-state-changes-using-event-grid.3-exercise-trigger-logic-app
 metadata:
   title: Exercise - Trigger a logic app with Event Grid
-  description: Exercise - Trigger a logic app with Event Grid
+  description: In this exercise, you'll set up a virtual machine, which will trigger the Event Grid.
   ms.date: 04/30/2019
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Exercise - Trigger a logic app with Event Grid
-durationInMinutes: 10
+durationInMinutes: 7
 interactive: bash
 azureSandbox: true
 content: |
