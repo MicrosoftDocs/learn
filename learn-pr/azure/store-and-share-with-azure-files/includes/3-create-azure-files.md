@@ -21,7 +21,7 @@ The full command you'll use is:
 ```azurecli
 az storage account create \
 --name <unique account name> \
---resource-group <rgn>[sandbox Resource Group]</rgn> \
+--resource-group <resource group name> \
 --sku Standard_GRS
 ```
 
