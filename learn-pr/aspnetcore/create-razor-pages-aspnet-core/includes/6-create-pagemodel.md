@@ -4,7 +4,7 @@ In this unit, you'll review the structure of a basic Razor Page *:::no-loc text=
 
 Open the *:::no-loc text="Create.cshtml.cs":::* *:::no-loc text="PageModel":::* class file located in the *:::no-loc text="ContosoPets.Ui/Pages/Products/":::* directory. You may remember, that when you created a new Razor Page called *:::no-loc text="Create":::*, its *:::no-loc text="PageModel":::* class file named *:::no-loc text="Create.cshtml.cs":::* was generated. Examine the contents. It should contain the following C# code:
 
- ```csharp
+```csharp
 namespace Contoso.UI.Pages.Products
 {
     public class CreateModel : PageModel
@@ -218,6 +218,6 @@ Now that the *:::no-loc text="Create.cshtml":::* Razor Page and its *:::no-loc t
 
 1. Save your changes.
 
-The preceding highlighted code uses an *:::no-loc text="Anchor Tag Helper":::* to direct the user to the *:::no-loc text="ContosoPets.Ui/Pages/Products/Create.cshtml":::* Razor Page located in the same directory as the Index page. The *:::no-loc text="Anchor Tag Helper":::* enhances the standard HTML anchor `(<a ... ></a>` tag by adding new attributes, such as the `[asp-page-handler]` attribute used to route to specific page handlers or the `[asp-page]` attribute, as used here, to set an anchor tag's `href` attribute value to a specific page.
+The preceding highlighted code uses an *:::no-loc text="Anchor Tag Helper":::* to direct the user to the *:::no-loc text="ContosoPets.Ui/Pages/Products/Create.cshtml":::* Razor Page located in the same directory as the Index page. The *:::no-loc text="Anchor Tag Helper":::* enhances the standard HTML anchor (`<a ... ></a>`) tag by adding new attributes, such as the `[asp-page-handler]` attribute used to route to specific page handlers or the `[asp-page]` attribute, as used here, to set an anchor tag's `href` attribute value to a specific page.
 
 Next, you will explore the lifecycle of the *:::no-loc text="ContosoPets.UI":::* project's `ProductService` HTTP request logic.
