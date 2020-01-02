@@ -26,10 +26,10 @@ When you run the code, you'll see that the values stored in the first two elemen
 
 ```output
 Clearing 2 ... count: 4
---
---
+-- 
+-- 
+-- B12
 -- A13
--- A11
 ```
 
 ## Empty string versus null
@@ -164,16 +164,16 @@ When you run the code, you should see the following output.
 
 ```output
 Clearing 2 ... count: 4
---
---
+-- 
+-- 
+-- B12
 -- A13
--- A11
 
 Resizing 6 ... count: 6
---
---
+-- 
+-- 
+-- B12
 -- A13
--- A11
 -- C01
 -- C02
 ```
