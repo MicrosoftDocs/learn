@@ -81,9 +81,9 @@ If you do not already have an Azure Maps account, you'll need to create one.
 
 1. Navigate to [Azure Maps](https://azure.microsoft.com/services/azure-maps/?azure-portal=true).
 
-1. Follow the prompts to create a free account. When your account is set up, you'll need the **Subscription Key** for the account. Copy and paste this key into your text document, with a note that it applies to Azure Maps.
+1. Follow the prompts to create a free account. When your account is set up, you'll need the **Primary Key** for the account. You will find this key by selecting **Authentication** in the left-hand menu for your Azure Maps resource. Copy and paste this key into your text document, with a note that it applies to Azure Maps.
 
-1. You can (optionally) verify your Azure Maps subscription key works. Save the following HTML to an .html file. Replace the **subscriptionKey** entry with your own key. Then, load the file into a web browser. Do you see a map of the world?
+1. You can (optionally) verify your Azure Maps key works. Save the following HTML to an .html file. Replace the **&lt;your Azure Maps key&gt;** entry with your own key. Then, load the file into a web browser. Do you see a map of the world? Can you zoom in and out, and scroll the map?
 
 ```html
 <!DOCTYPE html>
@@ -108,7 +108,7 @@ If you do not already have an Azure Maps account, you'll need to create one.
                 //Add your Azure Maps subscription key to the map SDK. Get an Azure Maps key at https://azure.com/maps
                 authOptions: {
                     authType: 'subscriptionKey',
-                    subscriptionKey: '<your Azure Maps subscription key>'
+                    subscriptionKey: '<your Azure Maps key>'
                 }
             });
         }

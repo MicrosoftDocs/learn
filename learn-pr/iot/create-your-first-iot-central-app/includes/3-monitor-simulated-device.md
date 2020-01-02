@@ -28,7 +28,7 @@ The next step is to create a device.
 
 ## Create a real device
 
-By "real" IoT Central understands that there's a remote app running. The app can be in a real device, taking input from real sensors, or running a simulation. Both options are treated as a connection to a _real_ device.
+By "real" device, we mean IoT Central understands that there's a remote app running. The app can be in a real device, taking input from real sensors, or running a simulation. Both options are treated as a connection to a _real_ device.
 
 1. Click **Devices** in the left-hand menu.
 

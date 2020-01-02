@@ -121,7 +121,7 @@ In the blank app.js file, insert the following code. Each additional section of 
     var Message = require('azure-iot-device').Message;
     var rest = require("azure-maps-rest")
 
-    var subscriptionKeyCredential = new rest.SubscriptionKeyCredential("<your Azure Maps Account Subscription Key>");
+    var subscriptionKeyCredential = new rest.SubscriptionKeyCredential("<your Azure Maps key>");
 
     var pipeline = rest.MapsURL.newPipeline(subscriptionKeyCredential);
 
@@ -874,7 +874,7 @@ In the blank Program.cs file, insert the following code. Each additional section
             static string ScopeID = "<your Scope ID>";
             static string DeviceID = "<your Device ID>";
             static string PrimaryKey = "<your device Primary Key>";
-            static string AzureMapsKey = "<your Azure Maps Subscription Key>";
+            static string AzureMapsKey = "<your Azure Maps key>";
     ```
 
 1. Add the methods to get a route via Azure Maps.

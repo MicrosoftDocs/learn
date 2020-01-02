@@ -39,7 +39,7 @@ In this module, you'll build the app displayed in the above image.
 
 1. Navigate to [Azure IoT Central](https://apps.azureiotcentral.com/?azure-portal=true). It's a good idea to bookmark this URL, as it's the home for all your IoT Central apps.
 
-1. Click on **Build**, then **Custom apps**.
+1. Click on **Build** on the left-hand menu, then **Custom apps**.
 
 1. Your **Application name** can be any friendly name, such as "Refrigerated Trucks". However, the **URL** _must_ be unique, which is why you'll add a unique ID to the end of the URL for the app. For example, `refrigerated-trucks-<your id>`, replacing `<your id>` with some unique ID.
 

@@ -5,7 +5,7 @@ In this unit, you'll create a device template for a refrigerated truck.
 
 ## Create a device template
 
-1. Within the [Azure IoT Central](https://apps.azureiotcentral.com/?azure-portal=true) portal (which you may still have open), select **Device Templates** from the menu on the left-hand side.
+1. Within the [Azure IoT Central](https://apps.azureiotcentral.com/?azure-portal=true) portal (which you may still have open), select **Device templates** from the menu on the left-hand side.
 
 1. Click **+ New** to create a new template.
 
