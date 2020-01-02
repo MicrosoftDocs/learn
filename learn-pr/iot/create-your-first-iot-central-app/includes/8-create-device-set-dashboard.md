@@ -24,7 +24,7 @@ Repeat this process to create as many devices as you need.
 
 1. Double-click on **RefrigeratedTruck - 2**, and then click **Connect** (top right of your IoT Central screen).
 
-1. In the **Device Connection** screen, copy the **Device ID** and the **Primary Key** to your text file, noting that they are for the second truck. There is no need to copy the **Scope ID**, as this value is identical to the value for the first truck (it identifies your app, not an individual device).
+1. In the **Device Connection** screen, copy the **Device ID** and the **Primary Key** to your text file, noting that they are for the second truck. There's no need to copy the **Scope ID**, as this value is identical to the value for the first truck (it identifies your app, not an individual device).
 
 1. Click **Close**.
 
@@ -54,7 +54,7 @@ Repeat this process to create as many devices as you need.
 
 1. Close Azure Cloud Shell.
 
-1. Verify that each connection string ends with an exact copy of the **Primary Key**, just in case there is spurious text at the end of any of the **connection#.txt** files.
+1. Verify that each connection string ends with an exact copy of the **Primary Key**, just in case there's spurious text at the end of any of the **connection#.txt** files.
 
 ## Update the device app to handle multiple devices
 
@@ -93,7 +93,7 @@ Repeat this process to create as many devices as you need.
 
 Each truck is simulated by one running copy of the device app. So, you need multiple versions of this app running simultaneously.
 
-1. Create multiple projects by repeating the steps in the **Create a programming project for a real device** for each new device. Copy and paste the entire app from your current working project, replacing the **Device ID** and **Primary Key** with new values. No need to change the **Scope ID** or the **Azure Maps subscription Key**, as these are identical for all devices.
+1. Create multiple projects by repeating the steps in the **Create a programming project for a real device** for each new device. Copy and paste the entire app from your current working project, replacing the `DeviceID` and device `PrimaryKey` with new values. No need to change the `ScopeID` or the `AzureMapsKey`, as these values are identical for all devices.
 
 1. Remember to add the necessary libraries to each new project.
 
