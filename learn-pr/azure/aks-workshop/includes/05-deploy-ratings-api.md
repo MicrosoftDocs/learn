@@ -1,8 +1,8 @@
-The [ratings API](https://github.com/MicrosoftDocs/mslearn-aks-workshop-ratings-api) is a Node.js application written using the Express framework. It stores and retrieves items and their ratings in a MongoDB.
+The ratings API is a Node.js application written using the Express framework. It stores and retrieves items and their ratings in a MongoDB.
 
-In the [Create a private, highly available container registry](03-deploy-acr) unit, you used Azure Container Registry to build a Docker image of the API and store it in a repository.
+Recall that you've already created an Azure Container Registry and used it to build a Docker image of the API and store it in a repository.
 
-In this exercise, you're going to deploy that Docker image of the API to the Azure Kubernetes Service (AKS) by creating a Kubernetes [deployment](https://docs.microsoft.com/en-us/azure/aks/concepts-clusters-workloads#deployments-and-yaml-manifests), and exposing it through a load balancer by creating a Kubernetes [service](https://docs.microsoft.com/en-us/azure/aks/concepts-network#services). Additionally, you're going to configure the API to connect to the MongoDB created in the [Deploy MongoDB](05-deploy-mongodb) unit by attaching the Kubernetes [secret](https://docs.microsoft.com/en-us/azure/aks/concepts-security#kubernetes-secrets).
+In this exercise, you're going to deploy that Docker image of the API to the Azure Kubernetes Service (AKS) by creating a Kubernetes [deployment](https://docs.microsoft.com/azure/aks/concepts-clusters-workloads#deployments-and-yaml-manifests?azure-portal=true), and expose it through a load balancer by creating a Kubernetes [service](https://docs.microsoft.com/azure/aks/concepts-network#services?azure-portal=true). Additionally, you're going to configure the API to connect to the MongoDB database by attaching the Kubernetes [secret](https://docs.microsoft.com/azure/aks/concepts-security#kubernetes-secrets?azure-portal=true).
 
 [!include[](../../../includes/azure-cloudshell-editor.md)]
 
@@ -70,7 +70,7 @@ In this exercise, you're going to deploy that Docker image of the API to the Azu
 
     - **Environment variables and secrets**
 
-        The ratings API expects to find the connection details to the MongoDB in an environment variable named **MONGODB_URI** . By using `valueFrom` and `secretRef`, you can reference values stored in the Kubernetes secret **mongosecret** created when you [deployed MongoDB.](05-deploy-mongodb).
+        The ratings API expects to find the connection details to the MongoDB in an environment variable named **MONGODB_URI** . By using `valueFrom` and `secretRef`, you can reference values stored in the Kubernetes secret **mongosecret** created when you deployed MongoDB.
 
     - **Resource requests and limits**
 
@@ -131,7 +131,7 @@ In this exercise, you're going to deploy that Docker image of the API to the Azu
 
 ## Create a Kubernetes service file for the ratings API service
 
-To simplify the network configuration for application workloads, Kubernetes uses [Services](https://docs.microsoft.com/en-us/azure/aks/concepts-network#services?azure-portal=true) to logically group a set of pods together and provide network connectivity.
+To simplify the network configuration for application workloads, Kubernetes uses [Services](https://docs.microsoft.com/azure/aks/concepts-network#services?azure-portal=true) to logically group a set of pods together and provide network connectivity.
 
 1. Create a file called `ratings-api-service.yaml` using the integrated editor.
 
