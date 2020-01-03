@@ -11,10 +11,10 @@ The first thing that you will need to do when managing groups of devices via Azu
 
 ## Putting theory in practice
 
-In the next units you will do the following:
+In the next unit you will do the following:
 
 - Prepare 2 new firmware update configurations (one for each of the devices group)
 - Create and monitor progress of first configuration
 - Create 2 sets of device identities in IoT Hub with 2 different sets of tags
 - Run simulators for each of these devices
-- Once first configuration was successful, start and monitor the second configuration
+- Once first configuration successfully ends, start and monitor the second configuration.

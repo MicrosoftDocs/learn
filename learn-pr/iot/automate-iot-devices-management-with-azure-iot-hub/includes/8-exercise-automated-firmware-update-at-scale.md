@@ -45,7 +45,90 @@ You should see a series of commands passing by creating the device IDs in the Io
 
 ## Create new Automatic Device Management configurations using the Azure CLI
 
-Let's go through the following 
-Working in the same terminal you used to run the device simulator,
-<TODO>
+As an administrator of the IoT solution, you could use the Azure portal to create the device management configurations (as done in previous units), but to automate things at scale it is simpler to create and use [Azure CLI scripts](https://docs.microsoft.com/azure/iot-hub/iot-hub-automatic-device-management-cli).
 
+1. In the same folder you created the device simulator app, create an automatic configuration content file called *firmwareupdatecontent.json*.
+
+1. Copy and paste the following in *firmwareupdatecontent.json*:
+
+    ``` JSON
+        {
+           "content":{
+                "deviceContent":{
+                    "properties.desired.firmware":{
+                        "fwVersion":"1.0.1",
+                        "fwPackageURI":"https://MyPackage.uri",
+                        "fwPackageCheckValue":"1234"
+                    }
+                }
+            }
+        }
+    ```
+
+1. In the same folder you created the previous file, create 2 other automatic configuration metrics files called *firmwareupdatemetricslewis.json* and *firmwareupdatemetricssmith.json*.
+
+1. Copy and paste the following in *firmwareupdatemetricslewis.json*:
+
+    ``` JSON
+        {
+            "metrics":{
+                "queries":{
+                    "fwupdated":"select deviceid from devices where configurations.[[firmwareupdatelewis]].status='Applied' and properties.reported.firmware.currentFwVersion='1.0.1'"
+                }
+            }
+        }
+    ```
+
+1. Copy and paste the following in *firmwareupdatemetricssmith.json*:
+
+    ``` JSON
+        {
+            "metrics":{
+                "queries":{
+                    "fwupdated":"select deviceid from devices where configurations.[[firmwareupdatesmith]].status='Applied' and properties.reported.firmware.currentFwVersion='1.0.1'"
+                }
+            }
+        }
+    ```
+
+1. Now that we have our configuration content ready, we want to create and monitor the first configuration. Once the first one will terminate successfully, we will create and monitor the second one.
+
+    Working in the same terminal you used to run the device simulator, run the following commands (replacing {your iot hub name} with your hub name):
+
+    ``` CLI
+        az iot hub configuration create --config-id "firmwareupdatelewis" \
+         --content firmwareupdatecontent.json \
+         --hub-name {your iot hub name}\
+         --target-condition "tags.customer.name='Lewis'"\
+         --priority 10 \
+         --metrics firmwareupdatemetricslewis.json
+    ```
+
+1. The firmware update campaign started and you should see the 5 devices installed at the Lewis' start the firmware update. We will now monitor the progress of the configuration to make sure everything went well before starting the second one. In the terminal, run the following command (replacing {your iot hub name} with your hub name):
+
+    ``` CLI
+        az iot hub configuration show-metric --config-id firmwareupdatelewis \
+         --metric-id fwupdated --hub-name {your iot hub name} --metric-type user 
+    ```
+
+    This command will list all the devices on which the firmware update has been successfully applied. You should see 5 of them. If that's not the case, check the progress on each device simulator output and try the monitoring command again.
+
+1. Once the first part of the firmware update campaign was successful, you can start the second one running the following command in the terminal:
+
+    ``` CLI
+        az iot hub configuration create --config-id "firmwareupdatesmith" \
+         --content firmwareupdatecontent.json \
+         --hub-name {your iot hub name}\
+         --target-condition "tags.customer.name='Smith'"\
+         --priority 10 \
+         --metrics firmwareupdatemetricssmith.json
+    ```
+
+    And the following (eventually several times) to monitor progress.
+
+    ``` CLI
+        az iot hub configuration show-metric --config-id firmwareupdatesmith \
+         --metric-id fwupdated --hub-name {your iot hub name} --metric-type user 
+    ```
+
+Congratulations, you successfully updated all devices' firmware at both customers location without disrupting their production.
