@@ -6,7 +6,7 @@ Use these resources to learn more about developing apps with Xamarin.Android:
 
 - Learn [application fundamentals](https://docs.microsoft.com/xamarin/android/app-fundamentals/) such as working with files, databases, and more.
 
-- Learn more about building [user interfaces](https://docs.microsoft.com/xamarin/ios/user-interface).
+- Learn more about building [user interfaces](https://docs.microsoft.com/xamarin/android/user-interface).
 
 - Work with Android [platform features](https://docs.microsoft.com/xamarin/android/platform/).
 
