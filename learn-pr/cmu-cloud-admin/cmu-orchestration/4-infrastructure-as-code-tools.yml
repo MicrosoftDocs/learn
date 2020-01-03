@@ -18,18 +18,18 @@ quiz:
     
     - content: "You are creating an Azure Resource Manager (ARM) template that defines a cloud solution comprising virtual machines, storage accounts, message queues, and other resources. The template is written in JSON. At run-time, you want to require users to select the Azure region region to which these resources are deployed. What is the proper way to accomplish that with an ARM template?"
       choices:
-      - content: "Define the region as an input parameter in the template's "parameters" section."
+      - content: "Define the region as an input parameter in the template's 'parameters' section."
         isCorrect: true
-        explanation: "Correct! The "parameters" section enables you to define parameters that users provide when the template is executed."
+        explanation: "Correct! The 'parameters' section enables you to define parameters that users provide when the template is executed."
       - content: "Define the region as an input parameter in the template's "resources" section."
         isCorrect: false
-        explanation: "Incorrect. The "parameters" section enables you to define parameters that users provide when the template is executed."
+        explanation: "Incorrect. The 'parameters' section enables you to define parameters that users provide when the template is executed."
       - content: "Write a custom script that prompts the user to select a region and invoke the script from the template."
         isCorrect: false
-        explanation: "Incorrect. The "parameters" section enables you to define parameters that users provide when the template is executed."
+        explanation: "Incorrect. The 'parameters' section enables you to define parameters that users provide when the template is executed."
       - content: "None of the above. ARM templates do not support user-defined parameters."
         isCorrect: false
-        explanation: "Incorrect. The "parameters" section enables you to define parameters that users provide when the template is executed."
+        explanation: "Incorrect. The 'parameters' section enables you to define parameters that users provide when the template is executed."
 
     - content: "Which of the following statements regarding ARM templates is false?"
       choices: 
