@@ -70,7 +70,7 @@ In this exercise, you're going to deploy that Docker image of the API to the Azu
 
     - **Environment variables and secrets**
 
-        The ratings API expects to find the connection details to the MongoDB in an environment variable named **MONGODB_URI** . By using ``valueFrom`` and ``secretRef``, you can reference values stored in the Kubernetes secret **mongosecret** created when you [deployed MongoDB.](05-deploy-mongodb).
+        The ratings API expects to find the connection details to the MongoDB in an environment variable named **MONGODB_URI** . By using `valueFrom` and `secretRef`, you can reference values stored in the Kubernetes secret **mongosecret** created when you [deployed MongoDB.](05-deploy-mongodb).
 
     - **Resource requests and limits**
 
@@ -131,7 +131,7 @@ In this exercise, you're going to deploy that Docker image of the API to the Azu
 
 ## Create a Kubernetes service file for the ratings API service
 
-To simplify the network configuration for application workloads, Kubernetes uses [Services](https://docs.microsoft.com/en-us/azure/aks/concepts-network#services) to logically group a set of pods together and provide network connectivity.
+To simplify the network configuration for application workloads, Kubernetes uses [Services](https://docs.microsoft.com/en-us/azure/aks/concepts-network#services?azure-portal=true) to logically group a set of pods together and provide network connectivity.
 
 1. Create a file called `ratings-api-service.yaml` using the integrated editor.
 
@@ -139,17 +139,7 @@ To simplify the network configuration for application workloads, Kubernetes uses
     code ratings-api-service.yaml
     ```
 
-    **Selector**
-
-    The set of pods targeted by a service is determined by the selector. In the example below, Kubernetes will load balance traffic to pods that have the label `app: ratings-api`, which was defined when creating the deployment. The controller for the service continuously scans for pods matching that label to add them to the load balancer.
-
-    **Ports**
-
-    A service can map an incoming `port` to a `targetPort`. The incoming port is what the service would respond to, while the target port is what the pods are configured to listen to. For example, the service will be exposed internally within the cluster at `ratings-api.ratingsapp.svc.cluster.local:80` and will load balance the traffic to the ratings-api pods listening on port `3000`.
-
-    **Type**
-
-    A service of type **Cluster IP** creates an internal IP address for use within the cluster. Choosing this value makes the Service only reachable from within the cluster. This is the default service type.
+1. Paste the following text in the file.
 
     ```yaml
     apiVersion: v1
@@ -166,12 +156,30 @@ To simplify the network configuration for application workloads, Kubernetes uses
       type: ClusterIP
     ```
 
+1. Review the file, and note the following points:
+
+    **Selector**
+
+    The set of pods targeted by a service is determined by the selector. In the example below, Kubernetes will load balance traffic to pods that have the label `app: ratings-api`, which was defined when creating the deployment. The controller for the service continuously scans for pods matching that label to add them to the load balancer.
+
+    **Ports**
+
+    A service can map an incoming `port` to a `targetPort`. The incoming port is what the service would respond to, while the target port is what the pods are configured to listen to. For example, the service will be exposed internally within the cluster at `ratings-api.ratingsapp.svc.cluster.local:80` and will load balance the traffic to the ratings-api pods listening on port `3000`.
+
+    **Type**
+
+    A service of type **Cluster IP** creates an internal IP address for use within the cluster. Choosing this value makes the Service only reachable from within the cluster. This is the default service type.
+
+1. To save and close the editor, open the ``...`` action panel in the top right of the editor and select **Save**, then select **Close editor**. You an also use <kbd>Ctrl-s</kbd> to save, and <kbd>Ctrl-q</kbd> to close the editor.
+
 ## Apply the Kubernetes service file to create a load balanced service
 
 1. Apply the configuration using the `kubectl apply` command. You'll be deploying this in the **ratingsapp** namespace.
 
     ```bash
-    kubectl apply --namespace ratingsapp -f ratings-api-service.yaml
+    kubectl apply \
+        --namespace ratingsapp \
+        -f ratings-api-service.yaml
     ```
 
     You'll see an output like the below.
@@ -193,9 +201,7 @@ To simplify the network configuration for application workloads, Kubernetes uses
     ratings-api   ClusterIP   10.0.40.94   <none>        80/TCP    60s
     ```
 
-1. Validate the endpoints
-
-    Services load balance traffic to the pods through endpoints. The endpoint has the same name as the service. Validate that the service is pointing to 2 endpoints, corresponding to the 2 pods. As you add more replicas, or as pods come and go, Kubernetes automatically keeps the endpoints updated.
+1. Finally, let's validate the endpoints. Services load balance traffic to the pods through endpoints. The endpoint has the same name as the service. Validate that the service is pointing to two endpoints, corresponding to the two pods. As you add more replicas, or as pods come and go, Kubernetes automatically keeps the endpoints updated.
 
     ```bash
     kubectl get endpoints ratings-api --namespace ratingsapp
@@ -208,9 +214,7 @@ To simplify the network configuration for application workloads, Kubernetes uses
     ratings-api   10.244.1.5:3000,10.244.2.6:3000   1h
     ```
 
-## Summary
-
-In this exercise, you created a deployment of the **ratings-api** consisting of 2 replicas and exposed it as an internal (ClusterIP) service.
+You've now created a deployment of the **ratings-api** consisting of two replicas and exposed it as an internal (ClusterIP) service.
 
 - **Deployment/ratings-api**. The API, running 2 replicas, which reads the MongoDB connection details by mounting the **mongosecret** as an environment variable.
 - **Service/ratings-api**. The API will be exposed internally within the cluster at `ratings-api.ratingsapp.svc.cluster.local:80`.
