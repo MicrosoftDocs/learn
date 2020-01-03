@@ -180,7 +180,8 @@ To simplify the network configuration for application workloads, Kubernetes uses
     ratings-web   LoadBalancer   10.0.149.37  13.90.152.99   80:32747/TCP    5m
     ```
 
-    > [!TIP] Make note of that EXTERNAL-IP, for example 13.90.152.99, as you'll use it to access the application.
+    > [!TIP]
+    > Make note of that EXTERNAL-IP, for example 13.90.152.99, as you'll use it to access the application.
 
 ## Test the application
 
