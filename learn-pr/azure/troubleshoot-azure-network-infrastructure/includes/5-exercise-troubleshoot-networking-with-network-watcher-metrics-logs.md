@@ -131,7 +131,7 @@ Now, let's use log analytics to view the NSG flow logs.
 
 An NSG rule is blocking inbound traffic to the back-end subnet from everywhere over the ports 80, 443, and 3389 instead of just blocking inbound traffic from the Internet. Let's reconfigure that rule now.
 
-1. Select **All resources**, and then select **MyNsg**.
+1. On the Azure portal menu, select **All resources**, and then select **MyNsg**.
 
 1. Under **Settings**, select **Inbound security rules**, and then select **MyNSGRule**.
 
