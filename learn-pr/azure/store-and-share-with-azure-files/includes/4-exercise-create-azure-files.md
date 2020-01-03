@@ -2,26 +2,7 @@ Azure storage accounts enable organizations to replicate their on-premises file 
 
 The finance company has asked you to duplicate the two file shares that they currently have on-premises. It uses one file share for reports, and the other for application data. The storage account needs to be resilient to data center failures. That's why you'll create it to use GRS redundancy.
 
-In this exercise, you'll first create a Windows VM to use as your example customer machine. You'll use the Windows VM to mount drives where you access the file shares. Next, in a new storage account, you'll create two file shares for reports and application data. Finally, you'll map two drives to the new Azure file shares and copy reports to them.
-
-## Create a Windows Server
-
-These steps create a Windows Server to use later in the exercise. Think of it as an on-premises machine running in the finance company's data center or branch office.
-
-1. Using the Cloud Shell, create a Windows VM with the Azure CLI command.
-
-    ```bash
-
-    export PASSWORD=$(openssl rand -base64 32)
-
-    az vm create \
-    --no-wait \
-    --resource-group <rgn>[sandbox Resource Group]</rgn> \
-    --name 2019FileServer \
-    --image Win2019Datacenter \
-    --admin-username azureuser \
-    --admin-password $PASSWORD
-    ```
+In this exercise, you'll first a new storage account and two file shares for reports and application data. You'll then create a Windows VM to use as your example customer machine. You'll use the Windows VM to mount drives where you access the file shares. Finally, you'll map two drives to the new Azure file shares and copy reports to them.
 
 ## Create a GRS storage account
 
@@ -29,63 +10,67 @@ These steps create a Windows Server to use later in the exercise. Think of it as
 
     ```bash
     export STORAGEACCT=learnazurefileshare$RANDOM
-    
+
     az storage account create \
-    --name $STORAGEACCT \
-    --resource-group <rgn>[sandbox Resource Group]</rgn> \
-    --sku Standard_GRS
+        --name $STORAGEACCT \
+        --resource-group <rgn>[sandbox Resource Group]</rgn> \
+        --sku Standard_GRS
     ```
 
 1. Using Azure CLI commands, save the storage account key in a local variable.
 
-    ```bash
+    ```azurecli
     STORAGEKEY=$(az storage account keys list \
-    --resource-group <rgn>[sandbox Resource Group]</rgn> \
-    --account-name $STORAGEACCT \
-    --query "[0].value" | tr -d '"')
+        --resource-group <rgn>[sandbox Resource Group]</rgn> \
+        --account-name $STORAGEACCT \
+        --query "[0].value" | tr -d '"')
     ```
 
 ## Create file shares
 
+1. Create a file share to store the finance company's reports.
 
-1. Create a file share to store the finance company's reports. 
-
-    ```bash
+    ```azurecli
     az storage share create \
-    --account-name $STORAGEACCT \
-    --account-key $STORAGEKEY \
-    --name "reports"
+        --account-name $STORAGEACCT \
+        --account-key $STORAGEKEY \
+        --name "reports"
     ```
 
 1. Create a file share to store the finance company's application data.
 
-    ```bash
+    ```azurecli
     az storage share create \
-    --account-name $STORAGEACCT \
-    --account-key $STORAGEKEY \
-    --name "data"
+        --account-name $STORAGEACCT \
+        --account-key $STORAGEKEY \
+        --name "data"
+    ```
+
+## Create a Windows Server
+
+These steps create a Windows Server to use later in the exercise. This server will simulate an on-premises machine running in the finance company's data center or branch office.
+
+1. Using the Cloud Shell, create a Windows VM with the Azure CLI. When prompted for a password, enter a complex password of your choice and note it for reference later.
+
+    ```azurecli
+    az vm create \
+        --resource-group <rgn>[sandbox Resource Group]</rgn> \
+        --name 2019FileServer \
+        --image Win2019Datacenter \
+        --admin-username azureuser
     ```
 
 ## Connect to your VM
 
-1. Get the IP address of the Windows VM to use with Remote Desktop Connection.
-
-    ```bash
-    export RDPCONNECTION=$(az vm list-ip-addresses --name 2019FileServer --query "[].virtualMachine.network.publicIpAddresses[*].ipAddress" --output tsv):3389
-    
-    echo $RDPCONNECTION
-    echo $PASSWORD
-    ```
-
-1. On your Windows machine, select **Start**, then type **Remote Desktop Connection**. Select the **Remote Desktop Connection** application in the search results.
-1. In the **Remote Desktop Connection** window, in the **Computer** field, type the IP address from step 1 above.
-1. Select the **Show Options** link at the bottom of the window. In the **Username** field, type **azureuser**.
-1. Select **Connect**.
-1. Paste the password returned in step 1 into the **Windows Security** window.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) with the account you used to activate sandbox.  In the portal menu, then select **Virtual machines**, then select the **2019FileServer** VM you created.
+1. On the **Overview** pane, select **Connect**, then select **Download RDP File**.
+1. Run the RDP file, and select **Connect** when prompted.
+1. On the **Enter your credentials** prompt, select **More choices**, then select **Use a different account**. In the **Username** field, type **azureuser** and enter the password for this user.
+1. Select **OK**, then select **Yes** to connect to the server.
 
 ## Map drives to the Azure file shares
 
-1. Sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true), using the portal menu, then select **Storage Accounts**.
+1. In the portal, select **Storage Accounts** from the portal menu.
 1. Select the created storage account that should be named learnazurefileshare, followed by random numbers.
 
     ![Screenshot of the Azure portal showing the storage account overview](../media/4-select-file-shares.png)
@@ -99,7 +84,7 @@ These steps create a Windows Server to use later in the exercise. Think of it as
     ![Screenshot of the data file share, and its connection commands](../media/4-connect-to-share.png)
 
 1. Copy the bottom PowerShell command.
-1. Select **Start**, then type **PowerShell**, and select the **Windows PowerShell** application in the search results.
+1. On your virtual machine, right click **Start** and select **Windows PowerShell (Admin)**.
 1. In the PowerShell window, paste the copied commands.
 1. Return to the Azure portal, go back to the file shares, and select the **reports** file share.
 
