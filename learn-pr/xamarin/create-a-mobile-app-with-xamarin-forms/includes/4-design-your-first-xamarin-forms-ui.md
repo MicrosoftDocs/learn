@@ -97,10 +97,10 @@ The `Orientation` property we set will control the flow of the stack.
 
 By default, when we use `.Vertical` orientation, each control fills the full width of the parent.
 
-Now that we have a `StackLayout` with controls added to it, we need to add the layout to the `.Content` property of our `ContentPage`.
+Now that we have a `StackLayout` with controls added to it, we need to add the layout to the `.Content` property of our `ContentPage`. Within a content page, if you created the above layout, you would add this assignment to make the layout display for the content page.
 
 ```csharp
-mainPage.Content = layout;
+this.Content = layout;
 ```
 
 This will cause `mainPage` to display the contents of the `StackLayout` using the layout rules of the `StackLayout` class and the properties we set on it.
