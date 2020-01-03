@@ -70,7 +70,7 @@ You can also use Azure Container Registry  to build these containers. A standard
 
 ### Build the *ratings-api* image
 
-The ratings API is a Node.js application, built using Express. The [source code](https://github.com/MicrosoftDocs/mslearn-aks-workshop-ratings-api?azure-portal=true) is on GitHub, and already includes a [Dockerfile](https://github.com/MicrosoftDocs/mslearn-aks-workshop-ratings-api/blob/master/Dockerfile?azure-portal=true) which builds images based on the Node.js Alpine image.
+The ratings API is a Node.js application, built using Express. The [source code](https://github.com/MicrosoftDocs/mslearn-aks-workshop-ratings-api?azure-portal=true) is on GitHub, and already includes a [Dockerfile](https://github.com/MicrosoftDocs/mslearn-aks-workshop-ratings-api/blob/master/Dockerfile?azure-portal=true), which builds images based on the Node.js Alpine image.
 
 1. Clone the repository onto the Cloud Shell.
 
@@ -124,7 +124,7 @@ The ratings API is a Node.js application, built using Express. The [source code]
 
 ### Build the *ratings-web* image
 
-The ratings frontend is a Node.js application, built using Vue and WebPack. The [source code](https://github.com/MicrosoftDocs/mslearn-aks-workshop-ratings-web?azure-portal=true) is on GitHub, and already includes a [Dockerfile](https://github.com/MicrosoftDocs/mslearn-aks-workshop-ratings-web/blob/master/Dockerfile?azure-portal=true) which builds images based on the Node.js Alpine image.
+The ratings frontend is a Node.js application that was built using Vue and WebPack. The [source code](https://github.com/MicrosoftDocs/mslearn-aks-workshop-ratings-web?azure-portal=true) is on GitHub, and already includes a [Dockerfile](https://github.com/MicrosoftDocs/mslearn-aks-workshop-ratings-web/blob/master/Dockerfile?azure-portal=true), which builds images based on the Node.js Alpine image.
 
 1. Change back to your home directory.
 
@@ -132,7 +132,7 @@ The ratings frontend is a Node.js application, built using Vue and WebPack. The 
     cd ~
     ```
 
-1. Clone the the *ratings-web* repo.
+1. Clone the *ratings-web* repo.
 
     ```azurecli
     git clone https://github.com/MicrosoftDocs/mslearn-aks-workshop-ratings-web.git
@@ -202,7 +202,7 @@ The images are now ready to be used.
 
 ## Configure the AKS cluster to authenticate to the container registry
 
-Integrate the Azure Container Registry with existing AKS cluster by supplying valid values for **AKS_CLUSTER_NAME** and **ACR_NAME**. This automatically configures the required service principal authentication between the 2 resources.
+Integrate the Azure Container Registry with existing AKS cluster by supplying valid values for **AKS_CLUSTER_NAME** and **ACR_NAME**. This automatically configures the required service principal authentication between the two resources.
 
 ```azurecli
 az aks update \
