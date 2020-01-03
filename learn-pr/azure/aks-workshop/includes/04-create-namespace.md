@@ -1,12 +1,12 @@
-Kubernetes provides features that let you logically isolate teams and workloads in the same cluster. The goal should be to provide the least number of privileges, scoped to the resources each team needs. A namespace in Kubernetes creates a logical isolation boundary. Names of resources need to be unique within a namespace, but not across namespaces.
+**Moved to unit 2**
+
+<!-- Kubernetes provides features that let you logically isolate teams and workloads in the same cluster. The goal should be to provide the least number of privileges, scoped to the resources each team needs. A namespace in Kubernetes creates a logical isolation boundary. Names of resources need to be unique within a namespace, but not across namespaces.
 
 If you don't specify the namespace when working with Kubernetes resources, the **default** namespace is implied.
 
-[!include[](../../../includes/azure-cloudshell-copy-paste-tip.md)]
-
 ## Create a Kubernetes namespace for the application
 
-1. Sign into the [Azure portal](https://portal.azure.com/?azure-portal=true) with your Azure subscription.
+1. Sign into the [Azure portal](https://shell.azure.com/?azure-portal=true) with your Azure subscription.
 
 1. Open the Azure Cloud Shell from the Azure portal using the Cloud Shell icon.
 
@@ -37,5 +37,5 @@ If you don't specify the namespace when working with Kubernetes resources, the *
     You will get a confirmation that the namespace was created.
 
     ```output
-   namespace/ratingsapp created
-    ```
+    namespace/ratingsapp created
+    ``` -->
