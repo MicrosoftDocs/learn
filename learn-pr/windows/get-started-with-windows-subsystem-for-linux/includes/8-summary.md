@@ -13,6 +13,6 @@ We encourage you to keep learning. More courses are coming soon. In the meantime
 - [Git version control in VS Code](https://code.visualstudio.com/docs/introvideos/versioncontrol)
 - [Nodemon npm module for automatic restart](https://www.npmjs.com/package/nodemon)
 - [Build Node.js Express apps with Microsoft Graph](https://docs.microsoft.com/graph/tutorials/node)
-- [Request new features for WSL on UserVoice, or vote for your favorites](https://wpdev.uservoice.com/forums/266908-command-prompt/filters/top)
+- [Request new features for WSL on UserVoice, or vote for your favorites](https://github.com/microsoft/wsl)
 - [WSL GitHub issue tracker](https://github.com/Microsoft/WSL/issues)
  

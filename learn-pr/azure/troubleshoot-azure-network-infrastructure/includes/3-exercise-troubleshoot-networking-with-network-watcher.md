@@ -89,7 +89,7 @@ Let's start by creating the problematic infrastructure, which includes a configu
         --name MyNSGRule \
         --nsg-name MyNsg \
         --priority 4096 \
-        --source-address-prefixes 10.10.2.0/24 \
+        --source-address-prefixes '*' \
         --source-port-ranges 80 443 3389 \
         --destination-address-prefixes '*' \
         --destination-port-ranges 80 443 3389 \

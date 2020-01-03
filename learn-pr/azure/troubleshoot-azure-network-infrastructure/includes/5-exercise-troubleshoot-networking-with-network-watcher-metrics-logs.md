@@ -129,13 +129,15 @@ Now, let's use log analytics to view the NSG flow logs.
 
 ## Fix the problem
 
-An NSG rule is blocking outbound traffic from the back-end subnet to everywhere over the ports 80, 443, and 3389. Let's reconfigure that rule now.
+An NSG rule is blocking inbound traffic to the back-end subnet from everywhere over the ports 80, 443, and 3389 instead of just blocking inbound traffic from the Internet. Let's reconfigure that rule now.
 
-1. On the Azure portal menu, select **All resources**, and then select **MyVNet1**.
+1. Select **All resources**, and then select **MyNsg**.
 
-1. Under **Settings**, select **Subnets**, and then select **BackendSubnet**.
+1. Under **Settings**, select **Inbound security rules**, and then select **MyNSGRule**.
 
-1. Select **Network security group**, select **None**, and then select **Save**.
+1. Change **Source** to be **Service Tag**, and configure **Source service tag** to be **Internet**.
+
+1. Select **Save**.
 
 ## Retest the connection
 

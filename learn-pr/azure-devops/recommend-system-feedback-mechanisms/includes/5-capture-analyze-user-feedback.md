@@ -51,7 +51,7 @@ _Release gates_ automate the waiting period between environments in release pipe
 
 However, one thing you'll quickly learn is that no amount of monitoring will catch every single problem. If you have a popular application, your users will know about a problem within seconds and turn quickly to Twitter to start asking about it. Twitter can be a wonderful "alert" to let you know something is wrong with your app.
 
-You can use the [Twitter Sentiment Analysis](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.vss-services-twittersentimentanalysis?azure-portal=true) extension to create a release gate that calculates the average sentiment of tweets made for a given hashtag. This extension combines Azure DevOps, Azure functions, and Microsoft AI to analyze sentiment on your Twitter handle and gate your release progress based on sentiment. The analysis is relatively simple, but shows how easy it is to extend release gates in Azure DevOps to measure any signal you choose and use that signal to manage your release process.
+You can use the [Twitter Sentiment Analysis](https://www.digitalvidya.com/blog/twitter-sentiment-analysis-introduction-and-techniques/) extension to create a release gate that calculates the average sentiment of tweets made for a given hashtag. This extension combines Azure DevOps, Azure functions, and Microsoft AI to analyze sentiment on your Twitter handle and gate your release progress based on sentiment. The analysis is relatively simple, but shows how easy it is to extend release gates in Azure DevOps to measure any signal you choose and use that signal to manage your release process.
 
 ## The decision
 
