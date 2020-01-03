@@ -32,14 +32,13 @@ units:
 - learn.aks-workshop.01-introduction
 - learn.aks-workshop.02-deploy-aks
 - learn.aks-workshop.03-deploy-acr
-- learn.aks-workshop.04-create-namespace
-- learn.aks-workshop.05-deploy-mongodb
-- learn.aks-workshop.06-deploy-ratings-api
-- learn.aks-workshop.07-deploy-ratings-web
-- learn.aks-workshop.08-deploy-ingress
-- learn.aks-workshop.09-enable-ssl
-- learn.aks-workshop.10-configure-monitoring
-- learn.aks-workshop.11-scale-application
-- learn.aks-workshop.12-summary
+- learn.aks-workshop.04-deploy-mongodb
+- learn.aks-workshop.05-deploy-ratings-api
+- learn.aks-workshop.06-deploy-ratings-web
+- learn.aks-workshop.07-deploy-ingress
+- learn.aks-workshop.08-enable-ssl
+- learn.aks-workshop.09-configure-monitoring
+- learn.aks-workshop.10-scale-application
+- learn.aks-workshop.11-summary
 badge:
   uid: learn.aks-workshop.badge

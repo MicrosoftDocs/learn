@@ -5,16 +5,14 @@ Azure has a managed Kubernetes service, Azure Kubernetes Service (AKS). You'll u
 
 ## Create a new resource group
 
-1. Sign into the [Azure portal](https://portal.azure.com/?azure-portal=true) with your Azure account.
-
-1. Open the Azure Cloud Shell from the Azure portal using the Cloud Shell icon.
-
-    ![Image showing Cloud Shell icon in the Azure portal](../media/2-portal-cloudshell-access.png)
+1. Sign into the [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true) with your Azure account.
 
 1. Create a new resource group with the name **aksworkshop** so that it will be easier to clean up these resources when you are finished with the module. If you choose a different resource group name, remember it for the rest of the exercises in this module. You also need to choose a region in which you want to create the resource group, for example **East US**.
 
     ```azurecli
-    az group create --name aksworkshop --location eastus
+    az group create \
+        --name aksworkshop \
+        --location eastus
     ```
 
 ## Create the Azure Kubernetes Service (AKS) cluster
@@ -56,7 +54,7 @@ Azure has a managed Kubernetes service, Azure Kubernetes Service (AKS). You'll u
         --name $AKS_CLUSTER_NAME
     ```
 
-1. Let's take a look at what has been deployed by listing all the nodes in your cluster. To do this, you'll use the `kubectl` command. This is the main command line tool you will using for working with Kubernetes. It is already installed in the Cloud Shell.
+1. Let's take a look at what has been deployed by listing all the nodes in your cluster. To do this, you'll use the `kubectl` command. This is the main command-line tool you will use for working with Kubernetes. It is already installed in the Cloud Shell.
 
     ```bash
     kubectl get nodes
@@ -83,7 +81,7 @@ If you don't specify the namespace when working with Kubernetes resources, the *
     kubectl get namespace
     ```
 
-    You should get a list of namespaces, similar to this.
+    You should get a list of namespaces, similar to the following:
 
     ```output
     NAME              STATUS   AGE

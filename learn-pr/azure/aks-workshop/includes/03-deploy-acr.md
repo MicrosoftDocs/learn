@@ -8,12 +8,6 @@ In this unit, you will create an Azure Container Registry using the Azure CLI.
 
 ## Create an Azure Container Registry
 
-1. Sign into the [Azure portal](https://portal.azure.com/?azure-portal=true) with your Azure subscription.
-
-1. Open the Azure Cloud Shell from the Azure portal using the Cloud Shell icon.
-
-    ![Image showing Cloud Shell icon in the Azure portal](../media/2-portal-cloudshell-access.png)
-
 1. The container registry name must be unique within Azure and contain between 5 and 50 **alphanumeric** characters. For learning purposes, run this command from Cloud Shell to create a Bash variable that holds a unique name.
 
     ```azurecli
@@ -76,7 +70,7 @@ You can also use Azure Container Registry  to build these containers. A standard
 
 ### Build the *ratings-api* image
 
-The ratings API is a Node.js application, built using Express. The [source code](https://github.com/MicrosoftDocs/mslearn-aks-workshop-ratings-api?azure-portal=true) is on GitHub, and already includes a [Dockerfile](https://github.com/MicrosoftDocs/mslearn-aks-workshop-ratings-api/blob/master/Dockerfile?azure-portal=true) which builds images based on the Node.js Alpine image.
+The ratings API is a Node.js application, built using Express. The [source code](https://github.com/MicrosoftDocs/mslearn-aks-workshop-ratings-api?azure-portal=true) is on GitHub, and already includes a [Dockerfile](https://github.com/MicrosoftDocs/mslearn-aks-workshop-ratings-api/blob/master/Dockerfile?azure-portal=true), which builds images based on the Node.js Alpine image.
 
 1. Clone the repository onto the Cloud Shell.
 
@@ -130,7 +124,7 @@ The ratings API is a Node.js application, built using Express. The [source code]
 
 ### Build the *ratings-web* image
 
-The ratings frontend is a Node.js application, built using Vue and WebPack. The [source code](https://github.com/MicrosoftDocs/mslearn-aks-workshop-ratings-web?azure-portal=true) is on GitHub, and already includes a [Dockerfile](https://github.com/MicrosoftDocs/mslearn-aks-workshop-ratings-web/blob/master/Dockerfile?azure-portal=true) which builds images based on the Node.js Alpine image.
+The ratings frontend is a Node.js application that was built using Vue and WebPack. The [source code](https://github.com/MicrosoftDocs/mslearn-aks-workshop-ratings-web?azure-portal=true) is on GitHub, and already includes a [Dockerfile](https://github.com/MicrosoftDocs/mslearn-aks-workshop-ratings-web/blob/master/Dockerfile?azure-portal=true), which builds images based on the Node.js Alpine image.
 
 1. Change back to your home directory.
 
@@ -138,7 +132,7 @@ The ratings frontend is a Node.js application, built using Vue and WebPack. The 
     cd ~
     ```
 
-1. Clone the the *ratings-web* repo.
+1. Clone the *ratings-web* repo.
 
     ```azurecli
     git clone https://github.com/MicrosoftDocs/mslearn-aks-workshop-ratings-web.git
@@ -208,7 +202,7 @@ The images are now ready to be used.
 
 ## Configure the AKS cluster to authenticate to the container registry
 
-Integrate the Azure Container Registry with existing AKS cluster by supplying valid values for **AKS_CLUSTER_NAME** and **ACR_NAME**. This automatically configures the required service principal authentication between the 2 resources.
+Integrate the Azure Container Registry with existing AKS cluster by supplying valid values for **AKS_CLUSTER_NAME** and **ACR_NAME**. This automatically configures the required service principal authentication between the two resources.
 
 ```azurecli
 az aks update \
