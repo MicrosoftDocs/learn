@@ -12,54 +12,36 @@ metadata:
 durationInMinutes: 11
 content: |
   [!include[](includes/3-infrastructure-as-code.md)]
-# quiz:
-#   title: Check your knowledge
-#   questions:
+quiz:
+  title: Check your knowledge
+  questions:
 
-#     - content: "Which of the following is NOT one of the ways in which cloud computing benefits from virtualization?"
-#       choices:
-#       - content: "Increased elasticity"
-#         isCorrect: false
-#         explanation: "Incorrect. Virtualization supports elasticity by allowing VMs to be provisioned and deprovisioned dynamically in response to changing demand."
-#       - content: "Improved server utilization"
-#         isCorrect: false
-#         explanation: "Incorrect. Virtualization increases server utilization by allowing one server to do the work of many."
-#       - content: "Reduced energy costs and carbon footprint"
-#         isCorrect: false
-#         explanation: "Incorrect. Increased server utilization means you need fewer servers to handle a given workload, and fewer servers means less power consumption."
-#       - content: "Improved memory efficiency by sharing one operating system among multiple VMs"
-#         isCorrect: true
-#         explanation: "Correct! Every VM runs its own operating system, and VMs cannot share an operating system any more than two physical computers can share one copy of an operating system."
-#       - content: "Server consolidation"
-#         isCorrect: false
-#         explanation: "Incorrect. Virtualization supports server consolidation by allowing the work of several physical servers to be done in separate VMs on a single server."
-    
-#     - content: "Which of the following is an example of elasticity?"
-#       choices:
-#       - content: "Doubling the number of VMs hosting a web application in order to meet increased demand"
-#         isCorrect: true
-#         explanation: "Correct! This is known as scaling out, and the fact that VMs can be created much more quickly than physical servers can be deployed means the cloud can offer much greater elasticity than a data center that eschews virtualization."
-#       - content: "Increasing the ambient temperature in a data center to reduce cooling costs"
-#         isCorrect: false
-#         explanation: "Incorrect. Elasticity refers to scaling resources to meet changing demand."
-#       - content: "Replacing a PaaS application running Linux with a PaaS application running Windows with zero downtime"
-#         isCorrect: false
-#         explanation: "Incorrect. Elasticity refers to scaling resources to meet changing demand."
-#       - content: None of the above"
-#         isCorrect: false
-#         explanation: "Incorrect. Elasticity refers to scaling resources to meet changing demand."
+    - content: "Which of the following statements best describes the primary purpose of Infrastructure-as-Code (IaC)?"
+      choices:
+      - content: "The principal objective of IaC is to simplify the process of deploying cloud resources to two or more cloud environments."
+        isCorrect: false
+        explanation: "Incorrect. Some (but not all) IaC tools can be used to deploy resources to multiple cloud environments, but that is not IaC's principal objective."
+      - content: "The principal objective of IaC is to ensure the high availability of virtual machines and other cloud resources."
+        isCorrect: false
+        explanation: "Incorrect. IaC does not address availability. Its purpose is to make the composition of a solution deployed to the cloud both explicitly definable and dynamic like a program."
+      - content: "The principal objective of IaC is to define a process for achieving an outcome (for example, the process for provisioning a set of cloud resources) without having to define the outcome itself."
+        isCorrect: false
+        explanation: "Incorrect. With IaC, you define the outcome that you want, and an IaC tool creates a process for defining that outcome."
+      - content: "The principal objective of IaC is to make the composition of a solution deployed to the cloud both explicitly definable and dynamic like a program."
+        isCorrect: true
+        explanation: "Correct! Change a program, and you change what that program produces. Change a definition of a cloud solution, and IaC changes the solution."
 
-#     - content: "Jack unknowingly downloaded malicious code. This code intends to shut down the machine it is running on. Running this code in a virtual machine will impact which of the following?"
-#       choices:
-#       - content: "Programs running in the same virtual machine"
-#         isCorrect: true
-#         explanation: "Correct! Running the malicious code will only affect programs running in the same virtual machine."
-#       - content: "Programs running in other virtual machines"
-#         isCorrect: false
-#         explanation: "Incorrect. Running the malicious code will  only affect programs running in the same virtual machine."
-#       - content: "The physical machine that hosts the virtual machine"
-#         isCorrect: false
-#         explanation: "Incorrect. Running the malicious code will only affect programs running in the same virtual machine, not the physical machine on which the virtual machine is provisioned."
-#       - content: "All of the above"
-#         isCorrect: false
-#         explanation: "Incorrect. Running the malicious code will affect only programs running in the same virtual machine."
+    - content: "Which of the following actions might a cloud administrator perform with an IaC/CM tool?"
+      choices:
+      - content: "Use XML or another declarative language to define the resources that comprise a cloud solution, and then use an IaC/CM tool to deploy the solution to a cloud data center."
+        isCorrect: false
+        explanation: "Incorrect. This is one way to use an IaC/CM tool, but not the only one."
+      - content: "Revise an XML document that defines a cloud solution to include new cloud resources, and then use an IaC/CM tool to update the solution in a cloud data center."
+        isCorrect: false
+        explanation: "Incorrect. This is one way to use an IaC/CM tool, but not the only one."
+      - content: "Revise an XML document that defines a cloud solution to remove some resources and modify others, and then use an IaC/CM tool to update the solution in a cloud data center."
+        isCorrect: false
+        explanation: "Incorrect. This is one way to use an IaC/CM tool, but not the only one."
+      - content: "All of the above."
+        isCorrect: true
+        explanation: "Correct! IaC defines an outcome, and IaC/CM tool produces that outcome, regardless of whether cloud resources have to be created, modified, or deleted."
