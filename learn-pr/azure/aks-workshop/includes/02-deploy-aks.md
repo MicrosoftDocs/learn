@@ -79,7 +79,7 @@ If you don't specify the namespace when working with Kubernetes resources, the *
 
 1. List the current namespaces in the cluster.
 
-    ```azurecli
+    ```bash
     kubectl get namespace
     ```
 
@@ -95,7 +95,7 @@ If you don't specify the namespace when working with Kubernetes resources, the *
 
 1. You'll be using `kubectl create namespace` command to create a namespace for the application called **ratingsapp**.
 
-    ```azurecli
+    ```bash
     kubectl create namespace ratingsapp
     ```
 
