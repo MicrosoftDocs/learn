@@ -2,6 +2,10 @@ The ratings web frontend is a Node.js application. Recall that you've already cr
 
 In this exercise, you're going to deploy that Docker image of the frontend to the Azure Kubernetes Service (AKS) by creating a Kubernetes [deployment](https://docs.microsoft.com/azure/aks/concepts-clusters-workloads#deployments-and-yaml-manifests?azure-portal=true), and exposing it through a load balancer by creating a Kubernetes [service](https://docs.microsoft.com/azure/aks/concepts-network#services?azure-portal=true). Additionally, you're going to configure the frontend to connect to the ratings API you've already deployed.
 
+By the end of this unit, you should have deployed the ratings web frontend and configured it to communicate with ratings API. The frontend will be exposed through a public IP.
+
+![Deployed resources on the Azure Kubernetes Service cluster](../media/arch-3.png)
+
 ## Create a Kubernetes deployment file for the ratings web frontend
 
 1. Create a file called `ratings-web-deployment.yaml` using the integrated editor.
@@ -191,4 +195,3 @@ In this exercise, you created a deployment of the **ratings-web** and exposed it
 - **Deployment/ratings-web**. The web frontend.
 - **Service/ratings-web**. The load balanced service, which is exposed on the Azure Load Balancer through a public IP.
 
-![Deployed resources on the Azure Kubernetes Service cluster](../media/arch-3.png)

@@ -4,6 +4,10 @@ The application stores and retrieves item ratings from a MongoDB. In this excerc
 
 Charts are stored in Helm chart repositories. The official chart repository is maintained [here](https://github.com/helm/charts?azure-portal=true) and the [Helm Hub](https://hub.helm.sh?azure-portal=true) provides a way to discover and view documentation of such charts.
 
+By the end of this unit, you should have deployed MongoDB using Helm. You'll also store the MongoDB credentials in a Kubernetes secret.
+
+![Deployed resources on the Azure Kubernetes Service cluster](../media/arch-1.png)
+
 ## Add the Helm stable repository
 
 1. To use Helm you will need the `helm` command, which is already installed in the Cloud Shell. Helm provides a standard repository of charts for many different software packages, and it has one for [MongoDB](https://github.com/helm/charts/tree/master/stable/mongodb?azure-portal=true). The MongoDB chart is part of the official Helm **stable** charts repository. You'll need to configure the Helm client to use the stable repository by running the `helm repo add` command.
@@ -101,5 +105,3 @@ You now have an Azure Kubernetes Service cluster created and configured with a n
 - **Pod/ratings-mongodb-{random-string}**. Kubernetes uses pods to run an instance of MongoDB.
 - **Service/ratings-mongodb**. To simplify the network configuration, Kubernetes uses Services to logically group a set of pods together and provide network connectivity. Connectivity to the MongoDB is exposed via this service through the DNS name **ratings-mongodb.ratingsapp.svc.cluster.local**.
 - **Secret/mongosecret**. A Kubernetes Secret is used to inject sensitive data into pods, such as access credentials or keys. This secret holds the MongoDB connection details, and will be used in the next unit to configure the API to communicate with MongoDB.
-
-![Deployed resources on the Azure Kubernetes Service cluster](../media/arch-1.png)

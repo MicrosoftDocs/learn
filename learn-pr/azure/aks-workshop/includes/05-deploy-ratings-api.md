@@ -6,6 +6,10 @@ In this exercise, you're going to deploy that Docker image of the API to the Azu
 
 [!include[](../../../includes/azure-cloudshell-editor.md)]
 
+By the end of this unit, you should have deployed the ratings API and configured it to communicate with MongoDB.
+
+![Deployed resources on the Azure Kubernetes Service cluster](../media/arch-2.png)
+
 ## Create a Kubernetes deployment file for the ratings API
 
 1. Create a file called `ratings-api-deployment.yaml` using the integrated editor.
@@ -218,5 +222,3 @@ You've now created a deployment of the **ratings-api** consisting of two replica
 
 - **Deployment/ratings-api**. The API, running 2 replicas, which reads the MongoDB connection details by mounting the **mongosecret** as an environment variable.
 - **Service/ratings-api**. The API will be exposed internally within the cluster at `ratings-api.ratingsapp.svc.cluster.local:80`.
-
-![Deployed resources on the Azure Kubernetes Service cluster](../media/arch-2.png)
