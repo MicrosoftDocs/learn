@@ -45,7 +45,7 @@ Git is a collaboration tool that uses a distributed version control model, and i
 
 If you have an application that is hosted as a project in GitHub, you can make a local copy of the project, by cloning its repository using the **git clone** command. We'll do this in the next unit.
 
-## Editing files in the Cloud SHell
+## Editing files in the Cloud Shell
 
 You can use one of the built-in editors in the Cloud Shell to modify all the files that make up the application and add your Event Hub namespace, Event Hub name, shared access policy name, and primary key. 
 

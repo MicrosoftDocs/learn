@@ -34,6 +34,6 @@ modules:
 - learn.azure-security.configure-and-manage-azure-key-vault
 - learn.secure-azure-resources-with-rbac
 - learn.secure-your-azure-sql-database
-- learn.data-ai.data-warehouse-security
+#- learn.data-ai.data-warehouse-security
 trophy:
   uid: learn.secure-your-cloud-data.trophy
