@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.cmu-cloud-admin.cmu-orchestration.1-scripting-cloud-tasks
+uid: learn.cmu-cloud-admin.cmu-orchestration.2-scripting-cloud-tasks
 title: Scripting cloud tasks
 metadata:
   title: Scripting cloud tasks
@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 11
 content: |
-  [!include[](includes/1-scripting-cloud-tasks.md)]
+  [!include[](includes/2-scripting-cloud-tasks.md)]
 # quiz:
 #   title: Check your knowledge
 #   questions:

@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.cmu-cloud-admin.cmu-orchestration.2-infrastructure-as-code
+uid: learn.cmu-cloud-admin.cmu-orchestration.3-infrastructure-as-code
 title: Infrastructure as code
 metadata:
   title: Infrastructure as code
@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 11
 content: |
-  [!include[](includes/2-infrastructure-as-code.md)]
+  [!include[](includes/3-infrastructure-as-code.md)]
 # quiz:
 #   title: Check your knowledge
 #   questions:

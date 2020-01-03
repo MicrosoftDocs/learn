@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.cmu-cloud-admin.cmu-orchestration.5-summary
-title: Summary
+uid: learn.cmu-cloud-admin.cmu-orchestration.1-automation
+title: What is automation?
 metadata:
-  title: Summary
-  description: Summary
+  title: What is automation?
+  description: What is automation?
   ms.date: 12/31/2019
   author: shanamatthews
   ms.author: shanama
@@ -11,5 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 2
 content: |
-  [!include[](includes/5-summary.md)]
-  
+  [!include[](includes/1-automation.md)]
