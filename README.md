@@ -1,6 +1,6 @@
-# Microsoft Learn - Azure training content
+# Microsoft Learn - Cloud & AI training content
 
-This repository contains the Microsoft Learn modules and learning paths for Microsoft Azure. Review this README file to understand how you can assist in contributing to the Microsoft Learn training content.
+This repository contains the Microsoft Learn modules and learning paths for Microsoft Cloud & AI. Review this README file to understand how you can assist in contributing to the Microsoft Learn training content.
 
 ## Other Learn repos  
 
