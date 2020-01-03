@@ -3,7 +3,7 @@ uid: learn.azdo.run-non-functional-tests-azure-pipelines.5-run-load-tests
 title: Exercise - Run load tests in Azure Pipelines
 metadata:
   title: Exercise - Run load tests in Azure Pipelines
-  description: Run a test plan that performs load testing with Apache JMeter.
+  description: Run a test plan that does load testing by using Apache JMeter.
   ms.date: 09/30/2019
   author: tpetchel
   ms.author: thpetche

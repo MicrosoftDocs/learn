@@ -8,9 +8,10 @@ metadata:
   ms.author: Olivier.Bloch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  zone_pivot_groups: vs-vscode-language
 title:  Set up your development environment
 ### azureSandbox: true
 ### interactive: bash
-durationInMinutes: 15
+durationInMinutes: 10
 content: |
   [!include[](includes/4-set-up-your-development-environment.md)]

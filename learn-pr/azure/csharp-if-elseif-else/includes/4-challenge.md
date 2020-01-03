@@ -14,13 +14,10 @@ int daysUntilExpiration = random.Next(12);
 int discountPercentage = 0;
 
 // Your code goes here
-
-// You need to add code here, too
-Console.WriteLine("Click here to save " + discountPercentage + "%.");
 ```
 
 > [!IMPORTANT]
-> You can only remove the code comments.  In other words, the two lines of code that start with `//`.  You may not remove any other code.  Furthermore, you must use all of the variables in your code.
+> You can only remove the code comments.  In other words, you may remove the line of code that starts with `//`, but you may not remove any other code.  Furthermore, you must use all of the variables in your code.
 
 ### Step 3 - Use two if statements to implement the following business rules:
 

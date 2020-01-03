@@ -131,6 +131,8 @@ In YAML, you use the pipe (`|`) syntax to define a string that spans multiple li
 
 You'll work with a more complete example shortly when you set up the _Dev_ stage.
 
+A more complete description of conditions in Azure Pipelines can be found in the [expressions documentation](https://docs.microsoft.com/azure/devops/pipelines/process/expressions?view=azure-devops&azure-portal=true#job-status-functions).
+
 **Mara:** Conditions let us control which changes are promoted to which stages. We can produce a build artifact for any change to validate our build and confirm that it's healthy. When we're ready, we can merge those changes into a release branch and promote that build to the _Dev_ stage.
 
 ## Add the Test stage
