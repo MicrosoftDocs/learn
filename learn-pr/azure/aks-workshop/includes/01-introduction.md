@@ -20,8 +20,8 @@ In this module, you will:
 ## Prerequisites
 
 - Familiarity with Kubernetes and its concepts. If you are new to Kubernetes, start with the [basics of Kubernetes](https://azure.microsoft.com/topic/what-is-kubernetes/?azure-portal=true)
-- An Azure [subscription](https://azure.microsoft.com/free/services/kubernetes-service/?azure-portal=true)
-- [Azure Cloud Shell](https://shell.azure.com?azure-portal=true)
+- An Azure [subscription](https://azure.microsoft.com/free/services/kubernetes-service/?azure-portal=true) to deploy resources in
+- Familiarity with [Azure Cloud Shell](https://shell.azure.com?azure-portal=true)
 - A [GitHub](https://github.com/join?azure-portal=true) account
 
 ## Source code
