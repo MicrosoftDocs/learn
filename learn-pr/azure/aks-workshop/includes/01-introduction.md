@@ -1,6 +1,6 @@
 // TODO: Add intro text to introduce the scenario
 
-In this workshop, you’ll go through tasks that will help you master the basic and more advanced topics required to deploy a multi-container application to Kubernetes on Azure Kubernetes Service (AKS).
+In this workshop, you’ll go through tasks that will help you master the basic and more advanced tasks required to deploy a multi-container application to Kubernetes on Azure Kubernetes Service (AKS).
 
 Use this [pre-configured Azure Calculator](https://aka.ms/aks-workshop-estimate?azure-portal=true) to review a monthly cost-estimate of the resources that will be deployed.
 
@@ -9,10 +9,10 @@ Use this [pre-configured Azure Calculator](https://aka.ms/aks-workshop-estimate?
 In this module, you will:
 
 - Create an Azure Kubernetes Service (AKS) cluster
-- Build and push a containers based application to Azure Container Registry
+- Build and push a container-based application to Azure Container Registry
 - Deploy MongoDB using Helm 3
-- Use Kubernetes concepts such as Deployment, Service and Ingress to deploy an application to the Azure Kubernetes Service (AKS) cluster
-- Configure monitoring, Horizontal Pod Autoscaler and the Cluster Autoscaler
+- Use Kubernetes concepts such as Deployment, Service, and Ingress to deploy an application to the Azure Kubernetes Service (AKS) cluster
+- Configure monitoring, Horizontal Pod Autoscaler, and the Cluster Autoscaler
 - Build CI/CD pipelines
 - Scale using Virtual Nodes
 - Set up SSL/TLS
@@ -26,7 +26,7 @@ In this module, you will:
 
 ## Source code
 
-The application consists of 2 components: the API and the frontend. Both components are written in Node.js. The API stores data in a MongoDB.
+The application consists of two components: the API and the frontend. Both components are written in Node.js. The API stores data in a MongoDB.
 
 | Component                | Link                                                                                                           |
 |--------------------------|----------------------------------------------------------------------------------------------------------------|
