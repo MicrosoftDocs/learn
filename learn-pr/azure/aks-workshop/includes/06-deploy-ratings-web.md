@@ -16,24 +16,11 @@ In this exercise, you're going to deploy that Docker image of the frontend to th
 
 1. Create a file called `ratings-web-deployment.yaml` using the integrated editor.
 
-    ```azurecli
+    ```bash
     code ratings-web-deployment.yaml
     ```
 
-    **Replicas and image**
-
-    You will create a deployment running the image you pushed in the [Create a private, highly available container registry](03-deploy-acr) unit, for example  **`acr4229.azurecr.io/ratings-web:v1`**. The container listens to port **8080**. The deployment and the pods are going to be labeled with **app=ratings-web**.
-
-    > [!NOTE]
-    > Make sure to update the `image` value with your own image name and Azure Container Registry repository name.
-
-    **Environment variables**
-
-    The ratings frontend expects to connect to the API endpoint by configured in an `API` environment variable. If you used the defaults and deployed the ratings API service in the **ratingsapp** namespace, the value of that should be `http://ratings-api.ratingsapp.svc.cluster.local`.
-
-    **Resource requests and limits**
-
-    Each container instance will be allocated a minimum **0.25 cores** and **64 Mb of memory**. The Kubernetes scheduler will look for a node with available capacity to schedule such pod. A Container may or may not be allowed to exceed its CPU limit for extended periods of time. However, it will not be killed for excessive CPU usage. If a container exceeds its memory limit, it could be terminated.
+1. Paste the following text in the file.
 
     ```yaml
     apiVersion: apps/v1
@@ -52,7 +39,7 @@ In this exercise, you're going to deploy that Docker image of the frontend to th
         spec:
           containers:
           - name: ratings-web
-            image: acr4229.azurecr.io/ratings-web:v1 # IMPORTANT: update with your own repository
+            image: <acrname>.azurecr.io/ratings-web:v1 # IMPORTANT: update with your own repository
             imagePullPolicy: Always
             ports:
             - containerPort: 8080 # the application listens to this port
@@ -68,13 +55,29 @@ In this exercise, you're going to deploy that Docker image of the frontend to th
                 memory: 512Mi
     ```
 
-1. To save and close the editor, open the ``...`` action panel in the top right of the editor and select **Save**, then select **Close editor**.
+    In the `image` key update the value replacing `<acrname>` with the name of your Container Registry.
+
+1. Review the file, and note the following points:
+
+    - **Replicas and image**
+
+    You will create a deployment running the image you pushed in Azure Container Registry you created earlier, for example `acr4229.azurecr.io/ratings-web:v1`. The container listens to port **8080**. The deployment and the pods are going to be labeled with **app=ratings-web**.
+
+    - **Environment variables**
+
+    The ratings frontend expects to connect to the API endpoint by configured in an `API` environment variable. If you used the defaults and deployed the ratings API service in the **ratingsapp** namespace, the value of that should be `http://ratings-api.ratingsapp.svc.cluster.local`.
+
+    - **Resource requests and limits**
+
+    Each container instance will be allocated a minimum **0.25 cores** and **64 Mb of memory**. The Kubernetes scheduler will look for a node with available capacity to schedule such pod. A Container may or may not be allowed to exceed its CPU limit for extended periods of time. However, it will not be killed for excessive CPU usage. If a container exceeds its memory limit, it could be terminated.
+
+1. To save and close the editor, open the ``...`` action panel in the top right of the editor and select **Save**, then select **Close editor**. You an also use <kbd>Ctrl-s</kbd> to save, and <kbd>Ctrl-q</kbd> to close the editor.
 
 ## Apply the Kubernetes deployment file
 
 1. Apply the configuration using the `kubectl apply` command. You'll be deploying this in the **ratingsapp** namespace.
 
-    ```azurecli
+    ```bash
     kubectl apply --namespace ratingsapp -f ratings-web-deployment.yaml
     ```
 
@@ -86,7 +89,7 @@ In this exercise, you're going to deploy that Docker image of the frontend to th
 
 1. Watch the pods rolling out. You're querying for pods in the **ratingsapp** namespace which are labeled with **app=ratings-web**.
 
-    ```azurecli
+    ```bash
     kubectl get pods --namespace ratingsapp -l app=ratings-web -w
     ```
 
@@ -97,12 +100,11 @@ In this exercise, you're going to deploy that Docker image of the frontend to th
     ratings-web-fcc464b8d-vck96   1/1     Running   0          37s
     ```
 
-    > [!TIP]
-    > If the pods are not starting, not ready or are crashing, you can view their logs using `kubectl logs <pod name> --namespace ratingsapp` and `kubectl describe pod <pod name> --namespace ratingsapp`.
+    If the pods are not starting, not ready or are crashing, you can view their logs using `kubectl logs <pod name> --namespace ratingsapp` and `kubectl describe pod <pod name> --namespace ratingsapp`.
 
 1. Check the status of the deployment
 
-    ```azurecli
+    ```bash
     kubectl get deployment ratings-web --namespace ratingsapp
     ```
 
@@ -119,21 +121,11 @@ To simplify the network configuration for application workloads, Kubernetes uses
 
 1. Create a file called `ratings-web-service.yaml` using the integrated editor.
 
-    ```azurecli
+    ```bash
     code ratings-web-service.yaml
     ```
 
-    **Selector**
-
-    The set of pods targeted by a service is determined by the selector. In the example below, Kubernetes will load balance traffic to pods that have the label `app: ratings-web`, which was defined when creating the deployment. The controller for the service continuously scans for pods matching that label to add them to the load balancer.
-
-    **Ports**
-
-    A service can map an incoming `port` to a `targetPort`. The incoming port is what the service would respond to, while the target port is what the pods are configured to listen to. For example, the service will be exposed externally at port `80` and will load balance the traffic to the ratings-web pods listening on port `8080`.
-
-    **Type**
-
-    A service of type **LoadBalancer** creates an public IP address in Azure and assigns it to the Azure Load Balancer. Choosing this value makes the Service  reachable from outside the cluster.
+1. Paste the following text in the file.
 
     ```yaml
     apiVersion: v1
@@ -150,25 +142,41 @@ To simplify the network configuration for application workloads, Kubernetes uses
       type: LoadBalancer
     ```
 
+1. Review the file, and note the following points:
+
+    - **Selector**
+
+    The set of pods targeted by a service is determined by the selector. In the example below, Kubernetes will load balance traffic to pods that have the label `app: ratings-web`, which was defined when creating the deployment. The controller for the service continuously scans for pods matching that label to add them to the load balancer.
+
+    - **Ports**
+
+    A service can map an incoming `port` to a `targetPort`. The incoming port is what the service would respond to, while the target port is what the pods are configured to listen to. For example, the service will be exposed externally at port `80` and will load balance the traffic to the ratings-web pods listening on port `8080`.
+
+    - **Type**
+
+    A service of type **LoadBalancer** creates an public IP address in Azure and assigns it to the Azure Load Balancer. Choosing this value makes the Service  reachable from outside the cluster.
+
+1. To save and close the editor, open the ``...`` action panel in the top right of the editor and select **Save**, then select **Close editor**. You an also use <kbd>Ctrl-s</kbd> to save, and <kbd>Ctrl-q</kbd> to close the editor.
+
 ## Apply the Kubernetes service file to create a load balanced service
 
 1. Apply the configuration using the `kubectl apply` command. You'll be deploying this in the **ratingsapp** namespace.
 
-    ```azurecli
-    kubectl apply --namespace ratingsapp -f ratings-web-service.yaml
+    ```bash
+    kubectl apply \
+        --namespace ratingsapp \
+        -f ratings-web-service.yaml
     ```
 
-    You'll see an output like the below.
+    You'll output similar to the following:
 
     ```output
     service/ratings-web created
     ```
 
-1. Check the status of the service
+1. Next, let's check the status of the service. It takes a few minutes for the service to acquire the public IP. Run the following command with a *watch* by adding the `-w` flag to see it updating in real time. You can use <kbd>Ctrl-c</kbd> to stop watching.
 
-    It takes a few minutes for the service to acquire the public IP. Run the command with a *watch* by adding the `-w` flag to see it updating in real time. You can use `CTRL+C` to stop watching.
-
-    ```azurecli
+    ```bash
     kubectl get service ratings-web --namespace ratingsapp -w
     ```
 
@@ -180,15 +188,13 @@ To simplify the network configuration for application workloads, Kubernetes uses
     ratings-web   LoadBalancer   10.0.149.37  13.90.152.99   80:32747/TCP    5m
     ```
 
-    > [!TIP] Make note of that EXTERNAL-IP, for example 13.90.152.99, as you'll use it to access the application.
+    Make note of that EXTERNAL-IP, for example 13.90.152.99, as you'll use it to access the application.
 
 ## Test the application
 
 Now that the ratings-web service has a public IP, open that IP in your web browser, for example at **<http://13.90.152.99>** and you should be able to view and interact with the application.
 
 ![Screenshot of the ratings-web application](../media/ratings-web.png)
-
-## Summary
 
 In this exercise, you created a deployment of the **ratings-web** and exposed it to the internet through a LoadBalancer type service.
 
