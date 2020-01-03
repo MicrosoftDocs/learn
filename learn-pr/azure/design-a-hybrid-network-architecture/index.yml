@@ -2,22 +2,23 @@
 uid: learn.design-a-hybrid-network-architecture
 metadata:
   title: Design a hybrid network architecture on Azure
-  description: TODO
+  description: A customer has traditional on-premises infrastructure that they need to connect to resources in Azure. They need to select the appropriate connectivity method for their use cases, balancing functionality, cost, and security.
   ms.date: 04/30/2019
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Design a hybrid network architecture on Azure
-summary: TODO
+summary: A customer has traditional on-premises infrastructure that they need to connect to resources in Azure. They need to select the appropriate connectivity method for their use cases, balancing functionality, cost, and security.
 abstract: | 
   In this module, you will:
-  - TODO
-  - TODO
-  - TODO
+  - Identify the methods to integrate on-premises networks with Azure
+  - Identify the features and limitations of each method of network integration
+  - Select the appropriate hybrid network solution for given use cases
 prerequisites: | 
-  - TODO
-iconUrl: /learn/achievements/design-a-hybrid-network-architecture.svg
+  - Knowledge of networking fundamentals
+  - Familiarity with Azure virtual networking
+iconUrl: http://via.placeholder.com/120x120
 levels:
 - beginner
 roles:

@@ -40,7 +40,7 @@ Identify the subtasks of *Design a hybrid network architecture on Azure*
 | Subtask | What part of the introduction scenario does this subtask satisfy? | How will you assess it: **Exercise or Knowledge check**? | Which learning objective(s) does this help meet? | Does the subtask have enough learning content to justify an entire unit? If not, which other subtask will you combine it with? |
 | ---- |---|---|---|---|
 | On-premises network integration on Azure | Identify the methods to integrate on-premises networks with Azure | Knowledge Check | 1 | Yes |
-| Using Azure ExpressRoute for hybrid networks | Identify the methods to integrate on-premises networks with Azure | Knowledge Check | 1 | Yes |
+| Using Azure ExpressRoute for hybrid networks | Identify the methods to integrate on-premises networks with Azure | Knowledge Check | 2 | Yes |
 | Working with hybrid networks on Azure | Identify the methods to integrate on-premises networks with Azure | Knowledge Check | 2 | Yes |
 | Choosing a hybrid network architecture on Azure | Select the appropriate hybrid network solution for given use cases | Knowledge Check | 3 | Yes |
 ||||||
@@ -104,8 +104,8 @@ Identify the subtasks of *Design a hybrid network architecture on Azure*
             - Features of VPN Connections
             - Limitations of VPN Connections
         - Azure ExpressRoute
-            - Features of VPN Connections
-            - Limitations of VPN Connections
+            - Features of ExpressRoute Connections
+            - Limitations of ExpressRoute Connections
         - Hub-Spoke Topology Overview
             - Introduction to hub-spoke architecture
             - When to consider a hub-spoke architecture
@@ -131,7 +131,7 @@ Identify the subtasks of *Design a hybrid network architecture on Azure*
     - When would an organization want to use a VPN connection for failover?
     - Which is a key consideration for all Azure hybrid architectural patterns?
 
-7. **Summary**
+6. **Summary**
 
     *{How did you solve the problem in the initial scenario with the knowledge learned in the module?}*
 

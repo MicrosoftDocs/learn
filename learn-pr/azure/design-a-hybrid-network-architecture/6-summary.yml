@@ -2,14 +2,13 @@
 uid: learn.design-a-hybrid-network-architecture.6-summary
 metadata:
   title: Summary
-  description: TODO
+  description: Summary
   ms.date: 04/30/2019
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 title: Summary
-durationInMinutes: 5
+durationInMinutes: 2
 content: |
   [!include[](includes/6-summary.md)]
