@@ -6,10 +6,6 @@ In addition to storing container images, Azure Container Registry Tasks can buil
 
 In this unit, you will create an Azure Container Registry using the Azure CLI.
 
-[!include[](../../../includes/azure-exercise-subscription-prerequisite.md)]
-
-[!include[](../../../includes/azure-cloudshell-copy-paste-tip.md)]
-
 ## Create an Azure Container Registry
 
 1. Sign into the [Azure portal](https://portal.azure.com/?azure-portal=true) with your Azure subscription.
@@ -27,12 +23,16 @@ In this unit, you will create an Azure Container Registry using the Azure CLI.
 1. Use the `az acr create` command to create the registry in the same resource group and region as your Azure Kubernetes Service (AKS) cluster, for example **aksworkshop** in **East US**.
 
     ```azurecli
-    az acr create --resource-group aksworkshop --location eastus --name $ACR_NAME --sku Standard
+    az acr create \
+        --resource-group aksworkshop \
+        --location eastus \
+        --name $ACR_NAME \
+        --sku Standard
     ```
 
     You should a response similar to the below.
 
-    ```output
+    ```json
     {
       "adminUserEnabled": false,
       "creationDate": "2019-12-28T01:33:23.906677+00:00",
@@ -68,26 +68,23 @@ In this unit, you will create an Azure Container Registry using the Azure CLI.
     }
     ```
 
-> [!IMPORTANT]
-> You'll use the `$ACR_NAME` variable in subsequent commands.
-
 ## Build the container images using Azure Container Registry Tasks
 
 Suppose your company makes use of container images to manage compute workloads. You use the local Docker tooling to build your container images.
 
 You can also use Azure Container Registry  to build these containers. A standard Dockerfile provides build instructions. Azure Container Registry allows you to reuse any Dockerfile currently in your environment, including multi-staged builds.
 
-### Build the `ratings-api` image
+### Build the *ratings-api* image
 
-The ratings API is a Node.js application, built using Express. The [source code](https://github.com/MicrosoftDocs/mslearn-aks-workshop-ratings-api) is on GitHub, and already includes a [Dockerfile](https://github.com/MicrosoftDocs/mslearn-aks-workshop-ratings-api/blob/master/Dockerfile) which builds images based on the Node.js Alpine image.
+The ratings API is a Node.js application, built using Express. The [source code](https://github.com/MicrosoftDocs/mslearn-aks-workshop-ratings-api?azure-portal=true) is on GitHub, and already includes a [Dockerfile](https://github.com/MicrosoftDocs/mslearn-aks-workshop-ratings-api/blob/master/Dockerfile?azure-portal=true) which builds images based on the Node.js Alpine image.
 
-1. Clone the repository onto the Cloud Shell
+1. Clone the repository onto the Cloud Shell.
 
     ```azurecli
     git clone https://github.com/MicrosoftDocs/mslearn-aks-workshop-ratings-api.git
     ```
 
-1. Change into the new cloned directory
+1. Change into the new cloned directory.
 
     ```azurecli
     cd mslearn-aks-workshop-ratings-api
@@ -96,7 +93,9 @@ The ratings API is a Node.js application, built using Express. The [source code]
 1. Run `az acr build`. This command builds a container image using the Dockerfile, then pushes the resulting image to the container registry.
 
     ```azurecli
-    az acr build --registry $ACR_NAME --image ratings-api:v1 .
+    az acr build \
+        --registry $ACR_NAME \
+        --image ratings-api:v1 .
     ```
 
     > [!NOTE]
@@ -105,7 +104,7 @@ The ratings API is a Node.js application, built using Express. The [source code]
     In a few minutes, you should see a response similar to the below.
 
     ```output
-    2019/12/28 02:04:11 Successfully pushed image: acr4229.azurecr.io/ratings-web:v1
+    2019/12/28 02:04:11 Successfully pushed image: acr4229.azurecr.io/ratings-api:v1
     2019/12/28 02:04:11 Step ID: build marked as successful (elapsed time in seconds: 240.205952)
     2019/12/28 02:04:11 Populating digests for step ID: build...
     2019/12/28 02:04:13 Successfully populated digests for step ID: build
@@ -114,7 +113,7 @@ The ratings API is a Node.js application, built using Express. The [source code]
     2019/12/28 02:04:13
     - image:
         registry: acr4229.azurecr.io
-        repository: ratings-web
+        repository: ratings-api
         tag: v1
         digest: sha256:b35cc14b16e3a4f51b86d0ed61f74dcfabb00f63e015ed33ec1fe7f48c55abda
       runtime-dependency:
@@ -127,20 +126,19 @@ The ratings API is a Node.js application, built using Express. The [source code]
     Run ID: ca2 was successful after 4m41s
     ```
 
-    > [!IMPORTANT]
-    > Make note of the pushed image registry and name, for example **`acr4229.azurecr.io/ratings-web:v1`**. You'll need this when configuring the Kubernetes deployment.
+    Make note of the pushed image registry and name, for example `acr4229.azurecr.io/ratings-api:v1`. You'll need this when configuring the Kubernetes deployment.
 
-### Build the `ratings-web` image
+### Build the *ratings-web* image
 
-The ratings frontend is a Node.js application, built using Vue and WebPack. The [source code](https://github.com/MicrosoftDocs/mslearn-aks-workshop-ratings-web) is on GitHub, and already includes a [Dockerfile](https://github.com/MicrosoftDocs/mslearn-aks-workshop-ratings-web/blob/master/Dockerfile) which builds images based on the Node.js Alpine image.
+The ratings frontend is a Node.js application, built using Vue and WebPack. The [source code](https://github.com/MicrosoftDocs/mslearn-aks-workshop-ratings-web?azure-portal=true) is on GitHub, and already includes a [Dockerfile](https://github.com/MicrosoftDocs/mslearn-aks-workshop-ratings-web/blob/master/Dockerfile?azure-portal=true) which builds images based on the Node.js Alpine image.
 
-1. Make sure you're back on the parent folder
+1. Change back to your home directory.
 
     ```azurecli
-    cd ..
+    cd ~
     ```
 
-1. Clone onto the Cloud Shell
+1. Clone the the *ratings-web* repo.
 
     ```azurecli
     git clone https://github.com/MicrosoftDocs/mslearn-aks-workshop-ratings-web.git
@@ -155,16 +153,15 @@ The ratings frontend is a Node.js application, built using Vue and WebPack. The 
 1. Run `az acr build`. This command builds a container image using the Dockerfile, then pushes the resulting image to the container registry.
 
     ```azurecli
-    az acr build --registry $ACR_NAME --image ratings-web:v1 .
+    az acr build \
+        --registry $ACR_NAME \
+        --image ratings-web:v1 .
     ```
-
-    > [!NOTE]
-    > Don't forget the period `.` at the end of the preceding command. It represents the source directory containing the docker file, which in our case is the current directory. Since we didn't specify the name of a file with the --file parameter, the command looks for a file called **Dockerfile** in our current directory.
 
     In a few minutes, you should see a response similar to the below.
 
     ```output
-    2019/12/28 02:09:51 Successfully pushed image: acr4229.azurecr.io/ratings-api:v1
+    2019/12/28 02:09:51 Successfully pushed image: acr4229.azurecr.io/ratings-web:v1
     2019/12/28 02:09:51 Step ID: build marked as successful (elapsed time in seconds: 26.612936)
     2019/12/28 02:09:51 Populating digests for step ID: build...
     2019/12/28 02:09:53 Successfully populated digests for step ID: build
@@ -173,7 +170,7 @@ The ratings frontend is a Node.js application, built using Vue and WebPack. The 
     2019/12/28 02:09:53
     - image:
         registry: acr4229.azurecr.io
-        repository: ratings-api
+        repository: ratings-web
         tag: v1
         digest: sha256:ae4bab55e74d057e48b05b45761eef8d1c71874d9cfeeef6e0c3c1178f01f0f2
       runtime-dependency:
@@ -186,15 +183,16 @@ The ratings frontend is a Node.js application, built using Vue and WebPack. The 
     Run ID: ca3 was successful after 1m9s
     ```
 
-    > [!IMPORTANT]
-    > Make note of the pushed image registry and name, for example **`acr4229.azurecr.io/ratings-api:v1`**. You'll need this when configuring the Kubernetes deployment.
+    Make note of the pushed image registry and name, for example `acr4229.azurecr.io/ratings-web:v1`. You'll need this when configuring the Kubernetes deployment.
 
 ## Verify the images
 
 1. Run the following command in the Cloud Shell to verify that the images have been created and stored in the registry.
 
     ```azurecli
-    az acr repository list --name $ACR_NAME --output table
+    az acr repository list \
+        --name $ACR_NAME \
+        --output table
     ```
 
     The output from this command should look similar to the following:
@@ -208,10 +206,13 @@ The ratings frontend is a Node.js application, built using Vue and WebPack. The 
 
 The images are now ready to be used.
 
-## Configure the Azure Kubernetes Service (AKS) cluster to authenticate to the container registry
+## Configure the AKS cluster to authenticate to the container registry
 
-Integrate the Azure Container Registry with existing Azure Kubernetes Service (AKS) cluster by supplying valid values for **AKS_CLUSTER_NAME** and **ACR_NAME**. This automatically configures the required service principal authentication between the 2 resources.
+Integrate the Azure Container Registry with existing AKS cluster by supplying valid values for **AKS_CLUSTER_NAME** and **ACR_NAME**. This automatically configures the required service principal authentication between the 2 resources.
 
 ```azurecli
-az aks update --name $AKS_CLUSTER_NAME --resource-group aksworkshop --attach-acr $ACR_NAME
+az aks update \
+    --name $AKS_CLUSTER_NAME \
+    --resource-group aksworkshop \
+    --attach-acr $ACR_NAME
 ```
