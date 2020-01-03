@@ -1,69 +1,79 @@
-To fully test our one refrigerated truck device, it helps to break down the testing into a number of discreet checks:
+Working through this unit is an exciting time in IoT Central development! Finally, you get to check whether all the moving parts you've created work together.
 
-1. The Node.js app connects to Azure IoT Central.
-1. The telemetry functions send data on the specified interval, and that data is picked up correctly by IoT Central.
+  > [!TIP]
+  > It can be helpful to have multiple monitors available, to display all the browser windows and console screens that are active at the same time.
+
+## Test the device app and IoT Central app together
+
+To fully test the refrigerated truck device, it helps to break down the testing into a number of discreet checks:
+
+1. The device app connects to Azure IoT Central.
+1. The telemetry functions send data on the specified interval.
+1. The data is picked up correctly by IoT Central.
 1. The command to send the truck to a specified customer works as expected.
 1. The command to recall the truck works as expected.
 1. Check customer and conflict events are transmitted correctly.
+1. Check the truck properties, and change the optimal temperature.
 
-In addition to this list, there are edge-cases you could also investigate, such as what happens when the truck's contents start to melt. However, as you have left this state up to chance in our simulation (note the use of random numbers in our code in the previous unit), you can perhaps leave this check out of our first round of testing.
+In addition to this list, there are edge-cases you could also investigate. One such case is what happens when the truck's contents start to melt? This state is left up to chance in our simulation, with the use of random numbers in our code in the previous unit.
 
-To begin the testing, with your [Azure IoT Central](https://apps.azureiotcentral.com/?azure-portal=true) app open in a browser, run the Node.js app (**Debug/Start without Debugging** from Visual Studio, or enter `node app.js` into a terminal in Visual Studio Code). A console screen should open, with the text: **Starting Truck number 1**.
+To begin the testing, with your [Azure IoT Central](https://apps.azureiotcentral.com/?azure-portal=true) app open in a browser, run the device app.
 
-## Confirm the Node.js app connects to Azure IoT Central
+::: zone pivot="vs-csharp,vs-node"
 
-1. If the second line on the console is **Device successfully connected to Azure IoT Central** you have made the connection.
-1. The "connected" line should be followed by some text verifying the settings and properties were sent successfully. If you do not get this message, it usually means either the IoT Central app is not running, or the connection string is not correct.
+1. In Visual Studio, select **Debug/Start without Debugging**.
 
-## Confirm the telemetry functions send data on the specified interval, and that data is picked up correctly by IoT Central
+::: zone-end
+::: zone pivot="vscode-node"
+
+1. In the terminal, enter `node app.js`.
+
+::: zone-end
+::: zone pivot="vscode-csharp"
+
+1. In the terminal, enter `dotnet run`.
+
+::: zone-end
+
+A console screen should open, with the text: **Starting Truck number 1**.
+
+### 1. Confirm the device app connects to Azure IoT Central
+
+1. If one of the next lines on the console is **Device successfully connected to Azure IoT Central** you've made the connection. If you do not get this message, it usually means either the IoT Central app isn't running, or the connection key strings aren't correct.
+
+1. The "connected" line should be followed by some text verifying the settings and properties were sent successfully.
+
+    [![Screenshot showing the connection to IoT Central from the device app was made correctly](../media/refrigerated-trucks-connected.png)](../media/refrigerated-trucks-connected.png#lightbox)
+
+If all goes well, go straight into the second test.
+
+### 2. Confirm the telemetry functions send data on the specified interval
 
 1. A console message should appear every five seconds, with the contents temperature.
 
-1. To verify the data is being received at IoT Central, make sure your app is open, and select the **Devices** entry in the left-hand menu. Double-click the real device (**RefrigeratedTruck - 1**), not the simulated device, in the list of devices.
+1. Watch the telemetry for a short while, and mentally prepare for the main test of this module!
 
-    >[!TIP]
-    > These steps are an exciting time in IoT Central development! It can be helpful to have multiple monitors available for all the screens that are active.
+### 3. Confirm the data is picked up correctly by IoT Central
 
-1. Verify approximately that the temperatures being sent by the Node.js app, in the console window, match the data being shown in the telemetry view of the IoT Central app.
+1. To verify the data is being received at IoT Central, make sure your IoT Central pp is open, and the device selected. If not, select the **Devices** entry in the left-hand menu. Double-click the real device (**RefrigeratedTruck - 1**), in the list of devices.
 
-    | Node.js | IoT Central |
+1. Locate the **Contents temperature** tile, and verify approximately that the temperatures being sent by the device app, in the console window, match the data being shown in the telemetry view of the IoT Central app.
+
+    | IoT Central | Device app |
     | --- | --- |
-    | ![Screenshot showing the console output from the Node.js app, showing the truck contents temperatures](../media/refrigerated-trucks-console.png) | ![Screenshot showing the chart view in IoT Central, receiving the truck temperatures](../media/refrigerated-trucks-central.png) |
+    | [![Screenshot showing a tile in IoT Central, receiving the truck temperatures](../media/refrigerated-trucks-central.png)](../media/refrigerated-trucks-central.png#lightbox) | [![Screenshot showing the console output from the device app, showing the truck contents temperatures](../media/refrigerated-trucks-console.png)](../media/refrigerated-trucks-console.png#lightbox) |
 
-1. Hover the mouse over the states in the IoT Central app, in the charts view, just to verify the truck and its contents are in the expected state.
+    > [!NOTE]
+    > The screenshots in this module are taken from the C# version of the app. The Node.js app screens will be similar, but not identical.
 
-1. Check the map view for the device. A blue circle near Seattle, USA shows our truck ready to go. You may have to zoom in a bit. Remember too, to make sure the visibility icon for **Location** is enabled.
+1. Check the state tiles: **Truck state**, **Cooling system state**, and **Contents state** in the IoT Central app, to verify the truck and its contents are in the expected state.
 
-    ![Screenshot showing the map view of our first truck at its base in Seattle](../media/refrigerated-trucks-seattle.png)
+1. Check the **Location** map view for the device. A blue circle near Seattle, USA shows our truck ready to go. You may have to zoom out a bit.
 
-## Confirm the command to send the truck to a specified customer works as expected
+    [![Screenshot showing the location of the truck at its base in Seattle](../media/refrigerated-trucks-seattle.png)](../media/refrigerated-trucks-seattle.png#lightbox)
 
-1. Now for the best fun of all. Click the **Commands** title for the device. Enter a customer ID, say "6" ("0" through "9" are valid customer IDs), and click **Run**.
-
-1. In the console for the Node.js app, you should see **Number of points=**, followed by a list of lat/lon coordinates. If you see a message including the text "Access denied due to invalid subscription key", then check your subscription key to Azure Maps.
-
-1. Go back to the **Measurements** view in IoT Central. Hover over the Truck state bar chart, does it say "enroute"? Now, select the map view. Is your truck on its way? You might have to wait a short time for the apps to sync up.
-
-    ![Screenshot showing the map view of our first truck delivery route](../media/refrigerated-trucks-first-delivery.png)
-
-1. Great progress! Take a moment to just watch the map update, and your truck deliver its contents.
-
-## Confirm the command to recall the truck works as expected
-
-1. When the truck returns to base, try issuing another delivery command. Choose another customer ID.
-1. Issue a recall command before the truck reaches its customer, to check the truck responds to this command.
-
-## Check customer and conflict events are transmitted correctly
-
-1. Go to the table view for the device. Change the time range to the past hour. Click on **Show details** for any event that appears (you might have to scroll the table to the right). There should be informational events showing the change of customer ID.
-
-1. To test a conflict event, send a returning truck a command to deliver to another customer, or any other command that you know doesn't make sense.
-
-  > [!TIP]
-  > In the map view, to better see where a truck is at any one moment, change the **Location** settings to show **Latest**. For the full route, choose **History**.
-  >
-  > ![Screenshot showing how to change the map view mode to History or Latest](../media/refrigerated-trucks-history.png)
+If all is well, this is great progress. The truck is at its base, in the correct state, and waiting for a command.
 
 ## Next steps
 
-Before you move on to adding multiple devices, there is a short knowledge check to help establish what you have learned in the past few units.
+Before you move on to the next steps of the testing, there's a short knowledge check to help establish what you've learned in the past few units.
