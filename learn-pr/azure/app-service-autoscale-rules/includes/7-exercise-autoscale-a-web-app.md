@@ -14,9 +14,13 @@ The exercise also runs a client app that simulates a number of users issuing POS
 
 1. Sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true).
 
-1. Choose **Create a resource**, select **Web**, and then click **Web App**.
+1. From the Azure portal menu, select **Create a resource**.
 
-    ![Screenshot of the New pane in the Azure portal showing the Web options available in the Azure Marketplace](../media/7-search-web-app-annotated.png)
+    ![Screenshot of Azure portal menu and Create a resource option.](../media/7-create-a-resource.png)
+
+1. Select **Web**, and then select **Web App**.
+
+    ![Screenshot of the Web and Web App options.](../media/7-search-web-app-annotated.png)
 
 1. Specify the values in the following table for the properties of the web app.
 
