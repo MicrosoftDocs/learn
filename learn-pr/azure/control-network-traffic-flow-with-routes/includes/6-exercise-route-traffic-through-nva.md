@@ -130,4 +130,4 @@ The final steps use the Linux `traceroute` utility to show how traffic is routed
 
    ![Route from private to public](../media/6-private-public-route.svg)
 
-You've now configured routing between subnets to direct traffic from the public internet through the **dmzsubnet** subnet before it reaches the private subnet. In the **dmzsubnet** subnet, you added a virtual machine that acts as an NVA. You can implement logic in this NVA to detect potentially malicious requests and block them before they reach their intended targets.
+You've now configured routing between subnets to direct traffic from the public internet through the **dmzsubnet** subnet before it reaches the private subnet. In the **dmzsubnet** subnet, you added a virtual machine that acts as an NVA. You can configure this NVA to detect potentially malicious requests and block them before they reach their intended targets.
