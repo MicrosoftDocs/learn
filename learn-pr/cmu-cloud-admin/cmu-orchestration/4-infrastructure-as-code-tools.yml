@@ -16,7 +16,7 @@ quiz:
   title: Check your knowledge
   questions:
     
-    - content: "You are creating an Azure Resource Manager (ARM) template that defines a cloud solution comprising virtual machines, storage accounts, message queues, and other resources. The template is written in JSON. At run-time, you want to require users to select the Azure region region to which these resources are deployed. What is the proper way to accomplish that with an ARM template?"
+    - content: "You are creating an Azure Resource Manager template that defines a cloud solution comprising virtual machines, storage accounts, message queues, and other resources. The template is written in JSON. At run-time, you want to require users to select the Azure region region to which these resources are deployed. What is the proper way to accomplish that with an Azure Resource Manager template?"
       choices:
       - content: "Define the region as an input parameter in the template's `parameters` section."
         isCorrect: true
@@ -27,21 +27,21 @@ quiz:
       - content: "Write a custom script that prompts the user to select a region and invoke the script from the template."
         isCorrect: false
         explanation: "Incorrect. The `parameters` section enables you to define parameters that users provide when the template is executed."
-      - content: "None of the above. ARM templates do not support user-defined parameters."
+      - content: "None of the above. Azure Resource Manager templates do not support user-defined parameters."
         isCorrect: false
         explanation: "Incorrect. The `parameters` section enables you to define parameters that users provide when the template is executed."
 
-    - content: "Which of the following statements regarding ARM templates is false?"
+    - content: "Which of the following statements regarding Azure Resource Manager templates is false?"
       choices: 
-        - content: "ARM templates may be written in JSON, but not XML."
+        - content: "Azure Resource Manager templates may be written in JSON, but not XML."
           isCorrect: false
-          explanation: "Incorrect. ARM templates are written in JavaScript Object Notation, otherwise known as JSON."
-        - content: "Resource names and other attributes specified in an ARM template can reference variables and parameters defined elsewhere in the template."
+          explanation: "Incorrect. Azure Resource Manager templates are written in JavaScript Object Notation, otherwise known as JSON."
+        - content: "Resource names and other attributes specified in an Azure Resource Manager template can reference variables and parameters defined elsewhere in the template."
           isCorrect: false
-          explanation: "Incorrect. ARM templates support certain aspects of a programming language, including the ability to use variables and parameters."
-        - content: "ARM templates can be used to deploy resources to Azure and AWS."
+          explanation: "Incorrect. Azure Resource Manager templates support certain aspects of a programming language, including the ability to use variables and parameters."
+        - content: "Azure Resource Manager templates can be used to deploy resources to Azure and AWS."
           isCorrect: true
-          explanation: "Correct! ARM templates can only be used to deploy and update Azure resources."
-        - content: "ARM templates can be executed with CLI or PowerShell commands, by applications written in Java, and from the Azure Portal."
+          explanation: "Correct! Azure Resource Manager templates can only be used to deploy and update Azure resources."
+        - content: "Azure Resource Manager templates can be executed with CLI or PowerShell commands, by applications written in Java, and from the Azure Portal."
           isCorrect: false
-          explanation: "Incorrect. ARM templates can be executed using any of these means."
+          explanation: "Incorrect. Azure Resource Manager templates can be executed using any of these means."

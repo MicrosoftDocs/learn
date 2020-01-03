@@ -10,7 +10,7 @@ Here are some of the key take-aways from this module:
 
 - CM systems embody the concept of Infrastructure-as-Code (IaC), in which the state of a system is defined using a declarative or imperative language. With IaC, you can make a change to a system by changing the code that defines it.
 
-- One example of IaC is Azure Resource Manager (ARM) templates, which define Azure resources (and sets of resources) using JSON. ARM templates are Azure-specific and do not work with other cloud providers.
+- One example of IaC is Azure Resource Manager templates, which define Azure resources (and sets of resources) using JSON. Azure Resource Manager templates are Azure-specific and do not work with other cloud providers.
 
 - Some configuration-management platforms, including Chef, Puppet, and Ansible, can work with multiple cloud service providers.
 
