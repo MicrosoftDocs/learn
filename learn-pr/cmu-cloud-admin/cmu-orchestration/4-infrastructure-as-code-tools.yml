@@ -9,7 +9,7 @@ metadata:
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 13
+durationInMinutes: 15
 content: |
   [!include[](includes/4-infrastructure-as-code-tools.md)]
 quiz:
@@ -30,3 +30,18 @@ quiz:
       - content: "None of the above. ARM templates do not support user-defined parameters."
         isCorrect: false
         explanation: "Incorrect. The "parameters" section enables you to define parameters that users provide when the template is executed."
+
+    - content: "Which of the following statements regarding ARM templates is false?"
+      choices: 
+        - content: "ARM templates may be written in JSON, but not XML."
+          isCorrect: false
+          explanation: "Incorrect. ARM templates are written in JavaScript Object Notation, otherwise known as JSON."
+        - content: "Resource names and other attributes specified in an ARM template can reference variables and parameters defined elsewhere in the template."
+          isCorrect: false
+          explanation: "Incorrect. ARM templates support certain aspects of a programming language, including the ability to use variables and parameters."
+        - content: "ARM templates can be used to deploy resources to Azure and AWS."
+          isCorrect: true
+          explanation: "Correct! ARM templates can only be used to deploy and update Azure resources."
+        - content: "ARM templates can be executed with CLI or PowerShell commands, by applications written in Java, and from the Azure Portal."
+          isCorrect: false
+          explanation: "Incorrect. ARM templates can be executed using any of these means."
