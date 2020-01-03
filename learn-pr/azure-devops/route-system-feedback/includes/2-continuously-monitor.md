@@ -87,7 +87,7 @@ To ensure that your monitoring efforts are effective, you need to notify adminis
     The goal is to ensure that each alert represents a critical condition that you can act on. A _false positive_ happens when monitoring reports an issue that does not actually exist. Use dynamic thresholds to automatically calculate baselines on metric data rather than defining your own static thresholds.
 * Define actions for alerts to that most effectively notify your administrators.
 
-    Available [actions for notification](https://docs.microsoft.com/azure/azure-monitor/platform/action-groups#create-an-action-group-by-using-the-azure-portal?azure-portal=true) include short message service (SMS), email, push notifications, or voice calls.
+    Available [actions for notification](https://docs.microsoft.com/azure/azure-monitor/platform/action-groups#create-an-action-group-by-using-the-azure-portal) include short message service (SMS), email, push notifications, or voice calls.
 * Use more advanced actions to [connect to your ITSM tool](https://docs.microsoft.com/azure/azure-monitor/platform/itsmc-overview?azure-portal=true) or other alert management systems through webhooks.
 * Use [Azure Automation runbooks](https://docs.microsoft.com/azure/automation/manage-runbooks?azure-portal=true) or [webhooks](https://docs.microsoft.com/azure/azure-monitor/platform/activity-log-alerts-webhook?azure-portal=true) to remediate alert conditions.
 * Use [autoscaling](https://docs.microsoft.com/azure/azure-monitor/learn/tutorial-autoscale-performance-schedule?azure-portal=true) to dynamically adjust your compute resources based on the metrics you collect.
