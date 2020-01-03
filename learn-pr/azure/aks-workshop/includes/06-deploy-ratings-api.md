@@ -158,15 +158,15 @@ To simplify the network configuration for application workloads, Kubernetes uses
 
 1. Review the file, and note the following points:
 
-    **Selector**
+    - **Selector**
 
     The set of pods targeted by a service is determined by the selector. In the example below, Kubernetes will load balance traffic to pods that have the label `app: ratings-api`, which was defined when creating the deployment. The controller for the service continuously scans for pods matching that label to add them to the load balancer.
 
-    **Ports**
+    - **Ports**
 
     A service can map an incoming `port` to a `targetPort`. The incoming port is what the service would respond to, while the target port is what the pods are configured to listen to. For example, the service will be exposed internally within the cluster at `ratings-api.ratingsapp.svc.cluster.local:80` and will load balance the traffic to the ratings-api pods listening on port `3000`.
 
-    **Type**
+    - **Type**
 
     A service of type **Cluster IP** creates an internal IP address for use within the cluster. Choosing this value makes the Service only reachable from within the cluster. This is the default service type.
 
