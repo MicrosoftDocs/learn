@@ -12,36 +12,21 @@ metadata:
 durationInMinutes: 11
 content: |
   [!include[](includes/5-terraform.md)]
-# quiz:
-#   title: Check your knowledge
-#   questions:
+quiz:
+  title: Check your knowledge
+  questions:
 
-#     - content: "What is the primary reason for placing Azure resources in separate network security groups (NSGs)?"
-#       choices:
-#       - content: "To perform load balancing between the resources in the NSGs."
-#         isCorrect: false
-#         explanation: "Incorrect. NSGs are an abstraction of firewalls, and two NSGs can have different firewall rules applied."
-#       - content: "To allow multiple NSGs to share a network interface adapter (NIC)."
-#         isCorrect: false
-#         explanation: "Incorrect. NSGs are an abstraction of firewalls, and two NSGs can have different firewall rules applied."
-#       - content: "To prevent an application that crashes on a host in one NSG from affecting resources in the other NSGs."
-#         isCorrect: false
-#         explanation: "Incorrect. NSGs are an abstraction of firewalls, and two NSGs can have different firewall rules applied."
-#       - content: "To apply different firewall rules to each set of resources."
-#         isCorrect: true
-#         explanation: "Correct! NSGs are an abstraction of firewalls, and two NSGs can have different firewall rules applied."
-
-#     - content: "Azure supports VNet peering for VNets in the same region, and global VNet peering for VNets in different Azure regions. What is the purpose of VNet peering?"
-#       choices:
-#         - content: "To connect VNets so together so that they function as one network."
-#           isCorrect: true
-#           explanation: "Correct! Once peered, resources in one VNet can be accessed as if they were part of the other VNet."
-#         - content: "To isolate traffic in one VNet from traffic in the other."
-#           isCorrect: false
-#           explanation: "Incorrect. Once peered, resources in one VNet can be accessed as if they were part of the other VNet."
-#         - content: "To conserve memory by reducing the size of the network routing tables."
-#           isCorrect: false
-#           explanation: "Incorrect. Once peered, resources in one VNet can be accessed as if they were part of the other VNet."
-#         - content: "To ensure that each VNet has its own network security group."
-#           isCorrect: false
-#           explanation: "Incorrect. Once peered, resources in one VNet can be accessed as if they were part of the other VNet."
+    - content: "Which of the following statements regarding Terraform is true?"
+      choices:
+      - content: "Terraform supports any cloud platform for which a resource provider is available and can be used to deploy resources to multiple cloud platforms."
+        isCorrect: true
+        explanation: "Correct!"
+      - content: "Terraform is compatible with popular configuration managers such as Chef and Puppet but cannot be used to manage resources that are already managed by these configuration managers."
+        isCorrect: false
+        explanation: "Incorrect. Terraform CAN be used to manage resources managed by other configuration managers, and in fact can use other configuration managers itself."
+      - content: "Terraform can be used to deploy and manage virtual machines, but not containerized solutions."
+        isCorrect: false
+        explanation: "Incorrect. Terraform is capable of working with Kubernetes to make decisions about cluster organization and resource capacities."
+      - content: "Terraform uses a declarative language that is identical to JSON."
+        isCorrect: false
+        explanation: "Incorrect. Terraform uses a declarative language that is unique to Terraform."
