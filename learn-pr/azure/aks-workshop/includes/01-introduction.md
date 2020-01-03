@@ -2,7 +2,7 @@
 
 In this workshop, you’ll go through tasks that will help you master the basic and more advanced topics required to deploy a multi-container application to Kubernetes on Azure Kubernetes Service (AKS).
 
-Use this [pre-configured Azure Calculator](https://aka.ms/aks-workshop-estimate) to review a monthly cost-estimate of the resources that will be deployed.
+Use this [pre-configured Azure Calculator](https://aka.ms/aks-workshop-estimate?azure-portal=true) to review a monthly cost-estimate of the resources that will be deployed.
 
 ## Learning objectives
 
@@ -19,10 +19,10 @@ In this module, you will:
 
 ## Prerequisites
 
-- Familiarity with Kubernetes and its concepts. If you are new to Kubernetes, start with the [basics of Kubernetes](https://azure.microsoft.com/topic/what-is-kubernetes/)
-- An Azure [subscription](https://azure.microsoft.com/free/services/kubernetes-service/)
-- [Azure Cloud Shell](https://shell.azure.com)
-- A [GitHub](https://github.com/join) account
+- Familiarity with Kubernetes and its concepts. If you are new to Kubernetes, start with the [basics of Kubernetes](https://azure.microsoft.com/topic/what-is-kubernetes/?azure-portal=true)
+- An Azure [subscription](https://azure.microsoft.com/free/services/kubernetes-service/?azure-portal=true)
+- [Azure Cloud Shell](https://shell.azure.com?azure-portal=true)
+- A [GitHub](https://github.com/join?azure-portal=true) account
 
 ## Source code
 
@@ -30,7 +30,7 @@ The application consists of 2 components, the API and the frontend. Both compone
 
 | Component                                          | Link                                                               |
 |----------------------------------------------------|--------------------------------------------------------------------|
-| An API `ratings-api`                   | [GitHub repo](https://github.com/MicrosoftDocs/mslearn-aks-workshop-ratings-api)             |
-| A frontend `ratings-web`          | [GitHub repo](https://github.com/MicrosoftDocs/mslearn-aks-workshop-ratings-web)             |
+| An API `ratings-api`                   | [GitHub repo](https://github.com/MicrosoftDocs/mslearn-aks-workshop-ratings-api?azure-portal=true)             |
+| A frontend `ratings-web`          | [GitHub repo](https://github.com/MicrosoftDocs/mslearn-aks-workshop-ratings-web?azure-portal=true)             |
 
 ![Application diagram](../media/app-overview.png)
