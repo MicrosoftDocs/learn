@@ -152,6 +152,6 @@ So, what's supposed to provide simplification frequently ends up generating grea
 
 ### References
 
-1. _Wikipedia. *Scripting Languages*. https://en.wikipedia.org/wiki/Category:Scripting_languages>._
+1. _Wikipedia. *Scripting Languages*. <https://en.wikipedia.org/wiki/Category:Scripting_languages>._
 
 [^1]: <https://en.wikipedia.org/wiki/Category:Scripting_languages>  "Wikipedia. *Scripting Languages*."

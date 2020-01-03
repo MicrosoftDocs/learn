@@ -42,6 +42,6 @@ quiz:
         - content: "Azure Resource Manager templates can be used to deploy resources to Azure and AWS."
           isCorrect: true
           explanation: "Correct! Azure Resource Manager templates can only be used to deploy and update Azure resources."
-        - content: "Azure Resource Manager templates can be executed with CLI or PowerShell commands, by applications written in Java, and from the Azure Portal."
+        - content: "Azure Resource Manager templates can be executed with CLI or PowerShell commands, by applications written in Java, and from the Azure portal."
           isCorrect: false
           explanation: "Incorrect. Azure Resource Manager templates can be executed using any of these means."
