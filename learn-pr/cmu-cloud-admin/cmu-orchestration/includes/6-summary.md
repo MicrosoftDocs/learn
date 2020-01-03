@@ -1,4 +1,4 @@
-Here are some of the key take-aways from this module:
+Here are some of the key takeaways from this module:
 
 - Cloud solutions are often complex, consisting of tens or even hundreds of resources that must be provisioned and configured to work together.
 
