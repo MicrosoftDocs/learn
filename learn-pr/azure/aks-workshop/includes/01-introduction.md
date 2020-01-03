@@ -26,11 +26,11 @@ In this module, you will:
 
 ## Source code
 
-The application consists of 2 components, the API and the frontend. Both components are written in Node.js. The API stores data in a MongoDB.
+The application consists of 2 components: the API and the frontend. Both components are written in Node.js. The API stores data in a MongoDB.
 
-| Component                                          | Link                                                               |
-|----------------------------------------------------|--------------------------------------------------------------------|
-| An API `ratings-api`                   | [GitHub repo](https://github.com/MicrosoftDocs/mslearn-aks-workshop-ratings-api?azure-portal=true)             |
-| A frontend `ratings-web`          | [GitHub repo](https://github.com/MicrosoftDocs/mslearn-aks-workshop-ratings-web?azure-portal=true)             |
+| Component                | Link                                                                                                           |
+|--------------------------|----------------------------------------------------------------------------------------------------------------|
+| An API `ratings-api`     | [GitHub repo](https://github.com/MicrosoftDocs/mslearn-aks-workshop-ratings-api?azure-portal=true)             |
+| A frontend `ratings-web` | [GitHub repo](https://github.com/MicrosoftDocs/mslearn-aks-workshop-ratings-web?azure-portal=true)             |
 
 ![Application diagram](../media/app-overview.png)

@@ -1,11 +1,11 @@
-Azure has a managed Kubernetes service, Azure Kubernetes Service (AKS), you'll use this to easily deploy a Kubernetes cluster.
+Azure has a managed Kubernetes service, Azure Kubernetes Service (AKS). You'll use this to easily deploy a Kubernetes cluster.
 
 [!include[](../../../includes/azure-exercise-subscription-prerequisite.md)]
 [!include[](../../../includes/azure-cloudshell-copy-paste-tip.md)]
 
 ## Create a new resource group
 
-1. Sign into the [Azure portal](https://portal.azure.com/?azure-portal=true) with your Azure subscription.
+1. Sign into the [Azure portal](https://portal.azure.com/?azure-portal=true) with your Azure account.
 
 1. Open the Azure Cloud Shell from the Azure portal using the Cloud Shell icon.
 
@@ -22,7 +22,10 @@ Azure has a managed Kubernetes service, Azure Kubernetes Service (AKS), you'll u
 1. Get the latest, non-preview, Kubernetes version in your selected region, and store it in a Bash variable named `VERSION`.
 
     ```azurecli
-    VERSION=$(az aks get-versions -l eastus --query 'orchestrators[?!isPreview] | [-1].orchestratorVersion' -o tsv)
+    VERSION=$(az aks get-versions \
+        --location eastus \
+        --query 'orchestrators[?!isPreview] | [-1].orchestratorVersion' \
+        --output tsv)
     ```
 
 1. Your AKS cluster name must be unique. For learning purposes, run this command from Cloud Shell to create a Bash variable that holds a unique name.
@@ -48,10 +51,12 @@ Azure has a managed Kubernetes service, Azure Kubernetes Service (AKS), you'll u
 1. When the `az aks create` command completes, retrieve the cluster credentials.
 
     ```azurecli
-    az aks get-credentials --resource-group aksworkshop --name $AKS_CLUSTER_NAME
+    az aks get-credentials \
+        --resource-group aksworkshop \
+        --name $AKS_CLUSTER_NAME
     ```
 
-1. Perform a sanity check by listing all the nodes in your cluster.
+1. Let's take a look at what has been deployed by listing all the nodes in your cluster. To do this, you'll use the `kubectl` command. This is the main command line tool you will using for working with Kubernetes. It is already installed in the Cloud Shell.
 
     ```bash
     kubectl get nodes
@@ -66,9 +71,4 @@ Azure has a managed Kubernetes service, Azure Kubernetes Service (AKS), you'll u
     aks-nodepool1-24503160-2   Ready    agent   1m   v1.15.5
     ````
 
-    > [!TIP]
-    > `kubectl` is the main command line tool you will using for working with Kubernetes. It is already installed in the  Cloud Shell.
-
-## Summary
-
-Here, you created an Azure Kubernetes Service (AKS) cluster. You also downloaded the credentials to access the cluster onto the Cloud Shell and verified that the cluster nodes are up.
+Next, we'll create and configure Azure Container Registry to use with our AKS cluster.
