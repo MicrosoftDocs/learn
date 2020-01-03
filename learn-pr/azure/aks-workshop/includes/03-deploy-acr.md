@@ -8,12 +8,6 @@ In this unit, you will create an Azure Container Registry using the Azure CLI.
 
 ## Create an Azure Container Registry
 
-1. Sign into the [Azure portal](https://portal.azure.com/?azure-portal=true) with your Azure subscription.
-
-1. Open the Azure Cloud Shell from the Azure portal using the Cloud Shell icon.
-
-    ![Image showing Cloud Shell icon in the Azure portal](../media/2-portal-cloudshell-access.png)
-
 1. The container registry name must be unique within Azure and contain between 5 and 50 **alphanumeric** characters. For learning purposes, run this command from Cloud Shell to create a Bash variable that holds a unique name.
 
     ```azurecli

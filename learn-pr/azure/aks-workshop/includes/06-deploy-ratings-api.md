@@ -8,36 +8,13 @@ In this exercise, you're going to deploy that Docker image of the API to the Azu
 
 ## Create a Kubernetes deployment file for the ratings API
 
-1. Sign into the [Azure portal](https://portal.azure.com/?azure-portal=true) with your Azure subscription.
-
-1. Open the Azure Cloud Shell from the Azure portal using the Cloud Shell icon.
-
-    ![Image showing Cloud Shell icon in the Azure portal](../media/2-portal-cloudshell-access.png)
-
 1. Create a file called `ratings-api-deployment.yaml` using the integrated editor.
 
-    ```azurecli
+    ```bash
     code ratings-api-deployment.yaml
     ```
 
-    **Replicas and image**
-
-    You will create a deployment with 2 replicas running the image you pushed in the [Create a private, highly available container registry](03-deploy-acr) unit, for example  **`acr4229.azurecr.io/ratings-api:v1`**. The container listens to port **3000**. The deployment and the pods are going to be labeled with **app=ratings-api**.
-
-    > [!NOTE]
-    > Make sure to update the `image` value with your own image name and Azure Container Registry repository name.
-
-    **Environment variables and secrets**
-
-    The ratings API expects to find the connection details to the MongoDB in an environment variable named **MONGODB_URI** . By using ``valueFrom`` and ``secretRef``, you can reference values stored in the Kubernetes secret **mongosecret** created when you [deployed MongoDB.](05-deploy-mongodb).
-
-    **Resource requests and limits**
-
-    Each container instance will be allocated a minimum **0.25 cores** and **64 Mb of memory**. The Kubernetes scheduler will look for a node with available capacity to schedule such pod. A Container may or may not be allowed to exceed its CPU limit for extended periods of time. However, it will not be killed for excessive CPU usage. If a container exceeds its memory limit, it could be terminated.
-
-    **Readiness and liveness probes**
-
-    The application exposes a health check endpoint at **/healthz**. If the API is unable to connect to MongoDB, the health check endpoint will return a failure. You can use this to configure Kubernetes to check whether the container is healthy and ready to receive traffic.
+1. Paste the following text in the file.
 
     ```yaml
     apiVersion: apps/v1
@@ -56,7 +33,7 @@ In this exercise, you're going to deploy that Docker image of the API to the Azu
         spec:
           containers:
           - name: ratings-api
-            image: acr4229.azurecr.io/ratings-api:v1 # IMPORTANT: update with your own repository
+            image: <acrname>.azurecr.io/ratings-api:v1 # IMPORTANT: update with your own repository
             imagePullPolicy: Always
             ports:
             - containerPort: 3000 # the application listens to this port
@@ -83,14 +60,36 @@ In this exercise, you're going to deploy that Docker image of the API to the Azu
                 path: /healthz
     ```
 
-1. To save and close the editor, open the ``...`` action panel in the top right of the editor and select **Save**, then select **Close editor**.
+    In this file, update the `<acrname>` value in the `image` key with the name of your Azure Container Registry instance.
+
+1. Review the file, and note the following points:
+
+    - **Replicas and image**
+
+        You will create a deployment with two replicas running the image you pushed to your Azure Container Registry you created previously, for example  **`acr4229.azurecr.io/ratings-api:v1`**. The container listens to port **3000**. The deployment and the pods are going to be labeled with **app=ratings-api**.
+
+    - **Environment variables and secrets**
+
+        The ratings API expects to find the connection details to the MongoDB in an environment variable named **MONGODB_URI** . By using ``valueFrom`` and ``secretRef``, you can reference values stored in the Kubernetes secret **mongosecret** created when you [deployed MongoDB.](05-deploy-mongodb).
+
+    - **Resource requests and limits**
+
+        Each container instance will be allocated a minimum **0.25 cores** and **64 Mb of memory**. The Kubernetes scheduler will look for a node with available capacity to schedule such pod. A Container may or may not be allowed to exceed its CPU limit for extended periods of time. However, it will not be killed for excessive CPU usage. If a container exceeds its memory limit, it could be terminated.
+
+    - **Readiness and liveness probes**
+
+        The application exposes a health check endpoint at **/healthz**. If the API is unable to connect to MongoDB, the health check endpoint will return a failure. You can use this to configure Kubernetes to check whether the container is healthy and ready to receive traffic.
+
+1. To save and close the editor, open the ``...`` action panel in the top right of the editor and select **Save**, then select **Close editor**. You an also use <kbd>Ctrl-s</kbd> to save, and <kbd>Ctrl-q</kbd> to close the editor.
 
 ## Apply the Kubernetes deployment file
 
 1. Apply the configuration using the `kubectl apply` command. You'll be deploying this in the **ratingsapp** namespace.
 
-    ```azurecli
-    kubectl apply --namespace ratingsapp -f ratings-api-deployment.yaml
+    ```bash
+    kubectl apply \
+        --namespace ratingsapp \
+        -f ratings-api-deployment.yaml
     ```
 
     You'll see an output like the below.
@@ -101,8 +100,10 @@ In this exercise, you're going to deploy that Docker image of the API to the Azu
 
 1. Watch the pods rolling out. You're querying for pods in the **ratingsapp** namespace which are labeled with **app=ratings-api**.
 
-    ```azurecli
-    kubectl get pods --namespace ratingsapp -l app=ratings-api -w
+    ```bash
+    kubectl get pods \
+        --namespace ratingsapp \
+        -l app=ratings-api -w
     ```
 
     In a few seconds, you should see the pods transition to the `Running` state. You can use `CTRL+C` to stop watching.
@@ -113,12 +114,11 @@ In this exercise, you're going to deploy that Docker image of the API to the Azu
     ratings-api-564446d9c4-sz5vz   1/1     Running   0          24s
     ```
 
-    > [!TIP]
-    > If the pods are not starting, not ready or are crashing, you can view their logs using `kubectl logs <pod name> --namespace ratingsapp` and `kubectl describe pod <pod name> --namespace ratingsapp`.
+    If the pods are not starting, not ready or are crashing, you can view their logs using `kubectl logs <pod name> --namespace ratingsapp` and `kubectl describe pod <pod name> --namespace ratingsapp`.
 
 1. Check the status of the deployment
 
-    ```azurecli
+    ```bash
     kubectl get deployment ratings-api --namespace ratingsapp
     ```
 
@@ -135,7 +135,7 @@ To simplify the network configuration for application workloads, Kubernetes uses
 
 1. Create a file called `ratings-api-service.yaml` using the integrated editor.
 
-    ```azurecli
+    ```bash
     code ratings-api-service.yaml
     ```
 
@@ -170,7 +170,7 @@ To simplify the network configuration for application workloads, Kubernetes uses
 
 1. Apply the configuration using the `kubectl apply` command. You'll be deploying this in the **ratingsapp** namespace.
 
-    ```azurecli
+    ```bash
     kubectl apply --namespace ratingsapp -f ratings-api-service.yaml
     ```
 
@@ -182,7 +182,7 @@ To simplify the network configuration for application workloads, Kubernetes uses
 
 1. Check the status of the service
 
-    ```azurecli
+    ```bash
     kubectl get service ratings-api --namespace ratingsapp
     ```
 
@@ -197,7 +197,7 @@ To simplify the network configuration for application workloads, Kubernetes uses
 
     Services load balance traffic to the pods through endpoints. The endpoint has the same name as the service. Validate that the service is pointing to 2 endpoints, corresponding to the 2 pods. As you add more replicas, or as pods come and go, Kubernetes automatically keeps the endpoints updated.
 
-    ```azurecli
+    ```bash
     kubectl get endpoints ratings-api --namespace ratingsapp
     ```
 
