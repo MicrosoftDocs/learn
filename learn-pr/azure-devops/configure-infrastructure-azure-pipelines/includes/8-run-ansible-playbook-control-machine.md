@@ -1,4 +1,4 @@
-In this exercise, you set up a control machine and run your Ansible playbook from the control machine. You run the playbook on the control machine by using a VS Code extension.
+In this exercise, you set up a control machine and run your Ansible playbook from the control machine. You run the playbook on the control machine by using a Visual Studio Code extension.
 
 In the last part, you ran Ansible commands from Azure Cloud Shell, to get a sense for how Ansible works.
 
@@ -14,7 +14,7 @@ Here, you create the service principal. During the process, you collect informat
 
 A service principal's name must be unique across Azure. Here, you use a random number to make your service principal's name unique. In practice, you'd give your service principal a name that reflects the purpose of the application or service that you're building.
 
-1. In VS Code, go to your Cloud Shell session.
+1. In Visual Studio Code, go to your Cloud Shell session.
 1. Create a unique identifier.
 
     ```bash
@@ -167,7 +167,7 @@ Create the control machine by using the Red Hat Ansible instance on Linux image 
 
 ## Get your control machine's hostname
 
-Run this command to get your control machine's hostname, so that you can connect to it from VS Code and then later from Azure Pipelines.
+Run this command to get your control machine's hostname, so that you can connect to it from Visual Studio Code and then later from Azure Pipelines.
 
 ```azurecli
 az network public-ip list \
@@ -235,31 +235,31 @@ Copy the following information from your Cloud Shell session to your control mac
       azureuser@$IPADDRESS:/home/azureuser
     ```
 
-## Install the Ansible extension in VS Code
+## Install the Ansible extension in Visual Studio Code
 
-This extension enables you to run your Ansible playbook on your control machine from VS Code.
+This extension enables you to run your Ansible playbook on your control machine from Visual Studio Code.
 
-The Ansible extension isn't installed by default in VS Code. Let's start by installing it:
+The Ansible extension isn't installed by default in Visual Studio Code. Let's start by installing it:
 
-1. In VS Code, on the **View** menu, select **Extensions**.
+1. In Visual Studio Code, on the **View** menu, select **Extensions**.
 1. In the **Search Extensions in Marketplace** text box, enter *Ansible*, and then select the **Ansible** extension.
 
-    ![Screenshot of VS Code Extensions, with Ansible highlighted](../media/8-add-ansible-extension.png)
+    ![Screenshot of Visual Studio Code Extensions, with Ansible highlighted](../media/8-add-ansible-extension.png)
 
 1. Select **Install**.
 1. Select **Reload** to activate the extension.
 
 ## Run Ansible from your control machine
 
-Run Ansible from your control machine by using the Ansible extension in VS Code.
+Run Ansible from your control machine by using the Ansible extension in Visual Studio Code.
 
 You run the Ansible extension from the command palette. The process prompts you for information, such as the playbook you want to run and your control machine's hostname.
 
 ### Specify additional options in your user settings
 
-Before you run the extension, there are a few additional options that you need to specify, including the location of your SSH private key and the path to your inventory file. These options are stored in your VS Code user settings. Here's how to set that up:
+Before you run the extension, there are a few additional options that you need to specify, including the location of your SSH private key and the path to your inventory file. These options are stored in your Visual Studio Code user settings. Here's how to set that up:
 
-1. In VS Code, select <kbd>F1</kbd> or select **View** > **Command Palette** to access the command palette.
+1. In Visual Studio Code, select <kbd>F1</kbd> or select **View** > **Command Palette** to access the command palette.
 1. In the command palette, enter *Preferences: Open User Settings*.
 
     A tab appears that displays your current settings.
@@ -284,7 +284,7 @@ Before you run the extension, there are a few additional options that you need t
 
 You're now ready to run Ansible from your control machine. To do that:
 
-1. In VS Code, select **File** > **New File**. Then add these contents:
+1. In Visual Studio Code, select **File** > **New File**. Then add these contents:
 
     ```json
     [
@@ -320,7 +320,7 @@ You're now ready to run Ansible from your control machine. To do that:
     ]
     ```
 
-1. In VS Code, open your playbook file, *users.yml*.
+1. In Visual Studio Code, open your playbook file, *users.yml*.
 1. Select <kbd>F1</kbd> or select **View** > **Command Palette** to access the command palette.
 1. In the command palette, enter *Ansible: Run Ansible Playbook Remotely via ssh*.
 1. When prompted, specify:

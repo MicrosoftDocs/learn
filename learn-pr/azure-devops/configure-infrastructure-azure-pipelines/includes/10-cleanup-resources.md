@@ -5,13 +5,13 @@ You're all done with the tasks for this module. Here, you'll clean up your Azure
 
 ## Clean up Azure resources
 
-Delete your VMs under management, your Ansible control machine, and your service principal. Earlier, you worked with Azure resources through Azure Cloud Shell in VS Code. Here, you do the same.
+Delete your VMs under management, your Ansible control machine, and your service principal. Earlier, you worked with Azure resources through Azure Cloud Shell in Visual Studio Code. Here, you do the same.
 
 The easiest way to delete your VMs is to delete their parent resource groups. Deleting a resource group deletes all resources in that group.
 
 To clean up your resource groups:
 
-1. In VS Code, go to your Cloud Shell session.
+1. In Visual Studio Code, go to your Cloud Shell session.
 1. Run the following `az group delete` command to delete the resource group for your VM deployment, **learn-ansible-rg**.
 
     ```bash

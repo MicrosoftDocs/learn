@@ -44,9 +44,7 @@ Dice roll: 4 + 5 + 2 = 11
 ```
 Step 1 was a setup step.  Now, we can add the decision logic into our code to make the game more interesting.
 
-### Step 2 - Add an if statement to display a message if the total of the two numbers is greater than 9.
-
-Let's implement the game rule to display a message to the user if the value of the `total` variable is 10 or greater.
+### Step 2 - Add an if statement to display different messages based on the value of the total variable.
 
 Modify the code from the previous step to include the if statement.  
 

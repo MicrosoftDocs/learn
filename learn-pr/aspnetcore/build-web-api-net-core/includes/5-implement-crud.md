@@ -1,4 +1,4 @@
-When the retailer's storefront UI is built, it should display all products in inventory. To fulfill such a requirement, an action responding to an HTTP GET action verb is needed.
+When the retailer's storefront UI is built, it should display all products in the inventory. To fulfill such a requirement, an action responding to an HTTP GET action verb is needed.
 
 The following table depicts the relationship between HTTP action verbs, CRUD operations, and ASP.NET Core attributes. For example, an HTTP PUT action verb is most often used to support an update operation. Such an action is annotated with the `[HttpPut]` attribute.
 
