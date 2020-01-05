@@ -75,3 +75,6 @@ To make sure that you hit this target, it’s important that you include people 
 The World Wide Web Consortium (W3C) has created guidelines for web accessibility testing, which are available here: [W3C Accessibility Testing](https://www.w3.org/wiki/Accessibility_testing "W3C Accessibility Testing").
 
 They note that accessibility testing should be done early, and often, as it’s more work to fix problems discovered late in a process than it is to get it right from the start.
+
+Too often, accessibility is thought of as a “nice to have” or a feature to be added to a minimum viable product at some point in the future. This is wrong. Accessibility is more than just a requirement; it’s a right, and if your bot doesn’t allow for it from the start, you’re not only losing trust among a huge segment of potential users,  you’re missing the “viable” part of your MVP.
+

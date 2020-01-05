@@ -14,6 +14,8 @@ An old adage is just as true for AI as it is for people and is easily adapted to
 
 Another powerful tool against bias is for development teams to commit to the ideal of treating all people fairly. This needs to start at the team level on up. Strive for diversity in your teams - this will help ensure that you account for different perspectives and backgrounds while building your bot.
 
+Perfection is impossible, but that shouldn’t stop us striving to make our bots the best they can be. While the nature of humanity may prevent bias from being eliminated altogether, being conscious of the likely presence of bias, and taking steps to curb its worst effects, will help prevent your bot from creating more problems than it solves. It’ll also allows you to learn quickly once your bot is deployed, and to correct for instances of bias that do get in to production environments.
+
 # Make sure your bot respects users' privacy
 
 When building your bot you need to consider the privacy of your users. In this article you will learn about how to build privacy into your bot and other considerations to ensure your bot is handling your user’s data responsibly.
@@ -49,3 +51,6 @@ GDPR grants users four main rights which are referred to as Data Subject Rights:
 - __Data portability__ - Users have the right to get access to the data held on them in plain and machine readable format.
 
 A key tenet is not to store any more information that you need to perform the function of the bot. If you are concerned about whether or not your are compliant it’s advised to get a GDPR expert involved in your project.
+
+Sometimes, a user’s desire for privacy will conflict with the ability for your bot to provide a service to them. If that happens, that’s OK. It’s better for your bot to be upfront and transparent with privacy and personal information, and offer the user complete (secure) control over what to do with that information. In the long run, this will build trust and help prevent abuse.
+

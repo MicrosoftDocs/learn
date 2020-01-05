@@ -17,6 +17,10 @@ Some use cases, particularly in those industries where human health is at stake 
 
 What does this mean for bot deployment and automation? While “gut feeling” may be a useful guide, it can often be misleading. When use cases are consequential, it’s vitally important to consult with a wide range of experts in the domain to ensure that your application isn’t going to cause serious adverse impacts if it doesn’t work as expected.
 
+> “The first rule of any technology used in a business is that automation applied to an efficient operation will magnify the efficiency. The second is that automation applied to an inefficient operation will magnify the inefficiency” — Bill Gates. 
+
+We might well extend Gates’ maxim on automation to consequential use cases. If the automation is applied poorly, it will exacerbate adverse effects. But if automation is applied well, conversational AI bots may be able to help preserve or extend human life, magnify and protect wealth, and increase education. Just because a use case is consequential doesn’t mean it shouldn’t have automation applied - however, it does require that the question of whether automation should be applied, and if so, how it should be done, be taken very seriously and with all due care.
+
 # Ensuring your bot is respectful and protects against misuse
 
 It’s important that your conversational AI is respectful of your users needs as well as protects against misuse. In this section you will learn how to safeguard your bot to ensure that it respects your users needs and is protected from misuse.
@@ -25,7 +29,7 @@ Since bots are most often designed to appear like humans, it’s important that 
 
 ## Design your bot so that it respects relevant cultural norms and practices
 
-Limiting the actions of a bot to the actions it’s actually designed to do will reduce (but not eliminate) the chances that it will violate cultural norms. For example, if your bot is designed to order pizza, you can design the interface so conversations are limited to that topic. More open conversations can be considered high-risk, as they will require a lot of up-front investment in content, as well as substantial monitoring. 
+Limiting the actions of a bot to the actions it’s actually designed to do will reduce (but not eliminate) the chances that it will violate cultural norms. For example, if your bot is designed to order pizza, you can design the interface so conversations are limited to that topic. More open conversations can be considered high-risk, as they will require a lot of up-front investment in content, as well as substantial monitoring.
 
 ## Create a code of conduct, make it available to your users, and enforce it
 
@@ -54,3 +58,5 @@ It’s recommended to avoid controversial topics as entirely as possible. Truly 
 ## Public facing bot APIs need to be carefully monitored
 
 If you have or intend to have a publicly-accessible bot API, this is a consequential use case. A conversational AI bot, maliciously deployed or used, can do emotional or cultural damage analogous to a computer virus. This can be extremely fraught for organisations and their customers. Appropriate safeguards need to be put in place to prevent malicious use, and APIs should be reviewed to make sure they cannot be used by people outside your organisation in a way that would reflect poorly on you.
+
+If a bot’s use case doesn’t call for it to engage with culturally sensitive or potentially offensive content, don’t give it the ability to do so. A bot should only do its job; nothing more. However, this doesn’t mean these concerns aren’t of importance even in the most mundane use cases. Make sure they’re always top of mind for any bot deployment.
