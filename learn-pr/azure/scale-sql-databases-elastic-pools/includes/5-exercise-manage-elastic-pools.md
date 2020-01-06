@@ -4,7 +4,7 @@ In this exercise, we'll manage the SQL elastic pool and add an additional databa
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you used to activate the sandbox.
 
-1. Open the SQL elastic pool you created in the previous exercise. You can browse for existing resources by selecting **All resources**.
+1. Search for and select the SQL elastic pool you created in the previous exercise. Search for and select **All resources** to browse for your SQL elastic pool.
 
 1. Click on **Configure** in the **Settings** section.
 
