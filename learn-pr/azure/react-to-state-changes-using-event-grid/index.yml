@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.react-to-state-changes-using-event-grid
 metadata:
-  title: React to state changes in your Azure services using Event Grid 
+  title: React to state changes in your Azure services using Event Grid
   description: Build serverless application architecture, automate your operations, and integrate applications with by handling Azure events with Event Grid.
   ms.date: 04/30/2019
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: React to state changes in your Azure services using Event Grid 
+title: React to state changes in your Azure services using Event Grid
 summary: Build serverless application architecture, automate your operations, and integrate applications with by handling Azure events with Event Grid.
 abstract: | 
   In this module, you will:

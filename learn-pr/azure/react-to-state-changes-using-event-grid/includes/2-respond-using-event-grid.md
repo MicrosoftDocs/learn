@@ -53,15 +53,15 @@ To understand how an event handler subscribes to events, you can create a subscr
 1. Select **Add** and search for **Logic App**.
 1. Click **Create**.
 
-![Create a new Logic App](../media/2-create-logic-app.png)
+    ![Create a new Logic App](../media/2-create-logic-app.png)
 
 1. Name the Logic App.
 
-![Create a Logic App Name](../media/2-create-logic-app-name.png)
+    ![Create a Logic App Name](../media/2-create-logic-app-name.png)
 
 1. Select the **When an event grid resource event occurs** tile.
 
-![Subscribe to Event Grid](../media/2-eventgrid-event.png)
+    ![Subscribe to Event Grid](../media/2-eventgrid-event.png)
 
 ## Configure connectors and triggers
 
