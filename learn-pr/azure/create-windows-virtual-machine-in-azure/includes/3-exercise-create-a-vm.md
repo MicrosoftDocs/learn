@@ -37,7 +37,7 @@ We'll start with the **Basics** section.
 
 1. For **Resource group**, choose "**<rgn>[sandbox resource group name]</rgn>**".
 
-1. In the **INSTANCE DETAILS** section, enter a name for your VM, such as **test-vp-vm2** (for Test Video Processor VM #2).
+1. In the **Instance Details** section, enter a name for your VM, such as **test-vp-vm2** (for Test Video Processor VM #2).
     - It's best practice to standardize your resource names so you can easily identify their purpose. Windows VM names are a bit limited - they must be between 1 and 15 characters, cannot contain non-ASCII or special characters, and must be unique in the current resource group.
 
 1. Select a region close to you from the locations below.
@@ -53,13 +53,13 @@ We'll start with the **Basics** section.
     > [!TIP]
     > You can also just slide the view to the left to get back to the VM settings as it opened a new window off to the right and slid the window over to view it.
 
-1. In the **ADMINISTRATOR ACCOUNT** section, set the **Username** field to a username you will use to sign in to the VM.
+1. In the **Administrator Account** section, set the **Username** field to a username you will use to sign in to the VM.
 
 1. In the **Password** field, enter a password that's at least 12 characters long. It must have three of the following: one lower case character, one uppercase character, one number, and one special character that is not '\\' or '-'. Use something you will remember or write it down, you will need it later.
 
 1. Confirm the **password**.
 
-1. In the **INBOUND PORT RULES** section, open the list and choose _Allow selected ports_. Since this is a Windows VM, we want to be able to access the desktop using RDP. Scroll the list if necessary until you find RDP (3389) and select it. As the note in the UI indicates, we can also adjust the network ports after we create the VM.
+1. In the **Inbound Port Rules** section, open the list and choose _Allow selected ports_. Since this is a Windows VM, we want to be able to access the desktop using RDP. Scroll the list if necessary until you find RDP (3389) and select it. As the note in the UI indicates, we can also adjust the network ports after we create the VM.
 
     ![Screenshot showing the drop-down for opening the port for RDP access on the Windows VM.](../media/3-open-ports.png)
 
