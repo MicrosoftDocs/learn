@@ -29,7 +29,7 @@ Attackers can compromise applications whether applications are our own or owned 
 
 We use behavioral analytics tools to establish regular usage and behavior across our network and identify any suspicious changes. 
 
-For example, let's assume we detect a user office user starts accessing our network outside their standard usage patterns. Usually, the user accesses the network from one location in the United States during work hours. If their credentials are suddenly used to attempt, access from Australia at midnight, the attempt would be flagged as suspicious. 
+For example, let's assume we detect a user office user starts accessing our network outside their standard usage patterns. Usually, the user accesses the network from one location in the United States during work hours. If their credentials are suddenly used to attempt, access from Australia at midnight, the attempt would be flagged as suspicious.
 
 To address this problem, we can create security policies based on these analytics.  We can deny access pending additional verification, like a secret code sent to the user's work mobile device.
 
@@ -41,15 +41,15 @@ Attackers often use email to access our network. An email that looks genuine mig
 
 ### Intrusion detection and prevention
 
-We want to take a proactive and preventative security posture for our network. The earlier we can identify intrusion, the better. We can use intrusion prevention and detection tools together to monitor all our network traffic. 
+We want to take a proactive and preventative security posture for our network. The earlier we can identify intrusion, the better. We can use intrusion prevention and detection tools together to monitor all our network traffic.
 
-For example, Azure Network Watcher provides data to an open-source intrusion detection system like Suricata. Traffic is analyzed across our network on Azure, and we're alerted about intrusions.
+For example, Azure Network Watcher can provide data to an open-source intrusion detection system. From this system traffic is analyzed across our network on Azure, and we're alerted about intrusions.
 
 ### VPN
 
 A virtual private network (VPN) can establish an encrypted connection from one network to another over the internet. The VPN configures an encrypted tunnel that either uses TLS or IPSec to provide secure communication and remote access capabilities across our networks.
 
-![VPN tunnel](../media/4-vpn-connection.png)
+![VPN tunnel](../media/4-vpn-connection.svg)
 
 ### Web security
 
@@ -61,13 +61,13 @@ The wireless portions of our network aren't as secure as the wired portions. A w
 
 ## Network security zones
 
-A network security zone is a network segment that has specific security policies applied to it and often separated from other network segments by firewalls. There are three different types of security zones. 
+A network security zone is a network segment that has specific security policies applied to it and often separated from other network segments by firewalls. There are three different types of security zones.
 
-### Trusted or private zones. 
+### Trusted or private zones
 
 A trusted or private zone contains the resources and devices that should never be accessible to anyone who's outside of our organization. Examples include printers, workstations used by internal users, and internal servers. In this zone, we'll configure the devices with private IP addresses.
 
-![Network security zones](../media/4-network-security-zones.png)
+![Network security zones](../media/4-network-security-zones.svg)
 
 ### Public zones
 
@@ -109,11 +109,11 @@ Firewalls can perform several different functions across our network.
 
 A **proxy server firewall** controls the information that goes into and out of a network. Firewall proxy servers provide safety and security by providing internet access to all devices on a network. This ability means the server can monitor, filter, and cache data requests to and from the network.
 
-![A diagram showing the allowed traffic flow through a proxy server](../media/4-proxy-server.png)
+![A diagram showing the allowed traffic flow through a proxy server](../media/4-proxy-server.svg)
 
 **Stateful firewalls and next-generation firewalls**. Stateful firewalls inspect characteristics about the connections on our network. The firewall also monitors packets over time and stores a combination of this information in a state table. When a connection and packet match aren't recognized, based on the information held in the table, traffic is blocked.
 
-![A diagram showing how a stateful firewall blocks requests](../media/4-stateful-firewall.png)
+![A diagram showing how a stateful firewall blocks requests](../media/4-stateful-firewall.svg)
 
 **Next-generation firewalls** do many of the same functions as stateful firewalls. But they can encompass more functions from other types of firewalls such as packet filtering, VPN support, and more. This type of firewall also investigates packets more thoroughly when compared to stateful firewalls. For example, a next-generation firewall could look at the payload for each packet and inspect it for suspicious characteristics and malware.
 
@@ -134,21 +134,21 @@ Azure provides a number of tools we can use as part of our network security. Eac
 
 Azure lets us build our own networks through Azure Virtual Networks. We use **Azure Network Security Groups** to filter traffic from Azure and on-premises resources to, and from, resources that form part of our VNets. An Azure Network Security Group filters traffic through security rules that we specify to deny or permit different types of traffic across our networks.
 
-![Azure Network Security Group at work](../media/4-nsg.png)
+![Azure Network Security Group at work](../media/4-nsg.svg)
 
 We can also log all the traffic flowing through our network security groups for analysis. We use Azure's Network Watcher service and enable NSG flow logs. Our logs will then be stored for use in a JSON file in a storage account.
 
 **Azure Firewall** - is a fully managed firewall we can use to protect the resources that are inside our Azure Virtual Networks. Because Azure Firewall is cloud-based, it comes with certain advantages. We won't have to worry about whether Azure Firewall can scale to the number of resources on our networks. It comes pre-configured with high availability to prevent our firewall from going down.
 
-![A diagram showing how an Azure firewall blocks traffic](../media/4-azure-firewall.png)
+![A diagram showing how an Azure firewall blocks traffic](../media/4-azure-firewall.svg)
 
 We connect our on-premises network to our Azure Virtual Networks by configuring a **Site-to-Site VPN** connection with Azure. We'll use a VPN Gateway (which is a VPN appliance from Azure), along with our local VPN device, to establish a VPN tunnel for communication. Our cloud and on-premises resources then communicate across the VPN tunnel.
 
-![A diagram showing an Azure Site-to-Site connection](../media/4-site-to-site-vpn.png)
+![A diagram showing an Azure Site-to-Site connection](../media/4-site-to-site-vpn.svg)
 
 We can also set up a **Point-to-Site VPN** connection between Azure and our on-premises network. Here, individual users and clients can connect to our Azure resources through a secure tunnel.
 
-![A diagram showing an Azure Point-to-Site connection](../media/4-point-to-site-vpn.png)
+![A diagram showing an Azure Point-to-Site connection](../media/4-point-to-site-vpn.svg)
 
 ### Azure network security considerations
 
