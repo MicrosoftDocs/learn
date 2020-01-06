@@ -18,14 +18,14 @@ With an Azure virtual network, You'll:
 
 By default, all Azure resources within a virtual network have outbound connectivity to the internet. External inbound communication must come through a public-facing endpoint. All internal resources use a private endpoint to access the virtual network.
 
-A virtual network is composed of many elements including, but not limited to, virtual machines, NICs, load balancers, and public IP addresses.  Two essential features of any virtual network are **virtual network subnets (subnets)** and **Network Security Groups (NSGs)**.
+A virtual network is composed of many elements including, but not limited to, network interfaces, load balancers, subnets, network security groups, and public IP addresses. These elements work together and enable secure, reliable network communication between your Azure resources, the internet, and on-premises networks.
 
   ![Image showing Azure virtual network component architecture](../media/2-azure-vnet-vm-arch.png)
 
-- **Virtual network subnets** let you segment your virtual network address space into usable subnetworks. As you would find in an on-premises network, virtual network subnets can organize your network usage and access
-- **Network Security Groups** protect your subnets by filtering all traffic flow between Azure resources
+<!-- - **Virtual network subnets** let you segment your virtual network address space into usable subnetworks. As you would find in an on-premises network, virtual network subnets can organize your network usage and access
+- **Network Security Groups** protect your subnets by filtering all traffic flow between Azure resources -->
 
-## Parts of an IP address
+<!-- ## Parts of an IP address
 
 An IP address is made up of two parts: the network and the host. An IP address is typically expressed in the dotted-decimal notation; for example, 192.168.123.132.  In reality, this number is only the human-readable version of the 32-bit binary number: 11000000.10101000.01111011.10000100.
 The two parts of this IP address are:
@@ -33,7 +33,7 @@ The two parts of this IP address are:
 - Network: 192.168.123
 - Host: 132
 
-The network prefix can be any combination of 8, 16, or 24 bits.  The host prefix can be any combination 24, 16, or 8 bits respectively, giving a total of 32 bits.
+The network prefix can be any combination of 8 bits, 16 bits, or 24 bits.  The host prefix can be any combination 24 bits, 16 bits, or 8 bits respectively, giving a total of 32 bits.
 
 ## Subnet masks
 
@@ -61,7 +61,7 @@ Here's a table that gives examples of CIDR and subnets.
 | 24                 | 8               | 255.255.255.0   | /24           |
 | 25                 | 7               | 255.255.255.128 | /25           |
 | 28                 | 4               | 255.255.255.240 | /28           |
-| 30                 | 2               | 255.255.255.252 | /30           |
+| 30                 | 2               | 255.255.255.252 | /30           | -->
 
 ## Routing traffic on an Azure virtual network
 
@@ -158,28 +158,7 @@ ExpressRoute creates a direct connection between your on-premises network and th
 
 Virtual networks can peer across subscriptions and Azure regions. Once peered, resources in these networks communicate with each other as if they're in the same network. The traffic is routed between resources in a peered virtual network using only private IP addresses. Routing is achieved by routing traffic through the Azure network and keeping the connection private as part of the Azure backbone network. The backbone network provides low latency and high-bandwidth network connections.
 
-## Using Resource Manager for VPN gateway deployment
-
-Setting up a VPN gateway requires the specific configuration and setup of multiple Azure resources. Some resources can be configured independently, while others have dependencies. The order of configuration is essential.
-
-Azure Resource Manager simplifies the setup and configuration of all your Azure-based resources.  For a VPN gateway, Resource Manager has the following features:
-
-- Grouping of resources
-- Improved management of all resources for your solution
-- Repeatability of your solution when redeploying
-- Managing resource dependency
-
-Configurations may vary depending on the connectivity option that best suits your solution, and should be considered against these factors:
-
-- Azure supported services
-- Typical bandwidths
-- Protocols supported
-- Routing
-- Connection resiliency
-
-You'll learn more about VPN gateway configurations and scenarios later in this module.
-
-## Site-to-site VPN gateway reference architecture
+<!-- ## Site-to-site VPN gateway reference architecture
 
 While there are many reference architectures available when designing a hybrid network, by far the most common is the site-to-site configuration. The simplified reference architecture shown below illustrates how you'd connect an on-premises network to your Azure cloud. The internet connection uses an IPsec VPN tunnel.
 
@@ -205,4 +184,4 @@ Some of the benefits of using this architecture are:
 - Using a VPN gateway ensures that all data and traffic is encrypted between the on-premises gateway and the Azure gateway
 - This architecture can be scaled and extended to meet your organization's networking needs
 
-This architecture isn't applicable in all situations because it uses an existing internet connection as the link between the two gateway points. Bandwidth constraints can cause latency issues due to reusing the existing infrastructure.
+This architecture isn't applicable in all situations because it uses an existing internet connection as the link between the two gateway points. Bandwidth constraints can cause latency issues due to reusing the existing infrastructure. -->
