@@ -17,17 +17,17 @@ Let's start by creating a new virtual machine in the Azure portal.
     | --- | --- |
     | **Subscription** | Concierge subscription |
     | **Resource group**   | <rgn>[sandbox resource group]</rgn> |
-    | **Name** | *Enter a unique name* |
+    | **Name** | vm1 |
     | **Region** | Select a region near you |
     | **Availability options** | Leave at the default value |
     | **Image** | Windows Server 2019 Datacenter |
-    | **Size** | Leave at the default value |
-    | **Username** | Enter a username |
-    | **Password** | Enter a strong password |
+    | **Size** | Standard DS1 v2 |
+    | **Username** | vmadmin |
+    | **Password** | Enter a complex password |
     | **Public inbound ports** | Leave at the default value |
     | **Select inbound ports**  | HTTP (80) and RDP (3389) |
 
-1. Select **Review and create**, then select **Create** on the resulting page. Wait while Azure creates the virtual machine.
+1. Select **Review and create**, then select **Create** on the resulting page.
 
 ## Create a logic app
 
@@ -39,18 +39,19 @@ The next step is to create the Logic App that will run when a virtual machine ch
 
     | Field | Value |
     | --- | --- |
-    | **Name** | Enter a unique name |
+    | **Name** | Enter a name |
     | **Subscription** | Concierge subscription |
-    | **Resource group** | <rgn>[sandbox resource group]</rgn> |
+    | **Resource group** | Select **Use existing**, then <rgn>[sandbox resource group]</rgn> |
     | **Location** | Select a region near you |
+    | **Log Analytics** | Off |
 
     ![Create a Logic App name](../media/2-create-logic-app-name.png)
 
-1. Click **Create**.
+1. Select **Create**.
 
-## Configure the Logic App
+## Add an Event Grid trigger to the Logic App
 
-At this point, the Logic App and the virtual machine have been created. You'll now configure the Logic App so that triggers can be added.
+Once your logic app is created, you'll add so that triggers for Event Grid events.
 
 1. Select **All Resources**.
 1. Select the logic app that you created in the previous step.
@@ -58,17 +59,11 @@ At this point, the Logic App and the virtual machine have been created. You'll n
 
     ![Blank Logic App Template](../media/3-choose-logic-app-template.png)
 
-You now have a logic app ready to add triggers and connectors.
-
-## Add an Event Grid trigger
-
-While still in the Logic App from the previous step, you'll now add an Event Grid trigger.
-
 1. Within the designer, use the search box, and enter **Event Grid** as your filter. From the triggers list, select **When a resource event occurs**.
 
     ![Add an EventGrid trigger](../media/3-logic-app-event-grid-trigger.png)
 
-1. When prompted, sign into Event Grid using your Azure account credentials.
+1. When prompted, sign into the **Microsoft Learn Sandbox** tenant using your Azure account credentials.
 1. Now subscribe your logic app to publisher events.
 
     | Field | Value |

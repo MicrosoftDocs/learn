@@ -1,6 +1,6 @@
 You're ready to do an action based on receiving a published event within your logic app.
 
-Suppose you've finished the setup of the logic app, in your healthcare organization. You now need to send an email notification that details any change to the virtual machines in your resource group.
+You've finished the initial setup of the logic app, and now need to send an email notification that details any change to the virtual machines in your resource group.
 
 You're going to learn how to set up a condition that allows you to inspect an event, respond with a logic app action, and send an email.
 

@@ -14,4 +14,4 @@ In this module, you'll:
 ## Prerequisites
 
 - An Azure subscription
-- An email account to receive notifications
+- An Office365, Outlook.com, or Gmail email account to receive notifications
