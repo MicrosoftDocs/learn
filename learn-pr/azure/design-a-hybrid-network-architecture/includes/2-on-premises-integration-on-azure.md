@@ -152,7 +152,7 @@ ExpressRoute creates a direct connection between your on-premises network and th
 - Point-to-point Ethernet Connection
 - Any-to-Any (IPVPN) Connection
 
-![Image showing an ExpressRoute connection](../media/2-ExpressRoute-connection.png)
+![Image showing an ExpressRoute connection](../media/2-expressroute-connection.png)
 
 ### Peering
 

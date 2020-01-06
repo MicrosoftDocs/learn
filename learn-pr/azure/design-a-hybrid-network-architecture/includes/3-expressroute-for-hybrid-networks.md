@@ -8,7 +8,7 @@ In this unit, you'll explore on-premises hybrid connectivity using ExpressRoute,
 
 ExpressRoute is an Azure service that allows you to extend on-premises networks over a private connection. A connectivity provider helps this connection. ExpressRoute extends beyond Azure and lets you establish connections to other Microsoft cloud services like Office 365.
 
- ![Image showing an ExpressRoute connection](../media/3-ExpressRoute.png)
+ ![Image showing an ExpressRoute connection](../media/3-expressroute.png)
 
 ExpressRoute connections don't use the public internet. Using a dedicated connection between your on-premises network and Azure provides greater resilience, faster speeds, higher security, and lower latency.
 
@@ -68,7 +68,7 @@ To use ExpressRoute, you must have a private connection, provided by a connectiv
 
 The reference architecture illustrated below shows how to connect your on-premises network to your Azure virtual networks.
 
-![Image showing ExpressRoute reference architecture](../media/3-express-route-architecture.png)
+![Image showing ExpressRoute reference architecture](../media/3-expressroute-architecture.png)
 
 The architecture model includes several components:
 
