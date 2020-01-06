@@ -1,0 +1,71 @@
+### YamlMime:ModuleUnit
+uid: learn.iot.set-up-rules-and-take-action-on-telemetry-data-in-azure-iot-central.exercise-create-rules-take-actions-iot-central
+metadata:
+  title: Exercise - Create rules and take actions in IoT Central
+  description: Exercise - Write code to simulate telemetry
+  ms.date: 1/20/2020
+  author: PeterTurcan
+  ms.author: Olivier.Bloch
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise - Create rules and take actions in IoT Central
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-exercise-create-rules-take-actions-iot-central.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: 'What ID is identical for all devices connected to one IoT Central app?'
+    choices: 
+    - content: 'Scope ID'
+      isCorrect: true
+      explanation: The Scope ID identifies the IoT Central app.
+    - content: 'Device ID'
+      isCorrect: false
+      explanation: The Device ID is unique to each device.
+    - content: 'Primary Key'
+      isCorrect: false
+      explanation: The Primary Key is unique to each device.
+
+  - content: 'Which statement most accurately describes a Device Set?'
+    choices: 
+    - content: 'All devices of a Device Template, no exceptions.'
+      isCorrect: false
+      explanation: There can be exceptions.
+    - content: 'All devices of a Device Template, with exceptions based on device Properties.'
+      isCorrect: true
+      explanation: Any number of exceptions can be created, based on device Properties.
+    - content: 'All devices of a Device Template, with exceptions based on device Settings, Properties, or Measurements.'
+      isCorrect: false
+      explanation: Settings and Measurements cannot be used to define Device Sets.
+    - content: 'All devices that have a setting that the device belongs to a Device Set.'
+      isCorrect: false
+      explanation: There is no such setting.
+
+  - content: 'What is the process of authenticating devices to IoT Central known as?'
+    choices: 
+    - content: 'Authenticating'
+      isCorrect: false
+      explanation: Good try, but no, there is a specific name for authenticating devices.
+    - content: 'Servicing'
+      isCorrect: false
+      explanation: Servicing is a broader term than authenticating devices.
+    - content: 'Provisioning'
+      isCorrect: true
+      explanation: This term is what you will see in the IoT Central portal.
+      
+  - content: 'If you add a map to a dashboard, device locations are added by default, what additional information can be added for each device?'
+    choices: 
+    - content: 'One state measurement'
+      isCorrect: true
+      explanation: In our scenario contents state, cooling system state, or truck state, could be added to the map, in the form of a color code.
+    - content: 'One telemetry measurement'
+      isCorrect: false
+      explanation: Telemetry measurements could be a bit complicated to show with just a color.
+    - content: 'One event measurement'
+      isCorrect: false
+      explanation: Events are shown elsewhere.
+    - content: 'Nothing'
+      isCorrect: false
+      explanation: One additional piece of information can be added.

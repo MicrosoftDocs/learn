@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.iot.set-up-rules-and-take-action-on-telemetry-data-in-azure-iot-central
+metadata:
+  title: Set up rules and take action on telemetry data in Azure IoT central
+  description: This module builds an IoT Central app to monitor and command a refrigerated truck. The first unit creates the app, the second unit defines a device template for a refrigerated truck. Then, create a programming project, add code to simulate a truck, and communicate with your IoT Central app. The truck is monitored through a custom dashboard.
+  ms.date: 1/20/2020
+  author: PeterTurcan
+  ms.author: Olivier.Bloch
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Set up rules and take action on telemetry data in Azure IoT central
+summary: >
+  This module builds an IoT Central app to monitor and command a refrigerated truck. The first unit creates the app, the second unit defines a device template for a refrigerated truck. Then, create a programming project, add code to simulate a truck, and communicate with your IoT Central app. The truck is monitored through a custom dashboard.
+abstract: | 
+  In this module, you will:
+  - Create an Azure IoT Central custom app, using the IoT Central portal
+  - Create a device template for a custom device, using the IoT Central portal
+  - Create a programming project to simulate a refrigerated truck, with routes selected by Azure Maps
+  - Monitor and command the simulated truck, from an IoT Central dashboard
+prerequisites: | 
+  - An introductory knowledge of the purpose of Azure IoT
+  - Ability to navigate Azure IoT portal 
+  - Ability to use Node.js, or C#, at the beginner level 
+  - Experience using Visual Studio, or Visual Studio Code, at the beginner level 
+  - Must have, or be able to open, an Azure Maps account 
+iconUrl: http://via.placeholder.com/120x120g
+ratingEnabled: true
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure-iot-central
+- azure-maps
+units:
+- learn.iot.set-up-rules-and-take-action-on-telemetry-data-in-azure-iot-central.introduction
+- learn.iot.set-up-rules-and-take-action-on-telemetry-data-in-azure-iot-central.create-iot-central-apps-device-template
+- learn.iot.set-up-rules-and-take-action-on-telemetry-data-in-azure-iot-central.exercise-create-iot-central-apps-device-template
+- learn.iot.set-up-rules-and-take-action-on-telemetry-data-in-azure-iot-central.create-rules-take-actions-iot-central
+- learn.iot.set-up-rules-and-take-action-on-telemetry-data-in-azure-iot-central.exercise-create-rules-take-actions-iot-central
+- learn.iot.set-up-rules-and-take-action-on-telemetry-data-in-azure-iot-central.run-device-app-test-rules-actions
+- learn.iot.set-up-rules-and-take-action-on-telemetry-data-in-azure-iot-central.exercise-run-device-app-test-rules-actions
+- learn.iot.set-up-rules-and-take-action-on-telemetry-data-in-azure-iot-central.summary
+badge:
+  uid: learn.iot.set-up-rules-and-take-action-on-telemetry-data-in-azure-iot-central.badge
