@@ -178,8 +178,8 @@ To simplify the network configuration for application workloads, Kubernetes uses
 
     ```output
     NAME          TYPE           CLUSTER-IP   EXTERNAL-IP    PORT(S)         AGE
-    ratings-web   LoadBalancer   10.0.40.94   <pending>      80:32747/TCP    11s
-    ratings-web   LoadBalancer   10.0.149.37  13.90.152.99   80:32747/TCP    5m
+    ratings-web   LoadBalancer   10.2.0.112   <pending>      80:32747/TCP    11s
+    ratings-web   LoadBalancer   10.2.0.112   13.90.152.99   80:32747/TCP    5m
     ```
 
     Make note of that EXTERNAL-IP, for example 13.90.152.99, as you'll use it to access the application.

@@ -15,6 +15,39 @@ Azure has a managed Kubernetes service, Azure Kubernetes Service (AKS). You'll u
         --location eastus
     ```
 
+## Configure networking
+
+In Azure Kubernetes Service (AKS), you can deploy a cluster that uses one of the following two network models:
+
+* **Kubenet networking** - This is the default model. With kubenet, nodes get an IP address from the Azure virtual network subnet. Pods receive an IP address from a logically different address space to the Azure virtual network subnet of the nodes. Network address translation (NAT) is then configured so that the pods can reach resources on the Azure virtual network. The source IP address of the traffic is NAT'd to the node's primary IP address, then configured on the nodes, and pods receive an IP address "hidden" behind the node IP.
+
+* **Azure Container Networking Interface (CNI) networking** - The AKS cluster is connected to existing virtual network resources and configurations. With Azure Container Networking Interface (CNI), every pod gets an IP address from the subnet and can be accessed directly. These IP addresses must be unique across your network space, and must be planned in advance.
+
+Some of the features you're going to be using requires you to deploy the Azure Kubernetes Service (AKS) cluster using the *Azure Container Networking Interface (CNI) networking* configuration.
+
+See [Network concepts for applications in Azure Kubernetes Service (AKS)](https://docs.microsoft.com/azure/aks/concepts-network#azure-virtual-networks) for a more detailed comparison.
+
+1. Create a virtual network and subnet. Pods deployed in the cluster will be assigned an IP from this subnet.
+
+    ```azurecli
+    az network vnet create \
+        --resource-group aksworkshop \
+        --name aks-vnet \
+        --address-prefixes 10.0.0.0/8 \
+        --subnet-name aks-subnet \
+        --subnet-prefix 10.240.0.0/16
+    ```
+
+1. Retrieve and store the subnet ID in a Bash variable.
+
+    ```azurecli
+    SUBNET_ID=$(az network vnet subnet show \
+        --resource-group aksworkshop \
+        --vnet-name aks-vnet \
+        --name aks-subnet \
+        --query id -o tsv)
+    ```
+
 ## Create the Azure Kubernetes Service (AKS) cluster
 
 1. Get the latest, non-preview, Kubernetes version in your selected region, and store it in a Bash variable named `VERSION`.
@@ -35,14 +68,38 @@ Azure has a managed Kubernetes service, Azure Kubernetes Service (AKS). You'll u
 1. Run the following `az aks create` command to create the Azure Kubernetes Service (AKS) cluster using the latest version. This should take a few minutes.
 
     ```azurecli
-    az aks create --resource-group aksworkshop \
-      --name $AKS_CLUSTER_NAME \
-      --location eastus \
-      --kubernetes-version $VERSION \
-      --generate-ssh-keys
+    az aks create \
+    --resource-group aksworkshop \
+    --name $AKS_CLUSTER_NAME \
+    --location eastus \
+    --kubernetes-version $VERSION \
+    --network-plugin azure \
+    --vnet-subnet-id $SUBNET_ID \
+    --service-cidr 10.2.0.0/24 \
+    --dns-service-ip 10.2.0.10 \
+    --docker-bridge-address 172.17.0.1/16 \
+    --generate-ssh-keys
     ```
 
-    `$AKS_CLUSTER_NAME` specifies your AKS cluster name, `$VERSION` is the latest Kubernetes version retrieved before.
+    `$AKS_CLUSTER_NAME` specifies your AKS cluster name, `$VERSION` is the latest Kubernetes version retrieved before, `$SUBNET_ID` is the ID of the subnet created on the virtual network to be configured with AKS.
+
+    Note the following deployment configuration:
+
+    - **Network plugin**
+
+        You're specifying the creation of the AKS cluster using the Azure Container Networking Interface (CNI) plugin.
+
+    - **Kubernetes service address range**
+
+        This is the set of virtual IPs that Kubernetes assigns to internal services in your cluster. The range must not be within the virtual network IP address range of your cluster. It should be different from the subnet created for the pods.
+
+    - **Kubernetes DNS service IP address**
+
+        The IP address for the cluster's DNS service. This address must be within the *Kubernetes service address range*. Don't use the first IP address in your address range, such as .1. The first address in your subnet range is used for the *kubernetes.default.svc.cluster.local* address.
+
+    - **Docker Bridge address**
+
+        The Docker bridge network address represents the default *docker0* bridge network address present in all Docker installations. While *docker0* bridge is not used by AKS clusters or the pods themselves, you must set this address to continue to support scenarios such as *docker build* within the AKS cluster. It is required to select a CIDR for the Docker bridge network address because otherwise Docker will pick a subnet automatically which could conflict with other CIDRs. You must pick an address space that does not collide with the rest of the CIDRs on your networks, including the cluster's service CIDR and pod CIDR.
 
 ## Ensure you can connect to the cluster using `kubectl`
 

@@ -198,11 +198,11 @@ To simplify the network configuration for application workloads, Kubernetes uses
     kubectl get service ratings-api --namespace ratingsapp
     ```
 
-    The service should show an internal IP where it would be accessible. By default, Kubernetes will create a DNS entry mapping to `[service name].[namespace].svc.cluster.local`, meaning this service will also be accessible at `ratings-api.ratingsapp.svc.cluster.local`.
+    The service should show an internal IP where it would be accessible. By default, Kubernetes will create a DNS entry mapping to `[service name].[namespace].svc.cluster.local`, meaning this service will also be accessible at `ratings-api.ratingsapp.svc.cluster.local`. Note that the **CLUSTER-IP** comes from the *Kubernetes service address range* you defined when creating the cluster.
 
     ```output
     NAME          TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S)   AGE
-    ratings-api   ClusterIP   10.0.40.94   <none>        80/TCP    60s
+    ratings-api   ClusterIP   10.2.0.102   <none>        80/TCP    60s
     ```
 
 1. Finally, let's validate the endpoints. Services load balance traffic to the pods through endpoints. The endpoint has the same name as the service. Validate that the service is pointing to two endpoints, corresponding to the two pods. As you add more replicas, or as pods come and go, Kubernetes automatically keeps the endpoints updated.
@@ -211,11 +211,11 @@ To simplify the network configuration for application workloads, Kubernetes uses
     kubectl get endpoints ratings-api --namespace ratingsapp
     ```
 
-    You should get a similar output.
+    You should get a similar output. Note that the **ENDPOINTS** IPs comes from the subnet you defined when creating the cluster.
 
     ```output
-    NAME          ENDPOINTS                         AGE
-    ratings-api   10.244.1.5:3000,10.244.2.6:3000   1h
+    NAME          ENDPOINTS                          AGE
+    ratings-api   10.240.0.11:3000,10.240.0.64:3000  1h
     ```
 
 You've now created a deployment of the **ratings-api** consisting of two replicas and exposed it as an internal (ClusterIP) service.
