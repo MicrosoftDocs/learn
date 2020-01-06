@@ -15,13 +15,13 @@ content: |
   [!include[](includes/5-exercise-email-vm-change.md)]
 tasks:
 - action: exists
-  environment: Azure
+  environment: azure
   azure:
     resource:
       type: Microsoft.Compute/virtualMachines
   hint: "Please make sure you have a VM deployed to test out Event Grid."
 - action: exists
-  environment: Azure
+  environment: azure
   azure:
     resource:
       type: Microsoft.Logic/workflows
