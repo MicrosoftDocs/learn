@@ -38,6 +38,6 @@ AWS also supports *predictive scaling*, which uses machine learning to anticipat
 
 ### References
 
-1. _Microsoft (2018). *Improving Azure Virtual Machine resiliency with predictive ML and live migration*. <https://azure.microsoft.com/en-us/blog/improving-azure-virtual-machine-resiliency-with-predictive-ml-and-live-migration/>._
+1. _Microsoft (2018). *Improving Azure Virtual Machine resiliency with predictive ML and live migration*. <https://azure.microsoft.com/blog/improving-azure-virtual-machine-resiliency-with-predictive-ml-and-live-migration/>._
 
-[^1]:  <https://azure.microsoft.com/en-us/blog/improving-azure-virtual-machine-resiliency-with-predictive-ml-and-live-migration/>  "Microsoft (2018). *Improving Azure Virtual Machine resiliency with predictive ML and live migration*."
+[^1]:  <https://azure.microsoft.com/blog/improving-azure-virtual-machine-resiliency-with-predictive-ml-and-live-migration/>  "Microsoft (2018). *Improving Azure Virtual Machine resiliency with predictive ML and live migration*."

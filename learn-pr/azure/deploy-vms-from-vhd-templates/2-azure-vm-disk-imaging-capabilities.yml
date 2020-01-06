@@ -44,7 +44,7 @@ quiz:
     - content: "Sysprep"
       isCorrect: true
       explanation: "This answer is correct."
-    - content: "System Center Configuration Manager"
+    - content: "Microsoft Endpoint Configuration Manager"
       isCorrect: false
       explanation: "No. Use the Sysprep tool."
   - content: "Which command should you use to prepare a Linux image for generalization?"

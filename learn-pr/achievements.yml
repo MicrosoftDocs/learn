@@ -50,3 +50,8 @@ achievements:
   title: Introduction to Azure solutions
   summary: Introduction to Azure solutions
   iconUrl: /learn/achievements/intro-to-azure-areas-and-solutions.svg
+- uid: learn-xamarin.university-veteran.badge
+  type: badge
+  title: Xamarin University Veteran
+  summary: Prior student of Xamarin University
+  iconUrl: /learn/achievements/xamarin/xamarin-university-veteran-badge.svg

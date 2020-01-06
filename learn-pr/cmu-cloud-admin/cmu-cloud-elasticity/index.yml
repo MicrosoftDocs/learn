@@ -3,7 +3,7 @@ uid: learn.cmu-cloud-admin.cmu-cloud-elasticity
 metadata:
   title: Scale your cloud resources with elasticity
   description: Cloud Admin course from Dr. Majd Sakr at Carnegie Mellon University. Discover what cloud elasticity means and different ways to scale your cloud resources.
-  ms.date: 08/15/2019
+  ms.date: 12/31/2019
   author: shanamatthews
   ms.author: shanama
   ms.topic: interactive-tutorial
@@ -25,7 +25,7 @@ prerequisites: |
   - Recognize cloud service models such as IaaS, PaaS, and SaaS and differentiate between them
   - Understand how cloud resource provisioning works
   - Be familiar with different approaches to organizing and managing cloud resources
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/cmu-cloud-admin/cmu-cloud-elasticity.svg
 levels:
 - beginner
 roles:

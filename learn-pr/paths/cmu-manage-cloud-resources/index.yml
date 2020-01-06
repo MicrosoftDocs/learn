@@ -1,0 +1,40 @@
+### YamlMime:LearningPath
+uid: learn.cmu-cloud-admin.cmu-manage-cloud-resources
+metadata:
+  title: Cloud administration basics
+  description: The second learning path in a course on Cloud Administration from Carnegie Mellon University. Learn more about how the cloud works by exploring it's underlying technology of virtualization, how to take advantage of the cloud for scale, and how to automate cloud resource management.
+  brand: azure
+  ms.date: 12/31/2019
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  showCreativeCommonsFooter: true
+title: Cloud administration basics
+summary: |
+  Learn more about how the cloud works by exploring it's underlying technology of virtualization, how to take advantage of the cloud for scale, and how to automate cloud resource management.
+
+  In this learning path, you will:
+    - Learn about the history of the cloud, and how it was built
+    - Know the major cloud providers and cloud types
+    - Understand what types of resources are available through the cloud
+    - Recognize cloud service modules
+    - Know the economic benefits of the cloud
+    - Understand digital identity, and how digital identities can be shared and secured
+
+  In Partnership with Dr. Majd Sakr and Carnegie Mellon University.
+prerequisites: none
+#placeholder
+iconUrl: /learn/achievements/cmu-cloud-admin/cmu-manage-cloud-resources.svg
+levels:
+- beginner
+roles:
+- administrator
+products:
+- azure
+modules:
+- learn.cmu-cloud-admin.cmu-virtualization
+- learn.cmu-cloud-admin.cmu-cloud-elasticity
+- learn.cmu-cloud-admin.cmu-orchestration
+trophy:
+  uid: learn.cmu-cloud-admin.cmu-manage-cloud-resources.trophy
