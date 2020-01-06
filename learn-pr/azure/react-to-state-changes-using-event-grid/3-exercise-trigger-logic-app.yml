@@ -10,7 +10,6 @@ metadata:
   ms.prod: learning-azure
 title: Exercise - Trigger a logic app with Event Grid
 durationInMinutes: 7
-interactive: bash
 azureSandbox: true
 content: |
   [!include[](includes/3-exercise-trigger-logic-app.md)]
