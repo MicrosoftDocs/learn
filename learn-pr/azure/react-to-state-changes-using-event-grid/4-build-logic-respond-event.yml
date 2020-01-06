@@ -2,7 +2,7 @@
 uid: learn.react-to-state-changes-using-event-grid.4-build-logic-respond-event
 metadata:
   title: Build logic that responds to an event
-  description: In this unit, you'll learn how to add Event Grid logic to filter events.
+  description: Learn how to add Event Grid logic to filter events.
   ms.date: 04/30/2019
   author: jboeshart
   ms.author: jaboes

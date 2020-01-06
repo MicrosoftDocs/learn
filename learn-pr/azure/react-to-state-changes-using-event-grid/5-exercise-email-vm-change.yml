@@ -2,7 +2,7 @@
 uid: learn.react-to-state-changes-using-event-grid.5-exercise-email-vm-change
 metadata:
   title: Exercise - Email users when virtual machines change
-  description: In this exercise, you'll check an event and trigger an email
+  description: Check an event and trigger an email
   ms.date: 04/30/2019
   author: jboeshart
   ms.author: jaboes

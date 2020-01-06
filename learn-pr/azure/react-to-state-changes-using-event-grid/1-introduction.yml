@@ -2,7 +2,7 @@
 uid: learn.react-to-state-changes-using-event-grid.1-introduction
 metadata:
   title: Introduction
-  description: In this module, you'll learn about a business scenario where you must capture and respond to virtual machine events.
+  description: Learn about a business scenario where you must capture and respond to virtual machine events.
   ms.date: 04/30/2019
   author: jboeshart
   ms.author: jaboes
