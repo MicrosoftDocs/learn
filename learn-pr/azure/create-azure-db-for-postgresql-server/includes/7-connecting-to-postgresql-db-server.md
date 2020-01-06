@@ -42,7 +42,7 @@ Or, you can add a firewall rule to allow access to all IP addresses by adding a 
 1. In the Azure Cloud Shell on the right, connect `psql` to your server using the following command. Make sure to replace the server name and admin name.
 
     ```bash
-    psql --host=<server-name>.postgres.database.azure.com --username=<admin-user>@<server-name> --dbname=postgres
+    psql --host=$serverName.postgres.database.azure.com --username=$userName@$serverName --dbname=postgres
     ```
 
     Use the values you chose for the `server-name`, and `admin-user`.

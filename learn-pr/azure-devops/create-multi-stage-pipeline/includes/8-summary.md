@@ -143,4 +143,4 @@ Secret variables are often used to store secrets, such as connection strings, an
 
 Another option for securing passwords and secrets is to use an Azure Key Vault. Key Vault enables you to keep the secrets outside of the pipeline. Then, if you have the appropriate permissions, you can retrieve them with a variable group that you created. If you don't want to use a variable group to access the secret variables in the vault, you can also use a dedicated build task.
 
-To learn more about linking secrets from Key Vault, see [Variable groups](https://docs.microsoft.com/en-us/azure/devops/pipelines/library/variable-groups?view=azure-devops&tabs=yaml#link-secrets-from-an-azure-key-vault&azure-portal=true)
+To learn more about linking secrets from Key Vault, see [Variable groups](https://docs.microsoft.com/en-us/azure/devops/pipelines/library/variable-groups?view=azure-devops&tabs=yaml#link-secrets-from-an-azure-key-vault)

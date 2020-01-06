@@ -1,4 +1,4 @@
-We've been calling methods since our first lines of code when using the `Console.WriteLine()` method.  Not all classes and methods are implemented the same way.  This unit will cover some of the most popular variants you'll need to understand when using methods from the .NET Class Library.  More importantly, you'll learn how to find and use the documentation to better understand more about the method.
+We've been calling methods since our first lines of code when using the `Console.WriteLine()` method.  Not all classes and methods are implemented the same way.  This unit will cover some of the most popular variants you'll need to understand when using methods from the .NET Class Library.  More importantly, you'll learn how to find and use the documentation to better understand more about each method.
 
 ## How to call methods in the .NET Class Library
 
@@ -45,7 +45,7 @@ In this code example, we're calling a method of the Random class and the Console
 
 In computing, **state** describes the condition of the execution environment at a specific moment in time.  As your code executes line by line, values are stored in variables.  At any moment during execution, the current state of the application is the collection of all values stored in memory.
 
-Some methods don't rely on the current state of the application to work properly.  In other words, **stateless methods** are implemented so that they can work without referencing or changes any values already stored in memory.  Stateless methods are also known as **static methods**.
+Some methods don't rely on the current state of the application to work properly.  In other words, **stateless methods** are implemented so that they can work without referencing or changing any values already stored in memory.  Stateless methods are also known as **static methods**.
 
 For example, the `Console.WriteLine()` method doesn't rely on any values stored in memory.  It performs its function and finishes without impacting the state of the application in any way.
 
