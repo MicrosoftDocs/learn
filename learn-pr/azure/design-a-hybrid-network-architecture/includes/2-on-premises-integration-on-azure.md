@@ -158,9 +158,9 @@ ExpressRoute creates a direct connection between your on-premises network and th
 
 Virtual networks can peer across subscriptions and Azure regions. Once peered, resources in these networks communicate with each other as if they're in the same network. The traffic is routed between resources in a peered virtual network using only private IP addresses. Routing is achieved by routing traffic through the Azure network and keeping the connection private as part of the Azure backbone network. The backbone network provides low latency and high-bandwidth network connections.
 
-<!-- ## Site-to-site VPN gateway reference architecture
+## Site-to-site VPN gateway reference architecture
 
-While there are many reference architectures available when designing a hybrid network, by far the most common is the site-to-site configuration. The simplified reference architecture shown below illustrates how you'd connect an on-premises network to your Azure cloud. The internet connection uses an IPsec VPN tunnel.
+While there are many reference architectures available when designing a hybrid network, one popular architecture is the site-to-site configuration. The simplified reference architecture shown below illustrates how you'd connect an on-premises network to your Azure cloud. The internet connection uses an IPsec VPN tunnel.
 
 ![Image showing Azure vpn reference architecture](../media/4-vpnarch.png)
 
@@ -184,4 +184,4 @@ Some of the benefits of using this architecture are:
 - Using a VPN gateway ensures that all data and traffic is encrypted between the on-premises gateway and the Azure gateway
 - This architecture can be scaled and extended to meet your organization's networking needs
 
-This architecture isn't applicable in all situations because it uses an existing internet connection as the link between the two gateway points. Bandwidth constraints can cause latency issues due to reusing the existing infrastructure. -->
+This architecture isn't applicable in all situations because it uses an existing internet connection as the link between the two gateway points. Bandwidth constraints can cause latency issues due to reusing the existing infrastructure.
