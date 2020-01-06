@@ -170,7 +170,6 @@ The architecture is composed of several components:
 - The **gateway** is responsible for sending encrypted traffic to a virtual IP address when using a public connection
 - The **Azure virtual network** holds all your cloud applications and any Azure VPN gateway components
 - An **Azure VPN gateway** provides the encrypted link between the Azure virtual network and your on-premises network. An Azure VPN gateway is composed of these elements:
-
   - Virtual network gateway
   - Local network gateway
   - Connection
