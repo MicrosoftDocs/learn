@@ -76,7 +76,7 @@ On macOS, the first step is to install **PowerShell Core**. This is done using t
 
 ## Windows
 
-PowerShell is included with Windows, however there may be an update available for your machine. The Azure support we are going to use requires PowerShell version 5.0 or higher. You can check the version you have installed through the following steps:
+PowerShell is included with Windows, however there may be an update available for your machine. The Azure support we are going to use requires PowerShell with a major version of 5.0 or higher. You can check the version you have installed through the following steps:
 
 1. Open the **Start** menu and type **Windows PowerShell**. There may be multiple shortcut links available:
     - Windows PowerShell - this is the 64-bit version and generally what you should choose.
@@ -92,7 +92,7 @@ PowerShell is included with Windows, however there may be an update available fo
     $PSVersionTable.PSVersion
     ```
 
-If the version number is lower than 5.0, follow these instructions for [upgrading existing Windows PowerShell](https://docs.microsoft.com/powershell/scripting/install/installing-windows-powershell#upgrading-existing-windows-powershell).
+If the major version number is lower than 5.0, follow these instructions for [upgrading existing Windows PowerShell](https://docs.microsoft.com/powershell/scripting/install/installing-windows-powershell#upgrading-existing-windows-powershell).
 
 ::: zone-end
 
