@@ -162,7 +162,7 @@ Virtual networks can peer across subscriptions and Azure regions. Once peered, r
 
 While there are many reference architectures available when designing a hybrid network, one popular architecture is the site-to-site configuration. The simplified reference architecture shown below illustrates how you'd connect an on-premises network to your Azure cloud. The internet connection uses an IPsec VPN tunnel.
 
-![Image showing Azure vpn reference architecture](../media/4-vpnarch.png)
+![Image showing Azure vpn reference architecture](../media/2-vpn-architecture.png)
 
 The architecture is composed of several components:
 
