@@ -46,7 +46,7 @@ We'll start with the **Basics** section.
 
 1. Leave **Availability options** as "No Infrastructure redundancy required". This option is used to ensure the VM is highly available by grouping multiple VMs together a set to deal with planned or unplanned maintenance events or outages.
 
-1. Ensure the image is set to "Windows Server 2016 Datacenter". You can open the drop-down list to see all the options available.
+1. Ensure the image is set to "[smalldisk] Windows Server 2016 Datacenter". You can open the drop-down list to see all the options available.
 
 1. The **Size** field is not directly editable and has a DS1 default size. Click the **Change size** link to explore other VM sizes. The resulting dialog allows you to filter based on # of CPUs, Name, and Disk Type. Select "Standard DS1 v2" (normally the default) when you are done. That will give the VM 1 CPU and 3.5 GB of memory.
 
