@@ -1,6 +1,7 @@
 The SAP Application Performance Standard (SAPS) metric constitutes one of the major criteria for determining whether a VM size offers throughput requirement necessary for a given SAP workload. Effectively, it also represents one the primary factors considered by Microsoft and SAP when certifying Azure VMs for SAP NetWeaver and SAP HANA.
 
-It is important to note that the listing does not include every certified Azure VM type. It also does not include the vCPU and memory definition of the VM, but rather the theoretical capacity for the case when Intel Hyperthreading is configured on the host. Effectively, you should not use it for sizing purposes or draw any conclusions regarding the number of vCPUs or the volume of memory for a given Azure VM size. 
+> [!NOTE]
+> It is important to note that the listing does not include every certified Azure VM type. It also does not include the vCPU and memory definition of the VM, but rather the theoretical capacity for the case when Intel Hyperthreading is configured on the host. Effectively, you should not use it for sizing purposes or draw any conclusions regarding the number of vCPUs or the volume of memory for a given Azure VM size. 
  
 
 When comparing different Azure VM sizes and calculating the ratio of SAPS to vCPU, it is worth noting that information provided by Microsoft and SAP always references vCPUs or CPU threads rather than CPU cores. An Intel CPU bare-metal core could represent one CPU thread in the case the Hyper-V host is configured without Hyperthreading or two CPU threads with Hyperthreading enabled.
@@ -119,7 +120,9 @@ Use the following recommendations when configuring the paging/swap file:
 
 ## Managed disks
 
-The use of managed disks is recommended for all SAP workloads. Note that managed disks are required to implement Write Accelerator. As explained earlier in this course, Write Accelerator is a disk capability of M-Series Azure VMs with Premium storage-based Azure-managed disks. Its purpose is to improve the I/O latency of writes. Write Accelerator is ideally suited where log file updates are required to persist to disk in a highly performant manner for modern databases. 
+The use of managed disks is recommended for all SAP workloads. 
+> [!NOTE]
+> Note that managed disks are required to implement Write Accelerator. As explained earlier in this course, Write Accelerator is a disk capability of M-Series Azure VMs with Premium storage-based Azure-managed disks. Its purpose is to improve the I/O latency of writes. Write Accelerator is ideally suited where log file updates are required to persist to disk in a highly performant manner for modern databases. 
 
 ## Premium Storage
 
@@ -129,7 +132,9 @@ For SAP application servers, including the Central Services virtual machines, yo
 
 ## Multi-disk volumes
 
-The number of disks used for the DBMS data files and the type of Azure Storage these disks are hosted on should be determined by the IOPS requirements and the latency required. It is important to note that IOPS traffic to different data files is not always the same since existing customer systems might have differently sized data files representing their databases. Effectively, it is recommended to use striping over multiple disks to create volumes hosting data files. 
+The number of disks used for the DBMS data files and the type of Azure Storage these disks are hosted on should be determined by the IOPS requirements and the latency required. 
+> [!NOTE]
+> It is important to note that IOPS traffic to different data files is not always the same since existing customer systems might have differently sized data files representing their databases. Effectively, it is recommended to use striping over multiple disks to create volumes hosting data files. 
 
 Storage latency is critical for DBMS systems, even for SAP HANA, which, for the most part, keeps data in-memory. The critical path in storage is usually around the transaction log writes of the DBMS systems. However, operations like writing savepoints or loading data in-memory after crash recovery can also be critical. Therefore, it is mandatory to leverage Azure Premium Disks for /hana/data and /hana/log volumes. In order to achieve the minimum throughput of /hana/log and /hana/data as required by SAP, build a RAID 0 volume using MDADM or LVM over multiple Azure Premium Storage disks. As stripe sizes for the RAID 0 the recommendation is to use:
 
@@ -175,7 +180,11 @@ The same principle applies to SAP HANA, where the caching for volumes using Azur
 
 * /hana/shared - read caching
 
-For M-Series deployments, Microsoft recommends that you use Azure Write Accelerator for your DBMS deployment. As a matter of fact, SAP HANA certification for Azure M-Series virtual machines requires that Azure Write Accelerator be enabled for the /hana/log volume. Note that there are limits of Azure Premium Storage VHDs per VM that can be supported by Azure Write Accelerator. The current limits are:
+For M-Series deployments, Microsoft recommends that you use Azure Write Accelerator for your DBMS deployment. As a matter of fact, SAP HANA certification for Azure M-Series virtual machines requires that Azure Write Accelerator be enabled for the /hana/log volume. 
+> [!NOTE]
+> Note that there are limits of Azure Premium Storage VHDs per VM that can be supported by Azure Write Accelerator. 
+
+The current limits are:
 
 * 16 VHDs for an M128xx and M416xx VM
 
