@@ -17,7 +17,7 @@ abstract: |
 prerequisites: | 
   - An Azure subscription
   - An Office365, Outlook.com, or Gmail email account to receive notifications
-iconUrl: /learn/achievements/react-to-state-changes-using-event-grid.png
+iconUrl: /learn/achievements/react-to-state-changes-using-event-grid.svg
 levels:
 - intermediate
 roles:
