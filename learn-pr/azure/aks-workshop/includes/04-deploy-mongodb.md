@@ -35,12 +35,12 @@ By the end of this unit, you should have deployed MongoDB using Helm. You'll als
 
 ## Install the MongoDB chart
 
-1. To install a chart, you can run the `helm install` command. In the example below, the release is called **ratings** and is deployed into the **ratingsapp** namespace. Replace `<password>` below with a password of your choice, and note for later use.
+1. To install a chart, you can run the `helm install` command. In the example below, the release is called **ratings** and is deployed into the **ratingsapp** namespace. Replace `<username>` and `<password>` below with values of your choice, and note for later use.
 
     ```bash
     helm install ratings stable/mongodb \
         --namespace ratingsapp \
-        --set mongodbUsername=ratingsuser,mongodbPassword=<password>,mongodbDatabase=ratingsdb
+        --set mongodbUsername=<username>,mongodbPassword=<password>,mongodbDatabase=ratingsdb
     ```
 
     You provide parameters with the `--set` switch and a comma separated list of `key=value` pairs. Pay attention to the `mongodbUsername`, `mongodbPassword` and `mongodbDatabase` parameters and their values, which set the username, password and database name respectively. The application expects that the database is called **ratingsdb**. The `helm install` command is a very powerful command with many capabilities. To learn more about it, check out the [Using Helm Guide](https://helm.sh/docs/intro/using_helm/?azure-portal=true).
@@ -70,12 +70,12 @@ By the end of this unit, you should have deployed MongoDB using Helm. You'll als
 
  The ratings API expects to find the connection details to the MongoDB in the form of `mongodb://<username>:<password>@<endpoint>:27017/ratingsdb`. You’ll need to replace the `<username>`, `<password>` and `<endpoint>` with the ones you used when creating the database. For example `mongodb://ratingsuser:ratingspassword@ratings-mongodb.ratingsapp.svc.cluster.local:27017/ratingsdb`.
 
- 1. Use the `kubectl create secret generic` command to create a secret called **mongosecret** in the **ratingsapp** namespace. A Kubernetes secret can hold several items, indexed by key. In this case, the secret will only contain one key, called **MONGOCONNECTION** and the value will be the constructed connection string from the previous step. Replace `<username>`, `<password>` and `<endpoint.ratingsapp.svc.cluster.local>` with the ones you used when creating the database.
+ 1. Use the `kubectl create secret generic` command to create a secret called **mongosecret** in the **ratingsapp** namespace. A Kubernetes secret can hold several items, indexed by key. In this case, the secret will only contain one key, called **MONGOCONNECTION** and the value will be the constructed connection string from the previous step. Replace `<username>` and `<password>` with the ones you used when creating the database.
 
     ```bash
     kubectl create secret generic mongosecret \
         --namespace ratingsapp \
-        --from-literal=MONGOCONNECTION="mongodb://<username>:<password>@<endpoint.ratingsapp.svc.cluster.local>:27017/ratingsdb"
+        --from-literal=MONGOCONNECTION="mongodb://<username>:<password>@ratings-mongodb.ratingsapp.svc.cluster.local:27017/ratingsdb"
     ```
 
 1. You can validate that the secret has been created by running the `kubectl describe secret` command.
