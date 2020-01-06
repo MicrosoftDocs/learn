@@ -72,8 +72,8 @@ Once your logic app is created, you'll add so that triggers for Event Grid event
     | **Resource group** | `Microsoft.Resources.ResourceGroups` |
     | **Resource name** | Leave at the default value |
     | **Event type item - 1** | `Microsoft.Resources.ResourceActionSuccess` |
-    | **Event type item - 2**    | `Microsoft.Resources.ResourceDeleteSuccess` |
-    | **Event type item - 3**    | `Microsoft.Resources.ResourceWriteSuccess` |
+    | **Event type item - 2** | `Microsoft.Resources.ResourceDeleteSuccess` |
+    | **Event type item - 3** | `Microsoft.Resources.ResourceWriteSuccess` |
     | | |
 
     ![Add Trigger details](../media/3-logic-app-event-grid-trigger-details.png)

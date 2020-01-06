@@ -16,8 +16,7 @@ First, let's create a condition that only runs the logic app when a certain even
 
     ![Choose an action](../media/5-select-condition.png)
 
-    > [!NOTE]
-    > The Logic App Designer adds an empty condition to your workflow, including action paths to follow, based on a true or false condition.
+    The Logic App Designer adds an empty condition to your workflow, including action paths to follow, based on a true or false condition.
 
     ![Empty Condition](../media/5-empty-condition.png) 
 
@@ -32,7 +31,7 @@ First, let's create a condition that only runs the logic app when a certain even
 1. In the Expression editor, enter `triggerBody()?['data']['operationName']` and select **OK**.
 
     ![Add data operation](../media/5-condition-add-data-operation-name.png)
-    
+
 1. Leave the middle box as **is equal to**. In the right box, enter `Microsoft.Compute/virtualMachines/write`.
 
     ![Completed Condition](../media/5-complete-condition.png)
@@ -41,7 +40,7 @@ First, let's create a condition that only runs the logic app when a certain even
 
 ## Send email notification
 
-The next step is to add an email action based on the logic app being triggered.
+Next, we'll add an email action based on the logic app being triggered. The following steps are shown using the Office 365 Outlook action. If you don't have an Office 365 account to use, you can also use Outlook.com or Gmail. The configuration for these may be slightly different, so you may need to adjust accordingly.
 
 1. In the condition's **If true** box, select **Add an action**.
 
@@ -52,7 +51,9 @@ The next step is to add an email action based on the logic app being triggered.
     ![Send an email action](../media/5-logic-app-send-email.png)
 
 1. If you don't already have a connection for your email provider, sign in to your email account when you're asked for authentication.
+
 1. Rename the action to `Send email when virtual machine updated`.
+
 1. Set up the dynamic content of the email.
 
     ![Setup dynamic email fields](../media/5-logic-app-empty-email-action.png)
@@ -60,18 +61,23 @@ The next step is to add an email action based on the logic app being triggered.
 1. Your email action should look like:
 
     ![Email action view](../media/5-logic-app-send-email-details.png)
-    
+
 1. Your finished logic app should now look like:
 
     ![Logic App complete view](../media/5-logic-app-completed.png)
 
 ## Test your workflow
 
-You've created and configured a logic app to listen for virtual machine events and send an email notification. Event details are dynamically written into the body of the email. 
+You've created and configured a logic app to listen for virtual machine events and send an email notification. Event details are dynamically written into the body of the email.
 
 The final step is to test the complete workflow.
 
-1. First, you need to cause an event to fire, by resizing your virtual machine.
-1. After a couple of minutes, you should get an email similar to:
+1. In the search bar at the top of the Azure portal, search for **vm1** and select the virtual machine in the results.
+
+1. In the **Settings** section of the left menu, select **Size**.
+
+1. Select a new VM size of **DS2_v2**, then select **Resize**.
+
+1. Once the VM has been resized, you should receive an email that looks similar to the following:
 
     ![Email notification example](../media/5-email.png)
