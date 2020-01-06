@@ -77,7 +77,7 @@ In an IPv4 network, for a packet of data to be routed to the correct network and
 
 A more common way of defining the subnet and the routing prefix is to use the Classless Inter-Domain Routing (CIDR) notation. CIDR applies to the IP address as the number of bits we want to allocate to our subnet. Using CIDR notation, at the end of the IP address, we would add a / and then the number of bits. For example, 198.51.100.0/24 is the same as using the dotted-decimal format subnet mask 255.255.255.0. It will offer an address range of 198.51.100.0 to 198.51.100.255.
 
-![An diagram of a subnet](../media/4-subnet-diagram.png)
+![An diagram of a subnet](../media/5-subnet-diagram.svg)
 
 Subnets allow multiple subnetworks to exist within one network. They can be used to enhance routing performance. Subnets can be arranged hierarchically to create routing trees.
 
