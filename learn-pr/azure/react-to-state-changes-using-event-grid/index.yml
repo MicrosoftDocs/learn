@@ -2,22 +2,22 @@
 uid: learn.react-to-state-changes-using-event-grid
 metadata:
   title: React to state changes in your Azure services using Event Grid 
-  description: In this unit, you'll learn about Azure Event Grid and how you can use it to connect events from sources, such as virtual machines or storage account, to subscribers such as WebHooks and Azure Logic Apps.
+  description: Build serverless application architecture, automate your operations, and integrate applications with by handling Azure events with Event Grid.
   ms.date: 04/30/2019
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: React to state changes in your Azure services using Event Grid 
-summary: TODO
+summary: Build serverless application architecture, automate your operations, and integrate applications with by handling Azure events with Event Grid.
 abstract: | 
   In this module, you will:
-  - TODO
-  - TODO
-  - TODO
+  - Describe the capabilities and use cases for Event Grid
+  - Create an application that handles events with Event Grid and Logic Apps
 prerequisites: | 
-  - TODO
-iconUrl: http://via.placeholder.com/120x120
+  - An Azure subscription
+  - An email account to receive notifications
+iconUrl: /learn/achievements/react-to-state-changes-using-event-grid
 levels:
 - intermediate
 roles:
