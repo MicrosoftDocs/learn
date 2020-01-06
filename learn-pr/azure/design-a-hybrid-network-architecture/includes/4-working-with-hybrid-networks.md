@@ -76,7 +76,7 @@ The merging of the VPN connection and ExpressRoute improves the resiliency of yo
 
 The following image illustrates how to connect your on-premises network to Azure using ExpressRoute with a VPN failover. The chosen topology in this solution is a VPN-based site-to-site connection with high traffic flow.
 
-![Image showing ExpressRoute reference architecture](../media/3-expressroute-vpn-failover-architecture.png)
+![Image showing ExpressRoute reference architecture](../media/4-expressroute-vpn-failover-architecture.png)
 
 In this model, all network traffic routes through the ExpressRoute private connection. When connectivity is lost on the ExpressRoute circuit, the gateway subnet automatically fails over to the site-to-site VPN gateway circuit. This scenario is indicated by the dotted line from the gateway to the VPN gateway in the Azure virtual network.
 

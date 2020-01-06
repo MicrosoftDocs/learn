@@ -16,19 +16,14 @@ ExpressRoute connections don't use the public internet. Using a dedicated connec
 
 There are three ExpressRoute connectivity types, each serving a different need.
 
-![Image showing ExpressRoute connectivity models](../media/3-expressroute-connectivity-models-diagram.png)
+![Image showing ExpressRoute connectivity models](../media/3-expressroute-connectivity-models.png)
 
-**Any-to-any** 
-
-The any-to-any network allows you to integrate your WAN with Azure using an IPVPN provider. This connection type offers links between branch offices and datacenters. When it's enabled, the connection to Azure is similar to any other branch office connected via the WAN.
-
-**Point-to-point**
-
-The point-to-point ethernet network method connects on-premises datacenters and offices to Azure through a point-to-point ethernet link.
-
-**CloudExchange**
-
-Use the CloudExchange method to cross-connect to Azure using the Ethernet exchange provided by your colocation facility.
+- **CloudExchange**
+    Use the CloudExchange method to cross-connect to Azure using the Ethernet exchange provided by your colocation facility.
+- **Any-to-any** 
+    The any-to-any network allows you to integrate your WAN with Azure using an IPVPN provider. This connection type offers links between branch offices and datacenters. When it's enabled, the connection to Azure is similar to any other branch office connected via the WAN.
+- **Point-to-point**
+    The point-to-point ethernet network method connects on-premises datacenters and offices to Azure through a point-to-point ethernet link.
 
 ## ExpressRoute circuits
 
