@@ -21,7 +21,7 @@ As your solution grows in complexity, you will have more services depending on e
 Most providers prefer to maximize the availability of their Azure solutions by minimizing downtime.  However, as you increase availability, you also increase the cost and complexity of your solution.
 
 > [!TIP]
-> For example: An SLA that defines an *uptime of 99.999% only allows for about 5 minutes of total downtime per month.*
+> For example: An SLA that defines an *uptime of 99.999% only allows for about 5 minutes of total downtime per year.*
 
 The risk of potential downtime is cumulative across various SLA levels, which means that complex solutions can face greater availability challenges.  Therefore, how critical high-availability is to your requirements will determine how you handle the addition of complexity and cost to your application SLAs.
 
