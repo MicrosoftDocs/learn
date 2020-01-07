@@ -10,6 +10,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-durationInMinutes: 14
+durationInMinutes: 5
 content: |
   [!include[](includes/2-conversational-ai-bot-types.md)] 

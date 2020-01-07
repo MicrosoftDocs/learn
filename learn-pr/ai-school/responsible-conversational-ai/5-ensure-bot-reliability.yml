@@ -10,6 +10,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-durationInMinutes: 9
+durationInMinutes: 8
 content: |
   [!include[](includes/5-ensure-bot-reliability.md)] 
