@@ -9,7 +9,7 @@ In this unit, you'll assess two hybrid networking scenarios: Azure ExpressRoute 
 As the solution architect, you understand the need to provide a robust and reliable network connection between your on-premises datacenters and Azure. The requirements demand low latency and a high level of availability. From your investigations, you know there are two possibilities: VPN or ExpressRoute.
 Both solutions provide a secure connection between the onsite premises and the Azure virtual network.
 
-The VPN solution uses known and established technologies. However, a VPN isn't designed to handle high data volumes, and the core infrastructure backbone still uses the internet. Using a VPN might be a cost-effective solution in the short term. You know that, in the long term, a VPN is unlikely to provide the performance, scalability, and resilience your organization requires.
+The VPN solution uses known and established technologies. However, a VPN isn't designed to handle high data volumes, and the core infrastructure backbone still uses the internet. Using a VPN might be a cost-effective solution in the short term. You know that in the long term a VPN is unlikely to provide the performance, scalability, and resilience your organization requires.
 
 The ExpressRoute option uses a dedicated private connectivity partner to provide a direct connection between your on-premises datacenters and Azure. Microsoft requires the connectivity provider to maintain two discreet connections to the Azure network for each ExpressRoute circuit, which ensures a high level of resilience. ExpressRoute also provides a connection bandwidth that's almost 10 times faster than a VPN. It requires a close working partnership with the connectivity provider, it's a more complex configuration, and can be more expensive than a regular VPN network.
 
@@ -19,7 +19,7 @@ However, based on what you've learned so far, you decide that ExpressRoute is be
 
 Your organization's presence covers a wide geographical location. While your datacenter and HQ are all in the same building, many satellite branches also need a connection to the Azure network.
 
-You've established ExpressRoute as your preferred connection to Azure. Now you'll consider your second requirement: connecting regionalized satellite offices to the Azure network.
+You've established ExpressRoute as your preferred connection to Azure. Now you'll consider your second requirement: connecting regional satellite offices to the Azure network.
 
 Unlike your HQs, which have thousands of employees and an on-premises datacenter, the satellite offices have between 20 and 50 employees. There's no requirement for a fast, low latency connection.
 
@@ -40,4 +40,4 @@ To show what you've learned in this unit and to help you choose between the conn
 | Connection resiliency | active-passive | active-active |
 | Use cases | prototyping, dev, test, labs, RDC, and small production workloads | Access to all Azure services, enterprise-grade, supporting critical large-scale workloads |
 | SLA | 99.95-99.99% | 99.95% |
-| Pricing | from $26.28 per month | from $55 per month |
+| Pricing | from $26.28 per month | from $55 per month, plus circuit provider costs |
