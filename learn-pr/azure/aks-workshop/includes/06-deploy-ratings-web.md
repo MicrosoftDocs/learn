@@ -4,7 +4,7 @@ In this exercise, you're going to deploy that Docker image of the frontend to th
 
 By the end of this unit, you should have deployed the ratings web frontend and configured it to communicate with ratings API. The frontend will be exposed through a public IP.
 
-![Deployed resources on the Azure Kubernetes Service cluster](../media/06-arch-3.png)
+![Deployed resources on the Azure Kubernetes Service cluster](../media/06-arch-3.svg)
 
 ## Create a Kubernetes deployment file for the ratings web frontend
 
