@@ -2,7 +2,7 @@
 
 In this workshop, you’ll go through tasks that will help you master the basic and more advanced tasks required to deploy a multi-container application to Kubernetes on Azure Kubernetes Service (AKS).
 
-Use this [pre-configured Azure Calculator](https://aka.ms/aks-workshop-estimate?azure-portal=true) to review a monthly cost-estimate of the resources that will be deployed.
+You'll deploy the resources in this workshop into a subscription you have access to. To estimate the costs that can be expected for these resources, visit the [pre-configured Azure Calculator estimate](https://aka.ms/aks-workshop-estimate?azure-portal=true) of the resources that will be deployed.
 
 ## Learning objectives
 
