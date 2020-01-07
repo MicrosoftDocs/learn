@@ -25,7 +25,7 @@ Here are the possibilities we should consider:
 * Feature toggles
 * Dark launches
 * A/B testing
-* Progressive exposure deployment
+* Progressive-exposure deployment
 
 Let's briefly discuss each pattern.
 
