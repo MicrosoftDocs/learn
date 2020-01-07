@@ -1,6 +1,6 @@
 If your bot is not reliable then your users will not trust it, or even avoid it completely. First impressions are important and once you’ve lost your users confidence it can be hard to get it back. This article discusses some key principles to ensuring your bot is reliable.
 
-For a bot to be useful, it must actually work. Humans are quick to discount experiences that don’t work, and our negativity bias will ensure that if a new experience is bad for us, we will not only avoid it in future - we’ll tell all our friends to avoid it as well! On the other hand, we have a strong tendency to repeat behaviours we find useful, and having a reliable bot will quickly build a habit of re-use among your users.
+For a bot to be useful, it must actually work. Humans are quick to discount experiences that don’t work, and our negativity bias will ensure that if a new experience is bad for us, we will not only avoid it in future - we’ll tell all our friends to avoid it as well! On the other hand, we have a strong tendency to repeat behaviors we find useful, and having a reliable bot will quickly build a habit of reuse among your users.
 
 ## Clearly define the actions that your bot is able to perform
 
@@ -18,7 +18,7 @@ Users will be much more forgiving of your bot if it’s possible to give it - an
 
 ## Make sure your bot can ask a human for help
 
-Inevitably, some (if not quite a few!) problems can’t be solved through user-bot interaction alone. The system, while not necessarily needing to immediately accommodate “I just want to talk to a human!”-type demands,  should always be designed so a bot knows knows when it needs to hand off to a human operator. And this decision should be driven by respect for your user. Some users simply won’t want to talk to a bot, and this understandable sentiment should be accommodated in your design. Reliability signals can be developed to help drive these kind of decisions, so the handoff occurs at the appropriate time and in the smoothest possible way. 
+Inevitably, some (if not quite a few!) problems can’t be solved through user-bot interaction alone. The system, while not necessarily needing to immediately accommodate “I just want to talk to a human!”-type demands,  should always be designed so a bot knows when it needs to hand off to a human operator. And this decision should be driven by respect for your user. Some users simply won’t want to talk to a bot, and this understandable sentiment should be accommodated in your design. Reliability signals can be developed to help drive these kind of decisions, so the handoff occurs at the appropriate time and in the smoothest possible way. 
 
 This is especially important for bots that work in sensitive or critical areas. Human users need to be assured that the bot can call for help, and the call will be answered. Users will feel much more comfortable with bots, and will have a much higher level of trust, if they know a human is just around the corner. 
 
@@ -34,9 +34,9 @@ With traceability implemented, you’ll need to have a support system where issu
 
 ## Help the user understand how the bot can help them - and explain the bot’s limitations
 
-If you tell the user up-front exactly how the bot is designed to help them, and explain the ways they can use it or things they can ask it for, they’re more likely to interact with it in a useful way. You should also let the user know the bot’s limitations. This step helps build trust with the user, and it will help them avoid behaviour that would otherwise only result in frustration. Also consider where troubleshooting steps might benefit the user. For example, if they’re not getting what they need from the bot, the bot will need to explain how this can be fixed - which includes handing off to a human operator. 
+If you tell the user up-front exactly how the bot is designed to help them, and explain the ways they can use it or things they can ask it for, they’re more likely to interact with it in a useful way. You should also let the user know the bot’s limitations. This step helps build trust with the user, and it will help them avoid behavior that would otherwise only result in frustration. Also consider where troubleshooting steps might benefit the user. For example, if they’re not getting what they need from the bot, the bot will need to explain how this can be fixed - which includes handing off to a human operator. 
 
-*Helping a user understand a bot’s capabilities could be in the form of a menu, or a text command, or an quick explanation of limitations when the user attempts something beyond the bot’s parameters.*
+*Helping a user understand a bot’s capabilities could be in the form of a menu, or a text command, or a quick explanation of limitations when the user attempts something beyond the bot’s parameters.*
 
 ## Make sure your feedback mechanism is genuine
 
@@ -56,7 +56,7 @@ Bots should be designed from the ground up to respect the full range of human ab
 
 When you’re designing your bot, you can assess how it will comply with the international web accessibility standard WCAG 2.0 AA, and U.S. Section 508 and EN 301 549 standards. Doing so will help users who: 
 
-- Rely on screen readers
+- Rely on-screen readers
 - Navigate UI using only keyboards
 - Are hard of hearing
 - Require color contrast or cannot distinguish between colors.
@@ -64,7 +64,7 @@ When you’re designing your bot, you can assess how it will comply with the int
 - Have epilepsy
 - Have dyslexia
 
-*There are numerous frameworks that take accessibility into consideration, or are designed for it from the ground up; one of these is Microsoft’s Inclusive Design toolkit. Use this to design bots which recognize exclusion, learn from diversity and solve for ability constraints.*
+*There are numerous frameworks that take accessibility into consideration, or are designed for it from the ground up; one of these is Microsoft’s Inclusive Design toolkit. Use this to design bots that recognize exclusion, learn from diversity and solve for ability constraints.*
 
 ## Accessibility testing
 

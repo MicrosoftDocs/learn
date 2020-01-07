@@ -24,7 +24,6 @@ roles:
 products: 
 - azure
 - dynamics
-- m365
 units: 
 - learn-wwl.responsible-conversational-ai.introduction-to-responsible-conversational-ai
 - learn-wwl.responsible-conversational-ai.responsibility-imperatives
