@@ -32,6 +32,7 @@ Naturally occurring conversational data is hard to obtain, for reasons of privac
 Sources that are intrinsically private in nature, such as customer and service interaction data, may come under significant restrictions. They’ll require anonymisation, and may only be subject to machine learning under eyes-off processes that don’t include personal information.
 
 ### Cleaning training data
+
 No matter where your training data is sourced from, it’ll need to be cleaned before it’s usable. This helps make sure that it conforms to social norms, is grammatically correct, that it conforms to the persona required for your chatbot, and that it doesn’t include personal or identifying information. Special attention should go towards removing or completely anonymize personal information, such as phone numbers, email addresses, zip codes. If this isn’t done, sensitive data like credit card numbers and social security numbers may end up being transmitted naively or maliciously in open conversations. Developers should always consider the possibility that machine learned generative models are capable of accidentally exposing such information given the right inputs.
 
 Although social media itself is notoriously noisy, extended conversations tend to be relatively clean. Once the data is scrubbed, it can produce models that usually conform to social norms. However, to protect against bad inputs, your training data should include and allow for malformed utterances - spelling mistakes, emotional outbursts, and the like.
@@ -46,7 +47,7 @@ In summary - until models can be fully grounded in an understanding of their soc
 
 At the end of the day you are responsible for what you bot does and says. This article talks about guidelines to ensure that you can detect and remedy issues in your bot.
 
-Modern bots are incredibly useful, and they are only becoming more so. However, at this point in time, they are still a long way from fully autonomous. AI experts disagree on when full AI autonomy will appear — if it ever does. Even the most optimistic estimates predict true autonomy / machine sentience will not arrive for another 50 years. Until, and if, that ever occurs, human designers will always bear the ultimate moral and ethical burden of what they create. 
+Modern bots are incredibly useful, and they are only becoming more so. However, at this point in time, they are still a long way from fully autonomous. AI experts disagree on when full AI autonomy will appear — if it ever does. Even the most optimistic estimates predict true autonomy / machine sentience will not arrive for another 50 years. Until, and if, that ever occurs, human designers will always bear the ultimate moral and ethical burden of what they create.
 
 ## Build human supervision feedback loops into they system by design
 
@@ -54,9 +55,23 @@ Your bot shouldn’t be able to run away with you. Building human feedback loops
 
 ## Determine roles within your organisation that clearly define who is responsible for what
 
-Every organisation, even organisations of one, have someone to whom ultimate responsibility for your bot can be assigned. Before your bot is deployed, your organisation needs to decide who that is for you. If you are developing a bot that your organization will deploy, you should recognize that you are fully responsible for its operation and how it affects people. If you are designing a bot to be deployed by a third party, come to a shared understanding with them of who is ultimately responsible for the bot and document that understanding. 
-
+Every organisation, even organisations of one, have someone to whom ultimate responsibility for your bot can be assigned. Before your bot is deployed, your organisation needs to decide who that is for you. If you are developing a bot that your organization will deploy, you should recognize that you are fully responsible for its operation and how it affects people. If you are designing a bot to be deployed by a third party, come to a shared understanding with them of who is ultimately responsible for the bot and document that understanding.
 
 ## Monitoring and automated controls
 
 __Ensure that monitoring is tied into an automated alert system__, and dedicate resources and time to monitoring and assessing your bots performance.
+
+Truly autonomous AI may still be hypothetical, but until (or if) it does arise, one thing remains true: The developers of bots have responsibility, and are accountable, for their operations. As bots become more and more powerful, this will only become more true. This course has shown you how to take real responsibility for your bot. It’s not an easy task, but it is worth it. Ethical AI development will ensure that AI becomes a trusted tool to help all of humanity, and bots will go on to assist us in ways that we currently can barely dream of.
+
+The Ten Bot Commandments
+
+1. Make sure you understand why your bot exists — and that you, and your users, understand the consequences of using it. 
+2. Make sure your users know they’re working with a bot. 
+3. Make sure your bot can ask a human for help
+4. Make sure your bot isn’t accidentally evil - and make doubly sure that users can’t make it evil. 
+5. Make sure your bot works, and that it’ll keep working. 
+6. Make sure your bot treats all users fairly. 
+7. Make sure your bot respects users privacy. 
+8. Make sure your bot handles data safely. 
+9. Make sure your bot can be used by the widest range of people possible. 
+10. You are responsible for your bot’s actions. 

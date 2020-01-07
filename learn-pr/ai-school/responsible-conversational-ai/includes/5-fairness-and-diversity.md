@@ -53,4 +53,3 @@ GDPR grants users four main rights which are referred to as Data Subject Rights:
 A key tenet is not to store any more information that you need to perform the function of the bot. If you are concerned about whether or not your are compliant it’s advised to get a GDPR expert involved in your project.
 
 Sometimes, a user’s desire for privacy will conflict with the ability for your bot to provide a service to them. If that happens, that’s OK. It’s better for your bot to be upfront and transparent with privacy and personal information, and offer the user complete (secure) control over what to do with that information. In the long run, this will build trust and help prevent abuse.
-
