@@ -1,0 +1,81 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-open-source-database-migration-azure-cosmos-db.knowlege-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 01/31/2020
+  author: wwlpublish
+  ms.author: v-gea
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "How is it possible that Cosmos DB supports several database systems?"
+    choices:
+    - content: "Cosmos DB has multiple database engines, one for each system."
+      isCorrect: false
+      explanation: "To support multiple data models, Cosmos DB uses an API for each data model. The APIs provide projections of containers and items as familiar objects to that data model."
+    - content: "Cosmos DB is identical for each system, but has multiple APIs."
+      isCorrect: true
+      explanation: "To support multiple data models, Cosmos DB uses an API for each data model. The APIs provide projections of containers and items as familiar objects to that data model."
+    - content: "Cosmos DB dynamically rewrites queries for each system."
+      isCorrect: false
+      explanation: "To support multiple data models, Cosmos DB uses an API for each data model. The APIs provide projections of containers and items as familiar objects to that data model."
+  - content: "What is the most suitable API to create graph entities in Cosmos DB?"
+    choices:
+    - content: "Cassandra"
+      isCorrect: false
+      explanation: "Gremlin is the Apache Tinkerpop graph traversal language. The Gremlin API enables you to create graph entities in Cosmos DB."
+    - content: "Azure Table"
+      isCorrect: false
+      explanation: "Gremlin is the Apache Tinkerpop graph traversal language. The Gremlin API enables you to create graph entities in Cosmos DB."
+    - content: "Gremlin"
+      isCorrect: true
+      explanation: "Gremlin is the Apache Tinkerpop graph traversal language. The Gremlin API enables you to create graph entities in Cosmos DB."
+  - content: "Which Azure Cosmos DB deployment guarantees 99.999% availability?"
+    choices:
+    - content: "Cosmos DB systems with a local replica provide 99.999% availability."
+      isCorrect: false
+      explanation: "Microsoft provides a service level agreement that Cosmos DB systems with multiple regions as writeable endpoints will provide 99.999% availability."
+    - content: "Cosmos DB systems with multiple regions as writeable endpoints provide 99.999% availability."
+      isCorrect: true
+      explanation: "Microsoft provides a service level agreement that Cosmos DB systems with multiple regions as writeable endpoints will provide 99.999% availability."
+    - content: "Cosmos DB systems that are read-only provide 99.999% availability."
+      isCorrect: false
+      explanation: "Microsoft provides a service level agreement that Cosmos DB systems with multiple regions as writeable endpoints will provide 99.999% availability."
+  - content: "Latency is important to your organization. What is the guarantee for Cosmos DB read and write latency globally?"
+    choices:
+    - content: "< 0.1-ms"
+      isCorrect: true
+      explanation: "Cosmos DB guarantees less than 10-ms latency for indexed reads and for writes globally."
+    - content: "< 1-ms"
+      isCorrect: false
+      explanation: "Cosmos DB guarantees less than 10-ms latency for indexed reads and for writes globally."
+    - content: "< 10-ms"
+      isCorrect: false
+      explanation: "Cosmos DB guarantees less than 10-ms latency for indexed reads and for writes globally."
+  - content: "What is the size limit of a logical partition?"
+    choices:
+    - content: "10-GB"
+      isCorrect: true
+      explanation: "It's important to select the correct key for the logical partition because each logical partition has a limit of 10-GB."
+    - content: "100-GB"
+      isCorrect: false
+      explanation: "It's important to select the correct key for the logical partition because each logical partition has a limit of 10-GB."
+    - content: "Unlimited"
+      isCorrect: false
+      explanation: "It's important to select the correct key for the logical partition because each logical partition has a limit of 10-GB."
+  - content: "What are hot partitions?"
+    choices:
+    - content: "Partitions that have exceeded their storage limit."
+      isCorrect: false
+      explanation: "Hot partitions occur when you select your partition key poorly, resulting in queries disproportionately running against a small number of petitions."
+    - content: "Partitions set to run in high-performance mode."
+      isCorrect: false
+      explanation: "Hot partitions occur when you select your partition key poorly, resulting in queries disproportionately running against a small number of petitions."
+    - content: "Partitions that are hit by a disproportionately high number of queries."
+      isCorrect: true
+      explanation: "Hot partitions occur when you select your partition key poorly, resulting in queries disproportionately running against a small number of petitions."

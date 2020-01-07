@@ -20,7 +20,8 @@ High availability of SAP workloads on Azure VMs can be analyzed in two different
 
      * Availability Zones
 
-It is important to note that these two contexts complement each other, so your design should combine benefits provided by each of them.
+> [!NOTE]
+> It is important to note that these two contexts complement each other, so your design should combine benefits provided by each of them.
 
 ## Deployment scenarios
 **Single-SID deployment with two clusters**
