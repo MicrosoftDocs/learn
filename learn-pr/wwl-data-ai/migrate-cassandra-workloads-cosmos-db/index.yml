@@ -8,7 +8,7 @@ metadata:
   ms.author: v-gea
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: M02-migrate-cassandra-workloads-cosmos-db
+title: migrate-cassandra-workloads-cosmos-db
 summary: Learners will be able to demonstrate the benefits and processes for moving a Cassandra database to the Azure Cosmos DB Cassandra API.
 abstract: |
   - List the benefits of Cassandra to Cosmos DB migration
