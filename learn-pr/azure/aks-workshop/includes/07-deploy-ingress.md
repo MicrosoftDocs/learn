@@ -1,127 +1,70 @@
-Instead of accessing the frontend through an IP address, you would like to expose the frontend over a hostname. Explore using Kubernetes Ingress to achieve this purpose.
+A Kubernetes service is a layer 4 load balancer. An Kubernetes ingress controller is a piece of software that provides layer 7 features such as reverse proxy, configurable traffic routing, and TLS termination for Kubernetes services. Kubernetes ingress resources are used to configure the ingress rules and routes for individual Kubernetes services. Using an ingress controller and ingress rules, a single IP address can be used to route traffic to multiple services in a Kubernetes cluster.
 
-As there are many options out there for ingress controllers, we will stick to the tried and true nginx-ingress controller, which is the most popular albeit not the most featureful controller.
+There are a number of choices for running Kubernetes ingress on Azure Kubernetes Service (AKS), including Azure Application Gateway, Ambassador, HAProxy, Kong, NGINX and Traefik. The ingress controllers is exposed to the internet by using a Kubernetes service of type LoadBalancer. The Ingress controller watches and implements Kubernetes Ingress resources, which creates routes to application endpoints.
 
-In this exercise, you're going to deploy that Docker image of the frontend to the Azure Kubernetes Service (AKS) by creating a Kubernetes [deployment](https://docs.microsoft.com/azure/aks/concepts-clusters-workloads#deployments-and-yaml-manifests?azure-portal=true), and exposing it through a load balancer by creating a Kubernetes [service](https://docs.microsoft.com/azure/aks/concepts-network#services?azure-portal=true). Additionally, you're going to configure the frontend to connect to the ratings API you've already deployed.
+In this exercise, you're going to deploy a basic Kubernetes ingress controller, using NGINX, then configure the ratings frontend service to use that ingress for traffic.
 
-By the end of this unit, you should have deployed the ratings web frontend and configured it to communicate with ratings API. The frontend will be exposed through a public IP.
+![Deployed resources on the Azure Kubernetes Service cluster](../media/arch-4.png)
 
-![Deployed resources on the Azure Kubernetes Service cluster](../media/arch-3.png)
+## Deploy the NGINX ingress controller with Helm
 
-## Create a Kubernetes deployment file for the ratings web frontend
-
-1. Create a file called `ratings-web-deployment.yaml` using the integrated editor.
+1. Create a namespace for the ingress
 
     ```bash
-    code ratings-web-deployment.yaml
+    kubectl create namespace ingress
     ```
 
-1. Paste the following text in the file:
-
-    ```yaml
-    apiVersion: apps/v1
-    kind: Deployment
-    metadata:
-      name: ratings-web
-    spec:
-      replicas: 1
-      selector:
-        matchLabels:
-          app: ratings-web
-      template:
-        metadata:
-          labels:
-            app: ratings-web # the label for the pods and the deployments
-        spec:
-          containers:
-          - name: ratings-web
-            image: <acrname>.azurecr.io/ratings-web:v1 # IMPORTANT: update with your own repository
-            imagePullPolicy: Always
-            ports:
-            - containerPort: 8080 # the application listens to this port
-            env:
-            - name: API # the application expects to connect to the API at this endpoint
-              value: http://ratings-api.ratingsapp.svc.cluster.local
-            resources:
-              requests: # minimum resources required
-                cpu: 250m
-                memory: 64Mi
-              limits: # maximum resources allocated
-                cpu: 500m
-                memory: 512Mi
-    ```
-
-    In the `image` key update the value replacing `<acrname>` with the name of your Container Registry.
-
-1. Review the file, and note the following points:
-
-    - **Replicas and image**
-
-    You will create a deployment running the image you pushed in Azure Container Registry you created earlier, for example `acr4229.azurecr.io/ratings-web:v1`. The container listens to port **8080**. The deployment and the pods are going to be labeled with **app=ratings-web**.
-
-    - **Environment variables**
-
-    The ratings frontend expects to connect to the API endpoint by configured in an `API` environment variable. If you used the defaults and deployed the ratings API service in the **ratingsapp** namespace, the value of that should be `http://ratings-api.ratingsapp.svc.cluster.local`.
-
-    - **Resource requests and limits**
-
-    Each container instance will be allocated a minimum **0.25 cores** and **64 Mb of memory**. The Kubernetes scheduler will look for a node with available capacity to schedule such pod. A Container may or may not be allowed to exceed its CPU limit for extended periods of time. However, it will not be killed for excessive CPU usage. If a container exceeds its memory limit, it could be terminated.
-
-1. To save and close the editor, open the ``...`` action panel in the top right of the editor and select **Save**, then select **Close editor**. You an also use <kbd>Ctrl-s</kbd> to save, and <kbd>Ctrl-q</kbd> to close the editor.
-
-## Apply the Kubernetes deployment file
-
-1. Apply the configuration using the `kubectl apply` command. You'll be deploying this in the **ratingsapp** namespace.
+1. Install the NGINX ingress controller. NGINX ingress is part of the stable Helm repository you already configured when installing MongoDB. For added redundancy, two replicas of the NGINX ingress controllers are deployed with the `--set controller.replicaCount` parameter. The ingress controller also needs to be scheduled on a Linux node. Windows Server nodes shouldn't run the ingress controller. A node selector is specified using the `--set nodeSelector` parameter to tell the Kubernetes scheduler to run the NGINX ingress controller on a Linux-based node.
 
     ```bash
-    kubectl apply --namespace ratingsapp -f ratings-web-deployment.yaml
+    helm install nginx-ingress stable/nginx-ingress \
+        --namespace ingress \
+        --set controller.replicaCount=2 \
+        --set controller.nodeSelector."beta\.kubernetes\.io/os"=linux \
+        --set defaultBackend.nodeSelector."beta\.kubernetes\.io/os"=linux
     ```
 
-    You'll see an output like the below.
+1. Once released, you should get an output similar to this.
 
     ```output
-    deployment.apps/ratings-web created
+    NAME: nginx-ingress
+    LAST DEPLOYED: Mon Jan  6 15:18:42 2020
+    NAMESPACE: ingress
+    STATUS: deployed
+    REVISION: 1
+    TEST SUITE: None
+    NOTES:
+    The nginx-ingress controller has been installed.
+    It may take a few minutes for the LoadBalancer IP to be available.
+    You can watch the status by running 'kubectl --namespace ingress get services -o wide -w nginx-ingress-controller'
     ```
 
-1. Watch the pods rolling out. You're querying for pods in the **ratingsapp** namespace which are labeled with **app=ratings-web**.
+1. Next, let's check the public IP of the ingress service. It takes a few minutes for the service to acquire the public IP. Run the following command with a *watch* by adding the `-w` flag to see it updating in real time. You can use <kbd>Ctrl-c</kbd> to stop watching.
 
     ```bash
-    kubectl get pods --namespace ratingsapp -l app=ratings-web -w
+    kubectl get service nginx-ingress-controller --namespace ingress -w
     ```
 
-    In a few seconds, you should see the pods transition to the `Running` state. You can use `CTRL+C` to stop watching.
+    The service will show `EXTERNAL-IP` as `<pending>` for a while until it finally changes to an actual IP.
 
     ```output
-    NAME                          READY   STATUS    RESTARTS   AGE
-    ratings-web-fcc464b8d-vck96   1/1     Running   0          37s
+    NAME                       TYPE           CLUSTER-IP    EXTERNAL-IP      PORT(S)                      AGE
+    nginx-ingress-controller   LoadBalancer   10.2.0.162    52.170.254.167   80:32010/TCP,443:30245/TCP   3m30s
     ```
 
-    If the pods are not starting, not ready or are crashing, you can view their logs using `kubectl logs <pod name> --namespace ratingsapp` and `kubectl describe pod <pod name> --namespace ratingsapp`.
+    Make note of that EXTERNAL-IP, for example 52.170.254.167.
 
-1. Check the status of the deployment
+## Edit th Kubernetes service file for the ratings web service
 
-    ```bash
-    kubectl get deployment ratings-web --namespace ratingsapp
-    ```
+Since you’re going to expose the deployment using an ingress, there is no need to use a public IP for the service, hence you can set the type of the service to be `ClusterIP` instead of `LoadBalancer`.
 
-    The deployment should show 1 replica is ready.
-
-    ```output
-    NAME          READY   UP-TO-DATE   AVAILABLE   AGE
-    ratings-web   1/1     1            1           2m
-    ```
-
-## Create a Kubernetes service file for the ratings API service
-
-To simplify the network configuration for application workloads, Kubernetes uses [Services](https://docs.microsoft.com/azure/aks/concepts-network#services?azure-portal=true) to logically group a set of pods together and provide network connectivity.
-
-1. Create a file called `ratings-web-service.yaml` using the integrated editor.
+1. Edit the file called `ratings-web-service.yaml` using the integrated editor.
 
     ```bash
     code ratings-web-service.yaml
     ```
 
-1. Paste the following text in the file.
+1. Replace the existing content in the file with the following text. Note the change of the service `type` to `ClusterIP`.
 
     ```yaml
     apiVersion: v1
@@ -135,28 +78,20 @@ To simplify the network configuration for application workloads, Kubernetes uses
       - protocol: TCP
         port: 80
         targetPort: 8080
-      type: LoadBalancer
+      type: ClusterIP
     ```
-
-1. Review the file, and note the following points:
-
-    - **Selector**
-
-    The set of pods targeted by a service is determined by the selector. In the example below, Kubernetes will load balance traffic to pods that have the label `app: ratings-web`, which was defined when creating the deployment. The controller for the service continuously scans for pods matching that label to add them to the load balancer.
-
-    - **Ports**
-
-    A service can map an incoming `port` to a `targetPort`. The incoming port is what the service would respond to, while the target port is what the pods are configured to listen to. For example, the service will be exposed externally at port `80` and will load balance the traffic to the ratings-web pods listening on port `8080`.
-
-    - **Type**
-
-    A service of type **LoadBalancer** creates an public IP address in Azure and assigns it to the Azure Load Balancer. Choosing this value makes the Service  reachable from outside the cluster.
 
 1. To save and close the editor, open the ``...`` action panel in the top right of the editor and select **Save**, then select **Close editor**. You an also use <kbd>Ctrl-s</kbd> to save, and <kbd>Ctrl-q</kbd> to close the editor.
 
-## Apply the Kubernetes service file to create a load balanced service
+1. Changing the value of `type` on a deployed service is not allowed, so you'll need to delete the service and recreate it again with the changed configuration.
 
-1. Apply the configuration using the `kubectl apply` command. You'll be deploying this in the **ratingsapp** namespace.
+    ```bash
+    kubectl delete service \
+        --namespace ratingsapp \
+        ratings-web
+    ```
+
+    then recreate
 
     ```bash
     kubectl apply \
@@ -164,27 +99,50 @@ To simplify the network configuration for application workloads, Kubernetes uses
         -f ratings-web-service.yaml
     ```
 
+## Create an ingress route file for the ratings web service
+
+1. Edit the file called `ratings-web-ingress.yaml` using the integrated editor.
+
+    ```bash
+    code ratings-web-ingress.yaml
+    ```
+
+1. Paste the following text in the file.
+
+    ```yaml
+    apiVersion: networking.k8s.io/v1beta1
+    kind: Ingress
+    metadata:
+      name: ratings-web-ingress
+      annotations:
+        kubernetes.io/ingress.class: nginx
+    spec:
+      rules:
+      - http:
+          paths:
+          - path: /
+            backend:
+              serviceName: ratings-web
+              servicePort: 80
+    ```
+
+1. To save and close the editor, open the ``...`` action panel in the top right of the editor and select **Save**, then select **Close editor**. You an also use <kbd>Ctrl-s</kbd> to save, and <kbd>Ctrl-q</kbd> to close the editor.
+
+## Apply the Kubernetes ingress route file to create a load balanced service
+
+1. Apply the configuration using the `kubectl apply` command. You'll be deploying this in the **ratingsapp** namespace.
+
+    ```bash
+    kubectl apply \
+        --namespace ratingsapp \
+        -f ratings-web-ingress.yaml
+    ```
+
     You'll output similar to the following:
 
     ```output
     service/ratings-web created
     ```
-
-1. Next, let's check the status of the service. It takes a few minutes for the service to acquire the public IP. Run the following command with a *watch* by adding the `-w` flag to see it updating in real time. You can use <kbd>Ctrl-c</kbd> to stop watching.
-
-    ```bash
-    kubectl get service ratings-web --namespace ratingsapp -w
-    ```
-
-    The service will show `EXTERNAL-IP` as `<pending>` for a while until it finally changes to an actual IP.
-
-    ```output
-    NAME          TYPE           CLUSTER-IP   EXTERNAL-IP    PORT(S)         AGE
-    ratings-web   LoadBalancer   10.0.40.94   <pending>      80:32747/TCP    11s
-    ratings-web   LoadBalancer   10.0.149.37  13.90.152.99   80:32747/TCP    5m
-    ```
-
-    Make note of that EXTERNAL-IP, for example 13.90.152.99, as you'll use it to access the application.
 
 ## Test the application
 
