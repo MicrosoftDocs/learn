@@ -2,7 +2,7 @@ The Azure portal has several features and services available; let's look at some
 
 ![Screenshot of the Azure portal icon bar](../media/5-portal-icon-bar.png)
 
-## Services pane
+## All services
 
 1. On the top left-hand side of the Azure portal, select **Show portal menu**.
 
