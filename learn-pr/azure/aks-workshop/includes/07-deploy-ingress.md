@@ -54,7 +54,7 @@ In this exercise, you're going to deploy a basic Kubernetes ingress controller, 
 
     Make note of that EXTERNAL-IP, for example 13.68.177.68.
 
-## Edit th Kubernetes service file for the ratings web service
+## Edit the Kubernetes service file for the ratings web service
 
 Since you’re going to expose the deployment using an ingress, there is no need to use a public IP for the service, hence you can set the type of the service to be `ClusterIP` instead of `LoadBalancer`.
 
