@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 A Kubernetes service is a layer 4 load balancer. An Kubernetes ingress controller is a piece of software that provides layer 7 features such as reverse proxy, configurable traffic routing, and TLS termination for Kubernetes services. Kubernetes ingress resources are used to configure the ingress rules and routes for individual Kubernetes services. Using an ingress controller and ingress rules, a single IP address can be used to route traffic to multiple services in a Kubernetes cluster.
 
 There are a number of choices for running Kubernetes ingress on Azure Kubernetes Service (AKS), including Azure Application Gateway, Ambassador, HAProxy, Kong, NGINX and Traefik. The ingress controllers is exposed to the internet by using a Kubernetes service of type LoadBalancer. The Ingress controller watches and implements Kubernetes Ingress resources, which creates routes to application endpoints.
@@ -154,4 +155,6 @@ In this exercise, you created a deployment of the **ratings-web** and exposed it
 
 - **Deployment/ratings-web**. The web frontend.
 - **Service/ratings-web**. The load balanced service, which is exposed on the Azure Load Balancer through a public IP.
+=======
+>>>>>>> dc939b07a1b34e47d72c75660a0d3ee77b1448e6
 

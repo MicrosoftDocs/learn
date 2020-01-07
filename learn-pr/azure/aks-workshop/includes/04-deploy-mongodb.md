@@ -6,7 +6,7 @@ Charts are stored in Helm chart repositories. The official chart repository is m
 
 By the end of this unit, you should have deployed MongoDB using Helm. You'll also store the MongoDB credentials in a Kubernetes secret.
 
-![Deployed resources on the Azure Kubernetes Service cluster](../media/arch-1.png)
+![Deployed resources on the Azure Kubernetes Service cluster](../media/04-arch-1.svg)
 
 ## Add the Helm stable repository
 
