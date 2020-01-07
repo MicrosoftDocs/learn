@@ -10,7 +10,7 @@ In this exercise, we'll manage the SQL elastic pool and add an additional databa
 
 1. Here you can select either a *DTU-based* or *vCore-based* pricing model by selecting the service tier for the elastic pool; select **Basic** and click **Save**.
 
-1. Within each tier, you can change the number of eDTUs for the pool; change the eDTUs to **200** and click **Apply**.
+1. Within each tier, you can change the number of eDTUs for the pool; change the eDTUs to **200** and click **Save**.
 
 1. Observe the **Cost summary** on the right, which shows the estimated monthly cost of your elastic pool.
 
