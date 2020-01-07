@@ -1,11 +1,10 @@
-<<<<<<< HEAD
 A Kubernetes service is a layer 4 load balancer. An Kubernetes ingress controller is a piece of software that provides layer 7 features such as reverse proxy, configurable traffic routing, and TLS termination for Kubernetes services. Kubernetes ingress resources are used to configure the ingress rules and routes for individual Kubernetes services. Using an ingress controller and ingress rules, a single IP address can be used to route traffic to multiple services in a Kubernetes cluster.
 
 There are a number of choices for running Kubernetes ingress on Azure Kubernetes Service (AKS), including Azure Application Gateway, Ambassador, HAProxy, Kong, NGINX and Traefik. The ingress controllers is exposed to the internet by using a Kubernetes service of type LoadBalancer. The Ingress controller watches and implements Kubernetes Ingress resources, which creates routes to application endpoints.
 
 In this exercise, you're going to deploy a basic Kubernetes ingress controller, using NGINX, then configure the ratings frontend service to use that ingress for traffic.
 
-![Deployed resources on the Azure Kubernetes Service cluster](../media/arch-4.png)
+![Deployed resources on the Azure Kubernetes Service cluster](../media/07-arch-4.png)
 
 ## Deploy the NGINX ingress controller with Helm
 
@@ -50,10 +49,10 @@ In this exercise, you're going to deploy a basic Kubernetes ingress controller, 
 
     ```output
     NAME                       TYPE           CLUSTER-IP    EXTERNAL-IP      PORT(S)                      AGE
-    nginx-ingress-controller   LoadBalancer   10.2.0.162    52.170.254.167   80:32010/TCP,443:30245/TCP   3m30s
+    nginx-ingress-controller   LoadBalancer   10.2.0.162    13.68.177.68     80:32010/TCP,443:30245/TCP   3m30s
     ```
 
-    Make note of that EXTERNAL-IP, for example 52.170.254.167.
+    Make note of that EXTERNAL-IP, for example 13.68.177.68.
 
 ## Edit th Kubernetes service file for the ratings web service
 
@@ -119,13 +118,19 @@ Since you’re going to expose the deployment using an ingress, there is no need
         kubernetes.io/ingress.class: nginx
     spec:
       rules:
-      - http:
+      - host: frontend.<ingress ip>.nip.io # IMPORTANT: update <ingress ip> with the dashed public IP of your ingress, for example frontend.13-68-177-68.nip.io
+        http:
           paths:
-          - path: /
-            backend:
+          - backend:
               serviceName: ratings-web
               servicePort: 80
+            path: /
     ```
+
+    In this file, update the `<ingress ip>` value in the `host` key with the *dashed* public IP of your ingress that you retrieved earlier. For example, **frontend.13-68-177-68.nip.io**. This will allow you to access the ingress via a hostname instead of an IP address. In the next unit, you'll be able to configure SSL/TLS on that hostname.
+
+    > [!NOTE]
+    > In this example, you're using [nip.io](https://nip.io) which is a free service providing wildcard DNS. You can use alternatives such as [xip.io](http://xip.io) or [sslip.io](https://sslip.io). Alternatively, you can use your own domain name and setup the proper DNS records.
 
 1. To save and close the editor, open the ``...`` action panel in the top right of the editor and select **Save**, then select **Close editor**. You an also use <kbd>Ctrl-s</kbd> to save, and <kbd>Ctrl-q</kbd> to close the editor.
 
@@ -142,19 +147,13 @@ Since you’re going to expose the deployment using an ingress, there is no need
     You'll output similar to the following:
 
     ```output
-    service/ratings-web created
+    ingress.networking.k8s.io/ratings-web-ingress created
     ```
 
 ## Test the application
 
-Now that the ratings-web service has a public IP, open that IP in your web browser, for example at **<http://13.90.152.99>** and you should be able to view and interact with the application.
+You should be able to open the hostname you configured on the ingress in your web browser, for example at **<http://frontend.13-68-177-68.nip.io>** to view and interact with the application.
 
-![Screenshot of the ratings-web application](../media/ratings-web.png)
+![Screenshot of the ratings-web application](../media/ratings-web-ingress.png)
 
-In this exercise, you created a deployment of the **ratings-web** and exposed it to the internet through a LoadBalancer type service.
-
-- **Deployment/ratings-web**. The web frontend.
-- **Service/ratings-web**. The load balanced service, which is exposed on the Azure Load Balancer through a public IP.
-=======
->>>>>>> dc939b07a1b34e47d72c75660a0d3ee77b1448e6
-
+In this exercise, you deployed an NGINX ingress controller, updated the **ratings-web** service to be only accessible from within the cluster, and created an ingress route to reverse proxy the a deployment of the **ratings-web** service through a hostname.
