@@ -2,7 +2,7 @@
 uid: learn.cmu-cloud-admin.cmu-manage-cloud-resources
 metadata:
   title: Manage cloud resources
-  description: The second learning path in a course on Cloud Administration from Carnegie Mellon University. Learn more about how the cloud works by exploring it's underlying technology of virtualization, how to take advantage of the cloud for scale, and how to automate cloud resource management.
+  description: The second learning path in a course on Cloud Administration from Carnegie Mellon University. Learn more about how the cloud works by exploring its underlying technology of virtualization, how to take advantage of the cloud for scale, and how to automate cloud resource management.
   brand: azure
   ms.date: 12/31/2019
   author: shanamatthews
@@ -18,7 +18,7 @@ summary: |
     - Learn about virtualization and how it's used in the cloud
     - Know what VMs and containers are
     - Understand what scale, load, and common load patterns are
-    - Know what auto-scaling is and how it can be achieved
+    - Know what autoscaling is and be familiar with autoscaling techniques
     - Learn how to automate cloud resource management with scripts
     - Understand the concept of infrastructure-as-code
 
