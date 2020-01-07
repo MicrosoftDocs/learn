@@ -73,21 +73,21 @@ A trusted or private zone contains the resources and devices that should never b
 
 A public zone contains everything outside of the organization. This zone is part of the internet or another network and not in the control of the organization.
 
-### Demilitarized zone (DMZ)
+### Perimeter network (also known as DMZ, demilitarized zone, and screened subnet)
 
-The demilitarized zone (DMZ) is a zone where resources and services accessible from outside of the organization are available. For example, we can use a DMZ to provide access to an application, a partnering organization, or a supplier.
+The perimeter network is a zone where resources and services accessible from outside of the organization are available. For example, we can use a perimeter network to provide access to an application, a partnering organization, or a supplier.
 
 ### Zone filtering policies
 
 Zone filtering policies handle the flow of traffic as it travels between different zones. These policies include:
 
-- **Inside-to-outside** and **inside-to-DMZ**. This type of filter scrutinizes all traffic that originates from the inside and is headed to the DMZ. For example, our internal staff members may want to access a public website. The traffic would be inspected to check whether the website is trustworthy.
+- **Inside-to-outside** and **inside-to-perimeter-network**. This type of filter scrutinizes all traffic that originates from the inside and is headed to the perimeter network. For example, our internal staff members may want to access a public website. The traffic would be inspected to check whether the website is trustworthy.
 
 - **Outside-to-inside**. This type of filter blocks traffic coming from outside into our network. The only traffic permitted will be traffic that is a direct response to a request that originated from the inside zone. For example, when an internal staff member requests a web page from a server, the response is allowed (if it's a trusted source), so the user can browse the site.
 
-- **Outside-to-DMZ**. This type of filter inspects all traffic coming from the outside and going to the DMZ. The traffic will either be permitted or denied permission. The type of traffic that may be allowed to pass through include email and HTTPS traffic.
+- **Outside-to-perimeter-network**. This type of filter inspects all traffic coming from the outside and going to the perimeter network. The traffic will either be permitted or denied permission. The type of traffic that may be allowed to pass through include email and HTTPS traffic.
 
-- **DMZ-to-outside**. This type of filter inspects traffic that comes from the DMZ and leaves our network. Traffic is permitted to travel outside the network based on firewall rules and the resource or client starting the request. For example, a mail server in the DMZ might need to sync with another server that's outside the network. In this case, we'll configure firewall rules to decide what should happen.
+- **perimeter-network-to-outside**. This type of filter inspects traffic that comes from the perimeter network and leaves our network. Traffic is permitted to travel outside the network based on firewall rules and the resource or client starting the request. For example, a mail server in the perimeter network might need to sync with another server that's outside the network. In this case, we'll configure firewall rules to decide what should happen.
 
 ### What is a network firewall?
 
