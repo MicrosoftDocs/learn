@@ -37,11 +37,11 @@ If you are viewing the Azure portal on a screen with reduced horizontal space, t
 
 ### Cloud Shell
 
-If you click the **Cloud Shell** icon (>_), you create a new Azure Cloud Shell session. Recall that Azure Cloud Shell is an interactive, browser-accessible shell for managing Azure resources. It provides the flexibility of choosing the shell experience that best suits the way you work. Linux users can opt for a Bash experience, while Windows users can opt for PowerShell. This browser-based terminal lets you control and administer all of your Azure resources in the current subscription through a command-line interface built right into the portal.
+If you select the **Cloud Shell** icon (>_), you create a new Azure Cloud Shell session. Recall that Azure Cloud Shell is an interactive, browser-accessible shell for managing Azure resources. It provides the flexibility of choosing the shell experience that best suits the way you work. Linux users can opt for a Bash experience, while Windows users can opt for PowerShell. This browser-based terminal lets you control and administer all of your Azure resources in the current subscription through a command-line interface built right into the portal.
 
 ### Directory and subscription
 
-Click the **Book and Filter** icon to show the **Directory + subscription** pane.
+Select the **Book and Filter** icon to show the **Directory + subscription** pane.
 
 Azure allows you to have more than one subscription associated with one directory. On the **Directory + subscription** pane, you can change between subscriptions. Here, you can change your subscription or change to another directory.
 
@@ -49,11 +49,11 @@ Azure allows you to have more than one subscription associated with one director
 
 ### Notifications
 
-Clicking the bell icon displays the **Notifications** pane. This pane lists the last actions that have been carried out, along with their status.
+Selecting the bell icon displays the **Notifications** pane. This pane lists the last actions that have been carried out, along with their status.
 
 ### Settings
 
-Click the **gear** icon to change the Azure portal settings. These settings include:
+Select the **gear** icon to change the Azure portal settings. These settings include:
 
 - Inactivity sign out delay
 - Default view when you first sign in
@@ -64,11 +64,11 @@ Click the **gear** icon to change the Azure portal settings. These settings incl
 
 ![Screenshot of the Azure portal settings pane](../media/3-settings-pane.png)
 
-When you have changed settings, click **Apply** to accept your changes.
+When you have changed settings, select **Apply** to accept your changes.
 
 ### Help pane
 
-Click the **question mark** icon to show the **Help** pane. Here you choose from several options, including:
+Select the **question mark** icon to show the **Help** pane. Here you choose from several options, including:
 
 - Help + Support
 - What's new
@@ -97,18 +97,18 @@ The **smiley face** icon opens the **Send us feedback** pane. Here you can send 
 
 ### Profile settings
 
-If you click on your name in the top right-hand corner, a menu opens with a few options:
+If you select on your name in the top right-hand corner, a menu opens with a few options:
 
 - Sign in with another account, or sign out entirely
 - View your account profile, where you can change your password
 
-Click the "..." button on the right-hand side for options to:
+Select the "..." button on the right-hand side for options to:
 
 - Check your permissions
 - View your bill
 - Update your contact information
 
-If you click "..." and then **View my bill**, Azure takes you to the **Cost Management + Billing - Invoices** page, which helps you analyze where Azure is generating costs.
+If you select "..." and then **View my bill**, Azure takes you to the **Cost Management + Billing - Invoices** page, which helps you analyze where Azure is generating costs.
 
 Azure is a large product, and the Azure portal user interface (UI) reflects this scope. The sliding pane approach allows you to navigate back and forth through the various administrative tasks with ease. Let's experiment a bit with this UI so you get some practice.
 
