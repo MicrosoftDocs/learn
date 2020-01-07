@@ -12,6 +12,8 @@ title: Build Serverless APIs with Azure Functions
 summary: Build Serverless APIs with Azure Functions
 abstract: Build Serverless APIs with Azure Functions
 prerequisites: /
+  - Must have a working knowledge of Azure Functions
+  - Must have basic knowledge of Cosmos DB
   - Must have [Node.js](https://nodejs.org/en/) installed
   - Must have [Visual Studio Code](https://code.visualstudio.com/) installed
   - Must have [Azure Functions Core Tools](https://github.com/Azure/azure-functions-core-tools) installed
@@ -30,5 +32,7 @@ units:
   - learn.azure.build-api-azure-functions.3-ex-setup-environment
   - learn.azure.build-api-azure-functions.4-functions-extension-for-vs-code
   - learn.azure.build-api-azure-functions.5-ex-create-function-project
+  - learn.azure.build-api-azure-functions.6-cosmos-db-extension-for-vs-code
+  - learn.azure.build-api-azure-functions.7-ex-cosmos-db-extension-for-vs-code
 badge:
   uid: learn.azure.build-api-azure-functions.badge
