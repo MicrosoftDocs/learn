@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.responsible-conversational-ai.ensure-bot-reliability
+title: Ensure your bot is reliable
+metadata:
+  title: Ensure your bot is reliable
+  description: This unit discusses some key principles to ensuring your bot is reliable.
+  ms.date: 08/27/2019
+  author: RWortmanMorris
+  ms.author: rawortma
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 9
+content: |
+  [!include[](includes/5-ensure-bot-reliability.md)] 

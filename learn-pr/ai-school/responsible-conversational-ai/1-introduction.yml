@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.responsible-conversational-ai.introduction
+title: Introduction to Responsible Conversational AI
+metadata:
+  title: Introduction to Responsible Conversational AI
+  description: Microsoft has created special guidelines for the development of responsible conversational AI. In this step you will get an introduction to the context of conversational AI.
+  ms.date: 08/27/2019
+  author: RWortmanMorris
+  ms.author: rawortma
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 8
+content: |
+  [!include[](includes/1-introduction.md)] 

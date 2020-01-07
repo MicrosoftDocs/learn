@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn-wwl.responsible-conversational-ai.introduction-to-responsible-conversational-ai
+uid: learn-wwl.secure-responsible-conversational-ai.introduction-to-secure-responsible-conversational-ai
 title: Introduction to Responsible Conversational AI
 metadata:
   title: Introduction to Responsible Conversational AI
@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 8
 content: |
-  [!include[](includes/1-introduction-to-responsible-conversational-ai.md)] 
+  [!include[](includes/1-introduction-to-secure-responsible-conversational-ai.md)] 
