@@ -109,11 +109,11 @@ Support requests can only be created using an active paid subscription. Creating
 
 1. Review the features that have recently been released. Also note and explore the other **Help** menu options, such as:
 
-- Azure roadmap
-- Launch guided tour
-- Keyboard shortcuts
-- Show diagnostics
-- Privacy statement
+    - Azure roadmap
+    - Launch guided tour
+    - Keyboard shortcuts
+    - Show diagnostics
+    - Privacy statement
 
 1. Select the **X** in the top right-hand corner to close the **Help** pane.
 
