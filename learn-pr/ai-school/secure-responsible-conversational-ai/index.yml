@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn-wwl.secure-responsible-conversational-ai
 metadata:
-  title: Responsible Conversational AI
+  title: Secure your responsible conversational AI bot
   description: When building any AI system it's important to do so responsibly. In this course you will learn about Microsoft' guidelines for the development of responsible conversational AI.
   ms.date: 08/27/2019
   author: RWortmanMorris
@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   #ms.learn-contact: barlan
-title: Responsible Conversational AI
+title: Secure your responsible conversational AI bot
 summary: When building any AI system it's important to do so responsibly. In this course you will learn about Microsoft' guidelines for the development of responsible conversational AI.
 abstract: | 
   In this module, you will:
@@ -25,11 +25,12 @@ products:
 - azure
 - dynamics
 units: 
-- learn-wwl.secure-responsible-conversational-ai.introduction-to-secure-responsible-conversational-ai
-- learn-wwl.secure-responsible-conversational-ai.responsibility-imperatives
+- learn-wwl.secure-responsible-conversational-ai.introduction
+- learn-wwl.secure-responsible-conversational-ai.consequential-use-cases
 - learn-wwl.secure-responsible-conversational-ai.reliable-and-accessible
-- learn-wwl.secure-responsible-conversational-ai.considering-consequential-use-cases
-- learn-wwl.secure-responsible-conversational-ai.fairness-and-diversity
+- learn-wwl.secure-responsible-conversational-ai.fair-diverse-bots
+- learn-wwl.secure-responsible-conversational-ai.ensure-bots-respect-users-privacy
 - learn-wwl.secure-responsible-conversational-ai.bot-security
+- learn-wwl.secure-responsible-conversational-ai.bot-responsibility
 badge: 
   uid: learn-wwl.secure-responsible-conversational-ai.badge #add the uid for your achievement badge.
