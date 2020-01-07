@@ -2,7 +2,7 @@
 uid: learn-wwl.secure-responsible-conversational-ai
 metadata:
   title: Secure your responsible conversational AI bot
-  description: When building any AI system it's important to do so responsibly. In this course you will learn about Microsoft' guidelines for the development of responsible conversational AI.
+  description: When building any AI system it's important to do so responsibly. In this course you will learn about Microsoft guidelines for the development of responsible conversational AI.
   ms.date: 08/27/2019
   author: RWortmanMorris
   ms.author: rawortma
@@ -10,7 +10,7 @@ metadata:
   ms.prod: learning-azure
   #ms.learn-contact: barlan
 title: Secure your responsible conversational AI bot
-summary: When building any AI system it's important to do so responsibly. In this course you will learn about Microsoft' guidelines for the development of responsible conversational AI.
+summary: When building any AI system it's important to do so responsibly. In this course you will learn about Microsoft guidelines for the development of responsible conversational AI.
 abstract: | 
   In this module, you will:
   - Learning objective 1
