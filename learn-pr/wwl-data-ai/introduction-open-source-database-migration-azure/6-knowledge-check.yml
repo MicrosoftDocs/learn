@@ -1,0 +1,59 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-open-source-database-migration-azure.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 01/31/2020
+  author: wwlpublish
+  ms.author: v-gea
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "You want to create a highly available database system that requires the minimum of administrative time to run. Should you use an IaaS or a PaaS approach?"
+    choices:
+    - content: "Use a IaaS approach. Create a set of virtual machines to run your system, and connect them using a virtual network. You have full control over the databases and server running on these virtual machines."
+      isCorrect: false
+      explanation: "The PaaS approach minimizes the administrative effort required. Microsoft assume responsibility for tasks such as taking backups, and ensuring the availability of your server and databases."
+    - content: "Use a PaaS approach. For example, run a PostgreSQL database using Azure Database for PostgreSQL."
+      isCorrect: true
+      explanation: "The PaaS approach minimizes the administrative effort required. Microsoft assume responsibility for tasks such as taking backups, and ensuring the availability of your server and databases."
+    - content: "Use either"
+      isCorrect: false
+      explanation: "The PaaS approach minimizes the administrative effort required. Microsoft assume responsibility for tasks such as taking backups, and ensuring the availability of your server and databases."
+  - content: "You want to run a MySQL database in an IaaS environment in which you'll create new instances as quickly as possible. Should you use virtual machines or containers?"
+    choices:
+    - content: "Use containers."
+      isCorrect: true
+      explanation: "Containers share an operating system with the host, so they're smaller and start more quickly than virtual machines."
+    - content: "Use virtual machines."
+      isCorrect: false
+      explanation: "Containers share an operating system with the host, so they're smaller and start more quickly than virtual machines."
+    - content: "Use either."
+      isCorrect: false
+      explanation: "Containers share an operating system with the host, so they're smaller and start more quickly than virtual machines."
+  - content: "You want to migrate individual applications and users running specific workloads to the cloud as an initial step in migrating your system. If successful, you'll migrate further workloads until the entire system has been moved. How would you do this?"
+    choices:
+    - content: "Perform an online migration of the database."
+      isCorrect: false
+      explanation: "A piecemeal migration divides your complete system into workloads. You migrate one workload at a time."
+    - content: "Follow a piecemeal approach to migration."
+      isCorrect: true
+      explanation: "A piecemeal migration divides your complete system into workloads. You migrate one workload at a time."
+    - content: "Perform an offline migration of the database."
+      isCorrect: false
+      explanation: "A piecemeal migration divides your complete system into workloads. You migrate one workload at a time."
+  - content: "How might you migrate an on-premises MySQL database to Azure SQL Database?"
+    choices:
+    - content: "Use the SQL Server Migration Assistant."
+      isCorrect: true
+      explanation: "The SQL Server Migration Assistant provides a step-by-step process for transferring a MySQL schema and database to Azure SQL Database."
+    - content: "Do an online migration using the Azure Database Migration Service."
+      isCorrect: false
+      explanation: "The SQL Server Migration Assistant provides a step-by-step process for transferring a MySQL schema and database to Azure SQL Database."
+    - content: "Upload the data to Azure storage, and configure Azure SQL Database to read the data from the storage account."
+      isCorrect: false
+      explanation: "The SQL Server Migration Assistant provides a step-by-step process for transferring a MySQL schema and database to Azure SQL Database."
