@@ -8,7 +8,7 @@ In this exercise, you're going to deploy that Docker image of the API to the Azu
 
 By the end of this unit, you should have deployed the ratings API and configured it to communicate with MongoDB.
 
-![Deployed resources on the Azure Kubernetes Service cluster](../media/arch-2.png)
+![Deployed resources on the Azure Kubernetes Service cluster](../media/05-arch-2.svg)
 
 ## Create a Kubernetes deployment file for the ratings API
 
