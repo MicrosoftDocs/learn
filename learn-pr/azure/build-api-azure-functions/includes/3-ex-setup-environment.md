@@ -13,7 +13,7 @@ In this exercise, you'll create the database that will provide data to your API.
 1. Run the following command to kick off the environment creation process
 
    ```bash
-   ./CREATE_DB.sh
+   ./tailwind-products/CREATE_DATABASE.sh
    ```
 
 1. The first thing that the script will output is a tenant id. Copy this to your clipboard.
