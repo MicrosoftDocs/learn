@@ -2,11 +2,11 @@ After you have migrated your data to Cosmos DB, you will need to update your app
 
 ## Update connection strings
 
-In the Azure portal, open your Cosmos DB account and select **Quick start**.
+In the Azure portal, open your Cosmos DB account and select **Quickstart**.
 Select the platform for your application.
 Copy the connection string for your application and review the sample code snippet.
 
-For more options than the quick start settings, in **Settings**, select **Connection String**. You can then provide security information and receive a specific connection string for your settings.
+For more options than the quickstart settings, in **Settings**, select **Connection String**. You can then provide security information and receive a specific connection string for your settings.
 
 ## Tune database for application use
 
