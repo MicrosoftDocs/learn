@@ -1,4 +1,4 @@
-Every data-driven application has an API that connects it to a datasource. For web applications, this API is often a set of HTTP endpoints that return data. Serverless technologies like Azure Functions allow you to rapidly build HTTP API's for web applications without the headache of web frameworks. Additionally, Azure Functions only charges when an HTTP endpoint is called, which means that when the endpoints are not being used, you are not being charged.
+Many data-driven applications have an API that connects it to a datasource. For web applications, this API is often a set of HTTP endpoints that return data. Serverless technologies like Azure Functions allow you to rapidly build HTTP APIs for web applications without the headache of web frameworks. Additionally, Azure Functions only charges when an HTTP endpoint is called, which means that when the endpoints aren't being used, you aren't being charged.
 
 Pretend, if you will, that you work for a large online hardware retailer. They are a global corporation with a fairly massive online presence and brick-and-morter stores all over the globe. One of the most critical tasks they face is keeping up with the inventory of products that they carry. Their inventory is stored in a backend NoSQL database. Logistics specialists need to be able to manage this backend data store from all over the globe. During peak holiday seasons, the system gets heavy usage because new products are being added specifically for holiday shoppers and nearly 80% of the entire year's worth of business is done in the months between October and December. During other parts of the year, the inventory changes much less frequently and the system is not used often. You need to create a web-based admin interface that is lightweight, fast and can handle the increased user load during the busier times of the year but not costing a fortune during the slow times.
 
@@ -13,6 +13,8 @@ In this module, you will:
 
 ## Prerequisites
 
+- Must have basic knowledge of Azure Functions
+- Must have basic knowledge of Azure Cosmos DB 
 - Must have [Node.js](https://nodejs.org/en/) installed
 - Must have [Visual Studio Code](https://code.visualstudio.com/) installed
 - Must have [Azure Functions Core Tools](https://github.com/Azure/azure-functions-core-tools) installed
