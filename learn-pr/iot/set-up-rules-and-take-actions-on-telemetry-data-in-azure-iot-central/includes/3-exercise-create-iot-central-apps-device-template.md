@@ -1,93 +1,165 @@
-In this unit, you'll first create a dashboard showing all the capabilities of the device template. Next, you'll create a real device, and record the connection settings needed for the remote device app.
+In this unit, you are going to create a programming project to simulate a sensor device in a refrigerated truck. This simulation enables you to test the code long before requiring a real truck! 
 
-## Import a capability model
+IoT Central treats this simulation as "real" because the communication code between the device app and the IoT Central app is the same for a real truck. In other words, if you do run a refrigerated truck company, you would start with simulated code similar to the code in this unit. After this code works to your satisfaction, the simulation-specific code would be replaced with code that receives sensor data. This limited update makes writing the following code a valuable experience.
 
-1. Click **Device templates** in the left-hand menu.
+## Create the device app
 
-1. Click **+ New**, to create a new device tempalte.
+Using your preferred development environment, build the device sensor app. Visual Studio Code and Visual Studio examples are available in this unit.
 
-1. Click **IoT device**.
+::: zone pivot="vscode-node"
 
-    ![Screenshot showing the icon to create a custom IoT device template](../media/rules-actions-new-template.png)
+Node.js is a platform for building server apps, based on JavaScript. All the JavaScript code you'll need is provided below, so you do not need to be a JavaScript developer to get this app up and running.
 
-1. Click **Next: Customize**.
+1. Open Visual Studio Code. From the **Terminal** menu, open a **New Terminal**.
 
-1. Do not select the **Gateway device** check box, click **Next: Review**. Then, **Create**.
+1. In the opened terminal, create an empty folder where you'll develop your code, called "RefrigeratedTruck", by entering `mkdir RefrigeratedTruck`. Then, navigate to that folder with `cd RefrigeratedTruck`.
 
-1. Give the template a name, such as "Refrigerated Truck". Press Enter.
+1. From the **File** menu, create a new file. Insert a single line as a comment, such as `// Refrigerated Truck app`. Save the file to the "RefrigeratedTruck" folder (locating this folder might involve a bit of navigation), with the name "app.js". By using the .js file extension, Visual Studio Code interprets this file as JavaScript and evaluates the contents with the JavaScript language service.
 
-1. Select **Import capability model**.
+    [![Screenshot showing how to save the JavaScript file, in Visual Studio Code](../media/refrigerated-trucks-vscode.png)](../media/refrigerated-trucks-vscode.png#lightbox)
 
-    ![Screenshot showing the icon to import a capability model](../media/rules-actions-import-model.png)
+1. Back in the terminal, load the libraries you need with the following commands:
 
-1. Navigate to where you downloaded the JSON file containing the capability model, and select that file. You should now see a **Summary** page of all the elements of the capability model.
+    ```CLI
+    npm install azure-iot-device
+    npm install azure-iot-device-mqtt
+    npm install azure-maps-rest
+    npm install chalk
+    ```
 
-    ![Screenshot showing the summary of the capability model](../media/rules-actions-model-summary.png)
+1. After you've entered the code below into the app.js file, you can run it from the terminal by entering `node app.js`. Ensure that the `RefrigeratedTruck` folder is the current folder of the terminal, when you run the app.
 
-1. Click **Publish**, in the top-right menu bar, to publish the capability model.
+::: zone-end
+::: zone pivot="vscode-csharp"
 
-## Create a rich dashboard
+1. Open a terminal in Visual Studio Code, and create a folder called "RefrigeratedTruck" (enter `mkdir RefrigeratedTruck`). Navigate to the RefrigeratedTruck folder.
 
-1. Click on the **Views** menu option, then on **Visualizing the device**.
+1. Enter the following command in the terminal: `dotnet new console`. This command creates a Program.cs file in your folder, along with a project file.
 
-    [![Screenshot showing how to create a new view](../media/refrigerated-trucks-add-view.png)](../media/refrigerated-trucks-add-view.png#lightbox)
+1. Enter `dotnet restore` in the terminal. This command gives your app access to the required .NET packages.
 
-1. You should now see a list of all the **Telemetry**, **Properties**, and **Commands** you created, each with a check box.
+1. In the terminal, install the required libraries:
 
-1. Click the **Location** check box, then **Add tile**. Dashboards are made up of tiles. The reason we choose the location tile first, is that we want to expand it from its default size. Drag the lower right-hard corner of the tile, so that the tile is at least twice the default size. This tile is the most fun, it will show the location of the truck on a map of the world.
+    ```CLI
+    dotnet add package AzureMapsRestToolkit
+    dotnet add package Microsoft.Azure.Devices.Client
+    dotnet add package Microsoft.Azure.Devices.Provisioning.Client
+    dotnet add package Microsoft.Azure.Devices.Provisioning.Transport.Mqtt
+    dotnet add package System.Text.Json
+    ```
 
-1. Before adding more tiles, change the **View name** to something more specific, "Truck view", or something similar.
+1. From the **File** menu, open up the Program.cs file, and delete the default contents.
 
-1. Now, click each of the rest of the telemetry and properties capabilities in turn, starting at the top, and **Add tile**. We are going for function over form here, we can prettify the dashboard later. For now, we just want a dashboard that will confirm all the telemetry being sent from our remote device. There's no need to add the commands to the dashboard, though that option does exist.
+1. After you've entered the code below into the Program.cs file, you can run the app with the command `dotnet run`. This command will run the Program.cs file in the current folder, so ensure you are in the `RefrigeratedTruck` folder.
 
-1. When you've added all the tiles, scroll around a bit on your dashboard, and check out the wording in the tiles.
+::: zone-end
+::: zone pivot="vs-node"
 
-    [![Screenshot showing some sample dashboard tiles](../media/refrigerated-trucks-sample-tiles.png)](../media/refrigerated-trucks-sample-tiles.png#lightbox)
+1. Navigate to the **JavaScript** project types, and create a new **Blank Node.js Console Application** project, called "RefrigeratedTruck".
 
-1. You can drag tiles around, and the portal will try to rearrange them neatly.
+    [![Screenshot showing how to create a new blank Node.js project, in Visual Studio](../media/refrigerated-trucks-vs-project.png)](../media/refrigerated-trucks-vs-project.png#lightbox)
 
-1. When you are satisfied with your dashboard, click **Save**, then click **Publish**. You'll now notice that in the dialog that appears, that the **Views** entry is **Yes**. Click **Publish** in the dialog.
+1. Right-click on the **npm** entry in Solution Explorer, and select **Install New npm Packages...**.
 
-You can create as many views as you want to, giving each a friendly name. For this module though, one dashboard will work well.
+1. In the dialog that follows, search for and install the following libraries:
 
-The next step is to create a device.
+    * **azure-iot-device**
+    * **azure-iot-device-mqtt**
+    * **azure-maps-rest**
+    * **chalk**
 
-## Create a real device
+    [![Screenshot showing how to add an npm package, in Visual Studio](../media/refrigerated-trucks-vs-npm.png)](../media/refrigerated-trucks-vs-npm.png#lightbox)
 
-By "real" device, we mean IoT Central understands that there's a remote app running. The app can be in a real device, taking input from real sensors, or running a simulation. Both options are treated as a connection to a _real_ device.
+1. Delete the default contents of the app.js file.
 
-1. Click **Devices** in the left-hand menu.
+1. When you've entered the code below, you'll be able to run the app with the **Start Without Debugging**, or **Start Debugging**, options. In the latter case you can set breakpoints, examine data, and perform other debugging tasks.
 
-1. Click **RefrigeratedTruck** in the **Devices** menu, to ensure the device we create uses this device template. The device template you select will be shown in bold text.
+::: zone-end
+::: zone pivot="vs-csharp"
 
-1. Click **+ New**. Verify in the dialog that the device name includes the **RefrigeratedTruck** text. If it doesn't, you've not selected the right device template.
+1. Open Visual Studio, and create a new **Visual C#/Windows Desktop** project. Select **Console App (.NET Framework)**.
 
-    [![Screenshot showing the dialog to create a device](../media/refrigerated-trucks-create-device.png)](../media/refrigerated-trucks-create-device.png#lightbox)
+1. Give the project a friendly name, such as "RefrigeratedTruck".
 
-1. Change the **Device ID** to a friendlier name, say "RefrigeratedTruck1".
+1. Under **Tools/NuGet Package Manager**, select **Manage NuGet Packages for Solution**. Install the following libraries:
+    * **AzureMapsRestToolkit**
+    * **Microsoft.Azure.Devices.Client**
+    * **Microsoft.Azure.Devices.Provisioning.Client**
+    * **Microsoft.Azure.Devices.Provisioning.Transport.Mqtt**
+    * **System.Text.Json**
 
-1. Change the **Device name** to a friendlier name, say "RefrigeratedTruck - 1".
+1. Delete the default contents of the Program.cs file.
 
-1. Leave the **Simulated** setting at **Off**. We are going to be building a real truck here. Well, a simulated _real_ truck! Setting this value to **On** instructs IoT Central to pump out random values for our telemetry. These random values can be useful in validating a device template.
+1. Add all the code that follows to the Program.cs file.
 
-1. Click **Create**. Wait a few seconds, then your device list should be populated with a single entry. Note the **Device status** is **Registered**. Not until the device status is **Provisioned** will the IoT Central app accept a connection to the device. The coding unit that follows shows how to provision a device.
+::: zone-end
 
-1. Click on the **RefrigeratedTruck - 1** name, and you'll see the live dashboard, with lots of **Waiting for data** messages.
+## Write the device app
 
-1. Click on the **Commands** entry in the bar that includes **Truck view**. Notice that the two commands you entered are ready to be run.
+::: zone pivot="vs-node,vscode-node"
 
-The next step is to create the keys that will allow a remote device to communicate with this app.
+1. Copy the app.js code that you downloaded, into the app.js file of the project.
 
-### Record the connection keys
+::: zone-end
+::: zone pivot="vs-csharp,vscode-csharp"
 
-1. Click **Connect** in the top-right menu. Do _not_ click **Connect to gateway**.
+1. Copy the Program.cs code that you downloaded, into the Program.cs file of the project.
 
-1. In the **Device connection** dialog that follows, carefully copy the **ID scope**, **Device ID**, and **Primary key** to a text file. Typically, use a tool like Notepad, and save the file with a meaningful name, say "Truck connections.txt".
+::: zone-end
 
-1. Leave the **Connect method** as **Shared access signature (SAS)**.
+::: zone pivot="vs-csharp,vs-node"
 
-1. When you've saved off the IDs and key, click **Close** on the dialog.
+1. In Visual Studio, select **Debug/Start without Debugging**.
 
-Leave the IoT portal open in your browser, waiting as it is.
+::: zone-end
+::: zone pivot="vscode-node"
 
-Let's take a break and test your knowledge so far.
+1. In the terminal, enter `node app.js`.
+
+::: zone-end
+::: zone pivot="vscode-csharp"
+
+1. In the terminal, enter `dotnet run`.
+
+::: zone-end
+
+A console screen should open, with the text: **Starting Truck number 1**.
+
+You are now ready to test your code.
+
+### 1. Confirm the device app connects to Azure IoT Central
+
+1. If one of the next lines on the console is **Device successfully connected to Azure IoT Central** you've made the connection. If you do not get this message, it usually means either the IoT Central app isn't running, or the connection key strings aren't correct.
+
+1. The "connected" line should be followed by some text verifying the settings and properties were sent successfully.
+
+    [![Screenshot showing the connection to IoT Central from the device app was made correctly](../media/refrigerated-trucks-connected.png)](../media/refrigerated-trucks-connected.png#lightbox)
+
+If all goes well, go straight into the second test.
+
+### 2. Confirm the telemetry functions send data on the specified interval
+
+1. A console message should appear every five seconds, with the contents temperature.
+
+1. Watch the telemetry for a short while, and mentally prepare for the main test of this module!
+
+### 3. Confirm the data is picked up correctly by IoT Central
+
+1. To verify the data is being received at IoT Central, make sure your IoT Central pp is open, and the device selected. If not, select the **Devices** entry in the left-hand menu. Double-click the real device (**RefrigeratedTruck - 1**), in the list of devices.
+
+1. Locate the **Contents temperature** tile, and verify approximately that the temperatures being sent by the device app, in the console window, match the data being shown in the telemetry view of the IoT Central app.
+
+    | IoT Central | Device app |
+    | --- | --- |
+    | [![Screenshot showing a tile in IoT Central, receiving the truck temperatures](../media/refrigerated-trucks-central.png)](../media/refrigerated-trucks-central.png#lightbox) | [![Screenshot showing the console output from the device app, showing the truck contents temperatures](../media/refrigerated-trucks-console.png)](../media/refrigerated-trucks-console.png#lightbox) |
+
+    > [!NOTE]
+    > The screenshots in this module are taken from the C# version of the app. The Node.js app screens will be similar, but not identical.
+
+1. Check the state tiles: **Truck state**, **Cooling system state**, and **Contents state** in the IoT Central app, to verify the truck and its contents are in the expected state.
+
+1. Check the **Location** map view for the device. A blue circle near Seattle, USA shows our truck ready to go. You may have to zoom out a bit.
+
+    [![Screenshot showing the location of the truck at its base in Seattle](../media/refrigerated-trucks-seattle.png)](../media/refrigerated-trucks-seattle.png#lightbox)
+
+If all is well, this is great progress. The truck is at its base, in the correct state, and waiting for a command.

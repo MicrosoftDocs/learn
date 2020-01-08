@@ -55,15 +55,3 @@ In this module, you'll construct the app displayed in the above image, from supp
 
 The next time you visit your Azure central home page, select **My apps** in the left-hand menu, and an icon for your  **Refrigerated Trucks** app should appear.
 
-## Download the source code, and capability model
-
-You've now created the app. The next step is to download the required files. You can choose to build your project using C#, or Node.JS.
-
-1. Navigate to the GitHub site containing the project files: [Your First IoT Central App Learn module](https://github.com/MicrosoftDocs/mslearn-your-first-iot-central-app).
-
-1. Download these files to a location on your local machine.
-
-1. You'll only be working with two files. Choose either the **Program.cs** file (for C# developers), the **app.js** file (for Node.js developers). All developers will need the **Refrigerated Truck Capability Model.JSON** file.
-
-
-
