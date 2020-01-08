@@ -35,7 +35,6 @@ This exercise is optional. To complete the exercise, you need access to an Azure
 ## Remove your elevated access
 
 1. In the Azure portal, select **Azure Active Directory** > **Properties**.
-    ![Screenshot that shows the Azure AD properties](../media/4-azure-ad-properties.png)
 1. Under **Access management for Azure resources**, select **No**.
 1. Select **Save**.
 1. Sign out and sign back in to Azure to refresh your access.

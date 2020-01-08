@@ -4,11 +4,11 @@ title: Understand the difference between Azure RBAC roles and Azure AD roles
 metadata:
   title: Understand the difference between Azure RBAC roles and Azure AD roles
   description: Learn the difference between Azure RBAC roles and Azure AD roles and identify the appropriate role to assign.
-  ms.date: 12/13/2019
+  ms.date: 01/13/2020
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 7
+durationInMinutes: 5
 content: |
   [!include[](includes/3-identify-appropriate-role-assign.md)]
