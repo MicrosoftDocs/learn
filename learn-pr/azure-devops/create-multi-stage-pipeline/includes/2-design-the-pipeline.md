@@ -131,6 +131,8 @@ In YAML, you use the pipe (`|`) syntax to define a string that spans multiple li
 
 You'll work with a more complete example shortly when you set up the _Dev_ stage.
 
+A more complete description of conditions in Azure Pipelines can be found in the [expressions documentation](https://docs.microsoft.com/azure/devops/pipelines/process/expressions?view=azure-devops&azure-portal=true#job-status-functions).
+
 **Mara:** Conditions let us control which changes are promoted to which stages. We can produce a build artifact for any change to validate our build and confirm that it's healthy. When we're ready, we can merge those changes into a release branch and promote that build to the _Dev_ stage.
 
 ## Add the Test stage
@@ -309,3 +311,21 @@ After management approves the build, we can deploy the build artifact to a produ
 Every deployment stage in our pipeline also has its own environment. For example, when we deploy the app to _Dev_ or _Test_, the environment is an App Service instance.
 
 Finally, we test only one release at a time. We never change releases in the middle of the pipeline. We use the same release in the _Dev_ stage as in the _Staging_ stage, and every release has its own version number. If the release breaks in one of the stages, we fix it and build it again with a new version number. That new release then goes through the pipeline from the very beginning.
+
+## A few words about quality
+
+You've just seen the team design a pipeline that takes their app all the way from build to staging. The whole point of this pipeline isn't just to make their lives easier. It's to ensure the quality of the software they're delivering to their customers.
+
+How do you measure the quality of your release process? The quality of your release process can't be measured directly. What you can measure is how well your process works. If you're constantly changing the process, this might be an indication that there's something wrong. Releases that fail consistently at a particular point in the pipeline might also indicate that there's a problem with the release process.
+
+Do the releases always fail on a particular day or time? Do they always fail after you deploy to a particular environment? Look for these and other patterns to see if some aspects of the release process are dependent or related.
+
+A good way to keep track of your release process quality is to create visualizations of the quality of the releases. For example, add a dashboard widget that shows you the status of every release.
+
+When you want to measure the quality of a release itself, you can perform all kinds of checks within the pipeline. For example, you can execute different types of tests, such as load tests and UI tests while running your pipeline.
+
+Using a quality gate is also a great way to check the quality of your release. There are many different quality gates. For example, work item gates can verify the quality of your requirements process. You can also add additional security and compliance checks. For example, do we comply with the 4-eyes principle, or do we have the proper traceability?
+
+As you progress through this learning path, you'll see a number of these techniques put into practice.
+
+Finally, when you design a quality release process, think about what kind of documentation or release notes that you'll need to provide to the user. Keeping your documentation current can be difficult. You might want to consider using a tool, such as the [Azure DevOps Release Notes Generator](https://docs.microsoft.com/samples/azure-samples/azure-devops-release-notes/azure-devops-release-notes-generator/?azure-portal=true). The generator is a function app that contains a HTTP triggered function. It creates a Markdown file whenever a new release is created in Azure DevOps, using Azure Blob Storage.

@@ -58,7 +58,7 @@ Recall that an agent pool organizes build agents. In this section, you create th
 
     ![Locating Agent pools in the menu](../media/4-project-settings-agent-pools.png)
 1. Select **Add pool**.
-1. In the **Add agent pool** window, select **New** and then, in the text box, enter **MyAgentPool**.
+1. In the **Add pool** window, select **New** and then, in the text box, enter **MyAgentPool**.
 
     In practice, you would choose a more descriptive name for the purpose of your pool.
 1. Select **Create**.
@@ -73,12 +73,12 @@ To do that, you create a personal access token. A personal access token, or PAT,
 > [!IMPORTANT]
 > As you would with a password, be sure to keep your access token in a safe place. In this section, you store your access token as an environment variable so that it doesn't appear in your shell script.
 
-1. In Azure DevOps, open your profile, and then select **Security**.
+1. In Azure DevOps, open your profile settings, and then select **Personal access token**.
 
-    ![Locating Security in the menu](../media/4-settings-security.png)
+    ![Locating Security in the menu](../media/4-personal-access-token.png)
 1. Select **New Token**.
 1. Enter a name for your token, such as **Build agent**.
-1. Under **Scopes**, select **Show all scopes**.
+1. Under **Scopes**, select **Show all scopes** at the bottom.
 1. Look for **Agent Pools**, and then select **Read & manage**.
 1. Look for **Build**, and then select **Read & execute**.
 1. Select **Create**.

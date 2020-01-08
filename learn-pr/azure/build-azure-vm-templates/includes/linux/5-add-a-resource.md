@@ -45,7 +45,7 @@ The Resource Manager template you used in the previous part already covers the f
 ```azurecli
 az vm extension set \
   --resource-group $RESOURCEGROUP \
-  --vm-name MyUbuntuVM \
+  --vm-name simpleLinuxVM \
   --name customScript \
   --publisher Microsoft.Azure.Extensions \
   --version 2.0 \
@@ -208,7 +208,7 @@ Here's what your template resource might look like after you add the `dependsOn`
 
 The bracket `[ ]` syntax means that you can provide an array, or list, of resources that must exist before applying this resource.
 
-There are multiple ways to define a resource dependency. You can provide its name, such as "MyUbuntuVM", it's full name (including its namespace, type, and name), such as "Microsoft.Compute/virtualMachines/MyUbuntuVM", or by its resource ID.
+There are multiple ways to define a resource dependency. You can provide its name, such as "simpleLinuxVM", it's full name (including its namespace, type, and name), such as "Microsoft.Compute/virtualMachines/simpleLinuxVM", or by its resource ID.
 
 This example uses the built-in `resourceId` function to get the VM's resource ID using its full name. This helps clarify which resource you're referring to and can help avoid ambiguity when more than one resource has a similar name.
 

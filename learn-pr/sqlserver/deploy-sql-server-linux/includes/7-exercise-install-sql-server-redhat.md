@@ -10,7 +10,7 @@ In this exercise, you will deploy SQL Server on RHEL, install command-line tools
 
 Let's start by creating a Red Hat Virtual Machine (VM) in Azure:
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), click **+ Create a resource**.
+1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or the **Home** page, select **Create a resource**.
 1. In the **Search the Marketplace** textbox, type **Red Hat**, and then press Enter.
 1. Click the **Red Hat Enterprise Linux 7.6** image, and then click **Create**.
 1. In the **Create a virtual machine** dialog, on the **Basics** page, enter these values, and then click **Review + create**:
@@ -39,7 +39,7 @@ Let's start by creating a Red Hat Virtual Machine (VM) in Azure:
 
 Now that we have a Red Hat VM, ready to install SQL Server on, let's connect to it by using Secure Shell (SSH):
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), when the VM deployment is complete, click **All resources** and then click the VM you created.
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), when the VM deployment is complete, search for and select the VM you created.
 1. In the top left of the **Overview** page, click **Connect**.
 1. On the **SSH** tab, to the right of the **Login using VM local account** textbox, click the **Copy** button.
 

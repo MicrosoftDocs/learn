@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn-xamarin.design-consistent-xaml-pages-with-shared-resources-and-styles.10-apply-user-accessibility-choices-with-builtin-styles
+metadata:
+  title: Apply user accessibility choices by using built-in styles
+  description: Explore the options for applying user accessibility choices by using built-in styles in Xamarin.Forms.
+  ms.date: 05/01/2019
+  author: patridge
+  ms.author: adpatrid
+  ms.topic: interactive-tutorial
+  ms.prod: learning-xamarin
+  
+title: Apply user accessibility choices by using built-in styles
+durationInMinutes: 3
+content: |
+  [!include[](includes/10-apply-user-accessibility-choices-with-builtin-styles.md)]

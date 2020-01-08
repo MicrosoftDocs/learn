@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54 (76480) - https://sketchapp.com -->
+    <title>Build mobile apps with XamarinForms/layout-in-forms</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="96" height="96" rx="48"></rect>
+        <path d="M2.36338255,0 C1.06352215,0 0,1.06352215 0,2.36338255 L0,35.4507383 C0,36.7505987 1.06352215,37.8141209 2.36338255,37.8141209 L24.8155168,37.8141209 C26.1159681,37.8141209 27.1788994,36.7505987 27.1788994,35.4507383 L27.1788994,9.45353022 L17.7253692,0 L2.36338255,0" id="path-3"></path>
+        <filter x="-3.7%" y="-2.6%" width="107.4%" height="110.6%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.101726399 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <path d="M1.82608696,-6.03961325e-14 C0.82173913,-6.03961325e-14 0,0.848316096 0,1.88514688 L0,28.2772032 C0,29.314034 0.82173913,30.1623501 1.82608696,30.1623501 L19.173913,30.1623501 C20.1787174,30.1623501 21,29.314034 21,28.2772032 L21,7.54058752 L13.6956522,-6.03961325e-14 L1.82608696,-6.03961325e-14" id="path-5"></path>
+        <filter x="-4.8%" y="-3.3%" width="109.5%" height="113.3%" filterUnits="objectBoundingBox" id="filter-6">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.101726399 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <path d="M0,1.88514688 L0,28.2772032 C0,29.314034 0.82173913,30.1623501 1.82608696,30.1623501 L19.173913,30.1623501 C20.1787174,30.1623501 21,29.314034 21,28.2772032 L21,7.54058752 L13.6956522,-6.03961325e-14 L1.82608696,-6.03961325e-14 C0.82173913,-6.03961325e-14 0,0.848316096 0,1.88514688 Z" id="path-7"></path>
+        <filter x="-4.8%" y="-3.3%" width="109.5%" height="113.3%" filterUnits="objectBoundingBox" id="filter-8">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.101726399 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Badges" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Build-mobile-apps-with-XamarinForms-1" transform="translate(-50.000000, -660.000000)">
+            <g id="Build-mobile-apps-with-XamarinForms/layout-in-forms" transform="translate(50.000000, 660.000000)">
+                <g id="Mask" transform="translate(2.000000, 2.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="BG" fill="#55A2FF" xlink:href="#path-1"></use>
+                    <g id="Group-6" mask="url(#mask-2)">
+                        <g transform="translate(35.000000, 30.000000)">
+                            <g id="Fill-158" fill="none">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                                <use fill="#546670" fill-rule="evenodd" xlink:href="#path-3"></use>
+                            </g>
+                            <path d="M3.89761558,10.6877477 C3.92473605,10.685067 3.95318135,10.685067 3.98038626,10.6877477 L7.38566333,10.6877477 C7.53639958,10.6908752 7.68261428,10.7782227 7.75788904,10.9094182 L13.5345323,21.2311321 C13.563609,21.2821644 13.5823443,21.3390232 13.5894534,21.3973826 C13.5965669,21.3390094 13.6152845,21.2821466 13.6443745,21.2311321 L19.4071914,10.9094182 C19.484855,10.7742463 19.6379189,10.6864163 19.7931804,10.6877477 L23.1984586,10.6877477 C23.4999998,10.6904285 23.7258165,11.07125 23.5845112,11.3389175 L17.9458114,21.452807 L23.5845112,31.5528417 C23.7391911,31.822046 23.507818,32.2205245 23.1984586,32.2178618 L19.7931804,32.2178618 C19.6352054,32.2165214 19.4812367,32.122615 19.4071914,31.9823363 L13.6443745,21.6606226 C13.6152978,21.6095899 13.5965625,21.552727 13.5894534,21.4943717 C13.5823398,21.5527407 13.5636223,21.6096123 13.5345323,21.6606226 L7.75788904,31.9823363 C7.68604216,32.1186476 7.53904938,32.211656 7.38566333,32.2178618 L3.98038626,32.2178618 C3.67102659,32.2205424 3.43971597,31.822046 3.59439583,31.5528417 L9.23309385,21.452807 L3.59439583,11.3389175 C3.45922936,11.0947021 3.62413938,10.7398747 3.89761558,10.6877477 L3.89761558,10.6877477 Z" id="Logo-path" fill="#E1E4E1" fill-rule="evenodd"></path>
+                            <g id="Group-7" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(17.000000, 0.000000)">
+                                <path d="M3.08875171,9.45353022 L10.1788994,9.45353022 L0.725369158,4.54747351e-13 L0.725369158,7.09014766 C0.725369158,8.39000807 1.78889131,9.45353022 3.08875171,9.45353022" id="Fill-159" fill="#6F878D"></path>
+                                <polygon id="Fill-160" fill="#30404D" points="3.08875171 9.45353022 10.1788994 9.45353022 10.1788994 16.5436779"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Group-5" mask="url(#mask-2)">
+                        <g transform="translate(8.000000, 33.000000)">
+                            <g id="Fill-208" fill="none">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+                                <use fill="#EFB252" fill-rule="evenodd" xlink:href="#path-5"></use>
+                            </g>
+                            <path d="M21,7.41811613 L13.6956522,1.89626093e-13 L13.6956522,5.66762784 C13.6956522,6.70445863 14.4631692,7.41811613 15.5,7.41811613 L21,7.41811613 Z" id="Fill-209" fill="#F7CB64" fill-rule="evenodd"></path>
+                            <rect id="Rectangle" fill="#FFFFFF" fill-rule="evenodd" x="2" y="17.4181161" width="17" height="1"></rect>
+                            <rect id="Rectangle" fill="#FFFFFF" fill-rule="evenodd" x="2" y="19.4181161" width="17" height="1"></rect>
+                            <rect id="Rectangle" fill="#FFFFFF" fill-rule="evenodd" x="2" y="21.4181161" width="17" height="1"></rect>
+                            <rect id="Rectangle" fill="#FFFFFF" fill-rule="evenodd" x="2" y="23.4181161" width="17" height="1"></rect>
+                            <rect id="Rectangle" fill="#FFFFFF" fill-rule="evenodd" x="2" y="9.41811613" width="17" height="7"></rect>
+                            <rect id="Rectangle" fill="#FFFFFF" fill-rule="evenodd" x="2" y="25.4181161" width="8" height="3"></rect>
+                            <rect id="Rectangle" fill="#FFFFFF" fill-rule="evenodd" x="11" y="25.4181161" width="8" height="3"></rect>
+                            <polygon id="Fill-210" fill="#CC9547" fill-rule="evenodd" points="15.5 7.41811613 21.1554406 7.41811613 21 12.3951669"></polygon>
+                        </g>
+                    </g>
+                    <g id="Group-4" mask="url(#mask-2)">
+                        <g transform="translate(68.000000, 33.000000)">
+                            <g id="Group-3" stroke-width="1" fill="none" transform="translate(-0.000000, 0.000000)">
+                                <g id="Fill-208">
+                                    <use fill="black" fill-opacity="1" filter="url(#filter-8)" xlink:href="#path-7"></use>
+                                    <use fill="#E1E4E1" fill-rule="evenodd" xlink:href="#path-7"></use>
+                                </g>
+                                <path d="M21,7.41811613 L13.6956522,2.0206059e-13 L13.6956522,5.61547852 C13.6956522,6.6523093 14.4963723,7.41811613 15.5332031,7.41811613 L21,7.41811613 Z" id="Fill-209" fill="#697D85"></path>
+                                <rect id="Rectangle" fill="#FFFFFF" x="2" y="17" width="8" height="1"></rect>
+                                <rect id="Rectangle" fill="#FFFFFF" x="2" y="19" width="8" height="1"></rect>
+                                <rect id="Rectangle" fill="#FFFFFF" x="2" y="21" width="8" height="1"></rect>
+                                <rect id="Rectangle" fill="#FFFFFF" x="2" y="23" width="8" height="1"></rect>
+                                <rect id="Rectangle" fill="#FFFFFF" x="2" y="25" width="8" height="1"></rect>
+                                <rect id="Rectangle" fill="#FFFFFF" x="11" y="19" width="8" height="1"></rect>
+                                <rect id="Rectangle" fill="#FFFFFF" x="11" y="21" width="8" height="1"></rect>
+                                <rect id="Rectangle" fill="#FFFFFF" x="11" y="23" width="8" height="1"></rect>
+                                <rect id="Rectangle" fill="#FFFFFF" x="11" y="25" width="8" height="1"></rect>
+                                <rect id="Rectangle" fill="#FFFFFF" x="11" y="17" width="8" height="1"></rect>
+                                <rect id="Rectangle" fill="#FFFFFF" x="2" y="9" width="8" height="5"></rect>
+                                <rect id="Rectangle" fill="#FFFFFF" x="11" y="9" width="8" height="5"></rect>
+                                <rect id="Rectangle" fill="#FFFFFF" x="2" y="27" width="17" height="2"></rect>
+                                <polygon id="Fill-210" fill="#C5CCCD" points="15 7.41811613 21 7.41811613 21 12.3951669"></polygon>
+                            </g>
+                            <rect id="Rectangle" fill="#FFFFFF" x="2" y="15" width="8" height="1"></rect>
+                            <rect id="Rectangle" fill="#FFFFFF" x="11" y="15" width="8" height="1"></rect>
+                        </g>
+                    </g>
+                </g>
+                <g id="Azure-Border" stroke="#0078D4" stroke-width="4">
+                    <rect x="2" y="2" width="96" height="96" rx="48"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

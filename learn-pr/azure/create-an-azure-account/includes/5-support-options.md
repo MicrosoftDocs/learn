@@ -11,7 +11,7 @@ You have 24/7 access to the online documentation, community support, and new Azu
 
 ## Azure support plans
 
-Azure offers customers reactive and proactive technical support. Choose the support plan that best meet your needs. You can purchase the support plan on the Azure website or Azure portal. If you are working with a Microsoft representative or partner, you can purchase a support plan from them. Microsoft also provide support plans that cover Azure, Office 365 and Dynamics 365. Talk to your Microsoft representative or partner for more details.
+Azure offers customers reactive and proactive technical support. Choose the support plan that best meet your needs. You can purchase the support plan on the Azure website or Azure portal. If you are working with a Microsoft representative or partner, you can purchase a support plan from them. Microsoft also provides support plans that cover Azure, Office 365 and Dynamics 365. Talk to your Microsoft representative or partner for more details.
 
 
 
@@ -31,7 +31,7 @@ Ask questions, get answers, and connect with Microsoft engineers and community e
 > | Channel | Description | 
 > |---------|-------------|
 > | **Azure Knowledge Center** | The Azure Knowledge Center is a searchable database that contains answers to common support questions. |
-> | **Microsoft Developer Network (MSDN) Forums** | Get support by reading responses to Azure technical questions from Microsoft's developers and testers. |
+> | **Microsoft Tech Community** | Get support by reading responses to Azure technical questions from Microsoft's developers and testers. |
 > | **Stack Overflow** | You can review answers to questions from the development community. |
 > | **Server Fault** | Review community responses to questions about System and Network Administration in Azure.|
 > | **Azure Feedback Forums** | Read ideas and suggestions for improving Azure made by Azure users. |

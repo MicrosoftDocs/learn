@@ -34,6 +34,6 @@ modules:
 - learn.data-ai.design-azure-sql-data-warehouse
 - learn.data-ai.query-azure-sql-data-warehouse
 - learn.data-ai.import-data-into-asdw-with-polybase
-- learn.data-ai.data-warehouse-security
+#- learn.data-ai.data-warehouse-security
 trophy:
   uid: learn.data-ai.implement-sql-data-warehouse.trophy
