@@ -1,7 +1,7 @@
 ## Using the Azure Cloud Shell  
 
 To start Azure Cloud Shell,  
-Go to **https://shell.azure.com.** 
+Go to [**https://shell.azure.com**](https://shell.azure.com)
 
 ![An illustration is showing how to connect azure cloud shell.](../media/cloud-shell.png)
 
