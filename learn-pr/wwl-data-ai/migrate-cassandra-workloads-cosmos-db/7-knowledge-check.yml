@@ -3,7 +3,7 @@ uid: learn.wwl.migrate-cassandra-workloads-cosmos-db.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: Knowledge check
+  description: "Knowledge check"
   ms.date: 01/31/2020
   author: wwlpublish
   ms.author: v-gea
@@ -39,13 +39,13 @@ quiz:
     choices:
     - content: "In your Cosmos DB account, in **Overview**."
       isCorrect: false
-      explanation: "For more options than the quickstart settings, in **Settings**, select **Connection String**. You can then provide security information and receive a specific connection string for your settings."
+      explanation: "For more options than the quick start settings, in **Settings**, select **Connection String**. You can then provide security information and receive a specific connection string for your settings."
     - content: "In your Cosmos DB account, in **Settings**, and then **Network**."
       isCorrect: false
-      explanation: "For more options than the quickstart settings, in **Settings**, select **Connection String**. You can then provide security information and receive a specific connection string for your settings."
+      explanation: "For more options than the quick start settings, in **Settings**, select **Connection String**. You can then provide security information and receive a specific connection string for your settings."
     - content: "In your Cosmos DB account, in **Settings**, and then **Connection String**."
       isCorrect: true
-      explanation: "For more options than the quickstart settings, in **Settings**, select **Connection String**. You can then provide security information and receive a specific connection string for your settings."
+      explanation: "For more options than the quick start settings, in **Settings**, select **Connection String**. You can then provide security information and receive a specific connection string for your settings."
   - content: "You have all your users in one region and need to maximize availability. How should you achieve this?"
     choices:
     - content: "Replicate data to at least two regions."

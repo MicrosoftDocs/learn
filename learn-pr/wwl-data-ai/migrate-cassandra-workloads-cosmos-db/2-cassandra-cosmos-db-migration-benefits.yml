@@ -3,7 +3,7 @@ uid: learn.wwl.migrate-cassandra-workloads-cosmos-db.cassandra-cosmos-db-migrati
 title: Cassandra to Cosmos DB migration benefits
 metadata:
   title: Cassandra to Cosmos DB migration benefits
-  description: Cassandra to Cosmos DB migration benefits
+  description: "Cassandra to Cosmos DB migration benefits"
   ms.date: 01/31/2020
   author: wwlpublish
   ms.author: v-gea
