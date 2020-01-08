@@ -1,5 +1,31 @@
 In this unit, you'll first create a dashboard showing all the capabilities of the device template. Next, you'll create a real device, and record the connection settings needed for the remote device app.
 
+## Import a capability model
+
+1. Click **Device templates** in the left-hand menu.
+
+1. Click **+ New**, to create a new device tempalte.
+
+1. Click **IoT device**.
+
+    ![Screenshot showing the icon to create a custom IoT device template](../media/rules-actions-new-template.png)
+
+1. Click **Next: Customize**.
+
+1. Do not select the **Gateway device** check box, click **Next: Review**. Then, **Create**.
+
+1. Give the template a name, such as "Refrigerated Truck". Press Enter.
+
+1. Select **Import capability model**.
+
+    ![Screenshot showing the icon to import a capability model](../media/rules-actions-import-model.png)
+
+1. Navigate to where you downloaded the JSON file containing the capability model, and select that file. You should now see a **Summary** page of all the elements of the capability model.
+
+    ![Screenshot showing the summary of the capability model](../media/rules-actions-model-summary.png)
+
+1. Click **Publish**, in the top-right menu bar, to publish the capability model.
+
 ## Create a rich dashboard
 
 1. Click on the **Views** menu option, then on **Visualizing the device**.
