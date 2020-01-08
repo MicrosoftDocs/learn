@@ -30,11 +30,11 @@ Conditional Access policies have two key parts:
 - Conditions – specified criteria that need to be met
 - Actions – steps to take when the conditions have been met
 
-You can configure enforcement of multi-factor authentication by creating a Conditional Access policy in the Azure portal. However, you must be either a Conditional Access administrator, or a security administrator to configure the policy.
+You configure enforcement of multi-factor authentication by creating a Conditional Access policy in the Azure portal. However, you must be either a Conditional Access administrator, or a security administrator.
 
-You can implement multi-factor authentication policies at different scopes. You set multi-factor authentication at a specific individual user level, or application level where anyone trying to access the application has to go through a multi-factor authentication process. Also, you could set multi-factor authentication at tenant level, where everyone who's a member of a tenant is expected to complete the process.
+You implement multi-factor authentication policies at different scopes. You set multi-factor authentication at a specific individual user level, or application level. Anyone trying to access the application has to go through a multi-factor authentication process. Also, you could set multi-factor authentication at tenant level, where everyone who's a member of a tenant is expected to complete the process.
 
-Different forms of multi-factor authentication methods are supported in Azure. These methods include:
+Different forms of second factor methods are supported in Azure. These methods include:
 
 - A mobile application, such as Microsoft Authenticator, where users receive a uniquely generated one-time code
 - A phone call, where the user receives a one-time code
@@ -44,8 +44,6 @@ When you create a Conditional Access policy, you'll specify which users or group
 
 ![Configuring a Conditional Access policy](../media/5-conditional-access.png)
 
-**Test your policy**
-
 When your policy is configured and enabled, you test it using the **What If** tool in the Azure portal.
 
 ![What if test](../media/5-whatif.png)
@@ -54,4 +52,4 @@ This tool will help simulate a user signing in and show you which policies would
 
 ![What if result](../media/5-whatif-result.png)
 
-You can then perform a final test by attempting to sign in as the user for the application, and test the Conditional Access policy by verifying that you're asked to complete a multi-factor authentication challenge.
+You then do a final test by attempting to sign in as the user for the application. Test the Conditional Access policy by verifying whether multi-factor authentication is enforced correctly.

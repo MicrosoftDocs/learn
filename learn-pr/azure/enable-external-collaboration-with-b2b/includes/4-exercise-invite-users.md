@@ -6,11 +6,11 @@ To create a tenant, you'll configure appropriate external collaboration settings
 
 1. [Sign in](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) to the Azure portal as a global administrator. If you're the person who signed up for an Azure subscription, you're automatically the global administrator.
 1. Select **Create a resource > Identity**, then select **Azure Active Directory**.
-1. Fill in the "Create directory" form as appropriate. Give your Azure AD tenant a name in the **Organization name** field. Use a unique domain name in the **initial domain name** field, and select a country or region of your choice.
+1. Fill in the Create directory form as appropriate. You can use your own values for the **Organization name** and **Initial domain name** fields. For the **Country or region field**, select United States.
 
     ![Screenshot showing the Create directory options](../media/4-create-tenant.png)
 
-1. Select **Create** at the bottom of the form.
+1. Select **Create**.
 1. After your directory has been created, select it in the confirmation dialog.
 
     ![Screenshot showing the confirmation ](../media/4-created-directory.png)
@@ -34,11 +34,7 @@ By default, all users and guest users can invite external users. Make sure that 
 
 Invite a guest user to add them to your directory.
 
-1. Select **your directory**.
-
-    ![Select directory link](../media/4-select-directory-link.png)
-
-1. Select **Users**. Then select **New Guest user**.
+1. Select **Azure Active Directory > Users > New Guest user**. 
 
     ![Send an invitation](../media/4-send-invitation.png)
 
@@ -48,45 +44,33 @@ Invite a guest user to add them to your directory.
 
 1. Select **Invite** to send your invitation.
 
-1. An invitation email will be sent to the address you've specified. In different internet browser, go to the email inbox, and open the email. Select **Get started**.
+1. An invitation email will be sent to the address you've specified. Go to the email inbox, and open the email. Select **Get started**.
 
     ![Email confirmation](../media/4-email-confirmation.png)
 
-1. The guest will be asked to review permissions before they are given access.
+1. The guest will log in with their Microsoft account.
 
     ![Sign-in experience](../media/4-sign-in-experience.png)
-
-1. Select **Accept**. You'll be forwarded to the access panel where the guest user can access their applications.
-
-    ![Access panel page](../media/4-forwarded-access-panel.png)
 
 ## Add a guest user to a group
 
 Your guest user can also be made a member of a particular group.
 
-1. Go back to your internet browser instance that's showing your Azure portal. Select the **Show portal menu** button, then select **Azure Active Directory** to go back to your Azure Active Directory pane.
-
-    ![Go to Azure AD](../media/4-select-azure-active-directory.png)
-
-1. Select **Groups**.
-
+1. Select **Azure Active Directory > Groups**.
 1. Select **New group** in the groups pane.
-
 1. Fill in the form as appropriate. For **Group type**, select **Security**.
-
 1. Select **Members**.
 
     ![Add a new member to the group](../media/4-create-group-add-member.png)
 
 1. In the search field, look for and select your guest user. Then select **Select**.
-
 1. Select **Create**.
 
 ## Add a guest user to an application
 
 Now give your guest user access to an application.
 
-1. Go back to your Azure Active Directory pane, select **Enterprise applications**, then select **All applications > New application**.
+1. Select **Azure Active Directory**, select **Enterprise applications**, then select **All applications > New application**.
 
     ![Screenshot showing the All applications pane](../media/4-new-application.png)
 
@@ -94,7 +78,7 @@ Now give your guest user access to an application.
 
     ![Add application](../media/4-add-application.png)
 
-1. Go to your newly added application. Go back to your Azure Active Directory pane. Select **Enterprise applications > All applications**, then select **Twitter**.
+1. Go to your newly added application. Select **Azure Active Directory > Enterprise applications > All applications**, then select **Twitter**.
 
 1. On the overview page, select **Assign users and groups**, then select **Add user**.
 
@@ -108,9 +92,7 @@ Now give your guest user access to an application.
 
 ## Guest user experience
 
-1. When you've added the guest user to your application, go back to your guest email inbox. Open the invitation email.
-
-1. Select the **Get Started** button in the invitation email.
+1. When you've added the guest user to your application, go back to your guest email inbox. Select the **Get Started** link in the invitation email.
 
 1. You'll be forwarded to the access panel.
 

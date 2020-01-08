@@ -1,10 +1,10 @@
-Azure Active Directory B2B (Azure AD B2B) lets you collaborate securely with external partner users.
+Organizations naturally need to collaborate with external users. These external users may be required to provide vital services and work. As a result, applications and resources must often be shared. External users might be individuals without an IT department, or they could be part of another organization with their own IT infrastructure.
 
-You're the solution architect for a health care organization. Your organization is publishing an application that allows clinicians from partnering health providers to access health records for patients at your facilities. You need to make it possible for them to collaborate in a secure way.
+Organizations must ensure that any sharing process is secure. You should give access to the permission levels necessary, for the right amount of time. The Azure Active Directory B2B (Azure AD B2B) collaboration allows organizations to work with external users by ensuring applications and resources are shared securely.
 
-In this module, you'll use Azure AD B2B to collaborate securely with external users. You'll use the Azure portal to invite guest users to a directory, a group, or an application. You'll also learn how you can use multi-factor authentication with Azure AD B2B to add additional protection to your shared applications.
+You're the solution architect for a healthcare organization. Your company is publishing an application that allows clinicians from partnering health providers to access health records for patients at your facilities. You'll make sure these organizations collaborate in a secure way.
 
-By the end of this module, you'll be able to configure Azure AD B2B so your company can collaborate with external users.
+In this module, you'll use Azure AD B2B to collaborate securely with external users. You'll use the Azure portal to invite guest users to a directory, group, or application. You'll also learn how to use multi-factor authentication with Azure AD B2B to add extra protection to shared applications.
 
 ## Learning objectives
 
