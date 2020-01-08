@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.network-fundamentals-2.network-monitoring
-title: Network Monitoring
+title: Network monitoring
 metadata:
   title: Use monitoring in your network
   description: Understand how to use monitoring to protect your network.
-  ms.date: 15/12/2019
+  ms.date: 06/01/2020
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial

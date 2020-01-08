@@ -26,11 +26,11 @@ The interval frequency depends on what we want to monitor. For example, we'd use
 
 To monitor our network, we'll need to use a secure network management protocol that consumes minimum bandwidth. We want to keep our network secure and prevent unnecessary load on network performance.
 
-- ** Simple Network Management Protocol (SNMP)**
+- **Simple Network Management Protocol (SNMP)**
 
 Like switches and routers, the majority of Linux servers and network devices use SNMP. An SNMP-based agent is usually already preinstalled on the device and allows for configuration. The SNMP agent collects things like traffic on our network switch, memory usage, or even printer queues. The SNMP protocol communicates information about our device to our network monitoring and management solution (NMS).
 
-- ** Windows Management Instrumentation (WMI)**
+- **Windows Management Instrumentation (WMI)**
 
 Windows devices use WMI to provide information about the status of our device. We also use WMI to make changes to devices, such as scheduling processes to trigger, or updating system properties and settings. Windows Management Infrastructure is a newer version of WMI that has upgraded capabilities, such as better integration with PowerShell to run commands and scripts.
 
