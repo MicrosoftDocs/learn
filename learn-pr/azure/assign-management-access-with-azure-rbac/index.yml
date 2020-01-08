@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.azure.assign-management-access-with-azure-rbac
 metadata:
-  title: Assign management access to a subscription with Azure role-based access control
+  title: Manage access to an Azure subscription with Azure role-based access control
   description: Learn how to assign management access to a subscription with Azure role-based access control.
   ms.date: 12/13/2019
   author: cwatson-cat
@@ -9,14 +9,14 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Assign management access to a subscription with Azure role-based access control
-summary: Identify the appropriate role to assign to an employee for management access to a subscription. Elevate your access to manage the subscription. Assign the role. Then, turn off your management access.
+summary: To grant access to a subscription, identify the appropriate role to assign to an employee. As the Global Administrator, temporarily elevate your access to manage the subscription. Assign the role. Then, turn off your management access.
 abstract: | 
   In this module, you will:
-  - Identify scenarios where the global administrator for Azure Active Directory may need to elevate their access in Azure.
+  - Identify scenarios where the Global Administrator for Azure Active Directory may need to temporarily elevate their access in Azure.
   - Identify the appropriate role to assign to an employee.
   - Grant the employee management access to a subscription.
 prerequisites: | 
-  - Basic understanding of how role-based access control (RBAC) works in Azure
+  - Basic understanding of how Azure role-based access control (Azure RBAC) works
   - Access to an Azure subscription where you have the Global Administrator role for your account (optional)
 iconUrl: /learn/achievements/assign-management-access-with-azure-rbac.svg
 levels:

@@ -1,26 +1,28 @@
-Your organization needs to provide full subscription management access to the person replacing the previous administrator. You'll need to assign the user with the correct access levels. To do that, you'll need to have the correct permissions yourself.
+Your organization needs to grant administrator access for a subscription to a new administrator. The previous administrator left the company and didn't assign administrator access to another employee. No one else has access to this subscription.
 
-In this unit, you'll give yourself access to the User Access Administrator role. You'll look at how to assign subscription ownership to a given user. You'll then revoke the User Access Administrator role.
+In this unit, you'll elevate your access to get access to this subscription. You'll look at how to assign subscription ownership to the new administrator. You'll then revoke the elevated access.
 
 This exercise is optional. To complete the exercise, you need access to an Azure account that has Global Administrator permissions.
 
-## Elevate permissions to User Access Administrator
+## Elevate your access
 
-1. Sign in to the [Azure portal](<https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true>) as the Azure AD global administrator.
+1. Sign in to the [Azure portal](<https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true>) as the Azure AD Global Administrator.
 1. Select **Azure Active Directory** > **Properties**.
     ![Screenshot that shows the Azure AD properties](../media/4-azure-ad-properties.png)
-1. Select **Yes** on the access management for Azure resources toggle, and then select **Save**.
+1. Under **Access management for Azure resources**, select **Yes**.
     ![Screenshot that shows access management for Azure resources option](../media/4-access-management-azure-resources.png)
+1. Select **Save**.
 1. Sign out and sign back in to Azure to refresh your access.
 
 ### Verify that you have the User Access Administrator role
 
 1. Search for **Subscriptions** from the top of the Azure portal.
-1. Select the relevant subscription, select **Access Control (IAM)**, then select **Role Assignments**.
-    ![Screenshot that shows the User Access Administrator role assigned](../media/4-check-role.png)    
+1. Select the relevant subscription. Now that you have elevated access at the root scope, you should see all subscriptions in your directory.
+1. Select **Access control (IAM)** > **Role assignments**.
+    ![Screenshot that shows the User Access Administrator role assigned](../media/4-check-role.png)
 1. Scroll down to the **USER ACCESS ADMINISTRATOR** section, and check that you have the **Root (inherited)** scope.
 
-## Assign subscription ownership
+## Assign a user as an administrator of a subscription
 
 1. On the Access control (AIM) pane, at the top, select **+ Add**.
 1. Select **Add role assignment**.
@@ -30,4 +32,10 @@ This exercise is optional. To complete the exercise, you need access to an Azure
     ![Screenshot of the Add role assignment adding an Owner role to a user](../media/4-add-owner-role.png)
 1. Select **Save**.
 
-When you're finished, you'll need to return to the properties section of Azure AD to set access management for Azure resources back to **No**.
+## Remove your elevated access
+
+1. In the Azure portal, select **Azure Active Directory** > **Properties**.
+    ![Screenshot that shows the Azure AD properties](../media/4-azure-ad-properties.png)
+1. Under **Access management for Azure resources**, select **No**.
+1. Select **Save**.
+1. Sign out and sign back in to Azure to refresh your access.

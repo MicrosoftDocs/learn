@@ -4,9 +4,9 @@ You're a Global Administrator in Azure Active Directory (Azure AD) for a large o
 
 In this module, you will:
 
-- Identify scenarios where the Global Administrator for Azure AD may need to elevate their access in Azure.
+- Identify scenarios where the Global Administrator for Azure Active Directory may need to temporarily elevate their access in Azure.
 - Identify the appropriate role to assign to an employee.
-- Grant the employee administrator access to a subscription.
+- Grant the employee management access to a subscription.
 
 ## Prerequisites
 

@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.assign-management-access-with-azure-rbac.exercise-elevate-permissions
-title: Exercise - Elevate permissions and grant management access to a subscription
+title: Exercise - Get access to an Azure subscription
 metadata:
-  title: Exercise - Elevate permissions and grant management access to a subscription
-  description: Exercise - Elevate permissions and grant management access to a subscription
+  title: Exercise - Get access to an Azure subscription
+  description: As a Global Administrator, learn how to elevate your permissions to grant management access to an Azure subscription.
   ms.date: 12/13/2019
   author: cwatson-cat
   ms.author: cwatson
