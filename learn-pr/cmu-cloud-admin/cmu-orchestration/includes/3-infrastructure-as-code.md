@@ -56,7 +56,7 @@ IaC is merely an abstract concept without tools to implement it. The next lesson
 
 1. _Wiley Publishing. *Principles of Network and System Administration*. <https://www.wiley.com/en-us/Principles+of+Network+and+System+Administration%2C+2nd+Edition-p-9780470868072>._
 
-1. _Mark Burgess's blog. <http://markburgess.org/blog\_cd.html>._
+1. _Mark Burgess's blog. <http://markburgess.org/blog_cd.html>._
 
 1. _usenix. *Puppet: Next-Generation Configuration Management*. <https://www.usenix.org/publications/login/february-2006-volume-31-number-1/puppet-next-generation-configuration-management>._
 
@@ -64,6 +64,6 @@ IaC is merely an abstract concept without tools to implement it. The next lesson
 
 [^2]: https://www.wiley.com/en-us/Principles+of+Network+and+System+Administration%2C+2nd+Edition-p-9780470868072
 
-[^3]: http://markburgess.org/blog\_cd.html
+[^3]: http://markburgess.org/blog_cd.html
 
 [^4]: https://www.usenix.org/publications/login/february-2006-volume-31-number-1/puppet-next-generation-configuration-management
