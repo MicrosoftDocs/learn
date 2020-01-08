@@ -8,6 +8,7 @@ metadata:
   ms.author: Olivier.Bloch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  zone_pivot_groups: vs-vscode-language
 title: Create rules and take actions in IoT Central
 durationInMinutes: 2
 content: |

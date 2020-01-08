@@ -1,9 +1,9 @@
 In this module, you learned how to:
 
 - Create an Azure IoT Central custom app, using the IoT Central portal
-- Create a Device Template for a custom device, using the IoT Central portal
-- Create a programming project to simulate a sensor device in a refrigerated truck - with routes selected by Azure Maps
-- Monitor and command the simulated device, from the IoT Central Device portal
+- Import a device template for a custom device, using the IoT Central portal
+- Monitor and command a simulated refrigerated truck, from an IoT Central dashboard
+- Create a range of rules, with associated actions, responding to the movements and state of the refrigerated truck
 
 ## Clean up
 
@@ -15,9 +15,8 @@ All rules associated with device templates that are part of the Trial subscripti
 
 Take your interest further with:
 
-- [Build workflows with the IoT Central connector in Microsoft Flow](https://docs.microsoft.com/azure/iot-central/howto-add-microsoft-flow)
 - [Azure IoT Central Documentation](https://docs.microsoft.com/azure/iot-central/)
-- [Azure Certified for IoT device catalog](https://catalog.azureiotsolutions.com/)
+- [Build workflows with the IoT Central connector in Microsoft Flow](https://docs.microsoft.com/azure/iot-central/howto-add-microsoft-flow)
 
 And look out for additional Learn modules covering IoT Central.
 

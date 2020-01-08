@@ -8,7 +8,44 @@ metadata:
   ms.author: Olivier.Bloch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  zone_pivot_groups: vs-vscode-language
 title: Create an IoT Central app, a Device template, and a device app
 durationInMinutes: 2
 content: |
   [!include[](includes/2-create-iot-central-apps-device-template.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: 'Why do we need an Azure Maps account for this module?'
+    choices: 
+    - content: 'To renter the location of the truck on a map.'
+      isCorrect: false
+      explanation: The location of the truck is handled by the IoT Central dashboard.
+    - content: 'To calculate the best route from one location to another'
+      isCorrect: true
+      explanation: Azure Maps enables many route finding options.
+    - content: 'To display a map background'
+      isCorrect: false
+      explanation: We do not render any particular background in this module.
+
+  - content: 'When selecting a device template type, which did we use in this module?'
+    choices: 
+    - content: 'IoT device'
+      isCorrect: true
+      explanation: IoT device enables a custom capability model to be built from scratch, or imported.
+    - content: 'Azure IoT Edge'
+      isCorrect: false
+      explanation: IoT Edge is a technology for improving efficiency, but not a technology we have used in this module.
+    - content: 'IoT Plug and Play'
+      isCorrect: false
+      explanation: These templates use pre-configured device templates, not the customized template we use in this module.
+
+  - content: 'True or false: the location of the truck is considered to be a Property of the truck?'
+    choices: 
+    - content: 'True'
+      isCorrect: false
+      explanation: Properties are elements such as Truck ID, or an optimal temperature setting.
+    - content: 'False'
+      isCorrect: true
+      explanation: The location of the truck is considered to be Telemetry.

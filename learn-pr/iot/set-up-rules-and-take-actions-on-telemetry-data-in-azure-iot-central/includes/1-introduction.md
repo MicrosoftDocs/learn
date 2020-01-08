@@ -1,10 +1,10 @@
 Azure IoT Central enables the easy monitoring and management of a fleet of remote devices.
 
-This module builds on the application developed in the "Your first Azure IoT Central app" module, by adding rules and actions. It is not a requirement that you have completed the earlier module, but it may help your understanding of IoT Central if you do complete it.
+This module builds on the app developed in the "Your first Azure IoT Central app" module, by adding rules and actions. It is not a requirement that you have completed the earlier module, but it may help your understanding of IoT Central if you do complete it.
 
 The earlier module explains how to monitor and command the movements of a refrigerated truck. This module adds _rules and actions_ to the IoT Central app. Rules enable greater automation. A rule is triggered when one or more conditions are met, and one or more actions are the result. These actions include sending an email, and sending data to a website (a _webbhook_ action).
 
-In this module, we build the IoT Central app from a pre-prepared JSON file defining all the device capabilities. The device app code is loaded and run, without detailed explanation of the sections of code. The focus is on creating a range of rules, and testing these rules out with the device and IoT Central apps up and running.
+In this module, we build the IoT Central app from a pre-prepared JSON file defining all the device capabilities. The device app code is loaded and run, without detailed explanation of the sections of code. The focus is on creating a range of rules, and testing these rules out, with the device and IoT Central apps up and running.
 
 ## Learning objectives
 
@@ -26,7 +26,7 @@ In this module you will:
 
 ## The scenario
 
-Suppose you run a company that operates a refrigerated truck. You have already built an IoT Central app to monitor and control the truck. You now need to make the process more efficient, which you intend doing by adding IoT Central rules and actions.
+ You have already built an IoT Central app to monitor and control a simulated refrigerated truck. You now need to make the process more efficient, which you intend doing by adding IoT Central rules and actions.
 
 [![Image of the finished app, showing a truck en-route in the IoT Central dashboard](../media/refrigerated-trucks-intro-map.png)](../media/refrigerated-trucks-intro-map.png#lightbox)
 
