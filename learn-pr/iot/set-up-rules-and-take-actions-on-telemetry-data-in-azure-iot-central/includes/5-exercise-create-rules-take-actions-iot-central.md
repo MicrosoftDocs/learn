@@ -3,7 +3,7 @@ In this unit, we create four rules to be triggered by the state and movement of 
 
 ## Create a rule to fire when the cooling system fails
 
-In this example, we will create a simple rule with a single condition. Let's fire off an email if the cooling system on the truck fails.
+In this example, we will create a rule with a single condition. Let's fire off an email if the cooling system on the truck fails.
 
 1. In the IoT portal, select **Rules** in the left-hand menu, then **+ New**. Enter a meaningful name for the rule, such as "Cooling system failed". Press Enter.
 
@@ -28,9 +28,9 @@ In this example, we will create a simple rule with a single condition. Let's fir
 1. Click **Done**.
 
     >[!NOTE]
-    >There is no limit to the number of actions a rule can fire. You could add multiple emails and multiple webhooks to a single rule.
+    >There's no limit to the number of actions a rule can fire. You could add multiple emails and multiple webhooks to a single rule.
 
-1. Click **Save**. This is important, otherwise your rule entries will be lost.
+1. Click **Save**. This step is important, otherwise your rule entries will be lost.
 
 1. Use the breadcrumbs, above the rule name, to navigate back to the **Rules** page. You should now see your first rule in the list, and that it's in an **Enabled** state.
 
@@ -58,13 +58,13 @@ In this section, we will look at the time aggregation feature.
 
 1. For **Actions**, fire off another email. Give the email an appropriate title and note.
 
-The rule will fire off one email in a five minute period, if the contents temperature exceeds or equals 0 degrees at any point during the five minute period. You can see that you could enter a rule that would only fire if the _average_ temperature was above a certain threshold. When we get round to testing this rule, we can try out these different options.
+The rule will fire off one email in a five-minute period, if the contents temperature exceeds or equals 0 degrees at any point during the five-minute period. You can see that you could enter a rule that would only fire if the _average_ temperature was above a certain threshold. When we get round to testing this rule, we can try out these different options.
 
 1. Make sure to click **Save**, to save off this rule.
 
 ## Create a rule to fire when a truck leaves the base
 
-In this rule, we are going to investigate the use of multiple conditions to fire a rule. In our simulation of a refrigerated truck, we have not added a specific state to indicate that the truck has just left the base. We can, however, get what we want with a clever use of conditions.
+In this rule, we are going to investigate the use of multiple conditions to fire a rule. In our simulation of a refrigerated truck, we've not added a specific state to indicate that the truck has just left the base. We can, however, get what we want with a clever use of conditions.
 
 1. Select **Rules** in the left-hand menu, then **+ New**. Enter a meaningful name for the rule, such as "Truck leaving base". Press Enter.
 
@@ -87,7 +87,7 @@ In this rule, we are going to investigate the use of multiple conditions to fire
 
 ## Create rules to fire when the temperature of the contents is OK
 
-The rules we have entered so far are triggered mostly when something goes wrong, though the "Truck leaving base" rule is an event, rather than an error.
+The rules we've entered so far are triggered mostly when something goes wrong, though the "Truck leaving base" rule is an event, rather than an error.
 
 An alternative way of looking at rules is to trigger them when everything is OK. For example, let's enter a rule that triggers every five minutes to let operators know everything is fine.
 

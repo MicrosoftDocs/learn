@@ -4,7 +4,7 @@ In this unit, we will test out our rules with the device and IoT Central apps ru
 
 1. Ensure that the device app is running, sending out telemetry.
 
-1. Navigate to the device dashboard in the IoT Central portal. This should give you the options of **Truck view** and **Commands**. Select **Commands**.
+1. Navigate to the device dashboard in the IoT Central portal. A menu bar should give you the options of **Truck view** and **Commands**. Select **Commands**.
 
 1. Give the truck a command to go to a customer. Valid customer IDs are "0" though "9".
 
@@ -20,11 +20,11 @@ In this unit, we will test out our rules with the device and IoT Central apps ru
 
     ![Screenshot showing the arrival of a contents OK email](../media/rules-actions-ok-email.png)
 
-1. If the cooling system fails, you will start to receive more email, though the contents may be in an OK state for a while.
+1. If the cooling system fails, you'll start to receive more email, though the contents may be in an OK state for a while.
 
     ![Screenshot showing the arrival of a contents OK email even after the arrival of a cooling system failed email](../media/rules-actions-ok-failed-emails.png)
 
-1. With a failed cooling system, sooner or later it is likely you will start to receive "Contents temperature spiking" emails.
+1. With a failed cooling system, sooner or later it's likely you'll start to receive "Contents temperature spiking" emails.
 
     ![Screenshot showing the arrival of a contents temperature spiking email](../media/rules-actions-spiking-email.png)
 

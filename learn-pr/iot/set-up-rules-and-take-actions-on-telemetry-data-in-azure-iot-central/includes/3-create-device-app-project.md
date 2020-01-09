@@ -6,7 +6,7 @@ Using your preferred development environment, build the device sensor app. Visua
 
 ::: zone pivot="vscode-node"
 
-Node.js is a platform for building server apps, based on JavaScript. All the JavaScript code you'll need is provided below, so you do not need to be a JavaScript developer to get this app up and running.
+Node.js is a platform for building server apps, based on JavaScript. All the JavaScript code you'll need is provided below, so you don't need to be a JavaScript developer to get this app up and running.
 
 1. Open Visual Studio Code. From the **Terminal** menu, open a **New Terminal**.
 
@@ -130,7 +130,7 @@ You are now ready to test the device app.
 
 ### 1. Confirm the device app connects to Azure IoT Central
 
-1. If one of the next lines on the console is **Device successfully connected to Azure IoT Central** you've made the connection. If you do not get this message, it usually means either the IoT Central app isn't running, or the connection key strings aren't correct.
+1. If one of the next lines on the console is **Device successfully connected to Azure IoT Central** you've made the connection. If you don't get this message, it usually means either the IoT Central app isn't running, or the connection key strings aren't correct.
 
 1. The "connected" line should be followed by some text verifying the settings and properties were sent successfully.
 

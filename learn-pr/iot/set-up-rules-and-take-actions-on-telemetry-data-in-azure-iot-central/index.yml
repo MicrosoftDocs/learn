@@ -11,18 +11,19 @@ metadata:
 title: Set up rules and take action on telemetry data in Azure IoT central
 summary: >
   This module builds an IoT Central app to monitor and command a refrigerated truck. The first unit creates the app, the second unit defines a device template for a refrigerated truck. Then, create a programming project, add code to simulate a truck, and communicate with your IoT Central app. The truck is monitored through a custom dashboard.
-abstract: | 
+abstract: |
   In this module, you will:
   - Create an Azure IoT Central custom app, using the IoT Central portal
-  - Create a device template for a custom device, using the IoT Central portal
-  - Create a programming project to simulate a refrigerated truck, with routes selected by Azure Maps
-  - Monitor and command the simulated truck, from an IoT Central dashboard
-prerequisites: | 
+  - Import a device template for a custom device, using the IoT Central portal
+  - Import a programming project to simulate a refrigerated truck, with routes selected by Azure Maps, using Visual Studio Code, or Visual Studio
+  - Monitor and command the simulated device, from an IoT Central dashboard
+  - Create a range of rules, with associated actions, responding to events that occur in the field
+prerequisites: |
   - An introductory knowledge of the purpose of Azure IoT
   - Ability to navigate Azure IoT portal 
   - Ability to use Node.js, or C#, at the beginner level 
   - Experience using Visual Studio, or Visual Studio Code, at the beginner level 
-  - Must have, or be able to open, an Azure Maps account 
+  - Must have, or can open, an Azure Maps account 
 iconUrl: http://via.placeholder.com/120x120g
 ratingEnabled: true
 levels:

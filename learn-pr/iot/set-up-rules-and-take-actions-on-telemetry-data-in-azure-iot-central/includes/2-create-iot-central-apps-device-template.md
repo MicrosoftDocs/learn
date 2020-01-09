@@ -86,11 +86,11 @@ All developers need an Azure Maps account.
 
 ## Create a free Azure Maps account
 
-If you do not already have an Azure Maps account, you'll need to create one.
+If you don't already have an Azure Maps account, you'll need to create one.
 
 1. Navigate to [Azure Maps](https://azure.microsoft.com/services/azure-maps/?azure-portal=true).
 
-1. Follow the prompts to create a free account. When your account is set up, you'll need the **Primary Key** for the account. You will find this key by selecting **Authentication** in the left-hand menu for your Azure Maps resource. Copy and paste this key into your text document, with a note that it applies to Azure Maps.
+1. Follow the prompts to create a free account. When your account is set up, you'll need the **Primary Key** for the account. You'll find this key by selecting **Authentication** in the left-hand menu for your Azure Maps resource. Copy and paste this key into your text document, with a note that it applies to Azure Maps.
 
 A _capability model_ contains a definition of a device template. A device template can be created from scratch, which is detail orientated and time-consuming. The next step is to import a pre-built capability model, defining the capabilities of a refrigerated truck.
 
@@ -106,7 +106,7 @@ A _capability model_ contains a definition of a device template. A device templa
 
 1. Click **Next: Customize**.
 
-1. Do not select the **Gateway device** check box, click **Next: Review**. Then, **Create**.
+1. Don't select the **Gateway device** check box, click **Next: Review**. Then, **Create**.
 
 1. Give the template a name, such as "RefrigeratedTruck". Press Enter.
 

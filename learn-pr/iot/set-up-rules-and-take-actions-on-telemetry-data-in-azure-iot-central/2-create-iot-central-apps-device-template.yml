@@ -27,7 +27,7 @@ quiz:
       explanation: Azure Maps enables many route finding options.
     - content: 'To display a map background'
       isCorrect: false
-      explanation: We do not render any particular background in this module.
+      explanation: We don't render any particular background in this module.
 
   - content: 'When selecting a device template type, which did we use in this module?'
     choices: 
@@ -36,7 +36,7 @@ quiz:
       explanation: IoT device enables a custom capability model to be built from scratch, or imported.
     - content: 'Azure IoT Edge'
       isCorrect: false
-      explanation: IoT Edge is a technology for improving efficiency, but not a technology we have used in this module.
+      explanation: IoT Edge is a technology for improving efficiency, but not a technology we've used in this module.
     - content: 'IoT Plug and Play'
       isCorrect: false
       explanation: These templates use pre-configured device templates, not the customized template we use in this module.

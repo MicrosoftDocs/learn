@@ -16,7 +16,7 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'What three components make up a Condition for a rule, that is not time-aggregated?'
+  - content: 'What three components make up a Condition for a rule. The rule is not time-aggregated?'
     choices: 
     - content: 'Telemetry, Operator, Value'
       isCorrect: true
@@ -32,22 +32,22 @@ quiz:
     choices: 
     - content: 'False'
       isCorrect: false
-      explanation: There is no other option than logical AND.
+      explanation: There's no other option than logical AND.
     - content: 'True'
       isCorrect: true
-      explanation: There is no other option than logical AND.
+      explanation: There's no other option than logical AND.
 
-  - content: "If time aggregation is set at Maximum, and temperatures vary from -2 to -10 degrees in the time period, what value is the maximum?"
+  - content: "If time aggregation is set at Maximum, and temperatures vary from -2 degrees to -10 degrees in the time period, what value is the maximum?"
     choices: 
-    - content: '0, negative numbers do not count'
+    - content: "0, negative numbers don't count"
       isCorrect: false
-      explanation: There is nothing wrong with negative numbers.
+      explanation: There's nothing wrong with negative numbers.
     - content: '-10'
       isCorrect: false
-      explanation: That would be the minimum value.
+      explanation: -10 would be the minimum value.
     - content: '-2'
       isCorrect: true
       explanation: -2 is the highest value, so is the maximum.
     - content: '-6'
       isCorrect: false
-      explanation: That would be closer to the average value.
+      explanation: -6 would be closer to the average value.
