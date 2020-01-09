@@ -3,7 +3,7 @@ uid: learn-pr.wwl.planning-implementing-sap-solutions-azure.azure-vm-backup-cons
 title: Azure VM backup considerations for SAP workloads
 metadata:
   title: Azure VM backup considerations for SAP workloads
-  description: Azure VM backup considerations for SAP workloads
+  description: "Azure VM backup considerations for SAP workloads"
   ms.date: 12/20/2019
   author: wwlpublish
   ms.author: bradj
