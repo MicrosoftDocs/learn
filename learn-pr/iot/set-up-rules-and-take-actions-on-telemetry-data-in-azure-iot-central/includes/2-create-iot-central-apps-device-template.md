@@ -102,7 +102,7 @@ A _capability model_ contains a definition of a device template. A device templa
 
 1. Click **IoT device**.
 
-    ![Screenshot showing the icon to create a custom IoT device template](../media/rules-actions-new-template.png)
+    [![Screenshot showing the icon to create a custom IoT device template](../media/rules-actions-new-template.png)](../media/rules-actions-new-template.png#lightbox)
 
 1. Click **Next: Customize**.
 
@@ -112,11 +112,11 @@ A _capability model_ contains a definition of a device template. A device templa
 
 1. Select **Import capability model**.
 
-    ![Screenshot showing the icon to import a capability model](../media/rules-actions-import-model.png)
+    [![Screenshot showing the icon to import a capability model](../media/rules-actions-import-model.png)](../media/rules-actions-import-model.png#lightbox)
 
 1. Navigate to where you downloaded the JSON file containing the capability model, and select that file. You should now see a **Summary** page of all the elements of the capability model.
 
-    ![Screenshot showing the summary of the capability model](../media/rules-actions-model-summary.png)
+    [![Screenshot showing the summary of the capability model](../media/rules-actions-model-summary.png)](../media/rules-actions-model-summary.png#lightbox)
 
 1. Click **Save**, then **Publish**, in the top-right menu bar, and then **Publish** again in the dialog that follows, to publish the capability model. Only a published model is available for use.
 
