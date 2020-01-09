@@ -20,19 +20,17 @@ In this unit, we will test out our rules with the device and IoT Central apps ru
 
     ![Screenshot showing the arrival of a contents OK email](../media/rules-actions-ok-email.png)
 
-1. If the cooling system fails, you will start to receive emails, though the contents may be in an OK state for a while.
+1. If the cooling system fails, you will start to receive more email, though the contents may be in an OK state for a while.
 
     ![Screenshot showing the arrival of a contents OK email even after the arrival of a cooling system failed email](../media/rules-actions-ok-failed-emails.png)
 
-1. With a failed cooling system, sooner or later it is likely you will start to receive "contents spiking" emails.
+1. With a failed cooling system, sooner or later it is likely you will start to receive "Contents temperature spiking" emails.
 
     ![Screenshot showing the arrival of a contents temperature spiking email](../media/rules-actions-spiking-email.png)
 
     > [!NOTE]
-    > The exact order and content of the emails will depend on the customer number you choose, and random events in the simulator. Because of this randomness, you will get a different sequence of emails than that shown above.
+    > The exact order and content of the emails will depend on the customer number you choose, and random events in the simulator.
 
 ## Consider how to make improvements
 
 Run the device app for as long as necessary for you to receive all four email actions. Consider how you might improve on the conditions for each action, to reduce the volume of email, but maintain the value of the information.
-
-Congratulations, you have completed all the development and testing work for this module. Let's summarize what we have learned, and finish with a short knowledge check.

@@ -35,11 +35,10 @@ products:
 units:
 - learn.iot.set-up-rules-and-take-action-on-telemetry-data-in-azure-iot-central.introduction
 - learn.iot.set-up-rules-and-take-action-on-telemetry-data-in-azure-iot-central.create-iot-central-apps-device-template
-- learn.iot.set-up-rules-and-take-action-on-telemetry-data-in-azure-iot-central.exercise-create-iot-central-apps-device-template
+- learn.iot.set-up-rules-and-take-action-on-telemetry-data-in-azure-iot-central.create-device-app-project
 - learn.iot.set-up-rules-and-take-action-on-telemetry-data-in-azure-iot-central.create-rules-take-actions-iot-central
 - learn.iot.set-up-rules-and-take-action-on-telemetry-data-in-azure-iot-central.exercise-create-rules-take-actions-iot-central
-- learn.iot.set-up-rules-and-take-action-on-telemetry-data-in-azure-iot-central.run-device-app-test-rules-actions
-- learn.iot.set-up-rules-and-take-action-on-telemetry-data-in-azure-iot-central.exercise-run-device-app-test-rules-actions
+- learn.iot.set-up-rules-and-take-action-on-telemetry-data-in-azure-iot-central.exercise-test-rules-actions
 - learn.iot.set-up-rules-and-take-action-on-telemetry-data-in-azure-iot-central.summary
 badge:
   uid: learn.iot.set-up-rules-and-take-action-on-telemetry-data-in-azure-iot-central.badge

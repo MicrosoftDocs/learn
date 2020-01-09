@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.iot.set-up-rules-and-take-action-on-telemetry-data-in-azure-iot-central.create-iot-central-apps-device-template
 metadata:
-  title: Create an IoT Central app, a Device template, and a device app
-  description: Create an IoT Central app and Device Template
+  title: Prepare the IoT Central app
+  description: Download the source code and capability model. If needed, create an Azure Maps account. Import the capability model into the IoT Central app. Create a rich dashboard to visualize a real device, then create the real device.
   ms.date: 1/20/2020
   author: PeterTurcan
   ms.author: Olivier.Bloch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   zone_pivot_groups: vs-vscode-language
-title: Create an IoT Central app, a Device template, and a device app
+title: Prepare the IoT Central app
 durationInMinutes: 12
 content: |
   [!include[](includes/2-create-iot-central-apps-device-template.md)]

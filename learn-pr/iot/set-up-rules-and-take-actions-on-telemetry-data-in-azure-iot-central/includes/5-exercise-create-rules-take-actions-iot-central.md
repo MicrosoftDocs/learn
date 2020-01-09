@@ -5,11 +5,11 @@ In this unit, we create four rules to be triggered by the state and movement of 
 
 In this example, we will create a simple rule with a single condition. Let's fire off an email if the cooling system on the truck fails.
 
-1. Select **Rules** in the left-hand menu, then **+ New**. Enter a meaningful name for the rule, such as "Cooling system failed". Press Enter.
+1. In the IoT portal, select **Rules** in the left-hand menu, then **+ New**. Enter a meaningful name for the rule, such as "Cooling system failed". Press Enter.
 
     ![Screenshot showing how to create a new rule](../media/rules-actions-new-rule.png)
 
-1. Select **Refrigerated Truck** for the device template.
+1. Select **RefrigeratedTruck** for the device template.
 
 1. Under **Conditions** notice that all the telemetry elements of the device template are available. Select **Cooling system state**.
 
@@ -21,9 +21,9 @@ In this example, we will create a simple rule with a single condition. Let's fir
 
 1. For actions, click on **+ Email**.
 
-1. In **Display name** enter a title for the email, perhaps "Cooling system failed"!
+1. In **Display name**, enter a title for the email, perhaps "Cooling system failed"!
 
-1. For **To** enter an email you have access to. And for **Note** enter some descriptive text that will form the body of the email.
+1. For **To**, enter the email you have used for your IoT Central account. And for **Note** enter some descriptive text that will form the body of the email.
 
 1. Click **Done**.
 
@@ -56,9 +56,9 @@ In this section, we will look at the time aggregation feature.
 
     ![Screenshot showing a rule to trigger when the contents temperature spikes](../media/rules-actions-spiking-rule.png)
 
-1. For **Actions**, fire off an email to an address you have access to. Give the email an appropriate title and note.
+1. For **Actions**, fire off another email. Give the email an appropriate title and note.
 
-The rule will fire off an email if the contents temperature exceeds 0 degrees one, or more, times in a five minute period. You can see that you could enter a rule that would only fire if the _average_ temperature was above a certain threshold. When we get round to testing this rule, we can try out these different options.
+The rule will fire off one email in a five minute period, if the contents temperature exceeds or equals 0 degrees at any point during the five minute period. You can see that you could enter a rule that would only fire if the _average_ temperature was above a certain threshold. When we get round to testing this rule, we can try out these different options.
 
 1. Make sure to click **Save**, to save off this rule.
 
@@ -85,7 +85,7 @@ In this rule, we are going to investigate the use of multiple conditions to fire
 
 1. Again, enter your email as an action, giving it an appropriate title and note.
 
-## Create rules to fire when the temperature of the contents is Ok
+## Create rules to fire when the temperature of the contents is OK
 
 The rules we have entered so far are triggered mostly when something goes wrong, though the "Truck leaving base" rule is an event, rather than an error.
 

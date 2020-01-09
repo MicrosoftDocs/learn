@@ -2,46 +2,48 @@ In this unit, we discuss the mechanics of rules, and the range of possible actio
 
 ## Rules and actions
 
-A _rule_ is a set of conditions that triggers when all conditions are met.
+A _rule_ is a set of conditions, that triggers when all conditions are met.
 
 Given our scenario of a refrigerated truck, we might be concerned if the temperature of the contents exceeded freezing point (0 degrees C). A simple rule would be one that fires when the contents temperature meets or exceeds zero. This rule could be summarized as:
 
-    | Telemetry | Operator | Value |
-    | -- | -- | -- |
-    | Contents Temperature | Is greater than or equal to | 0 |
+| Telemetry | Operator | Value |
+| -- | -- | -- |
+| Contents Temperature | Is greater than or equal to | 0 |
 
 Perhaps the action to take if this rule is triggered, is a warning sent as an email to the IoT Central operator.
 
 However, if the rule is triggered, it might fire every time telemetry is sent, resulting in a spam load of email in the operators inbox. If we add time aggregation to the condition, we can reduce the volume of email. For example, if we set the condition as being triggered when the maximum temperature of the contents exceeds 0 degrees in any five minute period, then at most one email every five minutes would be sent. We can summarize our revised condition as:
 
-    | Telemetry | Aggregation | Operator | Value |
-    | -- | -- | -- | -- |
-    | Contents Temperature | Maximum | Is greater than or equal to | 0 |
+| Telemetry | Aggregation | Operator | Value |
+| -- | -- | -- | -- |
+| Contents Temperature | Maximum | Is greater than or equal to | 0 |
 
 It is a judgment call as to how often to send warnings. If the truck was on fire, perhaps a continuos stream of warnings is appropriate!
 
 More complex rules can be built up by combining conditions. And rules and actions do not need to be warnings or failures. We might specify a rule to report to the IoT Central operator that everything is OK with the truck contents. Consider the following rule:
 
-    | Telemetry | Aggregation | Operator | Value |
-    | -- | -- | -- | -- |
-    | Contents Temperature | Maximum | Is less than | -2 |
-    | Contents Temperature | Minimum | Is greater than | -8 |
+| Telemetry | Aggregation | Operator | Value |
+| -- | -- | -- | -- |
+| Contents Temperature | Maximum | Is less than | -2 |
+| Contents Temperature | Minimum | Is greater than | -8 |
 
-This rule could send an "OK" message every 10 minutes, letting the operator know that contents temperatures are within a desired limit.
+This rule could send an "OK" message every 10 minutes, letting the operator know that contents temperature are within a desired limit.
 
 Yet more complex rules can be built around a truck's location. Location in Azure Maps is specified using latitude, longitude, and altitude. We do not use altitude in our app. Consider the following rule:
 
-    | Telemetry | Operator | Value |
-    | -- | -- | -- |
-    | Location / Latitude | Is greater than | 47.1 |
-    | Location / Latitude | Is less than | 47.9 |
-    | Location / Longitude | Is greater than | -122.9 |
-    | Location / Latitude | Is less than | -122.1 |
-    | Truck state | Equals | enroute |
+| Telemetry | Operator | Value |
+| -- | -- | -- |
+| Location / Latitude | Is greater than | 47.1 |
+| Location / Latitude | Is less than | 47.9 |
+| Location / Longitude | Is greater than | -122.9 |
+| Location / Latitude | Is less than | -122.1 |
+| Truck state | Equals | enroute |
 
-This rule will fire if the truck is in the specified area, and is in the required _enroute_ state. We can use such a rule to determine when trucks are entering, and leaving, certain geographical areas. Rule conditions are always _AND-ed_ together. There is no current option for logical OR, logical NOT, or other boolean conditions.
+This rule will fire if the truck is in the specified area, and is in the required _enroute_ state. We can use such a rule to determine when trucks are entering, and leaving, certain geographical areas. It is possible that more than one email action may be triggered by the rule. In other words, an operator may get several messages that a truck is leaving. 
 
-### Range of actions
+Rule conditions are always _AND-ed_ together. There is no current option for logical OR, logical NOT, or other boolean conditions.
+
+### The range of actions
 
 One rule can trigger one, or more, actions. You could, for example, email any number of addresses when a rule fires. 
 
@@ -50,7 +52,7 @@ Currently, there are two available actions: email and webhooks. We use email in 
 * Azure functions
 * Microsoft Flow
 * Azure Logic Apps
-* Your app
+* Your custom app
 
 Using webhooks enables more automation to be added to your IoT Central system.
 

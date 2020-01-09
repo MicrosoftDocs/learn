@@ -1,7 +1,5 @@
 In this unit, you are going to create a programming project to simulate a sensor device in a refrigerated truck. This simulation enables you to test the code long before requiring a real truck! 
 
-IoT Central treats this simulation as "real" because the communication code between the device app and the IoT Central app is the same for a real truck. In other words, if you do run a refrigerated truck company, you would start with simulated code similar to the code in this unit. After this code works to your satisfaction, the simulation-specific code would be replaced with code that receives sensor data. This limited update makes writing the following code a valuable experience.
-
 ## Create the device app
 
 Using your preferred development environment, build the device sensor app. Visual Studio Code and Visual Studio examples are available in this unit.
@@ -94,38 +92,41 @@ Node.js is a platform for building server apps, based on JavaScript. All the Jav
 
 ::: zone-end
 
-## Write the device app
+## Load and run the device app
 
-::: zone pivot="vs-node,vscode-node"
+::: zone pivot="vs-node"
 
 1. Copy the app.js code that you downloaded, into the app.js file of the project.
+1. Copy in the connection string, and the Azure Maps Key, into the locations marked in the code.
+1. In Visual Studio, select **Debug/Start without Debugging**.
 
 ::: zone-end
-::: zone pivot="vs-csharp,vscode-csharp"
+
+::: zone pivot="vs-csharp"
 
 1. Copy the Program.cs code that you downloaded, into the Program.cs file of the project.
-
-::: zone-end
-
-::: zone pivot="vs-csharp,vs-node"
-
+1. Copy in the Scope ID, Device ID, Primary Key, and Azure Maps Key into the locations marked in the code.
 1. In Visual Studio, select **Debug/Start without Debugging**.
 
 ::: zone-end
 ::: zone pivot="vscode-node"
 
+1. Copy the app.js code that you downloaded, into the app.js file of the project.
+1. Copy in the connection string, and the Azure Maps Key, into the locations marked in the code.
 1. In the terminal, enter `node app.js`.
 
 ::: zone-end
 ::: zone pivot="vscode-csharp"
 
+1. Copy the Program.cs code that you downloaded, into the Program.cs file of the project.
+1. Copy in the Scope ID, Device ID, Primary Key, and Azure Maps Key into the locations marked in the code.
 1. In the terminal, enter `dotnet run`.
 
 ::: zone-end
 
 A console screen should open, with the text: **Starting Truck number 1**.
 
-You are now ready to test your code.
+You are now ready to test the device app.
 
 ### 1. Confirm the device app connects to Azure IoT Central
 
@@ -162,4 +163,7 @@ If all goes well, go straight into the second test.
 
     [![Screenshot showing the location of the truck at its base in Seattle](../media/refrigerated-trucks-seattle.png)](../media/refrigerated-trucks-seattle.png#lightbox)
 
-If all is well, this is great progress. The truck is at its base, in the correct state, and waiting for a command.
+If all is well, this is great progress. The truck is at its base, and in the correct state.
+
+The next step is to understand the role of rules and actions.
+

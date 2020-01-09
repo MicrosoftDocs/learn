@@ -2,7 +2,7 @@ In this unit, you'll first download the required files. Then some essential tool
 
 ## Download the source code, and capability model
 
-You've now created the app. The next step is to download the required files. You can choose to build your project using C#, or Node.JS.
+You've now created the IoT Central app. The next step is to download the required files for the device app. You can choose to build your project using C#, or Node.js.
 
 1. Navigate to the GitHub site containing the project files: [Your First IoT Central App Learn module](https://github.com/MicrosoftDocs/mslearn-your-first-iot-central-app).
 
@@ -82,7 +82,7 @@ You now have the all important connection string. The **Scope ID** identifies th
 
 ::: zone-end
 
-To complete the unit, all developers need an Azure Maps account.
+All developers need an Azure Maps account.
 
 ## Create a free Azure Maps account
 
@@ -92,16 +92,11 @@ If you do not already have an Azure Maps account, you'll need to create one.
 
 1. Follow the prompts to create a free account. When your account is set up, you'll need the **Primary Key** for the account. You will find this key by selecting **Authentication** in the left-hand menu for your Azure Maps resource. Copy and paste this key into your text document, with a note that it applies to Azure Maps.
 
-
-
-
-
-
-
+A _capability model_ contains a definition of a device template. A device template can be created from scratch, which is detail orientated and time-consuming. The next step is to import a pre-built capability model, defining the capabilities of a refrigerated truck.
 
 ## Import a capability model
 
-1. Click **Device templates** in the left-hand menu.
+1. In the IoT Central portal, click **Device templates** in the left-hand menu.
 
 1. Click **+ New**, to create a new device template.
 
@@ -113,7 +108,7 @@ If you do not already have an Azure Maps account, you'll need to create one.
 
 1. Do not select the **Gateway device** check box, click **Next: Review**. Then, **Create**.
 
-1. Give the template a name, such as "Refrigerated Truck". Press Enter.
+1. Give the template a name, such as "RefrigeratedTruck". Press Enter.
 
 1. Select **Import capability model**.
 
@@ -123,7 +118,9 @@ If you do not already have an Azure Maps account, you'll need to create one.
 
     ![Screenshot showing the summary of the capability model](../media/rules-actions-model-summary.png)
 
-1. Click **Publish**, in the top-right menu bar, to publish the capability model.
+1. Click **Save**, then **Publish**, in the top-right menu bar, and then **Publish** again in the dialog that follows, to publish the capability model. Only a published model is available for use.
+
+To visualize the movements and state of the refrigerated truck, we need to create a dashboard.
 
 ## Create a rich dashboard
 
@@ -131,7 +128,7 @@ If you do not already have an Azure Maps account, you'll need to create one.
 
     [![Screenshot showing how to create a new view](../media/refrigerated-trucks-add-view.png)](../media/refrigerated-trucks-add-view.png#lightbox)
 
-1. You should now see a list of all the **Telemetry**, **Properties**, and **Commands** you created, each with a check box.
+1. You should now see a list of all the **Telemetry**, **Properties**, and **Commands** of the capability model, each with a check box.
 
 1. Click the **Location** check box, then **Add tile**. Dashboards are made up of tiles. The reason we choose the location tile first, is that we want to expand it from its default size. Drag the lower right-hard corner of the tile, so that the tile is at least twice the default size. This tile is the most fun, it will show the location of the truck on a map of the world.
 
@@ -173,13 +170,13 @@ By "real" device, we mean IoT Central understands that there's a remote app runn
 
 1. Click on the **RefrigeratedTruck - 1** name, and you'll see the live dashboard, with lots of **Waiting for data** messages.
 
-1. Click on the **Commands** entry in the bar that includes **Truck view**. Notice that the two commands you entered are ready to be run.
+1. Click on the **Commands** entry in the bar that includes **Truck view**. Notice that the commands that were in the capability model are ready to be run.
 
 The next step is to create the keys that will allow a remote device to communicate with this app.
 
 ### Record the connection keys
 
-1. Click **Connect** in the top-right menu. Do _not_ click **Connect to gateway**.
+1. For the device, click **Connect** in the top-right menu. Do _not_ click **Connect to gateway**.
 
 1. In the **Device connection** dialog that follows, carefully copy the **ID scope**, **Device ID**, and **Primary key** to a text file. Typically, use a tool like Notepad, and save the file with a meaningful name, say "Truck connections.txt".
 

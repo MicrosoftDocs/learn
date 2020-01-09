@@ -1,3 +1,5 @@
+Congratulations, you have completed all the development and testing work for this module. Let's summarize what we have learned, and finish with a short knowledge check.
+
 In this module, you learned how to:
 
 - Create an Azure IoT Central custom app, using the IoT Central portal
