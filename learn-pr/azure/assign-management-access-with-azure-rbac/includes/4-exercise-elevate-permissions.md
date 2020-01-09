@@ -2,7 +2,7 @@ Your organization needs to grant administrator access for a subscription to a ne
 
 In this unit, you'll elevate your access to get access to this subscription. You'll look at how to assign subscription ownership to the new administrator. You'll then revoke the elevated access.
 
-This exercise is optional. To complete the exercise, you need access to an Azure account that has Global Administrator permissions.
+This exercise is optional. To complete the exercise, you need access to an Azure subscription where you have the Global Administrator role for your account. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
 
 ## Elevate your access
 
@@ -24,13 +24,15 @@ This exercise is optional. To complete the exercise, you need access to an Azure
 
 ## Assign a user as an administrator of a subscription
 
+Because you're using your own subscription, you might want to just walk through these steps and not save the Owner role assignment in the last step.
+
 1. On the Access control (AIM) pane, at the top, select **+ Add**.
 1. Select **Add role assignment**.
 1. Set the **Role** field to **Owner**.
 1. In the **Select** field, use the username or email of the users you want to grant access to. Select that user.
 
     ![Screenshot of the Add role assignment adding an Owner role to a user](../media/4-add-owner-role.png)
-1. Select **Save**.
+1. If you want to complete the Owner role assignment, select **Save**. Otherwise, select **Discard**.
 
 ## Remove your elevated access
 
