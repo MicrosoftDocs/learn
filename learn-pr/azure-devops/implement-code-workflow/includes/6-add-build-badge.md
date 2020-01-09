@@ -38,8 +38,8 @@ You can do this for all projects in your organization if you wish by turning off
 
 Up until now, you created Git branches locally to make changes to the _Space Game_ project. You can also propose changes directly through GitHub. In this section, you do that to set up your status badge.
 
-1. In Azure DevOps, in the left pane, select **Pipelines**, and then select **Builds**.
-1. Select the ellipsis (...), and then select **Status badge**.
+1. In Azure DevOps, in the left pane, select **Pipelines**, and then select your pipeline.
+1. Select the ellipsis (...) in the upper right, and then select **Status badge**.
 
     ![Azure Pipelines showing the options menu to set the build badge](../media/6-pipeline-options-menu.png)
 
