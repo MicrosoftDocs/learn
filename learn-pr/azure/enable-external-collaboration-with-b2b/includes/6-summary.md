@@ -44,3 +44,10 @@ Remove the resources you've created in this module:
 1. The Azure portal will check whether you can delete the directory safely. The portal allows you to select **Delete** if it's safe to do so. If it isn't safe to delete, use the links for each failed check to find out how to pass the test.
 
     ![Delete checks](../media/6-delete-check-directory.png)
+
+
+
+## Learn more
+
+[Azure Active Directory B2B documentation](https://docs.microsoft.com/en-us/azure/active-directory/b2b/)
+

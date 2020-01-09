@@ -1,5 +1,5 @@
 
-You'll need to invite the clinicians as guest users in Azure AD B2B to share an application with them securely.
+You'll need to invite the clinicians as guest users in Azure AD B2B to share your company's healthcare application with them securely.
 
 You're going to learn how to collaborate with external users using their identities. You'll see how invitation and redemption works in Azure AD B2B, to collaborate with external users. Then you'll learn how to enable application owners to manage guest users for their applications. Also, you'll explore how to protect shared applications through policies.
 

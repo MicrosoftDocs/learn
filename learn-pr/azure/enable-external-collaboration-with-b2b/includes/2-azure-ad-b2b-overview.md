@@ -1,5 +1,5 @@
 
-You're going to use Azure Active Directory B2B (Azure AD B2B) to give clinicians access to your organization's application. 
+You're going to use Azure Active Directory B2B (Azure AD B2B) to give clinicians access to your organization's healthcare application. 
 
 Here, you'll get a brief overview of the concepts you must understand to use Azure AD B2B effectively.
 
@@ -7,7 +7,7 @@ Here, you'll get a brief overview of the concepts you must understand to use Azu
 
 Your organization needs to work with external users. To collaborate, these users will need a required level of access to the applications. Azure Active Directory B2B is a service that enables you to securely collaborate with external partners. Your partner users are invited as guest users. You remain in control of what they have access to, and for how long.
 
-Azure AD B2B lets you collaborate with external partner users through the following process:
+Azure AD B2B lets you collaborate with external partner users through the process below. The numbers in the diagram are explained in the subsequent sections.
 
 ![Azure AD B2B overview](../media/2-guest-user.png)
 
@@ -15,7 +15,7 @@ Azure AD B2B lets you collaborate with external partner users through the follow
 
 1. **Invite a guest user**
 
-    You invite external users as guest users to your directory. There are different ways you can invite a guest user, such as through Azure PowerShell or the Azure portal. You could invite users as individuals one at a time, or in bulk. For example, to invite an individual using the Azure portal, you fill in a form with your guest user's details and a custom invitation message.
+    At step one in the diagram, you invite external users as guest users to your directory. There are different ways you can invite a guest user, such as through Azure PowerShell or the Azure portal. You could invite users as individuals one at a time, or in bulk. For example, to invite an individual using the Azure portal, you fill in a form with your guest user's details and a custom invitation message.
 
     ![Invitation form](../media/2-invitation-form.png)
 
@@ -25,7 +25,7 @@ Azure AD B2B lets you collaborate with external partner users through the follow
 
 1. **Guest user accepts invitation and reviews permissions**
 
-    The guest user receives an invitation via email then uses the **Get started** link to access the services you want to share with them.
+    At the second stage in the diagram, the guest user receives an invitation via email then uses the **Get started** link to access the services you want to share with them.
 
     ![Email confirmation](../media/2-email-confirmation.png)
 

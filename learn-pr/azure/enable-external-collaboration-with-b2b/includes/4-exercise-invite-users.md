@@ -1,6 +1,6 @@
 You need to make it possible for clinicians to access the application so that they can securely obtain health records for patients at your facilities. You have to invite them as guest users.
 
-To create a tenant, you'll configure appropriate external collaboration settings for Azure AD B2B. You'll invite guest users, add them to a user group, and provide access to an application.
+A tenant is a new instance of Azure Active Directory in your subscription. Let's start by creating a new tenant, so that we can later invite external users to access resources. Also, you'll configure necessary external collaboration settings for Azure AD B2B. You'll invite guest users, add them to a user group, and provide access to an application.
 
 ## Create a new tenant
 
