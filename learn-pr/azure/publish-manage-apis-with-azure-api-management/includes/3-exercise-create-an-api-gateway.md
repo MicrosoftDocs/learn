@@ -51,7 +51,7 @@ The final step in this exercise is to create an API gateway in the Azure portal.
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-1. In the left menu, click **+ Create a resource**.
+1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
 
 1. Click **Integration**, and then click **API management**.
 

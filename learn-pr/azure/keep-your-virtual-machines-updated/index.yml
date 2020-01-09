@@ -3,7 +3,7 @@ uid: learn.keep-your-virtual-machines-updated
 metadata:
   title: Keep your virtual machines updated
   description: Learn to use Azure Update Management to update virtual machines, verify agent connectivity, and use Azure Log Analytics in your cloud environment.
-  ms.date: 12/10/2018
+  ms.date: 01/07/2020
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial
@@ -31,7 +31,6 @@ units:
 - learn.keep-your-virtual-machines-updated.3-exercise-use-update-management-on-a-virtual-machine
 - learn.keep-your-virtual-machines-updated.4-verify-agent-connectivity-and-schedule-recurring-updates
 - learn.keep-your-virtual-machines-updated.5-exercise-use-azure-log-analytics-and-schedule-updates
-- learn.keep-your-virtual-machines-updated.6-knowledge-check
 - learn.keep-your-virtual-machines-updated.7-summary
 badge:
   uid: learn.keep-your-virtual-machines-updated.badge

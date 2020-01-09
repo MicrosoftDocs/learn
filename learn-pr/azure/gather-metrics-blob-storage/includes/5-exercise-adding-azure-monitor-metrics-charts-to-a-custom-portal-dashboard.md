@@ -6,7 +6,7 @@ In this exercise, you will create an Azure dashboard, and add storage metric cha
 
 First, you will create a custom dashboard to display the metrics charts.
 
-1. In the Azure portal, on the left-side, click **Dashboard**.
+1. On the Azure portal menu, select **Dashboard**.
 
 1. In the dashboard area, click **+ New dashboard**.
 

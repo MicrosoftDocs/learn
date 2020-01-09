@@ -17,7 +17,9 @@ A database account is a container for managing one or more databases. Before we 
 
 1. Make sure you are signed into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-1. Select the **Create a resource** button found on the upper left-hand corner of the Azure portal, then select **Databases** > **Azure Cosmos DB**.
+1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
+
+1. Select **Databases** > **Azure Cosmos DB**.
 
 1. In the **Create Azure Cosmos DB Account** page, enter the settings for the new Azure Cosmos DB account.
 
@@ -206,12 +208,12 @@ To read data from the database, you need to define an input binding. As you'll s
 
 1. Select **Select** to create your connection.
 
-A new connection to the database is configured and is shown in the **Azure Cosmos DB account connection** field.
+    A new connection to the database is configured and is shown in the **Azure Cosmos DB account connection** field.
 
     > [!NOTE]
     > If you're curious about the connection endpoint, click *show value* to reveal the connection string.
 
-You want to look up a bookmark with a specific ID, so let's tie an ID that we receive in the query string to the binding.
+    You want to look up a bookmark with a specific ID, so let's tie an ID that we receive in the query string to the binding.
 
 1. In the **Document ID (optional)** field, enter `{id}`.
 
