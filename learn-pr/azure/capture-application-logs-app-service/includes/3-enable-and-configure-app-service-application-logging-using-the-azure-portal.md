@@ -45,8 +45,8 @@ In this step, you're going to use the Azure portal to enable application logging
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 1. On the Portal toolbar, click the **Global subscription filter (Directory + subscription)** button, and in the directories list, select **Microsoft Learn Sandbox** (this is the directory associated with the _Concierge Subscription_).
-1. Click **Resource groups** in the sidebar menu on the left, and check that your sandbox resource group (_<rgn>[sandbox resource group name]</rgn>_) is listed.
-1. Click **App Services** in the sidebar menu on the left.
+1. On the Azure portal menu or from the **Home** page, select **Resource groups**, and check that your sandbox resource group (_<rgn>[sandbox resource group name]</rgn>_) is listed.
+1. On the Azure portal menu, select **App Services**.
 1. In the **App Services** list, click **contosofashions\<_your-number_\>**, and then in the **Overview** section, click on the URL string (https&#58;//contosofashions\<_your-number\ >.azurewebsites.net) to open the home page for the **Contoso Fashions** website in a new browser tab.
 
 You'll now set up the application logging.
@@ -104,8 +104,8 @@ In this step, you're going to use the Azure portal to enable application logging
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 1. On the Portal toolbar, click the **Global subscription filter (Directory + subscription)** button, and in the directories list, select **Microsoft Learn Sandbox** (this is the directory associated with the _Concierge Subscription_).
-1. Click **Resource groups** in the sidebar menu on the left, and check that your sandbox resource group (_<rgn>[sandbox resource group name]</rgn>_) is listed.
-1. Click **App Services** in the sidebar menu on the left.
+1. On the Azure portal menu or from the **Home** page, select **Resource groups**, and check that your sandbox resource group (_<rgn>[sandbox resource group name]</rgn>_) is listed.
+1. On the Azure portal menu, select **App Services**.
 1. In the **App Services** list, click **contosofashions\<_your-number_\>**, and then in the **Overview** section, click on the URL string (https&#58;//contosofashions\<_your-number\ >.azurewebsites.net) to open the home page for the **Contoso Fashions** website in a new browser tab.
 
 You'll now set up the application logging.
