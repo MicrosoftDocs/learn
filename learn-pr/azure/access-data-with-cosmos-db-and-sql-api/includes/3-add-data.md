@@ -11,7 +11,9 @@ The Azure Cosmos DB Data Explorer is a tool included in the Azure portal that is
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the account you activated the sandbox with.
 
-1. Click **All services** > **Databases** > **Azure Cosmos DB**. Then select your account, click **Data Explorer**, and then click **Open Full Screen**.
+1. On the Azure portal menu, select **All services**.
+
+1. Select **Databases** > **Azure Cosmos DB**. Then select your account, click **Data Explorer**, and then click **Open Full Screen**.
 
 1. In the **Open Full Screen** box, click **Open** as shown in the following screenshot.
 
