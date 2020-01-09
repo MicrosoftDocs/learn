@@ -120,8 +120,7 @@ Now that the code is complete, you can re-publish the application and the WebJob
 
 The WebJob that you just published creates messages in queue storage on a schedule. Let's confirm that it's been deployed and check that it works:
 
-1. Sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true).
-1. Select **All resources** and navigate to your web app.
+1. Sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true), and search for and select your web app.
 1. Under **Settings**, click **WebJobs**. You should see your WebJob in the list with a status of Running.
 1. Navigate back to **All resources** and select the storage account created at the beginning of this exercise. Select **Queues** from the navigation menu.
 1. The list should display a single queue, named `stockchecks`, created by the WebJob. If you select it, you'll see the messages that the WebJob is creating, one every 30 seconds.

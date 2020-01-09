@@ -37,4 +37,4 @@ The deployment may take a few minutes to complete.
 
 1. On the **Virtual machine** pane, under **SETTINGS**, click **Disks**.
 
-1. On the **Disks** pane, notice the OS disk encryption status is now **Disabled**.
+1. On the **Disks** pane, notice **Encryption** is not enabled.
