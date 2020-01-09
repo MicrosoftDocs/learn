@@ -1,4 +1,4 @@
-Azure resources and Azure Active Directory (Azure AD) have independent permission systems. Azure role-based access control (Azure RBAC) roles are used to manage access to Azure resources like virtual machines, storage, and much more. Azure AD roles are used to manage access to Azure AD resources such as user accounts and passwords.
+Azure resources and Azure Active Directory (Azure AD) have independent permission systems. Azure role-based access control (Azure RBAC) roles are used to manage access to Azure resources like virtual machines, storage, and much more. Azure AD roles are used to manage access to Azure AD resources like user accounts and passwords.
 
 In this unit, you'll look at the essential aspects of Azure RBAC roles and Azure Active Directory roles. You'll explore the different scopes available to you. You'll then identify the right role to assign for your scenario.
 
