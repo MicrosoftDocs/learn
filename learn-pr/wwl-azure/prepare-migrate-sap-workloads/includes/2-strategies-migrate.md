@@ -1,6 +1,7 @@
 Majority of customers considering deploying SAP workloads to Azure have an existing on-premises SAP implementation. The number of greenfield deployments is relatively small.
 
-Typically, enterprises have SAP systems for business functions like enterprise resource planning (ERP), global trade, business intelligence (BI), and others. Within those systems are environments like sandbox, development, test, and production.
+> [!NOTE]
+> Typically, enterprises have SAP systems for business functions like enterprise resource planning (ERP), global trade, business intelligence (BI), and others. Within those systems are environments like sandbox, development, test, and production.
 
 ![Vertical and Horizontal strategy where rows or layers at the bottom are lower-risk environments and are less critical.](../media/horiz-perf-strategy.png)
 
