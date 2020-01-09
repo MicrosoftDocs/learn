@@ -63,7 +63,7 @@ There are several advantages that a client-server provides an organization. We f
 - All users are centrally managed, governing access and control to your servers and their services.
 - If your server architecture is design to scale, there will never be any performance issues when user usage increases.
 - All data can be stored and accessed centrally, which reduces the likelihood of data duplication.
-- Data is easier safe guarded with centralized storage of data to tape or other backup mediums.
+- Data is easier safeguarded with centralized storage of data to tape or other backup mediums.
 
 ### Disadvantages of client-server networks
 
