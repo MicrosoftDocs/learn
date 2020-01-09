@@ -41,7 +41,7 @@ The architecture consists of the following infrastructure and key software compo
 
 * **SAP Web Dispatcher pool**. The Web Dispatcher component is used as a load balancer for SAP traffic among the SAP application servers. To achieve high availability for the Web Dispatcher component, Azure Load Balancer is used to implement the parallel Web Dispatcher setup. Web Dispatcher uses in a round-robin configuration for HTTP(S) traffic distribution among the available Web Dispatchers in the load balanced backend pool.
 
-For traffic from SAP GUI clients via DIAG protocol or Remote Function Calls (RFC), the Central Services message server balances the load through SAP application server logon groups, so no additional load balancer is needed.
+    For traffic from SAP GUI clients via DIAG protocol or Remote Function Calls (RFC), the Central Services message server balances the load through SAP application server logon groups, so no additional load balancer is needed.
 
 * **SAP Central Services cluster**. The Central Services is a potential single point of failure (SPOF) when deployed to a single VM — a typical deployment when high availability is not a requirement. To implement a high availability solution, deploy multiple Central Services instances and configure them as members of a failover cluster with a shared disk or a file share providing highly available storage accessible by all cluster nodes.
 

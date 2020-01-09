@@ -3,7 +3,7 @@ uid: learn-pr.wwl.utilizing-azure-sap-workloads-reference-architecture.configuri
 title: Configure SAP S4 HANA on Azure VMs
 metadata:
   title: Configure SAP S4 HANA on Azure VMs
-  description: Configure SAP S4 HANA on Azure VMs
+  description: "Configure SAP S4 HANA on Azure VMs"
   ms.date: 12/20/2019
   author: wwlpublish
   ms.author: bradj
