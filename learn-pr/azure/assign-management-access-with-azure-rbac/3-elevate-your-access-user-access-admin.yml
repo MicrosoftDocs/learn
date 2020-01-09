@@ -17,7 +17,7 @@ quiz:
   questions:
   - content: A user who had Owner access to a subscription has left your company. No one else has access to this subscription. How can you grant another employee access to this subscription?
     choices:
-    - content: Use the Azure portal, PowerShell, or REST API commands to elevate your access.
+    - content: Use the Azure portal to elevate your access.
       isCorrect: true
       explanation: Temporarily elevate your access to assign the Owner role to another user.
     - content: Ask the former employee for their password.
