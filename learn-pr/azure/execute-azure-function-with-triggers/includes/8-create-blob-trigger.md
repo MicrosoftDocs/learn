@@ -6,13 +6,9 @@ Again, let's continue using our existing Azure Functions application and add a b
 
 1. Make sure you are signed into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-<<<<<<< HEAD
 1. On the Azure portal menu or from the **Home** page, select **All resources**.
 
 1. Select your function app.
-=======
-1. On the Azure portal menu or from the **Home** page, select **All resources** and select your function app.
->>>>>>> 34f26cb1d81cc082bb717d9ddd34712bb68b499c
 
 1. Point to **Functions** and select the plus (+) icon.
 
@@ -37,11 +33,7 @@ Now that we've created a blob trigger, let's use the Storage Explorer to create 
     > [!TIP]
     > You can duplicate a tab in most browsers by right-clicking on the tab in question and selecting **Duplicate** from the menu that appears. We want to use a new tab so we can switch between the two services we are working with.
 
-<<<<<<< HEAD
 1. In the Azure portal, search for and select **Storage accounts** and then filter by the name.
-=======
-1. On the Azure menu, select **Storage accounts** or select **All resources** and then filter by the name.
->>>>>>> 34f26cb1d81cc082bb717d9ddd34712bb68b499c
 
 1. Click on the **Storage Explorer (preview)** section - this will open a new panel where you can work with blobs and files.
 

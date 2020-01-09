@@ -8,11 +8,7 @@ Let’s start by creating an Azure Function app in the portal.
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-<<<<<<< HEAD
 1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
-=======
-1. From the Azure portal menu, select **Create a resource**.
->>>>>>> 34f26cb1d81cc082bb717d9ddd34712bb68b499c
 
     ![Screenshot of Azure portal menu and Create a resource option.](../media/4-create-a-resource.png)
 
@@ -44,11 +40,7 @@ Let’s start by creating an Azure Function app in the portal.
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-<<<<<<< HEAD
 1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
-=======
-1. From the Azure portal menu, select **Create a resource**.
->>>>>>> 34f26cb1d81cc082bb717d9ddd34712bb68b499c
 
     ![Screenshot of Azure portal menu and Create a resource option.](../media/4-create-a-resource.png)
 
