@@ -55,7 +55,7 @@ We are going to use Visual Studio Code for this section which has an integrated 
 
 1. Select the **Initialize Repository** icon at the top (on the right side of the **SOURCE CONTROL** title).
 
-   ![Screenshot of Visual Studio Code with the Initialize Respository icon highlighted.](../media/4-vs-vode-init-repo.png)
+   ![Screenshot of Visual Studio Code with the Initialize Repository icon highlighted.](../media/4-vs-vode-init-repo.png)
 
 1. Select the **Initialize Repository** button in the dialog.
 
