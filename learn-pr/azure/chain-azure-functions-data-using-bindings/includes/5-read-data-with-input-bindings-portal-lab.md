@@ -208,12 +208,12 @@ To read data from the database, you need to define an input binding. As you'll s
 
 1. Select **Select** to create your connection.
 
-A new connection to the database is configured and is shown in the **Azure Cosmos DB account connection** field.
+    A new connection to the database is configured and is shown in the **Azure Cosmos DB account connection** field.
 
     > [!NOTE]
     > If you're curious about the connection endpoint, click *show value* to reveal the connection string.
 
-You want to look up a bookmark with a specific ID, so let's tie an ID that we receive in the query string to the binding.
+    You want to look up a bookmark with a specific ID, so let's tie an ID that we receive in the query string to the binding.
 
 1. In the **Document ID (optional)** field, enter `{id}`.
 
