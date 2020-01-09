@@ -14,7 +14,9 @@ The exercise also runs a client app that simulates a number of users issuing POS
 
 1. Sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true).
 
-1. Select **Create a resource** > **Web** > **Web App**.
+1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
+
+1. Select **Web** > **Web App**.
 
 1. On the **Web App** page, enter the values in the following table.
 

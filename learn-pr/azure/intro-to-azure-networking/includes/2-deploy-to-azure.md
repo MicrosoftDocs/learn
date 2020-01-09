@@ -91,7 +91,7 @@ For example, notice that the VM in the web tier allows inbound traffic on ports 
 
 ## Summary
 
-Your three-tier application is now running on Azure in the East US region. A _region_ is an Azure data center within a specific geographic location.
+Your three-tier application is now running on Azure in the East US region. A _region_ is one or more Azure data centers within a specific geographic location.
 
 Each tier can access services only from a lower tier. The VM running in the web tier has a public IP address because it receives traffic from the internet. The VMs in the lower tiers, the application and data tiers, each have private IP addresses because they don't communicate directly over the internet.
 

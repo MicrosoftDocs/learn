@@ -2,7 +2,11 @@ The first step in creating a bot is to provide a location for the bot to be host
 
 1. Sign into the [Azure portal](https://portal.azure.com/?azure-portal=true).
 
-1. Select **+ Create a resource**, followed by **AI + Machine Learning**, then **Web App Bot**.
+1. From the Azure portal menu, select **Create a resource**.
+
+    ![Screenshot of Azure portal menu and Create a resource option.](../media/2-create-a-resource.png)
+
+1. Select **AI + Machine Learning**, and then select **Web App Bot**.
 
     ![Screenshot of the Azure portal showing the Create a resource pane with the Web App Bot resource type highlighted.](../media/2-new-bot-service.png)
 
