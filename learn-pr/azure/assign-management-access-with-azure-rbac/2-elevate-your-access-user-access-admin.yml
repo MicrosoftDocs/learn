@@ -33,7 +33,7 @@ quiz:
       explanation: Users with Owner or User Access Administrator access can grant others permissions to manage a management group or subscription.
     - content: The manager should go to the switch directory option in the Azure portal and select the subscription.
       isCorrect: false
-      explanation: They need a User Access Administrator to grant them owner access to the subscription.
+      explanation: They need a User Access Administrator to grant them Owner access to the subscription.
     - content: The manager should use PowerShell to assign themselves Owner access to the subscription.
       isCorrect: false
       explanation: They need a User Access Administrator to grant them this role.
