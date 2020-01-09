@@ -10,7 +10,7 @@ metadata:
   ms.prod: learning-azure
   zone_pivot_groups: vs-vscode-language
 title: Create an IoT Central app, a Device template, and a device app
-durationInMinutes: 2
+durationInMinutes: 12
 content: |
   [!include[](includes/2-create-iot-central-apps-device-template.md)]
 quiz:
