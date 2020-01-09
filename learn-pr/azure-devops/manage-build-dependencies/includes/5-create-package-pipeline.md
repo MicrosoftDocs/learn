@@ -96,7 +96,7 @@ In Visual Studio Code, your terminal window points to the root directory of the 
       displayName: 'Publish NuGet package'
       inputs:
         command: push
-        publishVstsFeed: 'Tailspin.SpaceGame.Web.Models'
+        publishVstsFeed: 'Space Game - web - Dependencies/Tailspin.SpaceGame.Web.Models'
         allowPackageConflicts: true
       condition: succeeded()
     ```
