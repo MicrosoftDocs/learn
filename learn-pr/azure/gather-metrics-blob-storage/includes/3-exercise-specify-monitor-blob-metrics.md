@@ -1,6 +1,6 @@
-As a proof of concept exercise, you want to move some simple files into Azure Blob storage to see how the metrics are displayed in the Azure Portal. You will create a new storage group with associated blob storage, then view the different metrics that appear.
+As a proof of concept exercise, you want to move some simple files into Azure Blob storage to see how the metrics are displayed in the Azure portal. You will create a new storage group with associated blob storage, then view the different metrics that appear.
 
-## Create a storage account in the Azure Portal
+## Create a storage account in the Azure portal
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account with which you activated the sandbox.
 
@@ -154,7 +154,7 @@ Transaction metrics are updated hourly, so you should relatively quickly be able
 
 1. Change the **AGGREGATION** option to **Min**. Again, it is unlikely that there will have been an Azure outage during the time, so the line should stay at 100%. This information generally doesn't change very much.
 
-1. Click the X to the end of the right of the monitor elipse to close it.
+1. Click the X to the end of the right of the monitor ellipse to close it.
 
 1. Click **Add metric**. Both the **RESOURCE** and **METRIC NAMESPACE** values should already be selected.
 
