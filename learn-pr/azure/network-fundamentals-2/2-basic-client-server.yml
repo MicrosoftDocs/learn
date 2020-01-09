@@ -4,7 +4,7 @@ title: An introduction to network client and server technology
 metadata:
   title:  An introduction to network client and server technology
   description: An introduction to network based client technology and the various server options available.
-  ms.date: 06/01/2020
+  ms.date: 09/01/2020
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial
@@ -26,6 +26,7 @@ quiz:
     - content: "A thin client can process and store data locally, and uses the server when it needs more processing power or storage."
       isCorrect: false
       explanation: "A thin client makes requests of a server, and is incapable of running apps or storing data locally."
+
   - content: "What is the purpose of an Application server?"
     choices:
     - content: "Hosts non-web apps allowing users in the network to run them through."

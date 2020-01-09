@@ -9,7 +9,7 @@ In this module, you'll learn:
 
 - Describe the client-server network model
 - Describe the difference between authentication and authorization
-- List the different network firewall options
+- List the different network firewall types
 - List the types of items to monitor in a network
 - Map core network components to Azure networking
 

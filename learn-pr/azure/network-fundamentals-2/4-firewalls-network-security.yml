@@ -4,7 +4,7 @@ title: Understand firewalls and network security
 metadata:
   title:  Understand firewalls and network security
   description: Understanding what firewalls are and how to use them, and network security.
-  ms.date: 06/01/2020
+  ms.date: 09/01/2020
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial
@@ -26,6 +26,7 @@ quiz:
     - content: Disable network service endpoints
       isCorrect: false
       explanation: You shouldn't disable network service endpoints, they help you isolate your Azure services from the public internet. You should disable SSH/RDP protocols.
+      
   - content: You need to prevent users' devices from directly requesting webpages from the internet themselves. Which tool would you use to do this?
     choices:
     - content: Packet filtering firewall

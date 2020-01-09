@@ -4,7 +4,7 @@ title: Network monitoring
 metadata:
   title: Use monitoring in your network
   description: Understand how to use monitoring to protect your network.
-  ms.date: 06/01/2020
+  ms.date: 09/01/2020
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial
@@ -26,6 +26,7 @@ quiz:
     - content: You use an agent to run queries on the data that has been collected.
       isCorrect: false
       explanation: An agent is used to collect information from a resource like a virtual machine. Use Log Analytics to run queries.
+      
   - content: What is Syslog used for?
     choices:
     - content: Syslog is used to let your device send event messages.
