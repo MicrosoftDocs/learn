@@ -47,6 +47,8 @@ You can optionally set up virtual networks and geo-redundancy during account cre
 
     ![The new account page for Azure Cosmos DB](../media/2-azure-cosmos-db-create-new-account.png)
 
+    Prices in images are for example purposes only.
+
 1. After the settings are validated, click **Create** to create the account.
 
 1. The account creation takes a few minutes. Wait for the portal to display the notification that the deployment succeeded and click the notification.

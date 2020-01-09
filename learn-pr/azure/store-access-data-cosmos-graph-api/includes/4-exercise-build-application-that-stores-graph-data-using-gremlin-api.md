@@ -47,9 +47,9 @@ It might take a few minutes for Azure to create your new Azure Cosmos DB account
 
    | Setting| Suggested value | Description |
    | --- | --- | --- |
-   | **Database id** | `sample-database` | Enter **sample-database** as the name for the new database. Database names must be between 1 and 255 characters, and cannot contain / \ # ? or a trailing space. |
+   | **Database ID** | `sample-database` | Enter **sample-database** as the name for the new database. Database names must be between 1 and 255 characters, and cannot contain / \ # ? or a trailing space. |
    | **Throughput** | `400 RUs` | Change the throughput to **400** request units per second (RU/s). If you want to reduce latency, you can scale up the throughput later. |
-   | **Graph id** | `sample-graph` | Enter **sample-graph** as the name for your new collection. Graph names have the same character requirements as database IDs. |
+   | **Graph ID** | `sample-graph` | Enter **sample-graph** as the name for your new collection. Graph names have the same character requirements as database IDs. |
    | **Partition key** | `/name` | Enter **/name** as the partition key. |
 
    ![Screenshot showing creating a new Graph](../media/5-azure-cosmosdb-data-explorer-graph.png)
