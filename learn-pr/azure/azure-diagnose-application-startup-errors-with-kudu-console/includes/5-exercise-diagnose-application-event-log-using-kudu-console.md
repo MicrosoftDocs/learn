@@ -8,13 +8,15 @@ In this unit, the application event log is analyzed through Kudu console.
 
 1. Select **Diagnose and solve problems**.
 
-![Diagnose and solve problems](../media/DiagnoseAndSolveProblems.png)
+    ![Diagnose and solve problems](../media/DiagnoseAndSolveProblems.png)
 
 1. Select **Diagnostic Tools** menu option.
+
 1. Select **Application Event Logs** under **Support Tools**.
+
 1. Review the latest error provided by *IIS AspNetCoreModule* or *IIS AspNetCoreModule V2* in the **Source** column.
 
-![Application Events](../media/ApplicationEvents.png)
+    ![Application Events](../media/ApplicationEvents.png)
 
 ## Access the Application Event Log through Kudu Console
 
@@ -22,7 +24,7 @@ In this unit, the application event log is analyzed through Kudu console.
 1. Under the **Development Tools** section, open **Advanced Tools**. 
 1. Select the **Go** button. Use the same Sandbox login credentials when the login page opens.This opens Kudu Console in a new window.
 
-![Advanced Tools](../media/AdvancedTools.png)
+    ![Advanced Tools](../media/AdvancedTools.png)
 
 1. Open **Debug Console** in the top navigation bar and select **CMD**.
 1. Open **LogFiles** folder.
