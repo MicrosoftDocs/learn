@@ -22,7 +22,9 @@ Let's create a function app that we'll use throughout this entire module. A func
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-1. Select the **Create a resource** button found on the upper left-hand corner of the Azure portal, then select **Compute** > **Function App**.
+1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
+
+1. Select **Compute** > **Function App**.
 
 1. Set the function app properties as follows:
 
@@ -56,7 +58,9 @@ Let's create a function app that we'll use throughout this entire module. A func
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-1. Select the **Create a resource** button found on the upper left-hand corner of the Azure portal, then select **Compute** > **Function App**.
+1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
+
+1. Select **Compute** > **Function App**.
 
 1. Set the function app properties as follows:
 
