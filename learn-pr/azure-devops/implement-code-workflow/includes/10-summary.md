@@ -86,7 +86,7 @@ When they're ready to publish a local commit, they push the commit to their own 
 
 ### Use branch policies
 
-Branch policies help you to protect your important Git branches of. Policies enforce your team's code quality and change management standards. You can configure branch policies from the Azure DevOps portal. Select **Repos** > **Branches** to open the **Branches** page. Locate the branch and select the **...** button. Select **Branch policies** from the context menu. Configure your policies in the **Policies** page. 
+Branch policies help you to protect your important Git branches. Policies enforce your team's code quality and change management standards. You can configure branch policies from the Azure DevOps portal. Select **Repos** > **Branches** to open the **Branches** page. Locate the branch and select the **...** button. Select **Branch policies** from the context menu. Configure your policies in the **Policies** page. 
 
 Some examples of the policies you can configure include: the minimum number of reviewers, checking for linked work items, checking for comment resolution, enforcing a merge strategy, and checking for build validation.
 

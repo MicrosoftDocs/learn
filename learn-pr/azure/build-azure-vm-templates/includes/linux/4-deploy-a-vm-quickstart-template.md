@@ -172,7 +172,7 @@ The deployment succeeded. But let's run a few commands just to verify.
     ```bash
     Name        ResourceGroup                         Location        Zones
     ----------  ------------------------------------  --------------  -------
-    MyUbuntuVM  learn-quickstart-vm-rg    southcentralus
+    simpleLinuxVM  learn-quickstart-vm-rg    southcentralus
     ```
 
     Recall that the template names the VM "MyUbuntuVM". Here you see that this VM exists in your resource group.
