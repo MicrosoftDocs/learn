@@ -119,7 +119,7 @@ There are two subtypes of managed switch:
 
 ## Router
 
-Routers link networks with different ranged addresses together. They can interpret and filter data packets, sending them to the correct network. Routers use the network device's IP address information to route the data package to its destination. Most routers can now detect issues with data traffic flowing to any attached network and route or reroute it around the issue. A router is also called a gateway. When we configure network devices, we'll usually configure it with a default gateway IP address.
+Routers link networks with different ranged addresses together. They can interpret and filter data packets, forwarding them to the correct network. Routers use the network device's IP address information to route the data package to its destination. Most routers can now detect issues with data traffic flowing to any attached network and route or reroute it around the issue. A router is also called a gateway. When we configure network devices, we'll usually configure it with a default gateway IP address.
 
 ### Interconnectivity
 

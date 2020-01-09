@@ -4,29 +4,17 @@ title: Network protocols to use when implementing a network
 metadata:
   title:  Network protocols to use when implementing a network
   description: Explore the network protocols to use when implementing services on a network.
-  ms.date: 06/01/2020
+  ms.date: 01/09/2020
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 13
 content: |
   [!include[](includes/4-network-protocols.md)]
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What are network standards used for?"
-    choices:
-    - content: "To ensure that hardware conforms to a minimum standard necessary for a good network development. "
-      isCorrect: false
-      explanation: "Network standards are designed to ensure that hardware and software made by different vendors work seamlessly together."
-    - content: "To ensure that software is tightly constrained and meets the needs of the organizations network."
-      isCorrect: false
-      explanation: "Network standards are designed to ensure that hardware and software made by different vendors work seamlessly together."
-    - content: "To ensure that hardware and software made by different vendors can work together seamlessly."
-      isCorrect: true
-      explanation: "Network standards are designed to ensure that hardware and software made by different vendors work seamlessly together."
 
   - content: "Which of these standards and protocols are used predominately for email?"
     choices:

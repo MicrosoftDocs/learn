@@ -2,14 +2,14 @@
 uid: learn.azure.network-fundamentals
 metadata:
   title: Networking Fundamentals - Principals
-  description: You'll learn the fundamental principals of computer networking to prepare you for the Azure Admin and Developer learning paths
-  ms.date: 06/01/2020
+  description: You'll learn the fundamental principals of computer networking to prepare you for the Azure Admin and Developer learning paths.
+  ms.date: 01/09/2020
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Networking Fundamentals - Principals
-summary: You'll learn the fundamental principals of computer networking to prepare you for the Azure Admin and Developer learning paths
+summary: You'll learn the fundamental principals of computer networking to prepare you for the Azure Admin and Developer learning paths.
 abstract: | 
   In this module, you will:
   - List the different network protocols and network standards

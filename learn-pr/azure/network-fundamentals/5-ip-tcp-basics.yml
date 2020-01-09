@@ -4,12 +4,11 @@ title: IP address standards and services
 metadata:
   title: IP address standards and services
   description: Explore the IP address standards and services to use when implementing an Internet-based network.
-  ms.date: 06/01/2020
+  ms.date: 01/09/2020
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 13
 content: |
   [!include[](includes/5-ip-tcp-basics.md)]
@@ -24,7 +23,7 @@ quiz:
     - content: "It is comprised of four hexadecimal numbers (0-F), each separated by a colon."
       isCorrect: false
       explanation: "An IPv4 address is made up of four numbers, each separated by a dot, for example, 192.168.0.1"
-    - content: "It is comprised of four numbers, in the range 0-255, each separated by a decimal."
+    - content: "It is comprised of four numbers, in the range 0-255, each separated by a dot."
       isCorrect: true
       explanation: "An IPv4 address is made up of four numbers, each separated by a dot, for example, 192.168.0.1"
   - content: "What is TCP/IP?"
@@ -71,14 +70,3 @@ quiz:
     - content: "The DNS helps resolve domain names to IP addresses."
       isCorrect: true
       explanation: "It is a hierarchical and decentralized naming system for computers, services, or other resources connected to the Internet or a private network."
-  - content: "What port number would you use for the FTP protocol?"
-    choices:
-    - content: "80"
-      isCorrect: false
-      explanation: "Port 80 is used for HTTP."
-    - content: "123"
-      isCorrect: false
-      explanation: "Port 123 is used for the Network Time Protocol."
-    - content: "20"
-      isCorrect: true
-      explanation: "Port 20 is used for File Transfer Protocol"
