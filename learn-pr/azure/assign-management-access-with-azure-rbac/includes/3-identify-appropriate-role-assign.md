@@ -51,6 +51,6 @@ The main difference between Azure RBAC roles and Azure AD roles is the area they
 
 There's a key area of overlap. An Azure AD Global Administrator can elevate their access to manage all Azure subscriptions and management groups. This access grants them the Azure RBAC User Access Administrator role for all subscriptions of their directory. The User Access Administrator role enables the Global Administrator to give other users access to Azure resources. In our scenario, you need to give full Azure RBAC management and billing privileges to a new manager. To achieve this, you'll temporarily elevate your access to include the User Access Administrator role. You can then grant the new manager the Owner role so that they can create and manage resources. You also set the scope to the subscription level, so that they can do this for all resources in the subscription.
 
-The following diagram shows what resources the Global Administrator has access to when their permissions are elevated to User Access Administrator.
+The following diagram shows what resources the Global Administrator can view when their permissions are elevated to User Access Administrator.
 
 ![Diagram that shows User Access Admin elevated privilege relationships](../media/2-globaladmin-user-access-admin.png)

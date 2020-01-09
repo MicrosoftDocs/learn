@@ -7,7 +7,7 @@ In this unit, you'll explore when you may need to elevate access.
 
 By default, the Global Administrator doesn't have access to Azure resources. The Global Administrator for Azure Active Directory (Azure AD) can temporarily elevate their permissions to the Azure role-based access control (Azure RBAC) role of *User Access Administrator*. This action grants the Azure RBAC permissions needed to manage Azure resources. The User Access Administrator is assigned at the scope of root. The role can view all resources, and assign access, in any subscription or management group in that Azure AD organization.
 
-The following diagram shows what resources the Global Administrator has access to when their permissions are elevated to User Access Administrator.
+The following diagram shows what resources the Global Administrator can view when their permissions are elevated to User Access Administrator.
 
 ![Diagram that shows User Access Admin elevated privilege relationships](../media/2-globaladmin-user-access-admin.png)
 
