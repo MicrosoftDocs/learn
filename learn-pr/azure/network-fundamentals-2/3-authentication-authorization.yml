@@ -4,7 +4,7 @@ title: Use authentication and authorization in your network
 metadata:
   title:  Use authentication and authorization in your network
   description: Understand how authentication and authorization can protect your network.
-  ms.date: 06/01/2020
+  ms.date: 01/09/2020
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial
@@ -26,6 +26,7 @@ quiz:
     - content: Authorization is the process of determining whether a client or user is indeed who they claim to be.
       isCorrect: false
       explanation: Authorization is about whether the user has the right permissions to access a resource or service.
+      
   - content: Which of following happens in the handshake process of SSL/TLS protocol?
     choices:
     - content: The server sends a "ServerHello" message back, and this message includes a session ID, the server's digital certificate, and its public key.

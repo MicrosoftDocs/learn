@@ -28,7 +28,7 @@ To monitor our network, we'll need to use a secure network management protocol t
 
 - **Simple Network Management Protocol (SNMP)**
 
-Like switches and routers, the majority of Linux servers and network devices use SNMP. An SNMP-based agent is usually already preinstalled on the device and allows for configuration. The SNMP agent collects things like traffic on our network switch, memory usage, or even printer queues. The SNMP protocol communicates information about our device to our network monitoring and management solution (NMS).
+Like switches and routers, the majority of Linux servers and network devices use SNMP. An SNMP-based agent is already preinstalled on the device and allows for configuration. The SNMP agent collects things like traffic on our network switch, memory usage, or even printer queues. The SNMP protocol communicates information about our device to our network monitoring and management solution (NMS).
 
 - **Windows Management Instrumentation (WMI)**
 
@@ -36,7 +36,7 @@ Windows devices use WMI to provide information about the status of our device. W
 
 - **System Logging Protocol (Syslog)**
 
-System Logging Protocol (Syslog) is a protocol that lets our device send event messages. Event logging uses Syslog. For example, our web server might use Syslog to log events about failed attempts to access it, or our router could log events on user activities.
+System Logging Protocol (Syslog) is a protocol that lets our device send event messages and is used for event logging. For example, our web server might use Syslog to log events about failed attempts to access it, or our router could log events on user activities.
 
 ## Best practices
 
@@ -46,11 +46,11 @@ When we manage a network, we deal with many different tasks and functions. These
 
 **Fault management** - Fault management relates to the processes and tasks used to identify and resolve faults on the network. Dealing with issues that could cause problems later is also classified as fault management.
 
-**Configuration management** - Configuration management includes aspects like collecting information on the changes made to the configurations of our devices and making our configuration updates.
+**Configuration management** - Configuration management includes aspects like collecting information based on changes made to the configurations of devices, physical hardware, and network changes as well as software updates.
 
-**Accounting/administration** - Accounting applies when dealing with a network used as a service provider, and all the tasks and functions that apply. With service provider networks, usage needs to be monitored to track utilization and billed correctly. Any of the tasks involving usage and billing monitoring is included. If the network isn't a service provider, the administration is applicable, and tasks like managing permissions and user passwords are included.
+**Accounting/administration** - Accounting applies when we're dealing with a network used in a service provider setting, and all the tasks and functions that apply. With service provider networks, usage needs to be monitored to track utilization and billing for users. If the network isn't in a service provider setting, then administration is applicable, and tasks like managing permissions and user passwords are included.
 
-**Performance management** - Performance management covers anything that's done to manage the performance of our network. The list includes monitoring throughput, usage, improving response times, and more.
+**Performance management** - Performance management covers anything that's done to manage the performance of our network. Some of the aspects include monitoring throughput, usage, improving response times, and more.
 
 **Security** - Security encompasses all the tasks we do to secure our network. These tasks include protecting devices, restricting access to network resources, or protecting user activity in the network.
 
@@ -62,7 +62,9 @@ Here are some of the Azure network monitoring solutions we can use for reporting
 
 **Azure Monitor**
 
-Azure Monitor is a unifying solution that collects log data for analysis, helping us take appropriate action for resources across our on-premises and Azure networks. Azure Monitor varies in the scope of its capabilities. For example, Azure Monitor uses its integration with Application Insights to check and diagnose any risks and issues in our applications and their dependencies. We use Azure Monitor to configure alerts before taking further action.
+Azure Monitor is a unifying solution that collects log data for analysis, helping us take appropriate action for resources across our on-premises and Azure networks. Azure Monitor varies in the scope of its capabilities. For example, Azure Monitor uses its integration with Application Insights to check and diagnose any risks and issues in our applications and their dependencies.
+
+We use Azure Monitor to configure alerts to notify us about potential problems. These alerts allow us to take further action, when needed, to rectify potential problems in our network environment.
 
 ![Configuring an alert](../media/5-alerts.png)
 

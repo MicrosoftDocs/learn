@@ -113,7 +113,7 @@ A **proxy server firewall** controls the information that goes into and out of a
 
 **Stateful firewalls and next-generation firewalls**. Stateful firewalls inspect characteristics about the connections on our network. The firewall also monitors packets over time and stores a combination of this information in a state table. When a connection and packet match aren't recognized, based on the information held in the table, traffic is blocked.
 
-![A diagram showing how a stateful firewall blocks requests](../media/4-stateful-firewall.svg)
+![A diagram showing how a stateful firewall block requests](../media/4-stateful-firewall.svg)
 
 **Next-generation firewalls** do many of the same functions as stateful firewalls. But they can encompass more functions from other types of firewalls such as packet filtering, VPN support, and more. This type of firewall also investigates packets more thoroughly when compared to stateful firewalls. For example, a next-generation firewall could look at the payload for each packet and inspect it for suspicious characteristics and malware.
 
@@ -154,7 +154,7 @@ We can also set up a **Point-to-Site VPN** connection between Azure and our on-p
 
 There's much we can do to improve network security on Azure. Below are a few of the things we should consider implementing.
 
-Use **Azure network security appliances**, developed by Microsoft partners on the Azure marketplace, to improve network security. This range of appliances provides a number of functions including:
+Use **Azure network security appliances**, developed by Microsoft partners on the Azure Marketplace, to improve network security. This range of appliances provides a number of functions including:
 
 - Detecting anomalies on our network
 - Identifying and rectifying vulnerabilities

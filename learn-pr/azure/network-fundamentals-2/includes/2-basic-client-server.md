@@ -4,7 +4,7 @@ In this unit, you'll get a better understanding of the various client options. Y
 
 ## Network clients
 
-In the traditional sense, a network client was a light-weight computer or device that was unable to run programs on their own. This type of client was typically used to access and interact with a mainframe computer. The client has transformed from a simple terminal as technology advanced. It now can represent any hardware or software system that interacts with services made available on a server. This server is usually located elsewhere and is accessed via a network.
+In the traditional sense, a network client was a light-weight computer or device that was unable to run programs on their own. This type of client was typically used to access and interact with a mainframe computer. The client has transformed from a simple terminal as technology advanced. It now can represent any hardware or software system that interacts with services made available on a server. This server is located elsewhere and is accessed via a network.
 
 A client would be considered as part of a client-server model, a model that is in use today.
 
@@ -63,7 +63,7 @@ There are several advantages that a client-server provides an organization. We f
 - All users are centrally managed, governing access and control to your servers and their services.
 - If your server architecture is design to scale, there will never be any performance issues when user usage increases.
 - All data can be stored and accessed centrally, which reduces the likelihood of data duplication.
-- Data is easier safe guarded with centralized storage of data to tape or other back-up mediums.
+- Data is easier safeguarded with centralized storage of data to tape or other backup mediums.
 
 ### Disadvantages of client-server networks
 
@@ -82,6 +82,6 @@ Another common network architecture type is the peer-to-peer network. Peer-to-pe
 
 Azure has several tools that can help with the configuration and management of clients and servers in your network. Here is a brief overview of some of the more common Azure tools.
 
-- **Azure Resource Manager** - It's a management service that provides a means to organize and secure your organization's assets and resources. It uses declarative templates to manage your infrastructure. It uses Role-Based Access Control to improve the security and access to your assets and resources.
+- **Azure Resource Manager** - It's a management service that provides a means to organize and secure your organization's assets and resources. It uses declarative templates to manage your infrastructure. It uses Role-Based Access Control (RBAC) to improve the security and access to your assets and resources.
 
 - **Azure VM** - Azure Virtual Machines are the perfect mechanism for implementing a server without the need to purchase and house server hardware. Virtualization provides the flexibility to have multiple dedicated servers all within a cloud environment. Azure VMs will work with both the cloud and your on-premises network. Azure VMs are scalable, and will dynamically adapt to meet your organization's needs as you grow.
