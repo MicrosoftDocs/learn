@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.build-api-azure-functions.7-ex-customizing-function-http-request-methods
+title: Exercise - Customizing function HTTP request methods
+metadata:
+  title: Exercise - Customizing function HTTP request methods
+  description: Exercise - Customizing function HTTP request methods
+  ms.date: 01/09/2020
+  author: burkeholland
+  ms.author: buhollan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+  zone_pivot_groups: azure-interface
+durationInMinutes: 10
+content: |
+  [!include[](includes/7-ex-customizing-function-http-request-methods.md)]
