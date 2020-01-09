@@ -3,7 +3,7 @@ uid: learn-pr.wwl.planning-implementing-sap-solutions-azure.azure-vm-high-availa
 title: Azure VM high availability and disaster recovery for SAP workloads
 metadata:
   title: Azure VM high availability and disaster recovery for SAP workloads
-  description: Azure VM high availability and disaster recovery for SAP workloads
+  description: "Azure VM high availability and disaster recovery for SAP workloads"
   ms.date: 12/20/2019
   author: wwlpublish
   ms.author: bradj
