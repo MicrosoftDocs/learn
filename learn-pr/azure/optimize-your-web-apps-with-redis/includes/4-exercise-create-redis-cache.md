@@ -6,7 +6,7 @@ Let's create an Azure Cache for Redis instance to store and return commonly used
 
 1. On the Azure portal menu, select **Create a resource**.
 
-![[Create a resource from Azure portal menu](../media/4-create-a-resource-redis-cache.png)
+    ![Create a resource from Azure portal menu](../media/4-create-a-resource-redis-cache.png)
 
 1. Select **Databases**, and then **Azure Cache for Redis**.
 
@@ -26,7 +26,7 @@ Apply the following settings on the cache.
 
 1. **Location:** Normally, you would select a location near your customers - in this case, the East Coast. For this exercise, you can select any available location.
 
-5. **Pricing tier:** Select **Basic C0**. This is the lowest tier you can use. Production apps would likely want to store more data and utilize some of the Premium features such as clustering which would require a higher tier selection.
+1. **Pricing tier:** Select **Basic C0**. This is the lowest tier you can use. Production apps would likely want to store more data and utilize some of the Premium features such as clustering which would require a higher tier selection.
 
 1. Click **Create**. Azure will create and deploy the Redis Cache instance for you.
 
