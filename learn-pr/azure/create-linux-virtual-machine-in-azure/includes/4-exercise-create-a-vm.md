@@ -6,7 +6,7 @@ We can create Linux VMs with the Azure portal, the Azure CLI, or Azure PowerShel
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-1. Click **Create a resource** in the upper-left corner of the Azure portal.
+1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
 
 1. In the search box, enter  **Ubuntu Server**. 
 1. Under the **Marketplace** result, select the **All results** link on the top right-hand side to see the different versions available. 
