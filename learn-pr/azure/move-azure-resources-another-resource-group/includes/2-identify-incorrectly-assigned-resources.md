@@ -18,7 +18,7 @@ You might need to change who's billed for resources in resource groups. You can 
 
 To help identify and organize your resource groups, use a consistent naming convention. For example, you might have a resource group named "project-infrastructure-resource-group" to denote that it's a resource group for a certain project's infrastructure.
 
-## Navigate resource groups
+## Find resource groups
 
 Find resource groups in the Azure portal by selecting **Resource Groups** from the left-hand side. You'll see a list of all your resource groups.
 

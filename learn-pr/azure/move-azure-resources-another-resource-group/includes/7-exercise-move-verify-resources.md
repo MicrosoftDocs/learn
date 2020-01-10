@@ -34,7 +34,7 @@ Now that you've created a devgroup resource group, you can move your development
 1. Select the reminder for you to update the resource IDs in your tools and scripts.
 1. Select **OK**.
 
-The move may take a few minutes. Wait for the notification that your resource has been moved. The notification will appear in the top-right hand of the portal.
+The move might take a few minutes. Wait for the notification that your resource has been moved. The notification will appear in the top-right hand of the portal.
 
 Repeat this process again to move the other storage account.
 

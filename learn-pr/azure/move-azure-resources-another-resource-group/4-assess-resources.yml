@@ -19,10 +19,10 @@ quiz:
     choices:
     - content: Azure Active Directory Domain Services
       isCorrect: true
-      explanation: According to the move operation support list, Azure AD Domain Services can't be moved. 
+      explanation: According to the move operation support list, Azure AD DS can't be moved. 
     - content: Azure Storage accounts
       isCorrect: false
-      explanation: According to the move operation support list, Azure Storage Accounts can be moved.
+      explanation: According to the move operation support list, Azure Storage accounts can be moved.
     - content: Azure virtual machines
       isCorrect: false
       explanation: According to the move operation support list, Azure virtual machines can be moved.
