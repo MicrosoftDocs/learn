@@ -20,7 +20,7 @@ Mara, excited to share her results, tracks down Amita to show her the build pipe
 
 Consider the following tasks that build and publish the *Space Game* web project's Release configuration. (Don't add this code to your *azure-pipelines.yml* file.)
 
-[!code-yml[](code/8-azure-pipelines-partial-release.yml?highlight=5,8,12,17)]
+[!code-yml[](code/8-azure-pipelines-partial-release.yml?highlight=5,9,14)]
 
 To build the Debug configuration, you might repeat these two tasks, but replace `Release` with `Debug`.
 

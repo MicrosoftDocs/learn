@@ -80,11 +80,11 @@ Take a moment to examine *azure-pipelines.yml*. Notice that these values are rep
 * The location of the **wwwroot** directory: `Tailspin.SpaceGame.Web/wwwroot`
 * The .NET Core SDK version: `2.1.505`
 
-You'll now use variables to define these values one time. You'll then reference the variables throughout the pipeline.
+You now use variables to define these values one time. You then reference the variables throughout the pipeline.
 
 1. In Visual Studio Code, modify *azure-pipelines.yml* as you see here:
 
-    [!code-yml[](code/7-azure-pipelines-2.yml?highlight=9-12,42,44,49,54,25,33,16,18)]
+    [!code-yml[](code/7-azure-pipelines-2.yml?highlight=9-12,42,45,49,54)]
 
     Notice the `variables` section, which defines these variables:
 
