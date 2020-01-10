@@ -16,7 +16,7 @@ abstract: |
   - Explore the distinctiveness of Azure for SAP HANA as an offer that sets Azure apart.
 prerequisites: |
   Prior to taking this course, it is recommended that you have taken the Azure Administrator (AZ-103) exam, as well as SAP HANA or NetWeaver training.
-iconUrl: /learn/achievements/Introduction-to-azure-for-sap-workloads.svg
+iconUrl: /learn/achievements/introduction-azure-sap-workloads.svg
 levels:
 - advanced
 roles:
