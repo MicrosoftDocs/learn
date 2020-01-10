@@ -4,7 +4,7 @@
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-1. Select the **Create a resource** button found on the upper left-hand corner of the Azure portal, and then select **Compute** > **Function App**.
+1. On the Azure portal menu or from the **Home** page, select **Create a resource**, and then select **Compute** > **Function App**.
 
 1. Enter the function app settings as specified in the following table.
 

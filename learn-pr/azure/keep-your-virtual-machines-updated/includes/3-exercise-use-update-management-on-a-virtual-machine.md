@@ -5,8 +5,8 @@
 Here you will create a new virtual machine to serve as a web server for the local media.
 
 1. Sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true).
-2. In the left navigation pane, click **Create a resource**.
-3. In the **New** pane, click **Windows Server 2016 Datacenter**.
+2. On the Azure portal menu or from the **Home** page, select **Create a resource**.
+3. In the **New** pane, select **Windows Server 2016 Datacenter**.
 4. Enter the following values in the **Create a virtual machine** window:
 
     | Field                | Value                                                    |
@@ -25,17 +25,17 @@ Here you will create a new virtual machine to serve as a web server for the loca
 
 ![Select Public Inbound Ports](../media/3-public-inbound-ports-edited.png "Select Public Inbound Ports")
 
-6. Click **Review + create** and then click **Create**. Wait for the VM to be created. You can click the Bell icon in the upper right corner of the portal to monitor the progress.
+6. Select **Review + create** and then select **Create**. Wait for the VM to be created. You can select the Bell icon in the upper right corner of the portal to monitor the progress.
 
 ## Onboard Update Manager to the VM
 
 Here you'll enable Update Manager on the virtual machine you created.
 
-1. In the left pane, click **Virtual machines**.
+1. In the left pane, select **Virtual machines**.
 2. In the **Virtual machines** pane, select the virtual machine from the list. In this example, select **MediaWebServer**.
-3. In the MediaWebServer pane, scroll down the list to **Operations**, and then click **Update management**.
-4. In the **Update Management** pane, ensure that the **Enable for this VM** radio button is selected. Note that a default **Log Analytics workspace** and **Automation account** will be created. Accept the remaining defaults, and then click **Enable**.
-5. In the upper left corner, click the Notification bell and wait for deployment to finish.
+3. In the MediaWebServer pane, scroll down the list to **Operations**, and then select **Update management**.
+4. In the **Update Management** pane, ensure that the **Enable for this VM** radio button is selected. Note that a default **Log Analytics workspace** and **Automation account** will be created. Accept the remaining defaults, and then select **Enable**.
+5. In the upper left corner, select the Notification bell and wait for deployment to finish.
 6. When Update Management deployment has completed, the Update Management menu will appear as shown below.
 
 ![Update Management Deployment Complete](../media/3-update-management-deployment-complete-edited.png "Update Management Deployment Complete")
@@ -49,10 +49,10 @@ Here you'll enable Update Manager on the virtual machine you created.
 
 ## Examine Hybrid Worker Groups
 
-1. In the left navigation pane, click **All resources**.
-1. In the **All resources** pane, examine the **TYPE** column to find the resource of type **Automation Account**, and then click the Automation account.
-1. In the Automation account pane, scroll down to the **Process Automation** section and in there, click **Hybrid worker groups**.
-1. In the Hybrid worker groups pane, click the **System hybrid worker groups** tab.
+1. On the Azure portal menu or from the **Home** page, select **All resources**.
+1. In the **All resources** pane, examine the **TYPE** column to find the resource of type **Automation Account**, and then select the Automation account.
+1. In the Automation account pane, scroll down to the **Process Automation** section and in there, select **Hybrid worker groups**.
+1. In the Hybrid worker groups pane, select the **System hybrid worker groups** tab.
 1. The virtual machine you created is listed as shown below. 
 
 ![Hybrid Worker Group](../media/3-hybrid-worker-group.png "Hybrid Worker Group")

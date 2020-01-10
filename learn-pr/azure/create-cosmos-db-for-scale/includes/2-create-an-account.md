@@ -21,9 +21,13 @@ You can optionally set up virtual networks and geo-redundancy during account cre
     > [!IMPORTANT]
     > Login to the Azure portal using the link above to ensure you are connected to the sandbox, which provides access to a Concierge Subscription.
 
-1. Click **Create a resource** > **Databases** > **Azure Cosmos DB**.
+1. On the Azure portal menu, select **Create a resource**.
 
-   ![The Azure portal Databases pane](../media/2-create-nosql-db-databases-json-tutorial.png)
+   ![Create a resource from Azure portal menu](../media/2-create-a-resource-azure-cosmos-db.png)
+
+1. Select **Databases** > **Azure Cosmos DB**.
+
+   ![Select Azure Cosmos DB](../media/2-select-database-azure-cosmos-db.png)
 
 1. On the **Create Azure Cosmos DB Account** page, enter the settings for the new Azure Cosmos DB account, including the location.
 
@@ -42,6 +46,8 @@ You can optionally set up virtual networks and geo-redundancy during account cre
 1. Click **Review + Create**.
 
     ![The new account page for Azure Cosmos DB](../media/2-azure-cosmos-db-create-new-account.png)
+
+    Prices in images are for example purposes only.
 
 1. After the settings are validated, click **Create** to create the account.
 
