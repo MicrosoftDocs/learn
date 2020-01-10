@@ -25,6 +25,10 @@ roles:
 products:
 - azure
 - azure-monitor
+- azure-sentinel
+- azure-service-health
+- azure-security-center
+- azure-application-insights
 units:
 - learn.design-monitoring-strategy-on-azure.1-introduction
 - learn.design-monitoring-strategy-on-azure.2-continuous-monitoring

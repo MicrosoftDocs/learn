@@ -70,7 +70,7 @@ The command can take a few minutes to finish. Wait for it to finish before you m
 
 ### Enable backup for a virtual machine by using the Azure portal
 
-1. Select **All Services**, and then search for and select **Virtual Machines**.
+1. In the Azure portal, search for and select **Virtual machines**.
 
     ![Screenshot that shows searching for virtual machines](../media/4-portal-vms.png)
 
@@ -148,7 +148,9 @@ The command can take a few minutes to finish. Wait for it to finish before you m
 
 ### View the status of a backup for a single virtual machine
 
-1. Sign in to the [Azure portal](https://portal.azure.com/), and select **All resources** on the left of the portal.
+1. Sign in to the [Azure portal](https://portal.azure.com/).
+
+1. On the Azure portal menu or from the **Home** page, select **All resources**.
 
 1. Select the **NW-APP01** virtual machine.
 
@@ -160,7 +162,9 @@ The command can take a few minutes to finish. Wait for it to finish before you m
 
 ### View the status of backups in the Recovery Services vault
 
-1. Sign in to the [Azure portal](https://portal.azure.com/), and select **All resources** on the left of the portal.
+1. Sign in to the [Azure portal](https://portal.azure.com/).
+
+1. On the Azure portal menu or from the **Home** page, select **All resources**.
 
 1. Select the **azure-backup** Recovery Services vault.
 

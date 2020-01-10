@@ -41,7 +41,7 @@ Now, let's create the load balancer.
 
 1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **Create a resource**.
 
-1. Im the **Search the Marketplace** field, search for and select **Load Balancer**. Then, select **Create**.
+1. In the **Search the Marketplace** field, search for and select **Load Balancer**. Then, select **Create**.
 
     ![Create a Load Balancer instance in the Azure portal](../media/4-create-lb.png)
 

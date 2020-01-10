@@ -158,7 +158,9 @@ Now let's add to the application the code to retrieve course data from the datab
     }
     ```
 
-1. Leave the code editor open, and switch to the Azure portal. In the pane on the left side, click **SQL databases**, and select your database.
+1. Leave the code editor open, and switch to the Azure portal. 
+
+1. On the Azure portal menu, select **SQL databases**, and select your database.
 
 1. Under **Settings**, select **Connection strings**. Copy the **ADO.NET** connection string to the clipboard.
 
