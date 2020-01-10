@@ -8,12 +8,11 @@ Dashboards give you considerable flexibility regarding how you manage Azure. For
 
 Dashboards are stored as JavaScript Object Notation (JSON) files. This format means they can be uploaded and downloaded to other computers, or shared with members of the Azure directory. Azure stores dashboards within resource groups, just like virtual machines or storage accounts that you can manage within the portal.
 
-> [!TIP]
-> Because dashboards are JSON files, you can also [customize them programmatically](https://docs.microsoft.com/azure/azure-portal/azure-portal-dashboards-create-programmatically), making them compelling administrative tools. Also, some tile types can be query-based, so they update automatically when the source data changes.
+Because dashboards are JSON files, you can also [customize them programmatically](https://docs.microsoft.com/azure/azure-portal/azure-portal-dashboards-create-programmatically), making them compelling administrative tools. Also, some tile types can be query-based, so they update automatically when the source data changes.
 
 ## Explore the default dashboard
 
-The default dashboard is named "Dashboard". When you log into the portal for the first time, you are presented with this dashboard containing five tiles.
+The default dashboard is named "Dashboard". When you log into the portal for the first time and select **Dashboard** from the portal menu, you are presented with this dashboard containing five tiles.
 
 ![Screenshot showing the default dashboard with different parts numbered and highlighted.](../media/6-dashboard-default-webparts.png)
 

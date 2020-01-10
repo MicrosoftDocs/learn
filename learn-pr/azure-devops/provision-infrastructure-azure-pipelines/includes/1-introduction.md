@@ -1,8 +1,8 @@
-This module is about expressing your infrastructure requirements as code. You can then automatically provision the infrastructure that you need for your application or service.
+This module is about expressing your infrastructure requirements as code. By adopting this practice, you can automatically provision the infrastructure that you need for your application or service.
 
 In the [Deploy applications with Azure DevOps](https://docs.microsoft.com/learn/paths/deploy-applications-with-azure-devops?azure-portal=true) learning path, you built a release pipeline in Azure Pipelines. You deployed a web application to Azure App Service instances that you brought up manually through the Azure portal and through the Azure CLI.
 
-Keeping up with changes in your infrastructure is a challenge. New resources need to be built. Old resources need maintenance. And environments need to be consistent. _Infrastructure as code_ enables you to describe, through code, the infrastructure that you need for your application.
+Keeping up with changes in your infrastructure is a challenge. New resources need to be built. Old resources need maintenance. Environments need to be consistent. _Infrastructure as code_ enables you to describe, through code, the infrastructure that you need for your application.
 
 The Tailspin team is making great progress. But how can they further automate their processes to allow them to scale and release even faster?
 
@@ -32,7 +32,7 @@ If you want to start with this learning path, you need to set up a development e
 * An [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true)
 * A [GitHub](https://github.com/join?azure-portal=true) account
 * [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
-* [.NET Core 2.1](https://www.microsoft.com/net/download?azure-portal=true)
+* [.NET Core 2.1](https://dotnet.microsoft.com/download/dotnet-core/2.1?azure-portal=true)
 * [Git](https://git-scm.com/downloads?azure-portal=true)
 
 You can get started with Azure and Azure DevOps for free. You don't need an Azure subscription to work with Azure DevOps, but here you'll use Azure DevOps to deploy to resources that exist in your Azure subscription.

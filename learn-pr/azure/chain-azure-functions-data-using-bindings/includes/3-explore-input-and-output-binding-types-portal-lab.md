@@ -22,7 +22,9 @@ Let's create a function app that we'll use throughout this entire module. A func
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-1. Select the **Create a resource** button found on the upper left-hand corner of the Azure portal, then select **Compute** > **Function App**.
+1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
+
+1. Select **Compute** > **Function App**.
 
 1. Set the function app properties as follows:
 
@@ -48,7 +50,7 @@ Let's create a function app that we'll use throughout this entire module. A func
  1. Once the function app is deployed, go to **All resources** in the portal. The function app will be listed with type **App Service** and has the name you gave it. Select the function app from the list to open it.
 
     >[!TIP]
-    >If you are having trouble finding your function apps in the portal, find out how to [add function apps to your favorites in the portal](https://docs.microsoft.com/azure/azure-functions/functions-how-to-use-azure-function-app-settings#favorite).
+    >If you are having trouble finding your function apps in the portal, find out how to [add function apps to your favorites in the portal](https://docs.microsoft.com/azure/azure-functions/functions-how-to-use-azure-function-app-settings).
 
 ::: zone-end
 
@@ -56,7 +58,9 @@ Let's create a function app that we'll use throughout this entire module. A func
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-1. Select the **Create a resource** button found on the upper left-hand corner of the Azure portal, then select **Compute** > **Function App**.
+1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
+
+1. Select **Compute** > **Function App**.
 
 1. Set the function app properties as follows:
 
@@ -82,7 +86,7 @@ Let's create a function app that we'll use throughout this entire module. A func
  1. Once the function app is deployed, go to **All resources** in the portal. The function app will be listed with type **App Service** and has the name you gave it. Select the function app from the list to open it.
 
     >[!TIP]
-    >If you are having trouble finding your function apps in the portal, find out how to [add function apps to your favorites in the portal](https://docs.microsoft.com/azure/azure-functions/functions-how-to-use-azure-function-app-settings#favorite).
+    >If you are having trouble finding your function apps in the portal, find out how to [add function apps to your favorites in the portal](https://docs.microsoft.com/azure/azure-functions/functions-how-to-use-azure-function-app-settings).
 
 ::: zone-end
 

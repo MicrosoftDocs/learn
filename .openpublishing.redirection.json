@@ -544,6 +544,31 @@
       "source_path": "learn-pr/wwl-mba/welcome-to-azure-generalist/2-executive-welcome.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-to-azure-solutions/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-an-azure-account/3b-transfer-account.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-an-azure-account",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-an-azure-account/3a-multiple-subscriptions.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-an-azure-account",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-an-azure-account/4-azure-tenants.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-an-azure-account",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-an-azure-account/6-support-options.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-an-azure-account",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/keep-your-virtual-machines-updated/6-knowledge-check.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/keep-your-virtual-machines-updated",
+      "redirect_document_id": false
     }
   ]
 }

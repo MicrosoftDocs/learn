@@ -2,7 +2,7 @@
 uid: learn.azure-create-long-running-serverless-workflow-with-durable-functions
 metadata:
   title: Create a long-running serverless workflow with Durable Functions
-  description: Learn how to orchestrate a long-running workflow as a set of activities using Durable Functions. 
+  description: Learn how to orchestrate a long-running workflow as a set of activities using scalable and cost-effective Durable Functions.
   ms.date: 04/24/2019
   author: rmcmurray
   ms.author: robmcm

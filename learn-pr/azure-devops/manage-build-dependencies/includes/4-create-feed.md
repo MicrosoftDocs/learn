@@ -2,10 +2,10 @@ In this part, you'll set up Azure Artifacts and create a new feed. You'll use th
 
 ## Set up Azure Artifacts
 
-1. From Azure DevOps, go to the **Artifacts** tab, and then select **+ New feed**.
+1. From Azure DevOps, go to the **Artifacts** tab, and then select **+ Create feed**.
     1. Name the feed **Tailspin.SpaceGame.Web.Models**.
-    1. Under **Visibility**, keep **People in your organization**.
-    1. Under **Packages from public sources**, choose **Only use packages published to this feed**.
+    1. Under **Visibility**, check **Members of (your organization)**.
+    1. Under **Upstream sources**, un-check **Include packages from common public sources**.
 
         The other choice, to use public sources, is if you want to create an *upstream* from this feed. That is, you can access your packages and packages from public package managers like NuGet or npmjs from this feed.
 

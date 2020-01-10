@@ -39,7 +39,7 @@ In a typical Azure network design, we usually have these components:
 
 ![Typical Azure network design](../media/2-azure-network.png)
 
-In Azure, the network design has features and functions that are to an on-premises network, but the structure of the network is different. The Azure network does not follow the typical on-premises hierarchical network design. The Azure network provides the ability to scale up and scale down infrastructure based on demand. Provisioning in the Azure network happens in a matter of seconds. There are no hardware devices, like routers or switches. The entire infrastructure is virtual and you slice it into chunks that suit your requirements.
+In Azure, the network design has features and functions that are similar to an on-premises network, but the structure of the network is different. The Azure network does not follow the typical on-premises hierarchical network design. The Azure network provides the ability to scale up and scale down infrastructure based on demand. Provisioning in the Azure network happens in a matter of seconds. There are no hardware devices, like routers or switches. The entire infrastructure is virtual and you slice it into chunks that suit your requirements.
 
 In Azure, you typically would implement a network security group and a firewall. You use subnets to isolate front-end services, including web servers and DNS, and back-end services like databases and storage systems. Network security groups filter internal and external traffic at the network layer. A firewall has more extensive capabilities for network layer filtering and application layer filtering. By deploying both network security groups and a firewall, you get improved isolation of resources for a secure network architecture.
 

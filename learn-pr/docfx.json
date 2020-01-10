@@ -176,6 +176,19 @@
                 "dest": "modules"
             },
             {
+                "src": "windows",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },
+            {
                 "src": "wwl-mba",
                 "files": [
                     "**/*.yml",
@@ -201,6 +214,45 @@
                 ],
                 "dest": "modules"
             },
+            {
+                "src": "wwl-data-ai",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },
+            {
+                "src": "wwl-azure",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },  
+            {
+                "src": "xamarin",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },                    
             {
                 "files": [
                     "**/*.md",
@@ -407,26 +459,31 @@
                     "tr-tr",
                     "sv-se"
                 ],
-                "iot/**/*.yml": [
+                "windows/**/*.yml": [
                     "de-de",
                     "es-es",
                     "fr-fr",
                     "it-it",
-                    "ru-ru",
+                    "ja-jp",
+                    "ko-kr",
                     "pt-br",
+                    "ru-ru",
+                    "zh-cn",
+                    "zh-tw"
+                ],
+                "wwl-mba/**/*.yml": [
                     "ja-jp",
                     "ko-kr",
                     "zh-cn",
-                    "zh-tw",
-                    "cs-cz",
-                    "hu-hu",
-                    "nl-nl",
-                    "pl-pl",
-                    "pt-pt",
-                    "tr-tr",
-                    "sv-se"
+                    "zh-tw"
                 ],
-                "wwl-mba/**/*.yml": [
+                "wwl-data-ai/**/*.yml": [
+                    "ja-jp",
+                    "ko-kr",
+                    "zh-cn",
+                    "zh-tw"
+                ],
+                "wwl-azure/**/*.yml": [
                     "ja-jp",
                     "ko-kr",
                     "zh-cn",
@@ -435,6 +492,18 @@
                 "wwl/**/*.yml": [
                     "ja-jp",
                     "ko-kr",
+                    "zh-cn",
+                    "zh-tw"
+                ],
+                "xamarin/**/*.yml": [
+                    "de-de",
+                    "es-es",
+                    "fr-fr",
+                    "it-it",
+                    "ja-jp",
+                    "ko-kr",
+                    "pt-br",
+                    "ru-ru",
                     "zh-cn",
                     "zh-tw"
                 ]

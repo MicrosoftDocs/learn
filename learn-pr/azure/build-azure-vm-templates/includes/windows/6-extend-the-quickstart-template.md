@@ -20,7 +20,7 @@ Here you'll download the template and modify it.
     code azuredeploy.json
     ```
 
-1. In the file, locate the `resources` section. Add the Custom Script Extension resource you built in the previous part to the top of this section, then save the file.
+1. In the file, locate the `resources` section. Add the Custom Script Extension resource you built in the previous part to the top of this section.
 
     Here's the code as a refresher.
 
@@ -51,16 +51,31 @@ Here you'll download the template and modify it.
     ```
 
     Note the comma `,` character at the end, which is needed to separate resources. The order you define resources doesn't matter, but here you add it to the top for simplicity.
+1. In the file, locate the `securityRules` under the`resources` section. Add in a section to open port 80.
 
-    If you get stuck or want to compare your work, you can download the resulting file from GitHub.
+    ```json
+          {
+            "name": "allow_80",
+            "properties": {
+              "priority": 101,
+              "access": "Allow",
+              "direction": "Inbound",
+              "destinationPortRange": "80",
+              "protocol": "Tcp",
+              "sourcePortRange": "*",
+              "sourceAddressPrefix": "Internet",
+              "destinationAddressPrefix": "*"
+            }
+          }    
+    ```    
+1. If you get stuck or want to compare your work, you can download the resulting file from GitHub.
 
     ```bash
     curl https://raw.githubusercontent.com/MicrosoftDocs/mslearn-build-azure-vm-templates/master/windows/azuredeploy.json > azuredeploy.json
     ```
 
-    You're all done editing files. Ensure that you saved changes to **azuredeploy.json** and then close the editor.
-
-    To close the editor, click the ellipses in the corner and then select **Close Editor**.
+1. You're all done editing files. Select the ellipses in the corner and **Save**.
+1. To close the editor, click the ellipses in the corner and then select **Close Editor**.
 
 ## Verify the template
 

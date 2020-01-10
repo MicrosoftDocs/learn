@@ -6,7 +6,7 @@ The following diagram shows an example of creating a hierarchy for governance us
 
 ![Image showing Azure Management Groups as a tree graph of relationships](../media/4-management-groups-tree.png)
 
-Create a hierarchy so you can apply a policy, for example, limit VM locations to US West Region on the group "Infrastructure Team management group". This policy will inherit onto both EA subscriptions under that management group and will apply to all VMs under those subscriptions. This security policy cannot be altered by the resource or subscription owner allowing for improved governance.
+Create a hierarchy so you can apply a policy that, for example, limits VM locations to the US West Region for the "Geo Region 1" group. This policy will inherit onto both EA subscriptions under that management group and will apply to all VMs under those subscriptions. This security policy cannot be altered by the resource or subscription owner allowing for improved governance.
 
 Another scenario where you would use management groups is to provide user access to multi subscriptions. By moving many subscriptions under that management group, you can create one role-based access control (RBAC) assignment on the management group, which will inherit that access to all the subscriptions. One assignment on the management group can enable users to have access to everything they need instead of scripting RBAC rules over different subscriptions.
 

@@ -108,7 +108,7 @@ Grant
 
 ### Step 7: Initialize the variable.
 
-You must set variable to a value before you can get the value from the variable.  Otherwise, you'll see an error.
+You must set a variable to a value before you can get the value from the variable.  Otherwise, you'll see an error.
 
 Modify the code you wrote in Step 6 to match the following code:
 
@@ -146,6 +146,6 @@ Here's the main takeaways you learned about working with variables so far:
 
 - You must assign (set) a value to a variable before you can retrieve (get) a value from a variable
 - You can initialize a variable by assigning a value to the variable at the point of declaration
-- Assignment happens from left to right
+- Assignment happens from right to left
 - You use a single equals character as the assignment operator
 - To retrieve the value from the variable, you merely use the variable's name

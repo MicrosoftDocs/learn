@@ -1,0 +1,33 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-admin.cmu-cloud-elasticity.3-auto-scaling
+title: Automated scaling on the cloud
+metadata:
+  title: Automated scaling on the cloud
+  description: Automated scaling on the cloud
+  ms.date: 12/31/2019
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-auto-scaling.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+    - content: "You are a cloud administrator in charge of ensuring that your organization's public-facing web site remains fast and responsive at all times. The site is hosted in an Azure App Service. It sees the heaviest traffic between 8:00 a.m. and 5:00 p.m. each day, but the load is somewhat inconsistent from one day to the next. In addition, it experiences infrequent burst loads with up to 10 times the normal traffic. These bursts are difficult to predict, but slow the site to a crawl if additional resources aren't brought online rather quickly. What approach would provide the best balance between responsiveness and cost?"
+      choices:
+      - content: "Scheduled auto-scaling"
+        isCorrect: false
+        explanation: "Incorrect. Scheduled auto-scaling enables the site to scale to meet demand during working hours, but it doesn't address unpredictable spikes in traffic."
+      - content: "Auto-scaling based on a key metric such as CPU utilization or request rate"
+        isCorrect: true
+        explanation: "Correct! Properly configured, metrics-based auto-scaling makes sure that the site is scaled the right amount for cyclical loads as well as burst loads."
+      - content: "A combination of scheduled scaling and metrics-based scaling"
+        isCorrect: false
+        explanation: "Incorrect. It is possible to combine scheduled scaling and metrics-based scaling, but since the load during working hours varies each day, you are better off using metrics to determine how to scale for the cyclical loads the site experiences."
+      - content: "Manual scaling"
+        isCorrect: false
+        explanation: "Incorrect. Manual scaling increases administrative costs and is less reliable than auto-scaling."
+    

@@ -2,7 +2,7 @@
 uid: learn-wwl.microsoft-cloud-adoption-framework-for-azure-v1-1
 metadata:
   title: Microsoft Cloud Adoption Framework for Azure
-  description: This module covers the basics of how to use the Cloud Adoption Framework—a set of documentation, implementation guidance, best practices, and tools that aid in aligning the strategy for business, people, and technology to enable the desired business outcomes guiding the cloud journey. We’ll describe how to identify opportunities and develop a strategy based on real-world examples of cloud adoption.
+  description: Learn how to use the Cloud Adoption Framework to develop best practices for cloud adoption in real-world scenarios.
   ms.date: 11/13/2019
   author: wwlpublish
   ms.author: a-drapos

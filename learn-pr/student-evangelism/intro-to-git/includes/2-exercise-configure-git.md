@@ -18,16 +18,16 @@ Before you can create your first repo, you make sure Git is installed and config
 
 1. To configure Git, you must define some global variables: `user.name` and `user.email`. Both are required for commits.
 
-1. Set your name in Cloud Shell with this command, replacing `<USER_NAME>` with the user name you wish to use (for example, "shana"):
+1. Set your name in Cloud Shell with this command, replacing `<USER_NAME>` with the user name you wish to use (for example, "Shana"):
 
     ```bash
-    git config --global user.name <USER_NAME>
+    git config --global user.name "<USER_NAME>"
     ```
 
 1. Now use this command to create a `user.email` configuration variable, replacing `<USER_EMAIL>` with your e-mail address:
 
     ```bash
-    git config --global user.email <USER_EMAIL>
+    git config --global user.email "<USER_EMAIL>"
     ```
 
 1. Now execute the following command to check that your changes worked:
@@ -36,21 +36,21 @@ Before you can create your first repo, you make sure Git is installed and config
     git config --list
     ```
 
-1. Confirm that the output includes four lines similar to the following. Your name and e-mail address will be different, of course:
+1. Confirm that the output includes four lines similar to the following. Your name and e-mail address will be different:
 
     ```output
-    user.name=shana
+    user.name=Shana
     user.email=shana@email.com
     ```
 
 ## Set up your Git repository
 
-Git works by checking for changes to files within a certain folder.  We will create a folder to serve as our *working tree* (project directory), and let Git know about it so it can start tracking changes. We do this by initializing a Git repository into that folder.
+Git works by checking for changes to files within a certain folder.  We will create a folder to serve as our *working tree* (project directory), and let Git know about it, so it can start tracking changes. We tell Git to start tracking changes by initializing a Git repository into that folder.
 
 Start by creating an empty project directory and initializing a Git repository
 inside it.
 
-1. Create a folder named "Cats". This will be the *working tree* (sometimes called a "project directory") where your Web site is stored and the files that comprise it are located.
+1. Create a folder named "Cats". This folder will be the *working tree* (sometimes called a "project directory") where your Web site is stored and the files that comprise it are located.
 
     ```bash
     mkdir Cats
@@ -74,7 +74,7 @@ inside it.
     git status
     ```
 
-    Git responds by saying "Nothing to commit." It also says "On branch master" indicating that "master" is the current branch. (It's also the only branch.) So far, so good.
+    Git responds by saying "nothing to commit." It also says "On branch master" indicating that "master" is the current branch. (It's also the only branch.) So far, so good.
 
 1. Use an `ls` command to show the contents of the working tree:
 
@@ -82,13 +82,13 @@ inside it.
     ls -a
     ```
 
-    Confirm that the directory contains a subdirectory named ".git." (Using the `-a` option with `ls` is important, because Linux normally hides file and directory names that start with a period.) This is the Git *repository* — the directory in which Git stores metadata and history for the working tree.
+    Confirm that the directory contains a subdirectory named ".git." (Using the `-a` option with `ls` is important, because Linux normally hides file and directory names that start with a period.) This folder is the Git *repository* — the directory in which Git stores metadata and history for the working tree.
 
-You typically don't do anything with the ".git" directory directly. Git updates the metadata there as the status of the working tree changes to keep track of whats changed in your files. This directory is hands-off for you, but it's incredibly important to Git.
+You typically don't do anything with the ".git" directory directly. Git updates the metadata there as the status of the working tree changes to keep track of what's changed in your files. This directory is hands-off for you, but it's incredibly important to Git.
 
-## "Gitting" help
+## Getting help from Git
 
-Git, like most command line tools has a built-in help function you can use to lookup commands and keywords.
+Git, like most command-line tools, has a built-in help function you can use to look up commands and keywords.
 
 1. Type the following command to get help with what you can do with Git:
 
@@ -96,7 +96,7 @@ Git, like most command line tools has a built-in help function you can use to lo
     git --help
     ```
 
-1. This will display the following output:
+1. This command will display the following output:
 
     ```output
     usage: git [--version] [--help] [-C <path>] [-c name=value]
@@ -143,6 +143,6 @@ Git, like most command line tools has a built-in help function you can use to lo
     to read about a specific subcommand or concept.
     ```
 
-Read through the different options available with Git and note that each command comes with it's own help page, for when you start digging deeper. Not all of these commands will make sense yet, but some may look familiar if you've used other version control systems in the past.
+Read through the different options available with Git and note that each command comes with its own help page, for when you start digging deeper. Not all of these commands will make sense yet, but some may look familiar if you've used other version control systems in the past.
 
 In the next lesson, you learn more about the commands you just tried, and the basics of Git.

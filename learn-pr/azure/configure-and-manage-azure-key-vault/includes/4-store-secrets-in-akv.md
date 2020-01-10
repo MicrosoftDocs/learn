@@ -24,6 +24,7 @@ Once the deployment is complete, navigate to the resource.
 Next, add a new secret to the vault.
 
 1. In the Azure portal, select **Secrets** under the **Settings** section of your Azure Key Vault.
+1. Click the **Generate/Import** button at the top of the **Secrets** panel.
 1. Fill out the **Create a secret** screen with a name, value, and (optional) content type. An example is shown below.
 
     ![Screenshot showing the Create a secret pane in the Azure portal for Azure Key Vault](../media/1-create-secret.png)

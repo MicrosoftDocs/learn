@@ -105,7 +105,7 @@ Lamna Healthcare can use Key Vault for the storage of all their sensitive applic
 
 Encrypting all their data won't help Lamna Healthcare if the daily backups they take of their systems aren't also encrypted. Lamna Healthcare uses Azure Backup to backup data from their on-premises machines and Azure VMs. Azure Backup let's the IT department back up and recover data at a granular level, including backups of files, folders, machine system state, and app-aware data.
 
-Luckily for our hard-working IT department, there's no work to do here as all our data is stored encrypted at rest. Azure Backup encrypts local backups using AES256 and a key created from the passphrase configured by the administor. The data is securely transferred to Azure using HTTPS, and once there, the already-encrypted data is stored on disk. Azure VMs are also automatically encrypted at rest as they use Azure Storage for their disks.
+Luckily for our hard-working IT department, there's no work to do here as all our data is stored encrypted at rest. Azure Backup encrypts local backups using AES256 and a key created from the passphrase configured by the administrator. The data is securely transferred to Azure using HTTPS, and once there, the already-encrypted data is stored on disk. Azure VMs are also automatically encrypted at rest as they use Azure Storage for their disks.
 
 ## Encryption at Lamna Healthcare
 

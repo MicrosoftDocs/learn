@@ -1,5 +1,6 @@
 ### YamlMime:LearningPath
 uid: learn.data-science
+hidden: true
 metadata:
   title: Extract knowledge and insights from your data with Azure Databricks
   description: With this learning path, get started with Azure Databricks for predictive and analytical Data Science techniques such as exploratory data analysis, text analytics, and deep learning.

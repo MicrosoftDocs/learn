@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn-pr.wwl.planning-implementing-sap-solutions-azure.azure-vm-monitoring-considerations-sap-workloads
+title: Azure VM monitor considerations for SAP workloads
+metadata:
+  title: Azure VM monitor considerations for SAP workloads
+  description: Azure VM monitor considerations for SAP workloads
+  ms.date: 12/20/2019
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-azure-vm-monitor-considerations-sap-workloads.md)]

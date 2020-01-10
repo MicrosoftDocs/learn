@@ -1,5 +1,6 @@
 ### YamlMime:Module
 uid: learn.perform-advanced-data-transformation-in-azure-databricks
+hidden: true
 metadata:
   title: Perform advanced data transformation data in Azure Databricks
   description: Learn how to perform advanced data transformations in Azure Databricks. Encapsulate transformation logic through user-defined functions (UDFs) and libraries.
