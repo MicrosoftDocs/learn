@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.azure.assign-management-access-with-azure-rbac
+uid: learn.azure.manage-subscription-access-azure-rbac
 metadata:
   title: Manage access to an Azure subscription with Azure role-based access control
   description: Learn how to assign management access to a subscription with Azure role-based access control.
@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Manage access to an Azure subscription with Azure role-based access control
-summary: To grant access to a subscription, identify the appropriate role to assign to an employee. As the Global Administrator, temporarily elevate your access to manage the subscription. Assign the role. Then, turn off your management access.
+summary: To grant access to a subscription, identify the appropriate role to assign to an employee. Understand when you might need to temporarily elevate your access to regain access to a subscription.
 abstract: | 
   In this module, you will:
   - Identify the appropriate role to assign to an employee.
@@ -18,7 +18,7 @@ abstract: |
 prerequisites: | 
   - Basic understanding of how Azure role-based access control (Azure RBAC) works
   - Access to an Azure subscription where you have the Global Administrator role for your account (optional)
-iconUrl: /learn/achievements/assign-management-access-with-azure-rbac.svg
+iconUrl: /learn/achievements/manage-subscription-access-azure-rbac.svg
 levels:
 - beginner
 roles:
@@ -27,10 +27,10 @@ products:
 - azure
 - azure-active-directory
 units:
-- learn.azure.assign-management-access-with-azure-rbac.introduction
-- learn.azure.assign-management-access-with-azure-rbac.identify-appropriate-role-assign
-- learn.azure.assign-management-access-with-azure-rbac.elevate-your-access-user-access-admin
-- learn.azure.assign-management-access-with-azure-rbac.exercise-elevate-permissions
-- learn.azure.assign-management-access-with-azure-rbac.summary
+- learn.azure.manage-subscription-access-azure-rbac.introduction
+- learn.azure.manage-subscription-access-azure-rbac.identify-appropriate-role-assign
+- learn.azure.manage-subscription-access-azure-rbac.elevate-your-access-user-access-admin
+- learn.azure.manage-subscription-access-azure-rbac.exercise-elevate-permissions
+- learn.azure.manage-subscription-access-azure-rbac.summary
 badge:
-  uid: learn.azure.assign-management-access-with-azure-rbac.badge
+  uid: learn.azure.manage-subscription-access-azure-rbac.badge

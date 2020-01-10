@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.assign-management-access-with-azure-rbac.identify-appropriate-role-assign
+uid: learn.azure.manage-subscription-access-azure-rbac.identify-appropriate-role-assign
 title: Understand the difference between Azure RBAC roles and Azure AD roles
 metadata:
   title: Understand the difference between Azure RBAC roles and Azure AD roles
