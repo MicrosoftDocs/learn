@@ -40,7 +40,7 @@ quiz:
       isCorrect: false
       explanation: More operations are available than "equals".
 
-  - content: 'True or false: multiple conditions are always logically AND-ed together?'
+  - content: 'True or false: multiple rule conditions are always logically AND-ed together?'
     choices: 
     - content: 'False'
       isCorrect: false
@@ -48,6 +48,15 @@ quiz:
     - content: 'True'
       isCorrect: true
       explanation: There's no other option than logical AND.
+
+  - content: 'True or false: one rule can trigger three actions?'
+    choices: 
+    - content: 'False'
+      isCorrect: false
+      explanation: There's no limit to the number of actions a rule can trigger.
+    - content: 'True'
+      isCorrect: true
+      explanation: There's no limit to the number of actions a rule can trigger.
 
   - content: "If time aggregation is set at Maximum, and temperatures vary from -2 degrees to -10 degrees in the time period, what value is the maximum?"
     choices: 
