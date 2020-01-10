@@ -100,7 +100,7 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) by using the same account that you activated the sandbox with.
 
-1. In the menu pane on the left, select **Resource groups**, and then select the <rgn>[Sandbox resource group name]</rgn> resource group.
+1. On the Azure portal menu or from the **Home** page, select **Resource groups**, and then select the <rgn>[Sandbox resource group name]</rgn> resource group.
 
 1. Select the **MyWindowsVM** virtual machine.
 
