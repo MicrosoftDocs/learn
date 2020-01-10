@@ -36,14 +36,18 @@ As you're building out the API for the Product Manager application, you'll need 
 
 1. Type the following command to perform a GET request to the "GetProducts" function
 
-   ::: zone pivot="windows"
+   ::: zone pivot="powershell"
 
-   invoke-webrequest http://localhost:7071/api/GetProducts
+   invoke-webrequest http://localhost:7071/api/GetProducts?name=Azure
+
+   Notice that the response from the function is displayed in the integrated terminal.
 
    ::: zone-end
 
-   ::: zone pivot="linux"
+   ::: zone pivot="bash"
 
-   curl http://localhost:7071/api/GetProducts
+   curl http://localhost:7071/api/GetProducts?name=Azure
+
+   Notice that the response from the function is displayed in the integrated terminal.
 
    ::: zone-end
