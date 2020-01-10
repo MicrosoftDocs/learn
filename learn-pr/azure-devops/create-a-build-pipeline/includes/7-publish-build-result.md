@@ -84,7 +84,7 @@ You now use variables to define these values one time. You then reference the va
 
 1. In Visual Studio Code, modify *azure-pipelines.yml* as you see here:
 
-    [!code-yml[](code/7-azure-pipelines-2.yml?highlight=9-12,42,45,49,54)]
+    [!code-yml[](code/7-azure-pipelines-2.yml?highlight=9-12,16,18,25,33,42,45,49,54)]
 
     Notice the `variables` section, which defines these variables:
 
