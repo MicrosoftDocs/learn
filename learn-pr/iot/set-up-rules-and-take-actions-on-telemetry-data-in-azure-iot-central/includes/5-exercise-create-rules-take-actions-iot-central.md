@@ -37,7 +37,7 @@ In this example, we will create a rule with a single condition. Let's fire off a
     >[!NOTE]
     >If you wish to turn off a rule, set it to a **Disabled** state, rather than delete it. You might need to do this if you come up with a rule that fires too often. Disable it to give yourself a chance to think of more, or better, conditions.
 
-## Create rules to fire when the temperature of the contents is too high
+## Create a rule to fire when the temperature of the contents is too high
 
 In this section, we will look at the time aggregation feature.
 
@@ -62,7 +62,7 @@ The rule will fire off one email in a five-minute period, if the contents temper
 
 1. Make sure to click **Save**, to save off this rule.
 
-## Create a rule to fire when a truck leaves the base
+## Create a rule to fire when the truck leaves base
 
 In this rule, we are going to investigate the use of multiple conditions to fire a rule. In our simulation of a refrigerated truck, we've not added a specific state to indicate that the truck has just left the base. We can, however, get what we want with a clever use of conditions.
 
@@ -85,7 +85,7 @@ In this rule, we are going to investigate the use of multiple conditions to fire
 
 1. Again, enter your email as an action, giving it an appropriate title and note.
 
-## Create rules to fire when the temperature of the contents is OK
+## Create a rule to fire when the temperature of the contents is OK
 
 The rules we've entered so far are triggered mostly when something goes wrong, though the "Truck leaving base" rule is an event, rather than an error.
 

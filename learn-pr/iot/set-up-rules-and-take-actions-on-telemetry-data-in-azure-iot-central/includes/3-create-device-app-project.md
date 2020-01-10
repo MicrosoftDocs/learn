@@ -88,7 +88,7 @@ Node.js is a platform for building server apps, based on JavaScript. All the Jav
 
 1. Delete the default contents of the Program.cs file.
 
-1. Add all the code that follows to the Program.cs file.
+1. When you've entered the code below, you'll be able to run the app with the **Start Without Debugging**, or **Start Debugging**, options. In the latter case you can set breakpoints, examine data, and perform other debugging tasks.
 
 ::: zone-end
 
@@ -105,7 +105,7 @@ Node.js is a platform for building server apps, based on JavaScript. All the Jav
 ::: zone pivot="vs-csharp"
 
 1. Copy the Program.cs code that you downloaded, into the Program.cs file of the project.
-1. Copy in the Scope ID, Device ID, Primary Key, and Azure Maps Key into the locations marked in the code.
+1. Replace the strings in the code (`ScopeID`, `DeviceID`, `PrimaryKey`, and `AzureMapsKey`) with the ID and key strings you stored in your "Truck Keys.txt" file.
 1. In Visual Studio, select **Debug/Start without Debugging**.
 
 ::: zone-end
@@ -148,7 +148,7 @@ If all goes well, go straight into the second test.
 
 1. To verify the data is being received at IoT Central, make sure your IoT Central pp is open, and the device selected. If not, select the **Devices** entry in the left-hand menu. Double-click the real device (**RefrigeratedTruck - 1**), in the list of devices.
 
-1. Locate the **Contents temperature** tile, and verify approximately that the temperatures being sent by the device app, in the console window, match the data being shown in the telemetry view of the IoT Central app.
+1. Locate the **Contents temperature** tile, and verify approximately that the temperatures being sent by the device app, in the console window, match the data being shown in the telemetry view of the IoT Central app. There may be a short latency before the dashboard shows the incoming data.
 
     | IoT Central | Device app |
     | --- | --- |
