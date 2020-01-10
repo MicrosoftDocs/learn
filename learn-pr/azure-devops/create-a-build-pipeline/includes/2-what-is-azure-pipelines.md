@@ -4,13 +4,13 @@ Mara is excited about replicating the team's build process on Azure Pipelines. A
 
 When she hears Mara's plan, Amita is a bit hesitant. But since Mara's plan is to replicate the build process but not replace it, she's also curious. She knows the build process could use some improvements.
 
-**Amita**: It sounds like an interesting exercise, but you must want to prove a DevOps point!
+**Amita:** It sounds like an interesting exercise, but you must want to prove a DevOps point!
 
-**Mara**: You already know me so well!
+**Mara:** You already know me so well!
 
-**Amita**: What improvements do you expect to see, especially because you're going to do what we already do?
+**Amita:** What improvements do you expect to see, especially because you're going to do what we already do?
 
-**Mara**: I think that just moving to Azure Pipelines will bring many benefits. Remember, Azure Pipelines is a cloud service. We can use it to automatically build and test code. And it will be available to others as well. It works with just about any language or project type.
+**Mara:** I think that just moving to Azure Pipelines will bring many benefits. Remember, Azure Pipelines is a cloud service. We can use it to automatically build and test code. And it will be available to others as well. It works with just about any language or project type.
 
 Our build server has problems. Even keeping it up-to-date is hard. Because Azure Pipelines provides build servers that Microsoft hosts and maintains, it always has the latest patches and security updates. We won't have to worry about maintaining build servers.
 
@@ -18,13 +18,13 @@ Also, we have all kinds of scripts written by different people. We don't even un
 
 And Azure Pipelines works with many different languages and application types. If we want to expand in those directions, we won't have to retool.
 
-**Amita**: I know it's selfish, but why do I care? One of my big problems is that I never know when a build is ready to test. Sometimes someone remembers to update the spreadsheet, but many times they forget. It seems like I'm the last person to know.
+**Amita:** I know it's selfish, but why do I care? One of my big problems is that I never know when a build is ready to test. Sometimes someone remembers to update the spreadsheet, but many times they forget. It seems like I'm the last person to know.
 
-**Mara**: Right, that's something we can easily fix. We can set up the pipeline to notify you automatically, either through email or some other notification, when a build is ready. You'll never have to wait for someone to remind you again.
+**Mara:** Right, that's something we can easily fix. We can set up the pipeline to notify you automatically, either through email or some other notification, when a build is ready. You'll never have to wait for someone to remind you again.
 
-**Amita**: Okay, so your goal right now is to build the app and let me know when it's ready?
+**Amita:** Okay, so your goal right now is to build the app and let me know when it's ready?
 
-**Mara**: Right! Of course, I've got bigger plans. I know you're all going to love this first step, so I want to build on it to give us true continuous integration.
+**Mara:** Right! Of course, I've got bigger plans. I know you're all going to love this first step, so I want to build on it to give us true continuous integration.
 
 ## What is continuous integration?
 
@@ -38,9 +38,9 @@ In this short video, Abel Wang, Cloud Advocate at Microsoft, explains the concep
 
 > [!VIDEO https://channel9.msdn.com/Blogs/One-Dev-Minute/What-is-Continuous-Integration--One-Dev-Question/player?format=ny]
 
-**Amita**: Give me the 5-minute rundown on continuous integration.
+**Amita:** Give me the 5-minute rundown on continuous integration.
 
-**Mara**: Let me draw you a picture.
+**Mara:** Let me draw you a picture.
 
 Mara moves to the whiteboard and draws the pipeline.
 
@@ -62,9 +62,9 @@ The final product of the pipeline is a *build artifact* ![Callout 4](../../share
 
 And that's it. I know we can do this.
 
-**Amita**: It sounds great. Let's see what you have to do to get it to work and how long it takes you. You can give us all a demo.
+**Amita:** It sounds great. Let's see what you have to do to get it to work and how long it takes you. You can give us all a demo.
 
-**Mara**: Will do!
+**Mara:** Will do!
 
 ## Implement and manage build infrastructure
 

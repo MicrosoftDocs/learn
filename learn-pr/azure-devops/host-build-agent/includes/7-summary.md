@@ -8,15 +8,15 @@ When you configure a private build agent, it's yours to configure however you wa
 
 The Tailspin web team has finished their experiment with private build agents. Let's check in to hear their results.
 
-**Tim**: Mara and I were able to bring up a build agent running on an Azure virtual machine! The build runs quickly, and we get the same results as when we use a Microsoft-hosted agent. But does a private build agent bring any benefits to this project?
+**Tim:** Mara and I were able to bring up a build agent running on an Azure virtual machine! The build runs quickly, and we get the same results as when we use a Microsoft-hosted agent. But does a private build agent bring any benefits to this project?
 
-**Andy**: I agree that it was a good experiment. But for now, I don't see any benefit from using our own agent. The Microsoft-hosted agents seem to do everything we need for now, and we don't have to worry about keeping it up to date. But if we discover we need more build time, storage, or memory, it's good to know we have the option of using our own build agent.
+**Andy:** I agree that it was a good experiment. But for now, I don't see any benefit from using our own agent. The Microsoft-hosted agents seem to do everything we need for now, and we don't have to worry about keeping it up to date. But if we discover we need more build time, storage, or memory, it's good to know we have the option of using our own build agent.
 
-**Tim**: I could see some of the other teams benefiting from this, especially the teams that develop the games. I know some games can require several hours to do a full build. Processing all those game assets also requires lots of CPU, memory, and disk space.
+**Tim:** I could see some of the other teams benefiting from this, especially the teams that develop the games. I know some games can require several hours to do a full build. Processing all those game assets also requires lots of CPU, memory, and disk space.
 
-**Mara**: Good point, Tim. Because we set up that build configuration on a Git branch, those changes are isolated from the main sources. We can leave the build agent running a bit longer while you demo this to the other teams.
+**Mara:** Good point, Tim. Because we set up that build configuration on a Git branch, those changes are isolated from the main sources. We can leave the build agent running a bit longer while you demo this to the other teams.
 
-**Tim**: Sounds good. Thanks for your help here. This was all relatively easy to set up. And now I know little bit more about how VMs work on Azure!
+**Tim:** Sounds good. Thanks for your help here. This was all relatively easy to set up. And now I know little bit more about how VMs work on Azure!
 
 ## How is the team measuring up?
 

@@ -8,7 +8,7 @@ In this part, you learn about the five steps you can take to measure customer sa
 
 The team is still in a meeting. Now they're trying to decide how to get data about how well the beta testers like the website.
 
-**Andy**: I know there are a lot of approaches. I tend to think in terms of continuous feedback, which means we have built-in customer feedback loops. There are numerous ways we can make it easy for customers to tell us their reactions.
+**Andy:** I know there are a lot of approaches. I tend to think in terms of continuous feedback, which means we have built-in customer feedback loops. There are numerous ways we can make it easy for customers to tell us their reactions.
 
 ## Measure customer satisfaction
 
@@ -212,6 +212,6 @@ Here are a few pros and cons you should consider before you publish your product
 
 What does the team decide to do?
 
-**Amita**: I've always considered making sure our customers have a great user experience to be the most important part of my job. Why don't I put together a survey, as a start. In fact, why not two? I think I'll try NPS and CSAT. We can even refine the surveys during the beta tests. We can beta test the surveys!
+**Amita:** I've always considered making sure our customers have a great user experience to be the most important part of my job. Why don't I put together a survey, as a start. In fact, why not two? I think I'll try NPS and CSAT. We can even refine the surveys during the beta tests. We can beta test the surveys!
 
-**Andy**: Thanks, Amita. We're really making progress.
+**Andy:** Thanks, Amita. We're really making progress.

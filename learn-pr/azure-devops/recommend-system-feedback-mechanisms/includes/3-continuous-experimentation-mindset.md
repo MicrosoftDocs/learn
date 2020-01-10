@@ -4,7 +4,7 @@ The team is still discussing the repercussions of Irwin's announcement. The comp
 
 In [Manage release cadence in Azure Pipelines with deployment patterns](/learn/modules/manage-release-cadence/?azure-portal=true), you and the Tailspin team looked at the various deployment pattern that help you smoothly roll out new application features to your users.
 
-**Mara**: I was wondering if one thing we could do to resolve the problem is to institute feature toggles, or flags. We talked about it once, when we were deciding on deployment patterns. Then, we opted for the blue-green pattern. Feature flags seemed too advanced at the time, but now might be a good time to think about them, especially since we'll be doing beta testing with a selected group.
+**Mara:** I was wondering if one thing we could do to resolve the problem is to institute feature toggles, or flags. We talked about it once, when we were deciding on deployment patterns. Then, we opted for the blue-green pattern. Feature flags seemed too advanced at the time, but now might be a good time to think about them, especially since we'll be doing beta testing with a selected group.
 
 ## The expectations of continuous delivery
 
@@ -39,6 +39,6 @@ Here are some of the benefits of a standard continuous delivery pipeline compare
 
 ## The decision
 
-**Andy**: I agree, Mara. It's time to go with feature flags. We can even come up with a plan of how we want to disclose the features to the beta testers.
+**Andy:** I agree, Mara. It's time to go with feature flags. We can even come up with a plan of how we want to disclose the features to the beta testers.
 
 **Amita** So, the next issue we have to think about is customer satisfaction. How do we figure out what they think about our website? 
