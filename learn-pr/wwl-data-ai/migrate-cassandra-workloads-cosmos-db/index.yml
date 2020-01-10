@@ -1,0 +1,37 @@
+### YamlMime:Module
+uid: learn.wwl.migrate-cassandra-workloads-cosmos-db
+metadata:
+  title: Migrate Cassandra workloads to Cosmos DB
+  description: "Migrate Cassandra workloads to Cosmos DB"
+  ms.date: 01/31/2020
+  author: wwlpublish
+  ms.author: v-gea
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Migrate Cassandra workloads to Cosmos DB
+summary: Learners will be able to demonstrate the benefits and processes for moving a Cassandra database to the Azure Cosmos DB Cassandra API.
+abstract: |
+  - List the benefits of Cassandra to Cosmos DB migration
+  - Plan a Cassandra to Cosmos DB migration
+  - Describe the process of migrating a Cassandra database to Cosmos DB
+  - Describe the process of migrating applications from a Cassandra database to Cosmos DB
+prerequisites: |
+  - Knowledge of Cassandra database management systems, including application development for these systems, administration, backup, and recovery techniques, such as import/export and backup/restore.
+  - Knowledge of Azure fundamental concepts, and experience using the Azure portal.
+iconUrl: /learn/achievements/learn-pr/achievements/migrate-cassandra-workloads-to-cosmos-db.svg
+levels:
+- intermediate
+roles:
+- data-engineer
+products:
+- azure-cosmos-db
+units:
+- learn.wwl.migrate-cassandra-workloads-cosmos-db.introduction
+- learn.wwl.migrate-cassandra-workloads-cosmos-db.cassandra-cosmos-db-migration-benefits
+- learn.wwl.migrate-cassandra-workloads-cosmos-db.cassandra-cosmos-db-migration-planning
+- learn.wwl.migrate-cassandra-workloads-cosmos-db.cassandra-cosmos-db-data-migration
+- learn.wwl.migrate-cassandra-workloads-cosmos-db.cassandra-cosmos-db-application-migration
+- learn.wwl.migrate-cassandra-workloads-cosmos-db.summary
+- learn.wwl.migrate-cassandra-workloads-cosmos-db.knowledge-check
+badge:
+  uid: learn.wwl.migrate-cassandra-workloads-cosmos-db.badge

@@ -3,8 +3,8 @@ uid: learn.wwl.introduction-azure-sap-workloads.azure-large-instances-sap-hana
 title: Azure (Large Instances) for SAP HANA
 metadata:
   title: Azure (Large Instances) for SAP HANA
-  description: Azure (Large Instances) for SAP HANA
-  ms.date: 12/20/2019
+  description: "Azure (Large Instances) for SAP HANA"
+  ms.date: 01/10/2020
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
