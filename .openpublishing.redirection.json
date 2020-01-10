@@ -564,6 +564,11 @@
       "source_path": "learn-pr/azure/create-an-azure-account/6-support-options.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/create-an-azure-account",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/keep-your-virtual-machines-updated/6-knowledge-check.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/keep-your-virtual-machines-updated",
+      "redirect_document_id": false
     }
   ]
 }

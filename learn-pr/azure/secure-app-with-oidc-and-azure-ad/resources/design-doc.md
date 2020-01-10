@@ -83,7 +83,7 @@ Identify the subtasks of *Secure your application with OpenID Connect and Azure 
     Steps to create tenant and configure app.
 
     1. Login to the Azure Portal
-    1. Select Create a resource, select Identity, and then select Azure Active Directory
+    1. On the Azure portal menu or from the Home page, select Create a resource, select Identity, and then select Azure Active Directory
     1. Enter an Organization name, Initial domain name and Select the Country or region from the dropdown
     1. Once created, locally clone a sample .NET app from GitHub. Similar to https://github.com/Azure-Samples/active-directory-dotnet-webapp-openidconnect
     1. On the top bar, click on your account and under the Directory list, choose the Active Directory tenant where you wish to register your application.

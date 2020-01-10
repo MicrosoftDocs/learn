@@ -1,7 +1,10 @@
 
 VMs hosting SAP applications are most often backed up using Azure Backup. When backing up SAP workloads by using Azure Backup, keep in mind the limitations resulting from the network consumption of backup operations. Azure Backup agents support throttling throughput utilized during backups and restores. You also have the option of applying compression, however, such approach increases CPU usage, and the additional CPU consumed by the compression process can adversely impact performance of SAP workloads. When backing up SQL Server databases, to mitigate such impact you might want to configure a low-priority compressed backup task, such that CPU usage is limited by SQL Server Resource Governor when CPU contention occurs. Compressed backups also help reduce restore times.
 
-For VM-level recovery, you might consider using Azure VM Backup. Azure Backup stores the backups in Azure and allows a restore of a VM again. However, be aware that Azure VM backup supports only a single scheduled backup per day. In addition, note that using VM Backup does NOT keep the unique VM ID which is used for SAP licensing. This means that a restore from a VM backup requires installation of a new SAP license key as the restored VM is considered to be a new VM and not a replacement of the former one which was saved.
+For VM-level recovery, you might consider using Azure VM Backup. Azure Backup stores the backups in Azure and allows a restore of a VM again. However, be aware that Azure VM backup supports only a single scheduled backup per day. 
+
+> [!NOTE]
+> In addition, note that using VM Backup does NOT keep the unique VM ID which is used for SAP licensing. This means that a restore from a VM backup requires installation of a new SAP license key as the restored VM is considered to be a new VM and not a replacement of the former one which was saved.
 
 Here's how Azure Backup completes a backup for Azure VMs:
 
@@ -13,7 +16,7 @@ Here's how Azure Backup completes a backup for Azure VMs:
     
     * For Linux VMs, the VMSnapshotLinux extension is installed. For Linux VMs, Backup takes a file-consistent backup. For app-consistent snapshots, you need to manually customize pre/post scripts.
     
-    3. After Backup takes the snapshot, it transfers the data to the vault.
+3. After Backup takes the snapshot, it transfers the data to the vault.
     
     * The backup is optimized by backing up each VM disk in parallel.
     
@@ -73,15 +76,15 @@ The topic of consistency becomes even more challenging in a case where a single 
 
 Assuming there is an XFS file system spanning four Azure virtual disks, the following steps provide a consistent snapshot that represents the HANA data area:
 
-* HANA snapshot prepare
+1. HANA snapshot prepare
 
-* Freeze the file system (for example, use xfs_freeze)
+1. Freeze the file system (for example, use xfs_freeze)
 
-* Create all necessary blob snapshots on Azure
+1.Create all necessary blob snapshots on Azure
 
-* Unfreeze the file system
+1. Unfreeze the file system
 
-* Confirm the HANA snapshot
+1. Confirm the HANA snapshot
 
 
 > **Recommendation** is to use the procedure above in all cases to be on the safe side, no matter which file system. 
@@ -107,15 +110,15 @@ Optionally, one could go completely without storage snapshots; they could be rep
 
 The HANA Administration guide provides an example list. It suggests that one recover SAP HANA to a specific point in time using the following sequence of backups:
 
-* Full data backup
+1. Full data backup
 
-* Differential backup
+1. Differential backup
 
-* Incremental backup 1
+1. Incremental backup 1
 
-* Incremental backup 2
+1. Incremental backup 2
 
-* Log backups
+1. Log backups
 
 Regarding an exact schedule as to when and how often a specific backup type should happen, it is not possible to give a general guideline—this would be customer-specific and dependent on the volume of data changes in the system. One basic recommendation from SAP, which is general guidance, is to make one full HANA backup once a week. SAP also recommends doing some housekeeping of the backup catalog to keep it from growing infinitely.
 

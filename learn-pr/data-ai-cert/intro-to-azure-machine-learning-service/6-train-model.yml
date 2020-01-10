@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.data-ai.intro-to-azure-machine-learning-service.train-model
-title: Train a model using the Experimentation Service 
+title: Exercise - Train a model using the Experimentation Service 
 metadata:
-  title: Train a model using the Experimentation Service
+  title: Exercise - Train a model using the Experimentation Service
   description: Train a model using the Experimentation Service
   ms.date: 01/31/2019
   author: GraemeMalcolm
@@ -10,6 +10,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-durationInMinutes: 5
+durationInMinutes: 10
 content: |
   [!include[](includes/6-train-model.md)]
