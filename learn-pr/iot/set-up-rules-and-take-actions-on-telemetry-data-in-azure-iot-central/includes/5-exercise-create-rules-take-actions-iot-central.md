@@ -95,7 +95,7 @@ An alternative way of looking at rules is to trigger them when everything is OK.
 
 1. Turn on **Time aggregation**, with a period of five minutes.
 
-1. Enter a condition that fires if the average **Contents Temperature** is less than -2 degrees Celsius.
+1. Enter conditions that fire if the _average_ **Contents Temperature** is less than -1 degrees Celsius, and greater than -18 degrees Celsius.
 
 1. Again, enter an appropriate email action, and click **Save**.
 

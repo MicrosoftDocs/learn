@@ -24,8 +24,8 @@ More complex rules can be built up by combining conditions. And rules and action
 
 | Telemetry | Aggregation | Operator | Value |
 | -- | -- | -- | -- |
-| Contents Temperature | Maximum | Is less than | -2 |
-| Contents Temperature | Minimum | Is greater than | -8 |
+| Contents Temperature | Maximum | Is less than | -1 |
+| Contents Temperature | Minimum | Is greater than | -18 |
 
 This rule could send an "OK" message every 10 minutes, letting the operator know that contents temperature is within a desired limit.
 
