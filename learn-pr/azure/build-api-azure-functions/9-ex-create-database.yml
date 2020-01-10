@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.build-api-azure-functions.9-ex-create-database
+title: Exercise - Working with Cosmos DB from VS Code
+metadata:
+  title: Exercise - Working with Cosmos DB from VS Code
+  description: Exercise - Working with Cosmos DB from VS Code
+  ms.date: 01/10/2020
+  author: burkehollan
+  ms.author: buholland
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 10
+content: |
+  [!include[](includes/9-ex-create-database.md)]
