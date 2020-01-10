@@ -3,16 +3,14 @@ uid: learn.wwl.introduction-azure-sap-workloads.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: Knowledge check
-  ms.date: 12/20/2019
+  description: "Knowledge check"
+  ms.date: 01/10/2020
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 durationInMinutes: 2
-content: |
-  [!include[](includes/7-knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:
@@ -24,7 +22,7 @@ quiz:
     - content: "In-preview SAP S/4HANA and BW/4HANA"
       isCorrect: false
       explanation: "That's incorrect. SAP S/HANA and BW/4HANA are supported by SAP CAL, but In-preview is not the easiest way to deploy and test SAP."
-    - content: "Azure Resource Manager templates"
+    - content: "Azure Resourse Manager templates"
       isCorrect: false
       explanation: "That's incorrect. Azure Resource Manager templates are not used for testing the underlying infrastructure for deploying SAP."
   - content: "For any SAP production system installed on Azure, it is required that you operate in Virtual Private Networks which are connected to your datacenters using what form of connectivity?"

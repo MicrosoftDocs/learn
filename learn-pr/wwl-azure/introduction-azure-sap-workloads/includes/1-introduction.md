@@ -12,4 +12,4 @@ In this module you will:
 
 - Understand the general network considerations for deployment of SAP workloads on Azure
 
-- See how Azure facilitates a number of authentication and authorization scenarios, including support for a range of identity providers.
+- See how Azure facilitates a number of authentication and authorization scenarios, including support for a range of identity providers. 

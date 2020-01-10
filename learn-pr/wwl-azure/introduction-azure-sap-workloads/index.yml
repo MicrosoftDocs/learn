@@ -2,8 +2,8 @@
 uid: learn.wwl.introduction-azure-sap-workloads
 metadata:
   title: Introduction to Azure for SAP workloads
-  description: With the recently expanded partnership between Microsoft and SAP, you can run SAP applications across development, test, and production scenarios in Azure, taking advantage of the scalability, flexibility, and cost savings of Microsoft Azure.
-  ms.date: 12/20/2019
+  description: "With the recently expanded partnership between Microsoft and SAP, you can run SAP applications across development, test, and production scenarios in Azure, taking advantage of the scalability, flexibility, and cost savings of Microsoft Azure."
+  ms.date: 01/10/2020
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
@@ -16,7 +16,7 @@ abstract: |
   - Explore the distinctiveness of Azure for SAP HANA as an offer that sets Azure apart.
 prerequisites: |
   Prior to taking this course, it is recommended that you have taken the Azure Administrator (AZ-103) exam, as well as SAP HANA or NetWeaver training.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/Introduction-to-azure-for-sap-workloads.svg
 levels:
 - advanced
 roles:

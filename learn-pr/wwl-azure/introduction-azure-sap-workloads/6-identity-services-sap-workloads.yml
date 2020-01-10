@@ -3,8 +3,8 @@ uid: learn.wwl.introduction-azure-sap-workloads.identity-services-sap-workloads
 title: Identity services for SAP workloads
 metadata:
   title: Identity services for SAP workloads
-  description: Identity services for SAP workloads
-  ms.date: 12/20/2019
+  description: "Identity services for SAP workloads"
+  ms.date: 01/10/2020
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
