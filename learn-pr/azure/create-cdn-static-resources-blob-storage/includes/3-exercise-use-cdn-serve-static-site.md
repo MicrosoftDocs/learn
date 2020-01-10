@@ -8,11 +8,11 @@ Now, you'll create a CDN and connect that CDN to the website that you've created
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you used to activate the sandbox.
 
-1. On the Azure portal menu or from the **Home** page, click **Create a resource**.
+1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
 
-1. In the **New** pane, click **Web**.
+1. In the **New** pane, select **Web**.
 
-1. Under **Featured**, click **CDN** (or search for **CDN**).
+1. Under **Featured**, select **CDN** (or search for **CDN**).
 
 1. Give your CDN a name, such as **yourinitials-cdn**.
 
@@ -20,17 +20,17 @@ Now, you'll create a CDN and connect that CDN to the website that you've created
 
 1. Under **Pricing tier**, select **Standard Microsoft**.
 
-1. Ensure that **Create a new CDN endpoint now** isn't selected, then click **Create**.
+1. Ensure that **Create a new CDN endpoint now** isn't selected, then select **Create**.
 
 ![Create a new CDN Endpoint in the Azure](../media/3-cdn-new-profile.png)
 
-When you've created the profile, click the Notifications (bell) icon, then click **Successfully created a CDN profile** to display the CDN profile pane.
+When you've created the profile, select the Notifications (bell) icon, then select **Successfully created a CDN profile** to display the CDN profile pane.
 
 ## Create a CDN Endpoint
 
 You now need to create a CDN profile that connects to the source web server in the storage account. Take the following steps:
 
-1. In the CDN Profile pane, click **+ Endpoint**.
+1. In the CDN Profile pane, select **+ Endpoint**.
 
 1. In the **Add an endpoint** pane, enter a name for the endpoint.
 
@@ -41,8 +41,8 @@ You now need to create a CDN profile that connects to the source web server in t
 
 1. In the **Origin hostname** field, enter the URL from when you created the web site. Remove the **https://** and the final trailing slash character.
 
-1. Click **Add** to create the endpoint. Note the message that it can take up to 10 minutes for the settings to reach every CDN POP.
+1. Select **Add** to create the endpoint. Note the message that it can take up to 10 minutes for the settings to reach every CDN POP.
 
-1. After 10 minutes has elapsed, click the **Endpoint hostname** link. The web site should display.
+1. After 10 minutes has elapsed, select the **Endpoint hostname** link. The web site should display.
 
 ![Create a new CDN endpoint in the Azure portal](../media/3-new-cdn-endpoint.PNG)
