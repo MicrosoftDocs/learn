@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.wwl.introduction-open-source-database-migration-azure
+metadata:
+  title: Introduction to open-source database migration on Azure
+  description: |
+    &quot;Introduction to open
+    -source database migration on Azure&quot;
+  ms.date: 01/31/2020
+  author: wwlpublish
+  ms.author: v-gea
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction to open-source database migration on Azure
+summary: In this module, you'll learn about the issues and considerations for migrating on-premises open-source databases to Azure, the services that Azure provides to help you migrate your databases, and how to plan a migration.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Describe the features and services available in Azure for hosting an open-source database.
+  - Explain the key considerations for implementing a migration project.
+  - Describe different approaches that you can take for migrating databases.
+prerequisites: |
+  - Knowledge of MySQL or PostgreSQL database management systems, including application development for these systems, administration, backup, and recovery techniques, such as import/export and backup/restore.
+  - Knowledge of Azure fundamental concepts, and experience using the Azure portal.
+iconUrl: /learn/achievements/learn-pr/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- data-engineer
+products:
+- azure
+units:
+- learn.wwl.introduction-open-source-database-migration-azure.introduction
+- learn.wwl.introduction-open-source-database-migration-azure.mysql-postgresql-database-services-azure
+- learn.wwl.introduction-open-source-database-migration-azure.considerations-migration
+- learn.wwl.introduction-open-source-database-migration-azure.approaches-migration
+- learn.wwl.introduction-open-source-database-migration-azure.summary
+- learn.wwl.introduction-open-source-database-migration-azure.knowledge-check
+badge:
+  uid: learn.wwl.introduction-to-open-source-database-migration-on-azure.badge

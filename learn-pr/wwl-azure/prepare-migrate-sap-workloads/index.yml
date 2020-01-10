@@ -2,10 +2,9 @@
 uid: learn-pr.wwl.preparing-migrate-sap-workloads-azure
 metadata:
   title: Prepare to migrate SAP Workloads to Azure
-  description: |
-    This module provides details on the important steps prior to deploying SAP workloads to Azure: project preparation and planning, pilot, non
-    -production, production preparation, go live, and post production.
-  ms.date: 12/20/2019
+  description: "This module provides details on the important steps prior to deploying SAP workloads to Azure: project preparation and planning, pilot, non
+-production, production preparation, go live, and post production."
+  ms.date: 01/02/2020
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
@@ -18,7 +17,7 @@ abstract: |
   * Review the checklist for initiating a project to deploy SAP workloads to Azure.
 prerequisites: |
   Prior to taking this course, it is recommended that you have taken the Azure Administrator (AZ-103) exam, as well as SAP HANA or NetWeaver training.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/preparing-migrate-sap-workloads-azure.svg
 levels:
 - advanced
 roles:

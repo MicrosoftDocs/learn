@@ -2,8 +2,8 @@
 uid: learn-pr.wwl.utilizing-azure-sap-workloads-reference-architecture
 metadata:
   title: Utilize Azure for SAP workloads reference architecture
-  description: Utilize Azure for SAP Workloads Reference Architecture
-  ms.date: 12/20/2019
+  description: "Utilize Azure for SAP Workloads Reference Architecture"
+  ms.date: 01/02/2020
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
@@ -22,7 +22,7 @@ abstract: |
   * Review the compute considerations for planning SAP HANA on Azure Large Instances.
 prerequisites: |
   Prior to taking this course, it is recommended that you have taken the Azure Administrator (AZ-103) exam, as well as SAP HANA or NetWeaver training.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/utilizing-azure-sap-workloads-reference-architecture.svg
 levels:
 - advanced
 roles:
