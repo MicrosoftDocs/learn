@@ -3,7 +3,7 @@ In this unit, we create four rules to be triggered by the state and movement of 
 
 ## Create a rule to fire when the cooling system fails
 
-In this example, we will create a rule with a single condition. Let's fire off an email if the cooling system on the truck fails.
+In this example, we'll create a rule with a single condition. Let's fire off an email if the cooling system on the truck fails.
 
 1. In the IoT portal, select **Rules** in the left-hand menu, then **+ New**. Enter a meaningful name for the rule, such as "Cooling system failed". Press Enter.
 
@@ -39,7 +39,7 @@ In this example, we will create a rule with a single condition. Let's fire off a
 
 ## Create a rule to fire when the temperature of the contents is too high
 
-In this section, we will look at the time aggregation feature.
+In this section, we'll look at the time aggregation feature.
 
 1. Create a new rule with a name such as "Contents temperature spiking".
 
@@ -64,7 +64,7 @@ The rule will fire off one email in a five-minute period, if the contents temper
 
 ## Create a rule to fire when the truck leaves base
 
-In this rule, we are going to investigate the use of multiple conditions to fire a rule. In our simulation of a refrigerated truck, we've not added a specific state to indicate that the truck has just left the base. We can, however, get what we want with a clever use of conditions.
+In this rule, we're going to investigate the use of multiple conditions to fire a rule. In our simulation of a refrigerated truck, we've not added a specific state to indicate that the truck has left the base. We can, however, get what we want with a clever use of conditions.
 
 1. Select **Rules** in the left-hand menu, then **+ New**. Enter a meaningful name for the rule, such as "Truck leaving base". Press Enter.
 

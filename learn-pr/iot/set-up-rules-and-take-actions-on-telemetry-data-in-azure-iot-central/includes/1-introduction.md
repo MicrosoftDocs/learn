@@ -2,9 +2,9 @@ Azure IoT Central enables the easy monitoring and management of a fleet of remot
 
 This module builds on the app developed in the "Your first Azure IoT Central app" module, by adding rules and actions. It's not a requirement that you have completed the earlier module, but it may help your understanding of IoT Central if you do complete it.
 
-The earlier module explains how to monitor and command the movements of a refrigerated truck. This module adds _rules and actions_ to the IoT Central app. Rules enable greater automation. A rule is triggered when one or more conditions are met, and one or more actions are the result. These actions include sending an email, and sending data to a website (a _webhook_ action).
+The earlier module explains how to monitor and command the movements of a refrigerated truck. This module adds _rules and actions_ to the IoT Central app. Rules enable greater automation. A rule is triggered when one or more conditions are met. One or more actions are the result. These actions include sending an email, and sending data to a website (a _webhook_ action). This website could be your own custom app, or a productivity tool such as Microsoft Flow.
 
-In this module, we build the IoT Central app from a pre-prepared JSON file defining all the device capabilities. The device app code is loaded and run, without detailed explanation of the sections of code. The focus is on creating a range of rules, and testing out these rules, with the device and IoT Central apps up and running.
+In this module, we build the IoT Central app from a pre-prepared JSON file defining all the device capabilities. The device app code is loaded and run. A more detailed explanation of the sections of code is available in the earlier module. The focus here is on creating a range of rules, and testing the rules trigger the specified actions.
 
 ## Learning objectives
 
@@ -30,7 +30,7 @@ In this module you will:
 
 [![Image of the finished app, showing a truck en route in the IoT Central dashboard](../media/refrigerated-trucks-intro-map.png)](../media/refrigerated-trucks-intro-map.png#lightbox)
 
-In this module, you'll construct the app displayed in the above image, from supplied components. Then, you'll add several rules and corresponding actions, and test that the rules trigger as expected.
+You'll construct the app displayed in the above image, from supplied components. Then, you'll add several rules and corresponding actions, and test that the rules trigger as expected.
 
 ## Create a custom IoT Central app
 
@@ -47,7 +47,7 @@ In this module, you'll construct the app displayed in the above image, from supp
     [![Screenshot showing how to create a new IoT Central app, using the IoT Central portal](../media/refrigerated-trucks-my-apps.png)](../media/refrigerated-trucks-my-apps.png#lightbox)
 
     > [!NOTE]
-    > Click on any image in this module, to display a full-sized image.
+    > Click on any image to display a full-sized image.
 
 1. Fill out your contact info, and click **Create**. Wait a few seconds whilst the app resource is built.
 

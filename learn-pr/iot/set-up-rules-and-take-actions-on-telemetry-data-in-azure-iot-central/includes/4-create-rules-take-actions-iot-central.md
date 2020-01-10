@@ -56,4 +56,4 @@ Currently, there are two available actions: email and webhooks. We use email in 
 
 Using webhooks enables more automation to be added to your IoT Central system.
 
-In the next unit, we will define a range of rules, similar to those outlined in this unit. Then, we will put the rules to the test!
+In the next unit, we'll define a range of rules, similar to the rules outlined in this unit. Then, we'll put the rules to the test!

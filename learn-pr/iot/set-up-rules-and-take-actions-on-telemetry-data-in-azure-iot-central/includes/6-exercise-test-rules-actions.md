@@ -1,4 +1,4 @@
-In this unit, we will test out our rules with the device and IoT Central apps running.
+In this unit, we'll test out our rules with the device and IoT Central apps running.
 
 ## Test the IoT Central rules and actions
 

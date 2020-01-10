@@ -1,4 +1,4 @@
-In this unit, you'll first download the required files. Then some essential tools are loaded. An Azure Maps account is created, if needed. Then we create a dashboard showing all the capabilities of the device template. Next, you'll create a real device, and record the connection settings needed for the remote device app.
+In this unit, you'll first download the required files, then import the capability model. Then we create a dashboard showing all the capabilities of the device template. Next, you'll create a real device, and record the connection settings needed for the remote device app. An Azure Maps account is created, if needed.
 
 ## Download the source code, and capability model
 
@@ -10,9 +10,9 @@ You've now created the IoT Central app. The next step is to download the require
 
 1. You'll only be working with two files. Choose either the **Program.cs** file (for C# developers), or the **app.js** file (for Node.js developers). All developers will need the **Refrigerated Truck Capability Model.JSON** file.
 
-## Import a capability model
+## Import the capability model into the IoT Central app
 
-A _capability model_ contains a definition of a device template. A device template can be created from scratch, but for this module we will import a pre-built capability model. The model defines the capabilities of a refrigerated truck.
+A _capability model_ contains a definition of a device template. A device template can be created from scratch, but for this module we'll import a pre-built capability model. The model defines the capabilities of a refrigerated truck.
 
 1. In the IoT Central portal, click **Device templates** in the left-hand menu.
 
@@ -52,7 +52,7 @@ To visualize the movements and state of the refrigerated truck, we need to creat
 
 1. Before adding more tiles, change the **View name** to something more specific, "Truck view", or something similar.
 
-1. Now, click each of the rest of the telemetry and properties capabilities in turn, starting at the top, and **Add tile**. We are going for function over form here, we can prettify the dashboard later. For now, we just want a dashboard that will confirm all the telemetry being sent from our remote device. There's no need to add the commands to the dashboard, though that option does exist.
+1. Now, click each of the rest of the telemetry and properties capabilities in turn, starting at the top, and **Add tile**. We're going for function over form here, we can prettify the dashboard later. For now, we just want a dashboard that will confirm all the telemetry being sent from our remote device. There's no need to add the commands to the dashboard, though that option does exist.
 
 1. When you've added all the tiles, scroll around a bit on your dashboard, and check out the wording in the tiles. You can drag tiles around, and the portal will try to rearrange them neatly.
 
@@ -80,7 +80,7 @@ By "real" device, we mean IoT Central understands that there's a remote app runn
 
 1. Change the **Device name** to a friendlier name, say "RefrigeratedTruck - 1".
 
-1. Leave the **Simulated** setting at **Off**. We are going to be building a real truck here. Well, a simulated _real_ truck! Setting this value to **On** instructs IoT Central to pump out random values for our telemetry. These random values can be useful in validating a device template.
+1. Leave the **Simulated** setting at **Off**. We're going to be building a real truck here. Well, a simulated _real_ truck! Setting this value to **On** instructs IoT Central to pump out random values for our telemetry. These random values can be useful in validating a device template.
 
 1. Click **Create**. Wait a few seconds, then your device list should be populated with a single entry. Note the **Device status** is **Registered**. Not until the device status is **Provisioned** will the IoT Central app accept a connection to the device. The coding unit that follows shows how to provision a device.
 

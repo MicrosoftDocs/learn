@@ -105,7 +105,7 @@ Node.js is a platform for building server apps, based on JavaScript. All the Jav
 ::: zone pivot="vs-csharp"
 
 1. Copy the Program.cs code that you downloaded, into the Program.cs file of the project.
-1. Replace the strings in the code (`ScopeID`, `DeviceID`, `PrimaryKey`, and `AzureMapsKey`) with the ID and key strings you stored in your "Truck Keys.txt" file.
+1. Replace the strings in the code (`ScopeID`, `DeviceID`, `PrimaryKey`, and `AzureMapsKey`) with the ID and key strings you stored in your "Truck keys.txt" file.
 1. In Visual Studio, select **Debug/Start without Debugging**.
 
 ::: zone-end
@@ -119,7 +119,7 @@ Node.js is a platform for building server apps, based on JavaScript. All the Jav
 ::: zone pivot="vscode-csharp"
 
 1. Copy the Program.cs code that you downloaded, into the Program.cs file of the project.
-1. Copy in the Scope ID, Device ID, Primary Key, and Azure Maps Key into the locations marked in the code.
+1. Replace the strings in the code (`ScopeID`, `DeviceID`, `PrimaryKey`, and `AzureMapsKey`) with the ID and key strings you stored in your "Truck keys.txt" file.
 1. In the terminal, enter `dotnet run`.
 
 ::: zone-end
@@ -166,4 +166,3 @@ If all goes well, go straight into the second test.
 If all is well, this is great progress. The truck is at its base, and in the correct state.
 
 The next step is to understand the role of rules and actions.
-

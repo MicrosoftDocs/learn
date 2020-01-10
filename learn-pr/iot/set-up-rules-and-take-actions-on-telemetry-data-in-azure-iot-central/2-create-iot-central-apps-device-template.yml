@@ -2,7 +2,7 @@
 uid: learn.iot.set-up-rules-and-take-action-on-telemetry-data-in-azure-iot-central.create-iot-central-apps-device-template
 metadata:
   title: Prepare the IoT Central app
-  description: Download the source code and capability model. If needed, create an Azure Maps account. Import the capability model into the IoT Central app. Create a rich dashboard to visualize a real device, then create the real device.
+  description: Download the source code and capability model. Import the capability model into the IoT Central app. Then, create a rich dashboard to visualize a real device, and create the real device itself.
   ms.date: 1/20/2020
   author: PeterTurcan
   ms.author: Olivier.Bloch
@@ -16,18 +16,6 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-
-  - content: 'Why do we need an Azure Maps account for this module?'
-    choices: 
-    - content: 'To renter the location of the truck on a map.'
-      isCorrect: false
-      explanation: The location of the truck is handled by the IoT Central dashboard.
-    - content: 'To calculate the best route from one location to another'
-      isCorrect: true
-      explanation: Azure Maps enables many route finding options.
-    - content: 'To display a map background'
-      isCorrect: false
-      explanation: We don't render any particular background in this module.
 
   - content: 'When selecting a device template type, which did we use in this module?'
     choices: 
@@ -49,3 +37,18 @@ quiz:
     - content: 'False'
       isCorrect: true
       explanation: The location of the truck is considered to be Telemetry.
+
+  - content: 'When creating a dashboard, which tile should be expanded beyond its default size?'
+    choices: 
+    - content: 'Truck state'
+      isCorrect: false
+      explanation: The default size shows all six truck states.
+    - content: 'Location'
+      isCorrect: true
+      explanation: The default tile size is a bit small when looking at a map.
+    - content: 'Contents Temperature'
+      isCorrect: false
+      explanation: Temperature is a single value, easily shown in the default tile.
+    - content: 'Contents state'
+      isCorrect: false
+      explanation: The default tile size is fine for the three contents states.
