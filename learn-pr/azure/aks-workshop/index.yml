@@ -20,7 +20,7 @@ abstract: |
 prerequisites: | 
   - Knowledge of Kubernetes and its concepts
   - Access to an Azure subscription
-iconUrl: http://via.placeholder.com/120x120
+iconUrl: /learn/achievements/aks-workshop.svg
 levels:
 - advanced
 roles:
