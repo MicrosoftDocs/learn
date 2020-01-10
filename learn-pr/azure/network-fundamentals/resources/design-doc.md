@@ -38,7 +38,7 @@ Identify the subtasks of *Networking Fundamentals*
 |---|---|---|---|---|
 | Introduction to Network Standards and Protocols | Understanding the basics of how networks are put together | Knowledge Check | Understand the different network protocols and network standards, how these relate to Azure networking | Yes |
 | What are LANs, WANs, and PANs | Understanding the basics of how networks are put together | Knowledge Check | Understand the differences between WAN, PAN and LAN, how these relate to Azure networking | Yes |
-| An introduction to IP/TCP Basics | Understanding the basics of how networks are put together | Knowledge Check | Understand network commmunication principals, how these relate to Azure networking | Yes |
+| An introduction to IP/TCP Basics | Understanding the basics of how networks are put together | Knowledge Check | Understand network communication principals, how these relate to Azure networking | Yes |
 
 
 ## Outline the units
