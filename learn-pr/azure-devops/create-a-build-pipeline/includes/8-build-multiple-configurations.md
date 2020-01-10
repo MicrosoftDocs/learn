@@ -20,7 +20,7 @@ Mara, excited to share her results, tracks down Amita to show her the build pipe
 
 Consider the following tasks that build and publish the *Space Game* web project's Release configuration. (Don't add this code to your *azure-pipelines.yml* file.)
 
-[!code-yml[](code/8-azure-pipelines-partial-release.yml?highlight=5,8,12,17)]
+[!code-yml[](code/8-azure-pipelines-partial-release.yml?highlight=5,9,14)]
 
 To build the Debug configuration, you might repeat these two tasks, but replace `Release` with `Debug`.
 
@@ -57,7 +57,7 @@ You'll now create a template that can build any configuration that's defined in 
 
 1. In Visual Studio Code, add this code to *build.yml*:
 
-    [!code-yml[](code/8-build.yml?highlight=4-5,9,12,16,21)]
+    [!code-yml[](code/8-build.yml?highlight=1-2,6,9,13,18)]
 
     These tasks look like the ones you defined earlier to build and publish the application. But in a template you work with input parameters differently than you work with normal variables. Here are two differences:
 
@@ -71,7 +71,7 @@ You'll now call the template that you just built from the pipeline. You'll do so
 
 1. In Visual Studio Code, modify *azure-pipelines.yml* as you see here:
 
-    [!code-yml[](code/8-azure-pipelines.yml?highlight=38-44)]
+    [!code-yml[](code/8-azure-pipelines.yml?highlight=41-43, 45-47)]
 
     This file looks like the original, except that it replaces the build and publish tasks with calls to the template that performs the same tasks.
 
@@ -95,9 +95,7 @@ You'll now push your changes to GitHub and see the pipeline run.
 
     ![The expanded template tasks in Azure Pipelines](../media/8-template-tasks.png)
 
-1. When the build completes, select the **Artifacts** button, select **drop**, and then expand the **drop** folder.
-
-    ![Azure Pipelines showing the Artifacts button](../media/8-artifacts-button.png)
+1. When the build completes,  go back to the summary page and select the published artifact as you did before. Expand the drop folder.
 
     You see that the pipeline produces a *.zip* file for both the Debug configuration and the Release configuration.
 
