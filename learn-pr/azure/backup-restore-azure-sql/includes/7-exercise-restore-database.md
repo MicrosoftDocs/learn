@@ -36,7 +36,7 @@ It can take up to 15 minutes for the first successful backup to finish. We need 
 
 Let's start by simulating a mistaken database modification.
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), select **All resources**, and then select the **sql-erp-db** database.
+1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true)menu or from the **Home** page, select **All resources**, and then select the **sql-erp-db** database.
 
 1. Select **Query editor**, and then sign in with the **dbadmin** user and the password that you specified for this account.
 
@@ -63,7 +63,7 @@ Let's start by simulating a mistaken database modification.
 
 The **Person** table was mistakenly deleted. Now, let's restore the database to its previous state.
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), select **All resources**, and then select the **sql-erp-db** database.
+1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **All resources**, and then select the **sql-erp-db** database.
 
 1. At the top of the **Overview** page, select **Restore**.
 
@@ -87,7 +87,7 @@ The **Person** table was mistakenly deleted. Now, let's restore the database to 
 
 The restored database should contain the **Person** table. You can check that in the portal.
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), select **All resources**, and then select the **sql-erp-db-restored** database.
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **All resources**, and then select the **sql-erp-db-restored** database.
 
 1. Select **Query editor**, and then sign in with the **dbadmin** user and the password that you specified for this account.
 

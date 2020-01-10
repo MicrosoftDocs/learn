@@ -8,7 +8,9 @@ To start, you'll use the Azure portal to create a new Azure AD tenant.
 
 1. Go to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
 
-1. Select **Create a resource**, select the **Identity** category, and then select **Azure Active Directory**.
+1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
+
+1. Select the **Identity** category, and then select **Azure Active Directory**.
 
     ![Creating a new Azure AD tenant](../media/4-create-tenant.png)
 
