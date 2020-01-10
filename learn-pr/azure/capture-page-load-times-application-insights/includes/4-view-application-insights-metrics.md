@@ -35,6 +35,6 @@ The Application Insights resource is separate from the App Service resource that
 
 When you enable runtime instrumentation in a web app, a link appears in the Azure portal that takes you from the web app resource to the Application Insights resource that receives the data. From the web app, you can go to the **Application Insights** page and select **View Application Insights data** to go to the Application Insights resource and make configuration changes. From there, select **Application Dashboard** on the **Overview** page to see the dashboard for that resource.
 
-Another way to view the Application Insights dashboard is to select **Dashboard** in the main left navigation pane in the Azure portal. If more than one dashboard is stored for your user account, you might need to switch to the Application Insights dashboard you want by selecting it in the drop-down list in the upper-left corner:
+Another way to view the Application Insights dashboard is to select **Dashboard** from the Azure portal menu. If more than one dashboard is stored for your user account, you might need to switch to the Application Insights dashboard you want by selecting it in the drop-down list in the upper-left corner:
 
 ![Selecting a dashboard](../media/4-selecting-a-dashboard.png)
