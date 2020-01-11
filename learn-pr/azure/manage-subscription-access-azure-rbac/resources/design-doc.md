@@ -109,7 +109,7 @@ Identify the subtasks of *Assign management access to subscription with Azure ro
 
     List the steps which apply the learning content from previous unit:
 
-    1. Log in to the Azure Portal as Azure AD global admin.
+    1. Sign in to the Azure portal as Azure AD global admin.
     1. Go to the properties section of AAD and toggle 'Access Management for Azure Resources' on. This causes the 'User Access Administrator' role to be assigned at root scope. (Include screenshot)
     1. Sign out and sign back in the refresh your access. (There is a bug with the toggle UI. If you click away and go back to that UI, it'll show as "no" unless you sign out and back in. It'll look like they don't need to turn it back off when they go back to that UI. So to avoid confusion they need to sign out and back in so the toggle looks like yes. And it'll be clear they need to hit No to disable it.)
     1. Verify that you have the User Access Administrator role at root scope. Azure AD > Users > (user) > Azure resources. (Include a screenshot as this isn't that easy to find.)
@@ -135,9 +135,9 @@ For Enterprise Agreements, see [Understand EA roles](https://docs.microsoft.com/
 ## Resources
 
 - Related module: [Secure your Azure resources with role-based access control (RBAC)](https://docs.microsoft.com/learn/modules/secure-azure-resources-with-rbac/)
-- [Elevate access to manage all Azure subscriptions and management groups](https://docs.microsoft.com/en-us/azure/role-based-access-control/elevate-access-global-admin)
-- [Add or change Azure subscription administrators](https://docs.microsoft.com/en-us/azure/billing/billing-add-change-azure-subscription-administrator)
-- [Best practices using RBAC](https://docs.microsoft.com/en-us/azure/role-based-access-control/overview#best-practice-for-using-rbac)
-- [Four fundamental RBAC roles](https://docs.microsoft.com/en-us/azure/role-based-access-control/rbac-and-directory-admin-roles#azure-rbac-roles)
-- [Some important Azure AD administrator roles](https://docs.microsoft.com/en-us/azure/role-based-access-control/rbac-and-directory-admin-roles#azure-ad-administrator-roles)
-- [Manage access to billing information for Azure](https://docs.microsoft.com/en-us/azure/billing/billing-manage-access)
+- [Elevate access to manage all Azure subscriptions and management groups](https://docs.microsoft.com/azure/role-based-access-control/elevate-access-global-admin)
+- [Add or change Azure subscription administrators](https://docs.microsoft.com/azure/billing/billing-add-change-azure-subscription-administrator)
+- [Best practices using RBAC](https://docs.microsoft.com/azure/role-based-access-control/overview#best-practice-for-using-rbac)
+- [Four fundamental RBAC roles](https://docs.microsoft.com/azure/role-based-access-control/rbac-and-directory-admin-roles#azure-rbac-roles)
+- [Some important Azure AD administrator roles](https://docs.microsoft.com/azure/role-based-access-control/rbac-and-directory-admin-roles#azure-ad-administrator-roles)
+- [Manage access to billing information for Azure](https://docs.microsoft.com/azure/billing/billing-manage-access)

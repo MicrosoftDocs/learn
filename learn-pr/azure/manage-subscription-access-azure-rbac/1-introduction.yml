@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.assign-management-access-with-azure-rbac.summary
-title: Summary
+uid: learn.azure.manage-subscription-access-azure-rbac.introduction
+title: Introduction
 metadata:
-  title: Summary
-  description: Summary
+  title: Introduction
+  description: Introduction
   ms.date: 01/13/2020
   author: cwatson-cat
   ms.author: cwatson
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 2
 content: |
-  [!include[](includes/5-summary.md)]
+  [!include[](includes/1-introduction.md)]
