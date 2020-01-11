@@ -135,9 +135,9 @@ For Enterprise Agreements, see [Understand EA roles](https://docs.microsoft.com/
 ## Resources
 
 - Related module: [Secure your Azure resources with role-based access control (RBAC)](https://docs.microsoft.com/learn/modules/secure-azure-resources-with-rbac/)
-- [Elevate access to manage all Azure subscriptions and management groups](https://docs.microsoft.com/en-us/azure/role-based-access-control/elevate-access-global-admin)
-- [Add or change Azure subscription administrators](https://docs.microsoft.com/en-us/azure/billing/billing-add-change-azure-subscription-administrator)
-- [Best practices using RBAC](https://docs.microsoft.com/en-us/azure/role-based-access-control/overview#best-practice-for-using-rbac)
-- [Four fundamental RBAC roles](https://docs.microsoft.com/en-us/azure/role-based-access-control/rbac-and-directory-admin-roles#azure-rbac-roles)
-- [Some important Azure AD administrator roles](https://docs.microsoft.com/en-us/azure/role-based-access-control/rbac-and-directory-admin-roles#azure-ad-administrator-roles)
-- [Manage access to billing information for Azure](https://docs.microsoft.com/en-us/azure/billing/billing-manage-access)
+- [Elevate access to manage all Azure subscriptions and management groups](https://docs.microsoft.com/azure/role-based-access-control/elevate-access-global-admin)
+- [Add or change Azure subscription administrators](https://docs.microsoft.com/azure/billing/billing-add-change-azure-subscription-administrator)
+- [Best practices using RBAC](https://docs.microsoft.com/azure/role-based-access-control/overview#best-practice-for-using-rbac)
+- [Four fundamental RBAC roles](https://docs.microsoft.com/azure/role-based-access-control/rbac-and-directory-admin-roles#azure-rbac-roles)
+- [Some important Azure AD administrator roles](https://docs.microsoft.com/azure/role-based-access-control/rbac-and-directory-admin-roles#azure-ad-administrator-roles)
+- [Manage access to billing information for Azure](https://docs.microsoft.com/azure/billing/billing-manage-access)
