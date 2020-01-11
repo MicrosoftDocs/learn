@@ -19,10 +19,10 @@ quiz:
     choices:
     - content: Azure Active Directory Domain Services
       isCorrect: true
-      explanation: According to the move operation support list, Azure AD Domain Services can't be moved. 
+      explanation: According to the move operation support list, Azure AD DS can't be moved. 
     - content: Azure Storage accounts
       isCorrect: false
-      explanation: According to the move operation support list, Azure Storage Accounts can be moved.
+      explanation: According to the move operation support list, Azure Storage accounts can be moved.
     - content: Azure virtual machines
       isCorrect: false
       explanation: According to the move operation support list, Azure virtual machines can be moved.
@@ -30,14 +30,14 @@ quiz:
     choices:
     - content: Azure Backup vault
       isCorrect: false
-      explanation: An Azure Backup vault can't be moved according to the move operation support list. 
+      explanation: An Azure Backup vault can't be moved, according to the move operation support list. 
     - content: Azure Application Gateway
       isCorrect: false
-      explanation: You can't move Azure Application Gateways according to the move operation support list. 
+      explanation: You can't move Azure Application Gateway, according to the move operation support list. 
     - content: Azure virtual networks  
       isCorrect: true
-      explanation: You can move Azure virtual networks can be moved according to the move operation support list. 
-  - content: When would you be able to move a virtual machine?
+      explanation: You can move Azure virtual networks, according to the move operation support list. 
+  - content: When can you move a virtual machine?
     choices:
     - content: You can move virtual machines, but you have to first remove any network security groups. 
       isCorrect: false

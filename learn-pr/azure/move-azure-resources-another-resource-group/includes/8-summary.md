@@ -4,16 +4,16 @@ You've seen how to:
 
 - Identify all resources in the production resource group. 
 - Check the limitations of resources and whether they can be moved to a new resource group.
-- Run a test validation to verify resources can move successfully.
-- Create a new resource group to hold the development resources using the Azure portal.
-- Move resources from the production resource group to the new resource group,
+- Run a test validation to verify that resources can move successfully.
+- Create a new resource group to hold the development resources by using the Azure portal.
+- Move resources from the production resource group to the new resource group.
 - Confirm that the resources were in the new group.
 
 By using the Azure portal, you moved resources to the correct place. Now your production resources are separate from your development resources.
 
 ## Clean up
 
-Delete the resources you created. Resources left running can cost you money. You can delete resources individually or delete the resource group to delete the entire set of resources.
+Delete the resources you created. Resources left running can cost you money. You can delete resources individually, or delete the resource group to delete the entire set of resources.
 
 ## Learn more
 
