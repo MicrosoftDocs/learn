@@ -28,15 +28,15 @@ To monitor our network, we'll need to use a secure network management protocol t
 
 - **Simple Network Management Protocol (SNMP)**
 
-Like switches and routers, the majority of Linux servers and network devices use SNMP. An SNMP-based agent is already preinstalled on the device and allows for configuration. The SNMP agent collects things like traffic on our network switch, memory usage, or even printer queues. The SNMP protocol communicates information about our device to our network monitoring and management solution (NMS).
+  Like switches and routers, the majority of Linux servers and network devices use SNMP. An SNMP-based agent is already preinstalled on the device and allows for configuration. The SNMP agent collects things like traffic on our network switch, memory usage, or even printer queues. The SNMP protocol communicates information about our device to our network monitoring and management solution (NMS).
 
 - **Windows Management Instrumentation (WMI)**
 
-Windows devices use WMI to provide information about the status of our device. We also use WMI to make changes to devices, such as scheduling processes to trigger, or updating system properties and settings. Windows Management Infrastructure is a newer version of WMI that has upgraded capabilities, such as better integration with PowerShell to run commands and scripts.
+  Windows devices use WMI to provide information about the status of our device. We also use WMI to make changes to devices, such as scheduling processes to trigger, or updating system properties and settings. Windows Management Infrastructure is a newer version of WMI that has upgraded capabilities, such as better integration with PowerShell to run commands and scripts.
 
 - **System Logging Protocol (Syslog)**
 
-System Logging Protocol (Syslog) is a protocol that lets our device send event messages and is used for event logging. For example, our web server might use Syslog to log events about failed attempts to access it, or our router could log events on user activities.
+  System Logging Protocol (Syslog) is a protocol that lets our device send event messages and is used for event logging. For example, our web server might use Syslog to log events about failed attempts to access it, or our router could log events on user activities.
 
 ## Best practices
 
