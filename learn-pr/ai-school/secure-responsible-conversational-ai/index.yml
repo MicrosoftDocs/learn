@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn-wwl.secure-responsible-conversational-ai
 metadata:
-  title: Secure your responsible conversational AI bot
+  title: Responsible conversational AI safety guidelines
   description: When building any AI system it's important to do so responsibly. In this course you will learn about Microsoft guidelines for the development of responsible conversational AI.
   ms.date: 08/27/2019
   author: RWortmanMorris
