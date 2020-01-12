@@ -6,7 +6,7 @@ Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?a
 
 ::: zone pivot="csharp"
 
-1. Select the **Create a resource** link at the top of the left-hand navigation. Everything you create on Azure is a resource.
+1. On the Azure portal menu or from the **Home** page, select **Create a resource**. Everything you create on Azure is a resource.
 
 1. The portal navigates you to the **Marketplace** page. From here, you can search for the resource you want to create or select one of the popular resources that people create in the Azure portal.
 
@@ -34,7 +34,7 @@ Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?a
 
 ::: zone pivot="java"
 
-1. Select the **Create a resource** link at the top of the left-hand navigation. Everything you create on Azure is a resource.
+1. On the Azure portal menu or from the **Home** page, select **Create a resource**. Everything you create on Azure is a resource.
 
 1. The portal navigates you to the **Marketplace** page. From here, you can search for the resource you want to create or select one of the popular resources that people create in the Azure portal.
 
@@ -60,7 +60,7 @@ Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?a
 
 ::: zone pivot="node"
 
-1. Select the **Create a resource** link at the top of the left-hand navigation. Everything you create on Azure is a resource.
+1. On the Azure portal menu or from the **Home** page, select **Create a resource**. Everything you create on Azure is a resource.
 
 1. The portal navigates you to the **Marketplace** page. From here, you can search for the resource you want to create or select one of the popular resources that people create in the Azure portal.
 
@@ -86,7 +86,7 @@ Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?a
 
 ::: zone pivot="python"
 
-1. Select the **Create a resource** link at the top of the left-hand navigation. Everything you create on Azure is a resource.
+1. On the Azure portal menu or from the **Home** page, select **Create a resource**. Everything you create on Azure is a resource.
 
 1. The portal navigates you to the **Marketplace** page. From here, you can search for the resource you want to create or select one of the popular resources that people create in the Azure portal.
 
@@ -117,7 +117,7 @@ Select **Review and Create** to navigate to the review page, then select **Creat
 
 The portal will display the deployment page, where you can view the status of your deployment. Once the app is ready, navigate to the new app in the Azure portal:
 
-1. Select the **All resources** menu on the left side navigation.
+1. On the Azure portal menu or from the **Home** page, select **All resources**.
 
 1. Select the App Service for your web app from the list. Make sure to select the App Service, and not the App Service plan.
 

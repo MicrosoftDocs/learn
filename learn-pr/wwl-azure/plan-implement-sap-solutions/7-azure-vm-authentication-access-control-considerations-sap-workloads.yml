@@ -3,7 +3,7 @@ uid: learn-pr.wwl.planning-implementing-sap-solutions-azure.azure-vm-authenticat
 title: Azure VM authentication and access control considerations for SAP workloads
 metadata:
   title: Azure VM authentication and access control considerations for SAP workloads
-  description: Azure VM authentication and access control considerations for SAP workloads
+  description: "Azure VM authentication and access control considerations for SAP workloads"
   ms.date: 12/20/2019
   author: wwlpublish
   ms.author: bradj
