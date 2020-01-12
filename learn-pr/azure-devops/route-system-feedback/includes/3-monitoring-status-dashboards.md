@@ -175,7 +175,7 @@ With a custom application, it's up to you to build the functionality that you ne
 
 ## The decision
 
-**Mara:** That's a lot of options. Where do you want to start:
+**Mara:** That's a lot of options. Where do you want to start?
 
 **Amita:** I think I'll start with Azure dashboards. I think it's straightforward to make one, and I like that you can control the time range. Also, it's easy to share the dashboard. Tim, do you want to get together so we can decide what the dashboard should show?
 
