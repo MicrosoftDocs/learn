@@ -11,11 +11,11 @@ In this part, you explore some of the ways you can build a monitoring and status
 
 ## The meeting
 
-**Amita**: I've been thinking about what Tim said, about how valuable monitoring the app and the infrastructure can be. I think it would be great to use that data in dashboards. I really like the visualizations for the pipeline. They're a great way to see what's happening quickly. Let's do the same for monitoring.
+**Amita:** I've been thinking about what Tim said, about how valuable monitoring the app and the infrastructure can be. I think it would be great to use that data in dashboards. I really like the visualizations for the pipeline. They're a great way to see what's happening quickly. Let's do the same for monitoring.
 
-**Mara**: I love pictures. Do you have any ideas?
+**Mara:** I love pictures. Do you have any ideas?
 
-**Amita**: Of course. Let me tell you about Azure dashboards and some other tools.
+**Amita:** Of course. Let me tell you about Azure dashboards and some other tools.
 
 ## What are Azure dashboards?
 
@@ -175,8 +175,8 @@ With a custom application, it's up to you to build the functionality that you ne
 
 ## The decision
 
-**Mara**: That's a lot of options. Where do you want to start:
+**Mara:** That's a lot of options. Where do you want to start?
 
-**Amita**: I think I'll start with Azure dashboards. I think it's straightforward to make one, and I like that you can control the time range. Also, it's easy to share the dashboard. Tim, do you want to get together so we can decide what the dashboard should show?
+**Amita:** I think I'll start with Azure dashboards. I think it's straightforward to make one, and I like that you can control the time range. Also, it's easy to share the dashboard. Tim, do you want to get together so we can decide what the dashboard should show?
 
-**Tim**: Sounds great. Off the top of my head, I think CPU, network, and disk operations might make a good starting point but let's talk about it.
+**Tim:** Sounds great. Off the top of my head, I think CPU, network, and disk operations might make a good starting point but let's talk about it.

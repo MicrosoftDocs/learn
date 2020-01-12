@@ -1,10 +1,10 @@
 The team is still planning out their strategy for collecting feedback from their beta testers.
 
-**Tim**: One thing we've overlooked is what our testers are going to be telling each other, and their friends, and any other gamer out there, on Twitter and Reddit and who knows where else. That could be more important than what they tell us.
+**Tim:** One thing we've overlooked is what our testers are going to be telling each other, and their friends, and any other gamer out there, on Twitter and Reddit and who knows where else. That could be more important than what they tell us.
 
-**Mara**: Oh, good point.
+**Mara:** Oh, good point.
 
-**Andy**: And bad news travels fast. We could put some controls into the code that would let us shut off any problem areas. Something like a release gate.
+**Andy:** And bad news travels fast. We could put some controls into the code that would let us shut off any problem areas. Something like a release gate.
 
 ## Capture and analyze user feedback
 
@@ -55,8 +55,8 @@ You can use the [Twitter Sentiment Analysis](https://www.digitalvidya.com/blog/t
 
 ## The decision
 
-**Tim**: I'm happy to keep an eye on tweets, subreddits, and such. I enjoy lurking.
+**Tim:** I'm happy to keep an eye on tweets, subreddits, and such. I enjoy lurking.
 
-**Andy**: Thanks. Mara, you and I can think about release gates.
+**Andy:** Thanks. Mara, you and I can think about release gates.
 
-**Tim**: Since we're talking about data collection, there's one more point I want to bring up.
+**Tim:** Since we're talking about data collection, there's one more point I want to bring up.

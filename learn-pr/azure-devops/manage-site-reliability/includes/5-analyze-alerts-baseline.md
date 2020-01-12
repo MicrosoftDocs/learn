@@ -4,11 +4,11 @@ Here, you learn about the alert experience in Azure Monitor, which includes Log 
 
 ## The meeting
 
-**Andy**: Mara, you said our SRE will need good analytic skills, which makes sense.
+**Andy:** Mara, you said our SRE will need good analytic skills, which makes sense.
 
-**Mara**: Maybe we could ask them to walk us through how they analyze an alert and determine the problem. Also, how do they write the alert rules to get the right information and to distinguish between what's normal and what's not.
+**Mara:** Maybe we could ask them to walk us through how they analyze an alert and determine the problem. Also, how do they write the alert rules to get the right information and to distinguish between what's normal and what's not.
 
-**Tim**: They need to know how to establish a baseline.
+**Tim:** They need to know how to establish a baseline.
 
 ## Analyze alerts to establish a baseline
 
@@ -142,6 +142,6 @@ Select **Columns** at the top of the page to select which columns to display.
 
 ## The final step
 
-**Andy**: OK, that's quite a list of requirements. I'll write it up and we can review it before I take it to Irwin. I think we can make a good case for opening a new position. Our success with the pipeline has given us much credibility.
+**Andy:** OK, that's quite a list of requirements. I'll write it up and we can review it before I take it to Irwin. I think we can make a good case for opening a new position. Our success with the pipeline has given us much credibility.
 
 The last thing I want to bring up affects all of us. Pushing out to production exposes us a lot more. There will inevitably be problems, failures, stress, and mistakes. How do we want to handle that?
