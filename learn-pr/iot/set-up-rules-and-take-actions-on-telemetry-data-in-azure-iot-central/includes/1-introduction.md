@@ -1,6 +1,6 @@
 Azure IoT Central enables the easy monitoring and management of a fleet of remote devices.
 
-This module builds on the app developed in the "Your first Azure IoT Central app" module, by adding rules and actions. It's not a requirement that you have completed the earlier module, but it may help your understanding of IoT Central if you do complete it.
+This module builds on the app developed in the [Your first Azure IoT Central app](https://docs.microsoft.com/learn/modules/create-your-first-iot-central-app/) module, by adding rules and actions. It's not a requirement that you have completed the earlier module, but it may help your understanding of IoT Central if you do complete it.
 
 The earlier module explains how to monitor and command the movements of a refrigerated truck. This module adds _rules and actions_ to the IoT Central app. Rules enable greater automation. A rule is triggered when one or more conditions are met. One or more actions are the result. These actions include sending an email, and sending data to a website (a _webhook_ action). This website could be your own custom app, or a productivity tool such as Microsoft Flow.
 
@@ -54,4 +54,3 @@ You'll construct the app displayed in the above image, from supplied components.
 1. You should now see a **Dashboard** with a few default links.
 
 The next time you visit your Azure central home page, select **My apps** in the left-hand menu, and an icon for your  **Refrigerated Truck** app should appear.
-
