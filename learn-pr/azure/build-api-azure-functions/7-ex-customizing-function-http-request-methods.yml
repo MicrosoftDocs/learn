@@ -10,7 +10,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-  zone_pivot_groups: azure-interface
 durationInMinutes: 10
 content: |
   [!include[](includes/7-ex-customizing-function-http-request-methods.md)]
