@@ -8,7 +8,7 @@ Event Grid aggregates all your events and provides routing from any source to an
 
 Event publishers and subscribers are decoupled by using the publisher/subscriber pattern.
 
-![Event Grid Publisher Subscriber Model](../media/2-eventgrid-pub-sub.png)
+![Event Grid Publisher Subscriber Model](../media/2-eventgrid-pub-sub.svg)
 
 ## Capabilities
 
