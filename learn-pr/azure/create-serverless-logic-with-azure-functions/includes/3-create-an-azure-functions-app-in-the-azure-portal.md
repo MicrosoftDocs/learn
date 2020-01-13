@@ -28,7 +28,7 @@ Let's create a function app in the Azure portal.
 
     ![Screenshot of the Azure portal menu open showing the Create a resource choice.](../media/3-create-function-app-1.png)
 
-1. Select **Compute > Function App**.
+1. Select **Compute > Function App**.
 
     ![Screenshot of the Azure azure marketplace showing the compute and function app highlighted.](../media/3-create-function-app-2.png)
 
@@ -64,7 +64,7 @@ Let's create a function app in the Azure portal.
 
     ![Screenshot of the Azure portal menu open showing the Create a resource choice.](../media/3-create-function-app-1.png)
 
-1. Select **Compute > Function App**.
+1. Select **Compute > Function App**.
 
     ![Screenshot of the Azure azure marketplace showing the compute and function app highlighted.](../media/3-create-function-app-2.png)
 

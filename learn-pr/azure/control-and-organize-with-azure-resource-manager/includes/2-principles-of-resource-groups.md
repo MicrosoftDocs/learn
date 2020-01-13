@@ -37,7 +37,7 @@ Let's walk through the steps you'd take to create a resource group in the Azure 
     > [!IMPORTANT]
     > Make sure to use your _own_ subscription. When you are in the free sandbox environment, it will not allow you to create resource groups. You can tell which subscription you are using by looking at the tenant name under your profile picture. You can switch tenants by selecting your profile picture and selecting **Switch Directory** from the options menu.
 
-1. On the left pane, select **+ Create a resource**
+1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
 
 1. Type **Resource Group** in the search box and hit Enter.
 
@@ -53,7 +53,7 @@ That's it, you've created a resource group that you can now use when you deploy 
 
 ## Explore a resource group and add a resource
 
-In the portal, select **Resource groups** on the left menu, and select your newly created resource group. Note that you may also see a resource group called **NetworkWatcherRG**. You can ignore this resource group, it's created automatically to enable Network Watcher in Azure virtual networks.
+On the Azure portal menu or from the **Home** page, select **Resource groups**, and select your newly created resource group. Note that you may also see a resource group called **NetworkWatcherRG**. You can ignore this resource group, it's created automatically to enable Network Watcher in Azure virtual networks.
 
 ![Overview panel of resource group](../media/2-rg-overview.png)
 

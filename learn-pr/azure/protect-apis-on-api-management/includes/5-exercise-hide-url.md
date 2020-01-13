@@ -11,7 +11,7 @@ The following exercise will demonstrate how to apply the **Mask URL** transforma
 ![Overview of API management](../media/3-remove-header.png)
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
-1. In the left menu, click **All Resources**, and then select your API gateway.
+1. On the Azure portal menu or from the **Home** page, select **All Resources**, and then select your API gateway.
 1. Under **API management**, click **APIs**, and then select **Census Data**. 
 1. On the top of the screen, select the **Design** tab, and then select **All operations**.
 1. In the **Outbound** processing section, click the **</>** icon.

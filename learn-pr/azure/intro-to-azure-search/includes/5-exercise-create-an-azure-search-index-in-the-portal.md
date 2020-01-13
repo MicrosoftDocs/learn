@@ -67,7 +67,9 @@ In the unit, you'll use the Import data wizard to create an index, and import yo
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-1. In the **All Resources** view of the portal, select the Azure Cognitive Search resource you created to navigate to its overview page. Note the ability to add indexes, import data, and search created indexes.
+1. On the Azure portal menu or from the **Home** page, select **All resources**.
+
+1. Select the Azure Cognitive Search resource you created to navigate to its overview page. Note the ability to add indexes, import data, and search created indexes.
 
 1. On the **northwindfitness** search Overview page, select **Import data**.
 

@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.azure.network-fundamentals
+metadata:
+  title: Networking Fundamentals - Principals
+  description: You'll learn the fundamental principals of computer networking to prepare you for the Azure Admin and Developer learning paths.
+  ms.date: 01/09/2020
+  author: cwatson-cat
+  ms.author: cwatson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Networking Fundamentals - Principals
+summary: You'll learn the fundamental principals of computer networking to prepare you for the Azure Admin and Developer learning paths.
+abstract: | 
+  In this module, you will:
+  - List the different network protocols and network standards
+  - List the different network types and topologies
+  - List the different types of network devices used in a network
+  - Describe network communication principals like TCP/IP, DNS, and ports
+  - Describe how these core components map to Azure networking
+prerequisites: | 
+  - None
+iconUrl: /learn/achievements/network-fundamentals.svg
+levels:
+- beginner
+roles:
+- administrator
+- solution-architect
+- developer
+products: 
+- azure
+units: 
+- learn.azure.network-fundamentals.introduction
+- learn.azure.network-fundamentals.network-types-topologies
+- learn.azure.network-fundamentals.network-infrastructure
+- learn.azure.network-fundamentals.network-protocols
+- learn.azure.network-fundamentals.ip-tcp-basics
+- learn.azure.network-fundamentals.summary
+badge:
+  uid: learn.azure.network-fundamentals.badge

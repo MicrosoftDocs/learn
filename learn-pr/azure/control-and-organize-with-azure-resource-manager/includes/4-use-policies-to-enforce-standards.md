@@ -81,7 +81,7 @@ Now that we have assigned the policy to our resource group, any attempts to crea
 > [!IMPORTANT]
 > Please note that the policy assignment may take up to 30 minutes to take effect. Because of this delay, in the following steps the policy validation may succeed but the deployment will still fail. If this happens, allow for additional time and retry your deployment.
 
-1. Click **+ Create a resource** in the top left of the portal.
+1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
 
 1. Search for **Storage Account** and select **Storage account** in the results. Click **Create**.
 

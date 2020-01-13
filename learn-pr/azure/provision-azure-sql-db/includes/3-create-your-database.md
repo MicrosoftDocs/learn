@@ -65,7 +65,7 @@ Over time if you realize you need additional compute power to keep up with deman
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-1. From the portal, click **Create a resource** from the upper left-hand corner. Select **Databases**, then select **SQL Database**.
+1. From the Azure portal menu or the **Home** page, select **Create a resource**. Select **Databases**, then select **SQL Database**.
 
    ![Screenshot of the Azure portal showing the Create a resource pane with the Databases section selected and the Create a resource, Databases, and SQL Database buttons highlighted.](../media/3-create-db.png)
 

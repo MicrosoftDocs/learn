@@ -1,6 +1,6 @@
 Your organization uses different resources for production and development environments. Some resources that were created for development work were put into the same resource group as production resources. You need to be able to identify which resources belong to a development resource group.
 
-In this unit, you'll create both development and production resources and put them in a production resource group. You'll tag your resources appropriately. You'll then filter the resources to identify all your development resources from a single location.
+In this unit, you'll create both development and production resources, and put them in a production resource group. You'll tag your resources appropriately. You'll then filter the resources to identify all your development resources from a single location.
 
 [!include[](../../../includes/azure-subscription-prerequisite.md)]
 
@@ -14,18 +14,18 @@ Create a resource group to act as the production resource group.
 1. Select **Review + create** > **Create**.
 1. Use the following quickstart template to create a virtual machine (VM) in your production resource group: [Deploy a simple Windows VM](https://azure.microsoft.com/resources/templates/101-vm-simple-windows/).  
 1. Select **Deploy to Azure** on the template page.
-1. For **Resource group**, select  **production-learn-rg**.
+1. For **Resource group**, select **production-learn-rg**.
 1. Enter a username, password, and **DNS Label Prefix**.
 1. Select **Purchase**.
 
 Now you need to create some additional resources that you'll eventually move to a development resource group.
 
-1. Select **Create a resource** on the left-hand side of the Azure portal.
-1. Search for **Storage account** and select **Create**.
+1. Select **Create a resource** on the left side of the Azure portal.
+1. Search for **Storage account**, and select **Create**.
 1. Select the resource group **production-learn-rg**.
 1. Enter a unique storage account name that starts with the prefix **dev**.
 1. Select **Review + create** > **Create**.
-1. Create another storage account by repeating step 1 to 5 again.
+1. Create another storage account by repeating steps 1 to 5 again.
 
 You now have a production resource group with two additional storage accounts that you'll move to a development resource group.
 
@@ -35,11 +35,11 @@ Now, use the Azure portal to apply tags to resources so you can identify and loc
 
 1. In the Azure portal, on the **Home** page, select **Resource groups**.
 1. Select the **production-learn-rg** resource group.
-1. Select the **checkbox** next to the **name** field for both storage accounts you created.
+1. Select the check box next to the **Name** field for both storage accounts you created.
 
     ![Screenshot that shows your development resources selected](../media/3-select-dev-resources.png)
 
-1. Select **Assign tags** at the top-right hand side.
+1. Select **Assign tags**.
 1. Enter the following values:
 
     ![Screenshot that shows the Assign tags pane](../media/3-assign-tags.png)

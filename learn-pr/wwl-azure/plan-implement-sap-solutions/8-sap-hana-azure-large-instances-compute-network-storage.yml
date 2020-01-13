@@ -3,7 +3,7 @@ uid: learn-pr.wwl.planning-implementing-sap-solutions-azure.sap-hana-azure-large
 title: SAP HANA on Azure (Large Instances) compute, network, and storage
 metadata:
   title: SAP HANA on Azure (Large Instances) compute, network, and storage
-  description: SAP HANA on Azure (Large Instances) compute, network, and storage
+  description: "SAP HANA on Azure (Large Instances) compute, network, and storage"
   ms.date: 12/20/2019
   author: wwlpublish
   ms.author: bradj

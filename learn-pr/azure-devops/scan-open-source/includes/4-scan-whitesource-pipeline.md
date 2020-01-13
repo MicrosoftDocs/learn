@@ -109,17 +109,17 @@ Take a moment to review the findings. You see that there are some issues to addr
 
 The team gets together to look at the results.
 
-**Amita**: Wow, we use more open source than I thought!
+**Amita:** Wow, we use more open source than I thought!
 
-**Tim**: And our vulnerability score is listed as medium. Is that okay?
+**Tim:** And our vulnerability score is listed as medium. Is that okay?
 
-**Andy**: It's too early to draw conclusions. For right now, our job is to identify what we're using, how each component is licensed, and which potential vulnerabilities we see.
+**Andy:** It's too early to draw conclusions. For right now, our job is to identify what we're using, how each component is licensed, and which potential vulnerabilities we see.
 
-**Tim**: I have some experience working with the CVE recommendations. I can take some more time to analyze the results and summarize what we're using ahead of our meeting with the legal team.
+**Tim:** I have some experience working with the CVE recommendations. I can take some more time to analyze the results and summarize what we're using ahead of our meeting with the legal team.
 
-**Andy**: That sounds great. Let us know what you need. We haven't modified any of the open-source components that we use. I think that in our our conversation with the legal team, we should verify that we can use software with those licenses. We can have a follow-up conversation with the security consultant to see which vulnerabilities we might want to address.
+**Andy:** That sounds great. Let us know what you need. We haven't modified any of the open-source components that we use. I think that in our our conversation with the legal team, we should verify that we can use software with those licenses. We can have a follow-up conversation with the security consultant to see which vulnerabilities we might want to address.
 
-**Mara**: I thought that all these concerns around licensing only affected big companies. It's good to know this is something we should keep in mind as we evaluate and use open source.
+**Mara:** I thought that all these concerns around licensing only affected big companies. It's good to know this is something we should keep in mind as we evaluate and use open source.
 
 ## Limit scanning to pull requests
 

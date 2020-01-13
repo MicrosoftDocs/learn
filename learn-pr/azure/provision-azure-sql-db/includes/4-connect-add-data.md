@@ -138,7 +138,7 @@ Remember that CRUD stands for _Create_, _Read_, _Update_, and _Delete_. These te
     > If this happens, you will need to add another firewall rule for your client. To do so, use the following steps:
     >
     > 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
-    > 1. Click **SQL databases** in the left-hand pane, then click on the name of your database.
+    > 1. Search for and select your database.
     > 1. Click **Set server firewall**.
     > 1. Specify a unique **Rule name**, then enter your IP address from the error message for both the **Start IP** and **End IP** fields.
     > 1. Click **Save**.
