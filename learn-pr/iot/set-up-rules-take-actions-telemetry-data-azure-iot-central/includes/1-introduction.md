@@ -11,10 +11,10 @@ In this module, we build the IoT Central app from a pre-prepared JSON file defin
 In this module you will:
 
 - Create an Azure IoT Central custom app, using the IoT Central portal
-- Import a device template for a custom device, using the IoT Central portal
-- Import a programming project to simulate a refrigerated truck, with routes selected by Azure Maps, using Visual Studio Code, or Visual Studio
-- Monitor and command the simulated device, from an IoT Central dashboard
-- Create a range of rules, with associated actions, responding to events that occur in the field
+- Import a capability model for a custom device, using the IoT Central portal
+- Create a programming project to simulate a refrigerated truck, using Visual Studio Code, or Visual Studio
+- Monitor and command the simulated truck, from an IoT Central dashboard
+- Create a range of rules and actions, responding to truck telemetry, using the IoT Central portal
 
 ## Prerequisites
 

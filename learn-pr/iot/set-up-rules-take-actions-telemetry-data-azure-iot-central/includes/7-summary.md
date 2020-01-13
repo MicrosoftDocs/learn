@@ -3,9 +3,10 @@ Congratulations, you have completed all the development and testing work for thi
 In this module, you learned how to:
 
 - Create an Azure IoT Central custom app, using the IoT Central portal
-- Import a device template for a custom device, using the IoT Central portal
-- Monitor and command a simulated refrigerated truck, from an IoT Central dashboard
-- Create a range of rules, with associated actions, responding to the movements and state of the refrigerated truck
+- Import a capability model for a custom device, using the IoT Central portal
+- Create a programming project to simulate a refrigerated truck, using Visual Studio Code, or Visual Studio
+- Monitor and command the simulated truck, from an IoT Central dashboard
+- Create a range of rules and actions, responding to truck telemetry, using the IoT Central portal
 
 ## Clean up
 
