@@ -18,7 +18,7 @@ quiz:
 
   - content: 'Why do we need an Azure Maps account for this module?'
     choices: 
-    - content: 'To renter the location of the truck on a map.'
+    - content: 'To enter the location of the truck on a map.'
       isCorrect: false
       explanation: The location of the truck is handled by the IoT Central dashboard.
     - content: 'To calculate the best route from one location to another'
