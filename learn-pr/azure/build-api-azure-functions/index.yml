@@ -34,5 +34,9 @@ units:
   - learn.azure.build-api-azure-functions.5-ex-create-function-project
   - learn.azure.build-api-azure-functions.6-understanding-http-request-methods
   - learn.azure.build-api-azure-functions.7-ex-customizing-function-http-request-methods
+  - learn.azure.build-api-azure-functions.8-cosmos-db-extension-for-vs-code
+  - learn.azure.build-api-azure-functions.9-ex-create-database
+  - learn.azure.build-api-azure-functions.10-querying-cosmos-db
+  - learn.azure.build-api-azure-functions.11-ex-querying-cosmos-db
 badge:
   uid: learn.azure.build-api-azure-functions.badge
