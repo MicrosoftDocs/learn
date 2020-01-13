@@ -3,8 +3,8 @@ uid: learn.wwl.deploy-sap-certified-offerings.os-support-azure-sap-workloads
 title: OS support of Azure for SAP workloads
 metadata:
   title: OS support of Azure for SAP workloads
-  description: OS support of Azure for SAP workloads
-  ms.date: 12/20/2019
+  description: "OS support of Azure for SAP workloads"
+  ms.date: 01/13/2020
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
