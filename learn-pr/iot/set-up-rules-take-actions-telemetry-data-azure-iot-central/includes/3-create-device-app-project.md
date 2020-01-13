@@ -128,7 +128,7 @@ A console screen should open, with the text: **Starting Truck number 1**.
 
 You are now ready to test the device app.
 
-### 1. Confirm the device app connects to Azure IoT Central
+### Confirm the device app connects to Azure IoT Central
 
 1. If one of the next lines on the console is **Device successfully connected to Azure IoT Central** you've made the connection. If you don't get this message, it usually means either the IoT Central app isn't running, or the connection key strings aren't correct.
 
@@ -138,13 +138,13 @@ You are now ready to test the device app.
 
 If all goes well, go straight into the second test.
 
-### 2. Confirm the telemetry functions send data on the specified interval
+### Confirm the telemetry functions send data on the specified interval
 
 1. A console message should appear every five seconds, with the contents temperature.
 
 1. Watch the telemetry for a short while, and mentally prepare for the main test of this module!
 
-### 3. Confirm the data is picked up correctly by IoT Central
+### Confirm the data is picked up correctly by IoT Central
 
 1. To verify the data is being received at IoT Central, make sure your IoT Central pp is open, and the device selected. If not, select the **Devices** entry in the left-hand menu. Double-click the real device (**RefrigeratedTruck - 1**), in the list of devices.
 

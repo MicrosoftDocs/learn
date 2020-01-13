@@ -82,7 +82,9 @@ By "real" device, we mean IoT Central understands that there's a remote app runn
 
 1. Leave the **Simulated** setting at **Off**. We're going to be building a real truck here. Well, a simulated _real_ truck! Setting this value to **On** instructs IoT Central to pump out random values for our telemetry. These random values can be useful in validating a device template.
 
-1. Click **Create**. Wait a few seconds, then your device list should be populated with a single entry. Note the **Device status** is **Registered**. Not until the device status is **Provisioned** will the IoT Central app accept a connection to the device. The coding unit that follows shows how to provision a device.
+1. Click **Create**. Wait a few seconds, then your device list should be populated with a single entry.
+    > [!NOTE]
+    > The **Device status** is **Registered**. Not until the device status is **Provisioned** will the IoT Central app accept a connection to the device. The coding unit that follows shows how to provision a device.
 
 1. Click on the **RefrigeratedTruck - 1** name, and you'll see the live dashboard, with lots of **Waiting for data** messages.
 

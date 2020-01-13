@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.iot.set-up-rules-and-take-action-on-telemetry-data-in-azure-iot-central.create-iot-central-apps-device-template
+uid: learn.iot.set-up-rules-take-actions-telemetry-data-azure-iot-central.create-iot-central-apps-device-template
 metadata:
   title: Prepare the IoT Central app
   description: Download the source code and capability model. Import the capability model into the IoT Central app. Then, create a rich dashboard to visualize a real device, and create the real device itself.
