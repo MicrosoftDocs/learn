@@ -74,7 +74,7 @@ To add the slot:
 
     ![The default home page in Azure App Service](../../shared/media/app-service-default.png)
 
-    By default, a deployment slot is accessible from the internet. In practice, you could configure an Azure virtual network that places your *swap* slot in a network that's not routable from the internet but that only your team can access. Your *production* slot would remain reachable from the internet.
+By default, a deployment slot is accessible from the internet. In practice, you could configure an Azure virtual network that places your *swap* slot in a network that's not routable from the internet but that only your team can access. Your *production* slot would remain reachable from the internet.
 
 ## Swap deployment slots in Staging
 

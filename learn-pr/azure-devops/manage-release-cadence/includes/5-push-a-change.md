@@ -35,7 +35,7 @@ Here you change the background color of the hero banner from gray to green.
 
     [!code-css[](code/5-site-1.scss?range=1-8&highlight=3)]
 
-1. In the code, replace the highlighted text with the following text, and then save the file.
+1. In the code, replace the highlighted text as shown in the following example. Then save the file.
 
     [!code-css[](code/5-site-2.scss?range=1-8&highlight=3)]
 

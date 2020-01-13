@@ -34,7 +34,7 @@ To clean up your resource group:
 
 Earlier in this module, you assigned the **Improve release cadence** work item to yourself. Here you move that work item to the **Done** column.
 
-In practice, "Done" often means putting working software into the hands of your users. For learning purposes, here you mark this work as complete because you have working load tests set up in your pipeline.
+In practice, "Done" often means putting working software into the hands of your users. For learning purposes, here you mark this work as complete because you can now choose a deployment pattern that enables you to release changes more quickly to your users.
 
 At the end of each _sprint_, or work iteration, your team might want to hold a retrospective meeting. In the meeting, you can share the work that you completed in the sprint, what went well, and what could be improved.
 

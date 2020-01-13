@@ -21,7 +21,7 @@ To follow the progression from the beginning, be sure to first complete these le
 
 We also recommend that you start at the beginning of this learning path, [Deploy applications with Azure DevOps](/learn/paths/deploy-applications-with-azure-devops?azure-portal=true).
 
-If you want to go through just this module, you need to set up a development environment on your Windows, macOS, or Linux system. You need the following resources:
+If you want to go through just this module, then you need to set up a development environment on your Windows, macOS, or Linux system. You need the following resources:
 
 * An [Azure DevOps organization](https://dev.azure.com?azure-portal=true)
 * An [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true)

@@ -10,15 +10,15 @@ But there is, as always, a problem. Let's drop in on the team meeting, where Tim
 
 **Tim:** It's so hard to keep everyone happy. Irwin thinks it takes too long to release new features. I can't do anything until management approves the release and, right now, there's no smooth way to roll out the features after they give the OK. The process is not only long but messy. It's manual, and there's downtime. The whole process can take five days. I know that's too long, but what am I supposed to do? Maybe if I just drink more coffee the solution will come to me.
 
-**Andy:** Coffee is essential to all effective problem solving, no doubt. . . . I think the solution we need is a good *deployment pattern*.
+**Andy:** Coffee is essential to all effective problem solving, no doubt. 
 
-A deployment pattern is an automated way to do the cutover. It's how we move the software from the final preproduction stage to live production. 
+I think the solution we need is a good deployment pattern. A deployment pattern is an automated way to do the cutover. It's how we move the software from the final preproduction stage to live production. 
 
 Picking the right pattern would definitely help you, like by minimizing downtime. Another advantage of a deployment pattern is that it gives us a chance to run tests that should really happen in production.
 
-Here are the possibilities we should consider:
-
 *Andy starts writing on the whiteboard.*
+
+Here are the possibilities we should consider:
 
 * Blue-green deployment
 * Canary releases
@@ -37,7 +37,7 @@ A _blue-green deployment_ reduces risk and downtime by running two identical env
 
 Let's say blue is live. As we prepare a new release, we do our final tests in the green environment. After the software is working in the green environment, we just switch the router so that all incoming requests go to the green environment. 
 
-Blue-green deployment also gives us a fast way to do a rollback. If anything goes wrong in the green environment, we just switch the router back to the blue environment.
+Blue-green deployment also gives us a fast way to do a rollback. If anything goes wrong in the green environment, then we just switch the router back to the blue environment.
 
 ## Canary releases
 
@@ -45,7 +45,7 @@ A _canary release_ is a way to identify potential problems early without exposin
 
 ![Diagram of a load balancer sending traffic to a canary version](../media/2-canary-deployment.png)
 
-In a canary release, we monitor what happens when we release the feature. If the release has problems, we apply a fix. After the canary release is known to be stable, we move it to the actual production environment.
+In a canary release, we monitor what happens when we release the feature. If the release has problems, then we apply a fix. After the canary release is known to be stable, we move it to the actual production environment.
 
 ## Feature toggles
 
@@ -75,9 +75,9 @@ _A/B testing_ compares two versions of a webpage or app to determine which one p
 
 In A/B testing, we randomly show users two or more variations of a page. Then we use statistical analysis to decide which variation performs better for our goals.
 
-## Progressive exposure deployment
+## Progressive-exposure deployment
 
-_Progressive exposure deployment_ is sometimes called _ring-based deployment_. It's another way to limit how changes affect users while making sure that those changes are valid in a production environment. 
+_Progressive-exposure deployment_ is sometimes called _ring-based deployment_. It's another way to limit how changes affect users while making sure that those changes are valid in a production environment. 
 
 Rings are basically an extension of the canary stage. The canary release releases to a stage to measure effect. Adding another ring is essentially the same idea.
 
