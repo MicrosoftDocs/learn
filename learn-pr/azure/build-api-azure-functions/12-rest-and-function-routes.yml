@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.build-api-azure-functions.12-rest-and-function-routes
+title: Understanding REST and Azure Functions routes
+metadata:
+  title: Understanding REST and Azure Functions routes
+  description: Understanding REST and Azure Functions routes
+  ms.date: 01/13/2020
+  author: burkeholland
+  ms.author: buhollan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 10
+content: |
+  [!include[](includes/12-rest-and-function-routes.md)]

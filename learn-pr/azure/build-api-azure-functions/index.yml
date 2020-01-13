@@ -38,5 +38,7 @@ units:
   - learn.azure.build-api-azure-functions.9-ex-create-database
   - learn.azure.build-api-azure-functions.10-querying-cosmos-db
   - learn.azure.build-api-azure-functions.11-ex-querying-cosmos-db
+  - learn.azure.build-api-azure-functions.12-making-functions-restful
+  - learn.azure.build-api-azure-functions.13-ex-make-functions-restful
 badge:
   uid: learn.azure.build-api-azure-functions.badge
