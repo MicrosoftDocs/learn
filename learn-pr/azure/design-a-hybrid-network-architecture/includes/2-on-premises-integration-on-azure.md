@@ -152,7 +152,7 @@ ExpressRoute creates a direct connection between your on-premises network and th
 - Point-to-point Ethernet Connection
 - Any-to-Any (IPVPN) Connection
 
-![Image showing an ExpressRoute connection](../media/2-expressroute-connection.png)
+![Image showing an ExpressRoute connection](../media/2-expressroute-connection.svg)
 
 ### Peering
 
@@ -162,7 +162,7 @@ Virtual networks can peer across subscriptions and Azure regions. Once peered, r
 
 While there are many reference architectures available when designing a hybrid network, one popular architecture is the site-to-site configuration. The simplified reference architecture shown below illustrates how you'd connect an on-premises network to your Azure cloud. The internet connection uses an IPsec VPN tunnel.
 
-![Image showing Azure vpn reference architecture](../media/2-vpn-architecture.png)
+![Image showing Azure vpn reference architecture](../media/2-vpn-architecture.svg)
 
 The architecture is composed of several components:
 
