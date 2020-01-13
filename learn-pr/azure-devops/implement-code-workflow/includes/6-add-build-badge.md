@@ -2,19 +2,19 @@ It's important for members of the team to know the status of the build. An easy 
 
 Andy is at his desk sifting through his emails. He's answering the third email that's related to the status of the build for the _Space Game_ website.
 
-**Andy**: There has to be some way to automate a status message. We have the pipeline, so we should be able to put a status somewhere. Maybe Mara knows how we can do it.
+**Andy:** There has to be some way to automate a status message. We have the pipeline, so we should be able to put a status somewhere. Maybe Mara knows how we can do it.
 
 Andy finds Mara talking with Amita in the break room.
 
-**Andy**: Hi, Amita. Mind if I borrow Mara for a second?
+**Andy:** Hi, Amita. Mind if I borrow Mara for a second?
 
-**Amita**: I have to get to a meeting anyway. Borrow away.
+**Amita:** I have to get to a meeting anyway. Borrow away.
 
-**Mara**: Hi Andy. What's up?
+**Mara:** Hi Andy. What's up?
 
-**Andy**: I really like the changes we've made to our build pipeline by using Azure Pipelines and Git is a great version control system. I was wondering, is there a way to let people know the status of the build?
+**Andy:** I really like the changes we've made to our build pipeline by using Azure Pipelines and Git is a great version control system. I was wondering, is there a way to let people know the status of the build?
 
-**Mara**: Yes, actually. We can use a build badge.
+**Mara:** Yes, actually. We can use a build badge.
 
 ## What is a build badge?
 
@@ -72,12 +72,12 @@ In this section, you commit your changes to the `master` branch on GitHub.
 
     In practice, you would switch to the `master` branch and pull the latest changes from GitHub the next time you need to add a feature or address a bug.
 
-**Andy**: Mara, you just made a change directly to `master`. Why didn't you use the flow you taught me? You know, with the feature branches.
+**Andy:** Mara, you just made a change directly to `master`. Why didn't you use the flow you taught me? You know, with the feature branches.
 
-**Mara**: We could have done that. But sometimes when people are changing only the README file or other documentation files, they commit to `master` right then. Plus, you and I were able to verify the work together before we merged the change.
+**Mara:** We could have done that. But sometimes when people are changing only the README file or other documentation files, they commit to `master` right then. Plus, you and I were able to verify the work together before we merged the change.
 
 But this brings up a good point. If we can all just commit to `master` when we want to, we could be letting problems in the code slip into our `master` branch.
 
-**Andy**: I've been meaning to talk to you about that.
+**Andy:** I've been meaning to talk to you about that.
 
 Andy and Mara continue this conversation while walking back to their offices.

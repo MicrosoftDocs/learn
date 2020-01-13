@@ -1,6 +1,6 @@
 The team is wrapping up their discussion about collecting customer feedback during the beta tests. Tim has one more topic.
 
-**Tim**: I have something I've been thinking about for the future. I might as well bring it up now so you know where I want to go. Our infrastructure's only going to get more complex, which means figuring out what's going on is only going to get harder.
+**Tim:** I have something I've been thinking about for the future. I might as well bring it up now so you know where I want to go. Our infrastructure's only going to get more complex, which means figuring out what's going on is only going to get harder.
 
 I've seen what automation can do, and I think it can help here, too. Have you ever heard of augmented search?
 
@@ -87,4 +87,4 @@ When choosing a monitoring tool, look for these features:
 
     Developers need to be able to look for patterns in log messages to identify if there is a problem in the code. Operators need to perform root cause analysis across multiple log files to identify the source of the problem in complex applications and systems.
 
-**Andy**: Thanks for bringing that up. I like that we're thinking ahead and not just reacting. But, speaking of reacting, let's get ready for beta!
+**Andy:** Thanks for bringing that up. I like that we're thinking ahead and not just reacting. But, speaking of reacting, let's get ready for beta!

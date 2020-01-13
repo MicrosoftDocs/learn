@@ -1,9 +1,9 @@
 
 The Tailspin team is meeting to talk about how they'll handle the pressures of making the live production site a part of the pipeline.
 
-**Mara**: DevOps, and I'm sure this comes as no surprise to any of us, advocates blameless postmortems. We just try to figure out what happened and how we can improve.
+**Mara:** DevOps, and I'm sure this comes as no surprise to any of us, advocates blameless postmortems. We just try to figure out what happened and how we can improve.
 
-**Andy**: Can you explain more?
+**Andy:** Can you explain more?
 
 ## A blameless postmortem
 
@@ -53,6 +53,6 @@ Failure happens. In order to understand how failures happen, we first have to un
 
 ## The end of the meeting
 
-**Amita**: I think we can do this. We're a good team and we trust each other. Also, I plan on bringing donuts to every postmortem.
+**Amita:** I think we can do this. We're a good team and we trust each other. Also, I plan on bringing donuts to every postmortem.
 
-**Tim**: That's the answer.
+**Tim:** That's the answer.

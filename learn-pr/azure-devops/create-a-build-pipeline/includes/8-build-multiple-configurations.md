@@ -8,13 +8,13 @@ Let's begin by checking in with Mara and Amita.
 
 Mara, excited to share her results, tracks down Amita to show her the build pipeline.
 
-**Amita**: I'm impressed you got this working so quickly! In fact, I was just coming to see you because I got an email telling me the build was ready. Thank you! But I see that the pipeline builds only the Release configuration. We also use Debug builds so we can capture additional information if the application crashes. Can we add that?
+**Amita:** I'm impressed you got this working so quickly! In fact, I was just coming to see you because I got an email telling me the build was ready. Thank you! But I see that the pipeline builds only the Release configuration. We also use Debug builds so we can capture additional information if the application crashes. Can we add that?
 
-**Mara**: Absolutely. I forgot to consider Debug builds when I set this up. How about we sit down together and add it?
+**Mara:** Absolutely. I forgot to consider Debug builds when I set this up. How about we sit down together and add it?
 
-**Amita**: You showed me the YAML file that defines the build steps, but I'm not sure I would know how to modify it.
+**Amita:** You showed me the YAML file that defines the build steps, but I'm not sure I would know how to modify it.
 
-**Mara**: That's OK. You can watch while I type. We can think through it together.
+**Mara:** That's OK. You can watch while I type. We can think through it together.
 
 ## How might you define both build configurations?
 

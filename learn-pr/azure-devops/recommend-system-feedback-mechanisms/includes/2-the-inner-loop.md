@@ -4,7 +4,7 @@ Today, Irwin, the product manager is joining the team meeting. He has exciting n
 
 ## The meeting
 
-**Irwin**: As you know, we're gearing up for a new release of the game and the website. We've decided that, to make our products the best they can be, we're going to do beta testing. Marketing has picked a few of our most dedicated gamers. We're going to give them access to the staging environments and let them play. They'll also be checking out the website that you all have been building.
+**Irwin:** As you know, we're gearing up for a new release of the game and the website. We've decided that, to make our products the best they can be, we're going to do beta testing. Marketing has picked a few of our most dedicated gamers. We're going to give them access to the staging environments and let them play. They'll also be checking out the website that you all have been building.
 
 Our first priority will be to fix the bugs they find. At least for the website, now that you have a CI/CD pipeline in place, you should have a  fast turnaround. We could probably even add new features to the website, if they ask for them!
 
@@ -12,9 +12,9 @@ We'll also need to figure out how to collect data about what they're doing. It's
 
 _Tim looks around._
 
-**Tim**: Why do I feel like I'm being punished for doing a good job?
+**Tim:** Why do I feel like I'm being punished for doing a good job?
 
-**Andy**: You know, I think we have to face the fact that we're always going to be asked for more, faster, with the assumption that there won't be any problems once the software's in production. I'm going to share some of the things I learned in a course I'm taking on how to improve the software lifecycle processes. Get ready to take notes.
+**Andy:** You know, I think we have to face the fact that we're always going to be asked for more, faster, with the assumption that there won't be any problems once the software's in production. I'm going to share some of the things I learned in a course I'm taking on how to improve the software lifecycle processes. Get ready to take notes.
 
 ## What's the inner loop?
 
@@ -107,12 +107,12 @@ This doesn't mean that breaking code up into separate packages is a bad thing. Y
 
 Andy takes a deep breath.
 
-**Andy**: Any questions?
+**Andy:** Any questions?
 
-**Mara**: I'm willing to take a look at any dependencies we might have.
+**Mara:** I'm willing to take a look at any dependencies we might have.
 
-**Andy**: Great. Will you work with me on updating the value stream map we made? I think we might be able to look at it in terms of experimentation, feedback collection and tax.
+**Andy:** Great. Will you work with me on updating the value stream map we made? I think we might be able to look at it in terms of experimentation, feedback collection and tax.
 
-**Mara**: Deal.
+**Mara:** Deal.
 
-**Amita**: But we still have a conflict between speed and reliability. What do we do about that?
+**Amita:** But we still have a conflict between speed and reliability. What do we do about that?
