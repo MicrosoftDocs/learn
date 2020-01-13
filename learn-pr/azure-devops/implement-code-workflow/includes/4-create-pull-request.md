@@ -8,11 +8,11 @@ Recall that a _pull request_ tells the other developers that you have code ready
 
 Before we start, let's check in with Mara and Andy.
 
-**Andy**: Hi, Mara. I know you've got a build pipeline running on Azure. I'm adding a feature to the website and I want to see the build process for myself. Are we ready to do that?
+**Andy:** Hi, Mara. I know you've got a build pipeline running on Azure. I'm adding a feature to the website and I want to see the build process for myself. Are we ready to do that?
 
-**Mara**: Absolutely. I created the pipeline on a branch. Why don't we set up a pull request and get it merged into `master` so you can use the pipeline, too?
+**Mara:** Absolutely. I created the pipeline on a branch. Why don't we set up a pull request and get it merged into `master` so you can use the pipeline, too?
 
-**Andy**: Sounds great. Let's take a look.
+**Andy:** Sounds great. Let's take a look.
 
 ## Create a branch and add starter code
 

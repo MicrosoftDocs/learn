@@ -1,8 +1,8 @@
 The team is meeting to put together a job description for an SRE. They've come to a common understand of what an SRE is. Now, they want to define some specific skills.
 
-**Tim**: To my mind, an SRE needs to be able to anticipate problems and the only way to do that is to use a monitoring system. Given that we're using Azure DevOps, I think they need experience with Application Insights.
+**Tim:** To my mind, an SRE needs to be able to anticipate problems and the only way to do that is to use a monitoring system. Given that we're using Azure DevOps, I think they need experience with Application Insights.
 
-**Mara**: Let's take a look at what it does.
+**Mara:** Let's take a look at what it does.
 
 ## Application Insights
 
@@ -158,6 +158,6 @@ Select the links to open **Metric Explorer** and **Search** to find relevant rep
 
 ## The next skill set
 
-**Andy**: OK, so what about Tim's point that we're going to need ongoing monitoring?
+**Andy:** OK, so what about Tim's point that we're going to need ongoing monitoring?
 
-**Amita**: Good point. Let's talk about that next.
+**Amita:** Good point. Let's talk about that next.

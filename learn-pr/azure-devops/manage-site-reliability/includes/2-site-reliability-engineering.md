@@ -6,13 +6,13 @@ Let's listen in as they discuss their concerns.
 
 ## The morning meeting
 
-**Andy**: OK, folks, we're looking at a significant change coming up. We'll be making the production environment a part of our pipeline. There are many details to work out, but one issue I want to bring up is reliability. How do we make sure the production site is always reliable and always available?
+**Andy:** OK, folks, we're looking at a significant change coming up. We'll be making the production environment a part of our pipeline. There are many details to work out, but one issue I want to bring up is reliability. How do we make sure the production site is always reliable and always available?
 
-**Tim**: I think one part of that question is who's going to be responsible. Someone needs to oversee the site on a daily basis and none of us has the time to do that. That's a job and it's called a site reliability engineer, or SRE.
+**Tim:** I think one part of that question is who's going to be responsible. Someone needs to oversee the site on a daily basis and none of us has the time to do that. That's a job and it's called a site reliability engineer, or SRE.
 
 That person is responsible for the site. They need to  oversee deployments, monitor overall performance, review error logs, troubleshoot problems, and respond to alerts.
 
-**Andy**: I agree. In the interim, I think all of us will have to help out, but what we really need to do is hire someone. The real purpose of this meeting is to come up with a job description. What skills are we looking for? What tools should our SRE understand? What kinds of questions should we be asking?
+**Andy:** I agree. In the interim, I think all of us will have to help out, but what we really need to do is hire someone. The real purpose of this meeting is to come up with a job description. What skills are we looking for? What tools should our SRE understand? What kinds of questions should we be asking?
 
 ## What is site reliability engineering?
 
@@ -49,6 +49,6 @@ Other key skills for a good SRE focus on application monitoring and diagnostics.
 
 ## The next step
 
-**Andy**: OK, all of us are clear on what SRE is. Now, what skill set are we looking for?
+**Andy:** OK, all of us are clear on what SRE is. Now, what skill set are we looking for?
 
-**Tim**: Let's define that next. I have some ideas.
+**Tim:** Let's define that next. I have some ideas.

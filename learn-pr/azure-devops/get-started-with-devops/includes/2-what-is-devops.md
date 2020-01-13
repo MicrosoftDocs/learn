@@ -2,33 +2,33 @@ DevOps is the union of people, process, and products to enable continuous delive
 
 Mara has called a short meeting with her teammates. Everyone has shown up but no one wants to be there. She's put a box of donuts on the table.
 
-**Mara**: Hi, thanks for coming. I wanted to talk more about our value stream map and how we can make our processes more efficient.
+**Mara:** Hi, thanks for coming. I wanted to talk more about our value stream map and how we can make our processes more efficient.
 
 Mara's value stream map is still on the whiteboard from their previous meeting:
 
 ![A whiteboard showing the value stream map](../media/2-vsm-whiteboard1.png)
 
-**Mara**: Our value stream map shows where we lose efficiency in delivering value to our end users. Just like everyone else, we can improve. And we can decide which areas to tackle first.
+**Mara:** Our value stream map shows where we lose efficiency in delivering value to our end users. Just like everyone else, we can improve. And we can decide which areas to tackle first.
 
-**Andy**: This shows us where we have problems but not what to do about them.
+**Andy:** This shows us where we have problems but not what to do about them.
 
-**Mara**: Right, it's an exercise that helps point us in the right direction. As for what to do about our problems, I think DevOps will help us. At my last company, our deployment rates went way up, lead times were much faster, and operations had far fewer incidents. It took us a while to get there but it was worth it. DevOps isn't a quick fix.
+**Mara:** Right, it's an exercise that helps point us in the right direction. As for what to do about our problems, I think DevOps will help us. At my last company, our deployment rates went way up, lead times were much faster, and operations had far fewer incidents. It took us a while to get there but it was worth it. DevOps isn't a quick fix.
 
-**Tim**: I know someone who just got a job as a DevOps engineer. I think it's more for developers. That sounds like you, Andy.
+**Tim:** I know someone who just got a job as a DevOps engineer. I think it's more for developers. That sounds like you, Andy.
 
-**Mara**: DevOps isn't a job title.
+**Mara:** DevOps isn't a job title.
 
-**Amita**: Is there any software program we can get that will help us along, or a template? Maybe there's a DevOps spreadsheet.
+**Amita:** Is there any software program we can get that will help us along, or a template? Maybe there's a DevOps spreadsheet.
 
-**Mara**: DevOps isn't a piece of software.
+**Mara:** DevOps isn't a piece of software.
 
-**Andy**: It's more like a methodology.
+**Andy:** It's more like a methodology.
 
-**Mara**: Not really.
+**Mara:** Not really.
 
 **Andy, Amita, Tim**: So what is it?!
 
-**Mara**: Here's the definition I like to use:
+**Mara:** Here's the definition I like to use:
 
 > _DevOps is the union of people, process, and products to enable continuous delivery of value to our end users._
 
@@ -40,22 +40,22 @@ In fact, Abel Wang, a Cloud Advocate at Microsoft, has a great set of videos wit
 
 Our goal is to give our customers games they'll love. We do that by working together with a shared set of practices and tools.
 
-**Amita**: What does that mean? What shared practices? What shared tools?
+**Amita:** What does that mean? What shared practices? What shared tools?
 
-**Mara**: Here's what I mean by practices:
+**Mara:** Here's what I mean by practices:
 
 - **Agile planning**. Together, we'll create a backlog of work that everyone on the team and in management can see. We'll prioritize the items so we know what we need to work on first. The backlog can include user stories, bugs, and any other information that helps us.
 - **Continuous integration (CI)**. We'll automate how we build and test our code. We'll run that every time a team member commits changes to version control.
 - **Continuous delivery (CD)**. CD is how we test, configure, and deploy from a build to a QA or production environment.
 - **Monitoring**. We'll use telemetry to get information about an application's performance and usage patterns. We can use that information to improve as we iterate.
 
-**Amita**: I don't know about automated testing. My tests are manual and I do them after Andy hands off the code to me. I don't have time to change how I do everything.
+**Amita:** I don't know about automated testing. My tests are manual and I do them after Andy hands off the code to me. I don't have time to change how I do everything.
 
-**Tim**: There's no way I'm letting any of you deploy to production.
+**Tim:** There's no way I'm letting any of you deploy to production.
 
-**Andy**: This will scare management. They never think further than the next release and they always want it yesterday.
+**Andy:** This will scare management. They never think further than the next release and they always want it yesterday.
 
-**Mara**: I know what you mean about management. I put together this handout about what makes an elite performing team.
+**Mara:** I know what you mean about management. I put together this handout about what makes an elite performing team.
 
 ## What makes an elite performing team?
 

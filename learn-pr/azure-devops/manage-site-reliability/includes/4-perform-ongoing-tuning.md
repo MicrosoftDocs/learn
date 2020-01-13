@@ -2,9 +2,9 @@ In this part, you learn about processes that you can implement to monitor site r
 
 ## The meeting
 
-**Amita**: I think they need to show us how well they can use Application Insights and Smart Detection. We may all be affected once we start getting alerts. What should alerts be about? What kinds of alerts are there?
+**Amita:** I think they need to show us how well they can use Application Insights and Smart Detection. We may all be affected once we start getting alerts. What should alerts be about? What kinds of alerts are there?
 
-**Mara**: Maybe we should come up with a sort of style guide.
+**Mara:** Maybe we should come up with a sort of style guide.
 
 ## Monitoring and alerting
 
@@ -100,6 +100,6 @@ Here are some reasons you might break the above guidelines:
 
 ## The last skill set
 
-**Andy**: That's quite a list. Is there anything else?
+**Andy:** That's quite a list. Is there anything else?
 
-**Mara**: They need good analytic skills.
+**Mara:** They need good analytic skills.

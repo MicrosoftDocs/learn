@@ -7,9 +7,9 @@ In this part, you'll learn:
 
 ## The meeting
 
-**Tim**: I know we've covered how we'll learn what our testers think of the website, but I need to know how the website impacts the infrastructure. I need metrics and logs for both. Of course, it needs to fit in with our pipeline. I've been doing a little research. Are any of you familiar with Azure Monitor?
+**Tim:** I know we've covered how we'll learn what our testers think of the website, but I need to know how the website impacts the infrastructure. I need metrics and logs for both. Of course, it needs to fit in with our pipeline. I've been doing a little research. Are any of you familiar with Azure Monitor?
 
-**Amita**: Tell us more.
+**Amita:** Tell us more.
 
 ## What is continuous monitoring?
 
@@ -245,6 +245,6 @@ Azure monitoring tools enable you to identify, analyze, and troubleshoot issues.
 
 ## The decision
 
-**Tim**: Monitoring will make it easy for us to fix problems if they crop up. But it will also give me an idea of how to plan for the future as we scale up. It would be nice to have an idea of what I'll need before the fact and not after.
+**Tim:** Monitoring will make it easy for us to fix problems if they crop up. But it will also give me an idea of how to plan for the future as we scale up. It would be nice to have an idea of what I'll need before the fact and not after.
 
-**Andy**: Go for it.
+**Andy:** Go for it.
