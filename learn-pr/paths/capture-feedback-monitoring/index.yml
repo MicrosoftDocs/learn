@@ -26,7 +26,7 @@ prerequisites: |
   - [Build applications with Azure DevOps](/learn/paths/build-applications-with-azure-devops)
   - [Deploy applications with Azure DevOps](/learn/paths/deploy-applications-with-azure-devops)
   - [Automate your deployments with Azure DevOps](/learn/paths/automate-deployments-azure-devops)
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/azure-devops/capture-feedback-monitoring.svg
 levels:
 - intermediate
 roles:
