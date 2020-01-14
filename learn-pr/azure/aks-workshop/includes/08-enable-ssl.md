@@ -205,6 +205,8 @@ You should be able to open the hostname you configured on the ingress in your we
 
 Verify that the frontend is accessible over HTTPS and that the certificate is valid.
 
-<img width="500" alt="Valid SSL/TLS certificate" src="../media/08-ratings-web-cert.png" />
+<!-- <img width="500" alt="Valid SSL/TLS certificate" src="../media/08-ratings-web-cert.png" /> -->
+
+![Screenshot of the valid SSL/TLS certificate](../media/08-ratings-web-cert.png)
 
 In this exercise, you deployed cert-manager, configured it to automatically issue Let's Encrypt certificates and configured the ingress created before to serve encrypted SSL/TLS traffic through the generated certificates.
