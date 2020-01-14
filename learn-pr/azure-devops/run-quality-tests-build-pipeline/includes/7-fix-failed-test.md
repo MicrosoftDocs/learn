@@ -300,7 +300,7 @@ In this section, you fix the error by changing the code back to its original sta
 
 1. Return to Azure Pipelines. Watch the change move through the pipeline. The tests pass, and the overall build succeeds.
 
-    Optionally, to verify the test results, you can select the **Summary** and **Code Coverage** tabs when the build completes.
+    Optionally, to verify the test results, you can select the **Tests** and **Code Coverage** tabs when the build completes.
 
     You can also check out the dashboard to view the updated results trend.
 
