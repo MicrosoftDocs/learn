@@ -26,7 +26,8 @@ When running SAP products on Linux, you should also review the following SAP Not
 * 2694118 - Red Hat Enterprise Linux HA Add-On on Azure
 
 
-> **Note**: Using multi-SID cluster configurations for SAP Central Services is supported with Windows Server as guest operating system on Azure VMs, but it is not supported with any of Linux distributions.
+> [!Note]
+> Using multi-SID cluster configurations for SAP Central Services is supported with Windows Server as guest operating system on Azure VMs, but it is not supported with any of Linux distributions.
 
 ## SAP HANA on Azure (Large Instances)
 SAP-certified operating systems supported for SAP products on SAP HANA on Azure (Large Instances) include: 

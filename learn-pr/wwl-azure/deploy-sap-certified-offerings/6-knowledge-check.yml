@@ -3,16 +3,14 @@ uid: learn.wwl.deploy-sap-certified-offerings.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: Knowledge check
-  ms.date: 12/20/2019
+  description: "Knowledge check"
+  ms.date: 01/13/2020
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 durationInMinutes: 2
-content: |
-  [!include[](includes/6-knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:
