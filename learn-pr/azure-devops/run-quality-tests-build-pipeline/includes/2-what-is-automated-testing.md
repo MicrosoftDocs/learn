@@ -4,7 +4,7 @@ Let's begin by checking in with the Tailspin web team.
 
 ## The need for automated testing
 
-Mara, the newest member of the team, is slowly introducing her teammates to DevOps and Azure DevOps. In particular, she's using Azure Boards and Azure Pipelines to get everyone started.
+Mara, the newest member of the team, is slowly introducing her teammates to DevOps and Microsoft Azure DevOps. In particular, she's using Azure Boards and Azure Pipelines to get everyone started.
 
 To begin the project, the team has identified three key needs to address:
 
