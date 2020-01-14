@@ -6,7 +6,15 @@ This module deals with the subject of monitoring the behavior of IT systems, whi
 
 ## Learning objectives
 
-- TBD
+- Explain the main argument in favor of continual and consistent monitoring and oversight in cloud-based IT systems
+- Describe the three types of quantitative measurements that play a role in monitoring
+- Understand the mechanics of monitoring platforms that utilize agents to collect and report back information
+- Understand the mechanics of monitoring platforms that rely upon pre-existing sources of information such as service logs to analyze performance
+- Understand the metrics that are the most beneficial to monitoring
+- Learn how measurements are used to judge performance levels
+- Describe the justification for problem ticketing
+- Describe what KPIs are and how they differ from metrics
+- Discuss the concept of “everyday remediation”
 
 ## Prerequisites
 
