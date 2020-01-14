@@ -19,21 +19,21 @@ When you don't provide an initial YAML file for your project, Azure Pipelines ca
 
     ![Azure Pipelines showing the initial build configuration](../media/6-initial-pipeline-yml.png)
 
-    This is a very basic configuration that Azure DevOps provides for you based on your application type, ASP.NET Core.
+    This is a very basic configuration that Azure DevOps provides for you based on your application type, ASP.NET Core. 
 
 1. On the **Review** tab, select **Save and run**. Then select **Save and run** a second time to commit your changes to GitHub and start the build.
 
 ## Watch the pipeline run
 
-Under **Jobs** select **Job**, trace the build process through each of the steps. When the build completes, select **View raw log**.
+Under **Jobs** select **Job**, trace the build process through each of the steps. When the build completes, optionally select **View raw log**.
 
-Remember that at this point, you have a very basic build definition. It doesn't yet specify all of the tasks that are needed to build your app.
+Remember that at this point, you have a very basic build definition for a .NET Core Application. It is a shell and doesn't yet specify all of the tasks that are needed to build your app. As well, it doesn't meet the requirements that Andy and Mara have discussed.
 
-Here you see the minimum number of steps needed to prepare the VM, fetch the latest source code from GitHub, run `dotnet build`, and clean up:
+Here you see the steps that the build definition created. It prepares the VM, although it is using a Windows VM and Andy and Mara need Ubuntu. It fetches the latest source code from GitHub, runs `dotnet build`, and a few other things:
 
 ![Initial build configuration](../media/6-initial-build.png)
 
-This configuration is a great start because now you have a starting point for adding build tasks.
+This configuration is a great start because now you have a starting point for adding build tasks. However, it needs editing to meet the requirements for the Tailspin build.
 
 > [!TIP]
 > Check your email. You might have already received a build notification with the results of your run. You can use these notifications to let your team members know when builds complete and whether each build passed or failed.
