@@ -2,7 +2,7 @@ Your company plans to migrate the majority of its on-premises resources to Azure
 
 To handle the migration, you'll produce a network integration plan for Azure that includes a selection of the best hybrid network options available in Azure that meet the organization's requirements for hybrid connectivity.
 
-In this unit, you'll explore on-premises connectivity in the Azure platform. You'll also get an overview of Azure Virtual Network, and see how to use VPN Gateways to secure traffic to an on-premises network.
+In this unit, you'll explore on-premises connectivity in the Azure platform. You'll also get an overview of Azure Virtual Network, and see how to use VPN Gateway to secure traffic to an on-premises network.
 
 ## About Azure Virtual Network
 
@@ -77,7 +77,7 @@ Much like the system routing table, custom routing tables also have a next hop t
 
 ## Connecting Azure virtual networks
 
-There are many different ways to connect your virtual networks.  You can use a VPN gateway, ExpressRoute, or directly use the peering method.
+There are many different ways to connect your virtual networks.  You can use VPN Gateway, ExpressRoute, or directly use the peering method.
 
 ### VPN Gateway on Azure
 
