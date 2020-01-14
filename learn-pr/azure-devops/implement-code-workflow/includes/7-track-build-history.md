@@ -1,4 +1,4 @@
-An easy way to track important events in your Azure DevOps project is to create a dashboard. A dashboard enables team members and observers to understand and track build trends at a glance.
+An easy way to track important events in your Microsoft Azure DevOps project is to create a dashboard. A dashboard enables team members and observers to understand and track build trends at a glance.
 
 In this unit, you set up a dashboard and add widgets to track your build history.
 
