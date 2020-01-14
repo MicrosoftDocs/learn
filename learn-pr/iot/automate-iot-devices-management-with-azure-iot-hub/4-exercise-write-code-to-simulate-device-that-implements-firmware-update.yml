@@ -8,7 +8,9 @@ metadata:
   ms.author: Olivier.Bloch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+azureSandbox: True
+interactive: bash-editor
 title: Exercise - Write code to simulate device that implements firmware update
-durationInMinutes: 1
+durationInMinutes: 10
 content: >-
   [!include[](includes/4-exercise-write-code-to-simulate-device-that-implements-firmware-update.md)]

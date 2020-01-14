@@ -2,26 +2,39 @@ At the end of this unit, you'll have a device simulator awaiting for a firmware 
 
 ## Create the device simulator app
 
-1. To use C# in Visual Studio Code, ensure both [.NET Core](https://dotnet.microsoft.com/download), and the [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp) are installed.
+1. In the following we will be using the sandbox with the Azure Shell, but you can use Visual Studio Code on your local machine to do the same, in which case you need to ensure both [.NET Core](https://dotnet.microsoft.com/download), and the [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp) are installed.
 
-1. Open a terminal in Visual Studio Code, and create a folder called "fwupdatedevice" (enter `mkdir fwupdatedevice`). Navigate to the fwupdatedevice folder.
+1. In the Azure Shell terminal, create a folder called **fwupdatedevice** and navigate to it:
 
-1. Enter the following command in the terminal: `dotnet new console`. This command creates a **Program.cs** file in your folder, along with a project file.
+    ```Azure CLI
+    mkdir fwupdatedevice
+    cd fwupdatedevice
+    ```
+    
+1. Enter the below commands in the terminal. The first command creates a **Program.cs** file in your folder, along with a project file and the second one gives your app access to the required .NET packages.
 
-1. Enter `dotnet restore` in the terminal. This command gives your app access to the required .NET packages.
+    ```Azure CLI
+    dotnet new console
+    dotnet restore
+    ```
 
-1. In the terminal, install the required libraries. Enter:
-    * **dotnet add package Microsoft.Azure.Devices.Client**
-    * **dotnet add package Microsoft.Azure.Devices.Shared**
-    * **dotnet add package Newtonsoft.Json**
+1. In the terminal, install the required libraries using the following commands:
 
-1. From the **File** menu, open up the **Program.cs** file, and delete the default contents.
+    ```Azure CLI
+    dotnet add package Microsoft.Azure.Devices.Client
+    dotnet add package Microsoft.Azure.Devices.Shared
+    dotnet add package Newtonsoft.Json
+    ```
 
-1. After you've entered the code below into the **Program.cs** file, you can run the app with the command `dotnet run`. This command will run the **Program.cs** file in the current folder, so ensure you are in the fwupdatedevice folder.
+At this point your project is ready for coding.
 
 ## Add code to your app
 
-1. Open the **Program.cs** file for the device app.
+1. Open the **Program.cs** file for the device app typing the following command in the Azure shell:
+
+    ```Azure CLI
+    code Program.cs
+    ```
 
 1. Copy and paste the following code.
 
@@ -236,6 +249,6 @@ At the end of this unit, you'll have a device simulator awaiting for a firmware 
     > Read through the comments in the code, noting how the device reacts to device twin changes to execute a firmware update based on the configuration shared in the desired Property "firmware". You can also note the function that will report the current firmware update status through the reported properties of the device twin.
 
 
-1. Save the **Program.cs** file.
+1. Save the **Program.cs** file and close the editor.
 
-At this point your device is ready to be manage from IoT Hub. In the next unit we will test that the firmware update process works as expected for this simulated device.
+At this point your device is ready to be managed from IoT Hub. In the next unit we will test that the firmware update process works as expected for this simulated device.

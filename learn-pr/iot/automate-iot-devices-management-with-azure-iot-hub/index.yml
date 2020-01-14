@@ -12,16 +12,24 @@ title: Automate IoT devices management with Azure IoT Hub
 summary: Automate IoT devices management with Azure IoT Hub
 abstract: | 
   In this module, you will:
-  - <Learning objectives>
+  - Create a custom Azure IoT Hub, using the Azure CLI
+  - Create IoT Hub device IDs, using the Azure CLI
+  - Create an app that will simulate a device implementing a firmware update in C#
+  - Test a simple firmware update setting it up and initiating it from the Azure Portal
+  - Use the Automatic device management feature of Azure IoT Hub to automate the firmware update on several groups of devices in sequence, using the Azure CLI
 prerequisites: | 
-  - <Module prerequisites>
+  - An introductory knowledge of Azure IoT
+  - Ability to navigate the Azure IoT portal
+  - Ability to use the Azure CLI
+  - Ability to use C#, at the beginner level
+  - Experience using Visual Studio Code, at the beginner level
 iconUrl: https://docs.microsoft.com/media/learn/module.svg
 levels: 
-- beginner
+- intermediate
 roles:
 - developer
 products:
-- azure-iot-central
+- azure-iot-hub
 units:
 - learn.iot.automate-iot-devices-management-with-azure-iot-hub.introduction
 - learn.iot.automate-iot-devices-management-with-azure-iot-hub.exercise-create-iot-hub-and-device-id-using-azure-cli

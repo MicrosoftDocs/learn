@@ -8,7 +8,9 @@ metadata:
   ms.author: Olivier.Bloch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+azureSandbox: True
+interactive: bash-editor
 title: Exercise - Automated firmware update at scale
-durationInMinutes: 1
+durationInMinutes: 15
 content: |
   [!include[](includes/8-exercise-automated-firmware-update-at-scale.md)]

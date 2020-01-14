@@ -8,7 +8,7 @@ In this unit, we'll first create an IoT Hub, and add a single device to that hub
     >[!IMPORTANT]
     >Your hub names are publicly discoverable, so take this into account when entering names. Hub names must also be unique, as they form part of the Azure URL. You can use a name like *cheesecavesmanager-anID*
 
-    ``` Azure CLI
+    ```Azure CLI
     az iot hub create --name {your iot hub name} --resource-group <rgn>[sandbox resource group name]</rgn> --sku S1
     ```
 
@@ -16,13 +16,13 @@ In this unit, we'll first create an IoT Hub, and add a single device to that hub
 
 1. Now that the hub is created, let's add a new device ID to be used to securely connect our device simulator. Run the following command:
 
-    ``` Azure CLI
+    ```Azure CLI
     az iot hub device-identity create --hub-name {your iot hub name} --device-id {your device id}
     ```
 
-2. Let get the connection string we will need for our device simulator. Ener Run the following command and write down the output
+2. Let's get the connection string we will need for our device simulator. Run the following command and write down the output
 
-    ``` Azure CLI
+    ```Azure CLI
     az iot hub device-identity show-connection-string --hub-name {your iot hub name} --device-id {your device id}
     ```
 

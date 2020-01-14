@@ -9,8 +9,10 @@ metadata:
   ms.author: Olivier.Bloch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+azureSandbox: True
+interactive: bash-editor
 title: Exercise - Create an IoT Hub and a device ID using the Azure CLI
-durationInMinutes: 1
+durationInMinutes: 5
 content: >-
   [!include[](includes/2-exercise-create-iot-hub-and-device-id-using-azure-cli.md)]
 quiz:

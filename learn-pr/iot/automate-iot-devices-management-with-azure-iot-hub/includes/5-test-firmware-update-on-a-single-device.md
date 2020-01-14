@@ -2,10 +2,10 @@ In this unit we will use the Azure portal to create a new device management conf
 
 ## Start de simulator
 
-In the same terminal you setup the application for the simulated device, start the simulator typing the following command (replacing "\<device connection string\>" with the connection string you got at the end of unit 2):
+In the Azure Shell, from the same folder you created the device simulator project, start the simulator typing the following command (replacing **\<device connection string\>** with the connection string you got at the end of unit 2):
 
 ``` 
-dotnet run <device connection string> 
+dotnet run "<device connection string>" 
 ```
 
 You should see the following output in the terminal (where "mydevice" is the device ID you used when creating the device identity):
@@ -44,25 +44,27 @@ You should see the following output in the terminal (where "mydevice" is the dev
     ```
 
 
-    :::image type="content" source="../media/devicemanagement-3.png" alt-text="Device Twin configuration":::
-    
+:::image type="content" source="../media/devicemanagement-3.png" alt-text="Device Twin configuration":::
+
 1. In the Metrics blade we will define a custom metric to track the firmware update was effective. Create a new custom metric called "fwupdated" and type in the below criteria, then click on "Next: Target devices >"
 
     ``` SQL
         SELECT deviceId FROM devices
             WHERE properties.reported.firmware.currentFwVersion='1.0.1'
     ```
-    
+
+
     :::image type="content" source="../media/devicemanagement-4.png" alt-text="Metrics":::
-    
+
 1. In the "Priority" field, type "10" and in the "Target Condition" field, type in the following query, replacing "\<your device id\>" with the device Id you used to create the device in unit 2, then click on "Next: Review + Create >"
 
     ``` SQL
         deviceId='<your device id>'
     ```
 
+
     :::image type="content" source="../media/devicemanagement-5.png" alt-text="Target Devices":::
-    
+
 1. On the next blade you should see the validation succeed for your new configuration. Click on "Create".
 
     :::image type="content" source="../media/devicemanagement-6.png" alt-text="Validation":::
@@ -70,15 +72,16 @@ You should see the following output in the terminal (where "mydevice" is the dev
 1. Once the configuration has been created you will see it in the automatic device management blade:
 
     :::image type="content" source="../media/devicemanagement-7.png" alt-text="New Configuration added":::
-        
+
 ## See the magic happen
+
 At this point IoT Hub will look for devices matching the configuration's target devices criteria, and will apply the firmware update configuration automatically.
 On the terminal you started the device on, you should see the following traces indicating the progress of the firmware update process on the device itself:
 
     :::image type="content" source="../media/simulateddevice1.png" alt-text="Simulated Device executing FW update":::
-    
+
 And on the Device Management Configuration you should see the following:
 
     :::image type="content" source="../media/devicemanagement-8.png" alt-text="Configuration applied and successful":::
-    
+
 You have validated that the firmware update process on your simulated device works. You can stop the device simulator by simply pressing the "Enter" key in the terminal.
