@@ -23,7 +23,7 @@ In this unit, we'll create and test the logging route.
 
 1. Change the **Location** to the location nearest you, and leave the other fields as they are.
 
-    ![Screenshot showing the completed fields for a new storage account](../media/vibration-storage-account.png)
+    [![Screenshot showing the completed fields for a new storage account](../media/vibration-storage-account.png)](../media/vibration-storage-account.png#lightbox)
 
 1. Click **Ok**. Wait until the resource is validated. Validation can take a few minutes.
 
@@ -39,7 +39,7 @@ In this unit, we'll create and test the logging route.
 
 1. Leave the other fields at their default values, and click **Create**.
 
-    ![Screenshot showing the completed fields for a new endpoint](../media/vibration-storage-endpoint.png)
+    [![Screenshot showing the completed fields for a new endpoint](../media/vibration-storage-endpoint.png)](../media/vibration-storage-endpoint.png#lightbox)
 
 1. You should now see the **Add a route** screen. Leave the **Data source** parameter as **Device Telemetry Messages**, as that is exactly what we want.
 
@@ -55,7 +55,7 @@ In this unit, we'll create and test the logging route.
 
 1. Verify that your route has the following settings:
 
-    ![Screenshot showing the summary of the logging route settings](../media/vibration-logging-route.png)
+    [![Screenshot showing the summary of the logging route settings](../media/vibration-logging-route.png)](../media/vibration-logging-route.png#lightbox)
 
 Before creating the second route, let's verify that the logging route is working. This step requires creating the Stream Analytics job.
 
@@ -63,11 +63,11 @@ Before creating the second route, let's verify that the logging route is working
 
 1. In the Azure portal **Home** page, select **Create a resource**. Search for and select **Stream Analytics job**. Click **Create**.
 
-    ![Screenshot showing the new job creation button](../media/vibration-hub-new-job-create.png)
+    [![Screenshot showing the new job creation button](../media/vibration-hub-new-job-create.png)](../media/vibration-hub-new-job-create.png#lightbox)
 
 1. Enter "vibrationJob" for the name. Select one of the subscriptions available to you, and select, or create, a resource group.
 
-    ![Screenshot showing the completed fields of the job](../media/vibration-stream-job.png)
+    [![Screenshot showing the completed fields of the job](../media/vibration-stream-job.png)](../media/vibration-stream-job.png#lightbox)
 
 1. Select the location nearest to you.
 
@@ -88,7 +88,7 @@ Before creating the second route, let's verify that the logging route is working
 
 1. For **IoT Hub**, select **VibrationSensorHub**. The **Endpoint** must have **Messaging** selected. The **Shared access policy name** should have **iothubowner**. No need to change the other fields from their defaults.
 
-    ![Screenshot showing the completed fields of the new stream input](../media/vibration-log-stream-input.png)
+    [![Screenshot showing the completed fields of the new stream input](../media/vibration-log-stream-input.png)](../media/vibration-log-stream-input.png#lightbox)
 
 1. Click **Save**.
 
@@ -121,7 +121,7 @@ Before creating the second route, let's verify that the logging route is working
 
 1. Click **Save query**, and return to your job.
 
-    ![Screenshot showing the completed SQL logging query](../media/vibration-stream-query.png)
+    [![Screenshot showing the completed SQL logging query](../media/vibration-stream-query.png)](../media/vibration-stream-query.png#lightbox)
 
 ## Test the logging route
 
@@ -131,7 +131,7 @@ Now for the fun part. Does the telemetry your device app is pumping out work its
 
 1. In the **vibrationJob** page, click **Start**. Then again in the **Start job** box.
 
-    ![Screenshot showing the job start button](../media/vibration-job-start.png)
+    [![Screenshot showing the job start button](../media/vibration-job-start.png)](../media/vibration-job-start.png#lightbox)
 
 1. Select **Home** in the Azure portal. If the **vibrationstorage** resource isn't available in the **Recent resources** list, then search for it under **All resources**.
 
@@ -144,7 +144,7 @@ Now for the fun part. Does the telemetry your device app is pumping out work its
 
 1. You'll need to navigate down a number of folder style entries, that make up dates and times. You should eventually see a text screen of all the telemetry data.
 
-    ![Screenshot showing the storage explorer log of entries ](../media/vibration-storage-explorer.png)
+    [![Screenshot showing the storage explorer log of entries ](../media/vibration-storage-explorer.png)](../media/vibration-storage-explorer.png#lightbox)
 
 1. Navigate your way back to your job home page, and select **Stop**, to end the job for now.
 

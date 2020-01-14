@@ -4,11 +4,11 @@ In this exercise, we're going to add a query to the Stream Analytics job, and th
 
 1. Create a new resource. Search for "Event Hubs", and select it.
 
-    ![Screenshot showing the button to create Event Hubs](../media/vibration-create-event-hubs.png)
+    [![Screenshot showing the button to create Event Hubs](../media/vibration-create-event-hubs.png)](../media/vibration-create-event-hubs.png#lightbox)
 
 1. For **Name**, enter "vibrationNamespace". Pricing tier can be the recommended selection, as notice the **Subscription** entries are from the free sandbox resources.  **Throughput Units** can be set to **1**.
 
-    ![Screenshot showing the button to create Event Hubs](../media/vibration-create-namespace.png)
+    [![Screenshot showing the button to create Event Hubs](../media/vibration-create-namespace.png)](../media/vibration-create-namespace.png#lightbox)
 
 1. Click **Create**, and wait for the resource to be deployed. This can take a few minutes.
 
@@ -18,11 +18,11 @@ In this exercise, we're going to add a query to the Stream Analytics job, and th
 
 1. Select the namespace, and click **+ Event Hub**. We need to create an instance of this namespace. Notice the **NAMESPACE CONTENTS** section has zero entries.
 
-    ![Screenshot showing the button to create Event Hubs](../media/vibration-add-event-hub.png)
+    [![Screenshot showing the button to create Event Hubs](../media/vibration-add-event-hub.png)](../media/vibration-add-event-hub.png#lightbox)
 
 1. In the **Create Event Hub** page, enter "vibrationeventhubinstance" for the **Name**. Leave the other fields at their defaults, and click **Create**.
 
-    ![Screenshot showing the fields required to create an Event Hub instance](../media/vibration-create-event-hub-instance.png)
+    [![Screenshot showing the fields required to create an Event Hub instance](../media/vibration-create-event-hub-instance.png)](../media/vibration-create-event-hub-instance.png#lightbox)
 
 1. Wait for the resource to be deployed. When deployment happens, we can start to build the route itself.
 
@@ -40,7 +40,7 @@ In this exercise, we're going to add a query to the Stream Analytics job, and th
 
 1. For the instance, locate your **vibrationeventhubinstance**.
 
-    ![Screenshot showing the completed fields for an Event Hub endpoint](../media/vibration-event-hub-endpoint.png)
+    [![Screenshot showing the completed fields for an Event Hub endpoint](../media/vibration-event-hub-endpoint.png)](../media/vibration-event-hub-endpoint.png#lightbox)
 
 1. Click **Create**, and wait for the success message.
 
@@ -52,7 +52,7 @@ In this exercise, we're going to add a query to the Stream Analytics job, and th
 
 1. Click **Save**, and verify that your two message routes look like the following image.
 
-    ![Screenshot showing the summary of the settings for the two message routes](../media/vibration-two-routes.png)
+    [![Screenshot showing the summary of the settings for the two message routes](../media/vibration-two-routes.png)](../media/vibration-two-routes.png#lightbox)
 
 ## Update the Azure Stream Analytics job query
 
@@ -76,7 +76,7 @@ With this new route in place, now we need to update our Stream Analytics job.
 
 1. Click **+ Add**, then select **Power BI**.
 
-    ![Screenshot showing the Power BI selection, for a new output.](../media/vibration-hub-new-output.png)
+    [![Screenshot showing the Power BI selection, for a new output.](../media/vibration-hub-new-output.png)](../media/vibration-hub-new-output.png#lightbox)
 
 1. Authorize the connection. You might need to sign up for a free Microsoft account, if you don't have one already.
 
@@ -88,7 +88,7 @@ With this new route in place, now we need to update our Stream Analytics job.
 
 1. For **Authentication mode**, ensure **User token** is selected.
 
-    ![Screenshot showing the completed fields of a Power BI output](../media/vibration-hub-new-bi.png)
+    [![Screenshot showing the completed fields of a Power BI output](../media/vibration-hub-new-bi.png)](../media/vibration-hub-new-bi.png#lightbox)
 
 1. Click **Save**.
 
@@ -129,7 +129,7 @@ With this new route in place, now we need to update our Stream Analytics job.
 
 1. Carefully verify you've used the same names in the SQL query, as you've in the **Inputs** and **Outputs**.
 
-    ![Screenshot showing the new SQL query, and the inputs and outputs to the query](../media/vibration-two-query.png)
+    [![Screenshot showing the new SQL query, and the inputs and outputs to the query](../media/vibration-two-query.png)](../media/vibration-two-query.png#lightbox)
 
 1. If all looks good, start the job again.
 
@@ -141,7 +141,7 @@ In order for a human operator to make much sense of the output from this query, 
 
 1. Use the nine dots icon (top left) to display a drop-down list. Select **All apps**. Scroll down and select **Power BI**.
 
-    ![Screenshot showing the selection of Power BI from the Office 365 portal](../media/vibration-outlook-power-bi.png)
+    [![Screenshot showing the selection of Power BI from the Office 365 portal](../media/vibration-outlook-power-bi.png)](../media/vibration-outlook-power-bi.png#lightbox)
 
 1. Open **My workspace**.
 
@@ -153,7 +153,7 @@ In order for a human operator to make much sense of the output from this query, 
 
 1. In the blank screen that follows, click **Add tile**. Select **Custom Streaming Data**, **Next**, and select the **vibrationDataset** from the list of datasets.
 
-    ![Screenshot showing the options when adding a dashboard tile](../media/vibration-dashboard-add-tile.png)
+    [![Screenshot showing the options when adding a dashboard tile](../media/vibration-dashboard-add-tile.png)](../media/vibration-dashboard-add-tile.png#lightbox)
 
 1. For the first card, select **Visualization Type** as **Gauge**, **Value** as **vibe**. Click **Next**, then enter "Vibration" for the title (in the **Tile details** box).
 
@@ -171,7 +171,7 @@ In order for a human operator to make much sense of the output from this query, 
 
 1. This time, expand the tile to a size three times larger than the smallest tiles, and arrange your dashboard similar to the following image:
 
-    ![Screenshot showing the completed Power BI dashboard identifying anomalies](../media/vibration-anomalies-detected.png)
+    [![Screenshot showing the completed Power BI dashboard identifying anomalies](../media/vibration-anomalies-detected.png)](../media/vibration-anomalies-detected.png#lightbox)
 
 1. There's a latency with so many routes and connections, but are you now seeing the vibration data coming through?
 
