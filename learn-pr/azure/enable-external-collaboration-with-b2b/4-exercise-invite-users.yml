@@ -8,7 +8,6 @@ metadata:
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 title: Exercise - Invite guest users with Azure AD B2B through the Azure portal
 durationInMinutes: 15
 azureSandbox: true

@@ -49,5 +49,5 @@ Remove the resources you've created in this module:
 
 ## Learn more
 
-[Azure Active Directory B2B documentation](https://docs.microsoft.com/en-us/azure/active-directory/b2b/)
+[Azure Active Directory B2B documentation](https://docs.microsoft.com/azure/active-directory/b2b/)
 
