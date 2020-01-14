@@ -1,79 +1,79 @@
-Scaling out by bringing new VMs online when traffic increases is an effective strategy for scaling to meet demand. The fact that VMs can be provisioned quickly is essential to achieving elasticity. But bringing additional servers online isn't useful if unless traffic is distributed between those servers. Overall, this helps the system handle the increased load. That's why *load balancing* is as critical to elasticity as dynamically adjust the number of resources devoted to a task.
+An APM platform helps cloud administrators identify problems, but it doesn't solve those problems for them. If you know, for example, that a remote call to a database takes 10 times longer than it should, what happens next? Do you guide your software development colleagues towards a solution, or do you open a complaint ticket and expect them to work things out on their own?
 
-The need for load balancing stems from two basic requirements. First, throughput is improved by parallel processing. If a single server can handle 5,000 requests per unit of time, then 10 perfectly load-balanced servers can handle 50,000 requests per unit of time. Second, load-balanced resources yield higher availability. Instead of forwarding a request to a server that is already struggling to keep up, a load balancer can direct the request to a server with a lighter load. In addition, if a server goes offline and the load balancer recognizes it, it can direct requests to other servers.
+*Remediation planning* is the process by which you define how problems uncovered by monitoring are mitigated and resolved. Remediation can be *responsive*, in which case it is triggered by events surfaced by an APM, or it can be *proactive*, in which case the goal is to continually make improvements to a system even in the absence of errors of other critical events. In a growing number of enterprises, remediation is no longer simply a response to a problem. Nothing has to go wrong in order for something to turn out right.
 
-## What is load balancing?
+# Problem Ticketing
 
-A well-known form of load balancing is *round-robin DNS*, which many large web services use to distribute requests among a number of servers. Specifically, multiple front-end servers, each with a unique IP address, share a DNS name. To balance the number of requests on each web server, large companies such as Google maintain and curate a pool of IP addresses for each DNS entry. When a client makes a request (for example, to www.google.com), Google's DNS selects one of the available addresses from the pool and sends it to the client. The simplest strategy employed to dispatch IP addresses is to use a round-robin queue, where after each DNS response, the list of addresses is permuted.
+The work cycle of many IT departments revolves around *ticketing*. This is a system that automates the distribution of requests made of the IT department so that an administrator may oversee responses to all requests in accordance with priority, necessity, and available resources. Many organizations invest in a ticketing system that standardizes this process, often called *IT Operations Management* (ITOM). Such a suite often includes features for responding to alerts as they are generated, particularly by an APM platform. In some instances, an APM can trigger the generation of problem tickets.
 
-Before the advent of the cloud, DNS load balancing was a simple way to reduce the latency of long-distance connections. The dispatcher at the DNS server was programmed to respond with the IP address of the server geographically nearest to the client. The easiest way to do this  was to respond with the IP address from the pool that was numerically the closest to the IP address of the client. This method was unreliable, as IP addresses aren't distributed in a global hierarchy. Current techniques are more sophisticated and rely on a software mapping of IP addresses to locations based on physical maps of Internet Service Providers (ISPs). Since this mapping is implemented as a costly software lookup, this method yields better results, but is expensive to compute. However, the cost of a slow lookup is amortized since the DNS lookup occurs only when the first connection to a server is made by the client. All subsequent communications happen directly between the client and the server that owns the dispatched IP address. An example of a DNS load-balancing scheme is shown in Figure 9.
+An issue with any platform that enables alerts and notifications is how best to integrate the notification process into the administrator's work cycle. The whole point of being notified about a problem is to trigger a corrective action. Ideally, an alerting system triggers an automated reaction that applies policy --- the appropriate response determined in advance --- to the solution. Such policy may determine whether a detected issue warrants a problem ticket, and some automated systems may generate one automatically.
 
-![Figure 9: Load balancing in a cloud environment](../media/fig5-9.png)
+Ticketing is useful for applying as much automation as possible, and as much oversight as needed, to responding to problems in applications, the network, or in infrastructure as they occur. Ironically, ticketing may end up codifying the notion that all IT operations are focused on problem solving --- on waiting until something goes wrong.
 
-_Figure 9: Load balancing in a cloud environment._
+More recently, vendors and advocates of APM tools and platforms have developed a counter-argument, which moves the focus of IT operations away from problems and toward objectives. The argument goes like this: The end goal of APM is to represent the performance of the enterprise's IT systems with respect to its effect on business goals. When the executive overseeing a division or the manager in charge of a line of business sees how performance relates to revenue or production, he or she is more likely to support efforts and expenditures to maintain sustainable performance levels.
 
-The downside of this method is in a server failure, the switchover to a different IP address is dependent on the Time-To-Live (TTL) configuration of the DNS cache. DNS entries are known to be long-living and updates are known to take over a week to propagate. This means it's difficult to quickly "hide" a server failure from the client. Reducing the validity (TTL) of an IP address in the cache improves this at the cost of performance and increasing the number of lookups.
+An administrator may find herself or himself explaining to a manager why part of a system should be redeveloped or improved, in terms hopefully that person will understand. That part of the job is often called "aligning" performance metrics with business goals, and there are entire business conferences devoted to this topic. But before alignment can take place, the monitoring process must reveal in a quantifiable way the dynamics of the cloud solution.
 
-Modern load balancing often refers to the use of a dedicated instance (or a pair of instances) to dispatch incoming requests to back-end servers. For each incoming request on a specified port, the load balancer redirects the traffic to one of the back-end servers based on a distribution strategy. In so doing, the load balancer maintains the request metadata including information such as application protocol headers (for example, HTTP headers). In this situation, stale information isn't a concern as every request passes through the load balancer.
+# Key Performance Indicators
 
-Though all types of network load balancers will forward requests along with any context to the back-end servers, when it comes to serving the response back to the client they may employ one of two basic strategies<sup>1</sup>:
+APM vendors often advise their customers to adopt a handful of *key performance indicators* (KPI). These are individual metrics typically geared to trigger warnings or alerts when their values fall above or below predetermined levels. The objective with KPIs is to enable a custom dashboard to quickly convey the message that something's wrong, or about to go wrong.
 
-- Proxying - In this approach, the load balancer receives the response from the back end and relays it back to the client. The load balancer behaves as a standard web proxy and is involved in both halves of a network transaction, namely forwarding the request to the client and sending back the response.
+Many APM platforms utilize metrics that they call KPIs, but which are actually, from the IT operator's perspective, just metrics. For enterprises that use it in performance monitoring, a KPI is a quantifiable value[^1] that represents some aspect of performance as it pertains to at least two of the following:
 
-- TCP Handoff - In this approach, the TCP connection with the client is handed off to the back-end server and the server sends the response directly to the client, without going through the load balancer.
+-   System health
 
-The latter of these strategies is illustrated in Figure 10.
+-   Relative progress in meeting business objectives
 
-![Figure 10: TCP Handoff mechanism from the dispatcher to the back-end server](../media/fig5-10.png)
+-   End-user satisfaction with the system
 
-_Figure 10: TCP Handoff mechanism from the dispatcher to the back-end server._
+-   Efficiency of the IT department in resolving issues
 
-## Benefits of load balancing
+Business managers may expect a KPI to take into account factors outside of IT, including business-operations data. Here are some example KPIs applicable to performance monitoring:
 
-One of the benefits of load balancing is that it helps mask failures in a system. As long as the client is exposed to a single endpoint that represents several resources, failures in individual resources are hidden from the client by serving requests using other resources. Now, however, the load balancer itself becomes a single point of failure. If it fails for any reason, even if all back-end servers are still functioning, no client requests will be processed. Consequently, to achieve high availability, load balancers are often implemented in pairs.
+-   **Time consumed in entering data into a form** --- Once transaction and query-processing times are eliminated, what remains is how much time individual users spend ascertaining the meaning of the form (or getting bored and going out for a cup of coffee first)
 
-More importantly, load balancing improves responsiveness by distributing workloads across several compute resources in the cloud. Having a single compute instance in the cloud has several limitations. Earlier modules discussed physical limitation on performance, where more resources are required for increasing workloads. By using load balancing, larger workloads are distributed across multiple resources so each resource can fulfill its requests independently and in parallel, improving the throughput of the application. Load balancing also improves average response times since there are more servers to handle the workload.
+-   **Percentage of catalog listings resulting in orders**, which reveals the effectiveness of an e-commerce system in selling its products and services
 
-Health checks are key to implementing successful load-balancing strategies. A load balancer needs to know when a resource becomes unavailable so it can avoid forwarding traffic to that resource. Ping-echo monitoring, in which the load balancer "pings" servers with Internet Control Message Protocol (ICMP) requests, is one of the most popular tactics used to check the health of specific resources. In addition to considering the health of a resource when forwarding traffic to it, some load-balancing strategies factor in other metrics such as throughput, latency, and CPU utilization.
+-   **Mean Time to Detection (MTTD)** --- The interval between the time that an error or other system issue occurred, and the time it was detected
 
-Load balancers must often guarantee high availability. The simplest way to do this is to create multiple load-balancing instances (each with a unique IP address) and link it to a single DNS address. Whenever a load balancer fails for any reason, it's replaced with a new one, and all traffic is passed on to the failover instance with minimal performance impact. Simultaneously, a new load-balancer instance can be configured to replace the failed one, and DNS records must be immediately updated.
+-   **Mean Time to Resolution (MTTR)** --- The interval between the time an issue was detected and the time it was resolved
 
-In addition to distributing requests among back-end servers, load balancers often employ mechanisms to reduce the load on the servers and improve overall throughput. Some of those mechanisms include:
+-   **Percentage of system change completions blocked by other issues** --- An indicator of how deeply performance issues can impact other services, and the extent to which larger, more comprehensive, projects to alleviate issues should be considered
 
-- **SSL offload** -- HTTPS connections incur added performance cost since traffic over them is encrypted. Instead of serving all requests via Secure Sockets Layer (SSL), the client connection to the load balancer can be made via SSL, while redirect requests to each individual server are made via unencrypted HTTP. This technique reduces the load on the servers considerably. Additionally, security is maintained as long as the redirect requests aren't made over an open network.
+Notice that true KPIs tend to be more about user behavior than system behavior. This leads many to believe an analysis of the information system should not play a factor in determining KPIs. However, this ignores the fact that system behavior drives user behavior.
 
-- **TCP buffering** -- A strategy to offload clients with slow connections to the load balancer to relieve servers that are serving responses to these clients.
+## Devising New KPIs
 
-- **Caching** -- In certain scenarios, the load balancer can maintain a cache for the most popular requests (or requests that can be handled without going to the servers, like static content) to reduce the load on the servers.
+Some analysts have made the case that IT-centered APM tends to focus on metrics that are separate from those from which true KPIs would be based. These analysts have recommended certain KPI management packages to their clients on this basis. Their argument is that network performance metrics deal with workflow from an infrastructure perspective, which may or may not align with an end user's perspective.
 
-- **Traffic shaping** -- A load balancer can use this technique to delay or reprioritize the flow of packets to optimize traffic for the server configuration. This does affect the QoS for some requests but makes sure the incoming load can be served.
+The alternative point of view is that the organization itself is the best source of wisdom for which KPIs are most applicable to its business, since its leaders --- not its software --- are responsible for setting the business's objectives. To that end, a process emerges for any organization to develop KPIs for its own internal use:
 
-It's important to remember load balancing only works if the load balancer itself isn't under insurmountable load. Otherwise, the load balancer becomes the bottleneck. Fortunately, load balancers tend to do little processing on the requests they receive, instead relying on back-end servers to do the actual work of turning requests into responses.
+1.  **Gather disparate teams together.** No one team should be delegated the task of setting priorities and objectives without consulting the other teams.
 
-## Equitable dispatching
+2.  **Collectively set business priorities.** "Really fast Web page load times" is a perennial goal for information systems, but this will always be the case. What are the most pertinent goals of the organization, to which its information system plays a directly contributing role?
 
-There are several load-balancing strategies used in the cloud. One of the most common is *equitable dispatching*, which uses a simple round-robin algorithm to distribute traffic evenly between all nodes. It does not take into consideration the utilization of individual resources in the system, nor does it factor in request execution time. This approach tries to keep every node in the system busy and is one of the simplest to implement.
+3.  **Quantify business objectives parameters.** Determine which of these priorities can be verifiably monitored and measured digitally.
 
-AWS uses this approach in its Elastic Load Balancer (ELB) offering. ELB provisions load balancers that balance traffic across attached EC2 instances. Load balancers are essentially EC2 instances themselves with a service to specifically route traffic. As the resources behind the load balancer are scaled out, the IP addresses of the new resources are updated on the DNS record of the load balancer. This process takes several minutes to complete as it requires both monitoring and provisioning time. This period of scaling -- the wait time until the load balancer is ready to handle the higher load -- is referred to as "warming up" the load balancer.
+4.  **Establish business targets.** Write the formulas for the relationships between measurable, observable factors, and the optimum values for those formulas, in a simple, mathematical way that all stakeholders can understand.
 
-AWS load balancers also monitor the resources attached to them for workload distribution to maintain a health check. A ping-echo mechanism is used to ensure all resources are healthy. ELB users can configure the parameters of the health check by specifying the delays and the number of retries.
+5.  **Integrate the ticketing system** or whatever automated functions may be involved in addressing problem issues, so that system improvement projects for business objectives purposes may co-exist with performance and software problems.
 
-## Hash-based distribution
+6.  **Dedicate the performance monitoring platform** to the task of gathering the pertinent metrics that pertain to the established business targets. Where applicable, enable dashboards to continually report these metrics in simple, graphical forms.
 
-This approach tries to ensure requests from the same client for the duration of a session are directed to the same server every time by hashing metadata defining each request and using the hash to pick a server. If hashing is done properly, requests are distributed relatively evenly among servers. One benefit of this approach is that it lends itself to session-aware applications, which can store session data in memory rather than write it out to a shared data store such as a database or Redis cache. A drawback is every request must be hashed, which introduces a small amount of latency.
+In a work environment where policy applications and ticket generation can be automatic, the purpose of the APM platform's dashboard changes. It becomes a summary of the active state of the remediation system, and a gauge of how quickly the system can recover from a performance issue.
 
-Azure Load Balancer uses a hash-based mechanism to distribute loads. This mechanism creates a hash for every request based on source IP, source port, destination IP, destination port, and protocol type to ensure that under ordinary circumstances, every packet from the same session hits the same back-end server. The hash function is chosen so the distribution of connections to servers is random.
+# Everyday Remediation
 
-## Other load-balancing strategies
+The basic tenet of modern remediation planning in IT is that the state of the organization's infrastructure, services, and applications may all be continually improved in a process known as *everyday remediation* or *continuous remediation*. A number of principles follow from this tenet:
 
-If a particular server is bogged down processing a request (or a set of requests), load balancers that utilize round-robin or hashed-based dispatching algorithms will forward requests to it anyway. There are other, more sophisticated strategies for balancing loads across multiple resources that take capacity into account. Two of the most commonly used metrics for gauging capacity are:
+-   **Nothing is "normal" anymore.** Just as people become healthy and stay healthy by tending to their own well-being every day, there ceases to be a permanent zone of normalcy that defines the behavior of a network if that network were never to change. The goal for service levels becomes a moving target. In nature, this concept is called "evolution."
 
-- **Request execution time** - Strategies based on this metric use a priority scheduling algorithm, whereby request execution times are used to pick the destination for individual requests. The main challenge in using this approach is to accurately gauge execution times. A load balancer can guess execution times by using (and constantly updating) an in-memory table which stores the differences between the time a request is forwarded to each server and the time it returns.
+-   **Massive upheavals can be avoided** if small changes are being made all the time. Cloud-based application staging environments take place on software-defined networks. Their host platforms are capable of making, or suggesting, adjustments to those networks to improve their performance. Data from APM platforms give administrators guidance as to where communications and service interactions may be improved.
 
-- **Resource utilization** -- Strategies based on this metric use CPU utilization to balance utilization across nodes. The load balancer maintains an ordered list of resources based on their utilization and directs each request it receives to the resource experiencing the least load.
+-   **A working knowledge of the system is more deeply engrained** in the minds of everyone assigned to its upkeep. Many APMs enable their operators to take the basic reports of system events and "drill down" to their underlying causes and effects. If people understand these interdependencies better before they go hunting for root causes of failures, they'll have a better idea of both what to look for and where to look for it when failures occur.
 
-Load balancing is crucial to implementing scalable cloud services. Without an effective means for distributing traffic among back-end resources, the elasticity achieved by creating resources when they're needed and deprovisioning them when they're not is severely limited.
+-   **The security team and the operations team should work together on a permanent basis.** Performance issues are, at some level, security issues, especially to the extent that they can be exploited. A remediation approach to performance is like a resilience approach to security: Both are proactive as opposed to reactive, and both involve continual improvements to a solution.
 
-### References
+> **A final benefit of everyday remediation is that executives and managers outside IT are more likely to buy in.** People in charge appreciate it when the people they manage care about what they themselves care about. In many organizations, people in these positions are the ones charged with building success plans; IT professionals are the ones expected to respond to failures. Business conferences feature lectures on "business objectives alignment." Everyday remediation offers the opportunity to bring that about.
 
-1. _Aron, Mohit and Sanders, Darren and Druschel, Peter and Zwaenepoel, Willy (2000). \"Scalable content-aware request distribution in cluster-based network servers.\" Proceedings of the 2000 Annual USENIX technical Conference._
+[^1]: Many organizations also make use of the KPI concept in making objective measurements of business progress and employee efficiency, which lie outside the realm of APM.

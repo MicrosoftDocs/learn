@@ -2,7 +2,7 @@
 uid: learn.cmu-cloud-admin.cmu-monitor-cloud-resources
 metadata:
   title: Monitor cloud resources
-  description: Cloud Admin course from Dr. Majd Sakr at Carnegie Mellon University. asdfsdfa
+  description: Cloud Admin course from Dr. Majd Sakr at Carnegie Mellon University. TBD
   ms.date: 1/15/2019
   author: shanamatthews
   ms.author: shanama
@@ -10,17 +10,14 @@ metadata:
   ms.prod: learning-azure
   showCreativeCommonsFooter: true
 title: Monitor cloud resources
-summary: asdfsdfa
+summary: TBD
 abstract: | 
   In this module you will:
-  - asdfsdfa
+  - TBD
 
   This content is provided in partnership with Dr. Majd Sakr and Carnegie Mellon University.
 prerequisites: |
-  - Understand what cloud computing is, including cloud service models, and common cloud providers
-  - Recognize cloud service models such as IaaS, PaaS, and SaaS and differentiate between them
-  - Understand how cloud resource provisioning works
-  - Be familiar with different approaches to organizing and managing cloud resources
+  - TBD
 #iconUrl: /learn/achievements/cmu-cloud-admin/cmu-monitor-cloud-resources.svg
 iconUrl: /learn/achievements/generic-badge.svg
 levels:

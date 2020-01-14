@@ -1,43 +1,109 @@
-Scaling up or out to handle increased demand and in or down to reduce costs when demand lessens can be performed manually by cloud administrators. For example, a watchful administrator can detect that demand is increasing and use tools provided by cloud service providers to bring additional VMs online (scale out) or replace existing VMs with larger ones -- ones with more CPU and more memory (scale up). The key word is "watchful." If demand peaks and no one is aware, the system as a whole may become slow, even unresponsive, to end users. Conversely, if you scale up or out to handle heavier loads and fail to scale back when the load decreases, you end up paying for resources that you don't need.
+Quality of Service (QoS) is not a mythical quest. An information system such as a cloud-based IT solution cannot attain an optimum service level just by being "the best it can be." In the best-organized and best-managed data centers, optimum service levels are solutions to a formula. That formula may not necessarily be mathematical, but it may very well end up being expressed that way. The variables of that formula are quantifiable attributes of the system that are obtained through automated observation.
 
-That's why popular cloud platforms offer *autoscaling* mechanisms to scale resources in response to fluctuating demand without human intervention. There are two primary approaches to autoscaling:
+Monitoring is automated observation. Until each facet of every stage of service delivery can be monitored, any optimum service level is a wild guess.
 
-- **Time-based** -- Scale resources on a predetermined schedule. For example, if your organization's web site experiences the highest loads during working hours, configure autoscaling so that resources scale up or out at 8:00 a.m. every morning, and scale down or in at 5:00 p.m. each afternoon. Time-based scaling is sometimes referred to as *scheduled scaling*.
+# Observable Telemetry
 
-- **Metrics-based** -- If loads are less predictable, scale resources based on predefined metrics such as CPU utilization, memory pressure, or average request wait time. For example, if average CPU utilization reaches 70%, automatically bring additional VMs online, and when it goes back down to 30%, deprovision the extra VMs.
+If you're a zoologist and you're observing a living organism, you look for the phenomena that consistently define its behavior. In an information system, the only way to express behavior is digitally, through data.
 
-Whether you choose to scale based on time or metrics or both, autoscaling relies on *scaling rules* or *scaling policies* configured by a cloud administrator. Modern cloud platforms support scaling rules that range from simple, such as expand from two instances to four every day at 8:00 a.m. and revert to two instances at 5:00 p.m., to complex -- for example, increase the VM count by one if maximum CPU utilization exceeds 70% or the average request wait time reaches 5 seconds. Finding the right mix of rules typically involves some experimentation on the part of the cloud administrator.
+Recently, software developers have taken to extending the use of the term *telemetry* to encompass the production of data for monitoring tools and platforms. A spacecraft reports telemetry on its operating condition and relative location at regular intervals; when there's no telemetry, ground controllers begin procedures for mitigating catastrophic failure, even before they confirm whether it has happened. Servers are not built like spacecraft. They don't have their own instrumentation for reporting their operating conditions, even at a basic level. In order for there to be any telemetry at all, software platforms and tools must provide the missing instrumentation.
 
-All major cloud service providers, including Amazon, Microsoft, and Google, support autoscaling. AWS Auto Scaling can be applied to EC2 instances, DynamoDB tables, and selected other AWS cloud services. Azure provides autoscaling options for key services including App Service and Virtual Machines. Google does the same for Google Compute Engine and Google App Engine.
+The dashboard is the tool that APM platforms utilize most often to convey the messages behind telemetry in a graphical format. APM platform vendors make the case that the real "consumer" of a dashboard (the person most likely to ask to see it) is a business manager. For that reason, they tend to demonstrate examples with simple, eye-catching components like world maps and multi-color bar charts as shown in Figure 7.7.
 
-Generally speaking, autoscaling services scale in and out rather than up and down, in part because scaling up and down entails replacing one instance with another and inevitably involves a period of down-time as new instances are created and brought online.
+![](media/image1.png){width="5.988194444444445in" height="3.2319444444444443in"}
 
-## Time-based autoscaling
+Figure 7.7: A basic dashboard produced by Cisco AppDynamics. \[Courtesy Cisco\]
 
-Time-based autoscaling is appropriate when loads fluctuate in a predictable manner. For example, many organizations' IT systems experience the highest load during working hours and may experience little to no load in the wee hours of the morning. Domino's Pizza's web site may experience loads at all hours of the day since it operates more than 16,000 stores in nearly 100 countries. But it predictably experiences higher-than-normal loads during certain times of year.
+In practice, however, dashboards consumed by IT administrators tend to look more like Figure 7.8: a network flow map showing the resources that comprise a solution, the interdependencies between them, and the relative health of each resource.
 
-Either scenario is a candidate for time-based autoscaling. Figure 7 shows how scheduled autoscaling is enacted in Azure. In this example, a cloud administrator configures an Azure App Service that hosts the organization's web site to run two instances by default, but scale up to four instances between 6:00 a.m. and 6:00 p.m. six days a week excluding Sunday. By selecting the "Specify start/end dates" option instead, the administrator could just as easily configure the App Service to scale out to 10 instances on Super Bowl Sunday. And she could define multiple scale conditions to scale out on other dates, too.
+![](media/image2.png){width="6.052083333333333in" height="3.2291666666666665in"}
 
-![Figure 7: Scheduled autoscaling in Azure](../media/fig5-7.png)
+Figure 7.8: A network flow map produced by AppDynamics. \[Courtesy Cisco\]
 
-_Figure 7: Scheduled autoscaling in Azure._
+Usually the goal of dashboarding is to combine easily digested reports of several metrics together into a single screen or single page, with no more detail than the typical morning TV show weather report. Although it may not convey any level of sophisticated behavioral analysis, APM vendors say one goal of dashboard design is to make otherwise uninterested parties interested in the factors behind optimum performance.
 
-## Metrics-based autoscaling
+# Common APM Performance Metrics
 
-Scaling based on metrics such as CPU utilization and average request wait time is appropriate when loads are less predictable. Monitoring is a crucial element for effectively autoscaling resources based on performance metrics because it enables the auto-scaler to know when to scale. Monitoring enables the analysis of traffic patterns or resource utilization in order to make an educated assessment about when and how much to scale resources in order to maximize Quality of Service while minimizing cost.
+Those metrics that are easiest for a dashboard graph to convey to interested parties in a few seconds' time, are singular, non-derivative, quantifiable measurements:
 
-There are several aspects of resources that are monitored in order to trigger scaling of resources. The most common metric is resource utilization. For example, a monitoring service can track the CPU utilization of each resource node and scale resources if the usage is excessive or too low. If for instance, the usage for each resource is higher than 90%, then it is probably a good idea to add more resources since the system is under a heavy load. Service providers usually decide these trigger points by analyzing the breaking point of resource nodes, when they will start to fail, and mapping out their behavior under various levels of load. Though for cost reasons, it is important to maximally utilize each resource, it is advisable to leave some room for the operating system to allow for overhead activities. Similarly, if the utilization is below, say, 30%, then it is possible that not all the resource nodes are required and some can be unprovisioned.
+-   **Requests per minute** --- The volume of incoming requests or queries to a service over a given interval (often one second).
 
-In practice, service providers usually monitor a combination of several different metrics of a resource node to evaluate when to scale resources. Some of these include CPU utilization, memory consumption, throughput, and latency. AWS uses CloudWatch to monitor EC2 resources and provide scaling metrics (Figure 8). CloudWatch tracks metrics for all the EC2 instances in a scaling group and raises an alarm when a specified metric crosses a threshold -- for example, when CPU utilization exceeds 70%. AWS then increases or decreases the EC2 instance count based on scaling policies configured by an administrator.
+-   **Response times** --- Often expressed as medians, these are the recorded time intervals between the delivery of requests to the server, and the receipt of responses from the server. Some platforms are capable of graphing the distribution of response times over a range of intervals. A more technical approach to this metric is *time-to-first-byte* (TTFB), which measures the interval between the exact moment the client dispatched a request to the server, and the moment the first byte of the server's response was received.
 
-![Figure 8: Autoscaling EC2 instances in AWS](../media/fig5-8.png)
+-   **Idle connections** --- The total number of network connections in which the server is awaiting requests from any client.
 
-_Figure 8: autoscaling EC2 instances in AWS._
+-   **Service availability** --- The percentage of a given interval when a service or application appeared to be responsive to requests.
 
-AWS also supports *predictive scaling*, which uses machine learning to anticipate traffic patterns and manage instance counts accordingly. The goal is to intelligently scale cloud resources without requiring a cloud administrator to configure autoscaling rules. Major cloud service providers are continually finding new ways to improve their platforms with machine learning. Microsoft, for example, now uses machine learning to improve the resiliency of Azure Virtual Machines by proactively predicting and mitigating VM failures<sup>[1][^1]</sup>.
+-   **CPU utilization** --- Usually expressed as a percentage, this rate is a ratio comparing how much of a given interval of time the processor (or an aggregate of all the cores in a multi-core processor) is active.
 
-### References
+-   **Error rate** may mean different things to various platforms. In software development, an error is a condition or behavior that runs contrary to the intent of the instructions, and for which there is no plan. Exception handling is a common tool developers use to "trap" behavior conditions and remediate them before unintended behavior can happen. However, some APM platforms track exception conditions (which are traceable events) and report their frequency over a given period as error rates, perhaps compounded with actual errors.
 
-1. _Microsoft (2018). *Improving Azure Virtual Machine resiliency with predictive ML and live migration*. <https://azure.microsoft.com/blog/improving-azure-virtual-machine-resiliency-with-predictive-ml-and-live-migration/>._
+-   **Garbage collector (GC) invocation** --- This is especially important with respect to a language interpreter such as Java, whose code makes use of data objects in memory, but then relies upon a "garbage collector" to free that memory when those objects are released.
 
-[^1]:  <https://azure.microsoft.com/blog/improving-azure-virtual-machine-resiliency-with-predictive-ml-and-live-migration/>  "Microsoft (2018). *Improving Azure Virtual Machine resiliency with predictive ML and live migration*."
+# Complex Indicators
+
+Many of the metrics tracked by APM platforms are actually the results of formulas for the relationships between more directly measurable conditions such as response times and error rates. Examples include Request Saturation Point and Application Performance Index.
+
+## Request Saturation Point
+
+Utilization and saturation are too often confused with one another. In all forms of engineering, including software, they are very distinct. An underutilized resource is one that can be clearly measured as performing no work for too long a period. That same resource may become over-saturated as a direct result; the backlog of requests may stack up in its queue.
+
+Measuring utilization is relatively simple; measuring saturation has been a matter of some contention. One method recommended by software engineers involves a metric called the *request saturation point*. This is a nuanced concept which requires a full explanation to be appreciated.
+
+When a server implements a REST API, it receives requests from clients using the HTTP or HTTPS protocol. A server or server cluster may respond to a variable number of requests within a given interval of time, such as one second. "Responsive" means the server will render informative responses to requesting clients during that time, as opposed to unintended responses, error messages, or silence. Some monitoring platforms refer to the quantity of requests handled by an application running on a server or cluster, as the *app load*. (On occasion, the entire request count on a server may still be called the "app load," even when a server is running more than one application.)
+
+As app load increases, at some point the servers will begin to slow down. This may be acceptable and even warranted if the total load on these servers is high. But there may be a point at which server responses become so slow that client-side timeouts may be triggered. An admin may consider this the saturation point --- a level beyond which wait times become unacceptable for clients. The admin may be able to ascertain this saturation point after several observations of behavior patterns with negative outcomes. The correlation here in each case will be between the rate at which requests are received, as well as their rate of fulfillment.
+
+## Application Performance Index (Apdex)
+
+A typical Web transaction consists of a request followed by a response. The end-to-end response time comprises the interval between the moment the client-side browser sends the request to the server and the moment it receives the server's response.[^1]
+
+The best performing systems, services, and applications in a data center are those that make optimum use of only those resources they need and no more, to produce the most reliable and accurate results achievable in a minimum of time. That sounds like an objective formula for a goal that may be obtained using quantitative measurements through something approaching a scientific method.
+
+But there are some, including vendors in the APM market, who argue that overall performance is a subjective, qualitative observation --- that it is a phenomenon unto itself. Entire conferences devoted to the subject of performance management have been headlined and keynoted by engineers and product managers arguing that performance is something a user *feels*, and that an application can be infused with performance the way an athlete can be infused with adrenaline. It is unusual for a company in the business of producing objective measurement tools to hypothesize that performance is a matter of opinion.
+
+In 2007, a coalition of vendors in the then-burgeoning APM industry happened upon a formula which they believed correlated user response times for an application with user satisfaction. Their Application Performance Index (Apdex)[^2] is a ratio incorporated into the metrics of several APMs, including New Relic and Dynatrace. It's based on the notion that every application is basically operated through a sequence of actions which Apdex calls "tasks." A responsive application will have a target response time for each task in this sequence. For every task whose response time is at or below the target, the user can be presumed to be satisfied. Meanwhile, if a response time falls between the target time and a higher time representing tolerance limits, the user may be presumed to be tolerating the application. Any response time higher than the tolerance limit should be presumed intolerable by the user.
+
+This gives us three toleration zones on a scale between 0 and 100: "Satisfied," "Tolerating," and "Frustrated." The Apdex score for any given number of sample runs of one application is computed as the sum of the number of scores in the Satisfied zone and half the number of scores in the Tolerating zone, divided by the total number of samples. Many APM dashboards enable an operator to produce graphs of Apdex scores from specific transactions within an application. Some platforms generate alerts when the Apdex value for an application falls below a set threshold, or *T value*. New Relic, for instance, establishes a default T value of 0.5 seconds, and sets a multiplier for the upper threshold of the Tolerating zone to 4 times the T value. Also by default, New Relic will refrain from generating alerts and traces about an application's response time until it transcends this upper threshold into the Frustrated zone.
+
+Some APM platforms, including AppDynamics, shun the use of Apdex. Their engineers and other proponents claim the formula is largely based on arbitrarily set target time values. Users' expectations for responsiveness, or the appearance of speed, they argue, are often tied to bandwidth levels that may vary, especially for a mobile application moving away from a metropolitan area and into rural territory.
+
+# Correlations
+
+In practice, IT administrators and software engineers know that many of the most reliable measures of a system's health are *correlations* --- comparisons of two or more sets of metrics to each other. For example, an admin can monitor the number of incoming traffic requests to a service, and over a period of time develop a sense of which quantity would indicate a normal traffic pattern. But when this quantity rises or spikes for indeterminate reasons, it could not be considered abnormal unless it could be correlated to another metric that indicates service degradation.
+
+## The USE Method
+
+Brendan Gregg, a software engineer at Oracle Corp. and formerly with Sun Microsystems, coined the acronym USE (Utilization, Saturation, Errors) to symbolize the most common correlation that may be applied to evaluating the status of a solution.[^3] Gregg says he was inspired by the emergency checklists that pilots follow when making an emergency landing. The three components of USE are defined as follows:
+
+-   **Utilization** --- A level, often expressed as a percentage, representing the time over a given interval that a resource is busy rather than idle
+
+-   **Saturation** --- A determination of how many requests the resource processed over the same interval, often coupled with a measurement of the size of the queue of unprocessed requests during that time
+
+-   **Errors** --- The number of incidents of unhandled exceptions and/or unfulfilled requests during the same period
+
+There is no universal formula governing the relationship between these three factors. For any resource an administrator may monitor, there are ranges of values that represent "normal" behavior conditions. A properly engineered solution adapts to changing conditions and should not have to wait until a condition becomes abnormal to adapt. Gregg's concept merely sets forth the principle that most (by his estimate, four out of five) adaptations, mitigations, or remediations for a given resource that can be automated require evaluations of these three factors with respect to that resource.
+
+## The RED Method
+
+More recently, former Google and Kausal engineer Tom Wilkie, now with Grafana, has developed a derivative of USE that he says is better suited to microservices environments, and the types of applications orchestrated by Kubernetes and monitored by Prometheus. In such an environment, Wilkie notes, saturation rates are more difficult to ascertain. Called the RED method[^4], it focuses entirely on these three factors relating to request responsiveness:
+
+-   **Rate** --- The number of requests a service processes over a given interval (usually one second)
+
+-   **Errors** --- The number of failed requests in that same interval
+
+-   **Duration** --- The average time that a service consumes in responding to a request before rendering a response[^5]
+
+Again, there's no standard formula or ratio relating these three factors. Wilkie and other engineers suggest observing these metrics over an extended period of time, to get a clear idea of what "normal" behavior looks like, and then take note of the range of relationships between them that fall inside the upper and lower bounds of normalcy.
+
+Up to now, this module has focused primarily on the tools and platforms that cloud administrators use to monitor how their information systems are performing. The next lesson concentrates on two important questions: How does an IT operator make a business case for undertaking an action that requires an expenditure? And how can an IT department develop remediation plans that could mitigate the need for future expenditures down the road?
+
+[^1]: From there, the browser usually begins preparing to render a page or HTML block, and it's this rendering that the user will perceive as the practical end of the transaction.
+
+[^2]: http://apdex.org/overview.html
+
+[^3]: http://www.brendangregg.com/usemethod.html
+
+[^4]: https://thenewstack.io/monitoring-microservices-red-method/
+
+[^5]: In some presentations, Wilkie has instead called the "D" factor "Distribution of latency," which may be a more scientific method for framing the same concept.
