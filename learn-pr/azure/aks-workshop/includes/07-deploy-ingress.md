@@ -4,7 +4,7 @@ There are a number of choices for running Kubernetes ingress on Azure Kubernetes
 
 In this exercise, you're going to deploy a basic Kubernetes ingress controller, using NGINX, then configure the ratings frontend service to use that ingress for traffic.
 
-![Deployed resources on the Azure Kubernetes Service cluster](../media/07-arch-4.png)
+![Deployed resources on the Azure Kubernetes Service cluster](../media/07-arch-4.svg)
 
 ## Deploy the NGINX ingress controller with Helm
 
@@ -154,6 +154,6 @@ Since you’re going to expose the deployment using an ingress, there is no need
 
 You should be able to open the hostname you configured on the ingress in your web browser, for example at **<http://frontend.13-68-177-68.nip.io>** to view and interact with the application.
 
-![Screenshot of the ratings-web application](../media/ratings-web-ingress.png)
+![Screenshot of the ratings-web application](../media/07-ratings-web-ingress.png)
 
 In this exercise, you deployed an NGINX ingress controller, updated the **ratings-web** service to be only accessible from within the cluster, and created an ingress route to reverse proxy the a deployment of the **ratings-web** service through a hostname.

@@ -2,7 +2,7 @@ The NGINX ingress controller supports TLS termination. There are several ways to
 
 In this exercise, you're going to deploy cert-manager, configure it to automatically issue Let's Encrypt certificates and configure the ingress created before to serve encrypted SSL/TLS traffic through the generated certificates.
 
-![Deployed resources on the Azure Kubernetes Service cluster](../media/08-arch-5.png)
+![Deployed resources on the Azure Kubernetes Service cluster](../media/08-arch-5.svg)
 
 ## Install cert-manager
 
@@ -201,10 +201,10 @@ In order to begin issuing certificates, you will need to set up a ClusterIssuer.
 
 You should be able to open the hostname you configured on the ingress in your web browser over SSL/TLS, for example at **<https://frontend.13-68-177-68.nip.io>** to view and interact with the application.
 
-![Screenshot of the ratings-web application](../media/ratings-web-ingress-tls.png)
+![Screenshot of the ratings-web application](../media/08-ratings-web-ingress-tls.png)
 
 Verify that the frontend is accessible over HTTPS and that the certificate is valid.
 
-<img width="500" alt="Valid SSL/TLS certificate" src="../media/ratings-web-cert.png" />
+<img width="500" alt="Valid SSL/TLS certificate" src="../media/08-ratings-web-cert.png" />
 
 In this exercise, you deployed cert-manager, configured it to automatically issue Let's Encrypt certificates and configured the ingress created before to serve encrypted SSL/TLS traffic through the generated certificates.
