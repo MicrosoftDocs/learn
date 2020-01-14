@@ -3,7 +3,7 @@ In this unit, we first create an IoT Hub, and then add a single device to that h
 ## Create a custom IoT Hub
 
 1. Make sure you've activated the sandbox, using the button above. The sandbox creates a free temporary resource.
-1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true). Using this link will ensure you are using the sandbox.
+1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true). Using this link will ensure you're using the sandbox.
 1. Select **+ Create a resource**, from the top of the left-hand menu. In the **Search the Marketplace** search box, enter "IoT Hub".
 1. Select **IoT Hub** from the search results, and click **Create**.
 1. You'll be required to enter a **Subscription** from the selection offered to you. A sandbox subscription will be **Concierge Subscription**, so choose that. For **Resource Group**, select <rgn>[sandbox resource group name]</rgn>.
@@ -24,7 +24,7 @@ Now we need to create a single device identity, the sensor monitoring the convey
 1. Click **+ New**.
 1. In the **Create a device** screen that follows, enter a **Device ID**, such as "VibrationSensorID". Ensure **Auto-generate keys** is enabled, as is **Connect this device to an IoT Hub**, and click **Save**.
 
-    ![Screenshot showing the creation of an IoT Hub device identity](../media/vibrations-device-create.png)
+    [![Screenshot showing the creation of an IoT Hub device identity](../media/vibrations-device-create.png)](../media/vibrations-device-create.png#lightbox)
 
 1. You should now see your device in the list of devices for the IoT Hub. Click on the device name. Copy your **Device ID**, and the **Primary Connection String** to a text file (using Notepad, or similar text editor).
 
