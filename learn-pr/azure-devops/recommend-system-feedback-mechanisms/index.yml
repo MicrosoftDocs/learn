@@ -17,7 +17,7 @@ abstract: |
   - Learn different techniques for gathering customer feedback.
   - Learn how automation can help with troubleshooting complex problems.
 prerequisites: An Azure DevOps organization
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/azure-devops/recommend-system-feedback-mechanisms.svg
 ratingEnabled: true
 levels:
 - beginner

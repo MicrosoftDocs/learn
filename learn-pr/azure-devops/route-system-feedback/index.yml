@@ -17,7 +17,7 @@ abstract: |
   - How IT Service Management Connector can help you implement a ticketing system.
   - How to build dashboards that enable you to visualize and act on monitoring data.
 prerequisites: None
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/azure-devops/route-system-feedback.svg
 ratingEnabled: true
 levels:
 - intermediate
