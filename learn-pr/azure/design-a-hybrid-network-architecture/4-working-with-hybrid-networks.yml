@@ -22,7 +22,7 @@ quiz:
       explanation: A VPN Gateway would be used to provide extra resiliency should the ExpressRoute circuit be unavailable.
     - content: To allow the ExpressRoute circuit to connect to your Azure virtual network.
       isCorrect: false
-      explanation: The ExpressRoute circuit connects to a Microsoft edge router not to a VPN Gateway.
+      explanation: The ExpressRoute circuit connects to a Microsoft Enterprise edge router, not to a VPN Gateway.
     - content: To allow the ExpressRoute circuit to connect to your on-premises network.
       isCorrect: false
       explanation: The ExpressRoute circuit connect to a connectivity providers local edge routers.
