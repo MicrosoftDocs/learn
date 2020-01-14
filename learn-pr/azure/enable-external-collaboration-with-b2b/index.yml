@@ -17,7 +17,7 @@ abstract: |
   - Enforce MFA for B2B collaboration
 prerequisites: | 
   - Basic understanding of Azure AD
-iconUrl: http://via.placeholder.com/120x120
+iconUrl: /learn/achievements/enable-external-collaboration-with-b2b.svg
 levels:
 - beginner
 roles:
@@ -32,7 +32,6 @@ units:
 - learn.enable-external-collaboration-with-b2b.3-collaborate-externally-b2b
 - learn.enable-external-collaboration-with-b2b.4-exercise-invite-users
 - learn.enable-external-collaboration-with-b2b.5-enable-mfa-b2b
-- learn.enable-external-collaboration-with-b2b.6-exercise-enable-mfa-b2b
-- learn.enable-external-collaboration-with-b2b.7-summary
+- learn.enable-external-collaboration-with-b2b.6-summary
 badge:
   uid: learn.enable-external-collaboration-with-b2b.badge

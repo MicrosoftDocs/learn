@@ -38,7 +38,7 @@ Identify the subtasks of *Enable secure external collaboration for your applicat
 
 | Subtask | What part of the introduction scenario does this subtask satisfy? | How will you assess it: **Exercise or Knowledge check**? | Which learning objective(s) does this help meet? | Does the subtask have enough learning content to justify an entire unit? If not, which other subtask will you combine it with? |
 | ---- |---|---|---|---|
-| What is Azure B2B? | Understand the purpose of B2B and how it applies to the sample scenario | Knowledge Check | 1 | Yes | 
+| What is Azure B2B? | Understand the purpose of B2B and how it applies to the sample scenario | Knowledge Check | 1 | Yes |
 | Collaborate with external users through Azure AD B2B | Enable organizations to collaborate securely | Exercise | 2 | Yes |
 | Enable multi-factor authentication in Azure AD B2B | Enable organizations to collaborate securely | Exercise | 3 | Yes |
 
@@ -80,18 +80,13 @@ Identify the subtasks of *Enable secure external collaboration for your applicat
     Call out the following points:
 
     - At what levels can MFA be enforced?
-    - How are guest accounts different from regular user accounts?
+    - How are guest accounts different from regular user accounts? (moved this to unit 2)
 
-6. **Exercise - Enable multi-factor authentication in Azure AD B2B**
+        **Knowledge check**
+        - At what levels can multi-factor authentication be enforced?
+        - Which of the following are valid categories for multi-factor authentication?
 
-    Using the sample scenario as a basis, perform the following tasks:
-
-    - Test a guest user sign-in before MFA is enabled.
-    - Create conditional access policy that needs MFA.
-    - Test your policy with simulated sign-in through What If.
-    - Sign in with the guest credentials to test MFA process.
-
-7. **Summary**
+6. **Summary**
 
     In this module, you've learned how you can enable organizations to securely collaborate with one another through Azure AD B2B. You've also learned how multi-factor authentication can help you provide an additional layer of security for your shared applications and services.
 
