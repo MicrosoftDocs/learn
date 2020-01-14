@@ -3,12 +3,11 @@ uid: learn.design-a-hybrid-network-architecture.2-on-premises-integration-on-azu
 metadata:
   title: On-premises network integration on Azure
   description: Explore on-premises connectivity in the Azure platform, get an overview of Azure Virtual Networks, and how to use VPN Gateways to secure traffic to an on-premises network.
-  ms.date: 04/30/2019
+  ms.date: 01/14/2020
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 title: On-premises network integration on Azure
 durationInMinutes: 10
 content: |

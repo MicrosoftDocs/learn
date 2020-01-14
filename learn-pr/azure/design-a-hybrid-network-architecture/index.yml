@@ -3,7 +3,7 @@ uid: learn.design-a-hybrid-network-architecture
 metadata:
   title: Design a hybrid network architecture on Azure
   description: A customer has traditional on-premises infrastructure that they need to connect to resources in Azure. They need to select the appropriate connectivity method for their use cases, balancing functionality, cost, and security.
-  ms.date: 04/30/2019
+  ms.date: 01/14/2020
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
@@ -25,6 +25,9 @@ roles:
 - solution-architect
 products:
 - azure
+- azure-expressroute
+- azure-virtual-network
+- azure-vpn-gateway
 units:
 - learn.design-a-hybrid-network-architecture.1-introduction
 - learn.design-a-hybrid-network-architecture.2-on-premises-integration-on-azure

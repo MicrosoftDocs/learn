@@ -3,12 +3,11 @@ uid: learn.design-a-hybrid-network-architecture.4-working-with-hybrid-networks
 metadata:
   title: Working with hybrid networks on Azure
   description: Explore hybrid networking patterns in Azure, the features and limitations of individual services and an overview of the hub-spoke architecture.
-  ms.date: 04/30/2019
+  ms.date: 01/14/2020
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 title: Working with hybrid networks on Azure
 durationInMinutes: 10
 content: |

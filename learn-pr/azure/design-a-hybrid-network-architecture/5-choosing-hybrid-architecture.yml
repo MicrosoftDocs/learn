@@ -3,12 +3,11 @@ uid: learn.design-a-hybrid-network-architecture.5-choosing-hybrid-architecture
 metadata:
   title: Choosing a hybrid network architecture on Azure
   description: See some hybrid networking scenarios that may use AzureVPN Gateways and Azure ExpressRoute.
-  ms.date: 04/30/2019
+  ms.date: 01/14/2020
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 title: Choosing a hybrid network architecture on Azure
 durationInMinutes: 10
 content: |
