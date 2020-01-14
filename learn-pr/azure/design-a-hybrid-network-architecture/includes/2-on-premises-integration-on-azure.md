@@ -20,48 +20,7 @@ By default, all Azure resources within a virtual network have outbound connectiv
 
 A virtual network is composed of many elements including, but not limited to, network interfaces, load balancers, subnets, network security groups, and public IP addresses. These elements work together and enable secure, reliable network communication between your Azure resources, the internet, and on-premises networks.
 
-  ![Image showing Azure virtual network component architecture](../media/2-azure-vnet-vm-arch.png)
-
-<!-- - **Virtual network subnets** let you segment your virtual network address space into usable subnetworks. As you would find in an on-premises network, virtual network subnets can organize your network usage and access
-- **Network Security Groups** protect your subnets by filtering all traffic flow between Azure resources -->
-
-<!-- ## Parts of an IP address
-
-An IP address is made up of two parts: the network and the host. An IP address is typically expressed in the dotted-decimal notation; for example, 192.168.123.132.  In reality, this number is only the human-readable version of the 32-bit binary number: 11000000.10101000.01111011.10000100.
-The two parts of this IP address are:
-
-- Network: 192.168.123
-- Host: 132
-
-The network prefix can be any combination of 8 bits, 16 bits, or 24 bits.  The host prefix can be any combination 24 bits, 16 bits, or 8 bits respectively, giving a total of 32 bits.
-
-## Subnet masks
-
-Subnet masks are an essential part of any TCP/IP network.  The subnet mask determines if the host is on a remote network or the local subnet. 
-While subnet masks use the dotted-decimal format, similar to an IP address, a typical subnet mask of 255.255.255.0 becomes the 32-bit binary value 11111111.11111111.11111111.0000000.
-
-### Classless Inter-Domain Routing (CIDR)
-
-When you allocate a range of IP addresses, the subnet mask works to the nearest bit boundary or dot.  In this scenario, the smallest allocation was 256 addresses (8-bit host), and the next smallest was 65,536  addresses (16-bit host).  
-The CIDR notation, developed to allow variable-length subnet masks, allows for more accuracy when assigning network size.  Rather than specify a hard subnet mask, you now specify the number of bytes used for the network address.  You'd represent the CIDR notation as *IP-Address/Network byte size*.
-For example, 192.168.1.168/24 is the same as using a subnet mask of 255.255.255.0, which allows for 256 IP addresses.
-
-Here's a table that gives examples of CIDR and subnets.
-
-| No of network bits | No of host bits | Subnet mask     | CIDR notation |
-| ------------------ | --------------- | --------------- | ------------- |
-| 8                  | 24              | 255.0.0.0       | /8            |
-| 9                  | 23              | 255.128.0.0     | /9            |
-| 12                 | 20              | 255.240.0.0     | /12           |
-| 14                 | 18              | 255.252.0.0     | /14           |
-| 16                 | 16              | 255.255.0.0     | /16           |
-| 17                 | 15              | 255.255.128.0   | /17           |
-| 20                 | 12              | 255.255.240.0   | /20           |
-| 22                 | 10              | 255.255.252.0   | /22           |
-| 24                 | 8               | 255.255.255.0   | /24           |
-| 25                 | 7               | 255.255.255.128 | /25           |
-| 28                 | 4               | 255.255.255.240 | /28           |
-| 30                 | 2               | 255.255.255.252 | /30           | -->
+  ![Image showing Azure virtual network component architecture](../media/2-azure-vnet-vm-arch.svg)
 
 ## Routing traffic on an Azure virtual network
 
