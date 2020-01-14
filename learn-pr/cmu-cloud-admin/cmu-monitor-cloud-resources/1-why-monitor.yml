@@ -1,0 +1,32 @@
+### YamlMime:ModuleUnit
+uid:  learn.cmu-cloud-admin.cmu-monitor-cloud-resources.1-why-monitor
+title: Why monitor
+metadata:
+  title: Why monitor
+  description: Why monitor
+  ms.date: 1/15/2019
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 13
+content: |
+  [!include[](includes/1-why-monitor.md)]
+# quiz:
+#   title: Check your knowledge
+#   questions:
+
+#     - content: "Assume one server can handle 5,000 requests per unit of time, and a web site experiences loads that vary relatively evenly from a low of 5,000 to a peak of 25,000. The site is hosted in the cloud using virtual machines and each VM costs $4 per day. What is the approximate annual difference in cost between providing elastic capacity that is sized to meet demand and constant capacity sized to handle peak loads?"
+#       choices:
+#       - content: "$600"
+#         isCorrect: false
+#         explanation: "Incorrect. If the average capacity is 15,000 requests per unit time and peak is 25,000, then the difference equates to two servers. (2 servers) X ($4/day) X (365 days/year) = $2,920."
+#       - content: "$1,240"
+#         isCorrect: false
+#         explanation: "Incorrect. If the average capacity is 15,000 requests per unit time and peak is 25,000, then the difference equates to two servers. (2 servers) X ($4/day) X (365 days/year) = $2,920."
+#       - content: "$2,920"
+#         isCorrect: true
+#         explanation: "Correct! If the average capacity is 15,000 requests per unit time and peak is 25,000, then the difference equates to two servers. (2 servers) X ($4/day) X (365 days/year) = $2,920."
+#       - content: "$4,680"
+#         isCorrect: false
+#         explanation: "Incorrect. If the average capacity is 15,000 requests per unit time and peak is 25,000, then the difference equates to two servers. (2 servers) X ($4/day) X (365 days/year) = $2,920."

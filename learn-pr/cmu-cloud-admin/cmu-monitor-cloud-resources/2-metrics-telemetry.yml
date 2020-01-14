@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-admin.cmu-monitor-cloud-resources.2-metrics-telemetry
+title: Metrics and telemetry
+metadata:
+  title: Metrics and telemetry
+  description: Metrics and telemetry
+  ms.date: 1/15/2019
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-metrics-telemetry.md)]
+# quiz:
+  # title: Check your knowledge
+  # questions:
+
+  #   - content: "Which of the following choices is NOT one of the benefits of scaling when scaling is done well?"
+  #     choices:
+  #     - content: "Reduced resource cost (compared to provisioning for peak utilization)"
+  #       isCorrect: false
+  #       explanation: "Incorrect. Reduced resource cost is one of the benefits of scalability."
+  #     - content: "Less complexity in deployment"
+  #       isCorrect: true
+  #       explanation: "Correct! Scaling doesn't reduce the complexity of the system."
+  #     - content: "Stable performance regardless of the load on the system"
+  #       isCorrect: false
+  #       explanation: "Incorrect. Stable performance is one of the benefits of scalability."
+  #     - content: "Fewer failures because of overwhelming the capacity of a single resource"
+  #       isCorrect: false
+  #       explanation: "Incorrect. Fewer failures is one of the benefits of scalability."
+
+  #   - content: "Which of the following choices is a benefit of horizontal scaling compared to vertical scaling?"
+  #     choices:
+  #     - content: "Higher availability"
+  #       isCorrect: false
+  #       explanation: "Incorrect. Higher availability is one benefit of horizontal scaling, but it's not the only one."
+  #     - content: "Higher granularity in scaling"
+  #       isCorrect: false
+  #       explanation: "Incorrect. Higher granularity is one benefit of horizontal scaling, but it's not the only one."
+  #     - content: "Zero down-time as scaling occurs"
+  #       isCorrect: false
+  #       explanation: "Incorrect. Zero down-time as scaling occurs is one benefit of horizontal scaling, but it's not the only one."
+  #     - content: "All of the above"
+  #       isCorrect: true
+  #       explanation: "Correct! All three are reasons that horizontal scaling is more popular than vertical scaling in the cloud."
