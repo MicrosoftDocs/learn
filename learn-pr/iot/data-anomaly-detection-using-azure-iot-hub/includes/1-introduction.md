@@ -40,7 +40,7 @@ Vibration is typically measured as an acceleration (meters per second squared, m
 
 The goal here is preventive maintenance. Detect that something is wrong, before any damage is caused.
 
-It's not always easy to detect abnormal vibration levels. For this reason, you are looking to Azure IoT Hub to detect data anomalies. You plan to have a vibration detection sensor on the conveyor belt, sending continuous telemetry to an IoT Hub. The IoT Hub will use Azure Stream Analytics, and a built-in ML model, to give you advance warning of vibration anomalies. You also plan to archive all the telemetry data, just in case it's ever needed.
+It's not always easy to detect abnormal vibration levels. For this reason, you're looking to Azure IoT Hub to detect data anomalies. You plan to have a vibration detection sensor on the conveyor belt, sending continuous telemetry to an IoT Hub. The IoT Hub will use Azure Stream Analytics, and a built-in ML model, to give you advance warning of vibration anomalies. You also plan to archive all the telemetry data, just in case it's ever needed.
 
 You decide to build a prototype of the planned system, initially using simulated telemetry.
 

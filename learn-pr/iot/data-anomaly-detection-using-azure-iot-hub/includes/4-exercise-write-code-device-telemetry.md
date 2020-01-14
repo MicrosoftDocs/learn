@@ -355,7 +355,7 @@ The following app simulates a conveyor belt, and reports vibration sensor data e
 
     [![Screenshot showing the vibration telemetry messages](../media/vibration-telemetry.png)](../media/vibration-telemetry.png#lightbox)
 
-1. Watch the telemetry for a short while, checking that it is giving vibrations in the expected ranges.
+1. Watch the telemetry for a short while, checking that it's giving vibrations in the expected ranges.
 1. You can leave this app running, as it's needed for the next section.
 
 ## Verify the IoT Hub is receiving telemetry
