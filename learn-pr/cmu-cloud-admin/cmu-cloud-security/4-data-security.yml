@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.cmu-cloud-admin.cmu-cloud-security.4-virtual-networks
+uid: learn.cmu-cloud-admin.cmu-cloud-security.4-data-security
 title: Virtualization for networks
 metadata:
   title: Virtualization for networks
-  description: Networks can also take advantage of virtualization to scale.
-  ms.date: 08/15/2019
+  description: 
+  ms.date: 01/15/2020
   author: shanamatthews
   ms.author: shanama
   ms.topic: interactive-tutorial

@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.cmu-cloud-admin.cmu-cloud-security.3-containers
+uid: learn.cmu-cloud-admin.cmu-cloud-security.3-encryption
 title: Virtualization for containers
 metadata:
   title: Virtualization for containers
-  description: Discover how containers work - it's virtualization again!
-  ms.date: 08/15/2019
+  description: 
+  ms.date: 01/15/2020
   author: shanamatthews
   ms.author: shanama
   ms.topic: interactive-tutorial

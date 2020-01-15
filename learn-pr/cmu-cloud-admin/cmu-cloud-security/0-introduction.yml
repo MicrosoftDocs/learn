@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.cmu-cloud-admin.cmu-cloud-security.0-intro
+uid: learn.cmu-cloud-admin.cmu-cloud-security.0-introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: In this module, we'll learn about all different types of virtualization in the cloud.
-  ms.date: 08/15/2019
+  description: Introduction
+  ms.date: 01/15/2020
   author: shanamatthews
   ms.author: shanama
   ms.topic: interactive-tutorial

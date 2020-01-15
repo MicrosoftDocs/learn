@@ -33,11 +33,11 @@ roles:
 products:
 - azure
 units:
-- learn.cmu-cloud-admin.cmu-cloud-security.0-intro
-- learn.cmu-cloud-admin.cmu-cloud-security.1-virtual-machines
-- learn.cmu-cloud-admin.cmu-cloud-security.2-virtualization-cloud-computing
-- learn.cmu-cloud-admin.cmu-cloud-security.3-containers
-- learn.cmu-cloud-admin.cmu-cloud-security.4-virtual-networks
+- learn.cmu-cloud-admin.cmu-cloud-security.0-introduction
+- learn.cmu-cloud-admin.cmu-cloud-security.1-responsibilities
+- learn.cmu-cloud-admin.cmu-cloud-security.2-threats
+- learn.cmu-cloud-admin.cmu-cloud-security.3-encryption
+- learn.cmu-cloud-admin.cmu-cloud-security.4-data-security
 - learn.cmu-cloud-admin.cmu-cloud-security.5-summary
 
 badge:

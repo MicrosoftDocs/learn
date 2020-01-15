@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.cmu-cloud-admin.cmu-cloud-security.2-virtualization-cloud-computing
+uid: learn.cmu-cloud-admin.cmu-cloud-security.2-threats
 title: Understanding virtualization
 metadata:
   title: Understanding virtualization
-  description: Take a deep dive into how virtualization works and it's benefits.
-  ms.date: 08/15/2019
+  description: 
+  ms.date: 01/15/2020
   author: shanamatthews
   ms.author: shanama
   ms.topic: interactive-tutorial

@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.cmu-cloud-admin.cmu-cloud-security.1-virtual-machines
+uid: learn.cmu-cloud-admin.cmu-cloud-security.1-responsibilities
 title: Virtualization for virtual machines
 metadata:
   title: Virtualization for virtual machines
-  description: Learn what virtual machines are and how they work.
-  ms.date: 08/15/2019
+  description: 
+  ms.date: 01/15/2020
   author: shanamatthews
   ms.author: shanama
   ms.topic: interactive-tutorial
