@@ -10,11 +10,20 @@ We start by discussing the various responsibilities involved in any distributed 
 
 ## Learning objectives
 
-- TBD
+- Understand the importance of risk assessment in implementing cloud security
+- Understand how cloud customers and cloud service providers share responsibility for security
+- List some of the prominent threats to cloud security
+- Understand the role that cryptography plays in securing data
+- Understand the difference between symmetric encryption and asymmetric encryption
+- Understand how public key cryptography facilitates the secure exchange of data
+- Explain the concept of multilayered data security and why it is necessary
+- Explain some of the services offered by data-security platforms and the integrated security services offered by cloud service providers
+- Understand why regulatory compliance is important and list some of the regulations that may apply
 
 ## Prerequisites
 
-- TBD
 - Understand what cloud computing is, including cloud service models, and common cloud providers
+- Know the different type of clouds (public, private, hybrid)
 - Recognize cloud service models such as IaaS, PaaS, and SaaS and differentiate between them
 - Understand how cloud resource provisioning works
+- Know how data centers work and how data is stored in the cloud
