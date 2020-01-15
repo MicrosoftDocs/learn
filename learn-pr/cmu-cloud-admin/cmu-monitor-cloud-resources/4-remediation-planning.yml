@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.cmu-cloud-admin.cmu-monitor-cloud-resources.4-dashboards
-title: Load balancing
+uid: learn.cmu-cloud-admin.cmu-monitor-cloud-resources.4-remediation-planning
+title: Remediation planning
 metadata:
-  title: Load balancing
-  description: Load balancing
+  title: Remediation planning
+  description: Remediation planning
   ms.date: 1/15/2019
   author: shanamatthews
   ms.author: shanama
@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 9
 content: |
-  [!include[](includes/4-dashboards.md)]
+  [!include[](includes/4-remediation-planning.md)]
 # quiz:
 #   title: Check your knowledge
 #   questions:

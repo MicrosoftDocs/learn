@@ -42,9 +42,9 @@ products:
 units:
 - learn.cmu-cloud-admin.cmu-monitor-cloud-resources.0-introduction
 - learn.cmu-cloud-admin.cmu-monitor-cloud-resources.1-why-monitor
-- learn.cmu-cloud-admin.cmu-monitor-cloud-resources.2-metrics-telemetry
-- learn.cmu-cloud-admin.cmu-monitor-cloud-resources.3-alerts-notifications
-- learn.cmu-cloud-admin.cmu-monitor-cloud-resources.4-dashboards
+- learn.cmu-cloud-admin.cmu-monitor-cloud-resources.2-monitoring-platforms
+- learn.cmu-cloud-admin.cmu-monitor-cloud-resources.3-metrics-indicators-correlations
+- learn.cmu-cloud-admin.cmu-monitor-cloud-resources.4-remediation-planning
 - learn.cmu-cloud-admin.cmu-monitor-cloud-resources.5-summary
 
 badge:

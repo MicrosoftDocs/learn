@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.cmu-cloud-admin.cmu-monitor-cloud-resources.2-metrics-telemetry
-title: Metrics and telemetry
+uid: learn.cmu-cloud-admin.cmu-monitor-cloud-resources.2-monitoring-platforms
+title: Monitoring platforms
 metadata:
-  title: Metrics and telemetry
-  description: Metrics and telemetry
+  title: Monitoring platforms
+  description: Monitoring platforms
   ms.date: 1/15/2019
   author: shanamatthews
   ms.author: shanama
@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 5
 content: |
-  [!include[](includes/2-metrics-telemetry.md)]
+  [!include[](includes/2-monitoring-platforms.md)]
 # quiz:
   # title: Check your knowledge
   # questions:
