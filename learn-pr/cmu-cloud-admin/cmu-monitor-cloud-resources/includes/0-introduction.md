@@ -18,4 +18,7 @@ This module deals with the subject of monitoring the behavior of IT systems, whi
 
 ## Prerequisites
 
-- TBD
+- Understand what cloud computing is, including cloud service models, and common cloud providers
+- Recognize cloud service models such as IaaS, PaaS, and SaaS and differentiate between them
+- Be familiar with different organizational IT cost types like CapEx and OpEx
+- Understand how cloud resource provisioning works
