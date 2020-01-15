@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.data-ai.automate-model-selection-with-azure-automl.automl-recommend-model
+uid: learn.data-ai.automate-model-selection-with-azure-automl.automl-experiment
 title: Exercise - Use Azure AutoML to recommend a model
 metadata:
   title: Exercise - Use Azure AutoML to recommend a model
@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 5
 content: |
-  [!include[](includes/4-automl-recommend-model.md)]
+  [!include[](includes/4-automl-experiment.md)]

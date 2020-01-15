@@ -29,7 +29,7 @@ units:
 - learn.data-ai.automate-model-selection-with-azure-automl.automl-algorithms
 - learn.data-ai.automate-model-selection-with-azure-automl.automl-preprocessing
 - learn.data-ai.automate-model-selection-with-azure-automl.automl-experiment
-- learn.data-ai.automate-model-selection-with-azure-automl.automl-using-automl
+- learn.data-ai.automate-model-selection-with-azure-automl.using-automl
 - learn.data-ai.automate-model-selection-with-azure-automl.summary
 badge:
   uid: learn.data-ai.automate-model-selection-with-azure-automl.badge
