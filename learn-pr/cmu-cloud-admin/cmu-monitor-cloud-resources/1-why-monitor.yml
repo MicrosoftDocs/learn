@@ -12,21 +12,21 @@ metadata:
 durationInMinutes: 13
 content: |
   [!include[](includes/1-why-monitor.md)]
-# quiz:
-#   title: Check your knowledge
-#   questions:
+quiz:
+  title: Check your knowledge
+  questions:
 
-#     - content: "Assume one server can handle 5,000 requests per unit of time, and a web site experiences loads that vary relatively evenly from a low of 5,000 to a peak of 25,000. The site is hosted in the cloud using virtual machines and each VM costs $4 per day. What is the approximate annual difference in cost between providing elastic capacity that is sized to meet demand and constant capacity sized to handle peak loads?"
-#       choices:
-#       - content: "$600"
-#         isCorrect: false
-#         explanation: "Incorrect. If the average capacity is 15,000 requests per unit time and peak is 25,000, then the difference equates to two servers. (2 servers) X ($4/day) X (365 days/year) = $2,920."
-#       - content: "$1,240"
-#         isCorrect: false
-#         explanation: "Incorrect. If the average capacity is 15,000 requests per unit time and peak is 25,000, then the difference equates to two servers. (2 servers) X ($4/day) X (365 days/year) = $2,920."
-#       - content: "$2,920"
-#         isCorrect: true
-#         explanation: "Correct! If the average capacity is 15,000 requests per unit time and peak is 25,000, then the difference equates to two servers. (2 servers) X ($4/day) X (365 days/year) = $2,920."
-#       - content: "$4,680"
-#         isCorrect: false
-#         explanation: "Incorrect. If the average capacity is 15,000 requests per unit time and peak is 25,000, then the difference equates to two servers. (2 servers) X ($4/day) X (365 days/year) = $2,920."
+    - content: "Users are complaining that a Web site you deployed to the cloud has suddenly become very slow. Which of the following metrics might be helpful to you in resolving the problem?"
+      choices:
+      - content: "Bounce rate (the number of users who visit your site and immediately leave)"
+        isCorrect: false
+        explanation: "Incorrect. Request wait time is a common metric used to determine whether a server is overloaded."
+      - content: "Average length of time requests wait in the request queue"
+        isCorrect: true
+        explanation: "Correct! If a Web site seems slow, it is often because the Web server is receiving more traffic than it can handle. Request wait time is a common metric used to determine whether a server is overloaded."
+      - content: "Average page-load time"
+        isCorrect: false
+        explanation: "Incorrect. Request wait time is a common metric used to determine whether a server is overloaded. Poor performance can affect page load times, but pages sometimes load quickly even if the server takes a long time to respond to page requests. Page loads don't begin until after the server has responded."
+      - content: "Average number of pages visited by each user"
+        isCorrect: false
+        explanation: "Incorrect. Request wait time is a common metric used to determine whether a server is overloaded."
