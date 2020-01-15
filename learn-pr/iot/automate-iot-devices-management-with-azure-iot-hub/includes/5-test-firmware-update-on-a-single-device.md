@@ -78,10 +78,10 @@ You should see the following output in the terminal (where "mydevice" is the dev
 At this point IoT Hub will look for devices matching the configuration's target devices criteria, and will apply the firmware update configuration automatically.
 On the terminal you started the device on, you should see the following traces indicating the progress of the firmware update process on the device itself:
 
-    :::image type="content" source="../media/simulateddevice1.png" alt-text="Simulated Device executing FW update":::
+:::image type="content" source="../media/simulateddevice1.png" alt-text="Simulated Device executing FW update":::
 
 And on the Device Management Configuration you should see the following:
 
-    :::image type="content" source="../media/devicemanagement-8.png" alt-text="Configuration applied and successful":::
+:::image type="content" source="../media/devicemanagement-8.png" alt-text="Configuration applied and successful":::
 
 You have validated that the firmware update process on your simulated device works. You can stop the device simulator by simply pressing the "Enter" key in the terminal.
