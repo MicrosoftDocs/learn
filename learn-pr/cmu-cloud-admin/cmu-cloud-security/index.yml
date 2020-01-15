@@ -38,7 +38,8 @@ units:
 - learn.cmu-cloud-admin.cmu-cloud-security.2-threats
 - learn.cmu-cloud-admin.cmu-cloud-security.3-encryption
 - learn.cmu-cloud-admin.cmu-cloud-security.4-data-security
-- learn.cmu-cloud-admin.cmu-cloud-security.5-summary
+- learn.cmu-cloud-admin.cmu-cloud-security.5-regulatory-compliance
+- learn.cmu-cloud-admin.cmu-cloud-security.6-summary
 
 badge:
   uid: learn.cmu-cloud-admin.cmu-cloud-security.badge

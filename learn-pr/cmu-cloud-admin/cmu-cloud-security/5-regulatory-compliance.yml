@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.cmu-cloud-admin.cmu-cloud-security.5-summary
+uid: learn.cmu-cloud-admin.cmu-cloud-security.5-regulatory-compliance
 title: Summary
 metadata:
   title: Summary
@@ -11,5 +11,5 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 2
 content: |
-  [!include[](includes/5-summary.md)]
+  [!include[](includes/5-regulatory-compliance.md)]
   

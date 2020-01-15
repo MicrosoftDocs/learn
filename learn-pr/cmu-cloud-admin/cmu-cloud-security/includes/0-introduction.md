@@ -1,32 +1,20 @@
-Virtualization is at the core of the cloud computing paradigm. It lies on top of the cloud infrastructure or data center. In comparison, virtual resources such as virtual CPUs, memory, disks, and networks are constructed from the underlying physical resources and act as proxies to them. Similar to cloud computing being introduced in the 1960's, virtualization dates back to the 1970s. 
+As you read this, information systems are under attack. They're under attack from port scanners, which hunt for holes unknowingly left open in firewalls. They're under attack from bots that probe Web sites for unpatched security vulnerabilities. And they're under attack by human hackers looking for passwords, credit-card numbers, and other "secrets" that can be monetized on the dark Web. There is no end to which the bad guys won't go to steal your data and wreak havoc on your organization.
 
-40 years ago, the mainframe computer systems were large and expensive. In 1970, the IBM 370 architecture was announced to address expanding user needs and costly machine ownership. It offered complete virtual machines (VMs) to different programs running on the same computer hardware. Over time, computer hardware became less expensive, and users started migrating to low-priced desktop machines. This migration drove the adoption of the virtualization technology to fade for a while.
+It falls to cloud administrators and cloud security professionals to stop them. This requires understanding the threats that they face and the tools and techniques used to thwart them. Security in information systems is the assurance that services and data are being used as they were intended, by the people and other services explicitly permitted to do so, according to the policy of the organizations managing those systems. Security is not a blockade. It is a process.
 
-Today, virtualization is everywhere, and a number of research projects and commercial systems provide virtualization solutions for home PCs, servers, and the cloud. Even companies who run their own data centers have turned to virtualization to increase server utilization, decrease costs, and adapt more nimbly to changing environments. In 2016, Gartner reported that a majority of firms has virtualized 75% or more of their servers<sup>[1][^1]</sup>.
+Security in the cloud is a three-pronged affair. First, software developers must ensure that their code isn't vulnerable to attack -- for example, that a Web site isn't vulnerable to SQL injection (a technique that enable attackers to exploit vulnerabilities in code to extract information from back-end databases). Second, cloud administrators must use the tools available to them to secure the cloud resources that they deploy -- for example, by configuring a cloud database to automatically encrypt data written to it and enabling active threat detection to alert them if the database encounters suspicious traffic. Third, the cloud service provider (CSP) must ensure the security of the cloud infrastructure that it offers to customers. Security is a shared responsibility. All it takes one weak link in the chain to compromise everyone involved.
 
-In this module, you'll learn about virtualization in general and understand the key motivations behind virtual machines. We'll discuss the two types of virtual machines and explore an alternative virtualization technology known as *containers*. We'll also discover virtual networking and some of the technologies that enable it. Virtual networks are just as important to cloud computing as virtual machines. Without virtual networks, VMs wouldn't be able to communicate and users wouldn't be able to connect remotely to the VMs they create.
+For the cloud administrator, achieving security involves a quantitative understanding of risk, especially how much risk an organization may adequately and comfortably maintain in the act of sustaining its business model electronically. This lesson's principal concern is therefore the responsibilities that fall to cloud administrators and the mechanisms they use to mitigate risk and secure infrastructure.
+
+We start by discussing the various responsibilities involved in any distributed information security process and identifying the parties in the CSP/customer relationship charged with these responsibilities. We then examine some of the common threats to cloud security and the role that encryption and other technologies play in mitigating them. Finally, we take up the topic of regulatory compliance and the added responsibilities that this places on cloud professionals. Unknowing is unarmed. Let's eliminate the "unknowing" by diving into cloud security.
 
 ## Learning objectives
 
-- Identify the two main types of virtual machines and provide examples of each
-- Identify major reasons that virtualization is an essential technology for cloud computing
-- List the key advantages that containers have over virtual machines
-- Understand key terms such as Docker containers, container images, and container registries
-- Identify some of the ways in which major cloud platforms support containers
-- Recall key design considerations for data-center networks and describe the need for network virtualization to support multiple tenants
+- TBD
 
 ## Prerequisites
 
+- TBD
 - Understand what cloud computing is, including cloud service models, and common cloud providers
 - Recognize cloud service models such as IaaS, PaaS, and SaaS and differentiate between them
 - Understand how cloud resource provisioning works
-
-Interested readers can refer to this popular book on virtual machines<sup>2</sup> to be a fairly comprehensive reference for all virtualization-related concepts.
-
-### References
-
-1. _Information Week (2016). *Virtualization Market Now \'Mature,\' Gartner Finds*. <https://www.informationweek.com/cloud/infrastructure-as-a-service/virtualization-market-now-mature-gartner-finds/d/d-id/1325529/>._
-
-2. _JE Smith and Nair (2005). \"Virtual Machines: Versatile Platforms for Systems and Processes.\" Morgan Kaufmann._
-
-[^1]: <https://www.informationweek.com/cloud/infrastructure-as-a-service/virtualization-market-now-mature-gartner-finds/d/d-id/1325529>  "Information Week (2016). *Virtualization Market Now \'Mature,\' Gartner Finds*."
