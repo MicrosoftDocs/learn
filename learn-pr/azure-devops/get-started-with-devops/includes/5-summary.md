@@ -47,7 +47,7 @@ We'll go deeper into Azure DevOps in future modules. You can also check out thes
 * Employee Morale. Are employees happy with the transformation and where the organization is heading? Are they still willing to respond to further changes?
 * Retention Rates. Is the organization losing staff?
 
-One of the promises of DevOps is to deliver software faster and with higher quality. It many seem that these promises are contradictory. Traditionally, the faster you delivered the software, the lower the quality. Higher-quality software always took longer. However, DevOps processes can help you to find problems earlier, and this usually means that they take less time to fix.
+One of the promises of DevOps is to deliver software faster and with higher quality. It may seem that these promises are contradictory. Traditionally, the faster you delivered the software, the lower the quality. Higher-quality software always took longer. However, DevOps processes can help you to find problems earlier, and this usually means that they take less time to fix.
 
 ### Common quality metrics
 
