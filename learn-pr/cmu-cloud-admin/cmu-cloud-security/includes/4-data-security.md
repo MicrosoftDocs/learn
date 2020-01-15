@@ -6,11 +6,11 @@ Data stored in the cloud must only be accessible through legitimate sources that
 
 Because absolute security is never ensured, most organizations safeguard data stored in the cloud using a multilayered security strategy sometimes referred to as *defense in depth*. The core principle is that if an attacker penetrates one of your defenses, the next defense may be the one that stops them. A multilayered security strategy also provides protection against different and potentially unrelated attack vectors. For example, protecting a database with IAM so that only designated users can access it through a cloud portal does nothing to protect the database if an attacker gains access to the server that hosts the database and makes a copy of the database files. Going the extra step of encrypting those files, however, would.
 
-Figure 8.4 illustrates how multilayered security for a cloud database might be structured. The data itself is encrypted in place ("encrypted at rest") and encrypted with TLS when it travels over the wire ("encrypted in motion"). Outside that is a layer that logs all accesses to the data so that an audit trail is maintained. This layer may also host an active threat-detection agent that continually monitors accesses to the database and alerts administrators to suspicious activity. The next layer uses IAM to make sure only authorized users and applications can connect to the database. Finally, the outermost layer restricts accesses to the database over the network. For example, it might specify that the database can only be accessed from a certain VNet or set of VNets, and it may restrict connections from the outside to a white-listed set of IP addresses.
+Figure 4 illustrates how multilayered security for a cloud database might be structured. The data itself is encrypted in place ("encrypted at rest") and encrypted with TLS when it travels over the wire ("encrypted in motion"). Outside that is a layer that logs all accesses to the data so that an audit trail is maintained. This layer may also host an active threat-detection agent that continually monitors accesses to the database and alerts administrators to suspicious activity. The next layer uses IAM to make sure only authorized users and applications can connect to the database. Finally, the outermost layer restricts accesses to the database over the network. For example, it might specify that the database can only be accessed from a certain VNet or set of VNets, and it may restrict connections from the outside to a white-listed set of IP addresses.
 
-![A screenshot of a cell phone Description automatically generated](media/image1.png){width="6.0in" height="3.3895833333333334in"}
+![Figure 4: Multilayered data security (defense in depth)](../media/fig8-4.png)
 
-Figure 8.4: Multilayered data security (defense in depth).
+_Figure 4: Multilayered data security (defense in depth)._
 
 Encrypting data at rest in the cloud is a crucial component of securing that data. Most public cloud platforms support the transparent encryption of data stored in their storage services. In this context, "transparent" means that the data is automatically encrypted when it is written to storage and automatically decrypted when it is read back. Consequently, applications don't have to encrypt or decrypt the data themselves (they may not even be aware that it is encrypted), but if the data is stolen -- if for example, someone gains illicit access to the server where the data is stored -- it is useless unless the decryption key can also be retrieved. Keys are typically stored separately in highly secure locations managed by services such as Azure Key Vault or AWS Key Management Service.
 
@@ -42,11 +42,11 @@ In a containerized or VM namespace, a data source or volume may have multiple co
 
 What's more difficult is facilitating user isolation, ensuring that the breadth of the logical network that's visible to each single user is limited to only those resources to which the user is entitled and access has been granted. VMware's vSphere virtualization environment enables isolation at this level using a technique called *microsegmentation*[^1]. Like an army of firewalls unleashed inside a server cluster or namespace, microsegmentation systems enforce network and security policies on a per-user basis. As a result, unauthorized resources become invisible within the network of servers with which the user communicates.
 
-A network virtualization platform such as VMware's NSX implements microsegmentation for physical workloads, including "big data" facilities such as Hadoop and Apache Spark, by using logical routers (which are virtual, not physical, appliances) to present VMs with a limited view of the components that comprise those workloads. Figure 8.5 depicts this process in action. From the VM's perspective, the network is limited to only those routes in the virtual namespace that comprise the workload.
+A network virtualization platform such as VMware's NSX implements microsegmentation for physical workloads, including "big data" facilities such as Hadoop and Apache Spark, by using logical routers (which are virtual, not physical, appliances) to present VMs with a limited view of the components that comprise those workloads. Figure 5 depicts this process in action. From the VM's perspective, the network is limited to only those routes in the virtual namespace that comprise the workload.
 
-![](media/image2.png){width="5.510416666666667in" height="3.4932239720034994in"}
+![Figure 5: How microsegmentation affects the addressability of physical workloads. \[Courtesy VMware\]](../media/fig8-5.png)
 
-Figure 8.5: How microsegmentation affects the addressability of physical workloads. \[Courtesy VMware\]
+_Figure 5: How microsegmentation affects the addressability of physical workloads. \[Courtesy VMware\]_
 
 A modern data security platform can tie into microsegmentation services so that the databases accessible to any user may be limited to only those records to which that user has access. The visible database thus becomes a view of the physical database that serves as its proxy on the network. A user cannot accidentally or intentionally access records that do not exist on that user's network.
 
@@ -66,11 +66,11 @@ Coupled with performance activity logs, the time-series records generated by a c
 
 # Integrated Security Tools
 
-DSPs may be used to protect data stored in public clouds but are particularly useful with on-premises data stores. Cloud service providers offer integrated data-security tools that perform many of the same functions as DSPs. For example, persons who administer an Azure SQL Database instance can use the data-discovery-and-classification feature in the Azure Portal to scan the database for columns containing potentially sensitive data such as credit-card numbers, social-security numbers, and login credentials (Figure 8.6). Azure also offers a free vulnerability-assessment service that scans a database for potential vulnerabilities and provides actionable steps for resolving them.
+DSPs may be used to protect data stored in public clouds but are particularly useful with on-premises data stores. Cloud service providers offer integrated data-security tools that perform many of the same functions as DSPs. For example, persons who administer an Azure SQL Database instance can use the data-discovery-and-classification feature in the Azure Portal to scan the database for columns containing potentially sensitive data such as credit-card numbers, social-security numbers, and login credentials (Figure 6). Azure also offers a free vulnerability-assessment service that scans a database for potential vulnerabilities and provides actionable steps for resolving them.
 
-![Summary of current classification state](media/image3.png){width="6.0in" height="3.9618055555555554in"}
+![Figure 6: Data discovery and classification in Azure SQL Database.](../media/fig8-6.png)
 
-Figure 8.6: Data discovery and classification in Azure SQL Database.
+_Figure 6: Data discovery and classification in Azure SQL Database._
 
 Today, virtually all cloud storage services create audit trails documenting data accesses, and many -- especially database services -- support active threat detection as well. In addition, major cloud service providers such as Microsoft, Amazon, and Google offer comprehensive threat-detection services capable of monitoring a wide range of cloud resources not limited to data stores. In AWS, for example, Amazon GuardDuty can continuously monitor for malicious activity and unauthorized behavior to protect AWS accounts, workloads, and data. It combines managed rule sets with machine learning based on billions of events occurring across AWS to detect threats in real time, and it integrates with other services such as Amazon CloudWatch to trigger alerts and even perform remedial actions (via AWS Lambda) when threats are detected.
 

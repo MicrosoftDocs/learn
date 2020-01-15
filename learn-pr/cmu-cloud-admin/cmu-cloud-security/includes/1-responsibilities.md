@@ -44,11 +44,11 @@ What this means in terms of security is that the behavior of cloud-based systems
 
 Azure, AWS, and Google Cloud voluntarily follow a policy framework called the Shared Responsibility Model (SRM). Though the model specifies different delegations of responsibility for various classes of services, its formative principle is this: The service provider pledges responsibility for security *of* the cloud, while the customer is deemed responsible for security *in* the cloud. Think of a hotelier that pledges physical security for its guests but expects those guests to behave themselves while in their rooms.
 
-![](media/image1.png){width="4.259804243219597in" height="4.605788495188102in"}
+![Figure 1: The Shared Responsibility Model for Azure. \[Courtesy Microsoft\]](../media/fig8-1.png)
 
-Figure 8.1: The Shared Responsibility Model for Azure. \[Courtesy Microsoft\]
+_Figure 1: The Shared Responsibility Model for Azure. \[Courtesy Microsoft\]_
 
-Figure 8.1 shows how Microsoft represents this model to Azure customers. It depicts the degree to which responsibility for security is delegated to the service provider with each progressive service tier. For example, with respect to an IaaS platform that hosts Web servers on behalf of customers, the following table shows the responsibility assumed by the cloud service provider (CSP) and by the customer:
+Figure 1 shows how Microsoft represents this model to Azure customers. It depicts the degree to which responsibility for security is delegated to the service provider with each progressive service tier. For example, with respect to an IaaS platform that hosts Web servers on behalf of customers, the following table shows the responsibility assumed by the cloud service provider (CSP) and by the customer:
 
 +--------------------------------------------+------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+
 | **Domain**                                 | **CSP's Responsibility**                                                                                                     | **Customer's Responsibility**                                                                                             |

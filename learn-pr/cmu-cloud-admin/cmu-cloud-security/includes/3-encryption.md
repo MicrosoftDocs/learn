@@ -36,11 +36,11 @@ If Bob wants to receive encrypted messages from Alice, he can e-mail her his pub
 
 The purpose of a certificate is to present a public key to any entity that would establish the authenticity of its bearer. The certification authority (CA) is the producer of this certificate, and it is trusted with the task of physically verifying the identity of each person or corporate entity seeking certification. Consequently, every certificate is *signed* by the CA using code that may be challenged and verified.
 
-The international standard for the format of a digital identity certificate is X.509, established in 1998. As Figure 8.3 shows, there have been three versions of X.509, with newer versions adding extra fields that became necessary in transactions involving CSPs, particularly when multiple providers are involved in a service and those parties require extra information about the issuer and signer of the certificate.
+The international standard for the format of a digital identity certificate is X.509, established in 1998. As Figure 3 shows, there have been three versions of X.509, with newer versions adding extra fields that became necessary in transactions involving CSPs, particularly when multiple providers are involved in a service and those parties require extra information about the issuer and signer of the certificate.
 
-![](media/image1.png){width="3.3333333333333335in" height="2.5104166666666665in"}
+![Figure 3: Parts of an X.509 certificate. \[Courtesy Microsoft\]](../media/fig8-3.png)
 
-Figure 8.3: Parts of an X.509 certificate. \[Courtesy Microsoft\]
+_Figure 3: Parts of an X.509 certificate. \[Courtesy Microsoft\]_
 
 When a browser connects to a Web server using an *https://* URL, it initiates a *TLS handshake* in which the Web server returns a certificate verifying its authenticity and containing a public key. But it doesn't use the public key to encrypt the requests it transmits to the server. (It could, but while requests would be encrypted so that only the Web server could decrypt them since only the server has the private key, responses from the server would be insecure because they could be decrypted by anyone who has the public key.) Instead, the browser uses the public key to encrypt a symmetric *session key* that it transmits to the server. Thereafter, the session key is used to encrypt (and decrypt) all communications between the browser and the Web server. TLS, therefore, uses a combination of symmetric and asymmetric encryption: asymmetric to encrypt symmetric keys, and symmetric to encrypt requests and responses.
 
