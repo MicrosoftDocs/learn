@@ -12,22 +12,36 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/3-metrics-indicators-correlations.md)]
-# quiz:
-#   title: Check your knowledge
-#   questions:
+quiz:
+  title: Check your knowledge
+  questions:
 
-#     - content: "You are a cloud administrator in charge of ensuring that your organization's public-facing web site remains fast and responsive at all times. The site is hosted in an Azure App Service. It sees the heaviest traffic between 8:00 a.m. and 5:00 p.m. each day, but the load is somewhat inconsistent from one day to the next. In addition, it experiences infrequent burst loads with up to 10 times the normal traffic. These bursts are difficult to predict, but slow the site to a crawl if additional resources aren't brought online rather quickly. What approach would provide the best balance between responsiveness and cost?"
-#       choices:
-#       - content: "Scheduled auto-scaling"
-#         isCorrect: false
-#         explanation: "Incorrect. Scheduled auto-scaling enables the site to scale to meet demand during working hours, but it doesn't address unpredictable spikes in traffic."
-#       - content: "Auto-scaling based on a key metric such as CPU utilization or request rate"
-#         isCorrect: true
-#         explanation: "Correct! Properly configured, metrics-based auto-scaling makes sure that the site is scaled the right amount for cyclical loads as well as burst loads."
-#       - content: "A combination of scheduled scaling and metrics-based scaling"
-#         isCorrect: false
-#         explanation: "Incorrect. It is possible to combine scheduled scaling and metrics-based scaling, but since the load during working hours varies each day, you are better off using metrics to determine how to scale for the cyclical loads the site experiences."
-#       - content: "Manual scaling"
-#         isCorrect: false
-#         explanation: "Incorrect. Manual scaling increases administrative costs and is less reliable than auto-scaling."
-    
+    - content: "A count of requests per minute reaching a server is an example of which of the following?"
+      choices:
+      - content: "A performance metric"
+        isCorrect: true
+        explanation: "Correct! Requests-per-minute is a metric, not an indicator or a correlation."
+      - content: "A performance indicator"
+        isCorrect: false
+        explanation: "Incorrect. Requests-per-minute is a metric, not an indicator or a correlation."
+      - content: "A correlation"
+        isCorrect: false
+        explanation: "Incorrect. Requests-per-minute is a metric, not an indicator or a correlation."
+      - content: "None of the above"
+        isCorrect: false
+        explanation: "Incorrect. Requests-per-minute is a metric, not an indicator or a correlation."
+
+    - content: "In order to monitor the performance of an application deployed to the cloud and determine if and when it needs to be scaled to meet demand, you have configured a dashboard to show the number of requests received per minute and the number of requests processed per minute. The idea is that if the count of requests processed plateaus while the count of requests received continues to grow, the server might be saturated and you need more servers. In this scenario, you are employing which of the following?"
+      choices:
+      - content: "A performance metric"
+        isCorrect: false
+        explanation: "Incorrect. This is an example of a USE correlation, which considers the number of requests processed during a given interval, as well as the number of requests that could not be processed."
+      - content: "A performance indicator"
+        isCorrect: false
+        explanation: "Incorrect. This is an example of a USE correlation, which considers the number of requests processed during a given interval, as well as the number of requests that could not be processed."
+      - content: "A USE correlation"
+        isCorrect: true
+        explanation: "Correct! USE considers the number of requests processed during a given interval, as well as the number of requests that could not be processed."
+      - content: "A RED correlation"
+        isCorrect: false
+        explanation: "Incorrect. This is an example of a USE correlation, which considers the number of requests processed during a given interval, as well as the number of requests that could not be processed."
