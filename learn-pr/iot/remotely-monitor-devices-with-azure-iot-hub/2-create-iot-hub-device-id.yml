@@ -4,7 +4,7 @@ metadata:
   title: Exercise - Create an Azure IoT Hub, and a device ID, using the Microsoft Azure portal
   description: Describes the process of creating a new IoT Hub, a IoT Hub device identity, and obtaining the connection strings needed for the coding units.
   ms.date: 10/01/2019
-  author: olivierbloch
+  author: PeterTurcan
   ms.author: Olivier.Bloch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
