@@ -40,7 +40,7 @@ quiz:
       isCorrect: false
       explanation: The actual feature is called Automatic Device Management.
     - content: 'Device Twins'
-      isCorrect: true
+      isCorrect: false
       explanation: While Device Twins are used in the process, the feature is called Automatic Device Management.
     - content: 'Automatic Device Management'
       isCorrect: true
