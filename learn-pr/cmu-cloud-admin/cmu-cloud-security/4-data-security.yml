@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 11
 content: |
-  [!include[](includes/4-virtual-networks.md)]
+  [!include[](includes/4-data-security.md)]
 # quiz:
 #   title: Check your knowledge
 #   questions:

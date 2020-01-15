@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 11
 content: |
-  [!include[](includes/1-virtual-machines.md)]
+  [!include[](includes/1-responsibilities.md)]
 # quiz:
 #   title: Check your knowledge
 #   questions:

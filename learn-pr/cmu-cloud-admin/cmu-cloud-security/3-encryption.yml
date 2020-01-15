@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 13
 content: |
-  [!include[](includes/3-containers.md)]
+  [!include[](includes/3-encryption.md)]
 # quiz:
 #   title: Check your knowledge
 #   questions:

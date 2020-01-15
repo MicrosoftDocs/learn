@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 11
 content: |
-  [!include[](includes/2-virtualization-cloud-computing.md)]
+  [!include[](includes/2-threats.md)]
 # quiz:
 #   title: Check your knowledge
 #   questions:
