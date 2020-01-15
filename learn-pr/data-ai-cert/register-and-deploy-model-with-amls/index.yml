@@ -29,7 +29,7 @@ units:
 - learn.data-ai.register-and-deploy-model-with-amls.deploy-model
 - learn.data-ai.register-and-deploy-model-with-amls.consume-model
 - learn.data-ai.register-and-deploy-model-with-amls.troubleshoot-deployment
-- learn.data-ai.register-and-deploy-model-with-amls.deploy-a-model
+- learn.data-ai.register-and-deploy-model-with-amls.deploying-a-model
 - learn.data-ai.register-and-deploy-model-with-amls.summary
 badge:
   uid: learn.data-ai.register-and-deploy-model-with-amls.badge
