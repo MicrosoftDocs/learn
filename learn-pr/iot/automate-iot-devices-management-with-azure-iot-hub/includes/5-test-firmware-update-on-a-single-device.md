@@ -27,7 +27,7 @@ You should see the following output in the terminal (where "mydevice" is the dev
 
     :::image type="content" source="../media/devicemanagement-2.png" alt-text="Configuration ID":::
     
-1. For the Device Twin Property field, enter the following:
+1. For the Device Twin Property field, enter the following. Note that you have to define a desired property, hence the need to prefix the value in the field with "properties.desired". You can also add several desired properties, but in our case we will only add one.
 
     ```
     properties.desired.firmware
@@ -56,7 +56,7 @@ You should see the following output in the terminal (where "mydevice" is the dev
 
     :::image type="content" source="../media/devicemanagement-4.png" alt-text="Metrics":::
 
-1. In the "Priority" field, type "10" and in the "Target Condition" field, type in the following query, replacing "\<your device id\>" with the device Id you used to create the device in unit 2, then click on "Next: Review + Create >"
+1. In the "Priority" field, type "10" and in the "Target Condition" field, type in the following query, replacing "\<your device id\>" with the device Id you used to create the device in unit 2, then click on "Next: Review + Create >". (Note that valid conditions specify either a deviceId (e.g. deviceId='{id}'), one or more device twin tag criteria (e.g. tags.environment = 'prod' AND tags.location = 'westus'), or reported property criteria)
 
     ``` SQL
         deviceId='<your device id>'

@@ -34,7 +34,7 @@ quiz:
       isCorrect: false
       explanation: iothub is not a sub-command of az.
 
-  - content: 'To create a new device id in an IoT Hub you will need'
+  - content: 'To create a new device Id in IoT Hub using the Azure CLI, you will need'
     choices:  
     - content: 'The IoT Hub instance name, the Resource Group name, a new device id'
       isCorrect: false

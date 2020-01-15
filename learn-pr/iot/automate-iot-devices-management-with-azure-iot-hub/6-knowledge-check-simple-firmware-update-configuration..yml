@@ -10,69 +10,89 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Knowledge Check - Simple firmware update configuration
-durationInMinutes: 1
+durationInMinutes: 5
 content: >-
   [!include[](includes/6-knowledge-check-simple-firmware-update-configuration.md)]
 quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'question 1'
+  - content: 'Firmware Updates on IoT devices are usually necessary...'
     choices:  
-    - content: 'answer 1'
+    - content: 'Only the very first time the device boots.'
       isCorrect: false
-      explanation: explanation 1.
-    - content: 'answer 2'
+      explanation: IoT devices need to be updated to receive latest security updates and patches as well as software updates for new features and enhancements. And for small IoT devices it is often simpler and safer to update the entire firmware.
+    - content: 'Only when hardware changes are made (new peripherals attached, new sensors added)'
+      isCorrect: false
+      explanation: IoT devices need to be updated to receive latest security updates and patches as well as software updates for new features and enhancements. And for small IoT devices it is often simpler and safer to update the entire firmware.
+    - content: 'Regularly during the device''s life cycle'
       isCorrect: true
-      explanation: explanation 2.
-    - content: 'answer 3'
+      explanation: Correct, IoT devices need to regularly be updated to receive latest security updates and patches as well as software updates for new features and enhancements. And for small IoT devices it is often simpler and safer to update the entire firmware.
+    - content: 'At first boot then only when hardware changes are made (new peripherals attached, new sensors added)'
       isCorrect: false
-      explanation: explanation 3.
-    - content: 'answer 4'
-      isCorrect: false
-      explanation: explanation 4.
+      explanation: IoT devices need to be updated to receive latest security updates and patches as well as software updates for new features and enhancements. And for small IoT devices it is often simpler and safer to update the entire firmware.
 
-  - content: 'question 2'
+  - content: 'IoT devices are becoming more exposed to security threats because...'
     choices:  
-    - content: 'answer 1'
+    - content: 'They are more and more often connected to the broader web'
       isCorrect: false
-      explanation: explanation 1.
-    - content: 'answer 2'
+      explanation: All answers are correct.
+    - content: 'Being physically exposed they are more prone to being compromised.'
+      isCorrect: false
+      explanation: All answers are correct.
+    - content: 'All of the above'
       isCorrect: true
-      explanation: explanation 2.
-    - content: 'answer 3'
-      isCorrect: false
-      explanation: explanation 3.
-    - content: 'answer 4'
-      isCorrect: false
-      explanation: explanation 4.
+      explanation: Correct.
 
-  - content: 'question 3'
+  - content: 'On IoT devices it is always simpler to update software packages individually'
     choices:  
-    - content: 'answer 1'
+    - content: 'Yes, IoT Devices can easily be updated by pushing new versions of software libraries using package managers such as apt or npm'
       isCorrect: false
-      explanation: explanation 1.
-    - content: 'answer 2'
+      explanation: Majority of IoT Devices run on tiny embedded OSs or sometimes without actual operating system and rarely have a package manager available, hence the need to update full firmware rather than individual software packages.
+    - content: 'No, is is usually simpler to update the whole firmware on IoT devices'
       isCorrect: true
-      explanation: explanation 2.
-    - content: 'answer 3'
-      isCorrect: false
-      explanation: explanation 3.
-    - content: 'answer 4'
-      isCorrect: false
-      explanation: explanation 4.
+      explanation: Correct. Majority of IoT Devices run on tiny embedded OSs or sometimes without actual operating system and rarely have a package manager available, hence the need to update full firmware rather than individual software packages.
 
-  - content: 'question 4'
+  - content: 'What are the most common aspects of over-the-air IoT devices firmware updates'
     choices:  
-    - content: 'answer 1'
+    - content: 'None, IoT devices firmware updates vary a lot from one device to another.'
       isCorrect: false
-      explanation: explanation 1.
-    - content: 'answer 2'
+      explanation: Firmware come in binary file formats, are versioned, available for devices to acquire online and device manufacturers provide instructions or implementing the sequence of operations required to update the firmware.
+    - content: 'Firmware come in binary file formats, are versioned, available for devices to acquire online.'
       isCorrect: true
-      explanation: explanation 2.
-    - content: 'answer 3'
+      explanation: Correct, additionally, device manufacturers provide instructions or implementing the sequence of operations required to update the firmware.
+    - content: 'Device Manufacturer rarely provide detailed instructions on how to implement a firmware update.'
       isCorrect: false
-      explanation: explanation 3.
-    - content: 'answer 4'
+      explanation: Firmware come in binary file formats, are versioned, available for devices to acquire online and device manufacturers provide instructions or implementing the sequence of operations required to update the firmware.
+
+  - content: 'When creating a device management configuration, the Device Twin Property field has to start with:'
+    choices:  
+    - content: 'properties.desired'
+      isCorrect: true
+      explanation:  You indeed have to define a desired property, hence the need to prefix the value in the field with "properties.desired".
+    - content: 'properties.reported'
       isCorrect: false
-      explanation: explanation 4.
+      explanation:  You have to define a desired property, hence the need to prefix the value in the field with "properties.desired".
+    - content: 'properties.tags'
+      isCorrect: false
+      explanation:  You have to define a desired property, hence the need to prefix the value in the field with "properties.desired".
+    - content: 'None of the above'
+      isCorrect: false
+      explanation:  You have to define a desired property, hence the need to prefix the value in the field with "properties.desired".
+
+  - content: 'When creating a device management configuration, the Target Devices condition can be:'
+    choices:  
+    - content: 'Only one Device Twin Tag'
+      isCorrect: false
+      explanation:  Valid conditions specify either a deviceId (e.g. deviceId='{id}'), one or more device twin tag criteria (e.g. tags.environment = 'prod' AND tags.location = 'westus'), or reported property criteria.
+    - content: 'Either a deviceId or only one device twin tag'
+      isCorrect: false
+      explanation:  Valid conditions specify either a deviceId (e.g. deviceId='{id}'), one or more device twin tag criteria (e.g. tags.environment = 'prod' AND tags.location = 'westus'), or reported property criteria.
+    - content: 'Either a deviceId or one or more device twin tag'
+      isCorrect: false
+      explanation:  Valid conditions specify either a deviceId (e.g. deviceId='{id}'), one or more device twin tag criteria (e.g. tags.environment = 'prod' AND tags.location = 'westus'), or reported property criteria.
+    - content: 'Either a deviceId, one or more device twin tag, or a reported property criteria'
+      isCorrect: true
+      explanation:  Correct, valid conditions specify either a deviceId (e.g. deviceId='{id}'), one or more device twin tag criteria (e.g. tags.environment = 'prod' AND tags.location = 'westus'), or reported property criteria.
+
+      

@@ -45,7 +45,7 @@ We will create a script file that we will execute from the shell in order to cre
         connectionString=${connectionString#*: \"}
         connectionString=${connectionString%\"*}
         echo Starting device simulator $i with connection string $connectionString
-        bash -c "dotnet run \"$connectionString\""
+        dotnet run "$connectionString" &
     done
     ```
 1. Replace "\<iot hub name\>" with your IoT Hub Name

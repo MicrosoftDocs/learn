@@ -15,7 +15,7 @@ There is a set of common denominators to all over-the-air firmware updates for I
 1. Firmware versions are uniquely identified
 1. Firmware comes in a binary file format that the device will need to acquire from an online source
 1. Firmware is locally stored in some form of physical storage (ROM memory, hard drive,...)
-1. Device manufacturer provides a description of the required operations on the device to update the firmware.
+1. Device manufacturer provides instructions for implementing the sequence of operations required to update the firmware.
 
 ## Azure IoT Hub Automatic Device Management
 
