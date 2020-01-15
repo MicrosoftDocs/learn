@@ -3,8 +3,8 @@ uid: learn.wwl.using-iaas-support-azure-sap-workloads.learn.wwl.deploy-sap-certi
 title: Monitoring requirements of Azure for SAP workloads
 metadata:
   title: Monitoring requirements of Azure for SAP workloads
-  description: Monitoring requirements of Azure for SAP workloads
-  ms.date: 12/20/2019
+  description: "Monitoring requirements of Azure for SAP workloads"
+  ms.date: 01/13/2020
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
