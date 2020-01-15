@@ -66,7 +66,7 @@ quiz:
     - content: 'az iot hub create-configuration'
       isCorrect: false
       explanation: The right command is 'az iot hub configuration create'.
-    - content: 'az iot hub create configuration'
+    - content: 'az iot hub configuration create'
       isCorrect: true
       explanation: Correct.
     - content: 'az iot hub create_configuration'
