@@ -22,7 +22,7 @@ The cold path is a batch processing path for telemetry data storage.
 
 The IoT remote device pumps out _specific_ telemetry. This telemetry is sent in its own message, routed by the IoT Hub for instant analysis and visualization. The analysis could be done by a human operator, say, using Azure Time Series Insights. This approach is described in this module.
 
-Alternatively, the analysis could be handled by Azure Stream Analytics which supports simple SQL language queries, and is extensible via C# or JavaScript UDFs (User defined functions).
+Alternatively, the analysis could be handled by Azure Stream Analytics, which supports simple SQL language queries, and is extensible via C# or JavaScript UDFs (User-defined functions).
 
 The hot path requires storage optimized for data availability. Data services that provide this speed of access are the more expensive services.
 
@@ -30,15 +30,15 @@ The hot path requires storage optimized for data availability. Data services tha
 
 [![Graph illustration of vibration, temperature, and humidity telemetry](../media/lambda-cold-path.png)](../media/lambda-cold-path.png#lightbox)
 
-The IoT remote device also sends out all telemetry, and logging, data. The IoT Hub directs these messages down a route to an Azure storage account. The key point about cold path storage is that it is optimized for size (that is, it is compressed), long-term storage, and low-cost. The cold path is _not_ optimized for availability.
+The IoT remote device also sends out all telemetry, and logging, data. The IoT Hub directs these messages down a route to an Azure storage account. The key point about cold path storage is that it's optimized for size (that is, it's compressed), long-term storage, and low cost. The cold path is _not_ optimized for availability.
 
-There are various storage resources available in Azure, and the next units describe these options. Having an understanding of your own data is important. If it consists of files, images, recordings, and similar disparate items, then it is considered _unstructured_ storage. If your data neatly divides into similar database-like objects, then it is considered _structured_.
+There are various storage resources available in Azure, and the next units describe these options. Having an understanding of your own data is important. If it consists of files, images, recordings, and similar disparate items, then it's considered _unstructured_ storage. If your data neatly divides into similar database-like objects, then it's considered _structured_.
 
 ### Issues with lambda architecture
 
 Similar to most hybrid systems, there are complexity issues. One of the main issues with IoT is the duplication of data and code. The more duplication there is, the greater the chance of an unwanted divergence between the duplicate copies. Developers of the IoT device sensor code need to ensure that the telemetry data being sent in the two messages is identical, where it should be. Also, there may be code duplication in the analysis apps, if there are separate apps for the hot and cold paths. Duplication needs to be handled carefully, though is a near unavoidable consequence of a hybrid system.
 
-Costs are always an issue. Fast services tend to be the more expensive, slower services cheaper. There is usually a compromise to be made.
+Costs are always an issue. Fast services tend to be the more expensive, slower services cheaper. There's usually a compromise to be made.
 
 ## First steps
 

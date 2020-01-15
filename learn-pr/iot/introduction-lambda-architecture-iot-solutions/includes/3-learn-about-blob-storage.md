@@ -28,7 +28,7 @@ Blob storage can be accessed via API calls. Developers can write apps, of any co
 
 ### Consider data security
 
-Azure Blob storage is automatically encrypted , at no extra cost and with no extra setup. The system used is called _Storage Service Encryption_, or SSE. In addition, data can be secured _in transit_, between an app and Azure, using _Client-Side Encryption_, HTTPS, or SMB 3.0.
+Azure Blob storage is automatically encrypted, at no extra cost and with no extra setup. The system used is called _Storage Service Encryption_, or SSE. In addition, data can be secured _in transit_, between an app and Azure, using _Client-Side Encryption_, HTTPS, or SMB 3.0.
 
 ## Upgrade to Data Lake Storage Gen2
 

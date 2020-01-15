@@ -25,7 +25,7 @@ Having set up your database, you have to consider how important it is that every
 
 ## Set the data consistency
 
-In our scenario, there are three company data locations: US West, Australia East, and Australia Central. Only US West writes to the data, but all three locations can read it. Data consistency answers the following question: After US West writes an update to the data, what should all read locations get when they read the data? If there is zero latency, then this question would be mute. However, latency is a real issue in the cloud, and it needs to be addressed.
+In our scenario, there are three company data locations: US West, Australia East, and Australia Central. Only US West writes to the data, but all three locations can read it. Data consistency answers the following question: After US West writes an update to the data, what should all read locations get when they read the data? If there's zero latency, then this question would be mute. However, latency is a real issue in the cloud, and it needs to be addressed.
 
 When a write is made to update data in US West, that change will be propagated automatically to the other locations. However, the update will exist in an inaccessible state, until the go-ahead is received that the update can now be read. This inaccessible state exists in all three locations, even the write location.
 
@@ -59,11 +59,11 @@ So what consistency level would be right for our vibration data example?  _Stron
 
 A more complex scenario exists if your IoT devices are in multiple regions. You would have to enable multiple write regions. Keeping the data in sync is a likely priority, if running analysis on the combined data. In this case, set a stronger consistency level such as Strong, or Bounded.
 
-In the scenario where the read regions are only storing the data, or performing cold analysis, the Prefix consistency level would work well too. Given the order of telemetry readings is important for analysis, the lowest consistency level, Eventual, is unlikely to be appropriate for most IoT applications.
+In the scenario where the read regions are only storing the data, or performing cold analysis, the Prefix consistency level would work too. Given the order of telemetry readings is important for analysis, the lowest consistency level, Eventual, is unlikely to be appropriate for most IoT applications.
 
 ### Consider the response time to time-critical data
 
-Another issue you need to consider in your choice of IoT cloud services, is the speed of response to an apparent issue in the data. In our conveyor belt example, there is analysis of vibrations to give early warning of failure. How much lag can there be after data anomalies are detected, before preventive maintenance is required? The kind of services you will need will depend on whether this answer is days, hours, minutes, or seconds. Mechanical systems lean towards the longer time spans, high-energy systems might need very quick intervention!
+Another issue you need to consider in your choice of IoT cloud services, is the speed of response to an apparent issue in the data. In our conveyor belt example, there's analysis of vibrations to give early warning of failure. How much lag can there be after data anomalies are detected, before preventive maintenance is required? The kind of services you'll need depends on whether this answer is days, hours, minutes, or seconds. Mechanical systems lean towards the longer time spans, high-energy systems might need quick intervention!
 
 ## Best practices
 
