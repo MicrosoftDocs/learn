@@ -81,7 +81,7 @@ What binds the physical and virtual components of information technology togethe
 
 ### References
 
-1. Kafka and other streaming queue systems became popular more for their roles in big data platforms, although they were originally engineered to handle the colossal volumes of machine data that systems produce.
+1. _Kafka and other streaming queue systems became popular more for their roles in big data platforms, although they were originally engineered to handle the colossal volumes of machine data that systems produce._
 
 1. _International Journal of Integrated Care. *Chain of care development in Sweden: results of a national study*. <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1483939/>._
 

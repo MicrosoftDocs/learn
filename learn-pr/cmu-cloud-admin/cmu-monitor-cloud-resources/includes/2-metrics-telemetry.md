@@ -122,7 +122,7 @@ AWS and Amazon users are not required to use CloudWatch and Azure Monitor; third
 
 ### References
 
-1. A TSDB stores sequences of values over time, recording their progressions and their history. Some consider this a form of logging, although Prometheus' own creators would disagree, arguing that a log is essentially a table while a TSDB is a series.
+1. _A TSDB stores sequences of values over time, recording their progressions and their history. Some consider this a form of logging, although Prometheus' own creators would disagree, arguing that a log is essentially a table while a TSDB is a series._
 
 2. _The New Stack. *SoundCloud’s Prometheus: A Monitoring System and Time Series Database Suited for Containers*. <https://thenewstack.io/soundclouds-prometheus-monitoring-system-time-series-database-suited-containers/>._
 
