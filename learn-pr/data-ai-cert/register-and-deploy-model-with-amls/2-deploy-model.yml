@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.data-ai.register-and-deploy-model-with-amls.deploy-model
+title: Deploying a Model as a Real-Time Service
+metadata:
+  title: Deploying a Model as a Real-Time Service
+  description: Learn how to deploy a model as a real-time inferencing service.
+  ms.date: 01/13/2020
+  author: GraemeMalcolm
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-deploy-model.md)]

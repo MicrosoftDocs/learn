@@ -1,0 +1,43 @@
+### YamlMime:ModuleUnit
+uid: learn.data-ai.train-local-model-with-azure-mls.summary
+title: Summary
+metadata:
+  title: Summary
+  description: Summary
+  ms.date: 01/13/2020
+  author: GraemeMalcolm
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-summary.md)]
+
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "You have written a script that uses the Scikit-Learn framework to train a model. Which framework-specific estimator should you use to run the script as an experiment?"
+    choices: 
+    - content: "PyTorch"
+      isCorrect: false
+      explanation: "Incorrect. To run a scikit-learn training script as an experiment, use the generic Estimator estimator or a SKLearn estimator."
+    - content: "Tensorflow"
+      isCorrect: false
+      explanation: "Incorrect. To run a scikit-learn training script as an experiment, use the generic Estimator estimator or a SKLearn estimator."
+    - content: "SKLearn"
+      isCorrect: true
+      explanation: "Correct. To run a scikit-learn training script as an experiment, use the generic Estimator estimator or a SKLearn estimator."
+  
+  - content: "You have run an experiment to train a model. You want the model to be stored in the workspace, and available to other experiments and published services. What should you do?"
+    choices: 
+    - content: "Register the model in the workspace."
+      isCorrect: true
+      explanation: "Correct. To store a model in the workspace, register it."
+    - content: "Save the model as a file in a Compute Instance."
+      isCorrect: false
+      explanation: "Incorrect. To store a model in the workspace, register it."
+    - content: "Save the experiment script as a notebook."
+      isCorrect: false
+      explanation: "Incorrect. To store a model in the workspace, register it."
+  

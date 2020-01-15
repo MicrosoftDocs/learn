@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.data-ai.automate-model-selection-with-azure-automl.using-automl
+title: Exercise - Using Automated Machine Learning
+metadata:
+  title: Exercise - Using Automated Machine Learning
+  description: Use this hands-on exercise to learn how to run an automated machine learning experiment.
+  ms.date: 01/13/2020
+  author: GraemeMalcolm
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 20
+content: |
+  [!include[](includes/5-using-automl.md)]
