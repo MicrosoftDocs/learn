@@ -113,7 +113,7 @@ Data operations are specified in the `DataActions` and `NotDataActions` properti
 
 Only data operations can be added to the `DataActions` and `NotDataActions` properties. Resource providers identify which operations are data operations by setting the `isDataAction` property to `true`.  Roles that do not have data operations can omit these properties from the role definition.
 
-These actions work exactly like their management cousins. You specify actions you want to allow (or `*` for all) and then provide a list of specific actions to remove in the `NotDataActions` collection. Here are some examples, you can find the [full list of actions and data actions in the resource provider documentation](https://docs.microsoft.com/en-us/azure/role-based-access-control/resource-provider-operations):
+These actions work exactly like their management cousins. You specify actions you want to allow (or `*` for all) and then provide a list of specific actions to remove in the `NotDataActions` collection. Here are some examples, you can find the [full list of actions and data actions in the resource provider documentation](https://docs.microsoft.com/azure/role-based-access-control/resource-provider-operations):
 
 | Data operation | Description |
 |----------------|-------------|
