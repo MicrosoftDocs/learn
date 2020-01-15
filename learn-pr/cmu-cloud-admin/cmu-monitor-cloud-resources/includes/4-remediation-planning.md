@@ -56,7 +56,7 @@ The alternative point of view is that the organization itself is the best source
 
 4. **Establish business targets.** Write the formulas for the relationships between measurable, observable factors, and the optimum values for those formulas, in a simple, mathematical way that all stakeholders can understand.
 
-5. **Integrate the ticketing system** or whatever automated functions may be involved in addressing problem issues, so that system improvement projects for business objectives purposes may co-exist with performance and software problems.
+5. **Integrate the ticketing system** or whatever automated functions are involved in addressing problem issues, so that system improvement projects for business objectives purposes may co-exist with performance and software problems.
 
 6. **Dedicate the performance monitoring platform** to the task of gathering the pertinent metrics that pertain to the established business targets. Where applicable, enable dashboards to continually report these metrics in simple, graphical forms.
 
@@ -68,7 +68,7 @@ The basic tenet of modern remediation planning in IT is that the state of the or
 
 - **Nothing is "normal" anymore.** Just as people become healthy and stay healthy by tending to their own well-being every day, there ceases to be a permanent zone of normalcy that defines the behavior of a network if that network were never to change. The goal for service levels becomes a moving target. In nature, this concept is called "evolution."
 
-- **Massive upheavals can be avoided** if small changes are being made all the time. Cloud-based application staging environments take place on software-defined networks. Their host platforms are capable of making, or suggesting, adjustments to those networks to improve their performance. Data from APM platforms give administrators guidance as to where communications and service interactions may be improved.
+- **Massive upheavals can be avoided** if small changes are being made all the time. Cloud-based application staging environments take place on software-defined networks. Their host platforms are capable of making, or suggesting, adjustments to those networks to improve their performance. Data from APM platforms give administrators guidance as to where communications and service interactions could be improved.
 
 - **A working knowledge of the system is more deeply engrained** in the minds of everyone assigned to its upkeep. Many APMs enable their operators to take the basic reports of system events and "drill down" to their underlying causes and effects. If people understand these interdependencies better before they go hunting for root causes of failures, they'll have a better idea of both what to look for and where to look for it when failures occur.
 
