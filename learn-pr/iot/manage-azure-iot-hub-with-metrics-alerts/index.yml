@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.iot.manage-your-azure-iot-hub-with-metrics-alerts
+metadata:
+  title: Manage your Azure IoT Hub with alerts and metrics
+  description: TBD
+  ms.date: 2/2/2020
+  author: PeterTurcan
+  ms.author: Olivier.Bloch
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Manage your Azure IoT Hub with alerts and metrics
+summary: >
+ TBD
+abstract: | 
+  In this module, you will:
+  - Create an Azure IoT Hub, using the IoT Hub portal
+  - Create an Azure IoT Hub device identity, using the IoT Hub portal
+  - Create an app to send device telemetry to the IoT Hub
+  - Create a second app to listen for the telemetry, and control the device through direct methods and device twins
+prerequisites: | 
+  - An introductory knowledge of Azure IoT
+  -	Ability to navigate the Azure IoT portal 
+  -	Ability to use Node.js, or C#, at the beginner level
+  -	Experience using Visual Studio, or Visual Studio Code, at the beginner level 
+iconUrl: /learn/achievements/iot/manage-your-azure-iot-hub-with-metrics-alerts.svg
+ratingEnabled: true
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure-iot-hub
+units:
+- learn.iot.manage-your-azure-iot-hub-with-metrics-alerts.introduction
+- learn.iot.manage-your-azure-iot-hub-with-metrics-alerts.exercise-create-iot-hub-device-id
+- learn.iot.manage-your-azure-iot-hub-with-metrics-alerts.exercise-write-device-telemetry-code
+- learn.iot.manage-your-azure-iot-hub-with-metrics-alerts.overview-iot-hub-metrics-alerts
+- learn.iot.manage-your-azure-iot-hub-with-metrics-alerts.exercise-create-metrics-alerts
+- learn.iot.manage-your-azure-iot-hub-with-metrics-alerts.exercise-test-metrics-alerts
+- learn.iot.manage-your-azure-iot-hub-with-metrics-alerts.summary
+badge:
+  uid: learn.iot.manage-your-azure-iot-hub-with-metrics-alerts.badge

@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.iot.manage-your-azure-iot-hub-with-metrics-alerts.summary
+metadata:
+  title: Summary
+  description: Summary
+  ms.date: 2/2/2020
+  author: PeterTurcan
+  ms.author: Olivier.Bloch
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Summary
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-summary.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: 'The sending of temperature and humidity values is called telemetry. What value in the following list could also be considered telemetry?'
+    choices:  
+    - content: 'Build date of the remote IoT Hub device'
+      isCorrect: false
+      explanation: This date would be a property of the device, not telemetry.
+    - content: 'Sensor ID'
+      isCorrect: false
+      explanation: This ID could be a property of the device, or a tag in a device twin.
+    - content: 'Heartbeat'
+      isCorrect: true
+      explanation: A heart-rate monitor sends out a heartbeat as its telemetry.

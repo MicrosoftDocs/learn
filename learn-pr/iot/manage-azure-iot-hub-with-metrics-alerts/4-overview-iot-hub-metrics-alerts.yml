@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.iot.manage-your-azure-iot-hub-with-metrics-alerts.overview-iot-hub-metrics-alerts
+metadata:
+  title: Exercise - Write code to send and receive telemetry
+  description: Write code, in Node.js or C#, to transmit simulated cheese cave telemetry to an IoT Hub. Also, write a back-end app to confirm the telemetry has been received.
+  ms.date: 2/2/2020
+  author: PeterTurcan
+  ms.author: Olivier.Bloch
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  zone_pivot_groups: vs-vscode-language
+title: Exercise - Write code to send and receive telemetry
+durationInMinutes: 15
+content: |
+  [!include[](includes/4-overview-iot-hub-metrics-alerts.md)]
