@@ -30,8 +30,7 @@ prerequisites: |
  - Be familiar with different organizational IT cost types like CapEx and OpEx
  - Understand how cloud resource provisioning works
 
-#iconUrl: /learn/achievements/cmu-cloud-admin/cmu-monitor-cloud-resources.svg
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/cmu-cloud-admin/cmu-monitor-cloud-resources.svg
 levels:
 - beginner
 roles:
