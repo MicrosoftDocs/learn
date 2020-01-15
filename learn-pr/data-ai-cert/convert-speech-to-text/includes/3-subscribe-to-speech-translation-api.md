@@ -1,10 +1,10 @@
-Let's create a speech-translation subscription by using the Azure portal.
+Before you can begin performing your speech-to-text translation, you need to create an Azure Speech resouce.  You can do this by using the Azure portal, the Azure CLI, or the Cloud Shell.  This exercise will use the Azure Portal.
 
 1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true).
 
-1. Select **+ Create a resource**. In the **Search the Marketplace** box, type **translation** and press Enter.
+1. Select **+ Create a resource**. In the **Search the Marketplace** box, type **speech** and press Enter.
 
-1. In the **Results** list, select **Translator Text**. In the **Translator Text** pane, select **Create**.
+1. In the **Results** list, select **Speech**. In the **Translator Text** pane, select **Create**.
 
     ![Selecting the Speech Translation API](../media/3-subscribe-to-speech-translation-resource.png)
 
