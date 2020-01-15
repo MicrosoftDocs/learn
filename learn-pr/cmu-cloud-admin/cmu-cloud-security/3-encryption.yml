@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.cmu-cloud-admin.cmu-cloud-security.3-encryption
-title: Virtualization for containers
+title: Encryption
 metadata:
-  title: Virtualization for containers
-  description: 
+  title: Encryption
+  description: Encryption
   ms.date: 01/15/2020
   author: shanamatthews
   ms.author: shanama

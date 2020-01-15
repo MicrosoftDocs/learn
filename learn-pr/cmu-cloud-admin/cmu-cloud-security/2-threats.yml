@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.cmu-cloud-admin.cmu-cloud-security.2-threats
-title: Understanding virtualization
+title: Threats to cloud security
 metadata:
-  title: Understanding virtualization
-  description: 
+  title: Threats to cloud security
+  description: Threats to cloud security
   ms.date: 01/15/2020
   author: shanamatthews
   ms.author: shanama

@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.cmu-cloud-admin.cmu-cloud-security.4-data-security
-title: Virtualization for networks
+title: Data security in the cloud
 metadata:
-  title: Virtualization for networks
-  description: 
+  title: Data security in the cloud
+  description: Data security in the cloud
   ms.date: 01/15/2020
   author: shanamatthews
   ms.author: shanama
