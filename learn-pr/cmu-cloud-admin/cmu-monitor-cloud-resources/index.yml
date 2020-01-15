@@ -2,7 +2,7 @@
 uid: learn.cmu-cloud-admin.cmu-monitor-cloud-resources
 metadata:
   title: Monitor cloud resources
-  description: Cloud Admin course from Dr. Majd Sakr at Carnegie Mellon University. TBD
+  description: Cloud Admin course from Dr. Majd Sakr at Carnegie Mellon University. Monitoring how your cloud resources are performing is crucial to building reliable cloud applications. This module covers what monitoring is, why you need to do it, and how you can about monitoring your resources.
   ms.date: 1/15/2019
   author: shanamatthews
   ms.author: shanama
@@ -10,7 +10,7 @@ metadata:
   ms.prod: learning-azure
   showCreativeCommonsFooter: true
 title: Monitor cloud resources
-summary: TBD
+summary: Monitoring how your cloud resources are performing is crucial to building reliable cloud applications. This module covers what monitoring is, why you need to do it, and how you can about monitoring your resources.
 abstract: | 
   In this module you will:
   - Explain the main argument in favor of continual and consistent monitoring and oversight in cloud-based IT systems
