@@ -1,27 +1,27 @@
-In this learning path, you've been helping the Tailspin team set up an automated release pipeline, complete with multiple stages and both functional and non-functional tests. 
+In this learning path, you've been helping the Tailspin Toys team set up an automated release pipeline. The pipeline includes multiple stages and both functional and nonfunctional tests. 
 
-In this module, you help the team solve another problem. How do they implement a deployment pattern that lets them release to production in a way that's best both for the company and for their users? You'll help them evaluate the different possibilities and then implement the one they decide on.
+In this module, you help the team solve another problem. How do they implement a deployment pattern that lets them release to production in a way that's best both for the company and for their users? You'll help them evaluate the possibilities and then implement the one that they choose.
 
 ## Learning objectives
 
 In this module, you will:
 
 - Learn why deployment patterns matter.
-- Compare different deployment patterns so you can choose the one that best suits your needs.
+- Compare deployment patterns so that you can choose the one that best suits your needs.
 - Apply the blue-green deployment pattern in your pipeline.
 
 ## Prerequisites
 
-The modules in this learning path form a progression.
+The modules in this learning path are part of a progression.
 
 To follow the progression from the beginning, be sure to first complete these learning paths:
 
 * [Evolve your DevOps practices](/learn/paths/evolve-your-devops-practices?azure-portal=true)
 * [Build applications with Azure DevOps](/learn/paths/build-applications-with-azure-devops?azure-portal=true)
 
-We also recommend you start at the beginning of this learning path, [Deploy applications with Azure DevOps](/learn/paths/deploy-applications-with-azure-devops?azure-portal=true).
+We also recommend that you start at the beginning of this learning path, [Deploy applications with Azure DevOps](/learn/paths/deploy-applications-with-azure-devops?azure-portal=true).
 
-If you want to go through just this module, you need to set up a development environment on your Windows, macOS, or Linux system. You need:
+If you want to go through just this module, then you need to set up a development environment on your Windows, macOS, or Linux system. You need the following resources:
 
 * An [Azure DevOps organization](https://dev.azure.com?azure-portal=true)
 * An [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true)
@@ -30,7 +30,7 @@ If you want to go through just this module, you need to set up a development env
 * [.NET Core 2.1](https://dotnet.microsoft.com/download/dotnet-core/2.1?azure-portal=true)
 * [Git](https://git-scm.com/downloads?azure-portal=true)
 
-You can get started with Azure and Azure DevOps for free. You don't need an Azure subscription to work with Azure DevOps, but here you'll use Azure DevOps to deploy to Azure resources that exist in your Azure subscription.
+You can get started with Azure and Azure DevOps for free. You don't need an Azure subscription to work with Azure DevOps, but here you'll use Azure DevOps to deploy to resources that exist in your Azure subscription.
 
 This environment lets you complete the exercises in this and future modules. You can also use it to apply your new skills to your own projects.
 
@@ -54,4 +54,4 @@ You met the _Space Game_ web team at Tailspin Toys in previous modules. As a ref
 
 :::row-end:::
 
-Mara has prior experience with DevOps and is helping the team adopt a more automated process that uses Azure DevOps.
+Mara has prior experience with DevOps. She's helping the team adopt a more automated process that uses Azure DevOps.

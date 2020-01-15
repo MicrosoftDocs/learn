@@ -43,7 +43,7 @@ _Figure 6: Mixed-OS environment offered by system virtualization._
 
 ### References
 
-1. _Microsoft (2019). *Design Principles Behind the Windows Azure Hypervisor.* <https://azure.microsoft.com/th-th/blog/design-principles-behind-the-windows-azure-hypervisor/>._
+1. _Microsoft (2019). *Design Principles Behind the Windows Azure Hypervisor.* <https://azure.microsoft.com/blog/design-principles-behind-the-windows-azure-hypervisor/>._
 
 2. _Michelle Bailey (2009). \"The Economics of Virtualization: Moving Toward an Application-Based Cost Model.\" VMware Sponsored Whitepaper._
 

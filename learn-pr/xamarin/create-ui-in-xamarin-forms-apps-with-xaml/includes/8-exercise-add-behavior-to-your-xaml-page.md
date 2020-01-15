@@ -137,7 +137,7 @@ If you run the app on iOS, you'll notice it obscures the status bar. To correct 
 2. Run the app on iOS to see the content move down from the status bar and any notch, if your chosen simulator has one.
 
     > [!NOTE]
-    > This is a simple example of how to add platform-specific properties. To work around the status bar and device notch in iOS, specifically, the [iOS safe area system](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/platform/ios/page-safe-area-layout) is a better choice to use throughout your app.
+    > This is a simple example of how to add platform-specific properties. To work around the status bar and device notch in iOS, specifically, the [iOS safe area system](https://docs.microsoft.com/xamarin/xamarin-forms/platform/ios/page-safe-area-layout) is a better choice to use throughout your app.
 
 3. Run the app on Android to verify that it doesn't include the padding.
 
