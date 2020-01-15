@@ -41,8 +41,10 @@ Oracle Database
 For versions and restrictions refer to SAP Note #2039619 containing the Oracle support matrix on Azure.
 
 
-> **NOTE** Oracle  supports Windows and Oracle Linux as guest OS in Azure VMs only.
+> [!NOTE] 
+> Oracle  supports Windows and Oracle Linux as guest OS in Azure VMs only.
 
 
-> **NOTE** Using Windows Failover Cluster Service with shared disk configuration for the DBMS layer is not supported in Azure VMs. Instead, to provide high availability, customers should consider using non-shared disk solutions, such as SQL Server Always On, Oracle Data Guard, or HANA System Replication.
+> [!NOTE]
+> Using Windows Failover Cluster Service with shared disk configuration for the DBMS layer is not supported in Azure VMs. Instead, to provide high availability, customers should consider using non-shared disk solutions, such as SQL Server Always On, Oracle Data Guard, or HANA System Replication.
 
