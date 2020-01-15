@@ -22,7 +22,7 @@ The cold path is a batch processing path for telemetry data storage.
 
 The IoT remote device pumps out _specific_ telemetry. This telemetry is sent in its own message, routed by the IoT Hub for instant analysis and visualization. The analysis could be done by a human operator, say, using Azure Time Series Insights. This approach is described in this module.
 
-Alternatively, the analysis could be handled by Azure Stream Analytics which supports simple SQL language queries, and is extensible via C# or Javascript UDFs (User defined functions).
+Alternatively, the analysis could be handled by Azure Stream Analytics which supports simple SQL language queries, and is extensible via C# or JavaScript UDFs (User defined functions).
 
 The hot path requires storage optimized for data availability. Data services that provide this speed of access are the more expensive services.
 
