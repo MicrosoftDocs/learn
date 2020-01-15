@@ -1,4 +1,4 @@
-This module introduced the concept of using application performance monitoring (APM) platforms to continuously monitor cloud-based solutions for availability and performance. Here are some of the key take-aways:
+This module introduced the concept of using application performance monitoring (APM) platforms to continuously monitor cloud-based solutions for availability and performance. Here are some of the key takeaways:
 
 - IT systems must be monitored in order to be managed effectively. Without monitoring, administrators don't know whether a solution is performing as intended, or potentially whether it is running at all.
 
@@ -16,7 +16,7 @@ This module introduced the concept of using application performance monitoring (
 
 - Agentless APM platforms rely on logs and other passive data sources to determine the health of a system.
 
-- Microservice-based solutions place special demands on APM platforms. Some APM tools such as Prometheus are engineered with this in mind.
+- Microservice-based solutions place special demands on APM platforms. Some APM tools such as Prometheus are engineered with these demands in mind.
 
 - Many cloud service providers offer monitoring services that are integrated into their cloud platforms. Examples include Amazon CloudWatch and Azure Monitor.
 
@@ -32,6 +32,4 @@ This module introduced the concept of using application performance monitoring (
 
 - Remediation can be responsive, in which case it is triggered by events surfaced by an APM.
 
-- Remediation can also be proactive, in which case the goal is to continually make improvements to a system even in the absence of errors of other critical events. A common term for this is *everyday remediation*.
-
-Monitoring is critical to a solution's reliability and availability as well as its security. The module that follows will examine cloud security, and the many important roles that individuals may play in bringing it about.
+- Remediation can also be proactive, in which case the goal is to continually make improvements to a system even in the absence of errors of other critical events. A common term for this concept is *everyday remediation*.
