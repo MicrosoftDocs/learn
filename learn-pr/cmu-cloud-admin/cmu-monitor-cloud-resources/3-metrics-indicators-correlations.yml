@@ -31,17 +31,17 @@ quiz:
         isCorrect: false
         explanation: "Incorrect. Requests-per-minute is a metric, not an indicator or a correlation."
 
-    - content: "In order to monitor the performance of an application deployed to the cloud and determine if and when it needs to be scaled to meet demand, you have configured a dashboard to show the number of requests received per minute and the number of requests processed per minute. The idea is that if the count of requests processed plateaus while the count of requests received continues to grow, the server might be saturated and you need more servers. In this scenario, you are employing which of the following?"
+    - content: "To monitor the performance of an application deployed to the cloud and determine when it needs to be scaled to meet demand, you've configured a dashboard to show the number of requests received per minute and the number of requests processed per minute. The idea is that if the count of requests processed plateaus while the count of requests received continues to grow, the server might be saturated and you need more servers. In this scenario, which of the following are you employing?"
       choices:
       - content: "A performance metric"
         isCorrect: false
-        explanation: "Incorrect. This is an example of a USE correlation, which considers the number of requests processed during a given interval, as well as the number of requests that could not be processed."
+        explanation: "Incorrect. This is an example of a USE correlation, which considers the number of requests processed during a given interval and the number of requests that couldn't be processed."
       - content: "A performance indicator"
         isCorrect: false
-        explanation: "Incorrect. This is an example of a USE correlation, which considers the number of requests processed during a given interval, as well as the number of requests that could not be processed."
+        explanation: "Incorrect. This is an example of a USE correlation, which considers the number of requests processed during a given interval and the number of requests that couldn't be processed."
       - content: "A USE correlation"
         isCorrect: true
-        explanation: "Correct! USE considers the number of requests processed during a given interval, as well as the number of requests that could not be processed."
+        explanation: "Correct! USE considers the number of requests processed during a given interval and the number of requests that couldn't be processed."
       - content: "A RED correlation"
         isCorrect: false
-        explanation: "Incorrect. This is an example of a USE correlation, which considers the number of requests processed during a given interval, as well as the number of requests that could not be processed."
+        explanation: "Incorrect. This is an example of a USE correlation, which considers the number of requests processed during a given interval and the number of requests that couldn't be processed."

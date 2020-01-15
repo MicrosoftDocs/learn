@@ -6,7 +6,7 @@ An APM platform helps cloud administrators identify problems, but it doesn't sol
 
 The work cycle of many IT departments revolves around *ticketing*. This is a system that automates the distribution of requests made of the IT department so that an administrator may oversee responses to all requests in accordance with priority, necessity, and available resources. Many organizations invest in a ticketing system that standardizes this process, often called *IT Operations Management* (ITOM). Such a suite often includes features for responding to alerts as they are generated, particularly by an APM platform. In some instances, an APM can trigger the generation of problem tickets.
 
-An issue with any platform that enables alerts and notifications is how best to integrate the notification process into the administrator's work cycle. The whole point of being notified about a problem is to trigger a corrective action. Ideally, an alerting system triggers an automated reaction that applies policy - the appropriate response determined in advance --- to the solution. Such policy may determine whether a detected issue warrants a problem ticket, and some automated systems may generate one automatically.
+An issue with any platform that enables alerts and notifications is how best to integrate the notification process into the administrator's work cycle. The whole point of being notified about a problem is to trigger a corrective action. Ideally, an alerting system triggers an automated reaction that applies policy - the appropriate response determined in advance - to the solution. Such policy may determine whether a detected issue warrants a problem ticket, and some automated systems may generate one automatically.
 
 Ticketing is useful for applying as much automation as possible, and as much oversight as needed, to responding to problems in applications, the network, or in infrastructure as they occur. Ironically, ticketing may end up codifying the notion that all IT operations are focused on problem solving - on waiting until something goes wrong.
 
@@ -46,7 +46,7 @@ Notice that true KPIs tend to be more about user behavior than system behavior. 
 
 Some analysts have made the case that IT-centered APM tends to focus on metrics that are separate from those from which true KPIs would be based. These analysts have recommended certain KPI management packages to their clients on this basis. Their argument is that network performance metrics deal with workflow from an infrastructure perspective, which may or may not align with an end user's perspective.
 
-The alternative point of view is that the organization itself is the best source of wisdom for which KPIs are most applicable to its business, since its leaders --- not its software --- are responsible for setting the business's objectives. To that end, a process emerges for any organization to develop KPIs for its own internal use:
+The alternative point of view is that the organization itself is the best source of wisdom for which KPIs are most applicable to its business, since its leaders - not its software - are responsible for setting the business's objectives. To that end, a process emerges for any organization to develop KPIs for its own internal use:
 
 1. **Gather disparate teams together.** No one team should be delegated the task of setting priorities and objectives without consulting the other teams.
 

@@ -46,7 +46,7 @@ A New Relic agent periodically (by default, each second) sends packages of metri
 
 _Figure 2: Networked monitoring components in New Relic One._
 
-Insights is New Relic's brand for the component that analyzes collected data, generates reports and alerts, and projects dashboards. One of its more distinguishing features is its *service map* --- an updated graph that maps the active components of a Web application based on a composite view assembled from the last half-hour's worth of snapshots taken by all the APM agents remotely monitoring the application.
+Insights is New Relic's brand for the component that analyzes collected data, generates reports and alerts, and projects dashboards. One of its more distinguishing features is its *service map* - an updated graph that maps the active components of a Web application based on a composite view assembled from the last half-hour's worth of snapshots taken by all the APM agents remotely monitoring the application.
 
 Figure 3 shows one example of a New Relic service map. The green, yellow, and red color codes for the applications and services (which New Relic calls *entities*) provide vital and easily consumable information about the present state of the solution. Each entity is given a color code based on the number and level of outstanding traffic violations it's racked up, with red reserved for the most critical violators.
 
@@ -58,7 +58,7 @@ _Figure 3: Part of a service map in New Relic One APM. \[Courtesy New Relic\]_
 
 The typical agentless monitoring tool or platform relies on the current state of a server, including the system services that support its hardware, to provide the information the platform needs to ascertain its operating status, and to determine whether an event regarding that status should be actionable. The most prominent of these services is logging.
 
-For a log to be certified by standards organizations as *auditable* - providing the necessary information for a thorough analysis of an operation --- each of its records must include the following:
+For a log to be certified by standards organizations as *auditable* - providing the necessary information for a thorough analysis of an operation - each of its records must include the following:
 
 - The identity and/or type of each activity performed that is relevant to the category of the log
 
