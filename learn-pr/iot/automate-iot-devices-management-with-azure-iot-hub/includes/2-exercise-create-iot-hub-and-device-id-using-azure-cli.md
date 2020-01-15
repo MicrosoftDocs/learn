@@ -3,7 +3,12 @@ In this unit, we'll first create an IoT Hub, and add a single device to that hub
 ## Create a new IoT Hub
 
 1. Make sure you've activated the sandbox, using the button above. The sandbox will give you access to free Azure resources for the duration of this module.
-1. In the below we are using the Azure IoT extension for Azure CLI which is already installed in the sandbox. If you want to use the extension for your developments, you can find instructions on how to install it [here](https://github.com/Azure/azure-iot-cli-extension).
+1. In the below we are using the [Azure IoT extension for Azure CLI](https://github.com/Azure/azure-iot-cli-extension). To install the extension, type the following command in the terminal:
+
+    ```Azure CLI
+    az extension add --name azure-cli-iot-ext
+    ```
+
 1. Run this command to create a new IoT Hub instance
     >[!IMPORTANT]
     >Your hub names are publicly discoverable, so take this into account when entering names. Hub names must also be unique, as they form part of the Azure URL. You can use a name like *cheesecavesmanager-anID*
