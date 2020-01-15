@@ -2,37 +2,39 @@
 uid: learn.intro-to-azure-ad
 metadata:
   title: Secure your identities with Azure Active Directory
-  description: Secure your identities with Azure Active Directory
+  description: Use Azure Active Directory to you secure your internal, external and customer identities.
   ms.date: 12/30/2019
-  author: jboeshart
-  ms.author: jaboes
+  author: cwatson
+  ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Secure your identities with Azure Active Directory
 summary: Secure internal resources, external resources, SaaS applications, and more with Azure Active Directory. Learn about the features and capabilities available in Azure AD.
 abstract: | 
   In this module, you will:
-  - Describe the core terminology of Azure AD
-  - Describe the core features of Azure AD
-  - Describe the licensing models for Azure AD
+  - Describe the core terminology of Azure AD.
+  - Describe the core features of Azure AD.
+  - Describe the licensing models for Azure AD.
+  - Configure Azure AD in the Azure portal.
 prerequisites: | 
   - None
 iconUrl: http://via.placeholder.com/120x120
 levels:
-- beginner
+- Beginner
 roles:
 - solution-architect
+- administrator
+- developer
 products:
 - azure
 - azure-active-directory
 units:
 - learn.intro-to-azure-ad.1-introduction
-- learn.intro-to-azure-ad.2-azure-ad-overview
-- learn.intro-to-azure-ad.3-azure-ad-terminology
-- learn.intro-to-azure-ad.4-azure-ad-licensing
-- learn.intro-to-azure-ad.5-azure-ad-features
-- learn.intro-to-azure-ad.6-azure-ad-getting-started
-- learn.intro-to-azure-ad.7-setting-up-azure-ad
-- learn.intro-to-azure-ad.8-summary
+- learn.intro-to-azure-ad.2-azuread-overview
+- learn.intro-to-azure-ad.3-understand-azuread-licenses-terminology
+- learn.intro-to-azure-ad.4-essential-features-azuread
+- learn.intro-to-azure-ad.5-get-started-azuread
+- learn.intro-to-azure-ad.6-exercise-get-started-azuread
+- learn.intro-to-azure-ad.7-summary
 badge:
   uid: learn.intro-to-azure-ad.badge

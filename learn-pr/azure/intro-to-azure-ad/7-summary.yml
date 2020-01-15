@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.intro-to-azure-ad.8-summary
+uid: learn.intro-to-azure-ad.7-summary
 metadata:
   title: Summary
   description: Summary
   ms.date: 12/30/2019
-  author: jboeshart
-  ms.author: jaboes
+  author: cwatson
+  ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Summary
 durationInMinutes: 2
 content: |
-  [!include[](includes/8-summary.md)]
+  [!include[](includes/7-summary.md)]

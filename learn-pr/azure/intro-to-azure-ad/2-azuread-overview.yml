@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-ad.2-azuread-overview
+metadata:
+  title: Azure Active Directory overview
+  description: Azure Active Directory overview
+  ms.date: 12/30/2019
+  author: cwatson
+  ms.author: cwatson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Azure Active Directory overview
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-azuread-overview.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: What is a tenant in Azure AD?
+    choices:
+    - content: A tenant represents an entire organization.
+      isCorrect: true
+      explanation: You create a tenant for your organization so that your internal users can be managed by Azure AD.
+    - content: A tenant represents a user in an organization.
+      isCorrect: false
+      explanation: A tenant represents an organization.
+    - content: A tenant represents a geographical location in an organization.
+      isCorrect: false
+      explanation: A tenant represents an organization.
+  - content: What is an identity security score?
+    choices:
+    - content: It's a number between  1 and 223 that indicates exactly how many identities are secured in your organization.
+      isCorrect: false
+      explanation: An identity security score indicates how aligned your security is with Microsoft best practices.
+    - content: It's a number between 1 and 223 that indicates how aligned your security is with Microsoft best practices.
+      isCorrect: true
+      explanation: Use an identity security score to see how secure your Azure AD is. 
+    - content: It's a number between 1 and 223 that indicates how aligned your organization's tenants are with each other.
+      isCorrect: false
+      explanation: An identity security score indicates how aligned your security is with Microsoft best practices.
+
