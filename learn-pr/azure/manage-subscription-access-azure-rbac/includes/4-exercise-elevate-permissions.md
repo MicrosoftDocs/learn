@@ -9,7 +9,7 @@ This exercise is optional. To complete it, you need access to an Azure subscript
 1. Sign in to the [Azure portal](<https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true>) as Azure AD Global Administrator.
 
 1. Select **Azure Active Directory** > **Properties**.
-    ![The Azure AD Properties pane](../)media/4-azure-ad-properties.png
+    ![The Azure AD Properties pane](../media/4-azure-ad-properties.png)
 1. Under **Access management for Azure resources**, select **Yes**.
     ![The "Access management for Azure resources" option](../media/4-access-management-azure-resources.png)
 1. Select **Save**.
