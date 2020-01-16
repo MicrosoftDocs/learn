@@ -10,7 +10,7 @@ metadata:
   ms.prod: learning-python
 title: Build an AI Web App with Python and Flask
 summary: Use Python, Flask, and Azure Cognitive Services to build a Web app that incorporates AI
-abstract:  | 
+abstract: | 
   In this module, you will:
   - Learn how to set up a development environment for Flask and Python
   - Learn how to build and test a Flask Web site locally
@@ -18,7 +18,7 @@ abstract:  |
   - Learn how to use Azure Cognitive Services to translate text
   - Learn how to deploy a Flask Web site to Azure
 prerequisites: None
-#iconUrl:
+iconUrl: /learn/achievements/intro-to-python.svg
 levels:
 - intermediate
 roles:

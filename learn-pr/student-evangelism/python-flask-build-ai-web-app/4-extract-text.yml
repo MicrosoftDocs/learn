@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.ai-flask-python.4-extract-text
+uid: learn.student-evangelism.python-flask-build-ai-web-app.4-extract-text
 metadata:
   title: Use Cognitive Services to extract text from photos
   description: Use Azure Cognitive Services to extract text from photos uploaded to the website.

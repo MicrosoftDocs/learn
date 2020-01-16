@@ -20,7 +20,7 @@ In order to run Flask Web sites on your computer, both Flask and Python must be 
 
 	If Python is installed, the version number will appear in the output. If you install Python and are asked during the install process whether Python should be added to the system's PATH, answer yes.
 
-	![Add Python to the PATH](media/add-to-path.png)
+	![Add Python to the PATH](./media/add-to-path.png)
 
 	_Add Python to the PATH_
 
