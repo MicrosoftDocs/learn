@@ -8,7 +8,6 @@ metadata:
   ms.author: Olivier.Bloch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  zone_pivot_groups: dev-lang-csharp-node
 title: Exercise - Test IoT Hub metrics and alerts
 durationInMinutes: 8
 content: |

@@ -29,4 +29,4 @@ quiz:
       explanation: Newtons are a unit of force.
     - content: 'g-forces'
       isCorrect: true
-      explanation: The use of g-forces to measure vibration is common, though not to ISO standards.
+      explanation: The use of g-forces to measure vibration is common, though is not to ISO standards.

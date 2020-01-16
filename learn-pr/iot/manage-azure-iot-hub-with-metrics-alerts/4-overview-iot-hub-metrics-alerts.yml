@@ -8,7 +8,6 @@ metadata:
   ms.author: Olivier.Bloch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  zone_pivot_groups: vs-vscode-language
 title: Create IoT Hub metrics and alerts
 durationInMinutes: 3
 content: |
