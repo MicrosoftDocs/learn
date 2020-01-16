@@ -55,7 +55,7 @@ You can create a workspace in any of the following ways:
     az ml workspace create -w 'aml-workspace' -g 'aml-resources'
 ```
 
-- Create an Azure resource Manager (ARM) template. For more information the ARM template format for an Azure Machine Learning workspace, see the [Azure Machine Learning documentation](https://aka.ms/AA70rq4).
+- Create an Azure resource Manager template. For more information the template format for an Azure Machine Learning workspace, see the [Azure Machine Learning documentation](https://aka.ms/AA70rq4).
 
 ## Considerations for Creating a Workspace
 
