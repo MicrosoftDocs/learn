@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.bash.5-terminate-process
+title: "Exercise: Terminate a misbehaving process"
+metadata:
+  title: "Exercise: Terminate a misbehaving process"
+  description: Learn how to identify and terminate troublesome processes.
+  ms.date: 01/15/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-bash
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-terminate-process.md)]

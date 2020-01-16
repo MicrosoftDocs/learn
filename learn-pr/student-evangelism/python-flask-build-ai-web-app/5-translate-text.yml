@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.ai-flask-python.5-translate-text
+metadata:
+  title: Use Cognitive Services to translate text
+  description: Use Azure Cognitive Services to translate text extracted from photos.
+  ms.date: 01/15/2020
+  author: GeekTrainer
+  ms.author: chrhar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-python
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-translate-text.md)]
