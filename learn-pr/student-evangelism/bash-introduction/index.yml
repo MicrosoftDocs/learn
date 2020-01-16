@@ -29,11 +29,12 @@ products:
 - azure
 units:
 - learn.bash-introduction.0-introduction
-- learn.bash-introduction.1-cloud-shell
+- learn.bash-introduction.1-create-linux-vm
 - learn.bash-introduction.2-bash-fundamentals
 - learn.bash-introduction.3-bash-commands
 - learn.bash-introduction.4-update-system
 - learn.bash-introduction.5-terminate-process
 - learn.bash-introduction.6-filter-cli-output
 - learn.bash-introduction.7-summary
-achievement: learn.placeholder.badge
+badge:
+  uid: learn.placeholder.badge 
