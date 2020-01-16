@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.includes.16-ex-delete-product-function
+uid: learn.azure.includes.17-ex-delete-product-function
 title: Exercise - Create the DeleteProduct function
 metadata:
   title: Exercise - Create the DeleteProduct function
@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 10
 content: |
-  [!include[](includes/16-ex-delete-product-function.md)]
+  [!include[](includes/17-ex-delete-product-function.md)]
