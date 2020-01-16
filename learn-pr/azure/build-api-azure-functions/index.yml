@@ -40,5 +40,9 @@ units:
   - learn.azure.build-api-azure-functions.11-ex-querying-cosmos-db
   - learn.azure.build-api-azure-functions.12-rest-and-function-routes
   - learn.azure.build-api-azure-functions.13-ex-make-functions-restful
+  - learn.azure.build-api-azure-functions.14-modifying-data-in-cosmos-db
+  - learn.azure.build-api-azure-functions.15-ex-create-product-function
+  - learn.azure.build-api-azure-functions.16-ex-update-product-function
+  - learn.azure.build-api-azure-functions.17-ex-delete-product-function
 badge:
   uid: learn.azure.build-api-azure-functions.badge

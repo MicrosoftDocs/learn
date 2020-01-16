@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.build-api-azure-functions.16-ex-update-product-function
+title: Exercise - Create the UpdateProduct function
+metadata:
+  title: Exercise - Create the UpdateProduct function
+  description: Exercise - Create the UpdateProduct function
+  ms.date: 01/16/2020
+  author: burkeholland
+  ms.author: buhollan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 10
+content: |
+  [!include[](includes/16-ex-update-product-function.md)]
