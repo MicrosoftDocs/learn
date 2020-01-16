@@ -102,7 +102,7 @@ Up to now, this module has focused primarily on the tools and platforms cloud ad
 
 1. _From there, the browser usually begins preparing to render a page or HTML block, and it's this rendering that the user will perceive as the practical end of the transaction._
 
-1. _APDEX. *Apdex Overview*. <http://apdex.org/overview.html>._
+1. _APDEX. *Apdex Overview*. <http://www.apdex.org/overview.html>._
 
 1. _Brendan D. Gregg. *The USE Method*. <http://www.brendangregg.com/usemethod.html>._
 
