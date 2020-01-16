@@ -31,17 +31,17 @@ quiz:
       explanation: A point-to-site network is a connectivity model for a VPN gateway.
   - content: 'What is the highest available bandwidth for an ExpressRoute circuit?'
     choices:
-    - content: 500 Gbps
+    - content: 50 Mbps
       isCorrect: false
-      explanation: The 500 Gbps bandwidth circuit is not yet available with ExpressRoute.
-    - content: 300 Gbps
+      explanation: While 50 Mbps is an available bandwidth, it is not the maximum available.
+    - content: 1 Gbps
       isCorrect: false
-      explanation: The 300 Gbps bandwidth circuit is not yet available with ExpressRoute.
+      explanation: While 1 Gbps is an available bandwidth, it is not the maximum available.
     - content: 200 Gbps
-      isCorrect: true
-      explanation: A 200 Gbps bandwidth circuit is not yet available with ExpressRoute.
-    - content: 100 Gbps
       isCorrect: false
+      explanation: A 200 Gbps bandwidth circuit is not available with ExpressRoute.
+    - content: 100 Gbps
+      isCorrect: true
       explanation: A 100 Gbps bandwidth circuit is presently the highest available with ExpressRoute.
   - content: 'What would you use a VPN gateway for?'
     choices:
