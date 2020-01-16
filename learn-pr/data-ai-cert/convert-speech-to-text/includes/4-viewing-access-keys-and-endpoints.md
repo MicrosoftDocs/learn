@@ -12,6 +12,3 @@ To access your Speech Service from an application, you will need to get two piec
 1. Under the **RESOURCE MANAGEMENT** group, select the **Quick start** option to display **Key1** and **Endpoint** values.
 1. The second option is used to view a second key for the service. Under the **RESOURCE MANAGEMENT** group, select **Keys and Endpoint** to view the Service name, the endpoint, and two API keys.
 1. Copy the value of **KEY 1** or **KEY 2** to the clipboard for use in an application.
-
-    ![Copying the Speech Translation API key to the clipboard](../media/4-access-keys-and-endpoints-keys.png)
-
