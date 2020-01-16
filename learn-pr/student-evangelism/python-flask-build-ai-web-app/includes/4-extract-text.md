@@ -1,5 +1,3 @@
-## Use Azure Cognitive Services to extract text from photos
-
 [Azure Cognitive Services](https://azure.microsoft.com/services/cognitive-services/) is a set of more than 20 services and APIs for infusing intelligence backed by machine learning and neural networks into the applications that you write. One member of the Cognitive Services family is the [Computer Vision API](https://azure.microsoft.com/services/cognitive-services/computer-vision/), which can analyze images uploaded to it and:
 
 - Identify objects in the images
