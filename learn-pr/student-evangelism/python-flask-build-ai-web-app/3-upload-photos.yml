@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.python-flask-build-ai-web-app.3-upload-photos
+title: Build a page for uploading photos
+metadata:
+  title: Build a page for uploading photos
+  description: Build a page that allows users to upload photos.
+  ms.date: 01/15/2020
+  author: GeekTrainer
+  ms.author: chrhar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-python
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-upload-photos.md)]

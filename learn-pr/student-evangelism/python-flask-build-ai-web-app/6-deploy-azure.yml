@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.python-flask-build-ai-web-app.6-deploy-azure
+title: Deploy a Flask website to Azure
+metadata:
+  title: Deploy a Flask website to Azure
+  description: Deploy a Flask website to Azure.
+  ms.date: 01/15/2020
+  author: GeekTrainer
+  ms.author: chrhar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-python
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-deploy-azure.md)]
