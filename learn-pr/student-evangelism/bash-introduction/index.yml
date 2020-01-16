@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.bash-introduction
+metadata:
+  title: Introduction to Bash - Learn
+  description: Learn how to use Bash to manage IT infrastructure.
+  ms.date: 01/15/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-bash
+title: Introduction to Bash
+summary: Use Bash to manage IT infrastructure.
+abstract:  | 
+  In this module, you will:
+  - Learn how to create a Linux VM in Azure
+  - Learn about the syntax of Bash commands
+  - Learn about important Bash commands such as ls, cat, and ps
+  - Learn how to use I/O operators to redirect input and output
+  - Learn how to update a server's operating system
+  - Learn how to find and terminate rogue processes
+  - Learn how to use Bash to filter Azure CLI output
+  prerequisites: None
+iconUrl: http://via.placeholder.com/120x120
+levels:
+- beginner
+roles:
+- administrator
+products:
+- azure
+units:
+- learn.bash-introduction.0-introduction
+- learn.bash-introduction.1-create-linux-vm
+- learn.bash-introduction.2-bash-fundamentals
+- learn.bash-introduction.3-bash-commands
+- learn.bash-introduction.4-update-system
+- learn.bash-introduction.5-terminate-process
+- learn.bash-introduction.6-filter-cli-output
+- learn.bash-introduction.7-summary
+badge:
+  uid: learn.placeholder.badge 
