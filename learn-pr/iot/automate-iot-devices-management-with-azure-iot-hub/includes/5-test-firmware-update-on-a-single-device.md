@@ -84,4 +84,4 @@ And on the Device Management Configuration you should see the following:
 
 :::image type="content" source="../media/devicemanagement-8.png" alt-text="Configuration applied and successful":::
 
-You have validated that the firmware update process on your simulated device works. You can stop the device simulator by simply pressing the "Enter" key in the terminal.
+You have validated that the firmware update process on your simulated device works. You can stop the device simulator by simply typing "q" and pressing the "Enter" key in the terminal.
