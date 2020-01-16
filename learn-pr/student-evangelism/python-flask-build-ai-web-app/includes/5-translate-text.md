@@ -213,7 +213,7 @@ The final step is to test the changes that you made by uploading photos to the s
 
 1. Navigate to http://localhost:5000 in your browser. Confirm that the page now contains a drop-down list for selecting a language, as pictured below.
 
-	![Selecting a language](media/select-language.png)
+	![Selecting a language](/media/select-language.png)
 
 	_Selecting a language_
 
@@ -221,7 +221,7 @@ The final step is to test the changes that you made by uploading photos to the s
 
 1. Confirm that after a brief pause, the text extracted from the photo and translated into the language you specified appears in a modal dialog. Then dismiss the dialog.
 
-	![Extracting text from a photo](media/translated-text.png)
+	![Extracting text from a photo](/media/translated-text.png)
 
 	_Extracting text from a photo_
 
