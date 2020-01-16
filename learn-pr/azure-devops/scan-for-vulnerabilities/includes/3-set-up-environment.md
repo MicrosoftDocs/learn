@@ -23,7 +23,7 @@ Run a template that sets up everything for you in your Azure DevOps organization
 From the Azure DevOps Demo Generator site, perform these steps to run the template.
 
 1. Select **Sign In**, and accept the usage terms.
-1. On the **Create New Project** page, select your Azure DevOps organization and enter a project name, such as **Space Game - web - SonarCloud**.
+1. On the **Create New Project** page, select your Azure DevOps organization and enter a project name, such as *Space Game - web - SonarCloud*.
 1. Select **Fork repository on GitHub**, and then select **Authorize**. If a window appears, authorize access to your GitHub account.
 
     > [!IMPORTANT]

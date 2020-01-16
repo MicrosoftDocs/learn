@@ -1,4 +1,4 @@
-The team has really come a long way. They now know how to use Azure Pipelines along with Azure Artifacts to create packages, and to store them in a place where other teams in the company can use them. Azure DevOps is all about sharing and collaboration. Creating reuseable code and making it available to others is a great way to foster those values.
+The team has really come a long way. They now know how to use Microsoft Azure Pipelines along with Microsoft Azure Artifacts to create packages, and to store them in a place where other teams in the company can use them. Azure DevOps is all about sharing and collaboration. Creating reuseable code and making it available to others is a great way to foster those values.
 
 Most modern applications have dependencies that need to be managed during the build process. There are many package repositories to choose from when you're looking for packages to use, or when you're deciding where to store your packages. You can also host your own repository or use a file share.
 
