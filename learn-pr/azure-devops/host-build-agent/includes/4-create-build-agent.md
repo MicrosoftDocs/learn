@@ -1,10 +1,10 @@
-In this unit, to configure a build agent that you can use in Azure Pipelines, you use a virtual machine that runs on Azure. We provide a virtual machine that you can use for the duration of this module.
+In this unit, to configure a build agent that you can use in Microsoft Azure Pipelines, you use a virtual machine that runs on Microsoft Azure. We provide a virtual machine that you can use for the duration of this module.
 
 In this unit, you will:
 
 > [!div class="checklist"]
 > * Create an Ubuntu virtual machine on Azure to serve as your build agent.
-> * Create an agent pool in Azure DevOps.
+> * Create an agent pool in Microsoft Azure DevOps.
 > * Create an access token to authenticate your agent with Azure DevOps.
 > * Configure your agent with the software that's required to build the _Space Game_ website.
 > * Configure your agent to connect to Azure DevOps so that it can receive build jobs.
@@ -58,7 +58,7 @@ Recall that an agent pool organizes build agents. In this section, you create th
 
     ![Locating Agent pools in the menu](../media/4-project-settings-agent-pools.png)
 1. Select **Add pool**.
-1. In the **Add pool** window, select **New** and then, in the text box, enter **MyAgentPool**.
+1. In the **Add pool** window, select **New** and then, in the text box, enter *MyAgentPool*.
 
     In practice, you would choose a more descriptive name for the purpose of your pool.
 1. Select **Create**.
@@ -77,7 +77,7 @@ To do that, you create a personal access token. A personal access token, or PAT,
 
     ![Locating Security in the menu](../media/4-personal-access-token.png)
 1. Select **New Token**.
-1. Enter a name for your token, such as **Build agent**.
+1. Enter a name for your token, such as *Build agent*.
 1. Under **Scopes**, select **Show all scopes** at the bottom.
 1. Look for **Agent Pools**, and then select **Read & manage**.
 1. Look for **Build**, and then select **Read & execute**.
