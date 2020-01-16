@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 10
 content: |
-  [!include[](build-api-azure-functions/17-ex-delete-product-function.md)]
+  [!include[](includes/17-ex-delete-product-function.md)]
