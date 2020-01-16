@@ -65,7 +65,7 @@ This image highlights the first few parameters.
 
 The `authenticationType` parameter specifies whether to use password authentication or key-based authentication to connect to the virtual machine. The `adminPasswordOrKey` parameter specifies the password or SSH key. Although key-based authentication is typically more secure than password authentication, here you'll use password authentication for learning purposes.
 
-Some parameters, such as `ubuntuOSVersion` and `location`, have default values. The default value for `ubuntuOSVersion` is "16.04.0-LTS" and the default value for `location` is the parent resource group's location.
+Some parameters, such as `ubuntuOSVersion` and `location`, have default values. The default value for `ubuntuOSVersion` is "18.04-LTS" and the default value for `location` is the parent resource group's location.
 
 Let's keep these parameters at their default values. For the remaining parameters, you have two options:
 

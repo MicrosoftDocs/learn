@@ -122,7 +122,7 @@ After you remove all the parameters that aren't required, your resource definiti
 
 ```json
 {
-  "name": "[concat(variables('vmName'), '/', 'ConfigureNginx')]",
+  "name": "[concat(parameters('vmName'), '/', 'ConfigureNginx')]",
   "type": "Microsoft.Azure.Extensions/virtualMachines/extensions",
   "apiVersion": "2018-06-01",
   "location": "[parameters('location')]",
@@ -153,7 +153,7 @@ Your Custom Script Extension resource now looks like this.
 
 ```json
 {
-  "name": "[concat(variables('vmName'), '/', 'ConfigureNginx')]",
+  "name": "[concat(parameters('vmName'), '/', 'ConfigureNginx')]",
   "type": "Microsoft.Compute/virtualMachines/extensions",
   "apiVersion": "2018-06-01",
   "location": "[parameters('location')]",
@@ -182,7 +182,7 @@ Here's what your template resource might look like after you add the `dependsOn`
 
 ```json
 {
-  "name": "[concat(variables('vmName'), '/', 'ConfigureNginx')]",
+  "name": "[concat(parameters('vmName'), '/', 'ConfigureNginx')]",
   "type": "Microsoft.Compute/virtualMachines/extensions",
   "apiVersion": "2018-06-01",
   "location": "[parameters('location')]",
@@ -201,7 +201,7 @@ Here's what your template resource might look like after you add the `dependsOn`
     }
   },
   "dependsOn": [
-    "[resourceId('Microsoft.Compute/virtualMachines/', variables('vmName'))]"
+    "[resourceId('Microsoft.Compute/virtualMachines/', parameters('vmName'))]"
   ]
 }
 ```
@@ -212,7 +212,7 @@ There are multiple ways to define a resource dependency. You can provide its nam
 
 This example uses the built-in `resourceId` function to get the VM's resource ID using its full name. This helps clarify which resource you're referring to and can help avoid ambiguity when more than one resource has a similar name.
 
-The existing template provides a `vmName` variable that defines the VM's name. This example uses the built-in `variables` function to read it.
+The existing template provides a `vmName` parameter that defines the VM's name. This example uses the built-in `parameters` function to read it.
 
 ## Summary
 
