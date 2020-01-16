@@ -191,7 +191,7 @@ Now let's run the modified site, upload a few photos, and see if the Computer Vi
 
 1. Navigate to http://localhost:5000 in your browser. Click the **Upload Photo** and button and upload a picture that contains text. Confirm that after a brief pause, the text extracted from the photo appears in a modal dialog. Then dismiss the dialog.
 
-	![Extracting text from a photo](media/extracted-text.png)
+	![Extracting text from a photo](/media/extracted-text.png)
 
 	_Extracting text from a photo_
 

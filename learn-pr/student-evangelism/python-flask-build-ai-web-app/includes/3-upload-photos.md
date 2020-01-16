@@ -61,7 +61,7 @@ Now that you have an environment for Python and Flask prepared and have the basi
 
 1. Open a browser and navigate to http://localhost:5000. Confirm that the Web site appears in the browser as shown below.
 
-	![Contoso Travel](media/initial-run.png)
+	![Contoso Travel](/media/initial-run.png)
 
 	_Contoso Travel_
 
@@ -77,7 +77,7 @@ In this exercise, you will modify **index.html** and **app.py** so users can upl
 
 1. Use Visual Studio Code's Explorer to open **index.html** in the "templates" folder. This is the Web site's home page, and the one that's used to upload photos.
 
-	![Opening index.html](media/open-index.png)
+	![Opening index.html](/media/open-index.png)
 
 	_Opening index.html_
 
@@ -152,7 +152,7 @@ Let's make sure your changes have the desired effect by uploading a photo to the
 
 1. Confirm that the photo you selected appears on the page:
 
-	![Contoso Travel showing an uploaded photo](media/uploaded-photo.png)
+	![Contoso Travel showing an uploaded photo](/media/uploaded-photo.png)
 
 	_Contoso Travel showing an uploaded photo_
 
