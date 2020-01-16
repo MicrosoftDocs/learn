@@ -236,8 +236,9 @@ At this point your project is ready for coding.
                 // TODO
                 while (true)
                 {
-                    Console.ReadLine();
-                    return;
+                    string line = Console.ReadLine();
+                    if (line=="q")
+                        return;
                 }
             }
         }
