@@ -1,4 +1,4 @@
-Azure resources and Azure Active Directory (Azure AD) have independent permission systems. Azure role-based access control (RBAC) roles are used to manage access to virtual machines, storage, and other Azure resources. Azure AD roles are used to manage access to Azure AD resources such as user accounts and passwords.
+Azure resources and Azure Active Directory (Azure AD) have independent permission systems. Azure role-based access control (RBAC) roles are used to manage access to virtual machines, storage, and other Azure resources. Azure AD roles are used to manage access to Azure AD resources, such as user accounts and passwords.
 
 In this unit, you'll look at the essential aspects of Azure RBAC roles and Azure AD roles. You'll explore the various scopes available to you. You'll then identify the right roles to assign, depending on the scenario.
 
@@ -6,7 +6,7 @@ In this unit, you'll look at the essential aspects of Azure RBAC roles and Azure
 
 Azure RBAC is the system that allows control over who has access to which Azure resources, and what those people can do with those resources. You achieve control by assigning roles to users, groups, or applications at a particular scope. A role might be described as a collection of permissions.
 
-With Azure RBAC, you can allow one user, or a set of users, to access resources in a subscription. You can also separate responsibility for various resources according to the specializations within your team. For example, you might want to grant your organization's data scientists access to Azure Machine Learning and any associated resources, such as an Azure SQL Database, or to Blob storage within a dedicated machine learning resource group. By granting specific access, you isolate these resources from team members who don't have such skills or resource needs.
+With Azure RBAC, you can allow one user, or a set of users, to access resources in a subscription. You can also separate responsibility for certain resources according to the specializations within your team. For example, you might want to grant your organization's data scientists access to Azure Machine Learning and any associated resources, such as an Azure SQL Database, or to Blob storage within a dedicated machine learning resource group. By granting specific access, you isolate these resources from team members who don't have the required skills or resource needs.
 
 You can specify fine-grained permissions for applications so that a marketing web app has access only to the associated marketing database and storage account. For managers or team members who are higher up in the organization, you could grant access to all resources in a resource group, a subscription for management purposes, and an overview of billing and consumption.
 
@@ -31,7 +31,7 @@ Azure subscriptions help you organize access to Azure resources and determine ho
 
 Resource groups are containers that hold related resources for an Azure solution. A resource group includes those resources that you want to manage as a group. You decide which resources belong in a resource group based on what makes the most sense for your organization.
 
-The scope is important and establishes which resources should have a specific type of access applied to them. Imagine that someone in your organization needs access to virtual machines (VMs). You could use the Virtual Machine Contributor role, which allows that person to manage virtual machines within only a specific resource group. You can limit the role's scope to a specific resource, resource group, subscription, or management group level.
+The scope is important and establishes which resources should have a specific type of access applied to them. Imagine that someone in your organization needs access to virtual machines. You could use the Virtual Machine Contributor role, which allows that person to manage virtual machines within only a specific resource group. You can limit the role's scope to a specific resource, resource group, subscription, or management group level.
 
 By combining an Azure RBAC role and a scope, you can set finely tailored permissions for your Azure resources.
 
@@ -39,13 +39,13 @@ By combining an Azure RBAC role and a scope, you can set finely tailored permiss
 
 Azure AD also has its own set of roles, which apply mostly to users, passwords, and domains. These roles have different purposes. Here are a few examples:
 
-- **Global Administrator**: Can manage access to administrative features in Azure AD. This role can grant administrator roles to other users, and it can reset a password for any user or administrator. By default, whoever signs up for the directory is automatically assigned this role.
+- **Global Administrator**: Can manage access to administrative features in Azure AD. A person in this role can grant administrator roles to other users, and they can reset a password for any user or administrator. By default, whoever signs up for the directory is automatically assigned this role.
 
 - **User Administrator**: Can manage all aspects of users and groups, including support tickets, monitoring service health, and resetting passwords for certain types of users. 
 
 - **Billing Administrator**: Can make purchases, manage subscriptions and support tickets, and monitor service health. Azure has detailed billing permissions in addition to RBAC permissions. The available billing permissions depend on the agreement you have with Microsoft.
 
-## Differences between Azure RBAC and Azure AD roles
+## Differences between Azure RBAC roles and Azure AD roles
 
 The main difference between Azure RBAC roles and Azure AD roles is the areas they cover. Azure RBAC roles apply to Azure resources, and Azure AD roles apply to Azure AD resources (particularly users, groups, and domains). Also, Azure AD has only one scope, the directory. The Azure RBAC scope covers management groups, subscriptions, resource groups, and resources.
 
