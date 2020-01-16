@@ -55,13 +55,13 @@ Here you'll download the template and modify it.
 
    ```json
     {
-      "name":"HTTP",
+      "name":"allow_80",
       "properties": {
-      "priority": 1005,
-      "protocol": "tcp",
+      "priority": 101,
+      "protocol": "TCP",
       "access": "Allow",
       "direction": "Inbound",
-      "sourceAddressPrefix": "*",
+      "sourceAddressPrefix": "Internet",
       "sourcePortRange": "*",
       "destinationAddressPrefix": "*",
       "destinationPortRange": "80"
