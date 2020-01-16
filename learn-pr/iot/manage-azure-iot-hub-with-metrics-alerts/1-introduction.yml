@@ -2,7 +2,7 @@
 uid: learn.iot.manage-your-azure-iot-hub-with-metrics-alerts.introduction
 metadata:
   title: Introduction
-  description: Describes the scenario of monitoring the temperature and humidity of a cheese cave, using IoT Hub.
+  description: Describes the scenario of conveyor belt vibration, and sending telemetry to an Azure IoT Hub.
   ms.date: 2/2/2020
   author: PeterTurcan
   ms.author: Olivier.Bloch

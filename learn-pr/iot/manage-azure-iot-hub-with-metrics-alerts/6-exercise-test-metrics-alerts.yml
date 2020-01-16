@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.iot.manage-your-azure-iot-hub-with-metrics-alerts.exercise-test-metrics-alerts
 metadata:
-  title: Exercise - Write code to invoke a direct method
-  description: Write code, in Node.js or C#, to send a command to invoke a direct method from a back-end app. Then add code to listen for that command in the device app. 
+  title: Exercise - Test IoT Hub metrics and alerts
+  description: With the device app running, test your metrics and rules are working as expected.
   ms.date: 2/2/2020
   author: PeterTurcan
   ms.author: Olivier.Bloch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   zone_pivot_groups: dev-lang-csharp-node
-title: Exercise - Write code to invoke a direct method
-durationInMinutes: 10
+title: Exercise - Test IoT Hub metrics and alerts
+durationInMinutes: 8
 content: |
   [!include[](includes/6-exercise-test-metrics-alerts.md)]

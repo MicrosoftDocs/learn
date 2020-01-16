@@ -8,13 +8,10 @@ In this module, you'll learn about Azure IoT Hub, IoT Hub message routing, Azure
 
 In this module you will:
 
-- Create an Azure IoT Hub, using the Azure portal
-- Create an Azure IoT Hub device identity, using the Azure portal
-- Build a C# app to send device telemetry to the IoT Hub, using Visual Studio or Visual Studio code
-- Define a message route, through to blob storage, using the Azure portal
-- Define a second message route, through to an Azure Analytics job, using the Azure portal
-- Create a query to apply a built-in ML model for anomaly detection, using SQL
-- Create a dashboard to visualize data anomalies, using Power BI
+- Create an Azure IoT Hub, using the IoT Hub portal
+- Create an Azure IoT Hub device identity, using the IoT Hub portal
+- Create an app to send device telemetry to the IoT Hub
+- Create rules, alerts, diagnostics, and logs, to monitor the telemetry sent to the IoT Hub
 
 ## Prerequisites
 
