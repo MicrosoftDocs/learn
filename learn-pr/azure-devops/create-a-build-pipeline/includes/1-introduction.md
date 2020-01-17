@@ -34,7 +34,7 @@ If you want to start with this learning path, you need to set up a development e
 * An [Azure DevOps organization](https://dev.azure.com?azure-portal=true)
 * A [GitHub](https://github.com/join?azure-portal=true) account
 * [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
-* [.NET Core 3.1](https://dotnet.microsoft.com/download/dotnet-core/3.1?azure-portal=true)
+* [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core/3.1?azure-portal=true)
 * [Git](https://git-scm.com/downloads?azure-portal=true)
 
 If your company's policy doesn't allow you to create an Azure DevOps organization, you can create your own personal account. You can get started with Azure DevOps for free.
