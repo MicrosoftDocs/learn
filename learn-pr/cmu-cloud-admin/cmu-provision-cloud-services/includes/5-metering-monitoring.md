@@ -36,6 +36,6 @@ Cost Management is available for all Azure subscriptions. AWS costs are incorpor
 
 ### References
 
-1. Source: <https://azure.microsoft.com/en-us/services/cost-management/>
+1. Source: <https://azure.microsoft.com/services/cost-management/>
 
-[^1]: <https://azure.microsoft.com/en-us/services/cost-management/>
+[^1]: <https://azure.microsoft.com/services/cost-management/>

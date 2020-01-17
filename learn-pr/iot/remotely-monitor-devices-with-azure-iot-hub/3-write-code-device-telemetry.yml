@@ -4,7 +4,7 @@ metadata:
   title: Write code to send and receive telemetry
   description: Explains the process of sending and receiving device telemetry
   ms.date: 10/01/2019
-  author: olivierbloch
+  author: PeterTurcan
   ms.author: Olivier.Bloch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

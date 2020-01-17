@@ -48,7 +48,7 @@ In addition to Azure DevOps Licensing, you need to ensure you have appropriate l
 
 ### Migrating and integrating source control
 
-Similarly to artifacts, you might consider migrating your source control to Azure DevOps by using Azure Repos. However, moving your team from a centralized version control system to a distributed system like Git requires involves much more than learning the new commands. A successful migration to Git requires that you understand the differences in how file history and branches are handled.
+Similarly to artifacts, you might consider migrating your source control to Azure DevOps by using Azure Repos. However, moving your team from a centralized version control system to a distributed system like Git involves much more than learning the new commands. A successful migration to Git requires that you understand the differences in how file history and branches are handled.
 
 The Azure DevOps team recommends the following process:
 
