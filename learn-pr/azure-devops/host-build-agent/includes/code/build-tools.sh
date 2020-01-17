@@ -9,8 +9,8 @@ fi
 # Add the Node.js PPA so that we can install the latest version
 curl -sL https://deb.nodesource.com/setup_10.x | bash -
 
-# Install Node.js (which includes npm)
-apt-get install -y nodejs
+# Install Node.js (which includes npm) and jq
+apt-get install -y nodejs jq
 
 # Install gulp
 npm install -g gulp

@@ -39,7 +39,7 @@ az vm create \
     --generate-ssh-keys
 ```
 
-Your VM should take about two minutes to come up.
+Your VM will take a few minutes to come up.
 
 [Standard_DS2_v2](https://docs.microsoft.com/azure/virtual-machines/windows/sizes-general?azure-portal=true#dsv2-series) specifies the VM's size. A VM's size defines its processor speed, amount of memory, initial amount of storage, and expected network bandwidth. This is the same size that's provided by Microsoft-hosted agents. In practice, you can choose a size that provides more compute power or additional capabilities, such as graphics processing.
 
@@ -75,7 +75,7 @@ To do that, you create a personal access token. A personal access token, or PAT,
 
 1. In Azure DevOps, open your profile settings, and then select **Personal access token**.
 
-    ![Locating Security in the menu](../media/4-personal-access-token.png)
+    ![Locating SecurityPersonal Access Token in the menu](../media/4-personal-access-token.png)
 1. Select **New Token**.
 1. Enter a name for your token, such as *Build agent*.
 1. Under **Scopes**, select **Show all scopes** at the bottom.
@@ -228,6 +228,7 @@ The documentation explains how to manually set up [self-hosted Linux agents](htt
 
     In the steps that follow, set these environment variables:
 
+    * `AZP_AGENT_VERSION`
     * `AZP_URL`
     * `AZP_TOKEN`
     * `AZP_AGENT_NAME`
@@ -261,6 +262,18 @@ The documentation explains how to manually set up [self-hosted Linux agents](htt
 
     ```bash
     export AZP_POOL=MyAgentPool
+    ```
+
+1. Set the `AZP_AGENT_VERSION` environment variable to specify the latest version of the agent. A YAML pipeline on a Linux machine must be using the latest version of the agent, even if it is pre-release. The agent software is constantly updating, so you curl the version information from [the GitHub repo](https://api.github.com/repos/microsoft/azure-pipelines-agent/releases?azure-pipelines=true) and use jq to get the latest version.
+
+    ```bash
+    export AZP_AGENT_VERSION=$(curl -s https://api.github.com/repos/microsoft/azure-pipelines-agent/releases | jq -r '.[0].tag_name' | cut -d "v" -f 2)
+    ```
+
+1. Print the agent version to the console. Optionally, [check](https://github.com/microsoft/azure-pipelines-agent/releases?azure-portal=true) to make sure this is the latest version.
+
+    ```bash
+    echo $AZP_AGENT_VERSION
     ```
 
 1. Make the script executable, and then run it.
