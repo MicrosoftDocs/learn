@@ -15,7 +15,6 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-
   - content: "Bash is short for:"
     choices:
     - content: "BAsic SHell"
@@ -44,17 +43,17 @@ quiz:
       explanation: "Incorrect."
     - content: "ps -ef | grep scottgu > processes.txt"
       isCorrect: true
-      explanation: "Correct! The `ps -ef` command lists all running processes; the `grep` command searches for patterns in each file."
+      explanation: "Correct! The ps -ef command lists all running processes; the grep command searches for patterns in each file."
 
   - content: "Which of the following commands would you use to delete a subdirectory that isn't empty?"
     choices:
-    - content: "`rm`"
+    - content: "rm"
       isCorrect: true
       explanation: "Correct!"
-    - content: "`rmdir`"
+    - content: "rmdir"
       isCorrect: false
       explanation: "Incorrect."
-    - content: "`nuke`"
+    - content: "nuke"
       isCorrect: false
       explanation: "Incorrect."
     - content: "None of the above; a subdirectory that isn't empty can't be deleted"
@@ -63,16 +62,16 @@ quiz:
 
   - content: "Which of the following commands reboots the server after 10 minutes?"
     choices:
-    - content: "`sudo shutdown -r +10`"
+    - content: "sudo shutdown -r +10"
       isCorrect: true
       explanation: "Correct!"
-    - content: "`sudo shutdown -r 10m`"
+    - content: "sudo shutdown -r 10m"
       isCorrect: false
       explanation: "Incorrect."      
-    - content: "`sudo reboot +10`"
+    - content: "sudo reboot +10"
       isCorrect: false
       explanation: "Incorrect."
-    - content: "`sudo reboot +10m`"
+    - content: "sudo reboot +10m"
       isCorrect: false
       explanation: "Incorrect."
 
@@ -81,7 +80,7 @@ quiz:
     - content: "concat foo.txt bar.txt > foobar.txt"
       isCorrect: false
       explanation: "Incorrect."
-    -content: "`concat foo.txt bar.txt | foobar.txt`"
+    -content: "concat foo.txt bar.txt | foobar.txt"
       isCorrect: true
       explanation: "Correct!"
     - content: "cat foo.txt bar.txt | foobar.txt"
@@ -91,7 +90,7 @@ quiz:
       isCorrect: false
       explanation: "Incorrect."
     
-  - content: "The purpose of the `sudo` command is to:"
+  - content: "The purpose of the sudo command is to:"
     choices:
     - content: "Execute a command with elevated privilege"
       isCorrect: true
@@ -106,7 +105,7 @@ quiz:
       isCorrect: false
       explanation: "Incorrect."
 
-  - content: "Which of the following statements is true regarding the command `python3 app.py &`?"
+  - content: "Which of the following statements is true regarding the command python3 app.py &?"
     choices:
     - content: "It runs <b>app.py</b> after creating a restore point in the system"
       isCorrect: false
@@ -114,14 +113,14 @@ quiz:
     - content: "It runs <b>app.py</b> and prevents it from becoming a zombie process"
       isCorrect: false
       explanation: "Incorrect."
-    - content: "It runs <b>app.py</b>, but only if it's located in the "/etc" directory"
+    - content: "It runs <b>app.py</b>, but only if it's located in the '/etc' directory"
       isCorrect: false
       explanation: "Incorrect."
     - content: "It runs <b>app.py</b> and returns immediately to the command prompt"
       isCorrect: true
       explanation: "Correct!"
 
-  - content: "Which of the following `vi` commands saves a file?"
+  - content: "Which of the following vi commands saves a file?"
     choices:
     - content: ":q"
       isCorrect: false
