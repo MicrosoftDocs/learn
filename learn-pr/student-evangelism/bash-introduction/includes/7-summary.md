@@ -3,7 +3,7 @@ In this module, you learned the basics of using Bash. Among other things, you le
 - How to use Azure Cloud Shell to create an Ubuntu Linux VM in Azure
 - How to securely connect to the VM using SSH
 - How Bash commands are structured
-- Key Bash commands such as `ls`, `cat`, and `ps`
+- Key Bash commands, such as `ls`, `cat`, and `ps`
 - How to use I/O operators in Bash commands to redirect input and output
 - How to update the operating system on a Linux server
 - How to find and terminate rogue processes

@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.bash-introduction
+uid: learn.student-evangelism.bash-introduction
 metadata:
   title: Introduction to Bash - Learn
   description: Learn how to use Bash to manage IT infrastructure.
@@ -20,7 +20,7 @@ abstract:  |
   - Learn how to find and terminate rogue processes
   - Learn how to use Bash to filter Azure CLI output
 prerequisites: None
-iconUrl: http://via.placeholder.com/120x120
+iconUrl: /learn/achievements/student-evangelism/bash-introduction-generic-badge.svg
 levels:
 - beginner
 roles:
@@ -30,13 +30,13 @@ products:
 - azure
 - azure-linux-vm
 units:
-- learn.bash-introduction.0-introduction
-- learn.bash-introduction.1-create-linux-vm
-- learn.bash-introduction.2-bash-fundamentals
-- learn.bash-introduction.3-bash-commands
-- learn.bash-introduction.4-update-system
-- learn.bash-introduction.5-terminate-process
-- learn.bash-introduction.6-filter-cli-output
-- learn.bash-introduction.7-summary
+- learn.student-evangelism.bash-introduction.0-introduction
+- learn.student-evangelism.bash-introduction.1-create-linux-vm
+- learn.student-evangelism.bash-introduction.2-bash-fundamentals
+- learn.student-evangelism.bash-introduction.3-bash-commands
+- learn.student-evangelism.bash-introduction.4-update-system
+- learn.student-evangelism.bash-introduction.5-terminate-process
+- learn.student-evangelism.bash-introduction.6-filter-cli-output
+- learn.student-evangelism.bash-introduction.7-summary
 badge:
-  uid: learn.placeholder.badge 
+  uid: learn.student-evangelism.bash-introduction.badge 

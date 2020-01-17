@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-  uid: learn.bash-introduction.7-summary
+  uid: learn.student-evangelism.bash-introduction.7-summary
   title: Summary
   metadata:
     title: Summary
@@ -29,49 +29,49 @@
       - content: "Bravo! Another SHell"
         isCorrect: false
         explanation: "Incorrect."
-    - content: "Which of the following commands writes a list of processes associated with a user named 'scottgu' to a file?"
+    - content: "Which of the following commands writes a list of processes associated with a user named <b>scottgu</b> to a file?"
       choices:
-      - content: "cat | grep scottgu > processes.txt"
+      - content: "<b>cat | grep scottgu > processes.txt</b>"
         isCorrect: false
         explanation: "Incorrect."
-      - content: "cat > grep scottgu | processes.txt"
+      - content: "<b>cat > grep scottgu | processes.txt</b>"
         isCorrect: false
         explanation: "Incorrect."
-      - content: "pid -u > grep scottgu | processes.txt"
+      - content: "<b>pid -u > grep scottgu | processes.txt</b>"
         isCorrect: false
         explanation: "Incorrect."
-      - content: "ps -ef | grep scottgu > processes.txt"
+      - content: "<b>ps -ef | grep scottgu > processes.txt</b>"
         isCorrect: true
-        explanation: "Correct! The ps -ef command lists all running processes; the grep command searches for patterns in each file."
+        explanation: "Correct! The <b>ps -ef</b> command lists all running processes; the <b>grep</b> command searches for patterns in each file."
     - content: "Which of the following commands would you use to delete a subdirectory that isn't empty?"
       choices:
-      - content: "rm"
+      - content: "<b>rm</b>"
         isCorrect: true
         explanation: "Correct!"
-      - content: "rmdir"
+      - content: "<b>rmdir</b>"
         isCorrect: false
         explanation: "Incorrect."
-      - content: "nuke"
+      - content: "<b>nuke</b>"
         isCorrect: false
         explanation: "Incorrect."
       - content: "None of the above; a subdirectory that isn't empty can't be deleted"
         isCorrect: false
         explanation: "Incorrect."
-    - content: "Which of the following commands combines the contents of foo.txt and bar.txt into a new file named foobar.txt?"
+    - content: "Which of the following commands combines the contents of <b>foo.txt</b> and <b>bar.txt</b> into a new file named <b>foobar.txt</b>?"
       choices:
-      - content: "concat foo.txt bar.txt > foobar.txt"
+      - content: "<b>concat foo.txt bar.txt > foobar.txt</b>"
         isCorrect: false
         explanation: "Incorrect."
-      - content: "concat foo.txt bar.txt | foobar.txt"
+      - content: "<b>concat foo.txt bar.txt | foobar.txt</b>"
         isCorrect: false
         explanation: "Incorrect."
-      - content: "cat foo.txt bar.txt | foobar.txt"
+      - content: "<b>cat foo.txt bar.txt | foobar.txt</b>"
         isCorrect: false
         explanation: "Incorrect."
-      - content: "cat foo.txt bar.txt > foobar.txt"
+      - content: "<b>cat foo.txt bar.txt > foobar.txt</b>"
         isCorrect: true
         explanation: "Correct!"        
-    - content: "The purpose of the sudo command is to:"
+    - content: "The purpose of the <b>sudo</b> command is to:"
       choices:
       - content: "Execute a command with elevated privilege"
         isCorrect: true
@@ -85,15 +85,15 @@
       - content: "Prevent subdirectories from being deleted without confirmation"
         isCorrect: false
         explanation: "Incorrect."
-    - content: "Which of the following statements is true regarding the command python3 app.py &?"
+    - content: "Which of the following statements is true regarding the command <b>python3 app.py &</b>?"
       choices:
-      - content: "It runs app.py after creating a restore point in the system"
+      - content: "It runs <b>app.py</b> after creating a restore point in the system"
         isCorrect: false
         explanation: "Incorrect."
       - content: "It runs <b>app.py</b> and prevents it from becoming a zombie process"
         isCorrect: false
         explanation: "Incorrect."
-      - content: "It runs <b>app.py</b>, but only if it's located in the '/etc' directory"
+      - content: "It runs <b>app.py</b>, but only if it's located in the <b>/etc</b> directory"
         isCorrect: false
         explanation: "Incorrect."
       - content: "It runs <b>app.py</b> and returns immediately to the command prompt"
@@ -101,13 +101,13 @@
         explanation: "Correct!"
     - content: "Which of the following vi commands saves a file?"
       choices:
-      - content: ":q"
+      - content: "<b>:q</b>"
         isCorrect: false
         explanation: "Incorrect."
-      - content: ":s"
+      - content: "<b>:s</b>"
         isCorrect: false
         explanation: "Incorrect."
-      - content: ":w"
+      - content: "<b>:w</b>"
         isCorrect: true
         explanation: "Correct!"
       - content: "None of the above"
