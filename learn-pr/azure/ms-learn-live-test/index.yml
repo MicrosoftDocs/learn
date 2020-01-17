@@ -1,22 +1,35 @@
+# Note for reviews:
+#
+# Learn Live uses the modules format to provide instructions to the audience
+# who is following the live sessions.
+# The content structure and the requirements are different from Learn modules.
+# We are in the process of defining a separate content model for Learn Live to standardize our modules.
+# 
+# All Learn Live "modules" are hidden and are not meant to be found when searching
+# for Learn content.
+#
+
 ### YamlMime:Module
 uid: learn.azure.ms-learn-live
+hidden: true
 metadata:
-  title: Microsoft Learn LIVE!
-  description: Microsoft Learn LIVE!
-  ms.date: 8/21/2019
-  author: markjulmar
-  ms.author: smmark
+  title: Microsoft Learn Live
+  description: Microsoft Learn Live is a series of guided, live courses, presented on Twitch and designed to increase your existing knowledge of Azure technologies.
+  ms.date: 1/16/2020
+  author: krumelur
+  ms.author: renrup
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Microsoft Learn LIVE!
-summary: This is a placeholder for Microsoft Learn LIVE! testing
-abstract: Use this to execute Learn Live instructions
-prerequisites: None
+title: Microsoft Learn Live
+summary: this is the summary - where is this shown?
+abstract: this is the abstract - where is this shown?
+prerequisites: these are prerequisites - where are they shown?
 iconUrl: /learn/achievements/generic-badge.svg
 badge:
   uid: learn.azure.ms-learn-live.badge
 levels: 
 - beginner
+- intermediate
 roles: 
 - developer
 products:
@@ -27,3 +40,8 @@ products:
 - azure-sql-database
 units:
 - learn.azure.ms-learn-live.introduction
+- learn.azure.ms-learn-live.session-1-prep
+- learn.azure.ms-learn-live.session-2-prep
+- learn.azure.ms-learn-live.session-3-prep
+- learn.azure.ms-learn-live.session-4-prep
+- learn.azure.ms-learn-live.session-5-prep
