@@ -13,15 +13,10 @@ First, deploy your patient portal application across two virtual machines in a s
 
 To deploy the patient portal web application:
 
-1. Run the following `git clone` command in Azure Cloud Shell. The command clones the repo that contains the source for the app and runs the setup script from GitHub.
+1. Run the following `git clone` command in Azure Cloud Shell. The command clones the repo that contains the source for the app and runs the setup script from GitHub. You then change to the directory of the cloned repo.
 
     ```bash
     git clone https://github.com/MicrosoftDocs/mslearn-improve-app-scalability-resiliency-with-load-balancer.git
-    ```
-
-1. Go to the repo folder locally.
-
-    ```bash
     cd mslearn-improve-app-scalability-resiliency-with-load-balancer
     ```
 
@@ -80,18 +75,12 @@ Next, create a back-end pool in the load balancer and add the virtual machines t
     | Field | Information |
     | ----- | ----------- |
     | **Name** | Enter a unique name for the back-end pool. For example, **bepool-http**. |
+    | **Virtual network** | **bePortalVnet** |
     | **IP version** | Select **IPv4**. |
-    | **Associated to** | Select **Availability set**. |
-    | **Availability set** | Select the existing **portalAvailabilitySet** availability set. |
+    | **Associated to** | Select **Virtual machine**. |
     | | |
 
-1. Select **Add a target network IP configuration**. Select the **webVM1** virtual machine in the availability set.
-
-1. Select the **ipconfig1** network IP configuration.
-
-1. Select **Add a target network IP configuration** again, and then select the **webVM2** virtual machine from the availability set.
-
-1. Select the **ipconfig2** network IP configuration, and then select **OK**.
+1. In the **Virtual machines** section, select the **webVM1** and **webVM2** virtual machines and the **ipconfig1** IP addresses for both VMs.
 
     ![Add a new back-end pool](../media/4-backend-pool-create.png)
 
@@ -113,7 +102,7 @@ Create a health probe that monitors the two virtual machines:
 
     ![Add a new health probe](../media/4-new-health-probe.png)
 
-1. Select **OK**.
+1. Select **Add**.
 
 ## Add a load balancer rule
 
