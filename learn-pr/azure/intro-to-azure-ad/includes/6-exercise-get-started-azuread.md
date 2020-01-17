@@ -1,11 +1,11 @@
-Your company has communicated to its external healthcare partner users and the doctors that use its services, that it's planning upgrading to Azure Active Directory. It's received great feedback, and the company is now excited to move forward so it can provide better and more secure access.
+Your company has communicated to its external healthcare partner users and the doctors that use its services, that it's planning an upgrade to Azure Active Directory. It's received great feedback, and the company is now excited to move forward so it can provide better and more secure access.
 You've been asked you to set up Azure Active Directory for your company.
 
 Here, you'll create a tenant using the Azure portal. When you've created your tenant, you'll associate a new subscription with it.
 
 ## Create a tenant
 
-You'll start by creating a new tenant in Azure AD. You'll use this to store all security principals for your healthcare organization.
+You'll start by creating a new tenant in Azure AD. You'll use this tenant to store all security principals for your healthcare organization.
 
 1. [Sign in](<https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true>)  to the Azure portal with the same account you used to activate your sandbox.
 
@@ -57,6 +57,6 @@ Now you'll associate a subscription with the tenant, to make it possible for you
 
     ![Select subscriptions after changing directory](../media/6-select-subscriptions-after-change.png)
 
-1. You'll see your subscription listed in the subscriptions list.
+    You'll see your subscription listed in the subscriptions list.
 
     ![View subscription in new directory](../media/6-view-subscription-after-subscription-change.png)

@@ -1,5 +1,4 @@
-
-Your company wants to improve how it provides services to doctors, and how it collaborates with external healthcare organizations.  You've been asked to investigate what other capabilities and services Azure AD could provide for the organization.
+Your company wants to improve how it provides services to doctors, and how it collaborates with external healthcare organizations. You've been asked to investigate what other capabilities and services Azure AD could provide for the organization.
 
 You'll explore some essential features for Azure AD, and how they can be used. For example, you'll look at features like Azure Active Directory B2B, Azure Active Directory B2C, Azure Active Directory Domain Services, and Azure Identity Protection. And you'll see which features you can use to help improve how you manage applications with Azure AD.
 
@@ -59,7 +58,7 @@ You can manage different categories of applications with Azure AD:
 
     ![Azure AD Marketplace](../media/4-azuread-marketplace.png)
 
-- **Custom-developed applications**. These are applications built by your company that you can register with Azure AD. You then control and monitor authentication for these applications.
+- **Custom-developed applications**. You can register these applications, which are built by your company, with Azure AD. You then control and monitor authentication for these applications.
 
     ![Custom developed applications](../media/4-applications.png)
 
@@ -73,7 +72,7 @@ You can manage different categories of applications with Azure AD:
 
 There are other Azure AD features you can use to benefit your applications.
 
-**Protect your apps with Conditional Access policies**
+### Protect your apps with Conditional Access policies
 
 Use Conditional Access policies to require users to go through additional authentication challenges before accessing an application. For example, you would configure a Conditional Access policy to ask users to complete a multi-factor authentication challenge after their credentials have been verified, before they access the application.
 
@@ -82,7 +81,7 @@ Use Conditional Access policies to require users to go through additional authen
 > [!NOTE]
 > Conditional Access policies are available for Premium P1 and Premium P2 license tiers.
 
-**Monitor your application access**
+### Monitor your application access
 
 Azure AD can help monitor your application sign-ins by generating reports that cover sign-in dates, user details, applications the user has used, risk detection, location, and more. Those reports can then be accessed through the Azure portal, or via specific APIs for programmatic usage.
 

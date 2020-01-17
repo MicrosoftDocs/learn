@@ -25,7 +25,7 @@ quiz:
       explanation: An identity can be a user, an application, services, or anything that needs to be identified.
     - content: The service that is doing the authentication for users. It can also be an application.
       isCorrect: false
-      explanation: An identity is something that can be authenticated. This can be a user, an application or services.
+      explanation: An identity is something that can be authenticated. This can be a user, an application, or services.
   - content: Which licensing plan supports Identity Protection?
     choices:
     - content: Azure Active Directory Free

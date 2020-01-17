@@ -1,4 +1,3 @@
-
 The board wants to enable secure and easy access to applications and services for internal staff, and doctors from various countries.
 Your team manager believes Azure Active Directory can address this need. Your manager wants you to find out what Azure Active Directory (Azure AD) is, how it works, and what it does.
 
@@ -23,7 +22,7 @@ You can create multiple tenants in Azure under multiple subscriptions. Each tena
 
 ![Azure AD structure](../media/2-directory-structure-azure.png)
 
-**Who benefits from Azure AD?**
+### Who benefits from Azure AD?
 
 Azure AD meets the needs of many different types of users. For instance, an IT administrator can use Azure AD to determine who should have access to applications and resources, based on company requirements. An administrator could, for example, add another layer of protection to applications and services by enforcing multi-factor authentication on sign-ins.
 
@@ -47,9 +46,9 @@ Use the identity secure score to improve and monitor the security of your identi
 
 Azure AD gives all of the users in your tenant a default set of permissions. Permissions dictate what a user can and can't do. The set of permissions granted by default depends on whether a particular user is a natural member user of the tenant (like an internal employee) or if they belong to an outside organization. The latter would be considered a guest, such as an external collaborating user. Guest users are invited to the tenant through a feature for Azure AD called Azure Active Directory B2B.
 
-Member users can do many things that guest users can't. For example, member users manage their own profile details, like their phone number, profile photos, and more. Guest users typically have more restrictions. A guest user can, for instance, view their display photo but can't change it. The external healthcare professionals your company works with regularly, could be given guest user access. This way, they'd have more restricted permissions than a regular internal staff member, but they'd still have enough permissions to get their work done.
+Member users can do many things that guest users can't. For example, member users manage their own profile details, like their phone number, profile photos, and more. Guest users typically have more restrictions. A guest user can, for instance, view their display photo but can't change it. The external healthcare professionals your company works with regularly, could be given guest user access. This way, they'd have more restricted permissions than a regular internal staff member, but they would still have enough permissions to get their work done.
 
-**Member and guest default permissions compared**
+### Member and guest default permissions compared
 
 Here are some of the default permissions for member and guest type users:
 
@@ -80,7 +79,7 @@ Azure AD doesn't replace Active Directory. Which service you use depends on your
 
 ### Use hybrid identity to link your on-premises AD with Azure AD
 
-Your users will want to access applications from both the cloud and on-premises. Azure AD and Active Directory can be used together to provide an identity solution that spans on-premises and the cloud. There's a single user identity for authentication and to access applications and resources, whatever their location. This is called a hybrid identity.
+Your users will want to access applications from both the cloud and on-premises. Azure AD and Active Directory can be used together to provide an identity solution that spans on-premises and the cloud. There's a single user identity for authentication and to access applications and resources, whatever their location. This user is called a hybrid identity.
 
 There are multiple authentication methods that let you achieve hybrid identity for users.
 

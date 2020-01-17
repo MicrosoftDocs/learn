@@ -8,4 +8,4 @@ You now know the licensing costs and implications of using Azure AD and the feat
 
 ## Learn more
 
-[Azure Active Directory documentation](https://docs.microsoft.com/en-us/azure/active-directory/)
+[Azure Active Directory documentation](https://docs.microsoft.com/azure/active-directory/)

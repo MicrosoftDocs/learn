@@ -1,4 +1,3 @@
-
 Your company is always looking for the most experienced healthcare professionals and external contractors to work with. Research projects can become costly if not managed properly. Your company wants to improve its cost effectiveness. You've been asked to investigate how Azure Active Directory (Azure AD) is licensed. You've also been asked to provide a clear and concise outline of the key terminology your company will come across when using Azure AD.
 
 Here, you'll explore how Azure AD is licensed, and which features fall under the different licenses. You'll see how to add or change licenses in Azure AD. And you'll learn the key terms you need to understand when using Azure AD.
@@ -25,18 +24,6 @@ You can select each license plan to see which users are included. Also, you can 
 
 ![License users](../media/3-licenses-users.png)
 
-<!-- 1. **Understand Azure AD terminology**
-
-   Get to grips with the terminology that underlies using Azure AD, including Iidentity, Azure tenant, custom domain, and so on.
-
-   **Knowledge Check**
-   1. What is meant by the term identity?
-       A: Something that can get authenticated.  This can be a user, an application, other servers, or anything that needs to be identified.
-   1. What is meant by the term Azure tenant?
-       A: A dedicated and trusted instance of Azure AD that represents your organization.
-   1. What is meant by the term Azure subscription?
-       A: A subscription is the mechanism used to pay for Azure cloud services. -->
-
 ## Azure AD terminology
 
 To use Azure AD effectively, there are some key Active Directory specific terms you'll need to understand when you come across them. 
@@ -55,3 +42,4 @@ Here's an explanation of some of those terms:
 |Custom domain|When you create an Azure AD directory, it's automatically assigned a default domain like `<your-organization>.onmicrosoft.com` from Azure. But you can also configure your own custom domain names. Your users could then have accounts like `joesmith@contoso.com` instead of `joesmith@contoso.onmicrosoft.com`.|
 |Owner role|This role lets you manage all resources in Azure, including the access levels users need for resources.  |
 |Global administrator| When you create a tenant, you're automatically assigned this role for that tenant. The role gives you all the administrative capabilities for Azure AD. For example, you can reset passwords for all users and administrators.|
+| | |
