@@ -22,6 +22,7 @@ levels:
 roles:
 - developer
 - data-scientist
+- student
 products:
 - azure
 units:
