@@ -27,6 +27,7 @@ levels:
 - intermediate
 roles:
 - ai-engineer
+- student
 products:
 - azure
 units:

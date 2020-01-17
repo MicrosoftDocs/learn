@@ -27,6 +27,7 @@ levels:
 - beginner
 roles:
 - data-scientist
+- student
 products:
 - azure
 - azure-machine-learning-service

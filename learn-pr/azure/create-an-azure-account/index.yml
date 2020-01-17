@@ -27,6 +27,7 @@ roles:
 - solution-architect
 - developer
 - security-engineer
+- student
 products:
 - azure
 - azure-portal
