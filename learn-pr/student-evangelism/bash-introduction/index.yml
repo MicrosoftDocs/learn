@@ -29,7 +29,6 @@ roles:
 products:
 - azure
 - azure-linux-vm
-- azurecli
 units:
 - learn.bash-introduction.0-introduction
 - learn.bash-introduction.1-create-linux-vm

@@ -14,8 +14,8 @@ content: |
   [!include[](includes/7-summary.md)]
 quiz:
   title: Check your knowledge
-  
   questions:
+
   - content: "Bash is short for:"
     choices:
     - content: "BAsic SHell"
@@ -78,7 +78,7 @@ quiz:
 
   - content: "Which of the following commands combines the contents of <b>foo.txt</b> and <b>bar.txt</b> into a new file named <b>foobar.txt</b>?"
     choices:
-    - content: "<font face="Courier">concat foo.txt bar.txt > foobar.txt</font>"
+    - content: "concat foo.txt bar.txt > foobar.txt"
       isCorrect: false
       explanation: "Incorrect."
     -content: "`concat foo.txt bar.txt | foobar.txt`"
@@ -136,5 +136,4 @@ quiz:
       isCorrect: false
       explanation: "Incorrect."
 
-© 2020 GitHub, Inc.
 
