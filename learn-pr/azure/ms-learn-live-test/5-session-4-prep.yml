@@ -14,4 +14,4 @@ azureSandbox: true
 interactive: bash
 durationInMinutes: 3
 content: |
-  [!include[](includes/session-4-prep.md)]
+  [!include[](includes/5-session-4-prep.md)]
