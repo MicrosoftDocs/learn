@@ -4,8 +4,8 @@ metadata:
   title: Understand Azure AD licenses and terminology
   description: Understand Azure AD licenses and terminology
   ms.date: 12/30/2019
-  author: cwatson
-  ms.author: cwatson
+  author: jboeshart
+  ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Understand Azure AD licenses and terminology
@@ -17,10 +17,10 @@ quiz:
   questions:
   - content: What is meant by the term identity?
     choices:
-    - content: Something that can be authenticated.  This can be a user, an application, services, or anything that needs to be identified.
+    - content: Something that can be authenticated. This can be a user, an application, services, or anything that needs to be identified.
       isCorrect: true
       explanation: Your identity represents a user, or sometimes a service or an application that needs access to do something.
-    - content: A user that can be authenticated.  It has to be users. Applications, or services can't be considered as users.
+    - content: A user that can be authenticated. It has to be a user. Applications or services can't be considered as identities.
       isCorrect: false
       explanation: An identity can be a user, an application, services, or anything that needs to be identified.
     - content: The service that is doing the authentication for users. It can also be an application.
