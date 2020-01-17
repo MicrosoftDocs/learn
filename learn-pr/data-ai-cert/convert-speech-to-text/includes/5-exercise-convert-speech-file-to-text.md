@@ -1,29 +1,35 @@
-Translating speech with the Speech Translation API involves two steps:
+# Exercise - Convert Speech from and Audio File to Text
 
-1. Creating and opening an authorized WebSocket request to the subscription endpoint.
-1. Processing the information returned from the call.
+In this exercise, you will make use of the Speech Service you created earlier.  This exercise does not require any configuration on your local computer for a development environment as we will use Visual Studio Code Online.  The steps will detail what is required to get the online environment configured correcly, tasks that will be required for each exercise to work correctly.   All resources are stored in a GitHub repo that you will link to during the exercise steps.
 
-`Translate` is the method you use to translate speech. When making a request to `Translate`, you provide parameters to tell the service the source language, the target language, and the voice selection. For example, a request to the `Translate` method to translate spoken content from English to French might look like this:
+::: zone pivot="python"
 
-```text
-wss://dev.microsofttranslator.com/speech/translate?from=en-US&to=fr&features=texttospeech&voice=fr-CA-Caroline
-```
+1. Start by opening a browser tab or window and navigating to Visual [Studio Code Online](https://visualstudio.microsoft.com/services/visual-studio-online/)
 
-The `Translate` method provides the following required parameters:
+[!NOTE] At this time, Safari is not a suppored browser for the preview of VS Code Online
 
-| Parameter | Description |
-|-----------|-------------|
-| `from` | Specifies the language of the incoming speech, from a list of supported language identifiers. |
-| `to` | Specifies the language to translate the content into, from a list of supported language identifiers. |
-| `features` | A comma-separated set of features, which can include `partial`, `texttospeech`, and `timinginfo`. |
-| `voice` | The locale-specific voice to use for final synthesis, from a list of supported voices. |
+2. You will require an Azure subscription to create an environment for Visual Studio Code Online
+1. Select the **Get started** button.
+1. Sign in using your Microsoft Account that is linked to your Azure subscription
+1. If this is the first time you have used Visual Studio Code online, you will be required to create a new plan, which should be selected in the drop down at the top of the page.
+1. Select **Create Environment**
+1. Select your Subscription in the Select Billing pane and choose a location for the service.
+1. Select Create.
 
-The `Translate` method also provides the following optional parameters to handle things like the audio-output format and profanity masking:
 
-| Parameter | Description |
-|-----------|-------------|
-| `format` | Specifies the format of the text-to-speech audio stream returned by the service, either as `audio/wav` or `audio/mp3`. |
-| `profanityaction` | Specifies how the service should handle profanity recognized in the speech. |
-| `profanitymarker` | Specifies how detected profanity is handled when the `profanityaction` parameter is used. |
+::: zone-end
 
-Although an authorized WebSocket connection is created and opened, speech translation requires you to specify a target, or "to", language. Because of its large number of supported (and growing) languages, the Speech Translation API provides a simple way to request lists of supported languages.
+::: zone pivot="csharp"
+
+1. Start by opening a browser tab or window and navigating to Visual [Studio Code Online](https://visualstudio.microsoft.com/services/visual-studio-online/)
+
+[!NOTE] At this time, Safari is not a suppored browser for the preview of VS Code Online
+
+2. You will require an Azure subscription to create an environment for Visual Studio Code Online
+1. Select the **Get started** button.
+1. Sign in using your Microsoft Account that is linked to your Azure subscription
+1. If this is the first time you have used Visual Studio Code online, you will be required to create a new plan, which should be selected in the drop down at the top of the page.
+1. Select **Create Environment**
+1. Select your Subscription in the Select Billing pane and choose a location for the service.
+1. Select Create.
+::: zone-end
