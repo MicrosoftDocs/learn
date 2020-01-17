@@ -21,6 +21,7 @@ levels:
 - beginner
 roles:
 - data-scientist
+- student
 products:
 - azure
 units:
