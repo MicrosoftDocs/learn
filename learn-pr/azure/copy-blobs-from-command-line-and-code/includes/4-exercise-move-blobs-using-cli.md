@@ -8,7 +8,7 @@ In this exercise, you'll use the Azure CLI to migrate blobs that haven't changed
 
   [!include[](../../../includes/azure-sandbox-regions-first-mention-note.md)]
 
-1. Create environment variables for your storage account name and region. Replace <location> with a region from the list above. 
+1. Create environment variables for your storage account name and region. Replace `<location>` with a region from the list above.
 
     ```azurecli
     HOT_STORAGE_NAME=hotstorage$RANDOM
