@@ -9,8 +9,7 @@ metadata:
   ms.author: renrup
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
-azureSandbox: true
+  azureSandbox: true
 interactive: bash
 durationInMinutes: 3
 content: |
