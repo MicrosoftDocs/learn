@@ -9,7 +9,6 @@ metadata:
   ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 5
 content: |
   [!include[](includes/6-summary.md)]
@@ -20,13 +19,13 @@ quiz:
     choices: 
     - content: "A Python library that you can use as an alternative to common machine learning frameworks like Scikit-Learn, PyTorch, and Tensorflow."
       isCorrect: false
-      explanation: "This is incorrect. Azure Machine Learning is an Azure service that you can use to manage machine learning model data preparation, training, validation, and deployment. It leverages existing frameworks such as Scikit-Learn, PyTorch, and Tensorflow; and provides a cross-platform platform for operationalizing machine learning in the cloud."
+      explanation: "This is incorrect. Azure Machine Learning enables you to manage machine learning model data preparation, training, validation, and deployment. It supports existing frameworks such as Scikit-Learn, PyTorch, and Tensorflow; and provides a cross-platform platform for operationalizing machine learning in the cloud."
     - content: "A cloud-based platform for operating machine learning solutions at scale."
       isCorrect: true
-      explanation: "That is correct. Azure Machine Learning is an Azure service that you can use to manage machine learning model data preparation, training, validation, and deployment. It leverages existing frameworks such as Scikit-Learn, PyTorch, and Tensorflow; and provides a cross-platform platform for operationalizing machine learning in the cloud."
+      explanation: "That is correct. Azure Machine Learning enables you to  manage machine learning model data preparation, training, validation, and deployment. It supports existing frameworks such as Scikit-Learn, PyTorch, and Tensorflow; and provides a cross-platform platform for operationalizing machine learning in the cloud."
     - content: "An application for Microsoft Windows that enables you to create machine learning models by using a drag and drop interface."
       isCorrect: false
-      explanation: "This is incorrect. Azure Machine Learning is an Azure service that you can use to manage machine learning model data preparation, training, validation, and deployment. It leverages existing frameworks such as Scikit-Learn, PyTorch, and Tensorflow; and provides a cross-platform platform for operationalizing machine learning in the cloud."
+      explanation: "This is incorrect. Azure Machine Learning enables you to  manage machine learning model data preparation, training, validation, and deployment. It supports existing frameworks such as Scikit-Learn, PyTorch, and Tensorflow; and provides a cross-platform platform for operationalizing machine learning in the cloud."
   
   - content: "Which edition of Azure Machine Learning workspace should you provision if you only plan to use the graphical Designer tool to train machine learning models?"
     choices: 
@@ -37,7 +36,7 @@ quiz:
       isCorrect: true
       explanation: "That is correct. The visual Designer tool is not available in Basic edition workspaces, so you must create an Enterprise workspace to use it."
 
-  - content: "You are using the Azure Machine Learning Python SDK to write code for an experiment. You need to record metrics from each run of the experiment, and be able to retrieve them easily from each run. What should you do?"
+  - content: "You are using the Azure Machine Learning Python SDK to write code for an experiment. You must log metrics from each run of the experiment, and be able to retrieve them easily from each run. What should you do?"
     choices: 
     - content: "Add print statements to the experiment code to print the metrics."
       isCorrect: false

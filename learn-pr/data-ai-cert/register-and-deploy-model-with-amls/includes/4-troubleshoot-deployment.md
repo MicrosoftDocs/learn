@@ -14,7 +14,8 @@ service = AciWebservice(name='classifier_service', workspace=ws)
 print(service.state)
 ```
 
-> **Note**: To view the **state** of a service, you must use the compute-specific service type (for example **AksWebservice**) and not a generic **WebService** object.
+> [!NOTE]
+> To view the **state** of a service, you must use the compute-specific service type (for example **AksWebservice**) and not a generic **WebService** object.
 
 For an operational service, the state should be *Healthy*.
 

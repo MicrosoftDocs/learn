@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.data-ai.register-and-deploy-model-with-amls
 metadata:
-  title: Deploying Machine Learning models with Azure Machine Learning
+  title: Deploying machine learning models with Azure Machine Learning
   description: Learn how to register and deploy ML models with the Azure Machine Learning service.
   ms.date: 01/13/2020
   author: GraemeMalcolm
   ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Deploying Machine Learning models with Azure Machine Learning
+title: Deploying machine learning models with Azure Machine Learning
 summary: Learn how to register and deploy ML models with the Azure Machine Learning service.
 abstract: | 
   In this module, you will learn how to:

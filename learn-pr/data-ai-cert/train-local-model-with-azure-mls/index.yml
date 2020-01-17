@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.data-ai.train-local-model-with-azure-mls
 metadata:
-  title: Train a Machine Learning Model with Azure Machine Learning
+  title: Train a machine learning model with Azure Machine Learning
   description: Learn how to use Azure Machine Learning to train a model and register it in a workspace.
   ms.date: 01/13/2020
   author: GraemeMalcolm
   ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Train a Machine Learning Model with Azure Machine Learning
+title: Train a machine learning model with Azure Machine Learning
 summary: Learn how to use Azure Machine Learning to train a model and register it in a workspace.
 abstract: | 
   In this module, you will learn how to:

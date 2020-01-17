@@ -171,4 +171,6 @@ experiment = Experiment(workspace = ws, name = 'my-experiment')
 run = experiment.submit(config=script_config)
 run.wait_for_completion(show_output=True)
 ```
-> **Note**: The **RunConfig** object defines the Python environment for the experiment, including the packages available to the script. If your script depends on packages that are not included in the default environment, you must associate the **RunConfig** with an **Environment** object that makes use of a **CondaDependencies** object to specify the Python packages required.
+
+> [!NOTE]
+> The **RunConfig** object defines the Python environment for the experiment, including the packages available to the script. If your script depends on packages that are not included in the default environment, you must associate the **RunConfig** with an **Environment** object that makes use of a **CondaDependencies** object to specify the Python packages required.

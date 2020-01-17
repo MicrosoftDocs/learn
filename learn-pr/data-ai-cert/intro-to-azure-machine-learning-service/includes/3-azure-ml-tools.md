@@ -11,7 +11,8 @@ Azure Machine Learning studio is a web-based tool for managing an Azure Machine 
 - *Designer*: A drag and drop interface for "no code" machine learning model development.
 - *Automated Machine Learning*: A wizard interface that enables you to train a model using a combination of algorithms and data preprocessing techniques to find the best model for your data.
 
-> **Note**: A previously released tool named Azure Machine Learning Studio provided a free service for drag and drop machine learning model development. The studio interface for the Azure Machine Learning service includes this capability in the *Designer* tool, as well as other workspace asset management capabilities.
+> [!NOTE]
+> A previously released tool named Azure Machine Learning Studio provided a free service for drag and drop machine learning model development. The studio interface for the Azure Machine Learning service includes this capability in the *Designer* tool, as well as other workspace asset management capabilities.
 
 To use Azure Machine Learning studio, use a a web browser to navigate to [https://ml.azure.com](https://ml.azure.com) and sign in using credentials associated with your Azure subscription. You can then select the subscription and workspace you want to manage.
 
@@ -26,7 +27,8 @@ While graphical interfaces like Azure Machine Learning studio make it easy to cr
 
 Azure Machine Learning provides software development kits (SDKs) for Python and R, which you can use to create, manage, and use assets in an Azure Machine Learning workspace.
 
-> **Note**: This course focuses on the Python SDK because it has broader capabilities than the R SDK, which is in preview at the time of writing.
+> [!NOTE]
+> This course focuses on the Python SDK because it has broader capabilities than the R SDK, which is in preview at the time of writing.
 
 ### Installing the Azure Machine Learning SDK for Python
 
@@ -56,7 +58,8 @@ After installing the SDK package in your Python environment, you can write code 
 }
 ```
 
-> **Tip**: You can download a configuration file for a workspace from the **Overview** page of its blade in the Azure portal.
+> [!TIP]
+> You can download a configuration file for a workspace from the **Overview** page of its blade in the Azure portal.
 
 To connect to the workspace using the configuration file, you can use the **from_config** method of the **Workspace** class in the SDK, as shown here:
 
@@ -112,7 +115,8 @@ To use the Azure Machine Learning CLI extension, run the `az ml` command with th
 az ml computetarget list -g 'aml-resources' -w 'aml-workspace'
 ```
 
->**Note**: In the code sample above, the **-g** parameter specifies the name of the resource group in which the Azure Machine Learning workspace specified in the **-w** parameter is defined. These parameters are shortened aliases for **--resource-group** and **--workspace-name**.
+> [!NOTE]
+> In the code sample above, the **-g** parameter specifies the name of the resource group in which the Azure Machine Learning workspace specified in the **-w** parameter is defined. These parameters are shortened aliases for **--resource-group** and **--workspace-name**.
 >
 > **More Information**: For more information about the Azure Machine Learning CLI Extension, see the [documentation](https://aka.ms/AA70zeu).
 

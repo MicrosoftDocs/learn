@@ -1,8 +1,8 @@
-In addition to trying a selection of algorithms, automated machine learning can apply preprocessing transformations to your data, which may improve the performance of a model trained on the featurized data.
+As well as trying a selection of algorithms, automated machine learning can apply preprocessing transformations to your data; improving the performance of the model.
 
 ## Scaling and Normalization
 
-Automated machine learning applies scaling and normalization to numeric data automatically. This helps prevent any large scale features from dominating training. During an automated machine learning experiment, a variety of scaling or normalization techniques will be applied.
+Automated machine learning applies scaling and normalization to numeric data automatically, helping prevent any large-scale features from dominating training. During an automated machine learning experiment, multiple scaling or normalization techniques will be applied.
 
 ## Optional Featurization
 
