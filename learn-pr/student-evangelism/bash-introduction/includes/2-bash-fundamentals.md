@@ -6,7 +6,7 @@ The full syntax for a Bash command is:
 command [options] [arguments]
 ```
 
-Bash treats the first string it encounters as a command. The following command uses Bash's `ls` (for "list") command to display the contents of the pwd — shorthand for the current working directory: 
+Bash treats the first string it encounters as a command. The following command uses Bash's `ls` (for "list") command to display the contents of the pwd—shorthand for the current working directory: 
 
 ```bash
 ls
@@ -69,7 +69,7 @@ Help obtained this way is typically more concise than help obtained with `man`.
 
 ## Use wildcards
 
-Wildcards are symbols that represent one or more characters in Bash commands. The most frequently used wildcard is the asterisk. It represents zero characters or a sequence of characters. Suppose the pwd contains hundreds of image files, but you only want to see the PNG files — the ones whose file names end with **.png**. Here's the command to list only those files:
+Wildcards are symbols that represent one or more characters in Bash commands. The most frequently used wildcard is the asterisk. It represents zero characters or a sequence of characters. Suppose the pwd contains hundreds of image files, but you only want to see the PNG files—the ones whose file names end with **.png**. Here's the command to list only those files:
 
 ```bash
 ls *.png
@@ -88,7 +88,7 @@ And here is another:
 ls *.jp*g
 ```
 
-The \* wildcard matches on zero or more characters, but the ? wildcard represents a single character. If the current directory contains files named **0001.jpg**, **0002.jpg**, and so on though **0009.jpg**, the following command lists them all:
+The \* wildcard matches on zero or more characters, but the ? wildcard represents a single character. If the current directory contains files named **0001.jpg**, **0002.jpg**, and so on through **0009.jpg**, the following command lists them all:
 
 ```bash
 ls 000?.jpg
@@ -132,7 +132,7 @@ ls *[0-9]*
 ls *[0-9]
 ```
 
-If you need to use one of the wildcard characters as an ordinary character, you make it literal or "escape it" by prefacing it with a backslash. So, if for some reason you had an asterisk as part of a file name — something you should never do intentionally — you could search for it with a command such as:
+If you need to use one of the wildcard characters as an ordinary character, you make it literal or "escape it" by prefacing it with a backslash. So, if for some reason you had an asterisk as part of a file name—something you should never do intentionally—you could search for it with a command such as:
 
 ```bash
 $ ls *\**
