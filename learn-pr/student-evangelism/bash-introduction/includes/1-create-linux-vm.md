@@ -56,7 +56,7 @@ To connect to the VM, you will use the [Secure Shell](https://wikipedia.org/wiki
 
 1. Confirm that the command prompt changes to `azureuser@bash-vm:~$` indicating that you are logged into the VM:
 
-	![Connect to the VM](./media/bash-vm.png)
+	![Connect to the VM](media/bash-vm.png)
 
 	_Connect to the VM_
 
