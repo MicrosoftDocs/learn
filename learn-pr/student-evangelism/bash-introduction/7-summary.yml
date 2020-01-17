@@ -29,4 +29,101 @@
       - content: "Bravo! Another SHell"
         isCorrect: false
         explanation: "Incorrect."
-
+    - content: "Which of the following commands writes a list of processes associated with a user named 'scottgu' to a file?"
+      choices:
+      - content: "cat | grep scottgu > processes.txt"
+         isCorrect: false
+        explanation: "Incorrect."
+    -   content: "cat > grep scottgu | processes.txt"
+        isCorrect: false
+        explanation: "Incorrect."
+    -   content: "pid -u > grep scottgu | processes.txt"
+        isCorrect: false
+        explanation: "Incorrect."
+    -   content: "ps -ef | grep scottgu > processes.txt"
+        isCorrect: true
+        explanation: "Correct! The ps -ef command lists all running processes; the grep command searches for patterns in each file."
+    - content: "Which of the following commands would you use to delete a subdirectory that isn't empty?"
+      choices:
+      - content: "rm"
+        isCorrect: true
+        explanation: "Correct!"
+      - content: "rmdir"
+        isCorrect: false
+        explanation: "Incorrect."
+      - content: "nuke"
+        isCorrect: false
+        explanation: "Incorrect."
+      - content: "None of the above; a subdirectory that isn't empty can't be deleted"
+        isCorrect: false
+        explanation: "Incorrect."
+    - content: "Which of the following commands reboots the server after 10 minutes?"
+      choices:
+      - content: "sudo shutdown -r +10"
+        isCorrect: true
+        explanation: "Correct!"
+      - content: "sudo shutdown -r 10m"
+        isCorrect: false
+        explanation: "Incorrect."      
+      - content: "sudo reboot +10"
+        isCorrect: false
+        explanation: "Incorrect."
+      - content: "sudo reboot +10m"
+        isCorrect: false
+        explanation: "Incorrect."
+    - content: "Which of the following commands combines the contents of <b>foo.txt</b> and <b>bar.txt</b> into a new file named <b>foobar.txt</b>?"
+      choices:
+      - content: "concat foo.txt bar.txt > foobar.txt"
+        isCorrect: false
+        explanation: "Incorrect."
+      -content: "concat foo.txt bar.txt | foobar.txt"
+        isCorrect: true
+        explanation: "Correct!"
+      - content: "cat foo.txt bar.txt | foobar.txt"
+        isCorrect: false
+        explanation: "Incorrect."
+      -content: "cat foo.txt bar.txt > foobar.txt"
+        isCorrect: false
+        explanation: "Incorrect."
+      - content: "The purpose of the sudo command is to:"
+      choices:
+      - content: "Execute a command with elevated privilege"
+        isCorrect: true
+        explanation: "Correct!"
+      - content: "Execute a program and leave it running in the background"
+        isCorrect: false
+        explanation: "Incorrect."
+      - content: "Prevent system files from being deleted by non-administrative users"
+        isCorrect: false
+        explanation: "Incorrect."
+      - content: "Prevent subdirectories from being deleted without confirmation"
+        isCorrect: false
+        explanation: "Incorrect."
+    - content: "Which of the following statements is true regarding the command python3 app.py &?"
+      choices:
+      - content: "It runs <b>app.py</b> after creating a restore point in the system"
+        isCorrect: false
+        explanation: "Incorrect."
+      - content: "It runs <b>app.py</b> and prevents it from becoming a zombie process"
+        isCorrect: false
+        explanation: "Incorrect."
+      - content: "It runs <b>app.py</b>, but only if it's located in the '/etc' directory"
+        isCorrect: false
+        explanation: "Incorrect."
+      - content: "It runs <b>app.py</b> and returns immediately to the command prompt"
+        isCorrect: true
+        explanation: "Correct!"
+    - content: "Which of the following vi commands saves a file?"
+      choices:
+      - content: ":q"
+        isCorrect: false
+        explanation: "Incorrect."
+      - content: ":s"
+        isCorrect: false
+        explanation: "Incorrect."      
+      - content: ":w"
+        isCorrect: true
+        explanation: "Correct!"
+      - content: "None of the above"
+        isCorrect: false
+        explanation: "Incorrect."
