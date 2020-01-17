@@ -1,8 +1,11 @@
-Your company has given the go-ahead to start using Azure Active Directory (Azure AD), and has asked you to set it up.
+Your company has communicated to its external healthcare partner users and the doctors that use its services, that it's planning upgrading to Azure Active Directory. It's received great feedback, and the company is now excited to move forward so it can provide better and more secure access.
+You've been asked you to set up Azure Active Directory for your company.
 
 Here, you'll create a tenant using the Azure portal. When you've created your tenant, you'll associate a new subscription with it.
 
-### Create a tenant
+## Create a tenant
+
+You'll start by creating a new tenant in Azure AD. You'll use this to store all security principals for your healthcare organization.
 
 1. [Sign in](<https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true>)  to the Azure portal with the same account you used to activate your sandbox.
 
@@ -18,13 +21,13 @@ Here, you'll create a tenant using the Azure portal. When you've created your te
 
     ![Select create](../media/6-select-create.png)
 
-<!--CE: Please check the capitalization (or not) of, for example, 'Organization name' and 'initial domain name'.--> 
-
-5. Fill in the form that appears. Give your Azure AD directory a name in the **Organization name** field. Use a unique domain name in the **initial domain name** field, and select a country or region of your choice. Then select **Create** at the bottom of the form.
+1. Fill in the form that appears. Give your Azure AD directory a name in the **Organization name** field. Use a unique domain name in the **initial domain name** field, and select a country or region of your choice. Then select **Create** at the bottom of the form.
 
     ![Azure AD form](../media/6-azuread-form.png)
 
-### Associate a subscription with your tenant
+## Associate a subscription with your tenant
+
+Now you'll associate a subscription with the tenant, to make it possible for your users to access Azure services.
 
 1. In the search box at the top of your Azure portal, search for "Subscriptions". Then select **Subscriptions** in the dropdown list that appears.
 

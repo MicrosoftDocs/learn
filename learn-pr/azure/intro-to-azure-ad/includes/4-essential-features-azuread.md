@@ -1,11 +1,11 @@
 
-Your company is excited to start using Azure Active Directory (Azure AD). You've been asked to investigate what other capabilities and services Azure AD could provide for the organization.
+Your company wants to improve how it provides services to doctors, and how it collaborates with external healthcare organizations.  You've been asked to investigate what other capabilities and services Azure AD could provide for the organization.
 
 You'll explore some essential features for Azure AD, and how they can be used. For example, you'll look at features like Azure Active Directory B2B, Azure Active Directory B2C, Azure Active Directory Domain Services, and Azure Identity Protection. And you'll see which features you can use to help improve how you manage applications with Azure AD.
 
-### Azure Active Directory B2B (Azure AD B2B)
+## Azure Active Directory B2B (Azure AD B2B)
 
-Use Azure AD to invite external users to your tenant. Your organization can then collaborate with external staff members through Azure AD B2B Collaboration. For example, your company could be working with external contractors who would be invited as guest users to your tenant. When the work is done, access for those contractors can be revoked until it's needed again. 
+Use Azure AD to invite external users to your tenant. Your organization can then collaborate with external healthcare partner staff members through Azure AD B2B Collaboration. For example, your company works with external healthcare partners who would be invited as guest users to your tenant. When the work is done, access for those external healthcare partners can be revoked until it's needed again.
 
 Here's the B2B collaboration process:
 
@@ -19,9 +19,9 @@ Here's the B2B collaboration process:
 
 This feature is available for all licensing tiers in Azure AD.
 
-### Azure Active Directory B2C (Azure AD B2C)
+## Azure Active Directory B2C (Azure AD B2C)
 
-You also use Azure Active Directory B2C to manage your customers' identities and access. You can support millions of users in this way. Use Azure AD B2C to securely authenticate your customers through their preferred identity providers. Apart from handling billions of authentications per day, AD B2C also helps you monitor for threats like brute force and denial-of-service attacks on your customer user accounts. To use Azure AD B2C, you register your applications. You then configure user flows to dictate the journey the user takes to access an application. 
+You can also use Azure Active Directory B2C to manage your customers' identities and access. Your doctor's accounts should have protected access to resources and services. Use Azure AD B2C to securely authenticate the doctors through their preferred identity providers. AD B2C also helps you monitor for threats like brute force and denial-of-service attacks on doctor's user accounts. To use Azure AD B2C, you register your applications. You then configure user flows to dictate the journey the user takes to access an application.
 
 For example, a sign-in user flow that describes the process required might go like this:
 
@@ -35,9 +35,9 @@ For example, a sign-in user flow that describes the process required might go li
 
 This feature is available on a pay-as-you-go basis.
 
-### Azure Active Directory Domain Services
+## Azure Active Directory Domain Services
 
-Azure Active Directory Domain Services (Azure AD DS) lets you add virtual machines to a domain without needing domain controllers. Your users can access virtual machines using their company Azure AD credentials. You use this service to reduce the complexity of migrating on-premises applications to Azure. An organization could also use Azure AD DS to handle its infrastructure if it runs both on-premises and in the cloud. The process might go like this:
+Azure Active Directory Domain Services (Azure AD DS) lets you add virtual machines to a domain without needing domain controllers. Your internal staff users can access virtual machines using their company Azure AD credentials. You use this service to reduce the complexity of migrating on-premises applications to Azure. An organization could also use Azure AD DS to handle its infrastructure if it runs both on-premises and in the cloud. The process might go like this:
 
 ![Azure AD DS](../media/4-azuread-domain-services.png)
 <!-- Please feel free to style according to Learn standards. Original image: https://docs.microsoft.com/en-gb/azure/active-directory-domain-services/media/overview/synced-tenant.png -->
@@ -49,9 +49,9 @@ Azure Active Directory Domain Services (Azure AD DS) lets you add virtual machin
 
 This feature is available for pay-as-you-go, based on the total number of objects including users, groups, and domain-joined computers, in your Azure AD DS-managed domain.
 
-### Application management
+## Application management
 
-Your company could have hundreds of applications that users, both internal and external, will need for various purposes. Users might want to access these applications from different devices and locations. You can use Azure AD as a cloud-based solution to manage user access for all of these applications.
+Your company could be using many different applications that users, both internal and external, rely on for various purposes. Users might want to access these applications from different devices and locations. You can use Azure AD as a cloud-based solution to manage user access for all of these applications.
 
 You can manage different categories of applications with Azure AD:
 
@@ -79,7 +79,8 @@ Use Conditional Access policies to require users to go through additional authen
 
 ![Azure AD reports](../media/4-conditional-access-policy.png)
 
-Conditional Access policies are available for Premium P1 and Premium P2 license tiers.
+> [!NOTE]
+> Conditional Access policies are available for Premium P1 and Premium P2 license tiers.
 
 **Monitor your application access**
 
@@ -89,7 +90,7 @@ Azure AD can help monitor your application sign-ins by generating reports that c
 
 Reports are available for all licensing tiers.
 
-### Azure Active Directory Identity Protection
+## Azure Active Directory Identity Protection
 
 Azure Active Directory Identity Protection (AADIP) helps you to automatically detect, remediate, and investigate identity-based risks for users. AADIP also lets you export all the information collected about risks to third-party tools and solutions for additional analysis.
 
@@ -103,4 +104,5 @@ You configure risk policies through the Azure portal. For example, the risk poli
 
 ![Risk policies](../media/4-risk-policy.png)
 
-AADIP is available for the Premium P2 licensing tier.
+> [!NOTE]
+> AADIP is available for the Premium P2 licensing tier.

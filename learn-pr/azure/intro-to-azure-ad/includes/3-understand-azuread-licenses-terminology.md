@@ -1,27 +1,9 @@
-Your company wants to improve its cost effectiveness. You'll look at how Azure Active Directory (Azure AD) is licensed. You've also been asked to provide a clear and concise outline of the key terminology your company will come across when using Azure AD.
+
+Your company is always looking for the most experienced healthcare professionals and external contractors to work with. Research projects can become costly if not managed properly. Your company wants to improve its cost effectiveness. You've been asked to investigate how Azure Active Directory (Azure AD) is licensed. You've also been asked to provide a clear and concise outline of the key terminology your company will come across when using Azure AD.
 
 Here, you'll explore how Azure AD is licensed, and which features fall under the different licenses. You'll see how to add or change licenses in Azure AD. And you'll learn the key terms you need to understand when using Azure AD.
 
-<!-- 
-1. **Licensing Azure AD**
-
-   1. What is Azure AD licensing?
-   1. License plans
-      1. Free
-      2. Office 364
-      3. Premium1
-      4. Premium2
-   1. Find your service plan. You can view your available service plans, including the individual licenses, check pending expiration dates, and view the number of available assignments.
-   1. Assign licenses. Make sure that anyone needing to use a licensed Azure AD service has the appropriate license.
-   1. Remove a license. You can remove a license from a user's Azure AD user page, from the group overview page for a group assignment, or starting from the Azure AD **Licenses** page, to see the users and groups for a license.
-
-   **Knowledge Check**
-   1. Which of these if a valid Azure AD licensing plan?
-       A: Office 365
-   1. Which licensing plan supports identity protection?
-       A: Premium2 -->
-
-### Azure Active Directory licenses
+## Azure Active Directory licenses
 
 You can use different features of Azure AD, depending on the type of license you choose.
 
@@ -55,7 +37,7 @@ You can select each license plan to see which users are included. Also, you can 
    1. What is meant by the term Azure subscription?
        A: A subscription is the mechanism used to pay for Azure cloud services. -->
 
-### Azure AD terminology
+## Azure AD terminology
 
 To use Azure AD effectively, there are some key Active Directory specific terms you'll need to understand when you come across them. 
 
@@ -73,4 +55,3 @@ Here's an explanation of some of those terms:
 |Custom domain|When you create an Azure AD directory, it's automatically assigned a default domain like `<your-organization>.onmicrosoft.com` from Azure. But you can also configure your own custom domain names. Your users could then have accounts like `joesmith@contoso.com` instead of `joesmith@contoso.onmicrosoft.com`.|
 |Owner role|This role lets you manage all resources in Azure, including the access levels users need for resources.  |
 |Global administrator| When you create a tenant, you're automatically assigned this role for that tenant. The role gives you all the administrative capabilities for Azure AD. For example, you can reset passwords for all users and administrators.|
-

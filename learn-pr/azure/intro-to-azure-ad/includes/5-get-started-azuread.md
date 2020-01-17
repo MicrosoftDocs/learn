@@ -1,26 +1,14 @@
-Your company wants to implement Azure Active Directory (Azure AD). You've been asked to look into how it should be introduced in your organization.
+Your has decided it wants to use Azure Active Directory (Azure AD) to manage secure access for doctors, external healthcare partners, and all internal staff members. You've been asked to look into how it should be implemented for your organization.
 
 Here, you'll learn how to take a phased approach to deploying Azure AD for your organization. You'll learn how to lay a foundation, deploy Azure AD by creating a tenant, and associate a subscription with it.
 
-<!-- 1. **Getting started with Azure AD**
-
-   A basic introduction to getting started with Azure AD:
-   1. A phased deployment guide for Azure AD
-      identifies common tasks that customers find helpful to complete in phases, over the course of 30, 60, 90 days.
-      1. Build a foundation of security.
-      1. Import users, enable synchronization, and manage devices.
-      1. Manage applications.
-      1. Audit privileged identities, complete an access review, and manage user lifecycle.
-   1. Create a new tenant in Azure Active Directory.
-   1. Associate or add an Azure subscription to your Azure AD tenant. -->
-
-### Phased deployment
+## Phased deployment
 
 A good way to deploy Azure AD is to take a phased approach. Your deployment is split into several stages. Each stage addresses a key aspect of Azure AD. Each phase includes tasks that you'll need to complete before going to the next stage. This approach lays a foundation for your Azure AD, helps secure it, and then ensures it's fit for purpose from the beginning.
 
 ### Stage 1: Build a secure foundation
 
-At this first stage, you need to build a foundation of security for your Azure AD. Configure baseline security features before you add or create user accounts. The work you do here helps ensure your Azure AD is in a secure state from the start. The tasks you must undertake in this phase include:
+At this first stage, you need to build a foundation of security for your Azure AD. The doctors, internal staff members, and external healthcare partners all need the most secure access you can provided. Configure baseline security features before you add or create user accounts. The work you do here helps ensure your Azure AD is in a secure state from the start. The tasks you must undertake in this phase include:
 
 | Task                                                         | Description                                                       | License needed   |
 | :----------------------------------------------------------- | :----------------------------------------------------------- | :------------------ |
@@ -30,7 +18,7 @@ At this first stage, you need to build a foundation of security for your Azure A
 | **Configure self-service password reset**| Reduce the number of help desk tickets for password resets, and let internal users reset their passwords through policies you've configured. |Free |
 | **Create a list of banned passwords** | Use this list to prevent users from having passwords that are phrases or words common to your organization, like your company name or headquarters location. |Free |
 | **Inform your users to not reuse credentials** | When someone reuses the same credentials across multiple platforms, they can be used by an attacker to access all those platforms if a single platform is compromised.  | Free       |
-| **Set passwords to never expire for cloud-based user accounts** | Routine password resetting tempts users to increment their existing passwords by, for example, changing their password from password1 to password2, and so on.| Free       |                    |
+| **Set passwords to never expire for cloud-based user accounts** | Routine password resetting tempts users to increment their existing passwords by, for example, changing their password from `R4ndom1Strong` to `R4ndom2Strong` password, and so on.| Free       |                    |
 | **Enforce multi-factor authentication through Conditional Access policies** | Configure Conditional Access policies to ensure that users must go through multiple authentication challenges before accessing an application. | Azure AD Premium P1 |
 | **Configure Azure Active Directory Identity Protection (AADIP)** | Flag and block suspicious sign-ins and compromised user credentials for your organization's users. You can also use it to automatically trigger multi-factor authentication or a password reset, depending on the severity of the risk detected. | Azure AD Premium P2 |
 
@@ -41,11 +29,11 @@ Now you can add users, and plan how to handle external guest user access. The ta
 | Task                                                         | Description                                                       | License needed                                             |
 | :----------------------------------------------------------- | :----------------------------------------------------------- | :----------------------------------------------------------- |
 |**Configure Azure AD Connect**| Install and set up Azure AD Connect, so you can synchronize users from your on-premises Active Directory to Azure. | Free                                                |
-|**Use Password Hash Sync**| You can sync password changes, and detect and fix bad passwords. You'll also get reports on leaked user credentials. | Free                                                |
+|**Use password hash synchronization**| You can synchronize password changes, and detect and fix bad passwords. You'll also get reports on leaked user credentials. | Free                                                |
 |**Use password writeback**| Configure password writeback so any changes to passwords in Azure are written to your on-premises Active Directory. | Azure AD Premium P1                                          |
 |**Use Azure AD Connect Health**|  You can use Azure AD Connect Health to monitor the health statistics for your Azure AD Connect environment. | Azure AD Premium P1                                          |
 |**Give users the licenses they need at group level**| You can assign licenses at a group level. This way, you control licensing for many users at once, saving your organization time, and reducing complexity.|Free|
-|**Use Azure AD B2B Collaboration for guest user access**| This way, you ensure partner users access your applications and services using their own work or social identities. You won't have to manage their credentials for them. | Licenses needed depend on which features you want the guest users to use|
+|**Use Azure AD B2B Collaboration for guest user access**| This way, you ensure external healthcare partner users access your applications and services using their own work or social identities. You won't have to manage their credentials for them. | Licenses needed depend on which features you want the guest users to use|
 |**Have a device management strategy** | Put together a plan based on which devices your company allows. For example, is bring your own device (BYOD) allowed, or will the company only accept devices it has given users? |Free|
 |**Use passwordless authentication for your users**| Make authentication more convenient. For example, if users have Microsoft Authenticator installed on their phones, they can receive a notification with a code they enter at sign-in, along with a PIN, or a biometric attribute like their fingerprint. | Azure AD Premium P1
 
@@ -71,7 +59,7 @@ Now you can address how much privilege your administrators should have, and comp
 | **Use group-based application assignment**| Use group-based access management to give all users in a group access to an application. With dynamic groups, when the user is removed from a user<!--CE: Is this correct? Or could we simply say: 'When the user is removed....'-->, they automatically lose access to the application. This action helps keep your applications secure. |Free |
 | **Configure automated user account provisioning and deactivation** | You create application-specific accounts automatically for users to use SaaS applications, based on existing Azure AD users and groups. You can also ensure that user accounts are automatically deprovisioned when a user leaves the organization, keeping your organization protected from unauthorized access. | Free|
 
-### Create a tenant
+## Create a tenant
 
 When you've laid the groundwork for your Azure AD, you can begin to configure and start using it. You'll need to create a tenant, which is considered a resource in Azure.
 
@@ -83,7 +71,7 @@ You'll use a form in the Azure portal to create your Azure AD.
 
 ![Azure AD](../media/5-create-azuread.png)
 
-### Associate a subscription
+## Associate a subscription
 
 When your tenant has been created, you'll associate it with a subscription. In the Azure portal, go to your subscription and change it to your new directory.
 
