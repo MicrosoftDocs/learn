@@ -13,7 +13,7 @@ For example, let's say your configured throughput is 500 RUs per second (RU/s), 
 ## Review metrics for your database
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) by using your Microsoft Learn account.
-1. Search on Azure Cosmos DB.
+1. Search for and select **Azure Cosmos DB**.
 
    ![Screenshot that shows search in the Azure portal](../media/4-search-cosmos-db.png)
 
@@ -47,7 +47,7 @@ The exercises in this section have you use Data Explorer in Azure Cosmos DB. You
 
 1. Expand the **mslearn** database. You see the three collections that you created in the setup unit: **Small**, **Orders**, and **HotPartition**.
 
-1. Expand the **Orders** collection and select **Documents**. You see the first 100 documents.
+1. Expand the **Orders** collection and select **Items**. You see the first 100 documents.
 
 1. Select the first document to see the JSON data for an order. It includes the following information:
 
@@ -125,7 +125,7 @@ If Azure Cloud Shell times out, you need to reset the `ENDPOINT`, `KEY`, and  `C
     ```
 
     ```bash
-    export KEY=$(az cosmosdb keys list --resource-group <rgn>Sandbox Resource Group</rgn>  \
+    export KEY=$(az cosmosdb list-keys --resource-group <rgn>Sandbox Resource Group</rgn>  \
             --name $COSMOS_NAME --output tsv --query primaryMasterKey)
     ```
 

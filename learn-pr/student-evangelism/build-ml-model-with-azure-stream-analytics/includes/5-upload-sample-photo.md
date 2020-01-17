@@ -49,7 +49,7 @@ We'll use a sample image for this test. The images that the simulated cameras wi
     code upload-photo-test.js
     ```
 
-1. Replace `ACCOUNT_KEY` assigned to the `storageAccountKey` variable on line 3 of **upload-photo-test.js** with the access key. You can also replace the `storageAccountName` and `iotHubName` values - but if you've stored them in the environment variables they will be pulled from there. The line should look something like:
+1. Replace `ACCOUNT_KEY` assigned to the `storageAccountKey` variable on line 7 of **upload-photo-test.js** with the access key. You can also replace the `storageAccountName` and `iotHubName` values - but if you've stored them in the environment variables they will be pulled from there. The line should look something like:
 
     ```javascript
     var storageAccountKey = 'doPZd+uLueiDMY0JWtg...qWtWfmJLVkTe/huqlTliq8ruy8L1lzmDV9l6HkRw==';
@@ -76,13 +76,15 @@ We'll use the Azure portal to verify that the container has the uploaded image.
 
 1. Sign into the [Azure portal](https://portal.azure.com?azure-portal=true) using the same account you used to activate the Sandbox.
 
-1. Select **Resource groups** from the left-hand sidebar and locate <rgn>[Sandbox resource group]</rgn> in the list.
+1. Expand the left-hand navigation menu by clicking the top-left menu icon and select **Resource groups** from the navigation menu.
+
+1. Locate <rgn>[Sandbox resource group]</rgn> in the list.
 
 1. In the resource group, select the storage account you created to hold the photos.
 
     ![Opening the storage account](../media/5-open-storage-account.png)
 
-1. In the view for the storage account, click **Blobs** to view a list of blob containers.
+1. In the view for the storage account, click **Containers** to view a list of blob containers.
 
     ![Viewing blob containers](../media/5-open-blob-storage.png)
 

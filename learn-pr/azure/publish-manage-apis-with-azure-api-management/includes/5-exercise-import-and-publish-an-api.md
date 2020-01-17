@@ -1,4 +1,4 @@
-To make share an API, you import the API into API Management, and then make it available by publishing it.
+To share an API, you import the API into API Management, and then make it available by publishing it.
 
 In the shoe company example, you're now ready to import and publish an API so that partners can access inventory and product information. 
 
@@ -9,7 +9,7 @@ Here, you'll import an API that exposes an OpenAPI endpoint. You'll test the imp
 The first part of the exercise is to import Northwind Shoes into an API Management gateway.
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
-1. In the left menu, click **All Resources**, and then select your API gateway.
+1. On the Azure portal menu or from the **Home** page, select **All Resources**, and then select your API gateway.
 1. Under **API management**, click **APIs**.
 1. On the **Add a new API** page, click **OpenAPI**.
 

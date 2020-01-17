@@ -2,8 +2,6 @@ The .NET Client library provides support for Azure storage. You can use this lib
 
 In this exercise, you'll see how to write an application that can migrate blobs from hot to cool storage.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 ## Setup
 
 We'll start by downloading and building an existing .NET Core application. You may have cloned the sample git repository in a previous exercise.

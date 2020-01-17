@@ -7,7 +7,7 @@ You're all done with the tasks for this module. Here, you'll move the work item 
 
 Here, you'll move the work item you assigned to yourself earlier in this module, **Check open source code for vulnerabilities and licensing terms**, to the **Done** column.
 
-In practice, the definition of "Done" often means working software in the hands of your users. For learning purposes, here you'll mark this work as complete because you're able to scan open-source components for license ratings and potential vulnerabilities in your build pipeline.
+In practice, the definition of "Done" often means putting working software into the hands of your users. For learning purposes, here you'll mark this work as complete because you're able to scan open-source components for license ratings and potential vulnerabilities in your build pipeline.
 
 At the end of each Sprint, or work iteration, you and your team might hold a retrospective meeting, where you share the work you completed, what went well in the Sprint, and what could be improved.
 
@@ -19,9 +19,6 @@ To complete the work item:
     ![Azure Boards showing the card in the Done column](../media/5-azure-boards-wi5-done.png)
 
 ## Disable the pipeline or delete your project
-
-> [!IMPORTANT]
-> You can skip this part if you plan to continue to the next module using the same Azure DevOps project.
 
 Each module in this learning path provides a template you can run to create a clean environment for the duration of the module.
 
@@ -36,7 +33,7 @@ This option disables the pipeline so that it doesn't process further build reque
 To disable the pipeline:
 
 1. From Azure Pipelines, go to your pipeline.
-1. Select the **Edit** button.
+1. Select **Edit**.
 
     ![Azure Pipelines showing the location of the Edit button](../../shared/media/azure-pipelines-edit-button.png)
 1. On the menu in the upper corner, select **Settings**.

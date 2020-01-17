@@ -44,7 +44,7 @@ The Resource Manager template you used in the previous part already covers the f
 
 ```azurecli
 az vm extension set \
-  --resource-group <rgn>[sandbox resource group name]</rgn> \
+  --resource-group $RESOURCEGROUP \
   --vm-name SimpleWinVM \
   --name CustomScriptExtension \
   --publisher Microsoft.Compute \

@@ -3,19 +3,24 @@ In this unit, you'll configure a database connection to an existing, empty *Cont
 > [!IMPORTANT]
 > Secret Manager isn't intended for production deployments. Consider using [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/key-vault-overview).
 
-1. In the *:::no-loc text="ContosoPets.Api/ContosoPets.Api.csproj":::* file, replace the `<!-- Replace this comment with the UserSecretsId element -->` comment with the following XML. Save your changes.
+1. Run the following command to initialize Secret Manager for use in the *:::no-loc text="ContosoPets.Api":::* project:
 
-    ```xml
-    <UserSecretsId>$(AssemblyName)</UserSecretsId>
+    ```dotnetcli
+    dotnet user-secrets init --id '$(AssemblyName)'    
     ```
 
-    Secret Manager uses the `UserSecretsId` element's inner text to associate secrets with the project. The inner text must be a string that uniquely identifies the app on the development machine or server. In the preceding example, the MSBuild `AssemblyName` project property resolves to the assembly name *:::no-loc text="ContosoPets.Api":::*.
+    The preceding command:
+
+    * Adds a `<UserSecretsId>` element to a `<PropertyGroup>` within the project file.
+    * Sets the `<UserSecretsId>` element's inner text to the MSBuild `AssemblyName` project property.
+
+    Secret Manager uses the `<UserSecretsId>` element's inner text to associate secrets with the project. The inner text must be a string that uniquely identifies the app on the development machine or server. In the preceding example, the MSBuild `AssemblyName` project property resolves to the assembly name *:::no-loc text="ContosoPets.Api":::*.
 
     [!INCLUDE[OS-specific keyboard shortcuts](../../includes/keyboard-shortcuts-table.md)]
 
 1. Run the following command to store the Azure SQL database credentials using Secret Manager:
 
-    ```bash
+    ```dotnetcli
     dotnet user-secrets set "ContosoPetsCredentials:UserId" $sqlUsername && \
         dotnet user-secrets set "ContosoPetsCredentials:Password" $sqlPassword
     ```

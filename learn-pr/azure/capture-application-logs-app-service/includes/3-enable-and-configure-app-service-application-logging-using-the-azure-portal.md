@@ -10,8 +10,6 @@ You're going to deploy a sample ASP.NET Core Web app from GitHub; this app inclu
 
 In this step, you're going to use Azure CLI commands to create an ASP.NET Web app using code from a GitHub repository. You will also create a new storage account, in the same region as the Web app, for log storage.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 1. Run the following commands in the Cloud Shell to set some variables, replacing  _\<your-local-Azure-region\>_, with the closest region to you from the following list.
    [!include[](../../../includes/azure-sandbox-regions-first-mention-note.md)]
 
@@ -47,21 +45,21 @@ In this step, you're going to use the Azure portal to enable application logging
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 1. On the Portal toolbar, click the **Global subscription filter (Directory + subscription)** button, and in the directories list, select **Microsoft Learn Sandbox** (this is the directory associated with the _Concierge Subscription_).
-1. Click **Resource groups** in the sidebar menu on the left, and check that your sandbox resource group (_<rgn>[sandbox resource group name]</rgn>_) is listed.
-1. Click **App Services** in the sidebar menu on the left.
+1. On the Azure portal menu or from the **Home** page, select **Resource groups**, and check that your sandbox resource group (_<rgn>[sandbox resource group name]</rgn>_) is listed.
+1. On the Azure portal menu, select **App Services**.
 1. In the **App Services** list, click **contosofashions\<_your-number_\>**, and then in the **Overview** section, click on the URL string (https&#58;//contosofashions\<_your-number\ >.azurewebsites.net) to open the home page for the **Contoso Fashions** website in a new browser tab.
 
 You'll now set up the application logging.
 
 1. Switch to the tab showing the Azure portal.
-1. In the **App Service** blade, scroll down to the **Monitoring** section, and then click **Diagnostics logs**.
+1. In the **App Service** pane, scroll down to the **Monitoring** section, and then click **Diagnostics logs**.
 1. Under **Application logging (Filesystem)**, click **On**, and in the **Level** box, click **Error**.
 1. Under **Application logging (Blob)**, click **On**, and in the **Level** box, click **Verbose**.
-1. Click **Storage Settings**, and on the **Storage Accounts** blade, click **sacontosofashions\<_your-number_\>**, where \<_your-number_\> is the number suffix you noted when you created your app.
-1. On the **Containers** blade, click **+ Container**, and in the **Name** box, type **asp logs**, and then click **OK**.
+1. Click **Storage Settings**, and on the **Storage Accounts** pane, click **sacontosofashions\<_your-number_\>**, where \<_your-number_\> is the number suffix you noted when you created your app.
+1. On the **Containers** pane, click **+ Container**, and in the **Name** box, type **asp logs**, and then click **OK**.
 1. Click **asplogs**, and then click **Select**.
 1. In the **Retention Period (Days)** box, type **5**.
-1. Click **Save** to close the **Diagnostics logs** blade, and update the log settings.
+1. Click **Save** to close the **Diagnostics logs** pane, and update the log settings.
 
 
 ::: zone-end
@@ -76,8 +74,6 @@ You're going to deploy a sample Node.js app from GitHub; this app includes code 
 
 In this step, you're going to use Azure CLI commands to create a Node.js Web app using code from a GitHub repository. 
 <!-- TODO App code is currently in a personal repo, so needs to be moved to a Learn repo. -->
-
-[!include[](../../../includes/azure-sandbox-activate.md)]
 
 1. Run the following commands in the Cloud Shell to set some variables, replacing  _\<your-local-Azure-region\>_, with the closest region to you from the following list.
    [!include[](../../../includes/azure-sandbox-regions-first-mention-note.md)]
@@ -108,16 +104,16 @@ In this step, you're going to use the Azure portal to enable application logging
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 1. On the Portal toolbar, click the **Global subscription filter (Directory + subscription)** button, and in the directories list, select **Microsoft Learn Sandbox** (this is the directory associated with the _Concierge Subscription_).
-1. Click **Resource groups** in the sidebar menu on the left, and check that your sandbox resource group (_<rgn>[sandbox resource group name]</rgn>_) is listed.
-1. Click **App Services** in the sidebar menu on the left.
+1. On the Azure portal menu or from the **Home** page, select **Resource groups**, and check that your sandbox resource group (_<rgn>[sandbox resource group name]</rgn>_) is listed.
+1. On the Azure portal menu, select **App Services**.
 1. In the **App Services** list, click **contosofashions\<_your-number_\>**, and then in the **Overview** section, click on the URL string (https&#58;//contosofashions\<_your-number\ >.azurewebsites.net) to open the home page for the **Contoso Fashions** website in a new browser tab.
 
 You'll now set up the application logging.
 
 1. Switch to the tab showing the Azure portal.
-1. In the **App Service** blade, scroll down to the **Monitoring** section, and then click **Diagnostics logs**.
+1. In the **App Service** pane, scroll down to the **Monitoring** section, and then click **Diagnostics logs**.
 1. Under **Application logging**, click **File System**, and in the **Retention Period (Days)** box, type **5**.
-1. Click **Save** to close the **Diagnostics logs** blade, and update the log settings.
+1. Click **Save** to close the **Diagnostics logs** pane, and update the log settings.
 
 ::: zone-end
 

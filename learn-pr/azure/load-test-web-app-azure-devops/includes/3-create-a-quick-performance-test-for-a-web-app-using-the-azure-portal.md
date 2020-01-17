@@ -2,9 +2,9 @@ During app development, running quick load tests can help you identify code issu
 
 [!include[](../../../includes/azure-free-trial-note.md)]
 
-## Create an Azure DevOps account
+## Create an Azure DevOps organization
 
-You need an Azure DevOps account for the exercises in this module. Skip this step if you already have an Azure DevOps account associated with your Azure account.
+You need an Azure DevOps organization for the exercises in this module. Skip this step if you already have an Azure DevOps organization associated with your Azure account.
 
 - Go to https://dev.azure.com, and sign up for a DevOps account (if you don't already have one). Use your Azure account to sign in. Don't create a new organization.
 
@@ -50,7 +50,7 @@ In this step, you'll use Azure CLI commands to create a php-based web app by usi
 
 In this step, you'll finalize the deployment of your web app by editing a configuration file. You'll then verify that the app works.
 
-1. In the Azure portal, select **App Services** in the left navigation pane.
+1. On the Azure portal menu, select **App Services**.
 1. In the **App Services** list, select **contosorentals\<number\>**. In the **Overview** section, select **Click to copy** to the right of the URL string.
 1. In the **Development Tools** section, select **App Service Editor (Preview)**, and then, in the **App Service Editor (Preview)** pane, select **Go**. 
 1. In the Azure App Service Editor, in the file list, expand **includes**, select **config.php**, and then, in line 10, paste the copied URL string to replace `app-url-here`. (Don't remove the quotation marks.)

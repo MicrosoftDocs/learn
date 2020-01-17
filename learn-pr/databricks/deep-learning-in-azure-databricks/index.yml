@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.deep-learning-in-azure-databricks
+hidden: true
 metadata:
   title: Deep learning with Azure Databricks
-  description: Investigate techniques for developing machine-learning models based on neural networks.
+  description: Investigate techniques for developing machine-learning models based on neural networks to build your understanding of deep learning. 
   ms.date: 02/20/2019
-  author: barlan
-  ms.author: barlan
+  author: jasallen
+  ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #ms.learn-contact: barlan
 title: Deep learning with Azure Databricks
 summary: In this module, you'll investigate techniques for developing machine-learning models based on neural networks. The main purpose of this module is to build your understanding of deep learning.
 cardDescription: Investigate techniques for developing machine-learning models based on neural networks.
@@ -18,14 +18,13 @@ abstract: |
   - Train and evaluate a classifier built with TensorFlow. 
   - Create an image classifier by using deep learning. 
 prerequisites:  | 
-  [!include[](../../includes/azure-subscription-prerequisite.md)]
+  [!include[](../../includes/azure-databricks-subscription-prerequisite.md)]
 iconUrl: /learn/achievements/deep-learning-in-azure-databricks.svg
 levels:
   - intermediate
 roles:
   - developer
   - data-scientist
-  - data-engineer
 products:
 - azure
 - azure-databricks

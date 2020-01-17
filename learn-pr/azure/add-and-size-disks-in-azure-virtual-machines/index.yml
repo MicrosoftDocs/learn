@@ -2,13 +2,12 @@
 uid: learn.add-and-size-disks-in-azure-virtual-machines
 metadata:
   title: Add and size disks in Azure virtual machines
-  description: Selecting the right storage for your VMs is important. You have to choose between standard and premium storage, managed and unmanaged disks, disk size and other parameters. In this module, you'll explore your options and practice working with disks (VHD files).
+  description: Learn about your virtual machine storage options and how to choose between standard and premium, managed and unmanaged disks for your Azure virtual machine.
   ms.date: 09/24/2018
-  author: AndrewJByrne
-  ms.author: anbyrne
+  author: cwatson-cat
+  ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #ms.learn-contact: anbyrne
 title: Add and size disks in Azure virtual machines
 summary: Understand and create the different types of disk storage available to Azure virtual machines (VMs).
 abstract: |

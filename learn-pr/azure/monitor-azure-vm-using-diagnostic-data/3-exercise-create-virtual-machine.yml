@@ -1,0 +1,23 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.monitor-azure-vm-using-diagnostic-data.exercise-create-virtual-machine
+title: Exercise - Set up a VM with boot diagnostics
+metadata:
+  title: Exercise - Set up a VM with boot diagnostics
+  description: Deploy a Linux virtual machine and enable boot diagnostics. After the VM is created, you'll quickly set up a graph to view the CPU usage and inbound traffic. You'll also check that boot diagnostics are working correctly.
+  ms.date: 10/18/2019
+  author: cwatson-cat
+  ms.author: cwatson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 7
+interactive: bash
+azureSandbox: true
+content: |
+  [!include[](includes/3-exercise-create-virtual-machine.md)]
+tasks:
+- action: exists
+  environment: azure
+  hint: "Run the `az vm create` command as shown to create your virtual machine."
+  azure:
+    resource:
+      type: "Microsoft.Compute/virtualMachines"

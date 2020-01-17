@@ -2,13 +2,12 @@
 uid: learn.data-ai.introduction-to-data-streaming
 metadata:
   title: Work with data streams by using Azure Stream Analytics
-  description: Explore how Azure Stream Analytics integrates with your applications or Internet of Things (IoT) devices to gain insights with real-time streaming data. Learn how to consume and analyze data streams and derive actionable results
+  description: Explore how Azure Stream Analytics integrates with your applications or Internet of Things devices to gain insights with real-time streaming data. 
   ms.date: 01/31/2019
   author: ctesta-oneillmsft
   ms.author: chris.testaoneill
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #ms.learn-contact: smmark
 title: Work with data streams by using Azure Stream Analytics
 summary: Explore how Azure Stream Analytics integrates with your applications or Internet of Things (IoT) devices to gain insights with real-time streaming data. Learn how to consume and analyze data streams and derive actionable results.
 abstract: | 

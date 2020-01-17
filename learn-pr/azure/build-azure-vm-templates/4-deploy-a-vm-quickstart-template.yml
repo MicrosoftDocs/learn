@@ -1,18 +1,18 @@
 ### YamlMime:ModuleUnit
 uid: learn.build-azure-vm-templates.4-deploy-a-vm-quickstart-template
-title: Deploy a VM using an Azure Quickstart template
+title: Exercise - Deploy a VM using an Azure Quickstart template
 metadata:
-  title: Deploy a VM using an Azure Quickstart template
+  title: Exercise - Deploy a VM using an Azure Quickstart template
   description: Deploy an Azure Quickstart template that brings up a basic virtual machine configuration
   ms.date: 09/24/2018
-  author: tpetchel
-  ms.author: thpetche
+  author: cwatson-cat
+  ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
   zone_pivot_groups: platform-cloud
-interactive: bash
-azureSandbox: true
+#interactive: bash
+#azureSandbox: true
 durationInMinutes: 10
 content: |
   [!include[](includes/4-deploy-a-vm-quickstart-template.md)]

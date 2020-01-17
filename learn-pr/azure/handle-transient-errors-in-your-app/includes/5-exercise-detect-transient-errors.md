@@ -1,5 +1,3 @@
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 You'll now add code to detect transient errors in your team's chat app. You can choose to change the C#, Java, or Node.js app. To get started, let's set up the chat app.
 
 ## Set up the database
@@ -51,6 +49,8 @@ The first thing to do is configure the app's back end. It uses an Azure Cosmos D
     This command `az cosmosdb list-connection-strings` returns a json object with connection information, piping `|` the JSON into two `sed` commands to strip out just the MongoDB connection string. 
 1. Save the connection string as it's needed for the rest of the module. 
 
+::: zone pivot="csharp"
+
 ## Clone the Chat App repository
 
 Use the following steps to clone the Chat App GitHub repository with `git`. You can execute this right in the Cloud Shell.
@@ -63,8 +63,6 @@ Use the following steps to clone the Chat App GitHub repository with `git`. You 
     ```
     The repository is cloned to your home folder.
 
-    
-::: zone pivot="csharp"
 1. Move into the C# app folder.
 
     ```bash
@@ -163,6 +161,19 @@ Let's see what happens when we break the connection to the backend database.
 
 ::: zone-end
 ::: zone pivot="java"
+
+## Clone the Chat App repository
+
+Use the following steps to clone the Chat App GitHub repository with `git`. You can execute this right in the Cloud Shell.
+
+1. The source files for the applications that you'll build in this unit are located in a GitHub repository. Use the following commands to make sure that you are in your home directory in Cloud Shell, and then to clone this repository:
+
+    ```bash
+    cd ~
+    git clone https://github.com/MicrosoftDocs/mslearn-handle-transient-errors-in-your-app.git
+    ```
+    The repository is cloned to your home folder.
+
 1. Move into the Java app folder.
 
     ```bash
@@ -249,6 +260,19 @@ Let's see what happens when we break the connection to the backend database.
 
 ::: zone-end
 ::: zone pivot="node"
+
+## Clone the Chat App repository
+
+Use the following steps to clone the Chat App GitHub repository with `git`. You can execute this right in the Cloud Shell.
+
+1. The source files for the applications that you'll build in this unit are located in a GitHub repository. Use the following commands to make sure that you are in your home directory in Cloud Shell, and then to clone this repository:
+
+    ```bash
+    cd ~
+    git clone https://github.com/MicrosoftDocs/mslearn-handle-transient-errors-in-your-app.git
+    ```
+    The repository is cloned to your home folder.
+
 1. Run the following command in the Cloud Shell to move into the node `chatapp` folder.
     ```bash
     cd ~/mslearn-handle-transient-errors-in-your-app/node/chatapp/
@@ -289,7 +313,9 @@ Let's see what happens when we break the connection to the backend database.
     ![The chat node app interface at startup, showing fields to enter name and message and buttons to send and delete a message.](../media/5-node-app-interface.png)
 
     
-1. Test the app by adding messages to the chat board through the interface. 
+1. Test the app by adding messages to the chat board through the interface.
+
+1. Stop the server by pressing Ctrl+S in the Cloud Shell window.
 
 ## Add code to detect errors
 
@@ -359,11 +385,13 @@ Let's see what happens when we break the connection to the backend database.
 
 ::: zone-end
 
+::: zone pivot="csharp"
+
 ## Create an error
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-1. Select **Azure Cosmos DB** in the left navigation panel.
+1. On the Azure portal menu or from the **Home** page, select **Azure Cosmos DB**.
 
 1. You should see a database account with a name beginning with **learn-cosmos-db-**. Select that database account.
 
@@ -379,21 +407,14 @@ Let's see what happens when we break the connection to the backend database.
 
     > [!NOTE]
     > It can take a while for these firewall updates to complete, so wait for them to finish before proceeding to the next step.
-::: zone pivot="csharp"
+
 1. When the firewall configuration update has finished successfully, return to the chat app and select **R** to refresh all the messages. This calls our `getAllChats()` method. After a few seconds, the call to find all messages times out and you should see that the code handled a System.TimeoutException and printed that to the console. The app is still running. If you now try to add a new message, you get another System.TimeoutException. However, this time the app crashes. Why? If you look closely at the code in Program.cs,** you can see that we only handle the exception gracefully in the `getAllChats()` method. `Main()` doesn't handle the exception so the app crashes instead. 
-::: zone-end
-::: zone pivot="java"
-1. When the firewall configuration update has finished successfully, return to the browser and try sending more messages. Observe the messages displayed in the Cloud Shell. The app is still running, but we are catching transient errors caused by the lost connection to the database.
-::: zone-end
-::: zone pivot="node"
-1. When the firewall configuration update has finished successfully, return to the browser and try sending more messages. Observe the messages displayed in the Cloud Shell. The app is still running, but we are catching transient errors caused by the lost connection to the database.
-::: zone-end
 
 To disable the firewall and let the app read and write to the Azure Cosmos DB database again, perform the following steps.
 
 1. Visit the [Azure portal for sandbox](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-1. Select **Azure Cosmos DB** in the left navigation panel.
+1. On the Azure portal menu or from the **Home** page, select **Azure Cosmos DB**.
 
 1. You should see a database account with a name beginning with **learn-cosmos-db-**. Select that database account.
 
@@ -403,3 +424,89 @@ To disable the firewall and let the app read and write to the Azure Cosmos DB da
 1. Wait for the firewall configuration updates to finish, which can take a few minutes
 
 This exercise shows how to detect an error in your app. So far, we just notify that an error has occurred. In the following units, we'll see how to retry our calls so that our app can recover from these kinds of errors. 
+
+::: zone-end
+
+::: zone pivot="java"
+
+## Create an error
+
+1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
+
+1. On the Azure portal menu or from the **Home** page, select **Azure Cosmos DB**.
+
+1. You should see a database account with a name beginning with **learn-cosmos-db-**. Select that database account.
+
+1. In the Azure Cosmos DB panel, select **Firewall and virtual networks**.
+
+1. Select **Selected networks**.
+
+1. Uncheck **Allow access from Azure portal**.
+
+1. Select **I understand that the current settings will block all VNets and IPs including Azure portal**.
+
+1. Select **Save** to save the firewall configuration updates. These changes have enabled a firewall for the Azure Cosmos DB account, which will block access from the Cloud Shell, simulating a connection outage.
+
+    > [!NOTE]
+    > It can take a while for these firewall updates to complete, so wait for them to finish before proceeding to the next step.
+
+1. When the firewall configuration update has finished successfully, return to the browser and try sending more messages. Observe the messages displayed in the Cloud Shell. The app is still running, but we are catching transient errors caused by the lost connection to the database.
+
+To disable the firewall and let the app read and write to the Azure Cosmos DB database again, perform the following steps.
+
+1. Visit the [Azure portal for sandbox](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
+
+1. On the Azure portal menu or from the **Home** page, select **Azure Cosmos DB**.
+
+1. You should see a database account with a name beginning with **learn-cosmos-db-**. Select that database account.
+
+1. In the Azure Cosmos DB panel, select **Firewall and virtual networks**.
+
+1. Select **All networks** and then select **Save** at the bottom of the screen. 
+1. Wait for the firewall configuration updates to finish, which can take a few minutes
+
+This exercise shows how to detect an error in your app. So far, we just notify that an error has occurred. In the following units, we'll see how to retry our calls so that our app can recover from these kinds of errors. 
+
+::: zone-end
+
+::: zone pivot="node"
+
+## Create an error
+
+1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
+
+1. On the Azure portal menu or from the **Home** page, select **Azure Cosmos DB**.
+
+1. You should see a database account with a name beginning with **learn-cosmos-db-**. Select that database account.
+
+1. In the Azure Cosmos DB panel, select **Firewall and virtual networks**.
+
+1. Select **Selected networks**.
+
+1. Uncheck **Allow access from Azure portal**.
+
+1. Select **I understand that the current settings will block all VNets and IPs including Azure portal**.
+
+1. Select **Save** to save the firewall configuration updates. These changes have enabled a firewall for the Azure Cosmos DB account, which will block access from the Cloud Shell, simulating a connection outage.
+
+    > [!NOTE]
+    > It can take a while for these firewall updates to complete, so wait for them to finish before proceeding to the next step.
+
+1. When the firewall configuration update has finished successfully, return to the browser and try sending more messages. Observe the messages displayed in the Cloud Shell. The app is still running, but we are catching transient errors caused by the lost connection to the database.
+
+To disable the firewall and let the app read and write to the Azure Cosmos DB database again, perform the following steps.
+
+1. Visit the [Azure portal for sandbox](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
+
+1. On the Azure portal menu or from the **Home** page, select **Azure Cosmos DB**.
+
+1. You should see a database account with a name beginning with **learn-cosmos-db-**. Select that database account.
+
+1. In the Azure Cosmos DB panel, select **Firewall and virtual networks**.
+
+1. Select **All networks** and then select **Save** at the bottom of the screen. 
+1. Wait for the firewall configuration updates to finish, which can take a few minutes
+
+This exercise shows how to detect an error in your app. So far, we just notify that an error has occurred. In the following units, we'll see how to retry our calls so that our app can recover from these kinds of errors. 
+
+::: zone-end

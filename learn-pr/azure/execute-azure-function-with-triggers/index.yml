@@ -2,13 +2,12 @@
 uid: learn.execute-azure-function-with-triggers
 metadata:
   title: Execute an Azure Function with triggers
-  description: A trigger is responsible for executing an Azure Function and there are dozens of triggers to choose from. This module will you show you some of the most common types of triggers and how to configure them to execute your logic.
+  description: This module demos some of the most common types of triggers for executing Azure Functions and how to configure them to execute your logic.
   ms.date: 09/24/2018
-  author: JesseDietrichson
-  ms.author: jediet
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #ms.learn-contact: jediet
 title: Execute an Azure Function with triggers
 summary: A trigger is responsible for executing an Azure function and there are dozens of triggers to choose from. This module will you show you some of the most common types of triggers and how to configure them to execute your logic.
 abstract:  | 
@@ -28,7 +27,6 @@ products:
 - azure-functions
 - azure-portal
 units:
-#TODO: None of these units have a knowledge task or task validation component (need to add somewhere so users don't get marked complete solely by viewing the pages).
 - learn.execute-azure-function-with-triggers.1-introduction
 - learn.execute-azure-function-with-triggers.2-determine-best-trigger
 - learn.execute-azure-function-with-triggers.3-timer-trigger

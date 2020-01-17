@@ -8,15 +8,15 @@ You'll configure two separate applications; one acts as the message sender (**Si
 
 The Java receiver application, that you'll configure in this unit, stores messages in Azure Blob Storage. Blob Storage requires a storage account.
 
-1. Create a storage account (general-purpose V2) using the `storage account create` command. Remember we set a default resource group and location, so even though those parameters are normally _required_, we can leave them off.
+1. In the Cloud Shell, create a storage account (general-purpose V2) using the `storage account create` command. Remember we set a default resource group and location, so even though those parameters are normally _required_, we can leave them off.
 
     |Parameter      |Description|
     |---------------|-----------|
     |--name (required)  | A name for your storage account. |
-    |--resource-group (required)  |The resource group owner. We'll use the pre-created sandbox resource group.|
-    |--location (optional)    |An optional location if you want the storage account in a specific place vs. the resource group location.|
+    |--resource-group (required)  | The resource group owner. We'll use the pre-created sandbox resource group. |
+    |--location (optional) | An optional location if you want the storage account in a specific place vs. the resource group location. |
 
-    Set the storage account name into a variable. It must be composed of all lower-case letters, numbers, with hyphen separators allowed. It also must be unique within Azure.
+    Set the storage account name into a variable. It must be between 3 and 24 characters in length and use numbers and lower-case letters only. It also must be unique within Azure.
 
     ```azurecli
     STORAGE_NAME=[name]
@@ -37,7 +37,7 @@ The Java receiver application, that you'll configure in this unit, stores messag
     az storage account keys list --account-name $STORAGE_NAME
     ```
 
-     Access keys associated with your storage account are listed. Copy and save the value of **key** for future use. You'll need this key to access your storage account.
+    Access keys associated with your storage account are listed. Copy and save the value of **key** for future use. You'll need this key to access your storage account.
 
 1. View the connections string for your storage account using the following command:
 
@@ -67,6 +67,7 @@ Use the following steps to clone the Event Hubs GitHub repository with `git`. Yo
     cd ~
     git clone https://github.com/Azure/azure-event-hubs.git
     ```
+
     The repository is cloned to your home folder.
 
 ## Edit SimpleSend.java

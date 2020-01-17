@@ -5,9 +5,8 @@ metadata:
   title: Encryption options for protecting Windows and Linux VMs
   description: Encryption options for protecting Windows and Linux VMs
   ms.date: 09/24/2018
-  #TODO: Update with real author name.
-  author: markjulmar
-  ms.author: smmark
+  author: cwatson-cat
+  ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX

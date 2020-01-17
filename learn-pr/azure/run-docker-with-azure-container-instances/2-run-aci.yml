@@ -1,7 +1,7 @@
 ### YamlMime:ModuleUnit
 uid: learn.run-docker-containers-aci.2-run-aci
 metadata:
-  title: Run Azure Container Instances
+  title: Exercise - Run Azure Container Instances
   description: Run Azure Container Instances.
   ms.date: 09/24/2018
   author: cryophobia
@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-title: Run Azure Container Instances
+title: Exercise - Run Azure Container Instances
 durationInMinutes: 5
 content: |
   [!include[](includes/2-run-aci.md)]

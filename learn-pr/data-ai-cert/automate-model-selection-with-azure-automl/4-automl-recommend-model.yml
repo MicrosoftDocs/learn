@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.data-ai.automate-model-selection-with-azure-automl.automl-recommend-model
-title: Use Azure AutoML to recommend a model
+title: Exercise - Use Azure AutoML to recommend a model
 metadata:
-  title: Use Azure AutoML to recommend a model
+  title: Exercise - Use Azure AutoML to recommend a model
   description: Use Azure AutoML to recommend a model
   ms.date: 01/31/2019
-  author: bcafferky
-  ms.author: brcaffer
+  author: GraemeMalcolm
+  ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX

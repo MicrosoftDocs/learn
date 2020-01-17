@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.azure.network-fundamentals-2
+metadata:
+  title: Networking fundamentals - Security
+  description: Explore the fundamentals of computer networking security and monitoring.
+  ms.date: 01/09/2020
+  author: cwatson-cat
+  ms.author: cwatson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Networking Fundamentals - Security
+summary: Explore the fundamentals of computer networking security and monitoring.
+abstract: | 
+  In this module, you will:
+  - Describe the client-server network model
+  - Describe the difference between authentication and authorization
+  - List the different network firewall types
+  - List the types of items to monitor in a network
+  - Map core network components to Azure networking
+prerequisites: | 
+  - Network Fundamentals - Principals
+iconUrl: /learn/achievements/network-fundamentals-2.svg
+levels:
+- beginner
+roles:
+- administrator
+- solution-architect
+- developer
+products:
+- azure
+units:
+- learn.azure.network-fundamentals-2.introduction
+- learn.azure.network-fundamentals-2.basic-client-server
+- learn.azure.network-fundamentals-2.authentication-authorization
+- learn.azure.network-fundamentals-2.firewalls-network-security
+- learn.azure.network-fundamentals-2.network-monitoring
+- learn.azure.network-fundamentals-2.summary
+badge:
+  uid: learn.azure.network-fundamentals-2.badge

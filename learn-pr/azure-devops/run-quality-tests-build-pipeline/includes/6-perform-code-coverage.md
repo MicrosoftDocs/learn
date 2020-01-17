@@ -4,41 +4,41 @@ When you target .NET Core applications to run on Linux, [coverlet](https://githu
 
 Amita feels much better. She's seeing actual progress in catching bugs and in easily viewing test results. What's more, it hasn't taken long for Andy and Mara to implement the improvements. Amita, Andy, and Mara talk a bit more about unit testing.
 
-**Andy**: I like the idea of unit testing, but I've never found a good way to know when we're done, when we have complete coverage. Are there any good tools we can use with Azure Pipelines?
+**Andy:** I like the idea of unit testing, but I've never found a good way to know when we're done, when we have complete coverage. Are there any good tools we can use with Azure Pipelines?
 
-**Mara**: We can add in _code coverage_. That will tell us the percentage of our code that has unit tests. We can use a tool called "coverlet" to collect coverage information when the tests run.
+**Mara:** We can add in _code coverage_. That will tell us the percentage of our code that has unit tests. We can use a tool called "coverlet" to collect coverage information when the tests run.
 
-**Andy**: That's cool. Sounds like we can establish a baseline and improve over time.
+**Andy:** That's cool. Sounds like we can establish a baseline and improve over time.
 
-**Mara**: That's right. Eventually we can even configure the build to fail if we don't meet a given threshold. That would help keep us honest. But for now, we can just see how much is covered.
+**Mara:** That's right. Eventually we can even configure the build to fail if we don't meet a given threshold. That would help keep us honest. But for now, we can just see how much is covered.
 
-**Andy**: Great. Getting reports on how much code is covered by unit tests will help us to identify code paths that aren't covered. We can increase the coverage gradually, and that will help save us from feeling overwhelmed by how much there is to do.
+**Andy:** Great. Getting reports on how much code is covered by unit tests will help us to identify code paths that aren't covered. We can increase the coverage gradually, and that will help save us from feeling overwhelmed by how much there is to do.
 
-**Amita**: I'm really excited about the unit tests. I mostly do manual testing. I focus on the customer's perspective. I don't just look for bugs. I make sure the software does what it's specified to do, that the UI works, and that the user has a good experience.
+**Amita:** I'm really excited about the unit tests. I mostly do manual testing. I focus on the customer's perspective. I don't just look for bugs. I make sure the software does what it's specified to do, that the UI works, and that the user has a good experience.
 
-**Mara**: That perspective is so important and definitely needs a human being. Right now, Andy and I are working on automated tests, software that tests the software. We're concentrating on tests that execute as the software moves through the build pipeline.
+**Mara:** That perspective is so important and definitely needs a human being. Right now, Andy and I are working on automated tests, software that tests the software. We're concentrating on tests that execute as the software moves through the build pipeline.
 
 That means the two types of tests we've already talked about. The unit tests test individual components and are really fast. Code coverage tells us how much of our code has associated unit tests.
 
-**Andy**: We should also think about doing lint testing from the command line, before the build. Lint testing can help us catch bugs, programming errors, and coding style problems really early.
+**Andy:** We should also think about doing lint testing from the command line, before the build. Lint testing can help us catch bugs, programming errors, and coding style problems really early.
 
-**Amita**: What about regression tests?
+**Amita:** What about regression tests?
 
-**Mara**: I think of regression tests and unit tests as almost the same thing. After we fix a bug, we should run the unit tests again. This ensures that our changes haven't broken any units that were already tested.
+**Mara:** I think of regression tests and unit tests as almost the same thing. After we fix a bug, we should run the unit tests again. This ensures that our changes haven't broken any units that were already tested.
 
-**Amita**: OK, so does that leave integration testing?
+**Amita:** OK, so does that leave integration testing?
 
-**Andy**: Integration testing is a bit different. We do integration testing after the build, on the server. Although unit tests help you verify a single component like a function or method, integration testing verifies that multiple components work together. I don't think we're ready for integration tests quite yet. 
+**Andy:** Integration testing is a bit different. We do integration testing after the build, on the server. Although unit tests help you verify a single component like a function or method, integration testing verifies that multiple components work together. I don't think we're ready for integration tests quite yet. 
 
 But at some point we also need to think about security and compliance. We should work with the security team to figure out how we can test against their security policies. I remember that was a concern of Tim's and I'd like to bring him into the process more.
 
-**Mara**: Lots to do.
+**Mara:** Lots to do.
 
-**Amita**: Thanks for the rundown! I'm off. Keep me posted.
+**Amita:** Thanks for the rundown! I'm off. Keep me posted.
 
-**Andy**: Ready to do some code coverage?
+**Andy:** Ready to do some code coverage?
 
-**Mara**: Let's get started.
+**Mara:** Let's get started.
 
 ## How is code coverage done in .NET Core?
 
@@ -52,7 +52,7 @@ Mara and Andy do some investigation around code coverage for .NET Core applicati
 
 * Visual Studio on Windows provides a way to perform code coverage.
 * However, because the team is building on Linux, they can use [coverlet](https://github.com/tonerdo/coverlet?azure-portal=true), a cross-platform code coverage library for .NET Core.
-* Code coverage results are written to an XML file so that they can be processed by another tool. Azure Pipelines supports [Cobertura](http://cobertura.github.io/cobertura?azure-portal=true) and [JaCoCo](https://www.eclemma.org/jacoco?azure-portal=true) coverage result formats. 
+* Code coverage results are written to an XML file so that they can be processed by another tool. Azure Pipelines supports [Cobertura](https://cobertura.github.io/cobertura?azure-portal=true) and [JaCoCo](https://www.eclemma.org/jacoco?azure-portal=true) coverage result formats. 
 
     Mara and Andy decide to try Cobertura.
 * To convert Cobertura coverage results to a format that's human-readable, they can use a tool called [ReportGenerator](https://github.com/danielpalme/ReportGenerator?azure-portal=true).
@@ -96,7 +96,10 @@ Before Mara and Andy write any pipeline code, they decide to try things manually
 1. Run the following `reportgenerator` command to convert the Cobertura file to HTML:
 
     ```bash
-    $HOME/.dotnet/tools/reportgenerator -reports:./Tailspin.SpaceGame.Web.Tests/TestResults/Coverage/coverage.cobertura.xml -targetdir:./CodeCoverage -reporttypes:HtmlInline_AzurePipelines
+    $HOME/.dotnet/tools/reportgenerator \
+      -reports:./Tailspin.SpaceGame.Web.Tests/TestResults/Coverage/coverage.cobertura.xml \
+      -targetdir:./CodeCoverage \
+      -reporttypes:HtmlInline_AzurePipelines
     ```
 
     A number of HTML files appear in the **CodeCoverage** folder at the root of the project.
@@ -138,7 +141,7 @@ In this section, you add tasks that measure code coverage to your build pipeline
 
 1. In Visual Studio Code, modify *azure-pipelines.yml* like this:
 
-    [!code-yml[](code/6-azure-pipelines.yml?highlight=45-68)]
+    [!code-yml[](code/6-azure-pipelines.yml?highlight=48-71)]
 
     This version builds upon your existing configuration. Here's a summary of what's new:
 
@@ -155,17 +158,17 @@ Here you push your changes to GitHub and see the pipeline run. Recall that you'r
 
 In the integrated terminal, add *azure-pipelines.yml* to the index, commit the changes, and push the branch up to GitHub.
 
-    ```bash
-    git add azure-pipelines.yml
-    git commit -m "Add code coverage"
-    git push origin code-coverage
-    ```
+```bash
+git add azure-pipelines.yml
+git commit -m "Add code coverage"
+git push origin code-coverage
+```
 
 ## Watch Azure Pipelines run the tests
 
 Here you see the tests run in the pipeline and then visualize the results from Azure Test Plans.
 
-1. In Azure DevOps, trace the build through each of the steps.
+1. In Azure Pipelines, trace the build through each of the steps.
 1. When the build finishes, select the **Code Coverage** tab.
 
     You view the same results that you did when you ran the tests locally.
@@ -186,7 +189,7 @@ Here you'll add a second widget that summarizes code coverage.
 1. Select **Get it free**.
 1. In the drop-down list, select your Azure DevOps organization.
 1. Select **Install**.
-1. Go to the **Azure DevOps** tab.
+1. Go back to Azure DevOps.
 1. Go to **Overview** > **Dashboards**.
 1. Select **Edit**.
 1. Search for **Code Coverage**, and then select **Code Coverage**.

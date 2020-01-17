@@ -4,12 +4,11 @@ title: Choose a tool for scanning open-source dependencies
 metadata:
   title: Choose a tool for scanning open-source dependencies
   description: Choose a tool to integrate with Azure Pipelines that scans open source libraries for known vulnerabilities and licensing ratings.
-  ms.date: 06/21/2019
+  ms.date: 11/04/2019
   author: tpetchel
   ms.author: thpetche
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 6
 content: |
   [!include[](includes/2-choose-a-scanning-tool.md)]

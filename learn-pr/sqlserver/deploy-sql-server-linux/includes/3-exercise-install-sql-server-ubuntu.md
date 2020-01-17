@@ -4,15 +4,13 @@ You are a database administrator at the wholesale company Wide World Importers. 
 
 Here, you will see how to  deploy SQL Server on Ubuntu, install command-line tools and Azure Data Studio, and create a database on SQL Server.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
 ## Create an Ubuntu Virtual Machine 
 
 Let's start by creating an Ubuntu Virtual Machine (VM) in Azure. Later, we can install SQL Server 2017 on that VM:
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), click **+ Create a resource**.
+1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or the **Home** page, select **Create a resource**.
 1. In the **Search the Marketplace** textbox, type **Ubuntu**, and then press Enter.
 1. Click the **Ubuntu Server** image, in the **Select a software plan** drop-down list, select **Ubuntu Server 16.04 LTS**, and then click **Create**.
 1. In the **Create a virtual machine** dialog, on the **Basics** page, enter these values, and then click **Review + create**:
@@ -41,7 +39,7 @@ Let's start by creating an Ubuntu Virtual Machine (VM) in Azure. Later, we can i
 
 Now that we have an Ubuntu VM, ready to install SQL Server on, let's connect to it by using Secure Shell (SSH):
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), when the VM deployment is complete, click **All resources** and then click the VM you created.
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), when the VM deployment is complete, search for and select the VM you created.
 1. In the top left of the **Overview** page, click **Connect**.
 1. On the **SSH** tab, to the right of the **Login using VM local account** textbox, click the **Copy** button.
 

@@ -1,0 +1,40 @@
+### YamlMime:LearningPath
+uid: learn.cmu-cloud-admin.cmu-manage-cloud-resources
+metadata:
+  title: Manage cloud resources
+  description: The second learning path in a course on Cloud Administration from Carnegie Mellon University. Learn more about how the cloud works by exploring its underlying technology of virtualization, how to take advantage of the cloud for scale, and how to automate cloud resource management.
+  brand: azure
+  ms.date: 12/31/2019
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  showCreativeCommonsFooter: true
+title: Manage cloud resources
+summary: |
+  Learn more about how the cloud works by exploring it's underlying technology of virtualization, how to take advantage of the cloud for scale, and how to automate cloud resource management.
+
+  In this learning path, you will:
+    - Learn about virtualization and how it's used in the cloud
+    - Know what VMs and containers are
+    - Understand what scale, load, and common load patterns are
+    - Know what autoscaling is and be familiar with autoscaling techniques
+    - Learn how to automate cloud resource management with scripts
+    - Understand the concept of infrastructure-as-code
+
+  In Partnership with Dr. Majd Sakr and Carnegie Mellon University.
+prerequisites: none
+#placeholder
+iconUrl: /learn/achievements/cmu-cloud-admin/cmu-manage-cloud-resources.svg
+levels:
+- beginner
+roles:
+- administrator
+products:
+- azure
+modules:
+- learn.cmu-cloud-admin.cmu-virtualization
+- learn.cmu-cloud-admin.cmu-cloud-elasticity
+- learn.cmu-cloud-admin.cmu-orchestration
+trophy:
+  uid: learn.cmu-cloud-admin.cmu-manage-cloud-resources.trophy

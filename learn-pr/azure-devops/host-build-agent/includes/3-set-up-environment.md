@@ -1,16 +1,21 @@
 In this unit, you ensure that your Azure DevOps organization is set up to complete the rest of this module.
 
-The modules in this learning path form a progression in which you follow the Tailspin web team through their DevOps journey.
+To do this, you:
 
-This learning path also builds on the [Evolve your DevOps practices](/learn/paths/evolve-your-devops-practices?azure-portal=true) learning path, where you've already set up your Azure DevOps organization and created a task backlog on Azure Boards by using the Basic process.
+> [!div class="checklist"]
+> * Set up an Azure DevOps project for this module.
+> * Move the work item for this module on Azure Boards to the **Doing** column.
+> * Make sure your project is set up locally so that you can push changes to the pipeline.
 
-## Run the template
+## Get the Azure DevOps project
 
-At this point, you can follow either of two options:
+Here, you make sure that your Azure DevOps organization is set up to complete the rest of this module. You do this by running a template that creates a project for you in Azure DevOps.
 
-* If you've completed the previous modules and have the Tailspin project set up in Azure DevOps, continue with the Azure DevOps project that you created in the _Evolve your DevOps practices_ learning path.
+The modules in this learning path form a progression, where you follow the Tailspin web team through their DevOps journey. For learning purposes, each module has an associated Azure DevOps project.
 
-* If you haven't set up the project or if you want to repeat this module from a fresh environment, run a template that sets up everything for you in your Azure DevOps organization.
+### Run the template
+
+Run a template that sets up everything for you in your Azure DevOps organization.
 
 > [!div class="nextstepaction"]
 > [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?name=host-build-agent&azure-portal=true)
@@ -34,6 +39,8 @@ To run the template, on the Azure DevOps Demo Generator site, do the following:
 > [!IMPORTANT]
 > The [Clean up your Azure DevOps environment](/learn/modules/host-build-agent/6-clean-up-environment?azure-portal=true) page in this module contains important cleanup steps. Cleaning up helps ensure that you don't run out of free build minutes. Be sure to perform the cleanup steps even if you don't complete this module.
 
+[!include[](../../shared/includes/project-visibility.md)]
+
 ## Move the work item to Doing
 
 In this section, you assign yourself a work item that relates to this module on Azure Boards. You also move the work item to the **Doing** state. In practice, you and your team would assign work items at the start of each sprint, or work iteration.
@@ -43,6 +50,9 @@ Assigning work in this way gives you a checklist to work from. It gives others o
 Recall that the team settled on these seven top issues:
 
 ![Backlog of tasks](../../shared/media/build-all-tasks.png)
+
+> [!NOTE]
+> Within an Azure DevOps organization, work items are numbered sequentially. In your project, the number that's assigned to each work item might not match what you see here.
 
 Here you move the seventh item, **Investigate hosted vs private build servers**, to the **Doing** column and assign yourself to the work item.
 
@@ -64,3 +74,5 @@ To set up the work item:
     ![Azure Boards showing the card in the Doing column](../media/3-azure-boards-wi7-doing.png)
 
 At the end of this module, after you've completed the task, you'll move the card to the **Done** column.
+
+[!include[](../../shared/includes/build-local-setup.md)]

@@ -7,7 +7,6 @@ metadata:
   ms.date: 01/31/2019
   author: ctesta-oneillmsft
   ms.author: chris.testaoneill
-  #ms.learn-contact: smmark
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Implement a Data Warehouse with Azure SQL Data Warehouse
@@ -35,6 +34,6 @@ modules:
 - learn.data-ai.design-azure-sql-data-warehouse
 - learn.data-ai.query-azure-sql-data-warehouse
 - learn.data-ai.import-data-into-asdw-with-polybase
-- learn.data-ai.data-warehouse-security
+#- learn.data-ai.data-warehouse-security
 trophy:
   uid: learn.data-ai.implement-sql-data-warehouse.trophy

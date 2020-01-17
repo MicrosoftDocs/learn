@@ -5,45 +5,11 @@ metadata:
   title: Summary
   description: Summary
   ms.date: 07/01/2019
-  author: rmcmurray
-  ms.author: robmcm
+  author: patridge
+  ms.author: adpatrid
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
 durationInMinutes: 5
 content: |
   [!include[](includes/4-summary.md)]
-# 
-# *** REMOVED FOR THE TIME BEING ***
-# 
-#quiz:
-#  title: 'Knowledge check: Prepare your development environment for Azure'
-#  questions:
-#  - content: Visual Studio Code supports which operating system?
-#    choices:
-#    - content: Linux
-#      isCorrect: false
-#      explanation: Visual Studio Code is cross-platform and supports Linux, macOS, and Windows.
-#    - content: macOS
-#      isCorrect: false
-#      explanation: Visual Studio Code is cross-platform and supports Linux, macOS, and Windows.
-#    - content: Windows
-#      isCorrect: false
-#      explanation: Visual Studio Code is cross-platform and supports Linux, macOS, and Windows.
-#    - content: All of the above
-#      isCorrect: true
-#      explanation: Visual Studio Code is cross-platform and supports Linux, macOS, and Windows.
-#  - content: Microsoft supplies an Azure extension for which of the following editor/IDE? 
-#    choices:
-#    - content: Eclipse
-#      isCorrect: false
-#      explanation: You choose which tool you want to use for Azure development, Microsoft provides Azure integration for Eclipse, Visual Studio 2017, Visual Studio for Mac, and Visual Studio Code.
-#    - content: Visual Studio
-#      isCorrect: false
-#      explanation: You choose which tool you want to use for Azure development, Microsoft provides Azure integration for Eclipse, Visual Studio 2017, Visual Studio for Mac, and Visual Studio Code.
-#    - content: Visual Studio Code
-#      isCorrect: false
-#      explanation: You choose which tool you want to use for Azure development, Microsoft provides Azure integration for Eclipse, Visual Studio 2017, Visual Studio for Mac, and Visual Studio Code.
-#    - content: All of the above
-#      isCorrect: true
-#      explanation: You choose which tool you want to use for Azure development, Microsoft provides Azure integration for Eclipse, Visual Studio 2017, Visual Studio for Mac, and Visual Studio Code.

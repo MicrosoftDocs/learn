@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-security.create-security-baselines.platform-security-baselines
+title: Understand the Azure platform security baseline
+metadata:
+  title: Understand the Azure platform security baseline
+  description: Understand the Azure platform security baseline
+  ms.date: 09/9/2019
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+content: |
+  [!include[](includes/1a-platform-security-baselines.md)]

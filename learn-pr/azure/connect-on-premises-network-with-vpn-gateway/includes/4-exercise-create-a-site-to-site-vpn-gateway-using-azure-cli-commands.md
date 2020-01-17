@@ -2,44 +2,9 @@ You're now ready to complete your site-to-site VPN gateway by creating the publi
 
 Ideally, the public IP addresses and virtual network gateways should be created *before* the local network gateways. In this exercise, you'll see how to update the local network gateways. You can use the same commands to update any configuration elements in the local network gateways, like remote network address spaces.
 
-## Create virtual machines
-
-To verify that your virtual networks are connected, you'll create two Ubuntu VMs, one in each of the virtual networks. You'll then use SSH to connect from the VM in the HQ-Network to the VM in the Azure-VNet-1 virtual network by using its private IP address.
-
-To save time, you'll start the deployment of these virtual machines using the `--no-wait` parameter. This will continue deployment, but allow you to continue on with the exercise.
-
-1. Run this command in Cloud Shell to create an Ubuntu VM in the **HQ-Network** virtual network. Replace `<password>` with a string to use for the admin password.
-
-    ```azurecli
-    az vm create \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
-        --name HQ-VM \
-        --vnet-name HQ-Network \
-        --subnet Applications \
-        --image UbuntuLTS \
-        --admin-username azureuser \
-        --no-wait \
-        --admin-password <password>
-    ```
-
-1. Run this command in Cloud Shell to create an Ubuntu VM in the **Azure-VNet-1** virtual network. Replace `<password>` with a string to use for the admin password. To prove that you're making a connection through the VPN gateways, you'll provision this VM *without* a public IP address.
-
-    ```azurecli
-    az vm create \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
-        --name Azure-VM \
-        --vnet-name Azure-VNet-1 \
-        --subnet Services \
-        --image UbuntuLTS \
-        --admin-username azureuser \
-        --public-ip-address "" \
-        --no-wait \
-        --admin-password <password>
-    ```
-
 ## Create the Azure-side VPN gateway
 
-Next, you'll create the VPN gateway for the Azure end of the connection. It can take up to 45 minutes to create a virtual network gateway. To save time, you'll use Azure CLI commands with the `--no-wait` parameter. This parameter lets you create both virtual network gateways simultaneously to minimize the overall time required to create these resources.
+First, you'll create the VPN gateway for the Azure end of the connection. It can take up to 45 minutes to create a virtual network gateway. To save time, you'll use Azure CLI commands with the `--no-wait` parameter. This parameter lets you create both virtual network gateways simultaneously to minimize the overall time required to create these resources.
 
 1. Run this command in Cloud Shell to create the **PIP-VNG-Azure-VNet-1** public IP address.
 
@@ -90,8 +55,6 @@ Next, you'll create a VPN gateway to simulate an on-premises VPN device.
         --sku VpnGw1 \
         --no-wait
     ```
-
-    It can take several minutes to create the gateway.
 
 1. To monitor the progress of the gateway creation, run the following command. We're using the Linux `watch` command to run the `az network vnet-gateway list` command periodically, which allows you to monitor the progress.
 
@@ -157,12 +120,12 @@ Remember to wait until the lists of gateways are successfully returned. Also, re
 
 1. Run this command in Cloud Shell to update the **LNG-HQ-Network** local network gateway so that it points to the public IP address attached to the **VNG-HQ-Network** virtual network gateway.
 
-   ```azurecli
-   az network local-gateway update \
-       --resource-group <rgn>[sandbox resource group name]</rgn> \
-       --name LNG-HQ-Network \
-       --gateway-ip-address $PIPVNGHQNETWORK
-   ```
+    ```azurecli
+    az network local-gateway update \
+        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --name LNG-HQ-Network \
+        --gateway-ip-address $PIPVNGHQNETWORK
+    ```
 
 ## Create the connections
 
@@ -196,62 +159,48 @@ You'll now complete the configuration by creating the connections from each VPN 
         --local-gateway2 LNG-Azure-VNet-1
     ```
 
-You've now finished the configuration of the site-to-site connection. The tunnels should automatically connect and become active.
+You've now finished the configuration of the site-to-site connection. This may take a few minutes, but the tunnels should automatically connect and become active.
 
 ## Verification steps
 
-To verify that your virtual networks are connected, you'll use SSH to connect from the VM in **HQ-Network** to the VM in the **Azure-VNet-1** virtual network by using its private IP address.
+Let's confirm that the VPN tunnels are connected.
 
-1. Run the following command in Cloud Shell to show the public IPv4 address assigned to the **HQ-VM** VM. Remember this address. You'll need it to connect to **HQ-VM**.
-
-    ```azurecli
-    az vm list-ip-addresses \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
-        --name HQ-VM \
-        --output table
-    ```
-
-1. Run the following command in Cloud Shell to show the private IPv4 address assigned to the **Azure-VM** VM. Remember this address. You'll need it to connect to **Azure-VM**.
+1. Run the following command to confirm that **Azure-VNet-1-To-HQ-Network** is connected.
 
     ```azurecli
-    az vm list-ip-addresses \
+    az network vpn-connection show \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
-        --name Azure-VM \
-        --output table
+        --name Azure-VNet-1-To-HQ-Network  \
+        --output table \
+        --query '{Name:name,ConnectionStatus:connectionStatus}'
     ```
 
-    Remember that you provisioned **Azure-VM** *without* a public IP address. The private IPv4 address assigned to **Azure-VM** should be 10.0.0.4. You'll use this IPv4 address to connect from **HQ-VM** across the site-to-site connection to **Azure-VM**.
+    You should see output like below indicating the connection is successful. If the `ConnectionStatus` shows as `Connecting`, wait a minute or two and rerun the command. The connections can take a few minutes to fully connect.
 
-1. Run this command in Cloud Shell to open an SSH connection to **HQ-VM** by using the public IPv4 address.
-
-    ```bash
-    ssh azureuser@<public-ip-address-of-hq-vm>
+    ```output
+    Name                        ConnectionStatus
+    --------------------------  ------------------
+    Azure-VNet-1-To-HQ-Network  Connected
     ```
 
-1. You'll get a security notification when you first connect. Enter **yes** when prompted, and then enter the password you used when you created the VM.
+1. Now lets confirm the corresponding **HQ-Network-To-Azure-VNet-1** connection is also established.
 
-1. You're now connected to **HQ-VM** at HQ. To prove you can connect to a VM in the **Azure-VNet-1** virtual network and that data can flow, open an SSH session to the private IPv4 address. While still signed in to **HQ-VM**, use the following command.
-
-    ```bash
-    ssh azureuser@10.0.0.4
+    ```azurecli
+    az network vpn-connection show \
+        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --name HQ-Network-To-Azure-VNet-1  \
+        --output table \
+        --query '{Name:name,ConnectionStatus:connectionStatus}'
     ```
 
-1. You'll get a security notification when you first connect. Enter **yes** when prompted, and then enter the password you used when you created the VM.
+    You should see the following output indicating this connection is also successful.
 
-    You should now be connected to **Azure-VM**. This machine wasn't assigned a public IP address. You can access this VM only through the site-to-site connection.
-
-1. Run this command to close the SSH session from **HQ-VM** to **Azure-VM**.
-
-    ```bash
-    exit
+    ```output
+    Name                        ConnectionStatus
+    --------------------------  ------------------
+    HQ-Network-To-Azure-VNet-1  Connected
     ```
 
-1. Run this command to close the SSH session from Cloud Shell to **HQ-VM**.
-
-    ```bash
-    exit
-    ```
-
-The site-to-site configuration is now complete. Your final topology, including the VMs, subnets, and connections with logical connection points, is shown in this diagram:
+The site-to-site configuration is now complete. Your final topology, including the subnets, and connections, with logical connection points, is shown in this diagram. Virtual machines deployed in the **Services** and **Applications** subnets can now communicate with each other, now that the VPN connections have been successfully established.
 
 ![Resources deployed during unit 4 exercise](../media/4-resources-deployed-during-exercise-final.svg)

@@ -8,15 +8,15 @@ When you configure a private build agent, it's yours to configure however you wa
 
 The Tailspin web team has finished their experiment with private build agents. Let's check in to hear their results.
 
-**Tim**: Mara and I were able to bring up a build agent running on an Azure virtual machine! The build runs quickly, and we get the same results as when we use a Microsoft-hosted agent. But does a private build agent bring any benefits to this project?
+**Tim:** Mara and I were able to bring up a build agent running on an Azure virtual machine! The build runs quickly, and we get the same results as when we use a Microsoft-hosted agent. But does a private build agent bring any benefits to this project?
 
-**Andy**: I agree that it was a good experiment. But for now, I don't see any benefit from using our own agent. The Microsoft-hosted agents seem to do everything we need for now, and we don't have to worry about keeping it up to date. But if we discover we need more build time, storage, or memory, it's good to know we have the option of using our own build agent.
+**Andy:** I agree that it was a good experiment. But for now, I don't see any benefit from using our own agent. The Microsoft-hosted agents seem to do everything we need for now, and we don't have to worry about keeping it up to date. But if we discover we need more build time, storage, or memory, it's good to know we have the option of using our own build agent.
 
-**Tim**: I could see some of the other teams benefiting from this, especially the teams that develop the games. I know some games can require several hours to do a full build. Processing all those game assets also requires lots of CPU, memory, and disk space.
+**Tim:** I could see some of the other teams benefiting from this, especially the teams that develop the games. I know some games can require several hours to do a full build. Processing all those game assets also requires lots of CPU, memory, and disk space.
 
-**Mara**: Good point, Tim. Because we set up that build configuration on a Git branch, those changes are isolated from the main sources. We can leave the build agent running a bit longer while you demo this to the other teams.
+**Mara:** Good point, Tim. Because we set up that build configuration on a Git branch, those changes are isolated from the main sources. We can leave the build agent running a bit longer while you demo this to the other teams.
 
-**Tim**: Sounds good. Thanks for your help here. This was all relatively easy to set up. And now I know little bit more about how VMs work on Azure!
+**Tim:** Sounds good. Thanks for your help here. This was all relatively easy to set up. And now I know little bit more about how VMs work on Azure!
 
 ## How is the team measuring up?
 
@@ -65,7 +65,9 @@ Congratulations. You've completed the final module in the _Build applications wi
 
 The focus of this learning path is on building applications and receiving build artifacts that you can hand off to your QA or operations teams.
 
-You can automate the handoff process by deploying build artifacts to running infrastructure automatically when the build finishes successfully. Check back soon with Microsoft Learn. We're working on additional learning paths that cover deployment, automation, and monitoring topics, all by using Azure DevOps.
+## Continue the journey
+
+You and the team have made a lot of progress, but the big release is coming up. How will the team deploy their build artifacts to development, test, and staging environments so they can run further test and verify their work? If you want to work along with them and learn how configure release pipelines that continuously build, test, and deploy your applications, go to [Deploy applications with Azure DevOps](/learn/paths/deploy-applications-with-azure-devops?azure-portal=true).
 
 For more self-paced, hands-on learning around Azure DevOps, also check out [Azure DevOps Labs](https://www.azuredevopslabs.com?azure-portal=true).
 
@@ -79,7 +81,7 @@ To learn more about build agents and agent pools, see the following articles:
 * [Self-hosted macOS agents](https://docs.microsoft.com/azure/devops/pipelines/agents/v2-osx?view=azure-devops&azure-portal=true)
 * [Self-hosted Windows agents](https://docs.microsoft.com/azure/devops/pipelines/agents/v2-windows?view=azure-devops&azure-portal=true)
 * [Container jobs](https://docs.microsoft.com/azure/devops/pipelines/process/container-phases?view=azure-devops&tabs=yaml&azure-portal=true)
-* [Pool](https://docs.microsoft.com/azure/devops/pipelines/yaml-schema?view=azure-devops&tabs=schema#pool&azure-portal=true) (YAML schema)
+* [Pool](https://docs.microsoft.com/azure/devops/pipelines/yaml-schema?view=azure-devops&tabs=schema#pool) (YAML schema)
 * [Create a multi-platform pipeline](https://docs.microsoft.com/azure/devops/pipelines/get-started-multiplatform?view=azure-devops&azure-portal=true)
 
 ### Create your own VM images
@@ -88,6 +90,6 @@ If you're interested in creating your own VM images for use with Azure Pipelines
 
 ### Practice running VMs on Azure
 
-For more hands-on practice working with virtual machines on Azure, check out [Core Cloud Services - Introduction to Azure](/learn/modules/welcome-to-azure?azure-portal=true) from the [Azure fundamentals](/learn/paths/azure-fundamentals?azure-portal=true) learning path.
+For more hands-on practice working with virtual machines on Azure, check out the [Administer infrastructure resources in Azure](/learn/paths/administer-infrastructure-resources-in-azure/?azure-portal=true) learning path.
 
 We also mentioned how you can use Azure Resource Manager templates to automate the process of creating build agents. To learn more about Resource Manager templates, see [Build Azure Resource Manager templates](/learn/modules/build-azure-vm-templates?azure-portal=true).

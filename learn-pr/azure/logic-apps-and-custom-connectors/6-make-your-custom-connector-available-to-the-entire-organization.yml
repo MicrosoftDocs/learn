@@ -5,11 +5,10 @@ metadata:
   title: Share a custom connector
   description: In this unit, you will learn how to publish your custom connector, both inside your organization and to the wider community.
   ms.date: 04/11/2019
-  author: andrewjbyrne
-  ms.author: anbyrne
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 6
 content: |
   [!include[](includes/6-make-your-custom-connector-available-to-the-entire-organization.md)]

@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.performing-text-analytics-with-azure-databricks
+hidden: true
 metadata:
   title: Perform text analytics with Azure Databricks 
-  description: Investigate techniques for developing machine learning models used in text analytics.
+  description: This module guides you through Azure Databricks techniques for developing machine learning models used in text analytics to demonstrate classifications.
   ms.date: 02/20/2019
-  author: barlan
-  ms.author: barlan
+  author: jasallen
+  ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #ms.learn-contact: barlan
 title: Perform text analytics with Azure Databricks
 summary: In this module, you will investigate techniques for developing machine learning models used in text analytics. You will do this by applying two different text analytics scenarios demonstrating some of its most important aspects - movie classification and claim classification.
 cardDescription: Investigate techniques for developing machine learning models used in text analytics
@@ -18,14 +18,13 @@ abstract: |
   - Train and evaluate multiple machine learning models for text classification. 
   - Create a text classifier using deep learning. 
 prerequisites:  | 
-  [!include[](../../includes/azure-subscription-prerequisite.md)]
+  [!include[](../../includes/azure-databricks-subscription-prerequisite.md)]
 iconUrl: /learn/achievements/performing-text-analytics-with-azure-databricks.svg
 levels:
   - intermediate
 roles:
   - developer
   - data-scientist
-  - data-engineer
 products:
 - azure
 - azure-databricks

@@ -10,7 +10,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-# interactive: azure-portal
 durationInMinutes: 3
 content: |
   [!include[](includes/9-summary.md)]

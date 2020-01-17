@@ -8,8 +8,8 @@ metadata:
   ms.author: chris.testaoneill
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #ms.learn-contact: smmark
 title: Data warehouse security
+hidden: true
 summary: Learn about the security controls that Azure SQL Data Warehouse provides to help secure your data warehouse infrastructure and the data that's stored in it.
 abstract: | 
   In this module, you will:
@@ -24,6 +24,7 @@ levels:
 - beginner
 roles:
 - data-engineer
+- security-engineer
 products:
 - azure
 - azure-sql-data-warehouse

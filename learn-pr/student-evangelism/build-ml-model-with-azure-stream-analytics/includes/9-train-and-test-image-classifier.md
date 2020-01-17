@@ -21,18 +21,22 @@ This unit requires an Azure subscription. The resources we create here are free,
 
 ## Create a new Custom Vision project
 
-1. Click **+ NEW PROJECT** to display the "Create new project" dialog. Enter a project name such as "Polar Bear Project".
+1. Click **+ NEW PROJECT** to display the "Create new project" dialog. Enter a project name such as "Polar Bear Project", then press **create new**.
 
-1. Create a new resource group to hold your vision service.
+    ![Setting up a Custom Vision Service project](../media/9-new-project-1.png)
 
-1. Ensure that **General** is selected as the domain and **Multiclass** as the classification type.
+1. Enter a resource name such as "polarbears", choose *your own* Azure **Subscription** and **Resource Group** to be the resource group from previous units. Select **Kind** as **CustomVision.Training**, **Location** as **South Central US**, and **Pricing Tier** as **F0** - the free tier. Then press **Create resource**
+
+    ![Creating a Custom Vision Service resource](../media/9-new-project-2.png)
+
+1. Finally, ensure that the **Resource** you just set up is selected, **Classification** is set as the project type, **Multiclass** as the classification type, and **General** is selected as the domain.
 
     > [!TIP]
     > A domain optimizes a model for specific types of images. For example, if your goal is to classify _food images_ by the types of food they contain or the ethnicity of the dishes, then it's helpful to select the **Food domain**. For scenarios that don't match any of the offered domains, or if you are unsure of which domain to choose, select the **General domain**.
 
-1. Select **Create project**. It will take a minute or two to complete the process.
+1. Select **Create resource**. It will take a minute or two to complete the process.
 
-    ![Creating a Custom Vision Service project](../media/9-new-project.png)
+    ![Creating a Custom Vision Service project](../media/9-new-project-3.png)
 
 ## Add the training images
 
@@ -70,7 +74,7 @@ With the images tagged and uploaded, the next step is to train the model so it c
 
 Training can be accomplished with a simple button click in the portal, or by calling the **TrainProject** method in the Custom Vision Training REST API. Once trained, a model can be refined by uploading additional tagged images and retraining it. Let's use the portal approach since it's the easiest to start with. If you wanted to continue to refine the model over time, the REST API allows you to do it programmatically.
 
-1. Click the **Train** button at the top of the page to train the model. Each time you train the model, a new iteration is created. The Custom Vision Service maintains several iterations, allowing you to compare your progress over time.
+1. Click the **Train** button at the top of the page to train the model. Select **Quick Training** and click the **Train** button. Each time you train the model, a new iteration is created. The Custom Vision Service maintains several iterations, allowing you to compare your progress over time.
 
     ![Training the model](../media/9-train-model.png)
 

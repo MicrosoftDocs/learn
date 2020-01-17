@@ -1,15 +1,14 @@
 ### YamlMime:Module
 uid: learn.chain-azure-functions-data-using-input-output-bindings
 metadata:
-  title: Chain Azure functions together by using input and output bindings
-  description: In this module, we'll learn how to integrate your Azure function with various data sources by using bindings. 
+  title: Chain Azure Functions together by using input and output bindings
+  description: In this module, we'll learn how to integrate your Azure Function with various data sources by using bindings.
   ms.date: 09/24/2018
-  author: AndrewJByrne
-  ms.author: anbyrne
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #ms.learn-contact: anbyrne
-title: Chain Azure functions together using input and output bindings
+title: Chain Azure Functions together using input and output bindings
 summary: Azure Functions makes it easy for your function code to integrate with data and services. Through the power of bindings, you declare the data sources to read and write, and let Azure Functions take care of the rest.
 abstract: |
   In this module, you will:
@@ -20,11 +19,11 @@ abstract: |
 prerequisites: None
 cardDescription: Integrate data sources with your Azure Functions serverless logic by using bindings.
 iconUrl: /learn/achievements/chain-azure-functions-data-using-bindings.svg
-levels: 
+levels:
 - beginner
-roles: 
+roles:
 - developer
-products: 
+products:
 - azure
 - azure-cosmos-db
 - azure-functions

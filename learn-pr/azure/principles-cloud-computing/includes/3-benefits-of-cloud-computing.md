@@ -1,16 +1,16 @@
-Cloud computing isn't an all-or-nothing service approach. Companies can choose to use the cloud to store their data and execute logic as much, or as little as necessary to fulfill their business requirements. Existing businesses might choose a gradual movement to save money on infrastructure and administration costs (referred to as "lift and shift"), while a new company might start in the cloud.
+Cloud computing isn't an all-or-nothing service approach. Companies can choose to use the cloud to store their data and execute logic as much, or as little, as necessary to fulfill their business requirements. Existing businesses might choose a gradual movement to save money on infrastructure and administration costs (referred to as "lift and shift"), while a new company might start in the cloud.
 
 Let's learn some of the top benefits of cloud computing.
 
 :::row:::
   :::column span="3":::
-## It’s cost-effective
+## It's cost-effective
 
-Cloud computing provides a **pay-as-you-go** or **consumption-based** pricing model. 
+Cloud computing provides a **pay-as-you-go** or **consumption-based** pricing model.
 
 This consumption-based model brings with it many benefits, including:
 
-- No upfront costs
+- No upfront infrastructure costs
 - No need to purchase and manage costly infrastructure that you may not use to its fullest
 - The ability to pay for additional resources only when they are needed
 - The ability to stop paying for resources that are no longer needed
@@ -31,14 +31,13 @@ You can increase or decrease the resources and services used based on the demand
 **Vertical scaling**, also known as "scaling up", is the process of adding resources to increase the power of an existing server. Some examples of vertical scaling are: adding more CPUs, or adding more memory.
 
 **Horizontal scaling**, also known as "scaling out", is the process of adding more servers that function together as one unit. For example, you have more than one server processing incoming requests.
-
   :::column-end:::
   :::column:::
 ![Growth chart representing scalability](../media/3-scalable.png)
   :::column-end:::
 :::row-end:::
 
-Scaling can be done manually or automatically based on specific triggers such as CPU utilization or the number of requests and resources can be allocated or de-allocated in minutes.
+Scaling can be done manually or automatically based on specific triggers such as CPU utilization or the number of requests and resources that can be allocated or de-allocated in minutes.
 
 :::row:::
   :::column span="3":::
@@ -59,14 +58,14 @@ Another example is if you are running an application used by employees, you can 
   :::column span="3":::
 ## It's current
 
-When you use the cloud, you’re able to focus on what matters: building and deploying applications. Cloud eliminates the burdens of maintaining software patches, hardware setup, upgrades, and other IT management tasks. All of this is automatically done for you to ensure you're using the latest and greatest tools to run your business.
+When you use the cloud, you're able to focus on what matters: building and deploying applications. Cloud usage eliminates the burdens of maintaining software patches, hardware setup, upgrades, and other IT management tasks. All of this is automatically done for you to ensure you're using the latest and greatest tools to run your business.
   :::column-end:::
   :::column:::
 ![Calendar representing staying current](../media/3-current.png)
   :::column-end:::
 :::row-end:::
 
-Additionally, the computer hardware is maintained and upgraded by the cloud provider. For example, if a disk fails, the disk will be replaced by the cloud provider. If new hardware update becomes available, you don’t have to go through the process of replacing your hardware. The cloud provider will ensure that the hardware updates are made available to you automatically.
+Additionally, the computer hardware is maintained and upgraded by the cloud provider. For example, if a disk fails, the disk will be replaced by the cloud provider. If new hardware update becomes available, you don't have to go through the process of replacing your hardware. The cloud provider will ensure that the hardware updates are made available to you automatically.
 
 :::row:::
   :::column span="3":::
@@ -83,7 +82,7 @@ When you're running a business, you want to be confident your data is always goi
   :::column span="3":::
 ## It's global
 
-Cloud providers have fully redundant datacenters located in various regions all over the globe. This gives you a local presence close to your customers to give them the best response time possible no matter where in the world they are. 
+Cloud providers have fully redundant datacenters located in various regions all over the globe. This gives you a local presence close to your customers to give them the best response time possible no matter where in the world they are.
 
 You can replicate your services into multiple regions for redundancy and locality, or select a specific region to ensure you meet data-residency and compliance laws for your customers.
   :::column-end:::
@@ -96,7 +95,7 @@ You can replicate your services into multiple regions for redundancy and localit
   :::column span="3":::
 ## It's secure
 
-Think about how you secure your datacenter. You have physical security &ndash; who can access the building, who can operate the server racks, and so on. You also have digital security &ndash; who can connect to your systems and data over the network.
+Think about how you secure your datacenter. You have _physical security_ &ndash; who can access the building, who can operate the server racks, and so on. You also have _digital security_ &ndash; who can connect to your systems and data over the network.
 
 Cloud providers offer a broad set of policies, technologies, controls, and expert technical skills that can provide better security than most organizations can otherwise achieve. The result is strengthened security, which helps to protect data, apps, and infrastructure from potential threats.
   :::column-end:::
@@ -105,10 +104,10 @@ Cloud providers offer a broad set of policies, technologies, controls, and exper
   :::column-end:::
 :::row-end:::
 
-When it comes to physical security &ndash; threats to cloud infrastructure, cloud providers invest heavily in walls, cameras, gates, security personnel, and so on, to protect physical assets. They also have strict procedures in place to ensure employees have access only to those resources that they’ve been authorized to manage.
+When it comes to physical security &ndash; threats to cloud infrastructure, cloud providers invest heavily in walls, cameras, gates, security personnel, and so on, to protect physical assets. They also have strict procedures in place to ensure employees have access only to those resources that they've been authorized to manage.
 
-Let us talk about digital security. You want only authorized users to be able to log into virtual machines or storage systems running in the cloud. Cloud providers offer tools that help you mitigate security threats and you must use these tools to protect the resources you use.
+Let us talk about digital security. You want only authorized users to be able to log into virtual machines or storage systems running in the cloud. Cloud providers offer tools that help you mitigate security threats, and you must use these tools to protect the resources you use.
 
 ## Summary
 
-Cloud computing makes running a business easier. It’s cost-effective, scalable, elastic, current, reliable, and secure. This means you’re able to spend more time on what matters and less time managing the underlying details.
+Cloud computing makes running a business easier. It's cost-effective, scalable, elastic, current, reliable, and secure. This means you're able to spend more time on what matters and less time managing the underlying details.

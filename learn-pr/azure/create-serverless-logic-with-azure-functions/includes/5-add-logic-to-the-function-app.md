@@ -12,13 +12,15 @@ First, we need to define some requirements for our logic:
 
 As we discussed in the preceding unit, Azure provides templates that help you get started building functions. In this unit, we'll use the `HttpTrigger` template to implement the temperature service.
 
+::: zone pivot="javascript"
+
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
 
 1. Select the resource group from the first exercise by choosing **All resources** in the left-hand menu, and then selecting "**<rgn>[sandbox resource group name]</rgn>**".
 
 1. The resources for the group will then be displayed. Click the name of the function app that you created in the previous exercise by selecting the **escalator-functions-xxxxxxx** item (also indicated by the lightning bolt Function icon).
 
-    ![Screenshot of the Azure portal showing the All resources blade highlighted as well as the escalator function app we created.](../media/5-access-function-app.png)
+    ![Screenshot of the Azure portal showing the All resources pane highlighted as well as the escalator function app we created.](../media/5-access-function-app.png)
 
 1. Select the Add (**+**) button next to **Functions**. This action starts the function creation process.
 
@@ -35,7 +37,7 @@ As we discussed in the preceding unit, Azure provides templates that help you ge
     ```javascript
     module.exports = async function (context, req) {
         context.log('JavaScript HTTP trigger function processed a request.');
-    
+
         if (req.query.name || (req.body && req.body.name)) {
             context.res = {
                 // status: 200, /* Defaults to 200 */
@@ -78,7 +80,93 @@ As we discussed in the preceding unit, Azure provides templates that help you ge
     }
     ```
 
-    This configuration declares that the function runs when it receives an HTTP request. The output binding declares that the response will be sent as an HTTP response.    
+    This configuration declares that the function runs when it receives an HTTP request. The output binding declares that the response will be sent as an HTTP response.
+
+::: zone-end
+
+::: zone pivot="powershell"
+
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
+
+1. Select the resource group from the first exercise by choosing **All resources** in the left-hand menu, and then selecting "**<rgn>[sandbox resource group name]</rgn>**".
+
+1. The resources for the group will then be displayed. Click the name of the function app that you created in the previous exercise by selecting the **escalator-functions-xxxxxxx** item (also indicated by the lightning bolt Function icon).
+
+    ![Screenshot of the Azure portal showing the All resources pane highlighted as well as the escalator function app we created.](../media/5-access-function-app.png)
+
+1. Select the Add (**+**) button next to **Functions**. This action starts the function creation process.
+
+1. On the **Azure Functions for PowerShell - getting started** page, select **In-portal** and then select **Continue**.
+
+1. In the **Create a function** step, select **More templates...** and then select **Finish and view templates**.
+
+1. In the list of all templates available to this function app, select **HTTP trigger** .
+
+1. Enter **DriveGearTemperatureService** in the name field of the **New Function** dialog that appears. Leave the Authorization level as "Function" and press the **Create** button to create the function.
+
+1. When your function creation completes, the code editor opens with the contents of the *index.js* code file. The default code that the template generated for us is listed in the following snippet.
+
+    ```powershell
+    using namespace System.Net
+
+    # Input bindings are passed in via param block.
+    param($Request, $TriggerMetadata)
+
+    # Write to the Azure Functions log stream.
+    Write-Host "PowerShell HTTP trigger function processed a request."
+
+    # Interact with query parameters or the body of the request.
+    $name = $Request.Query.Name
+    if (-not $name) {
+        $name = $Request.Body.Name
+    }
+
+    if ($name) {
+        $status = [HttpStatusCode]::OK
+        $body = "Hello $name"
+    }
+    else {
+        $status = [HttpStatusCode]::BadRequest
+        $body = "Please pass a name on the query string or in the request body."
+    }
+
+    # Associate values to output bindings by calling 'Push-OutputBinding'.
+    Push-OutputBinding -Name Response -Value ([HttpResponseContext]@{
+        StatusCode = $status
+        Body = $body
+    })
+    ```
+
+    Our function expects a name to be passed in either through the HTTP request query string or as part of the request body. HTTP functions must generate a response by writing to their output binding, which is accomplished in PowerShell Functions with the `Push-OutputBinding` cmdlet. This function returns the message  **Hello $name**, echoing back the name that was sent in the request.
+
+    On the right-hand side of the source view, you'll find two tabs. The **View files** tab lists the code and config file for your function.  Select **function.json** to view the configuration of the function, which should look like the following:
+
+    ```json
+    {
+      "bindings": [
+        {
+          "authLevel": "function",
+          "type": "httpTrigger",
+          "direction": "in",
+          "name": "Request",
+          "methods": [
+            "get",
+            "post"
+          ]
+        },
+        {
+          "type": "http",
+          "direction": "out",
+          "name": "Response"
+        }
+      ],
+      "disabled": false
+    }
+    ```
+
+    This configuration declares that the function runs when it receives an HTTP request. The output binding declares that the response will be sent as an HTTP response.
+
+::: zone-end
 
 ## Test the function
 
@@ -102,7 +190,7 @@ The function and master keys are found in the **Manage** section when the functi
 
 1. Expand your function and select the **Manage** section, show the default Function Key, and copy it to the clipboard.
 
-    ![Screenshot of the Azure portal showing the function Manage blade with the revealed function key highlighted.](../media/5-get-function-key.png)
+    ![Screenshot of the Azure portal showing the function Manage pane with the revealed function key highlighted.](../media/5-get-function-key.png)
 
 1. Next, from the command line where you installed the **cURL** tool, format a cURL command with the URL for your function, and the Function key.
 
@@ -153,7 +241,9 @@ Our function is expecting an array of temperature readings. The following JSON s
 
 Next, we'll replace the default code in our function with the following code that implements our business logic.
 
-1. Open the **index.js** file and replace it with the following code.
+::: zone pivot="javascript"
+
+Open the **index.js** file and replace it with the following code. Make sure to save the file after updating it.
 
 ```javascript
 module.exports = function (context, req) {
@@ -192,6 +282,55 @@ The logic we added is straightforward. We iterate over the array of readings and
 
 Notice the `log` statements. When the function runs, these statements will add messages in the log window.
 
+::: zone-end
+
+::: zone pivot="powershell"
+
+Open the **run.ps1** file and replace the contents with the following code. Make sure to save the file after updating it.
+
+```powershell
+using namespace System.Net
+
+param($Request, $TriggerMetadata)
+
+Write-Host "Drive Gear Temperature Service triggered"
+
+$readings = $Request.Body.Readings
+if ($readings) {
+    foreach ($reading in $readings) {
+        if ($reading.temperature -le 25) {
+            $reading.Status = "OK"
+        }
+        elseif ($reading.temperature -le 50) {
+            $reading.Status = "CAUTION"
+        }
+        else {
+            $reading.Status = "DANGER"
+        }
+
+        Write-Host "Reading is $($reading.Status)"
+    }
+
+    $status = [HttpStatusCode]::OK
+    $body = $readings
+}
+else {
+    $status = [HttpStatusCode]::BadRequest
+    $body = "Please send an array of readings in the request body"
+}
+
+Push-OutputBinding -Name Response -Value ([HttpResponseContext]@{
+    StatusCode = $status
+    Body = $body
+})
+```
+
+The logic we added is straightforward. We iterate over the array of readings and check the temperature field. Depending on the value of that field, we set a status of **OK**, **CAUTION**, or **DANGER**. We then send back the array of readings with a status field added to each entry.
+
+Note the calls to the `Write-Host` cmdlet. When the function runs, these statements will add messages in the log window.
+
+::: zone-end
+
 ## Test our business logic
 
 In this case, we're going to use the **Test** pane in the portal to test our function.
@@ -224,7 +363,7 @@ In this case, we're going to use the **Test** pane in the portal to test our fun
 
 1. Select **Run** and view the response in the output pane. To see log messages, open the **Logs** tab in the bottom flyout of the page. The following screenshot shows an example response in the output pane and messages in the  **Logs** pane.
 
-    ![Screenshot of the Azure portal showing the function editor blade with the Test and Logs tabs visible. A sample response from the function is shown in the output pane.](../media/5-portal-testing.png)
+    ![Screenshot of the Azure portal showing the function editor pane with the Test and Logs tabs visible. A sample response from the function is shown in the output pane.](../media/5-portal-testing.png)
 
     You can see in the output pane that our status field has been correctly added to each of the readings.
 

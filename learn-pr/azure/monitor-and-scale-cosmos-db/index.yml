@@ -4,8 +4,8 @@ metadata:
   title: Optimize the performance of Azure Cosmos DB by using partitioning and indexing strategies
   description: Learn how to measure the performance of your NoSQL Azure Cosmos DB database, by monitoring, partitioning, and indexing
   ms.date: 02/28/2019
-  author: natke
-  ms.author: nakersha
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Optimize the performance of Azure Cosmos DB by using partitioning and indexing strategies

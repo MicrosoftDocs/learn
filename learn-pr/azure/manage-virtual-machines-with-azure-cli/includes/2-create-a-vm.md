@@ -1,8 +1,5 @@
 Let's start with the most obvious task: creating an Azure Virtual Machine.
 
-<!-- Activate the sandbox -->
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 ## Logins, subscriptions, and resource groups
 
 You'll be working in the Azure Cloud Shell on the right. Once you activate the sandbox, you'll be logged into Azure with a free subscription managed by Microsoft Learn. You don't have to log into Azure on your own, or select a subscription - this will be done for you. In addition, normally you would create a _resource group_ to hold new resources. In this module, the Azure sandbox will create a resource group for you which will be used to execute all the commands.
@@ -27,55 +24,39 @@ The Azure CLI includes the `vm` command to work with virtual machines in Azure. 
 > [!NOTE]
 > For a complete list of commands, you can check the [Azure CLI reference documentation](https://docs.microsoft.com/cli/azure/reference-index?view=azure-cli-latest).
 
-Let's start with the first one: `az vm create`. This command is used to create a virtual machine in a resource group. There are several parameters you can pass to configure all the aspects of the new VM. The three parameters that must be supplied are:
+Let's start with the first one: `az vm create`. This command is used to create a virtual machine in a resource group. There are several parameters you can pass to configure all the aspects of the new VM. The four parameters that must be supplied are:
 
 > [!div class="mx-tableFixed"]
 > | Parameter | Description |
 > |-----------|-------------|
-> | `resource-group` | The resource group that will own the virtual machine, use **<rgn>[sandbox Resource Group]</rgn>**. |
-> | `name` | The name of the virtual machine - must be unique within the resource group. |
-> | `image` | The operating system image to use to create the VM. |
-> | `location` | The region to place the VM in. Typically this would be close to the consumer of the VM. In this exercise, choose a location nearby from the following list. |
-
-<!-- Resource selection -->
-[!include[](../../../includes/azure-sandbox-regions-first-mention-note.md)]
+> | `--resource-group` | The resource group that will own the virtual machine, use **<rgn>[sandbox Resource Group]</rgn>**. |
+> | `--name` | The name of the virtual machine - must be unique within the resource group. |
+> | `--image` | The operating system image to use to create the VM. |
+> | `--location` | The region to place the VM in. Typically this would be close to the consumer of the VM. In this exercise, choose a location nearby from the following list. |
 
 In addition, it's helpful to add the `--verbose` flag to see progress while the VM is being created. 
 
 ## Create a Linux virtual machine
 
-Let's create a new Linux virtual machine. Execute the following command in Azure Cloud Shell to create a Debian Linux machine in the "West US" location. Change the location if that one isn't nearby.
+Let's create a new Linux virtual machine. Execute the following command in Azure Cloud Shell to create an Ubuntu VM in the "West US" location.
 
 ```azurecli
 az vm create \
   --resource-group <rgn>[sandbox resource group name]</rgn> \
-  --name SampleVM \
-  --image Debian \
-  --admin-username aldis \
-  --generate-ssh-keys \
   --location westus \
+  --name SampleVM \
+  --image UbuntuLTS \
+  --admin-username azureuser \
+  --generate-ssh-keys \
   --verbose 
 ```
 
 [!include[](../../../includes/azure-cloudshell-copy-paste-tip.md)]
 
 
-This command will create a new **Debian** Linux virtual machine with the name `SampleVM`. Notice that the Azure CLI tool waits while the VM is being created. You can add the `--no-wait` option to tell the Azure CLI tool to return immediately and have Azure continue creating the VM in the background. This is useful if you're executing the command in a script. Later in the script, use the `azure vm wait --name [vm-name]` command to wait for the VM to finish being created.
+This command will create a new **Ubuntu** Linux virtual machine with the name `SampleVM`. Notice that the Azure CLI tool waits while the VM is being created. You can add the `--no-wait` option to tell the Azure CLI tool to return immediately and have Azure continue creating the VM in the background. This is useful if you're executing the command in a script.
 
-If you look at the verbose responses, you will also see that the `SampleVM` name is used to name various dependencies for the VM.
-
-```output
-Succeeded: SampleVMNSG (Microsoft.Network/networkSecurityGroups)
-Accepted: SampleVMVNET (Microsoft.Network/virtualNetworks)
-Succeeded: SampleVMPublicIP (Microsoft.Network/publicIPAddresses)
-Accepted: SampleVMVNET (Microsoft.Network/virtualNetworks)
-Succeeded: SampleVMVNET (Microsoft.Network/virtualNetworks)
-Accepted: vm_deploy_vzKnQDyyq48yPUO4VrSDfFIi81vHKZ9g (Microsoft.Resources/deployments)
-```
-
-You can override these auto-generated resource names using optional parameters to `vm create`, such as `--vnet-name` and `--public-ip-address-dns-name`.
-
-We are specifying the administrator account name through the `admin-username` flag to be **"aldis"**. If you omit this, the `vm create` command will use your _current user name_. Since the rules for account names are different for each OS, it's safer to specify a specific name. 
+We are specifying the administrator account name through the `--admin-username` flag to be `azureuser`. If you omit this, the `az vm create` command will use your *current user name*. Since the rules for account names are different for each OS, it's safer to specify a specific name.
 
 > [!NOTE]
 > Common names such as "root" and "admin" are not allowed for most images.
@@ -87,7 +68,7 @@ Once it finishes creating the VM, you will get a JSON response which includes th
 ```json
 {
   "fqdns": "",
-  "id": "/subscriptions/20f4b944-fc7a-4d38-b02c-900c8223c3a0/resourceGroups/2568d0d0-efe3-4d04-a08f-df7f009f822a/providers/Microsoft.Compute/virtualMachines/SampleVM",
+  "id": "/subscriptions/20f4b944-fc7a-4d38-b02c-900c8223c3a0/resourceGroups/Learn-2568d0d0-efe3-4d04-a08f-df7f009f822a/providers/Microsoft.Compute/virtualMachines/SampleVM",
   "location": "westus",
   "macAddress": "00-0D-3A-58-F8-45",
   "powerState": "VM running",

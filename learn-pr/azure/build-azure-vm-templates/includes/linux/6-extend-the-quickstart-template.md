@@ -72,7 +72,7 @@ Similar to what you did previously, run `az group deployment validate` to valida
 
 ```azurecli
 az group deployment validate \
-  --resource-group <rgn>[sandbox resource group name]</rgn> \
+  --resource-group $RESOURCEGROUP \
   --template-file azuredeploy.json \
   --parameters adminUsername=$USERNAME \
   --parameters authenticationType=password \
@@ -93,7 +93,7 @@ Run `az group deployment create` to update your deployment.
 ```azurecli
 az group deployment create \
   --name MyDeployment \
-  --resource-group <rgn>[sandbox resource group name]</rgn> \
+  --resource-group $RESOURCEGROUP \
   --template-file azuredeploy.json \
   --parameters adminUsername=$USERNAME \
   --parameters authenticationType=password \
@@ -113,8 +113,8 @@ The deployment succeeded, so let's see the resulting configuration in action.
 
     ```azurecli
     IPADDRESS=$(az vm show \
-      --name MyUbuntuVM \
-      --resource-group <rgn>[sandbox resource group name]</rgn> \
+      --name simpleLinuxVM \
+      --resource-group $RESOURCEGROUP \
       --show-details \
       --query [publicIps] \
       --output tsv)
@@ -129,7 +129,7 @@ The deployment succeeded, so let's see the resulting configuration in action.
     You see this.
 
     ```html
-    <html><body><h2>Welcome to Azure! My name is MyUbuntuVM.</h2></body></html>
+    <html><body><h2>Welcome to Azure! My name is simpleLinuxVM.</h2></body></html>
     ```
 
 1. From a separate browser tab, navigate to your web site.
@@ -140,7 +140,7 @@ The deployment succeeded, so let's see the resulting configuration in action.
     echo $IPADDRESS
     ```
 
-    Navigate to the IP address you see from a separate browser tab. You see this.
+ 1. Navigate to the IP address you see from a separate browser tab. You see something like the following message:
 
     ![A web browser showing the resulting Nginx configuration](../../media/6-browser-linux.png)
 

@@ -20,15 +20,11 @@ Our app works like a shared folder that accepts file uploads and makes them avai
 
 The code we'll start with compiles and runs, but the parts responsible for storing and loading data are empty. After we complete the code, we'll deploy the app to Azure App Service and test it.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 Let's set up the storage infrastructure for our app.
 
 ### Storage account
 
-We'll use the Azure Cloud Shell with the Azure CLI to create a storage account. You'll need to provide a unique name for the storage account &mdash; make a note of it for later. We're using "East US" in the example below, but you can change it to any of the available locations from list.
-
-[!include[](../../../includes/azure-sandbox-regions-first-mention-note.md)]
+We'll use the Azure Cloud Shell with the Azure CLI to create a storage account. You'll need to provide a unique name for the storage account &mdash; make a note of it for later.
 
 Execute the following command to create the storage account. 
 
@@ -36,8 +32,8 @@ Execute the following command to create the storage account.
 az storage account create \
   --kind StorageV2 \
   --resource-group <rgn>[sandbox resource group name]</rgn> \
-  --location eastus \
-  --name <your-unique-storage-account-name>
+  --location centralus \
+  --name [your-unique-storage-account-name]
 ```
 
 > [!NOTE]

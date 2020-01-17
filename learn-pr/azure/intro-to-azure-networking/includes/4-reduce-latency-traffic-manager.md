@@ -38,7 +38,7 @@ Think about the cost of building a data center. Equipment costs aren't the only 
 
 One way to reduce latency is to provide exact copies of your service in more than one region. The following illustration shows an example of global deployment.
 
-![An illustration showing a world map with three Azure data centers highlighted. Each data center is labelled with a unique domain name.](../media/4-global-deployment.png)
+![An illustration showing a world map with three Azure data centers highlighted. Each data center is labeled with a unique domain name.](../media/4-global-deployment.png)
 
 The diagram shows your e-commerce site running in three Azure regions: East US, North Europe, and East Asia. Notice the DNS name for each. How can you connect users to the service that's closest geographically, but under the contoso.com domain?
 
@@ -71,7 +71,7 @@ Although not shown here, this setup could also include your on-premises deployme
   :::column span="3":::
 Azure Load Balancer distributes traffic within the same region to make your services more highly available and resilient. Traffic Manager works at the DNS level, and directs the client to a preferred endpoint. This endpoint can be to the region that's closest to your user.
 
-Load Balancer and Traffic Manager both help make your services more resilient, but in slightly different ways. When Load Balancer detects an unresponsive VM, it directs traffic to other VMs in the pool. Traffic Manager monitors the health of your endpoints. In contrast, when Traffic Manager finds an unresponsive endpoint, it directs traffic to the next closest endpoint that is responsive.
+Load Balancer and Traffic Manager both help make your services more resilient, but in slightly different ways. When Load Balancer detects an unresponsive VM, it directs traffic to other VMs in the pool. Traffic Manager monitors the health of your endpoints.When Traffic Manager finds an unresponsive endpoint, it directs traffic to the next closest endpoint that is responsive.
   :::column-end:::
 :::row-end:::
 

@@ -13,9 +13,3 @@ Azure Cosmos DB is a fully managed graph database that offers global distributio
 ### What is the Gremlin Graph Traversal Language?
 
 The Gremlin Graph Traversal Language, or *Gremlin* is a high-performance language used to traverse and query data from graph databases. It's described as a functional, data-flow language that enables users to express complex traversals for their application's property graph.
-
-### What is Gremlin.NET?
-
-Gremlin.Net is an open-source API that implements Gremlin for C# .NET applications; it currently targets .NET Standard allowing it to be added to .NET Framework, .NET Core or .NET Standard compatible libraries and applications.
-
-In the following exercise, we'll use the Gremlin.Net in an ASP.NET Core application. 

@@ -4,13 +4,13 @@ In this unit, you set up a dashboard and add widgets to track your build history
 
 Andy is putting together a report of the progress the team is making. He's in the middle of searching through all the build reports and pull requests to try to get the big picture when Mara walks in.
 
-**Mara**: Hi Andy, I have a question on a feature I'm working on. Do you have a minute?
+**Mara:** Hi Andy, I have a question on a feature I'm working on. Do you have a minute?
 
-**Andy**: Sure! I could use a break. There has to be an easier way to sum up the builds and see whether there are patterns of failure.
+**Andy:** Sure! I could use a break. There has to be an easier way to sum up the builds and see whether there are patterns of failure.
 
-**Mara**: Actually, there is an easier way. We can set up a dashboard.
+**Mara:** Actually, there is an easier way. We can set up a dashboard.
 
-**Andy**: So I can have a summary of the information I need in one place? I'm all ears.
+**Andy:** So I can have a summary of the information I need in one place? I'm all ears.
 
 ## What's the dashboard?
 

@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.azdo.run-functional-tests-azure-pipelines
+metadata:
+  title: Run functional tests in Azure Pipelines - Learn
+  description: Run Selenium UI tests, a form of functional testing, in Azure Pipelines.
+  ms.date: 09/30/2019
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  #ms.learn-contact: thpetche
+  ms.prod: learning-azure
+title: Run functional tests in Azure Pipelines
+summary: Run Selenium UI tests, a form of functional testing, in Azure Pipelines.
+abstract: |
+  In this module, you will:
+  - Define functional tests and identify some popular kinds of tests you can run.
+  - Map manual testing steps to automated test cases.
+  - Run automated UI tests locally and in the pipeline by using Selenium.
+prerequisites: |
+  - An Azure subscription
+  - An Azure DevOps organization
+  - Visual Studio Code
+  - .NET Core 2.1
+  - Git
+  - A GitHub account
+iconUrl: /learn/achievements/azure-devops/run-functional-tests-azure-pipelines.svg
+levels:
+- beginner
+roles:
+- devops-engineer
+- administrator
+- developer
+- solution-architect
+products:
+- azure
+- azure-devops
+units:
+- learn.azdo.run-functional-tests-azure-pipelines.1-introduction
+- learn.azdo.run-functional-tests-azure-pipelines.2-what-is-functional-testing
+- learn.azdo.run-functional-tests-azure-pipelines.3-set-up-environment
+- learn.azdo.run-functional-tests-azure-pipelines.4-plan-ui-tests
+- learn.azdo.run-functional-tests-azure-pipelines.5-write-ui-tests
+- learn.azdo.run-functional-tests-azure-pipelines.6-run-ui-tests
+- learn.azdo.run-functional-tests-azure-pipelines.7-clean-up-environment
+- learn.azdo.run-functional-tests-azure-pipelines.8-summary
+badge:
+  uid: learn.azdo.run-functional-tests-azure-pipelines.badge

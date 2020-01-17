@@ -5,10 +5,11 @@ metadata:
   title: Exercise - Use azure log analytics and schedule updates
   description: Exercise - Use azure log analytics and schedule updates
   ms.date: 12/21/2018
-  author: adrianstevens
-  ms.author: adsteven
+  author: cwatson-cat
+  ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ROBOTS: NOINDEX
 durationInMinutes: 8
 content: |
   [!include[](includes/5-exercise-use-azure-log-analytics-and-schedule-updates.md)] 

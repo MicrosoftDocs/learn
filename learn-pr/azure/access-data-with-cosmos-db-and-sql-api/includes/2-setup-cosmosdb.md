@@ -1,7 +1,5 @@
 The first thing we need to do is create an empty Azure Cosmos DB database and container to work with. We want them to match the ones you created in the last module in this Learning Path: a database named **"Products"** and a container named **"Clothing"**. Use the following instructions and the Azure Cloud Shell on the right side of the screen to recreate the database.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 ## Create an Azure Cosmos DB account + database with the Azure CLI
 
 We'll start by creating an environment variable to hold the Azure Cosmos DB account name so you don't have to type the same value each time in the following commands. The database account name must be unique across all Azure Cosmos DB instances.

@@ -1,7 +1,5 @@
 In this unit, you'll set up the development environment for the module. You'll also gain an understanding of the resulting project.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 ## Set up development environment
 
 Run the following command in the command shell. Be patient, as setup can take a few minutes to complete.

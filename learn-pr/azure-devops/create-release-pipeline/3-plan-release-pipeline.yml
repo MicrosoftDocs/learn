@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.azdo.create-release-pipeline.3-plan-release-pipeline
+title: Plan a release pipeline by using Azure Pipelines
+metadata:
+  title: Plan a release pipeline by using Azure Pipelines
+  description: Plan a basic CD pipeline that runs on Azure Pipelines.
+  ms.date: 09/30/2019
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-plan-release-pipeline.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "You have a great idea for a new web app. You have working code on your laptop, but you want feedback from your team before you continue. What's the fastest way to deploy your app to Azure so you can share it with your team?"
+    choices:
+    - content: "Build a CI/CD pipeline in Azure Pipelines."
+      isCorrect: false
+      explanation: "You benefit from continuous delivery as your app matures. Creating a full CI/CD pipeline might not be the fastest way to get feedback on your prototype."
+    - content: 'Use Visual Studio to right-click publish your app.'
+      isCorrect: true
+      explanation: "Although our focus is on continuous delivery, you benefit from continuous delivery as your app matures. Right-click publishing is a perfect way to quickly get your idea in front of people."
+    - content: "Run `xcopy` to upload the web app to a virtual machine (VM) that's running on Azure."
+      isCorrect: false
+      explanation: "Although you can use `xcopy` to deploy to a VM, you still have to worry about mapping the network drive, configuring the firewall, and starting the web app."
+  - content: "To deploy to Azure App Service, what resources does Azure Pipelines need?"
+    choices:
+    - content: "A build artifact and a service connection."
+      isCorrect: true
+      explanation: "The build artifact is the application you want to deploy. A service connection provides secure access to your Azure subscription."
+    - content: "A host name and an SSH key."
+      isCorrect: false
+      explanation: "Although you might use an SSH key to deploy to a virtual machine in your datacenter, Azure App Service doesn't require one."
+    - content: "A host name and the encrypted username and password."
+      isCorrect: false
+      explanation: "Although you might use usernames and passwords to connect to Azure services or virtual machines, Azure App Service doesn't require them."
+  - content: "Which of the following statements describes the relationship among tasks, stages, and jobs?"
+    choices:
+    - content: "A task is another name for a job. A stage can contain either tasks or jobs."
+      isCorrect: false
+      explanation: "Tasks are different from jobs. A job defines a series of steps and the agent those steps run on. A task defines an individual step."
+    - content: "Stages break down into jobs, and jobs break down into tasks."
+      isCorrect: true
+      explanation: "Stages define each major phase of your pipeline. Each job defines a series of steps and the agent those steps run on. A task defines an individual step."
+    - content: "Stages break down into tasks. A job schedules when each stage runs."
+      isCorrect: false
+      explanation: "A job defines a series of steps and the agent those steps run on. It doesn't schedule stages."
+    

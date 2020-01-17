@@ -29,7 +29,7 @@ Event Hubs has support for pipelining event streams to other Azure services. Usi
 
 For our aircraft engines, we'll set up our architecture so that Event Hubs will authenticate the communications from our engines. We will then have it use capture to save all the data to Data Lake. Later, we can use all that data to retrain and improve our machine learning models. Finally, our event streams will be picked up by Stream Analytics subscribers. Stream Analytics will use our machine learning model to look for patterns in the sensor data that might indicate problems.
 
-Because we have several partitions, and each engine sends all its data to only one partition, each instance of our Stream Analytics subscriber only need deal with a subset of our overall data. It does not have to filter and correlate over all of it.
+Because we have several partitions, and each engine sends all its data to only one partition, each instance of our Stream Analytics subscriber only needs to deal with a subset of our overall data. It does not have to filter and correlate over all of it.
 
 ## Which service should I choose?
 Just like our queue choice, selecting between these two event delivery services can seem tricky at first. Both support *At Least Once* semantics.

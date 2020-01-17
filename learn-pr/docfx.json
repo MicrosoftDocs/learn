@@ -13,7 +13,9 @@
                     "**/*.md"
                 ],
                 "exclude": [
-                    "**/includes/**"
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
                 ],
                 "dest": "modules"
             },
@@ -24,7 +26,22 @@
                     "**/*.md"
                 ],
                 "exclude": [
-                    "**/includes/**"
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },
+            {
+                "src": "ai-school",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
                 ],
                 "dest": "modules"
             },
@@ -35,7 +52,9 @@
                     "**/*.md"
                 ],
                 "exclude": [
-                    "**/includes/**"
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
                 ],
                 "dest": "modules"
             },
@@ -46,7 +65,9 @@
                     "**/*.md"
                 ],
                 "exclude": [
-                    "**/includes/**"
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
                 ],
                 "dest": "modules"
             },
@@ -57,7 +78,22 @@
                     "**/*.md"
                 ],
                 "exclude": [
-                    "**/includes/**"
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },
+            {
+                "src": "cmu-cloud-admin",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
                 ],
                 "dest": "modules"
             },
@@ -68,7 +104,9 @@
                     "**/*.md"
                 ],
                 "exclude": [
-                    "**/includes/**"
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
                 ],
                 "dest": "modules"
             },
@@ -79,7 +117,22 @@
                     "**/*.md"
                 ],
                 "exclude": [
-                    "**/includes/**"
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },
+            {
+                "src": "iot",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
                 ],
                 "dest": "modules"
             },
@@ -90,7 +143,9 @@
                     "**/*.md"
                 ],
                 "exclude": [
-                    "**/includes/**"
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
                 ],
                 "dest": "modules"
             },
@@ -101,7 +156,9 @@
                     "**/*.md"
                 ],
                 "exclude": [
-                    "**/includes/**"
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
                 ],
                 "dest": "modules"
             },
@@ -112,7 +169,22 @@
                     "**/*.md"
                 ],
                 "exclude": [
-                    "**/includes/**"
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },
+            {
+                "src": "windows",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
                 ],
                 "dest": "modules"
             },
@@ -123,10 +195,64 @@
                     "**/*.md"
                 ],
                 "exclude": [
-                    "**/includes/**"
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
                 ],
                 "dest": "modules"
             },
+            {
+                "src": "wwl",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },
+            {
+                "src": "wwl-data-ai",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },
+            {
+                "src": "wwl-azure",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },  
+            {
+                "src": "xamarin",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },                    
             {
                 "files": [
                     "**/*.md",
@@ -169,9 +295,7 @@
                     "**/obj/**",
                     "**/includes/**",
                     "_themes/**",
-                    "_themes.pdf/**",
-                    "**/design/**",
-                    "**/resources/**"
+                    "_themes.pdf/**"
                 ]
             }
         ],
@@ -192,16 +316,16 @@
             "sandbox-disabled": {},
             "localization_scopes": {
                 "azure/**/*.yml": [
-                    "de-de", 
-                    "es-es", 
-                    "fr-fr", 
-                    "it-it", 
+                    "de-de",
+                    "es-es",
+                    "fr-fr",
+                    "it-it",
                     "ru-ru",
                     "pt-br",
-                    "ja-jp", 
-                    "ko-kr", 
-                    "zh-cn", 
-                    "zh-tw", 
+                    "ja-jp",
+                    "ko-kr",
+                    "zh-cn",
+                    "zh-tw",
                     "cs-cz",
                     "hu-hu",
                     "nl-nl",
@@ -211,16 +335,16 @@
                     "sv-se"
                 ],
                 "advocates/**/*.yml": [
-                    "de-de", 
-                    "es-es", 
-                    "fr-fr", 
-                    "it-it", 
+                    "de-de",
+                    "es-es",
+                    "fr-fr",
+                    "it-it",
                     "ru-ru",
                     "pt-br",
-                    "ja-jp", 
-                    "ko-kr", 
-                    "zh-cn", 
-                    "zh-tw", 
+                    "ja-jp",
+                    "ko-kr",
+                    "zh-cn",
+                    "zh-tw",
                     "cs-cz",
                     "hu-hu",
                     "nl-nl",
@@ -230,37 +354,46 @@
                     "sv-se"
                 ],
                 "ai-business-school/**/*.yml": [
-                    "de-de", 
-                    "es-es", 
-                    "fr-fr", 
+                    "de-de",
+                    "es-es",
+                    "fr-fr",
                     "pt-br",
-                    "ja-jp",                    
-                    "zh-cn", 
+                    "ja-jp",
+                    "zh-cn",
+                    "zh-tw"
+                ],
+                "ai-school/**/*.yml": [
+                    "de-de",
+                    "es-es",
+                    "fr-fr",
+                    "pt-br",
+                    "ja-jp",
+                    "zh-cn",
                     "zh-tw"
                 ],
                 "aspnetcore/**/*.yml": [
-                    "de-de", 
-                    "es-es", 
-                    "fr-fr", 
-                    "it-it", 
+                    "de-de",
+                    "es-es",
+                    "fr-fr",
+                    "it-it",
                     "ru-ru",
                     "pt-br",
-                    "ja-jp", 
-                    "ko-kr", 
-                    "zh-cn", 
+                    "ja-jp",
+                    "ko-kr",
+                    "zh-cn",
                     "zh-tw"
                 ],
                 "data-ai-cert/**/*.yml": [
-                    "de-de", 
-                    "es-es", 
-                    "fr-fr", 
-                    "it-it", 
+                    "de-de",
+                    "es-es",
+                    "fr-fr",
+                    "it-it",
                     "ru-ru",
                     "pt-br",
-                    "ja-jp", 
-                    "ko-kr", 
-                    "zh-cn", 
-                    "zh-tw", 
+                    "ja-jp",
+                    "ko-kr",
+                    "zh-cn",
+                    "zh-tw",
                     "cs-cz",
                     "hu-hu",
                     "nl-nl",
@@ -270,16 +403,35 @@
                     "sv-se"
                 ],
                 "databricks/**/*.yml": [
-                    "de-de", 
-                    "es-es", 
-                    "fr-fr", 
-                    "it-it", 
+                    "de-de",
+                    "es-es",
+                    "fr-fr",
+                    "it-it",
                     "ru-ru",
                     "pt-br",
-                    "ja-jp", 
-                    "ko-kr", 
-                    "zh-cn", 
-                    "zh-tw", 
+                    "ja-jp",
+                    "ko-kr",
+                    "zh-cn",
+                    "zh-tw",
+                    "cs-cz",
+                    "hu-hu",
+                    "nl-nl",
+                    "pl-pl",
+                    "pt-pt",
+                    "tr-tr",
+                    "sv-se"
+                ],
+                "iot/**/*.yml": [
+                    "de-de",
+                    "es-es",
+                    "fr-fr",
+                    "it-it",
+                    "ru-ru",
+                    "pt-br",
+                    "ja-jp",
+                    "ko-kr",
+                    "zh-cn",
+                    "zh-tw",
                     "cs-cz",
                     "hu-hu",
                     "nl-nl",
@@ -289,16 +441,16 @@
                     "sv-se"
                 ],
                 "student-evangelism/**/*.yml": [
-                    "de-de", 
-                    "es-es", 
-                    "fr-fr", 
-                    "it-it", 
+                    "de-de",
+                    "es-es",
+                    "fr-fr",
+                    "it-it",
                     "ru-ru",
                     "pt-br",
-                    "ja-jp", 
-                    "ko-kr", 
-                    "zh-cn", 
-                    "zh-tw", 
+                    "ja-jp",
+                    "ko-kr",
+                    "zh-cn",
+                    "zh-tw",
                     "cs-cz",
                     "hu-hu",
                     "nl-nl",
@@ -307,10 +459,52 @@
                     "tr-tr",
                     "sv-se"
                 ],
+                "windows/**/*.yml": [
+                    "de-de",
+                    "es-es",
+                    "fr-fr",
+                    "it-it",
+                    "ja-jp",
+                    "ko-kr",
+                    "pt-br",
+                    "ru-ru",
+                    "zh-cn",
+                    "zh-tw"
+                ],
                 "wwl-mba/**/*.yml": [
                     "ja-jp",
                     "ko-kr",
-                    "zh-cn", 
+                    "zh-cn",
+                    "zh-tw"
+                ],
+                "wwl-data-ai/**/*.yml": [
+                    "ja-jp",
+                    "ko-kr",
+                    "zh-cn",
+                    "zh-tw"
+                ],
+                "wwl-azure/**/*.yml": [
+                    "ja-jp",
+                    "ko-kr",
+                    "zh-cn",
+                    "zh-tw"
+                ],
+                "wwl/**/*.yml": [
+                    "ja-jp",
+                    "ko-kr",
+                    "zh-cn",
+                    "zh-tw"
+                ],
+                "xamarin/**/*.yml": [
+                    "de-de",
+                    "es-es",
+                    "fr-fr",
+                    "it-it",
+                    "ja-jp",
+                    "ko-kr",
+                    "pt-br",
+                    "ru-ru",
+                    "zh-cn",
                     "zh-tw"
                 ]
             }
