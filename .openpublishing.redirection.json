@@ -706,11 +706,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/data-ai-cert/train-local-model-with-azure-mls/5-training-model.yml",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/train-local-model-with-azure-mls",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "learn-pr/data-ai-cert/train-local-model-with-azure-mls/7-summary.yml",
       "redirect_url": "https://docs.microsoft.com/learn/modules/train-local-model-with-azure-mls",
       "redirect_document_id": false
