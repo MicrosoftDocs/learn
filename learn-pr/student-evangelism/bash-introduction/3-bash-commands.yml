@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.bash-introduction.3-bash-commands
-title: Bash commands
+title: Bash commands and operators
 metadata:
-  title: Bash commands
-  description: Learn key Bash commands, such as ls, cat, and ps.
+  title: Bash commands and operators
+  description: Learn key Bash commands and I/O operators, like ls, cat, and ps.
   ms.date: 01/31/2020
   author: shanamatthews
   ms.author: shanama

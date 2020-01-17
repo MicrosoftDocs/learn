@@ -14,7 +14,7 @@ If you want to take your knowledge of Bash to the next level, here are three boo
 
 - [The Bash Guide](https://guide.bash.academy/)
 - [Learn Shell](https://www.learnshell.org/)
-- [Learning the Shell](http://linuxcommand.org/lc3_learning_the_shell.php)
+- [Learning the shell](http://linuxcommand.org/lc3_learning_the_shell.php)
 
 Other notable books include [Learning the bash Shell, 3rd Edition](http://shop.oreilly.com/product/9780596009656.do), [The Linux Command Line](http://linuxcommand.org/tlcl.php), and [Advanced Bash-Scripting Guide](https://www.tldp.org/LDP/abs/html/).
 
