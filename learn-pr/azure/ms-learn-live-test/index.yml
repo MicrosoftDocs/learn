@@ -12,7 +12,7 @@
 #
 
 uid: learn.azure.ms-learn-live
-hidden: true
+#hidden: true
 metadata:
   title: Microsoft Learn Live
   description: Microsoft Learn Live is a series of guided, live courses, presented on Twitch and designed to increase your existing knowledge of Azure technologies.
