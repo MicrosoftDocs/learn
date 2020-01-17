@@ -25,6 +25,7 @@ levels:
 roles:
 - developer
 - ai-engineer
+- student
 products:
 - azure
 - vs
