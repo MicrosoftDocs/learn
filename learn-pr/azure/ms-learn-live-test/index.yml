@@ -40,9 +40,9 @@ products:
 - azure-app-service
 - azure-sql-database
 units:
-- learn.azure.ms-learn-live.introduction
-- learn.azure.ms-learn-live.session-1-prep
-- learn.azure.ms-learn-live.session-2-prep
-- learn.azure.ms-learn-live.session-3-prep
-- learn.azure.ms-learn-live.session-4-prep
-- learn.azure.ms-learn-live.session-5-prep
+- learn.azure.ms-learn-live.1-introduction
+- learn.azure.ms-learn-live.2-session-1-prep
+- learn.azure.ms-learn-live.3-session-2-prep
+- learn.azure.ms-learn-live.4-session-3-prep
+- learn.azure.ms-learn-live.5-session-4-prep
+- learn.azure.ms-learn-live.6-session-5-prep
