@@ -569,6 +569,121 @@
       "source_path": "learn-pr/azure/keep-your-virtual-machines-updated/6-knowledge-check.yml",
       "redirect_url": "https://docs.microsoft.com/learn/modules/keep-your-virtual-machines-updated",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/automate-model-selection-with-azure-automl/2-understand-ml-pipeline.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/automate-model-selection-with-azure-automl",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/automate-model-selection-with-azure-automl/3-what-is-automl.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/automate-model-selection-with-azure-automl",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/automate-model-selection-with-azure-automl/4-automl-recommend-model.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/automate-model-selection-with-azure-automl",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/intro-to-azure-machine-learning-service/2-azure-ml-service-vs-ml-studio.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-machine-learning-service",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/intro-to-azure-machine-learning-service/3-azure-ml-service-with-ds-process.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-machine-learning-service",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/intro-to-azure-machine-learning-service/4-create-ml-experiment.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-machine-learning-service",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/intro-to-azure-machine-learning-service/5-create-pipeline.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-machine-learning-service",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/intro-to-azure-machine-learning-service/6-train-model.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-machine-learning-service",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/register-and-deploy-model-with-amls/10-scoring-data-with-deployed-model.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/register-and-deploy-model-with-amls",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/register-and-deploy-model-with-amls/11-manage-and-monitor-models.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/register-and-deploy-model-with-amls",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/register-and-deploy-model-with-amls/2-create-deployment-workspace-azure-portal.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/register-and-deploy-model-with-amls",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/register-and-deploy-model-with-amls/3-create-deployment-workspace-azure-ml-sdk.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/register-and-deploy-model-with-amls",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/register-and-deploy-model-with-amls/4-register-model.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/register-and-deploy-model-with-amls",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/register-and-deploy-model-with-amls/5-create-scoring-script.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/register-and-deploy-model-with-amls",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/register-and-deploy-model-with-amls/6-create-environment-yaml.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/register-and-deploy-model-with-amls",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/register-and-deploy-model-with-amls/7-create-container-image.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/register-and-deploy-model-with-amls",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/register-and-deploy-model-with-amls/8-where-to-deploy-model.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/register-and-deploy-model-with-amls",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/register-and-deploy-model-with-amls/9-deploy-model-web-service.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/register-and-deploy-model-with-amls",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/train-local-model-with-azure-mls/2-simple-log-regression-model.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/train-local-model-with-azure-mls",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/train-local-model-with-azure-mls/3-run-log-reg-model-sklearn.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/train-local-model-with-azure-mls",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/train-local-model-with-azure-mls/4-create-ml-experiment.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/train-local-model-with-azure-mls",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/train-local-model-with-azure-mls/5-what-are-hyperparameters.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/train-local-model-with-azure-mls",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/train-local-model-with-azure-mls/6-train-model-using-experiment-service.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/train-local-model-with-azure-mls",
+      "redirect_document_id": false
     }
   ]
 }
