@@ -20,7 +20,7 @@ prerequisites: |
   - None
 iconUrl: http://via.placeholder.com/120x120
 levels:
-- Beginner
+- beginner
 roles:
 - solution-architect
 - administrator
