@@ -1,4 +1,4 @@
-The .NET Client library provides support for Azure storage. You can use this library to write your own custom applications tha move data around Azure storage. 
+The .NET Client library provides support for Azure storage. You can use this library to write your own custom applications tha move data around Azure storage.
 
 In this exercise, you'll see how to write an application that can migrate blobs from hot to cool storage.
 
@@ -6,7 +6,7 @@ In this exercise, you'll see how to write an application that can migrate blobs 
 
 We'll start by downloading and building an existing .NET Core application. You may have cloned the sample git repository in a previous exercise.
 
-1. In the Cloud Shell window, run the following command to download the sample source code. 
+1. In the Cloud Shell window, run the following command to download the sample source code.
 
     ```bash
     git clone https://github.com/MicrosoftDocs/mslearn-copy-move-blobs-from-containers-or-storage-accounts sample
@@ -85,7 +85,7 @@ We'll start by downloading and building an existing .NET Core application. You m
         // Iterate through the blobs in the source container
         do
         {
-            BlobResultSegment segment = await 
+            BlobResultSegment segment = await
                 blobContainer.ListBlobsSegmentedAsync(prefix: "", currentToken: token);
 
             foreach (CloudBlockBlob blobItem in segment.Results)
@@ -191,6 +191,4 @@ We'll start by downloading and building an existing .NET Core application. You m
 
 1. Move to your source storage account.
 
-2. Browse the **specifications** folder. Verify the blobs that were transferred have been removed from this folder.
- 
-  
+1. Browse the **specifications** folder. Verify the blobs that were transferred have been removed from this folder.

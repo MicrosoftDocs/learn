@@ -34,7 +34,7 @@ We'll start by downloading the latest version of AzCopy; currently version 10. T
 
 ## Create a container for holding archived blobs
 
-1.  In the Cloud Shell, navigate to the directory containing the *AzCopy* utility:
+1. In the Cloud Shell, navigate to the directory containing the *AzCopy* utility:
 
     ```bash
     cd azcopy_linux_amd64_10.1.0

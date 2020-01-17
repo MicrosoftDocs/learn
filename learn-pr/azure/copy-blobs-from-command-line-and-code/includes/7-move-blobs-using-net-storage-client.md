@@ -56,7 +56,7 @@ You can transfer blobs between storage accounts using a combination of the downl
 
 The .NET Client library provides the `StartCopyAsync` method of a blob object to initiate copying the data in this blob to another blob in a destination container. You specify the destination blob using its URI. Additionally, because the data is transferred directly, you need to ensure that the Azure Storage service is provided with the appropriate access rights to the source blob. One way to do this is with a Shared Access Signature (SAS) token, as described earlier in this module. You append the SAS token to the URI of the source blob.
 
-The example code below shows how to use the `StartCopyAsync` method. The *sourceBlob* variable is a reference to a blob being copied. The code creates a reference to a new blob (*destBlob*) using the same name as the source blob. The `StartCopyAsync` method takes the URI of the blob to be copied, and starts to transfer the data to the new destination blob. The `GetSharedAccessUri` method creates a read-only SAS token for the source blob that is valid for 60 minutes. 
+The example code below shows how to use the `StartCopyAsync` method. The *sourceBlob* variable is a reference to a blob being copied. The code creates a reference to a new blob (*destBlob*) using the same name as the source blob. The `StartCopyAsync` method takes the URI of the blob to be copied, and starts to transfer the data to the new destination blob. The `GetSharedAccessUri` method creates a read-only SAS token for the source blob that is valid for 60 minutes.
 
 ```C#
 CloudBlockBlob destBlob = destContainer.GetBlockBlobReference(sourceBlob.Name);
@@ -83,7 +83,7 @@ private static string GetSharedAccessUri(string blobName, CloudBlobContainer con
 }
 ```
 
-The `StartCopyAsync` method initiates the blob copy operation and the process runs in the background. You can check on the progress of the operation by retrieving a reference to the destination blob and querying its `CopyState`. The state has a value of `Pending` while the copy is in progress. Additionally, you can find out how many bytes have been copied using the `BytesCopied` property of the `CopyState` object. 
+The `StartCopyAsync` method initiates the blob copy operation and the process runs in the background. You can check on the progress of the operation by retrieving a reference to the destination blob and querying its `CopyState`. The state has a value of `Pending` while the copy is in progress. Additionally, you can find out how many bytes have been copied using the `BytesCopied` property of the `CopyState` object.
 
 The code sample below retrieves a reference to the destination blob, and monitors the progress as it is copied. Note that the reference is obtained using the `GetBlobReferenceFromServerAsync` method. This method retrieves the latest status information from the storage server. The `GetBlockBlobReference` method shown in previous examples uses information that is cached in the client library. This cached information isn't updated while a blob is being copied. So, to obtain the up-to-date status of the blob, fetch this information from the server.
 

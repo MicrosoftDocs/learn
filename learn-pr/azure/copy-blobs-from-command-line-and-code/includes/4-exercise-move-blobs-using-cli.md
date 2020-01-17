@@ -16,7 +16,7 @@ In this exercise, you'll use the Azure CLI to migrate blobs that haven't changed
     ```
 
 1. Next, run the following command to create a storage account to hold blobs.
-    
+
     ```azurecli
     az storage account create \
       --location $LOCATION \
@@ -149,7 +149,7 @@ Now we'll create a second storage account and move data between accounts.
       --dryrun
     ```
 
-1. Review the list of blobs to copy. 
+1. Review the list of blobs to copy.
 
 1. Repeat the blob copy command, but specify one of the DOC files that was created more recently. Use the same value for *\<modified date>* that you used in the previous step. This date is before the DOC blob was created, so it shouldn't be copied.
 
