@@ -1,3 +1,5 @@
+### YamlMime:Module
+
 # Note for reviews:
 #
 # Learn Live uses the modules format to provide instructions to the audience
@@ -9,7 +11,6 @@
 # for Learn content.
 #
 
-### YamlMime:Module
 uid: learn.azure.ms-learn-live
 hidden: true
 metadata:
