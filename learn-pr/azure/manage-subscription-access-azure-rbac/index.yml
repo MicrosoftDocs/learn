@@ -9,15 +9,15 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Manage access to an Azure subscription with Azure role-based access control
-summary: To grant access to a subscription, identify the appropriate role to assign to an employee. Understand when you might need to temporarily elevate your access to regain access to a subscription.
+summary: To grant access to a subscription, identify the appropriate role to assign to an employee. Understand when you might need to temporarily elevate your own access to regain access to a subscription.
 abstract: | 
   In this module, you will:
   - Identify the appropriate role to assign to an employee.
-  - Identify scenarios where the Global Administrator for Azure Active Directory may need to temporarily elevate their access in Azure.
+  - Identify scenarios where the Global Administrator for Azure Active Directory might need to temporarily elevate their access in Azure.
   - Grant the employee management access to a subscription.
 prerequisites: | 
-  - Basic understanding of how Azure role-based access control (Azure RBAC) works
-  - Access to an Azure subscription where you have the Global Administrator role for your account (optional)
+  - A basic understanding of how Azure role-based access control (RBAC) works
+  - (Optional) Access to an Azure subscription where you have the Global Administrator role for your account
 iconUrl: /learn/achievements/manage-subscription-access-azure-rbac.svg
 levels:
 - beginner
