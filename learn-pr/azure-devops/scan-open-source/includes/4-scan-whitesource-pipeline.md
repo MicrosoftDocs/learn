@@ -57,7 +57,7 @@ Here you'll install the **WhiteSource Bolt** extension for Microsoft Azure Pipel
 
 Here you'll use the built-in task `WhiteSource Bolt@20` that's provided by the WhiteSource Bolt extension to scan your open-source dependencies when the pipeline runs.
 
-> ![Important]
+> [!IMPORTANT]
 > The major version number for WhiteSource Bolt that you noted earlier must match the version number of the `WhiteSource Bolt` task. At the time of this writing the version was 20.
 
 1. From Visual Studio Code, open *azure-pipelines.yml* and replace its contents with the following:
