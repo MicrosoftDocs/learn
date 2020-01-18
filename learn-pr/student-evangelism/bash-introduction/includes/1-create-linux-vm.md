@@ -54,11 +54,7 @@ To connect to the VM, you will use the [Secure Shell](https://wikipedia.org/wiki
 
 	Answer "yes" if you are warned that the authenticity of the host can't be established and asked if you want to log in anyway.
 
-1. Confirm that the command prompt changes to `azureuser@bash-vm:~$` indicating that you are logged into the VM:
-
-	![Connect to the VM](./media/bash-vm.png)
-
-	_Connect to the VM_
+1. Confirm that the command prompt changes to `azureuser@bash-vm:~$` indicating that you are logged into the VM.
 
 	You can't execute `az` commands in the VM, but you can execute Bash commands. You can log out of the VM with an `exit` command, and connect again with the an `ssh` command. If you are ever confused as to whether you are executing commands in Cloud Shell or the VM, look to the command prompt. Cloud Shell prompt reads `USER_NAME@Azure:~$`, whereas the VM prompt reads `adminuser@VM_NAME:~$`.
 
