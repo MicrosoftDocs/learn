@@ -23,6 +23,7 @@ levels:
 - beginner
 roles:
 - developer
+- student
 products:
 - xamarin
 - dotnet
