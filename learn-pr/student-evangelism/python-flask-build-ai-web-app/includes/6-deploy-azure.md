@@ -54,7 +54,7 @@ When you ran the website locally, it used `os.environ` to load API keys for the 
 	az webapp config appsettings set -g contoso-travel-rg -n APP_NAME --settings TRANSLATE_API_KEY=translate_api_key
 	```
 
-If you would like, you can log into the [Azure portal](https://portal.azure.com), open the Azure App Service created by the `az webapp up` command, and view the application settings that these commands created. The screen shot below illustrates what you will see if you do.
+If you would like, you can log into the [Azure portal](https://portal.azure.com), open the Azure App Service created by the `az webapp up` command, and view the application settings that these commands created. The screenshot below illustrates what you will see if you do.
 
 ![Viewing application settings in the Azure portal](../media/app-settings.png)
 
