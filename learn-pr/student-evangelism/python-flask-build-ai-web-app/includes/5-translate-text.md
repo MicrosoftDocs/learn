@@ -14,7 +14,7 @@ In order to call the Translator Text API, you must obtain an API key. As with th
 	az cognitiveservices account create --resource-group contoso-travel-rg --name translator-text --location global --kind TextTranslation --sku F0 --yes
 	```
 
-	Unlike the Computer Vision API, which requires you to specify an Azure region, the Translator Text API is a "global" API that doesn't live in a specific region. That's the reason for the `--location global` parameter. Among other things, this means that you don't have to retrieve an endpoint URL for the Translator Text API as you do for the Computer Vision API. One endpoint — https://api.cognitive.microsofttranslator.com/translate?api-version=3.0 — serves all regions. 
+	Unlike the Computer Vision API, which requires you to specify an Azure region, the Translator Text API is a "global" API that doesn't live in a specific region. That's the reason for the `--location global` parameter. Among other things, this means that you don't have to retrieve an endpoint URL for the Translator Text API as you do for the Computer Vision API. One endpoint—https://api.cognitive.microsofttranslator.com/translate?api-version=3.0—serves all regions. 
 
 1. Use the following command to obtain an API key for the Translator Text API:
 
@@ -211,7 +211,7 @@ The final step is to test the changes that you made by uploading photos to the s
 
 1. Navigate to http://localhost:5000 in your browser. Confirm that the page now contains a drop-down list for selecting a language, as pictured below.
 
-	![Selecting a language](/media/select-language.png)
+	![Selecting a language](../media/select-language.png)
 
 	_Selecting a language_
 
@@ -219,7 +219,7 @@ The final step is to test the changes that you made by uploading photos to the s
 
 1. Confirm that after a brief pause, the text extracted from the photo and translated into the language you specified appears in a modal dialog. Then dismiss the dialog.
 
-	![Extracting text from a photo](/media/translated-text.png)
+	![Extracting text from a photo](../media/translated-text.png)
 
 	_Extracting text from a photo_
 
