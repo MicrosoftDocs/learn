@@ -4,11 +4,11 @@ You can use automated machine learning in Azure Machine Learning to train models
 * Regression
 * Time Series Forecasting
 
-## Task-Specific Algorthms
+## Task-Specific Algorithms
 
 Azure Machine Learning includes support for numerous commonly used algorithms for these tasks, including:
 
-### Classfication Algorithms
+### Classification Algorithms
 
 * Logistic Regression
 * Light Gradient Boosting Machine (GBM)

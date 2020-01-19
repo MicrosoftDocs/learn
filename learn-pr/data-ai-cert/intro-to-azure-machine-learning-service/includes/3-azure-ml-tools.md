@@ -38,7 +38,7 @@ You can install the Azure Machine Learning SDK for Python by using the `pip` pac
 pip install azureml-sdk
 ```
 
-The SDK includes optional *extras* that aren't required for core operations, but can be useful in some scenarios. For example, the **notebooks** extra includes widgets for displaying detailed output in Jupyter Notebooks, the **automl** extra includes packages for automated machine learning training, and the **explain** extra includes packages for generating model explanations. To install extras, specify them in brackets as shown here:
+The SDK includes optional *extras* that aren't required for core operations, but can be useful in some scenarios. For example, the **notebooks extra include widgets for displaying detailed output in Jupyter Notebooks, the **automl** extra includes packages for automated machine learning training, and the **explain** extra includes packages for generating model explanations. To install extras, specify them in brackets as shown here:
 
 ```bash
 pip install azureml-sdk[notebooks,automl,explain]
@@ -120,7 +120,7 @@ az ml computetarget list -g 'aml-resources' -w 'aml-workspace'
 >
 > **More Information**: For more information about the Azure Machine Learning CLI Extension, see the [documentation](https://aka.ms/AA70zeu).
 
-# Compute Instances
+## Compute Instances
 
 Azure Machine Learning includes the ability to create *Compute Instances* in a workspace to provide a development environment that is managed with all of the other assets in the workspace.
 
