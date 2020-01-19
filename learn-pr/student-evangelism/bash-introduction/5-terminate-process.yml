@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.bash-introduction.5-terminate-process
+uid: learn.student-evangelism.bash-introduction.5-terminate-process
 title: "Exercise: Terminate a misbehaving process"
 metadata:
   title: "Exercise: Terminate a misbehaving process"
   description: Learn how to identify and terminate troublesome processes.
-  ms.date: 01/15/2020
+  ms.date: 01/31/2020
   author: shanamatthews
   ms.author: shanama
   ms.topic: interactive-tutorial

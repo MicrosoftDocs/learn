@@ -97,7 +97,7 @@ You can move up a directory by specifying ".." as the directory name:
 cd ..
 ```
 
-This one changes to your home directory — the one that you land in when you first log in:
+This one changes to your home directory—the one that you land in when you first log in:
 
 ```bash
 cd ~
