@@ -24,8 +24,7 @@ prerequisites: |
   - Recognize cloud service models such as IaaS, PaaS, and SaaS and differentiate between them
   - Be familiar with different organizational IT cost types like CapEx and OpEx
   - Understand how cloud resource provisioning works
-#iconUrl: /learn/achievements/cmu-cloud-admin/cmu-orchestration.svg
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/cmu-cloud-admin/cmu-orchestration.svg
 levels:
 - beginner
 roles:

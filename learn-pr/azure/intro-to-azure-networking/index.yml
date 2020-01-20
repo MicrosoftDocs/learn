@@ -23,6 +23,7 @@ roles:
 - developer
 - administrator
 - solution-architect
+- student
 products:
 - azure
 - azure-virtual-network

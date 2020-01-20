@@ -3,7 +3,7 @@
 Let's walk through the basic steps necessary to configure and enable Azure Multi-Factory Authentication using Conditional policies. **Keep in mind that a real deployment requires significant thought and planning**. Make sure you review the documentation links at the end of this module before you enable MFA for your environments.
 
 > [!IMPORTANT]
-> Azure AD Premium is need for this exercise. You can use a [30-day free trial](https://azure.microsoft.com/en-us/trial/get-started-active-directory/) to try this feature out, or just read through the instructions below to understand the flow.
+> Azure AD Premium is need for this exercise. You can use a [30-day free trial](https://azure.microsoft.com/trial/get-started-active-directory/) to try this feature out, or just read through the instructions below to understand the flow.
 
 ## Configure Multi-Factor Authentication options
 

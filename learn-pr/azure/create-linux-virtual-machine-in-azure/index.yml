@@ -23,6 +23,7 @@ levels:
 roles:
 - administrator
 - developer
+- student
 products:
 - azure
 - azure-portal

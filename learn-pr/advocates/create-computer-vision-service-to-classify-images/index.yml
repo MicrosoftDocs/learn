@@ -24,6 +24,7 @@ levels:
 roles:
 - developer
 - ai-engineer
+- student
 products:
 - azure
 - azure-clis

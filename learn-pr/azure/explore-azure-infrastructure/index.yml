@@ -23,6 +23,7 @@ roles:
 - administrator
 - developer
 - solution-architect
+- student
 products:
 - azure
 units:

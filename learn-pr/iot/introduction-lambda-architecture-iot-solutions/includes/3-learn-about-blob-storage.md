@@ -4,7 +4,7 @@ An example of _structured_ storage would be a large database, each entry in the 
 
 When you create a _storage account_ via the Azure portal, Blob storage is the default option. In the following image, note the use of the hot and cool metaphors to identify the purpose of the storage.
 
-![Screenshot of the Create Storage Account page of the Azure portal](../media/lambda-blob-storage-create.png)
+[![Screenshot of the Create Storage Account page of the Azure portal](../media/lambda-blob-storage-create.png)](../media/lambda-blob-storage-create.png#lightbox)
 
 ### Specify the type of Blob storage
 
@@ -12,7 +12,7 @@ Blob storage, by default, has a _general purpose_ setting applied. Whatever data
 
 You can improve the efficiency of your Blobs by specifying a role for them, when uploading data. There are three roles: _Block blob_, _Page blob_, and _Append blob_.
 
-![Screenshot of the Upload Blob page of the Azure portal](../media/lambda-blob-type.png)
+[![Screenshot of the Upload Blob page of the Azure portal](../media/lambda-blob-type.png)](../media/lambda-blob-type.png#lightbox)
 
 Let's start with the append blobs as it's the easiest to describe. An append blob, as its name implies, can  _only_ be appended to, and is ideal for log files. A log file is never edited, and just grows and grows! There's plenty of space in the cloud.
 
@@ -28,7 +28,7 @@ Blob storage can be accessed via API calls. Developers can write apps, of any co
 
 ### Consider data security
 
-Azure Blob storage is automatically encrypted , at no extra cost and with no extra setup. The system used is called _Storage Service Encryption_, or SSE. In addition, data can be secured _in transit_, between an app and Azure, using _Client-Side Encryption_, HTTPS, or SMB 3.0.
+Azure Blob storage is automatically encrypted, at no extra cost and with no extra setup. The system used is called _Storage Service Encryption_, or SSE. In addition, data can be secured _in transit_, between an app and Azure, using _Client-Side Encryption_, HTTPS, or SMB 3.0.
 
 ## Upgrade to Data Lake Storage Gen2
 

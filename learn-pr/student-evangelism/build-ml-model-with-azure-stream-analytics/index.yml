@@ -28,6 +28,7 @@ levels:
 roles:
 - developer
 - data-scientist
+- student
 products:
 - azure
 - power-bi

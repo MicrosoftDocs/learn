@@ -19,7 +19,7 @@ abstract: |
   - Learn about processes that you can implement to monitor site reliability.
   - See how blameless postmortems encourage a "just culture" that balances safety and accountability.
 prerequisites: An Azure DevOps organization
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/generic-trophy.svg
 ratingEnabled: true
 levels:
 - intermediate
