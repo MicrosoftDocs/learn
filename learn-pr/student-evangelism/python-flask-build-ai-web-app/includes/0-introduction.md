@@ -23,6 +23,6 @@ In this module, you build a website named "Contoso Travel" step by step. First, 
 
 ## Prerequisites
 
-None
+None.
 
 Sound like fun? Then let's get started.

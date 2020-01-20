@@ -18,7 +18,7 @@ abstract: |
   - Learn how to use Azure Cognitive Services to translate text
   - Learn how to deploy a Flask website to Azure
 prerequisites: None
-iconUrl: /learn/achievements/student-evangelism/python-flask-build-ai-web-app-generic-badge.svg
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - intermediate
 roles:

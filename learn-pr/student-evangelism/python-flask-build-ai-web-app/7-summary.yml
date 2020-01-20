@@ -15,7 +15,7 @@
   quiz:
     title: Check your knowledge
     questions:
-    - content: "Flask is a framework for building Web apps in which of the following languages?"
+    - content: "Flask is a framework for building web apps in which of the following languages?"
       choices:
       - content: "Python, Node.js, and Java"
         isCorrect: false
@@ -57,15 +57,15 @@
       - content: "127"
         isCorrect: false
         explanation: "Incorrect."
-    - content: "Which of the following Azure CLI commands adds an application setting named API_KEY to an App Service named 'contoso'?"
+    - content: "Which of the following Azure CLI commands adds an application setting named API_KEY to an App Service named `contoso`?"
       choices:
       - content: "`az webapp config appsettings set -g contoso-rg -n contoso-travel --settings API_KEY=a1b2c3d4`"
         isCorrect: true
         explanation: "Correct!"
-      - content: "az webapp config appsettings add -g contoso-rg -n contoso-travel --settings API_KEY=a1b2c3d4"
+      - content: "`az webapp config appsettings add -g contoso-rg -n contoso-travel --settings API_KEY=a1b2c3d4`"
         isCorrect: false
         explanation: "Incorrect."
-      - content: "az appsvc config appsettings set -g contoso-rg -n contoso-travel --settings API_KEY=a1b2c3d4"
+      - content: "`az appsvc config appsettings set -g contoso-rg -n contoso-travel --settings API_KEY=a1b2c3d4`"
         isCorrect: false
         explanation: "Incorrect."
       - content: "None of the above; application settings must be added through the Azure portal"
@@ -73,10 +73,10 @@
         explanation: "Incorrect."
     - content: "Which of the following are valid expression delimiters in Flask?"
       choices:
-      - content: "<b>{{</b> and <b>}}</b>"
+      - content: "`{{` and `}}`"
         isCorrect: false
         explanation: "Incorrect."
-      - content: "<b>{%</b> and <b>%}</b>"
+      - content: "`{%` and `%}`"
         isCorrect: false
         explanation: "Incorrect."
       - content: "Both A and B"
@@ -85,7 +85,7 @@
       - content: "None of the above"
         isCorrect: false
         explanation: "Incorrect."
-    - content: "How are messages 'flashed' with Flask's <b>flash()</b> method shown by default?"
+    - content: "How are messages <i>flashed</i> with Flask's `flash()` method shown by default?"
       choices:
       - content: "In alert boxes"
         isCorrect: true
@@ -93,7 +93,7 @@
       - content: "In modal popup windows that are browser-specific"
         isCorrect: false
         explanation: "Incorrect."
-      - content: "In `<div>` elements decorated with <b>class='flash'</b> attributes"
+      - content: "In `<div>` elements decorated with `class='flash'` attributes"
         isCorrect: false
         explanation: "Incorrect."
       - content: "Flashed messages are not shown by default"
@@ -101,15 +101,15 @@
         explanation: "Incorrect."
     - content: "By default, HTML files served up by Flask must be located in a directory named:"
       choices:
-      - content: "static"
+      - content: "<b>static</b>"
         isCorrect: true
         explanation: "Correct!"
-      - content: "html"
+      - content: "<b>html</b>"
         isCorrect: false
         explanation: "Incorrect."
-      - content: "templates"
+      - content: "<b>templates</b>"
         isCorrect: false
         explanation: "Incorrect."
-      - content: "main"
+      - content: "<b>main</b>"
         isCorrect: false
         explanation: "Incorrect."
