@@ -18,7 +18,7 @@ abstract:  |
   - Learn how to inherit classes
   - Learn how to add methods and attributes to inherited classes
   - Learn how to override methods inherited from a base class
-Prerequisites: |
+prerequisites: |
   None
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
