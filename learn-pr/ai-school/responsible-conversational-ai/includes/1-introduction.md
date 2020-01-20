@@ -10,8 +10,8 @@ Microsoft has created special guidelines for the development of responsible Conv
 
 **In this module, you will learn to:**
 
-* a
-* b
-* c
+* Identify the different types of Conversational AI bots and common stakeholders
+* Learn the benefits of making bots transparent and trustworthy
+* Discover guidelines to ensure bots are reliable and accessible
 
 Let’s explore the Microsoft guidelines for development of responsible Conversational AI.

@@ -13,7 +13,9 @@ title: Discover Microsoft guidelines for responsible Conversational AI developme
 summary: Learn Microsoft guidelines for the development of responsible Conversational AI, such as chat bots and voice-controlled systems.
 abstract: | 
   In this module, you will:
-  - Learning objective 1
+  - Identify the different types of Conversational AI bots and common stakeholders
+  - Learn the benefits of making bots transparent and trustworthy
+  - Discover guidelines to ensure bots are reliable and accessible 
 prerequisites: None
 iconUrl: /learn/achievements/responsible-conversational-ai.svg
 levels: 
@@ -31,5 +33,6 @@ units:
 - learn-wwl.responsible-conversational-ai.transparent-trustworthy-bots
 - learn-wwl.responsible-conversational-ai.ensure-bot-reliability
 - learn-wwl.responsible-conversational-ai.make-your-bot-accessible
+- learn-wwl.responsible-conversational-ai.knowledge-check
 badge: 
   uid: learn-wwl.responsible-conversational-ai.badge #add the uid for your achievement badge.

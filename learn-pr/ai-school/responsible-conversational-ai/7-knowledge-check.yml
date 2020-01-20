@@ -1,0 +1,74 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.responsible-conversational-ai.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: A knowledge check for the discover Microsoft guidelines for responsible Conversational AI development module.
+  ms.date: 04/26/2019
+  author: RWortmanMorris
+  ms.author: rawortma
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 2
+content: |
+  [!include[](includes/7-knowledge-check.md)] 
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What are the four types of Conversational AI bots?"
+    choices:
+    - content: "Retail, financial, information consumption, and decision support."
+      isCorrect: false
+      explanation: "Incorrect. While information consumption and decision support are types of Conversational AI bots, retail and finance are industries in which bots are deployed. Bots deployed in these industries have their own specific considerations, multiple types of bots are used in these industries."
+    - content: "Casual conversation engagement, information consumption, task completion, and decision support."
+      isCorrect: true
+      explanation: "Correct. Casual conversation engagement bots are for facilitating social engagement, information consumption bots try to assist the user by answering user questions, task completion bots aim here is to assist the user by helping them get tasks done, and decision support bots help users come to a decision."
+    - content: "Banking, healthcare, task completion, and information consumption."
+      isCorrect: false
+      explanation: "Incorrect. While task completion and information consumption are types of Conversational AI bots, banking and healthcare are industries in which bots are deployed. Bots deployed in these industries have their own specific considerations, multiple types of bots are used in these industries."
+    - content: "Accessible, transparent, casual conversation engagement, and decision support."
+      isCorrect: false
+      explanation: "Incorrect. Casual conversation engagement and decision support are types of bots, all bots should be accessible and transparent. Not only specific types of bots."
+  - content: "What is one way to help build transparent and trustworthy bots?"
+    choices:
+    - content: "Make sure your users know they’re working with a bot."
+      isCorrect: true
+      explanation: "Correct. If a user is unaware they’re talking to a bot, they might believe that they are talking to another human being. Only to find out later that they aren't, and lost trust in the bot."
+    - content: "Add personality to your bot."
+      isCorrect: false
+      explanation: "Incorrect. Adding personality to your bot can improve user experience, but it does not help improve the bots reliability and trustworthiness."
+    - content: "Have your bot offer different services."
+      isCorrect: false
+      explanation: "Incorrect. Actually, the opposite is true as the financial services industry has an assortment of both structured and unstructured data on their customers."
+    - content: "Hide the fact that users are interacting with a bot until the end of the user interaction."
+      isCorrect: false
+      explanation: "Incorrect. The financial services industry has embraced digital services and has, in fact, moved rapidly to implement new technologies and services."
+  - content: "How you can help ensure your bot is reliable?"
+    choices:
+    - content: "Do not use open-source software to build and deploy the bot."
+      isCorrect: false
+      explanation: "Incorrect. Many of the most reliable software libraries are open-source software."
+    - content: "Shut down the bot weekly for maintenance."
+      isCorrect: false
+      explanation: "Incorrect. Routinely shutting down your bot does not increase reliability, and is unnecessary."
+    - content: "Build your own natural language processing libraries."
+      isCorrect: false
+      explanation: "Incorrect. It is extremely unlikely that your own natural language processing libraries would be more reliable and perform as well as than what is currently in industry."
+    - content: "Help the user understand how the bot can help them - and explain the bot’s limitations."
+      isCorrect: true
+      explanation: "Correct. If you tell the user up-front exactly how the bot is designed to help them, and explain the ways they can use it or things they can ask it for, they’re more likely to interact with it in a useful way."
+  - content: "Why should people with disabilities be included in your testing process?"
+    choices:
+    - content: "Feedback on your bot from users with disabilities will help determine whether the bot can be used as intended by the broadest possible audience."
+      isCorrect: true
+      explanation: "Correct. Users with disabilities give vital, knowledgeable feedback on how accessible your bot."
+    - content: "They shouldn't. Remove them from testing processes."
+      isCorrect: false
+      explanation: "Incorrect. Users with disabilities give vital feedback on how accessible your bot is that you may not get from elsewhere, and will continue to play an active and essential part in testing and decision-making."
+    - content: "Different types of feedback help train machine learning models to be more accurate."
+      isCorrect: false
+      explanation: "Incorrect. User feedback will not help improve bot accessibility or the accuracy of machine learning models."
+    - content: "People with disabilities have accessibility guidelines that are not available to the public."
+      isCorrect: false
+      explanation: "Incorrect. Accessibility guidelines, such as the W3C guidelines, available to the public and easy for anyone to access."
