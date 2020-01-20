@@ -1,13 +1,13 @@
 Session three introduced automated builds and deployments to VanArsdel's project. This is handy, because in this session we are going to move away from our filesystem-based image storage to a cloud based solution. To get there, we are going to write some code and with automated builds in place, our deployed solution will automatically be updated on Azure.
 
+To follow along with the session, we recommend getting the project into the state we had at the end of session three. 
+
 ## Objectives
 In this session, you will:
 
 - Analyze the existing storage implementation
 - Explain the four Azure Storage services
 - Select an appropriate storage approach
-
-To follow along with the session, we recommend getting the project into the state we had at the end of session three. 
 
 ## The instructions and scripts provided in this document will:
 
@@ -36,7 +36,10 @@ To follow along with the session, we recommend getting the project into the stat
 
 Copy the following command and paste it into Cloud Shell:
 
-`wget -O prepsession4.bash https://raw.githubusercontent.com/MicrosoftDocs/mslearn-live-migrating-to-the-cloud/master/scripts/02_deploy_app_service_and_database.bash && chmod +x ./prepsession4.bash && ./prepsession4.bash`
+```azurecli
+wget -O prepsession4.bash https://raw.githubusercontent.com/MicrosoftDocs/mslearn-live-migrating-to-the-cloud/master/scripts/02_deploy_app_service_and_database.bash 
+&& chmod +x ./prepsession4.bash && ./prepsession4.bash
+```
 
 > [!NOTE]
 > The script will prompt you to enter the URL of **your fork** of the Github repo.

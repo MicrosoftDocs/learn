@@ -1,18 +1,18 @@
 Session one ended with the web application being migrated into an Azure App Service. In session two, we migrate the local database and its data into the cloud.
 
+If you do not have access to the deployed solution (maybe you deleted it to save money or used the Learn Live Sandbox), please follow these instructions.
+
 ## Objectives
 In this session, you will:
 
 - Select the appropriate Azure database solution for VanArsdel
 - Migrate on-premises data into Azure
 
-If you do not have access to the deployed solution (maybe you deleted it to save money or used the Learn Live Sandbox), please follow these instructions.
-
 ## The instructions and scripts provided in this document will:
 
 1. Create an App Service Plan
-2. Create an App Service
-3. Deploy the app directly from Github into the App Service
+1. Create an App Service
+1. Deploy the app directly from Github into the App Service
 
 ## Prepare your environment
 
@@ -32,7 +32,10 @@ If you do not have access to the deployed solution (maybe you deleted it to save
 
 Copy the following command and paste it into Cloud Shell:
 
-`wget -O prepsession2.bash https://raw.githubusercontent.com/MicrosoftDocs/mslearn-live-migrating-to-the-cloud/master/scripts/01_deploy_app_service.bash && chmod +x ./prepsession2.bash && ./prepsession2.bash`
+```azurecli
+wget -O prepsession2.bash https://raw.githubusercontent.com/MicrosoftDocs/mslearn-live-migrating-to-the-cloud/master/scripts/01_deploy_app_service.bash 
+&& chmod +x ./prepsession2.bash && ./prepsession2.bash
+```
 
 > [!NOTE]
 > The script will prompt you to enter the URL of **your fork** of the Github repo.

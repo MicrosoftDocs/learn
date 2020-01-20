@@ -1,12 +1,12 @@
 At the end of the second session we had the VanArsdel solution running up on Azure as an App Service and made it connect to an Azure SQL database. The Azure Data Migration Assistant helped us move our data from the local database instance into the cloud.
 
+To follow along with the session, we recommend getting the project into the state we had at the end of session two.
+
 ## Objectives
 In this session, you will:
 
 - Identify the benefits of automated deployments vs manual deployment
 - Automate your build and deployment using Azure App Service Deployment Center
-
-To follow along with the session, we recommend getting the project into the state we had at the end of session two.
 
 ## The instructions and scripts provided in this document will:
 
@@ -35,7 +35,10 @@ To follow along with the session, we recommend getting the project into the stat
 
 Copy the following command and paste it into Cloud Shell:
 
-`wget -O prepsession3.bash https://raw.githubusercontent.com/MicrosoftDocs/mslearn-live-migrating-to-the-cloud/master/scripts/02_deploy_app_service_and_database.bash && chmod +x ./prepsession3.bash && ./prepsession3.bash`
+```azurecli
+wget -O prepsession3.bash https://raw.githubusercontent.com/MicrosoftDocs/mslearn-live-migrating-to-the-cloud/master/scripts/02_deploy_app_service_and_database.bash 
+&& chmod +x ./prepsession3.bash && ./prepsession3.bash
+```
 
 > [!NOTE]
 > The script will prompt you to enter the URL of **your fork** of the Github repo.

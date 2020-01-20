@@ -1,13 +1,13 @@
 In session four we added a centralized, cloud-based storage to VanArsdel's solution. Now that the project is fully running in the cloud, we want to make sure things are going well.
 
+To follow along with the session, we recommend getting the project into the state we had at the end of session four.
+
 ## Objectives
 In this session, you will:
 
 - Monitor your application against metrics
 - Configure Alerts when your application hits certain thresholds
 - Setup scaling rules for your application
-
-To follow along with the session, we recommend getting the project into the state we had at the end of session four.
 
 ## The instructions and scripts provided in this document will:
 
@@ -39,7 +39,10 @@ To follow along with the session, we recommend getting the project into the stat
 
 Copy the following command and paste it into Cloud Shell:
 
-`wget -O prepsession5.bash https://raw.githubusercontent.com/MicrosoftDocs/mslearn-live-migrating-to-the-cloud/master/scripts/03_deploy_app_service_and_database_and_storage.bash && chmod +x ./prepsession5.bash && ./prepsession5.bash`
+```azurecli
+wget -O prepsession5.bash https://raw.githubusercontent.com/MicrosoftDocs/mslearn-live-migrating-to-the-cloud/master/scripts/03_deploy_app_service_and_database_and_storage.bash 
+&& chmod +x ./prepsession5.bash && ./prepsession5.bash
+```
 
 > [!NOTE]
 > The script will prompt you to enter the URL of **your fork** of the Github repo.
