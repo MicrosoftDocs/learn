@@ -55,7 +55,7 @@ You can create a workspace in any of the following ways:
     az ml workspace create -w 'aml-workspace' -g 'aml-resources'
 ```
 
-- Create an Azure resource Manager template. For more information the template format for an Azure Machine Learning workspace, see the [Azure Machine Learning documentation](https://aka.ms/AA70rq4).
+- Create an Azure Resource Manager template. For more information the template format for an Azure Machine Learning workspace, see the [Azure Machine Learning documentation](https://aka.ms/AA70rq4).
 
 ## Considerations for Creating a Workspace
 
@@ -67,7 +67,8 @@ Your workspace will be created in an Azure region, which determines the data cen
 
 For example, you might need to create virtual machines in your workspace to support notebook development or model training. If you intend to leverage graphical processing unit (GPU) processing, which are commonly used to perform training of deep neural network (DNN) models, then you should ensure that the region where your workspace is hosted supports the appropriate series of virtual machines (for example, NC-series virtual machines support vGPUs, but are not available in all regions).
 
-> **Tip**: You can check for specific resource availability by region in the [Azure Global Infrastructure *products available by region* page](https://aka.ms/AA70zfd).
+> [!TIP] 
+> You can check for specific resource availability by region in the [Azure Global Infrastructure *products available by region* page](https://aka.ms/AA70zfd).
 
 ### Edition
 
@@ -76,4 +77,5 @@ Azure Machine Learning workspaces are available in two editions:
 - *Enterprise* - includes all features.
 - *Basic* - includes core features, but does not include *Designer* or graphical tools for automated machine learning or data drift monitoring.
 
-> **Tip**: You can upgrade from *Basic* to *Enterprise* edition at any time.
+> [!TIP] 
+> You can upgrade from *Basic* to *Enterprise* edition at any time.
