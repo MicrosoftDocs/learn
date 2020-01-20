@@ -16,7 +16,7 @@ When you’re designing your bot, you can assess how it will comply with the int
 - Have epilepsy
 - Have dyslexia
 
-*There are many frameworks that take accessibility into consideration, or are designed for it from the ground up; one of these is the Microsoft Inclusive Design toolkit. Use this to design bots that recognize exclusion, learn from diversity, and solve for ability constraints.*
+*There are many frameworks that take accessibility into consideration, or are designed for it from the ground up; one of these is the [Microsoft Inclusive Design toolkit](https://download.microsoft.com/download/b/0/d/b0d4bf87-09ce-4417-8f28-d60703d672ed/inclusive_toolkit_manual_final.pdf). Use this to design bots that recognize exclusion, learn from diversity, and solve for ability constraints.*
 
 ## Accessibility testing
 
