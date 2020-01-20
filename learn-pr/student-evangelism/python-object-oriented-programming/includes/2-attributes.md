@@ -54,7 +54,7 @@ So that we have some data to work with, let's load a database of facial images. 
 	print(faces.data.shape)
 	```
 
-	The first line imports the Scikit-learn function that loads the datset. The second loads the dataset, and the third shows the shape of the dataset.
+	The first line imports the Scikit-learn function that loads the dataset. The second loads the dataset, and the third shows the shape of the dataset.
 
 1. Run the code and examine the output. The dataset contains 400 faces, each of which consists of an image with 4,096 pixels. The dataset contains 10 photos each of 40 different people. The first ten images in `faces.images` represent the first person, the next 10 images represent the second person, and so on.
 
