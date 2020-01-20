@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.ms-learn-live.1-introduction
-title: Introduction
+title: Migrate an ASP.NET Core application from an on-premises environment into Azure
 metadata:
-  title: Introduction
-  description: Introduction
-  ms.date: 1/16/2020
+  title: Migrate an ASP.NET Core application from an on-premises environment into Azure
+  description: Migrate an ASP.NET Core application from an on-premises environment into Azure
+  ms.date: 1/20/2020
   author: krumelur
   ms.author: renrup
   ms.topic: interactive-tutorial

@@ -1,7 +1,6 @@
-# Prepare for session 5: "Monitor and scale your applications in Azure"
-
 In session four we added a centralized, cloud-based storage to VanArsdel's solution. Now that the project is fully running in the cloud, we want to make sure things are going well.
 
+## Objectives
 In this session, you will:
 
 - Monitor your application against metrics

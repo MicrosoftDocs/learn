@@ -1,16 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.ms-learn-live.4-session-3-prep
-title: Prepare for session three
+title: Prepare for session 3 - "Automate your build and deployment process"
 metadata:
-  title: Prepare for session three
-  description: Get ready to participate in session three of this Learn Live series
-  ms.date: 1/16/2020
+  title: Prepare for session 3 - "Automate your build and deployment process"
+  description: Prepare for session 3 - "Automate your build and deployment process"
+  ms.date: 1/20/2020
   author: krumelur
   ms.author: renrup
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: true
 interactive: bash
-durationInMinutes: 3
+durationInMinutes: 10
 content: |
   [!include[](includes/4-session-3-prep.md)]

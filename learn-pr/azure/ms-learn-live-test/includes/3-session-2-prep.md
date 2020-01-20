@@ -1,7 +1,6 @@
-# Prepare for session 2: "Choose an appropriate database solution"
-
 Session one ended with the web application being migrated into an Azure App Service. In session two, we migrate the local database and its data into the cloud.
 
+## Objectives
 In this session, you will:
 
 - Select the appropriate Azure database solution for VanArsdel

@@ -1,7 +1,6 @@
-# Prepare for session 4: "Identify the benefits of Azure Storage"
-
 Session three introduced automated builds and deployments to VanArsdel's project. This is handy, because in this session we are going to move away from our filesystem-based image storage to a cloud based solution. To get there, we are going to write some code and with automated builds in place, our deployed solution will automatically be updated on Azure.
 
+## Objectives
 In this session, you will:
 
 - Analyze the existing storage implementation

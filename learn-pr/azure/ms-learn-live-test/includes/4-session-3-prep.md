@@ -1,7 +1,6 @@
-# Prepare for session 3: "Automate your build and deployment process"
-
 At the end of the second session we had the VanArsdel solution running up on Azure as an App Service and made it connect to an Azure SQL database. The Azure Data Migration Assistant helped us move our data from the local database instance into the cloud.
 
+## Objectives
 In this session, you will:
 
 - Identify the benefits of automated deployments vs manual deployment
