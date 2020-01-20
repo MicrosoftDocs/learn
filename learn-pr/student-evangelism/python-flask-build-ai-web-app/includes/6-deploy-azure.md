@@ -4,6 +4,8 @@ Azure Web Apps makes deploying websites extraordinarily easy, and not just websi
 
 In this unit, you will deploy Contoso Travel to Azure as an Azure web app so it can be accessed by anyone, from anywhere, using a browser. And you will learn about App Service application settings, which allow API keys and other "secrets" used by an application to be stored securely in the cloud.
 
+Solutions used in the exercises are located in a [Git repository](https://github.com/MicrosoftDocs/mslearn-build-ai-web-app-with-python-and-flask). 
+
 ## Create an Azure App Service
 
 In this exercise, you will use the [Azure CLI](https://docs.microsoft.com/cli/azure/get-started-with-azure-cli?view=azure-cli-latest) to deploy your website to Azure.
@@ -56,9 +58,9 @@ When you ran the website locally, it used `os.environ` to load API keys for the 
 
 If you would like, you can log into the [Azure portal](https://portal.azure.com), open the Azure App Service created by the `az webapp up` command, and view the application settings that these commands created. The screenshot below illustrates what you will see if you do.
 
-![Viewing application settings in the Azure portal](../media/app-settings.png)
+![View application settings in the Azure portal](../media/app-settings.png)
 
-_Viewing application settings in the Azure portal_
+_View application settings in the Azure portal_
 
 ## Run the site in Azure
 

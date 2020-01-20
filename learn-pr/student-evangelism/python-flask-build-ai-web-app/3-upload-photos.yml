@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.python-flask-build-ai-web-app.3-upload-photos
-title: Build a page for uploading photos
+title: Exercise - Build a page for uploading photos
 metadata:
-  title: Build a page for uploading photos
+  title: Exercise - Build a page for uploading photos
   description: Build a page that allows users to upload photos.
   ms.date: 01/31/2020
   author: GeekTrainer

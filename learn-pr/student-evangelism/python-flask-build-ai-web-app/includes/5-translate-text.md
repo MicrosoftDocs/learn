@@ -4,6 +4,8 @@ Like the Computer Vision API, the Translator Text API is invoked using REST call
 
 It's not as hard as it sounds, as you will prove when you modify the Contoso Travel site to pass text extracted from photos by the Computer Vision API to the Translator Text API for translation into another language.
 
+Solutions used in the exercises are located in a [Git repository](https://github.com/MicrosoftDocs/mslearn-build-ai-web-app-with-python-and-flask). 
+
 ## Subscribe to the Translator Text API
 
 In order to call the Translator Text API, you must obtain an API key. As with the Computer Vision API, this key travels in each request you place to the Translator Text API in an `Ocp-Apim-Subscription-Key` header and maps calls to Azure subscriptions.
@@ -14,7 +16,7 @@ In order to call the Translator Text API, you must obtain an API key. As with th
 	az cognitiveservices account create --resource-group contoso-travel-rg --name translator-text --location global --kind TextTranslation --sku F0 --yes
 	```
 
-	Unlike the Computer Vision API, which requires you to specify an Azure region, the Translator Text API is a "global" API that doesn't live in a specific region. That's the reason for the `--location global` parameter. Among other things, this means that you don't have to retrieve an endpoint URL for the Translator Text API as you do for the Computer Vision API. One endpoint—https://api.cognitive.microsofttranslator.com/translate?api-version=3.0—serves all regions. 
+	Unlike the Computer Vision API, which requires you to specify an Azure region, the Translator Text API is a "global" API that doesn't live in a specific region. That's the reason for the `--location global` parameter. Among other things, this means that you don't have to retrieve an endpoint URL for the Translator Text API as you do for the Computer Vision API. One endpoint, https://api.cognitive.microsofttranslator.com/translate?api-version=3.0, serves all regions. 
 
 1. Use the following command to obtain an API key for the Translator Text API:
 

@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.python-flask-build-ai-web-app.5-translate-text
-title: Use Cognitive Services to translate text
+title: Exercise - Use Cognitive Services to translate text
 metadata:
-  title: Use Cognitive Services to translate text
+  title: Exercise - Use Cognitive Services to translate text
   description: Use Azure Cognitive Services to translate text extracted from photos.
   ms.date: 01/31/2020
   author: GeekTrainer
