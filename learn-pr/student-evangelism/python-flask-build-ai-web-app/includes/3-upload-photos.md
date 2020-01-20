@@ -6,7 +6,7 @@ Solutions used in the exercises are located in a [Git repository](https://github
 
 1. If [Git](https://wikipedia.org/wiki/Git) isn't installed on your computer, go to the [Git website](https://git-scm.com/) and install it now. Versions are available for Windows, macOS, and Linux.
 
-1. In a Command Prompt window or terminal, `cd` to the project directory you created in the previous unit. Then use the following command to clone the GitHub repo containing the starter files for the website:
+1. In a Command Prompt window or terminal, `cd` to the project directory you created in an earlier unit. Then use the following command to clone the GitHub repo containing the starter files for the website:
 
 	```bash
 	git clone https://github.com/MicrosoftDocs/mslearn-build-ai-web-app-with-python-and-flask.git .
