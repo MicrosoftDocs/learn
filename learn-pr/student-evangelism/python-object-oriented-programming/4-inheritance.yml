@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.oop-in-python.4-inheritance
+uid: learn.student-evangelism.python-object-oriented-programming.4-inheritance
 title: Inheritance
 metadata:
   title: Inheritance
@@ -8,7 +8,7 @@ metadata:
   author: shanamatthews
   ms.author: shanama
   ms.topic: interactive-tutorial
-  ms.prod: learn-python
+  ms.prod: learning-python
 durationInMinutes: 10
 content: |
   [!include[](includes/4-inheritance.md)]

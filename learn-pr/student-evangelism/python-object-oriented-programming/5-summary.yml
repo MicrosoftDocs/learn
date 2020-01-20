@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.oop-in-python.5-summary
-title: Summary
+uid: learn.student-evangelism.python-object-oriented-programming.5-summary
+title: Summary and knowledge check
 metadata:
-  title: Summary
-  description: Summary
+  title: Summary and knowledge check
+  description: Summary and knowledge check
   ms.date: 02/17/2020
   author: shanamatthews
   ms.author: shanama
   ms.topic: interactive-tutorial
-  ms.prod: learn-python
+  ms.prod: learning-python
 durationInMinutes: 5
 content: |
   [!include[](includes/5-summary.md)]
