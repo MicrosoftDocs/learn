@@ -102,14 +102,14 @@
     - content: "By default, HTML files served up by Flask must be located in a directory named:"
       choices:
       - content: "<b>static</b>"
-        isCorrect: true
-        explanation: "Correct!"
+        isCorrect: false
+        explanation: "Incorrect."
       - content: "<b>html</b>"
         isCorrect: false
         explanation: "Incorrect."
       - content: "<b>templates</b>"
-        isCorrect: false
-        explanation: "Incorrect."
+        isCorrect: true
+        explanation: "Correct!"
       - content: "<b>main</b>"
         isCorrect: false
         explanation: "Incorrect."

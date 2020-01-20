@@ -12,9 +12,9 @@ def index():
 
 The first statement imports a class named `Flask` from the `flask` package installed with `pip`. The second statement instantiates that class to create a Flask app and assigns it to the variable named `app`.
 
-The fourth and fifth statements define a function that's called when the user requests the site's home page—for example, "http://www.contoso.com/." The preceding statement—`@app.route("/")`—is a *decorator* that maps the route ("/") to the function. The function name is unimportant, but `index` is commonly used as the name for the function that renders the site's home page.
+The fourth and fifth statements define a function that's called when the user requests the site's home page—for example, **http:\//www\.contoso\.com/**. The preceding statement—`@app.route("/")`—is a *decorator* that maps the route ("/") to the function. The function name is unimportant, but `index` is commonly used as the name for the function that renders the site's home page.
 
-> If you want to use a name other **app.py** for the Python file, simply identify the file with a FLASK_APP environment variable and Flask will happily execute it rather than **app.py**.
+If you want to use a name other **app.py** for the Python file, simply identify the file with a FLASK_APP environment variable and Flask will happily execute it rather than **app.py**.
 
 ## Routing in Flask
 
@@ -41,11 +41,11 @@ def contact():
     return "<h1>This the Contact Us page</h1>"
 ``` 
 
-If the app is hosted at www.contoso.com, it now supports the following URLs:
+If the app is hosted at www\.contoso\.com, it now supports the following URLs:
 
-- www.contoso.com/
-- www.contoso.com/about
-- www.contoso.com/contact
+- www\.contoso\.com\/
+- www\.contoso\.com\/about
+- www\.contoso\.com\/contact
 
 You can continue adding routes and functions until all the pages that your site supports are accessible by URL. Once more, the function names are unimportant. It's the routes that count.
 

@@ -59,7 +59,7 @@ Now that you have an environment for Python and Flask prepared and have the basi
 	flask run
 	```
 
-1. Open a browser and navigate to http://localhost:5000. Confirm that the website appears in the browser as shown below.
+1. Open a browser and navigate to http\:\//localhost\:5000. Confirm that the website appears in the browser as shown below.
 
 	![Contoso Travel](../media/initial-run.png)
 
@@ -130,7 +130,7 @@ In this exercise, you will modify **index.html** and **app.py** so users can upl
 	    return render_template("index.html", image_uri=uri)
 	```
 
-	The revised **app.py** still serves up the content in **index.html** when the home page is requested. But when the user uploads a photo and the page is requested again with a POST command, the new code retrieves the uploaded image from the request (`image = request.files["file"]`), base-64 encodes it to create a [data URI](https://en.wikipedia.org/wiki/Data_URI_scheme), and assigns the data URI to the `<img>` element declared in the page. This is a common technique for displaying an uploaded image in a webpage without writing the image to a temporary file on disk.
+	The revised **app.py** still serves up the content in **index.html** when the home page is requested. But when the user uploads a photo and the page is requested again with a POST command, the new code retrieves the uploaded image from the request (`image = request.files["file"]`), base-64 encodes it to create a [data URI](https://wikipedia.org/wiki/Data_URI_scheme), and assigns the data URI to the `<img>` element declared in the page. This is a common technique for displaying an uploaded image in a webpage without writing the image to a temporary file on disk.
 
 1. Return to **index.html** and find the `<img>` element on line 42. Replace `/static/placeholder.png` on that line with `{{ image_uri }}`. Here is the modified line:  
 
@@ -146,7 +146,7 @@ Finish up by saving your changes to **index.html** and **app.py**. It's time to 
 
 Let's make sure your changes have the desired effect by uploading a photo to the site.
 
-1. Assuming Flask is still running in the project directory (if it's not, you can start it again with a `flask run` command), either refresh the page in your browser or open a new browser instance and navigate to http://localhost:5000.
+1. Assuming Flask is still running in the project directory (if it's not, you can start it again with a `flask run` command), either refresh the page in your browser or open a new browser instance and navigate to http\:\//localhost\:5000.
 
 1. Click the **Upload Photo** button and select a photo from your local file system.
 
