@@ -36,4 +36,5 @@ units:
 - learn.student-evangelism.python-object-oriented-programming.4-inheritance
 - learn.student-evangelism.python-object-oriented-programming.5-summary
 badge:
-  uid: learn.student-evangelism.python-object-oriented-programming.badge 
+  uid: learn.student-evangelism.python-object-oriented-programming.badge
+  
