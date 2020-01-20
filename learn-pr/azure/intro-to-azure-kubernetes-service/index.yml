@@ -25,6 +25,7 @@ roles:
 - developer
 - administrator
 - solution-architect
+- student
 products:
 - azure
 - azure-kubernetes-service

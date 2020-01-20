@@ -19,6 +19,7 @@ levels:
 - intermediate
 roles:
 - data-scientist
+- student
 products:
 - azure
 - azure-databricks

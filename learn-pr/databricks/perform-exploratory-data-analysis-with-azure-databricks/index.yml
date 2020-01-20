@@ -25,6 +25,7 @@ roles:
 - developer
 - data-scientist
 - data-engineer
+- student
 products:
 - azure
 - azure-databricks

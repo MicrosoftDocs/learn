@@ -5,8 +5,8 @@ metadata:
   title: Network types and topologies to use when designing a network
   description: Explore the different network types and topologies used when designing networks.
   ms.date: 01/09/2020
-  author: cwatson-cat
-  ms.author: cwatson
+  author: cryophobia
+  ms.author: chrvaw
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 7
