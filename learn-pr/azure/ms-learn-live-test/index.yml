@@ -34,8 +34,16 @@ metadata:
 # Make this the same as metadata.title
 title: Migrate an ASP.NET Core application from an on-premises environment into Azure
 
-# A one liner to help the learner find out if this series is interesting.
-summary: this is the summary - where is this shown?
+# Describe what the series is about. A combination of the persona and the series context can be used.
+summary: | 
+  As a senior .NET developer working for a real estate business, you are part of an experienced in-house development team and your technology stack is Microsoft's .NET.
+  You are running a website built with ASP.NET Core MVC and SQL Server.
+  It is running on-premises on your own hardware. You have plans to expand the business.
+  This will lead to increased numbers of users hitting the current web application. 
+  You conclude that the expansion plans require to scale-up hardware to handle increased workload and ensure fast response times.
+  Because of high cost related to these investments, you consider a migration of the solution into the cloud.
+  Because of the positive experience with the Microsoft stack in the past you feel comfortable moving to Azure as your cloud provider and expect a smooth transition.
+  Pushing the application to Azure will help mitigate both, the cost and time factor of upgrading the on-premises solution.
 
 # Abstract contains the series' objectives - copy these from your series' design documents session objectives.
 abstract: | 
