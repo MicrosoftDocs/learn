@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.oop-in-python.5-summary
+title: Summary
+metadata:
+  title: Summary
+  description: Summary
+  ms.date: 02/17/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learn-python
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-summary.md)]

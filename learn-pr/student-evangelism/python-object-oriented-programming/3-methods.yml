@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.oop-in-python.3-methods
+title: Methods
+metadata:
+  title: Methods
+  description: Use methods in Python
+  ms.date: 02/17/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learn-python
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-methods.md)]

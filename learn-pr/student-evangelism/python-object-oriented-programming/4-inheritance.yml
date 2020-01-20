@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.oop-in-python.4-inheritance
+title: Inheritance
+metadata:
+  title: Inheritance
+  description: Use inheritance in Python
+  ms.date: 02/17/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learn-python
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-inheritance.md)]
