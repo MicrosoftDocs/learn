@@ -1,10 +1,10 @@
-Azure's built-in identity protection, included in Azure AD Premium P2, gives administrators automated tools to keep users' credentials safe.
+Azure Active Directory Identity Protection (AADIP) is a feature of Azure AD Premium P2. Administrators can test AADIP's automated tools that keep users' credentials safe, through an Azure AD Premium P2 trial.
 
-Your company wants to test the user risk policies that are included with Azure identity protection. 
+Your manager wants you to test the user risk policies that are included with Azure Active Directory Identity Protection.
 
 You'll create a new directory in this exercise and sign up for Azure AD Premium. You'll then enable a user risk policy that forces a password reset for users who are identified as "risky". In the final step, you'll use a TOR browser to trigger the risk policy.
 
-### Configure a sign-in risk policy
+## Configure a sign-in risk policy
 
 1. Sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true) using the same account with which you activated your sandbox.
 
@@ -24,9 +24,9 @@ You'll create a new directory in this exercise and sign up for Azure AD Premium.
 1. Under the **Protect** section, select **Identity Protection**.
 
     > [!NOTE]
-    > Identity protection is a feature of Azure AD Premium P2. For this exercise, you can sign up for a free trial.
+    > Identity Protection is a feature of Azure AD Premium P2. For this exercise, you can sign up for a free trial.
 
-1. At the top of the page, select<!--CE: Please check that I've amended the bold type correctly.--> **Get a Premium trail to use this feature**. In the popout menu, expand the free trial under **AZURE AD PREMIUM P2**, then select **Activate**.
+1. At the top of the page, select **Get a Premium trail to use this feature**. In the popout menu, expand the free trial under **AZURE AD PREMIUM P2**, then select **Activate**.
 
     ![Screenshot showing activating a trial version of Azure AD Premium 2.](../media/4-activate-AD-premium.png)
 
@@ -45,7 +45,7 @@ You'll create a new directory in this exercise and sign up for Azure AD Premium.
 1. At the bottom of the pane, select the **Select** button, then select **Done**.
 1. Select **On** under the **Enforce Policy**, then select **Save**.
 
-### Test the user risk-based policy
+## Test the user risk-based policy
 
 The AI-based approach to identifying risks makes it difficult to consistently trigger the policy. One way to simulate an attacker trying to sign in is to use an IP address based in a different country.
 
@@ -67,8 +67,7 @@ You'll create a VM and install the TOR browser to generate this kind of traffic.
     echo $PASSWORD
     ```
 
-1. While the VM is being created, sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true) with the credentials you used to create the sandbox. 
-
+1. While the VM is being created, sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true) with the credentials you used to create the sandbox.
 
 1. On the Azure portal, in the portal menu, select **Virtual Machines**.
 

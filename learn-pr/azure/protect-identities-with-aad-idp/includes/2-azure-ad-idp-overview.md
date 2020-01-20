@@ -1,15 +1,17 @@
-Azure Active Directory Identity Protection (AADIP) helps you to automatically detect, remediate, and investigate identity-based risks for your organization. AADIP also lets you export all the information collected about risks to third-party tools and solutions for additional analysis.
+Azure Active Directory Identity Protection (AADIP) helps you to automatically detect, remediate, and investigate identity-based risks for your organization. The retail company you work for is very conscious about its reputation. Identities at risk have previously affected its reputation, and ultimately its profitability.
 
-Your company wants you to investigate AADIP. You've been asked to report back on what the service does and how it's used.
+Your manager has asked you to investigate AADIP as a solution. You've been asked to report back on what the service does and how it's used.
 
 In this unit, you'll learn what AADIP is and the risks involved in using it. You'll explore the different workflows you can use in AADIP to protect your identities.
 
-### What is Azure Active Directory Identity Protection?
+## What is Azure Active Directory Identity Protection?
+
+Azure Active Directory Identity Protection (AADIP) is a solution built into Azure Active Directory, that is designed to protect your identities through a three-part process:
 
 ![AADIP overview](../media/2-aadip-overview.png)
 <!-- Please feel free to style according to Learn standards. -->
 
-AADIP helps organizations to automate the detection, investigation, and remediation of risks related to users' identities. 
+Your company specializes in retail, not in identity protection. It wants to continue to focus on its areas of strength, but still ensure that it's protected against identity risks. Your organization can use AADIP to automate the detection, investigation, and remediation of risks related to users' identities.
 
 ### What are risks?
 

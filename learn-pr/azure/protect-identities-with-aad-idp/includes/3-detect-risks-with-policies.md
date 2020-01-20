@@ -1,22 +1,26 @@
 
-Your company wants you to investigate how identity risks are detected in Azure Active Directory Identity Protection. You've been asked to look into risk policies, and how to use them.
+Risk policies make it possible for your organization to respond more appropriately to identity risk.
+
+Previously, your team didn't have the skills in-house and had to hire external contractors to protect identities. Your manager wants to avoid the same situation going forward. Your company needs to able to respond to threats in a controlled and more effective manner.
+
+You've been asked to investigate how identity risks are detected in Azure Active Directory Identity Protection. You've been asked to look into risk policies, and how to use them.
 
 In this unit, you'll investigate what risk policies are. You'll also learn what each type of risk policy is used for, and how to configure and enable them. Then you'll see what the end-user experience is like for each risk policy type.
 
-### What is a risk policy?
+## What is a risk policy?
 
-You configure a risk policy to decide how you want AADIP to respond to a particular type of risk. Do you want to block or allow access? Do you want to make users go through additional authentication before allowing access? Risk policies help you respond to risks rapidly.
+You configure a risk policy to decide how you want AADIP to respond to a particular type of risk. Do you want to block or allow access? Do you want to make users go through additional authentication before allowing access? Risk policies help you respond to risks rapidly. Your company can leverage risk policies and avoid hiring external contractors to handle identity-based risks.
 
 Different risk policies are available, depending on the type of identity risk. You can use a sign-in risk policy or a user risk policy.
 
 ### Sign-in risk policy
 
-A sign-in risk policy scrutinizes every sign-in, and gives it a risk score. This score is based on whether the sign-in was attempted by the person whose credentials are used. You decide which level of risk is acceptable by choosing a threshold of low, medium, or high. Based on the risk level, you choose whether to allow access, block, or allow access only after additional requirements are met. For example, users might be asked to go through multi-factor authentication to remediate detected risks that are considered to be at the medium level. Users could be blocked entirely if the risk is considered high.
+A sign-in risk policy scrutinizes every sign-in, and gives it a risk score. This score is based on whether the sign-in was attempted by the person whose credentials are used. You decide which level of risk is acceptable by choosing a threshold of low, medium, or high. Based on the risk level, you choose whether to allow access, automatically block, or allow access only after additional requirements are met. For example, users might be asked to go through multi-factor authentication to remediate detected risks that are considered to be at the medium level. Users could be blocked entirely if the risk is considered high.
 
 You use a form to configure a sign-in risk policy in the Azure portal. You specify settings such as:
  - The users this policy should target
  - The conditions that must be met, such as how high a score triggers the policy
-  - How you want to respond
+ - How you want to respond
 
   Make sure users have already been registered for Azure Multi-Factor Authentication before applying this policy.
 

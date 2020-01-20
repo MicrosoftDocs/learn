@@ -1,8 +1,10 @@
-You've been asked to investigate and remediate all the risks detected, and share a report with the project manager. The team will then better understand the company's identity-based risks.
+Investigations help you understand how you can improve your identity security posture. Investigations make it possible for you to respond to risks better, and avoid risks in the future.
+
+Your manager has asked you to investigate and remediate all the risks detected and share a report with the project manager. The team will use it to understand the company's identity-based risks better.
 
 In this unit, you'll learn how to investigate risks using reports. You'll see how to remediate different types of risks, and deal with any user accounts that might be blocked.
 
-### Investigate risks
+## Investigate risks
 
 Azure Active Directory Identity Protection (AADIP) provides reports you can use to investigate identity-based risks detected for your organization's users. These reports come in different types. Each kind of report gives the administrator information about certain risks. The administrator can then take specific actions to address those risks.
 
@@ -20,7 +22,7 @@ You can view and download all reports from the Azure portal.
 ![View and download a report](../media/5-identity-protection-risky-sign-ins-report.png)
 <!-- Please feel free to style according to Learn standards. Original image: https://docs.microsoft.com/en-us/azure/active-directory/identity-protection/media/howto-identity-protection-investigate-risk/identity-protection-risky-sign-ins-report.png  -->
 
-### Remediate risks
+## Remediate risks
 
 When your investigation is complete, you'll want to remediate the risks if you're not already using risk policies to automatically deal with them. Always address detected risks quickly.
 
