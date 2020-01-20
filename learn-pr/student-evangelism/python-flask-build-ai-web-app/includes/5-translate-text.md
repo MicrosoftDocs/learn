@@ -1,6 +1,6 @@
 The [Translator Text API](https://azure.microsoft.com/services/cognitive-services/translator-text-api/) is the member of Azure Cognitive Services that translates text from one language to another. It relies on state-of-the-art [Neural Machine Translation](https://www.microsoft.com/translator/business/machine-translation/#nmt) (NMT) to work its magic and supports [more than 60 languages](https://docs.microsoft.com/azure/cognitive-services/translator/language-support).
 
-Like the Computer Vision API, the Translator Text API is invoked using REST calls over the Internet. Unlike the Computer Vision API, the Translator Text API currently has no Python SDK available. That doesn't mean that you can't use it from a Python application. It means that you must invoke the API using raw HTTP requests and write code to parse the JSON payloads that are returned.
+Like the Computer Vision API, the Translator Text API is invoked using REST calls over the internet. Unlike the Computer Vision API, the Translator Text API currently has no Python SDK available. That doesn't mean that you can't use it from a Python application. It means that you must invoke the API using raw HTTP requests and write code to parse the JSON payloads that are returned.
 
 It's not as hard as it sounds, as you will prove when you modify the Contoso Travel site to pass text extracted from photos by the Computer Vision API to the Translator Text API for translation into another language.
 
@@ -191,7 +191,7 @@ You have now subscribed to the Translator Text API and obtained an API key for c
 	        return ["Error calling the Translator Text API"]
 	```
 
-	This function calls the Translator Text API  to translate the text passed to it. It returns the translated text, or an error message if something went wrong.
+	This function calls the Translator Text API to translate the text passed to it. It returns the translated text, or an error message if something went wrong.
 
 An interesting aspect of this code is that if the call to the Computer Vision API returns an error message or a message indicating that no text was detected in the photo, the message itself is translated into the language that the user selected. 
 
@@ -211,7 +211,7 @@ The final step is to test the changes that you made by uploading photos to the s
 	export TRANSLATE_KEY=translator_text_api_key
 	```
 
-1. Navigate to http\:\//localhost\:5000 in your browser. Confirm that the page now contains a drop-down list for selecting a language, as pictured below.
+1. Go to http\:\//localhost\:5000 in your browser. Confirm that the page now contains a drop-down list for selecting a language, as pictured below.
 
 	![Selecting a language](../media/select-language.png)
 

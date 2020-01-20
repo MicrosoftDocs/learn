@@ -35,10 +35,11 @@ Solutions used in the exercises are located in a [Git repository](https://github
 	    return render_template("index.html")
 	```
 
-	Currently, the app consists of a single page named **index.html** located in the "templates" subdirectory. **index.html** doesn't contain any special expressions at the moment—it is simply a static file—but that will change as you develop the site. **index.html** loads the popular [Bootstrap](https://getbootstrap.com/) framework and uses it to make the page responsive. It also loads **main.css** from the "static" subdirectory and uses the CSS styles defined there to lend the page a professional appearance.
+	Currently, the app consists of a single page named **index.html** located in the *templates* subdirectory. **index.html** doesn't contain any special expressions at the moment—it is simply a static file—but that will change as you develop the site. **index.html** loads the popular [Bootstrap](https://getbootstrap.com/) framework and uses it to make the page responsive. It also loads **main.css** from the "static" subdirectory and uses the CSS styles defined there to lend the page a professional appearance.
 
 1. Return to the Command Prompt window or terminal where your virtual Python environment is active and make sure that the project directory is the current directory.
 
+	> [!NOTE]
 	> If you closed the Command Prompt or terminal after activating the virtual environment, simply open a new one, `cd` to the project directory, and use a `env\scripts\activate` command (Windows) or a `source env/bin/activate` command (macOS and Linux) to activate it again.
 
 1. If you are running Windows, execute the following command to create an environment variable named FLASK_ENV that tells Flask to run in development mode: 
@@ -71,17 +72,17 @@ The page isn't functional yet. It doesn't support photo uploads, even though the
 
 ## Add support for uploading photos
 
-In this exercise, you will modify **index.html** and **app.py** so users can upload photos to the website. You can use any text editor you'd like, but we recommend using Visual Studio Code—Microsoft's free, lightweight source-code editor for Windows, macOS, and Linux that features IntelliSense, integrated Git support, and more.
+In this exercise, you will modify **index.html** and **app.py** so users can upload photos to the website. You can use any text editor you'd like, but we recommend using Visual Studio Code—the free, lightweight Microsoft source-code editor for Windows, macOS, and Linux that features IntelliSense, integrated Git support, and more.
 
 1. If Visual Studio Code isn't installed on your PC, go to https://code.visualstudio.com/ and install it now.
 
 1. Start Visual Studio Code and use the **File** > **Open Folder...** command to open the project directory containing the website.
 
-1. Use Visual Studio Code's Explorer to open **index.html** in the "templates" folder. This is the website's home page, and the one that's used to upload photos.
+1. Use Visual Studio Code's Explorer to open **index.html** in the *templates* folder. This is the website's home page, and the one that's used to upload photos.
 
-	![Opening index.html](../media/open-index.png)
+	![Open index.html](../media/open-index.png)
 
-	_Opening index.html_
+	_Open index.html_
 
 1. Paste the following `<script>` block into **index.html** immediately before the closing `</body>` tag near the bottom of the file:
 
@@ -99,7 +100,7 @@ In this exercise, you will modify **index.html** and **app.py** so users can upl
 	</script>
 	```
 
-	The purpose of this code is simple: to display an open-file dialog when the user clicks the page's **Upload Photo** button, and to upload the selected image when the dialog is dismissed. It works by using jQuery to simulate clicks of the buttons in a hidden file-upload control defined in **index.html**:
+	The purpose of this code is simple: to display an open-file dialog box when the user selects the page's **Upload Photo** button, and to upload the selected image when the dialog box is dismissed. It works by using jQuery to simulate mouse clicks or selecting a button in a hidden file-upload control defined in **index.html**:
 
 	```html
 	<div style="display: none">
@@ -148,9 +149,9 @@ Finish up by saving your changes to **index.html** and **app.py**. It's time to 
 
 Let's make sure your changes have the desired effect by uploading a photo to the site.
 
-1. Assuming Flask is still running in the project directory (if it's not, you can start it again with a `flask run` command), either refresh the page in your browser or open a new browser instance and navigate to http\:\//localhost\:5000.
+1. Assuming Flask is still running in the project directory (if it's not, you can start it again with a `flask run` command), either refresh the page in your browser or open a new browser instance and go to http\:\//localhost\:5000.
 
-1. Click the **Upload Photo** button and select a photo from your local file system.
+1. Select the **Upload Photo** button and select a photo from your local file system.
 
 1. Confirm that the photo you selected appears on the page:
 
