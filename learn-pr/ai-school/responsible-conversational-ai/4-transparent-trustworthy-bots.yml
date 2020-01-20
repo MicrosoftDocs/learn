@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.responsible-conversational-ai.transparent-trustworthy-bots
+title: Build transparent and trustworthy bots
+metadata:
+  title: Build transparent and trustworthy bots
+  description: Gaining and maintaining your users trust is important to building a successful and responsible Conversational AI solution.
+  ms.date: 02/20/2020
+  author: RWortmanMorris
+  ms.author: rawortma
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-transparent-trustworthy-bots.md)] 
