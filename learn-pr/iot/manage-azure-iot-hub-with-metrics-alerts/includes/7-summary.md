@@ -27,6 +27,9 @@ Take your interest further with:
 - [Azure Stream Analytics documentation](https://docs.microsoft.com/azure/stream-analytics/)
 - [Azure Certified for IoT device catalog](https://catalog.azureiotsolutions.com/)
 
+Create and manage action groups in the Azure portal
+https://docs.microsoft.com/en-us/azure/azure-monitor/platform/action-groups
+
 And look out for additional Learn modules on IoT Hub, and Stream Analytics.
 
 To complete this module, and earn your just rewards, complete a final knowledge check.
