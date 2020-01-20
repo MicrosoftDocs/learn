@@ -5,8 +5,8 @@ metadata:
   title: Introduction
   description: Learn the fundamental principals of computer networking.  You'll cover network protocols and standards, different network structures, and how networks communicate with each other.
   ms.date: 01/09/2020
-  author: cwatson-cat
-  ms.author: cwatson
+  author: cryophobia
+  ms.author: chrvaw
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 1
