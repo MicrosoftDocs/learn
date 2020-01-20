@@ -1,23 +1,23 @@
 ### YamlMime:Module
 uid: learn-wwl.responsible-conversational-ai
 metadata:
-  title: Responsible conversational AI guidelines
-  description: When building any AI system it's important to do so responsibly. In this course you will learn about Microsoft' guidelines for the development of responsible conversational AI, such as chat bots and voice-controlled systems.
-  ms.date: 08/27/2019
+  title: Discover Microsoft guidelines for responsible Conversational AI development
+  description: Learn Microsoft guidelines for the development of responsible Conversational AI, such as chat bots and voice-controlled systems.
+  ms.date: 02/20/2020
   author: RWortmanMorris
   ms.author: rawortma
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   #ms.learn-contact: barlan
-title: Responsible Conversational AI Guidelines
-summary: When building any AI system it's important to do so responsibly. In this course you will learn about Microsoft' guidelines for the development of responsible conversational AI, such as chat bots and voice-controlled systems.
+title: Discover Microsoft guidelines for responsible Conversational AI development
+summary: Learn Microsoft guidelines for the development of responsible Conversational AI, such as chat bots and voice-controlled systems.
 abstract: | 
   In this module, you will:
   - Learning objective 1
 prerequisites: None
 iconUrl: /learn/achievements/responsible-conversational-ai.svg
 levels: 
-- intermediate
+- beginner
 roles: 
 - functional-consultant
 - business-user

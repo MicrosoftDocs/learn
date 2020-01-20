@@ -6,7 +6,7 @@ Users have every right to expect that their data is handled securely by your bot
 
 Consider security a key feature of your bot’s design. Create a threat model for your system, to identify attack vectors and simulate responses.
 
-Consider using [Microsoft’s Threat Model Tool](https://docs.microsoft.com/en-us/azure/security/azure-security-threat-modeling-tool-getting-started "Microsoft's Threat Model Tool") to aid in developing this for your bot. 
+Consider using the [Microsoft Threat Model Tool](https://docs.microsoft.com/en-us/azure/security/azure-security-threat-modeling-tool-getting-started "Microsoft Threat Model Tool") to aid in developing this for your bot.
 
 When it comes to cybersecurity, the best offense is often to have nothing, or very little, to defend. When you’re taking or storing user information, design your system to store only key information to reduce the risk from attack. 
 

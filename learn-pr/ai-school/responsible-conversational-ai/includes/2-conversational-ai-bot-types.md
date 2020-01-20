@@ -1,4 +1,4 @@
-There are, roughly, four different types of conversational AI bots. Most bots will actually mix these characteristics in any given implementation, as all four are required for a reasonably realistic simulacra of human conversation, and a bot that can’t engage in light conversation will come off as, well, robotic.  
+There are, roughly, four different types of Conversational AI bots. Most bots will actually mix these characteristics in any given implementation, as all four are required for a reasonably realistic simulacra of human conversation, and a bot that can’t engage in light conversation will come off as, well, robotic.  
 
 1. The first category is casual conversation engagement. This sort of bot’s purpose is to facilitate __social engagement__ - either with the bot itself, or other users. User inputs would look something like this: 
   
@@ -6,19 +6,19 @@ There are, roughly, four different types of conversational AI bots. Most bots wi
    * I hope the Giants win tonight.
 <br>
 <br>
-2. The second category is __information consumption.__ This sort of bot tries to assist the user by answering user questions, which might look like: 
+2. The second category is __information consumption__. This sort of bot tries to assist the user by answering user questions, which might look like: 
   
    * What room is the project review meeting in? 
    * When is the ACL 2018 conference?
 <br>
 <br>
-3. The third category is __task completion.__ The aim here is to assist the user by helping them get tasks done. User inputs for this category might be as follows: 
+3. The third category is __task completion__. The aim here is to assist the user by helping them get tasks done. User inputs for this category might be as follows: 
   
    * Book me the biz trip to San Francisco 
    * Reserve a table at Kisaku for 5 people at 7 tonight.
 <br>
 <br>
-4. The fourth category is __decision support.__ The goal for this bot category is to help the user come to a decision. Questions a user might ask include: 
+4. The fourth category is __decision support__. The goal for this bot category is to help the user come to a decision. Questions a user might ask include:
   
    * Why are sales in China so far behind forecast?
    * What is the optimal treatment plan for this patient?  
@@ -29,7 +29,7 @@ To be trusted, bots need to be convincing, so being able to mix goal-oriented be
 
 In any interaction with a bot, there are far more stakeholders than just users, bots, and developers. Here’s a list of stakeholders and the considerations that come out of their relationship with the bot, broken down by category: 
 
-1. __The user__ - the human speaking with the bot. This is the stakeholder that requires the most immediate attention, as non-ideal bot behavior may: 
+1. __The user__ - the human speaking with the bot. Users are the stakeholder that requires the most immediate attention, as non-ideal bot behavior may: 
    * __Social engagement__ - negative interactions can affect the user emotionally
    * __Information consumption__ - poor-quality replies or incorrect information may misinform the user
    * __Task completion__ - tasks can’t get done, and productivity is harmed, if the bot isn’t able to understand requests or perform according to instructions

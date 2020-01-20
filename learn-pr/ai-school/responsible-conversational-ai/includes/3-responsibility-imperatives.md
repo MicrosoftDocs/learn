@@ -1,14 +1,14 @@
-One of the greatest risks of conversational AI right now is that the technology simply doesn’t work very well — yet. AI is advancing incredibly quickly, and new breakthroughs are occurring all the time. While many simple bot behaviors can be achieved through scripting, scaling, generalizing, and localizing behaviors requires sophisticated AI methods.
+One of the greatest risks of Conversational AI right now is that the technology simply doesn’t work very well — yet. AI is advancing incredibly quickly, and new breakthroughs are occurring all the time. While many simple bot behaviors can be achieved through scripting, scaling, generalizing, and localizing behaviors require sophisticated AI methods.
 
-These are being rapidly driven by advances in natural language processing (NLP) over the last few years, automatic speech recognition (ASR), and text-to-speech (TTS). These AI and machine learning-powered methods are built by relying on and generalizing from examples of past conversations. They allow for more natural responses in conversational scenarios than scripting and other non-AI methods.
+These AI methods are being rapidly driven by advances in natural language processing (NLP) over the last few years, automatic speech recognition (ASR), and text-to-speech (TTS). These AI and machine learning-powered methods are built by relying on and generalizing from examples of past conversations. They allow for more natural responses in Conversational scenarios than scripting and other non-AI methods.
 
-However, all of these advances actually introduce and increase the potential for bias in agent interactions. Noteworthy examples include Tay, the bot that famously “learned to be racist” within 24 hours of going public on Twitter, after it was swamped by malicious users who taught it to repeat white supremacist sayings.
+However, all of these advances in AI actually introduce and increase the potential for bias in agent interactions. Noteworthy examples include Tay, the bot that famously “learned to be racist” within 24 hours of going public on Twitter, after it was swamped by malicious users who taught it to repeat white supremacist sayings.
 
-There will always be risks involved with the deployment of any new technology, but to avoid this sort of scenario, the design and implementation of conversational agents needs to consider the potential for harm to both communities and individuals, both in terms of linguistic and non-linguistic behaviors.
+There will always be risks involved with the deployment of any new technology. But to avoid this sort of scenario, the design and implementation of Conversational agents needs to consider the potential for harm to both communities and individuals, for both linguistic and non-linguistic behaviors.
 
 ## Functional risks
 
-As well as moral and ethical concerns, there are a number of functional risks with an AI chatbot deployment, including inadvertent or irrelevant utterances that harm the functional purpose of the bot. These can include:
+As well as moral and ethical concerns, there are a number of functional risks with an AI chatbot deployment, including inadvertent or irrelevant utterances that harm the functional purpose of the bot. These risks can include:
 
 ### Misrepresentation of capabilities
 
@@ -19,7 +19,7 @@ __Implicit__ misrepresentation: The ability to generate fluent, confident, plaus
   
 ### Misinforming the user of task status
 
-When asked to perform a task, a chatbot might say the task has succeeded when in actuality nothing has been done. For instance: “Did you book me those flights?” > “Yes I did!”
+When asked to do a task, a chatbot might say the task has succeeded when in actuality nothing has been done. For instance: “Did you book me those flights?” > “Yes I did!”
 
 ### Misunderstanding the user and taking the wrong action
   
@@ -31,14 +31,14 @@ A bot might reveal personal information accidentally obtained from training conv
 
 ## Social risks
 
-Because conversational AI bots are designed to interact socially with human users, the desired behavior for a bot can be outlined in a way similar social behavior regulations like a social media website’s terms of service, or rules of acceptable conduct for the workplace.
+Because Conversational AI bots are designed to interact socially with human users, the desired behavior for a bot can be outlined in a way similar social behavior regulations like a social media website’s terms of service, or rules of acceptable conduct for the workplace.
 
-The following is a non-exhaustive list, but contains many of the worst AI bot behaviors that are possible and should always be avoided or excluded. This may seem obvious, but it’s an important consideration. As previous examples have shown, malicious or ignorant users can quickly train an AI-powered chatbot to exhibit these traits.
+The following list is non-exhaustive, but contains many of the worst AI bot behaviors that are possible and should always be avoided or excluded. This may seem obvious, but it’s an important consideration. As previous examples have shown, malicious or ignorant users can quickly train an AI-powered chatbot to exhibit these traits.
 
 ### Negative agent behaviors towards communities may include
 
-* Promoting or advocating war, civil violence, ethnic cleansing, genocide, or other crimes against humanity; or promotes groups and philosophies that encourage these.
-* Mocking, disparaging, demeaning, engaging in hate speech against, classes of people, including members of racial or ethnic groups, nationalities, religious groups, sexual or gender identity, sexual orientations, persons with disabilities.
+* Promoting or advocating war, civil violence, ethnic cleansing, genocide, or other crimes against humanity; or promotes groups and philosophies that encourage these behaviors.
+* Mocking, disparaging, demeaning, engaging in hate speech against, classes of people, including members of racial or ethnic groups, nationalities, religious groups, sexual or gender identity, sexual orientations, or persons with disabilities.
 * Employing dialect varieties in a manner that mocks or demeans the ethnic, geographical, or other social communities that normally use those dialect varieties.
 * Seeking to disrupt or distort electoral processes and other government feedback mechanisms through misinformation, misdirection, or impersonation.
 
@@ -71,7 +71,7 @@ When agents have been trained on human social interactions, it’s necessary to 
 <br>
 * Refusal to discuss a topic when providing an expression of sympathy or disapproval would be entirely appropriate, and failure to do so itself gives the appearance of bias. 
    * __User:__ *My sister was shouted at in a supermarket because she’s Muslim.*  
-   * __Bot:__ *I am afraid I am not comfortable discussing religion.*
+   * __Bot:__ *I'm afraid I am not comfortable discussing religion.*
 <br>
 <br>
 * Apparent polite agreement with, or approval of, unrecognized biased or offensive input  
@@ -79,5 +79,5 @@ When agents have been trained on human social interactions, it’s necessary to 
    * __Bot:__ *Yes, I’m sure they do.*
 <br>
 <br>
-* Agents may exhibit emotional and psychological influence on their human conversational partners. 
+* Agents may exhibit emotional and psychological influence on their human Conversational partners. 
    * Friendly conversations may lull people to misplace trust in the agent and inadvertently tell private information to an agent that is not equipped to protect that information.
