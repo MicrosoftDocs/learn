@@ -36,8 +36,9 @@ In this session, you will:
 Copy the following command and paste it into Cloud Shell:
 
 ```azurecli
-wget -O prepsession3.bash https://raw.githubusercontent.com/MicrosoftDocs/mslearn-live-migrating-to-the-cloud/master/scripts/02_deploy_app_service_and_database.bash 
-&& chmod +x ./prepsession3.bash && ./prepsession3.bash
+wget -O prepsession3.bash https://raw.githubusercontent.com/MicrosoftDocs/mslearn-live-migrating-to-the-cloud/master/scripts/02_deploy_app_service_and_database.bash &&
+chmod +x ./prepsession3.bash &&
+./prepsession3.bash
 ```
 
 > [!NOTE]
