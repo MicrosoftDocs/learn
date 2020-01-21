@@ -26,7 +26,7 @@ quiz:
     - content: Configure a policy, investigate using a report and remediate.
       isCorrect: true
       explanation: Use your risk policy to help you investigate and remediate threats.
-  - content: You want to analyze risks that describe authentication requests for sign-ins have probably not been authorized by users. Which type of risks will you analyze?
+  - content: You want to analyze risks that describe authentication requests for sign-ins that have probably not been authorized by users. Which type of risks will you analyze?
     choices:
     - content:  User risk
       isCorrect: false

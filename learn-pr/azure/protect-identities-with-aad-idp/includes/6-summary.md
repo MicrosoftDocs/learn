@@ -1,8 +1,8 @@
-You were asked to prevent your company's identities from being compromised again, and ensure that identities are protected in the future. 
+You were asked to prevent your company's identities from being compromised again, and ensure that identities are protected in the future. This problem is common problem for retail companies such as yours, which must guard their reputation for trustworthiness and conform with data protection legislation.
 
 You used Azure Active Directory Identity Protection (AADIP) to protect your organization's identities by detecting, investigating, and remediating risks.
 
-Without AADIP, your organization's identities wouldn't be protected and could have been compromised again. Your company can now use AADIP to protect your its identities and help prevent negative reputation and financial loss.
+Without AADIP, your organization's identities wouldn't be protected and could have been compromised again. Your company can now use AADIP to protect its identities and help prevent negative reputation and financial loss.
 
 [!include[](../../../includes/azure-sandbox-cleanup.md)]
 

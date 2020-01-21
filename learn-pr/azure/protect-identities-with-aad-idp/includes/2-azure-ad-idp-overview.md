@@ -1,6 +1,6 @@
-Azure Active Directory Identity Protection (AADIP) helps you to automatically detect, remediate, and investigate identity-based risks for your organization. The retail company you work for is very conscious about its reputation. Identities at risk have previously affected its reputation, and ultimately its profitability.
+Azure Active Directory Identity Protection (AADIP) helps you to automatically detect, remediate, and investigate identity-based risks for your organization. 
 
-Your manager has asked you to investigate AADIP as a solution. You've been asked to report back on what the service does and how it's used.
+The retail company you work for is very conscious about its reputation. Compromised identities have previous enabled malicious users to obtain customer information fraudulently. These attacks have affected you organization's reputation, and ultimately its profitability. Your manager has asked you to investigate AADIP as a solution. You've been asked to report back on what the service does and how it's used.
 
 In this unit, you'll learn what AADIP is and the risks involved in using it. You'll explore the different workflows you can use in AADIP to protect your identities.
 
@@ -11,39 +11,39 @@ Azure Active Directory Identity Protection (AADIP) is a solution built into Azur
 ![AADIP overview](../media/2-aadip-overview.png)
 <!-- Please feel free to style according to Learn standards. -->
 
-Your company specializes in retail, not in identity protection. It wants to continue to focus on its areas of strength, but still ensure that it's protected against identity risks. Your organization can use AADIP to automate the detection, investigation, and remediation of risks related to users' identities.
+Your company's specialist expertise is in retail, not in identity protection. It wants to continue to focus on its areas of strength, but still ensure that it's protected against identity risks. Your organization can use AADIP to automate the detection, investigation, and remediation of risks related to users' identities without hiring expensive security experts.
 
-### What are risks?
+## What are risks?
 
-Risks can be described as suspicious activity and actions by users when they sign in or when they're doing operations after signing in. That's why risks are categorized in two ways: a user risk or a sign-in risk.
+Risks can be described as suspicious activity and actions by users when they sign in or when they're taking actions after signing in. That's why risks are categorized in two ways; user risks and sign-in risks.
 
-**User risk**
+### User risk
 
-A user risk is caused when their identity or account is being compromised. User risks can include:
+A user risk is caused when a user's identity or account is compromised. User risks can include:
 
-|Risk  |Description |
-|------|------------|
-|Azure Active Directory threat intelligence| The account is showing unusual activity, or the patterns of usage are similar to those that Microsoft systems and experts have identified as an attack.|
-|Leaked credentials| The user's credentials could have been leaked. For example, Microsoft might have found a list of leaked credentials on the dark web, which could affect your user accounts. A risk detection would be raised automatically for you.|
+| Risk  | Description |
+| --- | --- |
+| Unusual behavior | The account is showing unusual activity, or the patterns of usage are similar to those patterns that Microsoft systems and experts have identified as attacks. |
+| Leaked credentials | The user's credentials could have been leaked. For example, Microsoft might have found a list of leaked credentials on the dark web, which could affect your user accounts. |
 
-**Sign-in risk**
+### Sign-in risk
 
 Here, AADIP scrutinizes each authentication request to judge whether it was authorized by the owner of the identity. Sign-in risks can include:
 
-|Risk  |Description |
-|------|------------|
-|Unfamiliar sign-in properties| AADIP remembers and learns a particular user's sign-in history. For example, when a sign-in occurs from a location that's unusual for the user, a risk detection is triggered. |
-|Atypical travel|For example, when two or more sign-ins occur from distant locations, in an unrealistically short time period, a risk detection is raised.|
-|Malware linked IP address|For example, the IP address where the sign-in originates is known to have been in contact with an active bot server. A risk detection is raised. |
-|Anonymous IP address|For example, a sign-in originates from an anonymous IP address. Because these details can be used by attackers to hide their real IP address or location, a risk detection is raised.|
+| Risk  | Description |
+| --- | --- |
+| Unfamiliar sign-in properties | AADIP remembers and learns a particular user's sign-in history. For example, when a sign-in occurs from a location that's unusual for the user, a risk detection is triggered. |
+| Atypical travel | For example, when two or more sign-ins occur from distant locations, in an unrealistically short time period, a risk detection is raised. |
+| Malware linked IP address | For example, if the IP address where the sign-in originates is known to have been in contact with an active bot server, a risk detection is raised. |
+| Anonymous IP address | For example, a sign-in originates from an anonymous IP address. Because these details can be used by attackers to hide their real IP address or location, a risk detection is raised. |
 
-### Azure Active Directory Identity Protection workflow
+## Azure Active Directory Identity Protection workflow
 
 There are two different ways to detect and handle identity risks.
 
 1. **Self-remediation workflow**
 
-    AADIP uses risk policies to automatically respond to detected threats for you. You configure a risk policy to decide how you want AADIP to respond to a particular type of risk. You then choose the action the user is asked to do: it could be a self-service password reset, or multi-factor authentication enforcement. Using policies in this way helps save time, and gives you peace of mind.
+    AADIP uses risk policies to automatically respond to detected threats for you. You configure a risk policy to decide how you want AADIP to respond to a particular type of risk. You then choose the action the user is asked to complete. The action could be a self-service password reset, or multi-factor authentication enforcement. Using policies in this way helps save time, and gives you peace of mind.
 
     ![Automated remediation](../media/2-aadip-flow.png)
     <!-- Please feel free to style according to Learn standards. -->

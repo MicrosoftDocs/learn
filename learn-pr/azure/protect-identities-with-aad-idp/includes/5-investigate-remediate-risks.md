@@ -1,6 +1,6 @@
-Investigations help you understand how you can improve your identity security posture. Investigations make it possible for you to respond to risks better, and avoid risks in the future.
+Investigations help you understand how you can improve your identity security posture, make it possible for you to respond to risks better, and help you avoid risks in the future.
 
-Your manager has asked you to investigate and remediate all the risks detected and share a report with the project manager. The team will use it to understand the company's identity-based risks better.
+In your retail company, you've configured AAIDP policies and risks are being detected. Your manager has asked you to investigate and remediate all the risks detected and share a report with the project manager. The team will use it to understand the company's identity-based risks better.
 
 In this unit, you'll learn how to investigate risks using reports. You'll see how to remediate different types of risks, and deal with any user accounts that might be blocked.
 

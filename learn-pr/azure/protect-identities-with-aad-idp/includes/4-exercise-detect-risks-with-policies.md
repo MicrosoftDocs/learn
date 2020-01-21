@@ -1,13 +1,14 @@
 Azure Active Directory Identity Protection (AADIP) is a feature of Azure AD Premium P2. Administrators can test AADIP's automated tools that keep users' credentials safe, through an Azure AD Premium P2 trial.
 
-Your manager wants you to test the user risk policies that are included with Azure Active Directory Identity Protection.
+In your retail company, you are going to use AADIP to secure identities, because compromised security credentials have led to customer data leaks. Your manager wants you to test the user risk policies that are included with Azure Active Directory Identity Protection.
 
 You'll create a new directory in this exercise and sign up for Azure AD Premium. You'll then enable a user risk policy that forces a password reset for users who are identified as "risky". In the final step, you'll use a TOR browser to trigger the risk policy.
 
-## Configure a sign-in risk policy
+## Create a new directory
+
+Let's start by creating a new directory to store user accounts:
 
 1. Sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true) using the same account with which you activated your sandbox.
-
 1. Select **Create a resource**, select the **Identity** category, and then select **Azure Active Directory**.
 1. Fill in the **Create directory** page with these values, and then select **Create**:
 
@@ -19,14 +20,17 @@ You'll create a new directory in this exercise and sign up for Azure AD Premium.
 
     ![Screenshot of a created directory](../media/4-click-here.png)
 
+## Configure a sign-in risk policy
+
+In the new directory, let's set up a policy to detect user risk:
+
 1. When directory creation is complete, select **Click here to manage your new directory**.
-1. Under the **Manager** section, select **Security**.
-1. Under the **Protect** section, select **Identity Protection**.
+1. Under the **Manager** section, select **Security**, and then under the **Protect** section, select **Identity Protection**.
 
     > [!NOTE]
     > Identity Protection is a feature of Azure AD Premium P2. For this exercise, you can sign up for a free trial.
 
-1. At the top of the page, select **Get a Premium trail to use this feature**. In the popout menu, expand the free trial under **AZURE AD PREMIUM P2**, then select **Activate**.
+1. At the top of the page, select **Get a Premium trial to use this feature**. In the popout menu, expand the free trial under **AZURE AD PREMIUM P2**, then select **Activate**.
 
     ![Screenshot showing activating a trial version of Azure AD Premium 2.](../media/4-activate-AD-premium.png)
 
@@ -41,8 +45,7 @@ You'll create a new directory in this exercise and sign up for Azure AD Premium.
 
     ![Screenshot of setting a low user risk level](../media/4-set-low-risk.png)
 
-1. Select the **Select a risk level**, then select **Low and above**.
-1. At the bottom of the pane, select the **Select** button, then select **Done**.
+1. Click **Select a risk level**, then select **Low and above**. At the bottom of the pane, click the **Select** button, then select **Done**.
 1. Select **On** under the **Enforce Policy**, then select **Save**.
 
 ## Test the user risk-based policy
