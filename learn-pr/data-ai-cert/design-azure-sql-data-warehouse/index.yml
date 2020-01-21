@@ -29,8 +29,9 @@ products:
 - azure-synapse-analytics
 units:
 - learn.data-ai.design-azure-sql-data-warehouse.introduction
-- learn.data-ai.design-azure-sql-data-warehouse.azure-synapse-analytics
-- learn.data-ai.design-azure-sql-data-warehouse.types-of-solution-scenarios
+- learn.data-ai.design-azure-sql-data-warehouse.azure-sql-dw
+- learn.data-ai.design-azure-sql-data-warehouse.azure-sql-dw-features
+- learn.data-ai.design-azure-sql-data-warehouse.types-of-dw-solutions
 - learn.data-ai.design-azure-sql-data-warehouse.massively-parallel-processing
 - learn.data-ai.design-azure-sql-data-warehouse.table-geometries
 - learn.data-ai.design-azure-sql-data-warehouse.create-azure-dw-using-portal
