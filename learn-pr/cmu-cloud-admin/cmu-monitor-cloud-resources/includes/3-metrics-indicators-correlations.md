@@ -110,7 +110,7 @@ Up to now, this module has focused primarily on the tools and platforms cloud ad
 
 1. _In some presentations, Wilkie has instead called the "D" factor "Distribution of latency," which may be a more scientific method for framing the same concept._
 
-[^2]: <http://apdex.org/overview.html>  "APDEX. *Apdex Overview*."
+[^2]: <http://www.apdex.org/overview.html>  "APDEX. *Apdex Overview*."
 
 [^3]: <http://www.brendangregg.com/usemethod.html>  "Brendan D. Gregg. *The USE Method*."
 
