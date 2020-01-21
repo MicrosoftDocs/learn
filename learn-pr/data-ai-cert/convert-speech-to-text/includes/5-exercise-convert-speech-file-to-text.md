@@ -25,7 +25,7 @@ In this exercise, you will make use of the Speech Service you created earlier.  
 1. VS Code Online will now synchronize the GitHub repo and run the scripts that were present in the .devcontainer.  This is required to setup the proper Python environment, in this case 3.5.3
 1. If you get any messages about installing additional extensions or components, choose to do so.  This is only for your local system and is not required to run the code in the online environment.
 1. Select the speechtotext.py file in the explorer pane.
-1. Locate the spech_keu, service_region line in the file and paste your key into the proper spot and set the region to where you created your Speech Service, such as **westus**.
+1. Locate the speech_key, service_region line in the file and paste your key into the proper spot and set the region to where you created your Speech Service, such as **westus**.
 1. You will need to add a package for the Cognitive Services speech functions so open a terminal window in VS Code Online and paste the following command in the terminal window, and hit Enter to add the package, *sudo pip install --upgrade azure-cognitiveservices-speech*
 1. Locate the **Run Python File in Terminal** button in the upper right corner of VS Code Online and select it to run the code.
 1. The result of the speech to text transcription is displayed in the terminal windoww.  Feel free to download the narration.wav file from the GitHub repo if you want to hear the audio that was used.
