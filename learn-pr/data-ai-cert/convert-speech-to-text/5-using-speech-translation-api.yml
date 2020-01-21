@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.data-ai.convert-speech-to-text.using-speech-translation-api
-title: Use the API to translate speech
+title: Exercise - Convert Speech from an Audio File to Text
 metadata:
-  title: Use the API to translate speech
+  title: Exercise - Convert Speech from an Audio File to Text
   description: Learn how your application can use the API to translate speech.
   ms.date: 01/9/2019
   author: gerryaobrien
@@ -10,7 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   zone_pivot_groups: dev-lang-python-csharp
-  ROBOTS: NOINDEX
-durationInMinutes: 10
-content: |
+  
+durationInMinutes: 
+content: |20
   [!include[](includes/5-exercise-convert-speech-file-to-text.md)]
