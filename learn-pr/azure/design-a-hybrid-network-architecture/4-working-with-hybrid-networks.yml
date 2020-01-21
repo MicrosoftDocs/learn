@@ -47,7 +47,7 @@ quiz:
     choices:
     - content: Greater cost visibility
       isCorrect: false
-      explanation: A hub-spoke architecture can help reduce cost, but it doesn't improve cost visibility.
+      explanation: 'A hub-spoke architecture can help reduce cost, but it doesn't improve cost visibility.'
     - content: Greater security
       isCorrect: false
       explanation: A hub-spoke architecture might be more secure, but it is not normally considered a benefit.
