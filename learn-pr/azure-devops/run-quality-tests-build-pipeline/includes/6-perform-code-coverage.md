@@ -4,7 +4,7 @@ When you target .NET Core applications to run on Linux, [coverlet](https://githu
 
 Amita feels much better. She's seeing actual progress in catching bugs and in easily viewing test results. What's more, it hasn't taken long for Andy and Mara to implement the improvements. Amita, Andy, and Mara talk a bit more about unit testing.
 
-**Andy:** I like the idea of unit testing, but I've never found a good way to know when we're done, when we have complete coverage. Are there any good tools we can use with Azure Pipelines?
+**Andy:** I like the idea of unit testing, but I've never found a good way to know when we're done, when we have complete coverage. Are there any good tools we can use with Microsoft Azure Pipelines?
 
 **Mara:** We can add in _code coverage_. That will tell us the percentage of our code that has unit tests. We can use a tool called "coverlet" to collect coverage information when the tests run.
 
@@ -169,7 +169,7 @@ git push origin code-coverage
 Here you see the tests run in the pipeline and then visualize the results from Azure Test Plans.
 
 1. In Azure Pipelines, trace the build through each of the steps.
-1. When the build finishes, select the **Code Coverage** tab.
+1. When the build finishes, Navigate back to the summary page and select the **Code Coverage** tab.
 
     You view the same results that you did when you ran the tests locally.
 
@@ -198,7 +198,7 @@ Here you'll add a second widget that summarizes code coverage.
 1. Drag **Code Coverage** to the canvas.
 1. Select the gear icon to configure the widget.
 1. Keep all the default settings, except for:
-    * Size: Enter **2 x 1**.
+    * Width: Enter **2**.
     * Build definition: Select your pipeline.
     * Coverage measurement: Enter **Lines**.
 1. Select **Save**.

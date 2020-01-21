@@ -19,13 +19,13 @@ The SonarCloud Marketplace extension provides the service connection type you ne
 
     ![The SonarCloud Marketplace extension](../media/3-sonar-cloud-marketplace-extension.png)
 
-1. Select **Get it free**.
+1. Select it and then **Get it Free**.
 1. Select your Azure DevOps organization from the drop-down box.
 1. Select **Install**.
 
 ## Create a SonarCloud service connection
 
-Your pipeline tasks require access to SonarCloud. Here you create a service connection from the Azure DevOps portal. A _service connection_ provides secure access to an external service, such as SonarCloud or Azure.
+Your pipeline tasks require access to SonarCloud. Here you create a service connection from the Microsoft Azure DevOps portal. A _service connection_ provides secure access to an external service, such as SonarCloud or Azure.
 
 1. From Azure DevOps, navigate to your project.
 1. Select **Project settings** in the lower corner.
@@ -59,9 +59,9 @@ Although you could add these variables to your *azure-pipelines.yml* file, here 
 Let's add a few variables to the pipeline.
 
 1. From Azure DevOps, navigate to your pipeline and select **Edit**.
-1. Select **Variables**.
+1. Select **Variables** at the top right.
 1. Select **New variable**.
-1. In the dialog box that appears, set the name to **SonarProjectKey** and the value to your project name, for example, **space-game-web-333**.
+1. In the dialog box that appears, set the name to *SonarProjectKey* and the value to your project name, for example, *mara_mslearn-tailspin-spacegame-web*.
 
     You can print your `SONAR_PROJECT_KEY` Bash variable if you need a refresher.
 
@@ -70,8 +70,8 @@ Let's add a few variables to the pipeline.
     ```
 
     Notice the **Keep this value secret** option. If you select that option, the value for your variable is encrypted when it's standing still. This is a good way to store secrets like tokens, but you don't need to do that here.
-1. Create another variable and name it **SonarProjectName**. Then specify the same project name as its value, for example, **space-game-web-333**.
-1. Create another variable, and call it **SonarOrganization**. Set the value to the organization you created when you set up your SonarCloud project. You can find this value from the `-Dsonar.organization` argument in the `sonar-scanner` command that you copied earlier.
+1. Create another variable and name it *SonarProjectName*. Then specify the same project name as its value, for example, *mara_mslearn-tailspin-spacegame-web*.
+1. Create another variable, and call it *SonarOrganization*. Set the value to the organization you created when you set up your SonarCloud project. You can find this value from the `-Dsonar.organization` argument in the `sonar-scanner` command that you copied earlier.
 
     Your final variables resembles this:
 
@@ -108,7 +108,7 @@ The other two commands map to the `dotnet-sonarscanner end` command, which analy
 
 1. From Visual Studio Code, open *azure-pipelines.yml* and replace its contents with this code. The new parts are highlighted.
 
-    [!code-yml[](code/5-azure-pipelines.yml?highlight=41-51,71,79-83)]
+    [!code-yml[](code/5-azure-pipelines.yml?highlight=46-57,77,85-89)]
 
     Notice that `SonarCloudPrepare@1` appears before the project is built or any tests are run. Similarly, `SonarCloudAnalyze@1` and `SonarCloudPublish@1` appear after the project is built and all tests are run. This is the same process you used when you scanned locally from the command line.
 

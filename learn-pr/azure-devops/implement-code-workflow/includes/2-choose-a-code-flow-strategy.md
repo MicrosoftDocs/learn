@@ -18,7 +18,7 @@ Andy gives a heavy sigh.
 
 **Mara:** You know, Andy, maybe we should think about implementing a Git workflow now. It's on our board. If we were using distributed version control, you wouldn't be blocked. It would be much easier for all of us to work together on the same project. It's also a task on our board to increase visibility so all the stakeholders know what everyone is doing. I think a distributed source control system like Git would help there as well.
 
-**Andy:** I've been wanting to try Git for a while. I just never seem to have the time. Is it difficult to learn or set up? If it seems reasonable, maybe we could work on it now. I'm tired of always putting things off. 
+**Andy:** I've been wanting to try Git for a while. I just never seem to have the time. Is it difficult to learn or set up? If it seems reasonable, maybe we could work on it now. I'm tired of always putting things off.
 
 It would be nice to be able to see what everyone is doing and to have access to the entire repository. OK, what's it all about?
 

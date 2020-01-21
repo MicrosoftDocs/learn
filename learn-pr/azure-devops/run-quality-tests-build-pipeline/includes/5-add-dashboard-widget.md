@@ -6,7 +6,7 @@ Amita takes a look and is excited.
 
 **Amita:** This is great progress. Thank you! Not to sound ungrateful, but is there any way I can see just a brief overview of the test results over time?
 
-**Mara:** Yes! Azure DevOps lets you add widgets to your dashboards. It only takes a few minutes. Let me show you.
+**Mara:** Yes! Microsoft Azure DevOps lets you add widgets to your dashboards. It only takes a few minutes. Let me show you.
 
 ## Add the widget to the dashboard
 

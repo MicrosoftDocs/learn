@@ -143,11 +143,11 @@ Here, you create a pull request for your branch.
 
     ![GitHub showing a pending build](../media/4-github-build-pending.png)
 
-    Just like when you push a branch to GitHub, a pull request, by default, triggers Azure Pipelines to build your application.
+    Just like when you push a branch to GitHub, a pull request, by default, triggers Microsoft Azure Pipelines to build your application.
 
 1. Optionally, select the **Details** link, and then trace the build as it moves through the pipeline.
 
-    After the build is finished, the **Artifacts** button appears in Azure Pipelines. You can hand off your build to the next step in the process, such as QA. Later, you can configure the pipeline to push your change all the way out to your QA lab or production.
+    You can hand off your build to the next step in the process, such as QA. Later, you can configure the pipeline to push your change all the way out to your QA lab or production.
 
 1. Go back to your pull request on GitHub.
 

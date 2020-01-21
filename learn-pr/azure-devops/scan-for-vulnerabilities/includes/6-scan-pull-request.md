@@ -115,7 +115,7 @@ In this part, you provide a condition to each build task that relates to SonarCl
 
 1. From Visual Studio Code, modify *azure-pipelines.yml* like this:
 
-    [!code-yml[](code/6-azure-pipelines.yml?highlight=52-58,88-94,98-104)]
+    [!code-yml[](code/6-azure-pipelines.yml?highlight=57-63,91-99,103-109)]
 
     The highlighted parts show you where the conditions are applied to the SonarCloud build tasks.
 
