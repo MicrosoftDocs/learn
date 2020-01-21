@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.student-evangelism.python-object-oriented-programming
+metadata:
+  title: Object-oriented programming in Python - Learn
+  description: Learn how to use Python to write object-oriented code.
+  ms.date: 02/17/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-python
+title: Object-oriented programming in Python
+summary: Use Python to write object-oriented code.
+abstract:  | 
+  In this module, you will:
+  - Learn how to write classes in Python
+  - Learn how to add attributes to a class
+  - Learn how to add methods to a class
+  - Learn how to inherit classes
+  - Learn how to add methods and attributes to inherited classes
+  - Learn how to override methods inherited from a base class
+prerequisites:  |
+  None
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+- student
+products:
+- azure
+units:
+- learn.student-evangelism.python-object-oriented-programming.0-introduction
+- learn.student-evangelism.python-object-oriented-programming.1-classes
+- learn.student-evangelism.python-object-oriented-programming.2-attributes
+- learn.student-evangelism.python-object-oriented-programming.3-methods
+- learn.student-evangelism.python-object-oriented-programming.4-inheritance
+- learn.student-evangelism.python-object-oriented-programming.5-summary
+badge:
+  uid: learn.student-evangelism.python-object-oriented-programming.badge
+  

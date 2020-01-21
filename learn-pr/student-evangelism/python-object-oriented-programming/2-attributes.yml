@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.python-object-oriented-programming.2-attributes
+title: Attributes
+metadata:
+  title: Attributes
+  description: Use attributes in Python
+  ms.date: 02/17/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-python
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-attributes.md)]
