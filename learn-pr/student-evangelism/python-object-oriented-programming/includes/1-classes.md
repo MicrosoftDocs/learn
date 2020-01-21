@@ -16,23 +16,23 @@ Let's begin by creating a project and then creating a notebook inside it.
 
 1. Create a new project named "Python Labs" or something similar.
 
-	![Creating a project](../media/add-project.png)
+	![Create a project](../media/add-project.png)
 
-	_Creating a project_
+	_Create a project_
 
 	Checking the "Public" box makes it easy to share notebooks later on. If you prefer to keep the notebooks in this project private, make sure the box is unchecked. You can also go into the project settings after a project is created and change its visibility to public or private.  
 
 1. Click **+ New** and select **Notebook** from the menu to add a notebook to the project.
 
-	![Adding a notebook to the project](../media/add-notebook-1.png)
+	![Add a notebook to the project](../media/add-notebook-1.png)
 
-	_Adding a notebook to the project_
+	_Add a notebook to the project_
 
 1. Give the notebook a name such as "Learn Python.ipynb," and select **Python 3.6** as the language. This creates a notebook with a Python 3.6 kernel for executing Python code. One of the strengths of Azure notebooks is that you can use different languages by choosing different kernels.
 
-	![Creating a notebook](../media/add-notebook-2.png)
+	![Create a notebook](../media/add-notebook-2.png)
 
-	_Creating a notebook_
+	_Create a notebook_
 
 	If you're curious, the .ipynb file-name extension stands for "IPython notebook." Jupyter notebooks were originally known as IPython (Interactive Python) notebooks, and they only supported Python as a programming language. The name Jupyter is a combination of Julia, Python, and R — the core programming languages that Jupyter supports.
 
@@ -59,9 +59,9 @@ Before you begin writing classes of your own, it is helpful to peek under the ho
 
 1. Make sure **Code** is selected in the drop-down list so the cell is a code cell, and then click the **Run** button to execute the code.
 
-	![Identifying an object's class](../media/run-cell-1.png)
+	![Identify an object's class](../media/run-cell-1.png)
 	
-	_Identifying an object's class_
+	_Identify an object's class_
 
 	The output shows that 1 is an instance of Python's built-in `int` class, while "Hello There!" is a `str` (string). Notice that Python uses different classes for 1 and 1.1; 1.1 is `float`, not an `int`. If something has a truth value, True or False, then it relies on the `bool` class.
 
@@ -75,9 +75,9 @@ Before you begin writing classes of your own, it is helpful to peek under the ho
 
 	The `dir()` function provides a list of an object's attributes and methods. You sometimes hear methods referred to as *functions* when working with Python. The two terms are synonymous, but you can avoid confusion when talking with other people if you simply call them methods. 
 
-	![Listing an object's methods](../media/run-cell-2.png)
+	![List an object's methods](../media/run-cell-2.png)
 	
-	_Listing an object's methods_
+	_List an object's methods_
 
 	All the entries you see in the list are methods. A method represents an action that you can perform on an object. For example, `to_bytes()` outputs the object value in byte format, which is just a special way of looking at the data.
 
@@ -119,7 +119,9 @@ Let's begin with something simple: telling the user that the class has been crea
 
 1. Run the code and confirm that you see the following output:
 
-	![Defining a class](../media/run-cell-3.png)
+	![Define a class](../media/run-cell-3.png)
+	
+	_Define a class_
 	
 The output proves that the class was created (not that it was instantiated). The `print()` function executes during the creation process. Normally, you wouldn't use a `print(`) statement this way, but here it helps to see how the class creation works.
 
