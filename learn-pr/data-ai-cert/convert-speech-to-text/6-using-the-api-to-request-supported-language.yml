@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 4
 content: |
-  [!include[](includes/6-using-the-api-to-request-supported-language.md)]
+  [!include[](includes/6-supported-languages.md)]
