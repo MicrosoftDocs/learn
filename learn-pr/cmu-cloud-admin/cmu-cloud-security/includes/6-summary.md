@@ -2,11 +2,11 @@ This module presented some of the challenges to securing assets in the cloud and
 
 - Information isn't secure by default; administrators must take proactive steps to make it secure.
 
-- Responsibility for the security of information stored in the cloud is shared by cloud service providers and cloud customers. CSPs are responsible for the security *of* the cloud, while customers are responsible for security *in* the cloud. It is up to customers, for example, to make sure that applications they deploy to the cloud are secure.
+- Responsibility for the security of information stored in the cloud is shared by cloud service providers and cloud customers. CSPs are responsible for the security *of* the cloud, while customers are responsible for security *in* the cloud. It's up to customers, for example, to make sure that applications they deploy to the cloud are secure.
 
 - The Shared Responsibility Model (SRM) adopted by Microsoft, Amazon, and Google defines who is responsible for what.
 
-- Cloud assets are constantly under attack. The Cloud Security Alliance documents the greatest threats to cloud security in order to help organizations defend against them.
+- Cloud assets are constantly under attack. The Cloud Security Alliance documents the greatest threats to cloud security to help organizations defend against them.
 
 - Encryption plays an important role in securing data, both at rest and in motion.
 
@@ -14,13 +14,13 @@ This module presented some of the challenges to securing assets in the cloud and
 
 - Asymmetric encryption, also known as *public key cryptography*, is frequently used to encrypt data in motion. Transport Layer Security (TLS), which encrypts traffic that travels over the wire between parties (for example, between Web browsers and Web servers), uses a combination of symmetric and asymmetric encryption.
 
-- The greatest challenge to encrypting data is not the encryption itself, but how to store keys securely and securely exchange them between interested parties.
+- The greatest challenge to encrypting data isnt' the encryption itself, but how to store keys securely and securely exchange them between interested parties.
 
 - Services such as Azure Key Vault and AWS Key Management Service provide secure storage for encryption keys.
 
 - Server certificates allow servers to provide public keys to clients and enable clients to verify the authenticity of the servers.
 
-- The best approach to data security is a multilayered one that comprises multiple defenses at multiple levels. If an attacker breaches one defense, the next one may stop them.
+- The best approach to data security is a multilayered one that includes multiple defenses at multiple levels. If an attacker breaches one defense, the next one may stop them.
 
 - Data security platforms (DSPs) can help administrators implement security protocols. Today's public cloud platforms have integrated support for many DSP features, including logging data accesses and data discovery and classification.
 
