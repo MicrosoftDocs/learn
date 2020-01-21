@@ -1,4 +1,4 @@
-Here you'll get the team's new code for the **Tailspin.SpaceGame.Web.Models** project that is now separate from the **Tailspin.SpaceGame.Web** project. You'll create an Azure Pipelines project for the Models project, and see the artifact in Azure Artifacts with a version number of 1.0.0 in your feed.
+Here you'll get the team's new code for the *Tailspin.SpaceGame.Web.Models* project that is now separate from the *Tailspin.SpaceGame.Web* project. You'll create a Microsoft Azure Pipelines project for the Models project, and see the artifact in Microsoft Azure Artifacts with a version number of 1.0.0 in your feed.
 
 ## What changes were made to the project?
 

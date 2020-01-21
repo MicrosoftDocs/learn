@@ -1,4 +1,4 @@
-In this unit, you ensure that your Azure DevOps organization is set up to complete the rest of this module.
+In this unit, you ensure that your Microsoft Azure DevOps organization is set up to complete the rest of this module.
 
 To do this, you:
 
@@ -23,7 +23,7 @@ Run a template that sets up everything for you in your Azure DevOps organization
 To run the template, on the Azure DevOps Demo Generator site, do the following:
 
 1. Select **Sign In**, and accept the usage terms.
-1. On the **Create New Project** page, select your Azure DevOps organization, and then enter a project name, such as **Space Game - web - Tests**.
+1. On the **Create New Project** page, select your Azure DevOps organization, and then enter a project name, such as *Space Game - web - Workflow*.
 1. Select **Fork repository on GitHub**, and then select **Authorize**. If a window appears, authorize access to your GitHub account.
 
     > [!IMPORTANT]

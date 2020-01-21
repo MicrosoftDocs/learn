@@ -125,15 +125,13 @@ Here's an example of the package dependencies from our Tailspin-SpaceGame-Web pr
 
 ```xml
 <ItemGroup>
-  <PackageReference Include="Microsoft.AspNetCore.App" />
-  <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
   <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
 </ItemGroup>
 ```
 
-## What is Azure Artifacts?
+## What is Microsoft Azure Artifacts?
 
-**Mara:** It seems to me it would make sense for us to host the new Models package in Azure Artifacts. We're all part of the Azure DevOps organization already, so authentication would be easier than trying to set it up on a different package manager.
+**Mara:** It seems to me it would make sense for us to host the new Models package in Azure Artifacts. We're all part of the Microsoft Azure DevOps organization already, so authentication would be easier than trying to set it up on a different package manager.
 
 **Andy:** I looked into that before the meeting and it seems straightforward to me. I agree with Mara.
 

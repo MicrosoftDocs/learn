@@ -2,7 +2,7 @@ In this unit, you learn about some of the factors to consider when you're choosi
 
 Let's see what's happening with the Tailspin web team. Tim, from operations, wants to learn more about how build agents work in Azure Pipelines. He starts a conversation with our developers, Andy and Mara.
 
-**Tim:** Hi, Andy and Mara. I've been following how you're using Azure Pipelines to build the _Space Game_ web application. But I'm curious to learn more about how this works. Does it connect to one of our build machines?
+**Tim:** Hi, Andy and Mara. I've been following how you're using Microsoft Azure Pipelines to build the _Space Game_ web application. But I'm curious to learn more about how this works. Does it connect to one of our build machines?
 
 **Andy:** It's possible to connect it to one of our build machines, but right now we use an agent that's hosted by Microsoft.
 
@@ -10,7 +10,7 @@ Let's see what's happening with the Tailspin web team. Tim, from operations, wan
 
 **Mara:** Yes! In fact, you can choose Windows, Linux, or macOS for your build agent. If your application runs on multiple platforms, you can configure the pipeline to build on all of them.
 
-**Tim:** Interesting. One of the other teams mentioned some of the challenges they're having with their build infrastructure. Perhaps Azure Pipelines and either a Microsoft-hosted agent or their own build agent can help?
+**Tim:** Interesting. One of the other teams mentioned some of the challenges they're having with their build infrastructure. Perhaps Microsoft Azure Pipelines and either a Microsoft-hosted agent or their own build agent can help?
 
 **Andy:** I'd be interested to know as well. Let's chat a bit more about build agents. Perhaps you can share what you learn with the other team.
 
@@ -51,8 +51,6 @@ pool: 'MyAgentPool'
 ```
 
 You'll create a build agent and add it to a pool later in this module.
-
-<!-- TODO: Do we need an agent pool diagram? -->
 
 ## What kind of agents can I use?
 

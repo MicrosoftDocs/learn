@@ -8,7 +8,7 @@ Although Azure DevOps works with various kinds of source control, many developer
 
 ## Learning objectives
 
-In this module, you will:
+In this module, you:
 
 * Collaborate with others by choosing an appropriate branching and merging strategy.
 * Add a badge to your GitHub repository to show the status of the latest build.
@@ -28,10 +28,10 @@ If you want to go through just this module, you need to set up a development env
 * An [Azure DevOps organization](https://dev.azure.com?azure-portal=true)
 * A [GitHub](https://github.com/join?azure-portal=true) account
 * [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
-* [.NET Core 2.1](hhttps://dotnet.microsoft.com/download/dotnet-core/2.1?azure-portal=true)
+* [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core/3.1?azure-portal=true)
 * [Git](https://git-scm.com/downloads?azure-portal=true)
 
-You can get started with Azure DevOps for free.
+You can get started with Microsoft Azure DevOps for free.
 
 This environment lets you complete the exercises in this and future modules. You can also use it to apply your new skills to your own projects.
 
