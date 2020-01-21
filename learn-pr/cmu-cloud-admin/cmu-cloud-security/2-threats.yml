@@ -12,54 +12,66 @@ metadata:
 durationInMinutes: 11
 content: |
   [!include[](includes/2-threats.md)]
-# quiz:
-#   title: Check your knowledge
-#   questions:
+quiz:
+  title: Check your knowledge
+  questions:
 
-#     - content: "Which of the following is NOT one of the ways in which cloud computing benefits from virtualization?"
-#       choices:
-#       - content: "Increased elasticity"
-#         isCorrect: false
-#         explanation: "Incorrect. Virtualization supports elasticity by allowing VMs to be provisioned and deprovisioned dynamically in response to changing demand."
-#       - content: "Improved server utilization"
-#         isCorrect: false
-#         explanation: "Incorrect. Virtualization increases server utilization by allowing one server to do the work of many."
-#       - content: "Reduced energy costs and carbon footprint"
-#         isCorrect: false
-#         explanation: "Incorrect. Increased server utilization means you need fewer servers to handle a given workload, and fewer servers means less power consumption."
-#       - content: "Improved memory efficiency by sharing one operating system among multiple VMs"
-#         isCorrect: true
-#         explanation: "Correct! Every VM runs its own operating system, and VMs cannot share an operating system any more than two physical computers can share one copy of an operating system."
-#       - content: "Server consolidation"
-#         isCorrect: false
-#         explanation: "Incorrect. Virtualization supports server consolidation by allowing the work of several physical servers to be done in separate VMs on a single server."
-    
-#     - content: "Which of the following is an example of elasticity?"
-#       choices:
-#       - content: "Doubling the number of VMs hosting a web application in order to meet increased demand"
-#         isCorrect: true
-#         explanation: "Correct! This is known as scaling out, and the fact that VMs can be created much more quickly than physical servers can be deployed means the cloud can offer much greater elasticity than a data center that eschews virtualization."
-#       - content: "Increasing the ambient temperature in a data center to reduce cooling costs"
-#         isCorrect: false
-#         explanation: "Incorrect. Elasticity refers to scaling resources to meet changing demand."
-#       - content: "Replacing a PaaS application running Linux with a PaaS application running Windows with zero downtime"
-#         isCorrect: false
-#         explanation: "Incorrect. Elasticity refers to scaling resources to meet changing demand."
-#       - content: None of the above"
-#         isCorrect: false
-#         explanation: "Incorrect. Elasticity refers to scaling resources to meet changing demand."
+    - content: "An organization discovers that some of the personally identifiable information (PII) it stores regarding users of an application has been been divulged, not as a result of someone gaining unauthorized access to the application or its back-end data stores, but as the result of a SQL-injection vulnerabilility in the application itself. Does this qualify as a data breach?"
+      choices:
+      - content: "Yes"
+        isCorrect: true
+        explanation: "Correct! If PII is divulged, it is considered a data breach regardless of how it was divulged."
+      - content: "Yes, but only if the person or organization responsible for stealing the data can be identified"
+        isCorrect: false
+        explanation: "Incorrect. If PII is divulged, it is considered a data breach regardless of how it was divulged or who is responsible."
+      - content: "Yes, but only if applicable state and federal regulations define it as a data breach"
+        isCorrect: false
+        explanation: "Incorrect. If PII is divulged, it is considered a data breach regardless of how it was divulged or whether state and federal regulations define it as a data breach."
+      - content: "No"
+        isCorrect: false
+        explanation: "Incorrect. If PII is divulged, it is considered a data breach regardless of how it was divulged."
+      
+    - content: "Which of the following statements is true?"
+      choices:
+      - content: "Security threats targeting public clouds can affect only IaaS services"
+        isCorrect: false
+        explanation: "Incorrect. Security threats can affect all three cloud service models."
+      - content: "Security threats targeting public clouds can affect only IaaS and PaaS services"
+        isCorrect: false
+        explanation: "Incorrect. Security threats can affect all three cloud service models."
+      - content: "Security threats targeting public clouds can affect IaaS, PaaS, and SaaS services"
+        isCorrect: true
+        explanation: "Correct! Security threats can affect all three cloud service models."
+      - content: "Security threats targeting public clouds can affect only PaaS and SaaS services"
+        isCorrect: false
+        explanation: "Incorrect. Security threats can affect all three cloud service models."
 
-#     - content: "Jack unknowingly downloaded malicious code. This code intends to shut down the machine it is running on. Running this code in a virtual machine will impact which of the following?"
-#       choices:
-#       - content: "Programs running in the same virtual machine"
-#         isCorrect: true
-#         explanation: "Correct! Running the malicious code will only affect programs running in the same virtual machine."
-#       - content: "Programs running in other virtual machines"
-#         isCorrect: false
-#         explanation: "Incorrect. Running the malicious code will  only affect programs running in the same virtual machine."
-#       - content: "The physical machine that hosts the virtual machine"
-#         isCorrect: false
-#         explanation: "Incorrect. Running the malicious code will only affect programs running in the same virtual machine, not the physical machine on which the virtual machine is provisioned."
-#       - content: "All of the above"
-#         isCorrect: false
-#         explanation: "Incorrect. Running the malicious code will affect only programs running in the same virtual machine."
+    - content: "Your organization own a public-facing Web site that is hosted in Azure. It requires users to log in and uses trusted identity providers such as Microsoft and Google to support logins. A hacker sends a malicious e-mail to the employees of your organization containing a link to a login page that looks identical to the real login page, but in fact is designed to "spoof" unsuspecting users into revealing their user names and passwords. What type of security threat is this?"
+      choices:
+      - content: "SQL injection attack"
+        isCorrect: false
+        explanation: "Incorrect. This is an example of a phishing attack, in which an attacker directs users to an illicit login page for the purpose of harvesting login credentials."
+      - content: "Cross-site scripting attack"
+        isCorrect: false
+        explanation: "Incorrect. This is an example of a phishing attack, in which an attacker directs users to an illicit login page for the purpose of harvesting login credentials."
+      - content: "Man-in-the-middle attack"
+        isCorrect: false
+        explanation: "Incorrect. This is an example of a phishing attack, in which an attacker directs users to an illicit login page for the purpose of harvesting login credentials."
+      - content: "Phishing attack"
+        isCorrect: true
+        explanation: "Correct! This is an example of a phishing attack, in which an attacker directs users to an illicit login page for the purpose of harvesting login credentials."
+
+    - content: "Some cloud service providers offer dedicated VM instances as an added security measure. Such instances are guaranteed to run on dedicated hardware which will not be shared with other users of the cloud service. Which of the following threats does a dedicated VM instance protect against?"
+      choices:
+      - content: "A zero-day vulnerability (http://en.wikipedia.org/wiki/Zero-day_attack) on the physical server that the cloud provider did not patch"
+        isCorrect: false
+        explanation: "Incorrect. Consider the type of attacks made possible when a cloud provider offers shared infrastructure to multiple tenants."
+      - content: "Malicious code from a competitor hosted in a neighboring VM"
+        isCorrect: true
+        explanation: "Correct! With dedicated infrastructure, we can eliminate the threat of a competitor running malicious code from a neighboring VM."
+      - content: "Data center failure leading to your VM shutting down"
+        isCorrect: false
+        explanation: "Incorrect. Consider the type of attacks made possible when a cloud provider offers shared infrastructure to multiple tenants."
+      - content: "A vulnerability in your website allowing hackers to deface it"
+        isCorrect: false
+        explanation: "Incorrect. Consider the type of attacks made possible when a cloud provider offers shared infrastructure to multiple tenants."
