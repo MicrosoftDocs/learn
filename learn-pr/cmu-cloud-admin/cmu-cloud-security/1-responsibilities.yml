@@ -62,14 +62,13 @@ quiz:
       choices:
       - content: "You (the customer)"
         isCorrect: false
-        explanation: "Incorrect. Azure App Service and AWS Elastic Beanstalk are PaaS services, and according to SRM, the cloud provider and the cloud customer share responsibility for IAM in PaaS applications."
+        explanation: "Incorrect. Azure App Service and AWS Elastic Beanstalk are PaaS services. According to SRM, the cloud provider and the cloud customer share responsibility for IAM in PaaS applications."
       - content: "The cloud provider (Amazon or Microsoft)"
         isCorrect: false
-        explanation: "Incorrect. Azure App Service and AWS Elastic Beanstalk are PaaS services, and according to SRM, the cloud provider and the cloud customer share responsibility for IAM in PaaS applications."
+        explanation: "Incorrect. Azure App Service and AWS Elastic Beanstalk are PaaS services. According to SRM, the cloud provider and the cloud customer share responsibility for IAM in PaaS applications."
       - content: "Both you and the cloud provider"
         isCorrect: true
-        explanation: "Correct! Azure App Service and AWS Elastic Beanstalk are PaaS services, and according to SRM, the cloud provider and the cloud customer share responsibility for IAM in PaaS applications."
+        explanation: "Correct! Azure App Service and AWS Elastic Beanstalk are PaaS services. According to SRM, the cloud provider and the cloud customer share responsibility for IAM in PaaS applications."
       - content: "The third party hired to audit the site's security configuration"
         isCorrect: false
-        explanation: "Incorrect. Azure App Service and AWS Elastic Beanstalk are PaaS services, and according to SRM, the cloud provider and the cloud customer share responsibility for IAM in PaaS applications."
-      - content: "Both you and the cloud provider"
+        explanation: "Incorrect. Azure App Service and AWS Elastic Beanstalk are PaaS services. According to SRM, the cloud provider and the cloud customer share responsibility for IAM in PaaS applications."
