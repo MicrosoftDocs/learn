@@ -31,7 +31,7 @@ Here you'll get the starter code for the _Space Game_ web project from Microsoft
 
 ## Install the Marketplace extension
 
-Here you'll install the **WhiteSource Bolt** extension for Azure Pipelines. This extension provides you with the built-in task types you need in your pipeline definition. It also provides a way to visualize the scan results directly from Azure Pipelines.
+Here you'll install the **WhiteSource Bolt** extension for Microsoft Azure Pipelines. This extension provides you with the built-in task types you need in your pipeline definition. It also provides a way to visualize the scan results directly from Azure Pipelines.
 
 1. Open a new browser tab and go to [marketplace.visualstudio.com](https://marketplace.visualstudio.com?azure-portal=true). Make sure you're on the **Azure DevOps** tab.
 1. Search for "WhiteSource Bolt".
@@ -39,8 +39,8 @@ Here you'll install the **WhiteSource Bolt** extension for Azure Pipelines. This
 
     ![Marketplace WhiteSource Bolt extension](../media/4-marketplace-whitesource-bolt.png)
 1. Select **Get it free**.
-1. Select your Azure DevOps organization from the drop-down box.
-1. Select **Install**.
+1. Select your Microsoft Azure DevOps organization from the drop-down box.
+1. Select **Install**. Note the WhiteSource Bolt version number.
 1. From Azure DevOps, go to your project. Then go to **Pipelines**.
 1. Go to the **WhiteSource Bolt** tab.
 
@@ -55,13 +55,16 @@ Here you'll install the **WhiteSource Bolt** extension for Azure Pipelines. This
 
 ## Add tasks to the pipeline configuration
 
-Here you'll use the built-in task `WhiteSource Bolt@19` that's provided by the WhiteSource Bolt extension to scan your open-source dependencies when the pipeline runs.
+Here you'll use the built-in task `WhiteSource Bolt@20` that's provided by the WhiteSource Bolt extension to scan your open-source dependencies when the pipeline runs.
+
+> [!IMPORTANT]
+> The major version number for WhiteSource Bolt that you noted earlier must match the version number of the `WhiteSource Bolt` task. At the time of this writing the version was 20.
 
 1. From Visual Studio Code, open *azure-pipelines.yml* and replace its contents with the following:
 
     [!code-yml[](code/4-azure-pipelines.yml?highlight=57-58)]
 
-    The `WhiteSource Bolt@19` task, which runs before the `PublishBuildArtifacts@1` task, is highlighted. It analyzes your open-source dependencies for known vulnerabilities, as well as licenses and prepares reports that you can review directly from Azure Pipelines.
+    The `WhiteSource Bolt@20` task, which runs before the `PublishBuildArtifacts@1` task, is highlighted. It analyzes your open-source dependencies for known vulnerabilities, as well as licenses and prepares reports that you can review directly from Azure Pipelines.
 
 ## Watch Azure Pipelines build the application
 

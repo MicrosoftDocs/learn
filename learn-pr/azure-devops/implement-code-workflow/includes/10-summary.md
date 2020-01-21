@@ -100,5 +100,3 @@ Pull requests combine the review and merge of your code into a single collaborat
 There are a few critical branches in your repo, such as the master branch, that you may want to protect with some pull request policies. Pull requests should be mandatory if a developer wants to make changes on a critical branch. Developers pushing changes directly to these branches will have their pushes rejected.
 
 Add additional conditions to your pull requests to enforce a higher level of code quality in your key branches. A clean build of the merged code and approval from multiple reviewers are some extra requirements you can set to protect your key branches.
-
-

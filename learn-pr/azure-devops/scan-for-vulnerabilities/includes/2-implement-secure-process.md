@@ -16,7 +16,7 @@ Tim finds Andy and Mara talking in the break room.
 
 **Tim:** No, but I've been tasked with reporting on potential vulnerabilities in our entire codebase, and that *does* include you. So, I need a report on the quality and safety of our team's code. We need something with real numbers and concrete examples.
 
-**Mara:** That's a big request! I don't think we have any ways to analyze our code easily.
+**Mara:** That's a big request! I don't think we have any way to analyze our code easily.
 
 **Andy:** I saw something at a user group meeting I went to a few weeks ago. I saved a document with some links.
 

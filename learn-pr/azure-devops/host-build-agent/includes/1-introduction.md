@@ -1,4 +1,4 @@
-In this module, you set up your own build agent running on an Azure virtual machine.
+In this module, you set up your own build agent running on a Microsoft Azure virtual machine.
 
 Up until now, you used a Microsoft-hosted agent that runs Ubuntu to build the _Space Game_ web application. Most of the time, a Microsoft-hosted agent can do everything you need.
 
@@ -26,7 +26,7 @@ If you want to go through just this module, you need to set up a development env
 * An [Azure DevOps organization](https://dev.azure.com?azure-portal=true)
 * A [GitHub](https://github.com/join?azure-portal=true) account
 * [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
-* [.NET Core 2.1](https://dotnet.microsoft.com/download/dotnet-core/2.1?azure-portal=true)
+* [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core/3.1?azure-portal=true)
 * [Git](https://git-scm.com/downloads?azure-portal=true)
 
 You can get started with Azure DevOps for free.

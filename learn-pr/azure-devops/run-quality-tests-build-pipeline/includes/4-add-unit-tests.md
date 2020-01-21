@@ -1,4 +1,4 @@
-Andy is going to work with Mara to add unit tests to the automated build that Mara created with Azure Pipelines. Regression bugs are creeping into their code and breaking the leaderboard's filtering functionality. Specifically, the wrong game mode keeps appearing.
+Andy is going to work with Mara to add unit tests to the automated build that Mara created with Microsoft Azure Pipelines. Regression bugs are creeping into their code and breaking the leaderboard's filtering functionality. Specifically, the wrong game mode keeps appearing.
 
 The following image illustrates Amita's problem. When Amita selects "Milky Way" to show only scores from that game map, she gets results from other game maps, such as Andromeda.
 
@@ -178,7 +178,7 @@ Here you push your changes to GitHub and see the pipeline run. Recall that you'r
 
 ## Watch Azure Pipelines run the tests
 
-Here you see the tests run in the pipeline and then visualize the results from Azure Test Plans. Azure Test Plans provides all the tools you need to successfully test your applications. You can create and run manual test plans, generate automated tests, and collect feedback from stakeholders.
+Here you see the tests run in the pipeline and then visualize the results from Microsoft Azure Test Plans. Azure Test Plans provides all the tools you need to successfully test your applications. You can create and run manual test plans, generate automated tests, and collect feedback from stakeholders.
 
 1. In Azure Pipelines, trace the build through each of the steps.
 
@@ -186,11 +186,9 @@ Here you see the tests run in the pipeline and then visualize the results from A
 
     ![Azure Pipelines showing running unit tests](../media/4-pipeline-task.png)
 
-1. After the build is complete, select the **Summary** tab.
+1. Navigate back to the pipeline summary.
 
-    You see that the test run is included in the progression.
-
-    ![Azure Pipelines showing the Summary tab](../media/4-summary-report.png)
+    ![Azure Pipelines showing the pipeline summary page with Tests tab highlighted](../media/4-pipeline-summary-tests-tab.png)
 
 1. Move to the **Tests** tab.
 
