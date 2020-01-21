@@ -8,7 +8,7 @@ Nearly two-thirds of respondents to the (ISC)^2^ survey (64 percent) said their 
 
 With each successive tier of cloud service -- from infrastructure to deployment platforms to applications -- the enterprise customer cedes control of its assets to the management and oversight of the CSP. When public cloud services first became available, respondents to surveys similar to this one often cited loss of control over their information assets as among the biggest barrier, if not the biggest, to cloud adoption. But this fear has subsided over the years, as CSPs prove themselves at least as capable of securing customer data, if not more so, than enterprises' own security engineers. As Figure 2 shows, only 22 percent of respondents to the 2019 (ISC)^2^ survey cited "Loss of control" as a significant barrier to their organizations' cloud adoption, ranking \#7 in a list of 20.
 
-![Figure 2: Top barriers to cloud adoption, from the 2019 (ISC)^2^ Cloud Security Report. \[Courtesy (ISC)^2^\]](../media/fig8-2.jpeg)
+![Figure 2: Top barriers to cloud adoption, from the 2019 (ISC)^2^ Cloud Security Report. \[Courtesy (ISC)^2^\]](../media/fig8-2.jpg)
 
 _Figure 2: Top barriers to cloud adoption, from the 2019 (ISC)^2^ Cloud Security Report. \[Courtesy (ISC)^2^\]_
 
