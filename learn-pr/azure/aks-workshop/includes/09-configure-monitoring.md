@@ -36,7 +36,7 @@ We'll use Azure Monitor's Log Analytics to store monitoring data, events and met
 
 ## Enable the monitoring addon
 
-Once our workspace is ready, we can integrate the Azure Monitor for containers monitoring add-on into it.
+Once our workspace is ready, we can integrate the Azure Monitor for containers monitoring addon into it.
 
 1. We need the **resource id** of our workspace to enable the addon. Run the following command and make a note of the result.
 
@@ -47,7 +47,7 @@ Once our workspace is ready, we can integrate the Azure Monitor for containers m
         --query "id" -o tsv
     ```
 
-1. Next, enable the monitoring add-on by running the command below, replace the **workspace-resource-id** value with the output from the previous command.
+1. Next, enable the monitoring addon by running the command below, replace the **workspace-resource-id** value with the output from the previous command.
 
     ```bash
     az aks enable-addons \
@@ -57,7 +57,7 @@ Once our workspace is ready, we can integrate the Azure Monitor for containers m
         --workspace-resource-id <workspace-resource-id>
     ```
 
-    Keep in mind that it might be several minutes before the data will appear for our cluster once we enable the monitoring add-on.
+    Keep in mind that it might be several minutes before the data will appear for our cluster once we enable the monitoring addon.
 
 ## Inspect the Kubernetes event or logs and monitor  cluster health
 
@@ -69,11 +69,11 @@ We can view utilization reports and charts for our cluster in the Azure portal b
 
 1. Under the **Insights** section, select **Containers** to see a list of all clusters that we have access to.
 
-1. Select the name of our cluster, to check the cluster utilization under load. Notice how this view is again a high level view of that provides us a view on the cluster, nodes, controllers and containers.
+1. Select the name of our cluster to check the cluster utilization under load. Notice how this view is again a high-level view that provides us a view on the cluster, nodes, controllers, and containers.
 
     [![](../media/09-clusterutilization.png "Screenshot showing a cluster utilization under load report")](../media/09-clusterutilization.png#lightbox)
 
-1. Select the **Nodes** tab at the top of the view to get a detailed view on our deployed pods in the cluster and to identify which pods are causing trouble.
+1. Select the **Nodes** tab at the top of the view to get a detailed view of our deployed pods in the cluster and to identify which pods are causing trouble.
 
     [![](../media/09-podmetrics.png "Screenshot showing podmetrics for a cluster")](../media/09-podmetrics.png#lightbox)
 
@@ -83,7 +83,7 @@ In addition to the high-level overview of our cluster's health, we can also view
 
 By default, our cluster is enabled with Azure role-based access controls (RBAC). With RBAC enabled, we'll get an error when we use the view live data option in the portal. We can fix the error by setting up RBAC roles and accounts in our cluster. We'll first create a *Role* that has access to pod logs and events. Then we'll assign permissions to users by using a *RoleBinding*.
 
-In our exercise, we want to set up *Roles* and *RoleBindings* that are not limited to a specific namespace. We can configure Roles* and *RoleBindings* to grant permissions and bind roles to users across the entire cluster, or to cluster resources outside a given namespace.
+In our exercise, we want to set up *Roles* and *RoleBindings* that isn't limited to a specific namespace. We can configure Roles* and *RoleBindings* to grant permissions and bind roles to users across the entire cluster or to cluster resources outside a given namespace.
 
 If our Kubernetes cluster is not configured with Kubernetes RBAC authorization or integrated with Azure AD single-sign-on, we don't need to follow the steps above.
 
@@ -133,14 +133,16 @@ This section is optional. There are a few items that we'll have to install and c
 
 The first, we'll run an application that exposes a Prometheus endpoint. Our application has instrumentation added to it to track metrics by using Prometheus client libraries.
 
-We'll then generate traffic for the application and configure Prometheus to collect this data. Prometheus scrapes the collected data from our application's exposed endpoints by using a `ConfigMap` template. This template allows us to specify various parameters, for example, the services to scarp and the interval between scrapes.
+We'll then generate traffic for the application and configure Prometheus to collect this data. 
+
+Prometheus scrapes the collected data from our application's exposed endpoints by using a `ConfigMap` template. This template allows us to specify various parameters, for example, the services to scarp and the interval between scrapes.
 
 Finally, we'll query the collected metrics and plot visualization.
 
 >[!NOTE]
 >The minimum `omsagent` version supported by this feature is `microsoft/oms:ciprod07092019` or later.
 
-1. In Cloud Shell, save the YAML below as `prommetrics-demo.yaml`. This file contains the service declaration to run a demo application called **prommetrics-demo** which already has the Prometheus endpoint exposed.
+1. In Cloud Shell, save the YAML below as `prommetrics-demo.yaml`. This file contains the service declaration to run a demo application called **prommetrics-demo**, which already has the Prometheus endpoint exposed.
 
     ```yaml
     apiVersion: v1
@@ -228,7 +230,7 @@ Finally, we'll query the collected metrics and plot visualization.
 
 1. In Cloud Shell, save the below `ConfigMap` template YAML to a file name `configmap.yml`.
 
-    This `ConfigMap` is pre-configured to scrape the application pods and collect Prometheus metric `prommetrics_demo_requests_counter_total` from the demo application in 1 minute intervals.
+    This `ConfigMap` is pre-configured to scrape the application pods and collect Prometheus metric `prommetrics_demo_requests_counter_total` from the demo application in 1-minute intervals.
 
     ```yaml
     kind: ConfigMap
