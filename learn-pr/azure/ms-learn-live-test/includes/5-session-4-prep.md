@@ -1,15 +1,16 @@
 Session three introduced automated builds and deployments to VanArsdel's project. This is handy, because in this session we are going to move away from our filesystem-based image storage to a cloud based solution. To get there, we are going to write some code and with automated builds in place, our deployed solution will automatically be updated on Azure.
 
-To follow along with the session, we recommend getting the project into the state we had at the end of session three. 
+To follow along with the session, we recommend getting the project into the state we had at the end of session three.
 
 ## Objectives
+
 In this session, you will:
 
 - Analyze the existing storage implementation
 - Explain the four Azure Storage services
 - Select an appropriate storage approach
 
-## The instructions and scripts provided in this document will:
+## The instructions and scripts provided in this document will
 
 1. Create an App Service Plan
 1. Create an App Service
@@ -59,4 +60,4 @@ You are now ready to join session four! :-)
 - Microsoft Learn Module: [Organize Azure storage blobs with properties and metadata](https://docs.microsoft.com/en-us/learn/modules/organize-blobs-properties-metadata/6-add-blob-metadata-using-application-code)
 - Microsoft Learn Module: [Optimize storage performance and costs using Blob storage tiers](https://docs.microsoft.com/en-us/learn/modules/optimize-archive-costs-blob-storage/)
 - Microsoft Learn Module: [Secure your Azure Storage Account](https://docs.microsoft.com/en-us/learn/modules/secure-azure-storage-account/)
-- Microsoft Learn Module: [https://docs.microsoft.com/en-us/learn/modules/connect-an-app-to-azure-storage/](Connect an app to Azure Storage)
+- Microsoft Learn Module: [Connect an app to Azure Storage](https://docs.microsoft.com/en-us/learn/modules/connect-an-app-to-azure-storage/)

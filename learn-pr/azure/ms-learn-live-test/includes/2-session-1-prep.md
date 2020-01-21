@@ -1,6 +1,7 @@
 In session one, we move the VanArsdel Ltd real estate application into an Azure App Service. Before we get there, we want to make sure the app is running locally.
 
 ## Objectives
+
 In this session, you will:
 
 - Choose an appropriate hosting model

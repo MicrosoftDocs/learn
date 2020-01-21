@@ -2,7 +2,7 @@ Welcome to Microsoft Learn Live! Microsoft Learn Live is a series of guided, liv
 
 You can find all the details about Learn Live on our website at [http://aka.ms/learn-live](https://aka.ms/learn-live).
 
-Learn Live is part of [Microsoft Learn](https://docs.microsoft.com/learn) where you find a thoroughly designed micro-learning experience, combined with a hands-on approach that helps you arrive at your goals faster, with more confidence and at your own pace. 
+Learn Live is part of [Microsoft Learn](https://docs.microsoft.com/learn) where you find a thoroughly designed micro-learning experience, combined with a hands-on approach that helps you arrive at your goals faster, with more confidence and at your own pace.
 
 ## Series overview
 

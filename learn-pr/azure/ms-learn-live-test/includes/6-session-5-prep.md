@@ -3,13 +3,14 @@ In session four we added a centralized, cloud-based storage to VanArsdel's solut
 To follow along with the session, we recommend getting the project into the state we had at the end of session four.
 
 ## Objectives
+
 In this session, you will:
 
 - Monitor your application against metrics
 - Configure Alerts when your application hits certain thresholds
 - Setup scaling rules for your application
 
-## The instructions and scripts provided in this document will:
+## The instructions and scripts provided in this document will
 
 1. Create an App Service Plan
 1. Create an App Service

@@ -3,12 +3,13 @@ At the end of the second session we had the VanArsdel solution running up on Azu
 To follow along with the session, we recommend getting the project into the state we had at the end of session two.
 
 ## Objectives
+
 In this session, you will:
 
 - Identify the benefits of automated deployments vs manual deployment
 - Automate your build and deployment using Azure App Service Deployment Center
 
-## The instructions and scripts provided in this document will:
+## The instructions and scripts provided in this document will
 
 1. Create an App Service Plan
 1. Create an App Service

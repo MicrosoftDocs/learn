@@ -3,12 +3,13 @@ Session one ended with the web application being migrated into an Azure App Serv
 If you do not have access to the deployed solution (maybe you deleted it to save money or used the Learn Live Sandbox), please follow these instructions.
 
 ## Objectives
+
 In this session, you will:
 
 - Select the appropriate Azure database solution for VanArsdel
 - Migrate on-premises data into Azure
 
-## The instructions and scripts provided in this document will:
+## The instructions and scripts provided in this document will
 
 1. Create an App Service Plan
 1. Create an App Service
