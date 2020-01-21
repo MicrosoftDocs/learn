@@ -2,27 +2,27 @@ Security in information systems, also known as "cybersecurity," is created, prod
 
 Cloud services are an extension of the data center. They enable the functionality that an organization provides to its customers to be served from a multiplicity of locations. They allow that functionality to be distributed and yet remain cohesive and interoperative. And most importantly to some businesses, they also distribute the risks involved with managing and securing highly distributed services to professionals outside the organization. Companies such as Amazon and Microsoft employ legions of world-class network-security engineers. Organizations that use public cloud platforms are the beneficiaries of their expertise.
 
-# Risk Assessment and Management
+## Risk Assessment and Management
 
-The problem an organization immediately faces when making any level of investment in cloud-based assets --- infrastructure, software deployment platforms, development tools, or applications --- is that it surrenders the ability to directly impact the integrity of at least that portion of its information systems. There are ways for that organization to send software-based agents into a cloud platform to observe and measure its performance and, to some degree, its system integrity. But even then, it cedes some or all oversight responsibility to its service provider of choice.
+The problem an organization immediately faces when making any level of investment in cloud-based assets - infrastructure, software deployment platforms, development tools, or applications - is that it surrenders the ability to directly impact the integrity of at least that portion of its information systems. There are ways for that organization to send software-based agents into a cloud platform to observe and measure its performance and, to some degree, its system integrity. But even then, it cedes some or all oversight responsibility to its service provider of choice.
 
 Some organizations made their initial decision to move some or all their information assets to the public cloud with the express intent of bypassing the comprehensive risk-management practice or protocol they would have required had they stayed entirely on-premises. What they would soon discover is that working in the public cloud actually mandates the very protocol they tried to avoid, though not for the reasons one might think. Cloud security professionals are risk-management experts. Whenever a cloud migration moves beyond the superficial level, both parties in the transaction need to understand how much risk the customer is willing to accept, and how much it will cede to the cloud, before they can come to terms with the provider's service-level expectations.
 
-The International Information System Security Certification Consortium, more often referred to as (ISC)^2^, defines risk management as "the process of designing, developing, sustaining and modifying operational processes and systems in consideration of applicable risks to asset confidentiality, integrity and availability."[^1] It is not, as some have interpreted it in the context of information systems, a life support system, or a mechanism for preserving these systems in the face of threats. Rather, it is the opposite. Risk management mandates that systems be adaptable and modifiable to a reasonable extent. That's what the "applicable" part means here --- it's a measure of fairness.
+The International Information System Security Certification Consortium, more often referred to as (ISC)^2^, defines risk management as "the process of designing, developing, sustaining and modifying operational processes and systems in consideration of applicable risks to asset confidentiality, integrity and availability."[^1] It is not, as some have interpreted it in the context of information systems, a life support system, or a mechanism for preserving these systems in the face of threats. Rather, it is the opposite. Risk management mandates that systems be adaptable and modifiable to a reasonable extent. That's what the "applicable" part means here - it's a measure of fairness.
 
 One international IT industry organization that has endeavored to maintain a standard of fairness for quantifying risk is the FAIR Institute. It has advanced what it calls Factor Analysis of Information Risk, whose goal is to quantitatively ascertain the amount of loss an organization is prepared to sustain if the security of an information asset is compromised. FAIR groups losses into six categories:
 
-> • **Productivity** --- The ability of the organization to continue to produce goods or services its customer perceives as valuable
+> • **Productivity** - The ability of the organization to continue to produce goods or services its customer perceives as valuable
 >
-> • **Response** --- The capability of the organization to mitigate damages, internally or externally, on account of the loss
+> • **Response** - The capability of the organization to mitigate damages, internally or externally, on account of the loss
 >
-> • **Replacement** --- The actual fixed value of compromised assets
+> • **Replacement** - The actual fixed value of compromised assets
 >
-> • **Fines and judgments** --- The legal and regulatory costs sustained as a result of the loss
+> • **Fines and judgments** - The legal and regulatory costs sustained as a result of the loss
 >
-> • **Competitive advantage** --- The perceived ability of the organization to continue to differentiate itself from its competitors in a market
+> • **Competitive advantage** - The perceived ability of the organization to continue to differentiate itself from its competitors in a market
 >
-> • **Reputation** --- The damage sustained to the image customers retain of the organization, irrespective of its competition
+> • **Reputation** - The damage sustained to the image customers retain of the organization, irrespective of its competition
 
 In the event of a database breach, for example, where customers' personal and private data becomes exposed to malicious actors, an assessment using FAIR would estimate the amount of loss the organization may sustain in all categories. This amount may be offset by the organization's capability to respond effectively and mitigate damage. Cloud services don't change this equation, but they do influence these mitigation factors -- potentially for the better. FAIR enables an organization to put a price tag on how much it is willing to spend to reduce risk, weighing immediate expenses against potential long-term costs. It also factors in the costs the organization may be willing to sustain to essentially own the risk level it settles for by way of insurance policies. Through a system of weights and offsets, FAIR sets the fair market value for cybersecurity risk.
 
@@ -99,6 +99,8 @@ One important question that may come up after a thorough examination of the SRM:
 This is one more justification for the FAIR risk-management model. It takes account of the multiple factors that jointly comprise privacy and calculates how adjustments to roles and responsibilities for these factors may have a direct impact upon customer privacy. Loss of trust may be the greatest loss an organization can incur.
 
 As it presently stands, the SRM does omit one important option: Cloud providers may also function as managed services providers (MSP), giving customers the option of outsourcing responsibility (and by extension, risk) for low-level assets such as infrastructure. When an organization builds a cloud platform on its own premises, as is possible with OpenStack, recent editions of VMware vSphere, and AWS Outposts, an MSP contract gives an outside source responsibility for supporting and maintaining the customer's infrastructure.
+
+### References
 
 [^1]: McCumber, John, *et al*. *The (ISC)2 Cybersecurity Lexicon*, 2018. https://blog.isc2.org/isc2\_blog/2018/02/welcome-to-the-lexicon-project.html
 
