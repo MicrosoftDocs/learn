@@ -11,11 +11,13 @@ Like all Cognitive Services APIs, the Computer Vision API is invoked by placing 
 
 It is the OCR feature of the Computer Vision API that will enable the Contoso Travel site to extract text from images. In this unit, you will modify Contoso Travel to use the Computer Vision API to extract text from photos uploaded to the site.
 
+Solutions used in the exercises are located in a [Git repository](https://github.com/MicrosoftDocs/mslearn-build-ai-web-app-with-python-and-flask). 
+
 ## Subscribe to the Computer Vision API
 
 In order to call the Computer Vision API, you must first obtain an API key. This key travels in each request you place to the Computer Vision API in an HTTP header named `Ocp-Apim-Subscription-Key`. It is Azure's way of authenticating the caller and determining which Azure subscription to bill calls to. Most Azure Cognitive Service APIs have free tiers for which no billing is performed, but if you plan to place thousands of calls a day to a Cognitive Services API, you will be billed for it through your Azure subscription.
 
-You can obtain a Computer Vision API key using the [Azure CLI](https://docs.microsoft.com/cli/azure/get-started-with-azure-cli?view=azure-cli-latest) or the [Azure Portal](https://portal.azure.com). In this exercise, you will obtain an API key and a corresponding URL for placing calls to the Computer Vision API with that key using the Azure CLI.
+You can obtain a Computer Vision API key using the [Azure CLI](https://docs.microsoft.com/cli/azure/get-started-with-azure-cli?view=azure-cli-latest) or the [Azure portal](https://portal.azure.com). In this exercise, you will obtain an API key and a corresponding URL for placing calls to the Computer Vision API with that key using the Azure CLI.
 
 1. If you haven't already installed the Azure CLI and logged into it for the first time, follow the instructions in an earlier unit for doing so.
 
@@ -33,7 +35,7 @@ You can obtain a Computer Vision API key using the [Azure CLI](https://docs.micr
 	az cognitiveservices account create --resource-group contoso-travel-rg --name computer-vision --location northcentralus --kind ComputerVision --sku F0 --yes
 	```
 
-	The `--sku F0` parameter subscribes to the free tier of the Computer Vision API that allows up to 20 calls per minute and a maximum of 5,000 calls per month. This is fine for development, but in production, you would want to subscribe to one of the paid tiers that supports more traffic. For a summation of pricing tiers for the Computer Vision API, see [Cognitive Services Pricing — Computer Vision API](https://azure.microsoft.com/pricing/details/cognitive-services/computer-vision/).
+	The `--sku F0` parameter subscribes to the free tier of the Computer Vision API that allows up to 20 calls per minute and a maximum of 5,000 calls per month. This is fine for development, but in production, you would want to subscribe to one of the paid tiers that supports more traffic. For a summation of pricing tiers for the Computer Vision API, see [Cognitive Services Pricing - Computer Vision API](https://azure.microsoft.com/pricing/details/cognitive-services/computer-vision/).
 
 1. Use the following command to obtain an API key for the Computer Vision API:
 
@@ -185,12 +187,12 @@ Now let's run the modified site, upload a few photos, and see if the Computer Vi
 	export VISION_ENDPOINT=computer_vision_endpoint
 	```
 
-	When the site is running locally, calls to `os.environ` load these variables from the environment. Later, when you deploy the site to Azure, the same variables will come from application settings in Azure — no code changes required.
+	When the site is running locally, calls to `os.environ` load these variables from the environment. Later, when you deploy the site to Azure, the same variables will come from application settings in Azure—no code changes required.
 
-1. Navigate to http://localhost:5000 in your browser. Click the **Upload Photo** and button and upload a picture that contains text. Confirm that after a brief pause, the text extracted from the photo appears in a modal dialog. Then dismiss the dialog.
+1. Navigate to http\:\//localhost\:5000 in your browser. Select the **Upload Photo** button and upload a picture that contains text. Confirm that after a brief pause, the text extracted from the photo appears in a modal dialog. Then dismiss the dialog.
 
-	![Extracting text from a photo](/media/extracted-text.png)
+	![Extracting text from a photo](../media/extracted-text.png)
 
 	_Extracting text from a photo_
 
-Repeat this process with other photos to gauge the Computer Vision API's ability to extract text from the photos you upload. It isn't perfect, but it should get it right — or almost right — most of the time.
+Repeat this process with other photos to gauge the Computer Vision API's ability to extract text from the photos you upload. It isn't perfect, but it should get it right—or almost right—most of the time.

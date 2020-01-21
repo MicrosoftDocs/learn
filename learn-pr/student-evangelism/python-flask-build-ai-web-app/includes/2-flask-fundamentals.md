@@ -1,4 +1,4 @@
-Every Flask application begins with a file named **app.py**, which Flask automatically looks for when an application starts up. The following **app.py** file implements the simplest possible Web site — one with a single page that displays "Hello, world" to the user:
+Every Flask application begins with a file named **app.py**, which Flask automatically looks for when an application starts up. The following **app.py** file implements the simplest possible website—one with a single page that displays "Hello, world" to the user:
 
 ```python
 from flask import Flask
@@ -12,13 +12,13 @@ def index():
 
 The first statement imports a class named `Flask` from the `flask` package installed with `pip`. The second statement instantiates that class to create a Flask app and assigns it to the variable named `app`.
 
-The fourth and fifth statements define a function that's called when the user requests the site's home page — for example, "http://www.contoso.com/." The preceding statement — `@app.route("/")` — is a *decorator* that maps the route ("/") to the function. The function name is unimportant, but `index` is commonly used as the name for the function that renders the site's home page.
+The fourth and fifth statements define a function that's called when the user requests the site's home page—for example, **https:\//www\.contoso\.com/**. The preceding statement—`@app.route("/")`—is a *decorator* that maps the route ("/") to the function. The function name is unimportant, but `index` is commonly used as the name for the function that renders the site's home page.
 
-> If you want to use a name other **app.py** for the Python file, simply identify the file with a FLASK_APP environment variable and Flask will happily execute it rather than **app.py**.
+If you want to use a name other **app.py** for the Python file, simply identify the file with a FLASK_APP environment variable and Flask will happily execute it rather than **app.py**.
 
 ## Routing in Flask
 
-Suppose your Web site contains several pages rather than just one. You can use `@app.route()` to map all the routes that the site supports to functions that render the corresponding pages:
+Suppose your website contains several pages rather than just one. You can use `@app.route()` to map all the routes that the site supports to functions that render the corresponding pages:
 
 ```python
 from flask import Flask
@@ -41,11 +41,11 @@ def contact():
     return "<h1>This the Contact Us page</h1>"
 ``` 
 
-If the app is hosted at www.contoso.com, it now supports the following URLs:
+If the app is hosted at https\:\//www\.contoso\.com, it now supports the following URLs:
 
-- www.contoso.com/
-- www.contoso.com/about
-- www.contoso.com/contact
+- https\:\//www\.contoso\.com\/
+- https\:\//www\.contoso\.com\/about
+- https\:\//www\.contoso\.com\/contact
 
 You can continue adding routes and functions until all the pages that your site supports are accessible by URL. Once more, the function names are unimportant. It's the routes that count.
 
@@ -163,7 +163,7 @@ This example assumes that just one error message was flashed, but you can call `
 
 ## Static files
 
-Most Web sites contain images, style sheets, and other static files that don't change as the application executes. Flask looks for these files in a special subdirectory named "static."
+Most websites contain images, style sheets, and other static files that don't change as the application executes. Flask looks for these files in a special subdirectory named "static."
 
 Let's say your site includes a style sheet named **main.css** and a banner named **banner.jpg**. You can drop these files into the "static" subdirectory and reference them in HTML this way:
 

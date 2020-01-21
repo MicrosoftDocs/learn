@@ -1,10 +1,10 @@
-The first order of business is to set up a development environment for Web sites written in Python and Flask. This will enable you to build and test Contoso Travel locally prior to deploying it to Azure and making it available publicly.
+The first order of business is to set up a development environment for websites written in Python and Flask. This will enable you to build and test Contoso Travel locally prior to deploying it to Azure and making it available publicly.
 
 In this unit, you will install Python on your computer if it isn't already installed. Then you will create a [virtual Python environment](https://docs.python.org/3/library/venv.html) and install Flask and the [Python SDK for the Computer Vision API](https://pypi.org/project/azure-cognitiveservices-vision-computervision/). The latter makes it easy to call Azure's Computer Vision API from Python applications. Finally, you will install the [Azure CLI](https://docs.microsoft.com/cli/azure/get-started-with-azure-cli?view=azure-cli-latest), which provides a command-line interface to Azure.
 
 ## Create a virtual Python environment
 
-In order to run Flask Web sites on your computer, both Flask and Python must be installed. In this exercise, you create a virtual Python environment that isolates the packages you install from others on your computer. Then you install Flask and the Python SDK for the Computer Vision API in that environment.
+In order to run Flask websites on your computer, both Flask and Python must be installed. In this exercise, you create a virtual Python environment that isolates the packages you install from others on your computer. Then you install Flask and the Python SDK for the Computer Vision API in that environment.
 
 1. If Python 3.6 or higher isn't installed on your computer, go to https://www.python.org/ and install it now. You can determine whether it's installed on Windows by executing the following command in a Command Prompt window:
 
@@ -20,7 +20,7 @@ In order to run Flask Web sites on your computer, both Flask and Python must be 
 
 	If Python is installed, the version number will appear in the output. If you install Python and are asked during the install process whether Python should be added to the system's PATH, answer yes.
 
-	![Add Python to the PATH](/media/add-to-path.png)
+	![Add Python to the PATH](../media/add-to-path.png)
 
 	_Add Python to the PATH_
 
@@ -38,7 +38,7 @@ In order to run Flask Web sites on your computer, both Flask and Python must be 
 
 	This is important because older versions of `pip` may miss some of the dependencies needed for execution in Azure.
 
-1. Create a directory on your hard disk in the location of your choice. This will be the *project directory* and will hold all of the files that comprise the Contoso Travel Web site. It is also where your virtual Python environment will be created.
+1. Create a directory on your hard disk in the location of your choice. This will be the *project directory* and will hold all of the files that comprise the Contoso Travel website. It is also where your virtual Python environment will be created.
 
 1. In a Command Prompt window or terminal, `cd` to the project directory. If you are running Windows, use the following commands to create a virtual environment in the "env" subdirectory and activate the environment:
 
@@ -61,11 +61,11 @@ In order to run Flask Web sites on your computer, both Flask and Python must be 
 	pip install azure-cognitiveservices-vision-computervision
 	```
 
-Leave the Command Prompt window or terminal open so you can easily return to it later. When you run the Web site, you will want to run it from this directory with the virtual environment active.
+Leave the Command Prompt window or terminal open so you can easily return to it later. When you run the website, you will want to run it from this directory with the virtual environment active.
 
 ## Install the Azure CLI
 
-The [Azure CLI](https://docs.microsoft.com/cli/azure/get-started-with-azure-cli?view=azure-cli-latest) is a command-line environment for creating and managing Azure resources. Versions are available for Windows, macOS, and Linux. In subsequent units, you will use the Azure CLI to create various Azure resources, including an [Azure App Service](https://azure.microsoft.com/services/app-service/) to host a Web site. In this exercise, you will install the Azure CLI and log into it for the first time.
+The [Azure CLI](https://docs.microsoft.com/cli/azure/get-started-with-azure-cli?view=azure-cli-latest) is a command-line environment for creating and managing Azure resources. Versions are available for Windows, macOS, and Linux. In subsequent units, you will use the Azure CLI to create various Azure resources, including an [Azure App Service](https://azure.microsoft.com/services/app-service/) to host a website. In this exercise, you will install the Azure CLI and log into it for the first time.
 
 1. If the Azure CLI isn't installed on your computer, go to https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest and install it now. You can determine whether it's installed by executing an `az -v` command in a Command Prompt window or terminal. If the CLI is installed, a version number will appear in the output.
 
@@ -83,10 +83,10 @@ The [Azure CLI](https://docs.microsoft.com/cli/azure/get-started-with-azure-cli?
 	az account list
 	``` 
 
-	The default subscription — the one used to create resources created with the CLI — is marked `isDefault=true`. If that's the subscription you wish to use, or if it's the only subscription in the list, you're done. Otherwise, use the following command to designate one of the other subscriptions as the default, replacing SUBSCRIPTION_ID with the ID of that subscription: 
+	The default subscription—the one used to create resources created with the CLI, is marked `isDefault=true`. If that's the subscription you want to use, or if it's the only subscription in the list, you're done. Otherwise, use the following command to designate one of the other subscriptions as the default, replacing SUBSCRIPTION_ID with the ID of that subscription: 
 
 	```
 	az account set -s SUBSCRIPTION_ID
 	```
 
-If you aren't familiar with the Azure CLI, you can learn more about it and the numerous commands it supports in [Get started with the Azure CLI](https://docs.microsoft.com/cli/azure/get-started-with-azure-cli?view=azure-cli-latest). Most operations that you perform in Azure can be performed with the CLI or through the [Azure Portal](https://portal.azure.com). Power users tend to prefer the CLI, in part because CLI commands can be used in scripts to automate repetitive tasks.
+If you aren't familiar with the Azure CLI, you can learn more about it and the numerous commands it supports in [Get started with the Azure CLI](https://docs.microsoft.com/cli/azure/get-started-with-azure-cli?view=azure-cli-latest). Most operations that you perform in Azure can be performed with the CLI or through the [Azure portal](https://portal.azure.com). Power users tend to prefer the CLI, in part because CLI commands can be used in scripts to automate repetitive tasks.
