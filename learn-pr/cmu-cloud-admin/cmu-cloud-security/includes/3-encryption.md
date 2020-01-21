@@ -4,7 +4,7 @@ Encryption plays a huge role in the security of the Internet and of applications
 
 In order to answer these questions, let us review the basics of digital cryptography and explore some of the mechanisms used to make keys available to those authorized to have them without exposing them to those who are not.
 
-# Symmetric Encryption
+## Symmetric encryption
 
 In cryptography, a key is a sequence of digits used to alter the contents of a message -- that is, to either encrypt or decrypt it. Symmetric encryption, in which one key is used both to encrypt and decrypt data, is among the oldest forms of cryptography. It is commonly used to encrypt data at rest in databases and cloud storage services.
 
@@ -12,7 +12,7 @@ Over the years, several algorithms for symmetric encryption have evolved and bee
 
 A brute-force attack on AES-256-encrypted data would take billions of supercomputers billions of years to crack, and that is simplifying matters. Suffice it to say that with today's computers, it is computationally infeasible to decrypt AES-256-encrypted data without the key. Thus, the primary challenge in symmetric encryption isn't encrypting and decrypting the data; it is storing the key in such a way that it is available to all parties that need it, but *only* to those authorized to have it.
 
-# Key Storage and Maintenance
+## Key storage and maintenance
 
 Encrypting (and decrypting) data is easy; securing the keys used to encrypt and decrypt it is not. In any communications system where secrets are stored, the secrets themselves become the most likely target of malicious actors.
 
@@ -24,13 +24,13 @@ Once keys and other secrets are stored in Key Vault, the system can be set up to
 
 AWS offers a similar service in the form of AWS Key Management Service (KMS). KMS also supports FIPS 140-2 Level 2 validated HSMs, and it integrates with AWS CloudTrail to produce an auditable access log. The fact that KMS and Azure Key Vault are integrated into their respective cloud platforms offers additional security to applications hosted in these platforms. A secret that never leaves a data center because the applications that use them and the key vaults that store them are co-located are more secure secrets indeed.
 
-# Asymmetric Encryption (Public Key Cryptography)
+## Asymmetric encryption (Public Key Cryptography)
 
-Symmetric encryption is great for encrypting data at rest, but it poses a problem when two parties wish to exchange encrypted messages. If Bob encrypts a message and sends it to Alice, how is Alice to decrypt it? If Bob sends Alice a decryption key, the key may be compromised (stolen), in which case the security Bob and Alice were counting on is actually no security at all. History is replete with people who lost their lives because communications that they thought were private turned out to not be so private after all. One example is Mary Queen of Scots, who was executed because she used a weak cipher to obfuscate messages sent to co-conspirators while plotting the assassination of Queen Elizabeth[^1].
+Symmetric encryption is great for encrypting data at rest, but it poses a problem when two parties wish to exchange encrypted messages. If Bob encrypts a message and sends it to Alice, how is Alice to decrypt it? If Bob sends Alice a decryption key, the key may be compromised (stolen), in which case the security Bob and Alice were counting on is actually no security at all. History is replete with people who lost their lives because communications that they thought were private turned out to not be so private after all. One example is Mary Queen of Scots, who was executed because she used a weak cipher to obfuscate messages sent to co-conspirators while plotting the assassination of Queen Elizabeth<sup>[1][^1]</sup>.
 
 The challenge of exchanging encrypted messages without exposing decryption keys is not an academic one. It happens every time you connect to an *https://* URL in your browser, whenever an application reaches out to a third-party identity provider, and at other times. The solution is *asymmetric encryption*. With an asymmetric system, one key is used to encrypt a message, and another key is used to decrypt it. This way, a message directed to a specific recipient may be encrypted using a key -- the *public key* -- that is publicly distributed by the recipient. Only the second key may be used to decrypt a message encrypted with the public key. This key is kept private by the recipient and becomes the *private key*. Asymmetric keys are sometimes referred to as *public-private keys* for this reason.
 
-# Certificates
+## Certificates
 
 If Bob wants to receive encrypted messages from Alice, he can e-mail her his public key or write it down on a piece of paper and leave it on her desk. But if a browser wants a public key from a Web server and also wants to verify that it's connecting to the server it *thinks* it's connecting to it, how does it do it? That's where certificates come in.
 
@@ -46,10 +46,14 @@ When a browser connects to a Web server using an *https://* URL, it initiates a 
 
 Certificates aren't used solely by Web servers. They're used by identity providers to encrypt credential exchanges, by database servers to encrypt database connections, and more. In short, they are used throughout the Internet and within data centers to secure data in motion. Part of the job of a cloud administrator is to manage these certificates -- obtaining them from a trusted CA, installing them on Web servers, database servers, identity servers, and other places where they are needed, and renewing them before they expire.
 
-# Homomorphic Encryption
+## Homomorphic encryption
 
 As cryptography evolves as both a process and an industry, one promising technology that may soon play a significant role in data security is *homomorphic encryption* (HE). It's a means of attaining information from an encrypted entity while it remains technically encrypted.
 
 HE would replace asymmetric key management, and with it, the need for a private key management system or vault. A user seeking authentication could pass a certificate containing a valid signature that not even the user has access to. This signature would be the result of a derivative function such as a hash function. To validate the user, the identity provider would attain an encrypted validation key from the certificate authority and use that key to extract the signature without actually decrypting the certificate. Research into this methodology is ongoing, and for the most part, is currently confined to academic and research institutions.
 
-[^1]: *The Black Chamber*. https://www.simonsingh.net/The\_Black\_Chamber/maryqueenofscots.html
+### References
+
+1. _Simon Singh. *The Black Chamber*. <https://simonsingh.net/The_Black_Chamber/maryqueenofscots.html>._
+
+[^1]:  <https://simonsingh.net/The_Black_Chamber/maryqueenofscots.html>  "Simon Singh. *The Black Chamber*."
