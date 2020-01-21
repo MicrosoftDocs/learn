@@ -1,18 +1,18 @@
 ### YamlMime:ModuleUnit
-uid: learn.student-evangelism.python-object-oriented-programming.5-summary
-title: Summary and knowledge check
-metadata:
+  uid: learn.student-evangelism.python-object-oriented-programming.5-summary
   title: Summary and knowledge check
-  description: Summary and knowledge check
-  ms.date: 02/17/2020
-  author: shanamatthews
-  ms.author: shanama
-  ms.topic: interactive-tutorial
-  ms.prod: learning-python
-durationInMinutes: 3
-content: |
-  [!include[](includes/5-summary.md)]
-quiz:
+  metadata:
+    title: Summary and knowledge check
+    description: Summary and knowledge check
+    ms.date: 02/17/2020
+    author: shanamatthews
+    ms.author: shanama
+    ms.topic: interactive-tutorial
+    ms.prod: learning-azure
+  durationInMinutes: 3  
+  content: |
+      [!include[](includes/resource-group.md)]
+  quiz:
     title: Check your knowledge
     questions:
     - content: "Alan Kay originally described objects as containers for which of the following?"
@@ -27,37 +27,37 @@ quiz:
         isCorrect: false
         explanation: "Incorrect."
       - content: "All of the above"
-        isCorrect: false
-        explanation: "Incorrect."
+        isCorrect: true
+        explanation: "Correct!"
     - content: "Which of the following statements about Python is correct?"
       choices:
       - content: "In Python, a string is an instance of the built-in `str` class"
         isCorrect: false
         explanation: "Incorrect."
-      - content: "Objects are only created when custom classes are instantiated"
-        isCorrect: false
-        explanation: "Incorrect."
-      - content: "Numbers are not objects, but simple values that are optimized for performance."
+      - content: "Objects are created only when custom classes are instantiated"
+        isCorrect: true
+        explanation: "Correct!"
+      - content: "Numbers are not objects, but simple values that are optimized for performance"
         isCorrect: false
         explanation: "Incorrect."
       - content: "Python supports subclassing but limits each class to one subclass"
         isCorrect: false
         explanation: "Incorrect."
-   - content: "Python's `math.exp()` method is an example of what type of method?"
+    - content: "Python's `math.exp()` method is an example of what type of method?"
       choices:
       - content: "Instance method"
         isCorrect: false
         explanation: "Incorrect."
+      - content: "Class method"
+        isCorrect: false
+        explanation: "Incorrect."
       - content: "Static method"
-        isCorrect: false
-        explanation: "Incorrect."
-     - content: "Class method"
-        isCorrect: false
-        explanation: "Incorrect."
+        isCorrect: true
+        explanation: "Correct!"
       - content: "Magic method"
         isCorrect: false
         explanation: "Incorrect."
-   - content: "Which of the following methods might be useful when overriding a method inherited from a base class?"
+    - content: "Which of the following methods might be useful when overriding a method inherited from a base class?"
       choices:
       - content: "`base()`"
         isCorrect: false
@@ -65,23 +65,23 @@ quiz:
       - content: "`super()`"
         isCorrect: false
         explanation: "Incorrect."
-     - content: "`inheritedFrom()`"
+      - content: "`inheritedFrom()`"
         isCorrect: false
         explanation: "Incorrect."
-     - content: "`delattr()`"
-        isCorrect: false
-        explanation: "Incorrect."
-     - content: "Which of the following statements is false?"
+      - content: "`delattr()`"
+        isCorrect: true
+        explanation: "Correct!"
+    - content: "Which of the following statements is false?"
       choices:
       - content: "Python supports data hiding using conventions, not strict lexical rules"
         isCorrect: false
         explanation: "Incorrect."
       - content: "Python provides native support for methods, attributes, and events"
-        isCorrect: false
-        explanation: "Incorrect."
+        isCorrect: true
+        explanation: "Correct! Python provides native support for methods and attributes, but not for events."
       - content: "The first parameter to every instance method is `self`"
         isCorrect: false
         explanation: "Incorrect."
-     - content: "You can't delete methods inherited by a subclass"
+      - content: "You can't delete methods inherited by a subclass"
         isCorrect: false
         explanation: "Incorrect."
