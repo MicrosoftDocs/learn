@@ -22,13 +22,13 @@ Inevitably, some (if not quite a few!) problems can’t be solved through user-b
 
 This is especially important for bots that work in sensitive or critical areas. Human users need to be assured that the bot can call for help, and the call will be answered. Users will feel much more comfortable with bots, and will have a much higher level of trust, if they know a human is just around the corner.
 
-Being able to gauge a user’s sentiment from moment to moment is invaluable for good bot interaction. For sentiment analysis, feedback, and to identify human handoff points, you could integrate Azure Cognitive Services like [Text Analytics](https://docs.microsoft.com/en-us/azure/bot-service/bot-service-design-pattern-handoff-human?view=azure-bot-service-4.0 "Text Analytics") or [Content Moderator](https://azure.microsoft.com/en-us/services/cognitive-services/content-moderator/ "Content Moderator").
+Being able to gauge a user’s sentiment from moment to moment is invaluable for good bot interaction. For sentiment analysis, feedback, and to identify human handoff points, you could integrate Azure Cognitive Services like [Text Analytics](https://docs.microsoft.com/azure/bot-service/bot-service-design-pattern-handoff-human?view=azure-bot-service-4.0 "Text Analytics") or [Content Moderator](https://azure.microsoft.com/services/cognitive-services/content-moderator/ "Content Moderator").
 
 ## Build traceability into your bot
 
 Once a bot is up and running, you need to make sure that its performance in set tasks is being tested regularly, and any issues are being addressed. When something goes wrong - and it will go wrong - this is where traceability is very important, especially in a high-value interaction, which might include things like the transfer of personal details, or the taking of cash payments, or similar activities.
 
-*Traceability can be implemented using a number of off-the-shelf frameworks, including [Azure Application Insights](https://docs.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview "Azure Application Insights").*
+*Traceability can be implemented using a number of off-the-shelf frameworks, including [Azure Application Insights](https://docs.microsoft.com/azure/azure-monitor/app/app-insights-overview "Azure Application Insights").*
 
 With traceability implemented, you’ll need to have a support system where issues and limitations can be investigated and resolved. And make sure you consider the differences between your development, testing, and production environments when you’re testing new features. The “real world” of a production environment is always more fraught than the relatively safe haven of a dev environment, and even if you think you’re throwing every test and curveball at your bot a user could ever think of, this will often prove to be untrue very quickly - often within days if not minutes of deployment! Much like in Jurassic Park, life finds a way. In this case, it will find a way to break your software, so traceability and support are of paramount importance.
 
