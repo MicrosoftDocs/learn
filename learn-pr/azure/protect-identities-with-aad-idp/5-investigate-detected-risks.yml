@@ -11,7 +11,7 @@ metadata:
 title: Investigate and remediate risks detected by Identity Protection
 durationInMinutes: 10
 content: |
-  [!include[](includes/5-investigate-remediate-detected-risks.md)]
+  [!include[](includes/5-investigate-detected-risks.md)]
 quiz:
   title: Check your knowledge
   questions:
