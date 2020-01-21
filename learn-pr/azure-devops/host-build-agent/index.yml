@@ -2,7 +2,7 @@
 uid: learn.azdo.host-build-agent
 metadata:
   title: Host your own build agent in Azure Pipelines - Learn
-  description: Learn how to use your own build agent when Microsoft-hosted agents don't meet your needs.
+  description: Work with guidance from the Space Game web team to set up your build agent running on-premises or on an Azure virtual machine running in the cloud.
   ms.date: 11/04/2019
   author: tpetchel
   ms.author: thpetche
@@ -20,7 +20,7 @@ abstract: |
 prerequisites: |
   - An Azure DevOps organization
   - Visual Studio Code
-  - .NET Core 2.1
+  - .NET Core 3.1
   - Git
   - A GitHub account
 iconUrl: /learn/achievements/azure-devops/host-your-own-build-server-in-your-build-pipeline.svg

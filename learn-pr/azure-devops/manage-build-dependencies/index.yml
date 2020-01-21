@@ -2,7 +2,7 @@
 uid: learn.azdo.manage-build-dependencies
 metadata:
   title: Manage build dependencies with Azure Artifacts - Learn
-  description: Manage your application and the packages it uses across build pipelines.
+  description: In this module, the Space Game web team guides you through creating a build pipeline that produces a package that can be used by multiple applications.
   ms.date: 11/04/2019
   author: tpetchel
   ms.author: thpetche
@@ -20,7 +20,7 @@ abstract: |
 prerequisites: |
   - An Azure DevOps organization
   - Visual Studio Code
-  - .NET Core 2.1
+  - .NET Core 3.1
   - Git
   - A GitHub account
 iconUrl: /learn/achievements/azure-devops/manage-dependencies-in-your-build-pipeline.svg

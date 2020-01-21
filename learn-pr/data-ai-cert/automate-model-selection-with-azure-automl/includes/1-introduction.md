@@ -1,10 +1,13 @@
-In this module, you will learn about the machine learning pipeline and how the Microsoft Azure Machine Learning service's automated machine learning (AutoML) capability can automate some laborious parts of machine learning. You will create Python code that uses the AutoML service to find the best model for your experiment. Then you will test the model by using Python code.
+*Automated Machine Learning* enables you to try multiple algorithms and preprocessing transformations with your data. This, combined with scalable cloud-based compute makes it possible to find the best performing model for your data without the huge amount of time-consuming manual trial and error that would otherwise be required.
+
+![Automated Machine Learning](../media/08-02-automl.jpg)
+
+Azure Machine Learning includes support for automated machine learning through a visual interface in Azure Machine Learning studio for *Enterprise* edition workspaces only. You can use the Azure Machine Learning SDK to run automated machine learning experiments in either *Basic* or *Enterprise* edition workspaces.
 
 ## Learning objectives
 
-In this module, you will:
+In this module, you will learn how to:
 
-- Learn how to streamline machine learning by using Azure Machine Learning pipelines.
-- Automate model and hyperparameter selection by using Azure Machine Learning pipelines.
-- Create a Python script that uses the Azure Machine Learning service's AutoML to recommend a model.
-- Test the recommended model from your Python script.
+- Use Azure Machine Learning's automated machine learning capabilities to determine the best performing algorithm for your data.
+- Use automated machine learning to preprocess data for training.
+- Run an automated machine learning experiment.

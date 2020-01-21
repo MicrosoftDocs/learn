@@ -2,7 +2,7 @@
 uid: learn.secure-your-cloud-data
 metadata:
   title: Secure your cloud data in Azure learning path
-  description: Azure was designed for security and compliance. Learn how to leverage the built-in services to store your app data securely to ensure that only authorized services and clients have access to it.
+  description: This learning path helps you leverage the built-in Azure services for securing app data, ensuring that only authorized services and clients have access.
   brand: azure
   ms.date: 10/1/2019
   author: markjulmar
@@ -34,6 +34,6 @@ modules:
 - learn.azure-security.configure-and-manage-azure-key-vault
 - learn.secure-azure-resources-with-rbac
 - learn.secure-your-azure-sql-database
-- learn.data-ai.data-warehouse-security
+#- learn.data-ai.data-warehouse-security
 trophy:
   uid: learn.secure-your-cloud-data.trophy

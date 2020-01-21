@@ -71,7 +71,9 @@ In the free Azure sandbox environment, you'll use the pre-created resource group
 
     ![Screenshot showing the Create new App Service plan button](../media/4-new-app-service-plan.png)
 
-1. In the **New App Service plan** panel, enter a **name** for the new service plan and then select **Pricing tier**.
+1. In the **New App Service plan** panel, enter a **name** for the new service plan.
+1. For **Location**, pick **Central US** to make sure we pick a region that allows the service plan you will pick. Normally, you would pick the region that is closest to your customers while offering the services you need.
+1. Select **Pricing tier** to see the performance and feature options of the various types of service plans.
 
     ![Screenshot showing the New App Service Plan configuration](../media/4-new-service-plan-config.png)
 

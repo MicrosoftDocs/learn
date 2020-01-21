@@ -1,6 +1,6 @@
 By default, Azure Container Instances are stateless. If the container crashes or stops, all of its state is lost. To persist state beyond the lifetime of the container, you must mount a volume from an external store.
 
-Here, you'll mount an Azure file share to an Azure container instance to you can store data and access it later.
+Here, you'll mount an Azure file share to an Azure container instance so you can store data and access it later.
 
 ## Create an Azure file share
 

@@ -8,9 +8,15 @@ In this exercise, you'll see how to use the Azure portal to create an Azure Func
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-1. Click **Create a resource**, click **Compute**, and then click **Function App**.
+1. From the Azure portal menu, select **Create a resource**.
 
-    [!include[](../../includes/functions-classic-workaround.md)]
+    ![Screenshot of Azure portal menu and Create a resource option.](../media/5-create-a-resource.png)
+
+1. Select **Compute**, and then select **Function App**.
+
+    ![Screenshot of the Compute and Function App options.](../media/5-compute-function-app.png)
+
+    <!-- [!include[](../../includes/functions-classic-workaround.md)] -->
 
 1. In the **Function App** window, specify the following settings:
 
@@ -63,7 +69,9 @@ In this exercise, you'll see how to use the Azure portal to create an Azure Func
 
 1. Return to the Azure portal.
 
-1. Click **All resources**, and select *\<your-function-app-name\>*.
+1. On the Azure portal menu or from the **Home** page, select **All resources**.
+
+1. Select *\<your-function-app-name\>*.
 
 1. In the *\<your-function-app-name\>* window, expand **Functions**, and verify that the **Function1** and  **WatchInfo** functions are listed. In the right pane, check that the status of the Azure Functions App is **Running**.
 

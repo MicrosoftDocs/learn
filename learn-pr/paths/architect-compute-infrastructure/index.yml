@@ -25,6 +25,7 @@ products:
 modules:
 - learn.intro-to-compute
 - learn.manage-vms-with-azure-cli
+- learn.choose-compute-provisioning
 - learn.build-azure-vm-templates
 - learn.deploy-vms-from-vhd-templates
 - learn.build-app-with-scale-sets

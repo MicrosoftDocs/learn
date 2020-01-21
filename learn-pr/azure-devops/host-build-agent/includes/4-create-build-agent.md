@@ -1,10 +1,10 @@
-In this unit, to configure a build agent that you can use in Azure Pipelines, you use a virtual machine that runs on Azure. We provide a virtual machine that you can use for the duration of this module.
+In this unit, to configure a build agent that you can use in Microsoft Azure Pipelines, you use a virtual machine that runs on Microsoft Azure. We provide a virtual machine that you can use for the duration of this module.
 
 In this unit, you will:
 
 > [!div class="checklist"]
 > * Create an Ubuntu virtual machine on Azure to serve as your build agent.
-> * Create an agent pool in Azure DevOps.
+> * Create an agent pool in Microsoft Azure DevOps.
 > * Create an access token to authenticate your agent with Azure DevOps.
 > * Configure your agent with the software that's required to build the _Space Game_ website.
 > * Configure your agent to connect to Azure DevOps so that it can receive build jobs.
@@ -39,7 +39,7 @@ az vm create \
     --generate-ssh-keys
 ```
 
-Your VM should take about two minutes to come up.
+Your VM will take a few minutes to come up.
 
 [Standard_DS2_v2](https://docs.microsoft.com/azure/virtual-machines/windows/sizes-general?azure-portal=true#dsv2-series) specifies the VM's size. A VM's size defines its processor speed, amount of memory, initial amount of storage, and expected network bandwidth. This is the same size that's provided by Microsoft-hosted agents. In practice, you can choose a size that provides more compute power or additional capabilities, such as graphics processing.
 
@@ -58,7 +58,7 @@ Recall that an agent pool organizes build agents. In this section, you create th
 
     ![Locating Agent pools in the menu](../media/4-project-settings-agent-pools.png)
 1. Select **Add pool**.
-1. In the **Add agent pool** window, select **New** and then, in the text box, enter **MyAgentPool**.
+1. In the **Add pool** window, select **New** and then, in the text box, enter *MyAgentPool*.
 
     In practice, you would choose a more descriptive name for the purpose of your pool.
 1. Select **Create**.
@@ -73,12 +73,12 @@ To do that, you create a personal access token. A personal access token, or PAT,
 > [!IMPORTANT]
 > As you would with a password, be sure to keep your access token in a safe place. In this section, you store your access token as an environment variable so that it doesn't appear in your shell script.
 
-1. In Azure DevOps, open your profile, and then select **Security**.
+1. In Azure DevOps, open your profile settings, and then select **Personal access token**.
 
-    ![Locating Security in the menu](../media/4-settings-security.png)
+    ![Locating SecurityPersonal Access Token in the menu](../media/4-personal-access-token.png)
 1. Select **New Token**.
-1. Enter a name for your token, such as **Build agent**.
-1. Under **Scopes**, select **Show all scopes**.
+1. Enter a name for your token, such as *Build agent*.
+1. Under **Scopes**, select **Show all scopes** at the bottom.
 1. Look for **Agent Pools**, and then select **Read & manage**.
 1. Look for **Build**, and then select **Read & execute**.
 1. Select **Create**.
@@ -228,6 +228,7 @@ The documentation explains how to manually set up [self-hosted Linux agents](htt
 
     In the steps that follow, set these environment variables:
 
+    * `AZP_AGENT_VERSION`
     * `AZP_URL`
     * `AZP_TOKEN`
     * `AZP_AGENT_NAME`
@@ -261,6 +262,18 @@ The documentation explains how to manually set up [self-hosted Linux agents](htt
 
     ```bash
     export AZP_POOL=MyAgentPool
+    ```
+
+1. Set the `AZP_AGENT_VERSION` environment variable to specify the latest version of the agent. A YAML pipeline on a Linux machine must be using the latest version of the agent, even if it is pre-release. The agent software is constantly updating, so you curl the version information from [the GitHub repo](https://api.github.com/repos/microsoft/azure-pipelines-agent/releases?azure-pipelines=true) and use jq to get the latest version.
+
+    ```bash
+    export AZP_AGENT_VERSION=$(curl -s https://api.github.com/repos/microsoft/azure-pipelines-agent/releases | jq -r '.[0].tag_name' | cut -d "v" -f 2)
+    ```
+
+1. Print the agent version to the console. Optionally, [check](https://github.com/microsoft/azure-pipelines-agent/releases?azure-portal=true) to make sure this is the latest version.
+
+    ```bash
+    echo $AZP_AGENT_VERSION
     ```
 
 1. Make the script executable, and then run it.

@@ -32,7 +32,7 @@ Let's apply some tags to the resources you created. Recall that we created a res
 
     ![Image of portal showing how to add the tags column to the display](../media/3-add-tag-column.PNG)
 
-1. You should now see the tags column, but it will be empty since we haven't added any tags yet. We'll add the tags directly here. You can also add tags to any resource that supports it on the resource's **Tags** panel. In the list of resources, you should see a pencil in the **TAGS** column where you can directly edit the tags. Click the pencil for the **msftlearn-vnet1** resource.
+1. You should now see the tags column, but it will be empty since we haven't added any tags yet. We'll add the tags directly here. You can also add tags to any resource that supports it on the resource's **Tags** panel. In the list of resources, you should see an **...**. Select the **...** for the **msftlearn-vnet1** resource, then select **Edit tags**.
 
 1. This will display the dialog to edit the Tags. Let's add a couple tags to this VNet. In the **NAME** box type **Department**, and in the **VALUE** box type **Finance**. Click **Save** to save your changes, then click **Close** to close the dialog.
 
@@ -52,15 +52,11 @@ Let's apply some tags to the resources you created. Recall that we created a res
 
     Back in the resource list you'll now see a **2** displayed as we now have two tags applied to each resource.
 
-1. Let's take a look at how we can use tags to filter your resources. On the main Azure menu on the left, select **All resources**.
+1. Let's take a look at how we can use tags to filter your resources. On the Azure portal menu or from the **Home** page, select **All resources**.
 
-1. In the **All tags** drop down, under **Environment** select **Training**. You should see only your two VNets displayed, since we tagged those resources with the **Environment:Training** tag.
+1. Select **Add filter**. In the **Tags**, select **Environment**, then select **Training**. You should see only your two VNets displayed, since we tagged those resources with the **Environment:Training** tag.
 
-    Note that there is currently a preview of the filtering capabilities that you may see in your portal. If you are in this preview, you will need to instead select **Add filter**. In the **Tags**, select **Environment**, then select **Training**.
-
-    You can also join or leave this preview at any time by selecting  **Try preview** or **Leave preview**.
-
-    ![Image of all resources filtered on the Training tag](../media/3-all-resources-tag-filter.PNG)
+    ![Image of all resources filtered on the Training tag](../media/3-tag-filter.PNG)
 
 1. We can further filter these resources by additionally filtering on the **Department:Finance** or **Department:Marketing** tags.
 

@@ -22,6 +22,7 @@ levels:
 roles: 
 - ai-engineer
 - data-scientist
+- student
 products: 
 - azure
 units: 

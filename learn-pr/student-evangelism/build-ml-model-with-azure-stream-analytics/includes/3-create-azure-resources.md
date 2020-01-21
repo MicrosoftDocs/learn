@@ -37,7 +37,7 @@ We will use the pre-created resource group in the Azure Sandbox named <rgn>[sand
         --name $ACCOUNT_NAME \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
         --location southcentralus \
-        --kind Storage \
+        --kind StorageV2 \
         --sku Standard_LRS
     ```
 
@@ -53,7 +53,7 @@ Before you can upload images to a storage account, you must create a blob contai
     ```azurecli
     az storage container create \
         --name photos \
-        --account-name $ACCOUNT_NAME
+        --account-name $ACCOUNT_NAME \
         --public-access blob
     ```
 

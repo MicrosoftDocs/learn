@@ -148,13 +148,13 @@ stages:
                     Name = "Release"}
                   $vg = Get-VSTeamVariableGroup @methodParameters
                   $vars = @{}
-                  $vg.value.variables | Get-Member -MemberType *Property | %{$vars.($_.Name) = $vg.value.variables.($_.Name)}
+                  $vg.variables | Get-Member -MemberType *Property | %{$vars.($_.Name) = $vg.variables.($_.Name)}
                   $varName = "schemaChanged"
                   $vars.$varName= @{}
                   $vars.$varName.value = "True"
                   $vars.$varName.isSecret = $false
                   $methodParameters = @{
-                    id = $vg.value.id
+                    id = $vg.id
                     ProjectName = "$(System.TeamProject)"
                     Name = "Release"
                     Description = ""
@@ -163,9 +163,11 @@ stages:
                   Update-VSTeamVariableGroup @methodParameters}
 
 - stage: DBAVerificationApply
+  variables: 
+    - group: 'Release'
   displayName: 'Apply database schema changes'
   dependsOn: DBAVerificationScript
-  condition: and(succeeded(), eq(variables['schemaChanged'], 'True'))
+  condition: and(succeeded('DBAVerificationScript'), eq(variables['schemaChanged'], True))
   jobs:
   - deployment: DBAVerificationApply
     pool:
@@ -205,10 +207,10 @@ stages:
                   Name = "Release"}
                 $vg = Get-VSTeamVariableGroup  @methodParameters 
                 $vars = @{}
-                $vg.value.variables | Get-Member -MemberType *Property | %{$vars.($_.Name) = $vg.value.variables.($_.Name)}
+                $vg.variables | Get-Member -MemberType *Property | %{$vars.($_.Name) = $vg.variables.($_.Name)}
                 $vars.Remove("schemaChanged")
                 $methodParameters = @{
-                  id = $vg.value.id
+                  id = $vg.id
                   ProjectName = "$(System.TeamProject)"
                   Name = "Release"
                   Description = ""

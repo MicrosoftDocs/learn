@@ -25,7 +25,7 @@ quiz:
       explanation: "Adding a single database to an elastic pool will not provide any cost or performance benefits."
     - content: "You manage a cloud platform that tracks inventory for car dealerships."
       isCorrect: true
-      explanation: "It's likely each dealership's data would be stored in a seperate database. This scenario would likely benefit from elastic pools."
+      explanation: "It's likely each dealership's data would be stored in a separate database. This scenario would likely benefit from elastic pools."
   
   - content: "True or False, you can add multiple SQL elastic pools to a single Azure SQL server."
     choices:

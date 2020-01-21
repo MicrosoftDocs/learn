@@ -33,13 +33,13 @@ When you've configured the cdnverify subdomain and the CNAME for the domain mapp
 
 ### Adding a custom domain
 
-To add a custom domain, go to the CDN endpoint that you created, and under **Settings**, click **Custom domains**. In the **Custom domain** pane, click **Custom domain**, then in the **Add a custom domain**, under **Custom hostname**, enter the hostname that matches the CNAME record in your custom domain, such as www\.contoso.com.
+To add a custom domain, go to the CDN endpoint that you created, and under **Settings**, select **Custom domains**. In the **Custom domain** pane, select **Custom domain**, then in the **Add a custom domain**, under **Custom hostname**, enter the hostname that matches the CNAME record in your custom domain, such as www\.contoso.com.
 
 ![Add a custom domain](../media/5-custom-domain.png)
 
 When you enter the custom domain name, Azure will use DNS to attempt to resolve the address to the endpoint hostname. You'll see a tick next to the **Custom hostname field if they match. If you see a red exclamation mark, then you should check your DNS settings.
 
-If the custom domain name resolves to the endpoint hostname, click **Add**. Now any users going to www.contoso.com will be redirected to the Azure POP nearest their location.
+If the custom domain name resolves to the endpoint hostname, select **Add**. Now any users going to www.contoso.com will be redirected to the Azure POP nearest their location.
 
 ## Compressing files
 
@@ -62,7 +62,7 @@ With the Azure CDN Standard for Microsoft Tier, caching rules are as simple as t
 - Bypass caching for query strings. Each query request from the client is passed directly to the origin server with no caching.
 - Cache every unique URL. Every time a requesting client generates a unique URL, that URL is passed back to the origin server and the response cached with its own TTL. This final method is inefficient where each request is a unique URL, as the cache-hit ratio becomes low.
 
-To change these settings, in the Endpoint pane, click **Caching rules** and then select the caching option that you want to apply to the endpoint and click **Save**.
+To change these settings, in the Endpoint pane, select **Caching rules** and then select the caching option that you want to apply to the endpoint and select **Save**.
 
 ## Caching and time to live
 
@@ -92,7 +92,7 @@ You can purge content in several ways.
 
 ![Purge assets](../media/5-purge-cache.png)
 
-When you've specified what content you want to purge, click the Purge button.
+When you've specified what content you want to purge, select the Purge button.
 
 For more information content expiration, see the Further Reading section of the Summary unit.
 
@@ -100,7 +100,7 @@ For more information content expiration, see the Further Reading section of the 
 
 Geo-filtering enables you to allow or block content in specific countries, based on the country code. In the Azure CDN Standard for Microsoft Tier, you can only allow or block the entire site. With the Verizon and Akamai tiers, you can also set up restrictions on directory paths. For more information, see the further reading section in the Summary unit.
 
-To configure geo-filtering, in the properties of the respective endpoint, click Geo-filtering. On the Geo-filtering panel, select either allow or block, then in the Country codes list, select which countries you want to allow or block.
+To configure geo-filtering, in the properties of the respective endpoint, select Geo-filtering. On the Geo-filtering panel, select either allow or block, then in the Country codes list, select which countries you want to allow or block.
 
 ![Geo-filtering](../media/5-geo-filtering.png)
 

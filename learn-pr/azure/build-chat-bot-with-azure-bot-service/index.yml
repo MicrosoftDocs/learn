@@ -2,7 +2,7 @@
 uid: learn.build-azure-bot-services-bot
 metadata:
   title: Build a chat bot with the Azure Bot Service
-  description: The Azure Bot Service, combined with Microsoft QnA Maker, provides the tools developers need to build and publish intelligent bots that interact naturally with users using a range of services.
+  description: Explore the Azure Bot Service and learn to use tools developers need to build and publish intelligent bots that interact with users using a range of services.
   ms.date: 09/26/2018
   author: rmcmurray
   ms.author: robmcm
@@ -25,6 +25,7 @@ levels:
 roles:
 - developer
 - ai-engineer
+- student
 products:
 - azure
 - vs

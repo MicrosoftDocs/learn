@@ -36,7 +36,7 @@ There are three types of disks used with Azure VMs:
 
 - **Data disks**: A data disk is a VHD that's attached to a virtual machine to store application data or other data you need to keep.
 
-OS disks and data disks take advantage of Azure VM disk caching. The cache size for a VM disk depends on the VM instance size and the number of disks mounted on the VM. Caching can be enabled for only up to 4 TiB and larger disks.
+OS disks and data disks take advantage of Azure VM disk caching. The cache size for a VM disk depends on the VM instance size and the number of disks mounted on the VM. Caching can be enabled for only up to 4 TiB sized disks.
 
 ## Cache options for Azure VMs
 

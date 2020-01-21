@@ -3,7 +3,7 @@ uid: learn.top-5-security-items-to-consider
 metadata:
   #TODO: Update this title to be more consistent with other titles?
   title: Top 5 security items to consider before pushing to production
-  description: Organizations big and small have started to realize just how crucial system and application reliability is to their business. They’ve also learned just how difficult it is to maintain that reliability while iterating at the speed demanded by the marketplace. Site Reliability Engineering (SRE) is a proven approach to this challenge. In this module you will gain an understanding of SRE and why it matters.
+  description: Learn about the Site Reliability Engineering approach to the challenge of assuring reliability and gain a better understanding of why it matters.
   author: SheHacksPurple
   ms.date: 09/24/2018
   ms.author: tajanca

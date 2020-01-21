@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.cmu-cloud-admin.cmu-orchestration
+metadata:
+  title: Automate cloud resource management
+  description: Cloud Admin course from Dr. Majd Sakr at Carnegie Mellon University. Learn about how to automate cloud resource management with scripts and infrastructure-as-code tools like Terraform.
+  ms.date: 12/31/2019
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  showCreativeCommonsFooter: true
+title: Automate cloud resource management
+summary: Learn about how to automate cloud resource management with scripts and infrastructure-as-code tools like Terraform.
+abstract: |
+  In this module you will:
+  - Learn about how to automate cloud resource management with infrastructure-as-code tools like Terraform
+  - Explain the concept of Infrastructure-as-Code and enumerate the advantages that it offers over ordinary scripting
+  - List some of the tools that implement IaC for popular cloud platforms and describe some of the differences between them
+  - Understand Terraform’s role as an infrastructure orchestrator and describe how it differs from a conventional configuration manager
+
+  In Partnership with Dr. Majd Sakr and Carnegie Mellon University.
+prerequisites: |
+  - Understand what cloud computing is, including cloud service models, and common cloud providers
+  - Recognize cloud service models such as IaaS, PaaS, and SaaS and differentiate between them
+  - Be familiar with different organizational IT cost types like CapEx and OpEx
+  - Understand how cloud resource provisioning works
+iconUrl: /learn/achievements/cmu-cloud-admin/cmu-orchestration.svg
+levels:
+- beginner
+roles:
+- administrator
+products:
+- azure
+units:
+- learn.cmu-cloud-admin.cmu-orchestration.0-introduction
+- learn.cmu-cloud-admin.cmu-orchestration.1-automation
+- learn.cmu-cloud-admin.cmu-orchestration.2-scripting-cloud-tasks
+- learn.cmu-cloud-admin.cmu-orchestration.3-infrastructure-as-code
+- learn.cmu-cloud-admin.cmu-orchestration.4-infrastructure-as-code-tools
+- learn.cmu-cloud-admin.cmu-orchestration.5-terraform
+- learn.cmu-cloud-admin.cmu-orchestration.6-summary
+
+badge:
+  uid: learn.cmu-cloud-admin.cmu-orchestration.badge

@@ -1,39 +1,36 @@
 ### YamlMime:Module
 uid: learn.data-ai.train-local-model-with-azure-mls
 metadata:
-  title: Train a local ML model with Azure Machine Learning service
-  description: This module guides you through training a simple logistic regression model and k-Nearest Neighbors (kNN) models to find the model with the highest accuracy.
-  ms.date: 03/18/2019
+  title: Train a machine learning model with Azure Machine Learning
+  description: Learn how to use Azure Machine Learning to train a model and register it in a workspace.
+  ms.date: 01/13/2020
   author: GraemeMalcolm
   ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Train a local ML model with Azure Machine Learning service
-summary: Train a local ML model with Azure Machine Learning service
+title: Train a machine learning model with Azure Machine Learning
+summary: Learn how to use Azure Machine Learning to train a model and register it in a workspace.
 abstract: | 
-  In this module, you will:
-  - Create a simple logistic model to recognize numbers contained in images from the MNIST dataset
-  - Create an Azure Machine Learning experiment
-  - Train a model using the Azure Machine Learning service
-  - Learn about hyperparameters and what they are used for
-  - Learn where you can get more resources on using HyperDrive
-  - Submit the model, monitor the run, and retrieve the results
+  In this module, you will learn how to:
+  - Use an Estimator to run a model training script as an Azure Machine Learning experiment.
+  - Create reusable, parameterized training scripts.
+  - Register models, including metadata such as performance metrics.
 prerequisites: None
 iconUrl: /learn/achievements/data-ai/train-local-model-with-azure-mls-badge.svg
 levels:
 - beginner
 roles:
 - data-scientist
+- student
 products:
 - azure
 - azure-machine-learning-service
 units:
 - learn.data-ai.train-local-model-with-azure-mls.introduction
-- learn.data-ai.train-local-model-with-azure-mls.simple-log-regression-model
-- learn.data-ai.train-local-model-with-azure-mls.run-log-reg-model-sklearn
-- learn.data-ai.train-local-model-with-azure-mls.create-ml-experiment
-- learn.data-ai.train-local-model-with-azure-mls.what-are-hyperparameters
-- learn.data-ai.train-local-model-with-azure-mls.train-model-using-experiment-service
+- learn.data-ai.train-local-model-with-azure-mls.estimators
+- learn.data-ai.train-local-model-with-azure-mls.script-parameters
+- learn.data-ai.train-local-model-with-azure-mls.register-model
+- learn.data-ai.train-local-model-with-azure-mls.training-model
 - learn.data-ai.train-local-model-with-azure-mls.summary
 badge:
   uid: learn.data-ai.train-local-model-with-azure-mls.badge

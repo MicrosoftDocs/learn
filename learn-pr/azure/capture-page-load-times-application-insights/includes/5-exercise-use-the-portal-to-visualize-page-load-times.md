@@ -7,7 +7,7 @@ Now that Application Insights has been enabled for your web app, you'll analyze 
 
 To generate some data to view in Application Insights, we'll simulate some user activity. We'll do this manually:
 
-1. In the Azure portal, in the left pane, select **All resources** and then, in the list of resources, select the web app you created in the previous exercise.
+1. In the Azure portal, search for and select the web app you created in the previous exercise.
 1. In the upper-left corner of the **Overview** page, select **Browse**. The web app opens in a new browser tab.
 1. Reload the web page ten times.
 1. Switch back to the browser tab that displays the Azure portal. Refresh the web app **Overview** page. The charts on this page should show some requests and responses.

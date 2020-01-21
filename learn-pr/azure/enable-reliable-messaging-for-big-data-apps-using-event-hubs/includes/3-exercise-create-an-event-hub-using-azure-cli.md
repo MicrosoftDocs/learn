@@ -20,7 +20,7 @@ Let's create an Event Hubs namespace using Bash shell supported by Azure Cloud s
     > |--name (required)      |Enter a 6-50 characters-long unique name for your Event Hubs namespace. The name should contain only letters, numbers, and hyphens. It should start with a letter and end with a letter or number.|
     > |--resource-group (required) | This will be the pre-created Azure sandbox resource group supplied from the defaults. |
     > |--l (optional)     |Enter the location of your nearest Azure datacenter, this will use your default.|
-    > |--sku (optional) | The pricing tier for the namespace [Basic | Standard], defaults to _Standard_. This determines the connections and consumer thresholds. |
+    > |--sku (optional) | The pricing tier for the namespace [Basic / Standard], defaults to _Standard_. This determines the connections and consumer thresholds. |
 
     Set the name into an environment variable so we can reuse it.
 

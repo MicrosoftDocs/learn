@@ -1,9 +1,8 @@
 ### YamlMime:Module
-#LP name: Introduction to the Cloud with Carnegie Mellon
 uid: learn.cmu-cloud-admin.cloud-admin-provision-manage
 metadata:
   title: Provision and manage cloud services
-  description: Discover the cloud, how it works, and why it matters to you, with Carnegie Mellon's online Cloud Administration course content. 
+  description: Cloud Admin course from Dr. Majd Sakr at Carnegie Mellon University. Learn about the different types of resources available on the cloud and the technology behind how they work.
   ms.date: 08/15/2019
   author: shanamatthews
   ms.author: shanama
@@ -11,7 +10,7 @@ metadata:
   ms.prod: learning-azure
   showCreativeCommonsFooter: true
 title: Provision and manage cloud services
-summary: Discover the cloud, how it works, and why it matters to you, with Carnegie Mellon's online Cloud Administration course content. 
+summary: Learn about the different types of resources available on the cloud and the technology behind how they work.
 abstract: | 
   In this module you will:
   - Describe the different types of services available from cloud providers and list some examples of the kinds of services they provide
@@ -20,14 +19,14 @@ abstract: |
   - Discuss approaches to organizing cloud resources and the benefits of doing so
   - Recall the issues related to resource metering for cloud service providers
 
-  In Partnership with Dr. Majd Sakr and Carnegie Mellon University.
+  This content is provided in partnership with Dr. Majd Sakr and Carnegie Mellon University.
 prerequisites: |
   - Understand what cloud computing is, including cloud service models, and common cloud providers
   - Know the enabling technologies for cloud computing
   - Recognize cloud service models such as IaaS, PaaS, and SaaS and differentiate between them
   - Understand the economic benefits of the cloud for cloud users and cloud service providers
   - Know the terms SLA and SLO 
-iconUrl: /learn/achievements/cloud-admin-provision-manage.svg
+iconUrl: /learn/achievements/cmu-cloud-admin/cloud-admin-provision-manage.svg
 levels:
 - beginner
 roles:

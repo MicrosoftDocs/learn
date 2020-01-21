@@ -458,7 +458,7 @@ There's no inbuilt logging library provided as Node.js is built on the JavaScrip
 
 1. Sign into the [Azure portal for sandbox](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
 
-1. Select **Azure Cosmos DB** in the left navigation panel.
+1. On the Azure portal menu or from the **Home** page, select **Azure Cosmos DB**.
 
 1. You should see a database account with a name beginning with **learn-cosmos-db-**. Select that database account.
 

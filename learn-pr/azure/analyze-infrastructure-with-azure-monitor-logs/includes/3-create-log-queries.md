@@ -20,7 +20,7 @@ You can find the Log Analytics tool in the Azure portal and use it to run sample
 
 You use the Kusto Query Language to query log information for your services running in Azure. A Kusto query is a read-only request to process data and return results. You state the query in plain text, by using a data-flow model that's designed to make the syntax easy to read, write, and automate. The query uses schema entities that are organized in a hierarchy similar to that of Azure SQL Database: databases, tables, and columns.
 
-A Kusto query consists of a sequence of query statements, delimited by a semicolon (`;`). At least one statement is a tabular expression statement. A tabular expression statement formats the data arranged in a table-like mesh of columns and rows.
+A Kusto query consists of a sequence of query statements, delimited by a semicolon (`;`). At least one statement is a tabular expression statement. A tabular expression statement formats the data arranged as a table of columns and rows.
 
 The syntax of a tabular expression statement has a tabular data flow from one tabular query operator to another, starting with a data source. A data source might be a table in a database, or an operator that produces data. The data then flows through a set of data transformation operators that are bound together with the pipe (`|`) delimiter.
 

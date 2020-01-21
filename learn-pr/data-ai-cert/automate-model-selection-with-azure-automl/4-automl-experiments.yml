@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.data-ai.automate-model-selection-with-azure-automl.automl-experiments
+title: Running automated machine learning experiments
+metadata:
+  title: Running automated machine learning experiments
+  description: Learn how to use automated machine learning to recommend a model
+  ms.date: 01/31/2019
+  author: GraemeMalcolm
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-automl-experiments.md)]

@@ -16,7 +16,7 @@ In this exercise, you'll rebuild the image for the web app and upload it to Azur
 
     ![Screenshot that shows the New pane in Azure portal showing the Container options available in Azure Marketplace](../media/7-search-container-registry.png)
 
-1. Specify the values in the following table for each of the properties, and then click **Create**. For the registry name, select a name of your choice. The registry name must be unique within Azure, and contain 5-50 alphanumeric characters. For more information on naming, see [Naming conventions for Azure resources](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions)
+1. Specify the values in the following table for each of the properties, and then click **Create**. For the registry name, select a name of your choice. The registry name must be unique within Azure, and contain 5-50 alphanumeric characters.
 
     | Property  | Value  |
     |---|---|
@@ -136,6 +136,6 @@ For the rest of the exercise, you'll return to the Azure portal running in the s
 
     ![Screenshot that shows the New pane in Azure portal showing the Container properties with the FQDN highlighted](../media/7-container-fqdn.png)
 
-1. Using a web browser, navigate to the URL http://\<*fqdn*\>/api/reservations/1, where *\<fqdn\>*  is the fully qualified domain name of the container instance. The web app should respond with a JSON document containing the details for reservation 1, as in the previous exercise.
+1. Using a web browser, navigate to the URL `http://\<*fqdn*\>/api/reservations/1`, where *\<fqdn\>*  is the fully qualified domain name of the container instance. The web app should respond with a JSON document containing the details for reservation 1, as in the previous exercise.
 
 You uploaded the Docker image to Azure Container Registry, and you ran the image using the Azure Container Instance service.
