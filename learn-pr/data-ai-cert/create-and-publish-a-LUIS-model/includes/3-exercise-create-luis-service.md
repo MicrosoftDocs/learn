@@ -10,17 +10,15 @@ Our application might have several intents: finding pictures, sharing pictures, 
 1. In the **Search the Marketplace** box, type **LUIS**, and then press Enter.
 1. In the search results, select **Language Understanding**.
 1. Select **Create**.
-
-    ![Screenshot showing the LUIS service marketplace information in the Azure portal](../media/3-create-luis-service-create.png)
-
+1. Leave the Create options set to **Both**
 1. Enter a unique name for your LUIS service.
 1. Choose a subscription.
-1. For **Location**, choose the one nearest you.
-1. For **Pricing tier**, select **S0**.
 1. Create a new resource group named **LearnRG**.
+1. For **Authoring Location**, choose the one nearest you.
+1. For **Authoring pricing tier**, select **F0**
+1. Set your **Runtime location** to the same region you chose for **Authoring location**
+1. For **Runtime pricing tier**, select **F0**.
 1. Select **Create**.
-
-    ![Screenshot showing all the options selecting when creating a new LUIS service in the Azure portal](../media/3-create-luis-service-portal.png)
 
 After the deployment has finished, go the resource page for the service. You'll need one of the displayed subscription keys for later exercises. You can either use the "Grab your keys" option in the **Quick start** section, or switch to the **Keys** section to see the two created keys.
 
