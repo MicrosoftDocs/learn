@@ -10,8 +10,8 @@ In this module, you will:
 - Build and push a container-based application to Azure Container Registry
 - Deploy MongoDB using Helm 3
 - Use Kubernetes concepts such as Deployment, Service, and Ingress to deploy an application to the Azure Kubernetes Service (AKS) cluster
-- Configure monitoring, Horizontal Pod Autoscaler, and the Cluster Autoscaler
 - Set up SSL/TLS
+- Configure monitoring, Horizontal Pod Autoscaler, and the Cluster Autoscaler
 
 ## Prerequisites
 
