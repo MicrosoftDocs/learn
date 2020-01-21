@@ -74,12 +74,12 @@ The cloud was a logical successor that combined many of the features of the solu
 
 ### References
 
-1. _IBM (2017). *What is big data?* <https://developer.ibm.com/dwblog/2017/what-is-big-data-insight/>_
+1. _IBM (2017). *What is big data?* <https://www.ibm.com/analytics/hadoop/big-data-analytics>_
 2. _Accenture (2015). *Increased Use of Digital Technologies Could Add \$1.36 Trillion to World's Top 10 Economies in 2020*. <https://newsroom.accenture.com/subjects/strategy/increased-use-of-digital-technologies-could-add-over-1-trillion-dollars-to-worlds-top-10-economies-in-2020-according-to-new-study-from-accenture.htm>_
 3. _Google Inc. (2015). *How Search Works*. <https://www.google.com/insidesearch/howsearchworks/thestory/>_
 4. _Hamilton, James R and others (2007). *On Designing and Deploying Internet-Scale Services*_
 
-[^1]: <https://developer.ibm.com/dwblog/2017/what-is-big-data-insight/>  "IBM (2017). *What is big data?*"
+[^1]: <https://www.ibm.com/analytics/hadoop/big-data-analytics>  "IBM (2017). *What is big data?*"
 
 [^2]: <https://newsroom.accenture.com/subjects/strategy/increased-use-of-digital-technologies-could-add-over-1-trillion-dollars-to-worlds-top-10-economies-in-2020-according-to-new-study-from-accenture.htm>  "Accenture (2015). *Increased Use of Digital Technologies Could Add \$1.36 Trillion to World's Top 10 Economies in 2020*."
 
