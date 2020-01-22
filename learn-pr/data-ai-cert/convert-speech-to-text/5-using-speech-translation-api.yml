@@ -10,7 +10,15 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   zone_pivot_groups: dev-lang-python-csharp
-  
+  ROBOTS: NOINDEX
 durationInMinutes: 20
 content: |
   [!include[](includes/5-exercise-convert-speech-file-to-text.md)]
+tasks:
+- action: exists
+  environment: azure
+  azure:
+    resource:
+      type: "Microsoft.Web/sites"
+      kind: functionapp
+  hint: "Use the portal to create your function app and function using the instructions above."
