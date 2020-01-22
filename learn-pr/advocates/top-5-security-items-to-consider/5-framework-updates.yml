@@ -9,7 +9,6 @@ metadata:
   ms.date: 09/24/2018
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 7
 content: |
   [!include[](includes/5-framework-updates.md)]
