@@ -16,7 +16,7 @@ A [Log Analytics workspace](https://docs.microsoft.com/azure/azure-monitor/learn
 
 ### What is Prometheus?
 
-[Prometheus](https://prometheus.io/?azure-portal=true) is an open-source system monitoring and alerting toolkit. Prometheus has several features that include but is not limited to, the collection of data into a multi-dimensional data model of time series data and multiple modes of graphing and dashboarding support.
+[Prometheus](https://prometheus.io/) is an open-source system monitoring and alerting toolkit. Prometheus has several features that include but is not limited to, the collection of data into a multi-dimensional data model of time series data and multiple modes of graphing and dashboarding support.
 
 ## Create a Log Analytics workspace
 
