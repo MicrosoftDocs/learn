@@ -78,7 +78,7 @@ In this exercise, you will modify **index.html** and **app.py** so users can upl
 
 1. Start Visual Studio Code and use the **File** > **Open Folder** command to open the project directory containing the website.
 
-1. Use Visual Studio Code's Explorer to open **index.html** in the *templates* folder. This is the website's home page, and the one that's used to upload photos.
+1. Use Visual Studio Code's Explorer to open **index.html** in the *templates* folder. **index.html** is the website's home page, and the one that's used to upload photos.
 
 	![Open index.html](../media/open-index.png)
 
@@ -100,7 +100,7 @@ In this exercise, you will modify **index.html** and **app.py** so users can upl
 	</script>
 	```
 
-	The purpose of this code is simple: to display an open-file dialog box when the user selects the page's **Upload Photo** button, and to upload the selected image when the dialog box is dismissed. It works by using jQuery to simulate mouse clicks or selecting a button in a hidden file-upload control defined in **index.html**:
+	The purpose of the code is simple: to display an open-file dialog box when the user selects the page's **Upload Photo** button, and to upload the selected image when the dialog box is dismissed. It works by using jQuery to simulate mouse clicks or selecting a button in a hidden file-upload control defined in **index.html**:
 
 	```html
 	<div style="display: none">
@@ -133,7 +133,7 @@ In this exercise, you will modify **index.html** and **app.py** so users can upl
 	    return render_template("index.html", image_uri=uri)
 	```
 
-	The revised **app.py** still serves up the content in **index.html** when the home page is requested. But when the user uploads a photo and the page is requested again with a POST command, the new code retrieves the uploaded image from the request (`image = request.files["file"]`), base-64 encodes it to create a [data URI](https://wikipedia.org/wiki/Data_URI_scheme), and assigns the data URI to the `<img>` element declared in the page. This is a common technique for displaying an uploaded image in a webpage without writing the image to a temporary file on disk.
+	The revised **app.py** still serves up the content in **index.html** when the home page is requested. But when the user uploads a photo and the page is requested again with a POST command, the new code retrieves the uploaded image from the request (`image = request.files["file"]`), base-64 encodes it to create a [data URI](https://wikipedia.org/wiki/Data_URI_scheme), and assigns the data URI to the `<img>` element declared in the page. This technique is common for displaying an uploaded image in a webpage without writing the image to a temporary file on disk.
 
 1. Return to **index.html** and find the `<img>` element on line 42. Replace `/static/placeholder.png` on that line with `{{ image_uri }}`. Here is the modified line:  
 
@@ -159,4 +159,4 @@ Let's make sure your changes have the desired effect by uploading a photo to the
 
 	_Contoso Travel showing an uploaded photo_
 
-You now have a basic Flask website running that accepts photo uploads. The next step is to modify the site to extract text from those photos. That's where Azure Cognitive Services come in.
+You now have a basic Flask website running that accepts photo uploads. The next step is to modify the site to extract text from those photos. That's where Azure Cognitive Services comes in.

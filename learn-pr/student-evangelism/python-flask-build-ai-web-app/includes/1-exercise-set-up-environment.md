@@ -36,9 +36,9 @@ To run Flask websites on your computer, both Flask and Python must be installed.
 	python3 -m pip install --user --upgrade pip
 	```
 
-	This is important because older versions of pip might miss some of the dependencies needed to run Python in Azure.
+	This command is important because older versions of pip might miss some of the dependencies needed to run Python in Azure.
 
-1. Create a directory on your hard disk in the location of your choice. This will be the *project directory* and will hold all of the files that comprise the Contoso Travel website. It's also where your virtual Python environment will be created.
+1. Create a directory on your hard disk in the location of your choice. The directory will be the *project directory* and will hold all of the files that comprise the Contoso Travel website. It's also where your virtual Python environment will be created.
 
 1. In a Command Prompt window or terminal, `cd` to the project directory. If you are running Windows, use the following commands to create a virtual environment in the "env" subdirectory and activate the environment:
 

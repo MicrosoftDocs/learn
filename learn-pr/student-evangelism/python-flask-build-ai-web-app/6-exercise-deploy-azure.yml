@@ -19,13 +19,13 @@ quiz:
       choices:
       - content: "Ocp-Apim-Cognitive-Key"
         isCorrect: false
-        explanation: "Incorrect. This is not the name of the HTTP header that carries API keys in calls to Azure Cognitive Services."
+        explanation: "Incorrect. Ocp-Apim-Cognitive-Key is not the name of the HTTP header that carries API keys in calls to Azure Cognitive Services."
       - content: "Ocp-Apim-Subscription-Key"
         isCorrect: true
         explanation: "Correct! Ocp-Apim-Subscription-Key is the name of the HTTP header that carries API keys in calls to Azure Cognitive Services."
       - content: "Ocp-Apim-Auth-Key"
         isCorrect: false
-        explanation: "Incorrect. This is not the name of the HTTP header that carries API keys in calls to Azure Cognitive Services."
+        explanation: "Incorrect. Ocp-Apim-Auth-Key is not the name of the HTTP header that carries API keys in calls to Azure Cognitive Services."
     - content: "What is the default port number that Flask uses to service HTTP requests?"
       choices:
       - content: "80"
@@ -41,10 +41,10 @@ quiz:
       choices:
       - content: "`az webapp config appsettings set -g contoso-rg -n contoso-travel --settings API_KEY=a1b2c3d4`"
         isCorrect: true
-        explanation: "Correct! This is the Azure CLI command to use to add the application setting."
+        explanation: "Correct! `az webapp config appsettings set -g contoso-rg -n contoso-travel --settings API_KEY=a1b2c3d4` is the Azure CLI command to use to add the application setting."
       - content: "`az webapp config appsettings add -g contoso-rg -n contoso-travel --settings API_KEY=a1b2c3d4`"
         isCorrect: false
-        explanation: "Incorrect. This is not the correct Azure CLI command to use to add the application setting."
+        explanation: "Incorrect. `az webapp config appsettings add -g contoso-rg -n contoso-travel --settings API_KEY=a1b2c3d4` is not the correct Azure CLI command to use to add the application setting."
       - content: "`az appsvc config appsettings set -g contoso-rg -n contoso-travel --settings API_KEY=a1b2c3d4`"
         isCorrect: false
-        explanation: "Incorrect. This is not the correct Azure CLI command to use to add the application setting."
+        explanation: "Incorrect. `az appsvc config appsettings set -g contoso-rg -n contoso-travel --settings API_KEY=a1b2c3d4` is not the correct Azure CLI command to use to add the application setting."

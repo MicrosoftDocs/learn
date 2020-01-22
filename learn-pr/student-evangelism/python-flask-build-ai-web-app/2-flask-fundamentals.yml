@@ -30,13 +30,13 @@ quiz:
       choices:
       - content: "`{{` and `}}`"
         isCorrect: false
-        explanation: "Incorrect. These are two of the four valid expression delimiters in Flask."
+        explanation: "Incorrect. `{{` and `}}` are only two of the four valid expression delimiters in Flask."
       - content: "`{%` and `%}`"
         isCorrect: false
-        explanation: "Incorrect. These are two of the four valid expression delimiters in Flask."
+        explanation: "Incorrect. `{%` and `%}` are only two of the four valid expression delimiters in Flask."
       - content: "Both A and B"
         isCorrect: true
-        explanation: "Correct! Valid expression delimeters in Flask are `{{`, `}}`, `{%`, and `%}`."
+        explanation: "Correct! Valid expression delimiters in Flask are `{{`, `}}`, `{%`, and `%}`."
     - content: "How are messages <i>flashed</i> with Flask's `flash()` method shown by default?"
       choices:
       - content: "In alert boxes"
