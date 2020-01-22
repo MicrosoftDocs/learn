@@ -68,11 +68,13 @@ In this exercise, you will make use of the Speech Service you created earlier.  
 using System;
 using System.Threading.Tasks;
 using Microsoft.CognitiveServices.Speech;
+using Microsoft.CognitiveServices.Speech.Audio;
 
 namespace HelloWorld
 {
     class Program
     {
+        // It's always a good idea to access services in an async fashion
         static async Task Main()
         {
             await RecognizeSpeechAsync();
@@ -80,9 +82,15 @@ namespace HelloWorld
 
         static async Task RecognizeSpeechAsync()
         {
+            // Configure the subscription information for the service to access.
+            // Use either key1 or key2 from the Speech Service resource you have created
             var config = SpeechConfig.FromSubscription("YourSubscriptionKey", "YourServiceRegion");
-
-            using (var audioInput = AudioConfig.FromWavFileInput("whatstheweatherlike.wav"))
+            
+            // Setup the audio configuration, in this case, using a file that is in local storage.
+            using (var audioInput = AudioConfig.FromWavFileInput("YourAudioFileName"))
+            
+            // Pass the required parameters to the Speech Service which includes the configuration information
+            // and the audio file name that you will use as input
             using (var recognizer = new SpeechRecognizer(config, audioInput))
             {
                 Console.WriteLine("Recognizing first result...");
@@ -91,12 +99,18 @@ namespace HelloWorld
                 switch (result.Reason)
                 {
                     case ResultReason.RecognizedSpeech:
+                        // The file contained speech that was recognized and the transcription will be output
+                        // to the terminal window
                         Console.WriteLine($"We recognized: {result.Text}");
                         break;
                     case ResultReason.NoMatch:
+                        // No recognizable speech found in the audio file that was supplied.
+                        // Out an informative message
                         Console.WriteLine($"NOMATCH: Speech could not be recognized.");
                         break;
                     case ResultReason.Canceled:
+                        // Operation was cancelled
+                        // Output the reason
                         var cancellation = CancellationDetails.FromResult(result);
                         Console.WriteLine($"CANCELED: Reason={cancellation.Reason}");
                 
@@ -120,7 +134,7 @@ namespace HelloWorld
 1. Inlude the package in Program.cs by entering the following using statement ```using Microsoft.CognitiveServices.Speech.Audio;```
 1. In the Program.cs file, paste your Speech Service key where the text **YourSubscriptionKey** is
 1. Enter your location, such as **westus** in the **YourServiceRegion** option of that same line
-1. Locate the text **whatstheweatherlike.wav** and replace it with **narration.wav**
+1. Locate the text **YourAudioFileName** and replace it with **narration.wav**
 1. In the terminal window, type ```dotnet run``` and if all was entered correctly, you should see the result of the translation in the terminal window.
 
 ::: zone-end
