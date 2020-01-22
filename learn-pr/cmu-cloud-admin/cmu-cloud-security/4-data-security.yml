@@ -30,6 +30,12 @@ quiz:
       - content: "Placing the database server on a different subnet  than the application"
         isCorrect: false
         explanation: "Incorrect. Active threat detection can safeguard a database from SQL-injection attacks."
+      - content: "Enabling active threat detection on the database"
+        isCorrect: true
+        explanation: "Correct! Active threat detection can safeguard a database from SQL-injection attacks. Many cloud database services support active threat detection as an option."
+      - content: "None of the above"
+        isCorrect: false
+        explanation: "Incorrect. Active threat detection can safeguard a database from SQL-injection attacks."
 
     - content: "By default, Microsoft SQL Server uses TCP port 1433 for connections from SQL Server Management Studio. Assuming this port must be left open in the firewall so administrators can manage the database, which of the following defenses would be most effective in preventing a port scanner from finding and exploiting this port?"
       choices:
