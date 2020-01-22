@@ -14,7 +14,7 @@ The first statement imports a class named `Flask` from the `flask` package insta
 
 The fourth and fifth statements define a function that's called when the user requests the site's home page—for example, **https:\//www\.contoso\.com/**. The preceding statement, `@app.route("/")`, is a *decorator* that maps the route ("/") to the function. The function name is unimportant, but `index` is commonly used as the name for the function that renders the site's home page.
 
-If you want to use a name other **app.py** for the Python file, simply identify the file with a FLASK_APP environment variable and Flask will happily execute it rather than **app.py**.
+If you want to use a name other **app.py** for the Python file, identify the file with a FLASK_APP environment variable and Flask will execute it rather than **app.py**.
 
 ## Routing in Flask
 
@@ -76,7 +76,7 @@ def contact():
     return render_template("contact.html")
 ``` 
 
-Why is the function named `render_template()`? Because it can do more than simply load static HTML files. It also allows you to pass it user-defined variables and inject their values into the page at runtime. You could, for example, place a file named **master.html** in the "templates" subdirectory and include the following markup in it:
+Why is the function named `render_template()`? In fact, it can do more than simply load static HTML files. It also allows you to pass it user-defined variables and inject their values into the page at runtime. You could, for example, place a file named **master.html** in the "templates" subdirectory and include the following markup in it:
 
 ```html
 <h1>{{ message }}</h1>
@@ -131,7 +131,7 @@ Expressions such as these can even be used to conditionally execute JavaScript c
 {% endif %}
 ```
 
-Control-of-flow statements are frequently used in conjunction with Flask's `flash()` function to display error messages. Let's say you encounter an error condition in **app.py** and want to display a message to the user in a JavaScript alert box. Here's **app.py**, complete with a statement to initialize the app's `secret_key` property with a random number, which is required for flashing messages:
+Control-of-flow statements are frequently used in conjunction with Flask's `flash()` function to display error messages. Let's say you come across an error condition in **app.py** and want to display a message to the user in a JavaScript alert box. Here's **app.py**, complete with a statement to initialize the app's `secret_key` property with a random number, which is required for flashing messages:
 
 ```python
 import os

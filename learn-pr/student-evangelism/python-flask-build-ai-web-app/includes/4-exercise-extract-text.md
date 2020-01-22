@@ -3,7 +3,7 @@
 - Identify objects in the images
 - Generate captions for the images (for example, "A woman riding a bicycle")
 - Use Optical Character Recognition (OCR) to extract text from the images
-- Find faces in the images and identify attributes of those faces such as age and gender
+- Find faces in the images and identify attributes of the faces, such as age and gender
 - Generate "smart thumbnails" centered around the subjects of the images 
 - Recognize famous people and landmarks in the images
 
@@ -53,7 +53,7 @@ You can obtain a Computer Vision API key using the [Azure CLI](https://docs.micr
 
 	Once more, save the URL output from the command in a text file so you can easily retrieve it later. This URL is the one that you will use to call the Computer Vision API. 
 
-The choice of North Central US as the region for your Computer Vision API resource and the resource group that holds it isn't arbitrary. You can locate a resource group and its resources in any of the more than 50 regions that Azure supports. However, it is desirable to locate all the resources that comprise a resource group in the same region in order to minimize cost and maximize performance. The Computer Vision API isn't supported in all regions, but it is supported in North Central US. For a list of regions in which various Cognitive Services are available, refer to [Products available by region](https://azure.microsoft.com/global-infrastructure/services/?products=cognitive-services).
+The choice of North Central US as the region for your Computer Vision API resource and the resource group that holds it isn't arbitrary. You can locate a resource group and its resources in any of the more than 50 regions that Azure supports. However, it is desirable to locate all the resources that comprise a resource group in the same region in order to minimize cost and maximize performance. The Computer Vision API isn't supported in all regions, but it is supported in North Central US. For a list of regions in which Cognitive Services is available, refer to [Products available by region](https://azure.microsoft.com/global-infrastructure/services/?products=cognitive-services).
 
 ## Modify the site to use the Computer Vision API
 
