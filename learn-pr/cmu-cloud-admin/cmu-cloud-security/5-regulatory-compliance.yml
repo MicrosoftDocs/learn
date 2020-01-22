@@ -1,0 +1,53 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-admin.cmu-cloud-security.5-regulatory-compliance
+title: Regulatory compliance
+metadata:
+  title: Regulatory compliance
+  description: Regulatory compliance
+  ms.date: 01/15/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-regulatory-compliance.md)]
+
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: "You work for an organization that is based in the United States. The organization is part of the private sector (not the government), and its primary mission is to use artificial intelligence (AI) to examine CT scans for signs of cancer. Its customer base consists of hospitals and cancer clinics in 30 of the 50 states. Which of the following regulations apply to the organization's IT practices?"
+      choices:
+      - content: "Sarbanes-Oxley"
+        isCorrect: false
+        explanation: "Incorrect. Sarbanes-Oxley applies, but it is not the only one that applies."
+      - content: "HIPAA"
+        isCorrect: false
+        explanation: "Incorrect. HIPAA applies, but it is not the only one that applies."
+      - content: "FISMA"
+        isCorrect: false
+        explanation: "Incorrect. FISMA applies only to federal agencies."
+      - content: "GDPR"
+        isCorrect: false
+        explanation: "Incorrect. GDPR applies only to organizations that do business in Europe."
+      - content: "Sarbanes-Oxley and HIPAA"
+        isCorrect: true
+        explanation: "Correct! Sarbanes-Oxley applies to all U.S. corporations, and HIPAA applies to U.S. companies in the healthcare industry."
+      - content: "Sarbanes-Oxley, HIPAA, and FISMA"
+        isCorrect: false
+        explanation: "Incorrect. FISMA applies only to federal agencies."
+      - content: "HIPAA, FISMA, and GDPR"
+        isCorrect: false
+        explanation: "Incorrect. GDPR applies only to organizations that do business in Europe, and FISMA applies only to federal agencies."
+      - content: "HIPAA and GDPR"
+        isCorrect: false
+        explanation: "Incorrect. GDPR applies only to organizations that do business in Europe."
+
+    - content: "You work for an organization that is based in the United States and whose Web site serves customers in the U.S. and Norway. Norway is NOT a member of the EU. Must your organization's IT practices conform to the rules of GDPR?"
+      choices:
+      - content: "Yes"
+        isCorrect: true
+        explanation: "Correct! Norway isn't part of the EU, but it IS a member of the European Economic Area (EEA)."
+      - content: "No"
+        isCorrect: false
+        explanation: "Incorrect. Norway isn't part of the EU, but it IS a member of the European Economic Area (EEA)."

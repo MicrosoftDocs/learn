@@ -1,0 +1,51 @@
+### YamlMime:Module
+uid: learn.cmu-cloud-admin.cmu-cloud-security
+metadata:
+  title: Virtualize resources in the cloud
+  description: Cloud Admin course from Dr. Majd Sakr at Carnegie Mellon University. TBD
+  ms.date: 08/15/2019
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  showCreativeCommonsFooter: true
+title: TBD
+summary: TBD
+abstract: | 
+  In this module you will:
+  - Understand the importance of risk assessment in implementing cloud security
+  - Understand how cloud customers and cloud service providers share responsibility for security
+  - List some of the prominent threats to cloud security
+  - Understand the role that cryptography plays in securing data
+  - Understand the difference between symmetric encryption and asymmetric encryption
+  - Understand how public key cryptography facilitates the secure exchange of data
+  - Explain the concept of multilayered data security and why it is necessary
+  - Explain some of the services offered by data-security platforms and the integrated security services offered by cloud service providers
+  - Understand why regulatory compliance is important and list some of the regulations that may apply
+
+
+  In Partnership with Dr. Majd Sakr and Carnegie Mellon University.
+prerequisites: |
+  - Understand what cloud computing is, including cloud service models, and common cloud providers
+  - Know the different type of clouds (public, private, hybrid)
+  - Recognize cloud service models such as IaaS, PaaS, and SaaS and differentiate between them
+  - Understand how cloud resource provisioning works
+  - Know how data centers work and how data is stored in the cloud
+iconUrl: /learn/achievements/cmu-cloud-admin/cmu-cloud-security.svg
+levels:
+- beginner
+roles:
+- administrator
+products:
+- azure
+units:
+- learn.cmu-cloud-admin.cmu-cloud-security.0-introduction
+- learn.cmu-cloud-admin.cmu-cloud-security.1-responsibilities
+- learn.cmu-cloud-admin.cmu-cloud-security.2-threats
+- learn.cmu-cloud-admin.cmu-cloud-security.3-encryption
+- learn.cmu-cloud-admin.cmu-cloud-security.4-data-security
+- learn.cmu-cloud-admin.cmu-cloud-security.5-regulatory-compliance
+- learn.cmu-cloud-admin.cmu-cloud-security.6-summary
+
+badge:
+  uid: learn.cmu-cloud-admin.cmu-cloud-security.badge
