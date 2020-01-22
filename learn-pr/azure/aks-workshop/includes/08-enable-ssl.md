@@ -14,12 +14,6 @@ Install cert-manager using Helm and configure it to use Let's Encrypt as the cer
     kubectl create namespace cert-manager
     ```
 
-1. Label the cert-manager namespace to disable resource validation.
-
-    ```bash
-    kubectl label namespace cert-manager certmanager.k8s.io/disable-validation=true
-    ```
-
 1. cert-manager is available in the Jetstack Helm repository. Add the Jetstack Helm repository.
 
     ```bash
@@ -27,10 +21,10 @@ Install cert-manager using Helm and configure it to use Let's Encrypt as the cer
     helm repo update
     ```
 
-1. Install the cert-manager Custom Resource Definition (CRD).
+1. We can now go ahead and install cert-manager. Install the cert-manager Custom Resource Definition (CRD).
 
     ```bash
-    kubectl apply -f https://raw.githubusercontent.com/jetstack/cert-manager/release-0.12/deploy/manifests/00-crds.yaml
+    kubectl apply --validate=false -f https://raw.githubusercontent.com/jetstack/cert-manager/release-0.13/deploy/manifests/00-crds.yaml
     ```
 
 1. Install the cert-manager Helm chart
@@ -38,7 +32,7 @@ Install cert-manager using Helm and configure it to use Let's Encrypt as the cer
     ```bash
     helm install cert-manager \
         --namespace cert-manager \
-        --version v0.12.0 \
+        --version v0.13.0 \
         jetstack/cert-manager
     ```
 
@@ -55,6 +49,21 @@ Install cert-manager using Helm and configure it to use Let's Encrypt as the cer
     cert-manager has been deployed successfully!
     ```
 
+1. Verify the installation by checking the `cert-manager` namespace for running pods.
+
+    ```bash
+    kubectl get pods --namespace cert-manager
+    ```
+
+    You should see the `cert-manager`, `cert-manager-cainjector`, and `cert-manager-webhook` pod in a **Running** state. It may take a minute or so for the TLS assets required for the webhook to function to be provisioned.
+
+    ```output
+    NAME                                       READY   STATUS    RESTARTS   AGE
+    cert-manager-5c6866597-zw7kh               1/1     Running   0          2m
+    cert-manager-cainjector-577f6d9fd7-tr77l   1/1     Running   0          2m
+    cert-manager-webhook-787858fcdb-nlzsq      1/1     Running   0          2m
+    ```
+    
 ## Create a Kubernetes configuration file for ClusterIssuer with Let's Encrypt
 
 In order to begin issuing certificates, you will need to set up a ClusterIssuer. The cluster issuer acts as an interface to a certificate issuing service, for example to Let's Encrypt.
