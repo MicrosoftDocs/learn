@@ -29,6 +29,7 @@ levels:
 - beginner
 roles:
 - administrator
+- student
 products:
 - azure
 units:
