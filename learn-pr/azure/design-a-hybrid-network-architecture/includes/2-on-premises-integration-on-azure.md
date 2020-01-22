@@ -47,7 +47,7 @@ A routing table is made up of a source, an address prefix, and a *next hop* type
 
 A next hop defines what happens to the traffic flow next, based on the prefix. There are three types of next hop:
 
-- **Virtual network**: The traffic is routed according to the IP address within the virtual network
+- **Virtual network**: The traffic is routed according to the IP address within the virtual network.
 - **Internet**: The traffic is routed to the internet.
 - **None**: The traffic is dropped.
 
@@ -69,9 +69,9 @@ A few of the many limitations that apply to virtual networks are listed in the f
 
 Much like the system routing table, custom routing tables also have a next hop type. But the custom routing tables offer a few more options:
 
-- **Virtual appliance**: This option is usually a virtual machine that runs a specific network application, such as a firewall,
+- **Virtual appliance**: This option is usually a virtual machine that runs a specific network application, such as a firewall.
 - **Virtual network gateway**: Use this option when you want to send traffic to a virtual network gateway. A virtual network gateway must be of a type VPN. It can't be of a type ExpressRoute, which requires setting a Border Gateway Protocol (BGP) routing process.
-- **None**: This option drops the traffic rather than forwarding it
+- **None**: This option drops the traffic rather than forwarding it.
 - **Virtual Network**: This option lets you override a default system routing.
 - **Internet**: This option enables you to specify that any prefix forwards traffic to the internet.
 
