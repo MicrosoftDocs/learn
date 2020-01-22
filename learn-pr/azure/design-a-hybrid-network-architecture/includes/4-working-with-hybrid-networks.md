@@ -18,19 +18,19 @@ There are several reasons why you might want to adopt a hybrid network solution.
 
 Whatever your motivations for adding cloud services to your infrastructure, there are several architectures to consider.  We covered ExpressRoute in the preceding unit. The other architectures are:
 
-- Azure VPN gateway
+- Azure VPN Gateway
 - ExpressRoute with VPN failover
 - Hub-spoke network topology
 
-## Azure VPN gateway
+## Azure VPN Gateway
 
-An Azure VPN gateway, or virtual network gateway, allows site-to-site and point-to-site VPN connectivity between your on-premises network and Azure.  
+Azure VPN Gateway, a virtual network gateway service, allows site-to-site and point-to-site VPN connectivity between your on-premises network and Azure.  
 
 A VPN or virtual private network is a well-established, well-understood network architecture.
 
-A VPN gateway uses your existing connection to the internet. However, all communication is encrypted using the Internet Key Exchange (IKE) and Internet Protocol Security (IPsec) protocols. You can have only one virtual network gateway per virtual private network.  
+VPN Gateway uses your existing connection to the internet. However, all communication is encrypted using the Internet Key Exchange (IKE) and Internet Protocol Security (IPsec) protocols. You can have only one virtual network gateway per virtual private network.  
 
-When you set up a virtual network gateway, you must specify whether it's a VPN or ExpressRoute gateway.  
+When you set up a virtual network gateway, you must specify whether it's a VPN gateway or an ExpressRoute gateway.  
 
 The VPN type depends on the type of connection topology you need. For example, if you want to create a point-to-site (P2S) or a point-to-point (P2P) gateway, you use a *RouteBased* type.  There are two VPN types:
 
@@ -98,7 +98,7 @@ When you implement an ExpressRoute with VPN failover architecture, consider the 
 - The ExpressRoute and VPN gateway resources must be in the same virtual network.
 - There's a highly complex configuration.
 - Implementation requires both an ExpressRoute connection and a VPN connection.
-- Implementation requires a redundant Azure VPN gateway and local VPN hardware.
+- Implementation requires a redundant VPN gateway and local VPN hardware.
 
     > [!NOTE]
     > A redundant VPN gateway incurs payment charges, even when it's not being used.
