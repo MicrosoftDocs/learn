@@ -65,6 +65,9 @@ See [Network concepts for applications in Azure Kubernetes Service (AKS)](https:
     AKS_CLUSTER_NAME=aksworkshop-$RANDOM
     ```
 
+    > [!NOTE]
+    > Make a note of the value stored in $AKS_CLUSTER_NAME by running `echo $AKS_CLUSTER_NAME`. This will allow you to reconfigure the variable in case you need to in the future.
+
 1. Run the following `az aks create` command to create the Azure Kubernetes Service (AKS) cluster using the latest version. This should take a few minutes.
 
     ```azurecli

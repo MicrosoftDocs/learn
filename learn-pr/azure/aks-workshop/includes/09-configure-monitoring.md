@@ -2,7 +2,7 @@ The ongoing performance of our cluster relies on the fact that we can monitor th
 
 In this exercise, we'll explore some of these tools. First, we'll create a Log Analytics workspace and enable Azure Monitor for containers. We'll then inspect the Kubernetes event logs and monitor our cluster's health.
 
-We also have the option to use 3rd party monitoring tools such as Prometheus. As a last and optional step, we'll explore such a Prometheus implementation.
+We also can use third party monitoring tools such as Prometheus. As a last and optional step, we'll explore such a Prometheus implementation.
 
 Before we start with the exercise steps, let's define some of the items we've mentioned.
 
@@ -16,13 +16,13 @@ A [Log Analytics workspace](https://docs.microsoft.com/azure/azure-monitor/learn
 
 ### What is Prometheus?
 
-[Prometheus](https://prometheus.io/) is an open-source system monitoring and alerting toolkit. Prometheus has several features that include but is not limited to, the collection of data into a multi-dimensional data model of time series data and multiple modes of graphing and dashboarding support.
+[Prometheus](https://prometheus.io/) is an open-source system monitoring and alerting toolkit. Prometheus has several features that include but isn't limited to, the collection of data into a multi-dimensional data model of time series data and multiple modes of graphing and dashboarding support.
 
 ## Create a Log Analytics workspace
 
-We'll use Azure Monitor's Log Analytics to store monitoring data, events and metrics from our Kubernetes cluster and the applications. We'll pre-create the Log Analytics workspace in our assigned environment resource group
+We'll use Azure Monitor's Log Analytics to store monitoring data, events, and metrics from our Kubernetes cluster and the applications. We'll pre-create the Log Analytics workspace in our assigned environment resource group
 
-1. Make sure that you are signed into the [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true) with your Azure account.
+1. Let's sign into the [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true) with our Azure account.
 
 1. Run the following command to create the workspace. We'll name the workspace **aksworkshop-workspace** and use the same resource group and region as our Azure Kubernetes Service (AKS) cluster, for example, **aksworkshop** in **East US**.
 
@@ -61,7 +61,7 @@ Once our workspace is ready, we can integrate the Azure Monitor for containers m
 
 ## Inspect the Kubernetes event or logs and monitor  cluster health
 
-We can view utilization reports and charts for our cluster in the Azure portal by using Azure Monitor. Azure monitor gives us a global perspective of all containers deployed across our subscriptions and resource groups. From here, we can track containers that are monitored and those that are not and inspect each container's statistics individually.
+We can view utilization reports and charts for our cluster in the Azure portal using Azure Monitor. Azure monitor gives us a global perspective of all containers deployed across our subscriptions and resource groups. From here, we can track containers that are monitored and those containers that aren't and inspect each container's statistics individually.
 
 1. Switch to the [Azure portal](https://portal.azure.com?azure-portal=true).
 
@@ -79,13 +79,13 @@ We can view utilization reports and charts for our cluster in the Azure portal b
 
 ## View the live container logs and Kubernetes events
 
-In addition to the high-level overview of our cluster's health, we can also view live log data from the **Containers** tab in the Insights view by using the **View live data (preview)** option.
+In addition to the high-level overview of our cluster's health, we can also view live log data from the **Containers** tab in the Insights view using the **View live data (preview)** option.
 
-By default, our cluster is enabled with Azure role-based access controls (RBAC). With RBAC enabled, we'll get an error when we use the view live data option in the portal. We can fix the error by setting up RBAC roles and accounts in our cluster. We'll first create a *Role* that has access to pod logs and events. Then we'll assign permissions to users by using a *RoleBinding*.
+By default, our cluster is enabled with Azure role-based access controls (RBAC). With RBAC enabled, we'll get an error when we use the view live data option in the portal. We can fix the error by setting up RBAC roles and accounts in our cluster. We'll first create a *Role* that has access to pod logs and events. Then we'll assign permissions to users using a *RoleBinding*.
 
-In our exercise, we want to set up *Roles* and *RoleBindings* that isn't limited to a specific namespace. We can configure Roles* and *RoleBindings* to grant permissions and bind roles to users across the entire cluster or to cluster resources outside a given namespace.
+In our exercise, we want to set up *Roles* and *RoleBindings that aren't limited to a specific namespace. We can configure Roles* and *RoleBindings* to grant permissions and bind roles to users across the entire cluster or to cluster resources outside a given namespace.
 
-If our Kubernetes cluster is not configured with Kubernetes RBAC authorization or integrated with Azure AD single-sign-on, we don't need to follow the steps above.
+If our Kubernetes cluster isn't configured with Kubernetes RBAC authorization or integrated with Azure AD single-sign-on, we don't need to follow the steps above.
 
 1. In Cloud Shell, save the YAML below as in a file named `logreader-rbac.yaml`. The file contains the instructions to create the appropriate **ClusterRole** and **ClusterRoleBinding**.
 
@@ -113,7 +113,7 @@ If our Kubernetes cluster is not configured with Kubernetes RBAC authorization o
          apiGroup: rbac.authorization.k8s.io
     ```
 
-1. Deploy the `logreader-rbac.yaml` configuration by using `kubectl`.
+1. Deploy the `logreader-rbac.yaml` configuration using `kubectl`.
 
     ```bash
         kubectl apply -f logreader-rbac.yaml
@@ -129,13 +129,13 @@ If our Kubernetes cluster is not configured with Kubernetes RBAC authorization o
 
 ## Collect Prometheus metrics (optional)
 
-This section is optional. There are a few items that we'll have to install and configure before we're able to view the captured log data.
+This section is optional. There are a few items that we'll have to install and configure before we can view the captured log data.
 
-The first, we'll run an application that exposes a Prometheus endpoint. Our application has instrumentation added to it to track metrics by using Prometheus client libraries.
+The first, we'll run an application that exposes a Prometheus endpoint. Our application has instrumentation added to it to track metrics using Prometheus client libraries.
 
 We'll then generate traffic for the application and configure Prometheus to collect this data. 
 
-Prometheus scrapes the collected data from our application's exposed endpoints by using a `ConfigMap` template. This template allows us to specify various parameters, for example, the services to scarp and the interval between scrapes.
+Prometheus scrapes the collected data from our application's exposed endpoints using a `ConfigMap` template. This template allows us to specify various parameters, for example, the services to scrape and the interval between scrapes.
 
 Finally, we'll query the collected metrics and plot visualization.
 
@@ -194,7 +194,7 @@ Finally, we'll query the collected metrics and plot visualization.
             - containerPort: 8080
     ```
 
-1. Deploy the **prommetrics-demo** service by using `kubectl`.
+1. Deploy the **prommetrics-demo** service using `kubectl`.
 
     ```bash
     kubectl apply -f prommetrics-demo.yaml
@@ -303,7 +303,7 @@ Finally, we'll query the collected metrics and plot visualization.
       namespace: kube-system
     ```
 
-1. Deploy the `configmap.yaml` file by using `kubectl`.
+1. Deploy the `configmap.yaml` file using `kubectl`.
 
     ```bash
     kubectl apply -f configmap.yaml
