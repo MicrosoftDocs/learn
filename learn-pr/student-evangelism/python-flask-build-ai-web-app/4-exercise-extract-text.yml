@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.student-evangelism.python-flask-build-ai-web-app.4-extract-text
+uid: learn.student-evangelism.python-flask-build-ai-web-app.4-exercise-extract-text
 title: Exercise - Use Cognitive Services to extract text from photos
 metadata:
   title: Exercise - Use Cognitive Services to extract text from photos
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-python
 durationInMinutes: 10
 content: |
-  [!include[](includes/4-extract-text.md)]
+  [!include[](includes/4-exercise-extract-text.md)]

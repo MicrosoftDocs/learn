@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
   uid: learn.student-evangelism.python-flask-build-ai-web-app.7-summary
-  title: Summary and knowledge check
+  title: Summary
   metadata:
-    title: Summary and knowledge check
+    title: Summary
     description: Summary of lessons learned.
     ms.date: 01/31/2020
     author: GeekTrainer
@@ -12,104 +12,3 @@
   durationInMinutes: 5
   content: |
     [!include[](includes/7-summary.md)]
-  quiz:
-    title: Check your knowledge
-    questions:
-    - content: "Flask is a framework for building web apps in which of the following languages?"
-      choices:
-      - content: "Python, Node.js, and Java"
-        isCorrect: false
-        explanation: "Incorrect."
-      - content: "Python and Node.js"
-        isCorrect: false
-        explanation: "Incorrect."
-      - content: "Python and Java"
-        isCorrect: false
-        explanation: "Incorrect."
-      - content: "Python only"
-        isCorrect: true
-        explanation: "Correct!"
-    - content: "What is the name of the HTTP header that carries API keys in calls to Azure Cognitive Services?"
-      choices:
-      - content: "Ocp-Apim-Cognitive-Key"
-        isCorrect: false
-        explanation: "Incorrect."
-      - content: "Ocp-Apim-Subscription-Key"
-        isCorrect: true
-        explanation: "Correct!"
-      - content: "Ocp-Apim-Auth-Key"
-        isCorrect: false
-        explanation: "Incorrect."
-      - content: "None of the above"
-        isCorrect: false
-        explanation: "Incorrect."
-    - content: "What is the default port number that Flask uses to service HTTP requests?"
-      choices:
-      - content: "80"
-        isCorrect: false
-        explanation: "Incorrect."
-      - content: "5000"
-        isCorrect: true
-        explanation: "Correct!"
-      - content: "8080"
-        isCorrect: false
-        explanation: "Incorrect."
-      - content: "127"
-        isCorrect: false
-        explanation: "Incorrect."
-    - content: "Which of the following Azure CLI commands adds an application setting named API_KEY to an App Service named `contoso`?"
-      choices:
-      - content: "`az webapp config appsettings set -g contoso-rg -n contoso-travel --settings API_KEY=a1b2c3d4`"
-        isCorrect: true
-        explanation: "Correct!"
-      - content: "`az webapp config appsettings add -g contoso-rg -n contoso-travel --settings API_KEY=a1b2c3d4`"
-        isCorrect: false
-        explanation: "Incorrect."
-      - content: "`az appsvc config appsettings set -g contoso-rg -n contoso-travel --settings API_KEY=a1b2c3d4`"
-        isCorrect: false
-        explanation: "Incorrect."
-      - content: "None of the above; application settings must be added through the Azure portal"
-        isCorrect: false
-        explanation: "Incorrect."
-    - content: "Which of the following are valid expression delimiters in Flask?"
-      choices:
-      - content: "`{{` and `}}`"
-        isCorrect: false
-        explanation: "Incorrect."
-      - content: "`{%` and `%}`"
-        isCorrect: false
-        explanation: "Incorrect."
-      - content: "Both A and B"
-        isCorrect: true
-        explanation: "Correct!"
-      - content: "None of the above"
-        isCorrect: false
-        explanation: "Incorrect."
-    - content: "How are messages <i>flashed</i> with Flask's `flash()` method shown by default?"
-      choices:
-      - content: "In alert boxes"
-        isCorrect: true
-        explanation: "Correct!"
-      - content: "In modal popup windows that are browser-specific"
-        isCorrect: false
-        explanation: "Incorrect."
-      - content: "In `<div>` elements decorated with `class='flash'` attributes"
-        isCorrect: false
-        explanation: "Incorrect."
-      - content: "Flashed messages are not shown by default"
-        isCorrect: false
-        explanation: "Incorrect."
-    - content: "By default, HTML files served up by Flask must be located in a directory named:"
-      choices:
-      - content: "<b>static</b>"
-        isCorrect: false
-        explanation: "Incorrect."
-      - content: "<b>html</b>"
-        isCorrect: false
-        explanation: "Incorrect."
-      - content: "<b>templates</b>"
-        isCorrect: true
-        explanation: "Correct!"
-      - content: "<b>main</b>"
-        isCorrect: false
-        explanation: "Incorrect."

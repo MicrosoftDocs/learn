@@ -4,7 +4,7 @@ Like the Computer Vision API, the Translator Text API is invoked using REST call
 
 It's not as hard as it sounds, as you will prove when you modify the Contoso Travel site to pass text extracted from photos by the Computer Vision API to the Translator Text API for translation into another language.
 
-Solutions used in the exercises are located in a [Git repository](https://github.com/MicrosoftDocs/mslearn-build-ai-web-app-with-python-and-flask). 
+Resources that are used in this exercise are located in a [Git code samples repository](https://github.com/MicrosoftDocs/mslearn-build-ai-web-app-with-python-and-flask). 
 
 ## Subscribe to the Translator Text API
 

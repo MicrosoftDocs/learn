@@ -23,16 +23,17 @@ levels:
 - intermediate
 roles:
 - developer
+- student
 products:
 - azure
 units:
 - learn.student-evangelism.python-flask-build-ai-web-app.0-introduction
-- learn.student-evangelism.python-flask-build-ai-web-app.1-set-up-environment
+- learn.student-evangelism.python-flask-build-ai-web-app.1-exercise-set-up-environment
 - learn.student-evangelism.python-flask-build-ai-web-app.2-flask-fundamentals
-- learn.student-evangelism.python-flask-build-ai-web-app.3-upload-photos
-- learn.student-evangelism.python-flask-build-ai-web-app.4-extract-text
-- learn.student-evangelism.python-flask-build-ai-web-app.5-translate-text
-- learn.student-evangelism.python-flask-build-ai-web-app.6-deploy-azure
+- learn.student-evangelism.python-flask-build-ai-web-app.3-exercise-upload-photos
+- learn.student-evangelism.python-flask-build-ai-web-app.4-exercise-extract-text
+- learn.student-evangelism.python-flask-build-ai-web-app.5-exercise-translate-text
+- learn.student-evangelism.python-flask-build-ai-web-app.6-exercise-deploy-azure
 - learn.student-evangelism.python-flask-build-ai-web-app.7-summary
 badge:
   uid: learn.placeholder.badge

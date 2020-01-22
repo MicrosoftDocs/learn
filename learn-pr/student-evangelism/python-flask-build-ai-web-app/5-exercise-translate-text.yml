@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.student-evangelism.python-flask-build-ai-web-app.5-translate-text
+uid: learn.student-evangelism.python-flask-build-ai-web-app.5-exercise-translate-text
 title: Exercise - Use Cognitive Services to translate text
 metadata:
   title: Exercise - Use Cognitive Services to translate text
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-python
 durationInMinutes: 10
 content: |
-  [!include[](includes/5-translate-text.md)]
+  [!include[](includes/5-exercise-translate-text.md)]

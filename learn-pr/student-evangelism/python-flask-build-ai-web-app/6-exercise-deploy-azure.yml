@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.python-flask-build-ai-web-app.6-exercise-deploy-azure
+title: Exercise - Deploy a Flask website to Azure
+metadata:
+  title: Exercise - Deploy a Flask website to Azure
+  description: Deploy a Flask website to Azure.
+  ms.date: 01/31/2020
+  author: GeekTrainer
+  ms.author: chrhar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-python
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-exercise-deploy-azure.md)]
+quiz:
+    title: Check your knowledge
+    questions:
+    - content: "What is the name of the HTTP header that carries API keys in calls to Azure Cognitive Services?"
+      choices:
+      - content: "Ocp-Apim-Cognitive-Key"
+        isCorrect: false
+        explanation: "Incorrect. Ocp-Apim-Cognitive-Key is not the name of the HTTP header that carries API keys in calls to Azure Cognitive Services."
+      - content: "Ocp-Apim-Subscription-Key"
+        isCorrect: true
+        explanation: "Correct! Ocp-Apim-Subscription-Key is the name of the HTTP header that carries API keys in calls to Azure Cognitive Services."
+      - content: "Ocp-Apim-Auth-Key"
+        isCorrect: false
+        explanation: "Incorrect. Ocp-Apim-Auth-Key is not the name of the HTTP header that carries API keys in calls to Azure Cognitive Services."
+    - content: "What is the default port number that Flask uses to service HTTP requests?"
+      choices:
+      - content: "80"
+        isCorrect: false
+        explanation: "Incorrect. Port 80 is not the default port number that Flask uses to service HTTP requests."
+      - content: "5000"
+        isCorrect: true
+        explanation: "Correct! Port 5000 is the default port number that Flask uses to service HTTP requests."
+      - content: "8080"
+        isCorrect: false
+        explanation: "Incorrect. Port 8080 is not the default port number that Flask uses to service HTTP requests."
+    - content: "Which of the following Azure CLI commands adds an application setting named API_KEY to an App Service named `contoso`?"
+      choices:
+      - content: "`az webapp config appsettings set -g contoso-rg -n contoso-travel --settings API_KEY=a1b2c3d4`"
+        isCorrect: true
+        explanation: "Correct! `az webapp config appsettings set -g contoso-rg -n contoso-travel --settings API_KEY=a1b2c3d4` is the Azure CLI command to use to add the application setting."
+      - content: "`az webapp config appsettings add -g contoso-rg -n contoso-travel --settings API_KEY=a1b2c3d4`"
+        isCorrect: false
+        explanation: "Incorrect. `az webapp config appsettings add -g contoso-rg -n contoso-travel --settings API_KEY=a1b2c3d4` is not the correct Azure CLI command to use to add the application setting."
+      - content: "`az appsvc config appsettings set -g contoso-rg -n contoso-travel --settings API_KEY=a1b2c3d4`"
+        isCorrect: false
+        explanation: "Incorrect. `az appsvc config appsettings set -g contoso-rg -n contoso-travel --settings API_KEY=a1b2c3d4` is not the correct Azure CLI command to use to add the application setting."

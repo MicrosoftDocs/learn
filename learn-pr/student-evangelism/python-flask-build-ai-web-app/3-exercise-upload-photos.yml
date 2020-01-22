@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.student-evangelism.python-flask-build-ai-web-app.3-upload-photos
+uid: learn.student-evangelism.python-flask-build-ai-web-app.3-exercise-upload-photos
 title: Exercise - Build a page for uploading photos
 metadata:
   title: Exercise - Build a page for uploading photos
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-python
 durationInMinutes: 10
 content: |
-  [!include[](includes/3-upload-photos.md)]
+  [!include[](includes/3-exercise-upload-photos.md)]
