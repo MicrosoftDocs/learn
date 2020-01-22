@@ -11,6 +11,6 @@ metadata:
   ms.prod: learning-azure
   zone_pivot_groups: dev-lang-python-csharp
   ROBOTS: NOINDEX
-durationInMinutes: 10
+durationInMinutes: 0
 content: |
   [!include[](includes/5-exercise-convert-speech-file-to-text.md)]
