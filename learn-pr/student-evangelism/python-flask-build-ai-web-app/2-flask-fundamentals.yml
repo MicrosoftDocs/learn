@@ -50,12 +50,13 @@ quiz:
         explanation: "Incorrect. Messages that are <i>flashed</i> with Flask's `flash()` method are displayed by default."
     - content: "By default, in which directory must HTML files served up by Flask must be located?"
       choices:
+      - content: "<b>templates</b>"
+        isCorrect: true
+        explanation: "Correct! By default, HTML files served up by Flask must be located in a directory named *templates*."
       - content: "<b>static</b>"
         isCorrect: false
         explanation: "Incorrect. Flasks looks in the *static* directory for images, style sheets, and other static files that don't change as the application executes."
       - content: "<b>html</b>"
         isCorrect: false
         explanation: "Incorrect. *html* isn't the name of the default Flask directory for HTML files."
-      - content: "<b>templates</b>"
-        isCorrect: true
-        explanation: "Correct! By default, HTML files served up by Flask must be located in a directory named *templates*."
+

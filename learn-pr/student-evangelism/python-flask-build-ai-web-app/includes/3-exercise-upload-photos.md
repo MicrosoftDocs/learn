@@ -80,7 +80,7 @@ In this exercise, you will modify **index.html** and **app.py** so users can upl
 
 1. Use Visual Studio Code's Explorer to open **index.html** in the *templates* folder. **index.html** is the website's home page, and the one that's used to upload photos.
 
-	![Open index.html](../media/open-index.png)
+	[ ![Open index.html](../media/open-index.png) ](../media/open-index.png#lightbox)
 
 	_Open index.html_
 

@@ -58,7 +58,7 @@ When you ran the website locally, it used `os.environ` to load API keys for the 
 
 If you would like, you can log into the [Azure portal](https://portal.azure.com), open the Azure App Service created by the `az webapp up` command, and view the application settings that these commands created. The screenshot below illustrates what you will see if you do.
 
-![View application settings in the Azure portal](../media/app-settings.png)
+[ ![View application settings in the Azure portal](../media/app-settings.png) ](../media/app-settings.png#lightbox)
 
 _View application settings in the Azure portal_
 

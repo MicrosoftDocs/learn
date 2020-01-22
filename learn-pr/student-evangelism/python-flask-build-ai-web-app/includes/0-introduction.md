@@ -13,12 +13,12 @@ Using these services, you will produce a website written in [Python](https://dev
 
 ## Learning objectives
 
-In this module, you build a website named "Contoso Travel" step by step. First, you will prepare a development environment that supports applications written in Python and Flask. Then you will learn the basics of Flask. Next, you will build the website and employ Azure Cognitive Services to do the heavy lifting of extracting and translating text. Finally, after testing the website locally, you will deploy it to Azure for the whole world to enjoy. Along the way, you will learn:
+In this module, you build a website named "Contoso Travel" step by step. First, you will prepare a development environment that supports applications written in Python and Flask. Then you will learn the basics of Flask. Next, you will build the website and employ Azure Cognitive Services to do the heavy lifting of extracting and translating text. Finally, after testing the website locally, you will deploy it to Azure for the whole world to enjoy. Along the way, you will:
 
-- How to set up a Flask development environment
-- How to use Flask to build a page that accepts photo uploads
-- How to use the Computer Vision API to extract text from photos
-- How to use the Translator Text API to translate text extracted from photos
-- How to deploy the application to Azure
+- Learn how to set up a Flask development environment.
+- Learn how to use Flask to build a page that accepts photo uploads.
+- Learn how to use the Computer Vision API to extract text from photos.
+- Learn how to use the Translator Text API to translate text extracted from photos.
+- Learn how to deploy the application to Azure.
 
 Sound like fun? Let's get started.
