@@ -34,7 +34,7 @@ We won't go into many of the details about how App Service works or the configur
     | **Resource Group**   | Select **Create new** and then enter *tailspin-space-game-rg* as the resource group name.   |
     | **Name**             | Provide a unique name, such as *tailspin-space-game-web-1234*. Your App Service instance requires a unique name because the name becomes part of the domain name. In practice, choose a name that describes your service. Note the name for later.                              |
     | **Publish**          | **Code**                                                                                      |
-    | **Runtime stack**    | **.NET Core 2.1**                                                                            |
+    | **Runtime stack**    | **.NET Core 3.1**                                                                            |
     | **Operating System** | **Linux**                                                                                     |
     | **Region**           | Select any region, preferably one close to you.                                               |
     | **Linux Plan**       | Keep the default value.                                                                       |
@@ -42,7 +42,7 @@ We won't go into many of the details about how App Service works or the configur
 
    
 
-1. Select **Review and Create** > **Create**.
+1. Select **Review + Create** > **Create**.
 
     The deployment takes a few moments to finish.
 
@@ -81,14 +81,16 @@ Here you create a service connection that enables Azure Pipelines to access your
 
     | Field               | Value                                        |
     |---------------------|----------------------------------------------|
+    | Connection name | *Resource Manager - Tailspin - Space Game* |
     | Scope level     | **Subscription**                             |
     | Subscription    | Your Azure subscription                      |
     | Resource Group  | **tailspin-space-game-rg**                   |
-    | Service connection name | *Resource Manager - Tailspin - Space Game* |
 
     During the process, you might be prompted to sign in to your Microsoft account.
 
-1. Select **Save**.
+1. Ensure that **Allow all pipelines to use this connection** is selected.
+
+1. Select **OK**.
 
     Azure DevOps performs a test connection to verify that it can connect to your Azure subscription. If Azure DevOps can't connect, you have the chance to sign in a second time.
 
@@ -99,18 +101,21 @@ Here you convert your existing build pipeline to use the multistage feature of A
 Recall that your build pipeline defines the agent pool, variables, and tasks that are required to build your app. As a refresher, here are the first few lines from your current build configuration:
 
 ```yml
+trigger:
+- '*'
+
 pool:
-  vmImage: 'Ubuntu-16.04'
+  vmImage: 'ubuntu-16.04'
   demands:
     - npm
 
 variables:
   buildConfiguration: 'Release'
   wwwrootDir: 'Tailspin.SpaceGame.Web/wwwroot'
-  dotnetSdkVersion: '2.1.505'
+  dotnetSdkVersion: '3.1.100'
 
 steps:
-- task: DotNetCoreInstaller@0
+- task: UseDotNet@2
   displayName: 'Use .NET Core SDK $(dotnetSdkVersion)'
   inputs:
     version: '$(dotnetSdkVersion)'
@@ -126,7 +131,7 @@ Before we add the _Deploy_ stage to the pipeline, let's first convert the existi
 
 1. From your project in Visual Studio Code, open *azure-pipelines.yml* and replace its contents with this code:
 
-    [!code-yml[](code/5-azure-pipelines-1.yml?highlight=4-8)]
+    [!code-yml[](code/5-azure-pipelines-1.yml?highlight=7-11)]
 
     > [!IMPORTANT]
     > In YAML, white space is important. This change affects all of the white space in your file, so we recommend that you replace the entire file with what you see here. The highlighted sections illustrate the use of stages and jobs.
@@ -151,7 +156,7 @@ Before we add the _Deploy_ stage to the pipeline, let's first convert the existi
 
 Here you add a variable to your pipeline to store the name of your web app in App Service.
 
-When you set up App Service earlier, you assigned it a name, such as **tailspin-space-game-web-1234**. The _Deploy_ stage you'll define uses this name to identify which App Service instance to deploy to.
+When you set up App Service earlier, you assigned it a name, such as *tailspin-space-game-web-1234*. The _Deploy_ stage you'll define uses this name to identify which App Service instance to deploy to.
 
 Although you could hard-code this name in your pipeline configuration, defining it as a variable makes your configuration more reusable.
 
@@ -174,7 +179,7 @@ Here you extend your pipeline by adding a deployment stage that uses App Service
 
 1. From Visual Studio Code, replace the contents of *azure-pipelines.yml* with this code:
 
-    [!code-yml[](code/5-azure-pipelines-2.yml?highlight=65-86)]
+    [!code-yml[](code/5-azure-pipelines-2.yml?highlight=68-89)]
 
     Notice the use of the `download` and `AzureWebApp@1` tasks. `$(WebAppName)` reads the web app name from your pipeline variable.
 

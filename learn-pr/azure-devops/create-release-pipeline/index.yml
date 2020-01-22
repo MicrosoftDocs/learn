@@ -20,7 +20,7 @@ prerequisites: |
   - An Azure subscription
   - An Azure DevOps organization
   - Visual Studio Code
-  - .NET Core 2.1
+  - .NET Core 3.1
   - Git
   - A GitHub account
 iconUrl: /learn/achievements/azure-devops/create-a-release-pipeline-with-azure-pipelines.svg
