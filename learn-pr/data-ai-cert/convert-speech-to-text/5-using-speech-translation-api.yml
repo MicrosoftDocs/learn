@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.data-ai.convert-speech-to-text.using-speech-translation-api
-title: Exercise - Convert Speech from File to Text
+title: Exercise - Convert Speech from an Audio File to Text
 metadata:
-  title: Exercise - Convert Speech from File to Text
+  title: Exercise - Convert Speech from an Audio File to Text
   description: Learn how your application can use the service to translate speech, from an audio file, to a text file output.
   ms.date: 01/9/2019
   author: gerryaobrien
