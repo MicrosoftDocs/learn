@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.data-ai.convert-speech-to-text.subscribe-to-speech-translation-api
-title: Exercise - Create a subscription to the Speech Translation API
+title: Exercise - Create a Speech Service Resource
 metadata:
-  title: Exercise - Create a subscription to the Speech Translation API
-  description: Use the Azure portal to create a subscription to the Speech Translation API.
+  title: Exercise - Create a Speech Service Resource
+  description: Use the Azure portal to create a Speech Service Resource.
   ms.date: 01/10/2019
   author: gerryaobrien
   ms.author: gerryo
