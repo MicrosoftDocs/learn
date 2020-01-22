@@ -36,4 +36,4 @@ units:
 - learn.student-evangelism.python-flask-build-ai-web-app.6-exercise-deploy-azure
 - learn.student-evangelism.python-flask-build-ai-web-app.7-summary
 badge:
-  uid: learn.placeholder.badge
+  uid: learn.student-evangelism.python-flask-build-ai-web-app.badge
