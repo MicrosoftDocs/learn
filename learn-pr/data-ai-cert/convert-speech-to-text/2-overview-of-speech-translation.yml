@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.data-ai.convert-speech-to-text.overview-of-speech-translation
-title: Overview of speech translation
+title: Overview of speech-to-text
 metadata:
   title: Overview of speech translation
-  description: Overview of speech translation
+  description: Overview of speech-to-text
   ms.date: 01/10/2019
   author: gerryaobrien
   ms.author: gerryo
