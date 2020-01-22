@@ -6,7 +6,7 @@ After creating the VM, you will remote into it so you can use it to practice Bas
 
 ## Create a virtual machine
 
-Creating a virtual machine from Cloud Shell is a simple process that requires just a few steps:
+Creating a virtual machine from Cloud Shell requires just a few steps:
 
 1. Navigate to https://shell.azure.com in your browser to launch Cloud Shell. If you are asked to choose a directory, select the one containing the Azure subscription that you wish to use for the VM.
 
@@ -24,7 +24,7 @@ Creating a virtual machine from Cloud Shell is a simple process that requires ju
 	az account set -s SUBSCRIPTION_ID
 	```
 
-1. Use the following command to create a resource group named "bash-vm-rg" to hold your VM. Note that you can paste commands into Cloud Shell by pressing **Shift+Ins** if you are running Windows, or **Cmd+V** on a Mac:
+1. Use the following command to create a resource group named "bash-vm-rg" to hold your VM. Note that you can paste commands into Cloud Shell by pressing Shift+Insert if you are running Windows, or Cmd+V on a Mac:
 
 	```bash
 	az group create --name bash-vm-rg --location eastus
@@ -40,6 +40,7 @@ Creating a virtual machine from Cloud Shell is a simple process that requires ju
 
 	This command creates a relatively inexpensive virtual machine featuring one virtual CPU, 3.5 GB of RAM, and a 7 GB solid-state drive (SSD). It also creates an admin user named "azureuser." No password is required because `--generate-ssh-keys` generates a pair of cryptographic keys used for logging in securely.
 
+	> [!NOTE]
 	> For a complete list of options you can specify with the [az vm create](https://docs.microsoft.com/cli/azure/vm?view=azure-cli-latest#az-vm-create) command, type `az vm create --help`. One of the options available is `--size`, which lets you specify a VM with more CPUs and more RAM. The downside to larger VMs is that they are more expensive.
 
 ## Connect to the VM

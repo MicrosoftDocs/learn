@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.student-evangelism.bash-introduction.1-create-linux-vm
-title: Create a Linux VM in Azure
+uid: learn.student-evangelism.bash-introduction.1-exercise-create-linux-vm
+title: Exercise - Create a Linux VM in Azure
 metadata:
-  title: Create a Linux VM in Azure
+  title: Exercise - Create a Linux VM in Azure
   description: Create a Linux VM in Azure to learn Bash.
   ms.date: 01/31/2020
   author: shanamatthews
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-bash
 durationInMinutes: 15
 content: |
-  [!include[](includes/1-create-linux-vm.md)]
+  [!include[](includes/1-exercise-create-linux-vm.md)]

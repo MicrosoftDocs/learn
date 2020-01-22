@@ -1,0 +1,70 @@
+### YamlMime:ModuleUnit
+  uid: learn.student-evangelism.bash-introduction.7-knowledge-check
+  title: Knowledge check
+  metadata:
+    title: Knowledge check
+    description: Check your knowledge about working with Bash.
+    ms.date: 01/31/2020
+    author: shanamatthews
+    ms.author: shanama
+    ms.topic: interactive-tutorial
+    ms.prod: learning-bash
+  durationInMinutes: 5  
+  quiz:
+    title: Check your knowledge
+    questions:
+    - content: "Which of the following commands writes a list of processes associated with a user named <b>scottgu</b> to a file?"
+      choices:
+      - content: "`cat | grep scottgu > processes.txt`"
+        isCorrect: false
+        explanation: "Incorrect."
+      - content: "`cat > grep scottgu | processes.txt`"
+        isCorrect: false
+        explanation: "Incorrect."
+      - content: "`ps -ef | grep scottgu > processes.txt`"
+        isCorrect: true
+        explanation: "Correct! The <b>ps -ef</b> command lists all running processes; the <b>grep</b> command searches for patterns in each file."
+    - content: "Which of the following commands would you use to delete a subdirectory that isn't empty?"
+      choices:
+      - content: "`rm`"
+        isCorrect: true
+        explanation: "Correct! Use the `rm` command to delete a subdirectory and everything in it."
+      - content: "`rmdir`"
+        isCorrect: false
+        explanation: "Incorrect. The `rmdir` command deletes only empty directories."
+      - content: "`nuke`"
+        isCorrect: false
+        explanation: "Incorrect."
+    - content: "Which of the following commands combines the contents of <b>foo.txt</b> and <b>bar.txt</b> into a new file named <b>foobar.txt</b>?"
+      choices:
+      - content: "`concat foo.txt bar.txt > foobar.txt`"
+        isCorrect: false
+        explanation: "Incorrect."
+      - content: "`cat foo.txt bar.txt | foobar.txt`"
+        isCorrect: false
+        explanation: "Incorrect."
+      - content: "`cat foo.txt bar.txt > foobar.txt`"
+        isCorrect: true
+        explanation: "Correct!"        
+    - content: "The purpose of the `sudo` command is to:"
+      choices:
+      - content: "Execute a command with elevated privilege"
+        isCorrect: true
+        explanation: "Correct! Use `sudo` to execute a command with elevated privilege."
+      - content: "Execute a program and leave it running in the background"
+        isCorrect: false
+        explanation: "Incorrect."
+      - content: "Prevent system files from being deleted by non-administrative users"
+        isCorrect: false
+        explanation: "Incorrect."
+    - content: "Which of the following statements is true regarding the command `python3 app.py &`?"
+      choices:
+      - content: "It runs <b>app.py</b> after creating a restore point in the system"
+        isCorrect: false
+        explanation: "Incorrect."
+      - content: "It runs <b>app.py</b> and returns immediately to the command prompt"
+        isCorrect: true
+        explanation: "Correct! `python3 app.py &` runs <b>app.py</b> and returns immediately to the command prompt."
+      - content: "It runs <b>app.py</b>, but only if it's located in the <b>/etc</b> directory"
+        isCorrect: false
+        explanation: "Incorrect."

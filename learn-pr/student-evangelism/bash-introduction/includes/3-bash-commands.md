@@ -2,7 +2,7 @@ Every shell language has its most-used commands, just as every guitarist has cer
 
 ## Bash commands
 
-This section lists common Bash commands and describes how to use them.
+Let's look at common Bash commands and how to use them.
 
 ### `ls` command
 
@@ -23,7 +23,7 @@ To get even more information about the files and directories in the current dire
 ls -l
 ```
 
-Here's some sample output from a directory containing a handful of JPEGs and PNGs and a subdirectory named "gifs:"
+Here's some sample output from a directory containing a handful of JPEGs and PNGs and a subdirectory named *gifs*:
 
 ```
 -rw-rw-r-- 1 azureuser azureuser  473774 Jun 13 15:38 0001.png
