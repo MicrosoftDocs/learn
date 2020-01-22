@@ -1,12 +1,12 @@
 Now that you have an environment for Python and Flask prepared and have the basics of Flask under your belt, it's time to build a website. A Flask website begins with an **app.py** file and basic assets such as HTML, CSS, and images. You will start by using [Git](https://wikipedia.org/wiki/Git) to download a set of starter files for the Contoso Travel site. Then you will enhance the site to support photo uploads.
 
-Solutions used in the exercises are located in a [Git repository](https://github.com/MicrosoftDocs/mslearn-build-ai-web-app-with-python-and-flask). 
+Resources that are used in this exercise are located in a [Git code samples repository](https://github.com/MicrosoftDocs/mslearn-build-ai-web-app-with-python-and-flask). 
 
 ## Create a site that supports photo uploads
 
 1. If [Git](https://wikipedia.org/wiki/Git) isn't installed on your computer, go to the [Git website](https://git-scm.com/) and install it now. Versions are available for Windows, macOS, and Linux.
 
-1. In a Command Prompt window or terminal, `cd` to the project directory you created in an earlier unit. Then use the following command to clone the GitHub repo containing the starter files for the website:
+1. In a Command Prompt window or terminal, `cd` to the project directory you created in earlier in the module. Then use the following command to clone the GitHub repo containing the starter files for the website:
 
 	```bash
 	git clone https://github.com/MicrosoftDocs/mslearn-build-ai-web-app-with-python-and-flask.git .
@@ -35,7 +35,7 @@ Solutions used in the exercises are located in a [Git repository](https://github
 	    return render_template("index.html")
 	```
 
-	Currently, the app consists of a single page named **index.html** located in the *templates* subdirectory. **index.html** doesn't contain any special expressions at the moment—it is simply a static file—but that will change as you develop the site. **index.html** loads the popular [Bootstrap](https://getbootstrap.com/) framework and uses it to make the page responsive. It also loads **main.css** from the "static" subdirectory and uses the CSS styles defined there to lend the page a professional appearance.
+	Currently, the app consists of a single page named **index.html** located in the *templates* subdirectory. **index.html** doesn't contain any special expressions at the moment—it is simply a static file—but that will change as you develop the site. **index.html** loads the popular [Bootstrap](https://getbootstrap.com/) framework and uses it to make the page responsive. It also loads **main.css** from the "static" subdirectory and uses the CSS styles defined there to give the page a professional look.
 
 1. Return to the Command Prompt window or terminal where your virtual Python environment is active and make sure that the project directory is the current directory.
 
@@ -76,7 +76,7 @@ In this exercise, you will modify **index.html** and **app.py** so users can upl
 
 1. If Visual Studio Code isn't installed on your PC, go to https://code.visualstudio.com/ and install it now.
 
-1. Start Visual Studio Code and use the **File** > **Open Folder...** command to open the project directory containing the website.
+1. Start Visual Studio Code and use the **File** > **Open Folder** command to open the project directory containing the website.
 
 1. Use Visual Studio Code's Explorer to open **index.html** in the *templates* folder. This is the website's home page, and the one that's used to upload photos.
 

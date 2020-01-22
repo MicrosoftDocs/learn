@@ -7,11 +7,11 @@
 - Generate "smart thumbnails" centered around the subjects of the images 
 - Recognize famous people and landmarks in the images
 
-Like all Cognitive Services APIs, the Computer Vision API is invoked by placing calls over the Internet to a REST endpoint. Rather than place those calls directly, you can use the [Python SDK for the Computer Vision API](https://pypi.org/project/azure-cognitiveservices-vision-computervision/) to simplify your code. The SDK abstracts calls to the Computer Vision API and handles JSON payloads for you so you don't have to write code to generate and consume JSON yourself.
+Like all Cognitive Services APIs, the Computer Vision API is invoked by placing calls over the Internet to a REST endpoint. Rather than place those calls directly, you can use the [Python SDK for the Computer Vision API](https://pypi.org/project/azure-cognitiveservices-vision-computervision/) to simplify your code. The SDK abstracts calls to the Computer Vision API and handles JSON payloads so you don't have to write code to generate and consume JSON.
 
 It is the OCR feature of the Computer Vision API that will enable the Contoso Travel site to extract text from images. In this unit, you will modify Contoso Travel to use the Computer Vision API to extract text from photos uploaded to the site.
 
-Solutions used in the exercises are located in a [Git repository](https://github.com/MicrosoftDocs/mslearn-build-ai-web-app-with-python-and-flask). 
+Resources that are used in this exercise are located in a [Git code samples repository](https://github.com/MicrosoftDocs/mslearn-build-ai-web-app-with-python-and-flask). 
 
 ## Subscribe to the Computer Vision API
 

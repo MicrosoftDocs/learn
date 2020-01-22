@@ -1,4 +1,4 @@
-Every Flask application begins with a file named **app.py**, which Flask automatically looks for when an application starts up. The following **app.py** file implements the simplest possible website—one with a single page that displays "Hello, world" to the user:
+Every Flask application begins with a file named **app.py**, which Flask automatically looks for when an application starts. The following **app.py** file implements the simplest possible website—one with a single page that displays "Hello, world" to the user:
 
 ```python
 from flask import Flask
@@ -12,7 +12,7 @@ def index():
 
 The first statement imports a class named `Flask` from the `flask` package installed with `pip`. The second statement instantiates that class to create a Flask app and assigns it to the variable named `app`.
 
-The fourth and fifth statements define a function that's called when the user requests the site's home page—for example, **https:\//www\.contoso\.com/**. The preceding statement—`@app.route("/")`—is a *decorator* that maps the route ("/") to the function. The function name is unimportant, but `index` is commonly used as the name for the function that renders the site's home page.
+The fourth and fifth statements define a function that's called when the user requests the site's home page—for example, **https:\//www\.contoso\.com/**. The preceding statement, `@app.route("/")`, is a *decorator* that maps the route ("/") to the function. The function name is unimportant, but `index` is commonly used as the name for the function that renders the site's home page.
 
 If you want to use a name other **app.py** for the Python file, simply identify the file with a FLASK_APP environment variable and Flask will happily execute it rather than **app.py**.
 
@@ -76,7 +76,7 @@ def contact():
     return render_template("contact.html")
 ``` 
 
-Why is the function named `render_template()`? Because it can do more than simply load static HTML files. It also allows allows you to pass it user-defined variables and inject their values into the page at run-time. You could, for example, place a file named **master.html** in the "templates" subdirectory and include the following markup in it:
+Why is the function named `render_template()`? Because it can do more than simply load static HTML files. It also allows you to pass it user-defined variables and inject their values into the page at runtime. You could, for example, place a file named **master.html** in the "templates" subdirectory and include the following markup in it:
 
 ```html
 <h1>{{ message }}</h1>
@@ -105,7 +105,7 @@ def contact():
     return render_template("master.html", message="This is the Contact Us page")
 ``` 
 
-In effect, **master.html** becomes a template for output, and you customize the output for each page by passing a variable named `message` into the template and referencing that variable in the template using `{{ ... }}` expressions. For more information on using templates in Flask, see [Templates](http://flask.pocoo.org/docs/1.0/tutorial/templates/).
+In effect, **master.html** becomes a template for output, and you customize the output for each page by passing a variable named `message` into the template and referencing that variable in the template using `{{ ... }}` expressions. For more information about using templates in Flask, see [Templates](http://flask.pocoo.org/docs/1.0/tutorial/templates/).
 
 ## Control-of-flow expressions
 
@@ -159,7 +159,7 @@ And here is **index.html**:
 {% endwith %}
 ```
 
-This example assumes that just one error message was flashed, but you can call `flash()` multiple times to queue up several messages and enumerate them with a `{% for message in messages %}` statement. For more information on message flashing in Flask, see [Message Flashing](http://flask.pocoo.org/docs/1.0/patterns/flashing/).
+This example assumes that just one error message was flashed, but you can call `flash()` multiple times to queue up several messages and enumerate them with a `{% for message in messages %}` statement. For more information about message flashing in Flask, see [Message Flashing](http://flask.pocoo.org/docs/1.0/patterns/flashing/).
 
 ## Static files
 

@@ -4,7 +4,7 @@ Azure Web Apps makes deploying websites extraordinarily easy, and not just websi
 
 In this unit, you will deploy Contoso Travel to Azure as an Azure web app so it can be accessed by anyone, from anywhere, using a browser. And you will learn about App Service application settings, which allow API keys and other "secrets" used by an application to be stored securely in the cloud.
 
-Solutions used in the exercises are located in a [Git repository](https://github.com/MicrosoftDocs/mslearn-build-ai-web-app-with-python-and-flask). 
+Resources that are used in this exercise are located in a [Git code samples repository](https://github.com/MicrosoftDocs/mslearn-build-ai-web-app-with-python-and-flask). 
 
 ## Create an Azure App Service
 
