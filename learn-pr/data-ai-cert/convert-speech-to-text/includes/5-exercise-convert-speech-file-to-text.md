@@ -122,4 +122,5 @@ namespace HelloWorld
 1. Enter your location, such as **westus** in the **YourServiceRegion** option of that same line
 1. Locate the text **whatstheweatherlike.wav** and replace it with **narration.wav**
 1. In the terminal window, type ```dotnet run``` and if all was entered correctly, you should see the result of the translation in the terminal window.
+
 ::: zone-end
