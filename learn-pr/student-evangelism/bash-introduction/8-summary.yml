@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-  uid: learn.student-evangelism.bash-introduction.7-summary
+  uid: learn.student-evangelism.bash-introduction.8-summary
   title: Summary
   metadata:
     title: Summary
@@ -11,7 +11,7 @@
     ms.prod: learning-bash
   durationInMinutes: 5  
   content: |
-      [!include[](includes/7-summary.md)]
+      [!include[](includes/8-summary.md)]
   quiz:
     title: Check your knowledge
     questions:
