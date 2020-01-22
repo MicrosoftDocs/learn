@@ -12,36 +12,42 @@ metadata:
 durationInMinutes: 11
 content: |
   [!include[](includes/4-data-security.md)]
-# quiz:
-#   title: Check your knowledge
-#   questions:
+quiz:
+  title: Check your knowledge
+  questions:
 
-#     - content: "What is the primary reason for placing Azure resources in separate network security groups (NSGs)?"
-#       choices:
-#       - content: "To perform load balancing between the resources in the NSGs."
-#         isCorrect: false
-#         explanation: "Incorrect. NSGs are an abstraction of firewalls, and two NSGs can have different firewall rules applied."
-#       - content: "To allow multiple NSGs to share a network interface adapter (NIC)."
-#         isCorrect: false
-#         explanation: "Incorrect. NSGs are an abstraction of firewalls, and two NSGs can have different firewall rules applied."
-#       - content: "To prevent an application that crashes on a host in one NSG from affecting resources in the other NSGs."
-#         isCorrect: false
-#         explanation: "Incorrect. NSGs are an abstraction of firewalls, and two NSGs can have different firewall rules applied."
-#       - content: "To apply different firewall rules to each set of resources."
-#         isCorrect: true
-#         explanation: "Correct! NSGs are an abstraction of firewalls, and two NSGs can have different firewall rules applied."
+    - content: "You are responsible for the security of a cloud database, so you implement a multilayered security strategy that includes encryption, firewalling, and more. A software developer in another organization deploys an application that connects to your database. The application, unfortunately, contains a SQL-injection vulnerability that allows hackers to use malformed query strings to extract information from the database that the application wouldn't ordinarily show. Which of the following defenses might safeguard the database from SQL-injection attacks?"
+      choices:
+      - content: "Transparently encrypting the database's contents"
+        isCorrect: false
+        explanation: "Incorrect. Since the data is transparently encrypted, an attacker who manages to access it via SQL injection will see the data in unencrypted form. Active threat detection can safeguard a database from SQL-injection attacks."
+      - content: "Configuring the firewall to disallow connections from the outside except for a select few database administrators (DBAs)"
+        isCorrect: false
+        explanation: "Incorrect. Active threat detection can safeguard a database from SQL-injection attacks."
+      - content: "Placing the database server on a different VNet  than the application"
+        isCorrect: false
+        explanation: "Incorrect. Active threat detection can safeguard a database from SQL-injection attacks."
+      - content: "Placing the database server on a different subnet  than the application"
+        isCorrect: false
+        explanation: "Incorrect. Active threat detection can safeguard a database from SQL-injection attacks."
 
-#     - content: "Azure supports VNet peering for VNets in the same region, and global VNet peering for VNets in different Azure regions. What is the purpose of VNet peering?"
-#       choices:
-#         - content: "To connect VNets so together so that they function as one network."
-#           isCorrect: true
-#           explanation: "Correct! Once peered, resources in one VNet can be accessed as if they were part of the other VNet."
-#         - content: "To isolate traffic in one VNet from traffic in the other."
-#           isCorrect: false
-#           explanation: "Incorrect. Once peered, resources in one VNet can be accessed as if they were part of the other VNet."
-#         - content: "To conserve memory by reducing the size of the network routing tables."
-#           isCorrect: false
-#           explanation: "Incorrect. Once peered, resources in one VNet can be accessed as if they were part of the other VNet."
-#         - content: "To ensure that each VNet has its own network security group."
-#           isCorrect: false
-#           explanation: "Incorrect. Once peered, resources in one VNet can be accessed as if they were part of the other VNet."
+    - content: "By default, Microsoft SQL Server uses TCP port 1433 for connections from SQL Server Management Studio. Assuming this port must be left open in the firewall so administrators can manage the database, which of the following defenses would be most effective in preventing a port scanner from finding and exploiting this port?"
+      choices:
+      - content: "Transparently encrypting the database's contents"
+        isCorrect: false
+        explanation: "Incorrect. Since the data is transparently encrypted, an attacker who manages to connect with SQL Server Management Studio will see the data in unencrypted form. The best defense is to restrict access to the database based on IP addresses."
+      - content: "Using IP restrictions to disallow connections from the outside except for a select few database administrators (DBAs)"
+        isCorrect: true
+        explanation: "Correct! The best defense is to restrict access to the database based on IP addresses. This won't prevent a port scanner from finding the open port, but it will prevent attackers from exploiting it."
+      - content: "Placing the database server on a different VNet than the application"
+        isCorrect: false
+        explanation: "Incorrect. The best defense is to restrict access to the database based on IP addresses."
+      - content: "Placing the database server on a different subnet than the application"
+        isCorrect: false
+        explanation: "Incorrect. The best defense is to restrict access to the database based on IP addresses."
+      - content: "Opening port 1433 to UDP traffic but not TCP traffic"
+        isCorrect: false
+        explanation: "Incorrect. The best defense is to restrict access to the database based on IP addresses. Even legitimate users won't be able to connect if the port isn't open to TCP traffic."
+      - content: "Enabling active threat detection on the database"
+        isCorrect: false
+        explanation: "Incorrect. The best defense is to restrict access to the database based on IP addresses."
