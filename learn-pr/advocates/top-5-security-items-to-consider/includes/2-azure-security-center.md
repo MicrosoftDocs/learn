@@ -44,7 +44,7 @@ While you can use a free Azure subscription tier with ASC, it is limited to asse
 > To upgrade a subscription to the Standard tier, you must be assigned the role of Subscription Owner, Subscription Contributor, or Security Admin.
 
 > [!IMPORTANT]
-> After the 60-day trial period is over, ASC is priced at **$15/node per month** and will be billed to your account.
+> After the 30-day trial period is over, ASC Standard is priced at **$15/node per month** and will be billed to your account.
 
 ## Turning off Azure Security Center
 
