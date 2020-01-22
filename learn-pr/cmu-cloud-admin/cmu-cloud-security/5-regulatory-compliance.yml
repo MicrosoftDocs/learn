@@ -16,7 +16,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-    - content: "You work for an organization that is based in the United States. The organization is part of the private sector (not the government), and it's primary mission is to use artifical intelligence (AI) to examine CT scans for signs of cancer. Its customer base consists of hospitals and cancer clinics in 30 of the 50 states. Which of the following regulations apply to the organization's IT practices?"
+    - content: "You work for an organization that is based in the United States. The organization is part of the private sector (not the government), and its primary mission is to use artificial intelligence (AI) to examine CT scans for signs of cancer. Its customer base consists of hospitals and cancer clinics in 30 of the 50 states. Which of the following regulations apply to the organization's IT practices?"
       choices:
       - content: "Sarbanes-Oxley"
         isCorrect: false
@@ -43,11 +43,11 @@ quiz:
         isCorrect: false
         explanation: "Incorrect. GDPR applies only to organizations that do business in Europe."
 
-    - content: "You work for an organization that is based in the United States and whose Web site serves customers in the U.S. as well as Norway. Norway is NOT a member of the EU. Must your organization's IT practices conform to the rules of GDPR?"
+    - content: "You work for an organization that is based in the United States and whose Web site serves customers in the U.S. and Norway. Norway is NOT a member of the EU. Must your organization's IT practices conform to the rules of GDPR?"
       choices:
       - content: "Yes"
         isCorrect: true
-        explanation: "Correct! Norway is not part of the EU, but it IS a member of the European Economic Area (EEA)."
+        explanation: "Correct! Norway isn't part of the EU, but it IS a member of the European Economic Area (EEA)."
       - content: "No"
         isCorrect: false
-        explanation: "Incorrect. Norway is not part of the EU, but it IS a member of the European Economic Area (EEA)."
+        explanation: "Incorrect. Norway isn't part of the EU, but it IS a member of the European Economic Area (EEA)."
