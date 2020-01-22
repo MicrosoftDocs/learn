@@ -139,8 +139,3 @@ namespace HelloWorld
 
 ::: zone-end
 
-::: zone pivot="java"
-::: zone-end
-
-::: zone pivot="node"
-::: zone-end
