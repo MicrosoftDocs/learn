@@ -13,4 +13,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 10
 content: |
-  [!include[](includes/5-using-speech-translation-api.md)]
+  [!include[](includes/5-exercise-convert-speech-file-to-text.md)]
