@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.data-ai.convert-speech-to-text.using-the-api-to-request-supported-language
-title: Use the API to request supported speech languages
+title: View supported speech languages
 metadata:
-  title: Use the API to request supported speech languages
+  title: View supported speech languages
   description: Learn how to use the API to request a list of supported speech languages.
   ms.date: 01/9/2019
   author: gerryaobrien
