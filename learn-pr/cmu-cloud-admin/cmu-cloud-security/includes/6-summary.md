@@ -14,7 +14,7 @@ This module presented some of the challenges to securing assets in the cloud and
 
 - Asymmetric encryption, also known as *public key cryptography*, is frequently used to encrypt data in motion. Transport Layer Security (TLS), which encrypts traffic that travels over the wire between parties (for example, between Web browsers and Web servers), uses a combination of symmetric and asymmetric encryption.
 
-- The greatest challenge to encrypting data isnt' the encryption itself, but how to store keys securely and securely exchange them between interested parties.
+- The greatest challenge to encrypting data isn't the encryption itself, but how to store keys securely and securely exchange them between interested parties.
 
 - Services such as Azure Key Vault and AWS Key Management Service provide secure storage for encryption keys.
 

@@ -42,7 +42,7 @@ General Data Protection Regulation (GDPR) was adopted by EU countries in April 2
 
 *Organizations in breach of GDPR can be fined up to 4% of annual global turnover or €20 Million (whichever is greater). This is the maximum fine that can be imposed for the most serious infringements - for example, not having sufficient customer consent to process data or violating the core of Privacy by Design concepts. There is a tiered approach to fines e.g. a company can be fined 2% for not having their records in order, not notifying the supervising authority and data subject about a breach or not conducting impact assessment. It is important to note that these rules apply to both controllers and processors - meaning 'clouds' are not exempt from GDPR enforcement.*
 
-While major cloud platforms are all GDPR-compliant, it's up to you to make sure any applications and services you deploy to a public cloud are compliant, too. For an organization that hosts a Web site in Azure in a U.S. data center but serves users all over the world (including Europe), being compliant could mean, but isnt' limited to:
+While major cloud platforms are all GDPR-compliant, it's up to you to make sure any applications and services you deploy to a public cloud are compliant, too. For an organization that hosts a Web site in Azure in a U.S. data center but serves users all over the world (including Europe), being compliant could mean, but isn't limited to:
 
 - Making sure names, e-mail addresses, and other personal data the application stores about its users is fully encrypted and safeguarded against breaches
 
