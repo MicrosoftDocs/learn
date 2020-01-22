@@ -16,7 +16,7 @@ quiz:
   title: Check your knowledge
   questions:
 
-    - content: "An organization discovers that some of the personal information it stores regarding users of an application has been divulged, not as a result of someone gaining unauthorized access to the application or its back-end data stores, but as the result of a SQL-injection vulnerabilility in the application itself. Does this incident qualify as a data breach?"
+    - content: "An organization discovers that some of the personal information it stores regarding users of an application has been divulged, not as a result of someone gaining unauthorized access to the application or its back-end data stores, but as the result of a SQL-injection vulnerability in the application itself. Does this incident qualify as a data breach?"
       choices:
       - content: "Yes"
         isCorrect: true
