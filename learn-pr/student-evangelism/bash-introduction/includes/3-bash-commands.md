@@ -23,7 +23,7 @@ To get even more information about the files and directories in the current dire
 ls -l
 ```
 
-Here's some sample output from a directory containing a handful of JPEGs and PNGs and a subdirectory named "gifs:"
+Here's some sample output from a directory containing a handful of JPEGs and PNGs and a subdirectory named *gifs*:
 
 ```
 -rw-rw-r-- 1 azureuser azureuser  473774 Jun 13 15:38 0001.png

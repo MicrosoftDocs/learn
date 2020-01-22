@@ -24,7 +24,7 @@ Creating a virtual machine from Cloud Shell requires just a few steps:
 	az account set -s SUBSCRIPTION_ID
 	```
 
-1. Use the following command to create a resource group named "bash-vm-rg" to hold your VM. Note that you can paste commands into Cloud Shell by pressing **Shift+Ins** if you are running Windows, or **Cmd+V** on a Mac:
+1. Use the following command to create a resource group named "bash-vm-rg" to hold your VM. Note that you can paste commands into Cloud Shell by pressing Shift+Insert if you are running Windows, or Cmd+V on a Mac:
 
 	```bash
 	az group create --name bash-vm-rg --location eastus
