@@ -9,7 +9,7 @@ metadata:
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 11
+durationInMinutes: 14
 content: |
   [!include[](includes/4-data-security.md)]
 quiz:
