@@ -20,7 +20,7 @@ abstract:  |
   - Learn how to find and terminate rogue processes
   - Learn how to use Bash to filter Azure CLI output
 prerequisites: None
-iconUrl: /learn/achievements/student-evangelism/bash-introduction-generic-badge.svg
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
 roles:
@@ -31,12 +31,13 @@ products:
 - azure-linux-vm
 units:
 - learn.student-evangelism.bash-introduction.0-introduction
-- learn.student-evangelism.bash-introduction.1-create-linux-vm
+- learn.student-evangelism.bash-introduction.1-exercise-create-linux-vm
 - learn.student-evangelism.bash-introduction.2-bash-fundamentals
 - learn.student-evangelism.bash-introduction.3-bash-commands
-- learn.student-evangelism.bash-introduction.4-update-system
-- learn.student-evangelism.bash-introduction.5-terminate-process
-- learn.student-evangelism.bash-introduction.6-filter-cli-output
-- learn.student-evangelism.bash-introduction.7-summary
+- learn.student-evangelism.bash-introduction.4-exercise-update-system
+- learn.student-evangelism.bash-introduction.5-exercise-terminate-process
+- learn.student-evangelism.bash-introduction.6-exercise-filter-cli-output
+- learn.student-evangelism.bash-introduction.7-knowledge-check
+- learn.student-evangelism.bash-introduction.8-summary
 badge:
-  uid: learn.student-evangelism.bash-introduction.badge 
+  uid: learn.placeholder.badge 

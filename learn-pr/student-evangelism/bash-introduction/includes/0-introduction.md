@@ -26,7 +26,3 @@ In this module, you will:
 - Learn how to update a server's operating system
 - Learn how to find and terminate rogue processes
 - Learn how to use Bash to filter Azure CLI output
-
-## Prerequisites
-
-None

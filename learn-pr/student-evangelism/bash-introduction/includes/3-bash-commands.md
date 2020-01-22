@@ -2,7 +2,7 @@ Every shell language has its most-used commands, just as every guitarist has cer
 
 ## Bash commands
 
-This section lists common Bash commands and describes how to use them.
+Let's look at common Bash commands and how to use them.
 
 ### `ls` command
 
