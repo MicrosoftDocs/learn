@@ -138,3 +138,9 @@ namespace HelloWorld
 1. In the terminal window, type ```dotnet run``` and if all was entered correctly, you should see the result of the translation in the terminal window.
 
 ::: zone-end
+
+::: zone pivot="java"
+::: zone-end
+
+::: zone pivot="node"
+::: zone-end
