@@ -66,7 +66,7 @@ _View application settings in the Azure portal_
 
 Now it's time to see the fruits of your labor.
 
-1. Point your browser to http://APP_NAME.azurewebsites.net, replacing APP_NAME with the name of your App Service. Confirm that the site appears in your browser and that it looks exactly as it did when running locally.
+1. Point your browser to http\:\//APP_NAME.azurewebsites.net, replacing APP_NAME with the name of your App Service. Confirm that the site appears in your browser and that it looks exactly as it did when running locally.
 
 	![Contoso Travel running in Azure](../media/azure-site.png)
 	
