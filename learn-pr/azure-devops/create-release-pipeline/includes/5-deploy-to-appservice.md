@@ -76,7 +76,7 @@ Here you create a service connection that enables Azure Pipelines to access your
 1. From the bottom corner of the page, select **Project settings**.
 1. Under **Pipelines**, select **Service connections**.
 1. Select **New service connection**, then choose **Azure Resource Manager**, then select **Next**.
-1. Select **Service principal (automatic)**, then select **Next**.
+1. Near the top of the page, select **Service Principal Authentication**.
 1. Fill in these fields:
 
     | Field               | Value                                        |
