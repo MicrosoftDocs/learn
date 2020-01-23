@@ -1,6 +1,4 @@
-// TODO: Add intro text to introduce the scenario
-
-In this workshop, you’ll go through tasks that will help you master the basic and more advanced tasks required to deploy a multi-container application to Kubernetes on Azure Kubernetes Service (AKS).
+In this workshop, you’ll go through tasks to deploy a multi-container application to Kubernetes on Azure Kubernetes Service (AKS).
 
 You'll deploy the resources in this workshop into a subscription you have access to. To estimate the costs that can be expected for these resources, visit the [pre-configured Azure Calculator estimate](https://aka.ms/aks-workshop-estimate?azure-portal=true) of the resources that will be deployed.
 
@@ -12,10 +10,8 @@ In this module, you will:
 - Build and push a container-based application to Azure Container Registry
 - Deploy MongoDB using Helm 3
 - Use Kubernetes concepts such as Deployment, Service, and Ingress to deploy an application to the Azure Kubernetes Service (AKS) cluster
-- Configure monitoring, Horizontal Pod Autoscaler, and the Cluster Autoscaler
-- Build CI/CD pipelines
-- Scale using Virtual Nodes
 - Set up SSL/TLS
+- Configure monitoring, Horizontal Pod Autoscaler, and the Cluster Autoscaler
 
 ## Prerequisites
 

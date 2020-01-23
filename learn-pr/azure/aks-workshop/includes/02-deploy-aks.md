@@ -74,6 +74,8 @@ See [Network concepts for applications in Azure Kubernetes Service (AKS)](https:
     az aks create \
     --resource-group aksworkshop \
     --name $AKS_CLUSTER_NAME \
+    --vm-set-type VirtualMachineScaleSets \
+    --load-balancer-sku standard \
     --location eastus \
     --kubernetes-version $VERSION \
     --network-plugin azure \
@@ -87,6 +89,10 @@ See [Network concepts for applications in Azure Kubernetes Service (AKS)](https:
     `$AKS_CLUSTER_NAME` specifies your AKS cluster name, `$VERSION` is the latest Kubernetes version retrieved before, `$SUBNET_ID` is the ID of the subnet created on the virtual network to be configured with AKS.
 
     Note the following deployment configuration:
+
+    - **VM set type**
+
+        You're specifying that the cluster is created using Virtual Machine Scale Sets. This will enable you to switch on the cluster autoscaler later on.
 
     - **Network plugin**
 
@@ -123,10 +129,10 @@ See [Network concepts for applications in Azure Kubernetes Service (AKS)](https:
     You should see a list of your cluster's nodes. Here's an example.
 
     ```output
-    NAME                       STATUS   ROLES   AGE  VERSION
-    aks-nodepool1-24503160-0   Ready    agent   1m   v1.15.5
-    aks-nodepool1-24503160-1   Ready    agent   1m   v1.15.5
-    aks-nodepool1-24503160-2   Ready    agent   1m   v1.15.5
+    NAME                                STATUS   ROLES   AGE  VERSION
+    aks-nodepool1-24503160-vmss000000   Ready    agent   1m   v1.15.7
+    aks-nodepool1-24503160-vmss000001   Ready    agent   1m   v1.15.7
+    aks-nodepool1-24503160-vmss000002   Ready    agent   1m   v1.15.7
     ````
 
 ## Create a Kubernetes namespace for the application
