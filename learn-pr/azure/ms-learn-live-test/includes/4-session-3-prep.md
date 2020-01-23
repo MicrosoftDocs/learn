@@ -1,4 +1,4 @@
-At the end of the second session we had the VanArsdel solution running up on Azure as an App Service and made it connect to an Azure SQL database. The Azure Data Migration Assistant helped us move our data from the local database instance into the cloud.
+At the end of the second session, we had the VanArsdel solution running up on Azure as an App Service and made it connect to an Azure SQL Database. The Azure Data Migration Assistant helped us move our data from the local database instance into the cloud.
 
 To follow along with the session, we recommend getting the project into the state we had at the end of session two.
 
@@ -13,9 +13,9 @@ In this session, you will:
 
 1. Create an App Service Plan
 1. Create an App Service
-1. Deploy the app directly from Github into the App Service
+1. Deploy the app directly from GitHub into the App Service
 1. Create a logical database server
-1. Creates a Azure SQL Database
+1. Creates an Azure SQL Database
 1. Configure the App Service to connect to the database
 
 ## Prepare your environment
@@ -24,12 +24,12 @@ In this session, you will:
 - Clone the repository to your PC
 - Open the starter solution under "src/1 - Starter" (you can use Visual Studio 2019 or Visual Studio Code)
 
-### If you are using your own Azure subscription
+### If you're using your own Azure subscription
 
 - Open [Azure Portal](https://portal.azure.com) in your browser and select your subscription
-- Open the Cloud Shell (the button is located at the very top, next to the notifications bell and looks like this: >_) and select to use a "Bash" shell.
+- Open the Cloud Shell (the button is located at the top, next to the notifications bell and looks like this: >_) and select to use a "Bash" shell.
 
-### If you are using the Learn Live Sandbox
+### If you're using the Learn Live Sandbox
 
 > [!IMPORTANT]
 > Activate the Azure Sandbox to execute the lab instructions in a free subscription and locate Azure Cloud Shell on the right-hand side.
@@ -45,9 +45,9 @@ chmod +x ./prepsession3.bash &&
 > [!NOTE]
 > The script will prompt you to enter the URL of **your fork** of the Github repo.
 
-When finished, the script will output the URL of the App Service and append the query parameter `?forceMigration=true` - please follow this link to ensure the database gets populated with data.
+When finished, the script will output the URL of the App Service and append the query parameter `?forceMigration=true` - follow this link to ensure the database gets populated with data.
 
-You are now ready to join session three! :-)
+You're now ready to join session three! :-)
 
 ## Resources
 

@@ -18,7 +18,7 @@ metadata:
   title: Migrate an ASP.NET Core application from an on-premises environment into Azure
   
   # Keep this description as it is.
-  description: Microsoft Learn Live is a series of guided, live courses, presented on Twitch and designed to increase your existing knowledge of Azure technologies.
+  description: Microsoft Learn Live is a series of guided, live courses, presented on Twitch, and designed to increase your existing knowledge of Azure technologies.
   
   # Update this after a change to this file.
   ms.date: 1/20/2020
@@ -36,13 +36,14 @@ title: Migrate an ASP.NET Core application from an on-premises environment into 
 
 # Describe what the series is about. A combination of the persona and the series context can be used.
 summary: | 
-  As a senior .NET developer working for a real estate business, you are part of an experienced in-house development team and your technology stack is Microsoft's .NET.
-  You are running a website built with ASP.NET Core MVC and SQL Server.
-  It is running on-premises on your own hardware. You have plans to expand the business.
-  This will lead to increased numbers of users hitting the current web application. 
-  You conclude that the expansion plans require to scale-up hardware to handle increased workload and ensure fast response times.
+  You're a senior .NET developer working for a VanArsdel Ltd., a real estate business.
+  VanArsdel has an experienced in-house development team and the technology stack is Microsoft's .NET.
+  Interaction with your customers happens through the website that built with ASP.NET Core MVC and SQL Server and
+  it's hosted on-premises. Management plans to expand the business.
+  The expansion will lead to increased numbers of users hitting the current web application. 
+  You conclude the expansion plans require to scale-up hardware to handle increased workload and ensure fast response times.
   Because of high cost related to these investments, you consider a migration of the solution into the cloud.
-  Because of the positive experience with the Microsoft stack in the past you feel comfortable moving to Azure as your cloud provider and expect a smooth transition.
+  The positive experience with the Microsoft stack in the past makes you feel comfortable moving to Azure as your cloud provider and you expect a smooth transition.
   Pushing the application to Azure will help mitigate both, the cost and time factor of upgrading the on-premises solution.
 
 # Abstract contains the series' objectives - copy these from your series' design documents session objectives.
@@ -50,7 +51,7 @@ abstract: |
   In this Learn Live series, you will:
   - Choose an appropriate hosting model and deploy the application to Azure
   - Choose an appropriate database solution and migrate on-premises data into the cloud
-  - Setup and configure automatic deployment
+  - Set up and configure automatic deployment
   - Identify the benefits of Azure Storage
   - Create and configure a Storage Account and migrate data to a centralized storage
   - Monitor your web app against metrics and scale it to meet changes in demand

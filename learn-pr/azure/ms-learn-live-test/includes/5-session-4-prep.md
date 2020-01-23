@@ -1,4 +1,5 @@
-Session three introduced automated builds and deployments to VanArsdel's project. This is handy, because in this session we are going to move away from our filesystem-based image storage to a cloud based solution. To get there, we are going to write some code and with automated builds in place, our deployed solution will automatically be updated on Azure.
+Session three introduced automated builds and deployments to VanArsdel's project. The automation is handy, because in this session we're going to 
+write some code to move away from our filesystem-based image storage to a cloud-based solution. 
 
 To follow along with the session, we recommend getting the project into the state we had at the end of session three.
 
@@ -14,7 +15,7 @@ In this session, you will:
 
 1. Create an App Service Plan
 1. Create an App Service
-1. Deploy the app directly from Github into the App Service
+1. Deploy the app directly from GitHub into the App Service
 1. Create a logical database server
 1. Create an Azure SQL Database
 1. Configure the App Service to connect to the database
@@ -25,12 +26,12 @@ In this session, you will:
 - Clone the repository to your PC
 - Open the starter solution under "src/1 - Starter" (you can use Visual Studio 2019 or Visual Studio Code)
 
-### If you are using your own Azure subscription
+### If you're using your own Azure subscription
 
 - Open [Azure Portal](https://portal.azure.com) in your browser and select your subscription
-- Open the Cloud Shell (the button is located at the very top, next to the notifications bell and looks like this: >_) and select to use a "Bash" shell.
+- Open the Cloud Shell (the button is located at the top, next to the notifications bell and looks like this: >_) and select to use a "Bash" shell.
 
-### If you are using the Learn Live Sandbox
+### If you're using the Learn Live Sandbox
 
 > [!IMPORTANT]
 > Activate the Azure Sandbox to execute the lab instructions in a free subscription and locate Azure Cloud Shell on the right-hand side.
@@ -46,18 +47,18 @@ chmod +x ./prepsession4.bash &&
 > [!NOTE]
 > The script will prompt you to enter the URL of **your fork** of the Github repo.
 
-When finished, the script will output the URL of the App Service and append the query parameter `?forceMigration=true` - please follow this link to ensure the database gets populated with data.
+When finished, the script will output the URL of the App Service and append the query parameter `?forceMigration=true` - follow this link to ensure the database gets populated with data.
 
-You are now ready to join session four! :-)
+You're now ready to join session four! :-)
 
 ## Resources
 
-- Overiew of features of Azure Storage Account settings: [docs.microsoft.com/de-de/azure/storage/common/storage-introduction#types-of-storage-accounts](https://docs.microsoft.com/de-de/azure/storage/common/storage-introduction#types-of-storage-accounts)
+- Overview of features of Azure Storage Account settings: [docs.microsoft.com/de-de/azure/storage/common/storage-introduction#types-of-storage-accounts](https://docs.microsoft.com/de-de/azure/storage/common/storage-introduction#types-of-storage-accounts)
 - Storage Redundancy reference: [docs.microsoft.com/de-de/azure/storage/common/storage-redundancy](https://docs.microsoft.com/de-de/azure/storage/common/storage-redundancy)
 - Azure Storage Explorer: [azure.microsoft.com/en-us/features/storage-explorer/](https://azure.microsoft.com/en-us/features/storage-explorer/)
 - Windows.Azure.Storage.Blob Nuget: [www.nuget.org/packages/Microsoft.Azure.Storage.Blob/](https://www.nuget.org/packages/Microsoft.Azure.Storage.Blob/)
 - Microsoft Learn Module: [Store Application Data with Azure Blob storage](https://docs.microsoft.com/en-us/learn/modules/store-app-data-with-azure-blob-storage/)
-- Microsoft Learn Module: [Organize Azure storage blobs with properties and metadata](https://docs.microsoft.com/en-us/learn/modules/organize-blobs-properties-metadata/6-add-blob-metadata-using-application-code)
+- Microsoft Learn Module: [Organize Azure Storage blobs with properties and metadata](https://docs.microsoft.com/en-us/learn/modules/organize-blobs-properties-metadata/6-add-blob-metadata-using-application-code)
 - Microsoft Learn Module: [Optimize storage performance and costs using Blob storage tiers](https://docs.microsoft.com/en-us/learn/modules/optimize-archive-costs-blob-storage/)
 - Microsoft Learn Module: [Secure your Azure Storage Account](https://docs.microsoft.com/en-us/learn/modules/secure-azure-storage-account/)
 - Microsoft Learn Module: [Connect an app to Azure Storage](https://docs.microsoft.com/en-us/learn/modules/connect-an-app-to-azure-storage/)
