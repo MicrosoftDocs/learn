@@ -26,7 +26,6 @@ By the end of this unit, you should have deployed the ratings API and configured
     metadata:
       name: ratings-api
     spec:
-      replicas: 2
       selector:
         matchLabels:
           app: ratings-api
@@ -68,7 +67,7 @@ By the end of this unit, you should have deployed the ratings API and configured
 
 1. Review the file, and note the following points:
 
-    - **Replicas and image**
+    - **Image**
 
         You will create a deployment with two replicas running the image you pushed to your Azure Container Registry you created previously, for example  **`acr4229.azurecr.io/ratings-api:v1`**. The container listens to port **3000**. The deployment and the pods are going to be labeled with **app=ratings-api**.
 
@@ -115,7 +114,6 @@ By the end of this unit, you should have deployed the ratings API and configured
     ```output
     NAME                           READY   STATUS    RESTARTS   AGE
     ratings-api-564446d9c4-6rvvs   1/1     Running   0          42s
-    ratings-api-564446d9c4-sz5vz   1/1     Running   0          24s
     ```
 
     If the pods are not starting, not ready or are crashing, you can view their logs using `kubectl logs <pod name> --namespace ratingsapp` and `kubectl describe pod <pod name> --namespace ratingsapp`.
@@ -126,11 +124,11 @@ By the end of this unit, you should have deployed the ratings API and configured
     kubectl get deployment ratings-api --namespace ratingsapp
     ```
 
-    The deployment should show 2 replicas are ready.
+    The deployment should show 1 replica is ready.
 
     ```output
     NAME          READY   UP-TO-DATE   AVAILABLE   AGE
-    ratings-api   2/2     2            2           2m
+    ratings-api   1/1     1            1           2m
     ```
 
 ## Create a Kubernetes service file for the ratings API service
@@ -205,7 +203,7 @@ To simplify the network configuration for application workloads, Kubernetes uses
     ratings-api   ClusterIP   10.2.0.102   <none>        80/TCP    60s
     ```
 
-1. Finally, let's validate the endpoints. Services load balance traffic to the pods through endpoints. The endpoint has the same name as the service. Validate that the service is pointing to two endpoints, corresponding to the two pods. As you add more replicas, or as pods come and go, Kubernetes automatically keeps the endpoints updated.
+1. Finally, let's validate the endpoints. Services load balance traffic to the pods through endpoints. The endpoint has the same name as the service. Validate that the service is pointing to one endpoint, corresponding to the pod. As you add more replicas, or as pods come and go, Kubernetes automatically keeps the endpoints updated.
 
     ```bash
     kubectl get endpoints ratings-api --namespace ratingsapp
@@ -215,7 +213,7 @@ To simplify the network configuration for application workloads, Kubernetes uses
 
     ```output
     NAME          ENDPOINTS                          AGE
-    ratings-api   10.240.0.11:3000,10.240.0.64:3000  1h
+    ratings-api   10.240.0.11:3000                   1h
     ```
 
 You've now created a deployment of the **ratings-api** consisting of two replicas and exposed it as an internal (ClusterIP) service.

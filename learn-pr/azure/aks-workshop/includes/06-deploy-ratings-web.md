@@ -22,7 +22,6 @@ By the end of this unit, you should have deployed the ratings web frontend and c
     metadata:
       name: ratings-web
     spec:
-      replicas: 1
       selector:
         matchLabels:
           app: ratings-web
@@ -53,7 +52,7 @@ By the end of this unit, you should have deployed the ratings web frontend and c
 
 1. Review the file, and note the following points:
 
-    - **Replicas and image**
+    - **Image**
 
     You will create a deployment running the image you pushed in Azure Container Registry you created earlier, for example `acr4229.azurecr.io/ratings-web:v1`. The container listens to port **8080**. The deployment and the pods are going to be labeled with **app=ratings-web**.
 
@@ -72,7 +71,9 @@ By the end of this unit, you should have deployed the ratings web frontend and c
 1. Apply the configuration using the `kubectl apply` command. You'll be deploying this in the **ratingsapp** namespace.
 
     ```bash
-    kubectl apply --namespace ratingsapp -f ratings-web-deployment.yaml
+    kubectl apply \
+    --namespace ratingsapp \
+    -f ratings-web-deployment.yaml
     ```
 
     You'll see an output like the below.
