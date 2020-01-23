@@ -1,12 +1,12 @@
 The first order of business is to set up a development environment for websites written in Python and Flask. You can use the environment to build and test Contoso Travel locally before you deploy it to Azure and make it publicly available.
 
-In this unit, you will install Python on your computer if it isn't already installed. Then you will create a [virtual Python environment](https://docs.python.org/3/library/venv.html) and install Flask and the [Python SDK for the Computer Vision API](https://pypi.org/project/azure-cognitiveservices-vision-computervision/). The SDK makes it easy to call Azure's Computer Vision API from Python applications. Finally, you will install the [Azure CLI](https://docs.microsoft.com/cli/azure/get-started-with-azure-cli?view=azure-cli-latest), which provides a command-line interface to Azure.
+In this unit, you will install Python on your computer if it isn't already installed. Then you will create a virtual Python environment and install Flask and the Python SDK for the Computer Vision API. The SDK makes it easy to call Azure's Computer Vision API from Python applications. Finally, you will install the Azure CLI, which provides a command-line interface to Azure.
 
 ## Create a virtual Python environment
 
 To run Flask websites on your computer, both Flask and Python must be installed. In this exercise, you create a virtual Python environment that isolates the packages you install from others on your computer. Then you install Flask and the Python SDK for the Computer Vision API in that environment.
 
-1. If Python 3.6 or higher isn't installed on your computer, go to https://www.python.org/ and install it now. You can determine whether it's installed on Windows by executing the following command in a Command Prompt window:
+1. If Python 3.6 or higher isn't installed on your computer, go to <https://www.python.org/> and install it now. You can determine whether it's installed on Windows by executing the following command in a Command Prompt window:
 
 	```bash
 	python --version
@@ -65,9 +65,9 @@ Leave the Command Prompt window or terminal open so you can easily return to it 
 
 ## Install the Azure CLI
 
-The [Azure CLI](https://docs.microsoft.com/cli/azure/get-started-with-azure-cli?view=azure-cli-latest) is a command-line environment for creating and managing Azure resources. Versions are available for Windows, macOS, and Linux. In subsequent units, you will use the Azure CLI to create various Azure resources, including an [Azure App Service](https://azure.microsoft.com/services/app-service/) to host a website. In this exercise, you will install the Azure CLI and sign in to it for the first time.
+The Azure CLI is a command-line environment for creating and managing Azure resources. Versions are available for Windows, macOS, and Linux. In subsequent units, you will use the Azure CLI to create various Azure resources, including an Azure App Service to host a website. In this exercise, you will install the Azure CLI and sign in to it for the first time.
 
-1. If the Azure CLI isn't installed on your computer, go to https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest and install it now. You can determine whether it's installed by executing an `az -v` command in a Command Prompt window or terminal. If the CLI is installed, a version number will appear in the output.
+1. If the Azure CLI isn't installed on your computer, go to <https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest> and install it now. You can determine whether it's installed by executing an `az -v` command in a Command Prompt window or terminal. If the CLI is installed, a version number will appear in the output.
 
 1. In a Command Prompt window or terminal, sign in to Azure with the following command:
 
@@ -89,4 +89,4 @@ The [Azure CLI](https://docs.microsoft.com/cli/azure/get-started-with-azure-cli?
 	az account set -s SUBSCRIPTION_ID
 	```
 
-If you aren't familiar with the Azure CLI, you can learn more about it and the numerous commands it supports in [Get started with the Azure CLI](https://docs.microsoft.com/cli/azure/get-started-with-azure-cli?view=azure-cli-latest). Most operations that you perform in Azure can be performed with the CLI or through the [Azure portal](https://portal.azure.com). Power users tend to prefer the CLI, in part because CLI commands can be used in scripts to automate repetitive tasks.
+If you aren't familiar with the Azure CLI, you can learn more about it and the numerous commands it supports in [Get started with the Azure CLI](https://docs.microsoft.com/cli/azure/get-started-with-azure-cli?view=azure-cli-latest). Most operations that you perform in Azure can be performed with the CLI or through the Azure portal. Power users tend to prefer the CLI, in part because CLI commands can be used in scripts to automate repetitive tasks.
