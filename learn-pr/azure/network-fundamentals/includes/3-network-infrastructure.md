@@ -1,6 +1,6 @@
-A network can't exist unless each of the devices has the means of communicating with another. This fact applies whether it's your own organization's network or more extensive networks like the world wide web. All networks are built on the same principles.
+A network can't exist unless each of the devices has the means of communicating with another. This fact applies whether it's your organization's network or more extensive networks like the web. All networks are built on the same principles.
 
-In this unit, we'll describe the term *network standards* and explore the hardware that forms the backbone of any network.
+In this unit, you'll learn about the term *network standards* and explore the hardware that forms the backbone of any network.
 
 ## Network standards
 
@@ -18,26 +18,26 @@ The 802 specification covers all the physical networking standards for both Ethe
 
 | **802** | **Overview** | **Basics of physical and logical networking concepts** |
 | --------- | ----------------------------------- | ------------------------------------------------------------ |
-| 802.1 | Bridging | LAN/MAN bridging and management of the lower sublayers of OSI Layer 2. |
-| 802.2 | Logical Link | Commonly referred to as the logical link control (LLC) specification. |
-| **802.3** | **Ethernet** | Provides asynchronous networking by using carrier sense, multiple accesses with collision detect (CSMA/CD) over coaxial cable, twisted-pair copper cable, and fiber media. |
-| 802.5 | Token ring | The token-passing standard for shielded copper cables and twisted-pair cable. |
-| 802.11 | Wi-Fi | Wireless local area network (WLAN) media access control (MAC) and physical layer (PHY) specification. |
-| 802.11a | Wi-Fi | Specifies a PHY that operates in 5 GHz. |
-| 802.11b | Wi-Fi | Enhances 802.11, adds higher data rate modes. |
-| 802.11d | Wi-Fi | Enhances 802.11a/b, allows for global roaming. |
-| 802.11e | Wi-Fi | Enhances 802.11, adds Quality of Service (QoS) features. |
-| 802.11g | Wi-Fi | Extends WLAN maximum data rate. |
-| 802.11 h | Wi-Fi | Enhances 802.11a, now resolves interference issues. |
-| 802.11i | Wi-Fi | Enhances 802.11, adds security for WLAN applications. |
-| 802.11j | Wi-Fi | Enhances 802.11a for Japanese regulatory extensions. |
-| 802.11n | Wi-Fi | Higher-speed standards. |
-| 802.12 | Demand Priority | Ethernet data rate increased to 100 Mbps. |
-| 802.15 | Wireless personal area networks | Support for wireless personal area networks (WPANs). |
-| 802.15.1 | Bluetooth | Short-range (10-m) wireless technology. |
-| 802.15.3a | UWB | Short-range, high-bandwidth ultra-wideband (UWB) link. |
-| 802.15.4 | ZigBee | Short-range wireless sensor networks. |
-| 802.16 | Wireless metropolitan area networks | Covers mobile and wireless broadband access in wireless metropolitan area networks (WMANs). |
+| 802.1 | Bridging | LAN/MAN bridging and management of the lower sublayers of OSI Layer 2 |
+| 802.2 | Logical Link | Commonly referred to as the logical link control (LLC) specification |
+| **802.3** | **Ethernet** | Provides asynchronous networking by using carrier sense, multiple accesses with collision detect (CSMA/CD) over coaxial cable, twisted-pair copper cable, and fiber media |
+| 802.5 | Token ring | The token-passing standard for shielded copper cables and twisted-pair cable |
+| 802.11 | Wi-Fi | Wireless local area network (WLAN) media access control (MAC) and physical layer (PHY) specification |
+| 802.11a | Wi-Fi | Specifies a PHY that operates in 5 GHz |
+| 802.11b | Wi-Fi | Enhances 802.11, adds higher data rate modes |
+| 802.11d | Wi-Fi | Enhances 802.11a/b, allows for global roaming |
+| 802.11e | Wi-Fi | Enhances 802.11, adds Quality of Service (QoS) features |
+| 802.11g | Wi-Fi | Extends WLAN maximum data rate |
+| 802.11 h | Wi-Fi | Enhances 802.11a, now resolves interference issues |
+| 802.11i | Wi-Fi | Enhances 802.11, adds security for WLAN applications |
+| 802.11j | Wi-Fi | Enhances 802.11a for Japanese regulatory extensions |
+| 802.11n | Wi-Fi | Higher-speed standards |
+| 802.12 | Demand Priority | Ethernet data rate increased to 100 Mbps |
+| 802.15 | Wireless personal area networks | Support for wireless personal area networks (WPANs) |
+| 802.15.1 | Bluetooth | Short-range (10 m) wireless technology |
+| 802.15.3a | UWB | Short-range, high-bandwidth ultra-wideband (UWB) link |
+| 802.15.4 | ZigBee | Short-range wireless sensor networks |
+| 802.16 | Wireless metropolitan area networks | Covers mobile and wireless broadband access in wireless metropolitan area networks (WMANs) |
 
 ## Network infrastructure
 
@@ -74,7 +74,7 @@ A hub acts as a multiport repeater on a network. Hubs are used to connect more t
 ### Types of hubs
 
 - **Fast Ethernet**: Used for 100-Mbps networks and comes as Class I and Class II type hubs. The primary difference between the two is the amount of delay in data transmission. A Class I hub introduces a signal delay of up to 140-bit times. A Class II hub has a delay of up to 96-bit times. The delay allows for the transcoding of data between different base types. Only two Class II hubs can be used in a hub-based network. Class II hubs increased the likelihood of packet collisions because of their higher speeds.
-- **Dual speed**: With a traditional hub network, the speed of the network was governed by the slowest network device attached. For example, if you had 10-Mbps and 100-Mbps devices connected to a network, the  speed of the whole network was only 10 Mbps. Dual-speed hubs solve the problem by acting as a bridge between the two different-speed devices.
+- **Dual speed**: With a traditional hub network, the speed of the network was governed by the slowest network device attached. For example, if you had 10-Mbps and 100-Mbps devices connected to a network, the speed of the whole network was only 10 Mbps. Dual-speed hubs solve the problem by acting as a bridge between the two different-speed devices.
 
 While hubs are now used for small ad-hoc networks of a few devices, they're rarely used at an enterprise level.
 
@@ -119,7 +119,7 @@ There are two subtypes of managed switch:
 
 ## Router
 
-Routers link networks with different ranged addresses together. They can interpret and filter data packets, and then forward them to the correct network. Routers use the network device's IP address information to route the data package to its destination. Most routers can now detect issues with data traffic that flows to any attached network and route or reroute it around the issue. A router is also called a gateway. When we configure network devices, we'll usually configure it with a default gateway IP address.
+Routers link networks with different ranged addresses together. They can interpret and filter data packets, and then forward them to the correct network. Routers use the network device's IP address information to route the data package to its destination. Most routers can now detect issues with data traffic that flows to any attached network and route or reroute it around the issue. A router is also called a gateway. When you configure network devices, you'll usually configure it with a default gateway IP address.
 
 ### Interconnectivity
 
@@ -132,8 +132,8 @@ The majority of routers use the BGP to share routing information. The type of in
 There are several distinct classifications or types of routers available to service different network needs.
 
 - **Access routers**: Typically used in a home or small satellite offices. These routers tend to be low-cost devices, with a simple routing need.
-- **Distribution routers**: Compile traffic routing data from multiple routers. Distribution routers come with more significant memory and processing power. This type of router is designed to hold vast quantities of routing information and is often used to manage and control the quality of service across our WAN.
-- **Edge routers**: An edge router operates at the boundary between your network and other networks, for example, your local network and the internet. They act as gateways to filter traffic and route it internally or forward it based on the packet header. An edge router often comes with access control or firewalls to improve the security. It might also handle DHC and DNS services.
+- **Distribution routers**: Compile traffic routing data from multiple routers. Distribution routers come with more significant memory and processing power. This type of router is designed to hold vast quantities of routing information. It's often used to manage and control the quality of service across a WAN.
+- **Edge routers**: An edge router operates at the boundary between your network and other networks, for example, your local network and the internet. They act as gateways to filter traffic and route it internally or forward it based on the packet header. An edge router often comes with access control or firewalls to improve the security. It might also handle DHCP and DNS services.
 - **Core routers**: Sometimes called enterprise routers, these routers are designed for higher bandwidths. They're used to connect different builds or geographic locations together. Core routers tend to have fewer features than edge routers because their primary focus is on minimizing packet loss and preventing congestions. They tend to do packet forwarding to edge routers.
 
 ## Wireless router
@@ -150,6 +150,6 @@ Two Azure options can help with routing and managing network traffic.
 
 Azure hub-spoke is a reference architecture. The hub is usually an Azure virtual network that acts as the central connection point between the cloud and an on-premises network. Each spoke is also an Azure virtual network, usually connected to the hub via a peer network. Connections between the cloud and the on-premises network can be made through a VPN gateway or Azure ExpressRoute.
 
-### ExpressRoute
+### Azure ExpressRoute
 
-An express route is a dedicated circuit between an on-premises network and the cloud that uses a much higher bandwidth than a regular VPN gateway connection. An ExpressRoute circuit is hosted by a connectivity partner and provides a super-resilient connection.
+An ExpressRoute connection is a dedicated circuit between an on-premises network and the cloud that uses a much higher bandwidth than a regular VPN gateway connection. An ExpressRoute circuit is hosted by a connectivity partner and provides a super-resilient connection.
