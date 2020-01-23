@@ -5,8 +5,8 @@ metadata:
   title: Check your knowledge
   description: 'Knowledge check for "Build a chat bot with the Azure Bot Service"'
   ms.date: 09/24/2018
-  author: rmcmurray
-  ms.author: robmcm
+  author: jasallen
+  ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5
