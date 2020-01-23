@@ -6,8 +6,7 @@ In this exercise, you'll check that secure transfers are enforced on the file sh
 
 ## Enable secure file transfer
 
-1. Connect to your VM using the Remote Desktop Connection.
-1. Use the browser to sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true).
+1. Use your local browser to sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true).
 1. In the portal menu on the left, select **Storage Accounts**.
 1. Select the created storage account that should be named **learnazurefileshare** followed by random numbers.
 1. Under **Settings**, select **Configuration**.
@@ -23,7 +22,7 @@ In this exercise, you'll check that secure transfers are enforced on the file sh
     ![Screenshot showing the firewalls and virtual networks options](../media/6-add-firewall-protections.png)
 
 1. Select to allow access from **Selected networks**.
-1. Under Firewall, select **Add your client IP address**.
+1. Under Firewall, in the address range input, enter the IP address of your VM. You can see this in the title bar of the remote desktop connection.
 1. Select **Save**.
 
 ## Test security of the file share
@@ -45,6 +44,10 @@ In this exercise, you'll check that secure transfers are enforced on the file sh
 1. Select **Save**.
 1. Select **Overview**, then select **File shares**.
 1. Select the **data** file share.
+1. You can now browse the file share in your local browser.
+
+> [!NOTE]
+> You may need to navigate to the reports share as the error page could be cached for the data file share.
 
 ## Install AzCopy and log in to Azure
 
@@ -95,9 +98,9 @@ In this exercise, you'll check that secure transfers are enforced on the file sh
 
     https://learnazurefileshare6438.file.core.windows.net/?sv=2019-02-02&ss=bfqt&srt=sco&sp=rwdlacup&se=2019-12-05T20:46:09Z&st=2019-12-05T12:46:09Z&spr=https&sig=TW1ZMwzksKMhKMqJxSCMBy5wFmut7yuR3vNlTSwFhKQ%3D
     
-    To: 
+    To:
     
-    https://learnazurefileshare6438.file.core.windows.net/**data/**?sv=2019-02-02&ss=bfqt&srt=sco&sp=rwdlacup&se=2019-12-05T20:46:09Z&st=2019-12-05T12:46:09Z&spr=https&sig=TW1ZMwzksKMhKMqJxSCMBy5wFmut7yuR3vNlTSwFhKQ%3D
+    https://learnazurefileshare6438.file.core.windows.net/data/?sv=2019-02-02&ss=bfqt&srt=sco&sp=rwdlacup&se=2019-12-05T20:46:09Z&st=2019-12-05T12:46:09Z&spr=https&sig=TW1ZMwzksKMhKMqJxSCMBy5wFmut7yuR3vNlTSwFhKQ%3D
 
 1. Use this new SAS connection string in the AzCopy command to copy the files to Azure. Use this command in the PowerShell window.
 
@@ -136,7 +139,7 @@ In this exercise, you'll check that secure transfers are enforced on the file sh
     ![Screenshot showing the Create Snapshot option](../media/5-create-a-snapshot.png)
 
 1. Return to your VM, and open **File Explorer**.
-1. Browse to the data share mounted at the **A:** drive, right-click on any of the text files, and select **Properties**. 
+1. Browse to the data share mounted at the **F:** drive, right-click on any of the text files, and select **Properties**.
 1. In the File properties window, select **Previous Versions**, and see the listed snapshots created on the file share.
 
     ![Screenshot of the file properties window, showing previous snapshots](../media/6-previous-versions.png)

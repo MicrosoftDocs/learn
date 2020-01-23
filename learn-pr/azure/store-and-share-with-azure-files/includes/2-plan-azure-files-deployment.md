@@ -8,9 +8,11 @@ In this unit, you'll explore the features offered by Azure Files, and understand
 
 ![Diagram of how Azure Files are structured. Starting with a storage account, through file storage, shares, directories, and files.](../media/2-overview.png)
 
-Before exploring what Azure Files is, you need to understand that storage of file shares is one type of data that can be contained in an Azure storage account. Later in this unit, you'll see how storage accounts provide options for the resilience of stored files.
+Before exploring what Azure Files is, you need to understand that storage of file shares is one type of data that can be contained in an Azure Storage account. Later in this unit, you'll see how storage accounts provide options for the resilience of stored files.
 
-Azure Files can be used to supplement, or replace, a company's existing on-premises NAS devices or file servers. Some of the benefits of using Azure Files in an organization are:
+You can think of Azure Files as a standard file share, hosted on Azure, that you can access with the industry standard SMB protocol. You can mount, or connect, to the an Azure Files file share concurrently on all the main operating systems.
+
+Azure Files can be used to supplement, or replace, a company's existing on-premises NAS devices or file servers. Some of the reasons why your organization will want to use Azure Files are:
 
   - Developers can store apps and configuration files in a file share and connect new VMs to the shared files. This action reduces the speed to get new machines into production.
   - Cloud-based apps can efficiently write log files using the File REST API to the shared storage. Developers can then map to the shared folder and run their local debugging tools on the shared data.
@@ -19,6 +21,8 @@ Azure Files can be used to supplement, or replace, a company's existing on-premi
   - All of the resilience of the Azure platform is inherited by your file share, making files globally redundant. You also gain options to use the integrated snapshots feature and set up automatic backups using Recovery Services vaults.
   - All the data is encrypted in transit using HTTPS and is stored encrypted when at rest.
   - The shares are cross-platform, and you can connect to them from Windows, Linux, or macOS.
+
+Moving a companies existing file shares into Azure Files gives them the flexibility to move their data and processing, or just data, into the cloud. They can then benefit from its scalability, security, and reduced costs compared to running and maintaining the required resources on-premises.
 
 ### Choose your data access method
 
@@ -34,6 +38,15 @@ As the finance company is moving its main apps to Azure, and they want to reduce
 
 ### Choose your file redundancy option
 
+As Azure Files are stored in a storage account, you can choose between standard or premium performance storage accounts.
+
+- **Standard performance**: double-digit ms latency, 10,000 IOPS, 300-MBps bandwidth
+- **Premium performance**: single-digit ms latency, 100,000 IOPS, 5GBps bandwidth
+
+Standard performance accounts use HDD to store the data. This way, the costs are lower, as is the performance. SSD arrays back the premium storage accounts' performance, the price being higher costs. Currently, premium accounts can only use FileStorage accounts with ZRS storage in a limited number of regions.
+
+You need to balance the availability and performance requirements to decide on the account and redundancy options. The finance company is more concerned with the security of their data than performance, and they want the most resilience possible. Therefore, the best choice is a standard GRS storage account. When GZRS leaves preview and is generally available, it would become the best option for them.
+
 |         |LRS      |ZRS      |GRS / GZRS     |
 |---------|---------|---------|---------|
 |You can easily recreate data and cost is a priority    |    ✔     |         |         |
@@ -46,14 +59,7 @@ As the finance company is moving its main apps to Azure, and they want to reduce
 
  *Premium File Storage accounts with ZRS are only supported in a smaller subset of regions.
 
-As Azure Files are stored in a storage account, you can choose between standard or premium performance storage accounts.
-
-- **Standard performance**: double-digit ms latency, 10,000 IOPS, 300-MBps bandwidth
-- **Premium performance**: single-digit ms latency, 100,000 IOPS, 5GBps bandwidth
-
-Standard performance accounts use HDD to store the data. This way, the costs are lower, as is the performance. SSD arrays back the premium storage accounts' performance, the price being higher costs. Currently, premium accounts can only use FileStorage accounts with ZRS storage in a limited number of regions.
-
-You need to balance the availability and performance requirements to decide on the account and redundancy options. The finance company is more concerned with the security of their data than performance, and they want the most resilience possible. Therefore, the best choice is a standard GRS storage account. When GZRS leaves preview and is generally available, it would become the best option.
+The above table compares the different characteristics of each storage option.
 
 ### Choose your data migration solution
 

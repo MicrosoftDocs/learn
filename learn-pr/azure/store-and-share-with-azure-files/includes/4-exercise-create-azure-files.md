@@ -79,18 +79,18 @@ These steps create a Windows Server to use later in the exercise. This server wi
 
     ![Screenshot of the file shares in the storage account](../media/4-select-data.png)
 
-1. Select **Connect**, and on the popout on the right, select the **A** drive letter.
+1. Select **Connect**, and on the popout on the right, select the **F** drive letter.
 
     ![Screenshot of the data file share, and its connection commands](../media/4-connect-to-share.png)
 
-1. Copy the bottom PowerShell command.
+1. Copy the PowerShell command.
 1. On your virtual machine, right click **Start** and select **Windows PowerShell (Admin)**.
 1. In the PowerShell window, paste the copied commands.
 1. Return to the Azure portal, go back to the file shares, and select the **reports** file share.
 
     ![Screenshot of how to navigate back to the file shares ](../media/4-navigate-back.png)
 
-1. Select **Connect**, and on the popout on the right, select the **R** drive letter.
+1. Select **Connect**, and on the popout on the right, select the **G** drive letter.
 1. Copy the bottom PowerShell command.
 1. In the PowerShell window, paste the copied commands.
 
@@ -100,7 +100,7 @@ These steps create a Windows Server to use later in the exercise. This server wi
 
     ![text](../media/4-explorer-with-mapped-drives.png)
 
-1. Select the data drive, named drive **A**. 
+1. Select the data drive, named drive **F**. 
 1. Right-click in the main window, and select **New > Text Document**. 
 1. Name the file **test upload**.
 1. Return to the Azure portal in your browser, and go to the **data** file share. You should see the file in the portal.
