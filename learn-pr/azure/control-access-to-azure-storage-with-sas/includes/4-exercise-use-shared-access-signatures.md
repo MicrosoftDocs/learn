@@ -1,44 +1,255 @@
-   1. Add code to build an ad-hoc SAS URI for the external access page.
-    1. Add client-side code to call the secure access page.
-    1. Test the image can be displayed.
-    1. Test the access is lost after 1 minute.
+![Screenshot your companies patient diagnostic image system, showing three example images loaded](../media/4-app-running.png)
 
+Azure Storage allows you to authorize access to files with a shared key, shared access signatures, or via Azure AD. SAS gives you control over what a client can do with the files and for how long.
 
+Your companies image diagnostic system accesses its patient images internally via a shared key. Your team needs to create an API to allow third parties access to diagnostic images. You'll create a test page on your web app to see how SAS will help you grant secure access to third-party clients.
 
-create storage account
+In this exercise, you'll create a storage account and upload some example patient images. You'll deploy your teams existing web app and test that it can access the storage. The last step will be to add C# and Javascript code to generate a SAS token on demand to view the images securely.
 
-az storage account create \
-    --name medicalrecords \
-    --access-tier hot \
-    --kind StorageV2 \
-    --resource-group azure-files
+### Create a storage account and upload images
 
-az storage container create \
-    --name patient-images \
-    --account-name medicalrecords \
-    --public-access blob
+1. Using the cloud shell, create a storage account for patient images.
 
-git clone https://github.com/PhilStollery/mslearn-control-access-to-azure-storage-with-sas.git sas
+    ```azurecli
+    az storage account create \
+        --name medicalrecords \
+        --access-tier hot \
+        --kind StorageV2 \
+        --resource-group <rgn>[sandbox Resource Group]</rgn>
+    ```
 
-az storage blob upload-batch \
-    --source . \
-    --destination patient-images \
-    --account-name medicalrecords \
-    --pattern *.jpg
+1. Create a container to store the images in.
 
+    ```azurecli
+    az storage container create \
+        --name patient-images \
+        --account-name medicalrecords \
+        --public-access off
+    ```
 
-end=`date -d "90 minutes" '+%Y-%m-%dT%H:%MZ'`
-az storage blob generate-sas \
-    --account-name medicalrecords \
-    --container-name patient-images \
-    --name patient-116139-nq8z7f.jpg \
-    --permissions r \
-    --expiry $end \
-    --https-only
+1. Clone your teams existing web app, the repository also contains example images used by your team for testing.
 
+    ```bash
+    git clone https://github.com/MicrosoftDocs/mslearn-control-access-to-azure-storage-with-sas.git sas
+    ```
 
+1. Use the Azure CLI upload-batch command to upload the images into the storage account.
 
-patient-32589.jpg
+    ```azurecli
+    az storage blob upload-batch \
+        --source sas \
+        --destination patient-images \
+        --account-name medicalrecords \
+        --pattern *.jpg
+    ```
 
-se=2020-01-03T15%3A21Z&sp=r&spr=https&sv=2018-11-09&sr=b&sig=P7HZYS3dJm%2BAeYM7Hg/Rva5j37sNSSA4lekrh4QkjkA%3D
-    
+### Test the patient diagnostic image system
+
+1. First you need to copy the connection string to your storage account.
+
+    ```azurecli
+    az storage account show-connection-string --name medicalrecords
+    ```
+
+    You should see results in this format:
+
+    ```json
+    {
+      "connectionString": "DefaultEndpointsProtocol=https;EndpointSuffix=core.windows.net;AccountName=medicalrecords;AccountKey=UGLNuJWUBtodz+VbhhFcMwkzDpX49Wf7FxtuQDTOHhH+LpCtSQ2LBP0Ju8TQby5CeOt7DMYBgH45SX9yFwqPvA=="
+    }
+    ```
+
+    Copy the connectionString value including the quotes.
+
+1. Edit the **appsettings.json** file to add the connection credentials.
+
+    ```bash
+    code sas/appsettings.json
+    ```
+
+1. In the code editor, replace the ConnectionString value **"[connection string]"** with the string you copied above.
+
+1. In the editor, copy the string after the **AccountKey=** parameter up to the **;** in the connection string.
+
+1. Replace the **"[account key]"** string with the account key you copied.
+
+1. The **appsettings.json** file should now look like this:
+
+    ```json
+    {
+      "Logging": {
+        "LogLevel": {
+          "Default": "Warning"
+        }
+      },
+      "AllowedHosts": "*",
+      "StorageAccount": {
+        "ConnectionString": "DefaultEndpointsProtocol=https;AccountName=medicalrecords;AccountKey=UGLNuJWUBtodz+VbhhFcMwkzDpX49Wf7FxtuQDTOHhH+LpCtSQ2LBP0Ju8TQby5CeOt7DMYBgH45SX9yFwqPvA==;EndpointSuffix=core.windows.net",
+        "Container" : "patient-images",
+        "AccountName":"medicalrecords",
+        "AccountKey":"UGLNuJWUBtodz+VbhhFcMwkzDpX49Wf7FxtuQDTOHhH+LpCtSQ2LBP0Ju8TQby5CeOt7DMYBgH45SX9yFwqPvA=="
+      }  
+    }
+    ```
+
+    Make sure you have the `==` at the end of the **AccountKey**.
+
+1. Save and close the code editor with <kbd>CTRL</kbd>+<kbd>S</kbd> and then <kbd>CTRL</kbd>+<kbd>Q</kbd>.
+
+1. You need to open a port to be able to access your web app when it is running in the cloud shell.
+
+    ```bash
+    curl -X POST http://localhost:8888/openPort/8000;
+    ```
+
+    This command will return a **url** where your app can be accessed.
+
+    ```json
+    {"message":"Port 8000 is open","url":"https://gateway11.northeurope.console.azure.com/n/cc-4016c848/cc-4016c848/proxy/8000/"}
+    ```
+
+1. Run your app.
+
+    ```bash
+    cd sas
+    dotnet run
+    ```
+
+    When the app is ready to be viewed, you'll see this in the console:
+
+    ```bash
+    Hosting environment: Development
+    Content root path: /home/yourusername/sas
+    Now listening on: https://localhost:8001
+    Now listening on: http://localhost:8000
+    Application started. Press Ctrl+C to shut down.
+    ```
+
+1. Navigate to your personal URL it should be in this format **https://gateway11.northeurope.console.azure.com/n/cc-4016c848/cc-4016c848/proxy/8000/**. Make sure you have a **/** at the end of the address.
+
+1. Select **Get all patients** to view all the images that are stored in the storage account.
+
+### Add code to create a SAS
+
+1. Stop the web app with <kbd>CTRL</kbd>+<kbd>C</kbd>.
+
+1. You'll be enhancing the **PatientRecordController** class to create on-demand SAS and return it to the front end of the web app.
+
+1. Edit the **PatientRecordController.cs** file.
+
+    ```bash
+    code Controllers/PatientRecordController.cs
+    ```
+
+1. At this code to the bottom of the class under the **GET PatientRecord/patient-nnnnnn** method:
+
+    ```C#
+    // GET PatientRecord/patient-nnnnnn/secure
+    [HttpGet("{Name}/{secure}")]
+    public PatientRecord Get(string name, string flag)
+    {
+        BlobClient blob = _container.GetBlobClient(name);
+        return new PatientRecord { name=blob.Name, imageURI=blob.Uri.AbsoluteUri, sasToken=GetBlobSas(blob) };
+    }
+    ```
+
+1. This method will return the requested patient image with a SAS that can be used to access it.
+
+1. Add a method that will create the SAS for the blob.
+
+    ```C#
+    // Build a SAS token for the given blob
+    private string GetBlobSas(BlobClient blob)
+    {
+        // Create a user SAS that only allows reading for a minute
+        BlobSasBuilder sas = new BlobSasBuilder 
+        {
+            BlobContainerName = blob.BlobContainerName,
+            BlobName = blob.Name,
+            Resource = "b",
+            ExpiresOn = DateTimeOffset.UtcNow.AddMinutes(1)
+        };
+        // Allow read access
+        sas.SetPermissions(BlobSasPermissions.Read);
+
+        // Use the shared key to access the blob
+        var storageSharedKeyCredential = new StorageSharedKeyCredential(
+            _iconfiguration.GetValue<string>("StorageAccount:AccountName"),
+            _iconfiguration.GetValue<string>("StorageAccount:AccountKey")
+        );
+
+        return '?' + sas.ToSasQueryParameters(storageSharedKeyCredential).ToString();
+    }
+    ```
+
+    The method uses the passed `BlobClient` object to create a `BlobSasBuilder`. It will generate a SAS that is readonly and expires in 1 minute.
+
+1. Save and quit the editor with <kbd>CTRL</kbd>+<kbd>S</kbd> and then <kbd>CTRL</kbd>+<kbd>Q</kbd>.
+
+### Add code to use the SAS
+
+1. You now need to add code to the web page to request the SAS for the image.
+
+1. Edit the **external.cshtml** page.
+
+    ```bash
+    code Pages/external.cshtml
+    ```
+
+1. At the bottom of the file, above the last `</script>` tag add this code:
+
+    ```javascript
+    $('#btn-getKey').click(function(){
+        $.get('api/PatientRecords/' + $('#patientID').val() + '/secure', function (data) {
+            $('#sasKey').val(data.sasToken);
+        }, 'json');
+    });
+    ```
+
+    This jQuery code adds a click listener on the `btn-getKey` button. The code executes an ajax call to the new secure url for the given image file. When it returns, it populates the key input box with the SAS.
+
+1. Save the changes and quite the editor with <kbd>CTRL</kbd>+<kbd>S</kbd> and then <kbd>CTRL</kbd>+<kbd>Q</kbd>.
+
+### Test your changes
+
+1. Run your updated app.
+
+    ```bash
+    dotnet run
+    ```
+
+1. Select **Get all patients**, then copy one of the image filenames.
+
+1. In the menu at the top of the page, select **External companies**.
+
+1. Paste the filename into the **Patient image filename** field.
+
+1. Select **View scan**. The image won't be accessible as you haven't created a SAS.
+
+    > [!NOTE]
+    > If you view the console in your browser you'll see the web server returned a 404 error code.
+
+1. Select **Get Key**, this should populate the **Key** field with a SAS.
+
+1. Select **View scan**. The patients diagnostic image should be displayed below.
+
+    ![Screenshot of the patient diagnostic image web app showing a patients image.](../media/4-viewing-image.png)
+
+1. In your browser, right-click the image and copy the image address.
+
+1. Open a new browser window.
+
+1. Navigate to the copied image address in the new window. If it has been longer than a minute since you created the SAS you'll see this error. You may need to refresh the page.
+
+    ```xml
+    <Error>
+        <Code>AuthenticationFailed</Code>
+        <Message>Server failed to authenticate the request. Make sure the value of Authorization header is formed correctly including the signature.
+        RequestId:03eda893-f01e-0028-2d73-c5c947000000
+        Time:2020-01-07T16:02:55.3752851Z</Message>
+        <AuthenticationErrorDetail>Signed expiry time [Tue, 07 Jan 2020 16:02:00 GMT] must be after signed start time [Tue, 07 Jan 2020 16:02:55 GMT]</AuthenticationErrorDetail>
+    </Error>
+    ```
+
+    > [!NOTE]
+    > You need to use a new browser window that won't have cached the image to see this error.
