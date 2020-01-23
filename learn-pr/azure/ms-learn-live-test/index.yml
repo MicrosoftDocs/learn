@@ -14,27 +14,20 @@
 uid: learn.azure.ms-learn-live
 hidden: true
 metadata:
-  # Use "Overall learning objective of the series" from your series' design document
   title: Migrate an ASP.NET Core application from an on-premises environment into Azure
   
-  # Keep this description as it is.
   description: Microsoft Learn Live is a series of guided, live courses, presented on Twitch, and designed to increase your existing knowledge of Azure technologies.
   
-  # Update this after a change to this file.
   ms.date: 1/20/2020
   
-  # Your Github alias
   author: krumelur
   
-  # Your Microsoft alias
   ms.author: renrup
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 
-# Make this the same as metadata.title
 title: Migrate an ASP.NET Core application from an on-premises environment into Azure
 
-# Describe what the series is about. A combination of the persona and the series context can be used.
 summary: | 
   You're a senior .NET developer working for a VanArsdel Ltd., a real estate business.
   VanArsdel has an experienced in-house development team and the technology stack is Microsoft's .NET.
@@ -46,7 +39,6 @@ summary: |
   The positive experience with the Microsoft stack in the past makes you feel comfortable moving to Azure as your cloud provider and you expect a smooth transition.
   Pushing the application to Azure will help mitigate both, the cost and time factor of upgrading the on-premises solution.
 
-# Abstract contains the series' objectives - copy these from your series' design documents session objectives.
 abstract: | 
   In this Learn Live series, you will:
   - Choose an appropriate hosting model and deploy the application to Azure
@@ -56,7 +48,6 @@ abstract: |
   - Create and configure a Storage Account and migrate data to a centralized storage
   - Monitor your web app against metrics and scale it to meet changes in demand
 
-# Find the prerequisites in your session design documents.
 prerequisites: |
   - Familiarity with Visual Studio, C#, and the basics of ASP.NET Core
   - Basic experience with on-premises SQL Server installations
@@ -66,16 +57,13 @@ iconUrl: /learn/achievements/generic-badge.svg
 badge:
   uid: learn.azure.ms-learn-live.badge
 
-# Use the levels identified in your design document (beginner, intermediate, advanced).
 levels: 
 - beginner
 - intermediate
 
-# Use the roles indentified in the design document.
 roles: 
 - developer
 
-# List the products the series covers.
 products:
 - azure
 - azure-portal
@@ -83,7 +71,6 @@ products:
 - azure-app-service
 - azure-sql-database
 
-# Every session preparation document represents a unit.
 units:
 - learn.azure.ms-learn-live.1-introduction
 - learn.azure.ms-learn-live.2-session-1-prep
