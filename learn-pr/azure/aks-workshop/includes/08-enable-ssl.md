@@ -1,6 +1,6 @@
-The NGINX ingress controller supports TLS termination. There are several ways to retrieve and configure certificates for HTTPS. This unit demonstrates using [cert-manager](https://github.com/jetstack/cert-manager), which provides automatic [Let's Encrypt](https://letsencrypt.org/) certificate generation and management functionality.
+The NGINX ingress controller supports TLS termination. There are several ways to retrieve and configure certificates for HTTPS. This unit demonstrates using [cert-manager](https://github.com/jetstack/cert-manager), which provides automatic [Let's Encrypt](https://letsencrypt.org/) certificate generation, and management functionality.
 
-In this exercise, you're going to deploy cert-manager, configure it to automatically issue Let's Encrypt certificates and configure the ingress created before to serve encrypted SSL/TLS traffic through the generated certificates.
+In this exercise, we're going to deploy cert-manager, configure it to automatically issue Let's Encrypt certificates and configure the ingress created before to serve encrypted SSL/TLS traffic through the generated certificates.
 
 ![Deployed resources on the Azure Kubernetes Service cluster](../media/08-arch-5.svg)
 
@@ -36,7 +36,7 @@ Install cert-manager using Helm and configure it to use Let's Encrypt as the cer
         jetstack/cert-manager
     ```
 
-1. Once released, you should get an output similar to this.
+1. Once released, we'll get an output similar to the example below.
 
     ```output
     NAME: cert-manager
@@ -55,7 +55,7 @@ Install cert-manager using Helm and configure it to use Let's Encrypt as the cer
     kubectl get pods --namespace cert-manager
     ```
 
-    You should see the `cert-manager`, `cert-manager-cainjector`, and `cert-manager-webhook` pod in a **Running** state. It may take a minute or so for the TLS assets required for the webhook to function to be provisioned.
+    We'll see that the `cert-manager`, `cert-manager-cainjector`, and `cert-manager-webhook` pod is in a **Running** state. It may take a couple of minutes to provision the webhook required for the TLS assets.
 
     ```output
     NAME                                       READY   STATUS    RESTARTS   AGE
@@ -63,10 +63,10 @@ Install cert-manager using Helm and configure it to use Let's Encrypt as the cer
     cert-manager-cainjector-577f6d9fd7-tr77l   1/1     Running   0          2m
     cert-manager-webhook-787858fcdb-nlzsq      1/1     Running   0          2m
     ```
-    
+
 ## Create a Kubernetes configuration file for ClusterIssuer with Let's Encrypt
 
-In order to begin issuing certificates, you will need to set up a ClusterIssuer. The cluster issuer acts as an interface to a certificate issuing service, for example to Let's Encrypt.
+We'll need to set up a ClusterIssuer before we can begin issuing certificates. The cluster issuer acts as an interface to a certificate issuing service such as Let's Encrypt.
 
 1. Edit the file called `cluster-issuer.yaml` using the integrated editor.
 
@@ -93,13 +93,13 @@ In order to begin issuing certificates, you will need to set up a ClusterIssuer.
               class: nginx
     ```
 
-    In the `email` key update the value replacing `<your email>` with a valid email from your organization.
+    In the `email` key, update the value replacing `<your email>` with a valid email from our organization.
 
-1. To save and close the editor, open the ``...`` action panel in the top right of the editor and select **Save**, then select **Close editor**. You an also use <kbd>Ctrl-s</kbd> to save, and <kbd>Ctrl-q</kbd> to close the editor.
+1. To save and close the editor, open the ``...`` action panel in the top right of the editor and select **Save**, then select **Close editor**. We can also use <kbd>Ctrl-s</kbd> to save, and <kbd>Ctrl-q</kbd> to close the editor.
 
 ## Apply the cluster issuer configuration to create a cluster issuer
 
-1. Apply the configuration using the `kubectl apply` command. You'll be deploying this in the **ratingsapp** namespace.
+1. Apply the configuration using the `kubectl apply` command. We'll deploy the cluster issuer configuration in the **ratingsapp** namespace.
 
     ```bash
     kubectl apply \
@@ -107,7 +107,7 @@ In order to begin issuing certificates, you will need to set up a ClusterIssuer.
         -f cluster-issuer.yaml
     ```
 
-    You'll output similar to the following:
+    We'll get an output similar to the example below.
 
     ```output
     clusterissuer.cert-manager.io/letsencrypt created
@@ -146,13 +146,13 @@ In order to begin issuing certificates, you will need to set up a ClusterIssuer.
             path: /
     ```
 
-    In this file, update the `<ingress ip>` value in the `host` key with the *dashed* public IP of your ingress that you retrieved earlier. For example, **frontend.13-68-177-68.nip.io**. This will allow you to access the ingress via a hostname instead of an IP address.
+    In this file, update the `<ingress ip>` value in the `host` key with the *dashed* public IP of our ingress we retrieved earlier, for example, **frontend.13-68-177-68.nip.io**. This value allows us to access the ingress via a hostname instead of an IP address.
 
-1. To save and close the editor, open the ``...`` action panel in the top right of the editor and select **Save**, then select **Close editor**. You an also use <kbd>Ctrl-s</kbd> to save, and <kbd>Ctrl-q</kbd> to close the editor.
+1. To save and close the editor, open the ``...`` action panel in the top right of the editor and select **Save**, then select **Close editor**. We can also use <kbd>Ctrl-s</kbd> to save, and <kbd>Ctrl-q</kbd> to close the editor.
 
 ## Apply the updated Kubernetes ingress file
 
-1. Apply the configuration using the `kubectl apply` command. You'll be deploying this in the **ratingsapp** namespace.
+1. Apply the configuration using the `kubectl apply` command. We'll deploy the updated Kubernetes ingress file in the **ratingsapp** namespace.
 
     ```bash
     kubectl apply \
@@ -160,7 +160,7 @@ In order to begin issuing certificates, you will need to set up a ClusterIssuer.
         -f ratings-web-ingress.yaml
     ```
 
-    You'll see an output like the below.
+    We'll get an output similar to the example below.
 
     ```output
     ingress.networking.k8s.io/ratings-web-ingress configured
@@ -172,7 +172,7 @@ In order to begin issuing certificates, you will need to set up a ClusterIssuer.
     kubectl describe cert ratings-web-cert --namespace ratingsapp
     ```
 
-    You should get an output similar to the this.
+    We'll get an output similar to the example below.
 
     ```output
     Name:         ratings-web-cert
@@ -208,7 +208,7 @@ In order to begin issuing certificates, you will need to set up a ClusterIssuer.
 
 ## Test the application
 
-You should be able to open the hostname you configured on the ingress in your web browser over SSL/TLS, for example at **<https://frontend.13-68-177-68.nip.io>** to view and interact with the application.
+Open the hostname we configured on the ingress in a web browser over SSL/TLS, for example, at **<https://frontend.13-68-177-68.nip.io>** to view and interact with the application.
 
 ![Screenshot of the ratings-web application](../media/08-ratings-web-ingress-tls.png)
 
@@ -218,4 +218,4 @@ Verify that the frontend is accessible over HTTPS and that the certificate is va
 
 ![Screenshot of the valid SSL/TLS certificate](../media/08-ratings-web-cert.png)
 
-In this exercise, you deployed cert-manager, configured it to automatically issue Let's Encrypt certificates and configured the ingress created before to serve encrypted SSL/TLS traffic through the generated certificates.
+In this exercise, we deployed cert-manager, configured it to issue Let's Encrypt certificates automatically. We then configured the ingress we created earlier to serve encrypted SSL/TLS traffic through the generated certificates.
