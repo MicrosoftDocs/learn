@@ -709,6 +709,36 @@
       "source_path": "learn-pr/data-ai-cert/train-local-model-with-azure-mls/7-summary.yml",
       "redirect_url": "https://docs.microsoft.com/learn/modules/train-local-model-with-azure-mls",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/secure-azure-resources-with-conditional-access/1-introduction.yml",
+      "redirect_url": "https://docs.microsoft.com/azure/active-directory/conditional-access/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/secure-azure-resources-with-conditional-access/2-azure-ad-overview.yml",
+      "redirect_url": "https://docs.microsoft.com/azure/active-directory/conditional-access/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/secure-azure-resources-with-conditional-access/3-build-azure-ad.yml",
+      "redirect_url": "https://docs.microsoft.com/azure/active-directory/conditional-access/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/secure-azure-resources-with-conditional-access/4-secure-access.yml",
+      "redirect_url": "https://docs.microsoft.com/azure/active-directory/conditional-access/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/secure-azure-resources-with-conditional-access/5-test-access.yml",
+      "redirect_url": "https://docs.microsoft.com/azure/active-directory/conditional-access/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/secure-azure-resources-with-conditional-access/6-summary.yml",
+      "redirect_url": "https://docs.microsoft.com/azure/active-directory/conditional-access/",
+      "redirect_document_id": false
     }
   ]
 }

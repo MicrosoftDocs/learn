@@ -4,9 +4,9 @@ metadata:
   #TODO: Update this title to be more consistent with other titles?
   title: Top 5 security items to consider before pushing to production
   description: Learn about the Site Reliability Engineering approach to the challenge of assuring reliability and gain a better understanding of why it matters.
-  author: SheHacksPurple
+  author: patridge
+  ms.author: adpatrid
   ms.date: 09/24/2018
-  ms.author: tajanca
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Top 5 security items to consider before pushing to production
