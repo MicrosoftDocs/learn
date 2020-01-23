@@ -5,11 +5,11 @@ To meet the client's requests, the website must support the following features:
 - Extracting text from uploaded photos
 - Translating extracted text into the user's language
 
-Just a few years ago, such a feature list would have been unthinkable for most small businesses. Extracting text from photos and translating text into other languages is typically performed using machine learning and artificial intelligence (AI). Where would these capabilities come from? Today, these features and more are readily available in [Azure Cognitive Services](https://azure.microsoft.com/services/cognitive-services/). It's Microsoft's portfolio of more than 20 services and APIs designed to make AI and machine learning available to anyone who can lay down a few lines of code.
+Just a few years ago, such a feature list would have been unthinkable for most small businesses. Extracting text from photos and translating text into other languages is typically performed using machine learning and artificial intelligence (AI). Where would these capabilities come from? Today, these features and more are readily available in Azure Cognitive Services. It's Microsoft's portfolio of more than 20 services and APIs designed to make AI and machine learning available to anyone who can lay down a few lines of code.
 
-One of these services is the [Computer Vision API](https://azure.microsoft.com/services/cognitive-services/computer-vision/), which not only can extract text from photos, but also identify objects in photos, find faces in photos and predict their age and gender, and more. Another is the [Translator Text API](https://azure.microsoft.com/services/cognitive-services/translator-text-api/), which can translate text between dozens of the world's written languages.
+One of these services is the Computer Vision API, which not only can extract text from photos, but also identify objects in photos, find faces in photos and predict their age and gender, and more. Another is the Translator Text API, which can translate text between dozens of the world's written languages.
 
-Using these services, you will produce a website written in [Python](https://devblogs.microsoft.com/python/)—already among the world's most popular languages—and the [Flask](http://flask.pocoo.org/) framework for Python web applications. This site will translate signage in photos, which is a feature your client can build on to attract new customers and retain existing ones.
+Using these services, you will produce a website written in Python — already among the world's most popular languages — and the Flask framework for Python web applications. This site will translate signage in photos, which is a feature your client can build on to attract new customers and retain existing ones.
 
 ## Learning objectives
 
