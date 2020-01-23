@@ -55,3 +55,8 @@ achievements:
   title: Xamarin University Veteran
   summary: Prior student of Xamarin University
   iconUrl: /learn/achievements/xamarin/xamarin-university-veteran-badge.svg
+- uid: learn.secure-access-azure-ad-multi-factor-authentication.badge
+  type: badge
+  title: Secure your Azure resources with Conditional Access
+  summary: Secure your Azure resources with Conditional Access
+  iconUrl: /learn/achievements/secure-azure-resources-with-conditional-access.svg

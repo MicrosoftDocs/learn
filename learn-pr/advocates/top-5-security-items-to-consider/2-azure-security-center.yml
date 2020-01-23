@@ -4,14 +4,11 @@ title: Azure Security Center
 metadata:
   title: Azure Security Center
   description: Azure Security Center
-  author: lnyswonger
+  author: patridge
+  ms.author: adpatrid
   ms.date: 09/24/2018
-  ms.author: luken
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
-# TODO: Portal interactive
-# interactive: azure-portal
 durationInMinutes: 15
 content: |
   [!include[](includes/2-azure-security-center.md)]
