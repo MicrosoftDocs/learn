@@ -20,10 +20,10 @@ quiz:
     choices:  
     - content: 'bushels'
       isCorrect: false
-      explanation: Bushels are a unit of volume.
+      explanation: Bushels are an obsolete unit of volume.
     - content: 'decibels'
       isCorrect: false
-      explanation: Noise is measured in decibels. Noise can cause vibration, but decibels are not used to measure the vibration.
+      explanation: Noise is measured in decibels. Noise can cause vibration, but decibels are not used to measure that vibration.
     - content: 'Newtons'
       isCorrect: false
       explanation: Newtons are a unit of force.
@@ -31,7 +31,7 @@ quiz:
       isCorrect: true
       explanation: The use of g-forces to measure vibration is common, though is not to ISO standards.      
 
-  - content: 'In the context of IoT Hub metrics, what is an Action Group?'
+  - content: 'In the context of IoT Hub metrics, what is an <b>action group</b>?'
     choices:  
     - content: 'A collection of A-type individuals'
       isCorrect: false
@@ -39,69 +39,69 @@ quiz:
     - content: 'A collection of actions of the same type, such as one of Webhooks, Azure Functions, or Automation Runbooks?'
       isCorrect: false
       explanation: Action groups are not limited to actions of the same type.
-    - content: 'A collection of metrics, alerts, diagnostics, and logs'
-      isCorrect: false
-      explanation: There is no formal collection of these features.
     - content: 'A collection of actions, not necessarily of the same type, such as a mix of Webhooks, Azure Functions, or Automation Runbooks'
       isCorrect: true
       explanation: There are limits to the number of each type of action in any one action group, but all available actions can form part of that group.
+    - content: 'A collection of metrics, alerts, diagnostics, and logs'
+      isCorrect: false
+      explanation: There is no formal collection of these features.
 
-  - content: 'What are the four features of Monitoring?'
+  - content: 'What are the four features of the IoT Hub <b>Monitoring</b> menu?'
     choices:  
     - content: 'Alerts, Metrics, Security Alerts, Custom Alerts'
       isCorrect: false
       explanation: Security Alerts and Custom Alerts fall under the <b>Security</b> heading.
+    - content: 'Alerts, Metrics, Diagnostic settings, Logs'
+      isCorrect: true
+      explanation: These are indeed the four features of IoT Hub monitoring.
     - content: 'Overview, Alerts, Metrics, Logs'
       isCorrect: false
       explanation: An Overview feature is not available for Monitoring.
     - content: 'Alerts, Metrics, Diagnostic settings, Resource Health'
       isCorrect: false
-      explanation: Resource Health is a feature of Support + Troubleshooting
-    - content: 'Alerts, Metrics, Diagnostic settings, Logs'
-      isCorrect: true
-      explanation: The use of g-forces to measure vibration is common, though is not to ISO standards.
-
-  - content: 'When configuring an action, a developer has set the metric to <b>Total device data usage</b>, the <b>Operator</b> to <b>Greater than</b>, the <b>Aggregation type</b> to <b>Total</b>, and the <b>Threshold value</b> to 2000. The <b>Aggregation granularity period</b> is 5 minutes, and the <b>Frequency of evaluation</b> is <b>Every 1 Minute</b>. When will this action trigger?'
-    choices:  
-    - content: 'Every one minute the action will test to see if the total data usage for the past 5 minutes meets or exceeds 2000 bytes, and if so, triggers the action'
-      isCorrect: false
-      explanation: The Operator used is Greater than, not Greater than or equal to.
-    - content: 'Every fives minutes the action will test to see if the total data usage for the past one minute exceeds 2000 bytes, and if so, triggers the action'
-      isCorrect: false
-      explanation: Time periods are confused here.
-    - content: 'Every fives minutes the action will test to see if the total data usage for the past 5 minutes exceeds 2000 bytes, and if so, triggers the action.'
-      isCorrect: false
-      explanation: This does not take into account the Frequency of evaluation setting.
-    - content: 'Every one minute the action will test to see if the total data usage for the past 5 minutes exceeds 2000 bytes, and if so, triggers the action.'
-      isCorrect: true
-      explanation: Metrics requires some math ability!
-      
-  - content: 'Over a period of time, a metric has the following ten values: <b>6 4 5 0 12 -1 -2 0 4 2</b>. What are the Avg, Min, Max, Sum of these metrics?'
-    choices:  
-    - content: 'Avg = 3.3, Min = -2, Max = 12, Sum = 33'
-      isCorrect: false
-      explanation: If Sum is calculated incorrectly, then so will the average.
-    - content: 'Avg = 3, Min = 0, Max = 12, Sum = 30'
-      isCorrect: false
-      explanation: There are lower values than zero.
-    - content: 'Avg = 2.5, Min = -1, Max = 6, Sum = 25'
-      isCorrect: false
-      explanation: All these values are wrong.
-    - content: 'Avg = 3, Min = -2, Max = 12, Sum = 30'
-      isCorrect: true
-      explanation: Metrics requires some math ability!
+      explanation: Resource Health is a feature of <b>Support + Troubleshooting</b>
 
   - content: 'In the lists of metrics, what does the acronym C2D stand for?'
     choices:  
     - content: 'Cloud to Data'
       isCorrect: false
       explanation: There is no such metric acronym.
+    - content: 'Cloud to Device'
+      isCorrect: true
+      explanation: C2D messages are cloud-to-device messages.  
     - content: 'Cost to Device'
       isCorrect: false
       explanation: There is no such metric acronym.
     - content: 'Cost to Data'
       isCorrect: false
       explanation: There is no such metric acronym.
-    - content: 'Cloud to Device'
+
+  - content: 'When configuring an action, a developer has set the metric to <b>Total device data usage</b>, the <b>Operator</b> to <b>Greater than</b>, the <b>Aggregation type</b> to <b>Total</b>, and the <b>Threshold value</b> to 2000. The <b>Aggregation granularity period</b> is 5 minutes, and the <b>Frequency of evaluation</b> is <b>Every 1 Minute</b>. When will this action trigger?'
+    choices:  
+    - content: 'Every one minute the action will test to see if the total data usage for the past 5 minutes exceeds 2000 bytes, and if so, triggers the action.'
       isCorrect: true
-      explanation: C2D messages are cloud-to-device messages.  
+      explanation: This answer correctly identifies the purpose of all the action settings.
+    - content: 'Every one minute the action will test to see if the total data usage for the past 5 minutes meets or exceeds 2000 bytes, and if so, triggers the action'
+      isCorrect: false
+      explanation: The Operator used is "Greater than", not "Greater than or equal to".
+    - content: 'Every fives minutes the action will test to see if the total data usage for the past one minute exceeds 2000 bytes, and if so, triggers the action'
+      isCorrect: false
+      explanation: Time periods are confused here.
+    - content: 'Every fives minutes the action will test to see if the total data usage for the past 5 minutes exceeds 2000 bytes, and if so, triggers the action.'
+      isCorrect: false
+      explanation: This does not take into account the Frequency of evaluation setting.
+      
+  - content: 'Over a period of time, a metric has the following ten values: <b>6, 4, 5, 0, 12, -1, -2, 0, 4, 2</b>. What are the Avg, Min, Max, Sum of these metrics?'
+    choices:  
+    - content: 'Avg = 3.3, Min = -2, Max = 12, Sum = 33'
+      isCorrect: false
+      explanation: If Sum is calculated incorrectly, then so will the average.
+    - content: 'Avg = 3, Min = -2, Max = 12, Sum = 30'
+      isCorrect: true
+      explanation: Metrics requires some math ability!
+    - content: 'Avg = 3, Min = 0, Max = 12, Sum = 30'
+      isCorrect: false
+      explanation: There are values lower than zero.
+    - content: 'Avg = 2.5, Min = -1, Max = 6, Sum = 25'
+      isCorrect: false
+      explanation: All these values are wrong.

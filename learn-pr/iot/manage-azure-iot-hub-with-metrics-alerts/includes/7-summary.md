@@ -25,6 +25,11 @@ Take your interest further with:
 - [Create and manage action groups in the Azure portal](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/action-groups)
 - [Azure Monitor documentation](https://docs.microsoft.com/en-us/azure/azure-monitor)
 - [Azure Certified for IoT device catalog](https://catalog.azureiotsolutions.com/)
+- [Create diagnostic setting to collect platform logs and metrics in Azure](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/diagnostic-settings)
+- [Azure Monitor log queries](https://docs.microsoft.com/en-us/azure/azure-monitor/log-query/query-language)
+- [An introduction to Azure Functions](https://docs.microsoft.com/en-us/azure/azure-functions/functions-overview)
+
+
 
 And look out for additional Learn modules on IoT Hub.
 

@@ -1,8 +1,16 @@
+The focus of this module is on the **Monitoring** features of IoT Hub. This unit provides a quick theoretical overview of the four features: Alerts, Metrics, Diagnostic settings, and Logs. The following units will have you create some working alerts and metrics.
 
-    
-    
-    
-## Define an action group
+Locate the Monitoring section in the left-hand menu.
+
+  ![Screenshot showing how to name, and then create, a new device template](../media/metrics-alerts-monitoring.png)
+
+## Alerts
+
+_Alerts_ are one of the more dynamic, and fun, features of an IoT Hub. An alert is triggered when certain conditions are met. The result is one or more actions. You can imagine many types of alerts. For example, the temperature of a device reaches a concerning level, so a warning alert is triggered, and sent to the device operators. Alerts can be sent because an IoT device is overworking in some way, or because too little, or no, telemetry is being received at all. Whereas the most common use of alerts is when a value is outside a range, greater than a maximum, less than a minimum, you might also send a form of alert that everything is in range and working just fine. The advantage of the latter approach, sending a message repeatedly when everything is OK, is that it covers the scenario when the alert system itself fails. If the operator does not receive a message, then investigate.
+
+
+
+### Define an action group
 
   ![Screenshot showing how to name, and then create, a new device template](../media/metrics-alerts-action-type.png)
 
@@ -20,13 +28,42 @@
   | Secure Webhook | A secure webhook app will, for example, validate ownership of the webhook endpoint before allowing events to be delivered. | [Publish events to Azure Active Directory protected endpoints](https://docs.microsoft.com/en-us/azure/event-grid/secure-webhook-delivery) |
   | Webhook | With webhook actions, an external process is invoked through a single HTTP POST request. The service that's called must support webhooks, and also determine how to use any payload in the message. | [Webhook actions for log alert rules](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/alerts-log-webhook) |
 
-
-
-
-  ![Screenshot showing how to name, and then create, a new device template](../media/metrics-alerts-activity-samples.png)
-
-   ![Screenshot showing how to name, and then create, a new device template](../media/metrics-alerts-latest-metrics-sample.png)
+## Metrics
 
    ![Screenshot showing how to name, and then create, a new device template](../media/metrics-alerts-telemetry-messages-sent.png)
 
-   ![Screenshot showing how to name, and then create, a new device template](../media/metrics-alerts-monitoring.png)
+   ![Screenshot showing how to name, and then create, a new device template](../media/metrics-alerts-sum-data.png)
+
+## Diagnostic settings
+
+_Diagnostic settings_ are used to send auditing, and diagnostic, information to one of three destinations: a Log Analytics workspace, an Event Hub, or an Azure storage account.
+
+For example, to archive the data telemetry for a period of 50 days into a storage account, you might set up a Diagnostic setting as follows.
+
+  ![Screenshot showing how to name, and then create, a new device template](../media/metrics-alerts-diagnostic-settings.png)
+
+We will not be taking this feature any further in this module. However, follow the link in the **Summary** page for more details, if interested.
+
+## Logs
+
+_Logs_ in Azure IoT Hub are formed from SQL queries that are run on the incoming messages. There are a number of sample queries that are available for immediate use.
+
+  ![Screenshot showing how to name, and then create, a new device template](../media/metrics-alerts-activity-samples.png)
+
+For example, the following sample is named **Latest 50 logs**:
+
+```sql
+// Latest 50 logs
+// Show the latest Azure Activity logs for this resource
+AzureActivity
+| top 50 by TimeGenerated desc
+```
+
+When the query is run, the output is presented in table or chart form, in the portal. Rendering a chart as output is only possible with certain types of input data. 
+
+A user must select **Pin to dashboard** for the query to be persisted. Columns of a table can be selected or removed, and the resulting output exported if needed.
+
+   ![Screenshot showing how to name, and then create, a new device template](../media/metrics-alerts-log-export.png)
+
+We will not be taking the logs feature any further in this module. Follow the link on the **Summary** page, for more details.
+
