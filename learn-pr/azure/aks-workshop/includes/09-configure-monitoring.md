@@ -1,4 +1,4 @@
-The ongoing performance of our cluster relies on the fact that we can monitor the different components in your application, view logs, and get alerts whenever your application goes down or some parts of it fail. We can use a combination of available tools to set up alerting capabilities for our application.  
+The ongoing performance of our cluster relies on the fact that we can monitor the different components in our application, view logs, and get alerts whenever our application goes down or some parts of it fail. We can use a combination of available tools to set up alerting capabilities for our application.  
 
 In this exercise, we'll explore some of these tools. First, we'll create a Log Analytics workspace and enable Azure Monitor for containers. We'll then inspect the Kubernetes event logs and monitor our cluster's health.
 
@@ -6,7 +6,7 @@ Before we start with the exercise steps, let's define some of the items we've me
 
 ### What is Azure Monitor for containers?
 
-[Azure Monitor for containers](https://docs.microsoft.com/azure/azure-monitor/insights/container-insights-overview?azure-portal=true) is a comprehensive monitoring solution for Kubernetes. This solution gives you insight into the performance of your cluster by collecting memory and processor metrics from controllers, nodes, and containers.
+[Azure Monitor for containers](https://docs.microsoft.com/azure/azure-monitor/insights/container-insights-overview?azure-portal=true) is a comprehensive monitoring solution for Kubernetes. This solution gives us insight into the performance of our cluster by collecting memory and processor metrics from controllers, nodes, and containers.
 
 ### What is a Log Analytics workspace?
 
@@ -52,7 +52,7 @@ Once our workspace is ready, we can integrate the Azure Monitor for containers m
     ```
 
     > [!NOTE]
-    > It may take some time to establish monitoring data flow for newly created clusters. Please allow at least 5-10 minutes for data to appear for your cluster.
+    > It may take some time to establish monitoring data flow for newly created clusters. Please allow at least 5-10 minutes for data to appear for our cluster.
 
 ## Inspect the Kubernetes event or logs and monitor cluster health
 
@@ -122,7 +122,7 @@ In our exercise, we want to set up *Roles* and *RoleBindings that aren't limited
       apiGroup: rbac.authorization.k8s.io
     ```
 
-1. To save and close the editor, open the ``...`` action panel in the top right of the editor and select **Save**, then select **Close editor**. You an also use <kbd>Ctrl-s</kbd> to save, and <kbd>Ctrl-q</kbd> to close the editor.
+1. To save and close the editor, open the ``...`` action panel in the top right of the editor and select **Save**, then select **Close editor**. We can also use <kbd>Ctrl-s</kbd> to save, and <kbd>Ctrl-q</kbd> to close the editor.
 
 1. Apply the configuration using the `kubectl apply` command.
 
@@ -135,6 +135,6 @@ In our exercise, we want to set up *Roles* and *RoleBindings that aren't limited
 
 1. Select **Insights** under **Monitoring**
 
-1. Select the **Controllers** tab and pick a container to view its live logs or event logs .For example, pick the **ratings-api** container. The new view will allow us to debug the status of the container.
+1. Select the **Controllers** tab and pick a container to view its live logs or event logs.For example, pick the **ratings-api** container. The new view will allow us to debug the status of the container.
 
     [![](../media/09-livelogs.png "Screenshot showing an example of the event logs for an Azure Kubernetes cluster")](../media/09-livelogs.png#lightbox)

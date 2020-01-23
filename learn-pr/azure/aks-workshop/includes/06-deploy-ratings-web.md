@@ -1,8 +1,8 @@
-The ratings web frontend is a Node.js application. Recall that you've already created an Azure Container Registry and used it to build a Docker image of the frontend and store it in a repository.
+The ratings web frontend is a Node.js application. Recall that we've already created an Azure Container Registry and used it to build a Docker image of the frontend and store it in a repository.
 
-In this exercise, you're going to deploy that Docker image of the frontend to the Azure Kubernetes Service (AKS) by creating a Kubernetes [deployment](https://docs.microsoft.com/azure/aks/concepts-clusters-workloads#deployments-and-yaml-manifests?azure-portal=true), and exposing it through a load balancer by creating a Kubernetes [service](https://docs.microsoft.com/azure/aks/concepts-network#services?azure-portal=true). Additionally, you're going to configure the frontend to connect to the ratings API you've already deployed.
+In this exercise, we're going to deploy that Docker image of the frontend to the Azure Kubernetes Service (AKS) by creating a Kubernetes [deployment](https://docs.microsoft.com/azure/aks/concepts-clusters-workloads#deployments-and-yaml-manifests?azure-portal=true), and exposing it through a load balancer by creating a Kubernetes [service](https://docs.microsoft.com/azure/aks/concepts-network#services?azure-portal=true). Additionally, we're going to configure the frontend to connect to the ratings API we've already deployed.
 
-By the end of this unit, you should have deployed the ratings web frontend and configured it to communicate with ratings API. The frontend will be exposed through a public IP.
+By the end of this unit, we should have deployed the ratings web frontend and configured it to communicate with ratings API. The frontend will be exposed through a public IP.
 
 ![Deployed resources on the Azure Kubernetes Service cluster](../media/06-arch-3.svg)
 
@@ -48,27 +48,27 @@ By the end of this unit, you should have deployed the ratings web frontend and c
                 memory: 512Mi
     ```
 
-    In the `image` key update the value replacing `<acrname>` with the name of your Container Registry.
+    In the `image` key update, the value replacing `<acrname>` with the name of our Container Registry.
 
 1. Review the file, and note the following points:
 
     - **Image**
 
-    You will create a deployment running the image you pushed in Azure Container Registry you created earlier, for example `acr4229.azurecr.io/ratings-web:v1`. The container listens to port **8080**. The deployment and the pods are going to be labeled with **app=ratings-web**.
+    We'll create a deployment running the image we pushed in Azure Container Registry we created earlier, for example, `acr4229.azurecr.io/ratings-web:v1`. The container listens to port **8080**. The deployment and the pods are going to be labeled with **app=ratings-web**.
 
     - **Environment variables**
 
-    The ratings frontend expects to connect to the API endpoint by configured in an `API` environment variable. If you used the defaults and deployed the ratings API service in the **ratingsapp** namespace, the value of that should be `http://ratings-api.ratingsapp.svc.cluster.local`.
+    The ratings frontend expects to connect to the API endpoint by configured in an `API` environment variable. If we used the defaults and deployed the ratings API service in the **ratingsapp** namespace, the value of that should be `http://ratings-api.ratingsapp.svc.cluster.local`.
 
     - **Resource requests and limits**
 
-    Each container instance will be allocated a minimum **0.25 cores** and **64 Mb of memory**. The Kubernetes scheduler will look for a node with available capacity to schedule such pod. A Container may or may not be allowed to exceed its CPU limit for extended periods of time. However, it will not be killed for excessive CPU usage. If a container exceeds its memory limit, it could be terminated.
+    Each container instance will be allocated a minimum of **0.25 cores** and **64 Mb of memory**. The Kubernetes scheduler will look for a node with available capacity to schedule such pod. A Container may or may not be allowed to exceed its CPU limit for extended periods. However, it won't be killed for excessive CPU usage. If a container exceeds its memory limit, it could be terminated.
 
-1. To save and close the editor, open the ``...`` action panel in the top right of the editor and select **Save**, then select **Close editor**. You an also use <kbd>Ctrl-s</kbd> to save, and <kbd>Ctrl-q</kbd> to close the editor.
+1. To save and close the editor, open the ``...`` action panel in the top right of the editor and select **Save**, then select **Close editor**. We can also use <kbd>Ctrl-s</kbd> to save, and <kbd>Ctrl-q</kbd> to close the editor.
 
 ## Apply the Kubernetes deployment file
 
-1. Apply the configuration using the `kubectl apply` command. You'll be deploying this in the **ratingsapp** namespace.
+1. Apply the configuration using the `kubectl apply` command. We'll deploy the application in the **ratingsapp** namespace.
 
     ```bash
     kubectl apply \
@@ -76,26 +76,26 @@ By the end of this unit, you should have deployed the ratings web frontend and c
     -f ratings-web-deployment.yaml
     ```
 
-    You'll see an output like the below.
+    We'll see an output like the example below.
 
     ```output
     deployment.apps/ratings-web created
     ```
 
-1. Watch the pods rolling out. You're querying for pods in the **ratingsapp** namespace which are labeled with **app=ratings-web**.
+1. Watch the pods rolling out. We'll query for pods in the **ratingsapp** namespace that are labeled with **app=ratings-web**.
 
     ```bash
     kubectl get pods --namespace ratingsapp -l app=ratings-web -w
     ```
 
-    In a few seconds, you should see the pods transition to the `Running` state. You can use `CTRL+C` to stop watching.
+    In a few seconds, we'll see the pods transition to the `Running` state. Use `CTRL+C` to stop watching.
 
     ```output
     NAME                          READY   STATUS    RESTARTS   AGE
     ratings-web-fcc464b8d-vck96   1/1     Running   0          37s
     ```
 
-    If the pods are not starting, not ready or are crashing, you can view their logs using `kubectl logs <pod name> --namespace ratingsapp` and `kubectl describe pod <pod name> --namespace ratingsapp`.
+    If the pods aren't starting, not ready or are crashing, we can view their logs using `kubectl logs <pod name> --namespace ratingsapp` and `kubectl describe pod <pod name> --namespace ratingsapp`.
 
 1. Check the status of the deployment
 
@@ -103,7 +103,7 @@ By the end of this unit, you should have deployed the ratings web frontend and c
     kubectl get deployment ratings-web --namespace ratingsapp
     ```
 
-    The deployment should show 1 replica is ready.
+    The deployment should show one replica is ready.
 
     ```output
     NAME          READY   UP-TO-DATE   AVAILABLE   AGE
@@ -149,13 +149,13 @@ To simplify the network configuration for application workloads, Kubernetes uses
 
     - **Type**
 
-    A service of type **LoadBalancer** creates an public IP address in Azure and assigns it to the Azure Load Balancer. Choosing this value makes the Service  reachable from outside the cluster.
+    A service of type **LoadBalancer** creates a public IP address in Azure and assigns it to the Azure Load Balancer. Choosing this value makes the Service  reachable from outside the cluster.
 
-1. To save and close the editor, open the ``...`` action panel in the top right of the editor and select **Save**, then select **Close editor**. You an also use <kbd>Ctrl-s</kbd> to save, and <kbd>Ctrl-q</kbd> to close the editor.
+1. To save and close the editor, open the ``...`` action panel in the top right of the editor and select **Save**, then select **Close editor**. We can also use <kbd>Ctrl-s</kbd> to save, and <kbd>Ctrl-q</kbd> to close the editor.
 
 ## Apply the Kubernetes service file to create a load balanced service
 
-1. Apply the configuration using the `kubectl apply` command. You'll be deploying this in the **ratingsapp** namespace.
+1. Apply the configuration using the `kubectl apply` command. We'll deploy the service in the **ratingsapp** namespace.
 
     ```bash
     kubectl apply \
@@ -163,13 +163,13 @@ To simplify the network configuration for application workloads, Kubernetes uses
         -f ratings-web-service.yaml
     ```
 
-    You'll output similar to the following:
+    We'll see an output like the example below.
 
     ```output
     service/ratings-web created
     ```
 
-1. Next, let's check the status of the service. It takes a few minutes for the service to acquire the public IP. Run the following command with a *watch* by adding the `-w` flag to see it updating in real time. You can use <kbd>Ctrl-c</kbd> to stop watching.
+1. Next, let's check the status of the service. It takes a few minutes for the service to acquire the public IP. Run the following command with a *watch* by adding the `-w` flag to see it updating in real time. We can use <kbd>Ctrl-c</kbd> to stop watching.
 
     ```bash
     kubectl get service ratings-web --namespace ratingsapp -w
@@ -183,16 +183,15 @@ To simplify the network configuration for application workloads, Kubernetes uses
     ratings-web   LoadBalancer   10.2.0.112   13.90.152.99   80:32747/TCP    5m
     ```
 
-    Make note of that EXTERNAL-IP, for example 13.90.152.99, as you'll use it to access the application.
+    Make note of that EXTERNAL-IP, for example, 13.90.152.99. We'll use the address to access the application.
 
 ## Test the application
 
-Now that the ratings-web service has a public IP, open that IP in your web browser, for example at **<http://13.90.152.99>** and you should be able to view and interact with the application.
+Now that the ratings-web service has a public IP, open that IP in a web browser, for example at **<http://13.90.152.99>** to view and interact with the application.
 
 ![Screenshot of the ratings-web application](../media/ratings-web.png)
 
-In this exercise, you created a deployment of the **ratings-web** and exposed it to the internet through a LoadBalancer type service.
+In this exercise, we created a deployment of the **ratings-web** and exposed it to the internet through a LoadBalancer type service.
 
 - **Deployment/ratings-web**. The web frontend.
 - **Service/ratings-web**. The load balanced service, which is exposed on the Azure Load Balancer through a public IP.
-
