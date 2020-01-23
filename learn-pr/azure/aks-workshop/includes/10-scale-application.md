@@ -70,7 +70,7 @@ HPA allows Kubernetes to detect when our deployed pods need more resources based
     ```
 
     > [!IMPORTANT]
-    > For the Horizontal Pod Autoscaler to work, we __must__ remove any explicit replica count from our `ratings-web` deployment. Keep in mind that we need to redeploy our deployment when we make any changes.
+    > For the Horizontal Pod Autoscaler to work, we __must__ remove any explicit replica count from our `ratings-api` deployment. Keep in mind that we need to redeploy our deployment when we make any changes.
 
 ## Run a load test with Horizontal Pod Autoscaler enabled
 
@@ -107,7 +107,7 @@ Let's run a load test to see how the HPA will scale our deployment.
       --namespace ratingsapp -w
     ```
 
-    In a few seconds, you should see the HPA transition to deploy more replicas, scaling up from 1 to 8, in order to accommodate the load. You can use `CTRL+C` to stop watching.
+    In a few seconds, you should see the HPA transition to deploy more replicas, scaling up from 1 to 10, in order to accommodate the load. You can use `CTRL+C` to stop watching.
 
     ```output
     NAME          REFERENCE                TARGETS    MINPODS   MAXPODS   REPLICAS   AGE
@@ -134,7 +134,7 @@ You may have to force this situation by artificially increasing the resource `re
     code ratings-api-deployment.yaml
     ```
 
-1. Change the `resources.requests` and `resources.limits` for the container to be 2000m, meaning 1 core. The section should now look like this.
+1. Change the `resources.requests` and `resources.limits` for the container to be 1000m, meaning 1 core. The section should now look like this.
 
     ```yaml
     resources:
@@ -192,7 +192,7 @@ You may have to force this situation by artificially increasing the resource `re
 
 To solve the pending pod problem, we can enable the cluster autoscaler to scale the cluster automatically.
 
-1. Configure the cluster autoscaler, we should see it dynamically adding and removing nodes based on the cluster utilization. To change the node count, use the `az aks update` command and specify a minimum and maximum value. Make sure to use the same resource group from earlier, for example, **aksworkshop**.
+1. Configure the cluster autoscaler, we should see it dynamically adding and removing nodes based on the cluster utilization. Use the `az aks update` command to enable the cluster autoscaler and specify a minimum and maximum value for the number of nodes. Make sure to use the same resource group from earlier, for example, **aksworkshop**.
 
     The following example sets the `--min-count` to _3_ and the `--max-count` to _5_:
 
