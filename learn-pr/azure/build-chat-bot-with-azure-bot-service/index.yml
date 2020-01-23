@@ -1,5 +1,6 @@
 ### YamlMime:Module
 uid: learn.build-azure-bot-services-bot
+hidden: true
 metadata:
   title: Build a chat bot with the Azure Bot Service
   description: Explore the Azure Bot Service and learn to use tools developers need to build and publish intelligent bots that interact with users using a range of services.
