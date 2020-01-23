@@ -4,13 +4,13 @@ Mara has created a whiteboard drawing of the database tables and the relationshi
 
 ![Whiteboard drawing of the database tables and the relationships between them.](../media/3-database-diagram.png)
 
-The Profiles table ![Callout 1](../../shared/media/callout-01.png) contains information about the player. Notice the *id* column. This field identifies the players and finds their related data. The Achievements table ![Callout 2](../../shared/media/callout-02.png) holds all of the possible achievements for this game. 
+The **Profiles** table ![Callout 1](../../shared/media/callout-01.png) contains information about the player. Notice the *id* column. This field identifies the players and finds their related data. The **Achievements** table ![Callout 2](../../shared/media/callout-02.png) holds all of the possible achievements for this game.
 
-Profiles have a many-to-many relationship with achievements. That is, many profiles can have many achievements, and many achievements can be in many profiles. 
+**Profiles** have a many-to-many relationship with achievements. That is, many profiles can have many achievements, and many achievements can be in many profiles.
 
-We need a table to define the specific profile and achievement relationship. This relationship table is the ProfileAchievements table ![Callout 3](../../shared/media/callout-03.png). Notice that the *profileId* relates to the *id* in the Profiles table. Similarly, the *achievementsId* relates to the *id* in the Achievements table. 
+We need a table to define the specific profile and achievement relationship. This relationship table is the **ProfileAchievements** table ![Callout 3](../../shared/media/callout-03.png). Notice that the *profileId* relates to the *id* in the **Profiles** table. Similarly, the *achievementsId* relates to the *id* in the **Achievements** table.
 
-The Scores table ![Callout 4](../../shared/media/callout-04.png) holds score information for each player. This table relates to the Profiles table through the *profileId* column.
+The **Scores** table ![Callout 4](../../shared/media/callout-04.png) holds score information for each player. This table relates to the **Profiles** table through the *profileId* column.
 
 For learning purposes, here you bring up one instance of Azure SQL Database. The instance is connected to each App Service environment for the _Dev_, _Test_, and _Staging_ stages. In practice, you might associate a separate database instance with each environment. As you move toward _Staging_, instead of working with a small set of fictitious data, you might start working with a full copy of the real data that you run in production.
 
@@ -49,7 +49,7 @@ Mara creates the development database and populates it with test data. She expor
 
    You can leave the rest of the default values unchanged.
 
-1. Select **Review and create** > **Create**.
+1. Select **Review + create** > **Create**.
 1. Wait for the storage account to be created and then select **Go to resource**.
 1. Under **Services**, select **containers**.
 
@@ -129,12 +129,12 @@ Before you explore your database, you need to set a firewall rule that permits d
 
 Now that you've set the firewall rule, you can run queries against your database from the Azure portal. Here you run a query to verify that your *bacpac* file was imported successfully.
 
-The database contains four tables: 
+The database contains four tables:
 
-* dbo.Profiles
-* dbo.Scores
-* dbo.Achievements
-* dbo.ProfileAchievements 
+* **dbo.Profiles**
+* **dbo.Scores**
+* **dbo.Achievements**
+* **dbo.ProfileAchievements**
 
 The _Space Game_ web application reads from these tables to get the latest leaderboard data.
 
@@ -143,10 +143,10 @@ The _Space Game_ web application reads from these tables to get the latest leade
 1. For the admin username, enter *azuresql*. Also enter your password. Then select **OK**.
 
     > [!NOTE]
-    > If you get an error message that contains an IP address: 
+    > If you get an error message that contains an IP address:
     >
     > 1. Copy the IP address to your clipboard.
-    > 1. Select the link in the error message to return to the firewall rules. 
+    > 1. Select the link in the error message to return to the firewall rules.
     > 1. In the **LocalIP** firewall rule, update the IP addresses with the contents of the clipboard.
     > 1. Select **Save**, and then select **OK**.
     >
@@ -178,11 +178,11 @@ The _Space Game_ web application reads from these tables to get the latest leade
     SELECT * FROM [dbo].[Achievements]
     ```
 
-    This time you see the list of possible achievements in the **Results** window. There are 10 rows. Notice that the achievements aren't related to any profile. They're not related because profiles and achievements have a many-to-many relationship. A profile can have many achievements, and an achievement can show up on many profiles. To relate the right achievements with the right profiles, you need a ProfileAchievements table.
+    This time you see the list of possible achievements in the **Results** window. There are 10 rows. Notice that the achievements aren't related to any profile. They're not related because profiles and achievements have a many-to-many relationship. A profile can have many achievements, and an achievement can show up on many profiles. To relate the right achievements with the right profiles, you need a **ProfileAchievements** table.
 1. Change the query as follows. Then select **Run**.
 
     ```SQL
     SELECT * FROM [dbo].[ProfileAchievements]
     ```
 
-    Each row correlates the Profile ID with the Achievement ID.
+    Each row correlates the **Profile** ID with the **Achievement** ID.
