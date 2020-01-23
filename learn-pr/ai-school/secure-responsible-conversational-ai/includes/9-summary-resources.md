@@ -1,15 +1,15 @@
 This module has shown you how to take real responsibility for your bot. It’s not an easy task, but it is worth it. Ethical AI development will ensure that AI becomes a trusted tool to help all of humanity, and bots will go on to assist us in ways that we currently can barely dream of. Remember:
 
-1. Make sure you understand why your bot exists — and that you, and your users, understand the consequences of using it.
-2. Make sure your users know they’re working with a bot.
-3. Make sure your bot can ask a human for help.
-4. Make sure your bot isn’t accidentally evil - and make doubly sure that users can’t make it evil.
-5. Make sure your bot works, and that it will keep working.
-6. Make sure your bot treats all users fairly.
-7. Make sure your bot respects users privacy.
-8. Make sure your bot handles data safely.
-9. Make sure your bot can be used by the widest range of people possible.
-10. You are responsible for your bot’s actions.
+* Make sure you understand why your bot exists — and that you, and your users, understand the consequences of using it.
+* Make sure your users know they’re working with a bot.
+* Make sure your bot can ask a human for help.
+* Make sure your bot isn’t accidentally evil - and make doubly sure that users can’t make it evil.
+* Make sure your bot works, and that it will keep working.
+* Make sure your bot treats all users fairly.
+* Make sure your bot respects users privacy.
+* Make sure your bot handles data safely.
+* Make sure your bot can be used by the widest range of people possible.
+* You are responsible for your bot’s actions.
 
 Now that you have reviewed this module, you should be able to:
 

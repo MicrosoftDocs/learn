@@ -14,19 +14,6 @@ As mentioned above in “Design”, you should include in your deployment the op
 
 As well as giving users the option to see what personal data the bot collects, you should also make it possible for the bot to forget about any information that the user has entered erroneously, or simply wants to be forgotten.
 
-## Privacy in the European Union
-
-> The EU General Data Protection Regulation (GDPR) is the most important change in data privacy regulation in 20 years.
-
-If the users of your bot are located in the European Union, you will be subject to The EU General Data Protection Regulation known as GDPR. It doesn’t matter where your company based out of, if you have users who live in an EU country then you will need to consider this regulation.
-
-GDPR grants users four main rights that are referred to as Data Subject Rights:
-
-- __Breach Notification__ - Breach notifications must be made within 72 hours of the company becoming aware of the breach.
-- __Right to access__ - Users have the right get confirmation of whether or not personal data concerning them is being processed, where and for what purpose
-- __Right to be forgotten__ - Also known as Data Erasure, users have the right to delete any information that is held on them
-- __Data portability__ - Users have the right to get access to the data held on them in plain and machine-readable format.
-
-A key tenet is not to store any more information that you need to perform the function of the bot. If you are concerned about whether or not your are compliant, it’s advised to get a GDPR expert involved in your project.
+A key tenet is not to store any more information that you need to perform the function of the bot. If you are concerned about whether or not your are compliant, it’s advised to get a privacy expert involved in your project.
 
 Sometimes, a user’s desire for privacy will conflict with the ability for your bot to provide a service to them. If that happens, that’s OK. It’s better for your bot to be upfront and transparent with privacy and personal information, and offer the user complete (secure) control over what to do with that information. In the long run, this will build trust and help prevent abuse.
