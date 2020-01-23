@@ -4,8 +4,8 @@ metadata:
   title: Build a chat bot with the Azure Bot Service
   description: Explore the Azure Bot Service and learn to use tools developers need to build and publish intelligent bots that interact with users using a range of services.
   ms.date: 09/26/2018
-  author: rmcmurray
-  ms.author: robmcm
+  author: jasallen
+  ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Build a chat bot with the Azure Bot Service
