@@ -6,7 +6,7 @@ During app development, running quick load tests can help you identify code issu
 
 You need an Azure DevOps organization for the exercises in this module. Skip this step if you already have an Azure DevOps organization associated with your Azure account.
 
-- Go to https://dev.azure.com, and sign up for a DevOps account (if you don't already have one). Use your Azure account to sign in. Don't create a new organization.
+- Go to [https://dev.azure.com](https://dev.azure.com), and sign up for a DevOps account (if you don't already have one). Use your Azure account to sign in. Don't create a new organization.
 
 ## Use Azure CLI to deploy a web app
 
