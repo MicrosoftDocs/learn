@@ -196,11 +196,11 @@ From Azure DevOps:
 
     ![](../../shared/media/azure-devops-profile-preview-features.png)
 
-1. Turn on **Multi-stage Pipelines**.
+1. Turn on **Multi-stage pipelines**.
 
     ![Enabling multistage pipelines from Azure DevOps](../../shared/media/enable-preview-features.png)
 
-On the **Pipelines** menu, notice that separate entries for **Release** and **Build** are gone. You'll now do both build and release tasks from the same pipeline.
+1. Notice that separate entries for **Release** and **Build** no longer appear on the **Pipelines** menu. You'll now build and release from the same pipeline.
 
 ### Create the initial pipeline configuration
 

@@ -4,10 +4,12 @@ Multistage pipelines are a preview feature of Azure Pipelines. Preview features 
 
 From Azure DevOps:
 
-1. Select your profile.
-1. Select the ellipsis (**...**) button, and then select **Preview features**.
-1. Turn on **Multistage pipelines**.
+1. Select your profile from the upper-right corner, then select **Preview features**.
 
-    ![The toggle for enabling multistage pipelines from Azure DevOps](../../shared/media/enable-preview-features.png)
+    ![](../../shared/media/azure-devops-profile-preview-features.png)
+
+1. Turn on **Multi-stage pipelines**.
+
+    ![Enabling multistage pipelines from Azure DevOps](../../shared/media/enable-preview-features.png)
 
 1. Notice that separate entries for **Release** and **Build** no longer appear on the **Pipelines** menu. You'll now build and release from the same pipeline.
