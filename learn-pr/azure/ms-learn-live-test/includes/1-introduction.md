@@ -27,5 +27,5 @@ In this series you will:
 
 ### Resources
 
-- Azure Portal: [portal.azure.com](https://portal.azure.com)
+- Azure portal: [portal.azure.com](https://portal.azure.com)
 - Code repository: [aka.ms/vanarsdelrepo](https://aka.ms/vanarsdelrepo)

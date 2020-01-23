@@ -23,7 +23,7 @@ In this session, you will:
 
 ### If you're using your own Azure subscription
 
-- Open [Azure Portal](https://portal.azure.com) in your browser and select your subscription
+- Open [Azure portal](https://portal.azure.com) in your browser and select your subscription
 - Open the Cloud Shell (the button is located at the top, next to the notifications bell and looks like this: >_) and select to use a "Bash" shell.
 
 ### If you're using the Learn Live Sandbox
@@ -48,9 +48,9 @@ You're now ready to join session two! :-)
 
 ## Resources
 
-- Microsoft Learn Module: [Provision an Azure SQL Database](https://docs.microsoft.com/en-us/learn/modules/provision-azure-sql-db/)
+- Microsoft Learn Module: [Provision an Azure SQL Database](https://docs.microsoft.com/learn/modules/provision-azure-sql-db/)
 - Data Migration Assistant app: [aka.ms/datamigrationassistant](https://aka.ms/datamigrationassistant)
 - Azure Data Studio app: [Azure Data Studio](https://docs.microsoft.com/de-de/sql/azure-data-studio/what-is?view=sql-server-2017)
 - SQL Database features overview: [aka.ms/sql-database-features](https://aka.ms/sql-database-features)
-- Azure Database Migration Service: [azure.microsoft.com/en-us/services/database-migration/](https://azure.microsoft.com/en-us/services/database-migration/)
+- Azure Database Migration Service: [azure.microsoft.com/services/database-migration/](https://azure.microsoft.com/services/database-migration/)
 - Run SQL Server Enterprise on a VM: [azure.microsoft.com/en-in/pricing/details/virtual-machines/sql-server-enterprise/](https://azure.microsoft.com/en-in/pricing/details/virtual-machines/sql-server-enterprise/)

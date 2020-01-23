@@ -28,7 +28,7 @@ In this session, you will:
 
 ### If you're using your own Azure subscription
 
-- Open [Azure Portal](https://portal.azure.com) in your browser and select your subscription
+- Open [Azure portal](https://portal.azure.com) in your browser and select your subscription
 - Open the Cloud Shell (the button is located at the top, next to the notifications bell and looks like this: >_) and select to use a "Bash" shell.
 
 ### If you're using the Learn Live Sandbox
@@ -55,10 +55,10 @@ You're now ready to join session four! :-)
 
 - Overview of features of Azure Storage Account settings: [docs.microsoft.com/de-de/azure/storage/common/storage-introduction#types-of-storage-accounts](https://docs.microsoft.com/de-de/azure/storage/common/storage-introduction#types-of-storage-accounts)
 - Storage Redundancy reference: [docs.microsoft.com/de-de/azure/storage/common/storage-redundancy](https://docs.microsoft.com/de-de/azure/storage/common/storage-redundancy)
-- Azure Storage Explorer: [azure.microsoft.com/en-us/features/storage-explorer/](https://azure.microsoft.com/en-us/features/storage-explorer/)
+- Azure Storage Explorer: [azure.microsoft.com/features/storage-explorer/](https://azure.microsoft.com/features/storage-explorer/)
 - Windows.Azure.Storage.Blob NuGet: [www.nuget.org/packages/Microsoft.Azure.Storage.Blob/](https://www.nuget.org/packages/Microsoft.Azure.Storage.Blob/)
-- Microsoft Learn Module: [Store Application Data with Azure Blob storage](https://docs.microsoft.com/en-us/learn/modules/store-app-data-with-azure-blob-storage/)
-- Microsoft Learn Module: [Organize Azure Storage blobs with properties and metadata](https://docs.microsoft.com/en-us/learn/modules/organize-blobs-properties-metadata/6-add-blob-metadata-using-application-code)
-- Microsoft Learn Module: [Optimize storage performance and costs using Blob storage tiers](https://docs.microsoft.com/en-us/learn/modules/optimize-archive-costs-blob-storage/)
-- Microsoft Learn Module: [Secure your Azure Storage Account](https://docs.microsoft.com/en-us/learn/modules/secure-azure-storage-account/)
-- Microsoft Learn Module: [Connect an app to Azure Storage](https://docs.microsoft.com/en-us/learn/modules/connect-an-app-to-azure-storage/)
+- Microsoft Learn Module: [Store Application Data with Azure Blob storage](https://docs.microsoft.com/learn/modules/store-app-data-with-azure-blob-storage/)
+- Microsoft Learn Module: [Organize Azure Storage blobs with properties and metadata](https://docs.microsoft.com/learn/modules/organize-blobs-properties-metadata/6-add-blob-metadata-using-application-code)
+- Microsoft Learn Module: [Optimize storage performance and costs using Blob storage tiers](https://docs.microsoft.com/learn/modules/optimize-archive-costs-blob-storage/)
+- Microsoft Learn Module: [Secure your Azure Storage Account](https://docs.microsoft.com/learn/modules/secure-azure-storage-account/)
+- Microsoft Learn Module: [Connect an app to Azure Storage](https://docs.microsoft.com/learn/modules/connect-an-app-to-azure-storage/)

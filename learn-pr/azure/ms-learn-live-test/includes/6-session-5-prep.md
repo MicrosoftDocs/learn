@@ -30,7 +30,7 @@ In this session, you will:
 
 ### If you're using your own Azure subscription
 
-- Open [Azure Portal](https://portal.azure.com) in your browser and select your subscription
+- Open [Azure portal](https://portal.azure.com) in your browser and select your subscription
 - Open the Cloud Shell (the button is located at the top, next to the notifications bell and looks like this: >_) and select to use a "Bash" shell.
 
 ### If you're using the Learn Live Sandbox

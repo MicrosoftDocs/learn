@@ -27,6 +27,6 @@ The app is built with ASP.NET Core MVC. Follow the instructions below to execute
 ## Resources
 
 - Learn Live GitHub repository for this series: [github.com/MicrosoftDocs/mslearn-live-migrating-to-the-cloud](https://github.com/MicrosoftDocs/mslearn-live-migrating-to-the-cloud)
-- Architecture Reference Center: [docs.microsoft.com/en-us/azure/architecture/](https://docs.microsoft.com/en-us/azure/architecture/)
+- Architecture Reference Center: [docs.microsoft.com/azure/architecture/](https://docs.microsoft.com/azure/architecture/)
 - Learn Live Sandbox: [aka.ms/learnlivesandbox](https://aka.ms/learnlivesandbox)
-- Azure Naming Conventions: [docs.microsoft.com/en-us/azure/architecture/best-practices/naming-conventions](https://docs.microsoft.com/en-us/azure/architecture/best-practices/naming-conventions)
+- Azure Naming Conventions: [docs.microsoft.com/azure/architecture/best-practices/naming-conventions](https://docs.microsoft.comazure/architecture/best-practices/naming-conventions)
