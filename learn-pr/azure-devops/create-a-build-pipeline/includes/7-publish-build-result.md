@@ -78,7 +78,7 @@ Take a moment to examine *azure-pipelines.yml*. Notice that these values are rep
 
 * The build configuration: `Release`
 * The location of the **wwwroot** directory: `Tailspin.SpaceGame.Web/wwwroot`
-* The .NET Core SDK version: `2.1.505`
+* The .NET Core SDK version: `3.1.100`
 
 You now use variables to define these values one time. You then reference the variables throughout the pipeline.
 
