@@ -175,41 +175,45 @@ Create a service connection that enables Azure Pipelines to access your Azure su
 > Make sure that you're signed in to both the Azure portal and Azure DevOps under the same Microsoft account.
 
 1. In Azure DevOps, go to your _Space Game_ web project.
-1. Select **Project settings** from the bottom corner of the page.
+1. From the bottom corner of the page, select **Project settings**.
 1. Under **Pipelines**, select **Service connections**.
-1. Select **New service connection**, select **Azure Resource Manager**, and then select **Next**.
-1. Select **Service principal (automatic)**, and then select **Next**.
+1. Select **New service connection**, then choose **Azure Resource Manager**, then select **Next**.
+1. Near the top of the page, select **Service Principal Authentication**.
 1. Fill in these fields:
 
     | Field               | Value                                        |
     |---------------------|----------------------------------------------|
+    | Connection name | *Resource Manager - Tailspin - Space Game* |
     | Scope level     | **Subscription**                             |
     | Subscription    | Your Azure subscription.                     |
     | Resource Group  | Leave this blank to include all resource groups. |
-    | Service connection name | **Resource Manager - Tailspin - Space Game** |
 
     During the process, you might be prompted to sign in to your Microsoft account.
 
-1. Select **Save**.
+1. Ensure that **Allow all pipelines to use this connection** is selected.
 
-    Azure DevOps performs a test connection to verify that it can connect to your Azure subscription. If Azure DevOps can't connect, you'll have the chance to sign in a second time.
+1. Select **OK**.
+
+    Azure DevOps performs a test connection to verify that it can connect to your Azure subscription. If Azure DevOps can't connect, you have the chance to sign in a second time.
 
 ## Create a personal access token
 
 Create a personal access token to enable the Azure Pipelines REST API to access the pipeline variables. You need this token to set the template outputs to pipeline variables. The token enables the variables to be accessed across stages.
 
-1. In Azure DevOps, select your profile.
-1. Select the ellipsis (**...**), select **User Settings**, and then select **Personal access tokens**.
+From Azure DevOps:
 
-    ![Profile page for selecting a personal access token](../media/5-select-personal-access-token.png)
+1. Select your profile from the upper-right corner, then select **Personal access tokens**.
+
+    ![](../../shared/media/azure-devops-profile-personal-access-tokens.png)
 
 1. Select **+ New Token**.
-1. Enter **Microsoft Learn - ProvisionDB** as the name, and select **Full access**.
+1. For the name, enter *Microsoft Learn - ProvisionDB*.
+1. Under **Scopes**, select **Full access**.
 1. Select **Create**.
 1. Copy the token to a safe place.
 
     > [!IMPORTANT]
-    > Be sure to do this now because the token will never be shown in plain text again.
+    > Be sure to save the token copy now. It will never again be shown in plain text.
 
 1. Select **Close**.
 
