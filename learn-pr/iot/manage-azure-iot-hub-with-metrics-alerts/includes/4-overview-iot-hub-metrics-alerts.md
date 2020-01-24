@@ -12,19 +12,18 @@ _Alerts_ are one of the more dynamic, and fun, features of an IoT Hub. An alert 
 
   ![Screenshot showing how to name, and then create, a new device template](../media/metrics-alerts-action-type.png)
 
-
 ### Action types
 
   | Action | Description | More info |
   | -- | -- | -- |
-  | Automation Runbook | A series of automation rules | [Getting Started With Azure Automation – Runbook Management](https://azure.microsoft.com/en-us/blog/azure-automation-runbook-management/) |
-  | Azure Function | Trigger an Azure Function, which is a specific code function written to a given Azure spec. The Azure Function action is implemented in this module. | [An introduction to Azure Functions](https://docs.microsoft.com/en-us/azure/azure-functions/functions-overview) |
-  | Email Azure Resource Manager Role | Send an email to the specific RBAC Resource Manager role. | [RBAC for Azure resources documentation](https://docs.microsoft.com/en-us/azure/role-based-access-control/) |
-  | Email SMS/Push/Voice | Send an email, text message, or voice message, to a specific address. | [Create and manage action groups in the Azure portal](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/action-groups) |
-  | ITSM (IT Service Management) | The ITSM connector provides a bi-directional connection between Azure and ITSM tools. These tools can help resolve issues faster.| [Connect Azure to ITSM tools using IT Service Management Connector](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/itsmc-overview) |
-  | LogicApp | Azure Logic Apps enable automated business-style workflows, without writing any code. | [Logic Apps](https://azure.microsoft.com/en-us/services/logic-apps/) |
-  | Secure Webhook | A secure webhook app will, for example, validate ownership of the webhook endpoint before allowing events to be delivered. | [Publish events to Azure Active Directory protected endpoints](https://docs.microsoft.com/en-us/azure/event-grid/secure-webhook-delivery) |
-  | Webhook | With webhook actions, an external process is invoked through a single HTTP POST request. The service that's called must support webhooks, and also determine how to use any payload in the message. | [Webhook actions for log alert rules](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/alerts-log-webhook) |
+  | **Automation Runbook** | A series of automation rules | [Getting Started With Azure Automation – Runbook Management](https://azure.microsoft.com/en-us/blog/azure-automation-runbook-management/) |
+  | **Azure Function** | Trigger an Azure Function, which is a specific code function written to a given Azure spec. The Azure Function action is implemented in this module. | [An introduction to Azure Functions](https://docs.microsoft.com/en-us/azure/azure-functions/functions-overview) |
+  | **Email Azure Resource Manager Role** | Send an email to the specific RBAC Resource Manager role. | [RBAC for Azure resources documentation](https://docs.microsoft.com/en-us/azure/role-based-access-control/) |
+  | **Email SMS/Push/Voice** | Send an email, text message, or voice message, to a specific address. | [Create and manage action groups in the Azure portal](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/action-groups) |
+  | **ITSM (IT Service Management)** | The ITSM connector provides a bi-directional connection between Azure and ITSM tools. These tools can help resolve issues faster.| [Connect Azure to ITSM tools using IT Service Management Connector](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/itsmc-overview) |
+  | **LogicApp** | Azure Logic Apps enable automated business-style workflows, without writing any code. | [Logic Apps](https://azure.microsoft.com/en-us/services/logic-apps/) |
+  | **Secure Webhook** | A secure webhook app will, for example, validate ownership of the webhook endpoint before allowing events to be delivered. | [Publish events to Azure Active Directory protected endpoints](https://docs.microsoft.com/en-us/azure/event-grid/secure-webhook-delivery) |
+  | **Webhook** | With webhook actions, an external process is invoked through a single HTTP POST request. The service that's called must support webhooks, and also determine how to use any payload in the message. | [Webhook actions for log alert rules](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/alerts-log-webhook) |
 
 ### Azure Functions
 
@@ -32,14 +31,14 @@ An _Azure function_ is a short piece of code that can be run when requested by a
 
 | Template name | Description |
 | -- | -- |
-| HTTP trigger | Run whenever it receives an HTTP request, responding based on data in the body, or query string. |
-| Timer trigger | Run on a specified schedule. |
-| Azure Queue Storage trigger | Run whenever a message is added to a specified Azure Storage queue. |
-| Azure Service Bus Queue trigger | Run whenever a message is added to a specified Service Bus queue. |
-| Azure Service Bus Topic trigger | Run whenever a message is added to a specified Service Bus Topic. |
-| Azure Blob storage trigger | Run whenever a blob is added to a specified container. |
-| Azure Event Hub trigger | Run whenever an Event Hub receives a new event. |
-| IoT Hub trigger | Run whenever an IoT Hub delivers a new message for Event Hub-compatible endpoints. |
+| **HTTP trigger** | Run whenever it receives an HTTP request, responding based on data in the body, or query string. |
+| **Timer trigger** | Run on a specified schedule. |
+| **Azure Queue Storage trigger** | Run whenever a message is added to a specified Azure Storage queue. |
+| **Azure Service Bus Queue trigger** | Run whenever a message is added to a specified Service Bus queue. |
+| **Azure Service Bus Topic trigger** | Run whenever a message is added to a specified Service Bus Topic. |
+| **Azure Blob storage trigger** | Run whenever a blob is added to a specified container. |
+| **Azure Event Hub trigger** | Run whenever an Event Hub receives a new event. |
+| **IoT Hub trigger** | Run whenever an IoT Hub delivers a new message for Event Hub-compatible endpoints. |
 
 There are quite a number of other triggers not listed in the table. The functions can be written in C#, Java, JavaScript, Python, or PowerShell. In addition to creating the functions in the Azure portal, the functions can be written using Visual Studio, Visual Studio Code, or other code editors.
 
@@ -125,4 +124,3 @@ We will not be taking the logs feature any further in this module. Follow the li
 ## Next steps
 
 You should now understand the purpose of the four entries in the Monitoring menu. The next step is to create some metrics and alerts, then put them to the test.
-
