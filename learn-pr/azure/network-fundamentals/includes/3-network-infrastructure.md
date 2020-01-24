@@ -100,7 +100,7 @@ This type of switch has no configuration capability and is designed for small of
 
 #### Managed
 
-This type of switch offers the means to adjust the configuration, behavior, and operation of the switch. Access to the switch configuration is through either a command-line interface (CLI) that uses telnet or SSH, Remote Console, or via a web interface.
+This type of switch offers the means to adjust the configuration, behavior, and operation of the switch. Access to the switch configuration is through either a command-line interface (CLI) that uses Telnet or Secure Shell (SSH), Remote Console, or via a web interface.
 
 Here's a list of the more commonly available options to configure on a managed switch. Keep in mind that switch manufacturers might offer different configuration options.
 

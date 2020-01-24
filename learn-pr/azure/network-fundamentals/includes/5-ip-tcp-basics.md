@@ -4,7 +4,7 @@ In this unit, you'll learn about the main aspects of network communications and 
 
 ## What is the Address Resolution Protocol?
 
-The Address Resolution Protocol (ARP) is a communications protocol within the internet protocol suite. It's a request-response protocol used to resolve the media access control (MAC) address for a given IP address. ARP supports many data link layer technologies, such as IPv4, DECnet, and PUP. When an IPv6 address is resolved, the Neighbor Discovery Protocol (NDP) is used instead of ARP. Without ARP, there would be no means to resolve an IP address to a physical device address.
+The Address Resolution Protocol (ARP) is a communications protocol within the Internet Protocol suite. It's a request-response protocol used to resolve the media access control (MAC) address for a given IP address. ARP supports many data link layer technologies, such as Internet Protocol version 4 (IPv4), DECnet, and PUP. When an Internet Protocol version 6 (IPv6) address is resolved, the Neighbor Discovery Protocol (NDP) is used instead of ARP. Without ARP, there would be no means to resolve an IP address to a physical device address.
 
 There's also the Reverse Address Resolution Protocol (RARP), which retrieves an IP address based on the given MAC address.
 
@@ -16,7 +16,7 @@ TCP/IP defines the way data is shared between network-enabled devices by definin
 
 The TCP/IP model is designed to be stateless. This design means the network stack treats each request as new because it isn't related to the previous request. One part of the TCP/IP model isn't stateless. The transport layer operates in a stateful mode because it maintains a connection until all the packets in the message are received.
 
-TCP/IP is an open standard. It's governed, but not owned, by any one organization, so it works with all operating systems, networks, and hardware.
+TCP/IP is an open standard. It's governed, but it's not owned by any one organization, so it works with all operating systems, networks, and hardware.
 
 ### TCP/IP model layers
 
@@ -24,8 +24,8 @@ The TCP/IP model is made up of four distinct layers. Each layer uses a different
 
 - **Application layer**: The application layer is responsible for determining which communication protocols are used. This layer includes HyperText Transfer Protocol (HTTP), DNS, File Transfer Protocol (FTP), Internet Message Access Protocol (IMAP), Lightweight Directory Access Protocol (LDAP), Post Office Protocol (POP), Simple Mail Transfer Protocol (SMTP), Simple Network Management Protocol (SNMP), Secure Shell (SSH), Telnet, and TLS/SSL.
 - **Transport layer**: This layer splits the application data into manageable ordered chunks by using the right port for the application protocol that's used. The protocols associated with this layer are TCP and the User Datagram Protocol (UDP).
-- **Internet layer**: Also known as the network layer, this layer ensures the data packet gets to its destination. The protocols associated with this layer are IP, IPv4, IPv6, ICMP, and IPsec.
-- **Network access layer**: This layer is responsible for defining how the data is sent across the network. The protocols associated with this layer are ARP, MAC, Ethernet, DSL, and ISDN.
+- **Internet layer**: Also known as the network layer, this layer ensures the data packet gets to its destination. The protocols associated with this layer are IP, IPv4, IPv6, Internet Control Message Protocol (ICMP), and Internet Protocol Security (IPsec).
+- **Network access layer**: This layer is responsible for defining how the data is sent across the network. The protocols associated with this layer are ARP, MAC, Ethernet, digital subscriber line (DSL), and Integrated Services Digital Network (ISDN).
 
 ## What are the Internet Protocol standards?
 
@@ -35,7 +35,7 @@ Today, there are two Internet Protocol versions that work within networks.
 
 ### IPv4
 
-Internet Protocol version 4 (IPv4) was released in 1983 and is the standard for all packet-switch-based networks in use today. IPv4 uses a 32-bit address space that gives an upper limit of 4,293,967,296 (4.3 billion) unique logical IP addresses. A large number of these available IP addresses are reserved for a specific purpose, for example, private networks, local hosts, internet relays, documentation, and subnets.
+Internet Protocol version 4 was released in 1983 and is the standard for all packet-switch-based networks in use today. IPv4 uses a 32-bit address space that gives an upper limit of 4,293,967,296 (4.3 billion) unique logical IP addresses. A large number of these available IP addresses are reserved for a specific purpose, for example, private networks, local hosts, internet relays, documentation, and subnets.
 
 ### Structure of an IPv4 address
 
@@ -116,7 +116,7 @@ The only way to connect two private networks in different geographical areas is 
 
 ### IPv6
 
-Internet Protocol version 6 (IPv6) is the latest version of the IP standard. IPv6 was designed and developed by the Internet Engineering Task Force (IETF) to address the problem of IPv4 logical address exhaustion and to eventually replace the IPv4 standard. It was adopted as a recognized internet standard in July 2017.
+Internet Protocol version 6 is the latest version of the IP standard. IPv6 was designed and developed by the Internet Engineering Task Force (IETF) to address the problem of IPv4 logical address exhaustion and to eventually replace the IPv4 standard. It was adopted as a recognized internet standard in July 2017.
 
 IPv6 uses a 128-bit address space, which allows 2<sup>128</sup> addresses. This amount is approximately 7.9x10<sup>28</sup> times more than IPv4.
 
@@ -125,28 +125,28 @@ IPv4 and IPv6 weren't designed to be interoperable, which has slowed down the tr
 IPv6 also introduced several benefits:
 
 - **Simplified network configuration**: IPv6 has address autoconfiguration built into the protocol. For example, a router broadcasts the network prefix and the network device can append its MAC address to self-assign a unique IPv6 address.
-- **Security**: IPSec is built into IPv6.
+- **Security**: IPsec is built into IPv6.
 - **New service support**: IPv6 eliminates the need for NAT, which makes it easier to create peer-to-peer networks.
 - **Multicast and anycast functionality**: Multicast allows for the broadcast of messages in a one-to-many fashion. Anycast allows a single destination to have multiple routing paths to two or more endpoint destinations.
 
 ### Structure of an IPv6 address
 
-The structure of an IPv6 is different from IPv4. Instead of four decimal numbers, it uses eight groups of four hexadecimal numbers called a hexadectet. Each hexadectet is separated with a colon. A full IPv6 address looks like this: `2001:0db8:0000:0000:0000:8a2e:0370:7334`. 
+The structure of IPv6 is different from IPv4. Instead of four decimal numbers, it uses eight groups of four hexadecimal numbers called a hexadectet. Each hexadectet is separated with a colon. A full IPv6 address looks like this: `2001:0db8:0000:0000:0000:8a2e:0370:7334`. 
 
 The new standard allows for the address to be simplified by using the following rules:
 
 - One or more leading zeros from any group can be removed, so `0042` becomes `42`.
 - Consecutive sections of zeros are replaced with a double colon (`::`), which can be used only once in an address. So the three sets of `0000` in this example are replaced by three colons (`:::`).
 
-The shortened version of the IPv6 example is `2001:db8::8a2e:370:7334`. Notice that all the `0000` are removed.
+The shortened version of the IPv6 example is `2001:db8::8a2e:370:7334`. Notice that all the `0000s` are removed.
 
 ## DNS
 
 The Domain Name System is a decentralized lookup service that translates a human-readable domain name or URL into the IP address of the server that's hosting the site or service. The worldwide distributed nature of DNS is a vital component of the internet. DNS has been in use since its inception in 1985.
 
-A DNS server serves two purposes. The first is to maintain a cache of recently searched for domain names, which improves performance and reduces network traffic. The second is to act as the start of authority (SOA) for all the domains under it. When a DNS server is looking to resolve a domain name that isn't held in its cache, it starts with the highest level, the dot, and then works down the subdomains until it finds the DNS server acting as the SOA. Once found, it stores the IP address of the domain in its local cache.
+A DNS server serves two purposes. The first is to maintain a cache of recently searched-for domain names, which improves performance and reduces network traffic. The second is to act as the start of authority (SOA) for all the domains under it. When a DNS server is looking to resolve a domain name that isn't held in its cache, it starts with the highest level, the dot, and then works down the subdomains until it finds the DNS server acting as the SOA. Once found, it stores the IP address of the domain in its local cache.
 
-The DNS also holds specific records that relate to the domain. These records include the start of authority (SOA), IP addressing (A and AAAA), SMTP email (MX), name servers (NS), and domain name alias (CNAME) records.
+The DNS also holds specific records that relate to the domain. These records include the SOA, IP addressing (A and AAAA), SMTP email (MX), name servers (NSes), and domain name alias (CNAME) records.
 
 ## What does Azure offer?
 

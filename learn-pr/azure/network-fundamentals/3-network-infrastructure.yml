@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.network-fundamentals.network-infrastructure
-title: Types of network devices to use when building a network
+title: Types of network devices to use when you build a network
 metadata:
-  title: Types of network devices to use when building a network
-  description: Explore network standards as well as the purpose and use of repeaters, hubs, switches, and routers when building networks.
+  title: Types of network devices to use when you build a network
+  description: Explore network standards and the purpose and use of the repeaters, hubs, switches, and routers that you use to build networks.
   ms.date: 01/09/2020
   author: cryophobia
   ms.author: chrvaw
@@ -18,10 +18,10 @@ quiz:
 
   - content: "What are network standards used for?"
     choices:
-    - content: "To ensure that hardware conforms to a minimum standard necessary for a good network development. "
+    - content: "To ensure that hardware conforms to a minimum standard necessary for a good network development."
       isCorrect: false
       explanation: "Network standards are designed to ensure that hardware and software made by different vendors work seamlessly together."
-    - content: "To ensure that software is tightly constrained and meets the needs of the organizations network."
+    - content: "To ensure that software is tightly constrained and meets the needs of the organization's network."
       isCorrect: false
       explanation: "Network standards are designed to ensure that hardware and software made by different vendors work seamlessly together."
     - content: "To ensure that hardware and software made by different vendors can work together seamlessly."
@@ -30,36 +30,36 @@ quiz:
 
   - content: "What is the primary purpose of a hub?"
     choices:
-    - content: "To allow one ethernet network device to send data packets to a specific ethernet device."
+    - content: "A hub allows one Ethernet network device to send data packets to a specific Ethernet device."
       isCorrect: false
-      explanation: "Hubs connect ethernet network devices together, packets are sent to all devices connected to the hub."
-    - content: "It allows the connection of multiple ethernet devices making them act as a single network segment."
+      explanation: "Hubs connect Ethernet network devices together, and packets are sent to all devices connected to the hub."
+    - content: "A hub allows the connection of multiple Ethernet devices to make them act as a single network segment."
       isCorrect: true
-      explanation: "Hubs offer the simplest form of network, allowing multiple ethernet-based network enabled devices to communicate with each other."
-    - content: "To allow multiple ethernet network devices access to the internet. "
+      explanation: "Hubs offer the simplest form of network. They allow multiple Ethernet-based network-enabled devices to communicate with each other."
+    - content: "A hub allows multiple Ethernet network devices access to the internet."
       isCorrect: false
-      explanation: "Hubs offer the simplest form of network, allowing multiple ethernet-based network enabled devices to communicate with each other."
+      explanation: "Hubs offer the simplest form of network. They allow multiple Ethernet-based network-enabled devices to communicate with each other."
 
-  - content: "What is the principle difference between hub routing and switch routing"
+  - content: "What is the principle difference between hub routing and switch routing?"
     choices:
-    - content: "Hub routing sends all packets to all connected devices, whereas switch routing sends packets to specific devices."
+    - content: "Hub routing sends all packets to all connected devices. Switch routing sends packets to specific devices."
       isCorrect: true
-      explanation: "Hub routing sends all packets to all connected devices, whereas switch routing sends packets to specific devices."
-    - content: "Hub routing sends packet to specific locations, whereas switch routing is only used to route traffic between switches."
+      explanation: "Hub routing sends all packets to all connected devices. Switch routing sends packets to specific devices."
+    - content: "Hub routing sends packets to specific locations. Switch routing is only used to route traffic between switches."
       isCorrect: false
-      explanation: "Hub routing sends all packets to all connected devices, whereas switch routing sends packets to specific devices."
-    - content: "Hub routing sends all packet to all connected devices, whereas switch routing is only used to route traffic between switches."
+      explanation: "Hub routing sends all packets to all connected devices. Switch routing sends packets to specific devices."
+    - content: "Hub routing sends all packets to all connected devices. Switch routing is only used to route traffic between switches."
       isCorrect: false
-      explanation: "Hub routing sends all packets to all connected devices, whereas switch routing sends packets to specific devices."
+      explanation: "Hub routing sends all packets to all connected devices. Switch routing sends packets to specific devices."
 
   - content: "What does a router do?"
     choices:
-    - content: "A router is a network device that works out the fastest and most efficient way of sending data across the network."
+    - content: "A router is a network device that works out the fastest and most efficient way to send data across a network."
       isCorrect: false
       explanation: "A router is designed to connect different networks together."
     - content: "A router is a network device that forwards data packets around faults in your network."
       isCorrect: false
-      explanation: "A router is used to link different networks together.  These can be on-premises or in the cloud via the internet."
+      explanation: "A router is used to link different networks together. These networks can be on-premises or in the cloud via the internet."
     - content: "A router is a network device that forwards data packets between computer networks."
       isCorrect: true
-      explanation: "A router is an essential part of your network.  A router, as well as connecting different networks, also connects to the internet."
+      explanation: "A router is an essential part of your network. A router connects different networks and also connects to the internet."
