@@ -52,7 +52,7 @@ prerequisites: |
   - Familiarity with Visual Studio, C#, and the basics of ASP.NET Core
   - Basic experience with on-premises SQL Server installations
   - Familiarity with what Azure and “the cloud” are
-  - Navigation of the Azure Portal
+  - Navigation of the Azure portal
 iconUrl: /learn/achievements/generic-badge.svg
 badge:
   uid: learn.azure.ms-learn-live.badge
