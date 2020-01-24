@@ -28,21 +28,16 @@ products:
   - azure-functions
 units:
   - learn.azure.build-api-azure-functions.1-introduction
-  - learn.azure.build-api-azure-functions.2-working-with-vs-code
-  - learn.azure.build-api-azure-functions.3-ex-setup-environment
-  - learn.azure.build-api-azure-functions.4-functions-extension-for-vs-code
-  - learn.azure.build-api-azure-functions.5-ex-create-function-project
-  - learn.azure.build-api-azure-functions.6-understanding-http-request-methods
-  - learn.azure.build-api-azure-functions.7-ex-customizing-function-http-request-methods
-  - learn.azure.build-api-azure-functions.8-cosmos-db-extension-for-vs-code
-  - learn.azure.build-api-azure-functions.9-ex-create-database
-  - learn.azure.build-api-azure-functions.10-querying-cosmos-db
-  - learn.azure.build-api-azure-functions.11-ex-querying-cosmos-db
-  - learn.azure.build-api-azure-functions.12-rest-and-function-routes
-  - learn.azure.build-api-azure-functions.13-ex-make-functions-restful
-  - learn.azure.build-api-azure-functions.14-modifying-data-in-cosmos-db
-  - learn.azure.build-api-azure-functions.15-ex-create-product-function
-  - learn.azure.build-api-azure-functions.16-ex-update-product-function
-  - learn.azure.build-api-azure-functions.17-ex-delete-product-function
+  - learn.azure.build-api-azure-functions.2-ex-setup-project
+  - learn.azure.build-api-azure-functions.3-ex-create-function-project
+  - learn.azure.build-api-azure-functions.4-rest-and-function-routes
+  - learn.azure.build-api-azure-functions.5-ex-make-functions-restful
+  - learn.azure.build-api-azure-functions.6-querying-cosmos-db
+  - learn.azure.build-api-azure-functions.7-ex-querying-cosmos-db
+  - learn.azure.build-api-azure-functions.8-understanding-cors
+  - learn.azure.build-api-azure-functions.9-ex-cors-and-the-frontend
+  - learn.azure.build-api-azure-functions.10-function-security
+  - learn.azure.build-api-azure-functions.11-ex-publish-function-project
+  - learn.azure.build-api-azure-functions.12-summary
 badge:
   uid: learn.azure.build-api-azure-functions.badge
