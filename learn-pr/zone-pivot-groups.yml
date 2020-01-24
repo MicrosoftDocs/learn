@@ -96,6 +96,14 @@ groups:
       title: Node.js
     - id: python
       title: Python
+- id: dev-lang-csharp-python
+  title: Development language
+  prompt: Choose your development language
+  pivots:
+    - id: csharp
+      title: C#
+    - id: python
+      title: Python
 - id: dev-lang-csharp-node
   title: Development language
   prompt: Choose your development language
