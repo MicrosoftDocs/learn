@@ -4,7 +4,7 @@ title: Design the pipeline
 metadata:
   title: Design the pipeline
   description: Define stages in your release pipeline and promote changes from one stage to the next.
-  ms.date: 09/30/2019
+  ms.date: 01/21/2020
   author: tpetchel
   ms.author: thpetche
   ms.topic: interactive-tutorial
