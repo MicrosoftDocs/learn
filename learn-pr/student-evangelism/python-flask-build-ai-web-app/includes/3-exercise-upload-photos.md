@@ -1,6 +1,6 @@
 Now that you have an environment for Python and Flask prepared and have the basics of Flask under your belt, it's time to build a website. A Flask website begins with an **app.py** file and basic assets such as HTML, CSS, and images. You will start by using Git to download a set of starter files for the Contoso Travel site. Then you will enhance the site to support photo uploads.
 
-Resources that are used in this exercise are located in a Git code samples repository: <https://github.com/MicrosoftDocs/mslearn-build-ai-web-app-with-python-and-flask)>.
+Resources that are used in this exercise are located in a Git code samples repository: <https://github.com/MicrosoftDocs/mslearn-build-ai-web-app-with-python-and-flask>.
 
 ## Create a site that supports photo uploads
 
@@ -62,7 +62,7 @@ Resources that are used in this exercise are located in a Git code samples repos
 	flask run
 	```
 
-1. Open a browser and navigate to http\:\//localhost\:5000. Confirm that the website appears in the browser as shown below.
+1. Open a browser and navigate to <http\:\//localhost\:5000>. Confirm that the website appears in the browser as shown below.
 
 	![Contoso Travel](../media/initial-run.png)
 
