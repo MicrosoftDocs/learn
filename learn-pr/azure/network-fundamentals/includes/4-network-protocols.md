@@ -52,7 +52,7 @@ Let's have a look at some of the protocols in these categories.
 
 Communication protocols focus on establishing and maintaining a connection between devices. As you work with different devices and network services, you'll make use of various network communication protocols.
 
-Three foundational protocols of all internet-based networks are the Transmission Control Protocol (TCP), the Internet Protocol (IP), and the User Datagram Protocol (UDP). These protocols are concerned with the logical transmission of data over the network:
+First, we need to define three foundational protocols of all internet-based networks. These three protocols are Transmission Control Protocol (TCP), Internet Protocol (IP), and User Datagram Protocol (UDP). These protocols are concerned with the logical transmission of data over the network.
 
 - **Transmission Control Protocol**: TCP chunks up data into data packets that can be sent securely and quickly while minimizing the chance of data loss. It provides a stable and reliable mechanism for the delivery of data packets across an IP-based network. Even though TCP is an effective connection-oriented protocol, it has overhead.
 - **Internet Protocol**: IP is responsible for the addressing of a data packet. IP encapsulates the data packet to be delivered and adds an address header. The header contains information on the sender and recipient IP addresses. This protocol isn't concerned about the order in which the packets are sent or received. It also doesn't guarantee that a packet will be delivered, only the address.
