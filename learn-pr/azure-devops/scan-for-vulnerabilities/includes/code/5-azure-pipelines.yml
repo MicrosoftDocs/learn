@@ -18,7 +18,7 @@ steps:
     version: '$(dotnetSdkVersion)'
 
 - task: UseDotNet@2
-  displayName: 'Use .NET Core SDK 3.1.505 for SonarCloud'
+  displayName: 'Use .NET Core SDK $(dotnetSdkVersion) for SonarCloud'
   inputs:
     version: '3.1.100'
 
