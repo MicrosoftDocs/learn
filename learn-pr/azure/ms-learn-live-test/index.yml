@@ -1,29 +1,80 @@
 ### YamlMime:Module
+
+# Note for reviews:
+#
+# Learn Live uses the modules format to provide instructions to the audience
+# who is following the live sessions.
+# The content structure and the requirements are different from Learn modules.
+# We are in the process of defining a separate content model for Learn Live to standardize our modules.
+# 
+# All Learn Live "modules" are hidden and are not meant to be found when searching
+# for Learn content.
+#
+
 uid: learn.azure.ms-learn-live
+hidden: true
 metadata:
-  title: Microsoft Learn LIVE!
-  description: Microsoft Learn LIVE!
-  ms.date: 8/21/2019
-  author: markjulmar
-  ms.author: smmark
+  title: Migrate an ASP.NET Core application from an on-premises environment into Azure
+  
+  description: Microsoft Learn Live is a series of guided, live courses, presented on Twitch, and designed to increase your existing knowledge of Azure technologies.
+  
+  ms.date: 1/20/2020
+  
+  author: krumelur
+  
+  ms.author: renrup
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Microsoft Learn LIVE!
-summary: This is a placeholder for Microsoft Learn LIVE! testing
-abstract: Use this to execute Learn Live instructions
-prerequisites: None
+
+title: Migrate an ASP.NET Core application from an on-premises environment into Azure
+
+summary: | 
+  You're a senior .NET developer working for a VanArsdel Ltd., a real estate business.
+  VanArsdel has an experienced in-house development team and the technology stack is Microsoft's .NET.
+  Interaction with your customers happens through the website that built with ASP.NET Core MVC and SQL Server and
+  it's hosted on-premises. Management plans to expand the business.
+  The expansion will lead to increased numbers of users hitting the current web application. 
+  You conclude the expansion plans require to scale-up hardware to handle increased workload and ensure fast response times.
+  Because of high cost related to these investments, you consider a migration of the solution into the cloud.
+  The positive experience with the Microsoft stack in the past makes you feel comfortable moving to Azure as your cloud provider and you expect a smooth transition.
+  Pushing the application to Azure will help mitigate both, the cost and time factor of upgrading the on-premises solution.
+
+abstract: | 
+  In this Learn Live series, you will:
+  - Choose an appropriate hosting model and deploy the application to Azure
+  - Choose an appropriate database solution and migrate on-premises data into the cloud
+  - Set up and configure automatic deployment
+  - Identify the benefits of Azure Storage
+  - Create and configure a Storage Account and migrate data to a centralized storage
+  - Monitor your web app against metrics and scale it to meet changes in demand
+
+prerequisites: |
+  - Familiarity with Visual Studio, C#, and the basics of ASP.NET Core
+  - Basic experience with on-premises SQL Server installations
+  - Familiarity with what Azure and “the cloud” are
+  - Navigation of the Azure portal
 iconUrl: /learn/achievements/generic-badge.svg
 badge:
   uid: learn.azure.ms-learn-live.badge
+
 levels: 
 - beginner
+- intermediate
+
 roles: 
 - developer
+
 products:
 - azure
 - azure-portal
 - azure-cloud-shell
 - azure-app-service
 - azure-sql-database
+
 units:
-- learn.azure.ms-learn-live.introduction
+- learn.azure.ms-learn-live.1-introduction
+- learn.azure.ms-learn-live.2-session-1-prep
+- learn.azure.ms-learn-live.3-session-2-prep
+- learn.azure.ms-learn-live.4-session-3-prep
+- learn.azure.ms-learn-live.5-session-4-prep
+- learn.azure.ms-learn-live.6-session-5-prep
