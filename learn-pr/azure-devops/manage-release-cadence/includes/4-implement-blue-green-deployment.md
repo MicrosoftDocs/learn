@@ -87,7 +87,7 @@ You can also use this task to start, stop, or delete a slot. Or you can use it t
     > [!TIP]
     > You can replace the entire file or just update the part that's highlighted.
 
-    [!code-yml[](code/4-azure-pipelines.yml?highlight=111-144)]
+    [!code-yml[](code/4-azure-pipelines.yml?highlight=114-147)]
 
     Note these changes:
 

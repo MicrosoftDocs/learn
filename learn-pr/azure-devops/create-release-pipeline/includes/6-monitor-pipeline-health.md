@@ -14,7 +14,7 @@ It's the following morning. At the team meeting, Andy and Mara have just finishe
 
 **Tim:** A staging environment would be great. I could do additional stress testing before we present new features to management for final approval.
 
-The team is excited to see what the new pipeline can do. They all start talking at the same time.
+_The team is excited to see what the new pipeline can do. They all start talking at the same time._
 
 **Andy:** I'm excited too. But let's take one step at a time. Yes, I think we can make all of these changes and more, but this is just a POC. We'll work on expanding it over time.
 

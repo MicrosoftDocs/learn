@@ -3,7 +3,7 @@ uid: learn.azdo.scan-for-vulnerabilities
 metadata:
   title: Scan code for vulnerabilities in Azure Pipelines - Learn
   description: Find out about resources that enable you to scan for vulnerabilities in your source code, both locally and in the build pipeline, during the build process.
-  ms.date: 11/04/2019
+  ms.date: 01/21/2020
   author: tpetchel
   ms.author: thpetche
   ms.topic: interactive-tutorial
