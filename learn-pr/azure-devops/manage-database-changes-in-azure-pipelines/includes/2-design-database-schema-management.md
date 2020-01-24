@@ -18,7 +18,7 @@ Here the team discusses how to add a database as the data storage solution for t
 
 **Andy:** Good morning. We've all seen how Azure Pipelines has accelerated our release process and improved the quality of what we do. Because we've made so much progress, we're ready to connect the website to a real database. I think this integration can happen as early as the _Dev_ stage. By connecting the website to the database early in the pipeline, we can track changes and measure performance all the way through the pipeline. Ultimately, we want the leaderboard to pull its data from the database. Here's what the leaderboard looks like now.
 
-Andy shows the _Space Game_ site that's running on Azure App Service.
+_Andy shows the_ Space Game _site that's running on Azure App Service._
 
 ![The Space Game leaderboard](../../assess-your-development-process/media/2-space-game-leaderboard.png)
 
@@ -32,7 +32,7 @@ When considering a data storage solution, you can choose from several options. T
 
 Data can be structured, semistructured, or unstructured:
 
-* _Structured_ data is relational. It fits into the columns and rows of a table. For example, think of a point-of-sale system. You might have a table for product data whose columns define how you describe your products. For example, columns can be named Product Name, SKU Number, Color, and so on.
+* _Structured_ data is relational. It fits into the columns and rows of a table. For example, think of a point-of-sale system. You might have a table for product data whose columns define how you describe your products. For example, columns can be named **Product Name**, **SKU**, **Color**, and so on.
 
 * _Unstructured_ data includes documents such as text files, photos, and videos. This data format is for quick access to an entire file and not for processing records.
 
