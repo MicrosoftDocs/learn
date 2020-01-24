@@ -1,27 +1,27 @@
 Sometimes, the built-in roles for Azure resources don't grant the precise level of access you need. Custom roles allow you to define roles that meet the specific needs of your organization. You can assign the custom roles you create to users, groups, and service principals at the scope of subscription, resource group, or resource.
 
-In this unit, you learn about custom roles in role-based access control (RBAC) for Azure resources.
+In this unit, you learn about custom roles in Azure role-based access control (RBAC).
 
-## Azure Active Directory and RBAC roles
+## Azure Active Directory and Azure RBAC roles
 
-Azure Active Directory (Azure AD) and RBAC roles are often confused when you first work with Azure. Azure AD roles provide the mechanism for managing permissions to AD resources like user accounts and passwords. RBAC provides a wealth of capabilities for managing Azure resources like virtual machines (VMs) at a granular level.
+Azure Active Directory (Azure AD) and Azure RBAC roles are often confused when you first work with Azure. Azure AD roles provide the mechanism for managing permissions to AD resources like user accounts and passwords. Azure RBAC provides a wealth of capabilities for managing Azure resources like virtual machines (VMs) at a granular level.
 
-![Diagram that shows relationship of RBAC and Azure AD administrator roles](../media/2-azure-office-roles.png)
+![Diagram that shows relationship of Azure RBAC and Azure AD administrator roles](../media/2-azure-office-roles.png)
 
 The subtle differences between how the two can be set up and managed are in the following table:
 
-RBAC roles for Azure | Azure AD administrator roles
+Azure RBAC roles | Azure AD administrator roles
 --- | ---
 Manage access to Azure resources like VMs, storage, networks and more | Manage access to Azure Active Directory resources like user accounts and passwords 
 Allows custom roles | Allows custom roles
 Multiple scope levels (management group, subscription, resource group, resource) | Scope only at tenant level
 Role information accessible through Azure portal, Azure CLI, Azure PowerShell, Azure Resource Manager templates, REST API | Role information accessible in Azure admin portal, Microsoft 365 admin center, Microsoft Graph, Azure AD PowerShell
 
-For our scenario, we need a custom role to manage Azure VMs at the subscription scope. So we need to use custom roles in RBAC for Azure resources.
+For our scenario, we need a custom role to manage Azure VMs at the subscription scope. So we need to use custom roles in Azure RBAC.
 
 ## Assignment and scope of custom roles
 
-Users with the roles User Access Administrator or Owner can create or assign custom roles in RBAC for Azure resources.
+Users with the roles User Access Administrator or Owner can create or assign custom roles in Azure RBAC.
 
 Custom roles can be assigned to:
 
@@ -60,7 +60,6 @@ A custom role definition breaks down into a collection of different permissions.
 }
 ```
 
-<!--Image taken from https://docs.microsoft.com/en-us/azure/role-based-access-control/overview - Can the '3 Role Definition' be removed please-->
 The following example shows the role definition for the Contributor role. 
 ![Illustration that shows an example role definition for Contributor](../media/2-rbac-role-definition.png)
 
@@ -135,6 +134,12 @@ The following list is the permissions for the build-in role Virtual Machine Cont
 ]
 ```
 
+To get this list in PowerShell, you'd run the following command.
+
+```PowerShell
+Get-AzRoleDefinition -Name "Virtual Machine Contributor" | Select Actions | ConvertTo-Json
+```
+
 For our scenario, we want a custom role that can be used for monitoring and restarting virtual machines for a specific subscription. So we want to include the following actions scoped at the subscription level:
 
 - Read access to the compute, network, and storage resources
@@ -163,7 +168,7 @@ Description       : Restarts the virtual machine
 IsDataAction      : False
 ```
 
-The `Get-AzProviderOperation` is useful to get the most current list of resource provider operations. You can also find a published list of resource providers and operations in the Azure Resource Manager content on Docs. 
+The Azure PowerShell `Get-AzProviderOperation` cmdlet is useful to get the most current list of resource provider operations. In Azure CLI, use the `az provider operation show` command. You can find a published list of resource providers and operations in the Azure Resource Manager content on Docs.
 
 ### Create VM Operator role definition
 
