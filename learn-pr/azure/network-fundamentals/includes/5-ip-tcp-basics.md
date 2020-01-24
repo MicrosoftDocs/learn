@@ -1,4 +1,4 @@
-When you consider a move to the cloud, it's essential in your role as an Azure developer, solution architect, or administrator to know the fundamentals of how your network works. The next step in understanding the composition of a network is a detailed look at the interoperability of your network. This knowledge applies whether it's your organization's network or more extensive networks like the web. All networks are built on the same principles.
+When you consider a move to the cloud, it's essential in your role as an Azure developer, solution architect, or administrator to know the fundamentals of how your network works. The next step in understanding the composition of a network is to take a detailed look at the interoperability of your network. This knowledge applies whether it's your organization's network or more extensive networks like the web. All networks are built on the same principles.
 
 In this unit, you'll learn about the main aspects of network communications and why networks are built by using the Transmission Control Protocol/Internet Protocol (TCP/IP). You'll understand the differences between Internet Protocol address standards. Finally, you'll explore subnetting, the Domain Name System (DNS), ports, and the use and role of private IP addresses.
 
@@ -65,7 +65,7 @@ For classes A, B, and C, the start and end IP addresses are reserved and shouldn
 
 In the previous table, the last column is marked as a subnet mask. The subnet mask uses the same format of the IP address. But its purpose is to identify valid IP addresses in an IP range.
 
-For example, assume we have an IP address range that starts at `192.168.1.0`, and we have a subnet of `255.255.255.0`. We'll apply the subnet mask in the following way. For each address segment value specified as 225 in the mask, the corresponding address segment is static. When we want to pick an IP address, we have to pick an address that matches `192.168.1`. Where the segment has a value of `0`, we're allowed to use any value between 0 to 255. A subnet mask of `255.255.255.0` gives an IP address range of `192.168.1.0` to `192.168.1.255` that are valid values to select.
+For example, assume you have an IP address range that starts at `192.168.1.0`, and you have a subnet of `255.255.255.0`.You'll apply the subnet mask in the following way. For each address segment value specified as 225 in the mask, the corresponding address segment is static. When you want to pick an IP address, you have to pick an address that matches `192.168.1`. Where the segment has a value of `0`, you're allowed to use any value between 0 to 255. A subnet mask of `255.255.255.0` gives an IP address range of `192.168.1.0` to `192.168.1.255`, which are valid values to select.
 
 ### What is a subnet?
 
@@ -75,7 +75,7 @@ An IP address, also known as a network address or routing prefix, represents the
 
 In an IPv4 network, for a packet of data to be routed to the correct network and the right network device, a routing prefix is needed. A routing prefix is created by taking the subnet mask and applying a bitwise AND to the IP address.
 
-A more common way to define the subnet and the routing prefix is to use the Classless Interdomain Routing (CIDR) notation. CIDR applies to the IP address as the number of bits we want to allocate to our subnet. Using CIDR notation, at the end of the IP address, add a "/" and then the number of bits. For example, 198.51.100.0/24 is the same as using the dotted-decimal format subnet mask 255.255.255.0. It offers an address range of 198.51.100.0 to 198.51.100.255.
+A more common way to define the subnet and the routing prefix is to use the Classless Interdomain Routing (CIDR) notation. CIDR applies to the IP address as the number of bits you want to allocate to your subnet. Using CIDR notation, at the end of the IP address, add a "/" and then the number of bits. For example, 198.51.100.0/24 is the same as using the dotted-decimal format subnet mask 255.255.255.0. It offers an address range of 198.51.100.0 to 198.51.100.255.
 
 ![A diagram of a subnet](../media/5-subnet-diagram.svg)
 
@@ -138,7 +138,7 @@ The new standard allows for the address to be simplified by using the following 
 - One or more leading zeros from any group can be removed, so `0042` becomes `42`.
 - Consecutive sections of zeros are replaced with a double colon (`::`), which can be used only once in an address. So the three sets of `0000` in this example are replaced by three colons (`:::`).
 
-The shortened version of the IPv6 example is `2001:db8::8a2e:370:7334`. Notice that all the `0000s` are removed.
+The shortened version of the IPv6 example is `2001:db8::8a2e:370:7334`. Notice that all the instances of `0000` are removed.
 
 ## DNS
 
@@ -146,7 +146,7 @@ The Domain Name System is a decentralized lookup service that translates a human
 
 A DNS server serves two purposes. The first is to maintain a cache of recently searched-for domain names, which improves performance and reduces network traffic. The second is to act as the start of authority (SOA) for all the domains under it. When a DNS server is looking to resolve a domain name that isn't held in its cache, it starts with the highest level, the dot, and then works down the subdomains until it finds the DNS server acting as the SOA. Once found, it stores the IP address of the domain in its local cache.
 
-The DNS also holds specific records that relate to the domain. These records include the SOA, IP addressing (A and AAAA), SMTP email (MX), name servers (NSes), and domain name alias (CNAME) records.
+The DNS also holds specific records that relate to the domain. These records include the SOA, IP addressing (A and AAAA), SMTP email (MX), name servers (NS), and domain name alias (CNAME) records.
 
 ## What does Azure offer?
 

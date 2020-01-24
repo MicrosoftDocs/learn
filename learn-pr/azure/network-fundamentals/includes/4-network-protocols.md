@@ -1,4 +1,4 @@
-When you consider a move to the cloud, it's essential to know the fundamentals of how your network works. The first step in understanding the composition of a network is understanding how network devices communicate with each other. This knowledge applies to your organization's network and to more extensive networks like the web. The same principles apply to all networks.
+When you consider a move to the cloud, it's essential to know the fundamentals of how your network works. The first step in understanding the composition of a network is to understand how network devices communicate with each other. This knowledge applies to your organization's network and to more extensive networks like the web. The same principles apply to all networks.
 
 In this unit, you'll learn about the essential network protocols that enable communication across internet-based networks.
 
@@ -16,7 +16,7 @@ Let's define a few terms before we look at some of the commonly used network pro
 
 A network address is a unique identifier that identifies a network-enabled device. A network-enabled device might have more than one address type. Although there are more address types, for this discussion, we'll focus on only two of these address types.
 
-The first type is a media access control (MAC) address that identifies the network interface on the hardware level. The second type is an Internet Protocol (IP) address that identifies die network interface on a software level.
+The first type is a media access control (MAC) address that identifies the network interface on the hardware level. The second type is an Internet Protocol (IP) address that identifies the network interface on a software level.
 
 We'll explore these two address types in more detail later.
 
@@ -24,7 +24,7 @@ We'll explore these two address types in more detail later.
 
 A data packet is a unit that's used to describe the message two devices on a network send each other. A data packet consists of raw data, headers, and potentially also a trailer. The header contains several information items. For example, it includes the sender and destination device addresses, the size of the packet, the protocol used, and the packet number. The trailer in a data packet deals with error checking.
 
-The concept is similar to sending someone a letter in the mail. But instead of sending several pages in one envelope, you send each page in a separate envelope. Enough information is sent in each envelope to allow the recipient to piece together the complete message after they have all the pages.
+The concept is similar to sending someone a letter in the mail. But instead of sending several pages in one envelope, each page is sent in a separate envelope. Enough information is sent in each envelope to allow the recipient to piece together the complete message after they have all the pages.
 
 ### What is a datagram?
 
@@ -34,7 +34,7 @@ A datagram is considered the same as a data packet. Datagrams commonly refer to 
 
 Routing, in the context of networks, refers to the mechanism used to make sure that data packets follow the correct delivery path between the sending and receiving device on a network.
 
-For example, think about the PC you're using and the server that's serving the page you're currently reading. Multiple networks might connect your PC, and the server and various paths might be available between these two devices.
+For example, think about the PC you're using and the server that's serving the page you're currently reading. Multiple networks might connect your PC and the server, and various paths might be available between these two devices.
 
 ## Protocol categories
 
@@ -56,7 +56,7 @@ Three foundational protocols of all internet-based networks are the Transmission
 
 - **Transmission Control Protocol**: TCP chunks up data into data packets that can be sent securely and quickly while minimizing the chance of data loss. It provides a stable and reliable mechanism for the delivery of data packets across an IP-based network. Even though TCP is an effective connection-oriented protocol, it has overhead.
 - **Internet Protocol**: IP is responsible for the addressing of a data packet. IP encapsulates the data packet to be delivered and adds an address header. The header contains information on the sender and recipient IP addresses. This protocol isn't concerned about the order in which the packets are sent or received. It also doesn't guarantee that a packet will be delivered, only the address.
-- **User Datagram Protocol**: UDP is a connectionless protocol that offers a low-latency and a loss-tolerant implementation. UDP is used with processes that don't need to verify that the recipient device received a datagram.
+- **User Datagram Protocol**: UDP is a connectionless protocol that offers a low-latency and loss-tolerant implementation. UDP is used with processes that don't need to verify that the recipient device received a datagram.
 
 The rest of the protocols that we'll discuss here are based on a type of application, for example, an email client or a web browser. Here are the most commonly used network communication protocols:
 
@@ -77,7 +77,7 @@ To implement a secure network, you must match the right security protocols for y
 - **Secure Socket Layer (SSL)**: SSL is a standard encryption and security protocol. It provides a secure and encrypted connection between your computer and the target server or device that you accessed over the internet.
 - **Transport Layer Security (TSL)**: TSL is the successor to SSL and provides a stronger and more robust security encryption protocol. Based on the Internet Engineering Task Force (ITEF) standard, it's designed to stop message forgery and tampering and eavesdropping. It's typically used to protect web browser communications, email, VoIP, and instant messaging. While TSL is now used, the replacement security protocol is often still called SSL.
 - **Hypertext Transfer Protocol Secure (HTTPS)**: HTTPS provides a more secure version of the standard HTTP protocol by using the TSL or SSL encryption standard. This combination of protocols ensures that all data transmitted between the server and the web browser is encrypted and secure from eavesdropping or data packet sniffing. The same principle is applied to the POP, SMTP, and IMAP protocols listed previously to create secure versions known as POPS, SMTPS, and IMAPS.
-- **Secure Shell (SSH)**: SSH is a cryptographic network security protocol that provides a secure data connection across a network. SSH is designed to support command-line execution of instructions, which includes remote authentication to servers. The FTP protocol uses many of the SSH functions to provide a secure file transfer mechanism.
+- **Secure Shell (SSH)**: SSH is a cryptographic network security protocol that provides a secure data connection across a network. SSH is designed to support command-line execution of instructions, which includes remote authentication to servers. FTP uses many of the SSH functions to provide a secure file transfer mechanism.
 - **Kerberos**: This validation protocol provides a robust authentication for client-server-based applications through secret-key cryptography. Kerberos assumes that all endpoints in the network are insecure. It enforces strong encryption for all communications and data at all times.
 
 ## Network management protocols
@@ -88,22 +88,22 @@ Network administrators need to monitor their networks and any devices attached t
 
 Two network management protocols are available:
 
-- **Simple Network Management Protocol (SNMP)**: SNMP is an internet protocol that allows for the collection of data from devices on your network and the management of those devices. The device has to support SNMP for information to gather information. Devices that typically support SNMP include switches, routers, servers, laptops, desktops, and printers.
+- **Simple Network Management Protocol (SNMP)**: SNMP is an internet protocol that allows for the collection of data from devices on your network and the management of those devices. The device has to support SNMP to gather information. Devices that typically support SNMP include switches, routers, servers, laptops, desktops, and printers.
 - **Internet Control Message Protocol (ICMP)**: ICMP is one of the protocols included within the Internet Protocol suite (IPS). It allows network-connected devices to send warning and error messages, along with operation information about the success or failure of a connection request, or if a service is unavailable. Unlike other network transport protocols like UDP and TCP, ICMP isn't used to send or receive data from devices on the network.
 
 ### Ports
 
-A port is a logical construct that allows the routing of incoming messages to specific processes. There's a particular port for every type of Internet Protocol suite. A port is an unsigned 16-bit number in the range 0 to 65535 and is also known as a port number. Ports are assigned by the sending TCP or UDP layer based on the communications protocol used.
+A port is a logical construct that allows the routing of incoming messages to specific processes. There's a particular port for every type of IPS. A port is an unsigned 16-bit number in the range 0 to 65535 and is also known as a port number. Ports are assigned by the sending TCP or UDP layer based on the communications protocol used.
 
-There are specific port numbers reserved for every service. The first 1024 ports, called the well-known port numbers, are reserved for the commonly used services. The high-numbered ports, called the ephemeral ports, are unreserved and used by dedicated applications.
+There are specific port numbers reserved for every service. The first 1,024 ports, called the well-known port numbers, are reserved for the commonly used services. The high-numbered ports, called the ephemeral ports, are unreserved and used by dedicated applications.
 
-Every port links to a specific service or communications protocol. It means the target network device, say a server, can receive multiple requests on each port and service each of them without conflict.
+Every port links to a specific service or communications protocol. It means that the target network device, say a server, can receive multiple requests on each port and service each of them without conflict.
 
 ### Well-known port numbers
 
 Much in the same way that IP addresses are split into classes, so are ports. There are three ranges of ports: the well-known ports, the registered ports, and the dynamic/private ports.
 
-The Internet Assigned Numbers Authority (IANA) manages the allocation of port numbers, the regional assignment of IP addresses, and Domain Name System (DNS) root zones. IANA also manages a central repository for protocol name and the registry used in internet protocols.
+The Internet Assigned Numbers Authority (IANA) manages the allocation of port numbers, the regional assignment of IP addresses, and Domain Name System (DNS) root zones. IANA also manages a central repository for protocol names and the registry used in internet protocols.
 
 The following table lists some of the more common well-known port numbers.
 
@@ -135,7 +135,7 @@ The IPS model is one of several similar networking models that varies between th
 ![Image shows the four layers of the Internet Protocol suite](../media/4-internet-protocol-suite-layers.svg)
 
 - **Application layer**: The top layer of this stack is concerned with application or process communication. The application layer is responsible for determining which communication protocols to use based on what type of message is transmitted. For example, the layer assigns the correct email protocols such as POP, SMTP, or IMAP if the message is email content.
-- **Transport layer**: This layer is responsible for host-to-host communication on the network. The protocols associated with this layer are TCP and UDP. TCP is responsible for flow control and UDP for providing a datagram service.
+- **Transport layer**: This layer is responsible for host-to-host communication on the network. The protocols associated with this layer are TCP and UDP. TCP is responsible for flow control. UDP is responsible for providing a datagram service.
 - **Internet layer**: This layer is responsible for exchanging datagrams. A datagram contains the data from the transport layer and adds in the origin and recipient IP addresses. The protocols associated with this layer are IP, ICMP, and the Internet Protocol Security (IPsec) suite.
 - **Network access layer**: The bottom layer of this stack is responsible for defining how the data is sent across the network. The protocols associated with this layer are ARP, MAC, Ethernet, DSL, and ISDN.
 

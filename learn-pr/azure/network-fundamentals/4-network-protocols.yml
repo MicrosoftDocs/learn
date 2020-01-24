@@ -32,7 +32,7 @@ quiz:
     choices:
     - content: "SNMP"
       isCorrect: false
-      explanation: "SNMP is a protocol that allows for the collection of data from devices on your network, and the management of those devices."
+      explanation: "SNMP is a protocol that allows for the collection of data from devices on your network and the management of those devices."
     - content: "HTTP"
       isCorrect: false
       explanation: "HTTP is an unsecured network protocol that delivers webpage content from a server to your browser."

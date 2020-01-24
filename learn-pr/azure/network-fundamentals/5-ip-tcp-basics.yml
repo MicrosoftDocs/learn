@@ -3,7 +3,7 @@ uid: learn.azure.network-fundamentals.ip-tcp-basics
 title: IP address standards and services
 metadata:
   title: IP address standards and services
-  description: Explore the IP address standards and services to use when implementing an Internet-based network.
+  description: Explore the IP address standards and services to use when you implement an internet-based network.
   ms.date: 01/09/2020
   author: cryophobia
   ms.author: chrvaw
@@ -17,7 +17,7 @@ quiz:
   questions:
   - content: "What is the structure of an IPv4 address?"
     choices:
-    - content: "It's made up of four groups of eight numbers, each separated by a dot"
+    - content: "It's made up of four groups of eight numbers, each separated by a dot."
       isCorrect: false
       explanation: "An IPv4 address is made up of four numbers, each separated by a dot. An example is 192.168.0.1."
     - content: "It's made up of four hexadecimal numbers (0-F), each separated by a colon."
@@ -52,13 +52,13 @@ quiz:
     choices:
     - content: "By connecting directly to the IP address of the private network."
       isCorrect: false
-      explanation: "It's not possible to access a private network from the internet. A private network can access another private network by using a Network address translation."
+      explanation: "It's not possible to access a private network from the internet. A private network can access another private network by using network address translation."
     - content: "The private network needs special access via a gateway."
       isCorrect: false
-      explanation: "It's not possible to access a private network from the internet. A private network can access another private network by using a Network address translation."
-    - content: "It's not possible to access a private network from the internet. A private network can access another private network by using a Network address translation."
+      explanation: "It's not possible to access a private network from the internet. A private network can access another private network by using network address translation."
+    - content: "It's not possible to access a private network from the internet. A private network can access another private network by using network address translation."
       isCorrect: true
-      explanation: "It's not possible to access a private network from the internet. A private network can access another private network by using a Network address translation."
+      explanation: "It's not possible to access a private network from the internet. A private network can access another private network by using network address translation."
   - content: "What is the DNS?"
     choices:
     - content: "The DNS helps resolve IP addresses to domain names."

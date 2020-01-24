@@ -113,11 +113,11 @@ Terabit Ethernet offers data transfer speeds of 200 Gbps and 400 Gbps. It's expe
 
 Azure comes with several networking tools and services.
 
-### Azure virtual networks
+### Azure Virtual Network
 
 ![A diagram showing a virtual network design](../media/2-virtual-network.svg)
 
-Using Azure, you can build complex virtual networks that emulate the structure of your actual on-premises networks. You can provision and manage your cloud-based virtual networks. Or, you can create hybrid virtual networks that integrate with your on-premises networks when you use Azure Virtual Network services.
+Using Azure Virtual Network, you can build complex virtual networks that emulate the structure of your actual on-premises networks. You can provision and manage your cloud-based virtual networks. You also can create hybrid virtual networks that integrate with your on-premises networks when you use Azure Virtual Network.
 
 ### Connectivity services
 

@@ -53,7 +53,7 @@ Nearly all of these devices depend on a media access control or an Internet Prot
 
 ### What is a media access control address?
 
-The media access control address or MAC address is a unique identifier assigned to every network-enabled device at the time of manufacture. It's sometimes referred to as the burned-in address, the Ethernet hardware address, or a physical address.
+The media access control (MAC) address is a unique identifier assigned to every network-enabled device at the time of manufacture. It's sometimes referred to as the burned-in address, the Ethernet hardware address, or a physical address.
 
 ![A screenshot showing a network device's address information](../media/3-mac-address.png)
 
@@ -69,14 +69,14 @@ A bridge divides a network into network segments and can filter and forward data
 
 ## Hub
 
-A hub acts as a multiport repeater on a network. Hubs are used to connect more than one device and structure the layout of a network. For example, you can cascade hubs to create network branches or as an endpoint to create a star layout with multiple user type devices. Hubs contain multiple ports that act as an input/output Ethernet connection between the hub and a network device. A hub can operate at only one speed, and that's the speed of the slowest network device on the network. It doesn't interpret or filter data packets and sends copies of each data packet to all attached devices.
+A hub acts as a multiport repeater on a network. Hubs are used to connect more than one device and structure the layout of a network. For example, you can cascade hubs to create network branches or as an endpoint to create a star layout with multiple user type devices. Hubs contain multiple ports that act as an input/output Ethernet connection between the hub and a network device. A hub can operate at only one speed, which is the speed of the slowest network device on the network. It doesn't interpret or filter data packets and sends copies of each data packet to all attached devices.
 
 ### Types of hubs
 
-- **Fast Ethernet**: Used for 100-Mbps networks and comes as Class I and Class II type hubs. The primary difference between the two is the amount of delay in data transmission. A Class I hub introduces a signal delay of up to 140-bit times. A Class II hub has a delay of up to 96-bit times. The delay allows for the transcoding of data between different base types. Only two Class II hubs can be used in a hub-based network. Class II hubs increased the likelihood of packet collisions because of their higher speeds.
+- **Fast Ethernet**: This hub is used for 100-Mbps networks and comes as Class I and Class II type hubs. The primary difference between the two is the amount of delay in data transmission. A Class I hub introduces a signal delay of up to 140-bit times. A Class II hub has a delay of up to 96-bit times. The delay allows for the transcoding of data between different base types. Only two Class II hubs can be used in a hub-based network. Class II hubs increase the likelihood of packet collisions because of their higher speeds.
 - **Dual speed**: With a traditional hub network, the speed of the network was governed by the slowest network device attached. For example, if you had 10-Mbps and 100-Mbps devices connected to a network, the speed of the whole network was only 10 Mbps. Dual-speed hubs solve the problem by acting as a bridge between the two different-speed devices.
 
-While hubs are now used for small ad-hoc networks of a few devices, they're rarely used at an enterprise level.
+Hubs are used for small ad-hoc networks of a few devices, but they're rarely used at an enterprise level.
 
 ## Switch
 
@@ -100,17 +100,17 @@ This type of switch has no configuration capability and is designed for small of
 
 #### Managed
 
-This type of switch offers the means to adjust the configuration, behavior, and operation of the switch. Access to the switch configuration is through either a command-line interface (CLI) that uses Telnet or Secure Shell (SSH), Remote Console, or via a web interface.
+This type of switch offers the means to adjust the configuration, behavior, and operation of the switch. Access to the switch configuration is either through a command-line interface (CLI) that uses Telnet or Secure Shell (SSH), Remote Console, or via a web interface.
 
 Here's a list of the more commonly available options to configure on a managed switch. Keep in mind that switch manufacturers might offer different configuration options.
 
-- **Quality of Service**: Manage LAN traffic so that critical systems are given higher priority. For example, voice-data packets, which need to be delivered quickly.
+- **Quality of Service**: Manage LAN traffic so that critical systems are given higher priority. An example is voice-data packets, which need to be delivered quickly.
 - **Virtual LANS**: Create logical groups of devices in their own virtual LAN. Traffic in one virtual LAN doesn't cross over into another virtual LAN. This logical group of devices can improve the security and performance of the network.
 - **Spanning Tree Protocol (STP)**: Build resilience into your network by defining alternative network routes in case a cable or device fails.
-- **Port mirroring**: Typically used with a network analyzer to diagnose network issues and problems. When setting up, the switch exports a copy of the network traffic to a single port.
-- **Bandwidth rate-limiting**: Allows fine control of the bandwidth used by specific ports, such as high bandwidth for ports handling database or VoIP and lower bandwidths for email.
-- **MAC address filtering**: Provides the ability to control which network devices can be used or have access through the switch.
-- **SNMP client**: Set up and configuration of SNMP with your network monitoring tools.
+- **Port mirroring**: Use with a network analyzer to diagnose network issues and problems. During setup, the switch exports a copy of the network traffic to a single port.
+- **Bandwidth rate-limiting**: Allow fine control of the bandwidth used by specific ports, such as high bandwidth for ports handling database or VoIP and lower bandwidths for email.
+- **MAC address filtering**: Provide the ability to control which network devices can be used or have access through the switch.
+- **SNMP client**: Set up and configure SNMP with your network monitoring tools.
 
 There are two subtypes of managed switch:
 
@@ -131,10 +131,10 @@ The majority of routers use the BGP to share routing information. The type of in
 
 There are several distinct classifications or types of routers available to service different network needs.
 
-- **Access routers**: Typically used in a home or small satellite offices. These routers tend to be low-cost devices, with a simple routing need.
-- **Distribution routers**: Compile traffic routing data from multiple routers. Distribution routers come with more significant memory and processing power. This type of router is designed to hold vast quantities of routing information. It's often used to manage and control the quality of service across a WAN.
+- **Access routers**: Typically used in a home or small satellite offices, these routers tend to be low-cost devices with a simple routing need.
+- **Distribution routers**: These routers compile traffic routing data from multiple routers. Distribution routers come with more significant memory and processing power. This type of router is designed to hold vast quantities of routing information. It's often used to manage and control the quality of service across a WAN.
 - **Edge routers**: An edge router operates at the boundary between your network and other networks, for example, your local network and the internet. They act as gateways to filter traffic and route it internally or forward it based on the packet header. An edge router often comes with access control or firewalls to improve the security. It might also handle DHCP and DNS services.
-- **Core routers**: Sometimes called enterprise routers, these routers are designed for higher bandwidths. They're used to connect different builds or geographic locations together. Core routers tend to have fewer features than edge routers because their primary focus is on minimizing packet loss and preventing congestions. They tend to do packet forwarding to edge routers.
+- **Core routers**: Sometimes called enterprise routers, these routers are designed for higher bandwidths. They're used to connect different builds or geographic locations together. Core routers tend to have fewer features than edge routers because their primary focus is on minimizing packet loss and preventing congestion. They tend to do packet forwarding to edge routers.
 
 ## Wireless router
 
