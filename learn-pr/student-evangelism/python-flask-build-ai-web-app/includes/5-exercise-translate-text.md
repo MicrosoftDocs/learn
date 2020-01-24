@@ -1,10 +1,10 @@
-The [Translator Text API](https://azure.microsoft.com/services/cognitive-services/translator-text-api/) is the member of Azure Cognitive Services that translates text from one language to another. It relies on state-of-the-art [Neural Machine Translation](https://www.microsoft.com/translator/business/machine-translation/#nmt) (NMT) to work its magic and supports [more than 60 languages](https://docs.microsoft.com/azure/cognitive-services/translator/language-support).
+The Translator Text API is the member of Azure Cognitive Services that translates text from one language to another. It relies on state-of-the-art Neural Machine Translation (NMT) to work its magic and supports more than 60 languages.
 
 Like the Computer Vision API, the Translator Text API is invoked using REST calls over the internet. Unlike the Computer Vision API, the Translator Text API currently has no Python SDK available. That doesn't mean that you can't use it from a Python application. It means that you must invoke the API using raw HTTP requests and write code to parse the JSON payloads that are returned.
 
 It's not as hard as it sounds, as you will prove when you modify the Contoso Travel site to pass text extracted from photos by the Computer Vision API to the Translator Text API for translation into another language.
 
-Resources that are used in this exercise are located in a [Git code samples repository](https://github.com/MicrosoftDocs/mslearn-build-ai-web-app-with-python-and-flask). 
+Resources that are used in this exercise are located in a [Git code samples repository](https://github.com/MicrosoftDocs/mslearn-build-ai-web-app-with-python-and-flask).
 
 ## Subscribe to the Translator Text API
 
