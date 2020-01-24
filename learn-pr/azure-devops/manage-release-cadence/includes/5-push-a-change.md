@@ -88,7 +88,6 @@ In Git, you seldom remove commits from a file's history. Unlike the "undo" opera
     06a26bd (HEAD -> blue-green) Change text and colors on the home page
     e5e8fe5 Swap deployment slots
     664d946 Trigger the pipeline
-    be86917 (upstream/blue-green) Initial
     ```
 
     In the output, trace the commit history. The latest commit is on top.
@@ -114,7 +113,6 @@ In Git, you seldom remove commits from a file's history. Unlike the "undo" opera
     06a26bd Change text and colors on the home page
     e5e8fe5 Swap deployment slots
     664d946 Trigger the pipeline
-    be86917 (upstream/blue-green) Initial
     ```
 
 ## Push the reverted change through the pipeline

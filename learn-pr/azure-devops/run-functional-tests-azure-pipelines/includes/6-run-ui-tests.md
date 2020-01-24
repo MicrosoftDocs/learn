@@ -85,7 +85,7 @@ In this section, you modify the pipeline configuration to run your Selenium UI t
     > [!TIP]
     > This file contains a few changes, so we recommend that you replace the entire file with what you see here.
 
-    [!code-yml[](code/6-azure-pipelines.yml?highlight=6,60,114-138)]
+    [!code-yml[](code/6-azure-pipelines.yml?highlight=6,61,114-138)]
 
     The file includes these three changes:
 
