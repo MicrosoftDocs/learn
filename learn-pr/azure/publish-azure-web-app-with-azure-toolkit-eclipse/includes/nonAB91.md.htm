@@ -1,0 +1,123 @@
+<p>In the previous unit, you learned that the Azure Explorer in the Azure Toolkit for Eclipse enables you to manage and configure Azure web apps. In this exercise, you'll see how to use Azure Explorer to stop and restart the <em>SampleWebApp</em> Azure web app.</p>
+
+<p>Next, you'll modify the web app and use Azure Explorer to add a pair of properties to the configuration. You'll modify the web app to read the value of these properties and use them in the web app logic. You'll then redeploy the web app, and verify that it functions as expected.</p>
+
+<p>Finally, you'll use Azure Explorer to delete the web app and remove it from Azure.</p>
+
+<h2>Stop and restart the web app</h2>
+
+<ol>
+<li><p>Start Eclipse if it isn't already running, and open the <strong>SampleWebApp</strong> project.</p></li>
+<li><p>In the Azure Toolkit for Eclipse toolbar, click <strong>Show Azure Explorer</strong>.</p></li>
+<li><p>If you aren't currently signed in to Azure, follow the procedure described in the previous exercise to sign in to your Azure account and select your subscription.</p></li>
+<li><p>In the <strong>Azure Explorer</strong> window, expand <strong>Web Apps</strong>, right-click your web app, and then click <strong>Stop</strong>.</p>
+
+<blockquote>
+  <p>[!div class="mx-imgBorder"]<br />
+  <img src="../media/7-web-app-stop.png" alt="Screenshot of the context menu for the web app in the <strong>Azure Explorer</strong> window" /></p>
+</blockquote></li>
+<li><p>Right-click your web app again, and then click <strong>Open in Browser</strong>. The web browser should display an HTTP 403 message indicating that the web app isn't currently running.</p>
+
+<blockquote>
+  <p>[!div class="mx-imgBorder"]<br />
+  <img src="../media/7-web-browser-403.png" alt="Screenshot of the web browser displaying the HTTP 403 message" /></p>
+</blockquote></li>
+<li><p>Leave the web browser open and return to Eclipse. </p></li>
+<li><p>In the <strong>Azure Explorer</strong> window, right-click the web app once, and then click <strong>Start</strong>.</p></li>
+<li><p>Return to the web browser, and refresh the display. The web app should be running again. </p></li>
+<li><p>Close the web browser and return to Eclipse.</p></li>
+</ol>
+
+<h2>Add configuration properties to the web app</h2>
+
+<ol>
+<li><p>In the <strong>Azure Explorer</strong> window, right-click the web app, and then click <strong>Show Properties</strong>. The properties window for the web app should appear:</p>
+
+<blockquote>
+  <p>[!div class="mx-imgBorder"]<br />
+  <img src="../media/7-web-app-properties.png" alt="Screenshot of the properties window for the web app" /></p>
+</blockquote></li>
+<li><p>In the properties window, click <strong>New</strong> to add a new property key and value.</p></li>
+<li><p>In the <strong>Key</strong> column of the new property, enter the name <strong>Delay</strong>, and then press Enter.</p></li>
+<li><p>Click <strong>Edit</strong>, and in the <strong>Value</strong> column for the property, type the value <strong>2</strong>, and then press Enter.</p></li>
+<li><p>In the properties window, click <strong>New</strong> again.</p></li>
+<li><p>Add another property named <strong>Iterations</strong>, with the value <strong>10</strong>.</p>
+
+<blockquote>
+  <p>[!div class="mx-imgBorder"]<br />
+  <img src="../media/7-new-web-app-properties.png" alt="Screenshot of the properties window for the web app showing the new properties and values" /></p>
+</blockquote></li>
+<li><p>Click <strong>Save</strong>.</p></li>
+<li><p>When the <strong>Properties updated</strong> message box appears, click <strong>OK</strong>.</p></li>
+</ol>
+
+<h2>Modify the web app to use the properties</h2>
+
+<ol>
+<li><p>In the <strong>Project Explorer</strong> window, expand <strong>SampleWebApp</strong>, expand <strong>WebContent</strong>, and then double-click <strong>index.jsp</strong>.</p></li>
+<li><p>In the <strong>body</strong> section of the code for the web page, change the code as shown below:</p>
+
+<p><code>html<br />
+&lt;body&gt;<br />
+    &lt;%! int delayms = Integer.valueOf(System.getenv("Delay")) * 1000;<br />
+        int iterations = Integer.valueOf(System.getenv("Iterations"));<br />
+        DateFormat fmt = new SimpleDateFormat("dd/MM/yy HH:mm:ss"); %&gt;<br />
+    &lt;%  for (int i = 0; i &lt; iterations; i++) {<br />
+        Thread.sleep(delayms); %&gt;<br />
+        &lt;p&gt;Today's date is &lt;%= fmt.format(new Date()) %&gt;&lt;/p&gt;<br />
+    &lt;% } %&gt;<br />
+    &lt;p&gt;Your IP address is &lt;%= request.getRemoteAddr() %&gt;&lt;/p&gt;<br />
+&lt;/body&gt;<br />
+</code></p>
+
+<p>This code reads the values of both properties - they're exposed as environment variables for the web app runtime. The code displays the date and time at <strong>Delay</strong> seconds intervals, looping <strong>Iterations</strong> times.</p>
+
+<blockquote>
+  <p>[!NOTE]<br />
+  In this example, the code runs synchronously when it generates the output. This means it will take up to 20 seconds for the page to appear.</p>
+</blockquote></li>
+<li><p>On the <strong>File</strong> menu, click <strong>Save</strong>.</p></li>
+<li><p>In the <strong>Project Explorer</strong> window, right-click <strong>SampleWebApp</strong>, select <strong>Azure</strong>, and then click <strong>Publish as Azure Web App</strong>.</p></li>
+<li><p>In the <strong>Deploy Web App</strong> window, accept the default settings - this action will overwrite the existing web app with the new version - then click <strong>Deploy</strong>.</p>
+
+<blockquote>
+  <p>[!NOTE]<br />
+  If you want to preserve the original version of the web app until the new version has been fully tested, deploy the new web app to a new deployment slot, using the options at the bottom of the <strong>Deploy Web App</strong> window.</p>
+</blockquote></li>
+<li><p>In the <strong>Azure Activity Log</strong> window, wait until the progress column indicates that the web app has been successfully deployed.</p></li>
+<li><p>Click the <strong>Published</strong> link in the <strong>Azure Activity Log</strong> window. A new browser window will open. After 20 seconds, the messages displaying the time at two-second intervals will appear, followed by the IP address of the client computer.</p>
+
+<blockquote>
+  <p>[!div class="mx-imgBorder"]<br />
+  <img src="../media/7-updated-web-app.png" alt="Screenshot of the web browser running the new version of the web app" /></p>
+</blockquote></li>
+<li><p>Leave the browser window open, and return to Eclipse.</p></li>
+<li><p>In the <strong>Azure Explorer</strong> window, right-click the web app, and then click <strong>Show Properties</strong>.</p></li>
+<li><p>In the properties window, select the <strong>Delay</strong> property, and click <strong>Edit</strong>. Change the value to <strong>1</strong>.</p></li>
+<li><p>Select the <strong>Iterations</strong> property, click <strong>Edit</strong>, and change the value to <strong>5</strong>.</p></li>
+<li><p>Click <strong>Save</strong>.</p></li>
+<li><p>In the <strong>Properties updated</strong> message box, click <strong>OK</strong>.</p></li>
+<li><p>Switch back to the web browser, and refresh the display. This time, the page will display the time at one-second intervals, repeated only five times. Notice that you didn't need to redeploy the web app.</p></li>
+<li><p>Close the web browser and return to Eclipse.</p></li>
+</ol>
+
+<h2>Delete the web app</h2>
+
+<ol>
+<li><p>In the <strong>Azure Explorer</strong> window, right-click the web app, and then click <strong>Delete</strong>.</p></li>
+<li><p>In the <strong>Azure Explorer</strong> message box that prompts you to make sure this is really what you want to do, click <strong>OK</strong>.</p>
+
+<blockquote>
+  <p>[!div class="mx-imgBorder"]<br />
+  <img src="../media/7-delete-web-app.png" alt="Screenshot of the message box confirming that the user wants to delete the web app" /></p>
+</blockquote></li>
+<li><p>When the web app has been deleted, it will disappear from the <strong>Web Apps</strong> folder in <strong>Azure Explorer</strong>.</p></li>
+</ol>
+
+<blockquote>
+  <p>[!IMPORTANT]<br />
+  Deleting the web app using the Azure Toolkit for Eclipse doesn't delete the app service plan, but you can remove the plan using the Azure portal. To do this, navigate to the resource group, select the app service plan, and then click <strong>Delete</strong>, as shown in the image below:</p>
+  
+  <p>[!div class="mx-imgBorder"]<br />
+  <img src="../media/7-delete-app-service-plan.png" alt="Screenshot of the Azure portal. The user is deleting the app service plan" /></p>
+</blockquote>

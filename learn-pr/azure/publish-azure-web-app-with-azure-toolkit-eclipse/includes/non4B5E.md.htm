@@ -1,0 +1,95 @@
+<p>The Azure Toolkit for Eclipse provides several tools in the Azure Explorer that you can use to manage, configure, and redeploy web apps to an Azure App Service. In this unit, you'll learn how to use these features to start and stop a web app, redeploy it, switch deployment slots, set properties for a web app, and delete it.</p>
+
+<h2>How to stop and restart a web app</h2>
+
+<p>Starting and stopping a web app using Azure Explorer is a straightforward process. </p>
+
+<p>To stop a web app in the <strong>Azure Explorer</strong> window, right-click the web app in the <strong>Web Apps</strong> folder, and then click <strong>Stop</strong>.</p>
+
+<blockquote>
+  <p>[!div class="mx-imgBorder"]<br />
+  <img src="../media/6-stop-web-app.png" alt="Screenshot of the <strong>Azure Explorer</strong> window. The user has selected the <strong>Stop</strong> command for a web app." /></p>
+</blockquote>
+
+<p>The web app will stop accepting new requests, and then shut down. The icon for the web app will change to indicate that it has stopped.</p>
+
+<blockquote>
+  <p>[!div class="mx-imgBorder"]<br />
+  <img src="../media/6-stopped-icon.png" alt="The icon for a web app that has stopped." /></p>
+</blockquote>
+
+<p>To start a web app, use the <strong>Start</strong> command in the context menu for the web app. When the app is running, the icon will change back to its original state.</p>
+
+<p>If you need to quickly reset a stalled web app, use the <strong>Restart</strong> command to stop and start the web app in a single step.</p>
+
+<h2>How to redeploy a web app</h2>
+
+<p>To redeploy a web app after you've made changes, follow the same procedure that you used to originally deploy the web app; for example: in the <strong>Project Explorer</strong> pane, you would right-click your web app, select <strong>Azure</strong>, and then click <strong>Publish as Azure Web App</strong>. However, instead of creating a new App Service, you would select an existing App Service and then click <strong>Deploy</strong>, and the previous version of the web app will be replaced by the new version.</p>
+
+<p>As described in an earlier unit, if you're redeploying a web app after making modifications to its functionality, it's a good idea to use a new deployment slot. To do so, you would leave the existing version of the web app running until you're satisfied that the new version is functioning correctly. When you deploy the web app, in the <strong>Deploy Web App</strong> wizard, select the <strong>Deploy to Slot</strong> option. You can reuse an existing deployment slot, or create a new one. The example below deploys a new version of the <strong>contosocurrenylistener</strong> web app shown earlier to a deployment slot named <strong>contosocurrenylistenerv2</strong>. The previous version of the web service stays intact.</p>
+
+<blockquote>
+  <p>[!div class="mx-imgBorder"]<br />
+  <img src="../media/6-deploy-web-app.png" alt="The <strong>Deploy Web App</strong> wizard. The user is deploying the web app to a new deployment slot" /></p>
+</blockquote>
+
+<p>The new version of the web app is available through the URL <strong>http://contosocurrencylister-contosocurrencylistenerv2.azurewebsites.net/</strong>. The deployment slot name is appended to the name of the web app. The original web app is still available at <strong>http://contosocurrencylister.azurewebsites.net/</strong>.</p>
+
+<h2>How to switch deployment slots</h2>
+
+<p>You can switch version 2 of the web app with the original, to make version 2 the default. Version 2 becomes available through the URL <strong>http://contosocurrencylister.azurewebsites.net/</strong>. To do this, in the <strong>Azure Explorer</strong> window, expand your web app, and then expand <strong>Deployment Slots</strong>. Right-click the new deployment slot, and then click <strong>Swap with production</strong>.</p>
+
+<blockquote>
+  <p>[!div class="mx-imgBorder"]<br />
+  <img src="../media/6-swap-slots.png" alt="The <strong>Azure Explorer</strong> window. The user is swapping the web app in the version 2 deployment slot with the production slot" /></p>
+  
+  <p>[!NOTE]<br />
+  You can treat a version of the web app running in a deployment slot as a web app in its own right. Use Azure Explorer to start, stop, and reconfigure the properties of the app running in a deployment slot.</p>
+</blockquote>
+
+<h2>How to configure web app properties</h2>
+
+<p>Web apps (and deployment slots), can have developer-defined properties. A property is a key-value pair that's provided to the web app as an environment variable. A Java web app can read the value of a property using the <code>System.getenv()</code> function. Use properties to pass configuration information to the web app. You can change the value of a property without needing to update or redeploy the web app.</p>
+
+<p>You create and modify properties by using the <strong>Show Properties</strong> command in the <strong>Azure Explorer</strong> window.</p>
+
+<blockquote>
+  <p>[!div class="mx-imgBorder"]<br />
+  <img src="../media/6-show-properties.png" alt="The <strong>Azure Explorer</strong> window. The user has selected the <strong>Show Properties</strong> command" /></p>
+</blockquote>
+
+<p>The properties window contains a list of properties. This list is initially empty, but you can add, remove, and change property values using the <strong>New</strong>, <strong>Delete</strong>, and <strong>Edit</strong> buttons. You make the changes permanent with the <strong>Save</strong> button.</p>
+
+<p>The example below defines a property named <strong>MaxNumberToDisplay</strong>, with the value <strong>50</strong>.</p>
+
+<blockquote>
+  <p>[!div class="mx-imgBorder"]<br />
+  <img src="../media/6-properties-window.png" alt="The <strong>Properties</strong> window. The user has created a new property named <strong>MaxNumberToDisplay</strong>" /></p>
+</blockquote>
+
+<p>The <strong>contosocurrencylister</strong> can read the value of this property and use it to limit the number of currencies displayed, as shown in the following code:</p>
+
+<p>```java<br />
+&lt;%! int counter;<br />
+    Set<Currency> currencies = Currency.getAvailableCurrencies(); <br />
+    int maxNumberToDisplay = Integer.valueOf(System.getenv("MaxNumberToDisplay"));%></p>
+
+<p>&lt;% counter = 1;<br />
+   for(Currency currency : currencies){ %><br />
+        <p>Currency is &lt;%= currency.toString() %> </p><br />
+&lt;%      counter++;<br />
+        if (counter >= maxNumberToDisplay)<br />
+            break;<br />
+    } %></p>
+
+<p> There are <%= counter %> currencies available.</p>
+
+<p>```</p>
+
+<h2>How to delete a web app</h2>
+
+<p>To remove a web app, in the <strong>Azure Explorer</strong> window, right-click the web app, and then click <strong>Delete</strong>. You'll be prompted to confirm the deletion, as this operation can't be easily undone.</p>
+
+<p>When you delete a web app, the Web Apps service is removed from Azure, but the App Service Plan stays - you'll still be charged. If you wish, you can delete the App Service Plan using the Azure portal.</p>
+
+<p>You can also delete individual deployment slots from a web app. In this case, only the deployment slot will be removed.</p>

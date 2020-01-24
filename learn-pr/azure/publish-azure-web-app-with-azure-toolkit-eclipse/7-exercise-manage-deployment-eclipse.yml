@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.publish-azure-web-app-with-azure-toolkit-eclipse.exercise-manage-deployment-eclipse
+title: Exercise - Manage app deployments from Eclipse
+metadata:
+  title: Exercise - Manage app deployments from Eclipse
+  description: Managing web app deployments from Eclipse using the Azure Toolkit
+  ms.date: 01/01/2020
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 10
+azureSandbox: true
+content: |
+  [!include[](includes/7-exercise-manage-deployment-eclipse.md)]

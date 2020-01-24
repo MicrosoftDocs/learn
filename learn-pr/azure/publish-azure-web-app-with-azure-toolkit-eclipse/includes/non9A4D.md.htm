@@ -1,0 +1,116 @@
+<p>After you have installed the Azure Toolkit for Eclipse, you have an environment you can use to build and deploy Java web apps to Azure.</p>
+
+<p>In this exercise, you'll use Eclipse to create a Java web app that uses Java Server Pages (JSP) to generate dynamic content for a web page. The page will display the current date and time, together with the IP address of the client computer running the web browser used to connect to the web app. You'll test the web app locally using the Apache Tomcat server.</p>
+
+<h2>Create a new web app</h2>
+
+<ol>
+<li><p>Start Eclipse if it isn't already running.</p></li>
+<li><p>On the <strong>File</strong> menu, select <strong>New</strong>, and then click <strong>Dynamic Web Project</strong>.</p>
+
+<blockquote>
+  <p>[!div class="mx-imgBorder"]<br />
+  <img src="../media/3-new-web-project-menu.png" alt="Screenshot of the <strong>File</strong> menu in Eclipse. The user has selected the <strong>Dynamic Web Project</strong> command." /></p>
+</blockquote></li>
+<li><p>In the <strong>New Dynamic Web Project</strong> wizard, on the <strong>Dynamic Web Project</strong> page, enter <strong>SampleWebApp</strong> in the <strong>Project name</strong> box. Set the <strong>Target runtime</strong> is set to <strong>Apache Tomcat v8.0</strong>, and then click <strong>Finish</strong>.</p>
+
+<blockquote>
+  <p>[!div class="mx-imgBorder"]<br />
+  <img src="../media/3-dynamic-web-project.png" alt="Screenshot of the <strong>Dynamic Web Project</strong> page in the <strong>New Dynamic Web Project</strong> wizard, in Eclipse." /></p>
+  
+  <p>[!NOTE]<br />
+  If the <strong>Apache Tomcat v8.0</strong> runtime isn't listed, click <strong>New Runtime</strong>, and download it</p>
+</blockquote></li>
+<li><p>In the <strong>Project Explorer</strong> pane, expand <strong>SampleWebApp</strong>, expand <strong>Java Resources</strong>, right-click <strong>src</strong>, select <strong>New</strong>, and then click <strong>JSP File</strong>.</p>
+
+<blockquote>
+  <p>[!div class="mx-imgBorder"]<br />
+  <img src="../media/3-new-jsp-file.png" alt="Screenshot of the <strong>New</strong> menu for a source code item. The user has selected <strong>JSP File</strong>." /></p>
+</blockquote></li>
+<li><p>In the <strong>New JSP File</strong> wizard, on the <strong>JSP</strong> page, verify that the parent folder is set to <strong>SampleWebApp/WebContent</strong>. In the <strong>File name</strong> box, enter <strong>index.jsp</strong>, and then click <strong>Finish</strong>.</p>
+
+<blockquote>
+  <p>[!div class="mx-imgBorder"]<br />
+  <img src="../media/3-jsp-file.png" alt="Screenshot of the <strong>New JSP File</strong> wizard in Eclipse, showing the <strong>JSP</strong> page." /></p>
+</blockquote></li>
+<li><p>In the code editor window that appears, displaying the <strong>index.jsp</strong> file, in the <strong>head</strong> section of the page, change the HTML markup for the title to <strong>Sample Web App</strong>, as follows:</p>
+
+<p><code>html<br />
+&lt;head&gt;<br />
+    &lt;meta charset="UTF-8"&gt;<br />
+    &lt;title&gt;Sample Web App&lt;/title&gt;<br />
+&lt;/head&gt;<br />
+</code></p></li>
+<li><p>In the <strong>body</strong> section of the page, add the code shown below:</p>
+
+<p><code>html<br />
+&lt;body&gt;<br />
+    &lt;%! DateFormat fmt = new SimpleDateFormat("dd/MM/yy HH:mm:ss"); %&gt;<br />
+    &lt;p&gt;Today's date is &lt;%= fmt.format(new Date()) %&gt;&lt;/p&gt;<br />
+    &lt;p&gt;Your IP address is &lt;%= request.getRemoteAddr() %&gt;&lt;/p&gt;<br />
+&lt;/body&gt;<br />
+</code></p>
+
+<p>This code retrieves the current date then formats and displays it. The code also extracts the IP address of the client from the request message, and prints it.</p></li>
+<li><p>Near the top of the page, after the first <strong>@page</strong> directive that specifies the language and content type of the page, add the two <strong>@page</strong> directives shown in the following code:</p>
+
+<p><code>html<br />
+&lt;%@ page language="java" contentType="text/html; charset=UTF-8"<br />
+    pageEncoding="UTF-8"%&gt;<br />
+&lt;%@ page import ="java.util.*" %&gt;<br />
+&lt;%@ page import ="java.text.*" %&gt;<br />
+</code></p>
+
+<p>These directives import the <em>java.util</em> and <em>java.text</em> libraries. The code in the body of the page uses these libraries.</p>
+
+<p>The completed code should look like this:</p>
+
+<p><code>html<br />
+&lt;%@ page language="java" contentType="text/html; charset=UTF-8"<br />
+    pageEncoding="UTF-8"%&gt;<br />
+&lt;%@ page import ="java.util.*" %&gt;<br />
+&lt;%@ page import ="java.text.*" %&gt;<br />
+&lt;!DOCTYPE html&gt;<br />
+&lt;html&gt;<br />
+&lt;head&gt;<br />
+&lt;meta charset="UTF-8"&gt;<br />
+&lt;title&gt;Sample Web App&lt;/title&gt;<br />
+&lt;/head&gt;<br />
+&lt;body&gt;<br />
+    &lt;%! DateFormat fmt = new SimpleDateFormat("dd/MM/yy HH:mm:ss"); %&gt; <br />
+    &lt;p&gt;Today's date is &lt;%= fmt.format(new Date()) %&gt;&lt;/p&gt;<br />
+    &lt;p&gt;Your IP address is &lt;%= request.getRemoteAddr() %&gt;&lt;/p&gt;<br />
+&lt;/body&gt;<br />
+&lt;/html&gt;<br />
+</code></p></li>
+<li><p>On the <strong>File</strong> menu, click <strong>Save</strong>.</p></li>
+</ol>
+
+<h2>Test the web app locally</h2>
+
+<ol>
+<li><p>On the <strong>Run</strong> menu, click <strong>Run</strong>.</p>
+
+<blockquote>
+  <p>[!div class="mx-imgBorder"]<br />
+  <img src="../media/3-run-app.png" alt="Screenshot of the <strong>Run</strong> menu in Eclipse. The user has selected the <strong>Run</strong> command." /></p>
+</blockquote></li>
+<li><p>In the <strong>Run On Server</strong> wizard, select the server <strong>Tomcat v8.0 Server at localhost</strong>, and then click <strong>Finish</strong>.</p>
+
+<blockquote>
+  <p>[!div class="mx-imgBorder"]<br />
+  <img src="../media/3-run-on-server.png" alt="Screenshot of the <strong>Run On Server</strong> wizard in Eclipse. The user has selected the Tomcat v8.0 Server at localhost server." /></p>
+  
+  <p>[!NOTE]<br />
+  If you have just installed Tomcat, there might not be an existing server available. In this case, select <strong>Manually define a new server</strong>, and select <strong>Tomcat v8.0 Server</strong>.</p>
+</blockquote></li>
+<li><p>You'll see a few messages appear as the Tomcat server starts running. Eclipse will show the output of the web application in a browser window inside the IDE, which should look similar to the image shown below.</p>
+
+<blockquote>
+  <p>[!div class="mx-imgBorder"]<br />
+  <img src="../media/3-results.png" alt="Screenshot of the output from the sample web application in Eclipse." /></p>
+</blockquote></li>
+<li><p>Click the <strong>Go to the selected URL</strong> button - the green arrow next to the URL in the <strong>Sample Web App</strong> window - to refresh the page. You should see the time change as the page is regenerated and Java code is executed again.</p></li>
+</ol>
+
+<p>Congratulations! You've created a sample web app and deployed it locally using Eclipse. In the next exercise, you'll deploy the web app to Azure.</p>

@@ -1,0 +1,127 @@
+<p>In a previous exercise, you created a dynamic web application using Eclipse, and you tested the web app locally by using an Apache Tomcat server that was running on your computer.</p>
+
+<p>In this exercise, you'll use the Azure Toolkit for Azure to create a new Azure App Service, deploy your web app to Azure, and then test your web app. This exercise runs using Eclipse on your desktop computer. However, the Azure Toolkit will create the App Service and App Service plan in an Azure sandbox account, so the results should be the same as if you were running the web app locally.</p>
+
+<h2>Sign in to Azure from Eclipse</h2>
+
+<ol>
+<li><p>Start Eclipse if it isn't already running, and open the <strong>SampleWebApp</strong> project.</p></li>
+<li><p>In the Azure Toolkit for Eclipse toolbar, click <strong>Show Azure Explorer</strong>.</p>
+
+<blockquote>
+  <p>[!div class="mx-imgBorder"]<br />
+  <img src="../media/5-start-azure-explorer.png" alt="Screenshot of the <strong>Azure Toolkit for Eclipse</strong> toolbar. The <strong>Show Azure Explorer</strong> button is highlighted." /></p>
+</blockquote></li>
+<li><p>In the <strong>Azure Explorer</strong> window, right-click the <strong>Azure</strong> icon, and then click <strong>Sign in</strong>.</p>
+
+<blockquote>
+  <p>[!div class="mx-imgBorder"]<br />
+  <img src="../media/5-azure-sign-in.png" alt="Screenshot of the <strong>Azure Explorer</strong> window. The user isn't currently signed in." /></p>
+</blockquote></li>
+<li><p>On the <strong>Azure Sign In</strong> page, click <strong>Device Login</strong>, and the click <strong>Sign in</strong>.</p>
+
+<blockquote>
+  <p>[!div class="mx-imgBorder"]<br />
+  <img src="../media/5-device-login.png" alt="Screenshot of the <strong>Azure Sign In</strong> page. The user has selected <strong>Device Login</strong>." /></p>
+</blockquote></li>
+<li><p>On the <strong>Azure Device Login</strong> window, click <strong>Copy&amp;Open</strong>. This action copies the device code displayed in the window to the clipboard.</p>
+
+<blockquote>
+  <p>[!div class="mx-imgBorder"]<br />
+  <img src="../media/5-device-login-2.png" alt="Screenshot of the <strong>Azure Device Login</strong> window. The user has selected <strong>Copy&amp;Open</strong>." /></p>
+</blockquote></li>
+<li><p>A web browser window will open. At the <strong>Enter code</strong> prompt, paste the device code you just copied to the clipboard, and then click <strong>Next</strong></p>
+
+<blockquote>
+  <p>[!div class="mx-imgBorder"]<br />
+  <img src="../media/5-enter-code.png" alt="Screenshot of the <strong>Azure Device Login</strong> window. The user has selected <strong>Copy&amp;Open</strong>." /></p>
+</blockquote></li>
+<li><p>When prompted, sign in to Azure with the same account that you used to create the Azure sandbox.</p></li>
+<li><p>In the <strong>Your Subscriptions</strong> page, select the <strong>Concierge Subscription</strong>. This is a subscription created specifically for the sandbox.</p>
+
+<blockquote>
+  <p>[!div class="mx-imgBorder"]<br />
+  <img src="../media/5-subscriptions.png" alt="Screenshot of the <strong>Your Subscriptions</strong> page. The user has selected the <strong>Concierge Subscription</strong>." /></p>
+</blockquote></li>
+</ol>
+
+<h2>Deploy the web app to your Azure subscription</h2>
+
+<ol>
+<li><p>In the <strong>Project Explorer</strong> pane, right-click <strong>SampleWebApp</strong>, select <strong>Azure</strong>, and then click <strong>Publish as Azure Web App</strong>.</p>
+
+<blockquote>
+  <p>[!div class="mx-imgBorder"]<br />
+  <img src="../media/5-publish-web-app-menu.png" alt="Screenshot of the <strong>Azure</strong> menu in Eclipse. The user has selected the <strong>Publish as Azure Web App</strong> command." /></p>
+</blockquote></li>
+<li><p>In the <strong>Deploy Web App</strong> page, click <strong>Create</strong> to create a new Azure App Service.</p>
+
+<blockquote>
+  <p>[!div class="mx-imgBorder"]<br />
+  <img src="../media/5-deploy-web-app.png" alt="Screenshot of the <strong>Deploy Web App</strong> window in Eclipse." /></p>
+</blockquote></li>
+<li><p>In the <strong>Create App Service</strong> window, specify the following values, and then click <strong>Create</strong>:</p>
+
+<blockquote>
+  <p>[!NOTE]<br />
+  The web app must have a unique name. We suggest using something like <strong>[<em>your name or initials</em>]samplewebapp</strong>. Use this name wherever you see <em>[your-webapp-name]</em> in this exercise.</p>
+</blockquote>
+
+<p>| Property | Value |<br />
+|---|---|<br />
+| Name | <em>[your-webapp-name]</em> |<br />
+| Subscription | <em>Concierge Subscription</em> |<br />
+| Runtime | <em>Linux</em> |<br />
+| Linux Runtime | <em>TOMCAT 8.5-java-11</em> |<br />
+| App service plan | Select <strong>Create new</strong> and accept the default name and location, but change the <strong>Pricing Tier</strong> to <strong>Free_F1</strong> for this exercise. |<br />
+| Resource Group | <em><rgn>[sandbox resource group name]</rgn></em> |<br />
+| App Settings | Leave empty |</p>
+
+<blockquote>
+  <p>[!div class="mx-imgBorder"]<br />
+  <img src="../media/5-create-app-service.png" alt="Screenshot of the <strong>Create App Service</strong> window in Eclipse." /></p>
+</blockquote></li>
+<li><p>Back in the <strong>Deploy Web App</strong> page, verify that your new app service is selected, and then click <strong>Deploy</strong> to deploy your web app to Azure.</p>
+
+<blockquote>
+  <p>[!div class="mx-imgBorder"]<br />
+  <img src="../media/5-deploy-to-app-service.png" alt="Screenshot of the <strong>Deploy Web App</strong> window in Eclipse. The web app will be deployed to the newly created app service" /></p>
+</blockquote>
+
+<p>The <strong>Azure Activity Log</strong> window will appear, showing the status of the deploy operation.</p>
+
+<blockquote>
+  <p>[!div class="mx-imgBorder"]<br />
+  <img src="../media/5-azure-activity-log.png" alt="Screenshot of the <strong>Azure Activity Log</strong> window in Eclipse. The web app is being deployed" /></p>
+</blockquote>
+
+<p>Wait until the message in the <strong>Progress</strong> column changes to <strong>Published</strong> before continuing.</p></li>
+</ol>
+
+<h2>Test the web app in Azure</h2>
+
+<ol>
+<li><p>In the <strong>Azure Explorer</strong> window, right-click <strong>Web Apps</strong>, and then click <strong>Refresh</strong>.</p></li>
+<li><p>Expand <strong>Web Apps</strong>. Verify that your new web app is listed.</p>
+
+<blockquote>
+  <p>[!div class="mx-imgBorder"]<br />
+  <img src="../media/5-azure-explorer-web-app.png" alt="Screenshot of the <strong>Azure Explorer</strong> window in Eclipse, showing the new web app" /></p>
+</blockquote></li>
+<li><p>Right-click the web app, and then click <strong>Open In Browser</strong>.</p>
+
+<blockquote>
+  <p>[!div class="mx-imgBorder"]<br />
+  <img src="../media/5-web-app-open.png" alt="Screenshot of the context menu for the web app in the <strong>Azure Explorer</strong> window" /></p>
+</blockquote></li>
+<li><p>In the web browser, verify that the web app displays similar results to before, when it ran locally. The main difference will be the IP address, which will be the real IP address of your computer rather than 127.0.0.1 (localhost).</p>
+
+<blockquote>
+  <p>[!div class="mx-imgBorder"]<br />
+  <img src="../media/5-web-app-running.png" alt="Screenshot of the web app running in a browser" /></p>
+</blockquote></li>
+<li><p>Click the refresh button in the web browser, and verify that the time is updated.</p></li>
+<li><p>Close the web browser and return to Eclipse.</p></li>
+</ol>
+
+<p>You've used the Azure Toolkit for Eclipse to create an App Service in Azure. You've deployed the web app to this app service, and tested it.</p>
