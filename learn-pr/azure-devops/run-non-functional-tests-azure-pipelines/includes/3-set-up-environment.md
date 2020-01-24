@@ -205,7 +205,7 @@ Here you create the App Service instances for the three stages that you'll deplo
     ![The default home page on Azure App Service](../../shared/media/app-service-default.png)
 
 > [!IMPORTANT]
-> The [Clean up your Azure DevOps environment](/learn/modules/run-functional-tests-azure-pipelines/7-clean-up-environment?azure-portal=true) page in this module contains important cleanup steps. Cleaning up helps ensure that you're not charged for Azure resources after you complete this module. Be sure to follow the cleanup steps even if you don't complete this module.
+> The [Clean up your Azure DevOps environment](/learn/modules/run-non-functional-tests-azure-pipelines/6-clean-up-environment?azure-portal=true) page in this module contains important cleanup steps. Cleaning up helps ensure that you're not charged for Azure resources after you complete this module. Be sure to follow the cleanup steps even if you don't complete this module.
 
 ## Create pipeline variables in Azure Pipelines
 
@@ -251,19 +251,21 @@ Here you create a service connection that enables Azure Pipelines to access your
 1. In Azure DevOps, go to your **Space Game - web - Nonfunctional tests** project.
 1. From the bottom corner of the page, select **Project settings**.
 1. Under **Pipelines**, select **Service connections**.
-1. Select **New service connection**, choose **Azure Resource Manager**, and then select **Next**.
-1. Select **Service principal (automatic)**, and then select **Next**.
+1. Select **New service connection**, then choose **Azure Resource Manager**, then select **Next**.
+1. Near the top of the page, select **Service Principal Authentication**.
 1. Fill in these fields:
 
     | Field               | Value                                        |
     |---------------------|----------------------------------------------|
+    | Connection name | *Resource Manager - Tailspin - Space Game* |
     | Scope level     | **Subscription**                             |
     | Subscription    | Your Azure subscription                      |
     | Resource Group  | **tailspin-space-game-rg**                   |
-    | Service connection name | *Resource Manager - Tailspin - Space Game* |
 
     During the process, you might be prompted to sign in to your Microsoft account.
 
-1. Select **Save**.
+1. Ensure that **Allow all pipelines to use this connection** is selected.
 
-    Azure DevOps does a test connection to verify that it can connect to your Azure subscription. If Azure DevOps can't connect, you'll have the chance to sign in again.
+1. Select **OK**.
+
+    Azure DevOps performs a test connection to verify that it can connect to your Azure subscription. If Azure DevOps can't connect, you have the chance to sign in a second time.
