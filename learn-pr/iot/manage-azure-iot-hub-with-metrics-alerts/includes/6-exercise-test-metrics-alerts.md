@@ -1,3 +1,10 @@
+In this penultimate unit, we test that all your good work so far functions as it should!
+
+Start by making sure your device app is up and running. You should see a console screen full of telemetry messages.
+
+![Screenshot showing how to name, and then create, a new device template](../media/vibration-telemetry.png)
+
+If you get any errors, go back and check the connection strings in the device app code.
 
 ## Test the Http trigger URL works
 
