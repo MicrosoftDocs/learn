@@ -1,14 +1,14 @@
-[Azure App Service](https://azure.microsoft.com/documentation/articles/app-service-value-prop-what-is/) is a set of services provided by Microsoft Azure to enable developers to easily build and deploy web apps. Included in the App Service family are [Azure Web Apps](https://azure.microsoft.com/documentation/articles/app-service-web-overview/), which allow you to quickly and easily deploy websites built with tools and languages you’re already familiar with.
+Azure App Service is a set of services provided by Microsoft Azure to enable developers to easily build and deploy web apps. Included in the App Service family are Azure Web Apps, which allow you to quickly and easily deploy websites built with tools and languages you’re already familiar with.
 
-Azure Web Apps makes deploying websites extraordinarily easy, and not just websites built using the Microsoft stack. You can deploy Python apps that use MySQL just as easily as ASP.NET apps that use SQL Server. You can select from a wide variety of web app templates or build templates of your own. You can configure web apps to autoscale as traffic increases to ensure that your customers aren’t left waiting during periods of peak demand. You can publish apps to staging locations and test them in the cloud before taking them live, and then swap staging and production with the click of a button. You can even create [WebJobs](https://docs.microsoft.com/azure/app-service/webjobs-create)—programs or scripts that run continuously or on a schedule to handle billing and other time-critical tasks. In short, Azure Web Apps takes the pain out of publishing and maintaining web apps. Azure Web Apps is as suitable for a personal photo-sharing site as it is for enterprise-grade sites serving millions of customers.
+Azure Web Apps makes deploying websites extraordinarily easy, and not just websites built using the Microsoft stack. You can deploy Python apps that use MySQL just as easily as ASP.NET apps that use SQL Server. You can select from a wide variety of web app templates or build templates of your own. You can configure web apps to autoscale as traffic increases to ensure that your customers aren’t left waiting during periods of peak demand. You can publish apps to staging locations and test them in the cloud before taking them live, and then swap staging and production with the click of a button. You can even create WebJobs — programs or scripts that run continuously or on a schedule to handle billing and other time-critical tasks. In short, Azure Web Apps takes the pain out of publishing and maintaining web apps. Azure Web Apps is as suitable for a personal photo-sharing site as it is for enterprise-grade sites serving millions of customers.
 
 In this unit, you will deploy Contoso Travel to Azure as an Azure web app so it can be accessed by anyone, from anywhere, using a browser. And you will learn about App Service application settings, which allow API keys and other "secrets" used by an application to be stored securely in the cloud.
 
-Resources that are used in this exercise are located in a [Git code samples repository](https://github.com/MicrosoftDocs/mslearn-build-ai-web-app-with-python-and-flask). 
+Resources that are used in this exercise are located in a [Git code samples repository](https://github.com/MicrosoftDocs/mslearn-build-ai-web-app-with-python-and-flask).
 
 ## Create an Azure App Service
 
-In this exercise, you will use the [Azure CLI](https://docs.microsoft.com/cli/azure/get-started-with-azure-cli?view=azure-cli-latest) to deploy your website to Azure.
+In this exercise, you will use the Azure CLI to deploy your website to Azure.
 
 1. Create a text file named **requirements.txt** containing the following statements in the project directory—the directory containing the Contoso Travel site:
 
@@ -36,7 +36,7 @@ Wait for the command to complete; it will take a few minutes. Then confirm from 
 
 ## Add application settings
 
-When you ran the website locally, it used `os.environ` to load API keys for the Computer Vision API and the Translator Text API and the URL of the Computer Vision API from local environment variables. In order for the site to run in Azure, these same settings needed to be added to the Azure App Service's [application settings](https://docs.microsoft.com/azure/app-service/configure-common). In the steps that follow, you will use the Azure CLI to create these application settings in Azure and initialize them with the same values used when you loaded them into local environment variables.
+When you ran the website locally, it used `os.environ` to load API keys for the Computer Vision API and the Translator Text API and the URL of the Computer Vision API from local environment variables. In order for the site to run in Azure, these same settings needed to be added to the Azure App Service's application settings. In the steps that follow, you will use the Azure CLI to create these application settings in Azure and initialize them with the same values used when you loaded them into local environment variables.
 
 1. Execute the following CLI command to create an application setting named "VISION_API_KEY," replacing APP_NAME with the name assigned to your App Service and `computer_vision_api_key` with your Computer Vision API key:
 
@@ -56,7 +56,7 @@ When you ran the website locally, it used `os.environ` to load API keys for the 
 	az webapp config appsettings set -g contoso-travel-rg -n APP_NAME --settings TRANSLATE_API_KEY=translate_api_key
 	```
 
-If you would like, you can log into the [Azure portal](https://portal.azure.com), open the Azure App Service created by the `az webapp up` command, and view the application settings that these commands created. The screenshot below illustrates what you will see if you do.
+If you would like, you can log into the Azure portal, open the Azure App Service created by the `az webapp up` command, and view the application settings that these commands created. The screenshot below illustrates what you will see if you do.
 
 [ ![View application settings in the Azure portal](../media/app-settings.png) ](../media/app-settings.png#lightbox)
 
