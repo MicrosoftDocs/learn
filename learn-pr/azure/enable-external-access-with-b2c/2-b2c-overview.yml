@@ -10,7 +10,7 @@ metadata:
   ms.prod: learning-azure
   ROBOTS: NOINDEX
 title: What is Azure AD B2C?
-durationInMinutes: 10
+durationInMinutes: 7
 content: |
   [!include[](includes/2-b2c-overview.md)]
 quiz:

@@ -8,13 +8,15 @@ You can add an additional authentication layer to secure your data and applicati
 
 Before you allow access to the application, use multi-factor authentication to ensure the user completes additional challenges. These challenges fit into three general categories:
 
+  ![MFA challenges](../media/3-mfa-challenges.png)
+
+
 - Something the user knows
 
 - Something the user owns
 
 - Something the user is
 
-  ![MFA challenges](../media/3-mfa-challenges.png)
 
 <!--- Original image: https://docs.microsoft.com/en-us/azure/active-directory/authentication/media/concept-mfa-howitworks/methods.png --->
 

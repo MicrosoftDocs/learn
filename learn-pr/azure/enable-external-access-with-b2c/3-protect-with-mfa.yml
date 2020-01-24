@@ -10,7 +10,7 @@ metadata:
   ms.prod: learning-azure
   ROBOTS: NOINDEX
 title: Use multi-factor authentication to protect your application
-durationInMinutes: 5
+durationInMinutes: 2
 content: |
   [!include[](includes/3-protect-with-mfa.md)]
 quiz:
