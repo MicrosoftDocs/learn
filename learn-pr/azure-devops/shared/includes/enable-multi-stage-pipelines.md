@@ -6,7 +6,7 @@ From Azure DevOps:
 
 1. Select your profile from the upper-right corner, then select **Preview features**.
 
-    ![](../../shared/media/azure-devops-profile-preview-features.png)
+    ![Accessing preview features from Azure DevOps](../../shared/media/azure-devops-profile-preview-features.png)
 
 1. Turn on **Multi-stage pipelines**.
 

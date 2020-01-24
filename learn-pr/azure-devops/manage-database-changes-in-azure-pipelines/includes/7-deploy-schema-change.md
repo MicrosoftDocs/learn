@@ -152,7 +152,7 @@ From Azure DevOps:
 
 1. Select your profile from the upper-right corner, then select **Personal access tokens**.
 
-    ![](../../shared/media/azure-devops-profile-personal-access-tokens.png)
+    ![Accessing personal access tokens from Azure DevOps](../../shared/media/azure-devops-profile-personal-access-tokens.png)
 
 1. Select **+ New Token**.
 1. For the name, enter *Database Changes*.
@@ -192,7 +192,7 @@ From Azure DevOps:
 
 1. Navigate back to Azure DevOps and watch the pipeline run. You see that the `DBAVerificationApply` stage is skipped because the schema didn't change.
 
-    ![](../media/7-pipeline-run-skipped.png)
+    ![Azure Pipelines showing the skipped stage](../media/7-pipeline-run-skipped.png)
 
 ## Recommended practices
 

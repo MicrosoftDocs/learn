@@ -204,7 +204,7 @@ From Azure DevOps:
 
 1. Select your profile from the upper-right corner, then select **Personal access tokens**.
 
-    ![](../../shared/media/azure-devops-profile-personal-access-tokens.png)
+    ![Accessing personal access tokens from Azure DevOps](../../shared/media/azure-devops-profile-personal-access-tokens.png)
 
 1. Select **+ New Token**.
 1. For the name, enter *Microsoft Learn - ProvisionDB*.
