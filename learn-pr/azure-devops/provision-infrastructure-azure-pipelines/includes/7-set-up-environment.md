@@ -35,7 +35,7 @@ Run a template that sets up everything for you in your Azure DevOps organization
 From the Azure DevOps Demo Generator site, perform these steps to run the template:
 
 1. Select **Sign In** and accept the usage terms.
-1. From the **Create New Project** page, select your Azure DevOps organization. Then enter a project name, such as **Space Game - web - Terraform**.
+1. From the **Create New Project** page, select your Azure DevOps organization. Then enter a project name, such as *Space Game - web - Terraform*.
 1. Select **Yes, I want to fork this repository**, and then select **Authorize**.
 1. Select **Create Project**.
 
@@ -243,21 +243,23 @@ Create a service connection that enables Azure Pipelines to access your Azure su
 > Make sure that you're signed in to both the Azure portal and Azure DevOps under the same Microsoft account.
 
 1. In Azure DevOps, go to your **Space Game - web - Terraform** project.
-1. Select **Project settings** from the bottom of the page.
+1. From the bottom corner of the page, select **Project settings**.
 1. Under **Pipelines**, select **Service connections**.
 1. Select **New service connection**, then choose **Azure Resource Manager**, then select **Next**.
-1. Select **Service principal (automatic)**, then select **Next**.
+1. Near the top of the page, select **Service Principal Authentication**.
 1. Fill in these fields:
 
     | Field               | Value                                        |
     |---------------------|----------------------------------------------|
+    | Connection name | *Resource Manager - Tailspin - Space Game* |
     | Scope level     | **Subscription**                             |
     | Subscription    | Your Azure subscription                      |
     | Resource Group  | Leave this blank to include all resource groups. |
-    | Service connection name | *Resource Manager - Tailspin - Space Game* |
 
     During the process, you might be prompted to sign in to your Microsoft account.
 
-1. Select **Save**.
+1. Ensure that **Allow all pipelines to use this connection** is selected.
 
-    Azure DevOps performs a test connection to verify that it can connect to your Azure subscription. If Azure DevOps can't connect, you'll have the chance to sign in a second time.
+1. Select **OK**.
+
+    Azure DevOps performs a test connection to verify that it can connect to your Azure subscription. If Azure DevOps can't connect, you have the chance to sign in a second time.

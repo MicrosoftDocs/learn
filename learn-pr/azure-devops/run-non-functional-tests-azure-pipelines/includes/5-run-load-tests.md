@@ -89,7 +89,7 @@ In this section, you modify the pipeline to run your load tests during the _Stag
     > [!TIP]
     > You can replace the entire file or just update the part that's highlighted.
 
-    [!code-yml[](code/5-azure-pipelines.yml?highlight=133-155)]
+    [!code-yml[](code/5-azure-pipelines.yml?highlight=136-158)]
 
     Here's a summary of the changes:
 

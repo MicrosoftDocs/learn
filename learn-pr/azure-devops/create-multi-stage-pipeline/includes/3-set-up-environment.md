@@ -42,9 +42,16 @@ From the Azure DevOps Demo Generator site, follow these steps to run the templat
     ![Creating a project through Azure DevOps Demo Generator](../media/4-create-new-project.png)
 
 1. Select **Yes, I want to fork this repository** > **Authorize**.
+
+    If a window appears, authorize access to your GitHub account.
+
+    > [!IMPORTANT]
+    > You need to select this option so the template will connect to your GitHub repository. Select it even if you've already forked the _Space Game_ website project. The template uses your existing fork.
+
 1. Select **Create Project**.
 
     The template takes a few moments to run.
+
 1. Select **Navigate to project** to go to your project in Azure DevOps.
 
 > [!IMPORTANT]
@@ -278,21 +285,23 @@ Here you create a service connection that enables Azure Pipelines to access your
 > Make sure that you're signed in to both the Azure portal and Azure DevOps under the same Microsoft account.
 
 1. In Azure DevOps, go to your **Space Game - web - Multistage** project.
-1. Select **Project settings** from the bottom corner of the page.
+1. From the bottom corner of the page, select **Project settings**.
 1. Under **Pipelines**, select **Service connections**.
-1. Select **New service connection** > **Azure Resource Manager** > **Next**.
-1. Select **Service principal (automatic)** > **Next**.
+1. Select **New service connection**, then choose **Azure Resource Manager**, then select **Next**.
+1. Near the top of the page, select **Service Principal Authentication**.
 1. Fill in these fields:
 
     | Field               | Value                                        |
     |---------------------|----------------------------------------------|
+    | Connection name | *Resource Manager - Tailspin - Space Game* |
     | Scope level     | **Subscription**                             |
     | Subscription    | Your Azure subscription                      |
     | Resource Group  | **tailspin-space-game-rg**                   |
-    | Service connection name | *Resource Manager - Tailspin - Space Game* |
 
     During the process, you might be prompted to sign in to your Microsoft account.
 
-1. Select **Save**.
+1. Ensure that **Allow all pipelines to use this connection** is selected.
 
-    Azure DevOps does a test connection to verify that it can connect to your Azure subscription. If Azure DevOps can't connect, you'll have the chance to sign in a second time.
+1. Select **OK**.
+
+    Azure DevOps performs a test connection to verify that it can connect to your Azure subscription. If Azure DevOps can't connect, you have the chance to sign in a second time.

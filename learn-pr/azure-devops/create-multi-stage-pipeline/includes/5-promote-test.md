@@ -14,7 +14,7 @@ Here you modify your pipeline configuration to deploy the build to the _Test_ st
 
 1. In Visual Studio Code, modify *azure-pipelines.yml* like this:
 
-    [!code-yml[](code/6-azure-pipelines.yml?highlight=5-11,103-125)]
+    [!code-yml[](code/5-azure-pipelines.yml?highlight=8-14,106-128)]
 
     The `schedules` section defines one cron expression. You can define more than one expression in your configuration. The expression triggers the pipeline to run against the release branch at 3 A.M. each day. The `always` flag is set to `false` so that the pipeline runs only when the release branch contains changes from the prior run.
 

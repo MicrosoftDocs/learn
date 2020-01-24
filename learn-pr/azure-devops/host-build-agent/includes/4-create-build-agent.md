@@ -264,7 +264,7 @@ The documentation explains how to manually set up [self-hosted Linux agents](htt
     export AZP_POOL=MyAgentPool
     ```
 
-1. Set the `AZP_AGENT_VERSION` environment variable to specify the latest version of the agent. A YAML pipeline on a Linux machine must be using the latest version of the agent, even if it is pre-release. The agent software is constantly updating, so you curl the version information from [the GitHub repo](https://api.github.com/repos/microsoft/azure-pipelines-agent/releases?azure-pipelines=true) and use jq to get the latest version.
+1. Set the `AZP_AGENT_VERSION` environment variable to specify the latest version of the agent. A YAML pipeline on a Linux machine must be using the latest version of the agent, even if it is pre-release. The agent software is constantly updating, so you curl the version information from [the GitHub repo](https://api.github.com/repos/microsoft/azure-pipelines-agent/releases?azure-portal=true) and use jq to get the latest version.
 
     ```bash
     export AZP_AGENT_VERSION=$(curl -s https://api.github.com/repos/microsoft/azure-pipelines-agent/releases | jq -r '.[0].tag_name' | cut -d "v" -f 2)

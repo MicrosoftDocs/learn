@@ -41,7 +41,7 @@ Here you modify your pipeline configuration to deploy the build to the _Staging_
 
 1. In Visual Studio Code, modify *azure-pipelines.yml* like this:
 
-    [!code-yml[](code/7-azure-pipelines.yml?highlight=127-148)]
+    [!code-yml[](code/6-azure-pipelines.yml?highlight=130-151)]
 
     This code adds the _Staging_ stage. The stage deploys to the **staging** environment, which includes a release approval.
 

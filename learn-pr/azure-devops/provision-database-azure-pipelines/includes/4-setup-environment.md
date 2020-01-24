@@ -34,7 +34,7 @@ Run a template that sets up everything for you in your Azure DevOps organization
 From the Azure DevOps Demo Generator site, perform these steps to run the template:
 
 1. Select **Sign In** and accept the usage terms.
-1. From the **Create New Project** page, select your Azure DevOps organization and enter a project name, such as **Space Game - web - ProvisionDB**.
+1. From the **Create New Project** page, select your Azure DevOps organization and enter a project name, such as *Space Game - web - ProvisionDB*.
 1. Select **Yes, I want to fork this repository** and then select **Authorize**.
 1. Select **Create Project**.
 

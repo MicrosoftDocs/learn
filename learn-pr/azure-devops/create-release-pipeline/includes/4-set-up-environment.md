@@ -38,13 +38,15 @@ From the Azure DevOps Demo Generator site, follow these steps to run the templat
     ![Creating a project through the Azure DevOps Demo Generator](../media/4-create-new-project.png)
 
 1. Select **Yes, I want to fork this repository** > **Authorize**.
-1. Select **Create Project**. 
 
-    The template takes a few moments to run.
-1. Select **Fork repository on GitHub** > **Authorize**. If a window appears, authorize access to your GitHub account.
+    If a window appears, authorize access to your GitHub account.
 
     > [!IMPORTANT]
     > You need to select this option so the template will connect to your GitHub repository. Select it even if you've already forked the _Space Game_ website project. The template uses your existing fork.
+
+1. Select **Create Project**.
+
+    The template takes a few moments to run.
 
 1. Select **Navigate to project** to go to your project in Azure DevOps.
 
@@ -190,13 +192,15 @@ Multistage pipelines are a preview feature of Azure Pipelines. Preview features 
 
 From Azure DevOps:
 
-1. Select your profile from the upper-right corner.
-1. Select the ellipsis (...) button, and then select **Preview features**.
-1. Turn on **Multi-stage Pipelines**.
+1. Select your profile from the upper-right corner, then select **Preview features**.
+
+    ![Accessing preview features from Azure DevOps](../../shared/media/azure-devops-profile-preview-features.png)
+
+1. Turn on **Multi-stage pipelines**.
 
     ![Enabling multistage pipelines from Azure DevOps](../../shared/media/enable-preview-features.png)
 
-On the **Pipelines** menu, notice that separate entries for **Release** and **Build** are gone. You'll now do both build and release tasks from the same pipeline.
+1. Notice that separate entries for **Release** and **Build** no longer appear on the **Pipelines** menu. You'll now build and release from the same pipeline.
 
 ### Create the initial pipeline configuration
 

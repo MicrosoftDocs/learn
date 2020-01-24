@@ -47,35 +47,50 @@ Next Amita clicks the top player on the leaderboard. The player's profile appear
 
 If I had time, I would run all the tests again on macOS and Linux, just to ensure we're compatible with any operating system that the players use to visit the site. But I need to run many other tests.
 
-## Get the XPath expressions for the HTML elements
+## What are locators in Selenium?
 
-Here you follow along with Amita and Andy as they collect the XPath expressions for the buttons that Amita clicks and for the resulting modal windows. XPath is a query language that lets you locate an XML element and retrieve information about it. XPath also works with HTML.
+In a Selenium test, a _locator_ selects an HTML element from the DOM (Document Object Model) to act on. Think of the DOM as a tree or graph representation of an HTML document. Each node in the DOM represents a part of the document.
 
-**Andy:** I can see why these tests take so long and can be so frustrating. You're going to love automating them. I promise. 
+In a Selenium test, you can locate an HTML element by its:
 
-Here's what we'll do. We'll get the XPath expression for each button you click and for the modal window that appears. The automated tests that we write can use these expressions to know which buttons to click and which modal windows to expect.
+* `id` attribute.
+* `name` attribute.
+* XPath expression.
+* Link text or partial link text.
+* Tag name, such as `body` or `h1`.
+* CSS class name.
+* CSS selector.
 
-Let's start by getting the XPath expression for the **Download game** button.
+The locator you use depends on the way your HTML code is written and the kinds of queries you want to perform.
+
+In an HTML document, the `id` attribute specifies a unique identifier for an HTML element. Here you'll use the `id` attribute to query for elements on the page because each identifier must be unique. This makes the `id` attribute one of the easiest ways to query for elements in a Selenium test.
+
+## Get the ID for each HTML element
+
+Here you follow along with Amita and Andy as they collect the ID for each button that Amita clicks and for each resulting modal window.
+
+**Andy:** I can see why these tests take so long and can be so frustrating. You're going to love automating them. I promise.
+
+Here's what we'll do. We'll get the `id` attribute for each button you click and for the modal window that appears. The automated tests that we write can use these expressions to know which buttons to click and which modal windows to expect.
+
+Let's start by getting the `id` attribute for the **Download game** button.
 
 > [!NOTE]
-> You can follow these steps if you want to, or just read along. The next section provides all of the XPath expressions that you need when you run the automated tests.
+> You can follow these steps if you want to, or just read along. The next section provides all of the `id` attributes that you need when you run the automated tests.
 
 1. In Google Chrome, go to the _Space Game_ home page.
 1. Right-click the **Download game** button. Then select **Inspect**.
 
     The developer tools window opens. The HTML code for the **Download game** button is highlighted.
 
+1. Examine the highlighted code and note the `id` attribute. Copy the `id` for later.
+
     ![A browser showing the developer tools window and a selected HTML element](../media/4-website-inspect-button.png)
 
-1. Right-click the highlighted text. Point to **Copy** and then select **Copy XPath**.
-1. Paste the text into a document. We'll use it later.
-
-    The XPath expression for the **Download game** button is `/html/body/div/div/section[2]/div[2]/a`.
-
-1. Select the **Download game** button. Then repeat steps 2 through 4 to get the XPath expression for the modal window that appears.
+1. Select the **Download game** button. Then repeat steps 2 and 3 to get the `id` attribute for the modal window that appears.
 1. Repeat the process for the four game screens and the top player on the leaderboard.
 
-Amita opens Microsoft Word and adds a table. The table contains the XPath expression for each link and the XPath expression for the corresponding modal window. To keep the table basic, Amita records:
+Amita opens Microsoft Word and adds a table. The table contains the `id` attribute for each link and the `id` attribute for the corresponding modal window. To keep the table basic, Amita records:
 
 * The **Download game** button.
 * Just one of the game screens.
@@ -84,22 +99,22 @@ Amita opens Microsoft Word and adds a table. The table contains the XPath expres
 Here's what Amita's table looks like:
 
 > [!div class="mx-tableFixed"]
-> | Feature                  | Link XPath                                                             | Modal XPath                            |
-> |--------------------------|------------------------------------------------------------------------|----------------------------------------|
-> | **Download game** button | `/html/body/div/div/section[2]/div[2]/a`                               | `//*[@id=\"pretend-modal\"]/div/div`   |
-> | First game screen        | `/html/body/div/div/section[3]/div/ul/li[1]/a`                         | `/html/body/div[1]/div/div[2]`         |
-> | Top leaderboard player   | `/html/body/div/div/section[4]/div/div/div[1]/div[2]/div[2]/div/a/div` | `//*[@id=\"profile-modal-1\"]/div/div` |
+> | Feature                  | Link `id`      | Modal `id`        |
+> |--------------------------|----------------|-------------------|
+> | **Download game** button | `download-btn` | `pretend-modal`   |
+> | First game screen        | `screen-01`    | `screen-modal`    |
+> | Top leaderboard player   | `profile-1`    | `profile-modal-1` |
 
 ## Plan the automated tests
 
-**Amita:** OK. We have the XPath expression for each button I click. We also have the resulting modal window. What's next?
+**Amita:** OK. We have the `id` attribute for each button I click. We also have the resulting modal window. What's next?
 
 **Andy:** I think we're ready to write our tests. Here's what we'll do:
 
 1. Create an NUnit project that includes Selenium. The project will be stored in the directory along with the app's source code.
 1. Write a test case that uses automation to click the specified link. The test case verifies that the expected modal window appears.
-1. Use the XPath data we saved to specify the parameters to the test case method. This task creates a sequence, or series, of tests.
-1. Configure the tests to run on Chrome, Firefox, and Microsoft Edge. This task creates a matrix of tests.
+1. Use the `id` attribute we saved to specify the parameters to the test case method. This task creates a sequence, or series, of tests.
+1. Configure the tests to run on Chrome, Firefox, and Microsoft Edge. This task creates a _matrix_ of tests.
 1. Run the tests and watch each web browser come up automatically.
 1. Watch Selenium automatically run through the series of tests for each browser.
 1. In the console window, verify that all the tests pass.

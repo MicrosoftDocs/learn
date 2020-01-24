@@ -30,7 +30,7 @@ This branch contains the _Space Game_ project that you worked with in previous m
 
 ## Write the unit test code
 
-Amita is excited to learn to write code that controls the web browser. 
+Amita is excited to learn to write code that controls the web browser.
 
 She and Andy will work together to write the Selenium tests. Andy has already set up an empty NUnit project. Throughout the process, they refer to the Selenium documentation, a few online tutorials, and the notes that they took when Amita did the tests manually. At the end of this module, you'll find more resources to help get you through the process.
 
@@ -162,7 +162,7 @@ Let's write two helper methods, one for each action. We'll start with the method
 
 When you locate an element on the page, it's typically in response to some other event, such as the page loading or the user entering information. Selenium provides the `WebDriverWait` class, which enables you to wait for a condition to be true. If the condition isn't true within the given time period, `WebDriverWait` throws an exception, or error. We can use the `WebDriverWait` class to wait for a given element to be displayed and to be ready to receive user input.
 
-To locate an element on the page, you use the `By` class. The `By` class provides methods that enable you to find an element by its CSS class name, by its HTML tag, or in our case, by its XPath.
+To locate an element on the page, you use the `By` class. The `By` class provides methods that enable you to find an element by its name, by its CSS class name, by its HTML tag, or in our case, by its `id` attribute.
 
 Andy and Amita code up the `FindElement` helper method. It looks like this:
 
@@ -214,12 +214,12 @@ private void ClickElement(IWebElement element)
 
 ### Define the test method
 
-**Andy:** Now we're ready to define the test method. Based on the manual tests that we ran earlier, let's call this method `ClickLinkByXPath_ShouldDisplayModalByXPath`. It's a good practice to give test methods descriptive names that define precisely what the test accomplishes. Here we want to click a link, defined by its XPath. And we want to verify that the proper modal window appears, also by using its XPath.
+**Andy:** Now we're ready to define the test method. Based on the manual tests that we ran earlier, let's call this method `ClickLinkById_ShouldDisplayModalById`. It's a good practice to give test methods descriptive names that define precisely what the test accomplishes. Here we want to click a link, defined by its `id` attribute. And we want to verify that the proper modal window appears, also by using its `id` attribute.
 
 Andy adds starter code for the test method:
 
 ```cs
-public void ClickLinkByXPath_ShouldDisplayModalByXPath(string linkXPath, string modalXPath)
+public void ClickLinkById_ShouldDisplayModalById(string linkId, string modalId)
 {
 }
 ```
@@ -228,7 +228,7 @@ public void ClickLinkByXPath_ShouldDisplayModalByXPath(string linkXPath, string 
 
 **Amita:** I can handle this part. We want to:
 
-1. Locate the link by its XPath and then click the link.
+1. Locate the link by its `id` attribute and then click the link.
 1. Locate the resulting modal.
 1. Close the modal.
 1. Verify that the modal was displayed successfully.
@@ -238,21 +238,21 @@ public void ClickLinkByXPath_ShouldDisplayModalByXPath(string linkXPath, string 
 After refilling their coffee mugs, Andy and Amita add code to their test method. They use the helper methods that they wrote to locate page elements and click links and buttons. Here's the result:
 
 ```cs
-public void ClickLinkByXPath_ShouldDisplayModalByXPath(string linkXPath, string modalXPath)
+public void ClickLinkById_ShouldDisplayModalById(string linkId, string modalId)
 {
-    // Skip the test if the driver couldn't be loaded.
-    // This happens when the underlying browser isn't installed.
+    // Skip the test if the driver could not be loaded.
+    // This happens when the underlying browser is not installed.
     if (driver == null)
     {
         Assert.Ignore();
         return;
     }
 
-    // Locate the link by its XPath and then click the link.
-    ClickElement(FindElement(By.XPath(linkXPath)));
+    // Locate the link by its ID and then click the link.
+    ClickElement(FindElement(By.Id(linkId)));
 
     // Locate the resulting modal.
-    IWebElement modal = FindElement(By.XPath(modalXPath));
+    IWebElement modal = FindElement(By.Id(modalId));
 
     // Record whether the modal was successfully displayed.
     bool modalWasDisplayed = (modal != null && modal.Displayed);
@@ -262,18 +262,18 @@ public void ClickLinkByXPath_ShouldDisplayModalByXPath(string linkXPath, string 
     {
         // Click the close button that's part of the modal.
         ClickElement(FindElement(By.ClassName("close"), modal));
-
-        // Wait for the modal to close and for the main page to be clickable.
+        
+        // Wait for the modal to close and for the main page to again be clickable.
         FindElement(By.TagName("body"));
     }
 
     // Assert that the modal was displayed successfully.
-    // If it wasn't displayed successfully, this test will be recorded as failed.
+    // If it wasn't, this test will be recorded as failed.
     Assert.That(modalWasDisplayed, Is.True);
 }
 ```
 
-**Amita:** The coding looks great so far. But how do we connect this test to the XPath expressions that we collected earlier?
+**Amita:** The coding looks great so far. But how do we connect this test to the `id` attributes that we collected earlier?
 
 **Andy:** Great question. We'll handle that next.
 
@@ -281,28 +281,22 @@ public void ClickLinkByXPath_ShouldDisplayModalByXPath(string linkXPath, string 
 
 **Andy:** In NUnit, you can provide data to your tests in a few ways. Here we use the `TestCase` attribute. This attribute takes arguments that it later passes back to the test method when it runs. We can have multiple `TestCase` attributes that each test a different feature of our app. Each `TestCase` attribute produces a test case that's included in the report that appears at the end of a pipeline run.
 
-Andy adds these `TestCase` attributes to the test method. These attributes describe the **Download game** button, one of the game screens, and the top player on the leaderboard. Each attribute specifies two XPath expressions: one for the link to click and one for the corresponding modal window.
+Andy adds these `TestCase` attributes to the test method. These attributes describe the **Download game** button, one of the game screens, and the top player on the leaderboard. Each attribute specifies two `id` attributes: one for the link to click and one for the corresponding modal window.
 
 ```cs
 // Download game
-[TestCase(
-    "/html/body/div/div/section[2]/div[2]/a",
-    "//*[@id=\"pretend-modal\"]/div/div")]
+[TestCase("download-btn", "pretend-modal")]
 // Screen image
-[TestCase(
-    "/html/body/div/div/section[3]/div/ul/li[1]/a",
-    "/html/body/div[1]/div/div[2]")]
-// Top player on the leaderboard
-[TestCase(
-    "/html/body/div/div/section[4]/div/div/div[1]/div[2]/div[2]/div/a/div",
-    "//*[@id=\"profile-modal-1\"]/div/div")]
-public void ClickLinkByXPath_ShouldDisplayModalByXPath(string linkXPath, string modalXPath)
+[TestCase("screen-01", "screen-modal")]
+// // Top player on the leaderboard
+[TestCase("profile-1", "profile-modal-1")]
+public void ClickLinkById_ShouldDisplayModalById(string linkId, string modalId)
 {
 
 ...
 ```
 
-**Andy:** For each `TestCase` attribute, the first parameter is the XPath to the link to click on. The second parameter is the XPath to the modal window that we expect to appear. You can see how these parameters correspond to the two string arguments in our test method.
+**Andy:** For each `TestCase` attribute, the first parameter is the `id` attribute for the link to click on. The second parameter is the `id` attribute for the modal window that we expect to appear. You can see how these parameters correspond to the two string arguments in our test method.
 
 **Amita:** I do see that. With some practice, I think I can add my own tests. When can we see these tests running in our pipeline?
 

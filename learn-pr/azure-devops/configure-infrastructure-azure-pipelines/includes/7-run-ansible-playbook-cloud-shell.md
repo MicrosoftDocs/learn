@@ -35,7 +35,7 @@ I say we define two users for our test. Let's call them *testuser1* and *testuse
 
 ### Define the basic configuration
 
-Tim and Andy discover documentation for the [user](https://docs.ansible.com/ansible/latest/modules/user_module.html?azure-pipelines=true) module. The `user` module enables you to manage user accounts, including service accounts.
+Tim and Andy discover documentation for the [user](https://docs.ansible.com/ansible/latest/modules/user_module.html?azure-portal=true) module. The `user` module enables you to manage user accounts, including service accounts.
 
 They define this configuration in Ansible:
 
