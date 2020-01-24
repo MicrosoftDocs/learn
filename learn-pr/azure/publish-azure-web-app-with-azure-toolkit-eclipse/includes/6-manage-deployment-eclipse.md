@@ -33,7 +33,7 @@ After you have deployed your web app to a new deployment slot, the deployment sl
 
 ### How to swap deployment slots
 
-You can easily switch a new version of your web app with the original, which you might do after you have completed testing your new web app. Once you have done so, the new version will be available through the URL **http://contosocurrencylister.azurewebsites.net/**. To do this, in the **Azure Explorer** window, expand your web app, and then expand **Deployment Slots**. Right-click the new deployment slot, and then click **Swap with production**.
+You can easily switch a new version of your web app with the original, which you might do after you have completed testing your new web app. Once you have done so, the new version will be available through the URL **http://contosocurrencylister.azurewebsites.net/**. To do so, in the **Azure Explorer** window, expand your web app, and then expand **Deployment Slots**. Right-click the new deployment slot, and then click **Swap with production**.
 
 > [!div class="mx-imgBorder"]
 > ![The **Azure Explorer** window. The user is swapping the web app in the version 2 deployment slot with the production slot](../media/6-swap-slots.png)
@@ -43,7 +43,7 @@ You can easily switch a new version of your web app with the original, which you
 
 ## How to configure web app properties
 
-Web apps (and deployment slots) can have developer-defined properties. A property is a key-value pair that's provided to the web app as an environment variable, and you can use properties to pass configuration information to a web app. A Java web app can read the value of a property using the `System.getenv()` function, which enables developers to change the value of a property without having to modify or redploy your web app. For example: if your web app stores a connection string in a property, you would only need to update the property if you need to change the location of your database in the future.
+Web apps (and deployment slots) can have developer-defined properties. A property is a key-value pair that's provided to the web app as an environment variable, and you can use properties to pass configuration information to a web app. A Java web app can read the value of a property using the `System.getenv()` function, which enables developers to change the value of a property without having to modify or redeploy your web app. For example: if your web app stores a connection string in a property, you would only need to update the property if you need to change the location of your database in the future.
 
 You create and modify properties by using the **Show Properties** command in the **Azure Explorer** window.
 

@@ -122,7 +122,7 @@ Finally, you'll use Azure Explorer to delete the web app and remove it from Azur
 1. When the web app has been deleted, it will disappear from the **Web Apps** folder in **Azure Explorer**.
 
 > [!IMPORTANT]
-> Deleting the web app using the Azure Toolkit for Eclipse doesn't delete the app service plan, but you can remove the plan using the Azure portal. To do this, navigate to the appropriate resource group, select the app service plan, and then click **Delete**, as shown in the image below:
+> Deleting the web app using the Azure Toolkit for Eclipse doesn't delete the app service plan, but you can remove the plan using the Azure portal. To do so, navigate to the appropriate resource group, select the app service plan, and then click **Delete**, as shown in the image below:
 >
 > [!div class="mx-imgBorder"]
 > ![Screenshot of the Azure portal. The user is deleting the app service plan](../media/7-delete-app-service-plan.png)

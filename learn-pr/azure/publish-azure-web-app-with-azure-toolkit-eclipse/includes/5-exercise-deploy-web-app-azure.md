@@ -26,7 +26,7 @@ In this exercise, you'll use the Azure Toolkit for Eclipse to create a new Azure
     > [!div class="mx-imgBorder"]
     > ![Screenshot of the **Azure Device Login** window. The user has selected **Copy&Open**.](../media/5-device-login-2.png)
 
-1. A web browser window will open. At the **Enter code** prompt, paste the device code you just copied to the clipboard, and then click **Next**
+1. A web browser window will open. At the **Enter code** prompt, paste the device code you copied to the clipboard, and then click **Next**
 
     > [!div class="mx-imgBorder"]
     > ![Screenshot of the **Azure Device Login** window. The user has selected **Copy&Open**.](../media/5-enter-code.png)

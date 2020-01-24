@@ -26,7 +26,7 @@ Eclipse generates the basic boilerplate code for a web page. You can then use th
 > [!div class="mx-imgBorder"]
 > ![Screenshot of the HTML editor in Eclipse, showing IntelliSense-style prompts.](../media/2-html-editor.png)
 
-A dynamic web page contains a mixture of HTML markup and Java code. You add Java code to a web page using JSP tags. For example, the following steps describes how and when you might use these tags:
+A dynamic web page contains a mixture of HTML markup and Java code. You add Java code to a web page using JSP tags. For example, the following steps describe how and when you might use these tags:
 
 - To import Java libraries, you would use the `<%@ page ... %>` directive. In the following example, the *java.util* library is imported by adding the directive to the start of the page:
 
@@ -99,7 +99,7 @@ To test a web app, on the **Run** menu, select **Run**, or select the **Run** bu
 > [!div class="mx-imgBorder"]
 > ![Screenshot of the **Run On Server** window in Eclipse. The user has selected the local Tomcat server.](../media/2-select-tomcat-server.png)
 
-Select **Finish** to start the web app. If the server is currently stopped, it will be started. Then, the web app will run, and the results will appear in a browser window in Eclipse. The results should look similar to the following:
+Select **Finish** to start the web app. If the server is currently stopped, it will be started. Then, the web app will run, and the results will appear in a browser window in Eclipse. The results should look similar to the following illustration:
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of the static web app running in the browser window in Eclipse.](../media/2-dynamic-app-results.png)

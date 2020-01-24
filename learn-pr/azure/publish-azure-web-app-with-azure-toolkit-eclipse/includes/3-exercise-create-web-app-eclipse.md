@@ -97,7 +97,7 @@ In this exercise, you'll use Eclipse to create a Java web app that uses Java Ser
     > ![Screenshot of the **Run On Server** wizard in Eclipse. The user has selected the Tomcat v8.0 Server at localhost server.](../media/3-run-on-server.png)
 
     >[!NOTE]
-    > If you have just installed Tomcat, there might not be an existing server available. In this case, select **Manually define a new server**, and select **Tomcat v8.0 Server**.
+    > If you have recently installed Tomcat, there might not be an existing server available. In this case, select **Manually define a new server**, and select **Tomcat v8.0 Server**.
 
 1. You'll see a few messages appear as the Tomcat server starts running. Eclipse will show the output of the web application in a browser window inside the IDE, which should look similar to the image shown below.
 

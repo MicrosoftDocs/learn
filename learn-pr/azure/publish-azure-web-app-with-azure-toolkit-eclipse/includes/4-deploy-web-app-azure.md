@@ -11,7 +11,7 @@ Before you deploy a web app to Azure, you must first sign in to your Azure accou
 
 If the **Azure Explorer** window indicates that you have not signed in, use the following steps:
 
-1. Right click **Azure (Not Signed In)**, and then click **Sign In**.
+1. Right-click **Azure (Not Signed In)**, and then click **Sign In**.
 
     > [!div class="mx-imgBorder"]
     > ![Screenshot of the **Azure Explorer** in Eclipse. The user is about to sign in](../media/4-not-signed-in.png)
@@ -55,7 +55,7 @@ To create a new Azure App Service, you would use the following steps:
 
     - The App Service name is used to generate the URL for your web app, which must be a unique name. You can enter a name manually, although the wizard will generate an example for you. The suffix *.azurewebsites.net* is appended to the name to form the complete URL; for example: *contoso.azurewebsites.net*.
 
-    - Azure App Services support both Windows and Linux runtime environments, and you should select the runtime that matches your development environment.
+    - Azure App Service supports both Windows and Linux runtime environments, and you should select the runtime that matches your development environment.
 
     - You can reuse an existing App Service plan, or you can create a new one. If you create a new plan, the plan name doesn't have to be globally unique. The pricing tier defines the resources available. For example, a basic pricing tier might provide two CPU cores, 3.50 GB of memory, and 10 GB of disk storage, but no autoscaling.
   
@@ -109,4 +109,4 @@ To test your web app on Azure from Eclipse, you can use one of the following met
         > [!div class="mx-imgBorder"]
         > ![Screenshot of web app running using the Web Apps service in Azure.](../media/4-web-app-azure.png)
 
-In the next unit, you will complete an exercise where you will create an Azure App Service and App Service Plan, then you will deploy the web app that you created in the previoucs exercise to your Azure App Service.
+In the next unit, you will complete an exercise where you will create an Azure App Service and App Service Plan, then you will deploy the web app that you created in the previous exercise to your Azure App Service.
