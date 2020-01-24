@@ -49,7 +49,7 @@ You need to create another HTTP-triggered Azure Function. These instructions are
 
 ## Try it out
 
-Make sure that everything is working by visiting (http://localhost:7071/api/RespondToSlackCommand) in a browser. It should print our `Hello!`.
+Make sure that everything is working by visiting (`http://localhost:7071/api/RespondToSlackCommand`) in a browser. It should print our `Hello!`.
 
 ## Write the `index` function
 
@@ -132,7 +132,7 @@ This `index(context, req)` TypeScript function is a lot quicker to write than th
             RespondToSlackCommand: http://localhost:7071/api/RespondToSlackCommand
     ```
 
-Make sure that everything is working by visiting http://localhost:7071/api/RespondToSlackCommand in your browser. It should now print some json.
+Make sure that everything is working by visiting `http://localhost:7071/api/RespondToSlackCommand` in your browser. It should now print some json.
 
 ```json
 {

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.choose-the-right-disk-storage-for-vm-workload.1-introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction
+  ms.date: 11/06/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

@@ -2,7 +2,7 @@
 uid: learn.ai-strategy-for-business-value
 metadata:
   title: Define an AI strategy to create business value
-  description: In this learning path, you will hear from Peter Zemsky, INSEAD's Eli Lilly Chaired Professor of Strategy and Innovation, about how AI is driving business value across industries and companies as well as Microsoft customers and partners. You will be able to discuss how technical teams are brining AI into business applications and how business leaders of different industries are thinking about AI for their own businesses.
+  description: Learn to develop an enterprise AI strategy to create business value in manufacturing, healthcare, financial services, retail, education, and Government.
   brand: azure
   ms.date: 04/26/2019
   author: RWortmanMorris
@@ -26,6 +26,7 @@ modules:
 - learn-wwl.ai-strategy-to-create-business-value
 - learn-wwl.ai-strategy-in-financial-services
 - learn-wwl.ai-strategy-in-government
+- learn-wwl.ai-strategy-in-education
 - learn-wwl.ai-strategy-in-retail
 - learn-wwl.ai-strategy-in-manufacturing
 - learn-wwl.ai-strategy-in-healthcare

@@ -1,6 +1,6 @@
 Now that your build agent is running and ready to receive build jobs, let's see it in action. In this unit, you modify a basic build configuration that we provide to build the _Space Game_ website by using your agent and not the Microsoft-hosted agent.
 
-At the end of this unit, as an optional step, you can remove the agent pool from your Azure DevOps organization.
+At the end of this unit, as an optional step, you can remove the agent pool from your Microsoft Azure DevOps organization.
 
 ## Fetch the branch from GitHub
 
@@ -13,7 +13,7 @@ This branch contains the _Space Game_ project that you worked with in previous m
 
     ```bash
     git fetch upstream build-agent
-    git checkout build-agent
+    git checkout -b build-agent upstream/build-agent
     ```
 
     Recall that *upstream* refers to the Microsoft GitHub repository. Your project's Git configuration understands the upstream remote, because you set up that relationship when you forked the project from the Microsoft repository and cloned it locally.
@@ -32,7 +32,7 @@ In this section, you modify the build configuration to switch from using a Micro
 
     ```yml
     pool:
-      vmImage: 'Ubuntu-16.04'
+      vmImage: 'ubuntu-16.04'
       demands:
         - npm
     ```
@@ -48,7 +48,7 @@ In this section, you modify the build configuration to switch from using a Micro
 
     This version uses `name` to specify your agent pool, *MyAgentPool*. It maintains the `demands` section to specify that the build agent must have npm, the Node.js package manager, installed.
 
-1. In the integrated terminal, add **azure-pipelines.yml** to the index, commit the changes, and push the branch up to GitHub.
+1. In the integrated terminal, add *azure-pipelines.yml* to the index, commit the changes, and push the branch up to GitHub.
 
     ```bash
     git add azure-pipelines.yml

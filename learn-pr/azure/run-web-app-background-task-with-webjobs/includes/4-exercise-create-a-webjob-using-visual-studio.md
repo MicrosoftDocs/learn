@@ -48,7 +48,7 @@ You've now created a web application from the sample template and it is running 
 1. Ensure that your copy of Visual Studio is logged into the account you have used to log in to Microsoft Learn. This will ensure that the sandbox subscription is available for publishing.
 1. Right-click the **WatchesWebApp** project in Solution Explorer and select **Publish**.
 1. Select **App Service** as the publish target, select **Create New**, and then click **Publish**.
-1. In the **Create App Service** dialog, enter a name for your web application and make a note of it for later. You can accept the default name. This name must be globally unique. For **Subscription**, select the subscription in which you craetaed the mslearn-webjobs resource group. Select the resource group as well, then click **Create**.
+1. In the **Create App Service** dialog, enter a name for your web application and make a note of it for later. You can accept the default name. This name must be globally unique. For **Subscription**, select the subscription in which you created the mslearn-webjobs resource group. Select the resource group as well, then click **Create**.
 1. When deployment is complete, Visual Studio will open a new browser tab. After a short wait, the new web app will be displayed.
 
 ## Configure the web app
@@ -120,8 +120,7 @@ Now that the code is complete, you can re-publish the application and the WebJob
 
 The WebJob that you just published creates messages in queue storage on a schedule. Let's confirm that it's been deployed and check that it works:
 
-1. Sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true).
-1. Select **All resources** and navigate to your web app.
+1. Sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true), and search for and select your web app.
 1. Under **Settings**, click **WebJobs**. You should see your WebJob in the list with a status of Running.
 1. Navigate back to **All resources** and select the storage account created at the beginning of this exercise. Select **Queues** from the navigation menu.
 1. The list should display a single queue, named `stockchecks`, created by the WebJob. If you select it, you'll see the messages that the WebJob is creating, one every 30 seconds.

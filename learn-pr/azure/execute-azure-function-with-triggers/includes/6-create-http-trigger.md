@@ -8,7 +8,9 @@ Let's continue using our existing Azure Functions application and add an HTTP tr
 
 1. Make sure you are signed into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-1. Navigate to the **All resources** screen and select your function app.
+1. On the Azure portal menu or from the **Home** page, select **All resources**.
+
+1. Select your function app.
 
 1. Select the Add (**+**) button next to **Functions**. This action starts the function creation process.
 
@@ -25,7 +27,9 @@ Let's continue using our existing Azure Functions application and add an HTTP tr
 
 1. Make sure you are signed into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-1. Navigate to the **All resources** screen and select your function app.
+1. On the Azure portal menu or from the **Home** page, select **All resources**.
+
+1. Select your function app.
 
 1. Select the Add (**+**) button next to **Functions**. This action starts the function creation process.
 

@@ -12,6 +12,8 @@ Now that you have reviewed this module, you should be able to:
 
 Check the [Banking on AI e-book](https://info.microsoft.com/ww-landing-Banking-on-AI-eBook.html) and discover how AI will continue to affect banks, read the [Microsoft-sponsored report](https://info.microsoft.com/ww-landing-Intelligent-Economies-Microsoft-eBook.html) from The Economist Intelligence Unit to learn how people are using AI to make the production and distribution of goods and services more intelligent, check out [this e-book](https://info.microsoft.com/ww-landing-aI-basics-for-business-eBook.html) for an introduction to AI and tips on how to implement intelligent technologies and to learn even more about transforming your organization with AI, read our [whitepaper on Microsoft’s vision for AI in the enterprise](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2FPpk).
 
+Explore the [Microsoft Perspective on Responsible AI in FSI](https://aka.ms/AA6ezp5) and [Responsible AI in financial services: governance and risk management](https://aka.ms/AA6ezp7) to help you drive transparency and accountability to mitigate AI risks in FSI.
+
 * [Download PDF](https://aka.ms/AIBSSTRAFSICONDWL) of the case study introduction to share with others.
 * [Download PDF](https://aka.ms/AIBSSTRAFSIRESDWL) of the case study resolution to share with others.
 

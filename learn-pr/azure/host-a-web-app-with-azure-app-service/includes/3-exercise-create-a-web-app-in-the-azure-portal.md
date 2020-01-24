@@ -6,7 +6,7 @@ Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?a
 
 ::: zone pivot="csharp"
 
-1. Select the **Create a resource** link at the top of the left-hand navigation. Everything you create on Azure is a resource.
+1. On the Azure portal menu or from the **Home** page, select **Create a resource**. Everything you create on Azure is a resource.
 
 1. The portal navigates you to the **Marketplace** page. From here, you can search for the resource you want to create or select one of the popular resources that people create in the Azure portal.
 
@@ -22,7 +22,7 @@ Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?a
     | **Publish** | Code | The method you will use to publish your application. When publishing your application as code, you also must configure **Runtime stack** to prepare your App Service resources to run your app. |
     | **Runtime stack** | .NET Core 2.2 | The platform on which your application runs. Your choice may affect whether you have a choice of operating system - for some runtime stacks, App Service supports only one operating system. |
     | **Operating System** | Windows | The operating system used on the virtual servers that run your app. |
-    | **Region** | *Select a region from the note above* | The geographical region from which your app will be hosted. |
+    | **Region** | Central US | The geographical region from which your app will be hosted. |
     | **Windows Service Plan** | *Leave default* | The name of the App Service plan that will power your app. By default, the wizard will create a new plan in the same region as the web app. |
     | **Sku and size** | F1 | The pricing tier of the plan being created. This determines the performance characteristics of the virtual servers that power your app, and the features it has access to. To select the F1 tier, select **Change size** to open the Spec Picker wizard. On the **Dev / Test** tab, select **F1** from the list, then select Apply. |
 
@@ -34,7 +34,7 @@ Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?a
 
 ::: zone pivot="java"
 
-1. Select the **Create a resource** link at the top of the left-hand navigation. Everything you create on Azure is a resource.
+1. On the Azure portal menu or from the **Home** page, select **Create a resource**. Everything you create on Azure is a resource.
 
 1. The portal navigates you to the **Marketplace** page. From here, you can search for the resource you want to create or select one of the popular resources that people create in the Azure portal.
 
@@ -60,7 +60,7 @@ Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?a
 
 ::: zone pivot="node"
 
-1. Select the **Create a resource** link at the top of the left-hand navigation. Everything you create on Azure is a resource.
+1. On the Azure portal menu or from the **Home** page, select **Create a resource**. Everything you create on Azure is a resource.
 
 1. The portal navigates you to the **Marketplace** page. From here, you can search for the resource you want to create or select one of the popular resources that people create in the Azure portal.
 
@@ -86,7 +86,7 @@ Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?a
 
 ::: zone pivot="python"
 
-1. Select the **Create a resource** link at the top of the left-hand navigation. Everything you create on Azure is a resource.
+1. On the Azure portal menu or from the **Home** page, select **Create a resource**. Everything you create on Azure is a resource.
 
 1. The portal navigates you to the **Marketplace** page. From here, you can search for the resource you want to create or select one of the popular resources that people create in the Azure portal.
 
@@ -117,7 +117,7 @@ Select **Review and Create** to navigate to the review page, then select **Creat
 
 The portal will display the deployment page, where you can view the status of your deployment. Once the app is ready, navigate to the new app in the Azure portal:
 
-1. Select the **All resources** menu on the left side navigation.
+1. On the Azure portal menu or from the **Home** page, select **All resources**.
 
 1. Select the App Service for your web app from the list. Make sure to select the App Service, and not the App Service plan.
 

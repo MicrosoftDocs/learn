@@ -1,0 +1,72 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.network-fundamentals.ip-tcp-basics
+title: IP address standards and services
+metadata:
+  title: IP address standards and services
+  description: Explore the IP address standards and services to use when implementing an Internet-based network.
+  ms.date: 01/09/2020
+  author: cryophobia
+  ms.author: chrvaw
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 13
+content: |
+  [!include[](includes/5-ip-tcp-basics.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the structure of an IPv4 address?"
+    choices:
+    - content: "It is comprised of four groups of eight numbers, each separated by a dot"
+      isCorrect: false
+      explanation: "An IPv4 address is made up of four numbers, each separated by a dot, for example, 192.168.0.1"
+    - content: "It is comprised of four hexadecimal numbers (0-F), each separated by a colon."
+      isCorrect: false
+      explanation: "An IPv4 address is made up of four numbers, each separated by a dot, for example, 192.168.0.1"
+    - content: "It is comprised of four numbers, in the range 0-255, each separated by a dot."
+      isCorrect: true
+      explanation: "An IPv4 address is made up of four numbers, each separated by a dot, for example, 192.168.0.1"
+  - content: "What is TCP/IP?"
+    choices:
+    - content: "It is a protocol that improves network device security on the Internet."
+      isCorrect: false
+      explanation: "TCP/IP is a suite of communication protocols that allow different networked devices to communicate with each other."
+    - content: "It is a protocol user to secure connections on the Internet"
+      isCorrect: false
+      explanation: "TCP/IP is a suite of communication protocols that allow different networked devices to communicate with each other."
+    - content: "It is a protocol used to interconnect network devices on the internet."
+      isCorrect: true
+      explanation: "TCP/IP is a suite of communication protocols that allow different networked devices to communicate with each other. "
+  - content: "What is a subnet?"
+    choices:
+    - content: "It is the natural subdivision of an IP address into host and network."
+      isCorrect: false
+      explanation: "Subnets allow your network to be divided into multiple subnetworks."
+    - content: "It is a control mechanism to limit access to an IP-based network."
+      isCorrect: false
+      explanation: "Subnets allow your network to be divided into multiple subnetworks."
+    - content: "It is the logical subdivision of an IP-based network."
+      isCorrect: true
+      explanation: "Subnets allow your network to be divided into multiple subnetworks."
+  - content: "How would you access a private network from the internet?"
+    choices:
+    - content: "By connecting directly to the IP address of the private network."
+      isCorrect: false
+      explanation: "It is not possible to access a private network from the internet. A private network can access another private network using a Network address translation."
+    - content: "The private network needs special access via a gateway."
+      isCorrect: false
+      explanation: "It is not possible to access a private network from the internet. A private network can access another private network using a Network address translation."
+    - content: "It is not possible to access a private network from the internet. A private network can access another private network using a Network address translation."
+      isCorrect: true
+      explanation: "It is not possible to access a private network from the internet. A private network can access another private network using a Network address translation."
+  - content: "What is the DNS?"
+    choices:
+    - content: "The DNS helps resolve IP addresses to domain names"
+      isCorrect: false
+      explanation: "The DNS is a hierarchical and decentralized naming system for computers, services, or other resources connected to the Internet or a private network."
+    - content: "The DNS helps resolve MAC addresses to IP addresses"
+      isCorrect: false
+      explanation: "The DNS is a hierarchical and decentralized naming system for computers, services, or other resources connected to the Internet or a private network."
+    - content: "The DNS helps resolve domain names to IP addresses."
+      isCorrect: true
+      explanation: "It is a hierarchical and decentralized naming system for computers, services, or other resources connected to the Internet or a private network."

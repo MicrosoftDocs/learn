@@ -21,7 +21,7 @@ ASC is offered in two pricing tiers, **Free** and **Standard**. The Standard tie
     > [!NOTE]
     > If you're still in a free tier, the portal might lock you on the **Getting started** option, as shown below. You can enable the Standard tier from this screen as well.
 
-    ![Screenshot the getting started with Azure security Center blade](../media/3-asc-get-started.png)
+    ![Screenshot the getting started with Azure security Center pane](../media/3-asc-get-started.png)
 
 ### Azure Security Center built-in security polices
 The policies are grouped into four functional groups as shown below.
@@ -37,7 +37,7 @@ When automatic provisioning is enabled, Security Center installs the Microsoft M
 1. On the row of the subscription, select the subscription on which agents will be installed.
 1. Click on **Install agents**.
 
-    ![Screenshot the getting started with Azure security Center blade](../media/3-asc-install-agents.png)
+    ![Screenshot the getting started with Azure security Center pane](../media/3-asc-install-agents.png)
 
 ### Enable System Updates - Level 1
 
@@ -50,7 +50,7 @@ Azure Security Center monitors daily Windows and Linux virtual machines (VMs) an
 1. Check that **System updates should be installed on your machines** is one of the policies.
 1. Click the **Enable Monitoring in Azure Security Center** link.
 
-    ![Screenshot of the Security policy Azure security Center blade](../media/3-asc-enable-system-updates.png)
+    ![Screenshot of the Security policy Azure security Center pane](../media/3-asc-enable-system-updates.png)
     
 1. In this example, the ASC agent has not been deployed to a VM or physical machine so the message **AuditIfNotExists** is displayed. AuditIfNotExists enables auditing on resources that match the if condition. If the resource is not deployed, **NotExists** is displayed. 
 
@@ -70,10 +70,10 @@ Azure Security Center monitors security configurations by applying a set of over
 1. Choose a subscription or management group from the displayed list.
 1. Check that **Vulnerabilities in security configuration on your virtual machine scale sets should be remediated** is one of the policies.
 
-    ![Screenshot of the Security policy Azure security Center blade](../media/3-asc-enable-system-updates.png)
+    ![Screenshot of the Security policy Azure security Center pane](../media/3-asc-enable-system-updates.png)
 
 > [!NOTE]
-> All of the following policies that have a (\*) in their title are listed in the **Security policies** blade as described above
+> All of the following policies that have a (\*) in their title are listed in the **Security policies** pane as described above
 
 ### Enable Endpoint Protection (\*) - Level 1
 
@@ -124,7 +124,7 @@ Azure Security Center will recommend that you provide security contact details f
 1. The **Contact info** screen is displayed.
 1. Enter or validate the contact information displayed.
 
-    ![Screenshot of the Contact information Azure security Center blade](../media/3-contact-info.png)
+    ![Screenshot of the Contact information Azure security Center pane](../media/3-contact-info.png)
 
 ### Enable Send me emails about alerts - Level 1
 
@@ -136,7 +136,7 @@ Azure Security Center will recommend that you provide security contact details f
 1. Click on the subscription.
 1. Click **Email notifications**.
 1. Select **Save**.
-    ![Screenshot of the alert email notification Azure security Center blade](../media/3-asc-email-notifications.png)
+    ![Screenshot of the alert email notification Azure security Center pane](../media/3-asc-email-notifications.png)
 
 ### Enable Send email also to subscription owners - Level 1
 

@@ -179,11 +179,17 @@ To finish off, let's verify that the data we added is in our Azure Cache for Red
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-1. Locate your Azure Cache for Redis by selecting **All Resources** in the left-hand sidebar, and using the filter box on the left to select Azure Cache for Redis instances. Alternatively, you can use the search box at the top, and type the name of the cache.
+1. Locate your Azure Cache for Redis:
+
+    1.  On the Azure portal menu or from the **Home** page, select **All Resources**.
+    
+    1. Using the filter box on the left, search for and select Azure Cache for Redis instances.
+    
+        Alternatively, you can use the search box at the top, and type the name of the cache.
 
 1. Select your Azure Cache for Redis instance.
 
-1. In the **Overview** blade for your Azure Cache for Redis, select **Console**. This will open an Azure Cache for Redis console, which allows you to enter low-level Azure Cache for Redis commands.
+1. In the **Overview** pane for your Azure Cache for Redis, select **Console**. This will open an Azure Cache for Redis console, which allows you to enter low-level Azure Cache for Redis commands.
 
 1. Run the command `get MyKey1`. Verify that the value returned is **MyValue1**.
 

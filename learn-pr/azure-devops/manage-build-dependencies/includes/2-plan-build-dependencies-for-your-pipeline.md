@@ -2,21 +2,21 @@ In this part, you'll learn about packaging code to make it easier to share. You'
 
 But first, let's check in and see how the team is doing. Andy has called the team together to talk about a potential change to their code that would help out another team.
 
-**Andy**: Hi everyone. I was chatting with the team who's working on the back-end system for _Space Game_. They could use the models we use for the website in a back-end application they plan to write.
+**Andy:** Hi everyone. I was chatting with the team who's working on the back-end system for _Space Game_. They could use the models we use for the website in a back-end application they plan to write.
 
-**Amita**: What do you mean by models?
+**Amita:** What do you mean by models?
 
-**Andy**: As you know, the _Space Game_ website is an ASP.NET Core application. It uses the Model-View-Controller, or MVC, pattern to separate data from how that data is displayed in the user interface. I was thinking we could create a package that contains our model classes so that any application can use them.
+**Andy:** As you know, the _Space Game_ website is an ASP.NET Core application. It uses the Model-View-Controller, or MVC, pattern to separate data from how that data is displayed in the user interface. I was thinking we could create a package that contains our model classes so that any application can use them.
 
-**Amita**: What exactly is the goal?
+**Amita:** What exactly is the goal?
 
-**Andy**: Both of our teams will share the same database. The game sends the database high scores; we read these scores to display on the leaderboard.
+**Andy:** Both of our teams will share the same database. The game sends the database high scores; we read these scores to display on the leaderboard.
 
-**Amita**: That makes sense. How will we create this package?
+**Amita:** That makes sense. How will we create this package?
 
-**Andy**: That's why I wanted to chat with you. We have a few options, and I'm looking for ideas.
+**Andy:** That's why I wanted to chat with you. We have a few options, and I'm looking for ideas.
 
-**Tim**: I'd love to help, but first I have some questions. I'm new to this and I want to understand how it all works.
+**Tim:** I'd love to help, but first I have some questions. I'm new to this and I want to understand how it all works.
 
 ## What is a package?
 
@@ -61,7 +61,7 @@ You can host packages on your own network, or you can use a hosting service. A h
 Here are popular hosting services for the package types we just discussed:
 
 * **NuGet**: [nuget.org](https://www.nuget.org?azure-portal=true)
-* **Maven**: [apache.org](http://www.apache.org?azure-portal=true)
+* **Maven**: [apache.org](https://www.apache.org?azure-portal=true)
 * **npm**: [npmjs.com](https://www.npmjs.com?azure-portal=true)
 * **Chocolatey**: [chocolatey.org](https://chocolatey.org?azure-portal=true)
 * **RubyGems**: [rubygems.org](https://rubygems.org?azure-portal=true)
@@ -125,15 +125,13 @@ Here's an example of the package dependencies from our Tailspin-SpaceGame-Web pr
 
 ```xml
 <ItemGroup>
-  <PackageReference Include="Microsoft.AspNetCore.App" />
-  <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
   <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
 </ItemGroup>
 ```
 
-## What is Azure Artifacts?
+## What is Microsoft Azure Artifacts?
 
-**Mara:** It seems to me it would make sense for us to host the new Models package in Azure Artifacts. We're all part of the Azure DevOps organization already, so authentication would be easier than trying to set it up on a different package manager.
+**Mara:** It seems to me it would make sense for us to host the new Models package in Azure Artifacts. We're all part of the Microsoft Azure DevOps organization already, so authentication would be easier than trying to set it up on a different package manager.
 
 **Andy:** I looked into that before the meeting and it seems straightforward to me. I agree with Mara.
 

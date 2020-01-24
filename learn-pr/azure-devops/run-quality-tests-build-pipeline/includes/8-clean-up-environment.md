@@ -1,4 +1,4 @@
-You're all done with the tasks for this module. You can now move the work item to the **Done** state on Azure Boards and clean up your Azure DevOps environment.
+You're all done with the tasks for this module. You can now move the work item to the **Done** state on Microsoft Azure Boards and clean up your Microsoft Azure DevOps environment.
 
 > [!IMPORTANT]
 > This page contains important cleanup steps. Cleaning up helps ensure that you don't run out of free build minutes. Be sure to perform the cleanup steps if you ran the template earlier in this module.
@@ -19,9 +19,6 @@ To complete the work item:
     ![Azure Boards showing the card in the Done column](../media/8-azure-boards-wi3-done.png)
 
 ## Disable the pipeline or delete your project
-
-> [!IMPORTANT]
-> You can skip this part if you plan to continue to the next module and use the same Azure DevOps project.
 
 Each module in this learning path provides a template that you can run to create a clean environment for the duration of the module.
 

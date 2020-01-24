@@ -2,7 +2,7 @@ Recall from earlier, that we're using an App Service to run our WordPress applic
 
 Let's have a look at some of this information.
 
-1. Open the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
+1. Open the [Azure portal](https://portal.azure.com/?azure-portal=true).
 
 1. From the left-hand navigation menu, select **Dashboard** to access a list of all resources in your subscription. You may have to click the menu icon to show the navigation choices.
 
@@ -42,7 +42,7 @@ When you have more time, feel free to go through each section and explore the va
 
 ## How to change the App Service configuration
 
-The App Services has many configurable options available and group in sections of functionality.
+The App Services has many configurable options available and groups these options in sections of functionality.
 
 The first section displayed is a group of common options you'd access to get a view of the health of your application. However, each following section provides additional functionality and information.
 
@@ -56,7 +56,7 @@ For example, the **Settings** section gives you access to configure various aspe
 
     ![Screenshot showing Scale up selection](../media/5-settings-scale.png)
 
-1. Notice that there are three workload categories to choose from in the configuration blade. These three categories make it easier to decide the type of workload we'll run.
+1. Notice that there are three workload categories to choose from in the configuration pane. These three categories make it easier to decide the type of workload we'll run.
 
     | Category | Description |
     | --- | --- |
