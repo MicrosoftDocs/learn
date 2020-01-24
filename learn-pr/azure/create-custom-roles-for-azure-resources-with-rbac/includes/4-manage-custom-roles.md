@@ -35,23 +35,15 @@ To see the full definition for a specific role,  use the following Azure CLI com
 az role definition list --name "Virtual Machine Operator"
 ```
 
+## See custom roles assignment
 
-
-## Assign custom roles
-
-To understand the governance of your organization in Azure, it's essential that you're able to see how the roles are assigned.
-
-The following command allows you to view every role assignment within your organization:
+The following command allows you to see who's assigned to the custom role you've created in Azure CLI:
 
 ```azurecli
-az role assignment list [--all]
-                        [--assignee]
-                        [--include-classic-administrators {false, true}]
-                        [--include-groups]
-                        [--include-inherited]
-                        [--resource-group]
-                        [--role]
-                        [--scope]
-                        [--subscription]
+az role assignment list --role "Virtual Machine Operator"
 ```
 
+For PowerShell, use the following command.
+```PowerShell
+Get-AzRoleAssignment -RoleDefinitionName "Virtual Machine Operator"
+```
