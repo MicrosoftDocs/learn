@@ -3,13 +3,13 @@ uid: learn.wwl.introduction-open-source-database-migration-azure.considerations-
 title: Considerations for migration
 metadata:
   title: Considerations for migration
-  description: Considerations for migration
+  description: "Considerations for migration"
   ms.date: 01/31/2020
   author: wwlpublish
   ms.author: v-gea
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-durationInMinutes: 3
+durationInMinutes: 24
 content: |
   [!include[](includes/3-considerations-migration.md)]

@@ -739,6 +739,127 @@
       "source_path": "learn-pr/azure/secure-azure-resources-with-conditional-access/6-summary.yml",
       "redirect_url": "https://docs.microsoft.com/azure/active-directory/conditional-access/",
       "redirect_document_id": false
-    }
+    },
+	{
+"source_path": "learn-pr/wwl-data-ai/introduction-open-source-database-migration-azure-cosmos-db/2-cosmos-db-overview.md",
+"redirect_url": "https://docs.microsoft.com/learn/modules/introduction-open-source-database-migration-azure-cosmos-db/",
+"redirect_document_id": false
+},
+{
+"source_path": "learn-pr/wwl-data-ai/introduction-open-source-database-migration-azure-cosmos-db/3-cosmos-db-apis.md",
+"redirect_url": "https://docs.microsoft.com/learn/modules/introduction-open-source-database-migration-azure-cosmos-db/",
+"redirect_document_id": false
+},
+{
+"source_path": "learn-pr/wwl-data-ai/introduction-open-source-database-migration-azure-cosmos-db/4-considerations-migrate-nosql-cosmos-db.md",
+"redirect_url": "https://docs.microsoft.com/learn/modules/introduction-open-source-database-migration-azure-cosmos-db/",
+"redirect_document_id": false
+},
+{
+"source_path": "learn-pr/wwl-data-ai/introduction-open-source-database-migration-azure-cosmos-db/5-provision-cosmos-db-throughput.md",
+"redirect_url": "https://docs.microsoft.com/learn/modules/introduction-open-source-database-migration-azure-cosmos-db/",
+"redirect_document_id": false
+},
+{
+"source_path": "learn-pr/wwl-data-ai/introduction-open-source-database-migration-azure-cosmos-db/6-cosmos-db-partition-best-practices.md",
+"redirect_url": "https://docs.microsoft.com/learn/modules/introduction-open-source-database-migration-azure-cosmos-db/",
+"redirect_document_id": false
+},
+{
+"source_path": "learn-pr/wwl-data-ai/introduction-open-source-database-migration-azure-cosmos-db/7-summary.md",
+"redirect_url": "https://docs.microsoft.com/learn/modules/introduction-open-source-database-migration-azure-cosmos-db/",
+"redirect_document_id": false
+},
+{
+"source_path": "learn-pr/wwl-data-ai/introduction-open-source-database-migration-azure-cosmos-db/8-knowlege-check.md",
+"redirect_url": "https://docs.microsoft.com/learn/modules/introduction-open-source-database-migration-azure-cosmos-db/",
+"redirect_document_id": false
+},
+{
+"source_path": "learn-pr/wwl-data-ai/migrate-cassandra-workloads-cosmos-db/2-cassandra-cosmos-db-migration-benefits.md",
+"redirect_url": "https://docs.microsoft.com/learn/modules/migrate-cassandra-workloads-cosmos-db/",
+"redirect_document_id": false
+},
+{
+"source_path": "learn-pr/wwl-data-ai/migrate-cassandra-workloads-cosmos-db/3-cassandra-cosmos-db-migration-plan.md",
+"redirect_url": "https://docs.microsoft.com/learn/modules/migrate-cassandra-workloads-cosmos-db/",
+"redirect_document_id": false
+},
+{
+"source_path": "learn-pr/wwl-data-ai/migrate-cassandra-workloads-cosmos-db/4-cassandra-cosmos-db-data-migration.md",
+"redirect_url": "https://docs.microsoft.com/learn/modules/migrate-cassandra-workloads-cosmos-db/",
+"redirect_document_id": false
+},
+{
+"source_path": "learn-pr/wwl-data-ai/migrate-cassandra-workloads-cosmos-db/5-cassandra-cosmos-db-application-migration.md",
+"redirect_url": "https://docs.microsoft.com/learn/modules/migrate-cassandra-workloads-cosmos-db/",
+"redirect_document_id": false
+},
+{
+"source_path": "learn-pr/wwl-data-ai/migrate-cassandra-workloads-cosmos-db/6-summary.md",
+"redirect_url": "https://docs.microsoft.com/learn/modules/migrate-cassandra-workloads-cosmos-db/",
+"redirect_document_id": false
+},
+{
+"source_path": "learn-pr/wwl-data-ai/migrate-cassandra-workloads-cosmos-db/7-knowledge-check.md",
+"redirect_url": "https://docs.microsoft.com/learn/modules/migrate-cassandra-workloads-cosmos-db/",
+"redirect_document_id": false
+},
+{
+"source_path": "learn-pr/wwl-data-ai/introduction-open-source-database-migration-azure/2-mysql-postgresql-database-services-azure.md",
+"redirect_url": "https://docs.microsoft.com/learn/modules/introduction-open-source-database-migration-azure/",
+"redirect_document_id": false
+},
+{
+"source_path": "learn-pr/wwl-data-ai/introduction-open-source-database-migration-azure/5-summary.md",
+"redirect_url": "https://docs.microsoft.com/learn/modules/introduction-open-source-database-migration-azure/",
+"redirect_document_id": false
+},
+{
+"source_path": "learn-pr/wwl-data-ai/introduction-open-source-database-migration-azure/6-knowledge-check.md",
+"redirect_url": "https://docs.microsoft.com/learn/modules/introduction-open-source-database-migration-azure/",
+"redirect_document_id": false
+},
+{
+"source_path": "learn-pr/wwl-data-ai/protecting-monitoring-tuning-migrated-database/1-introduction.md",
+"redirect_url": "https://docs.microsoft.com/learn/modules/protect-monitor-tuning-migrated-database/",
+"redirect_document_id": false
+},
+{
+"source_path": "learn-pr/wwl-data-ai/protecting-monitoring-tuning-migrated-database/2-protecting-database-server.md",
+"redirect_url": "https://docs.microsoft.com/learn/modules/protect-monitor-tuning-migrated-database/",
+"redirect_document_id": false
+},
+{
+"source_path": "learn-pr/wwl-data-ai/protecting-monitoring-tuning-migrated-database/3-monitor-configure-database-server.md",
+"redirect_url": "https://docs.microsoft.com/learn/modules/protect-monitor-tuning-migrated-database/",
+"redirect_document_id": false
+},
+{
+"source_path": "learn-pr/wwl-data-ai/protecting-monitoring-tuning-migrated-database/4-trace-track-activity.md",
+"redirect_url": "https://docs.microsoft.com/learn/modules/protect-monitor-tuning-migrated-database/",
+"redirect_document_id": false
+},
+{
+"source_path": "learn-pr/wwl-data-ai/protecting-monitoring-tuning-migrated-database/5-configure-read-replicas.md",
+"redirect_url": "https://docs.microsoft.com/learn/modules/protect-monitor-tuning-migrated-database/",
+"redirect_document_id": false
+},
+{
+"source_path": "learn-pr/wwl-data-ai/protecting-monitoring-tuning-migrated-database/6-summary.md",
+"redirect_url": "https://docs.microsoft.com/learn/modules/protect-monitor-tuning-migrated-database/",
+"redirect_document_id": false
+},
+{
+"source_path": "learn-pr/wwl-data-ai/protecting-monitoring-tuning-migrated-database/7-knowledge-check.md",
+"redirect_url": "https://docs.microsoft.com/learn/modules/protect-monitor-tuning-migrated-database/",
+"redirect_document_id": false
+},
+{
+"source_path": "learn-pr/wwl-data-ai/protecting-monitoring-tuning-migrated-database/index.md",
+"redirect_url": "https://docs.microsoft.com/learn/modules/protect-monitor-tuning-migrated-database/",
+"redirect_document_id": false
+}
+	
   ]
 }
