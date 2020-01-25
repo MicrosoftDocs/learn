@@ -16,10 +16,15 @@ Task | Actions | Description
 **Update** | `Microsoft.Authorization/roleDefinitions/write` | Users can update custom roles in scopes. For example, Owners and User Access Administrators of subscriptions, resource groups, and resources.
 **View** | `Microsoft.Authorization/roleDefinitions/read` | Users can view the custom roles available for assignment at a scope. All built-in roles allow custom roles to be available for assignment.
 
+## Create or delete custom roles
 
-## Find custom roles
+## Update custom roles
 
-To list all the custom roles, use the following Azure CLI command:
+## View custom roles
+
+In the next unit, you'll see how to view custom roles in the Azure portal. You can also get a list of custom roles by using the Azure CLI or PowerShell.
+
+To list all the custom roles by using Azure CLI, use the following command.
 
 ```azurecli
 az role definition list --custom-role-only true --output json | jq '.[] | {"roleName":.roleName, "roleType":.roleType}'
@@ -27,15 +32,27 @@ az role definition list --custom-role-only true --output json | jq '.[] | {"role
 
 Notice how the command only asks for role name and role type. This makes it easier to view lots of roles.
 
-### View a specified role
+To list all the custom roles by using Azure PowerShell, use the following command. This command list the custom roles that are available for assignment in the subscription. If the subscription isn't in the AssignableScopes of the role, the custom role won't be listed.
 
-To see the full definition for a specific role,  use the following Azure CLI command:
+```PowerShell
+Get-AzRoleDefinition | ? {$_.IsCustom -eq $true} | FT Name, IsCustom
+
+```
+
+## View role definition
+
+To see the full definition for a specific role,  use the following Azure CLI command.
 
 ```azurecli
 az role definition list --name "Virtual Machine Operator"
 ```
+To see the definition in PowerShell, use the following command.
 
-## See custom roles assignment
+```PowerShell
+Get-AzRoleDefinition "Virtual Machine Operator" 
+```
+
+## See custom role assignment
 
 The following command allows you to see who's assigned to the custom role you've created in Azure CLI:
 
