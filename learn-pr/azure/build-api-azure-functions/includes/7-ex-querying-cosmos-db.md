@@ -69,11 +69,11 @@ Install the Cosmos DB package from npm.
 
        const productToCreate = req.body;
 
-       let result = await container.items.create(productToCreate);
+       let { resource } = await container.items.create(productToCreate);
 
        context.res = {
          // status: 200, /* Defaults to 200 */
-         body: result.resource
+         body: resource
        };
      } catch (err) {
        context.res = {
@@ -107,11 +107,11 @@ Install the Cosmos DB package from npm.
        const container = database.container("products");
 
        let iterator = container.items.readAll();
-       let items = await iterator.fetchAll();
+       let { resources } = await iterator.fetchAll();
 
        context.res = {
          // status: 200, /* Defaults to 200 */
-         body: items
+         body: resources
        };
      } catch (err) {
        context.res = {
@@ -147,11 +147,11 @@ Install the Cosmos DB package from npm.
        const product = req.body;
        const { id, brand } = product;
 
-       let result = await container.item(id, brand).replace(product);
+       let { resource } = await container.item(id, brand.name).replace(product);
 
        context.res = {
          // status: 200, /* Defaults to 200 */
-         body: result.resource
+         body: resource
        };
      } catch (err) {
        context.res = {
@@ -187,7 +187,7 @@ Install the Cosmos DB package from npm.
        const brand = req.body.brand;
        const id = req.params.id;
 
-       const result = await container.item(id, brand).delete();
+       const result = await container.item(id, brand.name).delete();
 
        context.res = {
          // status: 200, /* Defaults to 200 */
