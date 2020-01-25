@@ -52,9 +52,9 @@ In this exercise, you'll create the database that will provide data to your API.
 
 1. VS Code will detect a workspace file in this project and ask if you want to open it. Select "Open Workspace".
 
-![VS Code notification prompt to open workspace](../media/open-workspace.png)
+   ![VS Code notification prompt to open workspace](../media/open-workspace.png)
 
-There will be two projects in VS Code: "frontend" and "api".
+There will be two projects in VS Code: "frontend" and "api".`
 
 ## Run the frontend project
 

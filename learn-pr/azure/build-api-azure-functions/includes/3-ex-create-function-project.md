@@ -93,7 +93,7 @@ The Azure Functions project will launch. Notice that the terminal shows you what
 
 1. Press <kbd>Cmd/Ctrl</kbd> and click on the "GetProducts" link to open it in a browser.
 
-![A web browser showing the execution result of the new HTTP function](../media/get-products-page.png)
+   ![A web browser showing the execution result of the new HTTP function](../media/get-products-page.png)
 
 1. The default function template takes in a name parameter and returns a greeting. To pass in the name parameter, modify the url to pass in a query string parameter called "name"
 

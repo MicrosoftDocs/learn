@@ -24,9 +24,25 @@ In a REST architecture, these HTTP request methods - sometimes called "verbs" - 
 
 Therefore, if you wanted to query a database for records, you would call your API endpoint using a GET request method. If you wanted to delete a record, you would call the endpoint with a DELETE request method.
 
-### Azure Functions and HTTP request methods
+### Organization by resource
 
-By default, Azure Functions will respond to both GET and POST requests.
+REST involves structuring your endpoints so that they closely match the resources that they are managing. For example, if you have a service that retrieves all of the products in a database (like we do for this module), then you would call that endpoint, "products". The name matches the resource that the service manages.
+
+```http
+http://127.0.0.1:7071/api/products
+```
+
+The fact that "products" is plural indicates that it returns multiple results. If you were getting only one product, you would call a "product" endpoint and pass an id.
+
+```http
+http://127.0.0.1/api/product/1
+```
+
+### Azure Functions routes and HTTP request methods
+
+By default, Azure Functions will respond to both GET and POST requests. It also sets the route to your function to the name of that function. Both of these things are configurable.
+
+#### Changing which HTTP request method a function responds to
 
 You can configure Azure Functions to only respond to requests made with specific HTTP request methods.
 
@@ -54,71 +70,7 @@ Each function that is created has a corresponding `function.json` file in the fo
 
 See the `methods` property above? That array specifies which HTTP request methods this function will respond to. If a method that is not in that list is used, a 404 will be returned by the function.
 
-## Organization by resource
-
-REST involves structuring your endpoints so that they closely match the resources that they are managing. For example, if you have a service that retrieves all of the products in a database (like we do for this module), then you would call that endpoint, "products". The name matches the resource that the service manages.
-
-```http
-http://127.0.0.1:7071/api/products
-```
-
-The fact that "products" is plural indicates that it returns multiple results. If you were getting only one product, you would call a "product" endpoint and pass an id.
-
-```http
-http://127.0.0.1/api/product/1
-```
-
-#### Passing parameters to REST services
-
-In a RESTful service, parameters are usually passed one of two ways...
-
-1. In the body of the request
-2. As part of the URL
-
-### Passing parameters on the request body
-
-When you need to pass multiple parameters to a function, the request body is usually the right place to do it. For instance, later in this module you will create a "CreateProduct" function. You'll need to send that function an entire product to be created. This includes the product name, quantity and brand name. You'll pass all of these parameters as a JSON object in the body of the request to the "CreateProduct" endpoint.
-
-### Passing parameters on the route
-
-When you are passing one parameter to an endpoint, it is done as part of the route. For instance, when you create the "DeleteProduct" function, you'll need to call the endpoint and pass in the id of the product to delete, as well as the brand name. Since REST services are organized by resource, it makes sense to pass in the id parameter on the route.
-
-```http
-DELETE http://1270.0.1:7071/api/product/1
-```
-
-However, you'll also need the brand name. Since the brand name is text, and likely contains spaces or special characters, we'll pass that parameter on the body of the delete request.
-
-#### Passing JSON objects to Azure Functions
-
-Every HTTP request has a body. You can add data into that body and send that to the server where it is parsed off the body of the request. The services you are building for the products service send and receive data in JSON format. To create a product, you'll need to send the entire product to the service as a JSON object in the body like so...
-
-```json
-{
-  "name": "Artificial Tree",
-  "price": 250,
-  "brand": {
-    "name": "Home & Pro tools"
-  },
-  "stockUnits": 654
-}
-```
-
-In order for Azure Functions to read and parse the body of the request, you'll need to "announce" that your data is in JSON format. This is done by adding a header to the request which specifies that the content type is "application/json". This is a standard HTTP header that is sent along with a request to inform the service that the payload should be read and parsed as JSON.
-
-These parameters will appear on the `body` of the `req` object.
-
-```typescript
-const httpTrigger: AzureFunction = async function(
-  context: Context,
-  req: HttpRequest
-): Promise<void> {
-
-    // params contains the route parameters
-    const productToCreate = req.params.body;
-```
-
-### Passing route parameters to Azure Functions
+#### Changing the function route
 
 You can change the route that Azure Functions listens on for a specific function by modifying the "routes" parameter in the `function.json` configuration file.
 
@@ -126,7 +78,28 @@ You can change the route that Azure Functions listens on for a specific function
 "route": "products"
 ```
 
-This will change everything after the "api" section of the URL to match the route you specified.
+```json
+{
+  "bindings": [
+    {
+      "authLevel": "function",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": ["get", "post"],
+      "route": "products"
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    }
+  ],
+  "scriptFile": "../dist/GetProducts/index.js"
+}
+```
+
+This will change everything after the "api" section of the URL to match the route you specified. In the above configuration file, the route to the "GetProducts" function is now "http://localhost:7071/api/products".
 
 You can pass parameters along with a route. Parameters take the form of {parameterName}. This means that to pass a parameter called "id" to the "product" endpoint, you would specify the following route...
 
@@ -134,16 +107,4 @@ You can pass parameters along with a route. Parameters take the form of {paramet
 "route": "product/{id}"
 ```
 
-These parameters will be parsed off the URL by Azure Functions and will show up in `params` on the `req` object.
-
-```typescript
-const httpTrigger: AzureFunction = async function(
-  context: Context,
-  req: HttpRequest
-): Promise<void> {
-
-    // params contains the route parameters
-    const id = req.params.id;
-```
-
-In the next exercise, you'll customize the "routes" property of the GetProduct, CreateProduct, UpdateProduct and DeleteProduct endpoints so that they conform to the REST architecture.
+In the next exercise, you'll customize the HTTP request methods and routes for the GetProduct, CreateProduct, UpdateProduct and DeleteProduct endpoints so that they conform to a REST architecture.
