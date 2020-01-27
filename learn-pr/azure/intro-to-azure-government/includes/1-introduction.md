@@ -15,4 +15,4 @@ In this module, you will:
 
 - Knowledge of basic cloud computing terms and concepts
 - Familiarity with Azure and the Azure portal
-- Be a member of an eligible US government agency or their partner
+- Be a member of a US government agency or their partner
