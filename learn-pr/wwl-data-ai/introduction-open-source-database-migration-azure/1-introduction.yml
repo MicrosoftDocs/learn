@@ -3,13 +3,13 @@ uid: learn.wwl.introduction-open-source-database-migration-azure.introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: Introduction
+  description: "Introduction"
   ms.date: 01/31/2020
   author: wwlpublish
   ms.author: v-gea
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-durationInMinutes: 3
+durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]
