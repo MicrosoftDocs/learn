@@ -12,7 +12,8 @@ In this unit, you add methods to the `mPerson` class you wrote in the previous u
 
 Python objects support two types of methods: static methods and instance methods. Static methods apply to all objects of a certain type and can be called without instantiating the class to which the methods belong. Instance methods, on the other hand, apply to a specific object or class instance. A `get_age()` method should be an instance method because one person's age doesn't necessarily equal another person's age.
 
-> Technically speaking, Python supports a third method type called *class methods* which are similar to static methods but work at the class level, not the object level. Class methods aren't used all that often, but when they are, they are most often used to create *object factories*. For more information on class methods, visit https://realpython.com/instance-class-and-static-methods-demystified/.
+> [!NOTE]
+> Technically speaking, Python supports a third method type called *class methods*. Class methods are similar to static methods, but they work at the class level, not at the object level. Class methods aren't used often, but when they are, they're usually used to create *object factories*. For more information about class methods, see the article [Python's Instance, Class, and Static Methods Demystified](https://realpython.com/instance-class-and-static-methods-demystified/).
 
 Python's `math` class contains several static methods to help you perform mathematical operations. For example, the following statement computes the square root of 4:
 
@@ -29,7 +30,7 @@ class mathops:
         return val * val
 ```
 
-Then you could square a number by calling the static `square` method:
+Then, you could square a number by calling the static `square` method:
 
 ```python
 square = mathops.square(2)
@@ -64,6 +65,7 @@ Instance methods are associated with a particular object rather than with the cl
 
 	`mPerson` now contains two instance methods: one named `get_age()` that returns the person's age in years, and another named `show_face` that displays the person's face.
 
+	> [!NOTE]
 	> The age computation isn't exact because it provides only rudimentary handling of leap years. The solution to that is a topic for another day.
 
 1. Now run the following statements in a new cell to test these methods:

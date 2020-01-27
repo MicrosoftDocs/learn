@@ -17,16 +17,13 @@
     questions:
     - content: "Alan Kay originally described objects as containers for which of the following?"
       choices:
-      - content: "Methods"
+      - content: "Methods and classes"
         isCorrect: false
         explanation: "Incorrect."
-      - content: "Attributes"
+      - content: "Events and objects"
         isCorrect: false
         explanation: "Incorrect."
-      - content: "Events"
-        isCorrect: false
-        explanation: "Incorrect."
-      - content: "All of the above"
+      - content: "Methods, attributes, and events"
         isCorrect: true
         explanation: "Correct!"
     - content: "Which of the following statements about Python is correct?"
@@ -37,9 +34,6 @@
       - content: "Objects are created only when custom classes are instantiated"
         isCorrect: true
         explanation: "Correct!"
-      - content: "Numbers are not objects, but simple values that are optimized for performance"
-        isCorrect: false
-        explanation: "Incorrect."
       - content: "Python supports subclassing but limits each class to one subclass"
         isCorrect: false
         explanation: "Incorrect."
@@ -54,15 +48,9 @@
       - content: "Static method"
         isCorrect: true
         explanation: "Correct!"
-      - content: "Magic method"
-        isCorrect: false
-        explanation: "Incorrect."
     - content: "Which of the following methods might be useful when overriding a method inherited from a base class?"
       choices:
       - content: "`base()`"
-        isCorrect: false
-        explanation: "Incorrect."
-      - content: "`super()`"
         isCorrect: false
         explanation: "Incorrect."
       - content: "`inheritedFrom()`"
@@ -79,9 +67,6 @@
       - content: "Python provides native support for methods, attributes, and events"
         isCorrect: true
         explanation: "Correct! Python provides native support for methods and attributes, but not for events."
-      - content: "The first parameter to every instance method is `self`"
-        isCorrect: false
-        explanation: "Incorrect."
       - content: "You can't delete methods inherited by a subclass"
         isCorrect: false
         explanation: "Incorrect."
