@@ -8,7 +8,7 @@ metadata:
   ms.author: asabbour
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Azure Kuberntetes Service Workshop
+title: Azure Kubernetes Service Workshop
 summary: In this workshop, you’ll go through tasks to deploy a multi-container application to Kubernetes on Azure Kubernetes Service (AKS).
 abstract: | 
   In this module, you will:
