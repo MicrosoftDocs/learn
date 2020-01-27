@@ -16,7 +16,7 @@ quiz:
   title: "Check your knowledge"
   questions:
 
-  - content: "Which of these standards and protocols are used predominately for email?"
+  - content: "Which of these standards and protocols is used predominately for email?"
     choices:
     - content: "FTP"
       isCorrect: false
@@ -54,7 +54,7 @@ quiz:
 
   - content: "What would you use the Simple Network Management Protocol (SNMP) for?"
     choices:
-    - content: "SNMP is a protocol that's used to gather and organize information about email servers on your IP network."
+    - content: "For collecting and organizing information about email servers on your IP network."
       isCorrect: false
       explanation: "SNMP is a protocol that's used to gather and organize information on your IP network."
     - content: "For collecting and organizing information about user access and behavior on your IP network."
