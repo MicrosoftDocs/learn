@@ -105,7 +105,7 @@ This type of switch offers the means to adjust the configuration, behavior, and 
 Here's a list of the more commonly available options to configure on a managed switch. Keep in mind that switch manufacturers might offer different configuration options.
 
 - **Quality of Service**: Manage LAN traffic so that critical systems are given higher priority. An example is voice-data packets, which need to be delivered quickly.
-- **Virtual LANS**: Create logical groups of devices in their own virtual LAN. Traffic in one virtual LAN doesn't cross over into another virtual LAN. This logical group of devices can improve the security and performance of the network.
+- **Virtual LANs**: Create logical groups of devices in their own virtual LAN. Traffic in one virtual LAN doesn't cross over into another virtual LAN. This logical group of devices can improve the security and performance of the network.
 - **Spanning Tree Protocol (STP)**: Build resilience into your network by defining alternative network routes in case a cable or device fails.
 - **Port mirroring**: Use with a network analyzer to diagnose network issues and problems. During setup, the switch exports a copy of the network traffic to a single port.
 - **Bandwidth rate-limiting**: Allow fine control of the bandwidth used by specific ports, such as high bandwidth for ports handling database or VoIP and lower bandwidths for email.
