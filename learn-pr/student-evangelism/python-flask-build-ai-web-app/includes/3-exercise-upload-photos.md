@@ -151,7 +151,7 @@ In this exercise, you will modify **index.html** and **app.py** so users can upl
     <img id="uploaded-image" src="{{ image_uri }}">
     ```
 
-    What does this do? Notice the `image_uri` variable passed to `render_template()` in the modified **app.py** file. When the page is first requested, `image_uri` points to the placeholder image. When the page is requested again because an image was uploaded, `image_uri` holds the data URI created from the image. Consequently, when the user uploads a photo, the photo replaces the placeholder image on the page. 
+    What does this do? Notice the `image_uri` variable passed to `render_template()` in the modified **app.py** file. When the page is first requested, `image_uri` points to the placeholder image. When the page is requested again because an image was uploaded, `image_uri` holds the data URI created from the image. Consequently, when the user uploads a photo, the photo replaces the placeholder image on the page.
 
 Finish up by saving your changes to **index.html** and **app.py**. It's time to see the results.
 
