@@ -8,13 +8,13 @@ Writing object-oriented code in Python is a little different than writing proced
 
 ## What is OOP?
 
-Legendary programmer named [Alan Kay](https://wikipedia.org/wiki/Alan_Kay) originally conceived of object-oriented programming as a way to help [create computer simulations](http://web.eecs.utk.edu/~huangj/CS302S04/notes/oo-intro.html). He envisioned an "object" as having:
+Legendary programmer named [Alan Kay](https://wikipedia.org/wiki/Alan_Kay) originally conceived of object-oriented programming as a way to help create computer simulations. He envisioned an "object" as having:
 
-- *Attributes*, which define characteristics such as a person's name or the color of their hair
-- *Methods*, which instruct the object to perform tasks, such as render a photo or record information in a database
-- *Events*, which fire when something happens to an object — for example, when a missing person is found
+- **Attributes**. Attributes define characteristics, such as a person's name or the color of their hair.
+- **Methods**. Methods instruct the object to perform tasks, such as render a photo or record information in a database.
+- **Events**. Events fire when something happens to an object; for example, when a missing person is found.
 
-By modeling a simulation as a series of objects performing a series of actions, Kay made the concept of writing code easier to think about. Indeed, the goals of OOP are to:
+By modeling a simulation as a series of objects performing a series of actions, Kay made the concept of writing code easier to think about. The goals of OOP are to:
 
 - **Simplify your life**. Make it possible for you to communicate what you want the computer to do in a manner that you use naturally, but the computer can understand.
 
@@ -40,16 +40,12 @@ In the next unit, you will write a simple class in Python and then instantiate i
 
 ## Learning objectives
 
-In this module, you will learn:
+In this module, you will:
 
-- How to define classes in Python
-- How to instantiate classes in Python
-- How to add attributes to classes
-- How to add methods to classes
-- How to create new classes that inherit from others
+- Learn how to define classes in Python.
+- Learn how to instantiate classes in Python.
+- Learn how to add attributes to classes.
+- Learn how to add methods to classes.
+- Learn how to create new classes that inherit from others.
 
-## Prerequisites
-
-None.
-
-There is much to accomplish, so let's get started.
+There's a lot to accomplish, so let's get started.

@@ -65,7 +65,7 @@ Before you begin writing classes of your own, it is helpful to peek under the ho
 
 	The output shows that 1 is an instance of Python's built-in `int` class, while "Hello There!" is a `str` (string). Notice that Python uses different classes for 1 and 1.1; 1.1 is `float`, not an `int`. If something has a truth value, True or False, then it relies on the `bool` class.
 
-	You could easily test other kinds of data (feel free to experiment!), but be assured that any sort of data you try has a associated class, whether one that is built into Python or one you have written yourself.
+	You could easily test other kinds of data (feel free to experiment!), but be assured that any sort of data you try has an associated class, whether one that is built into Python or one you have written yourself.
 
 1. All classes have methods associated with them. Type the following code into the next cell and click **Run** to execute it:
 
