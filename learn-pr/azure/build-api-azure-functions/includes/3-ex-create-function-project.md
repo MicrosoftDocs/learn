@@ -1,4 +1,6 @@
-In this exercise, you'll create a new project in Azure Functions that will be the HTTP API for the Product Management application. You'll learn how to create a new HTTP Trigger function, run the function locally and set breakpoints. Finally, you'll wire the function up to the database you created in the previous exercise.
+Tailwind Traders had planned on building a traditional API, but you deftly pointed out that Serverless is perfect for API's, and that you could build this one without disturbing their existing codebase. You're already doing so well. You have a long career in online harware sales in your future.
+
+It's time to deliver on those lofty buzzwords. Now you need to create a new project in Azure Functions that will be the HTTP API for the "Product Manager" application. That means creating the Azure Functions project, complete with all of the endpoints that the Product Manager application is going to need to be able to create, read, update and delete products.
 
 ## Create a new Azure Functions project
 
@@ -83,10 +85,10 @@ Azure Functions projects can be run and debugged locally from within VS Code.
 
 1. Open the Command Palette.
 
-1. Type "debug",
+1. Type "debug select",
 
 1. Select "Debug: Select and Start Debugging".
-
+   `
 1. Select "Attach to Node Functions".
 
 The Azure Functions project will launch. Notice that the terminal shows you what URL the function is running on.
@@ -98,9 +100,12 @@ The Azure Functions project will launch. Notice that the terminal shows you what
 1. The default function template takes in a name parameter and returns a greeting. To pass in the name parameter, modify the url to pass in a query string parameter called "name"
 
    ```html
-   http://localhost:7071/api/GetProducts?name=YourName
+   http://localhost:7071/api/GetProducts?name=John%20Jacob%20Jingleheimer%20Schmidt
    ```
 
-   ![The browser displaying the text "Hello Burke"](../media/hello-message.png)
+   > [!NOTE]
+   > Note that your name may not _actually_ be "John Jacob Jingleheimer Schmidt. Feel free to use your own name if it's different than that.
 
-In this exercise you created all of the endpoints that you need for the product manager API. In the next section, you'll learn how to use REST to architect your API endpoints.
+   ![The browser displaying the text "Hello John Jacob Jingleheimer Schmidt"](../media/hello-message.png)
+
+What a productive 8 minutes! You've got all of the endpoints created and running in Azure Functions. Now, you can sit back and REST - Representational State Transfer Protocol. What is that? I'm glad you asked, because it's going to make your API the envy of applications everywhere. In the next section, we'll talk about why.
