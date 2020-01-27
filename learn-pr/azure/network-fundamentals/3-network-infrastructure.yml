@@ -40,7 +40,7 @@ quiz:
       isCorrect: false
       explanation: "Hubs offer the simplest form of network. They allow multiple Ethernet-based network-enabled devices to communicate with each other."
 
-  - content: "What is the principle difference between hub routing and switch routing?"
+  - content: "What is the principal difference between hub routing and switch routing?"
     choices:
     - content: "Hub routing sends all packets to all connected devices. Switch routing sends packets to specific devices."
       isCorrect: true
