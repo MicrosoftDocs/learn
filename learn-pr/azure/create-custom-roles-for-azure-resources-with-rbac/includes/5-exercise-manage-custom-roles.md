@@ -1,4 +1,4 @@
-In this unit, you'll see how to manage your custom roles.
+In this unit, you'll view, update, and delete the custom role you created in the previous exercise.
 
 ## View custom roles within the portal
 
