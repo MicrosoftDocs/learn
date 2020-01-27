@@ -1,6 +1,6 @@
 In this penultimate unit, we test that all your good work so far functions as it should!
 
-Start by making sure your device app is up and running. You should see a console screen full of telemetry messages.
+Start by running your device app. You should see a console screen full of telemetry messages.
 
 ![Screenshot showing how to name, and then create, a new device template](../media/vibration-telemetry.png)
 
