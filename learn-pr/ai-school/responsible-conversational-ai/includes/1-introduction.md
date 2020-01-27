@@ -9,9 +9,12 @@ Although AI is still very far from being able to “think” as humans do, its u
 Microsoft has created special guidelines for the development of responsible Conversational AI. It’s important to remember that, while AI bots may appear to be intelligent, the real intelligence comes from the developers who put these smart programs together — and so the responsibility to create ethically rests with them. It’s perhaps best summed up by the mantra made famous by Spider-Man: with great power, comes great responsibility.
 
 ## Learning objectives
-* Identify the different types of Conversational AI bots and common stakeholders
-* Articulate the benefits of making bots transparent and trustworthy
-* Discover guidelines to ensure bots are reliable and accessible
+
+In this module, you will:
+
+- Identify the different types of Conversational AI bots and common stakeholders
+- Learn the benefits of making bots transparent and trustworthy
+- Discover guidelines to ensure bots are reliable and accessible
 
 ## Prerequistites
 
