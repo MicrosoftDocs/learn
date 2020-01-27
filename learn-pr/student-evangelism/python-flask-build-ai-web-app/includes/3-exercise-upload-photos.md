@@ -13,7 +13,7 @@ Resources that are used in this exercise are located in a Git code samples repos
     cd mslearn-build-ai-web-app-with-python-and-flask/src/starter
     ```
 
-    This will copy all the files from the sample into a subdirectory called **mslearn-build-ai-web-app-with-python-and-flask**, then change directories into the **src** directory where all the project code. 
+    This will copy all the files from the sample into a subdirectory called **mslearn-build-ai-web-app-with-python-and-flask**, then change directories into the **src** directory where all the project code.
 
 1. Change directories into the **starter** directory. This holds a template Flask app that we will develop on.
 
@@ -35,9 +35,9 @@ Resources that are used in this exercise are located in a Git code samples repos
 
     ```python
     from flask import Flask, render_template
-    
+
     app = Flask(__name__)
-    
+
     # Define route for the app's one and only page
     @app.route("/")
     def index():
@@ -53,13 +53,13 @@ Resources that are used in this exercise are located in a Git code samples repos
 
 1. If you are running Windows, execute the following command to create an environment variable named FLASK_ENV that tells Flask to run in development mode:
 
-    ```
+    ```bash
     set FLASK_ENV=development
     ```
 
     If you are running Linux or macOS, use this command instead:
 
-    ```
+    ```bash
     export FLASK_ENV=development
     ```
 
@@ -67,7 +67,7 @@ Resources that are used in this exercise are located in a Git code samples repos
 
 1. Now use the following commands to navigate to the code folder and start Flask:
 
-    ```
+    ```bash
     cd src
     flask run
     ```
@@ -86,11 +86,11 @@ In this exercise, you will modify **index.html** and **app.py** so users can upl
 
 1. If Visual Studio Code isn't installed on your PC, go to <https://code.visualstudio.com/> and install it now.
 
-1. Start Visual Studio Code and use the **File** > **Open Folder** command to open the project directory containing the website.
+1. Start Visual Studio Code and use the **File** > **Open Folder** command to open the **starter** directory containing the website.
 
 1. Use Visual Studio Code's Explorer to open **index.html** in the *templates* folder. **index.html** is the website's home page, and the one that's used to upload photos.
 
-    [ ![Open index.html](../media/open-index.png) ](../media/open-index.png#lightbox)
+    ![Open index.html](../media/open-index.png) ](../media/open-index.png#lightbox)
 
     _Open index.html_
 
@@ -102,7 +102,7 @@ In this exercise, you will modify **index.html** and **app.py** so users can upl
             $("#upload-button").click(function() {
                 $("#upload-file").click();
             });
-    
+
             $("#upload-file").change(function() {
                 $("#submit-button").click();
             });
@@ -159,7 +159,7 @@ Finish up by saving your changes to **index.html** and **app.py**. It's time to 
 
 Let's make sure your changes have the desired effect by uploading a photo to the site.
 
-1. Assuming Flask is still running in the project directory (if it's not, you can start it again with a `flask run` command), either refresh the page in your browser or open a new browser instance and go to http\:\//localhost\:5000.
+1. Assuming Flask is still running in the **starter** directory (if it's not, you can start it again with a `flask run` command), either refresh the page in your browser or open a new browser instance and go to <http://localhost:5000/>.
 
 1. Select the **Upload Photo** button and select a photo from your local file system.
 
