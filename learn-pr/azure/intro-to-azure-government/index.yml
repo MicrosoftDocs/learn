@@ -19,6 +19,7 @@ abstract:  |
 prerequisites: |
   - Knowledge of basic cloud computing terms and concepts
   - Familiarity with Azure and the Azure portal
+  - Be a member of an eligible US government agency or their partner
 iconUrl: /learn/achievements/intro-to-azure-government.svg
 levels: 
 - beginner

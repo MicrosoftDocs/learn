@@ -6,7 +6,13 @@ In this module, you'll learn about Azure Government, what it has to offer and ho
 
 In this module, you will:
 
-   - Understand the security and compliance features and benefits of Azure Government.
-    - Understand the scope of services offered through the Azure Government marketplace.
-    - Decide if Azure Government is right for you as a government agency or partner.
-    - Learn how to access Azure Government.
+- Understand the security and compliance features and benefits of Azure Government.
+- Understand the scope of services offered through the Azure Government marketplace.
+- Decide if Azure Government is right for you as a government agency or partner.
+- Learn how to access Azure Government.
+
+## Prerequisites
+
+- Knowledge of basic cloud computing terms and concepts
+- Familiarity with Azure and the Azure portal
+- Be a member of an eligible US government agency or their partner
