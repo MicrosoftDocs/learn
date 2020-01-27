@@ -5,9 +5,9 @@
 
 ## Create an alert using the metrics and Email action
 
-1. In the portal page for your IoT Hub, click **Alerts**. You should see the response **All is good! You have no alerts.**.
+1. In the portal page for your IoT Hub, click **Alerts**. You should see the response: **All is good! You have no alerts**.
 
-1. Select **+ New alert rule**. This will bring up the **Create rule** page.
+1. Select **+ New alert rule**. This button will bring up the **Create rule** page.
 
 1. The **RESOURCE** entry should already have your IoT Hub name as the selection.
 
@@ -45,7 +45,7 @@
 
 1. Add an **Alert rule name**, and a brief **Description**, to complete the **Create rule** page. Leave the **Severity** as **Sev 3**, and leave **Enable rule upon creation** as **Yes**. Now, click **Create alert rule**, noting the message it can take up to 10 minutes for this rule to become active.
 
-This completes the process of creating an email rule. The next rule we want to create calls an Azure Function. So, first, let's create the Azure Function.
+This step completes the process of creating an email rule. The next rule we want to create calls an Azure Function. So, first, let's create the Azure Function.
 
 ## Create an Azure Function using the HHTP trigger template
 
@@ -90,6 +90,9 @@ This completes the process of creating an email rule. The next rule we want to c
 
 1. Click the **Get function URL**, and save off the URL to a text file.
 
+    > [!NOTE]
+    > To test that the URL is active, add your name in a query parameter to the end of the URL: **?name=&lt;your name&gt;**. Then paste the URL into a browser.
+
 1. Click **Save**. You have now created an Azure Function.
 
 ## Create an alert using the metrics and HTTP trigger action
@@ -98,7 +101,7 @@ Create a second alert for your IoT Hub.
 
 1. In the portal page for your IoT Hub, click **Alerts**.
 
-1. Select **+ New alert rule**. This will bring up the **Create rule** page.
+1. Select **+ New alert rule**. This button will bring up the **Create rule** page.
 
 1. The **RESOURCE** entry should already have your IoT Hub name as the selection.
 

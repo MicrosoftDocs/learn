@@ -1,12 +1,12 @@
-The focus of this module is on the **Monitoring** features of IoT Hub. This unit provides a quick theoretical overview of the four features: Alerts, Metrics, Diagnostic settings, and Logs. The following units will have you create some working alerts and metrics.
+The focus of this module is on the **Monitoring** features of IoT Hub. This unit provides a quick theoretical overview of the four features: Alerts, Metrics, Diagnostic settings, and Logs. The next units will have you create some working alerts and metrics.
 
-Locate the Monitoring section in the left-hand menu.
+Locate the monitoring section in the left-hand menu.
 
   ![Screenshot showing how to name, and then create, a new device template](../media/metrics-alerts-monitoring.png)
 
 ## Alerts
 
-_Alerts_ are one of the more dynamic, and fun, features of an IoT Hub. An alert is triggered when certain conditions are met. The result is one or more actions. You can imagine many types of alerts. For example, the temperature of a device reaches a concerning level, so a warning alert is triggered, and sent to the device operators. Alerts can be sent because an IoT device is overworking in some way, or because too little, or no, telemetry is being received at all. Whereas the most common use of alerts is when a value is outside a range, greater than a maximum, less than a minimum, you might also send a form of alert that everything is in range and working just fine. The advantage of the latter approach, sending a message repeatedly when everything is OK, is that it covers the scenario when the alert system itself fails. If the operator does not receive a message, then investigate.
+_Alerts_ are one of the more dynamic, and fun, features of an IoT Hub. An alert is triggered when certain conditions are met. The result is one or more actions. You can imagine many types of alerts. For example, the temperature of a device reaches a concerning level, so a warning alert is triggered, and sent to the device operators. Alerts can be sent because an IoT device is overworking in some way, or because too little, or no, telemetry is being received at all. Whereas the most common use of alerts is when a value is outside a range, greater than a maximum, less than a minimum, you might also send a form of alert that everything is in range and working fine. The advantage of the latter approach, sending a message repeatedly when everything is OK, is that it covers the scenario when the alert system itself fails. If the operator does not receive a message, then investigate.
 
 ### Define an action group
 
@@ -113,7 +113,7 @@ AzureActivity
 | top 50 by TimeGenerated desc
 ```
 
-When the query is run, the output is presented in table or chart form, in the portal. Rendering a chart as output is only possible with certain types of input data. 
+When the query is run, the output is presented in table or chart form, in the portal. Rendering a chart as output is only possible with certain types of input data.
 
 A user must select **Pin to dashboard** for the query to be persisted. Columns of a table can be selected or removed, and the resulting output exported if needed.
 

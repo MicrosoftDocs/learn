@@ -2,7 +2,7 @@
 uid: learn.iot.manage-your-azure-iot-hub-with-metrics-alerts
 metadata:
   title: Manage your Azure IoT Hub with alerts and metrics
-  description: In this module, create an Azure IoT Hub, then a device app to send vibration telemetry to the IoT Hub. Finally, create rules, alerts, diagnostics, and logs, to monitor and respond to the telemetry.
+  description: In this module, create an Azure IoT Hub, then a device app to send vibration telemetry to the IoT Hub. Learn about metrics, alerts, diagnostics, and logs. Finally, create and test some alerts.
   ms.date: 2/2/2020
   author: PeterTurcan
   ms.author: Olivier.Bloch
@@ -10,13 +10,14 @@ metadata:
   ms.prod: learning-azure
 title: Manage your Azure IoT Hub with alerts and metrics
 summary: >
- In this module, create an Azure IoT Hub, then a device app to send vibration telemetry to the IoT Hub. Finally, create rules, alerts, diagnostics, and logs, to monitor and respond to the telemetry.
+ In this module, create an Azure IoT Hub, then a device app to send vibration telemetry to the IoT Hub. Learn about metrics, alerts, diagnostics, and logs. Finally, create and test some alerts.
 abstract: | 
   In this module, you will:
   - Create an Azure IoT Hub, using the IoT Hub portal
   - Create an Azure IoT Hub device identity, using the IoT Hub portal
   - Create an app to send device telemetry to the IoT Hub, using Visual Studio or Visual Studio Code
   - Learn about rules, alerts, diagnostics, and logs, to monitor the telemetry sent to the IoT Hub
+  - Create an email alert, suing the IoT Hub portal
   - Create an Azure function, using the IoT Hub portal
   - Create an action to trigger the Azure function, using the IoT Hub portal
 prerequisites: | 

@@ -2,7 +2,7 @@
 uid: learn.iot.manage-your-azure-iot-hub-with-metrics-alerts.overview-iot-hub-metrics-alerts
 metadata:
   title: Create IoT Hub metrics and alerts
-  description: Read about the purpose and features of IoT Hub monitoring. The features include rules, alerts, diagnostics and logs.
+  description: Read about the purpose and features of IoT Hub monitoring. The features include rules, alerts, diagnostics, and logs.
   ms.date: 2/2/2020
   author: PeterTurcan
   ms.author: Olivier.Bloch

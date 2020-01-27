@@ -3,14 +3,13 @@ In this module, you learned how to:
 - Create an Azure IoT Hub, using the IoT Hub portal
 - Create an Azure IoT Hub device identity, using the IoT Hub portal
 - Create an app to send device telemetry to the IoT Hub, using Visual Studio or Visual Studio Code
+- Create an email alert, suing the IoT Hub portal
 - Create an Azure function, using the IoT Hub portal
 - Create an action to trigger the Azure function, using the IoT Hub portal
 
 [![Graph of smooth vibrations](../media/vibration3.png)](../media/vibration3.png#lightbox)
 
 ## Clean up
-
-Stop the device app.
 
 All resources created using the sandbox will be automatically deleted. If you created any resources outside of the sandbox, delete them from your Azure portal.
 
@@ -29,4 +28,4 @@ Take your interest further with:
 
 And look out for additional Learn modules on IoT Hub.
 
-To complete this module, and earn your just rewards, complete a final knowledge check.
+To complete this module, and earn the reward, pass a final knowledge check.

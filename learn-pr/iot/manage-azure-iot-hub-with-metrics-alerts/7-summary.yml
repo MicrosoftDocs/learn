@@ -46,14 +46,14 @@ quiz:
       isCorrect: false
       explanation: There is no formal collection of these features.
 
-  - content: 'What are the four features of the IoT Hub <b>Monitoring</b> menu?'
+  - content: 'What are the four entries for the IoT Hub <b>Monitoring</b> menu?'
     choices:  
     - content: 'Alerts, Metrics, Security Alerts, Custom Alerts'
       isCorrect: false
       explanation: Security Alerts and Custom Alerts fall under the <b>Security</b> heading.
     - content: 'Alerts, Metrics, Diagnostic settings, Logs'
       isCorrect: true
-      explanation: These are indeed the four features of IoT Hub monitoring.
+      explanation: These entries are the four features of IoT Hub monitoring.
     - content: 'Overview, Alerts, Metrics, Logs'
       isCorrect: false
       explanation: An Overview feature is not available for Monitoring.
@@ -78,20 +78,20 @@ quiz:
 
   - content: 'When configuring an action, a developer has set the metric to <b>Total device data usage</b>, the <b>Operator</b> to <b>Greater than</b>, the <b>Aggregation type</b> to <b>Total</b>, and the <b>Threshold value</b> to 2000. The <b>Aggregation granularity period</b> is 5 minutes, and the <b>Frequency of evaluation</b> is <b>Every 1 Minute</b>. When will this action trigger?'
     choices:  
-    - content: 'Every one minute the action will test to see if the total data usage for the past 5 minutes exceeds 2000 bytes, and if so, triggers the action.'
+    - content: 'Every one minute the action will test to see if the total data usage for the past 5 minutes exceeds 2000 bytes. If so, the action is triggered.'
       isCorrect: true
       explanation: This answer correctly identifies the purpose of all the action settings.
-    - content: 'Every one minute the action will test to see if the total data usage for the past 5 minutes meets or exceeds 2000 bytes, and if so, triggers the action'
+    - content: 'Every one minute the action will test to see if the total data usage for the past 5 minutes meets or exceeds 2000 bytes. If so, the action is triggered.'
       isCorrect: false
       explanation: The Operator used is "Greater than", not "Greater than or equal to".
-    - content: 'Every fives minutes the action will test to see if the total data usage for the past one minute exceeds 2000 bytes, and if so, triggers the action'
+    - content: 'Every five minutes the action will test to see if the total data usage for the past one minute exceeds 2000 bytes. If so, the action is triggered.'
       isCorrect: false
       explanation: Time periods are confused here.
-    - content: 'Every fives minutes the action will test to see if the total data usage for the past 5 minutes exceeds 2000 bytes, and if so, triggers the action.'
+    - content: 'Every five minutes the action will test to see if the total data usage for the past 5 minutes exceeds 2000 bytes. If so, the action is triggered.'
       isCorrect: false
-      explanation: This does not take into account the Frequency of evaluation setting.
+      explanation: This answer does not take into account the Frequency of evaluation setting.
       
-  - content: 'Over a period of time, a metric has the following ten values: <b>6, 4, 5, 0, 12, -1, -2, 0, 4, 2</b>. What are the Avg, Min, Max, Sum of these metrics?'
+  - content: 'Over a period of time, a metric has the following 10 values: <b>6, 4, 5, 0, 12, -1, -2, 0, 4, 2</b>. What are the Avg, Min, Max, Sum of these metrics?'
     choices:  
     - content: 'Avg = 3.3, Min = -2, Max = 12, Sum = 33'
       isCorrect: false

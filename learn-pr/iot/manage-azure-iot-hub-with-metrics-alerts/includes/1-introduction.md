@@ -2,7 +2,9 @@ An Azure IoT Hub can direct the telemetry messages from one, or millions, of dev
 
 In this module, you'll learn about Azure IoT Hub, IoT Hub message routing, Azure storage, Azure Stream Analytics, and how to call a built-in ML model. You'll achieve this knowledge by creating an IoT system to monitor and detect vibration anomalies in a conveyor belt. You'll learn a little about vibration, and a lot more about Azure IoT services!
 
-[![Conceptual art of conveyor belt](../media/vibrations-art1.png)](../media/vibrations-art1.png#lightbox)
+This module uses the same scenario, and code base, as the [Identify anomalies by routing data via IoT Hub to a built-in ML model in Azure Stream Analytics](https://docs.microsoft.com/en-us/learn/modules/data-anomaly-detection-using-azure-iot-hub/). It is not necessary to complete this other module to complete this one. You will gain valuable insights to the features of Azure IoT Hub by completing both modules, in any order.
+
+[![Conceptual art of conveyor belt](../media/vibrations-art2.png)](../media/vibrations-art2.png#lightbox)
 
 ## Learning objectives
 
@@ -12,6 +14,7 @@ In this module you will:
 - Create an Azure IoT Hub device identity, using the IoT Hub portal
 - Create an app to send device telemetry to the IoT Hub, using Visual Studio or Visual Studio Code
 - Learn about rules, alerts, diagnostics, and logs, to monitor the telemetry sent to the IoT Hub
+- Create an email alert, suing the IoT Hub portal
 - Create an Azure function, using the IoT Hub portal
 - Create an action to trigger the Azure function, using the IoT Hub portal
 
