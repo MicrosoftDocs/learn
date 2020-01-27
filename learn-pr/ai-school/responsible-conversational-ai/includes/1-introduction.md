@@ -16,7 +16,7 @@ In this module, you will:
 - Learn the benefits of making bots transparent and trustworthy
 - Discover guidelines to ensure bots are reliable and accessible
 
-## Prerequistites
+## Prerequisites
 
 None
 
