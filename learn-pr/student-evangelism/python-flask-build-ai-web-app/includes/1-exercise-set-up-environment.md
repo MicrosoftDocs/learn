@@ -8,58 +8,58 @@ To run Flask websites on your computer, both Flask and Python must be installed.
 
 1. If Python 3.6 or higher isn't installed on your computer, go to <https://www.python.org/> and install it now. You can determine whether it's installed on Windows by executing the following command in a Command Prompt window:
 
-	```bash
-	python --version
-	```
+    ```bash
+    python --version
+    ```
 
-	Similarly, you can check to see whether it's installed on macOS or Linux by executing the following command in a terminal:
+    Similarly, you can check to see whether it's installed on macOS or Linux by executing the following command in a terminal:
 
-	```bash
-	python3 --version
-	```
+    ```bash
+    python3 --version
+    ```
 
-	If Python is installed, the version number will appear in the output. If you install Python and are asked during the installation process whether Python should be added to the system's PATH, answer yes.
+    If Python is installed, the version number will appear in the output. If you install Python and are asked during the installation process whether Python should be added to the system's PATH, answer yes.
 
-	![Add Python to the PATH](../media/add-to-path.png)
+    ![Add Python to the PATH](../media/add-to-path.png)
 
-	_Add Python to the PATH_
+    _Add Python to the PATH_
 
 1. If you are running Windows, execute the following command to install the latest version of pip, the Python package manager:
 
-	```bash
-	python -m pip install --upgrade pip
-	```
+    ```bash
+    python -m pip install --upgrade pip
+    ```
 
-	If you are running macOS or Linux, use this command:
+    If you are running macOS or Linux, use this command:
 
-	```bash
-	python3 -m pip install --user --upgrade pip
-	```
+    ```bash
+    python3 -m pip install --user --upgrade pip
+    ```
 
-	This command is important because older versions of pip might miss some of the dependencies needed to run Python in Azure.
+    This command is important because older versions of pip might miss some of the dependencies needed to run Python in Azure.
 
 1. Create a directory on your hard disk in the location of your choice. The directory will be the *project directory* and will hold all of the files that comprise the Contoso Travel website. It's also where your virtual Python environment will be created.
 
 1. In a Command Prompt window or terminal, `cd` to the project directory. If you are running Windows, use the following commands to create a virtual environment in the "env" subdirectory and activate the environment:
 
-	```bash
-	python -m venv env
-	env\scripts\activate
-	```
+    ```bash
+    python -m venv env
+    env\scripts\activate
+    ```
 
-	If you are running macOS or Linux, use these commands:
+    If you are running macOS or Linux, use these commands:
 
-	```bash
-	python3 -m venv env
-	source env/bin/activate
-	```
+    ```bash
+    python3 -m venv env
+    source env/bin/activate
+    ```
 
 1. Now execute the following commands to install Flask and the Python SDK for Azure's Computer Vision API in the virtual environment:
 
-	```bash
-	pip install Flask
-	pip install azure-cognitiveservices-vision-computervision
-	```
+    ```bash
+    pip install Flask
+    pip install azure-cognitiveservices-vision-computervision
+    ```
 
 Leave the Command Prompt window or terminal open so you can easily return to it later. When you run the website, you will want to run it from this directory with the virtual environment active.
 
@@ -71,22 +71,22 @@ The Azure CLI is a command-line environment for creating and managing Azure reso
 
 1. In a Command Prompt window or terminal, sign in to Azure with the following command:
 
-	```
-	az login
-	```
+    ```bash
+    az login
+    ```
 
-	In the ensuing browser window, sign in using your Microsoft account. Then close the browser and return to the CLI.
+    In the ensuing browser window, sign in using your Microsoft account. Then close the browser and return to the CLI.
 
 1. Type the following command to list the Azure subscriptions associated with your Microsoft account:
 
-	```
-	az account list
-	``` 
+    ```bash
+    az account list
+    ```
 
-	The default subscription—the one used to create resources created with the CLI—is marked `isDefault=true`. If that's the subscription you want to use, or if it's the only subscription in the list, you're done. Otherwise, use the following command to designate one of the other subscriptions as the default, replacing SUBSCRIPTION_ID with the ID of that subscription: 
+    The default subscription—the one used to create resources created with the CLI—is marked `isDefault=true`. If that's the subscription you want to use, or if it's the only subscription in the list, you're done. Otherwise, use the following command to designate one of the other subscriptions as the default, replacing SUBSCRIPTION_ID with the ID of that subscription: 
 
-	```
-	az account set -s SUBSCRIPTION_ID
-	```
+    ```bash
+    az account set -s SUBSCRIPTION_ID
+    ```
 
 If you aren't familiar with the Azure CLI, you can learn more about it and the numerous commands it supports in [Get started with the Azure CLI](https://docs.microsoft.com/cli/azure/get-started-with-azure-cli?view=azure-cli-latest). Most operations that you perform in Azure can be performed with the CLI or through the Azure portal. Power users tend to prefer the CLI, in part because CLI commands can be used in scripts to automate repetitive tasks.

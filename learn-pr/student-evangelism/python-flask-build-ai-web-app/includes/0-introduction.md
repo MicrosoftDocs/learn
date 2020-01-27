@@ -1,6 +1,7 @@
 Imagine you're a professional web developer and your client is a travel agency. To motivate its customers to stay in touch, the agency wants its website to include a service that translates road signs and billboards in real time. The customer, exploring a foreign land, snaps a picture of a sign they can't read, in a language they don't understand. The customer uploads the picture to the service, and it responds with a translation in the customer's native language. No typing, no forms to fill out—just "Here's a picture, tell me what it says."
 
 To meet the client's requests, the website must support the following features:
+
 - Photo uploads
 - Extracting text from uploaded photos
 - Translating extracted text into the user's language

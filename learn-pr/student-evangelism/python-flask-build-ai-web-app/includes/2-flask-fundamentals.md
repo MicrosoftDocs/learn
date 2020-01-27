@@ -39,7 +39,7 @@ def about():
 @app.route("/contact")
 def contact():
     return "<h1>This the Contact Us page</h1>"
-``` 
+```
 
 If the app is hosted at https\:\//www\.contoso\.com, it now supports the following URLs:
 
@@ -74,7 +74,7 @@ def about():
 @app.route("/contact")
 def contact():
     return render_template("contact.html")
-``` 
+```
 
 Why is the function named `render_template()`? In fact, it can do more than simply load static HTML files. It also allows you to pass it user-defined variables and inject their values into the page at runtime. You could, for example, place a file named **master.html** in the "templates" subdirectory and include the following markup in it:
 
@@ -103,7 +103,7 @@ def about():
 @app.route("/contact")
 def contact():
     return render_template("master.html", message="This is the Contact Us page")
-``` 
+```
 
 In effect, **master.html** becomes a template for output, and you customize the output for each page by passing a variable named `message` into the template and referencing that variable in the template using `{{ ... }}` expressions. For more information about using templates in Flask, see [Templates](http://flask.pocoo.org/docs/1.1.x/tutorial/templates/).
 
@@ -145,7 +145,7 @@ app.secret_key = os.urandom(1)
 def index():
     flash("This is an error message")
     return render_template("index.html")
-``` 
+```
 
 And here is **index.html**:
 
