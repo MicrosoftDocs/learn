@@ -4,6 +4,8 @@ In this exercise, we'll explore some of these tools. First, we'll create a Log A
 
 Before we start with the exercise steps, let's define some of the items we've mentioned.
 
+[!include[](../../../includes/azure-cloud-shell-editor.md)]
+
 ### What is Azure Monitor for containers?
 
 [Azure Monitor for containers](https://docs.microsoft.com/azure/azure-monitor/insights/container-insights-overview?azure-portal=true) is a comprehensive monitoring solution for Kubernetes. This solution gives us insight into the performance of our cluster by collecting memory and processor metrics from controllers, nodes, and containers.

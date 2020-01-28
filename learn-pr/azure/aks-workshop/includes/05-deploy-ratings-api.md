@@ -4,11 +4,11 @@ Recall that we've already created an Azure Container Registry and used it to bui
 
 In this exercise, we're going to deploy that Docker image of the API to the Azure Kubernetes Service (AKS) by creating a Kubernetes [deployment](https://docs.microsoft.com/azure/aks/concepts-clusters-workloads#deployments-and-yaml-manifests?azure-portal=true), and expose it through a load balancer by creating a Kubernetes [service](https://docs.microsoft.com/azure/aks/concepts-network#services?azure-portal=true). Additionally, we're going to configure the API to connect to the MongoDB database by attaching the Kubernetes [secret](https://docs.microsoft.com/azure/aks/concepts-security#kubernetes-secrets?azure-portal=true).
 
-[!include[](../../../includes/azure-cloudshell-editor.md)]
-
 By the end of this unit, we'll have the ratings API deployed and configured to communicate with MongoDB.
 
 ![Deployed resources on the Azure Kubernetes Service cluster](../media/05-arch-2.svg)
+
+[!include[](../../../includes/azure-cloud-shell-editor.md)]
 
 ## Create a Kubernetes deployment file for the ratings API
 

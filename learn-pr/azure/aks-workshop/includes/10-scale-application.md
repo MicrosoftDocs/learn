@@ -2,6 +2,8 @@ As the popularity of our application grows, the application needs to scale appro
 
 In this exercise, we'll explore the AKS Horizontal Pod Autoscaler (HPA) capabilities.
 
+[!include[](../../../includes/azure-cloud-shell-editor.md)]
+
 ## Create Horizontal Pod Autoscaler
 
 In our example, it seems like the `ratings-api` container is unable to cope with the number of requests coming through. To fix the bottleneck, we can deploy more instances of that container.
