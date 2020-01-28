@@ -82,8 +82,9 @@ When running as a Container Instance set, we don’t want it to restart once it 
 
     ```bash
     LOADTEST_API_ENDPOINT=https://<frontend hostname>/api/loadtest
+    ```
 
-Let's run a load test to see how the HPA will scale our deployment.
+    Let's run a load test to see how the HPA will scale our deployment.
 
 1. Run the load test using the command below, setting the duration of the test to 120 seconds, simulating up to 500 requests per second.
 
