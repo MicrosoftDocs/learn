@@ -175,18 +175,18 @@ Finish up by saving your changes to **index.html** and **app.py**.
 
 Now let's run the modified site, upload a few photos, and see if the Computer Vision API lives up to its billing.
 
-1. If you are running Windows, execute the following commands to create environment variables containing the API key and endpoint you retrieved for the Computer Vision API, replacing `computer_vision_api_key` with the API key and `computer_vision_endpoint` with the endpoint URL:
+1. If you are running Windows, execute the following commands to create environment variables containing the API key and endpoint you retrieved for the Computer Vision API, replacing `<computer_vision_api_key>` with the API key and `<computer_vision_endpoint>` with the endpoint URL:
 
     ```bash
-    set VISION_KEY=computer_vision_api_key
-    set VISION_ENDPOINT=computer_vision_endpoint
+    set VISION_KEY=<computer_vision_api_key>
+    set VISION_ENDPOINT=<computer_vision_endpoint>
     ```
 
     If you are running Linux or macOS, use these commands instead:
 
     ```bash
-    export VISION_KEY=computer_vision_api_key
-    export VISION_ENDPOINT=computer_vision_endpoint
+    export VISION_KEY=<computer_vision_api_key>
+    export VISION_ENDPOINT=<computer_vision_endpoint>
     ```
 
     When the site is running locally, calls to `os.environ` load these variables from the environment. Later, when you deploy the site to Azure, the same variables will come from application settings in Azure—no code changes required.
