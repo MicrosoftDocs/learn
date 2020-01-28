@@ -40,27 +40,27 @@ Wait for the command to complete; it will take a few minutes. Then confirm from 
 
 When you ran the website locally, it used `os.environ` to load API keys for the Computer Vision API and the Translator Text API and the URL of the Computer Vision API from local environment variables. In order for the site to run in Azure, these same settings needed to be added to the Azure App Service's application settings. In the steps that follow, you will use the Azure CLI to create these application settings in Azure and initialize them with the same values used when you loaded them into local environment variables.
 
-1. Execute the following CLI command to create an application setting named "VISION_API_KEY," replacing APP_NAME with the name assigned to your App Service and `computer_vision_api_key` with your Computer Vision API key:
+1. Execute the following CLI command to create an application setting named "VISION_API_KEY," replacing APP_NAME with the name assigned to your App Service and `<computer_vision_api_key>` with your Computer Vision API key:
 
     ```bash
-    az webapp config appsettings set -g contoso-travel-rg -n APP_NAME --settings VISION_KEY=computer_vision_api_key
+    az webapp config appsettings set -g contoso-travel-rg -n APP_NAME --settings VISION_KEY=<computer_vision_api_key>
     ```
 
-1. Now use this command to create an application setting named "VISION_ENDPOINT," replacing `computer_vision_endpoint` with your Computer Vision API endpoint:
+1. Now use this command to create an application setting named "VISION_ENDPOINT," replacing `<computer_vision_endpoint>` with your Computer Vision API endpoint:
 
     ```bash
-    az webapp config appsettings set -g contoso-travel-rg -n APP_NAME --settings VISION_ENDPOINT=computer_vision_endpoint
+    az webapp config appsettings set -g contoso-travel-rg -n APP_NAME --settings VISION_ENDPOINT=<computer_vision_endpoint>
     ```
 
-1. Finish up by using the following command to load your Translator Text API key into application settings, replacing `translate_api_key` with your key:
+1. Finish up by using the following command to load your Translator Text API key into application settings, replacing `<translate_api_key>` with your key:
 
     ```bash
-    az webapp config appsettings set -g contoso-travel-rg -n APP_NAME --settings TRANSLATE_API_KEY=translate_api_key
+    az webapp config appsettings set -g contoso-travel-rg -n APP_NAME --settings TRANSLATE_KEY=<translate_api_key>
     ```
 
 If you would like, you can log into the Azure portal, open the Azure App Service created by the `az webapp up` command, and view the application settings that these commands created. The screenshot below illustrates what you will see if you do.
 
-![View application settings in the Azure portal](../media/app-settings.png) ](../media/app-settings.png#lightbox)
+![View application settings in the Azure portal](../media/app-settings.png#lightbox)
 
 _View application settings in the Azure portal_
 
