@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.control-and-organize-with-resource-manager.3-use-tagging-to-organize-resources
+title: Use tagging to organize resources
+metadata:
+  title: Use tagging to organize resources
+  description: In this unit, we'll discuss how to use tagging to organize resources
+  ms.date: 10/1/2018
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-use-tagging-to-organize-resources.md)]

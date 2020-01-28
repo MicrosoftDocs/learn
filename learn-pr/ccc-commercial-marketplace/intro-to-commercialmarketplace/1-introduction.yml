@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.control-and-organize-with-resource-manager.1-introduction
+title: Introduction
+metadata:
+  title: Introduction to resource groups and management in Azure
+  description: Introduction to resource groups and management in Azure
+  ms.date: 10/1/2018
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

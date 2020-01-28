@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.copy-blobs-from-command-line-and-code.summary
+uid: learn.control-and-organize-with-resource-manager.8-summary
 title: Summary
 metadata:
   title: Summary
   description: Summary
-  ms.date: 01/27/2020
-  author: patridge
-  ms.author: adpatrid
+  ms.date: 10/1/2018
+  author: jboeshart
+  ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
 durationInMinutes: 2
 content: |
-  [!include[](includes/9-summary.md)]
+  [!include[](includes/8-summary.md)]

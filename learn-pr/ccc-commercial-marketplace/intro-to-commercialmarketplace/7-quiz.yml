@@ -1,0 +1,66 @@
+### YamlMime:ModuleUnit
+uid: learn.control-and-organize-with-resource-manager.7-quiz
+title: Check your Knowledge
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 10/1/2018
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+quiz:
+  title: 'Knowledge check'
+  questions:
+  - content: 'Tags can be applied to any type of resource on Azure'
+    choices:
+    - content: 'True'
+      explanation: 'Not all resources support tags, so you will want to confirm that your resource type supports them.'
+      isCorrect: false
+    - content: 'False'
+      isCorrect: true
+  - content: 'Tags applied at a resource group level are propagated to resources within the resource group.'
+    choices:
+    - content: 'True'
+      explanation: 'Tags are not inherited. You need to apply tags to every supported resource that you need tagged.'
+      isCorrect: false
+    - content: 'False'
+      isCorrect: true
+  - content: 'Which of the following is not a feature of resource groups?'
+    choices:
+    - content: 'Resources can be in only one resource group.'
+      isCorrect: false
+    - content: 'Resources can be moved from one resource group to another resource group.'
+      isCorrect: false
+    - content: 'Resource groups can be nested.'
+      isCorrect: true
+    - content: 'Role-based access control can be applied to the resource group.'
+      isCorrect: false
+  - content: 'Which of the following might be a good usage of tags?'
+    choices:
+    - content: 'Using tags to associate a cost center with resources for internal chargeback'
+      isCorrect: false
+    - content: 'Using tags in conjunction with Azure Automation to schedule maintenance windows'
+      isCorrect: false
+    - content: 'Using tags to store environment and department association'
+      isCorrect: false
+    - content: 'All of the above are good ways to use tags'
+      isCorrect: true
+  - content: 'Which of the following would be the most efficient way to ensure a naming convention was followed across your subscription?'
+    choices:
+    - content: 'Send out an email with the details of your naming conventions and hope it is followed'
+      isCorrect: false
+    - content: 'Create a policy with your naming requirements and assign it to the scope of your subscription'
+      isCorrect: true
+    - content: 'Give all other users except for yourself read-only access to the subscription. Have all requests to create resources sent to you so you can review the names being assigned to resources, and then create them.'
+      isCorrect: false
+  - content: 'Which of the following would be good to put a resource lock on?'
+    choices:
+    - content: 'An ExpressRoute circuit with connectivity back to your on-premises network'
+      isCorrect: true
+    - content: 'A non-production virtual machine used to test occasional application builds'
+      isCorrect: false
+    - content: 'A storage account used to temporarily store images processed in a development environment'
+      isCorrect: false

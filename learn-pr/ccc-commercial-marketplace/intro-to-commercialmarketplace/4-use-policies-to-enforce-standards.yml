@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.control-and-organize-with-resource-manager.4-use-policies-to-enforce-standards
+title: Use policies to enforce standards
+metadata:
+  title: Use policies to enforce standards
+  description: In this unit, we'll discuss how to use policies to enforce standards
+  ms.date: 10/1/2018
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-use-policies-to-enforce-standards.md)]
