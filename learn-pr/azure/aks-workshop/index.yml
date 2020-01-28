@@ -32,7 +32,7 @@ products:
 units:
 - learn.aks-workshop.01-introduction
 - learn.aks-workshop.02-deploy-aks
-- learn.aks-workshop.03-deploy-acr
+- learn.aks-workshop.03-deploy-container-registry
 - learn.aks-workshop.04-deploy-mongodb
 - learn.aks-workshop.05-deploy-ratings-api
 - learn.aks-workshop.06-deploy-ratings-web
