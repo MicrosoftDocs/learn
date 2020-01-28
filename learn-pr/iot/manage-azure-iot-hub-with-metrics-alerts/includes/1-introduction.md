@@ -50,10 +50,11 @@ The first step to building this system is to create a custom IoT Hub.
 
 ### Remaining jobs
 
-1. image alt text
-1. lightbox utility
+1. image alt text - done
+1. lightbox utility - done
 1. read end to end
 1. test end to end
 1. badge artwork
-1. remove unused images
+1. remove unused images - done
+1. check images for PI - done
 

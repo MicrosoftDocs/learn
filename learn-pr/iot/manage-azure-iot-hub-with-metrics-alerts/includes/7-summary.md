@@ -8,7 +8,7 @@ In this module, you learned how to:
 - Create an Azure function, using the IoT Hub portal
 - Create an action to trigger the Azure function, using the IoT Hub portal
 
-![Screenshot showing how to name, and then create, a new device template](../media/metrics-alerts-vibrations.png)
+[![Artwork showing vibrations](../media/metrics-alerts-vibrations.png)](../media/metrics-alerts-vibrations.png#lightbox)
 
 ## Clean up
 

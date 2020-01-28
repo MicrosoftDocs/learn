@@ -10,7 +10,7 @@ The main activity of this unit is creating two different types of alerts: an ema
 
 1. For **METRIC**, scroll down to near the end of the list, and select **Telemetry messages sent**. Leave the **AGGREGATION** entry as **Sum**.
 
-    ![Screenshot showing how to name, and then create, a new device template](../media/metrics-alerts-telemetry-messages-sent.png)
+    [![Screenshot showing how to create a metric for telemetry messages sent](../media/metrics-alerts-telemetry-messages-sent.png)](../media/metrics-alerts-telemetry-messages-sent.png#lightbox)
 
 1. In the top-right of the portal, change the **Time range** to **Last 30 minutes**, and click **Apply**.
 
@@ -18,15 +18,11 @@ The main activity of this unit is creating two different types of alerts: an ema
 
 1. There will be a short latency, but do you now see the telemetry data arriving?
 
-    ![Screenshot showing how to name, and then create, a new device template](../media/metrics-alerts-metrics-chart.png)
+    [![Screenshot showing the line chart of telemetry messages recevied by the IoT Hub](../media/metrics-alerts-metrics-chart.png)](../media/metrics-alerts-metrics-chart.png#lightbox)
 
 1. Click through the range of visualization options, the default is **Line chart**. Consider when a bar chart, or scatter plot, might be a better rendering option.
 
-1. Optionally, click **New chart**, and add a second telemetry metric to your dashboard. Perhaps choose **Total device data usage** as the metric. Then pin the chart to the current dashboard.
-
-    ![Screenshot showing how to name, and then create, a new device template](../media/metrics-alerts-sum-data.png)
-
-1. A number of metrics can be charted and pinned to the current dashboard. This enables easy comparison between two metrics. It is clear that telemetry messages sent, and data usage, correlate closely.
+1. Optionally, click **New chart**, and add a second telemetry metric to your dashboard. Perhaps choose **Total device data usage** as the metric. Then pin the chart to the current dashboard. A number of metrics can be charted and pinned to the current dashboard. This enables easy comparison between two metrics. It is clear that telemetry messages sent, and data usage, correlate closely.
 
 1. That completes our look at metrics on their own. Close the device app for now, by closing the console window, as we build some alerts.
 
@@ -46,29 +42,29 @@ The main activity of this unit is creating two different types of alerts: an ema
 
 1. For the **Action group name** enter something like "EmailActionGroup", and select the **Email/SMS/Push/Voice** for **Action Type**.
 
-    ![Screenshot showing how to name, and then create, a new device template](../media/metrics-alerts-email-action-group.png)
+    [![Screenshot showing how to add an email action group](../media/metrics-alerts-email-action-group.png)](../media/metrics-alerts-email-action-group.png#lightbox)
 
 1. Click **OK**.
 
 1. For the **Email/SMS/Push/Voice** entry, click the **Email** checkbox, and enter the email address you want the alerts to go to.
 
-    ![Screenshot showing how to name, and then create, a new device template](../media/metrics-alerts-email-alert.png)
+    [![Screenshot showing how to set up the email address for an email action group](../media/metrics-alerts-email-alert.png)](../media/metrics-alerts-email-alert.png#lightbox)
 
 1. Leave the other entries blank, and click **OK**.
 
 1. Click **OK** again, to add the action group. You should now be back at the **Create rule** page. Now, click **Add** under **CONDITION**. In the **Configure signal logic** page, go to the last page of entries, and select **Connected devices (preview)**.
 
-    ![Screenshot showing how to name, and then create, a new device template](../media/metrics-alerts-email-metric.png)
+    [![Screenshot showing how to set the number of connected devices as the signal logic](../media/metrics-alerts-email-metric.png)](../media/metrics-alerts-email-metric.png#lightbox)
 
 1. In the **Configure signal logic** page, locate the **Operator** entry, and change it to **Greater than or equal to**. Change the **Aggregation type** to **Minimum**, and the **Threshold value** to **1**. Change the **Aggregation granularity (Period)** entry to **1 minute**. Clearly what we are doing here is firing off an email when our single device first connects to our IoT Hub.
 
 1. Click **Done**.
 
-    ![Screenshot showing how to name, and then create, a new device template](../media/metrics-alerts-email-alert-logic.png)
+    [![Screenshot showing the alert logic, to fire when the number of connected devices is greater than or equal to one](../media/metrics-alerts-email-alert-logic.png)](../media/metrics-alerts-email-alert-logic.png#lightbox)
 
 1. Check the email account you are using. Do you have a message that you have been added to an Azure action group?
 
-    ![Screenshot showing how to name, and then create, a new device template](../media/metrics-alerts-email-note.png)
+    [![Screenshot showing the email received when the email address is added to the Azure Monitor action group](../media/metrics-alerts-email-note.png)](../media/metrics-alerts-email-note.png#lightbox)
 
 1. Add an **Alert rule name**, and a brief **Description**, to complete the **Create rule** page. Leave the **Severity** as **Sev 3**, and leave **Enable rule upon creation** as **Yes**. Now, click **Create alert rule**, noting the message it can take up to 10 minutes for this rule to become active.
 
@@ -87,13 +83,13 @@ This step completes the process of creating an email rule. The next rule we want
     > [!NOTE]
     > For future reference, take note of the other options: Node.js, Python, Java, and PowerShell Core.
 
-1. Select your **Region**, then click **Next: Hosting**. 
+1. Select your **Region**, then click **Next: Hosting**.
 
-    ![Screenshot showing how to name, and then create, a new device template](../media/metrics-alerts-function-1.png)
+    [![Screenshot showing how to set up the basics of an Azure Function](../media/metrics-alerts-function-1.png)](../media/metrics-alerts-function-1.png#lightbox)
 
 1. You will need to choose a storage account, or create one if no options are offered. For **Operating System**, choose **Windows**, and for **Plan type**, choose **Consumption**.
 
-    ![Screenshot showing how to name, and then create, a new device template](../media/metrics-alerts-function-2.png)
+    [![Screenshot showing how to set up the hosting of an Azure Function](../media/metrics-alerts-function-2.png)](../media/metrics-alerts-function-2.png#lightbox)
 
 1. Now, click **Review + create**, then **Create**.
 
@@ -101,19 +97,19 @@ This step completes the process of creating an email rule. The next rule we want
 
 1. Click the plus sign to the right of **Functions**.
 
-    ![Screenshot showing how to name, and then create, a new device template](../media/metrics-alerts-function-plus.png)
+    [![Screenshot showing the button to click to add an Azure Function](../media/metrics-alerts-function-plus.png)](../media/metrics-alerts-function-plus.png#lightbox)
 
 1. Select **In-portal**, and click **Continue**.
 
-    ![Screenshot showing how to name, and then create, a new device template](../media/metrics-alerts-function-in-portal.png)
+    [![Screenshot showing the In-portal selection for .NET Azure Functions](../media/metrics-alerts-function-in-portal.png)](../media/metrics-alerts-function-in-portal.png#lightbox)
 
 1. Select **More templates..**, click **Finish and view templates**, then select **Http trigger**.
 
-    ![Screenshot showing how to name, and then create, a new device template](../media/metrics-alerts-function-http.png)
+    [![Screenshot showing the HTTP trigger selection of available templates](../media/metrics-alerts-function-http.png)](../media/metrics-alerts-function-http.png#lightbox)
 
 1. Leave the **Name** of the new function as **HttpTrigger1**, and click **Create**. You should now see the function code.
 
-    ![Screenshot showing how to name, and then create, a new device template](../media/metrics-alerts-function-http-body.png)
+    [![Screenshot showing the default code for an HTTP trigger function](../media/metrics-alerts-function-http-body.png)](../media/metrics-alerts-function-http-body.png#lightbox)
 
 1. Click the **Get function URL**, and save off the URL to a text file.
 
@@ -140,7 +136,7 @@ Create a second alert for your IoT Hub.
 
 1. For the **Action group name** enter something like "VibrationActions", and select the **Azure Function** for **Action Type**. You should be able to locate the Azure Function you created in the previous section, **HttpTrigger1**.
 
-    ![Screenshot showing how to name, and then create, a new device template](../media/metrics-alerts-function-action-group.png)
+    [![Screenshot showing how to add an Azure Function to an action group](../media/metrics-alerts-function-action-group.png)](../media/metrics-alerts-function-action-group.png#lightbox)
 
 1. Click **OK** to complete the action group.
 
@@ -150,7 +146,7 @@ Create a second alert for your IoT Hub.
 
 1. Now enter the **Alert logic**. As the defaults are mostly what we want, just add **30** as the **Threshold value**.
 
-    ![Screenshot showing how to name, and then create, a new device template](../media/metrics-alerts-function-logic.png)
+    [![Screenshot showing the alert logic used to trigger the Azure Function](../media/metrics-alerts-function-logic.png)](../media/metrics-alerts-function-logic.png#lightbox)
 
 1. Click **Done**.
 
