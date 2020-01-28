@@ -126,6 +126,9 @@ You have now subscribed to the Translator Text API and obtained an API key for c
     ```python
     @app.route("/", methods=["GET", "POST"])
     def index():
+
+        language = "en"
+
         if request.method == "POST":
             # Display the image that was uploaded
             image = request.files["file"]
