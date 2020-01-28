@@ -142,4 +142,4 @@ VS Code's flexibility is based on the ability to install modular *extensions* th
 
 The Azure Machine Learning Extension for VS Code provides a graphical interface for working with assets in an Azure Machine Learning workspace. You can combine the capabilities of the Azure Machine Learning and Python extensions to manage a complete end-to-end machine learning workload in Azure Machine Learning from the VS Code environment.
 
-> **More Information**: For more information about using the Azure Machine Learning extension for VS Code, see the [documentation](https://aka.ms/AA70rqm).
+> **More Information**: For more information about using the Azure Machine Learning extension for VS Code, see the [documentation](/azure/machine-learning/tutorial-setup-vscode-extension).
