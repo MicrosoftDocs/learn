@@ -4,12 +4,12 @@ metadata:
   title: Deploy Kubernetes with Azure Kubernetes Service
   description: Deploy Kubernetes with Azure Kubernetes Service
   ms.date: 01/30/2020
-  author: jboeshart
-  ms.author: jaboes
+  author: sabbour
+  ms.author: asabbour
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Deploy Kubernetes with Azure Kubernetes Service
-durationInMinutes: 10
+durationInMinutes: 15
 interactive: bash
 content: |
   [!include[](includes/02-deploy-aks.md)]

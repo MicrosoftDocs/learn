@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.aks-workshop.08-enable-ssl
+metadata:
+  title: Enable SSL/TLS on the frontend Ingress
+  description: Enable SSL/TLS on the frontend Ingress
+  ms.date: 01/30/2020
+  author: sabbour
+  ms.author: asabbour
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Enable SSL/TLS on the frontend Ingress
+durationInMinutes: 15
+interactive: bash
+content: |
+  [!include[](includes/08-enable-ssl.md)]
