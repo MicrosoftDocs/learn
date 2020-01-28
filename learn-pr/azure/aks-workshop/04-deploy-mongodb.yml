@@ -10,6 +10,5 @@ metadata:
   ms.prod: learning-azure
 title: Deploy MongoDB
 durationInMinutes: 15
-interactive: bash
 content: |
   [!include[](includes/04-deploy-mongodb.md)]

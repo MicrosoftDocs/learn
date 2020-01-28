@@ -10,6 +10,5 @@ metadata:
   ms.prod: learning-azure
 title: Deploy the ratings frontend
 durationInMinutes: 20
-interactive: bash
 content: |
   [!include[](includes/06-deploy-ratings-web.md)]

@@ -10,6 +10,5 @@ metadata:
   ms.prod: learning-azure
 title: Configure monitoring for your application
 durationInMinutes: 10
-interactive: bash
 content: |
   [!include[](includes/09-configure-monitoring.md)]

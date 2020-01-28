@@ -1,10 +1,10 @@
-Azure Container Registry is a managed Docker registry service based on the open-source Docker Registry 2.0. Container Registry is private, hosted in Azure, and allows us to build, store, and manage images for all types of container deployments.
+Azure Container Registry is a managed Docker registry service based on the open-source Docker Registry 2.0. Container Registry is private, hosted in Azure, and allows you to build, store, and manage images for all types of container deployments.
 
-Container images can be pushed and pulled with Container Registry using the Docker CLI or the Azure CLI. Azure portal integration allows us to visually inspect the container images in our container registry. In distributed environments, the Container Registry geo-replication feature can be used to distribute container images to multiple Azure datacenters for localized distribution.
+Container images can be pushed and pulled with Container Registry using the Docker CLI or the Azure CLI. Azure portal integration allows you to visually inspect the container images in your container registry. In distributed environments, the Container Registry geo-replication feature can be used to distribute container images to multiple Azure datacenters for localized distribution.
 
-Azure Container Registry Tasks can also build container images in Azure. Tasks use a standard Dockerfile to create and store a container image in Azure Container Registry without the need for local Docker tooling. With Azure Container Registry Tasks, we can build on-demand or fully automate container image builds using DevOps processes and tooling.
+Azure Container Registry Tasks can also build container images in Azure. Tasks use a standard Dockerfile to create and store a container image in Azure Container Registry without the need for local Docker tooling. With Azure Container Registry Tasks, you can build on-demand or fully automate container image builds using DevOps processes and tooling.
 
-In this unit, we'll create an Azure Container Registry using the Azure CLI.
+In this unit, you'll create an Azure Container Registry using the Azure CLI.
 
 ## Create an Azure Container Registry
 
@@ -14,7 +14,7 @@ In this unit, we'll create an Azure Container Registry using the Azure CLI.
     ACR_NAME=acr$RANDOM
     ```
 
-1. Use the `az acr create` command to create the registry in the same resource group and region as our Azure Kubernetes Service (AKS) cluster, for example, **aksworkshop** in **East US**.
+1. Use the `az acr create` command to create the registry in the same resource group and region as your Azure Kubernetes Service (AKS) cluster, for example, **aksworkshop** in **East US**.
 
     ```azurecli
     az acr create \
@@ -24,7 +24,7 @@ In this unit, we'll create an Azure Container Registry using the Azure CLI.
         --sku Standard
     ```
 
-    We'll see a response similar to the below JSON example.
+    You'll see a response similar to the below JSON example.
 
     ```json
     {
@@ -64,9 +64,9 @@ In this unit, we'll create an Azure Container Registry using the Azure CLI.
 
 ## Build the container images using Azure Container Registry Tasks
 
-Let's suppose our company makes use of container images to manage compute workloads. Our development teams use the local Docker tooling to build our container images.
+Let's suppose your company makes use of container images to manage compute workloads. Your development teams use the local Docker tooling to build your container images.
 
-We can also use Azure Container Registry to build these containers. A standard Dockerfile provides build instructions. Azure Container Registry allows us to reuse any Dockerfile currently in our environment, including multi-staged builds.
+You can also use Azure Container Registry to build these containers. A standard Dockerfile provides build instructions. Azure Container Registry allows you to reuse any Dockerfile currently in your environment, including multi-staged builds.
 
 ### Build the *ratings-api* image
 
@@ -93,9 +93,9 @@ The ratings API is a Node.js application, built using Express. The [source code]
     ```
 
     > [!NOTE]
-    > Don't forget the period `.` at the end of the preceding command. It represents the source directory containing the docker file, which in our case, is the current directory. Since we didn't specify the name of a file with the --file parameter, the command looks for a file called **Dockerfile** in our current directory.
+    > Don't forget the period `.` at the end of the preceding command. It represents the source directory containing the docker file, which in this case, is the current directory. Since you didn't specify the name of a file with the --file parameter, the command looks for a file called **Dockerfile** in the current directory.
 
-    In a few minutes, we'll see a response similar to the example below.
+    In a few minutes, you'll see a response similar to the example below.
 
     ```output
     2019/12/28 02:04:11 Successfully pushed image: acr4229.azurecr.io/ratings-api:v1
@@ -120,7 +120,7 @@ The ratings API is a Node.js application, built using Express. The [source code]
     Run ID: ca2 was successful after 4m41s
     ```
 
-    Make a note of the pushed image registry and name, for example, `acr4229.azurecr.io/ratings-api:v1`. We'll need this information when configuring the Kubernetes deployment.
+    Make a note of the pushed image registry and name, for example, `acr4229.azurecr.io/ratings-api:v1`. You'll need this information when configuring the Kubernetes deployment.
 
 ### Build the *ratings-web* image
 
@@ -152,7 +152,7 @@ The ratings frontend is a Node.js application that was built using Vue and WebPa
         --image ratings-web:v1 .
     ```
 
-    In a few minutes, we'll see a response similar to the example below.
+    In a few minutes, you'll see a response similar to the example below.
 
     ```output
     2019/12/28 02:09:51 Successfully pushed image: acr4229.azurecr.io/ratings-web:v1
@@ -177,7 +177,7 @@ The ratings frontend is a Node.js application that was built using Vue and WebPa
     Run ID: ca3 was successful after 1m9s
     ```
 
-    Make a note of the pushed image registry and name, for example, `acr4229.azurecr.io/ratings-web:v1`. We'll use this information when we configure the Kubernetes deployment.
+    Make a note of the pushed image registry and name, for example, `acr4229.azurecr.io/ratings-web:v1`. You'll use this information when you configure the Kubernetes deployment.
 
 ## Verify the images
 
@@ -202,7 +202,7 @@ The images are now ready for use.
 
 ## Configure the AKS cluster to authenticate to the container registry
 
-Let's integrate the Azure Container Registry with the existing AKS cluster by supplying valid values for **AKS_CLUSTER_NAME** and **ACR_NAME**. We can automatically configure the required service principal authentication between the two resources.
+Let's integrate the Azure Container Registry with the existing AKS cluster by supplying valid values for **AKS_CLUSTER_NAME** and **ACR_NAME**. You can automatically configure the required service principal authentication between the two resources.
 
 1. Run the following command.
 

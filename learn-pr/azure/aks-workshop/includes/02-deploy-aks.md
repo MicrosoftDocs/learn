@@ -7,7 +7,7 @@ Azure has a managed Kubernetes service, Azure Kubernetes Service (AKS). You'll u
 
 1. Sign into the [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true) with your Azure account.
 
-1. Create a new resource group with the name **aksworkshop** to make it easier cleaning up these resources when we complete the module. We also need to choose a region in which we want to create the resource group, for example, **East US**. If you select a different resource group name, remember it for the rest of the exercises in this module.
+1. Create a new resource group with the name **aksworkshop**. All resources created in these exercises will be deployed in this resrouce group, and will make it easier clean up these resources when you complete the module. You also need to choose a region in which you want to create the resource group, for example, **East US**. If you select a different resource group name, remember it for the rest of the exercises in this module.
 
     ```azurecli
     az group create \
@@ -17,15 +17,15 @@ Azure has a managed Kubernetes service, Azure Kubernetes Service (AKS). You'll u
 
 ## Configure networking
 
-In Azure Kubernetes Service (AKS), we can deploy a cluster that uses one of the following two network models:
+In AKS, you can deploy a cluster that uses one of the following two network models:
 
 * **Kubenet networking** - This network model is the default. With kubenet networking, nodes get an IP address from the Azure virtual network subnet. Pods receive an IP address from a logically different address space to the Azure virtual network subnet of the nodes. Network address translation (NAT) is then configured so that the pods can reach resources on the Azure virtual network. The source IP address of the traffic is NAT'd to the node's primary IP address, then configured on the nodes, and pods receive an IP address "hidden" behind the node IP.
 
-* **Azure Container Networking Interface (CNI) networking** - The AKS cluster is connected to existing virtual network resources and configurations. With Azure Container Networking Interface (CNI), every pod gets an IP address from the subnet and can be accessed directly. These IP addresses must be unique across our network space and must be calculated in advance.
+* **Azure Container Networking Interface (CNI) networking** - The AKS cluster is connected to existing virtual network resources and configurations. With Azure Container Networking Interface (CNI), every pod gets an IP address from the subnet and can be accessed directly. These IP addresses must be unique across your network space and must be calculated in advance.
 
-Some of the features we'll use requires us to deploy the Azure Kubernetes Service (AKS) cluster using the *Azure Container Networking Interface (CNI) networking* configuration.
+Some of the features you'll use requires you to deploy the AKS cluster using the *Azure Container Networking Interface (CNI) networking* configuration.
 
-See [Network concepts for applications in Azure Kubernetes Service (AKS)](https://docs.microsoft.com/azure/aks/concepts-network#azure-virtual-networks) for a more detailed comparison.
+See [Network concepts for applications in AKS](https://docs.microsoft.com/azure/aks/concepts-network#azure-virtual-networks) for a more detailed comparison.
 
 1. Create a virtual network and subnet. Pods deployed in the cluster will be assigned an IP from this subnet.
 
@@ -48,9 +48,9 @@ See [Network concepts for applications in Azure Kubernetes Service (AKS)](https:
         --query id -o tsv)
     ```
 
-## Create the Azure Kubernetes Service (AKS) cluster
+## Create the AKS cluster
 
-1. Get the latest, non-preview, Kubernetes version in our selected region, and store it in a Bash variable named `VERSION`.
+1. Get the latest, non-preview, Kubernetes version in your selected region, and store it in a Bash variable named `VERSION`.
 
     ```azurecli
     VERSION=$(az aks get-versions \
@@ -59,16 +59,16 @@ See [Network concepts for applications in Azure Kubernetes Service (AKS)](https:
         --output tsv)
     ```
 
-1. Our AKS cluster name must be unique. Run the following command from Cloud Shell to create a Bash variable that holds a unique name.
+1. Your AKS cluster name must be unique. Run the following command from Cloud Shell to create a Bash variable that holds a unique name.
 
     ```azurecli
     AKS_CLUSTER_NAME=aksworkshop-$RANDOM
     ```
 
     > [!NOTE]
-    > Make a note of the value stored in $AKS_CLUSTER_NAME by running `echo $AKS_CLUSTER_NAME`. This will allow us to reconfigure the variable in case we need to in the future.
+    > Make a note of the value stored in $AKS_CLUSTER_NAME by running `echo $AKS_CLUSTER_NAME`. This will allow you to reconfigure the variable in case you need to in the future.
 
-1. Run the following `az aks create` command to create the Azure Kubernetes Service (AKS) cluster using the latest version. This command can take a few minutes to complete.
+1. Run the following `az aks create` command to create the AKS cluster using the latest version. This command can take a few minutes to complete.
 
     ```azurecli
     az aks create \
@@ -86,27 +86,25 @@ See [Network concepts for applications in Azure Kubernetes Service (AKS)](https:
     --generate-ssh-keys
     ```
 
-    Let's review the variables that we're using in the command above.
+    Let's review the variables that you're using in the command above.
 
     - `$AKS_CLUSTER_NAME` specifies the name of the AKS cluster
-
-    - `$VERSION` is the latest Kubernetes version we retrieved earlier
-
+    - `$VERSION` is the latest Kubernetes version you retrieved earlier
     - `$SUBNET_ID` is the ID of the subnet created on the virtual network to be configured with AKS
 
     Note the following deployment configuration:
 
     - **VM set type**
 
-        We're specifying that the cluster is created using Virtual Machine Scale Sets. The Virtual Machine Scale Sets enables us to switch on the cluster autoscaler when needed.
+        You're specifying that the cluster is created using Virtual Machine Scale Sets. The Virtual Machine Scale Sets enables you to switch on the cluster autoscaler when needed.
 
     - **Network plugin**
 
-        We're specifying the creation of the AKS cluster using the Azure Container Networking Interface (CNI) plugin.
+        You're specifying the creation of the AKS cluster using the Azure Container Networking Interface (CNI) plugin.
 
     - **Kubernetes service address range**
 
-        This address range is the set of virtual IPs that Kubernetes assigns to internal services in our cluster. The range must not be within the virtual network IP address range of our cluster. It should be different from the subnet created for the pods.
+        This address range is the set of virtual IPs that Kubernetes assigns to internal services in your cluster. The range must not be within the virtual network IP address range of your cluster. It should be different from the subnet created for the pods.
 
     - **Kubernetes DNS service IP address**
 
@@ -114,7 +112,7 @@ See [Network concepts for applications in Azure Kubernetes Service (AKS)](https:
 
     - **Docker Bridge address**
 
-        The Docker bridge network address represents the default *docker0* bridge network address present in all Docker installations. While AKS clusters or the pods themselves don't use* docker0* bridge, we have to set this address to continue supporting scenarios such as *docker build* within the AKS cluster. It's required to select a Classless inter-domain routing (CIDR) for the Docker bridge network address. If we don't set a CIDR, Docker will pick a subnet automatically that could conflict with other CIDRs. We'll pick an address space that doesn't collide with the rest of the CIDRs on our networks, including the cluster's service CIDR and pod CIDR.
+        The Docker bridge network address represents the default *docker0* bridge network address present in all Docker installations. While AKS clusters or the pods themselves don't use* docker0* bridge, you have to set this address to continue supporting scenarios such as *docker build* within the AKS cluster. It's required to select a Classless inter-domain routing (CIDR) for the Docker bridge network address. If you don't set a CIDR, Docker will pick a subnet automatically that could conflict with other CIDRs. You'll pick an address space that doesn't collide with the rest of the CIDRs on your networks, including the cluster's service CIDR and pod CIDR.
 
 ## Test cluster connectivity using `kubectl`
 
@@ -126,7 +124,7 @@ See [Network concepts for applications in Azure Kubernetes Service (AKS)](https:
         --name $AKS_CLUSTER_NAME
     ```
 
-1. Let's take a look at what has been deployed by listing all the nodes in our cluster. We'll use the `kubectl` command to list all the nodes. This command is the main command-line tool we'll use for working with Kubernetes. It's already installed in the Cloud Shell.
+1. Let's take a look at what has been deployed by listing all the nodes in your cluster. You'll use the `kubectl` command to list all the nodes. This command is the main command-line tool you'll use for working with Kubernetes. It's already installed in the Cloud Shell.
 
     ```bash
     kubectl get nodes
@@ -143,9 +141,9 @@ See [Network concepts for applications in Azure Kubernetes Service (AKS)](https:
 
 ## Create a Kubernetes namespace for the application
 
-Kubernetes provides features let us logically isolate teams and workloads in the same cluster. The goal should be to provide the least number of privileges, scoped to the resources each team needs. A namespace in Kubernetes creates a logical isolation boundary. Names of resources need to be unique within a namespace, but not across namespaces.
+Kubernetes provides features let you logically isolate teams and workloads in the same cluster. The goal should be to provide the least number of privileges, scoped to the resources each team needs. A namespace in Kubernetes creates a logical isolation boundary. Names of resources need to be unique within a namespace, but not across namespaces.
 
-If we don't specify the namespace when working with Kubernetes resources, the **default** namespace is implied. Let's create a namespace for our application.
+If you don't specify the namespace when working with Kubernetes resources, the **default** namespace is implied. Let's create a namespace for your application.
 
 1. List the current namespaces in the cluster.
 
@@ -153,7 +151,7 @@ If we don't specify the namespace when working with Kubernetes resources, the **
     kubectl get namespace
     ```
 
-    We'll get a list of namespaces, similar to the following output:
+    You'll get a list of namespaces, similar to the following output:
 
     ```output
     NAME              STATUS   AGE
@@ -163,16 +161,16 @@ If we don't specify the namespace when working with Kubernetes resources, the **
     kube-system       Active   1h
     ```
 
-1. We'll use the `kubectl create namespace` command to create a namespace for the application called **ratingsapp**.
+1. You'll use the `kubectl create namespace` command to create a namespace for the application called **ratingsapp**.
 
     ```bash
     kubectl create namespace ratingsapp
     ```
 
-    We'll get a confirmation that the namespace was created.
+    You'll get a confirmation that the namespace was created.
 
     ```output
     namespace/ratingsapp created
     ```
 
-Next, we'll create and configure Azure Container Registry to use with our AKS cluster.
+Next, you'll create and configure Azure Container Registry to use with your AKS cluster.
