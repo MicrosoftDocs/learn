@@ -4,6 +4,7 @@ metadata:
   title: Migrating open-source workloads to Azure
   description: Migrate open-source workloads
   author: wwlpublish
+  ms.date: 1/28/2020
   ms.author: v-gea
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
