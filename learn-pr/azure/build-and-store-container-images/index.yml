@@ -23,6 +23,7 @@ levels:
 roles:
 - administrator
 - solution-architect
+- student
 products:
 - azure
 - azure-container-instances

@@ -18,7 +18,7 @@ Andy finds Mara talking with Amita in the break room.
 
 ## What is a build badge?
 
-A _badge_ is part of Azure Pipelines. It has methods you can use to add an SVG image that shows the status of the build on your GitHub repository.
+A _badge_ is part of Microsoft Azure Pipelines. It has methods you can use to add an SVG image that shows the status of the build on your GitHub repository.
 
 Most GitHub repositories include a file named *README.md*, which is a Markdown file that includes essential details and documentation about your project. GitHub renders this file on your project's home page.
 
@@ -28,7 +28,7 @@ Here's an example build badge:
 
 For this exercise, you make your build badge visible to everyone. This might not be a good idea for your private projects since your build information will be made available to the public.
 
-1. To make sure your build badge is visible, navigate to **Project settings** in the left pane of your Azure DevOps project.
+1. To make sure your build badge is visible, navigate to **Project settings** in the left pane of your Microsoft Azure DevOps project.
 1. Under **Pipelines** select **Settings**.
 1. Turn off **Disable anonymous access to badges**.
 

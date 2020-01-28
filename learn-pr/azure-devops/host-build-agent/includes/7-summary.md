@@ -1,4 +1,4 @@
-In this module, you set up your own private build agent by using a virtual machine that runs on Azure.
+In this module, you set up your own private build agent by using a virtual machine that runs on Microsoft Azure.
 
 Although a Microsoft-hosted agent often does everything you need, there are times when you might consider using your own build agent.
 

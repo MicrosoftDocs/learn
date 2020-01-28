@@ -3,7 +3,7 @@ uid: learn.azdo.create-release-pipeline
 metadata:
   title: Create a release pipeline in Azure Pipelines - Learn
   description: Set up a continuous delivery (CD) pipeline that automates the process of deploying your application.
-  ms.date: 09/30/2019
+  ms.date: 01/21/2020
   author: tpetchel
   ms.author: thpetche
   ms.topic: interactive-tutorial
@@ -20,7 +20,7 @@ prerequisites: |
   - An Azure subscription
   - An Azure DevOps organization
   - Visual Studio Code
-  - .NET Core 2.1
+  - .NET Core 3.1
   - Git
   - A GitHub account
 iconUrl: /learn/achievements/azure-devops/create-a-release-pipeline-with-azure-pipelines.svg

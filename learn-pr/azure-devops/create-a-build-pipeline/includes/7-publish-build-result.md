@@ -2,7 +2,7 @@ At this point, you can build the *Space Game* web project through the pipeline.
 
 But where do the results of the build go? Right now, the output of the build remains on the temporary build server. Mara needs a way to hand off this build to Amita so she can begin testing.
 
-You can store build artifacts in Azure Pipelines so they're later available to others on your team after the build completes. That's what you'll do here. As a bonus, you'll also refactor the build configuration to use variables to make the configuration easier to read and keep up to date.
+You can store build artifacts in Microsoft Azure Pipelines so they're later available to others on your team after the build completes. That's what you'll do here. As a bonus, you'll also refactor the build configuration to use variables to make the configuration easier to read and keep up to date.
 
 > [!NOTE]
 > Azure Pipelines enables you to automatically deploy the built application to a testing or production environment running in the cloud or in your datacenter. For now, Mara's goal is only to produce builds that she can hand off to QA by using their existing processes.
@@ -78,7 +78,7 @@ Take a moment to examine *azure-pipelines.yml*. Notice that these values are rep
 
 * The build configuration: `Release`
 * The location of the **wwwroot** directory: `Tailspin.SpaceGame.Web/wwwroot`
-* The .NET Core SDK version: `2.1.505`
+* The .NET Core SDK version: `3.1.100`
 
 You now use variables to define these values one time. You then reference the variables throughout the pipeline.
 
@@ -111,7 +111,7 @@ You now use variables to define these values one time. You then reference the va
 
 1. From Azure Pipelines, trace the build through each of the steps.
 
-    You see that the variables are replaced with their values when the build runs. For example, here's the `DotNetCoreInstaller@0` task that sets the .NET Core SDK version to use:
+    You see that the variables are replaced with their values when the build runs. For example, here's the `UseDotNet@2` task that sets the .NET Core SDK version to use:
 
     ![Azure Pipelines showing the .NET Core SDK task running in the pipeline](../media/7-dotnet-core-sdk-task.png)
 

@@ -30,6 +30,7 @@ levels:
 - beginner
 roles:
 - administrator
+- student
 products:
 - azure
 modules:

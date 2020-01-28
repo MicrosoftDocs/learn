@@ -1,4 +1,4 @@
-In this section, you'll make sure that your Azure DevOps organization is set up to complete the rest of this module.
+In this section, you'll make sure that your Microsoft Azure DevOps organization is set up to complete the rest of this module.
 
 The modules in this learning path form a progression in which you follow the Tailspin web team through its DevOps journey.
 
@@ -20,7 +20,7 @@ Run a template that sets up everything for you in your Azure DevOps organization
 On the Azure DevOps Demo Generator site, perform these steps to run the template:
 
 1. Select **Sign In** and accept the usage terms.
-1. On the **Create New Project** page, select your Azure DevOps organization and enter a project name, like **Space Game - web - Pipeline**. Then select **Create Project**.
+1. On the **Create New Project** page, select your Azure DevOps organization and enter a project name, like *Space Game - web - Pipeline*. Then select **Create Project**.
 
     ![Creating a project through the Azure DevOps Demo Generator](../media/5-create-new-project.png)
 

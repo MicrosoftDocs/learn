@@ -108,7 +108,6 @@ Let's say that Andy was in a hurry and pushed up his work without running the te
     ![The dashboard showing a failure on the Test Results Trend widget](../media/7-pipeline-test-failure.png)
 
     The test passes when the input value is 0, but it fails when the input value is 1 or 10.
-1. When the build is complete, notice that the **Artifacts** button doesn't appear.
 
     The build is published to the pipeline only when the previous task succeeds. Here, the build wasn't published because the unit tests failed. This prevents others from accidentally obtaining a broken build.
 
@@ -301,7 +300,7 @@ In this section, you fix the error by changing the code back to its original sta
 
 1. Return to Azure Pipelines. Watch the change move through the pipeline. The tests pass, and the overall build succeeds.
 
-    Optionally, to verify the test results, you can select the **Summary** and **Code Coverage** tabs when the build completes.
+    Optionally, to verify the test results, you can select the **Tests** and **Code Coverage** tabs when the build completes.
 
     You can also check out the dashboard to view the updated results trend.
 

@@ -69,7 +69,7 @@ Let's add the pipeline variable now, before you update your pipeline configurati
 1. Under **Pipelines**, select **Library**.
 1. Select the **Release** variable group.
 1. Under **Variables**, select **+ Add**.
-1. For the name of your variable, enter *SITE_URL*. As its value, enter the URL of the App Service instance that corresponds to your **test** environment, such as *http://tailspin-space-game-web-dev-10529.azurewebsites.net*.
+1. For the name of your variable, enter *SITE_URL*. As its value, enter the URL of the App Service instance that corresponds to your **test** environment, such as **http://tailspin-space-game-web-dev-10529.azurewebsites.net**.
 1. Near the top of the page, select **Save** to save your variable to the pipeline.
 
     Your variable group resembles this one:
@@ -85,7 +85,7 @@ In this section, you modify the pipeline configuration to run your Selenium UI t
     > [!TIP]
     > This file contains a few changes, so we recommend that you replace the entire file with what you see here.
 
-    [!code-yml[](code/6-azure-pipelines.yml?highlight=3,57,110-134)]
+    [!code-yml[](code/6-azure-pipelines.yml?highlight=6,61,114-138)]
 
     The file includes these three changes:
 

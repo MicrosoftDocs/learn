@@ -569,6 +569,297 @@
       "source_path": "learn-pr/azure/keep-your-virtual-machines-updated/6-knowledge-check.yml",
       "redirect_url": "https://docs.microsoft.com/learn/modules/keep-your-virtual-machines-updated",
       "redirect_document_id": false
-    }
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/automate-model-selection-with-azure-automl/2-understand-ml-pipeline.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/automate-model-selection-with-azure-automl",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/automate-model-selection-with-azure-automl/3-what-is-automl.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/automate-model-selection-with-azure-automl",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/automate-model-selection-with-azure-automl/4-automl-recommend-model.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/automate-model-selection-with-azure-automl",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/automate-model-selection-with-azure-automl/5-summary.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/automate-model-selection-with-azure-automl",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/automate-model-selection-with-azure-automl/4-automl-experiment.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/automate-model-selection-with-azure-automl",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/intro-to-azure-machine-learning-service/2-azure-ml-service-vs-ml-studio.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-machine-learning-service",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/intro-to-azure-machine-learning-service/3-azure-ml-service-with-ds-process.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-machine-learning-service",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/intro-to-azure-machine-learning-service/4-create-ml-experiment.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-machine-learning-service",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/intro-to-azure-machine-learning-service/5-create-pipeline.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-machine-learning-service",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/intro-to-azure-machine-learning-service/6-train-model.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-machine-learning-service",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/intro-to-azure-machine-learning-service/7-summary.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-machine-learning-service",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/register-and-deploy-model-with-amls/10-scoring-data-with-deployed-model.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/register-and-deploy-model-with-amls",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/register-and-deploy-model-with-amls/11-manage-and-monitor-models.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/register-and-deploy-model-with-amls",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/register-and-deploy-model-with-amls/2-create-deployment-workspace-azure-portal.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/register-and-deploy-model-with-amls",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/register-and-deploy-model-with-amls/3-create-deployment-workspace-azure-ml-sdk.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/register-and-deploy-model-with-amls",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/register-and-deploy-model-with-amls/4-register-model.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/register-and-deploy-model-with-amls",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/register-and-deploy-model-with-amls/5-create-scoring-script.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/register-and-deploy-model-with-amls",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/register-and-deploy-model-with-amls/6-create-environment-yaml.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/register-and-deploy-model-with-amls",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/register-and-deploy-model-with-amls/7-create-container-image.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/register-and-deploy-model-with-amls",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/register-and-deploy-model-with-amls/8-where-to-deploy-model.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/register-and-deploy-model-with-amls",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/register-and-deploy-model-with-amls/9-deploy-model-web-service.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/register-and-deploy-model-with-amls",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/register-and-deploy-model-with-amls/12-summary.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/register-and-deploy-model-with-amls",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/train-local-model-with-azure-mls/2-simple-log-regression-model.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/train-local-model-with-azure-mls",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/train-local-model-with-azure-mls/3-run-log-reg-model-sklearn.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/train-local-model-with-azure-mls",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/train-local-model-with-azure-mls/4-create-ml-experiment.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/train-local-model-with-azure-mls",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/train-local-model-with-azure-mls/5-what-are-hyperparameters.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/train-local-model-with-azure-mls",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/train-local-model-with-azure-mls/6-train-model-using-experiment-service.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/train-local-model-with-azure-mls",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/train-local-model-with-azure-mls/7-summary.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/train-local-model-with-azure-mls",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/secure-azure-resources-with-conditional-access/1-introduction.yml",
+      "redirect_url": "https://docs.microsoft.com/azure/active-directory/conditional-access/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/secure-azure-resources-with-conditional-access/2-azure-ad-overview.yml",
+      "redirect_url": "https://docs.microsoft.com/azure/active-directory/conditional-access/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/secure-azure-resources-with-conditional-access/3-build-azure-ad.yml",
+      "redirect_url": "https://docs.microsoft.com/azure/active-directory/conditional-access/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/secure-azure-resources-with-conditional-access/4-secure-access.yml",
+      "redirect_url": "https://docs.microsoft.com/azure/active-directory/conditional-access/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/secure-azure-resources-with-conditional-access/5-test-access.yml",
+      "redirect_url": "https://docs.microsoft.com/azure/active-directory/conditional-access/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/secure-azure-resources-with-conditional-access/6-summary.yml",
+      "redirect_url": "https://docs.microsoft.com/azure/active-directory/conditional-access/",
+      "redirect_document_id": false
+    },
+	{
+"source_path": "learn-pr/wwl-data-ai/introduction-open-source-database-migration-azure-cosmos-db/2-cosmos-db-overview.md",
+"redirect_url": "https://docs.microsoft.com/learn/modules/introduction-open-source-database-migration-azure-cosmos-db/",
+"redirect_document_id": false
+},
+{
+"source_path": "learn-pr/wwl-data-ai/introduction-open-source-database-migration-azure-cosmos-db/3-cosmos-db-apis.md",
+"redirect_url": "https://docs.microsoft.com/learn/modules/introduction-open-source-database-migration-azure-cosmos-db/",
+"redirect_document_id": false
+},
+{
+"source_path": "learn-pr/wwl-data-ai/introduction-open-source-database-migration-azure-cosmos-db/4-considerations-migrate-nosql-cosmos-db.md",
+"redirect_url": "https://docs.microsoft.com/learn/modules/introduction-open-source-database-migration-azure-cosmos-db/",
+"redirect_document_id": false
+},
+{
+"source_path": "learn-pr/wwl-data-ai/introduction-open-source-database-migration-azure-cosmos-db/5-provision-cosmos-db-throughput.md",
+"redirect_url": "https://docs.microsoft.com/learn/modules/introduction-open-source-database-migration-azure-cosmos-db/",
+"redirect_document_id": false
+},
+{
+"source_path": "learn-pr/wwl-data-ai/introduction-open-source-database-migration-azure-cosmos-db/6-cosmos-db-partition-best-practices.md",
+"redirect_url": "https://docs.microsoft.com/learn/modules/introduction-open-source-database-migration-azure-cosmos-db/",
+"redirect_document_id": false
+},
+{
+"source_path": "learn-pr/wwl-data-ai/introduction-open-source-database-migration-azure-cosmos-db/7-summary.md",
+"redirect_url": "https://docs.microsoft.com/learn/modules/introduction-open-source-database-migration-azure-cosmos-db/",
+"redirect_document_id": false
+},
+{
+"source_path": "learn-pr/wwl-data-ai/introduction-open-source-database-migration-azure-cosmos-db/8-knowlege-check.md",
+"redirect_url": "https://docs.microsoft.com/learn/modules/introduction-open-source-database-migration-azure-cosmos-db/",
+"redirect_document_id": false
+},
+{
+"source_path": "learn-pr/wwl-data-ai/migrate-cassandra-workloads-cosmos-db/2-cassandra-cosmos-db-migration-benefits.md",
+"redirect_url": "https://docs.microsoft.com/learn/modules/migrate-cassandra-workloads-cosmos-db/",
+"redirect_document_id": false
+},
+{
+"source_path": "learn-pr/wwl-data-ai/migrate-cassandra-workloads-cosmos-db/3-cassandra-cosmos-db-migration-plan.md",
+"redirect_url": "https://docs.microsoft.com/learn/modules/migrate-cassandra-workloads-cosmos-db/",
+"redirect_document_id": false
+},
+{
+"source_path": "learn-pr/wwl-data-ai/migrate-cassandra-workloads-cosmos-db/4-cassandra-cosmos-db-data-migration.md",
+"redirect_url": "https://docs.microsoft.com/learn/modules/migrate-cassandra-workloads-cosmos-db/",
+"redirect_document_id": false
+},
+{
+"source_path": "learn-pr/wwl-data-ai/migrate-cassandra-workloads-cosmos-db/5-cassandra-cosmos-db-application-migration.md",
+"redirect_url": "https://docs.microsoft.com/learn/modules/migrate-cassandra-workloads-cosmos-db/",
+"redirect_document_id": false
+},
+{
+"source_path": "learn-pr/wwl-data-ai/migrate-cassandra-workloads-cosmos-db/6-summary.md",
+"redirect_url": "https://docs.microsoft.com/learn/modules/migrate-cassandra-workloads-cosmos-db/",
+"redirect_document_id": false
+},
+{
+"source_path": "learn-pr/wwl-data-ai/migrate-cassandra-workloads-cosmos-db/7-knowledge-check.md",
+"redirect_url": "https://docs.microsoft.com/learn/modules/migrate-cassandra-workloads-cosmos-db/",
+"redirect_document_id": false
+},
+{
+"source_path": "learn-pr/wwl-data-ai/introduction-open-source-database-migration-azure/2-mysql-postgresql-database-services-azure.md",
+"redirect_url": "https://docs.microsoft.com/learn/modules/introduction-open-source-database-migration-azure/",
+"redirect_document_id": false
+},
+{
+"source_path": "learn-pr/wwl-data-ai/introduction-open-source-database-migration-azure/5-summary.md",
+"redirect_url": "https://docs.microsoft.com/learn/modules/introduction-open-source-database-migration-azure/",
+"redirect_document_id": false
+},
+{
+"source_path": "learn-pr/wwl-data-ai/introduction-open-source-database-migration-azure/6-knowledge-check.md",
+"redirect_url": "https://docs.microsoft.com/learn/modules/introduction-open-source-database-migration-azure/",
+"redirect_document_id": false
+},
+{
+"source_path": "learn-pr/wwl-data-ai/protecting-monitoring-tuning-migrated-database/1-introduction.md",
+"redirect_url": "https://docs.microsoft.com/learn/modules/protect-monitor-tuning-migrated-database/",
+"redirect_document_id": false
+},
+{
+"source_path": "learn-pr/wwl-data-ai/protecting-monitoring-tuning-migrated-database/2-protecting-database-server.md",
+"redirect_url": "https://docs.microsoft.com/learn/modules/protect-monitor-tuning-migrated-database/",
+"redirect_document_id": false
+},
+{
+"source_path": "learn-pr/wwl-data-ai/protecting-monitoring-tuning-migrated-database/3-monitor-configure-database-server.md",
+"redirect_url": "https://docs.microsoft.com/learn/modules/protect-monitor-tuning-migrated-database/",
+"redirect_document_id": false
+},
+{
+"source_path": "learn-pr/wwl-data-ai/protecting-monitoring-tuning-migrated-database/4-trace-track-activity.md",
+"redirect_url": "https://docs.microsoft.com/learn/modules/protect-monitor-tuning-migrated-database/",
+"redirect_document_id": false
+},
+{
+"source_path": "learn-pr/wwl-data-ai/protecting-monitoring-tuning-migrated-database/5-configure-read-replicas.md",
+"redirect_url": "https://docs.microsoft.com/learn/modules/protect-monitor-tuning-migrated-database/",
+"redirect_document_id": false
+},
+{
+"source_path": "learn-pr/wwl-data-ai/protecting-monitoring-tuning-migrated-database/6-summary.md",
+"redirect_url": "https://docs.microsoft.com/learn/modules/protect-monitor-tuning-migrated-database/",
+"redirect_document_id": false
+},
+{
+"source_path": "learn-pr/wwl-data-ai/protecting-monitoring-tuning-migrated-database/7-knowledge-check.md",
+"redirect_url": "https://docs.microsoft.com/learn/modules/protect-monitor-tuning-migrated-database/",
+"redirect_document_id": false
+},
+{
+"source_path": "learn-pr/wwl-data-ai/protecting-monitoring-tuning-migrated-database/index.md",
+"redirect_url": "https://docs.microsoft.com/learn/modules/protect-monitor-tuning-migrated-database/",
+"redirect_document_id": false
+}
+	
   ]
 }

@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.network-fundamentals.network-protocols
-title: Network protocols to use when implementing a network
+title: Network protocols to use when you implement a network
 metadata:
-  title:  Network protocols to use when implementing a network
-  description: Explore the network protocols to use when implementing services on a network.
+  title:  Network protocols to use when you implement a network
+  description: Explore the network protocols to use when you implement services on a network.
   ms.date: 01/09/2020
-  author: cwatson-cat
-  ms.author: cwatson
+  author: cryophobia
+  ms.author: chrvaw
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 13
@@ -16,14 +16,14 @@ quiz:
   title: "Check your knowledge"
   questions:
 
-  - content: "Which of these standards and protocols are used predominately for email?"
+  - content: "Which of these standards and protocols is used predominately for email?"
     choices:
     - content: "FTP"
       isCorrect: false
-      explanation: "FTP is a file transfer protocol. POP3, SMPT, and IMAP are the core email protocols."
+      explanation: "FTP is a File Transfer Protocol. POP3, SMPT, and IMAP are the core email protocols."
     - content: "TCP"
       isCorrect: false
-      explanation: "The Transmission Control Protocol is used for controlling the message. POP3, SMPT, and IMAP are the core email protocols. "
+      explanation: "The Transmission Control Protocol is used for controlling the message. POP3, SMPT, and IMAP are the core email protocols."
     - content: "SMTP"
       isCorrect: true
       explanation: "POP3, SMTP, and IMAP are all email protocols."
@@ -32,10 +32,10 @@ quiz:
     choices:
     - content: "SNMP"
       isCorrect: false
-      explanation: "SNMP is a protocol that allows for the collection of data from devices on your network, and the management of those devices."
+      explanation: "SNMP is a protocol that allows for the collection of data from devices on your network and the management of those devices."
     - content: "HTTP"
       isCorrect: false
-      explanation: "HTTP is an unsecured network protocol that delivers web page content from a server to our browser."
+      explanation: "HTTP is an unsecured network protocol that delivers webpage content from a server to your browser."
     - content: "SSH"
       isCorrect: true
       explanation: "SSH is a network protocol that provides a cryptographic network protocol to operate services securely over an unsecured network." 
@@ -48,18 +48,18 @@ quiz:
     - content: "To send warning messages when the network is about to fail."
       isCorrect: false
       explanation: "ICMP is used to report on the success or failure of operations and activities on the network."
-    - content: "To send error messages and operational information indicating success or failure when communicating with another IP address."
+    - content: "To send error messages and operational information that indicate success or failure when communicating with another IP address."
       isCorrect: true
-      explanation: "ICMP is a protocol for sending the success or failure of any network operation."
+      explanation: "ICMP is a protocol that's used to send information about the success or failure of any network operation."
 
-  - content: "What would you use Simple the Network Management Protocol (SNMP) for?"
+  - content: "What would you use the Simple Network Management Protocol (SNMP) for?"
     choices:
     - content: "For collecting and organizing information about email servers on your IP network."
       isCorrect: false
-      explanation: "SNMP is a protocol for gathering and organizing information on your IP network."
+      explanation: "SNMP is a protocol that's used to gather and organize information on your IP network."
     - content: "For collecting and organizing information about user access and behavior on your IP network."
       isCorrect: false
-      explanation: "SNMP is a protocol for gathering and organizing information on your IP network."
+      explanation: "SNMP is a protocol that's used to gather and organize information on your IP network."
     - content: "For collecting and organizing information about managed devices on IP networks and for modifying that information to change device behavior."
       isCorrect: true
-      explanation: "SNMP is a protocol for gathering and organizing information on your IP network."
+      explanation: "SNMP is a protocol that's used to gather and organize information on your IP network."

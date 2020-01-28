@@ -23,7 +23,8 @@ We'll use the Azure CLI `cosmosdb create` command to create a new Azure Cosmos D
 1. Paste the following command into the Cloud Shell on the right to create a new Azure Cosmos DB account with your specified name.
 
     ```azurecli
-    az cosmosdb create --name $NAME \
+    az cosmosdb create \
+        --name $NAME \
         --kind GlobalDocumentDB \
         --resource-group <rgn>[sandbox resource group name]</rgn>
     ```
@@ -60,8 +61,9 @@ We'll use the Azure CLI `cosmosdb create` command to create a new Azure Cosmos D
 1. Create the `Products` database in the account using the `cosmosdb database create` command. It takes a `db-name` parameter that we'll set to **"Products"** since this database will hold the inventory data.
 
     ```azurecli
-    az cosmosdb database create --name $NAME \
-        --db-name "Products" \
+    az cosmosdb sql database create \
+        --account-name $NAME \
+        --name "Products" \
         --resource-group <rgn>[sandbox resource group name]</rgn>
     ```
 
@@ -82,10 +84,10 @@ We'll use the Azure CLI `cosmosdb create` command to create a new Azure Cosmos D
 1. Finally, create the `Clothing` container with the `cosmosdb collection create` command in the Cloud Shell.
 
     ```azurecli
-    az cosmosdb collection create \
-        --name $NAME \
-        --db-name "Products" \
-        --collection-name "Clothing" \
+    az cosmosdb sql container create \
+        --account-name $NAME \
+        --database-name "Products" \
+        --name "Clothing" \
         --partition-key-path "/productId" \
         --throughput 1000 \
         --resource-group <rgn>[sandbox resource group name]</rgn>
