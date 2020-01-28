@@ -39,8 +39,9 @@
     </linearGradient>
     <linearGradient id="linear-gradient-13" x1="52.09" y1="233.4" x2="53.38" y2="217.43" xlink:href="#linear-gradient-12"/>
   </defs>
-  <title>arch-3</title>
+  <title>06-arch-3</title>
   <g id="Shapes">
+    <rect width="593.06" height="456.98" fill="#fff"/>
     <g>
       <rect x="218.06" y="16.27" width="375" height="440.71" fill="#fff"/>
       <rect x="218.06" y="16.27" width="375" height="440.71" fill="#0072c6" opacity="0.08"/>
