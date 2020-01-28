@@ -8,8 +8,6 @@ In this exercise, we're going to deploy a basic Kubernetes ingress controller, u
 
 ![Deployed resources on the Azure Kubernetes Service cluster](../media/07-arch-4.svg)
 
-[!include[](../../../includes/azure-cloud-shell-editor.md)]
-
 ## Deploy the NGINX ingress controller with Helm
 
 1. Create a namespace for the ingress

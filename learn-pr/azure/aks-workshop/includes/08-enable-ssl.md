@@ -4,8 +4,6 @@ In this exercise, we're going to deploy cert-manager, configure it to automatica
 
 ![Deployed resources on the Azure Kubernetes Service cluster](../media/08-arch-5.svg)
 
-[!include[](../../../includes/azure-cloud-shell-editor.md)]
-
 ## Install cert-manager
 
 Install cert-manager using Helm and configure it to use Let's Encrypt as the certificate issuer.

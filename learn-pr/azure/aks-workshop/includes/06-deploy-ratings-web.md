@@ -6,8 +6,6 @@ By the end of this unit, we should have deployed the ratings web frontend and co
 
 ![Deployed resources on the Azure Kubernetes Service cluster](../media/06-arch-3.svg)
 
-[!include[](../../../includes/azure-cloud-shell-editor.md)]
-
 ## Create a Kubernetes deployment file for the ratings web frontend
 
 1. Create a file called `ratings-web-deployment.yaml` using the integrated editor.
