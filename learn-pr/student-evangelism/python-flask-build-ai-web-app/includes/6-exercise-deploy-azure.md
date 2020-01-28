@@ -20,7 +20,7 @@ In this exercise, you will use the Azure CLI to deploy your website to Azure.
 
     **requirements.txt** contains a list of Python packages that must be installed along with the app when the app is deployed to Azure.
 
-1. Open a Command Prompt window or terminal and `cd` to the project directory.
+1. Open a Command Prompt window or terminal and `cd` to the **starter** directory.
 
 1. Execute the command below to deploy the website to Azure, replacing APP_NAME with the name you want to assign to the site. The name must be **unique with Azure**, so you probably won't be able to use a common name such as "contoso" or "contosotravel" unless you append some random characters to the end.
 
@@ -28,9 +28,11 @@ In this exercise, you will use the Azure CLI to deploy your website to Azure.
     az webapp up -n APP_NAME --resource-group contoso-travel-rg --location northcentralus
     ```
 
+    If you get an error like `"Could not auto-detect the runtime stack of your app, see 'https://go.microsoft.com/fwlink/?linkid=2109470' for more information"` make sure that you are in the correct directory! You should be in the **starter** directory within **mslearn-build-ai-web-app-with-python-and-flask** where you've been writing all your code.
+
     The `az webapp up` command creates an Azure App Service to host your website, configures the App Service with the packages specified in **requirements.txt**, zips the files in the current directory and its subdirectories, and uploads the site to the App Service—all with one simple command. Sites that run on Node.js and Python are deployed to Linux App Services, while sites built on ASP.NET and ASP.NET Core run in Windows App Services.
 
-    > Observe that you deployed the App Service in the same region (North Central US) as the Computer Vision API. This makes calls to the API faster by colocating the website and the API that it uses in the same Azure region.
+    > Observe that you deployed the App Service in the same region (North Central US) as the Computer Vision API. This makes calls to the API faster by co-locating the website and the API that it uses in the same Azure region.
 
 Wait for the command to complete; it will take a few minutes. Then confirm from the output that the website was successfully deployed.
 
