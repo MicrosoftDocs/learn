@@ -10,5 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-bash
 durationInMinutes: 15
+azureSandbox: true
+interactive: bash
 content: |
   [!include[](includes/1-exercise-create-linux-vm.md)]

@@ -1,16 +1,14 @@
 On your own Linux computer, you can run Bash commands locally. If you have access to Linux servers, you can remote in to them and execute Bash commands there. But nobody wants to experiment on a live production system — particularly on their first day at Northwind!
 
-In this unit, you will use [Azure Cloud Shell](https://azure.microsoft.com/features/cloud-shell/) to create a Linux virtual machine (VM) running Ubuntu in Azure. Cloud Shell is a command-line interface to Azure that you access through the [Azure portal](https://portal.azure.com) or at https://shell.azure.com. You don't have to install anything on your PC or laptop to use it. If you have a browser and an Azure subscription, you're ready to go.
+In this unit, you will use Azure Cloud Shell to create a Linux virtual machine (VM) running Ubuntu in Azure. Cloud Shell is a command-line interface to Azure that you access through the Azure porta] or at <https://shell.azure.com>. You don't have to install anything on your PC or laptop to use it. 
+
+We will use Cloud Shell within Learn. You can see it on the right half of the page. 
 
 After creating the VM, you will remote into it so you can use it to practice Bash commands.
 
 ## Create a virtual machine
 
 Creating a virtual machine from Cloud Shell requires just a few steps:
-
-1. Navigate to https://shell.azure.com in your browser to launch Cloud Shell. If you are asked to choose a directory, select the one containing the Azure subscription that you wish to use for the VM.
-
-1. If PowerShell is the language selected in the upper-left corner of Cloud Shell, select **Bash** from the drop-down list to switch to Bash.
 
 1. Execute the following command in Cloud Shell to list the Azure subscriptions associated with your Microsoft account:
 
