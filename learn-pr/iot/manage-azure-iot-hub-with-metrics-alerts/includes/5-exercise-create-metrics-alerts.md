@@ -1,7 +1,34 @@
+The main activity of this unit is creating two different types of alerts: an email alert, and an Azure Function alert. First though, let's have a look at how metrics can be visualized in the IoT Hub dashboard. We will be re-using the metric again when creating alerts.
 
 ## Create and visualize some metrics
 
+1. Start the device app running.
 
+1. In your IoT Hub portal, locate and click **Metrics** in the **Monitoring** section of the left-hand menu.
+
+1. In the bar that starts with the **SCOPE** entry, verify that **SCOPE** is set to the name of your IoT Hub. Leave the **METRIC NAMESPACE** at it's default.
+
+1. For **METRIC**, scroll down to near the end of the list, and select **Telemetry messages sent**. Leave the **AGGREGATION** entry as **Sum**.
+
+    ![Screenshot showing how to name, and then create, a new device template](../media/metrics-alerts-telemetry-messages-sent.png)
+
+1. In the top-right of the portal, change the **Time range** to **Last 30 minutes**, and click **Apply**.
+
+1. It is important to click **Pin to dashboard**, then **Pin to current dashboard**. If you do not pin a metric to a dashboard, it will not be persisted after you navigate away from the current dashboard. You should get a confirmation notification that the chart has been pinned.
+
+1. There will be a short latency, but do you now see the telemetry data arriving?
+
+    ![Screenshot showing how to name, and then create, a new device template](../media/metrics-alerts-metrics-chart.png)
+
+1. Click through the range of visualization options, the default is **Line chart**. Consider when a bar chart, or scatter plot, might be a better rendering option.
+
+1. Optionally, click **New chart**, and add a second telemetry metric to your dashboard. Perhaps choose **Total device data usage** as the metric. Then pin the chart to the current dashboard.
+
+    ![Screenshot showing how to name, and then create, a new device template](../media/metrics-alerts-sum-data.png)
+
+1. A number of metrics can be charted and pinned to the current dashboard. This enables easy comparison between two metrics. It is clear that telemetry messages sent, and data usage, correlate closely.
+
+1. That completes our look at metrics on their own. Close the device app for now, by closing the console window, as we build some alerts.
 
 ## Create an alert using the metrics and Email action
 

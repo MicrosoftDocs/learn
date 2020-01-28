@@ -1,13 +1,14 @@
+Good work finishing this module. Monitoring is not an _exciting_ activity, but is an important one. By completing this module you now have a valuable introduction, and operational experience, of the monitoring features of an Azure IoT Hub.
+
 In this module, you learned how to:
 
-- Create an Azure IoT Hub, using the IoT Hub portal
-- Create an Azure IoT Hub device identity, using the IoT Hub portal
+- Create an Azure IoT Hub and device identity, using the IoT Hub portal
 - Create an app to send device telemetry to the IoT Hub, using Visual Studio or Visual Studio Code
 - Create an email alert, suing the IoT Hub portal
 - Create an Azure function, using the IoT Hub portal
 - Create an action to trigger the Azure function, using the IoT Hub portal
 
-[![Graph of smooth vibrations](../media/vibration3.png)](../media/vibration3.png#lightbox)
+![Screenshot showing how to name, and then create, a new device template](../media/metrics-alerts-vibrations.png)
 
 ## Clean up
 
@@ -28,4 +29,4 @@ Take your interest further with:
 
 And look out for additional Learn modules on IoT Hub.
 
-To complete this module, and earn the reward, pass a final knowledge check.
+To earn your rewards, pass a final knowledge check.

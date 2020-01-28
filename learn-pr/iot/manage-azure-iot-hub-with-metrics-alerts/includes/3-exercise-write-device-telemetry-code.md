@@ -1,5 +1,7 @@
 At the end of this unit, you'll be sending and receiving telemetry.
 
+You can select your preferred development environment (Visual Studio Code, or Visual Studio). The simulator is written in C#.
+
 ## Create an app to send telemetry
 
 ::: zone pivot="vscode"
@@ -363,8 +365,8 @@ The following app simulates a conveyor belt, and reports vibration sensor data e
 
     [![Screenshot showing the count of telemetry messages being received by the IoT Hub](../media/vibration-hub-overview.png)](../media/vibration-hub-overview.png#lightbox)
 
-1. If no activity is shown, wait a short while, as there's some latency.
-
-With your device pumping out telemetry, and your hub receiving it, the next step is to route the messages to their correct endpoints.
+1. If no activity is shown, wait a short while, as there's some latency.  
 
 1. Stop the device app for now, by closing the console window. We will start the app running again when we have some alerts to test.
+
+ With your device pumping out telemetry, and your hub receiving it, the next step is to learn about the monitoring features of an IoT Hub.

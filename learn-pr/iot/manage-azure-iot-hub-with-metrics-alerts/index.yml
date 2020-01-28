@@ -13,8 +13,7 @@ summary: >
  In this module, create an Azure IoT Hub, then a device app to send vibration telemetry to the IoT Hub. Learn about metrics, alerts, diagnostics, and logs. Finally, create and test some alerts.
 abstract: | 
   In this module, you will:
-  - Create an Azure IoT Hub, using the IoT Hub portal
-  - Create an Azure IoT Hub device identity, using the IoT Hub portal
+  - Create an Azure IoT Hub and device identity, using the IoT Hub portal
   - Create an app to send device telemetry to the IoT Hub, using Visual Studio or Visual Studio Code
   - Learn about rules, alerts, diagnostics, and logs, to monitor the telemetry sent to the IoT Hub
   - Create an email alert, suing the IoT Hub portal
