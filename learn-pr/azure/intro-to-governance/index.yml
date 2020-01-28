@@ -25,6 +25,7 @@ roles:
 - administrator
 - solution-architect
 - security-engineer
+- student
 products:
 - azure
 units:

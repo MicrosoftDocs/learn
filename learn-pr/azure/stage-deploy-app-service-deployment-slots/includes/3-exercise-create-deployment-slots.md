@@ -12,7 +12,7 @@ Start by creating a new web app resource in the Azure portal:
 
 1. Sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true).
 
-1. Select **Create a resource**.
+1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
 
 1. Select **Web** > **Web App**.
 
@@ -38,7 +38,7 @@ Start by creating a new web app resource in the Azure portal:
 
 Use any of the usual deployment tools for your web app and its deployment slots. In this exercise, you'll use a local git repository for deployment. Set up the web app to use git by following these steps:
 
-1. In the Azure portal, on the left, select **All resources** and then select the web app you created.
+1. On the Azure portal menu or from the **Home** page, select **All resources** and then select the web app you created.
 
 1. On the **Overview** page, under **Deployment**, select **Deployment Center**.
 
@@ -110,7 +110,7 @@ For the new the web app, you created only one slot: the production slot. You dep
 
 Next you'll create a deployment slot where you can stage new versions of the web app:
 
-1. In the Azure portal, select **All resources** and then select the web app.
+1. On the Azure portal menu or from the **Home** page, select **All resources** and then select the web app.
 
 1. Under **Deployment**, select **Deployment slots**.
 
@@ -126,7 +126,7 @@ Next you'll create a deployment slot where you can stage new versions of the web
 
 Set up the new slot to use git deployment, just like you did for the production slot. Follow these steps:
 
-1. In the Azure portal, on the left, select **All resources**. In the list of all resources, you'll now see two web app entries: deployment slots are represented as separate apps in the portal. Select the entry representing the staging slot to go to its **Overview** page.
+1. On the Azure portal menu or from the **Home** page, select **All resources**. In the list of all resources, you'll now see two web app entries: deployment slots are represented as separate apps in the portal. Select the entry representing the staging slot to go to its **Overview** page.
 
 1. Under **Deployment**, select **Deployment Center**.
 

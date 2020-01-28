@@ -50,3 +50,13 @@ achievements:
   title: Introduction to Azure solutions
   summary: Introduction to Azure solutions
   iconUrl: /learn/achievements/intro-to-azure-areas-and-solutions.svg
+- uid: learn-xamarin.university-veteran.badge
+  type: badge
+  title: Xamarin University Veteran
+  summary: Prior student of Xamarin University
+  iconUrl: /learn/achievements/xamarin/xamarin-university-veteran-badge.svg
+- uid: learn.secure-access-azure-ad-multi-factor-authentication.badge
+  type: badge
+  title: Secure your Azure resources with Conditional Access
+  summary: Secure your Azure resources with Conditional Access
+  iconUrl: /learn/achievements/secure-azure-resources-with-conditional-access.svg

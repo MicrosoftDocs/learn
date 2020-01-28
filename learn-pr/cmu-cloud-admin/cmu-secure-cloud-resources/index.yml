@@ -25,11 +25,12 @@ prerequisites: |
   - Recognize cloud service models such as IaaS, PaaS, and SaaS and differentiate between them
   - Understand how cloud resource provisioning works
   - Be familiar with different approaches to organizing cloud resources
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/cmu-cloud-admin/secure-cloud-resources.svg
 levels:
 - beginner
 roles:
 - administrator
+- student
 products:
 - azure
 units:

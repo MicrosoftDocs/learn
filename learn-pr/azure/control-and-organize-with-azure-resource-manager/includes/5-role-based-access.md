@@ -17,7 +17,7 @@ In the above screenshot, **Alain Charon** has been assigned the **Backup Operato
 
 ### How RBAC defines access
 
-RBAC uses an **allow model** for access. When you are assigned to a role, RBAC _allows_ you to perform specific actions, such as read, write, or delete. Therefore, if one role assignment grants you read permissions to a resource group, and a different role assignment grants you write permissions to the same resource group, you will have write permissions on that resource group.
+RBAC uses an **allow model** for access. When you are assigned to a role, RBAC _allows_ you to perform specific actions, such as read, write, or delete. Therefore, if one role assignment grants you read permissions to a resource group, and a different role assignment grants you write permissions to the same resource group, you will have both read and write permissions on that resource group.
 
 ## Best Practices for RBAC
 

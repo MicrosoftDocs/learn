@@ -24,6 +24,7 @@ levels:
 roles:
 - administrator
 - developer
+- student
 products:
 - azure
 - azure-virtual-machines

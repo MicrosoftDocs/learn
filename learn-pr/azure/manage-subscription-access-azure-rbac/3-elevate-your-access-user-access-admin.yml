@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.manage-subscription-access-azure-rbac.elevate-your-access-user-access-admin
+title: Understand when you might need to elevate your access
+metadata:
+  title: Understand when you might need to elevate your access
+  description: Learn about the scenarios where you might need to elevate your access to User Access Administrator.
+  ms.date: 01/13/2020
+  author: cwatson-cat
+  ms.author: cwatson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-elevate-your-access-user-access-admin.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: A user who had Owner access to a subscription has left your company. No one else has access to this subscription. How can you grant another employee access to this subscription?
+    choices:
+    - content: Use the Azure portal to elevate your own access.
+      isCorrect: true
+      explanation: Temporarily elevate your own access to assign the Owner role to another user.
+    - content: Ask the former employee for their password.
+      isCorrect: false
+      explanation: A robust security system for your organization can't depend on the good will of former employees.
+    - content: Ask the former employee to sign in and select a different employee to grant their permissions to.
+      isCorrect: false
+      explanation: A robust security system for your organization can't depend on the good will of former employees.
+  - content: A manager currently has access to the subscription that's used for the organization's production environment. They also need Owner access to the subscription that's used for the organization's development environment. How can this access be granted?
+    choices:
+    - content: An administrator with Owner or User Access Administrator access to the development environment can grant the manager access to the subscription. 
+      isCorrect: true
+      explanation: Users with Owner or User Access Administrator access can grant other users permissions to manage a management group or subscription.
+    - content: The manager should go to the switch directory option in the Azure portal and select the subscription.
+      isCorrect: false
+      explanation: The manager needs User Access Administrator permissions to grant Owner access to the subscription.
+    - content: The manager should use PowerShell to assign themselves Owner access to the subscription.
+      isCorrect: false
+      explanation: The manager needs User Access Administrator permissions to grant Owner access to the subscription.

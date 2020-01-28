@@ -15,17 +15,17 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "You need the best disk performance for a new virtual server in the West Europe region. What disk type should you use?"
+  - content: "You need the best disk performance for a new virtual machine. What disk type should you use, assuming all disk types are supported in your region?"
     choices:
     - content: "Ultra SSD"
-      isCorrect: false
-      explanation: "Ultra SSDs are high performance but are not currently available in West Europe."
-    - content: "Premium SSD"
       isCorrect: true
-      explanation: "Premium SSDs are the highest-performance disks that are currently available in West Europe."
+      explanation: "Ultra SSDs offer the best performance of disk types on Azure."
+    - content: "Premium SSD"
+      isCorrect: false
+      explanation: "Premium SSDs have excellent performance, but do not offer the best performance of disk types on Azure."
     - content: "Standard HDD"
       isCorrect: false
-      explanation: "Standard HDDs don't perform as well as Premium SSDs, which are available in West Europe."
+      explanation: "Standard HDDs don't perform as well as premium SSDs or Ultra SSDs."
   - content: "You have a medium-sized application with modest IO requirements. However, you need to ensure that a throughput of 25 MBps is guaranteed. What disk type should you use?"
     choices:
     - content: "Premium SSD"

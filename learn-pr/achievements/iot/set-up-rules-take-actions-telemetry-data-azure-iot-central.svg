@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="107px" height="107px" viewBox="0 0 107 107" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>NA/Set-up-rules-and-take-action-on-telemetry-data-in-Azure-loT-Central</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="100" height="100" rx="50"></rect>
+        <rect id="path-3" x="1" y="48" width="19" height="4"></rect>
+        <filter x="-5.3%" y="-25.0%" width="110.5%" height="200.0%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-5" x="56" y="65" width="37" height="4"></rect>
+        <filter x="-2.7%" y="-25.0%" width="105.4%" height="200.0%" filterUnits="objectBoundingBox" id="filter-6">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-7" x="54" y="30" width="42" height="4"></rect>
+        <filter x="-2.4%" y="-25.0%" width="104.8%" height="200.0%" filterUnits="objectBoundingBox" id="filter-8">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <filter x="-6.7%" y="-6.9%" width="113.3%" height="113.8%" filterUnits="objectBoundingBox" id="filter-9">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <linearGradient x1="78.4210223%" y1="-7.24023438%" x2="15.5786468%" y2="110.793945%" id="linearGradient-10">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.5" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-11" x="-3" y="-3" width="106" height="106" rx="53"></rect>
+        <filter x="-0.5%" y="-0.5%" width="101.9%" height="101.9%" filterUnits="objectBoundingBox" id="filter-12">
+            <feOffset dx="1" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="4" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="1" dy="1" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Badges" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="N/A-84" transform="translate(-47.000000, -257.000000)">
+            <g id="NA/Set-up-rules-and-take-action-on-telemetry-data-in-Azure-loT-Central" transform="translate(50.000000, 260.000000)">
+                <g id="Mask" transform="translate(2.000000, 2.000000)">
+                    <g id="Circle-" transform="translate(-2.000000, 0.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="BG"></g>
+                        <g id="Color/Blue" mask="url(#mask-2)" fill="#55A2FF" fill-rule="evenodd">
+                            <rect id="Rectangle" x="0" y="0" width="100" height="100"></rect>
+                        </g>
+                    </g>
+                    <g id="Rectangle">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                        <use fill="#000000" fill-rule="evenodd" xlink:href="#path-3"></use>
+                    </g>
+                    <g id="Rectangle">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+                        <use fill="#DD4D3F" fill-rule="evenodd" xlink:href="#path-5"></use>
+                    </g>
+                    <g id="Rectangle">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-8)" xlink:href="#path-7"></use>
+                        <use fill="#6DA946" fill-rule="evenodd" xlink:href="#path-7"></use>
+                    </g>
+                    <g id="Group" filter="url(#filter-9)" transform="translate(19.000000, 21.000000)">
+                        <polygon id="Path-289" fill="#FFFFFF" points="30 0 -2.27651231e-12 28.878856 30 58 60 28.878856"></polygon>
+                        <polygon id="Path-289" fill="#F7F9FA" points="30 0 30 29 30 58 60 28.878856"></polygon>
+                    </g>
+                    <g id="IoTCentral" transform="translate(37.000000, 39.000000)" fill="#0077D3" fill-rule="nonzero">
+                        <polygon id="Shape" points="10.950213 17.3531993 15.281463 14.8179743 15.281463 9.30236808 10.9478068 6.76569933 6.618963 9.28889308 6.618963 14.8006493"></polygon>
+                        <polygon id="Shape" points="10.950213 0.50944933 0.843963003 6.26086808 0.843963003 10.1705431 5.656463 12.9204056 5.656463 10.7032868 2.768963 9.05308058 2.768963 7.38025558 10.948288 2.72512433 19.131463 7.40143058 19.131463 16.7174681 10.950213 21.3923306 0.843963003 15.6173306 0.843963003 17.8344493 10.950213 23.6094493 21.056463 17.8344493 21.056463 6.28444933"></polygon>
+                    </g>
+                    <polygon id="Path-2" fill="#000000" points="19 46 19 54 22.7541179 50"></polygon>
+                    <polygon id="Path-2" fill="#80B852" points="76 28 76 36 79.7541179 32"></polygon>
+                    <polygon id="Path-2" fill="#F06052" points="76 63 76 71 79.7541179 67"></polygon>
+                </g>
+                <g id="Azure-Border">
+                    <path d="M50,0 C74.5263677,-4.50542066e-15 94.9281966,17.6592499 99.1842495,40.9565123 L94.2027317,73.3905473 C85.8096395,89.2186645 69.1638777,100 50,100 C30.9551233,100 14.3971863,89.3521454 5.95457608,73.6848234 L0.0261464987,48.3675131 C0.887696267,21.508872 22.932015,4.97230817e-15 50,0 Z" id="Combined-Shape" fill="url(#linearGradient-10)" fill-rule="evenodd" opacity="0.400000006" style="mix-blend-mode: overlay;"></path>
+                    <g>
+                        <use fill="black" fill-opacity="1" filter="url(#filter-12)" xlink:href="#path-11"></use>
+                        <rect stroke="#F2F1F0" stroke-width="4" stroke-linejoin="square" x="-1" y="-1" width="102" height="102" rx="51"></rect>
+                    </g>
+                    <rect stroke="#0078D4" stroke-width="4" x="2" y="2" width="96" height="96" rx="48"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

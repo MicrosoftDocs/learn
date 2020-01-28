@@ -7,8 +7,7 @@ Some of the common areas you will see previews for include:
 - New or enhanced integration with other platforms
 - New APIs for services
 
-> [!IMPORTANT]
-> Azure feature previews are available under certain terms and conditions that are specific to each particular Azure preview. Also, some previews are not covered by customer support.
+Azure feature previews are available under certain terms and conditions that are specific to each particular Azure preview. Also, some previews are not covered by customer support.
 
 Once a feature has been evaluated and tested successfully, it might be released to customers as part of Azure's default product set. This release is referred to as **General Availability** (GA).
 

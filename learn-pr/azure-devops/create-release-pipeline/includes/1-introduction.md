@@ -1,4 +1,4 @@
-In the [Build applications with Azure DevOps](/learn/paths/build-applications-with-azure-devops?azure-portal=true) learning path, you helped the Tailspin Toys team use Azure DevOps to plan and build a continuous integration pipeline for the _Space Game_ website.
+In the [Build applications with Azure DevOps](/learn/paths/build-applications-with-azure-devops?azure-portal=true) learning path, you helped the Tailspin Toys team use Microsoft Azure DevOps to plan and build a continuous integration pipeline for the _Space Game_ website.
 
 The Tailspin team's big release is approaching. The team can use Azure DevOps to build and test their code. But how can they quickly deploy the application to an environment that's available to their users?
 
@@ -27,7 +27,7 @@ If you want to start with this learning path, set up a development environment o
 * An [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true).
 * A [GitHub](https://github.com/join?azure-portal=true) account.
 * [Visual Studio Code](https://code.visualstudio.com?azure-portal=true).
-* [.NET Core 2.1](https://www.microsoft.com/net/download?azure-portal=true).
+* [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core/3.1?azure-portal=true).
 * [Git](https://git-scm.com/downloads?azure-portal=true).
 
 You can get started with Azure and Azure DevOps for free. You don't need an Azure subscription to work with Azure DevOps. But here you'll use Azure DevOps to deploy to Azure resources in your Azure subscription.

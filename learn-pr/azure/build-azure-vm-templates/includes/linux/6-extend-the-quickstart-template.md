@@ -26,7 +26,7 @@ Here you'll download the template and modify it.
 
     ```json
     {
-      "name": "[concat(variables('vmName'),'/', 'ConfigureNginx')]",
+      "name": "[concat(parameters('vmName'),'/', 'ConfigureNginx')]",
       "type": "Microsoft.Compute/virtualMachines/extensions",
       "apiVersion": "2018-06-01",
       "location": "[parameters('location')]",
@@ -45,22 +45,37 @@ Here you'll download the template and modify it.
         }
       },
       "dependsOn": [
-        "[resourceId('Microsoft.Compute/virtualMachines/', variables('vmName'))]"
+        "[resourceId('Microsoft.Compute/virtualMachines/', parameters('vmName'))]"
       ]
     },
     ```
 
     Note the comma `,` character at the end, which is needed to separate resources. The order you define resources doesn't matter, but here you add it to the top for simplicity.
+1. In the file, under `resources` locate the "Microsoft.Network/networkSecurityGroups" section. Under "securityRules, add a new rule to open port 80. Use the following rule:
 
-    If you get stuck or want to compare your work, you can download the resulting file from GitHub.
+   ```json
+    {
+      "name":"allow_80",
+      "properties": {
+      "priority": 101,
+      "protocol": "TCP",
+      "access": "Allow",
+      "direction": "Inbound",
+      "sourceAddressPrefix": "Internet",
+      "sourcePortRange": "*",
+      "destinationAddressPrefix": "*",
+      "destinationPortRange": "80"
+      }
+    },
+   ```
+1. If you get stuck or want to compare your work, you can download the resulting file from GitHub.
 
     ```bash
     curl https://raw.githubusercontent.com/MicrosoftDocs/mslearn-build-azure-vm-templates/master/linux/azuredeploy.json > azuredeploy.json
     ```
 
-    You're all done editing files. Ensure that you saved changes to **azuredeploy.json** and then close the editor.
-
-    To close the editor, click the ellipses in the corner and then select **Close Editor**.
+1. You're all done editing files. Select the ellipses in the corner and **Save**.
+1. To close the editor, click the ellipses in the corner and then select **Close Editor**.
 
 ## Verify the template
 
@@ -113,7 +128,7 @@ The deployment succeeded, so let's see the resulting configuration in action.
 
     ```azurecli
     IPADDRESS=$(az vm show \
-      --name MyUbuntuVM \
+      --name simpleLinuxVM \
       --resource-group $RESOURCEGROUP \
       --show-details \
       --query [publicIps] \
@@ -129,7 +144,7 @@ The deployment succeeded, so let's see the resulting configuration in action.
     You see this.
 
     ```html
-    <html><body><h2>Welcome to Azure! My name is MyUbuntuVM.</h2></body></html>
+    <html><body><h2>Welcome to Azure! My name is simpleLinuxVM.</h2></body></html>
     ```
 
 1. From a separate browser tab, navigate to your web site.
@@ -140,7 +155,7 @@ The deployment succeeded, so let's see the resulting configuration in action.
     echo $IPADDRESS
     ```
 
-    Navigate to the IP address you see from a separate browser tab. You see this.
+ 1. Navigate to the IP address you see from a separate browser tab. You see something like the following message:
 
     ![A web browser showing the resulting Nginx configuration](../../media/6-browser-linux.png)
 

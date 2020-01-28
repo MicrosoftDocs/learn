@@ -43,3 +43,19 @@ In this module, you saw a few tools that you can use to automate your deployment
 
 * [Terraform](https://www.terraform.io/?azure-portal=true)
 * [Terraform on Azure documentation](https://docs.microsoft.com/azure/terraform/?azure-portal=true)
+
+## Inspecting and validating infrastructure for compliance
+
+We've seen the team take its first steps toward treating their infrastructure as code. Just as application code needs to be secure and comply with regulations, so does your infrastructure code. What are some concepts and tools to consider for inspecting and validating infrastructure for compliance?
+
+Early attempts at automating the creation of virtual machines and entire environments focused on writing procedural code in languages like PowerShell. The problem with this type of coding was that it was hard to write idempotent code, in other words, code that produces the same outcome no matter how many times you run it. [Windows PowerShell Desired State Configuration (DSC)](https://docs.microsoft.com/powershell/scripting/dsc/overview/overview?view=powershell-6/?azure-portal=true) was a big step forward because it allowed you to define the desired outcome itself, instead of describing the process for achieving that outcome. It was a declarative mechanism rather than a procedural one.
+
+Today, a variety of tools enable you to define infrastructure as code, and these have already created significant benefits for DevOps teams. Reliable environments (including operating systems and services) can be created on demand, and in a completely repeatable way. The same code can be run again to ensure that the target state is present, and to remove any drift from that state.
+
+Rather than just configuration of the environments though, there is a need to validate the environments, particularly in relation to organizational or regulatory policies that might relate to them.
+
+### Validation tooling
+
+[Azure Automation State Configuration](https://docs.microsoft.com/azure/automation/automation-dsc-overview/?azure-portal=true) builds on DSC to make management easier. It allows you to author and manage DSC Configurations, import DSC Resources, and generate DSC Node Configurations (MOF documents), all in the cloud. These items are placed on an Automation server so that target nodes in the cloud or on-premises can retrieve them, and automatically conform to the desired state, and report back on their compliance.
+
+Another tool, [InSpec](https://www.inspec.io/?azure-portal=true) is an open-source testing framework for infrastructure with a language for specifying compliance, security and other policy requirements. It works by comparing the actual state of your system with the desired state that you express in InSpec code. It then detects violations and displays findings in the form of a report. The remediation is then done by the administrator.

@@ -3,7 +3,7 @@ uid: learn.azdo.run-functional-tests-azure-pipelines
 metadata:
   title: Run functional tests in Azure Pipelines - Learn
   description: Run Selenium UI tests, a form of functional testing, in Azure Pipelines.
-  ms.date: 09/30/2019
+  ms.date: 01/21/2020
   author: tpetchel
   ms.author: thpetche
   ms.topic: interactive-tutorial
@@ -13,14 +13,14 @@ title: Run functional tests in Azure Pipelines
 summary: Run Selenium UI tests, a form of functional testing, in Azure Pipelines.
 abstract: |
   In this module, you will:
-  - Define what functional tests are and identify some of the more popular kinds of tests you can run.
+  - Define functional tests and identify some popular kinds of tests you can run.
   - Map manual testing steps to automated test cases.
-  - Run automated UI tests locally and in the pipeline with Selenium.
+  - Run automated UI tests locally and in the pipeline by using Selenium.
 prerequisites: |
   - An Azure subscription
   - An Azure DevOps organization
   - Visual Studio Code
-  - .NET Core 2.1
+  - .NET Core 3.1
   - Git
   - A GitHub account
 iconUrl: /learn/achievements/azure-devops/run-functional-tests-azure-pipelines.svg

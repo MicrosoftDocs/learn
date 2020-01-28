@@ -2,7 +2,7 @@
 uid: learn.implement-message-workflows-with-service-bus
 metadata:
   title: Implement message-based communication workflows with Azure Service Bus
-  description: When the components of an application are distributed across multiple computers and devices and separated by thousands of miles and slow links, they need some way to communicate reliably. One way to improve reliability is to loosely couple those components by using an intermediary messaging or event management technology. Azure Service Bus is one such intermediary tool and provides advanced communication features. In this module, you will learn how to write code in .NET applications that uses Service Bus to communicate in way that is resilient against high demand, low bandwidth, and hardware failures.
+  description: Discover how to write code in .NET applications using Azure Service Bus for communications that can handle high demand, low bandwidth, and hardware failures.
   ms.date: 09/24/2018
   author: rmcmurray
   ms.author: robmcm

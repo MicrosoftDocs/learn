@@ -4,23 +4,34 @@ Here you create a project on SonarCloud so you can analyze the _Space Game_ webs
 
 Let's set up a project on SonarCloud. You need to save some information, such as a token and keys, from the SonarCloud portal to set up your scan later.
 
-1. From a browser tab, go to [SonarCloud](https://sonarcloud.io/?azure-portal=true) and sign in.
+> [!IMPORTANT]
+> The setup is different depending on how you sign in to SonarCloud. For this exercise, sign in with GitHub.
+
+### Sign in with GitHub
+
+1. From a browser tab, go to [SonarCloud](https://sonarcloud.io/?azure-portal=true) and sign in. 
 1. In the upper corner, select **+** and then select **Analyze new project**.
-1. Go to the **Setup manually** tab.
-    * Your organization is filled in automatically.
-    * For **Project key**, create a unique name. For example, **space-game-web-333**.
-    * The **Display name** is filled in with the same text as the **Project key**.
-    * Keep **Public** selected.
-    * Select **Set Up**.
+1. If your organization is not filled in automatically, select **Import another organization**.
+    * Select **Choose an organization on GitHub**.
+    * Find the name of the GitHub account where you have forked the *mslearn-tailspin-spacegame-web* repo and sign in.
+    * Select **Only select repositories** and select *mslearn-tailspin-spacegame-web*.
+    * Select **Install** to install SonarCloud in this repository.
+    * When the install is finished, select **Create new SonarCloud organization from it**.
+    * For **Key**, create a unique name. For example, **space-game-web-333** and select **Additional info**.
+    * For **Display name**, fill it in with the same text as the **Key**.
+    * Select **Continue**.
+    * Under **Choose a plan** select **Free plan** and then **Create Organization**.
 
     ![Setting up a SonarCloud project manually through the web interface](../media/3-sonar-cloud-create-project.png)
 
+## Set up your project for analysis
+
 1. From the **Analyze your project** screen:
-    1. Select **Manually**.
+    1. Select the *mslearn-tailspin-spacegame-web* repo.
+    1. Select **Set Up**
     1. Under **What is your build technology?**, select **Other**.
     1. Under **What is your OS?**, choose the operating system you're running.
     1. Under **Execute the Scanner from your computer**, you see a sample `sonar-scanner` command. Copy that command and paste it somewhere that's easy to refer back to later.
-    1. Select **Finish**.
 
         Keep this browser tab open for later.
 
@@ -123,8 +134,8 @@ The SonarCloud scanner runs Java code during the scanning process. So, you start
     Here's an example:
 
     ```bash
-    SONAR_PROJECT_KEY=space-game-web-333
-    SONAR_ORGANIZATION=mara-github
+    SONAR_PROJECT_KEY=mara_mslearn-tailspin-spacegame-web2
+    SONAR_ORGANIZATION=space-game-web-333
     SONAR_LOGIN=abcdefabcdefabcdefabcdefabcdefabcdef
     ```
 

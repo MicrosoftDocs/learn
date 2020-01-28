@@ -173,7 +173,7 @@ Installing the Azure Toolkit is the same across Windows, macOS, and Linux.
 
 1. Drag the following button to your running Eclipse workspace to install the Azure Toolkit for Eclipse plugin.
 
-   [![Drag to your running Eclipse* workspace. *Requires Eclipse Marketplace Client](https://marketplace.eclipse.org/sites/all/themes/solstice/public/images/marketplace/btn-install.png)](http://marketplace.eclipse.org/marketplace-client-intro?mpc_install=1919278 "Drag to your running Eclipse* workspace. *Requires Eclipse Marketplace Client")
+   [![Drag to your running Eclipse* workspace. *Requires Eclipse Marketplace Client](https://marketplace.eclipse.org/sites/all/themes/solstice/public/images/marketplace/btn-install.png)](https://marketplace.eclipse.org/marketplace-client-intro?mpc_install=1919278 "Drag to your running Eclipse* workspace. *Requires Eclipse Marketplace Client")
 
 1. The feature confirm dialog will open. Currently we have no optional feature, click **Confirm** to continue.
 

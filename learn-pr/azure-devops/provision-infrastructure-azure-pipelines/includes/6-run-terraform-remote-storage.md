@@ -54,7 +54,7 @@ Download a more complete Terraform plan to a file named *main.tf*.
 
     * The variables named "my" are replaced with more realistic names that relate to the _Space Game_ website.
     * The App Service instance name corresponds to the **dev** environment in Azure Pipelines. You learned about this environment in the [Create a multi-stage pipeline with Azure Pipelines](/learn/modules/create-multi-stage-pipeline?azure-portal=true) module.
-    * The App Service instance includes a `site_config` block that defines how to run the web service. It specifies the .NET Core 2.1 runtime and the startup command `dotnet Tailspin.SpaceGame.Web.dll`.
+    * The App Service instance includes a `site_config` block that defines how to run the web service. It specifies the .NET Core 3.1 runtime and the startup command `dotnet Tailspin.SpaceGame.Web.dll`.
 
         > [!NOTE]
         > In this part, you won't deploy the _Space Game_ website to App Service. You'll do that later, when you provision your infrastructure from Azure Pipelines.
@@ -349,7 +349,7 @@ During the process, you collect information about your service principal that yo
       --output tsv)
     ```
 
-    The service principal's name begins with "http://tf-sp-" and ends with your unique ID.
+    The service principal's name begins with `http://tf-sp-` and ends with your unique ID.
 
     *Contributor* is the default role for a service principal. This role has full permissions to read and write to an Azure subscription.
 

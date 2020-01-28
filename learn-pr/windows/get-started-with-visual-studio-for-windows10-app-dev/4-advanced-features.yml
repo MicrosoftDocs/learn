@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+title: More advanced Visual Studio features
+uid: learn-windows.introducing-visual-studio.4-advanced-features
+metadata:
+  title: More advanced Visual Studio features
+  description: Refactoring, themes, and more.
+  ms.date: 12/10/2018
+  author: JohnKennedy
+  ms.author: jken
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows
+  
+durationInMinutes: 15
+content: |
+    [!include[](includes/4-advanced-features.md)]

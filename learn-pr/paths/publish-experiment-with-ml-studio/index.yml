@@ -2,7 +2,7 @@
 uid: learn.data-ai.publish-experiment-with-ml-studio
 metadata:
   title: Publish a Machine Learning Experiment with Microsoft Azure Machine Learning Studio
-  description: Machine Learning plays a big role in applications that leverage artificial intelligence. Microsoft provides the Machine Learning Studio and Machine Learning Services that help you take advantage of pre-built models or create your own custom machine learning models. Learn how to create an account on Azure Machine Learning Studio, create a sample experiment, and then publish and deploy the experiment for consumption as a web servic
+  description: In this learning path, use Azure’s Machine Learning Studio to create a machine learning model and learn how to publish your model as a web service.
   brand: azure
   ms.date: 02/25/2019
   author: gerryaobrien

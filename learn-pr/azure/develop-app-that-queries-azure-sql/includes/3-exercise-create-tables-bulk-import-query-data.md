@@ -103,9 +103,13 @@ Let's create the database and server to store the data for the app.
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) by using the account that you used to activate the sandbox.
 
-1. In the left pane, select **+ Create a resource**, **Databases**, and then **SQL Database**.
+1. From the Azure portal menu, select **Create a resource**.
 
-    ![The "New" page in the Azure portal showing the databases options that are available in the Azure Marketplace](../media/3-new-database-annotated.png)
+    ![Screenshot of Azure portal menu and Create a resource option.](../media/2-create-a-resource.png)
+
+1. Select **Databases**, and then select **SQL Database**.
+
+    ![Screenshot of the Databases and SQL Database options.](../media/2-databases-sql-database.png)
 
 1. On the **Create SQL Database** page, specify the values in the following table for the database properties.
 
@@ -127,7 +131,16 @@ Let's create the database and server to store the data for the app.
     | Password | Enter a password that meets the requirements. |
     | Confirm password | Confirm your password. |
     | Location | Central US |
-    | Allow Azure services to access server | Checked |
+
+1. Select **Next : Networking >**.
+
+1. On the **Networking** pane, configure the following values:
+
+    | Property  | Value  |
+    |---|---|
+    | Connectivity method | Public endpoint |
+    | Allow Azure services and resources to access this server | Yes |
+    | Add current client IP address | Yes |
 
 1. Select **Review + create**.
 
@@ -137,7 +150,7 @@ Let's create the database and server to store the data for the app.
 
 You can now create the tables to store the data from the .csv files.
 
-1. In pane on the left side of the Azure portal, select **SQL databases**.
+1. On the Azure portal menu, select **SQL databases**.
 
 1. On the **SQL databases** page, select **coursedatabase<em>NNN</em>**.
 
@@ -278,7 +291,7 @@ You can now create the tables to store the data from the .csv files.
 
 1. Return to the Azure portal.
 
-1. In the pane on the left side, select **SQL databases**.
+1. On the Azure portal menu, select **SQL databases**.
 
 1. On the **SQL databases** page, select **coursedatabase<em>NNN</em>**.
 

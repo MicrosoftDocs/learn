@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.design-a-hybrid-network-architecture
+metadata:
+  title: Design a hybrid network architecture on Azure
+  description: A customer has traditional on-premises infrastructure that they need to connect to resources in Azure. They need to select the appropriate connectivity method for their use cases, balancing functionality, cost, and security.
+  ms.date: 01/14/2020
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Design a hybrid network architecture on Azure
+summary: A customer has traditional on-premises infrastructure that they need to connect to resources in Azure. They need to select the appropriate connectivity method for their use cases, balancing functionality, cost, and security.
+abstract: | 
+  In this module, you will:
+  - Identify the methods to integrate on-premises networks with Azure
+  - Identify the features and limitations of each method of network integration
+  - Select the appropriate hybrid network solution for given use cases
+prerequisites: | 
+  - Knowledge of networking fundamentals
+  - Familiarity with Azure virtual networking
+iconUrl: /learn/achievements/design-a-hybrid-network-architecture.svg
+levels:
+- beginner
+roles:
+- solution-architect
+products:
+- azure
+- azure-expressroute
+- azure-virtual-network
+- azure-vpn-gateway
+units:
+- learn.design-a-hybrid-network-architecture.1-introduction
+- learn.design-a-hybrid-network-architecture.2-on-premises-integration-on-azure
+- learn.design-a-hybrid-network-architecture.3-expressroute-for-hybrid-networks
+- learn.design-a-hybrid-network-architecture.4-working-with-hybrid-networks
+- learn.design-a-hybrid-network-architecture.5-choosing-hybrid-architecture
+- learn.design-a-hybrid-network-architecture.6-summary
+badge:
+  uid: learn.design-a-hybrid-network-architecture.badge

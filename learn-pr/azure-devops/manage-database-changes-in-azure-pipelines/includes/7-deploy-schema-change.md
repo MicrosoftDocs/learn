@@ -1,24 +1,24 @@
-Tim and Andy are happy with the pipeline and the manual approval of schema changes, but there's still one piece missing: the pipeline halts each time in order for the DBA to approve the changes. We want the pipeline to halt only when there are changes to the database schema.
+Tim and Andy are happy with the pipeline and the manual approval of schema changes. But every time the pipeline runs, it halts to wait for DBA approval even if the database schema hasn't changed. They want the pipeline to halt only when the database schema changes.
 
-In this section, you modify the pipeline to halt only when there are changes to the database schema. To do so, you write a variable to the pipeline that flags the schema change. You then modify the `DBAVerificationApply` stage to run only when this variable is set.
+In this section, you modify the pipeline to halt only when the database schema changes. To do so, you write a variable to the pipeline that flags the schema change. You then modify the `DBAVerificationApply` stage to run only when this variable is set.
 
 ## Fetch the branch from GitHub
 
-Here, you fetch the `schema-changes` branch from GitHub and checkout, or switch to, that branch.
+Here you fetch the `schema-changes` branch from GitHub. Then you *check out*, or switch to, that branch.
 
-This branch contains the _Space Game_ web project with the changes to the website code that expects the Profile table to have a `favoriteMap` column. This new column's data will be displayed on the Profile page as **Favorite Galaxy**. It also has the Azure Pipelines configuration you created earlier.
+This branch contains the _Space Game_ web project. The project includes changes to the website code. The code expects the Profiles table to have a `favoriteMap` column. The **Profile** page will display this new column's data as **Favorite Galaxy**. The project also includes the Azure Pipelines configuration that you created earlier.
 
-In the *Tailspin.SpaceGame.Database* project, a change has been made to the Profile table. The `favoriteMap` column has been added.
+In the *Tailspin.SpaceGame.Database* project, the Profiles table has changed. The `favoriteMap` column has been added.
 
 1. In Visual Studio Code, open the integrated terminal.
-1. Run the following `git` commands to fetch a branch named `schema-changes` from Microsoft's repository and switch to that branch.
+1. Run the following `git` commands. The commands fetch the `schema-changes` branch from the Microsoft repository and switch to that branch.
 
     ```bash
     git fetch upstream schema-changes
     git checkout -b schema-changes upstream/schema-changes
     ```
 
-1. Open the `dbo` folder in the database project. This will have the scripts for each of the tables. Open the **Profiles.sql** and see that the new column `favoriteMap` is there.
+1. Open the `dbo` folder in the database project. This folder includes the scripts for each of the tables. Open *Profiles.sql* to see the new column, `favoriteMap`.
 
 ## Run the pipeline
 
@@ -31,15 +31,15 @@ In the *Tailspin.SpaceGame.Database* project, a change has been made to the Prof
 
 1. Watch the pipeline and wait for the manual approval of the database schema.
 
-    When the pipeline stops for approval, click on the `DBAVerificationScript` stage and look at the change script that was created. This time there will be an `ALTER TABLE` SQL statement for adding the new column to the Profiles table.
-1. Go back to the pipeline and select the **Waiting** button on the `DBAVerificationApply` stage. Select **Review** and then **Approve**.
+    When the pipeline stops for approval, select the `DBAVerificationScript` stage. Look at the change script that was created. This time you see an `ALTER TABLE` SQL statement that adds the new column to the Profiles table.
+1. Go back to the pipeline. In the `DBAVerificationApply` stage, select the **Waiting** button. Select **Review** > **Approve**.
 1. Wait for the pipeline to finish deploying to each App Service environment.
-1. You still need to add data to the new column before you can try the new website.
+1. Before you can try the new website, you need to add data to the new column:
     1. Navigate back to your [Azure portal](https://portal.azure.com?azure-portal=true) and select **SQL Databases**.
     1. Select your database, **tailspindatabase**.
     1. Select **Query editor** and sign in.
     1. In your local `schema-changes` branch, you see *FavoriteMapData.sql*. This SQL script adds a favorite galaxy string to each profile by filling in the `favoriteMap` column. Copy the contents of this file.
-    1. Paste the file contents into **Query 1** and select **Run** to populate the new table.
+    1. Paste the file contents into **Query 1**. Select **Run** to populate the new table.
     1. Verify that the queries ran successfully.
     1. Select **New Query**.
     1. In **Query 2**, add the following T-SQL code:
@@ -49,35 +49,39 @@ In the *Tailspin.SpaceGame.Database* project, a change has been made to the Prof
         ```
 
         Verify that the `favoriteMap` column is populated with data.
-1. Navigate to the one of your host names, for example **tailspin-space-game-web-dev-1234.azurewebsites.net**, and select a player to see the new data on the profile.
+1. Navigate to one of your host names, for example, **tailspin-space-game-web-dev-1234.azurewebsites.net**. Select a player to see the new data on the profile.
 
-    ![The website with a profile showing the player's favorite galaxy](../media/7-profile-with-favorite-galaxy.png)
+    ![The website, displaying a profile that shows the player's favorite galaxy](../media/7-profile-with-favorite-galaxy.png)
 
-**Tim:** I think that went well. We managed to get the DBA involved and they are one tough customer. Score one for DevOps. But I can see a problem here. This pipeline is triggered with every change made to the application. We won't have schema changes every time, but the pipeline will stop and wait for approval even if the change file has no changes. How can we fix that?
+**Tim:** I think the meeting went well. We managed to get the DBA involved, and they're a tough customer. Score one for DevOps. But I can see a problem here. Every application change triggers this pipeline to run. We won't have schema changes every time. But the pipeline will stop and wait for approval even if the change file contains no changes. How can we fix that problem?
 
-**Mara:** Look at you being into DevOps! I have an idea. We already have a change script in the pipeline. Maybe we can check that script for key words that signal a change and only trigger the `DBAVerificationApply` stage if those words are in the file.
+**Mara:** Look at you getting into DevOps! I have an idea. We already have a change script in the pipeline. Maybe we can check that script for keywords that signal a change. Then we can trigger the `DBAVerificationApply` stage only if the file contains those keywords.
 
-**Andy:** I think that could work. We'll need a pipeline variable to check as a triggering condition.
+**Andy:** That solution could work. We'll need a pipeline variable to check as a triggering condition.
 
 ## Check for database changes
 
-Here you add the following changes to the pipeline to skip the `DBAVerificationApply` stage if there are no changes that need to be applied to the database.
+Here you change the pipeline to skip the `DBAVerificationApply` stage if the database needs no changes.
 
 ### Check for keywords in the generated script
 
-In this section you add to the PowerShell script that created the change file and check to see if a change to the database is pending. You will know there is a change if the words **CREATE**, **ALTER**, or **DROP** are present in the file. Do not copy this yet. Soon you will replace the entire *azure-pipelines.yml* file contents as you did in the previous exercise.
+In this section, you add to the PowerShell script that created the change file. You check to see if a database change is pending. You'll know there's a change if the file contains the words **CREATE**, **ALTER**, or **DROP**. 
+
+Don't copy this script yet. Soon you'll replace the entire contents of the *azure-pipelines.yml* file as you did in the previous exercise.
 
    ```powershell
    $containsWord = $file | %{$_ -match "CREATE" -or $_ -match "ALTER" -or $_ -match "DROP"}
    ```
 
-### Passing a pipeline variable change between stages
+### Pass a pipeline variable change between stages
 
-If the keyword search returns a match, create a variable in the pipeline variable group and set its value to `True`. If the variable is in the pipeline variable group, it can be seen by all stages. Currently, setting a new variable in a stage is only scoped to that stage. Here you use a PowerShell library created by Donovan Brown, called [VSTeam](https://www.powershellgallery.com/packages/VSTeam/6.3.5?azure-portal=true), that uses the [Azure DevOps Services REST API](https://docs.microsoft.com/rest/api/azure/devops/search/?view=azure-devops-rest-5.1&azure-pipelines=true) to access Azure DevOps programmatically.
+If the keyword search returns a match, create a variable in the pipeline variable group. Set its value to `True`. If the variable is in the pipeline variable group, all stages can see it. Currently, when you set a new variable in a stage, the variable is scoped to only that stage. 
 
-This script copies all variables out of the variable group, adds a new variable named `schemaChanged`, and updates the variable group with the complete set of variables.
+Here you use a PowerShell library that was created by Donovan Brown. The library, called [VSTeam](https://www.powershellgallery.com/packages/VSTeam/6.3.5?azure-portal=true), uses the [REST API for Azure DevOps Services](https://docs.microsoft.com/rest/api/azure/devops/search/?view=azure-devops-rest-5.1&azure-portal=true) to access Azure DevOps programmatically.
 
-Again, do not copy this yet. Soon you will replace the entire *azure-pipelines.yml* file contents as you did in the previous exercise.
+This script copies all variables out of the variable group. It adds a new variable named `schemaChanged`. It also updates the variable group with the complete set of variables.
+
+Again, don't copy this script yet. Soon you'll replace the contents of the entire *azure-pipelines.yml* file as you did in the previous exercise.
 
 ```powershell
 if ($containsWord -contains $true) {
@@ -103,7 +107,7 @@ if ($containsWord -contains $true) {
   Update-VSTeamVariableGroup @methodParameters}
 ```
 
-In the `DBAVerificationApply` stage, you do the same thing, however instead of creating a variable, you remove it. Removing the variable ensures that the `DBAVerificationApply` stage is not run unless the variable is present.
+In the `DBAVerificationApply` stage, you follow the same pattern. But instead of creating a variable, you remove it. Removing the variable ensures that the `DBAVerificationApply` stage doesn't run unless the variable is present.
 
 ```powershell
 Install-Module VSTeam -Scope CurrentUser -Force
@@ -127,7 +131,9 @@ Update-VSTeamVariableGroup @methodParameters
 
 ### Modify the pipeline to use a condition
 
-Here, you add a condition to the `DBAVerificationApply` stage to check that the new variable is set to `True`. The variable does not exist if there are no changes to the database schema and therefore this stage is skipped. Again, do not copy this yet. Soon you will replace the entire *azure-pipelines.yml* file contents as you did in the previous exercise.
+Here you add a condition to the `DBAVerificationApply` stage. The condition checks that the new variable is set to `True`. The variable doesn't appear if the database schema hasn't changed. In that case, this stage is skipped. 
+
+Again, don't copy this script yet. Soon you'll replace the contents of the entire *azure-pipelines.yml* file  as you did in the previous exercise.
 
 ```yml
 - stage: DBAVerificationApply
@@ -138,44 +144,45 @@ Here, you add a condition to the `DBAVerificationApply` stage to check that the 
   condition: and(succeeded('DBAVerificationScript'), eq(variables['schemaChanged'], True))
 ```
 
-## Make the changes to the pipeline
+## Change the pipeline
 
-The VSTeam library needs to access your Azure DevOps organization, so it requires authentication. Here, you create a personal access token and add the token to your pipeline variables so that the VSTeam library can authenticate calls to Azure DevOps.
+The VSTeam library needs to access your Azure DevOps organization, so it requires authentication. Here you create a personal access token. You add the token to your pipeline variables so that the VSTeam library can authenticate calls to Azure DevOps.
 
-1. Navigate to your Azure DevOps organization and select your profile in the upper right corner.
-1. Select **Azure DevOps Profile**.
-1. In the **User Settings** pane on the left, under **Security**, select **Personal access tokens**.
+From Azure DevOps:
 
-    ![Profile page select personal access token](../media/7-select-personal-access-token.png)
+1. Select your profile from the upper-right corner, then select **Personal access tokens**.
 
-1. Select **+ New Token**
-1. Enter **Database Changes** as the name and select **Full access**.
+    ![Accessing personal access tokens from Azure DevOps](../../shared/media/azure-devops-profile-personal-access-tokens.png)
+
+1. Select **+ New Token**.
+1. For the name, enter *Database Changes*.
+1. Under **Scopes**, select **Full access**.
 1. Select **Create**.
 1. Copy the token to a safe place.
 
     > [!IMPORTANT]
-    > Be sure to do this now because the token will never be shown in plain text again.
+    > Be sure to save the token copy now. It will never again be shown in plain text.
 1. Add two variables to the **Release** variable group.
-    1. Navigate to your **Space Game - web - Database** project and select **Pipelines**.
+    1. Navigate to your **Space Game - web - Database** project. Select **Pipelines**.
     1. Under **Pipelines**, select **Library**.
-    1. Select **Release** and add the following variables:
+    1. Select **Release**. Add the following variables:
 
         | Variable name         | Example value                            |
         |-----------------------|------------------------------------------|
-        | **Acct**    | The name of your organization in Azure DevOps. |
-        | **PAT** | Enter your personal access token. |
+        | **Acct**    | The name of your organization in Azure DevOps |
+        | **PAT** | Your personal access token |
 
-        Select the lock icon next to the value for **PAT** to ensure this value is encrypted.
-    1. Select **Save** near the top of the page to save your variables to the pipeline.
+        Select the lock icon next to the value for **PAT** to ensure that this value is encrypted.
+    1. Near the top of the page, select **Save** to save your variables to the pipeline.
 
-1. Open the *azure-pipelines.yml* file you got when you switched to the `schema-changes` branch.
-1. Copy the new pipeline below and replace the code that is already in the *azure-pipelines.yml* file.
+1. Open the *azure-pipelines.yml* file that you got when you switched to the `schema-changes` branch.
+1. Copy the following new pipeline. Use it to replace the code in the *azure-pipelines.yml* file.
 
-    [!code-yml[](code/azure-pipelines2.yml?highlight=131-163,166-170,198-219,223-231)]
+    [!code-yml[](code/azure-pipelines2.yml?highlight=134-166,169-173,201-222,226-234)]
 
-    This pipeline adds to the PowerShell script to check the generated SQL script for the keywords **CREATE**, **ALTER**, or **DROP**. If any of these words are found, the script creates a variable named `schemaChanged` to the pipeline variable group. Then a condition is added to the `DBAVerificationApply` stage to check for this variable. If this variable is `True`, there is a change that needs approval. If the variable is not present, then there are no changes in the script and this stage is skipped because the condition fails.
+    This pipeline adds to the PowerShell script. It checks the generated SQL script for the keywords **CREATE**, **ALTER**, and **DROP**. If any of these words are found, the script creates a variable named `schemaChanged` in the pipeline variable group. Then a condition is added to the `DBAVerificationApply` stage to check for this variable. If this variable is `True`, a change needs approval. If the variable isn't present, the script contains no changes and this stage is skipped because the condition fails.
 
-1. Add and commit *azure-pipelines.yml* to your branch. Then push the changes to your GitHub remote, `origin`. This causes the pipeline to run.
+1. Add and commit *azure-pipelines.yml* to your branch. Then push the changes to your GitHub remote, `origin`. This step causes the pipeline to run.
 
     ```bash
     git add azure-pipelines.yml
@@ -183,8 +190,10 @@ The VSTeam library needs to access your Azure DevOps organization, so it require
     git push origin schema-changes
     ```
 
-1. Navigate back to Azure DevOps and watch the pipeline run, See that the `DBAVerificationApply` stage is skipped since there are no schema changes.
+1. Navigate back to Azure DevOps and watch the pipeline run. You see that the `DBAVerificationApply` stage is skipped because the schema didn't change.
+
+    ![Azure Pipelines showing the skipped stage](../media/7-pipeline-run-skipped.png)
 
 ## Recommended practices
 
-In this exercise, you created a variable to use as a condition for a stage. In practice, the variable must be unique per pipeline run since you may be running this pipeline in parallel with other changes. If you are using the **Release Pipeline (classic)** editor for your project, you can use the [suggested PowerShell from Donovan Brown](http://donovanbrown.com/post/Passing-variables-from-stage-to-stage-in-Azure-DevOps-release?azure-portal=true) to create a variable that is unique to that specific release.
+In this exercise, you created a variable to use as a condition for a stage. In practice, the variable must be unique for each pipeline run because you might be running this pipeline in parallel with other changes. If you're using the **Release Pipeline (classic)** editor for your project, you can use the [suggested PowerShell code from Donovan Brown](http://donovanbrown.com/post/Passing-variables-from-stage-to-stage-in-Azure-DevOps-release?azure-portal=true) to create a variable that's unique to that specific release.

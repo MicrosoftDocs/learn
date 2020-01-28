@@ -2,7 +2,7 @@
 uid: learn.iot.data-anomaly-search-using-iot-hub.exercise-create-iot-stream-analytics-job
 metadata:
   title: Exercise - Create a message route to Azure blob storage
-  description: Use the Azure portal to create the first of two routes, the logging route. And verify that the route functions as it should.
+  description: Use the Azure portal to create the logging route. And verify that the route functions as it should.
   ms.date: 11/26/2019
   author: PeterTurcan
   ms.author: Olivier.Bloch

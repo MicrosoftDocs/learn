@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn-pr.wwl.utilizing-azure-sap-workloads-reference-architecture.sap-hana-azure-sample-workflow
+title: SAP HANA on Azure sample workflow
+metadata:
+  title: SAP HANA on Azure sample workflow
+  description: "SAP HANA on Azure sample workflow"
+  ms.date: 12/20/2019
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-sap-hana-azure-sample-workflow.md)]

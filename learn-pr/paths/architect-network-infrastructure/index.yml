@@ -36,6 +36,7 @@ modules:
 - learn.load-balance-web-traffic-with-application-gateway
 - learn.control-network-traffic-flow-with-routes
 - learn.design-ip-addressing-for-azure
+- learn.design-a-hybrid-network-architecture
 - learn.hub-and-spoke-network-architecture
 - learn.troubleshoot-azure-network-infrastructure
 trophy:

@@ -14,7 +14,9 @@ The exercise also runs a client app that simulates a number of users issuing POS
 
 1. Sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true).
 
-1. Select **Create a resource** > **Web** > **Web App**.
+1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
+
+1. Select **Web** > **Web App**.
 
 1. On the **Web App** page, enter the values in the following table.
 
@@ -67,7 +69,7 @@ The exercise also runs a client app that simulates a number of users issuing POS
     az webapp deployment source config-zip --src website.zip --name <your-webapp-name> --resource-group mslearn-scale
     ```
 
-1. Use your web browser to go to http://<your-webapp-name>.azurewebsites.net/api/reservations/1. You should see a JSON document that contains the details for reservation number 1:
+1. Use your web browser to go to `http://<your-webapp-name>.azurewebsites.net/api/reservations/1`. You should see a JSON document that contains the details for reservation number 1:
 
     ![Screenshot of the running web app, showing the details for reservation number 1](../media/3-web-app.png)
 

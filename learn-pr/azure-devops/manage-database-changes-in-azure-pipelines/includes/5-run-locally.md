@@ -1,37 +1,39 @@
-You have an Azure SQL Database that contains sample data. Before you deploy the _Space Game_ website to App Service through Azure Pipelines, let's first verify that you can bring up the application locally. This helps ensure that everything works before you run the pipeline.
+You have a SQL database that contains sample data. Later you'll deploy the _Space Game_ website to App Service through Azure Pipelines. But first let's verify that you can bring up the application locally. We want to ensure that everything works before you run the pipeline.
 
 ## Fetch the branch from GitHub
 
-Here, you fetch the `database` branch from GitHub and checkout, or switch to, that branch.
+Here you fetch the `database` branch from GitHub. You then *check out*, or switch to, that branch.
 
-This branch contains the _Space Game_ project you worked with in the previous modules and an Azure Pipelines configuration to start with.
+This branch contains the _Space Game_ project that you worked with in the previous modules. It also contains an Azure Pipelines configuration.
+
+To fetch and check out the `database` branch from GitHub:
 
 1. In Visual Studio Code, open the integrated terminal.
-1. Run the following `git` commands to fetch a branch named `database` from Microsoft's repository and switch to that branch.
+1. Run the following `git` commands to fetch a branch named `database` from the Microsoft repository and to switch to that branch.
 
     ```bash
     git fetch upstream database
     git checkout -b database upstream/database
     ```
 
-    The format of these commands enables you to get starter code from Microsoft's GitHub repository, known as `upstream`. Shortly, you'll push this branch up to your GitHub repository, known as `origin`.
+    The format of these commands enables you to get starter code from the Microsoft GitHub repository. This repository is known as `upstream`. Shortly, you'll push this branch up to your GitHub repository. Your GitHub repository is known as `origin`.
 
-1. Optionally, in Visual Studio Code, open the *azure-pipelines.yml* file, and familiarize yourself with the initial configuration.
+1. Optionally, in Visual Studio Code, open *azure-pipelines.yml*. Familiarize yourself with the initial configuration.
 
-    The configuration resembles the ones that you created in the previous modules in this learning path. It builds only the application's **Release** configuration. For brevity, it also omits the triggers, manual approvals, and tests you set up in previous modules.
+    The configuration resembles the ones that you created in the previous modules in this learning path. It builds only the application's **Release** configuration. For brevity, the configuration omits the triggers, manual approvals, and tests that you set up in previous modules.
 
     [!include[](../../shared/includes/pipeline-branches-note.md)]
 
 ## Optional - Explore the database project
 
-If you're interested specifically in SQL Server, you can check out the database project, *Tailspin.SpaceGame.Database.sqlproj*, under the *Tailspin.SpaceGame.Database* directory. This is the SQL Server Data Tools project we discussed earlier. The *Tables* directory contains *.sql* files that define the four SQL tables you worked with in the previous section.
+If you're interested specifically in SQL Server, you can check out the database project. Find the project, *Tailspin.SpaceGame.Database.sqlproj*, in the *Tailspin.SpaceGame.Database* directory. We discussed this SQL Server Data Tools project earlier. The *Tables* directory contains *.sql* files that define the four SQL tables that you worked with in the previous part.
 
-> [NOTE]
-> Although you won't need to build the database project locally, keep in mind that this projects builds only under Windows.
+> [!NOTE]
+> You won't need to build the database project locally. But keep in mind that this projects builds only on Windows.
 
-To see how the _Space Game_ webapp runs SQL queries against the database, open the *RemoteDBRepository.cs* file under the *Tailspin.SpaceGame.Web* directory.
+To see how the _Space Game_ web app runs SQL queries against the database, open the *RemoteDBRepository.cs* file in the *Tailspin.SpaceGame.Web* directory.
 
-Here's an example that gets the achievements for a specific profile. These achievements appear when you select a player profile from the leaderboard.
+This example gets the achievements for a specific profile. These achievements appear when you select a player profile from the leaderboard.
 
 ```cs
 sql = string.Format("SELECT a.description from dbo.Achievements a JOIN dbo.ProfileAchievements pa on a.id = pa.achievementid WHERE pa.profileid = {0}", profileId);
@@ -50,38 +52,38 @@ using (SqlDataReader reader = command.ExecuteReader())
 conn.Close();
 ```
 
-## Specify your database's connection string
+## Specify your database connection string
 
-Here, you fetch the connection string to your database and store it in a file named *secrets.json*. Doing so enables your web application, running locally, to connect to the database. The project is already set up to read from this file; you just need to create this file and specify the connection string.
+Here you fetch the connection string for your database. You store it in a file named *secrets.json*. Doing so enables your web application, running locally, to connect to the database. The project is already set up to read from this file. You just need to create the file and specify the connection string.
 
 > [!NOTE]
-> Because your *secrets.json* file contains the connection string, which is a form of sensitive information, this file does not get placed under source control. Later, you'll use a different approach to specify the connection string for App Service to use.
+> The connection string is sensitive information. Because your *secrets.json* file contains the connection string, the file isn't placed under source control. Later you'll use a different approach to specify the connection string for App Service.
 
 ### Fetch the connection string from the Azure portal
 
-1. From the Azure portal, on the left, select **SQL databases**.
-1. Choose the **tailspindatabase**.
-1. Under the **Settings** section, select **Connection strings**. Copy the connection string that appears on the **ADO.NET** tab.
+1. In the Azure portal, on the left, select **SQL databases**.
+1. Choose **tailspindatabase**.
+1. Under **Settings**, select **Connection strings**. Copy the connection string that appears on the **ADO.NET** tab.
 
-   ![Azure portal selecting connection strings page](../media/5-get-connection-string.png)
+   ![Azure portal, selecting connection strings](../media/5-get-connection-string.png)
 
     Notice that the connection string doesn't show your password. You'll specify your password shortly.
 
 ### Specify the connection string locally
 
-1. From Visual Studio Code, open **Tailspin.SpaceGame.Web.csproj** under the *Tailspin.SpaceGame.Web* directory. Notice the entry for `UserSecretsId`. This is how the web project locates your *secrets.json* file. You create a *secrets.json* file in a directory with that GUID in the file's name.
+1. In Visual Studio Code, in the **Tailspin.SpaceGame.Web** directory, open **Tailspin.SpaceGame.Web.csproj**. Notice the entry for `UserSecretsId`. The web project uses this `UserSecretsId` GUID to locate your *secrets.json* file. The GUID in the *secrets.json* file matches the GUID that is the name of the directory where the secrets file is located.
 
     ```xml
     <UserSecretsId>d7faad9d-d27a-4122-89ff-b9376c13b153</UserSecretsId>
     ```
-1. From Visual Studio Code, open the terminal.
+1. In Visual Studio Code, open the terminal.
 1. Move to the *Tailspin.SpaceGame.Web* directory.
 
     ```bash
     cd Tailspin.SpaceGame.Web
     ```
-1. From a temporary file, paste in your connection string. Then replace `{your_password}` with your SQL password. Then copy the entire connection string back to the clipboard.
-1. From the integrated terminal, create a Bash variable that specifies your connection string. Replace `{your_connection_string}` with your connection string.
+1. In a temporary file, paste your connection string. Then replace `{your_password}` with your SQL password. Copy the entire connection string back to the clipboard.
+1. In the integrated terminal, create a Bash variable that specifies your connection string. Replace `{your_connection_string}` with your connection string.
 
     ```bash
     DB_CONNECTION_STRING="{your_connection_string}"
@@ -119,21 +121,21 @@ Here, you fetch the connection string to your database and store it in a file na
 
 ## Run the web application locally
 
-Here, you build and run the web application locally to verify that the application can successfully connect to the database.
+Here you build and run the web application locally to verify that the application can connect to the database.
 
-1. In Visual Studio Code, navigate to the terminal window and run this `dotnet build` command to build the application:
+1. In Visual Studio Code, navigate to the terminal window. Run this `dotnet build` command to build the application:
 
     ```bash
     dotnet build --configuration Release
     ```
 
-1. Set the `ASPNETCORE_ENVIRONMENT` Bash variable to "Development" and export the variable.
+1. Set the `ASPNETCORE_ENVIRONMENT` Bash variable to `Development`. Export the variable.
 
     ```bash
     export ASPNETCORE_ENVIRONMENT=Development
     ```
 
-    This setting tells ASP.NET Core that you're in development mode, and not in production mode, so it's safe to read from the *secrets.json* file.
+    This setting tells ASP.NET Core that you're in development mode, not in production mode. In development mode, it's safe to read from the *secrets.json* file.
 
 1. Run this `dotnet run` command to run the application:
 
@@ -141,17 +143,19 @@ Here, you build and run the web application locally to verify that the applicati
     dotnet run --configuration Release --no-build
     ```
 
-1. From a new browser tab, navigate to [http://localhost:5000](http://localhost:5000?azure-portal=true) to see the running application.
+1. On a new browser tab, navigate to `http://localhost:5000` to see the running application.
 
-    You see this:
+    You see this interface:
 
-    ![The Space Game web site](../media/5-space-game-top.png)
+    ![The Space Game website](../media/5-space-game-top.png)
 
     > [!TIP]
-    > If you see an error in your browser that's related to a certificate error, select Ctrl+C from your terminal to stop the running application.
-    > Then run `dotnet dev-certs https --trust` and select **Yes** when prompted. Or [see this blog post](https://www.hanselman.com/blog/DevelopingLocallyWithASPNETCoreUnderHTTPSSSLAndSelfSignedCerts.aspx?azure-portal=true) for more information.
-    >
-    > After your computer trusts your local SSL certificate, run the `dotnet run` command a second time and go to [http://localhost:5000](http://localhost:5000?azure-portal=true) from a new browser tab to see the running application.
+    > In your browser, if you see an error that's related to a certificate error:
+    > 1. In your terminal, use Ctrl+C to stop the application.
+    > 1. Run `dotnet dev-certs https --trust`. 
+    > 1. When prompted, select **Yes**. For more information, see the blog post [Developing locally with ASP.NET Core under HTTPS, SSL, and self-signed certificates](https://www.hanselman.com/blog/DevelopingLocallyWithASPNETCoreUnderHTTPSSSLAndSelfSignedCerts.aspx?azure-portal=true).
+    > 1. After your computer trusts your local SSL certificate, run the `dotnet run` command again.
+    > 1. From a new browser tab, go to `http://localhost:5000` to see the running application.
 
     You can interact with the page, including the leaderboard. When you select a player's name, you see details about that player.
 
@@ -159,4 +163,4 @@ Here, you build and run the web application locally to verify that the applicati
 
     Unlike in previous modules, the leaderboard data is read from your Azure SQL Database.
 
-    When you're finished, return to the terminal window and select Ctrl+C to stop the running application.
+    When you finish, return to the terminal window. Use <kbd>Ctrl+C</kbd> to stop the application.

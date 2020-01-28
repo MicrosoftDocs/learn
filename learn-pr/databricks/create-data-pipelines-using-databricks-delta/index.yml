@@ -1,5 +1,6 @@
 ### YamlMime:Module
 uid: learn.create-data-pipelines-using-databricks-delta
+hidden: true
 metadata:
   title: Create data pipelines by using Databricks Delta
   description: Explore the Databricks Delta capability to speed up reads and enable multiple writers to modify a dataset simultaneously.

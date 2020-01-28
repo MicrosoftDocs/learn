@@ -5,10 +5,10 @@ In this module, you learned how to:
 - Build a C# app to send device telemetry to the IoT Hub, using Visual Studio or Visual Studio code
 - Define a message route, through to blob storage, using the Azure portal
 - Define a second message route, through to an Azure Analytics job, using the Azure portal
-- Create a query to apply machine learning for anomaly detection, using SQL
+- Create a query to apply a built-in ML model for anomaly detection, using SQL
 - Create a dashboard to visualize data anomalies, using Power BI
 
-![Graph of smooth vibrations](../media/vibration3.png)
+[![Graph of smooth vibrations](../media/vibration3.png)](../media/vibration3.png#lightbox)
 
 ## Clean up
 

@@ -25,6 +25,7 @@ levels:
 roles: 
 - developer
 - administrator
+- student
 products: 
 - azure
 - azure-clis

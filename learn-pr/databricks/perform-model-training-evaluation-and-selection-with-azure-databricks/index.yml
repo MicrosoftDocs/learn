@@ -1,5 +1,6 @@
 ### YamlMime:Module
 uid: learn.performing-model-training-evaluation-and-selection-with-azure-databricks
+hidden: true
 metadata:
   title: Train, evaluate, and select machine-learning models with Azure Databricks
   description: Learn the fundamentals of using Azure Databricks notebooks for machine-learning model training, evaluation, and selection.
@@ -24,6 +25,7 @@ levels:
 roles:
 - developer
 - data-scientist
+- student
 products:
 - azure
 - azure-databricks

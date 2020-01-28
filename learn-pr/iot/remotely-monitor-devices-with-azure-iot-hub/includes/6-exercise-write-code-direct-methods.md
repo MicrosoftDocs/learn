@@ -108,8 +108,8 @@ In this unit, we'll add code to the device app for a direct method to turn on th
 
 ::: zone-end
 
-> [!NOTE]
-> The fan has three states: _on_, _off_, and _failed_. The method above sets the fan to either of the first two of these states. If the payload text doesn't match one of these two, or the fan is in a failed state, an error is returned.
+   > [!NOTE]
+   > The fan has three states: _on_, _off_, and _failed_. The method above sets the fan to either of the first two of these states. If the payload text doesn't match one of these two, or the fan is in a failed state, an error is returned.
 
 You've completed what is needed at the device end of things. Next, we need to add code to the back-end service.
 
@@ -228,11 +228,11 @@ To test the method, start the apps in the correct order.
 1. Start the device app. A console window will open up, and telemetry will appear.
 1. Start the back-end app. This app immediately calls the direct method. Do you notice it's handled by the back-end app, with output similar to the following?
   
-    ![Screenshot showing the output when the direct method is run by the back-end service app](../media/cheesecave-direct-method-sent.png)
+    [![Screenshot showing the output when the direct method is run by the back-end service app](../media/cheesecave-direct-method-sent.png)](../media/cheesecave-direct-method-sent.png#lightbox)
 
 1. Now check on the console output for the device app, you should see that the fan has been turned on.
 
-    ![Screenshot showing the output when the direct method is run by the device app](../media/cheesecave-direct-method-received.png)
+    [![Screenshot showing the output when the direct method is run by the device app](../media/cheesecave-direct-method-received.png)](../media/cheesecave-direct-method-received.png#lightbox)
 
 You are now successfully monitoring and controlling a remote device. We have turned on the fan, which will slowly move the environment in the cave to our initial desired settings. However, we might like to remotely specify those desired settings. We could specify desired settings with a direct method (which is a valid approach). Or we could use another feature of IoT Hub, called _device twins_. Let's look into the technology of device twins.
 

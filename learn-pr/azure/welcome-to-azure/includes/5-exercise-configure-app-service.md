@@ -2,7 +2,7 @@ Recall from earlier, that we're using an App Service to run our WordPress applic
 
 Let's have a look at some of this information.
 
-1. Open the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
+1. Open the [Azure portal](https://portal.azure.com/?azure-portal=true).
 
 1. From the left-hand navigation menu, select **Dashboard** to access a list of all resources in your subscription. You may have to click the menu icon to show the navigation choices.
 
