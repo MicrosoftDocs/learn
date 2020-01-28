@@ -63,7 +63,7 @@ In this exercise, you'll use the Azure CLI to migrate blobs that haven't changed
     az storage blob upload-batch \
       --destination specifications \
       --pattern "*.md" \
-      --source sample/specifications \
+      --source ~/sample/specifications \
       --account-name $HOT_STORAGE_NAME \
       --account-key $HOT_KEY
     ```
@@ -151,7 +151,7 @@ Now we'll create a second storage account and move data between accounts.
 
 1. Review the list of blobs to copy.
 
-1. Repeat the blob copy command, but specify one of the DOC files that was created more recently. Use the same value for *\<modified date>* that you used in the previous step. This date is before the DOC blob was created, so it shouldn't be copied.
+1. Repeat the blob copy command, this time without the `--dryrun` parameter used in the previous step. This time, the blobs will be copied.
 
     ```azurecli
     az storage blob copy start-batch \

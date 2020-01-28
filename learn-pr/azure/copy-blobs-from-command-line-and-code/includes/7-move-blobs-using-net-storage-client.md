@@ -8,9 +8,9 @@ The library is available as a NuGet package: *Windows.Azure.Storage*. Two versio
 
 ## Connect to Azure storage
 
-The first task is to connect to Azure Storage itself. A common way to do this is to use the `Parse` method on the`CloudStorageAccount` class; this method takes a connection string. You can find the connection string for a storage account using the Azure portal.
+The first task is to connect to Azure Storage itself. A common way to connect is to use the `Parse` method on the`CloudStorageAccount` class; this method takes a connection string. You can find the connection string for a storage account using the Azure portal.
 
-Next, create a *client* object. If you're using blob storage, you create a `CloudBlobClient` object. You do this with the `CreateCloudBlobClient` method of your storage account connection object.
+Next, create a *client* object. If you're using blob storage, you create a `CloudBlobClient` object. You create a client with the `CreateCloudBlobClient` method of your storage account connection object.
 
 The following code example shows how to perform these tasks. The relevant types are defined in the `Microsoft.Azure.Storage` and `Microsoft.Azure.Storage.Blob` namespaces.
 
@@ -54,7 +54,7 @@ As with downloading, you can stream data to a blob using the  `UploadFromStreamA
 
 You can transfer blobs between storage accounts using a combination of the download and upload techniques illustrated above. However, a more efficient approach is to make use of the blob copying facilities provided by the Azure Storage service. Copying a blob in this way transfers it directly from one container to another without requiring that you download it to an intermediate storage location.
 
-The .NET Client library provides the `StartCopyAsync` method of a blob object to initiate copying the data in this blob to another blob in a destination container. You specify the destination blob using its URI. Additionally, because the data is transferred directly, you need to ensure that the Azure Storage service is provided with the appropriate access rights to the source blob. One way to do this is with a Shared Access Signature (SAS) token, as described earlier in this module. You append the SAS token to the URI of the source blob.
+The .NET Client library provides the `StartCopyAsync` method of a blob object to initiate copying the data in this blob to another blob in a destination container. You specify the destination blob using its URI. Additionally, because the data is transferred directly, you need to ensure that the Azure Storage service is provided with the appropriate access rights to the source blob. One way to supply this access is with a Shared Access Signature (SAS) token, as described earlier in this module. You append the SAS token to the URI of the source blob.
 
 The example code below shows how to use the `StartCopyAsync` method. The *sourceBlob* variable is a reference to a blob being copied. The code creates a reference to a new blob (*destBlob*) using the same name as the source blob. The `StartCopyAsync` method takes the URI of the blob to be copied, and starts to transfer the data to the new destination blob. The `GetSharedAccessUri` method creates a read-only SAS token for the source blob that is valid for 60 minutes.
 
@@ -85,7 +85,7 @@ private static string GetSharedAccessUri(string blobName, CloudBlobContainer con
 
 The `StartCopyAsync` method initiates the blob copy operation and the process runs in the background. You can check on the progress of the operation by retrieving a reference to the destination blob and querying its `CopyState`. The state has a value of `Pending` while the copy is in progress. Additionally, you can find out how many bytes have been copied using the `BytesCopied` property of the `CopyState` object.
 
-The code sample below retrieves a reference to the destination blob, and monitors the progress as it is copied. Note that the reference is obtained using the `GetBlobReferenceFromServerAsync` method. This method retrieves the latest status information from the storage server. The `GetBlockBlobReference` method shown in previous examples uses information that is cached in the client library. This cached information isn't updated while a blob is being copied. So, to obtain the up-to-date status of the blob, fetch this information from the server.
+The code sample below retrieves a reference to the destination blob, and monitors the progress as it is copied. A reference is obtained using the `GetBlobReferenceFromServerAsync` method. This method retrieves the latest status information from the storage server. The `GetBlockBlobReference` method shown in previous examples uses information that is cached in the client library. This cached information isn't updated while a blob is being copied. So, to obtain the up-to-date status of the blob, fetch this information from the server.
 
 ```C#
 // Display the status of the blob as it is copied
@@ -94,7 +94,7 @@ while (destBlobRef.CopyState.Status == CopyStatus.Pending)
 {
     Console.WriteLine($"Blob: {destBlobRef.Name}, Copied: {destBlobRef.CopyState.BytesCopied ?? 0} of  {destBlobRef.CopyState.TotalBytes ?? 0}");
     await Task.Delay(500);
-    destBlobRef = await destContainer.GetBlobReferenceFromServerAsync(sourceBlobRef.Name);
+    destBlobRef = await destContainer.GetBlobReferenceFromServerAsync(destBlobRef.Name);
 }
 Console.WriteLine($"Blob: {destBlob.Name} Complete");
 ```
