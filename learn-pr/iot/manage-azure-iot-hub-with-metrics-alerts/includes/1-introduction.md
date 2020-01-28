@@ -46,3 +46,14 @@ With the goal of preventive maintenance, you decide to use Azure IoT Hub to mana
 ## The first step
 
 The first step to building this system is to create a custom IoT Hub.
+
+
+### Remaining jobs
+
+1. image alt text
+1. lightbox utility
+1. read end to end
+1. test end to end
+1. badge artwork
+1. remove unused images
+
