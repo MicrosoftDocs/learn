@@ -1,45 +1,56 @@
+The Products Manager API is about to get serious style upgrade curtosey of you - fake Tailwind Traders developer extroidinaire. In this exercise, you'll turn all of the functions you created earlier into RESTful ones by modifying their configuration files.
+
 1. Open the `api/GetProducts/function.json` file.
 
 1. Modify the "methods" property so that it only contains the value "get".
 
-1. Below the "methods" line, add a line that specifies a new route for the GetProducts method.
+   ```json
+   "methods": ["get"]
+   ```
+
+1. Below the "methods" line, add a line that specifies a route of "products" for the GetProducts method.
 
    ```json
    "route": "products"
    ```
 
-   Your `function.json` file for "GetProducts" should now look like this...
+Your `function.json` file for "GetProducts" should now look like this...
 
-   ```json
-   {
-     "bindings": [
-       {
-         "authLevel": "function",
-         "type": "httpTrigger",
-         "direction": "in",
-         "name": "req",
-         "methods": ["get"],
-         "route": "products"
-       },
-       {
-         "type": "http",
-         "direction": "out",
-         "name": "res"
-       }
-     ],
-     "scriptFile": "../dist/GetProducts/index.js"
-   }
-   ```
+```json
+{
+  "bindings": [
+    {
+      "authLevel": "function",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": ["get"],
+      "route": "products"
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    }
+  ],
+  "scriptFile": "../dist/GetProducts/index.js"
+}
+```
 
 1. Save the file.
 
-   Saving the file will cause the Azure Functions process to terminate the debugger will disconnect.
+   > [!NOTE]
+   > Saving the file will cause the Azure Functions process to terminate the debugger will disconnect. Don't be alarmed. You didn't break anything. It's just that you've made fundamental changes to how the functions are served up, so you'll have to restart the project when you're done with all this REST spring cleaning.
 
 ## Make the CreateProduct function RESTful
 
-1. Open the "api/CreatProducts/function.json" file.
+1. Open the `api/CreatProducts/function.json` file.
 
 1. Restrict the allowed "methods" to just "post".
+
+   ```json
+   "methods": ["post"]
+   ```
 
 1. Below the "methods" line, add a line that specifies a new route for the CreateProduct method as "product".
 
@@ -76,6 +87,10 @@
 
 1. Restrict the allowed "methods" to just "put".
 
+   ```json
+    "methods": ["put"]
+   ```
+
 1. Below the "methods" line, add a line that specifies a new route for the UpdateProduct method as "product".
 
    ```json
@@ -104,9 +119,6 @@
      "scriptFile": "../dist/UpdateProduct/index.js"
    }
    ```
-
-> [!NOTE]
-> Note that you specified the same route for both the CreateProduct and UpdateProduct functions (product). Only the HTTP request method is different: a post for a create and a put for an update. You can see how using HTTP request methods gives you multiple ways to use routes of the same name. This greatly simplifies the number of total endpoints that you have.
 
 ## Make the DeleteProduct function RESTful
 
@@ -143,9 +155,6 @@
    }
    ```
 
-> [!NOTE]
-> Note that you specified the same route for the CreateProduct, UpdateProduct and DeleteProduct functions (product). Only the HTTP request method is different: a post for a create and a put for an update. You can see how using HTTP request methods gives you multiple ways to use routes of the same name. This greatly simplifies the number of total endpoints that you have.
-
 ## Start the project
 
 1. Start the Azure Functions project by pressing <kbd>F5</kbd>.
@@ -154,12 +163,6 @@
 
    ![VS Code terminal showing endpoints running on new routes](../media/restful-endpoints.png)
 
-## Test new routes
+Look at that stunning API. It's simply gorgeous. Notice how you specified the same exact same route for the CreateProduct, UpdateProduct and DeleteProduct functions? Only the HTTP request method is different. You've turned three URL's into one while still having three endpoints. You're a magician. That's the power of REST.
 
-1. Press <kbd>Ctrl</kbd> or <kbd>Cmd</kbd> and click the "http://localhost:7071/api/products" link in the terminal. This will open your browser and load that endpoint.
-
-1. Notice that the "/api/products" endpoint returns a list of all products.
-
-   ![A browser window showing all products returned from the database as JSON](../media/all-products.png)
-
-Each function has an HTTP request method that describes what sort of database action it performs. You have also changed the routes so that they are organized by resource. Since there is only one resource - products - you really only have 2 endpoints. Your API is now a RESTful one!
+Now it's time to connect these functions to the Cosmos DB database. Roll up your sleeves, because here comes the code. This is going to be fun.

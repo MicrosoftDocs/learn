@@ -1,4 +1,4 @@
-In the previous exercises you created all of the endpoints for the products API. In this exercise, you'll connect to Cosmos DB from those functions to create, read, update, and delete product data.
+It's time to put some gasoline in this API engine and fire it up. That's an analogy for connecting the function endpoints to the database. You're probably better at coding than we are with analogies.
 
 ## Get the database connection string
 
@@ -8,13 +8,11 @@ In the previous exercises you created all of the endpoints for the products API.
 
 1. Select "Cosmos DB: Copy Connection String"
 
-1. Select the "tailwind-xxxxx" account. Your five-digit number will be different than the ones shown in this screenshot as each database account has a unique name.
+1. Select the "tailwind-xxxxx" account. Your five-digit number will be different than the ones shown in this screenshot as each database account is unique and special. Like a snowflake.
 
    ![A list of all available Cosmos DB accounts in the VS Code Command Palette](../media/cosmos-select-account.png)
 
 1. Press <kbd>Enter</kbd>
-
-   The connection string is now on your clipboard. Now we'll use it to tell the Cosmos DB SDK how to connect the database.
 
 ## Add connection string to local settings
 
@@ -49,7 +47,7 @@ Install the Cosmos DB package from npm.
 
 ## Wire up the CreateProducts function
 
-1. Open the "api/CreateProduct/index.ts" file.
+1. Open the `api/CreateProduct/index.ts` file.
 
 1. Replace all of the code in the file with the following...
 
@@ -88,7 +86,7 @@ Install the Cosmos DB package from npm.
 
 ## Wire up the GetProducts function
 
-1. Open the "api/GetProducts/index.ts" file.
+1. Open the `api/GetProducts/index.ts` file.
 
 1. Replace all of the code in the file with the following...
 
@@ -126,7 +124,7 @@ Install the Cosmos DB package from npm.
 
 ## Wire up the UpdateProduct function
 
-1. Open the "api/UpdateProduct/index.ts" file.
+1. Open the `api/UpdateProduct/index.ts` file.
 
 1. Replace all of the code in the file with the following...
 
@@ -166,7 +164,7 @@ Install the Cosmos DB package from npm.
 
 ## Wire up the DeleteProduct function
 
-1. Open the "api/UpdateProduct/index.ts" file.
+1. Open the `api/UpdateProduct/index.ts` file.
 
 1. Replace all of the code in the file with the following...
 
@@ -208,18 +206,14 @@ Install the Cosmos DB package from npm.
 
 1. Press F5 to start the project
 
-1. Open the `api/tests.http` file.
-
-1. Delete any text in that file and enter the following line...
+1. Navigate to the "/api/products" URL...
 
    ```http
-   GET http://localhost:7071/api/GetProducts
+   http://localhost:7071/api/GetProducts
    ```
 
-1. Click "Send Request".
+1. Behold the products.
 
-1. View the results of the "products" collection in the returned result.
+   ![The items in the products collection displayed in VS Code outlined with a red box.](../media/all-products.png)
 
-   ![The items in the products collection displayed in VS Code outlined with a red box.](../media/get-products-result.png)
-
-In this exercise, you learned how to connect to and query CosmosDB. You also were able to return the items in the database with an Azure Function. In the next section, you'll learn about Cross-Origin Resource Sharing (CORS) and how to connect to your API from the frontend web project.
+This API is DONE. Excellent work. Now you'll bring the frontend web project to life like a mad scientist by pointing it at your API. Unfortunately, your browser isn't going to go for that plan at all. The reason for that is something called "Cross-Origin Resource Sharing". Let's talk about that.
