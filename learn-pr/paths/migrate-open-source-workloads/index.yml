@@ -1,0 +1,29 @@
+### YamlMime:LearningPath
+uid: learn.wwl.migrating-open-source-workloads-to-azure
+metadata:
+  title: Migrating open source workloads to Azure
+  description: Migrate open source workloads
+  author: wwlpublish
+  ms.author: v-gea
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Migrating open source workloads to Azure
+prerequisites: |
+  - Knowledge of MySQL or PostgreSQL database management systems, including application development for these systems, administration, backup, and recovery techniques, such as import/export and backup/restore.
+  - Knowledge of Azure fundamental concepts, and experience using the Azure portal.
+summary: |
+  Learn how to migrate open source workloads from PostgreSQL and MySQL databases to the equivalent services in Azure. Explore the process and tools, and how to validate application dependencies to support a successful migration.
+iconUrl: /learn/achievements/learn-pr/achievements/migrating-open-source-workloads-to-azure-dp0-70.svg
+levels:
+- intermediate
+roles:
+- data-engineer
+products:
+- azure
+modules:
+- learn.wwl.introduction-open-source-database-migration-azure
+- learn.wwl.migrate-premises-mysql-databases-azure-database-mysql
+- learn.wwl.migrate-premises-postgresql-databases-azure-database-postgresql
+- learn.wwl.protecting-monitoring-tuning-migrated-database
+trophy:
+  uid: learn.wwl.migrating-open-source-workloads-to-azure.trophy
