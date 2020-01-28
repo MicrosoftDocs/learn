@@ -6,7 +6,7 @@ Locate the monitoring section in the left-hand menu.
 
 ## Alerts
 
-_Alerts_ are one of the more dynamic, and fun, features of an IoT Hub. An alert is triggered when certain conditions are met. The result is one or more actions. Whereas the most common use of alerts is when a value is outside a range, greater than a maximum, less than a minimum, you might also send a form of alert that everything is in range and working fine. The advantage of the latter approach, sending a message repeatedly when everything is OK, is that it covers the scenario when the alert system itself fails. If the operator does not receive a message, then investigate.
+_Alerts_ are one of the more dynamic, and fun, features of an IoT Hub. An alert is triggered when certain conditions are met. The result is one or more actions. Whereas the most common use of alerts is when a value is outside a range, greater than a maximum, less than a minimum, you might also send a form of alert that everything is in range and working fine. The advantage of the latter approach, sending a message repeatedly when everything is OK, is that it covers the scenario when the alert system itself fails. If the operator doesn't receive a message, then investigate.
 
 ### Define an action group
 
@@ -68,7 +68,7 @@ public static async Task<IActionResult> Run(HttpRequest req, ILogger log)
 }
 ```
 
-You can see how useful these templates are in making sure your function signature is correct. In the following units we will be creating an HTTP trigger function, and specifying it as the action for an IoT alert. We will be keeping things simple, and not altering the default code shown above. It is the mechanism of firing the function when an alert is triggered by some facet of the telemetry data, that we want to enable. And get to work.
+You can see how useful these templates are in making sure your function signature is correct. In the following units we'll be creating an HTTP trigger function, and specifying it as the action for an IoT alert. We'll be keeping things simple, and not altering the default code shown above. It's the mechanism of firing the function when an alert is triggered by some facet of the telemetry data, that we want to enable. And get to work.
 
 ## Metrics
 
@@ -96,7 +96,7 @@ For example, to archive the data telemetry for a period of 50 days into a storag
 
   [![Screenshot showing how to set up a diagnostic setting, and send the results to a storage account](../media/metrics-alerts-diagnostic-settings.png)](../media/metrics-alerts-diagnostic-settings.png#lightbox)
 
-We will not be taking this feature any further in this module. However, follow the link in the **Summary** page for more details, if interested.
+We'll not be taking this feature any further in this module. However, follow the link in the **Summary** page for more details, if interested.
 
 ## Logs
 
@@ -119,8 +119,8 @@ A user must select **Pin to dashboard** for the query to be persisted. Columns o
 
    [![Screenshot showing the export options available, after generating logging data](../media/metrics-alerts-log-export.png)](../media/metrics-alerts-log-export.png#lightbox)
 
-We will not be taking the logs feature any further in this module. Follow the link on the **Summary** page, for more details.
+We'll not be taking the logs feature any further in this module. Follow the link on the **Summary** page, for more details.
 
 ## Next steps
 
-You should now understand the purpose of the four entries in the Monitoring menu. The next step is to create some metrics and alerts, then put them to the test.
+You now understand the purpose of the four entries in the Monitoring menu. The next step is to create some metrics and alerts, then put them to the test.

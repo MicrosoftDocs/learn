@@ -31,6 +31,6 @@ Now we need to create a single device identity, the sensor monitoring the convey
     > [!IMPORTANT]
     > The connection string you've just copied is the _device_ connection string. There are many other connection strings. Add a note to your text file that this is the device connection string.
 
-1. Save off the text file, with a name such as "Vibration connections.txt", for reference in the next units.
+1. Save off the text file, with a name such as "IDs.txt", for reference in the next units.
 
 The next step is to code the sending of telemetry messages.

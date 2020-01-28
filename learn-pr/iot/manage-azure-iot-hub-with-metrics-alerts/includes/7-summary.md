@@ -1,4 +1,4 @@
-Good work finishing this module. Monitoring is not an _exciting_ activity, but is an important one. By completing this module you now have a valuable introduction, and operational experience, of the monitoring features of an Azure IoT Hub.
+Good work finishing this module. Monitoring isn't an _exciting_ activity, but is an important one. By completing this module you now have a valuable introduction, and operational experience, of the monitoring features of an Azure IoT Hub.
 
 In this module, you learned how to:
 
@@ -22,7 +22,6 @@ Take your interest further with:
 
 - [Create and manage action groups in the Azure portal](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/action-groups)
 - [Azure Monitor documentation](https://docs.microsoft.com/en-us/azure/azure-monitor)
-- [Azure Certified for IoT device catalog](https://catalog.azureiotsolutions.com/)
 - [Create diagnostic setting to collect platform logs and metrics in Azure](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/diagnostic-settings)
 - [Azure Monitor log queries](https://docs.microsoft.com/en-us/azure/azure-monitor/log-query/query-language)
 - [An introduction to Azure Functions](https://docs.microsoft.com/en-us/azure/azure-functions/functions-overview)

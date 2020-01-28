@@ -2,7 +2,7 @@ With an Azure IoT Hub potentially handling many thousands of telemetry messages,
 
 In this module, you'll learn about Azure IoT Hub monitoring. Monitoring encompasses a number of features: logging, diagnostics, metrics, and alerts. Of these, the alerts are probably the most important. Alerts signal "red flags" to a human operator. Alerts fire when one or more conditions are met. Alerts can also signal more mundane events, more information or warnings than errors. Metrics, diagnostics, and logs, just do their job, providing different ways of reporting on current activities.
 
-This module uses the same scenario, and code base, as the [Identify anomalies by routing data via IoT Hub to a built-in ML model in Azure Stream Analytics](https://docs.microsoft.com/en-us/learn/modules/data-anomaly-detection-using-azure-iot-hub/). It is not necessary to complete the anomalies module to complete this one on monitoring. You will gain valuable insights to the features of Azure IoT Hub by completing both modules, in any order.
+This module uses the same scenario, and code base, as the [Identify anomalies by routing data via IoT Hub to a built-in ML model in Azure Stream Analytics](https://docs.microsoft.com/en-us/learn/modules/data-anomaly-detection-using-azure-iot-hub/). It isn't necessary to complete the anomalies module to complete this one on monitoring. You will gain valuable insights to the features of Azure IoT Hub by completing both modules, in any order.
 
 The scenario we are using is that of a conveyor belt, monitored for vibration.
 
@@ -39,7 +39,7 @@ Forced vibration is the dangerous one for our conveyor belt. Even if it starts a
 
 [![Graph of cyclical forced vibration](../media/vibration1.png)](../media/vibration1.png#lightbox)
 
-Vibration is typically measured as an acceleration (meters per second squared, m/s<sup>2</sup>).
+Vibration is typically measured as an acceleration (meters per second squared, m/s<sup>2</sup>), though sometimes vibration is measured in g-forces.
 
 With the goal of preventive maintenance, you decide to use Azure IoT Hub to manage the vibration telemetry.
 
@@ -57,4 +57,7 @@ The first step to building this system is to create a custom IoT Hub.
 1. badge artwork
 1. remove unused images - done
 1. check images for PI - done
+1. acrolinx again - done1 -
+1. read code comments for irrelevant stuff - done
+1. knowledge check text - done1
 

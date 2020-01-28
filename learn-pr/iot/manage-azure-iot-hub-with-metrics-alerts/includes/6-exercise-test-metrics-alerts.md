@@ -16,10 +16,10 @@ In this penultimate unit, we test that all your good work so far functions as it
 
 ## Test the email alert is sent  
 
-1. Monitor the email account you used for the email alert. Have you received a "triggered" message yet? There is some latency between when the alert is fired to when you receive the email.
+1. Monitor the email account you used for the email alert. Have you received a "triggered" message yet? There's some latency between when the alert is fired to when you receive the email.
 
     [![Screenshot showing the email heading, when an email alert is triggered](../media/metrics-alerts-email-triggered.png)](../media/metrics-alerts-email-triggered.png#lightbox)
 
 1. Close the device app. You should get a second email to this effect.
 
-Testing the alert system did not take long! Let's summarize whet we have achieved in this module, and finish with a knowledge check.
+Testing the alert system did not take long! Let's summarize whet we've achieved in this module, and finish with a knowledge check.

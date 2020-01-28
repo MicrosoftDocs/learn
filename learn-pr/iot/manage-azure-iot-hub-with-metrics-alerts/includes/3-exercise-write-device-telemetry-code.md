@@ -265,8 +265,8 @@ The following app simulates a conveyor belt, and reports vibration sensor data e
                     temperature += rand.NextDouble() - 0.5d;
     
                     // Create two messages:
-                    // 1. Vibration telemetry only, that is routed to Azure Stream Analytics.
-                    // 2. Logging information, that is routed to an Azure storage account.
+                    // 1. Vibration telemetry
+                    // 2. Logging information
     
                     // Create the telemetry JSON message.
                     var telemetryDataPoint = new
@@ -276,7 +276,7 @@ The following app simulates a conveyor belt, and reports vibration sensor data e
                     var telemetryMessageString = JsonConvert.SerializeObject(telemetryDataPoint);
                     var telemetryMessage = new Message(Encoding.ASCII.GetBytes(telemetryMessageString));
     
-                    // Add a custom application property to the message. This is used to route the message.
+                    // Add a custom application property to the message. This can be used to route the message.
                     telemetryMessage.Properties.Add("sensorID", "VSTel");
     
                     // Send an alert if the belt has been stopped for more than five seconds.
@@ -299,7 +299,7 @@ The following app simulates a conveyor belt, and reports vibration sensor data e
                     var loggingMessageString = JsonConvert.SerializeObject(loggingDataPoint);
                     var loggingMessage = new Message(Encoding.ASCII.GetBytes(loggingMessageString));
     
-                    // Add a custom application property to the message. This is used to route the message.
+                    // Add a custom application property to the message. This can be used to route the message.
                     loggingMessage.Properties.Add("sensorID", "VSLog");
     
                     // Send an alert if the belt has been stopped for more than five seconds.
@@ -367,6 +367,6 @@ The following app simulates a conveyor belt, and reports vibration sensor data e
 
 1. If no activity is shown, wait a short while, as there's some latency.  
 
-1. Stop the device app for now, by closing the console window. We will start the app running again when we have some alerts to test.
+1. Stop the device app for now, by closing the console window. We will start the app running again when we've some alerts to test.
 
  With your device pumping out telemetry, and your hub receiving it, the next step is to learn about the monitoring features of an IoT Hub.
