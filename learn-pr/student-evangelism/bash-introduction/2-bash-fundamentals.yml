@@ -10,5 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-bash
 durationInMinutes: 5
+azureSandbox: true
+interactive: bash
 content: |
   [!include[](includes/2-bash-fundamentals.md)]
