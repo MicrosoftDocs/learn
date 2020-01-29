@@ -2,7 +2,7 @@ The main activity of this unit is creating two different types of alerts: an ema
 
 ## Create and visualize some metrics
 
-1. Start the device app running.
+1. Start your device app running, so it is pumping out telemetry.
 
 1. In your IoT Hub portal, locate and click **Metrics** in the **Monitoring** section of the left-hand menu.
 
@@ -68,7 +68,9 @@ The main activity of this unit is creating two different types of alerts: an ema
 
 1. Add an **Alert rule name**, and a brief **Description**, to complete the **Create rule** page. Leave the **Severity** as **Sev 3**, and leave **Enable rule upon creation** as **Yes**. Now, click **Create alert rule**, noting the message it can take up to 10 minutes for this rule to become active.
 
-This step completes the process of creating an email rule. The next rule we want to create calls an Azure Function. So, first, let's create the Azure Function.
+This step completes the process of creating an email rule. 
+
+The next rule we want to create calls an Azure Function. So, first, let's create the Azure Function.
 
 ## Create an Azure Function using the HHTP trigger template
 
@@ -114,7 +116,7 @@ This step completes the process of creating an email rule. The next rule we want
 1. Click the **Get function URL**, and save off the URL to a text file.
 
     > [!NOTE]
-    > To test that the URL is active, add your name in a query parameter to the end of the URL: **?name=&lt;your name&gt;**. Then paste the URL into a browser.
+    > To test that the URL is active, add your name in a query parameter to the end of the URL: **?name=&lt;your name&gt;**. Then paste the URL into a browser. You should get the hello message in response.
 
 1. Click **Save**. You have now created an Azure Function.
 

@@ -14,52 +14,7 @@ content: |
   [!include[](includes/7-summary.md)]
 quiz:
   title: Check your knowledge
-  questions:
-
-  - content: "Mechanical vibration is normally measured as an acceleration (m/s<sup>2</sup>). But it's sometimes measured in what?"
-    choices:  
-    - content: 'bushels'
-      isCorrect: false
-      explanation: Bushels are an obsolete unit of volume.
-    - content: 'decibels'
-      isCorrect: false
-      explanation: Noise is measured in decibels. Noise can cause vibration, but decibels aren't used to measure that vibration.
-    - content: 'Newtons'
-      isCorrect: false
-      explanation: Newtons are units of force.
-    - content: 'g-forces'
-      isCorrect: true
-      explanation: The use of g-forces to measure vibration is common, though isn't to ISO standards.      
-
-  - content: 'In the context of IoT Hub metrics, what is an <b>action group</b>?'
-    choices:  
-    - content: 'A collection of A-type individuals'
-      isCorrect: false
-      explanation: Not in the context of IoT Hub!
-    - content: 'A collection of actions of the same type. Such as a group of Webhooks, Azure Functions, or Automation Runbooks?'
-      isCorrect: false
-      explanation: Action groups aren't limited to actions of the same type.
-    - content: 'A collection of actions, not necessarily of the same type. Such as a mix of Webhooks, Azure Functions, or Automation Runbooks'
-      isCorrect: true
-      explanation: There are limits to the number of each type of action in any one action group. But all available actions can form part of that group.
-    - content: 'A collection of metrics, alerts, diagnostics, and logs'
-      isCorrect: false
-      explanation: There's no formal collection of these features.
-
-  - content: 'What are the four entries for the IoT Hub <b>Monitoring</b> menu?'
-    choices:  
-    - content: 'Alerts, Metrics, Security Alerts, Custom Alerts'
-      isCorrect: false
-      explanation: Security Alerts and Custom Alerts fall under the <b>Security</b> heading.
-    - content: 'Alerts, Metrics, Diagnostic settings, Logs'
-      isCorrect: true
-      explanation: These entries are the four features of IoT Hub monitoring.
-    - content: 'Overview, Alerts, Metrics, Logs'
-      isCorrect: false
-      explanation: An Overview feature isn't available for Monitoring.
-    - content: 'Alerts, Metrics, Diagnostic settings, Resource Health'
-      isCorrect: false
-      explanation: Resource Health is a feature of <b>Support + Troubleshooting</b>
+  questions: 
 
   - content: 'In the lists of metrics, what does the acronym C2D stand for?'
     choices:  
@@ -105,3 +60,18 @@ quiz:
     - content: 'Avg = 2.5, Min = -1, Max = 6, Sum = 25'
       isCorrect: false
       explanation: All these values are wrong.
+
+  - content: 'another question needed?'
+    choices:  
+    - content: 'Cloud to Data'
+      isCorrect: false
+      explanation: There's no such metric.
+    - content: 'Cloud to Device'
+      isCorrect: true
+      explanation: C2D messages are cloud-to-device messages.  
+    - content: 'Cost to Device'
+      isCorrect: false
+      explanation: There's no such metric.
+    - content: 'Cost to Data'
+      isCorrect: false
+      explanation: There's no such metric.

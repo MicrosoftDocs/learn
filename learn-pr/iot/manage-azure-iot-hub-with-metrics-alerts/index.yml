@@ -14,9 +14,9 @@ summary: >
 abstract: | 
   In this module, you will:
   - Create an Azure IoT Hub and device identity, using the IoT Hub portal
-  - Create an app to send device telemetry to the IoT Hub, using Visual Studio or Visual Studio Code
+  - Create a device app to send telemetry to the IoT Hub, using Visual Studio or Visual Studio Code
   - Learn about rules, alerts, diagnostics, and logs, to monitor the telemetry sent to the IoT Hub
-  - Create an email alert, suing the IoT Hub portal
+  - Create an email alert, using the IoT Hub portal
   - Create an Azure function, using the IoT Hub portal
   - Create an action to trigger the Azure function, using the IoT Hub portal
 prerequisites: | 

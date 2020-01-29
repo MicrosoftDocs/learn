@@ -3,8 +3,8 @@ Good work finishing this module. Monitoring isn't an _exciting_ activity, but is
 In this module, you learned how to:
 
 - Create an Azure IoT Hub and device identity, using the IoT Hub portal
-- Create an app to send device telemetry to the IoT Hub, using Visual Studio or Visual Studio Code
-- Create an email alert, suing the IoT Hub portal
+- Create a device app to send telemetry to the IoT Hub, using Visual Studio or Visual Studio Code
+- Create an email alert, using the IoT Hub portal
 - Create an Azure function, using the IoT Hub portal
 - Create an action to trigger the Azure function, using the IoT Hub portal
 
