@@ -139,5 +139,3 @@ If you need to use one of the wildcard characters as an ordinary character, you 
     ```bash
     $ ls *\**
     ```
-
-Armed with this information about Bash syntax, you're ready to do a little exploring of Bash on your own.

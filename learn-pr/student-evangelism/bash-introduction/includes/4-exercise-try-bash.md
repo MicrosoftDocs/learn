@@ -60,9 +60,9 @@ First, let's explore what's in Cloud Shell using the Bash commands we've learned
 
 When typing complicated commands like:
 
-    ```bash
-    ls -a .azure/commands/202?*.log
-    ```
+```bash
+ls -a .azure/commands/202?*.log
+```
 
 It's easy to make a mistake. Fortunately Bash offers a couple pieces of functionality to help you out.
 

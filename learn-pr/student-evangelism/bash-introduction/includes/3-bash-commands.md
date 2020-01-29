@@ -6,13 +6,13 @@ Let's look at common Bash commands and how to use them.
 
 ### `ls` command
 
-You've met `ls` before. As you know, `ls` lists the contents of your current directory or the directory specified in an argument to the command. By itself, it lists the files and directories in the current directory:
+`ls` lists the contents of your current directory or the directory specified in an argument to the command. By itself, it lists the files and directories in the current directory:
 
 ```bash
 ls
 ```
 
-Remember that files and directories whose names begin with a period are hidden by default. To include these items in a directory listing, use an `-a` flag:
+Files and directories whose names begin with a period are hidden by default. To include these items in a directory listing, use an `-a` flag:
 
 ```bash
 ls -a
@@ -26,7 +26,7 @@ ls -l
 
 Here's some sample output from a directory containing a handful of JPEGs and PNGs and a subdirectory named *gifs*:
 
-```
+```output
 -rw-rw-r-- 1 azureuser azureuser  473774 Jun 13 15:38 0001.png
 -rw-rw-r-- 1 azureuser azureuser 1557965 Jun 13 14:43 0002.jpg
 -rw-rw-r-- 1 azureuser azureuser  473774 Mar 26 09:21 0003.png
@@ -49,7 +49,7 @@ cat /etc/os-release
 
 This is a useful command because it tells you which Linux distribution you're running:
 
-```
+```output
 NAME="Ubuntu"
 VERSION="18.04.2 LTS (Bionic Beaver)"
 ID=ubuntu
@@ -120,7 +120,7 @@ The `rmdir` command deletes (removes) a directory, but only if it isn't empty. F
 
 ### `rm` command
 
-The `rm` command is short for "remove." As you'd expect, `rm`, like its MS-DOS cousin `del`, deletes files. So this command puts an end to **0001.jpg**:
+The `rm` command is short for "remove." As you'd expect, `rm`, deletes files. So this command puts an end to **0001.jpg**:
 
 ```bash
 rm 0001.jpg
@@ -229,7 +229,7 @@ This serves as an excellent reminder of why you should look closely at the manua
 
 ### `w` command
 
-Users come, users go, and sometimes you get users you don't want at all. When an employee leaves to "pursue other opportunities," the sysadmin is called upon to ensure that the worker can no longer log into the company's computer systems. Sysadmins are also expected to know who's logged in — and who shouldn't be.
+Users come, users go, and sometimes you get users you don't want at all. When an employee leaves to pursue other opportunities, the sysadmin is called upon to ensure that the worker can no longer log into the company's computer systems. Sysadmins are also expected to know who's logged in — and who shouldn't be.
 
 To find out who's on your servers, Linux provides the `w` (for "who") command. It displays information about the users currently on the computer system and those users' activities. `w` shows who's in the system, their user names, their IP addresses, when they logged in, what processes they are currently running, and how much time those processes are consuming. It is a valuable tool for sysadmins.
 
@@ -274,7 +274,7 @@ ps -ef | grep daemon
 
 The output might look like this:
 
-```
+```output
 azureus+  52463  50702  0 23:28 pts/0    00:00:00 grep --color=auto deamon
 azureuser@bash-vm:~$ ps -ef | grep daemon
 root        449      1  0 13:35 ?        00:00:17 /usr/lib/linux-tools/4.18.0-1018-azure/hv_kvp_daemon -n

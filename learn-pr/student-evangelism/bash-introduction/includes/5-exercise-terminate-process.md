@@ -6,15 +6,21 @@ Imagine that a Python application is causing problems. Perhaps it is taking up t
 
 If you're going to kill a process, you need a process to kill. Let's create one.
 
-1. In your Linux VM, type the following command to start Linux's [`vi`](https://wikipedia.org/wiki/Vi) editor:
+1. First, get back to your home base by typing the following command:
+
+    ```bash
+    cd ~
+    ```
+
+1. In Cloud Shell, type the following command to start Linux's [`vi`](https://wikipedia.org/wiki/Vi) editor:
 
     ```bash
     vi bad.py
     ```
 
-    `vi` is a widely used text editor that Linux inherited from Unix. Love it or hate it, it pays for a sysadmin to know the basics of `vi`.
+    `vi` is a widely used text editor that Linux inherited from Unix. Love it or hate it, it pays for a Bash user to know the basics of `vi`.
 
-1. Press the **I** key to put `vi` in insert mode. Then type in the following Python program:
+1. Press the **i** key to put `vi` in insert mode. Then type in the following Python program:
 
     ```python
     i = 0
@@ -26,7 +32,7 @@ If you're going to kill a process, you need a process to kill. Let's create one.
 
 1. After typing the program, press the **Esc** key to exit insert mode. Then type the following command followed by the **Enter** key to save the program and exit `vi`:
 
-    ```
+    ```vim
     :wq
     ```
 
@@ -38,7 +44,7 @@ If you're going to kill a process, you need a process to kill. Let's create one.
     python3 bad.py &
     ```
 
-    Be sure to include the ampersand at the end of the command. Otherwise, you won't return to the Bash prompt. In Bash, the ampersand executes a command and returns to the command line, even if the command hasn't finished running.
+    Be sure to include the ampersand (**&**) at the end of the command. Otherwise, you won't return to the Bash prompt. In Bash, the ampersand executes a command and returns to the command line, even if the command hasn't finished running.
 
 It's not obvious, but **bad.py** is now running in the background and stealing CPU cycles from other processes. Let's take a look under the hood to see what's happening.
 
@@ -54,13 +60,9 @@ To kill a process, you need the process name or process ID. This is a job for `p
 
     The results should look something like this:
 
-    ```
-    root        969      1  0 16:56 ?        00:00:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
-    root        972      1  0 16:56 ?        00:00:00 /usr/bin/python3 -u /usr/sbin/waagent -daemon
-    root       1006      1  0 16:56 ?        00:00:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
-    root       1108    972  0 16:56 ?        00:00:23 python3 -u bin/WALinuxAgent-2.2.40-py2.7.egg -run-exthandlers
-    azureus+  13079  12666 99 18:44 pts/1    00:23:33 python3 bad.py
-    azureus+  14376  12666  0 19:08 pts/1    00:00:00 grep --color=auto python
+    ```output
+    yourname+    342    254 99 23:34 pts/1    00:00:31 python3 bad.py
+    yourname+    344    254  0 23:35 pts/1    00:00:00 grep --color=auto python
     ```
 
 1. From the listing, it appears that **bad.py** is consuming 99% of the server's CPU time. The program is living up to its name.
@@ -83,4 +85,4 @@ To kill a process, you need the process name or process ID. This is a job for `p
 
 1. Finish up by running `ps` again to confirm that **bad.py** is no longer running.
 
-Another common use for `ps` and `kill` is to identify and terminate zombie processes, which are child processes left behind by poorly written programs. For more information, see https://wikipedia.org/wiki/Zombie_process.
+Another common use for `ps` and `kill` is to identify and terminate "zombie processes", which are child processes left behind by poorly written programs.
