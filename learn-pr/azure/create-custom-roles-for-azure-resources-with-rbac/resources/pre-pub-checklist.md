@@ -32,9 +32,9 @@
 - [ X] *title* is set
 - [X ] *ms.date* is set 
 - [X ] *author* and *ms.author* are set
-- [ ] *durationInMinutes* is set and IS ACCURATE
-- [ ] *interactive* is set to **bash** or **azure-portal** (if exercise)
-- [ ] *azureSandbox* is set to true if needed
+- [ X] *durationInMinutes* is set and IS ACCURATE
+- [n/a ] *interactive* is set to **bash** or **azure-portal** (if exercise)
+- [n/a ] *azureSandbox* is set to true if needed
 - [ n/x]  Knowledge checks reviewed for spelling and accuracy
 
 ### Exercises

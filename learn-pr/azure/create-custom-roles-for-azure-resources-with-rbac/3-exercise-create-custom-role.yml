@@ -4,13 +4,12 @@ title: Exercise - Create a custom role
 metadata:
   title: Exercise - Create a custom role
   description: Learn how to create a custom role in Azure
-  ms.date: 12/20/2019
+  ms.date: 02/07/2020
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
-durationInMinutes: 8
+durationInMinutes: 5
 azureSandbox: false
 content: |
   [!include[](includes/3-exercise-create-custom-role.md)]

@@ -1,12 +1,12 @@
 In this unit, you'll create a custom role for Virtual Machine Operator and assign it to yourself in Azure.
 
-This exercise is optional. To complete the exercise, you need access to an Azure account that has the User Access Administrator or Owner role that's associated to an Azure subscription.
+This exercise is optional. To complete it, you need access to an Azure subscription where you have the User Access Administrator or Owner role for your account. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
 
 ## Create role
 
 Create a custom role within Azure for the new employee.
 
-1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
+1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) with the account where you have the User Access Administrator or Owner role.
 1. Select **Cloud Shell** from the top right-hand side menu bar.
 1. Run the following command to get the subscription ID to use for your custom role definition. Copy the subscription ID.
 
@@ -37,12 +37,12 @@ Create a custom role within Azure for the new employee.
      "DataActions": [],
      "NotDataActions": [],
      "AssignableScopes": [
-       "/subscriptions/{subscriptionId1}"
+       "/subscriptions/subscriptionId"
      ]
    }
     ```
 
-1. In the `AssignableScopes` section, replace **{subscriptionId}** with the value you got from the previous step.
+1. In the `AssignableScopes` section, replace **subscriptionId** with the value you got from the previous step.
 1. Select **Save** from the three-dot menu on the top right-hand side of the Cloud Shell pane.
 1. Enter **vm-operator-role.json** as the filename.
 1. Select **Close Editor** from the three-dot menu on the top right-hand side of the Cloud Shell pane.
