@@ -5,7 +5,7 @@ Azure Active Directory is the hub for user management in the cloud. It provides 
 To learn more about some of the topics explored in this module, check out the following references.
 
 - [Azure AD built-in roles](https://docs.microsoft.com/azure/active-directory/role-based-access-built-in-roles)
-- [Secure your Azure resources with conditional access](https://docs.microsoft.com/learn/modules/secure-azure-resources-with-conditional-access/)
+- [Secure your Azure resources with conditional access](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)
 - [Create custom roles for Azure resources](https://docs.microsoft.com/azure/active-directory/role-based-access-control-custom-roles)
 - [Hybrid identity with Azure AD](https://docs.microsoft.com/azure/active-directory/hybrid/)
 - [Microsoft Azure Active Directory Connect](https://www.microsoft.com/download/details.aspx?id=47594)
