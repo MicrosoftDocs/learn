@@ -61,17 +61,17 @@ quiz:
       isCorrect: false
       explanation: All these values are wrong.
 
-  - content: 'another question needed?'
+  - content: 'Which if these is <i>not</i> an Action Type?'
     choices:  
-    - content: 'Cloud to Data'
+    - content: 'Automation Runbook'
       isCorrect: false
-      explanation: There's no such metric.
-    - content: 'Cloud to Device'
+      explanation: An Automation Runbook is an enabled action type.
+    - content: 'Email Azure Resource Manager Role'
+      isCorrect: false
+      explanation: This email is an enabled action type.
+    - content: 'Secure Webhook'
+      isCorrect: false
+      explanation: A Secure Webhook is an enabled action type.
+    - content: 'Power BI'
       isCorrect: true
-      explanation: C2D messages are cloud-to-device messages.  
-    - content: 'Cost to Device'
-      isCorrect: false
-      explanation: There's no such metric.
-    - content: 'Cost to Data'
-      isCorrect: false
-      explanation: There's no such metric.
+      explanation: A Power BI account is not enabled as an action type.

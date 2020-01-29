@@ -5,8 +5,8 @@ In this module, you learned how to:
 - Create an Azure IoT Hub and device identity, using the IoT Hub portal
 - Create a device app to send telemetry to the IoT Hub, using Visual Studio or Visual Studio Code
 - Create an email alert, using the IoT Hub portal
-- Create an Azure function, using the IoT Hub portal
-- Create an action to trigger the Azure function, using the IoT Hub portal
+- Create an Azure Function, using the IoT Hub portal
+- Create an action to trigger the Azure Function, using the IoT Hub portal
 
 [![Artwork showing vibrations](../media/metrics-alerts-vibrations.png)](../media/metrics-alerts-vibrations.png#lightbox)
 
@@ -20,11 +20,11 @@ No need to delete your project code though, keep it for future reference!
 
 Take your interest further with:
 
-- [Create and manage action groups in the Azure portal](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/action-groups)
-- [Azure Monitor documentation](https://docs.microsoft.com/en-us/azure/azure-monitor)
-- [Create diagnostic setting to collect platform logs and metrics in Azure](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/diagnostic-settings)
-- [Azure Monitor log queries](https://docs.microsoft.com/en-us/azure/azure-monitor/log-query/query-language)
-- [An introduction to Azure Functions](https://docs.microsoft.com/en-us/azure/azure-functions/functions-overview)
+- [Create and manage action groups in the Azure portal](https://docs.microsoft.com/azure/azure-monitor/platform/action-groups)
+- [Azure Monitor documentation](https://docs.microsoft.com/azure/azure-monitor)
+- [Create diagnostic setting to collect platform logs and metrics in Azure](https://docs.microsoft.com/azure/azure-monitor/platform/diagnostic-settings)
+- [Azure Monitor log queries](https://docs.microsoft.com/azure/azure-monitor/log-query/query-language)
+- [An introduction to Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-overview)
 
 And look out for additional Learn modules on IoT Hub.
 

@@ -6,7 +6,7 @@ In this penultimate unit, we test that all your good work so far functions as it
 
 1. Leave the app running.
 
-## Test the Http trigger fires
+## Test the HTTP trigger fires
 
 1. In the IoT portal, go to the **Monitoring / Alerts** page. The message should change from **All is good!**, to a table showing the status of the alerts received.
 

@@ -26,7 +26,7 @@ The main activity of this unit is creating two different types of alerts: an ema
 
 1. That completes our look at metrics on their own. Close the device app for now, by closing the console window, as we build some alerts.
 
-## Create an alert using the metrics and Email action
+## Create an alert using the metrics and email action
 
 1. In the portal page for your IoT Hub, click **Alerts**. You should see the response: **All is good! You have no alerts**.
 
@@ -72,7 +72,7 @@ This step completes the process of creating an email rule.
 
 The next rule we want to create calls an Azure Function. So, first, let's create the Azure Function.
 
-## Create an Azure Function using the HHTP trigger template
+## Create an Azure Function using the HTTP trigger template
 
 1. Click on **Home**, in the **Microsoft Azure** portal, so that the **+ Create a resource** icon appears.
 
@@ -105,7 +105,7 @@ The next rule we want to create calls an Azure Function. So, first, let's create
 
     [![Screenshot showing the In-portal selection for .NET Azure Functions](../media/metrics-alerts-function-in-portal.png)](../media/metrics-alerts-function-in-portal.png#lightbox)
 
-1. Select **More templates..**, click **Finish and view templates**, then select **Http trigger**.
+1. Select **More templates..**, click **Finish and view templates**, then select **HTTP trigger**.
 
     [![Screenshot showing the HTTP trigger selection of available templates](../media/metrics-alerts-function-http.png)](../media/metrics-alerts-function-http.png#lightbox)
 
