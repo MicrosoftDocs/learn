@@ -32,8 +32,8 @@ units:
 - learn.student-evangelism.bash-introduction.0-introduction
 - learn.student-evangelism.bash-introduction.1-what-is-bash
 - learn.student-evangelism.bash-introduction.2-bash-fundamentals
-- learn.student-evangelism.bash-introduction.3-exercise-try-bash
-- learn.student-evangelism.bash-introduction.4-bash-commands
+- learn.student-evangelism.bash-introduction.3-bash-commands
+- learn.student-evangelism.bash-introduction.4-exercise-try-bash
 - learn.student-evangelism.bash-introduction.5-exercise-terminate-process
 - learn.student-evangelism.bash-introduction.6-exercise-filter-cli-output
 - learn.student-evangelism.bash-introduction.7-knowledge-check

@@ -6,7 +6,7 @@ In this unit, you will use Azure Cloud Shell on the right as your Linux terminal
 
 First, let's explore what's in Cloud Shell using the Bash commands we've learned.
 
-1. Use the `ls` command from the previous unit to list all files and subdirectories in our current directory:
+1. Use the `ls` command to list all files and subdirectories in our current directory:
 
     ```bash
     ls
@@ -19,7 +19,7 @@ First, let's explore what's in Cloud Shell using the Bash commands we've learned
     clouddrive
     ```
 
-    `clouddrive` is a subdirectory of your current directory. It is a mounted file share that persists is you're using Cloud Shell on your own account. Right now you're using it on the Microsoft Learn sandbox.
+    `clouddrive` is a subdirectory of your current directory. It is a mounted file share that persists if you're using Cloud Shell on your own account. Right now you're using it on the Microsoft Learn sandbox.
 
 1. But wait, what *is* our current directory? Let's use the `pwd` command to find out. `pwd` stands for **print working directory**. It prints out the long-form path to what directory you are in now.
 
@@ -49,12 +49,12 @@ First, let's explore what's in Cloud Shell using the Bash commands we've learned
     .  ..  .azure  .bash_history  .bash_logout  .bashrc  clouddrive  .profile  .tmux.conf  .viminfo
     ```
 
-1. What were all of those files and subdirectories? Some are simply behind-the-scenes files to make Cloud Shell work. Let's discuss a couple of the others.
+1. What were all of those files and subdirectories? Some are behind-the-scenes files to make Cloud Shell work. Let's discuss a couple of the others.
 
-    - **.** refers to you current directory and **..** refers to your parent directory. Wherever you are, if you print all hidden files and directories, you will see **.** and **..** printed.
-    - `.bash_history` is a special Bash file where all commands you type into the shell are stored. Bash remembers your command history, which, as we'll see later, is very useful!
+    - **.** refers to your current directory and **..** refers to your parent directory. Wherever you are, if you print all hidden files and directories, you will see **.** and **..** printed.
+    - `.bash_history` is a special Bash file where all commands you type into the shell are stored. Bash remembers your command history, which, as we'll see later, is useful!
     - `.bash_logout` is another special Bash file that is read and executed every time a login shell exists. Linux superusers can modify it to customize your environment.
-    - `.bashrc` is a very important Bash config file that runs whenever you start a new shell. If you decide to open up this file to look at it, be very careful about making changes, as they can have a big effect.
+    - `.bashrc` is an important Bash config file that runs whenever you start a new shell. If you decide to open up this file to look at it, be careful about making changes, as they can have unintended consequences.
 
 ## Recall your history and autocomplete commands
 
@@ -64,7 +64,7 @@ When typing complicated commands like:
     ls -a .azure/commands/202?*.log
     ```
 
-It's very easy to make a mistake. Fortunately Bash offers a couple pieces of functionality to help you out.
+It's easy to make a mistake. Fortunately Bash offers a couple pieces of functionality to help you out.
 
 ### Recalling previous commands
 
@@ -93,7 +93,7 @@ It's very easy to make a mistake. Fortunately Bash offers a couple pieces of fun
 
 ### Autocompletion
 
-Now, let's say we want to read the contents of one of the files we just found. We will use the `cat` (short for for "catenate") command to print the contents of a file to the screen.
+Now, let's say we want to read the contents of one of the files we just found. We will use the `cat` (short for "catenate") command to print the contents of a file to the screen.
 
 1. To use this command, you could type in the full file name, such as:
 
@@ -101,7 +101,7 @@ Now, let's say we want to read the contents of one of the files we just found. W
     cat .azure/commands/2020-01-29.21-56-35.login.103.log
     ```
 
-1. But that's a lot of typing, and very error prone. Instead, we can use Bash's rudimentary autocompletion to avoid typing most of that! Instead, try typing:
+1. But that's a lot to type, and very error prone. Instead, we can use Bash's rudimentary autocompletion to do most of the work for us. Instead, try typing:
 
     ```bash
     cat .a
@@ -136,7 +136,7 @@ We just used the `cat` command, but you don't know much about it yet! Practice `
     man cat
     ```
 
-    Yes, you just typed "man cat" into your shell. Bash commands can be both cryptic and funny!
+    Yes, you typed "man cat" into your shell. Bash commands can be both cryptic and amusing!
 
 1. You should see an output like:
 
@@ -173,7 +173,7 @@ Let's practice one more basic Bash command - `cd`.
 
 While using the shell, you are always sitting inside of a directory - just like a folder on your PC or Mac. To change folders, you will use the `cd` (change directory) command.
 
-It's pretty simple, but let's get some practice.
+It's simple, but let's get some practice.
 
 1. First, type this command to make sure you're in the right place:
 
@@ -181,7 +181,7 @@ It's pretty simple, but let's get some practice.
     cd ~
     ```
 
-1. This will have moved you back to your special "home" directory in the shell, if you weren't already there.
+1. This command moved you back to your special "home" directory in the shell, if you weren't already there.
 
 1. Double check by using the `pwd` command one more time:
 
@@ -203,7 +203,7 @@ It's pretty simple, but let's get some practice.
     cd .azure/commands/
     ```
 
-    You can either type all this in directly, or use **tab** to autocomplete!
+    You can either type the full command yourself, or use **tab** to autocomplete!
 
 1. Now you should see that the line where you type commands looks different, showing you where you are in the shell:
 
@@ -223,4 +223,4 @@ It's pretty simple, but let's get some practice.
     yourname@Azure:~/.azure$
     ```
 
-Great work! You've taken your first steps to being a Bash expert. Let's keep learning.
+Great work! You've taken your first steps to being a Bash expert. Let's keep learning!

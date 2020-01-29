@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.student-evangelism.bash-introduction.3-exercise-try-bash
+uid: learn.student-evangelism.bash-introduction.4-exercise-try-bash
 title: Exercise - Try Bash
 metadata:
   title: Exercise - Try Bash
@@ -13,7 +13,7 @@ durationInMinutes: 5
 azureSandbox: true
 interactive: bash
 content: |
-  [!include[](includes/3-exercise-try-bash.md)]
+  [!include[](includes/4-exercise-try-bash.md)]
 quiz:
   title: Check your knowledge
   questions:

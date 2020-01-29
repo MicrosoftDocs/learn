@@ -1,4 +1,4 @@
-Every shell language has its most-used commands, just as every guitarist has certain songs she must be ready to play if invited to jam. ("House of the Rising Sun," "Sweet Child O' Mine," and "Stairway to Heaven" come to mind, among others.) Let's start building your Bash repertoire by examining the most commonly used commands.
+Every shell language has its most-used commands. Let's start building your Bash repertoire by examining the most commonly used commands.
 
 ## Bash commands
 
@@ -6,7 +6,7 @@ Let's look at common Bash commands and how to use them.
 
 ### `ls` command
 
-You've met `ls` before. As you know, `ls` lists the contents of the pwd or the directory specified in an argument to the command. By itself, it lists the files and directories in the current directory:
+You've met `ls` before. As you know, `ls` lists the contents of your current directory or the directory specified in an argument to the command. By itself, it lists the files and directories in the current directory:
 
 ```bash
 ls
@@ -17,6 +17,7 @@ Remember that files and directories whose names begin with a period are hidden b
 ```bash
 ls -a
 ```
+
 To get even more information about the files and directories in the current directory, use an `-l` flag:
 
 ```bash
@@ -36,7 +37,7 @@ Here's some sample output from a directory containing a handful of JPEGs and PNG
 drwxrwxr-x 2 azureuser azureuser    4096 Jun 13 20:16 gifs
 ```
 
-Each line provides detailed information about the corresponding file or directory, including the permissions assigned to it, its owner, its size in bytes, the last time it was modified, and the file or directory name. 
+Each line provides detailed information about the corresponding file or directory, including the permissions assigned to it, its owner, its size in bytes, the last time it was modified, and the file or directory name.
 
 ### `cat` command
 
