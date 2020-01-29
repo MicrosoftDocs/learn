@@ -4,7 +4,7 @@ In this unit, you'll view, update, and delete the custom role you created in the
 
 Let's use the Azure portal to see the custom roles in your subscription.
 
-1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
+1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) with the same account you used for the previous exercise.
 1. Search for and select **Subscriptions** from the top of the Azure portal.
 1. Select the subscription that you associated your custom role to.
 1. Select **Access control (IAM)** > **Roles**.
@@ -48,21 +48,20 @@ We need to update the Virtual Machine Operator role to add permissions for a mon
     "DataActions": [],
     "NotDataActions": [],
     "AssignableScopes": [
-       "/subscriptions/{subscriptionId1}"
+       "/subscriptions/subscriptionId1"
      ]
    }
     ```
-1. In the `AssignableScopes` section, replace **{subscriptionId}** with your subscription ID. If you didn't save that value from the previous exercise, run the following command to get it.
+1. In the `AssignableScopes` section, replace **subscriptionId** with your subscription ID. If you didn't save that value from the previous exercise, run the following command to get it.
    ```azurecli
     az account list  --output json | jq '.[] | .id, .name'
    ```
 1. Select **Save** from the three-dot menu on the top right-hand side of the Cloud Shell pane. 
-1. Enter **vm-operator-role-new.json** as the filename.
 1. Select **Close Editor** from the three-dot menu on the top right-hand side of the Cloud Shell pane.
 1. Run the following command to update the Virtual Machine Operator custom role.
 
    ```azurecli
-   az role definition update --role-definition vm-operator-role-new.json
+   az role definition update --role-definition vm-operator-role.json
    ```
 1. Run the following command to verify the role definition is updated.
 

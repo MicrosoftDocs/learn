@@ -4,12 +4,12 @@ title: Manage custom roles
 metadata:
   title: Manage custom roles
   description: Learn about managing custom roles for access management in Azure
-  ms.date: 12/20/2019
+  ms.date: 02/07/2020
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-durationInMinutes: 10
+durationInMinutes: 7
 content: |
   [!include[](includes/4-manage-custom-roles.md)]
