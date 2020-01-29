@@ -219,5 +219,5 @@ To simplify the network configuration for application workloads, Kubernetes uses
 
 You've now created a deployment of the **ratings-api** consisting of two replicas and exposed it as an internal (ClusterIP) service.
 
-- **Deployment/ratings-api** - The API, running two replicas, which read the MongoDB connection details by mounting the `mongosecret` as an environment variable.
-- **Service/ratings-api** - The API will be exposed internally within the cluster at `ratings-api.ratingsapp.svc.cluster.local:80`.
+- **Deployment/ratings-api** - The API, running a replica, which reads the MongoDB connection details by mounting the **mongosecret** as an environment variable.
+- **Service/ratings-api** - The API will be exposed internally within the cluster at **ratings-api.ratingsapp.svc.cluster.local:80**.
