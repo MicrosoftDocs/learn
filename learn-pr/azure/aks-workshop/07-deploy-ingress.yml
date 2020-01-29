@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.aks-workshop.07-deploy-ingress
+metadata:
+  title: Deploy an Ingress for the frontend
+  description: Deploy an Ingress for the frontend
+  ms.date: 01/30/2020
+  author: sabbour
+  ms.author: asabbour
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Deploy an Ingress for the frontend
+durationInMinutes: 20
+content: |
+  [!include[](includes/07-deploy-ingress.md)]
