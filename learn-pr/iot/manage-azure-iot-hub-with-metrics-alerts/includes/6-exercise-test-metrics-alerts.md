@@ -22,4 +22,4 @@ In this penultimate unit, we test that all your good work so far functions as it
 
 1. Close the device app. You should get a second email to this effect.
 
-Testing the alert system did not take long! Let's summarize whet we've achieved in this module, and finish with a knowledge check.
+Testing the alert system didn't take long! Let's summarize whet we've achieved in this module, and finish with a knowledge check.

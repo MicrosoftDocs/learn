@@ -56,7 +56,7 @@ The main activity of this unit is creating two different types of alerts: an ema
 
     [![Screenshot showing how to set the number of connected devices as the signal logic](../media/metrics-alerts-email-metric.png)](../media/metrics-alerts-email-metric.png#lightbox)
 
-1. In the **Configure signal logic** page, locate the **Operator** entry, and change it to **Greater than or equal to**. Change the **Aggregation type** to **Minimum**, and the **Threshold value** to **1**. Change the **Aggregation granularity (Period)** entry to **1 minute**. Clearly what we are doing here is firing off an email when our single device first connects to our IoT Hub.
+1. In the **Configure signal logic** page, locate the **Operator** entry, and change it to **Greater than or equal to**. Change the **Aggregation type** to **Minimum**, and the **Threshold value** to **1**. Change the **Aggregation granularity (Period)** entry to **1 minute**. Clearly what we're doing here is firing off an email when our single device first connects to our IoT Hub.
 
 1. Click **Done**.
 

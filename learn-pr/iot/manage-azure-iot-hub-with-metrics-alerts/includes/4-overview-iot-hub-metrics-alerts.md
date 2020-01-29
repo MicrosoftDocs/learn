@@ -16,7 +16,7 @@ When adding an action group to your hub, there are eight types of action you can
 
 ### Action types
 
-The following table summarizes the eight action types. There are links to more detailed information, if needed. In this module, we are going to implement an Azure Function action, and an Email SMS/Push/Voice action.
+The following table summarizes the eight action types. There are links to more detailed information, if needed. In this module, we're going to implement an Azure Function action, and an Email SMS/Push/Voice action.
 
   | Action | Description | More info |
   | -- | -- | -- |
@@ -31,7 +31,7 @@ The following table summarizes the eight action types. There are links to more d
 
 ### Azure Functions
 
-An _Azure Function_ is a short piece of code that can be run when requested by another Azure resource. Azure Functions are typically created using a template. Which template you use depends on how the function is to be triggered. The following table shows the most common triggers.
+An _Azure Function_ is a short piece of code that can be run when requested by another Azure resource. An Azure Function is typically created using a template. Which template you use depends on how the function is to be triggered. The following table shows the most common triggers.
 
 | Template name | Description |
 | -- | -- |

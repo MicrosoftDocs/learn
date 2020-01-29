@@ -50,18 +50,18 @@ quiz:
     choices:  
     - content: 'Avg = 3.3, Min = -2, Max = 12, Sum = 33'
       isCorrect: false
-      explanation: If Sum is calculated incorrectly, then so will the average.
+      explanation: Sum and Avg are incorrect.
     - content: 'Avg = 3, Min = -2, Max = 12, Sum = 30'
       isCorrect: true
       explanation: Metrics requires some math ability!
     - content: 'Avg = 3, Min = 0, Max = 12, Sum = 30'
       isCorrect: false
-      explanation: There are values lower than zero.
+      explanation: There are some values below zero.
     - content: 'Avg = 2.5, Min = -1, Max = 6, Sum = 25'
       isCorrect: false
       explanation: All these values are wrong.
 
-  - content: 'Which if these is <i>not</i> an Action Type?'
+  - content: 'Which of these tools is <i>not</i> an Action Type?'
     choices:  
     - content: 'Automation Runbook'
       isCorrect: false
@@ -74,4 +74,4 @@ quiz:
       explanation: A Secure Webhook is an enabled action type.
     - content: 'Power BI'
       isCorrect: true
-      explanation: A Power BI account is not enabled as an action type.
+      explanation: A Power BI account isn't enabled as an action type.
