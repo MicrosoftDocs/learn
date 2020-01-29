@@ -1,6 +1,6 @@
 Only authenticated and authorized users or services should access network resources like servers and applications. It's our job to make sure that access is conditional on authentication and authorization.
 
-In this unit, we'll explore how to use network authentication to authenticate users and services in our network. We'll look at network authorization as a method to check whether a particular user or service has access to the resource.
+In this unit, we'll explore how to use network authentication to authenticate users and services in our network. We'll also look at network authorization as a method to check whether a particular user or service has access to the resource.
 
 ## Network authentication
 
@@ -8,7 +8,7 @@ We configure network authentication to verify that users are who they claim to b
 
 ### Password authentication
 
-Password authentication is the most familiar form of authentication. Our user enters a secret value, only known to them, to gain access to our network. Secure passwords need to meet criteria, like having lowercase and uppercase characters, along with numbers and symbols (such as `?` , `%`, or `$`). It's also recommended to make passwords as long as possible.
+Password authentication is the most familiar form of authentication. Our user enters a secret value, only known to them, to gain access to our network. Secure passwords need to meet criteria, like having lowercase and uppercase characters, along with numbers and symbols (such as `?` , `%`, or `$`). We also recommend that you make passwords as long as possible.
 
 ### Two-factor authentication
 
@@ -18,11 +18,11 @@ Two-factor authentication is a mechanism that allows users to verify an authenti
 
 ### Token authentication
 
-Token-based authentication is similar to two-factor authentication. However, instead of using a cell phone, which may get compromised, a company may choose to use a device purpose-built for authentication. The device can be a USB enabled device or a smart card the user uses for successful authentication. When using token-based authentication, the company should make sure the user returns the device if they no longer require access.
+Token-based authentication is similar to two-factor authentication. However, instead of using a cell phone, which may become compromised, a company may choose to use a device purpose-built for authentication. The device can be a USB enabled device or a smart card the user uses for successful authentication. When using token-based authentication, the company should make sure the user returns the device if they no longer require access.
 
 ### Biometric authentication
 
-Biometric authentication uses the user's physical attributes for authentication. These attributes are uniquely human characteristics, like fingerprints and facial or voice. However, biometric-based authentication can be costly to implement because of the specific type of scanners required to handle this information. User privacy concerns could also pose problems.
+Biometric authentication uses the user's physical attributes for authentication. These attributes are uniquely human characteristics, like fingerprints, facial features, or voice. However, biometric-based authentication can be costly to implement because of the specific type of scanners required to handle this information. User privacy concerns could also pose problems.
 
 ### Transactional authentication
 
@@ -32,7 +32,7 @@ Transactional authentication gives an additional layer of protection for our net
 
 ### Computer recognition authentication
 
-Computer recognition authentication looks at the device being used to access the network. A small piece of software is installed on the device with first-time use. This software holds a cryptographic device marker. When the user signs in, the device marker is checked to see if they're using the authorized device. Computer recognition authentication is especially useful if our users are only allowed to sign in from one single device. This method could make things difficult if users regularly switch devices.
+Computer recognition authentication looks at the device being used to access the network. A small piece of software is installed on the device with first-time use. This software holds a cryptographic device marker. When the user signs in, the device marker is checked to see if they're using the authorized device. Computer recognition authentication is especially useful if your users are only allowed to sign in from a single device. This method could make things difficult if users regularly switch devices.
 
 ### CAPTCHA
 
@@ -46,11 +46,11 @@ However, keep in mind that this method might present difficulties for vision-imp
 
 ### Single sign-on
 
-Single sign-on lets users enter their credentials once to allow authentication across multiple applications and tools. For example, a user could sign in to their mail application and automatically become authenticated across tools they use to manage network security and storage. Single sign-on saves time for our users. This method carries a risk. Single sign-on could also help an attacker gain access to several platforms, tools, and applications by successfully accessing one of them.
+Single sign-on lets users enter their credentials once to allow authentication across multiple applications and tools. For example, a user could sign in to their mail application and automatically become authenticated across tools they use to manage network security and storage. Single sign-on saves time for your users. This method carries the risk that a single sign-on could also help an attacker gain access to several platforms, tools, and applications by successfully accessing one of them.
 
 ## Authentication protocols
 
-An authentication protocol is a shared set of rules for the exchange of how information between electronic devices. Here are two of the most commonly used authentication protocols.
+An authentication protocol is a shared set of rules for how information is exchanged between electronic devices. Two of the most commonly used authentication protocols are Kerberos and Transport Layer Security/Secure Sockets Layer (TLS/SSL).
 
 ### Kerberos
 
