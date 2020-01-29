@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.student-evangelism.bash-introduction.3-bash-commands
+uid: learn.student-evangelism.bash-introduction.4-bash-commands
 title: Bash commands and operators
 metadata:
   title: Bash commands and operators
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-bash
 durationInMinutes: 10
 content: |
-  [!include[](includes/3-bash-commands.md)]
+  [!include[](includes/4-bash-commands.md)]

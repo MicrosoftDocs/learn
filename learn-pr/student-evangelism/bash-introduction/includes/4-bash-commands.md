@@ -1,13 +1,3 @@
-On your own Linux computer, you can run Bash commands locally. If you have access to Linux servers, you can remote in to them and execute Bash commands there. But nobody wants to experiment on a live production system — particularly on their first day at Northwind!
-
-In this unit, you will use Azure Cloud Shell to create a Linux virtual machine (VM) running Ubuntu in Azure. Azure Cloud Shell is a command-line interface to Azure that you access through the Azure portal] or at <https://shell.azure.com>. You don't have to install anything on your PC or laptop to use it.
-
-After creating the VM, you will remote into it so you can use it to practice Bash commands.
-
-## Create a virtual machine
-
-You'll be working in the Azure Cloud Shell on the right. Once you activate the sandbox, you'll be logged into Azure with a free subscription managed by Microsoft Learn. You don't have to log into Azure on your own, or select a subscription - this will be done for you. In addition, normally you would create a resource group to hold new resources. In this module, the Azure sandbox will create a resource group for you which will be used to execute all the commands.
-
 Every shell language has its most-used commands, just as every guitarist has certain songs she must be ready to play if invited to jam. ("House of the Rising Sun," "Sweet Child O' Mine," and "Stairway to Heaven" come to mind, among others.) Let's start building your Bash repertoire by examining the most commonly used commands.
 
 ## Bash commands

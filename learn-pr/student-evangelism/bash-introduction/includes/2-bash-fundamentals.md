@@ -6,12 +6,12 @@ The full syntax for a Bash command is:
     command [options] [arguments]
     ```
 
-Bash treats the first string it encounters as a command. The following command uses Bash's `ls` (for "list") command to display the contents of the pwd—shorthand for the current working directory:
+Bash treats the first string it encounters as a command. The following command uses Bash's `ls` (for "list") command to display the contents of the current working directory:
 
     ```bash
     ls
     ```
- 
+
 Bash commands are often accompanied by arguments. For example, you can include a path name in an `ls` command to list the contents of another directory:
 
     ```bash
@@ -140,4 +140,4 @@ If you need to use one of the wildcard characters as an ordinary character, you 
     $ ls *\**
     ```
 
-Armed with this information about Bash syntax, you're ready to start learning the key Bash commands that every sysadmin should know.
+Armed with this information about Bash syntax, you're ready to do a little exploring of Bash on your own.
