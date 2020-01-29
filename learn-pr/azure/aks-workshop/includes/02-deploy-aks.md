@@ -7,7 +7,7 @@ Azure has a managed Kubernetes service, Azure Kubernetes Service (AKS). You'll u
 
 1. Sign into the [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true) with your Azure account.
 
-1. Create a new resource group with the name **aksworkshop**. All resources created in these exercises will be deployed in this resrouce group, and will make it easier clean up these resources when you complete the module. You also need to choose a region in which you want to create the resource group, for example, **East US**. If you select a different resource group name, remember it for the rest of the exercises in this module.
+1. Create a new resource group with the name **aksworkshop**. All resources created in these exercises will be deployed in this resource group, and will make it easier clean up these resources when you complete the module. You also need to choose a region in which you want to create the resource group, for example, **East US**. If you select a different resource group name, remember it for the rest of the exercises in this module.
 
     ```azurecli
     az group create \
