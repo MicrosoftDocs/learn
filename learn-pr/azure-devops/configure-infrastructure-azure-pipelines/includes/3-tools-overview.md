@@ -304,7 +304,7 @@ On [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace?azure-
 
 * [Puppet Agent](https://azuremarketplace.microsoft.com/marketplace/apps/Puppet.puppet-agent-windows-arm?azure-portal=true), published by Puppet, is a virtual machine extension that installs the Puppet agent on your Windows VM.
 
-* [Puppet Enterprise](https://azuremarketplace.microsoft.com/marketplace/apps/puppet.puppet-enterprise?azure-portal=true), published by Puppet, enables you to automate the entire lifecycle of your infrastructure.
+* [Puppet Enterprise](https://azuremarketplace.microsoft.com/marketplace/apps/puppet.puppet-enterprise-201818), published by Puppet, enables you to automate the entire lifecycle of your infrastructure.
 
 You can also set up Puppet on a Linux or Windows VM running on Azure, or in your datacenter.
 
