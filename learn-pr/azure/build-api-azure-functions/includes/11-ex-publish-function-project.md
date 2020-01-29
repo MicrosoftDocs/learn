@@ -1,4 +1,4 @@
-Your API project is only local to your machine at the moment. In this exercise, you'll create an Azure Functions project in Azure and deploy the project from your local file system to the cloud.
+Your API is ready for prime time. Let's put it in the cloud. Azure, here we come.
 
 ## Publish the api project to Azure
 
@@ -103,4 +103,6 @@ Your API project is only local to your machine at the moment. In this exercise, 
 
 1. Return to the Product Manager application running in your browser.
 
-1. Refresh the page.
+1. Refresh the page. The application should still show the data, but this time using the API that is in production.
+
+   ![Product Manager application shown populated with data](../media/terminate-debug-process.png)

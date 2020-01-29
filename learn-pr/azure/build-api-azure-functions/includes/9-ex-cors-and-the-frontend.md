@@ -1,3 +1,7 @@
+CORS is nifty for production, but it's kind of a bummer when you're trying to build an application locally. In this exercise, you'll disable it locally so that you can fully test your application and API before you deploy it.
+
+## Allow CORS access for development
+
 1. If the Function app is running, press the "disconnect" button in the debug bar to terminate it.
 
    ![VS Code debug bar with a red box outlining the disconnect button](../media/terminate-debug-process.png)
@@ -36,6 +40,8 @@
 
 1. The application loads in the data from the API.
 
+   ![Product Manager application shown populated with data](../media/terminate-debug-process.png)
+
 1. Try creating, updating and deleting products to ensure that all endpoints work.
 
-In this exercise, you allowed CORS access for your local deveopment environment. You also connected the frontend application so that it could consume the API. The last step is to publish the API to Azure and setup security.
+That applications looks good. It looks **very** good. None of it would be possible without your brilliant API. Are you ready to take this thing to production? Tailwind Traders is on a tight deadline to ship this. Going to production in Azure has it's caveats, though. The first thing that you'll need to address is security. Wide-open API's are OK in production, but you'll need to lock them down once they go live.
