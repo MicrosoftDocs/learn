@@ -16,7 +16,7 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: "Mechanical vibration is normally measured as an acceleration (m/s<sup>2</sup>), but it's sometimes measured in what?"
+  - content: "Mechanical vibration is normally measured as an acceleration (m/s<sup>2</sup>). But it's sometimes measured in what?"
     choices:  
     - content: 'bushels'
       isCorrect: false
@@ -36,12 +36,12 @@ quiz:
     - content: 'A collection of A-type individuals'
       isCorrect: false
       explanation: Not in the context of IoT Hub!
-    - content: 'A collection of actions of the same type, such as one of Webhooks, Azure Functions, or Automation Runbooks?'
+    - content: 'A collection of actions of the same type. Such as a group of Webhooks, Azure Functions, or Automation Runbooks?'
       isCorrect: false
       explanation: Action groups aren't limited to actions of the same type.
-    - content: 'A collection of actions, not necessarily of the same type, such as a mix of Webhooks, Azure Functions, or Automation Runbooks'
+    - content: 'A collection of actions, not necessarily of the same type. Such as a mix of Webhooks, Azure Functions, or Automation Runbooks'
       isCorrect: true
-      explanation: There are limits to the number of each type of action in any one action group, but all available actions can form part of that group.
+      explanation: There are limits to the number of each type of action in any one action group. But all available actions can form part of that group.
     - content: 'A collection of metrics, alerts, diagnostics, and logs'
       isCorrect: false
       explanation: There's no formal collection of these features.
@@ -76,7 +76,7 @@ quiz:
       isCorrect: false
       explanation: There's no such metric.
 
-  - content: 'When configuring an action, a developer has set the metric to <b>Total device data usage</b>, the <b>Operator</b> to <b>Greater than</b>, the <b>Aggregation type</b> to <b>Total</b>, and the <b>Threshold value</b> to 2000. The <b>Aggregation granularity period</b> is 5 minutes, and the <b>Frequency of evaluation</b> is <b>Every 1 Minute</b>. When will this action trigger?'
+  - content: 'When configuring an action, a developer has set the metric to <b>Total device data usage</b>. <b>Operator</b> is set to <b>Greater than</b>, <b>Aggregation type</b> to <b>Total</b>, and <b>Threshold value</b> to 2000. The <b>Aggregation granularity period</b> is 5 minutes, and the <b>Frequency of evaluation</b> is <b>Every 1 Minute</b>. When will this action trigger?'
     choices:  
     - content: 'Every one minute the action will test to see if the total data usage for the past 5 minutes exceeds 2000 bytes. If so, the action is triggered.'
       isCorrect: true
