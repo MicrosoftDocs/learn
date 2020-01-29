@@ -75,3 +75,18 @@ quiz:
     - content: 'Power BI'
       isCorrect: true
       explanation: A Power BI account isn't enabled as an action type.
+      
+  - content: 'What is the status sequence that triggered alerts go through, on the Azure IoT Hub dashboard?'
+    choices:  
+    - content: 'Open, In-progress, Closed'
+      isCorrect: false
+      explanation: Two of these terms aren't used.
+    - content: 'New, Closed'
+      isCorrect: false
+      explanation: There are three status columns in the dashboard.
+    - content: 'New, Acknowledged, Closed'
+      isCorrect: true
+      explanation: The status of an alert is changed by the operator.
+    - content: 'Acknowledged, New, Closed'
+      isCorrect: false
+      explanation: The order is incorrect.

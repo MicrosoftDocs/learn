@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Create IoT Hub metrics and alerts
-durationInMinutes: 3
+durationInMinutes: 6
 content: |
   [!include[](includes/4-overview-iot-hub-metrics-alerts.md)]
 quiz:
