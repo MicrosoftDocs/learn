@@ -1,5 +1,3 @@
-# What are Azure Synapse Analytics
-
 **Azure Synapse Analytics** provides a unified environment by combining the enterprise data warehouse of SQL, the Big Data analytics capabilities of Spark, and data integration technologies to ease the movement of data between both, and from external data sources. Using Azure Synapse Analytics, you are able to ingest, prepare, manage, and serve data for immediate BI and machine learning needs more easily.
 
 Using SQL Analytics and SQL Pools in Azure Synapse Analytics, you will be able to work with modern data warehouse use cases to create database and tables, load data using PolyBase and query a data warehouse using the Massively Parallel Processing architecture. In fact, you can use any existing code that you have created for Azure SQL Data Warehouse with Azure Synapse Analytics seamlessly.
@@ -27,7 +25,7 @@ Azure Synapse Analytics is a key component required for creating end-to-end rela
 
 This is made possible due to the decoupling of computation and storage using the Massively Parallel Processing architecture.
 
-In future releases, Azure Synapse Analytics will be able to provide the following additional services, including:
+In planned future releases, Azure Synapse Analytics will be able to provide the following additional services, including:
 
 - Tight integration with **Apache Spark**
 - **Data integration** capabilities to make it easier to ingest and process data

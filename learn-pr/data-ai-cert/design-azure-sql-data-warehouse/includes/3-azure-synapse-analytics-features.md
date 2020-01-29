@@ -1,5 +1,3 @@
-# Azure Synapse Analytics features
-
 As well as the Massively Parallel Processing architecture at limitless scale, there are additional features of SQL Analytics that can be beneficial in Modern Data Warehousing use cases, including:
 
 ## Workload Management
