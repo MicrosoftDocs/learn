@@ -4,22 +4,22 @@ In this unit, we'll get an overview of network security and some of the differen
 
 ## Overview of network security
 
-We need robust security to diagnose and prevent suspicious events, attacks, and weaknesses in our network. There are many reasons why security-related issues arise and several ways we can deal with them. There exist different types of network security strategies that we can use to help deal with these issues.
+We need robust security to diagnose and prevent suspicious events, attacks, and weaknesses in our network. There are many reasons why security-related issues arise and several ways we can deal with them. Here we'll explore the different types of network security strategies that we can employ to deal with these issues.
 
 ### Access control
 
-We use access control to scrutinize every user and client to judge whether they have permission to access our network or its resources. Access control is implemented by configuring security policies that ensure the user has the right level of permissions assigned to do specific actions on our network. For example, we might want to deny read access for some resources when the user is connecting from outside our on-premises location.
+We use access control to scrutinize every user and client to determine whether they have permission to access our network or its resources. Access control is implemented by configuring security policies that ensure the user has the right level of permissions assigned to do specific actions on our network. For example, we might want to deny read access for some resources when the user is connecting from outside our on-premises location.
 
-### Anti-malware tools
+### Antimalware tools
 
-Anti-malware tools protect our network from malicious software (malware). Malware comes in different forms, including:
+Antimalware tools protect our network from malicious software (malware). Malware comes in different forms, including:
 
 - Ransomware
 - Viruses
 - Spyware
 - Trojans
 
-We use anti-malware and antivirus tools to monitor and remedy malware. These tools can detect anomalies in our files, taking actions to remove malicious pieces of code, and repairing affected resources and devices on our network.
+We use antimalware and antivirus tools to monitor and remedy malware. These tools can detect anomalies in our files, taking actions to remove malicious pieces of code, and repairing affected resources and devices on our network.
 
 ### Application security
 
@@ -29,7 +29,7 @@ Attackers can compromise applications whether applications are our own or owned 
 
 We use behavioral analytics tools to establish regular usage and behavior across our network and identify any suspicious changes. 
 
-For example, let's assume we detect a user office user starts accessing our network outside their standard usage patterns. Usually, the user accesses the network from one location in the United States during work hours. If their credentials are suddenly used to attempt, access from Australia at midnight, the attempt would be flagged as suspicious.
+For example, let's assume that we detect a user that starts accessing our network outside their standard usage patterns. Usually, the user accesses the network from one location in the United States during work hours. If their credentials are suddenly used to attempt, access from Australia at midnight, the attempt would be flagged as suspicious.
 
 To address this problem, we can create security policies based on these analytics.  We can deny access pending additional verification, like a secret code sent to the user's work mobile device.
 
@@ -95,7 +95,7 @@ A network firewall is a security appliance that blocks or remedy unauthorized ac
 
 A **hardware firewall** can be a standalone physical device or form part of another device on our network. Physical devices like routers, for example, already have a built-in firewall. Hardware firewalls are expensive to operate and typically found in large organizations.
 
-A **software firewall** is installed and configured on a device, like a workstation or a server. Software firewalls have flexible features and can be run on many devices more cost-effectively, compared with hardware firewalls. However, certain sophisticated breaches can more easily compromise these types of firewalls.
+A **software firewall** is installed and configured on a device, like a workstation or a server. Software firewalls have flexible features and can be run on many devices more cost-effectively than hardware firewalls. However, certain sophisticated breaches can more easily compromise these types of firewalls.
 
 ### Firewall types
 
@@ -111,19 +111,19 @@ A **proxy server firewall** controls the information that goes into and out of a
 
 ![A diagram showing the allowed traffic flow through a proxy server](../media/4-proxy-server.svg)
 
-**Stateful firewalls and next-generation firewalls**. Stateful firewalls inspect characteristics about the connections on our network. The firewall also monitors packets over time and stores a combination of this information in a state table. When a connection and packet match aren't recognized, based on the information held in the table, traffic is blocked.
+**Stateful firewalls and next-generation firewalls** inspect characteristics about the connections on our network. The firewall also monitors packets over time and stores a combination of this information in a state table. When a connection and packet match aren't recognized, based on the information held in the table, traffic is blocked.
 
 ![A diagram showing how a stateful firewall block requests](../media/4-stateful-firewall.svg)
 
-**Next-generation firewalls** do many of the same functions as stateful firewalls. But they can encompass more functions from other types of firewalls such as packet filtering, VPN support, and more. This type of firewall also investigates packets more thoroughly when compared to stateful firewalls. For example, a next-generation firewall could look at the payload for each packet and inspect it for suspicious characteristics and malware.
+**Next-generation firewalls** perform many of the same functions as stateful firewalls, but they can encompass more functions from other types of firewalls, such as packet filtering, VPN support, and more. This type of firewall also investigates packets more thoroughly when compared to stateful firewalls. For example, a next-generation firewall could look at the payload for each packet and inspect it for suspicious characteristics and malware.
 
 ### The importance of firewalls
 
 Firewalls help protect our network from the outside world. If we don't have a firewall set up:
 
-- An attacker could employ malware and take advantage of our bandwidth to use it for themselves
-- Sensitive and private information about employees and clients could be stolen
-- Our resources, devices, and the entire network could be held to ransom
+- An attacker could employ malware and take advantage of our bandwidth to use it for themselves.
+- Sensitive and private information about employees and clients could be stolen.
+- Our resources, devices, and the entire network could be held to ransom.
 
 It's important to place firewalls between our network and any outside connection. We can combine different types of firewalls to 
 achieve the most robust network security.
@@ -138,7 +138,7 @@ Azure lets us build our own networks through Azure Virtual Networks. We use **Az
 
 We can also log all the traffic flowing through our network security groups for analysis. We use Azure's Network Watcher service and enable NSG flow logs. Our logs will then be stored for use in a JSON file in a storage account.
 
-**Azure Firewall** - is a fully managed firewall we can use to protect the resources that are inside our Azure Virtual Networks. Because Azure Firewall is cloud-based, it comes with certain advantages. We won't have to worry about whether Azure Firewall can scale to the number of resources on our networks. It comes pre-configured with high availability to prevent our firewall from going down.
+**Azure Firewall** is a fully managed firewall we can use to protect the resources that are inside our Azure Virtual Networks. Because Azure Firewall is cloud-based, it comes with certain advantages. We won't have to worry about whether Azure Firewall can scale to the number of resources on our networks. It comes pre-configured with high availability to prevent our firewall from going down.
 
 ![A diagram showing how an Azure firewall blocks traffic](../media/4-azure-firewall.svg)
 
@@ -156,10 +156,10 @@ There's much we can do to improve network security on Azure. Below are a few of 
 
 Use **Azure network security appliances**, developed by Microsoft partners on the Azure Marketplace, to improve network security. This range of appliances provides a number of functions including:
 
-- Detecting anomalies on our network
-- Identifying and rectifying vulnerabilities
-- Web filtering
-- Antivirus protection
+- Detecting anomalies on our network.
+- Identifying and rectifying vulnerabilities.
+- Web filtering.
+- Antivirus protection.
 
 Configure **Azure Virtual Network Service Endpoints** so that critical Azure services we might use only connect to our Azure virtual networks, and not to the public internet. These services include:
 
@@ -172,4 +172,4 @@ Configure **Azure Virtual Network Service Endpoints** so that critical Azure ser
 
 Use **load balancing** to improve the performance and availability of our network. When we use a load balancer, we distribute network traffic across the machines in our network. For example, if we have a couple of web servers that look after a website as part of our network, we can configure a load balancer to distribute the traffic between them. This way, we improve the performance and availability of the website.
 
-Use **Azure DDoS protection**. A Distributed Denial Of Service (DDoS) attack overloads resources or services across our network so that they become unusable or inaccessible. Azure provides automatic traffic monitoring and mitigating for DDoS attacks through its protection service. We can interact with the service and enable additional features, like having access to DDoS experts, by upgrading to the standard tier.
+A Distributed Denial Of Service (DDoS) attack overloads resources or services across our network so that they become unusable or inaccessible. **Azure DDoS protection** provides automatic traffic monitoring and mitigating for DDoS attacks through its protection service. We can interact with the service and enable additional features, like having access to DDoS experts, by upgrading to the standard tier.
