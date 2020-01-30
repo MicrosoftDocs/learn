@@ -107,7 +107,7 @@ Firewalls can perform several different functions across our network.
 
 **Circuit-level firewalls** check whether TCP and DUP connections across our network are valid before data is exchanged. For example, this type of firewall might first check whether the source and destination addresses, the user, the time, and date meet certain defined rules. When these checks pass and a session starts, data is exchanged between parties without further scrutiny.
 
-A **proxy server firewall** controls the information that goes into and out of a network. Firewall proxy servers provide safety and security by providing internet access to all devices on a network. This ability means the server can monitor, filter, and cache data requests to and from the network.
+**Proxy server firewalls** control the information that goes into and out of a network. Firewall proxy servers provide safety and security by providing internet access to all devices on a network. This ability means the server can monitor, filter, and cache data requests to and from the network.
 
 ![A diagram showing the allowed traffic flow through a proxy server](../media/4-proxy-server.svg)
 
@@ -163,10 +163,10 @@ Use **Azure network security appliances**, developed by Microsoft partners on th
 
 Configure **Azure Virtual Network Service Endpoints** so that critical Azure services we might use only connect to our Azure virtual networks, and not to the public internet. These services include:
 
-- Azure SQL Database
-- Azure Storage
-- Azure App Service
-- Azure Key Vault
+- Azure SQL Database.
+- Azure Storage.
+- Azure App Service.
+- Azure Key Vault.
 
 **Disable SSH/RDP** access whenever possible. While these protocols are used to manage our virtual machines from a remote location, attackers could attempt brute-force attacks if no proper protections are in place. Instead, create a point-to-site VPN connection first, before enabling SSH/RDP for remote management.
 
