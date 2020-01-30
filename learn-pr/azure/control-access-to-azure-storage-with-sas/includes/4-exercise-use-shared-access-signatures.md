@@ -257,3 +257,5 @@ In this exercise, you'll create a storage account and upload some example patien
 
     > [!NOTE]
     > To see this error, you need to use a new browser window that won't have cached the image.
+
+1. In the cloud shell quit the web app with <kbd>CTRL</kbd>+<kbd>C</kbd>.
