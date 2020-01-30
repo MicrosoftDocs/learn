@@ -32,9 +32,9 @@ Servers and server software expose various services and functions to network cli
 
 There are a number of client-server models, and each are dependent on the way the client and server software communicates and the server shares data and resources with clients:
 
-- **request-response**. In this model, the client sends a request to the server, which carries out an activity, and sends back a response. The response will either be the result of a request, or an acknowledgment.
+- **Request-response**. In this model, the client sends a request to the server, which carries out an activity, and sends back a response. The response will either be the result of a request, or an acknowledgment.
 - **Peer-to-peer (P2P)**. In this model, every network device attached to the network is both a client and a server. Each client can request services (for example files) from any other device on the network and vice-versa. P2P is an unstructured network suited for ad-hoc usage.
-- **publish-subscribe**. This model is a messaging pattern, where clients subscribe to a service on the server. When a server receives a new message, it sends a response to each client that has subscribed. An RSS feed is a typical publish-subscribe type client-server, where the user subscribes to the RSS feed, and when new items appear, they're automatically notified.
+- **Publish-subscribe**. This model is a messaging pattern, where clients subscribe to a service on the server. When a server receives a new message, it sends a response to each client that has subscribed. An RSS feed is a typical publish-subscribe type client-server, where the user subscribes to the RSS feed, and when new items appear, they're automatically notified.
 
 ### Server types
 
@@ -84,4 +84,4 @@ Azure has several tools that can help with the configuration and management of c
 
 - **Azure Resource Manager**. This is a management service that provides a means to organize and secure your organization's assets and resources. It uses declarative templates to manage your infrastructure. It uses Role-Based Access Control (RBAC) to improve the security and access to your assets and resources.
 
-- **Azure VM** - Azure Virtual Machines are the perfect mechanism for implementing a server without the need to purchase and house server hardware. Virtualization provides the flexibility to have multiple dedicated servers all within a cloud environment. Azure VMs will work with both the cloud and your on-premises network. They are scalable, and will dynamically adapt to meet your organization's needs as you grow.
+- **Azure VM**. Azure Virtual Machines are the perfect mechanism for implementing a server without the need to purchase and house server hardware. Virtualization provides the flexibility to have multiple dedicated servers all within a cloud environment. Azure VMs will work with both the cloud and your on-premises network. They are scalable, and will dynamically adapt to meet your organization's needs as you grow.
