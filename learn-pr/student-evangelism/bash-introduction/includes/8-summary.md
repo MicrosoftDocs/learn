@@ -5,9 +5,9 @@ In this module, you learned the basics of using Bash. Among other things, you:
 - Learned key Bash commands, such as `ls`, `cat`, and `ps`.
 - Learned how to use I/O operators in Bash commands to redirect input and output.
 - Learned how to find and terminate rogue processes.
-- Learned how to use Bash to filter output in Cloud Shell.
+- Learned how to use Bash to filter output from another CLI tool.
 
-But there is much more you can do with Bash! We've gotten comfortable using Bash as a way to interact with our shell, but you can use the commands you've learned (and many more) to use Bash for full-fledged programming. Check out these resources for taking your Bash knowledge to the next level:  Bash is a fullIf you want to take your knowledge of Bash to the next level, here are three books you might find valuable:
+But there is much more you can do with Bash! We've gotten comfortable using Bash as a way to interact with our shell, but you can use the commands you've learned (and many more) to use Bash for full-fledged programming. Check out these resources for taking your Bash knowledge to the next level:
 
 - [Introduction to Bash from Loyola Marymount University](https://cs.lmu.edu/~ray/notes/bash/)
 - [Bash Academy](https://guide.bash.academy/)
