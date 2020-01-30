@@ -61,7 +61,9 @@ The first step to building this system is to create a custom IoT Hub.
 1. check heading capitalization (Email?) - done
 1. image line cleanup - done
 
-1. test and read, end to end
+1. test and read, end to end - done1 -failed
+1. test with sandbox
+1. verify/change choice of action group names
 1. badge artwork
 
 

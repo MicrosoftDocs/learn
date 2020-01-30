@@ -28,7 +28,7 @@ The main activity of this unit is creating two different types of alerts: an ema
 
 ## Create an alert using the metrics and email action
 
-1. In the portal page for your IoT Hub, click **Alerts**. You should see the response: **All is good! You have no alerts**.
+1. In the portal page for your IoT Hub, click **Alerts**. You should see the response: **All is good! You have no alerts**.  NOOOOOOOOOOOO
 
 1. Select **+ New alert rule**. This button will bring up the **Create rule** page.
 
@@ -38,13 +38,11 @@ The main activity of this unit is creating two different types of alerts: an ema
 
 1. For **Action group name**, enter a descriptive name, such as "Email alerts for vibration telemetry". For **Short name**, something like "EmailAlert".
 
-1. Enter your **Subscription**, and **Resource group**.
+1. Verify your **Subscription** is the sandbox **Concierge Subscription**, and select the sandbox **Resource group**.
 
 1. For the **Action group name**, enter something like "EmailActionGroup", and select the **Email/SMS/Push/Voice** for **Action Type**.
 
     [![Screenshot showing how to add an email action group](../media/metrics-alerts-email-action-group.png)](../media/metrics-alerts-email-action-group.png#lightbox)
-
-1. Click **OK**.
 
 1. For the **Email/SMS/Push/Voice** entry, click the **Email** checkbox, and enter the email address you want the alerts to go to.
 
@@ -78,7 +76,7 @@ The next rule we want to create calls an Azure Function. So, first, let's create
 
 1. Click **+ Create a resource**, and you should see **Function App** appear. If not, use the search bar to locate it. Click **Function App**.
 
-1. Enter your subscription, resource group, and type an appropriate name into **Function App name**.
+1. Verify your sandbox subscription, sandbox resource group, and type an appropriate name into **Function App name**. The name _must_ be unique.
 
 1. For **Runtime stack**, choose **.NET Core**.
 
@@ -89,7 +87,7 @@ The next rule we want to create calls an Azure Function. So, first, let's create
 
     [![Screenshot showing how to set up the basics of an Azure Function](../media/metrics-alerts-function-1.png)](../media/metrics-alerts-function-1.png#lightbox)
 
-1. You will need to choose a storage account, or create one if no options are offered. For **Operating System**, choose **Windows**, and for **Plan type**, choose **Consumption**.
+1. Select the sandbox storage account. For **Operating System**, choose **Windows**, and for **Plan type**, choose **Consumption**.
 
     [![Screenshot showing how to set up the hosting of an Azure Function](../media/metrics-alerts-function-2.png)](../media/metrics-alerts-function-2.png#lightbox)
 
@@ -134,7 +132,7 @@ Create a second alert for your IoT Hub.
 
 1. For **Action group name**, enter a descriptive name, such as "Vibration function action group". For **Short name**, something like "Vibration".
 
-1. Enter your **Subscription**, and **Resource group**.
+1. Verify your **Subscription** is the sandbox **Concierge Subscription**, and select the sandbox **Resource group**.
 
 1. For the **Action group name**, enter something like "VibrationActions", and select the **Azure Function** for **Action Type**. You should be able to locate the Azure Function you created in the previous section, **HttpTrigger1**.
 

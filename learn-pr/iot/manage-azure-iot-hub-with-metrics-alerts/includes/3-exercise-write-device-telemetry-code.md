@@ -28,9 +28,9 @@ You can select your preferred development environment (Visual Studio Code, or Vi
 
 1. Open Visual Studio, and create a new **Visual C#/Windows Desktop** project. Select **Console App (.NET Framework)**.
 
-1. Give the project a friendly name, such as "VibrationDevice".
+1. Give the project a friendly name, such as "VibrationDevice". Then, create the project.
 
-1. Under **Tools/NuGet Package Manager**, select **Manage NuGet Packages for Solution**. Install the following libraries:
+1. Under **Tools/NuGet Package Manager**, select **Manage NuGet Packages for Solution**. In the **Browse** screen, install the following libraries:
     * **Microsoft.Azure.Devices.Client**
     * **Newtonsoft.Json**
 
