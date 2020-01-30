@@ -6,7 +6,7 @@ In this unit, you install Python on your computer if it isn't already installed.
 
 To run Flask websites on your computer, both Flask and Python must be installed. In this exercise, you create a virtual Python environment that isolates the packages that you install from others on your computer. Then you install Flask and the Python SDK for the Computer Vision API in that environment.
 
-1. If Python 3.6 or later isn't installed on your computer, go to <https://www.python.org/> and install it now. You can determine whether it's installed on Windows by executing the following command in a Command Prompt window:
+1. If Python 3.6 or later isn't installed on your computer, go to [the Python website](https://www.python.org/) and install it now. You can determine whether it's installed on Windows by executing the following command in a Command Prompt window:
 
     ```bash
     python --version
@@ -40,7 +40,7 @@ To run Flask websites on your computer, both Flask and Python must be installed.
 
 1. Create a directory on your hard disk in the location of your choice. The directory will be the *project directory* and will hold all of the files that compose the Contoso Travel website. It's also where your virtual Python environment will be created.
 
-1. In a Command Prompt window or terminal, change (`cd`) to the project directory. If you're running Windows, use the following commands to create a virtual environment in the "env" subdirectory and activate the environment:
+1. In a Command Prompt window or terminal, change (`cd`) to the project directory. If you're running Windows, use the following commands to create a virtual environment in the **env** subdirectory and activate the environment:
 
     ```bash
     python -m venv env
@@ -67,7 +67,7 @@ Leave the Command Prompt window or terminal open so you can easily return to it 
 
 The Azure CLI is a command-line environment for creating and managing Azure resources. Versions are available for Windows, macOS, and Linux. In subsequent units, you'll use the Azure CLI to create various Azure resources, including an Azure App Service instance to host a website. In this exercise, you install the Azure CLI and sign in to it for the first time.
 
-1. If the Azure CLI isn't installed on your computer, go to <https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest> and install it now. You can determine whether it's installed by running an `az -v` command in a Command Prompt window or terminal. If the CLI is installed, a version number will appear in the output.
+1. If the Azure CLI isn't installed on your computer, go to [Install the Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest) and install it now. You can determine whether it's installed by running an `az -v` command in a Command Prompt window or terminal. If the CLI is installed, a version number will appear in the output.
 
 1. In a Command Prompt window or terminal, sign in to Azure by using the following command:
 

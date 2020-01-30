@@ -53,7 +53,7 @@ You can continue adding routes and functions until all the pages that your site 
 
 You typically don't want to include inline HTML in the functions that render your site's pages. Instead, you want to define those pages in HTML files.
 
-Flask contains a function named `render_template()` that looks for HTML files in a subdirectory named "templates" and renders them out to the page. The following example produces the same output as the previous example. It assumes that the directory in which **app.py** is located has a subdirectory named "templates." The subdirectory contains HTML files named **index.html**, **about.html**, and **contact.html**.
+Flask contains a function named `render_template()` that looks for HTML files in a subdirectory named **templates** and renders them out to the page. The following example produces the same output as the previous example. It assumes that the directory in which **app.py** is located has a subdirectory named **templates**. The subdirectory contains HTML files named **index.html**, **about.html**, and **contact.html**.
 
 ```python
 from flask import Flask, render_template
@@ -76,7 +76,7 @@ def contact():
     return render_template("contact.html")
 ```
 
-Why is the function named `render_template()`? In fact, it can do more than simply load static HTML files. It also allows you to pass it user-defined variables and inject their values into the page at runtime. You could, for example, place a file named **master.html** in the "templates" subdirectory and include the following markup in it:
+Why is the function named `render_template()`? In fact, it can do more than simply load static HTML files. It also allows you to pass it user-defined variables and inject their values into the page at runtime. You could, for example, place a file named **master.html** in the **templates** subdirectory and include the following markup in it:
 
 ```html
 <h1>{{ message }}</h1>
@@ -163,9 +163,9 @@ This example assumes that just one error message was flashed, but you can call `
 
 ## Static files
 
-Most websites contain images, style sheets, and other static files that don't change as the application runs. Flask looks for these files in a special subdirectory named "static."
+Most websites contain images, style sheets, and other static files that don't change as the application runs. Flask looks for these files in a special subdirectory named **static**.
 
-Let's say your site includes a style sheet named **main.css** and a banner named **banner.jpg**. You can drop these files into the "static" subdirectory and reference them in HTML this way:
+Let's say your site includes a style sheet named **main.css** and a banner named **banner.jpg**. You can drop these files into the **static** subdirectory and reference them in HTML this way:
 
 ```html
 <link rel="stylesheet" href="/static/main.css">
