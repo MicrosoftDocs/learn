@@ -18,7 +18,7 @@ abstract: |
   - Configure Azure AD in the Azure portal.
 prerequisites: | 
   - None
-iconUrl: http://via.placeholder.com/120x120
+iconUrl: /learn/achievements/intro-to-azure-ad.svg
 levels:
 - beginner
 roles:
