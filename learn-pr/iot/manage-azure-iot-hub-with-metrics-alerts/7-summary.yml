@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Summary
-durationInMinutes: 3
+durationInMinutes: 5
 content: |
   [!include[](includes/7-summary.md)]
 quiz:
@@ -30,22 +30,7 @@ quiz:
     - content: 'Cost to Data'
       isCorrect: false
       explanation: There's no such metric.
-
-  - content: 'When configuring an action, a developer has set the metric to <b>Total device data usage</b>. <ul><li><b>Operator</b> is set to <b>Greater than</b>, <li><b>Aggregation type</b> to <b>Total</b>, <li><b>Threshold value</b> to 2000, <li><b>Aggregation granularity period</b> is 5 minutes, <li><b>Frequency of evaluation</b> is <b>Every 1 Minute</b></ul> When will this action trigger?'
-    choices:  
-    - content: 'Every one minute the action will test to see if the total data usage for the past 5 minutes exceeds 2000 bytes. If so, the action is triggered.'
-      isCorrect: true
-      explanation: This answer correctly identifies the purpose of all the action settings.
-    - content: 'Every one minute the action will test to see if the total data usage for the past 5 minutes meets or exceeds 2000 bytes. If so, the action is triggered.'
-      isCorrect: false
-      explanation: The Operator used is "Greater than", not "Greater than or equal to".
-    - content: 'Every five minutes the action will test to see if the total data usage for the past one minute exceeds 2000 bytes. If so, the action is triggered.'
-      isCorrect: false
-      explanation: Time periods are confused here.
-    - content: 'Every five minutes the action will test to see if the total data usage for the past 5 minutes exceeds 2000 bytes. If so, the action is triggered.'
-      isCorrect: false
-      explanation: This answer doesn't take into account the <b>Frequency of evaluation</b> setting.
-      
+    
   - content: 'Over a period of time, a metric has the following 10 values: <b>6, 4, 5, 0, 12, -1, -2, 0, 4, 2</b>. What are the Avg, Min, Max, and Sum of these metrics?'
     choices:  
     - content: 'Avg = 3.3, Min = -2, Max = 12, Sum = 33'
@@ -90,3 +75,18 @@ quiz:
     - content: 'Acknowledged, New, Closed'
       isCorrect: false
       explanation: The order is incorrect.
+
+  - content: 'When configuring an action, a developer has set the metric to <b>Total device data usage</b>, with the following settings: <ul><li><b>Operator</b> is <b>Greater than</b> <li><b>Aggregation type</b> is <b>Total</b> <li><b>Threshold value</b> is 2000 <li><b>Aggregation granularity period</b> is 5 minutes <li><b>Frequency of evaluation</b> is <b>Every 1 Minute</b></ul> When will this action trigger?'
+    choices:  
+    - content: 'Every one minute the action will test to see if the total data usage for the past 5 minutes exceeds 2000 bytes. If so, the action is triggered.'
+      isCorrect: true
+      explanation: This answer correctly identifies the purpose of all the action settings.
+    - content: 'Every one minute the action will test to see if the total data usage for the past 5 minutes meets or exceeds 2000 bytes. If so, the action is triggered.'
+      isCorrect: false
+      explanation: The Operator used is "Greater than", not "Greater than or equal to".
+    - content: 'Every five minutes the action will test to see if the total data usage for the past one minute exceeds 2000 bytes. If so, the action is triggered.'
+      isCorrect: false
+      explanation: Time periods are confused here.
+    - content: 'Every five minutes the action will test to see if the total data usage for the past 5 minutes exceeds 2000 bytes. If so, the action is triggered.'
+      isCorrect: false
+      explanation: This answer doesn't take into account the <b>Frequency of evaluation</b> setting.
