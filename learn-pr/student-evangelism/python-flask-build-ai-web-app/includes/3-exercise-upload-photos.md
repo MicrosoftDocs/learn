@@ -1,12 +1,12 @@
-Now that you have an environment for Python and Flask prepared and have the basics of Flask under your belt, it's time to build a website. A Flask website begins with an **app.py** file and basic assets such as HTML, CSS, and images. You will start by using Git to download a set of starter files for the Contoso Travel site. Then you will enhance the site to support photo uploads.
+Now that you have an environment for Python and Flask prepared and have the basics of Flask under your belt, it's time to build a website. A Flask website begins with an **app.py** file and basic assets such as HTML, CSS, and images. You start by using Git to download a set of starter files for the Contoso Travel site. Then you enhance the site to support photo uploads.
 
-Resources that are used in this exercise are located in a Git code samples repository: <https://github.com/MicrosoftDocs/mslearn-build-ai-web-app-with-python-and-flask>.
+Resources that are used in this exercise are located in a Git repository for code samples: <https://github.com/MicrosoftDocs/mslearn-build-ai-web-app-with-python-and-flask>.
 
 ## Create a site that supports photo uploads
 
 1. If Git isn't installed on your computer, go to the [Git website](https://git-scm.com/) and install it now. Versions are available for Windows, macOS, and Linux.
 
-1. In a Command Prompt window or terminal, `cd` to the project directory you created in earlier in the module. Then use the following command to clone the GitHub repo containing the starter files for the website:
+1. In a Command Prompt window or terminal, change (`cd`) to the project directory that you created in earlier in the module. Then use the following command to clone the GitHub repo that contains the starter files for the website:
 
     ```bash
     git clone https://github.com/MicrosoftDocs/mslearn-build-ai-web-app-with-python-and-flask.git

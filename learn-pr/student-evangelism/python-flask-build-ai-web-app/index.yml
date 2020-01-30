@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.student-evangelism.python-flask-build-ai-web-app
 metadata:
-  title: Build an AI web app with Python and Flask
+  title: Build an AI web app by using Python and Flask
   description: Use Python, Flask, and Azure Cognitive Services to build a web app that incorporates AI
   ms.date: 01/31/2020
   author: GeekTrainer
   ms.author: chrhar
   ms.topic: interactive-tutorial
   ms.prod: learning-python
-title: Build an AI web app with Python and Flask
+title: Build an AI web app by using Python and Flask
 summary: Use Python, Flask, and Azure Cognitive Services to build a web app that incorporates AI
 abstract: | 
   In this module, you will:
