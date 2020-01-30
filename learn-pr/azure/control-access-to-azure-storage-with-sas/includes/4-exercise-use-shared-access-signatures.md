@@ -11,8 +11,10 @@ In this exercise, you'll create a storage account and upload some example patien
 1. Using the cloud shell, create a storage account for patient images.
 
     ```azurecli
+    export STORAGENAME=medicalrecords$RANDOM
+
     az storage account create \
-        --name medicalrecords \
+        --name $STORAGENAME \
         --access-tier hot \
         --kind StorageV2 \
         --resource-group <rgn>[sandbox Resource Group]</rgn>
@@ -23,7 +25,7 @@ In this exercise, you'll create a storage account and upload some example patien
     ```azurecli
     az storage container create \
         --name patient-images \
-        --account-name medicalrecords \
+        --account-name $STORAGENAME \
         --public-access off
     ```
 
@@ -39,7 +41,7 @@ In this exercise, you'll create a storage account and upload some example patien
     az storage blob upload-batch \
         --source sas \
         --destination patient-images \
-        --account-name medicalrecords \
+        --account-name $STORAGENAME \
         --pattern *.jpg
     ```
 
@@ -48,14 +50,14 @@ In this exercise, you'll create a storage account and upload some example patien
 1. First you need to copy the connection string to your storage account.
 
     ```azurecli
-    az storage account show-connection-string --name medicalrecords
+    az storage account show-connection-string --name $STORAGENAME
     ```
 
     You should see results in this format:
 
     ```json
     {
-      "connectionString": "DefaultEndpointsProtocol=https;EndpointSuffix=core.windows.net;AccountName=medicalrecords;AccountKey=UGLNuJWUBtodz+VbhhFcMwkzDpX49Wf7FxtuQDTOHhH+LpCtSQ2LBP0Ju8TQby5CeOt7DMYBgH45SX9yFwqPvA=="
+      "connectionString": "DefaultEndpointsProtocol=https;EndpointSuffix=core.windows.net;AccountName=medicalrecords3215;AccountKey=UGLNuJWUBtodz+VbhhFcMwkzDpX49Wf7FxtuQDTOHhH+LpCtSQ2LBP0Ju8TQby5CeOt7DMYBgH45SX9yFwqPvA=="
     }
     ```
 
@@ -68,6 +70,8 @@ In this exercise, you'll create a storage account and upload some example patien
     ```
 
 1. In the code editor, replace the ConnectionString value **"[connection string]"** with the string you copied above.
+
+1. Change the AccountName to the randomly generated name.
 
 1. In the editor, copy the string after the **AccountKey=** parameter up to the **;** in the connection string.
 
@@ -84,9 +88,9 @@ In this exercise, you'll create a storage account and upload some example patien
       },
       "AllowedHosts": "*",
       "StorageAccount": {
-        "ConnectionString": "DefaultEndpointsProtocol=https;AccountName=medicalrecords;AccountKey=UGLNuJWUBtodz+VbhhFcMwkzDpX49Wf7FxtuQDTOHhH+LpCtSQ2LBP0Ju8TQby5CeOt7DMYBgH45SX9yFwqPvA==;EndpointSuffix=core.windows.net",
+        "ConnectionString": "DefaultEndpointsProtocol=https;AccountName=medicalrecords3215;AccountKey=UGLNuJWUBtodz+VbhhFcMwkzDpX49Wf7FxtuQDTOHhH+LpCtSQ2LBP0Ju8TQby5CeOt7DMYBgH45SX9yFwqPvA==;EndpointSuffix=core.windows.net",
         "Container" : "patient-images",
-        "AccountName":"medicalrecords",
+        "AccountName":"medicalrecords3215",
         "AccountKey":"UGLNuJWUBtodz+VbhhFcMwkzDpX49Wf7FxtuQDTOHhH+LpCtSQ2LBP0Ju8TQby5CeOt7DMYBgH45SX9yFwqPvA=="
       }  
     }
