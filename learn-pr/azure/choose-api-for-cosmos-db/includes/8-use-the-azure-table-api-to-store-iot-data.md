@@ -6,7 +6,7 @@ The IoT data consists of key-value pairs with no relationship information, and t
 
 ## Recommended API: Azure Table
 
-The best practice is to use Core (SQL) for new projects, as it has more features that the Azure Table API. However, to reduce downtime during your migration to Azure Cosmos DB, you might want to consider using the Table API for now, and switch to Core (SQL) sometime in the near future.
+The best practice is to use Core (SQL) for new projects, as it has more features than the Azure Table API. However, to reduce downtime during your migration to Azure Cosmos DB, you might want to consider using the Table API for now, and switch to Core (SQL) sometime in the near future.
 
 ## Why not any of the other APIs?
 
