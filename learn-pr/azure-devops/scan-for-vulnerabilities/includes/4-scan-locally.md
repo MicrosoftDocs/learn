@@ -9,7 +9,7 @@ Let's set up a project on SonarCloud. You need to save some information, such as
 
 ### Sign in with GitHub
 
-1. From a browser tab, go to [SonarCloud](https://sonarcloud.io/?azure-portal=true) and sign in. 
+1. From a browser tab, go to [SonarCloud](https://sonarcloud.io/?azure-portal=true) and sign in using your GitHub account. 
 1. In the upper corner, select **+** and then select **Analyze new project**.
 1. If your organization is not filled in automatically, select **Import another organization**.
     * Select **Choose an organization on GitHub**.
@@ -230,6 +230,7 @@ The SonarCloud scanner runs Java code during the scanning process. So, you start
 
 Here you return to the SonarCloud portal and review the results of your scan.
 
+1. Wait for the scan to finish.
 1. From a web browser, go back to your SonarCloud project.
 
     If you closed your browser tab, go to [SonarCloud](https://sonarcloud.io/?azure-portal=true), sign in, and then select your project.
