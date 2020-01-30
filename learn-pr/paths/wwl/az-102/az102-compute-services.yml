@@ -42,4 +42,4 @@ modules:
 - learn.azure.protect-vm-settings-with-dsc
 - learn.azure.monitor-azure-vm-using-diagnostic-data
 trophy:
-  uid: learn.cert.administer-infrastructure-resources-in-azure.trophy
+  uid: learn.cert.administer-compute-resources-in-azure.trophy
