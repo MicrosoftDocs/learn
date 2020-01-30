@@ -9,7 +9,7 @@ You're building an API so you're going to need flexibility in how you query the 
 
 ### Cosmos DB SQL SDK
 
-First, you'll need the SDK. Your code won't work as well without it as it will with it. The Cosmos DB SQL JavaScript SDK is called `@azure/cosmos`. It is installed from npm.
+First, you'll need the SDK. Your code won't work as well without it as it will with it. The Cosmos DB SQL JavaScript SDK is called `@azure/cosmos`. It's installed from npm.
 
 ```bash
 npm install @azure/cosmos
@@ -56,7 +56,7 @@ const container = database.container("products");
 
 ### Reading data
 
-Call the `readAll` method to read every item. This returns an "iterator", which can move move through the objects and return them by calling `fetchAll`.
+Call the `readAll` method to read every item. This returns an "iterator", which can move through the objects and return them by calling `fetchAll`.
 
 ```typescript
 let iterator = container.items.readAll();
@@ -84,7 +84,7 @@ const { resource } = container.items.create(product);
 
 ### Update an item
 
-In order to update or delete an item, you need to get a reference to the item first. You do that by passing in the item id, and the value of the partition key of the item. In this Learn Module, our collection has a parameter key on the brand name (/brand/name).
+To update or delete an item, you need to get a reference to the item first. You do that by passing in the item id, and the value of the partition key. In this Learn Module, the collection has a parameter key on the brand name; "/brand/name".
 
 The `replace` method replaces an item completely with the item passed in. The "resource" object on the response from Cosmos DB contains a reference to the new object value in the database.
 
@@ -118,4 +118,4 @@ const product = {
 await container.items.delete(product.id, product.brand.name);
 ```
 
-You now know how to do pretty much anything with data in Cosmos DB. OK, maybe not everything, but defintely enough to finish out this Products API. This is one productive day you're having. If only Tailwind Traders had 10 other developers just like you.
+You now know how to do pretty much anything with data in Cosmos DB. OK, maybe not everything, but definitely enough to finish out this Products API. This is one productive day you're having. If only Tailwind Traders had 10 other developers just like you.

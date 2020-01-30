@@ -1,4 +1,4 @@
-You're a new developer at Tailwind Traders, so before you can start, you'll need to get your development envioronment configured. Don't worry, Tailwind Traders has made the onboarding process pretty easy. Most of it is scripted. There are just a few small steps you need to follow to get up and running.
+You're a new developer at Tailwind Traders. Before you can start, you'll need to get your development environment configured. Don't worry, Tailwind Traders has made the onboarding process easy. There are just a few small steps you need to follow to get up and running.
 
 ## Create the database
 
@@ -28,7 +28,7 @@ You're a new developer at Tailwind Traders, so before you can start, you'll need
 
 1. Type "select subscription".
 
-1. Chose "Azure: Select Subscriptions".
+1. Choose "Azure: Select Subscriptions".
 
 1. Select "Concierge Subscription" by checking the box next to it.
 
@@ -40,21 +40,19 @@ You're a new developer at Tailwind Traders, so before you can start, you'll need
 
 1. Type "Cloud Shell" and select "Azure: Open Bash in Cloud Shell"
 
-   This will open an integrated terminal instance in VS Code that is attached to the Azure Cloud Shell.
-
    ![The cloud shell inside of a VS Code terminal instance](../media/vs-code-cloud-shell.png)
 
-1. Copy the following line and paste it into the Cloud Shell inside of VS Code
+1. Copy the following line and paste it into the Cloud Shell terminal instance in VS Code
 
    ```bash
    git clone https://github.com/burkeholland/tailwind-products && cd tailwind-products && ./CREATE_DATABASE.sh
    ```
 
-   This will create a new Cosmos DB account, database, and collection populated with product data. This process can take up to 15 minutes. Feel free to continue with this Learn Module, but be sure to keep the terminal instance open until it says that the process is complete.
+   This will create a new Cosmos DB account, database, and collection populated with product data. This process can take up to 15 minutes. Feel free to continue with the Learn Module. Just be sure to keep the terminal instance open until the process is complete.
 
 ## Clone the existing project
 
-Fortunately, someone has already written the frontend part of the application. They have creatively named it, "Product Manager". All you need to do is create an API for it. First, though, you need to pull down and setup the Product Manager project so that you can run and test everything locally.
+Fortunately, someone has already written the frontend part of the application. They have creatively named it, "Product Manager". All you need to do is create an API for it. First, though, you need to pull down and set up the Product Manager project.
 
 1. Open the Command Palette in VS Code by pressing <kbd>F1</kbd>.
 
@@ -96,8 +94,8 @@ There will be two projects in VS Code: "frontend" and "api". The "frontend" proj
 
 1. Click on that url in the terminal to open the application in the browser.
 
-1. The application will load, but there will be no data present. This is because we have not yet created the API for this application.
+1. The application will load, but there will be no data present. This is because you have not yet created the API for this application.
 
    ![VS Code terminal displaying url and port of running application](../media/products-manager-start.png)
 
-Excellent! You have successfully configured your environment to be a productive developer at Tailwind Traders. You've got VS Code connected to Azure and the frontend project is running locally on your machine. That means that it's time to create the Azure Functions project which will serve as the API for the Product Manager application.
+Excellent! You've successfully configured your environment to be a productive developer at Tailwind Traders. You've got VS Code connected to Azure and the frontend project is running locally on your machine. That means that it's time to create the Azure Functions project that will serve as the API for the Product Manager application.

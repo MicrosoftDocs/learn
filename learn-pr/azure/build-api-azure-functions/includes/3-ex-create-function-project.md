@@ -1,6 +1,6 @@
-Tailwind Traders had planned on building a traditional API, but you deftly pointed out that Serverless is perfect for API's, and that you could build this one without disturbing their existing codebase. You're already doing so well. You have a long career in online harware sales in your future.
+Tailwind Traders had planned on building a traditional API, but you deftly pointed out that Serverless is perfect for APIs. It can also be done without disturbing their existing codebase. You're already doing so well. You have a long career in online hardware sales in your future.
 
-It's time to deliver on those lofty buzzwords. Now you need to create a new project in Azure Functions that will be the HTTP API for the "Product Manager" application. That means creating the Azure Functions project, complete with all of the endpoints that the Product Manager application is going to need to be able to create, read, update and delete products.
+It's time to deliver on those lofty buzzwords. Now you need to create a new project in Azure Functions that will be the HTTP API for the "Product Manager" application. That means creating the Azure Functions project, complete with all of the endpoints that the Product Manager application is going to need to be able to create, read, update, and delete products.
 
 ## Create a new Azure Functions project
 
@@ -23,7 +23,7 @@ It's time to deliver on those lofty buzzwords. Now you need to create a new proj
 
 The "api" folder in VS Code will now contain a new Azure Functions project along with a new function called "GetProducts".
 
-## Create the Create, Update and Delete functions
+## Create the Create, Update, and Delete functions
 
 ### Create the CreateProduct function
 

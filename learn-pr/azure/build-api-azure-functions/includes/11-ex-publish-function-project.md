@@ -25,7 +25,7 @@ Your API is ready for prime time. Let's put it in the cloud. Azure, here we come
    > [!IMPORTANT]
    > There are two "Create Function App in Azure" options. It's important that you choose the option that is marked "(Advanced)".
 
-1. When prompted, select "Upload Settings". This will upload the settings from the `local.settings.json` file.
+1. When prompted, select "Upload Settings".
 
    ![VS Code notification asking if you want to upload settings](../media/upload-settings.png)
 
@@ -45,7 +45,7 @@ Your API is ready for prime time. Let's put it in the cloud. Azure, here we come
 
 1. Select "Azure Functions: Open in Portal"
 
-1. Select the "tailwind-traders-xxxx" function app that you just created.
+1. Select the "tailwind-traders-xxxx" function app that you created.
 
    This will open the Function App in your browser.
 
@@ -79,7 +79,7 @@ Your API is ready for prime time. Let's put it in the cloud. Azure, here we come
 
 1. Press <kbd>Cmd</kbd>/<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>I</kbd> to open the browser developer tools.
 
-1. Notice that there is a "blocked by CORS policy" message.
+1. Notice there's a "blocked by CORS policy" message.
 
    ![Browser developer tools showing a "blocked by CORS" error message in the console](../media/blocked-by-cors.png)
 
@@ -95,7 +95,7 @@ Your API is ready for prime time. Let's put it in the cloud. Azure, here we come
 
    ![Azure portal with red box outlining the "Platform features" tab](../media/cors-option.png)
 
-1. Add `http://localhost:5000` to the list list of allowed URL's.
+1. Add `http://localhost:5000` to the list of allowed URLs.
 
 1. Click "Save" at the top.
 

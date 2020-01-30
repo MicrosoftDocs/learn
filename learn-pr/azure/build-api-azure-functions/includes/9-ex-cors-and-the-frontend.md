@@ -1,4 +1,4 @@
-CORS is nifty for production, but it's kind of a bummer when you're trying to build an application locally. In this exercise, you'll disable it locally so that you can fully test your application and API before you deploy it.
+CORS is nifty for production, but it's a bummer when you're trying to build an application locally. In this exercise, you'll disable it in development so that you can fully test your application and API.
 
 ## Allow CORS access for development
 
@@ -8,7 +8,7 @@ CORS is nifty for production, but it's kind of a bummer when you're trying to bu
 
 1. Open the `api/local.settings.json` file.
 
-1. Add a setting after the "Values" block which specifies the "Host" and "CORS" properties.
+1. Add a setting after the "Values" block that specifies the "Host" and "CORS" properties.
 
 ```json
 {
@@ -42,6 +42,6 @@ CORS is nifty for production, but it's kind of a bummer when you're trying to bu
 
    ![Product Manager application shown populated with data](../media/terminate-debug-process.png)
 
-1. Try creating, updating and deleting products to ensure that all endpoints work.
+1. Try creating, updating, and deleting products to ensure that all endpoints work.
 
-That applications looks good. It looks **very** good. None of it would be possible without your brilliant API. Are you ready to take this thing to production? Tailwind Traders is on a tight deadline to ship this. Going to production in Azure has it's caveats, though. The first thing that you'll need to address is security. Wide-open API's are OK in production, but you'll need to lock them down once they go live.
+That application looks good. It looks **very** good. None of it would be possible without your brilliant API. Are you ready to take this thing to production? Tailwind Traders is on a tight deadline to ship this. Going to production in Azure has its caveats, though. The first thing that you'll need to address is security. Wide-open APIs are OK in production, but you'll need to lock them down once they go live.

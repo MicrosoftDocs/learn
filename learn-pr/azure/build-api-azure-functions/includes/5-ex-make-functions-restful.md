@@ -1,4 +1,4 @@
-The Products Manager API is about to get serious style upgrade curtosey of you - fake Tailwind Traders developer extroidinaire. In this exercise, you'll turn all of the functions you created earlier into RESTful ones by modifying their configuration files.
+The Products Manager API is about to get serious style upgrade courtesy of you - fake Tailwind Traders developer extroidinaire. In this exercise, you'll turn all of the functions you created earlier into RESTful ones by modifying their configuration files.
 
 1. Open the `api/GetProducts/function.json` file.
 
@@ -159,7 +159,7 @@ Your `function.json` file for "GetProducts" should now look like this...
 
 1. Start the Azure Functions project by pressing <kbd>F5</kbd>.
 
-1. Notice that the URL's for your function endpoints are now different.
+1. Notices that the URL's for your function endpoints are now different.
 
    ![VS Code terminal showing endpoints running on new routes](../media/restful-endpoints.png)
 
