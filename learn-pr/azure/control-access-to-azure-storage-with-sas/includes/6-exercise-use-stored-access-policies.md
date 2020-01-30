@@ -1,8 +1,8 @@
-Instead of creating SAS individually, each with their own access permissions and expiry dates, you can associate them with a stored access policy. Changing the policy  affects all the SAS associated with it.
+Instead of creating SAS individually, each with their own access permissions and expiry dates, you can associate them with a stored access policy. Changing the policy affects all the SAS associated with it.
 
-Knowing there is a better way to create and manage your companies SAS, you're going to update your new test pages to use stored access policies.
+Knowing there's a better way to create and manage your company's SAS, you're going to update your new test pages to use stored access policies.
 
-In this exercise, you'll update your web app to create SAS with stored access policies. Then you'll use Azure CLI commands to change the policies and test that the access is revoked.
+In this exercise, you'll update your web app to create SAS with stored access policies. Then you'll use Azure CLI commands to change the policies and test that access is revoked.
 
 ## Add a method to create stored access policies
 
@@ -12,7 +12,7 @@ In this exercise, you'll update your web app to create SAS with stored access po
     code ~/sas/Controllers/PatientRecordController.cs
     ```
 
-1. At the bottom of the class under the **GetBlobSas** method, write a method to create stored access policies.
+1. At the bottom of the class, under the **GetBlobSas** method, write a method to create stored access policies.
 
     ```csharp
     // Use a stored access policy for the SAS
@@ -33,13 +33,13 @@ In this exercise, you'll update your web app to create SAS with stored access po
     } 
     ```
 
-1. This method makes use of a global variable for the access policy identifier. Add this at the top of the class under the declaration for the **BlobContainerClient** variable named **_container**.
+1. This method uses a global variable for the access policy identifier. Add this variable at the top of the class under the declaration for the **BlobContainerClient** variable named **_container**.
 
     ```csharp
     private String _storedPolicyID = "patient-images-policy";
     ```
 
-1. The stored access policy is going to be used for each SAS token that is generated, so call the new method on the classes instantiation. Add a call to is at the bottom of the method.
+1. The stored access policy will be used for each SAS token that's generated, so call the new method on the class instantiation. Add a call at the bottom of the method.
 
     ```csharp
     public PatientRecordsController(ILogger<PatientRecordsController> logger, IConfiguration iconfiguration)
@@ -88,7 +88,7 @@ In this exercise, you'll update your web app to create SAS with stored access po
     }
     ```
 
-1. Save your code changes with <kbd>CTRL</kbd>+<kbd>S</kbd> and then <kbd>CTRL</kbd>+<kbd>Q</kbd>.
+1. Save your code changes with <kbd>CTRL</kbd>+<kbd>S</kbd>, and then <kbd>CTRL</kbd>+<kbd>Q</kbd>.
 
 ### Test the new code
 
@@ -99,7 +99,7 @@ In this exercise, you'll update your web app to create SAS with stored access po
     dotnet build
     ```
 
-1. The port may have been closed since completing the previous exercise. Run the `curl` command to open it again.
+1. The port might have been closed since completing the previous exercise. Run the `curl` command to open it again.
 
     ```bash
     curl -X POST http://localhost:8888/openPort/8000;
@@ -111,15 +111,15 @@ In this exercise, you'll update your web app to create SAS with stored access po
     dotnet run
     ```
 
-1. Navigate to the web apps URL, making sure it ends in **/**.
+1. Go to the web app's URL, making sure it ends in **/**.
 
 1. On the home page, select **Get all patients**.
 
-1. Copy an image file name, for example **patient-32589.jpg**.
+1. Copy an image file name; for example, **patient-32589.jpg**.
 
 1. Select the **External companies** menu link at the top of the page.
 
-1. Paste the image filename in into the **Patient image filename** field.
+1. Paste the image filename into the **Patient image filename** field.
 
 1. Select **Get Key** to populate the SAS token.
 
@@ -133,21 +133,21 @@ In this exercise, you'll update your web app to create SAS with stored access po
 
 1. In the list of resources, select the **medicalrecords** storage account.
 
-1. On the Overview page, select **Containers**. Then select **patient-images**.
+1. On the Overview page, select **Containers**, then select **patient-images**.
 
-1. On the left under **Settings**, select **Access policy**.
+1. On the left, under **Settings**, select **Access policy**.
 
 1. Notice that your web app has created a **patient-images-policy** stored access policy.
 
-1. On the right, select the **...** menu, then select **Edit** from the popup.
+1. On the right, select the **...** menu, then select **Edit** from the pop-up.
 
 1. In the Edit policy, change the **Permission** from **read** to **list**.
 
 ### Test a new SAS
 
-1. Return to your web app, on the **External companies** page create a new SAS token by selecting **Get Key**.
+1. Return to your web app then, on the **External companies** page, create a new SAS token by selecting **Get Key**.
 
-1. Select **View scan**
+1. Select **View scan**.
 
     ![Screenshot of the web app failing to view a patient image](../media/7-sas-fails.png)
 

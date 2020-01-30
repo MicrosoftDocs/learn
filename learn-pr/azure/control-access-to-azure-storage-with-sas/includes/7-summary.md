@@ -1,8 +1,8 @@
-Your company needed to control the access to images that are highly sensitive. Your application needed enhancements to enable it to integrate with other providers, and provide them with controlled authorization to the images.
+Your company needed to control access to highly sensitive images. Your application needed enhancements to enable it to integrate with other providers, and provide them with controlled authorization to the images.
 
-You made use of the security features of Azure Storage, to generate unique SAS tokens for images stored in containers. You then enhanced the flexibility and control of the SAS tokens by associating them with a stored access policy.
+You used the security features of Azure Storage to generate unique SAS tokens for images stored in containers. You then enhanced the flexibility and control of the SAS tokens by associating them with a stored access policy.
 
-Without SAS and access policies your company would have likely had to develop a custom middle tier. The costs of this development, and then maintaining the middle tier being far greater than the elegant solution you used in these exercises.
+Without SAS and access policies, your company would likely have had to develop a custom middle tier. The cost of this development, and maintaining the middle tier, would be far greater than the elegant solution you used in these exercises.
 
 ## Additional resources
 
