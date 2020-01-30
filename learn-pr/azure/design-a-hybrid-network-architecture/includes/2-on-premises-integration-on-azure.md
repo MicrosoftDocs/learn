@@ -64,9 +64,6 @@ A few of the many limitations that apply to virtual networks are listed in the f
 | Virtual network peerings per virtual network | 500 |
 | Private IP addresses per virtual network | 65,536 |
 
-> [!NOTE]
-> The limitations might have changed. For the most current virtual networking limitations, be sure to check the Microsoft Docs website.
-
 Much like the system routing table, custom routing tables also have a next hop type. But the custom routing tables offer a few more options:
 
 - **Virtual appliance**: This option is usually a virtual machine that runs a specific network application, such as a firewall.

@@ -32,7 +32,7 @@ In this instance, using a VPN would provide a better overall solution. A VPN is 
 
 ## Hybrid networking capability matrix
 
-To show what you've learned in this unit and to help you choose between the two connectivity types, we've built a capability matrix. The following table lists the key features for each method, the supported bandwidths, the resiliency model, typical use cases, the Microsoft SLA, and the cost.
+To show what you've learned in this unit and to help you choose between the two connectivity types, we've built a capability matrix. The following table lists the key features for each method, the supported bandwidths, the resiliency model, typical use cases, and associated SLAs.
 
 | Capability | VPN Gateway | ExpressRoute |
 | ---- |---|---|---|
@@ -43,4 +43,3 @@ To show what you've learned in this unit and to help you choose between the two 
 | **Connection resiliency** | Active-passive | Active-active |
 | **Use case** | Prototyping, dev, test, labs, RDC, and small production workloads | Access to all Azure services, enterprise-grade, supporting critical large-scale workloads |
 | **SLA** | 99.95-99.99% | 99.95% |
-| **Pricing** | From $26.28 per month | From $55 per month, plus circuit provider costs |

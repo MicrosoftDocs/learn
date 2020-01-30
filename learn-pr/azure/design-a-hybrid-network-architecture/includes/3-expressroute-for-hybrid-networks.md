@@ -94,4 +94,3 @@ The following list identifies a few key considerations:
 - ExpressRoute operates on a layer 3 circuit and requires a network security appliance to manage threats.
 - Monitoring the connectivity between your on-premises network and Azure must use the Azure Connectivity Toolkit.
 - To improve network security, ExpressRoute requires network security appliances between the provider's edge routers and your on-premises network.
-- ExpressRoute has some default maximum limits. To get the current limits, check the Microsoft website for Azure subscription service limits, because the limits are subject to change as Azure improves.
