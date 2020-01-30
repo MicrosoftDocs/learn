@@ -34,7 +34,7 @@ Private peering is a trusted extension of your core network in Azure with bidire
 
 ### Microsoft peering
 
-Microsoft peering provides connectivity to all Microsoft online services: Office 365, Dynamics 365, and Azure platform-as-a-service (PaaS). This model requires a public IP address, owned by you or your connectivity provider, which adheres to a set of predefined rules.
+Microsoft peering provides connectivity to all Microsoft online services: Office 365, Dynamics 365, and Azure platform as a service (PaaS). This model requires a public IP address, owned by you or your connectivity provider, which adheres to a set of predefined rules.
 
 Each circuit is assigned a globally unique identifier (GUID), or service key. This key is the only information exchanged between the three parties and is a one-to-one mapping for each circuit.
 
