@@ -31,7 +31,7 @@ quiz:
       isCorrect: true
       explanation: The use of g-forces to measure vibration is common, though isn't to ISO standards.      
 
-  - content: 'In the context of IoT Hub metrics, what is an <b>action group</b>?'
+  - content: 'In the context of IoT Hub metrics, what is an action group?'
     choices:  
     - content: 'A collection of A-type individuals'
       isCorrect: false
@@ -46,7 +46,7 @@ quiz:
       isCorrect: false
       explanation: There's no formal collection of these features.
 
-  - content: 'What are the four entries for the IoT Hub <b>Monitoring</b> menu?'
+  - content: 'What are the four entries for the IoT Hub Monitoring menu?'
     choices:  
     - content: 'Alerts, Metrics, Security Alerts, Custom Alerts'
       isCorrect: false
