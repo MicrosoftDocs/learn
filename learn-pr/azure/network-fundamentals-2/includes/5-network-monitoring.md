@@ -1,6 +1,6 @@
 Our organization has servers, applications, services, and data, all of which are crucial to delivering services and products to our customers. We need to monitor our network regularly to protect our organization's assets and resources.
 
-In this unit, we'll explore some of the different network monitoring tools available. We'll explore best practices, like how to separate our monitoring tasks and functions. We'll also look at what tools to use for alerting and monitoring on Azure.
+In this unit, we'll explore some of the different network monitoring tools available. We'll explore best practices, like how to separate our monitoring tasks and functions, and we'll also look at the tools available for alerting and monitoring on Azure.
 
 ## What is network monitoring?
 
@@ -10,7 +10,7 @@ Network monitoring is when we monitor all the components of our network, like sw
 
 Network monitoring solutions are often agent-based. An agent is a piece of software that runs on the monitored device. The agent monitors and gathers information on the device then sends information to the appropriate network monitoring solution that employed it.
 
-The agent helps gather granular data on the monitored device, such as the processes running and its hardware performance. For example, an agent could gather information on the processes running on the device, or its hardware performance. Keep in mind that an agent needs time to install and configure. The agent might also require its maintenance and update tasks that may be time-consuming if we have many agents.
+The agent helps gather granular data on the monitored device, such as the processes running and its hardware performance. For example, an agent could gather information on the processes running on the device, or its hardware performance. Keep in mind that an agent needs time to install and configure. The agent might also require maintenance and update tasks that may be time-consuming if there are many agents.
 
 ### Agentless monitoring
 
@@ -18,13 +18,13 @@ Here, an agent isn't deployed to monitor devices. The networking solution gather
 
 ### Monitoring intervals
 
-Monitoring intervals show how frequent we want to poll for information on one of our network devices.
+Monitoring intervals show how frequently we want to poll for information on one of our network devices.
 
 The interval frequency depends on what we want to monitor. For example, we'd use the shortest interval possible if we're monitoring to see if a particular device is available or not. If we're monitoring for things like memory and CPU usage, we could have intervals of a few minutes. We don't necessarily want to monitor every device at the shortest intervals possible for each metric because we'd add unnecessary load to our network.
 
 ### Protocols
 
-To monitor our network, we'll need to use a secure network management protocol that consumes minimum bandwidth. We want to keep our network secure and prevent unnecessary load on network performance.
+To monitor our network, we'll need to use a secure network management protocol that consumes minimum bandwidth. We want to keep our network secure and prevent unnecessary load on network performance. The following are some network management protocols that can be employed:
 
 - **Simple Network Management Protocol (SNMP)**
 
@@ -36,23 +36,23 @@ To monitor our network, we'll need to use a secure network management protocol t
 
 - **System Logging Protocol (Syslog)**
 
-  System Logging Protocol (Syslog) is a protocol that lets our device send event messages and is used for event logging. For example, our web server might use Syslog to log events about failed attempts to access it, or our router could log events on user activities.
+  Syslog is a protocol that lets our device send event messages and is used for event logging. For example, our web server might use Syslog to log events about failed attempts to access it, or our router could log events on user activities.
 
 ## Best practices
 
 ### Fault, configuration, accounting/administration, and performance management (FCAPS)
 
-When we manage a network, we deal with many different tasks and functions. These tasks and functions have been categorized to help us do them effectively. The categories are fault management, configuration management, accounting/administration and performance management, or FCAPS.
+When we manage a network, we deal with many different tasks and functions. These tasks and functions have been categorized to help us do them effectively. The categories are fault management, configuration management, accounting/administration and performance management, or FCAPS:
 
-**Fault management** - Fault management relates to the processes and tasks used to identify and resolve faults on the network. Dealing with issues that could cause problems later is also classified as fault management.
+- **Fault management**. Fault management relates to the processes and tasks used to identify and resolve faults on the network. Dealing with issues that could cause problems later is also classified as fault management.
 
-**Configuration management** - Configuration management includes aspects like collecting information based on changes made to the configurations of devices, physical hardware, and network changes as well as software updates.
+- **Configuration management**. Configuration management includes aspects like collecting information based on changes made to the configurations of devices, physical hardware, and network changes as well as software updates.
 
-**Accounting/administration** - Accounting applies when we're dealing with a network used in a service provider setting, and all the tasks and functions that apply. With service provider networks, usage needs to be monitored to track utilization and billing for users. If the network isn't in a service provider setting, then administration is applicable, and tasks like managing permissions and user passwords are included.
+- **Accounting/administration**. Accounting applies when we're dealing with a network used in a service provider setting, and all the tasks and functions that apply. With service provider networks, usage needs to be monitored to track utilization and billing for users. If the network isn't in a service provider setting, then administration is applicable, and tasks like managing permissions and user passwords are included.
 
-**Performance management** - Performance management covers anything that's done to manage the performance of our network. Some of the aspects include monitoring throughput, usage, improving response times, and more.
+- **Performance management**. Performance management covers anything that's done to manage the performance of our network. Some of the aspects include monitoring throughput, usage, improving response times, and more.
 
-**Security** - Security encompasses all the tasks we do to secure our network. These tasks include protecting devices, restricting access to network resources, or protecting user activity in the network.
+- **Security**. Security encompasses all the tasks we do to secure our network. These tasks include protecting devices, restricting access to network resources, or protecting user activity in the network.
 
 ### Alerting and reporting
 
