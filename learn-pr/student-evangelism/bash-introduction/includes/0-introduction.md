@@ -6,7 +6,7 @@ Let's learn the basics of Bash - the standard shell scripting language for Linux
 
 In this module, you will:
 
-- Learn how to create a Linux VM in Azure
+- Learn what shells are and what Bash is
 - Learn about the syntax of Bash commands
 - Learn about important Bash commands, such as ls, cat, and ps
 - Learn how to use I/O operators to redirect input and output

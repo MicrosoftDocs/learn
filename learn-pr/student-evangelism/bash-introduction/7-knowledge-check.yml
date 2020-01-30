@@ -20,7 +20,7 @@
         explanation: "Incorrect. You are writing to a file correctly, but `cat` is not the right command to get a list of processes."
       - content: "`cat > grep scottgu | processes.txt`"
         isCorrect: false
-        explanation: "Incorrect. `cat` is ont the right command to get a list of processes."
+        explanation: "Incorrect. `cat` is not the right command to get a list of processes."
       - content: "`ps -ef | grep scottgu > processes.txt`"
         isCorrect: true
         explanation: "Correct! The <b>ps -ef</b> command lists all running processes; the <b>grep</b> command searches for patterns in each file."
