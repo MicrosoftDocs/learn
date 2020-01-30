@@ -8,7 +8,7 @@ In this penultimate unit, we test that all your good work so far functions as it
 
 ## Test the HTTP trigger fires
 
-1. In the IoT portal, go to the **Monitoring / Alerts** page. The message should change from **All is good!**, to a table showing the status of the alerts received.
+1. In the IoT portal, go to the **Monitoring / Alerts** page. The default message should change to a table showing the status of the alerts received.
 
     [![Screenshot showing the alert summary table in the IoT Hub dashboard](../media/metrics-alerts-first-alert.png)](../media/metrics-alerts-first-alert.png#lightbox)
 

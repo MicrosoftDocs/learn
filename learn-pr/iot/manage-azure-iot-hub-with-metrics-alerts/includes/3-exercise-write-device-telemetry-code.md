@@ -15,8 +15,11 @@ You can select your preferred development environment (Visual Studio Code, or Vi
 1. Enter `dotnet restore` in the terminal. This command gives your app access to the required .NET packages.
 
 1. In the terminal, install the required libraries. Enter:
-    * **dotnet add package Microsoft.Azure.Devices.Client**
-    * **dotnet add package Newtonsoft.Json**
+
+```azurecli
+    dotnet add package Microsoft.Azure.Devices.Client
+    dotnet add package Newtonsoft.Json
+```
 
 1. From the **File** menu, open up the **Program.cs** file, and delete the default contents.
 
@@ -336,7 +339,7 @@ The following app simulates a conveyor belt, and reports vibration sensor data e
     > [!IMPORTANT]
     > Take a few minutes, and read through the comments in the code. Notice how the vibration math from the description of the scenario in the introduction has worked its way into the code. The most important section of code for learning about IoT messages, starts with the "Create two messages:" comment.
 
-1. Replace the &lt;your device connection string&gt; with the device connection string you saved off in the previous unit. No other lines of code need to be changed.
+1. Replace &lt;your device connection string&gt; with the device connection string you saved off in the previous unit. No other lines of code need to be changed.
 
 1. Save the **Program.cs** file.
 

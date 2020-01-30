@@ -28,7 +28,7 @@ The main activity of this unit is creating two different types of alerts: an ema
 
 ## Create an alert using the metrics and email action
 
-1. In the portal page for your IoT Hub, click **Alerts**. You should see the response: **All is good! You have no alerts**.  NOOOOOOOOOOOO
+1. In the portal page for your IoT Hub, click **Alerts**.
 
 1. Select **+ New alert rule**. This button will bring up the **Create rule** page.
 

@@ -26,10 +26,10 @@ Now we need to create a single device identity, the sensor monitoring the convey
 
     [![Screenshot showing the creation of an IoT Hub device identity](../media/vibrations-device-create.png)](../media/vibrations-device-create.png#lightbox)
 
-1. You should now see your device in the list of devices for the IoT Hub. Click on the device name. Copy your **Device ID**, and the **Primary Connection String** to a text file (using Notepad, or similar text editor).
+1. You should now see your device in the list of devices for the IoT Hub. Click on the device name. Copy the **Primary Connection String** to a text file (using Notepad, or similar text editor).
 
     > [!IMPORTANT]
-    > The connection string you've just copied is the _device_ connection string. There are many other connection strings. Add a note to your text file that this is the device connection string.
+    > The connection string you've just copied is the _device_ connection string. There are many other connection strings.
 
 1. Save off the text file, with a name such as "IDs.txt", for reference in the next units.
 
