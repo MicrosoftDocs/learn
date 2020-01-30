@@ -17,10 +17,10 @@
       choices:
       - content: "`cat | grep scottgu > processes.txt`"
         isCorrect: false
-        explanation: "Incorrect."
+        explanation: "Incorrect. You are writing to a file correctly, but `cat` is not the right command to get a list of processes."
       - content: "`cat > grep scottgu | processes.txt`"
         isCorrect: false
-        explanation: "Incorrect."
+        explanation: "Incorrect. `cat` is ont the right command to get a list of processes."
       - content: "`ps -ef | grep scottgu > processes.txt`"
         isCorrect: true
         explanation: "Correct! The <b>ps -ef</b> command lists all running processes; the <b>grep</b> command searches for patterns in each file."
@@ -34,18 +34,18 @@
         explanation: "Incorrect. The `rmdir` command deletes only empty directories."
       - content: "`nuke`"
         isCorrect: false
-        explanation: "Incorrect."
+        explanation: "Incorrect. `nuke` is not a Bash command."
     - content: "Which of the following commands combines the contents of <b>foo.txt</b> and <b>bar.txt</b> into a new file named <b>foobar.txt</b>?"
       choices:
       - content: "`concat foo.txt bar.txt > foobar.txt`"
         isCorrect: false
-        explanation: "Incorrect."
+        explanation: "Incorrect. `concat` is not a Bash command, but you're close!"
       - content: "`cat foo.txt bar.txt | foobar.txt`"
         isCorrect: false
-        explanation: "Incorrect."
+        explanation: "Incorrect. `|` passes data between processes. It does not write out to a file."
       - content: "`cat foo.txt bar.txt > foobar.txt`"
         isCorrect: true
-        explanation: "Correct!"        
+        explanation: "Correct! `cat` concatenates the two files given as arguments, then `>` writes that data out to a file."        
     - content: "The purpose of the `sudo` command is to:"
       choices:
       - content: "Execute a command with elevated privilege"
@@ -53,18 +53,18 @@
         explanation: "Correct! Use `sudo` to execute a command with elevated privilege."
       - content: "Execute a program and leave it running in the background"
         isCorrect: false
-        explanation: "Incorrect."
+        explanation: "Incorrect. Appending `&` to a command will leave it running in the background."
       - content: "Prevent system files from being deleted by non-administrative users"
         isCorrect: false
-        explanation: "Incorrect."
+        explanation: "Incorrect. There are different steps that must be taken to achieve that outcome."
     - content: "Which of the following statements is true regarding the command `python3 app.py &`?"
       choices:
       - content: "It runs <b>app.py</b> after creating a restore point in the system"
         isCorrect: false
-        explanation: "Incorrect."
+        explanation: "Incorrect. Recall that `&` lets a process run in the background."
       - content: "It runs <b>app.py</b> and returns immediately to the command prompt"
         isCorrect: true
         explanation: "Correct! `python3 app.py &` runs <b>app.py</b> and returns immediately to the command prompt."
       - content: "It runs <b>app.py</b>, but only if it's located in the <b>/etc</b> directory"
         isCorrect: false
-        explanation: "Incorrect."
+        explanation: "Incorrect. Recall that `&` lets a process run in the background."
