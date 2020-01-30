@@ -41,7 +41,7 @@ The next step is to create the Logic App that will run when a virtual machine ch
     | --- | --- |
     | **Name** | Enter a name |
     | **Subscription** | Concierge subscription |
-    | **Resource group** | Select **Use existing**, then <rgn>[sandbox resource group]</rgn> |
+    | **Resource group** | Select **Use existing**, then select **<rgn>[sandbox resource group]</rgn>** |
     | **Location** | Select a region near you |
     | **Log Analytics** | Off |
 
@@ -70,7 +70,7 @@ Once your logic app is created, you'll add so that triggers for Event Grid event
     | --- | --- |
     | **Subscription** | Concierge subscription |
     | **Resource group** | `Microsoft.Resources.ResourceGroups` |
-    | **Resource name** | Leave at the default value |
+    | **Resource name** | <rgn>[sandbox resource group]</rgn> |
     | **Event type item - 1** | `Microsoft.Resources.ResourceActionSuccess` |
     | **Event type item - 2** | `Microsoft.Resources.ResourceDeleteSuccess` |
     | **Event type item - 3** | `Microsoft.Resources.ResourceWriteSuccess` |
@@ -78,7 +78,7 @@ Once your logic app is created, you'll add so that triggers for Event Grid event
 
     ![Add Trigger details](../media/3-logic-app-event-grid-trigger-details.png)
 
-1. Click **Save**.
+1. Select **Save**.
 
     ![Save Trigger](../media/3-logic-app-event-grid-save.png)
 

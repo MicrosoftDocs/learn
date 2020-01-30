@@ -20,7 +20,7 @@ First, let's create a condition that only runs the logic app when a certain even
 
     ![Empty Condition](../media/5-empty-condition.png) 
 
-1. Rename to **If a virtual machine in your resource group has changed**. On the condition's title bar, select the ellipses (...) button, and select **Rename**.
+1. On the condition's title bar, select the ellipses (...) button, and select **Rename**. Rename to **If a virtual machine in your resource group has changed**.
 
     ![Rename a condition](../media/5-rename-condition.png)
 
@@ -58,13 +58,15 @@ Next, we'll add an email action based on the logic app being triggered. The foll
 
     ![Setup dynamic email fields](../media/5-logic-app-empty-email-action.png)
 
-1. Your email action should look like:
+1. Your email action should look similar to the following. If you selected a different email account type (Outlook.com or Gmail) your options may be different.
 
     ![Email action view](../media/5-logic-app-send-email-details.png)
 
-1. Your finished logic app should now look like:
+1. Your finished logic app should now look similar to the following.
 
     ![Logic App complete view](../media/5-logic-app-completed.png)
+
+1. Select **Save** to save your logic app.
 
 ## Test your workflow
 
