@@ -2,15 +2,15 @@
 uid: learn.cmu-cloud-admin.cmu-cloud-security
 metadata:
   title: Virtualize resources in the cloud
-  description: Cloud Admin course from Dr. Majd Sakr at Carnegie Mellon University. TBD
+  description: Cloud Admin course from Dr. Majd Sakr at Carnegie Mellon University. Keeping your cloud secure means more than just adding permissions to resources. Learn about what cloud security means, including threats, cryptography, and regulation.
   ms.date: 08/15/2019
   author: shanamatthews
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   showCreativeCommonsFooter: true
-title: TBD
-summary: TBD
+title: Virtualize resources in the cloud
+summary: Keeping your cloud secure means more than just adding permissions to resources. Learn about what cloud security means, including threats, cryptography, and regulation.
 abstract: | 
   In this module you will:
   - Understand the importance of risk assessment in implementing cloud security
