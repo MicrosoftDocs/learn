@@ -37,7 +37,7 @@ quiz:
     - content: Over the public internet
       isCorrect: true
       explanation: A VPN gateway sends encrypted traffic between an on-premises network and the Azure network over the public internet.
-    - content: Through the Azure Datacenter
+    - content: Through the Azure datacenter
       isCorrect: false
       explanation: VPN gateways are used to connect to an Azure network in your subscription not to an Azure data-center. 
     - content: By provisioning a traffic manager
