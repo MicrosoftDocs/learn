@@ -1,0 +1,3 @@
+You needed to create an app that uses features not directly available in Xamarin.Forms. Effects allow you to make platform-specific tweaks to your Xamarin.Forms user interface, taking advantage of features available in iOS and Android.
+
+In this module, you created Xamarin.Forms effects by writing the platform-specific code for both iOS and Android. You also applied the effects to a Xamarin.Forms user interface to get behavior that wasn't otherwise available in Xamarin.Forms. Finally, you added configuration options to an effect with attached properties to make the effect more flexible and reusable.

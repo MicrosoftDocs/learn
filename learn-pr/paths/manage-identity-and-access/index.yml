@@ -29,7 +29,7 @@ modules:
 - learn.introduction-to-security
 - learn.create-azure-account
 - learn.azure-security.manage-users-and-groups-in-aad
-- learn.secure-access-azure-ad-multi-factor-authentication
+#- learn.secure-access-azure-ad-multi-factor-authentication
 - learn.secure-app-with-oidc-and-azure-ad
 - learn.azure-security.secure-aad-users-with-mfa
 trophy:

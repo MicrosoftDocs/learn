@@ -14,7 +14,7 @@ Fiddler is a third-party tool that's used to help debug applications, in particu
 
 In this unit, you use Fiddler to monitor the connection to the storage account for the healthcare application. When the application detects that consultants are no longer able to download blobs from storage, it starts a failover to the secondary storage account. When it detects that the primary connection is available again, it redirects the connections to the primary location. In Fiddler, you'll see the traffic being directed to the various storage account endpoints.
 
-If you don't have Fiddler installed already, download and install it from the [Telerik Fiddler home page](https://www.telerik.com/fiddler).
+If you don't have Fiddler installed already, download and install it from the [Telerik Fiddler home page](https://www.telerik.com/fiddler?azure-portal=true).
 
 > [!NOTE]
 > Fiddler is available for Windows, Linux, and Mac OS X. This exercise works best if you use the Windows version.
@@ -23,7 +23,7 @@ If you don't have Fiddler installed already, download and install it from the [T
 
 The application code runs locally on your desktop. You require Visual Studio to build the application.
 
-1. If you don't already have Visual Studio 2019 installed, you can download a free version from the [Visual Studio 2019 home page](https://visualstudio.microsoft.com/vs/).
+1. If you don't already have Visual Studio 2019 installed, you can download a free version from the [Visual Studio 2019 home page](https://visualstudio.microsoft.com/vs/?azure-portal=true).
 
 1. Use Git to download the sample code. Open a Git command prompt window, and run the following command to download the circuit breaker sample application to your computer. Replace *\<folder>* with a convenient location on your hard drive:
 

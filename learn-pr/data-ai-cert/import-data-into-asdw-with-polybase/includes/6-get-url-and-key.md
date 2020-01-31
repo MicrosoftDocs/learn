@@ -13,7 +13,7 @@ Use the Azure portal to get both of these values.
 1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true).
 
 1. In the Storage account, under **Settings**, select **Access keys**.
-1. On the **Access keys** blade, copy the value of **key1** and save it to a temporary file. The value is used in the next unit.
+1. On the **Access keys** pane, copy the value of **key1** and save it to a temporary file. The value is used in the next unit.
 
     ![Getting the access key](../media/6-get-access-key.png)
 

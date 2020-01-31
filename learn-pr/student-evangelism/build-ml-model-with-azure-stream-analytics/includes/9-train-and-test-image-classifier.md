@@ -74,7 +74,7 @@ With the images tagged and uploaded, the next step is to train the model so it c
 
 Training can be accomplished with a simple button click in the portal, or by calling the **TrainProject** method in the Custom Vision Training REST API. Once trained, a model can be refined by uploading additional tagged images and retraining it. Let's use the portal approach since it's the easiest to start with. If you wanted to continue to refine the model over time, the REST API allows you to do it programmatically.
 
-1. Click the **Train** button at the top of the page to train the model. Select **Fast Training**. Each time you train the model, a new iteration is created. The Custom Vision Service maintains several iterations, allowing you to compare your progress over time.
+1. Click the **Train** button at the top of the page to train the model. Select **Quick Training** and click the **Train** button. Each time you train the model, a new iteration is created. The Custom Vision Service maintains several iterations, allowing you to compare your progress over time.
 
     ![Training the model](../media/9-train-model.png)
 

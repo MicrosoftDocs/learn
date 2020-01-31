@@ -32,7 +32,7 @@ Along with server fault tolerance and redundancy, you need to plan for how to re
 
 ### Datacenter infrastructure costs
 
-These are costs for electricity, floor space, cooling, and building maintenance.
+These are costs for construction and building equipment, as well as future renovation and remodeling costs that may arise as demands grow. Additionally, this infrastructure incurs operational expenses for electricity, floor space, cooling, and building maintenance.
 
 ### Technical personnel
 

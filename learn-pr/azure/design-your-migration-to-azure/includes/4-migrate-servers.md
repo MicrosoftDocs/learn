@@ -4,6 +4,9 @@ You've presented your findings to the IT Director and now you want to continue w
 
 In this unit, you'll review Azure Site Recovery and how to use it to migrate specific workloads to Azure.
 
+> [!NOTE]
+> You can now migrate from on-premises to Azure using Azure Migrate. This unit is in the process of being updated to use Migrate. Visit the [Azure Migrate documentation](https://docs.microsoft.com/azure/migrate/migrate-services-overview?azure-portal=true) to learn more.
+
 ## What is Azure Site Recovery?
 
 ![The flow of migration from on-premises vCenter VMWare virtual machines to Azure with Azure Site Recovery](../media/4-vm-migration.svg)
@@ -11,6 +14,8 @@ In this unit, you'll review Azure Site Recovery and how to use it to migrate spe
 Azure Site Recovery is designed to manage a disaster-recovery plan. It can replicate workloads from a primary site to a secondary site if there's an outage. When an issue occurs at the primary site, the Site Recovery service can be invoked automatically and the protected virtual machines are replicated to a secondary location to continue running. The failover could be an on-premises-to-Azure failover, or a failover from one Azure region to another.
 
 In support of your objective, you'll use the ability of Site Recovery to migrate VMware workloads to Azure. But unlike a failover, which can be reversed, a migration is a one-time operation.
+
+The details here are for migration of VMware workloads, instructions will differ for Hyper-V and physical servers.
 
 ## Preparation and prerequisites
 

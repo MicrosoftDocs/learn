@@ -4,11 +4,10 @@ metadata:
   title: Exercise - Create a function app from the portal to host our business logic
   description: In this hands-on lab, we'll prepare our feedback sorter solution by creating a function app and a function to host our logic.
   ms.date: 09/24/2018
-  author: AndrewJByrne
-  ms.author: anbyrne
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 title: Exercise - Create a function app from the portal to host our business logic
 azureSandbox: true
 durationInMinutes: 7

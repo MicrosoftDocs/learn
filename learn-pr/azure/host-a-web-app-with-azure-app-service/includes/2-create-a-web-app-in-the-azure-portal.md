@@ -1,12 +1,12 @@
-﻿Here, you'll learn how to create an Azure App Service web app using the Azure portal.
+﻿In this unit, you'll learn how to create an Azure App Service web app using the Azure portal.
 
 ## Why use the Azure portal?
 
 The first step in hosting your web application is to create a web app (an App Service app) inside your Azure subscription.
 
-There are several ways you can create a web app. You can use the Azure portal, the Azure CLI, a script, or an IDE.
+There are several ways you can create a web app. You can use the Azure portal, the Azure Command Line Interface (CLI), a script, or an IDE.
 
-Here, we are going to use the portal because it's a graphical experience, which makes it a great learning tool. The portal helps you discover available features, add additional resources, and customize existing resources.
+The information presented below will discuss how to use the Azure portal to create a web app, and in the next exercise you will use this information to create a web app. For this module, we will demonstrate using the Azure portal because it's a graphical experience, which makes it a great learning tool. The portal helps you discover available features, add additional resources, and customize existing resources.
 
 ## What is Azure App Service?
 
@@ -40,17 +40,24 @@ When you're ready to run a web app on Azure, you visit the Azure portal and crea
 
 The Azure portal provides a wizard to create a web app. This wizard requires the following fields:
 
-- **Subscription**: A valid and active Azure subscription.
-- **Resource group**: A valid resource group.
-- **App name**: The name of the web app. This name becomes part of the app's URL, so it must be unique among all Azure App Service web apps.
-- **Publish**: You can deploy your application to App Service as **code** or as a ready-to-run **Docker image**. Selecting **Docker image** will activate the Docker tab of the wizard, where you provide information about the Docker registry from which App Service will retrieve your image.
-- **Runtime stack**: If you choose to deploy your application as code, App Service needs to know what runtime your application uses (examples include Node.js, Python, Java, and .NET). If you deploy your application as a Docker image, you will not need to choose a runtime stack, since your image will include it.
-- **Operating system**: App Service can host applications on **Windows** or **Linux** servers.
-  - If you are deploying your app as code, many of the available runtime stacks are limited to one operating system or the other. After choosing a runtime stack, the toggle will indicate whether or not you have a choice of operating system. If your target runtime stack is available on both operating systems, select the one that you use to develop and test your application.
-  - If your application is packaged as a Docker image, choose the operating system on which your image is designed to run.
-  - Selecting **Windows** activates the Monitoring tab, where you have the option to enable **Application Insights**. Enabling this feature will configure your app to automatically send detailed performance telemetry to the Application Insights monitoring service without requiring any changes to your code. Application Insights can be used from Linux-hosted apps as well, but this turnkey, no-code option is only available on Windows.
-- **Region**: The Azure region from which your application will be served.
-- **App Service Plan**: See below for information about App Service plans.
+| _Field_ | _Description_ |
+|---|---|
+| **Subscription** | A valid and active Azure subscription. |
+| **Resource group** | A valid resource group. |
+| **App name** | The name of the web app. This name becomes part of the app's URL, so it must be unique among all Azure App Service web apps. |
+| **Publish** | You can deploy your application to App Service as **code** or as a ready-to-run **Docker image**. Selecting **Docker image** will activate the Docker tab of the wizard, where you provide information about the Docker registry from which App Service will retrieve your image. |
+| **Runtime stack** | If you choose to deploy your application as code, App Service needs to know what runtime your application uses (examples include Node.js, Python, Java, and .NET). If you deploy your application as a Docker image, you will not need to choose a runtime stack, since your image will include it. |
+| **Operating system** | App Service can host applications on **Windows** or **Linux** servers. See below for additional information. |
+| **Region** | The Azure region from which your application will be served. |
+| **App Service Plan** | See below for information about App Service plans. |
+
+### Operating systems
+
+If you are deploying your app as code, many of the available runtime stacks are limited to one operating system or the other. After choosing a runtime stack, the toggle will indicate whether or not you have a choice of operating system. If your target runtime stack is available on both operating systems, select the one that you use to develop and test your application.
+
+If your application is packaged as a Docker image, choose the operating system on which your image is designed to run.
+
+Selecting **Windows** activates the Monitoring tab, where you have the option to enable **Application Insights**. Enabling this feature will configure your app to automatically send detailed performance telemetry to the Application Insights monitoring service without requiring any changes to your code. Application Insights can be used from Linux-hosted apps as well, but this turnkey, no-code option is only available on Windows.
 
 ### App Service plans
 

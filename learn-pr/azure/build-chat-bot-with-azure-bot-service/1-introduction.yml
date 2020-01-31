@@ -5,11 +5,10 @@ metadata:
   title: Introduction
   description: Introduction
   ms.date: 09/24/2018
-  author: AndrewJByrne
-  ms.author: anbyrne
+  author: jasallen
+  ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]

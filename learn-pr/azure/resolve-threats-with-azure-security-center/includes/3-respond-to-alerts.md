@@ -1,6 +1,6 @@
 Once you have a set of alerts, you can select a security alert to learn more about the events that triggered it and what steps, if any, you need to take to repel an attack. Security alerts are grouped by type and date. Selecting a security alert opens a view containing a list of the grouped alerts, as the following figure depicts.
 
-![Screenshot that depicts a blade containing a list of grouped security alerts.](../media/M3-ASC-Alerts3.png)
+![Screenshot that depicts a pane containing a list of grouped security alerts.](../media/M3-ASC-Alerts3.png)
 
 In this case, the alerts that were triggered refer to suspicious malware activity. The first column lists the attacked resources; the second displays how many times attack was detected. The third column indicates the time of the attack, the fourth displays the state of the alert, and the fifth displays the severity of the attack.
 

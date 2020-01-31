@@ -12,7 +12,7 @@ A Docker container has a life cycle that we can manage and track the state of th
 
 We use the start command to place a container in the run state. We can also restart a container that is already running. When restarting a container, the container receives a termination signal to allow any running processes to shut down gracefully before the container's kernel is terminated.
 
-A container is considered in a running state until it's either paused, stopped or killed. A container, however, may also exit from the run state by itself. A container can self-exist when the running process completes or if the process goes into a fault state.
+A container is considered in a running state until it's either paused, stopped or killed. A container, however, may also exit from the run state by itself. A container can self-exit when the running process completes or if the process goes into a fault state.
 
 A running container can be paused using the pause command. This command suspends all processes in the container.
 
@@ -24,12 +24,12 @@ Finally, we use the remove command to remove containers that are in a stopped st
 
 ## How to view available containers
 
-We use the `docker ps` command to list running containers.  If you want to see all containers in all states, use the `docker -ps -a` command.
+We use the `docker ps` command to list running containers.  If you want to see all containers in all states, pass the `-a` argument.
 
 Here is an example.
 
 ```code
-docker -ps -a
+docker ps -a
 ```
 
 Here is the output from the above command.

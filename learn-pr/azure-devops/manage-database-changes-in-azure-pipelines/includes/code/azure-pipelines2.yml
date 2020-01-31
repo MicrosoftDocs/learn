@@ -1,3 +1,6 @@
+trigger:
+- '*'
+
 variables:
   buildConfiguration: 'Release'
 
@@ -8,16 +11,16 @@ stages:
   - job: 'Build'
     displayName: 'Build job'
     pool:
-      vmImage: 'Ubuntu-16.04'
+      vmImage: 'ubuntu-16.04'
       demands:
         - npm
 
     variables:
       wwwrootDir: 'Tailspin.SpaceGame.Web/wwwroot'
-      dotnetSdkVersion: '2.1.505'
+      dotnetSdkVersion: '3.1.100'
 
     steps:
-    - task: DotNetCoreInstaller@0
+    - task: UseDotNet@2
       displayName: 'Use .NET Core SDK $(dotnetSdkVersion)'
       inputs:
         version: '$(dotnetSdkVersion)'
@@ -148,24 +151,26 @@ stages:
                     Name = "Release"}
                   $vg = Get-VSTeamVariableGroup @methodParameters
                   $vars = @{}
-                  $vg.value.variables | Get-Member -MemberType *Property | %{$vars.($_.Name) = $vg.value.variables.($_.Name)}
+                  $vg.variables | Get-Member -MemberType *Property | %{$vars.($_.Name) = $vg.variables.($_.Name)}
                   $varName = "schemaChanged"
                   $vars.$varName= @{}
                   $vars.$varName.value = "True"
                   $vars.$varName.isSecret = $false
                   $methodParameters = @{
-                    id = $vg.value.id
+                    id = $vg.id
                     ProjectName = "$(System.TeamProject)"
                     Name = "Release"
                     Description = ""
                     Type = "Vsts"
                     Variables = $vars}
-                  Update-VSTeamVariableGroup @methodParameters}
+                  Update-VSTeamVariableGroup @methodParameters} 
 
 - stage: DBAVerificationApply
+  variables: 
+    - group: 'Release'
   displayName: 'Apply database schema changes'
   dependsOn: DBAVerificationScript
-  condition: and(succeeded(), eq(variables['schemaChanged'], 'True'))
+  condition: and(succeeded('DBAVerificationScript'), eq(variables['schemaChanged'], True))
   jobs:
   - deployment: DBAVerificationApply
     pool:
@@ -205,10 +210,10 @@ stages:
                   Name = "Release"}
                 $vg = Get-VSTeamVariableGroup  @methodParameters 
                 $vars = @{}
-                $vg.value.variables | Get-Member -MemberType *Property | %{$vars.($_.Name) = $vg.value.variables.($_.Name)}
+                $vg.variables | Get-Member -MemberType *Property | %{$vars.($_.Name) = $vg.variables.($_.Name)}
                 $vars.Remove("schemaChanged")
                 $methodParameters = @{
-                  id = $vg.value.id
+                  id = $vg.id
                   ProjectName = "$(System.TeamProject)"
                   Name = "Release"
                   Description = ""
@@ -230,7 +235,7 @@ stages:
   jobs:
   - deployment: Deploy
     pool:
-      vmImage: 'Ubuntu-16.04'
+      vmImage: 'ubuntu-16.04'
     environment: dev
     variables:
     - group: Release
@@ -254,7 +259,7 @@ stages:
   jobs:
   - deployment: Deploy
     pool:
-      vmImage: 'Ubuntu-16.04'
+      vmImage: 'ubuntu-16.04'
     environment: test
     variables:
     - group: 'Release'
@@ -278,7 +283,7 @@ stages:
   jobs:
   - deployment: Deploy
     pool:
-      vmImage: 'Ubuntu-16.04'
+      vmImage: 'ubuntu-16.04'
     environment: staging
     variables:
     - group: 'Release'

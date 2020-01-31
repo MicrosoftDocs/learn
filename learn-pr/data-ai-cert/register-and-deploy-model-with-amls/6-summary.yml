@@ -1,0 +1,41 @@
+### YamlMime:ModuleUnit
+uid: learn.data-ai.register-and-deploy-model-with-amls.summary
+title: Summary
+metadata:
+  title: Summary
+  description: Summary
+  ms.date: 01/13/2020
+  author: GraemeMalcolm
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-summary.md)]
+
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "You have trained a model using the Python SDK for Azure Machine Learning. What do you need to do to before deploying the model in a real-time inferencing service?"
+    choices: 
+    - content: "Register the model in the Azure Machine Learning workspace."
+      isCorrect: true
+      explanation: "This is correct. You must register a model before you can deploy it in a service."
+    - content: "Save the model as a local .pkl file."
+      isCorrect: false
+      explanation: "That is incorrect. You must register a model before you can deploy it in a service."
+    - content: "Move the code used to train the model from a notebook to a .py script file."
+      isCorrect: false
+      explanation: "This is incorrect. You must register a model before you can deploy it in a service."
+  
+  - content: "You are deploying a model as a real-time inferencing service. What functions must the entry script for the service include?"
+    choices: 
+    - content: "main() and score()"
+      isCorrect: false
+      explanation: "That is incorrect. You need to implement init and run functions in the entry (scoring) script."
+    - content: "base() and train()"
+      isCorrect: false
+      explanation: "That is incorrect. You need to implement init and run functions in the entry (scoring) script."
+    - content: "init() and run()"
+      isCorrect: true
+      explanation: "That is correct. You need to implement init and run functions in the entry (scoring) script."

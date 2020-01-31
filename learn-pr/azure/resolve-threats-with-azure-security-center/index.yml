@@ -14,10 +14,10 @@ abstract: |
   In this module, you will:
   - View security alerts in Azure Security Center
   - Define an incident response plan
-  - Use a Security playbook to automate a security response
+  - Use a Workflow automation to automate a security response
 prerequisites: |
   - Basic familiarity with Azure Security Center
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/resolve-threats-with-azure-security-center.svg
 levels:
 - intermediate
 roles:
