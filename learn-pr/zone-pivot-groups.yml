@@ -60,7 +60,7 @@ groups:
       title: Azure portal
 - id: sandbox-or-personal-subscription
   title: Environment
-  prompt: Choose your execution Environment
+  prompt: Choose your execution environment
   pivots:
     - id: sandbox
       title: Azure Sandbox

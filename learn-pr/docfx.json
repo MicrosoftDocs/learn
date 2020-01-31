@@ -310,6 +310,9 @@
             "uhfHeaderId": "MSDocsHeader-Learn"
         },
         "fileMetadata": {
+            "zone_pivot_groups": {
+                "**/*.md": "sandbox-or-personal-subscription"
+            },
             "brand": {
                 "azure/**/*.yml": "azure"
             },
