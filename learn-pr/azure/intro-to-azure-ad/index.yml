@@ -30,11 +30,11 @@ products:
 - azure-active-directory
 units:
 - learn.intro-to-azure-ad.1-introduction
-- learn.intro-to-azure-ad.2-azuread-overview
-- learn.intro-to-azure-ad.3-understand-azuread-licenses-terminology
-- learn.intro-to-azure-ad.4-essential-features-azuread
-- learn.intro-to-azure-ad.5-get-started-azuread
-- learn.intro-to-azure-ad.6-exercise-get-started-azuread
+- learn.intro-to-azure-ad.2-overview
+- learn.intro-to-azure-ad.3-understand-licenses-terminology
+- learn.intro-to-azure-ad.4-essential-features
+- learn.intro-to-azure-ad.5-get-started
+- learn.intro-to-azure-ad.6-exercise-get-started
 - learn.intro-to-azure-ad.7-summary
 badge:
   uid: learn.intro-to-azure-ad.badge

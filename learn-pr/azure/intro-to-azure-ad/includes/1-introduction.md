@@ -6,9 +6,9 @@ In this module, you'll explore Azure AD and discover why you should use it. You'
 
 ## Learning objectives
 
-1. Describe the core terminology of Azure AD.
-1. Describe the core features of Azure AD.
-1. Describe the licensing models for Azure AD.
+- Describe the core terminology of Azure AD.
+- Describe the core features of Azure AD.
+- Describe the licensing models for Azure AD.
 
 ## Prerequisites
 

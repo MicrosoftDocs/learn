@@ -39,7 +39,6 @@ This feature is available on a pay-as-you-go basis.
 Azure Active Directory Domain Services (Azure AD DS) lets you add virtual machines to a domain without needing domain controllers. Your internal staff users can access virtual machines using their company Azure AD credentials. You use this service to reduce the complexity of migrating on-premises applications to Azure. An organization could also use Azure AD DS to handle its infrastructure if it runs both on-premises and in the cloud. The process might go like this:
 
 ![Azure AD DS](../media/4-azuread-domain-services.png)
-<!-- Please feel free to style according to Learn standards. Original image: https://docs.microsoft.com/en-gb/azure/active-directory-domain-services/media/overview/synced-tenant.png -->
 
 1. The organization deploys its applications and servers in a virtual network on Azure.
 1. Identity information is synchronized between the on-premises Active Directory and the organization's tenant in Azure AD, using a tool called Azure AD Connect sync.

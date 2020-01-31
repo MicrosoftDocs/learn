@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.intro-to-azure-ad.6-exercise-get-started-azuread
+uid: learn.intro-to-azure-ad.6-exercise-get-started
 metadata:
   title: Exercise - Get started with Azure AD
   description: Exercise - Get started with Azure AD
@@ -13,4 +13,4 @@ durationInMinutes: 5
 interactive: bash
 azureSandbox: true
 content: |
-  [!include[](includes/6-exercise-get-started-azuread.md)]
+  [!include[](includes/6-exercise-get-started.md)]

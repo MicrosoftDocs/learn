@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.intro-to-azure-ad.4-essential-features-azuread
+uid: learn.intro-to-azure-ad.4-essential-features
 metadata:
   title: Essential features of Azure AD
   description: Essential features of Azure AD
@@ -11,7 +11,7 @@ metadata:
 title: Essential features of Azure AD
 durationInMinutes: 5
 content: |
-  [!include[](includes/4-essential-features-azuread.md)]
+  [!include[](includes/4-essential-features.md)]
 quiz:
   title: Check your knowledge
   questions:

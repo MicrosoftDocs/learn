@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.intro-to-azure-ad.2-azuread-overview
+uid: learn.intro-to-azure-ad.2-overview
 metadata:
   title: Azure Active Directory overview
   description: Azure Active Directory overview
@@ -11,7 +11,7 @@ metadata:
 title: Azure Active Directory overview
 durationInMinutes: 10
 content: |
-  [!include[](includes/2-azuread-overview.md)]
+  [!include[](includes/2-overview.md)]
 quiz:
   title: Check your knowledge
   questions:
