@@ -52,14 +52,15 @@ Identify the subtasks of *Secure your identities with Azure Active Directory*
 
    Azure Active Directory (Azure AD) is Microsoft’s cloud-based identity and access management service, which helps your employee's sign-in and access resources
 
-   1. Target Audience
-   1. Azure AD vs on-premises AD
-   1. The identity secure score
-   1. Default user permissions in Azure AD
-   1. Using Azure AD in Europe
-   1. Using hybrid identity to link your on-premises AD with Azure AD
+    - Target Audience
+    - Azure AD vs on-premises AD
+    - The identity secure score
+    - Default user permissions in Azure AD
+    - Using Azure AD in Europe
+    - Using hybrid identity to link your on-premises AD with Azure AD
 
    **Knowledge Check**
+
    1. What is a tenant in Azure AD?
        A: A tenant represents an entire organization.
    1. What is an identity security score?
@@ -81,16 +82,15 @@ Identify the subtasks of *Secure your identities with Azure Active Directory*
 
 1. **Licensing Azure AD**
 
-   1. What is Azure AD licensing
-   1. License plans
-      1. Free
-      2. Office 364
-      3. Premium 1
-      4. Premium 2
-   1. Find your service plan. You can view your available service plans, including the individual licenses, check pending expiration dates, and view the number of available assignments
-   1. Assign licenses
-      Make sure that anyone needing to use a licensed Azure AD service has the appropriate license.
-   1. Remove a license. You can remove a license from a user's Azure AD user page, from the group overview page for a group assignment, or starting from the Azure AD **Licenses** page to see the users and groups for a license.
+    - What is Azure AD licensing
+    - License plans
+              - Free
+              - Premium 1
+              - Premium 2
+    - Find your service plan. You can view your available service plans, including the individual licenses, check pending expiration dates, and view the number of available assignments
+    - Assign licenses
+          - Make sure that anyone needing to use a licensed Azure AD service has the appropriate license.
+    - Remove a license. You can remove a license from a user's Azure AD user page, from the group overview page for a group assignment, or starting from the Azure AD **Licenses** page to see the users and groups for a license.
 
    **Knowledge Check**
    1. Which of these if a valid Azure AD licensing plan?
@@ -106,19 +106,19 @@ Identify the subtasks of *Secure your identities with Azure Active Directory*
    1. What does the identity protection feature provide?
        A: The capability to detect potential vulnerabilities affecting your organization.
    1. What do the Domain services feature provide?
-       A: Allows the joining of virtual machines to a domain, without a domain controller. 
+       A: Allows the joining of virtual machines to a domain, without a domain controller.
 
 1. **Getting started with Azure AD**
 
    A basic introduction to getting started with Azure AD
-   1. A phased deployment guide for Azure AD
+    - A phased deployment guide for Azure AD
       identifies common tasks that customers find helpful to complete in phases, over the course of 30, 60, 90 days.
-      1. Build a foundation of security
-      1. Import users, enable synchronization, and manage devices
-      1. Manage applications
-      1. Audit privileged identities, complete an access review, and manage user lifecycle
-   1. Creating a new tenant in Azure Active Directory
-   1. Associate or add an Azure subscription to your Azure AD tenant
+              - Build a foundation of security
+              - Import users, enable synchronization, and manage devices
+              - Manage applications
+              - Audit privileged identities, complete an access review, and manage user lifecycle
+    - Creating a new tenant in Azure Active Directory
+    - Associate or add an Azure subscription to your Azure AD tenant
 
 1. **Exercise - Setting up Azure AD**
 
