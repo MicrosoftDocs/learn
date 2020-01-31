@@ -1,6 +1,6 @@
 Your company is migrating some of its on-premises resources to Azure. As part of this migration, the central datacenter must remain on-premises with a connection to Azure. The architectural model also needs to consider Azure network connectivity for several satellite offices.
 
-So far, you've identified a need for a resilient high-bandwidth connection from the on-premises network to Azure. In your initial investigations, you found that ExpressRoute could suit your organization's hybrid network needs.
+So far, you've identified a need for a resilient high-bandwidth connection from the on-premises network to Azure. In your initial investigations, you found that Azure ExpressRoute could suit your organization's hybrid network needs.
 
 In this unit, you'll explore on-premises hybrid connectivity by using ExpressRoute, get an overview of the components that available in ExpressRoute, and walk through a reference architecture that supports this topology.
 
