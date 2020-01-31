@@ -67,14 +67,14 @@ A few of the many limitations that apply to virtual networks are listed in the f
 Much like the system routing table, custom routing tables also have a next hop type. But the custom routing tables offer a few more options:
 
 - **Virtual appliance**: This option is usually a virtual machine that runs a specific network application, such as a firewall.
-- **Virtual network gateway**: Use this option when you want to send traffic to a virtual network gateway. A virtual network gateway must be of a type VPN. It can't be of a type ExpressRoute, which requires setting a Border Gateway Protocol (BGP) routing process.
+- **Virtual network gateway**: Use this option when you want to send traffic to a virtual network gateway. A virtual network gateway type must be VPN. The type can't be Azure ExpressRoute, which requires setting a Border Gateway Protocol (BGP) routing process.
 - **None**: This option drops the traffic rather than forwarding it.
-- **Virtual Network**: This option lets you override a default system routing.
-- **Internet**: This option enables you to specify that any prefix forwards traffic to the internet.
+- **Virtual network**: This option lets you override a default system routing.
+- **Internet**: This option lets you specify that any prefix forwards traffic to the internet.
 
 ## Connect Azure virtual networks
 
-There are many different ways to connect your virtual networks.  You can use Azure VPN Gateway, ExpressRoute, or directly use the peering method.
+You can connect your virtual networks in any of several ways.  You can use Azure VPN Gateway or ExpressRoute, or you can use the peering method directly.
 
 ### Azure VPN Gateway
 
@@ -96,9 +96,9 @@ A multisite connection is similar to a site-to-site connection, but with a sligh
 
 A point-to-site connection is suited to a remote individual client device that connects to your network. You must authenticate the client device either through Azure Active Directory or by using Azure certificate authentication. This model suits home working scenarios.
 
-#### VNet-to-VNet
+#### Network-to-network
 
-You use a virtual network to virtual network (VNet-to-VNet) connection to create connections between multiple Azure virtual networks. This connection topology, unlike the others, doesn't require a public IP or VPN device. It can also be used in a multisite configuration to establish combined cross-premises connections with inter-virtual network connectivity.
+You use a network-to-network connection to create connections between multiple Azure virtual networks. This connection topology, unlike the others, doesn't require a public IP or VPN device. It can also be used in a multisite configuration to establish combined cross-premises connections with inter-virtual network connectivity.
 
 ### ExpressRoute
 
@@ -116,11 +116,11 @@ Virtual networks can peer across subscriptions and Azure regions. After the virt
 
 ## Site-to-site VPN gateway reference architecture
 
-Although many reference architectures are available when you design a hybrid network, one popular architecture is the site-to-site configuration. The simplified reference architecture shown in the following diagram illustrates how you would connect an on-premises network to your Azure cloud. The internet connection uses an IPsec VPN tunnel.
+Although many reference architectures are available when you design a hybrid network, one popular architecture is the site-to-site configuration. The simplified reference architecture shown in the following diagram illustrates how you would connect an on-premises network to the Azure platform. The internet connection uses an IPsec VPN tunnel.
 
 ![Azure VPN reference architecture](../media/2-vpn-architecture.svg)
 
-The architecture is composed of several components:
+The architecture features several components:
 
 - The **on-premises network** represents your on-premises Active Directory and any data or resources.
 - The **gateway** is responsible for sending encrypted traffic to a virtual IP address when it uses a public connection.
