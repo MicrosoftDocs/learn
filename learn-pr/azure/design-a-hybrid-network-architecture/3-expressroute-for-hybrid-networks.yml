@@ -23,7 +23,7 @@ quiz:
     - content: A point-to-point Ethernet network
       isCorrect: true
       explanation: A point-to-point Ethernet connection is used to connect on-premises datacenters and offices to Azure through a point-to-point Ethernet link.
-    - content: Azure vnet-to-vnet connectivity
+    - content: Azure network-to-network connectivity
       isCorrect: false
       explanation: VNet-to-VNet connections can be configured in ExpressRoute, but it is not a connectivity model.
     - content: A point-to-site network
