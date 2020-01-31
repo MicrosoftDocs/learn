@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.intro-to-azure-ad
+metadata:
+  title: Secure your identities with Azure Active Directory
+  description: Use Azure Active Directory to you secure your internal, external and customer identities.
+  ms.date: 12/30/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Secure your identities with Azure Active Directory
+summary: Secure internal resources, external resources, SaaS applications, and more with Azure Active Directory. Learn about the features and capabilities available in Azure AD.
+abstract: | 
+  In this module, you will:
+  - Describe the core terminology of Azure AD.
+  - Describe the core features of Azure AD.
+  - Describe the licensing models for Azure AD.
+  - Configure Azure AD in the Azure portal.
+prerequisites: | 
+  - None
+iconUrl: /learn/achievements/intro-to-azure-ad.svg
+levels:
+- beginner
+roles:
+- solution-architect
+- administrator
+- developer
+products:
+- azure
+- azure-active-directory
+units:
+- learn.intro-to-azure-ad.1-introduction
+- learn.intro-to-azure-ad.2-overview
+- learn.intro-to-azure-ad.3-understand-licenses-terminology
+- learn.intro-to-azure-ad.4-essential-features
+- learn.intro-to-azure-ad.5-get-started
+- learn.intro-to-azure-ad.6-exercise-get-started
+- learn.intro-to-azure-ad.7-summary
+badge:
+  uid: learn.intro-to-azure-ad.badge
