@@ -58,6 +58,14 @@ groups:
       title: PowerShell
     - id: portal
       title: Azure portal
+- id: sandbox-or-personal-subscription
+  title: Environment
+  prompt: Choose your execution Environment
+  pivots:
+    - id: sandbox
+      title: Azure Sandbox
+    - id: subscription
+      title: Personal Azure Subscription
 - id: dev-lang-csharp-javascript
   title: Development language
   prompt: Choose your development language
