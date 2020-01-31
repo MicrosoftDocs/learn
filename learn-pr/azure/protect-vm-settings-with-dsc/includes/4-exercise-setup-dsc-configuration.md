@@ -54,7 +54,7 @@ Start by deploying a new VM from a Windows Server 2016 image.
 
 1. Use your Microsoft Learn account to sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
 
-1. In the left pane, select **Create a resource**.
+1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
 
 1. In the **Search the Marketplace** text box, enter **Automation**.
 

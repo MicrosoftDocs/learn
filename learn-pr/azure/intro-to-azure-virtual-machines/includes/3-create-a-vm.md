@@ -18,9 +18,7 @@ Let's assume you want to create a VM running an Ubuntu server. Setting up a site
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-1. You'll see the Azure resource creation and management menu on your left and the Azure portal home page in the center.
 
-    ![Screenshot that shows Azure portal home](../media/3-home-page.png)
 
 1. Click on the **Create a resource** option in the top-left corner of the portal page. The Azure Marketplace pane will open.
 
@@ -76,6 +74,6 @@ We need to configure the basic parameters of our Ubuntu virtual machine. If some
 
     ![Screenshot showing the VM overview page with the public IP address to the VM highlighted.](../media/3-public-ip-address.png)
 
-7. By default Ubuntu Server 18.04 LTS image doesn't install any public reachable services on the public IP address. However, recall that we enabled password authentication earlier. This authentication type, allows you to connect to your VM via the public IP using any SSH client.
+7. By default, Ubuntu Server 18.04 LTS image doesn't install any reachable public services on the public IP address. However, recall that when you enabled password authentication in an earlier step, the UI also gave an option to enable SSH. SSH allows you to connect to your VM via the public IP using any SSH client.
 
-Congratulations! With a few steps, you deployed a VM that runs Linux, has a database installed, and has a functional website. Let's explore some other ways we could have created a VM.
+Congratulations! With a few steps, you deployed a VM that runs Linux. Let's explore some other ways we could have created a VM.

@@ -20,9 +20,6 @@ To complete the work item:
 
 ## Disable the pipeline or delete your project
 
-> [!IMPORTANT]
-> You can skip this part if you plan to continue to the next module using the same Azure DevOps project.
-
 Each module in this learning path provides a template you can run to create a clean environment for the duration of the module.
 
 Running multiple templates gives you multiple Azure Pipelines projects, each pointing to the same GitHub repository. This situation can trigger multiple pipelines to run each time you push a change to your GitHub repository, which can cause you to run out of free build minutes on our hosted agents. It's important that you disable or delete your pipeline before you move on to the next module.
@@ -39,7 +36,7 @@ To disable the pipeline:
 1. Select **Edit**.
 
     ![Azure Pipelines showing the location of the Edit button](../../shared/media/azure-pipelines-edit-button.png)
-1. From the menu in the upper corner, select **Settings**.
+1. Select **Edit**. From the menu in the upper corner, select **Settings**.
 
     ![Azure Pipelines showing the Settings menu option](../../shared/media/azure-pipelines-settings-button.png)
 1. Under **Processing of new run requests**, select **Disabled** and then select **Save**.

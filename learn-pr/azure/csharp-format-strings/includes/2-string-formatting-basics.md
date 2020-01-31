@@ -40,8 +40,8 @@ Console.WriteLine("{0} {0} {0}!", first, second);
 If you run this you should see the following output.
 
 ```output
-Hello World!
-Hello Hello Hello
+World Hello!
+Hello Hello Hello!
 ```
 
 A few observations about these examples:

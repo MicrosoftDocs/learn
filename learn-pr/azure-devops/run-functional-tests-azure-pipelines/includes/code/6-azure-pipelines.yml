@@ -1,6 +1,9 @@
+trigger:
+- '*'
+
 variables:
   buildConfiguration: 'Release'
-  dotnetSdkVersion: '2.1.505'
+  dotnetSdkVersion: '3.1.100'
 
 stages:
 - stage: 'Build'
@@ -9,15 +12,16 @@ stages:
   - job: 'Build'
     displayName: 'Build job'
     pool:
-      vmImage: 'Ubuntu-16.04'
+      vmImage: 'ubuntu-16.04'
       demands:
         - npm
 
     variables:
       wwwrootDir: 'Tailspin.SpaceGame.Web/wwwroot'
+      dotnetSdkVersion: '3.1.100'
 
     steps:
-    - task: DotNetCoreInstaller@0
+    - task: UseDotNet@2
       displayName: 'Use .NET Core SDK $(dotnetSdkVersion)'
       inputs:
         version: '$(dotnetSdkVersion)'
@@ -54,7 +58,7 @@ stages:
       displayName: 'Publish the project - $(buildConfiguration)'
       inputs:
         command: 'publish'
-        projects: '$(System.DefaultWorkingDirectory)/**/Tailspin.SpaceGame.Web.csproj'
+        projects: '$(System.DefaultWorkingDirectory)/**/Tailspin.SpaceGame.Web.csproj' 
         publishWebProjects: false
         arguments: '--no-build --configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)/$(buildConfiguration)'
         zipAfterPublish: true
@@ -68,7 +72,7 @@ stages:
   jobs:
   - deployment: Deploy
     pool:
-      vmImage: 'Ubuntu-16.04'
+      vmImage: 'ubuntu-16.04'
     environment: dev
     variables:
     - group: Release
@@ -91,7 +95,7 @@ stages:
   jobs:
   - deployment: Deploy
     pool:
-      vmImage: 'Ubuntu-16.04'
+      vmImage: 'ubuntu-16.04'
     environment: test
     variables:
     - group: 'Release'
@@ -115,7 +119,7 @@ stages:
     variables:
     - group: 'Release'
     steps: 
-    - task: DotNetCoreInstaller@0
+    - task: UseDotNet@2
       displayName: 'Use .NET Core SDK $(dotnetSdkVersion)'
       inputs:
         version: '$(dotnetSdkVersion)'
@@ -139,7 +143,7 @@ stages:
   jobs:
   - deployment: Deploy
     pool:
-      vmImage: 'Ubuntu-16.04'
+      vmImage: 'ubuntu-16.04'
     environment: staging
     variables:
     - group: 'Release'

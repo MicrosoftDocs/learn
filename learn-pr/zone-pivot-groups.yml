@@ -96,6 +96,22 @@ groups:
       title: Node.js
     - id: python
       title: Python
+- id: dev-lang-csharp-python
+  title: Development language
+  prompt: Choose your development language
+  pivots:
+    - id: csharp
+      title: C#
+    - id: python
+      title: Python
+- id: dev-lang-csharp-node
+  title: Development language
+  prompt: Choose your development language
+  pivots:
+    - id: csharp
+      title: C#
+    - id: node
+      title: Node.js
 - id: dev-lang-javascript-powershell
   title: Development language
   prompt: Choose your development language
@@ -230,3 +246,15 @@ groups:
       title: Visual Studio Code
     - id: vstudio
       title: Visual Studio
+- id: vs-vscode-language
+  title: IDE and language
+  prompt: Choose your Integrated Development Environment (IDE) and development language
+  pivots:
+    - id: vscode-node
+      title: Visual Studio Code + Node.js
+    - id: vscode-csharp
+      title: Visual Studio Code + C#
+    - id: vs-node
+      title: Visual Studio + Node.js
+    - id: vs-csharp
+      title: Visual Studio + C#

@@ -1,0 +1,59 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.migrate-cassandra-workloads-cosmos-db.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/31/2020
+  author: wwlpublish
+  ms.author: v-gea
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 1
+quiz:
+  questions:
+  - content: "How do you share throughput between containers?"
+    choices:
+    - content: "Specify database throughput."
+      isCorrect: true
+      explanation: "By specifying throughput at the database level, the throughput is shared between the containers."
+    - content: "Specify container throughput."
+      isCorrect: false
+      explanation: "By specifying throughput at the database level, the throughput is shared between the containers."
+    - content: "Specify logical partition throughput."
+      isCorrect: false
+      explanation: "By specifying throughput at the database level, the throughput is shared between the containers."
+  - content: "You have decided to distribute your database over multiple regions to decrease latency for users. What is the effect of the availability SLA?"
+    choices:
+    - content: "It remains at 99.99%."
+      isCorrect: false
+      explanation: "If your database is in a single region there is a Service Level Agreement (SLA) for the database to be available for 99.99% of the time, but, if you deploy to multiple regions, you benefit from an SLA of 99.999% read and write availability."
+    - content: "It increases to 99.999%."
+      isCorrect: true
+      explanation: "If your database is in a single region there is a Service Level Agreement (SLA) for the database to be available for 99.99% of the time, but, if you deploy to multiple regions, you benefit from an SLA of 99.999% read and write availability."
+    - content: "It increass to 99.9999%"
+      isCorrect: false
+      explanation: "If your database is in a single region there is a Service Level Agreement (SLA) for the database to be available for 99.99% of the time, but, if you deploy to multiple regions, you benefit from an SLA of 99.999% read and write availability."
+  - content: "You need specific connection strings for your applications, so that they use your security protocols. Where can you find this information?"
+    choices:
+    - content: "In your Cosmos DB account, in **Overview**."
+      isCorrect: false
+      explanation: "For more options than the quick start settings, in **Settings**, select **Connection String**. You can then provide security information and receive a specific connection string for your settings."
+    - content: "In your Cosmos DB account, in **Settings**, and then **Network**."
+      isCorrect: false
+      explanation: "For more options than the quick start settings, in **Settings**, select **Connection String**. You can then provide security information and receive a specific connection string for your settings."
+    - content: "In your Cosmos DB account, in **Settings**, and then **Connection String**."
+      isCorrect: true
+      explanation: "For more options than the quick start settings, in **Settings**, select **Connection String**. You can then provide security information and receive a specific connection string for your settings."
+  - content: "You have all your users in one region and need to maximize availability. How should you achieve this?"
+    choices:
+    - content: "Replicate data to at least two regions."
+      isCorrect: true
+      explanation: "To improve availability, you should consider having data in at least two regions even if all of your users are in one location"
+    - content: "Have a single copy of your data and premium level backups."
+      isCorrect: false
+      explanation: "To improve availability, you should consider having data in at least two regions even if all of your users are in one location"
+    - content: "Replicate data within your region."
+      isCorrect: false
+      explanation: "To improve availability, you should consider having data in at least two regions even if all of your users are in one location"

@@ -35,17 +35,17 @@ Let's walk through the steps you'd take to create a resource group in the Azure 
 1. Open a web browser and sign into the [Azure portal](https://portal.azure.com/?azure-portal=true).
 
     > [!IMPORTANT]
-    > Make sure to use your _own_ subscription. When you are in the free sandbox environment, it will not allow you to create resource groups. You can tell which subscription you are using by looking at the tenant name under your profile picture. You can switch tenants by clicking on your profile picture and selecting **Switch Directory** from the options menu.
+    > Make sure to use your _own_ subscription. When you are in the free sandbox environment, it will not allow you to create resource groups. You can tell which subscription you are using by looking at the tenant name under your profile picture. You can switch tenants by selecting your profile picture and selecting **Switch Directory** from the options menu.
 
-1. On the left pane, select **+ Create a resource**
+1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
 
 1. Type **Resource Group** in the search box and hit Enter.
 
-1. The first item in the list should be the resource group resource. Select it and then click the **Create** button.
+1. The first item in the list should be the resource group resource. Select it and then select the **Create** button.
 
     ![Search results searching the marketplace for a new resource group](../media/2-create-search-resource-group.png)
 
-1. Enter your resource group name, let's use **msftlearn-core-infrastructure-rg**. Select the subscription it should be in, and select the region for the resource group. Click **Review + Create** and then **Create** to create the resource group.
+1. Enter your resource group name, let's use **msftlearn-core-infrastructure-rg**. Select the subscription it should be in, and select the region for the resource group. Select **Review + Create** and then **Create** to create the resource group.
 
     ![Fill in the required fields to create the resource group](../media/2-create-resource-group.png)
 
@@ -53,7 +53,7 @@ That's it, you've created a resource group that you can now use when you deploy 
 
 ## Explore a resource group and add a resource
 
-In the portal, select **Resource groups** on the left menu, and select your newly created resource group. Note that you may also see a resource group called **NetworkWatcherRG**. You can ignore this resource group, it's created automatically to enable Network Watcher in Azure virtual networks.
+On the Azure portal menu or from the **Home** page, select **Resource groups**, and select your newly created resource group. Note that you may also see a resource group called **NetworkWatcherRG**. You can ignore this resource group, it's created automatically to enable Network Watcher in Azure virtual networks.
 
 ![Overview panel of resource group](../media/2-rg-overview.png)
 
@@ -65,11 +65,11 @@ On the left menu, there are a number of options
 
 We don't have any resources in this resource group yet, so the list at the bottom is empty. Let's create a couple resources inside the resource group.
 
-1. Click **+ Add** at the top or click the **Create resources**, either will work.
+1. Select **+ Add** at the top or select the **Create resources**, either will work.
 
-1. Search for **Virtual network**. The first result should be the virtual network resource. Click it, and on the next screen, make sure **Select a deployment model** is set to **Resource Manager**. Click **Create**.
+1. Search for **Virtual network**. The first result should be the virtual network resource. Select it, and on the next screen select **Create**.
 
-1. Name the virtual network **msftlearn-vnet1**. For the **Resource group** drop-down, select the resource group that you created earlier. Enter **192.168.0.0/24** for both the **Address space** and subnet **Address range**. Leave the defaults for all other options, and click **Create**.
+1. Name the virtual network **msftlearn-vnet1**. For the **Resource group** drop-down, select the resource group that you created earlier. Enter **192.168.0.0/24** for both the **Address space** and subnet **Address range**. Leave the defaults for all other options, and select **Create**.
 
 1. Repeat the steps again to create one more VNet, where both the **Address space** and subnet **Address range** are for a different network than your previous network, (e.g. **192.168.100.0/24**). Name it **msftlearn-vnet2**, and make sure to place it in the resource group that you created earlier.
 

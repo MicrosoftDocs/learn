@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn-xamarin.create-ui-in-xamarin-forms-apps-with-xaml.4-event-handling-in-xaml
+metadata:
+  title: Event handling in XAML
+  description: "Learn how to manage UI behavior with XAML"
+  ms.date: 05/01/2019
+  author: patridge
+  ms.author: adpatrid
+  ms.topic: interactive-tutorial
+  ms.prod: learning-xamarin
+  
+title: Event handling in XAML
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-event-handling-in-xaml.md)]

@@ -4,11 +4,10 @@ metadata:
   title: Exercise - Call the Text Analytics API from the online testing console
   description: In this unit, we'll make real calls to the sentiment endpoint of the Text Analytics API without writing a line of code, thanks to the online API testing console.
   ms.date: 09/24/2018
-  author: AndrewJByrne
-  ms.author: anbyrne
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 title: Exercise - Call the Text Analytics API from the online testing console
 azureSandbox: true
 durationInMinutes: 10

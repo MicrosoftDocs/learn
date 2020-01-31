@@ -1,13 +1,20 @@
-One of the primary tasks a data scientist undertakes is to build predictive models from a dataset. These models can then be incorporated into a workstream to make cost predictions, forecast changes, or analyze event patterns to find discrepancies. Azure Machine Learning service provides a set of SDKs and cloud services to help with the various steps of preparing data and building a model. 
+Azure Machine Learning is a platform for operating machine learning workloads in the cloud.
 
-With Azure Machine Learning service, you can implement key services to scale data wrangling, model training, model evaluation, deployment, and model management, which vastly improves your ability to deliver solutions.
+![Azure Machine Learning](../media/01-01-what-is-azure-ml.jpg)
+
+Built on the Microsoft Azure cloud platform, Azure Machine Learning enables you to manage:
+
+- Scalable on-demand compute for machine learning workloads.
+- Data storage and connectivity to ingest data from a wide range sources.
+- Machine learning workflow orchestration to automate model training, deployment, and management processes.
+- Model registration and management, so you can track multiple versions of models and the data on which they were trained.
+- Metrics and monitoring for training experiments, datasets, and published services.
+- Model deployment for real-time and batch inferencing.
 
 ## Learning objectives
 
-In this module, you will:
+In this module, you will learn how to:
 
-- Learn the difference between Azure Machine Learning Studio and Azure Machine Learning service
-- See how Azure Machine Learning service fits into the data science process
-- Learn the concepts related to an Azure Machine Learning service experiment
-- Explore the Azure Machine Learning service pipeline
-- Train a model using Azure Machine Learning service
+- Provision an Aure Machine Learning workspace.
+- Use tools and interfaces to work with Azure Machine Learning.
+- Run code-based experiments in an Azure Machine Learning workspace.

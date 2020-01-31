@@ -81,7 +81,7 @@ When you run the code, you'll see the following output.
 By changing the three parts of the `for` statement, we change its behavior.
 
 - We initialize the iteration variable to 10.
-- We change the completion condition to exit the `for` statement when `i` is greater than or equal to `0`.
+- We change the completion condition to exit the `for` statement when `i` is less than `0`.
 - We change the pattern of the iterator to subtract `1` from `i` each time we complete an iteration.
 
 ### Step 3 - Experiment with the iterator's pattern

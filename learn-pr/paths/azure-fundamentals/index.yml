@@ -2,7 +2,7 @@
 uid: learn.cloud-foundations
 metadata:
   title: Azure fundamentals learning path
-  description: Interested in the cloud, but aren't quite sure what it can do for you? This learning path is the place to start. Learn the benefits of cloud computing, features in Azure that will save you time and money, basic strategies for transitioning to the cloud and more.
+  description: Follow this learning path for a broad and compelling introduction to the fundamentals of Azure cloud computing.
   brand: azure
   ms.date: 12/27/2018
   author: markjulmar
@@ -42,9 +42,9 @@ products:
 - azure-virtual-machines
 modules:
 - learn.principles-cloud-computing
+- learn.create-azure-account
 - learn.welcome-to-azure
 - learn.explore-azure-infrastructure
-- learn.create-azure-account
 - learn.tour-azure-portal-features
 - learn.intro-to-compute
 - learn.intro-to-data-in-azure

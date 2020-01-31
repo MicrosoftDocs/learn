@@ -1,32 +1,41 @@
-Security playbooks are created directly in the Security Center portal.
+Workflow Automations are created directly in the Security Center portal.
 
 > [!IMPORTANT]
 > You will need an Office 365 email account to use this specific set of instructions - if you don't have one, try changing the instructions below to use a different template, or create a Blank Logic App.
 
 1. Sign into the [Azure portal](https://portal.azure.com?azure-portal=true) with the same account you used to activate the Azure Sandbox.
 
-1. Navigate to **Security Center** using the search box, or through the tile on the main dashboard.
+1. Navigate to **Security Center** using the search box, through the tile on the main dashboard, or through the left-hand sidebar.
 
-1. Under **Automation & Orchestration** in the Azure Security Center left panel, select **Playbooks (Preview).**
+1. In the first section in the Azure Security Center left panel, select **Workflow automation (Preview).**
 
     ![Screenshot showing the playbook creation screen](../media/7-playbooks.png)
 
-1. Select the **Add playbook** button to create a new Logic App to use as a playbook.
+1. Select the **Add workflkow automation** button to create a new automation.
 
 1. In the **Logic App** panel, enter the following information:
     - **Name**: _RespondToMalwareAlert_
     - **Subscription**: _Concierge Subscription_
-    - **Resource group**: select _Use existing_ and pick <rgn>[Learn resource group]</rgn> from the drop-down list
-    - **Location**: select any valid location near you - if it fails to create, try a different location
-    - **Log Analytics**: select _Off_
+    - **Resource group**: select <rgn>[Learn resource group]</rgn> from the drop-down list
+    - **Select Security Center data types**: select _Threat detection alerts_
+    - **Alert name contains**: type _Malware_
+    - **Alert severity**: select _All severities selected_
 
-1. Select **Create** to create the Logic app. This will return you to the Playbooks screen. It will take a few minutes to deploy the resources for the Logic App. You can monitor the deployment in the **Notifications** panel (bell icon) from the top menu.
+1. Under **Actions** you can select an existing Azure Logic App, or create a new one. Since we don't have any yet, select the **Create a new one** link to build a new Logic App.
 
-1. Once it's deployed, select the **Refresh** button from the top toolbar to see the new playbook.
+    A new window will open in the Azure portal with the Logic Apps view. Make sure you're still in the Microsoft Learn Sandbox directory before continuing.
 
-    ![Screenshot highlighting the Refresh button on the Playbook screen](../media/7-refresh-playbook.png)
+1. Select **Create logic app** to start building a new logic app.
 
-1. Select the **RespondToMalwareAlert** logic app from the list to edit it. The **Logic Apps Designer** will appear.
+1. In the new window, use the following settings as shown in the following screenshot, make sure to select the proper resource group from the Concierge Subscription.
+
+    ![Screenshot showing the Logic Apps creation screen in the Azure portal](../media/6-create-new-logic-app.png)
+
+    It will take a minute or two to create the app, you can monitor the creation through the alerts icon, or use the **Refresh** button to refresh the screen.
+
+1. Once the Logic App has been created, select it in your Logic Apps list to open the designer.
+
+1. Scroll down to the **Templates** section and select **Security** from the Category drop-down list.
 
 1. Select **Get a notification email when Security Center detects a threat** as shown below. You could also select **Blank Logic App** if you wanted to create some custom logic to run in response to an alert, or if you don't have an M365-based email account.
 
@@ -34,15 +43,25 @@ Security playbooks are created directly in the Security Center portal.
 
 1. Select **Use this template** to create the app.
 
-1. Provide credentials for Office 365 to connect your email account.
+1. Provide credentials for Office 365 to connect your email account. Once validated, the owning email will be shown on the Office 365 Outlook connector.
 
-1. Select **Create** on the **Azure Security Center Alert** connection.
+1. Select **+** on the **Security Center Alert** connector to add support for Security Center.
+
+1. Select **Continue** to move to the details page.
 
 1. Specify a target email address to send the notification to.
 
-1. You can use the **+ Next step** to create additional logic steps in the flow. In this case, we don't need anymore so select **Save** from the menu at the top.
+1. On this screen you can change the subject of the email as well as all the details that will be included.
 
-## Run a security playbook from Azure Security Center
+1. You can use the **+ New step** to create additional logic steps in the flow. In this case, we don't need anymore so select **Save** from the menu at the top.
+
+1. Switch back to the Security Center window or tab and select **Refresh** to select your newly created Logic App.
+
+1. Select **RespondToMalwareAlert** from the list of Logic Apps.
+
+1. Select **Create** to create the workflow automation.
+
+## Run a Workflow automation from Azure Security Center
 
 You normally run playbooks from the Security Center dashboard using an existing alert.
 
@@ -56,7 +75,7 @@ You normally run playbooks from the Security Center dashboard using an existing 
 
 In this case, in the Azure Sandbox, you likely don't have any alerts - so you can't execute the playbook this way. However, we can test it through the Logic Apps panel.
 
-## Test a security playbook from Logic Apps
+## Test a workflow automation from Logic Apps
 
 1. Select **Home** from the left-hand sidebar. You should see your Logic App as a recently created resource. If not, try searching for it from the top search bar - recall the name is **RespondToMalwareAlert**.
 

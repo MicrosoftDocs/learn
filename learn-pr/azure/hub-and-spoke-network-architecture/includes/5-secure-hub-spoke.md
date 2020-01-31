@@ -1,37 +1,37 @@
-Azure provides a number of services to enable an organization to secure and protect its cloud infrastructure. Your organization needs to understand how to secure its new network, and what other Azure services are available.
+Azure provides a number of services to help enable an organization to secure and protect its cloud infrastructure. Your organization needs to understand how to secure its new network, and what other Azure services are available.
 
-In this unit, you'll explore secure networking in the Azure platform, see an overview of Azure Firewall, and how to secure virtual networks using network security groups.
+In this unit, you'll explore secure networking in the Azure platform, see an overview of Azure Firewall, and learn how to secure virtual networks by using network security groups.
 
 ## Secure network design on Azure
 
-![Image showing Azure network infrastructure](../media/5-secure-network.png)
+![Diagram of Azure network infrastructure](../media/5-secure-network.png)
 
-The image above shows the Azure network infrastructure, and the methods that enable you to connect securely between on-premises, Azure hosted resources, and the public internet.
+The preceding diagram shows the Azure network infrastructure, and the methods that enable you to connect more securely your on-premises environment, Azure hosted resources, and the public internet.
 
 There are several features to consider as part of securing a network design:
 
-- **Azure Virtual Network**: Provides a base layer of security by logically isolating your environments in Azure to prevent unauthorized or unwanted access.
+- **Azure Virtual Network**: Provides a base layer of security by logically isolating your environments in Azure, to prevent unauthorized or unwanted access.
 - **Azure DNS**: A hosting service for your domain names. Azure DNS is a secure service that manages and resolves domain names in your virtual network.
 - **Azure Application Gateway**: A dedicated virtual appliance that provides an application delivery controller as a service, including a web application firewall (WAF).
 - **Azure Traffic Manager**: A service to control the distribution of user traffic in Azure.
 - **Azure Load Balancer**: Provides high availability and network performance to your Azure applications.
-- **Deploy a perimeter network**: Also known as a DMZ – to segment assets between your Azure virtual network and the internet.
+- **Perimeter network**: Segments assets between your Azure virtual network and the internet.
 
 Additionally, consider incorporating some of the following into your network architecture to improve network security:
 
-- Network access controls to make sure that your Azure services are accessible to only users and devices you want.
-- Network security groups as a packet filtering firewall to control Virtual Network traffic.
+- Network access controls, to make sure that your Azure services are accessible to only the users and devices you want.
+- Network security groups as a packet filtering firewall, to control virtual network traffic.
 - Route control, and forced tunneling, to define custom routes through your infrastructure, and ensure services can't connect to an internet device.
-- Enabling a virtual network security appliance through the Azure marketplace.
-- Using ExpressRoute for a dedicated WAN link to securely extend your on-premises networks to Azure.
+- Enabling a virtual network security appliance through Azure Marketplace.
+- Using Azure ExpressRoute for a dedicated WAN link, to securely extend your on-premises networks to Azure.
 - Azure Security Center to prevent, detect, and respond to threats against your Azure services.
-- Azure firewall as a network security service.
+- Azure Firewall as a network security service.
 
-There's a wide variety of security solutions for your organization, many of which complement each other providing additional layers of security. It's important to align your security approach with Microsoft's recommended best practice. You then implement any features needed to meet your organization's internal security requirements.
+There's a wide variety of security solutions for your organization, many of which complement each other to provide additional layers of security. Microsoft has recommended best practices that you should align with overall. You then implement any features needed to meet your organization's internal security requirements.
 
 ## Base components of Azure security for hub-spoke topologies
 
-The goal with network security is to ensure resources are protected from unauthorized access, or attack, by controlling your network traffic. In the hub and spoke model, there are several components you need to implement to follow best practice:
+You want to ensure that your resources are protected from unauthorized access, or attack, by controlling your network traffic. In the hub and spoke model, there are several components you need to implement:
 
 **Network security group**
 
@@ -39,43 +39,43 @@ Each subnet within the topology has a network security group configured. The net
 
 **Perimeter network**
 
-A perimeter network has been configured in its own subnet in the hub virtual network for routing external traffic. The perimeter network is designed to host network virtual appliances to provide security functionality, such as firewalls and packet inspection. The outbound traffic from the perimeter network can be routed through virtual appliances so it's monitored, secured, and audited.
+Configure a perimeter network in its own subnet in the hub virtual network for routing external traffic. The perimeter network is designed to host network virtual appliances to provide security functionality, such as firewalls and packet inspection. You can route the outbound traffic from the perimeter network through virtual appliances, so the traffic is monitored, secured, and audited.
 
 **Network virtual appliance**
 
-Network virtual appliances (NVAs) provides a secure network boundary by checking all inbound and outbound network traffic. Then the NVA passes only the traffic that meets network security rules, essentially acting as a firewall.
+Network virtual appliances (NVAs) provide a secure network boundary by checking all inbound and outbound network traffic. Then the NVA passes only the traffic that meets network security rules, essentially acting as a firewall.
 
-Some of the components mentioned above can be replaced with Azure Firewall to control access to Azure network resources.
+Azure Firewall can replace some components discussed in this article, to control access to Azure network resources. For more details, see the following section, "Azure Firewall."
 
 **Azure ExpressRoute**
 
-ExpressRoute creates a dedicated private WAN link between on-premises resources and an Azure gateway subnet in the hub virtual network. You add a network security appliance between the on-premises network and the ExpressRoute provider edge routers to restrict the flow of unauthorized traffic from the virtual network.  
+ExpressRoute creates a dedicated private WAN link between on-premises resources and an Azure gateway subnet in the hub virtual network. You add a network security appliance between the on-premises network and the ExpressRoute provider edge routers. This restricts the flow of unauthorized traffic from the virtual network.  
 
 ## Azure Firewall
 
-Azure Firewall is a network security service managed by Microsoft. It protects Azure virtual networks and their resources by letting you manage and enforce connectivity policies centrally. Azure Firewall uses a static public IP address for virtual network resources, allowing outside firewalls to identify your virtual network traffic.
+Microsoft manages this network security service. It protects Azure virtual networks and their resources by letting you manage and enforce connectivity policies centrally. Azure Firewall uses a static, public IP address for virtual network resources, allowing outside firewalls to identify your virtual network traffic.
 
-Azure Firewall is a fully stateful network firewall that tracks the operating state, and characteristics of network connections traversing it. Azure Firewall enables central control of all network communications through policy enforcement. These policies can be enforced across virtual networks, regions, and Azure subscriptions. In a hub and spoke topology, the Azure Firewall is typically provisioned in the hub for complete control of traffic through the network.
+Azure Firewall is a fully stateful network firewall that tracks the operating state, and the characteristics of network connections traversing it. Azure Firewall enables central control of all network communications through policy enforcement. These policies can be enforced across virtual networks, regions, and Azure subscriptions. In a hub and spoke topology, Azure Firewall is typically provisioned in the hub for complete control of traffic through the network.
 
-![Image showing Azure firewall features](../media/5-azure-firewall.png)
+![Diagram showing Azure Firewall features](../media/5-azure-firewall.png)
 
 The monitoring of Azure Firewall consists of reviewing the firewall and activity logs. Because Azure Firewall is integrated with Azure Monitor Logs, you can view the full logs there. Some logs are also available to view in the Azure portal.
 
-![Image showing Azure Monitor Logs](../media/5-firewall-monitor.png)
+![Screenshot of Azure Monitor Logs](../media/5-firewall-monitor.png)
 
 The logs can be stored in an Azure Storage Account, streamed to an Azure Event Hub, or sent to Azure Monitor Logs.
 
 ## Network security with network security groups
 
-Network security groups enforce and control network traffic rules. Access is controlled by permitting or denying communication between workloads in a virtual network. Network security groups are rules-based. Rules are evaluated by priority using source, source port, destination, destination port, and protocol, to either allow or deny traffic.
+Network security groups (NSGs) enforce and control network traffic rules. Access is controlled by permitting or denying communication between workloads in a virtual network. NSGs are rules-based, and evaluate traffic using a 5-tuple method. NSGs evaluate traffic using source IP, source port, destination IP, destination port, and protocol, to determine if traffic is allowed or denied.
 
 ### Defining security rules
 
 Security rules in an NSG provide the mechanism that defines the control of traffic flow. An NSG has a set of rules by default. These rules can't be deleted, but you can override them with your own custom rules. The default rules are:
 
-- Traffic originating from, and ending in, a Virtual Network is allowed.
+- Traffic originating from, and ending in, a virtual network is allowed.
 - Outbound traffic to the internet is allowed, but inbound traffic is blocked.
-- Azure Load Balancer is allowed to probe the health of VMs, or role instances.
+- Azure Load Balancer is allowed to probe the health of virtual machines, or role instances.
 
 ## Additional security considerations
 
@@ -84,4 +84,4 @@ The ability to control how traffic is routed through your resources is an import
 - **Application security groups**: Provides central policy and security management for your applications. Use application security groups to define detailed network security policies by using a moniker. You can then use a zero-trust approach, where only specified flows are permitted.
 - **Azure Network Watcher**: Enables insights into your network logging and diagnostics. Network Watcher allows you to understand the health and performance of your Azure networks.
 - **Virtual network service endpoints**: Extends your virtual network private address space to make it available to Azure services. The endpoints allow you to restrict access to Azure resources.
-- **DDOS protection**: DDOS protection allows you to mitigate volumetric, protocol, and resource layer attacks.
+- **Azure DDoS Protection**: Allows you to mitigate volumetric, protocol, and resource layer attacks.
