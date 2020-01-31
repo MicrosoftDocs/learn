@@ -11,7 +11,7 @@ Our application might have several intents: finding pictures, sharing pictures, 
 1. In the search results, select **Language Understanding**.
 1. Select **Create**.
 
-    ![Screenshot showing the LUIS service marketplace information in the Azure portal](../media/3-create-luis-service-create.png)
+    ![Screenshot showing the LUIS service marketplace information in the Azure portal](../media/3-create-luis-service-resource-create.png)
 
 1. Enter a unique name for your LUIS service.
 1. Choose a subscription.
