@@ -16,7 +16,7 @@ abstract: |
   - Configure and simulate a risk detection
 prerequisites: | 
   - Basic familiarity with Azure AD
-iconUrl: http://via.placeholder.com/120x120
+iconUrl: /learn/achievements/protect-identities-with-aad-idp.svg
 levels:
 - intermediate
 roles:
