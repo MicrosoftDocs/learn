@@ -1,4 +1,4 @@
-Your organization is eager to continue with migration to the cloud. You've explored the merits of using ExpressRoute to provide a dedicated, high-speed connection between your on-premises network and Azure.
+Your organization is eager to continue with migration to the cloud. You've explored the merits of using Azure ExpressRoute to provide a dedicated, high-speed connection between your on-premises network and Azure.
 
 Due diligence requires you to explore the other available hybrid architecture options for connecting your on-premises network to Azure.
 
