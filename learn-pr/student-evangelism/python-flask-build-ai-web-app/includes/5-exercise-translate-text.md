@@ -24,7 +24,7 @@ To call the Translator Text API, you must obtain an API key. As with the Compute
     az cognitiveservices account keys list --resource-group contoso-travel-rg --name translator-text --query key1 --output tsv
     ```
 
-    The output from the command is a string that contains numbers and letters. *This is your Translator Text API key*. Copy the key into a text file and save it so you can easily retrieve it. You will need it later in this unit and in a subsequent unit.
+    The output from the command is a string that contains numbers and letters. *This is your Translator Text API key*. Copy the key into a text file and save it so you can easily retrieve it. You will need it later in this unit and in a later unit.
 
 This API key uses the Text Translator API's free tier (`--sku F0`), which supports translating up to 2 million characters of text per month. In a production environment, you would want to subscribe to one of the [paid tiers](https://azure.microsoft.com/pricing/details/cognitive-services/translator-text-api/).
 

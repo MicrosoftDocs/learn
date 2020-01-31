@@ -13,7 +13,7 @@ Resources that are used in this exercise are located in a [Git repository for co
     cd mslearn-build-ai-web-app-with-python-and-flask/src/starter
     ```
 
-    This command copies all the files from the sample into a subdirectory called **mslearn-build-ai-web-app-with-python-and-flask**, and then changes directories to the **src** directory where all the project code is.
+    This command copies all the files from the sample into a subdirectory called **mslearn-build-ai-web-app-with-python-and-flask**. The command then changes directories to the **src** directory, where all the project code is.
 
 1. Change directories to the **starter** directory. This holds a template Flask app that we will develop on.
 
@@ -46,7 +46,7 @@ Resources that are used in this exercise are located in a [Git repository for co
 
     Currently, the app consists of a single page named **index.html** located in the **templates** subdirectory. **index.html** doesn't contain any special expressions at the moment—it's simply a static file—but that will change as you develop the site. **index.html** loads the popular Bootstrap framework and uses it to make the page responsive. It also loads **main.css** from the **static** subdirectory and uses the CSS styles defined there to give the page a professional look.
 
-1. Return to the Command Prompt window or terminal where your virtual Python environment is active and make sure that the **starter** directory is the current directory.
+1. Return to the Command Prompt window or terminal where your virtual Python environment is active, and make sure that the **starter** directory is the current directory.
 
     > [!NOTE]
     > If you closed the Command Prompt window or terminal after activating the virtual environment, simply open a new one, change (`cd`) to the **starter** directory, and use a `env\scripts\activate` command (Windows) or a `source env/bin/activate` command (macOS and Linux) to activate it again.

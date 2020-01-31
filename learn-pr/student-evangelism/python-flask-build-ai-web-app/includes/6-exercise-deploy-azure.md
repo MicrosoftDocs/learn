@@ -68,7 +68,7 @@ _View application settings in the Azure portal_
 
 ## Run the site in Azure
 
-Now it's time to see the fruits of your labor.
+Now it's time to see the results of your work.
 
 1. Point your browser to http\:\//APP_NAME.azurewebsites.net, replacing APP_NAME with the name of your App Service instance. Confirm that the site appears in your browser and that it looks exactly as it did when running locally.
 

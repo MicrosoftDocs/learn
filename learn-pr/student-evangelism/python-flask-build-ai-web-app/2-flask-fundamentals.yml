@@ -52,11 +52,11 @@ quiz:
       choices:
       - content: "<b>templates</b>"
         isCorrect: true
-        explanation: "Correct! By default, HTML files served up by Flask must be located in a subdirectory named *templates*."
+        explanation: "Correct! By default, HTML files served up by Flask must be located in a subdirectory named **templates**."
       - content: "<b>static</b>"
         isCorrect: false
-        explanation: "Incorrect. Flask looks in the *static* subdirectory for images, style sheets, and other static files that don't change as the application runs."
+        explanation: "Incorrect. Flask looks in the **static** subdirectory for images, style sheets, and other static files that don't change as the application runs."
       - content: "<b>html</b>"
         isCorrect: false
-        explanation: "Incorrect. Flask does not look for a subdirectory named *html*."
+        explanation: "Incorrect. Flask does not look for a subdirectory named **html**."
 
