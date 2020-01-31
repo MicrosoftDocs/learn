@@ -24,6 +24,4 @@ This module presented some of the challenges to securing assets in the cloud and
 
 - Data security platforms (DSPs) can help administrators implement security protocols. Today's public cloud platforms have integrated support for many DSP features, including logging data accesses and data discovery and classification.
 
-- Government regulations such as HIPAA and GDPR impose additional requirements on an organization's handling of data. Organizations must be aware of the regulations that affect them and take steps to ensure compliance. Penalties for non-compliance can be severe.
-
 Security in cloud systems requires diligent planning and understanding. Security is a process, and one for which cloud administrators and cloud security professionals must be ever mindful.
