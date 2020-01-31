@@ -20,7 +20,7 @@ quiz:
     - content: Mission-critical workloads
       isCorrect: true
       explanation: ExpressRoute is the recommended service for mission-critical, large-scale workloads.
-    - content: For prototyping
+    - content: Prototyping
       isCorrect: false
       explanation: ExpressRoute is not the best connectivity method for prototyping in Azure, because it is expensive and takes time to set up.
     - content: Dev/test workloads
