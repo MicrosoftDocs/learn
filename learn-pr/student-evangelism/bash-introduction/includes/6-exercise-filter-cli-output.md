@@ -1,6 +1,6 @@
 Until now, you've been running Bash commands on their own. Bash is extremely powerful when combined with other tools, so let's get some practice by using Bash to filter output from the Azure CLI.
 
-1. Let's say you want to see an up-to-date list of the VM sizes available in the westus region of Azure. You can do that with the command:
+1. Let's say you want to see an up-to-date list of the VM sizes available in the westus region of Azure. You can do that with this command:
 
     ```bash
     az vm list-sizes --location westus --output table

@@ -64,7 +64,7 @@ When you're entering complicated commands like this one, it's easy to make a mis
 ls -a .azure/commands/202?*.log
 ```
 
-Fortunately, Bash offers a couple pieces of functionality to help you out.
+Fortunately, Bash offers a couple pieces of functionality to help you.
 
 ### Recalling previous commands
 

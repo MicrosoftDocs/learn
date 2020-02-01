@@ -23,7 +23,7 @@
         explanation: "Incorrect. `cat` is not the right command to get a list of processes."
       - content: "`ps -ef | grep scottgu > processes.txt`"
         isCorrect: true
-        explanation: "Correct! The <b>ps -ef</b> command lists all running processes. The <b>grep</b> command searches for patterns in each file."
+        explanation: "Correct! The `ps -ef` command lists all running processes. The `grep` command searches for patterns in each file."
     - content: "Which of the following commands would you use to delete a subdirectory that isn't empty?"
       choices:
       - content: "`rm`"
@@ -56,7 +56,7 @@
         explanation: "Incorrect. Appending `&` to a command will leave it running in the background."
       - content: "Prevent system files from being deleted by non-administrative users"
         isCorrect: false
-        explanation: "Incorrect. There are different steps that must be taken to achieve that outcome."
+        explanation: "Incorrect. Different steps must be taken to achieve that outcome."
     - content: "Which of the following statements is true about the command `python3 app.py &`?"
       choices:
       - content: "It runs <b>app.py</b> after creating a restore point in the system"

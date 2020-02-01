@@ -22,7 +22,7 @@ quiz:
     choices:
     - content: "My special \"home\" directory"
       isCorrect: false
-      explanation: "Recall that `~` (not `.`) refers to your special \"home\" directory."
+      explanation: "Recall that `~` (not `.`) refers to your special <b>home</b> directory."
     - content: "The parent directory"
       isCorrect: false
       explanation: "Recall that `..` refers to the parent directory in Bash."
