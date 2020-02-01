@@ -86,7 +86,7 @@ sudo cat /etc/at.deny
 
 ### `cd`, `mkdir`, and `rmdir` commands
 
-`cd` stands for "change directory," and it does exactly what the name suggests: it changes the pwd to another directory. It enables you to move from one directory to another just like its counterpart in Windows. The following command changes to a subdirectory of the current directory named **orders**:
+`cd` stands for "change directory," and it does exactly what the name suggests: it changes the current directory to another directory. It enables you to move from one directory to another just like its counterpart in Windows. The following command changes to a subdirectory of the current directory named **orders**:
 
 ```bash
 cd orders
@@ -126,7 +126,7 @@ The `rm` command is short for "remove." As you'd expect, `rm` deletes files. So 
 rm 0001.jpg
 ```
 
-And this command deletes all the files in the pwd:
+And this command deletes all the files in the current directory:
 
 ```bash
 rm *
@@ -242,7 +242,7 @@ You can do a lot in Linux just by exercising Bash commands and their many option
 - `>>` for doing the same, but appending rather than overwriting
 - `|` for piping output from one command to the input of another
 
-Suppose you want to list everything in the pwd but capture the output in a file named **listing.txt**. The following command does just that:
+Suppose you want to list everything in the current directory but capture the output in a file named **listing.txt**. The following command does just that:
 
 ```bash
 ls > listing.txt
