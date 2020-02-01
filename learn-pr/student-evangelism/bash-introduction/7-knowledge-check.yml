@@ -57,7 +57,7 @@
       - content: "Prevent system files from being deleted by non-administrative users"
         isCorrect: false
         explanation: "Incorrect. There are different steps that must be taken to achieve that outcome."
-    - content: "Which of the following statements is true regarding the command `python3 app.py &`?"
+    - content: "Which of the following statements is true about the command `python3 app.py &`?"
       choices:
       - content: "It runs <b>app.py</b> after creating a restore point in the system"
         isCorrect: false
