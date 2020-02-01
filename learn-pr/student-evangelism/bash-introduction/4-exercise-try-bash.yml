@@ -3,7 +3,7 @@ uid: learn.student-evangelism.bash-introduction.4-exercise-try-bash
 title: Exercise - Try Bash
 metadata:
   title: Exercise - Try Bash
-  description: Get your hands dirty by trying some first Bash commands
+  description: Get some experience with Bash by trying some commands
   ms.date: 01/31/2020
   author: shanamatthews
   ms.author: shanama
@@ -18,17 +18,17 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: "What directory would you switch to if you typed the Bash command `cd .`"
+  - content: "What directory would you switch to if you entered the Bash command `cd`?"
     choices:
-    - content: "Your special \"home\" directory"
+    - content: "My special \"home\" directory"
       isCorrect: false
-      explanation: "Recall that `~` refers to your special \"home\" directory - not `.`"
+      explanation: "Recall that `~` (not `.`) refers to your special <b>home</b> directory."
     - content: "The parent directory"
       isCorrect: false
-      explanation: "Recall that `..` refers to the parent directory in Bash"
+      explanation: "Recall that `..` refers to the parent directory in Bash."
     - content: "The first alphabetical subdirectory"
       isCorrect: false
       explanation: "`.` is a short-version of a directory name, but not that one."
-    - content: "You would not switch directories"
+    - content: "I wouldn't switch directories"
       isCorrect: true
       explanation: "Remember that `.` refers to your current directory. Changing directories (`cd`) to your current directory wouldn't change directories at all!"

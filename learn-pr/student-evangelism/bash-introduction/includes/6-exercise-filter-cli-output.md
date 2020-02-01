@@ -1,20 +1,20 @@
-Up until now, you have been running Bash commands on their own. Bash is extremely powerful when combined with other tools, so let's get some practice by using Bash to filter output from the Azure CLI.
+Until now, you've been running Bash commands on their own. Bash is extremely powerful when combined with other tools, so let's get some practice by using Bash to filter output from the Azure CLI.
 
-1. Let's say you want to see an up-to-date list of the VM sizes available in the westus region of Azure. You can do that with the command:
+1. Let's say you want to see an up-to-date list of the VM sizes available in the westus region of Azure. You can do that with this command:
 
     ```bash
     az vm list-sizes --location westus --output table
     ```
 
-1. You should see a long list of VM types as an output. To narrow down this list to the VM sizes you're interested in, you can  use `grep`, Linux's universal pattern matching program. To find the "DS" sizes, popular for use in data science, use the following command:
+1. You should see a long list of VM types as an output. To narrow down this list to the VM sizes you're interested in, you can  use `grep`, Linux's universal pattern-matching program. To find the "DS" sizes, popular for use in data science, use the following command:
 
     ```bash
     az vm list-sizes --location westus --output table | grep DS
     ```
 
-    This pipes output from the `az` command to `grep`, which filters out lines lacking the string "DS".
+    This pipes output from the `az` command to `grep`, which filters out lines that lack the "DS" string.
 
-1. That's still a lot of VMs. You know that DS V2 VMs are a more recent series. Let's adjust our `grep` command to use a more intricate regular expression:
+1. That's still a lot of VMs. You know that DS V2 VMs are a more recent series. Let's adjust the `grep` command to use a more intricate regular expression:
 
     ```bash
     az vm list-sizes --location westus --output table | grep DS.*_v2
@@ -24,4 +24,4 @@ Up until now, you have been running Bash commands on their own. Bash is extremel
 
     Regular expressions are a topic for another module, but come in handy for Bash scripting.
 
-Using Bash with other CLI commands the latter easier to work with. And given that a sysadmin's work never ends, any tool that reduces the workload is a welcome tool indeed.
+Using Bash with other CLI commands makes the latter easier to work with. And because a sysadmin's work never ends, any tool that reduces the workload is welcome.

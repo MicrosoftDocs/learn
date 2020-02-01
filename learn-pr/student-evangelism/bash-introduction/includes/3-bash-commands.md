@@ -24,7 +24,7 @@ To get even more information about the files and directories in the current dire
 ls -l
 ```
 
-Here's some sample output from a directory containing a handful of JPEGs and PNGs and a subdirectory named *gifs*:
+Here's some sample output from a directory that contains a handful of JPEGs and PNGs and a subdirectory named **gifs**:
 
 ```output
 -rw-rw-r-- 1 azureuser azureuser  473774 Jun 13 15:38 0001.png
@@ -37,11 +37,11 @@ Here's some sample output from a directory containing a handful of JPEGs and PNG
 drwxrwxr-x 2 azureuser azureuser    4096 Jun 13 20:16 gifs
 ```
 
-Each line provides detailed information about the corresponding file or directory, including the permissions assigned to it, its owner, its size in bytes, the last time it was modified, and the file or directory name.
+Each line provides detailed information about the corresponding file or directory. That information includes the permissions assigned to it, its owner, its size in bytes, the last time it was modified, and the file or directory name.
 
 ### `cat` command
 
-Suppose you want to see what's inside a file. You can use the `cat` command for that. The output won't make much sense unless the file is a text file. The following command shows the contents of the **os-release** file stored in the "/etc" directory:
+Suppose you want to see what's inside a file. You can use the `cat` command for that. The output won't make much sense unless the file is a text file. The following command shows the contents of the **os-release** file stored in the **/etc** directory:
 
 ```bash
 cat /etc/os-release
@@ -64,11 +64,11 @@ VERSION_CODENAME=bionic
 UBUNTU_CODENAME=bionic
 ```
 
-The "/etc" directory is a special one in Linux. It contains system-configuration files. You don't want to delete any files from this directory unless you know what you're doing.
+The **/etc** directory is a special one in Linux. It contains system-configuration files. You don't want to delete any files from this directory unless you know what you're doing.
 
 ### `sudo` command
 
-Some Bash commands can only be run by the root user — a system administrator or superuser. If you try one of these commands without sufficient privileges, it fails. For example, only users logged in as superuser can use `cat` to display the contents of **/etc/at.deny**:
+Some Bash commands can only be run by the root user—a system administrator or superuser. If you try one of these commands without sufficient privileges, it fails. For example, only users logged in as a superuser can use `cat` to display the contents of **/etc/at.deny**:
 
 ```bash
 cat /etc/at.deny
@@ -76,41 +76,41 @@ cat /etc/at.deny
 
 **at.deny** is a special file that determines who can use other Bash commands to submit jobs for later execution.
 
-You don't want to run as root most of the time. It's too dangerous. So, to run commands that require admin privilege without logging in as superuser, you preface the commands with `sudo`:
+You don't want to run as root most of the time. It's too dangerous. To run commands that require admin privilege without logging in as a superuser, you preface the commands with `sudo`:
 
 ```bash
 sudo cat /etc/at.deny
 ```
 
-`sudo` stands for "superuser do." When you use it, you're telling the shell that for this one command you are acting with the root-user level of permission.
+`sudo` stands for "superuser do." When you use it, you're telling the shell that for this one command, you're acting with the root-user level of permission.
 
 ### `cd`, `mkdir`, and `rmdir` commands
 
-`cd` stands for "change directory," and it does exactly what the name suggests: it changes the pwd to another directory. It enables you to move from one directory to another just like its counterpart in Windows. The following command changes to a subdirectory of the current directory named "orders:"
+`cd` stands for "change directory," and it does exactly what the name suggests: it changes the current directory to another directory. It enables you to move from one directory to another just like its counterpart in Windows. The following command changes to a subdirectory of the current directory named **orders**:
 
 ```bash
 cd orders
 ```
 
-You can move up a directory by specifying ".." as the directory name:
+You can move up a directory by specifying `..` as the directory name:
 
 ```bash
 cd ..
 ```
 
-This one changes to your home directory—the one that you land in when you first log in:
+This command changes to your home directory—the one that you land in when you first log in:
 
 ```bash
 cd ~
 ```
 
-You can create directories with the `mkdir` command. The following command creates a subdirectory named "orders" in the current working directory:
+You can create directories by using the `mkdir` command. The following command creates a subdirectory named **orders** in the current working directory:
 
 ```bash
 mkdir orders
 ```
 
-If you want to create a subdirectory and a subdirectory of that subdirectory with one command, use the `--parents` flag:
+If you want to create a subdirectory and another subdirectory under it with one command, use the `--parents` flag:
 
 ```bash
 mkdir --parents orders/2019
@@ -120,13 +120,13 @@ The `rmdir` command deletes (removes) a directory, but only if it isn't empty. F
 
 ### `rm` command
 
-The `rm` command is short for "remove." As you'd expect, `rm`, deletes files. So this command puts an end to **0001.jpg**:
+The `rm` command is short for "remove." As you'd expect, `rm` deletes files. So this command puts an end to **0001.jpg**:
 
 ```bash
 rm 0001.jpg
 ```
 
-And this command deletes all the files in the pwd:
+And this command deletes all the files in the current directory:
 
 ```bash
 rm *
@@ -140,19 +140,19 @@ Running `rm` with a `-i` flag lets you think before you delete:
 rm -i *
 ```
 
-Make it a habit to include `-i` in every `rm` command and you might avoid falling victim to one of Linux's biggest blunders. The dreaded `rm -rf /` command deletes every file on an entire drive. It works by recursively deleting all the subdirectories of root and their subdirectories. The `-f` (for "force") flag adds insult to injury by suppressing prompts. **Don't do this.**
+Make it a habit to include `-i` in every `rm` command, and you might avoid falling victim to one of Linux's biggest blunders. The dreaded `rm -rf /` command deletes every file on an entire drive. It works by recursively deleting all the subdirectories of root and their subdirectories. The `-f` (for "force") flag compounds the problem by suppressing prompts. *Don't do this.*
 
-On the other hand, if you want to delete a subdirectory named "orders" that isn't empty, you can use the `rm` command this way:
+If you want to delete a subdirectory named **orders** that isn't empty, you can use the `rm` command this way:
 
 ```bash
 rm -r orders
 ```
 
-This deletes the "orders" subdirectory and everything in it, including other subdirectories.
+This deletes the **orders** subdirectory and everything in it, including other subdirectories.
 
 ### `cp` command
 
-The `cp` command copies — not just files, but entire directories (and subdirectories) if you want. To make a copy of **0001.jpg** named **0002.jpg**, use the command:
+The `cp` command copies not just files, but entire directories (and subdirectories) if you want. To make a copy of **0001.jpg** named **0002.jpg**, use this command:
 
 ```bash
 cp 0001.jpg 0002.jpg
@@ -160,35 +160,35 @@ cp 0001.jpg 0002.jpg
 
 If **0002.jpg** already exists, Bash silently replaces it. That's great if it's what you intended, but not so wonderful if you didn't realize you were about to overwrite the old version. 
 
-Fortunately, if you use the `-i` (for "interactive") flag, Bash warns you before blowing away existing files. This is much safer:
+Fortunately, if you use the `-i` (for "interactive") flag, Bash warns you before deleting existing files. This is much safer:
 
 ```bash
 cp -i 0001.jpg 0002.jpg
 ```
 
-Of course, you can use wildcards to copy several files at once. To copy all the files in the current directory to a subdirectory named "photos," do this:
+Of course, you can use wildcards to copy several files at once. To copy all the files in the current directory to a subdirectory named **photos**, do this:
 
 ```bash
 cp * photos
 ```
 
-To copy all the files in a subdirectory named "photos" into a subdirectory named "images," do this:
+To copy all the files in a subdirectory named **photos** into a subdirectory named **images**, do this:
 
 ```bash
 cp photos/* images
 ```
 
-This assumes that the "images" directory already exists. If it doesn't, you can create it *and* copy the contents of the "photos" directory with this command:
+This assumes that the **images** directory already exists. If it doesn't, you can create it *and* copy the contents of the **photos** directory by using this command:
 
 ```bash
 cp -r photos images
 ```
 
-The `-r` stands for "recursive." An added benefit of the `-r` flag is that if "photos" contains subdirectories of its own, they, too, are copied to the "images" directory.
+The `-r` stands for "recursive." An added benefit of the `-r` flag is that if **photos** contains subdirectories of its own, they too are copied to the **images** directory.
 
 ### `ps` command
 
-The `ps` command gives you a snapshot of all the currently running processes. By itself, with no arguments, it shows all your shell processes — in other words, not much. But it's a different story when you include a `-e` flag:
+The `ps` command gives you a snapshot of all the currently running processes. By itself, with no arguments, it shows all your shell processes—in other words, not much. But it's a different story when you include a `-e` flag:
 
 ```bash
 ps -e
@@ -196,13 +196,13 @@ ps -e
 
 `-e` lists *all* running processes, and there are typically many of them.
 
-For an even more comprehensive look at what processes are running in the system, use the `-ef` flag:
+For a more comprehensive look at what processes are running in the system, use the `-ef` flag:
 
 ```bash
 ps -ef 
 ```
 
-This shows the names of all the running processes, their process identification numbers (PIDs), the PIDs of their parents (PPIDs), when they began (STIME), what terminal, if any, they're attached to (TTY), how much CPU time they have racked up (TIME), and their full path names. Here is an abbreviated example:
+This flag shows the names of all the running processes, their process identification numbers (PIDs), the PIDs of their parents (PPIDs), and when they began (STIME). It also shows what terminal, if any, they're attached to (TTY), how much CPU time they've racked up (TIME), and their full path names. Here is an abbreviated example:
 
 ```
 UID         PID   PPID  C STIME TTY          TIME CMD
@@ -217,32 +217,32 @@ root          9      2  0 13:35 ?        00:00:01 [ksoftirqd/0]
 root         10      2  0 13:35 ?        00:00:02 [rcu_sched]
 ```
 
-As an aside, it is not uncommon to find documentation that shows `ps` being used this way:
+As an aside, you might find documentation that shows `ps` being used this way:
 
 ```bash
 ps aux
 ```
 
-`ps aux` and `ps -ef` are one and the same. This duality traces back to historical differences between POSIX Unix systems, of which Linux is one, and BSD Unix systems, the most common of which is macOS. In the beginning, POSIX used `-ef` while the BSD required `aux`. Today, both operating-system families accept either format. 
+`ps aux` and `ps -ef` are the same. This duality traces back to historical differences between POSIX Unix systems (of which Linux is one) and BSD Unix systems (the most common of which is macOS). In the beginning, POSIX used `-ef` while the BSD required `aux`. Today, both operating-system families accept either format. 
 
 This serves as an excellent reminder of why you should look closely at the manual for all Linux commands. Learning Bash is like learning English as a second language. There are many exceptions to the rules.
 
 ### `w` command
 
-Users come, users go, and sometimes you get users you don't want at all. When an employee leaves to pursue other opportunities, the sysadmin is called upon to ensure that the worker can no longer log into the company's computer systems. Sysadmins are also expected to know who's logged in — and who shouldn't be.
+Users come, users go, and sometimes you get users you don't want at all. When an employee leaves to pursue other opportunities, the sysadmin is called upon to ensure that the worker can no longer log in to the company's computer systems. Sysadmins are also expected to know who's logged in—and who shouldn't be.
 
-To find out who's on your servers, Linux provides the `w` (for "who") command. It displays information about the users currently on the computer system and those users' activities. `w` shows who's in the system, their user names, their IP addresses, when they logged in, what processes they are currently running, and how much time those processes are consuming. It is a valuable tool for sysadmins.
+To find out who's on your servers, Linux provides the `w` (for "who") command. It displays information about the users currently on the computer system and those users' activities. `w` shows user names, their IP addresses, when they logged in, what processes they're currently running, and how much time those processes are consuming. It's a valuable tool for sysadmins.
 
 ## Bash I/O operators
 
-You can do a lot in Linux just by exercising Bash commands and their many options. But you can really get work done when you combine commands using I/O operators:
+You can do a lot in Linux just by exercising Bash commands and their many options. But you can really get work done when you combine commands by using I/O operators:
 
 - `<` for redirecting input to a source other than the keyboard
 - `>` for redirecting output to destination other than the screen
 - `>>` for doing the same, but appending rather than overwriting
 - `|` for piping output from one command to the input of another
 
-Suppose you want to list everything in the pwd but capture the output in a file named **listing.txt**. The following command does just that:
+Suppose you want to list everything in the current directory but capture the output in a file named **listing.txt**. The following command does just that:
 
 ```bash
 ls > listing.txt
@@ -254,7 +254,7 @@ If **listing.txt** already exists, it gets overwritten. If you use the `>>` oper
 ls >> listing.txt
 ```
 
-The piping operator is extremely powerful (and often used). It redirects the output of the first command to the input of the second command. Let's say you use `cat` to display the contents of a large file, but the content scrolls by too quickly for you to read. You can make the output more manageable by piping the results to another command such as `more`. The following command lists all the currently running processes. But once the screen is full, the output pauses until you press **Enter** to show the next line:
+The piping operator is extremely powerful (and often used). It redirects the output of the first command to the input of the second command. Let's say you use `cat` to display the contents of a large file, but the content scrolls by too quickly for you to read. You can make the output more manageable by piping the results to another command such as `more`. The following command lists all the currently running processes. But once the screen is full, the output pauses until you select **Enter** to show the next line:
 
 ```bash
 ps -ef | more
@@ -266,7 +266,7 @@ You can also pipe output to `head` to see just the first several lines:
 ps -ef | head
 ```
 
-Or suppose you want to filter the output to include only those lines containing the word "daemon." One way to do that is by piping the output from `ps` to Linux's incredibly useful `grep` utility:
+Or suppose you want to filter the output to include only the lines that contain the word "daemon." One way to do that is by piping the output from `ps` to Linux's useful `grep` tool:
 
 ```bash
 ps -ef | grep daemon
