@@ -16,7 +16,7 @@ To call the Translator Text API, you must obtain an API key. As with the Compute
     az cognitiveservices account create --resource-group contoso-travel-rg --name translator-text --location global --kind TextTranslation --sku F0 --yes
     ```
 
-    Unlike the Computer Vision API, which requires you to specify an Azure region, the Translator Text API is a "global" API that doesn't live in a specific region. That's the reason for the `--location global` parameter. Among other things, this means that you don't have to retrieve an endpoint URL for the Translator Text API as you do for the Computer Vision API. [One endpoint](https://api.cognitive.microsofttranslator.com/translate?api-version=3.0) serves all regions.
+    Unlike the Computer Vision API, which requires you to specify an Azure region, the Translator Text API is a "global" API that doesn't live in a specific region. That's the reason for the `--location global` parameter. Among other things, this means that you don't have to retrieve an endpoint URL for the Translator Text API as you do for the Computer Vision API. One endpoint, <https://api.cognitive.microsofttranslator.com/translate?api-version=3.0>, serves all regions.
 
 1. Use the following command to obtain an API key for the Translator Text API:
 
