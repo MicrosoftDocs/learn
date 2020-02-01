@@ -1,19 +1,19 @@
-The ratings API is a Node.js application written using the Express framework. It stores and retrieves items and their ratings in a MongoDB.
+The ratings API is a Node.js application written by using the Express framework. It stores and retrieves items and their ratings in a MongoDB database.
 
-Recall that you've already created an Azure Container Registry and used it to build a Docker image of the API and store it in a repository.
+Recall that you've already created an Azure Container Registry. You used it to build a Docker image of the API and store it in a repository.
 
-In this exercise, you're going to deploy that Docker image of the API to the Azure Kubernetes Service (AKS) by creating a Kubernetes [deployment](https://docs.microsoft.com/azure/aks/concepts-clusters-workloads#deployments-and-yaml-manifests?azure-portal=true), and expose it through a load balancer by creating a Kubernetes [service](https://docs.microsoft.com/azure/aks/concepts-network#services?azure-portal=true). Additionally, you're going to configure the API to connect to the MongoDB database by attaching the Kubernetes [secret](https://docs.microsoft.com/azure/aks/concepts-security#kubernetes-secrets?azure-portal=true).
+In this exercise, you deploy that Docker image of the API to the Azure Kubernetes Service (AKS) by creating a Kubernetes [deployment](https://docs.microsoft.com/azure/aks/concepts-clusters-workloads#deployments-and-yaml-manifests?azure-portal=true). You then expose it through a load balancer by creating a Kubernetes [service](https://docs.microsoft.com/azure/aks/concepts-network#services?azure-portal=true). Additionally, you configure the API to connect to the MongoDB database by attaching the Kubernetes [secret](https://docs.microsoft.com/azure/aks/concepts-security#kubernetes-secrets?azure-portal=true).
 
 By the end of this unit, you'll have the ratings API deployed and configured to communicate with MongoDB.
 
 ![Deployed resources on the Azure Kubernetes Service cluster](../media/05-arch-2.svg)
 
 > [!TIP]
-> Azure Cloud Shell includes an [integrated file editor](https://docs.microsoft.com/azure/cloud-shell/using-cloud-shell-editor). The Cloud Shell editor supports features such as language highlighting, the command palette, and a file explorer. For simple file creation and editing, launch the editor by running `code .` in the Cloud Shell terminal. This action opens the editor with your active working directory set in the terminal. To directly open a file for quick editing, run `code <filename>` to open the editor without the file explorer. To open the editor via UI button, click the `{}` editor icon from the toolbar. This will open the editor and default the file explorer to the `/home/<user>` directory.
+> Azure Cloud Shell includes an [integrated file editor](https://docs.microsoft.com/azure/cloud-shell/using-cloud-shell-editor). The Cloud Shell editor supports features such as language highlighting, the command palette, and a file explorer. For simple file creation and editing, launch the editor by running `code .` in the Cloud Shell terminal. This action opens the editor with your active working directory set in the terminal. To directly open a file for quick editing, run `code <filename>` to open the editor without the file explorer. To open the editor via UI button, select the `{}` editor icon on the toolbar. This action opens the editor and defaults the file explorer to the `/home/<user>` directory.
 
 ## Create a Kubernetes deployment file for the ratings API
 
-1. Create a file called `ratings-api-deployment.yaml` using the integrated editor.
+1. Create a file called `ratings-api-deployment.yaml` by using the integrated editor.
 
     ```bash
     code ratings-api-deployment.yaml
@@ -70,25 +70,25 @@ By the end of this unit, you'll have the ratings API deployed and configured to 
 
     - **Image**
 
-        You'll create a deployment with two replicas running the image you pushed to the Azure Container Registry you created previously, for example, `acr4229.azurecr.io/ratings-api:v1`. The container listens to port `3000`. The deployment and the pods are going to be labeled with `app=ratings-api`.
+        You'll create a deployment with two replicas running the image you pushed to the Azure Container Registry you created previously, for example, `acr4229.azurecr.io/ratings-api:v1`. The container listens to port `3000`. The deployment and the pods are labeled with `app=ratings-api`.
 
     - **Environment variables and secrets**
 
-        The ratings API expects to find the connection details to the MongoDB in an environment variable named `MONGODB_URI`. By using `valueFrom` and `secretRef`, you can reference values stored in the Kubernetes secret `mongosecret` created when you deployed MongoDB.
+        The ratings API expects to find the connection details to the MongoDB database in an environment variable named `MONGODB_URI`. By using `valueFrom` and `secretRef`, you can reference values stored in `mongosecret`, the Kubernetes secret that was created when you deployed MongoDB.
 
     - **Resource requests and limits**
 
-        Each container instance will be allocated a minimum of **0.25 cores** and **64 Mb of memory**. The Kubernetes Scheduler will look for a node with available capacity to schedule such pod. A Container may or may not be allowed to exceed its CPU limit for extended periods. However, it won't be killed for excessive CPU usage. If a container exceeds its memory limit, it could be terminated.
+        Each container instance is allocated a minimum of 0.25 cores and 64 Mb of memory. The Kubernetes Scheduler looks for a node with available capacity to schedule such a pod. A container might or might not be allowed to exceed its CPU limit for extended periods. But it won't be killed for excessive CPU usage. If a container exceeds its memory limit, it could be terminated.
 
     - **Readiness and liveness probes**
 
-        The application exposes a health check endpoint at `/healthz`. If the API is unable to connect to MongoDB, the health check endpoint will return a failure. You can use these probes to configure Kubernetes and check whether the container is healthy and ready to receive traffic.
+        The application exposes a health check endpoint at `/healthz`. If the API is unable to connect to MongoDB, the health check endpoint returns a failure. You can use these probes to configure Kubernetes and check whether the container is healthy and ready to receive traffic.
 
-1. Save the file with <kbd>Ctrl-s</kbd> and close the editor with <kbd>Ctrl-q</kbd>. You can also open the `...` action panel in the top right of the editor and select **Save**, then select **Close editor**.
+1. To save the file, select <kbd>Ctrl+S</kbd>. To close the editor, select <kbd>Ctrl+Q</kbd>. You can also open the `...` action panel in the upper right of the editor. Select **Save**, and then select **Close editor**.
 
 ## Apply the Kubernetes deployment file
 
-1. Apply the configuration using the `kubectl apply` command. You'll deploy the service in the `ratingsapp` namespace.
+1. Apply the configuration by using the `kubectl apply` command. Deploy the service in the `ratingsapp` namespace.
 
     ```bash
     kubectl apply \
@@ -96,13 +96,13 @@ By the end of this unit, you'll have the ratings API deployed and configured to 
         -f ratings-api-deployment.yaml
     ```
 
-    You'll see an output like the example below.
+    You'll see an output like this example.
 
     ```output
     deployment.apps/ratings-api created
     ```
 
-1. Watch the pods rolling out. You'll query for pods in the `ratingsapp` namespace that are labeled with `app=ratings-api`.
+1. Watch the pods rolling out. Query for pods in the `ratingsapp` namespace that are labeled with `app=ratings-api`.
 
     ```bash
     kubectl get pods \
@@ -110,14 +110,14 @@ By the end of this unit, you'll have the ratings API deployed and configured to 
         -l app=ratings-api -w
     ```
 
-    In a few seconds, you'll see the pods transition to the `Running` state. Use <kbd>Ctrl-c</kbd> to stop watching.
+    In a few seconds, you'll see the pods transition to the `Running` state. Select <kbd>Ctrl+C</kbd> to stop watching.
 
     ```output
     NAME                           READY   STATUS    RESTARTS   AGE
     ratings-api-564446d9c4-6rvvs   1/1     Running   0          42s
     ```
 
-    If the pods aren't starting, not ready or are crashing, you can view their logs using `kubectl logs <pod name> --namespace ratingsapp` and `kubectl describe pod <pod name> --namespace ratingsapp`.
+    If the pods aren't starting, aren't ready, or are crashing, you can view their logs by using `kubectl logs <pod name> --namespace ratingsapp` and `kubectl describe pod <pod name> --namespace ratingsapp`.
 
 1. Check the status of the deployment.
 
@@ -125,7 +125,7 @@ By the end of this unit, you'll have the ratings API deployed and configured to 
     kubectl get deployment ratings-api --namespace ratingsapp
     ```
 
-    The deployment should show one replica is ready.
+    The deployment should show that one replica is ready.
 
     ```output
     NAME          READY   UP-TO-DATE   AVAILABLE   AGE
@@ -134,9 +134,9 @@ By the end of this unit, you'll have the ratings API deployed and configured to 
 
 ## Create a Kubernetes service file for the ratings API service
 
-To simplify the network configuration for application workloads, Kubernetes uses [Services](https://docs.microsoft.com/azure/aks/concepts-network#services?azure-portal=true) to group a set of pods and provide network connectivity logically.
+To simplify the network configuration for application workloads, Kubernetes uses [services](https://docs.microsoft.com/azure/aks/concepts-network#services?azure-portal=true) to group a set of pods and provide network connectivity logically.
 
-1. Create a file called `ratings-api-service.yaml` using the integrated editor.
+1. Create a file called `ratings-api-service.yaml` by using the integrated editor.
 
     ```bash    
     code ratings-api-service.yaml
@@ -163,21 +163,21 @@ To simplify the network configuration for application workloads, Kubernetes uses
 
     - **Selector**
 
-     The selector determines the set of pods targeted by a service. In the example below, Kubernetes will load balance traffic to pods that have the label `app: ratings-api`, which was defined when creating the deployment. The controller for the service continuously scans for pods matching that label to add them to the load balancer.
+     The selector determines the set of pods targeted by a service. In the following example, Kubernetes load balances traffic to pods that have the label `app: ratings-api`. This label was defined when you created the deployment. The controller for the service continuously scans for pods that match that label to add them to the load balancer.
 
     - **Ports**
 
-    A service can map an incoming `port` to a `targetPort`. The incoming port is what the service would respond to, while the target port is what the pods are configured to listen to. For example, the service will be exposed internally within the cluster at `ratings-api.ratingsapp.svc.cluster.local:80` and will load balance the traffic to the ratings-api pods listening on port `3000`.
+    A service can map an incoming `port` to `targetPort`. The incoming port is what the service responds to. The target port is what the pods are configured to listen to. For example, the service is exposed internally within the cluster at `ratings-api.ratingsapp.svc.cluster.local:80` and load balances the traffic to the ratings-api pods listening on port `3000`.
 
     - **Type**
 
-    A service of type `ClusterIP` creates an internal IP address for use within the cluster. Choosing this value makes the Service only reachable from within the cluster. Cluster IP is the default service type.
+    A service of type `ClusterIP` creates an internal IP address for use within the cluster. Choosing this value makes the service reachable only from within the cluster. Cluster IP is the default service type.
 
-1. Save the file with <kbd>Ctrl-s</kbd> and close the editor with <kbd>Ctrl-q</kbd>.
+1. To save the file, select <kbd>Ctrl+S</kbd>. To close the editor, select <kbd>Ctrl+Q</kbd>.
 
-## Apply the Kubernetes service file to create a load balanced service
+## Apply the Kubernetes service file to create a load-balanced service
 
-1. Apply the configuration using the `kubectl apply` command and use the  `ratingsapp` namespace.
+1. Apply the configuration by using the `kubectl apply` command, and use the `ratingsapp` namespace.
 
     ```bash
     kubectl apply \
@@ -185,39 +185,39 @@ To simplify the network configuration for application workloads, Kubernetes uses
         -f ratings-api-service.yaml
     ```
 
-    You'll see an output like the example below.
+    You'll see an output like this example.
 
     ```output
     service/ratings-api created
     ```
 
-1. Check the status of the service
+1. Check the status of the service.
 
     ```bash
     kubectl get service ratings-api --namespace ratingsapp
     ```
 
-    The service should show an internal IP where it would be accessible. By default, Kubernetes will create a DNS entry mapping to `[service name].[namespace].svc.cluster.local`, meaning this service will also be accessible at `ratings-api.ratingsapp.svc.cluster.local`. Notice how the `CLUSTER-IP` comes from the Kubernetes service address range you defined when creating the cluster.
+    The service should show an internal IP where it would be accessible. By default, Kubernetes creates a DNS entry that maps to `[service name].[namespace].svc.cluster.local`, which means this service is also accessible at `ratings-api.ratingsapp.svc.cluster.local`. Notice how `CLUSTER-IP` comes from the Kubernetes service address range you defined when you created the cluster.
 
     ```output
     NAME          TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S)   AGE
     ratings-api   ClusterIP   10.2.0.102   <none>        80/TCP    60s
     ```
 
-1. Finally, let's validate the endpoints. Services load balance traffic to the pods through endpoints. The endpoint has the same name as the service. Validate that the service is pointing to one endpoint, corresponding to the pod. As you add more replicas, or as pods come and go, Kubernetes automatically keeps the endpoints updated.
+1. Finally, let's validate the endpoints. Services load balance traffic to the pods through endpoints. The endpoint has the same name as the service. Validate that the service points to one endpoint that corresponds to the pod. As you add more replicas, or as pods come and go, Kubernetes automatically keeps the endpoints updated.
 
     ```bash
     kubectl get endpoints ratings-api --namespace ratingsapp
     ```
 
-    You'll get a similar output. Notice how the `ENDPOINTS` IPs come from the subnet you defined when creating the cluster.
+    You'll get a similar output. Notice how the `ENDPOINTS` IPs come from the subnet you defined when you created the cluster.
 
     ```output
     NAME          ENDPOINTS                          AGE
     ratings-api   10.240.0.11:3000                   1h
     ```
 
-You've now created a deployment of the **ratings-api** consisting of two replicas and exposed it as an internal (ClusterIP) service.
+You've now created a deployment of **ratings-api** that consists of two replicas and exposed it as an internal (ClusterIP) service.
 
-- **Deployment/ratings-api** - The API, running a replica, which reads the MongoDB connection details by mounting the **mongosecret** as an environment variable.
-- **Service/ratings-api** - The API will be exposed internally within the cluster at **ratings-api.ratingsapp.svc.cluster.local:80**.
+- **Deployment/ratings-api**: The API, running a replica, which reads the MongoDB connection details by mounting **mongosecret** as an environment variable.
+- **Service/ratings-api**: The API is exposed internally within the cluster at **ratings-api.ratingsapp.svc.cluster.local:80**.

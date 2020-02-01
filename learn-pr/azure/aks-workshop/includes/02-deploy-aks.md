@@ -151,7 +151,7 @@ If you don't specify the namespace when you work with Kubernetes resources, the 
     kubectl get namespace
     ```
 
-    You get a list of namespaces similar to the following output:
+    You get a list of namespaces similar to this output.
 
     ```output
     NAME              STATUS   AGE

@@ -24,7 +24,7 @@ In this unit, you'll create an Azure Container Registry by using the Azure CLI.
         --sku Standard
     ```
 
-    You'll see a response similar to the following JSON example.
+    You'll see a response similar to this JSON example.
 
     ```json
     {
@@ -95,7 +95,7 @@ The ratings API is a Node.js application that's built by using Express. The [sou
     > [!NOTE]
     > Don't forget the period `.` at the end of the preceding command. It represents the source directory that contains the Docker file. In this case, it's the current directory. Because you didn't specify the name of a file with the --file parameter, the command looks for a file called **Dockerfile** in the current directory.
 
-    In a few minutes, you'll see a response similar to the following example.
+    In a few minutes, you'll see a response similar to this example.
 
     ```output
     2019/12/28 02:04:11 Successfully pushed image: acr4229.azurecr.io/ratings-api:v1
@@ -152,7 +152,7 @@ The ratings front end is a Node.js application that was built by using Vue and W
         --image ratings-web:v1 .
     ```
 
-    In a few minutes, you'll see a response similar to the following example.
+    In a few minutes, you'll see a response similar to this example.
 
     ```output
     2019/12/28 02:09:51 Successfully pushed image: acr4229.azurecr.io/ratings-web:v1
@@ -189,7 +189,7 @@ The ratings front end is a Node.js application that was built by using Vue and W
         --output table
     ```
 
-    The output from this command looks similar to the following example.
+    The output from this command looks similar to this example.
 
     ```output
     Result

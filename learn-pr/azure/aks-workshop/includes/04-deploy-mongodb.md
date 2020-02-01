@@ -22,7 +22,7 @@ By the end of this unit, you'll have a MongoDB deployment done by using Helm. Yo
     helm search repo stable
     ```
 
-    You'll see a list of the available charts, like the following example.
+    You'll see a list of the available charts, like this example.
 
     ```output
     NAME                           CHART VERSION   APP VERSION   DESCRIPTION
@@ -45,7 +45,7 @@ By the end of this unit, you'll have a MongoDB deployment done by using Helm. Yo
 
     You provide parameters with the `--set` switch and a comma-separated list of `key=value` pairs. Pay attention to the `mongodbUsername`, `mongodbPassword`, and `mongodbDatabase` parameters and their values, which set the username, password, and database name, respectively. The application expects that the database is called **ratingsdb**. The `helm install` command is a powerful command with many capabilities. To learn more about it, see [Using Helm](https://helm.sh/docs/intro/using_helm/?azure-portal=true).
 
-1. Once released, you should get an output similar to this example. Make a note of the MongoDB host, which should be `ratings-mongodb.ratingsapp.svc.cluster.local`, if you used the same parameters.
+1. After the installation is finished, you should get an output similar to this example. Make a note of the MongoDB host, which should be `ratings-mongodb.ratingsapp.svc.cluster.local`, if you used the same parameters.
 
     ```output
     NAME: ratings
@@ -84,7 +84,7 @@ By the end of this unit, you'll have a MongoDB deployment done by using Helm. Yo
     kubectl describe secret mongosecret --namespace ratingsapp
     ```
 
-    The output from this command looks similar to the following example.
+    The output from this command looks similar to this example.
 
     ```output
     Name:         mongosecret
