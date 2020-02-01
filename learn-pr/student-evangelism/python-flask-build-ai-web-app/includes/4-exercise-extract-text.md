@@ -173,7 +173,7 @@ Finish by saving your changes to **index.html** and **app.py**.
 
 ## Extract text from photos
 
-Now let's run the modified site, upload a few photos, and see if the Computer Vision API lives up to its billing.
+Now let's run the modified site, upload a few photos, and try out the Computer Vision API.
 
 1. If you're running Windows, run the following commands to create environment variables that contain the API key and endpoint you retrieved for the Computer Vision API. Replace `<computer_vision_api_key>` with the API key and `<computer_vision_endpoint>` with the endpoint URL.
 
