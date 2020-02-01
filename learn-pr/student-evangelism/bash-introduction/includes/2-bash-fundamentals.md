@@ -78,7 +78,7 @@ ls *.png
 > [!NOTE]
 > Linux has no formal concept of a file-name extension as other operating systems do. This doesn't mean that PNG files won't have a **.png** extension. It simply means that Linux attaches no special significance to the fact that the file names end with **.png**.
 
-Now let's say the pwd also contains JPEG files. Some end in **.jpg**, while others end in **.jpeg.** Here's one way to list all the JPEG files:
+Now let's say the current directory also contains JPEG files. Some end in **.jpg**, while others end in **.jpeg.** Here's one way to list all the JPEG files:
 
 ```bash
 ls *.jpg *.jpeg
@@ -96,13 +96,13 @@ The `*` wildcard matches on zero or more characters, but the `?` wildcard repres
 ls 000?.jpg
 ```
 
-Yet another way to use wildcards to filter output is to use square brackets, which denote groups of characters. The following command lists all the files in the pwd whose names contain a period immediately followed a lowercase J or P. It lists all the **.jpg**, **.jpeg**, and **.png** files, but not **.gif** files:
+Yet another way to use wildcards to filter output is to use square brackets, which denote groups of characters. The following command lists all the files in the current directory whose names contain a period immediately followed a lowercase J or P. It lists all the **.jpg**, **.jpeg**, and **.png** files, but not **.gif** files:
 
 ```bash
 ls *.[jp]*
 ```
 
-In Linux, file names and the commands that operate upon them are case-sensitive. So to list all the files in the pwd whose names contain periods followed by an uppercase *or* lowercase J or P, you could enter this:
+In Linux, file names and the commands that operate upon them are case-sensitive. So to list all the files in the current directory whose names contain periods followed by an uppercase *or* lowercase J or P, you could enter this:
 
 ```bash
 ls *.[jpJP]*
