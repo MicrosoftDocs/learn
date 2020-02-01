@@ -1,21 +1,21 @@
-Now that you have an environment for Python and Flask prepared and have the basics of Flask under your belt, it's time to build a website. A Flask website begins with an **app.py** file and basic assets such as HTML, CSS, and images. You will start by using Git to download a set of starter files for the Contoso Travel site. Then you will enhance the site to support photo uploads.
+Now that you have an environment for Python and Flask prepared and have the basics of Flask under your belt, it's time to build a website. A Flask website begins with an **app.py** file and basic assets such as HTML, CSS, and images. You start by using Git to download a set of starter files for the Contoso Travel site. Then you enhance the site to support photo uploads.
 
-Resources that are used in this exercise are located in a Git code samples repository: <https://github.com/MicrosoftDocs/mslearn-build-ai-web-app-with-python-and-flask>.
+Resources that are used in this exercise are located in a [Git repository for code samples](https://github.com/MicrosoftDocs/mslearn-build-ai-web-app-with-python-and-flask).
 
 ## Create a site that supports photo uploads
 
 1. If Git isn't installed on your computer, go to the [Git website](https://git-scm.com/) and install it now. Versions are available for Windows, macOS, and Linux.
 
-1. In a Command Prompt window or terminal, `cd` to the project directory you created in earlier in the module. Then use the following command to clone the GitHub repo containing the starter files for the website:
+1. In a Command Prompt window or terminal, change (`cd`) to the project directory that you created in earlier in the module. Then use the following command to clone the GitHub repo that contains the starter files for the website:
 
     ```bash
     git clone https://github.com/MicrosoftDocs/mslearn-build-ai-web-app-with-python-and-flask.git
     cd mslearn-build-ai-web-app-with-python-and-flask/src/starter
     ```
 
-    This will copy all the files from the sample into a subdirectory called **mslearn-build-ai-web-app-with-python-and-flask**, then change directories into the **src** directory where all the project code.
+    This command copies all the files from the sample into a subdirectory called **mslearn-build-ai-web-app-with-python-and-flask**. The command then changes directories to the **src** directory, where all the project code is.
 
-1. Change directories into the **starter** directory. This holds a template Flask app that we will develop on.
+1. Change directories to the **starter** directory. This holds a template Flask app that we will develop on.
 
     ```bash
     cd starter
@@ -23,13 +23,13 @@ Resources that are used in this exercise are located in a Git code samples repos
 
     You may have noticed that there's also a **final** directory. The code in this directory is the finished version of what you will build. If you get confused at any point while writing code, feel free to check this directory for what your code should look like.
 
-1. Take a moment to browse the files that were copied into the **starter** directory. Verify that they include:
+1. Take a moment to browse through the files that were copied into the **starter** directory. Verify that they include:
 
-    - **app.py**, which holds the Python code that drives the site
-    - **templates/index.html**, which contains the site's home page
-    - **static/main.css**, which contains CSS to dress up the home page
-    - **static/banner.jpg**, which contains the website banner
-    - **static/placeholder.jpg**, which contains a placeholder image for photos that have yet to be uploaded
+    - **app.py**, which holds the Python code that drives the site.
+    - **templates/index.html**, which contains the site's home page.
+    - **static/main.css**, which contains CSS to dress up the home page.
+    - **static/banner.jpg**, which contains the website banner.
+    - **static/placeholder.jpg**, which contains a placeholder image for photos that have yet to be uploaded.
 
     Here's what's in **app.py** right now:
 
@@ -38,41 +38,41 @@ Resources that are used in this exercise are located in a Git code samples repos
 
     app = Flask(__name__)
 
-    # Define route for the app's one and only page
+    # Define a route for the app's one and only page
     @app.route("/")
     def index():
         return render_template("index.html")
     ```
 
-    Currently, the app consists of a single page named **index.html** located in the *templates* subdirectory. **index.html** doesn't contain any special expressions at the moment—it is simply a static file—but that will change as you develop the site. **index.html** loads the popular Bootstrap framework and uses it to make the page responsive. It also loads **main.css** from the "static" subdirectory and uses the CSS styles defined there to give the page a professional look.
+    Currently, the app consists of a single page named **index.html** located in the **templates** subdirectory. **index.html** doesn't contain any special expressions at the moment—it's simply a static file—but that will change as you develop the site. **index.html** loads the popular Bootstrap framework and uses it to make the page responsive. It also loads **main.css** from the **static** subdirectory and uses the CSS styles defined there to give the page a professional look.
 
-1. Return to the Command Prompt window or terminal where your virtual Python environment is active and make sure that the **starter** directory is the current directory.
+1. Return to the Command Prompt window or terminal where your virtual Python environment is active, and make sure that the **starter** directory is the current directory.
 
     > [!NOTE]
-    > If you closed the Command Prompt or terminal after activating the virtual environment, simply open a new one, `cd` to the **starter** directory, and use a `env\scripts\activate` command (Windows) or a `source env/bin/activate` command (macOS and Linux) to activate it again.
+    > If you closed the Command Prompt window or terminal after activating the virtual environment, simply open a new one, change (`cd`) to the **starter** directory, and use a `env\scripts\activate` command (Windows) or a `source env/bin/activate` command (macOS and Linux) to activate it again.
 
-1. If you are running Windows, execute the following command to create an environment variable named FLASK_ENV that tells Flask to run in development mode:
+1. If you're running Windows, run the following command to create an environment variable named **FLASK_ENV** that tells Flask to run in development mode:
 
     ```bash
     set FLASK_ENV=development
     ```
 
-    If you are running Linux or macOS, use this command instead:
+    If you're running Linux or macOS, use this command instead:
 
     ```bash
     export FLASK_ENV=development
     ```
 
-    Running Flask in development mode is helpful when you're developing a website because Flask automatically reloads any files that change while the site is running. If you let Flask default to production mode and change the contents of an HTML file or other asset, you have to restart Flask to see the change in your browser.
+    Running Flask in development mode is helpful when you're developing a website because Flask automatically reloads any files that change while the site is running. If you let Flask default to production mode and change the contents of an HTML file or another asset, you have to restart Flask to see the change in your browser.
 
-1. Now use the following commands to navigate to the code folder and start Flask:
+1. Now use the following commands to go to the code folder and start Flask:
 
     ```bash
     cd src
     flask run
     ```
 
-1. Open a browser and navigate to <http://localhost:5000/>. Confirm that the website appears in the browser as shown below.
+1. Open a browser and go to <http://localhost:5000/>. Confirm that the website appears in the browser as shown in this screenshot:
 
     ![Contoso Travel](../media/initial-run.png)
 
@@ -82,13 +82,13 @@ The page isn't functional yet. It doesn't support photo uploads, even though the
 
 ## Add support for uploading photos
 
-In this exercise, you will modify **index.html** and **app.py** so users can upload photos to the website. You can use any text editor you'd like, but we recommend using Visual Studio Code — the free, lightweight Microsoft source-code editor for Windows, macOS, and Linux that features IntelliSense, integrated Git support, and more.
+In this exercise, you modify **index.html** and **app.py** so users can upload photos to the website. You can use any text editor you'd like, but we recommend using Visual Studio Code. It's a free, lightweight Microsoft source-code editor for Windows, macOS, and Linux that features IntelliSense, integrated Git support, and more.
 
-1. If Visual Studio Code isn't installed on your PC, go to <https://code.visualstudio.com/> and install it now.
+1. If Visual Studio Code isn't installed on your PC, go to the [Visual Studio Code website](https://code.visualstudio.com/) and install it now.
 
-1. Start Visual Studio Code and use the **File** > **Open Folder** command to open the **starter** directory containing the website.
+1. Start Visual Studio Code and use the **File** > **Open Folder** command to open the **starter** directory that contains the website.
 
-1. Use Visual Studio Code's Explorer to open **index.html** in the *templates* folder. **index.html** is the website's home page, and the one that's used to upload photos.
+1. Use Visual Studio Code Explorer to open **index.html** in the *templates* folder. **index.html** is the website's home page, and the one that's used to upload photos.
 
     ![Open index.html](../media/open-index.png) ](../media/open-index.png#lightbox)
 
@@ -143,7 +143,7 @@ In this exercise, you will modify **index.html** and **app.py** so users can upl
         return render_template("index.html", image_uri=uri)
     ```
 
-    The revised **app.py** still serves up the content in **index.html** when the home page is requested. But when the user uploads a photo and the page is requested again with a POST command, the new code retrieves the uploaded image from the request (`image = request.files["file"]`), base-64 encodes it to create a data URI, and assigns the data URI to the `<img>` element declared in the page. This technique is common for displaying an uploaded image in a webpage without writing the image to a temporary file on disk.
+    The revised **app.py** file still serves up the content in **index.html** when the home page is requested. But when the user uploads a photo and the page is requested again with a POST command, the new code retrieves the uploaded image from the request (`image = request.files["file"]`), base-64 encodes it to create a data URI, and assigns the data URI to the `<img>` element declared in the page. This technique is common for displaying an uploaded image in a webpage without writing the image to a temporary file on disk.
 
 1. Return to **index.html** and find the `<img>` element on line 42. Replace `/static/placeholder.png` on that line with `{{ image_uri }}`. Here is the modified line:  
 
@@ -159,7 +159,7 @@ Finish up by saving your changes to **index.html** and **app.py**. It's time to 
 
 Let's make sure your changes have the desired effect by uploading a photo to the site.
 
-1. Assuming Flask is still running in the **starter** directory (if it's not, you can start it again with a `flask run` command), either refresh the page in your browser or open a new browser instance and go to <http://localhost:5000/>.
+1. Make sure that Flask is still running in the **starter** directory. If it's not, you can start it again by using a `flask run` command. Then either refresh the page in your browser or open a new browser instance and go to <http://localhost:5000/>.
 
 1. Select the **Upload Photo** button and select a photo from your local file system.
 

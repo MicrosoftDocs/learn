@@ -12,9 +12,9 @@ def index():
 
 The first statement imports a class named `Flask` from the `flask` package installed with `pip`. The second statement instantiates that class to create a Flask app and assigns it to the variable named `app`.
 
-The fourth and fifth statements define a function that's called when the user requests the site's home page—for example, **https:\//www\.contoso\.com/**. The preceding statement, `@app.route("/")`, is a *decorator* that maps the route ("/") to the function. The function name is unimportant, but `index` is commonly used as the name for the function that renders the site's home page.
+The fourth and fifth statements define a function that's called when the user requests the site's home page—for example, https:\//www\.contoso\.com/. The preceding statement, `@app.route("/")`, is a *decorator* that maps the route ("/") to the function. The function name is unimportant, but `index` is commonly used as the name for the function that renders the site's home page.
 
-If you want to use a name other **app.py** for the Python file, identify the file with a FLASK_APP environment variable and Flask will execute it rather than **app.py**.
+If you want to use a name other than **app.py** for the Python file, identify the file with a `FLASK_APP` environment variable. Flask will run that rather than running **app.py**.
 
 ## Routing in Flask
 
@@ -53,7 +53,7 @@ You can continue adding routes and functions until all the pages that your site 
 
 You typically don't want to include inline HTML in the functions that render your site's pages. Instead, you want to define those pages in HTML files.
 
-Flask contains a function named `render_template()` that looks for HTML files in a subdirectory named "templates" and renders them out to the page. The following example produces the exact same output as the previous example. It assumes that the directory in which **app.py** is located has a subdirectory named "templates" containing HTML files named **index.html**, **about.html**, and **contact.html**:
+Flask contains a function named `render_template()` that looks for HTML files in a subdirectory named **templates** and renders them out to the page. The following example produces the same output as the previous example. It assumes that the directory in which **app.py** is located has a subdirectory named **templates**. The subdirectory contains HTML files named **index.html**, **about.html**, and **contact.html**.
 
 ```python
 from flask import Flask, render_template
@@ -76,7 +76,7 @@ def contact():
     return render_template("contact.html")
 ```
 
-Why is the function named `render_template()`? In fact, it can do more than simply load static HTML files. It also allows you to pass it user-defined variables and inject their values into the page at runtime. You could, for example, place a file named **master.html** in the "templates" subdirectory and include the following markup in it:
+Why is the function named `render_template()`? In fact, it can do more than simply load static HTML files. It also allows you to pass it user-defined variables and inject their values into the page at runtime. You could, for example, place a file named **master.html** in the **templates** subdirectory and include the following markup in it:
 
 ```html
 <h1>{{ message }}</h1>
@@ -105,11 +105,11 @@ def contact():
     return render_template("master.html", message="This is the Contact Us page")
 ```
 
-In effect, **master.html** becomes a template for output, and you customize the output for each page by passing a variable named `message` into the template and referencing that variable in the template using `{{ ... }}` expressions. For more information about using templates in Flask, see [Templates](http://flask.pocoo.org/docs/1.1.x/tutorial/templates/).
+In effect, **master.html** becomes a template for output. You customize the output for each page by passing a variable named `message` into the template and referencing that variable in the template by using `{{ ... }}` expressions. For more information about using templates in Flask, see [Templates](http://flask.pocoo.org/docs/1.1.x/tutorial/templates/).
 
 ## Control-of-flow expressions
 
-Expressions delimited by `{{` and `}}` aren't the only special ones that Flask supports. It also supports control-of-flow statements enclosed in `{%` and `%}`. For example, the following HTML template displays a default message in a page if the `message` variable isn't defined:
+Expressions delimited by `{{` and `}}` aren't the only special ones that Flask supports. It also supports control-of-flow statements enclosed in `{%` and `%}`. For example, the following HTML template displays a default message on a page if the `message` variable isn't defined:
 
 ```html
 {% if message %}
@@ -119,7 +119,7 @@ Expressions delimited by `{{` and `}}` aren't the only special ones that Flask s
 {% endif %}
 ```
 
-Expressions such as these can even be used to conditionally execute JavaScript code:
+Expressions such as these can even be used to conditionally run JavaScript code:
 
 ```html
 {% if message %}
@@ -163,9 +163,9 @@ This example assumes that just one error message was flashed, but you can call `
 
 ## Static files
 
-Most websites contain images, style sheets, and other static files that don't change as the application executes. Flask looks for these files in a special subdirectory named "static."
+Most websites contain images, style sheets, and other static files that don't change as the application runs. Flask looks for these files in a special subdirectory named **static**.
 
-Let's say your site includes a style sheet named **main.css** and a banner named **banner.jpg**. You can drop these files into the "static" subdirectory and reference them in HTML this way:
+Let's say your site includes a style sheet named **main.css** and a banner named **banner.jpg**. You can drop these files into the **static** subdirectory and reference them in HTML this way:
 
 ```html
 <link rel="stylesheet" href="/static/main.css">

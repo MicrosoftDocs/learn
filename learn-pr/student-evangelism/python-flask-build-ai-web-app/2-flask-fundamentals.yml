@@ -36,7 +36,7 @@ quiz:
         explanation: "Incorrect. `{%` and `%}` are valid, but not the only valid expression delimiters in Flask."
       - content: "Both `{{` and `}}` and `{%` and `%}`"
         isCorrect: true
-        explanation: "Correct! Valid expression delimiters in Flask are `{{`, `}}`, `{%`, and `%}`. `{{`, `}}` is used for referencing template variables and `{%`, and `%}` is used for control-of-flow statements."
+        explanation: "Correct! Valid expression delimiters in Flask are `{{`, `}}`, `{%`, and `%}`. `{{`, `}}` is used for referencing template variables, and `{%`, and `%}` is used for control-of-flow statements."
     - content: "How are messages <i>flashed</i> with Flask's `flash()` method shown by default?"
       choices:
       - content: "In alert boxes"
@@ -48,15 +48,15 @@ quiz:
       - content: "Flashed messages are not shown by default"
         isCorrect: false
         explanation: "Incorrect. Messages that are <i>flashed</i> with Flask's `flash()` method by default are shown in alert boxes."
-    - content: "By default, in which subdirectory must HTML files served up by Flask must be located?"
+    - content: "By default, in which subdirectory must HTML files served up by Flask be located?"
       choices:
       - content: "<b>templates</b>"
         isCorrect: true
-        explanation: "Correct! By default, HTML files served up by Flask must be located in a subdirectory named *templates*."
+        explanation: "Correct! By default, HTML files served up by Flask must be located in a subdirectory named **templates**."
       - content: "<b>static</b>"
         isCorrect: false
-        explanation: "Incorrect. Flasks looks in the *static* subdirectory for images, style sheets, and other static files that don't change as the application executes."
+        explanation: "Incorrect. Flask looks in the **static** subdirectory for images, style sheets, and other static files that don't change as the application runs."
       - content: "<b>html</b>"
         isCorrect: false
-        explanation: "Incorrect. Flask does not look for a subdirectory named *html*."
+        explanation: "Incorrect. Flask does not look for a subdirectory named **html**."
 

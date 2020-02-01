@@ -1,16 +1,16 @@
-The Translator Text API is the member of Azure Cognitive Services that translates text from one language to another. It relies on state-of-the-art Neural Machine Translation (NMT) to work its magic and supports more than 60 languages.
+The Translator Text API is the member of Azure Cognitive Services that translates text from one language to another. It relies on state-of-the-art neural machine translation (NMT) and supports more than 60 languages.
 
-Like the Computer Vision API, the Translator Text API is invoked using REST calls over the internet. Unlike the Computer Vision API, the Translator Text API currently has no Python SDK available. That doesn't mean that you can't use it from a Python application. It means that you must invoke the API using raw HTTP requests and write code to parse the JSON payloads that are returned.
+Like the Computer Vision API, the Translator Text API is invoked through REST calls over the internet. Unlike the Computer Vision API, the Translator Text API currently has no Python SDK available. That doesn't mean that you can't use it from a Python application. It means that you must invoke the API by using raw HTTP requests and write code to parse the JSON payloads that are returned.
 
 It's not as hard as it sounds, as you will prove when you modify the Contoso Travel site to pass text extracted from photos by the Computer Vision API to the Translator Text API for translation into another language.
 
-Resources that are used in this exercise are located in a [Git code samples repository](https://github.com/MicrosoftDocs/mslearn-build-ai-web-app-with-python-and-flask).
+Resources that are used in this exercise are located in a [Git repository for code samples](https://github.com/MicrosoftDocs/mslearn-build-ai-web-app-with-python-and-flask).
 
 ## Subscribe to the Translator Text API
 
-In order to call the Translator Text API, you must obtain an API key. As with the Computer Vision API, this key travels in each request you place to the Translator Text API in an `Ocp-Apim-Subscription-Key` header and maps calls to Azure subscriptions.
+To call the Translator Text API, you must obtain an API key. As with the Computer Vision API, this key travels in each request that you place to the Translator Text API in an `Ocp-Apim-Subscription-Key` header and maps calls to Azure subscriptions.
 
-1. In a Command Prompt window or terminal, use the following command to subscribe to the Translator Text API and place the resulting resource named "translator-text" in the resource group you created earlier:
+1. In a Command Prompt window or terminal, use the following command to subscribe to the Translator Text API and place the resulting resource named "translator-text" in the resource group that you created earlier:
 
     ```bash
     az cognitiveservices account create --resource-group contoso-travel-rg --name translator-text --location global --kind TextTranslation --sku F0 --yes
@@ -24,9 +24,9 @@ In order to call the Translator Text API, you must obtain an API key. As with th
     az cognitiveservices account keys list --resource-group contoso-travel-rg --name translator-text --query key1 --output tsv
     ```
 
-    The output from the command is a string containing numbers and letters. **This is your Translator Text API key**. Copy the key into a text file and save it so you can easily retrieve it later. You will need it later in this unit and in a subsequent unit.
+    The output from the command is a string that contains numbers and letters. *This is your Translator Text API key*. Copy the key into a text file and save it so you can easily retrieve it. You will need it later in this unit and in a later unit.
 
-This API key uses the Text Translator API's free tier (`--sku F0`), which supports translating up to 2,000,000 characters of text per month. In a production environment, you would want to subscribe to one of the paid tiers documented [here](https://azure.microsoft.com/pricing/details/cognitive-services/translator-text-api/).
+This API key uses the Text Translator API's free tier (`--sku F0`), which supports translating up to 2 million characters of text per month. In a production environment, you would want to subscribe to one of the [paid tiers](https://azure.microsoft.com/pricing/details/cognitive-services/translator-text-api/).
 
 ## Modify the site to use the Translator Text API
 
@@ -106,7 +106,7 @@ You have now subscribed to the Translator Text API and obtained an API key for c
     </script>
     ```
 
-    The purpose of the added statement is to initialize the drop-down list with the currently selected language. Without this statement, the drop-down list would revert back to the default ("English") each time a photo is uploaded.
+    The purpose of the added statement is to initialize the drop-down list with the currently selected language. Without this statement, the drop-down list would revert to the default (English) each time a photo is uploaded.
 
 1. Open **app.py** and replace the first line with this one:
 
@@ -114,7 +114,7 @@ You have now subscribed to the Translator Text API and obtained an API key for c
     import os, base64, json, requests
     ```
 
-1. Next, add the following statements right after the statements that create a `ComputerVisionClient` instance near the top of the file to fetch the Translator Text API key:
+1. Add the following statements right after the statements that create a `ComputerVisionClient` instance near the top of the file to fetch the Translator Text API key:
 
     ```python
     # Retrieve the Translator Text API key 
@@ -158,7 +158,7 @@ You have now subscribed to the Translator Text API and obtained an API key for c
 1. Finally, add the `translate_text()` function to the end of **app.py**:
 
     ```python
-    # Function the translates text into the specified language
+    # Function that translates text into the specified language
     def translate_text(lines, language, key):
         uri = "https://api.cognitive.microsofttranslator.com/translate?api-version=3.0&to=" + language
 
@@ -200,27 +200,27 @@ An interesting aspect of this code is that if the call to the Computer Vision AP
 
 The final step is to test the changes that you made by uploading photos to the site and allowing the Translator Text API to translate the text in them.
 
-1. If you are running Windows, use the following command to create an environment variable containing the API key you retrieved for the Translator Text API, replacing `translator_text_api_key` with your key:
+1. If you're running Windows, use the following command to create an environment variable that contains the API key you retrieved for the Translator Text API. Replace `translator_text_api_key` with your key.
 
     ```bash
     set TRANSLATE_KEY=translator_text_api_key
     ```
 
-    If you are running Linux or macOS, use this command instead:
+    If you're running Linux or macOS, use this command instead:
 
     ```bash
     export TRANSLATE_KEY=translator_text_api_key
     ```
 
-1. Go to <http://localhost:5000/> in your browser. Confirm that the page now contains a drop-down list for selecting a language, as pictured below.
+1. Go to <http://localhost:5000/> in your browser. Confirm that the page now contains a drop-down list for selecting a language, as pictured in this screenshot:
 
     ![Selecting a language](../media/select-language.png)
 
     _Selecting a language_
 
-1. Select the language that you want to translate text into from the drop-down list. Then click **Upload Photo** and upload a picture containing text.
+1. Select the language that you want to translate text into from the drop-down list. Then select **Upload Photo** and upload a picture that contains text.
 
-1. Confirm that after a brief pause, the text extracted from the photo and translated into the language you specified appears in a modal dialog. Then dismiss the dialog.
+1. Confirm that after a brief pause, the text extracted from the photo and translated into the language that you specified appears in a modal dialog box. Then dismiss the dialog box.
 
     ![Extracting text from a photo](../media/translated-text.png)
 
