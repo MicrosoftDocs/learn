@@ -16,7 +16,7 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
 
 ::: zone-end
 
-1. Next, set the default resource group to work with. This allows you to omit the resource group name from all the commands.
+1. Set the default resource group to work with. This allows you to omit the resource group name from all the commands.
 
 ::: zone pivot="sandbox"
 
