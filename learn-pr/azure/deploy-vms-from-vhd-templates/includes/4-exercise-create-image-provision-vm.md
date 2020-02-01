@@ -8,17 +8,15 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
 
 ::: zone pivot="subscription"
 
-1. Start by creating a new Azure Resource Group to hold your virtual machine. In the Cloud Shell window on the right, run the following command.
+1. Browse to the [Azure Cloud Shell](https://shell.azure.com?azure-portal=true) and sign into your Azure subscription.
+
+1. Create a new Azure Resource Group to hold your virtual machine. In the Cloud Shell window, run the following command.
 
     ```azurecli
     az group create --name "learn-vm"
     ```
 
-::: zone-end
-
-1. Set the default resource group to work with. This allows you to omit the resource group name from all the commands.
-
-::: zone pivot="sandbox"
+1. Set the default resource group for the Azure CLI by typing the following command into the Cloud Shell window. This allows you to omit the resource group name from all the commands.
 
     ```azurecli
     az configure --defaults group=learn-vm
@@ -26,7 +24,11 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
 
 ::: zone-end
 
-::: zone pivot="subscription"
+::: zone pivot="sandbox"
+
+1. Activate the Cloud Shell window on the right by signing into the Azure Sandbox.
+
+1. Set the default resource group to work with by typing the following command into the Cloud Shell on the right. This allows you to omit the resource group name from all the commands.
 
     ```azurecli
     az configure --defaults group=<rgn>[Sandbox resource group name]</rgn>
@@ -36,7 +38,7 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
 
 ::: zone pivot="windows-cloud"
 
-1. In the Azure Cloud Shell window on the right, run the following commands to create a Windows Server Datacenter virtual machine that's running IIS. When you're prompted for the *azureuser* password, enter a password of your choice.
+1. In the Azure Cloud Shell, run the following commands to create a Windows Server Datacenter virtual machine that's running IIS. When you're prompted for the *azureuser* password, enter a password of your choice.
 
     ```azurecli
     az vm create \
@@ -80,7 +82,7 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
 
 ::: zone pivot="linux-cloud"
 
-1. In the Cloud Shell window on the right, run the following commands to create an Ubuntu Server virtual machine that's running Nginx. When you're prompted for the *azureuser* password, enter a password of your choice.
+1. In the Cloud Shell, run the following commands to create an Ubuntu Server virtual machine that's running Nginx. When you're prompted for the *azureuser* password, enter a password of your choice.
 
     ```azurecli
     az vm create \
