@@ -6,13 +6,13 @@ In this unit, you'll explore how to use domain names in Azure AD and how subdoma
 
 ## What are custom domain names in Azure?
 
-When you create an Azure subscription, you specify a default domain for the tenant. It's in the format of _something_.onmicrosoft.com like contoso.onmicrosoft.com.
+When you create an Azure subscription, you specify a default domain for the tenant. It's in the format of *something*.onmicrosoft.com like contoso.onmicrosoft.com.
 
 ![Screenshot of example domain name under Azure Active Directory > Custom domain names in the Azure portal.](../media/2-add-a-custom-domain.png)
 
-The default domain name _onmicrosoft.com_ is provided by Azure to all tenants. You are free to use it in your organization to create users and grant them access to resources. If your company chooses this approach, your users would sign in with *username@something.onmicrosoft.com*. 
+The default domain name *onmicrosoft.com* is provided by Azure to all tenants. You are free to use it in your organization to create users and grant them access to resources. If your company chooses this approach, your users would sign in with *username*@*something.onmicrosoft.com*. 
 
-You can associate a domain name that your company owns with Azure AD to make the sign in name more memorable and identifiable for your organization. In Azure AD, you add your domain name as a custom domain name. For our scenario, let's say your company owns proseware.com. If you add that domain name as a custom domain in Azure AD, your users sign in by using the format *username@proseware.com*.
+You can associate a domain name that your company owns with Azure AD to make the sign in name more memorable and identifiable for your organization. In Azure AD, you add your domain name as a custom domain name. For our scenario, let's say your company owns proseware.com. If you add that domain name as a custom domain in Azure AD, your users sign in by using the format *username*@*proseware.com*.
 
 After the user signs in, Azure AD's access management features control their access to external Microsoft services like Office 365, and the Azure portal. Azure AD also allows users access to your companies internal resources such as intranets, and in-house developed cloud apps.
 
@@ -30,7 +30,7 @@ You can add up to 900 managed domain names to your Azure AD directory.
 
 ## Add a subdomain
 
-After you add the custom domain and it's verified, any subdomains you add, like www.proseware.com or sandbox.proseware.com, are automatically verified by Azure.
+After you add the custom domain and it's verified, any subdomains you add, like www.proseware.com or sandbox.proseware.com, are automatically verified.
 
 ## Manage DNS records
 

@@ -1,6 +1,6 @@
 Although the process of adding a custom domain name is simple, you might face a few issues.
 
-Unknown to you, some members of your sales department have started using Power BI, signing up with their *@proseware.com* work email addresses. This action has created an unmanaged tenant with users in that team.
+Unknown to you, some members of your sales department have started using Power BI, signing up with their @*proseware.com* work email addresses. This action has created an unmanaged tenant with users in that team.
 
 In this unit, you'll resolve the unmanaged tenant issue, explore other problems, and see how to resolve them.
 
@@ -17,13 +17,13 @@ The best solution is external admin takeover, unfortunately that isn't an option
 
 |Service  |Solution  |
 |----|----|
-|SharePoint              | **Internal admin takeover** |
-|OneDrive                | **Internal admin takeover** |
-|Office 365              | **Internal admin takeover** |
-|**Power BI**                | External admin takeover |
-|**Azure Rights Management** | External admin takeover |
-|**Exchange Online**         | External admin takeover |
-|**Dynamics 365**            | External admin takeover |
+|SharePoint              | Internal admin takeover |
+|OneDrive                | Internal admin takeover |
+|Office 365              | Internal admin takeover |
+|Power BI                | External admin takeover |
+|Azure Rights Management | External admin takeover |
+|Exchange Online        | External admin takeover |
+|Dynamics 365           | External admin takeover |
 
 In this scenario, the sales team signed up for Power BI, so you can do an external admin takeover. The steps are the same as for adding a custom domain. The unmanaged tenant won't stop you from completing those steps. What happens is that all the domain name users, subscriptions, and license assignments are moved into your directory.
 
