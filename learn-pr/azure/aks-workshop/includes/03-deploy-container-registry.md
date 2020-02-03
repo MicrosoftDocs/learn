@@ -4,9 +4,9 @@ Container images can be pushed and pulled with Container Registry by using the D
 
 Azure Container Registry Tasks can also build container images in Azure. Tasks use a standard Dockerfile to create and store a container image in Azure Container Registry without the need for local Docker tooling. With Azure Container Registry Tasks, you can build on-demand or fully automate container image builds by using DevOps processes and tooling.
 
-In this unit, you'll create an Azure Container Registry by using the Azure CLI.
+In this unit, you'll create a container registry by using the Azure CLI.
 
-## Create an Azure Container Registry
+## Create a container registry
 
 1. The container registry name must be unique within Azure and contain between 5 and 50 *alphanumeric* characters. For learning purposes, run this command from Azure Cloud Shell to create a Bash variable that holds a unique name.
 
