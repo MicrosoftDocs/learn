@@ -19,7 +19,7 @@ steps:
 
 - task: NuGetToolInstaller@0
   inputs:
-    versionSpec: '4.7.1' 
+    versionSpec: '5.4.0' 
 
 - task: Npm@1
   displayName: 'Run npm install'
