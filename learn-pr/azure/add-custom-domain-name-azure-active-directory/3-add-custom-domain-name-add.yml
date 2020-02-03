@@ -18,25 +18,25 @@ quiz:
 
   - content: "How do you verify domain ownership?"
     choices:
-    - content: The Azure portal provides a TXT or MX record you need to add via your DNS provider.
+    - content: The Azure portal provides a TXT or MX record you add through your DNS provider.
       explanation: "You can choose to add either TXT or MX records for your domain."
       isCorrect: true
     - content: On the Azure portal, you need to add the domain name to a DNS zone associated with your subscription.
       isCorrect: false
-      explanation: "This doesn't prove you own the domain, you need to add something to the DNS records of your domain to verify it."
+      explanation: "This doesn't prove you own the domain. You need to add something to the DNS records of your domain to verify it."
     - content: The Azure portal prompts you to setup single-sign on for your domain.
       isCorrect: false
-      explanation: "This doesn't prove you own the domain, you need to add something to the DNS records of your domain to verify it."
+      explanation: "This doesn't prove you own the domain. You need to add something to the DNS records of your domain to verify it."
 
   - content: "What is the default domain name before a custom domain is created?"
     choices:
     - content: companyname.onazure.com
       isCorrect: false
-      explanation: "The URL is defined when creating the tenant, and is in the form of something.onmircosoft.com."
-    - content: companyname.onmircosoft.com
+      explanation: "The URL is defined when you create the tenant and is in the form of something.onmicrosoft.com."
+    - content: companyname.onmicrosoft.com
       isCorrect: true
-      explanation: "The URL is defined when creating the tenant, and is in the form of something.onmircosoft.com."
-    - content: companyname.onwindows.com
+      explanation: "The URL is defined when you create the tenant and is in the form of something.onmircosoft.com."
+    - content: onmicrosoft.companyname.com
       isCorrect: false
-      explanation: "The URL is defined when creating the tenant, and is in the form of something.onmircosoft.com."
+      explanation: "The URL is defined when creating the tenant and is in the form of something.onmicrosoft.com."
       

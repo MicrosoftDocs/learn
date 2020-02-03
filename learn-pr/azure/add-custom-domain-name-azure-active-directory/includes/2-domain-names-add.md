@@ -12,7 +12,7 @@ When you create an Azure subscription, you specify a default domain for the tena
 
 The default domain name *onmicrosoft.com* is provided by Azure to all tenants. You are free to use it in your organization to create users and grant them access to resources. If your company chooses this approach, your users would sign in with *username*@*something.onmicrosoft.com*. 
 
-You can associate a domain name that your company owns with Azure AD to make the sign in name more memorable and identifiable for your organization. In Azure AD, you add your domain name as a custom domain name. For our scenario, let's say your company owns proseware.com. If you add that domain name as a custom domain in Azure AD, your users sign in by using the format *username*@*proseware.com*.
+You can associate a domain name that your company owns with Azure AD to make the sign-in name more memorable and identifiable for your organization. In Azure AD, you add your domain name as a custom domain name. For our scenario, let's say your company owns proseware.com. If you add that domain name as a custom domain in Azure AD, your users sign in by using the format *username*@*proseware.com*.
 
 After the user signs in, Azure AD's access management features control their access to external Microsoft services like Office 365, and the Azure portal. Azure AD also allows users access to your companies internal resources such as intranets, and in-house developed cloud apps.
 
@@ -24,7 +24,7 @@ You can buy a domain name by using Azure App Service domains or a third-party do
 
 If your organization already added a custom domain for a Microsoft Office 365 subscription, you likely won't need to add it to Azure AD. The domain is listed and available to use as the primary domain.
 
-If you have Microsoft Office 365 set up in a different directory from your Azure subscription or you want to use a different domain, you may need to add a custom domain to Azure AD.
+If you have Microsoft Office 365 setup in a different directory from your Azure subscription or you want to use a different domain, you may need to add a custom domain to Azure AD.
 
 You can add up to 900 managed domain names to your Azure AD directory.
 
@@ -41,9 +41,4 @@ Your domain name would be useless without the Domain Name System (DNS). This dis
 - Name servers by using **NS** records 
 - Proof of ownership by using **TXT** records
 
-You can manage DNS records with the company that sold you the domain name. Or, you can switch the DNS provider by changing the name server associated with your domain. If you'd like to centralize DNS management with your other infrastructure, you can use Azure DNS. 
-
-
-
-
-
+You can manage DNS records with the company that sold you the domain name. Or, you can switch the DNS provider by changing the name server associated with your domain. If you'd like to centralize DNS management with your other infrastructure, take a look at Azure DNS.
