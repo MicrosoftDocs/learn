@@ -1,24 +1,24 @@
-> Make sure you understand why your bot exists — and understand the consequences of using it.
+*Make sure you understand why your bot exists — and understand the consequences of using it.*
 
 Before you write a single line of code, you need to understand clearly how your bot will benefit the end user. Take into account the needs of other stakeholders, even those stakeholders who aren’t directly interacting with the bot.
 
-You also need to understand exactly how your bot will benefit the bot’s owner, be that you, or the customer you are developing the bot for.
+You also need to understand exactly how your bot will benefit the bot’s owner, be that you, or the customer you're developing the bot for.
 
-To do this, you need to define the purpose of the bot. Can its purpose be performed responsibly? If not, don’t use a bot — or go back to the drawing board. If so, you then need to be sure that you’ve have access to the relevant expertise that will enable your bot to carry out its function.
+To do this, you need to define the purpose of the bot. Can its purpose be performed responsibly? If not, don’t use a bot — or go back to the drawing board. If so, you need to ensure that you have access to relevant expertise that will enable your bot to carry out its function.
 
-The next important consideration is whether the bot will be put to a use that is consequential. This is such an important area of Conversational AI ethics that there is a section dedicated to it later in this course. But for a basic understanding, ask yourself: will using this bot impact on services like healthcare, education, employment, or finances? Will using the bot have other meaningful or significant impacts on the user’s daily life? Things like financial planning, or healthcare diagnoses, may require human judgment, empathy, or expertise, even in the very early stages of engagement.
+The next important consideration is whether the bot will be put to a use that is consequential. For a basic understanding, ask yourself: will using this bot impact on services like healthcare, education, employment, or finances? Will using the bot have other meaningful or significant impacts on the user’s daily life? Things like financial planning, or healthcare diagnoses, may require human judgment, empathy, or expertise, even in the early stages of engagement.
 
 To make a decision about how Conversational AI should be deployed in these cases — or whether it should be used at all — you will need to assess and consider what it would mean for your bot to have an error, or fail, at this sort of task. If the cost is too high, or error is too likely, it may be that what you’re looking at isn’t a suitable use case for Conversational AI.
 
 ## Make sure your users know they’re working with a bot
 
-The Turing test is a famous thought experiment, named after computing pioneer Alan Turing. It is often thought to be a test as to whether a machine can think - but that’s not quite right. The idea of a Turing test is to see if a machine can win the “imitation game” — to fool a human into thinking that the bot they are talking to is in fact another human.
+The Turing test is a famous thought experiment, named after computing pioneer Alan Turing. It's often thought to be a test as to whether a machine can think - but that’s not quite right. The idea of a Turing test is to see if a machine can win the “imitation game” — to fool a human into thinking that the bot they're talking to is in fact another human.
 
 In today’s world, machines that use Conversational AI are capable of passing this kind of test. Conversational AI services and frameworks, such as Microsoft’s Language Understanding (LUIS), have comprehensive natural language capabilities and can easily be programmed to have the appearance of a human personality. If a real person is unaware they’re talking to a bot, they might easily believe — at least temporarily — that they are talking to another human being.
 
 This is ethically problematic for a number of reasons, one of which is that it undermines trust in bots. If a bot is not “honest” about the fact that it is a bot, a user that discovers the truth might feel upset or even frightened or threatened by the fact they at first thought they were talking to a human. Perhaps worse, if a human user never realizes they were talking to a bot, it raises questions over all the actions taken by the human user, as it is likely they would have acted differently had they known they were talking to a bot.
 
-For bots to be helpful to people, they must be able to be trusted. To be trusted, the developers of bots must make sure that users know that they are interacting with a computer program, and not a human being. There are a number of design choices that can be made that encourage this understanding, without undermining the user experience.
+For bots to be helpful to people, they must be able to be trusted. To be trusted, the developers of bots must make sure that users know that they are interacting with a computer program, and not a human being. There are a number of design choices that can be made that encourage this understanding, without undermining user experience.
 
 ## Let users know the purpose of the bot
 
