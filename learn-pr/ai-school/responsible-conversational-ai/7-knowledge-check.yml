@@ -50,7 +50,7 @@ quiz:
       explanation: "Incorrect. Many of the most reliable software libraries are open-source software."
     - content: "Shut down the bot weekly for maintenance."
       isCorrect: false
-      explanation: "Incorrect. Routinely shutting down your bot does not increase reliability, and is unnecessary."
+      explanation: "Incorrect. Routinely shutting down your bot does not increase reliability, and is unnecessary in most cases."
     - content: "Build your own natural language processing libraries."
       isCorrect: false
       explanation: "Incorrect. It is extremely unlikely that your own natural language processing libraries would be more reliable and perform as well as than what is currently in industry."
@@ -59,15 +59,15 @@ quiz:
       explanation: "Correct. If you tell the user up-front exactly how the bot is designed to help them, and explain the ways they can use it or things they can ask it for, they’re more likely to interact with it in a useful way."
   - content: "Why should people with disabilities be included in your testing process?"
     choices:
-    - content: "Feedback on your bot from users with disabilities will help determine whether the bot can be used as intended by the broadest possible audience."
-      isCorrect: true
-      explanation: "Correct. Users with disabilities give vital, knowledgeable feedback on how accessible your bot."
     - content: "They shouldn't. Remove them from testing processes."
       isCorrect: false
       explanation: "Incorrect. Users with disabilities give vital feedback on how accessible your bot is that you may not get from elsewhere, and will continue to play an active and essential part in testing and decision-making."
     - content: "Different types of feedback help train machine learning models to be more accurate."
       isCorrect: false
       explanation: "Incorrect. User feedback will not help improve bot accessibility or the accuracy of machine learning models."
+    - content: "Feedback on your bot from users with disabilities will help determine whether the bot can be used as intended by the broadest possible audience."
+      isCorrect: true
+      explanation: "Correct. Users with disabilities give vital, knowledgeable feedback on how accessible your bot."
     - content: "People with disabilities have accessibility guidelines that are not available to the public."
       isCorrect: false
       explanation: "Incorrect. Accessibility guidelines, such as the W3C guidelines, available to the public and easy for anyone to access."
