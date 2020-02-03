@@ -42,6 +42,7 @@ To disable the pipeline:
 1. Under **Processing of new run requests**, select **Disabled**, and then select **Save**.
 
     Your pipeline no longer processes build requests.
+1. Repeat the process for the second pipeline.
 
 ### Option 2: Delete the Azure DevOps project
 
