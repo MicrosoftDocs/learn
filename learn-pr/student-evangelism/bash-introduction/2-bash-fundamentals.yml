@@ -9,6 +9,6 @@ metadata:
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-bash
-durationInMinutes: 5
+durationInMinutes: 8
 content: |
   [!include[](includes/2-bash-fundamentals.md)]
