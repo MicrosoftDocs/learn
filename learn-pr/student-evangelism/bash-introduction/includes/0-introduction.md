@@ -1,6 +1,6 @@
-Imagine that you just started a new job as a system administrator (sysadmin) at Northwind, a high-frequency trading (HFT) firm that runs Windows on its clients and Linux on its servers. Computers are the lifeblood of the company, and you need to learn more about how to manage Linux boxes. It's time to skill up!
+Imagine that you just started a new job as a system administrator (sysadmin) at Northwind, a high-frequency trading (HFT) firm that runs Windows on its client computers and Linux on its server computers. Computers are the lifeblood of the company, and you need to learn more about how to manage Linux boxes. It's time to skill up!
 
-Bash is the standard shell scripting language for Linux. Let's learn the basics of it, starting with the syntax and with commonly used commands such as `ls` and `cat`.
+Bash is the standard shell scripting language for Linux. Let's learn the basics of Bash, starting with the syntax and commonly used commands, like `ls` and `cat`.
 
 ## Learning objectives
 
