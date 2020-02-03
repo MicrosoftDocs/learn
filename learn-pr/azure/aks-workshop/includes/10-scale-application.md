@@ -43,15 +43,15 @@ HPA allows AKS to detect when your deployed pods need more resources based on me
 
     - **Scale target**
 
-    The target for scaling is the **ratings-api** deployment.
+       The target for scaling is the **ratings-api** deployment.
 
     - **Min and max replicas**
 
-    The minimum and maximum number of replicas to be deployed.
+       The minimum and maximum number of replicas to be deployed.
 
     - **Metrics**
 
-    The autoscaling metric monitored is the CPU utilization, set at 30%. When the utilization goes above that level, the HPA creates more replicas.
+       The autoscaling metric monitored is the CPU utilization, set at 30%. When the utilization goes above that level, the HPA creates more replicas.
 
 1. To save the file, select <kbd>Ctrl+S</kbd>. To close the editor, select <kbd>Ctrl+Q</kbd>.
 

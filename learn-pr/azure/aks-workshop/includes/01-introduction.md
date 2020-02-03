@@ -1,4 +1,4 @@
-In this workshop, you'll go through tasks to deploy a multi-container application to Kubernetes on Azure Kubernetes Service (AKS).
+In this workshop, you'll go through tasks to deploy a multicontainer application to Kubernetes on Azure Kubernetes Service (AKS).
 
 You'll deploy the resources in this workshop into a subscription you have access to. To estimate the expected costs for these resources, see the [preconfigured Azure Calculator estimate](https://aka.ms/aks-workshop-estimate?azure-portal=true) of the resources that will be deployed.
 
