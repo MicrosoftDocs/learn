@@ -12,7 +12,7 @@ When it comes to cybersecurity, the best offense is often to have nothing, or ve
 
 ## Establish secure development and operations foundations
 
-Working within the framework of established secure software development principles is vitally important. As with any AI system, your bot should ensure proper authentication, separation of duty, input validation, and mitigations for denial-of-service attacks.  If available, work with the appropriate security team within your organization to conduct a security review on your bot and supporting services. Given the close relationship of security and privacy in this space, a joint security/privacy review is recommended to ensure the best depth and breadth of coverage.
+Working within the framework of established secure software development principles is vitally important. As with any AI system, your bot should ensure proper authentication, separation of duty, input validation, and mitigations for denial-of-service attacks. If available, work with the appropriate security team within your organization to conduct a security review on your bot and supporting services. Given the close relationship of security and privacy in this space, a joint security/privacy review is recommended to ensure the best depth and breadth of coverage.
 
 ## Implement systems to detect abnormal behaviors, and prevent manipulation
 
@@ -24,7 +24,7 @@ This step is particularly important for systems that employ automatic, or unsupe
 
 ### Data sources
 
-Neural models for Conversational AI  typically need to be trained on a dataset of around 5 million conversations. Common data sources include:
+Neural models for Conversational AI typically need to be trained on a dataset of around 5 million conversations. Common data sources include:
 
 * Hand-written rules
 * Existing Conversational data (whether large-scale or small-scale)

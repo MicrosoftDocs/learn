@@ -13,4 +13,3 @@ Every organization, even organizations of one, have someone to whom ultimate res
 __Ensure you tie monitoring into an automated alert system__, and dedicate resources and time to monitoring and assessing your bots performance.
 
 Truly autonomous AI may still be hypothetical, but until (or if) it does arise, one thing remains true: The developers of bots have responsibility, and are accountable, for their operations. As bots become more and more powerful, this will only become more true.
-

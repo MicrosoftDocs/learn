@@ -15,7 +15,7 @@ Now that you have reviewed this module, you should be able to:
 
 * Identify potential biases that your bot may contain
 * Ensure your bot respects users privacy
-* Discuss situations where human supervision may be necessary
+* Analyze situations where human supervision may be necessary
 
 ## Use these resources to discover more
 
