@@ -20,7 +20,7 @@ You can also access *risk detection type reports*, which combine information abo
 You can view and download all reports from the Azure portal.
 
 ![View and download a report](../media/5-identity-protection-risky-sign-ins-report.png)
-<!-- Please feel free to style according to Learn standards. Original image: https://docs.microsoft.com/en-us/azure/active-directory/identity-protection/media/howto-identity-protection-investigate-risk/identity-protection-risky-sign-ins-report.png  -->
+<!-- Please feel free to style according to Learn standards. Original image: https://docs.microsoft.com/azure/active-directory/identity-protection/media/howto-identity-protection-investigate-risk/identity-protection-risky-sign-ins-report.png  -->
 
 ## Remediate risks
 

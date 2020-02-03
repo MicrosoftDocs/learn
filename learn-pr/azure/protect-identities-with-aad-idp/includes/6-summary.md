@@ -8,4 +8,4 @@ Without AADIP, your organization's identities wouldn't be protected and could ha
 
 ## Learn more
 
-[What is Azure Active Directory Identity Protection?](https://docs.microsoft.com/en-us/azure/active-directory/identity-protection/overview-identity-protection)
+[What is Azure Active Directory Identity Protection?](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection)

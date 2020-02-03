@@ -29,7 +29,7 @@ Make sure users have already been registered for Azure Multi-Factor Authenticati
 When a sign-in risk has been identified, the user can be asked to take action to remediate the risk. They're told what triggered the risk, and what's needed from them for the issue to be resolved. For example, the user may see the following notification:
 
 ![Sign-in risk](../media/3-signin-risk-identified.png)
-<!-- Please feel free to style according to Learn standards. Original image: https://docs.microsoft.com/en-us/azure/active-directory/identity-protection/media/concept-identity-protection-policies/identity-protection-policies.png -->
+<!-- Please feel free to style according to Learn standards. Original image: https://docs.microsoft.com/azure/active-directory/identity-protection/media/concept-identity-protection-policies/identity-protection-policies.png -->
 
 ## User risk policy
 
@@ -42,7 +42,7 @@ You use a form to configure a user risk policy in the Azure portal. You specify 
 When a user risk has been identified, the user can be asked to take action to remediate that risk. They're told what triggered the risk, and what's needed from them for the issue to be resolved. For example, the user may see the following notification:
 
 ![User risk](../media/3-user-risk-identified.png)
-<!-- Please feel free to style according to Learn standards. Original image: https://docs.microsoft.com/en-us/azure/active-directory/identity-protection/media/concept-identity-protection-user-experience/101.png -->
+<!-- Please feel free to style according to Learn standards. Original image: https://docs.microsoft.com/azure/active-directory/identity-protection/media/concept-identity-protection-user-experience/101.png -->
 
 ## Multi-factor authentication (MFA) registration policy
 
