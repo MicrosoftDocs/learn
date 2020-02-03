@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.student-evangelism.bash-introduction
+metadata:
+  title: Introduction to Bash - Learn
+  description: Learn how to use Bash to manage IT infrastructure.
+  ms.date: 01/31/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-bash
+title: Introduction to Bash
+summary: Use Bash to manage IT infrastructure.
+abstract:  | 
+  In this module, you will:
+  - Learn what shells are and what Bash is.
+  - Learn about the syntax of Bash commands.
+  - Learn about important Bash commands, such as ls, cat, and ps.
+  - Learn how to use I/O operators to redirect input and output.
+  - Learn how to update a server's operating system.
+  - Learn how to find and terminate rogue processes.
+  - Learn how to use Bash to filter Azure CLI output.
+prerequisites: None
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- administrator
+- student
+products:
+- azure
+units:
+- learn.student-evangelism.bash-introduction.0-introduction
+- learn.student-evangelism.bash-introduction.1-what-is-bash
+- learn.student-evangelism.bash-introduction.2-bash-fundamentals
+- learn.student-evangelism.bash-introduction.3-bash-commands
+- learn.student-evangelism.bash-introduction.4-exercise-try-bash
+- learn.student-evangelism.bash-introduction.5-exercise-terminate-process
+- learn.student-evangelism.bash-introduction.6-exercise-filter-cli-output
+- learn.student-evangelism.bash-introduction.7-knowledge-check
+- learn.student-evangelism.bash-introduction.8-summary
+badge:
+  uid: learn.student-evangelism.bash-introduction.badge 
