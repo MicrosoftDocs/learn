@@ -15,7 +15,7 @@ abstract: |
   In this module, you will:
   - Identify potential biases that your bot may contain
   - Ensure your bot respects users privacy
-  - Discuss situations where human supervision may be necessary 
+  - Analyze situations where human supervision may be necessary 
 prerequisites: None
 iconUrl: /learn/achievements/secure-responsible-conversational-ai.svg
 levels: 
