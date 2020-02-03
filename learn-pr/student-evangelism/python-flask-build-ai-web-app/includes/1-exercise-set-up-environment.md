@@ -1,10 +1,10 @@
-The first order of business is to set up a development environment for websites written in Python and Flask. You can use the environment to build and test Contoso Travel locally before you deploy it to Azure and make it publicly available.
+The first order of business is to set up a development environment for a website that's written by using Python and Flask. You can use the environment to build and test Contoso Travel locally before you deploy it to Azure and make it publicly available.
 
-In this unit, you install Python on your computer if it isn't already installed. Then you create a virtual Python environment and install Flask and the Python SDK for the Computer Vision API. The SDK makes it easy to call the Azure Computer Vision API from Python applications. Finally, you install the Azure CLI, which provides a command-line interface to Azure.
+In this unit, you install Python on your computer if it isn't already installed. Then you create a virtual Python environment and install Flask and the Python SDK for the Computer Vision API in Azure Cognitive Services. The SDK makes it easy to call the Computer Vision API from Python applications. Finally, you install the Azure CLI. The Azure CLI provides a command-line interface to Azure.
 
 ## Create a virtual Python environment
 
-To run Flask websites on your computer, both Flask and Python must be installed. In this exercise, you create a virtual Python environment that isolates the packages that you install from others on your computer. Then you install Flask and the Python SDK for the Computer Vision API in that environment.
+To run Flask websites on your computer, both Flask and Python must be installed. In this exercise, you create a virtual Python environment that isolates the packages you install from other items on your computer. Then you install Flask and the Python SDK for the Computer Vision API in that environment.
 
 1. If Python 3.6 or later isn't installed on your computer, go to [the Python website](https://www.python.org/) and install it now. You can determine whether it's installed on Windows by running the following command in a Command Prompt window:
 
@@ -54,7 +54,7 @@ To run Flask websites on your computer, both Flask and Python must be installed.
     source env/bin/activate
     ```
 
-1. Now run the following commands to install Flask and the Python SDK for the Azure Computer Vision API in the virtual environment:
+1. Now run the following commands to install Flask and the Python SDK for the Azure Cognitive Services Computer Vision API in the virtual environment:
 
     ```bash
     pip install Flask
@@ -89,4 +89,4 @@ The Azure CLI is a command-line environment for creating and managing Azure reso
     az account set -s SUBSCRIPTION_ID
     ```
 
-If you aren't familiar with the Azure CLI, you can learn more about it, and the numerous commands that it supports, in [Get started with the Azure CLI](https://docs.microsoft.com/cli/azure/get-started-with-azure-cli?view=azure-cli-latest). Most operations that you perform in Azure can be performed with the CLI or through the Azure portal. Power users tend to prefer the CLI, in part because CLI commands can be used in scripts to automate repetitive tasks.
+If you aren't familiar with the Azure CLI, you can learn more about it and the numerous commands that it supports in [Get started with the Azure CLI](https://docs.microsoft.com/cli/azure/get-started-with-azure-cli?view=azure-cli-latest). Most operations that you perform in Azure can be performed with the Azure CLI or through the Azure portal. Power users tend to prefer the Azure CLI, in part because Azure CLI commands can be used in scripts to automate repetitive tasks.
