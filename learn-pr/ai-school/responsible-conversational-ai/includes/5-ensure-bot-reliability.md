@@ -14,11 +14,11 @@ What is an acceptable rate of error for your bot? What is a desirable ratio of p
 
 ## Design a two-way feedback mechanism
 
-Users will be much more forgiving of your bot if it’s possible to give it - and its developers -  feedback. And if something goes wrong, and the error isn’t otherwise obvious, the bot should be able to notify the user of the problem.
+Users will be much more forgiving of your bot if it’s possible to give it - and its developers - feedback. And if something goes wrong, and the error isn’t otherwise obvious, the bot should be able to notify the user of the problem.
 
 ## Make sure your bot can ask a human for help
 
-Inevitably, some (if not quite a few!) problems can’t be solved through user-bot interaction alone. The system, while not necessarily needing to immediately accommodate “I just want to talk to a human!”-type demands,  should always be designed so a bot knows when it needs to hand off to a human operator. And this decision should be driven by respect for your user. Some users simply won’t want to talk to a bot, and this understandable sentiment should be accommodated in your design. Reliability signals can be developed to help drive these kind of decisions, so the handoff occurs at the appropriate time and in the smoothest possible way.
+Inevitably, some (if not quite a few!) problems can’t be solved through user-bot interaction alone. The system, while not necessarily needing to immediately accommodate “I just want to talk to a human!”-type demands, should always be designed so a bot knows when it needs to hand off to a human operator. And this decision should be driven by respect for your user. Some users simply won’t want to talk to a bot, and this understandable sentiment should be accommodated in your design. Reliability signals can be developed to help drive these kind of decisions, so the handoff occurs at the appropriate time and in the smoothest possible way.
 
 This is especially important for bots that work in sensitive or critical areas. Human users need to be assured that the bot can call for help, and the call will be answered. Users will feel much more comfortable with bots, and will have a much higher level of trust, if they know a human is just around the corner.
 
