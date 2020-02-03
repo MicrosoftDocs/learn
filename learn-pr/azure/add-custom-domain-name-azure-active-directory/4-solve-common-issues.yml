@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.add-custom-domain-name-azure-active-directory.solve-common-issues
+title: Solve common issues when adding custom domain name
+metadata:
+  title: Solve common issues when adding custom domain name
+  description: Resolve the unmanaged tenant issue, and also explore other issues and how to resolve them.
+  ms.date: 02/21/2020
+  author: cwatson-cat
+  ms.author: cwatson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-solve-common-issues.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What should you do if domain name verification fails?"
+    choices:
+    - content: "Wait up to an hour, then go to the Azure Active Directory > Custom domain name page and select verify again."
+      isCorrect: false
+      explanation: "DNS records take time to propagate, but Azure doesn't provide a way to verify again, you need to check the DNS records are correct."
+    - content: "Wait up to an hour, refresh your browser, then reverify in the browser."
+      isCorrect: false
+      explanation: "DNS records take time to propagate, refreshing the browser won't help. You should check the DNS records with your registrar."
+    - content: "Wait up to an hour, then check the data is correct with your registrar."
+      explanation: "DNS records take time to propagate, so you need to wait for at least an hour before checking the DNS records are correct."
+      isCorrect: true
+  - content: "How many tenants can use a single domain name?"
+    choices:
+    - content: "None"
+      isCorrect: false
+      explanation: "Domain names are unique, and can only be used by in a single tenant."
+    - content: "One"
+      isCorrect: true
+      explanation: "Domain names are unique, and can only be used by in a single tenant."
+    - content: "900"
+      explanation: "You can have more than one domain name per tenant, the maximum being 900, but a single domain name can only be used in a single tenant."
+      isCorrect: false
