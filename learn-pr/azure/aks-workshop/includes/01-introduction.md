@@ -11,7 +11,7 @@ In this module, you will:
 - Deploy MongoDB by using Helm 3.
 - Use Kubernetes concepts such as deployment, service, and ingress to deploy an application to the Azure Kubernetes Service cluster.
 - Set up SSL/TLS.
-- Configure monitoring, the Horizontal Pod Autoscaler, and the cluster autoscaler.
+- Configure monitoring, the horizontal pod autoscaler, and the cluster autoscaler.
 
 ## Prerequisites
 

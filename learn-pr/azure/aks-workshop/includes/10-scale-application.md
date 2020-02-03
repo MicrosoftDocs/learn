@@ -1,12 +1,12 @@
 As the popularity of your application grows, the application needs to scale appropriately to manage demand changes. You have to ensure that your application remains responsive as the number of ratings increases.
 
-In this exercise, you explore the Azure Kubernetes Service (AKS) Horizontal Pod Autoscaler (HPA) capabilities.
+In this exercise, you explore the Azure Kubernetes Service (AKS) horizontal pod autoscaler (HPA) capabilities.
 
-## Create the Horizontal Pod Autoscaler
+## Create the horizontal pod autoscaler
 
 With increased traffic, the `ratings-api` container is unable to cope with the number of requests coming through. To fix the bottleneck, you can deploy more instances of that container.
 
-You have two options you can choose from when you need to scale out container instances in AKS. You can either manually increase the number of replicas in the deployment or use the Horizontal Pod Autoscaler.
+You have two options you can choose from when you need to scale out container instances in AKS. You can either manually increase the number of replicas in the deployment or use the horizontal pod autoscaler.
 
 HPA allows AKS to detect when your deployed pods need more resources based on metrics such as CPU. HPA can then schedule more pods onto the cluster to cope with the demand. You can configure HPA by using the `kubectl autoscale` command, or you can define the HPA object in a YAML file.
 
@@ -70,9 +70,9 @@ HPA allows AKS to detect when your deployed pods need more resources based on me
     ```
 
     > [!IMPORTANT]
-    > For the Horizontal Pod Autoscaler to work, you *must* remove any explicit replica count from your `ratings-api` deployment. Keep in mind that you need to redeploy your deployment when you make any changes.
+    > For the horizontal pod autoscaler to work, you *must* remove any explicit replica count from your `ratings-api` deployment. Keep in mind that you need to redeploy your deployment when you make any changes.
 
-## Run a load test with Horizontal Pod Autoscaler enabled
+## Run a load test with horizontal pod autoscaler enabled
 
 You use a prebuilt image called `azch/artillery` that's available on Docker hub to create your load test. The image contains a tool called [artillery](https://artillery.io) that's used to send traffic to the API. [Azure Container Instances](https://docs.microsoft.com/azure/container-instances) can be used to run this image as a container.
 
@@ -101,7 +101,7 @@ When it runs as a Container Instance set, you don't want it to restart after it 
 
     You might need to run this command a few times.
 
-1. Watch the Horizontal Pod Autoscaler working.
+1. Watch the horizontal pod autoscaler working.
 
     ```bash
     kubectl get hpa \
