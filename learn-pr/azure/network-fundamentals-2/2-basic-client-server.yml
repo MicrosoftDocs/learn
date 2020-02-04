@@ -27,14 +27,14 @@ quiz:
       isCorrect: false
       explanation: "A thin client makes requests of a server, and is incapable of running apps or storing data locally."
 
-  - content: "What is the purpose of an App server?"
+  - content: "What is the purpose of an application server?"
     choices:
     - content: "Hosts non-web apps allowing users in the network to run them through."
       isCorrect: false
-      explanation: "An App server provides application access to a client. Both web apps and custom software."
+      explanation: "An application server provides application access to a client. Both web apps and custom software."
     - content: "Hosts all your web and non-web apps in one place, so they can be accessed across the network."
       isCorrect: true
-      explanation: "An App server provides application access to a client."
+      explanation: "An application server provides application access to a client."
     - content: "Hosts all your web apps allowing users in the network to run and use them in their browser."
       isCorrect: false
-      explanation: "An App server provides application access to a client. Both web apps and custom software."
+      explanation: "An application server provides application access to a client. Both web apps and custom software."
