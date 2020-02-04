@@ -15,4 +15,4 @@ In this module, you'll learn how to:
 
 ## Prerequisites
 
-- Network fundamentals – Principals
+- Network fundamentals – principles
