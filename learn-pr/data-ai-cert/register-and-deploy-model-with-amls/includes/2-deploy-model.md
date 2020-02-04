@@ -134,9 +134,10 @@ After all of the configuration is prepared, you can deploy the model. The easies
 ```python
 from azureml.core.model import Model
 
+model = ws.models['classification_model']
 service = Model.deploy(workspace=ws,
-                       name = 'classifier_service',
-                       models = [classification_model],
+                       name = 'classifier-service',
+                       models = [model],
                        inference_config = classifier_inference_config,
                        deployment_config = classifier_deploy_config,
                        deployment_target = production_cluster)
