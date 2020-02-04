@@ -16,11 +16,11 @@ A client would be considered as part of the client-server model that is in use t
 | Hybrid  |         No         | Yes            |
 |  Thin   |         No         | No             |
 
-There are three types of clients we typically used in a client-server configuration:
+There are three types of clients typically used in a client-server configuration:
 
 - **Thick**. This type of client is the most common in today's network environments. Thin clients are sometimes known as a workstation, and can process and store data locally without using a server. The client's interaction with a server is minimal and may only be to store data on a shared network drive.
 - **Thin**. Historically, a thin client would be a terminal. A thing client is unable to process or store data locally, and relies totally on the server to provide computational power and storage. Today, thin clients are represented by web-applications that request and display information from servers, regardless of the device they're running on.
-- **Hybrid**. This client combines the best of both thick and thin clients. A hybrid client can do limited local data processing, but has no local storage capability. An example of such a client is a device that renders content and stores the results on the server like we see in the automated rating systems.
+- **Hybrid**. This client combines the best of both thick and thin clients. A hybrid client can do limited local data processing, but has no local storage capability. An example of such a client is a device that renders content and stores the results on the server, such as automated rating systems.
 
 ## Servers
 
@@ -38,7 +38,7 @@ There are a number of client-server models, and each are dependent on the way th
 
 ### Server types
 
-A server's main task is to provide services and resources to its clients. With an increase in the number of applications and users the server, we find servers becomes dedicated to one specific purpose. The table below shows a broad range of servers, their usage, and the type of client that uses them.
+A server's main task is to provide services and resources to its clients. The larger the number of applications and users, the more the server is dedicated to specific purposes. The table below shows a broad range of servers, their usage, and the type of client that uses them.
 
 | Server           | Purpose                           | Clients                        |
 | :-------------------: | :-------------------------------: | :----------------------------: |
