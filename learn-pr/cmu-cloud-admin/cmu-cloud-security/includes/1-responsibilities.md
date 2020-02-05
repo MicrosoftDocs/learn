@@ -63,10 +63,10 @@ As it presently stands, the SRM does omit one important option: Cloud providers 
 
 ### References
 
-1. _McCumber, John, *et al* (2018). *The (ISC)2 Cybersecurity Lexicon*. <https://blog.isc2.org/isc2\_blog/2018/02/welcome-to-the-lexicon-project.html>._
+1. _McCumber, John, *et al* (2018). *The (ISC)2 Cybersecurity Lexicon*. <https://blog.isc2.org/isc2_blog/2018/02/welcome-to-the-lexicon-project.html>._
 
 2. _(ISC)<sup>2</sup>. *CISSP Training Course Outline*. <https://www.isc2.org/Training/Courses/cissp-training-course>._
 
-[^1]:  <https://blog.isc2.org/isc2\_blog/2018/02/welcome-to-the-lexicon-project.html>  "McCumber, John, *et al* (2018). *The (ISC)^2 Cybersecurity Lexicon*."
+[^1]:  <https://blog.isc2.org/isc2_blog/2018/02/welcome-to-the-lexicon-project.html>  "McCumber, John, *et al* (2018). *The (ISC)^2 Cybersecurity Lexicon*."
 
 [^2]:  <https://www.isc2.org/Training/Courses/cissp-training-course>  "(ISC)^2. *CISSP Training Course Outline*."

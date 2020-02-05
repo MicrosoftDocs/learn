@@ -1,6 +1,6 @@
 The ratings web frontend is a Node.js application. Recall that you've already created an Azure Container Registry and used it to build a Docker image of the frontend and store it in a repository.
 
-In this exercise, you're going to deploy that Docker image of the frontend to the Azure Kubernetes Service (AKS) by creating a Kubernetes [deployment](https://docs.microsoft.com/azure/aks/concepts-clusters-workloads#deployments-and-yaml-manifests?azure-portal=true), and exposing it through a load balancer by creating a Kubernetes [service](https://docs.microsoft.com/azure/aks/concepts-network#services?azure-portal=true). Additionally, you're going to configure the frontend to connect to the ratings API you've already deployed.
+In this exercise, you're going to deploy that Docker image of the frontend to the Azure Kubernetes Service (AKS) by creating a Kubernetes [deployment](https://docs.microsoft.com/azure/aks/concepts-clusters-workloads?azure-portal=true#deployments-and-yaml-manifests), and exposing it through a load balancer by creating a Kubernetes [service](https://docs.microsoft.com/azure/aks/concepts-network?azure-portal=true#services). Additionally, you're going to configure the frontend to connect to the ratings API you've already deployed.
 
 By the end of this unit, you should have deployed the ratings web frontend and configured it to communicate with ratings API. The frontend will be exposed through a public IP.
 
@@ -112,7 +112,7 @@ By the end of this unit, you should have deployed the ratings web frontend and c
 
 ## Create a Kubernetes service file for the ratings API service
 
-To simplify the network configuration for application workloads, Kubernetes uses [Services](https://docs.microsoft.com/azure/aks/concepts-network#services?azure-portal=true) to logically group a set of pods together and provide network connectivity.
+To simplify the network configuration for application workloads, Kubernetes uses [Services](https://docs.microsoft.com/azure/aks/concepts-network?azure-portal=true#services) to logically group a set of pods together and provide network connectivity.
 
 1. Create a file called `ratings-web-service.yaml` using the integrated editor.
 
