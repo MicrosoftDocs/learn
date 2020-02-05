@@ -10,5 +10,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-bash
 durationInMinutes: 10
+interactive: bash
 content: |
   [!include[](includes/5-exercise-terminate-process.md)]
