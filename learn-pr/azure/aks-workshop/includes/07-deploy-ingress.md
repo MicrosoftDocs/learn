@@ -156,7 +156,7 @@ Since you're going to expose the deployment using an ingress, there's no need to
 
 ## Test the application
 
-Open the hostname you configured on the ingress in a web browser, for example, at **<http://frontend.13-68-177-68.nip.io>** to view and interact with the application.
+Open the hostname you configured on the ingress in a web browser, for example, at **<http:\//frontend.13-68-177-68.nip.io>** to view and interact with the application.
 
 ![Screenshot of the ratings-web application](../media/07-ratings-web-ingress.png)
 
