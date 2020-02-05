@@ -1,4 +1,4 @@
-The focus of this module is on the **Monitoring** features of IoT Hub. This unit provides a quick theoretical overview of the four features: Alerts, Metrics, Diagnostic settings, and Logs. The next units will have you create some working metrics and alerts.
+The focus of this module is on the **Monitoring** features of IoT Hub. This unit provides a quick theoretical overview of the four features: **Alerts**, **Metrics**, **Diagnostic settings**, and **Logs**. The next units will have you create some working metrics and alerts.
 
 Locate the monitoring section in the left-hand menu.
 
@@ -70,6 +70,27 @@ public static async Task<IActionResult> Run(HttpRequest req, ILogger log)
         ? (ActionResult)new OkObjectResult($"Hello, {name}")
         : new BadRequestObjectResult("Please pass a name on the query string or in the request body");
 }
+```
+
+Or, for Node.js, the following code is used to create the function.
+
+```javascript
+module.exports = async function (context, req) {
+    context.log('JavaScript HTTP trigger function processed a request.');
+
+    if (req.query.name || (req.body && req.body.name)) {
+        context.res = {
+            // status: 200, /* Defaults to 200 */
+            body: "Hello " + (req.query.name || req.body.name)
+        };
+    }
+    else {
+        context.res = {
+            status: 400,
+            body: "Please pass a name on the query string or in the request body"
+        };
+    }
+};
 ```
 
 You can see how useful these templates are in making sure your function signature is correct. In the following units we'll be creating an HTTP trigger function, and specifying it as the action for an IoT alert. We'll be keeping things simple, and not altering the default code shown above. It's the mechanism of firing the function when an alert is triggered by some facet of the telemetry data, that we want to enable.

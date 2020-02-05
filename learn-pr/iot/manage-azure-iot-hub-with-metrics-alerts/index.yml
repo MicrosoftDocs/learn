@@ -22,7 +22,7 @@ abstract: |
 prerequisites: | 
   - An introductory knowledge of Azure IoT
   -	Ability to navigate the Azure IoT portal 
-  -	Ability to use C#, at the beginner level
+  -	Ability to use C#, or Node.js, at the beginner level
   -	Experience using Visual Studio, or Visual Studio Code, at the beginner level 
 iconUrl: /learn/achievements/iot/manage-your-azure-iot-hub-with-metrics-alerts.svg
 ratingEnabled: true

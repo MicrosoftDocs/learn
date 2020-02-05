@@ -59,7 +59,7 @@ You can select your preferred development environment (Visual Studio Code, or Vi
     npm install chalk
     ```
 
-1. After you've entered the code below into the app.js file, you can run it from the terminal by entering `node app.js`. Ensure that the `vibrationdevic` folder is the current folder of the terminal, when you run the app.
+1. After you've entered the code below into the app.js file, you can run it from the terminal by entering `node app.js`. Ensure that the `vibrationdevice` folder is the current folder of the terminal, when you run the app.
 
 ::: zone-end
 

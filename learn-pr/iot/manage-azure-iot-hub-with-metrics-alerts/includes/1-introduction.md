@@ -23,7 +23,7 @@ In this module you will:
 
 - An introductory knowledge of Azure IoT
 - Ability to navigate the Azure IoT portal
-- Ability to use C#, at the beginner level
+- Ability to use C#, or Node.js, at the beginner level
 - Experience using Visual Studio, or Visual Studio Code, at the beginner level
 
 ## Learn the scenario
@@ -65,6 +65,6 @@ The first step to building this system is to create a custom IoT Hub.
 1. test with sandbox
 1. verify/change choice of action group names
 1. badge artwork
-1. add node.js option
+1. add node.js option - done
 
 
