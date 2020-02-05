@@ -11,6 +11,7 @@ metadata:
   ms.prod: learning-bash
 durationInMinutes: 8
 interactive: bash
+azureSandbox: false
 content: |
   [!include[](includes/4-exercise-try-bash.md)]
 quiz:
