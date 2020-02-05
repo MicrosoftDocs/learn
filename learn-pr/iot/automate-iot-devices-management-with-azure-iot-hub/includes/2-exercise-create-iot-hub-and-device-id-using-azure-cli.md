@@ -4,7 +4,9 @@ In this unit, we'll first create an IoT Hub, and add a single device to that hub
 
 1. Make sure you've activated the sandbox, using the button above. The sandbox will give you access to free Azure resources for the duration of this module.
 1. In the below we are using the [Azure IoT extension for Azure CLI](https://github.com/Azure/azure-iot-cli-extension). To install the extension, type the following command in the terminal:
-
+    > [!NOTE]
+    > In order to paste code and commands in the Azure Shell terminal, you need to right click and select "Paste"
+    
     ```Azure CLI
     az extension add --name azure-cli-iot-ext
     ```
