@@ -65,5 +65,6 @@ The first step to building this system is to create a custom IoT Hub.
 1. test with sandbox
 1. verify/change choice of action group names
 1. badge artwork
+1. add node.js option
 
 
