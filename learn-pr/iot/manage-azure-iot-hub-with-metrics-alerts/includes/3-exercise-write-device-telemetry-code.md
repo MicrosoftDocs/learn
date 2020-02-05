@@ -49,7 +49,7 @@ You can select your preferred development environment (Visual Studio Code, or Vi
 
 1. In the opened terminal, create an empty folder where you'll develop your code, called "vibrationdevice", by entering `mkdir vibrationdevice`. Then, navigate to that folder with `cd vibrationdevice`.
 
-1. From the **File** menu, create a new file. Insert a single line as a comment, such as // Vibration device app. Save the file to the `vibrationdevice` folder (locating this folder might involve a bit of navigation), with the name "app.js". By using the .js file extension, Visual Studio Code interprets this file as JavaScript and evaluates the contents with the JavaScript language service.
+1. From the **File** menu, create a new file. Insert a single line as a comment, such as `// Vibration device app`. Save the file to the `vibrationdevice` folder (locating this folder might involve a bit of navigation), with the name **app.js**. By using the .js file extension, Visual Studio Code interprets this file as JavaScript and evaluates the contents with the JavaScript language service.
 
 1. Back in the terminal, load the libraries you need with the following commands:
 
@@ -393,6 +393,10 @@ The following app simulates a conveyor belt, and reports vibration sensor data e
 
 ::: zone pivot="vs-node,vscode-node"
 
+1. Open the **app.js** file for the device app.
+
+1. Copy and paste the following code.
+
     ```javascript
     // Copyright (c) Microsoft. All rights reserved.
     // Licensed under the MIT license. See LICENSE file in the project root for full license information.
@@ -639,9 +643,15 @@ The following app simulates a conveyor belt, and reports vibration sensor data e
 
 ### Test your code to send telemetry
 
-::: zone pivot="vscode-csharp,vscode-node"
+::: zone pivot="vscode-csharp"
 
 1. Run the app in the terminal, with the command `dotnet run`. This command will run the **Program.cs** file in the current folder.
+
+::: zone-end
+
+::: zone pivot="vscode-node"
+
+1. Run the app in the terminal, with the command `node app.js`. This command will run the **app.js** file in the current folder.
 
 ::: zone-end
 
