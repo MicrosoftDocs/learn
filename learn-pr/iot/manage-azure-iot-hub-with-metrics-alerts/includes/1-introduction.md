@@ -1,8 +1,8 @@
 With an Azure IoT Hub potentially receiving many thousands of telemetry messages, we want to make it easy for a human operator to see what is going on.
 
-In this module, you'll learn about Azure IoT Hub monitoring. Monitoring encompasses a number of features: logging, diagnostics, metrics, and alerts. Of these features, the alerts are probably the most important. Alerts signal "red flags" to a human operator. Alerts fire when one or more conditions are met. Alerts can also signal more mundane events, more information or warnings than errors. Metrics, diagnostics, and logs, do their job, providing different ways of reporting on current activities.
+In this module, you'll learn about Azure IoT Hub monitoring. Monitoring encompasses a number of features: logging, diagnostics, metrics, and alerts. Of these features, the alerts are probably the most important. Alerts signal "red flags" to a human operator. Alerts fire when one or more conditions are met. Alerts can also signal more mundane events, information, or warnings, rather than errors. Metrics, diagnostics, and logs, do their job, providing different ways of reporting on current activities.
 
-This module uses the same scenario, and code base, as the [Identify anomalies by routing data via IoT Hub to a built-in ML model in Azure Stream Analytics](https://docs.microsoft.com/learn/modules/data-anomaly-detection-using-azure-iot-hub/). It isn't necessary to complete the anomalies module to complete this one on monitoring. You'll gain valuable insights to the features of Azure IoT Hub by completing both modules, in any order. If you have completed the anomalies module, and still have the IoT Hub resource, you can start from unit 4 of this module.
+This module uses the same scenario, and code base, as the [Identify anomalies by routing data via IoT Hub to a built-in ML model in Azure Stream Analytics](https://docs.microsoft.com/learn/modules/data-anomaly-detection-using-azure-iot-hub/). It isn't necessary to complete the anomalies module to complete this one on monitoring. You'll gain valuable insights to the features of Azure IoT Hub by completing both modules, in any order. If you've completed the anomalies module, and still have the IoT Hub resource, you can start from unit 4 of this module.
 
 The scenario we're using is that of a conveyor belt, monitored for vibration.
 
@@ -62,9 +62,9 @@ The first step to building this system is to create a custom IoT Hub.
 1. image line cleanup - done
 
 1. test and read, end to end - done1 -failed
-1. test with sandbox
-1. verify/change choice of action group names
-1. badge artwork
+1. verify/change choice of action group names - done
 1. add node.js option - done
+1. Upload new code to Github - C# and Node.js - done
 
-
+1. badge artwork
+1. test with sandbox

@@ -1,4 +1,4 @@
-The main activity of this unit is creating two different types of alerts: an email alert, and an Azure Function alert. First though, let's have a look at how metrics can be visualized in the IoT Hub dashboard. We'll be re-using the metric again when creating alerts.
+The main activity of this unit is creating two different types of alerts: an email alert, and an Azure Function alert. First though, let's have a look at how metrics can be visualized in the IoT Hub dashboard. We'll be reusing the metric again when creating alerts.
 
 ## Create and visualize some metrics
 
@@ -18,7 +18,7 @@ The main activity of this unit is creating two different types of alerts: an ema
 
 1. There will be a short latency, but do you now see the telemetry data arriving?
 
-    [![Screenshot showing the line chart of telemetry messages recevied by the IoT Hub](../media/metrics-alerts-metrics-chart.png)](../media/metrics-alerts-metrics-chart.png#lightbox)
+    [![Screenshot showing the line chart of telemetry messages received by the IoT Hub](../media/metrics-alerts-metrics-chart.png)](../media/metrics-alerts-metrics-chart.png#lightbox)
 
 1. Click through the range of visualization options, the default is **Line chart**. Consider when a bar chart, or scatter plot, might be a better rendering option.
 
@@ -60,7 +60,7 @@ The main activity of this unit is creating two different types of alerts: an ema
 
     [![Screenshot showing the alert logic, to fire when the number of connected devices is greater than or equal to one](../media/metrics-alerts-email-alert-logic.png)](../media/metrics-alerts-email-alert-logic.png#lightbox)
 
-1. Check the email account you are using. Do you have a message that you have been added to an Azure action group?
+1. Check the email account you are using. Have you received a message that you've been added to an Azure action group?
 
     [![Screenshot showing the email received when the email address is added to the Azure Monitor action group](../media/metrics-alerts-email-note.png)](../media/metrics-alerts-email-note.png#lightbox)
 
@@ -116,7 +116,7 @@ The next rule we want to create calls an Azure Function. So, first, let's create
     > [!NOTE]
     > To test that the URL is active, add your name in a query parameter to the end of the URL: **?name=&lt;your name&gt;**. Then paste the URL into a browser. You should get the hello message in response.
 
-1. Click **Save**. You have now created an Azure Function.
+1. Click **Save**. You've now created an Azure Function.
 
 ## Create an alert using the metrics and HTTP trigger action
 
@@ -152,4 +152,4 @@ Create a second alert for your IoT Hub.
 
 ## Next step
 
-Great work. You have now created two alerts, an Azure Function, and should have a good idea of the range of actions and metrics available. The next step is to test the alerts.
+Great work. You've now created two alerts, an Azure Function, and should have a good idea of the range of actions and metrics available. The next step is to test the alerts.

@@ -76,7 +76,7 @@ You can select your preferred development environment (Visual Studio Code, or Vi
 
 1. Delete the default contents of the app.js file.
 
-1. When you've entered the code below, you'll be able to run the app with the **Start Without Debugging**, or **Start Debugging**, options. In the latter case you can set breakpoints, examine data, and perform other debugging tasks.
+1. When you've entered the code below, you can run the app with the **Start Without Debugging**, or **Start Debugging**, options. In the latter case you can set breakpoints, examine data, and perform other debugging tasks.
 
 ::: zone-end
 
@@ -678,6 +678,6 @@ The following app simulates a conveyor belt, and reports vibration sensor data e
 
 1. If no activity is shown, wait a short while, as there's some latency.  
 
-1. Stop the device app for now, by closing the console window. We will start the app running again when we've some metrics or alerts to test.
+1. Stop the device app for now, by closing the console window. We'll start the app running again when we've some metrics or alerts to test.
 
 The next step is to learn about the monitoring features of an IoT Hub.

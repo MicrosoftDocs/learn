@@ -12,7 +12,7 @@ In this penultimate unit, we test that all your good work so far functions as it
 
     [![Screenshot showing the alert summary table in the IoT Hub dashboard](../media/metrics-alerts-first-alert.png)](../media/metrics-alerts-first-alert.png#lightbox)
 
-1. Click on any of the entries in the table, as most of the entries are links. These links will take you to the relevant rules. Remember that we left the rule **Severity** as level 3, when creating the rules. As the operator of the IoT Hub, you are able to change the status of the alerts from **New** to **Acknowledged** to **Closed**.  
+1. Click on any of the entries in the table, as most of the entries are links. These links will take you to the relevant rules. Remember that we left the rule **Severity** as level 3, when creating the rules. As the operator of the IoT Hub, you can change the status of the alerts from **New** to **Acknowledged** to **Closed**.  
 
 ## Test the email alert is sent  
 
