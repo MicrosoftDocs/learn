@@ -4,7 +4,7 @@ In this module, you learned how to:
 - Deploy the web app to Azure by using Azure Toolkit for Eclipse.
 - Manage web app configurations using the Azure Toolkit for Eclipse.
 
-You've seen how to use the Azure Toolkit for Eclipse to deploy and manage an Azure web application. You should now have a good understanding of the steps involved, and how to connect to Azure from the Eclipse IDE.
+You now have a good understanding of how to deploy and manage an Azure web app with the toolkit. You also understand how how to connect to Azure from the Eclipse IDE.
 
 [!include[](../../../includes/azure-sandbox-cleanup.md)]
 

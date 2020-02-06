@@ -1,8 +1,8 @@
-Eclipse is a popular, open-source development environment that's used by many developers to create Java web applications and services. The Azure Toolkit for Eclipse provides a convenient means for deploying Java web applications to Azure that are created using Eclipse.
+Eclipse is a popular, open-source development environment that's used by many developers to create Java web applications and services. The Azure Toolkit for Eclipse provides a convenient way to deploy Java web applications that are created with Eclipse to Azure.
 
-Imagine that you've been hired as a new developer for a company that uses Eclipse for its development environment. Your company has used an on-premises web server in the past, but they want to move their website to Azure App Service to reduce costs. With this move in mind, your development lead has asked you to research the necessary steps to publish web apps to Azure, while preserving the existing development environment as much as possible.
+Imagine that you've been hired as a developer at a company that uses Eclipse for its development environment. Your company has used an on-premises web server in the past, but they want to move their website to Azure App Service to reduce costs. With this move in mind, your development lead asks you to research how to publish web apps to Azure while preserving the existing development environment as much as possible.
 
-This module shows you how to use the Azure Toolkit for Eclipse to deploy and configure an Azure web application. You'll also learn about how you can manage Azure web apps from within Eclipse by using the Azure Toolkit.
+This module shows you how to use the Azure Toolkit for Eclipse to deploy and configure an Azure web application. You'll also learn how you can manage Azure web apps from within Eclipse by using the Azure Toolkit.
 
 ## Learning objectives
 

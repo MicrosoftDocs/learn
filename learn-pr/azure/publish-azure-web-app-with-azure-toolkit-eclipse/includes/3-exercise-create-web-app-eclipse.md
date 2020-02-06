@@ -1,6 +1,6 @@
 After you have installed the Azure Toolkit for Eclipse, you have an environment you can use to build and deploy Java web apps to Azure.
 
-In this exercise, you'll use Eclipse to create a Java web app that uses Java Server Pages (JSP) to generate dynamic content for a web page. The page will display the current date and time, together with the IP address of the client computer running the web browser used to connect to the web app. You'll test the web app locally using the Apache Tomcat server.
+In this exercise, you'll use Eclipse to create a Java web app that uses Java Server Pages (JSP) to generate dynamic content for a web page. The page will display the current date and time, together with the IP address of the client computer running the web browser that connects to the web app. You'll test the web app locally using the Apache Tomcat server.
 
 ## Create a new web app
 
@@ -11,7 +11,7 @@ In this exercise, you'll use Eclipse to create a Java web app that uses Java Ser
     > [!div class="mx-imgBorder"]
     > ![Screenshot of the **File** menu in Eclipse. The user has selected the **Dynamic Web Project** command.](../media/3-new-web-project-menu.png)
 
-1. In the **New Dynamic Web Project** wizard, on the **Dynamic Web Project** page, enter **SampleWebApp** in the **Project name** box. Set the **Target runtime** is set to **Apache Tomcat v8.0**, and then click **Finish**.
+1. In the **New Dynamic Web Project** wizard, on the **Dynamic Web Project** page, enter **SampleWebApp** in the **Project name** box. Make sure the **Target runtime** is set to **Apache Tomcat v8.0**, and then click **Finish**.
 
     > [!div class="mx-imgBorder"]
     > ![Screenshot of the **Dynamic Web Project** page in the **New Dynamic Web Project** wizard, in Eclipse.](../media/3-dynamic-web-project.png)
@@ -29,7 +29,7 @@ In this exercise, you'll use Eclipse to create a Java web app that uses Java Ser
     > [!div class="mx-imgBorder"]
     > ![Screenshot of the **New JSP File** wizard in Eclipse, showing the **JSP** page.](../media/3-jsp-file.png)
 
-1. In the code editor window that appears, displaying the **index.jsp** file, in the **head** section of the page, change the HTML markup for the title to **Sample Web App**, as follows:
+1. A code editor window appears, displaying the **index.jsp** file. In the **head** section of the page, change the HTML markup for the title to **Sample Web App**, as follows:
 
     ```html
     <head>
@@ -48,7 +48,7 @@ In this exercise, you'll use Eclipse to create a Java web app that uses Java Ser
     </body>
     ```
 
-    This code retrieves the current date then formats and displays it. The code also extracts the IP address of the client from the request message, and prints it.
+    This code retrieves the current date then formats and displays it. The code also extracts the IP address of the client from the request message and prints it.
 
 1. Near the top of the page, after the first **@page** directive that specifies the language and content type of the page, add the two **@page** directives shown in the following code:
 
@@ -91,7 +91,7 @@ In this exercise, you'll use Eclipse to create a Java web app that uses Java Ser
     > [!div class="mx-imgBorder"]
     > ![Screenshot of the **Run** menu in Eclipse. The user has selected the **Run** command.](../media/3-run-app.png)
 
-1. In the **Run On Server** wizard, select the server **Tomcat v8.0 Server at localhost**, and then click **Finish**.
+1. In the **Run On Server** wizard, select **Tomcat v8.0 Server at localhost**, and then click **Finish**.
 
     > [!div class="mx-imgBorder"]
     > ![Screenshot of the **Run On Server** wizard in Eclipse. The user has selected the Tomcat v8.0 Server at localhost server.](../media/3-run-on-server.png)
@@ -104,6 +104,6 @@ In this exercise, you'll use Eclipse to create a Java web app that uses Java Ser
     > [!div class="mx-imgBorder"]
     > ![Screenshot of the output from the sample web application in Eclipse.](../media/3-results.png)
 
-1. Click the **Go to the selected URL** button – the green arrow next to the URL in the **Sample Web App** window – to refresh the page. You should see the time change as the page is regenerated and Java code is executed again.
+1. Click the **Go to the selected URL** button – the green arrow next to the URL in the **Sample Web App** window – to refresh the page. You should see the time change as the page regenerated and the Java code executes again.
 
 Congratulations! You've created a sample web app and deployed it locally using Eclipse. In the next exercise, you'll deploy the web app to Azure.

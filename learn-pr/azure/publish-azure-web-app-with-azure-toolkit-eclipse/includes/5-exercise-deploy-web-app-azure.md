@@ -1,6 +1,6 @@
-In a previous exercise, you created a dynamic web application using Eclipse, and you tested the web app locally by using an Apache Tomcat server that was running on your computer.
+In a previous exercise, you created a dynamic web application using Eclipse. you tested the web app locally using an Apache Tomcat server that was running on your computer.
 
-In this exercise, you'll use the Azure Toolkit for Eclipse to create a new Azure App Service, deploy your web app to Azure, and then test your web app. This exercise runs using Eclipse on your desktop computer. However, the Azure Toolkit will create the App Service and App Service plan in an Azure sandbox account, so the results should be the same as if you were running the web app locally.
+In this exercise, you'll use the Azure Toolkit for Eclipse to create a new Azure App Service, deploy your web app to Azure, and then test your web app. This exercise uses Eclipse on your desktop computer. However, the Azure Toolkit will create the App Service and App Service plan in an Azure sandbox account, so the results should be the same as if you were running the web app locally.
 
 ## Sign in to Azure from Eclipse
 
@@ -16,7 +16,7 @@ In this exercise, you'll use the Azure Toolkit for Eclipse to create a new Azure
     > [!div class="mx-imgBorder"]
     > ![Screenshot of the **Azure Explorer** window. The user isn't currently signed in.](../media/5-azure-sign-in.png)
 
-1. On the **Azure Sign In** page, click **Device Login**, and the click **Sign in**.
+1. On the **Azure Sign In** page, click **Device Login**, and then click **Sign in**.
 
     > [!div class="mx-imgBorder"]
     > ![Screenshot of the **Azure Sign In** page. The user has selected **Device Login**.](../media/5-device-login.png)
@@ -94,13 +94,13 @@ In this exercise, you'll use the Azure Toolkit for Eclipse to create a new Azure
     > [!div class="mx-imgBorder"]
     > ![Screenshot of the context menu for the web app in the **Azure Explorer** window](../media/5-web-app-open.png)
 
-4. In the web browser, verify that the web app displays similar results to before, when it ran locally. The main difference will be the IP address, which will be the real IP address of your computer rather than 127.0.0.1 (localhost).
+4. In the web browser, verify that the web app displays similar results to when it ran locally. The main difference will be the IP address, which will be the real IP address of your computer rather than 127.0.0.1 (localhost).
 
     > [!div class="mx-imgBorder"]
     > ![Screenshot of the web app running in a browser](../media/5-web-app-running.png)
 
-5. Click the refresh button in the web browser, and verify that the time is updated.
+5. Click the refresh button in the web browser, and verify that the time updates.
 
 6. Close the web browser and return to Eclipse.
 
-You've used the Azure Toolkit for Eclipse to create an App Service in Azure, deploy a web app to your app service, and tested your web app.
+Congratulations! You've used the Azure Toolkit for Eclipse to create an App Service in Azure, deploy a web app to your app service, and tested your web app.

@@ -1,6 +1,6 @@
-Azure App Service provides a scalable, highly available environment for hosting web apps. An Azure web app is a service that can run one or more web applications, and it uses the resources that are defined within an App Service Plan. The App Service Plan defines the environment for running a web app; it specifies resources such as CPU availability, memory allocation, disk storage capacity, how to scale the system according to demand, how and when to create backups, etc. When you deploy a web app to Azure, you can reuse an existing web app instance, or create a new one.
+Azure App Service provides a scalable, highly available environment for hosting web apps. An Azure web app is a service that can run one or more web applications, and it uses the resources that are defined within an App Service Plan. The App Service Plan defines the environment for running a web app; it specifies resources such as CPU availability, memory allocation, disk storage capacity, how to scale the system according to demand, and how and when to create backups. When you deploy a web app to Azure, you can reuse an existing web app instance or create a new one.
 
-In this unit, you'll learn the basics for how to use the Azure Toolkit for Azure to create an Azure App Service and App Service Plan. In the next unit, you will complete an exercise where you will deploy your web app to an Azure App Service.
+In this unit, you'll learn the basics of how to use the Azure Toolkit for Azure to create an Azure App Service and App Service Plan. In the next unit, you will complete an exercise where you will deploy your web app to an Azure App Service.
 
 ## How to connect to Azure from Eclipse
 
@@ -9,7 +9,7 @@ Before you deploy a web app to Azure, you must first sign in to your Azure accou
 > [!div class="mx-imgBorder"]
 > ![Screenshot of the **Azure toolbar** in Eclipse. The user has selected the **Azure Explorer** command. The Azure Explorer window is displayed](../media/4-azure-explorer.png)
 
-If the **Azure Explorer** window indicates that you have not signed in, use the following steps:
+If the **Azure Explorer** window indicates that you have not signed in, follow these steps:
 
 1. Right-click **Azure (Not Signed In)**, and then click **Sign In**.
 
@@ -25,7 +25,7 @@ If the **Azure Explorer** window indicates that you have not signed in, use the 
 
 ## How to deploy a web app to Azure
 
-The Azure Toolkit for Eclipse provides a couple of ways in which you can start web app deployment to Azure:
+The Azure Toolkit for Eclipse provides a couple of ways to start web app deployment to Azure:
 
 - You can use the **Publish** button in the toolbar and select the **Publish as Azure Web App** command.
 
@@ -39,14 +39,14 @@ The Azure Toolkit for Eclipse provides a couple of ways in which you can start w
 
 The **Deploy Web App** wizard will start running. You're asked for the Azure App Service to use to deploy your project. You can specify an existing App Service (if one is available), or you can create a new one.
 
-To create a new Azure App Service, you would use the following steps:
+To create a new Azure App Service, follow these steps:
 
 1. Click **Create** to set up a new App Service.
 
     > [!div class="mx-imgBorder"]
     > ![Screenshot of the **Deploy Web App** wizard. The **Create** button is highlighted](../media/4-deploy-web-app.png)
 
-1. In the **Create App Service** wizard, you would specify the hosting environment and choose or create the App Service Plan for your App Service.
+1. In the **Create App Service** wizard, specify the hosting environment and choose or create the App Service Plan for your App Service.
 
     > [!div class="mx-imgBorder"]
     > ![Screenshot of the **Create App Service** wizard.](../media/4-create-app-service.png)
@@ -69,14 +69,14 @@ To create a new Azure App Service, you would use the following steps:
     > [!NOTE]
     > Deployment slots are only available in the standard pricing tiers and above.
 
-    Deployment slots enable you to run multiple versions of the web app simultaneously. For example, you can deploy a new version of an app with additional features to a new deployment slot for staging while the original version of the app remains available to users in production. After you have tested the new version of the web app and everything works as expected, you can quickly direct the App Service to use the new web app – just tell it which deployment slot to use. The switch is immediate and transparent, which minimizes your app downtime.
+    Deployment slots enable you to run multiple versions of the web app simultaneously. For example, you can deploy a new version of an app to a new deployment slot for staging while the original version of the app remains available to users in production. After you have tested the new version of the web app and everything works as expected, you can quickly direct the App Service to use the new web app – just tell it which deployment slot to use. The switch is immediate and transparent, which minimizes your app downtime.
     
     Deployment slots are an optional feature for Azure, but here are a few ideas to consider if you decide not to use deployment slots in a production environment:
     
     - Your web application will be unavailable while you deploy a new version.
-    - It may be difficult to roll back to an earlier version of your web app if the new version is problematic.
+    - It may be difficult to roll back to an earlier version of your web app if the new version has problems.
 
-1. When you have finished configuring your App Service, you would click **Deploy** to upload the web app in your project to the Web Apps service.
+1. When you have finished configuring your App Service, click **Deploy** to upload the web app in your project to the Web App service.
 
     > [!div class="mx-imgBorder"]
     > ![Screenshot of the **Deploy Web App** wizard. The **Deploy** button is highlighted](../media/4-deploy-web-app-2.png)
