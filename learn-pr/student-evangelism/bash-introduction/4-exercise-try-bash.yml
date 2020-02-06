@@ -10,8 +10,8 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-bash
 durationInMinutes: 8
-azureSandbox: true
 interactive: bash
+azureSandbox: true
 content: |
   [!include[](includes/4-exercise-try-bash.md)]
 quiz:
