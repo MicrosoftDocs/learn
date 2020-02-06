@@ -49,7 +49,7 @@ We will create a script file that we will execute from the shell in order to cre
     done
     ```
 1. Replace "\<iot hub name\>" with your IoT Hub Name
-1. Save the script file
+1. Save the script file and close the editor.
 1. In the terminal, run the script **createdevices.sh**:
 
     ```bash
@@ -84,6 +84,7 @@ As an administrator of the IoT solution, you could use the Azure portal to creat
         }
     ```
 
+1. Save the file and close the editor.
 1. In the same folder you created the previous file, create 2 other automatic configuration metrics files called *firmwareupdatemetricslewis.json*.
 
     ```bash
@@ -102,6 +103,7 @@ As an administrator of the IoT solution, you could use the Azure portal to creat
         }
     ```
 
+1. Save the file and close the editor.
 1. In the same folder you created the previous file, create 2 other automatic configuration metrics files called *firmwareupdatemetricssmith.json*.
 
     ```bash
@@ -120,6 +122,7 @@ As an administrator of the IoT solution, you could use the Azure portal to creat
         }
     ```
 
+1. Save the file and close the editor.
 1. Now that we have our configuration content ready, we want to create and monitor the first configuration. Once the first one will terminate successfully, we will create and monitor the second one.
 
     Working in the same terminal you used to run the device simulator, run the following commands (replacing {your iot hub name} with your hub name):
@@ -132,6 +135,9 @@ As an administrator of the IoT solution, you could use the Azure portal to creat
          --priority 10 \
          --metrics firmwareupdatemetricslewis.json
     ```
+
+    > [!NOTE]
+    > Remember the trick to use a text editor to prepare the commands before pasting them in the Azure Shell terminal 
 
 1. The firmware update campaign started and you should see the 5 devices installed at the Lewis' start the firmware update. We will now monitor the progress of the configuration to make sure everything went well before starting the second one. In the terminal, run the following command (replacing {your iot hub name} with your hub name):
 
