@@ -709,6 +709,36 @@
       "source_path": "learn-pr/data-ai-cert/train-local-model-with-azure-mls/7-summary.yml",
       "redirect_url": "https://docs.microsoft.com/learn/modules/train-local-model-with-azure-mls",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/design-azure-sql-data-warehouse/2-types-of-dw-solutions.yml",
+      "redirect_url": "https://docs.microsoft.com/en-gb/learn/modules/design-azure-sql-data-warehouse/2-types-of-dw-solutions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/design-azure-sql-data-warehouse/3-azure-sql-dw.yml",
+      "redirect_url": "https://docs.microsoft.com/en-gb/learn/modules/design-azure-sql-data-warehouse/3-azure-sql-dw",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/design-azure-sql-data-warehouse/4-massively-parallel-processing.yml",
+      "redirect_url": "https://docs.microsoft.com/en-gb/learn/modules/design-azure-sql-data-warehouse/4-massively-parallel-processing",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/design-azure-sql-data-warehouse/5-table-geometries.yml",
+      "redirect_url": "https://docs.microsoft.com/en-gb/learn/modules/design-azure-sql-data-warehouse/5-table-geometries",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/design-azure-sql-data-warehouse/6-create-azure-dw-using-portal.yml",
+      "redirect_url": "https://docs.microsoft.com/en-gb/learn/modules/design-azure-sql-data-warehouse/6-create-azure-dw-using-portal",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/design-azure-sql-data-warehouse/7-summary.yml",
+      "redirect_url": "https://docs.microsoft.com/en-gb/learn/modules/design-azure-sql-data-warehouse/7-summary",
+      "redirect_document_id": false
     }
   ]
 }
