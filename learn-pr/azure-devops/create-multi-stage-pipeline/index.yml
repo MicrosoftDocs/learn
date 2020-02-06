@@ -3,7 +3,7 @@ uid: learn.azdo.create-multi-stage-pipeline
 metadata:
   title: Create a multistage pipeline by using Azure Pipelines - Learn
   description: Design and create a realistic release pipeline that promotes changes to various testing and staging environments.
-  ms.date: 09/30/2019
+  ms.date: 01/21/2020
   author: tpetchel
   ms.author: thpetche
   ms.topic: interactive-tutorial
@@ -20,7 +20,7 @@ prerequisites: |
   - An Azure subscription
   - An Azure DevOps organization
   - Visual Studio Code
-  - .NET Core 2.1
+  - .NET Core 3.1
   - Git
   - A GitHub account
 iconUrl: /learn/achievements/azure-devops/create-multi-stage-pipeline.svg

@@ -14,9 +14,9 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: "Which action is NOT something a sight reliability engineer would do?"
+  - content: "Which action is NOT something a site reliability engineer would do?"
     choices:
-    - content: Ensure the software has good logging and diagnostics
+    - content: Ensure the software has good logging and diagnostics.
       isCorrect: false
       explanation: "SREs are concerned with the product reliability, so ensuring the site has good logging and diagnostics would be an action the SRE does."
     - content: Set up the server environment for testing.

@@ -29,8 +29,10 @@ modules:
 - learn.introduction-to-security
 - learn.create-azure-account
 - learn.azure-security.manage-users-and-groups-in-aad
-- learn.secure-access-azure-ad-multi-factor-authentication
+- learn.azure.create-users-and-groups-in-azure-active-directory
+#- learn.secure-access-azure-ad-multi-factor-authentication
 - learn.secure-app-with-oidc-and-azure-ad
 - learn.azure-security.secure-aad-users-with-mfa
+- learn.azure.allow-users-to-reset-their-password
 trophy:
   uid: learn.security.manage-identity-and-access.trophy

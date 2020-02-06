@@ -1,10 +1,10 @@
-At this point, the team's pipeline has four stages. The first stage produces the build artifact. The second stage deploys the _Space Game_ web application to App Service in the _dev_ environment. The third and fourth stages deploy the _Space Game_ web application to the _test_ and _staging_ environments. We removed the triggers and approvals from the previous module to concentrate on just this section of the pipeline.
+At this point, the team's pipeline has four stages. The first stage produces the build artifact. The second stage deploys the _Space Game_ web application to App Service in the **dev** environment. The third and fourth stages deploy the _Space Game_ web application to the **test** and **staging** environments. We removed the triggers and approvals from the previous module to concentrate on just this section of the pipeline.
 
 Here you follow Andy, Mara, and Tim as they modify the pipeline to add stages. The stages will script the database changes for the DBA. The stages will then apply those changes after the DBA approves the changes.
 
 ## Create the Azure App Service environments
 
-In the [Create a release management workflow by using Azure Pipelines](/learn/modules/create-multi-stage-pipeline) module, you created one App Service instance that corresponds to each of the _dev_, _test_, and _staging_ environments. There you worked through the creation process step by step. Here you use the Azure CLI through Azure Cloud Shell to create all of the App Service instances in one step.
+In the [Create a multistage pipeline by using Azure Pipelines](/learn/modules/create-multi-stage-pipeline?azure-portal=true) module, you created one App Service instance that corresponds to each of the **dev**, **test**, and **staging** environments. There you worked through the creation process step by step. Here you use the Azure CLI through Azure Cloud Shell to create all of the App Service instances in one step.
 
 ### Bring up Cloud Shell through the Azure portal
 
@@ -159,22 +159,24 @@ Here you create a service connection that enables Azure Pipelines to access your
 1. In Azure DevOps, go to your **Space Game - web - Database** project.
 1. From the bottom corner of the page, select **Project settings**.
 1. Under **Pipelines**, select **Service connections**.
-1. Select **New service connection**, choose **Azure Resource Manager**, and then select **Next**.
-1. Select **Service principal (automatic)**, and then select **Next**.
+1. Select **New service connection**, then choose **Azure Resource Manager**, then select **Next**.
+1. Near the top of the page, select **Service Principal Authentication**.
 1. Fill in these fields:
 
     | Field               | Value                                        |
     |---------------------|----------------------------------------------|
+    | Connection name | *Resource Manager - Tailspin - Space Game* |
     | Scope level     | **Subscription**                             |
     | Subscription    | Your Azure subscription                      |
     | Resource Group  | **tailspin-space-game-rg**                   |
-    | Service connection name | *Resource Manager - Tailspin - Space Game* |
 
     During the process, you might be prompted to sign in to your Microsoft account.
 
-1. Select **Save**.
+1. Ensure that **Allow all pipelines to use this connection** is selected.
 
-    Azure DevOps performs a test connection to verify that it can connect to your Azure subscription. If Azure DevOps can't connect, you'll have the chance to sign in a second time.
+1. Select **OK**.
+
+    Azure DevOps performs a test connection to verify that it can connect to your Azure subscription. If Azure DevOps can't connect, you have the chance to sign in a second time.
 
 ## Create pipeline variables in Azure Pipelines
 
@@ -202,7 +204,7 @@ To add the variable:
     > [!IMPORTANT]
     > Set the name of the App Service instance, not its host name. In this example, you would enter *tailspin-space-game-web-dev-1234* and not *tailspin-space-game-web-dev-1234.azurewebsites.net*.
 
-1. Add these pipeline variables.
+1. Add these pipeline variables:
 
     | Variable name         | Example value                            |
     |-----------------------|------------------------------------------|
@@ -217,7 +219,7 @@ To add the variable:
 
     Your variable group looks like this one:
 
-    > ![Azure Pipeline, showing the variable group](../media/6-variables-library.png)
+    ![Azure Pipeline, showing the variable group](../media/6-variables-library.png)
 
 ## Add the database stage to the pipeline
 
@@ -226,7 +228,7 @@ Here you add the Azure Pipelines stage that checks for SQL Database schema chang
 1. Open the *azure-pipelines.yml* file from the `database` branch.
 1. Copy the following new pipeline. Use it to replace the code in the *azure-pipelines.yml* file.
 
-    [!code-yml[](code/azure-pipelines1.yml?highlight=65-161,165)]
+    [!code-yml[](code/azure-pipelines1.yml?highlight=68-164,168)]
 
     This pipeline adds a new build job for the *Tailspin.SpaceGame.Database* project. The project will create a *dacpac* file that contains information about the database schema. That *dacpac* file will be copied to a staging directory in the pipeline. Then the file will be published as an artifact called **dropDacpac**.
 

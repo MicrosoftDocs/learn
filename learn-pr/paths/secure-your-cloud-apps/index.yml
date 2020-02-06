@@ -32,7 +32,7 @@ modules:
 - learn.top-5-security-items-to-consider
 - learn.azure-security.create-security-baselines
 - learn.manage-secrets-with-azure-key-vault
-- learn.secure-access-azure-ad-multi-factor-authentication
+#- learn.secure-access-azure-ad-multi-factor-authentication
 - learn.secure-aspnet-core-identity
 - learn.control-authentication-with-apim
 trophy:

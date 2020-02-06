@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.network-fundamentals.network-types-topologies
-title: Network types and topologies to use when designing a network
+title: Network types and topologies to use when you design a network
 metadata:
-  title: Network types and topologies to use when designing a network
-  description: Explore the different network types and topologies used when designing networks.
+  title: Network types and topologies to use when you design a network
+  description: Explore the different network types and topologies that are used to design networks.
   ms.date: 01/09/2020
   author: cryophobia
   ms.author: chrvaw

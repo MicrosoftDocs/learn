@@ -4,7 +4,7 @@ title: Exercise - Provision Azure resources in Azure Pipelines with Terraform
 metadata:
   title: Exercise - Provision Azure resources in Azure Pipelines with Terraform
   description: Provision App Service from Azure Pipelines with Terraform.
-  ms.date: 11/07/2019
+  ms.date: 01/21/2020
   author: tpetchel
   ms.author: thpetche
   ms.topic: interactive-tutorial

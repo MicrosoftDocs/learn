@@ -3,13 +3,13 @@ uid: learn.wwl.introduction-open-source-database-migration-azure.approaches-migr
 title: Approaches to migration
 metadata:
   title: Approaches to migration
-  description: Approaches to migration
+  description: "Approaches to migration"
   ms.date: 01/31/2020
   author: wwlpublish
   ms.author: v-gea
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-durationInMinutes: 3
+durationInMinutes: 12
 content: |
   [!include[](includes/4-approaches-migration.md)]

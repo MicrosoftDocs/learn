@@ -163,4 +163,4 @@ Here you build and run the web application locally to verify that the applicatio
 
     Unlike in previous modules, the leaderboard data is read from your Azure SQL Database.
 
-    When you finish, return to the terminal window. Use Ctrl+C to stop the application.
+    When you finish, return to the terminal window. Use <kbd>Ctrl+C</kbd> to stop the application.

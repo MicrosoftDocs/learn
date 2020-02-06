@@ -1,5 +1,6 @@
 ### YamlMime:Module
 uid: learn.data-ai.choose-azure-data-science-option
+hidden: true
 metadata:
   title: Choose the Data Science service in Azure you need
   description: Learn about Azure services that support the Data Science process, the features of each service, and what use cases each service supports.

@@ -23,7 +23,7 @@ Let’s create intents for each of these items.
 
 1. Your utterances for the **Greeting** intent should look similar to the following image:
 
-    ![Utterances for the Greeting intent](../media/4-exercise-add-intents-utterances.png)
+    ![Utterances for the Greeting intent](../media/4-add-intents-utterances.png)
 
 1. Create another intent named **SearchPics**.
 1. Add the following values as utterances for the **SearchPics** intent:
@@ -51,7 +51,7 @@ Next, let's create the entities we need to capture specific requests from users.
 
 1. Select **Simple** for **Entity type**. Then select **Done**.
 
-    ![Adding an entity named facet, of type Simple](../media/4-exercise-add-intents-entity.png)
+    ![Adding an entity named facet, of type Simple](../media/4-add-intents-entity.png)
 
 ## Map search subjects to the facet entity
 
@@ -70,7 +70,7 @@ Next, we have to teach LUIS how to pick out the search subject as the **facet** 
 
 1. Your progress should look similar to the following image:
 
-    ![Keywords selected as facet entities, shown by the term "facet" selected in the image](../media/4-exercise-add-intents-facet-entity.png)
+    ![Keywords selected as facet entities, shown by the term "facet" selected in the image](../media/4-add-intents-facet-entity.png)
 
 1. Add two more intents with related utterances, as shown in the following table:
 
