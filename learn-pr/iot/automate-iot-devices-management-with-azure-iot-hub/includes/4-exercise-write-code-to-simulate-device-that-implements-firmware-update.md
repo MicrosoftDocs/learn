@@ -252,6 +252,6 @@ At this point your project is ready for coding.
     > Read through the comments in the code, noting how the device reacts to device twin changes to execute a firmware update based on the configuration shared in the desired Property "firmware". You can also note the function that will report the current firmware update status through the reported properties of the device twin.
 
 
-1. Save the **Program.cs** file and close the editor.
+1. Save the **Program.cs** file and close the editor (to close the editor, find the elipse "..." menu on the right-hand side of the editor).
 
 At this point your device is ready to be managed from IoT Hub. In the next unit we will test that the firmware update process works as expected for this simulated device.
