@@ -11,6 +11,6 @@ metadata:
   ms.prod: learning-bash
 durationInMinutes: 3
 interactive: bash
-azureSandbox: false
+azureSandbox: true
 content: |
   [!include[](includes/6-exercise-filter-cli-output.md)]

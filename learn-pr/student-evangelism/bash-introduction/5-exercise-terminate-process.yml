@@ -11,6 +11,6 @@ metadata:
   ms.prod: learning-bash
 durationInMinutes: 10
 interactive: bash
-azureSandbox: false
+azureSandbox: true
 content: |
   [!include[](includes/5-exercise-terminate-process.md)]
