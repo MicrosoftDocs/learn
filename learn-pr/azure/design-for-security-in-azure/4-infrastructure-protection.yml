@@ -22,10 +22,10 @@ quiz:
       isCorrect: false
       explanation: 'Role-based access control can be applied at the subscription scope.'
     - content: 'Resource group'
-      isCorrect: false
+      isCorrect: true
       explanation: 'Role-based access control can be applied at the resource group scope.'
     - content: 'Files and folders within a Linux filesystem'
-      isCorrect: true
+      isCorrect: false
       explanation: 'Azure role-based access control can only be applied to Azure resources. Files and folders within a Linux file system can be secured with various methods, but not with Azure role-based access control.'
     - content: 'Resource'
       isCorrect: false

@@ -10,5 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-bash
 durationInMinutes: 3
+interactive: bash
+azureSandbox: true
 content: |
   [!include[](includes/6-exercise-filter-cli-output.md)]
