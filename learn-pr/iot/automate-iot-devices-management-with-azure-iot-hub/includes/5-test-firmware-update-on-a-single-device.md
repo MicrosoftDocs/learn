@@ -4,6 +4,10 @@ In this unit we will use the Azure portal to create a new device management conf
 
 In the Azure Shell, from the same folder you created the device simulator project, start the simulator typing the following command (replacing **\<device connection string\>** with the connection string you got at the end of unit 2):
 
+    > [!NOTE]
+    > In the following instructions and next units of this module you will have to enter long and customized commands. We recommend that you use a text editor to prepare your commands, replacing the place holders with your own names and keys then copy paste from there to the Azure Shell terminal.
+
+
 ``` 
 dotnet run "<device connection string>" 
 ```
