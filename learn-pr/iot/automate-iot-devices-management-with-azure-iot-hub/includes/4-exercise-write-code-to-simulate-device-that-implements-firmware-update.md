@@ -36,6 +36,8 @@ At this point your project is ready for coding.
     code Program.cs
     ```
 
+1. Delete all the content form the document.
+
 1. Copy and paste the following code.
 
     ```cs
