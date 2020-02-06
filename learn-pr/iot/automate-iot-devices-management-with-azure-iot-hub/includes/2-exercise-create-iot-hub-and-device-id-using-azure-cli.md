@@ -18,6 +18,9 @@ In this unit, we'll first create an IoT Hub, and add a single device to that hub
     ```Azure CLI
     az iot hub create --name {your iot hub name} --resource-group <rgn>[sandbox resource group name]</rgn> --sku S1
     ```
+    
+    > [!NOTE]
+    > Across the module you will have to execute command like the above one in the Azure Shell that might take some time to execute. Be patient as Azure creates and configures resources for you.
 
 ## Create an IoT Hub device identity
 
