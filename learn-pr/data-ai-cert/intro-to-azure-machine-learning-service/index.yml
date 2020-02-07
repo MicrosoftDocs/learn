@@ -12,7 +12,7 @@ title: Introduction to Azure Machine Learning
 summary: Introduction to Azure Machine Learning
 abstract: | 
   In this module, you will learn how to:
-  - Provision an Aure Machine Learning workspace.
+  - Provision an Azure Machine Learning workspace.
   - Use tools and interfaces to work with Azure Machine Learning.
   - Run code-based experiments in an Azure Machine Learning workspace.
 prerequisites: None
