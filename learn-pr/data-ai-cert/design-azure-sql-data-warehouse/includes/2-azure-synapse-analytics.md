@@ -1,9 +1,9 @@
 **Azure Synapse Analytics** provides a unified environment by combining the enterprise data warehouse of SQL, the Big Data analytics capabilities of Spark, and data integration technologies to ease the movement of data between both, and from external data sources. Using Azure Synapse Analytics, you are able to ingest, prepare, manage, and serve data for immediate BI and machine learning needs more easily.
 
-Using SQL Analytics and SQL Pools in Azure Synapse Analytics, you will be able to work with modern data warehouse use cases to create database and tables, load data using PolyBase and query a data warehouse using the Massively Parallel Processing architecture. In fact, you can use any existing code that you have created for Azure SQL Data Warehouse with Azure Synapse Analytics seamlessly.
+Using SQL Analytics and SQL Pools in Azure Synapse Analytics, you will be able to work with modern data warehouse use cases to create database and tables. In addition, you can load data using PolyBase and query a data warehouse using the Massively Parallel Processing architecture. In fact, you can use any existing code that you have created for Azure SQL Data Warehouse with Azure Synapse Analytics seamlessly.
 
 
-Azure Synapse Analytics stores the incoming data into relational tables with columnar storage. This format significantly reduces the data storage costs and improves the query performance. Once information is stored in Azure Synapse Analytics, you can run analytics at massive scale. Compared to the traditional database systems, analysis queries on Azure Synapse Analytics finishes in a fraction of the time. Within this, SQL Analytics offers T-SQL for batch, streaming and interactive processing of data
+Azure Synapse Analytics stores the incoming data into relational tables with columnar storage. This format significantly reduces the data storage costs and improves the query performance. Once information is stored in Azure Synapse Analytics, you can run analytics at massive scale. Compared to the traditional database systems, queries on Azure Synapse Analytics finishes in a fraction of the time. Within this platform, SQL Analytics offers T-SQL for batch, streaming and interactive processing of data
 
 
 ![Azure SQL Data Warehouse architecture](../media/3-sql-dw-architecture.png)
@@ -23,4 +23,4 @@ Azure Synapse Analytics is a key component required for creating end-to-end rela
 - Pause compute capacity while leaving data intact, so you only pay for storage.
 - Resume compute capacity during operational hours.
 
-This is made possible due to the decoupling of computation and storage using the Massively Parallel Processing architecture.
+These capability are made possible due to the decoupling of computation and storage using the Massively Parallel Processing architecture.
