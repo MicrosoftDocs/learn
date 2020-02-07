@@ -28,7 +28,7 @@ Securely store and tightly control access to tokens, passwords, certificates, AP
 
 As an administrator, you may need to lock a subscription, resource group, or resource to prevent other users in your organization from accidentally deleting or modifying critical resources. You can set the lock level to `CanNotDelete` or `ReadOnly`. In the portal, the locks are called Delete and Read-only respectively. Unlike role-based access control, you use management locks to apply a restriction across all users and roles. Resource Manager locks apply only to operations that happen in the management plane, which consists of operations sent to <https://management.azure.com>. The locks don't restrict how resources perform their own functions. Resource changes are restricted, but resource operations aren't restricted.
 
-> [TIP]
+> [!TIP]
 > For example, a `ReadOnly` lock on a SQL Database prevents you from deleting or modifying the database. It doesn't prevent you from creating, updating, or deleting data in the database. Data transactions are permitted because those operations aren't sent to <https://management.azure.com>.
 
 1. Sign in to the Azure portal.
