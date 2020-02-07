@@ -15,6 +15,6 @@ Built on the Microsoft Azure cloud platform, Azure Machine Learning enables you 
 
 In this module, you will learn how to:
 
-- Provision an Aure Machine Learning workspace.
+- Provision an Azure Machine Learning workspace.
 - Use tools and interfaces to work with Azure Machine Learning.
 - Run code-based experiments in an Azure Machine Learning workspace.
