@@ -4,7 +4,7 @@ In this unit, you learn about custom roles in Azure role-based access control (R
 
 ## Azure Active Directory and Azure roles
 
-Azure Active Directory (Azure AD) roles and Azure roles are often confused when you first work with Azure. Azure AD roles provide the mechanism for managing permissions to AD resources like user accounts and passwords. Azure roles provides a wealth of capabilities for managing Azure resources like virtual machines (VMs) at a granular level.
+Azure Active Directory (Azure AD) roles and Azure roles are often confused when you first work with Azure. Azure AD roles provide the mechanism for managing permissions to AD resources like user accounts and passwords. Azure roles provide a wealth of capabilities for managing Azure resources like virtual machines (VMs) at a granular level.
 
 ![Diagram that shows relationship of Azure roles and Azure AD roles](../media/2-azure-office-roles.png)
 
@@ -12,7 +12,7 @@ The subtle differences between how the two can be set up and managed are in the 
 
 Azure roles | Azure AD roles
 | --- | --- |
-| Manage access to Azure resources like VMs, storage, networks and more | Manage access to Azure Active Directory resources like user accounts and passwords|
+| Manage access to Azure resources like VMs, storage, networks, and more | Manage access to Azure Active Directory resources like user accounts and passwords|
 |Multiple scope levels (management group, subscription, resource group, resource) | Scope only at tenant level|
 |Role information accessible through Azure portal, Azure CLI, Azure PowerShell, Azure Resource Manager templates, REST API | Role information accessible in Azure admin portal, Microsoft 365 admin center, Microsoft Graph, Azure AD PowerShell|
 
@@ -139,7 +139,7 @@ To get this list in PowerShell, you'd run the following command.
 Get-AzRoleDefinition -Name "Virtual Machine Contributor" | Select Actions | ConvertTo-Json
 ```
 
-For our scenario, we want a custom role that can be used for monitoring and restarting virtual machines for a specific subscription. So we want to include the following actions scoped at the subscription level:
+For our scenario, we want a custom role that allows you to monitor and restart virtual machines for a specific subscription. So we want to include the following actions scoped at the subscription level:
 
 - Read access to the compute, network, and storage resources
 - Ability to start and restart virtual machines

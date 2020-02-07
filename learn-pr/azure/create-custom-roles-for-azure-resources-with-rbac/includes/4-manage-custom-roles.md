@@ -16,7 +16,7 @@ Task | Actions | Description
 
 ## Create custom roles
 
-In unit 3, you created an custom role by using Azure CLI. You can also create a custom role by using the Azure portal or Azure PowerShell.
+In unit 3, you created a custom role by using Azure CLI. You can also create a custom role by using the Azure portal or Azure PowerShell.
 
 In the Azure portal, you'd go to the management group, subscription, resource group, or resource you want the custom role scope to apply to. Then go to **Access control (IAM)** and select **Add** > **Add custom role (preview)**.
 
@@ -26,7 +26,7 @@ You can choose to clone an existing role or start from scratch.
 
 ![Screenshot of clone role radio button selected and Virtual Machine Contributor as role to clone ](../media/4-clone-role.png)
 
-With either selection, you're able to edit the permissions, scopes, and the resulting JSON.
+With either selection, you can edit the permissions, scopes, and the resulting JSON.
 
 The steps involved to create a role by using Azure PowerShell are similar to what we covered in unit 2 and 3. After you defined the custom role in a JSON file, you used the following command in Azure CLI to create the custom role:
 
@@ -104,12 +104,12 @@ Get-AzRoleAssignment -RoleDefinitionName "Virtual Machine Operator"
 
 ## Delete custom roles
 
-You need the custom role you created in unit 3 for the exercises in the next unit. So don't delete your custom role just yet. Let's first talk about how you delete a custom role.
+You need the custom role you created in unit 3 for the exercises in the next unit. So don't delete your custom role yet. Let's first talk about how you delete a custom role.
 
 ### Remove role assignments
 If you decide you no longer need the custom role, you need to remove the role assignments before you can delete the role.
 
-In the Azure portal, you can remove assignments by going to to the management group, subscription, resource group, or resource the custom role's scope applies to. Then go to **Access control (IAM)** > **Role assignments**. Filter by the role name, select all the users assigned to the role, and select **Remove**.
+In the Azure portal, you can remove assignments by going to the management group, subscription, resource group, or resource the custom role's scope applies to. Then go to **Access control (IAM)** > **Role assignments**. Filter by the role name, select all the users assigned to the role, and select **Remove**.
 
 In Azure CLI, you use the following command with the name of the custom role.
 
@@ -123,7 +123,7 @@ In Azure PowerShell, you use the cmdlet `Remove-AzRoleAssignment`. The command m
 Remove-AzRoleAssignment -ObjectId <object_id> -RoleDefinitionName "role name" -Scope /subscriptions/<subscription_id>
  ```
 
-ObjectID is the Azure AD ObjectId of the user, group or service principal.
+ObjectID is the Azure AD ObjectId of the user, group, or service principal.
 
 ### Delete custom role
 
