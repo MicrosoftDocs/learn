@@ -14,7 +14,7 @@ You can use Logic Apps to connect and orchestrate multiple systems into a single
 - Move files to Azure Storage from servers in your organization.
 - Monitor social media activity, perform sentiment analysis, and create alerts when a post is critical to your business.
 - Connect to common business systems by using built-in connectors.
-- Connect to unusual or unique systems by using customer connectors that you create.
+- Connect to unusual or unique systems by using custom connectors that you create.
 
 Logic Apps can do all of these things without the need to rebuild or redeploy code.
 
