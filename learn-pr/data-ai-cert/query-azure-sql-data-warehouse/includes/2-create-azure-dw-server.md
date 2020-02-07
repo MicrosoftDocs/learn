@@ -15,7 +15,7 @@ Select **Databases** > **Azure Synapse Analytics (formerly SQL DW)** to start th
 
     - Subscription: the name of the subscription you are using in this lab
 
-    - In **Additional setting** tab, under data source, click **Sample**. Clivk on the **Basics** tab
+    - In **Additional setting** tab, under data source, click **Sample**. Click on the **Basics** tab
 
     - Resource group name: **mslearn-demodw**.
 

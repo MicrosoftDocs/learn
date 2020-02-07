@@ -2,7 +2,8 @@ There are many applications you can use as a client for the Azure Synapse Analyt
 
 Since SMSS is a common tool, let's look at how to use it to query our data warehouse. To connect to our database, we need to create a _connection string_.
 
-> [Note]: Azure Synapse Analytics currently has a tool named Azure Synapse Analytics Studio in preview mode to interact with Azure Synapse Analytics.
+> [!NOTE]
+> Azure Synapse Analytics currently has a tool named Azure Synapse Analytics Studio in preview mode to interact with Azure Synapse Analytics.
 
 ## Configure SQL Server Management Studio to communicate with a database
 

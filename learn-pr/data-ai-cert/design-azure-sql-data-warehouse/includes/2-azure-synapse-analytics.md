@@ -24,10 +24,3 @@ Azure Synapse Analytics is a key component required for creating end-to-end rela
 - Resume compute capacity during operational hours.
 
 This is made possible due to the decoupling of computation and storage using the Massively Parallel Processing architecture.
-
-In planned future releases, Azure Synapse Analytics will be able to provide the following additional services, including:
-
-- Tight integration with **Apache Spark**
-- **Data integration** capabilities to make it easier to ingest and process data
-- **Azure Synapse Analytics Studio** to provide a unified experience for management
-

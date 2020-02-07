@@ -17,7 +17,7 @@ Select **Databases** > **Azure Synapse Analytics (formerly SQL DW)** to start th
 
     - Subscription: the name of the subscription you are using in this lab
 
-    - In **Additional setting** tab, under data source, click **Sample**. Clivk on the **Basics** tab
+    - In **Additional setting** tab, under data source, click **Sample**. Click on the **Basics** tab
 
     - Resource group name: **mslearn-demodw**.
 
@@ -43,10 +43,6 @@ Select **Databases** > **Azure Synapse Analytics (formerly SQL DW)** to start th
 1. In the **SQL Data Warehouse*** blade, click **Create**.
 
 
-
-
-
-
 1. Select **Create** to provision the database. Provisioning takes a few minutes.
 
-You can monitor the deployment process through the notification ("bell") icon in the top bar - it will animate while the deployment is occuring. When the data warehouse is deployed, you have successfully created a data warehouse in Azure SQL Data Warehouse!
+You can monitor the deployment process through the notification ("bell") icon in the top bar - it will animate while the deployment is occurring. When the data warehouse is deployed, you have successfully created a data warehouse in Azure SQL Data Warehouse!
