@@ -11,9 +11,9 @@ First, let's create a blank database named **DemoDW** in Azure SQL Data Warehous
 
 1. From the **SQL Data Warehouse** blade, create an Azure Synapse Analytics  with the following settings:
 
-    - Subscription: the name of the subscription you are using in this lab
+    - Subscription: the name of the subscription you are using in this lab.
 
-    - In **Additional setting** tab, under data source, click **Sample**. Clivk on the **Basics** tab
+    - In **Additional setting** tab, under data source, click **Sample**. Click on the **Basics** tab.
 
     - Resource group name: **mslearn-demodw**.
 
