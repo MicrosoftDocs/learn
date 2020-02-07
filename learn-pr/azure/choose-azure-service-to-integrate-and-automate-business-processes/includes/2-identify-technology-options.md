@@ -128,4 +128,4 @@ In most cases, the simple administration and more flexible coding model provided
 | Can be part of an App Service application | Yes | No |
 | Provides close control of `JobHost` | Yes | No |
 
-Now you know what design-first and code-first technologies are available to you, how do you narrow you choice down for a given scenario? We'll look at this question in the next unit.
+Now that you know what design-first and code-first technologies are available to you, how do you narrow your choices? We'll look at this question in the next unit.
