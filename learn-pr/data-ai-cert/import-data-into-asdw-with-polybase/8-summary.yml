@@ -17,7 +17,7 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: "Mike is the data engineer for Contoso and has a data warehouse created with a database named Crystal. Within the database is a table named DimSuppliers. The suppliers' information is stored in a single text file named Suppliers.txt and is 1,200 MB in size. It's currently stored in a container with an Azure blob store. Your Azure SQL Data Warehouse is configured as Gen 2 DW30000c. How can Mike maximize the performance of the data load?"
+  - content: "Mike is the data engineer for Contoso and has a data warehouse created with a database named Crystal. Within the database is a table named DimSuppliers. The suppliers' information is stored in a single text file named Suppliers.txt and is 1,200 MB in size. It's currently stored in a container with an Azure blob store. Your Azure Synapse Analytics is configured as Gen 2 DW30000c. How can Mike maximize the performance of the data load?"
     choices: 
     - content: "Increase the Gen 2 DWU units."
       isCorrect: false

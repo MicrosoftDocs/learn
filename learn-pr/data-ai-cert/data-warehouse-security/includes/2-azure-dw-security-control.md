@@ -1,16 +1,16 @@
-Besides being a fundamental part of IT administration, data warehouse security is an essential and required component of many compliance certifications. The Azure SQL Data Warehouse service enables security controls through various layers: platform security, infrastructure security, network security, and data security. Data security controls are available for both data at rest and data in transit.
+Besides being a fundamental part of IT administration, data warehouse security is an essential and required component of many compliance certifications. The Azure Synapse Analytics service enables security controls through various layers: platform security, infrastructure security, network security, and data security. Data security controls are available for both data at rest and data in transit.
 
 Authentication and authorization controls provide infrastructure security. In the context of the data warehouse, authentication is a way to verify a user's identity. Authorization is a way to control access to data and objects in the data warehouse. Authorization checks are performed after authentication checks.
 
 ## Create a sample data warehouse
 
-To demonstrate the security capabilities of Azure SQL Data Warehouse, we'll create an instance of Azure SQL Data Warehouse with a sample database that Azure provides. Create the server and database from the Azure portal with the following options.
+To demonstrate the security capabilities of Azure Synapse Analytics, we'll create an instance of Azure Synapse Analytics with a sample database that Azure provides. Create the server and database from the Azure portal with the following options.
 
-![Screenshot of creating a SQL Data Warehouse instance by using the portal](../media/2-create-dw-portal.png)
+![Screenshot of creating a Azure Synapse Analytics data warehouse instance by using the portal](../media/2-create-dw-portal.png)
 
-## Set Azure Data Warehouse firewall access rules by using the portal
+## Set firewall access rules by using the portal
 
-Azure SQL Data Warehouse provides controls to restrict access to the data warehouse infrastructure via firewall rules. Firewall rules are the first level of defense against unauthorized access to the data warehouse assets. Firewall rules specify which IPs or IP ranges can access the data warehouse assets, and they reject any connections that come from IPs other than the allowed list or range. The firewall rules are enforced at the server level. 
+Azure Synapse Analytics provides controls to restrict access to the data warehouse infrastructure via firewall rules. Firewall rules are the first level of defense against unauthorized access to the data warehouse assets. Firewall rules specify which IPs or IP ranges can access the data warehouse assets, and they reject any connections that come from IPs other than the allowed list or range. The firewall rules are enforced at the server level. 
 
 To specify firewall rules:
 
@@ -26,9 +26,9 @@ To specify firewall rules:
 
    ![Screenshot of selecting rule name, start IP, and end IP](../media/2-select-server-setting.png)
 
-## Create an Azure Data Warehouse login by using SQL Server Management Studio
+## Create an Azure Synapse Analytics data warehouse login by using SQL Server Management Studio
 
-Azure SQL Data Warehouse supports two types of authentication to verify the identity of users who connect to it: SQL authentication and Azure Active Directory (Azure AD) authentication.
+Azure Synapse Analytics supports two types of authentication to verify the identity of users who connect to it: SQL authentication and Azure Active Directory (Azure AD) authentication.
 
 With SQL authentication, users connect to the data warehouse by using a username/password combination. The Azure portal does not provide the ability to configure SQL authentication. To configure SQL authentication:
 
@@ -57,7 +57,7 @@ Azure Active Directory is a central location to manage identities for all Micros
 1. Create an Azure AD administrator for your data warehouse.
 1. Map database users to Azure AD identities.
 
-## Create a new Azure Data Warehouse user by using SQL Server Management Studio
+## Create a new Azure Synapse Analytics data warehouse user by using SQL Server Management Studio
 
 Creating a login provides access to the data warehouse server but not its databases or database objects. To provide access to logins for specific databases and objects, you need to create a user and assign a role. 
 
@@ -94,7 +94,7 @@ Roles allow various levels of user access to a database. This approach to securi
 
 ### Encrypt data at rest
 
-Data encryption at rest helps protect data in your data warehouse and satisfies a critical compliance requirement. Azure SQL Data Warehouse provides transparent data-at-rest encryption capabilities without affecting the client applications that connect to it. To turn on transparent data-at-rest encryption, use the following steps:
+Data encryption at rest helps protect data in your data warehouse and satisfies a critical compliance requirement. Azure Synapse Analytics provides transparent data-at-rest encryption capabilities without affecting the client applications that connect to it. To turn on transparent data-at-rest encryption, use the following steps:
 
 1. Go to the database that you created in the Azure portal.
 1. Under **Security** in the options pane, select **Transparent data encryption**.
@@ -116,7 +116,7 @@ String connectionURL =
 
 ## Restrict data access with granular security controls by using SQL Server Management Studio
 
-In specific scenarios, granular security controls are essential for privacy and compliance. For instance, in a data warehouse that hosts data for all employees in a company, you would want to restrict access to individual columns or rows in tables to specific groups of management, depending on their role and function. Azure SQL Data Warehouse provides fine-grained security controls via column-level security and row-level security. In this section, we'll walk through how to enforce these controls on your data stored in Azure SQL Data Warehouse.
+In specific scenarios, granular security controls are essential for privacy and compliance. For instance, in a data warehouse that hosts data for all employees in a company, you would want to restrict access to individual columns or rows in tables to specific groups of management, depending on their role and function. Azure Synapse Analytics provides fine-grained security controls via column-level security and row-level security. In this section, we'll walk through how to enforce these controls on your data stored in Azure Synapse Analytics.
 
 ### Grant read access to data by using column-level security
 
@@ -147,7 +147,7 @@ The user **demodw_user** can now access only the four columns in the table for w
 
 ### Restrict access to data by using row-level security
 
-Azure SQL Data Warehouse provides predicate-based row-level security. The rows in a table that don't satisfy the predicates are silently excluded from queries. Enforcing row-level security in Azure SQL Data Warehouse is a two-step process:
+Azure Synapse Analytics provides predicate-based row-level security. The rows in a table that don't satisfy the predicates are silently excluded from queries. Enforcing row-level security in Azure Synapse Analytics is a two-step process:
 
 1. Creation of a table-valued function to define the access criteria
 2. Creation of a security policy that adds filter predicates created in the previous step to any tables for which row-level access needs to be restricted
