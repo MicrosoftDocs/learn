@@ -22,7 +22,7 @@ Let's use the Azure portal to see the custom roles in your subscription.
 We need to update the Virtual Machine Operator role to add permissions for a monitoring operation. We'll update that custom role to include the action _Microsoft.Insights/diagnosticSettings/_.
 
 1. Select **Cloud Shell** from the top right-hand side of the Azure portal.
-1. Type **Code** into the cloud shell.
+1. Type **code** into the cloud shell.
 1. Paste the definition below into the editor.
 
 

@@ -1,9 +1,9 @@
 ### YamlMime:Module
 uid: learn.azure.create-custom-roles-rbac
 metadata:
-  title: Create custom roles for Azure resources with role-based access control (RBAC)
+  title: Create custom roles for Azure resources with Azure role-based access control (Azure RBAC)
   description: Learn how to create custom roles for Azure resources with role-based access control (RBAC). 
-  ms.date: 12/20/2019
+  ms.date: 02/10/2020
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial
@@ -13,7 +13,7 @@ summary: Understand the structure of role definitions for access control. Identi
 abstract:  | 
   In this module, you will:
   - Identify role definition structure and properties
-  - Create and manage a custom user role for Azure resource access management
+  - Create and manage a custom role for Azure resource access management
 
 prerequisites: |
   - Basic knowledge of access management concepts in Azure like Azure role-based access control (RBAC).

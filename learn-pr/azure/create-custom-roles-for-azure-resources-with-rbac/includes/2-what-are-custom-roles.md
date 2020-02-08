@@ -1,21 +1,20 @@
-Sometimes, the built-in roles for Azure resources don't grant the precise level of access you need. Custom roles allow you to define roles that meet the specific needs of your organization. You can assign the custom roles you create to users, groups, and service principals at the scope of subscription, resource group, or resource.
+Sometimes, the built-in Azure roles don't grant the precise level of access you need. Custom Azure roles allow you to define roles that meet the specific needs of your organization. You can assign the custom roles you create to users, groups, and service principals at the scope of management group, subscription, resource group, or resource.
 
 In this unit, you learn about custom roles in Azure role-based access control (RBAC).
 
-## Azure Active Directory and Azure RBAC roles
+## Azure Active Directory and Azure roles
 
-Azure Active Directory (Azure AD) and Azure RBAC roles are often confused when you first work with Azure. Azure AD roles provide the mechanism for managing permissions to AD resources like user accounts and passwords. Azure RBAC provides a wealth of capabilities for managing Azure resources like virtual machines (VMs) at a granular level.
+Azure Active Directory (Azure AD) roles and Azure roles are often confused when you first work with Azure. Azure AD roles provide the mechanism for managing permissions to AD resources like user accounts and passwords. Azure roles provide a wealth of capabilities for managing Azure resources like virtual machines (VMs) at a granular level.
 
-![Diagram that shows relationship of Azure RBAC and Azure AD administrator roles](../media/2-azure-office-roles.png)
+![Diagram that shows relationship of Azure roles and Azure AD roles](../media/2-azure-office-roles.png)
 
 The subtle differences between how the two can be set up and managed are in the following table:
 
-Azure RBAC roles | Azure AD administrator roles
---- | ---
-Manage access to Azure resources like VMs, storage, networks and more | Manage access to Azure Active Directory resources like user accounts and passwords 
-Allows custom roles | Allows custom roles
-Multiple scope levels (management group, subscription, resource group, resource) | Scope only at tenant level
-Role information accessible through Azure portal, Azure CLI, Azure PowerShell, Azure Resource Manager templates, REST API | Role information accessible in Azure admin portal, Microsoft 365 admin center, Microsoft Graph, Azure AD PowerShell
+Azure roles | Azure AD roles
+| --- | --- |
+| Manage access to Azure resources like VMs, storage, networks, and more | Manage access to Azure Active Directory resources like user accounts and passwords|
+|Multiple scope levels (management group, subscription, resource group, resource) | Scope only at tenant level|
+|Role information accessible through Azure portal, Azure CLI, Azure PowerShell, Azure Resource Manager templates, REST API | Role information accessible in Azure admin portal, Microsoft 365 admin center, Microsoft Graph, Azure AD PowerShell|
 
 For our scenario, we need a custom role to manage Azure VMs at the subscription scope. So we need to use custom roles in Azure RBAC.
 
@@ -67,7 +66,7 @@ Any role definition is declared using the following format:
 
 `{Company}.{ProviderName}/{resourceType}/{action}`
 
-The parameter can be one of the following actions:
+The action portion is typically one of the following actions:
 
 - \*
 - read
@@ -83,13 +82,13 @@ To help you identify what permissions to include in a role definition, use the A
 
 For our scenario, the Virtual Machine Contributor built-in role has more permissions than the employee needs and Virtual Machine Administrator Login doesn't have enough.
 
-The following command returns the permissions for the build-in role Virtual Machine Contributor.
+The following command returns the permissions for the built-in role Virtual Machine Contributor.
 
 ```azurecli
 az role definition list --name "Virtual Machine Contributor" --output json | jq '.[] | .permissions[0].actions'
 ```
 
-The following list is the permissions for the build-in role Virtual Machine Contributor.
+The following list is the permissions for the built-in role Virtual Machine Contributor.
 
 ```JSON
 [
@@ -140,7 +139,7 @@ To get this list in PowerShell, you'd run the following command.
 Get-AzRoleDefinition -Name "Virtual Machine Contributor" | Select Actions | ConvertTo-Json
 ```
 
-For our scenario, we want a custom role that can be used for monitoring and restarting virtual machines for a specific subscription. So we want to include the following actions scoped at the subscription level:
+For our scenario, we want a custom role that allows you to monitor and restart virtual machines for a specific subscription. So we want to include the following actions scoped at the subscription level:
 
 - Read access to the compute, network, and storage resources
 - Ability to start and restart virtual machines
@@ -168,11 +167,11 @@ Description       : Restarts the virtual machine
 IsDataAction      : False
 ```
 
-The Azure PowerShell `Get-AzProviderOperation` cmdlet is useful to get the most current list of resource provider operations. In Azure CLI, use the `az provider operation show` command. You can find a published list of resource providers and operations in the Azure Resource Manager content on Docs.
+The Azure PowerShell `Get-AzProviderOperation` cmdlet is useful to get the most current list of resource provider operations. In Azure CLI, use the `az provider operation show` command. You can find a published list of resource providers and operations in the Azure RBAC content on Docs.
 
 ### Create VM Operator role definition
 
-Let's assume we've picked out what we need by looking at the related build-in role definitions and the resource provider operations list. We end up with the following role definition for our custom role. We'll use this role definition for our custom role.
+Let's assume we've picked out what we need by looking at the related built-in role definitions and the resource provider operations list. We end up with the following role definition for our custom role. We'll use this role definition for our custom role.
 
 ```JSON
    {

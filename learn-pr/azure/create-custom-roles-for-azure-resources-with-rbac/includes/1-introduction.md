@@ -7,7 +7,7 @@ In this module, you'll learn what custom roles are and how they're used to provi
 In this module, you'll:
 
 - Identify role definition structure and properties.
-- Create and manage a custom user role for Azure resource access management.
+- Create and manage a custom role for Azure resource access management.
 
 ## Prerequisites
 

@@ -8,12 +8,13 @@ Create a custom role within Azure for the new employee.
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) with the account where you have the User Access Administrator or Owner role.
 1. Select **Cloud Shell** from the top right-hand side menu bar.
+1. Select **Bash**.
 1. Run the following command to get the subscription ID to use for your custom role definition. Copy the subscription ID.
 
    ```azurecli
     az account list  --output json | jq '.[] | .id, .name'
    ```
-1. Type **Code** into Cloud Shell.
+1. Type **code** into Cloud Shell.
 1. Paste the following role definition  into the editor. This is role definition we identified in the previous unit.
 
     ```JSON
@@ -56,12 +57,19 @@ Create a custom role within Azure for the new employee.
 
 When the custom role is created, you can assign it to a user or group. To make things simple for our scenario, assign the custom role to yourself.
 
-1. Run the following command to assign the custom role where you replace "your display name" with what's likely your first and last name. In the Azure portal, your display name appears on your profile card from the top right-hand side.
+1. Run the following command to set your Azure account display name. In the Azure portal, your display name appears on your profile card from the top right-hand side.
 
     ```azurecli
-    USER=$(az ad user list --display-name "your display name" --query [0].userPrincipalName --output tsv)
+    DISPLAYNAME=$("your display name")
+    ```
+
+1. Run the following command to get your user principal name.
+
+    ```azurecli
+    USER=$(az ad user list --display-name $DISPLAYNAME --query [0].userPrincipalName --output tsv)
     echo $USER
     ```
+
 1. Run the following command to assign the custom role to yourself.
 
     ```azurecli
