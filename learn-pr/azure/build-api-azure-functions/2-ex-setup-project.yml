@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.build-api-azure-functions.2-ex-setup-project
+uid: learn.azure.build-api-azure-functions.ex-setup-project
 title: Exercise - Setting up the project
 metadata:
   title: Exercise - Setting up the project
@@ -16,4 +16,4 @@ azureSandbox: true
 # -- End sandbox --
 durationInMinutes: 10
 content: |
-  [!include[](includes/2-ex-setup-project.md)]
+  [!include[](includes/ex-setup-project.md)]

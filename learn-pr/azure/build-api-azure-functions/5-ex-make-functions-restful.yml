@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.build-api-azure-functions.5-ex-make-functions-restful
+uid: learn.azure.build-api-azure-functions.ex-make-functions-restful
 title: Exercise - Making functions RESTful
 metadata:
   title: Exercise - Making functions RESTful
@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 10
 content: |
-  [!include[](includes/5-ex-make-functions-restful.md)]
+  [!include[](includes/ex-make-functions-restful.md)]

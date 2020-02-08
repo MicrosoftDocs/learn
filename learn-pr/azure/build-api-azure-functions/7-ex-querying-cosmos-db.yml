@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.build-api-azure-functions.7-ex-querying-cosmos-db
+uid: learn.azure.build-api-azure-functions.ex-querying-cosmos-db
 title: Exercise - Querying Cosmos DB
 metadata:
   title: Exercise - Querying Cosmos DB
@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 10
 content: |
-  [!include[](includes/7-ex-querying-cosmos-db.md)]
+  [!include[](includes/ex-querying-cosmos-db.md)]

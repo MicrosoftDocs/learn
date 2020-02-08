@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.build-api-azure-functions.12-summary
-title: Summary
+uid: learn.azure.build-api-azure-functions.function-security
+title: Function Security
 metadata:
-  title: Summary
-  description: Summary
+  title: Function Security
+  description: Function Security
   ms.date: 01/24/2020
   author: burkeholland
   ms.author: buhollan
@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 10
 content: |
-  [!include[](includes/12-summary.md)]
+  [!include[](includes/function-security.md)]
