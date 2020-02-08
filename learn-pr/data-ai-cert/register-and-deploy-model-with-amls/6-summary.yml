@@ -16,7 +16,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "You have trained a model using the Python SDK for Azure Machine Learning. You want to deploy the model as a containerized real-time service with high scalability and security. What kind of compute should you create to host the service?"
+  - content: "You've trained a model using the Python SDK for Azure Machine Learning. You want to deploy the model as a containerized real-time service with high scalability and security. What kind of compute should you create to host the service?"
     choices: 
     - content: "An Azure Kubernetes Services (AKS) inferencing cluster."
       isCorrect: true
@@ -28,14 +28,14 @@ quiz:
       isCorrect: false
       explanation: "This is incorrect. You should use an AKS cluster to deploy a model as a scalable, secure, containerized service."
   
-  - content: "You are deploying a model as a real-time inferencing service. What functions must the entry script for the service include?"
+  - content: "You're deploying a model as a real-time inferencing service. What functions must the entry script for the service include?"
     choices: 
     - content: "main() and score()"
       isCorrect: false
-      explanation: "That is incorrect. You need to implement init and run functions in the entry (scoring) script."
+      explanation: "That is incorrect. You must implement init and run functions in the entry (scoring) script."
     - content: "base() and train()"
       isCorrect: false
-      explanation: "That is incorrect. You need to implement init and run functions in the entry (scoring) script."
+      explanation: "That is incorrect. You must implement init and run functions in the entry (scoring) script."
     - content: "init() and run()"
       isCorrect: true
-      explanation: "That is correct. You need to implement init and run functions in the entry (scoring) script."
+      explanation: "That is correct. You must implement init and run functions in the entry (scoring) script."
