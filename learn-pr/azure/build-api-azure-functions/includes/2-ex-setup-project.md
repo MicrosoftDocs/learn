@@ -45,7 +45,7 @@ You're a new developer at Tailwind Traders. Before you can start, you'll need to
 1. Copy the following line and paste it into the Cloud Shell terminal instance in VS Code
 
    ```bash
-   git clone https://github.com/burkeholland/tailwind-products && cd tailwind-products && ./CREATE_DATABASE.sh
+   git clone https://github.com/microsoft/nslearn-build-api-azure-functions && cd DB_SETUP && ./CREATE_DATABASE.sh
    ```
 
    This will create a new Cosmos DB account, database, and collection populated with product data. This process can take up to 15 minutes. Feel free to continue with the Learn Module. Just be sure to keep the terminal instance open until the process is complete.
@@ -63,7 +63,7 @@ Fortunately, someone has already written the frontend part of the application. T
 1. Enter the following repo URL.
 
    ```bash
-   https://github.com/burkeholland/tailwind-products-editor
+   https://github.com/microsoft/nslearn-build-api-azure-functions
    ```
 
 1. Select a folder on your local drive where the project will be cloned.
