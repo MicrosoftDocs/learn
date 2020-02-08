@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.build-api-azure-functions.function-security
+uid: learn.azure.build-api-azure-functions.11-function-security
 title: Function Security
 metadata:
   title: Function Security
@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 10
 content: |
-  [!include[](includes/function-security.md)]
+  [!include[](includes/11-function-security.md)]

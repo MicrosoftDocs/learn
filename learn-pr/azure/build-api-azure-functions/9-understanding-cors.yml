@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.build-api-azure-functions.understanding-cors
+uid: learn.azure.build-api-azure-functions.9-understanding-cors
 title: Understanding CORS
 metadata:
   title: Understanding CORS
@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 10
 content: |
-  [!include[](includes/understanding-cors.md)]
+  [!include[](includes/9-understanding-cors.md)]

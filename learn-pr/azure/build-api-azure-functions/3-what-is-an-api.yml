@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.build-api-azure-functions.what-is-an-api
+uid: learn.azure.build-api-azure-functions.3-what-is-an-api
 title: What is an API?
 metadata:
   title: What is an API?
@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 10
 content: |
-  [!include[](includes/what-is-an-api.md)]
+  [!include[](includes/3-what-is-an-api.md)]
