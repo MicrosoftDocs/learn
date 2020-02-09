@@ -97,6 +97,10 @@ Your API is ready for prime time. Let's put it in the cloud. Azure, here we come
 
 1. Add `http://localhost:5000` to the list of allowed URLs.
 
+   ```http
+   http://localhost:5000
+   ```
+
 1. Click "Save" at the top.
 
 ## Test the frontend application
@@ -105,4 +109,4 @@ Your API is ready for prime time. Let's put it in the cloud. Azure, here we come
 
 1. Refresh the page. The application should still show the data, but this time using the API that is in production.
 
-   ![Product Manager application shown populated with data](../media/terminate-debug-process.png)
+   ![Product Manager application shown populated with data](../media/working-application.png)
