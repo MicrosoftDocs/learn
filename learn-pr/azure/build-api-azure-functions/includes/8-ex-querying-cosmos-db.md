@@ -31,7 +31,7 @@ It's time to put some gasoline in this API engine and fire it up. That's an anal
    }
    ```
 
-## Install ComsosDB JavaScript SDK
+## Install Cosmos DB JavaScript SDK
 
 Install the Cosmos DB package from npm.
 
