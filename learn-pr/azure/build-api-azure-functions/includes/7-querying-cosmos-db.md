@@ -97,14 +97,14 @@ const product = {
   }
 };
 
-const { resource } = container
+const { resource } = await container
   .item(product.id, product.brand.name)
   .replace(product);
 ```
 
 ### Delete an item
 
-The `delete` method deletes an item based off of the "id" that is passed in.
+The `delete` method deletes an item based on the id and partition key value that is specified.
 
 ```typescript
 const product = {
