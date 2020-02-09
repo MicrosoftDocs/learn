@@ -10,19 +10,19 @@ CORS is nifty for production, but it's a bummer when you're trying to build an a
 
 1. Add a setting after the "Values" block that specifies the "Host" and "CORS" properties.
 
-```json
-{
-  "IsEncrypted": false,
-  "Values": {
-    "AzureWebJobsStorage": "",
-    "FUNCTIONS_WORKER_RUNTIME": "node",
-    "CONNECTION_STRING": "AccountEndpoint=https://tailwind-traders-2778.documents.azure.com..."
-  },
-  "Host": {
-    "CORS": "*"
-  }
-}
-```
+   ```json
+   {
+     "IsEncrypted": false,
+     "Values": {
+       "AzureWebJobsStorage": "",
+       "FUNCTIONS_WORKER_RUNTIME": "node",
+       "CONNECTION_STRING": "AccountEndpoint=https://tailwind-traders-2778.documents.azure.com..."
+     },
+     "Host": {
+       "CORS": "*"
+     }
+   }
+   ```
 
 1. Start the Function project with <kbd>F5</kbd>.
 
@@ -40,7 +40,7 @@ CORS is nifty for production, but it's a bummer when you're trying to build an a
 
 1. The application loads in the data from the API.
 
-   ![Product Manager application shown populated with data](../media/terminate-debug-process.png)
+   ![Product Manager application shown populated with data](../media/working-application.png)
 
 1. Try creating, updating, and deleting products to ensure that all endpoints work.
 
