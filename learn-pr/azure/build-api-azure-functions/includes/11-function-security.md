@@ -15,7 +15,7 @@ Once there, you can define which URLs can and cannot access your Functions proje
 ![The Allowed Origins configuration screen under the CORS option in the Azure Portal](../media/allowed-origins.png)
 
 > [!TIP]
-> Using "http://localhost:PORT" is a valid entry in the CORS settings for a Function project in Azure. Just remember that everyone has a "localhost", so you'll want to make sure you don't leave that setting in after you are finished testing."
+> Using "http://localhost:PORT" is a valid entry in the CORS settings for a Function project in Azure. Just remember that everyone has a "localhost", so you'll want to make sure you don't leave that setting in after you are finished testing.
 
 Another strategy that we use is Azure Function Authorization. Azure Functions can require that the requestor know the right "key" to access your function. The requestor will have to pass that key in order for the function to execute.
 
