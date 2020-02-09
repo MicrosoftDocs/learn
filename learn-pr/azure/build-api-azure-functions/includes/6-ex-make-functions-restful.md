@@ -16,26 +16,26 @@ The Products Manager API is about to get serious style upgrade courtesy of you -
 
 Your `function.json` file for "GetProducts" should now look like this...
 
-```json
-{
-  "bindings": [
+    ```json
     {
-      "authLevel": "function",
-      "type": "httpTrigger",
-      "direction": "in",
-      "name": "req",
-      "methods": ["get"],
-      "route": "products"
-    },
-    {
-      "type": "http",
-      "direction": "out",
-      "name": "res"
+      "bindings": [
+        {
+          "authLevel": "function",
+          "type": "httpTrigger",
+          "direction": "in",
+          "name": "req",
+          "methods": ["get"],
+          "route": "products"
+        },
+        {
+          "type": "http",
+          "direction": "out",
+          "name": "res"
+        }
+      ],
+      "scriptFile": "../dist/GetProducts/index.js"
     }
-  ],
-  "scriptFile": "../dist/GetProducts/index.js"
-}
-```
+    ```
 
 1. Save the file.
 
@@ -122,14 +122,18 @@ Your `function.json` file for "GetProducts" should now look like this...
 
 ## Make the DeleteProduct function RESTful
 
-1. Open the "api/CreatProducts/function.json" file.
+1. Open the "api/DeleteProduct/function.json" file.
 
-1. Restrict the allowed "methods" to just "post".
+1. Restrict the allowed "methods" to just "delete".
+
+   ```json
+    "methods": ["delete"]
+   ```
 
 1. Below the "methods" line, add a line that specifies a new route for the DeleteProduct method.
 
    ```
-   "route": "product"
+   "route": "product/{id}"
    ```
 
    Your `function.json` file for DeleteProduct should now look like this...
@@ -142,8 +146,8 @@ Your `function.json` file for "GetProducts" should now look like this...
          "type": "httpTrigger",
          "direction": "in",
          "name": "req",
-         "methods": ["delete/{id}"],
-         "route": "product"
+         "methods": ["delete"],
+         "route": "product/{id}"
        },
        {
          "type": "http",
