@@ -26,7 +26,7 @@ It's time to put some gasoline in this API engine and fire it up. That's an anal
      "Values": {
        "AzureWebJobsStorage": "",
        "FUNCTIONS_WORKER_RUNTIME": "node",
-       "CONNECTION_STRING": "AccountEndpoint=https://tailwind-11478.documents.azure.com:443/;AccountKey=SWBo68p0tZmiGOhjy8n48GYV63QkjsTRwMBhCLnmyNHhXr4lwZDXQWYgPDP32sMXZYoTNsivWVUdeje08EyFHg=="
+       "CONNECTION_STRING": "PASTE YOUR CONNECTION STRING HERE"
      }
    }
    ```
@@ -164,7 +164,7 @@ Install the Cosmos DB package from npm.
 
 ## Wire up the DeleteProduct function
 
-1. Open the `api/UpdateProduct/index.ts` file.
+1. Open the `api/DeleteProduct/index.ts` file.
 
 1. Replace all of the code in the file with the following...
 
