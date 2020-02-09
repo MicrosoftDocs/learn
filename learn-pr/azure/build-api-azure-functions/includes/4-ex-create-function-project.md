@@ -91,7 +91,9 @@ Azure Functions projects can be run and debugged locally from within VS Code.
    `
 1. Select "Attach to Node Functions".
 
-The Azure Functions project will launch. Notice that the terminal shows you what URL the function is running on.
+   The Azure Functions project will launch. Notice that the terminal shows you what URL the function is running on.
+
+   ![VS Code integrated terminal showing functions URLs](../media/functions-in-terminal.png)
 
 1. Press <kbd>Cmd/Ctrl</kbd> and click on the "GetProducts" link to open it in a browser.
 
