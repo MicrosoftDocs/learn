@@ -209,7 +209,7 @@ Install the Cosmos DB package from npm.
 1. Navigate to the "/api/products" URL...
 
    ```http
-   http://localhost:7071/api/GetProducts
+   http://localhost:7071/api/products
    ```
 
 1. Behold the products.
