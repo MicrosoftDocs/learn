@@ -14,6 +14,6 @@ metadata:
 interactive: bash
 azureSandbox: true
 # -- End sandbox --
-durationInMinutes: 10
+durationInMinutes: 8
 content: |
   [!include[](includes/2-ex-setup-project.md)]
