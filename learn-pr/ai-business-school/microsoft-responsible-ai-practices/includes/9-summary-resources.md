@@ -12,8 +12,11 @@ Now that you have reviewed this module, you should be able to:
 
 To learn more about our perspective on responsible AI as well as the impact of AI on our future, read our book [The Future Computed](https://blogs.microsoft.com/uploads/2018/02/The-Future-Computed_2.8.18.pdf).
 
+* [Download PDF](https://aka.ms/AA7a8si) of Understanding AI governance at Microsoft.
+* [Download PDF](https://aka.ms/AA7a3jb) of Governance in action at Microsoft.
 * [Download PDF](https://aka.ms/AA629xl) of Establishing responsible design principles in AI engineering to share with others.
 * [Download PDF](https://aka.ms/AA629xn) of Engaging externally: AI for Good to share with others.
+* [Download PDF](https://aka.ms/AA7a8sf) of Putting principles into practice: how we approach responsible AI at Microsoft.
 
 Below are some additional resources your organization can leverage when developing your own governance model for responsible AI.
 
