@@ -9,10 +9,9 @@ metadata:
   ms.author: rawortma
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 2
 content: |
-  [!include[](includes/7-knowledge-check.md)] 
+  [!include[](includes/8-knowledge-check.md)] 
 quiz:
   title: Check your knowledge
   questions:
@@ -72,3 +71,17 @@ quiz:
     - content: "Privacy and security."
       isCorrect: false
       explanation: "Incorrect. The guiding principles of privacy and security should definitely be considerations in this scenario, but testing the tool on a diverse group of users does not address privacy and security concerns."
+  - content: "Which answer best describes why State Farm believes successful AI requires interdisciplinary collaboration?"
+    choices:
+    - content: "State Farm found that AI initiatives are more likely to be successful and achieve organizational objectives when business decision-makers work alongside developers and technical experts."
+      isCorrect: true
+      explanation: "Correct. State Farm encourages partnerships between different groups throughout the organization with diverse skills and perspectives.  IT teams working in isolation might create models that aren’t ideally suited to business goals and processes."
+    - content: "State Farm found that interdisciplinary collaboration reduces costs."
+      isCorrect: false
+      explanation: "Incorrect. While cross-team collaboration on an AI solution may increase ROI in the long-run, saving money is not the primary goal."
+    - content: "State Farm does not believe that successful AI requires interdisciplinary collaboration."
+      isCorrect: false
+      explanation: "Incorrect. State Farm found that AI initiatives are more likely to be successful when business decision-makers work alongside developers and technical experts."
+    - content: "State Farm believes that interdisciplinary collaboration will accelerate the speed at which AI solutions are developed."
+      isCorrect: false
+      explanation: "Incorrect. While cross-team collaboration may accelerate solution development, speed is not the primary goal."

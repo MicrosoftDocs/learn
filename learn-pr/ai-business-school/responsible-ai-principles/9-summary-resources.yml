@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn-wwl.microsoft-responsible-ai-practices.summary-and-resources
+uid: learn-wwl.responsible-ai-guiding-principles.summary-and-resources
 title: Summary and resources
 metadata:
   title: Summary and resources
@@ -9,7 +9,6 @@ metadata:
   ms.author: rawortma
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
-durationInMinutes: 12 
+durationInMinutes: 10
 content: |
-  [!include[](includes/6-summary-and-resources.md)] 
+  [!include[](includes/9-summary-resources.md)] 

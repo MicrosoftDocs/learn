@@ -10,7 +10,7 @@ Here are some tools that we have found helpful in implementing our foundational 
 
 ## Security and privacy
 
-Security and privacy are key pillars of trust. There are a number of emerging tools to help protect security and privacy in AI systems. Techniques like homomorphic encryption, multi-party computation (MPC), and differential privacy make it possible to train AI models using private data without sharing it.<sup>7</sup> For example, with MPC we can build a system that analyzes data from three different hospitals without any of them gaining access to each other’s health data. Secure execution environments on public cloud platforms protect data inside a Trusted Execution Environment (TEE), also known as an enclave, so that data scientists can’t view or modify it, but they can still train AI models with it.
+Security and privacy are key pillars of trust. There are a number of emerging tools to help protect security and privacy in AI systems. Techniques like homomorphic encryption, multi-party computation (MPC), and differential privacy make it possible to train AI models using private data without sharing it.<sup>9</sup> For example, with MPC we can build a system that analyzes data from three different hospitals without any of them gaining access to each other’s health data. Secure execution environments on public cloud platforms protect data inside a Trusted Execution Environment (TEE), also known as an enclave, so that data scientists can’t view or modify it, but they can still train AI models with it.
 
 Implementing security and privacy in your organization:
 
@@ -18,10 +18,10 @@ Implementing security and privacy in your organization:
 :::column span="2":::
 |Resource type|Details|
 |---|---|
-|Guidance|Consider using guidelines like Microsoft’s Securing the Future of Artificial Intelligence and Machine Learning to formulate your own policies.<sup>8</sup>|
-|Open source code|Research Microsoft SEAL—a set of libraries powered by homomorphic encryption that allow computations to be performed directly on encrypted data.<sup>9</sup>|
+|Guidance|Consider using guidelines like Microsoft’s Securing the Future of Artificial Intelligence and Machine Learning to formulate your own policies.<sup>10</sup>|
+|Open source code|Research Microsoft SEAL—a set of libraries powered by homomorphic encryption that allow computations to be performed directly on encrypted data.<sup>11</sup>|
 |Technologies|Look into technologies like MPC, differential privacy, and secure execution environments to see if they are right for your use case.|
-|Tools|Take advantage of third-party tools like the Private Data Sharing Interface (PSI), which allows researchers to explore private datasets securely using differential privacy.<sup>10</sup>|
+|Tools|Take advantage of third-party tools like the Private Data Sharing Interface (PSI), which allows researchers to explore private datasets securely using differential privacy.<sup>12</sup>|
 :::column-end:::
 :::column:::
 > [!TIP]
@@ -33,9 +33,9 @@ Implementing security and privacy in your organization:
 
 AI systems should treat everyone fairly and avoid affecting similarly situated groups of people in different ways. Fairness is a fundamentally sociotechnical challenge, so “fair” classification tools are not be-all-end-all solutions. However, there are two key steps for reducing unfairness—assessment and mitigation.
 
-For fairness assessment there are several open source and proprietary technologies available. One is Aequitas, an open source toolkit developed at the University of Chicago, for auditing machine learning models for discrimination and bias.<sup>11</sup> Another is Fairness in Machine Learning Systems (FairLearn), an approach created by Microsoft Research co-developed with products teams. FairLearn can be used to assess potential bias in systems that make decisions about allocating resources, opportunities, or information.<sup>12</sup> For example, Fairlearn can turn a classifier that predicts who should be interviewed for a job based on previous hiring decisions into a classifier that predicts who should be interviewed while also respecting demographic parity (or another fairness definition).
+For fairness assessment there are several open source and proprietary technologies available. One is Aequitas, an open source toolkit developed at the University of Chicago, for auditing machine learning models for discrimination and bias.<sup>13</sup> Another is Fairness in Machine Learning Systems (FairLearn), an approach created by Microsoft Research co-developed with products teams. FairLearn can be used to assess potential bias in systems that make decisions about allocating resources, opportunities, or information.<sup>14</sup> For example, Fairlearn can turn a classifier that predicts who should be interviewed for a job based on previous hiring decisions into a classifier that predicts who should be interviewed while also respecting demographic parity (or another fairness definition).
 
-For mitigation, there are a variety of common techniques that are suited to different applications. For example, Microsoft Research created a methodology that helps reduce gender biases by modifying word embeddings to remove gender stereotypes, such as the association between receptionist and female.<sup>13</sup>
+For mitigation, there are a variety of common techniques that are suited to different applications. For example, Microsoft Research created a methodology that helps reduce gender biases by modifying word embeddings to remove gender stereotypes, such as the association between receptionist and female.<sup>15</sup>
 
 Implementing fairness in your organization:
 
