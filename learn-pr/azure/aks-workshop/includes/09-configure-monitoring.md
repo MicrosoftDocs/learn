@@ -14,9 +14,9 @@ A [Log Analytics workspace](https://docs.microsoft.com/azure/azure-monitor/learn
 
 ## Create a Log Analytics workspace
 
-You use Azure Monitor's Log Analytics to store monitoring data, events, and metrics from your AKS cluster and the applications. You pre-create the Log Analytics workspace in your assigned environment resource group.
+You use Log Analytics in Azure Monitor to store monitoring data, events, and metrics from your AKS cluster and the applications. You pre-create the Log Analytics workspace in your assigned environment resource group.
 
-1. Sign in to the [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true) with your Azure account.
+1. Sign in to [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true) with your Azure account.
 
 1. Run the following command to create the workspace. Name the workspace **aksworkshop-workspace**, and use the same resource group and region as your Azure Kubernetes Service cluster, for example, **aksworkshop** in **East US**.
 
