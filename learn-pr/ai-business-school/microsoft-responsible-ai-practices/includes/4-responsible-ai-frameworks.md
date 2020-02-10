@@ -1,5 +1,3 @@
-## Abstract
-
 As discussed in the previous unit, Microsoft has been developing and refining its own internal process to govern AI responsibly.
 
 In this unit, we’ll explain how Microsoft leverages a “sensitive uses” review trigger to help our internal and customer-facing teams identify when specific use cases need additional guidance. This is one of the early steps in our responsible AI governance process. We’ve found that it’s highly advantageous to start identifying, assessing, and mitigating responsible AI considerations early in solution design, rather than only as a compliance check at the end of a project.

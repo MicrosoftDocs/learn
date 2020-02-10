@@ -1,5 +1,3 @@
-## Abstract
-
 In keeping with our culture of integrity and trust at Microsoft, we knew it was essential to create a governance structure that would enable responsible AI innovation from the ground up. Our still-evolving governance system leverages what we have learned from our privacy and cybersecurity efforts, and relies upon centralized and decentralized functions to put our responsible AI principles into practice. From the senior leadership team to developers, field sellers and beyond, everyone is empowered to play a role in fostering responsible AI capabilities.
 
 Learn about how we structure our responsible AI governance system and consider how you could apply these ideas in your own organization.
