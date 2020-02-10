@@ -1,11 +1,11 @@
 
-In this exercise, you will make use of the Speech Service you created earlier.  This exercise does not require any configuration on your local computer for a development environment as we will use Visual Studio Code Online.  The steps will detail what is required to get the online environment configured correcly, tasks that will be required for each exercise to work correctly.   All resources are stored in a GitHub repo that you will link to during the exercise steps.
+In this exercise, you will make use of the Speech Service you created earlier.  This exercise does not require any configuration on your local computer for a development environment as we will use Visual Studio Code Online.  The steps will detail what is required to get the online environment configured correctly, tasks that will be required for each exercise to work correctly.   All resources are stored in a GitHub repo that you will link to during the exercise steps.
 
 ::: zone pivot="python"
 
 1. Start by opening a browser tab or window and navigating to Visual [Studio Code Online](https://visualstudio.microsoft.com/services/visual-studio-online/)
 
-[!NOTE] At this time, Safari is not a suppored browser for the preview of VS Code Online
+[!NOTE] At this time, Safari is not a supported browser for the preview of VS Code Online
 
 2. You will require an Azure subscription to create an environment for Visual Studio Code Online
 1. Select the **Get started** button.
@@ -27,7 +27,7 @@ In this exercise, you will make use of the Speech Service you created earlier.  
 1. Locate the speech_key, service_region line in the file and paste your key into the proper spot and set the region to where you created your Speech Service, such as **westus**.
 1. You will need to add a package for the Cognitive Services speech functions so open a terminal window in VS Code Online and paste the following command in the terminal window, and hit Enter to add the package, *sudo pip install --upgrade azure-cognitiveservices-speech*
 1. Locate the **Run Python File in Terminal** button in the upper right corner of VS Code Online and select it to run the code.
-1. The result of the speech to text transcription is displayed in the terminal windoww.  Feel free to download the narration.wav file from the GitHub repo if you want to hear the audio that was used.
+1. The result of the speech to text transcription is displayed in the terminal window.  Feel free to download the narration.wav file from the GitHub repo if you want to hear the audio that was used.
 1. You can also upload your own audio file to the repo, sync VS Code Online with the repo, change the audio_filename option and run it again.
 
 ::: zone-end
@@ -36,7 +36,7 @@ In this exercise, you will make use of the Speech Service you created earlier.  
 
 1. Start by opening a browser tab or window and navigating to Visual [Studio Code Online](https://visualstudio.microsoft.com/services/visual-studio-online/)
 
-[!NOTE] At this time, Safari is not a suppored browser for the preview of VS Code Online
+[!NOTE] At this time, Safari is not a supported browser for the preview of VS Code Online
 
 2. You will require an Azure subscription to create an environment for Visual Studio Code Online
 1. Select the **Get started** button.
@@ -131,7 +131,7 @@ namespace HelloWorld
 22. In the terminal window, type the following command ```dotnet add package Microsoft.CognitiveServices.Speech``` and press Enter
 1. In the terminal windows, type the following command to also add the Audio package, ``` dotnet add package Microsoft.CognitiveServices.Speech.Audio``` and press Enter
 1. VS installs the package for use with the AudioConfig class that will be used in the code
-1. Inlude the package in Program.cs by entering the following using statement ```using Microsoft.CognitiveServices.Speech.Audio;```
+1. Include the package in Program.cs by entering the following using statement ```using Microsoft.CognitiveServices.Speech.Audio;```
 1. In the Program.cs file, paste your Speech Service key where the text **YourSubscriptionKey** is
 1. Enter your location, such as **westus** in the **YourServiceRegion** option of that same line
 1. Locate the text **YourAudioFileName** and replace it with **narration.wav**
