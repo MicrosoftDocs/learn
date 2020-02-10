@@ -18,7 +18,7 @@ abstract:  |
 prerequisites: |
   - Basic knowledge of access management concepts in Azure like Azure role-based access control (RBAC).
   - (Optional) Access to an Azure subscription where you have the User Access Administrator or Owner role for your account
-iconUrl: /learn/achievements/create-custom-roles-for-azure-resources-with-rbac.svg
+iconUrl: /learn/achievements/create-custom-azure-roles-with-rbac.svg
 levels:
 - beginner
 roles:
