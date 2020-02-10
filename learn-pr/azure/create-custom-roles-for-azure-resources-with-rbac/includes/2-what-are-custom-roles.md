@@ -1,4 +1,4 @@
-Sometimes, the built-in Azure roles don't grant the precise level of access you need. Custom Azure roles allow you to define roles that meet the specific needs of your organization. You can assign the custom roles you create to users, groups, and service principals at the scope of management group, subscription, resource group, or resource.
+Sometimes, the built-in roles don't grant the precise level of access you need. Custom roles allow you to define roles that meet the specific needs of your organization. You can assign the custom Azure roles you create to users, groups, and service principals at the scope of management group, subscription, resource group, or resource.
 
 In this unit, you learn about custom roles in Azure role-based access control (RBAC).
 
@@ -59,8 +59,31 @@ A custom role definition breaks down into a collection of different permissions.
 }
 ```
 
-The following example shows the role definition for the Contributor role. 
-![Illustration that shows an example role definition for Contributor](../media/2-rbac-role-definition.png)
+The following example shows the role definition for the Contributor role.
+
+```azurecli
+{
+  "Name": "Contributor",
+  "Id": "b24988ac-6180-42a0-ab88-20f7382dd24c",
+  "IsCustom": false,
+  "Description": "Lets you manage everything except access to resources.",
+  "Actions": [
+    "*"
+  ],
+  "NotActions": [
+    "Microsoft.Authorization/*/Delete",
+    "Microsoft.Authorization/*/Write",
+    "Microsoft.Authorization/elevateAccess/Action",
+    "Microsoft.Blueprint/blueprintAssignments/write",
+    "Microsoft.Blueprint/blueprintAssignments/delete"
+  ],
+  "DataActions": [],
+  "NotDataActions": [],
+  "AssignableScopes": [
+    "/"
+  ]
+}
+```
 
 Any role definition is declared using the following format:
 
@@ -76,7 +99,7 @@ The action portion is typically one of the following actions:
 
 ## Define custom role to manage VMs
 
-To help you identify what permissions to include in a role definition, use the Azure Resource Manager resource provider operations list and look at built-in roles that have permissions similar to what you need. 
+To help you identify what permissions to include in a role definition, use the Azure Resource Manager resource provider operations list and look at built-in Azure roles that have permissions similar to what you need. 
 
 ### Review built-in roles
 

@@ -138,11 +138,11 @@ Select the role and **Remove**.
 In the next unit, you use the following command to delete the custom role by using Azure CLI.
 
 ```azurecli
-az role definition delete --name "Virtual Machine Operator"
+az role definition delete --name "role name"
  ```
 
-In PowerShell, you'd use the following command to delete the Virtual Machine Operator role.
+In PowerShell, you'd use the following command to delete a role.
 
 ```PowerShell
-Get-AzRoleDefinition "Virtual Machine Operator" | Remove-AzRoleDefinition
+Get-AzRoleDefinition "role name" | Remove-AzRoleDefinition
  ```
