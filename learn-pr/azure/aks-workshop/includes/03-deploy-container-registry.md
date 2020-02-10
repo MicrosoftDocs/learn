@@ -72,7 +72,7 @@ You can also use Azure Container Registry to build these containers. A standard 
 
 The ratings API is a Node.js application that's built by using Express. The [source code](https://github.com/MicrosoftDocs/mslearn-aks-workshop-ratings-api?azure-portal=true) is on GitHub and already includes a [Dockerfile](https://github.com/MicrosoftDocs/mslearn-aks-workshop-ratings-api/blob/master/Dockerfile?azure-portal=true), which builds images based on the Node.js Alpine image.
 
-1. Clone the repository onto the cloud shell.
+1. Clone the repository onto Cloud Shell.
 
     ```azurecli
     git clone https://github.com/MicrosoftDocs/mslearn-aks-workshop-ratings-api.git
@@ -181,7 +181,7 @@ The ratings front end is a Node.js application that was built by using Vue and W
 
 ## Verify the images
 
-1. Run the following command in the cloud shell to verify that the images were created and stored in the registry.
+1. Run the following command in Cloud Shell to verify that the images were created and stored in the registry.
 
     ```azurecli
     az acr repository list \
@@ -206,9 +206,9 @@ Let's integrate the container registry with the existing AKS cluster by supplyin
 
 Run the following command.
 
-    ```azurecli
-    az aks update \
-        --name $AKS_CLUSTER_NAME \
-        --resource-group aksworkshop \
-        --attach-acr $ACR_NAME
-    ```
+```azurecli
+az aks update \
+    --name $AKS_CLUSTER_NAME \
+    --resource-group aksworkshop \
+    --attach-acr $ACR_NAME
+```
