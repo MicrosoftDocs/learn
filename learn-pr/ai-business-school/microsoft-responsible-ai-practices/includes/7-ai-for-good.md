@@ -7,7 +7,7 @@ By harnessing the power of AI, we have an opportunity to help individuals, organ
 At Microsoft, we are providing technology resources and expertise to empower those working to preserve cultural heritage, solve humanitarian issues, improve the health of communities, and, create a more sustainable and accessible world through our AI for Good initiative. We’ve committed $165 million over the next five years to provide financial grants, technology investments, and partnerships that combine our AI and data science experience with these individuals’ and organizations’ core expertise. AI for Good includes five programs that are already supporting over 600 projects across the globe: AI for Accessibility, AI for Earth, AI for Humanitarian Action, AI for Cultural Heritage, and AI for Health.
 :::column-end:::
 :::column span="2":::
-![Microsoft AI for Good initiative. A. Ai for Accessibility, B. AI for Earth, C. AI for Humanitarian Action, D. AI for Cultural Heritage. Microsoft is committed, with nearly 600 projects across the globe, and $125 million allocated to the AI for Good initiative over the next five years.](../media/3-3-1b.jpg)
+![Microsoft AI for Good initiative. A. Ai for Accessibility, B. AI for Earth, C. AI for Humanitarian Action, D. AI for Cultural Heritage, E. AI for Health. Microsoft is committed, with nearly 600 projects across the globe, and $165 million allocated to the AI for Good initiative over the next five years.](../media/3-3-1b2.png)
 :::column-end:::
 :::row-end:::
 
