@@ -1,6 +1,6 @@
-The ratings web front end is a Node.js application. Recall that you've already created an Azure Container Registry. You used it to build a Docker image of the front end and store it in a repository.
+The ratings web front end is a Node.js application. Recall that you've already created an Azure Container Registry instance. You used it to build a Docker image of the front end and store it in a repository.
 
-In this exercise, you deploy that Docker image of the front end to the Azure Kubernetes Service (AKS) by creating a Kubernetes [deployment](https://docs.microsoft.com/azure/aks/concepts-clusters-workloads#deployments-and-yaml-manifests?azure-portal=true). You then expose it through a load balancer by creating a Kubernetes [service](https://docs.microsoft.com/azure/aks/concepts-network#services?azure-portal=true). Additionally, you configure the front end to connect to the ratings API that you already deployed.
+In this exercise, you deploy that Docker image of the front end to Azure Kubernetes Service (AKS) by creating a Kubernetes [deployment](https://docs.microsoft.com/azure/aks/concepts-clusters-workloads#deployments-and-yaml-manifests?azure-portal=true). You then expose it through a load balancer by creating a Kubernetes [service](https://docs.microsoft.com/azure/aks/concepts-network#services?azure-portal=true). Additionally, you configure the front end to connect to the ratings API that you already deployed.
 
 By the end of this unit, you should have deployed the ratings web front end and configured it to communicate with the ratings API. The front end is exposed through a public IP.
 
@@ -54,7 +54,7 @@ By the end of this unit, you should have deployed the ratings web front end and 
 
     - **Image**
 
-       You'll create a deployment running the image you pushed in Azure Container Registry you created earlier, for example, `acr4229.azurecr.io/ratings-web:v1`. The container listens to port `8080`. The deployment and the pods are labeled with `app=ratings-web`.
+       You'll create a deployment running the image you pushed in the Container Registry instance you created earlier, for example, `acr4229.azurecr.io/ratings-web:v1`. The container listens to port `8080`. The deployment and the pods are labeled with `app=ratings-web`.
 
     - **Environment variables**
 
