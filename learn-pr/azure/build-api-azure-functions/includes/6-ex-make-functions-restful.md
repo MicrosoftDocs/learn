@@ -14,28 +14,28 @@ The Products Manager API is about to get serious style upgrade courtesy of you -
    "route": "products"
    ```
 
-Your `function.json` file for "GetProducts" should now look like this...
+   Your `function.json` file for "GetProducts" should now look like this...
 
-    ```json
-    {
-      "bindings": [
-        {
-          "authLevel": "function",
-          "type": "httpTrigger",
-          "direction": "in",
-          "name": "req",
-          "methods": ["get"],
-          "route": "products"
-        },
-        {
-          "type": "http",
-          "direction": "out",
-          "name": "res"
-        }
-      ],
-      "scriptFile": "../dist/GetProducts/index.js"
-    }
-    ```
+   ```json
+   {
+     "bindings": [
+       {
+         "authLevel": "function",
+         "type": "httpTrigger",
+         "direction": "in",
+         "name": "req",
+         "methods": ["get"],
+         "route": "products"
+       },
+       {
+         "type": "http",
+         "direction": "out",
+         "name": "res"
+       }
+     ],
+     "scriptFile": "../dist/GetProducts/index.js"
+   }
+   ```
 
 1. Save the file.
 
@@ -132,7 +132,7 @@ Your `function.json` file for "GetProducts" should now look like this...
 
 1. Below the "methods" line, add a line that specifies a new route for the DeleteProduct method.
 
-   ```
+   ```json
    "route": "product/{id}"
    ```
 
