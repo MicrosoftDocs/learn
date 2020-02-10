@@ -173,4 +173,4 @@ If you don't specify the namespace when you work with Kubernetes resources, the 
     namespace/ratingsapp created
     ```
 
-Next, you create and configure an Azure Container Registry to use with your AKS cluster.
+Next, you create and configure an Azure Container Registry instance to use with your AKS cluster.
