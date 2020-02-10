@@ -10,7 +10,7 @@ By the end of this unit, you'll have a MongoDB deployment done by using Helm. Yo
 
 ## Add the Helm stable repository
 
-1. To use Helm, you need the `helm` command, which is already installed in the cloud shell. Helm provides a standard repository of charts for many different software packages. It has one for [MongoDB](https://github.com/helm/charts/tree/master/stable/mongodb?azure-portal=true). The MongoDB chart is part of the official Helm *stable* charts repository. Configure the Helm client to use the stable repository by running the `helm repo add` command.
+1. To use Helm, you need the `helm` command, which is already installed in Azure Cloud Shell. Helm provides a standard repository of charts for many different software packages. It has one for [MongoDB](https://github.com/helm/charts/tree/master/stable/mongodb?azure-portal=true). The MongoDB chart is part of the official Helm *stable* charts repository. Configure the Helm client to use the stable repository by running the `helm repo add` command.
 
     ```bash
     helm repo add stable https://kubernetes-charts.storage.googleapis.com/
