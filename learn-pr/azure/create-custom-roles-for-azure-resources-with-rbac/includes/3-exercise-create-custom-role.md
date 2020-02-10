@@ -15,7 +15,7 @@ Create a custom role within Azure for the new employee.
     az account list  --output json | jq '.[] | .id, .name'
    ```
 1. Type **code** into Cloud Shell.
-1. Paste the following role definition  into the editor. This is role definition we identified in the previous unit.
+1. Paste the following role definition  into the editor. This is the role definition we identified in the previous unit.
 
     ```JSON
    {
