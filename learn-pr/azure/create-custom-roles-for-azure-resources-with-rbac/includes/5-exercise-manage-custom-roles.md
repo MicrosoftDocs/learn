@@ -56,12 +56,13 @@ We need to update the Virtual Machine Operator role to add permissions for a mon
    ```azurecli
     az account list  --output json | jq '.[] | .id, .name'
    ```
-1. Select **Save** from the three-dot menu on the top right-hand side of the Cloud Shell pane. 
+1. Select **Save** from the three-dot menu on the top right-hand side of the Cloud Shell pane.
+1. Enter **vm-operator-role-new.json** as the filename.
 1. Select **Close Editor** from the three-dot menu on the top right-hand side of the Cloud Shell pane.
 1. Run the following command to update the Virtual Machine Operator custom role.
 
    ```azurecli
-   az role definition update --role-definition vm-operator-role.json
+   az role definition update --role-definition vm-operator-role-new.json
    ```
 1. Run the following command to verify the role definition is updated.
 
@@ -85,7 +86,7 @@ If you decide you no longer need the custom role, you need to remove the role as
    az role definition delete --name "Virtual Machine Operator"
    ```
 
-1. Run the following command to verify the role is gone.
+1. Run the following command to verify the role is gone. If the role is still listed, wait a minute and run the command again.
 
    ```azurecli
    az role definition list --custom-role-only true

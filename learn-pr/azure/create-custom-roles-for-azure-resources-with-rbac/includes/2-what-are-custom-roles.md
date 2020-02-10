@@ -59,8 +59,31 @@ A custom role definition breaks down into a collection of different permissions.
 }
 ```
 
-The following example shows the role definition for the Contributor role. 
-![Illustration that shows an example role definition for Contributor](../media/2-rbac-role-definition.png)
+The following example shows the role definition for the Contributor role.
+
+```azurecli
+{
+  "Name": "Contributor",
+  "Id": "b24988ac-6180-42a0-ab88-20f7382dd24c",
+  "IsCustom": false,
+  "Description": "Lets you manage everything except access to resources.",
+  "Actions": [
+    "*"
+  ],
+  "NotActions": [
+    "Microsoft.Authorization/*/Delete",
+    "Microsoft.Authorization/*/Write",
+    "Microsoft.Authorization/elevateAccess/Action",
+    "Microsoft.Blueprint/blueprintAssignments/write",
+    "Microsoft.Blueprint/blueprintAssignments/delete"
+  ],
+  "DataActions": [],
+  "NotDataActions": [],
+  "AssignableScopes": [
+    "/"
+  ]
+}
+```
 
 Any role definition is declared using the following format:
 

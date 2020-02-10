@@ -45,7 +45,7 @@ Create a custom role within Azure for the new employee.
 
 1. In the `AssignableScopes` section, replace **subscriptionId** with the value you got from the previous step.
 1. Select **Save** from the three-dot menu on the top right-hand side of the Cloud Shell pane.
-1. Enter **vm-operator-role.json** as the filename.
+1. Enter **vm-operator-role.json** as the filename and **Save**.
 1. Select **Close Editor** from the three-dot menu on the top right-hand side of the Cloud Shell pane.
 1. Run the following command in the Cloud Shell to create the custom role:
 
@@ -57,16 +57,10 @@ Create a custom role within Azure for the new employee.
 
 When the custom role is created, you can assign it to a user or group. To make things simple for our scenario, assign the custom role to yourself.
 
-1. Run the following command to set your Azure account display name. In the Azure portal, your display name appears on your profile card from the top right-hand side.
+1. Run the following command to get your user principal name. Replace "your display name" with the name that appears on your profile card at the top right-hand side of the Azure portal. Your display name is likely your first and last name.
 
     ```azurecli
-    DISPLAYNAME=$("your display name")
-    ```
-
-1. Run the following command to get your user principal name.
-
-    ```azurecli
-    USER=$(az ad user list --display-name $DISPLAYNAME --query [0].userPrincipalName --output tsv)
+    USER=$(az ad user list --display-name "your display name" --query [0].userPrincipalName --output tsv)
     echo $USER
     ```
 
@@ -75,3 +69,4 @@ When the custom role is created, you can assign it to a user or group. To make t
     ```azurecli
     az role assignment create --assignee $USER --role "Virtual Machine Operator"
     ```
+1. Close Cloud Shell.
