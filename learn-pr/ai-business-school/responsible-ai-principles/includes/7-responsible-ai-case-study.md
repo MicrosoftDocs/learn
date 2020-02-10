@@ -17,13 +17,13 @@ State Farm is careful to develop and evolve controls for AI systems in parallel 
 The __Chief Data and Analytics Officer__ has primary executive accountability for responsible AI across the organization. This position is responsible for leading, but not unilaterally dictating, the collaboration and evolution of responsible AI principles across the enterprise. While this role leads the Responsible AI governance effort, it requires the support of other governance entities.
 
 A central __validation team__ reports to the Chief Data and Analytics Officer’s department and oversees model validation and AI in software reviews. The team uses a systematic process to assess different aspects of AI models, including evaluating training data sets, mathematical approaches, and intended business uses.
+
+A model risk __governance committee__ includes members from a variety of business areas including corporate law, enterprise risk management, office of privacy, IT, procurement, and executive partners in the lines of business, with corporate law providing legal advice to the committee. The committee provides strategic direction to the validation team by reviewing and approving model risk management procedures and guidelines. Among other responsibilities, the committee also serves as a forum for executive collaboration, education and discussion concerning model risk topics.
 :::column-end:::
 :::column span="2":::
 ![Three building blocks of responsible AI governance at State Farm: Chief Data and Analytics Officer, Governance Committee, and Validation team.](../media/statefarm1.png)
 :::column-end:::
 :::row-end:::
-
-A model risk __governance committee__ includes members from a variety of business areas including corporate law, enterprise risk management, office of privacy, IT, procurement, and executive partners in the lines of business, with corporate law providing legal advice to the committee. The committee provides strategic direction to the validation team by reviewing and approving model risk management procedures and guidelines. Among other responsibilities, the committee also serves as a forum for executive collaboration, education and discussion concerning model risk topics.
 
 Through this governance approach, State Farm looks to continue evolving AI control frameworks and integrate them at greater scale.
 
@@ -40,13 +40,13 @@ The DVAM leverages data collected when a customer files a claim to provide the c
 By incorporating AI into the total loss process, the claim handler can settle the claim even more quickly – simplifying, expediting, and improving the customer experience. The DVAM solution reduced the total loss process from as high as 15 days to as little as 30 minutes. As a result, State Farm employees and agents have more time to dedicate to providing unmatched customer experience.
 
 While the model itself is impressive, designing and deploying an AI solution at this scale required collaboration across many different decision-making bodies within the organization. The business team and AI development team partnered closely to ensure that the DVAM solution was aligned to their intended business outcomes. Together, they assessed which business area KPIs were impacted, determined the baseline measurements of those KPIs, and finally, measured and monitored KPI changes after the model was launched.
+
+As for AI governance, the business team and validation team collaborated to evaluate the model. The DVAM solution was launched in phases, which allowed State Farm to thoroughly assess the model before it was fully rolled out. The governance processes were transparent to all participants throughout the process, so there were no surprises.s
 :::column-end:::
 :::column span="2":::
-![Governance action at State Farm. It took 15 days before DVAM. After DVAM, it takes 30 minutes.](../media/statefarm2.png)
+![Governance in action at State Farm. It took 15 days before DVAM. After DVAM, it takes 30 minutes.](../media/statefarm2.png)
 :::column-end:::
 :::row-end:::
-
-As for AI governance, the business team and validation team collaborated to evaluate the model. The DVAM solution was launched in phases, which allowed State Farm to thoroughly assess the model before it was fully rolled out. The governance processes were transparent to all participants throughout the process, so there were no surprises.
 
 ## Key lessons
 
