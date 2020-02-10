@@ -1,22 +1,22 @@
 As the popularity of your application grows, the application needs to scale appropriately to manage demand changes. You have to ensure that your application remains responsive as the number of ratings increases.
 
-In this exercise, you'll explore the AKS Horizontal Pod Autoscaler (HPA) capabilities.
+In this exercise, you explore the Azure Kubernetes Service (AKS) horizontal pod autoscaler (HPA) capabilities.
 
-## Create Horizontal Pod Autoscaler
+## Create the horizontal pod autoscaler
 
-With the increased traffic, the `ratings-api` container is unable to cope with the number of requests coming through. To fix the bottleneck, you can deploy more instances of that container.
+With increased traffic, the `ratings-api` container is unable to cope with the number of requests coming through. To fix the bottleneck, you can deploy more instances of that container.
 
-You have two options you can choose from when you need to scale out container instances in AKS. You can either manually increase the number of replicas in the deployment, or use the Horizontal Pod Autoscaler (HPA).
+You have two options you can choose from when you need to scale out container instances in AKS. You can either manually increase the number of replicas in the deployment or use the horizontal pod autoscaler.
 
-HPA allows Kubernetes to detect when your deployed pods need more resources based on metrics such as CPU. HPA can then schedule more pods onto the cluster to cope with the demand. You can configure HPA using the `kubectl autoscale` command, or you can define the HPA object in a YAML file.
+HPA allows AKS to detect when your deployed pods need more resources based on metrics such as CPU. HPA can then schedule more pods onto the cluster to cope with the demand. You can configure HPA by using the `kubectl autoscale` command, or you can define the HPA object in a YAML file.
 
-1. Create a file called `ratings-api-hpa.yaml` using the integrated editor.
+1. Create a file called `ratings-api-hpa.yaml` by using the integrated editor.
 
     ```bash
     code ratings-api-hpa.yaml
     ```
 
-1. Paste the following text in the file:
+1. Paste the following text in the file.
 
     ```yaml
     apiVersion: autoscaling/v2beta2
@@ -39,23 +39,23 @@ HPA allows Kubernetes to detect when your deployed pods need more resources base
             averageUtilization: 30
     ```
 
-1. Review the file and note the following points:
+1. Review the file, and note the following points:
 
     - **Scale target**
 
-    The target for scaling would be the **ratings-api** deployment.
+       The target for scaling is the **ratings-api** deployment.
 
     - **Min and max replicas**
 
-    The minimum and maximum number of replicas to be deployed.
+       The minimum and maximum number of replicas to be deployed.
 
     - **Metrics**
 
-    The autoscaling metric monitored is the CPU utilization, set at 30%. When the utilization goes above that level, the HPA will create more replicas.
+       The autoscaling metric monitored is the CPU utilization, set at 30%. When the utilization goes above that level, the HPA creates more replicas.
 
-1. Save the file with <kbd>Ctrl-s</kbd> and close the editor with <kbd>Ctrl-q</kbd>.
+1. To save the file, select <kbd>Ctrl+S</kbd>. To close the editor, select <kbd>Ctrl+Q</kbd>.
 
-1. Apply the configuration using the `kubectl apply` command. You'll deploy the HPA object in the `ratingsapp` namespace.
+1. Apply the configuration by using the `kubectl apply` command. Deploy the HPA object in the `ratingsapp` namespace.
 
     ```bash
     kubectl apply \
@@ -63,30 +63,30 @@ HPA allows Kubernetes to detect when your deployed pods need more resources base
     -f ratings-api-hpa.yaml
     ```
 
-    You'll get an output similar to the example below.
+    You'll get an output similar to this example.
 
     ```output
     horizontalpodautoscaler.autoscaling/ratings-api created
     ```
 
     > [!IMPORTANT]
-    > For the Horizontal Pod Autoscaler to work, you **must** remove any explicit replica count from your `ratings-api` deployment. Keep in mind that you need to redeploy your deployment when you make any changes.
+    > For the horizontal pod autoscaler to work, you *must* remove any explicit replica count from your `ratings-api` deployment. Keep in mind that you need to redeploy your deployment when you make any changes.
 
-## Run a load test with Horizontal Pod Autoscaler enabled
+## Run a load test with horizontal pod autoscaler enabled
 
-You'll use a pre-built image called `azch/artillery` that is available on Docker hub to create your load test. The image contains a tool called [artillery](https://artillery.io) that will be used to send traffic to the API. [Azure Container Instances](https://docs.microsoft.com/azure/container-instances) can be used to run this image as a container.
+You use a prebuilt image called `azch/artillery` that's available on Docker hub to create your load test. The image contains a tool called [artillery](https://artillery.io) that's used to send traffic to the API. [Azure Container Instances](https://docs.microsoft.com/azure/container-instances) can be used to run this image as a container.
 
-When running as a Container Instance set, you don’t want it to restart once it has finished. You'll use the `--restart-policy` parameter and set the value to `Never` to prevent the restart.
+When it runs as a container instance set, you don't want it to restart after it has finished. Use the `--restart-policy` parameter and set the value to `Never` to prevent the restart.
 
-1. In the Cloud Shell, store the frontend API load test endpoint in a Bash variable, replacing `<frontend hostname>` with your exposed ingress hostname, for example, **https:\//frontend.13-68-177-68.nip.io**.
+1. In Azure Cloud Shell, store the front-end API load test endpoint in a Bash variable and replace `<frontend hostname>` with your exposed ingress host name, for example, https://frontend.13-68-177-68.nip.io.
 
     ```bash
     LOADTEST_API_ENDPOINT=https://<frontend hostname>/api/loadtest
     ```
 
-    Let's run a load test to see how the HPA will scale your deployment.
+    Let's run a load test to see how the HPA scales your deployment.
 
-1. Run the load test using the command below, setting the duration of the test to 120 seconds, simulating up to 500 requests per second.
+1. Run the load test by using the following command, which sets the duration of the test to 120 seconds to simulate up to 500 requests per second.
 
     ```bash
     az container create \
@@ -99,16 +99,16 @@ When running as a Container Instance set, you don’t want it to restart once it
         --command-line "artillery quick -r 500 -d 120 $LOADTEST_API_ENDPOINT"
     ```
 
-    You may need to run this command a few times.
+    You might need to run this command a few times.
 
-1. Watch the Horizontal Pod Autoscaler working.
+1. Watch the horizontal pod autoscaler working.
 
     ```bash
     kubectl get hpa \
       --namespace ratingsapp -w
     ```
 
-    In a few seconds, you'll see the HPA transition to deploying more replicas, scaling up from 1 to 10 to accommodate the load. Use <kbd>Ctrl-c</kbd> to stop watching.
+    In a few seconds, you'll see the HPA transition to deploying more replicas. It scales up from 1 to 10 to accommodate the load. Select <kbd>Ctrl+C</kbd> to stop watching.
 
     ```output
     NAME          REFERENCE                TARGETS    MINPODS   MAXPODS   REPLICAS   AGE
@@ -125,17 +125,17 @@ When running as a Container Instance set, you don’t want it to restart once it
 
 ## Autoscale the cluster
 
-HPA will scale out with new pods as required. However, eventually, the cluster will run out of resources, and you'll see scheduled pods in a pending state.
+HPA scales out with new pods as required. Eventually, the cluster runs out of resources, and you'll see scheduled pods in a pending state.
 
-You may have to force this situation by artificially increasing the resource `request` and `limit` for CPU in the `ratings-api ` deployment to `cpu: "1000m"` (and redeploy/apply the deployment).
+You might have to force this situation by artificially increasing the resource `request` and `limit` for CPU in the `ratings-api ` deployment to `cpu: "1000m"` (and redeploy or apply the deployment).
 
-1. Edit the file called `ratings-api-deployment.yaml` using the integrated editor.
+1. Edit the file called `ratings-api-deployment.yaml` by using the integrated editor.
 
     ```bash
     code ratings-api-deployment.yaml
     ```
 
-1. Change the `resources.requests` and `resources.limits` for the container to be 1000m, meaning one core. The section should now look like this.
+1. Change the `resources.requests` and `resources.limits` for the container to be 1000m, which means one core. The section should now look like this.
 
     ```yaml
     resources:
@@ -147,7 +147,7 @@ You may have to force this situation by artificially increasing the resource `re
         memory: 256Mi
     ```
 
-1. Apply the configuration using the `kubectl apply` command. You'll deploy the resource update in the `ratingsapp` namespace.
+1. Apply the configuration by using the `kubectl apply` command. Deploy the resource update in the `ratingsapp` namespace.
 
     ```bash
     kubectl apply \
@@ -155,13 +155,13 @@ You may have to force this situation by artificially increasing the resource `re
         -f ratings-api-deployment.yaml
     ```
 
-   You'll get an output similar to the example below.
+   You'll get an output similar to this example.
 
     ```output
     deployment.apps/ratings-api configured
     ``` 
 
-1. Review the new pods rolling out. You'll query for pods in the `ratingsapp` namespace, which are labeled with `app=ratings-api`.
+1. Review the new pods rolling out. Query for pods in the `ratingsapp` namespace, which are labeled with `app=ratings-api`.
 
     ```bash
     kubectl get pods \
@@ -193,9 +193,9 @@ You may have to force this situation by artificially increasing the resource `re
 
 To solve the pending pod problem, you can enable the cluster autoscaler to scale the cluster automatically.
 
-1. Configure the cluster autoscaler, you should see it dynamically adding and removing nodes based on the cluster utilization. Use the `az aks update` command to enable the cluster autoscaler and specify a minimum and maximum value for the number of nodes. Make sure to use the same resource group from earlier, for example, **aksworkshop**.
+1. Configure the cluster autoscaler. You should see it dynamically adding and removing nodes based on the cluster utilization. Use the `az aks update` command to enable the cluster autoscaler. Specify a minimum and maximum value for the number of nodes. Make sure to use the same resource group from earlier, for example, **aksworkshop**.
 
-    The following example sets the `--min-count` to _3_ and the `--max-count` to _5_:
+    The following example sets the `--min-count` to _3_ and the `--max-count` to _5_.
 
     ```bash
     az aks update \
@@ -206,7 +206,7 @@ To solve the pending pod problem, you can enable the cluster autoscaler to scale
     --max-count 5
     ```
 
-    In a few minutes, the cluster should be configured with the cluster autoscaler, and you'll see the number of nodes increase.
+    In a few minutes, the cluster should be configured with the cluster autoscaler. You'll see the number of nodes increase.
 
 1. Verify the number of nodes has increased.
 
@@ -214,7 +214,7 @@ To solve the pending pod problem, you can enable the cluster autoscaler to scale
     kubectl get nodes -w
     ```
 
-    In a few minutes, you'll see some new nodes popping up and transition to the `Ready` state. Use `CTRL+C` to stop watching.
+    In a few minutes, you'll see some new nodes popping up and transitioning to the `Ready` state. Select <kbd>Ctrl+C</kbd> to stop watching.
 
     ```output
     NAME                                STATUS   ROLES   AGE   VERSION

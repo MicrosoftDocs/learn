@@ -9,7 +9,6 @@ metadata:
   ms.author: rawortma
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 16
 content: |
-  [!include[](includes/3-responsible-ai-tools.md)] 
+  [!include[](includes/6-responsible-ai-tools.md)] 

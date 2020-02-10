@@ -1,14 +1,14 @@
-Azure Container Registry is a managed Docker registry service based on the open-source Docker Registry 2.0. Container Registry is private, hosted in Azure, and allows you to build, store, and manage images for all types of container deployments.
+Azure Container Registry is a managed Docker registry service based on the open-source Docker Registry 2.0. Container Registry is private and hosted in Azure. You can use it to build, store, and manage images for all types of container deployments.
 
-Container images can be pushed and pulled with Container Registry using the Docker CLI or the Azure CLI. Azure portal integration allows you to visually inspect the container images in your container registry. In distributed environments, the Container Registry geo-replication feature can be used to distribute container images to multiple Azure datacenters for localized distribution.
+Container images can be pushed and pulled with Container Registry by using the Docker CLI or the Azure CLI. You can use Azure portal integration to visually inspect the container images in your container registry. In distributed environments, the Container Registry geo-replication feature can be used to distribute container images to multiple Azure datacenters for localized distribution.
 
-Azure Container Registry Tasks can also build container images in Azure. Tasks use a standard Dockerfile to create and store a container image in Azure Container Registry without the need for local Docker tooling. With Azure Container Registry Tasks, you can build on-demand or fully automate container image builds using DevOps processes and tooling.
+Azure Container Registry Tasks can also build container images in Azure. Tasks use a standard Dockerfile to create and store a container image in Azure Container Registry without the need for local Docker tooling. With Azure Container Registry Tasks, you can build on-demand or fully automate container image builds by using DevOps processes and tooling.
 
-In this unit, you'll create an Azure Container Registry using the Azure CLI.
+In this unit, you'll create a container registry by using the Azure CLI.
 
-## Create an Azure Container Registry
+## Create a container registry
 
-1. The container registry name must be unique within Azure and contain between 5 and 50 **alphanumeric** characters. For learning purposes, run this command from Cloud Shell to create a Bash variable that holds a unique name.
+1. The container registry name must be unique within Azure and contain between 5 and 50 *alphanumeric* characters. For learning purposes, run this command from Azure Cloud Shell to create a Bash variable that holds a unique name.
 
     ```azurecli
     ACR_NAME=acr$RANDOM
@@ -24,7 +24,7 @@ In this unit, you'll create an Azure Container Registry using the Azure CLI.
         --sku Standard
     ```
 
-    You'll see a response similar to the below JSON example.
+    You'll see a response similar to this JSON example.
 
     ```json
     {
@@ -62,17 +62,17 @@ In this unit, you'll create an Azure Container Registry using the Azure CLI.
     }
     ```
 
-## Build the container images using Azure Container Registry Tasks
+## Build the container images by using Azure Container Registry Tasks
 
 Let's suppose your company makes use of container images to manage compute workloads. Your development teams use the local Docker tooling to build your container images.
 
-You can also use Azure Container Registry to build these containers. A standard Dockerfile provides build instructions. Azure Container Registry allows you to reuse any Dockerfile currently in your environment, including multi-staged builds.
+You can also use Azure Container Registry to build these containers. A standard Dockerfile provides build instructions. With Azure Container Registry, you can reuse any Dockerfile currently in your environment, which includes multi-staged builds.
 
-### Build the *ratings-api* image
+### Build the ratings-api image
 
-The ratings API is a Node.js application, built using Express. The [source code](https://github.com/MicrosoftDocs/mslearn-aks-workshop-ratings-api?azure-portal=true) is on GitHub, and already includes a [Dockerfile](https://github.com/MicrosoftDocs/mslearn-aks-workshop-ratings-api/blob/master/Dockerfile?azure-portal=true), which builds images based on the Node.js Alpine image.
+The ratings API is a Node.js application that's built by using Express. The [source code](https://github.com/MicrosoftDocs/mslearn-aks-workshop-ratings-api?azure-portal=true) is on GitHub and already includes a [Dockerfile](https://github.com/MicrosoftDocs/mslearn-aks-workshop-ratings-api/blob/master/Dockerfile?azure-portal=true), which builds images based on the Node.js Alpine image.
 
-1. Clone the repository onto the Cloud Shell.
+1. Clone the repository onto Cloud Shell.
 
     ```azurecli
     git clone https://github.com/MicrosoftDocs/mslearn-aks-workshop-ratings-api.git
@@ -84,7 +84,7 @@ The ratings API is a Node.js application, built using Express. The [source code]
     cd mslearn-aks-workshop-ratings-api
     ```
 
-1. Run `az acr build`. This command builds a container image using the Dockerfile, then pushes the resulting image to the container registry.
+1. Run `az acr build`. This command builds a container image by using the Dockerfile. Then it pushes the resulting image to the container registry.
 
     ```azurecli
     az acr build \
@@ -93,9 +93,9 @@ The ratings API is a Node.js application, built using Express. The [source code]
     ```
 
     > [!NOTE]
-    > Don't forget the period `.` at the end of the preceding command. It represents the source directory containing the docker file, which in this case, is the current directory. Since you didn't specify the name of a file with the --file parameter, the command looks for a file called **Dockerfile** in the current directory.
+    > Don't forget the period `.` at the end of the preceding command. It represents the source directory that contains the Docker file. In this case, it's the current directory. Because you didn't specify the name of a file with the --file parameter, the command looks for a file called **Dockerfile** in the current directory.
 
-    In a few minutes, you'll see a response similar to the example below.
+    In a few minutes, you'll see a response similar to this example.
 
     ```output
     2019/12/28 02:04:11 Successfully pushed image: acr4229.azurecr.io/ratings-api:v1
@@ -120,11 +120,11 @@ The ratings API is a Node.js application, built using Express. The [source code]
     Run ID: ca2 was successful after 4m41s
     ```
 
-    Make a note of the pushed image registry and name, for example, `acr4229.azurecr.io/ratings-api:v1`. You'll need this information when configuring the Kubernetes deployment.
+    Make a note of the pushed image registry and name, for example, `acr4229.azurecr.io/ratings-api:v1`. You'll need this information when you configure the Kubernetes deployment.
 
-### Build the *ratings-web* image
+### Build the ratings-web image
 
-The ratings frontend is a Node.js application that was built using Vue and WebPack. The [source code](https://github.com/MicrosoftDocs/mslearn-aks-workshop-ratings-web?azure-portal=true) is on GitHub, and already includes a [Dockerfile](https://github.com/MicrosoftDocs/mslearn-aks-workshop-ratings-web/blob/master/Dockerfile?azure-portal=true), which builds images based on the Node.js Alpine image.
+The ratings front end is a Node.js application that was built by using Vue and WebPack. The [source code](https://github.com/MicrosoftDocs/mslearn-aks-workshop-ratings-web?azure-portal=true) is on GitHub and already includes a [Dockerfile](https://github.com/MicrosoftDocs/mslearn-aks-workshop-ratings-web/blob/master/Dockerfile?azure-portal=true), which builds images based on the Node.js Alpine image.
 
 1. Change back to the home directory.
 
@@ -138,13 +138,13 @@ The ratings frontend is a Node.js application that was built using Vue and WebPa
     git clone https://github.com/MicrosoftDocs/mslearn-aks-workshop-ratings-web.git
     ```
 
-1. Change into the newly cloned directory
+1. Change into the newly cloned directory.
 
     ```azurecli
     cd mslearn-aks-workshop-ratings-web
     ```
 
-1. Run `az acr build`. This command builds a container image using the Dockerfile, then pushes the resulting image to the container registry.
+1. Run `az acr build`. This command builds a container image by using the Dockerfile. Then it pushes the resulting image to the container registry.
 
     ```azurecli
     az acr build \
@@ -152,7 +152,7 @@ The ratings frontend is a Node.js application that was built using Vue and WebPa
         --image ratings-web:v1 .
     ```
 
-    In a few minutes, you'll see a response similar to the example below.
+    In a few minutes, you'll see a response similar to this example.
 
     ```output
     2019/12/28 02:09:51 Successfully pushed image: acr4229.azurecr.io/ratings-web:v1
@@ -181,7 +181,7 @@ The ratings frontend is a Node.js application that was built using Vue and WebPa
 
 ## Verify the images
 
-1. Run the following command in the Cloud Shell to verify that the images have been created and stored in the registry.
+1. Run the following command in Cloud Shell to verify that the images were created and stored in the registry.
 
     ```azurecli
     az acr repository list \
@@ -189,7 +189,7 @@ The ratings frontend is a Node.js application that was built using Vue and WebPa
         --output table
     ```
 
-    The output from this command will look similar to the following example.
+    The output from this command looks similar to this example.
 
     ```output
     Result
@@ -202,13 +202,13 @@ The images are now ready for use.
 
 ## Configure the AKS cluster to authenticate to the container registry
 
-Let's integrate the Azure Container Registry with the existing AKS cluster by supplying valid values for **AKS_CLUSTER_NAME** and **ACR_NAME**. You can automatically configure the required service principal authentication between the two resources.
+Let's integrate the container registry with the existing AKS cluster by supplying valid values for **AKS_CLUSTER_NAME** and **ACR_NAME**. You can automatically configure the required service principal authentication between the two resources.
 
-1. Run the following command.
+Run the following command.
 
-    ```azurecli
-    az aks update \
-        --name $AKS_CLUSTER_NAME \
-        --resource-group aksworkshop \
-        --attach-acr $ACR_NAME
-    ```
+```azurecli
+az aks update \
+    --name $AKS_CLUSTER_NAME \
+    --resource-group aksworkshop \
+    --attach-acr $ACR_NAME
+```
