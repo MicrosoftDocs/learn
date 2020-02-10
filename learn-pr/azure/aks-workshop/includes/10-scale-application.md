@@ -76,9 +76,9 @@ HPA allows AKS to detect when your deployed pods need more resources based on me
 
 You use a prebuilt image called `azch/artillery` that's available on Docker hub to create your load test. The image contains a tool called [artillery](https://artillery.io) that's used to send traffic to the API. [Azure Container Instances](https://docs.microsoft.com/azure/container-instances) can be used to run this image as a container.
 
-When it runs as a Container Instance set, you don't want it to restart after it has finished. Use the `--restart-policy` parameter and set the value to `Never` to prevent the restart.
+When it runs as a container instance set, you don't want it to restart after it has finished. Use the `--restart-policy` parameter and set the value to `Never` to prevent the restart.
 
-1. In the cloud shell, store the front-end API load test endpoint in a Bash variable and replace `<frontend hostname>` with your exposed ingress host name, for example, https://frontend.13-68-177-68.nip.io.
+1. In Azure Cloud Shell, store the front-end API load test endpoint in a Bash variable and replace `<frontend hostname>` with your exposed ingress host name, for example, https://frontend.13-68-177-68.nip.io.
 
     ```bash
     LOADTEST_API_ENDPOINT=https://<frontend hostname>/api/loadtest
