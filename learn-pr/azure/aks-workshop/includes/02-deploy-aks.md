@@ -96,7 +96,7 @@ For a more detailed comparison, see [Network concepts for applications in AKS](h
 
     - **VM set type**
 
-        You're specifying that the cluster is created by using Virtual Machine Scale Sets. The Virtual Machine Scale Sets enable you to switch on the cluster autoscaler when needed.
+        You're specifying that the cluster is created by using virtual machine scale sets. The virtual machine scale sets enable you to switch on the cluster autoscaler when needed.
 
     - **Network plug-in**
 
@@ -124,7 +124,7 @@ For a more detailed comparison, see [Network concepts for applications in AKS](h
         --name $AKS_CLUSTER_NAME
     ```
 
-1. Let's take a look at what was deployed by listing all the nodes in your cluster. Use the `kubectl` command to list all the nodes. This command is the main command-line tool you use to work with Kubernetes. It's already installed in the cloud shell.
+1. Let's take a look at what was deployed by listing all the nodes in your cluster. Use the `kubectl` command to list all the nodes. This command is the main command-line tool you use to work with Kubernetes. It's already installed in Cloud Shell.
 
     ```bash
     kubectl get nodes
