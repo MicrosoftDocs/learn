@@ -2,6 +2,7 @@ The ratings API is a Node.js application written by using the Express framework.
 
 Recall that you've already created an Azure Container Registry. You used it to build a Docker image of the API and store it in a repository.
 
+
 In this exercise, you deploy that Docker image of the API to the Azure Kubernetes Service (AKS) by creating a Kubernetes [deployment](https://docs.microsoft.com/azure/aks/concepts-clusters-workloads#deployments-and-yaml-manifests?azure-portal=true). You then expose it through a load balancer by creating a Kubernetes [service](https://docs.microsoft.com/azure/aks/concepts-network#services?azure-portal=true). Additionally, you configure the API to connect to the MongoDB database by attaching the Kubernetes [secret](https://docs.microsoft.com/azure/aks/concepts-security#kubernetes-secrets?azure-portal=true).
 
 By the end of this unit, you'll have the ratings API deployed and configured to communicate with MongoDB.
