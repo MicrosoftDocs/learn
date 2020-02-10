@@ -1,4 +1,4 @@
-Sometimes, the built-in Azure roles don't grant the precise level of access you need. Custom Azure roles allow you to define roles that meet the specific needs of your organization. You can assign the custom roles you create to users, groups, and service principals at the scope of management group, subscription, resource group, or resource.
+Sometimes, the built-in roles don't grant the precise level of access you need. Custom roles allow you to define roles that meet the specific needs of your organization. You can assign the custom Azure roles you create to users, groups, and service principals at the scope of management group, subscription, resource group, or resource.
 
 In this unit, you learn about custom roles in Azure role-based access control (RBAC).
 
@@ -99,7 +99,7 @@ The action portion is typically one of the following actions:
 
 ## Define custom role to manage VMs
 
-To help you identify what permissions to include in a role definition, use the Azure Resource Manager resource provider operations list and look at built-in roles that have permissions similar to what you need. 
+To help you identify what permissions to include in a role definition, use the Azure Resource Manager resource provider operations list and look at built-in Azure roles that have permissions similar to what you need. 
 
 ### Review built-in roles
 

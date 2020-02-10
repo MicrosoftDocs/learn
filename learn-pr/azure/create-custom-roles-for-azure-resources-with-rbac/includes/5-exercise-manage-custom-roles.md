@@ -1,4 +1,4 @@
-In this unit, you'll view, update, and delete the custom role you created in the previous exercise.
+In this unit, you'll view, update, and delete the custom Azure role you created in the previous exercise.
 
 ## View custom roles within the portal
 
