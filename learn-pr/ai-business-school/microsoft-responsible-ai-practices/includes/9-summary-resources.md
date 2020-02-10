@@ -12,8 +12,11 @@ Now that you have reviewed this module, you should be able to:
 
 To learn more about our perspective on responsible AI as well as the impact of AI on our future, read our book [The Future Computed](https://blogs.microsoft.com/uploads/2018/02/The-Future-Computed_2.8.18.pdf).
 
+* [Download PDF](https://aka.ms/AA7a8si) of Understanding AI governance at Microsoft.
+* [Download PDF](https://aka.ms/AA7a3jb) of Governance in action at Microsoft.
 * [Download PDF](https://aka.ms/AA629xl) of Establishing responsible design principles in AI engineering to share with others.
 * [Download PDF](https://aka.ms/AA629xn) of Engaging externally: AI for Good to share with others.
+* [Download PDF](https://aka.ms/AA7a8sf) of Putting principles into practice: how we approach responsible AI at Microsoft.
 
 Below are some additional resources your organization can leverage when developing your own governance model for responsible AI.
 
@@ -96,20 +99,23 @@ With these foundational principles in place, we began developing more scenario-s
 8. [Microsoft, “Facial recognition technology: The need for public regulation and corporate responsibility.” Brad Smith, 13 July 2018.](https://blogs.microsoft.com/on-the-issues/2018/07/13/facial-recognition-technology-the-need-for-public-regulation-and-corporate-responsibility/) 
 9. [Microsoft, “Project Laplace.”](https://www.microsoft.com/research/project/project-laplace/)  
 10. [Microsoft, “Securing the future of AI and machine learning at Microsoft.” Andrew Marshall, 7 February 2019.](https://www.microsoft.com/security/blog/2019/02/07/securing-the-future-of-ai-and-machine-learning-at-microsoft/)  
-11. [Microsoft, “Microsoft SEAL.”](https://www.microsoft.com/research/project/microsoft-seal/)  
-12. [Microsoft, “A Reductions Approach to Fair Classification.” Association for Computing Machinery, March 2018.](https://www.microsoft.com/research/publication/a-reductions-approach-to-fair-classification/)
-13. [NIPS, “Man is to Computer Programmer as Woman is to Homemaker? Debiasing Word Embeddings.” Tolga Bolukbasi, Kai-Wei Chang, James Zou, Venkatesh Saligrama, Adam Kalai, 21 July 2016.](https://arxiv.org/pdf/1607.06520.pdf)  
-14. [SSRN, “Fairness and Abstraction in Sociotechnical Systems.” Andrew Selbst, Danah Boyd, Sorelle Friedler, Suresh Venkatasubramanian, Janet Vertesi, 23 August 2018.](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3265913)  
-15. [Cornell University, “Counterfactual Fairness.” Matt J. Kusner, Joshua R. Loftus, Chris Russell, Ricardo Silva, 8 March 2018.](https://arxiv.org/abs/1703.06856)  
-16. [GitHub, FairLearn](https://github.com/Microsoft/fairlearn)  
-17. [NIPS, “The Trouble with Bias – NIPS 2017 Keynote.” Kate Crawford, 5 December 2017.](https://www.youtube.com/watch?v=fMym_BKWQzk)  
-18. [Microsoft Research Webinar Series, “Machine Learning and Fairness.” Jenn Wortman Vaughan, Hanna Wallach. 2018.](https://note.microsoft.com/MSR-Webinar-Machine-Learning-and-Fairness-Registration-LIVE/)  
-19. [Microsoft, “Inclusive Design.”](https://www.microsoft.com/design/inclusive/)  
-20. [Microsoft, “Inclusive Microsoft Design Toolkit.” 2016.](https://download.microsoft.com/download/b/0/d/b0d4bf87-09ce-4417-8f28-d60703d672ed/inclusive_toolkit_manual_final.pdf)  
-21. [Microsoft, “Algorithmic Greenlining: An Approach to Increase Diversity.” Christian Borgs, Jennifer Chayes, Nika Haghtalab, Adam Tauman Kalai, Ellen Vitercik, January 2019.](https://www.microsoft.com/research/publication/algorithmic-greenlining-an-approach-to-increase-diversity/)  
-22. [Microsoft Research, “Towards Accountable AI: Hybrid Human-Machine Analyses for Characterizing System Failure.” Besmira Nushi, Ece Kamar, Eric Horvitz.](https://docs.wixstatic.com/ugd/1acfaf_4b2b106eaf6a40a89185eccacf822ea1.pdf)  
-23. [GitHub, AirSim](https://github.com/microsoft/AirSim)  
-24. [GitHub, InterpretML](https://github.com/Microsoft/interpret)  
-25. [Microsoft, “Creating AI glass boxes – Open sourcing a library to enable intelligibility in machine learning.” 10 May 2019.](https://www.microsoft.com/research/blog/creating-ai-glass-boxes-open-sourcing-a-library-to-enable-intelligibility-in-machine-learning/)  
-26. [Cornell University, “Datasheets for Datasets.” Timnit Gebru, Jamie Morgenstern, Briana Vecchione, Jennifer Wortman Vaughan, Hanna Wallach, Hal Daumeé III, Kate Crawford, 14 April 2019.](https://arxiv.org/abs/1803.09010)  
-27. [Partnership on AI, ABOUT ML (Annotation and Benchmarking on Understanding and Transparency of Machine Learning Lifecycles)](https://www.partnershiponai.org/about-ml/)  
+11. [Microsoft, “Microsoft SEAL.”](https://www.microsoft.com/research/project/microsoft-seal/)
+12. [National Science Foundation, “A Private Data Sharing Interface.”](http://psiprivacy.org/static/about/index.html)
+13. [University of Chicago, "Aequitas."](http://www.datasciencepublicpolicy.org/projects/aequitas/)
+
+14. [Microsoft, “A Reductions Approach to Fair Classification.” Association for Computing Machinery, March 2018.](https://www.microsoft.com/research/publication/a-reductions-approach-to-fair-classification/)
+15. [NIPS, “Man is to Computer Programmer as Woman is to Homemaker? Debiasing Word Embeddings.” Tolga Bolukbasi, Kai-Wei Chang, James Zou, Venkatesh Saligrama, Adam Kalai, 21 July 2016.](https://arxiv.org/pdf/1607.06520.pdf)  
+16. [SSRN, “Fairness and Abstraction in Sociotechnical Systems.” Andrew Selbst, Danah Boyd, Sorelle Friedler, Suresh Venkatasubramanian, Janet Vertesi, 23 August 2018.](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3265913)  
+17. [Cornell University, “Counterfactual Fairness.” Matt J. Kusner, Joshua R. Loftus, Chris Russell, Ricardo Silva, 8 March 2018.](https://arxiv.org/abs/1703.06856)  
+18. [GitHub, FairLearn](https://github.com/Microsoft/fairlearn)  
+19. [NIPS, “The Trouble with Bias – NIPS 2017 Keynote.” Kate Crawford, 5 December 2017.](https://www.youtube.com/watch?v=fMym_BKWQzk)  
+20. [Microsoft Research Webinar Series, “Machine Learning and Fairness.” Jenn Wortman Vaughan, Hanna Wallach. 2018.](https://note.microsoft.com/MSR-Webinar-Machine-Learning-and-Fairness-Registration-LIVE/)  
+21. [Microsoft, “Inclusive Design.”](https://www.microsoft.com/design/inclusive/)  
+22. [Microsoft, “Inclusive Microsoft Design Toolkit.” 2016.](https://download.microsoft.com/download/b/0/d/b0d4bf87-09ce-4417-8f28-d60703d672ed/inclusive_toolkit_manual_final.pdf)  
+23. [Microsoft, “Algorithmic Greenlining: An Approach to Increase Diversity.” Christian Borgs, Jennifer Chayes, Nika Haghtalab, Adam Tauman Kalai, Ellen Vitercik, January 2019.](https://www.microsoft.com/research/publication/algorithmic-greenlining-an-approach-to-increase-diversity/)  
+24. [Microsoft Research, “Towards Accountable AI: Hybrid Human-Machine Analyses for Characterizing System Failure.” Besmira Nushi, Ece Kamar, Eric Horvitz.](https://docs.wixstatic.com/ugd/1acfaf_4b2b106eaf6a40a89185eccacf822ea1.pdf)  
+25. [GitHub, AirSim](https://github.com/microsoft/AirSim)  
+26. [GitHub, InterpretML](https://github.com/Microsoft/interpret)  
+27. [Microsoft, “Creating AI glass boxes – Open sourcing a library to enable intelligibility in machine learning.” 10 May 2019.](https://www.microsoft.com/research/blog/creating-ai-glass-boxes-open-sourcing-a-library-to-enable-intelligibility-in-machine-learning/)  
+28. [Cornell University, “Datasheets for Datasets.” Timnit Gebru, Jamie Morgenstern, Briana Vecchione, Jennifer Wortman Vaughan, Hanna Wallach, Hal Daumeé III, Kate Crawford, 14 April 2019.](https://arxiv.org/abs/1803.09010)  
+29. [Partnership on AI, ABOUT ML (Annotation and Benchmarking on Understanding and Transparency of Machine Learning Lifecycles)](https://www.partnershiponai.org/about-ml/)  
