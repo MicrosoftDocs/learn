@@ -18,11 +18,12 @@ You'll use Azure Monitor's Log Analytics to store monitoring data, events, and m
 
 1. Let's sign into the [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true) with your Azure account.
 
-1. Run the following command to create the workspace. You'll name the workspace **aksworkshop-workspace** and use the same resource group and region as your Azure Kubernetes Service (AKS) cluster, for example, **aksworkshop** in **East US**.
+1. Run the following command to create the workspace. You'll need a unique name for the workspace, so you'll use the first command below to generate a name similar to **aksworkshop-workspace-12345**. You'll then run the second command to create the workspace in the same resource group and region as your Azure Kubernetes Service (AKS) cluster, for example, **aksworkshop** in **East US**.
 
     ```bash
+    WORKSPACE=aksworkshop-workspace-$RANDOM
     az resource create --resource-type Microsoft.OperationalInsights/workspaces \
-            --name aksworkshop-workspace \
+            --name $WORKSPACE \
             --resource-group aksworkshop \
             --location eastus \
             --properties '{}' -o table
@@ -37,7 +38,7 @@ Once your workspace is ready, you can integrate the Azure Monitor for containers
     ```azurecli
     WORKSPACE_ID=$(az resource show --resource-type Microsoft.OperationalInsights/workspaces \
         --resource-group aksworkshop \
-        --name aksworkshop-workspace \
+        --name $WORKSPACE \
         --query "id" -o tsv)
     ```
 
