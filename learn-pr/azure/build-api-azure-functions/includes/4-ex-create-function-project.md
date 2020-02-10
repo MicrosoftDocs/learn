@@ -1,6 +1,6 @@
 Tailwind Traders had planned on building a traditional API, but you deftly pointed out that Serverless is perfect for APIs. It can also be done without disturbing their existing codebase. You're already doing so well. You have a long career in online hardware sales in your future.
 
-It's time to deliver on those lofty buzzwords. Now you need to create a new project in Azure Functions that will be the HTTP API for the "Product Manager" application. That means creating the Azure Functions project, complete with all of the endpoints that the Product Manager application is going to need to be able to create, read, update, and delete products.
+It's time to deliver on those lofty buzzwords. Now you need to create a new project in Azure Functions that will be the HTTP API for the "Products Manager" application. That means creating the Azure Functions project, complete with all of the endpoints that the Products Manager application is going to need to be able to create, read, update, and delete products.
 
 ## Create a new Azure Functions project
 

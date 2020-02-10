@@ -52,7 +52,7 @@ You're a new developer at Tailwind Traders. Before you can start, you'll need to
 
 ## Clone the existing project
 
-Fortunately, someone has already written the frontend part of the application. They have creatively named it, "Product Manager". All you need to do is create an API for it. First, though, you need to pull down and set up the Product Manager project.
+Fortunately, someone has already written the frontend part of the application. They have creatively named it, "Products Manager". All you need to do is create an API for it. First, though, you need to pull down and set up the Products Manager project.
 
 1. Open the Command Palette in VS Code by pressing <kbd>F1</kbd>.
 
@@ -98,4 +98,4 @@ There will be two projects in VS Code: "frontend" and "api". The "frontend" proj
 
    ![VS Code terminal displaying url and port of running application](../media/products-manager-start.png)
 
-Excellent! You've successfully configured your environment to be a productive developer at Tailwind Traders. You've got VS Code connected to Azure and the frontend project is running locally on your machine. That means that it's time to create the Azure Functions project that will serve as the API for the Product Manager application.
+Excellent! You've successfully configured your environment to be a productive developer at Tailwind Traders. You've got VS Code connected to Azure and the frontend project is running locally on your machine. That means that it's time to create the Azure Functions project that will serve as the API for the Products Manager application.

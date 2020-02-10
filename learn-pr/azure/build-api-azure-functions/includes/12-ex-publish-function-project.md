@@ -73,7 +73,7 @@ Your API is ready for prime time. Let's put it in the cloud. Azure, here we come
    const KEY = "Iry/Itp6ou9y8SpOoz3hb3D7iaDAkzejXSmVs...";
    ```
 
-1. Refresh the Product Manager application in your browser.
+1. Refresh the Products Manager application in your browser.
 
 1. You should see a "Network Error" message.
 
@@ -105,8 +105,8 @@ Your API is ready for prime time. Let's put it in the cloud. Azure, here we come
 
 ## Test the frontend application
 
-1. Return to the Product Manager application running in your browser.
+1. Return to the Products Manager application running in your browser.
 
 1. Refresh the page. The application should still show the data, but this time using the API that is in production.
 
-   ![Product Manager application shown populated with data](../media/working-application.png)
+   ![Products Manager application shown populated with data](../media/working-application.png)

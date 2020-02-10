@@ -40,7 +40,7 @@ CORS is nifty for production, but it's a bummer when you're trying to build an a
 
 1. The application loads in the data from the API.
 
-   ![Product Manager application shown populated with data](../media/working-application.png)
+   ![Products Manager application shown populated with data](../media/working-application.png)
 
 1. Try creating, updating, and deleting products to ensure that all endpoints work.
 
