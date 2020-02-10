@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.create-azure-account.2-azure-accounts-and-subscriptions
-title: Sign up for Azure
+title: Create an Azure account
 metadata:
-  title: Sign up for Azure
-  description: Sign up for Azure
+  title: Create an Azure account
+  description: Create an Azure account
   ms.date: 11/26/2019
   author: cwatson-cat
   ms.author: cwatson

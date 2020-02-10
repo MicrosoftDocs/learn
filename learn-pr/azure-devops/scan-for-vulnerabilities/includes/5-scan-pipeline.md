@@ -36,7 +36,7 @@ Your pipeline tasks require access to SonarCloud. Here you create a service conn
 1. In the dialog box that appears, enter these fields:
 
     * **SonarCloud Token**: This is the login token that you worked with in the previous part.
-    * **Connection name**: **SonarCloud connection 1**
+    * **Connection name**: *SonarCloud connection 1*
 
     You can print your `SONAR_LOGIN` Bash variable if you need to get this value.
 
@@ -108,11 +108,13 @@ The other two commands map to the `dotnet-sonarscanner end` command, which analy
 
 1. From Visual Studio Code, open *azure-pipelines.yml* and replace its contents with this code. The new parts are highlighted.
 
-    [!code-yml[](code/5-azure-pipelines.yml?highlight=46-57,77,85-89)]
+    [!code-yml[](code/5-azure-pipelines.yml?highlight=20-23,46-57,77,85-89)]
 
     Notice that `SonarCloudPrepare@1` appears before the project is built or any tests are run. Similarly, `SonarCloudAnalyze@1` and `SonarCloudPublish@1` appear after the project is built and all tests are run. This is the same process you used when you scanned locally from the command line.
 
     Also notice that `SonarCloudPrepare@1` contains information specific to your account and uses the pipeline variables you created a moment ago.
+
+    You may have noticed the additional `UseDotNet@2` that specifies .NET version 2.1. At the time of this writing, the SonarCloud tasks for Azure Pipelines need .NET 2.1 installed on the machine.
 
     ``` bash
     organization: '$(SonarOrganization)'

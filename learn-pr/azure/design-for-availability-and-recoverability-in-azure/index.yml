@@ -21,6 +21,7 @@ levels:
 - intermediate
 roles:
 - solution-architect
+- administrator
 products:
 - azure
 - azure-storage

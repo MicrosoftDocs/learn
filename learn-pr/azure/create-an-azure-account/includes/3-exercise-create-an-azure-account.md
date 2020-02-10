@@ -3,7 +3,7 @@ To create and use Azure services, you first need to sign up. If you’ve never t
 You'll need a valid credit card to create your Azure free account. **This card is used for identity validation only**. Your card _won't be charged_ until you choose to upgrade.
 
 > [!IMPORTANT]
-> This exercise is optional. You don't need to sign up for Azure to go through most of the Microsoft Learn modules on Azure. If you already signed up or if you aren't ready to sign up now, you can skip this unit.
+> This exercise is optional. You don't need to create an Azure account to go through most of the Microsoft Learn modules on Azure. If you already signed up or if you aren't ready to sign up now, you can skip this unit.
 
 ## Sign up for a free account
 

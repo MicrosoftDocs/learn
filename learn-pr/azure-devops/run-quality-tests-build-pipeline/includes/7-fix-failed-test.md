@@ -195,7 +195,7 @@ In this section, you reproduce the failure locally, just like Mara and Andy.
 
 Mara notices that each failed test produces a result that's off by one. For example, when 10 is expected, the test returns 9.
 
-Mara and Andy look at the source code for the method that's being tested, ``IDocumentDBRepository`1.GetItemsAsync``. They see this:
+Mara and Andy look at the source code for the method that's being tested, ``LocalDocumentDBRepository`1.GetItemsAsync``. They see this:
 
 ```csharp
 public Task<IEnumerable<T>> GetItemsAsync(
