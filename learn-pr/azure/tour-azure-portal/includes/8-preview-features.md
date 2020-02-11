@@ -49,4 +49,3 @@ Alternatively, you can use the [Azure Updates](https://azure.microsoft.com/updat
 - Browse updates by product category or update type, by using the provided dropdown lists.
 - Search for updates by keyword by entering search terms into a text-entry field.
 - Subscribe to get Azure update notifications by RSS.
-- Access the Microsoft Connect page to read Azure product news and announcements.

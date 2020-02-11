@@ -208,7 +208,7 @@ You need to set up ClusterIssuer before you can begin issuing certificates. The 
 
 ## Test the application
 
-Open the host name you configured on the ingress in a web browser over SSL/TLS, for example, at <https://frontend.13-68-177-68.nip.io>, to view and interact with the application.
+Open the host name you configured on the ingress in a web browser over SSL/TLS, for example, at https:\//frontend.13-68-177-68.nip.io, to view and interact with the application.
 
 ![Screenshot of the ratings-web application](../media/08-ratings-web-ingress-tls.png)
 
