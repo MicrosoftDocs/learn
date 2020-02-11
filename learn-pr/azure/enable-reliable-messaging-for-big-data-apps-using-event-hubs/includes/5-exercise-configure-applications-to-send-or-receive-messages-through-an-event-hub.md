@@ -19,13 +19,13 @@ The Java receiver application, that you'll configure in this unit, stores messag
     Set the storage account name into a variable. It must be between 3 and 24 characters in length and use numbers and lower-case letters only. It also must be unique within Azure.
 
     ```azurecli
-    STORAGE_NAME=[name]
+    STORAGE_NAME=storagename$RANDOM
     ```
 
     Then use this command to create the storage account.
 
     ```azurecli
-    az storage account create --name $STORAGE_NAME --sku Standard_RAGRS --encryption blob
+    az storage account create --name $STORAGE_NAME --sku Standard_RAGRS --encryption-service blob
     ```
 
     > [!TIP]
@@ -81,7 +81,7 @@ You'll need to write out your edits using <kbd>Ctrl+O</kbd>, and then <kbd>ENTER
 1. Change to the **SimpleSend** folder.
 
     ```bash
-    cd azure-event-hubs/samples/Java/Basic/SimpleSend/src/main/java/com/microsoft/azure/eventhubs/samples/SimpleSend
+    cd ~/azure-event-hubs/samples/Java/Basic/SimpleSend/src/main/java/com/microsoft/azure/eventhubs/samples/SimpleSend
     ```
 
 1. Open the code editor in the current folder. This will show a list of files on the left and an editor space on the right.
@@ -106,6 +106,8 @@ You'll need to write out your edits using <kbd>Ctrl+O</kbd>, and then <kbd>ENTER
 
     ```bash
     echo $NS_NAME
+    echo $HUB_NAME
+    echo $STORAGE_NAME
     ```
     When you create an Event Hubs namespace, a 256-bit SAS key called **RootManageSharedAccessKey** is created that has an associated pair of primary and secondary keys that grant send, listen, and manage rights to the namespace. In the previous unit, you displayed the key using an Azure CLI command, and you can also find this key by opening the **Shared access policies** page for your Event Hubs namespace in the Azure portal.
 
