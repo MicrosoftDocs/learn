@@ -56,9 +56,18 @@ Requirements and technologies change. For an on-premises deployment, these chang
 
 Azure data storage gives you the flexibility to create new services in minutes. This flexibility allows you to change storage back-ends quickly without needing a significant hardware investment.
 
-The following illustration shows differences between on-premises storage and Azure data storage.
+The following table describes the differences between on-premises storage and Azure data storage.
 
-![An illustration showing comparison between on-premises storage and Azure data storage for several common business needs.](../media/4-Comparison.png)
+| Needs | On-premises | Azure Data Storage |
+|---|---|---|
+| Compliance and security | Dedicated servers required for privacy and security | Client side encryption and encryption at rest |
+| Store structured and unstructured data | Additional IT resources with dedicated servers required | Azure Data Lake and portal analyzes and manages all types of data |
+| Replication and high availability | More resources, licensing, and servers required | Built-in replication and redundancy features available |
+| Application sharing and access to shared resources | File sharing requires additional administration resources | File sharing options available without additional license |
+| Relational data storage | Needs a database server with database admin role | Offers database-as-a-service options |
+| Distributed storage and data access | Expensive storage, networking, and compute resources needed | Azure Cosmos DB provides distributed access |
+| Messaging and load balancing | Hardware redundancy impacts budget and resources | Azure Queue provides effective load balancing |
+| Tiered storage | Management of tiered storage needs technology and labor skill set | Azure offers automated tiered storage of data |
 
   :::column-end:::
 :::row-end:::
