@@ -6,7 +6,7 @@ In this unit, you learn about custom roles in Azure role-based access control (R
 
 Azure Active Directory (Azure AD) roles and Azure roles are often confused when you first work with Azure. Azure AD roles provide the mechanism for managing permissions to AD resources like user accounts and passwords. Azure roles provide a wealth of capabilities for managing Azure resources like virtual machines (VMs) at a granular level.
 
-![Diagram that shows relationship of Azure roles and Azure AD roles](../media/2-azure-office-roles.png)
+![Diagram that shows relationship of Azure roles and Azure AD roles](../media/2-azure-office-roles.svg)
 
 The subtle differences between how the two can be set up and managed are in the following table:
 
@@ -38,7 +38,7 @@ You can scope the assignment and related permissions to different levels within 
 - Resource group
 - Individual resource
 
-![Diagram that shows scopes for role assignment](../media/2-rbac-scope.png)
+![Diagram that shows scopes for role assignment](../media/2-rbac-scope.svg)
 
 ## Role definition and structure
 
