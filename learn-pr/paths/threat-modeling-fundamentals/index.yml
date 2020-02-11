@@ -29,12 +29,12 @@ products:
 - m365-ems-cloud-app-security
 modules:
 - learn.tm-introduction-to-threat-modeling
-- learn.tm-create-a-threat-model-using-foundational-data-flow-diagram-elements
-- learn.tm-choose-a-focus-area-to-identify-how-to-approach-your-threat-model
-- learn.tm-select-a-methodology-to-enumerate-threats-and-mitigations
-- learn.tm-assign-priorities-and-security-controls
-- learn.tm-select-a-threat-model-layer-to-provide-context
-- learn.tm-use-recommended-tools-to-create-a-threat-model
-- learn.tm-get-your-threat-model-review-ready
+#- learn.tm-create-a-threat-model-using-foundational-data-flow-diagram-elements
+#- learn.tm-choose-a-focus-area-to-identify-how-to-approach-your-threat-model
+#- learn.tm-select-a-methodology-to-enumerate-threats-and-mitigations
+#- learn.tm-assign-priorities-and-security-controls
+#- learn.tm-select-a-threat-model-layer-to-provide-context
+#- learn.tm-use-recommended-tools-to-create-a-threat-model
+#- learn.tm-get-your-threat-model-review-ready
 trophy:
   uid: http://via.placeholder.com/120x120
