@@ -10,7 +10,5 @@ metadata:
   ms.prod: learning-azure
 title: Exercise - Environment setup
 durationInMinutes: 10
-interactive: bash
-azureSandbox: true
 content: |
   [!include[](includes/2-exercise-environment-setup.md)]
