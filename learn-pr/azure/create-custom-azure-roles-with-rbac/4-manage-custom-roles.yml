@@ -33,7 +33,7 @@ quiz:
       explanation: "You can't delete the custom role until you remove the role assignments."
     - content: "Set the role definition status to retired."
       isCorrect: false
-      explanation: "The role definition doesn't have status attribute."
+      explanation: "The role definition doesn't have a status attribute."
     - content: "Delete the role assignments and then delete the custom role."
       isCorrect: true
       explanation: "Before you can delete the custom role, you must delete any role assignments."
