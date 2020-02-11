@@ -1,47 +1,63 @@
-In this exercise, you'll lay the groundwork for using the Azure Data Migration Assistant. First, you will need to install the Azure CLI tools so you can issue the proper commands. 
-
-After installing, you'll open up either a CMD or PowerShell command line window. You'll issue the CLI commands to login to Azure, set the subscription you want to use, then create a resource group. Finally, you'll issue the command to deploy a pre-written template that will generate all of the objects you'll need to perform the demos, including a virtual machine, Azure SQL Database, and more.
+In this exercise, you'll lay the groundwork for using the Azure Data Migration Assistant. You'll use the Azure Cloud Shell to deploy a template that will create resources you'll need to perform the exercises, including a virtual machine, an Azure SQL Database, and other supporting resources.
 
 [!INCLUDE [azure-exercise-subscription-prerequisite](../../../includes/azure-exercise-subscription-prerequisite.md)]
 
-## Install Azure CLI on Windows
+## Deploy the template
 
-In order to create the environment, you will need to install the Azure CLI tools on your computer. You can obtain the CLI toolset at the following URL:
+1. Select the **Deploy to Azure** button below to deploy the resources needed for the exercises.
 
-[https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-windows?view=azure-cli-latest](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-windows?view=azure-cli-latest)
+    [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoftDocs%2Fmslearn-migrate-sql-server-relational-data%2Fmaster%2Fazuredeploy.json?azure-portal=true)
 
-## Execute the Azure CLI commands
+1. Complete the template with the following values:
 
-First, you will need to login to Azure.
+    |Parameter  |Value  |
+    |---------|---------|
+    |**BASICS**| |
+    |Subscription     | Select the Azure subscription you would like to use |
+    |Resource group     | Select **Create new**, enter **admsdemorg**, and select **OK**.        |
+    |Location     | Select a [location that supports the Azure Database Migration Servivce](https://azure.microsoft.com/en-us/global-infrastructure/services/?products=database-migration&regions=all&azure-portal=true)        |
+    |**SETTINGS**     |         |
+    |Location     | Leave at default value of `[resourceGroup().location]`         |
+    |Create Public IP     | true        |
+    |Source Windows Admin User Name     |  vmadmin       |
+    |Source Windows Admin Password     | Enter a complex password        |
+    |Source SQL Authentication Password     | Enter a complex password        |
+    |Target SQL DB Administrator Login     | sqladmin        |
+    |Target SQL DB Administrator Password     | Enter a complex password        |
+    |_artifacts Location     | Leave at default value        |
+    | _artifacts Location Sas Token | Leave blank |
 
-```powershell
-az login
-```
+1. Select **I agree to the terms and conditions stated above** and select **Purchase**.
 
-After issuing the login command, your default web browser will open and prompt you to login to Azure.
+<!-- 1. Log in to the [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true) with credentials that have access to your Azure account. Select the **Bash** version of cloud shell once logged in.
 
-After logging in, you will need to set your subscription. This example will connect to an Azure Free Trial subscription. 
+1. Once you are logged in, confirm that you are in the subscription you would like to create your resources in. 
 
-```powershell
-az account set --subscription "Azure Free Trial"
-```
+    ```azurecli
+    az account show
+    ```
 
-Some other common values are "Visual Studio Ultimate with MSDN" and "Pay-As-You-Go." Use the name of the subscription you want to use for this learning exercise.
+    If you need to change to a different subscription, use the following command and replace `<Subscription Name>` with the name of the subscription you would like to use.
 
-Once you are logged in and set your subscription, you'll need to create a resource group for this exercise. This next command will create a resource group named **admsdemorg** in the **centralus** region.
+    ```azurecli
+    az account set --subscription "<Subscription Name>"
+    ```
 
-```powershell
-az group create --location centralus --name admsdemorg
-```
+1. Next, create a resource group for the resources to be deployed to. This command will create a resource group named **admsdemorg** in the **centralus** region. You may wish to use a different location. Not all regions support the Azure Data Migration Service, so confirm that the region of your choice is supported.
 
-You may wish to use a different location if you are outside the US. Note, however, that not all regions support the Azure Data Migration Service. 
+    ```azurecli
+    az group create --location centralus --name admsdemorg
+    ```
 
-Finally, issue the command to generate the objects you'll need from a pre-defined template provided by Microsoft.
+1. Now run this command to create resources you'll need in the exercises.
 
-[//]: # (NOTE: This command will be updated to point to the final GitHub site for the demos)
-```powershell
-az group deployment create --name admsdemodeploy --resource-group admsdemorg --template-file "C:\Users\arcan\OneDrive\Pluralsight\Azure Migrate your SQL Data to Azure SQL\Microsoft-Written-PoC\migrate-sql-server-relational-data\demos\adms.deploy.json" --parameters "C:\Users\arcan\OneDrive\Pluralsight\Azure Migrate your SQL Data to Azure SQL\Microsoft-Written-PoC\migrate-sql-server-relational-data\demos\adms.parameters.json"
-```
+    ```azurecli
+    az group deployment create \
+        --name admsdemodeploy \
+        --resource-group admsdemorg \
+        --template-uri https://raw.githubusercontent.com/MicrosoftDocs/mslearn-migrate-sql-server-relational-data/master/azuredeploy.json \
+        --parameters "C:\Users\arcan\OneDrive\Pluralsight\Azure Migrate your SQL Data to Azure SQL\Microsoft-Written-PoC\migrate-sql-server-relational-data\demos\adms.parameters.json"
+    ``` -->
 
 When finished, you can navigate to your Azure Portal and open the newly created **admsdemorg** Resource Group. You should see something similar to the image below. Note that not all names will match exactly, as some names are dynamically generated at creation time.
 
