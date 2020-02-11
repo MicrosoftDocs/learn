@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.migrate-sql-server-relational-data.7-summary
 metadata:
-  title: Summary
-  description: Summary
-  ms.date: 02/09/2020
+  title: Summary and clean up
+  description: Summary and clean up
+  ms.date: 02/21/2020
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial

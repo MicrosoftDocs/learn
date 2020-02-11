@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.migrate-sql-server-relational-data.6-exercise-migrate-database-adms
+uid: learn.migrate-sql-server-relational-data.6-exercise-migrate-database-service
 metadata:
   title: Exercise - Migrate a database with downtime using Azure Data Migration Service
   description: Exercise - Migrate a database with downtime using Azure Data Migration Service
-  ms.date: 02/09/2020
+  ms.date: 02/21/2020
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
@@ -11,4 +11,4 @@ metadata:
 title: Exercise - Migrate a database with downtime using Azure Data Migration Service
 durationInMinutes: 10
 content: |
-  [!include[](includes/7-exercise-migrate-database-adms.md)]
+  [!include[](includes/7-exercise-migrate-database-service.md)]
