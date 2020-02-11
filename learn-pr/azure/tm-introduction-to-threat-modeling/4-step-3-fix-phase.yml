@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+
+uid: learn.tm-introduction-to-threat-modeling.4-step-3-fix-phase
+title: Step 3 - Fix Phase (Decide How to Prioritize, Track and Fix Each Issue)
+metadata:
+  title: Step 3 - Fix Phase (Decide How to Prioritize, Track and Fix Each Issue)
+  description: Decide How to Prioritize, Track and Fix Each Issue
+  ms.date: 02/28/2020
+  author: rodsan
+  ms.author: rodsan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-threat-modeling
+durationInMinutes: 2
+content: |
+  [!include[](includes/4-step-3-fix-phase.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What happens at the Fix Phase?"
+    choices:
+    - content: "It's when all fixes are verified before the system is deployed"
+      isCorrect: false
+      explanation: "This is part of Step 4 - Verify Phase."
+    - content: "A list of security controls to reduce or eliminate risk is generated, validated and prioritized"
+      isCorrect: true
+      explanation: "Each potential threat maps to one or more security controls to either help reduce or eliminate the risk imposed by the threat, which is prioritized and tracked accordingly."
+    - content: "It's when a framework is selected to help generate potential threats"
+      isCorrect: false
+      explanation: "This is part of Step 2 - Break Phase."

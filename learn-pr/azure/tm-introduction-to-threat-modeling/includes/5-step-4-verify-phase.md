@@ -1,0 +1,3 @@
+Verify the risk for each threat is properly reduced or eliminated and security assumptions are correct, especially as they apply to cloud service providers, third-party services and any components outside of your direct control, such as open source components.
+
+The verification process can be manual, automated or both. At Microsoft, services are subject to one or more types of verification process prior to deployment, which may consist of automated scanners, code reviews and penetration tests. These processes may be required either for every deployment or periodically (e.g. every 6-12 months), depending on the nature of the system and other security factors determined by the organization.

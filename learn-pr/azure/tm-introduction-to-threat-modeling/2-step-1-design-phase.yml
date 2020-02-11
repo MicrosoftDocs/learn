@@ -1,0 +1,30 @@
+### YamlMime:ModuleUnit
+
+uid: learn.tm-introduction-to-threat-modeling.2-step-1-design-phase
+title: Step 1 - Design Phase (Capture Requirements and Create a Data-Flow Diagram)
+metadata:
+  title: Step 1 - Design Phase (Capture Requirements and Create a Data-Flow Diagram)
+  description: Capture Requirements and Create a Data-Flow Diagram
+  ms.date: 02/28/2020
+  author: rodsan
+  ms.author: rodsan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-threat-modeling
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-step-1-design-phase.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What happens at the Design Phase?"
+    choices:
+    - content: "You have a good idea of how the system works (or will work) and can identify security requirements, guarantees and/or gaps inherited from cloud providers and integrated services"
+      isCorrect: true
+      explanation: "At this phase, before creating a data-flow diagram, it is important to gather as much context as possible about what, where and how you are building your system"
+    - content: "You don't have to worry about researching all the security guarantees, assumptions and gaps at this point since the only work is to create a data-flow diagram"
+      isCorrect: false
+      explanation: "Having as much context as possible earlier in the design phase allows you to make good decisions to better secure your system"
+    - content: "You identify all security issues associated with your system and resolve them before creating your data-flow diagram"
+      isCorrect: false
+      explanation: "This comes after the design phase as part of the break and fix phases"
+  

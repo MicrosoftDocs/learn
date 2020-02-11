@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+
+uid: learn.tm-introduction-to-threat-modeling.1-introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Explore the four high-level steps of threat modeling.
+  ms.date: 02/28/2020
+  author: rodsan
+  ms.author: rodsan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-threat-modeling
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

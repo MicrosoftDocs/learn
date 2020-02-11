@@ -1,0 +1,40 @@
+### YamlMime:LearningPath
+uid: learn.security.threat-modeling-fundamentals
+metadata:
+  title: Threat Modeling Fundamentals
+  description: Learn how to create and analyze threat models for your services.
+  brand: azure
+  ms.date: 2/28/2020
+  author: rodsan
+  ms.author: rodsan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Threat Modeling Fundamentals
+summary: Learn how to create and analyze threat models for your services.
+prerequisites: None
+iconUrl: http://via.placeholder.com/120x120
+levels:
+- beginner
+- intermediate
+roles:
+- administrator
+- developer
+- devops-engineer
+- solution-architect
+- security-engineer
+products:
+- azure-iot-security-center
+- m365-security-center
+- azure-iot-security-center
+- m365-ems-cloud-app-security
+modules:
+- learn.tm-introduction-to-threat-modeling
+- learn.tm-create-a-threat-model-using-foundational-data-flow-diagram-elements
+- learn.tm-choose-a-focus-area-to-identify-how-to-approach-your-threat-model
+- learn.tm-select-a-methodology-to-enumerate-threats-and-mitigations
+- learn.tm-assign-priorities-and-security-controls
+- learn.tm-select-a-threat-model-layer-to-provide-context
+- learn.tm-use-recommended-tools-to-create-a-threat-model
+- learn.tm-get-your-threat-model-review-ready
+trophy:
+  uid: http://via.placeholder.com/120x120

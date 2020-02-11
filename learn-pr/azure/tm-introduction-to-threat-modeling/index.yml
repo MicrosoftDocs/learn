@@ -1,0 +1,45 @@
+### YamlMime:Module
+
+uid: learn.tm-introduction-to-threat-modeling
+metadata:
+  title: Introduction
+  description: Learn the fundamental principles of threat modeling, which is divided into four phases.
+  ms.date: 02/28/2020
+  author: rodsan
+  ms.author: rodsan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-threat-modeling
+title: Introduction
+summary: >
+  Azure supports three approaches to deploying cloud resources - public, private, and the hybrid cloud. Selecting between them will change several 
+  factors of the services you move into Azure including cost, maintenance requirements, and security. In this module, we will look at all three types and help you make an informed decision about which one to leverage for your services. We'll also quickly look at the service models supported by Azure which can help you determine the services you should start with when planning out an Azure deployment.
+abstract: |
+    In this module, you will:
+  - Compare each cloud computing deployment model (public, private, and hybrid).
+  - Understand the advantages of each cloud computing service model.
+  - Decide which deployment and service model you should use for your services.
+prerequisites: None
+iconUrl: http://via.placeholder.com/120x120
+ratingEnabled: false
+levels:
+- beginner
+roles:
+- administrator
+- developer
+- devops-engineer
+- security-engineer
+- solution-architect
+products:
+- azure-iot-security-center
+- azure-security-center
+- m365-security-center
+- m365-ems-cloud-app-security
+units:
+- learn.tm-introduction-to-threat-modeling.1-introduction
+- learn.tm-introduction-to-threat-modeling.2-step-1.design-phase
+- learn.tm-introduction-to-threat-modeling.3-step-2-break-phase
+- learn.tm-introduction-to-threat-modeling.4-step-3-fix-phase
+- learn.tm-introduction-to-threat-modeling.5-step-4-verify-phase
+- learn.tm-introduction-to-threat-modeling.6-summary
+badge:
+  uid: http://via.placeholder.com/120x120
