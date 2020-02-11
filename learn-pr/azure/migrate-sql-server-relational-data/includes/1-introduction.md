@@ -6,6 +6,8 @@ As both a cost-saving measure and to provide a platform for rapid growth in the 
 
 In this module, you will learn how to use the Azure Data Migration Service to accomplish the move to the Azure SQL Database. First, you'll see how to use the Azure Data Migration Assistant to examine your existing database for any compatibility issues with Azure SQL. You'll then use it to migrate the database to Azure SQL.
 
+You'll deploy the resources in this workshop into a subscription you have access to. To estimate the expected costs for these resources, see the [preconfigured Azure Calculator estimate](https://aka.ms/migrate-sql-server-relational-data-estimate?azure-portal=true) of the resources that will be deployed.
+
 ## Learning objectives
 
 In this module, you will:
