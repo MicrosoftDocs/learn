@@ -10,7 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Threat Modeling Fundamentals
-summary: Learn how to create and analyze threat models for your services.
+summary: "Learn how to create and analyze threat models for your services."
 prerequisites: None
 iconUrl: http://via.placeholder.com/120x120
 levels:
