@@ -16,17 +16,7 @@ Task | Actions | Description
 
 ## Create custom roles
 
-In unit 3, you created a custom role by using Azure CLI. You can also create a custom role by using the Azure portal or Azure PowerShell.
-
-In the Azure portal, you'd go to the management group, subscription, resource group, or resource you want the custom role scope to apply to. Then go to **Access control (IAM)** and select **Add** > **Add custom role (preview)**.
-
-![Screenshot that shows Add custom role option under Add button](../media/4-add-custom-role-portal.png)
-
-You can choose to clone an existing role or start from scratch.
-
-![Screenshot of clone role radio button selected and Virtual Machine Contributor as role to clone ](../media/4-clone-role.png)
-
-With either selection, you can edit the permissions, scopes, and the resulting JSON.
+In unit 3, you created a custom role by using Azure CLI. You can also create a custom role by using the Azure PowerShell.
 
 The steps involved to create a role by using Azure PowerShell are similar to what we covered in unit 2 and 3. After you defined the custom role in a JSON file, you used the following command in Azure CLI to create the custom role:
 

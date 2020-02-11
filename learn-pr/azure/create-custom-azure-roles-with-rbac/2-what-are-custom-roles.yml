@@ -12,3 +12,28 @@ metadata:
 durationInMinutes: 7
 content: |
   [!include[](includes/2-what-are-custom-roles.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What's included in a custom Azure role definition?"
+    choices:
+    - content: "Operations allowed for Azure resources and the scope of permissions"
+      isCorrect: true
+      explanation: "A custom role definition includes the operations allowed such as read, write, and delete for Azure resources and the scope of those permissions."
+    - content: "The assignment of the custom role"
+      isCorrect: false
+      explanation: "Role assignment isn't part of the custom role definition."
+    - content: "Actions and DataActions operations that you can scope to the tenant level"
+      isCorrect: false
+      explanation: "The scopes that can apply to an Azure resource are management group, subscription, resource group, and individual resource. Azure AD roles are at the tenant scope."
+  - content: "What resources can you use to build a custom role definition?"
+    choices:
+    - content: "Use 'az provider operation show' to find resource provider operations."
+      isCorrect: false
+      explanation: "To find resource provider operations by using the command line, use 'az provider operation list' in Azure CLI or 'Get-AzProviderOperation' in Azure PowerShell. In your browser, search for the list of resource providers and operations in the Azure RBAC content on Docs."
+    - content: "Use 'List-AzRoleDefinition' to view a built-in role."
+      isCorrect: false
+      explanation: "Use 'Get-AzRoleDefinition' to view a built-in role in Azure PowerShell."
+    - content: "Use 'az role definition list' to view a built-in role."
+      isCorrect: true
+      explanation: "Use 'az role definition list' to view a built-in role in Azure CLI."
