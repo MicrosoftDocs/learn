@@ -6,7 +6,7 @@ The Custom Vision APIs use a pair of *subscription keys* to control access to th
 The separation of Custom Vision API subscription keys makes it easy to provide keys based on application, business, or technical requirements. For example, a service requiring only prediction tasks will only be able to use that API and will only be charged against the prediction quota. Both of these keys are available in the portal when you create your Custom Vision service.
 
 > [!TIP]
-> You can also find the keys on the Azure portal page for the Custom Vision Azure resource associated with your project, on the **Keys** pane.
+> You can also find the keys on the Azure portal page for the Custom Vision Azure resource associated with your project, on the **Keys** blade.
 
 ## Supplying a subscription key
 
