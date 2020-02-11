@@ -16,9 +16,9 @@ Once you are logged into the Azure portal, we can start exploring things. In the
 
 1. Selecting any of items in the Azure Marketplace list will show popular services for that category on the right of the **New** pane. This list is a subset of the entire range of computing resources available for that category. As with the Azure Marketplace, you can select on the **See all** link for a more comprehensive list. We will talk more about this list in subsequent sections.
 
-1. Returning to the **New** pane, select on **Get started** and you should see a list on the right side of the pane that includes services such as Windows Server 2016 Datacenter, Ubuntu Server VM, SQL Database, and so on. Most of these items include a **Quickstart + tutorial** link directly below the name. This link opens a new browser tab with the quickstart Microsoft documentation for that item.
+1. Returning to the **New** pane, select on **Get started** and you should see a list on the right side of the pane that includes services such as Windows Server 2016 Datacenter, Ubuntu Server VM, SQL Database, and so on. Most of these items include a **Quickstarts + tutorials** link directly below the name. This link opens a new browser tab with the quickstart Microsoft documentation for that item.
 
-1. Optional: select **Quickstart + tutorial** under **Windows Server 2016 Datacenter** and, in the new browser window, look through the Windows VM tutorials. When you are finished, close this new tab to return to the Azure portal.
+1. Optional: select **Quickstarts + tutorials** under **Windows Server 2016 Datacenter** and, in the new browser window, look through the Windows VM tutorials. When you are finished, close this new tab to return to the Azure portal.
 
 ## View resources
 
