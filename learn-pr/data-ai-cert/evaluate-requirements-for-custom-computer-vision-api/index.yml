@@ -26,7 +26,6 @@ levels:
 - intermediate
 roles:
 - business-analyst
-- other
 products:
 - azure
 units:
