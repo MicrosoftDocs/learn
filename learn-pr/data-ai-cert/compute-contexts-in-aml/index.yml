@@ -1,22 +1,21 @@
 ### YamlMime:Module
-uid: learn.data-ai.register-and-deploy-model-with-amls
+uid: learn.data-ai.compute-contexts-in-aml
 metadata:
-  title: Deploying machine learning models with Azure Machine Learning
-  description: Learn how to register and deploy ML models with the Azure Machine Learning service.
-  ms.date: 01/13/2020
+  title: Working with compute contexts in Azure Machine Learning
+  description: Learn how to manage compute contexts for experiments in Azure Machine Learning.
+  ms.date: 02/10/2020
   author: GraemeMalcolm
   ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Deploying machine learning models with Azure Machine Learning
-summary: Learn how to register and deploy ML models with the Azure Machine Learning service.
+title: Working with compute contexts in Azure Machine Learning
+summary: Learn how to manage compute contexts for experiments in Azure Machine Learning.
 abstract: | 
   In this module, you will learn how to:
-  - Deploy a model as a real-time inferencing service.
-  - Consume a real-time inferencing service.
-  - Troubleshoot service deployment
+  - Create and use environments.
+  - Create and use compute targets.
 prerequisites: None
-iconUrl: /learn/achievements/data-ai/register-and-deploy-model-with-amls-badge.svg
+iconUrl: /learn/achievements/data-ai/compute-contexts-in-aml-badge.svg
 levels:
 - beginner
 roles:
@@ -26,11 +25,12 @@ products:
 - azure
 - azure-machine-learning-service
 units:
-- learn.data-ai.register-and-deploy-model-with-amls.introduction
-- learn.data-ai.register-and-deploy-model-with-amls.deploy-model
-- learn.data-ai.register-and-deploy-model-with-amls.consume-model
-- learn.data-ai.register-and-deploy-model-with-amls.troubleshoot-deployment
-- learn.data-ai.register-and-deploy-model-with-amls.deploying-a-model
-- learn.data-ai.register-and-deploy-model-with-amls.summary
+- learn.data-ai.compute-contexts-in-aml.introduction
+- learn.data-ai.compute-contexts-in-aml.environments
+- learn.data-ai.compute-contexts-in-aml.compute-targets
+- learn.data-ai.compute-contexts-in-aml.creating-compute
+- learn.data-ai.compute-contexts-in-aml.using-compute
+- learn.data-ai.compute-contexts-in-aml.working-with-compute
+- learn.data-ai.compute-contexts-in-aml.summary
 badge:
-  uid: learn.data-ai.register-and-deploy-model-with-amls.badge
+  uid: learn.data-ai.compute-contexts-in-aml.badge
