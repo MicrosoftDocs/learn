@@ -10,11 +10,14 @@ In this module, you will learn how to use the Azure Data Migration Service to ac
 
 In this module, you will:
 
-- Analyze your existing database for compatibility issues with Azure SQL Database
-- Deploy your database schema to the Azure SQL Database
-- Migrate your data using the Azure Data Migration Service
+- Analyze your existing database for compatibility issues with Azure SQL Database.
+- Deploy your database schema to the Azure SQL Database.
+- Migrate your data using the Azure Data Migration Service.
 
 ## Prerequisites
 
-- Basic knowledge of the SQL language and database concepts
-- Experience creating and managing resources using the Azure portal at the beginner level
+- Access to an Azure subscription to complete the exercises
+- Basic knowledge of the T-SQL language
+- Basic familiarity with relational data, such as tables, rows, and database schema
+- Basic familiarity with SQL Server administration and configuration
+- Basic familiarity with Azure SQL Database

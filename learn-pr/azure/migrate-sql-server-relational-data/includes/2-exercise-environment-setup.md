@@ -2,6 +2,8 @@ In this exercise, you'll lay the groundwork for using the Azure Data Migration A
 
 After installing, you'll open up either a CMD or PowerShell command line window. You'll issue the CLI commands to login to Azure, set the subscription you want to use, then create a resource group. Finally, you'll issue the command to deploy a pre-written template that will generate all of the objects you'll need to perform the demos, including a virtual machine, Azure SQL Database, and more.
 
+[!INCLUDE [azure-exercise-subscription-prerequisite](../../../includes/azure-exercise-subscription-prerequisite.md)]
+
 ## Install Azure CLI on Windows
 
 In order to create the environment, you will need to install the Azure CLI tools on your computer. You can obtain the CLI toolset at the following URL:

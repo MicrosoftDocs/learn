@@ -15,8 +15,10 @@ abstract: |
   - Select the proper migration strategy for your relational data stored in SQL Server
   - Perform a migration from SQL Server to a single Azure SQL Database using the migration with downtime process
 prerequisites: | 
-  - Basic familiarity with relational data
-  - Basic familiarity with SQL Server
+  - Access to an Azure subscription to complete the exercises
+  - Basic knowledge of the T-SQL language
+  - Basic familiarity with relational data, such as tables, rows, and database schema
+  - Basic familiarity with SQL Server administration and configuration
   - Basic familiarity with Azure SQL Database
 iconUrl: http://via.placeholder.com/120x120
 levels:
@@ -24,7 +26,6 @@ levels:
 roles:
 - solution-architect
 - administrator
-- data-engineer
 products:
 - azure
 - azure-sql-database
