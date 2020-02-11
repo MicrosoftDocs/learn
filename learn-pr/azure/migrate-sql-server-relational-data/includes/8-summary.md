@@ -1,0 +1,7 @@
+Your company is delighted that its social media database is now in Azure SQL. They are able to provide content with greater uptime and reduced cost. In addition, the migration went smoothly, thanks to the tools involved.
+
+Imagine how much effort would have been required without the tools provided. The Azure Data Migration Assistant provided a clearly defined set of reports that enabled you to quickly alter your existing database to bring it into compatibility with Azure SQL. Without the Azure Data Migration Assistant, a massive code review would have been required to look at your entire database for issues.
+
+Data migration was also made easy thanks to the Azure Data Migration Service. In this module, you learned how to migrate your data, and you learned about the pros and cons of offline and online migrations. Using the provided tools made migrating your database to Azure SQL easy and straightforward with minimum impact on your organization.
+
+As a reminder, be sure to delete the resources you created during this lesson to avoid any unwanted costs. The simplest way to do this is to delete the resource group. Just go to your Azure portal, click on **Resource Groups**, then in the list of groups, click **admsdemorg**. Once the page opens for this group, click the **Delete resource group** button toward the top of the page. A pane will appear to the side asking you to enter the resource group name to confirm. Do so, then click the **Delete** button located at the bottom of the pane.

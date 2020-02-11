@@ -1,0 +1,133 @@
+# Feedback
+
+I (Robert) decided to take Jason's feedback from Teams and copy it into this document. It will make it much easier to manage the changes and make comments by having it integrated into the project.
+
+## Introductory comment from Jason
+
+I've also uncovered an issue that is going to prevent this from working in sandbox. The download of the migration assistant will not work, we block a lot of outbound traffic due to fraud, and this is going to be inadvertently blocked because of it, even though it's hosted on a Microsoft URL. I can give more details, but the short of it is that we'll have learners use their own subscriptions for this module. That shouldn't change much from a content perspective other than adding in a step to create a resource group, and not having to work through any other issues in sandbox.
+
+## 1-introduction
+
+Ensure product terms are correct
+
+Azure SQL Database
+Azure Database Migration service
+
+* Don't capitalize virtual machine
+* Use "Azure SQL Database service" instead of "Azure SQL platform"
+* Include the learning objectives and prerequisites in the unit text, see example of another module
+
+__Robert Cain - 2020-01-01__
+
+* Corrected the product names
+* Added learning objectives and prerequisites
+
+## 2-exercise-environment-setup
+
+<!-- 
+R Cain - This section was completely tossed out and re-written, so none of the comments are relevant.
+-->
+
+I know you're automating much of this, but wanted to give some feedback on writing instructions in general.
+		Don't use this many H3's, one per UI tab is too many. Break it up into logical sections, and just walk the learner through it.
+		For the VM size, B2 is going to be throttled, and we'll want to ensure that we have ample capacity to get the VM up as quickly as possible. Use Standard_DS2_v2 for the VM size.
+		Do not hardcode or specify a password for the learner. They will need to generate a unique, complex password.
+		When creating resources, if you don't need to enter information on a UI in a tabbed workflow, you don't need to mention it. In your steps, you state on the networking, management and advanced tabs to accept the defaults. Instead of this you can just skip to the review and create screen.
+		For text and screenshots, make sure the code blocks and image references are indented properly so that numbering continues properly. All text below a numbered bullet has to be indented past the number itself. Look at example markdown or ping me if you have questions on this.
+		Remove non-Microsoft twitter handles from the database. Since we (Microsoft) don't control those, we shouldn't list them in there.
+		Don't include the Data Migration Assistant download steps in this unit. We want to get the creation of the resources off and running and get the learner past this unit as quickly as possible so they can get to the actual learning content.
+
+## 3-migration-overview
+
+Be sure to include some relevant details around the scenario in the introduction section of the unit. See existing content for examples of how these should look.
+
+Add more details in the Pre-migration section. What happens here, what things do I need to be concerned about? Is the assessment phase an actual phase or just a step as part of the pre-migration phase?
+
+When using an image with numbering, ensure you clearly step through what each of these is immediately after the image itself.
+
+Don't abbreviate ADMS and ADMA. Use the full service names, and you can omit the "Azure" part of it after the first mention.
+
+Don't state "these will be covered in a later section". Give some high level detail as needed, or omit details that you are going to cover elsewhere.
+
+In the Azure Data Migration Assistant section you state three purposes, but it's not clear exactly which things are the three things you highlight. Call this out more definitively.
+
+Re-order the sections and highlight that Database Migration Service is the main service, with Migration Assistant being a part of that service.
+
+Add more detail to the Database Migration Service section. What is it, how does it work, when do I use it? Those types of things.
+
+This is the key learning unit to give the learner the information they need to understand the process start to finish. Include more detail around the services, tools, and key details for each step along the way.
+
+Feel free to include UI screenshots to show key parts of the tools here.
+
+Provide 2-3 questions for a unit knowledge check
+
+__Robert Cain - 2020-01-01__
+
+* Added to the introduction
+* Removed the ADMS/ADMA acronyms from the document (although we'll keep using them in this document for convenience)
+* Updated pre-migration to add more details
+* Updated the DMA section to clarify the purposes.
+* Updated all sections to remove reference to doing migrations with the ADMA. Only the ADMS is now mentioned as a method for moving data.
+* Removed "these will be covered later" statements and replaced with brief overview.
+* Added a section to ADMA to clarify you don't have to use it, but using it may save some effort. I provided an example of why you may not want to use it.
+* I'm going to push back slightly on the re-ordering. Because the assistant will typically be the first step, it makes more sense to keep it in order. I believe the bigger point Jason is trying to make is that the assistant is part of the service, and not a separate tool. Thus I added an introductory section before we start listing the tools to make it very clear the assistant is part of the service and not an independent tool.
+* Added more detail to the ADMS section.
+* These next two points may be left over from another review. First, I already have a few screenshots from the tools. Let me know if there needs to be more.
+* Second, I have 2 knowledge check questions already. Please clarify if there needs to be more, or if these are inadequate.
+
+## 4-exercise-assess-database
+
+Include details relating to the scenario in the introduction of the unit.
+		Move the installation of the Data Migration Assistant to this unit
+		Indent images so the numbering is correct
+		Highlight UI elements with bold text **bold text**
+		Include all the steps needed for the unit, including what/where to log on to. In this case the tool will need to run from the VM, so you'll need to include the steps to log in.
+		The steps around disabling service broker seem to be missing key details. Why do I not need this service, why is it not supported, are there other services that might not be supported? These are details that could be valuable putting in the previous unit.
+
+__Robert Cain - 2020-01-20__
+* Moved install details for DMA to top of the unit.
+* Indented images
+* I think I've captured all the UI elements in bold but Alison please double check me
+* Added the instructions to download and open the RDP file to access the VM.
+* The comment on details for the service broker seem a bit opposite of the other instructions to stick to only instructions, and keep explanations to a minimum. I understood these lessons were for the how, but not the why. 
+
+## 5-migration-with-downtime
+
+Include details relating to the scenario in the introduction of the unit.
+		Don't abbreviate service names
+		2-3 questions for unit quiz
+		Use this unit to discuss the details of what you'll be doing in the following unit. How does the process work, what things will you do, what steps will you take?
+
+__Robert Cain - 2020-01-03__
+
+* Added a second question to the quiz
+* Removed abbreviations
+* Updated the next unit details
+* Removed any references to performing migration with ADMA
+* Going to ask Allison for some graphics
+
+## 6-exercise-migrate-database-adma
+
+Don't use this process to migrate data. This unit should be omitted.
+
+__R Cain - 2019-12-30__
+
+* Per meeting today, this module will be retained. It will, however, be modified. References (such as the last slide) will be removed and we will only reference using the ADMA to generate and deploy the schema, but nothing about data.
+
+## 7-exercise-migrate-database-adms
+
+Rename without the acronym. Let me know when you have content that I can review.
+
+## 8-summary
+
+Don't abbreviate the service names.
+
+  __Allison Pond__
+
+* Can we tweak this summary to follow the steps Microsoft gave us for writing a summary? Those steps were 1-Restate the scenario/problem, 2-Remind them how they solved the problem, 3-Describe the experience without the product, 4-Describe the business impact of using the product to solve the problem)
+
+__Robert Cain - 2019-12-30__
+
+* It seems the text already reflects the comment Allison (above) suggested, so I think that change was already done.
+* I made the change to use full product name per Jason's review.
+* In keeping with the theme of the series, I removed the reference to doing a migration with the data assistant, and only mention the service.

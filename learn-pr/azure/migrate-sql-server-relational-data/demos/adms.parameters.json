@@ -1,0 +1,21 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+      "sourceWindowsAdminUserName": {
+          "value": "learner"
+      },
+      "sourceWindowsAdminPassword": {
+          "value": "SecureP@ssW0rd"
+      },
+      "sourceSqlAuthenticationPassword": {
+          "value": "SecureP@ssW0rd"
+      },
+      "targetSqlDbAdministratorLogin": {
+          "value": "learner"
+      },
+      "targetSqlDbAdministratorPassword": {
+          "value": "SecureP@ssW0rd"
+      }
+  }
+}
