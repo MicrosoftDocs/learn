@@ -25,7 +25,7 @@ quiz:
       explanation: "Role assignment isn't part of the custom role definition."
     - content: "Actions and DataActions operations that you can scope to the tenant level"
       isCorrect: false
-      explanation: "The scopes that can apply to an Azure resource are management group, subscription, resource group, and individual resource. Azure AD roles are at the tenant scope."
+      explanation: "The scopes that can apply to an Azure resource are subscription, resource group, and individual resource. Azure AD roles are at the tenant scope."
   - content: "What commands help you determine what operations to add to a custom role definition?"
     choices:
     - content: "Use 'az provider show' to find resource provider operations."
