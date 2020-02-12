@@ -1,20 +1,25 @@
-Threat modeling is an effective way to help secure your systems, applications, networks and services. Microsoft defines it as an engineering technique that identifies both potential threats and recommendations to help reduce risk and meet security objectives as early as possible in the development lifecycle. This technique helps you build graphical representations of systems, known as a data-flow diagrams, and gives you a framework to help fix security issues that could cost valuable customer trust, assets and engineering time.
+Threat modeling is an effective way to help secure your systems, applications, networks, and services. Microsoft defines it as an engineering technique that identifies potential threats and recommendations to help reduce risk and meet security objectives earlier in the development lifecycle. 
 
-Regardless of security expertise (although a basic understanding of security is recommended), threat modeling can be used by anyone who knows how the system works (or will work), and can be applied across any software delivery approach (e.g. Agile, Waterfall) or deployment cadence (e.g. hourly, monthly).
+You can use this technique to build graphical representations of systems, known as a data-flow diagrams. You can also rely on its framework to help fix security issues that could cost customer trust, data breaches, and resources.
 
-In this module, you'll explore the four high-level steps of threat modeling. We will study these terms in detail with each subsequent module.
+Anyone with a working knowledge of the system and a basic understanding of security can work with threat modeling. The technique can be applied across any:
+
+- Software delivery approach, such as Agile or Waterfall
+- Deployment cadence, such as hourly or monthly
+
+In this module, you'll explore the four high-level steps of threat modeling, which will be discussed in detail throughout the learning path.
 
 [!NOTE]
-To simplify the learning process, we will refer to systems, applications and services as "systems."
+This training path will refer to systems, applications, and services as "systems."
 
 ## Learning objectives
 
 In this module, you'll learn:
 
-- The importance of capturing requirements and assumptions to help create a data-flow diagram.
-- The framework that helps you find security issues in a system.
-- The security control categories that help you reduce or eliminate potential threats.
-- The importance of verifying assumptions, requirements and fixes prior to deployment.
+- The importance of capturing requirements and assumptions to help create a data-flow diagram
+- The framework that helps you find security issues in a system
+- The security control categories that help you reduce or eliminate potential threats
+- The importance of verifying assumptions, requirements, and fixes before deployment
 
 ## Prerequisites
 

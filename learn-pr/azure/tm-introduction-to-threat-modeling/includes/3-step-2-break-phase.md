@@ -1,3 +1,19 @@
-Threat modeling helps you focus on the right things and provides you with a framework to help generate potential threats and find ways to reduce or eliminate them. To achieve that, you must choose between identifying your attacker and their motives or systematically finding weaknesses in your system architecture. Microsoft product engineers are mostly focused on the system, whereas penetration testing teams look at both the system and its attacker.
+Threat modeling helps you focus on the right areas and provides you with a framework that generates potential threats and suggests strategies that help reduce or eliminate risk.
 
-Once you choose where to focus your time, you'll need to select a framework to help generate all the different ways to break your system. Microsoft traditionally uses STRIDE, which is comprised of six major threat categories (Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service and Elevation of Privilege) that provide an extensive, but not exhaustive, list of potential threats tied to each threat category.
+First, choose between:
+
+- Identifying your attacker and their motives, or 
+- Systematically finding weaknesses in your system
+
+Microsoft product engineers mostly focus on system weaknesses. Penetration testing teams focus on both.
+
+Next, select a framework to help generate all the different ways to break your system. Microsoft traditionally uses STRIDE, the acronym for the six main threat categories that provide an extensive, but not exhaustive, list of threats:
+
+| Category | Description |
+| ---------- | ------------------------------------------------------------ |
+| Spoofing | Pretending to be someone or something else |
+| Tampering | Changing data without authorization |
+| Repudiation | Claiming to not have done something |
+| Information Disclosure | Seeing data you're not supposed to see |
+| Denial of Service | Bringing your system down |
+|Elevation of Privilege| Having unauthorized access to data |

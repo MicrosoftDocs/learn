@@ -1,3 +1,10 @@
-At this phase, you need to capture system requirements and security assumptions in writing with as much context as possible. Examples include use-case scenarios, access control requirements, process descriptions and security assumptions from cloud providers, operating systems and first/third-party services. If you have a dedicated security team, schedule a white-boarding session with them (also known as a design review meeting) to go over the initial plans and general vision for the system.
+Capture system requirements and security assumptions in writing with as much context as possible. Examples include:
 
-Use the list to create your data-flow diagram, which is a graphical representation of your system that highlights the end-to-end data-flow, including trust zone changes and interactivity between different elements, such as human users, service endpoints and data stores. Microsoft engineering teams are required to submit data-flow diagrams as part of their security compliance requirements.
+- Use-case scenarios
+- Access control requirements
+- Process descriptions
+- Security assumptions from cloud providers, operating systems, internal and external services
+
+If you have a dedicated security team, schedule a white-boarding session with them to go over the initial plans and design. It can save you a considerable amount of time.
+
+Use the list to create your data-flow diagram, which is a graphical representation of your system that highlights the data-flow lifecycle as it passes trust zones and processes. Examples include human users, service endpoints, and data stores. Microsoft engineering teams are required to submit data-flow diagrams as part of their security compliance requirements.

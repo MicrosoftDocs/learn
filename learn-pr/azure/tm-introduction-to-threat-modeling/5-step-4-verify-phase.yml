@@ -1,5 +1,4 @@
 ### YamlMime:ModuleUnit
-
 uid: learn.tm-introduction-to-threat-modeling.5-step-4-verify-phase
 title: Step 4 - Verify Phase (Check Fixes and Assumptions)
 metadata:
@@ -18,12 +17,12 @@ quiz:
   questions:
   - content: "What happens at the Verify Phase?"
     choices:
-    - content: "List of applicable security controls to help reduce or eliminate risk is implemented in code"
+    - content: "You implement the list of applicable security controls that reduces or eliminates risk."
       isCorrect: false
-      explanation: "This is part of Step 3 - Fix Phase"
-    - content: "Code is reviewed manually before it is pushed to the staging branch for deployment"
+      explanation: "This task is part of Step 3 - Fix Phase."
+    - content: "Code is reviewed manually before being pushed to the staging branch for deployment."
       isCorrect: false
-      explanation: "This answer applies more to the operational side of things instead of the threat modeling process"
-    - content: "System is verified manually and/or automatically against previously generated threats to verify security controls reduced or eliminated risk"
+      explanation: "This answer applies more to the operational side of things instead of the threat modeling process."
+    - content: "System is verified manually or automatically against previously generated threats to verify security controls reduced or eliminated risk."
       isCorrect: true
-      explanation: "This phase is all about verifying fixes, assumptions and meeting requirements"
+      explanation: "This phase is all about verifying fixes, assumptions, and meeting requirements."

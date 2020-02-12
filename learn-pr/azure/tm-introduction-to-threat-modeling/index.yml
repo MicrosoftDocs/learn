@@ -1,5 +1,4 @@
 ### YamlMime:Module
-
 uid: learn.tm-introduction-to-threat-modeling
 metadata:
   title: Introduction to Threat Modeling
@@ -10,15 +9,15 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-threat-modeling
 title: Introduction to Threat Modeling
-summary: Threat modeling is an effective way to help secure your systems, applications, networks and services. Microsoft defines it as an engineering technique that identifies both potential threats and recommendations to help reduce risk and meet security objectives as early as possible in the development lifecycle. This technique helps you build graphical representations of systems, known as a data-flow diagrams, and gives you a framework to help fix security issues that could cost valuable customer trust, assets and engineering time.
+summary: Threat modeling is an effective way to help secure your systems, applications, networks, and services. Microsoft defines it as an engineering technique that identifies both potential threats and recommendations to help reduce or eliminate risk and meet security objectives as early as possible in the development lifecycle. This technique helps you build graphical representations of systems, known as a data-flow diagrams. It also provides you with a framework to help fix security issues that could cost valuable customer trust, assets, and engineering time.
 abstract: |
     In this module, you will:
-    - The importance of capturing requirements and assumptions to help create a data-flow diagram
+    - The importance of capturing requirements, and assumptions to help create a data-flow diagram
     - The framework that helps you find security issues in a system
     - The security control categories that help you reduce or eliminate potential threats
-    - The importance of verifying assumptions, requirements and fixes prior to deployment
+    - The importance of verifying assumptions, requirements, and fixes before deployment
 prerequisites: None
-iconUrl: http://via.placeholder.com/120x120
+iconUrl: /learn/achievements/generic-badge.svg
 ratingEnabled: false
 levels:
 - beginner
@@ -41,4 +40,4 @@ units:
 - learn.tm-introduction-to-threat-modeling.5-step-4-verify-phase
 - learn.tm-introduction-to-threat-modeling.6-summary
 badge:
-  uid: http://via.placeholder.com/120x120
+  uid: learn.tm-introduction-to-threat-modeling.badge
