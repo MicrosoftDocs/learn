@@ -10,7 +10,5 @@ metadata:
   ms.prod: learning-azure
 title: Exercise - Assess database with the Data Migration Assistant
 durationInMinutes: 10
-interactive: bash
-azureSandbox: true
 content: |
   [!include[](includes/4-exercise-assess-database.md)]
