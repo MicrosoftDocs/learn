@@ -33,4 +33,4 @@ products:
 units:
 - learn.create-web-app-with-refreshable-models.1-intro-to-customvision-ai
 badge:
-  uid: learn.create-computer-vision-service.badge
+  uid: learn.create-web-app-with-refreshable-models.badge
