@@ -112,7 +112,6 @@ Preparing an incident response plan is crucial for addressing new threats that c
 
 For more information about incident responses, see:
 
-* [Microsoft Incident Response Reference Guide](https://info.microsoft.com/INCIDENT-RESPONSE-REFERENCE-GUIDE.html)
 * [Using Azure Security Center for an incident response](https://docs.microsoft.com/azure/security-center/security-center-incident-response)
 * [Microsoft Incident Response and shared responsibility for cloud computing](https://azure.microsoft.com/blog/microsoft-incident-response-and-shared-responsibility-for-cloud-computing/)
 * [Microsoft Security Response Center](https://www.microsoft.com/msrc)
