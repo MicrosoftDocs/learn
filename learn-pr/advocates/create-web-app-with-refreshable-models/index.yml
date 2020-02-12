@@ -21,7 +21,7 @@ abstract: |
   - Build a GitHub Action to create a continuous delivery workflow
   - Swap the model assets for fresh assets to test the workflow
 prerequisites: None
-iconUrl: /learn/achievements/create-computer-vision-service-to-classify-images.svg
+iconUrl: /learn/achievements/create-web-app-with-refreshable-models.svg
 levels: 
 - beginner
 roles: 
