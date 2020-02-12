@@ -69,7 +69,7 @@ Define and publish a list of approved tools and their associated security checks
 
 For more information, see:
 
-* [Recommended Tools, Compilers and Options for x86, x64, and ARM processors](http://download.microsoft.com/download/6/3/A/63AFA3DF-BB84-4B38-8704-B27605B99DA7/Recommended%20Tools,%20Compilers%20and%20Options%20for%20x86,%20x64%20and%20ARM.pdf) (whitepaper)
+* [Recommended Tools, Compilers and Options for x86, x64, and ARM processors](https://download.microsoft.com/download/6/3/A/63AFA3DF-BB84-4B38-8704-B27605B99DA7/Recommended%20Tools,%20Compilers%20and%20Options%20for%20x86,%20x64%20and%20ARM.pdf) (whitepaper)
 * [SDL Resources](https://www.microsoft.com/securityengineering/sdl/resources)
 
 ### Perform Static Analysis Security Testing
