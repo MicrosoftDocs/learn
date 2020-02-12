@@ -2,49 +2,37 @@ In this exercise, you will use the Azure Data Migration Assistant to assess your
 
 ## Install the Azure Data Migration Assistant
 
-1. You'll need to install the Data Migration Assistant on your virtual machine, so begin by opening the [Azure Portal](https://portal.azure.com?azure-portal=true) if you don't already have it open. Then select the link to open up the **admsdemorg** resource group.
+You'll start by installing the Data Migration Assistant on your SQL Server.
+
+1. Open the [Azure portal](https://portal.azure.com?azure-portal=true) if you don't already have it open. 
+
+1. Select **Resource groups** then select the **admsdemorg** resource group you deployed.
 
 1. In the list of resources in the resource group, select the **admsdemovm** virtual machine.
 
 1. In the toolbar above the VM info, select **Connect**.
 
-    ![Connect to VM](../media/4-00a-connect-vm.jpg)
-
-1. In the pane that appears to the left, select the **Download RDP File** button and save it to your computer in a location of your choosing.
-
-    ![Connect to VM](../media/4-00b-rdp.jpg)
+1. In the **Connect to virtual machine** pane, select **Download RDP File** and save it to your computer in a location of your choosing.
 
 1. Select the RDP file to open it. Select the **Connect** button, and supply the credentials. Use the **windowsadmin** account and use the password you specified for this account.
 
-<!-- 1. Before you can download the Data Migration Assistant, you will want to disable the server's IE security setting or it will block the download. Since this is just a learning environment, you will be safe in doing so, but avoid doing this in production. Instead, download on another computer and copy up to your server. -->
+1. Once you are connected to the VM, open Internet Explorer and navigate to the [Azure Data Migration Assistant download page](https://www.microsoft.com/download/details.aspx?id=53595).
 
-<!-- 1. By default, the Server Manager should be open, but if you closed it, use the **Start** menu to open it.
-
-1. Select **Local Server** in the side bar.
-
-1. In the upper right, find the _IE Enhanced Security Configuration_ setting and select **On**.
-
-1. Change the setting to **Off** for Administrators. Select **OK** to close. -->
-
-1. Open Internet Explorer and navigate to the [Azure Data Migration Assistant download page](https://www.microsoft.com/download/details.aspx?id=53595). 
-
-1. Download and install the migration assistant.
+1. Select **Download** and install the migration assistant.
 
 ## Select the project type
 
-1. Open the Data Migration Assistant.
+1. Select the Microsoft Data Migration Assistant on the desktop to start the assistant.
 
 1. Select **+** in the left menu to begin a new assessment.
 
     ![New Assessment](../media/4-01-new-assessment.png)
 
-1. In the blade that opens, make sure the Project type is set to **Assessment**.
+1. Select a **Project type** of **Assessment**.
 
 1. For the Project name, enter **Social Assessment**.
 
-1. For this particular project, you can take the defaults for the remaining fields. Assessment type will be **Database Engine**, Source server type will be **SQL Server**, and Target server type will be **Azure SQL Database**.
-
-1. When done, select **Create**.
+1. Leave the remaining fields at their default values and select **Create**.
 
     ![Project Type](../media/4-02-project-type.png)
 
