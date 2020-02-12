@@ -27,7 +27,7 @@ Azure AD provides services such as:
 - **Single-Sign-On (SSO).** SSO enables users to remember only one ID and one password to access multiple applications. A single identity is tied to a user, simplifying the security model. As users change roles or leave an organization, access modifications are tied to that identity, greatly reducing the effort needed to change or disable accounts.
 - **Application management.** You can manage your cloud and on-premises apps using Azure AD Application Proxy, SSO, the My apps portal (also referred to as Access panel), and SaaS apps.
 - **Business to business (B2B) identity services.** Manage your guest users and external partners while maintaining control over your own corporate data
-Business-to-Customer (B2C) identity services. Customize and control how users sign up, sign in, and manage their profiles when using your apps with services.
+- **Business-to-Customer (B2C) identity services.** Customize and control how users sign up, sign in, and manage their profiles when using your apps with services.
 - **Device Management.** Manage how your cloud or on-premises devices access your corporate data.
 
 Let's explore a few of these in more detail.
