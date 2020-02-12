@@ -16,7 +16,7 @@ To learn more about our perspective on responsible AI as well as the impact of A
 * [Download PDF](https://aka.ms/AA7a3jb) of Governance in action at Microsoft.
 * [Download PDF](https://aka.ms/AA629xl) of Establishing responsible design principles in AI engineering to share with others.
 * [Download PDF](https://aka.ms/AA629xn) of Engaging externally: AI for Good to share with others.
-* [Download PDF](https://aka.ms/AA7a8sf) of Putting principles into practice: how we approach responsible AI at Microsoft.
+* [Download PDF](https://aka.ms/AA7anff) of Putting principles into practice: how we approach responsible AI at Microsoft.
 
 Below are some additional resources your organization can leverage when developing your own governance model for responsible AI.
 
