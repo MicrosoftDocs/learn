@@ -1,10 +1,10 @@
-One of the greatest risks of Conversational AI right now is that the technology simply doesn’t work very well — yet. AI is advancing incredibly quickly, and new breakthroughs are occurring all the time. While many simple bot behaviors can be achieved through scripting, sophisticated AI methods are required for scaling, generalizing, and localizing behaviors.
+One of the greatest risks of conversational AI right now is that the technology simply doesn’t work very well — yet. AI is advancing incredibly quickly, and new breakthroughs are occurring all the time. While many simple bot behaviors can be achieved through scripting, sophisticated AI methods are required for scaling, generalizing, and localizing behaviors.
 
-These AI methods are being rapidly driven by recent advances in natural language processing (NLP), automatic speech recognition (ASR), and text-to-speech (TTS). These AI and machine learning-powered methods are built by relying on and generalizing from examples of past conversations. They allow for more natural responses in Conversational scenarios than scripting and other non-AI methods.
+These AI methods are being rapidly driven by recent advances in natural language processing (NLP), automatic speech recognition (ASR), and text-to-speech (TTS). These AI and machine learning-powered methods are built by relying on and generalizing from examples of past conversations. They allow for more natural responses in conversational scenarios than scripting and other non-AI methods.
 
 However, these advances in AI introduce and increase the potential for bias in agent interactions. Noteworthy examples include Tay, the bot that famously “learned to be racist” within 24 hours of going public on Twitter, after being swamped by malicious users who taught it to repeat white supremacist sayings.
 
-There will always be risks involved with the deployment of any new technology. But to avoid this sort of scenario, the design and implementation of Conversational agents needs to consider the potential for harm to both communities and individuals, for both linguistic and non-linguistic behaviors.
+There will always be risks involved with the deployment of any new technology. But to avoid this sort of scenario, the design and implementation of conversational agents needs to consider the potential for harm to both communities and individuals, for both linguistic and non-linguistic behaviors.
 
 ## Functional risks
 
@@ -31,7 +31,7 @@ A bot might reveal personal information that was accidentally obtained from trai
 
 ## Social risks
 
-Because Conversational AI bots are designed to interact socially with human users, the desired behavior for a bot can be outlined in similar ways to human behavior. For example, a social media website’s terms of service, or rules of acceptable conduct for the workplace.
+Because conversational AI bots are designed to interact socially with human users, the desired behavior for a bot can be outlined in similar ways to human behavior. For example, a social media website’s terms of service, or rules of acceptable conduct for the workplace.
 
 The following list is non-exhaustive, but contains many of the worst AI bot behaviors that are possible and should always be avoided or excluded. This may seem obvious, but it’s an important consideration. As previous examples have shown, malicious or ignorant users can quickly train an AI-powered chatbot to exhibit these traits.
 

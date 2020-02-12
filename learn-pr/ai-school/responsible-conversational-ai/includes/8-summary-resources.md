@@ -1,4 +1,4 @@
-With modern software development tools, it's easier than ever to develop Conversational AI bots. Get the most out of your efforts when working with AI by returning to the guidelines we have covered. Remember to:
+With modern software development tools, it's easier than ever to develop conversational AI bots. Get the most out of your efforts when working with AI by returning to the guidelines we have covered. Remember to:
 
 1. Make sure you understand why your bot exists.
 2. Make sure your users know they’re working with a bot.
@@ -9,7 +9,7 @@ With modern software development tools, it's easier than ever to develop Convers
 
 Now that you have reviewed this module, you should be able to:
 
-* Identify the different types of Conversational AI bots and common stakeholders
+* Identify the different types of conversational AI bots and common stakeholders
 * Articulate the benefits of making bots transparent and trustworthy
 * Discover guidelines to ensure bots are reliable and accessible
 
@@ -17,7 +17,7 @@ Now that you have reviewed this module, you should be able to:
 
 [!include[](../../../includes/open-link-in-new-tab-note.md)]
 
-Read Lili Cheng's publication [Responsible Bots: Ten Guidelines for Developers of Conversational AI](https://www.microsoft.com/research/publication/responsible-bots/).
+Read Lili Cheng's publication [Responsible Bots: Ten Guidelines for Developers of conversational AI](https://www.microsoft.com/research/publication/responsible-bots/).
 
 Check out [Microsoft Inclusive Design toolkit](https://download.microsoft.com/download/b/0/d/b0d4bf87-09ce-4417-8f28-d60703d672ed/inclusive_toolkit_manual_final.pdf) to learn how to design bots that recognize exclusion, learn from diversity, and solve for ability constraints.
 

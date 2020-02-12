@@ -1,4 +1,4 @@
-There are, roughly, four different types of Conversational AI bots. Most bots will actually mix these characteristics in any given implementation, as all four are required for a reasonably realistic simulacra of human conversation. A bot that can’t engage in light conversation will come off as, well, robotic. 
+There are, roughly, four different types of conversational AI bots. Most bots will actually mix these characteristics in any given implementation, as all four are required for a reasonably realistic simulacra of human conversation. A bot that can’t engage in light conversation will come off as, well, robotic. 
 
 1. The first category is casual conversation engagement. This sort of bot’s purpose is to facilitate __social engagement__ - either with the bot itself, or other users. User inputs would look something like this:
   
