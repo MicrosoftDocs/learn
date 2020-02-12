@@ -1,6 +1,9 @@
-In this exercise, you'll lay the groundwork for using the Azure Data Migration Assistant. You'll use the Azure Cloud Shell to deploy a template that will create resources you'll need to perform the exercises, including a virtual machine, an Azure SQL Database, and other supporting resources.
+In this exercise, you'll lay the groundwork for using the Azure Data Migration Assistant. You'll use the Azure portal to deploy a template that will create resources you'll need to perform the exercises, including a virtual machine, an Azure SQL Database, and other supporting resources.
 
-[!INCLUDE [azure-exercise-subscription-prerequisite](../../../includes/azure-exercise-subscription-prerequisite.md)]
+<!-- [!INCLUDE [azure-exercise-subscription-prerequisite](../../../includes/azure-exercise-subscription-prerequisite.md)] -->
+
+> [!IMPORTANT]
+> [!INCLUDE [azure-subscription-prerequisite](../../../includes/azure-subscription-prerequisite.md)]
 
 ## Deploy the template
 
