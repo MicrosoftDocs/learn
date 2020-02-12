@@ -4,4 +4,25 @@ Imagine how much effort would have been required without the tools provided. The
 
 Data migration was also made easy thanks to the Azure Data Migration Service. In this module, you learned how to migrate your data, and you learned about the pros and cons of offline and online migrations. Using the provided tools made migrating your database to Azure SQL easy and straightforward with minimum impact on your organization.
 
-As a reminder, be sure to delete the resources you created during this lesson to avoid any unwanted costs. The simplest way to do this is to delete the resource group. Just go to your Azure portal, click on **Resource Groups**, then in the list of groups, click **admsdemorg**. Once the page opens for this group, click the **Delete resource group** button toward the top of the page. A pane will appear to the side asking you to enter the resource group name to confirm. Do so, then click the **Delete** button located at the bottom of the pane.
+## Clean up
+
+Be sure to delete the resources you created during this lesson to avoid any unwanted costs. 
+
+1. Open the [Azure Portal](https://portal.azure.com?azure-portal=true)
+
+1. Select **Resource Groups**.
+
+1. In the list of groups, select **admsdemorg**.
+
+1. In the pane for the resource group select **Delete resource group** button at the top of the pane. 
+
+1. Enter the resource group name to confirm, then select **Delete**.
+
+## Learn more
+
+To learn more about the Azure SQL Database and the Azure Data Migration Service, visit the following articles:
+
+- [What is Azure Database Migration Service?](https://docs.microsoft.com/azure/dms/dms-overview)
+- [SQL Server database migration to Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-single-database-migrate)
+- [What is the Azure SQL Database service?](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview)
+- [Azure Database Migration Guide](https://datamigration.microsoft.com/)

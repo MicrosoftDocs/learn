@@ -26,6 +26,8 @@ In this exercise, you'll lay the groundwork for using the Azure Data Migration A
 
 1. Select **I agree to the terms and conditions stated above** and select **Purchase**.
 
-When finished, you can navigate to your Azure Portal and open the newly created **admsdemorg** Resource Group. You should see something similar to the image below. Note that not all names will match exactly, as some names are dynamically generated at creation time.
+Make note of the passwords you used for the accounts, you will use them later. This deployment will take 10 to 15 minutes. While this is in progress, continue to the next unit to learn about the migration process.
 
-![Migration Workflow](../media/2-01-results.png)
+<!-- When finished, you can navigate to your Azure Portal and open the newly created **admsdemorg** Resource Group. You should see something similar to the image below. Note that not all names will match exactly, as some names are dynamically generated at creation time.
+
+![Migration Workflow](../media/2-01-results.png) -->
