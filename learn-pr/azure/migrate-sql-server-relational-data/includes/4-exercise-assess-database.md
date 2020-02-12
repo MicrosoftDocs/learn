@@ -16,17 +16,17 @@ In this exercise, you will use the Azure Data Migration Assistant to assess your
 
 1. Select the RDP file to open it. Select the **Connect** button, and supply the credentials. Use the **windowsadmin** account and use the password you specified for this account.
 
-1. Before you can download the Data Migration Assistant, you will want to disable the server's IE security setting or it will block the download. Since this is just a learning environment, you will be safe in doing so, but avoid doing this in production. Instead, download on another computer and copy up to your server.
+<!-- 1. Before you can download the Data Migration Assistant, you will want to disable the server's IE security setting or it will block the download. Since this is just a learning environment, you will be safe in doing so, but avoid doing this in production. Instead, download on another computer and copy up to your server. -->
 
-1. By default, the Server Manager should be open, but if you closed it, use the **Start** menu to open it.
+<!-- 1. By default, the Server Manager should be open, but if you closed it, use the **Start** menu to open it.
 
 1. Select **Local Server** in the side bar.
 
 1. In the upper right, find the _IE Enhanced Security Configuration_ setting and select **On**.
 
-1. Change the setting to **Off** for Administrators. Select **OK** to close.
+1. Change the setting to **Off** for Administrators. Select **OK** to close. -->
 
-1. Open Internet Explorer and go to [Azure Data Migration Assistant download page](https://www.microsoft.com/download/details.aspx?id=53595).
+1. Open Internet Explorer and navigate to the [Azure Data Migration Assistant download page](https://www.microsoft.com/download/details.aspx?id=53595). 
 
 1. Download and install the migration assistant.
 
