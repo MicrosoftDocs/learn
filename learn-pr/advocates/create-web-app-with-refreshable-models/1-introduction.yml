@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.advocates.web-app-with-refreshable-machine-learning-model.1-introduction
+uid: learn.advocates.build-web-app-with-refreshable-models.1-introduction
 metadata:
   title: Introduction
   description: Create a web app consuming a custom vision machine learning model and build it with GitHub Actions.
