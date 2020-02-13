@@ -38,9 +38,9 @@ The core of data migration in Azure is the **Azure Data Migration Service**. It 
 
 ## Azure Data Migration Assistant
 
-![Fixed Issues](../media/4-09-fixed-issues.png)
-
 The Azure Data Migration Assistant is a client-side tool that you can install on a Windows compatible workstation or server. It has two major functions in the migration of our companies social database to the Azure SQL Database platform.
+
+![Fixed Issues](../media/4-09-fixed-issues.png)
 
 First, it assesses your existing database and identifies any incompatibilities between your existing database and the Azure SQL platform. It then generates a report of the things you will need to fix before you will be able to migrate. As you make changes, you can rerun the Data Migration Assistant to generate an updated report of changes that remain to be made. This allows you to not only track your progress, but catch any new issues that may have been inadvertently introduced during your coding phase.
 
@@ -52,14 +52,14 @@ As an example, let's say you are creating a staging database in Azure SQL Databa
 
 ## Azure Data Migration Service
 
-![Migration Workflow](../media/3-03-adms.png)
-
 Once you have migrated your database schema using the Data Migration Assistant or created a target database manually, you are ready to move your data. To do that, you'll be using the Azure Data Migration Service.
 
 The Azure Data Migration Service is a fully managed Azure service that provides automated, seamless data migrations from multiple sources into the Azure data platforms.
+
+![Migration Workflow](../media/3-03-adms.png)
 
 The Data Migration Service runs on the Azure platform, as opposed to being a client application like the Data Migration Assistant. It is capable of moving large amounts of data quickly and is not dependent upon installation of a client application. The Data Migration Service can operate in two modes, offline and online.
 
 In offline mode, your source database is put in "offline" mode, in that no more changes may be made to it. Data is migrated, then your various applications can begin using the new Azure SQL Database.
 
-In online mode, your source database may remain in use while the bulk of the data is migrated. At the very end of the migration, you will then take the source system offline momentarily while any final changes to the source are synced to the new Azure SQL Database. At this point, your applications can cut over to use the new Azure SQL Database.
+In online mode, your source database may remain in use while the bulk of the data is migrated. At the end of the migration, you will then take the source system offline momentarily while any final changes to the source are synced to the new Azure SQL Database. At this point, your applications can cut over to use the new Azure SQL Database.
