@@ -1,6 +1,6 @@
 You can read data directly from a dataset, or you can pass a dataset as a named *input* to a script configuration or estimator.
 
-## Working with a Dataset Directly
+## Working with a dataset directly
 
 If you have a reference to a dataset, you can access its contents directly.
 
@@ -18,7 +18,7 @@ for file_path in file_ds.to_path():
     print(file_path)
 ```
 
-## Passing a Dataset to an Experiment Script
+## Passing a dataset to an experiment script
 
 When you need to access a dataset in an experiment script, you can pass the dataset as an *input* to a **ScriptRunConfig** or an **Estimator**. For example, the following code passes a tabular dataset to an estimator:
 
