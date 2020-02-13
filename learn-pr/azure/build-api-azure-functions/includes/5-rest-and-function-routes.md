@@ -17,6 +17,8 @@ Representational State Transfer, or REST, is an architectural pattern that provi
 
 When you load a web page in the browser, the browser makes an HTTP request. That request is called a "GET". It's just that the browser does that automatically. All _you_ ever see is the URL and the page that gets returned.
 
+![A diagram showing a request from the browser to the server and the reponse coming back](../media/request-response.svg)
+
 When you're calling an API, you can control the _method_ that is used to call a URL. The method is called, wait for it, the "HTTP request method". In a REST architecture, these HTTP request methods are used to define the action that you want to take on a resource. REST says that HTTP request methods match up to what a service does.
 
 | Service Action     | HTTP Request Method |
