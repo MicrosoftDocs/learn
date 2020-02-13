@@ -7,7 +7,7 @@ In this exercise, you will make use of the Speech Service you created earlier.  
 
     [!NOTE] At this time, Safari is not a supported browser for the preview of VS Code Online
 
-2. You will require an Azure subscription to create an environment for Visual Studio Code Online
+1. You will require an Azure subscription to create an environment for Visual Studio Code Online
 1. Select the **Get started** button.
 1. Sign in using your Microsoft Account that is linked to your Azure subscription
 1. If this is the first time you have used Visual Studio Code online, you will be required to create a new plan, which should be selected in the drop down at the top of the page.
@@ -38,7 +38,7 @@ In this exercise, you will make use of the Speech Service you created earlier.  
 
     [!NOTE] At this time, Safari is not a supported browser for the preview of VS Code Online
 
-2. You will require an Azure subscription to create an environment for Visual Studio Code Online
+1. You will require an Azure subscription to create an environment for Visual Studio Code Online
 1. Select the **Get started** button.
 1. Sign in using your Microsoft Account that is linked to your Azure subscription
 1. If this is the first time you have used Visual Studio Code online, you will be required to create a new plan, which should be selected in the drop down at the top of the page.
@@ -128,7 +128,7 @@ In this exercise, you will make use of the Speech Service you created earlier.  
     }
 
     ```
-22. In the terminal window, type the following command ```dotnet add package Microsoft.CognitiveServices.Speech``` and press Enter
+1. In the terminal window, type the following command ```dotnet add package Microsoft.CognitiveServices.Speech``` and press Enter
 1. In the terminal windows, type the following command to also add the Audio package, ``` dotnet add package Microsoft.CognitiveServices.Speech.Audio``` and press Enter
 1. VS installs the package for use with the AudioConfig class that will be used in the code
 1. Include the package in Program.cs by entering the following using statement ```using Microsoft.CognitiveServices.Speech.Audio;```
