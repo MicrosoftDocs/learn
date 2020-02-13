@@ -44,4 +44,4 @@ Azure requires you to create the LUIS app in the same geographic location where 
 1. Give your LUIS app a description so it's clear what the app's purpose is.
 1. Select **Done**. 
 
-The newly created app will show the **Intents** page with a single intent named **None**.
+The newly created app will show the **Intents** page with a single intent named **None**. 
