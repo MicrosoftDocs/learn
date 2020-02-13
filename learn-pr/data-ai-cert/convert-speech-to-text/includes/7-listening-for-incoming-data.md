@@ -14,61 +14,61 @@ In order to test this scenario, the online environment will create issues with a
 1. The necessary package will be added to your project and is required to access the Speech SDK
 1. Paste the following code into Program.cs, replacing the existing code
 
-```csharp
-//
-// Copyright (c) Microsoft. All rights reserved.
-// Licensed under the MIT license. See LICENSE.md file in the project root for full license information.
-//
+    ```csharp
+    //
+    // Copyright (c) Microsoft. All rights reserved.
+    // Licensed under the MIT license. See LICENSE.md file in the project root for full license information.
+    //
 
-using System;
-using System.Threading.Tasks;
-using Microsoft.CognitiveServices.Speech;
+    using System;
+    using System.Threading.Tasks;
+    using Microsoft.CognitiveServices.Speech;
 
-namespace helloworld
-{
-    class Program
+    namespace helloworld
     {
-        public static async Task RecognizeSpeechAsync()
+        class Program
         {
-            var config = SpeechConfig.FromSubscription("YourSubscriptionKey", "YourServiceRegion");
-
-            using (var recognizer = new SpeechRecognizer(config))
+            public static async Task RecognizeSpeechAsync()
             {
-                var result = await recognizer.RecognizeOnceAsync();
+                var config = SpeechConfig.FromSubscription("YourSubscriptionKey", "YourServiceRegion");
 
-                if (result.Reason == ResultReason.RecognizedSpeech)
+                using (var recognizer = new SpeechRecognizer(config))
                 {
-                    Console.WriteLine($"We recognized: {result.Text}");
-                }
-                else if (result.Reason == ResultReason.NoMatch)
-                {
-                    Console.WriteLine($"NOMATCH: Speech could not be recognized.");
-                }
-                else if (result.Reason == ResultReason.Canceled)
-                {
-                    var cancellation = CancellationDetails.FromResult(result);
-                    Console.WriteLine($"CANCELED: Reason={cancellation.Reason}");
+                    var result = await recognizer.RecognizeOnceAsync();
 
-                    if (cancellation.Reason == CancellationReason.Error)
+                    if (result.Reason == ResultReason.RecognizedSpeech)
                     {
-                        Console.WriteLine($"CANCELED: ErrorCode={cancellation.ErrorCode}");
-                        Console.WriteLine($"CANCELED: ErrorDetails={cancellation.ErrorDetails}");
-                        Console.WriteLine($"CANCELED: Did you update the subscription info?");
+                        Console.WriteLine($"We recognized: {result.Text}");
+                    }
+                    else if (result.Reason == ResultReason.NoMatch)
+                    {
+                        Console.WriteLine($"NOMATCH: Speech could not be recognized.");
+                    }
+                    else if (result.Reason == ResultReason.Canceled)
+                    {
+                        var cancellation = CancellationDetails.FromResult(result);
+                        Console.WriteLine($"CANCELED: Reason={cancellation.Reason}");
+
+                        if (cancellation.Reason == CancellationReason.Error)
+                        {
+                            Console.WriteLine($"CANCELED: ErrorCode={cancellation.ErrorCode}");
+                            Console.WriteLine($"CANCELED: ErrorDetails={cancellation.ErrorDetails}");
+                            Console.WriteLine($"CANCELED: Did you update the subscription info?");
+                        }
                     }
                 }
             }
-        }
 
-        static void Main()
-        {
-            Console.WriteLine("Begin speaking....");
-            RecognizeSpeechAsync().Wait();
-            Console.WriteLine("Please press <Return> to continue.");
-            Console.ReadLine();
+            static void Main()
+            {
+                Console.WriteLine("Begin speaking....");
+                RecognizeSpeechAsync().Wait();
+                Console.WriteLine("Please press <Return> to continue.");
+                Console.ReadLine();
+            }
         }
     }
-}
-```
+    ```
 
 1. Replace **"YourSubscriptionKey"** with the key from your Speech Service you created in this module
 1. Replace **"YourServiceRegion"** with the region in which you created your Speech Service, such as *westus*.
