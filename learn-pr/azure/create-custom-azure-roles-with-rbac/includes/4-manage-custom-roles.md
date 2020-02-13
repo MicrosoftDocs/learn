@@ -4,7 +4,7 @@ In this unit, you'll learn who can manage custom Azure roles and how.
 
 Generally, administrators with the Owner or User Access Administrator roles have permissions to create and manage custom roles. By default, those roles have the Microsoft.Authorization/roleDefinitions/write permission on all role assignment scopes. That permission is required to create, delete, or update custom roles.
 
-The role assignment scopes are defined in the custom role definition under **AssignableScopes**. As discussed in unit 2, the **AssignableScopes**  could be one or more management groups, subscriptions, resource groups, or resources.
+The role assignment scopes are defined in the custom role definition under **AssignableScopes**. As discussed in unit 2, the **AssignableScopes**  could be one or more subscriptions, resource groups, or resources.
 
 The following table lists the permission you'd need to create, delete, update, or view custom roles. To manage custom roles, you'd need to be assigned to a role that has the related **Actions** and **AssignableScopes** in the role definition.
 
@@ -16,17 +16,7 @@ Task | Actions | Description
 
 ## Create custom roles
 
-In unit 3, you created a custom role by using Azure CLI. You can also create a custom role by using the Azure portal or Azure PowerShell.
-
-In the Azure portal, you'd go to the management group, subscription, resource group, or resource you want the custom role scope to apply to. Then go to **Access control (IAM)** and select **Add** > **Add custom role (preview)**.
-
-![Screenshot that shows Add custom role option under Add button](../media/4-add-custom-role-portal.png)
-
-You can choose to clone an existing role or start from scratch.
-
-![Screenshot of clone role radio button selected and Virtual Machine Contributor as role to clone ](../media/4-clone-role.png)
-
-With either selection, you can edit the permissions, scopes, and the resulting JSON.
+In unit 3, you created a custom role by using Azure CLI. You can also create a custom role by using the Azure PowerShell.
 
 The steps involved to create a role by using Azure PowerShell are similar to what we covered in unit 2 and 3. After you defined the custom role in a JSON file, you used the following command in Azure CLI to create the custom role:
 
@@ -109,7 +99,7 @@ You need the custom role you created in unit 3 for the exercises in the next uni
 ### Remove role assignments
 If you decide you no longer need the custom role, you need to remove the role assignments before you can delete the role.
 
-In the Azure portal, you can remove assignments by going to the management group, subscription, resource group, or resource the custom role's scope applies to. Then go to **Access control (IAM)** > **Role assignments**. Filter by the role name, select all the users assigned to the role, and select **Remove**.
+In the Azure portal, you can remove assignments by going to the subscription, resource group, or resource the custom role's scope applies to. Then go to **Access control (IAM)** > **Role assignments**. Filter by the role name, select all the users assigned to the role, and select **Remove**.
 
 In Azure CLI, you use the following command with the name of the custom role.
 
@@ -129,7 +119,7 @@ ObjectID is the Azure AD ObjectId of the user, group, or service principal.
 
 You can delete a custom role by using the Azure portal, Azure CLI, or Azure PowerShell.
 
-In the Azure portal, you'd go to the management group, subscription, resource group, or resource the custom role's scope applies to. Then go to **Access control (IAM)** > **Roles**. To find the role, select **Type** > **CustomRole**. 
+In the Azure portal, you'd go to the subscription, resource group, or resource the custom role's scope applies to. Then go to **Access control (IAM)** > **Roles**. To find the role, select **Type** > **CustomRole**. 
 
 ![Screenshot that shows custom roles selected from drop-down list](../media/5-custom-roles.png)
 
