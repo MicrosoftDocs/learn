@@ -23,7 +23,7 @@ Instead of specifying the name of the compute target, you can specify a **Comput
 from azureml.core import Environment, Estimator
 from azureml.core.compute import ComputeTarget
 
-compute_name = "aml-cluster"
+compute_name = 'aml-cluster'
 
 training_cluster = ComputeTarget(workspace=ws, name=compute_name)
 
