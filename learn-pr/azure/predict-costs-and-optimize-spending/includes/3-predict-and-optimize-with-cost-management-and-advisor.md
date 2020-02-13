@@ -21,14 +21,16 @@ Let's take a look at where you can find Azure Advisor in the portal.
 
 1. Sign into the [Azure portal](https://portal.azure.com?azure-portal=true) using your Microsoft account. 
 
-1. Click on **All Services**, and in the **Management + governance** category, you will see **Advisor**. You can also type `Advisor` in the filter box to filter on just that service.
+1. Expand the left-hand navigation from the top-left menu and click on **All Services**.
+
+1. Click on the **Management + governance** category and find **Advisor**. You can also type `Advisor` in the services filter box to filter on just that name.
 
 1. Click on Advisor, and you'll be taken to the Advisor recommendations dashboard where you can see all the recommendations for your subscription. You'll see a box for each category of recommendations.
 
 > [!NOTE]
 > You might not have any recommendations on cost in Advisor. This could be because assessments have not yet completed or simply because Advisor has no recommendations.
 
-![Screenshot of the Azure portal showing the Advisor pane with four category boxes for Advisor recommendations: high availability, security, performance, and cost.](../media/3-advisor-recommendations.png)
+![Screenshot of the Azure portal showing the Advisor pane with four category boxes for Advisor recommendations: high availability, security, performance, operational excellence, and cost.](../media/3-advisor-recommendations.png)
 
 Clicking on the **Cost** box will take you to detailed recommendations where you can see the recommendations that Advisor has.
 
