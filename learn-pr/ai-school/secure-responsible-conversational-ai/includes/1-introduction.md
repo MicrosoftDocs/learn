@@ -2,9 +2,9 @@ Conversational AI bots often have diverse requirements. For example, you may nee
 
 Suppose you work at a healthcare company, and you want to develop a bot for patients to ask questions they don't feel comfortable discussing with a doctor. You have ethical and legal obligations to keep patient information secret, and to not give out dangerous healthcare advice. A patient provides the bot with information that gives a high probability of a serious infection. While designing this healthcare bot, you must decide how to flag similar situations that must be reviewed by a qualified healthcare professional, while keeping patient data private and secure.
 
-To help, Microsoft has created special guidelines for the development of responsible Conversational AI.
+To help, Microsoft has created special guidelines for the development of responsible conversational AI.
 
-This module reviews the Microsoft guidelines for safe and fair development of responsible Conversational AI. You will review guidelines and see how you can keep users trust when your bot encounters difficult situations.
+This module reviews the Microsoft guidelines for safe and fair development of responsible conversational AI. You will review guidelines and see how you can keep users trust when your bot encounters difficult situations.
 
 You will then review how to ensure your bot is diverse, and actions you can take to prevent unintended consequences.
 
@@ -20,4 +20,4 @@ In this module, you will:
 
 None.
 
-Let’s explore the Microsoft guidelines that will help guide you to build fair and secure Conversational bots.
+Let’s explore the Microsoft guidelines that will help guide you to build fair and secure conversational bots.
