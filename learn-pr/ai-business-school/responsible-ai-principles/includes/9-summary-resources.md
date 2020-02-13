@@ -72,6 +72,7 @@ To learn more about our perspective on responsible AI as well as the impact of A
 
 * [Download PDF](https://aka.ms/AA62hp7) of Implications of responsible AI - Practical guide to share with others.
 * [Download PDF](https://aka.ms/AA629xb) of Responsible AI - Identify guiding principles to share with others.
+* [Download PDF](https://aka.ms/AA7a8sf) of Responsible AI - State Farm case study.
 
 ## References
 
