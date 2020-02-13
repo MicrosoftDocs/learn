@@ -22,7 +22,7 @@ Therefore, it is important to select the correct cluster type to meet the busine
 
 **Apache Ambari** - Facilitates management and monitoring of an Apache Hadoop cluster  
 
-**Apache Oozie** - A workflow scheduler system to manage Apache Hadoop jobs.  
+**Apache Oozie** - A workflow scheduler system to manage Apache Hadoop jobs
 
 **Apache Hadoop YARN** – Manages resource management and job scheduling/monitoring  
 
@@ -34,7 +34,7 @@ Therefore, it is important to select the correct cluster type to meet the busine
 
 **Apache Tez** - An application framework for processing data  
 
-**Apache Hive** - Facilitates managing large datasets residing in distributed storage using SQL.  
+**Apache Hive** - Facilitates managing large datasets residing in distributed storage using SQL
 
 ## Data analysis  
 
