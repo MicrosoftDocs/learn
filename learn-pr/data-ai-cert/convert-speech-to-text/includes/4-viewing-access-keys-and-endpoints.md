@@ -3,7 +3,7 @@ To access your Speech Service from an application, you will need to get two piec
 - A *subscription key* that's passed with every request to authenticate the call.
 - The *endpoint* that exposes your service on the network.
 
-You will need the subscription key when using the Speech SDK or the REST APIs but the endpiont will only be required for the REST API access.   Using the Speech SDK in an application uses the key, but also requires a region.  You will see the use of the key and region information in the exercise later in the module.
+You will need the subscription key when using the Speech SDK or the REST APIs but the endpoint will only be required for the REST API access.   Using the Speech SDK in an application uses the key, but also requires a region.  You will see the use of the key and region information in the exercise later in the module.
 
 ## View the subscription keys and endpoint
 
