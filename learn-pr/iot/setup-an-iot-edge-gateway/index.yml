@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.iot.setup-an-iot-edge-gateway.introduction
+metadata:
+  title: Setup an IoT Edge Gateway
+  description: This module is theoretical and will walk you through how an IoT Edge device can be used as a gateway.
+  ms.date: 02/12/2020
+  author: PeterTurcan
+  ms.author: pdecarlo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Setup an IoT Edge Gateway
+summary: >
+  This module is theoretical and will walk you through how an IoT Edge device can be used as a gateway.
+abstract: | 
+  In this module, you will:
+  - Create an Azure IoT Central custom app, using the IoT Central portal
+  - Create a device template for a custom device, using the IoT Central portal
+  - Create a programming project to simulate a refrigerated truck, with routes selected by Azure Maps
+  - Monitor and command the simulated truck, from an IoT Central dashboard
+prerequisites: | 
+  - An introductory knowledge of the purpose of Azure IoT
+  -	Ability to navigate Azure IoT portal 
+  -	Ability to use Node.js, or C#, at the beginner level 
+  -	Experience using Visual Studio, or Visual Studio Code, at the beginner level 
+  - Must have, or be able to open, an Azure Maps account 
+### iconUrl: /learn/achievements/generic-badge.svg
+### iconUrl: /learn/achievements/iot/iot-hub-conveyor-belt-vibration-detection.svg
+iconUrl: /learn/achievements/iot/iot-central-refrigerated-truck-module.svg
+### hidden: true
+ratingEnabled: true
+levels:
+- advanced
+roles:
+- developer
+products:
+- azure-iot-edge
+units:
+- learn.iot.create-your-first-iot-central-app.introduction
+- learn.iot.create-your-first-iot-central-app.summary
+badge:
+###  uid: learn.iot.iot-test.badge
+  uid: learn.iot.iot-central-refrigerated-truck-module.badge

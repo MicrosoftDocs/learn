@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.iot.setup-an-iot-edge-gateway.3-generate-and-configure-iot-edge-device-ca-certificates
+metadata:
+  title: Generate and Configure IoT Edge Device CA Certificates
+  description: Generate and Configure IoT Edge Device CA Certificates
+  ms.date: 02/12/2020
+  author: PeterTurcan
+  ms.author: pdecarlo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Generate and Configure IoT Edge Device CA Certificates
+# azureSandbox: true
+durationInMinutes: 20
+content: |
+  [!include[](includes/2-deploy-an-azure-iot-edge-enabled-linux-vm-as-an-iot-edge-device.md)]
