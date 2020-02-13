@@ -1,4 +1,4 @@
-Before you can begin performing your speech-to-text translation, you need to create an Azure Speech resouce.  You can do this by using the Azure portal, the Azure CLI, or the Cloud Shell.  This exercise will use the Azure Portal.
+Before you can begin performing your speech-to-text translation, you need to create an Azure Speech resource.  You can do this by using the Azure portal, the Azure CLI, or the Cloud Shell.  This exercise will use the Azure Portal.
 
 1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true).
 
