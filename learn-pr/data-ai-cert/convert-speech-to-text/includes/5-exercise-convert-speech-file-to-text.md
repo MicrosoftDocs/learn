@@ -5,7 +5,7 @@ In this exercise, you will make use of the Speech Service you created earlier.  
 
 1. Start by opening a browser tab or window and navigating to Visual [Studio Code Online](https://visualstudio.microsoft.com/services/visual-studio-online/)
 
-[!NOTE] At this time, Safari is not a supported browser for the preview of VS Code Online
+    [!NOTE] At this time, Safari is not a supported browser for the preview of VS Code Online
 
 2. You will require an Azure subscription to create an environment for Visual Studio Code Online
 1. Select the **Get started** button.
@@ -16,7 +16,7 @@ In this exercise, you will make use of the Speech Service you created earlier.  
 1. Select Create.
 1. Once your plan is created, you can then create you first environment.  
 1. If the Create Environment panel does not open automatically, simply select **Create environment**.
-1. Enter an environment name of your choosing, example **SpeechToTextPython"
+1. Enter an environment name of your choosing, example **SpeechToTextPython**
 1. Copy the following URL and past it into the Git Repository area on the Create Environment panel, https://github.com/MicrosoftLearning/AI-SpeechToText
 1. Leave the rest of the settings at their default and select Create.
 1. It will take a few minutes for the environment to be created so while you wait, go to your Speech service in the Azure portal and copy one of your keys, and also note the region where the service was created.
@@ -36,7 +36,7 @@ In this exercise, you will make use of the Speech Service you created earlier.  
 
 1. Start by opening a browser tab or window and navigating to Visual [Studio Code Online](https://visualstudio.microsoft.com/services/visual-studio-online/)
 
-[!NOTE] At this time, Safari is not a supported browser for the preview of VS Code Online
+    [!NOTE] At this time, Safari is not a supported browser for the preview of VS Code Online
 
 2. You will require an Azure subscription to create an environment for Visual Studio Code Online
 1. Select the **Get started** button.
@@ -47,7 +47,7 @@ In this exercise, you will make use of the Speech Service you created earlier.  
 1. Select Create.
 1. Once your plan is created, you can then create you first environment.  
 1. If the Create Environment panel does not open automatically, simply select **Create environment**.
-1. Enter an environment name of your choosing, example **SpeechToTextCS"
+1. Enter an environment name of your choosing, example **SpeechToTextCS**
 1. Copy the following URL and past it into the Git Repository area on the Create Environment panel, https://github.com/MicrosoftLearning/SpeechToTextCS
 1. Leave the rest of the settings at their default and select Create.
 1. It will take a few minutes for the environment to be created so while you wait, go to your Speech service in the Azure portal and copy one of your keys, and also note the region where the service was created.
@@ -59,75 +59,75 @@ In this exercise, you will make use of the Speech Service you created earlier.  
 1. A new C# dotnet core project structure is set up for you complete with a Program.cs file, a workspace.csproj file, and the obj folder.
 1. Open the Program.cs file and replace its contents with the following code.
 
-```csharp
-//
-// Copyright (c) Microsoft. All rights reserved.
-// Licensed under the MIT license. See LICENSE.md file in the project root for full license information.
-//
+    ```csharp
+    //
+    // Copyright (c) Microsoft. All rights reserved.
+    // Licensed under the MIT license. See LICENSE.md file in the project root for full license information.
+    //
 
-using System;
-using System.Threading.Tasks;
-using Microsoft.CognitiveServices.Speech;
-using Microsoft.CognitiveServices.Speech.Audio;
+    using System;
+    using System.Threading.Tasks;
+    using Microsoft.CognitiveServices.Speech;
+    using Microsoft.CognitiveServices.Speech.Audio;
 
-namespace HelloWorld
-{
-    class Program
+    namespace HelloWorld
     {
-        // It's always a good idea to access services in an async fashion
-        static async Task Main()
+        class Program
         {
-            await RecognizeSpeechAsync();
-        }
-
-        static async Task RecognizeSpeechAsync()
-        {
-            // Configure the subscription information for the service to access.
-            // Use either key1 or key2 from the Speech Service resource you have created
-            var config = SpeechConfig.FromSubscription("YourSubscriptionKey", "YourServiceRegion");
-            
-            // Setup the audio configuration, in this case, using a file that is in local storage.
-            using (var audioInput = AudioConfig.FromWavFileInput("YourAudioFileName"))
-            
-            // Pass the required parameters to the Speech Service which includes the configuration information
-            // and the audio file name that you will use as input
-            using (var recognizer = new SpeechRecognizer(config, audioInput))
+            // It's always a good idea to access services in an async fashion
+            static async Task Main()
             {
-                Console.WriteLine("Recognizing first result...");
-                var result = await recognizer.RecognizeOnceAsync();
+                await RecognizeSpeechAsync();
+            }
 
-                switch (result.Reason)
+            static async Task RecognizeSpeechAsync()
+            {
+                // Configure the subscription information for the service to access.
+                // Use either key1 or key2 from the Speech Service resource you have created
+                var config = SpeechConfig.FromSubscription("YourSubscriptionKey", "YourServiceRegion");
+
+                // Setup the audio configuration, in this case, using a file that is in local storage.
+                using (var audioInput = AudioConfig.FromWavFileInput("YourAudioFileName"))
+
+                // Pass the required parameters to the Speech Service which includes the configuration information
+                // and the audio file name that you will use as input
+                using (var recognizer = new SpeechRecognizer(config, audioInput))
                 {
-                    case ResultReason.RecognizedSpeech:
-                        // The file contained speech that was recognized and the transcription will be output
-                        // to the terminal window
-                        Console.WriteLine($"We recognized: {result.Text}");
-                        break;
-                    case ResultReason.NoMatch:
-                        // No recognizable speech found in the audio file that was supplied.
-                        // Out an informative message
-                        Console.WriteLine($"NOMATCH: Speech could not be recognized.");
-                        break;
-                    case ResultReason.Canceled:
-                        // Operation was cancelled
-                        // Output the reason
-                        var cancellation = CancellationDetails.FromResult(result);
-                        Console.WriteLine($"CANCELED: Reason={cancellation.Reason}");
-                
-                        if (cancellation.Reason == CancellationReason.Error)
-                        {
-                            Console.WriteLine($"CANCELED: ErrorCode={cancellation.ErrorCode}");
-                            Console.WriteLine($"CANCELED: ErrorDetails={cancellation.ErrorDetails}");
-                            Console.WriteLine($"CANCELED: Did you update the subscription info?");
-                        }
-                        break;
+                    Console.WriteLine("Recognizing first result...");
+                    var result = await recognizer.RecognizeOnceAsync();
+
+                    switch (result.Reason)
+                    {
+                        case ResultReason.RecognizedSpeech:
+                            // The file contained speech that was recognized and the transcription will be output
+                            // to the terminal window
+                            Console.WriteLine($"We recognized: {result.Text}");
+                            break;
+                        case ResultReason.NoMatch:
+                            // No recognizable speech found in the audio file that was supplied.
+                            // Out an informative message
+                            Console.WriteLine($"NOMATCH: Speech could not be recognized.");
+                            break;
+                        case ResultReason.Canceled:
+                            // Operation was cancelled
+                            // Output the reason
+                            var cancellation = CancellationDetails.FromResult(result);
+                            Console.WriteLine($"CANCELED: Reason={cancellation.Reason}");
+
+                            if (cancellation.Reason == CancellationReason.Error)
+                            {
+                                Console.WriteLine($"CANCELED: ErrorCode={cancellation.ErrorCode}");
+                                Console.WriteLine($"CANCELED: ErrorDetails={cancellation.ErrorDetails}");
+                                Console.WriteLine($"CANCELED: Did you update the subscription info?");
+                            }
+                            break;
+                    }
                 }
             }
         }
     }
-}
 
-```
+    ```
 22. In the terminal window, type the following command ```dotnet add package Microsoft.CognitiveServices.Speech``` and press Enter
 1. In the terminal windows, type the following command to also add the Audio package, ``` dotnet add package Microsoft.CognitiveServices.Speech.Audio``` and press Enter
 1. VS installs the package for use with the AudioConfig class that will be used in the code
