@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.data-ai.creating-pipelines-in-aml.publishing-pipelines
-title: Publishing pipelines
+uid: learn.data-ai.create-pipelines-in-aml.publishing-pipelines
+title: Publish pipelines
 metadata:
-  title: Publishing pipelines
+  title: Publish pipelines
   description: Learn how to publish a pipeline.
   ms.date: 02/10/2020
   author: GraemeMalcolm

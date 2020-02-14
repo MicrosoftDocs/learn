@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.data-ai.compute-contexts-in-aml.using-compute
-title: Using compute targets
+uid: learn.data-ai.use-compute-contexts-in-aml.using-compute
+title: Use compute targets
 metadata:
-  title: Using compute targets
+  title: Use compute targets
   description: Learn how to use compute targets for experiments.
   ms.date: 02/10/2020
   author: GraemeMalcolm

@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.data-ai.creating-pipelines-in-aml.creating-a-pipeline
-title: Exercise - Creating a pipeline
+uid: learn.data-ai.create-pipelines-in-aml.creating-a-pipeline
+title: Exercise - Create a pipeline
 metadata:
-  title: Exercise - Creating a pipeline
+  title: Exercise - Create a pipeline
   description: In this hands-on exercise, you'll create an Azure Machine Learning pipeline.
   ms.date: 02/10/2020
   author: GraemeMalcolm

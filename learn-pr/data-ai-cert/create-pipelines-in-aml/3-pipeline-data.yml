@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.data-ai.creating-pipelines-in-aml.pipeline-data
-title: Passing data between pipeline steps
+uid: learn.data-ai.create-pipelines-in-aml.pipeline-data
+title: Pass data between pipeline steps
 metadata:
-  title: Passing data between pipeline steps
+  title: Pass data between pipeline steps
   description: Learn how to use a PipelineData object to pass data between pipeline steps.
   ms.date: 02/10/2020
   author: GraemeMalcolm

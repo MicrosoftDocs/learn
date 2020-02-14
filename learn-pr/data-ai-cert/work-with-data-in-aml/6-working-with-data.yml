@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.data-ai.working-with-data-in-aml.working-with-data
-title: Exercise - Working with data
+uid: learn.data-ai.work-with-data-in-aml.working-with-data
+title: Exercise - Work with data
 metadata:
-  title: Exercise - Working with data
+  title: Exercise - Work with data
   description: Use this hands-on exercise to learn how to use datastores and datasets in Azure Machine Learning.
   ms.date: 02/10/2020
   author: GraemeMalcolm

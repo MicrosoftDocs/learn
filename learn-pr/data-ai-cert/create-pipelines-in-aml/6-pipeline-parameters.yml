@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.data-ai.creating-pipelines-in-aml.pipeline-parameters
-title: Pipeline parameters
+uid: learn.data-ai.create-pipelines-in-aml.pipeline-parameters
+title: Use pipeline parameters
 metadata:
-  title: Pipeline parameters
+  title: Use pipeline parameters
   description: Learn how to paremeterize pipelines.
   ms.date: 02/10/2020
   author: GraemeMalcolm

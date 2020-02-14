@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.data-ai.creating-pipelines-in-aml.step-reuse
-title: Pipeline step reuse
+uid: learn.data-ai.create-pipelines-in-aml.step-reuse
+title: Reuse pipeline steps
 metadata:
-  title: Pipeline step reuse
+  title: Reuse pipeline steps
   description: Learn how to reuse pipeline steps.
   ms.date: 02/10/2020
   author: GraemeMalcolm

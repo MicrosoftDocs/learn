@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.data-ai.compute-contexts-in-aml.compute-targets
-title: Compute targets
+uid: learn.data-ai.use-compute-contexts-in-aml.compute-targets
+title: Introduction to compute targets
 metadata:
-  title: Compute targets
+  title: Introduction to compute targets
   description: Learn how to create Azure Machine Learning compute targets.
   ms.date: 02/10/2020
   author: GraemeMalcolm

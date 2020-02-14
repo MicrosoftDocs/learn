@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.data-ai.creating-pipelines-in-aml.scheduling-pipelines
-title: Scheduling pipelines
+uid: learn.data-ai.create-pipelines-in-aml.scheduling-pipelines
+title: Schedule pipelines
 metadata:
-  title: Scheduling pipelines
+  title: Schedule pipelines
   description: Learn how to schedule pipelines.
   ms.date: 02/10/2020
   author: GraemeMalcolm

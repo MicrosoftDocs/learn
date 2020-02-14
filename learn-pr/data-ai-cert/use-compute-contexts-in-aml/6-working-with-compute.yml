@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.data-ai.compute-contexts-in-aml.working-with-compute
-title: Exercise - Working with Compute Contexts
+uid: learn.data-ai.use-compute-contexts-in-aml.working-with-compute
+title: Exercise - Work with Compute Contexts
 metadata:
-  title: Exercise - Working with Compute Contexts
+  title: Exercise - Work with Compute Contexts
   description: Use this hands-on exercise to learn how to manage compute contexts for Azure Machine Learning experiments.
   ms.date: 02/10/2020
   author: GraemeMalcolm

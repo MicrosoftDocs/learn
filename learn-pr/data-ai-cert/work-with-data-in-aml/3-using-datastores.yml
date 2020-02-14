@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.data-ai.working-with-data-in-aml.using-datastores
-title: Using datastores
+uid: learn.data-ai.work-with-data-in-aml.using-datastores
+title: Use datastores
 metadata:
-  title: Using datastores
+  title: Use datastores
   description: Learn how to use a datastore in an experiment.
   ms.date: 02/10/2020
   author: GraemeMalcolm
