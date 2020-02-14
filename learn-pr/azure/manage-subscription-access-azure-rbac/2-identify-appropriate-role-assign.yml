@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.manage-subscription-access-azure-rbac.identify-appropriate-role-assign
-title: Understand the difference between Azure RBAC roles and Azure AD roles
+title: Understand the difference between RBAC roles and Azure AD roles
 metadata:
-  title: Understand the difference between Azure RBAC roles and Azure AD roles
-  description: Learn the difference between Azure RBAC roles and Azure AD roles, and identify the appropriate role to assign.
+  title: Understand the difference between RBAC roles and Azure AD roles
+  description: Learn the difference between RBAC roles and Azure AD roles, and identify the appropriate role to assign.
   ms.date: 01/13/2020
   author: cwatson-cat
   ms.author: cwatson
@@ -15,25 +15,25 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: You need to grant Administrator access for an Azure subscription to someone else in your organization. That person needs to be able to manage Azure resources that were created under that subscription. The person also needs access to the billing information for that subscription. What role should you grant them?
+  - content: You need to grant administrator access for an Azure subscription to someone else in your organization. That person needs to be able to manage Azure resources that were created under that subscription. The person also needs access to the billing information for that subscription. What role should you grant them?
     choices:
     - content: Assign the User Access Administrator role at the subscription scope.
       isCorrect: false
       explanation: The User Access Administrator manages access to Azure resources.
     - content: Assign the Billing Administrator role at the management group scope.
       isCorrect: false
-      explanation: Billing Administrator is an Azure AD role that allows you to make purchases, manage subscriptions and support tickets, and monitor service health. Azure AD roles apply only to one scope, the directory.
+      explanation: Billing Administrator is an Azure AD role that allows you to make purchases, manage subscriptions and support tickets, and monitor service health. Azure AD roles apply to only one scope, the directory.
     - content: Assign the Owner role at the subscription scope.
       isCorrect: true
       explanation: The Owner role gives full access to all resources under the scope that has been assigned to it.
-  - content: What's the main difference between Azure role-based access control (RBAC) roles and Azure AD roles?
+  - content: What's the main difference between RBAC roles and Azure AD roles?
     choices:
-    - content: Azure RBAC roles apply to Azure resources. Azure AD roles apply to Azure AD resources such as users, groups, and domains. 
+    - content: RBAC roles apply to Azure resources. Azure AD roles apply to Azure AD resources such as users, groups, and domains. 
       isCorrect: true
-      explanation: Azure RBAC roles are used to manage access to virtual machines, storage, and other Azure resources. Azure AD roles are used to manage access to Azure AD resources such as user accounts and passwords.
-    - content: You can assign Azure RBAC roles at the root level. 
+      explanation: RBAC roles are used to manage access to virtual machines, storage, and other Azure resources. Azure AD roles are used to manage access to Azure AD resources such as user accounts and passwords.
+    - content: You can assign RBAC roles at the root level. 
       isCorrect: false
-      explanation: You can assign Azure RBAC roles at the management groups, subscriptions, resource groups, or resources scopes.
-    - content: Azure AD roles are used to manage access to Azure resources. Azure RBAC roles are used to view and manage Azure resources. 
+      explanation: You can assign RBAC roles at the management groups, subscriptions, resource groups, or resources scope.
+    - content: Azure AD roles are used to manage access to Azure resources. RBAC roles are used to view and manage Azure resources. 
       isCorrect: false
-      explanation: Azure RBAC roles are used to manage access to virtual machines, storage, and other Azure resources. Azure AD roles are used to manage access to Azure AD resources such as user accounts and passwords.
+      explanation: RBAC roles are used to manage access to virtual machines, storage, and other Azure resources. Azure AD roles are used to manage access to Azure AD resources such as user accounts and passwords.

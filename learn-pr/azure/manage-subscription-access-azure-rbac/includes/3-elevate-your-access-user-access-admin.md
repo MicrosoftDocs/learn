@@ -1,11 +1,11 @@
 
-The administrator for the marketing department's Azure subscription recently left the organization. As Global Administrator, you don’t have access to this subscription. You now need to grant Administrator access for the subscription to another person in the marketing department.
+The administrator for the marketing department's Azure subscription recently left the organization. As Global Administrator, you don't have access to this subscription. You now need to grant administrator access for the subscription to another person in the marketing department.
 
 In this unit, you'll explore when you might need to elevate your own access.
 
 ## When to elevate access
 
-By default, a Global Administrator doesn't have access to Azure resources. The Global Administrator for Azure Active Directory (Azure AD), can temporarily elevate their permissions to the Azure role-based access control (RBAC) role of User Access Administrator. This action grants the Azure RBAC permissions that are needed to manage Azure resources. The User Access Administrator is assigned at the scope of root. The role can view all resources in and assign access to any subscription or management group in that Azure AD organization.
+By default, a Global Administrator doesn't have access to Azure resources. The Global Administrator for Azure Active Directory (Azure AD) can temporarily elevate their permissions to the role-based access control (RBAC) role of User Access Administrator. This action grants the RBAC permissions that are needed to manage Azure resources. The User Access Administrator is assigned at the scope of root. The role can view all resources in, and assign access to, any subscription or management group in that Azure AD organization.
 
 The following diagram shows what resources the Global Administrator can view when their permissions are elevated to User Access Administrator.
 
@@ -18,7 +18,7 @@ As Global Administrator, you might need to elevate your permissions to:
 - View all Azure subscriptions or management groups in an organization.
 - Grant an automation app access to all Azure subscriptions or management groups.
 
-After the Global Administrator elevates their permissions to User Access Administrator, they can then grant other users the Azure RBAC permissions that they need to control and manage Azure resources. When the task is complete, the Global Administrator should revoke their own elevated permissions.
+After the Global Administrator elevates their permissions to User Access Administrator, they can then grant other users the RBAC permissions that they need to control and manage Azure resources. When the task is complete, the Global Administrator should revoke their own elevated permissions.
 
 ## Assign a user administrative access to an Azure subscription
 
