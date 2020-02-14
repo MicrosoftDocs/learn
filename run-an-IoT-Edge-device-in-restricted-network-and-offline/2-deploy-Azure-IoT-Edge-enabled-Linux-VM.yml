@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.iot.run-an-IoT-Edge-device-in-restricted-network-and-offline.Exercise2
+metadata:
+  title: Deploy Azure IoT Edge enabled Linux VM
+  description: Deploy Azure IoT Edge enabled Linux VM
+  ms.date: 02/12/20120
+  author: ABartolo
+  ms.author: Olivier.Bloch
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Deploy Azure IoT Edge enabled Linux VM
+# azureSandbox: true
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-deploy-Azure-IoT-Edge-enabled-Linux-VM.md)]
