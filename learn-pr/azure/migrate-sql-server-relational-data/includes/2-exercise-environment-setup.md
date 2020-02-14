@@ -3,6 +3,14 @@ In this exercise, you'll lay the groundwork for using the Azure Data Migration A
 > [!IMPORTANT]
 > [!INCLUDE [azure-subscription-prerequisite](../../../includes/azure-subscription-prerequisite.md)]
 
+This deployment will create the following resources:
+
+- A resource group
+- An Azure SQL server.
+- An Azure SQL database.
+- A virtual machine running SQL Server.
+- Network and storage resources to support the above resources.
+
 ## Deploy the template
 
 1. Select the **Deploy to Azure** button below to open the Azure portal and deploy the resources needed for the exercises.

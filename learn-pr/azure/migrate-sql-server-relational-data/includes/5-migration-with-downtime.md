@@ -24,7 +24,7 @@ While the online option appears attractive, there is a major downside: cost. The
 
 Because of this, it is a recommended best practice to first test using the offline option to ascertain whether it can run in an acceptable time frame.
 
-## Migration Exercises
+## Migration exercises
 
 In the next two exercises you'll begin the migration process for your company's social database. In the first, you'll use the Azure Data Migration Assistant to analyze the database for any inconsistencies, repair them, and finally migrate the database schema to our target Azure SQL Database service.
 
