@@ -28,9 +28,9 @@ products:
 - azure-iot-security-center
 - m365-ems-cloud-app-security
 modules:
-- learn.tm-introduction-to-threat-modeling
+#- learn.tm-introduction-to-threat-modeling
 #- learn.tm-create-a-threat-model-using-foundational-data-flow-diagram-elements
-- learn.tm-approach-your-data-flow-diagram-with-the-right-threat-model-focus
+#- learn.tm-approach-your-data-flow-diagram-with-the-right-threat-model-focus
 #- learn.tm-use-a-framework-to-identify-threats-and-find-ways-to-reduce-or-eliminate-risk
 #- learn.tm-prioritize-your-threats-and-apply-security-controls
 #- learn.tm-provide-enough-context-by-selecting-the-right-layer
