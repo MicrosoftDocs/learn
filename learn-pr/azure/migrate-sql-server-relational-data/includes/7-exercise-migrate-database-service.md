@@ -23,7 +23,7 @@ In this exercise, you will migrate the data in your database using the Azure Dat
 
 1. Select **Create** to create the new Database Migration Service.
 
-1. Wait for the deployment to complete. Once done, select **Go to resource**.
+1. Wait for the deployment to complete, this may take 15 minutes. Once done, select **Go to resource**.
 
     ![The overview pane for the database migration service.](../media/7-migration-service-overview.png)
 
