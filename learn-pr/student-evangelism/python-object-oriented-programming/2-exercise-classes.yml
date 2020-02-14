@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.student-evangelism.python-object-oriented-programming.2-classes
+uid: learn.student-evangelism.python-object-oriented-programming.2-exercise-classes
 title: Classes and objects in Python
 metadata:
   title: Classes and objects in Python
@@ -10,5 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-python
 durationInMinutes: 10
+azureSandbox: true
+interactive: bash-editor
 content: |
-  [!include[](includes/2-classes.md)]
+  [!include[](includes/2-exercise-classes.md)]

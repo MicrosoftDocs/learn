@@ -31,7 +31,7 @@ products:
 units:
 - learn.student-evangelism.python-object-oriented-programming.0-introduction
 - learn.student-evangelism.python-object-oriented-programming.1-oop
-- learn.student-evangelism.python-object-oriented-programming.2-classes
+- learn.student-evangelism.python-object-oriented-programming.2-exercise-classes
 - learn.student-evangelism.python-object-oriented-programming.3-attributes
 - learn.student-evangelism.python-object-oriented-programming.4-methods
 - learn.student-evangelism.python-object-oriented-programming.5-inheritance
