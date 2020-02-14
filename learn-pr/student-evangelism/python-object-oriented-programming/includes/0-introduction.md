@@ -1,14 +1,14 @@
 Imagine you work for a company that locates missing persons. You have been assigned to a team that is writing an application to catalog missing persons and information about them in a database. Your code will define the information stored about each person, including a name and a photo, and provide logic for acting upon that information. The application is written in Python, so you will be using Python as well.
 
-You could write classic [procedural code](https://wikipedia.org/wiki/Procedural_programming) containing functions such as `add_missing_person_to_database()` and `get_information_about_missing_person()`. But such code, while common, can also be difficult to maintain — especially as, over time, the code base grows in size and complexity.
+You could write classic procedural code containing functions such as `add_missing_person_to_database()` and `get_information_about_missing_person()`. But such code, while common, can also be difficult to maintain — especially as, over time, the code base grows in size and complexity.
 
-[Object-oriented programming](https://wikipedia.org/wiki/Object-oriented_programming) (OOP) is a proven way of structuring your code so that it is easier to write, understand, test, and maintain. Rather than leave it to other programmers to figure out how to take the photos you store and display them on the screen, for example, you could define an object that represents a missing person and build the capability to display that person's photo into the object. Subsequently, anyone could render a photo of a missing person on the screen with a simple function call.
+Object-oriented programming (OOP) is a proven way of structuring your code so that it is easier to write, understand, test, and maintain. Rather than leave it to other programmers to figure out how to take the photos you store and display them on the screen, for example, you could define an object that represents a missing person and build the capability to display that person's photo into the object. Subsequently, anyone could render a photo of a missing person on the screen with a simple function call.
 
 Writing object-oriented code in Python is a little different than writing procedural code, but if you know the basics of Python, it isn't difficult. In this module, you learn how to write object-oriented code in Python and also see first-hand some of the benefits of doing so.
 
-## What is OOP?
+## What is object-oriented programming?
 
-Legendary programmer named [Alan Kay](https://wikipedia.org/wiki/Alan_Kay) originally conceived of object-oriented programming as a way to help create computer simulations. He envisioned an "object" as having:
+Legendary programmer named Alan Kay originally conceived of object-oriented programming (OOP) as a way to help create computer simulations. He envisioned an "object" as having:
 
 - **Attributes**. Attributes define characteristics, such as a person's name or the color of their hair.
 - **Methods**. Methods instruct the object to perform tasks, such as render a photo or record information in a database.
@@ -48,4 +48,7 @@ In this module, you will:
 - Learn how to add methods to classes.
 - Learn how to create new classes that inherit from others.
 
-There's a lot to accomplish, so let's get started.
+## Prerequisites
+A basic knowledge of programming and Python.
+
+Let's get started!

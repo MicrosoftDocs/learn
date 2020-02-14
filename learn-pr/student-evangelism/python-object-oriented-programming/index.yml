@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-python
 title: Object-oriented programming in Python
-summary: Use Python to write object-oriented code.
+summary: Learn more about object-oriented programming with this next-steps module in Python.
 abstract:  | 
   In this module, you will:
   - Learn how to write classes in Python
@@ -19,10 +19,10 @@ abstract:  |
   - Learn how to add methods and attributes to inherited classes
   - Learn how to override methods inherited from a base class
 prerequisites:  |
-  None
+  A basic knowledge of programming and Python.
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
-- intermediate
+- beginner
 roles:
 - developer
 - student
