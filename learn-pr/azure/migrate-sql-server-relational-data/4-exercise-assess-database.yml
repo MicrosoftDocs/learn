@@ -9,6 +9,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Exercise - Assess database with the Data Migration Assistant
-durationInMinutes: 10
+durationInMinutes: 15
 content: |
   [!include[](includes/4-exercise-assess-database.md)]

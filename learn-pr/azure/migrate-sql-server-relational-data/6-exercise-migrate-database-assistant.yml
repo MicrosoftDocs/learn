@@ -9,6 +9,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Exercise - Migrate a database schema using Azure Data Migration Assistant
-durationInMinutes: 10
+durationInMinutes: 15
 content: |
   [!include[](includes/6-exercise-migrate-database-assistant.md)]

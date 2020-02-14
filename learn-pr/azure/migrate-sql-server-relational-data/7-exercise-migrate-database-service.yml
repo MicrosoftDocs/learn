@@ -9,6 +9,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Exercise - Migrate a database with downtime using Azure Data Migration Service
-durationInMinutes: 10
+durationInMinutes: 25
 content: |
   [!include[](includes/7-exercise-migrate-database-service.md)]
