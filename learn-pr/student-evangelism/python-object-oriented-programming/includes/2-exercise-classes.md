@@ -38,7 +38,7 @@ First, we will start the Python interpreter in Cloud Shell to look at some objec
 
     The `print()` function writes output to the screen. The `type()` function shows an object's underlying class.
 
-1. You should see an output that looks like this:
+1. You should see output that looks like this:
 
     ```output
     >>> print(type(1))
@@ -51,7 +51,9 @@ First, we will start the Python interpreter in Cloud Shell to look at some objec
     <class 'bool'>
     ```
 
-    The output shows that 1 is an instance of Python's built-in `int` class, while "Hello There!" is a `str` (string). Notice that Python uses different classes for 1 and 1.1; 1.1 is `float`, not an `int`. If something has a truth value, True or False, then it relies on the `bool` class.
+    The output shows that 1 is an instance of Python's built-in `int` class, while "Hello There!" is a `str` (string).
+
+    Notice that Python uses different classes for 1 and 1.1: 1.1 is `float`, not an `int`. If something has a truth value, True or False, then it relies on the `bool` class.
 
     You could easily test other kinds of data (feel free to experiment!), but be assured that any sort of data you try has an associated class, whether one that is built into Python or one you have written yourself.
 
@@ -64,23 +66,23 @@ First, we will start the Python interpreter in Cloud Shell to look at some objec
 1. This is the output you should see:
 
     ```output
-    ['__abs__', '__add__', '__and__', '__bool__', 
-    '__ceil__', '__class__', '__delattr__', '__dir__', 
-    '__divmod__', '__doc__', '__eq__', '__float__', 
-    '__floor__', '__floordiv__', '__format__', '__ge__', 
-    '__getattribute__', '__getnewargs__', '__gt__', 
+    ['__abs__', '__add__', '__and__', '__bool__',
+    '__ceil__', '__class__', '__delattr__', '__dir__',
+    '__divmod__', '__doc__', '__eq__', '__float__',
+    '__floor__', '__floordiv__', '__format__', '__ge__',
+    '__getattribute__', '__getnewargs__', '__gt__',
     '__hash__', '__index__', '__init__', '__int__', 
-    '__invert__', '__le__', '__lshift__', '__lt__', 
-    '__mod__', '__mul__', '__ne__', '__neg__', '__new__', 
-    '__or__', '__pos__', '__pow__', '__radd__', '__rand__', 
-    '__rdivmod__', '__reduce__', '__reduce_ex__', 
-    '__repr__', '__rfloordiv__', '__rlshift__', '__rmod__', 
-    '__rmul__', '__ror__', '__round__', '__rpow__', 
-    '__rrshift__', '__rshift__', '__rsub__', '__rtruediv__', 
-    '__rxor__', '__setattr__', '__sizeof__', '__str__', 
-    '__sub__', '__subclasshook__', '__truediv__', 
-    '__trunc__', '__xor__', 'bit_length', 'conjugate', 
-    'denominator', 'from_bytes', 'imag', 'numerator', 
+    '__invert__', '__le__', '__lshift__', '__lt__',
+    '__mod__', '__mul__', '__ne__', '__neg__', '__new__',
+    '__or__', '__pos__', '__pow__', '__radd__', '__rand__',
+    '__rdivmod__', '__reduce__', '__reduce_ex__',
+    '__repr__', '__rfloordiv__', '__rlshift__', '__rmod__',
+    '__rmul__', '__ror__', '__round__', '__rpow__',
+    '__rrshift__', '__rshift__', '__rsub__', '__rtruediv__',
+    '__rxor__', '__setattr__', '__sizeof__', '__str__',
+    '__sub__', '__subclasshook__', '__truediv__',
+    '__trunc__', '__xor__', 'bit_length', 'conjugate',
+    'denominator', 'from_bytes', 'imag', 'numerator',
     'real', 'to_bytes']
     ```
 
@@ -99,7 +101,11 @@ First, we will start the Python interpreter in Cloud Shell to look at some objec
     print(type(myVar.__str__()))
     ```
 
-    The first line is an assignment. You're assigning the value `1` to an object named `myVar`. The `myVar` object now has an attribute: the value 1. The second line of code calls the `__str__()` method that is part of the `int` class and therefore present in the `myVar` object. What does the output from the code tell you?
+    The first line is an assignment. You're assigning the value `1` to an object named `myVar`. The `myVar` object now has an attribute: the value 1.
+
+    The second line of code calls the `__str__()` method that is part of the `int` class and therefore present in the `myVar` object.
+
+    What does the output from the code tell you?
 
 The `__str__()` method created a new object from `myVar` of type `str`. The `myVar` object is still the same, completely untouched; it's still of type `int`. The new object – which doesn't have a name because you haven't assigned it one – is of type `str`.
 
@@ -167,6 +173,9 @@ At this point, you have a very simple (and nearly useless) class, but it serves 
     ```python
     myVar = MyClass()
     ```
+
+    > [!NOTE]
+    > Be sure to use proper Python indentation. This line should not be indented at all - at the same level as `class MyClass:`.
 
     This line creates an object named `myVar` from the class named `myClass`. Notice the parentheses after `myClass`. The parentheses tell Python to create an instance of the class without passing any parameters to it.
 
