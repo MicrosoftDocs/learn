@@ -1,0 +1,28 @@
+### YamlMime:ModuleUnit
+uid: learn.tm-create-a-threat-model-using-foundational-data-flow-diagram-elements.3-data-store-the-storage-element
+title: Data Store - The Storage Element
+metadata:
+  title: Data Store - The Storage Element
+  description: The data store element in a data-flow diagram
+  ms.date: 02/28/2020
+  author: rodsan
+  ms.author: rodsan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-threat-modeling
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-data-store-the-storage-element.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which one of these actions best describes a data store?"
+    choices:
+    - content: "Web portal asks a user for their credentials"
+      isCorrect: false
+      explanation: "The act of handling input and output is a process-related event"
+    - content: "Cache stores service-related cookies for a user"
+      isCorrect: true
+      explanation: "The act of storing data is a data store related event"
+    - content: "Third-party API sends requested data to its requestor"
+      isCorrect: false
+      explanation: "The act of transmitting data is a data-flow related event"

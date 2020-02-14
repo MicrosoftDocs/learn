@@ -1,0 +1,28 @@
+### YamlMime:ModuleUnit
+uid: learn.tm-create-a-threat-model-using-foundational-data-flow-diagram-elements.6-trust-boundary-the-trust-zone-change-element
+title: Trust Boundary - The Trust Zone Change Element
+metadata:
+  title: Trust Boundary - The Trust Zone Change Element
+  description: The trust boundary element in a data-flow diagram
+  ms.date: 02/28/2020
+  author: rodsan
+  ms.author: rodsan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-threat-modeling
+durationInMinutes: 2
+content: |
+  [!include[](includes/6-trust-boundary-the-trust-zone-change-element.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which one of these actions best describes data crossing a trust boundary?"
+    choices:
+    - content: "Data sent from the user to a web service hosted on Azure"
+      isCorrect: true
+      explanation: "The act of transmitting data from an untrusted to a trusted zone crosses a trust boundary"
+    - content: "Data sent from the web service to the data store on Azure under the same Azure subscription"
+      isCorrect: false
+      explanation: "The act of transmitting data from resources inside the same trusted zone does not cross a trust boundary"
+    - content: "Data sent from the data store to a process on Azure under the same tenant"
+      isCorrect: false
+      explanation: "The act of transmitting data from resources inside the same trusted zone does not cross a trust boundary"
