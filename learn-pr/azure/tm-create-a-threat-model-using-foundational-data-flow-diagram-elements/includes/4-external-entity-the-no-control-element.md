@@ -1,3 +1,5 @@
+External Entity:
+
 ![External Entity Element](../media/external-entity.png)
 
 Depicted by a square, an external entity can be a process, data store, or even a full-fledged system outside of your direct control. Examples include:
@@ -10,7 +12,9 @@ Using this element ensures everyone understands what can and cannot be changed b
  
 Include the following context to each external entity element:
 
-- **Flow** - Data-flow begins with either an external entity or data store
-- **Entity source** - Internal or External?
-- **Entity type** - Human? Provider? Web service?
-- **Authentication and authorization mechanisms** - Azure Active Directory? Access Control Lists (ACL)? Groups?
+|Context|What to Include|
+|-------|---------------|
+|Flow|Data-flow begins with either an external entity or data store|
+|Entity source|Internal or External|
+|Entity type|Human? Provider? Web service?|
+|Authentication and authorization mechanisms|Azure Active Directory? Access Control Lists (ACL)?|

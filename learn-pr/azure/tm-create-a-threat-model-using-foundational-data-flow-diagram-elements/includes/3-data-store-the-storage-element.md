@@ -1,3 +1,5 @@
+Data Store:
+
 ![Data Store Element](../media/data-store.png)
 
 Depicted by parallel lines, this element represents data stored on a temporary or permanent basis. Examples include:
@@ -15,7 +17,9 @@ What to look out for:
 
 Include the following context to each data store element:
 
-- **Type** - Azure SQL storage? Cookies? Local storage?
-- **Function** - Shared data? Backups? Security logs? Credentials? Secrets?
-- **Permission level** - Access Controls? Read? Write?
-- **Additional controls** - Data encryption? Disk encryption? Digital signatures?
+|Context|What to Include|
+|-------|---------------|
+|Type|Azure SQL storage? Cookies? Local storage?|
+|Function|Shared data? Backups? Security logs? Credentials? Secrets?|
+|Permission level|Access Controls? Read? Write?|
+|Additional controls|Data encryption? Disk encryption? Digital signatures?|

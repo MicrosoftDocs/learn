@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-threat-modeling
 title: Create a Threat Model Using Foundational Data-flow Diagram Elements
-summary: Data-flow diagrams are graphical representations of your system and should specify each process, data store, external entity, data-flow, and trust boundary. Elements and interactions are analyzed against STRIDE to help identify threats and reduce or eliminate risk. This process helps engineers collaborate with colleagues, security teams, and managers while securing their systems against the most common threats.
+summary: Data-flow diagrams are graphical representations of your system and should specify each element and interaction, which are analyzed against STRIDE to help identify threats and reduce or eliminate risk.
 abstract: |
     In this module, you will:
     - The shape and function of each element
