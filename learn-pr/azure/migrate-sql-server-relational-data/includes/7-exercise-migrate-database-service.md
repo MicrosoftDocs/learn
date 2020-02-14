@@ -2,98 +2,132 @@ In this exercise, you will migrate the data in your database using the Azure Dat
 
 ## Create The Database Migration Service
 
-1. Open the [Azure Portal](https://portal.azure.com?azure-portal=true) in a new tab, then select **+ Create a resource**.
+1. Open the [Azure portal](https://portal.azure.com?azure-portal=true) in a new tab, then select **+ Create a resource**.
 
 1. In the **Search the Marketplace** box search for **Azure Database Migration Service** and select **Create**.
 
-    ![Create an Azure Database Migration Service Project](../media/7-01-create-adms.png)
+1. In the basics tab, configure the following values:
 
-1. In the basics tab, select your subscription.
+    |  |  |
+    |---------|---------|
+    | **Subscription** | Select your subscription |
+    | **Resource group** | admsdemorg |
+    | **Migration service name** | admsdemodms |
+    | **Location**     | Select the same region your resources are located |
+    | **Pricing tier** | Standard 1 vCores |
+    |||
 
-1. Next, select **admsdemorg** for the resource group.
+1. Select **Next:Networking**.
 
-1. Under Instance details, use **admsdemodms** for the service name.
+1. Select the **admsdemo-vnet/default** virtual network, then select **Review + create**.
 
-1. Change the location to the same region your resources were deployed to.
+1. Select **Create** to create the new Database Migration Service.
 
-1. Accept the rest of the defaults, then select **Next:Networking**.
+1. Wait for the deployment to complete. Once done, select **Go to resource**.
 
-    ![Basics Tab](../media/7-02-basics.png)
-
-1. Select **admsdemo-vnet/default**, then select **Review + create**.
-
-    ![Networking Tab](../media/7-03-networking.png)
-
-    Select **Create** to create the new Database Migration Service.
-
-   ![Create Service](../media/7-04-create-service.png)
-
-1. Wait for the deployment to complete. Once done, select **Go to resource**. 
-
-   ![Deploy Complete](../media/7-05-deploy-complete.png)
+    ![The overview pane for the database migration service.](../media/7-migration-service-overview.png)
 
 ## Create a Migration Project
 
-Now that the service has been created, you will create a project in the service to migrate the database.
+Once the service has been created, you will create a project to migrate the database.
 
 1. In the migration project, select **New Migration Project**.
 
-    ![Deploy Complete](../media/7-06-new-migration-project.png)
+1. In the **New migration project** pane, configure the following values:
 
-1. Enter **AdmsDemoDMS** for the Project Name.
-
-1. Take the defaults for the Source and Target server types.
-
-1. For the type of activity you will be doing the default, **Offline data migration**.
-
-1. Select **Create and run activity**.
+    |  |  |
+    |---------|---------|
+    | **Project name** | SocialDatabaseMigration |
+    | **Source server type** | SQL Server |
+    | **Target server type** | Azure SQL Database |
+    | **Choose type of activity**     | Offline data migration |
+    |||
 
     ![Deploy Complete](../media/7-07-new-project.png)
 
-1. Next, you will fill out the information on the source, in this case the virtual machine. For the Source SQL Server instance name, enter **admsdemovm**.
+1. Select **Create and run activity**.
 
-1. You can use Windows Authentication to connect to the virtual machine.
+1. Next, you will fill out the information on the source database. Complete the **New migration project** pane with the following values:
 
-1. For the user name, use **admsdemovm\windowsadmin**.
-
-1. Enter the password for the **windowsadmin** account.
-
-1. Ensure the **Encrypt connection** box is checked, as well as the **Trust server certificate**.
-
-1. Select **Save**.
+    |  |  |
+    |---------|---------|
+    | **Source SQL Server instance name** | admsdemovm |
+    | **Authentication type** | Windows authentication |
+    | **User Name** | admsdemovm\windowsadmin |
+    | **Password**     | Enter the password for the windowsadmin account |
+    | **Encrypt connection** | Selected |
+    | **Trust server certificate** | Selected |
+    | | |
 
     ![Source Details](../media/7-08-source-details.png)
 
-1. Next, you need to supply information to the target, the Azure SQL Database. If you didn't write it down earlier, you can look it up by going to the resource group page. As an example, it will look something like **admsdemosqlvsm4cdzuubghw.database.windows.net**. The string between _admsdemosql_ and _.database.windows.net_ will vary, as it is dynamically generated when the environment setup is executed.
+1. Select **Save**.
 
-1. For the authentication type, use **SQL Authentication**.
+1. Next, you need to supply information for the target Azure SQL Database. Complete the **Migration target details** pane with the following values:
 
-1. Enter **azuresqladmin** for the user name and enter the password for this account.
-
-1. Ensure the **Encrypt connection** is checked, then select **Save**.
+    |  |  |
+    |---------|---------|
+    | **Target server name** | Enter the DNS name of your Azure SQL server. |
+    | **Authentication type** | SQL Authentication |
+    | **User Name** | azuresqladmin |
+    | **Password**     | Enter the password for the azuresqladmin account |
+    | **Encrypt connection** | Selected |
+    | | |
 
     ![Target Details](../media/7-09-target-details.png)
 
-1. Select **Set Source DB Read-Only**. As a reminder, make sure you are not logged into the database elsewhere, such as from SQL Server Management Studio in the virtual machine, or the migration will fail.
+1. Select **Save**.
 
-1. Select **Save** to proceed to configure the migration settings.
+1. Select **Set Source DB Read-Only** for the **Social** database. As a reminder, make sure you are not logged into the database elsewhere, such as from SQL Server Management Studio in the virtual machine, or the migration will fail.
 
     ![Map Database](../media/7-10-map-database.png)
 
+1. Select **Save** to proceed to configure the migration settings.
+
 1. Select the down arrow next to **Social 1 of 1** to see the list of tables.
 
-1. Make sure the `dbo.Twitters` table is checked, then select **Save**.
-
     ![Select Tables](../media/7-11-select-tables.png)
+
+1. Make sure the `dbo.Twitters` table is checked, then select **Save**.
 
 1. In the **Activity name** box, enter **MigrateSocialDatabase**.
 
 1. Select **Validation Options**, then select **Do not validate my database(s)**, then select **Save**.
 
-1. Select **Run migration** to start the migration.
-
     ![Run Migration](../media/7-12-run-migration.png)
+
+1. Select **Run migration** to start the migration.
 
 1. A new pane will appear showing the status of the migration. Select the **Refresh** button at the top to update the status until it shows the process is complete.
 
-    ![Run Migration](..//media/7-13-completed.png)
+    ![Run Migration](../media/7-13-completed.png)
+
+## View data in the new database
+
+You can now go to the Azure SQL database and view your migrated data.
+
+1. Navigate back to your **admsdemorg** resource group and select the **Social (admsdemosqlv2v2s22x.../Social)** database.
+
+    ![Firewall pane](../media/7-sql-database.png)
+
+1. Select **Set server firewall**.
+
+1. In the **Firewall settings** pane, select **+ Add client IP**, then select **Save**.
+
+    ![Firewall pane](../media/7-sql-firewall.png)
+
+1. Close the **Firewall settings** pane to return to the overview for your database.
+
+1. Select **Query editor (preview)**.
+
+1. Log in with the **azuresqladmin** username and password.
+
+1. Enter the following query and select **Run**.
+
+    ```sql
+    SELECT * FROM [dbo].[Twitters];
+    ```
+
+    ![Firewall pane](../media/7-sql-query.png)
+
+    You should see data from your database, indicating a successful migration.
