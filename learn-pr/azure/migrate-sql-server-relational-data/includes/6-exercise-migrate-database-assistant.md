@@ -66,7 +66,7 @@ In this step, you can select the database objects you want to migrate and desele
 
 1. Select **Deploy Schema** to deploy the schema to the target server.
 
-    Once the target database has been updated, it will display the results on the left.
+    Once the target database has been updated, it will display the results on the right.
 
     ![Deployment Results](../media/6-06-deploy-results.png)
 
