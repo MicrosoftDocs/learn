@@ -19,54 +19,54 @@
       choices:
       - content: "Methods and classes"
         isCorrect: false
-        explanation: "Incorrect."
+        explanation: "Incorrect. Objects are containers for methods, but a class defines what's in an object, so an object isn't a container for a class."
       - content: "Events and objects"
         isCorrect: false
-        explanation: "Incorrect."
+        explanation: "Incorrect. Objects are containers for events and objects can contain other objects, but they are contained as an attribute."
       - content: "Methods, attributes, and events"
         isCorrect: true
-        explanation: "Correct!"
+        explanation: "Correct! These are the 3 primary things an object contains."
     - content: "Which of the following statements about Python is correct?"
       choices:
-      - content: "In Python, a string is an instance of the built-in `str` class"
+      - content: "In Python, a character is an instance of the built-in `char` class"
         isCorrect: false
-        explanation: "Incorrect."
-      - content: "Objects are created only when custom classes are instantiated"
+        explanation: "Incorrect. Python actually treats characters as a string of length 1."
+      - content: "In Python, a string is an instance of the built-in `str` class"
         isCorrect: true
         explanation: "Correct!"
       - content: "Python supports subclassing but limits each class to one subclass"
         isCorrect: false
-        explanation: "Incorrect."
+        explanation: "Incorrect. Python does not limit classes to only have one subclass."
     - content: "Python's `math.exp()` method is an example of what type of method?"
       choices:
       - content: "Instance method"
         isCorrect: false
-        explanation: "Incorrect."
+        explanation: "Incorrect. We did not have to create an object of the `math` class to use the `exp()` method"
       - content: "Class method"
         isCorrect: false
-        explanation: "Incorrect."
+        explanation: "Incorrect. We didn't cover this in depth, but we aren't creating object factories, so class method isn't a strong guess."
       - content: "Static method"
         isCorrect: true
-        explanation: "Correct!"
+        explanation: "Correct! We are using the static `exp()` method without haven't to instantiate the class."
     - content: "Which of the following methods might be useful when overriding a method inherited from a base class?"
       choices:
       - content: "`base()`"
         isCorrect: false
-        explanation: "Incorrect."
+        explanation: "Incorrect. This isn't a method used in inheritance."
       - content: "`inheritedFrom()`"
         isCorrect: false
-        explanation: "Incorrect."
+        explanation: "Incorrect. This isn't a method used in inheritance."
       - content: "`delattr()`"
         isCorrect: true
-        explanation: "Correct!"
+        explanation: "Correct! We would use this to remove an inherited attribute."
     - content: "Which of the following statements is false?"
       choices:
-      - content: "Python supports data hiding using conventions, not strict lexical rules"
+      - content: "Python supports data hiding using conventions, not strict rules"
         isCorrect: false
-        explanation: "Incorrect."
+        explanation: "Incorrect. Python doesn't strictly support hiding data."
       - content: "Python provides native support for methods, attributes, and events"
         isCorrect: true
         explanation: "Correct! Python provides native support for methods and attributes, but not for events."
       - content: "You can't delete methods inherited by a subclass"
         isCorrect: false
-        explanation: "Incorrect."
+        explanation: "Incorrect. This is true. You can delete attributes, but not methods."
