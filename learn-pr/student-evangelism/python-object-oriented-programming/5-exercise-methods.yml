@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.student-evangelism.python-object-oriented-programming.4-exercise-methods
+uid: learn.student-evangelism.python-object-oriented-programming.5-exercise-methods
 title: Exercise - Methods
 metadata:
   title: Exercise - Methods
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-python
 durationInMinutes: 10
 content: |
-  [!include[](includes/4-exercise-methods.md)]
+  [!include[](includes/5-exercise-methods.md)]
