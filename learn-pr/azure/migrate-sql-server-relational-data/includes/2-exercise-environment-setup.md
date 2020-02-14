@@ -7,7 +7,7 @@ This deployment will create the following resources:
 
 - A resource group
 - An Azure SQL server.
-- An Azure SQL database.
+- An empty Azure SQL database.
 - A virtual machine running SQL Server.
 - Network and storage resources to support the above resources.
 
