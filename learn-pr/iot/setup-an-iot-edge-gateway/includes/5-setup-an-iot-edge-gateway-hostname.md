@@ -6,7 +6,7 @@ In this module, you will configure the DNS name for Public IP Address of the AZ-
 
     If you have more than one Azure account, be sure that you are logged in with the account that is tied to the subscription that you will be using for this course.
 
-1. Navigate to the **AZ-220-VM-EDGEGW-_{YOUR-ID}_** IoT Edge virtual machine within the Azure Portal.
+1. Navigate to the **AZ-220-VM-EDGEGW-_{YOUR-ID}_** IoT Edge virtual machine.
 
 1. On the **Overview** pane of the **Virtual machine** blade, click the **Configure** link next to **DNS name**.
 
@@ -39,7 +39,7 @@ In this module, you will configure the DNS name for Public IP Address of the AZ-
     >[!NOTE]
     > If a “Host key verification failed” messages displays, then use the VM’s IP Address with the `ssh` command to connect tot he virtual machine.
 
-1. At the top of the Azure Portal click on the **Cloud Shell** icon to open up the **Azure Cloud Shell** within the Azure Portal. When the pane opens, choose the option for the **Bash** terminal within the Cloud Shell.
+1. Navigate to the Azure Portal and click on the **Cloud Shell** icon to open up the **Azure Cloud Shell**. When the pane opens, choose the option for the **Bash** terminal within the Cloud Shell.
 
 1. Within the Cloud Shell, paste in the `ssh` command that was copied, and press **Enter**.
 

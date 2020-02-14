@@ -1,4 +1,4 @@
-In this module , you will connect the IoT Edge Device to Azure IoT Hub.
+In this module, you will connect the IoT Edge Device to Azure IoT Hub.
 
 ## Connect an IoT Edge Device to IoT Hub
 
@@ -6,7 +6,7 @@ In this module , you will connect the IoT Edge Device to Azure IoT Hub.
     
     If you have more than one Azure account, be sure that you are logged in with the account that is tied to the subscription that you will be using for this course.
 
-1. Navigate to the **AZ-220-VM-EDGEGW-_{YOUR-ID}_** IoT Edge virtual machine within the Azure Portal.
+1. Navigate to the **AZ-220-VM-EDGEGW-_{YOUR-ID}_** IoT Edge virtual machine.
 
 1. On the **Overview** pane of the **Virtual machine** blade, click the **Connect** button at the top.
 
@@ -18,7 +18,7 @@ In this module , you will connect the IoT Edge Device to Azure IoT Hub.
 
 1. Within the Cloud Shell, paste in the `ssh` command that was copied, and press **Enter**.
 
-1. When prompted with **Are you sure you want to continue connecting?**, type `yes` and press Enter. This prompt is a security confirmation since the certificate used to secure the connection to the VM is self-signed. The answer to this prompt will be remembered for subsequent connections, and is only prompted on the first connection.
+1. When prompted with **"Are you sure you want to continue connecting?"**, type `yes` and press Enter. This prompt is a security confirmation since the certificate used to secure the connection to the VM is self-signed. The answer to this prompt will be remembered for subsequent connections, and is only prompted on the first connection.
 
 1. When prompted to enter the password, enter the Administrator password that was entered when the VM was provisioned.
 
