@@ -12,7 +12,7 @@ Because we’re dealing with big data here, we don’t want to import this data 
     - **Database**: Enter newyorkrealestate.
     - **Data Connectivity Mode**: Select DirectQuery.
 
-![Connecting to HDinsight in Power BI](../media/7-powerbi-setup.png)
+![Connecting to HDInsight in Power BI](../media/7-powerbi-setup.png)
 
 5. Enter the username (admin) and password you created for the cluster and click **Connect**.
 
