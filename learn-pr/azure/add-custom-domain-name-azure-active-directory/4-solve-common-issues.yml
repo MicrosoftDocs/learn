@@ -9,7 +9,7 @@ metadata:
   ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 4
+durationInMinutes: 5
 content: |
   [!include[](includes/4-solve-common-issues.md)]
 quiz:
@@ -31,7 +31,7 @@ quiz:
     - content: "None"
       isCorrect: false
       explanation: "Domain names can only be used by a single tenant."
-    - content: "One"
+    - content: "1"
       isCorrect: true
       explanation: "Domain names are unique, and can only be used by in a single tenant."
     - content: "900"

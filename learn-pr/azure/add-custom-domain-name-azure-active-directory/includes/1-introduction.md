@@ -10,8 +10,8 @@ This module explains how Azure AD supports custom domain names, and shows how to
 
 In this module, you'll:
 
-- Add a custom domain name in Azure Active Directory.
-- Identify the common issues when you verify the custom domain name.
+- Add a custom domain name in Azure Active Directory
+- Identify the common issues when verifying the custom domain name
 
 ## Prerequisites
 
