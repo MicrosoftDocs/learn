@@ -24,10 +24,9 @@ This exercise is optional. To complete it, you need access to an Azure subscript
 1. At the top of the Azure portal, search for **Subscriptions**.
 1. Select the relevant subscription. Now that you have elevated access at the root scope, you should see all subscriptions in your directory.
 1. Select **Access control (IAM)** > **Role assignments**.
+1. Under **User Access Administrator**, ensure that you have the **Root (inherited)** scope.
 
     ![Screenshot displaying the User Access Administrator role assigned](../media/4-check-role.png)
-
-1. Under **User Access Administrator**, ensure that you have the **Root (inherited)** scope.
 
 ## Assign a user as an administrator of a subscription
 

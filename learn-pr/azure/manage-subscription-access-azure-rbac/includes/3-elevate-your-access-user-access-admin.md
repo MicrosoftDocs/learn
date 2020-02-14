@@ -22,7 +22,7 @@ After the Global Administrator elevates their permissions to User Access Adminis
 
 ## Assign a user administrative access to an Azure subscription
 
-To assign a user administrative access to a subscription, you must have `Microsoft.Authorization/roleAssignments/write` and `Microsoft.Authorization/roleAssignments/delete` permissions at the subscription scope. Users with subscription Owner or User Access Administrator roles have these permissions.
+To assign a user administrative access to a subscription, you must have `Microsoft.Authorization/roleAssignments/write` and `Microsoft.Authorization/roleAssignments/delete` permissions at the subscription scope. Users with the subscription Owner or User Access Administrator role have these permissions.
 
 In the next unit, you'll see how to assign a role by using the Azure portal after you've elevated your permissions to User Access Administrator. But you can also assign roles by using Azure PowerShell, the Azure CLI, or the REST API. 
 
