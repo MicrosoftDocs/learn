@@ -52,7 +52,7 @@ In this module, you will connect the IoT Edge Device to Azure IoT Hub.
      iotedge list
     ```
 
-After a moment, this command will show the `edgeAgent` and `edgeHub` modules are running. The output will look similar to the following:
+    After a moment, this command will show the `edgeAgent` and `edgeHub` modules are running. The output will look similar to the following:
 
     ```bash
      root@AZ-220-VM-EDGEGW:~# iotedge list
@@ -60,6 +60,6 @@ After a moment, this command will show the `edgeAgent` and `edgeHub` modules are
      edgeHub          running          Up 15 seconds    mcr.microsoft.com/azureiotedge-hub:1.0
      edgeAgent        running          Up 18 seconds    mcr.microsoft.com/azureiotedge-agent:1.0
     ```
-If an error is reported, then you’ll need to double check the configurations are set correctly. For troubleshooting, the `iotedge check --verbose` command can be run to see if there are any errors.
+    If an error is reported, then you’ll need to double check the configurations are set correctly. For troubleshooting, the `iotedge check --verbose` command can be run to see if there are any errors.
 
 Congratulations, that's the end of the module! In the next module, we will open IoT Edge Gateway Device Ports for Communication with Downstream Devices.

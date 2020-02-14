@@ -2,8 +2,6 @@ In this module, you will configure a pre-built Downstream Device to connect to t
 
 ## Connect a Downstream Device to IoT Edge Gateway
 
-https://github.com/MicrosoftLearning/AZ-220-Microsoft-Azure-IoT-Developer/blob/master/Allfiles/Labs/12-Setup%20an%20IoT%20Edge%20Gateway/Starter/DownstreamDevice/SimulatedDevice.cs
-
 1. If necessary, log in to your Azure portal using your Azure account credentials.
 
     If you have more than one Azure account, be sure that you are logged in with the account that is tied to the subscription that you will be using for this course.

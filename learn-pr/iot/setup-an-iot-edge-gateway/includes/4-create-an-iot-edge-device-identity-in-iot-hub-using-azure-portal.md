@@ -58,7 +58,7 @@ In this module, you will create a new IoT Edge Device identity in Azure IoT Hub 
     The `FROM /*` part of the message route will match all device-to-cloud messages or twin change notifications from any module or leaf device. Then, the `INTO $upstream` tells the route to send those messages to the Azure IoT Hub.
  
     >[!NOTE]
-    To learn more about configuring message routing within Azure IoT Edge, reference the Learn how to deploy modules and establish routes in IoT Edge documentation article.
+    >To learn more about configuring message routing within Azure IoT Edge, reference the Learn how to deploy modules and establish routes in IoT Edge documentation article.
 
 1. Click the **Next: Review + create >** button.
 
