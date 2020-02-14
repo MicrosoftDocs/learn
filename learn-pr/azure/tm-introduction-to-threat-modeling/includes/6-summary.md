@@ -1,10 +1,10 @@
-Threat modeling is an effective way to help secure your systems, applications, networks, and services. Microsoft defines it as an engineering technique that identifies both potential threats and recommendations to help reduce risk and meet security objectives as early as possible in the development lifecycle. This technique helps you build graphical representations of systems, known as a data-flow diagrams. It also provides you with a framework to help fix security issues that could cost valuable customer trust, assets, and engineering time.
+Threat modeling is an effective way to help secure your systems, applications, networks, and services. Microsoft defines it as an engineering technique that identifies potential threats and recommendations to help reduce risk and meet security objectives earlier in the development lifecycle.
 
 In this module, you explored the four high-level steps of threat modeling. You:
 
-- Understood the importance of enumerating all assumptions, requirements, and processes before creating your data-flow diagram.
-- Explored how STRIDE can help identify threats and suggest security controls to reduce or eliminate risk.
-- Learned the importance of verifying your work to minimize risk for customers.
+- Understood the importance of enumerating all assumptions, requirements, and processes before creating your data-flow diagram
+- Explored how STRIDE can help identify threats and suggest security controls to reduce or eliminate risk
+- Learned the importance of verifying your work to minimize risk for customers
 
 ## Learn more
 
