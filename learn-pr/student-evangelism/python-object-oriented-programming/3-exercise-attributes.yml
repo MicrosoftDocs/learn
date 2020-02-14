@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.student-evangelism.python-object-oriented-programming.3-attributes
-title: Attributes
+uid: learn.student-evangelism.python-object-oriented-programming.3-exercise-attributes
+title: Exercise - Attributes
 metadata:
-  title: Attributes
+  title: Exercise - Attributes
   description: Learn how to use attributes in Python.
   ms.date: 02/17/2020
   author: shanamatthews
@@ -10,5 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-python
 durationInMinutes: 10
+azureSandbox: true
+interactive: bash-editor
 content: |
-  [!include[](includes/3-attributes.md)]
+  [!include[](includes/3-exercise-attributes.md)]
