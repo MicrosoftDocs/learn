@@ -10,16 +10,16 @@
 
 ### Content/Media/assets
 - [ X] Remove locale from urls
-- [ ] Final images/screenshots are present
+- [X ] Final images/screenshots are present
 - [ X] Badge images are present
-- [ ] Verify Acrolinx score for all content (score > 80)
+- [ X] Verify Acrolinx score for all content (score > 80)
 
 ### Index.yml
 - [X ] *title* is set
 - [X ] *description* is set and follows guidelines (doesn't duplicate title)
 - [ X] *summary* is set and follows guidelines
 - [X ] *abstract* is set and lists objectives (no periods)
-- [ ]X *prerequisites* are set
+- [ X] *prerequisites* are set
 - [ X] *ms.date* is set to publication date
 - [X ] *author* and *ms.author* are set
 - [X ] *ms.prod* is set to **learning-azure**
@@ -32,11 +32,11 @@
 - [ X] *title* is set
 - [ X] *ms.date* is set 
 - [ X] *author* and *ms.author* are set
-- [ ] *durationInMinutes* is set and IS ACCURATE
+- [ X] *durationInMinutes* is set and IS ACCURATE
 - [ n/a] *interactive* is set to **bash** or **azure-portal** (if exercise)
 - [n/a ] *azureSandbox* is set to true if needed
-- [ ]  Knowledge checks reviewed for spelling and accuracy
+- [X ]  Knowledge checks reviewed for spelling and accuracy
 - [ X]  Remove *ROBOTS: NOINDEX*
 
 ### Exercises
-- [ ] All exercise units have *Exercise - * prefix on titles
+- [ n/a] All exercise units have *Exercise - * prefix on titles

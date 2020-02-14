@@ -1,17 +1,17 @@
 Although the process of adding a custom domain name is simple, you might face a few issues.
 
-Unknown to you, some members of your sales department have started using Power BI. They signed up with their @*proseware.com* work email addresses. This action created an unmanaged tenant with users in that team.
+Unknown to you, some members of your sales department have started using Power BI. They signed up with their @*proseware.com* work email addresses. This action created an unmanaged Azure Active Directory (Azure AD) organization with users in that team.
 
-In this unit, you'll resolve the unmanaged tenant issue, explore other problems, and see how to resolve them.
+In this unit, you'll resolve the unmanaged Azure AD organization issue, explore other problems, and see how to resolve them.
 
-## Custom domain name is under an unmanaged tenant
+## Custom domain name is under an unmanaged organization
 
-If members of your organization sign up for OneDrive or Power BI, their email domain is used to create an unmanaged Azure AD directory. This unmanaged tenant, or directory, can only be used for that service. It can't be added as a custom domain in Azure AD.
+If members of your organization sign up for another Microsoft service, such as OneDrive or Power BI, their email domain is used to create an unmanaged Azure AD organization. This unmanaged organization, or directory, can only be used for that service. It can't be added as a custom domain in Azure AD.
 
 You have two options to resolve this problem, depending on the service they signed up for:
 
-- **Internal admin takeover**: Add yourself as the global administrator for the unmanaged tenant.
-- **External admin takeover**: Add the DNS domain name to your managed Azure AD tenant.
+- **Internal admin takeover**: Add yourself as the global administrator for the unmanaged organization.
+- **External admin takeover**: Add the DNS domain name to your managed Azure AD organization.
 
 The best solution is external admin takeover. Unfortunately, that's not an option for some services. The table below lists your options for each service.
 
@@ -25,9 +25,9 @@ The best solution is external admin takeover. Unfortunately, that's not an optio
 |Exchange Online        | External admin takeover |
 |Dynamics 365           | External admin takeover |
 
-In this scenario, the sales team signed up for Power BI. So you can do an external admin takeover. The steps are the same as for adding a custom domain. The unmanaged tenant won't stop you from completing those steps. When you add your custom domain to your managed tenant, all the domain name users, subscriptions, and license assignments are moved into your directory.
+In this scenario, the sales team signed up for Power BI. So you can do an external admin takeover. The steps are the same as for adding a custom domain. The unmanaged organization won't stop you from completing those steps. When you add your custom domain to your managed organization, all the domain name users, subscriptions, and license assignments are moved into your Azure AD organization.
 
-Internal admin takeovers are more complex, and involve signing up for a Power BI account for the unmanaged tenant. Then you use Office 365 to verify the domain name. No users, or service plans migrate during an internal takeover.
+Internal admin takeovers are more complex, and involve signing up for a Power BI account for the unmanaged organization. Then you use Office 365 to verify the domain name. No users, or service plans migrate during an internal takeover.
 
 ## Domain name verification isn't working
 
@@ -49,4 +49,4 @@ proseware.com                  TXT    3600  Answer     {MS=ms94126796}
 
 ## Domain name is already in use
 
-A domain name created in one directory means it won't be verified in a new directory. You must delete the custom domain name from the old directory. You'll also have to delete any created users or apps that use the domain name in their app ID URI. After you delete these resources and the domain name, you can then add the custom domain name to the new directory.
+A domain name created in one Azure AD organization means it won't be verified in a new organization. Delete the custom domain name from the old Azure AD organization. You'll also have to delete any created users or apps that use the domain name in their app ID URI. After you delete these resources and the domain name, you can then add the custom domain name to the new Azure AD organization.

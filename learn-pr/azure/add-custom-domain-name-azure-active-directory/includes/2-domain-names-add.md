@@ -6,11 +6,11 @@ In this unit, you'll explore how to use domain names in Azure AD and how subdoma
 
 ## What are custom domain names in Azure?
 
-When you create an Azure subscription, you specify a default domain for the tenant. It's in the format of *something*.onmicrosoft.com like contoso.onmicrosoft.com.
+When you create an Azure subscription, you specify a default domain for the organization. It's in the format of *something*.onmicrosoft.com like contoso.onmicrosoft.com.
 
 ![Screenshot of example domain name under Azure Active Directory > Custom domain names in the Azure portal.](../media/2-add-a-custom-domain.png)
 
-The default domain name *onmicrosoft.com* is provided by Azure to all tenants. You are free to use it in your organization to create users and grant them access to resources. If your company chooses this approach, your users would sign in with *username*@*something.onmicrosoft.com*. 
+The default domain name *onmicrosoft.com* is provided by Azure to all Azure AD organizations. You are free to use it in your organization to create users and grant them access to resources. If your company chooses this approach, your users would sign in with *username*@*something.onmicrosoft.com*. 
 
 You can associate a domain name that your company owns with Azure AD to make the sign-in name more memorable and identifiable for your organization. In Azure AD, you add your domain name as a custom domain name. For our scenario, let's say your company owns proseware.com. If you add that domain name as a custom domain in Azure AD, your users sign in by using the format *username*@*proseware.com*.
 
@@ -24,13 +24,13 @@ You can buy a domain name by using Azure App Service domains or a third-party do
 
 If your organization already added a custom domain for a Microsoft Office 365 subscription, you likely won't need to add it to Azure AD. The domain is listed and available to use as the primary domain.
 
-If you have Microsoft Office 365 setup in a different directory from your Azure subscription or you want to use a different domain, you may need to add a custom domain to Azure AD.
+If you have Microsoft Office 365 setup in a different organization from your Azure subscription or you want to use a different domain, you may need to add a custom domain to Azure AD.
 
-You can add up to 900 managed domain names to your Azure AD directory.
+You can add up to 900 managed domain names to your Azure AD organization.
 
 ## Add a subdomain
 
-After you add the custom domain and it's verified, any subdomains you add, like www.proseware.com or sandbox.proseware.com, are automatically verified.
+After you add the custom domain and it's verified, any subdomains you add, like www.proseware.com or sandbox.proseware.com, are automatically verified by Azure AD.
 
 ## Manage DNS records
 
