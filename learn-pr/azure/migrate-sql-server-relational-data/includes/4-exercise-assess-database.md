@@ -82,7 +82,7 @@ Look closer at the first row, though, and you will see that **Service Broker fea
 
 Select **Compatibility issues**. It will show that there were no compatibility issues with the database. If there had been, it would have listed them and you would need to resolve them before you could continue the migration.
 
-    ![Compatibility Issues](../media/4-08-compatibility-issues.png)
+![Compatibility Issues](../media/4-08-compatibility-issues.png)
 
 1. Open SQL Server Management Studio and connect to the **admsdemovm** server with Windows authentication, then to the **social** database.
 
