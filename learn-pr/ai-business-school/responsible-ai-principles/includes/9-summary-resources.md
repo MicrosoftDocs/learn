@@ -6,6 +6,7 @@ Now that you have reviewed this module, you should be able to:
 
 * Describe the importance of engaging with AI in a responsible manner.
 * Identify six guiding principles to develop and use AI responsibly.
+* Describe different approaches to responsible AI governance from experienced executives.
 
 ## Actions your organization can take
 
@@ -71,3 +72,8 @@ To learn more about our perspective on responsible AI as well as the impact of A
 
 * [Download PDF](https://aka.ms/AA62hp7) of Implications of responsible AI - Practical guide to share with others.
 * [Download PDF](https://aka.ms/AA629xb) of Responsible AI - Identify guiding principles to share with others.
+* [Download PDF](https://aka.ms/AA7a8sf) of Responsible AI - State Farm case study.
+
+## References
+
+1. [Accenture, “AI redefines insurance.” Sharad Sachdev, 23 March 2018.](https://www.accenture.com/us-en/insights/insurance/ai-redefines-insurance/)  

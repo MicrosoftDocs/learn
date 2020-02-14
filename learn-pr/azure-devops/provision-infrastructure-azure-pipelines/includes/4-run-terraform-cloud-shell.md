@@ -97,7 +97,7 @@ The `azurerm_resource_group` resource creates the resource group that holds your
 
 [!code-terraform[](code/main.tf?range=30-33)]
 
-To specify the resource group's name and location, the plan uses the `${var.variable}` syntax to read the variables defined earlier in the plan.
+To specify the resource group's name and location, the plan uses the `var.variable` syntax to read the variables defined earlier in the plan.
 
 The name "my" enables you to refer to this resource in other parts of your plan. This name does not appear in your Azure resource. Think of it as you would a variable in any other programming language.
 
@@ -107,7 +107,7 @@ The `azurerm_app_service_plan` resource defines the App Service plan. The App Se
 
 [!code-terraform[](code/main.tf?range=35-46)]
 
-As with the resource group, this resource uses the `${var.variable}` syntax to specify the name of the App Service plan.
+As with the resource group, this resource uses the `var.variable` syntax to specify the name of the App Service plan.
 
 To specify the App Service plan's location and parent resource group name, this resource reads attributes from the `azurerm_resource_group` resource named "my." Doing so enables this resource to remain synchronized with its parent resource group if the parent resource group changes.
 

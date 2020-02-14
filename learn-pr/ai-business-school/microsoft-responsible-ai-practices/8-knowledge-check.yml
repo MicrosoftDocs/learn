@@ -9,10 +9,9 @@ metadata:
   ms.author: rawortma
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 2
 content: |
-  [!include[](includes/5-knowledge-check.md)] 
+  [!include[](includes/8-knowledge-check.md)] 
 quiz:
   title: Check your knowledge
   questions:
@@ -58,3 +57,17 @@ quiz:
     - content: "AI-powered machinery will soon replace all humans in the agriculture industry, harvesting crops faster and at a higher volume."
       isCorrect: false
       explanation: "Incorrect. AI solutions can augment the human labor force and improve efficiency, but humans will always need to serve in an oversight role to AI."
+  - content: "According to the Microsoft governance model, under what conditions would a sensitive use case be categorized as “infringement on human rights”?"
+    choices:
+    - content: "The scenario involves using AI in a way that could create a significant risk of physical harm to an individual."
+      isCorrect: false
+      explanation: "Incorrect. A scenario that creates a significant risk of physical harm to an individual would be categorized as a “risk of harm.”"
+    - content: "The scenario involves using AI in a way that could possibly result in a significant restriction of personal freedom, speech, assembly, or privacy."
+      isCorrect: true
+      explanation: "Correct. Per the definition in responsible AI governance documentation at Microsoft, this scenario would be considered “infringement on human rights.”"
+    - content: "The scenario involves the use of AI in a way that may directly result in the denial of consequential services or support to an individual."
+      isCorrect: false
+      explanation: "Incorrect. This scenario would be considered a “denial of consequential services,” in which AI could potentially be used to deny an individual access to financial, housing, insurance, education, recruiting, and healthcare services."
+    - content: "The scenario involves using AI in a way that could create a significant risk of emotional harm to an individual would be categorized “infringe on human rights.”"
+      isCorrect: false
+      explanation: "Incorrect. A scenario that create a significant risk of emotional harm to an individual would be categorized as a “risk of harm.”"

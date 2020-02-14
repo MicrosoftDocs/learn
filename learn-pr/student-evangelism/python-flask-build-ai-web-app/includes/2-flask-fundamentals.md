@@ -105,7 +105,7 @@ def contact():
     return render_template("master.html", message="This is the Contact Us page")
 ```
 
-In effect, **master.html** becomes a template for output. You customize the output for each page by passing a variable named `message` into the template and referencing that variable in the template by using `{{ ... }}` expressions. For more information about using templates in Flask, see [Templates](http://flask.pocoo.org/docs/1.1.x/tutorial/templates/).
+In effect, **master.html** becomes a template for output. You customize the output for each page by passing a variable named `message` into the template and referencing that variable in the template by using `{{ ... }}` expressions. For more information about using templates in Flask, see [Templates](https://flask.palletsprojects.com/en/1.1.x/tutorial/templates/).
 
 ## Control-of-flow expressions
 
@@ -159,7 +159,7 @@ And here is **index.html**:
 {% endwith %}
 ```
 
-This example assumes that just one error message was flashed, but you can call `flash()` multiple times to queue up several messages and enumerate them with a `{% for message in messages %}` statement. For more information about message flashing in Flask, see [Message Flashing](http://flask.pocoo.org/docs/1.1.x/patterns/flashing/).
+This example assumes that just one error message was flashed, but you can call `flash()` multiple times to queue up several messages and enumerate them with a `{% for message in messages %}` statement. For more information about message flashing in Flask, see [Message Flashing](https://flask.palletsprojects.com/en/1.1.x/patterns/flashing/).
 
 ## Static files
 

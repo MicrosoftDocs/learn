@@ -2,32 +2,30 @@
 uid: learn.wwl.evaluate-requirements-for-custom-computer-vision-api
 metadata:
   title: Evaluate the requirements for implementing the Custom Vision APIs
-  description: Evaluate the requirements for implementing the Custom Vision APIs
-  ms.date: 07/22/2019
+  description: "Evaluate the requirements for implementing the Custom Vision APIs"
+  ms.date: 02/11/2020
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.learn-contact: ''
 title: Evaluate the requirements for implementing the Custom Vision APIs
 summary: Evaluate the requirements for a solution that implements the Custom Vision Prediction and Training APIs. Your completed design plans will support workflow requirements, and you'll be better prepared to work with developers and architects.
 abstract: |
   In this module you will:
-    - Evaluate the requirements for service authorization
-    - Examine the API for image prediction​ 
-    - Examine the API for training predictive models
-ratingEnabled: false
+  * Evaluate the requirements for service authorization
+  * Examine the API for image prediction
+  * Examine the API for training predictive models
 prerequisites: |
-  - Understand cloud concepts
-  - Understand core Azure services
-  - Understand security, privacy, compliance, and trust
-  - Understand Azure pricing and support 
+  * Understand cloud concepts
+  * Understand core Azure services​
+  * Understand security, privacy, compliance, and trust
+  * Understand Azure pricing and support
 iconUrl: /learn/achievements/data-ai/evaluate-the-custom-computer-vision-apis.svg
+hidden: true
 levels:
 - intermediate
 roles:
-- ai-engineer
-- student
+- business-analyst
 products:
 - azure
 units:

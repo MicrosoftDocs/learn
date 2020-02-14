@@ -377,37 +377,72 @@
     },
     {
       "source_path": "learn-pr/ai-business-school/microsoft-approach-to-ai/2-intelligent-bot-demo.md",
-      "redirect_url": "https://docs.microsoft.com/learn/microsoft-approach-to-ai/3-intelligent-bot-demo",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/microsoft-approach-to-ai/3-intelligent-bot-demo",
       "redirect_document_id": true
     },
     {
       "source_path": "learn-pr/ai-business-school/microsoft-approach-to-ai/3-pre-trained-cognitive-services.md",
-      "redirect_url": "https://docs.microsoft.com/learn/microsoft-approach-to-ai/4-pre-trained-cognitive-services",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/microsoft-approach-to-ai/4-pre-trained-cognitive-services",
       "redirect_document_id": true
     },
     {
       "source_path": "learn-pr/ai-business-school/microsoft-approach-to-ai/4-cognitive-search.md",
-      "redirect_url": "https://docs.microsoft.com/learn/microsoft-approach-to-ai/5-cognitive-search",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/microsoft-approach-to-ai/5-cognitive-search",
       "redirect_document_id": true
     },
     {
       "source_path": "learn-pr/ai-business-school/microsoft-approach-to-ai/5-conversational-ai.md",
-      "redirect_url": "https://docs.microsoft.com/learn/microsoft-approach-to-ai/6-conversational-ai",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/microsoft-approach-to-ai/6-conversational-ai",
       "redirect_document_id": true
     },
     {
       "source_path": "learn-pr/ai-business-school/microsoft-approach-to-ai/6-saas-ai-and-embedded-ai.md",
-      "redirect_url": "https://docs.microsoft.com/learn/microsoft-approach-to-ai/7-saas-ai-and-embedded-ai",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/microsoft-approach-to-ai/7-saas-ai-and-embedded-ai",
       "redirect_document_id": true
     },
     {
       "source_path": "learn-pr/ai-business-school/microsoft-approach-to-ai/7-knowledge-check.md",
-      "redirect_url": "https://docs.microsoft.com/learn/microsoft-approach-to-ai/8-knowledge-check",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/microsoft-approach-to-ai/8-knowledge-check",
       "redirect_document_id": true
     },
     {
       "source_path": "learn-pr/ai-business-school/microsoft-approach-to-ai/8-summary-and-resources.md",
-      "redirect_url": "https://docs.microsoft.com/learn/microsoft-approach-to-ai/9-summary-and-resources",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/microsoft-approach-to-ai/9-summary-and-resources",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/responsible-ai-principles/7-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/responsible-ai-principles/8-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/responsible-ai-principles/8-summary-and-resources.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/responsible-ai-principles/9-summary-resources",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/microsoft-responsible-ai-practices/2-engineering-design-principles.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/microsoft-responsible-ai-practices/5-engineering-design-principles",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/microsoft-responsible-ai-practices/3-responsible-ai-tools.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/microsoft-responsible-ai-practices/6-responsible-ai-tools",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/microsoft-responsible-ai-practices/4-ai-for-good.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/microsoft-responsible-ai-practices/7-ai-for-good",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/microsoft-responsible-ai-practices/5-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/microsoft-responsible-ai-practices/8-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/microsoft-responsible-ai-practices/6-summary-and-resources.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/microsoft-responsible-ai-practices/9-summary-resources",
       "redirect_document_id": true
     },
     {
