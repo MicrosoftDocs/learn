@@ -2,11 +2,31 @@ In this module, you will create a new IoT Edge Device identity in Azure IoT Hub 
 
 ## Create an IoT Edge Device Identity in IoT Hub using Azure Portal
 
-1. If necessary, log in to your Azure portal using your Azure account credentials.
+1. Make sure you've activated the sandbox, using the button above. The sandbox creates a free temporary resource.
 
-    If you have more than one Azure account, be sure that you are logged in with the account that is tied to the subscription that you will be using for this course.
+1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
 
-1. On your Resource group tile, click **AZ-220-HUB-_{YOUR-ID}_** to navigate to the Azure IoT Hub.
+1. Select **+ Create a resource**, from the top of the left-hand menu. In the **Search the Marketplace** search box, enter "IoT Hub".
+
+1. Select **IoT Hub** from the search results, and click **Create**.
+
+1. You'll be required to enter a **Subscription** from the selection offered to you. The sandbox subscription will be denoted by the name **Concierge Subscription**, so choose that. 
+
+    For **Resource Group**, enter <rgn>[sandbox resource group name]</rgn>. A resource group is similar to a folder, it's largely there to help you organize your resources.
+
+1. The **Region** should be the geographical region closest to you, and finally enter a friendly name for **IoT Hub Name** in the format **AZ-220-HUB-_{YOUR-ID}_**.
+
+    >[!IMPORTANT]
+    >Your hub names are publicly discoverable, so take this into account when entering names. Hub names must also be unique, as they form part of the Azure URL.
+
+1. Select **Next: Size and scale** to view the capabilities of your hub, noting all the services we need are enabled. Open up **Advanced Settings** to see the number of partitions. You can leave all entries at their default settings. Or, for peace of mind, you can change **Pricing and scale tier** to **F1: Free tier**, although you'll not be charged if you leave the tier at **S1: Standard tier**, as sandbox resources are free.
+
+    > [!NOTE]
+    > A single _partition_ has a maximum number of concurrent readers processing data. In our cheese cave scenario, we only have one reader (the back-end service app), so could get away with one partition. However, if high telemetry throughput is an issue, increasing the number of partitions, and number of concurrent connected readers, will aid in increasing efficiency.
+
+1. Now, select **Review + create**, this option gives you a chance to verify your choices before clicking **Create**, and building the hub. Building your hub can take a few minutes.
+
+1. With a sandbox, a containing resource with a name such as **AZ-220-HUB-_{YOUR-ID}** is created. From this containing resource, click **Go to resource** to go to the home page for your temporary hub.
 
 1. On the IoT Hub summary blade, click **IoT Edge** under the Automatic Device Management section. This section of the IoT Hub blade allows you to manage the IoT Edge devices connected to the IoT Hub.
 

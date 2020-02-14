@@ -4,7 +4,9 @@ In this module, you will deploy an Ubuntu Server VM with Azure IoT Edge runtime 
 
 If necessary, log in to your Azure portal using your Azure account credentials.
 
-1. Make sure to activate the **Azure Sandbox**.
+1. Make sure you've activated the sandbox, using the button above. The sandbox creates a free temporary resource.
+
+1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
 
 1. In the Azure Portal, click **Create a resource** open the Azure Marketplace.
 
