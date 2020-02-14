@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: tm-create-a-threat-model-using-foundational-data-flow-diagram-elements
+uid: learn.tm-create-a-threat-model-using-foundational-data-flow-diagram-elements
 metadata:
   title: Create a Threat Model Using Foundational Data-flow Diagram Elements
   description: Explore each element in a data-flow diagram, made up of distinct shapes, functions, and recommended context
