@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.student-evangelism.python-object-oriented-programming.7-inheritance
-title: Inheritance
+uid: learn.student-evangelism.python-object-oriented-programming.7-exercise-inheritance
+title: Exercise - Inheritance
 metadata:
-  title: Inheritance
+  title: Exercise - Inheritance
   description: Learn how to use inheritance in Python.
   ms.date: 02/17/2020
   author: shanamatthews
@@ -10,5 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-python
 durationInMinutes: 10
+azureSandbox: true
+interactive: bash-editor
 content: |
-  [!include[](includes/7-inheritance.md)]
+  [!include[](includes/7-exercise-inheritance.md)]

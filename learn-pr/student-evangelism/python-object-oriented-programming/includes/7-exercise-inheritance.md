@@ -2,38 +2,38 @@ Inheritance, also known as *subclassing*, is one of the fundamental principles o
 
 Inheritance promotes *code reuse*. If you want to write a class to represent missing persons, you don't have to copy-and-paste the code for a class representing persons. You simply inherit from the `person` class and add attributes and methods that are unique to missing persons. Now if you make a change to the `person` class, also known as the *base class* or *super class*, those changes automatically propagate down to the missing-person class.
 
-In this unit, you will see inheritance at work by writing a new class named `mMissingPerson` that inherits from `mPerson` but adds attributes and methods of its own. You also learn how to invoke methods in the base class, and how to remove inherited attributes that don't make sense in the subclass.
+In this unit, you will see inheritance at work by writing a new class named `MissingPerson` that inherits from `Person` but adds attributes and methods of its own. You also learn how to invoke methods in the base class, and how to remove inherited attributes that don't make sense in the subclass.
 
 ## Create a class to represent missing persons
 
 One characteristic that differentiates a missing person from a normal person is the date that the person went missing. Let's write a missing-person class that includes a `missing_since` attribute and a `get_years_missing()` method that computes the number of years the person has been missing.
 
-1. Return to the missing-persons notebook and enter the following class definition into a new cell. Then run the cell:
+1. Return to your **MissingPersons.py** file and enter the following class definition beneath the definition of `Person`. Feel free to remove the print statements and definition of `aPerson` at the bottom of the file.
 
-	```python
-	class mMissingPerson(mPerson):
-	    def __init__(self, name, photo, date_of_birth, date_missing):
-	        # Construct the base object
-	        mPerson.__init__(self, name, photo, date_of_birth)
-	        
-	        # Add a missing_since attribute
-	        self.missing_since = date_missing
-	        
-	    # Add a get_years_missing() method
-	    def get_years_missing(self):
-	        return int((datetime.datetime.now() - self.missing_since).days / 365.25)
-	```
+    ```python
+    class MissingPerson(Person):
+        def __init__(self, name, photo, date_of_birth, date_missing):
+            # Construct the base object
+            Person.__init__(self, name, photo, date_of_birth)
 
-	You just defined a new class (subclass) named `mMissingPerson` that inherits from `mPerson`. When created, an `mMissingPerson` object creates an `mPerson` object by calling the latter's `__init__()` method. Then it defines an instance attribute of its own (`missing_since`) and a method that subtracts the date the person went missing from today's date to compute how long that person has been missing. 
+            # Add a missing_since attribute
+            self.missing_since = date_missing
+
+        # Add a get_years_missing() method
+        def get_years_missing(self):
+            return int((datetime.datetime.now() - self.missing_since).days / 365.25)
+    ```
+
+    You just defined a new class (subclass) named `MissingPerson` that inherits from `Person`. When created, an `MissingPerson` object creates an `Person` object by calling the latter's `__init__()` method. Then it defines an instance attribute of its own (`missing_since`) and a method that subtracts the date the person went missing from today's date to compute how long that person has been missing.
 
 1. Use the following code to create an `mMissingPerson` object and show how long the person has been missing:
 
-	```python
-	aPerson = mMissingPerson("Adam", faces.images[0], datetime.datetime(1990, 9, 16), datetime.datetime(2016, 1, 1))
-	print(aPerson.name + ' has been missing for ' + str(aPerson.get_years_missing()) + ' years')
-	```
+    ```python
+    aPerson = mMissingPerson("Adam", faces.images[0], datetime.datetime(1990, 9, 16), datetime.datetime(2016, 1, 1))
+    print(aPerson.name + ' has been missing for ' + str(aPerson.get_years_missing()) + ' years')
+    ```
 
-	Observe that the `mMissingPerson` object contains the `name` attribute inherited from `mPerson` as well as the `get_years_missing()` method it added itself. When creating an `mMissingPerson` object, you must provide the date that the person went missing as well as a name, a photo, and a date of birth. That comes from `mMissingPerson`'s `__init__()` method, which serves the same purpose in an inherited class as it does in a base class.
+    Observe that the `mMissingPerson` object contains the `name` attribute inherited from `mPerson` as well as the `get_years_missing()` method it added itself. When creating an `mMissingPerson` object, you must provide the date that the person went missing as well as a name, a photo, and a date of birth. That comes from `mMissingPerson`'s `__init__()` method, which serves the same purpose in an inherited class as it does in a base class.
 
 If you'd like, use a `print(dir(aPerson))` statement to list the object's methods and attributes and confirm that the list includes members defined in `mPerson` as well as members defined in `mMissingPerson`. 
 
@@ -45,35 +45,35 @@ In South Korea, babies are considered to be 1 year old when they are born. Conse
 
 1. Add the following class definition to the notebook and run it:
 
-	```python
-	class mMissingSKPerson(mMissingPerson):
-	    def __init__(self, name, photo, date_of_birth, date_missing):
-	        mMissingPerson.__init__(self, name, photo, date_of_birth, date_missing)
-	
-	    # Override the get_age() method
-	    def get_age(self):
-	        return super().get_age() + 1
-	```
+    ```python
+    class mMissingSKPerson(mMissingPerson):
+        def __init__(self, name, photo, date_of_birth, date_missing):
+            mMissingPerson.__init__(self, name, photo, date_of_birth, date_missing)
+    
+        # Override the get_age() method
+        def get_age(self):
+            return super().get_age() + 1
+    ```
 
-	Notice that `get_age()` is overridden in the inherited class, but rather than duplicate the code for the base class's `get_age()` method and add 1 to the result, it invokes the base class's `get_age()` method and adds 1.
+    Notice that `get_age()` is overridden in the inherited class, but rather than duplicate the code for the base class's `get_age()` method and add 1 to the result, it invokes the base class's `get_age()` method and adds 1.
 
 1. Now perform a test by executing the following statements:
 
-	```python
-	date_birth = datetime.datetime(1990, 9, 16)
-	date_missing = datetime.datetime(2016, 1, 1)
-	face = faces.images[0]
-	name = "Adam"
-	
-	aPerson = mPerson(name, face, date_birth)
-	print(str(aPerson.get_age()))
-	
-	aPerson = mMissingPerson(name, face, date_birth, date_missing)
-	print(str(aPerson.get_age()))
-	
-	aPerson = mMissingSKPerson(name, face, date_birth, date_missing)
-	print(str(aPerson.get_age()))
-	```
+    ```python
+    date_birth = datetime.datetime(1990, 9, 16)
+    date_missing = datetime.datetime(2016, 1, 1)
+    face = faces.images[0]
+    name = "Adam"
+    
+    aPerson = mPerson(name, face, date_birth)
+    print(str(aPerson.get_age()))
+    
+    aPerson = mMissingPerson(name, face, date_birth, date_missing)
+    print(str(aPerson.get_age()))
+    
+    aPerson = mMissingSKPerson(name, face, date_birth, date_missing)
+    print(str(aPerson.get_age()))
+    ```
 
 Can you predict what the output from the three `print()` statements will be before you run the code?
 
