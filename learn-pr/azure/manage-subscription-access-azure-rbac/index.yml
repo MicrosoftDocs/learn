@@ -26,6 +26,7 @@ roles:
 products:
 - azure
 - azure-active-directory
+- azure-rbac
 units:
 - learn.azure.manage-subscription-access-azure-rbac.introduction
 - learn.azure.manage-subscription-access-azure-rbac.identify-appropriate-role-assign
