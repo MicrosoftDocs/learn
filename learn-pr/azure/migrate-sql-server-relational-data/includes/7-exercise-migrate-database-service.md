@@ -108,7 +108,7 @@ You can now go to the Azure SQL database and view your migrated data.
 
 1. Navigate back to your **admsdemorg** resource group and select the **Social (admsdemosqlv2v2s22x.../Social)** database.
 
-    ![Firewall pane](../media/7-sql-database.png)
+    ![Overview pane](../media/7-sql-database.png)
 
 1. Select **Set server firewall**.
 
@@ -128,6 +128,6 @@ You can now go to the Azure SQL database and view your migrated data.
     SELECT * FROM [dbo].[Twitters];
     ```
 
-    ![Firewall pane](../media/7-sql-query.png)
+    ![Select pane](../media/7-sql-select.png)
 
     You should see data from your database, indicating a successful migration.
