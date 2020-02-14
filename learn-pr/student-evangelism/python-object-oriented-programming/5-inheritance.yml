@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-python
 durationInMinutes: 10
 content: |
-  [!include[](includes/4-inheritance.md)]
+  [!include[](includes/5-inheritance.md)]

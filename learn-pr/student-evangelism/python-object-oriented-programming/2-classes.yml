@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-python
 durationInMinutes: 10
 content: |
-  [!include[](includes/1-classes.md)]
+  [!include[](includes/2-classes.md)]
