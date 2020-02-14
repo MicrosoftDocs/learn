@@ -1,0 +1,28 @@
+### YamlMime:ModuleUnit
+uid: learn.tm-approach-your-data-flow-diagram-with-the-right-threat-model-focus.2-system-focused-approach
+title: System Focused Approach in Threat Modeling
+metadata:
+  title: System Focused Approach in Threat Modeling
+  description: Learn how to use the system focused approach in threat modeling
+  ms.date: 02/28/2020
+  author: rodsan
+  ms.author: rodsan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-threat-modeling
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-system-focused-approach.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the benefit of the system focused approach?"
+    choices:
+    - content: "This approach allows you to focus on one critical asset at a time to help identify all potential threats and ways to reduce or eliminate risk"
+      isCorrect: false
+      explanation: "This statement corresponds to the asset focused approach"
+    - content: "This approach provides information into a potential attacker, including their means, motive, and plan of action"
+      isCorrect: false
+      explanation: "This statement corresponds to the attacker focused approach"
+    - content: "This approach allows you to focus on how the system handles users and data. It also validates security assumptions across physical and logical assets used with the service"
+      isCorrect: true
+      explanation: "The system focused approach looks at the whole system, not just parts of it"

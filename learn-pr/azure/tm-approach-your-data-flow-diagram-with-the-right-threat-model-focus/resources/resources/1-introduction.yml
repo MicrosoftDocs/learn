@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.tm-create-a-threat-model-using-foundational-data-flow-diagram-elements.1-introduction
+uid: learn.tm-approach-your-data-flow-diagram-with-the-right-threat-model-focus.1-introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: Explore each element in a data-flow diagram, made up of distinct shapes, functions, and recommended context
+  description: Learn what it means to conduct a system focused threat modeling exercise, and the high-level differences between system, asset, and attacker focused approaches
   ms.date: 02/28/2020
   author: rodsan
   ms.author: rodsan

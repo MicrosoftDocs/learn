@@ -1,19 +1,19 @@
 ### YamlMime:Module
-uid: learn.tm-create-a-threat-model-using-foundational-data-flow-diagram-elements
+uid: learn.tm-approach-your-data-flow-diagram-with-the-right-threat-model-focus
 metadata:
-  title: Create a Threat Model Using Foundational Data-flow Diagram Elements
-  description: Explore each element in a data-flow diagram, made up of distinct shapes, functions, and recommended context
+  title: Approach Your Data-Flow Diagram with the Right Threat Model Focus
+  description: Learn what it means to conduct a system focused threat modeling exercise, and the high-level differences between system, asset, and attacker focused approaches
   ms.date: 02/28/2020
   author: rodsan
   ms.author: rodsan
   ms.topic: interactive-tutorial
   ms.prod: learning-threat-modeling
-title: Create a Threat Model Using Foundational Data-flow Diagram Elements
-summary: Data-flow diagrams are graphical representations of your system and should specify each element and interaction, which are analyzed against STRIDE to help identify threats and reduce or eliminate risk.
+title: Approach Your Data-Flow Diagram with the Right Threat Model Focus
+summary: Threat modeling is an effective technique to help you identify threats and ways to reduce or eliminate risk. We start by deciding to focus on either **what** needs to be protected or **who** it needs protection from.
 abstract: |
-    In this module, you will:
-    - The shape and function of each element
-    - The context to include when creating a data-flow diagram
+  In this module, you'll learn:
+  - What a system focused threat modeling means
+  - The differences between the system, asset, and attacker focused approaches
 prerequisites: None
 iconUrl: /learn/achievements/generic-badge.svg
 ratingEnabled: false
@@ -31,12 +31,9 @@ products:
 - m365-security-center
 - m365-ems-cloud-app-security
 units:
-- learn.tm-create-a-threat-model-using-foundational-data-flow-diagram-elements.1-introduction
-- learn.tm-create-a-threat-model-using-foundational-data-flow-diagram-elements.2-process-the-task-element
-- learn.tm-create-a-threat-model-using-foundational-data-flow-diagram-elements.3-data-store-the-storage-element
-- learn.tm-create-a-threat-model-using-foundational-data-flow-diagram-elements.4-external-entity-the-no-control-element
-- learn.tm-create-a-threat-model-using-foundational-data-flow-diagram-elements.5-data-flow-the-data-in-transit-element
-- learn.tm-create-a-threat-model-using-foundational-data-flow-diagram-elements.6-trust-boundary-the-trust-zone-change-element
-- learn.tm-create-a-threat-model-using-foundational-data-flow-diagram-elements.7-summary
+- learn.tm-approach-your-data-flow-diagram-with-the-right-threat-model-focus.1-introduction
+- learn.tm-approach-your-data-flow-diagram-with-the-right-threat-model-focus.2-system-focused-approach
+- learn.tm-approach-your-data-flow-diagram-with-the-right-threat-model-focus.3-additional-approaches
+- learn.tm-approach-your-data-flow-diagram-with-the-right-threat-model-focus.4-summary
 badge:
-  uid: learn.tm-create-a-threat-model-using-foundational-data-flow-diagram-elements.badge
+  uid: learn.tm-approach-your-data-flow-diagram-with-the-right-threat-model-focus.badge
