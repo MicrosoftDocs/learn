@@ -235,7 +235,7 @@ Let's use the IP flow verify tool to get more information.
     | Direction | Outbound |
     | Local IP address | 10.10.2.4 |
     | Local port | 3389 |
-    | Remote port | 10.10.1.4 |
+    | Remote IP | 10.10.1.4 |
     | Remote port | 3389 |
     | | |
 
