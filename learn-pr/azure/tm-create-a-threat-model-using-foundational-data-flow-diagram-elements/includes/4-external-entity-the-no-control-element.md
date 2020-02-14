@@ -1,5 +1,3 @@
-External Entity:
-
 ![External Entity Element](../media/external-entity.png)
 
 Depicted by a square, an external entity can be a process, data store, or even a full-fledged system outside of your direct control. Examples include:
@@ -8,7 +6,8 @@ Depicted by a square, an external entity can be a process, data store, or even a
 - Tight integration with a third-party authentication service
 - Services created by other teams within your organization
 
-Using this element ensures everyone understands what can and cannot be changed by your team.
+> [!NOTE]
+> Using this element ensures everyone understands what can and cannot be changed by your team.
  
 Include the following context to each external entity element:
 

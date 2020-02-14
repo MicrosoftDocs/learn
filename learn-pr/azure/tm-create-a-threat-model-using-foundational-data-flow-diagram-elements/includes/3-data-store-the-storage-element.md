@@ -1,5 +1,3 @@
-Data Store:
-
 ![Data Store Element](../media/data-store.png)
 
 Depicted by parallel lines, this element represents data stored on a temporary or permanent basis. Examples include:
@@ -7,7 +5,8 @@ Depicted by parallel lines, this element represents data stored on a temporary o
 - Using the browser cache to store user session-related data
 - Adding a security log event to a database
 
-Data stores require security controls to keep data accessible, intact, and safe from prying eyes. These controls are easier to implement when the right context is included.
+> [!NOTE]
+> Data stores require security controls to keep data accessible, intact, and safe from prying eyes. These controls are easier to implement when the right context is included.
 
 What to look out for:
  

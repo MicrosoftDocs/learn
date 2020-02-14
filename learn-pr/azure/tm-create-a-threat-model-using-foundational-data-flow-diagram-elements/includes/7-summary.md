@@ -5,8 +5,6 @@ In this module, you explored each element in a data-flow diagram, made up of dis
 - The shape and function of each element
 - The context to include when you create a data-flow diagram
 
-## Learn more
-
 ## Prerequisites
 
 - None

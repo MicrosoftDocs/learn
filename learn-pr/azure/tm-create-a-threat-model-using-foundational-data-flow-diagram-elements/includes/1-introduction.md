@@ -1,4 +1,4 @@
-Data-flow diagrams are graphical representations of your system and should specify each:
+Data-flow diagrams are graphical representations of your system and should specify:
 
 - **Process** - Task that receives, modifies, or redirects input to output, like a web service
 - **Data store** - Permanent and temporary data storage, like a web cache and Azure DB
