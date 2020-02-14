@@ -35,8 +35,17 @@ roles:
 products:
 - azure-iot-edge
 units:
-- learn.iot.create-your-first-iot-central-app.introduction
-- learn.iot.create-your-first-iot-central-app.summary
+- learn.iot.setup-an-iot-edge-gateway.introduction
+- learn.iot.setup-an-iot-edge-gateway.deploy-an-azure-iot-edge-enabled-linux-vm-as-an-iot-edge-device
+- learn.iot.setup-an-iot-edge-gateway.generate-and-configure-iot-edge-device-ca-certificates
+- learn.iot.setup-an-iot-edge-gateway.create-an-iot-edge-device-identity-in-iot-hub-using-azure-portal
+- learn.iot.setup-an-iot-edge-gateway.setup-an-iot-edge-gateway-hostname
+- learn.iot.setup-an-iot-edge-gateway.connect-an-iot-edge-gateway-device-to-iot-hub
+- learn.iot.setup-an-iot-edge-gateway.open-iot-edge-gateway-device-ports-for-communication-with-downstream-devices
+- learn.iot.setup-an-iot-edge-gateway.create-a-downstream-device-identity-in-iot-hub
+- learn.iot.setup-an-iot-edge-gateway.connect-a-downstream-device-to-an-iot-edge-gateway
+- learn.iot.setup-an-iot-edge-gateway.verify-event-flow-from-downstream-device-through-iot-edge-gateway-to-iot-hub
+- learn.iot.setup-an-iot-edge-gateway.summary
 badge:
 ###  uid: learn.iot.iot-test.badge
   uid: learn.iot.iot-central-refrigerated-truck-module.badge

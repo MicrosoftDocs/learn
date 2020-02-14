@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.iot.setup-an-iot-edge-gateway.setup-an-iot-edge-gateway-hostname
+metadata:
+  title: Setup an IoT Edge Gateway Hostname
+  description: Setup an IoT Edge Gateway Hostname
+  ms.date: 02/12/2020
+  author: PeterTurcan
+  ms.author: pdecarlo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Setup an IoT Edge Gateway Hostname
+# azureSandbox: true
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-setup-an-iot-edge-gateway-hostname.md)]

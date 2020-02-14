@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.iot.setup-an-iot-edge-gateway.introduction.summary
+uid: learn.iot.setup-an-iot-edge-gateway.summary
 metadata:
   title: Summary
   description: Summary
@@ -16,41 +16,36 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'What ID is identical for all devices connected to one IoT Central app?'
+  - content: 'When configuring `config.yaml` for an IoT Edge Gateway Device, which X.509 certificate settings correspond to the certificate used by the downstream device for secure authentication?'
     choices: 
-    - content: 'Scope ID'
+    - content: 'device_ca_cert'
       isCorrect: true
-      explanation: The Scope ID identifies the IoT Central app.
-    - content: 'Device ID'
+      explanation: This is the Device CA Certificate for the IoT Edge Device.
+    - content: 'device_ca_pk'
       isCorrect: false
-      explanation: The Device ID is unique to each device.
-    - content: 'Primary Key'
+      explanation: This is the Device CA Private Key for the IoT Edge Device.
+    - content: 'trusted_ca_certs'
       isCorrect: false
-      explanation: The Primary Key is unique to each device.
+      explanation: This is the Root CA Certificate. This certificate must contain all the trusted CA certificates required for Edge module communications.
 
-  - content: 'What is the process of authenticating devices to IoT Central known as?'
+  - content: 'What is the port number designated for MQTT transport on IoT Edge devices'
     choices: 
-    - content: 'Authenticating'
+    - content: '443'
       isCorrect: false
-      explanation: Good try, but no, there's a specific name for authenticating devices.
-    - content: 'Servicing'
+      explanation: Port 443 is the designated port used for HTTPS, MQTT + WS, and AMQP + WS transport on IoT Edge Devices.
+    - content: '5671'
       isCorrect: false
-      explanation: Servicing is a broader term than authenticating devices.
-    - content: 'Provisioning'
+      explanation: Port 5671 is the designated port used for AMQP transport on IoT Edge Devices.
+    - content: '8883'
       isCorrect: true
-      explanation: This term is what you'll see in the IoT Central portal.
+      explanation: Port 8883 is the designated port used for MQTT transport on IoT Edge Devices.
       
-  - content: 'Internally, what elements make up a Geopoint?'
+  - content: 'When configuring a downstream device to communicate with IoT Hub through an IoT Edge Gateway, the device must be configured to support which of the following? '
     choices: 
-    - content: 'Latitude, Longitude, Altitude'
+    - content: 'Parent device'
       isCorrect: true
-      explanation: Altitude isn't needed in our scenario, but some applications will certainly require it.
-    - content: 'Latitude, Longitude'
+      explanation: A parent device configuration is required for communication from a downstream device to an IoT Edge Gateway.
+    - content: 'Authentication type'
       isCorrect: false
-      explanation: These two values are all we needed in the refrigerated truck scenario, but there's more to a Geopoint.
-    - content: 'X and Y coordinates'
-      isCorrect: false
-      explanation: X and Y coordinates work best on 2D rectangular graphs, rather than a spheroid such as the Earth.
-    - content: 'Latitude, Longitude, Time'
-      isCorrect: false
-      explanation: The space-time dimension isn't part of a Geopoint.
+      explanation: All IoT Edge devices require an Authentication type to be set, whether using an IoT Edge Gateway or directly connecting to an IoT Hub from the device itself.
+

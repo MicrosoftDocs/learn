@@ -87,14 +87,14 @@ You will do this on the `AZ-220-VM-EDGEGW-{YOUR-ID}` Virtual Machine using a hel
     This script created several certificate and key files. Make note of the following files that will be referred to later:
 
     ```bash
-     # Device CA certificate
-     ~/certificates/certs/iot-edge-device-ca-MyEdgeDeviceCA-full-chain.cert.pem
-     # Device CA private key
-     ~/certificates/private/iot-edge-device-ca-MyEdgeDeviceCA.key.pem
-     ```
+    # Device CA certificate
+    ~/certificates/certs/iot-edge-device-ca-MyEdgeDeviceCA-full-chain.cert.pem
+    # Device CA private key
+    ~/certificates/private/iot-edge-device-ca-MyEdgeDeviceCA.key.pem
+    ```
 
-        >[!NOTE]
-        > Now that the IoT Edge Device CA certificate has been generated, do not re-run the previous command that generates the root CA certificate. Doing so will overwrite the existing certificate with a new one that will no longer match the `MyEdgeDeviceCA` IoT Edge Device CA certificate that was just generated.
+    >[!NOTE]
+    > Now that the IoT Edge Device CA certificate has been generated, do not re-run the previous command that generates the root CA certificate. Doing so will overwrite the existing certificate with a new one that will no longer match the `MyEdgeDeviceCA` IoT Edge Device CA certificate that was just generated.
 
  1. To confirm that the Azure IoT Edge Runtime is installed on the VM, run the following command:
      ```bash
@@ -178,4 +178,4 @@ You will do this on the `AZ-220-VM-EDGEGW-{YOUR-ID}` Virtual Machine using a hel
     
      Once the files are copied to the **Azure Cloud Shell** storage, from the **AZ-220-VM-EDGEGW** virtual machine, you will be able to easily download any of the IoT Edge Device certificate and key files to your local machine as necessary. Files can be downloaded from the Azure Cloud Shell using the `download <filename>` command.
 
-     Congratulations, that's the end of the module! In the next module, we will create an IoT Edge Device Identiry in IoT Hub using the Azure Portal.
+     Congratulations, that's the end of the module! In the next module, we will create an IoT Edge Device Identity in IoT Hub using the Azure Portal.
