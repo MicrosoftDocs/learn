@@ -1,6 +1,7 @@
 As a business analyst, you need to determine the most appropriate kind of HDInsight cluster to create in order to build your solution. Interactive Query clusters provide a number of features and interoperability options that make it uniquely beneficial to business analysts familiar with SQL. It's great for users who want to work with business intelligence tools and require fast interactive queries. There are other benefits, such as support for a range of file formats, concurrency, and Atomic, Consistent, Isolated, and Durable (ACID) transactions. Not to mention integration with Apache Ranger for granular row and column level control over the data. 
 
-> [!Note]: The content in this module pertains to Interactive Query clusters created for HDInsight 4.0, which uses Hive 3.1 and LLAP, also known as Hive LLAP.
+> [!Note]
+> The content in this module pertains to Interactive Query clusters created for HDInsight 4.0, which uses Hive 3.1 and LLAP, also known as Hive LLAP.
 
 ## You have a large data set that’s ready to be queried
 Interactive Query clusters are best suited for large data sets that can be queried as-is, or with minimal transformations. Situations where you’ll be performing a variety of queries on the data and you need immediate responses. Interactive Query clusters are not optimized for performing long-running batch computations. Interactive query supports the following file formats: ORC, Parquet, CSV, Avro, JSON, text, and tsv.
