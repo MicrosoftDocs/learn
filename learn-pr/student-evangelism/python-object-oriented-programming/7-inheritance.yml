@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.student-evangelism.python-object-oriented-programming.6-inheritance
+uid: learn.student-evangelism.python-object-oriented-programming.7-inheritance
 title: Inheritance
 metadata:
   title: Inheritance
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-python
 durationInMinutes: 10
 content: |
-  [!include[](includes/6-inheritance.md)]
+  [!include[](includes/7-inheritance.md)]

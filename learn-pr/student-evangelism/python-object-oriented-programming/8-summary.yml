@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-  uid: learn.student-evangelism.python-object-oriented-programming.7-summary
+  uid: learn.student-evangelism.python-object-oriented-programming.8-summary
   title: Summary and knowledge check
   metadata:
     title: Summary and knowledge check
@@ -11,7 +11,7 @@
     ms.prod: learning-azure
   durationInMinutes: 3  
   content: |
-      [!include[](includes/7-summary.md)]
+      [!include[](includes/8-summary.md)]
   quiz:
     title: Check your knowledge
     questions:

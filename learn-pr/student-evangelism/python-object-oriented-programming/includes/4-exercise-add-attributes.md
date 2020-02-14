@@ -30,7 +30,7 @@ So that we have some data to work with, let's load a database of facial images. 
 
     It will take a bit to install. Watch the output of Cloud Shell to see when it finishes.
 
-1. When it finishes, use the following command to run your code:
+1. When it finishes, use the following command to run your code (make sure you've saved the new file):
 
     ```bash
     python3 MissingPersons.py
@@ -52,7 +52,7 @@ Instance attributes differ from one class instance (object) to another. You can'
 
 Python provides multiple ways to create instance attributes, but the most common is to define an `__init__()` method containing the attributes you want objects to have.
 
-1. Type the following code in your file to define an `Person` class containing three instance attributes:
+1. Add the following code to the bottom of your file to define a `Person` class containing three instance attributes:
 
     ```python
     class Person:
@@ -70,7 +70,7 @@ Python provides multiple ways to create instance attributes, but the most common
 
     Three arguments — `name`, `photo`, and `date_of_birth` — must be provided when the object is created. (The `self` argument is provided by Python itself.) Each is copied into the corresponding instance attribute.
 
-1. Let's test these attributes. Add the following line of code at the top of the file, right below the exisint import statement:
+1. Let's test these attributes. Add the following line of code at the top of the file, right below the existing import statement:
 
     ```python
     import datetime
@@ -87,6 +87,16 @@ Python provides multiple ways to create instance attributes, but the most common
     ```python
     print(aPerson.name)
     ```
+
+    Feel free to remove the previous print line and associated comment (`print faces.data.shape`) to clean up your code.
+
+1. Save your file and run it with the Cloud Shell:
+
+    ```bash
+    python3 MissingPersons.py
+    ```
+
+    Your code should now output `Adam`.
 
 Because `name`, `photo`, and `dob` are instance attributes, you could create hundreds of `Person` objects, and each could hold a different name, photo, and date of birth. If these were class attributes instead, `name`, `photo`, and `dob` would have to be the same for every person — clearly not a model of what happens in the real world.
 

@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.student-evangelism.python-object-oriented-programming.5-exercise-methods
+uid: learn.student-evangelism.python-object-oriented-programming.6-exercise-add-methods
 title: Exercise - Methods
 metadata:
   title: Exercise - Methods
@@ -10,5 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-python
 durationInMinutes: 10
+azureSandbox: true
+interactive: bash-editor
 content: |
-  [!include[](includes/5-exercise-methods.md)]
+  [!include[](includes/6-exercise-add-methods.md)]
