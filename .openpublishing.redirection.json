@@ -346,8 +346,8 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "learn-pr/app-center/intro-to-app-center/introduction.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-app-center/introduction",
+      "source_path": "learn-pr/app-center/intro-to-app-center/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-app-center/1-introduction",
       "redirect_document_id": true
     },
     {
