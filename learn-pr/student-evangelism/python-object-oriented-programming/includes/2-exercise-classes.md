@@ -27,7 +27,7 @@ First, we will start the Python interpreter in Cloud Shell to look at some objec
     >>>
     ```
 
-1. Now, type or paste the following code into Cloud Shell:
+1. Now, type or paste the following code into the running Python interpreter:
 
     ```python
     print(type(1))
