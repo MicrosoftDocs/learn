@@ -1,4 +1,4 @@
-In this module, you will use the Azure CLI to monitor the events being sent to Azure IoT Hub from the downstream IoT Device through the IoT Edge Gateway. This will validate that everything is working correctly.
+In this module, you will use the Azure CLI to monitor the events sent to Azure IoT Hub from the downstream IoT Device through the IoT Edge Gateway. These steps will validate that everything is working correctly.
 
 ## Verify Event Flow from Downstream Device through IoT Edge Gateway to IoT Hub
 
@@ -6,7 +6,7 @@ In this module, you will use the Azure CLI to monitor the events being sent to A
 
     If you have more than one Azure account, be sure that you are logged in with the account that is tied to the subscription that you will be using for this course.
 
-1. Navigate to the Azure Portal and click on the **Cloud Shell** icon to open up the **Azure Cloud Shell** . When the pane opens, choose the option for the **Bash** terminal within the Cloud Shell.
+1. Navigate to the Azure portal and click on the **Cloud Shell** icon to open up the **Azure Cloud Shell**. When the pane opens, choose the option for the **Bash** terminal within the Cloud Shell.
 
 1. Within the **Cloud Shell**, run the following command to monitor the stream of events flowing to the Azure IoT Hub. This step will verify that events from the simulate device, being sent to the IoT Edge Gateway, are being received by the Azure IoT Hub.
 
