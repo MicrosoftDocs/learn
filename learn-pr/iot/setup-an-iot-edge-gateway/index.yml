@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.iot.setup-an-iot-edge-gateway.introduction
+uid: learn.iot.setup-an-iot-edge-gateway
 metadata:
   title: Setup an IoT Edge Gateway
   description: This module is theoretical and will walk you through how an IoT Edge device can be used as a gateway.
@@ -13,19 +13,22 @@ summary: >
   This module is theoretical and will walk you through how an IoT Edge device can be used as a gateway.
 abstract: | 
   In this module, you will:
-  - Create an Azure IoT Central custom app, using the IoT Central portal
-  - Create a device template for a custom device, using the IoT Central portal
-  - Create a programming project to simulate a refrigerated truck, with routes selected by Azure Maps
-  - Monitor and command the simulated truck, from an IoT Central dashboard
+  - Deploy an Azure IoT Edge enabled Linux VM
+  - Generate and Configure IoT Edge Device CA Certificates
+  - Create an IoT Edge Device Identity in IoT Hub using Azure Portal
+  - Setup an IoT Edge Gateway Hostname
+  - Connect an IoT Edge Device to IoT Hub
+  - Open IoT Edge Gateway Device Ports for Communication with Downstream Devices
+  - Create a Downstream Device Identity in IoT Hub
+  - Connect a Downstream Device to IoT Edge Gateway
+  - Verify Event Flow from Downstream Device through IoT Edge Gateway to IoT Hub
 prerequisites: | 
   - An introductory knowledge of the purpose of Azure IoT
   -	Ability to navigate Azure IoT portal 
-  -	Ability to use Node.js, or C#, at the beginner level 
   -	Experience using Visual Studio, or Visual Studio Code, at the beginner level 
-  - Must have, or be able to open, an Azure Maps account 
 ### iconUrl: /learn/achievements/generic-badge.svg
 ### iconUrl: /learn/achievements/iot/iot-hub-conveyor-belt-vibration-detection.svg
-iconUrl: /learn/achievements/iot/iot-central-refrigerated-truck-module.svg
+iconUrl: /learn/achievements/generic-badge.svg
 ### hidden: true
 ratingEnabled: true
 levels:
@@ -48,4 +51,4 @@ units:
 - learn.iot.setup-an-iot-edge-gateway.summary
 badge:
 ###  uid: learn.iot.iot-test.badge
-  uid: learn.iot.iot-central-refrigerated-truck-module.badge
+  uid: learn.iot.iot-test.badge
