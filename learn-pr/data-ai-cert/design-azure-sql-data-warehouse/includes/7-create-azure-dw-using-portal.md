@@ -9,7 +9,7 @@ Complete these steps to create a data warehouse that contains the *AdventureWork
 
 1. In the upper-left corner, select **+ Create a resource**.
 
-Select **Databases** > **Azure Synapse Analytics (formerly SQL DW)** to start the creation process.
+1. Select **Databases** > **Azure Synapse Analytics (formerly SQL DW)** to start the creation process.
 
     ![Screenshots of creating an Azure data warehouse](../media/6-create-azure-data-warehouse.png)
 
