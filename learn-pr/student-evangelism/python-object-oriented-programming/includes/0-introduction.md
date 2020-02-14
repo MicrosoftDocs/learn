@@ -10,11 +10,12 @@ Writing object-oriented code in Python is a little different than writing proced
 
 In this module, you will:
 
-- Learn how to define classes in Python.
-- Learn how to instantiate classes in Python.
-- Learn how to add attributes to classes.
-- Learn how to add methods to classes.
-- Learn how to create new classes that inherit from others.
+- Write classes in Python
+- Add attributes to a class
+- Add methods to a class
+- Learn how to inherit classes
+- Add methods and attributes to an inherited classes
+- Override methods inherited from a base class
 
 ## Prerequisites
 A basic knowledge of programming and Python.

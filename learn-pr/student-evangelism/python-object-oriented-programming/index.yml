@@ -12,12 +12,12 @@ title: Object-oriented programming in Python
 summary: Learn more about object-oriented programming with this next-steps module in Python.
 abstract:  | 
   In this module, you will:
-  - Learn how to write classes in Python
-  - Learn how to add attributes to a class
-  - Learn how to add methods to a class
+  - Write classes in Python
+  - Add attributes to a class
+  - Add methods to a class
   - Learn how to inherit classes
-  - Learn how to add methods and attributes to inherited classes
-  - Learn how to override methods inherited from a base class
+  - Add methods and attributes to an inherited classes
+  - Override methods inherited from a base class
 prerequisites:  |
   A basic knowledge of programming and Python.
 iconUrl: /learn/achievements/generic-badge.svg
