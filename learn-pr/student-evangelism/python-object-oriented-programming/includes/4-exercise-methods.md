@@ -1,12 +1,12 @@
-Methods tell an object what to do and how to do it. For example, a `person` class might contain a `show_face()` method for displaying the person's face, and a `get_age()` method that returns the person's age. Methods frequently operate on data stored in attributes. `get_age()`, for example, might subtract a birth date stored in an attribute from today's date to compute a person's age in years. 
+Methods tell an object what to do and how to do it. For example, a `Person` class might contain a `show_face()` method for displaying the person's face, and a `get_age()` method that returns the person's age. Methods frequently operate on data stored in attributes. `get_age()`, for example, might subtract a birth date stored in an attribute from today's date to compute a person's age in years. 
 
-Python objects always have methods, even if you don't define any yourself. For example, every object has a `__str__()` method added by Python itself that returns a string representation of the object. The default `__str__()` method works fine for something simple like an `int`, but it does nothing meaningful a `person` object. When you call `__str__()` on a `person` object, you get something like this:
+Python objects always have methods, even if you don't define any yourself. For example, every object has a `__str__()` method, added by Python, that returns a string representation of the object. The default `__str__()` method works fine for something simple like an `int`, but it does nothing meaningful a `person` object. When you call `__str__()` on a `person` object, you get something like this:
 
 `<__main__.person object at 0x7ff9e91ab978>`
 
 For this reason, Python programmers frequently replace the built-in `__str__()` method with one of their own when they write custom classes to serve an application.
 
-In this unit, you add methods to the `mPerson` class you wrote in the previous unit to make it a first-class citizen in Python. In addition to adding methods of your own, you will override the `__str__()` method to tailor its output for `mPerson`. Finally, you will discover that when you pass an object to Python's built-in `str()` function, Python calls the object's `__str__()` method internally.
+In this unit, you add methods to the `Person` class you wrote in the previous unit to make it a first-class citizen in Python. In addition to adding methods of your own, you will override the `__str__()` method to tailor its output for `Person`. Finally, you will discover that when you pass an object to Python's built-in `str()` function, Python calls the object's `__str__()` method internally.
 
 ## Static methods vs. instance methods
 
@@ -36,15 +36,15 @@ Then, you could square a number by calling the static `square` method:
 square = mathops.square(2)
 ```
 
-The keyword `@staticmethod` decorating the method tells Python that `square` is a static method, not an instance method.
+The keyword `@staticmethod` "decorating" the method tells Python that `square` is a static method, not an instance method.
 
-Only instance methods can access instance attributes. If you stored a person's birth date in an instance attribute, you couldn't read that date from a static method because there is no class instance associated with a static method — and therefore no birth date to read.  
+Only instance methods can access instance attributes. If you stored a person's birth date in an instance attribute, you couldn't read that date from a static method because there is no class instance associated with a static method — and therefore no birth date to read.
 
-## Add instance methods to `mPerson`
+## Add instance methods to `Person`
 
 Instance methods are associated with a particular object rather than with the class. They are defined by adding functions to the class that receive `self` as the first parameter. Internally, instance methods are free to access the object's attributes and even other methods.
 
-1. Return to your notebook and enter a new definition for the `mPerson` class:
+1. Return to your MissingPersons.py file and replace  a new definition for the `Person` class:
 
 	```python
 	import datetime

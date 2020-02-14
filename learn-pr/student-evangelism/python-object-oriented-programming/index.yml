@@ -33,7 +33,7 @@ units:
 - learn.student-evangelism.python-object-oriented-programming.1-oop
 - learn.student-evangelism.python-object-oriented-programming.2-exercise-classes
 - learn.student-evangelism.python-object-oriented-programming.3-exercise-attributes
-- learn.student-evangelism.python-object-oriented-programming.4-methods
+- learn.student-evangelism.python-object-oriented-programming.4-exercise-methods
 - learn.student-evangelism.python-object-oriented-programming.5-inheritance
 - learn.student-evangelism.python-object-oriented-programming.6-summary
 badge:
