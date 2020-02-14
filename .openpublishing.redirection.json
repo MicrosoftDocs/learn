@@ -391,7 +391,7 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "learn-pr/azure/intro-to-mobile-app-service/index.md",
+      "source_path": "learn-pr/modules/intro-to-mobile-app-service/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-app-center/",
       "redirect_document_id": false
     },
