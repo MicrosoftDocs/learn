@@ -26,30 +26,36 @@ One characteristic that differentiates a missing person from a normal person is 
 
     You just defined a new class (subclass) named `MissingPerson` that inherits from `Person`. When created, an `MissingPerson` object creates an `Person` object by calling the latter's `__init__()` method. Then it defines an instance attribute of its own (`missing_since`) and a method that subtracts the date the person went missing from today's date to compute how long that person has been missing.
 
-1. Use the following code to create an `mMissingPerson` object and show how long the person has been missing:
+1. Add the following code at the bottom of the file to create a `MissingPerson` object to show how long the person has been missing:
 
     ```python
-    aPerson = mMissingPerson("Adam", faces.images[0], datetime.datetime(1990, 9, 16), datetime.datetime(2016, 1, 1))
+    aPerson = MissingPerson("Adam", faces.images[0], datetime.datetime(1990, 9, 16), datetime.datetime(2016, 1, 1))
     print(aPerson.name + ' has been missing for ' + str(aPerson.get_years_missing()) + ' years')
     ```
 
-    Observe that the `mMissingPerson` object contains the `name` attribute inherited from `mPerson` as well as the `get_years_missing()` method it added itself. When creating an `mMissingPerson` object, you must provide the date that the person went missing as well as a name, a photo, and a date of birth. That comes from `mMissingPerson`'s `__init__()` method, which serves the same purpose in an inherited class as it does in a base class.
+    Observe that the `MissingPerson` object contains the `name` attribute inherited from `Person` as well as the `get_years_missing()` method it added itself. When creating an `MissingPerson` object, you must provide the date that the person went missing as well as a name, a photo, and a date of birth. That comes from `MissingPerson`'s `__init__()` method, which serves the same purpose in an inherited class as it does in a base class.
 
-If you'd like, use a `print(dir(aPerson))` statement to list the object's methods and attributes and confirm that the list includes members defined in `mPerson` as well as members defined in `mMissingPerson`. 
+1. Save, and run the code:
+
+    ```bash
+    python3 MissingPersons.py
+    ```
+
+If you'd like, use a `print(dir(aPerson))` statement to list the object's methods and attributes and confirm that the list includes members defined in `Person` as well as members defined in `MissingPerson`.
 
 ## Override an inherited method
 
 Occasionally it is useful to override a method inherited from the base class to modify the way it works in the subclass. You have already seen how to override methods: simply implement a method of the same name in the subclass. But what if you need to call the base class's version of the method from the inherited class?
 
-In South Korea, babies are considered to be 1 year old when they are born. Consequently, they turn 2 on their first birthday, 3 on their second birthday, and so on. Suppose you wanted to create a special version of the `mMissingPerson` class named `mMissingSKPerson` that adds 1 to the integer returned by the `get_age()` method. That's what Python's `super()` method is for.
+In South Korea, babies are considered to be 1 year old when they are born. Consequently, they turn 2 on their first birthday, 3 on their second birthday, and so on. Suppose you wanted to create a special version of the `MissingPerson` class named `MissingSKPerson` that adds 1 to the integer returned by the `get_age()` method. That's what Python's `super()` method is for.
 
-1. Add the following class definition to the notebook and run it:
+1. Add the following class definition under your other class definitions. Delete the lines defining `aPerson` and printing.
 
     ```python
-    class mMissingSKPerson(mMissingPerson):
+    class MissingSKPerson(MissingPerson):
         def __init__(self, name, photo, date_of_birth, date_missing):
-            mMissingPerson.__init__(self, name, photo, date_of_birth, date_missing)
-    
+            MissingPerson.__init__(self, name, photo, date_of_birth, date_missing)
+
         # Override the get_age() method
         def get_age(self):
             return super().get_age() + 1
@@ -57,45 +63,51 @@ In South Korea, babies are considered to be 1 year old when they are born. Conse
 
     Notice that `get_age()` is overridden in the inherited class, but rather than duplicate the code for the base class's `get_age()` method and add 1 to the result, it invokes the base class's `get_age()` method and adds 1.
 
-1. Now perform a test by executing the following statements:
+1. Now test your code by adding the following statements to the bottom of the file:
 
     ```python
     date_birth = datetime.datetime(1990, 9, 16)
     date_missing = datetime.datetime(2016, 1, 1)
     face = faces.images[0]
     name = "Adam"
-    
-    aPerson = mPerson(name, face, date_birth)
+
+    aPerson = Person(name, face, date_birth)
     print(str(aPerson.get_age()))
-    
-    aPerson = mMissingPerson(name, face, date_birth, date_missing)
+
+    aPerson = MissingPerson(name, face, date_birth, date_missing)
     print(str(aPerson.get_age()))
-    
-    aPerson = mMissingSKPerson(name, face, date_birth, date_missing)
+
+    aPerson = MissingSKPerson(name, face, date_birth, date_missing)
     print(str(aPerson.get_age()))
     ```
 
-Can you predict what the output from the three `print()` statements will be before you run the code?
+    Can you predict what the output from the three `print()` statements will be before you run the code?
+
+1. Save, and run to see if you were correct:
+
+    ```bash
+    python3 MissingPersons.py
+    ```
 
 ## Remove an inherited attribute
 
-Suppose you defined a new class named `mAnonymousPerson` that inherits from `mPerson`. In that case, you might want to remove the `name` attribute so that an anonymous person remains — well — anonymous.
+Suppose you defined a new class named `AnonymousPerson` that inherits from `Person`. In that case, you might want to remove the `name` attribute so that an anonymous person remains — well — anonymous.
 
-You can include calls to Python's `delattr()` function in a class definition to remove attributes inherited from the base class. Here's how an `mAnonymousPerson` class might look:
+You can include calls to Python's `delattr()` function in a class definition to remove attributes inherited from the base class. Here's how an `AnonymousPerson` class might look:
 
 ```python
-class mAnonymousPerson(mPerson):
+class AnonymousPerson(Person):
     def __init__(self, photo, date_of_birth):
-        mPerson.__init__(self, '', photo, date_of_birth)
+        Person.__init__(self, '', photo, date_of_birth)
         delattr(self, 'name')
 ```
 
 And here's how an instance would be created:
 
 ```python
-aPerson = mAnonymousPerson(faces.images[0], datetime.datetime(1990, 9, 16))
+aPerson = AnonymousPerson(faces.images[0], datetime.datetime(1990, 9, 16))
 ```
 
-The `name` attribute doesn't exist in the subclass. An attempt to access it on an `mAnonymousPerson` object would generate a run-time error.
+The `name` attribute doesn't exist in the subclass. An attempt to access it on an `AnonymousPerson` object would generate a run-time error.
 
 In case you wondered, you can't delete methods inherited from a base class. You can, however, override them and change the way they work (or simply have them raise an error or do nothing).

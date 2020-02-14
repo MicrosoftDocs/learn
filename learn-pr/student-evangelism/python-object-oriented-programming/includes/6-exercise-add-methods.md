@@ -18,14 +18,17 @@ Instance methods are associated with a particular object rather than with the cl
     > [!NOTE]
     > The age computation isn't exact because it provides only rudimentary handling of leap years. The solution to that is a topic for another day.
 
-1. Now replace the statements at the bottom of your file with this::
+1. Now replace your print statement at the bottom of your file with this:
 
     ```python
-    aPerson = Person("Adam", faces.images[0], datetime.datetime(1990, 9, 16))
     print(str(aPerson.get_age()))
     ```
 
-1. Run your code and confirm it outputs an age that seems correct.
+1. Save, and run your code and confirm it outputs an age that seems correct.
+
+    ```bash
+    python3 MissingPersons.py
+    ```
 
 The instance method you added doesn't take arguments (other than `self`, which is required of an instance method), but be aware that instance methods *can* take arguments just like other functions in Python.
 
@@ -44,7 +47,7 @@ You can replace the built-in `___str__()` method (or any other method, for that 
 
     This method returns a string denoting the person's name and age. The information contained in the string is obtained by reading the object's `name` attribute and calling the object's `get_age()` method.
 
-1. Add the following code and run it to test the new `__str__()` method:
+1. Add the following code to the end of your file and run it again to test the new `__str__()` method:
 
     ```python
     print(str(aPerson))
