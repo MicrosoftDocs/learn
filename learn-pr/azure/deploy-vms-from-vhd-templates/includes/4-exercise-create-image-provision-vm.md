@@ -6,7 +6,7 @@ In this exercise, you'll create a virtual machine and generalize it. You'll then
 
 In this task, you'll quickly create a virtual machine that runs a simple web app. The web app displays the name of the host machine. You'll use this virtual machine as the basis for the rest of the exercise.
 
-::: zone pivot="subscription"
+::: zone pivot="personal-subscription"
 
 1. Browse to the [Azure Cloud Shell](https://shell.azure.com?azure-portal=true) and sign into your Azure subscription.
 
@@ -24,7 +24,7 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
 
 ::: zone-end
 
-::: zone pivot="sandbox"
+::: zone pivot="sandbox-subscription"
 
 1. Activate the Cloud Shell window on the right by signing into the Azure Sandbox.
 
@@ -124,13 +124,13 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
 
 ::: zone-end
 
-::: zone pivot="windows-cloud, sandbox"
+::: zone pivot="windows-cloud, sandbox-subscription"
 
 1. On the Azure portal menu or from the **Home** page, select **Resource groups**, and then select the **<rgn>[Sandbox resource group name]</rgn>** resource group.
 
 ::: zone-end
 
-::: zone pivot="windows-cloud, subscription"
+::: zone pivot="windows-cloud, personal-subscription"
 
 1. On the Azure portal menu or from the **Home** page, select **Resource groups**, and then select the **learn-vm** resource group.
 
