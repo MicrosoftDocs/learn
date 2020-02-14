@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.iot.run-an-IoT-Edge-device-in-restricted-network-and-offline.Exercise4
+metadata:
+  title: Configure IoT Edge Device as Gateway
+  description: Configure IoT Edge Device as Gateway
+  ms.date: 02/12/20120
+  author: ABartolo
+  ms.author: Olivier.Bloch
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Configure IoT Edge Device as Gateway
+# azureSandbox: true
+durationInMinutes: 15
+content: |
+  [!include[](includes/4-configure-IoT-Edge-device-as-gateway.md)]
