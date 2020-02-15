@@ -2,7 +2,6 @@ Being able to determine the cause of connectivity problems with Load Balancer is
 
 In this exercise, you'll start with a pre-configured environment that's reporting health probe failures. You'll use the skills learned in this module to diagnose and rectify the issues, to return the load-balanced HTTP service back to full operation.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
 
 ## Setup
 
