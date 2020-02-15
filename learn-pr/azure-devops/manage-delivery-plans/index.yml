@@ -29,10 +29,10 @@ roles:
 products:
 - azure-devops
 units:
-- learn.azdo.choose-an-agile-approach.1-introduction
-- learn.azdo.choose-an-agile-approach.2-what-are-delivery-plans
-- learn.azdo.choose-an-agile-approach.3-what-is-delivery-plans
-- learn.azdo.choose-an-agile-approach.4-plan-sprint-delivery-plans
-- learn.azdo.choose-an-agile-approach.5-summary
+- learn.azdo.manage-delivery-plans.1-introduction
+- learn.azdo.manage-delivery-plans.2-what-are-delivery-plans
+- learn.azdo.manage-delivery-plans.3-what-is-delivery-plans
+- learn.azdo.manage-delivery-plans.4-plan-sprint-delivery-plans
+- learn.azdo.manage-delivery-plans.5-summary
 badge:
   uid: learn.azdo.choose-an-agile-approach.badge

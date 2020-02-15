@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.azdo.choose-an-agile-approach.3-what-is-azure-boards
-title: What is Azure Boards?
+uid: learn.azdo.manage-delivery-plans.3-what-is-delivery-plans
+title: What is Delivery Plans?
 metadata:
-  title: What is Azure Boards?
-  description: Discover how Azure Boards can help you plan the work that needs to be done, and learn about the four processes you can choose from.
+  title: What is Delivery Plans?
+  description: Discover how Delivery Plans can help you coordinate team sprints for optimal project delivery.
   ms.date: 01/21/2020
   author: edkaim
   ms.author: v-edkaim
@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 15
 content: |
-  [!include[](includes/3-what-is-azure-boards.md)]
+  [!include[](includes/3-what-is-delivery-plans.md)]
 quiz:
   title: Check your knowledge
   questions:

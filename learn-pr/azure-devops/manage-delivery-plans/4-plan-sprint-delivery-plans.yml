@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.azdo.choose-an-agile-approach.4-plan-work-azure-boards
-title: Exercise - Plan work using Azure Boards
+uid: learn.azdo.manage-delivery-plans.4-plan-sprint-delivery-plans
+title: Exercise - Plan a sprint using Delivery Plans
 metadata:
-  title: Exercise - Plan work using Azure Boards
-  description: Create a project, a team, and a board in Azure DevOps.
+  title: Exercise - Plan a sprint using Delivery Plans
+  description: Create a delivery plan, add teams, and optimize sprints to meet milestones.
   ms.date: 01/21/2020
   author: edkaim
   ms.author: v-edkaim
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 15
 content: |
-  [!include[](includes/4-plan-work-azure-boards.md)]
+  [!include[](includes/4-plan-sprint-delivery-plans.md)]

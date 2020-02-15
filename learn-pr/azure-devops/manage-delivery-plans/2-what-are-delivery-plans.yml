@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.azdo.choose-an-agile-approach.2-what-is-agile
-title: What is Agile?
+uid: learn.azdo.manage-delivery-plans.2-what-is-agile
+title: What are delivery plans?
 metadata:
-  title: What is Agile?
-  description: Learn how Agile can offer a better approach to software development through some of its guiding principles.
+  title: What are delivery plans?
+  description: Learn how to manage delivery schedules across multiple Agile teams.
   ms.date: 01/21/2020
   author: edkaim
   ms.author: v-edkaim
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 6
 content: |
-  [!include[](includes/2-what-is-agile.md)]
+  [!include[](includes/2-what-are-delivery-plans.md)]
