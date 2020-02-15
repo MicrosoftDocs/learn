@@ -33,9 +33,9 @@ roles:
 products:
 - azure-devops
 modules:
-- learn.azdo.assess-your-development-processmanage-delivery-plans
+- learn.azdo.assess-your-development-process
 - learn.get-started-with-devops
 - learn.azdo.choose-an-agile-approach
-- learn.azdo.choose-an-agile-approach
+- learn.azdo.manage-delivery-plans
 trophy:
   uid: learn.azdo.evolve-your-devops-practices.trophy
