@@ -1,0 +1,46 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.troubleshoot-inbound-network-connectivity-azure-load-balancer.troubleshoot-azure-load-balancer
+title: Troubleshoot Azure Load Balancer
+metadata:
+  title: Troubleshoot Azure Load Balancer
+  description: Troubleshoot Azure Load Balancer
+  ms.date: 06/13/2019
+  author: cwatson-cat
+  ms.author: cwatson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-troubleshoot-azure-load-balancer.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: What happens if a health probe hasn't been configured and a VM fails?
+    choices:
+    - content: Load Balancer won't notice the failure, and will continue to route traffic to the failed VM, causing requests to time out.
+      isCorrect: true
+      explanation: This answer is correct.
+    - content: Load Balancer will remove the VM from the backend pool.
+      isCorrect: false
+      explanation: No. Load Balancer won't notice the failure, and will continue to route traffic to the failed VM, causing requests to time out.
+    - content: Load Balancer doesn't know which VM has failed, and so stops sending requests to all VMs in the backend pool.
+      isCorrect: false
+      explanation: No. Load Balancer won't notice the failure, and will continue to route traffic to the failed VM, causing requests to time out.
+    - content: Load Balancer will send a response back to the client indicating that it can't route requests to VMs in the backend pool.
+      isCorrect: false
+      explanation: No. Load Balancer won't notice the failure, and will continue to route traffic to the failed VM, causing requests to time out.
+  - content: You've closed a port in a network security group used by a virtual network that hosts the VMs in the Load Balancer pool. How might this affect load balancing?
+    choices:
+    - content: Load Balancer will attempt to use a different port, if one is available. Requests will be sent to VMs through this port instead.
+      isCorrect: false
+      explanation: No. If the port was being used to send traffic to the VMs in the pool, then this traffic will be blocked and all requests will time out and eventually fail. If this was a probe port, this VM will be removed from rotation. 
+    - content: If the port was being used to send traffic to the VMs in the pool, then this traffic will be blocked and all requests will time out and eventually fail. If this was a probe port, this VM will be removed from rotation.
+      isCorrect: true
+      explanation: This answer is correct.
+    - content: Load Balancer will report an error to the client stating that no VMs are available, and to try again later.
+      isCorrect: false
+      explanation: No. If the port was being used to send traffic to the VMs in the pool, then this traffic will be blocked and all requests will time out and eventually fail. If this was a probe port, this VM will be removed from rotation. 
+    - content: Load Balancer will queue client requests until the port is opened again. At that point, the requests will be sent.
+      isCorrect: false
+      explanation: No. If the port was being used to send traffic to the VMs in the pool, then this traffic will be blocked and all requests will time out and eventually fail. If this was a probe port, this VM will be removed from rotation. 
