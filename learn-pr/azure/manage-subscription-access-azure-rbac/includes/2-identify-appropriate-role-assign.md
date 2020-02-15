@@ -1,4 +1,4 @@
-Azure resources and Azure Active Directory (Azure AD) have independent permission systems. Role-based access control (RBAC) roles are used to manage access to virtual machines, storage, and other Azure resources. Azure AD roles are used to manage access to Azure AD resources, such as user accounts and passwords.
+Azure resources and Azure Active Directory (Azure AD) have independent permission systems. Azure role-based access control (RBAC) roles are used to manage access to virtual machines, storage, and other Azure resources. Azure AD roles are used to manage access to Azure AD resources, such as user accounts and passwords.
 
 In this unit, you'll look at the essential aspects of Azure RBAC roles and Azure AD roles. You'll explore the various scopes available to you. You'll then identify the right roles to assign, depending on the scenario.
 
@@ -43,7 +43,7 @@ Azure AD also has its own set of roles, which apply mostly to users, passwords, 
 
 - **User Administrator**: Can manage all aspects of users and groups, including support tickets, monitoring service health, and resetting passwords for certain types of users. 
 
-- **Billing Administrator**: Can make purchases, manage subscriptions and support tickets, and monitor service health. Azure has detailed billing permissions in addition to Azure RBAC permissions. The available billing permissions depend on the agreement you have with Microsoft.
+- **Billing Administrator**: Can make purchases, manage subscriptions and support tickets, and monitor service health. Azure has detailed billing permissions in addition to RBAC permissions. The available billing permissions depend on the agreement you have with Microsoft.
 
 ## Differences between Azure RBAC roles and Azure AD roles
 
