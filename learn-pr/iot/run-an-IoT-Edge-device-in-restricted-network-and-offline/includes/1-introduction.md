@@ -70,7 +70,7 @@ In this module, you will learn the different scenarios where IoT Edge device is 
      mkdir lab14
      mv lab-setup.azcli lab14
      cd lab14
-```
+    ```
 
 1. To ensure the **lab-setup.azcli** has the execute permission, enter the following commands:
 
