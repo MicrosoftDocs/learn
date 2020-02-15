@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.azdo.manage-delivery-plans
+metadata:
+  title: Manage Agile software delivery plans across teams - Learn
+  description: Learn to optimize delivery efficiency by improving work plan visibility across teams.
+  ms.date: 02/14/2020
+  author: edkaim
+  ms.author: v-edkaim
+  ms.topic: interactive-tutorial
+  #ms.learn-contact: thpetche
+  ms.prod: learning-azure
+title: Manage Agile software delivery plans across teams
+summary: Learn to optimize delivery efficiency by improving work plan visibility across teams.
+abstract: |
+  In this module, you will:
+  - Install the Delivery Plans extension for your Azure DevOps project
+  - Create a delivery plan
+  - Adjust a team’s sprint workload to optimize delivery efficiency
+prerequisites: An Azure DevOps organization
+iconUrl: /learn/achievements/azure-devops/choose-an-agile-approach-to-software-development.svg
+ratingEnabled: true
+levels:
+- beginner
+roles:
+- devops-engineer
+- administrator
+- developer
+- solution-architect
+products:
+- azure-devops
+units:
+- learn.azdo.choose-an-agile-approach.1-introduction
+- learn.azdo.choose-an-agile-approach.2-what-are-delivery-plans
+- learn.azdo.choose-an-agile-approach.3-what-is-delivery-plans
+- learn.azdo.choose-an-agile-approach.4-plan-sprint-delivery-plans
+- learn.azdo.choose-an-agile-approach.5-summary
+badge:
+  uid: learn.azdo.choose-an-agile-approach.badge
