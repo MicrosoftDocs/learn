@@ -341,12 +341,62 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/azure/intro-to-mobile-app-service/index.md",
+      "source_path": "learn-pr/app-center/intro-to-app-center/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-app-center/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/app-center/intro-to-app-center/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-app-center/1-introduction",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/app-center/intro-to-app-center/2-what-is-app-center.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-app-center/2-what-is-app-center",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/app-center/intro-to-app-center/3-how-app-center-build-works.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-app-center/3-how-app-center-build-works",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/app-center/intro-to-app-center/4-how-app-center-test-works.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-app-center/4-how-app-center-test-works",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/app-center/intro-to-app-center/5-how-app-center-distribute-works.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-app-center/5-how-app-center-distribute-works",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/app-center/intro-to-app-center/6-how-app-center-diagnostics-works.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-app-center/6-how-app-center-diagnostics-works",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/app-center/intro-to-app-center/7-how-app-center-analytics-works.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-app-center/7-how-app-center-analytics-works",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/app-center/intro-to-app-center/8-exercise-create-app-center-account.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-app-center/8-exercise-create-app-center-account",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/app-center/intro-to-app-center/9-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-app-center/9-summary",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/modules/intro-to-mobile-app-service/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-app-center/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/azure/intro-to-mobile-app-service/1-introduction.md",
+      "source_path": "learn-pr/modules/intro-to-mobile-app-service/1-introduction.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-app-center/",
       "redirect_document_id": false
     },
@@ -356,22 +406,22 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/azure/intro-to-mobile-app-service/3-how-mobile-apps-work.md",
+      "source_path": "learn-pr/modules/intro-to-mobile-app-service/3-how-mobile-apps-work.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-app-center/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/azure/intro-to-mobile-app-service/4-when-to-use-mobile-apps.md",
+      "source_path": "learn-pr/modules/intro-to-mobile-app-service/4-when-to-use-mobile-apps.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-app-center/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/azure/intro-to-mobile-app-service/5-knowledge-check.md",
+      "source_path": "learn-pr/modules/intro-to-mobile-app-service/5-knowledge-check.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-app-center/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/azure/intro-to-mobile-app-service/6-summary.md",
+      "source_path": "learn-pr/modules/intro-to-mobile-app-service/6-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-app-center/",
       "redirect_document_id": false
     },
