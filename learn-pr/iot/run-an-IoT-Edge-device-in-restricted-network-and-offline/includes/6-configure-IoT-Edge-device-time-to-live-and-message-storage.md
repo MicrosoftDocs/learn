@@ -18,21 +18,21 @@ The timeToLiveSecs property for the Edge Hub can be specified in the Deployment 
 
 1. In the list of **Device IDs**, click on the **IoTEdgeGateway** device.
 
-1. In the list of **Modules**, click on the **$edgeHub** module. This is the Module Twin for the **Edge Hub** module configured for the **IoT Edge Device**.
+1. In the list of **Modules**, click on the **$edgeHub** module. This Module Twin is for the **Edge Hub** module configured for the **IoT Edge Device**.
 
 1. On the **IoT Edge Module Details** pane, click the **Module Identity Twin** to view the Module Twin JSON.
 
-You will note that the "desired" properties are essentially empty for this new device.
+You will note that the "desired" properties are empty for this new device.
 
 1. Close the **Module Identity** Twin pane.
 
 1. Go back to the **IoT Edge Device** pane displaying the **IoTEdgeGateway** IoT Edge device.
 
-1. Click the **Set Modules** button at the top. This will open up an interface that allows you to set and configure the IoT Edge Modules deployed to this IoT Edge Device.
+1. Click the **Set Modules** button at the top. An interface now opens allowing you to set and configure the IoT Edge Modules deployed to this IoT Edge Device.
 
 1. On the **Set modules** pane, click the Runtime Settings button under the Iot Edge Modules section.
 
-1. On the **Runtime Settings** pane, locate the **Store and forward configuration - time to live (seconds)** field for the **Edge Hub** module, then change the value to 1209600. This specifies a message time to live of 2 weeks on the IoT Edge Device.
+1. On the **Runtime Settings** pane, locate the **Store and forward configuration - time to live (seconds)** field for the **Edge Hub** module, then change the value to 1209600 which specifies a message time to live of two weeks on the IoT Edge Device.
 
     **Note:** There are several considerations to make when configuring the Message Time-to-Live (TTL) for the Edge Hub ($edgeHub) module. When the IoT Edge Device is disconnected, the messages are stored on the local device. You need to calculate how much data will be stored during the TTL period, and make sure there is enough storage on the device for that much data. The amount of storage and TTL configured will need to meet the solutions requirements so that important data is not lost; if possible.
 
@@ -52,7 +52,7 @@ You will note that the "desired" properties are essentially empty for this new d
 
     The value is in the format of <HostStoragePath>:<ModuleStoragePath>. The <HostStoragePath> value is the host directory location on the IoT Edge Device. The <ModuleStoragePath> is the module storage path made available within the container. Both of these values must be an absolute path.
 
-1. The resulting JSON in the Create Options box should look similar to the following:
+1. The resulting JSON in the Create Options box should look similar to the following script:
 
     ```JSON
             {
@@ -103,7 +103,7 @@ Before continuing, it is essential to ensure that the user profile for the IoT E
 
 1. Within the **Connect to virtual machine** pane, select the **SSH option**, then copy the **Login using VM local account** value.
 
-    This is a sample SSH command that will be used to connect to the virtual machine that contains the IP Address for the VM and the Administrator username. The command is formatted similar to ssh username@52.170.205.79.
+    This sample SSH command will be used to connect to the virtual machine that contains the IP Address for the VM and the Administrator username. The command is formatted similar to ssh username@52.170.205.79.
 
 1. At the top of the Azure Portal click on the **Cloud Shell** icon to open up the **Azure Cloud Shell** within the Azure Portal. When the pane opens, choose the option for the **Bash** terminal within the Cloud Shell.
 
@@ -113,7 +113,7 @@ Before continuing, it is essential to ensure that the user profile for the IoT E
 
 1. When prompted to enter the password, enter the Administrator password that was entered when the VM was provisioned.
 
-1. Once connected, the terminal will change to show the name of the Linux VM, similar to the following. This tells you which VM you are connected to.
+1. Once connected, the terminal will change to show the name of the Linux VM, similar to the following and reports which VM you are connected to.
 
     ```Bash
         username@AZ220EdgeVM{YOUR-ID}:~$
