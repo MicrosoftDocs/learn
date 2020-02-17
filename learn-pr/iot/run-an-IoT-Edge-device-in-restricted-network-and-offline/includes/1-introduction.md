@@ -1,6 +1,6 @@
 Run an IoT Edge device in restricted network and offline.
 
-Azure IoT Edge supports extended offline operations on IoT Edge devices, and also enables offline operations on non-IoT Edge child devices. Said IoT Edge device and any child devices can continue to function with intermittent or no internet connection so long as the IoT Edge device has had one opportunity to connect to IoT Hub.
+Azure IoT Edge supports extended offline operations on IoT Edge devices, and also enables offline operations on non-IoT Edge child devices. The IoT Edge device and any connected child devices can continue to function with intermittent or no internet connection as long as the IoT Edge device has had one opportunity to connect to IoT Hub.
 
 The IoT Edge hub takes on three roles when an IoT Edge device goes into offline mode. First, it stores any upstream messages and saves them until the device reconnects. Second, it acts on behalf of IoT Hub to authenticate modules and child devices so that they can continue to operate. Third, it enables communication between child devices that normally would go through IoT Hub.
 
@@ -11,7 +11,7 @@ In this module you will:
 - Verify Lab Prerequisites
 - Create an IoT Hub and Device ID
 - Deploy Azure IoT Edge Enabled Linux VM
-- Setup IoT Edge Parent with Child IoT Devices
+- Setup an IoT Edge Parent with Child IoT Devices
 - Configure IoT Edge Device as Gateway
 - Open IoT Edge Gateway Device Inbound Ports using Azure CLI
 - Configure IoT Edge Device Time-to-Live and Message Storage
@@ -30,13 +30,13 @@ This lab assumes the following resources are available:
 - IoT Hub -- AZ-220-HUB-_{YOUR-ID}_
 - IoT Device -- SimulatedThermostat
 
-If the resources are unavailable, please execute the **lab-setup.azcli** script before starting the lab.
+Execute the **lab-setup.azcli** script before starting the lab if the resources are unavailable. 
 
 Note: You will need the SimulatedDevice connection string. You can obtain that by running the following command in the Azure Cloud Shell
  
-```bash
-az iot hub device-identity show-connection-string --hub-name AZ-220-HUB-_{YOUR-ID}_ --device-id SimulatedThermostat -o tsv
-```
+  ```bash
+  az iot hub device-identity show-connection-string --hub-name AZ-220-HUB-_{YOUR-ID}_ --device-id SimulatedThermostat -o tsv
+  ```
 
 ## The scenario
 
@@ -102,7 +102,7 @@ In this module, you will learn the different scenarios where IoT Edge device is 
 
 11. To save the changes made to the file and close the editor, click … in the top-right of the editor window and select Close Editor.
 
-    If prompted to save, click Save and the editor will close.
+    Click Save and the editor will close if prompted to save. 
 
     **Note:** You can use CTRL+S to save at any time and CTRL+Q to close the editor.
 
@@ -112,6 +112,6 @@ In this module, you will learn the different scenarios where IoT Edge device is 
      ./lab-setup.azcli
     ```
 
-    This will take a few minutes to run. You will see JSON output as each step completes.
+    The script will take a few minutes to run. You will see JSON output as each step completes.
 
 13. Once complete, the connection string for the device, starting with “HostName=”, is displayed. Copy this connection string into a text document and note that it is for the **SimulatedThermostat** device.
