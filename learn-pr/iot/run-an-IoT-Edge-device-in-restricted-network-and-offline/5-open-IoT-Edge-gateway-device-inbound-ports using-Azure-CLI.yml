@@ -12,4 +12,4 @@ title: Open IoT Edge Gateway Device Inbound Ports using Azure CLI
 # azureSandbox: true
 durationInMinutes: 15
 content: |
-  [!include[](includes/5-open-IoT-Edge-gateway-device-inbound-ports using-Azure-CLI.md)]
+  [!include[](includes/5-open-IoT-Edge-gateway-device-inbound-ports-using-Azure-CLI.md)]
