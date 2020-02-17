@@ -28,15 +28,15 @@ You will note that the "desired" properties are essentially empty for this new d
 
 1. Go back to the **IoT Edge Device** pane displaying the **IoTEdgeGateway** IoT Edge device.
 
-Click the **Set Modules** button at the top. This will open up an interface that allows you to set and configure the IoT Edge Modules deployed to this IoT Edge Device.
+1. Click the **Set Modules** button at the top. This will open up an interface that allows you to set and configure the IoT Edge Modules deployed to this IoT Edge Device.
 
-On the **Set modules** pane, click the the Runtime Settings button under the Iot Edge Modules section.
+1. On the **Set modules** pane, click the the Runtime Settings button under the Iot Edge Modules section.
 
-On the **Runtime Settings** pane, locate the **Store and forward configuration - time to live (seconds)** field for the **Edge Hub** module, then change the value to 1209600. This specifies a message time to live of 2 weeks on the IoT Edge Device.
+1. On the **Runtime Settings** pane, locate the **Store and forward configuration - time to live (seconds)** field for the **Edge Hub** module, then change the value to 1209600. This specifies a message time to live of 2 weeks on the IoT Edge Device.
 
     **Note:** There are several considerations to make when configuring the Message Time-to-Live (TTL) for the Edge Hub ($edgeHub) module. When the IoT Edge Device is disconnected, the messages are stored on the local device. You need to calculate how much data will be stored during the TTL period, and make sure there is enough storage on the device for that much data. The amount of storage and TTL configured will need to meet the solutions requirements so that important data is not lost; if possible.
 
-    If the device does not have enough storage, then you need to configure a shorter TTL. Once the age of a message reaches the TTL time limit, it will be deleted if it has not yet been sent to Azure IoT Hub.
+    **Note:** If the device does not have enough storage, then you need to configure a shorter TTL. Once the age of a message reaches the TTL time limit, it will be deleted if it has not yet been sent to Azure IoT Hub.
 
 1. The IoT Edge Device will automatically be able to store messages when in a disconnected / offline state. However, this location can be overridden by configuring a HostConfig.Binds setting.
 
