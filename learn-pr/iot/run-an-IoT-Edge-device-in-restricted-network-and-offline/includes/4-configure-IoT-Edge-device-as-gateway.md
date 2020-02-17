@@ -8,15 +8,17 @@ In this exercise, you will configure the Azure IoT Edge on Ubuntu virtual machin
 
 1. Edit the setup-iot-edge-gateway.sh script to replace the following variable placeholders with the necessary values so the **IoT Edge on Ubuntu VM** can be configured as an **IoT Edge Transparent Gateway:**
 
-Placeholder	Value to replace with
-{iot-edge-device-connection-string}	Paste in the **Connection String** for the IoTEdgeGateway device that was created within Azure IoT Hub.
-{iot-edge-device-hostname}	Paste in the **Public IP Address** of the **IoT Edge on Ubuntu VM**. This is the DNS Hostname that the Client IoT Device will use to connect to the IoT Edge Transparent Gateway.
-The variables these placeholders are associated with are located at the top of the setup-iot-edg-gateway.sh script, and are similar to the following before the placeholders are replaced:
+   | Placeholder |	Value to replace with |
+   |-------------|-----------------------|
+   | {iot-edge-device-connection-string}	| Paste in the **Connection String** for the IoTEdgeGateway device that was created within Azure IoT Hub. |
+   | {iot-edge-device-hostname} |	Paste in the **Public IP Address** of the **IoT Edge on Ubuntu VM**. This is the DNS Hostname that the Client IoT Device will use to connect to the IoT Edge Transparent Gateway. |
 
-```bash
- connectionstring="{iot-edge-device-connection-string}"
- hostname="{iot-edge-device-hostname}"
-```
+   The variables these placeholders are associated with are located at the top of the setup-iot-edg-gateway.sh script, and are similar to the following before the placeholders are replaced:
+
+   ```bash
+    connectionstring="{iot-edge-device-connection-string}"
+    hostname="{iot-edge-device-hostname}"
+   ```
 
 1. Save the file.
 
