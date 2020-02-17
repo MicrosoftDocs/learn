@@ -88,58 +88,58 @@ If you have more than one Azure account, be sure that you are logged in with the
     az iot hub device-identity create -n AZ-220-HUB-_{YOUR-ID}_ --device-id ChildDevice1 --pd IoTEdgeGateway
    ```
 
-  ***Note:*** Be sure to replace the **AZ-220-HUB-_{YOUR-ID}_** IoT Hub name with the name of your Azure IoT Hub.
+    ***Note:*** Be sure to replace the **AZ-220-HUB-_{YOUR-ID}_** IoT Hub name with the name of your Azure IoT Hub.
 
-  This command is passed the following parameters:
+    This command is passed the following parameters:
 
-    -n: This required parameter is the shorthand for --hub-name and is used to specify the name of the **Azure IoT Hub** to add the new device to.
+        -- n: This required parameter is the shorthand for --hub-name and is used to specify the name of the **Azure IoT Hub** to add the new device to.
 
-    -- device-id: This required parameter is used to specify the **Device ID** of the IoT Device being created.
+        -- device-id: This required parameter is used to specify the **Device ID** of the IoT Device being created.
 
-    -- pd: This parameter specifies the **Parent Device** for the IoT Device being created. The value passed in must be the **Device ID** of the **Parent Device** to assign this **Child Device** to.
+        -- pd: This parameter specifies the **Parent Device** for the IoT Device being created. The value passed in must be the **Device ID** of the **Parent Device** to assign this **Child Device** to.
 
-  Notice that this command is not passing in the --auth-method. By omitting this parameter, the default value of shared_private_key will be used.
+    Notice that this command is not passing in the --auth-method. By omitting this parameter, the default value of shared_private_key will be used.
 
 1. Notice when the command completes, there is a blog of JSON returned to the terminal. This JSON includes a few details for the configuration of the IoT Device that was just created. Notice the symmetricKey node that contains the Symmetric Keys that can be used to authenticate the device with Azure IoT Hub, or when the child device connects to the parent IoT Edge Gateway.
 
-  Copy the primaryKey for this IoT Device so it can be used later.
+    Copy the primaryKey for this IoT Device so it can be used later.
 
-   ```JSON
-        {
-          "authentication": {
-            "symmetricKey": {
-              "primaryKey": "uMhYoXK/WRoXrIATh25aijyEbA401PKDxy4KCS488U4=",
-              "secondaryKey": "9tOPmSkmoqRd2KEP1JFyQQ6y2JdA5HPO7qnckFrBVm4="
-            },
-            "type": "sas",
-            "x509Thumbprint": {
-              "primaryThumbprint": null,
-              "secondaryThumbprint": null
+       ```JSON
+            {
+              "authentication": {
+                "symmetricKey": {
+                  "primaryKey": "uMhYoXK/WRoXrIATh25aijyEbA401PKDxy4KCS488U4=",
+                  "secondaryKey": "9tOPmSkmoqRd2KEP1JFyQQ6y2JdA5HPO7qnckFrBVm4="
+                },
+                "type": "sas",
+                "x509Thumbprint": {
+                  "primaryThumbprint": null,
+                  "secondaryThumbprint": null
+                }
+              },
+              "capabilities": {
+                "iotEdge": false
+              },
+              "cloudToDeviceMessageCount": 0,
+              "connectionState": "Disconnected",
+              "connectionStateUpdatedTime": "0001-01-01T00:00:00",
+              "deviceId": "ChildDevice1",
+              "deviceScope": "ms-azure-iot-edge://IoTEdgeGateway-637121074930370650",
+              "etag": "MTgxNjg1MjE0",
+              "generationId": "637121169262975883",
+              "lastActivityTime": "0001-01-01T00:00:00",
+              "status": "enabled",
+              "statusReason": null,
+              "statusUpdatedTime": "0001-01-01T00:00:00"
             }
-          },
-          "capabilities": {
-            "iotEdge": false
-          },
-          "cloudToDeviceMessageCount": 0,
-          "connectionState": "Disconnected",
-          "connectionStateUpdatedTime": "0001-01-01T00:00:00",
-          "deviceId": "ChildDevice1",
-          "deviceScope": "ms-azure-iot-edge://IoTEdgeGateway-637121074930370650",
-          "etag": "MTgxNjg1MjE0",
-          "generationId": "637121169262975883",
-          "lastActivityTime": "0001-01-01T00:00:00",
-          "status": "enabled",
-          "statusReason": null,
-          "statusUpdatedTime": "0001-01-01T00:00:00"
-        }
-   ```
+       ```
 
 1. Run the following command to retrieve the Connection String from IoT Hub for the IoTEdgeGateway Device, and copy the connection string value for reference later:
 
-   ```bash
-    az iot hub device-identity show-connection-string --hub-name AZ-220-HUB-_{YOUR-ID}_ --device-id ChildDevice1 -o tsv
-   ```
+       ```bash
+        az iot hub device-identity show-connection-string --hub-name AZ-220-HUB-_{YOUR-ID}_ --device-id ChildDevice1 -o tsv
+       ```
 
-  ***Note:*** Be sure to replace the **AZ-220-HUB-_{YOUR-ID}_** IoT Hub name with the name of your Azure IoT Hub.
+    ***Note:*** Be sure to replace the **AZ-220-HUB-_{YOUR-ID}_** IoT Hub name with the name of your Azure IoT Hub.
 
 1. Now you have an IoT Edge Device and a Child IoT Device registered within Azure IoT Hub. The IoT Device is configured with the IoT Edge Device as its parent. This configuration will enable the Child IoT Device to connect to and communicate with the Parent IoT Edge Device; instead of connecting directly with Azure IoT Hub. Configuring the IoT device topology this way enables Offline capable scenarios where the IoT Device and IoT Edge Device can keep working even when connectivity to Azure IoT Hub is broken.
