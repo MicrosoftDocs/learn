@@ -44,9 +44,9 @@ In this exercise, you will configure the Azure IoT Edge on Ubuntu virtual machin
 
 1. If you have more than one Azure account, be sure that you are logged in with the account that is tied to the subscription that you will be using for this course.
 
-1. Open the Azure Cloud Shell by clicking the **Terminal** icon within the top header bar of the Azure portal, and select the **Bash** shell option.
+1. Open the Azure Cloudshell by clicking the **Terminal** icon within the top header bar of the Azure portal, and select the **Bash** shell option.
 
-1. To upload the setup scripts, in the Azure Cloud Shell toolbar, click **Upload/Download** files (fourth button from the right).
+1. To upload the setup scripts, in the Azure Cloudshell toolbar, click **Upload/Download** files (fourth button from the right).
 
 1. In the dropdown, select **Upload** and in the file selection dialog, navigate to the directory for this lab. Select the following bash scripts and click **Open** to upload them.
 
@@ -58,15 +58,15 @@ In this exercise, you will configure the Azure IoT Edge on Ubuntu virtual machin
 
 1. You can verify that the files have been uploaded by listing the content of the current directory by entering the ls command.
 
-   **Make sure both scripts have been uploaded to Azure Cloud Shell before continuing.**
+   **Make sure both scripts have been uploaded to Azure Cloudshell before continuing.**
 
-1. Run the following command within the **Azure Cloud Shell** to make sure the setup-remote-iot-edge-gateway.sh script is executable:
+1. Run the following command within the **Azure Cloudshell** to make sure the setup-remote-iot-edge-gateway.sh script is executable:
 
    ```Bash
     chmod 700 setup-remote-iot-edge-gateway.sh
    ```
 
-1. To set up the IoT Edge on Ubuntu VM as an IoT Edge Transparent Gateway, run the setup-remote-iot-edge-gateway.sh script using the following command within the Azure Cloud Shell:
+1. To set up the IoT Edge on Ubuntu VM as an IoT Edge Transparent Gateway, run the setup-remote-iot-edge-gateway.sh script using the following command within the Azure Cloudshell:
 
     ```Bash
       ./setup-remote-iot-edge-gateway.sh
@@ -74,9 +74,9 @@ In this exercise, you will configure the Azure IoT Edge on Ubuntu virtual machin
 
    Enter the **password** for the **IoT Edge on Ubuntu VM** when prompted. There will be a total of three prompts to enter the password. These prompts are due to the ssh and scp commands used to upload the setup-iot-edge-gateway.sh helper script to the VM, run the script, and then download the x.509 certificate that will be used later to authenticate the Child IoT Device to the IoT Edge Transparent Gateway.
 
-1. Once the helper script has finished configuring the IoT Edge on Ubuntu VM to be an IoT Edge Transparent Gateway, the **Azure Cloud Shell** will download the azure-iot-test-only.root.ca.cert.pem x.509 certificate.
+1. Once the helper script has finished configuring the IoT Edge on Ubuntu VM to be an IoT Edge Transparent Gateway, the **Azure Cloudshell** will download the azure-iot-test-only.root.ca.cert.pem x.509 certificate.
 
-   If the x.509 certificate isn’t downloaded automatically within the web browser, then run the following command within the **Azure Cloud Shell** to manually download the file:
+   If the x.509 certificate isn’t downloaded automatically within the web browser, then run the following command within the **Azure Cloudshell** to manually download the file:
 
    ```Bash
     download azure-iot-test-only.root.ca.cert.pem
