@@ -26,10 +26,10 @@ In this exercise, you will configure the Azure IoT Edge on Ubuntu virtual machin
 
 1. Edit the setup-remote-iot-edge-gateway.sh script to replace the following variable placeholders with the necessary values so the **IoT Edge on Ubuntu VM** can be configured as an **IoT Edge Transparent Gateway:**
 
-  | Placeholder	| Value to replace with |
-  |--------------|-----------------------|
-  | {iot-edge-username} | Enter the admin **username** to connect to the **IoT Edge on Ubuntu VM**. This is used to connect tot he VM via SSH. |
-  | {iot-edge-ipaddress} | Enter the **Public IP Address** for the **IoT Edge on Ubuntu VM**. This is used to connect to the VM via SSH. |
+   | Placeholder	| Value to replace with |
+   |--------------|-----------------------|
+   | {iot-edge-username} | Enter the admin **username** to connect to the **IoT Edge on Ubuntu VM**. This is used to connect tot he VM via SSH. |
+   | {iot-edge-ipaddress} | Enter the **Public IP Address** for the **IoT Edge on Ubuntu VM**. This is used to connect to the VM via SSH. |
 
    The variables these placeholders are associated with are located at the top of the setup-remote-iot-edg-gateway.sh script, and are similar to the following before the placeholders are replaced:
 
@@ -76,7 +76,7 @@ In this exercise, you will configure the Azure IoT Edge on Ubuntu virtual machin
 
 1. Once the helper script has finished configuring the IoT Edge on Ubuntu VM to be an IoT Edge Transparent Gateway, the **Azure Cloud Shell** will download the azure-iot-test-only.root.ca.cert.pem x.509 certificate.
 
-If the x.509 certificate isn’t downloaded automatically within the web browser, then run the following command within the **Azure Cloud Shell** to manually download the file:
+   If the x.509 certificate isn’t downloaded automatically within the web browser, then run the following command within the **Azure Cloud Shell** to manually download the file:
 
    ```Bash
     download azure-iot-test-only.root.ca.cert.pem
