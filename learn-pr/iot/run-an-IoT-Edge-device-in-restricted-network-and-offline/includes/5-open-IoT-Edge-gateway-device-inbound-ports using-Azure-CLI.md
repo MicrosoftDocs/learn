@@ -17,7 +17,7 @@ These are the TCP/IP port numbers for the supported protocols:
 
 1. If necessary, log in to your Azure portal using your Azure account credentials.
 
-  If you have more than one Azure account, be sure that you are logged in with the account that is tied to the subscription that you will be using for this course.
+    If you have more than one Azure account, be sure that you are logged in with the account that is tied to the subscription that you will be using for this course.
 
 1. Within the **Azure portal**, navigate to the **IoTEdgeGateway** resource group.
 
