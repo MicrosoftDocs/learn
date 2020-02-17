@@ -61,7 +61,7 @@ In this exercise, you will monitor events from the **ChildIoTDevice** are being 
 1. Within the **Azure Cloud Shell** connect to the **IoTEdgeGateway** VM using ssh with the following command:
 
         ```Bash
-            ssh <username>@<ipaddress>
+            ssh <username>@<ip-address>
         ```
 
     Be sure to replace the placeholders with the required values for the ssh command:
