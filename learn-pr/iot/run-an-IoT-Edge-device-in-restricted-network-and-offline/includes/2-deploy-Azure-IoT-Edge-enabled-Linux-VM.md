@@ -1,9 +1,9 @@
 
-In this unit you will deploy an Ubuntu Server VM with Azure IoT Edge runtime support from the Azure Marketplace. In previous labs you have created the VM using the Azure Portal. This time around, we will create the VM using the Azure CLI.
+In this unit, you will deploy an Ubuntu Server VM with Azure IoT Edge runtime support from the Azure Marketplace. In previous labs, you have created the VM using the Azure Portal. This time around, we will create the VM using the Azure CLI.
 
 ## Deploy Azure IoT Edge enabled Linux VM
 
-1. If necessary, log in to your Azure portal using your Azure account credentials. If you have more than one Azure account, be sure that you are logged in with the account that is tied to the subscription that you will be using for this course.
+1. If necessary, log in to your Azure portal using your Azure account credentials. Be sure that you are logged in with the account that is tied to the subscription that you will be using for this course.
 
 2. Open the Azure Cloud Shell by clicking the Terminal icon within the top header bar of the Azure portal, and select the Bash shell option.
 
