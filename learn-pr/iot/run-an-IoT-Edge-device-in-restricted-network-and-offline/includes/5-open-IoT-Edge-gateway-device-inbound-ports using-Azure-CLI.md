@@ -4,12 +4,13 @@ For the Azure IoT Edge Gateway to communicate with Child IoT Devices, the TCP/IP
 
 These are the TCP/IP port numbers for the supported protocols:
 
-Protocol	Port Number
-MQTT	8883
-AMQP	5671
-HTTPS
-MQTT + WS (Websocket)
-AMQP + WS (Websocket)	443
+| Protocol	| Port Number |
+|-----------|-------------|
+| MQTT | 8883 |
+| AMQP | 5671 |
+| HTTPS
+  MQTT + WS (Websocket)
+  AMQP + WS (Websocket)	| 443 |
 
 
 ## Opening an IoT Edge Gateway Device Inbound Ports using Azure CLI
