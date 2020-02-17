@@ -15,9 +15,7 @@ These TCP/IP port numbers are for the supported protocols:
 
 ## Opening an IoT Edge Gateway Device Inbound Ports using Azure CLI
 
-1. If necessary, log in to your Azure portal using your Azure account credentials.
-
-    If you have more than one Azure account, be sure that you are logged in with the account that is tied to the subscription that you will be using for this course.
+1. Log in to your Azure portal using your Azure account credentials.
 
 1. Within the **Azure portal**, navigate to the **IoTEdgeGateway** resource group.
 
@@ -25,9 +23,9 @@ These TCP/IP port numbers are for the supported protocols:
 
     The name of the NSG should match the format of {vm-name}-nsg.
 
-1. Open the Azure Cloud Shell by clicking the **Terminal** icon within the top header bar of the Azure portal, and select the Bash shell option.
+1. Open the Azure Cloud Shell by clicking the **Terminal** icon located in the top header bar of the Azure portal, and select the Bash shell option.
 
-1. Within the **Azure Cloud Shell**, to find the name of the Network Security Group (NSG) in use by the Azure ioT Edge Gateway VM, enter the following command:
+1. Within the **Azure Cloud Shell**, to find the name of the Network Security Group (NSG) in use by the Azure IoT Edge Gateway VM, enter the following command:
 
         ```CLI
          az network nsg list --resource-group AZ-220-IoTEdgeResources -o table
@@ -47,6 +45,6 @@ These TCP/IP port numbers are for the supported protocols:
      {nsg-name}	Enter the name of the **Network Security Group**.
      {resource-group}	Enter the name of the **Resource group** for the virtual machine.
 
-     **Note:** In production, it’s best practice to only open inbound communication to the communication protocol(s) in use by your IoT devices. If your devices only use MQTT, then only open inbound communication for that port. This helps limit the surface attack area of open ports that could be exploited.
+     **Note:** In production, it’s best practice to only open inbound communication to the communication protocol(s) in use by your IoT devices. If your devices only use MQTT, then only open inbound communication for that port. This command helps limit the surface attack area of open ports that could be exploited.
 
 1. With the **Inbound rules** added to the **Network Security Group (NSG)**, the Child IoT Device will be allowed to communicate with the IoT Edge Gateway virtual machine.
