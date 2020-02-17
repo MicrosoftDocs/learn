@@ -1,4 +1,4 @@
-In this exercise, you will monitor events from the **ChildIoTDevice** are being sent to Azure IoT Hub through the **IoTEdgeGateway** IoT Edge Transparent Gateway. You will then interrupt connectivity between the IoTEdgeGateway and Azure IoT Hub to see that telemetry is still sent from the child IoT Device to the **IoT Edge Gateway**. After this, you will resume connectivity with Azure IoT Hub and monitor that the IoT Edge Gateway resumes sending telemetry to Azure IoT Hub.
+In this exercise, you will monitor events from the **ChildIoTDevice** are being sent to Azure IoT Hub through the **IoTEdgeGateway** IoT Edge Transparent Gateway. You will then interrupt connectivity between the IoTEdgeGateway and Azure IoT Hub to see that telemetry is still sent from the child IoT Device to the **IoT Edge Gateway**. After this step, you will resume connectivity with Azure IoT Hub and monitor that the IoT Edge Gateway resumes sending telemetry to Azure IoT Hub.
 
 ## Testing Device Connectivity and Offline Support
 
@@ -36,7 +36,7 @@ In this exercise, you will monitor events from the **ChildIoTDevice** are being 
         }
     ```
 
-1. The next step to test the **Offline** capabilities is to make the **IoTEdgeGateway** device go offline. Since this is a Virtual Machine running in Azure, this can be simulated by adding an **Outbound rule** to the **Network security group** for the VM.
+1. The next step to test the **Offline** capabilities is to make the **IoTEdgeGateway** device go offline. Since the Virtual Machine is running in Azure, the Virtual Machine can be simulated by adding an **Outbound rule** to the **Network security group** for the VM.
 
 1. Within the **Azure portal**, navigate to the **AZ-220-IoTEdgeResources** resource group.
 
@@ -79,7 +79,7 @@ In this exercise, you will monitor events from the **ChildIoTDevice** are being 
             sudo systemctl restart iotedge
         ```
 
-    This will force the IoT Edge Runtime to disconnect from the Azure IoT Hub service, and then attempt to reconnect.
+    This script will force the IoT Edge Runtime to disconnect from the Azure IoT Hub service, and then attempt to reconnect.
 
 1. Within the **IoTEdgeGateway**, run the exit command to end the ssh session.
 
@@ -95,7 +95,7 @@ In this exercise, you will monitor events from the **ChildIoTDevice** are being 
 
 1. Go look at the **Terminal** where the **ChildIoTDevice** simulated device application is running, and notice that it’s still sending device telemetry to the **IoTEdgeGateway**.
 
-1. At this point the **IoTEdgeGateway** is disconnected from the Azure IoT Hub. It will continue to authenticate connections by the **ChildIoTDevice**, and receiving device telemetry from child device(s). During this time, the IoT Edge Gateway will be storing the event telemetry from the child devices on the IoT Edge Gateway device storage as configured.
+1. Now the **IoTEdgeGateway** is disconnected from the Azure IoT Hub. It will continue to authenticate connections by the **ChildIoTDevice**, and receiving device telemetry from child device(s). During this time, the IoT Edge Gateway will be storing the event telemetry from the child devices on the IoT Edge Gateway device storage as configured.
 
 1. In the **Azure portal**, navigate back to the **Network security group** blade for the **IoTEdgeGateway**, and click on **Outbound security rules** under the **Settings section**.
 
@@ -105,6 +105,6 @@ In this exercise, you will monitor events from the **ChildIoTDevice** are being 
 
 1. On the **Delete security rule** prompt, click **Yes**.
 
-1. Once the **IoTEdgeGateway** IoT Edge Transparent Gateway is able to resume connectivity with Azure IoT Hub, it will sync the event telemetry from all connected child devices. This includes the saved telemetry that couldn’t be sent while disconnected, and all telemetry still being sent to the gateway.
+1. The **IoTEdgeGateway** IoT Edge Transparent Gateway can now connect with Azure IoT Hub. The **IoTEdgeGateway** IoT Edge Transparent Gateway will sync the event telemetry from all connected child devices including the saved telemetry that couldn’t be sent while disconnected, and all telemetry still being sent to the gateway.
 
     **Note:** The IoT Edge Gateway device will take a couple minutes to reconnect to Azure IoT Hub and resume sending telemetry. After waiting a couple minutes, you will see events showing up in the az iot hub monitor-events command output again.
