@@ -16,16 +16,16 @@ In a previous unit, you created the IoT Device Identities in Azure IoT Hub. You 
 
 1. Modify the IoT Hub Connection String to include the GatewayHostName property with the value set to the Hostname for the IoT Edge Gateway (IoTEdgeGateway) virtual machine.
 
-  The Connection String will match the following format:
+    The Connection String will match the following format:
 
-  ```Bash
-      HostName=<iot-hub-name>.azure-devices.net;DeviceId=DownstreamDevice1;SharedAccessKey=<iot-device-key>;GatewayHostName=<iot-edge-gateway-hostname>
-  ```
-  Be sure to replace the placeholders with the appropriate values:
+    ```Bash
+        HostName=<iot-hub-name>.azure-devices.net;DeviceId=DownstreamDevice1;SharedAccessKey=<iot-device-key>;GatewayHostName=<iot-edge-gateway-hostname>
+    ```
+    Be sure to replace the placeholders with the appropriate values:
 
-  -- <iot-hub-name>: The Name of the Azure IoT Hub.
-  -- <iot-device-key>: The Primary or Secondary Key for the ChildDevice1 IoT Device in IoT Hub.
-  -- <iot-edge-gateway-hostname>: Enter the IP Address for the IoTEdgeGateway virtual machine.
+    -- <iot-hub-name>: The Name of the Azure IoT Hub.
+    -- <iot-device-key>: The Primary or Secondary Key for the ChildDevice1 IoT Device in IoT Hub.
+    -- <iot-edge-gateway-hostname>: Enter the IP Address for the IoTEdgeGateway virtual machine.
 
 1. Save the file.
 
@@ -35,25 +35,25 @@ In a previous unit, you created the IoT Device Identities in Azure IoT Hub. You 
 
 1. Run the following command to build the code for the **ChildIoTDevice** simulated device, and execute it to start sending device telemetry:
 
-  ```Bash
-       dotnet run
-  ```
+    ```Bash
+         dotnet run
+    ```
 
 1. When the app installed the **x.509 certificate** on the local machine so it can use it to authenticate with the IoT Edge Gateway, it may prompt asking if you would like to install the certificate. Click Yes to allow it and continue.
 
 1. Once the simulated device is running, the console output will display the events being sent to the Azure IoT Edge Gateway.
 
-  The terminal output will look similar to the following:
+    The terminal output will look similar to the following:
 
-  ```Bash
-     IoT Hub Quickstarts #1 - Simulated device. Ctrl-C to exit.
+    ```Bash
+       IoT Hub Quickstarts #1 - Simulated device. Ctrl-C to exit.
 
-      User configured CA certificate path: azure-iot-test-only.root.ca.cert.pem
-      Attempting to install CA certificate: azure-iot-test-only.root.ca.cert.pem
-      Successfully added certificate: azure-iot-test-only.root.ca.cert.pem
-      11/27/2019 4:18:26 AM > Sending message: {"temperature":21.768769073192388,"humidity":79.89793652663843}
-      11/27/2019 4:18:27 AM > Sending message: {"temperature":28.317862208149332,"humidity":73.60970909409677}
-      11/27/2019 4:18:28 AM > Sending message: {"temperature":25.552859350830715,"humidity":72.7897707153064}
-      11/27/2019 4:18:29 AM > Sending message: {"temperature":32.81164186439088,"humidity":72.6606041624493}
+        User configured CA certificate path: azure-iot-test-only.root.ca.cert.pem
+        Attempting to install CA certificate: azure-iot-test-only.root.ca.cert.pem
+        Successfully added certificate: azure-iot-test-only.root.ca.cert.pem
+        11/27/2019 4:18:26 AM > Sending message: {"temperature":21.768769073192388,"humidity":79.89793652663843}
+        11/27/2019 4:18:27 AM > Sending message: {"temperature":28.317862208149332,"humidity":73.60970909409677}
+        11/27/2019 4:18:28 AM > Sending message: {"temperature":25.552859350830715,"humidity":72.7897707153064}
+        11/27/2019 4:18:29 AM > Sending message: {"temperature":32.81164186439088,"humidity":72.6606041624493}
 
 1. Leave the simulated device running while you move on to the next unit.
