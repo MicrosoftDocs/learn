@@ -2,9 +2,7 @@ In this exercise, you will monitor events from the **ChildIoTDevice** are being 
 
 ## Testing Device Connectivity and Offline Support
 
-1. If necessary, log in to your Azure portal using your Azure account credentials.
-
-    If you have more than one Azure account, be sure that you are logged in with the account that is tied to the subscription that you will be using for this course.
+1. Log in to your Azure portal using your Azure account credentials.
 
 1. Open the Azure Cloud Shell by clicking the **Terminal** icon within the top header bar of the Azure portal, and select the **Bash** shell option.
 
@@ -69,7 +67,7 @@ In this exercise, you will monitor events from the **ChildIoTDevice** are being 
     | Placeholder | Value to replace |
     |-------------|------------------|
     | username | The admin Username for the IoTEdgeGateaway virtual machine. |
-    | ipaddress | The Public IP Address for the IoTEdgeGateway virtual machine. |
+    | IP address | The Public IP Address for the IoTEdgeGateway virtual machine. |
 
     Enter the **Password** for the **IoTEdgeGateway** username when prompted.
 
