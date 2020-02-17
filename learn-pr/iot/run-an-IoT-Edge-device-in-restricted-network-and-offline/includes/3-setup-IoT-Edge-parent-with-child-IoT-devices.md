@@ -68,19 +68,19 @@ If you have more than one Azure account, be sure that you are logged in with the
     az iot hub device-identity show-connection-string --hub-name AZ-220-HUB-_{YOUR-ID}_ --device-id IoTEdgeGateway -o tsv
    ```
 
-  ***Note:*** Be sure to replace the AZ-220-HUB-_{YOUR-ID}_ IoT Hub name with the name of your Azure IoT Hub.
+    ***Note:*** Be sure to replace the AZ-220-HUB-_{YOUR-ID}_ IoT Hub name with the name of your Azure IoT Hub.
 
-  Notice the az iot hub device-identity show-connection-string command is called by passing in several parameters:
+    Notice the az iot hub device-identity show-connection-string command is called by passing in several parameters:
 
-    -- hub-name: This required parameter is used to specify the name of the **Azure IoT Hub** to add the new device to.
+        -- hub-name: This required parameter is used to specify the name of the **Azure IoT Hub** to add the new device to.
 
-    -- device-id: This required parameter is used to specify the **Device ID** of the IoT Device being created.
+        -- device-id: This required parameter is used to specify the **Device ID** of the IoT Device being created.
 
-  The IoT Hub connection string output from the **IoTEdgeGateway** device will be in the following format:
+    The IoT Hub connection string output from the **IoTEdgeGateway** device will be in the following format:
 
-   ```bash
-    HostName={iot-hub-name}.azure-devices.net;DeviceId=IoTEdgeGateway;SharedAccessKey={shared-access-key}
-   ```
+     ```bash
+         HostName={iot-hub-name}.azure-devices.net;DeviceId=IoTEdgeGateway;SharedAccessKey={shared-access-key}
+     ```
 
 1. To create the first child device, run the following command:
 
