@@ -23,15 +23,15 @@ These are the TCP/IP port numbers for the supported protocols:
 
 1. Make note of the resource name of the **Network security group (NSG)** that was created for the IoTEdgeGateway virtual machine.
 
-  The name of the NSG should match the format of {vm-name}-nsg.
+    The name of the NSG should match the format of {vm-name}-nsg.
 
 1. Open the Azure Cloud Shell by clicking the **Terminal** icon within the top header bar of the Azure portal, and select the Bash shell option.
 
 1. Within the **Azure Cloud Shell**, to find the name of the Network Security Group (NSG) in use by the Azure ioT Edge Gateway VM, enter the following command:
 
-    ```CLI
-     az network nsg list --resource-group AZ-220-IoTEdgeResources -o table
-    ```
+        ```CLI
+         az network nsg list --resource-group AZ-220-IoTEdgeResources -o table
+        ```
 
 1. Within the **Azure Cloud Shell**, run the following commands to add **Inbound rules** to the NSG for MQTT, AMQP, and HTTPS communication protocols:
 
