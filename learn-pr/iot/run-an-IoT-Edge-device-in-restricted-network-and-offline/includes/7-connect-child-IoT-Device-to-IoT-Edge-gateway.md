@@ -1,12 +1,12 @@
-In this exercise, you will configure the downstream, child IoT Devices to connect to IoT Hub using their configured Symmetric Keys. The devices will be configured to connect to IoT Hub and the parent IoT Edge Device using a Connection String that contains the Symmetric Key; in addition to the Gateway Hostname for the Parent IoT Edge Device.
+This exercise will configure the downstream child IoT Devices to connect to IoT Hub using their configured Symmetric Keys. The devices will be configured to connect to IoT Hub and the parent IoT Edge Device using a Connection String containing the Symmetric Key and the Gateway Hostname for the Parent IoT Edge Device.
 
-The process to authenticate regular IoT devices to IoT Hub with symmetric keys also applies to downstream (or child / leaf) devices. The only difference is that you need to add a pointer to the Gateway Device to route the connection or, in offline scenarios, to handle the authentication on behalf of IoT Hub.
+The process to authenticate regular IoT devices to IoT Hub with symmetric keys also applies to downstream (or child / leaf) devices. The noted difference is the added pointer to the Gateway Device to route the connection or, in offline scenarios, to handle the authentication on behalf of IoT Hub.
 
-In a previous unit, you created the IoT Device Identities in Azure IoT Hub. You copied the **Connection String** for the IoT Device. Alternatively, the Connection String can be accessed with the Azure portal for the Device ID of the device within Azure IoT Hub.
+In a previous unit, you created the IoT Device Identities in Azure IoT Hub. You copied the **Connection String** for the IoT Device. The Connection String can also be accessed with the Azure portal for the Device ID of the device within Azure IoT Hub.
 
 ## Connecting the Child IoT Device to IoT Edge Gateway
 
-1. Copy the azure-iot-test-only.root.ca.cert.pem x.509 certificate file that was downloaded previously (when the IoT Edge Gateway was configured) to the /LabFiles/ChildIoTDevice directory where the source code for the Child IoT Device is located.
+1. Copy the azure-iot-test-only.root.ca.cert.pem x.509 certificate file downloaded previously (when the IoT Edge Gateway was configured) to the /LabFiles/ChildIoTDevice directory where the source code for the Child IoT Device is located.
 
 1. Open the /LabFiles/ChildIoTDevice directory within **Visual studio Code**.
 
@@ -43,7 +43,7 @@ In a previous unit, you created the IoT Device Identities in Azure IoT Hub. You 
 
 1. Once the simulated device is running, the console output will display the events being sent to the Azure IoT Edge Gateway.
 
-    The terminal output will look similar to the following:
+    The terminal output will look similar to the following example:
 
     ```Bash
        IoT Hub Quickstarts #1 - Simulated device. Ctrl-C to exit.
