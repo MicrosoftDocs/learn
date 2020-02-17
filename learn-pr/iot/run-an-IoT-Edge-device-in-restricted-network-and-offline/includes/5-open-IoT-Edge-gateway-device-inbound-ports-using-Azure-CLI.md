@@ -2,7 +2,7 @@ In this exercise, you will use the Azure CLI to configure the Network Security G
 
 For the Azure IoT Edge Gateway to communicate with Child IoT Devices, the TCP/IP port for the devices protocol must be open for **Inbound** communication. The device could use one of three supported protocols to communicate with the IoT Gateway.
 
-These are the TCP/IP port numbers for the supported protocols:
+These TCP/IP port numbers are for the supported protocols:
 
 | Protocol	| Port Number |
 |-----------|-------------|
@@ -47,6 +47,6 @@ These are the TCP/IP port numbers for the supported protocols:
      {nsg-name}	Enter the name of the **Network Security Group**.
      {resource-group}	Enter the name of the **Resource group** for the virtual machine.
 
-     **Note:** In production, it’s best practice to only open inbound communication to the communication protocol(s) in use by your IoT devices. If your devices only use MQTT, then only open inbound communication for that port. This will help limit the surface attack area of open ports that could be exploited.
+     **Note:** In production, it’s best practice to only open inbound communication to the communication protocol(s) in use by your IoT devices. If your devices only use MQTT, then only open inbound communication for that port. This helps limit the surface attack area of open ports that could be exploited.
 
 1. With the **Inbound rules** added to the **Network Security Group (NSG)**, the Child IoT Device will be allowed to communicate with the IoT Edge Gateway virtual machine.
