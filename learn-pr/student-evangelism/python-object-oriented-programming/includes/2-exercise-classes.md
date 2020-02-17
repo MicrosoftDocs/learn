@@ -6,19 +6,19 @@ To run your Python code, you will use Azure Cloud Shell to your right. Python co
 
 ## Objects in Python
 
-Everything is an object in Python. When you create a variable and assign it a number, Python creates an instance of a built-in class. When you create a variable and assign it a string, Python once more creates an instance of a built-in class, albeit a different one.
+Everything is an object in Python. When you create a variable and assign it a number, Python creates an instance of a built-in class. When you create a variable and assign it a string, Python again creates an instance of a built-in class, although a different one.
 
-Before you begin writing classes of your own, it is helpful to peek under the hood and understand how Python itself uses objects.
+Before you begin writing classes of your own, it's helpful to peek under the hood and understand how Python itself uses objects.
 
 First, we will start the Python interpreter in Cloud Shell to look at some objects.
 
-1. In Cloud Shell to the right, type the following to start the Python interpreter:
+1. In Cloud Shell to the right, type the following command to start the Python interpreter:
 
     ```bash
     python3
     ```
 
-1. You should see the following output, letting you know the Python interpreter is running:
+1. You should see the following output, which lets you know that the Python interpreter is running:
 
     ```output
     Python 3.5.2 (default, Oct  8 2019, 13:06:37)
@@ -27,7 +27,7 @@ First, we will start the Python interpreter in Cloud Shell to look at some objec
     >>>
     ```
 
-1. Now, type or paste the following code into the running Python interpreter:
+1. Now, enter or paste the following code into the running Python interpreter:
 
     ```python
     print(type(1))
@@ -51,19 +51,19 @@ First, we will start the Python interpreter in Cloud Shell to look at some objec
     <class 'bool'>
     ```
 
-    The output shows that 1 is an instance of Python's built-in `int` class, while "Hello There!" is a `str` (string).
+    The output shows that 1 is an instance of Python's built-in `int` (integer) class. "Hello There!" is a `str` (string).
 
-    Notice that Python uses different classes for 1 and 1.1: 1.1 is `float`, not an `int`. If something has a truth value, True or False, then it relies on the `bool` class.
+    Notice that Python uses different classes for 1 and 1.1. 1.1 is a `float`, not an `int`. If something has a truth value, True or False, it relies on the `bool` class.
 
-    You could easily test other kinds of data (feel free to experiment!), but be assured that any sort of data you try has an associated class, whether one that is built into Python or one you have written yourself.
+    You could easily test other kinds of data (feel free to experiment!) but be assured that any sort of data you try has an associated class, whether it's one that is built into Python or one that you have written yourself.
 
-1. All classes have methods associated with them. Type the following code and press enter:
+1. All classes have methods associated with them. Enter the following code, and then press Enter:
 
     ```python
     print(dir(1))
     ```
 
-1. This is the output you should see:
+1. You should see this output:
 
     ```output
     ['__abs__', '__add__', '__and__', '__bool__',
@@ -86,13 +86,13 @@ First, we will start the Python interpreter in Cloud Shell to look at some objec
     'real', 'to_bytes']
     ```
 
-    This confusing list is all the `int` object's methods. The `dir()` function provides a list of attributes and methods for whatever you put within the parentheses.
+    This confusing list is all the `int` object's methods. The `dir()` function provides a list of attributes and methods for whatever you put in the parentheses.
 
-    You sometimes hear methods referred to as *functions* when working with Python. The two terms are synonymous, but you can avoid confusion when talking with other people if you simply call them methods.
+    When you work with Python, you might hear methods referred to as *functions*. In Python, the two terms--*methods* and *functions*--are synonymous, but you can avoid confusion when talking with other people by calling them *methods*.
 
-    All the entries you see in the list are methods. A method represents an action that you can perform on an object. For example, `to_bytes()` outputs the object value in byte format, which is just a special way of looking at the data.
+    All the entries you see in the output list are methods. A method represents an action that you can perform on an object. For example, `to_bytes()` outputs the object value in byte format, which is just a specific way of looking at the data.
 
-    Notice the `__str__` method in the list. This method turns a value into a `str` (string) type. An object's type is simply the class it was created from. So the type of 1 is `int`.
+    Notice the `__str__` method in the list. This method turns a value into a `str` type. An object's type is simply the class it was created from. So the type of 1 is `int`.
 
 1. Run the following code:
 
@@ -101,56 +101,56 @@ First, we will start the Python interpreter in Cloud Shell to look at some objec
     print(type(myVar.__str__()))
     ```
 
-    The first line is an assignment. You're assigning the value `1` to an object named `myVar`. The `myVar` object now has an attribute: the value 1.
+    The first line of code is an assignment. You're assigning the value `1` to an object named `myVar`. The `myVar` object now has an attribute: the value 1.
 
-    The second line of code calls the `__str__()` method that is part of the `int` class and therefore present in the `myVar` object.
+    The second line of code calls the `__str__()` method that is part of the `int` class, and therefore present in the `myVar` object.
 
     What does the output from the code tell you?
 
-The `__str__()` method created a new object from `myVar` of type `str`. The `myVar` object is still the same, completely untouched; it's still of type `int`. The new object – which doesn't have a name because you haven't assigned it one – is of type `str`.
+The `__str__()` method created a new object from `myVar` of type `str`. The `myVar` object is still the same, untouched; it's still of type `int`. The new object, which doesn't have a name because you haven't assigned it one, is of type `str`.
 
 ## Define a class
 
-Python has several built-in classes including `int`, `float`, `bool`, and `str`, but it also allows you to define classes of your own. This is the idea behind object-oriented programming.
+Python has several built-in classes, including `int`, `float`, `bool`, and `str`, but you can also define classes of your own--the main objective in OOP.
 
-Every Python class you create begins with the word `class` (which makes sense). Of course, a class needs a name. A class also needs to do something.
+Every Python class you create begins with the word `class`. A class needs a name, and it also needs to do something.
 
-Let's begin with something simple: telling the user that the class has been created. In the real world, you wouldn't actually create a class like this, but it's helpful for learning in an incremental fashion.
+Let's begin with something simple: Tell the user that the class has been created. In the real world, you wouldn't actually create a class like this, but it's helpful for learning incrementally.
 
-Let's open Cloud Shell's built-in code editor to make our very first class.
+Let's open Cloud Shell's built-in code editor to make our first class.
 
-1. First, paste or type the following to stop the Python interpreter:
+1. First, enter or paste the following code to stop the Python interpreter:
 
     ```python
     quit()
     ```
 
-1. Now, type the following to create a new Python file and open it:
+1. Now, enter the following code to create a new Python file and open it:
 
     ```bash
     code MyClass.py
     ```
 
-1. Type the following code into the open file above Cloud Shell:
+1. Enter the following code in the open file above Cloud Shell:
 
     ```python
     class MyClass:
         print('MyClass created!')
     ```
 
-    This is the simplest class you can create. It contains the bare essentials needed to create a class:
+    The command creates the simplest class you can create. It contains the bare essentials needed to create a class:
 
     - The keyword `class`
     - The class name ("myClass")
     - A colon marking the end of the `class` statement
 
-    Notice that the next line is indented. This is important! Python uses indentation to indicate structure. In this case, the `print()` statement is part of `myClass`.
+    Notice that the next line is indented. The indentation is important! Python uses indentation to indicate structure. In this case, the `print()` statement is part of `myClass`.
 
-1. Save you file, by clicking on the 3 dots in the upper right hand corner, or pressing Ctrl+s (or Command+s on a Mac).
+1. To save your file, select the three dots in the upper-right corner, or press Ctrl+S (or Command+S on a Mac).
 
-    ![Save file in Cloud Shell editor](../media/save-file.png)
+    ![Save the file in the Cloud Shell editor](../media/save-file.png)
 
-1. Run the code you've just written with this command:
+1. Use this command to run the code you wrote:
 
     ```bash
     python3 MyClass.py
@@ -162,11 +162,11 @@ Let's open Cloud Shell's built-in code editor to make our very first class.
     MyClass created!
     ```
 
-The output proves that the class was created (not that it was instantiated). The `print()` function executes during the creation process. Normally, you wouldn't use a `print(`) statement this way, but here it helps to see how the class creation works.
+The output proves that the class was created (not that it was instantiated). The `print()` function executes during the creation process. Normally, you wouldn't use a `print(`) statement this way, but in this case, it helps to see how class creation works.
 
 ## Instantiate a class
 
-At this point, you have a very simple (and nearly useless) class, but it serves to show how classes are defined. Now let's create an object from the class.
+At this point, you have a basic (and nearly useless) class, but it serves to show how a class is defined. Now, let's create an object from the class.
 
 1. Add the following statement to the bottom of the file:
 
@@ -175,7 +175,7 @@ At this point, you have a very simple (and nearly useless) class, but it serves 
     ```
 
     > [!NOTE]
-    > Be sure to use proper Python indentation. This line should not be indented at all - at the same level as `class MyClass:`.
+    > Be sure to use proper Python indentation. This line should not be indented at all. This line is at the same level as `class MyClass:` in the preceding exercise in this unit.
 
     This line creates an object named `myVar` from the class named `myClass`. Notice the parentheses after `myClass`. The parentheses tell Python to create an instance of the class without passing any parameters to it.
 
@@ -186,7 +186,7 @@ At this point, you have a very simple (and nearly useless) class, but it serves 
     print(dir(myVar))
     ```
 
-1. Save, then run your code again with the same command:
+1. Save the file, and then run your code again by using the same command that you used in the preceding exercise in this unit:
 
     ```bash
     python3 MyClass.py
@@ -196,7 +196,7 @@ At this point, you have a very simple (and nearly useless) class, but it serves 
 
     A scope is a kind of logical grouping that holds pieces of code together.
 
-    You don't see a scope for the `int` type because `int` is defined outside the scope of the current application. You see `__main__` for `myClass` because you defined `myClass` within the current application. It's the default scope, but you don't need to worry about it for now.
+    You don't see a scope for the `int` type because `int` is defined outside the scope of the current application. You see `__main__` for `myClass` because you defined `myClass` in the current application. It's the default scope, but you don't need to worry about it for now.
 
     The important takeaway, for the moment, is that `myVar` is an instance of the `myClass` class.
 
