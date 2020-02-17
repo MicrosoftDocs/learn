@@ -4,7 +4,7 @@ The default value of 7200 (2 hours) is not long enough for a device or solution 
 
 The Module Twin for the IoT Edge Hub is called $edgeHub and is used to coordinate communications between the IoT Edge Hub running on the device and the Azure IoT Hub service. Within the Desired Properties for the Module Twin, the storeAndForwardConfiguration.timeToLiveSecs property specifies the time in seconds that IoT Edge Hub keeps messages when in a state disconnected from routing endpoints, like Azure IoT Hub.
 
-The timeToLiveSecs property for the Edge Hub can be specified in the Deployment Manifest on a specific device as part of a single-device or at-scale deployment. In this unit, you will use the Azure Portal user interface for Azure IoT Hub to modify the timeToLiveSecs property for the Edge Hub ($edgeHub) module on the single IoT Edge Gateway device.
+The timeToLiveSecs property for the Edge Hub can be specified in the Deployment Manifest on a specific device as part of a single-device or at-scale deployment. In this unit, you will use the Azure portal user interface for Azure IoT Hub to modify the timeToLiveSecs property for the Edge Hub ($edgeHub) module on the single IoT Edge Gateway device.
 
 ### Task 1: Configure the Module Twin
 
@@ -30,7 +30,7 @@ You will note that the "desired" properties are empty for this new device.
 
 1. Click the **Set Modules** button at the top. An interface now opens allowing you to set and configure the IoT Edge Modules deployed to this IoT Edge Device.
 
-1. On the **Set modules** pane, click the Runtime Settings button under the Iot Edge Modules section.
+1. On the **Set modules** pane, click the Runtime Settings button under the IoT Edge Modules section.
 
 1. On the **Runtime Settings** pane, locate the **Store and forward configuration - time to live (seconds)** field for the **Edge Hub** module, then change the value to 1209600, which specifies a message time to live of two weeks on the IoT Edge Device.
 
@@ -97,7 +97,7 @@ Once the changes have been passed to the Azure IoT Edge device, it will restart 
 
 Before continuing, it is essential to ensure that the user profile for the IoT Edge Hub module has the required read, write, and execute permissions to the **/etc/iotedge/storage/ directory**.
 
-1. Navigate to the **AZ220EdgeVM{YOUR-ID}** IoT Edge virtual machine within the Azure Portal.
+1. Navigate to the **AZ220EdgeVM{YOUR-ID}** IoT Edge virtual machine within the Azure portal.
 
 1. On the **Overview pane** of the **Virtual machine** blade, click the **Connect** button at the top.
 
@@ -105,7 +105,7 @@ Before continuing, it is essential to ensure that the user profile for the IoT E
 
     This sample SSH command will be used to connect to the virtual machine that contains the IP Address for the VM and the Administrator username. The command is formatted similar to ssh username@52.170.205.79.
 
-1. At the top of the Azure Portal, click on the **Cloud Shell** icon to open up the **Azure Cloud Shell** within the Azure Portal. When the pane opens, choose the option for the **Bash** terminal within the Cloud Shell.
+1. At the top of the Azure portal, click on the **Cloud Shell** icon to open up the **Azure Cloud Shell** within the Azure portal. When the pane opens, choose the option for the **Bash** terminal within the Cloud Shell.
 
 1. Within the Cloud Shell, paste in the ssh command that was copied, and press **Enter**.
 
