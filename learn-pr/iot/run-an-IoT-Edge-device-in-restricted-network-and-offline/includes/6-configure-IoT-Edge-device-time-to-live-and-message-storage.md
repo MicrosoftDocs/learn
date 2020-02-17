@@ -105,7 +105,7 @@ Before continuing, it is essential to ensure that the user profile for the IoT E
 
     This sample SSH command will be used to connect to the virtual machine that contains the IP Address for the VM and the Administrator username. The command is formatted similar to ssh username@52.170.205.79.
 
-1. At the top of the Azure Portal click on the **Cloud Shell** icon to open up the **Azure Cloud Shell** within the Azure Portal. When the pane opens, choose the option for the **Bash** terminal within the Cloud Shell.
+1. At the top of the Azure Portal, click on the **Cloud Shell** icon to open up the **Azure Cloud Shell** within the Azure Portal. When the pane opens, choose the option for the **Bash** terminal within the Cloud Shell.
 
 1. Within the Cloud Shell, paste in the ssh command that was copied, and press **Enter**.
 
@@ -134,7 +134,7 @@ Before continuing, it is essential to ensure that the user profile for the IoT E
         edgeHub          failed           Failed (139) 0 seconds ago  mcr.microsoft.com/azureiotedge-hub:1.0
     ```
 
-    This is due to the fact that the edgeHub process does not have permission to write to the /etc/iotedge/storage/ directory.
+    This event occurs because the edgeHub process does not have permission to write to the /etc/iotedge/storage/ directory.
 
 1. To confirm the issue with the directory permission, enter the following command:
 
@@ -155,7 +155,7 @@ Before continuing, it is essential to ensure that the user profile for the IoT E
         sudo chmod 775 /etc/iotedge/storage/
     ```
 
-    The first command sets the owner of the directory to the current user and the owning user group to iotedge. The second command enables full access to both the current user and members of the iotedge group. This will ensure that the edgeHub module is able to create directories and files within the /etc/iotedge/storage/ directory.
+    The first command sets the owner of the directory to the current user and the owning user group to iotedge. The second command enables full access to both the current user and members of the iotedge group. These commands will ensure that the edgeHub module is able to create directories and files within the /etc/iotedge/storage/ directory.
 
 1. To restart the edgeHub module and verify it started, enter the following commands:
 
