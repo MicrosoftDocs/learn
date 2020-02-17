@@ -6,7 +6,7 @@ In this exercise, you will configure the Azure IoT Edge on Ubuntu virtual machin
 
 1. Locate the lab files for this lab, and open the setup-iot-edge-gateway.sh helper script within **Visual Studio Code**.
 
-1. Edit the setup-iot-edge-gateway.sh script to replace the following variable placeholders with the necessary values so the **IoT Edge on Ubuntu VM** can be configured as an **IoT Edge Transparent Gateway:**
+1. Edit the setup-iot-edge-gateway.sh script replacing the following variable placeholders with the new values so the **IoT Edge on Ubuntu VM** can be configured as an **IoT Edge Transparent Gateway:**
 
    | Placeholder |	Value to replace with |
    |-------------|-----------------------|
