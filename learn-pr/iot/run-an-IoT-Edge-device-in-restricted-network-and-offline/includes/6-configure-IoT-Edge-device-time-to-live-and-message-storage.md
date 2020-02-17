@@ -1,6 +1,6 @@
 In this exercise, you will configure the message Time-to-Live (TTL) of the Edge Hub module on the Azure IoT Edge Gateway device to be longer than the default. You will also configure the storage location on the IoT Edge Device where the messages are to be stored.
 
-The default value of 7200 (2 hours) is not long enough for a device or solution that may need to function in Offline mode for extended periods of time. For the device and solution to operate for more extended periods of being disconnected, you will configure the Time-to-Live (TTL) property of the IoT Edge Hub module to the value of 1,209,600 seconds, for a two week TTL period.
+The default value of 7200 (2 hours) is not long enough for a device or solution that may need to function in Offline mode for extended periods of time. For the device and solution to operate for more extended periods of being disconnected, you will configure the Time-to-Live (TTL) property of the IoT Edge Hub module to the value of 1,209,600 seconds, for a two-week TTL period.
 
 The Module Twin for the IoT Edge Hub is called $edgeHub and is used to coordinate communications between the IoT Edge Hub running on the device and the Azure IoT Hub service. Within the Desired Properties for the Module Twin, the storeAndForwardConfiguration.timeToLiveSecs property specifies the time in seconds that IoT Edge Hub keeps messages when in a state disconnected from routing endpoints, like Azure IoT Hub.
 
@@ -32,7 +32,7 @@ You will note that the "desired" properties are empty for this new device.
 
 1. On the **Set modules** pane, click the Runtime Settings button under the Iot Edge Modules section.
 
-1. On the **Runtime Settings** pane, locate the **Store and forward configuration - time to live (seconds)** field for the **Edge Hub** module, then change the value to 1209600 which specifies a message time to live of two weeks on the IoT Edge Device.
+1. On the **Runtime Settings** pane, locate the **Store and forward configuration - time to live (seconds)** field for the **Edge Hub** module, then change the value to 1209600, which specifies a message time to live of two weeks on the IoT Edge Device.
 
     **Note:** There are several considerations to make when configuring the Message Time-to-Live (TTL) for the Edge Hub ($edgeHub) module. When the IoT Edge Device is disconnected, the messages are stored on the local device. You need to calculate how much data will be stored during the TTL period, and make sure there is enough storage on the device for that much data. The amount of storage and TTL configured will need to meet the solutions requirements so that important data is not lost; if possible.
 
@@ -109,9 +109,11 @@ Before continuing, it is essential to ensure that the user profile for the IoT E
 
 1. Within the Cloud Shell, paste in the ssh command that was copied, and press **Enter**.
 
-1. When prompted with Are you sure you want to continue connecting?, type yes and press Enter. This prompt is a security confirmation since the certificate used to secure the connection to the VM is self-signed. The answer to this prompt will be remembered for subsequent connections, and is only prompted on the first connection.
+1. When prompted with "Are you sure you want to continue connecting?", type yes and press Enter. 
 
-1. When prompted to enter the password, enter the Administrator password that was entered when the VM was provisioned.
+    **Note:** This prompt is a security confirmation since the certificate used to secure the connection to the VM is self-signed. The answer to this prompt will be remembered for subsequent connections, and is only prompted on the first connection.
+
+1. Enter the Administrator password, when prompted to enter the password, that was entered when the VM was provisioned.
 
 1. Once connected, the terminal will change to show the name of the Linux VM, similar to the following and reports which VM you are connected to.
 
