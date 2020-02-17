@@ -68,8 +68,8 @@ In this exercise, you will monitor events from the **ChildIoTDevice** are being 
 
     | Placeholder | Value to replace |
     |-------------|------------------|
-    | <username> | The admin Username for the IoTEdgeGateaway virtual machine. |
-    | <ipaddress> | The Public IP Address for the IoTEdgeGateway virtual machine. |
+    | username | The admin Username for the IoTEdgeGateaway virtual machine. |
+    | ipaddress | The Public IP Address for the IoTEdgeGateway virtual machine. |
 
     Enter the **Password** for the **IoTEdgeGateway** username when prompted.
 
