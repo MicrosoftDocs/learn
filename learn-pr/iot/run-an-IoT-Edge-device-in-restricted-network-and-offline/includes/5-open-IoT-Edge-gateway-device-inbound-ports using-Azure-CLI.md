@@ -8,22 +8,22 @@ These are the TCP/IP port numbers for the supported protocols:
 |-----------|-------------|
 | MQTT | 8883 |
 | AMQP | 5671 |
-| HTTPS
-  MQTT + WS (Websocket)
-  AMQP + WS (Websocket)	| 443 |
+| HTTPS | 443 |
+| MQTT + WS (Websocket) | 443 |
+| AMQP + WS (Websocket)	| 443 |
 
 
 ## Opening an IoT Edge Gateway Device Inbound Ports using Azure CLI
 
 1. If necessary, log in to your Azure portal using your Azure account credentials.
 
-If you have more than one Azure account, be sure that you are logged in with the account that is tied to the subscription that you will be using for this course.
+  If you have more than one Azure account, be sure that you are logged in with the account that is tied to the subscription that you will be using for this course.
 
 1. Within the **Azure portal**, navigate to the **IoTEdgeGateway** resource group.
 
 1. Make note of the resource name of the **Network security group (NSG)** that was created for the IoTEdgeGateway virtual machine.
 
-The name of the NSG should match the format of {vm-name}-nsg.
+  The name of the NSG should match the format of {vm-name}-nsg.
 
 1. Open the Azure Cloud Shell by clicking the **Terminal** icon within the top header bar of the Azure portal, and select the Bash shell option.
 
