@@ -60,23 +60,24 @@ In this exercise, you will monitor events from the **ChildIoTDevice** are being 
 
 1. Within the **Azure Cloud Shell** connect to the **IoTEdgeGateway** VM using ssh with the following command:
 
-```Bash
-    ssh <username>@<ipaddress>
-```
+        ```Bash
+            ssh <username>@<ipaddress>
+        ```
 
     Be sure to replace the placeholders with the required values for the ssh command:
 
-    Placeholder	Value to replace
-    <username>	The admin Username for the IoTEdgeGateaway virtual machine.
-    <ipaddress>	The Public IP Address for the IoTEdgeGateway virtual machine.
+    | Placeholder | Value to replace |
+    |-------------|------------------|
+    | <username> | The admin Username for the IoTEdgeGateaway virtual machine. |
+    | <ipaddress> | The Public IP Address for the IoTEdgeGateway virtual machine. |
 
-Enter the **Password** for the **IoTEdgeGateway** username when prompted.
+    Enter the **Password** for the **IoTEdgeGateway** username when prompted.
 
 1. Once connected to the **IoTEdgeGateway** VM via ssh, run the following command to reset the IoT Edge Runtime.
 
-    ```Bash
-        sudo systemctl restart iotedge
-    ```
+        ```Bash
+            sudo systemctl restart iotedge
+        ```
 
     This will force the IoT Edge Runtime to disconnect from the Azure IoT Hub service, and then attempt to reconnect.
 
@@ -84,9 +85,9 @@ Enter the **Password** for the **IoTEdgeGateway** username when prompted.
 
 1. Run the az iot hub monitor-events command again within the **Azure Cloud Shell** to start monitoring the Events being received by the Azure IoT Hub:
 
-    ```Bash
-        az iot hub monitor-events --hub-name AZ-220-HUB-_{YOUR-ID}_
-    ```
+        ```Bash
+            az iot hub monitor-events --hub-name AZ-220-HUB-_{YOUR-ID}_
+        ```
 
     Be sure to replace the {Your-ID} placeholder with your unique suffix for our Azure IoT Hub instance.
 
