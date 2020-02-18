@@ -43,3 +43,22 @@ Here's an explanation of some of those terms:
 |Owner role|This role lets you manage all resources in Azure, including the access levels users need for resources.  |
 |Global administrator| When you create a tenant, you're automatically assigned this role for that tenant. The role gives you all the administrative capabilities for Azure AD. For example, you can reset passwords for all users and administrators.|
 | | |
+
+## Default user permissions
+
+Azure AD gives all of the users in your tenant a default set of permissions. Permissions dictate what a user can and can't do. The set of permissions granted by default depends on whether a particular user is a natural member user of the tenant (like an internal employee) or if they belong to an outside organization. The latter would be considered a guest, such as an external collaborating user. Guest users are invited to the tenant through a feature for Azure AD called Azure Active Directory B2B.
+
+Member users can do many things that guest users can't. For example, member users manage their own profile details, like their phone number, profile photos, and more. Guest users typically have more restrictions. A guest user can, for instance, view their display photo but can't change it. The external healthcare professionals your company works with regularly, could be given guest user access. This way, they'd have more restricted permissions than a regular internal staff member, but they would still have enough permissions to get their work done.
+
+### Member and guest default permissions compared
+
+Here are some of the default permissions for member and guest type users:
+
+|Area  |Member user permissions  |Guest user permissions  |
+|---------|---------|---------|
+|Users and contacts|Can view all profile details. Change own password, update own mobile phone number, and profile photos.|Only view profile name, email, sign-in name, photo, user principal name, and user type properties of other users and contacts; change own password.|
+|Devices|Can read all properties of devices. Manage all properties of owned devices.|Can't read all properties of devices. Can't manage all properties of owned devices. Can delete owned devices.|
+|Applications |Can register new applications.|Can't register new applications. Can delete owned applications.|
+Policies|Read all properties of policies, manage all properties of owned policy.|No permissions.|
+Subscriptions|Read all subscriptions, enable Service Plan Member.|No permissions.|
+Roles and Scopes|Read all administrative roles and memberships, read all Roles and Scopes and membership of administrative units.|No permissions.|

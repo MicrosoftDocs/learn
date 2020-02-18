@@ -1,8 +1,8 @@
 Your company wants to improve how it provides services to doctors, and how it collaborates with external healthcare organizations. You've been asked to investigate what other capabilities and services Azure AD could provide for the organization.
 
-You'll explore some essential features for Azure AD, and how they can be used. For example, you'll look at features like Azure Active Directory B2B, Azure Active Directory B2C, Azure Active Directory Domain Services, and Azure Identity Protection. And you'll see which features you can use to help improve how you manage applications with Azure AD.
+You'll explore some essential features for Azure AD, and how they can be used. For example, you'll look at features like Azure Active Directory business-to-business (B2B), Azure Active Directory business-to-consumer (B2C), Azure Active Directory Domain Services, and Azure Identity Protection. And you'll see which features you can use to help improve how you manage applications with Azure AD.
 
-## Azure Active Directory B2B (Azure AD B2B)
+## Azure Active Directory B2B
 
 Use Azure AD to invite external users to your tenant. Your organization can then collaborate with external healthcare partner staff members through Azure AD B2B Collaboration. For example, your company works with external healthcare partners who would be invited as guest users to your tenant. When the work is done, access for those external healthcare partners can be revoked until it's needed again.
 

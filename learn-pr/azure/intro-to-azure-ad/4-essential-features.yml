@@ -3,7 +3,7 @@ uid: learn.intro-to-azure-ad.4-essential-features
 metadata:
   title: Essential features of Azure AD
   description: Essential features of Azure AD
-  ms.date: 12/30/2019
+  ms.date: 02/18/2020
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
@@ -15,7 +15,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: What does Azure Active Directory B2B (Azure AD B2B) provide?
+  - content: What does Azure AD B2B provide?
     choices:
     - content: Azure AD B2B makes it possible for you to manage your customers' identities and access to applications and resources.
       isCorrect: false
