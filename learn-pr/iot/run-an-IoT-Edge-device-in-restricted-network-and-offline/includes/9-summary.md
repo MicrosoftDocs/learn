@@ -2,7 +2,7 @@ In this module, you learned how to:
 
 - Create an IoT Hub and Device ID
 - Deploy Azure IoT Edge Enabled Linux VM
-- Setup IoT Edge Parent with Child IoT Devices
+- Set up IoT Edge Parent with Child IoT Devices
 - Configure IoT Edge Device as Gateway
 - Open IoT Edge Gateway Device Inbound Ports using Azure CLI
 - Configure IoT Edge Device Time-to-Live and Message Storage
