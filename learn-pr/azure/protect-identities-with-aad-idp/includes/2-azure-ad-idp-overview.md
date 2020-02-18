@@ -1,17 +1,16 @@
-Azure Active Directory Identity Protection (AADIP) helps you to automatically detect, remediate, and investigate identity-based risks for your organization. 
+Azure Active Directory Identity Protection helps you to automatically detect, remediate, and investigate identity-based risks for your organization. 
 
-The retail company you work for is very conscious about its reputation. Compromised identities have previous enabled malicious users to obtain customer information fraudulently. These attacks have affected you organization's reputation, and ultimately its profitability. Your manager has asked you to investigate AADIP as a solution. You've been asked to report back on what the service does and how it's used.
+The retail company you work for is very conscious about its reputation. Compromised identities have previous enabled malicious users to obtain customer information fraudulently. These attacks have affected you organization's reputation, and ultimately its profitability. Your manager has asked you to investigate Identity Protection as a solution. You've been asked to report back on what the service does and how it's used.
 
-In this unit, you'll learn what AADIP is and the risks involved in using it. You'll explore the different workflows you can use in AADIP to protect your identities.
+In this unit, you'll learn what Identity Protection is and the risks involved in using it. You'll explore the different workflows you can use in Identity Protection to protect your identities.
 
 ## What is Azure Active Directory Identity Protection?
 
-Azure Active Directory Identity Protection (AADIP) is a solution built into Azure Active Directory, that is designed to protect your identities through a three-part process:
+Identity Protection is a solution built into Azure Active Directory, that is designed to protect your identities through a three-part process:
 
-![AADIP overview](../media/2-aadip-overview.png)
-<!-- Please feel free to style according to Learn standards. -->
+![Identity Protection overview](../media/2-identity-protection-overview.png)
 
-Your company's specialist expertise is in retail, not in identity protection. It wants to continue to focus on its areas of strength, but still ensure that it's protected against identity risks. Your organization can use AADIP to automate the detection, investigation, and remediation of risks related to users' identities without hiring expensive security experts.
+Your company's specialist expertise is in retail, not in identity protection. It wants to continue to focus on its areas of strength, but still ensure that it's protected against identity risks. Your organization can use Identity Protection to automate the detection, investigation, and remediation of risks related to users' identities without hiring expensive security experts.
 
 ## What are risks?
 
@@ -28,11 +27,11 @@ A user risk is caused when a user's identity or account is compromised. User ris
 
 ### Sign-in risk
 
-Here, AADIP scrutinizes each authentication request to judge whether it was authorized by the owner of the identity. Sign-in risks can include:
+Here, Identity Protection scrutinizes each authentication request to judge whether it was authorized by the owner of the identity. Sign-in risks can include:
 
 | Risk  | Description |
 | --- | --- |
-| Unfamiliar sign-in properties | AADIP remembers and learns a particular user's sign-in history. For example, when a sign-in occurs from a location that's unusual for the user, a risk detection is triggered. |
+| Unfamiliar sign-in properties | Identity Protection remembers and learns a particular user's sign-in history. For example, when a sign-in occurs from a location that's unusual for the user, a risk detection is triggered. |
 | Atypical travel | For example, when two or more sign-ins occur from distant locations, in an unrealistically short time period, a risk detection is raised. |
 | Malware linked IP address | For example, if the IP address where the sign-in originates is known to have been in contact with an active bot server, a risk detection is raised. |
 | Anonymous IP address | For example, a sign-in originates from an anonymous IP address. Because these details can be used by attackers to hide their real IP address or location, a risk detection is raised. |
@@ -43,10 +42,9 @@ There are two different ways to detect and handle identity risks.
 
 1. **Self-remediation workflow**
 
-    AADIP uses risk policies to automatically respond to detected threats for you. You configure a risk policy to decide how you want AADIP to respond to a particular type of risk. You then choose the action the user is asked to complete. The action could be a self-service password reset, or multi-factor authentication enforcement. Using policies in this way helps save time, and gives you peace of mind.
+    Identity Protection uses risk policies to automatically respond to detected threats for you. You configure a risk policy to decide how you want Identity Protection to respond to a particular type of risk. You then choose the action the user is asked to complete. The action could be a self-service password reset, or multi-factor authentication enforcement. Using policies in this way helps save time, and gives you peace of mind.
 
-    ![Automated remediation](../media/2-aadip-flow.png)
-    <!-- Please feel free to style according to Learn standards. -->
+    ![Automated remediation](../media/2-identity-protection-flow.png)
 
     In this workflow, the administrator first configures the risk policies that then monitor for identity risks. When a risk is detected, the policies enforce measures to remediate it. A policy might, for example, ask a user to reset their password in response to a risk detected. The user then resets their password, and the risk is remediated.
 
@@ -55,6 +53,5 @@ There are two different ways to detect and handle identity risks.
    You can also have administrators decide how a risk should be remediated when it's been detected by your risk policies. This type of remediation workflow helps you make more tailored decisions. The administrator understands the context in which the risks were detected.
 
     ![Admin remediation](../media/2-admin-remediation.png)
-    <!-- Please feel free to style according to Learn standards. -->
 
     In this workflow, the administrator configures risk policies. The policies then monitor for identity risks. The administrator is notified of risks in a report. The administrator views the detailed report and takes appropriate action to remediate the risks. For example, an administrator might decide a sign-in is safe and accept the risk.

@@ -8,7 +8,7 @@ In this unit, you'll investigate what risk policies are. You'll also learn what 
 
 ## What is a risk policy?
 
-You configure a risk policy to decide how you want AADIP to respond to a particular type of risk. Do you want to block or allow access? Do you want to make users go through additional authentication before allowing access? Risk policies help you respond to risks rapidly. Your company can leverage risk policies and avoid hiring external contractors to handle identity-based risks.
+You configure a risk policy to decide how you want Identity Protection to respond to a particular type of risk. Do you want to block or allow access? Do you want to make users go through additional authentication before allowing access? Risk policies help you respond to risks rapidly. Your company can leverage risk policies and avoid hiring external contractors to handle identity-based risks.
 
 Different risk policies are available, depending on the type of identity risk. You can use a sign-in risk policy or a user risk policy.
 
@@ -18,9 +18,9 @@ A sign-in risk policy scrutinizes every sign-in, and gives it a risk score. This
 
 You use a form to configure a sign-in risk policy in the Azure portal. You specify settings such as:
 
- - The users this policy should target
- - The conditions that must be met, such as how high a score triggers the policy
- - How you want to respond
+- The users this policy should target
+- The conditions that must be met, such as how high a score triggers the policy
+- How you want to respond
 
 Make sure users have already been registered for Azure Multi-Factor Authentication before applying this policy.
 
@@ -29,11 +29,10 @@ Make sure users have already been registered for Azure Multi-Factor Authenticati
 When a sign-in risk has been identified, the user can be asked to take action to remediate the risk. They're told what triggered the risk, and what's needed from them for the issue to be resolved. For example, the user may see the following notification:
 
 ![Sign-in risk](../media/3-signin-risk-identified.png)
-<!-- Please feel free to style according to Learn standards. Original image: https://docs.microsoft.com/azure/active-directory/identity-protection/media/concept-identity-protection-policies/identity-protection-policies.png -->
 
 ## User risk policy
 
-Here, AADIP learns the user's normal behavioral patterns. AADIP then uses this knowledge to calculate the likely risk that the user's identity has been compromised. Based on this risk, the administrator can decide whether to allow access, block it, or allow access only after additional requirements are met. The user could, for example, be asked to change their password using self-service password reset before being allowed access.
+Here, Identity Protection learns the user's normal behavioral patterns. Identity Protection then uses this knowledge to calculate the likely risk that the user's identity has been compromised. Based on this risk, the administrator can decide whether to allow access, block it, or allow access only after additional requirements are met. The user could, for example, be asked to change their password using self-service password reset before being allowed access.
 
 You use a form to configure a user risk policy in the Azure portal. You specify settings such as the users this policy should target, the conditions that must be met, and how you'll respond. Make sure users have already been registered for self-service password reset before applying this policy.
 
@@ -42,7 +41,6 @@ You use a form to configure a user risk policy in the Azure portal. You specify 
 When a user risk has been identified, the user can be asked to take action to remediate that risk. They're told what triggered the risk, and what's needed from them for the issue to be resolved. For example, the user may see the following notification:
 
 ![User risk](../media/3-user-risk-identified.png)
-<!-- Please feel free to style according to Learn standards. Original image: https://docs.microsoft.com/azure/active-directory/identity-protection/media/concept-identity-protection-user-experience/101.png -->
 
 ## Multi-factor authentication (MFA) registration policy
 

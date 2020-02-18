@@ -1,6 +1,6 @@
-Azure Active Directory Identity Protection (AADIP) is a feature of Azure AD Premium P2. Administrators can test AADIP's automated tools that keep users' credentials safe, through an Azure AD Premium P2 trial.
+Azure Active Directory Identity Protection is a feature of Azure AD Premium P2. Administrators can test Identity Protection's automated tools that keep users' credentials safe, through an Azure AD Premium P2 trial.
 
-In your retail company, you are going to use AADIP to secure identities, because compromised security credentials have led to customer data leaks. Your manager wants you to test the user risk policies that are included with Azure Active Directory Identity Protection.
+In your retail company, you are going to use Identity Protection to secure identities, because compromised security credentials have led to customer data leaks. Your manager wants you to test the user risk policies that are included with Azure Active Directory Identity Protection.
 
 You'll create a new directory in this exercise and sign up for Azure AD Premium. You'll then enable a user risk policy that forces a password reset for users who are identified as "risky". In the final step, you'll use a TOR browser to trigger the risk policy.
 
@@ -12,7 +12,7 @@ Let's start by creating a new directory to store user accounts:
 1. Select **Create a resource**, select the **Identity** category, and then select **Azure Active Directory**.
 1. Fill in the **Create directory** page with these values, and then select **Create**:
 
-    | Box | Value |
+    | Setting | Value |
     | --- | --- |
     | **Organization name** | A friendly name for your tenant. For this exercise, use **Learn Module AAD Tenant**. |
     | **Initial domain name** | Enter a unique name for your tenant. |
@@ -32,7 +32,7 @@ In the new directory, let's set up a policy to detect user risk:
 
 1. At the top of the page, select **Get a Premium trial to use this feature**. In the popout menu, expand the free trial under **AZURE AD PREMIUM P2**, then select **Activate**.
 
-    ![Screenshot showing activating a trial version of Azure AD Premium 2.](../media/4-activate-AD-premium.png)
+    ![Screenshot showing activating a trial version of Azure AD Premium 2.](../media/4-activate-azure-ad-premium.png)
 
 1. Under the **Protect** section, select **User risk policy**.
 
@@ -54,20 +54,16 @@ The AI-based approach to identifying risks makes it difficult to consistently tr
 
 You'll create a VM and install the TOR browser to generate this kind of traffic.
 
-1. Using the Cloud Shell on the right, create a VM in a region the furthest from your current location.
+1. Using the Cloud Shell on the right, create a VM in a region the furthest from your current location. Replace `<password>` in the command below with a complex password of your choice.
 
-    ```bash
-    PASSWORD=$(openssl rand -base64 32)
-
+    ```azurecli
     az vm create \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
         --name remoteAttack \
         --location northeurope \
         --image Win2019Datacenter \
         --admin-username azureuser \
-        --admin-password $PASSWORD
-
-    echo $PASSWORD
+        --admin-password <password>
     ```
 
 1. While the VM is being created, sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true) with the credentials you used to create the sandbox.
