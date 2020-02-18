@@ -13,7 +13,7 @@ There are multiple ways to create environments in Azure Machine Learning.
 
 ### Creating an Environment from a Specification File
 
-You can use a Conda or pip specification file to define the packages required in a Python evironment, and use it to create an **Environment** object.
+You can use a Conda or pip specification file to define the packages required in a Python environment, and use it to create an **Environment** object.
 
 For example, you could save the following Conda configuration settings in a file named **conda.yml**:
 
