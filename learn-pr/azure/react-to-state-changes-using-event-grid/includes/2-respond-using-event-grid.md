@@ -8,7 +8,7 @@ Event Grid aggregates all your events and provides routing from any source to an
 
 Event publishers and subscribers are decoupled by using the publisher/subscriber pattern.
 
-![Event Grid Publisher Subscriber Model](../media/2-eventgrid-pub-sub.svg)
+![Event Grid publisher-subscriber model](../media/2-eventgrid-pub-sub.svg)
 
 ## Capabilities
 
@@ -57,14 +57,14 @@ To understand how an event handler subscribes to events, you can create a subscr
 
 1. Name the Logic App.
 
-    ![Create a Logic App Name](../media/2-create-logic-app-name.png)
+    ![New logic app creation pane](../media/2-create-logic-app-name.png)
 
 1. Select the **When an event grid resource event occurs** tile.
 
-    ![Subscribe to Event Grid](../media/2-eventgrid-event.png)
+    ![Configure a logic app to subscribe to Event Grid](../media/2-eventgrid-event.png)
 
 ## Configure connectors and triggers
 
 Now you have an event handler that deals with an event, you can configure the connectors and triggers associated to it. You can configure the Event Grid connector on the logic app to look for any events of a certain topic. The screenshot below shows the configuration options available on an Event Grid connector. When an event containing this topic is created, it will trigger the logic app through the Event Grid connector.
 
-![Event Grid Connector](../media/2-eventgrid-connector.png)
+![Event Grid connector](../media/2-eventgrid-connector.png)

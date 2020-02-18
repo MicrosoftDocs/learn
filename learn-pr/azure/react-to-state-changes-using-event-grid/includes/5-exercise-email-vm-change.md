@@ -10,7 +10,7 @@ First, let's create a condition that only runs the logic app when a certain even
 
 1. In Logic App Designer, under the **Event Grid** trigger, select **New step**.
 
-     ![New Logic App Step](../media/5-choose-new-step-condition.png)
+     ![New logic app step](../media/5-choose-new-step-condition.png)
 
 1. Under **Choose an action**, in the search box, enter **condition** as your filter. From the actions list, select **Condition**.
 
@@ -18,7 +18,7 @@ First, let's create a condition that only runs the logic app when a certain even
 
     The Logic App Designer adds an empty condition to your workflow, including action paths to follow, based on a true or false condition.
 
-    ![Empty Condition](../media/5-empty-condition.png) 
+    ![Empty condition](../media/5-empty-condition.png) 
 
 1. On the condition's title bar, select the ellipses (...) button, and select **Rename**. Rename to **If a virtual machine in your resource group has changed**.
 
@@ -34,7 +34,7 @@ First, let's create a condition that only runs the logic app when a certain even
 
 1. Leave the middle box as **is equal to**. In the right box, enter `Microsoft.Compute/virtualMachines/write`.
 
-    ![Completed Condition](../media/5-complete-condition.png)
+    ![Completed condition](../media/5-complete-condition.png)
 
 1. Save your logic app.
 
@@ -64,7 +64,7 @@ Next, we'll add an email action based on the logic app being triggered. The foll
 
 1. Your finished logic app should now look similar to the following.
 
-    ![Logic App complete view](../media/5-logic-app-completed.png)
+    ![Logic app complete view](../media/5-logic-app-completed.png)
 
 1. Select **Save** to save your logic app.
 
