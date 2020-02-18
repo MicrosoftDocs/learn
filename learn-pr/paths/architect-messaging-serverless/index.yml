@@ -32,5 +32,6 @@ modules:
 - learn.communicate-between-applications-with-azure-queue-storage
 - learn.enable-reliable-messaging-for-big-data-applications-using-azure-event-hubs
 - learn.implement-message-workflows-with-service-bus
+- learn.react-to-state-changes-using-event-grid
 trophy:
   uid: learn.architect-messaging-serverless.trophy
