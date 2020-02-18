@@ -1,6 +1,6 @@
 The ratings web front end is a Node.js application. Recall that you've already created an Azure Container Registry instance. You used it to build a Docker image of the front end and store it in a repository.
 
-In this exercise, you deploy that Docker image of the front end to Azure Kubernetes Service (AKS) by creating a Kubernetes [deployment](https://docs.microsoft.com/azure/aks/concepts-clusters-workloads#deployments-and-yaml-manifests?azure-portal=true). You then expose it through a load balancer by creating a Kubernetes [service](https://docs.microsoft.com/azure/aks/concepts-network#services?azure-portal=true). Additionally, you configure the front end to connect to the ratings API that you already deployed.
+In this exercise, you deploy that Docker image of the front end to Azure Kubernetes Service (AKS) by creating a Kubernetes [deployment](/azure/aks/concepts-clusters-workloads?azure-portal=true#deployments-and-yaml-manifests). You then expose it through a load balancer by creating a Kubernetes [service](/azure/aks/concepts-network?azure-portal=true#services). Additionally, you configure the front end to connect to the ratings API that you already deployed.
 
 By the end of this unit, you should have deployed the ratings web front end and configured it to communicate with the ratings API. The front end is exposed through a public IP.
 
@@ -112,7 +112,7 @@ By the end of this unit, you should have deployed the ratings web front end and 
 
 ## Create a Kubernetes service file for the ratings API service
 
-To simplify the network configuration for application workloads, Kubernetes uses [services](https://docs.microsoft.com/azure/aks/concepts-network#services?azure-portal=true) to logically group a set of pods together and provide network connectivity.
+To simplify the network configuration for application workloads, Kubernetes uses [services](/azure/aks/concepts-network?azure-portal=true#services) to logically group a set of pods together and provide network connectivity.
 
 1. Create a file called `ratings-web-service.yaml` by using the integrated editor.
 
