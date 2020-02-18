@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.react-to-state-changes-using-event-grid.1-introduction
+metadata:
+  title: Introduction
+  description: Learn about a business scenario where you must capture and respond to virtual machine events.
+  ms.date: 04/30/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]
