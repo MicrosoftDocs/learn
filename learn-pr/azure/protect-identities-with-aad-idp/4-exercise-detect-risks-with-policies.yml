@@ -11,5 +11,6 @@ metadata:
 title: Exercise - Detect risks with Identity Protection policies
 durationInMinutes: 10
 azureSandbox: true
+interactive: bash
 content: |
   [!include[](includes/4-exercise-detect-risks-with-policies.md)]

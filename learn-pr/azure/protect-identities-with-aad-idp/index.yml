@@ -16,7 +16,7 @@ abstract: |
   - Configure and simulate a risk detection
 prerequisites: | 
   - Basic familiarity with Azure AD
-iconUrl: http://via.placeholder.com/120x120
+iconUrl: /learn/achievements/protect-identities-with-aad-idp.svg
 levels:
 - intermediate
 roles:
@@ -31,7 +31,6 @@ units:
 - learn.protect-identities-with-aad-idp.3-detect-risks-with-policies
 - learn.protect-identities-with-aad-idp.4-exercise-detect-risks-with-policies
 - learn.protect-identities-with-aad-idp.5-investigate-detected-risks
-- learn.protect-identities-with-aad-idp.6-remediate-detected-risks
-- learn.protect-identities-with-aad-idp.7-summary
+- learn.protect-identities-with-aad-idp.6-summary
 badge:
   uid: learn.protect-identities-with-aad-idp.badge
