@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Exercise - Use stored access policies to delegate access to Azure storage
-durationInMinutes: 10
+durationInMinutes: 8
 interactive: bash
 azureSandbox: true
 content: |

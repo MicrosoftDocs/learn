@@ -129,3 +129,5 @@ Exercise is being built with .NET v12 SDK, .NET Core 3.0, Razor web pages, with 
 - https://www.mikesdotnetting.com/article/261/integrating-web-api-with-asp-net-razor-web-pages
 
 - https://docs.microsoft.com/en-us/aspnet/core/tutorials/web-api-javascript?view=aspnetcore-3.0
+
+https://www.red-gate.com/simple-talk/cloud/platform-as-a-service/azure-blob-storage-part-9-shared-access-signatures/
