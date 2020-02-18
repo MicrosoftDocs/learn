@@ -1,0 +1,28 @@
+### YamlMime:ModuleUnit
+uid: learn.tm-use-a-framework-to-identify-threats-and-find-ways-to-reduce-or-eliminate-risk.2-spoofing-pretending-to-be-someone-or-something-else
+title: Spoofing - Pretending to be someone or something else
+metadata:
+  title: Spoofing - Pretending to be someone or something else
+  description: Learn about spoofing and its corresponding security control
+  ms.date: 02/28/2020
+  author: rodsan
+  ms.author: rodsan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-threat-modeling
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-spoofing-pretending-to-be-someone-or-something-else.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which statement describes a potential security control against spoofing?"
+    choices:
+    - content: "Signing a message to ensure it came from the right source"
+      isCorrect: true
+      explanation: "This message applies to spoofing"
+    - content: "Logging users and their actions to ensure accountability"
+      isCorrect: false
+      explanation: "This statement applies to repudiation"
+    - content: "Granting access to users through an access control list "
+      isCorrect: false
+      explanation: "This statement applies to tampering, information disclosure, denial of service and elevation of privilege "
