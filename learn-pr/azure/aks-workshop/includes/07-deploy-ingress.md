@@ -156,7 +156,7 @@ There's no need to use a public IP for the service because you're going to expos
 
 ## Test the application
 
-Open the host name you configured on the ingress in a web browser, for example, at <http://frontend.13-68-177-68.nip.io>, to view and interact with the application.
+Open the host name you configured on the ingress in a web browser, for example, at http:\//frontend.13-68-177-68.nip.io, to view and interact with the application.
 
 ![Screenshot of the ratings-web application](../media/07-ratings-web-ingress.png)
 
