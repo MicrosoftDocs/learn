@@ -11,7 +11,7 @@ Let's start by creating a new virtual machine in the Azure portal.
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) with the account you used to activate the sandbox.
 1. Select **+ Create a resource**.
 1. Select **Compute** > **Virtual Machine**.
-1. Fill out the wizard like this:
+1. Complete the **Create a virtual machine** page with the following values:
 
     | Field | Value |
     | --- | --- |
@@ -19,15 +19,15 @@ Let's start by creating a new virtual machine in the Azure portal.
     | **Resource group**   | <rgn>[sandbox resource group]</rgn> |
     | **Name** | vm1 |
     | **Region** | Select a region near you |
-    | **Availability options** | Leave at the default value |
+    | **Availability options** | No infrastructure redundancy required |
     | **Image** | Windows Server 2019 Datacenter |
+    | **Azure Spot instance** | No |
     | **Size** | Standard DS1 v2 |
     | **Username** | vmadmin |
     | **Password** | Enter a complex password |
-    | **Public inbound ports** | Leave at the default value |
-    | **Select inbound ports**  | HTTP (80) and RDP (3389) |
+    | **Public inbound ports** | None |
 
-1. Select **Review and create**, then select **Create** on the resulting page.
+1. Select **Review and create**, then select **Create**.
 
 ## Create a logic app
 
@@ -35,17 +35,16 @@ The next step is to create the Logic App that will run when a virtual machine ch
 
 1. Select **+ Create a resource**.
 1. Select **Integration** > **Logic App**.
-1. Complete the **Create** page like this:
+1. Complete the **Create** page with the following values:
 
     | Field | Value |
     | --- | --- |
-    | **Name** | Enter a name |
     | **Subscription** | Concierge subscription |
     | **Resource group** | Select **Use existing**, then select **<rgn>[sandbox resource group]</rgn>** |
+    | **Logic App name** | Enter a name |
+    | **Select the location** | Region |
     | **Location** | Select a region near you |
     | **Log Analytics** | Off |
-
-    ![Create a Logic App name](../media/2-create-logic-app-name.png)
 
 1. Select **Create**.
 
@@ -69,11 +68,11 @@ Once your logic app is created, you'll add so that triggers for Event Grid event
     | Field | Value |
     | --- | --- |
     | **Subscription** | Concierge subscription |
-    | **Resource group** | `Microsoft.Resources.ResourceGroups` |
-    | **Resource name** | <rgn>[sandbox resource group]</rgn> |
-    | **Event type item - 1** | `Microsoft.Resources.ResourceActionSuccess` |
-    | **Event type item - 2** | `Microsoft.Resources.ResourceDeleteSuccess` |
-    | **Event type item - 3** | `Microsoft.Resources.ResourceWriteSuccess` |
+    | **Resource Type** | `Microsoft.Resources.ResourceGroups` |
+    | **Resource Name** | <rgn>[sandbox resource group]</rgn> |
+    | **Event Type Item - 1** | `Microsoft.Resources.ResourceActionSuccess` |
+    | **Event Type Item - 2** | `Microsoft.Resources.ResourceDeleteSuccess` |
+    | **Event Type Item - 3** | `Microsoft.Resources.ResourceWriteSuccess` |
     | | |
 
     ![Add Trigger details](../media/3-logic-app-event-grid-trigger-details.png)
