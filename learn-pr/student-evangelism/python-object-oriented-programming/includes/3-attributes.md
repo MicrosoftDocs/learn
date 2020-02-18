@@ -1,6 +1,6 @@
-Attributes hold the data that defines an object. For a pink flower, *pink* is an attribute of the flower. If you wrote a `flower` class, you might include an attribute named `color` that describes the flower's color. You might also include an attribute that indicates the flower's type—for example, iris, tulip, or rose. Objects are not required to have attributes but most do.
+Attributes hold the data that defines an object. For a pink flower, *pink* is an attribute of the flower. If you wrote a `flower` class, you might include an attribute named `color` that describes the flower's color. You might also include an attribute that indicates the flower's type—for example, iris, tulip, or rose. Objects are not required to have attributes, but most do.
 
-In this unit, you write a class named `Person` to hold information about a person. You add attributes to the class and learn how to access those attributes. You also learn about an important convention that enables selected members of a class to be marked "for internal use only" so other programmers will steer clear of them.
+In this unit, you write a class named `Person` to hold information about a person. You add attributes to the class and learn how to access those attributes. You also learn about an important convention in Python that enables selected members of a class to be marked "for internal use only" so other programmers will steer clear of them.
 
 ## Class attributes vs. instance attributes
 
@@ -29,7 +29,7 @@ area = constants.pi * radius * radius
 By contrast, an instance attribute is one that is "instanced" for each and every object you create. A `person` class might have a `name` attribute that holds a person's name. `name` would need to be an instance attribute so that every `person` could be assigned a different name. That class also could have attributes that define additional information about a missing person, such as:
 
 - A photo of the person's face
-- A unique ID, such as a social security number
+- A unique ID, such as a Social Security number
 - The person's date of birth
 
 These attributes should be instance attributes because they vary from person to person.

@@ -1,6 +1,6 @@
-The first step in writing object-oriented code is writing the classes from which objects will be created. In this unit, you create a class in Python and then use the class to instantiate an object.
+The first step in writing object-oriented code is writing the classes from which objects will be created. In this unit, you create a class in Python, and then use the class to instantiate an object.
 
-The term "instantiate" is just a fancy way of saying that Python uses the class to create an object by allocating memory for the object and copying the object's code and data into memory. Just as you use a blueprint to create a house or a recipe to create a cookie, Python uses classes to create objects.
+The term "instantiate" is a fancy way of saying that Python uses the class to create an object by allocating memory for the object and copying the object's code and data into memory. Just as you use a blueprint to create a house or a recipe to create a cookie, Python uses classes to create objects.
 
 To run your Python code, you will use Azure Cloud Shell to your right. Python comes preinstalled on Azure Cloud Shell so there's nothing we need to configure.
 
@@ -12,7 +12,7 @@ Before you begin writing classes of your own, it's helpful to peek under the hoo
 
 First, we will start the Python interpreter in Cloud Shell to look at some objects.
 
-1. In Cloud Shell to the right, type the following command to start the Python interpreter:
+1. In Cloud Shell to the right, enter the following command to start the Python interpreter:
 
     ```bash
     python3
@@ -88,7 +88,7 @@ First, we will start the Python interpreter in Cloud Shell to look at some objec
 
     This confusing list is all the `int` object's methods. The `dir()` function provides a list of attributes and methods for whatever you put in the parentheses.
 
-    When you work with Python, you might hear methods referred to as *functions*. In Python, the two terms--*methods* and *functions*--are synonymous, but you can avoid confusion when talking with other people by calling them *methods*.
+    When you work with Python, you might hear methods referred to as *functions*. In Python, the two terms, *methods* and *functions*, are synonymous. But you can avoid confusion when talking with other people about Python by calling them *methods*.
 
     All the entries you see in the output list are methods. A method represents an action that you can perform on an object. For example, `to_bytes()` outputs the object value in byte format, which is just a specific way of looking at the data.
 
@@ -111,7 +111,7 @@ The `__str__()` method created a new object from `myVar` of type `str`. The `myV
 
 ## Define a class
 
-Python has several built-in classes, including `int`, `float`, `bool`, and `str`, but you can also define classes of your own--the main objective in OOP.
+Python has several built-in classes, including `int`, `float`, `bool`, and `str`, but you can also define classes of your own. Defining your own classes is the main objective in OOP.
 
 Every Python class you create begins with the word `class`. A class needs a name, and it also needs to do something.
 
@@ -175,7 +175,7 @@ At this point, you have a basic (and nearly useless) class, but it serves to sho
     ```
 
     > [!NOTE]
-    > Be sure to use proper Python indentation. This line should not be indented at all. This line is at the same level as `class MyClass:` in the preceding exercise in this unit.
+    > Be sure to use proper Python indentation. This line should not be indented at all. This line is at the same level as `class MyClass:` in the preceding exercise.
 
     This line creates an object named `myVar` from the class named `myClass`. Notice the parentheses after `myClass`. The parentheses tell Python to create an instance of the class without passing any parameters to it.
 
@@ -186,7 +186,7 @@ At this point, you have a basic (and nearly useless) class, but it serves to sho
     print(dir(myVar))
     ```
 
-1. Save the file, and then run your code again by using the same command that you used in the preceding exercise in this unit:
+1. Save the file, and then run your code again by using the same command that you used earlier:
 
     ```bash
     python3 MyClass.py
@@ -196,8 +196,6 @@ At this point, you have a basic (and nearly useless) class, but it serves to sho
 
     A scope is a kind of logical grouping that holds pieces of code together.
 
-    You don't see a scope for the `int` type because `int` is defined outside the scope of the current application. You see `__main__` for `myClass` because you defined `myClass` in the current application. It's the default scope, but you don't need to worry about it for now.
+    You don't see a scope for the `int` type because `int` is defined outside the scope of the current application. You see `__main__` for `myClass` because you defined `myClass` in the current application. It's the default scope, but you don't need to worry about it for now. The important takeaway, for the moment, is that `myVar` is an instance of the `myClass` class.
 
-    The important takeaway, for the moment, is that `myVar` is an instance of the `myClass` class.
-
-Also notice that you get default methods with your new class. Python provides a class with these default methods to perform essential tasks. These methods aren't all that important right now. It's simply a good idea to know that they exist. As you continue with this module, this information will become more relevant.
+Notice that you get default methods with your new class. Python provides a class with these default methods for performing essential tasks. These methods aren't all that important right now, but it's a good idea to know that they exist. As you continue with this module, this information will become more relevant.

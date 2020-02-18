@@ -1,4 +1,4 @@
-To have some data to work with, let's load a database of facial images. The dataset is a publicly available one called the [Olivetti Faces dataset](https://scikit-learn.org/0.19/datasets/olivetti_faces.html). The dataset originally was created by AT&T.
+So you have some data to work with, let's load a database of facial images. The dataset is a publicly available one called the [Olivetti Faces dataset](https://scikit-learn.org/0.19/datasets/olivetti_faces.html). The dataset originally was created by AT&T.
 
 1. Let's create a new file for this class. Open the Cloud Shell editor and create a new file by using the following command:
 
@@ -6,7 +6,7 @@ To have some data to work with, let's load a database of facial images. The data
     code MissingPersons.py
     ```
 
-1. One of the many popular packages available for Python is [Scikit-learn](https://scikit-learn.org/stable/index.html), an open-source library that's used to build machine-learning models. Scikit-learn includes several built-in datasets, one of which is the Olivetti faces dataset.
+1. One of the many popular packages available for Python is [scikit-learn](https://scikit-learn.org/stable/index.html), an open-source library that's used to build machine learning models. scikit-learn includes several built-in datasets, one of which is the Olivetti faces dataset.
 
     Paste the following statements into your new file to load the faces dataset:
 
@@ -20,7 +20,7 @@ To have some data to work with, let's load a database of facial images. The data
     print(faces.data.shape)
     ```
 
-    The first line imports the Scikit-learn function that loads the dataset. The second line loads the dataset. The third line shows the shape of the dataset.
+    The first line imports the scikit-learn function that loads the dataset. The second line loads the dataset. The third line shows the shape of the dataset.
 
 1. Before we can run the code, we must ensure that the `sklearn` Python package is installed. Run the following command to install it in Cloud Shell:
 
@@ -28,7 +28,7 @@ To have some data to work with, let's load a database of facial images. The data
     pip install sklearn
     ```
 
-    It will take a while to install. Watch the output of Cloud Shell to see when it finishes.
+    It might take a few minutes to install. Watch the output of Cloud Shell to see when it finishes.
 
 1. When it finishes, use the following command to run your code (make sure you've saved the new file):
 
@@ -38,7 +38,7 @@ To have some data to work with, let's load a database of facial images. The data
 
     Examine the output. The dataset contains 400 faces, each of which consists of an image with 4,096 pixels. The dataset contains 10 photos each of 40 different people. The first 10 images in `faces.images` represent the first person, the next 10 images represent the second person, and so on.
 
-    Curious about what the dataset looks like? Here's the first five people in the Olivetti dataset:
+    Curious about what the dataset looks like? Here are the first five people in the Olivetti dataset:
 
     ![A picture of the first five people in the Olivetti dataset](../media/show-faces.png)
 
@@ -48,7 +48,7 @@ Now that we have some faces to work with, let's shift our thinking to objects, c
 
 ## Define a class that contains instance attributes
 
-Instance attributes differ from one class instance (object) to another. You can't access instance attributes without a class instance, as you can with class attributes. Instead, you must create an instance of the class.
+Instance attributes differ from one class instance (object) to another. You can't access instance attributes without a class instance like you can with class attributes. Instead, you must create an instance of the class.
 
 Python provides multiple ways to create instance attributes, but the most common is to define an `__init__()` method that contains the attributes you want objects to have.
 
@@ -68,9 +68,9 @@ Python provides multiple ways to create instance attributes, but the most common
     - `photo`, which holds an image of the person's face
     - `dob`, which holds the person's date of birth
 
-    Three arguments—`name`, `photo`, and `date_of_birth`—must be provided when the object is created. (The `self` argument is provided by Python itself.) Each argument is copied into the corresponding instance attribute.
+    Three arguments—`name`, `photo`, and `date_of_birth`—must be provided when the object is created (the `self` argument is provided by Python itself). Each argument is copied into the corresponding instance attribute.
 
-1. Let's test these attributes. Add the following line of code at the top of the file, right below the existing import statement:
+1. Let's test these attributes. Add the following line of code at the top of the file, right below the existing `import` statement:
 
     ```python
     import datetime
@@ -88,9 +88,9 @@ Python provides multiple ways to create instance attributes, but the most common
     print(aPerson.name)
     ```
 
-    Feel free to remove the previous print line and associated comment (`print faces.data.shape`) to clean up your code.
+    Feel free to remove the previous `print` line and associated comment (`print faces.data.shape`) to clean up your code.
 
-1. Save your file and run it with the Cloud Shell:
+1. Save your file, and then run it in Cloud Shell:
 
     ```bash
     python3 MissingPersons.py
@@ -98,14 +98,14 @@ Python provides multiple ways to create instance attributes, but the most common
 
     Your code should output `Adam`.
 
-Because `name`, `photo`, and `dob` are instance attributes, you could create hundreds of `Person` objects, and each could hold a different name, photo, and date of birth. If these were class attributes instead, `name`, `photo`, and `dob` would have to be the same for every person—clearly not a model of what happens in the real world.
+Because `name`, `photo`, and `dob` are instance attributes, you could create hundreds of `Person` objects. Each could hold a different name, photo, and date of birth. If these were class attributes instead, `name`, `photo`, and `dob` would have to be the same for every person—clearly not a model of what happens in the real world.
 
 ## Data hiding
 
-Many programming languages that support OOP also support *data hiding* by allowing methods and attributes—"class members"—to be declared private or protected. Private class members can be accessed from inside an object but not from the outside. Protected class members can be accessed inside an object and objects subclassed from it (more on this later), but not from the outside.
+Many programming languages that support OOP also support *data hiding* by allowing methods and attributes—"class members"—to be declared private or protected. Private class members can be accessed from inside an object but not from outside the object. Protected class members can be accessed inside an object and inside objects that are subclassed from it (more on this later), but not from outside.
 
 Python doesn't support data hiding—at least not in the same sense that other languages do. Guido van Rossum, the creator of Python, felt that data hiding makes languages harder to use. Consequently, you can't hide class members in Python.
 
-You can, however, use well-established conventions to let others know that certain class members are for internal use only and should *not* be accessed from the outside. Prefacing a class member name with an underscore, as in `_myProtectedVar`, indicates that the class member is protected. Using two underscores (for example, `__cleanup()`) indicates that the class member is private.
+But you can use well-established conventions to let others know that certain class members are for internal use only and should *not* be accessed from the outside. Prefacing a class member name with an underscore, as in `_myProtectedVar`, indicates that the class member is protected. Using two underscores (for example, `__cleanup()`) indicates that the class member is private.
 
-Although you can still write code to access private and protected methods and attributes from the outside, many Python programming environments honor these conventions and hide private and protected members from view. So, Python does support a limited form of data hiding, but only by convention, and you need to be aware of that when you send your code to the world.
+Although you can still write code to access private and protected methods and attributes from the outside, many Python programming environments honor these conventions and hide private and protected members from view. So, Python does support a limited form of data hiding, but only by convention. You need to be aware of the conventions when you send your code to the world.

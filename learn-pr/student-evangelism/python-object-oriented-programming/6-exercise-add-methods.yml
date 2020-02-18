@@ -9,7 +9,7 @@ metadata:
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-python
-durationInMinutes: 10
+durationInMinutes: 6
 azureSandbox: true
 interactive: bash-editor
 content: |
