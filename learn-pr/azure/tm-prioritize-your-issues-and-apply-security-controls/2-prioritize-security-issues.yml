@@ -9,7 +9,7 @@ metadata:
   ms.author: rodsan
   ms.topic: interactive-tutorial
   ms.prod: learning-threat-modeling
-durationInMinutes: 2
+durationInMinutes: 4
 content: |
   [!include[](includes/2-prioritize-security-issues.md)]
 quiz:
@@ -24,5 +24,5 @@ quiz:
       isCorrect: false
       explanation: "May cause critical impact for system users. Examples include breaches involving sensitive information disclosure and threats that require privacy and legal involvement"
     - content: "Moderate"
-      isCorrect: true
+      isCorrect: false
       explanation: "May cause moderate impact for system users. Examples include availability issues with possible workarounds"

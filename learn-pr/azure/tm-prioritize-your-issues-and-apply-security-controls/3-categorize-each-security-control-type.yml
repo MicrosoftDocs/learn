@@ -9,7 +9,7 @@ metadata:
   ms.author: rodsan
   ms.topic: interactive-tutorial
   ms.prod: learning-threat-modeling
-durationInMinutes: 2
+durationInMinutes: 4
 content: |
   [!include[](includes/3-categorize-each-security-control-type.md)]
 quiz:
@@ -24,5 +24,5 @@ quiz:
       isCorrect: false
       explanation: "This statement applies to logical (and possibly physical) security control type"
     - content: "Adding badge scanners to the entrance door"
-      isCorrect: true
+      isCorrect: false
       explanation: "This statement applies to a physical security control type"
