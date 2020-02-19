@@ -46,8 +46,6 @@ For your credit-checking web service, you want to use hybrid connections, not WC
 1. Select the relay you created earlier.
 1. Under **Entities**, select **Hybrid Connections**, and then select **+ Hybrid Connection**:
 
-    ![Adding a hybrid connection to a namespace](../media/3-add-hybrid-connection.png)
-
 1. For **Name**, enter **CreditCheckConnection**. Leave **Requires Client Authentication** selected and then select **Create**:
 
 You've completed the configuration of the relay in Azure. Apps can exchange messages through the relay when they make the right connection to it. 
