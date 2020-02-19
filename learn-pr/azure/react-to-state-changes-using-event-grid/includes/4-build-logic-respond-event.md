@@ -8,7 +8,7 @@ Here, you'll learn how to create actions and conditions to respond to events.
 
 To run actions in your logic app after events pass a specified condition, you add a conditional statement. This control structure compares the data in your workflow against specific values or fields. You then specify different actions that run based on whether the data meets the condition.
 
-The screenshot shows an example of a filter that checks whether a filename in a directory has the .pdf extension.
+The following screenshot shows an example of a filter that checks whether a filename in a directory has the .pdf extension.
 
 ![Condition for a .pdf extension](../media/4-logic-apps-filter-array.png)
 

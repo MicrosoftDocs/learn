@@ -1,6 +1,6 @@
 You're ready to do an action based on receiving a published event within your logic app.
 
-You've finished the initial setup of the logic app. You now need to send an email notification that details any change to the virtual machines (VMs) in your resource group.
+You've finished the initial setup of the logic app. You now need to send an email notification that details any change to the virtual machines in your resource group.
 
 You're going to learn how to set up a condition that allows you to inspect an event, respond with a logic app action, and send an email.
 
@@ -78,8 +78,8 @@ The final step is to test the complete workflow.
 
 1. In the **Settings** section of the left menu, select **Size**.
 
-1. Select a new VM size of **DS2_v2**, and then select **Resize**.
+1. Select a new size of **DS2_v2** for the virtual machine, and then select **Resize**.
 
-1. After the VM has been resized, you should receive an email that looks similar to the following:
+1. After the virtual machine has been resized, you should receive an email that looks similar to the following:
 
     ![Email notification example](../media/5-email.png)
