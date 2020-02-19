@@ -14,3 +14,4 @@ In this module, you'll:
 - Basic understanding of Azure Load Balancer
 - Familiarity with Azure Virtual Machines
 - Basic understanding of Azure Monitor
+- (Optional) Access to an Azure subscription

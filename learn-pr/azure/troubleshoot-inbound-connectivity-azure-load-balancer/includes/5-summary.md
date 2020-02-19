@@ -1,5 +1,11 @@
 In this module, you've learned how to troubleshoot connectivity for Azure Load Balancer. You've reviewed common inbound connectivity issues with Load Balancer, and how to resolve problems with virtual machine health probes.
 
+
+## Clean up
+
+Resources left running can cost you money. In your Azure account, delete the resource group **learn-ts-loadbalancer-rg** to delete the all the resources you created for the this module.
+
+
 [!include[](../../../includes/azure-sandbox-cleanup.md)]
 
 ## Learn more
