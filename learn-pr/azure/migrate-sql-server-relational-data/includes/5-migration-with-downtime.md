@@ -8,13 +8,13 @@ Let's look closer at both options and how the tools work with them.
 
 ## Offline
 
-![Offline Migration](../media/5-01-offline.png)
+![Offline Migration](../media/5-01-offline.svg)
 
 With the offline mode, the source database must be taken offline. It must be placed in a state where no more updates are being made. Once this is done, the Azure Data Migration Service can be used to do the migration.
 
 ## Online
 
-![Online Migration](../media/5-02-online.png)
+![Online Migration](../media/5-02-online.svg)
 
 During an online migration, the service takes a backup of the source database and migrates the data to the target platform. This allows the source database to continue to receive incoming transactions and return data. When the main part of the migration is complete, the user initiates the cutover process. The source database is then taken offline, rendering it unavailable for use.
 

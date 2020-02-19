@@ -4,7 +4,7 @@ After you have resolved any incompatibility issues, you are ready for the **migr
 
 The last step in your workflow will be the **post-migration** phase. During this phase, you'll do any required testing, then update applications, reports, and other tools that will need to use the new database for their data.
 
-![Migration Workflow](../media/3-01-azure-sql-migration-sql-db.png)
+![Migration Workflow](../media/3-01-azure-sql-migration-sql-db.svg)
 
 ## Pre-migration
 
