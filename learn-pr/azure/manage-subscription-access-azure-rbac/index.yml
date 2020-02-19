@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.azure.manage-subscription-access-azure-rbac
 metadata:
-  title: Manage access to an Azure subscription with Azure role-based access control
+  title: Manage access to an Azure subscription with Azure role-based access control (RBAC)
   description: Learn how to assign management access to a subscription with Azure role-based access control.
   ms.date: 01/13/2020
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Manage access to an Azure subscription with Azure role-based access control
+title: Manage access to an Azure subscription with Azure role-based access control (RBAC)
 summary: To grant access to a subscription, identify the appropriate role to assign to an employee. Understand when you might need to temporarily elevate your own access to regain access to a subscription.
 abstract: | 
   In this module, you will:
