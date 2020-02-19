@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-compute-contexts-in-aml.working-with-compute
+title: Exercise - Work with Compute Contexts
+metadata:
+  title: Exercise - Work with Compute Contexts
+  description: Use this hands-on exercise to learn how to manage compute contexts for Azure Machine Learning experiments.
+  ms.date: 02/10/2020
+  author: GraemeMalcolm
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 20
+content: |
+  [!include[](includes/6-working-with-compute.md)]
