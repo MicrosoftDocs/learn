@@ -9,7 +9,7 @@ metadata:
   ms.author: rodsan
   ms.topic: interactive-tutorial
   ms.prod: learning-threat-modeling
-durationInMinutes: 4
+durationInMinutes: 3
 content: |
   [!include[](includes/3-additional-approaches.md)]
 quiz:

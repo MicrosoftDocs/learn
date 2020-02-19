@@ -1,7 +1,9 @@
 The system-focused approach provides a framework to help analyze the system and how it affects other assets, which include:
 
-- **Logical Assets** - includes source code, APIs, and logical security controls
-- **Physical Assets** - includes servers and physical security controls assets
+|Asset Type|Examples|
+|----------|--------|
+|Logical|Source code, APIs, and logical security controls|
+|Physical|Servers and physical security controls assets|
 
 Authenticating your users with Azure is a good thing. Understanding how it works and interacts with each part of the system is better and avoids creating unknown risk post-deployment.
 

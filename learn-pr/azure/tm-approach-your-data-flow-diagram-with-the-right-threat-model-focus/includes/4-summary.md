@@ -6,5 +6,3 @@ You learned:
 
 - What a system focused threat modeling means
 - The differences between the system, asset, and attacker focused approaches
-
-## Learn more
