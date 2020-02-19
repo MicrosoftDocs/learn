@@ -12,11 +12,11 @@
 
 ### Elements
 
-|Name|Definition|
-|----|----------|
-|Process|Activity that modifies or redirects input to an output|
-|Data store|Permanent or temporary data storage|
-|Data-flow|Data movement between elements|
+|Name|Shape|Definition|
+|----|-----|----------|
+|Process|![Process](../media/process50.png)|Activity that modifies or redirects input to an output|
+|Data store|![Data store](../media/data-store50.png)|Permanent or temporary data storage|
+|Data-flow|![Data-flow](../media/data-flow50.png)|Data movement between elements|
 
 ### Interactions
 
@@ -35,7 +35,7 @@
 - Using SSL/TLS to secure transmission
 - Creating an IPSec tunnel to secure communication between endpoints
 
-### Common Security Controls
+### Common Security Controls to Reduce or Eliminate Risk
 
 - Operating system integrity controls
 - Access control lists (ACL)
@@ -43,4 +43,5 @@
 - Message authentication codes
   
 > [!TIP]
-> **Good Question to Ask**: How do I know someone can't change my data in transit or at rest?
+> **Good Question to Ask**
+> How do I know someone can't change my data in transit or at rest?

@@ -9,7 +9,7 @@ metadata:
   ms.author: rodsan
   ms.topic: interactive-tutorial
   ms.prod: learning-threat-modeling
-durationInMinutes: 2
+durationInMinutes: 8
 content: |
   [!include[](includes/5-information-disclosure-seeing-data-i-am-not-supposed-to-see.md)]
 quiz:

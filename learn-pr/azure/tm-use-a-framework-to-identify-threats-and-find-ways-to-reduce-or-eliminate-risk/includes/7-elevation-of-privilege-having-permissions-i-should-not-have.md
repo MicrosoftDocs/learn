@@ -9,9 +9,9 @@
 
 ### Elements
 
-|Name|Definition|
-|----|----------|
-|Process|Activity that modifies or redirects input to an output|
+|Name|Shape|Definition|
+|----|-----|----------|
+|Process|![Process](../media/process50.png)|Activity that modifies or redirects input to an output|
 
 ### Interactions
 
@@ -29,7 +29,7 @@
 - Applying security controls to run the service using the least possible amount of access
 - Monitoring access to detect anomalies and unauthorized access attempts. 
 
-### Common Security Controls
+### Common Security Controls to Reduce or Eliminate Risk
 
 - Access Control Lists (ACL)
 - Role-Based Access Controls (RBAC)
@@ -38,4 +38,5 @@
 - Input Validation
 
 > [!TIP]
-> **Good Question to Ask**: How do I know the user is allowed to do this?
+> **Good Question to Ask**
+> How do I know the user is allowed to do this?

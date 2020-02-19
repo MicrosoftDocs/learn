@@ -9,10 +9,10 @@
 
 ### Elements
 
-|Name|Definition|
-|----|-----------|
-|Process|Activity that modifies or redirects input to an output|
-|External Entity|Process, data store, or even full fledged applications outside of your control|
+|Name|Shape|Definition|
+|----|-----|-----------|
+|Process|![Process](../media/process50.png)|Activity that modifies or redirects input to an output|
+|External Entity|![External Entity](../media/external-entity50.png)|Process, data store, or even full fledged applications outside of your control|
 
 ### Interactions
 
@@ -30,15 +30,15 @@
 - Securing data transmissions with SSL/TLS to encrypt traffic between source and target
 - Using unique credentials with expiring tokens, passwords or multi-factor authentication to help secure user, admin and service accounts
 
-### Common Security Controls
+### Common Security Controls to Reduce or Eliminate Risk
 
-To authenticate data:
+For Your Data:
 
 - Hashes
 - Message Authentication Codes
 - Digital Signatures
 
-To authenticate system:
+For Your System:
 
 - User Authentication
 - Cookie Authentication
@@ -49,4 +49,5 @@ To authenticate system:
 - Digitally Signed Packets
 
 > [!TIP]
-> **Good Question to Ask**: Have I authenticated both sides of the communication?
+> **Good Question to Ask**
+> Have I authenticated both sides of the communication?

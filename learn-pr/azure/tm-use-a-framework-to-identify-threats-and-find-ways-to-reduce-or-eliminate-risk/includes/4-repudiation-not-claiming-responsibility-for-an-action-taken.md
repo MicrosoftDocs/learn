@@ -13,11 +13,11 @@
 
 ### Elements
 
-|Name|Definition|
-|----|----------|
-|Process|Activity that modifies or redirects input to an output|
-|External Entity|Process, data store, or even full fledged applications outside of your control|
-|Data Store|Permanent or temporary data storage|
+|Name|Shape|Definition|
+|----|-----|----------|
+|Process|![Process](../media/process50.png)|Activity that modifies or redirects input to an output|
+|External Entity|![External Entity](../media/external-entity50.png)|Process, data store, or even full fledged applications outside of your control|
+|Data Store|![Data Store](../media/data-store50.png)|Permanent or temporary data storage|
 
 ### Interactions
 
@@ -31,7 +31,7 @@
 
 **Non-Repudiation** ensures each action can be traced back to its origin by creating and protecting security logs.
 
-### Common Security Controls
+### Common Security Controls to Reduce or Eliminate Risk
 
 - Strong Authentication
 - Secure Logging and Monitoring
@@ -40,4 +40,5 @@
 - Trusted Third Parties
 
 > [!TIP]
-> **Good Question to Ask**: Can I tie every action to an identity?
+> **Good Question to Ask**
+> Can I tie every action to an identity?

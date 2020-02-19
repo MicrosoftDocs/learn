@@ -10,11 +10,11 @@
 
 ### Elements
 
-|Name|Definition|
-|----|----------|
-|Process|Activity that modifies or redirects input to an output|
-|Data store|Permanent or temporary data storage|
-|Data-flow|Data movement between elements|
+|Name|Shape|Definition|
+|----|-----|----------|
+|Process|![Process](../media/process50.png)|Activity that modifies or redirects input to an output|
+|Data store|![Data Store](../media/data-store50.png)|Permanent or temporary data storage|
+|Data-flow|![Data-Flow](../media/data-flow50.png)|Data movement between elements|
 
 ### Interactions
 
@@ -34,7 +34,7 @@
 - Monitoring the system to detect anomalies
 - Enabling operating system flags to handle memory and CPU processes
 
-### Common Security Controls
+### Common Security Controls to Reduce or Eliminate Risk
 
 - Access Control Lists (ACL)
 - Filtering
@@ -43,4 +43,5 @@
 - High Availability
 
 > [!TIP]
-> **Good Question to Ask**: Quick Check	Are there areas where my service is resource limited?
+> **Good Question to Ask**
+> Are there areas where my service is resource limited?
