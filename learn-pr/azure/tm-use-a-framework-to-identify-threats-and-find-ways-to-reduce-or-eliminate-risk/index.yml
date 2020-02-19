@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.tm-use-a-framework-to-identify-threats-and-find-ways-to-reduce-or-eliminate-risk
+metadata:
+  title: Use a framework to identify threats and find ways to reduce or eliminate risk
+  description: Learn about each threat category with their corresponding security controls
+  ms.date: 02/28/2020
+  author: rodsan
+  ms.author: rodsan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-threat-modeling
+title: Use a framework to identify threats and find ways to reduce or eliminate risk
+summary: Threat modeling helps you generate a list of potential threats and find ways to reduce or eliminate risk. Use STRIDE to find design security issues using the threat categories that make up its acronym.
+abstract: |
+  In this module, you'll learn:
+  - Each STRIDE threat category
+  - Corresponding security controls to help reduce or eliminate risk
+prerequisites: None
+iconUrl: /learn/achievements/generic-badge.svg
+ratingEnabled: false
+levels:
+- beginner
+roles:
+- administrator
+- developer
+- devops-engineer
+- security-engineer
+- solution-architect
+products:
+- azure-iot-security-center
+- azure-security-center
+- m365-security-center
+- m365-ems-cloud-app-security
+units:
+- learn.tm-use-a-framework-to-identify-threats-and-find-ways-to-reduce-or-eliminate-risk.1-introduction
+- learn.tm-use-a-framework-to-identify-threats-and-find-ways-to-reduce-or-eliminate-risk.2-spoofing-pretending-to-be-someone-or-something-else
+- learn.tm-use-a-framework-to-identify-threats-and-find-ways-to-reduce-or-eliminate-risk.3-tampering-changing-data-without-authorization
+- learn.tm-use-a-framework-to-identify-threats-and-find-ways-to-reduce-or-eliminate-risk.4-repudiation-not-claiming-responsibility-for-an-action-taken
+- learn.tm-use-a-framework-to-identify-threats-and-find-ways-to-reduce-or-eliminate-risk.5-information-disclosure-seeing-data-i-am-not-supposed-to-see
+- learn.tm-use-a-framework-to-identify-threats-and-find-ways-to-reduce-or-eliminate-risk.6-denial-of-service-overwhelming-the-system
+- learn.tm-use-a-framework-to-identify-threats-and-find-ways-to-reduce-or-eliminate-risk.7-elevation-of-privilege-having-permissions-i-should-not-have
+- learn.tm-use-a-framework-to-identify-threats-and-find-ways-to-reduce-or-eliminate-risk.8-summary
+
+badge:
+  uid: learn.tm-approach-your-data-flow-diagram-with-the-right-threat-model-focus.badge
