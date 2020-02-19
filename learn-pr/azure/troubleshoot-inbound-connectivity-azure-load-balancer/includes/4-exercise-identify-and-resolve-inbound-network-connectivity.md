@@ -37,7 +37,7 @@ This exercise is optional. To complete it, you need access to an Azure subscript
     ```
     The following list has some location values you can use.
 
-    [!include[](../../../../includes/azure-sandbox-regions-note.md)]
+    [!include[](../../../includes/azure-sandbox-regions-note.md)]
 1. Run the following command to create a resource group.
     ```bash
     az group create --name $RESOURCEGROUP --location $LOCATION
