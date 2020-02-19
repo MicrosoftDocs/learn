@@ -1,5 +1,7 @@
 In addition to its three main types, security controls also have five different functions to help you apply multiple layers of security.
 
+## Security Control Functions
+
 |Function|Description|Example|
 |--------|-----------|-------|
 |Preventative|Does this strategy help reduce the probability or impact of this threat?|Locks, firewalls, data classification|
@@ -11,12 +13,14 @@ In addition to its three main types, security controls also have five different 
 > [!TIP]
 > Depending on issue priority, you may want to consider multiple security control functions to secure your system before, during and after a potential breach.
 
-Together with the security control types, they create a matrix that helps you make the right selections:
+## How It All Comes Together
+
+Together with the security control types, they create a matrix that helps you make the right selections. Here are a few examples:
 
 |Function|Physical|Logical|Administrative|
 |--------|--------|-------|--------------|
-|Preventative|Locks|Firewalls|Data classification|
-|Detective|Surveillance|Honeypots|Audit logs|
-|Corrective|Physical repair|System patches|Incident response plans|
-|Recovery|Hot-sites|System Backups|Disaster recovery plan|
-|Deterrent|Fences|Least privilege|Authorized use policy|
+|**Preventative**|Locks|Firewalls|Data classification|
+|**Detective**|Surveillance|Honeypots|Audit logs|
+|**Corrective**|Physical repair|System patches|Incident response plans|
+|**Recovery**|Hot-sites|System Backups|Disaster recovery plan|
+|**Deterrent**|Fences|Least privilege|Authorized use policy|

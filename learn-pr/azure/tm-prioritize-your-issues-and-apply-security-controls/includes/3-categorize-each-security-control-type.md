@@ -2,6 +2,8 @@ After you prioritize each issue, check out the list of security controls and sel
 
 The most beneficial security controls are found across multiple STRIDE categories. In most cases, they're also relatively inexpensive to implement.
 
+## Security Control Types
+
 As you assess each security control, you'll notice they fall into one of the following types:
 
 |Type|Description|
