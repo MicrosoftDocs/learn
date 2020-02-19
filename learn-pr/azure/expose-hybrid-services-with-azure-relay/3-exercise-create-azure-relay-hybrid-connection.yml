@@ -3,7 +3,7 @@ uid: learn.expose-hybrid-services-with-azure-relay.3-exercise-create-azure-relay
 metadata:
   title: Exercise - Create an Azure Relay Hybrid Connection
   description: In this exercise, you'll create an Azure Relay and add a hybrid connection to it.
-  ms.date: 12/30/2019
+  ms.date: 02/21/2020
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
