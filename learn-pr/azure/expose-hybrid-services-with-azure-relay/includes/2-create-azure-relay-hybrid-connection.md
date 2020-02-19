@@ -43,11 +43,7 @@ This diagram shows how the connection is made:
 1. A listener requests a connection to Azure Relay. The request is sent to a Relay gateway by the Azure Load Balancer.
 1. The gateway creates an Azure Relay in the Gateway Store. At this point, the listener is ready to receive messages.
 1. A sender requests a connection, which may be received by a different gateway.
-1. The gateway finds out about the relay in the Gateway Store.
-
-    > [!NOTE] 
-    > If no listener has initiated the relay, the sender receives an error message. For this reason, make sure your listener connects first.
-
+1. The gateway obtains information for the relay from the Gateway Store.
 1. The sender's gateway sends the connection request to the listener's gateway.
 1. The listener's gateway forwards the connection request to the listener. This request includes the identity of the sender's gateway.
 1. The listener makes a connection to the sender's gateway. At this point, the sender and listener can exchange messages.
@@ -56,7 +52,7 @@ This diagram shows how the connection is made:
 
 ## How to create a relay
 
-To create a relay, you need a namespace that's unique within the **servicebus.windows.net** domain. The Azure portal helps, by indicating if your chosen namespace is free or already in use by someone else. You also specify a subscription, resource group, and location for the relay, which should be close to most of your clients.
+To create a relay, you need a namespace that's unique within the **servicebus.windows.net** domain. You also specify a subscription, resource group, and location for the relay, which should be close to most of your clients.
 
 To control what clients can do when they connect, use shared access policies. You use these policies to permit whether clients can send messages to, or read messages from, the relay. Each shared access policy has primary and secondary keys. To connect to the relay, each client must supply one of these keys.
 

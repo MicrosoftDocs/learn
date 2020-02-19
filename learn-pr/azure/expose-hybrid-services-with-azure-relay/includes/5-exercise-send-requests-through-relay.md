@@ -50,7 +50,7 @@ You must add the credit-checking service to your relay as a listener, so that it
     listener.Online += (o, e) => { Console.WriteLine("Credit check service is online"); };
     ```
 
-1. Locate the comment `\\ Obtain the name from the request`. Immediately after that comment, add this code: 
+1. Locate the comment `\\ Obtain the name from the request`. Immediately after that comment, add this code:
 
     ```c#
     TextReader tr = new StreamReader(context.Request.InputStream);
@@ -58,7 +58,7 @@ You must add the credit-checking service to your relay as a listener, so that it
     Console.WriteLine("A request was received to check credit for: " + requestedName);
     ```
 
-1. Locate the comment `\\ Formulate and send the response`. Immediately after that comment, add this code: 
+1. Locate the comment `\\ Formulate and send the response`. Immediately after that comment, add this code:
 
     ```c#
     context.Response.StatusCode = HttpStatusCode.OK;
@@ -69,14 +69,14 @@ You must add the credit-checking service to your relay as a listener, so that it
     }
     ```
 
-1. Locate the comment `\\ Open the listener`. Immediately after that comment, add this code: 
+1. Locate the comment `\\ Open the listener`. Immediately after that comment, add this code:
 
     ```c#
     await listener.OpenAsync();
     Console.WriteLine("Server listening");
     ```
 
-1. To save your changes, press <kbd>CTRL + s</kbd>, and then to close the `code` editor, press <kbd>CTRL + q</kbd>.
+1. To save your changes, select <kbd>Ctrl+S</kbd>, and then <kbd>Ctrl+Q</kbd> to close the editor.
 
 ## Configure the sender app
 
@@ -133,7 +133,7 @@ To request a credit check, the sender app sends a name in an HTTP GET request to
     Console.WriteLine(await response.Content.ReadAsStringAsync());
     ```
 
-1. To save your changes, press <kbd>CTRL + s</kbd>, and then to close the `code` editor, press <kbd>CTRL + q</kbd>.
+1. To save your changes, select <kbd>Ctrl+S</kbd>, and then <kbd>Ctrl+Q</kbd> to close the editor.
 
 ## Start the apps
 
@@ -148,7 +148,9 @@ The listener and sender apps are complete. You can now run both apps, use the se
     ```
 
 1. When you receive the message **Server listening**, you can start the sender. Open a new instance of your browser and navigate to **https://shell.azure.com**
+
 1. If you are asked to **Select a directory**, choose **Microsoft Learn Sandbox**
+
 1. To build and run the sender app, execute these commands:
 
     ```bash
@@ -162,8 +164,13 @@ The listener and sender apps are complete. You can now run both apps, use the se
 Now that the apps are both running in separate instances of the Cloud Shell, let's test them by checking a credit record.
 
 1. Arrange the two browser windows so that you can see both.
+
 1. In the sender app, type a name of your choice, and then press Enter.
+
 1. In the listener app, the name you typed should be displayed.
+
 1. In the sender app, the reply from the listener is displayed with the result of the credit check.
+
 1. To exit the sender app, select <kbd>Enter</kbd>. You can run the app again to check other names. When you're finished, close the browser window.
-1. To exit the listener app, press <kbd>CTRL + c</kbd>
+
+1. To exit the listener app, select <kbd>Ctrl+C</kbd>
