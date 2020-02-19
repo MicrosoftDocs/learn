@@ -30,8 +30,8 @@ products:
 modules:
 - learn.tm-introduction-to-threat-modeling
 #- learn.tm-create-a-threat-model-using-foundational-data-flow-diagram-elements
-#- learn.tm-choose-a-focus-area-to-identify-how-to-approach-your-threat-model
-#- learn.tm-select-a-methodology-to-enumerate-threats-and-mitigations
+#- learn.tm-approach-your-data-flow-diagram-with-the-right-threat-model-focus
+#- learn.tm-use-a-framework-to-identify-threats-and-find-ways-to-reduce-or-eliminate-risk
 #- learn.tm-assign-priorities-and-security-controls
 #- learn.tm-select-a-threat-model-layer-to-provide-context
 #- learn.tm-use-recommended-tools-to-create-a-threat-model
