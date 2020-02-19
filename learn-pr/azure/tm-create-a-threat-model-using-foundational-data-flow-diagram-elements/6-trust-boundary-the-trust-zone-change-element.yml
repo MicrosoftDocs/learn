@@ -9,7 +9,7 @@ metadata:
   ms.author: rodsan
   ms.topic: interactive-tutorial
   ms.prod: learning-threat-modeling
-durationInMinutes: 2
+durationInMinutes: 7
 content: |
   [!include[](includes/6-trust-boundary-the-trust-zone-change-element.md)]
 quiz:

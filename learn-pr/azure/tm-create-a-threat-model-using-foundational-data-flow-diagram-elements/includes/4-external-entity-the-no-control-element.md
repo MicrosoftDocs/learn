@@ -1,5 +1,7 @@
 ![External Entity Element](../media/external-entity.png)
 
+## What Is It?
+
 Depicted by a square, an external entity can be a process, data store, or even a full-fledged system outside of your direct control. Examples include:
 
 - A user interacting with your service
@@ -9,10 +11,12 @@ Depicted by a square, an external entity can be a process, data store, or even a
 > [!NOTE]
 > Using this element ensures everyone understands what can and cannot be changed by your team.
  
+## What Context Should I Include?
+
 Include the following context to each external entity element:
 
-|Context|What to Include|
-|-------|---------------|
+|Context|Examples to Include|
+|-------|-------------------|
 |Flow|Data-flow begins with either an external entity or data store|
 |Entity source|Internal or External|
 |Entity type|Human? Provider? Web service?|
