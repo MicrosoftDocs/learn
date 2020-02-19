@@ -2,8 +2,8 @@
 uid: troubleshoot-inbound-network-connectivity-azure-load-balancer
 metadata:
   title: Troubleshoot inbound network connectivity for Azure Load Balancer
-  description: Learn what the different storage tiers are for blob storage and how they can improve performance and reduce costs.
-  ms.date: 06/13/2019
+  description: Learn how to troubleshoot inbound network connectivity for Azure Load Balancer.
+  ms.date: 03/06/2020
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial
@@ -26,6 +26,7 @@ roles:
 products:
 - azure
 - azure-monitor
+- azure-load-balancer
 units:
 - learn.azure.troubleshoot-inbound-network-connectivity-azure-load-balancer.introduction
 - learn.azure.troubleshoot-inbound-network-connectivity-azure-load-balancer.troubleshoot-azure-load-balancer

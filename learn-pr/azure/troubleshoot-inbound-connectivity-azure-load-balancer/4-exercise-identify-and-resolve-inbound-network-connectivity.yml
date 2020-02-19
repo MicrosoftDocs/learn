@@ -4,12 +4,11 @@ title: Exercise - Identify and resolve inbound network connectivity
 metadata:
   title: Exercise - Identify and resolve inbound network connectivity
   description: Exercise - Identify and resolve inbound network connectivity
-  ms.date: 06/13/2019
+  ms.date: 03/06/2020
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 7
 interactive: bash
 azureSandbox: true

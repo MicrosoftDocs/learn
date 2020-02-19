@@ -4,12 +4,11 @@ title: Troubleshoot Azure Load Balancer
 metadata:
   title: Troubleshoot Azure Load Balancer
   description: Troubleshoot Azure Load Balancer
-  ms.date: 06/13/2019
+  ms.date: 03/06/2020
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 7
 content: |
   [!include[](includes/2-troubleshoot-azure-load-balancer.md)]
@@ -18,12 +17,12 @@ quiz:
   questions:
   - content: What happens if a health probe hasn't been configured and a VM fails?
     choices:
-    - content: Load Balancer won't notice the failure, and will continue to route traffic to the failed VM, causing requests to time out.
+    - content: Load Balancer won't notice the failure and continues to route traffic to the failed VM. This issue causes requests to time out.
       isCorrect: true
       explanation: This answer is correct.
-    - content: Load Balancer will remove the VM from the backend pool.
+    - content: Load Balancer removes the VM from the backend pool.
       isCorrect: false
-      explanation: No. Load Balancer won't notice the failure, and will continue to route traffic to the failed VM, causing requests to time out.
+      explanation: Load Balancer doesn't remove the VM from the backend pool.
     - content: Load Balancer doesn't know which VM has failed, and so stops sending requests to all VMs in the backend pool.
       isCorrect: false
       explanation: No. Load Balancer won't notice the failure, and will continue to route traffic to the failed VM, causing requests to time out.

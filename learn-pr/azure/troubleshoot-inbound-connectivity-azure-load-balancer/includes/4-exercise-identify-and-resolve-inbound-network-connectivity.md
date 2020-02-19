@@ -1,11 +1,11 @@
-Being able to determine the cause of connectivity problems with Load Balancer is an important skill. In the sample scenario, a change has been made to the network configuration. You've started to receive alerts informing you that virtual machines in the back-end pool aren't responding to health probes. Now you need to diagnose the cause of these failures and rectify them quickly.
+In our scenario, a change has been made to the network configuration. You've started to receive alerts informing you that virtual machines in the back-end pool aren't responding to health probes. Now you need to diagnose the cause of these failures and fix them.
 
-In this exercise, you'll start with a pre-configured environment that's reporting health probe failures. You'll use the skills learned in this module to diagnose and rectify the issues, to return the load-balanced HTTP service back to full operation.
+In this exercise, you'll start with a pre-configured environment that's reporting health probe failures. You'll use the skills learned in this module to return the load-balanced HTTP service back to full operation.
 
 
-## Setup
+## Set up your environment
 
-1. In the Cloud Shell window on the right, run the following command to download the sample code. The code includes scripts that set up Load Balancer and a pair of virtual machines that simulate the application for the retail website, another script for reconfiguring the system, and an application you use to test Load Balancer:
+1. In the Cloud Shell window on the right, run the following command to download the sample code. The code includes scripts that set up a Load Balancer and a pair of virtual machines to simulate the application for the retail website, another script to reconfigure the system, and an application you use to test Load Balancer:
 
     ```bash
     git clone https://github.com/MicrosoftDocs/mslearn-troubleshoot-inbound-network-connectivity-azure-load-balancer load-balancer
@@ -396,7 +396,7 @@ It seems that the *appretailvm2* virtual machine might not be handling requests 
     exit
     ```
 
-    The *retailappvm2* virtual machine is up and the app is running, but you can't connect to the app from outside the virtual machine. This suggests a network problem.
+    The *retailappvm2* virtual machine is up and the app is running, but you can't connect to the app from outside the virtual machine. This issue suggests a network problem.
 
 1. In the Azure portal, go to the resource group holding the load balancer and virtual machines.
 
