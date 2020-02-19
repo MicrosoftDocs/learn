@@ -1,0 +1,28 @@
+### YamlMime:ModuleUnit
+uid: learn.tm-prioritize-your-issues-and-apply-security-controls.3-categorize-each-security-control-type
+title: Categorize each security control type
+metadata:
+  title: Categorize each security control type
+  description: Learn about the three security control types
+  ms.date: 02/28/2020
+  author: rodsan
+  ms.author: rodsan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-threat-modeling
+durationInMinutes: 2
+content: |
+  [!include[](includes/3-categorize-each-security-control-type.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is an example of an administrative security control?"
+    choices:
+    - content: "Creating an Incident Response Plan"
+      isCorrect: true
+      explanation: "This statement applies to an administrative security control type"
+    - content: "Installing a new firewall"
+      isCorrect: false
+      explanation: "This statement applies to logical (and possibly physical) security control type"
+    - content: "Adding badge scanners to the entrance door"
+      isCorrect: true
+      explanation: "This statement applies to a physical security control type"

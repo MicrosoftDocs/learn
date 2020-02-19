@@ -1,0 +1,28 @@
+### YamlMime:ModuleUnit
+uid: learn.tm-prioritize-your-issues-and-apply-security-controls.2-prioritize-security-issues
+title: Prioritize security issues
+metadata:
+  title: Prioritize security issues
+  description: Learn how to prioritize security issues
+  ms.date: 02/28/2020
+  author: rodsan
+  ms.author: rodsan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-threat-modeling
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-prioritize-security-issues.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "An issue that may cause serious impact for users typically fall under which priority?"
+    choices:
+    - content: "Important"
+      isCorrect: true
+      explanation: "May cause serious impact for system users. Examples include rendering a system unusable with no known workarounds"
+    - content: "Critical"
+      isCorrect: false
+      explanation: "May cause critical impact for system users. Examples include breaches involving sensitive information disclosure and threats that require privacy and legal involvement"
+    - content: "Moderate"
+      isCorrect: true
+      explanation: "May cause moderate impact for system users. Examples include availability issues with possible workarounds"
