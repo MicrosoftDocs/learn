@@ -1,0 +1,37 @@
+### YamlMime:Module
+uid: learn.expose-hybrid-services-with-azure-relay
+metadata:
+  title: Expose hybrid services securely with Azure Relay
+  description: Securely expose services that run in your on-premises network to the cloud, without opening a port on your firewall, or making intrusive changes to your corporate network infrastructure.
+  ms.date: 02/21/2020
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Expose hybrid services securely with Azure Relay
+summary: Securely expose services that run in your on-premises network to the cloud, without opening a port on your firewall, or making intrusive changes to your corporate network infrastructure.
+abstract: | 
+  In this module, you will:
+  - Describe the features and use cases for Azure Relay
+  - Create an application and expose it to through Azure Relay
+prerequisites: | 
+  - Familiarity with HTTP requests and responses
+  - Familiarity with C# programming
+iconUrl: /learn/achievements/expose-hybrid-services-with-azure-relay.svg
+levels:
+- beginner
+roles:
+- solution-architect
+- developer
+products:
+- azure
+- azure-service-bus
+units:
+- learn.expose-hybrid-services-with-azure-relay.1-introduction
+- learn.expose-hybrid-services-with-azure-relay.2-create-azure-relay-hybrid-connection
+- learn.expose-hybrid-services-with-azure-relay.3-exercise-create-azure-relay-hybrid-connection
+- learn.expose-hybrid-services-with-azure-relay.4-send-requests-through-relay
+- learn.expose-hybrid-services-with-azure-relay.5-exercise-send-requests-through-relay
+- learn.expose-hybrid-services-with-azure-relay.6-summary
+badge:
+  uid: learn.expose-hybrid-services-with-azure-relay.badge
