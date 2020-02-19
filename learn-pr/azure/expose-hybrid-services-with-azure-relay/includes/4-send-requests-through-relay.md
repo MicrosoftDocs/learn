@@ -11,7 +11,7 @@ The listener and sender components must identify themselves to Azure Relay when 
 This code shows how to configure the credentials and add them to the `TokenProvider`:
 
 ```c#
-// Store credentials. In production code, keep these values in a configuration file.
+// Store credentials. In production code, keep these values in secure location such as Azure Key Vault.
 private const string KeyName = "RootManageSharedAccessKey";
 private const string Key = "<your key here>";
 
