@@ -14,7 +14,7 @@ Your API is ready for prime time. Let's put it in the cloud. Azure, here we come
    | --------------- | -------------------------------------------------------- |
    | project folder  | api                                                      |
    | Function App    | Create new Function App in Azure (Advanced)              |
-   | Name            | Your Cosmos DB Account Name (i.e. tailwind-traders-xxxx) |
+   | Name            | Your Azure Cosmos DB Account Name (i.e. tailwind-traders-xxxx) |
    | OS              | Linux                                                    |
    | Hosting Plan    | Consumption                                              |
    | Runtime         | Node 10.x                                                |

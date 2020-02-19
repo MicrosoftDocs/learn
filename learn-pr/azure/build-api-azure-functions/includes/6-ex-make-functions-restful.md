@@ -169,4 +169,4 @@ The Products Manager API is about to get serious style upgrade courtesy of you -
 
 Look at that stunning API. It's simply gorgeous. Notice how you specified the same exact same route for the CreateProduct, UpdateProduct and DeleteProduct functions? Only the HTTP request method is different. You've turned three URL's into one while still having three endpoints. You're a magician. That's the power of REST.
 
-Now it's time to connect these functions to the Cosmos DB database. Roll up your sleeves, because here comes the code. This is going to be fun.
+Now it's time to connect these functions to the Azure Cosmos DB database. Roll up your sleeves, because here comes the code. This is going to be fun.

@@ -6,11 +6,11 @@ It's time to put some gasoline in this API engine and fire it up. That's an anal
 
 1. Type "connection string"
 
-1. Select "Cosmos DB: Copy Connection String"
+1. Select "Azure Cosmos DB: Copy Connection String"
 
 1. Select the "tailwind-xxxxx" account. Your five-digit number will be different than the ones shown in this screenshot as each database account is unique and special. Like a snowflake.
 
-   ![A list of all available Cosmos DB accounts in the VS Code Command Palette](../media/cosmos-select-account.png)
+   ![A list of all available Azure Cosmos DB accounts in the VS Code Command Palette](../media/cosmos-select-account.png)
 
 1. Press <kbd>Enter</kbd>
 
@@ -31,9 +31,9 @@ It's time to put some gasoline in this API engine and fire it up. That's an anal
    }
    ```
 
-## Install Cosmos DB JavaScript SDK
+## Install Azure Cosmos DB JavaScript SDK
 
-Install the Cosmos DB package from npm.
+Install the Azure Cosmos DB package from npm.
 
 1.  Open the terminal by pressing <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>`</kbd>.
 

@@ -13,7 +13,7 @@ summary: Build Serverless APIs with Azure Functions
 abstract: Build Serverless APIs with Azure Functions
 prerequisites: /
   - Must have a working knowledge of Azure Functions
-  - Must have basic knowledge of Cosmos DB
+  - Must have basic knowledge of Azure Cosmos DB
   - Must have [Node.js](https://nodejs.org/en/) installed
   - Must have [Visual Studio Code](https://code.visualstudio.com/) installed
   - Must have [Azure Functions Core Tools](https://github.com/Azure/azure-functions-core-tools) installed

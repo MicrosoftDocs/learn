@@ -13,7 +13,7 @@ Your mission is to create an HTTP API that can be consumed by a lightweight web 
 In this module, you will:
 
 - Build an HTTP API using the Azure Functions extension for VS Code
-- Connect the API to a Cosmos DB database
+- Connect the API to a Azure Cosmos DB database
 - Secure the API with keys and implement CORS
 - Consume the API from a web application
 
@@ -25,4 +25,4 @@ In this module, you will:
 - Must have [Visual Studio Code](https://code.visualstudio.com/) installed
 - Must have [Azure Functions Core Tools](https://github.com/Azure/azure-functions-core-tools) installed
 - Must have the [Azure Functions](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions) extension installed
-- Must have the [Cosmos DB](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-cosmosdb) extension installed
+- Must have the [Azure Cosmos DB](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-cosmosdb) extension installed

@@ -48,7 +48,7 @@ You're a new developer at Tailwind Traders. Before you can start, you'll need to
    git clone https://github.com/MicrosoftDocs/mslearn-build-api-azure-functions && cd mslearn-build-api-azure-functions/DB_SETUP && ./CREATE_DATABASE.sh
    ```
 
-   This will create a new Cosmos DB account, database, and collection populated with product data. This process can take up to 15 minutes. Feel free to continue with the Learn Module. Just be sure to keep the terminal instance open until the process is complete.
+   This will create a new Azure Cosmos DB account, database, and collection populated with product data. This process can take up to 15 minutes. Feel free to continue with the Learn Module. Just be sure to keep the terminal instance open until the process is complete.
 
 ## Clone the existing project
 

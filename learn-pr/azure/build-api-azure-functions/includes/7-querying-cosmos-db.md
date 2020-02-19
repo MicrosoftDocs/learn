@@ -1,21 +1,21 @@
 You can connect to Azure Cosmos DB from Azure Functions in one of two ways...
 
-1. The Cosmos DB binding for Azure Functions
-2. The Cosmos DB JavaScript SDK
+1. The Azure Cosmos DB binding for Azure Functions
+2. The Azure Cosmos DB JavaScript SDK
 
-The Cosmos DB bindings are the _quickest_ way to connect to Cosmos DB from Azure Functions. The SDK requires more code, but gives you more control over your database.
+The Azure Cosmos DB bindings are the _quickest_ way to connect to Azure Cosmos DB from Azure Functions. The SDK requires more code, but gives you more control over your database.
 
-You're building an API so you're going to need flexibility in how you query the database. Besides, you _love_ code. A good `try/catch` is why you get up every morning. You'll be using the Cosmos DB JavaScript SDK.
+You're building an API so you're going to need flexibility in how you query the database. Besides, you _love_ code. A good `try/catch` is why you get up every morning. You'll be using the Azure Cosmos DB JavaScript SDK.
 
-### Cosmos DB SQL SDK
+### Azure Cosmos DB SQL SDK
 
-First, you'll need the SDK. Your code won't work as well without it as it will with it. The Cosmos DB SQL JavaScript SDK is called `@azure/cosmos`. It's installed from npm.
+First, you'll need the SDK. Your code won't work as well without it as it will with it. The Azure Cosmos DB SQL JavaScript SDK is called `@azure/cosmos`. It's installed from npm.
 
 ```bash
 npm install @azure/cosmos
 ```
 
-Interacting with a Cosmos DB database starts with a `CosmosClient` object.
+Interacting with a Azure Cosmos DB database starts with a `CosmosClient` object.
 
 ```typescript
 import { CosmosClient } from "@azure/cosmos";
@@ -65,7 +65,7 @@ let items = await iterator.fetchAll();
 
 ### Creating an item
 
-To create an item in Cosmos DB, call the `create` method on the `items` object, passing in the item to create.
+To create an item in Azure Cosmos DB, call the `create` method on the `items` object, passing in the item to create.
 
 ```typescript
 const product = {
@@ -80,13 +80,13 @@ const { resource } = container.items.create(product);
 ```
 
 > [!TIP]
-> Note that if you don't pass in an "id" property with your data, Cosmos DB will create one for you. Cosmos DB generated id's are guids.
+> Note that if you don't pass in an "id" property with your data, Azure Cosmos DB will create one for you. Azure Cosmos DB generated id's are guids.
 
 ### Update an item
 
 To update or delete an item, you need to get a reference to the item first. You do that by passing in the item id, and the value of the partition key. In this Learn Module, the collection has a parameter key on the brand name; "/brand/name".
 
-The `replace` method replaces an item completely with the item passed in. The "resource" object on the response from Cosmos DB contains a reference to the new object value in the database.
+The `replace` method replaces an item completely with the item passed in. The "resource" object on the response from Azure Cosmos DB contains a reference to the new object value in the database.
 
 ```typescript
 const product = {
@@ -118,4 +118,4 @@ const product = {
 await container.items.delete(product.id, product.brand.name);
 ```
 
-You now know how to do pretty much anything with data in Cosmos DB. OK, maybe not everything, but definitely enough to finish out this Products API. This is one productive day you're having. If only Tailwind Traders had 10 other developers just like you.
+You now know how to do pretty much anything with data in Azure Cosmos DB. OK, maybe not everything, but definitely enough to finish out this Products API. This is one productive day you're having. If only Tailwind Traders had 10 other developers just like you.

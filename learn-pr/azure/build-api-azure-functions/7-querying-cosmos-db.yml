@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.build-api-azure-functions.7-querying-cosmos-db
-title: Querying Cosmos DB
+title: Querying Azure Cosmos DB
 metadata:
-  title: Querying Cosmos DB
-  description: Querying Cosmos DB
+  title: Querying Azure Cosmos DB
+  description: Querying Azure Cosmos DB
   ms.date: 01/24/2020
   author: burkeholland
   ms.author: buhollan
