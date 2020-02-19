@@ -4,7 +4,7 @@ One of the ways that we have to stop other unwanted calls to the API is CORS. Wh
 
 ## Settings CORS in production
 
-The CORS settings that you configured for development won't be pushed to production. Otherwise, you might accidentally push "\*" to production since that's a common development setting. When you publish your application to Azure, you'll have to configure CORS via the Azure Portal.
+The CORS settings that you configured for development won't be pushed to production. Otherwise, you might accidentally push "\*" to production since that's a common development setting. When you publish your application to Azure, you'll have to configure CORS via the Azure portal.
 
 The CORS settings are located in the "Platform Features" section of your Azure Functions project.
 
@@ -12,7 +12,7 @@ The CORS settings are located in the "Platform Features" section of your Azure F
 
 Once there, you can define which URLs can and cannot access your Functions project in Azure.
 
-![The Allowed Origins configuration screen under the CORS option in the Azure Portal](../media/allowed-origins.png)
+![The Allowed Origins configuration screen under the CORS option in the Azure portal](../media/allowed-origins.png)
 
 > [!TIP]
 > Using "http://localhost:PORT" is a valid entry in the CORS settings for a Function project in Azure. Just remember that everyone has a "localhost", so you'll want to make sure you don't leave that setting in after you are finished testing.
@@ -25,13 +25,13 @@ When you created the functions in the first part of the module, you selected "Fu
 
 You can find the keys for your Functions in the "Function Settings"
 
-![The Function Keys section from the Azure Portal](../media/function-keys.png)
+![The Function Keys section from the Azure portal](../media/function-keys.png)
 
 There are two keys: a "\_master" and a "default". The "default" key is the one that you want to pass to your function.
 
 The key must be passed with every request as an HTTP header called, "x-functions-key".
 
-The key will be visible to the user. It is not meant to be secret. In the event that a key is being used maliciously, the keys can be easily rotated from the Azure Portal. The key would also be updated in the frontend application.
+The key will be visible to the user. It is not meant to be secret. In the event that a key is being used maliciously, the keys can be easily rotated from the Azure portal. The key would also be updated in the frontend application.
 
 Between CORS and Function Authorization, your API is _more_ secure than it would be otherwise. It's important to note that it is not 100% secure. It is possible for someone to intercept the key and spoof the domain. To lock down a function completely, you would want users to log in with credentials. That's out of scope for the tremendous work you're doing here, but is covered in another Learn Module.
 

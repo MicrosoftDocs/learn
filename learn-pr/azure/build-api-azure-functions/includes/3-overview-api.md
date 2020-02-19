@@ -8,8 +8,8 @@ Let's look at the "parts" of the Products Manager application.
 
 In the Products Manager application, there are two distinct parts of the application:
 
-1. Website
-2. Database
+* Website
+* Database
 
 ![The parts of the Products Manager application](../media/product-manager-parts.svg)
 

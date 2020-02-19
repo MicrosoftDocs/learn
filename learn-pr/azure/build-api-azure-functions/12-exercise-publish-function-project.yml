@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.build-api-azure-functions.12-ex-publish-function-project
+uid: learn.azure.build-api-azure-functions.12-exercise-publish-function-project
 title: Exercise - Publish function project to Azure
 metadata:
   title: Exercise - Publish function project to Azure
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 9
 content: |
-  [!include[](includes/12-ex-publish-function-project.md)]
+  [!include[](includes/12-exercise-publish-function-project.md)]

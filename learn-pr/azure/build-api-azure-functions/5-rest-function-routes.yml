@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.build-api-azure-functions.5-rest-and-function-routes
+uid: learn.azure.build-api-azure-functions.5-rest-function-routes
 title: REST and function routes
 metadata:
   title: REST and function routes
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 4
 content: |
-  [!include[](includes/5-rest-and-function-routes.md)]
+  [!include[](includes/5-rest-function-routes.md)]

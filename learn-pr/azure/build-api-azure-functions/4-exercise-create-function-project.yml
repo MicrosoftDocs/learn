@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.build-api-azure-functions.4-ex-create-function-project
+uid: learn.azure.build-api-azure-functions.4-exercise-create-function-project
 title: Exercise - Create the function project
 metadata:
   title: Exercise - Create the function project
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 4
 content: |
-  [!include[](includes/4-ex-create-function-project.md)]
+  [!include[](includes/4-exercise-create-function-project.md)]

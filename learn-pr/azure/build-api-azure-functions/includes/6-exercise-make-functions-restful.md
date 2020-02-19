@@ -1,4 +1,4 @@
-The Products Manager API is about to get serious style upgrade courtesy of you - fake Tailwind Traders developer extroidinaire. In this exercise, you'll turn all of the functions you created earlier into RESTful ones by modifying their configuration files.
+The Products Manager API is about to get serious style upgrade courtesy of you - fake Tailwind Traders developer extraordinaire. In this exercise, you'll turn all of the functions you created earlier into RESTful ones by modifying their configuration files.
 
 1. Open the `api/GetProducts/function.json` file.
 

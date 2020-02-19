@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.build-api-azure-functions.8-ex-querying-cosmos-db
+uid: learn.azure.build-api-azure-functions.8-exercise-querying-cosmos-db
 title: Exercise - Querying Azure Cosmos DB
 metadata:
   title: Exercise - Querying Azure Cosmos DB
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 4
 content: |
-  [!include[](includes/8-ex-querying-cosmos-db.md)]
+  [!include[](includes/8-exercise-querying-cosmos-db.md)]

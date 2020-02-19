@@ -10,14 +10,14 @@ What you need to do is make this API clean and intuitive. For that, look no furt
 
 Representational State Transfer, or REST, is an architectural pattern that provides guidance on how to name and structure endpoints in an API. There are a lot of fancy ideas behind REST, but you only need to understand two:
 
-1. Action defined by HTTP request method
-1. Organization by resource
+* Action defined by HTTP request method
+* Organization by resource
 
 ### Action defined by HTTP request method
 
 When you load a web page in the browser, the browser makes an HTTP request. That request is called a "GET". It's just that the browser does that automatically. All _you_ ever see is the URL and the page that gets returned.
 
-![A diagram showing a request from the browser to the server and the reponse coming back](../media/request-response.svg)
+![A diagram showing a request from the browser to the server and the response coming back](../media/request-response.svg)
 
 When you're calling an API, you can control the _method_ that is used to call a URL. The method is called, wait for it, the "HTTP request method". In a REST architecture, these HTTP request methods are used to define the action that you want to take on a resource. REST says that HTTP request methods match up to what a service does.
 
@@ -41,7 +41,7 @@ The second concept is called "Organization by resource". The URLs for your servi
 http://127.0.0.1:7071/api/products
 ```
 
-The fact that "products" is plural indicates that it returns multiple results. If you are getting only one product, you would call a "product" endpoint and pass the id if the item you want as part of the route.
+The fact that "products" is plural indicates that it returns multiple results. If you are getting only one product, you would call a "product" endpoint and pass the ID if the item you want as part of the route.
 
 ```http
 http://127.0.0.1/api/product/1

@@ -85,7 +85,7 @@ Your API is ready for prime time. Let's put it in the cloud. Azure, here we come
 
 ## Enable CORS on the Function app in Azure
 
-1. Return to the Azure Portal page for the function app.
+1. Return to the Azure portal page for the function app.
 
 1. Click on "Platform Features"
 

@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.build-api-azure-functions.7-querying-cosmos-db
+uid: learn.azure.build-api-azure-functions.7-query-azure-cosmos-db
 title: Querying Azure Cosmos DB
 metadata:
   title: Querying Azure Cosmos DB
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 4
 content: |
-  [!include[](includes/7-querying-cosmos-db.md)]
+  [!include[](includes/7-query-azure-cosmos-db.md)]

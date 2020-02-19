@@ -1,7 +1,7 @@
-You can connect to Azure Cosmos DB from Azure Functions in one of two ways...
+You can connect to Azure Cosmos DB from Azure Functions in one of two ways:
 
-1. The Azure Cosmos DB binding for Azure Functions
-2. The Azure Cosmos DB JavaScript SDK
+* The Azure Cosmos DB binding for Azure Functions
+* The Azure Cosmos DB JavaScript SDK
 
 The Azure Cosmos DB bindings are the _quickest_ way to connect to Azure Cosmos DB from Azure Functions. The SDK requires more code, but gives you more control over your database.
 
@@ -104,7 +104,7 @@ const { resource } = await container
 
 ### Delete an item
 
-The `delete` method deletes an item based on the id and partition key value that is specified.
+The `delete` method deletes an item based on the ID and partition key value that is specified.
 
 ```typescript
 const product = {

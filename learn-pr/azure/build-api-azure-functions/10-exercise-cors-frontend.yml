@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.build-api-azure-functions.10-ex-cors-and-the-frontend
+uid: learn.azure.build-api-azure-functions.10-exercise-cors-frontend
 title: Exercise - Configuring CORS
 metadata:
   title: Exercise - Configuring CORS
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 4
 content: |
-  [!include[](includes/10-ex-cors-and-the-frontend.md)]
+  [!include[](includes/10-exercise-cors-frontend.md)]

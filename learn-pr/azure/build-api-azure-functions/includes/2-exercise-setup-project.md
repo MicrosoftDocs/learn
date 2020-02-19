@@ -2,7 +2,7 @@ You're a new developer at Tailwind Traders. Before you can start, you'll need to
 
 ## Create the database
 
-1. Sign into the sandbox (AKA Tailwind Traders "production environment") as indicated at the top of this page.
+1. Sign into the sandbox (also known as, "Tailwind Traders Production Environment") as indicated at the top of this page.
 
 1. Copy the following command into the Sandbox and press enter to get the tenant id for your sandbox subscription.
 
