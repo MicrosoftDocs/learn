@@ -1,14 +1,14 @@
-*Placeholder content copied from Agile module*
+Azure DevOps can help your team scale their development processes to deliver bigger and more ambitious projects. Let's rejoin the team as they tackle a common problem organizations face as they grow. Together, we'll discover what it takes to effectively manage work schedules across multiple teams.
 
-You've met the Tailspin team and learned a bit about their problems. Mara, the newest team member, is trying to convince her teammates that a DevOps approach, using the services in Azure DevOps, is a great way to solve them. She's taken it upon herself to do a *value stream mapping* (VSM) exercise, and she's shown everyone the results.
+In previous modules, you met the team at Tailspin Toys. In the [previous module](/learn/modules/choose-an-agile-approach?azure-portal=true), you watched as they began to manage their work schedule through Azure Boards. As word of their early success begins to spread, other teams begin exploring how they can enjoy the same benefits.
 
-Her next goal is to convince the Tailspin team to take their first DevOps steps by using an Agile approach and Azure Boards, a part of the Azure DevOps suite. Azure Boards helps teams collaborate and plan their work better. This module shows how the team creates its first board.
+As more teams adopt Azure Boards, the organization begins to enjoy the network effects of having their planning consolidate around a consistent process. Problems that were once written off a cost of doing business now have achievable solutions. Let's watch the team as they lead their organization in their evolution.
 
 In this module, you will:
 
-- Create an Azure DevOps project
-- Add work items to Azure Boards by using the Basic process
-- Assign work items to team members
+- Install the Delivery Plans extension for your Azure DevOps project
+- Create a delivery plan
+- Adjust a team's sprint workload to optimize delivery efficiency
 
 ## Prerequisites
 
@@ -23,10 +23,6 @@ You met the _Space Game_ web team at Tailspin Toys in previous modules. As a ref
 :::row:::
 
 [!include[](../../shared/includes/meet-andy-short-col.md)]
-
-[!include[](../../shared/includes/meet-amita-short-col.md)]
-
-[!include[](../../shared/includes/meet-tim-short-col.md)]
 
 [!include[](../../shared/includes/meet-mara-short-col.md)]
 

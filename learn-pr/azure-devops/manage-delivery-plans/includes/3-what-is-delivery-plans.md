@@ -1,73 +1,34 @@
-*Placeholder content copied from Agile module*
+_Delivery Plans_ is an extension for Azure DevOps that helps organizations plan and review work schedules across multiple teams. The Tailspin team will use this extension to get a better idea of how their work relates to work to be produced by other teams.
 
-Azure Boards is a tool in Azure DevOps to help teams plan the work that needs to be done. The Tailspin team will use this tool to get a better idea of what work needs to be done and how to prioritize it.
+Mara installed Delivery Plans on the team's Azure DevOps account. She then created a delivery plan and added the sprints for her team and the game engine team. Excited to show off the potential, she invites Andy over for a quick demo.
 
-Mara created her own project on Azure Boards using the Basic process. It shows the problems in the build process that she and Andy identified. Mara gets the team together for a quick demo.
+**Mara:** After our last conversation I looked into our options for managing delivery plans. I found an Azure DevOps extension that seems to give us everything we need.
 
-**Mara:** Hi everyone. I set up Azure Boards and wanted to show you some work items I came up with.
+**Andy:** I'm very interested to see what you've come up with. There's a lot of stress throughout the organization about the beta slip, so anything we can do to improve schedule efficiency will be quite welcome.
 
-**Andy:** What's a work item?
+**Mara:** Okay, here it is.
 
-**Mara:** Work items help us plan and manage a project. A work item can track all kinds of activities. Maybe it's a task to do, a bug to fix, or some other issue. We can assign them to people and keep track of their progress.
+![Delivery plan showing the web and engine team schedules](../../shared/media/delivery-plan-before.png)
 
-Perhaps it's easier to show you. Here's Azure Boards using the Basic process.
+**Mara:** The Delivery Plans extensions allows us to create a "delivery plan". Once we create that, we can add in the backlogs of teams within the organization. They are shown in parallel so that we can see what each team is planning to deliver against a calendar backdrop.
 
-![Azure Boards showing the initial three tasks](../../shared/media/build-initial-tasks.png)
+**Andy:** This is great! Now we know when something we're dependent on won't be available in time. We can even gauge the likelihood of delay based on how much other work and dependencies those teams have taken on. This should help mitigate some of the "schedule chicken" shenanigans that sometimes go on around here.
 
-**Amita:** Tell us about the Basic process. Are there other options?
+> Schedule chicken is when two or more teams are at risk of not meeting deadlines, but none of them want to admit it. Instead, each wait for another to slip their schedule first and then use the other team's slip as a pretext for delaying their own delivery. Learn more in [the Wikipedia article](https://en.wikipedia.org/wiki/Schedule_chicken).
 
-**Mara:** There are four processes to choose from. We can use:
+**Mara:** Yes, and we can also use this as an opportunity to let other teams know if we're going to slip something they're dependent on. It will help us build trust in our people and processes.
 
-* **Capability Maturity Model Integration (CMMI)**. This is really for large organizations and it's pretty complicated so I didn't use it.
-* **Scrum**. Scrum depends on a Scrum master who leads the Scrum team. The Scrum master makes sure everybody understands Scrum theory, practices, and rules. We don't have a Scrum master; that's someone who's usually received some training and certification so I didn't pick that one either.
-* **Agile**. This seemed like the obvious choice since I'm always talking about Agile, but it has a few more things to consider than the simplest option.
-* **Basic**. Basic is, well, basic. It's simple but gives us enough power to start doing effective planning right away, and that's why I picked it. In the Basic workflow, you move work from **To Do** to **Doing** to **Done**.
+Andy nods in agreement. It would be nice for the teams to have more faith in each other.
 
-**Amita:** OK, let's use it to get started. We can switch to something else, right?
+**Andy:** Well now that we know about the beta slip we have to move our associated work out to a future sprint. On the bright side, it gives us an opportunity to pull some new work in to replace it. Let's swap the integration work with those two leaderboard bugs.
+Mara drags the integration work item out to the following sprint. She then drags the two leaderboard bugs back in to fill the available capacity.
+ 
+![Delivery plan after reorganizing work](../../shared/media/delivery-plan-after.png)
 
-**Mara:** Right! So, let's pick a few work items we think we can fix in a couple weeks.
+**Mara:** I also added the current beta date as a milestone. Now we will always have it in place as a reference point for the work we're planning.
 
-Andy can identify with these issues, but the rest of the team has questions.
+**Andy:** We should also add events like Cliffchella and the annual company party.
 
-**Tim:** These are mostly dev problems. But while we're on the subject, other teams are talking about code vulnerabilities, and I've been asked to show that our code is secure. Is there a way we can add that?
+**Mara:** Why the company party? Does that impact the schedule?
 
-**Mara:** I know the list isn't complete. The problems on the board are the ones Andy and I talked about earlier. And even some of these problems really need to get broken down into smaller tasks. I understand your concerns about code vulnerabilities. Andy, what do you think?
-
-**Andy:** Right now, just getting a build out the door is hard. Let's start with some of the basic problems. I do like that we have a central place where we can keep track of our issues. We can add issues to the backlog and prioritize them once we're ready.
-
-**Mara:** Before we add any issues, let's talk a bit more about what everyone is working on.
-
-:::row:::
-  :::column span="4":::
-Each team member shares what they're working on and other concerns they have. As a brainstorming activity, they add sticky notes to a whiteboard. Their whiteboard fills up quickly.
-  :::column-end:::
-  :::column:::
-![A whiteboard containing sticky notes](../media/3-whiteboard.png)
-  :::column-end:::
-:::row-end:::
-
-Eventually the team settles on seven top issues. Andy volunteers to add tasks to Azure Boards while everyone watches. Here's what the board looks like.
-
-![Backlog of tasks](../../shared/media/build-all-tasks.png)
-
-**Amita:** Wow, that's a lot of problems. How are we ever going to fix all those?
-
-**Mara:** We don't have to fix them all right away. For now, we've identified a _backlog_ or list of work we could pull from. When we plan work, we get to choose what's most urgent or important.
-
-After some more discussion, the team decides to take on the three issues Mara originally proposed:
-
-* Stabilize the build server.
-* Create a Git-based workflow.
-* Create unit tests.
-
-**Mara:** These seem like the easiest issues to take on, and they address some recent challenges that came up. Let's set up a project, a team, and a sprint. Then we can decide who does what.
-
-**Tim:** What's a sprint?
-
-**Mara:** Good question. A sprint is the amount of time we have to complete our tasks. Sprints help keep us focused. At the end, we can have a short retrospective meeting to share what we've accomplished. After that, we can plan the next one.
-
-Everyone looks nervous.
-
-**Mara:** We're still learning. A sprint is typically two to four weeks long. Let's just say two weeks and see how that goes. These are mostly tasks Andy and I can tackle. We'll share our progress as we go. Then we can find ways to include everybody.
-
-Mara and the team are off to a good start. Next, you'll set up the project, team, and some tasks on Azure Boards.
+**Andy:** It might. Every year the DBAs enter the pie-eating contest and they all end up calling in sick the next day. I'm not saying we should expect it to happen again this year, but I do think we should be prepared. And now we have the tools for it.
