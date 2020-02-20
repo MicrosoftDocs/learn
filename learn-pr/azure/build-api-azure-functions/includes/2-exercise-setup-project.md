@@ -4,13 +4,13 @@ You're a new developer at Tailwind Traders. Before you can start, you'll need to
 
 1. Sign into the sandbox (also known as, "Tailwind Traders Production Environment") as indicated at the top of this page.
 
-1. Copy the following command into the Sandbox and press enter to get the tenant id for your sandbox subscription.
+1. Copy the following command into the Sandbox and press enter to get the tenant ID for your sandbox subscription.
 
    ```bash
    az account list --query "[?name=='Concierge Subscription'].tenantId" -o tsv
    ```
 
-1. Highlight the id in the sandbox and copy it to your clipboard.
+1. Highlight the ID in the sandbox and copy it to your clipboard.
 
 ## Setup VS Code
 

@@ -80,7 +80,7 @@ const { resource } = container.items.create(product);
 ```
 
 > [!TIP]
-> Note that if you don't pass in an "id" property with your data, Azure Cosmos DB will create one for you. Azure Cosmos DB generated id's are guids.
+> Note that if you don't pass in an "id" property with your data, Azure Cosmos DB will create one for you. Azure Cosmos DB generated IDs are guids.
 
 ### Update an item
 
