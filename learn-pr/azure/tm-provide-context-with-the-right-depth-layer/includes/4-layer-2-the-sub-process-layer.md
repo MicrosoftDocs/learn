@@ -1,4 +1,4 @@
-The Subprocess Layer focuses on data-flow diagrams for each system subpart. The goal is to create data-flow diagrams that help explain how each system subpart works and interacts with each other.
+The Subprocess Layer focuses on data-flow diagrams for each system subpart. The goal is to understand how each system subpart works and interacts with each other.
 
 ## When Should I Use This Layer?
 
@@ -10,7 +10,7 @@ Use the Subprocess Layer for systems considered critical by the organization. Ex
 
 A breach in a system subpart could put the entire system, customers, and organization at critical risk.
 
-## What If I Need to Deep Dive Even Further?
+## What If I Need to Deep Dive Further?
 
 Any system subparts requiring deeper dives should follow the same rule from the Process Layer and have their own separate data-flow diagrams. The lower-level view allows users to "zoom-in" and "zoom-out" of the system with as much context and clarity as possible. Here's how:
 

@@ -2,9 +2,9 @@ The System Layer is the **starting ground** for any system and must be created f
 
 ## When Should I Use This Layer?
 
-The System Layer should be required for every system you're building. The high-level context helps anyone learn more about your system to engage in more meaningful discussions.
+The System Layer should be required for every system you create. The high-level context helps anyone learn more about your system to engage in more meaningful discussions.
 
-## What If I Need to Deep Dive Into One of the System-Parts?
+## What If I Need to Deep Dive Into a System Part?
 
 In most cases, system parts **will** require a deeper dive because of the risk they introduce. Examples include:
 

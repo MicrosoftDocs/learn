@@ -2,9 +2,9 @@ The Process Layer focuses on data-flow diagrams for each system part. The goal i
 
 ## When Should I Use This Layer?
 
-Use the Process Layer for every system, especially if it handles sensitive data. The likelihood of a breach in those systems would be higher. The context at this level helps you identify threats and ways to reduce or eliminate risks more efficiently.
+Use the Process Layer for every system, especially if it handles sensitive data. The likelihood of a breach in these systems would be higher. The context at this level helps you identify threats and ways to reduce or eliminate risks more efficiently.
 
-## What If I Need to Deep Dive Into One of the System Subparts?
+## What If I Need to Deep Dive Into a System Subpart?
 
 In some cases, system parts may require more granular context because of their increased sensitivity and risk. Threats and risk reduction strategies are best assessed by going down to this layer. Follow the same rule from the Context Layer:
 

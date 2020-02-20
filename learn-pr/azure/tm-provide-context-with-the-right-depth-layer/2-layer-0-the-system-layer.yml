@@ -23,6 +23,6 @@ quiz:
     - content: "Process Layer"
       isCorrect: false
       explanation: "This layer focuses on each system part"
-    - content: "Sub-Process Layer"
+    - content: "Subprocess Layer"
       isCorrect: false
       explanation: "This layer focuses on the system subparts of a specific system part"

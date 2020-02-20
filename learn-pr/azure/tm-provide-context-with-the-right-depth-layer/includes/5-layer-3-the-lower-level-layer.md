@@ -1,4 +1,4 @@
-The Lower-Level Layer focuses on data-flow diagrams for each low-level system subpart. The goal is to create data-flow diagrams that explain how each low-level system subpart works and interacts with each other in minute detail.
+The Lower-Level Layer focuses on data-flow diagrams for each low-level system subpart. The goal is to understand how each low-level system subpart works and interacts with each other.
 
 ## When Should I Use This Layer?
 
