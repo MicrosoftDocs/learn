@@ -53,7 +53,7 @@ quiz:
 # Answer for choice #2 includes additional explanation from what is in original course
   - content: "You host an email server on Amazon only to find that the emails that your service sends are categorized as spam by anti-spammers Iike Spamhaus. However, the content of your mails is not spam-like. What could be a possible reason for this filtering?"
     choices:
-    - content: "This a just an inherent problem of public clouds, where you have to share resources with untrusted entities, which could impact you in unpredictable ways. Cloud providers should add features like outbound spam monitoring to protect their own reputation. Services like Spamhaus should continue unchanged."
+    - content: "This is just an inherent problem of public clouds, where you have to share resources with untrusted entities, which could impact you in unpredictable ways. Cloud providers should add features like outbound spam monitoring to protect their own reputation. Services like Spamhaus should continue unchanged."
       isCorrect: false
       explanation: "Incorrect. As many services move to the clouds, anti-spam agents like Spamhaus cannot continue to broadly block IP addresses. Consider the techniques used by Spamhaus to blacklist spam sources. Do they translate well to public cloud infrastructure?"
     - content: "You should never host an email server on the public cloud because the Massive Surveillance Bureau will be tracking it."
@@ -119,22 +119,22 @@ quiz:
     choices:
     - content: "Run the script with the least privileges required."
       isCorrect: false
-      explanation: "That's not quite right. This operation is something that the service should do when it runs unknown code. What would malicous code need in order to inflict damage to such a service?"
+      explanation: "That's not quite right. This operation is something that the service should do when it runs unknown code. What would malicious code need in order to inflict damage to such a service?"
     - content: "Block network access."
       isCorrect: false
-      explanation: "That's not quite right. This operation is something that the service should do when it runs unknown code. What would malicous code need in order to inflict damage to such a service?"
+      explanation: "That's not quite right. This operation is something that the service should do when it runs unknown code. What would malicious code need in order to inflict damage to such a service?"
     - content: "Restrict the amount of memory that the code can access."
       isCorrect: false
-      explanation: "That's not quite right. This operation is something that the service should do when it runs unknown code. What would malicous code need in order to inflict damage to such a service?"
+      explanation: "That's not quite right. This operation is something that the service should do when it runs unknown code. What would malicious code need in order to inflict damage to such a service?"
     - content: "Add a timeout to kill the code after a certain duration."
       isCorrect: false
-      explanation: "That's not quite right. This operation is something that the service should do when it runs unknown code. What would malicous code need in order to inflict damage to such a service?"                        
+      explanation: "That's not quite right. This operation is something that the service should do when it runs unknown code. What would malicious code need in order to inflict damage to such a service?"                        
     - content: "Block the script from accessing any files outside the given folder."
       isCorrect: false
-      explanation: "That's not quite right. This operation is something that the service should do when it runs unknown code. What would malicous code need in order to inflict damage to such a service?"      
+      explanation: "That's not quite right. This operation is something that the service should do when it runs unknown code. What would malicious code need in order to inflict damage to such a service?"      
     - content: "Run the script as the root user."
       isCorrect: true
       explanation: "Correct!"
     - content: "Log any code that violates the policies, because it might corrupt the logs."
       isCorrect: false
-      explanation: "That's not quite right. This operation is something that the service should do when it runs unknown code. What would malicous code need in order to inflict damage to such a service?"      
+      explanation: "That's not quite right. This operation is something that the service should do when it runs unknown code. What would malicious code need in order to inflict damage to such a service?"      
