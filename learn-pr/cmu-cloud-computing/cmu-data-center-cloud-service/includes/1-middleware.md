@@ -8,7 +8,7 @@ Cloud middleware is a software platform that controls and coordinates different 
 
 ## Cloud middleware features
 
-Cloud middleware provides a number of distinct and important features that come with several benefits. Some of the most important responsibilities of a cloud middleware stack are as follows: 
+Cloud middleware provides a number of distinct and important features that come with several benefits.<sup>[1][^1]</sup> Some of the most important responsibilities of a cloud middleware stack are as follows: 
 
 **Interoperability**: Middleware is designed to connect distinct application services with different APIs to one another. Cloud service APIs act as middleware for cloud services by taking instructions from a program (written in a language such as Java or Python), and translating them into service calls that the cloud service can understand. These instructions are further passed down the middleware stack at the cloud service provider's end to perform actions (create virtual machines, allocate disk space, create a database table, etc.). Thus, cloud middleware is the proverbial "glue" that enables multiple distinct applications and services to connect to and communicate with each other. 
 
@@ -27,6 +27,8 @@ Cloud middleware provides a number of distinct and important features that come 
 ***
 ### References
 
-1. _Amrani C., Filali K., Ahmed K., Diallo A., Telolahy S. (2012). [A Comparative Study of Cloud Computing Middleware 12th IEEE/ACM International Symposium on Cluster, Cloud and Grid Computing](https://dl.acm.org/citation.cfm?id=2310096.2310135)_
+1. _Amrani C., Filali K., Ahmed K., Diallo A., Telolahy S. (2012). [A Comparative Study of Cloud Computing Middleware](https://dl.acm.org/citation.cfm?id=2310096.2310135), 12th IEEE/ACM International Symposium on Cluster, Cloud and Grid Computing_
 
 ***
+
+[^1]: <https://dl.acm.org/citation.cfm?id=2310096.2310135> "Amrani C., Filali K., Ahmed K., Diallo A., Telolahy S. (2012). *A Comparative Study of Cloud Computing Middleware*, 12th IEEE/ACM International Symposium on Cluster, Cloud and Grid Computing"

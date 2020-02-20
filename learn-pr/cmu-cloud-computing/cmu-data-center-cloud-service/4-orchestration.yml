@@ -23,7 +23,7 @@ quiz:
     - content: "Easy-to-use web portals to provision and monitor resources"
       isCorrect: false
       explanation: "Incorrect. This is an effect of cloud orchestration. What is the effect of cloud orchestration on the manageability of resources and services?"
-    - content: "Readymade scripts that allow various parts of the infrastructure to be automatically created"
+    - content: "Ready-made scripts that allow various parts of the infrastructure to be automatically created"
       isCorrect: false
       explanation: "Incorrect. This is an effect of cloud orchestration. What is the effect of cloud orchestration on the manageability of resources and services?"
     - content: "Improved collaboration between multiple technical teams in a large cloud application"
