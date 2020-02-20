@@ -20,7 +20,7 @@ prerequisites: |
   - Basic familiarity with relational data, such as tables, rows, and database schema
   - Basic familiarity with SQL Server administration and configuration
   - Basic familiarity with Azure SQL Database
-iconUrl: http://via.placeholder.com/120x120
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
 roles:
