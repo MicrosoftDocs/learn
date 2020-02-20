@@ -15,7 +15,7 @@ abstract: |
   In this module, you will:
   - Install the Delivery Plans extension for your Azure DevOps project
   - Create a delivery plan
-  - Adjust a team’s sprint workload to optimize delivery efficiency
+  - Adjust a team's sprint workload to optimize delivery efficiency
 prerequisites: An Azure DevOps organization
 iconUrl: /learn/achievements/azure-devops/choose-an-agile-approach-to-software-development.svg
 ratingEnabled: true
@@ -34,6 +34,7 @@ units:
 - learn.azdo.manage-delivery-plans.3-what-is-delivery-plans
 - learn.azdo.manage-delivery-plans.4-set-up-environment
 - learn.azdo.manage-delivery-plans.5-plan-sprint-delivery-plans
-- learn.azdo.manage-delivery-plans.6-summary
+- learn.azdo.manage-delivery-plans.6-clean-up-environment
+- learn.azdo.manage-delivery-plans.7-summary
 badge:
   uid: learn.azdo.manage-delivery-plans.badge

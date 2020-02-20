@@ -8,7 +8,7 @@ Mara installed Delivery Plans on the team's Azure DevOps account. She then creat
 
 **Mara:** Okay, here it is.
 
-![Delivery plan showing the web and engine team schedules](../../shared/media/delivery-plan-before.png)
+![Delivery plan showing the Web and Engine team schedules](../../shared/media/3-delivery-plan-before.png)
 
 **Mara:** The Delivery Plans extensions allows us to create a "delivery plan". Once we create that, we can add in the backlogs of teams within the organization. They are shown in parallel so that we can see what each team is planning to deliver against a calendar backdrop.
 
@@ -23,7 +23,7 @@ Andy nods in agreement. It would be nice for the teams to have more faith in eac
 **Andy:** Well now that we know about the beta slip we have to move our associated work out to a future sprint. On the bright side, it gives us an opportunity to pull some new work in to replace it. Let's swap the integration work with those two leaderboard bugs.
 Mara drags the integration work item out to the following sprint. She then drags the two leaderboard bugs back in to fill the available capacity.
  
-![Delivery plan after reorganizing work](../../shared/media/delivery-plan-after.png)
+![Delivery plan after reorganizing work](../../shared/media/3-delivery-plan-after.png)
 
 **Mara:** I also added the current beta date as a milestone. Now we will always have it in place as a reference point for the work we're planning.
 
