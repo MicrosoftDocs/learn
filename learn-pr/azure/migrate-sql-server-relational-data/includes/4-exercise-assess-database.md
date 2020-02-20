@@ -30,7 +30,7 @@ Before you can download the Data Migration Assistant, you will need to disable I
 
 ## Download and install and run the Azure Data Migration Assistant
 
-1. Once you are connected to the VM, open Internet Explorer and navigate to the [Azure Data Migration Assistant download page](https://www.microsoft.com/download/details.aspx?id=53595).
+1. Open Internet Explorer and navigate to the [Azure Data Migration Assistant download page](https://www.microsoft.com/download/details.aspx?id=53595).
 
 1. Select **Download** and install the migration assistant, accepting the defaults through the installation dialog.
 
