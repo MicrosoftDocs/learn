@@ -10,7 +10,7 @@ Capital expenditure (CapEx) for datacenters includes upfront planning, cost of p
 
 **Property costs**: A principal expense incurred in building datacenters is the cost of property. This, of course, varies significantly depending on location. Organizations typically have the option of either constructing a building from scratch or repurposing an existing building to be a datacenter.
 
-When an organization is building from scratch, many costs, such as the real estate transaction, consultant, brokerage, and building permits, apply in addition to the actual cost of building the datacenter "shell," which could include excavation, grading, roadways, utility connections, and physical security. [Reed Construction Data](http://www.reedconstructiondata.com/rsmeans/models/data-center/) has estimates for the United States that are typically between \$200 to \$300 per square foot, depending on the type of building and labor.
+When an organization is building from scratch, many costs, such as the real estate transaction, consultant, brokerage, and building permits, apply in addition to the actual cost of building the datacenter "shell," which could include excavation, grading, roadways, utility connections, and physical security. [Reed Construction Data](http://www.reedconstructiondata.com/rsmeans/models/data-center/) has estimates for the United States that are typically between 200 to 300 dollars per square foot, depending on the type of building and labor.
 
 Many organizations opt to repurpose existing buildings, particularly those that have been abandoned, such as factories or mills. Google's [Hamina datacenter](http://www.google.com/about/datacenters/locations/hamina/) in Finland was repurposed from an old paper mill. [Barcelona Supercomputing Center](https://www.bsc.es/discover-bsc/the-centre/history) is an example of an old chapel repurposed as a datacenter site.
 
@@ -19,11 +19,11 @@ Leasing a building or subleasing space in a building can also be done, shifting 
 
 **Facilities equipment**: Some heavy equipment is often installed during the construction phase. After the building shell is complete, datacenter-specific facilities can be built. The equipment is then procured and commissioned. We'll take a look at the equipment in a later module. The equipment includes cooling (CRACs, chillers, condensers, water tanks), electrical equipment (power distribution, generators, transformers, UPSs, automated transfer switch), and fire detection and suppression systems (FM-200).
 
-Estimates for the cost of HVAC and electrical equipment are approximately \$7,000 to \$20,000 per kilowatt of IT load.<sup>[1][^1]</sup> In addition, fire suppression systems costs can range from \$20,000 to \$60,000 for a typical datacenter spanning several thousand square feet.
+Estimates for the cost of HVAC and electrical equipment are approximately 7,000 to 20,000 dollars per kilowatt of IT load.<sup>[1][^1]</sup> In addition, fire suppression systems costs can range from 20,000 to 60,000 dollars for a typical datacenter spanning several thousand square feet.
 
 **IT equipment and connectivity**: Once the datacenter facility is ready, equipment can be moved in and installed. Typically, this involves purchasing rack-mountable servers and networking and rack power distribution equipment. In larger datacenter environments, it is becoming increasingly popular to roll out fully containerized servers with integrated power, cooling, and network management. IT equipment costs can vary widely depending on the size and configuration of the hardware.
 
-In addition to IT equipment, the datacenter needs to have a dedicated network connection in order for it to be accessible to the organization that is using it. Network service providers typically charge an upfront average of \$10,000/mile to install and commission fiber to a datacenter.<sup>[1][^1]</sup>
+In addition to IT equipment, the datacenter needs to have a dedicated network connection in order for it to be accessible to the organization that is using it. Network service providers typically charge an upfront average of 10,000 dollars per mile to install and commission fiber to a datacenter.<sup>[1][^1]</sup>
 
 ## Operating expenditure
 
@@ -41,7 +41,7 @@ One of the biggest operating expenses in running a datacenter is the power. It c
 
 **Maintenance**: Purpose-built datacenters also incur significant maintenance overheads in order to keep the facility running smoothly and to minimize downtime. This cost could be 3% to 5% of the initial construction costs.<sup>[1][^1]</sup> In addition, facilities equipment may need periodic replacement or repair. For example, UPS batteries are replaced once in 5 years, on average. 
 
-**Taxes and/or leasing**: Building permits are required for building new datacenter shells or significantly altering an existing building's structure. Organizations also need to pay some form of annual property tax on the property owned. This cost, like others, can vary considerably from region to region. Average taxes are estimated to be \$70 per square foot in the United States.<sup>[1][^1]</sup> If you are leasing a property, many of these taxes are included in the monthly price of your lease. 
+**Taxes and/or leasing**: Building permits are required for building new datacenter shells or significantly altering an existing building's structure. Organizations also need to pay some form of annual property tax on the property owned. This cost, like others, can vary considerably from region to region. Average taxes are estimated to be 70 dollars per square foot in the United States.<sup>[1][^1]</sup> If you are leasing a property, many of these taxes are included in the monthly price of your lease. 
 <br>
 ***
 
