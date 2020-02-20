@@ -50,7 +50,7 @@ Systems that distribute and manage electrical power, as well as those providing 
 
 The efficiency of a power supply is the ratio of its output power divided by its input power. For instance, a fully loaded, 800-W power supply at 80% efficiency would consume 1000 W of power, with the remaining 200 W lost as heat. These power supplies have gained efficiency recently, with some of them reaching 95%. An alternate design feeds DC to servers directly, instead of converting AC to DC on each rack. Delivering high-voltage, direct current (HVDC) to each server allows using more efficient, DC/DC supplies within the rack.
 
-Large, centralized, uninterruptable power supply (UPS) systems also incur AC/DC conversion losses. To minimize these losses, Google has adopted a decentralized UPS plan, and for several years, its custom-built servers have each had dedicated battery backup. Some manufacturers now offer this server-based UPS configuration for datacenters.
+Large, centralized, uninterruptible power supply (UPS) systems also incur AC/DC conversion losses. To minimize these losses, Google has adopted a decentralized UPS plan, and for several years, its custom-built servers have each had dedicated battery backup. Some manufacturers now offer this server-based UPS configuration for datacenters.
 
 ### Cooling
 
