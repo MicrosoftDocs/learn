@@ -20,7 +20,7 @@ Applications on public datacenters typically run on shared infrastructure. This 
 
 Some cloud providers, such as AWS, provide clients the ability to provision certain types of resources (such as EC2 instances) on **dedicated hardware**. This provides protection against wide fluctuations in resource performance, delivering fairly consistent performance for the resources. However, dedicated hardware instances cost considerably more than regular on-demand instances, as AWS needs to assign a server exclusively for the resources.
 
-A related aspect of multi-tenancy is the issue of **provisioning variation**, wherein identical requests for virtual resources on public clouds are not mapped identically onto physical resources, thereby causing a variation in performance. For example, two identical requests for virtual machines (`VM1` and `VM2`) could be routed to two different physical machines (`A` and `B`). Physical machine A might have four other tenants competing for resources on the same machine, while machine B may have only two. The client is charged the same for virtual machines `VM1` and `VM2`, but can potentially experience different performance on these machines. 
+A related aspect of multi-tenancy is the issue of **provisioning variation**, wherein identical requests for virtual resources on public clouds are not mapped identically onto physical resources, thereby causing a variation in performance.<sup>[1][^1]</sup> For example, two identical requests for virtual machines (`VM1` and `VM2`) could be routed to two different physical machines (`A` and `B`). Physical machine A might have four other tenants competing for resources on the same machine, while machine B may have only two. The client is charged the same for virtual machines `VM1` and `VM2`, but can potentially experience different performance on these machines. 
 
 ### Security settings
 
@@ -33,4 +33,4 @@ Because we discussed these protocols in an earlier module, we won't discuss thes
 
 1. _Rehman, M.S and Sakr, M.F (2010). [Initial Findings for Provisioning Variation in Cloud Computing](https://ieeexplore.ieee.org/document/5708489) from the 2010 IEEE Second International Conference on Cloud Computing Technology and Science (CloudCom)_
 
-***
+[^1]: <https://ieeexplore.ieee.org/document/5708489> "Rehman, M.S and Sakr, M.F (2010). *Initial Findings for Provisioning Variation in Cloud Computing* from the 2010 IEEE Second International Conference on Cloud Computing Technology and Science (CloudCom)"

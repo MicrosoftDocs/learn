@@ -14,7 +14,7 @@ The downside of this method is that in the case of a server failure, the switcho
 
 Modern load balancing often refers to the use of a dedicated instance (or a pair of instances) that directs incoming traffic to the back-end servers. For each incoming request on a specified port, the load balancer redirects the traffic to one of the back-end servers based on a distribution strategy. In doing so, the load balancer maintains the request metadata, including information like application protocol headers (such as HTTP headers). In this situation, there is no problem of stale information as every request passes through the load balancer. 
 
-Though all types of network load balancers will simply forward the user's information along with any context to the back-end servers, when it comes to serving the response back to the client, they may employ one of two basic strategies: 
+Though all types of network load balancers will simply forward the user's information along with any context to the back-end servers, when it comes to serving the response back to the client, they may employ one of two basic strategies:<sup>[1][^1]</sup> 
 - **Proxying**: In this approach, the load balancer receives the response from the back end and relays it back to the client. The load balancer behaves as a standard web proxy and is involved in both halves of a network transaction, namely forwarding the request to the client and sending back the response. 
 - **TCP handoff** In this approach, the TCP connection with the client is handed off to the back-end server. Therefore the server sends the response directly to the client, without going through the load balancer. 
 
@@ -73,6 +73,8 @@ Having a centralized load balancer lends itself to several strategies that can i
 ***
 ### References
 
-1. _Aron, Mohit and Sanders, Darren and Druschel, Peter and Zwaenepoel, Willy (2000). [Scalable content-aware request distribution in cluster-based network servers](https://www.researchgate.net/publication/2643853_Scalable_Content-aware_Request_Distribution_in_Cluster-based_Network_Servers) From Proceedings of the 2000 Annual USENIX technical Conference_
+1. _Aron, Mohit and Sanders, Darren and Druschel, Peter and Zwaenepoel, Willy (2000). [Scalable content-aware request distribution in cluster-based network servers](https://www.researchgate.net/publication/2643853_Scalable_Content-aware_Request_Distribution_in_Cluster-based_Network_Servers) from Proceedings of the 2000 Annual USENIX technical Conference_
 
 ***
+
+[^1]: <https://www.researchgate.net/publication/2643853_Scalable_Content-aware_Request_Distribution_in_Cluster-based_Network_Servers> "Aron, Mohit and Sanders, Darren and Druschel, Peter and Zwaenepoel, Willy (2000). *Scalable content-aware request distribution in cluster-based network servers* from Proceedings of the 2000 Annual USENIX technical Conference"

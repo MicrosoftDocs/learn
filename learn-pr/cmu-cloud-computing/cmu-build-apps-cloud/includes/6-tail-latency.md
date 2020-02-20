@@ -23,7 +23,7 @@ Like most stochastic processes, the response time of a single leaf node can be e
 
 ![Tail latency example](../media/tail-latency-1.png)
 
-_Figure 8: Tail latency example_
+_Figure 8: Tail latency example_<sup>[5][^5]</sup>
 
 Consider a system where all leaf nodes have an average response time of 1 ms, but there is probability of 1% that the response time is greater than 1,000 ms (one second). If each query is handled by only a single leaf node, the probability of the query taking longer than one second is also 1%. However, as we increase the number of nodes to 100, the probability that the query will finish within one second drops to 36.6%, which means that there is a 63.4% chance that the query duration will be determined by the tail (lowest 1%) of the latency distribution. 
 
@@ -33,20 +33,20 @@ If we simulate this for a variety of cases, we see that as the number of servers
 
 ![Recent study of response time probability that shows the fiftieth, ninety-fifth, and ninety-ninth percentiles for latency of requests](../media/tail-latency-2.png)
 
-_Figure 9: Recent study of response time probability that shows the 50th, 95th, and 99th percentiles for latency of requests_
+_Figure 9: Recent study of response time probability that shows the 50th, 95th, and 99th percentiles for latency of requests_<sup>[4][^4]</sup>
 
 Just like we designed our applications to be fault tolerant to deal with resource reliability problems, it should be clear now why it is important for applications to be "tail tolerant." To be able to do this, we must understand the sources of these long performance variabilities and identify mitigations where possible and workarounds where not. 
 
 ## Variability in the cloud: Sources and mitigations 
 
-To resolve the response time variability that leads to this tail latency problem, we must understand the sources of performance variability.
+To resolve the response time variability that leads to this tail latency problem, we must understand the sources of performance variability.<sup>[1][^1]</sup>
 - **Use of shared resources**: Many different VMs (and applications within those VMs) contend for a shared pool of compute resources. In rare cases, it is possible that this contention leads to low latency for some requests. For critical tasks, it may make sense to use dedicated instances and periodically run benchmarks when idle, to ensure that it behaves correctly.
 - **Background daemons and maintenance**: We have already spoken about the need for background processes to create checkpoints, create backups, update logs, collect garbage, and handle resource cleanup. However, these can degrade the performance of the system while executing. To mitigate this, it is important to synchronize disruptions due to maintenance threads to minimize the impact on the flow of traffic. This will cause all variation to occur in a short, well-known window rather than randomly over the lifetime of the application.
-- **Queueing**: Another common source of variability is the burstiness of traffic arrival patterns. This variability is exacerbated if the OS uses a scheduling algorithm other than FIFO. Linux systems often schedule threads out of order to optimize the overall throughput and maximize utilization of the server. Studies have found that using FIFO scheduling in the OS reduces tail latency at the cost of lowering overall throughput of the system. 
-- **All-to-all incast**: The pattern shown in Figure 8 above is known as all-to-all communication. Since most network communication is over TCP, this leads to thousands of simultaneous requests and responses between the front-end web server and all the back-end processing nodes. This is an extremely bursty pattern of communication and often leads to a special kind of congestion failure known TCP incast collapse. The intense sudden response from thousands of servers leads to many dropped and retransmitted packets, eventually causing a network avalanche of traffic for packets of data that are very small. Large datacenters and cloud applications often need to use custom network drivers to dynamically adjust the TCP receiving window and the retransmission timer. Routers may also be configured to drop traffic that exceeds a specific rate and reduce the size of the sending.
+- **Queueing**: Another common source of variability is the burstiness of traffic arrival patterns.<sup>[1][^1]</sup> This variability is exacerbated if the OS uses a scheduling algorithm other than FIFO. Linux systems often schedule threads out of order to optimize the overall throughput and maximize utilization of the server. Studies have found that using FIFO scheduling in the OS reduces tail latency at the cost of lowering overall throughput of the system. 
+- **All-to-all incast**: The pattern shown in Figure 8 above is known as all-to-all communication. Since most network communication is over TCP, this leads to thousands of simultaneous requests and responses between the front-end web server and all the back-end processing nodes. This is an extremely bursty pattern of communication and often leads to a special kind of congestion failure known TCP incast collapse.<sup>[1][^1], [2][^2]</sup> The intense sudden response from thousands of servers leads to many dropped and retransmitted packets, eventually causing a network avalanche of traffic for packets of data that are very small. Large datacenters and cloud applications often need to use custom network drivers to dynamically adjust the TCP receiving window and the retransmission timer. Routers may also be configured to drop traffic that exceeds a specific rate and reduce the size of the sending.
 - **Power and temperature management**: Finally, variability is a byproduct of other cost reduction techniques like using idle states or CPU frequency downscaling. A processor may often spend a non-trivial amount of time scaling up from an idle state. Turning off such cost optimizations leads to higher energy usage and costs, but lower variability. This is less of a problem in the public cloud, as pricing models rarely consider internal utilization metrics of the customer's resources. 
 
-Experiments conducted on AWS EC2 instances have found that the variability of such systems is much worse on the public cloud, typically due to imperfect performance isolation of virtual resources and the shared processor. This is exacerbated if many latency-sensitive jobs are executed on the same physical node as CPU-intensive jobs. 
+Experiments conducted on AWS EC2 instances have found that the variability of such systems is much worse on the public cloud,<sup>[3][^3]</sup>  typically due to imperfect performance isolation of virtual resources and the shared processor. This is exacerbated if many latency-sensitive jobs are executed on the same physical node as CPU-intensive jobs. 
 
 ## Living with variability: Engineering solutions
 
@@ -65,10 +65,16 @@ Using these techniques, it's possible to significantly improve the experience of
 ***
 ### References
 
-1. _Li, J., Sharma, N. K., Ports, D. R., & Gribble, S. D. (2014). [Tales of the Tail: Hardware, OS, and Application-Level Sources of Tail Latency](https://pdfs.semanticscholar.org/dede/f157ad3b5b4df21a6515b1b70ed8ad698422.pdf). From the Proceedings of the ACM Symposium on Cloud Computing ACM_
-2. _Wu, Haitao and Feng, Zhenqian and Guo, Chuanxiong and Zhang, Yongguang (2013). [ICTCP: Incast Congestion Control for TCP in Data-Center Networks](https://conferences.sigcomm.org/co-next/2010/CoNEXT_papers/13-Wu.pdf) IEEE/ACM Transactions on Networking (TON)  IEEE Press_
-3. _Xu, Yunjing and Musgrave, Zachary and Noble, Brian and Bailey, Michael (2013). [Bobtail: Avoiding Long Tails in the Cloud](https://www.usenix.org/system/files/conference/nsdi13/nsdi13-final77.pdf). 10th USENIX Conference on Networked Systems Design and Implementation  USENIX Association_
-4. _Dean, Jeffrey and Barroso, Luiz Andr{\'e} (2013). [The tail at scale](https://cseweb.ucsd.edu/~gmporter/classes/fa17/cse124/post/schedule/p74-dean.pdf) Communications of the ACM  ACM_
-5. _Tene, Gil (2014). [Understanding Latency - Some Key Lessons and Tools](https://www.azul.com/presentation/understanding-latency-pitfalls-lessons-and-tools/). QCon London_
+1. _Li, J., Sharma, N. K., Ports, D. R., & Gribble, S. D. (2014). [Tales of the Tail: Hardware, OS, and Application-Level Sources of Tail Latency](https://pdfs.semanticscholar.org/dede/f157ad3b5b4df21a6515b1b70ed8ad698422.pdf) from the Proceedings of the ACM Symposium on Cloud Computing, ACM_
+2. _Wu, Haitao and Feng, Zhenqian and Guo, Chuanxiong and Zhang, Yongguang (2013). [ICTCP: Incast Congestion Control for TCP in Data-Center Networks](https://conferences.sigcomm.org/co-next/2010/CoNEXT_papers/13-Wu.pdf), IEEE/ACM Transactions on Networking (TON), IEEE Press_
+3. _Xu, Yunjing and Musgrave, Zachary and Noble, Brian and Bailey, Michael (2013). [Bobtail: Avoiding Long Tails in the Cloud](https://www.usenix.org/system/files/conference/nsdi13/nsdi13-final77.pdf), 10th USENIX Conference on Networked Systems Design and Implementation, USENIX Association_
+4. _Dean, Jeffrey and Barroso, Luiz André (2013). [The tail at scale](https://cseweb.ucsd.edu/~gmporter/classes/fa17/cse124/post/schedule/p74-dean.pdf), Communications of the ACM, ACM_
+5. _Tene, Gil (2014). [Understanding Latency - Some Key Lessons and Tools](https://www.azul.com/presentation/understanding-latency-pitfalls-lessons-and-tools/), QCon London_
 
 ***
+
+[^1]: <https://pdfs.semanticscholar.org/dede/f157ad3b5b4df21a6515b1b70ed8ad698422.pdf> "Li, J., Sharma, N. K., Ports, D. R., & Gribble, S. D. (2014). *Tales of the Tail: Hardware, OS, and Application-Level Sources of Tail Latency* from the Proceedings of the ACM Symposium on Cloud Computing, ACM"
+[^2]: <https://conferences.sigcomm.org/co-next/2010/CoNEXT_papers/13-Wu.pdf> "Wu, Haitao and Feng, Zhenqian and Guo, Chuanxiong and Zhang, Yongguang (2013). *ICTCP: Incast Congestion Control for TCP in Data-Center Networks*, IEEE/ACM Transactions on Networking (TON), IEEE Press"
+[^3]: <https://www.usenix.org/system/files/conference/nsdi13/nsdi13-final77.pdf> "Xu, Yunjing and Musgrave, Zachary and Noble, Brian and Bailey, Michael (2013). *Bobtail: Avoiding Long Tails in the Cloud*, 10th USENIX Conference on Networked Systems Design and Implementation, USENIX Association"
+[^4]: <https://cseweb.ucsd.edu/~gmporter/classes/fa17/cse124/post/schedule/p74-dean.pdf> "Dean, Jeffrey and Barroso, Luiz André (2013). *The tail at scale*, Communications of the ACM, ACM"
+[^5]: <https://www.azul.com/presentation/understanding-latency-pitfalls-lessons-and-tools/)> "Tene, Gil (2014). *Understanding Latency - Some Key Lessons and Tools*, QCon London"
