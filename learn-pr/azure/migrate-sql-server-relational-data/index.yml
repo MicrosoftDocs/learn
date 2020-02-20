@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.migrate-sql-server-relational-data
+metadata:
+  title: Migrate your relational data stored in SQL Server to Azure SQL Database
+  description: Plan and implement the migration of relational data from SQL Server to Azure SQL Database. Select the appropriate migration strategy for your database, and use Azure tools to asses and migrate your data. Perform an assessment using the Data Migration Assistant and migrate a database to Azure SQL.
+  ms.date: 02/21/2020
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Migrate your relational data stored in SQL Server to Azure SQL Database
+summary: Plan and implement the migration of relational data from SQL Server to Azure SQL Database. Select the appropriate migration strategy for your database, and use Azure tools to asses and migrate your data. Perform an assessment using the Data Migration Assistant and migrate a database to Azure SQL.
+abstract: | 
+  In this module, you will:
+  - Select the proper migration strategy for your relational data stored in SQL Server
+  - Perform a migration from SQL Server to a single Azure SQL Database using the migration with downtime process
+prerequisites: | 
+  - Access to an Azure subscription to complete the exercises
+  - Basic knowledge of the T-SQL language
+  - Basic familiarity with relational data, such as tables, rows, and database schema
+  - Basic familiarity with SQL Server administration and configuration
+  - Basic familiarity with Azure SQL Database
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- solution-architect
+- administrator
+products:
+- azure
+- azure-sql-database
+units:
+- learn.migrate-sql-server-relational-data.1-introduction
+- learn.migrate-sql-server-relational-data.2-exercise-environment-setup
+- learn.migrate-sql-server-relational-data.3-migration-overview
+- learn.migrate-sql-server-relational-data.4-exercise-assess-database
+- learn.migrate-sql-server-relational-data.5-migration-with-downtime
+- learn.migrate-sql-server-relational-data.6-exercise-migrate-database-assistant
+- learn.migrate-sql-server-relational-data.7-exercise-migrate-database-service
+- learn.migrate-sql-server-relational-data.8-summary
+badge:
+  uid: learn.migrate-sql-server-relational-data.badge
