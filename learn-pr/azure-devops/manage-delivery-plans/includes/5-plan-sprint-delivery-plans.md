@@ -1,124 +1,75 @@
-*Placeholder content copied from Agile module*
+Here you'll create a delivery plan and use it to plan a sprint in Azure DevOps.
 
-Here you'll create a project, a team, and a board in Azure DevOps.
+The Tailspin team is eager to see how the Delivery Plans extension is going to work. They already have two teams with sprints set up in Azure DevOps, so now they can review and optimize the work schedules.
 
-The Tailspin team is eager to see how Azure Boards is going to work. With the pre-planning out of the way, they can start to use the tools and build the solution they planned.
+To do this, you:
 
-## Set up Azure Boards using the Basic process
+> [!div class="checklist"]
+> * Install the Delivery Plans extension.
+> * Create a delivery plan.
+> * Add team sprints and milestones.
+> * Rearrange work items to fit the overall schedule.
 
-In this part, you'll set up an Azure DevOps project and Azure Boards for the Tailspin team.
+## Install the Marketplace extension
 
-### Create the project
+The Delivery Plans Marketplace extension provides the features needed to create and manage delivery plans. It integrates with Azure Boards to provide a seamless experience when planning work.
 
-Here you'll create an Azure DevOps project.
+1.	From a new browser tab, go to [marketplace.visualstudio.com](https://marketplace.visualstudio.com).
+1.	On the **Azure DevOps** tab, search for "Delivery Plans."
+1.	Select **Delivery Plans** from the results.
 
-1. Sign into your account at [dev.azure.com](https://dev.azure.com).
-1. Select **+ Create project**.
+	![The Delivery Plans Marketplace extension](../media/5-delivery-plans-extension.png)
 
-    The **Create a project** dialog box opens.
-1. In the **Project name** field, type **Space Game - web**.
-1. In the **Description** field, type **The Space Game website**.
-1. Under **Visibility**, you choose whether to make your project public or private. For now, you can choose private.
+1.	Select it and then **Get it Free**.
+1.	Select your Azure DevOps organization from the drop-down box.
+1.	Select **Install**.
 
-    Creators of open source projects will often choose public visibility so that others can view active issues and build status.
-1. Select **Advanced**.
-1. Under **Version control**, make sure that **Git** is selected. Under **Work item process**, make sure that **Basic** is selected.
+## Create a delivery plan
+
+Delivery Plans adds a new Plans tab to Azure Boards. You can create as many delivery plans as you need to manage different aspects of your organization.
+
+1. From Azure DevOps, navigate to your project.
+1. Under **Boards**, select **Plans**.
+1. Select **New plan**.
+1. In the form, enter these fields:
+	* **Name**: **Space Game Delivery Plan**
+	* Select the **Issues** backlog for the **Space Game Web Team**
+	* Add the **Space Game Engine Team's Issues** backlog using the **Add team** option
 1. Select **Create**.
 
-After just a few moments, you're taken to your new project.
+	![Creating a delivery plan](../media/5-create-delivery-plan.png)
 
-### Create a team
+### Add schedule milestone markers
 
-Here you'll create a team for the project.
+Milestone markers can be added to the delivery plan as reference points. These help you plan work within the context of significant or external dates.
 
-1. Select **Project settings** in the lower-left corner.
-1. On the **Project details** page, under **General**, select **Teams**.
+1. Select the Configure plan settings cog.
 
-    You see that a default team, based on the name of the project, **Space Game - web Team**, has been created. We'll use this team, but in practice you may have multiple teams that contribute to the same project.
+	![Configure plan settings](../media/5-configure-plan-settings.png)
 
-1. Select **Space Game - web Team**.
+1. From the **Markers** tab, select **Add marker**.
+1. In the form, enter these fields:
+	* Select a date one week from now
+	* **Label**: **Cliffchella**
+	* **Color**: **Red**
 
-    You'll see that you're already a member of this team. Let's add more members.
+	![Add a milestone marker](../media/5-add-marker.png)
 
-### Add team members
+1. Repeat the process to add markers for:
+	* **Beta**: six weeks from today (blue)
+	* **Annual company party**: seven weeks from today (green)
+1. Select **Save**.
 
-Now's a good time to add members to your team. Although not required, if you'd like to add a coworker to your Azure DevOps organization, here's how:
+1. Click the blue marker at the top of the design plan. It will expand to show that it represents the beta milestone. 
 
-1. Under **Members**, select **+ Add**.
-1. Enter the email address of the user you'd like to add. Then select **Save changes**.
-1. Repeat the process for any other members you'd like to add.
+	![Analyze delivery plan milestones](../media/5-analyze-milestones.png)
 
-Mara adds entries for herself and her team members: "andy@tailspintoys.com", "amita@tailspintoys.com", "mara@tailspintoys.com", and "tim@tailspintoys.com".
+### Optimize the work schedule
 
-In practice, you might manage your team through an identity and access management service such as Azure Active Directory and set the appropriate permission levels for each team member. We'll point you to more resources at the end of this module.
+1. Notice that there is a work item for the Web team to **Integrate with beta DB** that is scheduled to be completed before the beta will be ready. This will be a problem because this work item is dependent on that beta.
+1. Drag the integration work item from **Sprint 3** to **Sprint 4** to ensure that its dependency will be available.
+1. This change opens a significant amount of bandwidth in **Sprint 3**. Since that time is now available for productive work, drag the two **Fix** work items from **Sprint 4** back into **Sprint 3**.
 
-### Create the board
+	![An optimized work schedule](../media/5-optimized-work-schedule.png)
 
-Although Mara and her team identified a number of issues, here you'll add the three work items Mara originally proposed to your board to practice the process.
-
-1. In the column on the left, point to **Boards** and select **Boards** from the menu that appears.
-1. Select **Space Game - web Team boards**. A blank board appears.
-
-    ![Azure Boards showing an initially empty board.](../media/3-blank-board.png)
-
-    Recall that you're using the Basic process. The Basic process involves three task states: **To Do**, **Doing**, and **Done**.
-
-    If you choose a different process, such as Scrum, you'll see a layout that supports that process.
-
-1. In the **To Do** column, select the green **+** button next to the **New item** field.
-1. Enter **Stabilize the build server** and then press <kbd>Enter</kbd>.
-1. Select the ellipsis (**...**), and then select **Open**.
-1. In the **Description** field, enter this text:
-
-    > The build server keeps falling over. The OS, Ubuntu 16.04, requires security patches and updates. It's also a challenge to keep build tools and other software up to date.
-
-1. Select **Save & Close**.
-1. Follow the same steps for the next two items.
-
-    | Title                       | Description                                                      |
-    |-----------------------------|------------------------------------------------------------------|
-    | Create a Git-based workflow | Migrate source code to GitHub and define how we'll collaborate.  |
-    | Create unit tests           | Add unit tests to the project to help minimize regression bugs.  |
-
-1. Drag **Stabilize the build server** to the top of the stack. Then, drag **Create a Git-based workflow** to the second item position. Your final board looks like this.
-
-    ![Azure Boards showing the initial three tasks](../../shared/media/build-initial-tasks.png)
-
-### Define a sprint
-
-**Mara:** This is looking great. Now let's define a sprint.
-
-When you create an Azure Boards project, you get an initial sprint called **Sprint 1**. All you need to do is assign dates to the sprint and add tasks. Here's how to follow along with the team:
-
-1. In the left-side column, select **Sprints**.
-
-    ![Azure DevOps showing the location of the Sprints menu](../media/4-boards-sprints-menu.png)
-
-1. Select **Set dates** from the upper right.
-1. Leave the name as **Sprint 1**.
-1. In the **Start** date field, select the calendar and pick today's date.
-1. In the **End** date field, select the calendar and pick the date two weeks from today.
-1. Select **Save and Close**.
-
-### Assign tasks and set the iteration
-
-An _iteration_ is another name for a sprint.
-
-You have an initial set of work items and a timeline for your first sprint. Here you'll connect work items to your sprint and assign the tasks to yourself.
-
-1. Under **Boards**, select **Work items**.
-1. Select **Stabilize the build server**.
-1. In the **Iteration** drop-down list, select **Sprint 1**.
-
-    ![Assigning an iteration to a Sprint](../media/3-assign-sprint.png)
-1. From the same window, select **Unassigned** and set yourself as the task owner.
-
-    ![Assigning the task owner](../media/3-assign-owner.png)
-1. Repeat the process for the other two work items.
-
-    * **Create a Git-based workflow**
-    * **Create unit tests**
-
-**Mara:** We did it! We created our first project on Azure Boards and we identified the first tasks we'll take on. It's great! As Andy and I do this work, we'll move each work item to the **Doing** state.
-
-**Amita:** Sounds good. I enjoyed getting together and deciding what's important to us right now. And, like Andy said, now we have a way to see everything all in one place.
+You've just completed some invaluable work that will impact the organization in a meaningful way. Management can feel confident that work will progress without foreseeable delays. And instead of waiting on dependencies to be delivered, teams will have always productive work to take on. Sure, things might change as circumstances develop, but at least now everyone knows where to go to stay up to date.

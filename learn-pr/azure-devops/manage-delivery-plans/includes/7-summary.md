@@ -1,11 +1,9 @@
-*Placeholder content copied from Agile module*
+In this module, the Tailspin team took on some common organizational challenges around software delivery and adapted their process to better handle them. Some of the things you learned to do with Azure DevOps include how to:
 
-In this module, the Tailspin team took their first steps towards adopting DevOps practices. You worked with them and learned how to use Azure Boards to get started with Agile work planning. A board gives you an easy way to see what's going on with a project and to manage your work. Some of the things you learned to do with Azure Boards include how to:
-
-* Create projects
-* Create work items
-* Assign work items to team members
-* Associate work items with a sprint, or iteration
+* Install the Delivery Plans extension
+* Create a delivery plan
+* Add team sprints and milestones to a delivery plan
+* Rearrange work items to fit the overall schedule
 
 ## Learning path summary
 
@@ -14,6 +12,7 @@ Congratulations. You've completed the final module in the _Evolve your DevOps pr
 * Saw how a value stream map can help you examine your existing processes and technologies.
 * Saw what DevOps is (and isn't) and created an Azure DevOps organization.
 * Learned how Azure Boards helps teams plan the work that needs to be done. You used the Basic process to set up a basic backlog of tasks you'll work on in upcoming modules.
+* Learned how to optimize sprint workloads across multiple Agile teams.
 
 ## Continue the journey
 
@@ -23,17 +22,6 @@ For more self-paced, hands-on learning around Azure DevOps, also check out [Azur
 
 ## Learn more
 
-This module touches on Agile and Agile processes but there's a lot more to learn.
+This module focused on how delivery plans can help you manage work schedules across multiple teams. However, there are a lot of things to consider when coordinating projects at scale.
 
-If you're interested in learning more about the benefits of Agile, check out [What is Agile Development?](https://docs.microsoft.com/azure/devops/learn/agile/what-is-agile-development?azure-portal=true)
-
-In this module, you followed the Basic process. You'll continue using this process in upcoming modules. For your own projects, learn how to [choose a process](https://docs.microsoft.com/azure/devops/boards/work-items/guidance/choose-process?view=azure-devops&azure-portal=true) that best fits your team. You can also learn more about each process Azure Boards supports.
-
-* [Basic process](https://docs.microsoft.com/azure/devops/boards/get-started/track-issues-tasks?view=azure-devops&azure-portal=true)
-* [Agile process](https://docs.microsoft.com/azure/devops/boards/work-items/guidance/agile-process?view=azure-devops&azure-portal=true)
-* [Scrum process](https://docs.microsoft.com/azure/devops/boards/work-items/guidance/scrum-process?view=azure-devops&azure-portal=true)
-* [CMMI process](https://docs.microsoft.com/azure/devops/boards/work-items/guidance/cmmi-process?view=azure-devops&azure-portal=true)
-
-Also in this module, you added fictitious team members to your project. Learn more about how to [add users to your organization or project](https://docs.microsoft.com/azure/devops/organizations/accounts/add-organization-users?view=azure-devops&azure-portal=true).
-
-As you plan and track your work with Azure Boards, you can refer to our complete [Azure Boards Documentation](https://docs.microsoft.com/azure/devops/boards/?view=azure-devops&azure-portal=true) to get the most out of them.
+To learn more about some of the other features Azure DevOps provides for scaling your team projects, such as team hierarchies, project portfolio management, and dashboards, please see [Plans (Agile at scale)](https://docs.microsoft.com/en-us/azure/devops/boards/plans/?view=azure-devops).
