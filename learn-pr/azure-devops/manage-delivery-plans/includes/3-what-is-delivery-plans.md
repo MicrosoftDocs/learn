@@ -14,6 +14,7 @@ Mara installed Delivery Plans on the team's Azure DevOps account. She then creat
 
 **Andy:** This is great! Now we know when something we're dependent on won't be available in time. We can even gauge the likelihood of delay based on how much other work and dependencies those teams have taken on. This should help mitigate some of the "schedule chicken" shenanigans that sometimes go on around here.
 
+> [!NOTE]
 > Schedule chicken is when two or more teams are at risk of not meeting deadlines, but none of them want to admit it. Instead, each wait for another to slip their schedule first and then use the other team's slip as a pretext for delaying their own delivery. Learn more in [the Wikipedia article](https://en.wikipedia.org/wiki/Schedule_chicken).
 
 **Mara:** Yes, and we can also use this as an opportunity to let other teams know if we're going to slip something they're dependent on. It will help us build trust in our people and processes.

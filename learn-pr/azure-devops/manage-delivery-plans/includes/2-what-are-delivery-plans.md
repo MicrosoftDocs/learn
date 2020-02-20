@@ -1,4 +1,4 @@
-As development teams grow, they need to reorganize into smaller teams that can efficiently manage smaller units of work. These teams will usually have their own work schedules, boards, and other processes that meet their unique needs within the context of the larger goals of the organization. Over time, organizations may find that they enjoy network benefits by consolidating their processes around a consistent framework.
+As development organizations grow, they need to reorganize into smaller teams that can efficiently manage portioned units of work. These teams will usually have their own work schedules, boards, and other processes that meet their unique needs within the context of the larger goals of the organization. Over time, organizations may find that they enjoy network benefits by consolidating their processes around a consistent framework.
 
 A _delivery plan_ is a visualization of one or more work schedules. It is intended to provide teams and management an overall view of what each team is planning to produce and when. This allows decisions to be made that optimize the investments across the organization.
 
@@ -19,35 +19,35 @@ Andy navigates to the game engine's current sprint board. He and Mara review the
 
 **Andy:** Hmm...I just noticed that they're not planning to deploy their beta by the end of this sprint. Aren't we expecting to integrate our leaderboard with the beta database during our next sprint? We can't do that if they don't ship the beta first.
 
-**Mara:** That's a good point. We have a dependency on that team to produce that artifact so that we can deliver one of our own.
+**Mara:** That's a good point. We have a dependency on that team to produce that deliverable so that we can produce one of our own.
 
 **Andy:** This could have really hurt our productivity next sprint. I'm going to give them a call to find out what's going on.
 
-Unfortunately, more sophisticated team structures can result in gaps or lags in communication. When one team is blocked, they might not be able to produce something another team is dependent on. This might not be a major issue for a small group of teams that have daily meetings for all concerned. However, as teams scale in size and location, it can become untenable for everyone to know everything going on everywhere. It's at this point where organizations need to transition from a pure "push" model (like in-person or email announcements) to a "pull" model (where teams can review each other's schedules).
+Unfortunately, more sophisticated team structures can result in gaps or lags in communication. When one team is blocked, they might not be able to produce something another team is dependent on. This might not be a major issue for a small group of teams that have daily meetings for all concerned. However, as teams scale in size and location, it can become untenable for everyone to know everything going on everywhere. It's at this point where organizations need to transition from a pure "push" model (like in-person or email announcements) to a "pull" model (where teams can review and track each other's schedules).
 
 **Andy:** Okay, I just spoke with the dev lead. She told me that their team is blocked on shipping the beta until the art team returns from Cliffchella.
 
 **Mara:** The mountaintop music festival?
 
-**Andy:** Yeah, apparently it's a huge deal in the design community and their entire team just drops off the grid for a whole week to attend. The game team is pretty upset because it slipped their schedule by three weeks. Had they known it was coming, they would have made sure to get the artifacts they needed ahead of time. They also apologized for not letting us know sooner. They didn't realize we would be waiting on their beta to ship our bits.
+**Andy:** Yeah, apparently it's a huge deal in the design community and their entire team just drops off the grid for a whole week to attend. The game engine team is pretty upset because it slipped their schedule by three weeks. Had they known it was coming, they would have made sure to get the artifacts they needed ahead of time. They also apologized for not letting us know sooner. They didn't realize we would be waiting on their beta to ship our bits.
 
-**Mara:** Well at least we can be glad the game team has published their sprint plans. It helped us find this dependency issue early enough to adjust our schedule. 
+**Mara:** Well at least we can be glad that the game engine team is publishing their sprint plans. It helped us find this dependency issue early enough to adjust our schedule. 
 
-**Andy:** I just wish there was a way to see these issues coming more easily. Our teams have so many dependencies across the company that there's no way we can attend every meeting and subscribe to every distribution group.
+**Andy:** I just wish there was a way to see these potential risks coming more easily. Our teams have so many dependencies across the company that there's no way we can attend every meeting and subscribe to every distribution group.
 
 **Mara:** We should create a delivery plan so that we can see our team sprints side-by-side. This will help both teams more easily identify how our schedules impact each other. And I know the perfect Azure DevOps extension for the job.
 
 ## Recommendations for managing multiple Agile teams
 
-An Agile approach, along with Azure DevOps, can substantially improve project transparency and predictability. However, projects may still into traditional challenges, often related to personnel and/or miscommunication.
+An Agile approach, along with Azure DevOps, can substantially improve project transparency and predictability. However, projects may still into traditional challenges, often related to personnel and/or miscommunication. Here are a few things to consider as you scale your Agile efforts.
 
 ### Build trust in your people and processes
 
-Early detractors to Agile methodologies are often skeptical about their ability to improve team performance. It's important for thought leaders within the organization to build trust by illustrating how the tools and processes produce results. Sometimes these results are improvements in productivity, and those are easy to quantify. However, don't forget to highlight the team wins that occur by circumventing potential problems, such as avoidable schedule slips or quality issues. As people begin to associate the benefits with the process that achieved them, you will get more enthusiasm.
+Early detractors from Agile implementations are often skeptical about their ability to improve team performance. It's important for thought leaders within the organization to build trust by illustrating how the tools and processes produce results. Sometimes these results are improvements in productivity, and those are easy to quantify. However, don't forget to highlight the team wins that occur by circumventing potential problems, such as avoidable schedule slips or quality issues. As people begin to associate the benefits with the process that achieved them, you will get more enthusiasm.
 
 ### Elevate the organization above the team (and individual)
 
-Some teams and individuals get territorial when new processes or policies are proposed. Rather than framing new policies as negatively exposing the performance of specific teams or individuals, highlight how the new transparency across the organization informs everyone of expectations. Having a single place where anyone can trace how their work relates to the organization meeting its goals will drive home the importance of their commitments.
+Some teams and individuals get territorial when new processes or policies are proposed. Rather than framing new policies as negatively exposing the performance of specific teams or individuals, highlight how the new transparency across the organization informs everyone of expectations. Having a single place where anyone can trace how their work relates to the organization meeting its goals will drive home the importance of their commitment to the process.
 
 ### Foster a culture of transparency
 
