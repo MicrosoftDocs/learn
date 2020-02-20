@@ -18,7 +18,7 @@ abstract: |
   - Compare and contrast proactive and reactive measures for fault tolerance in cloud applications
   - Describe the importance of load balancing in cloud applications and enumerate various methods to achieve it
   - Enumerate the strategies and considerations in scaling cloud applications
-  - Motivate the case for minimzing tail latency and discuss the various strategies to reduce tail latency
+  - Motivate the case for minimizing tail latency and discuss the various strategies to reduce tail latency
   - Describe the strategies to optimize total operational cost of using cloud services
   
   In partnership with Dr. Majd Sakr and Carnegie Mellon University.
