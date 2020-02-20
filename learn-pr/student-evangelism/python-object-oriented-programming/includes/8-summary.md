@@ -1,6 +1,6 @@
-In this module, you learned the essential concepts underlying object-oriented programming in Python. 
+In this module, you learned the essential concepts that underly OOP in Python:
 
-- You learned that objects are instances of classes and that all variables are objects in Python.
+- You learned that objects are instances of classes, and that all variables are objects in Python.
 - You learned how to write classes of your own and infuse them with methods and attributes.
 - You learned how to instantiate those classes, and how to create classes that inherit from others.
 - You even learned how to override methods in subclasses.
