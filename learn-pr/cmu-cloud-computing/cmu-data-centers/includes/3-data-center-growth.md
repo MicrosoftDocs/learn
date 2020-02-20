@@ -24,7 +24,7 @@ _Figure 18: Trends in power density_
 
 ## Datacenter efficiency
 
-Information and communications technology (ICT) now accounts for approximately 2% of the global carbon footprint. Within that amount, datacenters currently account for approximately 15% (or 0.3% of total global emissions). With the proliferation of ICT worldwide, as more people gain access, the energy footprint of ICT is set to grow considerably for the foreseeable future.
+Information and communications technology (ICT) now accounts for approximately 2% of the global carbon footprint.<sup>[1][^1]</sup> Within that amount, datacenters currently account for approximately 15% (or 0.3% of total global emissions). With the proliferation of ICT worldwide, as more people gain access, the energy footprint of ICT is set to grow considerably for the foreseeable future.
 
 Over the past decade or so, there has been an increased focus on "green" IT, or power-efficient computing. Later in this module, we discuss various methods available in the industry to reduce power consumption and carbon footprint.
 
@@ -71,3 +71,5 @@ Techniques to calculate and improve power efficiency in datacenters are covered 
 1. _GeSI (2008). [SMART 2020: Enabling the low-carbon economy in the information age Global e-Sustainability Initiative Report](https://www.theclimategroup.org/sites/default/files/archive/files/Smart2020Report.pdf)_
 
 ***
+
+[^1]: <https://www.theclimategroup.org/sites/default/files/archive/files/Smart2020Report.pdf> "GeSI (2008). *SMART 2020: Enabling the low-carbon economy in the information age Global e-Sustainability Initiative Report*"

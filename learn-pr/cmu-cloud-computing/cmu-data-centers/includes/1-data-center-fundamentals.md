@@ -11,7 +11,7 @@ Effective use of cloud resources and development of large-scale, dynamic applica
 
 ## Why study datacenters?
 
-If you think of the cloud as a massive computer, you can still break it down into its constituent parts—processors, memory, and switch. When you are programming for the cloud, you are writing programs that solve a problem or provide a service but with the ability to scale.
+If you think of the cloud as a massive computer,<sup>[1][^1]</sup> you can still break it down into its constituent parts—processors, memory, and switch.<sup>[2][^2]</sup> When you are programming for the cloud, you are writing programs that solve a problem or provide a service but with the ability to scale.
 
 A few decades ago, to be a computer **user** meant to be a **programmer**. Early programmers knew the instruction set architecture (ISA) well and, because hardware resources were scarce, had to optimize in assembly language. With the advent of high-level languages, such as C/C++, Java, and Python, why do students still have to learn computer organization, caching, and assembly language? When you know what the compiler is doing for you, it makes you a better programmer because you understand what is going on behind the scenes. Similarly, you become better at debugging.
 
@@ -24,3 +24,6 @@ Most of you will never go on to design and build your own large-scale datacenter
 
 1. _Barroso, Luiz André, and Urs Hölzle (2009). [The datacenter as a computer: An introduction to the design of warehouse-scale machines Synthesis Lectures on Computer Architecture - PDF](https://www.morganclaypool.com/doi/pdf/10.2200/S00874ED3V01Y201809CAC046)_
 2. _Gordon Bell and Allen Newell (1970). [The PMS and ISP descriptive systems for computer structures Joint Computer Conference - PDF](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.140.9098&rep=rep1&type=pdf)_
+
+[^1]: <https://www.morganclaypool.com/doi/pdf/10.2200/S00874ED3V01Y201809CAC046)> "Barroso, Luiz André, and Urs Hölzle (2009). *The datacenter as a computer: An introduction to the design of warehouse-scale machines Synthesis Lectures on Computer Architecture - PDF*"
+[^2]: <http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.140.9098&rep=rep1&type=pdf> "Gordon Bell and Allen Newell (1970). *The PMS and ISP descriptive systems for computer structures Joint Computer Conference - PDF*"
