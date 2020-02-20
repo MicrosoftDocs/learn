@@ -26,6 +26,6 @@ Because of this, it is a recommended best practice to first test using the offli
 
 ## Migration exercises
 
-In the next two exercises you'll begin the migration process for your company's social database. In the first, you'll use the Azure Data Migration Assistant to analyze the database for any inconsistencies, repair them, and finally migrate the database schema to our target Azure SQL Database service.
+In the next two exercises, you'll begin the migration process for your company's social database. In the first, you'll use the Azure Data Migration Assistant to analyze the database for any inconsistencies, repair them, and finally migrate the database schema to our target Azure SQL Database service.
 
 In the second exercise, you'll use the Azure Data Migration Service to move the data from your social database to its new home in Azure SQL Database.

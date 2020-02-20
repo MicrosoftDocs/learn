@@ -4,7 +4,7 @@ In this exercise, you will migrate the data in your database using the Azure Dat
 
 1. Open the [Azure portal](https://portal.azure.com?azure-portal=true) in a new tab, then select **+ Create a resource**.
 
-1. In the **Search the Marketplace** box search for **Azure Database Migration Service** and select **Create**.
+1. In the **Search the Marketplace** box, search for **Azure Database Migration Service** and select **Create**.
 
 1. In the basics tab, configure the following values:
 
@@ -98,7 +98,7 @@ Once the service has been created, you will create a project to migrate the data
 
 1. Select **Run migration** to start the migration.
 
-1. A new pane will appear showing the status of the migration. Select the **Refresh** button at the top to update the status until it shows the process is complete.
+1. A new pane will appear with the status of the migration. Select the **Refresh** button at the top to update the status until it shows the process is complete.
 
     ![Run Migration](../media/7-13-completed.png)
 

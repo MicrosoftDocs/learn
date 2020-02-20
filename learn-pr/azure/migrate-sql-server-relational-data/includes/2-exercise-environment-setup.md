@@ -24,7 +24,7 @@ This deployment will create the following resources:
     | **BASICS** | |
     | Subscription | Select the Azure subscription you would like to use |
     | Resource group | Select **Create new**, enter **admsdemorg**, and select **OK**. |
-    | Location | Select a [location that supports the Azure Database Migration Servivce](https://azure.microsoft.com/global-infrastructure/services/?products=database-migration&regions=all&azure-portal=true) |
+    | Location | Select a [location that supports the Azure Database Migration Service](https://azure.microsoft.com/global-infrastructure/services/?products=database-migration&regions=all&azure-portal=true) |
     | **SETTINGS** | |
     | Source Windows Admin User Name | windowsadmin |
     | Source Windows Admin Password | Enter a complex password |

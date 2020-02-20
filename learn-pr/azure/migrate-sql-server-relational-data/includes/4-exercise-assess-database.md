@@ -50,7 +50,7 @@ Before you can download the Data Migration Assistant, you will need to disable I
 
 1. On the **Select report type** pane, ensure both **Check database compatibility** and **Check feature parity** are selected, then select **Next**.
 
-1. Next, you will configure the source database to connect to.In the **Connect to a server** pane, configure the following settings:
+1. Next, you will configure the source database to connect to. In the **Connect to a server** pane, configure the following settings:
 
     | | |
     |---------|---------|
@@ -72,11 +72,11 @@ Before you can download the Data Migration Assistant, you will need to disable I
 
 ## Review the assessment results and address issues
 
-Allow the analysis to run. When it completes, it will produce results and break them into SQL Server *feature parity* issues or *compatibility issues*. Start by looking at the SQL Server feature parity results, which is the default.
+Allow the analysis to run. When it completes, it will produce results and break them into SQL Server *feature parity* issues or *compatibility issues*. Start by looking at the SQL Server feature parity results, which are the default.
 
   ![Review results](../media/4-07-review-results.png)
 
-In the middle of the page you will see the section **Unsupported features**. The second and third items show **N/A** under the impacted objects, meaning nothing was found in the source system for these two items.
+In the middle of the page, you will see the section **Unsupported features**. The second and third items show **N/A** under the impacted objects, meaning nothing was found in the source system for these two items.
 
 Look closer at the first row, though, and you will see that **Service Broker feature is not supported in Azure SQL Database**. It includes instructions on how to solve this. The database you are migrating doesn't need this feature, so you can disable it without any problems.
 
@@ -96,7 +96,7 @@ Select **Compatibility issues**. It will show that there were no compatibility i
 
 ## Rerun the assessment
 
-1. Switch back to the Data Migration Assistant. Select **Restart Assessment** to have the Data Migration Assistant re-assess the fixed database.
+1. Switch back to the Data Migration Assistant. Select **Restart Assessment** to have the Data Migration Assistant reassess the fixed database.
 
 1. When it completes, you should still be on the **Compatibility Issues** page, and it should still show there are none.
 
@@ -104,4 +104,4 @@ Select **Compatibility issues**. It will show that there were no compatibility i
 
     ![Fixed Issues](../media/4-09-fixed-issues.png)
 
-At this point you have completed the assessment. Select the left arrow in the upper left side of the screen to return to the list of completed assessments.
+At this point, you have completed the assessment. Select the left arrow in the upper left side of the screen to return to the list of completed assessments.

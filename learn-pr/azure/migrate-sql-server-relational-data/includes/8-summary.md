@@ -8,7 +8,7 @@ Data migration was also made easy thanks to the Azure Data Migration Service. In
 
 Be sure to delete the resources you created during this lesson to avoid any unwanted costs. 
 
-1. Open the [Azure Portal](https://portal.azure.com?azure-portal=true)
+1. Open the [Azure portal](https://portal.azure.com?azure-portal=true)
 
 1. Select **Resource Groups**.
 

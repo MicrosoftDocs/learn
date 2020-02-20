@@ -20,7 +20,7 @@ In this exercise, you'll create a migration project using the Azure Data Migrati
 
 1. In the **Connect to source server** area, enter **admsdemovm** for the source server. Leave the other settings at their default values and select **Connect**.
 
-1. Once connected, you will see a list of databases. In the list, you are allowed to select only one database to migrate. In this case you have only one, **Social**, and it is already checked.
+1. Once connected, you will see a list of databases. In the list, you are allowed to select only one database to migrate. In this case, you have only the **Social** database.
 
     ![Source Server](../media/6-02-source-server.png)
 
@@ -40,13 +40,13 @@ In this exercise, you'll create a migration project using the Azure Data Migrati
 
     ![Select Target](../media/06-azure-sql-server-copy.png)
 
-1. For **Authentication type** select **SQL Server Authentication**.
+1. For **Authentication type**, select **SQL Server Authentication**.
 
 1. Enter **azuresqladmin** into the username field and enter the password you specified for this account.
 
 1. Select **Connect**.
 
-1. The screen now updates to show a list of databases on the target server. From here you can select a database that will be the target of the migration.
+1. The screen now updates to show a list of databases on the target server. From here, you can select a database that will be the target of the migration.
 
 1. You should see the **Social** database you created during the setup exercise, and it should be selected by default. Select **Next** to proceed to the next step.
 
