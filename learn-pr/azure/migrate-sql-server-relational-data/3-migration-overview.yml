@@ -1,0 +1,38 @@
+### YamlMime:ModuleUnit
+uid: learn.migrate-sql-server-relational-data.3-migration-overview
+metadata:
+  title: Migration process overview
+  description: Migration process overview
+  ms.date: 02/21/2020
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Migration process overview
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-migration-overview.md)]
+quiz:
+  questions:
+    - content: Why is the post-migration stage an important part of a successful migration plan?
+      choices:
+      - content: "Data accuracy and performance"
+        isCorrect: true
+        explanation: "In the post-migration phase, you will validate that your data in the new system is accurate and complete, matching the data in the original source system. Additionally, you will be able to assess performance to ensure data is returned in the times outlined in your requirements documentation."
+      - content: "Schema validation"
+        isCorrect: false
+        explanation: "While schema validation is important, it is done in the pre-migration phase."
+      - content: "Sync and cutover"
+        isCorrect: false
+        explanation: "The data syncing and cutover steps are done during the main data migration phase." 
+    - content: What is the correct tool for doing an assessment?
+      choices:
+      - content: "Azure Data Migration Assistant"
+        isCorrect: true
+        explanation: "The Azure Data Migration Assistant will assess your existing database for any compatibility issues with Azure SQL and generate reports with recommended fixes."
+      - content: "Azure Data Studio"
+        isCorrect: false
+        explanation: "Azure Data Studio is used for day to day management of your database. It is not equipped to perform compatibility assessments."
+      - content: "Azure Data Migration Service"
+        isCorrect: false
+        explanation: "While the Azure Data Migration Service will migrate your data, it is not equipped to do assessments."
