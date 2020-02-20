@@ -15,36 +15,36 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "The _Agile Manifesto_ states:"
+  - content: "What is a _delivery plan_?"
     choices:
-    - content: "Processes and tools come before the individuals that use them."
+    - content: "A list of work items scheduled to be completed by a specific date."
       isCorrect: false
-      explanation: "In fact, the opposite is true. The Agile Manifesto states that individuals and their interactions are more valuable than any process or tool."
-    - content: "You need to fully document new features before you build them."
-      isCorrect: false
-      explanation: "Although documentation is an important part of the software development process, having working software is what comes first."
-    - content: "Responding to change comes before following a plan."
+      explanation: "A _sprint_ is a list of work items scheduled to be completed by a specific date. A _delivery plan_ covers a broader scope."
+    - content: "A visualization of one or more work schedules against a calendar backdrop."
       isCorrect: true
-      explanation: "An agile mindset helps you respond to changing market conditions and customer needs, instead of simply following a rigid plan."
-  - content: "Azure Boards is:"
+      explanation: "A _delivery plan_ includes multiple sprints, often across multiple teams, in order to provide an overall deliverable schedule."
+    - content: "A document describing when and how a product will be delivered to the customer."
+      isCorrect: false
+      explanation: "Despite using the term _delivery_, _delivery plans_ are not focused on the logistics of how deliverables will be produced."
+  - content: "Which of the following is not a good reason to use a delivery plan?"
     choices:
-    - content: "A way for your customers to provide feedback."
+    - content: "You need to gauge the likelihood of other teams producing their deliverables on their current schedules based on their commitments."
       isCorrect: false
-      explanation: "Although you can connect Azure Boards to your user feedback mechanism, it's a way for you and your team to plan and track work."
-    - content: "A graphical way to plan and track your work."
+      explanation: "Delivery plans are an effective way to understand how much work a team has committed to within a certain timeframe. This offers a good way to gauge their likelihood to deliver on time."
+    - content: "You need to plan your team's work schedule at least in part based on the work schedules of other teams."
+      isCorrect: false
+      explanation: "Delivery plans can help you understand the schedule risks associated with dependencies you have taken on other teams."
+    - content: "You need to understand how other teams are going to produce their deliverables."
       isCorrect: true
-      explanation: "Azure Boards supports four popular planning types &mdash; CMMI, Agile, Scrum, and Basic."
-    - content: "A way to list all of your projects."
-      isCorrect: false
-      explanation: "Your Azure DevOps organization can have multiple projects. You can set up Azure Boards to plan and track work for each one of them."
-  - content: "A _sprint_ is:"
+      explanation: "Despite using the term _delivery_, _delivery plans_ are not focused on the logistics of how deliverables will be produced."
+  - content: "When is a good time to start using delivery plans?"
     choices:
-    - content: "A fixed amount of time a team has to complete a set of tasks."
+    - content: "You should create a delivery plan before you start planning work sprints."
+      isCorrect: false
+      explanation: "While delivery plans may be useful in planning work from the very beginning, it's never too late to start using them."
+    - content: "You should wait until all work is planned before creating a delivery plan."
+      isCorrect: false
+      explanation: "While delivery plans are very useful for analyzing the planned work schedules of multiple teams, it's never too early to start using them."
+    - content: "Creating a delivery plan can be valuable at any point in a project."
       isCorrect: true
-      explanation: "When you plan your sprints, think about what's most important and what you can realistically accomplish during that time."
-    - content: "Another name for a task board."
-      isCorrect: false
-      explanation: "The board holds the tasks you need to do or are currently working on. A sprint provides a time frame for a set amount of work."
-    - content: "Time your team sets aside to work on bugs."
-      isCorrect: false
-      explanation: "Although you can address bugs during your sprint, a sprint can include almost any sort of work."
+      explanation: "Given how useful delivery plans are in planning and analyzing work schedules across multiple teams, there really is no bad time to start using them."
