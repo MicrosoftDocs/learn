@@ -6,7 +6,7 @@ This exercise is optional. To complete it, you need access to an Azure subscript
 
 ## Set up your environment
 
-1. Sign in to the [Azure portal](<https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true>).
+1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true).
 1. Select **Cloud Shell** from the top right-hand side menu bar.
 1. Select **Bash**.
 1. Run the following command to download the scripts you'll use for this exercise.
@@ -21,7 +21,13 @@ This exercise is optional. To complete it, you need access to an Azure subscript
     cd ~/load-balancer/src/scripts
     ```
 
-1. Run the following command to create a password for accessing the virtual machines created by the scripts. The password is stored in a variable, and also recorded in the text file passwd.txt in case you need it later.
+1. Run the following command to set the user name for the VMs. You can change the user name to something different. You'll need the user name later in this exercise so make a note of what you use.
+
+    ```bash
+    USERNAME=azureuser
+    ```
+
+1. Run the following command to create a password for the virtual machines created by the scripts. The password is stored in a variable, and also recorded in the text file passwd.txt in case you need it later.
 
     ```bash
     export PASSWORD=$(openssl rand -base64 32)
