@@ -1,0 +1,28 @@
+### YamlMime:ModuleUnit
+uid: tm-use-recommended-tools-to-create-a-data-flow-diagram.3-visio
+title: Visio
+metadata:
+  title: Visio
+  description: Learn about Visio
+  ms.date: 02/28/2020
+  author: rodsan
+  ms.author: rodsan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-threat-modeling
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-visio.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What benefit does Visio not provide?"
+    choices:
+    - content: "Provides drag-and-drop functionality with default stencils"
+      isCorrect: false
+      explanation: "It does provide drag-and-drop functionality"
+    - content: "Outputs a list of generated threats to help engineers brainstorm possible ways to reduce or eliminate risk"
+      isCorrect: true
+      explanation: "Visio does not have a threat generation engine"
+    - content: "Allows engineers to annotate their dataflow diagrams to provide service context"
+      isCorrect: false
+      explanation: "It provides annotation capabilities"
