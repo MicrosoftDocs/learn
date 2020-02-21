@@ -15,8 +15,7 @@ Let's start by creating a new Azure Relay namespace.
 
     | Setting | Value |
     | --- | --- |
-    | Name | Use a name that's unique within the *servicebus.windows.net* domain. For example, use 
-    **creditcheckrelay-ab**, replacing *ab* with your initials or another text string. |
+    | Name | Use a name that's unique within the *servicebus.windows.net* domain.<br>For example, use **creditcheckrelay-ab**, replacing *ab* with your initials or another text string. |
     | Subscription | Enter your Concierge subscription. |
     | Resource group | Enter <rgn>[sandbox resource group name]</rgn>. |
     | Location | Choose a location near you. |
@@ -24,20 +23,22 @@ Let's start by creating a new Azure Relay namespace.
 
 Azure creates and deploys the new namespace. This deployment might take several minutes.
 
-## Get the primary connection string and primary key, and store them for later use
+## Get the primary key and primary connection string
 
-Azure Relay helps maintain security by requiring applications to supply an access key when they connect. Get that key now, so you can use it in the app code later in the module.
+Azure Relay helps maintain security by requiring applications to supply an access key when they connect. Get and store that key now, so that you can use it in the app code later in the module.
 
 1. When the namespace deployment is finished, in the left pane, select **All resources**, and then select the relay you created.
 1. Under **Settings**, select **Shared access policies**, and then select the **RootManageSharedAccessKey** policy.
 
     ![Get the access key for the relay](../media/3-obtain-access-key.png)
 
-1. Next to the **Primary Key** box, select **Copy to clipboard**.
-1. In Notepad or another text editor, paste the key.
-1. Next to the **Primary Connection String** box, select **Copy to clipboard**.
-1. In the text editor, paste the connection string on a new line.
-1. Name the text file *AccessKeys.txt*, and save it to a local folder.
+1. To save the primary key and primary connection string, do the following:
+  
+  a. Next to the **Primary Key** box, select the **Copy to clipboard** button.  
+  b. In Notepad or another text editor, paste the key.  
+  c. Next to the **Primary Connection String** box, select the **Copy to clipboard** button.  
+  d. In the text editor, paste the connection string on a new line.  
+  e. Name the text file *AccessKeys.txt*, and save it to a local folder.
 
 ## Create a new hybrid connection in the namespace
 
