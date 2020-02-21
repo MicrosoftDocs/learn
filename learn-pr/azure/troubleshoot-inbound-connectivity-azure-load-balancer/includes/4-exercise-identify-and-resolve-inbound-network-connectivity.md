@@ -35,11 +35,11 @@ This exercise is optional. To complete it, you need access to an Azure subscript
     ```
 1. Set the resource group name.
     ```bash
-    RESOURCEGROUP=learn-ts-loadbalancer-rg
+    export RESOURCEGROUP=learn-ts-loadbalancer-rg
     ```
 1. Set the location. Replace the eastus value with a location near you.
     ```bash
-    LOCATION=eastus
+    export LOCATION=eastus
     ```
     The following list has some location values you can use.
 
@@ -54,34 +54,36 @@ This exercise is optional. To complete it, you need access to an Azure subscript
     bash setup.sh $RESOURCEGROUP
     ```
 
-    This script will take several minutes to run.
+    This script takes up to 25 minutes to run.
 
 ### Check resources created
 
-1. In the menu bar on the left of the Azure portal, select **Resource groups**.
+1. In the Azure portal, search for **Resource groups**.
 1. Select **learn-ts-loadbalancer-rg**.
 
 1. The resource group should contain the following resources:
 
     | Resource Name  | Resource Type  | Description |
     |---|---|---|
-    | **retailappvm1** and **retailappvm2** | virtual machines | VMs running the retail application |
-    | **nicvm1** and **nicvm2** | virtual network cards | Network interfaces for the two VMs |
-    | **retailappvm1_disk1_xxx** and **retailappvm1_disk1_xxx** | virtual hard disks | Disks for the two VMs |
-    | **retailappnicvm1nsg**, and **retailappnicvm2nsg** | network security groups | NSGs that control the traffic entering each VM |
-    | **retailappvnet** | virtual network | Virtual network for the VMs |
-    | **retailappnsg** | network security group | Acts as an initial filter for both virtual machines, but the NSG for each virtual machine provides the ability to filter traffic on a per-machine basis. |
-    | **retailappvmjumpbox** | virtual machine | VM that is also in the virtual network, but has a pubic IP address. An administrator can sign in to this virtual machine to access the **retailappvm1** and **retailappvm2** VMs, which only have private IP addresses. |
-    | **retailapplb** | load balancer | Load balancer for the app running on the VMs. The back-end pool in the load balancer references the **retailappvm1** and **retailappvm2** virtual machines. |
-    | **retailappip** | public IP address | Public IP address that provides front-end access to the load balancer. |
+    | **retailappvm1_disk1_xxx** and **retailappvm1_disk1_xxx** | Disk | Virtual hard disks for the two VMs |
+    | **retailapplb** | Load balancer | Load balancer for the app running on the VMs. The back-end pool in the load balancer references the **retailappvm1** and **retailappvm2** virtual machines. |
+    | **nicvm1** and **nicvm2** | Network interface | Network interfaces for the two VMs |
+    | **retailappnicvm1nsg**, and **retailappnicvm2nsg** | Network security group | NSGs that control the traffic entering each VM |
+    | **retailappnsg** | Network security group | Acts as an initial filter for both virtual machines, but the NSG for each virtual machine provides the ability to filter traffic on a per-machine basis. |
+    | **retailappip** | Public IP address | Public IP address that provides front-end access to the load balancer. |
+    | **retailappvm1** and **retailappvm2** | Virtual machine | VMs running the retail application |
+    | **retailappvmjumpbox** | Virtual machine | VM that is also in the virtual network, but has a pubic IP address. An administrator can sign in to this virtual machine to access the **retailappvm1** and **retailappvm2** VMs, which only have private IP addresses. |
+    | **retailappvnet** | Virtual network | Virtual network for the VMs |
 
-1. Select the **retailapplb** load balancer, and then select **Load balancing rules**.
 
+1. Select the **retailapplb** load balancer.
+1. Under **Settings**, select **Load balancing rules**.
 1. Select **retailapprule**. The load balancer is configured to route traffic that arrives on port 80 at the front-end address to port 80 on machines in the back-end pool.
 
 1. Close the **retailapprule** page.
 
-1. Select **Health probes**, and then select **retailapphealthprobe**. The health probe for the back-end pool also sends messages to port 80 to check that the application is available on each virtual machine.
+1. Under **Settings**, select **Health probes**.
+1. Select **retailapphealthprobe**. The health probe for the back-end pool also sends messages to port 80 to check that the application is available on each virtual machine.
 
 1. Close the **retailapphealthprobe** page.
   
@@ -114,7 +116,9 @@ This exercise is optional. To complete it, you need access to an Azure subscript
     dotnet run <ip address>
     ```
 
-    The application should respond with a series of messages that indicate whether a response was received from *retailappvm1* or *retailappvm2*. Allow the application to run for five minutes. Press Enter to stop the application.
+    The application should respond with a series of messages that indicate whether a response was received from *retailappvm1* or *retailappvm2*.
+    
+1. Allow the application to run for five minutes. Press Enter to stop the application.
 
 ## Create charts to monitor metrics
 
@@ -128,7 +132,7 @@ This exercise is optional. To complete it, you need access to an Azure subscript
 
     | Property  | Value  |
     |---|---|
-    | Resource | retailapplb |
+    | Scope | retailapplb |
     | Metric Namespace | Load balancer standard metrics  |
     | Metric | Packet Count |
     | Aggregation | Avg |
@@ -138,13 +142,13 @@ This exercise is optional. To complete it, you need access to an Azure subscript
     > [!div class="mx-imgBorder"]
     > ![The average packet count while the load balancer is in a healthy state](../media/4-packet-count-healthy.png)
 
-1. Select **Pin to dashboard**, and then select **Pin to current dashboard**.
+1. Select **Pin to dashboard** > **Pin to current dashboard**. If you don't have a dashboard, create a new one.
 
 1. Select **+ New Chart**, and add the following metric:
 
     | Property  | Value  |
     |---|---|
-    | Resource | retailapplb |
+    | Scope | retailapplb |
     | Metric Namespace | Load balancer standard metrics  |
     | Metric | Health Probe Status |
     | Aggregation | Avg |
@@ -153,7 +157,7 @@ This exercise is optional. To complete it, you need access to an Azure subscript
 
     | Property  | Value  |
     |---|---|
-    | Resource | retailapplb |
+    | Scope | retailapplb |
     | Metric Namespace | Load balancer standard metrics  |
     | Metric | Data Path Availability |
     | Aggregation | Avg |
@@ -201,7 +205,7 @@ You now have a baseline set of metrics for the system when it's running correctl
 
 ## Diagnose and fix issues
 
-The first step is to check that the virtual machines are running. We recommend you try to resolve issues one virtual machine at a time. So we'll look at *appretailvm1* first. You'll examine *appretailvm2* later.
+The first step is to check that the virtual machines are running. Let's resolve issues one virtual machine at a time. So let's look at *appretailvm1* first. You'll examine *appretailvm2* later.
 
 ### Test the *appretailvm1* virtual machine
 
@@ -209,13 +213,19 @@ You can't ping the *appretailvm1* or *appretailvm2* virtual machines directly be
 
 1. Return to the Cloud Shell.
 
-1. Run the following commands to find the IP address of the jump box virtual machine:
+1. Run the following commands to get the IP address of the jump box virtual machine:
 
     ```bash
     bash ~/load-balancer/src/scripts/jumpboxip.sh
     ```
 
-1. Sign in to the jump box as the *azureuser* user. When prompted, provide the password that you specified when you ran the initial setup script.
+1. Run the following command to get password that you created when you ran the initial setup script. Copy this password for the next step.
+
+    ```bash
+    echo $PASSWORD
+    ```
+
+1. Sign in to the jump box. Replace "azureuser" if you used a different user name. 
 
     ```bash
     ssh azureuser@<jumpbox ip address>
@@ -253,15 +263,7 @@ You can't ping the *appretailvm1* or *appretailvm2* virtual machines directly be
 
 The *retailappvm1* virtual machine is up, and the application is running on that virtual machine. There must be a problem between the load balancer and the virtual machines in the back-end pool.
 
-1. Return to the Azure portal.
-
-1. In the menu on the left, select **All services**.
-
-1. Search for **Monitor**.
-
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot showing the All Services page in the portal, with Azure Monitor selected](../media/4-search-monitor.png)
-
+1. In the Azure portal, search for **Monitor**.
 1. On the **Monitor - Overview** page, select **Service Health**.
 
     > [!div class="mx-imgBorder"]
