@@ -8,8 +8,8 @@ By the end of this module, you'll identify situations where Azure Relay is helpf
 
 ## Learning objectives
 
-- Describe the features and use cases for Azure Relay
-- Create an application and expose it through Azure Relay
+- Describe the features and use cases for Azure Relay.
+- Create an application and expose it through Azure Relay.
 
 ## Prerequisites
 
