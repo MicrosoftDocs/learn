@@ -1,6 +1,6 @@
 To send and receive messages through Azure Relay, you must understand how to write the necessary code.
 
-Let's suppose you've created the relay for the credit-checking service in Azure Relay. Now, you want to modify your credit-checking service and the clients that call it, so that they send messages through the relay. You need to know how to write this code.
+Let's suppose you've created the relay for the credit-checking service in Azure Relay. Now you want to modify your credit-checking service and the clients that call it, so that they can send messages through the relay. You need to know how to write this code.
 
 In this unit, you'll see how to use classes such as `HybridConnectionListener` and `HttpRequestMessage` to send and respond to messages.
 
@@ -72,7 +72,7 @@ await listener.CloseAsync();
 
 ## Connect a sender to Azure Relay
 
-For the sender, there's no Azure Relay specific object. You can use a standard `HttpRequestMessage` object, as you would when you call any web service.
+For the sender, there's no Azure Relay-specific object. You can use a standard `HttpRequestMessage` object, as you would when you call any web service.
 
 ```c#
 // Store the connection details.
@@ -92,7 +92,7 @@ var request = new HttpRequestMessage()
 };
 ```
 
-To pass the token, add it to the request headers.
+To pass the token, add it to the request headers:
 
 ```c#
 // Create the token from the token provider.
@@ -102,7 +102,7 @@ var token = (await tokenProvider.GetTokenAsync(uri.AbsoluteUri, TimeSpan.FromHou
 request.Headers.Add("ServiceBusAuthorization", token);
 ```
 
-Now you can send a message by using the `SendAsync` method, and obtain a response asynchronously.
+Now you can send a message by using the `SendAsync` method, and obtain a response asynchronously:
 
 ```c#
 // Send the request.
