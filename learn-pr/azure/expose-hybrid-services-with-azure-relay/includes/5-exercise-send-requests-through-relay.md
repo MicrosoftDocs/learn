@@ -1,12 +1,12 @@
-Code in client apps has to connect to, and authenticate with, Azure Relay before they can send and receive messages.
+Code in client apps has to connect to and authenticate with Azure Relay before the apps can send and receive messages.
 
-You've created a relay for your credit-checking service. Now you want to enable your on-premises listener component to connect to the relay, so it can receive requests and send responses. You also want to complete the code in the client app, which will send credit-check requests to the relay and wait for responses. By connecting to the relay service in this way, you expose the service to components in the cloud, without having to open a port on your on-premises firewall. This approach helps protect the credit-checking service.
+You've created a relay for your credit-checking service. Now you want to enable your on-premises listener component to connect to the relay, so that it can receive requests and send responses. You also want to complete the code in the client app, which will send credit-check requests to the relay and wait for responses. By connecting to the relay service in this way, you expose the service to components in the cloud, without having to open a port on your on-premises firewall. This approach helps protect the credit-checking service.
 
 In this unit, you'll write the Azure Relay code in both the sender and listener applications.
 
 ## Clone the sample apps
 
-You have two command-line apps that will send messages to, and listen for messages from, the relay you created earlier. Most of the code is finished, but you must add the Azure Relay code to the apps. Let's start by obtaining the code:
+You have two command-line apps that will send messages to and listen for messages from the relay that you created earlier. Most of the code is finished, but you must add the Azure Relay code to the apps. Let's start by obtaining the code:
 
 - In Azure Cloud Shell, at the right, use `git` to clone the sample apps:
 
@@ -147,9 +147,9 @@ The listener and sender apps are complete. You can now run both apps, use the se
     dotnet bin/Debug/netcoreapp2.2/listener.dll
     ```
 
-1. When you receive the message "Server listening," you can start the sender. Open a new instance of your browser, and go to the [Welcome to Azure Cloud Shell](https://shell.azure.com) page.
+1. When you receive the "Server listening" message, you can start the sender. Open a new instance of your browser, and go to the [Welcome to Azure Cloud Shell](https://shell.azure.com) page.
 
-1. If you are asked to select a directory, choose *Microsoft Learn Sandbox*.
+1. If you're asked to select a directory, choose *Microsoft Learn Sandbox*.
 
 1. To build and run the sender app, run these commands:
 
@@ -163,7 +163,7 @@ The listener and sender apps are complete. You can now run both apps, use the se
 
 Now that the apps are both running in separate instances of Cloud Shell, let's test them by checking a credit record.
 
-1. Arrange the two browser windows so that you can see both.
+1. Arrange the browser windows so that you can see both.
 
 1. In the sender app, type a name, and then press Enter.
 
