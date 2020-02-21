@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.expose-hybrid-services-with-azure-relay.4-send-requests-through-relay
 metadata:
-  title: Send requests through a Relay Hybrid Connection
+  title: Send requests through a Relay hybrid connection
   description: In this unit, you'll learn how to write code in C# that sends messages through Azure Relay.
   ms.date: 02/21/2020
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Send requests through a Relay Hybrid Connection
+title: Send requests through a Relay hybrid connection
 durationInMinutes: 10
 content: |
   [!include[](includes/4-send-requests-through-relay.md)]
