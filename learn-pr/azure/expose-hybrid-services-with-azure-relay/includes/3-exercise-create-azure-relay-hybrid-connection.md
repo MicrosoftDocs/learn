@@ -34,11 +34,11 @@ Azure Relay helps maintain security by requiring applications to supply an acces
 
 1. To save the primary key and primary connection string, do the following:
   
-  a. Next to the **Primary Key** box, select the **Copy to clipboard** button.  
-  b. In Notepad or another text editor, paste the key.  
-  c. Next to the **Primary Connection String** box, select the **Copy to clipboard** button.  
-  d. In the text editor, paste the connection string on a new line.  
-  e. Name the text file *AccessKeys.txt*, and save it to a local folder.
+   a. Next to the **Primary Key** box, select the **Copy to clipboard** button.  
+   b. In Notepad or another text editor, paste the key.  
+   c. Next to the **Primary Connection String** box, select the **Copy to clipboard** button.  
+   d. In the text editor, paste the connection string on a new line.  
+   e. Name the text file *AccessKeys.txt*, and save it to a local folder.
 
 ## Create a new hybrid connection in the namespace
 
