@@ -341,73 +341,158 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/azure/intro-to-mobile-app-service/index.md",
-      "redirect_url": "https://docs.microsoft.com/learn/app-center/intro-to-app-center",
+      "source_path": "learn-pr/app-center/intro-to-app-center/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-app-center/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/app-center/intro-to-app-center/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-app-center/1-introduction",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/app-center/intro-to-app-center/2-what-is-app-center.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-app-center/2-what-is-app-center",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/app-center/intro-to-app-center/3-how-app-center-build-works.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-app-center/3-how-app-center-build-works",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/app-center/intro-to-app-center/4-how-app-center-test-works.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-app-center/4-how-app-center-test-works",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/app-center/intro-to-app-center/5-how-app-center-distribute-works.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-app-center/5-how-app-center-distribute-works",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/app-center/intro-to-app-center/6-how-app-center-diagnostics-works.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-app-center/6-how-app-center-diagnostics-works",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/app-center/intro-to-app-center/7-how-app-center-analytics-works.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-app-center/7-how-app-center-analytics-works",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/app-center/intro-to-app-center/8-exercise-create-app-center-account.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-app-center/8-exercise-create-app-center-account",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/app-center/intro-to-app-center/9-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-app-center/9-summary",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/modules/intro-to-mobile-app-service/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-app-center/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/azure/intro-to-mobile-app-service/1-introduction.md",
-      "redirect_url": "https://docs.microsoft.com/learn/app-center/intro-to-app-center",
+      "source_path": "learn-pr/modules/intro-to-mobile-app-service/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-app-center/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/modules/intro-to-mobile-app-service/2-what-are-mobile-apps.md",
-      "redirect_url": "https://docs.microsoft.com/learn/app-center/intro-to-app-center",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-app-center/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/azure/intro-to-mobile-app-service/3-how-mobile-apps-work.md",
-      "redirect_url": "https://docs.microsoft.com/learn/app-center/intro-to-app-center",
+      "source_path": "learn-pr/modules/intro-to-mobile-app-service/3-how-mobile-apps-work.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-app-center/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/azure/intro-to-mobile-app-service/4-when-to-use-mobile-apps.md",
-      "redirect_url": "https://docs.microsoft.com/learn/app-center/intro-to-app-center",
+      "source_path": "learn-pr/modules/intro-to-mobile-app-service/4-when-to-use-mobile-apps.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-app-center/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/azure/intro-to-mobile-app-service/5-knowledge-check.md",
-      "redirect_url": "https://docs.microsoft.com/learn/app-center/intro-to-app-center",
+      "source_path": "learn-pr/modules/intro-to-mobile-app-service/5-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-app-center/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/azure/intro-to-mobile-app-service/6-summary.md",
-      "redirect_url": "https://docs.microsoft.com/learn/app-center/intro-to-app-center",
+      "source_path": "learn-pr/modules/intro-to-mobile-app-service/6-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-app-center/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/ai-business-school/microsoft-approach-to-ai/2-intelligent-bot-demo.md",
-      "redirect_url": "https://docs.microsoft.com/learn/microsoft-approach-to-ai/3-intelligent-bot-demo",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/microsoft-approach-to-ai/3-intelligent-bot-demo",
       "redirect_document_id": true
     },
     {
       "source_path": "learn-pr/ai-business-school/microsoft-approach-to-ai/3-pre-trained-cognitive-services.md",
-      "redirect_url": "https://docs.microsoft.com/learn/microsoft-approach-to-ai/4-pre-trained-cognitive-services",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/microsoft-approach-to-ai/4-pre-trained-cognitive-services",
       "redirect_document_id": true
     },
     {
       "source_path": "learn-pr/ai-business-school/microsoft-approach-to-ai/4-cognitive-search.md",
-      "redirect_url": "https://docs.microsoft.com/learn/microsoft-approach-to-ai/5-cognitive-search",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/microsoft-approach-to-ai/5-cognitive-search",
       "redirect_document_id": true
     },
     {
       "source_path": "learn-pr/ai-business-school/microsoft-approach-to-ai/5-conversational-ai.md",
-      "redirect_url": "https://docs.microsoft.com/learn/microsoft-approach-to-ai/6-conversational-ai",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/microsoft-approach-to-ai/6-conversational-ai",
       "redirect_document_id": true
     },
     {
       "source_path": "learn-pr/ai-business-school/microsoft-approach-to-ai/6-saas-ai-and-embedded-ai.md",
-      "redirect_url": "https://docs.microsoft.com/learn/microsoft-approach-to-ai/7-saas-ai-and-embedded-ai",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/microsoft-approach-to-ai/7-saas-ai-and-embedded-ai",
       "redirect_document_id": true
     },
     {
       "source_path": "learn-pr/ai-business-school/microsoft-approach-to-ai/7-knowledge-check.md",
-      "redirect_url": "https://docs.microsoft.com/learn/microsoft-approach-to-ai/8-knowledge-check",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/microsoft-approach-to-ai/8-knowledge-check",
       "redirect_document_id": true
     },
     {
       "source_path": "learn-pr/ai-business-school/microsoft-approach-to-ai/8-summary-and-resources.md",
-      "redirect_url": "https://docs.microsoft.com/learn/microsoft-approach-to-ai/9-summary-and-resources",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/microsoft-approach-to-ai/9-summary-and-resources",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/responsible-ai-principles/7-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/responsible-ai-principles/8-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/responsible-ai-principles/8-summary-and-resources.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/responsible-ai-principles/9-summary-resources",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/microsoft-responsible-ai-practices/2-engineering-design-principles.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/microsoft-responsible-ai-practices/5-engineering-design-principles",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/microsoft-responsible-ai-practices/3-responsible-ai-tools.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/microsoft-responsible-ai-practices/6-responsible-ai-tools",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/microsoft-responsible-ai-practices/4-ai-for-good.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/microsoft-responsible-ai-practices/7-ai-for-good",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/microsoft-responsible-ai-practices/5-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/microsoft-responsible-ai-practices/8-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/microsoft-responsible-ai-practices/6-summary-and-resources.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/microsoft-responsible-ai-practices/9-summary-resources",
       "redirect_document_id": true
     },
     {
@@ -711,6 +796,36 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/data-ai-cert/design-azure-sql-data-warehouse/2-types-of-dw-solutions.yml",
+      "redirect_url": "https://docs.microsoft.com/en-gb/learn/modules/design-azure-sql-data-warehouse",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/design-azure-sql-data-warehouse/3-azure-sql-dw.yml",
+      "redirect_url": "https://docs.microsoft.com/en-gb/learn/modules/design-azure-sql-data-warehouse",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/design-azure-sql-data-warehouse/4-massively-parallel-processing.yml",
+      "redirect_url": "https://docs.microsoft.com/en-gb/learn/modules/design-azure-sql-data-warehouse",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/design-azure-sql-data-warehouse/5-table-geometries.yml",
+      "redirect_url": "https://docs.microsoft.com/en-gb/learn/modules/design-azure-sql-data-warehouse",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/design-azure-sql-data-warehouse/6-create-azure-dw-using-portal.yml",
+      "redirect_url": "https://docs.microsoft.com/en-gb/learn/modules/design-azure-sql-data-warehouse",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/design-azure-sql-data-warehouse/7-summary.yml",
+      "redirect_url": "https://docs.microsoft.com/en-gb/learn/modules/design-azure-sql-data-warehouse",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/secure-azure-resources-with-conditional-access/1-introduction.yml",
       "redirect_url": "https://docs.microsoft.com/azure/active-directory/conditional-access/",
       "redirect_document_id": false
@@ -738,6 +853,126 @@
     {
       "source_path": "learn-pr/azure/secure-azure-resources-with-conditional-access/6-summary.yml",
       "redirect_url": "https://docs.microsoft.com/azure/active-directory/conditional-access/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/introduction-open-source-database-migration-azure-cosmos-db/2-cosmos-db-overview.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-open-source-database-migration-azure-cosmos-db/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/introduction-open-source-database-migration-azure-cosmos-db/3-cosmos-db-apis.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-open-source-database-migration-azure-cosmos-db/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/introduction-open-source-database-migration-azure-cosmos-db/4-considerations-migrate-nosql-cosmos-db.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-open-source-database-migration-azure-cosmos-db/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/introduction-open-source-database-migration-azure-cosmos-db/5-provision-cosmos-db-throughput.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-open-source-database-migration-azure-cosmos-db/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/introduction-open-source-database-migration-azure-cosmos-db/6-cosmos-db-partition-best-practices.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-open-source-database-migration-azure-cosmos-db/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/introduction-open-source-database-migration-azure-cosmos-db/7-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-open-source-database-migration-azure-cosmos-db/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/introduction-open-source-database-migration-azure-cosmos-db/8-knowlege-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-open-source-database-migration-azure-cosmos-db/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/migrate-cassandra-workloads-cosmos-db/2-cassandra-cosmos-db-migration-benefits.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/migrate-cassandra-workloads-cosmos-db/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/migrate-cassandra-workloads-cosmos-db/3-cassandra-cosmos-db-migration-plan.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/migrate-cassandra-workloads-cosmos-db/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/migrate-cassandra-workloads-cosmos-db/4-cassandra-cosmos-db-data-migration.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/migrate-cassandra-workloads-cosmos-db/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/migrate-cassandra-workloads-cosmos-db/5-cassandra-cosmos-db-application-migration.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/migrate-cassandra-workloads-cosmos-db/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/migrate-cassandra-workloads-cosmos-db/6-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/migrate-cassandra-workloads-cosmos-db/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/migrate-cassandra-workloads-cosmos-db/7-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/migrate-cassandra-workloads-cosmos-db/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/introduction-open-source-database-migration-azure/2-mysql-postgresql-database-services-azure.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-open-source-database-migration-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/introduction-open-source-database-migration-azure/5-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-open-source-database-migration-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/introduction-open-source-database-migration-azure/6-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-open-source-database-migration-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/protecting-monitoring-tuning-migrated-database/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/protect-monitor-tuning-migrated-database/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/protecting-monitoring-tuning-migrated-database/2-protecting-database-server.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/protect-monitor-tuning-migrated-database/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/protecting-monitoring-tuning-migrated-database/3-monitor-configure-database-server.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/protect-monitor-tuning-migrated-database/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/protecting-monitoring-tuning-migrated-database/4-trace-track-activity.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/protect-monitor-tuning-migrated-database/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/protecting-monitoring-tuning-migrated-database/5-configure-read-replicas.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/protect-monitor-tuning-migrated-database/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/protecting-monitoring-tuning-migrated-database/6-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/protect-monitor-tuning-migrated-database/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/protecting-monitoring-tuning-migrated-database/7-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/protect-monitor-tuning-migrated-database/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/protecting-monitoring-tuning-migrated-database/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/protect-monitor-tuning-migrated-database/",
       "redirect_document_id": false
     }
   ]

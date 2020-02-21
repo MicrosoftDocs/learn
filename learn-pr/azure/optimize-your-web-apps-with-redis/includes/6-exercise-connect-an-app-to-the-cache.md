@@ -574,6 +574,7 @@ We're ready to write code to interact with our Redis cache.
       await client.flushdbAsync();
       await client.quitAsync();
     })();
+    ```
     
 1. Run the application. In the Cloud Shell, execute the following command:
     

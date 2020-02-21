@@ -30,5 +30,6 @@ modules:
 - learn.automate-azure-tasks-with-powershell
 - learn.predict-costs-and-optimize-spending
 - learn.control-and-organize-with-resource-manager
+- learn.azure.move-azure-resources-to-another-resource-group
 trophy:
   uid: learn.manage-resources-in-azure.trophy

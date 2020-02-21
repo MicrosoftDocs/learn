@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.migrate-sql-server-relational-data.6-exercise-migrate-database-assistant
+metadata:
+  title: Exercise - Migrate a database schema using Azure Data Migration Assistant
+  description: Exercise - Migrate a database schema using Azure Data Migration Assistant
+  ms.date: 02/21/2020
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise - Migrate a database schema using Azure Data Migration Assistant
+durationInMinutes: 15
+content: |
+  [!include[](includes/6-exercise-migrate-database-assistant.md)]

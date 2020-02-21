@@ -22,6 +22,7 @@ iconUrl: /learn/achievements/create-azure-storage-account.svg
 levels: 
 - beginner
 roles: 
+- administrator
 - developer
 - data-engineer
 - solution-architect

@@ -2,7 +2,7 @@
 uid: learn.design-a-hybrid-network-architecture.5-choosing-hybrid-architecture
 metadata:
   title: Choose a hybrid network architecture on Azure
-  description: See some hybrid networking scenarios that may use AzureVPN Gateways and Azure ExpressRoute.
+  description: Explore some hybrid networking scenarios that use Azure ExpressRoute and Azure VPN Gateway.
   ms.date: 01/14/2020
   author: jboeshart
   ms.author: jaboes
@@ -15,17 +15,17 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: 'What is a valid use case for using Azure ExpressRoute?'
+  - content: 'What is a valid use case for Azure ExpressRoute?'
     choices:
     - content: Mission-critical workloads
       isCorrect: true
-      explanation: ExpressRoute is the recommended service for mission-critical large-scale workloads.
-    - content: For prototyping
+      explanation: ExpressRoute is the recommended service for mission-critical, large-scale workloads.
+    - content: Prototyping
       isCorrect: false
-      explanation: ExpressRoute is not the best connectivity method for prototyping in Azure as it is expensive and takes time to set up.
-    - content: Dev/Test workloads
+      explanation: ExpressRoute is not the best connectivity method for prototyping in Azure, because it is expensive and takes time to set up.
+    - content: Dev/test workloads
       isCorrect: false
-      explanation: ExpressRoute is not the most suitable connection method for dev/test workloads as it is expensive and takes time to set up.
+      explanation: ExpressRoute is not the most suitable connection method for dev/test workloads, because it is expensive and takes time to set up.
     - content: Small production workloads
       isCorrect: false
       explanation: VPN Gateway is better suited for small production workloads and lower traffic throughput.
@@ -36,10 +36,10 @@ quiz:
       explanation: ExpressRoute has a wide selection of available bandwidths.
     - content: Cost and traffic volume
       isCorrect: true
-      explanation: VPN Gateway is cheaper than ExpressRoute and is more suited for smaller traffic volumes.
+      explanation: VPN Gateway is less expensive than ExpressRoute and is better suited to smaller traffic volumes.
     - content: Redundancy support
       isCorrect: false
-      explanation: Both services have redundancy support through adding them to an Azure availability zone.
+      explanation: Both services have redundancy support when they are added to an Azure availability zone.
     - content: Lack of ExpressRoute partners
       isCorrect: false
       explanation: There is a rich ecosystem of system integrators and partners for ExpressRoute.

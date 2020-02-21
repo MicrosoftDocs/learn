@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.bash-introduction.2-bash-fundamentals
+title: Bash fundamentals
+metadata:
+  title: Bash fundamentals
+  description: Learn about the syntax of Bash commands.
+  ms.date: 01/31/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-bash
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-bash-fundamentals.md)]

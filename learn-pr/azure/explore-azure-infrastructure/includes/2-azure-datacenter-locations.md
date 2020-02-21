@@ -13,7 +13,8 @@ When you deploy a resource in Azure, you will often need to choose the region wh
 
 A few examples of regions are *West US*, *Canada Central*, *West Europe*, *Australia East*, and *Japan West*. Here's a view of all the available regions as of December 2018:
 
-[ ![Map of available regions as of December 2018](../media/2-regions-small.png) ](../media/2-regions-large.png#lightbox)
+[//]: # (Maintainer note: the latest version of this image is available as an SVG from https://azure.microsoft.com/en-us/global-infrastructure/regions/, resampled smaller here for the initial view.)
+[ ![Map of available regions as of February 2020](../media/2-regions-small.png) ](../media/2-regions-large.svg#lightbox)
 
 ### Why is this important?
 

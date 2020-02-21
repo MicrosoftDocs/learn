@@ -2,10 +2,8 @@
 uid: learn.wwl.introduction-open-source-database-migration-azure-cosmos-db
 metadata:
   title: Introduction to open-source database migration to Azure Cosmos DB
-  description: |
-    &quot;An introduction to migrating an open
-    -source database to Cosmos DB&quot;
-  ms.date: 01/31/2020
+  description: "An introduction to migrating an open-source database to Azure Cosmos DB"
+  ms.date: 02/17/2020
   author: wwlpublish
   ms.author: v-gea
   ms.topic: interactive-tutorial
@@ -13,11 +11,12 @@ metadata:
 title: Introduction to open source database migration to Azure Cosmos DB
 summary: In this module, the learner will gain an understanding of Cosmos DB and the main considerations when migrating to Cosmos DB.
 abstract: |
-  - An overview of Cosmos DB.
-  - A list of the Cosmos DB APIs.
-  - Considerations for migrating  NoSQL databases to Cosmos DB.
-  - Provisioning Cosmos DB throughput.
-  - Cosmos DB provisioning best practices.
+  By the end of this module, you'll be able to:
+  - Describe the key features OF Cosmos DB.
+  - Describe the Cosmos DB architecture and APIs.
+  - Plan a NoSQL to Cosmos DB migration.
+  - Plan Cosmos DB throughput.
+  - Choose an appropriate partitioning key.
 prerequisites: |
   Knowledge of the fundamental concepts of partitioning, replication, and resource governance for building and configuring scalable NoSQL applications that are agnostic of a Cosmos DB API.
 iconUrl: /learn/achievements/Introduction-to-open-source-database-migration-to-Azure-Cosmos-DB.svg
@@ -34,7 +33,7 @@ units:
 - learn.wwl.introduction-open-source-database-migration-azure-cosmos-db.considerations-migrating-nosql-cosmos-db
 - learn.wwl.introduction-open-source-database-migration-azure-cosmos-db.provisioning-cosmos-db-throughput
 - learn.wwl.introduction-open-source-database-migration-azure-cosmos-db.cosmos-db-partitioning-best-practices
-- learn.wwl.introduction-open-source-database-migration-azure-cosmos-db.summary
 - learn.wwl.introduction-open-source-database-migration-azure-cosmos-db.knowlege-check
+- learn.wwl.introduction-open-source-database-migration-azure-cosmos-db.summary
 badge:
   uid: learn.wwl.introduction-open-source-database-migration-azure-cosmos-db.badge
