@@ -6,13 +6,13 @@ In this unit, you'll learn how Azure Relay can provide this connection.
 
 ## What is Azure Relay?
 
-Many organizations are migrating their systems to the cloud. This process is often done component-by-component, in a phased approach, and not all at once. Such an approach limits the impact of problems that might arise during the migration, but it has its own challenges. For example, a newly migrated cloud component often needs to communicate with another that remains on-premises but is protected by a firewall or other security systems. 
+Many organizations are migrating their systems to the cloud. This process is often done component-by-component, as a phased approach. Such an approach limits the impact of problems that might arise during the migration, but it has its own challenges. For example, a newly migrated cloud component often needs to communicate with another component that remains on-premises but is protected by a firewall or other security systems. 
 
 In other cases, you might find that an on-premises service can't be migrated to the cloud. For example, your jurisdiction might impose extra security requirements on financial systems, which you can't comply with in a cloud system. 
 
 In situations like these, you need on-premises services to be addressable from internet clients or cloud components. You could open a firewall port to enable this communication, but that approach might have unintended consequences. For example, you might accidentally expose services other than the one you had in mind. In large organizations, you might not be in charge of the firewall. An alteration to the security regime might require high-level authorization that takes time to obtain.
 
-Azure Relay addresses these kinds of problems by providing a connection point in the cloud where on-premises and internet-based components can connect. Because the on-premises system initiates this connection, you don't need to open any firewall ports or reconfigure the on-premises network in any way. 
+Azure Relay addresses these kinds of problems by providing a point in the cloud where on-premises and internet-based components can connect. Because the on-premises system initiates this connection, you don't need to open any firewall ports or reconfigure the on-premises network in any way. 
 
 ## Hybrid connections and Windows Communication Foundation connections
 
@@ -27,7 +27,7 @@ Use hybrid connections unless you're supporting existing .NET Framework componen
 
 Hybrid connections can use one of these protocols:
 
-- **HTTP**: This stateless protocol consists of requests such as GET and POST, and it's used to transfer webpages between web servers and browsers. Usually, HTTP uses TCP port 80 or 443, when the request is secured with Secure Sockets Layer. This protocol is widely supported and easy to code for. However, because this protocol is stateless, it's less efficient for persistent communications.
+- **HTTP**: This stateless protocol consists of requests such as GET and POST, and it's used to transfer webpages between web servers and browsers. Usually, HTTP uses TCP port 80 or 443 when the request is secured with Secure Sockets Layer. This protocol is widely supported and easy to code for. However, because this protocol is stateless, it's less efficient for persistent communications.
 - **WebSocket**: This protocol creates a full duplex communication channel over port 80 or 443, which is more efficient than the stateless HTTP protocol. A WebSocket connection is especially efficient when the communication consists of many messages, not just a single request and response.
 
 In this module, because the process is a simple request for a credit check, followed by a single response, you'll use a hybrid connection and the HTTP protocol.
@@ -36,7 +36,7 @@ In this module, because the process is a simple request for a credit check, foll
 
 Because both the cloud-hosted and on-premises components initiate the connection to Azure Relay, on-premises firewalls don't intervene. When the connection is established, communications can be sent in both directions. 
 
-This diagram shows how the connection is made:
+The following diagram shows how the connection is made:
 
 ![How Azure Relay exchanges messages](../media/2-how-relay-works.png)
 
@@ -48,12 +48,12 @@ This diagram shows how the connection is made:
 1. The listener's gateway forwards the connection request to the listener. This request includes the identity of the sender's gateway.
 1. The listener makes a connection to the sender's gateway. At this point, the sender and listener can exchange messages.
 1. The sender's gateway forwards messages from the listener to the sender.
-1. It also forwards messages from the sender to the listener. 
+1. The sender's gateway also forwards messages from the sender to the listener. 
 
 ## How to create a relay
 
 To create a relay, you need a namespace that's unique within the *servicebus.windows.net* domain. You also specify a subscription, resource group, and location for the relay, which should be close to most of your clients.
 
-To control what clients can do when they connect, use shared access policies. You use these policies to permit whether clients can send messages to, or read messages from, the relay. Each shared access policy has primary and secondary keys. To connect to the relay, each client must supply one of these keys.
+To control what clients can do when they connect, use shared access policies. You use these policies to permit whether clients can send messages to or read messages from the relay. Each shared access policy has primary and secondary keys. To connect to the relay, each client must supply one of these keys.
 
 Finally, you should create a connection in the namespace. It can be either a hybrid connection or a WCF connection.
