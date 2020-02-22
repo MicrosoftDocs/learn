@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.create-web-app-with-refreshable-models.6-test-pwa
+metadata:
+  title: Test Your PWA
+  description: Test your PWA
+  author: jlooper
+  ms.date: 02/10/2020
+  ms.author: jelooper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Test your PWA
+durationInMinutes: 15
+content: |
+  [!include[](includes/6-test-your-pwa.md)]

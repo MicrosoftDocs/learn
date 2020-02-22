@@ -11,26 +11,33 @@ metadata:
   #ms.learn-contact: luken
 title: Build a Web App with Refreshable Machine Learning Models
 summary: Build a web app powered by machine learning models trained using Custom Vision AI service, and learn how to refresh them with GitHub Actions.
-abstract: | 
- In this module, you will:
-  - Train a model with tagged images using Custom Vision AI service
-  - Test the model for accuracy
-  - Export model assets for use in a web app
-  - Build a Vue.js web app to host the model assets
-  - Use these assets to perform inference using hard-to-distinguish images
-  - Build a GitHub Action to create a continuous delivery workflow
-  - Swap the model assets for fresh assets to test the workflow
+abstract: |
+  In this module, you will:
+   - Train a model with tagged images using Custom Vision AI service
+   - Test the model for accuracy
+   - Export model assets for use in a web app
+   - Build a Vue.js web app to host the model assets
+   - Use these assets to perform inference using hard-to-distinguish images
+   - Build a GitHub Action to create a continuous delivery workflow
+   - Test the capabilities of a progressive web app
 prerequisites: None
 iconUrl: /learn/achievements/create-web-app-with-refreshable-models.svg
-levels: 
-- beginner
-roles: 
-- developer
-- ai-engineer
-products: 
-- azure
-- azure-cognitive-services
+levels:
+  - beginner
+roles:
+  - developer
+  - ai-engineer
+products:
+  - azure
+  - azure-cognitive-services
 units:
-- learn.create-web-app-with-refreshable-models.1-intro-to-customvision-ai
+  - learn.create-web-app-with-refreshable-models.1-introduction
+  - learn.create-web-app-with-refreshable-models.2-conceptual-overview
+  - learn.create-web-app-with-refreshable-models.3-scaffold-web-app
+  - learn.create-web-app-with-refreshable-models.4-train-model-build-inference-interface
+  - learn.create-web-app-with-refreshable-models.5-publish-web-app-deploy-github-action
+  - learn.create-web-app-with-refreshable-models.6-test-pwa
+  - learn.create-web-app-with-refreshable-models.7-summary
+
 badge:
   uid: learn.create-web-app-with-refreshable-models.badge

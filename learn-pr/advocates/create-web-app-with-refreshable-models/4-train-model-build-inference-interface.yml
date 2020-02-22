@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.create-web-app-with-refreshable-models.4-train-model-build-inference-interface
+metadata:
+  title: Exercise - Train Your Machine Learning Model and Build the Web Interface to Use It
+  description: Exercise - Train your machine learning model and build the web interface to use it
+  author: jlooper
+  ms.date: 02/10/2020
+  ms.author: jelooper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+  azureSandbox: true
+title: Exercise -  Train your machine learning model and build the web interface to use it
+durationInMinutes: 15
+content: |
+  [!include[](includes/4-train-model-build-inference-interface.md)]

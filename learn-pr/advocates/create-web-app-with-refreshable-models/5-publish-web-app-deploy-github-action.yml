@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.create-web-app-with-refreshable-models.5-publish-web-app-deploy-github-action
+metadata:
+  title: Exercise - Publish Your Web App and Deploy It With A GitHub Action
+  description: Exercise - publish your web app and deploy it with a GitHub Action
+  author: jlooper
+  ms.date: 02/10/2020
+  ms.author: jelooper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+  azureSandbox: true
+title: Exercise -  publish your web app and deploy it with a GitHub Action
+durationInMinutes: 15
+content: |
+  [!include[](includes/5-publish-web-app-deploy-github-action.md)]

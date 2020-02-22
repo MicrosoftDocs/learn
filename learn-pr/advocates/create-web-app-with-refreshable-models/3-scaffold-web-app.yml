@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.create-web-app-with-refreshable-models.3-scaffold-web-app
+metadata:
+  title: Exercise - Scaffold a Web App
+  description: Exercise - Scaffold a web app and create an interface for inference
+  author: jlooper
+  ms.date: 02/10/2020
+  ms.author: jelooper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Exercise - Scaffold a web app and create an interface for inference
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-scaffold-web-app.md)]
