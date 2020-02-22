@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.migrate-sql-server-relational-data.8-summary
 metadata:
-  title: Summary and clean up
-  description: Summary and clean up
+  title: Summary and cleanup
+  description: Summary and cleanup
   ms.date: 02/21/2020
   author: jboeshart
   ms.author: jaboes

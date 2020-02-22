@@ -2,22 +2,22 @@
 uid: learn.migrate-sql-server-relational-data
 metadata:
   title: Migrate your relational data stored in SQL Server to Azure SQL Database
-  description: Plan and implement the migration of relational data from SQL Server to Azure SQL Database. Select the appropriate migration strategy for your database, and use Azure tools to asses and migrate your data. Perform an assessment using the Data Migration Assistant and migrate a database to Azure SQL.
+  description: Plan and implement the migration of relational data from SQL Server to Azure SQL Database. Select the appropriate migration strategy for your database, and then use Data Migration Assistant to do the assessment and the migration.
   ms.date: 02/21/2020
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Migrate your relational data stored in SQL Server to Azure SQL Database
-summary: Plan and implement the migration of relational data from SQL Server to Azure SQL Database. Select the appropriate migration strategy for your database, and use Azure tools to asses and migrate your data. Perform an assessment using the Data Migration Assistant and migrate a database to Azure SQL.
+summary: Plan and implement the migration of relational data from SQL Server to Azure SQL Database. Select the appropriate migration strategy for your database, and then use Data Migration Assistant to do the assessment and the migration.
 abstract: | 
   In this module, you will:
-  - Select the proper migration strategy for your relational data stored in SQL Server
-  - Perform a migration from SQL Server to a single Azure SQL Database using the migration with downtime process
+  - Select a migration strategy for your relational data stored in SQL Server
+  - Perform a migration from SQL Server to a single Azure SQL database by using the process of migration with downtime
 prerequisites: | 
   - Access to an Azure subscription to complete the exercises
   - Basic knowledge of the T-SQL language
-  - Basic familiarity with relational data, such as tables, rows, and database schema
+  - Basic familiarity with relational data, such as tables, rows, and database schemas
   - Basic familiarity with SQL Server administration and configuration
   - Basic familiarity with Azure SQL Database
 iconUrl: /learn/achievements/generic-badge.svg

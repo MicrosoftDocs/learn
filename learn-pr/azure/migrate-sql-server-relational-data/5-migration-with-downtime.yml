@@ -16,34 +16,34 @@ quiz:
   questions:
     - content: What is the chief obstacle to performing online migrations?
       choices:
-      - content: "The requirement of the Premium module for Azure SQL."
+      - content: "The requirement of the Premium module for Azure SQL Database."
         isCorrect: true
-        explanation: "The Premium model for Azure SQL is very expensive. This cost can be a big obstacle to doing online migrations."
+        explanation: "The Premium model for Azure SQL Database is very expensive. This cost can be a big obstacle to doing online migrations."
       - content: "Online migrations are slower."
         isCorrect: false
-        explanation: "While it is true that an online may take just a _little_ longer, this is not considered an obstacle as the source system is able to remain online during the migration."
+        explanation: "Although it's true that an online migration might take a _little_ longer, this is not considered an obstacle because the source system can remain online during the migration."
       - content: "Online migrations require more personnel to complete."
         isCorrect: false
-        explanation: "Online migrations do not require any more resources than offline migrations."
+        explanation: "Online migrations don't require any more resources than offline migrations."
     - content: What is the best practice for doing migrations?
       choices:
-      - content: "Attempt to do an offline first."
+      - content: "Try to do an offline migration first."
         isCorrect: true
-        explanation: "Attempt to do an offline migration first to see if it will run in acceptable time frame in order not to incur the cost of the Premium database tier."
-      - content: "Attempt to perform an online migration first."
+        explanation: "Try to do an offline migration first to see if it will run in an acceptable time frame that doesn't incur the cost of the Premium database tier."
+      - content: "Try to perform an online migration first."
         isCorrect: false
-        explanation: "Due to the requirement of a Premium database tier for on line, online migrations can be expensive. As such, it is best to attempt an offline migration first to see if it can be run in an acceptable time frame."
-      - content: "Attempt to perform a manual migration first."
+        explanation: "Due to the requirements of a Premium database tier, online migrations can be expensive. It's best to try an offline migration first to see if it can be run in an acceptable time frame."
+      - content: "Try to perform a manual migration first."
         isCorrect: false
-        explanation: "Manual migrations can be problematic. It is very easy to miss compatibility issues and should be avoided."
+        explanation: "Manual migrations can be problematic. It's easy to miss compatibility issues, so you should avoid them."
     - content: Which service is used to perform the data migration?
       choices:
-      - content: "Azure Data Migration Service"
+      - content: "Azure Database Migration Service"
         isCorrect: true
-        explanation: "The Azure Data Migration Service is used to perform both offline and online data migrations."
-      - content: "Azure Data Migration Assistant"
+        explanation: "Azure Database Migration Service is used to perform both offline and online data migrations."
+      - content: "Data Migration Assistant"
         isCorrect: false
-        explanation: "The Azure Data Migration Assistant is used to analyze the existing database for incompatibilities with Azure SQL Database. It can also be used to generate the schema, but is not typically used to migrate data."
+        explanation: "Data Migration Assistant is used to analyze the existing database for incompatibilities with Azure SQL Database. It can also be used to generate the schema, but is not typically used to migrate data."
       - content: "Azure Data Movement Service"
         isCorrect: false
-        explanation: "The Azure Data Movement Service is not a real service."
+        explanation: "Azure Data Movement Service is not a real service."
