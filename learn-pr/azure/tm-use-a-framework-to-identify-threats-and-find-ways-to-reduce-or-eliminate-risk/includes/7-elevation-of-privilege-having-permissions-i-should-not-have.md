@@ -18,7 +18,7 @@
 |Name|Interaction|Definition|
 |----|-----------|----------|
 |Process <-> Process|![Process to Process Interaction](../media/process-process.png)|A task sends data to another task|
-|Process <- External Entity|![Process to External Entity Unilateral Interaction](../media/process-exernalentity-unilateral.png)|A task receives data from a user|
+|Process <- External Entity|![Process to External Entity Unilateral Interaction](../media/process-externalentity-unilateral.png)|A task receives data from a user|
 |Process <- Data Store|![Process to Data Store Unilateral Interaction](../media/process-datastore-unilateral.png)|A task receives data from a data store|
 
 ## How Can I Prevent It?
