@@ -1,4 +1,4 @@
-The Process Layer focuses on data-flow diagrams for each system part. The goal is to understand how they work and interact with each other.
+The Process Layer focuses on data-flow diagrams for **each system part**. The goal is to understand how they work and interact with each other.
 
 ## When Should I Use This Layer?
 
@@ -24,4 +24,4 @@ The result will be a series of data-flow diagrams in the **Subprocess Layer**, k
 Similar to the System Layer, data-flow diagrams in the Process Layer should fit in a single page and contain all processes for their respective system parts.
 
 > [!IMPORTANT]
-> Most data-flow diagrams **require** a Process Level depth layer to be assessed properly
+> Most data-flow diagrams **require** a Process Level depth layer for proper assessment
