@@ -4,7 +4,7 @@ In this unit, you'll view, update, and delete the custom Azure role you created 
 
 Let's use the Azure portal to see the custom roles in your subscription.
 
-1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) with the same account you used for the previous exercise.
+1. Sign into the [Azure portal](https://portal.azure.com?azure-portal=true) with the same account you used for the previous exercise.
 1. Search for and select **Subscriptions** from the top of the Azure portal.
 1. Select the subscription that you associated your custom role to.
 1. Select **Access control (IAM)** > **Roles**.
