@@ -23,7 +23,7 @@ Use antimalware and antivirus tools to monitor and remedy malware. These tools c
 
 ### Application security
 
-Attackers can compromise applications whether they are your own or owned by a third party. The software may inadvertently contain security vulnerabilities that an attacker might use to access devices and network resources. If an application is developed in-house, you'll need to actively find and fix vulnerabilities that attackers could abuse. One solution is to test your application during its development life cycle and implement whatever changes are needed to fix a potential vulnerability. If we're dealing with an application development elsewhere, it's a good practice to apply updates as soon as they're available.
+Attackers can compromise applications whether they are your own or owned by a third party. The software may inadvertently contain security vulnerabilities that an attacker might use to access devices and network resources. If an application is developed in-house, you'll need to actively find and fix vulnerabilities that attackers could abuse. One solution is to test your application during its development life cycle and implement whatever changes are needed to fix a potential vulnerability. If you're dealing with an application development elsewhere, it's a good practice to apply updates as soon as they're available.
 
 ### Behavioral analytics
 
