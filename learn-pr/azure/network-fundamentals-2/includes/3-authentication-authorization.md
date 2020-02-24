@@ -94,11 +94,11 @@ When authentication is completed successfully, we'll need to ensure the authenti
 
 Permissions can include read, write, delete, and more. Use the right permissions for the right user or client. If a user or client switches roles, you can change their permissions to match the new level of access. Give each user or client the least number of permissions needed to get the job done. Never give a user or client any permissions they don't need.
 
-### What is the differences between authentication and authorization
+### Differences between authentication and authorization
 
 |Authentication |Authorization |
 |---------|---------|
-|Confirm whether the user or client is who they claim to be|Confirm whether the user or client can perform an action against a resource or service|
-|Asks for credentials like username or password|Checks permissions attached to the account in the background, and sometimes indicates which permission you need|
-|Must happen before authorization| Happens after successful authentication |
-|For example, an HR member signs in to the HR app| The HR member attempts to delete a user from the wrong department by accident. The action is denied because they don't have the right permissions for that department|
+|Confirms whether the user or client is who they claim to be.|Confirms whether the user or client can perform an action against a resource or service.|
+|Asks for credentials like username or password.|Checks permissions attached to the account in the background, and sometimes indicates which permission you need.|
+|Must happen before authorization.| Happens after successful authentication. |
+|For example, an HR member signs in to the HR app.| The HR member attempts to delete a user from the wrong department by accident. The action is denied because they don't have the right permissions for that department.|
