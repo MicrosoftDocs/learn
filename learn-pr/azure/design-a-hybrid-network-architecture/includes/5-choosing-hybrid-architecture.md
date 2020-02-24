@@ -40,6 +40,6 @@ To show what you've learned in this unit and to help you choose between the two 
 | **Bandwidth** | < 1.25 Gbps | < 10 Gbps or 100 Gbps (direct) |
 | **Protocol** | SSTP or IPsec | Direct over VLAN or MPLS |
 | **Routing** | Static or dynamic | Border Gateway Protocol (BGP) |
-| **Connection resiliency** | Active-passive | Active-active |
+| **Connection resiliency** | Active-passive or active-active | Active-passive or active-active |
 | **Use case** | Prototyping, dev, test, labs, RDC, and small production workloads | Access to all Azure services, enterprise-grade, supporting critical large-scale workloads |
 | **SLA** | 99.95-99.99% | 99.95% |
