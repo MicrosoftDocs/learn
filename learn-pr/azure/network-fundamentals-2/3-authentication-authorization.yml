@@ -19,22 +19,22 @@ quiz:
     choices:
     - content: Authorization is the process of determining whether the authenticated user or client has access to specific resources.
       isCorrect: true
-      explanation: Once it has been confirmed that the user or client has the right permissions, they can access the resource. 
+      explanation: After the user or client is confirmed to have the right permissions, they can access the resource. 
     - content: Authorization is the process of determining whether a particular user or client is the author of specific resources.
       isCorrect: false
       explanation: Authorization is about whether the user has the right permissions to access a resource or service.
-    - content: Authorization is the process of determining whether a client or user is indeed who they claim to be.
+    - content: Authorization is the process of determining whether a client or user is who they claim to be.
       isCorrect: false
       explanation: Authorization is about whether the user has the right permissions to access a resource or service.
       
   - content: Which of following happens in the handshake process of SSL/TLS protocol?
     choices:
-    - content: The server sends a "ServerHello" message back, and this message includes a session ID, the server's digital certificate, and its public key.
+    - content: The server sends a "ServerHello" message back. This message includes a session ID, the server's digital certificate, and its public key.
       isCorrect: true
       explanation: The server and the client exchange a number of messages like this before communication can start flowing officially between the two.
-    - content: The server sends a "ServerHello" message back, and this message includes a session ID, the client's digital certificate, and a public key.
+    - content: The server sends a "ServerHello" message back. This message includes a session ID, the client's digital certificate, and a public key.
       isCorrect: false
       explanation: The server's message includes the server's digital certificate, not a client digital certificate.
-    - content: The server sends a "ClientHello" message back, and this message includes a session ID, the server's digital certificate, and its public key.
+    - content: The server sends a "ClientHello" message back. This message includes a session ID, the server's digital certificate, and its public key.
       isCorrect: false
       explanation: The server doesn't send a "ClientHello" message. It sends a "ServerHello" message.
