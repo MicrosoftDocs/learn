@@ -1,5 +1,5 @@
 
-The decision to move to the cloud and taking on a role as an Azure Developer, Solution Architect, or Administrator requires knowledge of the foundations of networking. While networks are made up of various network devices, there are also other aspects to keep in mind, such as how to share resources on a network in a secure way, and how to ensure that only authorized users have access to these resources.
+The decision to move to the cloud and taking on a role as an Azure developer, solution architect, or administrator requires knowledge of the foundations of networking. Networks are made up of various network devices. But there are other aspects to keep in mind, such as how to share resources on a network in a secure way and how to ensure that only authorized users have access to these resources.
 
 In this module, we'll explore the fundamentals of networking security. We'll look at how to share resources in a client-server network and explain the core difference between authentication and authorization. Next we'll explore how to use firewalls to help protect your network and discuss how to monitor network access and traffic usage. Finally, we'll see how each aspect is addressed within Azure.
 
@@ -15,4 +15,4 @@ In this module, you'll learn how to:
 
 ## Prerequisites
 
-- Network fundamentals – principles
+- Knowledge of fundamental network principles
