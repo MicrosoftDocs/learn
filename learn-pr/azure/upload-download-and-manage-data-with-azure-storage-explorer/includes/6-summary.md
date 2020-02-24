@@ -5,3 +5,10 @@ Using Storage Explorer you can provide your developers with a tool that allows t
 You can explore your Azure data with many different tools, depending on its location and your preference. For example, the Azure portal includes a web-based interface that presents the contents of Azure Storage account, or you can use the Azure CLI at the command line.
 
 In this module, you've explored the different ways you can use Azure Storage Explorer to connect to your Storage Accounts. You've used the CLI to create both Cosmos DB and Azure Data Lake Gen2 Storage accounts. Finally, you have connected Storage Explorer to both an Azure Cosmos DB and an Azure Data Lake, and you have uploaded and viewed data stored there.
+
+[!include[](../../../includes/azure-sandbox-cleanup.md)]
+
+## Learn more
+
+- [Azure Storage Explorer download](https://azure.microsoft.com/features/storage-explorer/)
+- [Use Azure Storage Explorer to manage directories, files, and ACLs in Azure Data Lake Storage Gen2](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-explorer)

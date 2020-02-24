@@ -14,7 +14,7 @@ abstract: |
   In this module, you will:
   - Describe the features of Azure Storage Explorer
   - Install Azure Storage Explorer
-  - Use Azure Storage Explorer to connect to Azure storage services and manipulate stored data
+  - Use Azure Storage Explorer to connect to Azure Storage services and manipulate stored data
 prerequisites: | 
   - Basic knowledge of Azure Storage, Cosmos DB, and Data Lake
   - Ability to install software locally
