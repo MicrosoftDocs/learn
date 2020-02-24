@@ -1,4 +1,4 @@
-Azure Storage Explorer is not just about Azure Storage Accounts. You can also use it to investigate and download data from Cosmos DB or Azure Data Lake.
+Azure Storage Explorer isn't just about Azure Storage accounts. You can also use it to investigate and download data from Cosmos DB or Azure Data Lake.
 
 You've seen how simple it is to create and manage blob and queue resources in your Azure Storage account. Now you want to push your understanding further and see how it connects to your developers' Cosmos DB and Azure Data Lakes, which they use to store infrastructure data for the Customer Relationship Management (CRM) system.
 
@@ -6,9 +6,9 @@ Here, you'll learn how to create a new Storage Explorer connection to a Cosmos D
 
 ## Create a Cosmos DB
 
-Before you can use Storage Explorer to connect to a Cosmos DB with a connection string, you'll need to create a Cosmos DB.
+Before you use Storage Explorer to connect to a Cosmos DB with a connection string, you'll need to create a Cosmos DB.
 
-1. From the Azure Cloud Shell, use these commands to create a Cosmos DB.
+1. From the Azure Cloud Shell, use these commands to create a Cosmos DB:
 
    ```CLI
    export NAME=cosmos$RANDOM
@@ -19,7 +19,7 @@ Before you can use Storage Explorer to connect to a Cosmos DB with a connection 
 
    This command takes a few minutes to run, while it creates a new Cosmos DB for you.
 
-1. When it has completed, you'll see something similar to this JSON response. These details also tell you the name of the cosmos DB. The database name has been marked so that you can find it more easily.
+1. When it's complete, you'll see something similar to this JSON response. These details also tell you the name of the cosmos DB. The database name has been marked so you can find it easily.
 
    ```JSON
    {
@@ -76,13 +76,13 @@ Before you can use Storage Explorer to connect to a Cosmos DB with a connection 
    }
    ```
 
-   Make a note of your Cosmos DB name. You'll need it later. In this example, the cosmos DB name is **cosmos26829**.
+   Make a note of your Cosmos DB name as you'll need it later. In this example, the Cosmos DB name is **cosmos26829**.
 
-## Obtain your Cosmos DB connection String
+## Obtain your Cosmos DB connection string
 
-Now, obtain the primary master key for your Cosmos DB. 
+Here's how to obtain the primary master key for your Cosmos DB. 
 
-1. In Azure Cloud Shell, use the following command.
+1. In Azure Cloud Shell, use the following command:
 
     ```BASH
     az cosmosdb keys list --name cosmos26829 \
@@ -94,7 +94,7 @@ Now, obtain the primary master key for your Cosmos DB.
    > [!NOTE]
    > Replace **cosmos26829** with the name of the database.
 
-   This command returns a response similar to this JSON:
+   The command returns a response similar to this JSON:
 
    ```JSON
    {
@@ -105,15 +105,15 @@ Now, obtain the primary master key for your Cosmos DB.
    }
    ```
 
-   Make a not of the primary master key as you'll need it next.
+   Make a note of the primary master key as you'll need it next.
 
-1. You can now build your connection string. It requires the name of the Cosmos DB. In our example, that is **cosmos26829**. Replace the actual name you got when you created the database. It also needs the Primary Master Key that you've just acquired. Add these items to this template.
+1. You can now build your connection string. It requires the name of the Cosmos DB. In our example, that's **cosmos26829**. Replace the actual name you had when you created the database. It also needs the primary master key that you've acquired. Add these items to this template.
 
     ```TXT
     AccountEndpoint=https://<YOUR-COSMOS-DB-NAME>.documents.azure.com:443/;AccountKey=<PRIMARY-MASTER-KEY>;
     ```
 
-   So, if we persist with our example, the connection string becomes:
+   If we persist with our example, the connection string becomes:
 
    ```TXT
    AccountEndpoint=https://cosmos26829.documents.azure.com:443/;AccountKey=9xuqPVI9AlJgSnOtJKspKGWtKxJRNZgXk5JLoXiaoMJJCGRBmxrspjmJv577W9eSPOQDuniBvgCwogWmr7z6vw==;
@@ -123,7 +123,7 @@ Now, obtain the primary master key for your Cosmos DB.
 
 ### Connect to a Cosmos DB with a connection string
 
-One of the ways you can connect Storage Explorer to your Cosmos DB is through a connection string. Previously, you learned how to build your connection string. Now, you'll use it to connect to your Cosmos DB.
+One way you can connect Storage Explorer to your Cosmos DB is through a connection string. Previously, you learned how to build your connection string. Now, you'll use it to connect to your Cosmos DB.
 
 1. If necessary, launch Azure Store Explorer and connect to your Azure account.
 1. In the resource tree, expand the **Local & Attached** branch.
@@ -138,8 +138,8 @@ One of the ways you can connect Storage Explorer to your Cosmos DB is through a 
 
     ![Screenshot showing the Cosmos DB connection wizard](../media/5-cosmos-db-connect-string-connect.png)
 
-    Paste your connection string into the **Connection string** field. The Account label field displays the name of the Cosmos DB. Select **Next**.
-1. You'll now see a **Summary** view, that shows the **Account** label and name, the account endpoint, and the account key. Verify that they're correct, and then select **Connect**.
+    Paste your connection string into the **Connection string** field. The **Account** label field displays the name of the Cosmos DB. Select **Next**.
+1. You'll now see a **Summary** view that shows the **Account** label and name, the account endpoint, and the account key. Verify that they're correct, and then select **Connect**.
 1. The Cosmos DB connection appears in the Cosmos DB Accounts folder, with the view displayed to the right.
 
     ![Screenshot showing the Cosmos DB view panel](../media/5-cosmos-db-connect-string-view.png)
@@ -160,25 +160,25 @@ So far, you've created a Cosmos DB instance, and connected to it using Storage E
 
 You've now created a database called **products** in your Cosmos DB.
 
-### Create a collection in Cosmos DB database
+### Create a collection in a Cosmos DB database
 
-Now that you've got a Cosmos DB database, it's time to create a collection. When you create a collection, you'll need to know the collection ID or name, and the maximum storage capacity for your collection.
+Now you have a Cosmos DB database, it's time to create a collection. When you create a collection, you'll need to know its ID or name, and the maximum storage capacity.
 
 ![Screenshot showing the create collection panel](../media/5-cosmos-db-collection.png)
 
-1. Let's give this collection the name, **regions**.
+1. Let's give this collection the name **regions**.
 1. Next, specify whether this collection has a finite amount of storage space or whether it will grow to match the size of the collection. A fixed option gives you a maximum collection size of 10 GB. 
 1. The last field is **Throughput**. Accept the default of 400.
 1. Select **OK**.
 
-You'll now see that the region's collection added under the production database. You can add as many collections as you want.
+You'll now see that the region's collection is added under the production database. You can add as many collections as you want.
 
 ### Create documents in a Cosmos DB database collection
 
-The collection can contain many items. You can use Storage Explorer to manage these, including creating new documents in your collection.
+The collection can contain many items. You use Storage Explorer to manage these, including creating new documents in your collection.
 
 1. Select the **regions** collection you created earlier.
-1. In the right-hand panel is the collection panel. From here, you can manage the data in your collection.
+1. In the right-hand panel, you'll see the collection panel. From here, you can manage the data in your collection.
 
    ![Screenshot showing the document control panel](../media/5-cosmos-db-collection-create-doc.png)
 
@@ -202,20 +202,20 @@ The new document shows in the ID panel.
 
 ## Connect to a Data Lake Storage Gen2 account
 
-Before you can use Storage Explorer to manage your Data Lake Storage Gen2 account, you'll first need to create the storage account in Azure. There are two ways to create an account. The first is through the Azure portal, using the GUI to create the storage account. The other also uses the Azure portal but instead makes use of the Azure Cloud Shell. For this exercise, you'll make use of the CLI.
+Before you can use Storage Explorer to manage your Data Lake Storage Gen2 account, you'll need to create the storage account in Azure. There are two ways to create an account. The first is through the Azure portal, using the GUI. The other way uses the Azure Cloud Shell, also in the Azure portal. For this exercise, you'll use the CLI.
 
-### Create a V2 Storage account
+### Create a V2 storage account
 
-Start by creating a Storage account to support the Data Lake:
+Start by creating a storage account to support the data lake:
 
 1. Sign in to the Sandbox Azure Cloud Shell.
-1. If you haven't already done so, install the preview extension. Use the **az extensions** CLI command.
+1. If you haven't already done so, install the preview extension. Use the **az extensions** CLI command:
 
    ```BASH
    az extension add --name storage-preview
    ```
 
-1. To create the V2 Storage account, use the **az storage account create** command.
+1. To create the V2 storage account, use the **az storage account create** command:
 
    ```BASH
    az storage account create \
@@ -227,7 +227,7 @@ Start by creating a Storage account to support the Data Lake:
        --hierarchical-namespace true
    ```
 
-1. When the account is created, you'll see something similar to this JSON.
+1. When the account is created, you'll see something similar to this JSON:
 
    ```JSON
    {
@@ -296,31 +296,31 @@ Start by creating a Storage account to support the Data Lake:
    }
    ```
 
-### Connect to your Azure Data Lake Gen2 Storage account
+### Connect to your Azure Data Lake Gen2 storage account
 
-Now that you've created a V2 Storage account, you can reconnect to your Azure Storage area.
+Now you've created a V2 storage account, you can reconnect to your Azure Storage area.
 
-1. Launch Storage Explorer if you haven't already got it running.
-1. Find the **Concierge Subscription** in the resource tree and expand it to show all the Storage accounts. 
-1. Right-click on **Storage Accounts** and select **Connect to Azure Storage...**
+1. Launch Storage Explorer if you haven't already done so.
+1. Find the **Concierge Subscription** in the resource tree and expand it to show all the storage accounts. 
+1. Right-click on **Storage Accounts** and select **Connect to Azure Storage...**.
 
    ![Screenshot showing the Connect to Azure Storage option](../media/5-connect-to-azure-storage.png)
 
 1. If prompted, sign in with your Azure subscription details.
-1. When successful, you'll see the **dlsstoragetest001 (ADLS Gen2)** Storage account displayed under the Storage accounts.
+1. When successful, you'll see the **dlsstoragetest001 (ADLS Gen2)** storage account displayed under the storage accounts.
 
    ![Screenshot showing the Azure Data Lake Storage Gen2 account](../media/5-azure-data-lake-gen2-storage-account.png)
 
 ### Create a container
 
-All containers in an Azure Data Lake Gen2 Storage account are blobs. To create a new container:
+All containers in an Azure Data Lake Gen2 storage account are blobs. To create a new container:
 
-1. Right-click on the **dlsstoragetest001** Storage account and select the **Create Blob Container** from the context menu.
+1. Right-click on the **dlsstoragetest001** storage account, and select the **Create Blob Container** from the context menu.
 
     ![Screenshot showing the add container context menu](../media/5-adls-create-blob-container.png)
 
-1. Give the new container the name **myfilesystem**.
-1. When the container has is created, you'll see the interface panel appear, where you can manage the container contents.
+1. Name the new container **myfilesystem**.
+1. When the container is created, you'll see the interface panel appear, where you can manage the container contents.
 
     ![Screenshot showing the myFilesystem control ribbon and view](../media/5-adls-create-blob-container-view.png )
 
@@ -330,16 +330,15 @@ With the new **myfilesystem** container created, you can now upload files or fol
 
 ![Screenshot showing the upload options](../media/5-adls-container-upload-options.png)
 
-1. To upload a file, select the **Upload** option, and choose **Upload Files...**
+1. To upload a file, select the **Upload** option, and choose **Upload Files...**.
 1. The upload dialogue is displayed.
 
    ![Screenshot of the upload files dialogue](../media/5-adls-upload-file.png)
 
 1. Use the **ellipses** (**...**) to select the file you want to upload.
-1. When you have found the file you want to upload, select the **Upload** button.
+1. When you've found the file you want to upload, select the **Upload** button.
 1. The file is available to the **myfilesystem** container.
 
     ![Screenshot showing the uploaded file](../media/5-adls-file-uploaded.png)
 
-1. You can upload as many files as you want to this folder.
-1. You can create an unlimited number of folders. Which allows you to organize and manage the content in your folders in the same way you would with your file system.
+You can upload as many files as you want to this folder. Also, you can create an unlimited number of folders. You can then organize and manage the content in your folders, as you do with your file system.
