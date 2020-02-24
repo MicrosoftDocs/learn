@@ -16,11 +16,11 @@
 
 ### Interactions
 
-|Name|Definition|
-|----|-----------|
-|Process <-> Process|A task receives or sends data to or from a task|
-|Process <-> Data Store|A task sends or receives data to or from a data store|
-|Process <-> External Entity|A task sends or receives data to or from an external entity|
+|Name|Interaction|Definition|
+|----|-----------|----------|
+|Process <-> Process|![Process to Process Interaction](../media/process-process.png)|A task receives or sends data to or from a task|
+|Process <-> Data Store|![Process to Data Store Interaction](../media/process-datastore.png)|A task sends or receives data to or from a data store|
+|Process <-> External Entity|![Process to External Entity Interaction](../media/process-externalentity.png)|A task sends or receives data to or from an external entity|
  
 ## How Can I Prevent It?
 

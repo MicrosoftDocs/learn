@@ -20,10 +20,10 @@
 
 ### Interactions
 
-|Name|Definition|
-|----|-----------|
-|Process <-> Data Store|A task sends or receives data to or from a data store|
-|Data-flow <-> Trust boundary|Data is transmitted from a trusted environment to someone over the internet (and vice-versa)|
+|Name|Interaction|Definition|
+|----|-----------|----------|
+|Process <-> Data Store|![Process to Data Store Interaction](../media/process-datastore.png)|A task sends or receives data to or from a data store|
+|Data-flow <-> Trust boundary|![Data-Flow to Trust Boundary Interaction](../media/flow-trustboundary.png)|Data is transmitted from a trusted environment to someone over the internet (and vice-versa)|
 
 ## How Can I Prevent It?
 
