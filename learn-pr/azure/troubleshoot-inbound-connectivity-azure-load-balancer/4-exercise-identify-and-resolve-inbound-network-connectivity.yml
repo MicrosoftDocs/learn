@@ -9,7 +9,7 @@ metadata:
   ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 7
+durationInMinutes: 80
 azureSandbox: false
 content: |
   [!include[](includes/4-exercise-identify-and-resolve-inbound-network-connectivity.md)]

@@ -176,7 +176,7 @@ You now have a baseline set of metrics for the system when it's running correctl
     cd ~/load-balancer/src/scripts
     ```
 
-1. Run the following command to reconfigure the load balancer, network, and virtual machines. This script introduces some problems that you'll diagnose and correct.
+1. Run the following command to reconfigure the load balancer, network, and virtual machines. This script introduces some problems that you'll later diagnose and correct.
 
     ```bash
     bash reconfigure.sh
@@ -196,7 +196,7 @@ You now have a baseline set of metrics for the system when it's running correctl
     This time, the app won't generate any output, and might eventually time out with the message *Error sending request to Load Balancer: The operation was canceled*. Press Enter to stop the application.
 
 1. In the Azure portal, select **Dashboard**.
-1. Review the dashboard that shows the health probe status and data path availability. It should look like the following chart, with both metrics dropped to zero:
+1. Review the dashboard that shows the health probe status and data path availability. You may need to change the time range to the past 30 minutes. It should look like the following chart, with both metrics dropped to zero:
 
     > [!div class="mx-imgBorder"]
     > ![The health probe status and data path availability in an unhealthy state](../media/4-probe-unhealthy.png)
@@ -222,7 +222,7 @@ You can't ping the *appretailvm1* or *appretailvm2* virtual machines directly be
 1. Run the following command to get password that you created when you ran the initial setup script. Copy this password for the next step.
 
     ```bash
-    cat passwd.txt
+    echo $PASSWORD
     ```
  
 1. Sign in to the jump box. Replace "azureuser" if you used a different user name. 
@@ -275,6 +275,7 @@ The *retailappvm1* virtual machine is up, and the application is running on that
     > [!div class="mx-imgBorder"]
     > ![Screenshot of the Service Health - Resource health page](../media/4-service-health.png)
 
+1. Wait a few minutes for the load balancer health to be evaluated.
 1. Under **Health history**, expand the topmost event, and review the recommended steps. These steps suggest checking the VIP (routing rule) and DIP (health probe) endpoints in the load balancer.
 
     > [!div class="mx-imgBorder"]
@@ -311,7 +312,7 @@ The *retailappvm1* virtual machine is up, and the application is running on that
     exit
     ```
 
-1. Run the stress test application again:
+1. Run the stress test application again using the load balancer's IP address:
 
     ```bash
     cd ~/load-balancer/src/stresstest
@@ -345,7 +346,7 @@ The problem might be caused by a network security rule blocking external traffic
     | Name | Port_80 |
     | Description | HTTP port |
 
-1. In the Cloud Shell, run the stress test application again:
+1. In the Cloud Shell, run the stress test application again using the load balancer's IP address:
 
     ```bash
     cd ~/load-balancer/src/stresstest
@@ -354,7 +355,8 @@ The problem might be caused by a network security rule blocking external traffic
 
     The application now runs, but you only get a response from the *retailappvm1* virtual machine. Allow the application to run for two or three minutes, and then press Enter to stop it.
 
-1. In the Azure portal, go to the dashboard, and select the chart for the average Packet Count metric. Note the peak value for the latest run of the stress test application. This value should be at least double that of the value recorded earlier when both virtual machines were available. Although you now have a functioning system, you're in danger of overloading the working virtual machine.
+1. In the Azure portal, go to the dashboard.
+1. Select the chart for the average Packet Count metric. Note the peak value for the latest run of the stress test application. This value should be at least double that of the value recorded earlier when both virtual machines were available. Although you now have a functioning system, you're in danger of overloading the working virtual machine.
 
 ### Test the *appretailvm2** virtual machine
 
@@ -398,7 +400,7 @@ It seems that the *appretailvm2* virtual machine might not be handling requests 
 
     This command times out. Either the application isn't running or there might be a network issue. Press Ctrl-C to stop the command.
 
-1. On the jump box, sign in to the *retailappvm2* virtual machine. When prompted, enter the same password that you specified earlier:
+1. On the jump box, sign in to the *retailappvm2* virtual machine. When prompted, enter the same password that you specified earlier.
 
     ```bash
     ssh azureuser@retailappvm2
@@ -445,7 +447,7 @@ It seems that the *appretailvm2* virtual machine might not be handling requests 
     > [!div class="mx-imgBorder"]
     > ![Screenshot showing the inbound security rules for the NSG](../media/4-inbound-security.png)
 
-1. Select the rule, change the priority to 300 (a value greater than the port 80 rule), and then select **Save**.
+1. Select the **retailappvnetnsgrulevm2denyall** rule, change the priority to 300, and then select **Save**.
 
     > [!div class="mx-imgBorder"]
     > ![Screenshot showing the edit page for the inbound rule](../media/4-change-priority.png)
@@ -457,7 +459,7 @@ It seems that the *appretailvm2* virtual machine might not be handling requests 
     > [!div class="mx-imgBorder"]
     > ![Screenshot showing the Health Probe Status for the load balancer](../media/4-probe-healthy.png)
 
-1. Switch to the Cloud Shell, and run the *stresstest* application again:
+1. Switch to the Cloud Shell, and run the *stresstest* application again using the load balancer's IP address:
 
     ```bash
     cd ~/load-balancer/src/stresstest
