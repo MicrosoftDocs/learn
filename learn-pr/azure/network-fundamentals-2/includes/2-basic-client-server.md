@@ -4,7 +4,7 @@ In this unit, you'll gain a better understanding of the various client options. 
 
 ## Network clients
 
-In the traditional sense, a network client is a light-weight computer or device that is unable to run programs on their own. This type of client is typically used to access and interact with a mainframe computer. As technology has advanced, the client has transformed from a simple terminal and can now can represent any hardware or software system that interacts with services made available on a server. This server is located elsewhere and is accessed through a network.
+In the traditional sense, a network client is a light-weight computer or device that is unable to run programs on their own. This type of client is typically used to access and interact with a mainframe computer. As technology has advanced, the client has transformed from a simple terminal and can now represent any hardware or software system that interacts with services made available on a server. This server is located elsewhere and is accessed through a network.
 
 A client would be considered as part of the client-server model that is in use today.
 
@@ -80,8 +80,8 @@ Another common network architecture type is the peer-to-peer network. Peer-to-pe
 
 ## What's available in Azure
 
-Azure has several tools that can help with the configuration and management of clients and servers in your network. Here is a brief overview of some of the more common Azure tools:
+Azure has several tools that can help with the configuration and management of clients and servers in your network. Here is a brief overview of two common Azure tools:
 
-- **Azure Resource Manager**. This is a management service that provides a means to organize and secure your organization's assets and resources. It uses declarative templates to manage your infrastructure. It uses Role-Based Access Control (RBAC) to improve the security and access to your assets and resources.
+- **Azure Resource Manager**. This is a management service that provides a means to organize and secure your organization's assets and resources. It uses declarative templates to manage your infrastructure. It uses role-based access control (RBAC) to improve the security and access to your assets and resources.
 
-- **Azure VM**. Azure Virtual Machines are the perfect mechanism for implementing a server without the need to purchase and house server hardware. Virtualization provides the flexibility to have multiple dedicated servers all within a cloud environment. Azure VMs will work with both the cloud and your on-premises network. They are scalable, and will dynamically adapt to meet your organization's needs as you grow.
+- **Azure Virtual Machines**. By using this service, you can implement a server without the need to purchase and house server hardware. Virtualization provides the flexibility to have multiple dedicated servers within a cloud environment. Azure VMs will work with both the cloud and your on-premises network. They are scalable and will dynamically adapt to meet your organization's needs as you grow.
