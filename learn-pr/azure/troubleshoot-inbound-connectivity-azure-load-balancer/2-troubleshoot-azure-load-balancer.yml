@@ -15,7 +15,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: What happens if a health probe hasn't been configured and a VM fails?
+  - content: What happens if a health probe isn't configured and a VM fails?
     choices:
     - content: Load Balancer won't notice the failure and continues to route traffic to the failed VM. This issue causes requests to time out.
       isCorrect: true
@@ -25,21 +25,21 @@ quiz:
       explanation: Load Balancer doesn't remove the VM from the backend pool.
     - content: Load Balancer doesn't know which VM has failed, and so stops sending requests to all VMs in the backend pool.
       isCorrect: false
-      explanation: No. Load Balancer won't notice the failure, and will continue to route traffic to the failed VM, causing requests to time out.
-    - content: Load Balancer will send a response back to the client indicating that it can't route requests to VMs in the backend pool.
+      explanation: Load Balancer won't notice the failure and continues to route traffic to the failed VM.
+    - content: Load Balancer sends a response back to the client indicating that it can't route requests to VMs in the backend pool.
       isCorrect: false
-      explanation: No. Load Balancer won't notice the failure, and will continue to route traffic to the failed VM, causing requests to time out.
-  - content: You've closed a port in a network security group used by a virtual network that hosts the VMs in the Load Balancer pool. How might this affect load balancing?
+      explanation: Load Balancer won't notice the failure and continues to route traffic to the failed VM.
+  - content: You closed a port in a network security group used by a virtual network that hosts the VMs in the Load Balancer pool. How might this affect load balancing?
     choices:
-    - content: Load Balancer will attempt to use a different port, if one is available. Requests will be sent to VMs through this port instead.
+    - content: If one is available, Load Balancer attempts to use a different port. Requests are sent to VMs through this port instead.
       isCorrect: false
-      explanation: No. If the port was being used to send traffic to the VMs in the pool, then this traffic will be blocked and all requests will time out and eventually fail. If this was a probe port, this VM will be removed from rotation. 
-    - content: If the port was being used to send traffic to the VMs in the pool, then this traffic will be blocked and all requests will time out and eventually fail. If this was a probe port, this VM will be removed from rotation.
+      explanation: Traffic is blocked and all requests time out and eventually fail unless this port was a probe port. In that case, the VM is removed from rotation. 
+    - content: If the port is used to send traffic to the VMs in the pool, then this traffic is blocked. All requests time out and eventually fail. If this port was a probe port, the VM is removed from rotation.
       isCorrect: true
-      explanation: This answer is correct.
-    - content: Load Balancer will report an error to the client stating that no VMs are available, and to try again later.
+      explanation: Traffic is blocked and all requests time out and eventually fail unless this port was a probe port. In that case, the VM is removed from rotation.
+    - content: Load Balancer reports an error to the client stating that no VMs are available, and to try again later.
       isCorrect: false
-      explanation: No. If the port was being used to send traffic to the VMs in the pool, then this traffic will be blocked and all requests will time out and eventually fail. If this was a probe port, this VM will be removed from rotation. 
-    - content: Load Balancer will queue client requests until the port is opened again. At that point, the requests will be sent.
+      explanation: Traffic is blocked and all requests time out and eventually fail unless this port was a probe port. In that case, the VM is removed from rotation. 
+    - content: Load Balancer queues client requests until the port is opened again. At that point, the requests are sent.
       isCorrect: false
-      explanation: No. If the port was being used to send traffic to the VMs in the pool, then this traffic will be blocked and all requests will time out and eventually fail. If this was a probe port, this VM will be removed from rotation. 
+      explanation: Traffic is blocked and all requests time out and eventually fail unless this port was a probe port. In that case, the VM is removed from rotation.

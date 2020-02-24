@@ -3,7 +3,7 @@ In this module, you've learned how to troubleshoot connectivity for Azure Load B
 
 ## Clean up
 
-Resources left running can cost you money. In your Azure account, delete the resource group **learn-ts-loadbalancer-rg** to delete the all the resources you created for the this module.
+Resources left running can cost you money. In your Azure account, delete the resource group **learn-ts-loadbalancer-rg** to delete the all the resources you created for this module.
 
 
 [!include[](../../../includes/azure-sandbox-cleanup.md)]
