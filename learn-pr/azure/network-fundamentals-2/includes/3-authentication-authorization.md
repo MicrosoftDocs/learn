@@ -54,7 +54,7 @@ An authentication protocol is a shared set of rules for how information is excha
 
 ### Kerberos
 
-Kerberos is an authentication protocol used across different operating systems. Windows uses Kerberos as its default authentication protocol. Linux and Mac OS can also use Kerberos.
+Kerberos is an authentication protocol used across different operating systems. Windows uses Kerberos as its default authentication protocol. Linux and Mac OSs can also use Kerberos.
 
 ![Kerberos process](../media/3-kerberos.svg)
 
