@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.tm-prioritize-your-issues-and-apply-security-controls.4-understand-each-security-control-function
-title: Understand each security control function
+title: Security Control Functions
 metadata:
-  title: Understand each security control function
+  title: Security Control Functions
   description: Learn about security control functions and how they map to security control types
   ms.date: 02/28/2020
   author: rodsan

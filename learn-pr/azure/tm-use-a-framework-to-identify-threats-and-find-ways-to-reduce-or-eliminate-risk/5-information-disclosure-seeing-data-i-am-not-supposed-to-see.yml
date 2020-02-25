@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.tm-use-a-framework-to-identify-threats-and-find-ways-to-reduce-or-eliminate-risk.5-information-disclosure-seeing-data-i-am-not-supposed-to-see
-title: Information Disclosure - Seeing data I am not supposed to see
+title: Information Disclosure - Seeing Data I Am Not Supposed To See
 metadata:
-  title: Information Disclosure - Seeing data I am not supposed to see
-  description: Learn about information disclosure and its corresponding security control
+  title: Information Disclosure - Seeing Data I Am Not Supposed To See
+  description: Learn about Information Disclosure and its corresponding security control
   ms.date: 02/28/2020
   author: rodsan
   ms.author: rodsan

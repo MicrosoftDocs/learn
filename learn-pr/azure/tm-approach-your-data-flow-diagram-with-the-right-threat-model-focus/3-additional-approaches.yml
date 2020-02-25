@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.tm-approach-your-data-flow-diagram-with-the-right-threat-model-focus.3-additional-approaches
-title: Additional Approaches in Threat Modeling
+title: Additional Approaches
 metadata:
-  title: Additional Approaches in Threat Modeling
+  title: Additional Approaches
   description: High-level overview of asset and attacker focused approaches in threat modeling
   ms.date: 02/28/2020
   author: rodsan

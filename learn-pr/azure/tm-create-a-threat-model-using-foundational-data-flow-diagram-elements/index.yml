@@ -1,19 +1,19 @@
 ### YamlMime:Module
 uid: learn.tm-create-a-threat-model-using-foundational-data-flow-diagram-elements
 metadata:
-  title: Create a Threat Model Using Foundational Data-Flow Diagram Elements
-  description: Explore each element in a data-flow diagram, made up of distinct shapes, functions, and recommended context
+  title: Create a Threat Model Using Data-Flow Diagram Elements
+  description: Data-flow diagrams are graphical representations of your system and should specify each element, their interactions and context.
   ms.date: 02/28/2020
   author: rodsan
   ms.author: rodsan
   ms.topic: interactive-tutorial
   ms.prod: learning-threat-modeling
-title: Create a Threat Model Using Foundational Data-Flow Diagram Elements
-summary: Data-flow diagrams are graphical representations of your system and should specify each element and interaction, which are analyzed against STRIDE to help identify threats and reduce or eliminate risk.
+title: Create a Threat Model Using Data-Flow Diagram Elements
+summary: Data-flow diagrams are graphical representations of your system and should specify each element, their interactions and context.
 abstract: |
     In this module, you will:
     - The shape and function of each element
-    - The context to include when creating a data-flow diagram
+    - The context to include in an element when creating a data-flow diagram
 prerequisites: None
 iconUrl: /learn/achievements/generic-badge.svg
 ratingEnabled: false

@@ -1,15 +1,15 @@
 ### YamlMime:Module
 uid: learn.tm-use-a-framework-to-identify-threats-and-find-ways-to-reduce-or-eliminate-risk
 metadata:
-  title: Use a framework to identify threats and find ways to reduce or eliminate risk
-  description: Learn about each threat category with their corresponding security controls
+  title: Use a Framework to Identify Threats and Find Ways to Reduce or Eliminate Risk
+  description: Threat modeling helps you generate a list of potential threats using STRIDE and find ways to reduce or eliminate risk with corresponding security controls.
   ms.date: 02/28/2020
   author: rodsan
   ms.author: rodsan
   ms.topic: interactive-tutorial
   ms.prod: learning-threat-modeling
-title: Use a framework to identify threats and find ways to reduce or eliminate risk
-summary: Threat modeling helps you generate a list of potential threats and find ways to reduce or eliminate risk. Use STRIDE to find design security issues using the threat categories that make up its acronym.
+title: Use a Framework to Identify Threats and Find Ways to Reduce or Eliminate Risk
+summary: Threat modeling helps you generate a list of potential threats using STRIDE and find ways to reduce or eliminate risk with corresponding security controls.
 abstract: |
   In this module, you'll learn:
   - Each STRIDE threat category

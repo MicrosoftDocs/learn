@@ -2,7 +2,7 @@
 uid: learn.tm-approach-your-data-flow-diagram-with-the-right-threat-model-focus
 metadata:
   title: Approach Your Data-Flow Diagram with the Right Threat Model Focus
-  description: Learn what it means to conduct a system focused threat modeling exercise, and the high-level differences between system, asset, and attacker focused approaches
+  description: Threat modeling is an effective technique to help you identify threats and ways to reduce or eliminate risk. We start by deciding to focus on either **what** needs to be protected or **who** it needs protection from.
   ms.date: 02/28/2020
   author: rodsan
   ms.author: rodsan
@@ -13,7 +13,7 @@ summary: Threat modeling is an effective technique to help you identify threats 
 abstract: |
   In this module, you'll learn:
   - What a system focused threat modeling means
-  - The differences between the system, asset, and attacker focused approaches
+  - The differences between system, asset, and attacker focused approaches
 prerequisites: None
 iconUrl: /learn/achievements/generic-badge.svg
 ratingEnabled: false

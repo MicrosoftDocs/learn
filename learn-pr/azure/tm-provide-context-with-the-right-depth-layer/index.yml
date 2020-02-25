@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.tm-provide-context-with-the-right-depth-layer
 metadata:
-  title: Provide context with the right depth layer
-  description: Learn about the different data-flow diagram depth levels
+  title: Provide Context with the Right Depth Layer
+  description: Threat models can get complex if all parties involved cannot agree on a data-flow diagram depth layer that provides enough context to satisfy requirements
   ms.date: 02/28/2020
   author: rodsan
   ms.author: rodsan
   ms.topic: interactive-tutorial
   ms.prod: learning-threat-modeling
-title: Provide context with the right depth layer
+title: Provide Context with the Right Depth Layer
 summary: Threat models can get complex if all parties involved cannot agree on a data-flow diagram depth layer that provides enough context to satisfy requirements
 abstract: |
   In this module, you'll learn:

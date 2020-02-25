@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.tm-use-a-framework-to-identify-threats-and-find-ways-to-reduce-or-eliminate-risk.3-tampering-changing-data-without-authorization
-title: Tampering - Changing data without authorization
+title: Tampering - Changing Data Without Authorization
 metadata:
-  title: Tampering - Changing data without authorization
-  description: Learn about tampering and its corresponding security control
+  title: Tampering - Changing Data Without Authorization
+  description: Learn about Tampering and its corresponding security control
   ms.date: 02/28/2020
   author: rodsan
   ms.author: rodsan

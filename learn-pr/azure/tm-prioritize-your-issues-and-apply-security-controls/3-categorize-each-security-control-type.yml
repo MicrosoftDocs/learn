@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.tm-prioritize-your-issues-and-apply-security-controls.3-categorize-each-security-control-type
-title: Categorize each security control type
+title: Security Control Types
 metadata:
-  title: Categorize each security control type
+  title: Security Control Types
   description: Learn about the three security control types
   ms.date: 02/28/2020
   author: rodsan

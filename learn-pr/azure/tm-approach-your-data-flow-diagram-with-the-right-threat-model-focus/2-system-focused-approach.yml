@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.tm-approach-your-data-flow-diagram-with-the-right-threat-model-focus.2-system-focused-approach
-title: System Focused Approach in Threat Modeling
+title: System Focused Approach
 metadata:
-  title: System Focused Approach in Threat Modeling
+  title: System Focused Approach
   description: Learn how to use the system focused approach in threat modeling
   ms.date: 02/28/2020
   author: rodsan
