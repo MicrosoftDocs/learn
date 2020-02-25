@@ -70,7 +70,7 @@ Use the Azure portal to create a tenant and a new Azure AD resource.
 
 You'll use a form in the Azure portal to create your Azure AD.
 
-![Azure AD](../media/5-create-azuread.png)
+![Azure AD](../media/5-create-azure-ad.png)
 
 ## Associate a subscription
 

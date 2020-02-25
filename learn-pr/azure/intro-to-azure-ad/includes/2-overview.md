@@ -50,7 +50,7 @@ Azure AD is a cloud-based identity solution to help you manage users and applica
 |Active Directory     |Kerberos, NTLM| Forests, domains,  organizational  units. | Authentication and authorization for on-premises printers, applications, file services, and more.
 |Azure Active Directory     |Includes SAML, OAuth, WS-Federation|Tenants.|Internet-based services and applications like Office 365, Azure services, and third-party SaaS applications.
 
-![Active Directory and Azure AD](../media/2-azuread-compared-active-directory.svg)
+![Active Directory and Azure AD](../media/2-azure-ad-compared-active-directory.svg)
 
 Azure AD doesn't replace Active Directory. Which service you use depends on your organization's needs. The two services can also be used together, to take advantage of their combined features and capabilities.
 

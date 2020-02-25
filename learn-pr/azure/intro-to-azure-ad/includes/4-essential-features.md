@@ -38,7 +38,7 @@ This feature is available on a pay-as-you-go basis.
 
 Azure Active Directory Domain Services (Azure AD DS) lets you add virtual machines to a domain without needing domain controllers. Your internal staff users can access virtual machines using their company Azure AD credentials. You use this service to reduce the complexity of migrating on-premises applications to Azure. An organization could also use Azure AD DS to handle its infrastructure if it runs both on-premises and in the cloud. The process might go like this:
 
-![Azure AD DS](../media/4-azuread-domain-services.svg)
+![Azure AD DS](../media/4-azure-ad-domain-services.svg)
 
 1. The organization deploys its applications and servers in a virtual network on Azure.
 1. Identity information is synchronized between the on-premises Active Directory and the organization's tenant in Azure AD, using a tool called Azure AD Connect sync.
@@ -55,7 +55,7 @@ You can manage different categories of applications with Azure AD:
 
 - **Azure AD Gallery applications**. Thousands of SaaS applications have already been integrated with Azure AD. You can find these applications in the Azure Active Directory Marketplace.
 
-    ![Azure AD Marketplace](../media/4-azuread-marketplace.png)
+    ![Azure AD Marketplace](../media/4-azure-ad-marketplace.png)
 
 - **Custom-developed applications**. You can register these applications, which are built by your company, with Azure AD. You then control and monitor authentication for these applications.
 
@@ -93,7 +93,7 @@ Azure Active Directory Identity Protection helps you to automatically detect, re
 
 Identity Protection uses risk policies to automatically detect, and respond to, threats for you. You configure a risk policy to decide how you want Identity Protection to respond to a particular type of risk. Using policies in this way saves time, and gives you peace of mind.
 
-![Identity Protection flow](../media/4-aadip-flow.svg)
+![Identity Protection flow](../media/4-identity-protection-flow.svg)
 
 With automated risk detection and remediation through Identity Protection, the administrator first configures the risk policies, which then monitor for identity risks. When a risk is detected, the policies enforce measures to remediate it. For example, a policy might ask a user to reset their password in response to a detected risk. The user then resets their password, and the risk is remediated.
 
