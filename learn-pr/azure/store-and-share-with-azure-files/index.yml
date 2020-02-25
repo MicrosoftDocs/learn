@@ -17,7 +17,7 @@ abstract: |
   - Identify how to secure Azure Files deployments
 prerequisites: | 
   - Knowledge of Windows Server file shares
-iconUrl: http://via.placeholder.com/120x120
+iconUrl: /learn/achievements/store-and-share-with-azure-files.svg
 levels:
 - beginner
 roles:
