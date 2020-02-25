@@ -1,0 +1,28 @@
+### YamlMime:ModuleUnit
+uid: learn.tm-introduction-to-threat-modeling.3-step-2-break-phase
+title: Step 2 - Break Phase
+metadata:
+  title: Step 2 - Break Phase - Enumerate Threats and Brainstorm Solutions
+  description: Enumerate Threats and Brainstorm Solutions
+  ms.date: 02/28/2020
+  author: rodsan
+  ms.author: rodsan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-threat-modeling
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-step-2-break-phase.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What happens at the Break Phase?"
+    choices:
+    - content: "You select a focus area with an associated framework to systematically identify potential threats in your system."
+      isCorrect: true
+      explanation: "Focus on either the system or the attacker while using STRIDE to find potential threats."
+    - content: "You select a focus area with an associated framework to systematically identify potential solutions for your system."
+      isCorrect: false
+      explanation: "This task is part of Phase 3 - Fix Phase."
+    - content: "Meet with the security team to select a focus area and associated framework to systematically identify potential threats in your system."
+      isCorrect: false
+      explanation: "In most cases, meeting with the security team is optional, not mandatory (unless required by the organization)."
