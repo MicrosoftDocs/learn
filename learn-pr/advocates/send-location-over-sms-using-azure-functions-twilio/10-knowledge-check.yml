@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.send-location-over-sms-from-mobile-using-azure-functions-twilio.10-knowledge-check
-title: Knowledge check
+title: Check your Knowledge
 metadata:
   title: Summary and clean-up
   description: Knowledge check
@@ -13,7 +13,7 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 2
 quiz:
-    title: Knowledge check
+    title: Check your Knowledge
     questions:
     - content: "How do you bind your function to Twilio to send SMS messages?"
       choices:
