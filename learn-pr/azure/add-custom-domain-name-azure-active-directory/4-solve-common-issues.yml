@@ -3,7 +3,7 @@ uid: learn.azure.add-custom-domain-name-azure-active-directory.solve-common-issu
 title: Solve common issues when adding custom domain name
 metadata:
   title: Solve common issues when adding custom domain name
-  description: Resolve a unmanaged Azure Active Directory organization issue, and also explore other issues and how to resolve them.
+  description: Resolve an unmanaged Azure Active Directory organization issue, and also explore other issues and how to resolve them.
   ms.date: 02/25/2020
   author: cwatson-cat
   ms.author: cwatson

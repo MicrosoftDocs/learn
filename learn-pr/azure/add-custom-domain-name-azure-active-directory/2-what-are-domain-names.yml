@@ -26,7 +26,7 @@ quiz:
       explanation: "You can use any country code top-level domains, or generic top-level domains as long it isn't already being used by an Azure AD organization."
     - content: Any registered domain that's not already being used.
       isCorrect: true
-      explanation: "You can use any registered domain as long has it isn't already being used by an Azure AD organization."
+      explanation: "You can use any registered domain as long it isn't already being used by an Azure AD organization."
 
   - content: "Which resources can a custom domain Azure AD account access?"
     choices:
