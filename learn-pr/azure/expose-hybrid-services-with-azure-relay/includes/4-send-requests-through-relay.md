@@ -10,7 +10,7 @@ The listener and sender components must identify themselves to Azure Relay when 
 
 This code shows how to configure the credentials and add them to `TokenProvider`:
 
-```c#
+```csharp
 // Store credentials. In production code, keep these values in a secure location, such as Azure Key Vault.
 private const string KeyName = "RootManageSharedAccessKey";
 private const string Key = "<your key here>";
@@ -23,7 +23,7 @@ var tokenProvider = TokenProvider.CreateSharedAccessSignatureTokenProvider(KeyNa
 
 To connect a listener to the Azure Relay service, you create and configure an instance of the `HybridConnectionListener` class. Pass the URI for the relay and the `TokenProvider` to the constructor.
 
-```c#
+```csharp
 // Store the connection details.
 private const string RelayNamespace = "{RelayNamespace}.servicebus.windows.net";
 private const string ConnectionName = "{HybridConnectionName}";
@@ -34,7 +34,7 @@ var listener = new HybridConnectionListener(new Uri(string.Format("sb://{0}/{1}"
 
 Next, you subscribe to relevant events in the relay, such as connection events.
 
-```c#
+```csharp
 listener.Connecting += (o, e) => { Console.WriteLine("Connecting"); };
 listener.Offline += (o, e) => { Console.WriteLine("Offline"); };
 listener.Online += (o, e) => { Console.WriteLine("Online"); };
@@ -42,7 +42,7 @@ listener.Online += (o, e) => { Console.WriteLine("Online"); };
 
 To configure how the listener responds to messages, use its `RequestHandler` property. To send a response, use `StreamWriter`.
 
-```c#
+```csharp
 listener.RequestHandler = (context) =>
 {
     // Configure the response status.
@@ -60,13 +60,13 @@ listener.RequestHandler = (context) =>
 
 When you've configured the listener, you open it to begin listening for messages. Because the relay, listener, and sender are all hosted in different locations, they might take some time to respond to messages. It's important to use asynchronous code for these messages to ensure that your app doesn't hang as it waits for responses. You'll notice the asynchronous `await` keyword and asynchronous method names in the following code:
 
-```c#
+```csharp
 await listener.OpenAsync()
 ```
 
 Remember to close the listener at an appropriate point in your code:
 
-```c#
+```csharp
 await listener.CloseAsync();
 ```
 
@@ -74,7 +74,7 @@ await listener.CloseAsync();
 
 For the sender, there's no Azure Relay-specific object. You can use a standard `HttpRequestMessage` object, as you would when you call any web service.
 
-```c#
+```csharp
 // Store the connection details.
 private const string RelayNamespace = "{RelayNamespace}.servicebus.windows.net";
 private const string ConnectionName = "{HybridConnectionName}";
@@ -94,7 +94,7 @@ var request = new HttpRequestMessage()
 
 To pass the token, add it to the request headers:
 
-```c#
+```csharp
 // Create the token from the token provider.
 var token = (await tokenProvider.GetTokenAsync(uri.AbsoluteUri, TimeSpan.FromHours(1))).TokenString;
 
@@ -104,7 +104,7 @@ request.Headers.Add("ServiceBusAuthorization", token);
 
 Now you can send a message by using the `SendAsync` method, and obtain a response asynchronously:
 
-```c#
+```csharp
 // Send the request.
 var response = await client.SendAsync(request);
 

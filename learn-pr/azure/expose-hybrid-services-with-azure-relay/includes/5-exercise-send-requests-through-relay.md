@@ -27,7 +27,7 @@ First, let's ensure that the listener app can connect to the relay. The app need
 
 1. In the code, look for the "// Details of the Azure Relay" comment. Immediately after the comment, add this code:
 
-    ```c#
+    ```csharp
     private const string RelayNamespace = "<namespace>.servicebus.windows.net";
     private const string ConnectionName = "creditcheckconnection";
     private const string KeyName = "RootManageSharedAccessKey";
@@ -44,7 +44,7 @@ You must add the credit-checking service to your relay as a listener, so that it
 
 1. In the *Program.cs* code file for the listener app, look for the "// Subscribe to the status events" comment. Immediately after the comment, add this code:
 
-    ```c#
+    ```csharp
     listener.Connecting += (o, e) => { Console.WriteLine("Connecting"); };
     listener.Offline += (o, e) => { Console.WriteLine("Credit check service is offline"); };
     listener.Online += (o, e) => { Console.WriteLine("Credit check service is online"); };
@@ -52,7 +52,7 @@ You must add the credit-checking service to your relay as a listener, so that it
 
 1. Look for the "// Obtain the name from the request" comment. Immediately after the comment, add this code:
 
-    ```c#
+    ```csharp
     TextReader tr = new StreamReader(context.Request.InputStream);
     String requestedName = tr.ReadToEnd();
     Console.WriteLine("A request was received to check credit for: " + requestedName);
@@ -60,7 +60,7 @@ You must add the credit-checking service to your relay as a listener, so that it
 
 1. Look for the "// Formulate and send the response" comment. Immediately after the comment, add this code:
 
-    ```c#
+    ```csharp
     context.Response.StatusCode = HttpStatusCode.OK;
     context.Response.StatusDescription = "Credit check successful";
     using (var sw = new StreamWriter(context.Response.OutputStream))
@@ -71,7 +71,7 @@ You must add the credit-checking service to your relay as a listener, so that it
 
 1. Look for the "// Open the listener" comment. Immediately after the comment, add this code:
 
-    ```c#
+    ```csharp
     await listener.OpenAsync();
     Console.WriteLine("Server listening");
     ```
@@ -93,7 +93,7 @@ Apps that want to check a customer's credit record send a request to the relay, 
 
 1. Look for the "// Details of the Azure Relay" comment. Immediately after the comment, add this code:
 
-    ```c#
+    ```csharp
     private const string RelayNamespace = "<namespace>.servicebus.windows.net";
     private const string ConnectionName = "creditcheckconnection";
     private const string KeyName = "RootManageSharedAccessKey";
@@ -110,7 +110,7 @@ To request a credit check, the sender app sends a name in an HTTP GET request to
 
 1. In the *Program.cs* code file for the sender app, look for the "// Create an HttpClient and formulate the request" comment. Immediately after the comment, add this code:
 
-    ```c#
+    ```csharp
     var client = new HttpClient();
     var request = new HttpRequestMessage()
     {
@@ -123,13 +123,13 @@ To request a credit check, the sender app sends a name in an HTTP GET request to
 
 1. Look for the "// Send the request" comment. Immediately after the comment, add this code: 
 
-    ```c#
+    ```csharp
     var response = await client.SendAsync(request);
     ```
 
 1. Look for the "// Display the result" comment. Immediately after the comment, add this code: 
 
-    ```c#
+    ```csharp
     Console.WriteLine(await response.Content.ReadAsStringAsync());
     ```
 
