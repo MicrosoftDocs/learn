@@ -9,5 +9,5 @@ You now know the licensing costs and implications of using Azure AD and the feat
 To learn more about Azure Active Directory, visit the following articles:
 
 - [Azure Active Directory documentation](https://docs.microsoft.com/azure/active-directory/)
-- [What is Azure Active Directory?](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-whatis)
-- [Azure Active Directory feature deployment guide](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-deployment-checklist-p2)
+- [What is Azure Active Directory?](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)
+- [Azure Active Directory feature deployment guide](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-deployment-checklist-p2)
