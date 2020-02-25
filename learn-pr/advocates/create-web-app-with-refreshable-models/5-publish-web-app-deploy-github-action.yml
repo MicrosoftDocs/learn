@@ -11,6 +11,6 @@ metadata:
   ROBOTS: NOINDEX
   azureSandbox: true
 title: Exercise -  publish your web app and deploy it with a GitHub Action
-durationInMinutes: 15
+durationInMinutes: 10
 content: |
   [!include[](includes/5-publish-web-app-deploy-github-action.md)]
