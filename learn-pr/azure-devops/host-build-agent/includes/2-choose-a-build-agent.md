@@ -83,7 +83,7 @@ Microsoft-hosted agents have a few limitations, which include:
 
 * **Build duration**: A build job can run for up to six hours.
 * **Disk space**: Hosted agents provide a fixed amount of storage for your sources and your build outputs. This may not be enough storage.
-* **CPU, memory, and network**: Hosted agents run on Microsoft Azure general purpose VMs. [Standard_DS2_v2](https://docs.microsoft.com/azure/virtual-machines/windows/sizes-general?azure-portal=true#dsv2-series) describes the CPU, memory, and network characteristics you can expect.
+* **CPU, memory, and network**: Hosted agents run on Microsoft Azure general purpose VMs. [Standard_DS2_v2](https://docs.microsoft.com/azure/virtual-machines/dv2-dsv2-series#dsv2-series) describes the CPU, memory, and network characteristics you can expect.
 * **Interactivity**: You can't sign in to a hosted agent.
 * **File shares**: You can't drop build artifacts to Universal Naming Convention (UNC) file shares.
 

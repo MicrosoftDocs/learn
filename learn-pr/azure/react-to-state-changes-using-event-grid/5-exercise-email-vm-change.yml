@@ -19,10 +19,10 @@ tasks:
   azure:
     resource:
       type: Microsoft.Compute/virtualMachines
-  hint: "Please make sure you have a VM deployed to test out Event Grid."
+  hint: "Please make sure you have a VM deployed to test Event Grid."
 - action: exists
   environment: azure
   azure:
     resource:
       type: Microsoft.Logic/workflows
-  hint: "Please make sure you have a Logic App deployed to test out Event Grid."
+  hint: "Please make sure you have a logic app deployed to test Event Grid."
