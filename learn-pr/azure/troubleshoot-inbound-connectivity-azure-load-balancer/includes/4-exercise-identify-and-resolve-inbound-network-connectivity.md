@@ -72,7 +72,7 @@ This exercise is optional. To complete it, you need access to an Azure subscript
     | **retailappnsg** | Network security group | Acts as an initial filter for both virtual machines, but the NSG for each virtual machine provides the ability to filter traffic on a per-machine basis. |
     | **retailappip** | Public IP address | Public IP address that provides front-end access to the load balancer. |
     | **retailappvm1** and **retailappvm2** | Virtual machine | VMs running the retail application |
-    | **retailappvmjumpbox** | Virtual machine | VM that is also in the virtual network, but has a pubic IP address. An administrator can sign in to this virtual machine to access the **retailappvm1** and **retailappvm2** VMs, which only have private IP addresses. |
+    | **retailappvmjumpbox** | Virtual machine | VM that is also in the virtual network, but has a public IP address. An administrator can sign in to this virtual machine to access the **retailappvm1** and **retailappvm2** VMs, which only have private IP addresses. |
     | **retailappvnet** | Virtual network | Virtual network for the VMs |
 
 
