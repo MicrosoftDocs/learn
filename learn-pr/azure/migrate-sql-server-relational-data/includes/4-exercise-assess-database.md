@@ -1,6 +1,6 @@
-In this exercise, you'll use Data Migration Assistant to assess your existing social database for any issues and ensure it's compatible with Azure SQL Database. This is an important step to ensure that your company's database can be successfully migrated to Azure.
+In this exercise, you use Data Migration Assistant to assess your existing social database for any issues and ensure it's compatible with Azure SQL Database. This is an important step to ensure that your company's database can be successfully migrated to Azure.
 
-You'll start by installing Data Migration Assistant on your SQL Server instance.
+You start by installing Data Migration Assistant on your SQL Server instance.
 
 ## Connect to a VM
 
@@ -10,7 +10,7 @@ You'll start by installing Data Migration Assistant on your SQL Server instance.
 
 1. In the list of resources in the resource group, select the **admsdemovm** virtual machine (VM).
 
-1. In the toolbar above the VM info, select **Connect**.
+1. On the toolbar above the VM info, select **Connect**.
 
 1. On the **Connect to virtual machine** pane, select **Download RDP File** and save it to your computer in a location of your choosing.
 
@@ -24,9 +24,9 @@ Before you can download Data Migration Assistant, you need to disable Enhanced S
 
 1. Select **Local Server** on the left menu.
 
-1. Select the setting for **IE Enhanced Security Configuration**.
+1. Select the **IE Enhanced Security Configuration** setting.
 
-1. Change the setting to **Off** for Administrators, and then select **OK**.
+1. Change the setting to **Off** for **Administrators**, and then select **OK**.
 
 ## Download, install, and run Data Migration Assistant
 
@@ -40,7 +40,7 @@ Before you can download Data Migration Assistant, you need to disable Enhanced S
 
 1. Select a **Project type** of **Assessment**.
 
-1. For the Project name, enter **Social Database Assessment**.
+1. For **Project name**, enter **Social Database Assessment**.
 
 1. Leave the remaining fields at their default values and select **Create**.
 
@@ -72,7 +72,7 @@ Before you can download Data Migration Assistant, you need to disable Enhanced S
 
 ## Review the assessment results and address issues
 
-Allow the analysis to run. When it finishes, it will produce results and break them into SQL Server *feature parity* issues or *compatibility issues*. Start by looking at the SQL Server feature parity results, which are the default.
+Allow the analysis to run. When it finishes, it produces results and breaks them into SQL Server *feature parity* issues or *compatibility issues*. Start by looking at the SQL Server feature parity results, which are the default.
 
   ![Review results](../media/4-07-review-results.png)
 
@@ -98,7 +98,7 @@ Select **Compatibility issues**. It shows that there were no compatibility issue
 
 1. Switch back to Data Migration Assistant. Select **Restart Assessment** to have Data Migration Assistant reassess the fixed database.
 
-1. When it finishes, you should still be on the **Compatibility Issues** page, and it should still show that there are none.
+1. When the assessment finishes, you should still be on the **Compatibility Issues** page, and it should still show that there are none.
 
 1. Select **SQL Server feature parity**. It should now show that the issue has been resolved.
 

@@ -1,4 +1,4 @@
-In this exercise, you'll lay the groundwork for using Data Migration Assistant. You'll use the Azure portal to deploy a template that will create resources you'll need to perform the exercises.
+In this exercise, you lay the groundwork for using Data Migration Assistant. You use the Azure portal to deploy a template that will create resources you'll need to perform the exercises.
 
 > [!IMPORTANT]
 > [!INCLUDE [azure-subscription-prerequisite](../../../includes/azure-subscription-prerequisite.md)]
