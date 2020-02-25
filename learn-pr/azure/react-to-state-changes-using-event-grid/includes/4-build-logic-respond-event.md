@@ -1,6 +1,6 @@
 When you create events in Azure Event Grid, you choose how to respond to those events and which actions should occur.
 
-You've set up a logic app for your healthcare organization to listen for events related to your Azure resources. You now need the facility to filter the events and create actions based on conditions within these events.
+You've set up a logic app for your healthcare organization to listen for events related to your Azure resources. You now need to filter the events and create actions based on conditions within them.
 
 Here, you'll learn how to create actions and conditions to respond to events.
 
@@ -8,13 +8,13 @@ Here, you'll learn how to create actions and conditions to respond to events.
 
 To run actions in your logic app after events pass a specified condition, you add a conditional statement. This control structure compares the data in your workflow against specific values or fields. You then specify different actions that run based on whether the data meets the condition.
 
-The screenshot shows an example of a filter that checks whether a filename in a directory has the PDF extension.
+The following screenshot shows an example of a filter that checks whether a filename in a directory has the .pdf extension.
 
-![PDF condition](../media/4-logic-apps-filter-array.png)
+![Condition for a .pdf extension](../media/4-logic-apps-filter-array.png)
 
 For example, suppose you have a logic app that needs to send an email based on certain fields being found in an Event Grid trigger. You'd create a condition in your logic app that could check the event data and conditionally call an action.
 
-## Logic apps actions
+## Actions
 
 Logic apps provide built-in triggers and actions so you can orchestrate workflows, communicate with other apps and services, and manage or manipulate data.
 
@@ -27,16 +27,16 @@ There are many built-in actions that you can use. Here are some examples:
 
 Suppose you have a logic app that needs to send an email in response to an event. You could use the built-in Office 365 Outlook action.
 
-## Logic app JSON configuration
+## JSON configuration
 
 A logic app has two different views in the Azure portal that are used for development and configuration:
 
-- **Designer view** - user interface that visually maps all triggers, actions, and connectors
-- **Code view** - a JSON configuration that allows any field to be edited in a code editor
+- **Designer view**: User interface that visually maps all triggers, actions, and connectors.
+- **Code view**: JSON configuration that allows any field to be edited in a code editor.
 
-    ![Change logic app view](../media/4-code-designer-view.png)
+![Choice of two views for a logic app](../media/4-code-designer-view.png)
 
-The example below demonstrates the JSON configuration for an Event Grid trigger. By using your logic app's JSON view, you'll become familiar with the concepts and structure, and confident to edit the JSON directly.
+The following example demonstrates the JSON configuration for an Event Grid trigger. By using your logic app's JSON view, you'll become familiar with the concepts and structure. You'll then be confident to edit the JSON directly.
 
 ``` json
 "triggers": {
@@ -85,8 +85,8 @@ The example below demonstrates the JSON configuration for an Event Grid trigger.
 }
 ```
 
-An extension is also available for Visual Studio Code to enable you to edit your logic apps. You can download and install this extension from the Visual Studio Marketplace or directly from inside VS Code.
+An extension is also available for Visual Studio Code to enable you to edit your logic apps. You can download and install this extension from the Visual Studio Marketplace or directly from inside Visual Studio Code.
 
-![Add Visual Code extension](../media/4-find-install-logic-apps-extension.png)
+![Azure Logic Apps in a list of Visual Studio Code extensions](../media/4-find-install-logic-apps-extension.png)
 
 Let's use the designer view in the portal to update the logic app to respond to triggers.
