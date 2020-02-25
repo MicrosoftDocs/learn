@@ -3,7 +3,7 @@ uid: learn.azure.add-custom-domain-name-azure-active-directory.add-custom-domain
 title: Add a custom domain name in Azure Active Directory
 metadata:
   title: Add a custom domain name in Azure Active Directory
-  description: See how create a tenant, associate your custom domain, set it to be the primary domain, and then add pilot users.
+  description: Learn how to associate your custom domain to Azure Active Directory and set it to be the primary. domain, and then add pilot users.
   ms.date: 02/25/2020
   author: cwatson-cat
   ms.author: cwatson
@@ -32,11 +32,11 @@ quiz:
     choices:
     - content: companyname.onazure.com
       isCorrect: false
-      explanation: "The URL is defined when you create the tenant and is in the form of something.onmicrosoft.com."
+      explanation: "The URL is defined when you create an Azure AD organization and is in the form of something.onmicrosoft.com."
     - content: companyname.onmicrosoft.com
       isCorrect: true
-      explanation: "The URL is defined when you create the tenant and is in the form of something.onmircosoft.com."
+      explanation: "The URL is defined when you create an Azure AD organization and is in the form of something.onmircosoft.com."
     - content: onmicrosoft.companyname.com
       isCorrect: false
-      explanation: "The URL is defined when creating the tenant and is in the form of something.onmicrosoft.com."
+      explanation: "The URL is defined when creating an Azure AD organization and is in the form of something.onmicrosoft.com."
       

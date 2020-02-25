@@ -3,7 +3,7 @@ uid: learn.azure.add-custom-domain-name-azure-active-directory.domain-names-add
 title: What are domain names in Azure Active Directory?
 metadata:
   title: What are domain names in Azure Active Directory?
-  description: Explore how domain names are used in Azure AD and how subdomains are supported
+  description: Explore how domain names are used in Azure AD and how subdomains are supported.
   ms.date: 02/25/2020
   author: cwatson-cat
   ms.author: cwatson
