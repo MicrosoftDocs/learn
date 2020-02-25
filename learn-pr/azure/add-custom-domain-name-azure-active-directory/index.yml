@@ -3,7 +3,7 @@ uid: learn.azure.add-custom-domain-name-azure-active-directory
 metadata:
   title: Add custom domain name to Azure Active Directory
   description: Learn how to add custom domain name to Azure Active Directory.
-  ms.date: 02/21/2020
+  ms.date: 02/25/2020
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial
