@@ -2,7 +2,7 @@ As insurance companies begin to think about new and better ways to serve custome
 
 Watch this video from Kjersten Moody, State Farm’s Chief Data and Analytics Officer, as she discusses how State Farm is carefully designing their responsible AI framework to improve the customer and employee experience.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4pmX2]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4pmX2]
 
 In the video, you heard Kjersten Moody explain how bringing AI to business processes can challenge the traditional organizational mindset and act as a catalyst for transformation throughout the business. To ensure accountability, it is imperative for organizations to not only consider the end impact to the customer, but the impact on the business process, employees, and surrounding technologies that support AI.
 
