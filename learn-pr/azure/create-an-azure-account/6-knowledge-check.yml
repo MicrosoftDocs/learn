@@ -50,7 +50,7 @@ quiz:
     choices:
     - content: "Azure Developer"
       isCorrect: false
-      explanation: "Incorrect: Azure Developer support plan offers 1 business day response time and is best for non-critical workloads."
+      explanation: "Incorrect: Azure Developer support plan offers one business day response time and is best for non-critical workloads."
     - content: "Azure Professional Direct"
       isCorrect: true
       explanation: "Correct: Azure Professional Direct support plan is best for business-critical workloads. This support plan offers 1-hour response time and priority tracking of critical cases."
