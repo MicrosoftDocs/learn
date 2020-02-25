@@ -7,4 +7,4 @@ Azure VM adds another layer to the VM concept for supporting VMs in the cloud. T
 
 Additionally, Azure supports using IoT Edge automatic deployments to deploy Edge-based workloads on to the VM. This provides the ability to run Azure IoT Edge on a VM using a supported OS that can run containers. It allows the Azure IoT Edge to run on a whole range of hardware, including micro-controller units that run Azure Sphere, with cloud and edge experience power by Azure Stack.
 
-In this module, we create a virtual machine on the cloud which enables to deploy the IoT edge modules.
+In this module, we create a virtual machine on the cloud which enables to deploy the IoT Edge modules.
