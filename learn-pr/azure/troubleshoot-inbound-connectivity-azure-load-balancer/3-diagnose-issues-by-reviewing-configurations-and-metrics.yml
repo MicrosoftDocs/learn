@@ -4,12 +4,11 @@ title: Diagnose issues by reviewing configurations and metrics
 metadata:
   title: Diagnose issues by reviewing configurations and metrics
   description: Diagnose issues by reviewing configurations and metrics
-  ms.date: 06/13/2019
+  ms.date: 03/06/2020
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 7
 content: |
   [!include[](includes/3-diagnose-issues-by-reviewing-configurations-and-metrics.md)]
