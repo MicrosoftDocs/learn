@@ -1,0 +1,28 @@
+### YamlMime:ModuleUnit
+uid: learn.tm-use-a-framework-to-identify-threats-and-find-ways-to-reduce-or-eliminate-risk.6-denial-of-service-overwhelming-the-system
+title: Denial of Service - Overwhelming the system
+metadata:
+  title: Denial of Service - Overwhelming the system
+  description: Learn about denial of service and its corresponding security control
+  ms.date: 02/28/2020
+  author: rodsan
+  ms.author: rodsan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-threat-modeling
+durationInMinutes: 8
+content: |
+  [!include[](includes/6-denial-of-service-overwhelming-the-system.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which statement describes a potential security control against denial of service?"
+    choices:
+    - content: "Signing a message to ensure it came from the right source"
+      isCorrect: false
+      explanation: "This message applies to spoofing"
+    - content: "Logging users and their actions to ensure accountability"
+      isCorrect: false
+      explanation: "This statement applies to repudiation"
+    - content: "Relying on elastic resources to handle more requests as they arrive"
+      isCorrect: true
+      explanation: "This statement applies to denial of service"

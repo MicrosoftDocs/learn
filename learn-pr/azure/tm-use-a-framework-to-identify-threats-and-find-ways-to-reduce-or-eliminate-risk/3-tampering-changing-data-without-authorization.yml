@@ -1,0 +1,28 @@
+### YamlMime:ModuleUnit
+uid: learn.tm-use-a-framework-to-identify-threats-and-find-ways-to-reduce-or-eliminate-risk.3-tampering-changing-data-without-authorization
+title: Tampering - Changing data without authorization
+metadata:
+  title: Tampering - Changing data without authorization
+  description: Learn about tampering and its corresponding security control
+  ms.date: 02/28/2020
+  author: rodsan
+  ms.author: rodsan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-threat-modeling
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-tampering-changing-data-without-authorization.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which statement describes a potential security control against tampering?"
+    choices:
+    - content: "Signing a message to ensure it came from the right source"
+      isCorrect: false
+      explanation: "This message applies to spoofing"
+    - content: "Logging users and their actions to ensure accountability"
+      isCorrect: false
+      explanation: "This statement applies to repudiation"
+    - content: "Granting access to users through an access control list "
+      isCorrect: true
+      explanation: "This statement applies to tampering, information disclosure, denial of service and elevation of privilege "
