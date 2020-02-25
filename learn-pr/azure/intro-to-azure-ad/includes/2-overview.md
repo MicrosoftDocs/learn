@@ -13,13 +13,11 @@ Azure Active Directory (Azure AD) is a cloud-based identity management solution.
 
 Azure AD also helps you keep user identities and applications secure through features like Conditional Access, and Identity Protection.
 
-![Azure AD](../media/2-azure-ad.png)
+![Azure AD](../media/2-azure-ad.svg)
 
 Azure AD stores your users in a tenant that represents an organization. For example, you'd have a company tenant where all of your internal staff members are maintained. Tenant users can also be grouped so they have a common shared access level. You could have one group for developers, and a separate group for application testers. These groups would have different access levels for applications.
 
 You can create multiple tenants in Azure under multiple subscriptions. Each tenant can have multiple groups that hold multiple users.
-
-![Azure AD structure](../media/2-directory-structure-azure.png)
 
 ### Who benefits from Azure AD?
 
@@ -52,7 +50,7 @@ Azure AD is a cloud-based identity solution to help you manage users and applica
 |Active Directory     |Kerberos, NTLM| Forests, domains,  organizational  units. | Authentication and authorization for on-premises printers, applications, file services, and more.
 |Azure Active Directory     |Includes SAML, OAuth, WS-Federation|Tenants.|Internet-based services and applications like Office 365, Azure services, and third-party SaaS applications.
 
-![Active Directory and Azure AD](../media/2-azuread-compared-active-directory.png)
+![Active Directory and Azure AD](../media/2-azuread-compared-active-directory.svg)
 
 Azure AD doesn't replace Active Directory. Which service you use depends on your organization's needs. The two services can also be used together, to take advantage of their combined features and capabilities.
 

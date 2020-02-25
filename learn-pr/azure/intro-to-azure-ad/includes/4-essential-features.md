@@ -8,7 +8,7 @@ Use Azure AD to invite external users to your tenant. Your organization can then
 
 Here's the B2B collaboration process:
 
-![B2B process](../media/4-b2b-process.png)
+![B2B process](../media/4-b2b-process.svg)
 
 1. The external user receives either an email invitation with a redemption link, or gets a direct link.
 1. The user selects the redemption link to access the application(s) to which they've been invited.
@@ -24,7 +24,7 @@ You can also use Azure Active Directory B2C to manage your customers' identities
 
 For example, a sign-in user flow that describes the process required might go like this:
 
-![User flow](../media/4-signin-user-flow.png)
+![User flow](../media/4-signin-user-flow.svg)
 
 1. The user goes to the application they want to access, on their browser or mobile phone.
 1. The user is asked to complete the sign-in form.
@@ -38,7 +38,7 @@ This feature is available on a pay-as-you-go basis.
 
 Azure Active Directory Domain Services (Azure AD DS) lets you add virtual machines to a domain without needing domain controllers. Your internal staff users can access virtual machines using their company Azure AD credentials. You use this service to reduce the complexity of migrating on-premises applications to Azure. An organization could also use Azure AD DS to handle its infrastructure if it runs both on-premises and in the cloud. The process might go like this:
 
-![Azure AD DS](../media/4-azuread-domain-services.png)
+![Azure AD DS](../media/4-azuread-domain-services.svg)
 
 1. The organization deploys its applications and servers in a virtual network on Azure.
 1. Identity information is synchronized between the on-premises Active Directory and the organization's tenant in Azure AD, using a tool called Azure AD Connect sync.
@@ -90,17 +90,14 @@ Reports are available for all licensing tiers.
 
 ## Azure Active Directory Identity Protection
 
-Azure Active Directory Identity Protection (AADIP) helps you to automatically detect, remediate, and investigate identity-based risks for users. AADIP also lets you export all the information collected about risks to third-party tools and solutions for additional analysis.
+Azure Active Directory Identity Protection helps you to automatically detect, remediate, and investigate identity-based risks for users. Identity Protection also lets you export all the information collected about risks to third-party tools and solutions for additional analysis.
 
-AADIP uses risk policies to automatically detect, and respond to, threats for you. You configure a risk policy to decide how you want AADIP to respond to a particular type of risk. Using policies in this way saves time, and gives you peace of mind.
+Identity Protection uses risk policies to automatically detect, and respond to, threats for you. You configure a risk policy to decide how you want Identity Protection to respond to a particular type of risk. Using policies in this way saves time, and gives you peace of mind.
 
-![AADIP flow](../media/4-aadip-flow.png)
+![Identity Protection flow](../media/4-aadip-flow.svg)
 
-With automated risk detection and remediation through AADIP, the administrator first configures the risk policies, which then monitor for identity risks. When a risk is detected, the policies enforce measures to remediate it. For example, a policy might ask a user to reset their password in response to a detected risk. The user then resets their password, and the risk is remediated.
+With automated risk detection and remediation through Identity Protection, the administrator first configures the risk policies, which then monitor for identity risks. When a risk is detected, the policies enforce measures to remediate it. For example, a policy might ask a user to reset their password in response to a detected risk. The user then resets their password, and the risk is remediated.
 
 You configure risk policies through the Azure portal. For example, the risk policy below detects user risks and remediates them by asking the user to reset their password.
 
 ![Risk policies](../media/4-risk-policy.png)
-
-> [!NOTE]
-> AADIP is available for the Premium P2 licensing tier.
