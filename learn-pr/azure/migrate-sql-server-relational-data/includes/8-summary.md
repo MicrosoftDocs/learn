@@ -2,7 +2,7 @@ Your company is delighted that its social media database is now in Azure SQL Dat
 
 Imagine how much effort would have been required without the tools that we explored. Azure Database Migration Assistant provided a clearly defined set of reports that enabled you to quickly alter your existing database to bring it into compatibility with Azure SQL Database. Without Data Migration Assistant, you would have needed a massive code review to check your entire database for issues.
 
-In this module, you learned how to migrate your data by using Azure Database Migration Service, and you learned about the pros and cons of offline and online migrations. Using the provided tools made migrating your database to Azure SQL Database straightforward with minimum impact on your organization.
+In this module, you learned how to migrate your data by using Azure Database Migration Service. You also learned about the pros and cons of offline and online migrations. Using the provided tools made migrating your database to Azure SQL Database straightforward with minimum impact on your organization.
 
 ## Clean up
 

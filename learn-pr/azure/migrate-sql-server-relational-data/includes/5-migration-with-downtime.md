@@ -2,7 +2,7 @@ There are two options for doing a migration: *offline* and *online*.
 
 With the offline option, the source database is removed from service during the entire migration process.
 
-With the online option, also known as *migration with minimal downtime*, the database remains in operation until the end of the migration. After you initiate the cutover, the source database is taken offline and any final changes are brought into the target database, minimizing downtime. 
+With the online option, also known as *migration with minimal downtime*, the database remains in operation until the end of the migration. After you start the cutover, the source database is taken offline and any final changes are brought into the target database. This process minimizes downtime. 
 
 Let's look closely at both options and how the tools work with them.
 
@@ -16,7 +16,7 @@ With offline mode, you take the source database offline. You place it in a state
 
 ![Online migration](../media/5-02-online.svg)
 
-During an online migration, the service takes a backup of the source database and migrates the data to the target platform. This allows the source database to continue to receive incoming transactions and return data. When the main part of the migration is complete, the user initiates the cutover process. The source database is then taken offline, rendering it unavailable for use.
+During an online migration, the service takes a backup of the source database and migrates the data to the target platform. This allows the source database to continue to receive incoming transactions and return data. When the main part of the migration is complete, the user starts the cutover process. The source database is then taken offline, rendering it unavailable for use.
 
 Database Migration Service then reads the data from the transaction log to bring the target database into sync. When this process is complete, the new target database becomes available for use. This is why the online option is sometimes called *minimal downtime*. There is some downtime, but it's minimal compared to doing an offline migration.
 

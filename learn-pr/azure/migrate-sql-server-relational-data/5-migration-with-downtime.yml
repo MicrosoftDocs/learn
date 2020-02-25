@@ -18,7 +18,7 @@ quiz:
       choices:
       - content: "The requirement of the Premium module for Azure SQL Database."
         isCorrect: true
-        explanation: "The Premium model for Azure SQL Database is very expensive. This cost can be a big obstacle to doing online migrations."
+        explanation: "The Premium model for Azure SQL Database is expensive. This cost can be a big obstacle to doing online migrations."
       - content: "Online migrations are slower."
         isCorrect: false
         explanation: "Although it's true that an online migration might take a _little_ longer, this is not considered an obstacle because the source system can remain online during the migration."

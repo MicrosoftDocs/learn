@@ -100,7 +100,7 @@ After the service instance is created, you create a project to migrate the datab
 
 1. Select **Run migration** to start the migration.
 
-1. A new pane appears with the status of the migration. Select the **Refresh** button at the top to update the status until it shows the process is finished.
+1. A new pane appears with the status of the migration. Select the **Refresh** button at the top to update the status until it shows that the process is finished.
 
     ![Refresh button](../media/7-13-completed.png)
 

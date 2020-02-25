@@ -78,7 +78,7 @@ Allow the analysis to run. When it finishes, it produces results and breaks them
 
 In the middle of the page, look for the section **Unsupported features**. The second and third items show **N/A** under the affected objects, meaning that nothing was found in the source system for these two items.
 
-Look closer at the first row, though, and you'll see the issue **Service Broker feature is not supported in Azure SQL Database**. The information for that issue includes instructions on how to solve it. The database that you're migrating doesn't need this feature, so you can disable it without any problems.
+Look more closely at the first row, though, and you'll see the issue **Service Broker feature is not supported in Azure SQL Database**. The information for that issue includes instructions on how to solve it. The database that you're migrating doesn't need this feature, so you can disable it without any problems.
 
 Select **Compatibility issues**. It shows that there were no compatibility issues with the database. If there had been issues, it would have listed them and you would need to resolve them before you could continue the migration.
 
@@ -98,7 +98,7 @@ Select **Compatibility issues**. It shows that there were no compatibility issue
 
 1. Switch back to Data Migration Assistant. Select **Restart Assessment** to have Data Migration Assistant reassess the fixed database.
 
-1. When the assessment finishes, you should still be on the **Compatibility Issues** page, and it should still show that there are none.
+1. When the assessment finishes, you should still be on the **Compatibility Issues** page, and it should still show that there are no issues.
 
 1. Select **SQL Server feature parity**. It should now show that the issue has been resolved.
 
