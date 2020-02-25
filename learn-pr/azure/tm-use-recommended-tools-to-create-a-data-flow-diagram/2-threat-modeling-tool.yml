@@ -1,0 +1,28 @@
+### YamlMime:ModuleUnit
+uid: learn.tm-use-recommended-tools-to-create-a-data-flow-diagram.2-threat-modeling-tool
+title: Threat Modeling Tool
+metadata:
+  title: Threat Modeling Tool
+  description: Learn about the threat modeling tool
+  ms.date: 02/28/2020
+  author: rodsan
+  ms.author: rodsan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-threat-modeling
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-threat-modeling-tool.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What benefit does the threat modeling tool not provide?"
+    choices:
+    - content: "Generated threats are based on the entire diagram, not just each element or each individual interaction"
+      isCorrect: true
+      explanation: "The tool only looks at individual elements and single interactions"
+    - content: "Threats, stencils and stencil properties can be changed"
+      isCorrect: false
+      explanation: "The fields can be changed"
+    - content: "Ways to reduce or eliminate risk are included with each generated threat"
+      isCorrect: false
+      explanation: "While some templates only have threats, newer versions do have risk reduction strategies"
