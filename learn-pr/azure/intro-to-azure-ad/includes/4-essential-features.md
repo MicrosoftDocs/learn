@@ -77,8 +77,7 @@ Use Conditional Access policies to require users to go through additional authen
 
 ![Azure AD reports](../media/4-conditional-access-policy.png)
 
-> [!NOTE]
-> Conditional Access policies are available for Premium P1 and Premium P2 license tiers.
+Conditional Access policies are available for Premium P1 and Premium P2 license tiers.
 
 ### Monitor your application access
 
@@ -101,3 +100,5 @@ With automated risk detection and remediation through Identity Protection, the a
 You configure risk policies through the Azure portal. For example, the risk policy below detects user risks and remediates them by asking the user to reset their password.
 
 ![Risk policies](../media/4-risk-policy.png)
+
+Identity Protection is available for the Premium P2 licensing tier.
