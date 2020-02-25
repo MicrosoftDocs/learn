@@ -12,4 +12,4 @@ metadata:
 title: Test your PWA
 durationInMinutes: 15
 content: |
-  [!include[](includes/6-test-your-pwa.md)]
+  [!include[](includes/6-test-pwa.md)]
