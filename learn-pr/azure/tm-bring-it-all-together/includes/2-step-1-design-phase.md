@@ -116,11 +116,11 @@ Data movement between elements is represented by directional arrows to indicate 
 
 Trust Boundary Box:
 
-![Trust Boundary Box Element](../media/trust-boundary-box.png)
+![Trust Boundary Box Element](../media/trust-boundary-box50.png)
 
 Trust Boundary Line:
 
-![Trust Boundary Line Element](../media/trust-boundary-line.png)
+![Trust Boundary Line Element](../media/trust-boundary-line50.png)
 
 Describes data-flow as it crosses different trust zone levels
 
