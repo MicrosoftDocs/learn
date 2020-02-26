@@ -10,7 +10,7 @@ Azure AD B2C has removed the complexity of managing user authentication for your
 
 1. Select **All services**, then search for Azure AD B2C and select it.
 
-    ![Search for AD B2C](../media/6-search-adb2c.png)
+    ![Search for AD B2C](../media/6-search-b2c.png)
 
 1. Select **Applications**. Select your application then select **Delete**.
   

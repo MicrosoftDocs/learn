@@ -46,7 +46,7 @@ Register your application, using the following steps:
 
 1. Switch to your newly created B2C tenant. Select **Directory + Subscription** at the top of the Azure portal, then select your tenant in the list.
 
-    ![Azure AD B2C tenant](../media/5-changeto-azureadb2c-tenant.png)
+    ![Azure AD B2C tenant](../media/5-changeto-b2c-tenant.png)
 
 1. Select the **Show portal menu** button at the top-left corner of the Azure portal to show the portal menu. Select **All services**, search for **Azure AD B2C**, then select the top search result.
 
