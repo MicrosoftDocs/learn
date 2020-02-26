@@ -43,7 +43,7 @@ A dynamic web page contains a mixture of HTML markup and Java code. You add Java
 
     Note the values of these static variables are only initialized once, and they're preserved between invocations of the web app.
 
-- To add procedural code, you would include your code within a pair of `<%` and `%>` tags. Procedural code can be wrapped around regular HTML markup. For example, in the following code excerpt, the `for` loop iterates through the contents of the *currencies* set and outputs an HTML paragraph during each iteration. The *counter* variable keeps track of the number of iterations made, and NNN" is a temporary placeholder that will be replaced in the next code excerpt:
+- To add procedural code, you would include your code within a pair of `<%` and `%>` tags. Procedural code can be wrapped around regular HTML markup. For example, in the following code excerpt, the `for` loop iterates through the contents of the *currencies* set and outputs an HTML paragraph during each iteration. The *counter* variable keeps track of the number of iterations made, and "NNN" is a temporary placeholder that will be replaced in the next code excerpt:
 
     ```java
     <% counter = 1;
