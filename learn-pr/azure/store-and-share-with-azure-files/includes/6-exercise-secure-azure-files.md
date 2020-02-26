@@ -136,7 +136,7 @@ In this exercise, you'll check that secure transfers are enforced on the file sh
 1. Select **File shares**, then select the **data** share.
 1. At the top of the pane, select **Create Snapshot**.
 
-    ![Screenshot showing the Create Snapshot option](../media/5-create-a-snapshot.png)
+    ![Screenshot showing the Create Snapshot option](../media/5-create-snapshot.png)
 
 1. Return to your VM, and open **File Explorer**.
 1. Browse to the data share mounted at the **F:** drive, right-click on any of the text files, and select **Properties**.
