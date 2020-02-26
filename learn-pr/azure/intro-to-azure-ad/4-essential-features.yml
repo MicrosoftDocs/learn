@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-ad.4-essential-features
+metadata:
+  title: Essential features of Azure AD
+  description: Essential features of Azure AD
+  ms.date: 02/25/2020
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Essential features of Azure AD
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-essential-features.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: What does Azure AD B2B provide?
+    choices:
+    - content: Azure AD B2B makes it possible for you to manage your customers' identities and access to applications and resources.
+      isCorrect: false
+      explanation: You use Azure B2C to manage customer identities. You use Azure AD B2B to invite external users to your tenant to collaborate with external staff members.
+    - content: Azure AD B2B makes it possible for you to let your users access virtual machines using their company Azure Active Directory credentials.
+      isCorrect: false
+      explanation: You use Azure AD B2B invite external users to your tenant to collaborate with external staff members.
+    - content: Azure AD B2B makes it possible for you to invite external users to your tenant to collaborate with external staff members.
+      isCorrect: true
+      explanation: Your company could be working with external contractors, and they would be invited as guest users. Once the work is done, access for those contractors can be revoked.
+  - content: What does the Azure AD Application Proxy do?
+    choices:
+    - content: You use it to identify applications in your Azure AD.
+      isCorrect: false
+      explanation: You use Application Proxy to add on-premises applications to your Azure AD
+    - content:  You use it to add on-premises applications to your Azure AD.
+      isCorrect: true
+      explanation: This will create secure remote access for applications you have on-premises
+    - content: You use it to add Azure AD Gallery applications to your Azure AD.
+      isCorrect: false
+      explanation: You use Application Proxy to add on-premises applications to your Azure AD.
