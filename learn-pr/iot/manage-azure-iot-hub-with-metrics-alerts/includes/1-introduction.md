@@ -68,6 +68,7 @@ The first step to building this system is to create a custom IoT Hub.
 
 1. badge artwork
 1. test with sandbox
+1. verify use of IoT Hub v IoT hub (lower case)
 
 
 
@@ -264,9 +265,13 @@ Suppose you are the manager of the cheese cave maturing process. Your first chee
 
 If your cheese business carries on growing, you are going to need solutions that scale smoothly and effortlessly.
 
+![description](../media/iot-hub-dps-art.png)
+
 You decide on a single Azure IoT Hub to process the telemetry from all thirty sensors. You decide that commercial competition requires that your system is secure, you must be certain of each device before accepting its input. You decide to investigate Azure DPS as your security service.
 
 Cheese making is a competitive business, and you want to keep your secrets well wrapped!
+
+![description](../media/cheese-rect4.png)
 
 The first step
 --------------
@@ -295,21 +300,7 @@ In this unit, we will create an IoT Hub.
 1. When the IoT Hub is built, click **Go to resource** to go to the home page for your hub. Or search for it in **All Resources**, if you happen to miss the completion message.
 1. It is a good idea to bookmark the home page of your IoT Hub.
 
-CREATE DPS SERVICE?
-
-### Create an Azure IoT Hub Device Provisioning Service
-
-A Device Provisioning Service (DPS) can be linked to one, or multiple hubs. So, it is a separate resource, and is independent of any one IoT Hub.
-
-1. In your Azure portal Home page, select **Create a resource**.
-
-1. Type "provisioning" in the search box, and select **IoT Hub Device Provisioning Service**.
-
-1. Create the resource, with a name such as "CheeseCave-DPS". Use the sandbox subscription and resource group options. And choose your **Location**.
-
-1. Create the resource, and wait for it to deploy. Perhaps bookmark a link to the home page of this resource too.
-
-Having created the hub and the provisioning service, let's take a step back and go over some theory. You might find this valuable in understanding the security resources.
+Having created the hub, let's take a step back and go over some theory. You might find this valuable in understanding the security resources.
 
 
 Unit 3: Overview of DPS service and X.509 certs
@@ -367,6 +358,41 @@ _Proof of Possession_ of a certificate is provided to DPS by uploading a _verifi
 This process is how you provide proof that you own the root certificate. There is no need to provide proof of possession of the leaf certificates, as  if you own the root, trust has been established so you must own all the leaf certificates generated from that root.
 
 The next step, let’s create an Azure DPS resource, and all the necessary certificates.
+
+
+
+CREATE DPS RESOURCE IN HERE
+
+### Create an Azure IoT Hub Device Provisioning Service
+
+A Device Provisioning Service (DPS) can be linked to one, or multiple hubs. So, it is a separate resource, and is independent of any one IoT Hub.
+
+1. In your Azure portal Home page, select **Create a resource**.
+
+1. Type "provisioning" in the search box, and select **IoT Hub Device Provisioning Service**.
+
+    ![description](../media/iot-hub-dps-resource-create.png)
+
+1. Create the resource, with a name such as "CheeseCave-DPS". Use the sandbox subscription and resource group options. And choose your **Location**.
+
+    ![description](../media/iot-hub-dps-resource-name.png) UPDATE
+
+1. Create the resource, and wait for it to deploy. 
+
+1. Link the DPS resource to your IoT Hub.
+
+1. Locate the name of your IoT Hub, and select **iothubowner** as the **Access Policy**. Click **Save**.
+
+    ![description](../media/iot-hub-dps-resource-hub-link.png) UPDATE
+
+1. Click **Manage allocation policy**, and verify the policy is set to **Evenly weighted distribution**.
+
+    ![description](../media/iot-hub-dps-resource-policy.png)
+
+1. Perhaps bookmark a link to the home page of this resource too.
+
+
+
  
 Unit 4: Create group enrollment and Root certs
 
@@ -437,7 +463,7 @@ Proof of Possession of the CA certificate is provided to DPS by uploading a veri
 
 1. Back in the Azure Cloud Shell, and in the **certificates** directory, run the completed command. This generates a verification certificate that is chained to the root certificate. The generated certificate is named `verification-code.cert.pem`, and is located within the **./certs** directory of the Azure Cloud Shell.
 
-1. Run the following command to download the verification certificate to your local machine. 
+1. Run the following command to download the verification certificate to your local machine.
 
 ```cli
 download ~/certificates/certs/verification-code.cert.pem
@@ -463,20 +489,13 @@ This is great progress, you have created a root certificate, and validated to Az
 
 1. Leave the **Secondary Certificate** dropdown set to **No certificate selected**. You are not required to have a secondary certificate.
 
-1. Leave **Select how you want to assign devices to hubs** as **Evenly weighted distribution**. As you only have one IoT Hub associated with the enrollment, this setting is unimportant. If you have multiple IoT hubs, this setting will control which hub should receive this device enrollment.
+1. Leave **Select how you want to assign devices to hubs** as **Evenly weighted distribution**. As you only have one IoT Hub associated with the enrollment, this setting is unimportant. If you have multiple IoT Hubs, this setting will control which hub should receive this device enrollment.
 
-1. Verify that your IoT Hub is selected in the **Select the IoT hubs this device can be assigned to** field. Leave the re-provisioning settings at their defaults.
+1. Verify that your IoT Hub is selected in the **Select the IoT Hubs this device can be assigned to** field. Leave the re-provisioning settings at their defaults.
 
 1. Finally, click **Save**, and verify your new enrollment group appears in the **Enrollment Groups** pane.
 
 A group enrollment is going to be very useful in handling remote devices at scale. The next few units create multiple leaf certificates, and multiple devices. 
-
-Naming
-======
-cheesecave-dps-root
-cheesecave-dps-leaf1...N
-cheesecave-device1...N
-cheesecave-hub
 
 Unit 5: Create multiple Leaf certs  [	MAYBE COMBINE WITH UNIT 4 ]	
 
@@ -489,7 +508,11 @@ In this unit, we need to create one leaf certificate for each device that we wan
 ```cli
  ./certGen.sh create_device_certificate cheesecave-device1
 ```
-	
+
+1. Verify the leaf cert was created correctly. You should see a lot of console output, ending in something like the following image.
+
+    ![description](../media/iot-hub-dps-cert-create1.png)
+
 1. To download the created certificate to your local machine, type:
 ```cli
 download ~/certificates/certs/new-device.cert.pfx
@@ -499,13 +522,21 @@ download ~/certificates/certs/new-device.cert.pfx
 
 1. Copy the **new-device-cert.pfx** file from its downloaded location into the cheesecave certificates folder, and rename it **new-device-cert1.pfx**.
 
-1. In the Azure Cloud Shell, delete the **new-device-cert.pfx** file. This is important so that the tools can be used to create further certificates. You can delete the file, in the certificates folder, by typing `rm *.pfx`, and answering "y" or "n" for each file.
+1. In the Azure Cloud Shell, delete the **new-device-cert.pfx** file. This is important so that the tools can be used to create further certificates. You can delete the file, in the certificates folder, by going through the following procedure.
+    1. Type `cd certs`.
+    1. Type `rm new*`.
+    1. Answer `y` to the question on the protected file.
+    1. Type `cd ..`.
 
 1. In the Azure Cloud Shell, create a second leaf certificate:
 
 ```cli
  ./certGen.sh create_device_certificate cheesecave-device2
 ```
+
+1. If you get a `Permission denied` response, similar to the following, verify you have deleted the earlier certificates correctly.
+
+    ![description](../media/iot-hub-dps-cert-denied.png)
 
 1. Download the second certificate to your local machine, type:
 ```cli
@@ -562,11 +593,19 @@ In this unit we verify that all the pieces we have put in place work as expected
 
 1.	Start the three device apps running. Verify all three are sending telemetry.
 
-1.	In the Azure portal for your DPS service, go to Metrics, and verify all three devices connected.
+    ![description](../media/iot-hub-dps-devices123.png)
+
+1.	In the Azure portal for your DPS service, go to Metrics, and verify all three devices are assigned.
+
+    ![description](../media/iot-hub-dps-metrics-devices.png)
 
 1. 	In the Azure portal for your IoT Hub, go to devices and see that all three have connected automatically.
 
+    ![description](../media/iot-hub-dps-metrics-devices-hub.png)
+
 1.	In the Azure portal for your IoT Hub, go to Metrics, and verify telemetry is received.
+
+    ![description](../media/iot-hub-dps-metrics-telemetry.png)
 
 1.	Back in the IoT Devices, select cheesecave-device1.  Then, in the bar, select **Device Twin**.
 
@@ -574,46 +613,19 @@ In this unit we verify that all the pieces we have put in place work as expected
 
 1.	Change the desired temperature to something different and noticeable: say "50.123". And click **Save**.
 
+    ![description](../media/iot-hub-dps-twin-temp.png)
+
 1.	Verify, in the console output, that the change is picked up quickly by the device.
+
+    ![description](../media/iot-hub-dps-twin-temp-set.png)
 
 If all this worked as expected, great work. You now know what needs to be done to provision devices at scale. We limited ourselves to three devices, but you can imagine, with some automation and tooling, how you could provision a large number of devices, with minimum human involvement.
 
 To complete the module, let's summarize the goals, and finish with a knowledge check.
-
-
-
-
-
-images
-1.	3 console screens, showing registration IDs
-2.	DPS metrics - number of devices assigned
-3.	Hub metrics - telemetry messages received and/or device twin activity
-
-Optionally:
-	set device twin desired temperature, and send out
-image:
-1.	one device receiving device twin message
-
-
 
 Unit 8: Summary
 
 Completing this module should have given you some valuable insights into the dark world of cryptography and message security. If you are new to this world, you will appreciate the thought and design that has gone into X.509 certificates, and Azure DPS Group Enrollments. You will see how these technologies neatly maps the root and leaf X.509 certificates to an IoT Hub and its range of IoT devices. You will also appreciate how well these technologies make security user-friendly enough for those of us who don't want to know too much about the underlying math.
 
 In this module, you.....
-
-
-
-To delete old certs:
-cd certs
-rm new*
-'y'
-cd ..
-
-
-
-
-
-
-
 
