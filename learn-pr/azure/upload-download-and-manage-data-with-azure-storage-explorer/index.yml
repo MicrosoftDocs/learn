@@ -18,7 +18,7 @@ abstract: |
 prerequisites: | 
   - Basic knowledge of Azure Storage, Cosmos DB, and Data Lake
   - Ability to install software locally
-iconUrl: http://via.placeholder.com/120x120
+iconUrl: /learn/achievements/upload-download-and-manage-data-with-azure-storage-explorer.svg
 levels:
 - beginner
 roles:
