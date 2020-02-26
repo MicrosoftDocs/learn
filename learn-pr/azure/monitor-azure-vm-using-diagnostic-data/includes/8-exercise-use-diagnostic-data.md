@@ -72,9 +72,9 @@ If CPU usage goes above 90 percent for one minute, you'd like to get a notificat
 
 1. Select **OK**.
 1. In the **Add action group** pane, select **OK**.
-1. Under **ACTIONS**, select **Select action group**.
+1. Under **ACTIONS GROUPS (optional)**, select **Add**.
 
-   ![Screenshot that shows the "Select action group" button in the "Create rule" pane](../media/8-select-action-group-button.png)
+   ![Screenshot that shows the "Add" button in the "Create rule" pane](../media/8-select-action-group-button.png)
 
 1. Under **Action group name**, select **Email alerts**.
 
