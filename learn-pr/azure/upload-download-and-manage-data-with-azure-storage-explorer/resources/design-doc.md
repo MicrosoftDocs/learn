@@ -104,12 +104,12 @@ Identify the subtasks of *Upload, download, and manage data with Azure Storage E
 
     You can explore your Azure data with many different tools, depending on its location and your preference. For example, the Azure portal includes a web-based interface that presents the contents of Azure Storage account, or you can use the Azure CLI at the command line. The Azure Storage Explorer is the only desktop GUI tool that can investigate and edit data in Azure Storage, Cosmos DB, and Azure Data Lake.
 
-    *[(Summary guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-module-summary-unit)*
+    *[(Summary guidance)](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-module-summary-unit)*
 
 ## Notes
 
 This module should cover the main features of Storage Explorer, go through a quick install, then exercises that demonstrate connecting to the various resources. Use a template to deploy the resources needed by Storage Explorer in Azure.
 
-- I have been using this sandbox as a base: https://docs.microsoft.com/en-us/learn/modules/access-data-with-cosmos-db-and-sql-api/2-setup-cosmosdb?source=learn
+- I have been using this sandbox as a base: https://docs.microsoft.com/learn/modules/access-data-with-cosmos-db-and-sql-api/2-setup-cosmosdb?source=learn
 
 - The sandbox will need to allow Azure Storage Explorer to create in a Storage account, a Blob container, a queue, a Cosmos DB and a Data Lake.  Otherwise you won't be able complete some of the exercises.

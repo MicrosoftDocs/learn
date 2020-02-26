@@ -195,7 +195,7 @@ To create a container:
 1. Right-click on the Storage Account and select  **Create Blob container** from the context menu.
 1. An empty container is displayed. Enter the name of the container and press **Enter** to create it.
 
-    ![Screenshot showing the adding of a new Data Lake container](../media/4-creating-a-filesystem.png)
+    ![Screenshot showing the adding of a new Data Lake container](../media/4-creating-filesystem.png)
 
 Bear in mind that all container names have the following constraints: 
 

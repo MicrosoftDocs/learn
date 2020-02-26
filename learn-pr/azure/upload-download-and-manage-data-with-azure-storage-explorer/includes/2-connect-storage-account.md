@@ -53,7 +53,7 @@ To get the certificate:
 1. Start a Microsoft Management Console (MMC) session on your Azure Stack, or locally via a VPN to the Azure Stack.
 1. Select **File**, then **Add/Remove snap-in**, and **Certificates** from the available snap-ins list.
 
-    ![Screenshot showing the Microsoft management console, certificate selection dialogue](../media/2-mmc-snap-in-certificate.png)
+    ![Screenshot showing the Microsoft management console, certificate selection dialogue](../media/2-add-certificates-snapin.png)
 
 1. Next, select the correct **Computer account** and **local computer** options.
 1. Find the **AzureStackSelfSignedRootCert**, which you'll see here:  **Console Root\Certificated (Local Computer)\Trusted Root Certification Authorities\Certificates**.

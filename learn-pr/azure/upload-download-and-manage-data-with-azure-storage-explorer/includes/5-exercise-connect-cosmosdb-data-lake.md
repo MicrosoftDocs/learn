@@ -317,28 +317,28 @@ All containers in an Azure Data Lake Gen2 storage account are blobs. To create a
 
 1. Right-click on the **dlsstoragetest001** storage account, and select the **Create Blob Container** from the context menu.
 
-    ![Screenshot showing the add container context menu](../media/5-adls-create-blob-container.png)
+    ![Screenshot showing the add container context menu](../media/5-data-lake-create-blob-container.png)
 
 1. Name the new container **myfilesystem**.
 1. When the container is created, you'll see the interface panel appear, where you can manage the container contents.
 
-    ![Screenshot showing the myFilesystem control ribbon and view](../media/5-adls-create-blob-container-view.png )
+    ![Screenshot showing the myFilesystem control ribbon and view](../media/5-data-lake-create-blob-container-view.png )
 
 ## Upload and view blob data
 
 With the new **myfilesystem** container created, you can now upload files or folders to it. 
 
-![Screenshot showing the upload options](../media/5-adls-container-upload-options.png)
+![Screenshot showing the upload options](../media/5-data-lake-container-upload-options.png)
 
 1. To upload a file, select the **Upload** option, and choose **Upload Files...**.
 1. The upload dialogue is displayed.
 
-   ![Screenshot of the upload files dialogue](../media/5-adls-upload-file.png)
+   ![Screenshot of the upload files dialogue](../media/5-data-lake-upload-file.png)
 
 1. Use the **ellipses** (**...**) to select the file you want to upload.
 1. When you've found the file you want to upload, select the **Upload** button.
 1. The file is available to the **myfilesystem** container.
 
-    ![Screenshot showing the uploaded file](../media/5-adls-file-uploaded.png)
+    ![Screenshot showing the uploaded file](../media/5-data-lake-file-uploaded.png)
 
 You can upload as many files as you want to this folder. Also, you can create an unlimited number of folders. You can then organize and manage the content in your folders, as you do with your file system.

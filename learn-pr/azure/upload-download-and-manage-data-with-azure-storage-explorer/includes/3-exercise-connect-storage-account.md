@@ -8,7 +8,7 @@ Here, you'll try Azure Storage Explorer for yourself by downloading, installing,
 
 First, you'll need to download and install Azure Storage Explorer.  
 
-You can download it from the [Microsoft Azure Storage Explorer website](https://azure.microsoft.com/en-us/features/storage-explorer/).
+You can download it from the [Microsoft Azure Storage Explorer website](https://azure.microsoft.com/features/storage-explorer/).
 
 ![Screenshot from the Microsoft Azure Storage Explorer website showing how to download the app](../media/3-download-storage-explorer.png)
 
