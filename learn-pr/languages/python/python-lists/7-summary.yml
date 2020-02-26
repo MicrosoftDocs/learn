@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.python-lists.summary
+title: Summary
+metadata:
+  title: Summary
+  description: 
+  ms.date: 02/19/2020
+  author: bobtabor-msft
+  ms.author: rotabor
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-summary.md)]
