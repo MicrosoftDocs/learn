@@ -1,12 +1,13 @@
-The threat modeling framework provides you with a list of threats and ways to reduce or eliminate risk, but it doesn't prioritize them for you. Also, there are no layered security control recommendations based on their type and function.
+Threat modeling provides engineers with the ability to graphically describe their system to others. It creates a common ground and enables more focused security conversations.
+
+However, threat models can either get **too complex** or **too high level** depending on the system you're building and the required context.
 
 In this module, you learned about prioritizing your issues and applying the right layer of security controls based on type and function.
 
 You learned about:
 
-- Prioritizing your issues
-- Categorizing security controls
-- Understanding each security control function
+- Data-flow diagram depth layers
+- When to use each layer
 
 > [!NOTE]
 >**Did You Know?**

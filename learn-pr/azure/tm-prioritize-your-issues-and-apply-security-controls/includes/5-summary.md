@@ -7,5 +7,3 @@ You learned about:
 - Prioritizing your issues
 - Categorizing security controls
 - Understanding each security control function
-
-## Learn more

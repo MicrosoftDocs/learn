@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.tm-bring-it-all-together.2-step-1-design-phase
+title: Step 1 - Design Phase
+metadata:
+  title: Step 1 - Design Phase
+  description: Include the appropriate context and requirements for your data-flow diagram
+  ms.date: 02/28/2020
+  author: rodsan
+  ms.author: rodsan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-threat-modeling
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-step-1-design-phase.md)]

@@ -35,6 +35,6 @@ modules:
 - learn.tm-prioritize-your-issues-and-apply-security-controls
 - learn.tm-provide-context-with-the-right-depth-layer
 - learn.tm-use-recommended-tools-to-create-a-data-flow-diagram
-# - learn.tm-get-your-threat-model-review-ready
+- learn.tm-bring-it-all-together
 trophy:
   uid: learn.security.tm-threat-modeling-fundamentals.trophy

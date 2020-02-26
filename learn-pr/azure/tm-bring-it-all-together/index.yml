@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.tm-bring-it-all-together
+metadata:
+  title: Bring It All Together
+  description: Threat modeling is a required task of the Security Development Lifecycle (SDL). When done correctly, it helps engineers avoid critical issues earlier in the development phase, when fixes are less costly and easier to implement. This module summarizes important and helpful tips from previous modules to help you create quality threat models.
+  ms.date: 02/28/2020
+  author: rodsan
+  ms.author: rodsan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-threat-modeling
+title: Introduction to Threat Modeling
+summary: Threat modeling is a required task of the Security Development Lifecycle (SDL). When done correctly, it helps engineers avoid critical issues earlier in the development phase, when fixes are less costly and easier to implement. This module summarizes important and helpful tips from previous modules to help you create quality threat models.
+abstract: |
+  In this module, you'll review:
+  - Design - Including the appropriate context and requirements for your data-flow diagram
+  - Break - Using the right focused threat modeling approach, framework and context depth layer
+  - Fix - Prioritizing issues and applying a good mix of security controls
+  - Verify - Ensuring the work gets completed
+prerequisites: Introduction to Threat Modeling, Create a Threat Model Using Data-Flow Diagram Elements, Approach Your Data-Flow Diagram with the Right Threat Model Focus, Use a Framework to Identify Threats and Find Ways to Reduce or Eliminate Risk, Prioritize Your Issues and Apply Security Controls, Provide Context with the Right Depth Layer, Use Recommended Tools to Create a Data-Flow Diagram
+iconUrl: /learn/achievements/generic-badge.svg
+ratingEnabled: false
+levels:
+- beginner
+roles:
+- administrator
+- developer
+- devops-engineer
+- security-engineer
+- solution-architect
+products:
+- azure-iot-security-center
+- azure-security-center
+- m365-security-center
+- m365-ems-cloud-app-security
+units:
+- learn.tm-bring-it-all-together.1-introduction
+- learn.tm-bring-it-all-together.2-step-1-design-phase
+- learn.tm-bring-it-all-together.3-step-2-break-phase
+- learn.tm-bring-it-all-together.4-step-3-fix-phase
+- learn.tm-bring-it-all-together.5-step-4-verify-phase
+- learn.tm-bring-it-all-together.6-summary
+badge:
+  uid: learn.tm-bring-it-all-together.badge

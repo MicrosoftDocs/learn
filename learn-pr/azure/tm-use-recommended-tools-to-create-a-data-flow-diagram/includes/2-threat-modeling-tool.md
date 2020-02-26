@@ -105,9 +105,9 @@ The threat generation engine uses two fields to generate or ignore a threat:
 
 Here's an actual example from the default template to bring these steps together:
 
-**Threat:** Cross Site Scripting
-**Include:** (target is [Web Server]) **OR** (target is [Web Application])
-**Exclude:** (target.[Sanitizes Output] is 'Yes') **AND** (target.[Sanitizes Input] is 'Yes')
+- **Threat:** Cross Site Scripting
+- **Include:** (target is [Web Server]) **OR** (target is [Web Application])
+- **Exclude:** (target.[Sanitizes Output] is 'Yes') **AND** (target.[Sanitizes Input] is 'Yes')
 
 The Cross Site Scripting threat above will **only** be generated when:
 

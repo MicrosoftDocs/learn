@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.learn.tm-bring-it-all-together.6-summary
+title: Summary
+metadata:
+  title: Summary
+  description: You have successfully put your threat modeling fundamentals knowledge to use in this module
+  ms.date: 02/28/2020
+  author: rodsan
+  ms.author: rodsan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-threat-modeling
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-summary.md)]

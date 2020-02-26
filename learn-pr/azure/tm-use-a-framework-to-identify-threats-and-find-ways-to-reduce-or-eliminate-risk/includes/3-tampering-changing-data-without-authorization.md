@@ -27,7 +27,7 @@
 
 ## How Can I Prevent It?
 
-**Integrity** is the security control associated with this threat category and prevents data from being maliciously modified. Examples include:
+**Integrity** prevents data from being maliciously modified. Examples include:
 
 - Validating input to prevent the processing of malicious payloads and mishandling of unexpected behavior
 - Signing messages with digital signatures to ensure message is not tampered with
