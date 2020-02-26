@@ -10,7 +10,7 @@ metadata:
   ms.prod: learning-azure
   ROBOTS: NOINDEX
 title: Exercise - Set up Azure AD B2C with MFA through the Azure portal
-durationInMinutes: 20
+durationInMinutes: 10
 azureSandbox: true
 content: |
   [!include[](includes/5-exercise-configure-b2c-mfa.md)]
