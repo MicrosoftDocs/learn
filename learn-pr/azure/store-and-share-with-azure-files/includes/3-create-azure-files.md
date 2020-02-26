@@ -31,10 +31,10 @@ az storage account create \
 az storage share create
 ```
 
-The only required argument to the above command is `--name` but it won't enable you to create a share on its own. You also need to provide the storage account information. There are two ways you can provide the information to the command.
+The only required argument to the above command is `--name` but it won't enable you to create a share on its own. You also need to provide the storage account information. There are two ways you can provide the information to the command:
 
-1. Using the `--account-name` and either an `--account-key`, or  a `--sas-token` argument.
-1. Using a storage account connection string with `--connection-string`.
+- By using the `--account-name` and either an `--account-key`, or  a `--sas-token` argument.
+- By using a storage account connection string with `--connection-string`.
 
 There are interesting optional arguments that you may find useful in some situations. The first argument controls the size of the share in gigabytes. If you need this restriction, use the `--quota` argument. The second argument lets you control the timeout for calls to the service in seconds with `--timeout`.
 
@@ -53,7 +53,7 @@ With the Azure file share created, you connect to it from a Windows, Linux, or m
 
 The Azure portal makes it easy to connect to your new share by providing the PowerShell commands to run.
 
-![Screenshot of the Azure portal showing the file share connection commands](../media/3-connect-to-a-share.png)
+![Screenshot of the Azure portal showing the file share connection commands](../media/3-connect-share.png)
 
 ### Authenticate with Azure Active Directory (AD)
 

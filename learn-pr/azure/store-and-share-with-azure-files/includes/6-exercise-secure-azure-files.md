@@ -89,18 +89,18 @@ In this exercise, you'll check that secure transfers are enforced on the file sh
 1. Select the created storage account. It should be named **learnazurefileshare** followed by random numbers.
 1. Under **Settings**, select **Shared access signatures**.
 
-    ![text](../media/6-SAS-connection-string.png)
+    ![text](../media/6-sas-connection-string.png)
 
 1. AzCopy requires a shared access signature to authorize access to the share. 
 1. Select **Generate SAS and connection string**.
 1. Copy the **File service SAS URL**.
 1. Paste the connection string into notepad and add a path to the data share. Change the string by adding `data/` to the path from:
 
-    https://learnazurefileshare6438.file.core.windows.net/?sv=2019-02-02&ss=bfqt&srt=sco&sp=rwdlacup&se=2019-12-05T20:46:09Z&st=2019-12-05T12:46:09Z&spr=https&sig=TW1ZMwzksKMhKMqJxSCMBy5wFmut7yuR3vNlTSwFhKQ%3D
-    
+    `https://learnazurefileshare6438.file.core.windows.net/?sv=2019-02-02&ss=bfqt&srt=sco&sp=rwdlacup&se=2019-12-05T20:46:09Z&st=2019-12-05T12:46:09Z&spr=https&sig=TW1ZMwzksKMhKMqJxSCMBy5wFmut7yuR3vNlTSwFhKQ%3D`
+
     To:
-    
-    https://learnazurefileshare6438.file.core.windows.net/data/?sv=2019-02-02&ss=bfqt&srt=sco&sp=rwdlacup&se=2019-12-05T20:46:09Z&st=2019-12-05T12:46:09Z&spr=https&sig=TW1ZMwzksKMhKMqJxSCMBy5wFmut7yuR3vNlTSwFhKQ%3D
+
+    `https://learnazurefileshare6438.file.core.windows.net/data/?sv=2019-02-02&ss=bfqt&srt=sco&sp=rwdlacup&se=2019-12-05T20:46:09Z&st=2019-12-05T12:46:09Z&spr=https&sig=TW1ZMwzksKMhKMqJxSCMBy5wFmut7yuR3vNlTSwFhKQ%3D`
 
 1. Use this new SAS connection string in the AzCopy command to copy the files to Azure. Use this command in the PowerShell window.
 

@@ -46,9 +46,9 @@ In this exercise, you'll first a new storage account and two file shares for rep
         --name "data"
     ```
 
-## Create a Windows Server
+## Create, and connect to a Windows Server
 
-These steps create a Windows Server to use later in the exercise. This server will simulate an on-premises machine running in the finance company's data center or branch office.
+Next, create a Windows Server VM to simulate an on-premises machine running in the finance company's data center or branch office.
 
 1. Using the Cloud Shell, create a Windows VM with the Azure CLI. When prompted for a password, enter a complex password of your choice and note it for reference later.
 
@@ -60,9 +60,7 @@ These steps create a Windows Server to use later in the exercise. This server wi
         --admin-username azureuser
     ```
 
-## Connect to your VM
-
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) with the account you used to activate sandbox.  In the portal menu, then select **Virtual machines**, then select the **2019FileServer** VM you created.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) with the account you used to activate sandbox. In the portal menu, then select **Virtual machines**, then select the **2019FileServer** VM you created.
 1. On the **Overview** pane, select **Connect**, then select **Download RDP File**.
 1. Run the RDP file, and select **Connect** when prompted.
 1. On the **Enter your credentials** prompt, select **More choices**, then select **Use a different account**. In the **Username** field, type **azureuser** and enter the password for this user.
@@ -81,7 +79,7 @@ These steps create a Windows Server to use later in the exercise. This server wi
 
 1. Select **Connect**, and on the popout on the right, select the **F** drive letter.
 
-    ![Screenshot of the data file share, and its connection commands](../media/4-connect-to-share.png)
+    ![Screenshot of the data file share, and its connection commands](../media/4-connect-share.png)
 
 1. Copy the PowerShell command.
 1. On your virtual machine, right click **Start** and select **Windows PowerShell (Admin)**.
@@ -98,7 +96,7 @@ These steps create a Windows Server to use later in the exercise. This server wi
 
 1. Open Explorer, and select **This PC**.
 
-    ![text](../media/4-explorer-with-mapped-drives.png)
+    ![text](../media/4-explorer-mapped-drives.png)
 
 1. Select the data drive, named drive **F**. 
 1. Right-click in the main window, and select **New > Text Document**. 

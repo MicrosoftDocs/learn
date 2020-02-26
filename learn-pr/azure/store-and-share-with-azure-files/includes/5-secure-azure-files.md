@@ -72,4 +72,4 @@ The snapshots are easy to create on the Azure portal, or with the REST API, clie
 
 Snapshots are at the root level of a file share, and apply to all the folders and files contained in it. 
 
-![Screenshot showing the Create Snapshot option](../media/5-create-a-snapshot.png)
+![Screenshot showing the Create Snapshot option](../media/5-create-snapshot.png)
