@@ -100,7 +100,7 @@ If CPU usage goes above 90 percent for one minute, you'd like to get a notificat
    ![Screenshot that shows the "Connect" button on the VM overview pane](../media/8-vm-overview-connect-button.png)
 
 1. From the last step, copy the **azureuser**@ and IP address that follows.
-1. In Azure Cloud Shell to the right, type **SSH** and paste what you copied in the previous step to connect to the VM. It should look the following command.
+1. In Azure Cloud Shell to the right, type **SSH** and paste what you copied in the previous step. It should look like the following command.
 
     ```bash
     ssh azureuser@<ipaddress>
