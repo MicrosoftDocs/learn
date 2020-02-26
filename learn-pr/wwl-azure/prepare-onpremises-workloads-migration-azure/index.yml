@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.wwl.prepare-onpremises-workloads-migration-azure
+metadata:
+  title: Prepare on-premises workloads for migration to Azure
+  description: "Prepare on
+-premises workloads for migration to Azure"
+  ms.date: 03/02/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Prepare on-premises workloads for migration to Azure
+summary: Choose an agentless Hyper-V migration approach. Create an Azure Migrate project, enable Azure AD permissions, prepare the on-premises environment, and deploy the Azure Migrate appliance. Your on-premises workloads are now ready for the actual migration.
+abstract: |
+  - Choose the appropriate migration tool to solve your business problem
+  - Prepare Azure for the Azure Migrate deployment
+  - Prepare the on-premises environment for agentless server migration
+  - Deploy the Azure Migrate appliance to use with the Azure Migrate Server Migration tool
+prerequisites: |
+  - Knowledge of cloud and traditional architecture concepts
+  - Knowledge of networking, compute, and database systems
+  - Familiarity with virtualization concepts such as VMs, virtual networking, and virtual hard disks
+  - Ability to manage cloud identities with Azure Active Directory
+iconUrl: /learn/achievements/prepare-on-premises-workloads-for-migration-to-azure.svg
+levels:
+- intermediate
+roles:
+- administrator
+- solution-architect
+products:
+- azure
+units:
+- learn.wwl.prepare-onpremises-workloads-migration-azure.introduction
+- learn.wwl.prepare-onpremises-workloads-migration-azure.choose-your-migration-approach
+- learn.wwl.prepare-onpremises-workloads-migration-azure.prepare-azure-for-azure-migrate-deployment
+- learn.wwl.prepare-onpremises-workloads-migration-azure.prepare-onpremises-environment-for-agentless-migration
+- learn.wwl.prepare-onpremises-workloads-migration-azure.deploy-azure-migrate-appliance
+- learn.wwl.prepare-onpremises-workloads-migration-azure.summary
+badge:
+  uid: learn.wwl.prepare-onpremises-workloads-migration-azure.badge
