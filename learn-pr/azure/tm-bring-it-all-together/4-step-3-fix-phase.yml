@@ -9,6 +9,6 @@ metadata:
   ms.author: rodsan
   ms.topic: interactive-tutorial
   ms.prod: learning-threat-modeling
-durationInMinutes: 4
+durationInMinutes: 6
 content: |
   [!include[](includes/4-step-3-fix-phase.md)]

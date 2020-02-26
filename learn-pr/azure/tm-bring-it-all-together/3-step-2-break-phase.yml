@@ -9,6 +9,6 @@ metadata:
   ms.author: rodsan
   ms.topic: interactive-tutorial
   ms.prod: learning-threat-modeling
-durationInMinutes: 4
+durationInMinutes: 8
 content: |
   [!include[](includes/3-step-2-break-phase.md)]
