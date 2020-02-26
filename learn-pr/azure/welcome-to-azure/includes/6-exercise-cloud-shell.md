@@ -12,7 +12,7 @@ Suppose you have several websites deployed and want to stop or start each of the
 
 In this exercise, you'll use the Cloud Shell window shown side-by-side with the exercise instructions. When normally accessing the Cloud Shell from within the Azure portal, you'll click the Cloud Shell icon from the top navigation bar. This icon is sometimes within the ellipsis (...) menu icon next to your profile.
 
-![Screenshot of Azure Portal navigation bar with ellipses menu expanded and Cloud Shell icon highlighted](../media/6-cloud-shell-in-portal.png)
+![Screenshot of the Azure portal navigation bar with ellipses menu expanded and Cloud Shell icon highlighted](../media/6-cloud-shell-in-portal.png)
 
 For this exercise, we'll use the Cloud Shell experience as part of our sandbox implementation.
 
