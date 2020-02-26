@@ -23,6 +23,8 @@ Azure offers customers reactive and proactive technical support. Choose the supp
 > | Reactive technical support | 1 business day response |1-hour response for critical cases |1-hour response + priority tracking of critical cases |
 > | Proactive technical support |  Not applicable | Not applicable  | Access to a pool of technical experts |
 
+For the full list, see [Azure support plans](https://azure.microsoft.com/support/plans/).
+
 ## Azure community support
 
 Ask questions, get answers, and connect with Microsoft engineers and community experts.
