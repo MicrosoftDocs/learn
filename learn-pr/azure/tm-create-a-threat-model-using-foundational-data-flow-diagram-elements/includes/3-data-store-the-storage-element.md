@@ -22,9 +22,9 @@ You should look out for:
 
 Include the following context to each data store element:
 
-|Context|Examples to Include|
+|Context|Questions|
 |-------|-------------------|
-|Type|Azure SQL storage? Cookies? Local storage?|
-|Function|Shared data? Backups? Security logs? Credentials? Secrets?|
-|Permission level|Access Controls? Read? Write?|
-|Additional controls|Data encryption? Disk encryption? Digital signatures?|
+|Type|Azure SQL? Cookies? Local?|
+|Function|Is it used to share data? Backups? Security logs? Credentials? Secrets?|
+|Permission Level|How is access control implemented? Who has read? write?|
+|Additional Controls|Is data encrypted? is disk encrypted? are digital signatures used?|

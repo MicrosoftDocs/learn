@@ -2,6 +2,8 @@
 
 Reference the tables below to capture system requirements and security assumptions:
 
+### High-Level Questions
+
 |High Level|Questions|
 |----------|---------|
 |**Description**|What does your system do? What are the business processes? Are they clearly defined?|
@@ -11,6 +13,8 @@ Reference the tables below to capture system requirements and security assumptio
 |**Cloud Provider**| (if applicable) Which cloud provider will it use? What default security configuration options does the Cloud Provider offer? What is the required end-state security configuration for your system?|
 |**Operating System**| (if applicable) Which Operating System will it use? What default security configuration options does the Operating System offer? What is the required end-state security configuration for your system?|
 |**Third-Party Components**| (if applicable) Which third-party components will it use? What default security configuration options do these third-party components offer? What is the required end-state security configuration for your system?|
+
+### Lower-Level Questions
 
 |Lower-Level|Questions|
 |-----------|---------|
@@ -30,17 +34,17 @@ Reference the tables below to capture system requirements and security assumptio
 
 ## Data-Flow Diagram Elements
 
-Use data-flow diagram elements properly by referencing the information below (see **Create a Threat Model Using Data-Flow Diagram Elements** module):
-
-### Process
+Use data-flow diagram elements properly by referencing the information below (see Create a Threat Model Using Data-Flow Diagram Elements module):
 
 ![Process](../media/process50.png)
+
+### Process
 
 Task that receives, modifies, or redirects input to output, like a web service
 
 #### Use
 
-- Use it to map a higher-level data-flow diagram to a lower-level data-flow diagram, like a zoom-in feature (refer to **Provide Context with the Right Depth Layer**)
+- Use it to map a higher-level data-flow diagram to a lower-level data-flow diagram, like a zoom-in feature (refer to Provide Context with the Right Depth Layer)
 - Place it between data stores to capture task and communication processing
 - Place it between external entity interactions to capture task and communication processing
 - Use it with other processes to capture task processing
@@ -54,9 +58,9 @@ Task that receives, modifies, or redirects input to output, like a web service
 - **Validation** - how is input parsed? validated? accepted?
 - **Authentication and Authorization** - does it rely on Azure Active Directory? Access Control Lists (ACL)? Multi-factor authentication (MFA)?
 
-### Data Store
-
 ![Data Store Element](../media/data-store50.png)
+
+### Data Store
 
 Permanent and temporary data storage, like a web cache and Azure DB.
 
@@ -73,9 +77,9 @@ Permanent and temporary data storage, like a web cache and Azure DB.
 - **Permission Level** - what are the access controls in place? who can read write?
 - **Additional Controls** - is data encrypted? is disk encrypted? are digital signatures used?
 
-### External Entity
-
 ![External Entity](../media/external-entity50.png)
+
+### External Entity
 
 Task, entity, or data store outside of your direct control, like users and third-party APIs
 
@@ -92,9 +96,9 @@ Task, entity, or data store outside of your direct control, like users and third
 - **Input** - does data come in through a graphical user interface? automated?
 - **Authentication and Authorization** - does it rely on Azure Active Directory? Access Control Lists (ACL)? Multi-factor authentication (MFA)?
 
-### Data-Flow
-
 ![Data-Flow Element](../media/data-flow50.png)
+
+### Data-Flow
 
 Data movement between elements is represented by directional arrows to indicate communication between data source and destination.
 
@@ -112,8 +116,6 @@ Data movement between elements is represented by directional arrows to indicate 
 - **Additional Controls** - does it have forgery protection? Does it version TLS 1.2?
 - **Authentication and Authorization** - must be included for both source and target elements. Does it rely on Azure Active Directory? Access Control Lists (ACL)? Multi-factor authentication (MFA)?
 
-### Trust Boundary
-
 Trust Boundary Box:
 
 ![Trust Boundary Box Element](../media/trust-boundary-box50.png)
@@ -124,10 +126,12 @@ Trust Boundary Line:
 
 Describes data-flow as it crosses different trust zone levels
 
+### Trust Boundary
+
 #### Use
 
-- Use trust boundary **lines** to represent data flow as it crosses large environments, like the internet
-- Use trust boundary **boxes** represent smaller environments, like sandbox environments and corporate networks
+- Use trust boundary lines to represent data flow as it crosses large environments, like the internet
+- Use trust boundary boxes represent smaller environments, like sandbox environments and corporate networks
 - Needed when data originates from service process to local/remote data store
 - Needed when data originates from service to another service on the same or a different network
 
@@ -137,7 +141,7 @@ Describes data-flow as it crosses different trust zone levels
 
 ## Tools
 
-Microsoft engineers recommend using one of three tools available today (see **Use Recommended Tools to Create a Data-Flow Diagram** module):
+Microsoft engineers recommend using one of three tools available today (see Use Recommended Tools to Create a Data-Flow Diagram module):
 
 - Threat Modeling Tool
 - Visio

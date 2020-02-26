@@ -1,20 +1,14 @@
 ## Threat Modeling Framework Security Controls
 
-Reduce or eliminate each potential threat by using security controls mapped to STRIDE threats (see **Use a Framework to Identify Threats and Find Ways to Reduce or Eliminate Risk** module):
+Reduce or eliminate each potential threat by using security controls mapped to STRIDE threats (see Use a Framework to Identify Threats and Find Ways to Reduce or Eliminate Risk module):
 
 ### Spoofing
 
-Pretending to be someone or something else
+- **What is it:** Pretending to be someone or something else
+- **What to ask:** Have I authenticated both sides of the communication?
+- **Security control:** Authentication verifies that users and systems are who they claim to be
 
-#### What to Ask
-
-Have I authenticated both sides of the communication?
-
-#### Security Control
-
-**Authentication** verifies that users and systems are who they claim to be
-
-#### Example
+#### Examples
 
 - Sending and receiving messages signed with digital signatures to authenticate origin and ensure message integrity
 - Securing data transmissions with SSL/TLS to encrypt traffic between source and target
@@ -40,17 +34,11 @@ For Your System:
 
 ### Tampering
 
-Changing data without authorization
+- **What is it:** Changing data without authorization
+- **What to ask:** How do I know someone can't change my data in transit or at rest?
+- **Security control:** Integrity prevents data from being maliciously modified
 
-#### What to Ask
-
-How do I know someone can't change my data in transit or at rest?
-
-#### Security Control
-
-**Integrity** prevents data from being maliciously modified
-
-#### Example
+#### Examples
 
 - Validating input to prevent the processing of malicious payloads and mishandling of unexpected behavior
 - Signing messages with digital signatures to ensure message is not tampered with
@@ -67,17 +55,11 @@ How do I know someone can't change my data in transit or at rest?
 
 ### Repudiation
 
-Not claiming responsibility for an action taken
+- **What is it:** Not claiming responsibility for an action taken
+- **What to ask:** Can I tie every action to an identity?
+- **Security control:** Non-Repudiation ensures each action can be traced back to its origin by creating and protecting security logs
 
-#### What to Ask
-
-Can I tie every action to an identity?
-
-#### Security Control
-
-**Non-Repudiation** ensures each action can be traced back to its origin by creating and protecting security logs.
-
-#### Example
+#### Examples
 
 - Creating event logs that trace actions to users
 
@@ -91,17 +73,11 @@ Can I tie every action to an identity?
 
 ### Information Disclosure
 
-Seeing data without permission
+- **What is it:** Seeing data without permission
+- **What to ask:** Can I be sure no one can see my data in transit and at rest?
+- **Security control:** Confidentiality ensures data is protected
 
-#### What to Ask
-
-Can I be sure no one can see my data in transit and at rest?
-
-#### Security Control
-
-**Confidentiality** ensures data is protected
-
-#### Example
+#### Examples
 
 - Applying access control lists to ensure the right users can access to the right data
 - Encrypting data at-rest, in-transit, and in-use
@@ -115,23 +91,17 @@ Can I be sure no one can see my data in transit and at rest?
 
 ### Denial of Service
 
-Overwhelming the system
+- **What is it:** Overwhelming the system
+- **What to ask:** Are there areas where my service is resource limited?
+- **Security control:** Availability ensures your system is up and running for users
 
-#### What to Ask
-
-Are there areas where my service is resource limited?
-
-#### Security Control
-
-**Availability** ensures your system is up and running for users
-
-#### Example
+#### Examples
 
 - Using network access control lists to control incoming and outgoing traffic
 - Using elastic resources to manage growing or shrinking usage
 - Monitoring the system to detect anomalies
 - Enabling operating system flags to handle memory and CPU processes
-- 
+
 #### Common Security Controls to Reduce or Eliminate Risk
 
 - Access Control Lists (ACL)
@@ -142,17 +112,11 @@ Are there areas where my service is resource limited?
 
 ### Elevation of Privilege
 
-Having permissions I should not have
+- **What is it:** Having permissions I should not have
+- **What to ask:** How do I know the user is allowed to do this action?
+- **Security control:** Authorization ensures users have proper permissions
 
-#### What to Ask
-
-How do I know the user is allowed to do this action?
-
-#### Security Controls
-
-**Authorization** ensures users have proper permissions
-
-#### Example
+#### Examples
 
 - Implementing authorization mechanisms to verify permissions to data and resources
 - Applying security controls to run the service using the least possible amount of access
@@ -172,7 +136,7 @@ Bug management services, such as Azure DevOps, keeps track of each threat and se
 
 ### Issue Prioritization
 
-Apply the established risk management methods used by your organization to help prioritize the threats identified with threat modeling. Microsoft typically prioritizes security issues by (see **Prioritize Your Issues and Apply Security Controls** module):
+Apply the established risk management methods used by your organization to help prioritize the threats identified with threat modeling. Microsoft typically prioritizes security issues by (see Prioritize Your Issues and Apply Security Controls module):
 
 - **Impact** - STRIDE categories
 - **Severity** - Critical, Important, Moderate, Low, Defense-in-Depth (worst case scenarios assumed)
@@ -180,7 +144,7 @@ Apply the established risk management methods used by your organization to help 
 
 ### Issue Resolution
 
-If your organization does not have a default set of resolution options, you can use the ones commonly used with threat modeling (see **Prioritize Your Issues and Apply Security Controls** module):
+If your organization does not have a default set of resolution options, you can use the ones commonly used with threat modeling (see Prioritize Your Issues and Apply Security Controls module):
 
 - **Reduce** - Issue will be addressed with bug fixes, redesign, or risk reduction strategies to reduces or eliminate threat impact or severity
 - **Transfer** - Issue will be handled by another system
@@ -189,7 +153,7 @@ If your organization does not have a default set of resolution options, you can 
 
 ### Security Control Types and Functions
 
-Select security controls that can help secure your system across different functions and control types (see **Prioritize Your Issues and Apply Security Controls** module):
+Select security controls that can help secure your system across different functions and control types (see Prioritize Your Issues and Apply Security Controls module):
 
 |Function|Physical|Logical|Administrative|
 |--------|--------|-------|--------------|

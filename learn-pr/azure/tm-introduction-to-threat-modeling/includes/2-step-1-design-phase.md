@@ -1,6 +1,6 @@
 ## Capture Requirements and Create a Data-Flow Diagram
 
-Capture system requirements and security assumptions in writing with **as much context as possible**. Examples include:
+Capture system requirements and security assumptions in writing with as much context as possible. Examples include:
 
 | Example | Things to consider |
 | ------- | --------- |

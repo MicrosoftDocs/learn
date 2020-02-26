@@ -15,9 +15,9 @@ Depicted by a square, an external entity can be a process, data store, or even a
 
 Include the following context to each external entity element:
 
-|Context|Examples to Include|
+|Context|Questions|
 |-------|-------------------|
-|Flow|Data-flow begins with either an external entity or data store|
-|Entity source|Internal or External|
-|Entity type|Human? Provider? Web service?|
-|Authentication and authorization mechanisms|Azure Active Directory? Access Control Lists (ACL)?|
+|Flow|Did you include an external entity or data store to kick-off your data-flow?|
+|Source|Is it internal? external?|
+|Type|Is it human? provider? web service?|
+|Authentication and Authorization|Does it use Azure Active Directory? Access Control Lists (ACL)?|

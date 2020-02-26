@@ -7,10 +7,18 @@ The Threat Modeling Tool offers:
 - Customizable templates
 - Threat generation engine with threats and risk reduction strategies
 
-> [!NOTE]
-> **Remember:** STRIDE is the acronym for the six major threat categories: **Spoofing** (Pretending to be someone or something else), **Tampering** (Changing data without authorization), **Repudiation** (Not claiming responsibility for an action taken), **Information Disclosure** (Seeing data without permission), **Denial of Service** (Overwhelming the system), **Elevation of Privilege** (Having permissions I should not have)
-
 The default template is called "SDL TM Knowledge Base" and gives you a basic set of elements and threat generation capabilities. All you need is a basic understanding of data-flow diagrams and STRIDE.
+
+### Remember
+
+STRIDE is the acronym for the six major threat categories: 
+
+- Spoofing - Pretending to be someone or something else
+- Tampering - Changing data without authorization
+- Repudiation - Not claiming responsibility for an action taken
+- Information Disclosure - Seeing data without permission
+- Denial of Service - Overwhelming the system
+- Elevation of Privilege - Having permissions I should not have
 
 ## Advanced User Section
 

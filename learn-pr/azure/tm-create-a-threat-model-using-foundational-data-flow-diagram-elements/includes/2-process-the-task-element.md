@@ -26,11 +26,11 @@ Add a process element for:
 
 Include the following context to each process element:
 
-|Context|Examples to Include|
+|Context|Questions|
 |-------|-------------------|
-|Code type|Managed code? Native code?|
-|Permission level|Kernel? Local? Administrator?|
-|Service isolation|Sandbox?|
-|Input control|Administrator? Local? All?|
-|Input validation checks|Whitelisted input? Parser used?|
-|Authentication and authorization mechanisms|Azure Active Directory? Access Control Lists (ACL)?|
+|Code|Is it managed? native?|
+|Permission Level|Kernel? Local? Administrator?|
+|Service Isolation|Does it use a sandbox?|
+|Input|Is it restricted only to administrators? local? all?|
+|Validation|How is input parsed? handled? accepted?|
+|Authentication and Authorization|Does it use Azure Active Directory? Access Control Lists (ACL)?|

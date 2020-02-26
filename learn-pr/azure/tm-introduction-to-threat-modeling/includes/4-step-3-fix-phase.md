@@ -11,7 +11,7 @@ Reduce or eliminate each potential threat by using security controls mapped to S
 |Denial of Service|Availability|Are there areas where my service is resource limited?|
 |Elevation of Privilege|Authorization|How do I know the user is allowed to do this action?|
 
-Some security controls can help reduce or completely eliminate multiple threats. Using SSL/TLS creates secure transmission channels to help prevent malicious data modification or disclosure. These types of controls are a good way to help secure your system and create multiple layers of security, also known as **defense-in-depth**.
+Some security controls can help reduce or completely eliminate multiple threats. Using SSL/TLS creates secure transmission channels to help prevent malicious data modification or disclosure. These types of controls are a good way to help secure your system and create multiple layers of security, also known as defense-in-depth.
 
 ### Issue Tracking
 

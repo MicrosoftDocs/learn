@@ -19,11 +19,11 @@ You should look out for:
 
 Include the following context to each data-flow element:
 
-|Context|Examples to Include|
+|Context|Questions|
 |-------|---------------|
-|Data description|Session token? SQL string? User credentials?|
+|Description|Is it a session token? SQL string? User credentials?|
 |Protocol|HTTPS? SOAP?|
-|Flow sequence|1-n? a-z?|
-|Data type|Cookies? XML? SOAP payload? REST payload? JSON payload?|
-|Additional controls|Forgery protection?|
-|Authentication and authorization mechanisms|for both source and destination elements|
+|Flow sequence|Does use a numerical or an alphanumerical sequence?|
+|Type|Is it cookies? XML? SOAP payload? REST payload? JSON payload?|
+|Additional Controls|Does it have forgery protection?|
+|Authentication and Authorization|Source and target must be specified - Does it use Azure Active Directory? Access Control Lists (ACL)?|
