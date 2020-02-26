@@ -4,7 +4,7 @@ This unit outlines the prerequisites and benefits of migrating to Microsoft Azur
 
 * Ensure connectivity to Azure is available via Express Route (highly recommended and with higher-speed connectivity) or Virtual Private Network (VPN) into Azure
 
-* Provision the target infrastructure in Azure that includes SAP NetWeaver and SAP HANA database servers. The Azure infrastructure can be rapidly deployed using predefined Azure Resource Manager(ARM) templates.
+* Provision the target infrastructure in Azure that includes SAP NetWeaver and SAP HANA database servers. The Azure infrastructure can be rapidly deployed using predefined Azure Resource Manager (ARM) templates.
 
 * SUM is started on the on-premises source SAP application server.
 
@@ -36,7 +36,7 @@ Consider the following for the two-step migration:
 
 * Ensure connectivity to Azure is available via Express Route (recommended) or VPN .
 
-* Provision the target infrastructure on Azure which includes the cloned system and target SAP NetWeaver and SAP HANA database servers. The Azure infrastructure can be deployed using predefined Azure Resource Manager(ARM) templates.
+* Provision the target infrastructure on Azure which includes the cloned system and target SAP NetWeaver and SAP HANA database servers. The Azure infrastructure can be deployed using predefined Azure Resource Manager (ARM) templates.
 
 * The cloned system can be built with a homogeneous system copy (backup/restore) or via DBMS replication tools (For example, Oracle Data Guard, or SQL Always-On).
 
