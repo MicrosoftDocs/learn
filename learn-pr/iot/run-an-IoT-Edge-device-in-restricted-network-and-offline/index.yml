@@ -32,7 +32,8 @@ ratingEnabled: true
 levels:
 - advanced
 roles:
-- developer, system administrator
+- developer
+- administrator
 products:
 - azure-iot-edge
 units:
