@@ -27,7 +27,7 @@ You now have your twelve training images uploaded and tagged. Click the 'gear' i
 
 Drag this image to your desktop, then click the 'checkmark' icon in the Custom Vision AI interface and browse to find the image on your desktop. The model classifies this new image as a dalmatian!
 
-![classification success](../media/classification-test.jpg)
+![classification success](../media/classification-test.png)
 
 ## Download your model
 
