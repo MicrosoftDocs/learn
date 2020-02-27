@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-cloud-everyone
+title: What is inclusive design?
+metadata:
+  title: What about Inclusive Marketing?
+  description: You learn about Inclusive Marketing.
+  ms.date: 02/24/2020
+  author: tinaes
+  ms.author: tinaes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-inclusive-market.md)]

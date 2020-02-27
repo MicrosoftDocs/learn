@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-cloud-everyone
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction
+  ms.date: 02/24/2020
+  author: tinaes
+  ms.author: tinaes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]
