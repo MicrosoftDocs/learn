@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.migrate-onpremises-workloads-azure.secure-migrated-vms
-title: Secure migrated VMs
+title: Secure migrated virtual machines
 metadata:
-  title: Secure migrated VMs
-  description: "Secure migrated VMs"
+  title: Secure migrated virtual machines
+  description: "Secure migrated virtual machines"
   ms.date: 03/02/2020
   author: wwlpublish
   ms.author: tonyj

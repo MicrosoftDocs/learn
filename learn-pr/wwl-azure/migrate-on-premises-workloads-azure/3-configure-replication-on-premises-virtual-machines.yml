@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.migrate-onpremises-workloads-azure.configure-replication-onprem-vms
-title: Configure replication of on-premises VMs
+title: Configure replication of on-premises virtual machines
 metadata:
-  title: Configure replication of on-premises VMs
-  description: "Configure replication of on-premises VMs"
+  title: Configure replication of on-premises virtual machines
+  description: "Configure replication of on-premises virtual machines"
   ms.date: 03/02/2020
   author: wwlpublish
   ms.author: tonyj
