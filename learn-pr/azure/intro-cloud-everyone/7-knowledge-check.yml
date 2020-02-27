@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-cloud-everyone
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge
+  ms.date: 02/24/2020
+  author: tinaes
+  ms.author: tinaes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1.5
+content: |
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: Which one of the following statements accurately describes actions that embody Microsoft’s approach to driving inclusivity in our marketing, products and services?
+    choices:
+    - content: Empowering leadership to drive the messaging, and enabling workers to take a single and impactful action for themselves, with peers driving change.
+      isCorrect: False
+      explanation: This isn't the right approach.
+    - content: Good ideas, beliefs and technologies create the core of implementing a diverse and inclusive environment.
+      isCorrect: False
+      explanation: Good ideas are not enough.
+    - content: Listening more versus having the answers, diving deeper to understand barriers, caring about every person as an individual, and focusing on empowering others to be great.
+      isCorrect: True
+      explanation: We need to listen, care, and empower others.
+  - content: Which one of the following statements describes Cloud for Everyone? 
+    choices:
+    - content: Making it easy for customers to find, and sign up for, cloud technologies online.
+      isCorrect: False
+      explanation: Cloud for Everyone is larger in scope.
+    - content: Focuses on embracing D&I, and applying those principles to our cloud business.
+      isCorrect: True
+      explanation: It helps us implement D&I to our cloud business.
+    - content: The process that Microsoft uses to implement D&I within the company.
+      isCorrect: False
+      explanation: This isn't true.
+  - content: Which of the following statements outlines examples of inclusive behaviors like inclusive culture, inclusive design, or Inclusive Marketing? 
+    choices:
+    - content: Acting from individual knowledge, making assumptions, strategizing within a team to create an execution plan, and designing from knowledge and experience.
+      isCorrect: False
+      explanation: This is the opposite of inclusive.
+    - content: Understanding unconscious bias, creating a diverse team to execute on a project, recognizing exclusion, and highlighting diversity with common shared human values.
+      isCorrect: True
+      explanation: This is a good and inclusive approach.
+    - content: Creating a marketing team that’s focused on delivering inclusivity messaging as the company’s entire D&I execution plan.
+      isCorrect: False
+      explanation: D&I is more than just messaging.

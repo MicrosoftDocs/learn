@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-cloud-everyone
+title: What is inclusive culture?
+metadata:
+  title: What is inclusive culture?
+  description: You learn about inclusive culture.
+  ms.date: 02/24/2020
+  author: tinaes
+  ms.author: tinaes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/3-inclusive-culture.md)]
+
