@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.iot.run-an-IoT-Edge-device-in-restricted-network-and-offline.Exercise3
+uid: learn.iot.run-an-IoT-Edge-device-in-restricted-network-and-offline.setup-IoT-Edge-parent-with-child-IoT-devices
 metadata:
   title: Set up IoT Edge Parent with multiple Child IoT Devices
   description: Set up IoT Edge Parent with multiple Child IoT Devices
