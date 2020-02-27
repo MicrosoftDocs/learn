@@ -3,12 +3,11 @@ uid: learn.create-web-app-with-refreshable-models
 metadata:
   title: Build a Web App with Refreshable Machine Learning Models
   description: Build a web app powered by machine learning models trained using Custom Vision AI service, and learn how to refresh them with GitHub Actions.
-  author: JenLooper
+  author: jlooper
   ms.date: 02/11/2020
   ms.author: jelooper
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #ms.learn-contact: luken
 title: Build a Web App with Refreshable Machine Learning Models
 summary: Build a web app powered by machine learning models trained using Custom Vision AI service, and learn how to refresh them with GitHub Actions.
 abstract: |
@@ -31,13 +30,13 @@ products:
   - azure
   - azure-cognitive-services
 units:
-  - learn.create-web-app-with-refreshable-models.1-introduction
-  - learn.create-web-app-with-refreshable-models.2-conceptual-overview
-  - learn.create-web-app-with-refreshable-models.3-scaffold-web-app
-  - learn.create-web-app-with-refreshable-models.4-train-model-build-inference-interface
-  - learn.create-web-app-with-refreshable-models.5-publish-web-app-deploy-github-action
-  - learn.create-web-app-with-refreshable-models.6-test-pwa
-  - learn.create-web-app-with-refreshable-models.7-summary
+  - learn.advocates.create-web-app-with-refreshable-models.1-introduction
+  - learn.advocates.create-web-app-with-refreshable-models.2-conceptual-overview
+  - learn.advocates.create-web-app-with-refreshable-models.3-scaffold-web-app
+  - learn.advocates.create-web-app-with-refreshable-models.4-train-model-build-inference-interface
+  - learn.advocates.create-web-app-with-refreshable-models.5-publish-web-app-deploy-github-action
+  - learn.advocates.create-web-app-with-refreshable-models.6-test-pwa
+  - learn.advocates.create-web-app-with-refreshable-models.7-summary
 
 badge:
-  uid: learn.create-web-app-with-refreshable-models.badge
+  uid: learn.advocates.create-web-app-with-refreshable-models.badge
