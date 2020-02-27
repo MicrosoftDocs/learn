@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.migrate-onpremises-workloads-azure.secure-migrated-vms
+title: Secure migrated VMs
+metadata:
+  title: Secure migrated VMs
+  description: "Secure migrated VMs"
+  ms.date: 03/02/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-secure-migrated-virtual-machines.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following actions help reduce vulnerability of your Azure VMs to security attacks through open management ports?"
+    choices:
+    - content: "Schedule regular backups of your Azure VMs"
+      isCorrect: false
+      explanation: "Implementing a backup and recovery solution will help address resilience of your VMs. However, it won’t reduce vulnerability to security attacks through open management ports."
+    - content: "Encrypt your VM disks"
+      isCorrect: false
+      explanation: "Data encryption protects again loss or theft of a device by preventing unauthorized access to or removal of the hard drive. It doesn't help limit inbound access to your Azure VMs."
+    - content: "Enable just-in-time virtual machine access"
+      isCorrect: true
+      explanation: "Correct. Just-in-time helps reduce vulnerability to open port attacks."
+  - content: "Which of the following are features of Azure Disk Encryption?"
+    choices:
+    - content: "IaaS VM data secured at rest, Integration with Azure Key Vault, Endpoint protection"
+      isCorrect: false
+      explanation: "Endpoint protection is not a feature of Azure Disk Encryption"
+    - content: "Volume encryption for OS and data disks, Integration with Azure Key Vault, IaaS VM data secured at rest"
+      isCorrect: true
+      explanation: "Correct. All three are features of Azure Disk Encryption."
+    - content: "IaaS VM data secured during VM startup, Multi-Factor Authentication, Integration with Azure Key Vault"
+      isCorrect: false
+      explanation: "Multi-Factor Authentication isn't a feature of Azure Disk Encryption."
