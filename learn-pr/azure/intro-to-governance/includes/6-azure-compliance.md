@@ -49,7 +49,7 @@ STP also includes information about how Microsoft online services can help your 
 Service Trust Portal is a companion feature to the Trust Center, and allows you to:
 
 - Access audit reports across Microsoft cloud services on a single page.
-- Access compliance guides to help you understand how can you use Microsoft cloud service features to manage compliance with various regulations.
+- Access compliance guides to help you understand how you can use Microsoft cloud service features to manage compliance with various regulations.
 - Access trust documents to help you understand how Microsoft cloud services help protect your data.
  
 ## Compliance Manager
