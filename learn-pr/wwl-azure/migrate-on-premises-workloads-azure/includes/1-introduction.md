@@ -12,7 +12,7 @@ In this module, you’ll learn how to use Azure Migrate to:
 - Monitor and test the migration
 - Migrate VMs to Azure
 
-## Learning Objectives
+## Learning objectives
 
 In this module, you’ll learn how to:
 
