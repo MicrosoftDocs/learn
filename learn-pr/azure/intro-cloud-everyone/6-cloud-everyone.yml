@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.intro-cloud-everyone
+uid: learn.azure.intro-cloud-everyone.cloud-everyone
 title: What is Cloud for Everyone?
 metadata:
   title: What is Cloud for Everyone?
@@ -9,6 +9,6 @@ metadata:
   ms.author: tinaes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 1.5
+durationInMinutes: 1
 content: |
   [!include[](includes/6-cloud-everyone.md)]

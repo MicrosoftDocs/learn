@@ -32,6 +32,7 @@ units:
 - learn.azure.intro-cloud-everyone.inclusive-design
 - learn.azure.intro-cloud-everyone.inclusive-market
 - learn.azure.intro-cloud-everyone.cloud-everyone
+- learn.azure.intro-cloud-everyone.knowledge-check
 - learn.azure.intro-cloud-everyone.summary
 badge:
   uid: learn.azure.intro-cloud-everyone.badge

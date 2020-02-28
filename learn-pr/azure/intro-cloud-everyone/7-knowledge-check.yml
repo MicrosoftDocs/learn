@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.intro-cloud-everyone
+uid: learn.azure.intro-cloud-everyone.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
@@ -9,7 +9,7 @@ metadata:
   ms.author: tinaes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 1.5
+durationInMinutes: 1
 content: |
 quiz:
   title: Check your knowledge
