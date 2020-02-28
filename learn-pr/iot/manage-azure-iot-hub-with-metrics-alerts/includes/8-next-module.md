@@ -6,7 +6,7 @@ This module builds on the "Remotely monitor and control devices with Azure IoT H
 
 Security is a gnarly subject, there is more to it than you might think. Completing this module will give you a good foundation for making security decisions for your IoT-based projects.
 
-Learning objectives
+## Learning objectives
 
 In this module you will:
 
@@ -16,7 +16,7 @@ Create a DPS resource and group enrollment, using the Azure portal
 Create an app to send device telemetry to your IoT Hub, using Visual Studio, or Visual Studio Code
 Test multiple devices are provisioned by your DPS service
 
-Prerequisites
+## Prerequisites
 
 An introductory knowledge of Azure IoT
 Ability to navigate the Azure IoT portal
@@ -24,7 +24,6 @@ Ability to use C#, at the beginner level
 Experience using Visual Studio, or Visual Studio Code, at the beginner level
 
 ## The scenario
-------------
 
 The "Remotely monitor and control devices with Azure IoT Hub" module had one sensor in one cheese cave. The sensor ensures the cheese is maturing nicely to the ideal temperature and humidity for your particular brand of cheese.
 
@@ -40,8 +39,8 @@ Cheese making is a competitive business, and you want to keep your secrets well 
 
 ![description](../media/cheese-rect4.png)
 
-The first step
---------------
+### The first step
+
 The first step is to build an IoT Hub, using the Microsoft Azure portal.
 
 ## Unit 2: Create an IoT Hub
@@ -65,7 +64,6 @@ In this unit, we will create an IoT Hub.
 1. It is a good idea to bookmark the home page of your IoT Hub.
 
 Having created the hub, let's take a step back and go over some theory. You might find this valuable in understanding the security resources.
-
 
 ## Unit 3: Overview of DPS service and X.509 certs
 
@@ -122,8 +120,6 @@ _Proof of Possession_ of a certificate is provided to DPS by uploading a _verifi
 This process is how you provide proof that you own the root certificate. There is no need to provide proof of possession of the leaf certificates, as  if you own the root, trust has been established so you must own all the leaf certificates generated from that root.
 
 The next step, let’s create an Azure DPS resource, and all the necessary certificates.
-
-
 
 ## Unit 4: Create a DPS resource, a root certificate, and a Group Enrollment
 
@@ -391,7 +387,6 @@ In this unit we verify that all the pieces we have put in place work as expected
 
 > [!Note]
 > You will remember that you did not add any devices using the Azure portal. These devices have been added by the link from the DPS system.
-
 
 1. For added reassurance, in the left-hand menu select **Metrics** for your hub. Enter **Connected devices** for **Metric**, and set **Aggregation** to **Max**.
 
