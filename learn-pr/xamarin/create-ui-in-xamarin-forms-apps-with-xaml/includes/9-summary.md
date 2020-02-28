@@ -7,3 +7,8 @@ Xamarin.Forms XAML allows you to customize the UI for each platform using `OnPla
 You can make use of the preview support in Visual Studio to see your app's layout rendered and updated as you change the UI. This feature is enabled by the *XAML Previewer for Xamarin.Forms*. For more information, visit the [XAML Previewer for Xamarin.Forms](https://docs.microsoft.com/xamarin/xamarin-forms/xaml/xaml-previewer/?pivots=windows) documentation.
 
 Now that you understand the basics of working with XAML in Xamarin.Forms, you're ready to learn new techniques to help keep your UI uniform across multiple pages and to reduce duplicate XAML.
+
+## Learn more with a Channel 9 video series
+
+- [Xamarin Tutorial 101](https://channel9.msdn.com/Series/Xamarin-101/?WT.mc_id=Educationalmobile-c9-niner&azure-portal=true)
+- [Intro to Visual Studio for Mac](https://channel9.msdn.com/Series/Intro-to-Visual-Studio-for-Mac?azure-portal=true)
