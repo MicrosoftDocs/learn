@@ -40,5 +40,6 @@ units:
 - learn.iot.manage-your-azure-iot-hub-with-metrics-alerts.exercise-create-metrics-alerts
 - learn.iot.manage-your-azure-iot-hub-with-metrics-alerts.exercise-test-metrics-alerts
 - learn.iot.manage-your-azure-iot-hub-with-metrics-alerts.summary
+- learn.iot.manage-your-azure-iot-hub-with-metrics-alerts.next-module
 badge:
   uid: learn.iot.manage-your-azure-iot-hub-with-metrics-alerts.badge
