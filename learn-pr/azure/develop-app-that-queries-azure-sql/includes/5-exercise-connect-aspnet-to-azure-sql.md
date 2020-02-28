@@ -1,17 +1,17 @@
-With your database created, you'll now configure and deploy a web application that the academic advisors for the educational institution can use to discuss courses and plans of study with students. The application will use the `System.Data.SqlClient` library to retrieve and display the details of courses, and the modules that a student must pass to complete a course.
+Your database is created. Now you will configure and deploy a web application that academic advisors can use to discuss courses and plans of study with students. The app will use the `System.Data.SqlClient` library to retrieve and display the details of courses and modules that a student must pass to complete a course.
 
-To save time, you'll work with a pre-existing web application. You'll add the code that connects this application to your database. The following diagram shows the primary components of this application:
+To save time, you'll work with a pre-existing web application. You'll add the code that connects this app to your database. The following diagram shows the primary components of this app:
 
-![High-level view of the structure of the application](../media/5-diagram.svg)
+![High-level view of the application structure](../media/5-diagram.svg)
 
-You'll perform the following tasks:
+You'll do the following things:
 
-- Create a class that holds the course name, module title, and sequence for each module in the database.
-- Create a data access controller class that retrieves the information from the database.
-- Edit the code behind the index page in the web application, to create a data access controller object and fetch the data.
+- Create a *class* that holds the course name, module title, and sequence for each module in the database.
+- Create a *data access controller class* that retrieves the information from the database.
+- Edit the code that's behind the index page in the web app to create a *data access controller object* and fetch the data.
 - Edit the index page to display the data.
 
-## Deploy and run the pre-existing web application
+## Deploy and run the pre-existing web app
 
 1. Change your working directory to the **education** folder.
 
@@ -25,21 +25,22 @@ You'll perform the following tasks:
     WEBAPPNAME=educationapp-$RANDOM
     az webapp up \
         --resource-group <rgn>[Sandbox resource group]</rgn> \
-        --sku B1 \
+        --location centralus \
+        --sku F1 \
         --name $WEBAPPNAME
     ```
 
-1. When the web application has been deployed, the output will show an **App_url** with the URL of the web site. Open this site in a new tab.
+1. When the web application has been deployed, the output will show an *App_url* with the URL of the web site. Open this site in a new tab.
 
-    ![Screenshot of the education web app running. Currently, no data appears](../media/5-web-app-no-data.png)
+    ![The education web app running. Currently, no data is displayed.](../media/5-web-app-no-data.png)
 
-    You'd like to have the web application display a list of courses and the modules that make up this course. Currently, the application doesn't retrieve or display this data, so you'll need to update the code to get this data from the database and display it to the user.
+    You want the web app to display a list of courses and the modules that make up each course. Currently, the app doesn't retrieve or display this data. So, you need to update the code to get the data from the database and display it.
 
-## Add code to the web application to retrieve data
+## Add code to the web app to retrieve data
 
-Now let's add the code to the application that will retrieve the course data from the database.
+Now let's add to the application the code to retrieve course data from the database.
 
-1. In the Cloud Shell, go to the **education/Models** folder.
+1. In Cloud Shell, go to the **education/Models** folder.
 
     ```bash
     cd ~/education/Models
@@ -47,13 +48,13 @@ Now let's add the code to the application that will retrieve the course data fro
 
     This folder contains two files, **CoursesAndModules.cs** and **DataAccessController.cs**.
 
-1. Open the **CoursesAndModules.cs** file using the **Code** editor.
+1. Use the code editor to open the **CoursesAndModules.cs** file.
 
     ```bash
     code CoursesAndModules.cs
     ```
 
-    This file contains an empty class named `CoursesAndModules`.
+    This file contains an empty class that's named `CoursesAndModules`.
 
     ```C#
     namespace CoursesWebApp.Models
@@ -75,7 +76,7 @@ Now let's add the code to the application that will retrieve the course data fro
     public int Sequence { get; }
     ```
 
-    This code defines a set of read-only fields that will contain the data for each row displayed by the web application.
+    This code defines a set of read-only fields that will contain the data for each row that's displayed by the web app.
 
 1. Replace the comment `// TODO: Create a constructor that initializes the fields behind the properties` with the following constructor.
 
@@ -88,7 +89,7 @@ Now let's add the code to the application that will retrieve the course data fro
     }
     ```
 
-    This constructor populates the fields with the data to be displayed. The complete file should contain the following code.
+    This constructor populates the fields with the data to display. The complete file should contain the following code.
 
     ```C#
     namespace CoursesWebApp.Models
@@ -109,15 +110,15 @@ Now let's add the code to the application that will retrieve the course data fro
     }
     ```
 
-1. Save the file, and close the **Code** editor.
+1. Save the file, and close the code editor.
 
-1. Open the **DataAccessController.cs** file using the **Code** editor.
+1. Use the code editor to open the **DataAccessController.cs** file.
 
     ```bash
     code DataAccessController.cs
     ```
 
-    This file contains a class named `DataAccessController`. This class will contain the data access logic for connecting to the database and retrieving the course and module data. It will populate a list of `CoursesAndModules` objects with this data.
+    This file contains a class that's named `DataAccessController`. This class will contain the data access logic to connect to the database and retrieve the course and module data. It will populate a list of `CoursesAndModules` objects with this data.
 
     ```C#
     using Microsoft.Extensions.Options;
@@ -157,25 +158,27 @@ Now let's add the code to the application that will retrieve the course data fro
     }
     ```
 
-1. Leave the **Code** editor open, and switch to the Azure portal. In the left-hand pane, click **SQL databases**, and select your database.
+1. Leave the code editor open, and switch to the Azure portal. 
 
-1. Under **Settings**, click **Connection strings**. Copy the ADO.NET connection string to the clipboard.
+1. On the Azure portal menu, select **SQL databases**, and select your database.
 
-    ![Screenshot of the connection string pane in the Azure portal.](../media/5-connection-string-annotated.png)
+1. Under **Settings**, select **Connection strings**. Copy the **ADO.NET** connection string to the clipboard.
 
-1. Return to the code editor, and replace the value of the connectionString variable with the value from the clipboard. In the connection string, replace the text `{your_username}` with the value `azuresql`, and replace the text `{your_password}` with the password for this account.
+    ![The connection string pane in the Azure portal.](../media/5-connection-string-annotated.png)
+
+1. Return to the code editor. Replace the value of the *connectionString* variable with the value from the clipboard. In the connection string, replace the text `{your_username}` with the value `azuresql`. And replace the text `{your_password}` with the password for this account.
 
     ```C#
     private string connectionString = "Server=tcp:courseservernnn.database.windows.net,1433;Initial Catalog=coursedatabasennn;Persist Security Info=False;User ID=azuresql;Password=<password>;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
     ```
 
-1. After the comment `//TODO: Connect to the database`, replace the commented out `using` statement with the following code.
+1. After the comment `//TODO: Connect to the database`, replace the commented-out `using` statement with the following code.
 
     ```C#
     using (SqlConnection con = new SqlConnection(connectionString))
     ```
 
-    This code creates a new `SqlConnection` object that connects to the database using your connection string.
+    This code creates a new `SqlConnection` object that uses your connection string to connect to the database.
 
 1. Replace the comment `// TODO: Specify the SQL query to run` with the following statements.
 
@@ -190,7 +193,7 @@ Now let's add the code to the application that will retrieve the course data fro
     cmd.CommandType = CommandType.Text;
     ```
 
-    The `SqlCommand` object contains an SQL statement that retrieves the data for all courses and modules, joining them using the information in the **StudyPlan** table.
+    The `SqlCommand` object contains an SQL statement that retrieves the data for all courses and modules. It joins them by using the information in the **StudyPlan** table.
 
 1. Replace the comment `// TODO: Execute the query` with the following code.
 
@@ -199,7 +202,7 @@ Now let's add the code to the application that will retrieve the course data fro
     SqlDataReader rdr = cmd.ExecuteReader();
     ```
 
-    These statements open the connection to the database and run the SQL statement. You can use the `SqlDataReader` object to fetch the results a row at a time.
+    These statements open the connection to the database and run the SQL statement. You can use the `SqlDataReader` object to fetch the results one row at a time.
 
 1. Replace the comment `// TODO: Read the data a row at a time` with the following block of code.
 
@@ -214,7 +217,7 @@ Now let's add the code to the application that will retrieve the course data fro
     }
     ```
 
-    This block iterates through the rows returned in the `SqlDataReader` object. The code extracts the data in the fields in each row and uses them to populate a new `CoursesAndModules` object. This object is then added to a list.
+    This block iterates through the rows that are returned in the `SqlDataReader` object. The code extracts the data in the fields in each row and uses them to populate a new `CoursesAndModules` object. This object is then added to a list.
 
 1. Replace the comment `// TODO: Close the database connection` with the following statement.
 
@@ -222,9 +225,9 @@ Now let's add the code to the application that will retrieve the course data fro
     con.Close();
     ```
 
-    This statement closes the connection to the database and releases and resources held.
+    This statement closes the connection to the database and releases any resources that were held.
 
-1. The completed class should contain the following code, with the connection string for your database.
+1. The completed class should contain the following code, which includes the connection string for your database.
 
     ```C#
     using Microsoft.Extensions.Options;
@@ -285,25 +288,25 @@ Now let's add the code to the application that will retrieve the course data fro
 
     Save the file, and close the **Code** editor.
 
-## Add code to the web application to display the data
+## Add code to the web app to display the data
 
-The application can now retrieve the data, now let's update the application to display the course data to the user.
+The application can now retrieve the course data. Now, update the app to display the data to the user.
 
-1. In the Cloud Shell, move to the **education/Pages** folder.
+1. In Cloud Shell, move to the **education/Pages** folder.
 
     ```bash
     cd ~/education/Pages
     ```
 
-    This folder contains the .cshtml pages and code files that the web application uses to display information.
+    This folder contains the .cshtml pages and code files that the web app uses to display information.
 
-1. Using the **Code** editor, open the **Index.cshtml.cs** file.
+1. Use the code editor to open the **Index.cshtml.cs** file.
 
     ```bash
     code Index.cshtml.cs
     ```
 
-    This file contains code that the **Index** page runs when it's displayed. The code defines a class named `CoursesAndModulesModel`. The **Index** page will display the details of courses and modules using this model. In this file, you need to add the code that uses a `DataAccessController` object to fetch this data.
+    This file contains code that the index page runs when it's displayed. The code defines a class `CoursesAndModulesModel`. The index page will use this model to display the details of courses and modules. In this file, you need to add the code that uses a `DataAccessController` object to fetch that data.
 
     ```C#
     using System;
@@ -330,7 +333,7 @@ The application can now retrieve the data, now let's update the application to d
     }
     ```
 
-1. In **Index.cshtml.cs** replace the comment `// TODO: Create a DataAccessController object` with the following code to create a new `DataAccessController` object.
+1. In **Index.cshtml.cs**, replace the comment `// TODO: Create a DataAccessController object` with the following code to create a new `DataAccessController` object.
 
     ```C#
     DataAccessController dac = new DataAccessController();
@@ -348,7 +351,7 @@ The application can now retrieve the data, now let's update the application to d
     CoursesAndModules = dac.GetAllCoursesAndModules().ToList();
     ```
 
-1. The completed file should contain the following code. Save the file and close the **Code** editor.
+1. The completed file should contain the following code. Save the file, and close the code editor.
 
     ```C#
     using System;
@@ -378,15 +381,15 @@ The application can now retrieve the data, now let's update the application to d
     }
     ```
 
-1. Open the file **Index.cshtml** using the **Code** editor.
+1. Use the code editor to open the file **Index.cshtml**.
 
     ```bash
     code Index.cshtml
     ```
 
-    This file contains the display logic for the Index page. It specifies `CoursesAndModulesModel` as the data source. The code you've added creates and populates this model.
+    This file contains the display logic for the index page. It specifies `CoursesAndModulesModel` as the data source. The code that we've added creates and populates this model.
 
-    The page uses an HTML data to display the data from the model. Currently, the page just displays the table headings, but the table body (`<tbody>`) is empty.
+    The page uses HTML data to display the data from the model. Currently, the page just displays the table headings. The table body (`<tbody>`) is empty.
 
     ```cshtml
     <h2>Courses and Modules</h2>
@@ -431,7 +434,7 @@ The application can now retrieve the data, now let's update the application to d
     }
     ```
 
-    This code iterates through the rows in the model, and outputs the data in each field.
+    This code iterates through the rows in the model and outputs the data in each field.
 
 1. The completed **Index.cshtml** file should contain the following code.
 
@@ -478,19 +481,19 @@ The application can now retrieve the data, now let's update the application to d
     </div>
     ```
 
-    Save the file and close the **Code** editor.
+    Save the file, and close the code editor.
 
-## Deploy and test the updated web application
+## Deploy and test the updated web app
 
-With the application fully configured to retrieve and display the course data to the user, you can deploy the updated version to the 
+With the application fully configured to retrieve and display the course data to the user, you can deploy the updated version.
 
-1. In the Cloud Shell, return to the **education** folder.
+1. In Cloud Shell, return to the **education** folder.
 
     ```bash
     cd ~/education
     ```
 
-2. Run the following commands to build and deploy the updated web application.
+2. Run the following commands to build and deploy the updated web app.
 
     ```bash
     az webapp up \
@@ -498,6 +501,6 @@ With the application fully configured to retrieve and display the course data to
         --name $WEBAPPNAME
     ```
 
-3. When the web application has been deployed, click the link for the new web app. The web application should now display a list of courses and modules using the data stored in the database.
+3. After the new web app is deployed, select the link for the app. It should now display a list of courses and modules with the data that's stored in the database.
 
     ![Screenshot of the education web app running, showing the data](../media/5-web-app-with-data.png)

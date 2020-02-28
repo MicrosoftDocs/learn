@@ -1,7 +1,6 @@
 Container images can be pulled from Azure Container Registry using many container management platforms, such as Azure Container Instances, Azure Kubernetes Service, and Docker for Windows or Mac. Here, we will deploy our image to an Azure Container Instance.
 
-<!-- Activate the sandbox -->
-[!include[](../../../includes/azure-sandbox-activate.md)]
+[!include[](../../../includes/azure-exercise-subscription-prerequisite.md)]
 
 ## About registry authentication
 
@@ -33,27 +32,26 @@ In this exercise, we will enable the registry admin account and use it to deploy
 
     Take note of the `username` and  `password` values that are returned from this command. You will need them in this exercise.
 
-
 ## Deploy a container with Azure CLI
 
-1. Execute the following `az container create` command to deploy a container instance. Replace `<username>` and `<password>` in the following command with your registry's admin username and password.
+1. Execute the following `az container create` command to deploy a container instance. Replace `<username>`,`<password>` in the following command with your registry's admin username and password. Replace `<location>` with the location value returned when you created the container registry earlier.
 
     ```azurecli
     az container create \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group learn-deploy-acr-rg \
         --name acr-tasks \
         --image $ACR_NAME.azurecr.io/helloacrtasks:v1 \
         --registry-login-server $ACR_NAME.azurecr.io \
         --ip-address Public \
-        --location eastus \
-        --registry-username <username> \
-        --registry-password <password>
+        --location <location> \
+        --registry-username [username] \
+        --registry-password [password]
     ```
 
 1. Get the IP address of the Azure container instance using the following command.
 
     ```azurecli
-    az container show --resource-group  <rgn>[sandbox resource group name]</rgn> --name acr-tasks --query ipAddress.ip --output table
+    az container show --resource-group  learn-deploy-acr-rg --name acr-tasks --query ipAddress.ip --output table
     ```
 
 1. Open a browser and navigate to the IP address of the container. If everything has been configured correctly, you should see the following results:

@@ -1,27 +1,43 @@
-In this module, you'll set up your own build agent running on an Azure virtual machine.
+In this module, you set up your own build agent running on a Microsoft Azure virtual machine.
 
-Up until now, you used a Microsoft-hosted agent running Ubuntu to build the _Space Game_ web application. Many times, a Microsoft-hosted agent can do everything you need.
+Up until now, you used a Microsoft-hosted agent that runs Ubuntu to build the _Space Game_ web application. Most of the time, a Microsoft-hosted agent can do everything you need.
 
-However, there are times when you need additional processing power, disk space, or time to build your applications. In this module, you'll see how to set up your own build agent, which can run either in the cloud or on-premises. You'll follow along with the Tailspin web team as they set up a build agent running on an Azure virtual machine (VM).
+However, you occasionally need additional processing power, disk space, or time to build your applications. In this module, you learn how to set up your own build agent, which can run either in the cloud or on-premises. You follow along with the Tailspin web team as they set up a build agent that runs on an Azure virtual machine (VM).
 
 ## Learning objectives
 
 In this module, you will:
 
-- Choose when to use Microsoft-hosted build agents and when to host your own
-- Describe the options you have when managing your own build agents
-- Bring up and configure your own agent to work with Azure Pipelines
-- Connect your agent to a pipeline and build your application
+- Choose when to use Microsoft-hosted build agents and when to host your own.
+- Describe your options for managing your own build agents.
+- Bring up and configure your own agent to work with Azure Pipelines.
+- Connect your agent to a pipeline and build your application.
 
 ## Prerequisites
 
-The prerequisites are the same as the [Create a build pipeline with Azure Pipelines](/learn/modules/create-a-build-pipeline?azure-portal=true) module.
+The modules in this learning path form a progression.
 
-Make sure you have the _Space Game_ project loaded in Visual Studio Code and your _Space Game_ project on GitHub handy.
+To follow the progression from the beginning, be sure to first complete the [Evolve your DevOps practices](/learn/paths/evolve-your-devops-practices?azure-portal=true) learning path.
+
+We also recommend you start at the beginning of this learning path, [Build applications with Azure DevOps](/learn/paths/build-applications-with-azure-devops?azure-portal=true).
+
+If you want to go through just this module, you need to set up a development environment on your Windows, macOS, or Linux system. You need:
+
+* An [Azure DevOps organization](https://dev.azure.com?azure-portal=true)
+* A [GitHub](https://github.com/join?azure-portal=true) account
+* [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
+* [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core/3.1?azure-portal=true)
+* [Git](https://git-scm.com/downloads?azure-portal=true)
+
+You can get started with Azure DevOps for free.
+
+This environment lets you complete the exercises in this and future modules. You can also use it to apply your new skills to your own projects.
+
+[!include[](../../shared/includes/project-details-note.md)]
 
 ## Meet the team
 
-You met the _Space Game_ web team at Tailspin Toys in previous modules. As a refresher, here's who you'll work with in this module.
+You met the _Space Game_ web team at Tailspin Toys in previous modules. As a refresher, here are the team members you'll work with in this module.
 
 :::row:::
 
@@ -35,4 +51,4 @@ You met the _Space Game_ web team at Tailspin Toys in previous modules. As a ref
 
 :::row-end:::
 
-Mara has prior experience with DevOps and is helping the team adopt a more streamlined process using Azure DevOps.
+Mara has prior experience with DevOps and is helping the team adopt a more streamlined process by using Azure DevOps.

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-hpc.1-introduction
+metadata:
+  title: Introduction
+  description: In this unit, you'll learn about a business scenario that you can address by using high-performance computing services in Azure.
+  ms.date: 10/10/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction
+durationInMinutes: 5
+content: |
+  [!include[](includes/1-introduction.md)]

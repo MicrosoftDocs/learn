@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn-wwl.responsible-ai-governing-practices-government
+metadata:
+  title: Identify governing practices for responsible AI in government
+  description: Learn guiding principles for governments, and how to choose and operationalize a governance system to responsibly and successfully use AI in the public sector.
+  ms.date: 10/01/2019
+  author: RWortmanMorris
+  ms.author: rawortma
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  #ms.learn-contact: barlan
+title: Identify governing practices for responsible AI in government
+summary: As AI becomes more prevalent, it’s imperative that governments have practices in place to ensure that it’s used responsibly. This starts with governments establishing their own guiding principles, then choosing and operationalizing a system of governance. We recognize that every government will have their own perspective on responsible AI, but we’re hopeful that our perspective will serve as a helpful starting point as they embark on their own AI journey.
+abstract: | 
+  In this module, you will:
+  - Determine the elements of an AI governance system.
+  - Choose an AI governance model that fits your government’s needs.
+  - Approach policy discussions to promote broad development and deployment of ethical AI systems.
+prerequisites: None
+iconUrl: /learn/achievements/responsible-ai-governing-practices-government.svg
+levels: 
+- intermediate
+roles: 
+- functional-consultant
+- business-user
+products: 
+- azure
+- dynamics
+- m365
+units: 
+- learn-wwl.responsible-ai-governing-practices-government.introduction
+- learn-wwl.responsible-ai-governing-practices-government.choosing-an-organizational-model-1
+- learn-wwl.responsible-ai-governing-practices-government.government-governance-and-development
+- learn-wwl.responsible-ai-governing-practices-government.government-responsible-ai-models
+- learn-wwl.responsible-ai-governing-practices-government.choosing-an-organizational-model-2
+- learn-wwl.responsible-ai-governing-practices-government.knowledge-check
+- learn-wwl.responsible-ai-governing-practices-government.summary-and-resources
+badge: 
+  uid: learn-wwl.responsible-ai-governing-practices-government.badge #add the uid for your achievement badge.

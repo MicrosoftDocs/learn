@@ -20,6 +20,10 @@ In our example here, the server admin account you are connecting with is a membe
 
 ## Authentication and authorization in practice
 
+As a best practice, your application should use a dedicated account to authenticate. This way, you can limit the permissions granted to the application and reduce the risks of malicious activity in case the application code is vulnerable to a SQL injection attack. The recommended approach is to create a contained database user, which allows your app to authenticate directly to the database. For more information, see [Contained Database Users - Making Your Database Portable](https://docs.microsoft.com/sql/relational-databases/security/contained-database-users-making-your-database-portable?view=sql-server-2017).
+
+Use Azure Active Directory authentication to centrally manage identities of database users and as an alternative to SQL Server authentication.
+
 Let's now take a look at how to set up a user and grant them access to a database. In this case we'll use SQL authentication for our user, but the process would be essentially the same if we were using Azure AD authentication.
 
 ### Create a database user
@@ -29,7 +33,7 @@ Let's go ahead and create a new user that we can use to grant access to.
 1. In cloud shell, on your _appServer_ VM, connect to your database again as your `ADMINUSER`.
 
     ```bash
-    sqlcmd -S tcp:server<12345>.database.windows.net,1433 -d marketplaceDb -U '<username>' -P '<password>' -N -l 30
+    sqlcmd -S tcp:serverNNNN.database.windows.net,1433 -d marketplaceDb -U '[username]' -P '[password]' -N -l 30
     ```
 
 1. Run the following command to create a new user. This will be a _contained user_ and will only allow access to the _marketplace_ database. Feel free to adjust the password as necessary, but be sure and note it as we'll need it for a future step.
@@ -67,7 +71,7 @@ Let's now log in as that user and take a look at this in action.
 1. Now let's log back in to the database, but as the user we just created.
 
     ```bash
-    sqlcmd -S tcp:server<12345>.database.windows.net,1433 -d marketplaceDb -U 'ApplicationUser' -P '<password>' -N -l 30
+    sqlcmd -S tcp:serverNNNN.database.windows.net,1433 -d marketplaceDb -U 'ApplicationUser' -P '[password]' -N -l 30
     ```
 
 1. Run the following query. This is pulling data from a table that the user is authorized to access.

@@ -1,38 +1,44 @@
-In this part, you'll make sure that your Azure DevOps organization is set up to complete the rest of this module.
+In this unit, you ensure that your Azure DevOps organization is set up to complete the rest of this module.
 
-The modules in this learning path form a progression, where you follow the Tailspin web team through their DevOps journey.
+To do this, you:
 
-This learning path also builds on the [Evolve your DevOps practices](/learn/paths/evolve-your-devops-practices?azure-portal=true) learning path. There, you set up your Azure DevOps organization and created a task backlog on Azure Boards using the Basic process.
+> [!div class="checklist"]
+> * Set up an Azure DevOps project for this module.
+> * Move the work item for this module on Azure Boards to the **Doing** column.
+> * Make sure your project is set up locally so that you can push changes to the pipeline.
 
-## Run the template
+## Get the Azure DevOps project
 
-At this point, you have two options:
+Here, you make sure that your Azure DevOps organization is set up to complete the rest of this module. You do this by running a template that creates a project for you in Azure DevOps.
 
-1. Continue with the Azure DevOps project you created in the _Evolve your DevOps practices_ learning path.
-1. Run a template that sets up everything for you in your Azure DevOps organization.
+The modules in this learning path form a progression, where you follow the Tailspin web team through their DevOps journey. For learning purposes, each module has an associated Azure DevOps project.
 
-You can continue using your existing project if you completed the previous modules and have the Tailspin project set up in Azure DevOps. Run the template if you don't have the project set up or want to repeat this module from a fresh environment.
+### Run the template
+
+Run a template that sets up everything for you in your Azure DevOps organization.
 
 > [!div class="nextstepaction"]
 > [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?name=scan-open-source&azure-portal=true)
 
-From the Azure DevOps Demo Generator site, perform these steps to run the template.
+From the Azure DevOps Demo Generator site, take these steps to run the template.
 
-1. Click **Sign In** and accept the usage terms.
-1. From the **Create New Project** page, select your Azure DevOps organization and enter a project name, such as **Space Game - web - WhiteSource**.
-1. Select **Fork repository on GitHub** and then click **Authorize**. If a window appears, authorize access to your GitHub account.
+1. Select **Sign In**, and then accept the usage terms.
+1. From the **Create New Project** page, select your Azure DevOps organization.  Then enter a project name, such as **Space Game - web - WhiteSource**.
+1. Select **Fork repository on GitHub**, and then select **Authorize**. If a window appears, authorize access to your GitHub account.
 
     > [!IMPORTANT]
     > You need to select this option for the template to connect to your GitHub repository. Select this option even if you've already forked the _Space Game_ web site project. The template uses your existing fork.
-1. Click **Create Project**.
+1. Select **Create Project**.
 
     ![Creating a project through the Azure DevOps Demo Generator](../media/3-create-new-project.png)
 
     It takes a few moments for the template to run.
-1. Click **Navigate to project** to go to your project in Azure DevOps.
+1. Select **Navigate to project** to go to your project in Azure DevOps.
 
-> [!IMPORTANT]
-> The [Clean up your Azure DevOps environment](/learn/modules/scan-open-source/5-clean-up-environment?azure-portal=true) page in this module contains important cleanup steps. Cleaning up helps ensure that you don't run out of free build minutes. Be sure to perform the cleanup steps even if you don't complete this module.
+    > [!IMPORTANT]
+    > The [Clean up your Azure DevOps environment](/learn/modules/scan-open-source/5-clean-up-environment?azure-portal=true) page in this module contains important cleanup steps. Cleaning up helps ensure that you don't run out of free build minutes. Be sure to perform the cleanup steps even if you don't complete this module.
+
+[!include[](../../shared/includes/project-visibility.md)]
 
 ## Move the work item to Doing
 
@@ -44,7 +50,10 @@ Recall that the team settled on these seven top issues.
 
 ![Backlog of tasks](../../shared/media/build-all-tasks.png)
 
-Here you'll move the fifth item, **Check open source code for vulnerabilities and licensing terms** to the **Doing** column and assign yourself to the work item.
+> [!NOTE]
+> Within an Azure DevOps organization, work items are numbered sequentially. In your project, the number that's assigned to each work item might not match what you see here.
+
+Here you move the fifth item, **Check open source code for vulnerabilities and licensing terms** to the **Doing** column and assign yourself to the work item.
 
 Recall that **Check open source code for vulnerabilities and licensing terms** relates to scanning open-source components that are used in your application for known vulnerabilities and license ratings.
 
@@ -52,11 +61,11 @@ Recall that **Check open source code for vulnerabilities and licensing terms** r
 
 To set up the work item:
 
-1. From Azure DevOps, navigate to **Boards** and then select **Boards** from the menu.
+1. From Azure DevOps, go to **Boards** and then select **Boards** from the menu.
 
     ![Azure DevOps showing the Boards menu](../../shared/media/azure-devops-boards-menu.png)
 
-1. From the **Check open source code for vulnerabilities and licensing terms** work item, click the down arrow at the bottom of the card. Then assign the work item to yourself.
+1. From the **Check open source code for vulnerabilities and licensing terms** work item, select the down arrow at the bottom of the card. Then assign the work item to yourself.
 
     ![Assigning the work item to yourself](../../shared/media/azure-boards-down-chevron.png)
 1. Move the work item from the **To Do** to the **Doing** column.
@@ -64,3 +73,5 @@ To set up the work item:
     ![Azure Boards showing the card in the Doing column](../media/3-azure-boards-wi5-doing.png)
 
 At the end of this module, you'll move the card to the **Done** column after you've completed the task.
+
+[!include[](../../shared/includes/build-local-setup.md)]

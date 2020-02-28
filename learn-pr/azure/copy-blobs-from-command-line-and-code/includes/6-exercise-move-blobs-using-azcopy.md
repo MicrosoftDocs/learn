@@ -2,8 +2,6 @@ You've decided to evaluate the AzCopy command as an alternative to using the CLI
 
 In this exercise, you'll investigate how to use the AzCopy to migrate blobs that haven't changed in the last six months to a separate storage account.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 ## Setup
 
 We'll start by downloading the latest version of AzCopy; currently version 10. The Azure CLI does include AzCopy but it may be an older version. We'll also generate SAS tokens for our storage accounts.
@@ -34,15 +32,19 @@ We'll start by downloading the latest version of AzCopy; currently version 10. T
 
 1. Repeat the steps above and assign the hot storage token to **HOT_SAS_TOKEN**.
 
-## Create a container for holding archived blobs
-
-1.  In the Cloud Shell, navigate to the directory containing the *AzCopy* utility:
-
     ```bash
-    cd azcopy_linux_amd64_10.1.0
+    HOT_SAS_TOKEN="<token from portal>"
     ```
 
-2. Create a new container named *azcopy-archive* in the destination storage account. Replace *\<destination storage account>* with the name of the storage account. Replace *\<destination sas token>* with the SAS token of the destination storage account. The SAS token must be enclosed in quotes:
+## Create a container for holding archived blobs
+
+1. In the Cloud Shell, navigate to the directory containing the *AzCopy* utility, replacing `<version>` with the version number downloaded with the latest AzCopy release.
+
+    ```bash
+    cd azcopy_linux_amd64_<version>
+    ```
+
+2. Create a new container named *azcopy-archive* in the cool storage destination:
 
     ```bash
     ./azcopy make https://$COOL_STORAGE_NAME.blob.core.windows.net/azcopy-archive$COOL_SAS_TOKEN
@@ -56,9 +58,9 @@ We'll start by downloading the latest version of AzCopy; currently version 10. T
 
     ```bash
     az storage blob list \
-      --account-name $HOT_STORAGE \
+      --account-name $HOT_STORAGE_NAME \
       --container-name "specifications" \
-      --sas-token "<source sas token>" \
+      --sas-token $HOT_SAS_TOKEN \
       --query '[].{name:name, properties:properties.lastModified}'
     ```
 

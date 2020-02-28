@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azdo.run-functional-tests-azure-pipelines.6-run-ui-tests
+title: Exercise - Run the UI tests locally and in the pipeline
+metadata:
+  title: Exercise - Run the UI tests locally and in the pipeline
+  description: Run the Selenium UI tests locally and then in the pipeline.
+  ms.date: 01/21/2020
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 13
+content: |
+  [!include[](includes/6-run-ui-tests.md)]

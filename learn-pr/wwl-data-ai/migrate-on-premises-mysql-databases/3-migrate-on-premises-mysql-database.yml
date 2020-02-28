@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.migrate-premises-mysql-databases-azure-database-mysql.migrate-premises-mysql-database-azure
+title: Migrate on-premises MySQL database to Azure
+metadata:
+  title: Migrate on-premises MySQL database to Azure
+  description: "Migrate on-premises MySQL database to Azure"
+  ms.date: 01/31/2020
+  author: wwlpublish
+  ms.author: v-gea
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 17
+content: |
+  [!include[](includes/3-migrate-on-premises-mysql-database.md)]

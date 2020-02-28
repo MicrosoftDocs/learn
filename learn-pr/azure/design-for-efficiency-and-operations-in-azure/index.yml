@@ -2,13 +2,12 @@
 uid: learn.design-for-efficiency-and-operations
 metadata:
   title: Design for efficiency and operations in Azure
-  description: Learn how to design an Azure architecture that is efficient in cost and operations, eliminates waste, and gives you full visibility into what's happening in your environment.
+  description: Learn how to design an Azure architecture that is efficient, eliminates waste, and gives you full visibility into what's happening in your environment.
   ms.date: 09/24/2018
-  author: tvuylsteke 
-  ms.author: thovuy
+  author: jboeshart 
+  ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #ms.learn-contact: jaboes
 title: Design for efficiency and operations in Azure
 summary: Learn how to design an Azure architecture that is cost- and operationally-efficient, eliminates waste, and gives you full visibility into what's happening in your environment.
 abstract:  | 

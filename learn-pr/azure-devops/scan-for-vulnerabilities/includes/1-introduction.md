@@ -1,4 +1,4 @@
-This module shows you how to make sure that you write code that's secure by scanning it for potential vulnerabilities. You also learn some techniques that can ensure that the code you write is of high quality and is easily maintainable.
+This module shows you how to make sure that you write code that's secure by scanning it for potential vulnerabilities. You also learn some techniques that can help ensure that the code you write is of high quality and is easily maintainable.
 
 Are you certain that the code you write is secure? Have you ever inadvertently added a vulnerability that could be exploited? As a developer, you need to be sure that you don't deploy code that could compromise the integrity of your software. You can detect potential code security issues by _shifting left_, which means scanning your code for potential issues early in the development process.
 
@@ -12,11 +12,28 @@ In this module, you will:
 
 ## Prerequisites
 
-* The prerequisites are the same as the [Create a build pipeline with Azure Pipelines](/learn/modules/create-a-build-pipeline?azure-portal=true) module.
-* You also need an account on [SonarCloud](https://sonarcloud.io?azure-portal=true). Sign in by using your GitHub or Azure DevOps account.
-* You also need the latest version of [Java SE](https://www.oracle.com/technetwork/java/javase/downloads/index.html?azure-portal=true).
+The modules in this learning path form a progression.
 
-Make sure you have the _Space Game_ project loaded in Visual Studio Code and your _Space Game_ project on GitHub handy.
+To follow the progression from the beginning, be sure to first complete the [Evolve your DevOps practices](/learn/paths/evolve-your-devops-practices?azure-portal=true) learning path.
+
+We also recommend you start at the beginning of this learning path, [Build applications with Azure DevOps](/learn/paths/build-applications-with-azure-devops?azure-portal=true).
+
+If you want to go through just this module, you need to set up a development environment on your Windows, macOS, or Linux system. You need:
+
+* An [Azure DevOps organization](https://dev.azure.com?azure-portal=true)
+* A [GitHub](https://github.com/join?azure-portal=true) account
+* [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
+* [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core/3.1?azure-portal=true)
+* [Git](https://git-scm.com/downloads?azure-portal=true)
+
+For this module, you also need:
+
+* An account on [SonarCloud](https://sonarcloud.io?azure-portal=true). Sign in by using your GitHub account.
+* The latest version of [Java SE](https://www.oracle.com/technetwork/java/javase/downloads/index.html?azure-portal=true).
+
+This environment lets you complete the exercises in this and future modules. You can also use it to apply your new skills to your own projects.
+
+[!include[](../../shared/includes/project-details-note.md)]
 
 ## Meet the team
 

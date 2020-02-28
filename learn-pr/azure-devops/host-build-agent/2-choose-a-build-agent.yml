@@ -3,32 +3,31 @@ uid: learn.azdo.host-build-agent.2-choose-a-build-agent
 title: Choose a Microsoft-hosted or self-hosted build agent
 metadata:
   title: Choose a Microsoft-hosted or self-hosted build agent
-  description: Learn about some of the factors to consider when choosing a build agent.
-  ms.date: 06/21/2019
+  description: Learn about some of the factors to consider when you choose a build agent.
+  ms.date: 01/21/2020
   author: tpetchel
   ms.author: thpetche
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 6
 content: |
   [!include[](includes/2-choose-a-build-agent.md)]
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Say you're building a video game. The build process takes 2 hours to run and uses between 18 GB and 20 GB of disk space to compile game assets. What kind of build agent might you use?"
+  - content: "Let's say you're building a video game. The build process takes two hours to run and uses 18 to 20 GB of disk space to compile the game assets. What kind of build agent might you use?"
     choices:
     - content: "A Microsoft-hosted agent"
       isCorrect: false
-      explanation: "Although the build completes within the allowed time, a Microsoft-hosted agent might not provide enough disk space for your build."
+      explanation: "Although the build is completed within the allowed time, a Microsoft-hosted agent might not provide enough disk space for your build."
     - content: "A self-hosted agent"
       isCorrect: true
-      explanation: "Although the build completes within the allowed time, you might need a self-hosted agent to accommodate the required amount of disk space your build needs."
-  - content: "Say you're building an application that runs on macOS, Linux, and Windows. How might you build for each platform you target?"
+      explanation: "Although the build is completed within the allowed time, you might need a self-hosted agent to accommodate the amount of disk space that your build requires."
+  - content: "Let's say you're building an application that runs on macOS, Linux, and Windows. How might you build the app for each platform you target?"
     choices:
     - content: "Create a build pipeline for each platform."
       isCorrect: false
-      explanation: "Although you can create multiple build pipelines, is there an easier way to maintain your build configuration?"
+      explanation: "Although you can create multiple build pipelines, it's easier to configure the pipeline to build the app on multiple platforms."
     - content: "Configure one pipeline to build on each platform."
       isCorrect: true
       explanation: "You can configure the pipeline to build on multiple platforms."
@@ -43,6 +42,6 @@ quiz:
     - content: "Can run anywhere, including Azure, another cloud, or on-premises."
       isCorrect: true
       explanation: "You can run a self-hosted agent anywhere. The agent must meet the requirements and be able to connect to Azure Pipelines."
-    - content: "Must run Linux. Use a Microsoft-hosted agent to build Windows applications."
+    - content: "Must run on Linux. Use a Microsoft-hosted agent to build Windows applications."
       isCorrect: false
       explanation: "A self-hosted agent can run on Linux, macOS, or Windows."

@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.cmu-cloud-admin.secure-cloud-resources
+metadata:
+  title: Secure your cloud resources with access control
+  description: Cloud Admin course from Dr. Majd Sakr at Carnegie Mellon University. Learn about digital identities and how they can be managed and synchronized within an organization.
+  ms.date: 08/15/2019
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  showCreativeCommonsFooter: true
+title: Secure your cloud resources with access control
+summary: Learn about digital identities and how they can be managed and synchronized within an organization.
+abstract: | 
+  In this module you will:
+  - Explain the concept of digital identity and the purpose of a directory service
+  - Describe the purpose of users and user groups in an identity-management system
+  - Explain how synchronization and federation can be used to extend identities beyond organizational boundaries
+  - Discuss the advantages of using guest identities to authenticate users external to the organization
+  - Discuss the use of role-based access control (RBAC) to secure access to resources
+
+  This content is provided in partnership with Dr. Majd Sakr and Carnegie Mellon University.
+prerequisites: |
+  - Understand what cloud computing is, including cloud service models, and common cloud providers
+  - Recognize cloud service models such as IaaS, PaaS, and SaaS and differentiate between them
+  - Understand how cloud resource provisioning works
+  - Be familiar with different approaches to organizing cloud resources
+iconUrl: /learn/achievements/cmu-cloud-admin/secure-cloud-resources.svg
+levels:
+- beginner
+roles:
+- administrator
+- student
+products:
+- azure
+units:
+- learn.cmu-cloud-admin.secure-cloud-resources.0-intro
+- learn.cmu-cloud-admin.secure-cloud-resources.1-cloud-identity-management
+- learn.cmu-cloud-admin.secure-cloud-resources.2-user-groups
+- learn.cmu-cloud-admin.secure-cloud-resources.3-federation-synchronization-guests
+- learn.cmu-cloud-admin.secure-cloud-resources.4-rbac
+- learn.cmu-cloud-admin.secure-cloud-resources.5-summary
+
+badge:
+  uid: learn.cmu-cloud-admin.secure-cloud-resources.badge

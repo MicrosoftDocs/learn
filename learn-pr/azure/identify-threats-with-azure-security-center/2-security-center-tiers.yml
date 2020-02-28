@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-security.identify-threats-with-azure-security-center.security-center-tiers
+title: Explore the Azure Security Center service tiers
+metadata:
+  title: Explore the Azure Security Center service tiers
+  description: Explore the Azure Security Center service tiers
+  ms.date: 09/30/2019
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-security-center-tiers.md)]

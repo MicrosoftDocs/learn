@@ -37,7 +37,7 @@ We will use the pre-created resource group in the Azure Sandbox named <rgn>[sand
         --name $ACCOUNT_NAME \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
         --location southcentralus \
-        --kind Storage \
+        --kind StorageV2 \
         --sku Standard_LRS
     ```
 
@@ -48,12 +48,13 @@ We will use the pre-created resource group in the Azure Sandbox named <rgn>[sand
 
 Before you can upload images to a storage account, you must create a blob container to store them in.
 
-1. Use the following command to create a container named "photos" in the storage account.
+1. Use the following command to create a container named "photos" in the storage account with public access to the images.
 
     ```azurecli
     az storage container create \
         --name photos \
-        --account-name $ACCOUNT_NAME
+        --account-name $ACCOUNT_NAME \
+        --public-access blob
     ```
 
 You now have a storage account for storing photos taken by your simulated cameras, and a container to store them in.

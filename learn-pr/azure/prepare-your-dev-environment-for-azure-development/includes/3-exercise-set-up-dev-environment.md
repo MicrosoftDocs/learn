@@ -24,7 +24,7 @@ To install Visual Studio Code, use the appropriate steps for your operating syst
 
 1. Open Visual Studio Code by clicking on the icon the Apps section or by searching for Visual Studio Code in Spotlight.
 
-### Linux 
+### Linux
 
 #### Debian and Ubuntu
 
@@ -173,7 +173,7 @@ Installing the Azure Toolkit is the same across Windows, macOS, and Linux.
 
 1. Drag the following button to your running Eclipse workspace to install the Azure Toolkit for Eclipse plugin.
 
-   [![Drag to your running Eclipse* workspace. *Requires Eclipse Marketplace Client](https://marketplace.eclipse.org/sites/all/themes/solstice/public/images/marketplace/btn-install.png)](http://marketplace.eclipse.org/marketplace-client-intro?mpc_install=1919278 "Drag to your running Eclipse* workspace. *Requires Eclipse Marketplace Client")
+   [![Drag to your running Eclipse* workspace. *Requires Eclipse Marketplace Client](../media/3-eclipse-install-button.png)](https://marketplace.eclipse.org/marketplace-client-intro?mpc_install=1919278 "Drag to your running Eclipse* workspace. *Requires Eclipse Marketplace Client")
 
 1. The feature confirm dialog will open. Currently we have no optional feature, click **Confirm** to continue.
 
@@ -186,36 +186,6 @@ Installing the Azure Toolkit is the same across Windows, macOS, and Linux.
 1. Restart Eclipse if necessary.
 
 1. Validate the Azure Toolkit installation by verifying that you can find a **Tools** > **Azure** menu option in Eclipse.
-
-<!-- Old Installation Instructions
-
-1. Start Eclipse.
-
-1. Go to **Help** > **Install New Software...**.
-
-   The following screenshot shows the menu location of the **Install New Software...** item.
-
-   ![Screenshot of the Install New Software option highlighted within the Help menu of Eclipse.](../media/7-eclipse-install-new-software.png)
-
-1. The **Available Software** dialog will open. In the **Work with:** text box, type `http://dl.microsoft.com/eclipse/` and press Enter.
-
-1. In the results, check the **Azure Toolkit for Java** option. Make sure you uncheck the **Contact all update sites during install to find required software** option, if it isn't already.
-
-   The following screenshot shows the **Available Software** install configuration as described above.
-
-   ![Screenshot of the Available Software window in Eclipse, with boxes highlighting the configuration necessary to find and install the Azure Toolkit for Java.](../media/7-eclipse-download-azure-toolkit-for-java.png)
-
-1. Click **Next**.
-
-1. Review and accept the license agreements when prompted, and click **Finish**.
-
-1. Eclipse will download and install the Azure Toolkit.
-
-1. Restart Eclipse if required.
-
-1. Validate the Azure Toolkit installation by verifying that you can find a **Tools** > **Azure** menu option in Eclipse.
-
--->
 
 ::: zone-end
 

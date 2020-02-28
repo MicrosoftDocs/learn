@@ -2,7 +2,7 @@ Durable functions enables you to implement complex stateful functions in a serve
 
 In the example scenario, your company currently follows manual approval process, for project design proposals. The process has multiple steps and each step along the process can vary in duration. Implementing an automated process in-house is complex and costly. Coordinating each step takes effort. In addition, you must be able to incorporate custom logic into the workflow.  
 
-In this unit, you'll learn to about the benefits of Durable Functions. You'll learn about the different function types and key concepts associate with Durable Functions.
+In this unit, you'll learn about the benefits of Durable Functions. You'll learn about the different function types and key concepts associated with Durable Functions.
 
 ## Durable functions
 

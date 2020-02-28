@@ -1,7 +1,3 @@
-<!---
->> [!NOTE]
-> After launching the lab, the username and password you need is located on the **Resources** tab next to the instructions.
---->
 At First Up Consultants, you've been granted access to a resource group for the marketing team. You want to familiarize yourself with the Azure portal and see what roles are currently assigned.
 
 ## List role assignments for yourself
@@ -31,13 +27,13 @@ Follow these steps to see what roles are assigned at the resource group scope.
 
 1. In the navigation list, click **Resource groups**.
 
-   ![Screenshot of the Azure portal showing the Resource groups blade](../media/4-resource-groups.png)
+   ![Screenshot of the Azure portal showing the Resource groups pane](../media/4-resource-groups.png)
 
 1. Find and click the resource group named **FirstUpConsultantsRG1-_XXXXXXX_**.
 
 1. Click **Access control (IAM)**.
 
-   ![Screenshot showing the location of the Access control (IAM) option in the selected resource group blade](../media/4-resource-group-access-control.png)
+   ![Screenshot showing the location of the Access control (IAM) option in the selected resource group pane](../media/4-resource-group-access-control.png)
 
 1. Click the **Role assignments** tab.
 

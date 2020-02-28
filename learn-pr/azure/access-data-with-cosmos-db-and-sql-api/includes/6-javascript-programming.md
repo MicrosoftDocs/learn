@@ -17,7 +17,7 @@ Let's start by creating a new stored procedure in the portal. The portal automat
    - **Value**: _33218896_
 
     ![Run a stored procedure in the portal](../media/6-stored-procedure.png)
-1. Select click **Execute**. Note that stored procedures work within a single partition.
+1. Select **Execute**. Note that stored procedures work within a single partition.
 
     The **Result** pane displays the feed from the first document in the container.
 

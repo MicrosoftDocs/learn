@@ -1,18 +1,18 @@
-Mara now has a copy of the _Space Game_ code on her local machine. She's going to build it using Azure Pipelines instead of the existing Ubuntu 16.04 build server. Before she can do that, she needs to think about the existing build scripts. Follow along as she maps the existing scripts to Azure Pipelines tasks. Think about how you can do the same with your own build process.
+Mara now has a copy of the *Space Game* code on her local machine. She's going to build it by using Microsoft Azure Pipelines instead of the existing Ubuntu 16.04 build server. Before she can do that, she needs to think about the existing build scripts. Follow along as she maps the existing scripts to Azure Pipelines tasks. Think about how you can do the same with your own build process.
 
-Here are some notes Mara collected when she talked to Andy, the dev lead.
+Here are some notes that Mara collected when she talked to Andy, the dev lead:
 
 * The build machine is running Ubuntu 16.04.
-* The build machine includes build tools such as:
-  * npm, the package manager for Node.js
-  * NuGet, the package manager for .NET
-  * the .NET Core SDK
-* The project uses Sass to make it easier to author cascading style sheets (CSS) files.
+* The build machine includes build tools like:
+  * npm, the package manager for Node.js.
+  * NuGet, the package manager for .NET.
+  * The .NET Core SDK.
+* The project uses Sass to make it easier to author Cascading Style Sheets (CSS) files.
 * The project uses gulp to minify JavaScript and CSS files.
 
-A minified asset excludes unneeded data such as whitespace and shortens variable names to help it download faster.
+A minified asset excludes unneeded data like whitespace and shortens variable names to help it download faster.
 
-Here are the steps that happen during the build process.
+Here are the steps that happen during the build process:
 
 1. Run `npm install` to install the Node.js packages defined in `package.json`.
 1. Run `node-sass` to convert Sass (.scss) files to CSS (.css) files.
@@ -60,13 +60,15 @@ dotnet publish --no-build --configuration Release --output /tmp/Release
 
 The `/tmp` directory mimics the team's network share.
 
-After she runs the script, Mara realizes that it's incomplete. For example, it doesn't deal with errors. It doesn't notify anyone if there are build errors and, even when there are errors, it keeps running. It also doesn't install the tools each step requires.
+After she runs the script, Mara realizes that it's incomplete. For example, it doesn't deal with errors. It doesn't notify anyone if build errors occur. Even when there are errors, it keeps running. It also doesn't install the tools each step requires.
 
 ## What are Azure Pipelines tasks?
 
-An Azure Pipelines task abstracts away the underlying details, making it easier to run common build functions, such as downloading build tools or packages your application depends on or running Visual Studio or Xcode to build your project.
+In Azure Pipelines, a _task_ is a packaged script or procedure that's been abstracted with a set of inputs.
 
-Here's an example that uses the `DotNetCoreCLI@2` task to build a C# project that targets .NET Core.
+An Azure Pipelines task abstracts away the underlying details. This abstraction makes it easier to run common build functions, like downloading build tools or packages your application depends on or running Visual Studio or Xcode to build your project.
+
+Here's an example that uses the `DotNetCoreCLI@2` task to build a C# project that targets .NET Core:
 
 ```yml
 task: DotNetCoreCLI@2
@@ -83,48 +85,54 @@ The pipeline might translate this task to this command:
 dotnet build MyProject.csproj --no-restore --configuration Release
 ```
 
-Let's break this down a bit more.
+Let's break this task down a bit more:
 
 * The `DotNetCoreCLI@2` task maps to the `dotnet` command.
-* `displayName` defines the task name that's shown in the user interface. You'll see this in action shortly.
+* `displayName` defines the task name that's shown in the user interface. You'll see this in action soon.
 * `inputs` defines arguments that are passed to the command.
   * `command` specifies to run the `dotnet build` subcommand.
   * `arguments` specifies additional arguments to pass to the command.
   * `projects` specifies which projects to build. This example uses the wildcard pattern `**/*.csproj`.
-    Both `**` and `*.csproj` are examples of what are called _glob patterns_.
+    Both `**` and `*.csproj` are examples of what are called *glob patterns*.
     The `**` part specifies to search the current directory and all child directories. The `*.csproj` part specifies any .csproj file.
-    Wildcards enable you to act on multiple files without the need to specify each one. If you need to act on a specific file only, you can specify that file instead of using wildcards.
+    Wildcards let you act on multiple files without specifying each one. If you need to act on a specific file only, you can specify that file instead of using wildcards.
 
-The "@" in the task name, such as `DotNetCoreCLI@2`, refers to the task's version. As new task versions become available, you can gradually migrate to the latest version to take advantage of new features.
+The "@" in the task name, for example `DotNetCoreCLI@2`, refers to the task's version. As new task versions become available, you can gradually migrate to the latest version to take advantage of new features.
 
 ## How are tasks used in a pipeline?
 
-Next, Mara is going to map the existing script commands to Azure Pipelines tasks.
+Next, Mara's going to map the existing script commands to Azure Pipelines tasks.
 
-Mara has two choices she can use to configure her pipeline:
+Mara can use one of two methods to configure her pipeline:
 
-* The visual designer. Here, you drag tasks onto a form and then configure each task to do precisely what you need.
+* The visual designer. Here, you drag tasks onto a form and then configure each task to do exactly what you need.
 
     ![The Azure Pipelines visual designer showing build tasks for a .NET Core application](../media/4-visual-designer.png)
 
-* A YAML file. YAML is a compact format that makes it easy to structure data such as configuration files. You typically maintain this YAML file directly with your application's source code.
+* A YAML file. YAML is a compact format that makes it easy to structure the kind of data that's in configuration files. You typically maintain this YAML file directly with your application's source code.
 
 Mara considers her options. She's used YAML previously to define similar build tasks and configurations. And she likes the idea of maintaining the build definition as code, just as she would any other part of her project.
 
-> [!NOTE]
-> The underlying process Azure Pipeline uses is the same whether you use the visual designer or a YAML file. The difference is mainly in how you define your pipeline tasks.
+_Pipeline as code_ refers to the concept of expressing your build definitions as code. In this short video, Abel explains the concept of pipeline as code.
 
-To define her build, Mara chooses to use Visual Studio Code to create a YAML file. In it, she enters all the Azure Pipeline tasks she'll use to replace the existing script commands.
+**Ask Abel**
+
+> [!VIDEO https://channel9.msdn.com/Blogs/One-Dev-Minute/What-is-Pipeline-as-Code--One-Dev-Question/player?format=ny]
+
+To define her build, Mara chooses to use Visual Studio Code to create a YAML file. In it, she enters all the Azure Pipelines tasks that she'll use to replace the existing script commands.
+
+> [!NOTE]
+> The underlying process that Azure Pipelines uses is the same whether you use the visual designer or a YAML file. The difference is mainly in how you define your pipeline tasks.
 
 ## Map script commands to Azure Pipelines tasks
 
-Here you'll follow as Mara maps commands from her script to Azure Pipelines tasks.
+Now you'll follow along as Mara maps commands from her script to Azure Pipelines tasks.
 
-To map each command, Mara refers to the [reference documentation](https://docs.microsoft.com/azure/devops/pipelines/tasks/?view=azure-devops&azure-portal=true). The documentation categorizes tasks by function, such as to build or deploy the application.
+To map each command, Mara refers to the [reference documentation](https://docs.microsoft.com/azure/devops/pipelines/tasks/?view=azure-devops&azure-portal=true). The documentation categorizes tasks by function, like build or deploy.
 
-As an example, the [.NET Core task](https://docs.microsoft.com/azure/devops/pipelines/tasks/build/dotnet-core?view=azure-devops&azure-portal=true), `DotNetCoreCLI@2`, helps you run `dotnet` commands.
+For example, the [.NET Core task](https://docs.microsoft.com/azure/devops/pipelines/tasks/build/dotnet-core?view=azure-devops&azure-portal=true), `DotNetCoreCLI@2`, helps you run `dotnet` commands.
 
-This table associates the script commands with the new Azure Pipelines tasks.
+This table associates the script commands with the new Azure Pipelines tasks:
 
 | Script command   | Azure Pipelines task |
 |------------------|----------------------|
@@ -136,9 +144,9 @@ This table associates the script commands with the new Azure Pipelines tasks.
 | `dotnet build`   | `DotNetCoreCLI@2`    |
 | `dotnet publish` | `DotNetCoreCLI@2`    |
 
-There's no built-in task type that runs node-sass or prints the date to file. For those you use the `CmdLine@2` task, which enables you to run any command you'd like.
+There's no built-in task type that runs node-sass or prints the date to a file. For those, Mara uses the `CmdLine@2` task, which lets her run any command that she wants.
 
-More commonly, you'll see the `script` task, which is a shortcut for `CmdLine@2`. So Mara updates her table like this.
+More commonly, you'll see the `script` task, which is a shortcut for `CmdLine@2`. So Mara updates her table like this:
 
 | Script command   | Azure Pipelines task |
 |------------------|----------------------|
@@ -150,4 +158,4 @@ More commonly, you'll see the `script` task, which is a shortcut for `CmdLine@2`
 | `dotnet build`   | `DotNetCoreCLI@2`    |
 | `dotnet publish` | `DotNetCoreCLI@2`    |
 
-Shortly, you'll create a YAML file of your own that uses these tasks.
+You'll soon create a YAML file of your own that uses these tasks.

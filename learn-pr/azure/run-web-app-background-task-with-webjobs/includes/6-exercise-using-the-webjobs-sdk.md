@@ -26,7 +26,7 @@ The WebJob project template, which you used to create your WebJob in unit 4, ins
 
 The Azure Storage bindings, such as `QueueTrigger` and `Blob`, use the storage account specified by the `AzureWebJobsStorage` connection string. We need to add this connection string as a setting in our app. Additionally, WebJobs that use the SDK need to have the `AzureWebJobsDashboard` connection string configured in order to run.
 
-Run the following command in the Cloud Shell window on the right to create both connection strings as settings in the web app. We will use the same connection string as we did for `StorageAccount` in the previous exercise. The new WebJob will read messages from the existing queue and write blobs to a new container in the same storage account.
+In the [Azure portal](https://portal.azure.com/?azure-portal=true), run the following command in the Cloud Shell window to create both connection strings as settings in the web app. We will use the same connection string as we did for `StorageAccount` in the previous exercise. The new WebJob will read messages from the existing queue and write blobs to a new container in the same storage account.
 
 ```azurecli
 az webapp config connection-string set --id $WEB_APP_ID --connection-string-type Custom --settings AzureWebJobsStorage=$STORAGE_ACCOUNT_CONNSTR AzureWebJobsDashboard=$STORAGE_ACCOUNT_CONNSTR
@@ -43,6 +43,6 @@ Now that our second WebJob is implemented, we'll publish the application one mor
 
 Now that both WebJobs are published, let's confirm that the new WebJob is working properly.
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), click **All resources**, and then navigate to the storage account.
+1. In the [Azure portal](https://portal.azure.com/?azure-portal=true), search for and select the storage account.
 1. In the navigation menu, select **Queues**, then select the **stockchecks** queue. You'll see that the queue is now empty, or nearly empty. The new WebJob is processing all messages that reach the queue and writing new data out to blob storage.
 1. Navigate back to the storage account, then use the navigation menu to select **Blobs**. Select the **confirmations** container from the list. Each blob shown in the list is output from the WebJob.

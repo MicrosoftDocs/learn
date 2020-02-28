@@ -4,7 +4,9 @@ Let's get started by learning about Logic Apps and their ability to monitor even
 
 ## What are Logic Apps?
 
-Azure Logic Apps is a cloud service that you can use to integrate apps, systems, data, and services within your enterprise or across organizations. They help to simplify how you design and build scalable solutions in the cloud, on-premises, or both. 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4qhug]
+
+Azure Logic Apps is a cloud service that you can use to integrate apps, systems, data, and services within your enterprise or across organizations. They help to simplify how you design and build scalable solutions in the cloud, on-premises, or both.
 
 ## What can you do with a Logic App?
 
@@ -14,7 +16,7 @@ You can use Logic Apps to connect and orchestrate multiple systems into a single
 - Move files to Azure Storage from servers in your organization.
 - Monitor social media activity, perform sentiment analysis, and create alerts when a post is critical to your business.
 - Connect to common business systems by using built-in connectors.
-- Connect to unusual or unique systems by using customer connectors that you create.
+- Connect to unusual or unique systems by using custom connectors that you create.
 
 Logic Apps can do all of these things without the need to rebuild or redeploy code.
 
@@ -40,5 +42,5 @@ Logic Apps offers over 200 built-in connectors. They fall into various categorie
 - **Managed connectors** have triggers and actions that call other services and systems. These connectors are organized into subcategories.
 - **Managed API connectors** have actions and triggers that integrate with Azure Blob Storage, Office 365, Dynamics, Power BI, and more.
 - **On-premises connectors** have actions and triggers that integrate with on-premise installations of SQL Server, SharePoint Server, Oracle, and file shares.
-- **Integration account connectors** transform and validate XML, encode and decode flat files, and process business-to-business (B2B) messages with AS2, EDIFACT, and X12 protocols. 
+- **Integration account connectors** transform and validate XML, encode and decode flat files, and process business-to-business (B2B) messages with AS2, EDIFACT, and X12 protocols.
 - **Enterprise connectors** provide access to enterprise systems such as SAP, IBM Message Queue etc.

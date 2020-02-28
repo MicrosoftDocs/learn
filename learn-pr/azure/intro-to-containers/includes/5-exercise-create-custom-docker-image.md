@@ -31,7 +31,7 @@ In this exercise, you'll create a Dockerfile for an app that doesn't have one. T
 4. Add the following commands to the Dockerfile. These commands fetch an image containing the .NET Core Framework SDK. The project files for the web app (`HotelReservationSystem.csproj`) and the library project (`HotelReservationSystemTypes.csproj`) are copied to the /src folder in the container. The `*`dotnet restore`*` command downloads the dependencies required by these projects from NuGet.
 
     ```Dockerfile
-    FROM microsoft/dotnet:2.1-sdk
+    FROM mcr.microsoft.com/dotnet/core/sdk:2.2
     WORKDIR /src
     COPY ["HotelReservationSystem/HotelReservationSystem.csproj", "HotelReservationSystem/"]
     COPY ["HotelReservationSystemTypes/HotelReservationSystemTypes.csproj", "HotelReservationSystemTypes/"]
@@ -92,7 +92,7 @@ In this exercise, you'll create a Dockerfile for an app that doesn't have one. T
     docker run -p 8080:80 -d --name reservations reservationsystem
     ```
 
-1. Start a web browser and navigate to http://localhost:8080/api/reservations/1. You should see a JSON document containing the data for reservation number 1 returned by the web app. You can replace the "1" with any reservation number, and you'll see the corresponding reservation details.
+1. Start a web browser and navigate to `http://localhost:8080/api/reservations/1`. You should see a JSON document containing the data for reservation number 1 returned by the web app. You can replace the "1" with any reservation number, and you'll see the corresponding reservation details.
 
     ![Screenshot of the hotel reservations system web app running in a browser](../media/5-hotel-web-app.png)
 
@@ -121,6 +121,6 @@ In this exercise, you'll create a Dockerfile for an app that doesn't have one. T
     docker rm reservations
     ```
 
-1. Leave the *reservationsystem* in your the local registry. You will use this image in the next exercise.
+1. Leave the *reservationsystem* in the local registry. You will use this image in the next exercise.
 
 You've now created an image for your web app and run it using a Docker container.

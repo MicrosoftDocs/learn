@@ -1,4 +1,4 @@
-In this module, you learned about the benefits of webhooks. You created an Azure Function triggered by a webhook. You saw how to set up a webhook for a GitHub repository and how to trigger an Azure Function with a GitHub event. Finally, you learned how to protect an Azure function using a secret.
+In this module, you learned about the benefits of webhooks. You created a function in Azure Functions triggered by a webhook. You saw how to set up a webhook for a GitHub repository and how to trigger your function with a GitHub event. Finally, you learned how to protect your function using a secret.
 
 [!include[](../../../includes/azure-sandbox-cleanup.md)]
 

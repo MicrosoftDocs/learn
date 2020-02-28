@@ -14,7 +14,7 @@ Here, you'll create an Azure Cosmos DB instance and use environment variables to
 
     ```azurecli
     COSMOS_DB_ENDPOINT=$(az cosmosdb create \
-      --resource-group <rgn>[sandbox resource group name]</rgn> \
+      --resource-group learn-deploy-aci-rg \
       --name $COSMOS_DB_NAME \
       --query documentEndpoint \
       --output tsv)
@@ -28,7 +28,7 @@ Here, you'll create an Azure Cosmos DB instance and use environment variables to
 
     ```azurecli
     COSMOS_DB_MASTERKEY=$(az cosmosdb keys list \
-      --resource-group <rgn>[sandbox resource group name]</rgn> \
+      --resource-group learn-deploy-aci-rg \
       --name $COSMOS_DB_NAME \
       --query primaryMasterKey \
       --output tsv)
@@ -44,7 +44,7 @@ The two environment variables you created in the last part, `COSMOS_DB_ENDPOINT`
 
     ```azurecli
     az container create \
-      --resource-group <rgn>[sandbox resource group name]</rgn> \
+      --resource-group learn-deploy-aci-rg \
       --name aci-demo \
       --image microsoft/azure-vote-front:cosmosdb \
       --ip-address Public \
@@ -62,7 +62,7 @@ The two environment variables you created in the last part, `COSMOS_DB_ENDPOINT`
 
     ```azurecli
     az container show \
-      --resource-group <rgn>[sandbox resource group name]</rgn> \
+      --resource-group learn-deploy-aci-rg \
       --name aci-demo \
       --query ipAddress.ip \
       --output tsv
@@ -89,7 +89,7 @@ In this part, you'll learn how to prevent sensitive information, such as connect
 
     ```azurecli
     az container show \
-      --resource-group <rgn>[sandbox resource group name]</rgn> \
+      --resource-group learn-deploy-aci-rg \
       --name aci-demo \
       --query containers[0].environmentVariables
     ```
@@ -119,7 +119,7 @@ In this part, you'll learn how to prevent sensitive information, such as connect
 
     ```azurecli
     az container create \
-      --resource-group <rgn>[sandbox resource group name]</rgn> \
+      --resource-group learn-deploy-aci-rg \
       --name aci-demo-secure \
       --image microsoft/azure-vote-front:cosmosdb \
       --ip-address Public \
@@ -135,7 +135,7 @@ In this part, you'll learn how to prevent sensitive information, such as connect
 
     ```azurecli
     az container show \
-      --resource-group <rgn>[sandbox resource group name]</rgn> \
+      --resource-group learn-deploy-aci-rg \
       --name aci-demo-secure \
       --query containers[0].environmentVariables
     ```

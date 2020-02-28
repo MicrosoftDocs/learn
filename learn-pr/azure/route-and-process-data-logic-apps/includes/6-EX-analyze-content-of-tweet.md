@@ -2,11 +2,9 @@ In this exercise, we're going to continue work on our social-media monitor app. 
 
 ![An illustration showing the triggers and actions in the social-media monitor Logic App. The second step is an action labeled Detect Sentiment. This action is highlighted to indicate that is the part of the app that will be completed in this exercise.](../media/exercise-detect-sentiment.png)
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 ## Get Text Analytics Key and endpoint
 
-The Azure Text Analytics API provides natural language processing of text. It lets you do sentiment analysis, key phrase extraction, language detection, and entity linking. We'll be using it for sentiment analysis. We'll run a script in this section to programmatically set up a Cognitive Services account in the sandbox, register the Text Analytics service, and return a key and the endpoint ULR to us. We'll need those values in this exercise to make calls and get back sentiment scores. 
+The Azure Text Analytics API provides natural language processing of text. It lets you do sentiment analysis, key phrase extraction, language detection, and entity linking. We'll be using it for sentiment analysis. We'll run a script in this section to programmatically set up a Cognitive Services account in the sandbox, register the Text Analytics service, and return a key and the endpoint URL to us. We'll need those values in this exercise to make calls and get back sentiment scores. 
 
 The Cognitive Services account is created in the sandbox environment and is, therefore, free for use in this module. 
 

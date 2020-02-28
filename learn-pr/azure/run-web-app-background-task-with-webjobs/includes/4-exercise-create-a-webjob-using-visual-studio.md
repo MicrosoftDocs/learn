@@ -4,22 +4,24 @@ You want to begin building a WebJob for the luxury watch dealer’s site and to 
 
 Here, you will create a web app from a template and then add a WebJob project to the same solution. This structure enables you to manage the web app and the WebJob as a single unit in source control systems.
 
-[!INCLUDE [Activate the Sandbox](../../../includes/azure-sandbox-activate.md)]
-
-[!INCLUDE [Select an Azure Region](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
+[!include[](../../../includes/azure-exercise-subscription-prerequisite.md)]
 
 ## Create a storage account
 
-The WebJob that you will create in this unit will write messages to a queue in an Azure Storage account. We'll start by creating that account.
+The WebJob that you will create in this unit will write messages to a queue in an Azure Storage account. We'll start by creating that account, as well as a resource group to put it in.
 
-In the Cloud Shell window on the right, run the following commands. When it completes, make a note of the storage account name it created. This will also store the connection string for the storage account in a shell variable, which we'll use shortly.
+Sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true) and use the Cloud Shell to run the following commands. In the `az group create` command, replace `<location>` with an Azure region name of your choosing. You can list all available regions with `az account list-locations --query [].name`.
+
+When the last command completes, make a note of the storage account name it created. This will also store the connection string for the storage account in a shell variable, which we'll use shortly.
 
 ```azurecli
 STORAGE_ACCOUNT_NAME=mslearnwebjobs$RANDOM
 
+az group create --name mslearn-webjobs --location <location>
+
 az storage account create \
     --name $STORAGE_ACCOUNT_NAME \
-    --resource-group <rgn>[Sandbox resource group name]</rgn>
+    --resource-group mslearn-webjobs
 
 STORAGE_ACCOUNT_CONNSTR=$(az storage account show-connection-string --name $STORAGE_ACCOUNT_NAME --query connectionString -o tsv)
 
@@ -46,7 +48,7 @@ You've now created a web application from the sample template and it is running 
 1. Ensure that your copy of Visual Studio is logged into the account you have used to log in to Microsoft Learn. This will ensure that the sandbox subscription is available for publishing.
 1. Right-click the **WatchesWebApp** project in Solution Explorer and select **Publish**.
 1. Select **App Service** as the publish target, select **Create New**, and then click **Publish**.
-1. In the **Create App Service** dialog, enter a name for your web application. You can accept the default name. This name must be globally unique. For **Subscription**, select **Concierge Subscription**. Select the existing resource group **<rgn>[Sandbox resource group]</rgn>**, then click **Create**.
+1. In the **Create App Service** dialog, enter a name for your web application and make a note of it for later. You can accept the default name. This name must be globally unique. For **Subscription**, select the subscription in which you created the mslearn-webjobs resource group. Select the resource group as well, then click **Create**.
 1. When deployment is complete, Visual Studio will open a new browser tab. After a short wait, the new web app will be displayed.
 
 ## Configure the web app
@@ -58,7 +60,7 @@ Our WebJob's code will also need the connection string for our storage account. 
 Run the following commands in the Cloud Shell window to configure the new web app.
 
 ```azurecli
-WEB_APP_ID=$(az webapp list --query [0].id --o tsv)
+WEB_APP_ID=$(az webapp list --resource-group mslearn-webjobs --query [0].id --o tsv)
 
 az webapp config set --id $WEB_APP_ID --always-on true
 
@@ -118,8 +120,7 @@ Now that the code is complete, you can re-publish the application and the WebJob
 
 The WebJob that you just published creates messages in queue storage on a schedule. Let's confirm that it's been deployed and check that it works:
 
-1. Log in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using your MS Learn account.
-1. Select **All resources** and navigate to your web app.
+1. Sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true), and search for and select your web app.
 1. Under **Settings**, click **WebJobs**. You should see your WebJob in the list with a status of Running.
 1. Navigate back to **All resources** and select the storage account created at the beginning of this exercise. Select **Queues** from the navigation menu.
 1. The list should display a single queue, named `stockchecks`, created by the WebJob. If you select it, you'll see the messages that the WebJob is creating, one every 30 seconds.

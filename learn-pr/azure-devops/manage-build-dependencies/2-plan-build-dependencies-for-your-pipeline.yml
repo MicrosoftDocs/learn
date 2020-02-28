@@ -3,13 +3,12 @@ uid: learn.azdo.manage-build-dependencies.2-plan-build-dependencies-for-your-pip
 title: Plan build dependencies for your pipeline
 metadata:
   title: Plan build dependencies for your pipeline
-  description: Share code using packages and consume the packages in your pipeline
-  ms.date: 06/21/2019
+  description: Share code by using packages and consume the packages in your pipeline
+  ms.date: 01/21/2020
   author: tpetchel
   ms.author: thpetche
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 10
 content: |
   [!include[](includes/2-plan-build-dependencies-for-your-pipeline.md)]
@@ -31,10 +30,10 @@ quiz:
     choices:
     - content: "A public hosting service, such as NuGet."
       isCorrect: true
-      explanation: "Hosting services such as NuGet make it easy for you to upload packages as well as for others to discover and use them."
+      explanation: "Hosting services such as NuGet make it easy for you to upload packages, as well as for others to discover and use them."
     - content: "On a public network file share."
       isCorrect: false
-      explanation: "Although this is possible, others may not be able to discover your package. It also adds responsibilty on your part to ensure the network share is secure."
+      explanation: "Although this is possible, others might not be able to discover your package. It also adds responsibility on your part to ensure the network share is secure."
     - content: "Behind your firewall."
       isCorrect: false
       explanation: "Others won't be able to access packages behind your firewall."

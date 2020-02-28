@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.ha-application-storage-with-grs.6-summary
+metadata:
+  title: Summary
+  description: Summary
+  ms.date: 09/03/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Summary
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-summary.md)]

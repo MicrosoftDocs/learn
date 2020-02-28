@@ -1,6 +1,6 @@
 You don't have much time to get business processes properly integrated between your existing bike rental system and the system in use in the second campus. You'd like to make the most of your existing Azure expertise and you've read that Azure includes several different technologies that you can use to solve problems like this.
 
-In this unit, we'll explore the Azure technology options that are available to you.
+In this unit, we'll explore the Azure technology options that are available to automate and integrate your business processes.
 
 ## Common Business Problems
 
@@ -66,11 +66,11 @@ Under the hood, Microsoft Flow is built on Logic Apps. This fact means that Flow
 As you can see from the following table, Microsoft Flow is more appropriate for use by non-technical staff. If your workflow designers are IT professionals, developers, or DevOps practitioners, Logic Apps are usually a better fit:
 
 | | Microsoft Flow| Logic Apps |
--- | -- | -- |
-**Intended users** | Office workers and business analysts | Developers and IT pros |
-**Intended scenarios** | Self-service workflow creation | Advanced integration projects |
-**Design tools** | GUI only. Browser and mobile app | Browser and Visual Studio designer. Code editing is possible |
-**Application Lifecycle Management** | Flow includes testing and production environments | Logic Apps source code can be included in Azure DevOps and source code management systems |
+| -- | -- | -- |
+| **Intended users** | Office workers and business analysts | Developers and IT pros |
+| **Intended scenarios** | Self-service workflow creation | Advanced integration projects |
+| **Design tools** | GUI only. Browser and mobile app | Browser and Visual Studio designer. Code editing is possible |
+| **Application Lifecycle Management** | Flow includes testing and production environments | Logic Apps source code can be included in Azure DevOps and source code management systems |
 
 ## Code-first technologies
 
@@ -97,7 +97,7 @@ The WebJobs SDK only supports C# and the NuGet package manager.
 
 ![Azure Functions](../media/2-azure-functions-logo.png)
 
-An Azure Function is a simple way for you to run small pieces of code in the cloud, without having to worry about the infrastructure required to host that code. You can write the Function in C#, F# Node.js, Java, Python, or PHP and you only pay for the time when the code runs. Azure automatically scales your function in response to the demand from users.
+An Azure Function is a simple way for you to run small pieces of code in the cloud, without having to worry about the infrastructure required to host that code. You can write the Function in C#, Java, JavaScript, PowerShell, Python, or any of the languages that are listed in the [Supported languages in Azure Functions](https://docs.microsoft.com/azure/azure-functions/supported-languages) article. In addition, with the consumption plan option, you only pay for the time when the code runs. Azure automatically scales your function in response to the demand from users.
 
 When you create an Azure Function, you can start by writing the code for it in the portal. Alternatively, if you need source code management, you can use GitHub or Azure DevOps Services.
 
@@ -118,15 +118,14 @@ In most cases, the simple administration and more flexible coding model provided
 - You need close control over the object that listens for events that trigger the code. This object in question is the `JobHost` class, and you have more flexibility to modify its behavior in WebJobs.
 
 | | Azure WebJobs | Azure Functions |
--- | -- | -- |
-Supported languages | C# if you are using the WebJobs SDK | C#, F#, JavaScript, Java |
-Automatic scaling | No | Yes |
-Development and testing in a browser | No | Yes |
-Pay-per-use pricing | No | Yes |
-Integration with Logic Apps | No | Yes |
-Package managers | NuGet if you are using the WebJobs SDK | Nuget and NPM |
-Can be part of an App Service application | Yes | No |
-Provides close control of `JobHost` | Yes | No |
+| -- | --| -- |
+| Supported languages | C# if you are using the WebJobs SDK | C#, Java, JavaScript, PowerShell, etc. |
+| Automatic scaling | No | Yes |
+| Development and testing in a browser | No | Yes |
+| Pay-per-use pricing | No | Yes |
+| Integration with Logic Apps | No | Yes |
+| Package managers | NuGet if you are using the WebJobs SDK | Nuget and NPM |
+| Can be part of an App Service application | Yes | No |
+| Provides close control of `JobHost` | Yes | No |
 
-
-Now you know what design-first and code-first technologies are available to you, how do you narrow you choice down for a given scenario? We'll look at this question in the next unit. 
+Now that you know what design-first and code-first technologies are available to you, how do you narrow your choices? We'll look at this question in the next unit.

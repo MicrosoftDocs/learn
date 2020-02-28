@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn-sqlserver.deploy-sql-server-linux
+metadata:
+  title: Deploy SQL Server on Linux 
+  description: Learn about the software and hardware prerequisites to run SQL Server on Linux and then discover the straightforward steps to install SQL Server on Linux. You will also learn additional tasks, such as installing command-line tools.
+  ms.date: 06/11/2019
+  author: alistairmatthews
+  ms.author: v-alism
+  ms.topic: interactive-tutorial
+  ms.prod: learning-sqlserver
+title: Deploy SQL Server on Linux
+summary: Learn about the software and hardware prerequisites to run SQL Server on Linux and then discover the straightforward steps to install SQL Server on Linux. You will also learn additional tasks, such as installing command-line tools.
+abstract: |
+ In this module, you will:
+ - Deploy SQL Server 2017 on Ubuntu
+ - Deploy SQL Server 2017 on SUSE
+ - Deploy SQL Server 2017 in Red Hat
+ - Deploy a SQL Server 2017 image to a Docker container
+prerequisites: | 
+  - An understanding of Linux administration
+  - An understanding of relational databases
+iconUrl: /learn/achievements/sqlserver/deploying-on-sql-server-on-linux.svg
+levels:
+- beginner
+roles:
+- administrator
+products: 
+- sql-server
+units:
+- learn-sqlserver.deploy-sql-server-linux.1-introduction
+- learn-sqlserver.deploy-sql-server-linux.2-deploy-sql-server-ubuntu
+- learn-sqlserver.deploy-sql-server-linux.3-exercise-install-sql-server-ubuntu
+- learn-sqlserver.deploy-sql-server-linux.4-deploy-sql-server-suse
+- learn-sqlserver.deploy-sql-server-linux.5-exercise-install-sql-server-suse
+- learn-sqlserver.deploy-sql-server-linux.6-deploy-sql-server-redhat
+- learn-sqlserver.deploy-sql-server-linux.7-exercise-install-sql-server-redhat
+- learn-sqlserver.deploy-sql-server-linux.8-deploy-sql-server-docker
+- learn-sqlserver.deploy-sql-server-linux.9-exercise-install-sql-server-docker
+- learn-sqlserver.deploy-sql-server-linux.10-knowledge-check
+- learn-sqlserver.deploy-sql-server-linux.11-summary
+badge: 
+  uid: learn-sqlserver.deploying-sql-server-linux.badge

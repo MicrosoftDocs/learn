@@ -2,14 +2,10 @@ You have a Web API called Print Framer API that calculates a cost for a picture 
 
 In this exercise, you'll create a custom connector for the Print Framer API and use it to send and receive data from a Logic App to a Web API. First, we need a Logic App.
 
-<!-- TODO: The sandbox currently prevents the creation of Logic Apps. Either this policy must be changed or else this exercise must be altered to use a private Azure subscription. -->
-
 ## Create a Logic App
 
-<!-- TODO: The sandbox currently prevents the creation of Logic Apps. Either this must be change or else this exercise must be altered to use a private Azure subscription. -->
-<!-- REVIEW - I have submitted a request to modify the webapp policy to allow logic app creation. We will absolutely use the sandbox for this module -->
-
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), select **Create a resource > Web > Logic App**.
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **Create a resource**.
+1. Select **Web** > **Logic App**.
 1. In the **Logic App** window, enter the following settings, and then select **Create**:
 
     | Setting | Value |
@@ -23,20 +19,20 @@ In this exercise, you'll create a custom connector for the Print Framer API and 
 
     [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
-1. When the Logic App has been created, select **All resources** and then select the Logic App. The Azure portal opens the designer for the Logic App.
+1. When the Logic App has been created, from the Azure portal menu, select **All resources** and then select the Logic App. The Azure portal opens the designer for the Logic App.
 1. Under **Start with a common trigger**, select **When an HTTP request is received**.
 1. Select **Add a new parameter**, then **Method**, and then in the **Method** drop-down list, select **GET**.
 1. Once again, select **Add a new parameter**, then **Relative path**, and then in the **Relative path** field, type `{height}/{width}`.
 
     ![Configure the HTTP request for the Logic App](../media/5-configure-http-request.png)
 
-1. In the **Logic Apps Designer**, select **Save**. 
+1. In the **Logic Apps Designer**, select **Save**.
 
-We now have a basic Logic App. Let's add a custom connector so that we can call our custom PrintFramer API from our workflow. 
+We now have a basic Logic App. Let's add a custom connector so that we can call our custom PrintFramer API from our workflow.
 
 ## Create a new custom Logic Apps connector in the Azure portal
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), select **Create a resource**.
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **Create a resource**.
 1. In the **Search the marketplace** textbox, type **Logic Apps Custom Connector**, select **Logic Apps Custom Connector**, and then **Create**.
 1. In the **Logic App Custom Connector** window, enter the following settings, and then select **Create**:
 
@@ -48,12 +44,11 @@ We now have a basic Logic App. Let's add a custom connector so that we can call 
     | Location | Select a region near you, that is also in the list of regions supported by the sandbox. |
     | | |
 
-
 ## Import the OpenAPI definition
 
 Now let's use the OpenAPI file we saved early to define custom connector:
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), select **All resources** and then select **PrintFramerConnector**.
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) or from the **Home** page, select **All resources** and then select **PrintFramerConnector**.
 1. On the **Overview** page, select **Edit**.
 
     ![Edit the custom connector](../media/5-edit-logic-apps-connector.png)
@@ -79,7 +74,7 @@ The OpenAPI file tells the custom connector about the operations that are availa
 
 Now, you can add the custom connector to our Logic App.
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), select **All resources** and then click the Logic App that you created in unit 3.
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) or from the **Home** page, select **All resources** and then click the Logic App that you created in unit 3.
 1. In the Logic App resource page, select **Edit** and then select **+ New Step**.
 1. In the **Choose an action** box, select the **Custom** tab, and then select **PrintFramerConnector**.
 1. Under **Actions** select **Estimate the cost of a picture frame**.
@@ -98,7 +93,7 @@ The final thing to add to the Logic App is something to display the results. Let
 1. In the Logic App designer, click **+ New Step**.
 1. In the **Search connectors and actions** textbox, type **Response**, and then select the **Response** action.
 1. In the **Body** textbox, type "**The approximate cost of your frame is:$**".
-1. In the **Dynamic content** pane to the right, select **Body** from the **Estimate the cost of a picture frame** section. This selection is illustrated in the following screenshot. 
+1. In the **Dynamic content** pane to the right, select **Body** from the **Estimate the cost of a picture frame** section. This selection is illustrated in the following screenshot.
 
     ![Configure the HTTP response](../media/5-configure-http-response.png)
 
@@ -113,6 +108,5 @@ The Logic App is now complete, and will call the Web API through the custom conn
 1. Open a new browser tab and paste the URL into the address bar. 
 1. In the pasted URL, replace the **{height}** parameter with **10**, and the **{width}** parameter with **4** and then press Enter. The page displays an approximate cost.
 1. Try entering other heights and widths.
-
 
 Congratulations! You've created a Logic Apps workflow that can call your in-hour PrintFramerAPi through a custom connector!

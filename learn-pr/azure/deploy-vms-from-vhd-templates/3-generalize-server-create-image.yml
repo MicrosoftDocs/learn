@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.deploy-vms-from-vhd-templates.3-generalize-server-create-image
+title: Generalize a server and create an image of a VM
+metadata:
+  title: Generalize a server and create an image of a VM
+  description: Generalize a server and create an image of a VM
+  ms.date: 8/31/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-generalize-server-create-image.md)]

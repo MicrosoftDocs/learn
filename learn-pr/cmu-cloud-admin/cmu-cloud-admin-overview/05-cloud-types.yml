@@ -1,0 +1,62 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-admin.overview-of-the-cloud.cmu-cloud-admin-overview.05-cloud-types
+title: Types of clouds
+metadata:
+  title: Types of clouds
+  description: Cloud Deployment Models
+  ms.date: 08/15/2019
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 8
+content: |
+  [!include[](includes/05-cloud-types.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+    - content: "What is a sovereign cloud?"
+      choices:
+      - content: "A cloud that is accessible to the public, but only to specific organizations or in specific geographies"
+        isCorrect: true
+        explanation: "Correct! Sovereign clouds such as Azure Government and AWS GovCloud are 'public' clouds that can only be accessed by specific organizations such as governments or by customers in specific geographies."
+      - content: "A cloud that can only be accessed through dedicated connections between an organization's intranet and the public cloud using services such as Azure ExpressRoute and AWS Direct Connect"
+        isCorrect: false
+        explanation: "Incorrect. ExpressRoute and Direct Connect connect private clouds to public clouds but have nothing to do with sovereign clouds."
+      - content: "A private cloud owned by an organization that leases access to other organizations"
+        isCorrect: false
+        explanation: "Incorrect. Organizations can choose to provide other organizations with access to their private clouds, but these are not sovereign clouds."
+      - content: "A cloud owned by a king or queen."
+        isCorrect: false
+        explanation: "Incorrect."
+
+    - content: "Suppose an organization wants to use a public cloud, but certain data that the organization stores must, by law, remain on-premises. What type of cloud would enable the organization to have the best of both worlds by utilizing the public cloud but comply with relevant laws regarding data storage?"
+      choices:
+      - content: "Public cloud"
+        isCorrect: false
+        explanation: "Incorrect. Data is stored off-premises in public clouds."
+      - content: "Private cloud"
+        isCorrect: false
+        explanation: "Incorrect. Private clouds store data on-premises, but do not connect to public clouds."
+      - content: "Hybrid cloud"
+        isCorrect: true
+        explanation: "Correct! Hybrid clouds enable some data to be stored in a public cloud, and other data to be stored on-premises in a private cloud."
+      - content: "Sovereign cloud"
+        isCorrect: false
+        explanation: "Incorrect. Data is stored off-premises in sovereign clouds."
+    
+    - content: "Azure ExpressRoute and AWS Direct Connect let you create high-speed private connections between Azure and AWS data centers and on-premises infrastructure. For what type of cloud would these services be useful?"
+      choices:
+      - content: "Public cloud"
+        isCorrect: false
+        explanation: "Incorrect. The purpose of ExpressRoute and Direct Connect is to connect two clouds together."
+      - content: "Private cloud"
+        isCorrect: false
+        explanation: "Incorrect. The purpose of ExpressRoute and Direct Connect is to connect two clouds together."
+      - content: "Hybrid cloud"
+        isCorrect: true
+        explanation: "Correct! Establishing a dedicated high-speed connection between a private cloud and a public cloud enables data to move between the two quickly and securely."
+      - content: "Sovereign cloud"
+        isCorrect: false
+        explanation: "Incorrect. The purpose of ExpressRoute and Direct Connect is to connect two clouds together."

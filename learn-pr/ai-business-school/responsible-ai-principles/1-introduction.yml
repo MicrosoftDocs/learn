@@ -3,13 +3,12 @@ uid: learn-wwl.responsible-ai-guiding-principles.introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: Introduction to identifying guiding principles for responsible AI in your business 
-  ms.date: 04/26/2019
+  description: Introduction to identifying guiding principles for responsible AI 
+  ms.date: 10/01/2019
   author: RWortmanMorris
   ms.author: rawortma
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
-durationInMinutes: 1 
+durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]

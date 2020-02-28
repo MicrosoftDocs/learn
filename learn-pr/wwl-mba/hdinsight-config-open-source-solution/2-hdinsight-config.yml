@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.hdinsight-configuration-to-build-open-source-analytical-solutions.2-hdinsight-configuration-options
+title: HDInsight configuration options
+metadata:
+  title: HDInsight configuration options
+  description: HDInsight configuration options
+  ms.date: 10/25/2019
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: False
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-hdinsight-config.md)]

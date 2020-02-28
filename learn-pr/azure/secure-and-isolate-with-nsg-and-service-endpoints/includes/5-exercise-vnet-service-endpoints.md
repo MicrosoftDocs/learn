@@ -12,7 +12,7 @@ Ensure that communications with Azure Storage pass through the service endpoint.
 
     ```azurecli
     az network nsg rule create \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group $rg \
         --nsg-name ERP-SERVERS-NSG \
         --name Allow_Storage \
         --priority 190 \
@@ -30,7 +30,7 @@ Ensure that communications with Azure Storage pass through the service endpoint.
 
     ```azurecli
     az network nsg rule create \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group $rg \
         --nsg-name ERP-SERVERS-NSG \
         --name Deny_Internet \
         --priority 200 \
@@ -63,7 +63,7 @@ In this step, you'll create a new storage account, and then add an Azure file sh
 
     ```bash
     STORAGEACCT=$(az storage account create \
-                    --resource-group <rgn>[sandbox resource group name]</rgn> \
+                    --resource-group $rg \
                     --name engineeringdocs$RANDOM \
                     --sku Standard_LRS \
                     --query "name" | tr -d '"')
@@ -73,7 +73,7 @@ In this step, you'll create a new storage account, and then add an Azure file sh
 
     ```bash
     STORAGEKEY=$(az storage account keys list \
-                    --resource-group <rgn>[sandbox resource group name]</rgn> \
+                    --resource-group $rg \
                     --account-name $STORAGEACCT \
                     --query "[0].value" | tr -d '"')
     ```
@@ -96,7 +96,7 @@ You now need to configure the storage account to be accessible only from databas
     ```azurecli
     az network vnet subnet update \
         --vnet-name ERP-servers \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group $rg \
         --name Databases \
         --service-endpoints Microsoft.Storage
     ```
@@ -105,7 +105,7 @@ You now need to configure the storage account to be accessible only from databas
 
     ```azurecli
     az storage account update \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group $rg \
         --name $STORAGEACCT \
         --default-action Deny
     ```
@@ -114,7 +114,7 @@ You now need to configure the storage account to be accessible only from databas
 
     ```azurecli
     az storage account network-rule add \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group $rg \
         --account-name $STORAGEACCT \
         --vnet ERP-servers \
         --subnet Databases
@@ -128,13 +128,13 @@ In this step, you'll connect to both of your servers, and verify that only **Dat
 
     ```bash
     APPSERVERIP="$(az vm list-ip-addresses \
-                        --resource-group <rgn>[sandbox resource group name]</rgn> \
+                        --resource-group $rg \
                         --name AppServer \
                         --query "[].virtualMachine.network.publicIpAddresses[*].ipAddress" \
                         --output tsv)"
 
     DATASERVERIP="$(az vm list-ip-addresses \
-                        --resource-group <rgn>[sandbox resource group name]</rgn> \
+                        --resource-group $rg \
                         --name DataServer \
                         --query "[].virtualMachine.network.publicIpAddresses[*].ipAddress" \
                         --output tsv)"

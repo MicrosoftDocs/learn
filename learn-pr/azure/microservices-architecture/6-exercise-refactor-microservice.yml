@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.microservices-architecture.6-exercise-refactor-microservice
+metadata:
+  title: Exercise - Refactor a service within the monolith as a microservice
+  description: Exercise - Refactor a service within the monolith as a microservice
+  ms.date: 08/30/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Exercise - Refactor a service within the monolith as a microservice
+durationInMinutes: 10
+interactive: bash
+azureSandbox: true
+content: |
+  [!include[](includes/6-exercise-refactor-microservice.md)]

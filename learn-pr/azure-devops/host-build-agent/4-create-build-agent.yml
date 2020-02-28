@@ -1,15 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.azdo.host-build-agent.4-create-build-agent
-title: Exercise - Create a build agent running on Azure
+title: Exercise - Create a build agent that runs on Azure
 metadata:
-  title: Exercise - Create a build agent running on Azure
-  description: Use a virtual machine running on Azure to configure a build agent you can use in Azure Pipelines. 
-  ms.date: 06/21/2019
+  title: Exercise - Create a build agent that runs on Azure
+  description: Use a virtual machine that runs on Azure to configure a build agent you can use in Azure Pipelines. 
+  ms.date: 01/21/2020
   author: tpetchel
   ms.author: thpetche
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 interactive: bash
 azureSandbox: true
 durationInMinutes: 20

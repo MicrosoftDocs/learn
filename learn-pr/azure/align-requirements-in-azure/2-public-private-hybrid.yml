@@ -5,9 +5,8 @@ metadata:
   title: Azure solutions for public, private, and hybrid cloud
   description: Azure solutions for public, private, and hybrid cloud
   ms.date: 09/24/2018
-  #TODO: Update with real author name.
-  author: markjulmar
-  ms.author: smmark
+  author: jboeshart
+  ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX

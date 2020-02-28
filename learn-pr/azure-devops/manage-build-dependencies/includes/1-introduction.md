@@ -2,9 +2,9 @@ In this module, you'll create a build pipeline that produces a package that can 
 
 It's likely that you've used open-source or other third-party components in your software. Using components that are popular in the community and have already been built and tested is often the fastest way to get things done.
 
-You may also have your own application code that you can move into a library or package so that others can use it, whether as an open source project or software that only your team can access.
+You might also have your own application code that you can move into a library or package so that others can use it. This might be an open source project, or software that only your team can access.
 
-There are many ways to build and host your packages. The right solution depends largely on the kinds of programming languages and frameworks you use. Here you'll continue your work with the Tailspin web team by creating a NuGet package for .NET that's hosted on Azure Artifacts.
+There are many ways to build and host your packages. The right solution depends largely on the kinds of programming languages and frameworks you use. Here, you'll continue your work with the Tailspin web team, by creating a NuGet package for .NET that's hosted on Azure Artifacts.
 
 In this module, you will:
 
@@ -15,9 +15,25 @@ In this module, you will:
 
 ## Prerequisites
 
-The prerequisites are the same as the [Create a build pipeline with Azure Pipelines](/learn/modules/create-a-build-pipeline?azure-portal=true) module.
+The modules in this learning path form a progression.
 
-Make sure you have Visual Studio Code and your _Space Game_ project on GitHub handy.
+To follow the progression from the beginning, be sure to first complete the [Evolve your DevOps practices](/learn/paths/evolve-your-devops-practices?azure-portal=true) learning path.
+
+We also recommend you start at the beginning of this learning path, [Build applications with Azure DevOps](/learn/paths/build-applications-with-azure-devops?azure-portal=true).
+
+If you want to go through just this module, you need to set up a development environment on your Windows, macOS, or Linux system. You need:
+
+* An [Azure DevOps organization](https://dev.azure.com?azure-portal=true)
+* A [GitHub](https://github.com/join?azure-portal=true) account
+* [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
+* [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core/3.1?azure-portal=true)
+* [Git](https://git-scm.com/downloads?azure-portal=true)
+
+You can get started with Azure DevOps for free.
+
+This environment lets you complete the exercises in this and future modules. You can also use it to apply your new skills to your own projects.
+
+[!include[](../../shared/includes/project-details-note.md)]
 
 ## Meet the team
 
@@ -35,4 +51,4 @@ You met the _Space Game_ web team at Tailspin Toys in previous modules. As a ref
 
 :::row-end:::
 
-Mara has prior experience with DevOps and is helping the team adopt a more streamlined process using Azure DevOps.
+Mara has prior experience with DevOps, and is helping the team adopt a more streamlined process by using Azure DevOps.

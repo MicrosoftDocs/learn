@@ -1,4 +1,4 @@
-## Title
+# Title
 
 Protect your APIs on Azure API Management
 
@@ -92,7 +92,7 @@ Identify the subtasks of *Protect your APIs on Azure API Management*
 
 ## Notes
 
-- Module will go through much of this tutorial - https://docs.microsoft.com/en-us/azure/api-management/transform-api
+- Module will go through much of this tutorial - https://docs.microsoft.com/azure/api-management/transform-api
 
 - Reuse example code from "Publish and manage your APIs with Azure API Management": A sample web API implementation that fits the scenario and publishes an OpenAPI spec. Please use ASP.NET Core and Swashbuckle to implement. The API only needs a handful (4-6) operations with names and inputs/outputs that fit the theme of the scenario, but the implementation of each operation can pretty much just return dummy data or some other kind of mocked-up response.
 - To keep module duration down, use the consumption tier of APIM, which is available in the North Central US, West US, West Europe, North Europe, Southeast Asia, and Australia East regions

@@ -4,8 +4,6 @@ In the shoe company example, NorthWind Shoes have decided to share an inventory 
 
 Here, you'll create an API gateway to publish an inventory app that exposes an OpenAPI endpoint.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 ## Deploy the ShoeCompany Web API
 You have developed a .NET Core app that generates inventory and product information. The app includes Swashbuckle to generate OpenAPI Swagger documentation.
 
@@ -53,7 +51,7 @@ The final step in this exercise is to create an API gateway in the Azure portal.
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-1. In the left menu, click **+ Create a resource**.
+1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
 
 1. Click **Integration**, and then click **API management**.
 

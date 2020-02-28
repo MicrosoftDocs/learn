@@ -17,16 +17,19 @@ abstract: |
 prerequisites: | 
   - Basic understanding of certificates
   - Basic understanding of API Management
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/control-authentication-with-apim.svg
 levels:
 - intermediate
 roles:
 - solution-architect
 - developer
+- security-engineer
 products:
 - azure
+- azure-api-management
 units:
 - learn.control-authentication-with-apim.1-introduction
+- learn.control-authentication-with-apim.understand-apim
 - learn.control-authentication-with-apim.2-create-subscriptions-in-apim
 - learn.control-authentication-with-apim.3-exercise-create-subscriptions-in-apim
 - learn.control-authentication-with-apim.4-secure-access-client-certs

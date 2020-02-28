@@ -8,24 +8,24 @@ You'll configure two separate applications; one acts as the message sender (**Si
 
 The Java receiver application, that you'll configure in this unit, stores messages in Azure Blob Storage. Blob Storage requires a storage account.
 
-1. Create a storage account (general-purpose V2) using the `storage account create` command. Remember we set a default resource group and location, so even though those parameters are normally _required_, we can leave them off.
+1. In the Cloud Shell, create a storage account (general-purpose V2) using the `storage account create` command. Remember we set a default resource group and location, so even though those parameters are normally _required_, we can leave them off.
 
     |Parameter      |Description|
     |---------------|-----------|
     |--name (required)  | A name for your storage account. |
-    |--resource-group (required)  |The resource group owner. We'll use the pre-created sandbox resource group.|
-    |--location (optional)    |An optional location if you want the storage account in a specific place vs. the resource group location.|
+    |--resource-group (required)  | The resource group owner. We'll use the pre-created sandbox resource group. |
+    |--location (optional) | An optional location if you want the storage account in a specific place vs. the resource group location. |
 
-    Set the storage account name into a variable. It must be composed of all lower-case letters, numbers, with hyphen separators allowed. It also must be unique within Azure.
+    Set the storage account name into a variable. It must be between 3 and 24 characters in length and use numbers and lower-case letters only. It also must be unique within Azure.
 
     ```azurecli
-    STORAGE_NAME=[name]
+    STORAGE_NAME=storagename$RANDOM
     ```
 
     Then use this command to create the storage account.
 
     ```azurecli
-    az storage account create --name $STORAGE_NAME --sku Standard_RAGRS --encryption blob
+    az storage account create --name $STORAGE_NAME --sku Standard_RAGRS --encryption-service blob
     ```
 
     > [!TIP]
@@ -37,7 +37,7 @@ The Java receiver application, that you'll configure in this unit, stores messag
     az storage account keys list --account-name $STORAGE_NAME
     ```
 
-     Access keys associated with your storage account are listed. Copy and save the value of **key** for future use. You'll need this key to access your storage account.
+    Access keys associated with your storage account are listed. Copy and save the value of **key** for future use. You'll need this key to access your storage account.
 
 1. View the connections string for your storage account using the following command:
 
@@ -67,6 +67,7 @@ Use the following steps to clone the Event Hubs GitHub repository with `git`. Yo
     cd ~
     git clone https://github.com/Azure/azure-event-hubs.git
     ```
+
     The repository is cloned to your home folder.
 
 ## Edit SimpleSend.java
@@ -80,7 +81,7 @@ You'll need to write out your edits using <kbd>Ctrl+O</kbd>, and then <kbd>ENTER
 1. Change to the **SimpleSend** folder.
 
     ```bash
-    cd azure-event-hubs/samples/Java/Basic/SimpleSend/src/main/java/com/microsoft/azure/eventhubs/samples/SimpleSend
+    cd ~/azure-event-hubs/samples/Java/Basic/SimpleSend/src/main/java/com/microsoft/azure/eventhubs/samples/SimpleSend
     ```
 
 1. Open the code editor in the current folder. This will show a list of files on the left and an editor space on the right.
@@ -105,6 +106,8 @@ You'll need to write out your edits using <kbd>Ctrl+O</kbd>, and then <kbd>ENTER
 
     ```bash
     echo $NS_NAME
+    echo $HUB_NAME
+    echo $STORAGE_NAME
     ```
     When you create an Event Hubs namespace, a 256-bit SAS key called **RootManageSharedAccessKey** is created that has an associated pair of primary and secondary keys that grant send, listen, and manage rights to the namespace. In the previous unit, you displayed the key using an Azure CLI command, and you can also find this key by opening the **Shared access policies** page for your Event Hubs namespace in the Azure portal.
 

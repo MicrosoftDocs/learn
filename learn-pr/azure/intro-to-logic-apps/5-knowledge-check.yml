@@ -1,24 +1,18 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-intro-to-logic-apps.knowledge-check
 title: Knowledge check
-
 metadata:
   title: Knowledge check
   description: Knowledge check
   ms.date: 4/25/2019
-  author: marktap
-  ms.author: matapar
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
-
 durationInMinutes: 5
 content: |
-
 quiz:
-
   questions:
-  
   - content: "Suppose you work for a financial company. You're building a system to let your brokers trade financial instruments. Your system must monitor market conditions, detect changes, and execute trades. You'll need to handle a large volume of transactions and you'll need to do it quickly. The faster you can complete trades, the more of an advantage you'll have over your competitors. Which requirement of this system would be difficult for Logic Apps to satisfy?"
     choices:
     - content: "High throughput"
@@ -30,7 +24,6 @@ quiz:
     - content: "Orchestrate the monitoring, detection, and execution tasks."
       isCorrect: false
       explanation: "Logic Apps is designed to integrate multiple systems."
-
   - content: "What differentiates an _action_ from a _control action_?"
     choices:
     - content: "An action executes a task, while a control action alters the control flow through your Logic App."
@@ -42,7 +35,6 @@ quiz:
     - content: "An action is a component that launches your app, while control actions are switch statements."
       isCorrect: false
       explanation: "Triggers launch your app. Control actions can be switch statements; however, they can also be other types of conditional logic."
-
   - content: "Suppose you work for a chain of athletic clubs. You want to automate your lesson registrations and notifications. You use a proprietary in-house customer management system to store customer phone numbers and email addresses. The customer management system does have a REST API, but Logic Apps doesn't provide a connector for it. How can you use Logic Apps to automate this process?"
     choices:
     - content: "Use the code view of the Logic Apps Designer to write Javascript code to interact with your proprietary system."

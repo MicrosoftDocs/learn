@@ -1,18 +1,16 @@
-The university currently stores their data in a series of comma-delimited files. You must migrate this data to Azure SQL Database.
+The university currently stores their data in a series of comma-delimited files. You need to migrate this data to Azure SQL Database.
 
-In this exercise, you'll create a database server and a single database using the Azure SQL Database service. Next, you'll create tables and import data into the database. Finally, you'll query the data using the Query Editor and the **sqlcmd** utility.
-
-[!include[](../../../includes/azure-sandbox-activate.md)]
+In this exercise, you'll create a database server and a single database by using the SQL Database service. Next, you'll create tables and import data into the database. Finally, you'll use the query editor and the `sqlcmd` utility to query the data.
 
 ## Examine the existing comma-delimited data
 
-1. In the Cloud Shell window on the right, run the following command to download the data files and application code for the university system.
+1. In the Azure Cloud Shell window on the right side of your screen, run the following command to download the data files and application code for the university system.
 
     ```bash
     git clone https://github.com/MicrosoftDocs/mslearn-develop-app-that-queries-azure-sql education
     ```
 
-1. Run these commands to move the sample data to it's own folder and list the files in the folder.
+1. Run these commands to move the sample data to its own folder and list the files in the folder.
 
     ```bash
     mv ~/education/data ~/educationdata
@@ -20,7 +18,7 @@ In this exercise, you'll create a database server and a single database using th
     ls
     ```
 
-    This folder contains three files; **courses.csv**, **modules.csv**, and **studyplans.csv**.
+    This folder contains three files: **courses.csv**, **modules.csv**, and **studyplans.csv**.
 
 1. View the contents of the **courses.csv** file.
 
@@ -28,7 +26,7 @@ In this exercise, you'll create a database server and a single database using th
     cat courses.csv
     ```
 
-    The file contains the following comma-separated data. The data comprises a course name and an ID for each course the university offers.
+    This file contains the following comma-separated data. It includes a course name and ID for each course that the university offers.
 
     ```text
     ID,Course
@@ -77,7 +75,7 @@ In this exercise, you'll create a database server and a single database using th
     cat studyplans.csv
     ```
 
-    This file contains the data that specifies which modules a student must pass to complete a course successfully. The **Sequence** column specifies the order in which the student should take each module. For example, for course 1 (Computer Science) the student should take module CS101 before taking module MA101. Part of the data is shown below.
+    This file contains the data that specifies which modules a student must pass to complete a course successfully. The **Sequence** column shows the order in which the student should take each module. For example, for course 1 (Computer Science) the student must take module CS101 before module MA101. Part of the data is shown here.
 
     ```text
     Course ID,Module Code,Sequence
@@ -99,65 +97,76 @@ In this exercise, you'll create a database server and a single database using th
     ...
     ```
 
-## Create a database server and database with the Azure SQL Database service
+## Create a database server and database by using SQL Database
 
-Let's create the database and server to store the data for the application.
+Let's create the database and server to store the data for the app.
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the account you activated sandbox with.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) by using the account that you used to activate the sandbox.
 
-1. In the left pane, select **+ Create a resource**, select **Databases**, and then select **SQL Database**.
+1. From the Azure portal menu, select **Create a resource**.
 
-    ![Screenshot of the New page in the Azure portal showing the Databases options available in the Azure Marketplace](../media/3-new-database-annotated.png)
+    ![Screenshot of Azure portal menu and Create a resource option.](../media/2-create-a-resource.png)
 
-1. On the **Create SQL Database** page, specify the values in the following table for the properties of the database.
+1. Select **Databases**, and then select **SQL Database**.
+
+    ![Screenshot of the Databases and SQL Database options.](../media/2-databases-sql-database.png)
+
+1. On the **Create SQL Database** page, specify the values in the following table for the database properties.
 
     | Property  | Value  |
     |---|---|
     | Subscription | Concierge Subscription |
     | Resource Group | <rgn>[Sandbox resource group]</rgn> |
-    | Database name | The database must have a unique name. We suggest using something like **coursedatabase*NNN***, where *NNN* is a random number |
-    | Server | Select **Create new**, and enter the details shown in the table below |
+    | Database name | The database must have a unique name. We suggest using something like **coursedatabase<em>NNN</em>**, where *NNN* is a random number. |
+    | Server | Select **Create new**, and enter the details that are in the following table. |
     | Want to use SQL elastic pool? | No |
-    | Compute + storage | General Purpose |
+    | Compute + storage | General purpose |
 
-    For the server, specify the following details in the **New server** pane, and then select **Select**.
-
-    [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
+    For the server, specify the following details in the **New server** pane, and then click **Select**.
 
     | Property  | Value  |
     |---|---|
-    | Server name | **courseserver*NNN***, where *NNN* is the same number that you selected for the database |
+    | Server name | **courseserver<em>NNN</em>**, where *NNN* is the same number that you selected for the database |
     | Server admin login | azuresql |
-    | Password | Enter a password that meets the requirements |
-    | Confirm password | Confirm your password |
-    | Location | Accept the default location |
-    | Allow Azure services to access server | Checked |
+    | Password | Enter a password that meets the requirements. |
+    | Confirm password | Confirm your password. |
+    | Location | Central US |
 
-1. Selct **Review + create**.
+1. Select **Next : Networking >**.
 
-1. Select **Create**, and wait for the server and database to be created before continuing.
+1. On the **Networking** pane, configure the following values:
+
+    | Property  | Value  |
+    |---|---|
+    | Connectivity method | Public endpoint |
+    | Allow Azure services and resources to access this server | Yes |
+    | Add current client IP address | Yes |
+
+1. Select **Review + create**.
+
+1. Select **Create**, and wait for the server and database to be created before you continue.
 
 ## Create the tables
 
-With the database created, you can now create the tables that will store the data from the csv files.
+You can now create the tables to store the data from the .csv files.
 
-1. In the left-hand pane of the Azure portal, select **SQL databases**.
+1. On the Azure portal menu, select **SQL databases**.
 
-1. On the **SQL databases** page, select **coursedatabase*NNN***.
+1. On the **SQL databases** page, select **coursedatabase<em>NNN</em>**.
 
-1. On the **coursedatabase*NNN*** page, select **Query editor**.
+1. On the **coursedatabase<em>NNN</em>** page, select **Query editor**.
 
-    ![Screenshot of the database page in the Azure portal highlighting the Query editor option](../media/3-query-editor-annotated.png)
+    ![The database page in the Azure portal with the query editor option highlighted](../media/3-query-editor-annotated.png)
 
-1. On the **coursedatabase*NNN* - Query editor** page, enter the following details, and then select **OK** to connect to database service.
+1. On the **coursedatabase<em>NNN</em> - Query editor** page, enter the following details, and then select **OK** to connect to the database service.
 
     | Property  | Value  |
     |---|---|
     | Authorization type | SQL server authentication |
     | Login | azuresql |
-    | Password | Specify the password you used when you created this user  |
+    | Password | Specify the password that you used when you created this user. |
 
-1. In the **Query 1** pane, enter the following SQL statement, and then select **Run**. This statement creates a new table for holding course information. Verify that the statement runs without any errors.
+1. In the **Query 1** pane, enter the following SQL statement, and then select **Run**. This statement creates a new table to hold the course information. Verify that the statement runs without any errors.
 
     ```SQL
     CREATE TABLE Courses
@@ -167,9 +176,9 @@ With the database created, you can now create the tables that will store the dat
     )
     ```
 
-    ![Screenshot of the Query editor window in the Azure portal. The user has entered a statement to create the Courses table](../media/3-create-table-courses-annotated.png)
+    ![The Query editor window in the Azure portal. The user has entered a statement to create the Courses table](../media/3-create-table-courses-annotated.png)
 
-1. Overwrite the existing statement with the following statement that creates a table for holding modules. Select **Run** and verify that the statement runs without any errors.
+1. Overwrite the existing statement with the following statement that creates a table to hold the modules. Select **Run**, and then verify that the statement runs without any errors.
 
     ```SQL
     CREATE TABLE Modules
@@ -179,7 +188,7 @@ With the database created, you can now create the tables that will store the dat
     )
     ```
 
-1. Change the statement to create another table named **StudyPlans**, and then select **Run**.
+1. Change the statement to create a table that's named **StudyPlans**, and then select **Run**.
 
     ```SQL
     CREATE TABLE StudyPlans
@@ -191,22 +200,22 @@ With the database created, you can now create the tables that will store the dat
     )
     ```
 
-1. In the database window, select the **Refresh** button in the toolbar. Then expand **Tables**, and expand each table in turn. You should see the three tables, **dbo.Courses**, **dbo.Modules**, and **dbo.StudyPlans**, together with the columns and primary key for each table.
+1. In the database window, select the **Refresh** button on the toolbar. Expand **Tables**, and then expand each table in turn. You should see the three tables (**dbo.Courses**, **dbo.Modules**, and **dbo.StudyPlans**), together with the columns and primary key for each table.
 
     > [!NOTE]
-    > *dbo* stands for *database owner*, and is the default schema in the database. All three tables were created in this schema.
+    > *dbo* stands for *database owner*. It's the default schema in the database. All three tables were created in this schema.
 
-    ![Screenshot of the database window in the Azure portal, showing the tables and columns](../media/3-tables-and-columns-annotated.png)
+    ![The database window in the Azure portal, showing the tables and columns](../media/3-tables-and-columns-annotated.png)
 
 ## Import the data
 
-1. Return to the Cloud Shell window and make sure you are in the **educationdata** folder.
+1. Return to the Cloud Shell window, and make sure that you're in the **educationdata** folder.
 
     ```bash
     cd ~/educationdata
     ```
 
-1. Create variables that you will use in later steps. Replace `NNN` with the number that you used for your database and server.
+1. Create the variables that you will use in the later steps. Replace `NNN` with the number that you used for your database and server.
 
     ```bash
     export DATABASE_NAME=coursedatabaseNNN
@@ -215,13 +224,13 @@ With the database created, you can now create the tables that will store the dat
     export AZURE_PASSWORD=[enter your password]
     ```
 
-1. Run the **bcp** utility to create a format file from the schema of the **courses** table in the database. The format file specifies that the data will be in character format (`-c`), and separated by commas (`-t,`).
+1. Run the `bcp` utility to create a format file from the schema of the **Courses** table in the database. The format file specifies that the data will be in character format (`-c`) and separated by commas (`-t,`).
 
     ```bash
     bcp "$DATABASE_NAME.dbo.courses" format nul -c -f courses.fmt -t, -S "$DATABASE_SERVER.database.windows.net" -U $AZURE_USER -P $AZURE_PASSWORD
     ```
 
-1. Open the format file, **courses.fmt** that was generated by the previous command, with the Code editor.
+1. In the code editor, open the format file, **courses.fmt**, that was generated by the previous command.
 
     ```bash
     code courses.fmt
@@ -236,17 +245,17 @@ With the database created, you can now create the tables that will store the dat
     2       SQLCHAR             0       50      "\n"   2     CourseName                                   SQL_Latin1_General_CP1_CI_AS
     ```
 
-1. Review the file. Note that the data in the first column in the comma-separated file will go into the CourseID column in the Courses table, and the second field will go into the CourseName column. The second column is character based, and has a collation associated with it. Additionally, the fields separator between the fields in the file is expected to be a comma, and the row terminator (after the second field) should be a new line character. In a real-world scenario, your data might not be organized as neatly as this, with different field separators and the fields in a different order from the columns. In this situation, you can edit the format file to change these items on a field by field basis. Close the editor by pressing `Ctrl-q`.
+1. Review the file. The data in the first column of the comma-separated file will go into the **CourseID column** of the **Courses** table. The second field will go into the **CourseName** column. The second column is character-based and has a collation that's associated with it. The fields separator in the file is expected to be a comma. The row terminator (after the second field) should be a newline character. In a real-world scenario, your data might not be organized this neatly. You might have different field separators and fields in a different order from the columns. In that situation, you can edit the format file to change these items on a field-by-field basis. Press Ctrl+q to close the editor.
 
-1. Run the following command to import the data in the **courses.csv** file using format specified in the amended **courses.fmt** file. The `-F 2` flag causes the bcp to start importing data from line 2 in the data file; the first line contains headers.
+1. Run the following command to import the data in the **courses.csv** file in the format that's specified by the amended **courses.fmt** file. The `-F 2` flag directs the `bcp` utility to start importing data from line 2 in the data file. The first line contains headers.
 
     ```bash
     bcp "$DATABASE_NAME.dbo.courses" in courses.csv -f courses.fmt -S "$DATABASE_SERVER.database.windows.net" -U $AZURE_USER -P $AZURE_PASSWORD -F 2
     ```
 
-    Verify that bcp imports nine rows, and doesn't report any errors.
+    Verify that `bcp` utility imports 9 rows and doesn't report any errors.
 
-1. Perform the following sequence of operations to import the data for the **dbo.Modules** table from the **modules.csv** file.
+1. Run the following sequence of operations to import the data for the **dbo.Modules** table from the **modules.csv** file.
 
     1. Generate a format file.
 
@@ -282,19 +291,19 @@ With the database created, you can now create the tables that will store the dat
 
 1. Return to the Azure portal.
 
-1. In the left-hand pane of the Azure portal, select **SQL databases**.
+1. On the Azure portal menu, select **SQL databases**.
 
-1. On the **SQL databases** page, select **coursedatabase*NNN***.
+1. On the **SQL databases** page, select **coursedatabase<em>NNN</em>**.
 
-1. On the **coursedatabase*NNN*** page, under **Overview**, select **Query editor**.
+1. On the **coursedatabase<em>NNN</em>** page, under **Overview**, select **Query editor**.
 
-1. On the **coursedatabase*NNN* - Query editor** page, enter the following details, and then select **OK** to connect to database service.
+1. On the **coursedatabase<em>NNN</em> - Query editor** page, enter the following details, and then select **OK** to connect to the database service.
 
     | Property  | Value  |
     |---|---|
     | Authorization type | SQL server authentication |
     | Login | azuresql |
-    | Password | Enter the password for this user |
+    | Password | Enter the password for this user. |
 
 1. In the **Query 1** pane, enter the following SQL statement, and then select **Run**.
 
@@ -304,7 +313,7 @@ With the database created, you can now create the tables that will store the dat
 
     This statement retrieves the data from the **Courses** table. The results window should display nine rows.
 
-    ![Screenshot of the Query Editor in the Azure portal, showing the data retrieved from the Courses table](../media/3-query-results-annotated.png)
+    ![Screenshot of the query editor in the Azure portal, showing the data retrieved from the Courses table](../media/3-query-results-annotated.png)
 
 1. Change the query as follows, and then select **Run**.
 
@@ -312,15 +321,15 @@ With the database created, you can now create the tables that will store the dat
     SELECT * FROM dbo.Modules
     ```
 
-    This time you should see the modules in the **Results** window; there are 16 rows.
+    This time you should see the modules in the **Results** window. There are 16 rows.
 
-1. Switch back to the Cloud Shell, and run the following command to connect to the database.
+1. Switch back to Cloud Shell, and run the following command to connect to the database.
 
     ```bash
     sqlcmd -S "$DATABASE_SERVER.database.windows.net" -d "$DATABASE_NAME" -U $AZURE_USER -P $AZURE_PASSWORD
     ```
 
-1. At the `1>` prompt, enter the following SQL command to fetch the data in the **StudyPlans** table.
+1. At the `1>` prompt, enter the following SQL command to fetch the data from the **StudyPlans** table.
 
     ```SQL
     SELECT * FROM StudyPlans;  
@@ -329,6 +338,6 @@ With the database created, you can now create the tables that will store the dat
 
     This query should return 45 rows.
 
-1. At the `1>` prompt, type `exit` to close the **sqlcmd** utility.
+1. At the `1>` prompt, type **exit** to close the `sqlcmd` utility.
 
-You have now created a single database using Azure SQL Database. You created tables by using the Query Editor in the Azure portal. You used the **bcp** utility to upload data from a series of comma-delimited data files. Finally, you ran queries against the tables in the database from the Query Editor in the Azure portal, and from the **sqlcmd** utility in the Cloud Shell.
+You created a single database by using SQL Database. Next, you used the query editor in the Azure portal to create tables. You then used the `bcp` utility to upload data from a series of comma-delimited data files. Finally, you ran queries against the tables in the database from the query editor in the Azure portal and from the `sqlcmd` utility in Cloud Shell.

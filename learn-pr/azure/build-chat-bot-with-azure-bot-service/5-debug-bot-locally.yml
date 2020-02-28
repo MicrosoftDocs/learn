@@ -1,16 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.build-azure-bot-services-bot.5-debug-bot-locally
-title: Debug the bot locally
+title: Exercise - Debug the bot locally
 metadata:
-  title: Debug the bot locally
+  title: Exercise - Debug the bot locally
   description: Debug the bot locally
   ms.date: 09/24/2018
-  author: JeffProsise
-  ms.author: shanama
+  author: jasallen
+  ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
-#labId:  46466
+#labId: 46466
 durationInMinutes: 20
 content: |
   [!include[](includes/5-debug-bot-locally.md)]

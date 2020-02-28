@@ -1,16 +1,16 @@
 ### YamlMime:Module
 uid: learn.build-azure-bot-services-bot
+hidden: true
 metadata:
   title: Build a chat bot with the Azure Bot Service
-  description: The Azure Bot Service, combined with Microsoft QnA Maker, provide the tools developers need to build and publish intelligent bots that interact naturally with users using a range of services.
+  description: Explore the Azure Bot Service and learn to use tools developers need to build and publish intelligent bots that interact with users using a range of services.
   ms.date: 09/26/2018
-  author: JeffProsise
-  ms.author: shanama
+  author: jasallen
+  ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #ms.learn-contact: smmark
 title: Build a chat bot with the Azure Bot Service
-summary: The Azure Bot Service, combined with Microsoft QnA Maker, provide the tools developers need to build and publish intelligent bots that interact naturally with users using a range of services.
+summary: The Azure Bot Service, combined with Microsoft QnA Maker, provides the tools developers need to build and publish intelligent bots that interact naturally with users using a range of services.
 abstract: |
   In this module, you will:
   - Create an Azure Web App Bot to host a bot
@@ -26,6 +26,7 @@ levels:
 roles:
 - developer
 - ai-engineer
+- student
 products:
 - azure
 - vs

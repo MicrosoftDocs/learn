@@ -45,7 +45,7 @@ quiz:
       isCorrect: true
     - content: "Connecting to a database"
       isCorrect: false
-      explanation: "OpenID Connect cannot be used as an authentication mechanism against most database servers."
-    - content: "When you are not concerned about security or reliability"
+      explanation: "OpenID Connect can't be used as an authentication mechanism against most database servers."
+    - content: "When you aren't concerned about security or reliability"
       isCorrect: false
-      explanation: "Quite the opposite as OpenID Connect is best for reliability, security, and ease of use."
+      explanation: "Quite the opposite, because OpenID Connect is best for reliability, security, and ease of use."

@@ -14,7 +14,4 @@ Managed identities for Azure resources also registers your app in Azure Active D
 
 Managed identities are available in all editions of Azure Active Directory, including the Free edition included with an Azure subscription. Using it in App Service has no extra cost and requires no configuration, and it can be enabled or disabled on an app at any time.
 
-> [!NOTE]
-> Managed identities for Azure resources is not currently supported for Linux or Container web apps.
-
 Enabling a managed identity for a web app requires only a single Azure CLI command with no configuration. We'll do it later on when we set up an App Service app and deploy to Azure. Before that, though, we're going to apply our knowledge of managed identities to write the code for our app.

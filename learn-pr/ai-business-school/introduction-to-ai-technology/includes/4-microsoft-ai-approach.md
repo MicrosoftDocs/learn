@@ -1,6 +1,6 @@
 Watch this video from David Carmona, General Manager of AI Marketing, to hear how Microsoft is turning the latest advances in AI into tools, products, and services that can be leveraged by organizations to implement an AI strategy.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtIMP]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2Y9Oi]
 
 David Carmona explains that there are three things you can do to bring AI to your company: create intelligent applications, optimize business processes, and empower your employees through AI.
 

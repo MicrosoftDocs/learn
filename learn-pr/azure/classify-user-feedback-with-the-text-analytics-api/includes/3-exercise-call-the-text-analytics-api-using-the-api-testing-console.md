@@ -1,16 +1,14 @@
 To see the Text Analytics API in action, let's make some calls using the built-in API testing console tool located in the online reference documentation. Before we do that, we'll need an access key to make those calls.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 ## Create an access key
 
 Every call to Text Analytics API requires a subscription key. Often called an access key, it is used to validate that you have access to make the call. We'll use the Azure portal to grab a key.
 
-1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
+1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you used to activate the sandbox.
 
-1. Click **Create a resource**.
+1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
 
-1. In the **Search the Marketplace** search box, type in *text analytics* and hit return.
+1. In the **Search the Marketplace** search box, type in *text analytics* and hit the <kbd>Enter</kbd> or <kbd>Return</kbd> key.
 
 1. Select **Text Analytics** in the search results and then select the **Create** button in the bottom right of the screen.
 
@@ -18,14 +16,11 @@ Every call to Text Analytics API requires a subscription key. Often called an ac
 
     |Property  | Value  | Description  |
     |---------|---------|---------|
-    |Name     |    MyTextAnalyticsAPIAccount     |  The name of the Cognitive Services account. We recommend using a descriptive name. Valid characters are `a-z`, `0-9`, and `-`.    |
+    |Name     |    *Choose a unique name*     |  The name of the Cognitive Services account. We recommend using a descriptive name. Valid characters are `a-z`, `0-9`, and `-`.    |
     |Subscription     |  Concierge Subscription    |   The subscription under which this new Cognitive Services API account with **Text Analytics API** is created.      |
-    |Location     |  *choose a region from the dropdown*       |  Since you're using the free sandbox, select a location from the dropdown that is **also** on the sandbox region list shown below.  |
+    |Location     |  *Choose a region from the dropdown*       |  Select a location from the dropdown.  |
     |Pricing tier     | **F0 Free**     |   The cost of your Cognitive Services account depends on the actual usage and the options you choose. We recommend selecting the free tier for our purposes here.      |
     |Resource group     |  Select **Use existing** and choose <rgn>[sandbox resource group name]</rgn>       |  Name for the new resource group in which to create your Cognitive Services Text Analytics API account.       |
-
-    ### Sandbox region list
-    [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
     > [!TIP]
     > Remember the location you selected when creating the Text Analytics cognitive services account. You'll use it to make API calls shortly. 
@@ -96,7 +91,7 @@ We'll pass in our subscription key, or access key, in the **ocp-Apim-Subscriptio
     ![Screenshot of section number four showing the request URL.](../media/4-marker.PNG)
     ![Screenshot of the section number five showing detailed HTTP request.](../media/5-marker.PNG)
 
-    Then we have information about the response. In the example, we see that the request was a success and code `200` was returned. We can also see that the round trip took 38 ms.
+    Then we have information about the response. In the example, we see that the request was a success and code `200` was returned.
 
     ![Screenshot of section number five showing the response status](../media/6-marker.PNG)
 

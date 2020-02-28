@@ -105,9 +105,9 @@ Identify the subtasks of *Control authentication for your APIs with Azure API Ma
 
 ## Notes
 
-- [Subscriptions in Azure API Management](https://docs.microsoft.com/en-us/azure/api-management/api-management-subscriptions)
-- [Create subscriptions in Azure API Management](https://docs.microsoft.com/en-us/azure/api-management/api-management-howto-create-subscriptions)
-- [Client cert auth in APIM](https://docs.microsoft.com/en-us/azure/api-management/api-management-howto-mutual-certificates-for-clients)
+- [Subscriptions in Azure API Management](https://docs.microsoft.com/azure/api-management/api-management-subscriptions)
+- [Create subscriptions in Azure API Management](https://docs.microsoft.com/azure/api-management/api-management-howto-create-subscriptions)
+- [Client cert auth in APIM](https://docs.microsoft.com/azure/api-management/api-management-howto-mutual-certificates-for-clients)
 - [How to secure back-end services using client certificate authentication in Azure API Management](https://docs.microsoft.com/en-gb/azure/api-management/api-management-howto-mutual-certificates)
 - [Configure TLS mutual authentication for Azure App Service](https://docs.microsoft.com/en-gb/azure/app-service/app-service-web-configure-tls-mutual-auth)
 

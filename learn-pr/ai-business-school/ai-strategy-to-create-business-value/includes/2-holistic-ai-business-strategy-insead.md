@@ -2,7 +2,7 @@ There is a lot of hype around AI. But with significant ongoing investment from v
 
 Watch this video from Peter Zemsky, Eli Lilly Chaired Professor of Strategy and Innovation, as he outlines how AI is driving real business value across companies and broader society.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtTaE]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3rhk7]
 
 How can organizations take advantage of this opportunity? Watch this next video from Peter Zemsky as he presents a framework for creating an AI strategy that drives business value.
 

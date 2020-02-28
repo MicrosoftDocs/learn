@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.secure-app-with-oidc-and-azure-ad
 metadata:
-  title: Secure your application with OpenID Connect and Azure AD
+  title: Secure your application by using OpenID Connect and Azure AD
   description: In this module, you will learn how to enable users to authenticate in multiple systems by using their Azure AD identities.
   ms.date: 07/17/2019
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Secure your application with OpenID Connect and Azure AD
+title: Secure your application by using OpenID Connect and Azure AD
 summary: Use OpenID Connect in your application to allow users to securely sign in with Azure AD identities.
 abstract: | 
   In this module, you will:
@@ -24,6 +24,7 @@ levels:
 roles:
 - solution-architect
 - developer
+- security-engineer
 products:
 - azure
 - azure-active-directory

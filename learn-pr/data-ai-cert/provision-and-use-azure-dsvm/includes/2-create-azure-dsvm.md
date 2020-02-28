@@ -48,4 +48,4 @@ You can start right in the Azure portal and use the **+ Create New Resource** su
 
 1. Select the **Create** button to provision the DSVM.
 
-VM provisioning takes a few minutes. You should see an icon of a blue line under a bell [Screenshot of the bell icon.](../media/2-bell-icon.png), which indicates that Azure is busy building the VM. After this process completes, the VM main properties window will appear.
+VM provisioning takes a few minutes. You should see an icon of a blue line under a bell ![Screenshot of the bell icon.](../media/2-bell-icon.png), which indicates that Azure is busy building the VM. After this process completes, the VM main properties window will appear.

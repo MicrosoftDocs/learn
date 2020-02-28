@@ -2,13 +2,12 @@
 uid: learn.automate-azure-tasks-with-powershell
 metadata:
   title: Automate Azure tasks using scripts with PowerShell
-  description: Azure PowerShell is a PowerShell module containing cmdlets to control Azure resources. You can install it locally on your administrator machine and then run interactive commands and scripts. Azure PowerShell forwards your commands to the Azure datacenters where they execute in the context of your Azure subscription. This module shows you how to install Azure PowerShell on Linux, macOS, or Windows and then use it to connect to Azure and manage your resources.
+  description: Learn how to install Azure PowerShell on Linux, macOS, or Windows and then connect to Azure and manage your resources.
   ms.date: 09/24/2018
-  author: marktap
-  ms.author: matapar
+  author: cryophobia
+  ms.author: chrvaw
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #ms.learn-contact: matapar
 title: Automate Azure tasks using scripts with PowerShell
 summary: Install Azure PowerShell locally and use it to manage Azure resources.
 abstract: | 
@@ -30,7 +29,6 @@ roles:
 products:
 - azure
 units:
-#TODO: None of these units have a knowledge task or task validation component (need to add somewhere so users don't get marked complete solely by viewing the pages).
 - learn.automate-azure-tasks-with-powershell.1-introduction
 - learn.automate-azure-tasks-with-powershell.2-decide-if-azure-powershell-is-right-for-your-tasks
 - learn.automate-azure-tasks-with-powershell.3-install-azure-powershell

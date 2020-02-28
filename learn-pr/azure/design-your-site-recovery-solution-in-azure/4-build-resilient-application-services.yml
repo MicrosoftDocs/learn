@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.design-your-site-recovery-solution-in-azure.4-build-resilient-application-services
+title: Build resilient application services
+metadata:
+  title: Build resilient application services
+  description: Build resilient application services
+  ms.date: 11/18/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-build-resilient-application-services.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: You are running your infrastructure partially in the cloud and partially on-premises. The diagram above illustrates this. How could you enable real-time switching of traffic if there are future power issues?
+    choices:
+    - content: Use Azure Traffic Manager to probe the health of the endpoints.
+      isCorrect: true
+      explanation: Azure Traffic Manager can automatically redirect all traffic to a health endpoint.
+    - content: Use Azure Backup to probe the health of the endpoints.
+      isCorrect: false
+      explanation: Azure Backup is not used to monitor endpoints. It is used to back up workloads into Azure.
+    - content: Use Azure Monitor in order to probe the health of the endpoints.
+      isCorrect: false
+      explanation: Azure Monitor can't automatically redirect traffic for you.
+  - content: Your company is launching in a new region, how can you ensure there aren't performance issues for the new region?
+    choices:
+    - content: Set up monitoring, notifications, and autoscaling.
+      isCorrect: true
+      explanation: You should monitor your region, and configure notifications for alerts and set up autoscaling to respond to demand. 
+    - content: Set up monitoring, and increase your recovery time objectives.
+      isCorrect: false
+      explanation: You should be decreasing your recovery time objective as it is how long it takes for your region to be up and running again. In addition, you are not addressing performance issues by just setting up monitoring. You must respond to performance issues by scaling or other means.
+    - content: Set up notifications, then fail over and fail back for your applications.
+      isCorrect: false
+      explanation: Failing over and back again is for when a failure occurs. If your workloads are not performing well, this would not necessarily address the performance issues because you are replicating the same environment in another location.
+  - content: Which of the following resources can be restored from backups?
+    choices:
+    - content: Network security groups, virtual machines, Traffic Manager.
+      isCorrect: false
+      explanation: Azure Backup will back up virtual machines, but not network security groups or Traffic Manager.
+    - content: Virtual machines, databases, disks.
+      isCorrect: true
+      explanation: With Azure Backup and SQL server backup, you can back up all of these resources and restore them. You will be able to run your workloads again as long as you have these resources backed up.
+    - content: Load balancers, subnets, VPN Gateway.
+      isCorrect: false
+      explanation: Azure Backup does not back up these resources.

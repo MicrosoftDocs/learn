@@ -4,8 +4,6 @@ Some of your company's document resources are located in Blob storage. You have 
 
 In this exercise, you will learn how to enable CORS by adding a rule using the Azure Storage REST API.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 <!--
 
 NOTE: The first REST API works with curl, but the second REST API fails with curl due to a TLS/SSL bug, so this unit will use wget for now. However, in the future, curl would be preferred over wget. With that in mind, here are the curl commands for the REST APIs for future reference.

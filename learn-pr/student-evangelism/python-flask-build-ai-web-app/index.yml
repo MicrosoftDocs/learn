@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.student-evangelism.python-flask-build-ai-web-app
+metadata:
+  title: Build an AI web app by using Python and Flask
+  description: Use Python, Flask, and Azure Cognitive Services to build a web app that incorporates AI
+  ms.date: 01/31/2020
+  author: GeekTrainer
+  ms.author: chrhar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-python
+title: Build an AI web app by using Python and Flask
+summary: Use Python, Flask, and Azure Cognitive Services to build a web app that incorporates AI
+abstract: | 
+  In this module, you will:
+  - Learn how to set up a development environment for Flask and Python
+  - Learn how to build and test a Flask website locally
+  - Learn how to use Azure Cognitive Services to extract text from images
+  - Learn how to use Azure Cognitive Services to translate text
+  - Learn how to deploy a Flask website to Azure
+prerequisites: None
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+- student
+products:
+- azure
+units:
+- learn.student-evangelism.python-flask-build-ai-web-app.0-introduction
+- learn.student-evangelism.python-flask-build-ai-web-app.1-exercise-set-up-environment
+- learn.student-evangelism.python-flask-build-ai-web-app.2-flask-fundamentals
+- learn.student-evangelism.python-flask-build-ai-web-app.3-exercise-upload-photos
+- learn.student-evangelism.python-flask-build-ai-web-app.4-exercise-extract-text
+- learn.student-evangelism.python-flask-build-ai-web-app.5-exercise-translate-text
+- learn.student-evangelism.python-flask-build-ai-web-app.6-exercise-deploy-azure
+- learn.student-evangelism.python-flask-build-ai-web-app.7-summary
+badge:
+  uid: learn.student-evangelism.python-flask-build-ai-web-app.badge

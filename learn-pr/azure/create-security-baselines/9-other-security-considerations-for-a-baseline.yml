@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-security.create-security-baselines.other-security-considerations-for-a-baseline
+title: Other baseline security considerations
+metadata:
+  title: Other baseline security considerations
+  description: Other baseline security considerations
+  ms.date: 09/9/2019
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 8
+content: |
+  [!include[](includes/9-other-security-considerations-for-a-baseline.md)]

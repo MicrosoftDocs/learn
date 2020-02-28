@@ -5,11 +5,10 @@ metadata:
   title: Summary and Cleanup
   description: Summary of the module and cleanup instructions.
   ms.date: 09/24/2018
-  author: JeffProsise
-  ms.author: shanama
+  author: jasallen
+  ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 8
 content: |
   [!include[](includes/7-summary.md)]

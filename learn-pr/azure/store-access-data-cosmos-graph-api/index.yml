@@ -2,7 +2,7 @@
 uid: learn.azure.store-access-data-cosmos-graph-api
 metadata:
   title: Store and access graph data in Azure Cosmos DB with the Graph API
-  description: We'll create an application that that uses an Azure Cosmos DB as a graph database. We'll store, retrieve and manipulate graph data and visualize it using Data Explorer.
+  description: Find out about creating an application with Azure Cosmos DB as a graph database, then retrieve, manipulate, and visualize graph data using Data Explorer.
   ms.date: 05/03/2019
   author: rmcmurray
   ms.author: robmcm
@@ -17,13 +17,14 @@ abstract: |
   - Query data in a graph database from an application using the Gremlin API
 prerequisites: |
   - Beginner-level knowledge of creating and using an Azure Cosmos DB
-iconUrl: /learn/achievements/store-and-access-data-with-cosmos-db-and-the-graph-api-social.svg
+iconUrl: /learn/achievements/store-and-access-data-with-cosmos-db-and-the-graph-api.svg
 levels:
 - beginner
 roles:
 - developer
 products:
 - azure
+- azure-cosmos-db
 units:
 - learn.azure.store-access-data-cosmos-graph-api.introduction
 - learn.azure.store-access-data-cosmos-graph-api.determine-graph-database-fits-data-needs-of-your-application

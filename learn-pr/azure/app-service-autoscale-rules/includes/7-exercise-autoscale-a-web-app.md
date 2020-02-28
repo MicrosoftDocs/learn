@@ -10,15 +10,17 @@ The web app for the hotel reservation system implements a web API. The web API e
 
 The exercise also runs a client app that simulates a number of users issuing POST and GET operations simultaneously. This app provides the workload for testing how the web app autoscales.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
+[!include[](../../../includes/azure-exercise-subscription-prerequisite.md)]
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using your MSLearn account.
+1. Sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true).
 
-1. Choose **Create a resource**, select **Web**, and then click **Web App**.
+1. From the Azure portal menu, select **Create a resource**.
 
-    [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
+    ![Screenshot of Azure portal menu and Create a resource option.](../media/7-create-a-resource.png)
 
-    ![Screenshot of the New blade in the Azure portal showing the Web options available in the Azure Marketplace](../media/7-search-web-app-annotated.png)
+1. Select **Web**, and then select **Web App**.
+
+    ![Screenshot of the Web and Web App options.](../media/7-search-web-app-annotated.png)
 
 1. Specify the values in the following table for the properties of the web app.
 
@@ -28,14 +30,14 @@ The exercise also runs a client app that simulates a number of users issuing POS
     | Property  | Value  |
     |---|---|
     | Name | *\<your-webapp-name\>* |
-    | Subscription | Concierge Subscription  |
-    | Resource Group | Use the existing resource group <rgn>[Sandbox resource group]</rgn>} |
+    | Subscription | Select the Azure subscription you'd like to use for this exercise  |
+    | Resource Group | Create a new resource group called **mslearn-autoscale** |
     | OS | Windows |
     | Publish | Code |
 
 1. Click **Create**.
 
-1. In the Cloud Shell window on the right, run the following command to download the source code for the hotel reservation system:
+1. Open the Cloud Shell in the Azure portal and run the following command to download the source code for the hotel reservation system:
 
     ```bash
     git clone https://github.com/MicrosoftDocs/mslearn-hotel-reservation-system.git
@@ -65,7 +67,7 @@ The exercise also runs a client app that simulates a number of users issuing POS
     ```bash
     cd website
     zip website.zip *
-    az webapp deployment source config-zip --src website.zip --name <your-webapp-name> --resource-group <rgn>[Sandbox resource group]</rgn>
+    az webapp deployment source config-zip --src website.zip --name <your-webapp-name> --resource-group mslearn-autoscale
     ```
 
 ## Test the web app before configuring autoscaling
@@ -143,7 +145,7 @@ The exercise also runs a client app that simulates a number of users issuing POS
 
 ## Monitor autoscale events
 
-1. Return to the cloud shell, go to the **~/hotelsystem/HotelReservationSystemTestClient** folder, and run the test client again:
+1. Return to the Cloud Shell, go to the **~/hotelsystem/HotelReservationSystemTestClient** folder, and run the test client again:
 
     ```bash
     cd ~/hotelsystem/HotelReservationSystemTestClient
@@ -152,7 +154,7 @@ The exercise also runs a client app that simulates a number of users issuing POS
 
 1. While the client app is running, switch back to the Azure portal showing the autoscale settings for the web app, and click **Run history**. Under **show data for last**, click **1 hour**. Initially, the chart will be empty as it will take several minutes for autoscaling to kick in.
 
-1. While you're waiting for autoscaling events to occur, go to the blade for your web service (not the service plan), and under **Monitoring**, click **Metrics**.
+1. While you're waiting for autoscaling events to occur, go to the pane for your web service (not the service plan), and under **Monitoring**, click **Metrics**.
 
 1. Add the following metrics to the chart, set the time range to **Last 30 minutes**, and then pin the chart to the current dashboard:
 
@@ -187,7 +189,7 @@ The exercise also runs a client app that simulates a number of users issuing POS
     > [!NOTE]
     > The autoscale events are reported in pairs. The first event occurs when autoscaling has triggered an increase in the number of instances. The second event occurs when autoscaling has completed.
 
-1. Return to the cloud shell. You should see that the app is running more quickly, and far fewer requests are failing.
+1. Return to the Cloud Shell. You should see that the app is running more quickly, and far fewer requests are failing.
 
 1. Press enter to stop the app.
 

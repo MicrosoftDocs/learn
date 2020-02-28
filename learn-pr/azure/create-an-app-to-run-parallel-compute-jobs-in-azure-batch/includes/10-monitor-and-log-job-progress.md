@@ -89,7 +89,7 @@ The app will check for an existing pool, and create one if it doesn't exist. The
 
         // Monitor task success or failure, specifying a maximum amount of time to wait for
         // the tasks to complete.
-        await MonitorTasksAsync(batchClient, JobId, TimeSpan.FromMinutes(30), runningTasks);
+        await MonitorTasksAsync(batchClient, JobId, TimeSpan.FromMinutes(30));
     }
     ```
 

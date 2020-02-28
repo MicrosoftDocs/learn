@@ -2,13 +2,12 @@
 uid: learn.intro-to-azure-networking
 metadata:
   title: Core Cloud Services - Introduction to Azure networking
-  description: Running your app or service in the cloud requires a fast and secure network. Learn some of the Azure networking basics and how Azure networking helps improve resiliency and reduce latency.
+  description: Get acquainted with Azure networking basics to find out how Azure networking helps improve resiliency and reduce latency.
   ms.date: 09/24/2018
-  author: tpetchel
-  ms.author: thpetche
+  author: cwatson-cat
+  ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #ms.learn-contact: thpetche
 title: Core Cloud Services - Azure networking options
 summary: Running your app or service in the cloud requires a fast and secure network. Learn some of the Azure networking basics and how Azure networking helps improve resiliency and reduce latency.
 abstract: |
@@ -24,8 +23,12 @@ roles:
 - developer
 - administrator
 - solution-architect
+- student
 products:
 - azure
+- azure-virtual-network
+- azure-traffic-manager
+- azure-load-balancer
 units:
 - learn.intro-to-azure-networking.1-introduction
 - learn.intro-to-azure-networking.2-deploy-to-azure

@@ -16,11 +16,11 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "When should you use Azure ExpressRoute compared to Azure Site to Site connectivity?"
+  - content: "When should you use Azure ExpressRoute instead of Azure site-to-site connectivity?"
     choices:
-    - content: "For handling enterprise-class and mission critical workloads."
+    - content: "For handling enterprise-class and mission-critical workloads."
       isCorrect: true
-      explanation: "This answer is correct"
+      explanation: "This answer is correct."
     - content: "For connecting mobile users directly to your virtual network running in Azure."
       isCorrect: false
       explanation: "No. Use a point-to-site connection for this scenario."
@@ -32,12 +32,12 @@ quiz:
       explanation: "No. ExpressRoute is intended for an always-on connection to the Microsoft cloud."
   - content: "Which connection type is best to use for Office 365 users?"
     choices:
-    - content: "Point-to-site over a VPN connection through Azure network gateway."
+    - content: "Point-to-site over a VPN connection through an Azure network gateway."
       isCorrect: false
       explanation: "No. Use ExpressRoute to connect directly to Office 365 services."
-    - content: "Site-to-site over a VPN connection through Azure network gateway."
+    - content: "Site-to-site over a VPN connection through an Azure network gateway."
       isCorrect: false
       explanation: "No. Use ExpressRoute to connect directly to Office 365 services."
-    - content: "An ExpressRoute connection"
+    - content: "An ExpressRoute connection."
       isCorrect: true
       explanation: "This is the correct answer."

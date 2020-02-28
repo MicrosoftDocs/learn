@@ -1,33 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.run-docker-containers-aci.5-use-data-volumes
 metadata:
-  title: Use data volumes
+  title: Exercise - Use data volumes
   description: Use data volumes with Azure Container Instances (ACI).
   ms.date: 09/24/2018
-  #TODO: Update with real author name.
-  author: markjulmar
-  ms.author: smmark
+  author: cryophobia
+  ms.author: chrvaw
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-title: Use data volumes
-interactive: bash
-azureSandbox: true
+title: Exercise - Use data volumes
 durationInMinutes: 10
 content: |
   [!include[](includes/5-use-data-volumes.md)]
-#tasks:
-#- action: exists
-#  environment: azure
-#  azure:
-#    resource:
-#      type: "Microsoft.ContainerInstance/containerGroups"
-#      name: aci-demo-files
-#  hint: ""
-#- action: exists
-#  environment: azure
-#  azure:
-#    resource:
-#      type: "Microsoft.Storage/storageAccounts"
-#      kind: Storage
-#  hint: ""

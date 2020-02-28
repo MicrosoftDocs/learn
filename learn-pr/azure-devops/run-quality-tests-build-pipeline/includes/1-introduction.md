@@ -1,24 +1,38 @@
-This module is about how to add automated tests to your build pipeline.
+As you add a feature to your app, how do you _know_ whether the feature will work correctly, given all possible interactions? How do you know that the feature works well with and doesn't break other features? How do you know that your code is maintainable and can be easily understood by others?
 
-As you add a feature to your app, how do you _know_ whether those features work correctly, given all possible inputs? How do you know that the feature works well with &mdash; and doesn't break &mdash; other features? How do you know that your code is maintainable and can be easily understood by others?
+You could run the app locally and try a few inputs, but that takes time and doesn't cover all cases. Plus, repeatedly testing existing features gets tedious and time consuming as you add new features.
 
-You _could_ run the app locally and try a few inputs. But that takes time and doesn't cover all cases. Plus, repeatedly testing existing features gets tedious and time consuming as you add new features.
-
-In this module, you'll learn how to set up automated testing to help ensure that your latest feature will work, and to help make sure you didn't break anything along the way.
+This module demonstrates how to set up automated testing to help ensure that your latest feature works and that you haven't broken anything along the way.
 
 In this module, you will:
 
-* Learn the benefits of automated testing and the kinds of testing you can use
-* Run unit tests locally and then in Azure Pipelines
-* Add dashboard widgets to visualize test runs over time
-* Perform code coverage testing to see how much of your code is covered by unit tests
-* See a test fail in the pipeline and then fix the failure
+* Learn the benefits of automated testing and the kinds of testing you can use.
+* Run unit tests locally and then in Azure Pipelines.
+* Add dashboard widgets to visualize test runs over time.
+* Perform code coverage testing to see how much of your code is covered by unit tests.
+* See a test fail in the pipeline and then fix the failure.
 
 ## Prerequisites
 
-The prerequisites are the same as the [Create a build pipeline with Azure Pipelines](/learn/modules/create-a-build-pipeline?azure-portal=true) module.
+The modules in this learning path form a progression.
 
-Make sure you have the _Space Game_ project loaded in Visual Studio Code and your _Space Game_ project on GitHub handy.
+To follow the progression from the beginning, be sure to first complete the [Evolve your DevOps practices](/learn/paths/evolve-your-devops-practices?azure-portal=true) learning path.
+
+We also recommend you start at the beginning of this learning path, [Build applications with Azure DevOps](/learn/paths/build-applications-with-azure-devops?azure-portal=true).
+
+If you want to go through just this module, you need to set up a development environment on your Windows, macOS, or Linux system. You need:
+
+* An [Azure DevOps organization](https://dev.azure.com?azure-portal=true)
+* A [GitHub](https://github.com/join?azure-portal=true) account
+* [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
+* [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core/3.1?azure-portal=true)
+* [Git](https://git-scm.com/downloads?azure-portal=true)
+
+You can get started with Microsoft Azure DevOps for free.
+
+This environment lets you complete the exercises in this and future modules. You can also use it to apply your new skills to your own projects.
+
+[!include[](../../shared/includes/project-details-note.md)]
 
 ## Meet the team
 
@@ -36,4 +50,4 @@ You met the _Space Game_ web team at Tailspin Toys in previous modules. As a ref
 
 :::row-end:::
 
-Mara has prior experience with DevOps and is helping the team adopt a more streamlined process using Azure DevOps.
+Mara has prior experience with DevOps and is helping the team adopt a more streamlined process that uses Azure DevOps.

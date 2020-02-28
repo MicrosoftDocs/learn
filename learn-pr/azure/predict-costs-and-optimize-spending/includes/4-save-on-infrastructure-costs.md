@@ -2,23 +2,26 @@ We have seen how to create cost estimates for environments you'd like to build, 
 
 ## Use Azure credits
 
-Visual Studio subscribers can activate a monthly credit benefit which allows you to experiment with, develop, and test new solutions on Azure. Use Azure credits to try out new services such as App Service, Windows 10 VMs, Azure SQL Server databases, Containers, Cognitive Services, Functions, Data Lake, and more without incurring any monetary costs.
+Visual Studio subscribers can activate a monthly credit benefit that allows you to experiment with, develop, and test new solutions on Azure. Use Azure credits to try out new services such as App Service, Windows 10 VMs, Azure SQL Server databases, Containers, Cognitive Services, Functions, Data Lake, and more without incurring any monetary costs.
 
 When you activate this benefit, you will own a separate Azure subscription under your account with a monthly credit balance that renews each month while you remain an active Visual Studio subscriber.
 
-The credit amount varies based on the program level - $50/month for VS Professional and $150/month for Enterprise. Check the documentation for more details on how much credit you receive for your specific subscription level.
+The credit amount varies based on the program level, and you should check the documentation for more details on how much credit you receive for your specific subscription level. For example:
+
+- $50 per month for VS Professional
+- $150 per month for Enterprise
 
 > [!IMPORTANT]
 > The monthly Azure credit for Visual Studio subscribers is for **development and testing only** and does not carry a financially-backed SLA. Azure will suspend any instance (VM or cloud service) that runs continuously for more than 120 hours or if it's determined that the instance is being used for production. This benefit is made available to Visual Studio subscribers on a best efforts basis; there is no guarantee of capacity availability.
 
 ## Use spending limits
 
-By default, Azure subscriptions which have associated monthly credits (which includes trial accounts) have a _spending limit_ to ensure you aren't charged once you have used up your credits. This feature is useful for development teams exploring new solution architectures as it ensures you won't have an unexpectedly large bill at the end of the month.
+By default, Azure subscriptions that have associated monthly credits (which includes trial accounts) have a _spending limit_ to ensure you aren't charged once you have used up your credits. This feature is useful for development teams exploring new solution architectures as it ensures you won't have an unexpectedly large bill at the end of the month.
 
 > [!NOTE]
 > Azure spending limits are not the same as Subscription, Service, or Resource Group limits and quotas.
 
-Azure provides the Spending Limits feature to help prevent you from exhausting the credit on your account within each billing period. When your Azure usage results in charges that use all the included monthly credit, the services that you deployed are disabled and turned off for the rest of that billing period. Once a new billing period starts, assuming there are credits available, the resources are re-activated and deployed.
+Azure provides the Spending Limits feature to help prevent you from exhausting the credit on your account within each billing period. When your Azure usage results in charges that use all the included monthly credit, the services that you deployed are disabled and turned off for the rest of that billing period. Once a new billing period starts, assuming there are credits available, the resources are reactivated and deployed.
 
 You are notified by email when you hit the spending limit for your subscription. In addition, the Azure portal includes notifications about your credit spend. You can adjust the spending limit as desired or even turn it off.
 
@@ -27,11 +30,11 @@ You are notified by email when you hit the spending limit for your subscription.
 
 ## Use reserved instances
 
-If you have VM workloads that are static and predictable, particularly ones that run 24x7x365, using reserved instances is a fantastic way to potentially save up to 70-80%, depending on the VM size. The following illustration shows that using Azure reserved instances saves you up to 72% and using reserved instance plus Azure Hybrid Benefit saves up to 80% in costs.
+If you have VM workloads that are static and predictable, particularly ones that run non-stop all year long, using reserved instances is a fantastic way to potentially save up to 70-80% of the pay-as-you-go cost, depending on the VM size. The following illustration shows that using Azure reserved instances saves you up to 72% and using reserved instance plus Azure Hybrid Benefit saves up to 80% in costs.
 
 ![An illustration showing cost benefits of using Azure reserved instances and Azure Hybrid Benefits compared to pay-as-you-go.](../media/4-savings-coins.png)
 
-Reserved instances are purchased in one-year or three-year terms, with payment required for the full term up front. After it's purchased, Microsoft matches up the reservation to running instances and decrements the hours from your reservation. Reservations can be purchased through the Azure portal. And because reserved instances are a compute discount, they are available for both Windows and Linux VMs.
+You commit to reserved instances in one-year or three-year terms. Payment can be made in full for the entire commitment period, or the commitment can be billed monthly. After it's reserved, Microsoft matches up the reservation to running instances and decrements the hours from your reservation. Reservations can be purchased through the Azure portal. And because reserved instances are a compute discount, they are available for both Windows and Linux VMs.
 
 ## Choose low-cost locations and regions
 
@@ -42,7 +45,7 @@ The cost of Azure products, services, and resources can vary across locations an
 
 ## Research available cost-saving offers
 
-Keep up-to-date with the latest Azure customer and subscription offers, and switch to offers that provide the most significant cost-saving benefit.
+Keep up to date with the latest Azure customer and subscription offers, and switch to offers that provide the most significant cost-saving benefit.
 
 You can check the [Azure Updates page](https://azure.microsoft.com/updates/) for information about the latest updates to Azure products, services, and features, as well as product roadmaps and announcements.
 
@@ -65,7 +68,7 @@ This approach is an excellent strategy for development environments. It's often 
 
 You can also use the auto-shutdown feature on a virtual machine to schedule automated shutdowns.
 
-![Screenshot of the Azure portal showing the Auto-shutdown section of a virtual machine blade with a shutdown time enabled.](../media/4-vm-auto-shutdown.png)
+![Screenshot of the Azure portal showing the Auto-shutdown section of a virtual machine pane with a shutdown time enabled.](../media/4-vm-auto-shutdown.png)
 
 ## Delete unused virtual machines
 

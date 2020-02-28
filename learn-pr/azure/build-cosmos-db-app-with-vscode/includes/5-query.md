@@ -1,4 +1,3 @@
-<!--TODO: Explain how to do ExecuteNext (pages closer to SDK imp) vs ToList (continuation token)-->
 Now that you've created documents in your application, let's query them from your application. Azure Cosmos DB uses SQL queries and LINQ queries. This unit focuses on running SQL queries and LINQ queries from your application, as opposed to the portal.
 
 We'll use the user documents you've created for your online retailer application to test these queries.
