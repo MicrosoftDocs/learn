@@ -1,6 +1,6 @@
 ## Unit 1: Intro
 
-An Azure IoT Hub can handle large volumes of telemetry data, sent from many sensor devices. You can individually set up each device, to be certain of its authenticity. However, with many devices, this would be onerous to say the least. The process of validating the authenticity of a device is known as "provisioning". In this module we investigate the IoT Device Provisioning Service (DPS). A service that enables the near-automatic provisioning of any number of devices.
+An Azure IoT Hub can handle large volumes of telemetry data, sent from many sensor devices. You can individually set up each device, to be certain of its authenticity. However, with many devices, this task would be onerous to say the least. The process of validating the authenticity of a device is known as "provisioning". In this module, we investigate the IoT Device Provisioning Service (DPS). A service that enables the near-automatic provisioning of any number of devices.
 
 This module builds on the "Remotely monitor and control devices with Azure IoT Hub" module - a fun introduction to IoT Hub programming, using the example of a temperature and humidity sensor in a cheese cave. It is not necessary to complete the introductory module before working on this module on security, though completing it will help your understanding of IoT Hub. The introductory module covers such concepts as Device Twins, and Direct Methods, which aren't explained in detail in this module on security.
 
@@ -10,32 +10,32 @@ Security is a gnarly subject, there is more to it than you might think. Completi
 
 In this module you will:
 
-Create a custom Azure IoT Hub, using the Azure portal
-Learn about device provisioning, X.509 certificates, and enrollments
-Create a DPS resource and group enrollment, using the Azure portal
-Create an app to send device telemetry to your IoT Hub, using Visual Studio, or Visual Studio Code
-Test multiple devices are provisioned by your DPS service
+- Create a custom Azure IoT Hub, using the Azure portal
+- Learn about device provisioning, X.509 certificates, and enrollments
+- Create a DPS resource and group enrollment, using the Azure portal
+- Create an app to send device telemetry to your IoT Hub, using Visual Studio, or Visual Studio Code
+- Test multiple devices are provisioned by your DPS service
 
 ## Prerequisites
 
-An introductory knowledge of Azure IoT
-Ability to navigate the Azure IoT portal
-Ability to use C#, at the beginner level
-Experience using Visual Studio, or Visual Studio Code, at the beginner level
+- An introductory knowledge of Azure IoT
+- Ability to navigate the Azure IoT portal
+- Ability to use C#, at the beginner level
+- Experience using Visual Studio, or Visual Studio Code, at the beginner level
 
 ## The scenario
 
-The "Remotely monitor and control devices with Azure IoT Hub" module had one sensor in one cheese cave. The sensor ensures the cheese is maturing nicely to the ideal temperature and humidity for your particular brand of cheese.
+The [Remotely monitor and control devices with Azure IoT Hub](https://docs.microsoft.com/en-us/learn/modules/remotely-monitor-devices-with-azure-iot-hub/) module has one sensor in one cheese cave. The sensor ensures the cheese is maturing nicely to the ideal temperature and humidity for your particular brand of cheese.
 
-Suppose you're the manager of the cheese cave maturing process. Your first cheese from the one cave has been a huge success. Your company has expanded rapidly and now has 30 cheese caves. Each cave is used to mature your best-selling cheese, but each cave is also in different locations throughout the country. Some of these caves provide near-ideal conditions without much involvement of a temperature/humidity setting fan. Other caves aren't quite so perfectly located, and require a fan to adjust the temperature and humidity, based on the telemetry output of a sensor.
+Suppose you're the manager of the cheese cave maturing process. Your first cheese from the one cave has been a huge success. Your company has expanded rapidly and now has 30 cheese caves. Each cave is used to mature your best-selling cheese, but each cave is also in different locations throughout the country. Some of these caves provide near-ideal conditions without much involvement of a temperature/humidity setting fan. Other caves aren't so perfectly located, and require a fan to adjust the temperature and humidity, based on the telemetry output of a sensor.
 
 If your cheese business carries on growing, you're going to need solutions that scale smoothly and effortlessly.
 
 ![description](../media/iot-hub-dps-art.png)
 
-You decide on a single Azure IoT Hub to process the telemetry from all thirty sensors. You decide that commercial competition requires that your system is secure, you must be certain of each device before accepting its input. You decide to investigate Azure DPS as your security service.
+You decide on a single Azure IoT Hub to process the telemetry from all 30 sensors. You decide that commercial competition requires that your system is secure, you must be certain of each device before accepting its input. You decide to investigate Azure DPS as your security service.
 
-Cheese making is a competitive business, and you want to keep your secrets well wrapped!
+Cheese making is a competitive business, and you want to keep your secrets well wrapped. And maybe your cheese too.
 
 ![description](../media/cheese-rect4.png)
 
@@ -49,33 +49,33 @@ In this unit, we will create an IoT Hub.
 
 ## Create a custom IoT Hub
 
-1. Make sure you have activated the sandbox, using the button above. This creates a free temporary resource.
+1. Make sure you have activated the sandbox, using the button above. The sandbox creates free temporary resources.
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
 1. Select **+ Create a resource**, from the top of the left-hand menu. In the **Search the Marketplace** search box, enter "IoT Hub".
 1. Select **IoT Hub** from the search results, and click **Create**.
-1. You will be required to enter a **Subscription** from the selection offered to you. A sandbox subscription will be **Concierge Subscription**, so choose that. For **Resource Group** enter <rgn>[sandbox resource group name]</rgn>. A resource group is like a folder, it is largely there to help you organize your resources.
+1. You will be required to enter a **Subscription** from the selection offered to you. A sandbox subscription will be **Concierge Subscription**, so choose that. For **Resource Group**, enter <rgn>[sandbox resource group name]</rgn>. A resource group is like a folder, it is largely there to help you organize your resources.
 1. The **Region** should be the geographical region closest to you, and finally enter a friendly name (say "CheeseCaveHub-&lt;your ID&gt;") for **IoT Hub Name**.
     >[!IMPORTANT]
     >Your hub names are publicly discoverable, so take this into account when entering names.
-1. Select **Next: Size and scale** to view the capabilities of your hub, noting all the services we need are enabled. Open **Advanced Settings** to see the number of partitions. You can leave all entries at their default settings. Or, for peace of mind, you can change **Pricing and scale tier** to **F1: Free tier**, although you'll not be charged if you leave this at **S1: Standard tier**, as sandbox resources are always free.
+1. Select **Next: Size and scale** to view the capabilities of your hub, noting all the services we need are enabled. Open **Advanced Settings** to see the number of partitions. You can leave all entries at their default settings. Or, for peace of mind, you can change **Pricing and scale tier** to **F1: Free tier**, although you'll not be charged if you leave this entry at **S1: Standard tier**, as sandbox resources are always free.
 
 1. Now, select **Review + create**, this option gives you a chance to verify your choices before clicking **Create**, and building the hub. Building your hub can take a few minutes.
 1. When the IoT Hub is built, click **Go to resource** to go to the home page for your hub. Or search for it in **All Resources**, if you happen to miss the completion message.
 1. It is a good idea to bookmark the home page of your IoT Hub.
 
-Having created the hub, let's take a step back and go over some theory. You might find this valuable in understanding the security resources.
+Having created the hub, let's take a step back and go over some theory. You might find this knowledge valuable in understanding the security resources.
 
 ## Unit 3: Overview of DPS service and X.509 certs
 
 This module uses X.509 certificates to validate devices, before they are allowed to communicate with the IoT Hub. Let's go over some background information about these certificates.
 
-## Introduction to X.509 certificates
+## Introduction to DPS and X.509 certificates
 
-The basis of the X.509 certificate is the concept of public/private key encryption. A _public_ key enables data to be encrypted. Use of the key distorts the text of the message into incomprehensible characters. A _private_ key is used to decrypt the message, back into its original text. The public key cannot be used to decrypt the message. This is a form of _asymmetric_ encryption. Asymmetric encryption is more secure than _symmetric_ encryption, where the same key is used to encrypt and decrypt a message. However, the private key needs to be kept secret.
+The basis of the X.509 certificate is the concept of public/private key encryption. A _public_ key enables data to be encrypted. Use of the key distorts the text of the message into incomprehensible characters. A _private_ key is used to decrypt the message, back into its original text. The public key cannot be used to decrypt the message. Public/private keys is a form of _asymmetric_ encryption. Asymmetric encryption is more secure than _symmetric_ encryption, where the same key is used to encrypt and decrypt a message. However, the private key needs to be kept secret.
 
-To keep private keys secret, a _public key infrastructure_ (PKI) is needed to prevent the keys becoming lost or stolen. This is potentially a disadvantage of the public/private key system. However, using X.509 certificates with the Azure Device Provisioning Service (DPS), a public key infrastructure is built into the service. Users of the service don't even need to know their own private keys. The private keys are generated by helper tools that are publicly available. The keys are stored in the X.509 certificates, and a user does need to do much more than upload them to the Azure DPS.
+To keep private keys secret, a _public key infrastructure_ (PKI) is needed to prevent the keys becoming lost or stolen. This infrastructure is potentially a disadvantage of the public/private key system. However, using X.509 certificates with the Azure Device Provisioning Service (DPS), a public key infrastructure is built into the service. Users of the service don't even need to know their own private keys. The private keys are generated by helper tools that are publicly available. The keys are stored in the X.509 certificates, and a user does need to do much more than upload them to the Azure DPS.
 
-To validate the authenticity of X.509 certificates, the certificates need to be _signed_. There are two ways of doing this. You can use an organization known as a _Certificate Authority_ (or, CA) that specializes in supplying signed certificates. This might be the right way to go in a production environment, though of course there can be a cost involved. The alternative is known as _self-signed_ certificates, where the user validates their own certificates. There is no cost to this second option, though as you would be relying on publicly available tools, this system is not recommended for production. For our purposes in this module, self-signed certificates will work fine.
+To validate the authenticity of X.509 certificates, the certificates need to be _signed_. There are two ways of signing. You can use an organization known as a _Certificate Authority_ (or, CA) that specializes in supplying signed certificates. This approach might be the right way to go in a production environment, though of course there can be a cost involved. The alternative is known as _self-signed_ certificates, where the user validates their own certificates. There is no cost to this second option, though as you would be relying on publicly available tools, this system is not recommended for production. For our purposes in this module, self-signed certificates will work fine.
 
 The name "X.509" originates from the format the certificate is stored in.
 
@@ -85,7 +85,7 @@ There is a bit more to the X.509 story that you need to know, as it is central t
 
 ### Root, intermediate, and leaf certificates
 
-There is perhaps a third way of signing certificates. That is, a certificate can be used to validate another certificate. Such a certificate is known as a _root certificate_, or sometimes a _trust anchor_. This one certificate is not used to validate any devices, for example, but is only used to validate a range of sub-ordinate certificates.
+There is perhaps a third way of signing certificates. That is, a certificate can be used to validate another certificate. Such a certificate is known as a _root certificate_, or sometimes a _trust anchor_. This one certificate is not used to validate any devices, for example, but is only used to validate a range of subordinate certificates.
 
 These subordinate certificates can be _intermediate certificates_. An intermediate certificate is again not used to validate devices, but only to validate other intermediate certificates, or validate _leaf_ certificates. We will not be using any intermediate certificates in our sample.
 
@@ -101,17 +101,17 @@ Suffice to conclude that public/private key technology is state-of-the-art secur
 
 An Azure Device Provisioning Service can be linked to one, or more, IoT Hubs, and can be thought of as a system for managing your certificates, and managing your enrollments.
 
-## Individual and Group Enrollments
+### Individual and Group Enrollments
 
-An Azure DPS can contain a number of individual, or group, enrollments. In our scenario, the group enrollment provides the solution we are looking for. One enrollment group works with one root certificate, and any number of leaf certificates signed by this root. An enrollment maintains information on all the devices that have tried to register, and those that have succeeded.
+An Azure DPS can contain a number of individual, or group, enrollments. In our scenario, the group enrollment provides the solution we are looking for. One enrollment group works with one root certificate, and any number of leaf certificates signed by this root. An enrollment maintains information on all the devices that have tried to register.
 
-Individual enrollments are best used for devices that have a unique configuration, and require greater security than the connection strings you may have used in other Learn modules or Azure samples. This is not what we are looking for in our scenario, where we have many sensors configured to provide an identical set of telemetry data.
+Individual enrollments are best used for devices that have a unique configuration, and require greater security than the connection strings you may have used in other Learn modules or Azure samples. Unique configurations are not what we are looking for in our scenario, where we have many sensors configured to provide an identical set of telemetry data.
 
-Another concept you'll see when we create an Azure DPS resource, is that of _allocation policy_. This is not something we delve into. Allocation policies only apply when you have multiple IoT Hubs handling telemetry from a huge number of devices, and want to direct the incoming data to one of these hubs based on a policy.
+Another concept you'll see when we create an Azure DPS resource, is that of _allocation policy_. This policy is not something we delve into. Allocation policies only apply when you have multiple IoT Hubs handling telemetry from a huge number of devices, and want to direct the incoming data to one of these hubs based on a policy.
 
 After creating your enrollments, and self-signed root certificate, there is one more process necessary to prove to the provisioning service that you own the root certificate.
 
-## Proof of Possession
+### Proof of Possession
 
 When uploading certificates to Azure DPS, you'll be asked to generate a verification code.
 
@@ -183,7 +183,7 @@ The first time we create any X.509 certificates, we need to download some tools.
  chmod 700 certGen.sh
 ```
 
-These helper scripts are downloaded from the Azure/azure-iot-sdk-c open source project hosted on GitHub. This is an open source project that’s a part of the Azure IoT SDK. The certGen.sh helper script will help demonstrate the purpose of CA Certificates without diving into the specifics of OpenSSL configuration that’s outside the scope of this module. If you need additional instructions on using these helper scripts, or for instructions on how to use PowerShell instead of Bash, refer to [CACertificateOverview](https://github.com/Azure/azure-iot-sdk-c/blob/master/tools/CACertificates/CACertificateOverview.md).
+These helper scripts are downloaded from the Azure/azure-iot-sdk-c open-source project hosted on GitHub. This is an open-source project that’s a part of the Azure IoT SDK. The certGen.sh helper script will help demonstrate the purpose of CA Certificates without diving into the specifics of OpenSSL configuration that’s outside the scope of this module. If you need additional instructions on using these helper scripts, or for instructions on how to use PowerShell instead of Bash, refer to [CACertificateOverview](https://github.com/Azure/azure-iot-sdk-c/blob/master/tools/CACertificates/CACertificateOverview.md).
 
 [!warning]
 Do not use these helper scripts in a production environment, as the scripts contain hard-coded passwords that expire after 30 days. The scripts are provided only for demo purposes.
@@ -220,11 +220,11 @@ After the root certificate has been uploaded, the **Certificates** pane will dis
 
 1. Copy the **Verification Code** that is displayed above the **Generate Verification Code** button. There is a button to the right of the textbox to do this for you. Open a text editor, such as Notepad, and paste in the verification code.
 
-Proof of Possession of the CA certificate is provided to DPS by uploading a verification certificate generated from the root certificate. The verification certificate contains the verification code you just generated. This is how you provide proof that you own the CA Certificate.
+Proof of Possession of the CA certificate is provided to DPS by uploading a verification certificate generated from the root certificate. The verification certificate contains the verification code you just generated. This process is how you provide proof that you own the CA Certificate.
 
 1. Leave the **Certificate Details** pane open while you generate the verification certificate. If you close the pane, you'll invalidate the verification code, and will need to generate a new one.
 
-1. Copy the following command to the text file containing the verification code, and change the <verification-code> to the actual code.
+1. Copy the following command to the text file containing the verification code, and change the &lt;verification-code&gt; to the actual code.
 
 ```cli
  ./certGen.sh create_verification_certificate <verification-code>
@@ -266,7 +266,7 @@ This is great progress, you have created a root certificate, and validated to Az
 
 A group enrollment is going to be very useful in handling remote devices at scale. The next few units create multiple leaf certificates, and multiple devices. 
 
-## Unit 5: Create multiple leaf certs  [ MAYBE COMBINE WITH UNIT 4 ] 
+## Unit 5: Create multiple leaf certs
 
 In this unit, we need to create one leaf certificate for each device that we want to send telemetry to the hub. Two is company, three is a crowd. So, let's create code for a "crowd" of devices. Remember, in our scenario description we stated that there were now 30 cheese caves, requiring 30 sensor devices. Let's limit this to three for the sake of explanation and testing!
 
@@ -287,11 +287,11 @@ In this unit, we need to create one leaf certificate for each device that we wan
 download ~/certificates/certs/new-device.cert.pfx
 ```
 
-1. Create a new folder in your **Documents** folder, called "cheesecave certificates", or something similar.
+1. Create a new folder in your **Documents** folder, called "cheesecave certs", or something similar.
 
-1. Copy the **new-device-cert.pfx** file from its downloaded location into the cheesecave certificates folder, and rename it **new-device-cert1.pfx**.
+1. Copy the **new-device-cert.pfx** file from its downloaded location into the **cheesecave certs** folder, and rename it **new-device-cert1.pfx**.
 
-1. In the Azure Cloud Shell, delete the **new-device-cert** files. This is important so that the tools can be used to create further certificates. You can delete the file, in the **certificates/certs** folder, by going through the following procedure.
+1. In the Azure Cloud Shell, delete the **new-device-cert** files. This is important so that the tools can be used to create further certificates. You can delete the file, in the **certificates/certs** folder, by going through the following procedure:
     1. Type `cd certs`.
     1. Type `rm new*`.
     1. Answer `y` to the question on the protected file.
@@ -312,9 +312,9 @@ download ~/certificates/certs/new-device.cert.pfx
 download ~/certificates/certs/new-device.cert.pfx
 ```
 
-1. Copy the **new-device-cert.pfx** file from its downloaded location into the cheesecave certificates folder, and rename it **new-device-cert2.pfx**.
+1. Copy the **new-device-cert.pfx** file from its downloaded location into the **cheesecave certs** folder, and rename it **new-device-cert2.pfx**.
 
-1. In the Azure Cloud Shell, delete the **new-device-cert** files. 
+1. In the Azure Cloud Shell, delete the **new-device-cert** files:
     1. Type `cd certs`.
     1. Type `rm new*`.
     1. Answer `y` to the question on the protected file.
@@ -327,18 +327,19 @@ download ~/certificates/certs/new-device.cert.pfx
 ```
 
 1. Download the third certificate to your local machine, type:
+
 ```cli
 download ~/certificates/certs/new-device.cert.pfx
 ```
 
-1. Copy the **new-device-cert.pfx** file from its downloaded location into the cheesecave certificates folder, and rename it **new-device-cert3.pfx**.
+1. Copy the **new-device-cert.pfx** file from its downloaded location into the **cheesecave certs** folder, and rename it **new-device-cert3.pfx**.
 
 Great, you now have a root certificate, a validation certificate, and three leaf certificates. The next step is to write some code to simulate each device.
 
 
 ## Unit 6: Create the code for the sensor devices
 
-In this unit, we create the code running on each sensor device. 
+In this unit, we create the code running on each sensor device.
 
 One of the goals is to make the code as identical as possible for each device, so minimalizing human involvement. The code will require one tweak as we prepare it for a second device, the path to the leaf certificate needs to be unique for each device. Unique in this case means changing a "1" to a "2" or "3". This change is so minor it could easily be automated in a production environment.
 
@@ -350,21 +351,27 @@ The code is written in C#, and you can choose Visual Studio, or Visual Studio Co
  Code stuff
  COPY FROM CHEESE CAVE CODE SETUP
 
-### Create a second device
+1. Change the &lt;your leaf path&gt; to the actual path to your leaf certificate.
 
-1. Repeat all the steps in this unit.
-1. Change the leaf path from "xxx" to "xxx".
+```csharp
+      private static string s_certificateFileName = "C:\\Users\\<your user name>\\Documents\\cheesecave certs\\new-device.cert1.pfx";
+```
 
-### Create a third device
+### Create an app for a second device
 
-1. Repeat all the steps in this unit.
-1. Change the leaf path from "xxx" to "xxx".
+1. Repeat all the steps in the **Create a project for a simulated device** section.
+1. Change the leaf name from "new-device.cert1.pfx" to "new-device.cert2.pfx".
+
+### Create an app for a third device
+
+1. Repeat all the steps in the **Create a project for a simulated device** section.
+1. Change the leaf path from "new-device.cert1.pfx" to "new-device.cert3.pfx".
 
 Great, a bit of repetitive work, but we now have our crowd of devices. The next step is to set all three apps running, then test our DPS resource and IoT Hub handle the assignments and telemetry correctly.
 
 ## Unit 7: Test your DPS linked IoT Hub with multiple devices
- 
-In this unit we verify that all the pieces we have put in place work as expected. We will set all the device apps running, then check the provisioning service handles the registration correctly. Then we will check that the IoT Hub gets automatic updates to its list of connected IoT devices. Finally, we change some device twin settings in the portal, and verify that the correct device picks these changes up.
+
+In this unit, we verify that all the pieces we have put in place work as expected. We will set all the device apps running, then check the provisioning service handles the registration correctly. Then we will check that the IoT Hub gets automatic updates to its list of connected IoT devices. Finally, we change some device twin settings in the portal, and verify that the correct device picks these changes up.
 
 ## Test multiple devices are automatically assigned to your IoT Hub
 
@@ -420,27 +427,27 @@ To complete the module, let's summarize the goals, and finish with a knowledge c
 
 ## Unit 8: Summary
 
-Completing this module should have given you some valuable insights into the dark world of cryptography and message security. If you're new to this world, you'll appreciate the thought and design that has gone into X.509 certificates, and Azure DPS Group Enrollments. You will see how these technologies neatly maps the root and leaf X.509 certificates to an IoT Hub and its range of IoT devices. You will also appreciate how well these technologies make security user-friendly enough for those of us who don't want to know too much about the underlying math.
+Completing this module should have given you some valuable insights into the dark world of cryptography and message security. If you're new to this world, you'll appreciate the thought and design that has gone into X.509 certificates, and Azure DPS Group Enrollments. You will see how these technologies neatly map the root and leaf X.509 certificates to an IoT Hub and its range of IoT devices. You will also appreciate how well these technologies make security user-friendly enough for those of us who don't want to know too much about the underlying math.
 
 In this module, you learned how to:
 
-Create a custom Azure IoT Hub, using the Azure portal
-Learn about device provisioning, X.509 certificates, and enrollments
-Create a DPS resource and group enrollment, using the Azure portal
-Create an app to send device telemetry to your IoT Hub, using Visual Studio, or Visual Studio Code
-Test multiple devices are provisioned by your DPS service
+- Create a custom Azure IoT Hub, using the Azure portal
+- Learn about device provisioning, X.509 certificates, and enrollments
+- Create a DPS resource and group enrollment, using the Azure portal
+- Create an app to send device telemetry to your IoT Hub, using Visual Studio, or Visual Studio Code
+- Test multiple devices are provisioned by your DPS service
 
 ## Next steps
 
 Learn about storing passwords and certificates:
-[Azure Key Vault](https://azure.microsoft.com/en-us/services/key-vault/)
-[Azure Dedicated HSM](https://azure.microsoft.com/en-us/services/azure-dedicated-hsm/)
+- [Azure Key Vault](https://azure.microsoft.com/en-us/services/key-vault/)
+- [Azure Dedicated HSM](https://azure.microsoft.com/en-us/services/azure-dedicated-hsm/)
 
 Learn more about IoT Hub:
-[IoT Hub Documentation] (https://docs.microsoft.com/en-us/azure/iot-hub/)
+- [IoT Hub Documentation] (https://docs.microsoft.com/en-us/azure/iot-hub/)
 
 Learn more about IoT Hub devices:
-[Find your IoT device](https://catalog.azureiotsolutions.com/)
+- [Find your IoT device](https://catalog.azureiotsolutions.com/)
 
 To complete this module, there is a slightly-harder-than-usual knowledge check. Good luck with it!
 
