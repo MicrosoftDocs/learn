@@ -70,8 +70,6 @@ Azure Security Center monitors security configurations by applying a set of over
 1. Choose a subscription or management group from the displayed list.
 1. Check that **Vulnerabilities in security configuration on your virtual machine scale sets should be remediated** is one of the policies.
 
-    ![Screenshot of the Security policy Azure security Center pane](../media/3-asc-enable-system-updates.png)
-
 > [!NOTE]
 > All of the following policies that have a (\*) in their title are listed in the **Security policies** pane as described above
 

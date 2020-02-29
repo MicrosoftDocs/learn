@@ -1,0 +1,36 @@
+### YamlMime:Module
+uid: learn.wwl.work-with-data-in-aml
+metadata:
+  title: Work with data in Azure Machine Learning
+  description: Learn how to work with datastores and datasets in Azure Machine Learning.
+  ms.date: 02/10/2020
+  author: GraemeMalcolm
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Work with data in Azure Machine Learning
+summary: Learn how to work with datastores and datasets in Azure Machine Learning.
+abstract: | 
+  In this module, you will learn how to:
+  - Create and use datastores in Azure Machine Learning.
+  - Create and use datasets in Azure Machine Learning.
+prerequisites: None
+iconUrl: /learn/achievements/data-ai/work-with-data-in-aml-badge.svg
+levels:
+- beginner
+roles:
+- data-scientist
+- student
+products:
+- azure
+- azure-machine-learning-service
+units:
+- learn.wwl.work-with-data-in-aml.introduction
+- learn.wwl.work-with-data-in-aml.datastores
+- learn.wwl.work-with-data-in-aml.using-datastores
+- learn.wwl.work-with-data-in-aml.datasets
+- learn.wwl.work-with-data-in-aml.using-datasets
+- learn.wwl.work-with-data-in-aml.working-with-data
+- learn.wwl.work-with-data-in-aml.summary
+badge:
+  uid: learn.wwl.work-with-data-in-aml.badge

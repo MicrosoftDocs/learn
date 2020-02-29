@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.create-custom-roles-rbac.manage-custom-roles
+title: Manage custom Azure roles
+metadata:
+  title: Manage custom Azure roles
+  description: Learn how to manage custom Azure roles
+  ms.date: 02/10/2020
+  author: cwatson-cat
+  ms.author: cwatson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-manage-custom-roles.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the Azure PowerShell cmdlet to update a custom role?"
+    choices:
+    - content: "New-AzRoleDefinition"
+      isCorrect: false
+      explanation: "Use the cmdlet 'New-AzRoleDefinition' to create a custom role by using Azure PowerShell."
+    - content: "Set-AzRoleDefinition"
+      isCorrect: true
+      explanation: "Use 'Set-AzRoleDefinition' to update a custom role by using Azure PowerShell."
+    - content: "az role definition create"
+      isCorrect: false
+      explanation: "Use the command 'az role definition create' to create a custom role when you're using Azure CLI."
+  - content: "What are the steps to remove a custom role?"
+    choices:
+    - content: "Delete the custom role and then remove the role assignments."
+      isCorrect: false
+      explanation: "You can't delete the custom role until you remove the role assignments."
+    - content: "Set the role definition status to retired."
+      isCorrect: false
+      explanation: "The role definition doesn't have a status attribute."
+    - content: "Delete the role assignments and then delete the custom role."
+      isCorrect: true
+      explanation: "Before you can delete the custom role, you must delete any role assignments."

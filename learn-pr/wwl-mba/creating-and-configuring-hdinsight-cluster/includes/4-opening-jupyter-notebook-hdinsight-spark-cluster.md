@@ -18,17 +18,13 @@ Spark clusters in HDInsight offer a rich support for building real-time analytic
 
 Use the following steps to create a Jupyter notebook in the Azure portal.
 
-1. Select HDInsight clusters, and then select the cluster you created.
+1. From the portal, in the **Cluster dashboards** section, select **Jupyter Notebook**. If prompted, enter the **cluster login credentials** for the cluster.
 
-![Selecting your HDInsight Cluster in the Azure portal](../media/4-img01.png)
+    ![Selecting your Jupyter Notebook in the Azure portal](../media/4-img02.png)
 
-2. From the portal, in the **Cluster dashboards** section, select **Jupyter Notebook**. If prompted, enter the **cluster login credentials** for the cluster.
+2. Select **New > PySpark** to create a notebook.
 
-![Selecting your Jupyter Notebook in the Azure portal](../media/4-img02.png)
+    ![A screenshot of a  Jupyter Notebook](../media/4-img03.png)
 
-3. Select **New > PySpark** to create a notebook.
-
-![A screenshot of a  Jupyter Notebook](../media/4-img03.png)
-
-4. A new notebook is created and opened with the name Untitled (Untitled.pynb) that enables you to start creating jobs are executing queries
+3. A new notebook is created and opened with the name Untitled (Untitled.pynb) that enables you to start creating jobs are executing queries
 

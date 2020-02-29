@@ -27,6 +27,10 @@ Take your interest further with:
 - [Azure Stream Analytics documentation](https://docs.microsoft.com/azure/stream-analytics/)
 - [Azure Certified for IoT device catalog](https://catalog.azureiotsolutions.com/)
 
-And look out for additional Learn modules on IoT Hub, and Stream Analytics.
+And look out for additional Learn modules on IoT Hub, and Stream Analytics
+
+## Learn more with a Channel 9 video series
+
+- [IoT 101](https://channel9.msdn.com/Series/IoT-101/?&WT.mc_id=EducationalIoT-c9-niner&azure-portal=true)
 
 To complete this module, and earn your just rewards, complete a final knowledge check.

@@ -14,7 +14,7 @@ You've monitored and analyzed the performance of your on-premises system, both d
 
 This requirement makes the decision simple. The maximum size for premium SSDs is P80, but this size supports maximum IOPS of 20,000 and a maximum throughput of 900 MBps. Only the largest sizes of ultra SSDs support the performance you need.
 
-Remember that ultra SSDs can only be attached to virtual machines in availability zones. This requirement provides high availability because the virtual servers aren't vulnerable to a datacenter-wide hardware failure. It also means that you should use managed disks, which Azure automatically replicates across the availability zones where virtual machines are hosted. Managed disks also support the encryption you need.
+Remember that ultra SSDs can only be attached to virtual machines in availability zones. This requirement provides high availability because the virtual servers aren't vulnerable to a datacenter-wide hardware failure. It also means that you should use managed disks, which Azure automatically replicates across the availability zones where virtual machines are hosted.
 
 ## Data warehouse servers
 

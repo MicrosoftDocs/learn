@@ -50,9 +50,9 @@ In the free Azure sandbox environment, you'll use the pre-created resource group
 
 1. Next, you're presented several options to configure your deployment. Enter the following information:
 
-    | Option | Value |
-    |--- | --- |
-    | **App Name** | Choose a unique for the App name. It will form part of a Fully Qualified Domain Name (FQDN).|
+    | Field | Value |
+    |---|---|
+    | **App Name** | Choose a unique value for the App name. It will form part of a Fully Qualified Domain Name (FQDN). |
     | **Subscription** | Make sure the **Concierge Subscription** is selected. |
     | **Resource Group** | Select the **Use existing** radio button, then select the **<rgn>[sandbox resource group name]</rgn>** resource group from the drop-down list. |
     | **Database Provider** | Select **MySQL in App**. |

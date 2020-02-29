@@ -33,7 +33,7 @@ quiz:
     choices: 
     - content: "They are not different. They are the same object."
       isCorrect: false
-      explanation: "Logins and users are not the same objects in Azure SQL Data Warehouse."
+      explanation: "Logins and users are not the same objects in Azure Synapse Analytics."
     - content: "Logins provide access to the databases within a server, and users provide access to the server."
       isCorrect: false
       explanation: "It's logins that provide access to a server. Users provide access to databases within a server."

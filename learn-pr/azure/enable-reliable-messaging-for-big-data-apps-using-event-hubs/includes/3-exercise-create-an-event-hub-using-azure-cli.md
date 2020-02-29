@@ -25,7 +25,7 @@ Let's create an Event Hubs namespace using Bash shell supported by Azure Cloud s
     Set the name into an environment variable so we can reuse it.
 
     ```bash
-    NS_NAME=[name]
+    NS_NAME=ehubns-$RANDOM
     ````
 
     [!include[](../../../includes/azure-cloudshell-copy-paste-tip.md)]
@@ -58,7 +58,7 @@ Let's create an Event Hubs namespace using Bash shell supported by Azure Cloud s
 
 ## Create an Event Hub
 
-Now lets create your new Event Hub.
+Now let's create your new Event Hub.
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
@@ -74,7 +74,7 @@ Now lets create your new Event Hub.
     Let's define the Event Hub name in an environment variable first.
 
     ```azurecli
-    HUB_NAME=[name]
+    HUB_NAME=hubname-$RANDOM
     ```
 
     ```azurecli

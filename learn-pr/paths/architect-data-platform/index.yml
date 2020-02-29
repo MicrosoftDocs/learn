@@ -28,6 +28,7 @@ modules:
 - learn.intro-to-data-in-azure
 - learn.provision-azure-sql-db
 - learn.azure-scale-azure-sql-dbs-elastic-pools
+- learn.migrate-sql-server-relational-data
 - learn.develop-app-that-queries-azure-sql
 - learn.create-cosmos-db-for-scale
 - learn.distribute-data-globally-with-cosmos-db

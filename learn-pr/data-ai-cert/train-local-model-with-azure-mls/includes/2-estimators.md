@@ -1,4 +1,4 @@
-In Azure Machine Learning, yYou can use a **Run Configuration** and a **Script Run Configuration** to run a script-based experiment that trains a machine learning model. However, depending on the machine learning framework being used and the dependencies it requires, the run configuration may become complex. Azure Machine Learning also provides a higher level abstraction called an **Estimator** that encapsulates a run configuration and a script configuration in a single object, and for which there are pre-defined, framework-specific variants that already include the package dependencies for common machine learning frameworks such as Scikit-Learn, PyTorch, and Tensorflow.
+In Azure Machine Learning, you can use a **Run Configuration** and a **Script Run Configuration** to run a script-based experiment that trains a machine learning model. However, depending on the machine learning framework being used and the dependencies it requires, the run configuration may become complex. Azure Machine Learning also provides a higher level abstraction called an **Estimator** that encapsulates a run configuration and a script configuration in a single object, and for which there are pre-defined, framework-specific variants that already include the package dependencies for common machine learning frameworks such as Scikit-Learn, PyTorch, and Tensorflow.
 
 ## Writing a Script to Train a Model
 
@@ -46,7 +46,7 @@ from azureml.core import Experiment
 
 # Create an estimator
 estimator = Estimator(source_directory='experiment_folder',
-                      entry_script='training_script.py'
+                      entry_script='training_script.py',
                       compute_target='local',
                       conda_packages=['scikit-learn']
                       )
