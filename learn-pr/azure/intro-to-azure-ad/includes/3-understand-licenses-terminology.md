@@ -1,4 +1,4 @@
-Your company is always looking for the most experienced healthcare professionals and external contractors to work with. Research projects can become costly if they're not managed properly. Your company wants to improve its cost effectiveness. You've been asked to investigate how Azure Active Directory (Azure AD) is licensed. You've also been asked to provide a clear and concise outline of the key terminology your company will come across when using Azure AD.
+Your company always looks for the most experienced healthcare professionals and external contractors to work with. Research projects can become costly if they're not managed properly. Your company wants to improve its cost effectiveness. The company has asked you to investigate how Azure Active Directory (Azure AD) is licensed. You also need to provide a clear and concise outline of the key terminology your company will come across in Azure AD.
 
 Here, you'll explore how Azure AD is licensed and which features fall under the different licenses. You'll see how to add or change licenses in Azure AD. And you'll learn the key terms you need to understand when you use Azure AD.
 
@@ -6,23 +6,23 @@ Here, you'll explore how Azure AD is licensed and which features fall under the 
 
 You can use different features of Azure AD, depending on the type of license you choose:
 
-- **Azure Active Directory Free**. Here, you get user management and group management capabilities, basic reports, on-premises Active Directory synchronization, self-service password reset for Azure AD users, single sign-on for Office 365, Azure services, and many third-party SaaS applications.
+- **Azure Active Directory Free**. You can manage users and groups, and you get basic reports, on-premises Active Directory synchronization, and self-service password reset for Azure AD users. You also get single sign-on for Office 365, Azure services, and many third-party SaaS applications.
 
-- **Azure Active Directory Premium P1**. Here, you get all the features from the free tier, but you can also let users access on-premises and cloud-based services and resources. You can also use self-service group management or dynamic groups where users are added and removed automatically, based on your criteria. This tier supports on-premises identity management suites like Microsoft Identity Manager. Self-service password reset is also supported for users who are based on-premises.
+- **Azure Active Directory Premium P1**. You get all the features from the free tier, but you can also let users access on-premises and cloud-based services and resources. You can use self-service group management or dynamic groups, where users are added and removed automatically, based on your criteria. This tier supports on-premises identity management suites like Microsoft Identity Manager. Self-service password reset is also supported for users who are based on-premises.
 
-- **Azure Active Directory Premium P2**. This tier has all the features of the previous two tiers, along with a feature called Active Directory Identity Protection. This feature helps you configure risk-based conditional access to protect applications from identity-based risks. You can also use privileged identity management, which lets you monitor and put detailed restrictions on administrators.
+- **Azure Active Directory Premium P2**. You get all the features of the previous two tiers, along with Active Directory Identity Protection. This feature helps you configure risk-based conditional access to protect applications from identity risks. You can also use privileged identity management, which lets you monitor and put detailed restrictions on administrators.
 
-- **Pay-as-you-go licenses for specific features**. Specific Azure AD features, like Azure AD Business-to-Consumer (B2C), are accessed on a pay-as-you-go basis. Azure AD B2C lets you manage identity and access for consumer users and the applications they use.
+- **Pay-as-you-go licenses for specific features**. You access specific Azure AD features, like Azure AD business-to-consumer (B2C), on a pay-as-you-go basis. Azure AD B2C lets you manage identity and access for consumer users and the applications they use.
 
 Choose the license type you want, based on your organization's needs.
 
-View your active license plans in the Azure portal by selecting **Azure Active Directory** >** Licenses** > **All products**. Here, you can also buy or try new licenses.
+View your active license plans in the Azure portal by selecting **Azure Active Directory** > **Licenses** > **All products**. Here, you can also buy or try new licenses.
 
 ![Azure AD licenses](../media/3-licenses.png)
 
-You can select each license plan to see which users are included. In the plan, you can add or remove users or groups of users.
+Select a license plan to see which users are included. In the plan, you can add or remove users or groups of users.
 
-![Azure AD License users](../media/3-licenses-users.png)
+![Azure AD license users](../media/3-licenses-users.png)
 
 ## Azure AD terminology
 
@@ -41,24 +41,24 @@ Here's an explanation of some of those terms:
 |Azure AD directory|An Azure resource that's created for you automatically when you subscribe to Azure. You can create many Azure AD directories. Each of these directories represents a tenant.|
 |Custom domain|A domain that you customize for your Azure AD directory. When you create an Azure AD directory, Azure automatically assigns it a default domain like `<your-organization>.onmicrosoft.com`. But you can customize domain names. Your users could then have accounts like `joesmith@contoso.com` instead of `joesmith@contoso.onmicrosoft.com`.|
 |Owner role|The role you use to manage all resources in Azure, including the access levels that users need for resources.  |
-|Global administrator| The role that gives you access to all administrative capabilities in Azure AD. When you create a tenant, you're automatically assigned this role for that tenant. This role allows you to reset passwords for all users and administrators, for example.|
+|Global administrator| The role that gives you access to all administrative capabilities in Azure AD. When you create a tenant, you automatically have this role for the tenant. This role allows you to reset passwords for all users and administrators, for example.|
 | | |
 
 ## Default user permissions
 
-Azure AD gives all of the users in your tenant a default set of permissions. Permissions dictate what a user can and can't do. The set of permissions granted by default depends on whether a particular user is a natural member user of the tenant (like an internal employee) or if they belong to an outside organization. The latter would be considered a guest, such as an external collaborating user. Guest users are invited to the tenant through a feature for Azure AD called Azure Active Directory B2B.
+Azure AD gives all of the users in your tenant a default set of permissions. Permissions dictate what a user can and can't do. The set of permissions granted by default depends on whether a user is a natural member of the tenant (like an internal employee) or a member of an outside organization. The latter is considered a guest. An example of a guest is an external collaborating user. Guest users are invited to the tenant through an Azure AD feature called Azure Active Directory B2B.
 
-Member users can do many things that guest users can't. For example, member users manage their own profile details, like their phone number, profile photos, and more. Guest users typically have more restrictions. A guest user can, for instance, view their display photo but can't change it. The external healthcare professionals your company works with regularly, could be given guest user access. This way, they'd have more restricted permissions than a regular internal staff member, but they would still have enough permissions to get their work done.
+Member users can do many things that guest users can't. For example, member users manage their own profile details, like their phone number and profile photos. Guest users typically have more restrictions. Guest users can, for instance, view their display photos but can't change them. For the external healthcare professionals that your company works with regularly, you could grant guest-user access. This way, they'd have more restricted permissions than a regular internal staff member, but they would still have enough permissions to do their work.
 
-### Member and guest default permissions compared
+### Comparison of member and guest default permissions
 
-Here are some of the default permissions for member and guest type users:
+Here are some of the default permissions for member users and guest users:
 
-|Area  |Member user permissions  |Guest user permissions  |
+|Area  |Member user permissions  |Guest-user permissions  |
 |---------|---------|---------|
-|Users and contacts|Can view all profile details. Change own password, update own mobile phone number, and profile photos.|Only view profile name, email, sign-in name, photo, user principal name, and user type properties of other users and contacts; change own password.|
-|Devices|Can read all properties of devices. Manage all properties of owned devices.|Can't read all properties of devices. Can't manage all properties of owned devices. Can delete owned devices.|
+|Users and contacts|Can view all profile details. Can change own password, mobile phone number, and profile photos.|Can view only profile name, email, sign-in name, photo, user principal name, and user type properties of other users and contacts. Can change own password.|
+|Devices|Can read all properties of devices. Can manage all properties of owned devices.|Can't read all properties of devices. Can't manage all properties of owned devices. Can delete owned devices.|
 |Applications |Can register new applications.|Can't register new applications. Can delete owned applications.|
-Policies|Read all properties of policies, manage all properties of owned policy.|No permissions.|
-Subscriptions|Read all subscriptions, enable Service Plan Member.|No permissions.|
-Roles and Scopes|Read all administrative roles and memberships, read all Roles and Scopes and membership of administrative units.|No permissions.|
+Policies|Can read all properties of policies and manage all properties of owned policies.|No permissions.|
+Subscriptions|Can read all subscriptions and enable service plan members.|No permissions.|
+Roles and scopes|Can read all administrative roles and memberships. Can read all roles and scopes and membership of administrative units.|No permissions.|

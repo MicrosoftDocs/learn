@@ -1,6 +1,6 @@
-Your company wants to improve how it provides services to doctors, and how it collaborates with external healthcare organizations. You've been asked to investigate what other capabilities and services Azure AD could provide for the organization.
+Your company wants to improve how it provides services to doctors and how it collaborates with external healthcare organizations. You've been asked to investigate what other capabilities and services Azure AD could provide for the organization.
 
-You'll explore some essential features for Azure AD, and how they can be used. For example, you'll look at features like Azure Active Directory business-to-business (B2B), Azure Active Directory business-to-consumer (B2C), Azure Active Directory Domain Services, and Azure Identity Protection. And you'll see which features you can use to help improve how you manage applications with Azure AD.
+Here, you explore some essential features of Azure AD and how you can use them. For example, you look at features like Azure Active Directory business-to-business (B2B), Azure Active Directory business-to-consumer (B2C), Azure Active Directory Domain Services, and Azure Identity Protection. And you'll see which features you can use to help improve how you manage applications with Azure AD.
 
 ## Azure Active Directory B2B
 
@@ -65,7 +65,7 @@ You can manage different categories of applications with Azure AD:
 
     ![Non-gallery applications](../media/4-non-gallery-applications.png)
 
-- **On-premises applications**. You can add on-premises applications by configuring an Azure AD Application Proxy. This process will create secure remote access for applications you have on-premises. To connect them, you download and install the application proxy connector on-premises.
+- **On-premises applications**. You can add on-premises applications by configuring Azure AD Application Proxy. This process will create secure remote access for applications you have on-premises. To connect them, you download and install the Application Proxy connector on-premises.
 
     ![On-premises applications](../media/4-add-on-premises-application.png)
 
