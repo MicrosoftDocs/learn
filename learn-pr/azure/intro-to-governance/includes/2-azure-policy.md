@@ -1,15 +1,11 @@
-Planning out a consistent cloud infrastructure starts with setting up policy. Your policies will enforce your rules for created resources, so your infrastructure stays compliant with your corporate standards, cost requirements, and service-level agreements (SLAs) you have with your customers.
+Planning out a consistent cloud infrastructure starts with setting up policy. Your policies will enforce your rules for created resources, so your infrastructure stays compliant with your corporate standards, cost requirements, and any service-level agreements (SLAs) you have with your customers.
 
 :::row:::
   :::column:::
-    ![Icon representing Azure policy](../media/2-azurepolicy.png)
+    :::image type="icon" source="../media/2-azurepolicy.png":::
   :::column-end:::
     :::column span="3":::
-**Azure Policy** is an Azure service you use to create, assign and, manage policies. These policies enforce different rules and effects over your
-resources so that those resources stay compliant with your corporate standards and service level agreements. Azure Policy meets this
-need by evaluating your resources for noncompliance with assigned policies. For example, you might have a policy that allows virtual
-machines of only a certain size in your environment. After this policy is implemented, new and existing resources are evaluated for
-compliance. With the right type of policy, existing resources can be brought into compliance.
+**Azure Policy** is an Azure service you use to create, assign and, manage policies. These policies enforce different rules and effects over your resources so that those resources stay compliant with your corporate standards and service level agreements. Azure Policy meets this need by evaluating your resources for noncompliance with assigned policies. For example, you might have a policy that allows virtual machines of only a certain size in your environment. After this policy is implemented, new and existing resources are evaluated for compliance. With the right type of policy, existing resources can be brought into compliance.
   :::column-end:::
 :::row-end:::
 
@@ -18,7 +14,7 @@ Imagine we allow anyone in our organization to create virtual machines (VMs). We
 > [!div class="alert is-info"]
 > **How are Azure Policy and RBAC different?**
 >
-> At first glance, it might seem like Azure Policy is a way to restrict access to specific resource types similar to role-based access control (RBAC). However, they solve different problems. RBAC focuses on _user actions at different scopes_. You might be added to the contributor role for a resource group, allowing you to make changes to anything in that resource group. Azure Policy focuses on _resource properties during deployment_ and for already-existing resources. Azure Policy controls properties such as the types or locations of resources. Unlike RBAC, **Azure Policy is a default-allow-and-explicit-deny system**.
+> At first glance, it might seem like Azure Policy is a way to restrict access to specific resource types similar to role-based access control (RBAC). However, they solve different problems. RBAC focuses on _user actions at different scopes_. You might be added to the contributor role for a resource group, allowing you to make changes to anything in that resource group. Azure Policy focuses on _resource properties during deployment_ and for already-existing resources. Azure Policy controls properties such as the types or locations of resources. Unlike RBAC, Azure Policy is a **default-allow-and-explicit-deny system**.
 
 ## Creating a policy
 
@@ -108,7 +104,7 @@ We can use the applied policy definition to identify resources that aren't compl
 
 The results match what you see in the Resource compliance tab of a policy assignment in the Azure portal:
 
-![Screenshot of the policy compliance tab in the Azure portal](../media/2-policy-compliance.png)
+![Screenshot of the policy compliance pane in the Azure portal](../media/2-policy-compliance.png)
 
 Or we can again use the command-line tools to identify the resources in your resource group that are non-compliant to the policy assignment
 
@@ -140,11 +136,11 @@ ManagementGroupIds          : {managementGroupId}
 
 Once you've defined one or more policy definitions, you'll need to assign them. A _policy assignment_ is a policy definition that has been assigned to take place within a specific scope.
 
-This scope could range from a full subscription down to a resource group. Policy assignments are inherited by all child resources. This means that if a policy is applied to a resource group, it is applied to all the resources within that resource group. However, you can exclude a subscope from the policy assignment. For example, we could enforce a policy for an entire subscription and then exclude a few select resource groups.
+This scope could range from a full subscription down to a resource group. Policy assignments are inherited by all child resources. This inheritance means that if a policy is applied to a resource group, it is applied to all the resources within that resource group. However, you can exclude a subscope from the policy assignment. For example, we could enforce a policy for an entire subscription and then exclude a few select resource groups.
 
-You can assign any of these policies through the Azure portal, PowerShell, or Azure CLI. When you assign a policy definition, you will need to supply any parameters which are defined.
+You can assign any of these policies through the Azure portal, PowerShell, or Azure CLI. When you assign a policy definition, you will need to supply any parameters that are defined.
 
-![Screenshot showing parameters when assigning a policy to a scope in the Azure Portal](../media/2-policy-parameters.png)
+![Screenshot showing parameters when assigning a policy to a scope in the Azure portal](../media/2-policy-parameters.png)
 
 ### Policy effects
 
@@ -162,11 +158,11 @@ Each policy definition in Azure Policy has a single effect. That effect determin
 
 ### View policy evaluation results
 
-Azure Policy can allow a resource to be created even if it doesn't pass validation. In these cases, you can have it trigger an audit event which can be viewed in the Azure Policy portal, or through command-line tools. The easiest approach is in the portal as it provides a nice graphical overview which you can explore. You can find the Azure Policy section through the search field or _All Services_.
+Azure Policy can allow a resource to be created even if it doesn't pass validation. In these cases, you can have it trigger an audit event that can be viewed in the Azure Policy portal, or through command-line tools. The easiest approach is in the portal as it provides a nice graphical overview that you can explore. You can find the Azure Policy section through the search field or _All Services_.
 
-![Azure portal showing the Azure Portal Overview screen](../media/2-policy-portal.png)
+![Azure portal showing the policy overview screen](../media/2-policy-portal.png)
 
-From this screen, you can spot resources which are not compliant and take action to correct them.
+From this screen, you can spot resources that are not compliant and take action to correct them.
 
 ### Removing a policy definition
 
