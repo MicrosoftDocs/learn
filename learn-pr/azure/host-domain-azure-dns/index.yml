@@ -2,8 +2,8 @@
 uid: learn.azure.host-domain-azure-dns
 metadata:
   title: Host your domain on Azure DNS
-  description: Host your domain on Azure DNS
-  ms.date: 08/13/2019
+  description: Learn how to host your domain on Azure DNS.
+  ms.date: 03/13/2020
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial
@@ -22,6 +22,7 @@ roles:
 - administrator
 products:
 - azure
+- azure-dns
 units:
 - learn.azure.host-domain-azure-dns.introduction
 - learn.azure.host-domain-azure-dns.what-is-azure-dns

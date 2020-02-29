@@ -1,14 +1,6 @@
-The web development team are busy completing the new company website.
-
-In the past, you've used third-party vendors to register and host your domain details. One of the requirements of this redevelopment is to host the domain on your Azure servers.
-
-You want to find out how Azure can assist in hosting the domain using Azure DNS.
-
 In this unit, you'll learn what DNS is and how it works. Then see what Azure DNS is, and why you would use it.
 
-## What is DNS
-
-Azure DNS enables you to host your DNS records for your domains on Azure infrastructure. It uses the anycast networking routing methodology to choose a route to the closest available DNS server.
+## What is DNS?
 
 The DNS, or the Domain Name System, is a protocol within the TCP/IP standard. The DNS serves an essential role of translating the human-readable domain names, for example, www.wideworldimports.com into a known Internet Protocol (IP) address. IP addresses enable computers and network devices to identify and route requests between themselves.
 

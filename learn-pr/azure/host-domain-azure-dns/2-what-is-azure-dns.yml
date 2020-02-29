@@ -4,12 +4,11 @@ title: What is Azure DNS?
 metadata:
   title: What is Azure DNS?
   description: What is Azure DNS?
-  ms.date: 08/13/2019
+  ms.date: 03/13/2020
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 7
 content: |
   [!include[](includes/2-what-is-azure-dns.md)]

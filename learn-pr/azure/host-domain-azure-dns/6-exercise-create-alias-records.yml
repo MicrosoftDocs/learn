@@ -4,12 +4,11 @@ title: Exercise - Create alias records for Azure DNS
 metadata:
   title: Exercise - Create alias records for Azure DNS
   description: Exercise - Create alias records for Azure DNS
-  ms.date: 08/13/2019
+  ms.date: 03/13/2020
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
   zone_pivot_groups: 
 interactive: bash
 azureSandbox: true

@@ -12,7 +12,7 @@ Before you can host the wideworldimports.com domain on your servers, you need to
 
 To create your DNS zone, follow these steps:
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) with the account you used to activate this sandbox.
+1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true) with the account you used to activate this sandbox.
 1. Select the **+ Create a resource**.
 1. In the search area type: **DNS zone**, then select search.
 1. When presented with the Azure DNS page, select **Create**.
