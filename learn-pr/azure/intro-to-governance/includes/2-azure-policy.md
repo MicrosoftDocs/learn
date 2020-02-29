@@ -65,7 +65,7 @@ Here is an example of a Compute policy that only allows specific virtual machine
 }
 ```
 
-Notice the `[parameters('listofAllowedSKUs')]` value; this is a _replacement token_ that will be filled in when the policy definition is applied to a scope. When a parameter is defined, it's given a name and optionally given a value.
+Notice the `[parameters('listofAllowedSKUs')]` value; this value is a _replacement token_ that will be filled in when the policy definition is applied to a scope. When a parameter is defined, it's given a name and optionally given a value.
 
 ### Applying Azure policy
 
