@@ -30,7 +30,7 @@ To use Azure AD effectively, you need to understand some key Active Directory te
 
 Here's an explanation of some of those terms: 
 
-|Terms|Description|
+|Term|Description|
 |---------|---------|
 |Identity|Something that has to be identified and authenticated. An identity is typically a user who has username and password credentials, but the term can also apply to applications or services.|
 |Account|An identity and its associated data. An account can't exist without an identity.|
