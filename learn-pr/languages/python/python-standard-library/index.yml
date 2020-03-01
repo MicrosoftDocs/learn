@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.languages.python-standard-library
+metadata:
+  title: Import Standard Library Modules to add features Python programs
+  description: Explore the Python Standard Library, adding a module to your program, and downloading third-party packages.
+  ms.date: 02/19/2020
+  author: bobtabor-msft
+  ms.author: rotabor
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Import Standard Library Modules to add features Python programs
+summary: 
+abstract: |
+  In this module, you will:
+  - Explore the Python Standard Library
+  - Add the `include` statement to tell the Python compiler which modules you will use in your code
+  - Use the pip utility to download third-party open source packages
+prerequisites: |
+  - You should have your Python development environment setup.
+  - You should understand basic data types like strings and `int`, how to create, set and get values from a variable, and so on.
+  - Experience calling methods using the member access operator `.` and passing arguments to functions.
+ratingEnabled: true
+iconUrl: /learn/achievements/python-standard-library.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- vs
+units:
+- learn.languages.python-standard-library.introduction
+- learn.languages.python-standard-library.overview-standard-library
+- learn.languages.python-standard-library.exercise-include
+- learn.languages.python-standard-library.exercise-pip
+- learn.languages.python-standard-library.knowledge-check
+- learn.languages.python-standard-library.summary
+
+badge:
+  uid: learn.languages.python-standard-library.badge
