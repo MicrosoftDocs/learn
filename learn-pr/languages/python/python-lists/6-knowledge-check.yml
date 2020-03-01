@@ -40,7 +40,7 @@ quiz:
       isCorrect: false
       explanation: "There is no `del()` function."
     - content: "clear()"
-      isCorrect: true
+      isCorrect: false
       explanation: "The clear() function removes all the items."
   - content: "What's the easiest way to tell if a value belongs to a list?"
     choices:
