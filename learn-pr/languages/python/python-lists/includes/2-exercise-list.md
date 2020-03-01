@@ -2,32 +2,17 @@ A list allows you to collect data together into a single data structure.  The it
 
 In this exercise, you'll work with lists of data.  There are other similar data structures that we'll explore in other modules like the set, dictionary, tuple, and range.
 
-### Step 1 -Create a new python code file.
+### Step 1 - Create a new working folder and python code file.
 
-Using the techniques you learned in previous modules, create a new folder for your work in this module, then add a new code file in that folder.  For example, you might create the following folder structure:
+Using the techniques you learned in previous modules, create a new folder for your work in this module.  For example, you might create a folder named `python-lists`.
 
-```
-c:\python\numeric-operations-determine-datatypes\
-```
+Inside that folder, create a file for this exercise.  For example, you might create a file named `exercise1.py`.
 
-Inside that folder, you create a file for this exercise.  For example, you might create a file named:
-
-```
-exercise1.py
-```
-
-When it's time to execute your code in the steps of the exercises, you can use the Python Tools for Visual Studio Code integration by selecting the green arrow, or you can use a command in the integrated terminal like:
-
-```dos
-py exercise1.py
-```
-... or ...
-
-```bash
-python3 exercise1.py
-```
+When it's time to execute your code in the steps of the exercises, you can use the Python Tools for Visual Studio Code integration by selecting the green arrow, or you can use a command in the integrated terminal using techniques we learned about in previous modules.
 
 ### Step 2 - Add code to create a list of values.
+
+Write code to create a list of colors, then print the list and its type to the console.  Add the code from the following code listing to your new exercise file:
 
 ```python
 colors = ['red', 'green', 'blue', 'yellow', 'orange', 'purple', 'brown']
@@ -97,7 +82,7 @@ Last item of the list: brown
 Next to last item in the list: purple
 ```
 
-if you attempt to access an element using an index that does not exist in your list like so:
+If you attempt to access an element using an index that does not exist in your list like so:
 
 ```python
 colors = ['red', 'green', 'blue']

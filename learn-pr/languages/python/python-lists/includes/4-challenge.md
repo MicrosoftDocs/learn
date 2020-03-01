@@ -1,10 +1,10 @@
 Code challenges throughout these modules will reinforce what you've learned and help you gain some confidence before continuing on.
 
-### Step 1: Delete all of the code in the .NET Editor from the earlier exercise.
+### Step 1 - Add a new file for this challenge to the working folder.
 
-Select all of the code in the .NET Editor then select the `del` or backspace key to delete it.
+Assuming you're continuing from the previous unit, use the techniques you learned in previous modules to add a new code file in the current folder dedicated to this module.  For example, you might create a file named `challenge1.py`.
 
-### Step 2: Write code to create a list containing a standard deck of cards.
+### Step 2 - Write code to create a list containing a standard deck of cards.
 
 Using the technique from the previous unit to create every combination of suit and rank to create an entire set of 52 cards.  Instead of just printing the value of the card, add the card to a list that represents a deck of cards.
 
@@ -14,7 +14,7 @@ When you're complete, display the number of cards in the deck using the function
 There are 52 cards in the deck.
 ```
 
-### Step 3: Write code to randomly choose five cards from the deck and add to a player's hand.
+### Step 3 - Write code to randomly choose five cards from the deck and add to a player's hand.
 
 Next, create a second list that will contain the result of a "deal" ... to simulate dealing five random cards, use the appropriate method to choose a card.  Make sure you add the card to the list representing the player's hand, and remove it from the list representing the deck.
 
