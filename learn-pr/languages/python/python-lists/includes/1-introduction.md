@@ -12,7 +12,7 @@ In this module, you will:
 
 - Create lists containing related data.
 - Get an item or a subset of items from the list using indices and slices.
-- Add and remove items from the list and other list related actions using helper functions.
+- Add and remove items from the list and other list-related actions using helper functions.
 - Iterate through the list using the `for` iteration statement.
 
 ## Prerequisites:

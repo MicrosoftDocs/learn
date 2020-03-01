@@ -1,4 +1,4 @@
-Most collections are iterable, meaning, they have the internal implemenation that allows you to iterate through each item in the collection (in this module, a Python list) one by one using a `for` statement.
+Most collections are iterable, meaning, they have the internal implementation that allows you to iterate through each item in the collection (in this module, a Python list) one by one using a `for` statement.
 
 ### Step 1 - Add a new file for this exercise to the working folder.
 
@@ -10,7 +10,7 @@ exercise2.py
 
 ### Step 2 - Add code to use the `in` and `not in` to test a value for inclusion in a list.
 
-The `in` keyword will allow us to iterate through each item in a list.  However, we can use it as a stand alone operator to test whether an item belongs to a list.  What if we want to know if a certain number is part of a list of numbers?  We could iterate through each number, then use an `if` statement to see if we find the value.  A better approach would be to simply use the `in` or `not in` operators to test the item for inclusion.
+The `in` keyword will allow us to iterate through each item in a list.  However, we can use it as a stand-alone operator to test whether an item belongs to a list.  What if we want to know if a certain number is part of a list of numbers?  We could iterate through each number, then use an `if` statement to see if we find the value.  A better approach would be to simply use the `in` or `not in` operators to test the item for inclusion.
 
 Add the following code to your new code file:
 
@@ -39,7 +39,7 @@ The `for` statement allows us to iterate through each item in a list.  There are
 - the variable name that will hold the next item in the list.  This variable will be available in the code block below.
 - the `in` keyword
 - the variable name of the list
-- the colon symbol `:` which terminates the statement
+- the colon symbol `:`, which terminates the statement
 
 What comes after the `for` statement is just as important.  You define a code block that will be executed for each item in the list.  The current item's value will be set to a variable in the `for` statement, and will be available in the body of the code block.
 
@@ -91,7 +91,7 @@ When you execute the code, you should see the following output:
 
 ### Step 6 - Comment out the previous code and add code that utilizes an `else` statement.
 
-If you want to execute code only after each item in the list has been processed successfully (and you did not break out of the loop) then you can use the `else` statement.  In the example below, we'll only print the phrase `No numbers greater than 90` if each number in our random list of five numbers is below the value `90`.
+If you want to execute code only after each item in the list has been processed successfully (and you did not break out of the loop), then you can use the `else` statement.  In the example below, we'll only print the phrase `No numbers greater than 90` if each number in our random list of five numbers is below the value `90`.
 
 Comment out the code from the previous step and add the following code listing:
 
@@ -123,7 +123,7 @@ When you execute the code, you should see the following output (given that the n
 No numbers greater than 90
 ```
 
-If, however, one of the random numbers is 90 or greater, you would see the following output (given that the numbers generated will be random):
+However, if one of the random numbers is 90 or greater, you would see the following output (given that the numbers generated will be random):
 
 ```output
 37
@@ -238,7 +238,7 @@ This technique will come in handy when we work on the challenge later in this mo
 
 ### Step 9 - Comment out the previous code and add code that makes random choices from a list.
 
-You may want to retrieve a sampling of all the values in a list.  Using the `random` module, you can call the `choice()` function to randomly select a single items from a list, or the `choices()` function to randomly select a number of items from a list.
+You may want to retrieve a sampling of all the values in a list.  Using the `random` module, you can call the `choice()` function to randomly select a single item from a list, or the `choices()` function to randomly select a number of items from a list.
 
 Comment out the code from the previous step and add the following code listing:
 

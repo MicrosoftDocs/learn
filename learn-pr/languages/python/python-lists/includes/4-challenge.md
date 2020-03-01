@@ -24,7 +24,7 @@ Before simulating the deal, print the message:
 Dealing ...
 ```
 
-After simulating the deal, print out the number of cards in the list representing the deck, and print out the cards in the player's hand.
+After simulating the deal, print out the number of cards in the list representing the deck.  Finally, print out the cards in the player's hand.
 
 When complete, you should see the following output (given that each time there's likely to be different randomly dealt cards):
 

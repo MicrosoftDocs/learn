@@ -1,4 +1,4 @@
-A list allows you to collect data together into a single data structure.  The items in the list can be of any data type.  You can add and remove items in a number of ways.  You can reference single items or slices (sub-lists) of items.  You can loop through each item in a list, which we'll learn about in the next unit.  Lists are one of the most popular ways to manage related data in your applications.
+A list allows you to collect data together into a single data structure.  The items in the list can be of any data type.  You can add and remove items in a number of ways.  You can reference single items or slices (sublists) of items.  You can loop through each item in a list, which we'll learn about in the next unit.  Lists are one of the most popular ways to manage related data in your applications.
 
 In this exercise, you'll work with lists of data.  There are other similar data structures that we'll explore in other modules like the set, dictionary, tuple, and range.
 
@@ -20,6 +20,11 @@ When it's time to execute your code in the steps of the exercises, you can use t
 
 ```dos
 py exercise1.py
+```
+... or ...
+
+```bash
+python3 exercise1.py
 ```
 
 ### Step 2 - Add code to create a list of values.
@@ -45,21 +50,21 @@ sundry = ['John', 3.14, 7, False]
 print(sundry)
 print(type(sundry))
 ```
-If we were to run the code, the output would be as we expect: each value in the list is unchanged, and the data type is still `list`:
+If you execute the code, the output would be as we expect: each value in the list is unchanged, and the data type is still `list`:
 
 ```output
 ['John', 3.14, 7, False]
 <class 'list'>
 ```
 
-While it is possible to add lots of different types of data into a list, it's usually not preferable or practical.  When building real programs, you typically want to keep items collected into a list that share some common purpose or use.  For this reason, we'll be using the `colors` list throughout the remainder of this exercise.
+While it is possible to add lots of different types of data into a list, typically it's not preferable or practical.  When building real programs, you typically want to keep items collected into a list that share some common purpose or use.  For this reason, we'll be using the `colors` list throughout the remainder of this exercise.
 
 You can create an empty list like so:
 
 ```python
 my_list = []
 ```
-This comes in handy when you can't initialize your list with values and must add elements using logic in your program.  We'll see how to do this in an upcoming step.
+Creating an empty list comes in handy when you can't initialize your list with values and must add elements using logic in your program.  We'll see how to do this in an upcoming step.
 
 
 ### Step 3 - Update the code example to access individual elements using an index.
@@ -134,7 +139,7 @@ print('\nPrint a slice, from the 4th from the end up until the last item:')
 print(colors[-4:-1])
 ```
 
-As mentioned in the first `print()` statement, the value on the left of the colon symbol `:` is INCLUSIVE, meaning that the slice will include the element at that index.  The value on the right of the right of the colon symbol `:` is EXCLUSIVE, meaning that the slice will not contain the element at that index.
+As mentioned in the first `print()` statement, the value on the left of the colon symbol `:` is INCLUSIVE, meaning that the slice will include the element at that index.  The value on the right side of the colon symbol `:` is EXCLUSIVE, meaning that the slice will not contain the element at that index.
 
 If you do not define an index on the left of the colon symbol `:`, then you are stating that you want the slice to start at the beginning of the list.  If you do not define an index on the right of the colon symbol `:`, then you are stating that you want the slice to continue to the end of the list.
 
@@ -159,7 +164,7 @@ Print a slice, from the 4th from the end up until the last item:
 
 ### Step 4 - Comment out the code added in the previous step and add code to reverse and sort the list.
 
-Just like other data types we've worked with in previous modules, lists have several helper functions that make certain operations on the list itself very easy.
+Just like other data types we've worked with in previous modules, lists have several helper functions that make it easy to perform certain operations on the list itself.
 
 Comment out the code you added in Step 3, then add the following code to reverse the order of the list and sort the list alphabetically.
 
@@ -182,7 +187,7 @@ When you execute the code, you should see the following output:
 
 ### Step 5 - Comment out the code added in the previous step and add code to treat the list like a queue.
 
-A queue is a special term in programming that refers to a list that stores items in the order in which they were added.  This is useful when you need to perform some calculation logic on many items in a specific order.  Once added to the list, you remove an item for processing one by one.  A "pop" operation refers to the act of removing an item from the queue for processing.  You can remove an item from the beginning of the list ("first in, first out", or FIFO) or from the end of the list ("last in, first out", or LIFO).
+A queue is a special term in programming that refers to a list that stores items in the order in which they were added.  Queues are useful when you need to perform some calculation logic on many items in a specific order.  Once added to the list, you remove an item for processing one by one.  A "pop" operation refers to the act of removing an item from the queue for processing.  You can remove an item from the beginning of the list ("first in, first out", or FIFO) or from the end of the list ("last in, first out", or LIFO).
 
 The `pop()` helper function allows you to select an item from the list using its index.  So, `0` is the first item and `-1` is the last item.
 
@@ -209,7 +214,7 @@ popped red
 
 If you simply need to manage the items in the list, you can use the `append()` and `remove()` helper functions.
 
-Comment out the code you added in step 5, the add the following code:
+Comment out the code you added in step 5, then add the following code:
 
 ```python
 print(colors)
@@ -232,7 +237,7 @@ When you execute the code, you should see the following output:
 ['red', 'green', 'blue', 'purple', 'brown', 'black', 'white']
 ```
 
-If you were to attempt to remove an item that does not exist in the list like so:
+If you attempt to remove an item that does not exist in the list like so:
 
 ```python
 colors.remove('whatever')
@@ -247,7 +252,7 @@ ValueError: list.remove(x): x not in list
 
 If you have a second list that you want to combine with a first list, you can use the `extend()` helper function.
 
-Comment out the code you added in step 6, the add the following code:
+Comment out the code you added in step 6, then add the following code:
 
 ```python
 new_colors = ['lime', 'gray']
@@ -267,7 +272,7 @@ When you execute the code, you should see the following output:
 
 If you want to remove all items from the list, call the `clear()` function.
 
-Comment out the code you added in step 6, the add the following code:
+Comment out the code you added in step 6, then add the following code:
 
 ```python
 colors.clear()
@@ -282,8 +287,8 @@ When you execute the code, you should see the following output:
 
 ## Recap
 
-- Lists are a data structures that are intended to collect related data in your programs.  The data can be of any data type, but usually elements will be the same data type since they will serve a similar purpose in your programs.
+- Lists are data structures that are intended to collect related data in your programs.  The data can be of any data type, but usually elements will be the same data type since they will serve a similar purpose in your programs.
 - Create a list using square brackets `[]` separating each item with a comma.
 - Access individual elements inside the list using square brackets and a zero-based index.  You can access the first item in the list using index `0`.  You can access the last item in the list using the index `-1`.  You can access items relative to the end of the list using other negative numbers as indices.
 - Create slices using square brackets `[]` and a colon separating the beginning of the slice on the left side of the colon, and the end of the slide on the right side of the colon symbol.
-- Use helper functions like `pop()`, `append()`, `remove()`, `extend()` and `clear()` to change the items in the list.
+- Use helper functions like `pop()`, `append()`, `remove()`, `extend()`, and `clear()` to change the items in the list.
