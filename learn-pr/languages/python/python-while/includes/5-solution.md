@@ -15,7 +15,7 @@ else:
     print(f'You guessed it in {count} tries!')
 ```
 
-This code is merely "*one possible solution*".  As long as your solution produces the same result as the challenge using the `while` statement, you were successful.
+This code is merely *one possible solution*.  As long as your solution produces the same result as the challenge using the `while` statement, you were successful.
 
 If you were successful, congratulations!  Continue on to the knowledge check in the next unit.
 

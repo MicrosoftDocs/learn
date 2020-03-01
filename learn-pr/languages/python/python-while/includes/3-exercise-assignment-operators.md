@@ -86,6 +86,8 @@ When you execute the code, you should see the following output:
 
 Admittedly, there are several additional assignment operators, however their functionality may be less useful in real world programs.  Regardless, here's a table of some of the other assignment operators available in Python.
 
+| Operator | Purpose |
+| --- | --- |
 |=|assign|
 |+=|add then assign|
 |-=|subtract then assign|
