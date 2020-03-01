@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.languages.python-lists.knowledge-check
-title: Knowledge Check
+title: Knowledge check
 metadata:
   title: Check your knowledge
   description: Review what you've learned
@@ -9,7 +9,6 @@ metadata:
   ms.author: rotabor
   ms.topic: interactive-tutorial
   ms.prod: learning-languages
-  ROBOTS: NOINDEX
 durationInMinutes: 3
 quiz:
   title: Check your knowledge
