@@ -21,6 +21,8 @@ print(colors)
 print(type(colors))
 ```
 
+When you execute the code, you should see the following output:
+
 ```output
 ['red', 'green', 'blue', 'yellow', 'orange', 'purple', 'brown']
 <class 'list'>

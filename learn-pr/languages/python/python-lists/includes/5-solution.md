@@ -27,7 +27,7 @@ print('Player has the following cards in their hand:')
 print(hand)
 ```
 
-This code is merely "*one possible solution*".  As long as you matched the output, and each time you execute the program you get a different set of cards dealt to the player, then you were successful.
+This code is merely *one possible solution*.  As long as you matched the output, and each time you execute the program you get a different set of cards dealt to the player, then you were successful.
 
 If you were successful, congratulations!  Continue on to the knowledge check in the next unit.
 
