@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Import Standard Library Modules to add features Python programs
-summary: 
+summary: Explore the Python Standard Library, adding a module to your program, and downloading third-party packages.
 abstract: |
   In this module, you will:
   - Explore the Python Standard Library
