@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.python-while.exercise-while
+title: Exercise - the `while` statement
+metadata:
+  title: Exercise - the `while` statement
+  description: Add loops that continue to execute a code block as long as a condition evaluates to `True`.
+  ms.date: 02/19/2020
+  author: bobtabor-msft
+  ms.author: rotabor
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-exercise-while.md)]
