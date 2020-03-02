@@ -49,6 +49,8 @@ fourth#fifth#sixth!
         sixth
 ```
 
+This is one possible solution.  As long as you got the desired output, you were successful.
+
 If you were successful, congratulations!  Continue on to the knowledge check in the next unit.
 
 > [!IMPORTANT]

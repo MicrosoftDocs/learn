@@ -6,11 +6,7 @@ In a recent version of Python (3.6), the developers simplified the `format()` me
 
 ### Step 1 - Create a new code file for this exercise.
 
-Assuming you're continuing from the previous unit, use the techniques you learned in previous modules to add a new code file in the current folder dedicated to this module.  For example, you might create the following file:
-
-```dos
-exercise3.py
-```
+Assuming you're continuing from the previous unit, use the techniques you learned in previous modules to add a new code file in the current folder dedicated to this module.  For example, you might create a new file `exercise3.py`.
 
 ### Step 2 - Add the following code to illustrate the `format()` function's merge feature.
 
@@ -75,7 +71,6 @@ When you execute the code, you should see the following output:
 Hello, World.
 Count to 10.  Multiply by 3.14.
 ```
-
 
 ### Step 4 - Comment out the previous code and add code to evaluate simple expressions in the replacement field of an f-string.
 

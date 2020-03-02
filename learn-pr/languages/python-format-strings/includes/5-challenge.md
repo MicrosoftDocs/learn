@@ -2,11 +2,7 @@ Code challenges throughout these modules will reinforce what you've learned and 
 
 ### Step 1 - Add a new file in your working directory for this challenge.
 
-For example, you might create the following file:
-
-```dos
-challenge.py
-```
+Assuming you're continuing from the previous unit, use the techniques you learned in previous modules to add a new code file in the current folder dedicated to this module.  For example, you might create a file named `challenge.py`.
 
 ### Step 2 - Use string manipulation and formatting techniques you learned to create the challenge output.
 

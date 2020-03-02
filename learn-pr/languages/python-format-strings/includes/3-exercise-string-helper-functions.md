@@ -4,13 +4,11 @@ There are many other helper methods available to strings, and in this exercise w
 
 ### Step 1 - Create a new code file for this exercise.
 
-Assuming you're continuing from the previous unit, use the techniques you learned in previous modules to add a new code file in the current folder dedicated to this module.  For example, you might create the following file:
-
-```dos
-exercise2.py
-```
+Assuming you're continuing from the previous unit, use the techniques you learned in previous modules to add a new code file in the current folder dedicated to this module.  For example, you might create a new file named `exercise2.py`.
 
 ### Step 2 - Add code to call the `capitalize()` function using three different techniques.
+
+Add the code in the following listing to the new file:
 
 ```python
 message = str.capitalize('first message')
