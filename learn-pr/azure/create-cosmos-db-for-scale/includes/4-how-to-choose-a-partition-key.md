@@ -33,4 +33,3 @@ For each Azure Cosmos DB container, you should specify a partition key that sati
 - Have a high cardinality. This allows data to distribute evenly across all physical partitions.
 - Evenly distribute requests. Remember the total number of RU/s is evenly divided across all physical partitions.
 - Evenly distribute storage. Each partition can grow up to 10 GB in size.
-
