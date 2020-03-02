@@ -33,13 +33,13 @@ If you stopped typing, you should see the Intellisense window displaying all of 
 
 You can learn a lot about the functionality of a module by merely perusing its functions.  Locate the `randint` function by selecting the <kbd>up arrow</kbd> and <kbd>down arrow</kbd> keys.  Once you find it, what you see in your copy of Visual Studio Code should match the following screenshot:
 
-![Screenshot of Visual Studio Code Intellisense locating the random module's randint function.](../media/3-exercise-include-1.jpg)
+![Screenshot of Visual Studio Code Intellisense locating the random module's randint function.](../media/3-exercise-include-1.png)
 
 Now select the <kbd>enter</kbd> or <kbd>tab</kbd> keys to automatically type the remainder of the function name `randint` for you.
 
 Next, type the opening parenthesis symbol `(` to display Intellisense again.  This time, it displays the fact that the `randint` function takes two input arguments that define the range, "including both endpoints".  
 
-![Screenshot of Visual Studio Code Intellisense displaying input argument help for randint function.](../media/3-exercise-include-2.jpg)
+![Screenshot of Visual Studio Code Intellisense displaying input argument help for randint function.](../media/3-exercise-include-2.png)
 
 When defining a range of values in programming, "inclusive" usually means that the value you supply is in bounds.  "Exclusive" means the value you supply is out of bounds.  So, if we want a random value between 1 and 10, and short form Intellisense documentation says we can define those by passing in the values `1` and `10` as arguments.
 

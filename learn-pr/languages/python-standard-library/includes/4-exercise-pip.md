@@ -66,7 +66,7 @@ print(message)
 ```
 When you execute the code, you should see the following output:
 
-![Screenshot of Visual Studio Code's terminal displaying result of the sample code with an emoji sun.](../media/4-exercise-pip-1.jpg)
+![Screenshot of Visual Studio Code's terminal displaying result of the sample code with an emoji sun.](../media/4-exercise-pip-1.png)
 
 
 ### Recap
