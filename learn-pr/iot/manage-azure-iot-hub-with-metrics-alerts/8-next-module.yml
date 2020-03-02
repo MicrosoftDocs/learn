@@ -144,7 +144,7 @@ quiz:
     - content: 'The lifetime of a self-signed certificate is often set at one year, which may interrupt your production process.'
       isCorrect: false
       explanation: Setting a short expiry time might well become a nuisance. A short expiry time isn't the only weakness.
-    - content: 'Self-signed certificates aren't trusted by other apps, operating systems, or cloud resources.'
+    - content: "Self-signed certificates aren't trusted by other apps, operating systems, or cloud resources."
       isCorrect: false
       explanation: Lack of trust isn't the only weakness.
     - content: 'Self-signed certificates are sometimes referred to as "snake oil certificates", to express their untrustworthiness.'

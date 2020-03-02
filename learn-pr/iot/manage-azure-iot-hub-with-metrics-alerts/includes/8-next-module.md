@@ -340,7 +340,7 @@ Great, you now have a root certificate, a validation certificate, and three leaf
 
 In this unit, we create the code running on each sensor device.
 
-One of the goals is to make the code as identical as possible for each device, so minimalizing human involvement. The code will require one tweak as we prepare it for a second device, the path to the leaf certificate needs to be unique for each device. Unique in this case means changing a "1" to a "2" or "3". This change is so minor it could easily be automated in a production environment.
+One of the goals is to make the code as identical as possible for each device, so minimizing human involvement. The code will require one tweak as we prepare it for a second device, the path to the leaf certificate needs to be unique for each device. Unique in this case means changing a "1" to a "2" or "3". This change is so minor it could easily be automated in a production environment.
 
 The code is written in C#, and you can choose Visual Studio, or Visual Studio Code, as your development environment.
 
@@ -356,7 +356,7 @@ The code is written in C#, and you can choose Visual Studio, or Visual Studio Co
       private static string s_certificateFileName = "C:\\Users\\<your user name>\\Documents\\cheesecave certs\\new-device.cert1.pfx";
 ```
 
-1. Set the app running?
+1. Set the app running. In Visual Studio, select Debug/Start without Debugging. In Visual Studio Code, enter `dotnet run` in the terminal.
 
     ![description](../media/iot-hub-dps-device1.png)
 
@@ -364,7 +364,7 @@ The code is written in C#, and you can choose Visual Studio, or Visual Studio Co
 
 1. Repeat all the steps in the **Create a project for a simulated device** section.
 1. Change the leaf name from `new-device.cert1.pfx` to `new-device.cert2.pfx`.
-1. Set the app running?
+1. Set the app running.
 
     ![description](../media/iot-hub-dps-device2.png)
 
@@ -372,7 +372,7 @@ The code is written in C#, and you can choose Visual Studio, or Visual Studio Co
 
 1. Repeat all the steps in the **Create a project for a simulated device** section.
 1. Change the leaf path from `new-device.cert1.pfx` to `new-device.cert3.pfx`.
-1. Set the app running?
+1. Set the app running.
 
     ![description](../media/iot-hub-dps-device3.png)
 
@@ -449,14 +449,16 @@ In this module, you learned how to:
 ## Next steps
 
 Learn about storing passwords and certificates:
+
 - [Azure Key Vault](https://azure.microsoft.com/en-us/services/key-vault/)
 - [Azure Dedicated HSM](https://azure.microsoft.com/en-us/services/azure-dedicated-hsm/)
 
 Learn more about IoT Hub:
+
 - [IoT Hub Documentation](https://docs.microsoft.com/en-us/azure/iot-hub/)
 
 Learn more about IoT Hub devices:
+
 - [Find your IoT device](https://catalog.azureiotsolutions.com/)
 
 To complete this module, there's a slightly harder-than-usual knowledge check. Good luck with it!
-
