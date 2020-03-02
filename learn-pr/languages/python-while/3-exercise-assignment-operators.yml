@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.languages.python-while.exercise-assignment-operators
-title: Exercise - assignment operators
+title: Exercise - Assignment operators
 metadata:
-  title: Exercise - assignment operators
+  title: Exercise - Assignment operators
   description: Use special operators to perform a mathematical operation and assignment in one step.
   ms.date: 02/19/2020
   author: bobtabor-msft
