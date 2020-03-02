@@ -59,8 +59,10 @@ When it executes, you'll see two lines appear.
 The first line in the Terminal window is the command to compile and execute the code file.  
 
 ```output
-C:\python\hello>C:/Users/rotabor/AppData/Local/Programs/Python/Python38-32/python.exe c:/python/hello/hello.py
+C:\python\hello>C:/Users/<user>/AppData/Local/Programs/Python/Python38-32/python.exe c:/python/hello/hello.py
 ```
+> [!NOTE] 
+> The output will be different depending on your operating system.  Also, from Windows, your path will be different.  Substitute `<user>` for your user name.
 
 The following line printed to the Terminal window that appears below the code window:
 
