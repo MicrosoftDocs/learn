@@ -13,19 +13,19 @@ Once they've registered, each time they sign into a service or app that requires
 
 ## Azure Authentication Methods
 
-As we saw earlier, there are several possible authentication methods that an administrator can setup. Some of these also support Self-Service Password Reset (SSPR) which allows users to reset their password by supplying a secondary form of authentication. This is a service you can couple with Azure MFA to ease the burden on IT staff.
+As we saw earlier, there are several possible authentication methods that an administrator can set up. Some of these also support Self-Service Password Reset (SSPR) which allows users to reset their password by supplying a secondary form of authentication. You can couple this service with Azure MFA to ease the burden on IT staff.
 
 The following table lists the authentication methods and the services that can use them.
 
 | Authentication method  | Services    |
 |------------------------|-------------|
-| **Password**           | Azure MFA and SSPR |
+| **Password** | Azure MFA and SSPR |
 | **Security questions** | SSPR |
-| **Email address**      | SSPR |
+| **Email address** | SSPR |
 | **Microsoft Authenticator app** |Azure MFA and SSPR |
 | **OATH hardware token** | Azure MFA and SSPR |
 | **Text message** | Azure MFA and SSPR |
-| **Voice call**   | Azure MFA and SSPR |
+| **Voice call** | Azure MFA and SSPR |
 | **App passwords** | Azure MFA in certain cases |
 
 Let's explore these in a bit more detail.
