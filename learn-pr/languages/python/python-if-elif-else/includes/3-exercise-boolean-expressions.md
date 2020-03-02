@@ -2,8 +2,6 @@ As we learned in the previous unit, a Boolean value can only be one of two value
 
 A Boolean expression is any code that returns a Boolean value.
 
-## Exercise - Boolean Expressions
-
 In this exercise, you will work with Boolean values and Boolean expressions, providing you a richer language to express your logic.
 
 ### Step 1 - Create a new python code file.
