@@ -49,15 +49,15 @@ quiz:
 
   - content: 'All devices connecting to Azure DPS will be configured with this Global Device Endpoint?'
     choices:
-    - content: 'global.azure-devices-provisioning.net'
-      isCorrect: true
-      explanation: All IoT devices connected to Azure use this endpoint.
     - content: 'The setting for ID Scope'
       isCorrect: false
       explanation: This value identifies the DPS service and IoT Hub.
+    - content: 'global.azure-devices-provisioning.net'
+      isCorrect: true
+      explanation: All IoT devices connected to Azure use this endpoint.
     - content: 'Your DPS service endpoint'
       isCorrect: false
-      explanation: This doesn't apply to all devices.
+      explanation: This endpoint doesn't apply to all devices.
     - content: 'The setting for SecurityProviderX509'
       isCorrect: false
       explanation: This variable is use in the code, and isn't related to a global endpoint.
@@ -108,7 +108,7 @@ quiz:
       isCorrect: false
       explanation: Not quite, the best storage for certificates and passwords is reversed in this answer.
 
-  - content: 'X.509 certificates validate your identify, and secure your data through encryption. What is one disadvantage of using these certificates?'
+  - content: 'X.509 certificates validate your identity, and secure your data through encryption. What is one disadvantage of using these certificates?'
     choices:
     - content: 'The need to distribute public keys, or fingerprints, when creating valid key pairs.'
       isCorrect: false
@@ -138,16 +138,16 @@ quiz:
 
   - content: 'Take a guess at the weaknesses of self-signed certificates?'
     choices:
-    - content: 'Low-level hash or cypher technologies might have been used to create the certificates.'
+    - content: '1. Low-level hash or cypher technologies might have been used to create the certificates.'
       isCorrect: false
       explanation: Low-quality encryption may well be true of the free tools you might use to create the certificates. However, low-quality encryption isn't the only possible weakness.
-    - content: 'The lifetime of a self-signed certificate is often set at one year, which may interrupt your production process.'
+    - content: '2. The lifetime of a self-signed certificate is often set at one year, which may interrupt your production process.'
       isCorrect: false
       explanation: Setting a short expiry time might well become a nuisance. A short expiry time isn't the only weakness.
-    - content: "Self-signed certificates aren't trusted by other apps, operating systems, or cloud resources."
+    - content: "3. Self-signed certificates aren't trusted by other apps, operating systems, or cloud resources."
       isCorrect: false
       explanation: Lack of trust isn't the only weakness.
-    - content: 'Self-signed certificates are sometimes referred to as "snake oil certificates", to express their untrustworthiness.'
+    - content: '4. Self-signed certificates are sometimes referred to as "snake oil certificates", to express their untrustworthiness.'
       isCorrect: false
       explanation: The nickname is true, but nicknames aren't in themselves a weakness.
     - content: 'All the above.'
@@ -173,10 +173,10 @@ quiz:
       isCorrect: false
       explanation: Intermediate certificates can't be used to validate devices.
     - content: 'Root and intermediate certificates can only be used to sign other certificates. A leaf certificate can be used to validate multiple devices.'
-      isCorrect: true
+      isCorrect: false
       explanation: A leaf certificate can only validate one device.
     - content: 'A root, or intermediate, certificate can be used to sign other certificates. Only a leaf certificate can be used to validate a device.'
-      isCorrect: false
+      isCorrect: true
       explanation: One root certificate signing multiple leaf certificates is a good scenario for a DPS Group Enrollment.
 
 
