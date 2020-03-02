@@ -9,8 +9,8 @@
 
 1. After training is finished, select **Manage** in the top bar. The following options will appear on the left side of the window:
 
-    [!NOTE]
-    The categories on the left pane may change as the portals are updated.  As a result, the keys and endpoints may fall under a different category than the one listed here.
+    > [!NOTE]
+    > The categories on the left pane may change as the portals are updated.  As a result, the keys and endpoints may fall under a different category than the one listed here.
 
    - **Application information**
    - **Azure Resources**
