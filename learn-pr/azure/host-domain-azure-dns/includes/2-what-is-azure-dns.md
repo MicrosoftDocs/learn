@@ -1,4 +1,6 @@
-In this unit, you'll learn what DNS is and how it works. Then see what Azure DNS is, and why you would use it.
+Azure DNS enables you to host your DNS records for your domains on Azure infrastructure.
+
+In this unit, you'll learn what DNS is and how it works. Then learn about Azure DNS, and why you would use it.
 
 ## What is DNS?
 
@@ -8,8 +10,7 @@ Think of the DNS as a lookup table. It's much like using a phone book to find a 
 
 The DNS uses a global directory hosted on servers around the world. Microsoft is part of that network providing a DNS service through Azure DNS.
 
-> [!NOTE]
-> A DNS server is also known as a DNS name server, or just a name server.
+A DNS server is also known as a DNS name server, or just a name server.
 
 ## How does DNS work
 
@@ -26,17 +27,17 @@ The DNS servers are assigned when requesting an IP address from your DHCP server
 
 ### Operation of a DNS server
 
-Here is a simplified overview of a DNS server when resolving a domain name look up request:
+Here is a simplified overview of a DNS server when it resolves a domain name lookup request:
 
-- Check to see if the domain name is stored in the short-term cache. If so, the DNS server can resolve the domain request.
+- Check to see if the domain name is stored in the short-term cache. If so, the DNS server resolves the domain request.
 - If the domain isn't in the cache, it contacts one or more DNS servers on the web to see if they have a match. When found, it updates the local cache and resolves the request.
-- If the domain   after a reasonable number of DNS checks, it responds with a "domain cannot be found" (404) error.
+- If the domain isn't found after a reasonable number of DNS checks,  the DNS server responds with a "domain cannot be found" (404) error.
 
 ### IPv4 and IPv6
 
-Every computer, server, or network enabled device on your network has an Internet Protocol (IP) address. An IP address, within your domain, will be unique. There are two standards of IP address: IPv4 and IPv6.
+Every computer, server, or network enabled device on your network has an Internet Protocol (IP) address. An IP address, within your domain, is unique. There are two standards of IP address: IPv4 and IPv6.
 
-- **IPv4** is composed of four numbers, in the range 0 to 255, separated by a dot. For example: 127.0.0.1. Today, IPv4 is the most commonly used standard. Yet, with the increase in IoT devices, the IPv4 standard will eventually be unable to keep up.
+- **IPv4** is composed of four numbers, in the range 0 to 255, separated by a dot, for example: 127.0.0.1. Today, IPv4 is the most commonly used standard. Yet, with the increase in IoT devices, the IPv4 standard will eventually be unable to keep up.
 
 - **IPv6** is a relatively new standard and will eventually replace IPv4. It's made up of eight groups of hexadecimal numbers, each separated by a colon. For example: fe80:11a1:ac15:e9gf:e884:edb0:ddee:fea3.
 
@@ -86,7 +87,7 @@ Some record types support the concept of record sets, or resource record sets. A
 
 Microsoft provides a globally distributed name server infrastructure for hosting and managing your domains called Azure DNS. Built on Azure monitoring technology, it allows management of all your domains using your existing Azure credentials.
 
-The Azure DNS will act as the **start of authority** (SOA) for your domain.
+The Azure DNS acts as the **start of authority** (SOA) for the domain.
 
 At present, you can't use Azure DNS to register a domain name. You'll still need to use a third-party domain registrar to register future domains.
 
@@ -105,7 +106,7 @@ At this time, Azure DNS doesn't support Domain Name System Security Extensions o
 
 Azure DNS provides a number of security features:
 
-- Role-based access control, which gives fine-grained control for user access to Azure resources. You can monitor their usage, control the resources and services they have access to.
+- Azure role-based access control (RBAC), which gives fine-grained control for user access to Azure resources. You can monitor their usage, control the resources and services they have access to.
 - Activity logs, which let you track changes to resource and pinpoint where faults occurred.
 - Resource locking, which gives a greater level of control to restrict or remove access to resource groups, subscriptions, or any Azure resources.
 
