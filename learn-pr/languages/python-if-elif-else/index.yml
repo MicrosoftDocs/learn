@@ -29,7 +29,7 @@ products:
 - vs
 units:
 - learn.languages.python-if-elif-else.introduction
-- learn.languages.python-if-elif-else.exercise-if-elif-else
+- learn.languages.python-if-elif-else.exercise-branch-code
 - learn.languages.python-if-elif-else.exercise-boolean-expressions
 - learn.languages.python-if-elif-else.challenge
 - learn.languages.python-if-elif-else.solution

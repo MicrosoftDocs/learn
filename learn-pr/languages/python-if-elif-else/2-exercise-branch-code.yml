@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.languages.python-if-elif-else.exercise-if-elif-else
-title: Exercise - if ... elif ... else
+uid: learn.languages.python-if-elif-else.exercise-branch-code
+title: Exercise - Branch code with the if statement
 metadata:
-  title: Exercise - if ... elif ... else
+  title: Exercise - Branch code with the if statement
   description: Use Python's if statement to branch code execution based on Boolean expressions.
   ms.date: 02/18/2020
   author: bobtabor-msft
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 8
 content: |
-  [!include[](includes/2-exercise-if-elif-else.md)]
+  [!include[](includes/2-exercise-branch-code.md)]
