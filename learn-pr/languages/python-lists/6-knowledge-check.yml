@@ -15,15 +15,15 @@ quiz:
   questions:
   - content: "You have a five item list and you want to retrieve the last three items.  Which slice will accomplish that?"
     choices:
-    - content: "my_list[1:4]"
+    - content: "`my_list[1:4]`"
       isCorrect: false
-      explanation: "This will select the middle three items."
-    - content: "my_list[:2]"
+      explanation: "`my_list[1:4]` will select the middle three items."
+    - content: "`my_list[:2]`"
       isCorrect: false
-      explanation: "This will select the first two items."
-    - content: "my_list[:-3]"
+      explanation: "`my_list[:2]` will select the first two items."
+    - content: "`my_list[:-3]`"
       isCorrect: false
-      explanation: "This will select the first two items."
+      explanation: "`my_list[:-3]` will select the first two items."
     - content: "my_list[-3:]"
       isCorrect: true
       explanation: "Correct!"
