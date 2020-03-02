@@ -29,7 +29,7 @@ products:
 - vs
 units:
 - learn.languages.python-standard-library.introduction
-- learn.languages.python-standard-library.overview-standard-library
+- learn.languages.python-standard-library.overview
 - learn.languages.python-standard-library.exercise-include
 - learn.languages.python-standard-library.exercise-pip
 - learn.languages.python-standard-library.knowledge-check
