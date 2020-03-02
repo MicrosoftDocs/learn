@@ -36,16 +36,16 @@ quiz:
     choices:
     - content: 'Proof of Possession'
       isCorrect: true
-      explanation: Proof of Possession of the CA certificate is provided to DPS by uploading a certificate generated from the CA certificate with the verification code that was just generated within DPS. This is how you provide proof that you own the CA Certificate.
+      explanation: Proof of Possession of the CA certificate is provided to DPS by uploading a certificate generated from the CA certificate with the verification code that was generated within DPS. This process is how you provide proof that you own the CA Certificate.
     - content: 'Generate Verification Code'
       isCorrect: false
       explanation: Generating a verification code is part of the process, but not the name for the complete process.
     - content: 'Add certificate'
       isCorrect: false
-      explanation: Adding a certificate to a DPS service does not verify the certificate.
+      explanation: Adding a certificate to a DPS service doesn't verify the certificate.
     - content: 'Enrollment'
       isCorrect: false
-      explanation: Individual or group enrollments can be created, but this is not the verification process.
+      explanation: Individual or group enrollments can be created, but enrolling isn't the verification process.
 
   - content: 'All devices connecting to Azure DPS will be configured with this Global Device Endpoint?'
     choices:
@@ -57,35 +57,35 @@ quiz:
       explanation: Nope, this identifies the DPS service and IoT Hub.
     - content: 'Your DPS service endpoint'
       isCorrect: false
-      explanation: This does not apply to all devices.
+      explanation: This doesn't apply to all devices.
     - content: 'The setting for SecurityProviderX509'
       isCorrect: false
-      explanation: No, this variable is use in the code, and is not related to a global endpoint.
+      explanation: No, this variable is use in the code, and isn't related to a global endpoint.
 
   - content: 'Which allocation policy for Azure IoT DPS systems is the default?'
     choices:
     - content: 'Lowest latency: This policy assigns devices to the linked IoT Hub which will result in the lowest latency communications between device and IoT Hub.'
       isCorrect: false
-      explanation: Not the default. This might work well if several IoT Hubs are in your system.
+      explanation: Not the default. This policy might work well if several IoT Hubs are in your system.
     - content: 'Evenly weighted distribution: This policy evenly distributes devices across the linked IoT Hubs.'
       isCorrect: true
-      explanation: This is the default, and the right one to use with a single IoT Hub.
+      explanation: This policy is the default, and the right one to use with a single IoT Hub.
     - content: 'Static configuration: This policy requires a desired IoT Hub be listed in the enrollment entry for a device to be provisioned.'
       isCorrect: false
-      explanation: Not the default. This enables a specified IoT Hub to be used for any one device.
+      explanation: Not the default. This policy enables a specified IoT Hub to be used for any one device.
 
 
   - content: 'Each Group Enrollment requires one root X.509 certificate. What single certificate is chained to the root certificate?'
     choices:
     - content: 'A leaf certificate'
       isCorrect: false
-      explanation: No. Multiple leaf certificates can be created for one root certificate.
+      explanation: Multiple leaf certificates can be created for one root certificate.
     - content: 'An intermediate certificate'
       isCorrect: false
-      explanation: No. Multiple intermediate certificates can be created for one root certificate.
+      explanation: Multiple intermediate certificates can be created for one root certificate.
     - content: 'A Self-signed certificate'
       isCorrect: false
-      explanation: No. This is a mechanism for verifying the certificates.
+      explanation: Self-signing is a mechanism for verifying the certificates.
     - content: 'A Verification certificate'
       isCorrect: true
       explanation: Generating a verification code helps ensure proof of possession.
@@ -100,56 +100,56 @@ quiz:
       explanation: No, it isn't.
     - content: 'Both password and certificate could be held in a Hardware Security Module (HSM).'
       isCorrect: false
-      explanation: A Hardware Security Module is not the best location for a password.
+      explanation: A Hardware Security Module isn't the best location for a password.
     - content: 'Passwords and certificates are secure, and can be stored in the clear.'
       isCorrect: false
-      explanation: Please, no!
+      explanation: No!
     - content: 'The certificate pfx file could be held in an Azure Key Vault, and the password stored in a Hardware Security Module.'
       isCorrect: false
-      explanation: Not quite, the best storage for certificates and passwords are reversed in this answer.
+      explanation: Not quite, the best storage for certificates and passwords is reversed in this answer.
 
-  - content: 'X.509 certificates validate both your identify, and secures your data through encryption. What is one disadvantage of using these certificates?'
+  - content: 'X.509 certificates validate your identify, and secures your data through encryption. What is one disadvantage of using these certificates?'
     choices:
     - content: 'The need to distribute public keys, or fingerprints, when creating valid key pairs.'
       isCorrect: false
-      explanation: There is no need to distribute public keys with X.509 certification.
+      explanation: There's no need to distribute public keys with X.509 certification.
     - content: 'Authentication can be revoked.'
       isCorrect: false
-      explanation: This is an advantage, not a disadvantage, of X.509 certificates.
+      explanation: Revocation is an advantage, not a disadvantage, of X.509 certificates.
     - content: 'Lower level of security than public key encryption.'
       isCorrect: false
       explanation: No, the level of security is equal to, or greater than, public key encryption.
     - content: 'Requires a public-key infrastructure.'
       isCorrect: true
       explanation: This requirement can increase the initial cost of deployment.
-    - content: ' Use of these certificates is not scalable.'
+    - content: "Use of these certificates isn't scalable."
       isCorrect: false
       explanation: X.509 certificates are highly scalable.
     - content: 'Requires secret private keys for identity verification.'
       isCorrect: false
-      explanation: This is an advantage, not a disadvantage, of X.509 certificates.
+      explanation: Secret private keys are an advantage, not a disadvantage, of X.509 certificates.
     - content: 'Can be used for many purposes: access to servers, login attempts, single or multiple devices.'
       isCorrect: false
-      explanation: This is an advantage, not a disadvantage, of X.509 certificates.
+      explanation: Flexibility is an advantage, not a disadvantage, of X.509 certificates.
     - content: 'With leaf, intermediate, and root certificates, and several signing mechanisms, they are complex to understand and use.'
       isCorrect: false
-      explanation: There is a complexity to security, but this is not unique to X.509 certificates, and cannot be considered much of a disadvantage.
+      explanation: There's a complexity to security, but this complexity isn't unique to X.509 certificates, and can't be considered much of a disadvantage.
 
 
   - content: 'Take a guess at the weaknesses of self-signed certificates?'
     choices:
     - content: 'Low-level hash or cypher technologies might have been used to create the certificates.'
       isCorrect: false
-      explanation: This may well be true of the free tools you might use to create the certificates. But this is not the only weakness.
+      explanation: This may well be true of the free tools you might use to create the certificates. Low quality encryption isn't the only possible weakness.
     - content: 'The lifetime of a self-signed certificate is often set at one year, which may interrupt your production process.'
       isCorrect: false
-      explanation: Setting a short expiry time might well become a nuisance. But this is not the only weakness.
-    - content: 'Self-signed certificates are not trusted by other apps, operating systems, or cloud resources.'
+      explanation: Setting a short expiry time might well become a nuisance. A short expiry time isn't the only weakness.
+    - content: 'Self-signed certificates aren't trusted by other apps, operating systems, or cloud resources.'
       isCorrect: false
-      explanation: Of course not, why would they? But this is not the only weakness.
+      explanation: Lack of trust isn't the only weakness.
     - content: 'Self-signed certificates are sometimes referred to as "snake oil certificates", to express their untrustworthiness.'
       isCorrect: false
-      explanation: The nickname is true, but nicknames are not in themselves a weakness.
+      explanation: The nickname is true, but nicknames aren't in themselves a weakness.
     - content: 'All the above.'
       isCorrect: false
       explanation: Not quite.
@@ -165,13 +165,13 @@ quiz:
     choices:
     - content: 'A root, intermediate, or leaf certificate can be used to validate a device.'
       isCorrect: false
-      explanation: Root and intermediate certificates cannot be used to validate devices.
+      explanation: Root and intermediate certificates can't be used to validate devices.
     - content: 'A root, intermediate, or leaf certificate can be used to sign other certificates.  Only a leaf certificate can be used to validate a device.'
       isCorrect: false
-      explanation: Leaf certificates cannot be used to sign other certificates.
+      explanation: Leaf certificates can't be used to sign other certificates.
     - content: 'A root certificate can only be used to sign other certificates. An intermediate, or leaf, certificate can be used to validate devices.'
       isCorrect: false
-      explanation: Intermediate certificates cannot be used to validate devices.
+      explanation: Intermediate certificates can't be used to validate devices.
     - content: 'Root and intermediate certificates can only be used to sign other certificates. A leaf certificate can be used to validate multiple devices.'
       isCorrect: true
       explanation: A leaf certificate can only validate one device.
