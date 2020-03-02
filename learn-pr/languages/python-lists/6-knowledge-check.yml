@@ -15,32 +15,32 @@ quiz:
   questions:
   - content: "You have a five item list and you want to retrieve the last three items.  Which slice will accomplish that?"
     choices:
-    - content: "my_list[1:4]"
+    - content: "`my_list[1:4]`"
       isCorrect: false
-      explanation: "This will select the middle three items."
-    - content: "my_list[:2]"
+      explanation: "`my_list[1:4]` will select the middle three items."
+    - content: "`my_list[:2]`"
       isCorrect: false
-      explanation: "This will select the first two items."
-    - content: "my_list[:-3]"
+      explanation: "`my_list[:2]` will select the first two items."
+    - content: "`my_list[:-3]`"
       isCorrect: false
-      explanation: "This will select the first two items."
-    - content: "my_list[-3:]"
+      explanation: "`my_list[:-3]` will select the first two items."
+    - content: "`my_list[-3:]`"
       isCorrect: true
       explanation: "Correct!"
   - content: "Which of the following helper functions allow me to simulate a queue with my list?"
     choices:
-    - content: "remove()"
+    - content: "`remove()`"
       isCorrect: false
-      explanation: "The remove() function removes the item from the list, but it's not the best choice."
-    - content: "pop()"
+      explanation: "The `remove()` function removes the item from the list, but it's not the best choice."
+    - content: "`pop()`"
       isCorrect: true
-      explanation: "The pop() function selects and removes an item from a list.  This is similar to how a queue operates."
-    - content: "del()"
+      explanation: "The `pop()` function selects and removes an item from a list.  This is similar to how a queue operates."
+    - content: "`del()`"
       isCorrect: false
       explanation: "There is no `del()` function."
-    - content: "clear()"
+    - content: "`clear()`"
       isCorrect: false
-      explanation: "The clear() function removes all the items."
+      explanation: "The `clear()` function removes all the items."
   - content: "What's the easiest way to tell if a value belongs to a list?"
     choices:
     - content: "Use the `find()` helper function."
