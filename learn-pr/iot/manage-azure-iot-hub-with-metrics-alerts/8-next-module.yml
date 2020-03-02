@@ -54,17 +54,17 @@ quiz:
       explanation: All IoT devices connected to Azure use this endpoint.
     - content: 'The setting for ID Scope'
       isCorrect: false
-      explanation: Nope, this identifies the DPS service and IoT Hub.
+      explanation: This value identifies the DPS service and IoT Hub.
     - content: 'Your DPS service endpoint'
       isCorrect: false
       explanation: This doesn't apply to all devices.
     - content: 'The setting for SecurityProviderX509'
       isCorrect: false
-      explanation: No, this variable is use in the code, and isn't related to a global endpoint.
+      explanation: This variable is use in the code, and isn't related to a global endpoint.
 
   - content: 'Which allocation policy for Azure IoT DPS systems is the default?'
     choices:
-    - content: 'Lowest latency: This policy assigns devices to the linked IoT Hub which will result in the lowest latency communications between device and IoT Hub.'
+    - content: 'Lowest latency: This policy assigns devices to the linked IoT Hub, which will result in the lowest latency communications between device and IoT Hub.'
       isCorrect: false
       explanation: Not the default. This policy might work well if several IoT Hubs are in your system.
     - content: 'Evenly weighted distribution: This policy evenly distributes devices across the linked IoT Hubs.'
@@ -108,7 +108,7 @@ quiz:
       isCorrect: false
       explanation: Not quite, the best storage for certificates and passwords is reversed in this answer.
 
-  - content: 'X.509 certificates validate your identify, and secures your data through encryption. What is one disadvantage of using these certificates?'
+  - content: 'X.509 certificates validate your identify, and secure your data through encryption. What is one disadvantage of using these certificates?'
     choices:
     - content: 'The need to distribute public keys, or fingerprints, when creating valid key pairs.'
       isCorrect: false
@@ -131,7 +131,7 @@ quiz:
     - content: 'Can be used for many purposes: access to servers, login attempts, single or multiple devices.'
       isCorrect: false
       explanation: Flexibility is an advantage, not a disadvantage, of X.509 certificates.
-    - content: 'With leaf, intermediate, and root certificates, and several signing mechanisms, they are complex to understand and use.'
+    - content: "With leaf, intermediate, and root certificates, and several signing mechanisms, they're complex to understand and use."
       isCorrect: false
       explanation: There's a complexity to security, but this complexity isn't unique to X.509 certificates, and can't be considered much of a disadvantage.
 
@@ -140,7 +140,7 @@ quiz:
     choices:
     - content: 'Low-level hash or cypher technologies might have been used to create the certificates.'
       isCorrect: false
-      explanation: This may well be true of the free tools you might use to create the certificates. Low quality encryption isn't the only possible weakness.
+      explanation: Low-quality encryption may well be true of the free tools you might use to create the certificates. However, low-quality encryption isn't the only possible weakness.
     - content: 'The lifetime of a self-signed certificate is often set at one year, which may interrupt your production process.'
       isCorrect: false
       explanation: Setting a short expiry time might well become a nuisance. A short expiry time isn't the only weakness.
