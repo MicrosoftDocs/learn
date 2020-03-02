@@ -12,11 +12,7 @@ In this exercise, we'll learn about operators that allow us to perform typical m
 
 ### Step 1 - Create a new file
 
-Assuming you're continuing from the previous unit, use the techniques you learned in previous modules to add a new code file in the current folder dedicated to this module.  For example, you might create the following file:
-
-```
-exercise3.py
-```
+Assuming you're continuing from the previous unit, use the techniques you learned in previous modules to add a new code file in the current folder dedicated to this module.  For example, you might create a new file named `exercise3.py`.
 
 ### Step 2 - Write code that performs various mathematical operations in the new code file.
 

@@ -1,10 +1,6 @@
 Python makes it easy to work with data.  Every data value has an underlying data type, and that data type determines what we can do with the value.  For example, numeric values can be used for mathematical operations.  String values can be printed, concatenated, split, and so on.  
 
-Python provides several ways we can evaluate a value to view its data type, evaluate its data type, and convert its data type.
-
-## Exercise: Inspecting values to learn about their data types
-
-There are several built-in functions we can use.  We'll learn about all of these functions and techniques in this exercise.
+Python provides several ways we can evaluate a value to view its data type, evaluate its data type, and convert its data type.  There are several built-in functions we can use.  We'll learn about all of these functions and techniques in this exercise.
 
 ## The `type()` function
 
@@ -45,7 +41,7 @@ More germane to this exercise, there are three data types:
 
 The `type()` function merely examines the value you pass it as an input parameter (between the parentheses) and returns the data type.  It's a great tool to use as you're learning about Python and how it works with values under the hood.  However, for real applications, there are more useful ways at getting to this information.
 
-## The isinstance() function
+## The `isinstance()` function
 
 The next technique uses the `isinstance()` function, which allows you to assert that you expect a value to be a certain data type.  `isinstance()` will tell you whether the value is what you expected or not.  It returns the value `True` if your expectation was correct, and `False` if it was incorrect.
 

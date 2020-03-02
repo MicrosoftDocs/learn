@@ -44,11 +44,7 @@ At the outset, we wanted a way to determine if the value input by an end user co
 
 ### Step 1 - Create a new python code file.
 
-Assuming you're continuing from the previous unit, use the techniques you learned in previous modules to add a new code file in the current folder dedicated to this module.  For example, you might create the following file:
-
-```
-exercise2.py
-```
+Assuming you're continuing from the previous unit, use the techniques you learned in previous modules to add a new code file in the current folder dedicated to this module.  For example, you might create a new file named `exercise2.py`.
 
 ### Step 2 - Add code that uses the `isnumeric()` function to determine if a string can be converted into a number.
 

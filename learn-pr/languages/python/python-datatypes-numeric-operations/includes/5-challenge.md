@@ -32,7 +32,7 @@ What is the temperature in fahrenheit?  bob
 Input is not a number.
 ```
 
-![Note]
-To double-check your work, find a temperature converter online and make sure your results from your program matches their results.
+> [!NOTE]
+> To double-check your work, find a temperature converter online and make sure your results from your program matches their results.
 
 Whether you get stuck and need to peek at the solution or you finish successfully, continue on to view a solution to this challenge.
