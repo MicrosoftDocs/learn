@@ -17,6 +17,12 @@ content: |
 tasks:
 - action: exists
   environment: azure
+  hint: "Create the action group for your alert in the Azure portal."
+  azure:
+    resource:
+      type: "microsoft.insights/actiongroups"
+- action: exists
+  environment: azure
   hint: "Create an VM metric alert in the Azure portal."
   azure:
     resource:
