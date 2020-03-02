@@ -1,6 +1,6 @@
 Before we begin to work with the Python Standard Library, let's take a few moments and get a clear understanding of exactly what it is, how it relates to the Python programming language, how it is divided into manageable parts, and how to harness it.
 
-## what is the Python Standard Library?
+## What is the Python Standard Library?
 
 The Python Standard Library is a vast collection of functions, types, and services that address a wide array of programming needs.  These are not part of the Python language, however the functions are distributed with the Python interpreter, and are available to every Python program.
 

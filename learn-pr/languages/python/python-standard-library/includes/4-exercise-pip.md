@@ -49,7 +49,7 @@ sudo pip install emoji
 
 If you're on Windows, you may need to use the `py` utility to execute `pip`.  Try the following command on Windows:
 
-```dos
+```cmd
 py -m pip install emoji
 ```
 
@@ -66,7 +66,7 @@ print(message)
 ```
 When you execute the code, you should see the following output:
 
-========= screenshot ===========
+![Screenshot of Visual Studio Code's terminal displaying result of the sample code with an emoji sun.](../media/4-exercise-pip-1.jpg)
 
 
 ### Recap
