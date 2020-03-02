@@ -2,7 +2,7 @@
 
 An Azure IoT Hub can handle large volumes of telemetry data, sent from many sensor devices. You can individually set up each device, to be certain of its authenticity. However, with many devices, this task would be onerous to say the least. The process of validating the authenticity of a device is known as "provisioning". In this module, we investigate the IoT Device Provisioning Service (DPS). A service that enables the near-automatic provisioning of any number of devices.
 
-This module builds on the [Remotely monitor and control devices with Azure IoT Hub](https://docs.microsoft.com/en-us/learn/modules/remotely-monitor-devices-with-azure-iot-hub/) module - a fun introduction to IoT Hub programming, using the example of a temperature and humidity sensor in a cheese cave. It isn't necessary to complete the introductory module before working on this module on security, though completing it will help your understanding of IoT Hub. The introductory module covers such concepts as Device Twins, and Direct Methods, which aren't explained in detail in this module on security.
+This module builds on the [Remotely monitor and control devices with Azure IoT Hub](https://docs.microsoft.com/learn/modules/remotely-monitor-devices-with-azure-iot-hub/) module - a fun introduction to IoT Hub programming, using the example of a temperature and humidity sensor in a cheese cave. It isn't necessary to complete the introductory module before working on this module on security, though completing it will help your understanding of IoT Hub. The introductory module covers such concepts as Device Twins, and Direct Methods, which aren't explained in detail in this module on security.
 
 Security is a gnarly subject, there's more to it than you might think. Completing this module will give you a good foundation for making security decisions for your IoT-based projects.
 
@@ -25,19 +25,19 @@ In this module you will:
 
 ## The scenario
 
-The [Remotely monitor and control devices with Azure IoT Hub](https://docs.microsoft.com/en-us/learn/modules/remotely-monitor-devices-with-azure-iot-hub/) module has one sensor in one cheese cave. The sensor ensures the cheese is maturing nicely to the ideal temperature and humidity for your particular brand of cheese.
+The [Remotely monitor and control devices with Azure IoT Hub](https://docs.microsoft.com/learn/modules/remotely-monitor-devices-with-azure-iot-hub/) module has one sensor in one cheese cave. The sensor ensures the cheese is maturing nicely to the ideal temperature and humidity for your particular brand of cheese.
 
 Suppose you're the manager of the cheese cave maturing process. Your first cheese from the one cave has been a huge success. Your company has expanded rapidly and now has 30 cheese caves. Each cave is used to mature your best-selling cheese, but each cave is also in different locations throughout the country. Some of these caves provide near-ideal conditions without much involvement of a temperature/humidity setting fan. Other caves aren't so perfectly located, and require a fan to adjust the temperature and humidity, based on the telemetry output of a sensor.
 
 If your cheese business carries on growing, you're going to need solutions that scale smoothly and effortlessly.
 
-![description](../media/iot-hub-dps-art.png)
+![Conceptual art, showing the business of agriculture](../media/iot-hub-dps-art.png)
 
 You decide on a single Azure IoT Hub to process the telemetry from all 30 sensors. You decide that commercial competition requires that your system is secure, you must be certain of each device before accepting its input. You decide to investigate Azure DPS as your security service.
 
 Cheese making is a competitive business, and you want to keep your secrets well wrapped. And maybe your cheese too.
 
-![description](../media/cheese-rect4.png)
+![Photograph of mature blue cheese](../media/cheese-rect4.png)
 
 ### The first step
 
@@ -131,11 +131,11 @@ A Device Provisioning Service (DPS) can be linked to one, or multiple hubs. So, 
 
 1. Type "provisioning" in the search box, and select **IoT Hub Device Provisioning Service**.
 
-    ![description](../media/iot-hub-dps-resource-create.png)
+    ![Screenshot showing the selection of the IoT Hub Device Provisioning Service](../media/iot-hub-dps-resource-create.png)
 
 1. Specify the resource, with a name such as "CheeseCave-DPS". Use the sandbox subscription and resource group options. And choose your **Location**.
 
-    ![description](../media/iot-hub-dps-resource-name.png) UPDATE
+    ![Screenshot showing the completed fields for a new DPS](../media/iot-hub-dps-resource-name.png) UPDATE
 
 1. Create the resource, and wait for it to deploy.
 
@@ -149,11 +149,11 @@ A Device Provisioning Service (DPS) can be linked to one, or multiple hubs. So, 
 
 1. Locate the name of your IoT hub, and select **iothubowner** as the **Access Policy**. Click **Save**.
 
-    ![description](../media/iot-hub-dps-resource-hub-link.png) UPDATE
+    ![Screenshot showing how to link an IoT Hub to the DPS](../media/iot-hub-dps-resource-hub-link.png) UPDATE
 
 1. Click **Manage allocation policy**, and verify the policy is set to **Evenly weighted distribution**.
 
-    ![description](../media/iot-hub-dps-resource-policy.png)
+    ![Screenshot showing the DPS allocation policies](../media/iot-hub-dps-resource-policy.png)
 
 1. Perhaps bookmark a link to the **Overview** page of this resource.
 
@@ -279,7 +279,7 @@ In this unit, we need to create one leaf certificate for each device that we wan
 
 1. Verify the leaf cert was created correctly. You should see numerous console messages, ending in something like the following image.
 
-    ![description](../media/iot-hub-dps-cert-create1.png)
+    ![Console output showing the correct creation of a leaf certificate](../media/iot-hub-dps-cert-create1.png)
 
 1. To download the created certificate to your local machine, type:
 ```azurecli
@@ -304,7 +304,7 @@ download ~/certificates/certs/new-device.cert.pfx
 
 1. If you get a `Permission denied` response, similar to the following, verify you've deleted the earlier certificates correctly.
 
-    ![description](../media/iot-hub-dps-cert-denied.png)
+    ![Console output showing a leaf certificate was not created](../media/iot-hub-dps-cert-denied.png)
 
 1. Download the second certificate to your local machine, type:
 ```azurecli
@@ -358,7 +358,7 @@ The code is written in C#, and you can choose Visual Studio, or Visual Studio Co
 
 1. Set the app running. In Visual Studio, select Debug/Start without Debugging. In Visual Studio Code, enter `dotnet run` in the terminal.
 
-    ![description](../media/iot-hub-dps-device1.png)
+    ![Console output showing the first device running correctly](../media/iot-hub-dps-device1.png)
 
 ### Create an app for a second device
 
@@ -366,7 +366,7 @@ The code is written in C#, and you can choose Visual Studio, or Visual Studio Co
 1. Change the leaf name from `new-device.cert1.pfx` to `new-device.cert2.pfx`.
 1. Set the app running.
 
-    ![description](../media/iot-hub-dps-device2.png)
+    ![Console output showing the second device running correctly](../media/iot-hub-dps-device2.png)
 
 ### Create an app for a third device
 
@@ -374,7 +374,7 @@ The code is written in C#, and you can choose Visual Studio, or Visual Studio Co
 1. Change the leaf path from `new-device.cert1.pfx` to `new-device.cert3.pfx`.
 1. Set the app running.
 
-    ![description](../media/iot-hub-dps-device3.png)
+    ![Console output showing the third device running correctly](../media/iot-hub-dps-device3.png)
 
 Great, a bit of repetitive work, but we now have our crowd of devices. The next step is to set all three apps running, then test our DPS resource and IoT Hub handle the assignments and telemetry correctly.
 
@@ -389,26 +389,26 @@ In this unit, we verify all the pieces we have put in place work as expected. Yo
 
 1. Verify all three device apps are sending telemetry.
 
-    ![description](../media/iot-hub-dps-devices123.png)
+    ![Console output showing all three devices running](../media/iot-hub-dps-devices123.png)
 
 1. In the Azure portal for your DPS service, locate **Monitoring** in the left-hand menu, and select **Metrics**. Verify all three devices are assigned, by setting **Metric** to **Devices assigned**, and **Aggregation** to **Sum**.
 
-    ![description](../media/iot-hub-dps-metrics-devices.png)
+    ![Screenshot showing devices assigned metrics](../media/iot-hub-dps-metrics-devices.png)
 
 1. In the Azure portal, this time for your IoT Hub, select **IoT devices** in the left-hand menu. Verify all three devices are listed, and have **Status** set to **Enabled**.
 
-    ![description](../media/iot-hub-dps-device-list.png)
+    ![Screenshot showing the list of device IDs enabled in the IoT Hub](../media/iot-hub-dps-device-list.png)
 
 > [!NOTE]
 > You'll remember that you did not add any devices using the Azure portal. These devices have been added by the link from the DPS system.
 
 1. For added reassurance, in the left-hand menu select **Metrics** for your hub. Enter **Connected devices** for **Metric**, and set **Aggregation** to **Max**.
 
-    ![description](../media/iot-hub-dps-metrics-devices-hub.png)
+    ![Screenshot showing connected devices metrics](../media/iot-hub-dps-metrics-devices-hub.png)
 
 1. Still in **Metrics**, verify telemetry is received by changing **Metric** to **Telemetry messages sent**, and **Aggregation** to **Sum**.
 
-    ![description](../media/iot-hub-dps-metrics-telemetry.png)
+    ![Screenshot showing telemetry messages sent metrics](../media/iot-hub-dps-metrics-telemetry.png)
 
 You've now verified that all devices connected automatically via the DPS resource. You've completed the substance of this module, but let's do one more test, to verify communication in the opposite direction.
 
@@ -422,11 +422,11 @@ In this test, let's change one of the device twin properties in the portal, and 
 
 1. Change the desired temperature to something different and noticeable: say "50.123". And click **Save**.
 
-    ![description](../media/iot-hub-dps-twin-temp.png)
+    ![Screenshot showing a change to the desired properties, in a device twin](../media/iot-hub-dps-twin-temp.png)
 
 1. Verify, in the console output, the change is picked up quickly by the selected device.
 
-    ![description](../media/iot-hub-dps-twin-temp-set.png)
+    ![Console output, showing the device twin property change has been picked up by the device](../media/iot-hub-dps-twin-temp-set.png)
 
 If all this worked as expected, great work. You now know what needs to be done to provision devices at scale. We limited ourselves to three devices, but you can imagine, with some automation and tooling, how you could provision a large number of devices, with minimum human involvement.
 
@@ -435,6 +435,10 @@ To complete the module, let's summarize the goals, and finish with a knowledge c
 ## Unit 8: Summary
 
 Completing this module should have given you some valuable insights into the dark world of cryptography and message security. If you're new to this world, you'll appreciate the thought and design that has gone into X.509 certificates, and Azure DPS Group Enrollments. You'll see how these technologies neatly map the root and leaf X.509 certificates to an IoT Hub and its range of IoT devices. You'll also appreciate how well these technologies make security user-friendly enough for those of us who don't want to know too much about the underlying math.
+
+In short, you have learnt how to keep your cheese maturing practices a secret!
+
+![Photograph of mature blue cheese](../media/cheese-rect3.png)
 
 In this module, you learned how to:
 
@@ -448,12 +452,12 @@ In this module, you learned how to:
 
 Learn about storing passwords and certificates:
 
-- [Azure Key Vault](https://azure.microsoft.com/en-us/services/key-vault/)
-- [Azure Dedicated HSM](https://azure.microsoft.com/en-us/services/azure-dedicated-hsm/)
+- [Azure Key Vault](https://azure.microsoft.com/services/key-vault/)
+- [Azure Dedicated HSM](https://azure.microsoft.com/services/azure-dedicated-hsm/)
 
 Learn more about IoT Hub:
 
-- [IoT Hub Documentation](https://docs.microsoft.com/en-us/azure/iot-hub/)
+- [IoT Hub Documentation](https://docs.microsoft.com/azure/iot-hub/)
 
 Learn more about IoT Hub devices:
 
