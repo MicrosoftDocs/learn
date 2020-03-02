@@ -1,0 +1,35 @@
+### YamlMime:Module
+uid: learn.languages.python-introduction
+metadata:
+  title: What is Python?
+  description: A quick introduction into Python, programming languages, compilation, and the process of programming.
+  ms.date: 12/04/2019
+  author: bobtabor-msft
+  ms.author: rotabor
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: What is Python?
+summary: A quick introduction into Python, programming languages, compilation, and the process of programming.
+abstract: |
+  In this module, you will:
+  - Learn what a programming language does, and why Python is so popular and is a great choice as your first programming language to learn.
+  - Learn why you must compile your code into computer-understandable format.
+  - Learn the process of programming and the software tools you must install.
+prerequisites: None
+ratingEnabled: true
+iconUrl: /learn/achievements/python-introduction.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- dotnet
+units:
+- learn.languages.python-introduction.introduction
+- learn.languages.python-introduction.what-is-programming
+- learn.languages.python-introduction.what-is-compilation
+- learn.languages.python-introduction.what-is-process-programming
+- learn.languages.python-introduction.summary
+
+badge:
+  uid: learn.languages.python-introduction.badge
