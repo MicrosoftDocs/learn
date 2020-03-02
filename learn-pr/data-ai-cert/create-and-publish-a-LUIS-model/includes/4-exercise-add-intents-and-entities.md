@@ -1,3 +1,5 @@
+# Add Intents and Entities
+
 Our next step for the PictureBotLUIS app is creating intents that map to user requests. We want our picture-management bot to understand how to:
 
 - Find pictures.

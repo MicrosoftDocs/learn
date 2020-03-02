@@ -1,4 +1,6 @@
-### We're now ready to train our model. 
+# Train the LUIS Model
+
+We're now ready to train our model.
 
 1. In the top bar, select **Train**. During training, LUIS builds a model to map utterances to intents based on the training data you’ve provided.
 
@@ -26,8 +28,8 @@
 1. Select **+ Assign Resource**. Select your tenant, subscription, and the resource you created in the Azure portal earlier and then select **Assign Resource** to connect the Language Understanding resource to the LUIS service.
 
 ## Publish the app
-    
-1. Leave the endpoint slot set to **Production**. 
+
+1. Leave the endpoint slot set to **Production**.
 1. In the top bar, select **Publish**.
 
    > [!NOTE]
