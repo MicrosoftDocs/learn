@@ -1,4 +1,4 @@
-We're now ready to train our model. 
+### We're now ready to train our model. 
 
 1. In the top bar, select **Train**. During training, LUIS builds a model to map utterances to intents based on the training data you’ve provided.
 
@@ -9,13 +9,16 @@ We're now ready to train our model.
 
 1. After training is finished, select **Manage** in the top bar. The following options will appear on the left side of the window:
 
+    [!NOTE]
+    The categories on the left pane may change as the portals are updated.  As a result, the keys and endpoints may fall under a different category than the one listed here.
+
    - **Application information**
-   - **Keys and endpoints**
+   - **Azure Resources**
    - **Publish settings**
    - **Versions**
    - **Collaborators**
 
-1. Select **Keys and endpoints**. This screen is used to manage the URL endpoints used to access the LUIS service.
+1. Select **Azure Resources**. This screen is used to manage the URL endpoints used to access the LUIS service.
 
     > [!NOTE]
     > An endpoint named **Starter_Key** is automatically created for testing purposes, and you could use that here - however to use the service in a production environment or inside of an application, you will always want to tie it to a real Language Understanding resource created in Azure.
