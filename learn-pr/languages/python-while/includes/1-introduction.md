@@ -6,7 +6,7 @@ In this module, you'll use the `while` statement to iterate through a code block
 
 By the end of this module, you will be able to build programs that control the flow of code with looping structures.
 
-## Learning Objectives
+## Learning objectives
 
 In this module, you will:
 
