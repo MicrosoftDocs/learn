@@ -1,0 +1,3 @@
+In this module, we set out to learn how to format and manipulate the contents of strings.  We used a wide array of techniques to accomplish this.  We used built-in functionality of literal strings to add escape sequences, which allowed us to embed special characters, tabs, new lines and more.  We used helper methods to examine and modify the content of strings.  We used the `format()` function and format string literals, or f-strings, to merge values into a template using replacement codes.  
+
+While there are many other kinds of operations we can perform on strings, we now have several tools we can use to control string and achieve our desired output.
