@@ -40,18 +40,18 @@ quiz:
       explanation: "The `&` symbol is used for bitwise operations and will not answer this question."
     - content: "The `%` operator"
       isCorrect: true
-      explanation: "If the modulus is `0` then the divisor divides evenly into the dividend."
-  - content: "Suppose you have a value `1.468` in a variable called `apr` and you want to round it to `1.5`.  How would you call the `round()` method?"
+      explanation: "If the modulus is `0`, then the divisor divides evenly into the dividend."
+  - content: "Suppose you have a value `1.468` in a variable called `interest_rate` and you want to round it to `1.5`.  How would you call the `round()` method?"
     choices:
-    - content: "round(apr)"
+    - content: "`round(interest_rate)`"
       isCorrect: false
       explanation: "This is not correct."
-    - content: "round(apr, 0)"
+    - content: "`round(interest_rate, 0)`"
       isCorrect: false
       explanation: "This is not correct."
-    - content: "round(apr, 1)"
+    - content: "`round(interest_rate, 1)`"
       isCorrect: true
       explanation: "Correct!"
-    - content: "round(apr, 2)"
+    - content: "`round(interest_rate, 2)`"
       isCorrect: false
       explanation: "This is not correct."

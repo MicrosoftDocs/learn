@@ -45,8 +45,8 @@ Many of the operators are obvious, but just in case you're not sure:
 - Modulus operator `%` ... this gives you the remainder (if any) after dividing two values.  Useful to know whether one value is evenly divisible.
 - Exponent operator `**` ... read like "5 to the fourth power", or 5 * 5 * 5 * 5.
 
-![Note]
-In the next module, we'll learn how to use "format strings" or "f-strings" to avoid the data conversion back to string.
+> [!NOTE]
+> In the next module, we'll learn how to use "format strings" or "f-strings" to avoid the data conversion back to string.
 
 If you run the code, you should see the following output:
 
