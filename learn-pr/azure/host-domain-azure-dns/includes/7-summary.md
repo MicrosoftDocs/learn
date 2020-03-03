@@ -8,3 +8,7 @@ By using an Azure DNS zone to host your domain, your organization benefits by ha
 
 <!-- Cleanup sandbox -->
 [!include[](../../../includes/azure-sandbox-cleanup.md)]
+
+## Learn more
+
+[What is Azure Private DNS?](https://docs.microsoft.com/azure/dns/private-dns-overview)

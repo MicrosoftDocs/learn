@@ -1,14 +1,12 @@
-Azure DNS enables you to host your DNS records for your domains on Azure infrastructure.
+Azure DNS is a hosting service for DNS domains that provides name resolution by using Microsoft Azure infrastructure.
 
 In this unit, you'll learn what DNS is and how it works. Then learn about Azure DNS, and why you would use it.
 
 ## What is DNS?
 
-The DNS, or the Domain Name System, is a protocol within the TCP/IP standard. The DNS serves an essential role of translating the human-readable domain names, for example, www.wideworldimports.com into a known Internet Protocol (IP) address. IP addresses enable computers and network devices to identify and route requests between themselves.
+DNS, or the Domain Name System, is a protocol within the TCP/IP standard. DNS serves an essential role of translating the human-readable domain names, for example, www.wideworldimports.com into a known Internet Protocol (IP) address. IP addresses enable computers and network devices to identify and route requests between themselves.
 
-Think of the DNS as a lookup table. It's much like using a phone book to find a telephone number. Only, in this case, the phone number is the IP address of the server hosting your website, web service, or load balancer.
-
-The DNS uses a global directory hosted on servers around the world. Microsoft is part of that network providing a DNS service through Azure DNS.
+DNS uses a global directory hosted on servers around the world. Microsoft is part of that network that provids a DNS service through Azure DNS.
 
 A DNS server is also known as a DNS name server, or just a name server.
 
@@ -16,16 +14,16 @@ A DNS server is also known as a DNS name server, or just a name server.
 
 A DNS server carries out one of two primary functions:
 
-- To maintain a local cache of recently accessed/used domain names and their IP addresses. Which provides a faster response to a local domain lookup request. If it can't find the requested domain, it passes the request to another DNS server. This process repeats at each DNS server until either a match is made, or the search times out.
-- Maintaining the key-value pair database of IP addresses and any host or subdomain the DNS server has authority over. Which is often associated with mail, web, and other internet domain services.
+- Maintain a local cache of recently accessed/used domain names and their IP addresses. This cache provides a faster response to a local domain lookup request. If the DNS server can't find the requested domain, it passes the request to another DNS server. This process repeats at each DNS server until either a match is made, or the search times out.
+- Maintain the key-value pair database of IP addresses and any host or subdomain the DNS server has authority over. This function is often associated with mail, web, and other internet domain services.
 
-### Finding a DNS server
+### DNS server assignment
 
-In order for a computer, server or other network enabled device to access web-based resources it must reference a DNS server.
+In order for a computer, server, or other network enabled device to access web-based resources it must reference a DNS server.
 
-The DNS servers are assigned when requesting an IP address from your DHCP server. When you connect from your on-premises network, the DNS settings will come from your server. When accessing the web from an external location, like a hotel. The DNS settings will come from your ISP.
+The DNS servers are assigned when requesting an IP address from your DHCP server. When you connect by using your on-premises network, the DNS settings comes from your server. When accessing the web from an external location, like a hotel, the DNS settings come from the internet service provider (ISP).
 
-### Operation of a DNS server
+### Domain lookup requests
 
 Here is a simplified overview of a DNS server when it resolves a domain name lookup request:
 
@@ -41,7 +39,7 @@ Every computer, server, or network enabled device on your network has an Interne
 
 - **IPv6** is a relatively new standard and will eventually replace IPv4. It's made up of eight groups of hexadecimal numbers, each separated by a colon. For example: fe80:11a1:ac15:e9gf:e884:edb0:ddee:fea3.
 
-Today, more and more network devices are provisioned with both an IPv4 and an IPv6 address. The DNS name server now has the capability of resolving domain names to both IPv4 and IPv6 addresses.
+Today, more and more network devices are provisioned with both an IPv4 and an IPv6 address. The DNS name server can resolve domain names to both IPv4 and IPv6 addresses.
 
 ### DNS settings for your domain
 
@@ -55,10 +53,10 @@ As the administrator for your company, you want to set up a DNS server using Azu
 
 ### DNS record types
 
-The configuration information for your DNS server is stored in zone files on your DNS server. Each zone file is called a record. These record types are the most commonly created and used, but there are others:
+The configuration information for your DNS server is stored as a file within a zone on your DNS server. Each file is called a record. These record types are the most commonly created and used, but there are others:
 
-- **A** is the host record, and is the most common type of DNS record. It maps the domain/host name to the IP address.
-- **CNAME** is the canonical name, or the alias for an A record. You would use CNAME if you had different domain names that all accessed the same website.
+- **A** is the host record, and is the most common type of DNS record. It maps the domain or host name to the IP address.
+- **CNAME** is the canonical name, or the alias for an A record. If you had different domain names that all accessed the same website, You would use CNAME.
 - **MX** is the mail exchange record. It maps mail requests to your mail server, whether hosted on-premises or in the cloud.
 
 Besides the three record types above, there are also these record types:
@@ -80,16 +78,15 @@ Some record types support the concept of record sets, or resource record sets. A
     www.wideworldimports.com.     3600    IN    A    127.0.0.1
     www.wideworldimports.com.     3600    IN    A    127.0.0.2
 
-> [!NOTE]
-> SOA and CNAME records cannot contain record sets.
+SOA and CNAME records cannot contain record sets.
 
 ## What is Azure DNS
 
-Microsoft provides a globally distributed name server infrastructure for hosting and managing your domains called Azure DNS. Built on Azure monitoring technology, it allows management of all your domains using your existing Azure credentials.
+Azure DNS allows you to host and manage your domains using a globally distributed name server infrastructure. It allows you to manage of all your domains using your existing Azure credentials.
 
 The Azure DNS acts as the **start of authority** (SOA) for the domain.
 
-At present, you can't use Azure DNS to register a domain name. You'll still need to use a third-party domain registrar to register future domains.
+You can't use Azure DNS to register a domain name. You use a third-party domain registrar to register your domain.
 
 ## Why use Azure DNS to host your domain
 
@@ -100,7 +97,7 @@ Azure DNS is built on the Azure Resource Manager service, which comes with a hos
 - Private DNS domains
 - Alias record sets
 
-At this time, Azure DNS doesn't support Domain Name System Security Extensions or DNSSEC.  If you require this security extension, you should host those portions of your domain with a third party.
+At this time, Azure DNS doesn't support Domain Name System Security Extensions or DNSSEC.  If you require this security extension, you should host those portions of your domain with a third party provider.
 
 ### Security Features
 
@@ -112,21 +109,19 @@ Azure DNS provides a number of security features:
 
 ### Ease of use
 
-Azure DNS is integrated into the Azure portal. Once you've logged in using your existing credentials, you can manage your Azure DNS alongside your existing resources. Using Azure DNS seamlessly integrates into your exiting billing and subscriptions.
+Azure DNS can manage DNS records for your Azure services and provide DNS for your external resources. Azure DNS uses your same Azure credentials, support contract, and billing as your other Azure services.
 
-Azure DNS will act as your SOA for your organization, allowing you to manage all your DNS records. Using the portal you can create and manage all your DNS zones.
+You can manage your domains and records by using the Azure portal, Azure PowerShell cmdlets, or the Azure CLI. Applications that require automated DNS management can integrate with the service by using the REST API and SDKs.
 
 ### Private domains
 
-This feature is presently in public preview, and will be made available soon.
+Azure DNS handles the translation of external domain names to an IP address. Azure Private DNS provides name resolution for virtual machines (VMs) within a virtual network and between virtual networks. This allows you to use your own custom domain names rather than the Azure-provided names. Also you can configure zones to allows a private and a public DNS zone to share a name.
 
-A regular Azure DNS handles the translation of external domain names to an IP address. An Azure Private DNS extends that capability to virtual machines running on a virtual network. Sidestepping the need to create a custom DNS solution.
+To publish a private DNS zone to your virtual network, you specify the list of virtual networks that are allowed to resolve records within the zone. When autoregistration is enabled, Azure DNS updates the zone records whenever a virtual machine is created, changes its' IP address, or is deleted.
 
-An Azure Private DNS allows you to use your own custom domain names and can provide resolution services for all your VMs.
+### Alias record sets
 
-### Alias Records
-
-Alias records are a powerful feature of Azure DNS. They exist as part of the DNS record set, and  can point to an Azure resource. For example, you can set up an alias to direct traffic through the Traffic Manager profile, or use the Azure Content Delivery Network.
+Alias records sets can point to an Azure resource. For example, you can set up an alias record to direct traffic to an Azure public IP address, an Azure Traffic Manager profile, or an Azure Content Delivery Network (CDN) endpoint.
 
 The alias record set is supported in the following DNS record types:
 
