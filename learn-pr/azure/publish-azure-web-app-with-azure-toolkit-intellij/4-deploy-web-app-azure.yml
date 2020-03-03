@@ -9,6 +9,6 @@ metadata:
   ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 5
+durationInMinutes: 4
 content: |
   [!include[](includes/4-deploy-web-app-azure.md)]

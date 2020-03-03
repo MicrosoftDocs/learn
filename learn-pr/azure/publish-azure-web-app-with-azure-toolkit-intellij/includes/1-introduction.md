@@ -9,8 +9,8 @@ By the end of this module, you'll be able to use Azure to host your Java web app
 In this module, you'll learn how to:
 
 - Create a web app in IntelliJ IDEA
-- Deploy the app to Azure by using Azure Toolkit for IntelliJ
-- Manage deployed web app configurations using Azure Toolkit
+- Deploy the app to Azure by using the Azure Toolkit for IntelliJ
+- Manage deployed web app configurations using the Azure Toolkit
 
 ## Prerequisites
 
