@@ -7,10 +7,10 @@ Our next step for the PictureBotLUIS app is creating intents that map to user re
 - Order prints of pictures.
 - Greet the user.
 
-Let’s create intents for each of these items.
+Let's create intents for each of these items.
 
 > [!NOTE]
-> There is one intent already present named **None**. Random utterances that don’t map to any of your intents can be mapped to this intent.
+> There is one intent already present named **None**. Random utterances that don't map to any of your intents can be mapped to this intent.
 
 1. Select **+ Create new intent**.
 1. Name the first intent **Greeting**, and then select **Done**.
@@ -37,7 +37,7 @@ Let’s create intents for each of these items.
     - **give me colorful pictures**
     - **show me beach pics**
     - **I want to find dog photos**
-    - **find pictures of german shepherds**
+    - **find pictures of German shepherds**
     - **search for pictures of men indoors**
     - **show me pictures of men wearing glasses**
     - **I want to see pics of smiling people**
@@ -66,7 +66,7 @@ Next, we have to teach LUIS how to pick out the search subject as the **facet** 
     ![Screenshot showing utterance selection to tie it to an entity](../media/4-select-facet-on-utterance.png)
 
    > [!TIP]
-   > Using multiword keywords, such as "german shepherds", is a bit tricky.
+   > Using multi-word keywords, such as "German shepherds", is a bit tricky.
    >
    > Click the first word in the keyword, move the cursor to the second word, and then click again. Then move the cursor into the entity selection pop-up list. Be sure not to move the cursor outside the borders, or you'll lose the selection.
 
