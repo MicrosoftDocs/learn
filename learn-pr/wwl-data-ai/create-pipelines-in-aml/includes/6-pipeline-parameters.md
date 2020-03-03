@@ -21,7 +21,7 @@ step2 = EstimatorStep(name = 'train model',
                                                         '--reg', reg_param])
 ```
 
-> [NOTE!]
+> [!NOTE]
 > You must define parameters for a pipeline before publishing it.
 
 ## Running a Pipeline with a Parameter
