@@ -34,6 +34,7 @@ units:
 - learn.languages.python-install-vscode.exercise-interactive-mode
 - learn.languages.python-install-vscode.exercise-setup-visual-studio-code
 - learn.languages.python-install-vscode.exercise-write-execute-first-script
+- learn.languages.python-install-vscode.knowledge-check
 - learn.languages.python-install-vscode.summary
 badge:
   uid: learn.languages.python-install-vscode.badge
