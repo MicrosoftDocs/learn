@@ -1,41 +1,63 @@
-## Decide How to Prioritize, Track, and Fix Each Issue
+The fix phase is where the fates of generated threats are decided. Each STRIDE threat maps to one or more security controls, which offer different functions and types to choose from.
 
-Reduce or eliminate each potential threat by using security controls mapped to STRIDE threats:
+The goals are to:
 
-| Threat | Security Control | What to Verify |
-| ------ | ---------------- | ----------- |
-|Spoofing|Authentication|Have I authenticated both sides of the communication?|
-|Tampering|Integrity|How do I know someone can't change my data in transit or at rest?|
-|Repudiation|Non-Repudiation|Can I tie every action to an identity?|
-|Information Disclosure|Confidentiality|Can I be sure no one can see my data in transit and at rest?|
-|Denial of Service|Availability|Are there areas where my service is resource limited?|
-|Elevation of Privilege|Authorization|How do I know the user is allowed to do this action?|
+- Prioritize each threat against a prioritization framework or security bug bar
+- Track each threat as a task or work item in a bug management service
+- Generate security control recommendations that are mapped to STRIDE threats
+- Select one or more security control types and functions to address each threat
+- Resolve tasks
 
-Some security controls can help reduce or completely eliminate multiple threats. Using SSL/TLS creates secure transmission channels to help prevent malicious data modification or disclosure. These types of controls are a good way to help secure your system and create multiple layers of security, also known as defense-in-depth.
+If you don't complete this phase, you won't find the security controls to help reduce risk or track each threat properly
 
-### Issue Tracking
+## How Do I Start?
 
-Bug management services, such as Azure DevOps, keeps track of each threat and security control using default templates and resolution categories. These templates foster collaboration between teams, prevent issues from slipping through the cracks, and provide issue history.
+Start by prioritizing each threat against a prioritization framework or security bug bar. This process helps you allocate resources to fixing issues deemed more important by your organization. The process uses three key variables:
 
-### Issue Prioritization
+- **Impact** - uses STRIDE categories to assign impact
+- **Severity** - uses internal bug bar or prioritization framework to assign severity using worst case scenarios
+- **Risk** - uses a calculation of security control effectiveness and implementation cost
 
-Apply the established risk management methods used by your organization to help prioritize the threats identified with threat modeling. Microsoft typically prioritizes security issues by:
+Microsoft engineers use an internal security bug bar that assigns threats with a Critical, Important, Moderate, Low, or Information severity rating. Check with your security team to confirm how to prioritize your issues.
 
-- **Impact** - STRIDE categories
-- **Severity** - Critical, Important, Moderate, Low, Defense-in-Depth (worst case scenarios assumed)
-- **Risk** - Risk reduction or elimination is measured by implementation cost
+Next, add each threat in a bug management solution like Azure DevOps. It reinforces ownership, effectively tracks history, and gives you the ability to use standardized templates for priority and resolution exercises.
 
-### Issue Resolution
+## My Issues Are All Prioritized! What's Next?
 
-If your organization does not have a default set of resolution options, you can use the ones commonly used with threat modeling:
+Visit each security control recommendation that is mapped to STRIDE threats. Write down the ones that are most effective and least expensive to implement. Here are a few examples:
 
-- **Reduce** - Issue will be addressed with bug fixes, redesign, or risk reduction strategies to reduces or eliminate threat impact or severity
-- **Transfer** - Issue will be handled by another system
+| Threat | Security Control | Security Control Example |
+| ------ | ---------------- | ------------------------ |
+|**Spoofing**|Authentication|Sending and receiving messages signed with digital signatures to authenticate origin and ensure message integrity|
+|**Tampering**|Integrity|Validating input to prevent the processing of malicious payloads and mishandling of unexpected behavior|
+|**Repudiation**|Non-Repudiation|Creating and protecting security logs containing user actions and timestamps|
+|**Information Disclosure**|Confidentiality|Applying access control lists to ensure the right users can access to the right data|
+|**Denial of Service**|Availability|Using elastic resources to manage growing or shrinking usage|
+|**Elevation of Privilege**|Authorization|Running the service using the least possible amount of access|
+
+You may come across security controls that can reduce or completely eliminate multiple threats at once. As an example, using SSL/TLS creates secure transmission channels to help prevent malicious data modification or disclosure.
+
+Security controls have different types and functions. When combined, they help secure your system and create multiple layers of security, also known as defense-in-depth.
+
+You can choose one or more security control types:
+
+- Physical, like cameras
+- Technical, like encryption
+- Administrative, like policies
+
+Which may have one or more security control functions:
+
+- **Preventive** - Reduces the probability or impact of a threat, like firewalls
+- **Detective** - Identifies attacks as they happen, like surveillance
+- **Corrective** - Controls how the system responds to an ongoing attack, like system patches
+- **Recovery** - Recovers system from an attack, like Backups
+- **Deterrent** - Keeps attackers away from the system, like least privilege
+
+## I Selected the Appropriate Security Controls for My System, Is There Anything Else I Need To Do?
+
+Add security control details to each issue in the bug management solution. Then, resolve each issue with one of the following resolutions, which varies lightly from organization to organization:
+
+- **Reduce** - Issue will be addressed with bug fixes or redesign to reduce or eliminate threat impact and severity
+- **Transfer** - Issue will be handled by another system or team
 - **Avoid** - The part of the system containing the issue will be cut
 - **Accept** - Risk will be accepted without a resolution. It will require the approval of an authorized risk decision maker, which may be based on threat severity. Critical severity threats may require approval from senior leadership, while a defense-in-depth risk may be approved by a senior engineer. Speak with your team for strategic guidance
-
-> [!NOTE]
-> Some security controls can be more expensive than the cost of a successful security breach. Speak with your colleagues or security team to come up with design changes if you are in a similar situation.
-
-> [!IMPORTANT]
-> Breaches create countless fire drills and absorb a lot of engineering bandwidth. On top of fixing the issue in a relatively short time-frame, the organization has to deal with reputation risk, potential legal liability, and other costs, which are hard to quantify.

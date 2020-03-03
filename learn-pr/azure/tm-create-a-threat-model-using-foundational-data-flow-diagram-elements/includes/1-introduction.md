@@ -1,5 +1,14 @@
 Data-flow diagrams are graphical representations of your system and should specify:
 
+# add more here in the beginning
+# goal of introductory unit is motivation
+# 1st paragraph - universe of discourse (area we're talking about)
+# 2nd paragraph - real world example (motivational)
+# 3rd paragraph - Prose table of contents (in this module you'll .......)
+
+# Add unit "1.5"
+
+
 |Element|Shape|Definition|
 |-------|-----|----------|
 |Process|![Process](../media/process50.png)|Task that receives, modifies, or redirects input to output, like a web service|

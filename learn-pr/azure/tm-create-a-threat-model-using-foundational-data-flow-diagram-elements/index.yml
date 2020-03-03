@@ -11,7 +11,7 @@ metadata:
 title: Create a Threat Model Using Data-Flow Diagram Elements
 summary: Data-flow diagrams are graphical representations of your system and should specify each element, their interactions and context.
 abstract: |
-    In this module, you will:
+    In this module, you will be able to:
     - The shape and function of each element
     - The context to include in an element when creating a data-flow diagram
 prerequisites: None

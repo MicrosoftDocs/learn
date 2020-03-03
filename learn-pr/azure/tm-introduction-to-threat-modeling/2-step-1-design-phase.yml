@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.tm-introduction-to-threat-modeling.2-step-1-design-phase
-title: Step 1 - Design Phase
+title: Step 1 - Design
 metadata:
-  title: Step 1 - Design Phase - Capture Requirements and Create a Data-Flow Diagram
+  title: Step 1 - Design - Capture Requirements and Create a Data-Flow Diagram
   description: Capture Requirements and Create a Data-Flow Diagram
   ms.date: 02/28/2020
   author: rodsan
   ms.author: rodsan
   ms.topic: interactive-tutorial
   ms.prod: learning-threat-modeling
-durationInMinutes: 4
+durationInMinutes: 6
 content: |
   [!include[](includes/2-step-1-design-phase.md)]
 quiz:

@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.tm-introduction-to-threat-modeling.4-step-3-fix-phase
-title: Step 3 - Fix Phase
+title: Step 3 - Fix
 metadata:
-  title: Step 3 - Fix Phase - Decide How to Prioritize, Track, and Fix Each Issue
+  title: Step 3 - Fix - Decide How to Prioritize, Track, and Fix Each Issue
   description: Decide How to Prioritize, Track and Fix Each Issue
   ms.date: 02/28/2020
   author: rodsan
   ms.author: rodsan
   ms.topic: interactive-tutorial
   ms.prod: learning-threat-modeling
-durationInMinutes: 4
+durationInMinutes: 6
 content: |
   [!include[](includes/4-step-3-fix-phase.md)]
 quiz:

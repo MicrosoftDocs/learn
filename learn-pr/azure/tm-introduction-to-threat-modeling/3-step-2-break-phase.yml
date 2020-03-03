@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.tm-introduction-to-threat-modeling.3-step-2-break-phase
-title: Step 2 - Break Phase
+title: Step 2 - Break
 metadata:
-  title: Step 2 - Break Phase - Enumerate Threats and Brainstorm Solutions
+  title: Step 2 - Break - Enumerate Threats and Brainstorm Solutions
   description: Enumerate Threats and Brainstorm Solutions
   ms.date: 02/28/2020
   author: rodsan
   ms.author: rodsan
   ms.topic: interactive-tutorial
   ms.prod: learning-threat-modeling
-durationInMinutes: 4
+durationInMinutes: 6
 content: |
   [!include[](includes/3-step-2-break-phase.md)]
 quiz:
