@@ -16,28 +16,39 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: Which of the following is not a valid blob storage access tiers?
+  - content: Azure DNS allows you to?
     choices:
-    - content: Archive
+    - content: Manage the security and access to your Website
       isCorrect: false
-      explanation: Archive is a valid blob storage access tier.
-    - content: Hot
+      explanation: Azure DNS does support a robust security model, it is primarily to allow you to host your domain, and manage DNS zone records.
+    - content: Register new domain names, removing the need to use a domain registrar.
       isCorrect: false
-      explanation: Hot is a valid blob storage access tier.
-    - content: Standard
+      explanation: Azure DNS does not allow domain registration. It primarily allows you to host your domain, and manage DNS zone records.
+    - content: Manage and host your registered domain and associated records
       isCorrect: true
-      explanation: Standard is a storage performance tier, but not an access tier.
-    - content: Cool
-      isCorrect: false
-      explanation: Cool is a valid blob storage access tier.
-  - content: Which of these changes between access tiers will happen immediately?
+      explanation: Azure DNS allows you to host your registered domains, control and configure the domain records, like A, CNAME, MX, and setup alias records.
+  - content: What security features does Azure DNS provide?
     choices:
-    - content: Hot to Cool
+    - content: Role-based access control (RBAC), Activity Logs, and Resource Locking
       isCorrect: true
-      explanation: Changes between Hot and Cool, and to Archive, happen immediately.
-    - content: Archive to Cool
+      explanation: Azure DNS is built on Resource Manager that provides security across all resources in Azure DNS.
+    - content: Role-based access control (RBAC), Activity Logs, and Azure threat detection.
       isCorrect: false
-      explanation: Any change from Archive involves rehydration, which may take several hours to complete.
-    - content: Archive to Hot
+      explanation: Azure DNS does provide RBAC, and Activity logs, but threat detection is handled by Azure Security Manager.
+    - content: Role-based access control (RBAC), Activity Logs, and Azure infrastructure security.
       isCorrect: false
-      explanation: Any change from Archive involves rehydration, which may take several hours to complete.
+      explanation: Azure DNS does provide RBAC, and Activity logs, but infrastructure security is handled by Azure Security Manager.
+  - content: What kind of DNS record would you need to create to map one or more IP addresses against a single domain?
+    choices:
+    - content: CNAME
+      isCorrect: false
+      explanation: The CNAME record maps multiple domain names or hosts to a single IP address.
+    - content: A or AAAA
+      isCorrect: true
+      explanation: The A or AAAA record maps an IP address to a domain. Multiple IP addresses are known as a record set.
+    - content: NS
+      isCorrect: false
+      explanation: The NS record is the name space record for your DNS zone
+    - content: SOA
+      isCorrect: false
+      explanation: The SOA record is the start of authority for your domain, used by other DNS servers to resolve your domain.
