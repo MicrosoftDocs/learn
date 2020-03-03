@@ -40,6 +40,6 @@ quiz:
       isCorrect: false
       explanation: "Analysis is the part of the software development process."
     - content: "Writing code"
-      isCorrect: true
+      isCorrect: false
       explanation: "Writing code is the part of the software development process."  
   
