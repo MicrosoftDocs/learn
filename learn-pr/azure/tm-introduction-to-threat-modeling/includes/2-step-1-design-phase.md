@@ -1,6 +1,6 @@
 The design phase is the starting ground for your threat modeling activities. It includes gathering as much data as possible about what you're building and what you're using to build it with.
 
-The goals are to:
+## Goals
 
 - Develop a clear picture of how your system works
 - List every service consumed by your system
@@ -11,23 +11,25 @@ If you don't complete this phase, you might overlook important security design c
 
 ## How Do I Start?
 
-Start by asking as many questions as possible about your system. Here are a few to consider:
+Start by asking as many questions as possible about your system. Here are a few questions to consider:
 
-- **System Description** - What does the system do? What are the business processes handled by the service? Are they clearly defined?
-- **System Environment** - Will the system be built on the cloud or on-premise? Which OS will it be built on? Will containers be used? Is the system an application, service, or something entirely different?
-- **Scenarios** - How will the system be used? How it won't be used?
-- **Permissions** - Does the system have script execution, data, or hardware access requirements? If so, what are they?
-- **Cloud Provider** - Which cloud provider will the system use? What default security configuration options does it provide? How do these options affect the system security requirements?
-- **Operating System** - Which Operating System will the system use? What default security configuration options does it offer? How do these options affect the system security requirements?
-- **First- and Third-Party** - Which first- and third-party services will the system use? What default security configuration options do they offer? How do these options affect the system security requirements?
-- **Accounts** - What are the account types that will be used in the system, like users and administrators? Will these accounts be local or cloud enabled? What access do they need and why?
-- **Identity & Access Control** - How will the system help secure those accounts? Will it rely on Azure Active Directory (AAD)? Will it use features like Access Control Lists (ACL), Multi-Factor Authentication (MFA) and Session control?
-- **Tokens & Sessions** - Will the system process requests like SOAP or REST? How will it handle different sessions?
-- **Bypass** - Will the system use or require back-doors? If so, how will it work?
-- **Logging, Monitoring and Backup** - What are the mechanisms used by the system to log security events, monitor for anomalies and Backup system data? Which event types will it capture?
-- **Network** - What are all the intrusion detection and protection systems that will be used? How will communication be encrypted?
-- **Data** - What type of data will be created or handled by the system? What will the data classification type be? How will the system trust data sources? How will it parse data? What will be the expected input and output behaviors? How will validation be handled? How will data be encrypted across all states?
-- **Secrets Management** - How will the system handle keys, certificates, and credentials?
+|Area|Questions|
+|----|---------|
+|**System Description**|What does the system do? What are the business processes handled by the service? Are they clearly defined?|
+|**System Environment**|Will the system be built on the cloud or on-premise? Which OS will it be built on? Will containers be used? Is the system an application, service, or something entirely different?|
+|**Scenarios**|How will the system be used? How it won't be used?|
+|**Permissions**|Does the system have script execution, data, or hardware access requirements? If so, what are they?|
+|**Cloud Provider**|Which cloud provider will the system use? What default security configuration options does it provide? How do these options affect the system security requirements?|
+|**Operating System**|Which Operating System will the system use? What default security configuration options does it offer? How do these options affect the system security requirements?|
+|**First- and Third-Party**|Which first- and third-party services will the system use? What default security configuration options do they offer? How do these options affect the system security requirements?|
+|**Accounts**|What are the account types that will be used in the system, like users and administrators? Will these accounts be local or cloud enabled? What access do they need and why?|
+|**Identity & Access Control**|How will the system help secure those accounts? Will it rely on Azure Active Directory (AAD)? Will it use features like Access Control Lists (ACL), Multi-Factor Authentication (MFA) and Session control?|
+|**Tokens & Sessions**|Will the system process requests like SOAP or REST? How will it handle different sessions?|
+|**Bypass**|Will the system use or require back-doors? If so, how will it work?|
+|**Logging, Monitoring and Backup**|What are the mechanisms used by the system to log security events, monitor for anomalies and Backup system data? Which event types will it capture?|
+|**Network**|What are all the intrusion detection and protection systems that will be used? How will communication be encrypted?|
+|**Data**|What type of data will be created or handled by the system? What will the data classification type be? How will the system trust data sources? How will it parse data? What will be the expected input and output behaviors? How will validation be handled? How will data be encrypted across all states?|
+|**Secrets Management**|How will the system handle keys, certificates, and credentials?|
 
 > [!IMPORTANT]
 > The list above is extensive, but not exhaustive. Speak with your colleagues and security team to capture all relevant context for the system.
@@ -63,10 +65,14 @@ In addition to using these shapes, data-flow diagram elements also need enough c
 
 The amount of information to include in the data-flow diagram depends on a few key factors:
 
-- **Type of system you're building** - systems that don't handle sensitive data or are used only internally, may not need as much context as an externally facing system.
-- **Required context from your security team** - security teams are precise with what they look for in threat models. Speak with your security team to confirm the required depth layer.
+|Factor|Explanation|
+|------|-----------|
+|Type of system you're building|Systems that don't handle sensitive data or are used only internally, may not need as much context as an externally facing system|
+|Required context from your security team|Security teams are precise with what they look for in threat models. Speak with your security team to confirm the required depth layer|
 
 Failure to include the right context leads to incomplete security reviews and potentially vulnerable systems.
+
+## What Exactly Should I Include in the Data-Flow Diagram?
 
 To help you understand how much information to include, choose between these four context depth layers:
 
