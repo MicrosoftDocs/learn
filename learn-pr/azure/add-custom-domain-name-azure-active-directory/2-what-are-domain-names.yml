@@ -3,7 +3,7 @@ uid: learn.azure.add-custom-domain-name-azure-active-directory.domain-names-add
 title: What are domain names in Azure Active Directory?
 metadata:
   title: What are domain names in Azure Active Directory?
-  description: Explore how domain names are used in Azure AD and how subdomains are supported.
+  description: Explore how domain names are used in Azure Active Directory and how subdomains are supported.
   ms.date: 02/25/2020
   author: cwatson-cat
   ms.author: cwatson
@@ -19,23 +19,23 @@ quiz:
   - content: "What types of custom domain names are supported?"
     choices:
     - content: Only registered generic top-level domains.
-      explanation: "You can use any generic top-level domains, or country code top-level domains as long it isn't already being used by an Azure AD organization."
+      explanation: "You can use any generic top-level domains or country code top-level domains as long as an Azure AD organization isn't already using them."
       isCorrect: false
     - content: Only registered country code top-level domains.
       isCorrect: false
-      explanation: "You can use any country code top-level domains, or generic top-level domains as long it isn't already being used by an Azure AD organization."
-    - content: Any registered domain that's not already being used.
+      explanation: "You can use any country code top-level domains or generic top-level domains as long as an Azure AD organization isn't already using them."
+    - content: Any registered domains that are not already being used.
       isCorrect: true
-      explanation: "You can use any registered domain as long it isn't already being used by an Azure AD organization."
+      explanation: "You can use any registered domains as long as an Azure AD organization isn't already using them."
 
-  - content: "Which resources can a custom domain Azure AD account access?"
+  - content: "Which resources can a custom-domain Azure AD account access?"
     choices:
     - content: Only internal resources.
       isCorrect: false
-      explanation: "Azure AD Accounts can access internal and external resources."
+      explanation: "Azure AD accounts can access both internal and external resources."
     - content: Both internal and external resources.
-      explanation: "Azure AD Accounts can access both internal and external resources."
+      explanation: "Azure AD accounts can access both internal and external resources."
       isCorrect: true
     - content: Only external resources.
       isCorrect: false
-      explanation: "Azure AD Accounts can access external and internal resources."
+      explanation: "Azure AD accounts can access both external and internal resources."

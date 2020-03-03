@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.add-custom-domain-name-azure-active-directory.solve-common-issues
-title: Solve common issues when adding custom domain name
+title: Solve common problems when adding a custom domain name
 metadata:
-  title: Solve common issues when adding custom domain name
-  description: Resolve an unmanaged Azure Active Directory organization issue, and also explore other issues and how to resolve them.
+  title: Solve common problems when adding a custom domain name
+  description: Resolve an unmanaged Azure Active Directory organization problem, and also explore other problems and how to resolve them.
   ms.date: 02/25/2020
   author: cwatson-cat
   ms.author: cwatson
@@ -15,12 +15,12 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "What should you do if domain name verification fails?"
+  - content: "What should you do if domain-name verification fails?"
     choices:
-    - content: "Wait up to an hour, then go to the Azure Active Directory > Custom domain name page and select verify again."
+    - content: "Wait up to an hour, go to the Azure Active Directory > Custom domain names pane, and select Verify again."
       isCorrect: false
-      explanation: "Azure doesn't provide a way to re-verify."
-    - content: "Wait a 1/2 hour and refresh your browser to view the status in Azure."
+      explanation: "Azure doesn't provide a way to reverify."
+    - content: "Wait a half hour, and refresh your browser to view the status in Azure."
       isCorrect: false
       explanation: "It may take an hour or more for the DNS records to propagate."
     - content: "Wait at least an hour, then check that the data is correct with your domain registrar."
@@ -30,10 +30,10 @@ quiz:
     choices:
     - content: "None"
       isCorrect: false
-      explanation: "Domain names can only be used by a single Azure AD organization."
+      explanation: "Domain names can be used by only a single Azure AD organization."
     - content: "1"
       isCorrect: true
-      explanation: "Domain names are unique, and can only be used by in a single Azure AD organization."
+      explanation: "Domain names are unique and can be used by only a single Azure AD organization."
     - content: "900"
-      explanation: "You can have more than one domain name per Azure AD organization, the maximum being 900. But a single domain name can only be used in a single Azure AD organization."
+      explanation: "You can have more than one domain name per Azure AD organization, with the maximum being 900. But a single domain name can be used in only a single Azure AD organization."
       isCorrect: false
