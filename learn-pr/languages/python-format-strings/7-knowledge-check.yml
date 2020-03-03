@@ -21,23 +21,23 @@ quiz:
     - content: "Create a typical double quotation mark string and add a single quote where needed."
       isCorrect: false
       explanation: "This approach will work."
-    - content: "Create a typical string and use the escape sequence `\'` where needed."
+    - content: "Create a typical string and use the escape sequence a backslash and single quote where needed."
       isCorrect: false
       explanation: "This approach will work."
     - content: "Create a typical single quotation mark string and add three single quotes to create an escape sequence."
       isCorrect: true
       explanation: "This is the option that will not work.  It will result in an invalid syntax error."
-  - content: "How do you determine the number of characters in a variable `somesuch` that contains a string?"
+  - content: "How do you determine the number of characters in a variable `my_value` that contains a string?"
     choices:
-    - content: "`len(somesuch)`"
+    - content: "`len(my_value)`"
       isCorrect: true
       explanation: "The `len()` function is correct."
-    - content: "`somesuch.len()`"
+    - content: "`my_value.len()`"
       isCorrect: false
       explanation: "The `len()` function is not a helper function for strings."
-    - content: "`count(somesuch)`"
+    - content: "`count(my_value)`"
       isCorrect: false
       explanation: "Calling the `count()` function line this will not work."
-    - content: "`somesuch.count()`"
+    - content: "`my_value.count()`"
       isCorrect: false
-      explanation: "The `count()` helper function gives you the number of occurrances of the value you pass in."           
+      explanation: "The `count()` helper function gives you the number of occurrences of the value you pass in."           
