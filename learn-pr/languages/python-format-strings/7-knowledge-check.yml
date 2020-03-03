@@ -29,15 +29,15 @@ quiz:
       explanation: "This is the option that will not work.  It will result in an invalid syntax error."
   - content: "How do you determine the number of characters in a variable `somesuch` that contains a string?"
     choices:
-    - content: "len(somesuch)"
+    - content: "`len(somesuch)`"
       isCorrect: true
       explanation: "The `len()` function is correct."
-    - content: "somesuch.len()"
+    - content: "`somesuch.len()`"
       isCorrect: false
       explanation: "The `len()` function is not a helper function for strings."
-    - content: "count(somesuch)"
+    - content: "`count(somesuch)`"
       isCorrect: false
       explanation: "Calling the `count()` function line this will not work."
-    - content: "somesuch.count()"
+    - content: "`somesuch.count()`"
       isCorrect: false
       explanation: "The `count()` helper function gives you the number of occurrances of the value you pass in."           
