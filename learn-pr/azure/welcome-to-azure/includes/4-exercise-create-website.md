@@ -50,12 +50,14 @@ In the free Azure sandbox environment, you'll use the pre-created resource group
 
 1. Next, you're presented several options to configure your deployment. Enter the following information:
 
-    1. **App Name**: Choose a unique value for the App name. It will form part of a Fully Qualified Domain Name (FQDN).
-    1. **Subscription**: Make sure the **Concierge Subscription** is selected.
-    1. **Resource Group**: Select the **Use existing** radio button, then select the **<rgn>[sandbox resource group name]</rgn>** resource group from the drop-down list.
-    1. **Database Provider**: Select **MySQL in App**.
-    1. **App Service plan/location**: You'll change the App Service plan in the next step.
-    1. **Application Insights**: Leave at the default configuration.
+    | Field | Value |
+    |---|---|
+    | **App Name** | Choose a unique value for the App name. It will form part of a Fully Qualified Domain Name (FQDN). |
+    | **Subscription** | Make sure the **Concierge Subscription** is selected. |
+    | **Resource Group** | Select the **Use existing** radio button, then select the **<rgn>[sandbox resource group name]</rgn>** resource group from the drop-down list. |
+    | **Database Provider** | Select **MySQL in App**. |
+    | **App Service plan/location** | You'll change the App Service plan in the next step. |
+    | **Application Insights** | Leave at the default configuration. |
 
     Your configuration should look like this:
 
@@ -79,7 +81,7 @@ In the free Azure sandbox environment, you'll use the pre-created resource group
 
     Select the **Dev / Test** tab and select the **F1** pricing tier. Then select **Apply**.
 
-    [![Screenshot showing the notification information](../media/4-select-pricing-tier.png)](../media/4-select-pricing-tier-expanded.png#lightbox)
+    [![Screenshot showing the App Service Plan Pricing Tier panel with the Dev/Test section selected and the free F1 tier highlighted and chosen to apply](../media/4-select-pricing-tier.png)](../media/4-select-pricing-tier-expanded.png#lightbox)
 
 1. Back on the **New App Service plan** panel, select **OK** to create the new plan and close the panel.
 
@@ -96,15 +98,15 @@ We can track the progress of the deployment at any time.
 
 1. Select the **notification bell** icon at the top of the portal. If your browser window width is smaller, it may be shown when you click on the ellipsis (**...**) icon at the top right.
 
-    ![Screenshot showing the notification bell button](../media/4-notification-bell.png)
+    ![Screenshot showing the Azure portal top-right menu with the notification bell button highlighted](../media/4-notification-bell.png)
 
 1. Select **Deployment in progress...** to see the details about all the resources that are created.
 
-    ![Screenshot showing the notification information](../media/4-notification-bell-info.png)
+    ![Screenshot showing the deployment notification in the notifications list](../media/4-notification-bell-info.png)
 
     Notice how resources are listed as they're created and the status changes to a green check as each component in the deployment completes.
 
-    [![Screenshot showing the notification information](../media/4-deployment-progress.png)](../media/4-deployment-progress-expanded.png#lightbox)
+    [![Screenshot showing the details of the deployment notification, stating "Your deployment is underway"](../media/4-deployment-progress.png)](../media/4-deployment-progress-expanded.png#lightbox)
 
 1. Once the deployment status message change to **Your deployment is complete**, you'll notice the status in the notification dialogue changes to **Deployment succeeded**. Select **Go to resource** to navigate to the App Service overview.
 

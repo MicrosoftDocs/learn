@@ -2,7 +2,7 @@ Unit testing is a fundamental part of an Agile methodology. Visual Studio provid
 
 In the luxury watch online website scenario, your development team has a policy to achieve at least 80% coverage of code in unit testing. You would like to implement the same policy for Azure Functions.
 
-In this unit, you'll see how to use te `xUnit` test framework with Visual Studio to test Azure Functions.
+In this unit, you'll see how to use the `xUnit` test framework with Visual Studio to test Azure Functions.
 
 ## Create a unit test project
 
