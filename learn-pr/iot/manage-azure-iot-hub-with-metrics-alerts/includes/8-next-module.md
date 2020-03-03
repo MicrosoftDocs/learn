@@ -349,7 +349,7 @@ One of the goals is to make the code as identical as possible for each device, s
 
 The code is written in C#, and you can choose Visual Studio, or Visual Studio Code, as your development environment.
 
-## Create a project for a simulated device
+## Create a project for one simulated device
 
  Project stuff
  Code stuff
