@@ -55,7 +55,7 @@ quiz:
     - content: 'global.azure-devices-provisioning.net'
       isCorrect: true
       explanation: All IoT devices connected to Azure use this endpoint.
-    - content: 'Your DPS service endpoint'
+    - content: 'Your DPS endpoint'
       isCorrect: false
       explanation: This endpoint doesn't apply to all devices.
     - content: 'The setting for SecurityProviderX509'
@@ -83,10 +83,10 @@ quiz:
     - content: 'An intermediate certificate'
       isCorrect: false
       explanation: Multiple intermediate certificates can be created for one root certificate.
-    - content: 'A Self-signed certificate'
+    - content: 'A self-signed certificate'
       isCorrect: false
       explanation: Self-signing is a mechanism for verifying the certificates.
-    - content: 'A Verification certificate'
+    - content: 'A verification certificate'
       isCorrect: true
       explanation: Generating a verification code helps ensure proof of possession.
 

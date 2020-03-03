@@ -31,13 +31,13 @@ Suppose you're the manager of the cheese cave maturing process. Your first chees
 
 If your cheese business carries on growing, you're going to need solutions that scale smoothly and effortlessly.
 
-![Conceptual art, showing the business of agriculture](../media/iot-hub-dps-art.png)
+[![Conceptual art, showing the business of agriculture](../media/iot-hub-dps-art.png)](../media/iot-hub-dps-art.png#lightbox)
 
 You decide on a single Azure IoT Hub to process the telemetry from all 30 sensors. You decide that commercial competition requires that your system is secure. You must be certain of each device before accepting its input. You decide to investigate Azure DPS as your security service.
 
 Cheese making is a competitive business, and you want to keep your secrets well wrapped. And maybe your cheese too.
 
-![Photograph of mature blue cheese](../media/cheese-rect4.png)
+[![Photograph of mature blue cheese](../media/cheese-rect4.png)](../media/cheese-rect4.png#lightbox)
 
 ### The first step
 
@@ -131,11 +131,11 @@ A Device Provisioning Service (DPS) can be linked to one, or multiple hubs. So, 
 
 1. Type "provisioning" in the search box, and select **IoT Hub Device Provisioning Service**.
 
-    ![Screenshot showing the selection of the IoT Hub Device Provisioning Service](../media/iot-hub-dps-resource-create.png)
+    [![Screenshot showing the selection of the IoT Hub Device Provisioning Service](../media/iot-hub-dps-resource-create.png)](../media/iot-hub-dps-resource-create.png#lightbox)
 
 1. Specify the resource, with a name such as "CheeseCave-DPS". Use the sandbox subscription and resource group options. And choose your **Location**.
 
-    ![Screenshot showing the completed fields for a new DPS](../media/iot-hub-dps-resource-name.png)
+    [![Screenshot showing the completed fields for a new DPS](../media/iot-hub-dps-resource-name.png)](../media/iot-hub-dps-resource-name.png#lightbox)
 
 1. Create the resource, and wait for it to deploy.
 
@@ -149,11 +149,11 @@ A Device Provisioning Service (DPS) can be linked to one, or multiple hubs. So, 
 
 1. Locate the name of your IoT hub, and select **iothubowner** as the **Access Policy**. Click **Save**.
 
-    ![Screenshot showing how to link an IoT Hub to the DPS](../media/iot-hub-dps-resource-hub-link.png)
+    [![Screenshot showing how to link an IoT Hub to the DPS](../media/iot-hub-dps-resource-hub-link.png)](../media/iot-hub-dps-resource-hub-link.png#lightbox)
 
 1. Click **Manage allocation policy**, and verify the policy is set to **Evenly weighted distribution**.
 
-    ![Screenshot showing the DPS allocation policies](../media/iot-hub-dps-resource-policy.png)
+    [![Screenshot showing the DPS allocation policies](../media/iot-hub-dps-resource-policy.png)](../media/iot-hub-dps-resource-policy.png#lightbox)
 
 1. Perhaps bookmark a link to the **Overview** page of this resource.
 
@@ -167,37 +167,37 @@ The first time we create any X.509 certificates, we need to download some tools.
 
 1. Run the following script. It creates a certificate directory in the shell storage, and downloads some helper scripts to it.
 
-```azurecli
- # create certificates directory
- mkdir certificates
- # navigate to certificates directory
- cd certificates
+    ```azurecli
+     # create certificates directory
+     mkdir certificates
+     # navigate to certificates directory
+     cd certificates
+    
+     # download helper script files
+     curl https://raw.githubusercontent.com/Azure/azure-iot-sdk-c/master/tools/CACertificates/certGen.sh --output certGen.sh
+     curl https://raw.githubusercontent.com/Azure/azure-iot-sdk-c/master/tools/CACertificates/openssl_device_intermediate_ca.cnf --output openssl_device_intermediate_ca.cnf
+     curl https://raw.githubusercontent.com/Azure/azure-iot-sdk-c/master/tools/CACertificates/openssl_root_ca.cnf --output openssl_root_ca.cnf
+    
+     # update script permissions so user can read, write, and execute it
+     chmod 700 certGen.sh
+    ```
 
- # download helper script files
- curl https://raw.githubusercontent.com/Azure/azure-iot-sdk-c/master/tools/CACertificates/certGen.sh --output certGen.sh
- curl https://raw.githubusercontent.com/Azure/azure-iot-sdk-c/master/tools/CACertificates/openssl_device_intermediate_ca.cnf --output openssl_device_intermediate_ca.cnf
- curl https://raw.githubusercontent.com/Azure/azure-iot-sdk-c/master/tools/CACertificates/openssl_root_ca.cnf --output openssl_root_ca.cnf
+    These helper scripts are downloaded from the Azure/azure-iot-sdk-c open-source project hosted on GitHub. This project is a part of the Azure IoT SDK. The certGen.sh helper script will help demonstrate the purpose of CA Certificates without diving into the specifics of OpenSSL configuration. If you need additional instructions on using these helper scripts, or for instructions on how to use PowerShell instead of Bash, refer to [CACertificateOverview](https://github.com/Azure/azure-iot-sdk-c/blob/master/tools/CACertificates/CACertificateOverview.md).
 
- # update script permissions so user can read, write, and execute it
- chmod 700 certGen.sh
-```
-
-These helper scripts are downloaded from the Azure/azure-iot-sdk-c open-source project hosted on GitHub. This project is a part of the Azure IoT SDK. The certGen.sh helper script will help demonstrate the purpose of CA Certificates without diving into the specifics of OpenSSL configuration. If you need additional instructions on using these helper scripts, or for instructions on how to use PowerShell instead of Bash, refer to [CACertificateOverview](https://github.com/Azure/azure-iot-sdk-c/blob/master/tools/CACertificates/CACertificateOverview.md).
-
->[!WARNING]
->Do not use these helper scripts in a production environment, as the scripts contain hard-coded passwords that expire after 30 days. The scripts are provided only for demo purposes.
+    >[!WARNING]
+    >Do not use these helper scripts in a production environment, as the scripts contain hard-coded passwords that expire after 30 days. The scripts are provided only for demo purposes.
 
 1. Run the following command to generate root and intermediate certificates. We're only interested in the root certificate, which will be named `azure-iot-test-only.root.ca.cert.pem`.
+    
+    ```azurecli
+     ./certGen.sh create_root_and_intermediate
+    ```
 
-```azurecli
- ./certGen.sh create_root_and_intermediate
-```
+1. We need to download the root certificate to your local machine, to then upload it to Azure DPS. Enter:
 
-1. We need to download the root certificate to your local machine, to then upload it to Azure DPS. Type:
-
-```azurecli
- download ~/certificates/certs/azure-iot-test-only.root.ca.cert.pem
-```
+    ```azurecli
+     download ~/certificates/certs/azure-iot-test-only.root.ca.cert.pem
+    ```
 
 ### Configure Azure DPS to trust the root certificate
 
@@ -211,7 +211,9 @@ These helper scripts are downloaded from the Azure/azure-iot-sdk-c open-source p
 
 1. Click **Save**.
 
-After the root certificate has been uploaded, the **Certificates** pane will display the certificate with the status of **Unverified**. Before this CA Certificate can be used to authenticate devices to DPS, you'll need to verify _Proof of Possession_ of the certificate.
+After the root certificate has been uploaded, the **Certificates** pane will display the certificate with the status of **Unverified**. Before this CA Certificate can be used to authenticate devices to DPS, you'll need to establish _Proof of Possession_ of the certificate.
+
+### Establish your Proof of Possession
 
 1. In the **Certificates** pane, click on the certificate to open the **Certificate Details** pane.
 
@@ -225,17 +227,17 @@ After the root certificate has been uploaded, the **Certificates** pane will dis
 
 1. Copy the following command to the text file containing the verification code, and change the &lt;verification-code&gt; to the actual code.
 
-```azurecli
- ./certGen.sh create_verification_certificate <verification-code>
-```
+    ```azurecli
+     ./certGen.sh create_verification_certificate <verification-code>
+    ```
 
 1. Back in the Azure Cloud Shell, and in the **certificates** directory, run the completed command. This command generates a verification certificate that is chained to the root certificate. The generated certificate is named `verification-code.cert.pem`, and is located within the **./certs** directory of the Azure Cloud Shell.
 
 1. Run the following command to download the verification certificate to your local machine.
 
-```azurecli
-download ~/certificates/certs/verification-code.cert.pem
-```
+    ```azurecli
+    download ~/certificates/certs/verification-code.cert.pem
+    ```
 
 1. Change focus back to the **Certificate Details** pane of the Azure portal. For **Verification Certificate .pem or .cer file**, navigate to, and select the `verification-code.cert.pem` file.
 
@@ -274,19 +276,19 @@ In this unit, we need to create one leaf certificate for each device that we wan
 
 1. Run the following command:
 
-```azurecli
- ./certGen.sh create_device_certificate cheesecave-device1
-```
+    ```azurecli
+     ./certGen.sh create_device_certificate cheesecave-device1
+    ```
 
 1. Verify the leaf certificate was created correctly. You should see numerous console messages, ending in something like the following image.
 
-    ![Console output showing the correct creation of a leaf certificate](../media/iot-hub-dps-cert-create1.png)
+    [![Console output showing the correct creation of a leaf certificate](../media/iot-hub-dps-cert-create1.png)](../media/iot-hub-dps-cert-create1.png#lightbox)
 
 1. To download the created certificate to your local machine, enter:
 
-```azurecli
-download ~/certificates/certs/new-device.cert.pfx
-```
+    ```azurecli
+    download ~/certificates/certs/new-device.cert.pfx
+    ```
 
 1. Create a new folder in your **Documents** folder, called "cheesecave certs", or something similar.
 
@@ -300,19 +302,19 @@ download ~/certificates/certs/new-device.cert.pfx
 
 1. In the Azure Cloud Shell, create a second leaf certificate:
 
-```azurecli
- ./certGen.sh create_device_certificate cheesecave-device2
-```
+    ```azurecli
+     ./certGen.sh create_device_certificate cheesecave-device2
+    ```
 
 1. If you get a `Permission denied` response, similar to the following, verify you've deleted the earlier certificates correctly.
 
-    ![Console output showing a leaf certificate was not created](../media/iot-hub-dps-cert-denied.png)
+    [![Console output showing a leaf certificate was not created](../media/iot-hub-dps-cert-denied.png)](../media/iot-hub-dps-cert-denied.png#lightbox)
 
 1. Download the second certificate to your local machine, enter:
 
-```azurecli
-download ~/certificates/certs/new-device.cert.pfx
-```
+    ```azurecli
+    download ~/certificates/certs/new-device.cert.pfx
+    ```
 
 1. Copy the **new-device-cert.pfx** file from its downloaded location into the **cheesecave certs** folder, and rename it **new-device-cert2.pfx**.
 
@@ -324,15 +326,15 @@ download ~/certificates/certs/new-device.cert.pfx
 
 1. In the Azure Cloud Shell, create a third leaf certificate:
 
-```azurecli
- ./certGen.sh create_device_certificate cheesecave-device3
-```
+    ```azurecli
+     ./certGen.sh create_device_certificate cheesecave-device3
+    ```
 
 1. Download the third certificate to your local machine, enter:
 
-```azurecli
-download ~/certificates/certs/new-device.cert.pfx
-```
+    ```azurecli
+    download ~/certificates/certs/new-device.cert.pfx
+    ```
 
 1. Copy the **new-device-cert.pfx** file from its downloaded location into the **cheesecave certs** folder, and rename it **new-device-cert3.pfx**.
 
@@ -355,13 +357,13 @@ The code is written in C#, and you can choose Visual Studio, or Visual Studio Co
 
 1. Change the &lt;your leaf path&gt; to the actual path to your leaf certificate.
 
-```csharp
-      private static string s_certificateFileName = "C:\\Users\\<your user name>\\Documents\\cheesecave certs\\new-device.cert1.pfx";
-```
+    ```csharp
+          private static string s_certificateFileName = "C:\\Users\\<your user name>\\Documents\\cheesecave certs\\new-device.cert1.pfx";
+    ```
 
 1. Set the app running. In Visual Studio, select **Debug/Start without Debugging**. In Visual Studio Code, enter `dotnet run` in the terminal.
 
-    ![Console output showing the first device running correctly](../media/iot-hub-dps-device1.png)
+    [![Console output showing the first device running correctly](../media/iot-hub-dps-device1.png)](../media/iot-hub-dps-device1.png#lightbox)
 
 ### Create an app for a second device
 
@@ -369,7 +371,7 @@ The code is written in C#, and you can choose Visual Studio, or Visual Studio Co
 1. Change the leaf name from `new-device.cert1.pfx` to `new-device.cert2.pfx`.
 1. Set the app running.
 
-    ![Console output showing the second device running correctly](../media/iot-hub-dps-device2.png)
+    [![Console output showing the second device running correctly](../media/iot-hub-dps-device2.png)](../media/iot-hub-dps-device2.png#lightbox)
 
 ### Create an app for a third device
 
@@ -377,7 +379,7 @@ The code is written in C#, and you can choose Visual Studio, or Visual Studio Co
 1. Change the leaf path from `new-device.cert1.pfx` to `new-device.cert3.pfx`.
 1. Set the app running.
 
-    ![Console output showing the third device running correctly](../media/iot-hub-dps-device3.png)
+    [![Console output showing the third device running correctly](../media/iot-hub-dps-device3.png)](../media/iot-hub-dps-device3.png#lightbox)
 
 Great, a bit of repetitive work, but we now have our crowd of devices. The next, and final, step is to test our DPS resource and IoT Hub handle the assignments and telemetry correctly.
 
@@ -392,26 +394,26 @@ In this unit, we verify all the pieces we have put in place work as expected. Yo
 
 1. Verify all three device apps are still sending telemetry.
 
-    ![Console output showing all three devices running](../media/iot-hub-dps-devices123.png)
+    [![Console output showing all three devices running](../media/iot-hub-dps-devices123.png)](../media/iot-hub-dps-devices123.png#lightbox)
 
 1. In the Azure portal for your DPS service, locate **Monitoring** in the left-hand menu, and select **Metrics**. Verify all three devices are assigned, by setting **Metric** to **Devices assigned**, and **Aggregation** to **Sum**.
 
-    ![Screenshot showing devices assigned metrics](../media/iot-hub-dps-metrics-devices.png)
+    [![Screenshot showing devices assigned metrics](../media/iot-hub-dps-metrics-devices.png)](../media/iot-hub-dps-metrics-devices.png#lightbox)
 
 1. In the Azure portal, this time for your IoT Hub, select **IoT devices** in the left-hand menu. Verify all three devices are listed, and have **Status** set to **Enabled**.
 
-    ![Screenshot showing the list of device IDs enabled in the IoT Hub](../media/iot-hub-dps-device-list.png)
+    [![Screenshot showing the list of device IDs enabled in the IoT Hub](../media/iot-hub-dps-device-list.png)](../media/iot-hub-dps-device-list.png#lightbox)
 
-> [!NOTE]
-> You'll remember that you did not add any devices using the Azure portal. These devices have been added by the link from your DPS system.
+    > [!NOTE]
+    > You'll remember that you did not add any devices using the Azure portal. These devices have been added by the link from your DPS system.
 
 1. For added reassurance, in the left-hand menu select **Metrics** for your hub. Enter **Connected devices** for **Metric**, and set **Aggregation** to **Max**.
 
-    ![Screenshot showing connected devices metrics](../media/iot-hub-dps-metrics-devices-hub.png)
+    [![Screenshot showing connected devices metrics](../media/iot-hub-dps-metrics-devices-hub.png)](../media/iot-hub-dps-metrics-devices-hub.png#lightbox)
 
 1. Still in **Metrics**, verify telemetry is received by changing **Metric** to **Telemetry messages sent**, and **Aggregation** to **Sum**.
 
-    ![Screenshot showing telemetry messages sent metrics](../media/iot-hub-dps-metrics-telemetry.png)
+    [![Screenshot showing telemetry messages sent metrics](../media/iot-hub-dps-metrics-telemetry.png)](../media/iot-hub-dps-metrics-telemetry.png#lightbox)
 
 You've now verified that all devices connected automatically to the hub via the DPS resource. You've completed the substance of this module, but let's do one more test, to verify communication in the opposite direction.
 
@@ -425,11 +427,11 @@ In this test, let's change one of the device twin properties in the portal, and 
 
 1. Change the desired temperature to something different and noticeable: say "50.123". And click **Save**.
 
-    ![Screenshot showing a change to the desired properties, in a device twin](../media/iot-hub-dps-twin-temp.png)
+    [![Screenshot showing a change to the desired properties, in a device twin](../media/iot-hub-dps-twin-temp.png)](../media/iot-hub-dps-twin-temp.png#lightbox)
 
 1. Verify, in the console output, the change is picked up quickly by the selected device.
 
-    ![Console output, showing the device twin property change has been picked up by the device](../media/iot-hub-dps-twin-temp-set.png)
+    [![Console output, showing the device twin property change has been picked up by the device](../media/iot-hub-dps-twin-temp-set.png)](../media/iot-hub-dps-twin-temp-set.png#lightbox)
 
 If all this worked as expected, great work. You now know what needs to be done to provision devices at scale. We limited ourselves to three devices, but you can imagine, with some automation and tooling, how you could provision a large number of devices, with minimum human involvement.
 
@@ -441,7 +443,7 @@ Completing this module should have given you valuable insight into the dark worl
 
 In short, you have learnt how to keep your cheese maturing practices a secret!
 
-![Photograph of mature blue cheese](../media/cheese-rect3.png)
+[![Photograph of mature blue cheese](../media/cheese-rect3.png)](../media/cheese-rect3.png#lightbox)
 
 In this module, you learned how to:
 

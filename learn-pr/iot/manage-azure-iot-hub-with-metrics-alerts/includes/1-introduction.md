@@ -69,4 +69,5 @@ The first step to building this system is to create a custom IoT Hub.
 
 1. badge artwork
 1. test with sandbox
-1. verify use of IoT Hub v IoT hub (lower case)
+1. verify use of IoT Hub v IoT hub (lower case) - leaving as is
+1. check procedure numbering
