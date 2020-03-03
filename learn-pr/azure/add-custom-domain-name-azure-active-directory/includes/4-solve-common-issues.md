@@ -6,7 +6,7 @@ In this unit, you'll resolve the unmanaged Azure AD organization problem, explor
 
 ## A custom domain name is under an unmanaged organization
 
-If members of your organization sign up for another Microsoft service like OneDrive or Power BI, the service uses their email domain to create an unmanaged Azure AD organization. This organization or directory is useable for only that service. You can't add it as a custom domain in Azure AD.
+If members of your organization sign up for another Microsoft service like OneDrive or Power BI, their email domain is used to create an unmanaged Azure AD organization. This organization or directory is useable for only that service. You can't add it as a custom domain in Azure AD.
 
 You have two options to resolve this problem. Which you use depends on the service they signed up for.
 
@@ -39,7 +39,7 @@ Internal admin takeovers are more complex and involve signing up for a Power BI 
 
 When you verify your domain, you update the DNS records with your domain name registrar. A period of time is required for the change to propagate through the world's DNS servers. The time taken can be an hour or more. During this period, Azure can't read the record or verify the domain name.
 
-If the domain is still unverified after an hour, check that you've entered the correct details. You can check them directly with your registrar or by using the **Resolve-DnsName** PowerShell command.
+If the domain is still unverified after an hour, check that you've entered the correct details. You can check them directly with your registrar or by using the `Resolve-DnsName` PowerShell command.
 
 ```PowerShell
 Resolve-DnsName -Name proseware.com -Type TXT

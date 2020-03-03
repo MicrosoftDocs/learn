@@ -66,14 +66,14 @@ After you add the custom domain name and any subdomains, set one of the domain n
 
 You might prefer to manage your domain names by using Azure PowerShell.
 
-- **New-AzureADDomain**: Creates a new domain. Use the parameter **-IsDefault** to set the domain name as the primary domain name.
-- **Confirm-AzureADDomain**: Lets you try to validate the ownership of a domain.
-- **Set-AzureADDomain**: Updates a domain name and can set the domain to the primary domain name.
-- **Remove-AzureADDomain**: Deletes a domain from Azure AD.
+- `New-AzureADDomain`: Creates a new domain. Use the parameter `-IsDefault` to set the domain name as the primary domain name.
+- `Confirm-AzureADDomain`: Lets you try to validate the ownership of a domain.
+- `Set-AzureADDomain`: Updates a domain name and can set the domain to the primary domain name.
+- `Remove-AzureADDomain`: Deletes a domain from Azure AD.
 
 ## Add a user
 
-After you add a custom domain name and set it to the primary domain, add users.
+After you add a custom domain name and set it to be the primary domain, add users.
 
 1. In the Azure portal, go to **Azure Active Directory**.
 1. On the left side of the pane, under **Manage** select **Users**.
@@ -81,4 +81,4 @@ After you add a custom domain name and set it to the primary domain, add users.
 
    ![Screenshot of adding a new user for a custom domain](../media/3-add-users.png)
 
-1. In the **User name** and **Name** boxes, enter values for your pilot user. The primary domain name appears as part of the user name.
+1. For **User name** and **Name**, enter values for your pilot user. The primary domain name appears as part of the user name.

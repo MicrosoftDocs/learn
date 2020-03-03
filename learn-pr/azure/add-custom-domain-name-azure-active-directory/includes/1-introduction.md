@@ -1,4 +1,4 @@
-You can add custom domain names to Azure Active Directory (AD). After you add the domain names, your employees can use memorable and branded user names to access your company's resources.
+You can add custom domain names to Azure Active Directory (Azure AD). After you add the domain names, your employees can use memorable and branded user names to access your company's resources.
 
 Your organization used Azure to develop and test a pilot project. It has now decided to make Azure available to the entire company. You're the organization's Global Administrator in Azure AD. You're going to set up accounts for all your employees.
 
@@ -10,10 +10,10 @@ This module explains how Azure AD supports custom domain names and shows how to 
 
 In this module, you'll:
 
-- Add a custom domain name in Azure Active Directory.
+- Add a custom domain name in Azure AD.
 - Identify common problems when you verify the custom domain name.
 
 ## Prerequisites
 
-- Familiarity with identity and access management concepts in Azure Active Directory
+- Familiarity with identity and access-management concepts in Azure AD
 - Basic knowledge of networking concepts like Domain Name System (DNS)
