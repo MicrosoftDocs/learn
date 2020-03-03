@@ -3,13 +3,12 @@ uid: learn.azure.host-domain-azure-dns.introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: This module will show you how to configure Azure DNS to host your domain. You'll also see how to add alias and other DNS record to successfully resolve your domain name to a working website.
-  ms.date: 08/13/2019
+  description: Learn how to configure Azure DNS to host your domain. 
+  ms.date: 03/13/2020
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]
