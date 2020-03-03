@@ -31,7 +31,7 @@ quiz:
     choices:
     - content: "inventory_count_on_hand"
       isCorrect: false
-      explanation: "While this variable name satisfies many aspects of Python's guidance on naming variables, there's a shorter option available that would likely suffice."
+      explanation: "While the variable name `inventory_count_on_hand` satisfies many aspects of Python's guidance on naming variables, there's a shorter option available that would likely suffice."
     - content: "inventoryCountOnHand"
       isCorrect: false
       explanation: "The Python naming convention suggests using all lower-case, separating each word with an underscore.  There's a better variable name choice you can make."
