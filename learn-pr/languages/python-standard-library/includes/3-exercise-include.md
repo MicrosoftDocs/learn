@@ -29,7 +29,7 @@ import random
 roll = random.
 ```
 
-If you stopped typing, you should see the Intellisense window displaying all of the functions available from the `random` module.
+If you stopped typing at the `.` symbol, you should see the Intellisense window displaying all of the functions available from the `random` module.
 
 You can learn a lot about the functionality of a module by merely perusing its functions.  Locate the `randint` function by selecting the <kbd>up arrow</kbd> and <kbd>down arrow</kbd> keys.  Once you find it, what you see in your copy of Visual Studio Code should match the following screenshot:
 
