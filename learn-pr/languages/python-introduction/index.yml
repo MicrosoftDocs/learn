@@ -23,7 +23,7 @@ levels:
 roles:
 - developer
 products:
-- dotnet
+- vs
 units:
 - learn.languages.python-introduction.introduction
 - learn.languages.python-introduction.what-is-programming
