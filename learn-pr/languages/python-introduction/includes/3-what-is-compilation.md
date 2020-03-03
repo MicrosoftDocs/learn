@@ -18,7 +18,7 @@ Python has similar features to many programming languages, but it functions diff
 
 Python has a compiler, but the Python compiler does not translate the code directly into a computer understandable format.  Instead, it compiles the code into a special format that can then be interpreted and executed by the Python **interpreter**.  The interpreter is a program that executes each instruction, tracking where it stores values in memory, knowing how to interface with external resources like the file system and the network, and so on.  In other words, it is an execution environment that takes care of complex interactions between your intent and the computer's inner workings.
 
-Furthermore, each time you want to execute your program, the Python source code be recompiled.
+Furthermore, each time you want to execute your program, the Python source code is recompiled.
 
 There are several benefits to this approach.
 

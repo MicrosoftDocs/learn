@@ -17,6 +17,16 @@ Building a new program follows predictable set of actions:
 
 Again, no matter whether you'll be the only user or you work in a large team and distribute your program to thousands of users, the basic process is the same.  Writing code is important, but it's not the only step -- even when you're solving coding challenges or assignments for a class!
 
+Most tutorials and classes usually focus on writing code.  This is probably because it's both the hardest and the most fun.  It's also the activity that requires a deep amount of knowledge about to complete.  This step has its own process:
+
+- Focus on some small part of the larger problem.
+- Write code to implement that small part.
+- Run the program and watch it work.  If it doesn't work, figure out why.
+- Re-write the code to fix any issues.
+- Keep repeating this process until you're done.
+
+It's the last part, often called "iterating", is popular in software development.  Rarely does anyone write more than a few lines of code before running the program to see if the code they write actually does what they wanted it to do, and to see where they went wrong.  Fixing a problem in your code is as easy as typing a editing a document.  It's like driving a car -- you make a thousand small course corrections until you get to your destination.  While it can seem daunting at first, when compared to jobs like pilot, surgeon, or construction worker, software developers can make lots of mistakes along the way and still be good at what they do.
+
 ## What programming tools should I use?
 
 While you could use a basic text editor like Windows Notepad or Vim in your macOS or Linux terminal along with the Python compiler and interpreter, you'll have a better experience with a dedicated code editor.
