@@ -117,6 +117,7 @@ When you run the code, you should see now the following output that includes the
 
 ```output
 Generating invoices for customer "ABC Corp" ...
+
 Invoice: 1021		Complete!
 Invoice: 1022		Complete!
 
