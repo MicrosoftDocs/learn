@@ -2,6 +2,7 @@ Large organizations have multiple users from various business groups who need to
 - Log into the cluster in a secure manner
 - Enforce the principle of least privilege (PLOP) when it comes to accessing the underlying data 
 - Log the events that have security significance. 
+
 The purpose of application security in HDInsight is to provide ways to securely authenticate multiple users into HDInsight, enforcing the practice of limiting access rights for users on data to the bare minimum permissions they need to perform their work and finally logging events that have security significance, such as a login, an attempt to perform a privileged action, a modification of an important record.
 
 ## Authentication 
