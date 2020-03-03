@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.top-5-security-items-to-consider.1-introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction
+  author: patridge
+  ms.author: adpatrid
+  ms.date: 09/24/2018
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

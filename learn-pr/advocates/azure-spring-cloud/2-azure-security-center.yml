@@ -1,0 +1,26 @@
+### YamlMime:ModuleUnit
+uid: learn.top-5-security-items-to-consider.2-azure-security-center
+title: Azure Security Center
+metadata:
+  title: Azure Security Center
+  description: Azure Security Center
+  author: patridge
+  ms.author: adpatrid
+  ms.date: 09/24/2018
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 15
+content: |
+  [!include[](includes/2-azure-security-center.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: "True or false: Azure Security Center works for Azure resources and on-premises resources."
+    choices:
+    - content: "True"
+      isCorrect: true
+      explanation: "Azure Security Center can monitor all your services, both in Azure and on premises."
+    - content: "False"
+      isCorrect: false
+      explanation: "Azure Security Center is not limited to Azure-hosted resources."

@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.top-5-security-items-to-consider
+metadata:
+  #TODO: Update this title to be more consistent with other titles?
+  title: Top 5 security items to consider before pushing to production
+  description: Learn about the Site Reliability Engineering approach to the challenge of assuring reliability and gain a better understanding of why it matters.
+  author: patridge
+  ms.author: adpatrid
+  ms.date: 09/24/2018
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Top 5 security items to consider before pushing to production
+summary: Secure your web applications on Azure and protect your apps against the most common and dangerous web application attacks.
+abstract: | 
+ In this module, you will:
+  - Use Azure Security Center
+  - Verify your application's inputs and outputs
+  - Store your secrets into Key Vault
+  - Ensure you are using the latest version of your framework, and its security features
+  - Validate that your program dependencies and libraries are safe to use
+prerequisites: None
+iconUrl: /learn/achievements/top-5-security-items-to-consider.svg
+levels:
+- intermediate
+roles:
+- developer
+- administrator
+- security-engineer
+products:
+- azure
+- azure-key-vault
+units:
+- learn.top-5-security-items-to-consider.1-introduction
+- learn.top-5-security-items-to-consider.2-azure-security-center
+- learn.top-5-security-items-to-consider.3-inputs-and-outputs
+- learn.top-5-security-items-to-consider.4-secrets-in-key-vault
+- learn.top-5-security-items-to-consider.5-framework-updates
+- learn.top-5-security-items-to-consider.6-safe-dependencies
+- learn.top-5-security-items-to-consider.7-conclusion
+badge:
+  uid: learn.top-5-security-items-to-consider.badge
