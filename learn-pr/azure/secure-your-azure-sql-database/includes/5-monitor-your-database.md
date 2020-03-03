@@ -6,7 +6,22 @@ Azure SQL Database has built-in features that can help you track what's happenin
 
 By enabling auditing, operations that occur on the database are stored for later inspection or to have automated tools analyze them. Auditing is also used for compliance management or understanding how your database is used. Auditing is also required if you wish to use Azure threat detection on your Azure SQL database.
 
+You can use SQL database auditing to:
+
+- Retain an audit trail of selected events. You can define categories of database actions to be audited.
+- Report on database activity. You can use pre-configured reports and a dashboard to get started quickly with activity and event reporting.
+- Analyze reports. You can find suspicious events, unusual activity, and trends.
+
 Audit logs are written to Append Blobs in an Azure Blob storage account that you designate. Audit policies can be applied at the server-level or database-level. Once enabled, you can use the Azure portal to view the logs, or send them to Log Analytics or Event Hub for further processing and analysis.
+
+## Auditing in practice
+
+As a best practice, avoid enabling both server blob auditing and database blob auditing together, unless:
+
+- You want to use a different storage account or retention period for a specific database.
+- You want to audit event types or categories for a specific database that differs from the rest of the databases on the server. For example, you might have table inserts that need to be audited but only for a specific database.
+
+Otherwise, it's recommended you enable only server-level blob auditing and leave the database-level auditing disabled for all databases.
 
 Let's look at the steps you take to set up auditing on your system.
 
@@ -80,8 +95,8 @@ Let's enable Advanced Data Security on our database. Advanced Data Security is a
 1. Select **Advanced Threat Protection Types** to take a quick look at those. The preferred option is All, which is the default setting.
 
     **All** represents the following values:
-    - SQL injection reports where SQL injections attacks have occurred;
-    - SQL injection vulnerability reports where the possibility of a SQL injection is likely; and
+    - SQL injection reports where SQL injection attacks have occurred.
+    - SQL injection vulnerability reports where the possibility of a SQL injection is likely.
     - Anomalous client login looks at logins that are irregular and could be cause for concern, such as a potential attacker gaining access.
 
 1. Click the **Save** button to apply the changes and enable Advanced Data Security on your server.
@@ -128,7 +143,7 @@ On the vulnerability page you will see the details such as the risk level, which
 
 Click on the **Threat Detection** panel.
 
-This displays a list of detected threats. For example, in this list you one potential SQL injection attacks.
+This displays a list of detected threats. For example, here you can see one potential SQL injection attack listed.
 
 ![Threat Detection](../media/5-threat-detection-dashboard.png)
 

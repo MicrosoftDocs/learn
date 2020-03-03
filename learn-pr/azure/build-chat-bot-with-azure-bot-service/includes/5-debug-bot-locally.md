@@ -103,7 +103,7 @@ Now that we have the emulator installed,
 
 1. Select the **Debug** button in the activity bar, then select the green arrow **Start Debugging** button to start a debugging session.
 
-1. Confirm that "test bot endpoint at <http://localhost:3978/api/messages>" appears in the debug console.
+1. Confirm that "test bot endpoint at `http://localhost:3978/api/messages`" appears in the debug console.
 
     ![Screenshot of Visual Studio Code showing the Debug system with the Debug navigation item and debug play button used to start a debugging session highlighted.](../media/5-vs-launch-debugger.png)
 

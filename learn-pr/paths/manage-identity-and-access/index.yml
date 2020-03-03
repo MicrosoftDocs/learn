@@ -1,0 +1,39 @@
+### YamlMime:LearningPath
+uid: learn.security.manage-identity-and-access
+metadata:
+  title: Manage identity and access in Azure Active Directory
+  description: Learn how to work with subscriptions, users, and groups by configuring Microsoft Azure Active Directory for workloads.
+  brand: azure
+  ms.date: 10/1/2019
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Manage identity and access in Azure Active Directory
+summary: Learn how to work with subscriptions, users, and groups by configuring Microsoft Azure Active Directory for workloads.
+prerequisites: None
+iconUrl: /learn/achievements/manage-identity-and-access.svg
+levels:
+- beginner
+- intermediate
+roles:
+- solution-architect
+- administrator
+- security-engineer
+products:
+- azure
+- azure-clis
+- azure-portal
+- azure-active-directory
+modules:
+- learn.introduction-to-security
+- learn.create-azure-account
+- learn.azure-security.manage-users-and-groups-in-aad
+- learn.azure.create-users-and-groups-in-azure-active-directory
+#- learn.secure-access-azure-ad-multi-factor-authentication
+- learn.secure-app-with-oidc-and-azure-ad
+- learn.azure-security.secure-aad-users-with-mfa
+- learn.azure.allow-users-to-reset-their-password
+- learn.azure.add-custom-domain-name-azure-active-directory
+trophy:
+  uid: learn.security.manage-identity-and-access.trophy

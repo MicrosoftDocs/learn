@@ -20,8 +20,12 @@ summary: |
   - Run functional and non-functional tests that verify your application's behavior and performance.
   - Choose and implement an appropriate deployment pattern to smoothly roll out new features to your users.
 
+  Take this learning path to help prepare for [Exam AZ-400: Microsoft Azure DevOps Solutions](https://www.microsoft.com/learning/exam-az-400.aspx).
 cardDescription: Learn how to configure release pipelines that continuously build, test, and deploy your applications.
-prerequisites: An [Azure subscription](https://azure.microsoft.com/free/)
+prerequisites: |
+  - [Evolve your DevOps practices](/learn/paths/evolve-your-devops-practices)
+  - [Build applications with Azure DevOps](/learn/paths/build-applications-with-azure-devops)
+  - An [Azure subscription](https://azure.microsoft.com/free/)
 iconUrl: /learn/achievements/azure-devops/deploy-applications-with-azure-devops.svg
 levels:
 - intermediate
@@ -29,13 +33,13 @@ roles:
 - devops-engineer
 - administrator
 - developer
-- solution-architect
 products:
 - azure
 - azure-devops
 modules:
 - learn.azdo.create-release-pipeline
 - learn.azdo.create-multi-stage-pipeline
+- learn.azdo.manage-database-changes-in-azure-pipelines
 - learn.azdo.run-functional-tests-azure-pipelines
 - learn.azdo.run-non-functional-tests-azure-pipelines
 - learn.azdo.manage-release-cadence

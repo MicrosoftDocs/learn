@@ -55,16 +55,17 @@ The preceding command installs a specific version of the .NET Core SDK in the Az
 
 ## Build and test
 
+1. [!INCLUDE[dotnet build command](../../includes/dotnet-build-command.md)]
+
 1. Run the following .NET Core CLI command in the command shell:
 
     ```dotnetcli
-    dotnet run > ContosoPets.Api.log &
+    dotnet ./bin/Debug/netcoreapp3.0/ContosoPets.Api.dll \
+        > ContosoPets.Api.log &
     ```
 
     The preceding command:
 
-    * Restores the project's NuGet packages.
-    * Builds the project code.
     * Hosts the web API with ASP.NET Core's Kestrel web server.
     * Displays the background task's process ID.
 
@@ -78,7 +79,7 @@ The preceding command installs a specific version of the .NET Core SDK in the Az
 1. Send an HTTP GET request to the web API:
 
     ```bash
-    curl -k -s https://localhost:5001/api/values | jq
+    curl -k -s https://localhost:5001/weatherforecast | jq
     ```
 
     > [!NOTE]
@@ -86,16 +87,27 @@ The preceding command installs a specific version of the .NET Core SDK in the Az
 
     The preceding command uses:
 
-    * HTTPS to send a request to the web API running on port 5001 of localhost. The `ValuesController` class' parameterless `Get` action method handles the request.
+    * HTTPS to send a request to the web API running on port 5001 of localhost. The `WeatherForecastController` class' parameterless `Get` action method handles the request.
     * The `-k` option to indicate that `curl` should allow insecure server connections when using HTTPS. The .NET Core SDK includes an HTTPS development certificate for testing. By default, `curl` rejects secure connections using this certificate.
     * The `-s` option to suppress all output except the JSON payload. The JSON is sent to the *:::no-loc text="jq":::* command-line JSON processor for improved display.
 
-    The following JSON is returned:
+    The following represents an excerpt of the JSON that is returned:
 
     ```json
     [
-      "value1",
-      "value2"
+        {
+            "date": "2019-10-09T21:27:41.3813473+00:00",
+            "temperatureC": 24,
+            "temperatureF": 75,
+            "summary": "Bracing"
+        },
+        {
+            "date": "2019-10-10T21:27:41.3816138+00:00",
+            "temperatureC": 14,
+            "temperatureF": 57,
+            "summary": "Sweltering"
+        },
+        // ...
     ]
     ```
 

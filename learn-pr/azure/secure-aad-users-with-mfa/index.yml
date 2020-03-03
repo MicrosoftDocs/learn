@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.azure-security.secure-aad-users-with-mfa
+metadata:
+  title: Secure Azure Active Directory users with Multi-Factor Authentication
+  description: Learn how to use multi-factor authentication with Azure AD to harden your user accounts.
+  ms.date: 10/02/2019
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Secure Azure Active Directory users with Multi-Factor Authentication
+summary: Learn how to use multi-factor authentication with Azure AD to harden your user accounts.
+abstract: |
+  In this module, you will:
+  - Learn about Azure Multi-Factor Authentication (MFA)
+  - Create a plan to deploy Azure MFA
+  - Turn on Azure MFA for users and specific apps
+prerequisites: |
+  - Basic knowledge of the Azure portal
+  - Basic knowledge of Azure Active Directory
+iconUrl: /learn/achievements/secure-aad-users-with-mfa.svg
+badge:
+  uid: learn.azure-security.secure-aad-users-with-mfa.badge
+levels: 
+- beginner
+roles: 
+- security-engineer
+products:
+- azure
+- azure-portal
+- azure-active-directory
+units:
+- learn.azure-security.secure-aad-users-with-mfa.introduction
+- learn.azure-security.secure-aad-users-with-mfa.azure-multi-factor-authentication
+- learn.azure-security.secure-aad-users-with-mfa.planning-mfa
+- learn.azure-security.secure-aad-users-with-mfa.exercise-mfa
+- learn.azure-security.secure-aad-users-with-mfa.configure-authentication-methods
+- learn.azure-security.secure-aad-users-with-mfa.summary

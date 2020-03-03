@@ -10,6 +10,7 @@ A *Controller* is a public class with one or more public methods known as *actio
 
     > [!NOTE]
     > By convention, controller class names are suffixed with *:::no-loc text="Controller":::*.
+
 1. Refresh file explorer, and add the following code to *:::no-loc text="Controllers/ProductsController.cs":::*. Save your changes.
 
     ```csharp
@@ -23,8 +24,8 @@ A *Controller* is a public class with one or more public methods known as *actio
 
     namespace ContosoPets.Api.Controllers
     {
-        [Route("api/[controller]")]
         [ApiController]
+        [Route("[controller]")]
         public class ProductsController : ControllerBase
         {
             private readonly ContosoPetsContext _context;
@@ -51,22 +52,30 @@ A *Controller* is a public class with one or more public methods known as *actio
 
     This class derives from `ControllerBase`, the base class for an MVC controller without web UI support. The following attributes define its behavior:
 
-    * `[Route]` defines the routing pattern `api/[controller]`. The `[controller]` token is replaced by the controller's name (case-insensitive, without the *:::no-loc text="Controller":::* suffix), so requests to `https://localhost:5001/api/products` are handled by this controller.
+    * `[Route]` defines the routing pattern `[controller]`. The `[controller]` token is replaced by the controller's name (case-insensitive, without the *:::no-loc text="Controller":::* suffix), so requests to `https://localhost:5001/products` are handled by this controller.
     * `[ApiController]` adds behaviors that make it easier to build web APIs. Some behaviors include [parameter source inference](https://docs.microsoft.com/aspnet/core/web-api/#binding-source-parameter-inference), [attribute routing as a requirement](https://docs.microsoft.com/aspnet/core/web-api/#attribute-routing-requirement), and [model validation error handling enhancements](https://docs.microsoft.com/aspnet/core/web-api/#automatic-http-400-responses).
 
     Within the class definition:
 
     * [Constructor injection](https://docs.microsoft.com/aspnet/core/mvc/controllers/dependency-injection#constructor-injection) provides an instance of `ContosoPetsContext` to the controller.
     * An HTTP GET action named `GetAll` is created for retrieving all products.
+
+    > [!NOTE]
+    > The route may contain static strings, as in `api/[controller]`. In that example, a request to `https://localhost:5001/api/products` would be handled by this controller.
+
+1. [!INCLUDE[dotnet build command](../../includes/dotnet-build-no-restore-command.md)]
+
 1. Start the web API by running the following command:
 
     ```dotnetcli
-    dotnet run > ContosoPets.Api.log &
+    dotnet ./bin/Debug/netcoreapp3.0/ContosoPets.Api.dll \
+        > ContosoPets.Api.log &
     ```
+
 1. Run the following command:
 
     ```bash
-    curl -k -s https://localhost:5001/api/products | jq
+    curl -k -s https://localhost:5001/products | jq
     ```
 
     > [!TIP]

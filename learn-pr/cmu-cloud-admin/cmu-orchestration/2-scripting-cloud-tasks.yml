@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-admin.cmu-orchestration.2-scripting-cloud-tasks
+title: Scripting cloud tasks
+metadata:
+  title: Scripting cloud tasks
+  description: An introduction to scripting languages and how they can be used to automate admin tasks
+  ms.date: 12/31/2019
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 12
+content: |
+  [!include[](includes/2-scripting-cloud-tasks.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+    - content: "Which of the following statements regarding scripting languages such as Bash and PowerShell is NOT true?"
+      choices:
+      - content: "Scripts that provision resources in multiple cloud environments (for example, Azure and AWS) are inherently more complex than scripts that target a single cloud environment."
+        isCorrect: false
+        explanation: "Incorrect. Scripting logic that provisions resources for one cloud environment such as Azure are typically very different than scripts that provision resources for another cloud environment such as AWS."
+      - content: "One of the chief limitations of scripting languages is that their operation cannot be parameterized using command-line parameters."
+        isCorrect: true
+        explanation: "Correct! Scripts CAN be parameterized using command-line parameters and frequently are."
+      - content: "Provisioning cloud resources with scripts is more reliable than provisioning them manually by typing commands into a console or clicking buttons in a cloud portal."
+        isCorrect: false
+        explanation: "Incorrect. Automating commands by scripting them reduces the chance for human error."
+      - content: "Scripts can be written to allow cloud resources to be updated as well as provisioned, but they must be specially written to do so, and this adds complexity."
+        isCorrect: false
+        explanation: "Incorrect. Scripts require additional logic to be idempotent."
+
+    - content: "In the context of scripting, which of the following scenarios demonstrates idempotency?"
+      choices:
+      - content: "Each time it's executed, a script writes a record of the resources it created to a machine log."
+        isCorrect: false
+        explanation: "Incorrect. In the context of scripting, idempotency means that the running the same script twice produces the same result."
+      - content: "Each time it's executed, a script verifies that each of the resources it attempted to create was indeed created and logs any failures that occurred."
+        isCorrect: false
+        explanation: "Incorrect. In the context of scripting, idempotency means that the running the same script twice produces the same result."
+      - content: "A single script, run twice, creates one virtual machine the first time it's executed and a copy of that virtual machine when it's executed again."
+        isCorrect: false
+        explanation: "Incorrect. In the context of scripting, idempotency means that the running the same script twice produces the same result."
+      - content: "A single script, run twice, creates a virtual machine the first time it's executed and uses the existing virtual machine the second time."
+        isCorrect: true
+        explanation: "Correct. In the context of scripting, idempotency means that the running the same script twice produces the same result."

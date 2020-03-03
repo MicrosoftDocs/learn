@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn-pr.wwl.planning-implementing-sap-solutions-azure.azure-vm-high-availability-disaster-recovery-sap-workloads
+title: Azure VM high availability and disaster recovery for SAP workloads
+metadata:
+  title: Azure VM high availability and disaster recovery for SAP workloads
+  description: "Azure VM high availability and disaster recovery for SAP workloads"
+  ms.date: 12/20/2019
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 9
+content: |
+  [!include[](includes/3-azure-vm-high-availability-disaster-recovery-sap-workloads.md)]

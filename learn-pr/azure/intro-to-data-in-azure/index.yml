@@ -23,6 +23,7 @@ roles:
 - developer
 - data-engineer
 - solution-architect
+- student
 products: 
 - azure
 - azure-storage

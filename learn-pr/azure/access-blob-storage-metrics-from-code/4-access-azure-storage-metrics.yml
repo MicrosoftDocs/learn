@@ -37,4 +37,4 @@ quiz:
       explanation: "Once you have retrieved a list of the definitions that are available by using MetricDefinitions.ListAsync, you can call Metrics.ListAsync to retrieve the values of a specific metric."
     - content: "The monitor client constructor"
       isCorrect: false
-      explanation: "You call the monitor client constructor to authenticate with Azure. To find the values of a specfic metric, use Metrics.ListAsync."
+      explanation: "You call the monitor client constructor to authenticate with Azure. To find the values of a specific metric, use Metrics.ListAsync."

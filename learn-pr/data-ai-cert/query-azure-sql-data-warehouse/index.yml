@@ -1,19 +1,18 @@
 ### YamlMime:Module
 uid: learn.data-ai.query-azure-sql-data-warehouse
 metadata:
-  title: Query data in Azure SQL Data Warehouse
-  description: Learn how to issue simple queries against Azure SQL Data Warehouse and how to visualize the data in both Excel and Power BI
+  title: Query data in Azure Synapse Analytics
+  description: Learn how to issue simple queries against Azure Synapse Analytics and how to visualize the data in both Excel and Power BI
   ms.date: 01/31/2019
   author: ctesta-oneillmsft
   ms.author: chris.testaoneill
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #ms.learn-contact: smmark
-title: Query data in Azure SQL Data Warehouse
-summary: Learn how to issue simple queries against Azure SQL Data Warehouse and how to visualize the data in both Excel and Power BI.
+title: Query data in Azure Synapse Analytics
+summary: Learn how to issue simple queries against Azure Synapse Analytics and how to visualize the data in both Excel and Power BI.
 abstract: | 
   In this module, you will:
-  - Create an Azure SQL Data Warehouse sample database.
+  - Create an Azure Synapse Analytics sample database.
   - Query the sample database with the SELECT statement and its clauses.
   - Use the queries in different client applications, such as SQL Server Management Studio and Power BI.
 prerequisites: None

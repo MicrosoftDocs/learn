@@ -8,7 +8,7 @@ Policies can enforce things such as only allowing specific types of resources to
 
 ## Create a policy
 
-We'd like to ensure that all resources have the **Department** tag associated with them and block creation if it doesn't exist. We'll need to create a new policy definition and then assign it to a scope; in this case the scope will be our **mslearn-core-infrastructure-rg** resource group. Policies can be created and assigned through the Azure portal, Azure PowerShell, or Azure CLI. Let's walk through how to do create a policy in the portal.
+We'd like to ensure that all resources have the **Department** tag associated with them and block creation if it doesn't exist. We'll need to create a new policy definition and then assign it to a scope; in this case the scope will be our **msftlearn-core-infrastructure-rg** resource group. Policies can be created and assigned through the Azure portal, Azure PowerShell, or Azure CLI. Let's walk through how to do create a policy in the portal.
 
 ### Create the policy definition
 
@@ -68,7 +68,11 @@ We've created the policy, but we haven't actually put it into effect yet. To ena
 
 1. For **Policy definition**, click the blue **...**. In the **Type** drop-down, select **Custom**, select the **Enforce tag on resource** policy you created, then click **Select**.
 
-1. In the **Parameters** section, for **Tag name** enter **Department**. Click **Assign** to assign the policy.
+1. Select **Next** to go to the **Parameters** pane.
+
+1. On the **Parameters** pane, for **Tag name** enter **Department**.
+
+1. Select **Review + create** then select **Create** to create the assignment.
 
 ### Test out the policy
 
@@ -77,7 +81,7 @@ Now that we have assigned the policy to our resource group, any attempts to crea
 > [!IMPORTANT]
 > Please note that the policy assignment may take up to 30 minutes to take effect. Because of this delay, in the following steps the policy validation may succeed but the deployment will still fail. If this happens, allow for additional time and retry your deployment.
 
-1. Click **+ Create a resource** in the top left of the portal.
+1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
 
 1. Search for **Storage Account** and select **Storage account** in the results. Click **Create**.
 

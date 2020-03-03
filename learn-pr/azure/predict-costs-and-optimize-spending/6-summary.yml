@@ -16,7 +16,7 @@ content: |
 quiz:
     title: Check your knowledge
     questions:
-    - content: "Which of the following are used to determine Azure costs for each billing period?"
+    - content: "Which one of the following systems is used to determine Azure costs for each billing period?"
       choices:
       - content: "The Azure website"
         isCorrect: false
@@ -30,7 +30,7 @@ quiz:
       - content: "Usage meters"
         isCorrect: true
         explanation: "Correct. Azure is billed according to your consumption based on monthly usage meters."
-    - content: "Which of the following is a factor affecting costs?"
+    - content: "Which of the following factors affects costs?"
       choices:
       - content: "Global infrastructure"
         isCorrect: false
@@ -43,9 +43,9 @@ quiz:
         explanation: "An availability zone provides failure protection for datacenters."
     - content: "Complete the following sentence. As an Azure customer, Azure Reservations offer discounted prices if you _________"
       choices:
-      - content: "Pay in advance"
+      - content: "Make upfront commitments on compute capacity"
         isCorrect: true
-        explanation: "Azure Reservations offer discounted prices on certain Azure products and resources. To get a discount, you reserve products and resources by paying in advance. You can prepay for one or three year's use of certain Azure resources."
+        explanation: "Azure Reservations offer discounted prices on certain Azure products and resources. To get a discount, you reserve products and resources through an upfront commitment. You can then either prepay or pay monthly for one or three years of usage of certain Azure resources."
       - content: "Provision many resources"
         isCorrect: false
         explanation: "There is no requirement to provision many resources to use Azure Reservations."

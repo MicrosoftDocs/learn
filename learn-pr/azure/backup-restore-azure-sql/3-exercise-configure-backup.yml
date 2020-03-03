@@ -1,7 +1,7 @@
 ### YamlMime:ModuleUnit
 uid: learn.backup-restore-azure-sql.3-exercise-configure-backup
 metadata:
-  title: Exercise - Configure backup for Azure SQL Database
+  title: Exercise - Configure backups for Azure SQL Database
   description: In this unit, you'll set up a database and configure automated backups for it.
   ms.date: 09/25/2019
   author: jboeshart
@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-title: Exercise - Configure backup for Azure SQL Database
+title: Exercise - Configure backups for Azure SQL Database
 durationInMinutes: 7
 interactive: powershell
 azureSandbox: true

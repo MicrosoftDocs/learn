@@ -2,7 +2,7 @@
 uid: learn-wwl.microsoft-responsible-ai-practices
 metadata:
   title: Discuss practices for responsible AI at Microsoft
-  description: If you’re developing, implementing, or managing AI internally, it’s helpful to translate your organization’s ethical principles into actionable guidance and tools for engineering teams. It’s also important to consider how your organization can use AI to improve lives around the world.
+  description: Discover how to translate your organization’s ethical principles into actionable guidance and tools for engineering teams and how AI can improve lives worldwide
   ms.date: 10/01/2019
   author: RWortmanMorris
   ms.author: rawortma
@@ -10,12 +10,12 @@ metadata:
   ms.prod: learning-azure
   #ms.learn-contact: barlan
 title: Discuss practices for responsible AI at Microsoft
-summary: If you’re developing, implementing, or managing AI internally, it’s helpful to translate your organization’s ethical principles into actionable guidance and tools for engineering teams. It’s also important to consider how your organization can use AI to improve lives around the world.
+summary: At Microsoft, we have established our own governing practices for responsible AI. While every organization will have its own approach and we don’t have all the answers, we’d like to share what we’ve learned so far.
 abstract: | 
   In this module, you will:
-  - Establish responsible design principles within your own AI engineering teams.
-  - Utilize valuable tools to help your teams work with AI responsibly.
-  - Approach external engagements and use AI for good.
+  - Explain how Microsoft provides accountability for responsible AI through a governance structure.
+  - Describe how Microsoft risk management processes are used to identify, assess, and mitigate risks.
+  - Establish responsible design principles within your own organization.
 prerequisites: None
 iconUrl: /learn/achievements/microsoft-responsible-ai-practices.svg
 levels: 
@@ -29,6 +29,9 @@ products:
 - m365
 units: 
 - learn-wwl.microsoft-responsible-ai-practices.introduction
+- learn-wwl.microsoft-responsible-ai-practices.microsoft-governance-model-video
+- learn-wwl.microsoft-responsible-ai-practices.microsoft-governance-model
+- learn-wwl.microsoft-responsible-ai-practices.rai-frameworks
 - learn-wwl.microsoft-responsible-ai-practices.design-principles-in-engineering
 - learn-wwl.microsoft-responsible-ai-practices.tools-for-responsible-ai
 - learn-wwl.microsoft-responsible-ai-practices.ai-for-good

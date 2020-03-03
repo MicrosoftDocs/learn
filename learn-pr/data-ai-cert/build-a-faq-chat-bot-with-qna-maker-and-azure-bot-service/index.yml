@@ -2,13 +2,12 @@
 uid: learn.data-ai.build-a-faq-chat-bot-with-qna-maker-and-azure-bot-service
 metadata:
   title: Build an FAQ chatbot with QnA Maker and Azure Bot Service
-  description: In this module, you'll learn about QnA Maker and how to integrate it with a bot
+  description: In this module, discover how the QnA Maker and Azure Bot Service offer interactive exchanges that add a conversational experience to seeking answers.
   ms.date: 2/25/2019
   author: gerryaobrien
   ms.author: gerryo
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #ms.learn-contact: smmark
 abstract: | 
   In this module, you will:
   - Learn what QnA Maker is.

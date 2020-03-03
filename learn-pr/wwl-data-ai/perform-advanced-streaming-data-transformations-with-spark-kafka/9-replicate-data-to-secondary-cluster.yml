@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.perform-advanced-streaming-data-transformations-with-spark-kafka.replicate-data-to-secondary-cluster
+title: Replicate data to a secondary cluster
+metadata:
+  title: Replicate data to a secondary cluster
+  description: "Replicate data to a secondary cluster"
+  ms.date: 02/28/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/9-replicate-data-to-secondary-cluster.md)]

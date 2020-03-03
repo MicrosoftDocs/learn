@@ -1,0 +1,55 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-docker-containers.3-how-docker-images-work
+title: How Docker images work
+
+metadata:
+  title: How Docker images work
+  description: In this unit, we discuss how we build Docker images and explore basic image management.
+  ms.date: 10/05/2019
+  author: cryophobia
+  ms.author: chrvaw
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-how-docker-images-work.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: "On which of the following operating systems does Docker for desktop run?"
+    choices:
+    - content: "Windows only"
+      isCorrect: false
+      explanation: "The desktop version of Docker runs on Windows, but it's not the only supported desktop operating system."
+    - content: "Linux and Windows only"
+      isCorrect: false
+      explanation: "The desktop version of Docker runs on Linux and Windows, but they're not the only supported desktop operating systems."
+    - content: "Linux, macOS, and Windows"
+      isCorrect: true
+      explanation: "The desktop version of Docker runs on Linux, macOS, and Windows."
+
+  - content: "Which is correct Docker command to rebuild a container image?"
+    choices:
+    - content: "docker rebuild"
+      isCorrect: false
+      explanation: "The Docker CLI doesn't have a rebuild command."
+    - content: "docker compile"
+      isCorrect: false
+      explanation: "The Docker CLI doesn't have a compile command."
+    - content: "docker build"
+      isCorrect: true
+      explanation: "You use the docker build command to rebuild a container image. Once you've built an image, the image can't be changed. The only way to change an image is to create a new image."
+
+  - content: "Which of the following sentences describe a container image the best?"
+    choices:
+    - content: "A container image is a read-only portable package that contains software and may include an operating system."
+      isCorrect: true
+      explanation: "A container image is an immutable package that contains all the application code, system packages, binaries, libraries, configuration files, and the operating system running in the container. Docker containers running on Linux share the host OS kernel and don't require a container OS as long as the binary can access the OS kernel directly."
+    - content: "A container image is a set of commands that builds a container."
+      isCorrect: false
+      explanation: "A container image doesn't include commands to build a container."
+    - content: "A container image is a read-only portable package that contains software."
+      isCorrect: false
+      explanation: "A container image is an immutable package that contains all the application code, system packages, binaries, libraries, configuration files, and the operating system running in the container."
