@@ -13,8 +13,8 @@ summary: Create a web app in IntelliJ and deploy the app to Azure by using Azure
 abstract: | 
   In this module, you will:
   - Create a web app in IntelliJ IDEA
-  - Deploy the app to Azure by using Azure Toolkit for IntelliJ
-  - Manage deployed web app configurations using Azure Toolkit
+  - Deploy the app to Azure by using the Azure Toolkit for IntelliJ
+  - Manage deployed web app configurations using the Azure Toolkit
 prerequisites: | 
   - Experience writing web apps in Java
   - Familiarity with [IntelliJ IDEA](https://www.jetbrains.com/idea/) to create projects in Java
