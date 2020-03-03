@@ -66,7 +66,7 @@ You also use the Azure Explorer with the Azure Toolkit for IntelliJ, which provi
 
 There are alternatives to the Azure Toolkit for IntelliJ to deploy your web app. For example, you could use `git` to deploy code and publish it to Azure. However, the Azure Toolkit for IntelliJ provides close integration within IntelliJ IDEA itself. Developers can package and deploy an app, and create and configure resources in Azure, all without leaving their favorite IDE.
 
-In the following exericises, you'll use the Azure Toolkit for IntelliJ to deploy a web app, based on a Maven archetype, to Azure App Service, and manage that web app using the Azure Explorer from within IntelliJ IDEA.
+In the following exercises, you'll use the Azure Toolkit for IntelliJ to deploy a web app, based on a Maven archetype, to Azure App Service, and manage that web app using the Azure Explorer from within IntelliJ IDEA.
 
 ## Using containers with Azure
 
