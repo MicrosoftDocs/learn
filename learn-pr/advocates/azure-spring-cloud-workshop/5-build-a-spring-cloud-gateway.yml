@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.top-5-security-items-to-consider.5-framework-updates
-title: Framework Updates
+uid: learn.azure-spring-cloud-workshop.5-build-a-spring-cloud-gateway
+title: Build a Spring Cloud Gateway
 metadata:
-  title: Framework Updates
-  description: Framework Updates
-  author: patridge
-  ms.author: adpatrid
-  ms.date: 09/24/2018
+  title: Build a Spring Cloud Gateway
+  description: Build a Spring Cloud Gateway
+  author: judubois
+  ms.author: judubois
+  ms.date: 03/04/2020
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 7
 content: |
-  [!include[](includes/5-framework-updates.md)]
+  [!include[](includes/5-build-a-spring-cloud-gateway.md)]
