@@ -16,7 +16,7 @@ The modules in this learning path are part of a progression. You follow the Tail
 Run a template that sets up your Azure DevOps organization.
 
 > [!div class="nextstepaction"]
-> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?name=manage-delivery-plans&azure-portal=true)
+> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?name=deliveryplans&azure-portal=true)
 
 On the Azure DevOps Demo Generator site, follow these steps to run the template:
 
