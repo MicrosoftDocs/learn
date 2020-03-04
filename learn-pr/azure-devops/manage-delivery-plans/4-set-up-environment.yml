@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azdo.manage-delivery-plans.4-set-up-environment
+title: Exercise - Set up your environment
+metadata:
+  title: Exercise - Set up your environment
+  description: Create your Azure DevOps project.
+  ms.date: 02/19/2020
+  author: edkaim
+  ms.author: v-edkaim
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 20
+content: |
+  [!include[](includes/4-set-up-environment.md)]
