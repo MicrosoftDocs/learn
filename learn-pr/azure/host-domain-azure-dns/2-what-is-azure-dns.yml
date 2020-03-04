@@ -45,9 +45,6 @@ quiz:
     - content: A or AAAA
       isCorrect: true
       explanation: The A or AAAA record maps an IP address to a domain. Multiple IP addresses are known as a record set.
-    - content: NS
-      isCorrect: false
-      explanation: The NS record is the name space record for your DNS zone.
     - content: SOA
       isCorrect: false
       explanation: The SOA record is the start of authority for your domain. It's used by other DNS servers to resolve your domain.

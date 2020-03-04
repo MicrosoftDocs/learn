@@ -11,4 +11,4 @@ By using an Azure DNS zone to host your domain, your organization benefits by ha
 
 ## Learn more
 
-[What is Azure Private DNS?](https://docs.microsoft.com/azure/dns/private-dns-overview)
+[Quickstart: Create an Azure private DNS zone using the Azure portal](https://docs.microsoft.com/azure/dns/private-dns-getstarted-portal)
