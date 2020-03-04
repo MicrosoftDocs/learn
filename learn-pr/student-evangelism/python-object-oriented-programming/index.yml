@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.student-evangelism.python-object-oriented-programming
+metadata:
+  title: Object-oriented programming in Python - Learn
+  description: Learn more about object-oriented programming with this next-steps module in Python.
+  ms.date: 03/07/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-python
+title: Object-oriented programming in Python
+summary: Learn more about object-oriented programming with this next-steps module in Python.
+abstract:  | 
+  In this module, you will:
+  - Write classes in Python
+  - Add attributes to a class
+  - Add methods to a class
+  - Learn how to inherit classes
+  - Add methods and attributes to an inherited class
+  - Override methods inherited from a base class
+prerequisites:  |
+  A basic knowledge of programming and Python.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+- student
+products:
+- azure
+units:
+- learn.student-evangelism.python-object-oriented-programming.0-introduction
+- learn.student-evangelism.python-object-oriented-programming.1-oop
+- learn.student-evangelism.python-object-oriented-programming.2-exercise-classes
+- learn.student-evangelism.python-object-oriented-programming.3-attributes
+- learn.student-evangelism.python-object-oriented-programming.4-exercise-add-attributes
+- learn.student-evangelism.python-object-oriented-programming.5-methods
+- learn.student-evangelism.python-object-oriented-programming.6-exercise-add-methods
+- learn.student-evangelism.python-object-oriented-programming.7-exercise-inheritance
+- learn.student-evangelism.python-object-oriented-programming.8-summary
+badge:
+  uid: learn.student-evangelism.python-object-oriented-programming.badge
+  

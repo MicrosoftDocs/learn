@@ -16,7 +16,7 @@ Azure Machine Learning supports multiple types of compute for experimentation an
 
 ### Local Compute
 
-You can specify a *local* compute target for most processing tasks in Azure Machine Learning. This runs the experiment on the same compute target as the code used to initiate the experiment, which may be you physical workstation or a virtual machine such as an Azure Machine Learning compute instance on which you are running a notebook.
+You can specify a *local* compute target for most processing tasks in Azure Machine Learning. This runs the experiment on the same compute target as the code used to initiate the experiment, which may be your physical workstation or a virtual machine such as an Azure Machine Learning compute instance on which you are running a notebook.
 
 Local compute is generally a great choice during development and testing with low to moderate volumes of data.
 

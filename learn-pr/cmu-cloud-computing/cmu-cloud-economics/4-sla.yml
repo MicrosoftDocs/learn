@@ -1,0 +1,73 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-computing.cloud-basics.cmu-cloud-economics.4-sla
+title: SLAs and SLOs
+metadata:
+  title: Service level agreements and service level objectives
+  description: Overview of service level agreements (SLAs) and service level objectives (SLOs)
+  ms.date: 02/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-sla.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+# Did I Get This block question 1 - remove from visibility
+# - content: "According to the EC2 SLA, how many minutes of downtime per month can occur before Amazon has to offer some sort of monetary compensation (assuming a month is 31 days)?"
+#    choices:
+#    - content: <Any numerical value other than 22>
+#      isCorrect: false
+#      explanation: "Incorrect. Calculate the availability percentage as a fraction of the time in a month of 31 days."
+#    - content: 22
+#      isCorrect: true
+#      explanation: "Correct!"
+
+# question not in original course
+  - content: "Microsoft offers customers a 10% service credit if the monthly uptime for an Azure App Service instance falls below 99.95%. Assuming a month is 31 days, how many minutes must an App Service instance be down in one month to trigger a credit?"
+    choices:
+    - content: "11 minutes"
+      isCorrect: false
+      explanation: "Incorrect. The answer is (31 * 24 * 60) * 0.0005."
+    - content: "22 minutes"
+      isCorrect: true
+      explanation: "Correct! The answer is (31 * 24 *60) * 0.0005 = 22 minutes."
+    - content: "33 minutes"
+      isCorrect: false
+      explanation: "Incorrect. The answer is (31 * 24 * 60) * 0.0005."
+    - content: "44 minutes"
+      isCorrect: false
+      explanation: "Incorrect. The answer is (31 * 24 * 60) * 0.0005."
+
+# Did I Get This block question 2
+# content added to choice answers as compared with original course
+  - content: "Who's responsible for defining the service level objectives that are required from a cloud provider?"
+    choices:
+    - content: "The cloud provider"
+      isCorrect: false
+      explanation: "Incorrect. Think about the entity that defines the SLOs. Which entity has to define the service requirements expected from a cloud?"
+    - content: "The client"
+      isCorrect: true
+      explanation: "Correct!"
+    - content: "The auditing agency"
+      isCorrect: false
+      explanation: "Incorrect. Think about the entity that defines the SLOs. Which entity has to define the service requirements expected from a cloud?"
+
+# question not in original course - remove from visibility
+#  - content: "Suppose you build a solution that consists of two interconnected cloud services, each of which comes with an SLA that guarantees the service will be up at least 99.50% of the time. What is the expected minimum uptime for the solution as a whole?"
+#    choices:
+#    - content: "99.75%"
+#      isCorrect: false
+#      explanation: "Incorrect. Given that the solution is down if either service is unavailable, the combined uptime must be less than the individual uptimes."
+#    - content: "99.50%"
+#      isCorrect: false
+#      explanation: "Incorrect. Given that the solution is down if either service is unavailable, the combined uptime must be less than the individual uptimes."
+#    - content: "99.00%"
+#      isCorrect: true
+#      explanation: "Correct! The uptime for the solution is the product of the uptimes for the individual services that compose it."
+#    - content: "95.20%"
+#      isCorrect: false
+#      explanation: "Incorrect. Given that the solution is down if either service is unavailable, the combined uptime must be less than the individual uptimes."
