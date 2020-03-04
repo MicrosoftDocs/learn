@@ -265,7 +265,7 @@ To add the variables:
 
 1. Under **Pipelines**, select **Library**.
 
-    ![Azure Pipelines showing the Library menu option](../../create-release-pipeline/media/3-pipelines-library.png)
+    ![Azure Pipelines showing the Library menu option](../media/3-pipelines-library.png)
 
 1. Select **+ Variable group**.
 

@@ -33,7 +33,7 @@ products:
 - azure-devops
 units:
 - learn.azdo.deploy-azure-functions.1-introduction
-- learn.azdo.deploy-azure-functions.2-design-the-pipeline
+- learn.azdo.deploy-azure-functions.2-what-is-azure-functions
 - learn.azdo.deploy-azure-functions.3-set-up-environment
 - learn.azdo.deploy-azure-functions.4-deploy-azure-function
 - learn.azdo.deploy-azure-functions.5-clean-up-environment
