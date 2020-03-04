@@ -28,15 +28,15 @@ Let's create a sample data warehouse in Azure Synapse Analytics with sample data
         - Confirm Password: **Pa55w.rd**
         - Location: choose a **location** near to you.
         - Select the checkbox to Allow Azure services to access server
-
+    
     ![Creating the Azure Synapse Analytics server](../media/2-select-asdw-server.png)
-
+    
 1. Select **OK** to continue.
-
+    
 1. Select the **Select Performance level** hyperlink to open the **Configure performance** view. The default performance level is **DW1000c**, under **Gen 2**. Move the slider to the left end. The performance level of the server is downgraded to **DW100c**. This level reduces the cost per hour. Click **Apply**.
-
+    
     ![Selecting performance level](../media/2-select-performance-level.png)
-
+    
 1. Select **Review + Create** at the top of the screen.
 
 1. Select **Create** to start the deployment process.
