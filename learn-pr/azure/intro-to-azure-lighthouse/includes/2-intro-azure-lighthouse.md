@@ -33,4 +33,4 @@ Here’s an at-a-glance look at the key benefits of using Azure Lighthouse in yo
 - **Improved customer control**: the customer can control the scope and range of your access
 - **Preservation of management IP**: Contoso can keep control and access of proprietary automation scripts because they can be run from Contoso’s tenant and don’t need to be shared with Lamna Healthcare
 - **Improved tools**: Azure Lighthouse supports multiple license models, existing APIs, and other partner programs
-- **No additional costs**: Azure Lighthouse is part of a native Azure platform 
+- **No additional costs**: Azure Lighthouse is part of a native Azure platform
