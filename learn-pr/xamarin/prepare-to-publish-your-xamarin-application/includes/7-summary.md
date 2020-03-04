@@ -29,3 +29,8 @@ For *Android applications*, take a look at:
     Get a quick overview of the publishing process and information about several distribution channels.
 
     For example, you'll learn how to publish to [Google Play](https://docs.microsoft.com/xamarin/android/deploy-test/publishing/publishing-to-google-play/?tabs=windows) and the [Amazon App Store for Android](https://docs.microsoft.com/xamarin/android/deploy-test/publishing/publishing-to-amazon).
+    
+ ## Learn more with a Channel 9 video series
+
+- [Xamarin Tutorial 101](https://channel9.msdn.com/Series/Xamarin-101/?WT.mc_id=Educationalmobile-c9-niner&azure-portal=true)
+- [Intro to Visual Studio for Mac](https://channel9.msdn.com/Series/Intro-to-Visual-Studio-for-Mac?azure-portal=true)

@@ -4,6 +4,8 @@ Let's get started by learning about Logic Apps and their ability to monitor even
 
 ## What are Logic Apps?
 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4qhug]
+
 Azure Logic Apps is a cloud service that you can use to integrate apps, systems, data, and services within your enterprise or across organizations. They help to simplify how you design and build scalable solutions in the cloud, on-premises, or both.
 
 ## What can you do with a Logic App?
