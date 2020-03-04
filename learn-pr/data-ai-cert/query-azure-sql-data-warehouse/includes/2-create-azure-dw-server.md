@@ -7,7 +7,7 @@ Let's create a sample data warehouse in Azure Synapse Analytics with sample data
 
 1. In the upper-left corner, select **+ Create a resource**.
 
-Select **Databases** > **Azure Synapse Analytics (formerly SQL DW)** to start the creation process.
+1. Select **Databases** > **Azure Synapse Analytics (formerly SQL DW)** to start the creation process.
 
     ![Creating a data warehouse in Azure Synapse Analytics](../media/2-create-sql-dw.png)
 
