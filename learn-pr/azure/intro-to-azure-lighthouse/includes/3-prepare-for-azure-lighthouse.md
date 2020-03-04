@@ -2,7 +2,7 @@ Now you have a better understanding of the benefits and capabilities of using Az
 
 Contoso has existing customer management processes and roles you use for non-Azure managed customers. You’d like to understand what’s needed to get ready to onboard Lamna Healthcare, your first Azure Lighthouse customer.
 
-In this unit, you'll take a close look at tenants and how they work with Azure Lighthouse. and the use of roles and users in the day-to-day management of customers. Finally, you'll learn about security recommendations about access to, and using, Azure Lighthouse.
+In this unit, you'll take a close look at tenants and how they work with Azure Lighthouse, and the use of roles and users in the day-to-day management of customers. Finally, you'll learn about security recommendations about access to, and using, Azure Lighthouse.
 
 ## Getting started
 

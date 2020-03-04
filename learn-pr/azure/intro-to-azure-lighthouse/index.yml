@@ -18,9 +18,6 @@ abstract: |
   - Using Azure Resource Manager templates
   - Set up Security Center with Alerting
   - Creating a managed service offer on the Azure Marketplace
-
-prerequisites: | 
-  - 
 iconUrl: http://via.placeholder.com/120x120
 levels:
 - beginner

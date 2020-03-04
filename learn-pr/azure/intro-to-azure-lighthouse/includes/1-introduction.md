@@ -14,6 +14,3 @@ In this module, you'll learn about what Azure Lighthouse is and how it can deliv
 - Using Azure Resource Manager templates
 - Set up Security Center with alerting
 - Creating a managed service offer on the Azure Marketplace
-
-**Prerequisites**
-- None

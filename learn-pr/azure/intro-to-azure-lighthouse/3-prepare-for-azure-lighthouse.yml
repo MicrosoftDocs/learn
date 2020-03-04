@@ -18,24 +18,24 @@ quiz:
   questions:
   - content: 'When creating and assigning roles what is the best practice?'
     choices:
-    - content: Avoid restricting your users control over your onboarded customers.
+    - content: Avoid restricting your users control over your onboarded customers
       isCorrect: false
-      explanation: Roles should be allocated based on the type of service offer you're making.
-    - content: Avoid using the Contributor roles.
+      explanation: Roles should be allocated based on the type of service offer you're making
+    - content: Avoid using the Contributor roles
       isCorrect: false
-      explanation: Roles should be allocated based on the type of service offer you're making.
-    - content: Avoid assigning individual users to a role.
+      explanation: Roles should be allocated based on the type of service offer you're making
+    - content: Avoid assigning individual users to a role
       isCorrect: true
-      explanation: It is good practice to assign user groups to roles rather than individuals.
+      explanation: It is good practice to assign user groups to roles rather than individuals
   - content: 'When considering customer onboarding, which of these security considerations should you implement?'
     choices:
-    - content: Rotate the schedule of service manager users to prevent over familiarity with the customers Azure estate.
+    - content: Rotate the schedule of service manager users to prevent over familiarity with the customers Azure estate
       isCorrect: false
-      explanation: Using multi-factor authentication will limit the chance of an unauthorized user accessing an onboarded customers Azure instance.
-    - content: Carry out detailed background checks of all your staff who will manage your onboarded customers.
+      explanation: Using multi-factor authentication will limit the chance of an unauthorized user accessing an onboarded customers Azure instance
+    - content: Carry out detailed background checks of all your staff who will manage your onboarded customers
       isCorrect: false
       explanation: Use MFA to validate 
-    - content: Implement multi-factor authentication for all users who will manage your onboarded customers.
+    - content: Implement multi-factor authentication for all users who will manage your onboarded customers
       isCorrect: true
-      explanation: MFA ensures that only dedicated user can access your customers Azure estate. It's also a good practice to ask the customer to implement MFA on their Azure tenant.
+      explanation: MFA ensures that only dedicated user can access your customers Azure estate. It's also a good practice to ask the customer to implement MFA on their Azure tenant
 

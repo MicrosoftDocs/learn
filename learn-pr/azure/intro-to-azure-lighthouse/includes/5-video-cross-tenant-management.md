@@ -14,13 +14,13 @@ So, to better demonstrate the capabilities of using Azure Lighthouse with our cu
 
 This content will look at:
 
-- How to find Lamna Healthcare, or any of your onboarded Azure subscriptions, or resource groups.
-- Verify the Lamna Healthcare subscription details and the role assignments associated with it.
-- How to view all the resources available under delegated resource management, and how to filter them to meet the view just Lamna Healthcare.
-- How to check the compliance of Lamna Healthcare's subscription.
-- How to view Lamna Healthcare's security score.
-- Look at how Azure Monitor can provide analytics from the managed resources data.
+- How to find Lamna Healthcare, or any of your onboarded Azure subscriptions, or resource groups
+- Verify the Lamna Healthcare subscription details and the role assignments associated with it
+- How to view all the resources available under delegated resource management, and how to filter them to meet the view just Lamna Healthcare
+- How to check the compliance of Lamna Healthcare's subscription
+- How to view Lamna Healthcare's security score
+- Look at how Azure Monitor can provide analytics from the managed resources data
 
 ### Video
 
-[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4r13D]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4r13D]
