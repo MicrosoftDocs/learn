@@ -243,7 +243,7 @@ The onboarding template files always require a subscription-level deployment, ev
 
 ![Screenshot showing the upload option from the CLI session](../media/4-upload-context-menu.png)
 
-1. You'll be prompted to locate the template files on your local computer. Select the template files: **delegatedResourceManagement.json**,     and **delegatedResourceManagement.parameters.json**.
+1. You'll be prompted to locate the template files on your local computer. Select the template files: **delegatedResourceManagement.json**, and **delegatedResourceManagement.parameters.json**.
 1. Both files are now uploaded to your Azure CLI session. The LamnaHealthcare user will need to run this command to deploy the package to their Azure session:
 
 ```CLI
@@ -263,12 +263,12 @@ When Lamna Healthcare has deployed the **delegated-resource-management** templat
 
 Contoso's authorized managed service staff will find Lamna Healthcare in their **My Customers** page. They can reach it from your Azure portal as follows:
 
-1. Navigate to the [My Customers page](https://docs.microsoft.com/en-gb/azure/lighthouse/how-to/view-manage-customers).
+1. Navigate to the [My Customers page](https://docs.microsoft.com/azure/lighthouse/how-to/view-manage-customers).
 1. Select **Customers**.
 1. Confirm that you can see Lamna Healthcare's subscription with the offer name you provided in the Resource Manager template.
 
 Lamna Healthcare can now see all their managed service provider details from the Service Providers page, and remove Contoso's access if needed. The Lamna Healthcare users can reach the page from their Azure portal by:
 
-1. Go to the [Service Providers page](https://docs.microsoft.com/en-gb/azure/lighthouse/how-to/view-manage-service-providers).
+1. Go to the [Service Providers page](https://docs.microsoft.com/azure/lighthouse/how-to/view-manage-service-providers).
 1. Select **Service provider offers**.
 1. Confirm that you can see the service provider's name, and the offer name that was given in the Resource Manager template.

@@ -4,7 +4,7 @@ metadata:
   title: Publish a managed service offer on the Azure Marketplace
   description: See how to publish on the Azure Marketplace and as a customer how you'd go about accepting and authorizing a service provider to manage your Azure instance.
   ms.date: 01/08/2020
-  author: ikensey
+  author: iankensey
   ms.author: v-geo
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

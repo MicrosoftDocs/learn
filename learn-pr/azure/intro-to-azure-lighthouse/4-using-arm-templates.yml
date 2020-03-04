@@ -4,7 +4,7 @@ metadata:
   title: Using Azure Resource Manager templates
   description: Understand how you can use Azure Resource Manager templates to onboard customers
   ms.date: 01/08/2020
-  author: ikensey
+  author: iankensey
   ms.author: v-geo
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

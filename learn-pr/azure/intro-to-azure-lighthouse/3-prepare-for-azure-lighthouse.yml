@@ -4,7 +4,7 @@ metadata:
   title: Preparing for Azure Lighthouse
   description: You'll cover the broader concepts around setting up an Azure Lighthouse, and the roles of users and tenants
   ms.date: 01/08/20120
-  author: ikensey
+  author: iankensey
   ms.author: v-geo
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

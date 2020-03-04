@@ -4,7 +4,7 @@ metadata:
   title: Use Azure Lighthouse with your managed business service
   description: Learn about and adopt Azure Lighthouse for your managed service business to manage your customers at scale.
   ms.date: 04/30/2019
-  author: ikensey
+  author: iankensey
   ms.author: v-geo
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
