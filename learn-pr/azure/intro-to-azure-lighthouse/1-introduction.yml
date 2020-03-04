@@ -4,7 +4,7 @@ metadata:
   title: Introduction
   description: You'll look at the hybrid networking capabilities in Azure, the services for on-premises integration using tools like ExpressRoute and the scenarios that apply to the design of your company's hybrid architecture.
   ms.date: 04/30/2019
-  author: ikensey
+  author: iankensey
   ms.author: v-geo
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

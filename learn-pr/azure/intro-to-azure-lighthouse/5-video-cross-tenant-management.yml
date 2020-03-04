@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.learn.intro-to-azure-lighthouse.5-video-cross-tenant-management
+uid: learn.intro-to-azure-lighthouse.5-video-cross-tenant-management
 metadata:
   title: Set up cross-tenant management
   description: See how to create a cross-tenant management for your customers.
   ms.date: 01/08/2020
-  author: ikensey
+  author: iankensey
   ms.author: v-geo
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
