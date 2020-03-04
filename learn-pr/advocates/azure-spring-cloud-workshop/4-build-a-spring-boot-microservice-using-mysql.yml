@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-spring-cloud-workshop.4-build-a-spring-boot-microservice-using-mysql
+title: Build a Spring Boot microservice using MySQL
+metadata:
+  title: Build a Spring Boot microservice using MySQL
+  description: Build a Spring Boot microservice using MySQL
+  author: judubois
+  ms.author: judubois
+  ms.date: 03/04/2020
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-secrets-in-key-vault.md)]

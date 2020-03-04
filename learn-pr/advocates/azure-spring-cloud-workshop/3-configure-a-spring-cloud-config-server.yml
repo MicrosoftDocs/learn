@@ -1,17 +1,17 @@
 ### YamlMime:ModuleUnit
-uid: learn.top-5-security-items-to-consider.3-inputs-and-outputs
-title: Inputs and Outputs
+uid: learn.azure-spring-cloud-workshop.3-configure-a-spring-cloud-config-server
+title: Configure a Spring Cloud Config Server
 metadata:
-  title: Inputs and Outputs
-  description: Inputs and Outputs
-  author: patridge
-  ms.author: adpatrid
-  ms.date: 09/24/2018
+  title: Configure a Spring Cloud Config Server
+  description: Configure a Spring Cloud Config Server
+  author: judubois
+  ms.author: judubois
+  ms.date: 03/04/2020
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10
 content: |
-  [!include[](includes/3-inputs-and-outputs.md)]
+  [!include[](includes/3-configure-a-spring-cloud-config-server.md)]
 quiz:
   title: Check your knowledge
   questions:
