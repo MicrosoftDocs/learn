@@ -11,11 +11,11 @@ metadata:
 title: Introduction to Threat Modeling
 summary: Threat modeling is an effective way to help secure your systems, applications, networks, and services. It's an engineering technique that identifies potential threats and recommendations to help reduce risk and meet security objectives earlier in the development lifecycle.
 abstract: |
-    By the end of this module, you'll learn the basics:
-    - The importance of capturing requirements, and assumptions to help create a data-flow diagram
-    - The framework that helps you find security issues in a system
-    - The security controls that help you reduce or eliminate potential threats
-    - The importance of verifying assumptions, requirements, and fixes before deployment
+  In this module, you will be able to:
+  - Understand the importance of capturing requirements and assumptions to help create a data-flow diagram
+  - Read about the framework that helps you find security issues in a system
+  - Learn about the security control categories that help you reduce or eliminate potential threats
+  - Highlight the importance of verifying assumptions, requirements, and fixes before deployment
 prerequisites: None
 iconUrl: /learn/achievements/generic-badge.svg
 ratingEnabled: false

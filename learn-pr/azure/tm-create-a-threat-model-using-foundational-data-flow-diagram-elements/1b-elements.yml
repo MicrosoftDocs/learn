@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.tm-create-a-threat-model-using-foundational-data-flow-diagram-elements.1b-elements
-title: Introduction
+title: Data-Flow Diagram Elements
 metadata:
-  title: Introduction
+  title: Data-Flow Diagram Elements
   description: Explore each element in a data-flow diagram, made up of distinct shapes, functions, and recommended context
   ms.date: 02/28/2020
   author: rodsan
