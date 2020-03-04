@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azdo.deploy-azure-functions.4-deploy-azure-function
+title: Exercise - Deploy an Azure Function to Azure
+metadata:
+  title: Exercise - Deploy an Azure Function to Azure
+  description: Extend the CI/CD pipeline to build and deploy an Azure Function.
+  ms.date: 03/02/2020
+  author: edkaim
+  ms.author: v-edkaim
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 15
+content: |
+  [!include[](includes/4-deploy-azure-function.md)]

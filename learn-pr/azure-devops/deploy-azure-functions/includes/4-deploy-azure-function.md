@@ -1,0 +1,73 @@
+Your project came with a release pipeline that builds the projects in the solution and deploys the web app to its App Service. Now it's time to extend that pipeline to also deploy the new Azure Functions project.
+
+In this part, you'll:
+
+> [!div class="checklist"]
+> * Review the **Build** stage.
+> * Add tasks to the **Deploy** stage to publish your Azure Function out to Azure and configure the published App Service to use it.
+> * Save the pipeline to trigger a CI/CD workflow.
+
+## Review the Build stage
+
+Here you review the existing CI/CD pipeline defined in *azure-pipelines.yml*. 
+
+1. From Azure DevOps, navigate to **Pipelines**.
+1. Select the pipeline.
+1. Select **Edit**.
+
+    [!code-yml[](code/4-1-azure-pipelines.yml?highlight=43-48)]
+
+**Andy:** This was our previous build stage. I didn't change it from the original project because the tasks were already configured to run against all projects based on the wildcard matching pattern.
+
+**Mara:** Yes, this should work as-is. I don't think we need to make any changes here. After this build task runs, the zip file artifacts for both the web and leaderboard projects will be published for the Deploy stage to use.
+
+## Add a task to deploy the Azure Function
+
+**Andy:** I think we can also reuse the App Service deployment task as-is. Hopefully there's something similar we can use for deploying an Azure Function.
+
+**Mara:** I have good news. After a little research, it looks like there's a task that's conceptually similar to the App Service deployment task, but for Azure Pipelines deployments. Let's add it now.
+
+Add the highlighted code below to the end of your pipeline.
+
+[!code-yml[](code/4-2-azure-pipelines.yml?highlight=43-48)]
+
+## Add a task to update the App Service's app settings
+
+**Andy:** Now all we need to do is to configure the web app to use the published leaderboard API. We usually configure variables in the portal, but it would be better if we could do it here.
+
+**Mara:** I agree. Adding a task for that to our pipeline will help us avoid accidental oversights down the road if we change either service. We can put it right at the end.
+
+Add the highlighted code below to the end of your pipeline.
+
+[!code-yml[](code/4-3-azure-pipelines.yml?highlight=11-23)]
+
+## Save the pipeline to trigger a build and release
+
+1. Select **Save** from the top right corner of the page. Confirm the **Save** to trigger a run.
+1. In Azure Pipelines, go to the build. Trace the build as it runs.
+1. After the build has succeeded, select the web site's deploy task and click the URL to view the deployed site.
+
+    ![Locating the web site URL](../media/4-deploy-url.png)
+
+1. You will see the site in production. Scroll down to confirm that the leaderboard has real data in it. This is powered by the Azure Function deploy.
+
+    ![Reviewing Space Game](../media/4-space-game.png)
+
+    > [!NOTE]
+    > If there is an error loading the leaderboard, double-check the steps followed in this module. If you see the exception message "An attempt was made to access a socket in a way forbidden by its access permissions", make sure that the applications AppSettings:LeaderboardFunctionUrl setting is being set correctly.
+
+1. You can also test out the Azure Function directly. Just navigate to your URL using the format below.
+
+    ```
+    http://<leaderboard function name>.azurewebsites.net/api/LeaderboardFunction?pageSize=10
+    ```
+    
+    such as
+
+    ```
+    http://tailspin-space-game-leaderboard-4692.azurewebsites.net/api/LeaderboardFunction?pageSize=10
+    ```
+
+    ![Reviewing the leaderboard API Azure Function](../media/4-leaderboard-azure-function.png)
+
+**Andy:** This turned out great! Everyone should be pretty impressed with the potential we've shown here.

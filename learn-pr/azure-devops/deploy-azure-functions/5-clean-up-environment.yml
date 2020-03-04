@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azdo.deploy-azure-functions.5-clean-up-environment
+title: Exercise - Clean up your Azure DevOps environment
+metadata:
+  title: Exercise - Clean up your Azure DevOps environment
+  description: Clean up your Azure DevOps project and your Azure resources.
+  ms.date: 03/02/2020
+  author: edkaim
+  ms.author: v-edkaim
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-clean-up-environment.md)]
