@@ -4,7 +4,8 @@ In this part, you'll:
 
 > [!div class="checklist"]
 > * Review the **Build** stage.
-> * Add tasks to the **Deploy** stage to publish your Azure Function out to Azure and configure the published App Service to use it.
+> * Add a task to deploy your Azure Function.
+> * Add a task configure the published App Service to use the published Azure Function.
 > * Save the pipeline to trigger a CI/CD workflow.
 
 ## Review the Build stage
@@ -13,9 +14,9 @@ Here you review the existing CI/CD pipeline defined in *azure-pipelines.yml*.
 
 1. From Azure DevOps, navigate to **Pipelines**.
 1. Select the pipeline.
-1. Select **Edit**.
+1. Select **Edit**. This will bring up the azure-pipelines.yml file that defines the existing CI/CD pipeline. Because of the use of wildcards to the project paths, the highlighted tasks below will automatically restore, build, and publish the new Azure Functions project.
 
-    [!code-yml[](code/4-1-azure-pipelines.yml?highlight=43-48)]
+    [!code-yml[](code/4-1-azure-pipelines.yml?highlight=37-57)]
 
 **Andy:** This was our previous build stage. I didn't change it from the original project because the tasks were already configured to run against all projects based on the wildcard matching pattern.
 
@@ -29,7 +30,7 @@ Here you review the existing CI/CD pipeline defined in *azure-pipelines.yml*.
 
 Add the highlighted code below to the end of your pipeline.
 
-[!code-yml[](code/4-2-azure-pipelines.yml?highlight=43-48)]
+[!code-yml[](code/4-2-azure-pipelines.yml?highlight=25-33)]
 
 ## Add a task to update the App Service's app settings
 
@@ -54,9 +55,9 @@ Add the highlighted code below to the end of your pipeline.
     ![Reviewing Space Game](../media/4-space-game.png)
 
     > [!NOTE]
-    > If there is an error loading the leaderboard, double-check the steps followed in this module. If you see the exception message "An attempt was made to access a socket in a way forbidden by its access permissions", make sure that the applications AppSettings:LeaderboardFunctionUrl setting is being set correctly.
+    > If there is an error loading the leaderboard, double-check the steps followed in this module. If you see the exception message "An attempt was made to access a socket in a way forbidden by its access permissions", make sure that the app service's AppSettings:LeaderboardFunctionUrl setting is being set correctly.
 
-1. You can also test out the Azure Function directly. Just navigate to your URL using the format below.
+1. You can also test out the Azure Function directly. Just navigate to your URL using the format below. The response will be in JSON, which should just render as text in your browser.
 
     ```
     http://<leaderboard function name>.azurewebsites.net/api/LeaderboardFunction?pageSize=10

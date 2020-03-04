@@ -4,7 +4,7 @@ While this module specifically focused on an App Service and Azure Function, the
 
 ## Learn more
 
-In this module, you worked with Azure Functions, which are one of the development models within the broader Azure Serverless Computing offerings. Azure Functions was a great solution for the Tailspin team, but your needs will vary, and it's important to understand which compute options are best for your scenario. Explore these resources to learn more.
+In this module, you worked with Azure Functions, which are one of the development models within the broader Azure serverless computing offerings. Azure Functions was a great solution for the Tailspin team, but your needs will vary, and it's important to understand which compute options are best for your scenario. Explore these resources to learn more.
 
 - [Choose an Azure compute service for your application](https://docs.microsoft.com/azure/architecture/guide/technology-choices/compute-decision-tree)
 - [Choose the right integration and automation services in Azure](https://docs.microsoft.com/azure/azure-functions/functions-compare-logic-apps-ms-flow-webjobs)
