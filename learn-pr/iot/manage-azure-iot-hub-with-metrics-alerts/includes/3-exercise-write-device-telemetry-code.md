@@ -645,30 +645,30 @@ The following app simulates a conveyor belt, and reports vibration sensor data e
 
 ::: zone pivot="vscode-csharp"
 
-1. Run the app in the terminal, with the command `dotnet run`. This command will run the **Program.cs** file in the current folder.
+* Run the app in the terminal, with the command `dotnet run`. This command will run the **Program.cs** file in the current folder.
 
 ::: zone-end
 
 ::: zone pivot="vscode-node"
 
-1. Run the app in the terminal, with the command `node app.js`. This command will run the **app.js** file in the current folder.
+* Run the app in the terminal, with the command `node app.js`. This command will run the **app.js** file in the current folder.
 
 ::: zone-end
 
 ::: zone pivot="vs-csharp,vs-node"
 
-1. Run the app by selecting **Debug/Start Without Debugging**.
+* Run the app by selecting **Debug/Start Without Debugging**.
 
 ::: zone-end
 
-1. You should quickly get a console screen, similar to the following image. Note the use of green text, to show things are working as they should. And red text when bad stuff is happening. If you don't get a screen similar to this image, start by checking your device connection string.
+You should quickly get a console screen, similar to the following image. Note the use of green text, to show things are working as they should. And red text when bad stuff is happening. If you don't get a screen similar to this image, start by checking your device connection string.
 
-    [![Screenshot showing the vibration telemetry messages](../media/vibration-telemetry.png)](../media/vibration-telemetry.png#lightbox)
+[![Screenshot showing the vibration telemetry messages](../media/vibration-telemetry.png)](../media/vibration-telemetry.png#lightbox)
 
-    > [!NOTE]
-    > This screen shot is taken from the C# version of the app. The Node.js version will differ slightly.
+> [!NOTE]
+> This screen shot is taken from the C# version of the app. The Node.js version will differ slightly.
 
-1. Watch the telemetry for a short while, checking that it's giving vibrations in the expected ranges.
+Watch the telemetry for a short while, checking that it's giving vibrations in the expected ranges.
 
 ## Verify the IoT Hub is receiving telemetry
 
