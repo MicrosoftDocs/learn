@@ -2,7 +2,7 @@
 
 An Azure IoT Hub can handle large volumes of telemetry data, sent from many sensor devices. You can individually set up each device, to be certain of its authenticity. However, with many devices, this task would be onerous to say the least. The process of validating the authenticity of a device is known as "provisioning". In this module, we investigate the IoT Device Provisioning Service (DPS). A service that enables the near-automatic provisioning of any number of devices.
 
-This module builds on the [Remotely monitor and control devices with Azure IoT Hub](https://docs.microsoft.com/learn/modules/remotely-monitor-devices-with-azure-iot-hub/) module - a fun introduction to IoT Hub programming, using the example of a temperature and humidity sensor in a cheese cave. It isn't necessary to complete the introductory module before working on this module on security, though completing it will help your understanding of IoT Hub. The introductory module covers such concepts as Device Twins, and Direct Methods. These concepts aren't explained in detail in this module on security.
+This module builds on the [Remotely monitor and control devices with Azure IoT Hub](https://docs.microsoft.com/learn/modules/remotely-monitor-devices-with-azure-iot-hub/) module - a fun introduction to IoT Hub programming, using the example of a temperature and humidity sensor in a cheese cave. It isn't necessary to complete the introductory module before working on this module on security, though completing it will help your understanding of IoT Hub. The introductory module covers such concepts as _Device Twins_, and _Direct Methods_. These concepts aren't explained in detail in this module on security.
 
 Security is a gnarly subject. However, it is more logical and understandable than you might think. Completing this module will give you a good foundation for making security decisions for your IoT-based projects.
 
@@ -119,7 +119,7 @@ This process is how you provide proof that you own the root certificate. There's
 
 ### Next step
 
-That should be enough theory. For the next step, let’s create an Azure DPS resource, and then all the necessary certificates.
+That should be enough theory. For the next step, let's create an Azure DPS resource, and then all the necessary certificates.
 
 ## Unit 4: Create a DPS resource, a root certificate, and a Group Enrollment
 
@@ -391,7 +391,7 @@ The code is written in C#, and you can choose Visual Studio, or Visual Studio Co
 ::: zone-end
 
 > [!NOTE]
-> This module doesn't require you to download any code. However, all of the code is available from XXXXXX, if needed.
+> This module doesn't require you to download any code. However, all of the code is available from [Learn module: Automatically provision IoT devices securely and at scale with DPS](https://github.com/MicrosoftDocs/mslearn-automatically-provision-iot-devices-securely-and-at-scale-with-dps), if needed.
 
 ### Add code to send telemetry
 
@@ -482,7 +482,7 @@ This section adds code to send telemetry from a simulated sensor device.
             }
         }    
     
-        // The ProvisioningDeviceLogic class contains the device logic to read from the simulated Device Sensors, and send Device-to-Cloud 
+        // The ProvisioningDeviceLogic class contains the device logic to read from the simulated Device Sensors, and send Device-to-Cloud
         // messages to the Azure IoT Hub. It also contains the code that updates the device with changes to the device twin properties.
         public class ProvisioningDeviceLogic
         {
@@ -847,6 +847,7 @@ Learn about storing passwords and certificates:
 Learn more about IoT Hub:
 
 - [IoT Hub Documentation](https://docs.microsoft.com/azure/iot-hub/)
+- [Set up X.509 security in your Azure IoT hub](https://docs.microsoft.com/azure/iot-hub/iot-hub-security-x509-get-started)
 
 Learn more about IoT Hub devices:
 
