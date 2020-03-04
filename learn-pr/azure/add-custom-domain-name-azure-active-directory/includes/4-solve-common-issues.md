@@ -27,11 +27,11 @@ The best solution is external admin takeover. Unfortunately, that's not an optio
 
 Because the sales team signed up for Power BI in this scenario, you can do an external admin takeover. The steps are the same as for adding a custom domain. The unmanaged organization won't stop you from completing those steps.
 
-After you add your custom domain to your managed organization, the following items are moved into your Azure AD organization:
+After you add your custom domain to your managed organization, all of the following items are moved into your Azure AD organization:
 
-- All domain name users
-- All subscriptions
-- All license assignments
+- Domain name users
+- Subscriptions
+- License assignments
 
 Internal admin takeovers are more complex and involve signing up for a Power BI account for the unmanaged organization. After you sign up, use Office 365 to verify the domain name. No users or service plans migrate during an internal takeover.
 
