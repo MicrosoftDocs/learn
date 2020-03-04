@@ -77,6 +77,6 @@ Milestone markers can be added to the delivery plan as reference points. These h
 
 Your final sprint plan should looks similar to below.
 
-	![An optimized work schedule](../media/5-optimized-work-schedule.png)
+![An optimized work schedule](../media/5-optimized-work-schedule.png)
 
 You've just completed some invaluable work that will impact the organization in a meaningful way. Management can feel confident that work will progress without foreseeable delays. And instead of waiting on dependencies to be delivered, teams will have always productive work to take on. Sure, things might change as circumstances develop, but at least now everyone knows where to go to stay up to date.
