@@ -71,7 +71,7 @@ quiz:
       explanation: There are three status columns in the dashboard.
     - content: 'New, Acknowledged, Closed'
       isCorrect: true
-      explanation: The status of an alert is changed by the operator.
+      explanation: This is the order the status of an alert is changed by the operator.
     - content: 'Acknowledged, New, Closed'
       isCorrect: false
       explanation: The order is incorrect.

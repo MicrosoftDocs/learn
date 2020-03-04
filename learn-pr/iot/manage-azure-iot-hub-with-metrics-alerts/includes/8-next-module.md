@@ -858,3 +858,179 @@ Learn more about X.509 certificates:
 - [X.509 Digital Certification](https://docs.microsoft.com/windows/win32/seccrypto/x-509-digital-certification)
 
 To complete this module, there's a slightly harder-than-usual knowledge check. Good luck with it!
+
+```yml
+### YamlMime:Module
+uid: learn.iot.automatically-provision-iot-devices-securely-and-at-scale-with-dps
+metadata:
+  title: Securely provision IoT devices at scale with DPS
+  description: In this module, create an Azure IoT Hub, and a DPS resource. Code for a number of simulated sensors is created, and the focus of the module is getting these devices securely provisioned and communicating with the hub, via a DPS group enrollment. The scenario is sensors in multiple cheese caves.
+  ms.date: 3/15/2020
+  author: PeterTurcan
+  ms.author: Olivier.Bloch
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Securely provision IoT devices at scale with DPS
+summary: >
+ In this module, create an Azure IoT Hub, and a DPS resource. Code for a number of simulated sensors is created, and the focus of the module is getting these devices securely provisioned and communicating with the hub, via a DPS group enrollment. The scenario is sensors in multiple cheese caves.
+abstract: | 
+  In this module, you will:
+- Create a custom Azure IoT Hub, using the Azure portal
+- Learn about device provisioning, X.509 certificates, and enrollments
+- Create a DPS resource and a group enrollment, using the Azure portal
+- Create an app to send device telemetry to your IoT Hub, using Visual Studio, or Visual Studio Code
+- Test multiple devices are provisioned by your DPS resource
+prerequisites: | 
+- An introductory knowledge of Azure IoT
+- Ability to navigate the Azure IoT portal
+- Ability to use C#, at the beginner level
+- Experience using Visual Studio, or Visual Studio Code, at the beginner level
+iconUrl: /learn/achievements/iot/automatically-provision-iot-devices-securely-and-at-scale-with-dps.svg
+ratingEnabled: true
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure-iot-hub
+units:
+- learn.iot.automatically-provision-iot-devices-securely-and-at-scale-with-dps.introduction
+- learn.iot.automatically-provision-iot-devices-securely-and-at-scale-with-dps.create-iot-hub
+- learn.iot.automatically-provision-iot-devices-securely-and-at-scale-with-dps.overview-dps-x509-certificates-enrollments
+- learn.iot.automatically-provision-iot-devices-securely-and-at-scale-with-dps.exercise-create-dps-resource-root-certificate-group-enrollment
+- learn.iot.automatically-provision-iot-devices-securely-and-at-scale-with-dps.exercise-create-multiple-leaf-certificates
+- learn.iot.automatically-provision-iot-devices-securely-and-at-scale-with-dps.exercise-create-code-sensor-devices
+- learn.iot.automatically-provision-iot-devices-securely-and-at-scale-with-dps.exercise-test-multiple-devices-provision-correctly
+- learn.iot.automatically-provision-iot-devices-securely-and-at-scale-with-dps.summary
+badge:
+  uid: learn.iot.automatically-provision-iot-devices-securely-and-at-scale-with-dps.badge
+
+
+
+### YamlMime:ModuleUnit
+uid: learn.iot.automatically-provision-iot-devices-securely-and-at-scale-with-dps.introduction
+metadata:
+  title: Introduction
+  description: Describes the scenario of multiple sensor devices needing to be validated before their telemetry can be allowed to reach an IoT Hub.
+  ms.date: 3/15/2020
+  author: PeterTurcan
+  ms.author: Olivier.Bloch
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]
+
+
+### YamlMime:ModuleUnit
+uid: learn.iot.automatically-provision-iot-devices-securely-and-at-scale-with-dps.create-iot-hub
+metadata:
+  title: Create an IoT Hub
+  description: Goes through the process of creating an IoT Hub to handle cheese cave telemetry.
+  ms.date: 3/15/2020
+  author: PeterTurcan
+  ms.author: Olivier.Bloch
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Create an IoT Hub
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-create-iot-hub.md)]
+
+
+
+### YamlMime:ModuleUnit
+uid: learn.iot.automatically-provision-iot-devices-securely-and-at-scale-with-dps.overview-dps-x509-certificates-enrollments
+metadata:
+  title: Overview of the DPS resource, X.509 certificates, and enrollments
+  description: Provides an overview of the Azure DPS resource, X.509 certificates, and individual and group enrollments.
+  ms.date: 3/15/2020
+  author: PeterTurcan
+  ms.author: Olivier.Bloch
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Overview of the DPS resource, X.509 certificates, and enrollments
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-overview-dps-x509-certificates-enrollments.md)]
+
+
+
+### YamlMime:ModuleUnit
+uid: learn.iot.automatically-provision-iot-devices-securely-and-at-scale-with-dps.exercise-create-dps-resource-root-certificate-group-enrollment
+metadata:
+  title: Exercise - Create a DPS resource, root certificate, and group enrollment
+  description: In this unit, a DPS resource is first created, and linked to the IoT Hub created in the previous unit. Then, an X.509 root certificate is created, and validated. Finally, a Group Enrollment is created within the DPS resource.
+  ms.date: 3/15/2020
+  author: PeterTurcan
+  ms.author: Olivier.Bloch
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise - Create a DPS resource, root certificate, and group enrollment
+durationInMinutes: 12
+content: |
+  [!include[](includes/4-exercise-create-dps-resource-root-certificate-group-enrollment.md)]
+
+
+### YamlMime:ModuleUnit
+uid: learn.iot.automatically-provision-iot-devices-securely-and-at-scale-with-dps.exercise-create-multiple-leaf-certificates
+metadata:
+  title: Exercise - create multiple leaf certificates
+  description: Create one leaf certificate for each remote sensor device.
+  ms.date: 3/15/2020
+  author: PeterTurcan
+  ms.author: Olivier.Bloch
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise - create multiple leaf certificates
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-exercise-create-multiple-leaf-certificates.md)]
+
+
+### YamlMime:ModuleUnit
+uid: learn.iot.automatically-provision-iot-devices-securely-and-at-scale-with-dps.exercise-create-code-sensor-devices
+metadata:
+  title: Exercise - create the code for the sensor devices
+  description: Create multiple apps, each app simulating one sensor device.
+  ms.date: 3/15/2020
+  author: PeterTurcan
+  ms.author: Olivier.Bloch
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise - create the code for the sensor devices
+durationInMinutes: 12
+content: |
+  [!include[](includes/6-exercise-create-code-sensor-devices.md)]
+
+
+uid: learn.iot.automatically-provision-iot-devices-securely-and-at-scale-with-dps.exercise-test-multiple-devices-provision-correctly
+metadata:
+  title: Exercise - test the multiple devices are automatically provisioned and assigned to your hub
+  description: Test that all three devices are provisioned automatically by the DPS resource. Test that sensor telemetry is reaching the hub. Finally, test a device twin change in the portal is picked up by the correct device.
+  ms.date: 3/15/2020
+  author: PeterTurcan
+  ms.author: Olivier.Bloch
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise - test the multiple devices are automatically provisioned and assigned to your hub
+durationInMinutes: 6
+content: |
+  [!include[](includes/7-exercise-test-multiple-devices-provision-correctly.md)]
+
+
+uid: learn.iot.automatically-provision-iot-devices-securely-and-at-scale-with-dps.summary
+metadata:
+  title: Summary
+  description: Summarizes the skills learnt in the module, and finishes with a knowledge check.
+  ms.date: 3/15/2020
+  author: PeterTurcan
+  ms.author: Olivier.Bloch
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Summary
+durationInMinutes: 6
+content: |
+  [!include[](includes/8-summary.md)]
+```
