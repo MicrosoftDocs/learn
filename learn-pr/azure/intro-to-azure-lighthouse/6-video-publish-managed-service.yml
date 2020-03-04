@@ -1,0 +1,41 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-lighthouse.6-video-publish-managed-service
+metadata:
+  title: Publish a managed service offer on the Azure Marketplace
+  description: See how to publish on the Azure Marketplace and as a customer how you'd go about accepting and authorizing a service provider to manage your Azure instance.
+  ms.date: 01/08/2020
+  author: ikensey
+  ms.author: v-geo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Publish a managed service offer on the Azure Marketplace
+durationInMinutes: 12
+content: |
+  [!include[](includes/6-video-publish-managed-service.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: 'When would you use a private plan type?'
+    choices:
+    - content: When you want to preview a service offer before publishing it on the Azure Marketplace.
+      isCorrect: false
+      explanation: The private plan type is used when you want to make an offer viewable to a specific customer on the Azure Marketplace
+    - content: To limit or restrict access to the service offer to named customers.
+      isCorrect: true
+      explanation: The private plan type is used to limit access to your offer on the Azure Marketplace, to a specific customer.
+    - content: To limit or restrict access to the service offer for Microsoft to review before publishing to the Azure Marketplace.
+      isCorrect: false
+      explanation: The private plan type is used when you want to make an offer viewable to a specific customer on the Azure Marketplace.
+  - content: 'Which type of billing model do you use for a Managed Services Offer?'
+    choices:
+    - content: Enterprise Agreement
+      isCorrect: false
+      explanation: You'd use the Bring your own licence model.
+    - content: Pay-As-You-Go
+      isCorrect: false
+      explanation: You'd use the Bring your own licence model.
+    - content: Bring your own license.
+      isCorrect: true
+      explanation: The Bring your own licence model is the only applicable one for a managed service offer.
+
