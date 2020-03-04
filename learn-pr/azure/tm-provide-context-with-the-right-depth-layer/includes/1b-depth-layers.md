@@ -7,12 +7,14 @@ Data-flow diagram depth layers help you understand how much context to include a
 > [!TIP]
 > Talk to your colleagues and security team to select the right depth layer. Use can also use this module as reference.
 
+![Depth Layers](../media/DepthLayers.png)
+
 ## Learning objectives
 
-In this module, you will be able to:
+In this module, you'll learn:
 
-- Learn the differences between the data-flow diagram depth layers
-- Know when to use each layer
+- Data-flow diagram depth layers
+- When to use each layer
 
 ## Prerequisites
 
