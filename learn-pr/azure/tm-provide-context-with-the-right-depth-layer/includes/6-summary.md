@@ -4,10 +4,10 @@ However, threat models can either get **too complex** or **too high level** depe
 
 In this module, you learned about prioritizing your issues and applying the right layer of security controls based on type and function.
 
-You learned about:
+In this module, you:
 
-- Data-flow diagram depth layers
-- When to use each layer
+- Learned the differences between the data-flow diagram depth layers
+- Understood when to use each layer
 
 > [!NOTE]
 >**Did You Know?**

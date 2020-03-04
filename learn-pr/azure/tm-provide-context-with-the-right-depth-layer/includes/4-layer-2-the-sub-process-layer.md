@@ -1,4 +1,8 @@
-The Subprocess Layer focuses on data-flow diagrams for **each system subpart**. The goal is to understand how each system subpart works and interacts with each other.
+The Subprocess Layer is the third layer and should be used whenever you create systems that are highly sensitive.
+
+## What Does This Layer Contain
+
+Data-flow diagrams at this layer contain separate data-flow diagrams detailing **each system subpart**. The goal is to understand how each system subpart works and interacts with each other.
 
 ## When Should I Use This Layer?
 

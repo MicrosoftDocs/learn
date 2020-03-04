@@ -1,4 +1,8 @@
-The System Layer is the **starting ground** for any system and must be created for all your systems. Data-flow diagrams in this layer contain major system parts with enough context to help you understand how they work and interact with each other.
+The System Layer is the **starting ground** for any system and must be created for all your systems. 
+
+## What Does This Layer Contain?
+
+Data-flow diagrams in this layer contain major system parts with enough context to help you understand how they work and interact with each other.
 
 ## When Should I Use This Layer?
 

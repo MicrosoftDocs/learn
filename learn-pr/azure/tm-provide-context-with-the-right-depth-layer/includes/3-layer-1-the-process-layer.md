@@ -1,4 +1,8 @@
-The Process Layer focuses on data-flow diagrams for **each system part**. The goal is to understand how they work and interact with each other.
+The Process Layer is the second layer and should be used for most systems.
+
+## What Does This Layer Contain
+
+Data-flow diagrams at this layer contain separate data-flow diagrams detailing **each system part**. The goal is to understand how they work and interact with each other.
 
 ## When Should I Use This Layer?
 
