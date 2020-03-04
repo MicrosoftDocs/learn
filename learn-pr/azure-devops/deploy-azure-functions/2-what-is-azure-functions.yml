@@ -22,7 +22,7 @@ quiz:
       explanation: "Serverless applications are great as gateways to more sophisticated functions, such as cognitive services."
     - content: "A peer-to-peer file sharing network."
       isCorrect: false
-      explanation: "While peer-to-peer networks operate without the use of a centralized server, this is not the kind of serverless we’re talking about here."
+      explanation: "While peer-to-peer networks operate without the use of a centralized server, this is not the kind of serverless we're talking about here."
     - content: "A service that manages an online shopping cart."
       isCorrect: false
       explanation: "Shopping carts require some sort of state in order to track items, so they are not a good candidate for serverless computing."
@@ -34,17 +34,17 @@ quiz:
     - content: "They can be written in virtually any mainstream language."
       isCorrect: false
       explanation: "Azure Functions can be developed in C#, Java, JavaScript, Python, PowerShell, and more."
-    - content: "They can replace app services and virtual machines."
-      isCorrect: false
+    - content: "They are a replacement for app services and virtual machines."
+      isCorrect: true
       explanation: "Azure Functions are great for providing specific services, but are not intended to replace app services or virtual machines."
   - content: "Which of the following is not a supported way to directly trigger an Azure Function?"
     choices:
     - content: "Making a HTTP request over the public Internet."
       isCorrect: false
       explanation: "This is one of the most common ways to integrate with Azure Functions."
-    - content: "Receiving a message from a message queue."
+    - content: "Detecting a new message on a message queue."
       isCorrect: false
       explanation: "This is a very common way to invoke an Azure Function asynchronously."
-    - content: "Receiving a carefully filled-out fax message."
-      isCorrect: false
-      explanation: "At this time, incoming fax messages are not directly supported. However, there’s no reason you couldn’t wire up fax software to another trigger method."
+    - content: "Receiving a carefully filled-out form via fax machine."
+      isCorrect: true
+      explanation: "At this time, incoming fax messages are not directly supported. However, there's no reason you couldn't wire up fax software to another trigger method."
