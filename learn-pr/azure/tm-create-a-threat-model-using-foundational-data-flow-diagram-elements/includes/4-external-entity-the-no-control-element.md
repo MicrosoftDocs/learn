@@ -8,16 +8,18 @@ Depicted by a square, an external entity can be a process, data store, or even a
 - Tight integration with a third-party authentication service
 - Services created by other teams within your organization
 
-> [!NOTE]
-> Using this element ensures everyone understands what can and cannot be changed by your team.
+## When Should I Use the External Entity Element?
+
+- Use this element to represent what you can't directly modify
+- Data stores and external entities start the data-flow, so verify you have either one in place
  
 ## What Context Should I Include?
 
 Include the following context to each external entity element:
 
 |Context|Questions|
-|-------|-------------------|
-|Flow|Did you include an external entity or data store to kick-off your data-flow?|
-|Source|Is it internal? external?|
-|Type|Is it human? provider? web service?|
-|Authentication and Authorization|Does it use Azure Active Directory? Access Control Lists (ACL)?|
+|-------|---------|
+|Source|Is the entity internal or external?|
+|Type|Is the entity human, a service provider or web service?|
+|Authentication|Does the process rely on Azure Active Directory for authentication? If not, what does it rely on?|
+|Authorization|Does it rely on Access Control Lists (ACL) for authorization? If not, what does it rely on?|

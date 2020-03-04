@@ -7,15 +7,11 @@ Depicted by parallel lines, this element represents data stored on a temporary o
 - Using the browser cache to store user session-related data
 - Adding a security log event to a database
 
-> [!NOTE]
-> Data stores require security controls to keep data accessible, intact, and safe from prying eyes. These controls are easier to implement when the right context is included.
+## When Should I Use the Data Store Element?
 
-## What Do I Have To Do?
-
-You should look out for:
-
-- Data stores do not handle tasks; include a process element for each one
-- Data stores or external entities start the data-flow, so verify you have either one in place
+- Use the data store element whenever you're storing data somewhere, like Azure DB or local cache
+- If you're establishing communication between two data-stores, don't forget to add a process between them
+- Data stores and external entities start the data-flow, so verify you have either one in place
 - Avoid data sinks by including Analytics Services and other processes to handle data post-storage
 
 ## What Context Should I Include?
@@ -23,8 +19,8 @@ You should look out for:
 Include the following context to each data store element:
 
 |Context|Questions|
-|-------|-------------------|
-|Type|Azure SQL? Cookies? Local?|
-|Function|Is it used to share data? Backups? Security logs? Credentials? Secrets?|
-|Permission Level|How is access control implemented? Who has read? write?|
-|Additional Controls|Is data encrypted? is disk encrypted? are digital signatures used?|
+|-------|---------|
+|Type|Does the system use Azure SQL, cookies, local or some other type of storage? If so, what is it?|
+|Function|How is the storage used? Is it used to share data, store Backups, Security logs, Credentials, Secrets?|
+|Permission Level|How is access control implemented? Who has read and write permissions?|
+|Additional Controls|Is data encrypted? What about the disk? Are digital signatures used?|

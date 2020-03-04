@@ -8,7 +8,8 @@ The fix phase is where the fates of generated threats are decided. Each STRIDE t
 - Select one or more security control types and functions to address each threat
 - Resolve tasks
 
-If you don't complete this phase, you won't find the security controls to help reduce risk or track each threat properly
+> [!IMPORTANT]
+> If you don't complete this phase, you won't find the security controls to help reduce risk or track each threat properly
 
 ## How Do I Start?
 

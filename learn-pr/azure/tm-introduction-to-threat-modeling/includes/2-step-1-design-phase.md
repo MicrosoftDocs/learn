@@ -7,7 +7,8 @@ The design phase is the starting ground for your threat modeling activities. It 
 - Enumerate all the assumptions about the environment and default security configurations
 - Create a data-flow diagram using the right context depth level
 
-If you don't complete this phase, you might overlook important security design considerations for your system, which can put your customers at risk.
+> [!IMPORTANT]
+> If you don't complete this phase, you might overlook important security design considerations for your system, which can put your customers at risk.
 
 ## How Do I Start?
 
@@ -84,7 +85,7 @@ To help you understand how much information to include, choose between these fou
 |3|Lower-Level|Focus on highly critical and kernel-level systems. Data-flow diagrams describe each subprocess in minute detail|
 
 > [!NOTE]
-> Most data-flow diagrams should contain **both Layer 0 and Layer 1** context depth layers. Speak with your security team to confirm required depth layer.
+> Most data-flow diagrams should contain **both Layers 0 and 1** context depth layers. Speak with your security team to confirm required depth layer.
 
 ## What Should I Use to Build My Data-Flow Diagram?
 

@@ -1,32 +1,34 @@
-Data-flow diagrams are graphical representations of your system and should specify:
+## What It's About
 
-# add more here in the beginning
-# goal of introductory unit is motivation
-# 1st paragraph - universe of discourse (area we're talking about)
-# 2nd paragraph - real world example (motivational)
-# 3rd paragraph - Prose table of contents (in this module you'll .......)
+Data-flow diagrams are made up of shapes and lines that graphically represent every major part of your system.
 
-# Add unit "1.5"
+Shapes represent parts of the system. Examples include databases, web services, user input, and trust zone level changes.
 
+> [!NOTE]
+> Elements may be also referred as Stencils throughout this learning path.
 
-|Element|Shape|Definition|
-|-------|-----|----------|
-|Process|![Process](../media/process50.png)|Task that receives, modifies, or redirects input to output, like a web service|
-|Data store|![Data Store](../media/data-store50.png)|Permanent and temporary data storage, like a web cache and Azure DB|
-|External entity|![External Entity](../media/external-entity50.png)|Task, entity or data store outside of your direct control, like users and third-party APIs|
-|Data-flow|![Data-flow](../media/data-flow50.png)|Data movement between processes, data stores, and external entities, like connection strings and payloads|
-|Trust boundary|![Trust Boundary Box](../media/trust-boundary-box50.png) ![Trust Boundary Line](../media/trust-boundary-line50.png)|Trust zone changes as data flows through the system, like users using the internet to access a secured corporate network|
+## When to Use Them
 
-Elements and interactions are analyzed against STRIDE to help identify threats and reduce or eliminate risk. This process helps engineers collaborate with colleagues, security teams, and managers while securing their systems against the most common threats.
+Use elements whenever you create a data-flow diagram. It shows how data is created, manipulated, stored, and removed from your system. Let's build on the examples from the first module:
 
-In this module, you'll explore each element in a data-flow diagram. These elements are made up of distinct shapes, functions, and require specific context.
+- **Azure micro-service** - add elements to specify users, authentication processes, data storage, data request and response handling processes, trust zone level changes and other systems
+- **Public API** - add elements to specify users, data storage, logging and monitoring processes and other parts of the system
+- **Add new feature to an existing application** - add elements to represent existing parts of the system and new ones
+
+## What To Expect
+
+Elements and their interactions are used in threat modeling to help identify threats and reduce system risk.
+
+The process helps engineers collaborate more efficiently while securing their systems against the most common threats.
+
+In this module, you'll explore each element of a data-flow diagram. These have distinct shapes, functions, and require specific context.
 
 ## Learning objectives
 
-In this module, you'll learn:
+In this module, you will be able to:
 
-- The shape and function of each element
-- The context to include when creating a data-flow diagram
+- Identify the shape and function of each element
+- Know which context to include
 
 ## Prerequisites
 

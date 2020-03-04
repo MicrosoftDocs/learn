@@ -32,6 +32,7 @@ products:
 - m365-ems-cloud-app-security
 units:
 - learn.tm-create-a-threat-model-using-foundational-data-flow-diagram-elements.1-introduction
+- learn.tm-create-a-threat-model-using-foundational-data-flow-diagram-elements.1b-elements
 - learn.tm-create-a-threat-model-using-foundational-data-flow-diagram-elements.2-process-the-task-element
 - learn.tm-create-a-threat-model-using-foundational-data-flow-diagram-elements.3-data-store-the-storage-element
 - learn.tm-create-a-threat-model-using-foundational-data-flow-diagram-elements.4-external-entity-the-no-control-element
