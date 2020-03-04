@@ -8,7 +8,6 @@ metadata:
   ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 title: Choose a partition key in Azure Cosmos DB
 durationInMinutes: 6
 content: |
