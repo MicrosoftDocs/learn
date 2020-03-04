@@ -39,4 +39,4 @@ units:
 - learn.azdo.deploy-azure-functions.5-clean-up-environment
 - learn.azdo.deploy-azure-functions.6-summary
 badge:
-  uid: learn.azdo.create-multi-stage-pipeline.badge
+  uid: learn.azdo.deploy-azure-functions.badge
