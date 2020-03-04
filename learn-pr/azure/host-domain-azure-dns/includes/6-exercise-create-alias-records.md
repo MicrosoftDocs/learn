@@ -4,13 +4,13 @@ You now know you can use an Azure alias record to provide a dynamic, auto refres
 
 In this unit, you'll:
 
-- Set up a VNET with two VMs and a load balancer.
+- Set up a virtual network with two VMs and a load balancer.
 - Learn how to configure an Azure alias at the zone apex to direct to the load balancer.
-- Verify the domain name resolves to one or either of the VMs on your VNET
+- Verify the domain name resolves to one or either of the VMs on your virtual network
 
-## Set up a VNET, Load balancer, and VMs in Azure
+## Set up a virtual network, Load balancer, and VMs in Azure
 
-Manually creating a VNET, load balancer, and two VMs will take some time. To improve set up time, you can use a Bash setup script, which is available on GitHub. Follow these instructions to create a test environment for your alias record.
+Manually creating a virtual network, load balancer, and two VMs will take some time. To improve set up time, you can use a Bash setup script, which is available on GitHub. Follow these instructions to create a test environment for your alias record.
 
 1. Using the Cloud Shell, clone the setup script.
 
@@ -31,7 +31,7 @@ Manually creating a VNET, load balancer, and two VMs will take some time. To imp
 
     - Creates a network security group
     - Create two NIC's and two VMs
-    - Create a VNET and assign the VMs
+    - Create a virtual network and assign the VMs
     - Create a public IP address and update the configuration of the VMs
     - Create a load balancer referencing the VMs, including load balancer rules.
     - Link the NICs to the load balancer

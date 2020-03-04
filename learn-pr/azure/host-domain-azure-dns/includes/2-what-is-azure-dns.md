@@ -115,9 +115,16 @@ You can manage your domains and records by using the Azure portal, Azure PowerSh
 
 ### Private domains
 
-Azure DNS handles the translation of external domain names to an IP address. Azure Private DNS provides name resolution for virtual machines (VMs) within a virtual network and between virtual networks. This allows you to use your own custom domain names rather than the Azure-provided names. Also you can configure zones to allows a private and a public DNS zone to share a name.
+Azure DNS handles the translation of external domain names to an IP address. Azure Private DNS provides name resolution for virtual machines (VMs) within a virtual network and between virtual networks without having to create a custom DNS solution. This allows you to use your own custom domain names rather than the Azure-provided names.
 
-To publish a private DNS zone to your virtual network, you specify the list of virtual networks that are allowed to resolve records within the zone. When autoregistration is enabled, Azure DNS updates the zone records whenever a virtual machine is created, changes its' IP address, or is deleted.
+To publish a private DNS zone to your virtual network, you specify the list of virtual networks that are allowed to resolve records within the zone.
+
+Benefits of a private DNS zone:
+
+- No need to invest in a DNS solution. DNS zones are supported as part of the Azure infrastructure.
+- All DNS record types are supported: A, CNAME, TXT, MX, SOA, AAAA, PTR, and SVR.
+- Hostnames for VMs in your virtual network are automatically maintained.
+- Split-horizon DNS support allows the same domain name to exist in both private and public zones and to resolve to the correct one based on the originating request location.
 
 ### Alias record sets
 
