@@ -5,8 +5,8 @@ metadata:
   description: Follow this learning path for a broad and compelling introduction to the fundamentals of Azure cloud computing.
   brand: azure
   ms.date: 12/27/2018
-  author: markjulmar
-  ms.author: smmark
+  author: patridge
+  ms.author: adpatrid
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Azure fundamentals
