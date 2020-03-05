@@ -41,8 +41,6 @@ Threat modeling should be used in environments where there is a meaningful secur
 
 More information is available at [Threat Modeling](https://www.microsoft.com/en-us/securityengineering/sdl/threatmodeling).
 
-[//]: # (NOTE: Locale required in the previous SDL link, or the user will be redirected to a non-relevant resource.)
-
 ### Establish design requirements
 
 The SDL is typically thought of as assurance activities that help engineers implement more secure features, meaning the features are well engineered for security. To achieve this assurance, engineers typically rely on security features such as cryptography, authentication, and logging. In many cases, selecting or implementing security features has proven to be so complicated that design or implementation choices are likely to result in vulnerabilities. Therefore, it's crucial that they are applied consistently and with a consistent understanding of the protection they provide.
@@ -67,8 +65,6 @@ Learn more about managing the security risks of using third-party components at:
 * [Managing Security Risks Inherent in the Use of Third-Party Components](https://safecode.org/wp-content/uploads/2017/05/SAFECode_TPC_Whitepaper.pdf)
 * [Managing Security Risks Inherent in the Use of Open-Source Software](https://www.microsoft.com/en-us/securityengineering/opensource/)
 
-[//]: # (NOTE: Locale required in the previous SDL links, or the user will be redirected to a non-relevant resource.)
-
 ### Use approved tools
 
 Define and publish a list of approved tools and their associated security checks, such as compiler/linker options and warnings. Engineers should strive to use the latest version of approved tools (such as compiler versions), and to utilize new security analysis functionality and protections.
@@ -79,8 +75,6 @@ For more information, see:
 
 * [Recommended Tools, Compilers and Options for x86, x64, and ARM processors](https://download.microsoft.com/download/6/3/A/63AFA3DF-BB84-4B38-8704-B27605B99DA7/Recommended%20Tools,%20Compilers%20and%20Options%20for%20x86,%20x64%20and%20ARM.pdf) (whitepaper)
 * [SDL Resources](https://www.microsoft.com/en-us/securityengineering/sdl/resources)
-
-[//]: # (NOTE: Locale required in the previous SDL links, or the user will be redirected to a non-relevant resource.)
 
 ### Perform Static Analysis Security Testing
 
