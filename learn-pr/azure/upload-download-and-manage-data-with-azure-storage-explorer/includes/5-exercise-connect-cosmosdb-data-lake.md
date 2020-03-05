@@ -18,66 +18,9 @@ Before you use Storage Explorer to connect to a Cosmos DB with a connection stri
         --resource-group <rgn>[sandbox resource group name]</rgn>
     ```
 
-   This command takes a few minutes to run, while it creates a new Cosmos DB for you.
+   This command takes a few minutes to run, while it creates a new Cosmos DB account for you.
 
-1. When it's complete, you'll see something similar to this JSON response. These details also tell you the name of the cosmos DB. The database name has been marked so you can find it easily.
-
-   ```json
-   {
-     "capabilities": [],
-     "connectorOffer": null,
-     "consistencyPolicy": {
-       "defaultConsistencyLevel": "Session",
-       "maxIntervalInSeconds": 5,
-       "maxStalenessPrefix": 100
-     },
-     "databaseAccountOfferType": "Standard",
-     "documentEndpoint": "https://cosmos26829.documents.azure.com:443/",
-     "enableAutomaticFailover": false,
-     "enableCassandraConnector": null,
-     "enableMultipleWriteLocations": false,
-     "failoverPolicies": [
-       {
-         "failoverPriority": 0,
-         "id": "cosmos26829-westus",
-         "locationName": "West US"
-       }
-     ],
-     "id": "/subscriptions/74a1aed8-22d4-4e40-9f22-ac5d5b3ffb34/resourceGroups/learn-16287428-fa2d-44b0-8291-cfeb1ce093aa/providers/Microsoft.DocumentDB/databaseAccounts/cosmos26829",
-     "ipRangeFilter": "",
-     "isVirtualNetworkFilterEnabled": false,
-     "kind": "Parse",
-     "location": "West US",
-     "name": "cosmos26829",   <!-- This is the name of your cosmos database -->
-     "provisioningState": "Succeeded",
-     "readLocations": [
-       {
-         "documentEndpoint": "https://cosmos26829-westus.documents.azure.com:443/",
-         "failoverPriority": 0,
-         "id": "cosmos26829-westus",
-         "isZoneRedundant": false,
-         "locationName": "West US",
-         "provisioningState": "Succeeded"
-       }
-     ],
-     "resourceGroup": "learn-16287428-fa2d-44b0-8291-cfeb1ce093aa",
-     "tags": {},
-     "type": "Microsoft.DocumentDB/databaseAccounts",
-     "virtualNetworkRules": [],
-     "writeLocations": [
-       {
-         "documentEndpoint": "https://cosmos26829-westus.documents.azure.com:443/",
-         "failoverPriority": 0,
-         "id": "cosmos26829-westus",
-         "isZoneRedundant": false,
-         "locationName": "West US",
-         "provisioningState": "Succeeded"
-       }
-     ]
-   }
-   ```
-
-   Make a note of your Cosmos DB name as you'll need it later. In this example, the Cosmos DB name is **cosmos26829**.
+1. When it's complete, you'll see JSON structured output with the details of the Cosmos DB account. Note the value of the **name** of the account for use in a later step.
 
 ## Obtain your Cosmos DB connection string
 
@@ -139,8 +82,6 @@ Next, connect Storage Explorer to your Cosmos DB through a connection string.
 
 1. The Cosmos DB connection appears in the Cosmos DB Accounts folder, with the view displayed to the right.
 
-    ![Screenshot showing the Cosmos DB view panel](../media/5-cosmos-db-connect-string-view.png)
-
 You're now connected to your Cosmos DB account.
 
 ### Create a Cosmos DB database
@@ -159,11 +100,13 @@ You've now created a database called **products** in your Cosmos DB.
 
 ### Create a collection in a Cosmos DB database
 
-Now you have a Cosmos DB database, it's time to create a collection. When you create a collection, you'll need to know its ID or name, and the maximum storage capacity.
+Now you have a Cosmos DB database, it's time to create a collection. When you create a collection, you'll provide ID or name, and the maximum storage capacity.
 
-![Screenshot showing the create collection panel](../media/5-cosmos-db-collection.png)
+1. Right click the **products** database and select **Create collection...**.
 
-1. Let's give this collection the name **regions**.
+    ![Screenshot showing the create collection panel](../media/5-cosmos-db-collection.png)
+
+1. For **Collection ID** enter an ID of **regions**.
 
 1. Next, specify whether this collection has a finite amount of storage space or whether it will grow to match the size of the collection. A fixed option gives you a maximum collection size of 10 GB.
 
@@ -177,8 +120,9 @@ You'll now see that the region's collection is added under the production databa
 
 The collection can contain many items. You use Storage Explorer to manage these, including creating new documents in your collection.
 
-1. Select the **regions** collection you created earlier.
-1. In the right-hand panel, you'll see the collection panel. From here, you can manage the data in your collection.
+1. In the **EXPLORER** pane, expand the **regions** collection. Select **Documents**.
+
+1. You'll now see the **regions** collection pane. From here, you can manage the data in your collection.
 
    ![Screenshot showing the document control panel](../media/5-cosmos-db-collection-create-doc.png)
 
