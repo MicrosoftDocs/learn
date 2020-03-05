@@ -1,3 +1,5 @@
+In this unit you will learn what the challenges and risks are and how to manage large groups of IoT devices.
+
 ## Challenges and risks of configuring large groups of devices
 
 Let's get back to our cheese cave environment solution company. Now that we have tested that the firmware update configuration is working on one device in the lab, we need to start deploying the new features and security updates to all our customers.

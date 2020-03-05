@@ -7,7 +7,7 @@ In this module you learned how to:
 - Test a single device firmware update setting it up and initiating it from the Azure Portal
 - Use the Automatic device management feature of Azure IoT Hub to automate the firmware update on several groups of devices in sequence, using the Azure CLI
 
-## Next Steps
+## Next steps
 
 Take your interest further with:
 

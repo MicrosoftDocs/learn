@@ -1,11 +1,10 @@
 In this unit, we will use the Azure portal to create a new device management configuration and apply it to our single simulated device.
 
-## Start de simulator
+## Start the simulator
 
 In the Azure Shell, from the same folder you created the device simulator project, start the simulator typing the following command (replacing **\<device connection string\>** with the connection string you got at the end of unit 2):
-
-    > [!NOTE]
-    > In the instructions following and next units of this module you will have to enter long and customized commands. We recommend that you use a text editor to prepare your commands, replacing the place holders with your own names and keys then copy paste from there to the Azure Shell terminal.
+> [!NOTE]
+> In the instructions following and next units of this module you will have to enter long and customized commands. We recommend that you use a text editor to prepare your commands, replacing the place holders with your own names and keys then copy paste from there to the Azure Shell terminal.
 
 
 ```bash
@@ -33,37 +32,36 @@ mydevice: Current firmware version: 1.0.0
     
 1. For the "Device Twin Property" field, enter the below. To define a desired property you need to prefix the value in the field with "properties.desired". You can also add several desired properties, but in our case we will only add one.
 
-```json
-properties.desired.firmware
-```
-    
+    ```json
+    properties.desired.firmware
+    ```
+        
 1. In the "Device Twin Property Content" field type the following then click on "Next: Metrics >"
 
-```json
-{
-    "fwVersion":"1.0.1",
-    "fwPackageURI":"https://MyPackage.uri",
-    "fwPackageCheckValue":"1234"
-}
-```
+    ```json
+    {
+        "fwVersion":"1.0.1",
+        "fwPackageURI":"https://MyPackage.uri",
+        "fwPackageCheckValue":"1234"
+    }
+    ```
 
-
-:::image type="content" source="../media/devicemanagement-3.png" alt-text="Device Twin configuration":::
+    :::image type="content" source="../media/devicemanagement-3.png" alt-text="Device Twin configuration":::
 
 1. In the "Metrics" blade, we will define a custom metric to track the firmware update was effective. Create a new custom metric called "fwupdated" and type in the below criteria, then click on "Next: Target devices >"
 
-```SQL
-    SELECT deviceId FROM devices
-       WHERE properties.reported.firmware.currentFwVersion='1.0.1'
-```
+    ```SQL
+        SELECT deviceId FROM devices
+           WHERE properties.reported.firmware.currentFwVersion='1.0.1'
+    ```
 
     :::image type="content" source="../media/devicemanagement-4.png" alt-text="Metrics":::
 
 1. In the "Priority" field, type "10" and in the "Target Condition" field, type in the following query, replacing "\<your device id\>" with the device Id you used to create the device in unit 2, then click on "Next: Review + Create >". (Note that valid conditions specify either a deviceId (e.g. deviceId='{id}'), one or more device twin tag criteria (e.g. tags.environment = 'prod' AND tags.location = 'westus'), or reported property criteria)
 
-```SQL
-    deviceId='<your device id>'
-```
+    ```SQL
+        deviceId='<your device id>'
+    ```
 
     :::image type="content" source="../media/devicemanagement-5.png" alt-text="Target Devices":::
 

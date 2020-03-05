@@ -3,7 +3,7 @@ uid: >-
   learn.iot.automate-iot-devices-management-with-azure-iot-hub.automated-firmware-update-at-scale
 metadata:
   title: Automated firmware update at scale
-  description: ...
+  description: In this unit you will learn what the challenges and risks are and how to manage large groups of IoT devices.
   ms.date: 12/17/2019
   author: olivierbloch
   ms.author: Olivier.Bloch
@@ -12,4 +12,4 @@ metadata:
 title: Automated firmware update at scale
 durationInMinutes: 2
 content: |
-  [!include[](includes/7-automated-firmware-update-at-scale.md)]
+  [!include[](includes/7-automated-firmware-update-scale.md)]
