@@ -1,0 +1,73 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.analyze-devops-continuous-planning-intergration.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/06/2020
+  author: wwlpublish
+  ms.author: sallybre
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following are principles of Continuous Planning?"
+    choices:
+    - content: "Ensure that dev efforts are reusable as much as possible. Automate everything."
+      isCorrect: false
+      explanation: "Sorry, that’s incorrect. Ensuring that dev efforts are reusable is important but it's not a principle of Continuous Planning. Automate everything is a benefit of Continuous Integration."
+    - content: "Value simplicity. Perform iterative and incremental development."
+      isCorrect: true
+      explanation: "That’s correct. Value simplicity and iterative and incremental development are two of the principles of Continuous Planning."
+    - content: "Harness collaboration. Act as a quality gate."
+      isCorrect: false
+      explanation: "Sorry, that’s incorrect. Harnessing collaboration and acting as a quality gate are benefits of Continuous Integration, not principles of Continuous Planning."
+  - content: "Objective & Key Results (OKRs) provide 5 key benefits, 3 of which are identified in the following list. Which benefit helps both contributors and managers link their day-to-day activities to the organization’s company-wide vision?"
+    choices:
+    - content: "Focus"
+      isCorrect: false
+      explanation: "Sorry, that’s incorrect. Focus refers to the structure of objectives: every objective should fit on one line."
+    - content: "Alignment"
+      isCorrect: true
+      explanation: "That’s correct. Alignment helps contributors and managers link their day-to-day activities to the organization's company-wide vision."
+    - content: "Commitment"
+      isCorrect: false
+      explanation: "Sorry, that’s incorrect. Commitment ensures schedules and resources will be adjusted so that we deliver what has been agreed upon."
+  - content: "Why are the projects developed with the Agile development methodology more successful than those developed with the Waterfall methodology?"
+    choices:
+    - content: "Because small batch releases, which are characteristic of Agile projects, increase the opportunities to gain knowledge."
+      isCorrect: true
+      explanation: "That’s correct. Projects developed with the Agile development methodology are more successful because small batch releases allow teams to gain more knowledge."
+    - content: "Because the scope of Waterfall projects remains flexible, while the scope of Agile projects is typically fixed and more realistic."
+      isCorrect: false
+      explanation: "Sorry, that’s incorrect. Scope is fixed in Waterfall projects. In the Agile projects it's negotiable."
+    - content: "Because estimation efforts in Waterfall projects are typically more accurate than those in Agile projects."
+      isCorrect: false
+      explanation: "Sorry, that’s incorrect. Estimation accuracy isn't a reason why projects developed with the Agile development methodology are more successful than projects developed with the Waterfall methodology."
+  - content: "Two goals of Continuous Integration are to reduce integration issues and enable parallel development. Which additional goal can facilitate reduction of integration issues and enablement of parallel development?"
+    choices:
+    - content: "Reducing complexity"
+      isCorrect: false
+      explanation: "Sorry, that’s incorrect. Reducing complexity doesn't facilitate the goals of reducing integration issues and enabling parallel development."
+    - content: "Automating everything"
+      isCorrect: true
+      explanation: "That’s correct. Automating everything facilitates the goals of reducing integration issues and enabling parallel development."
+    - content: "Establishing boundaries"
+      isCorrect: false
+      explanation: "Sorry, that’s incorrect. Establishing boundaries doesn't facilitate the goals of reducing integration issues and enabling parallel development."
+  - content: "Which of the following is a key aspect to maintaining quality while increasing speed to market?"
+    choices:
+    - content: "Fewer deployment cycles"
+      isCorrect: false
+      explanation: "Sorry, that’s incorrect. Reducing the number of deployment cycles doesn't help maintain quality while increasing speed to market."
+    - content: "Additional testing cycles"
+      isCorrect: false
+      explanation: "Sorry, that’s incorrect. Additional testing cycles don't help maintain quality while increasing speed to market."
+    - content: "Shorter (and less complex) deployment cycles"
+      isCorrect: true
+      explanation: "That’s correct. Shorter and less complex deployment cycles maintain quality while increasing speed to market."
