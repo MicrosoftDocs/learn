@@ -3,7 +3,7 @@ uid: learn.tm-approach-your-data-flow-diagram-with-the-right-threat-model-focus.
 title: System Focused Approach
 metadata:
   title: System Focused Approach
-  description: Learn how to use the system focused approach in threat modeling
+  description: Learn how to use the different approaches in threat modeling
   ms.date: 02/28/2020
   author: rodsan
   ms.author: rodsan
@@ -26,3 +26,14 @@ quiz:
     - content: "This approach allows you to focus on how the system handles users and data. It also validates security assumptions across physical and logical assets used with the service"
       isCorrect: true
       explanation: "The system focused approach looks at the whole system, not just parts of it"
+  - content: "What is the benefit of the attacker focused approach?"
+    choices:
+    - content: "This approach allows you to focus on one critical asset at a time and identifies all potential threats and ways to reduce risk"
+      isCorrect: false
+      explanation: "This statement describes the asset focused approach"
+    - content: "Instead of focusing on the service, this approach focuses on the attacker, their motivations and means to attack your system"
+      isCorrect: true
+      explanation: "The attacker focused approach is based on the attacker and their plan of attack"
+    - content: "This approach provides information into the system, especially as it handles errors and requests"
+      isCorrect: false
+      explanation: "This statement describes the system focused approach"
