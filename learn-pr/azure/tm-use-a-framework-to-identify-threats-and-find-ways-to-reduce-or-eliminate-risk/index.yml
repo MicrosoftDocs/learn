@@ -11,9 +11,9 @@ metadata:
 title: Use a Framework to Identify Threats and Find Ways to Reduce or Eliminate Risk
 summary: Threat modeling helps you generate a list of potential threats using STRIDE and find ways to reduce or eliminate risk with corresponding security controls.
 abstract: |
-  In this module, you'll learn:
-  - Each STRIDE threat category
-  - Corresponding security controls to help reduce or eliminate risk
+  In this module, you will be able to:
+  - Discuss each threat category in the threat modeling framework
+  - Learn about the security controls to help reduce or eliminate risk
 prerequisites: None
 iconUrl: /learn/achievements/generic-badge.svg
 ratingEnabled: false
@@ -32,6 +32,7 @@ products:
 - m365-ems-cloud-app-security
 units:
 - learn.tm-use-a-framework-to-identify-threats-and-find-ways-to-reduce-or-eliminate-risk.1-introduction
+- learn.tm-use-a-framework-to-identify-threats-and-find-ways-to-reduce-or-eliminate-risk.1b-threat-modeling-framework
 - learn.tm-use-a-framework-to-identify-threats-and-find-ways-to-reduce-or-eliminate-risk.2-spoofing-pretending-to-be-someone-or-something-else
 - learn.tm-use-a-framework-to-identify-threats-and-find-ways-to-reduce-or-eliminate-risk.3-tampering-changing-data-without-authorization
 - learn.tm-use-a-framework-to-identify-threats-and-find-ways-to-reduce-or-eliminate-risk.4-repudiation-not-claiming-responsibility-for-an-action-taken

@@ -3,7 +3,7 @@ uid: learn.tm-use-a-framework-to-identify-threats-and-find-ways-to-reduce-or-eli
 title: Introduction
 metadata:
   title: Introduction
-  description: Learn about each threat category with their corresponding security controls
+  description: Learn how to secure your system with a threat modeling framework
   ms.date: 02/28/2020
   author: rodsan
   ms.author: rodsan

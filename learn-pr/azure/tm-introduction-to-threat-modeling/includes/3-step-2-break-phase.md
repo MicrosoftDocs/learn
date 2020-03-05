@@ -29,4 +29,4 @@ Next, select a framework to help generate potential threats in your system. Micr
 |Repudiation|Attacker claims to not have done something|Can every action be tied to an identity?|Claiming to not have deleted database records|
 |Information Disclosure|Attacker sees data they aren't supposed to see|How do I know someone can't see data in-transit, in-use or at-rest?|Accessing unauthorized documents and folders with weak security controls
 |Denial of Service|Attacker brings your system down|Are there areas in the system where resource is limited?|Flooding the network with requests|
-|Elevation of Privilege|Attacker has unauthorized access to data|How do I know someone is allowed to do this action?|Extracting data by exploiting weaknesses in input handling logic or memory|
+|Elevation of Privilege|Attacker has unauthorized access to data|How do I know someone is allowed to take this action?|Extracting data by exploiting weaknesses in input handling logic or memory|

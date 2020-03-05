@@ -1,27 +1,34 @@
+## What It's About
+
 A threat modeling framework helps you generate a list of potential threats and find ways to reduce or eliminate risk.
 
-Microsoft engineers use the STRIDE framework to find design security issues using the six major threat categories that make up its acronym:
+As long as you have a working knowledge of information security, the framework takes you through the major categories of threats to make sure they are tackled appropriately.
 
-|Category|Description|
-|--------|-----------|
-|Spoofing|Pretending to be someone or something else|
-|Tampering|Changing data without authorization|
-|Repudiation|Not claiming responsibility for an action taken|
-|Information Disclosure|Seeing data without permission|
-|Denial of Service|Overwhelming the system|
-|Elevation of Privilege|Having permissions I should not have|
+## When to Use Them
+
+This framework should be applied on every data-flow diagram created for a new or existing system.
+
+The goal is to find and fix as many issues earlier in the development lifecycle. The longer you wait, the greater the risk for your customers.
+
+## What to Expect
+
+The framework takes you through six major threat categories, with countless potential threats under each one. By using the framework you'll be able to answer questions like:
+
+- Are both sides of the communication authenticated?
+- How do I know someone can't change data in-transit, in-use or at-rest?
+- Can every action be tied to an identity?
+- How do I know someone can't see data in-transit, in-use or at-rest?
+- Are there areas in the system where resource is limited?
+- How do I know someone is allowed to take this action?
 
 In this module, you'll learn about each threat category with their corresponding security controls.
 
-> [!TIP]
-> Did You Know? There are many other frameworks you can use to accomplish different goals. Examples include using LINDDUN for privacy threats and attack trees for penetration testing teams to determine how an attack can take place with an "assumed breach" mentality.
-
 ## Learning objectives
 
-In this module, you'll learn about:
+In this module, you will be able to:
 
-- Each STRIDE threat category
-- Corresponding security controls to help reduce or eliminate risk
+- Discuss each threat category in the threat modeling framework
+- Learn about the security controls to help reduce or eliminate risk
 
 ## Prerequisites
 

@@ -24,7 +24,7 @@ All issues logged in the bug management solution should be resolved and all fixe
 
 ## Requirements Are Met, Assumptions Are Verified, Issues Are Fixed. Now What?
 
-The last part involves running both manual and automated tests. At Microsoft, services are subject to a verification process before deployment, and may consist of automated scanners, code reviews, and penetration tests. 
+The last part involves running both manual and automated verification. At Microsoft, systems are subject to a verification process before deployment, and may consist of automated scanners, code reviews, and penetration tests. 
 
 The process can be enforced before each deployment or across time intervals, like every 6-12 months. You may want to have shorter verification cadences if you answer yes to any of the following questions:
 

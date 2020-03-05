@@ -18,7 +18,7 @@ Use elements whenever you create a data-flow diagram. It shows how data is creat
 
 - **Azure micro-service** - add elements to specify users, authentication processes, data storage, data request and response handling processes, trust zone level changes and other systems
 - **Public API** - add elements to specify users, data storage, logging and monitoring processes and other parts of the system
-- **New feature on existing application** - add elements to represent existing parts of the system and new ones
+- **New feature on existing application** - add elements to represent existing parts of the system, as well as new ones
 
 ## What To Expect
 
