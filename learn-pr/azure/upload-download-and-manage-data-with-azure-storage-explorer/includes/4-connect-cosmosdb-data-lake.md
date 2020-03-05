@@ -1,8 +1,6 @@
-Azure Storage Explorer doesn't just access Azure Storage. You can also use it to investigate data in Cosmos DB and Azure Data Lake.
+Azure Storage Explorer doesn't just access Azure Storage. You can also use it to access data in Cosmos DB and Azure Data Lake.
 
-You've worked through the basics of connecting Storage Explorer to your Azure account. In the Customer Relationship Management (CRM) system, your developers use Cosmos DB for day-to-day operations, and an Azure Data Lake for big data analysis. You want to understand if Storage Explorer can be used to connect to both of these databases.
-
-Here, you'll learn about connecting to Cosmos DB and creating and manipulating data stored there. Finally, you'll see how to use Storage Explorer to connect to an Azure Data Lake.
+You've worked through the basics of connecting Storage Explorer to your Azure account. In the customer relationship management system, your developers use Cosmos DB for day-to-day operations, and an Azure Data Lake for big data storage. You want to understand if Storage Explorer can be used to connect to both of these databases.
 
 ## Using Storage Explorer to manage Cosmos DB
 
@@ -10,33 +8,31 @@ You can use Storage Explorer to connect to a Cosmos DB and do useful activities 
 
 ### Connect by using a connection string
 
-There are a few ways to connect to Cosmos DB from Storage Explorer. The primary method is to use a connection string. A connection string contains all the information you need to find and connect to a particular Cosmos DB.  The connection string has a specific composition, as shown here:
+There are a multiple ways to connect to Cosmos DB from Storage Explorer. The primary method is to use a connection string. A connection string contains all the information you need to find and connect to a particular Cosmos DB. The connection string has a specific composition, as shown here:
 
-```TXT
+```plaintext
 AccountEndpoint=https://<YOUR-COSMOS-DB-NAME>.documents.azure.com:443/;AccountKey=<PRIMARY-MASTER-KEY>;
 ```
 
-In this template, replace <YOUR-COSMOS-DB-NAME> with the name of your Cosmos DB. The <PRIMARY-MASTER-KEY> is a unique key for the Cosmos DB.
+In this template, replace `<YOUR-COSMOS-DB-NAME>` with the name of your Cosmos DB. The `<PRIMARY-MASTER-KEY>` is a unique key for the Cosmos DB.
 
-There are two ways to obtain the connection string.  
+There are two ways to obtain the connection string.
 
-You could use the Azure portal to find the Cosmos DB that you want to connect to. You'd look for the **Keys** menu item and make a copy of the Primary Connection String.
+You could use the Azure portal to find the Cosmos DB that you want to connect to. You'd look for the **Keys** menu item and make a copy of the primary connection string.
 
-The other way is to use the Azure Cloud CLI. This method gives you the primary master key for the Cosmos database. Use this command:
+The other way is to use the Azure Cloud CLI. This method gives you the primary master key for the Cosmos DB database. Use this command:
 
-```BASH
-az cosmosdb keys list --name <COSMOS-DB-NAME> \
-   --resource-group <rgn>[Sandbox resource group]</rgn> \
-   --subscription "Concierge Subscription" \
-   --type keys
+```azurecli
+az cosmosdb keys list \
+    --name COSMOS-DB-NAME \
+    --resource-group myresourcegroup \
+    --subscription "My Subscription" \
+    --type keys
 ```
-
-> [!NOTE]
-> Replace the &lt;COSMOS-DB-NAME&gt; placeholder with the name of the Cosmos DB.
 
 Using the connection string template, add the name of the Cosmos DB, along with the primary master key returned from the above command.
 
-Now you have a connection string, you can use Storage Explorer to connect to your Cosmos DB.  
+Now you have a connection string, you can use Storage Explorer to connect to your Cosmos DB. You'll be able to create or delete a database, create or delete collections, and create or delete documents.
 
 1. Launch Storage Explorer.
 1. Open the resource tree and select the branch **Local & Attached**.
@@ -44,7 +40,7 @@ Now you have a connection string, you can use Storage Explorer to connect to you
 1. When the Cosmos DB wizard launches, paste in the connection string.  You'll see the name of the Cosmos DB appear in the Account label field.
 1. A summary of the connection information is displayed before the connection completes.
 
-### Create a Cosmos DB database
+<!-- ### Create a Cosmos DB database
 
 Now you've connected to your Azure Cosmos DB, you can use Storage Explorer to create Cosmos databases. You use Storage Explorer to manage database content, collections, documents, and graphs.
 
@@ -56,32 +52,32 @@ Now you've connected to your Azure Cosmos DB, you can use Storage Explorer to cr
 To remove or delete a database:
 
 1. Right-click the Cosmos DB database, and then select **Delete Database**.
-1. Confirm that you want to delete the database and its content. When you select **Yes**, the database and all the content is removed.
+1. Confirm that you want to delete the database and its content. When you select **Yes**, the database and all the content is removed. -->
 
-### Create a collection in Cosmos DB database
+<!-- ### Create a collection in Cosmos DB database
 
 Now you have a Cosmos DB database, it's time to create a collection. A database can have as many collections in it as you need. Each collection name has to be unique. You create collections using Storage Explorer.
 
 1. Enter a name for the collection.
 1. Decide whether this collection has a finite amount of storage space or whether it will grow to match the size of the collection. The fixed option gives you a maximum collection size of 10 GB.  
 1. The last field is Throughput. Accept the default of 400.
-1. You'll see each collection added under the Cosmos database.  
+1. You'll see each collection added under the Cosmos database.   -->
 
-### Delete a collection from a Cosmos DB database
+<!-- ### Delete a collection from a Cosmos DB database
 
 Deleting a collection removes all the entities and data inside it. Be sure you want to delete the data before you use this option. To delete a collection:
 
 1. Find the collection in your database.
 1. Right-click on the collection and select **Delete Collection** from the context menu.
 1. You'll see a warning and final check message asking to confirm you want to delete the collection.  
-1. Select **Yes** to delete the collection.
+1. Select **Yes** to delete the collection. -->
 
-### Create a document in Cosmos DB
+<!-- ### Create a document in Cosmos DB
 
 The collection can contain any items. You can use Storage Explorer to manage these items, including new documents in your collection.
 
 1. Select any collection you created earlier.
-1. In the right-hand panel, you'll see the collection panel. From here, you can manage the data in your collection.
+1. This will show the collection pane. From here, you can manage the data in your collection.
 
     ![Screenshot showing the document control panel](../media/5-cosmos-db-collection-create-doc.png)
 
@@ -101,9 +97,9 @@ The collection can contain any items. You can use Storage Explorer to manage the
 
    ![Screenshot showing the document control panel](../media/5-cosmos-db-collection-save-doc.png)
 
-1. The document now appears in the ID panel.  
+1. The document now appears in the ID panel.   -->
 
-### Delete a document from a Cosmos DB database collection
+<!-- ### Delete a document from a Cosmos DB database collection
 
 To delete a document, select the ID of the document from the list. Then select the **Delete** option.
 
@@ -113,7 +109,7 @@ To delete a document, select the ID of the document from the list. Then select t
 
 Cosmos DB supports the storage of graph data.  When creating a graph Cosmos DB, you'll need to enable Gremlin API support.  It's slightly different from creating a standard Cosmos DB. You'll need to run this **az cosmosdb create** command in your Azure Cloud Shell:
 
-```BASH
+```azurecli
 az cosmosdb create \
     -n "cosmosGraph" \
     -g <rgn>[Sandbox resource group]</rgn> \
@@ -122,7 +118,7 @@ az cosmosdb create \
 
 Now you've created a Cosmos DB, create a Gremlin graph database:
 
- ```BASH
+ ```azurecli
 az cosmosdb gremlin database create \
     -a "cosmosGraph" \
     -g <rgn>[Sandbox resource group]</rgn> \
@@ -139,21 +135,23 @@ Deleting a database removes all the data contained inside it. To delete a graph 
 1. Find the **cosmosGraph01** database.
 1. Right-click it and select **Delete Database**.
 1. You'll see a warning and final check message asking to confirm that you want to delete the graph database.
-1. Select **Yes** to delete the collection.
+1. Select **Yes** to delete the collection. -->
 
 ## Use Storage Explorer to manage Azure Data Lake
 
-Azure Data Lake is a repository for storing and analyzing large data sets. It supports large data workloads, and is well suited to capture data of any type or size, and at any speed. It's been tuned to deliver results for the majority of analytics scenarios. Azure Data Lake supports all the expected enterprise-grade capabilities like security, scalability, reliability, manageability, and availability.
+Azure Data Lake is a service used for storing and analyzing large data sets. It supports large data workloads, and is well suited to capture data of any type or size, and at any speed. Azure Data Lake supports all the expected enterprise-grade capabilities like security, scalability, reliability, manageability, and availability.
 
-![Image showing how Azure Data Lake data capture and analytics capabilities](../media/4-azure-data-lake-feature-capability.png)
+There are two types of Azure Data Lake: Gen1 and Gen 2. Both types are supported in Storage Explorer.
 
-There are two types of Azure Data Lake: Gen1 and Gen 2. Both types are supported in the Azure portal and Storage Explorer.
+You can use Storage explorer to connect to Azure Data Lake accounts. You can use it to create, delete, and manage containers, as well as uploading, managing, and administration of blobs, just like storage accounts.
 
-### Connect to a Data Lake Storage account
+Let's go through creating Cosmos DB and Data Lake storage, and use Storage Explorer to connect to them.
+
+<!-- ### Connect to a Data Lake Storage account
 
 Before you create a Data Lake Storage account by using the Azure Cloud Shell, add a preview extension to the CLI. Use the following command:
 
-```BASH
+```azurecli
 az extension add --name storage-preview
 ```
 
@@ -219,4 +217,4 @@ When you select the upload option, all files are queued and processed in turn. A
 
 ### Download data or blobs
 
-To download any file, select the data folder or data file you want to download. Now select the **Download** option. Use the file save dialogue, and then choose the location to save the file. When you select **Save**, the download starts.
+To download any file, select the data folder or data file you want to download. Now select the **Download** option. Use the file save dialogue, and then choose the location to save the file. When you select **Save**, the download starts. -->
