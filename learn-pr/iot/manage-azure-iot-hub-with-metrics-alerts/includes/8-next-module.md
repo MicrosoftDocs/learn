@@ -75,7 +75,9 @@ To keep private keys secret, a _public key infrastructure_ (PKI) is needed to pr
 
 To validate the authenticity of X.509 certificates, the certificates need to be _signed_. There are two ways of signing. You can use an organization known as a _Certificate Authority_ (or, CA) that specializes in supplying signed certificates. This approach might be the right way to go in a production environment, though there can be a cost involved. The alternative is known as _self-signed_ certificates, where the user validates their own certificates. There's no cost to this second option, though as you would be relying on publicly available tools, this system isn't recommended for production. For our purposes in this module, self-signed certificates will work fine.
 
-The name "X.509" originates from the format the certificate is stored in.
+The name "X.509" originates from the format the certificate is stored in. If you open the certificate file it will look like the following image. In addition to the key, the certificate contains metadata such as version, encoding algorithm, issuers ID, and similar data. For most of us though, the contents of a certificate are a _black box_, and can stay that way!
+
+[![Screenshot showing a coded version of an X.509 certificate](../media/iot-hub-dps-certificate.png)](../media/cheese-rect4.png#lightbox)
 
 With the X.509 certificates and the PKI, there's no need to distribute the public keys when creating key pairs. Another advantage is the PKI can maintain a list of invalidated certificates, so authentication can be centrally revoked.
 
@@ -416,7 +418,6 @@ This section adds code to send telemetry from a simulated sensor device.
     using Newtonsoft.Json;
     using System.Security.Cryptography.X509Certificates;
     
-    
     namespace X509CertificateSimulatedDevice
     {
         class Program
@@ -480,7 +481,7 @@ This section adds code to send telemetry from a simulated sensor device.
                 Console.WriteLine($"Using certificate {certificate.Thumbprint} {certificate.Subject}");
                 return certificate;
             }
-        }    
+        }
     
         // The ProvisioningDeviceLogic class contains the device logic to read from the simulated Device Sensors, and send Device-to-Cloud
         // messages to the Azure IoT Hub. It also contains the code that updates the device with changes to the device twin properties.
@@ -558,7 +559,6 @@ This section adds code to send telemetry from a simulated sensor device.
                 whiteMessage("Creating X509 DeviceClient authentication.");
                 var auth = new DeviceAuthenticationWithX509Certificate(result.DeviceId, (_security as SecurityProviderX509).GetAuthenticationCertificate());
     
-    
                 whiteMessage("Simulated Device. Ctrl-C to exit.");
                 using (s_deviceClient = DeviceClient.Create(result.AssignedHub, auth, TransportType.Amqp))
                 {
@@ -566,11 +566,9 @@ This section adds code to send telemetry from a simulated sensor device.
                     whiteMessage("DeviceClient OpenAsync.");
                     await s_deviceClient.OpenAsync().ConfigureAwait(false);
     
-    
                     // Setup OnDesiredPropertyChanged Event Handling to receive Desired Properties changes.
                     whiteMessage("Connecting SetDesiredPropertyUpdateCallbackAsync event handler...");
                     await s_deviceClient.SetDesiredPropertyUpdateCallbackAsync(OnDesiredPropertyChanged, null).ConfigureAwait(false);
-    
     
                     // Load Device Twin Properties since device is just starting up.
                     whiteMessage("Loading Device Twin Properties...");
