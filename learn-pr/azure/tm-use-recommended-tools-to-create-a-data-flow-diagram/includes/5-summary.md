@@ -2,11 +2,11 @@ You can use any canvas, physical or virtual, to create a data-flow diagram. Engi
 
 In this module, you learned about the different tools you can use to create your data-flow diagrams.
 
-You learned about the following tools:
+In this module, you:
 
-- Threat Modeling Tool
-- Visio
-- Threats Manager Platform
+- Learned more about the Threat Modeling Tool
+- Learned more about Visio
+- Checked out the new Threats Manager Platform
 
 > [!NOTE]
 > There are many other tools available to help with your threat modeling needs. Some require a paid subscription while others are completely open sourced. You may even use a whiteboard, which does have a low learning curve but assumes threat modeling expertise and could be difficult to save.
