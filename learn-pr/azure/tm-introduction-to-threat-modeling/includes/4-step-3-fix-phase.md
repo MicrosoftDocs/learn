@@ -13,7 +13,7 @@ The fix phase is where the fates of generated threats are decided. Each STRIDE t
 
 ## How Do I Start?
 
-Start by prioritizing each threat against a prioritization framework or security bug bar. This process helps you allocate resources to fix issues deemed more important by your organization. The process uses three key variables:
+Start by measuring each threat against a prioritization framework or security bug bar. This process helps you allocate resources to fix issues deemed more important by your organization. The process uses three key variables:
 
 |Variable|Description|
 |--------|-----------|

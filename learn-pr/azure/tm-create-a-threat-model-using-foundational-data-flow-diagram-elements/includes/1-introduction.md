@@ -16,9 +16,9 @@ Shapes represent parts of the system. Examples include:
 
 Use elements whenever you create a data-flow diagram. It shows how data is created, manipulated, stored, and removed from your system. Let's build on the examples from the first module:
 
-- **Azure micro-service** - add elements to specify users, authentication processes, data storage, data request and response handling processes, trust zone level changes and other systems
+- **Azure micro-service** - add elements to specify users, authentication processes, data storage, data request and response handling processes, and trust zone level changes
 - **Public API** - add elements to specify users, data storage, logging and monitoring processes and other parts of the system
-- **New feature on existing application** - add elements to represent existing parts of the system, as well as new ones
+- **New feature on existing application** - add elements to represent existing and new parts of the system
 
 ## What To Expect
 

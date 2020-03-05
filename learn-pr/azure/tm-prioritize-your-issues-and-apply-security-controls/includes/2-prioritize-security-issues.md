@@ -1,5 +1,7 @@
 Generate the list of threats with ways to reduce or eliminate risk. Then, work with your colleagues to assign priorities.
 
+## What Should I Use For The Prioritization Exercise?
+
 The prioritization exercise should follow the internal security bug bar created by your organization.
 
 For reference purposes, the internal bug bar used by engineers at Microsoft looks similar to the table below:

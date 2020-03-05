@@ -12,8 +12,8 @@ The break phase is where the data-flow diagram is used to find potential threats
 
 Start by choosing whether you want to find ways to protect your system or understand all you can about an attacker and their motives. Examples include:
 
-- Focus on protecting the web application and finding an issue with an unencrypted connection between the user and the web application
-- Focus on the attacker and finding out more about means, motivation, and ways to harden the web application
+- Focus on protecting the web application - you find an issue with an unencrypted connection between the user and the web application
+- Focus on the attacker - you find out more about means, motivation, and ways to harden the web application entry points
 
 > [!NOTE]
 > Microsoft product engineers mostly focus on protecting the system. Penetration testing teams focus on both.

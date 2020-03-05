@@ -12,7 +12,12 @@ The verify phase is the last step of the threat modeling process and usually hap
 
 ## How Do I Start?
 
-Start by verifying all requirements created in the first phase are met. Includes network security plans, secrets management solution implementation, logging and monitoring systems, identity and access controls, and other areas.
+Start by verifying all requirements created in the first phase are met. Examples include:
+
+- Network security plans
+- Secrets management solution implementation
+- Logging and monitoring systems
+- Identity and access controls
 
 Then, make sure the default configuration settings from Cloud Providers, Operating Systems and Components are changed to meet all security requirements. Examples include:
 

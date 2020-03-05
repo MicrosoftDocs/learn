@@ -2,8 +2,8 @@ The threat modeling framework provides you with a list of threats and ways to re
 
 In this module, you learned about prioritizing your issues and applying the right layer of security controls based on type and function.
 
-You learned about:
+In this module, you:
 
-- Prioritizing your issues
-- Categorizing security controls
-- Understanding each security control function
+- Learned to prioritize your issues
+- Categorized security controls
+- Understood each security control type and function

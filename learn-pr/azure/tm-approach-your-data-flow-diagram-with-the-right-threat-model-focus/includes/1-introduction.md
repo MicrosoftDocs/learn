@@ -1,11 +1,15 @@
-Threat modeling is an effective technique to help you identify threats and find ways to reduce or eliminate risk. We begin by focusing on either **what** needs to be protected or **who** it needs protection from.
+Threat modeling is an effective technique to help you identify threats and find ways to reduce or eliminate risk. 
+
+The process begins when you decide whether to focus on what needs to be protected or who it needs protection from.
 
 Having the right focus helps you tailor the threat modeling exercise to produce quality results. Examples include:
 
 - Designing a file sharing application and focusing on protecting its processes, data stores and data-flow
 - Designing a file sharing application and focusing on learning more about the attacker, their motives and means to target your application
 
-In this module, you'll explore what it means to conduct a system focused threat modeling exercise. You'll also learn the high-level differences between **system**, **asset**, and **attacker** focused approaches.
+In this module, you'll explore what it means to conduct a system focused threat modeling exercise. 
+
+You'll also learn the high-level differences between system, asset, and attacker focused approaches.
 
 ## Learning objectives
 

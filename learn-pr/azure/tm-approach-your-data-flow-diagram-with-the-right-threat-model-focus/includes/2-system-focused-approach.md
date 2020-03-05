@@ -21,7 +21,7 @@ Let's take the file sharing application example. In this case, when you look at 
 - Authentication flow kicks off
 - User shares files with other users
 
-If you use this approach, you'll analyze and secure each element, such as user, web service, authentication service, data store, trust boundary between internet and Azure, and the actual data-flow.
+This approach analyzes and secures each element, such as user, web service, authentication service, data store, trust boundary between internet and Azure, and data-flow.
 
 ## What Are the Other Focused Approaches?
 
@@ -36,7 +36,7 @@ There are additional focused approaches you can use for your threat modeling exe
 
 For the attacker focused approach, the main goal is to understand more about the attacker, their motive, means, and entry points. The emphasis is placed across all entry points instead of the whole system.
 
-The asset focused approach, as the name implies, allows you to focus on critical assets holding highly confidential data for your system. The emphasis is placed on protecting those assets instead of looking at the entire system.
+This approach allows you to focus on critical assets holding highly confidential data for your system. Emphasis is placed on protecting those assets instead of the entire system.
 
 > [!NOTE]
 > The system focused approach incorporates a few of the other approaches, but you may want to do try them individually to get more granular results.

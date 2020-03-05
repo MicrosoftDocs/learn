@@ -14,7 +14,9 @@ Represented by dotted lines or squares, trust boundaries are used to describe da
 - Connections to third-party services
 - Parts of your system only available to administrators
 
-Areas with changing trust zones are the most targeted by attackers and should be carefully designed. Microsoft has predefined trust zone requirements for engineers to use internally, which takes the guesswork out of which boundaries to apply. If you work at Microsoft, contact your security team to learn more.
+Areas with changing trust zones are the most targeted by attackers and should be carefully designed. 
+
+Microsoft has predefined trust zone requirements for engineers to use internally, which takes the guesswork out of which boundaries to apply. If you work at Microsoft, contact your security team to learn more.
 
 ## When Should I Use the Data-Flow Element?
 

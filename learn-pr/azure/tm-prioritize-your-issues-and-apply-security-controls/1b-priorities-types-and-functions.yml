@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.tm-prioritize-your-issues-and-apply-security-controls.1b-priorities-types-and-functions
+title: Issue Prioritization, Security Control Types and Functions
+metadata:
+  title: Issue Prioritization, Security Control Types and Functions
+  description: Learn about prioritizing issues and applying the right layer of security controls based on type and function
+  ms.date: 02/28/2020
+  author: rodsan
+  ms.author: rodsan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-threat-modeling
+durationInMinutes: 2
+content: |
+  [!include[](includes/1b-priorities-types-and-functions.md)]

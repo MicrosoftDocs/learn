@@ -60,7 +60,7 @@ A data-flow diagram shows the flow of data in a given system. It usually starts 
 |Data-flow|![Data-flow](../media/data-flow50.png)|Data movement between processes, data stores, and external entities, like connection strings and payloads|
 |Trust boundary|![Trust Boundary Box](../media/trust-boundary-box50.png) ![Trust Boundary Line](../media/trust-boundary-line50.png)|Trust zone changes as data flows through the system, like users using the internet to access a secured corporate network|
 
-In addition to using these shapes, data-flow diagram elements also need enough context to help anyone understand how they're used and secured in the system.
+Data-flow diagram elements also need context to help anyone understand how they're used and secured in the system.
 
 ## How Much Information Should I Include in the Data-Flow Diagram?
 

@@ -1,4 +1,6 @@
-Threat modeling is an effective way to help secure your systems, applications, networks, and services. It identifies potential threats and recommends risk reduction strategies to help you meet security objectives earlier in the development lifecycle.
+Threat modeling is an effective way to help secure your systems, applications, networks, and services.
+
+It identifies potential threats and recommends risk reduction strategies to help you meet security objectives earlier in the development lifecycle.
 
 In this module, you explored the four high-level steps of threat modeling. You:
 

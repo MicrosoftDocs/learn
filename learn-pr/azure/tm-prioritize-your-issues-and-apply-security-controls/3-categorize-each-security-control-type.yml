@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.tm-prioritize-your-issues-and-apply-security-controls.3-categorize-each-security-control-type
-title: Security Control Types
+title: Security Control Types and Functions
 metadata:
-  title: Security Control Types
-  description: Learn about the three security control types
+  title: Security Control Types and Functions
+  description: Learn about the three security control types and five security control functions
   ms.date: 02/28/2020
   author: rodsan
   ms.author: rodsan
@@ -26,3 +26,14 @@ quiz:
     - content: "Adding badge scanners to the entrance door"
       isCorrect: false
       explanation: "This statement applies to a physical security control type"
+  - content: "What does a corrective security control do?"
+    choices:
+    - content: "It stops a malicious activity from occurring. Examples include firewalls, data classification, and locks"
+      isCorrect: false
+      explanation: "This statement applies to a preventative security control function"
+    - content: "It detects and alerts a malicious attack before it happens. Examples include honeypots and alarms"
+      isCorrect: false
+      explanation: "This statement applies to a detective security control function"
+    - content: "It repairs and restores your system after a malicious attack. Examples include patches and incident response plans"
+      isCorrect: true
+      explanation: "This statement applies to a corrective security control functions"
