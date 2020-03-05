@@ -197,17 +197,15 @@ All containers in an Azure Data Lake Gen2 storage account are blobs. To create a
 
     ![Screenshot showing the myFilesystem control ribbon and view](../media/5-data-lake-create-blob-container-view.png )
 
-## Upload and view blob data
+### Upload and view blob data
 
-With the new **myfilesystem** container created, you can now upload files or folders to it. 
-
-![Screenshot showing the upload options](../media/5-data-lake-container-upload-options.png)
+With the new **myfilesystem** container created, you can now upload files or folders to it.
 
 1. To upload a file, select the **Upload** option, and choose **Upload Files...**.
 
-1. The upload dialogue is displayed.
+    ![Screenshot showing the upload options](../media/5-data-lake-container-upload-options.png)
 
-   ![Screenshot of the upload files dialogue](../media/5-data-lake-upload-file.png)
+    The upload dialogue is displayed.
 
 1. Use the **ellipses** (**...**) to select the file you want to upload.
 
