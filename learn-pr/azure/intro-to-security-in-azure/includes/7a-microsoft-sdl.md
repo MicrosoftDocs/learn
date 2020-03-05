@@ -39,6 +39,7 @@ Threat modeling should be used in environments where there is a meaningful secur
 
 [//]: # (NOTE: Locale required in the following SDL link, or the user will be redirected to a non-relevant resource.)
 More information is available at [Threat Modeling](https://www.microsoft.com/en-us/securityengineering/sdl/threatmodeling).
+[//]: # (NOTE: Locale required in the previous SDL link, or the user will be redirected to a non-relevant resource.)
 
 ### Establish design requirements
 
@@ -70,9 +71,10 @@ Define and publish a list of approved tools and their associated security checks
 
 For more information, see:
 
-* [Recommended Tools, Compilers and Options for x86, x64, and ARM processors](https://download.microsoft.com/download/6/3/A/63AFA3DF-BB84-4B38-8704-B27605B99DA7/Recommended%20Tools,%20Compilers%20and%20Options%20for%20x86,%20x64%20and%20ARM.pdf) (whitepaper)
 [//]: # (NOTE: Locale required in the following SDL links, or the user will be redirected to a non-relevant resource.)
+* [Recommended Tools, Compilers and Options for x86, x64, and ARM processors](https://download.microsoft.com/download/6/3/A/63AFA3DF-BB84-4B38-8704-B27605B99DA7/Recommended%20Tools,%20Compilers%20and%20Options%20for%20x86,%20x64%20and%20ARM.pdf) (whitepaper)
 * [SDL Resources](https://www.microsoft.com/en-us/securityengineering/sdl/resources)
+[//]: # (NOTE: Locale required in the previous SDL links, or the user will be redirected to a non-relevant resource.)
 
 ### Perform Static Analysis Security Testing
 
