@@ -68,7 +68,7 @@ sasToken = sas.ToSasQueryParameters(storageSharedKeyCredential).ToString();
 ```
 
 > [!NOTE]
-> All of the above code uses the new Azure Storage API version 12. All the examples on [docs.microsoft.com](https://docs.microsoft.com/en-us/azure/storage/common/storage-samples-dotnet?toc=%2fazure%2fstorage%2fblobs%2ftoc.json) use the legacy version of the the API. To see more code samples for version 12, go to the GitHub repository [Azure.Storage.Blobs Samples](https://github.com/Azure/azure-sdk-for-net/tree/7b41d66f3c611eb2113e2ec11cb56e7edf542628/sdk/storage/Azure.Storage.Blobs/samples).
+> All of the above code uses the new Azure Storage API version 12. All the examples on [docs.microsoft.com](https://docs.microsoft.com/azure/storage/common/storage-samples-dotnet?toc=%2fazure%2fstorage%2fblobs%2ftoc.json) use the legacy version of the the API. To see more code samples for version 12, go to the GitHub repository [Azure.Storage.Blobs Samples](https://github.com/Azure/azure-sdk-for-net/tree/7b41d66f3c611eb2113e2ec11cb56e7edf542628/sdk/storage/Azure.Storage.Blobs/samples).
 
 ### Best practices
 
