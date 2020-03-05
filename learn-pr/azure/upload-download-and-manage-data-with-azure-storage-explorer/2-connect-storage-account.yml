@@ -3,7 +3,7 @@ uid: learn.upload-download-and-manage-data-with-azure-storage-explorer.2-connect
 metadata:
   title: Connect Azure Storage Explorer to a storage account
   description: Connect Azure Storage Explorer to a storage account
-  ms.date: 12/30/2019
+  ms.date: 03/05/2020
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
