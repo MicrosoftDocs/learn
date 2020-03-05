@@ -18,7 +18,7 @@ abstract: |
 prerequisites: | 
   - Knowledge of Azure Storage accounts
   - Familiarity with C#
-iconUrl: http://via.placeholder.com/120x120
+iconUrl: /learn/achievements/control-access-to-azure-storage-with-sas.svg
 levels:
 - intermediate
 roles:
