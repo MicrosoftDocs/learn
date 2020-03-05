@@ -38,7 +38,9 @@ You can read more about defining metrics and compliance reporting at:
 Threat modeling should be used in environments where there is a meaningful security risk. As a practice, it allows development teams to consider, document, and discuss the security implications of designs in the context of their planned operational environment, and in a structured fashion. Applying a structured approach to threat scenarios helps a team more effectively and less expensively identify security vulnerabilities, determine risks from those threats, and then make security feature selections and establish appropriate mitigations. You can apply threat modeling at the component, application, or system level.
 
 [//]: # (NOTE: Locale required in the following SDL link, or the user will be redirected to a non-relevant resource.)
+
 More information is available at [Threat Modeling](https://www.microsoft.com/en-us/securityengineering/sdl/threatmodeling).
+
 [//]: # (NOTE: Locale required in the previous SDL link, or the user will be redirected to a non-relevant resource.)
 
 ### Establish design requirements
@@ -60,9 +62,11 @@ The vast majority of software projects today are built using third-party compone
 Learn more about managing the security risks of using third-party components at:
 
 [//]: # (NOTE: Locale required in the following SDL links, or the user will be redirected to a non-relevant resource.)
+
 * [Open source](https://www.microsoft.com/en-us/securityengineering/opensource/)
 * [Managing Security Risks Inherent in the Use of Third-Party Components](https://safecode.org/wp-content/uploads/2017/05/SAFECode_TPC_Whitepaper.pdf)
 * [Managing Security Risks Inherent in the Use of Open-Source Software](https://www.microsoft.com/en-us/securityengineering/opensource/)
+
 [//]: # (NOTE: Locale required in the previous SDL links, or the user will be redirected to a non-relevant resource.)
 
 ### Use approved tools
@@ -72,8 +76,10 @@ Define and publish a list of approved tools and their associated security checks
 For more information, see:
 
 [//]: # (NOTE: Locale required in the following SDL links, or the user will be redirected to a non-relevant resource.)
+
 * [Recommended Tools, Compilers and Options for x86, x64, and ARM processors](https://download.microsoft.com/download/6/3/A/63AFA3DF-BB84-4B38-8704-B27605B99DA7/Recommended%20Tools,%20Compilers%20and%20Options%20for%20x86,%20x64%20and%20ARM.pdf) (whitepaper)
 * [SDL Resources](https://www.microsoft.com/en-us/securityengineering/sdl/resources)
+
 [//]: # (NOTE: Locale required in the previous SDL links, or the user will be redirected to a non-relevant resource.)
 
 ### Perform Static Analysis Security Testing
