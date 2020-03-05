@@ -172,10 +172,10 @@ quiz:
     - content: 'A root certificate can only be used to sign other certificates. An intermediate, or leaf, certificate can be used to validate devices.'
       isCorrect: false
       explanation: Intermediate certificates can't be used to validate devices.
-    - content: 'Root and intermediate certificates can only be used to sign other certificates. A leaf certificate can be used to validate multiple devices.'
+    - content: 'A root, or intermediate, certificate can only be used to sign other certificates. A leaf certificate can be used to validate multiple devices.'
       isCorrect: false
       explanation: A leaf certificate can only validate one device.
-    - content: 'A root, or intermediate, certificate can be used to sign other certificates. Only a leaf certificate can be used to validate a device.'
+    - content: 'A root, or intermediate, certificate can only be used to sign other certificates. Only a leaf certificate can be used to validate a device.'
       isCorrect: true
       explanation: One root certificate signing multiple leaf certificates is a good scenario for a DPS Group Enrollment.
 

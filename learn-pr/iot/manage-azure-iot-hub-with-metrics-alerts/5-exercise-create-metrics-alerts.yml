@@ -2,7 +2,7 @@
 uid: learn.iot.manage-your-azure-iot-hub-with-metrics-alerts.exercise-create-metrics-alerts
 metadata:
   title: Exercise - Create IoT Hub metrics and alerts
-  description: Use the Azure IoT portal to create diagnostics and logs. Then, add a range of rules, with associated alerts.
+  description: Use the Azure IoT portal to examine metrics. Then, add a range of rules, with associated alerts.
   ms.date: 2/2/2020
   author: PeterTurcan
   ms.author: Olivier.Bloch
