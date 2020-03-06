@@ -83,9 +83,9 @@ The next rule we want to create calls an Azure Function. So, first, let's create
     > [!NOTE]
     > For future reference, take note of the other options: Node.js, Python, Java, and PowerShell Core.
 
-1. Select your **Region**, then click **Next: Hosting**.
-
     [![Screenshot showing how to set up the basics of an Azure Function](../media/metrics-alerts-function-1.png)](../media/metrics-alerts-function-1.png#lightbox)
+
+1. Select your **Region**, then click **Next: Hosting**.
 
 1. Select the sandbox storage account. For **Operating System**, choose **Windows**, and for **Plan type**, choose **Consumption**.
 
