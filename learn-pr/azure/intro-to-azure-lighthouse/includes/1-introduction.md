@@ -8,9 +8,9 @@ In this module, you'll learn about what Azure Lighthouse is and how it can deliv
 
 **Learning objectives**
 
-- What is Azure Lighthouse?
-- Features of Azure Lighthouse
-- Using Azure Lighthouse for cross-tenant management
-- Using Azure Resource Manager templates
-- Set up Security Center with alerting
-- Creating a managed service offer on the Azure Marketplace
+- Explore what Azure Lighthouse is
+- Understand the features of Azure Lighthouse
+- See how to use Azure Lighthouse for cross tenant management
+- See how to use Azure Resource Manager templates
+- Set up Security Center with Alerting
+- Create a managed service offer on the Azure Marketplace
