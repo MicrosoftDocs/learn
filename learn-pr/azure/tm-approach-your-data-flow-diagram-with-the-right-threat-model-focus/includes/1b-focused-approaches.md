@@ -2,11 +2,11 @@ Threat modeling is a great technique to help you find issues earlier in the deve
 
 Choosing the right focused approach helps you tailor the threat modeling exercise to help you find more actionable threats and ways to solve them.
 
-## What Does The System Focused Approach Look Like?
+## What does the system focused approach look like?
 
 With the system focused approach, your goal is to protect the entire system. You look at each process, data store, data-flow, external entity, and trust boundary, and select security controls to help protect your system.
 
-## What About The Attacker Focused Approach?
+## What about the attacker focused approach?
 
 With the attacker focused approach, you emphasize the attacker, their motive, means, and all the ways they can wreak havoc in your system. It looks at entry points, rather than the system as a whole.
 
