@@ -45,29 +45,3 @@ With the goal of preventive maintenance, you decide to use Azure IoT Hub to mana
 ## The first step
 
 The first step to building this system is to create a custom IoT Hub.
-
-
-
-### Remaining jobs
-
-1. image alt text - done
-1. lightbox utility - done
-1. read end to end - done1
-1. remove unused images - done
-1. check images for PI - done
-1. acrolinx again - done1 - done2
-1. read code comments for irrelevant stuff - done
-1. knowledge check text - done1
-1. remove en-us - done
-1. check heading capitalization (Email?) - done
-1. image line cleanup - done
-
-1. test and read, end to end - done1 -failed
-1. verify/change choice of action group names - done
-1. add node.js option - done
-1. Upload new code to Github - C# and Node.js - done
-
-1. badge artwork
-1. test with sandbox
-1. verify use of IoT Hub v IoT hub (lower case) - leaving as is - done
-1. check procedure numbering - done
