@@ -22,6 +22,8 @@ Semi-structured data is less organized than structured data, and is not stored i
 
 For software developers, data serialization languages are important because they can be used to write data stored in memory to a file, sent to another system, parsed and read. The sender and receiver don’t need to know details about the other system, as long as the same serialization language is used, the data can be understood by both systems.
 
+> [!VIDEO https://channel9.msdn.com/Shows/Docs-Learn/Data-Serialization-Languages/player?format=ny]
+
 ### Common formats
 
 Today, there are three common serialization languages you're likely to encounter:
