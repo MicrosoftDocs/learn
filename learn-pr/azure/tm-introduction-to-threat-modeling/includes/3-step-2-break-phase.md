@@ -12,15 +12,19 @@ The break phase is where the data-flow diagram is used to find potential threats
 
 Start by choosing whether you want to find ways to protect your system or understand all you can about an attacker and their motives. Examples include:
 
-- Focus on protecting the web application - you find an issue with an unencrypted connection between the user and the web application
-- Focus on the attacker - you find out more about means, motivation, and ways to harden the web application entry points
+|What to Protect|Example Of What You Can Find|
+|---------------|----------------------------|
+|System|You find an issue with an unencrypted connection between the user and the system|
+|Attacker|You find out more about means, motivation, and ways to harden the system entry points|
 
 > [!NOTE]
 > Microsoft product engineers mostly focus on protecting the system. Penetration testing teams focus on both.
 
 ## I Selected My Focus, Now What?
 
-Next, select a framework to help generate potential threats in your system. Microsoft traditionally uses STRIDE, an acronym for the six main threat categories to provide an extensive, but not exhaustive, list of threats. The framework helps you ask a few important questions about your system:
+Next, select a framework to help generate potential threats in your system. Microsoft traditionally uses STRIDE, an acronym for the six main threat categories to provide an extensive, but not exhaustive, list of threats. 
+
+The framework helps you ask a few important questions about your system:
 
 |Threat|Definition|Question|Threat Example|
 |------|----------|--------|--------------|

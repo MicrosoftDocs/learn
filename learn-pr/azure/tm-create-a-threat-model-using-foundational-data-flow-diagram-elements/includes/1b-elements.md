@@ -6,7 +6,8 @@ Using them correctly allows you to receive better input from colleagues and secu
 
 It can also help them avoid going through countless design documents and development plans to get them up and running.
 
-If you fail to properly account for all the parts of a system in the data-flow diagram, you'll risk deploying the system with potential vulnerabilities.
+> [!NOTE]
+> If you fail to properly account for all the parts of a system in the data-flow diagram, you'll risk deploying the system with potential vulnerabilities.
 
 |Element|Shape|Definition|Example|
 |-------|-----|----------|-------|

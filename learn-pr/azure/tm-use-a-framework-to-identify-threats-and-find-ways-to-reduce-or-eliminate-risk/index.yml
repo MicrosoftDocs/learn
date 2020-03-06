@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-threat-modeling
 title: Use a Framework to Identify Threats and Find Ways to Reduce or Eliminate Risk
-summary: Threat modeling helps you generate a list of potential threats using STRIDE and find ways to reduce or eliminate risk with corresponding security controls.
+summary: Threat modeling helps you generate a list of potential threats using the threat modeling framework and find ways to reduce or eliminate risk with corresponding security controls.
 abstract: |
   In this module, you will be able to:
   - Discuss each threat category in the threat modeling framework

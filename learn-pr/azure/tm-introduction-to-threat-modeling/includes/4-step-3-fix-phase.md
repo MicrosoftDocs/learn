@@ -1,4 +1,4 @@
-The fix phase is where the fates of generated threats are decided. Each STRIDE threat maps to one or more security controls, which offer different functions and types to choose from.
+The fix phase is where the fate of all threats are decided. Each STRIDE threat maps to one or more security controls, which offer different functions and types to choose from.
 
 ## Goals
 
@@ -13,7 +13,9 @@ The fix phase is where the fates of generated threats are decided. Each STRIDE t
 
 ## How Do I Start?
 
-Start by measuring each threat against a prioritization framework or security bug bar. This process helps you allocate resources to fix issues deemed more important by your organization. The process uses three key variables:
+Start by measuring each threat against a prioritization framework or security bug bar. This process helps you allocate resources to fix issues deemed more important by your organization. 
+
+The process uses three key variables:
 
 |Variable|Description|
 |--------|-----------|
@@ -21,15 +23,22 @@ Start by measuring each threat against a prioritization framework or security bu
 |**Severity**|Uses internal bug bar or prioritization framework to assign severity using worst case scenarios|
 |**Risk**|Uses a calculation of security control effectiveness and implementation cost|
 
-Microsoft engineers use an internal security bug bar that assigns threats with a Critical, Important, Moderate, Low, or Information severity rating. Check with your security team to confirm how to prioritize your issues.
+> [!TIP]
+> Microsoft engineers use an internal security bug bar that assigns threats with a Critical, Important, Moderate, Low, or Information severity rating. Check with your security team to confirm how to prioritize your issues.
 
 ## My Issues Are All Prioritized! What's Next?
 
-Next, add each threat in a bug management solution like Azure DevOps. It reinforces ownership, effectively tracks history, and gives you the ability to use standardized templates for priority and resolution exercises.
+Next, add each threat in a bug management solution like Azure DevOps. Some of the benefits include:
+
+- Reinforces issue ownership
+- Effectively tracks history
+- Gives you the ability to use standardized templates for priority and resolution exercises
 
 ## Okay, Issues Are Logged. What Now?
 
-Visit each security control recommendation mapped to STRIDE threats. Write down the ones that are most effective and least expensive to implement. Here are a few examples:
+Visit each security control recommendation mapped to STRIDE threats. 
+
+Write down the ones that are most effective and least expensive to implement. Here are a few examples:
 
 | Threat | Security Control | Security Control Example |
 | ------ | ---------------- | ------------------------ |
@@ -40,7 +49,8 @@ Visit each security control recommendation mapped to STRIDE threats. Write down 
 |**Denial of Service**|Availability|Using elastic resources to manage growing or shrinking usage|
 |**Elevation of Privilege**|Authorization|Running the service using the least possible amount of access|
 
-You may come across security controls that can reduce or completely eliminate multiple threats at once. As an example, using SSL/TLS creates secure transmission channels to help prevent malicious data modification or disclosure.
+> [!TIP]
+> You may come across security controls that can reduce or completely eliminate multiple threats at once. As an example, using SSL/TLS creates secure transmission channels to help prevent malicious data modification or disclosure.
 
 ## Understand the Types and Functions of Security Controls
 
@@ -64,7 +74,9 @@ Which may have one or more security control functions:
 
 ## I Selected the Appropriate Security Controls for My System, Is There Anything Else I Need To Do?
 
-Add security control details to each issue in the bug management solution. Then, resolve each issue with one of the following resolutions, which varies lightly from organization to organization:
+Add security control details to each issue in the bug management solution. 
+
+Then, resolve each issue with one of the following resolutions, which varies lightly from organization to organization:
 
 |Resolution|Description|
 |----------|-----------|

@@ -2,7 +2,7 @@ Threat modeling is an effective way to help secure your systems, applications, n
 
 It identifies potential threats and recommends risk reduction strategies to help you meet security objectives earlier in the development lifecycle.
 
-In this module, you explored the four high-level steps of threat modeling. You:
+In this module, you:
 
 - Understood the importance of capturing requirements and assumptions to help create a data-flow diagram
 - Read about the framework that helps you find security issues in a system
@@ -11,7 +11,7 @@ In this module, you explored the four high-level steps of threat modeling. You:
 
 ## What's Next
 
-In the next few modules, we'll visit each concept introduced throughout the four phases and discuss them in detail:
+In the next few modules of this learning path, we'll visit each concept introduced throughout the four phases and discuss them in detail:
 
 |Module|Title|Description|
 |------|-----|-----------|

@@ -6,9 +6,10 @@ As long as you have a working knowledge of information security, the framework t
 
 ## When to Use Them
 
-This framework should be applied on every data-flow diagram created for a new or existing system.
+This framework should be applied to every data-flow diagram created for a new or existing system.
 
-The goal is to find and fix as many issues earlier in the development lifecycle. The longer you wait, the greater the risk for your customers.
+> [!NOTE]
+> The goal is to find and fix as many issues earlier in the development lifecycle. The longer you wait, the greater the risk for your customers.
 
 ## What to Expect
 

@@ -34,7 +34,7 @@ There are additional focused approaches you can use for your threat modeling exe
 
 ### What Is a Practical Example For These Approaches?
 
-For the attacker focused approach, the main goal is to understand more about the attacker, their motive, means, and entry points. The emphasis is placed across all entry points instead of the whole system.
+For the attacker focused approach, the main goal is to understand more about the attacker, their motive, means, and entry points. Emphasis is placed across all entry points instead of the whole system.
 
 This approach allows you to focus on critical assets holding highly confidential data for your system. Emphasis is placed on protecting those assets instead of the entire system.
 

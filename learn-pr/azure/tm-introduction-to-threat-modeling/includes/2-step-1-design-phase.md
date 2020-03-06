@@ -85,7 +85,7 @@ To help you understand how much information to include, choose between these fou
 |3|Lower-Level|Focus on highly critical and kernel-level systems. Data-flow diagrams describe each subprocess in minute detail|
 
 > [!NOTE]
-> Most data-flow diagrams should contain **both Layers 0 and 1** context depth layers. Speak with your security team to confirm required depth layer.
+> Most data-flow diagrams should contain **both Layers 0 and 1** depth layers. Speak with your security team to confirm required depth layer.
 
 ## What Should I Use to Build My Data-Flow Diagram?
 

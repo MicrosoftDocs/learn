@@ -4,6 +4,8 @@ The threat modeling framework helps you generate a list of threats and ways to r
 
 Also, it doesn't recommend layered security controls based on their type and function, which makes it harder to decide which ones to implement.
 
+## Why Is It Important?
+
 Prioritizing issues is an important piece of threat modeling because it allows you to allocate resources to the most critical issues.
 
 It also helps you decide where to start given your limited resources. Examples include:
@@ -13,7 +15,7 @@ It also helps you decide where to start given your limited resources. Examples i
 
 ## When To Use Them
 
-Prioritize each issue according to their risk factors.
+Use prioritization on each issue according to their risk factors.
 
 Also, select security controls that work in conjunction with others to help provide a layered security protection mechanism for your system.
 
