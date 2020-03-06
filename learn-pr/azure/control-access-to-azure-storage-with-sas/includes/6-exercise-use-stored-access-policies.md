@@ -6,7 +6,7 @@ In this exercise, you'll update your web app to create SAS with stored access po
 
 ## Add a method to create stored access policies
 
-1. In the cloud shell, edit the **PatientRecordController.cs** file.
+1. In Cloud Shell, edit the **PatientRecordController.cs** file.
 
     ```bash
     code ~/sas/Controllers/PatientRecordController.cs
@@ -92,7 +92,7 @@ In this exercise, you'll update your web app to create SAS with stored access po
 
 ### Test the new code
 
-1. In the cloud shell, build the app.
+1. In Cloud Shell, build the app.
 
     ```bash
     cd ~/sas/

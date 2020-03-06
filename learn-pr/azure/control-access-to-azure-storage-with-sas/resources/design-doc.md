@@ -118,16 +118,16 @@ Exercise is being built with .NET v12 SDK, .NET Core 3.0, Razor web pages, with 
 
 ## References
 
-- [Grant limited access to Azure Storage resources using shared access signatures (SAS)](https://docs.microsoft.com/en-gb/azure/storage/common/storage-sas-overview)
-- [Concept](https://docs.microsoft.com/en-gb/azure/storage/common/storage-sas-overview)
-- [Valet Key Pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/valet-key)
+- [Grant limited access to Azure Storage resources using shared access signatures (SAS)](https://docs.microsoft.com/azure/storage/common/storage-sas-overview)
+- [Concept](https://docs.microsoft.com/azure/storage/common/storage-sas-overview)
+- [Valet Key Pattern](https://docs.microsoft.com/azure/architecture/patterns/valet-key)
 - [SAS example](https://github.com/Azure-Samples/storage-dotnet-sas-getting-started/tree/master/)
-- https://docs.microsoft.com/en-us/aspnet/core/security/app-secrets?view=aspnetcore-3.0&tabs=windows#enable-secret-storage
+- https://docs.microsoft.com/aspnet/core/security/app-secrets?view=aspnetcore-3.0&tabs=windows#enable-secret-storage
 
 - https://github.com/Azure/azure-sdk-for-net/tree/master/sdk/storage/Azure.Storage.Blobs/samples
 
 - https://www.mikesdotnetting.com/article/261/integrating-web-api-with-asp-net-razor-web-pages
 
-- https://docs.microsoft.com/en-us/aspnet/core/tutorials/web-api-javascript?view=aspnetcore-3.0
+- https://docs.microsoft.com/aspnet/core/tutorials/web-api-javascript?view=aspnetcore-3.0
 
 https://www.red-gate.com/simple-talk/cloud/platform-as-a-service/azure-blob-storage-part-9-shared-access-signatures/
