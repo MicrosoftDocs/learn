@@ -1,4 +1,4 @@
-You use Azure to add your organization's custom domain name and allow employees to create memorable user names.
+You use Azure to add your organization's custom domain name and allow employees to create memorable usernames.
 
 In this unit, you'll see how to:
 
@@ -81,4 +81,4 @@ After you add a custom domain name and set it to be the primary domain, add user
 
    ![Screenshot of adding a new user for a custom domain](../media/3-add-users.png)
 
-1. For **User name** and **Name**, enter values for your pilot user. The primary domain name appears as part of the user name.
+1. For **User name** and **Name**, enter values for your pilot user. The primary domain name appears as part of the username.

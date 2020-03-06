@@ -2,7 +2,7 @@ Your company has started to use more services on Azure. As part of a new project
 
 With Azure Active Directory (Azure AD), you can add a custom domain name. You can then create Azure users based on that domain. You saw the process of adding the domain name, verifying it, and adding users.
 
-By reducing the number of user names your employees must remember, you improve their productivity. You also reduce the number of support requests from employees trying to sign in to resources. When you add your custom domain name to Azure AD, employees use the current email addresses they're accustomed to.
+By reducing the number of usernames your employees must remember, you improve their productivity. You also reduce the number of support requests from employees trying to sign in to resources. When you add your custom domain name to Azure AD, employees use the current email addresses they're accustomed to.
 
 ## Learn more
 
