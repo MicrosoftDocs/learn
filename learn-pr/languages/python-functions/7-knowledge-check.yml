@@ -1,0 +1,43 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.python-functions.knowledge-check
+title: Knowledge Check
+metadata:
+  title: Check your knowledge
+  description: Review what you've learned
+  ms.date: 02/19/2020
+  author: bobtabor-msft
+  ms.author: rotabor
+  ms.topic: interactive-tutorial
+  ms.prod: learning-languages
+durationInMinutes: 2
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which of the following statements is NOT a good reason to create a function?"
+    choices:
+    - content: "When you need to encapsulate often needed functionality in one place."
+      isCorrect: false
+      explanation: "This is an incorrect statement because this is actually a great reason to use functions."
+    - content: "When you need to help break down a larger problem into smaller, more manageable pieces."
+      isCorrect: false
+      explanation: "This is an incorrect statement because this is actually a great reason to use functions."
+    - content: "When you need to share functionality across one or more programs by adding it to a module."
+      isCorrect: false
+      explanation: "This is an incorrect statement because this is actually a great reason to use functions."
+    - content: "When you need to store information that will be used throughout your program."
+      isCorrect: true
+      explanation: "This is the correct answer because it is not a good reason to create a function."
+  - content: "How can you make an input argument optional?"
+    choices:
+    - content: "By adding the required keyword."
+      isCorrect: false
+      explanation: "There is no `required` keyword."
+    - content: "By supplying a default value that should be used if the caller doesn't pass an argument."
+      isCorrect: true
+      explanation: "Correct!"
+    - content: "By using keyword arguments."
+      isCorrect: false
+      explanation: "While it is possible to use keyword arguments in this capacity, it is not the right technique to make an argument optional."
+    - content: "By checking the value to see if it equals `None`."
+      isCorrect: false
+      explanation: "This is not correct, because your program will throw an error before you get to any line of code in your function that checks an input parameter for the value `None`."
