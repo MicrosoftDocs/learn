@@ -12,7 +12,7 @@ In this exercise, you'll update your web app to create SAS with stored access po
     code ~/sas/Controllers/PatientRecordController.cs
     ```
 
-1. At the bottom of the class, under the **GetBlobSas** method, write a method to create stored access policies.
+1. At the bottom of the class, under the `GetBlobSas` method, write a method to create stored access policies.
 
     ```csharp
     // Use a stored access policy for the SAS
@@ -33,7 +33,7 @@ In this exercise, you'll update your web app to create SAS with stored access po
     } 
     ```
 
-1. This method uses a global variable for the access policy identifier. Add this variable at the top of the class under the declaration for the **BlobContainerClient** variable named **_container**.
+1. This method uses a global variable for the access policy identifier. Add this variable at the top of the class under the declaration for the `BlobContainerClient` variable named `_container`.
 
     ```csharp
     private String _storedPolicyID = "patient-images-policy";
@@ -54,7 +54,7 @@ In this exercise, you'll update your web app to create SAS with stored access po
     }
     ```
 
-1. The **GetBlobSas** can now be simplified to use the access policy. Change the method to use it.
+1. `GetBlobSas` can now be simplified to use the access policy. Change the method to use it.
 
    ```csharp
     // Build a SAS token for the given blob
@@ -88,7 +88,7 @@ In this exercise, you'll update your web app to create SAS with stored access po
     }
     ```
 
-1. Save your code changes with <kbd>CTRL</kbd>+<kbd>S</kbd>, and then <kbd>CTRL</kbd>+<kbd>Q</kbd>.
+1. Save your code changes with <kbd>Ctrl</kbd>+<kbd>S</kbd>, and then <kbd>Ctrl</kbd>+<kbd>Q</kbd>.
 
 ### Test the new code
 
