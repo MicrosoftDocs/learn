@@ -18,8 +18,6 @@ Before you allow access to the application, use multi-factor authentication to e
 - Something the user is
 
 
-<!--- Original image: https://docs.microsoft.com/en-us/azure/active-directory/authentication/media/concept-mfa-howitworks/methods.png --->
-
 A secret password or a secret answer to a security question should be something that only the user knows. Users also have devices that can be classified as something they own. For example, a user with a mobile phone would receive a text message with a secret one-time-use code. You could also make successful authentication contingent on the user, through biometrics. This biometric information is classified as something the user is. For example, as an additional step, you could make authentication rely on the user's fingerprints or voice.
 
 Different forms of second factor methods are supported in Azure. These methods include:
