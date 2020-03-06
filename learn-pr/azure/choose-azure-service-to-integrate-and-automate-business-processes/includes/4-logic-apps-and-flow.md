@@ -41,7 +41,7 @@ This is a simplification of the entire process. For simplicity, we've omitted ed
 
 Let's look at the Azure technologies available to implement the business process and integrate with the bike location database:
 
-- Microsoft Flow
+- Microsoft Power Automate
 - Azure Logic Apps
 - Azure Functions
 - Azure Service Apps WebJobs
@@ -56,11 +56,11 @@ If you choose a design-first approach, the workflow is visualized in an easy-to-
 
 For this reason, choose a design-first approach.
 
-### Microsoft Flow or Azure Logic Apps?
+### Microsoft Power Automate or Azure Logic Apps?
 
 Now you must choose from the two design-first technologies:
 
-- Microsoft Flow
+- Microsoft Power Automate
 - Azure Logic Apps
 
 There's no suggestion in the scenario that shop staff should be able to modify the business process. In addition, to connect to the bike location database through its REST API, you will need to create a custom connector. This is a developer task.
