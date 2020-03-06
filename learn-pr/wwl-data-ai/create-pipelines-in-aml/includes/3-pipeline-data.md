@@ -1,6 +1,6 @@
 Often, a pipeline line includes at least one step that depends on the output of a preceding step. For example, you might use a step that runs a python script to preprocess some data, which must then be used in a subsequent step to train a model.
 
-## The PipelineData Object
+## The PipelineData object
 
 The **PipelineData** object is a special kind of **DataReference** that:
 
@@ -11,7 +11,7 @@ You can view a **PipelineData** object as an intermediary store for data that mu
 
 ![A PipelineData object as an intermediary data store between steps](../media/06-01-PipelineData.jpg)
 
-## PipelineData Step Inputs and Outputs
+## PipelineData step inputs and outputs
 
 To use a **PipelineData** object to pass data between steps, you must:
 
