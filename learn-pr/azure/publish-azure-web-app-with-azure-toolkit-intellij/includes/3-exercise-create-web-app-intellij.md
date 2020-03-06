@@ -2,8 +2,6 @@ Suppose you're beginning the process of researching how to move your website to 
 
 In this exercise, you'll use the Azure Explorer to examine your Azure subscription.
 
-[!include[](../../../includes/azure-exercise-subscription-prerequisite.md)]
-
 ## Create a web app project
 
 Before you can examine your Azure resources with the Azure Explorer, you must create a new project. Let's create a web app project by using a Maven archetype:
