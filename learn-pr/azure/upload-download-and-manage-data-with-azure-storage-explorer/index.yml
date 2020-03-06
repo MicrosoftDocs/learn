@@ -2,21 +2,21 @@
 uid: learn.upload-download-and-manage-data-with-azure-storage-explorer
 metadata:
   title: Upload, download, and manage data with Azure Storage Explorer
-  description: Azure Storage Explorer allows you to quickly view all the storage services under your account and navigate, read, and edit data stored in those services through a user-friendly graphical interface.
+  description: Azure Storage Explorer allows you to quickly view all the storage services under your account. You can browse through, read, and edit data stored in those services through a user-friendly graphical interface.
   ms.date: 03/05/2020
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Upload, download, and manage data with Azure Storage Explorer
-summary: Azure Storage Explorer allows you to quickly view all the storage services under your account and navigate, read, and edit data stored in those services through a user-friendly graphical interface.
+summary: Azure Storage Explorer allows you to quickly view all the storage services under your account. You can browse through, read, and edit data stored in those services through a user-friendly graphical interface.
 abstract: | 
   In this module, you will:
   - Describe the features of Azure Storage Explorer
   - Install Azure Storage Explorer
   - Use Azure Storage Explorer to connect to Azure Storage services and manipulate stored data
 prerequisites: | 
-  - Basic knowledge of Azure Storage, Cosmos DB, and Data Lake
+  - Basic knowledge of Azure Storage, Azure Cosmos DB, and Data Lake
   - Ability to install software locally
 iconUrl: /learn/achievements/upload-download-and-manage-data-with-azure-storage-explorer.svg
 levels:
