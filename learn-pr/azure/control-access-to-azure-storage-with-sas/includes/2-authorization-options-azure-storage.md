@@ -6,14 +6,14 @@ In this unit, you'll look at the different ways to authenticate access to files 
 
 ## Accessing Azure Storage
 
-![Diagram showing the four methods of authentication, public access, Azure AD, Shared key, and SAS](../media/2-access-options.png)
-
 Files stored in Azure Storage are accessed by clients over HTTP/HTTPS. Azure needs to check each client's request has the authorization to access the stored data. There are four options available for blob storage.
 
 - Public access
 - Azure Active Directory
 - Shared key
 - Shared access signature (SAS)
+
+![Diagram showing the four methods of authentication, public access, Azure AD, Shared key, and SAS](../media/2-access-options.png)
 
 ### Public access
 

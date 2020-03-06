@@ -8,9 +8,11 @@ In this unit, you'll review how SAS works at a technical level and what C# code 
 
 When you use a SAS to access data stored in Azure Storage, you need two components. The first is a URI to the resource you want to access. The second part is an SAS token that you've created to authorize access to that resource.
 
+In a single URI such as `https://medicalrecords.blob.core.windows.net/patient-images/patient-116139-nq8z7f.jpg?sp=r&st=2020-01-20T11:42:32Z&se=2020-01-20T19:42:32Z&spr=https&sv=2019-02-02&sr=b&sig=SrW1HZ5Nb6MbRzTbXCaPm%2BJiSEn15tC91Y4umMPwVZs%3D` you can separate the URI from the SAS token as follows:
+
 | URI  | SAS token  |
 |------|------------|
-| https://medicalrecords.blob.core.windows.net/patient-images/patient-116139-nq8z7f.jpg?    | sp=r&st=2020-01-20T11:42:32Z&se=2020-01-20T19:42:32Z&spr=https&sv=2019-02-02&sr=b&sig=SrW1HZ5Nb6MbRzTbXCaPm%2BJiSEn15tC91Y4umMPwVZs%3D |
+| `https://medicalrecords.blob.core.windows.net/patient-images/patient-116139-nq8z7f.jpg?`    | `sp=r&st=2020-01-20T11:42:32Z&se=2020-01-20T19:42:32Z&spr=https&sv=2019-02-02&sr=b&sig=SrW1HZ5Nb6MbRzTbXCaPm%2BJiSEn15tC91Y4umMPwVZs%3D` |
 
 The SAS token itself is made up of several components.
 

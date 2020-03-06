@@ -17,7 +17,7 @@ In this exercise, you'll create a storage account and upload some example patien
         --name $STORAGENAME \
         --access-tier hot \
         --kind StorageV2 \
-        --resource-group <rgn>[sandbox Resource Group]</rgn>
+        --resource-group <rgn>[sandbox resource group]</rgn>
     ```
 
 1. Create a container to store the images in.
