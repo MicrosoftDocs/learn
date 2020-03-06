@@ -26,7 +26,7 @@ The stored access policy you create for a blob container can be used for all the
 
 You can create a shared access policy with C# code, using the Azure portal, or Azure CLI commands.
 
-#### With C# .NET code:
+#### With C# .NET code
 
 ```csharp
 BlobSignedIdentifier identifier = new BlobSignedIdentifier
@@ -42,25 +42,25 @@ BlobSignedIdentifier identifier = new BlobSignedIdentifier
 blobContainer.SetAccessPolicy(permissions: new BlobSignedIdentifier[] { identifier });
 ```
 
-#### With the portal:
+#### With the portal
 
 On the portal, you'll go to the storage account, and then the blob storage container. On the left, select the **Access policy**. To add a new stored access policy, select the **+ Add policy**.
 
-You can then enter all the required parameters. 
+You can then enter all the required parameters.
 
 ![Screenshots fot the options when adding an access policy](../media/5-add-a-policy.png)
 
-#### With Azure CLI commands:
+#### With Azure CLI commands
 
 ```azurecli
 az storage container policy create \
-    --name stored access policy identifier \
-    --container-name container name \
-    --start start time UTC datetime \
-    --expiry expiry time UTC datetime \
-    --permissions (a)dd, (c)reate, (d)elete, (l)ist, (r)ead, or (w)rite \
-    --account-key storage account key \
-    --account-name storage account name \
+    --name <stored access policy identifier> \
+    --container-name <container name> \
+    --start <start time UTC datetime> \
+    --expiry <expiry time UTC datetime> \
+    --permissions <(a)dd, (c)reate, (d)elete, (l)ist, (r)ead, or (w)rite> \
+    --account-key <storage account key> \
+    --account-name <storage account name> \
 ```
 
 ### Create SAS tokens and associate them with stored access policies
@@ -70,7 +70,7 @@ You can now associate the stored access policy you've created with any new SAS t
 All of your existing code needed to create the SAS token:
 
 ```csharp
-BlobSasBuilder sas = new BlobSasBuilder 
+BlobSasBuilder sas = new BlobSasBuilder
 {
     BlobContainerName = blob.BlobContainerName,
     BlobName = blob.Name,
