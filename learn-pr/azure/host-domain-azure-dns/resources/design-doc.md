@@ -127,15 +127,15 @@ bash setup.sh
 
 ## Sandbox requirements
 
-Microsoft.Compute/availabilitySets
-Microsoft.Compute/disks
-Microsoft.Compute/virtualMachines
-Microsoft.Network/dnszones
-Microsoft.Network/loadBalancers
-Microsoft.Network/networkInterfaces
-Microsoft.Network/networkSecurityGroups
-Microsoft.Network/publicIPAddresses
-Microsoft.Network/virtualNetworks
+- Microsoft.Compute/availabilitySets X
+- Microsoft.Compute/disks X
+- Microsoft.Compute/virtualMachines X
+- Microsoft.Network/dnszones 
+- Microsoft.Network/loadBalancers X
+- Microsoft.Network/networkInterfaces X
+- Microsoft.Network/networkSecurityGroups NO
+- Microsoft.Network/publicIPAddresses X
+- Microsoft.Network/virtualNetworks X
 
 
 ## Resources

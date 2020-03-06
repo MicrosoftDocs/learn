@@ -17,13 +17,13 @@ quiz:
   questions:
   - content: What does Azure DNS allows you to do?
     choices:
-    - content: Manage the security and access to your Website
+    - content: Manage the security and access to your Website.
       isCorrect: false
       explanation: Azure DNS supports a robust security model. But Azure DNS primarily allows you to host your domain, and manage DNS zone records.
     - content: Register new domain names, removing the need to use a domain registrar.
       isCorrect: false
       explanation: Azure DNS isn't a domain registrar. It hosts your domain, and allows you to manage DNS zone records.
-    - content: Manage and host your registered domain and associated records
+    - content: Manage and host your registered domain and associated records.
       isCorrect: true
       explanation: Azure DNS allows you to host your registered domains. You can control and configure the domain records, like A, CNAME, MX, and setup alias records.
   - content: What security features does Azure DNS provide?
@@ -31,7 +31,7 @@ quiz:
     - content: RBAC, activity logs, and resource locking
       isCorrect: true
       explanation: Azure DNS is built on Azure Resource Manager that provides security across all resources in Azure DNS.
-    - content: RBAC, activity logs, and Azure threat detection.
+    - content: RBAC, activity logs, and Azure threat detection
       isCorrect: false
       explanation: Azure DNS uses RBAC, and Activity logs, but threat detection is handled by Azure Security Manager.
     - content: RBAC, activity logs, and Azure infrastructure security
@@ -45,9 +45,6 @@ quiz:
     - content: A or AAAA
       isCorrect: true
       explanation: The A or AAAA record maps an IP address to a domain. Multiple IP addresses are known as a record set.
-    - content: NS
-      isCorrect: false
-      explanation: The NS record is the name space record for your DNS zone.
     - content: SOA
       isCorrect: false
       explanation: The SOA record is the start of authority for your domain. It's used by other DNS servers to resolve your domain.

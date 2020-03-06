@@ -21,7 +21,7 @@ The NS and SOA records are automatically created when you created the DNS zone.
 
 Azure alias records provide an additional level of record in your DNS zone. Which enables zone apex domains to reference other Azure resources from the DNS zone, without the need to create complex redirection policies. One of the other possible uses for an Azure alias is to route all traffic through Azure Traffic Monitor.
 
-At present the Azure alias record can connect to two types of Azure resources: Traffic Manager Service and Public IP addresses.
+The Azure alias record can connect to two types of Azure resources: Traffic Manager Service and Public IP addresses.
 
 Benefits of using alias records:
 
