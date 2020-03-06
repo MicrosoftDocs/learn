@@ -29,7 +29,7 @@ quiz:
       explanation: "This is the correct answer because it is not a good reason to create a function."
   - content: "How can you make an input argument optional?"
     choices:
-    - content: "By adding the required keyword."
+    - content: "By adding the `required` keyword."
       isCorrect: false
       explanation: "There is no `required` keyword."
     - content: "By supplying a default value that should be used if the caller doesn't pass an argument."

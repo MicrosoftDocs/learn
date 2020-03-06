@@ -6,11 +6,7 @@ This exercise utilizes a module to separate the code we might use in multiple ap
 
 ### Step 1 - Create a new file in the working folder for this exercise.
 
-Assuming you're continuing from the previous unit, use the techniques you learned in previous modules to add a new code file in the current folder dedicated to this module.  For example, you might create the following file:
-
-```dos
-exercise3.py
-```
+Assuming you're continuing from the previous unit, use the techniques you learned in previous modules to add a new code file in the current folder dedicated to this module.  For example, you might create a new file named `exercise3.py`.
 
 ### Step 2 - Create another new file in the working folder for a new module named `deck`.
 

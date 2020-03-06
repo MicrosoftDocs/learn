@@ -22,25 +22,13 @@ So, when should you use a function?  Anytime you begin building a non-trivial pr
 
 In this exercise, we'll create and call functions, learning how to return values from functions and supply arguments as input parameters to functions.
 
-### Step 1 - Create a new python code file.
+### Step 1 - Create a new working folder and python code file.
 
-Using the techniques you learned in previous modules, create a new folder for your work in this module, then add a new code file in that folder.  For example, you might create the following folder structure:
+Using the techniques you learned in previous modules, create a new folder for your work in this module.  For example, you might create a folder named `python-functions`.
 
-```
-c:\python\functions\
-```
+Inside that folder, create a file for this exercise.  For example, you might create a file named `exercise1.py`.
 
-Inside that folder, you create a file for this exercise.  For example, you might create a file named:
-
-```
-exercise1.py
-```
-
-When it's time to execute your code in the steps of the exercises, you can use the Python Tools for Visual Studio Code integration by selecting the green arrow, or you can use a command in the integrated terminal like:
-
-```dos
-py exercise1.py
-```
+When it's time to execute your code, you can use the Python Tools for Visual Studio Code integration by selecting the green arrow, or you can use a command in the integrated terminal using techniques we learned about in previous modules.
 
 ### Step 2 - Add code to the code file to create and call a simple function.
 

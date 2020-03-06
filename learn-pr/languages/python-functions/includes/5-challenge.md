@@ -4,11 +4,7 @@ In this challenge, you will create a new module containing functions so that the
 
 ### Step 1: Create a new code file for this challenge.
 
-Use the techniques you learned in previous modules to add a new code file in the current folder dedicated to this module.  For example, you might create the following file:
-
-```
-challenge.py
-```
+Use the techniques you learned in previous modules to add a new code file in the current folder dedicated to this module.  For example, you might create a file named `challenge.py`.
 
 ### Step 2: 
 

@@ -2,11 +2,7 @@ In the previous unit, we got our first chance to create our own functions.  We c
 
 ### Step 1 - Add a new file for this exercise to your working directory.
 
-Assuming you're continuing from the previous unit, use the techniques you learned in previous modules to add a new code file in the current folder dedicated to this module.  For example, you might create the following file:
-
-```dos
-exercise2.py
-```
+Assuming you're continuing from the previous unit, use the techniques you learned in previous modules to add a new code file in the current folder dedicated to this module.  For example, you might create a new file named `exercise2.py`.
 
 ### Step 2 - Add code that creates a function accepting an arbitrary arguments list.
 

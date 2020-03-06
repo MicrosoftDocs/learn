@@ -41,7 +41,7 @@ def process_names(unprocessed_list):
 
 Now, when you run the code in your `challenge.py` file, you should get the desired output.
 
-This code is merely "*one possible solution*" because we didn't specify details about the implementation of the functions in the `processor` module.  As long as the `process_numbers()` and `process_names()` functions fulfill the requirements in the previous unit, then you were successful!
+This code is merely *one possible solution* because we didn't specify details about the implementation of the functions in the `processor` module.  As long as the `process_numbers()` and `process_names()` functions fulfill the requirements in the previous unit, then you were successful!
 
 If you were successful, congratulations!  Continue on to the knowledge check in the next unit.
 
