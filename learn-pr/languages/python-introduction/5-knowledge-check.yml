@@ -18,10 +18,10 @@ quiz:
     choices:
     - content: "A compiler"
       isCorrect: false
-      explanation: "The Python compiler converts human readable Python into a more compact syntax that is interpretted and executed."
-    - content: "An interpretter"
+      explanation: "The Python compiler converts human readable Python into a more compact syntax that is interpreted and executed."
+    - content: "An interpreter"
       isCorrect: false
-      explanation: "The Python interpretter executes the code that was created by the compiler."
+      explanation: "The Python interpreter executes the code that was created by the compiler."
     - content: "An editor"
       isCorrect: false
       explanation: "An editor is the tool you use to write your code."
