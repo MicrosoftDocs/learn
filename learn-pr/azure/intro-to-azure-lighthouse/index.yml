@@ -18,7 +18,7 @@ abstract: |
   - Using Azure Resource Manager templates
   - Set up Security Center with Alerting
   - Creating a managed service offer on the Azure Marketplace
-iconUrl: http://via.placeholder.com/120x120
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
 roles:
