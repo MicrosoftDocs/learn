@@ -24,7 +24,7 @@ quiz:
     - content: In the Azure portal, add the domain name to a DNS zone associated with your subscription.
       isCorrect: false
       explanation: "Adding the name doesn't prove you own the domain. Add something to the DNS records of your domain to verify it."
-    - content: The Azure portal prompts you to set up single sign-in for your domain.
+    - content: The Azure portal prompts you to set up single sign-on for your domain.
       isCorrect: false
       explanation: "This prompt doesn't prove you own the domain. Add something to the DNS records of your domain to verify it."
 
