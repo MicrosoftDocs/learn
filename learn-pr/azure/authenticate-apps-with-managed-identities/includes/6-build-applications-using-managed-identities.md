@@ -1,18 +1,18 @@
-Managed Identity delegates the responsibility for creating and managing identity information for your services and other resources to Azure. Azure stores identity information in Active Directory. You can then assign access policies, which determine the identities that access your resources.
+Managed identity delegates the responsibility for creating and managing identity information for your services and other resources to Azure. Azure stores identity information in Active Directory. You can then assign access policies, which determine the identities that access your resources.
 
-You've set up an Azure VM with a system-managed identity, and want to use it to authenticate requests from your company's app. Instead of using the VM's identity, you'll create a user-assigned managed identity. After updating your app, it can retrieve secrets from an Azure Key Vault, no matter which VM it's installed on.
+You've created an Azure VM and assigned a system-managed identity. You want apps running on this VM to authenticate requests to Azure resources. Instead of using passwords ro shared keys, you'll use the system-assigned managed identity.
 
-In this unit, you'll learn more about how applications use managed identities to authenticate requests. You'll also see how to define an authorization policy with Azure Key Vault, to enable an authenticated identity to read secret information.
+In this unit, you'll learn more about how applications can use managed identities for authentication. You'll also see how to define an authorization policy with Azure Key Vault, to enable an authenticated identity to read secret information.
 
 ## Managed identities
 
 You'll recall from an earlier unit that Azure supports system-assigned identities and user-assigned identities. A system-assigned identity is created and managed by Azure, and is closely tied to a specific resource. For example, if you create a VM with a system-assigned identity, Azure creates the identity automatically, and associates it with the VM. If the VM is deleted, the identity also disappears.
 
-User-assigned identities are independent of any specific resource. Create a user-assigned identity manually, and assign it to a resource or service, such as your stock-tracking app. When the app runs, it uses the user-assigned identity. Assign access rights to this identity for the resources that the app needs to access. You could use this approach to deploy your app on multiple VMs. The app uses this single user-assigned identity instead of setting up a system-assigned identity for each VM.
+User-assigned identities are independent of any specific resource. Create a user-assigned identity manually, and assign it to a specific resource or service, such as your stock-tracking app. When the app runs, it uses the user-assigned identity. Assign access rights to this identity for the Azure resources that the app needs to access. You could use this approach to deploy your app on multiple VMs. The app uses this single user-assigned identity, instead of setting up a system-assigned identity for each VM.
 
 ## Create and manage a user-assigned identity
 
-You can create a user-assigned identity using the Azure portal or from the command line. The example below uses the Azure CLI:
+You can create a user-assigned identity using the Azure portal, or from the command line. The example below uses the Azure CLI:
 
 ```azurecli
 az identity create \
@@ -27,7 +27,7 @@ az identity list \
   --resource-group <resource group>
 ```
 
-When you've created an identity, you can use the principal ID returned by the previous command to associate it with your resources. To use the identity with an Azure Function App, use this command:
+When you've created an identity, you can use the principal ID returned by the previous command to associate it with your resources. To use the identity with an Azure function app, use this command:
 
 ```azurecli
 az functionapp identity assign \
@@ -55,7 +55,7 @@ az identity delete \
   --resource-group <resource group>
 ```
 
-## Using Managed Identity with Azure Key Vault
+## Using managed identity with Azure Key Vault
 
 Azure Key Vault provides the means of delegating the authentication process. The `AzureTokenServiceProvider` class has the `KeyVaultTokenCallback` property, which returns a delegate. An application uses this delegate to generate and authenticate the access token for the Key Vault service, based on the managed identity of the app. A `KeyVaultClient` object, which is used to access secrets in a key vault, can invoke the delegate using an `AuthenticationCallback` object. The code below shows how to create a `KeyVaultClient` object that authenticates the managed ID of an app.
 
