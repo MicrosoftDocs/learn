@@ -43,7 +43,7 @@ To create your DNS zone, follow these steps:
 
 Now the DNS zone exists, you need to create the necessary records to support the domain.
 
-The primary record to create is the A record. This record contains the pairing between the IP address and the domain name. The A record can have multiple entries, called recordsets. When using recordsets, the domain name remains constant, while the IP address are different.
+The primary record to create is the A record. This record contains the pairing between the IP address and the domain name. The A record can have multiple entries, called recordsets. When using recordsets, the domain name remains constant, while the IP addresses are different.
 
 1. In the Azure portal, select **All Resources**.
 1. Select **wideworldimports.com**.
@@ -72,7 +72,7 @@ In a real-world scenario, you may have more than one IP address set up for your 
 
 In a real-world scenario, after you create the public DNS zone, you update the domain name registrar NS records to delegate the domain to Azure.
 
-Even though we don't have a registered domain, it's still possible to verify the DNS zone works as expected by using the the nslookup tool.
+Even though we don't have a registered domain, it's still possible to verify the DNS zone works as expected by using the nslookup tool.
 
 ### Use nslookup to verify the configuration
 

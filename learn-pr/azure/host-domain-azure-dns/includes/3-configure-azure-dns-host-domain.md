@@ -107,6 +107,6 @@ Let's assume your organization has already created your virtual machines (VMs) a
 
 ### Step 3: Link your virtual network to a private DNS zone
 
-To link the private DNS zone to a virtual network, you create a virtual network link. In the Azure portal, you go to the private zone and select **Virtual network links**. From there you select the virtual network you want to link to the private zone. You add a link virtual network link record for each virtual network that needs private name resolution support.
+To link the private DNS zone to a virtual network, you create a virtual network link. In the Azure portal, you go to the private zone and select **Virtual network links**. From there, you select the virtual network you want to link to the private zone. You add a link virtual network link record for each virtual network that needs private name resolution support.
 
 In the next unit, you'll learn how to create a public DNS zone.

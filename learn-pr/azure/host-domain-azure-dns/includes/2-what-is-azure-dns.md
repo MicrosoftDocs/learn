@@ -6,7 +6,7 @@ In this unit, you'll learn what DNS is and how it works. Then learn about Azure 
 
 DNS, or the Domain Name System, is a protocol within the TCP/IP standard. DNS serves an essential role of translating the human-readable domain names, for example, www.wideworldimports.com into a known Internet Protocol (IP) address. IP addresses enable computers and network devices to identify and route requests between themselves.
 
-DNS uses a global directory hosted on servers around the world. Microsoft is part of that network that provids a DNS service through Azure DNS.
+DNS uses a global directory hosted on servers around the world. Microsoft is part of that network that provides a DNS service through Azure DNS.
 
 A DNS server is also known as a DNS name server, or just a name server.
 
@@ -56,7 +56,7 @@ As the administrator for your company, you want to set up a DNS server using Azu
 The configuration information for your DNS server is stored as a file within a zone on your DNS server. Each file is called a record. These record types are the most commonly created and used, but there are others:
 
 - **A** is the host record, and is the most common type of DNS record. It maps the domain or host name to the IP address.
-- **CNAME** is the canonical name, or the alias for an A record. If you had different domain names that all accessed the same website, You would use CNAME.
+- **CNAME** is the canonical name, or the alias for an A record. If you had different domain names that all accessed the same website, you would use CNAME.
 - **MX** is the mail exchange record. It maps mail requests to your mail server, whether hosted on-premises or in the cloud.
 
 Besides the three record types above, there are also these record types:
@@ -78,7 +78,7 @@ Some record types support the concept of record sets, or resource record sets. A
     www.wideworldimports.com.     3600    IN    A    127.0.0.1
     www.wideworldimports.com.     3600    IN    A    127.0.0.2
 
-SOA and CNAME records cannot contain record sets.
+SOA and CNAME records can't contain record sets.
 
 ## What is Azure DNS
 
@@ -97,7 +97,7 @@ Azure DNS is built on the Azure Resource Manager service, which comes with a hos
 - Private DNS domains
 - Alias record sets
 
-At this time, Azure DNS doesn't support Domain Name System Security Extensions or DNSSEC.  If you require this security extension, you should host those portions of your domain with a third party provider.
+At this time, Azure DNS doesn't support Domain Name System Security Extensions or DNSSEC.  If you require this security extension, you should host those portions of your domain with a third-party provider.
 
 ### Security Features
 
