@@ -15,7 +15,7 @@ quiz:
   questions:
   - content: "What is wrong with the following line of code?  `if x == 3`"
     choices:
-    - content: "Uses `==` instead of `=` to check for equality."
+    - content: "It uses `==` instead of `=` to check for equality."
       isCorrect: false
       explanation: "The equality operator is two equal sign characters."
     - content: "Missing keyword `then` at end"
