@@ -13,3 +13,28 @@ azureSandbox: false
 durationInMinutes: 5
 content: |
   [!include[](includes/9-summary.md)]
+quiz:
+  title: "Knowledge check"
+  questions:
+  - content: "You're creating a pipeline that includes two steps. Step 1 preprocesses some data, and step 2 uses the preprocessed data to train a model. What type of object should you use to pass data from step 1 to step 2 and create a dependency between these steps?"
+    choices:
+    - content: "Datastore"
+      isCorrect: false
+      explanation: "That is incorrect. To pass data between steps in a pipeline, use a PipelineData object."
+    - content: "PipelineData"
+      isCorrect: true
+      explanation: "That is correct. To pass data between steps in a pipeline, use a PipelineData object."
+    - content: "Data Reference"
+      isCorrect: false
+      explanation: "That is incorrect. To pass data between steps in a pipeline, use a PipelineData object."
+  - content: "You've published a pipeline that you want to run every week. You plan to use the Schedule.create method to create the schedule. What kind of object must you create first to configure how frequently the pipeline runs?"
+    choices:
+    - content: "Datastore"
+      isCorrect: false
+      explanation: "That is incorrect. You need a ScheduleRecurrance object to create a schedule that runs at a regular interval."
+    - content: "PipelineParameter"
+      isCorrect: false
+      explanation: "That is incorrect. You need a ScheduleRecurrance object to create a schedule that runs at a regular interval."
+    - content: "ScheduleRecurrance"
+      isCorrect: true
+      explanation: "That is correct. You need a ScheduleRecurrance object to create a schedule that runs at a regular interval."
