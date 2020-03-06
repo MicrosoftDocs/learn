@@ -30,15 +30,7 @@ Azure Storage Explorer automatically launches after installation.
 
 When you first launch Azure Storage Explorer, it displays the Connect to Azure Storage wizard.
 
-1. First, you'll connect to Azure. There are several **Azure environment** options to select from:
-
-   - Azure
-   - Azure China
-   - Azure Germany
-   - Azure US Government
-   - Add new environment
-
-   Choose **Azure** and select **Next**.
+1. First, you'll connect to Azure. There are several **Azure environment** options to select from. Select **Azure** and select **Next**.
 
     ![Screenshot showing the Connect to Azure Storage wizard. ](../media/3-storage-explorer-connect.png)
 
