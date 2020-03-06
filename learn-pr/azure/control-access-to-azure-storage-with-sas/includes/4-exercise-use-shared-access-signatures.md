@@ -2,13 +2,13 @@ You use Azure Storage to authorize access to files with a shared key, shared acc
 
 Your company's image diagnostic system accesses its patient images internally via a shared key. Your team needs to create an API to allow third parties access to diagnostic images. You'll create a test page on your web app to see how SAS helps you grant secure access to third-party clients.
 
-In this exercise, you'll create a storage account and upload some example patient images. You'll deploy your team's existing web app, and test that it can access the storage. The last step is to add C# and Javascript code to generate a SAS token on demand to view the images securely.
+In this exercise, you'll create a storage account and upload some example patient images. You'll deploy your team's existing web app, and test that it can access the storage. The last step is to add C# and JavaScript code to generate a SAS token on demand to view the images securely.
 
 ![Screenshot your company's patient diagnostic image system, showing three example images loaded](../media/4-app-running.png)
 
 ### Create a storage account and upload images
 
-1. Using the cloud shell, create a storage account for patient images.
+1. Using Cloud Shell, create a storage account for patient images.
 
     ```azurecli
     export STORAGENAME=medicalrecords$RANDOM
@@ -61,7 +61,7 @@ In this exercise, you'll create a storage account and upload some example patien
     }
     ```
 
-    Copy the connectionString value in the Cloud Shell output from your command, including the quotes.
+    Copy the connectionString value in Cloud Shell output from your command, including the quotes.
 
 1. Edit the **appsettings.json** file to add the connection credentials.
 
@@ -100,7 +100,7 @@ In this exercise, you'll create a storage account and upload some example patien
 
 1. Save and close the code editor with <kbd>Ctrl</kbd>+<kbd>S</kbd>, and then <kbd>Ctrl</kbd>+<kbd>Q</kbd>.
 
-1. To access your web app when it's running in the cloud shell, you need to open a port.
+1. To access your web app when it's running in Cloud Shell, you need to open a port.
 
     ```bash
     curl -X POST http://localhost:8888/openPort/8000;
@@ -210,7 +210,7 @@ In this exercise, you'll create a storage account and upload some example patien
     });
     ```
 
-    This jQuery code adds a click listener on the `btn-getKey` button. The code executes an ajax call to the new secure url for the given image file. When it returns, it populates the key input box with the SAS.
+    This jQuery code adds a click listener on the `btn-getKey` button. The code executes an Ajax call to the new secure url for the given image file. When it returns, it populates the key input box with the SAS.
 
 1. Save the changes and quit the editor with <kbd>Ctrl</kbd>+<kbd>S</kbd> and then <kbd>Ctrl</kbd>+<kbd>Q</kbd>.
 
@@ -258,4 +258,4 @@ In this exercise, you'll create a storage account and upload some example patien
     > [!NOTE]
     > To see this error, you need to use a new browser window that won't have cached the image.
 
-1. In the cloud shell quit the web app with <kbd>Ctrl</kbd>+<kbd>C</kbd>.
+1. In the Cloud Shell quit the web app with <kbd>Ctrl</kbd>+<kbd>C</kbd>.
