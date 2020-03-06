@@ -61,7 +61,7 @@ In this exercise, you'll create a storage account and upload some example patien
     }
     ```
 
-    Copy the connectionString value, including the quotes.
+    Copy the connectionString value in the Cloud Shell output from your command, including the quotes.
 
 1. Edit the **appsettings.json** file to add the connection credentials.
 
@@ -69,15 +69,15 @@ In this exercise, you'll create a storage account and upload some example patien
     code sas/appsettings.json
     ```
 
-1. In the code editor, replace the ConnectionString value **"[connection string]"** with the string you copied above.
+1. In the code editor, replace the ConnectionString value `"[connection string]"` with the string you copied above.
 
 1. Change the AccountName to the randomly generated name.
 
-1. In the editor, copy the string after the **AccountKey=** parameter up to the **;** in the connection string.
+1. In the editor, copy the string after the `AccountKey=` parameter up to the `;` in the connection string.
 
-1. Replace the **"[account key]"** string with the account key you copied.
+1. Replace the `"[account key]"` string with the account key you copied.
 
-1. The **appsettings.json** file should now look like this:
+1. The **appsettings.json** file should now look similar to this:
 
     ```json
     {
@@ -96,9 +96,9 @@ In this exercise, you'll create a storage account and upload some example patien
     }
     ```
 
-    Make sure you have the `==` at the end of the **AccountKey**.
+    Make sure you have the `==` at the end of the `AccountKey`.
 
-1. Save and close the code editor with <kbd>CTRL</kbd>+<kbd>S</kbd>, and then <kbd>CTRL</kbd>+<kbd>Q</kbd>.
+1. Save and close the code editor with <kbd>Ctrl</kbd>+<kbd>S</kbd>, and then <kbd>Ctrl</kbd>+<kbd>Q</kbd>.
 
 1. To access your web app when it's running in the cloud shell, you need to open a port.
 
@@ -135,7 +135,7 @@ In this exercise, you'll create a storage account and upload some example patien
 
 ### Add code to create a SAS
 
-1. Stop the web app with <kbd>CTRL</kbd>+<kbd>C</kbd>.
+1. Stop the web app with <kbd>Ctrl+C</kbd>.
 
 1. You'll enhance the **PatientRecordController** class to create an on-demand SAS and return it to the front end of the web app.
 
@@ -145,7 +145,7 @@ In this exercise, you'll create a storage account and upload some example patien
     code Controllers/PatientRecordController.cs
     ```
 
-1. At<!--CE: Should this say 'Add'?--> this code to the bottom of the class under the **GET PatientRecord/patient-nnnnnn** method.
+1. Add this code to the bottom of the class under the `GET PatientRecord/patient-nnnnnn` method.
 
     ```C#
     // GET PatientRecord/patient-nnnnnn/secure
@@ -188,7 +188,7 @@ In this exercise, you'll create a storage account and upload some example patien
 
     The method uses the passed `BlobClient` object to create a `BlobSasBuilder`. You'll generate a SAS that is read-only and expires in one minute.
 
-1. Save and quit the editor with <kbd>CTRL</kbd>+<kbd>S</kbd>, and then <kbd>CTRL</kbd>+<kbd>Q</kbd>.
+1. Save and quit the editor with <kbd>Ctrl</kbd>+<kbd>S</kbd>, and then <kbd>Ctrl</kbd>+<kbd>Q</kbd>.
 
 ### Add code to use the SAS
 
@@ -212,7 +212,7 @@ In this exercise, you'll create a storage account and upload some example patien
 
     This jQuery code adds a click listener on the `btn-getKey` button. The code executes an ajax call to the new secure url for the given image file. When it returns, it populates the key input box with the SAS.
 
-1. Save the changes and quit the editor with <kbd>CTRL</kbd>+<kbd>S</kbd> and then <kbd>CTRL</kbd>+<kbd>Q</kbd>.
+1. Save the changes and quit the editor with <kbd>Ctrl</kbd>+<kbd>S</kbd> and then <kbd>Ctrl</kbd>+<kbd>Q</kbd>.
 
 ### Test your changes
 
@@ -258,4 +258,4 @@ In this exercise, you'll create a storage account and upload some example patien
     > [!NOTE]
     > To see this error, you need to use a new browser window that won't have cached the image.
 
-1. In the cloud shell quit the web app with <kbd>CTRL</kbd>+<kbd>C</kbd>.
+1. In the cloud shell quit the web app with <kbd>Ctrl</kbd>+<kbd>C</kbd>.
