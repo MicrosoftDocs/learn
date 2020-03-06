@@ -23,13 +23,13 @@ Migrating using a backup and restore is the simplest method of migration that is
 
 - **Using backup with compression**: Can be done on source SQL Server 2005 systems or greater. Once the compressed backup file has been created on the local disk, upload it to the Azure VM and restore it.
 
-> [!NOTE] 
-> If your backup file is larger than 1 TB, you must stripe it because the maximum size of a VM disk is 1 TB.
+   > [!NOTE] 
+   > If your backup file is larger than 1 TB, you must stripe it because the maximum size of a VM disk is 1 TB.
 
 - **Backup and restore using a URL**: Can be done on source SQL Server 2012 SP1 CU2 or greater. Similar to the first way, but this method creates the backup file directly at the given URL. You'll then restore the database on the Azure VM from that URL.
 
-> [!NOTE] 
-> With SQL Server 2016, striped backup sets are supported and are recommended for performance.
+   > [!NOTE] 
+   > With SQL Server 2016, striped backup sets are supported and are recommended for performance.
 
 ### Detach and attach a database
 
@@ -48,9 +48,9 @@ If you want to minimize the amount of downtime during the migration, you can use
 
 Always On availability groups are available from SQL Server 2012, so use transactional replication when you need to minimize downtime and don't have an Always On on-premises deployment. There are three basic steps required to use this migration:
 
-1. **Set up distribution** - responsible for distributing articles in the replication topology. Articles are a database object. For example, a table that is included in the _Publication_
-2. **Create publication** - a collection of one or more articles from the database being replicated
-3. **Create subscription** - a request from a *Subscriber* for a *Publication* from a *Publisher*
+1. **Set up distribution**: Responsible for distributing articles in the replication topology. Articles are a database object. For example, a table that is included in the _Publication_
+2. **Create publication**: A collection of one or more articles from the database being replicated
+3. **Create subscription**: A request from a *Subscriber* for a *Publication* from a *Publisher*
 
 Once complete test that the database appears on the subscriber instance in the Azure Virtual Machine. You can direct the connections to the subscriber database. Stop and delete the replication once the data has been successfully migrated.
 
