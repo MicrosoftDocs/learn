@@ -4,7 +4,9 @@ You used the security features of Azure Storage to generate unique SAS tokens fo
 
 Without SAS and access policies, your company would likely have had to develop a custom middle tier. The cost of this development, and maintaining the middle tier, would be far greater than the elegant solution you used in these exercises.
 
-## Additional resources
+## Learn more
+
+To learn more about using SAS to secure your data stored in Azure Storage, visit the following articles:
 
 - [Grant limited access to Azure Storage resources using shared access signatures (SAS)](https://docs.microsoft.com/azure/storage/common/storage-sas-overview)
 - [Quickstart: Azure Blob storage client library v12 for .NET](https://docs.microsoft.com/azure/storage/blobs/storage-quickstart-blobs-dotnet)
