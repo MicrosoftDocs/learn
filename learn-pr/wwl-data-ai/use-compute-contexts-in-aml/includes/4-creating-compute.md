@@ -1,6 +1,6 @@
 The most common ways to create or attach a compute target are to use the **Compute** page in Azure Machine Learning studio, or to use the Azure Machine Learning SDK to provision compute targets in code.
 
-## Creating a Managed Compute Target with the SDK
+## Creating a managed compute target with the SDK
 
 A *managed* compute target is one that is managed by Azure Machine Learning, such as an Azure Machine Learning training cluster.
 
@@ -30,7 +30,7 @@ In this example, a cluster with up to four nodes that is based on the STANDARD_D
 
 > **Note**: For a full list of **AmlCompute** configuration options, see the [AmlCompute class](https://aka.ms/AA70zfq) SDK documentation.
 
-## Attaching an Unmanaged Compute Target with the SDK
+## Attaching an unmanaged compute target with the SDK
 
 An *unmanaged* compute target is one that is defined and managed outside of the Azure Machine Learning workspace; for example, an Azure virtual machine or an Azure Databricks cluster.
 
@@ -61,7 +61,7 @@ databricks_compute = ComputeTarget.attach(ws, compute_name, db_config)
 databricks_compute.wait_for_completion(True)
 ```
 
-## Checking for an Existing Compute Target
+## Checking for an existing compute target
 
 In many cases, you will want to check for the existence of a compute target, and only create a new one if there isn't already one with the specified name. To accomplish this, you can catch the **ComputeTargetException** exception, like this:
 
