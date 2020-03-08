@@ -3,12 +3,13 @@ uid: learn.wwl.work-with-data-in-aml.using-datastores
 title: Use datastores
 metadata:
   title: Use datastores
-  description: Learn how to use a datastore in an experiment.
+  description: "Learn how to use a datastore in an experiment."
   ms.date: 02/10/2020
-  author: GraemeMalcolm
+  author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+azureSandbox: false
 durationInMinutes: 5
 content: |
   [!include[](includes/3-using-datastores.md)]

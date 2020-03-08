@@ -20,13 +20,13 @@ Alternatively, you can choose to use a code-first tool because:
 
 ## Choosing a design-first technology
 
-If you choose to use a design-first approach, you must also choose from Microsoft Flow and Azure Logic Apps.
+If you choose to use a design-first approach, you must also choose from Microsoft Power Automate and Azure Logic Apps.
 
 The principal question here is who will design the workflow: will it be developers or users?
 
 In Logic Apps, there is a GUI designer on which you draw out the workflow. It is intuitive and easy to use but you also have the opportunity to delve under the hood and edit the source code for a workflow. This tool is designed for people with development skills.
 
-In Microsoft Flow, extra help and templates are provided for common types of workflow. There is no way to edit the source code that the tool creates. This tool is designed for users who have a good understanding of the business process but no coding skills.
+In Microsoft Power Automate, extra help and templates are provided for common types of workflow. There is no way to edit the source code that the tool creates. This tool is designed for users who have a good understanding of the business process but no coding skills.
 
 ## Choosing a code-first technology
 
@@ -39,6 +39,6 @@ Because of the extra features that are included with Azure Functions, including 
 
 ## Mixing Technologies
 
-Remember that there is no requirement for you to use the same technology for different workflows: if your requirements differ, you are likely to reach a different answer at the end of your decision-making process. Furthermore, you can also call one workflow from another. For example, a workflow implemented in Microsoft Flow can easily call another that is built as an Azure Function.
+Remember that there is no requirement for you to use the same technology for different workflows: if your requirements differ, you are likely to reach a different answer at the end of your decision-making process. Furthermore, you can also call one workflow from another. For example, a workflow implemented in Microsoft Power Automate can easily call another that is built as an Azure Function.
 
-One reason to mix the technologies used in your business processes would be to give users control over a small section of a complete workflow. Do this by implementing that section in Microsoft Flow, then call that Flow from a Logic App, Web Job, or Function.
+One reason to mix the technologies used in your business processes would be to give users control over a small section of a complete workflow. Do this by implementing that section in Microsoft Power Automate, then call that flow from a Logic App, Web Job, or Function.
