@@ -62,7 +62,7 @@ To initiate installation, you'll create a new file with a .py file extension, wh
 > [!NOTE]
 > In this module, we'll merely create a file as a means of triggering the Python extension for Visual Studio Code to display a pop up message to initiate the installation of pylint.  We will not use the file in this module, but will learn how to write and execute a code file in the next module titled "Create your First Python Program".
 
-### Step 4 - Open the Explorer view in Visual Studio Code
+### Step 1 - Open the Explorer view in Visual Studio Code
 
 Bring up the Explorer view.  Go to **View**, and select **Explorer**, or click the Explorer icon in the Activity Bar on the left side of Visual Studio Code.
 
@@ -73,7 +73,7 @@ The Explorer displays two sections:
 
 However, since this is the first time you've open Visual Studio Code, you will see a section titled "No Folder Opened" instead.  Below this header, you'll see the message "You have not yet opened a folder" and an **Open Folder** button.
 
-### Step 5 - Create a new Working folder
+### Step 2 - Create a new Working folder
 
 Click the **Open Folder** button to reveal your operating system's Open dialog.
 
@@ -81,7 +81,7 @@ You should create a folder in your system's Documents folder called **hello** an
 
 Once you select the new **hello** folder, back in the Explorer view, you should see the title of the section change to "hello".
 
-### Step 6 - Create a new file
+### Step 3 - Create a new file
 
 To create a new script file in your **hello** folder, go to **File**, and select **New File**.
 
@@ -89,7 +89,7 @@ In the main area, the new file appears.
 
 It's likely that you'll see one or more pop-up messages appear in the lower right-hand corner of Visual Studio Code.
 
-### Step 7 - Initiate the pylint installation from the pop-up
+### Step 4 - Initiate the pylint installation from the pop-up
 
 In this step, we'll focus on the pop-up with the message "Linter pylint is not installed".
 
@@ -117,7 +117,7 @@ sudo pip3 install pylint
 ::: zone-end
 
 
-### Step 8 - Address other pop-up messages
+### Step 5 - Address other pop-up messages
 
 You may see other pop-up messages appear.
 
