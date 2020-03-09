@@ -23,7 +23,7 @@ prerequisites: |
   - You should have worked with the `print()` function, variables and literal strings, as well as numeric data.
   - You should be aware that you can call helper functions on a data type, a literal value and a variable.
 ratingEnabled: true
-iconUrl: /learn/achievements/python-format-strings.svg
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
 roles:
