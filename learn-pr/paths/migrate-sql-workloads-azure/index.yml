@@ -30,11 +30,11 @@ products:
 - azure-virtual-machines
 - sql-server
 modules:
+- learn-sqlserver.sql-server-discovery-using-map
+- learn-sqlserver.assess-convert-sql-server-databases-using-dma
 - learn-sqlserver.test-optimize-sql-server-databases-using-dea
 - learn-wwl.migrate-sql-workloads-azure-virtual-machines
 - learn-wwl.migrate-sql-workloads-azure-sql-databases
 - learn-wwl.migrate-sql-workloads-azure-managed-instances
-- learn-sqlserver.sql-server-discovery-using-map
-- learn-sqlserver.assess-convert-sql-server-databases-using-dma
 trophy:
   uid: learn.wwl.migrate-sql-workloads-to-azure.trophy
