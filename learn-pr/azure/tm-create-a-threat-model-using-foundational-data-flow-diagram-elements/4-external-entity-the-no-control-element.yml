@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.tm-create-a-threat-model-using-foundational-data-flow-diagram-elements.4-external-entity-the-no-control-element
-title: External Entity - The No Control Element
+title: External entity - The no control element
 metadata:
-  title: External Entity - The No Control Element
+  title: External entity - The no control element
   description: The external entity element in a data-flow diagram
   ms.date: 02/28/2020
   author: rodsan

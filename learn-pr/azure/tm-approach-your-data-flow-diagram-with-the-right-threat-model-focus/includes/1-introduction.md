@@ -1,10 +1,10 @@
-## What It's About
+## What it is about
 
 Threat modeling is an effective technique to help you identify threats and find ways to reduce or eliminate risk. 
 
 The process begins when you decide whether to focus on what needs to be protected or who it needs protection from.
 
-## Why Is It Important?
+## Why is it important?
 
 Having the right focus helps you tailor the threat modeling exercise to produce quality results. Examples include:
 

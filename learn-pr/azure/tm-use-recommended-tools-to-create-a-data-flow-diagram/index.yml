@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.tm-use-recommended-tools-to-create-a-data-flow-diagram
 metadata:
-  title: Use Recommended Tools to Create a Data-Flow Diagram
+  title: Use recommended tools to create a data-flow diagram
   description: You can use any canvas, physical or virtual, to create a data-flow diagram. Engineers at Microsoft recommend three tools to help you in your threat modeling journey.
   ms.date: 02/28/2020
   author: rodsan
@@ -16,7 +16,6 @@ abstract: |
   - Learn more about Visio
 prerequisites: None
 iconUrl: /learn/achievements/generic-badge.svg
-ratingEnabled: false
 levels:
 - beginner
 roles:

@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.tm-create-a-threat-model-using-foundational-data-flow-diagram-elements.2-process-the-task-element
-title: Process - The Task Element
+title: Process - The task element
 metadata:
-  title: Process - The Task Element
+  title: Process - The task element
   description: The process element in a data-flow diagram
   ms.date: 02/28/2020
   author: rodsan

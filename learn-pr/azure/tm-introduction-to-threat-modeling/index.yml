@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.tm-introduction-to-threat-modeling
 metadata:
-  title: Introduction to Threat Modeling
+  title: Introduction to threat modeling
   description: Explore the four high-level steps of threat modeling.
   ms.date: 02/28/2020
   author: rodsan
   ms.author: rodsan
   ms.topic: interactive-tutorial
   ms.prod: learning-threat-modeling
-title: Introduction to Threat Modeling
+title: Introduction to threat modeling
 summary: Threat modeling is an effective way to help secure your systems, applications, networks, and services. It's an engineering technique that identifies potential threats and recommendations to help reduce risk and meet security objectives earlier in the development lifecycle.
 abstract: |
   In this module, you will be able to:
@@ -18,7 +18,6 @@ abstract: |
   - Highlight the importance of verifying assumptions, requirements, and fixes before deployment
 prerequisites: None
 iconUrl: /learn/achievements/generic-badge.svg
-ratingEnabled: false
 levels:
 - beginner
 roles:

@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.tm-use-a-framework-to-identify-threats-and-find-ways-to-reduce-or-eliminate-risk
 metadata:
-  title: Use a Framework to Identify Threats and Find Ways to Reduce or Eliminate Risk
+  title: Use a framework to identify threats and find ways to reduce or eliminate risk
   description: Threat modeling helps you generate a list of potential threats using STRIDE and find ways to reduce or eliminate risk with corresponding security controls.
   ms.date: 02/28/2020
   author: rodsan
@@ -16,7 +16,6 @@ abstract: |
   - Learn about the security controls to help reduce or eliminate risk
 prerequisites: None
 iconUrl: /learn/achievements/generic-badge.svg
-ratingEnabled: false
 levels:
 - beginner
 roles:
