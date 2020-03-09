@@ -10,6 +10,9 @@ In this example, if either service fails the whole application will fail. In gen
 
 `99.95 percent × 99.99 percent = 99.94 percent`
 
+> [!NOTE]
+> For SLA and downtime calculations, remember that any time you see the label "percent" or the percent symbol (`%`), that number is divided by 100. If you were entering the SLA calculation above, the actual values would be `0.9995 * 0.9999 = 0.9994`.
+
 This means the **combined probability of failure** is higher than the individual SLA values. This isn't surprising, because an application that relies on multiple services has more potential failure points.
 
 Conversely, you can improve the composite SLA by creating independent fallback paths. For example, if SQL Database is unavailable, you can put transactions into a queue for processing at a later time.
