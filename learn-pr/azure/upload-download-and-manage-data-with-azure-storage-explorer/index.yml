@@ -13,8 +13,8 @@ summary: Azure Storage Explorer allows you to quickly view all the storage servi
 abstract: | 
   In this module, you will:
   - Describe the features of Azure Storage Explorer
-  - Install Azure Storage Explorer
-  - Use Azure Storage Explorer to connect to Azure Storage services and manipulate stored data
+  - Install Storage Explorer
+  - Use Storage Explorer to connect to Azure Storage services and manipulate stored data
 prerequisites: | 
   - Basic knowledge of Azure Storage, Azure Cosmos DB, and Data Lake
   - Ability to install software locally

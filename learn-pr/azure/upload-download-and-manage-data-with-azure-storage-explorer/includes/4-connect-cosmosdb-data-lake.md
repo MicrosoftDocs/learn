@@ -32,7 +32,7 @@ az cosmosdb keys list \
 
 By using the connection string template, add the name of the database, along with the primary master key returned from the preceding command.
 
-Now that you have a connection string, you can use Storage Explorer to connect to your database. You'll be able to create or delete a database, create or delete collections, and create or delete documents.
+Now that you have a connection string, you can use Storage Explorer to connect to your database. You can create or delete a database, create or delete collections, and create or delete documents.
 
 1. Open Storage Explorer.
 1. Open the resource tree and select the branch **Local & Attached**.

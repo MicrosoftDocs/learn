@@ -173,9 +173,9 @@ Now that you've created a Gen2 storage account, you can connect to it in Storage
 
 1. In Storage Explorer, in the **EXPLORER** pane, locate **Concierge Subscription** and expand it to show all the storage accounts.
 
-1. Right-click **Storage Accounts** and select **Connect to Azure Storage**.
+1. Right-click **Storage Accounts** and select **Connect to Azure storage**.
 
-   ![Screenshot that shows the Connect to Azure Storage option](../media/5-connect-to-azure-storage.png)
+   ![Screenshot that shows the Connect to Azure storage option](../media/5-connect-to-azure-storage.png)
 
 1. If you're prompted, sign in with your Azure account.
 

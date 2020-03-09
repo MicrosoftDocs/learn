@@ -9,8 +9,8 @@ By the end of this module, you'll know how to use Storage Explorer to manipulate
 ## Learning objectives
 
 - Identify the features of Azure Storage Explorer
-- Install Azure Storage Explorer
-- Use Azure Storage Explorer to connect to Azure Storage services and manipulate stored data
+- Install Storage Explorer
+- Use Storage Explorer to connect to Azure Storage services and manipulate stored data
 
 ## Prerequisites
 

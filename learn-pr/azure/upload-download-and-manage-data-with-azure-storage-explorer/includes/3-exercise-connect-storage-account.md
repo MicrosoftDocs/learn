@@ -42,7 +42,7 @@ When you first open Storage Explorer, it displays the Connect to Azure Storage w
 
     ![Screenshot that shows the account management panel after signing in to an Azure account](../media/3-account-panel-subscriptions-apply.png)
 
-   Confirm that the subscription and account details are correct, and then select the **Apply** option.
+   Confirm that the subscription and account details are correct, and then select **Apply**.
 
 You've now connected Storage Explorer to your Azure subscription. Don't close the Storage Explorer application.
 
@@ -66,7 +66,7 @@ You've now connected Storage Explorer to your Azure subscription. Don't close th
 
     ![Screenshot that shows the expansion of Concierge Subscription](../media/3-storage-explorer-create-blob-1.png)
 
-1. Locate and expand the storage account that you created earlier. It should be named something similar to **mslearn12345** and will end with a different set of numbers. You'll see that it has four virtual folders: **Blob Containers**, **File Shares**, **Queues**, and **Tables**.
+1. Locate and expand the storage account that you created earlier. It should be named something similar to **mslearn12345** and ends with a different set of numbers. It has four virtual folders: **Blob Containers**, **File Shares**, **Queues**, and **Tables**.
 
 1. Right-click the **Blob Containers** virtual folder to access the shortcut menu, and then select **Create Blob Container**.
 
