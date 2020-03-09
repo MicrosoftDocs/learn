@@ -51,7 +51,7 @@ Add the highlighted code below to the end of your pipeline.
 
 **Mara:** I agree. Adding a task for that to our pipeline will help us avoid accidental oversights down the road if we change either service. We can put it right at the end.
 
-Add the highlighted code below to the end of your pipeline. If you would like to learn more about this task, you can review the docs for [Azure App Service Settings task](azure/devops/pipelines/tasks/deploy/azure-app-service-settings?azure-portal=true).
+Add the highlighted code below to the end of your pipeline. If you would like to learn more about this task, you can review the docs for [Azure App Service Settings task](/azure/devops/pipelines/tasks/deploy/azure-app-service-settings?azure-portal=true).
 
 [!code-yml[](code/4-3-azure-pipelines.yml?highlight=11-23)]
 
