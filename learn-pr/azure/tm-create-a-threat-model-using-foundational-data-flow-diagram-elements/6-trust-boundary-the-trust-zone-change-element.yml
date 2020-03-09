@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.tm-create-a-threat-model-using-foundational-data-flow-diagram-elements.6-trust-boundary-the-trust-zone-change-element
-title: Trust Boundary - The Trust Zone Change Element
+title: Trust boundary - The trust zone change element
 metadata:
-  title: Trust Boundary - The Trust Zone Change Element
+  title: Trust boundary - The trust zone change element
   description: The trust boundary element in a data-flow diagram
   ms.date: 02/28/2020
   author: rodsan
