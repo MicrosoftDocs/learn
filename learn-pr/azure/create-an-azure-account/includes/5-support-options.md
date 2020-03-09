@@ -2,7 +2,7 @@ If you have questions around Azure services or curious about its capabilities, w
 
 ## Azure free support resources
 
-You have 24/7 access to the online documentation, community support, and new Azure capabilities demo videos on YouTube channel. Created by Azure engineers, these demo videos are available on Azure Friday, Microsoft Mechanics, and Azure portal how-to videos playlists. As an Azure customer, the following free support resources are available to you as well.
+You have 24/7 access to the online documentation, community support, and new Azure capabilities demo videos on YouTube. Created by Azure engineers, these demo videos are available on Azure Friday, Microsoft Mechanics, and Azure portal how-to videos playlists. As an Azure customer, the following free support resources are available to you as well.
 
 - Billing and subscription management support
 - Azure Quickstart Center, a guided experience in the Azure portal available to anyone who wants to improve their knowledge of Azure
