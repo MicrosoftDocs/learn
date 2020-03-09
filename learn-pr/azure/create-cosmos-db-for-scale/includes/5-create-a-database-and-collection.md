@@ -1,7 +1,7 @@
 You now understand how request units are used to determine database throughput. You also know how to use partition keys to create a scale-out strategy for your database. 
 Now you're ready to create your database and container. In this exercise, you'll create an Azure Cosmos DB Database and Container and set your partition key and throughput values.
 
-::: zone pivot="node"
+::: zone pivot="portal"
 ## Creating your database and container
 
 1. In the Azure portal, select **Data Explorer** from your Cosmos DB resource and then click the **New Container** button in the toolbar.
@@ -134,7 +134,7 @@ In this exercise, you'll create an Azure Cosmos DB  database, and container usin
 13. Add the following code to the method to create a new Database instance if one doesn't already exist:
 
     ```csharp
-    DatabaseResponse databaseResponse = await client.CreateDatabaseIfNotExistsAsync("EntertainmentDatabase");
+    DatabaseResponse databaseResponse = await client.CreateDatabaseIfNotExistsAsync("Products");
     Database targetDatabase = databaseResponse.Database;
     ```
 
@@ -165,7 +165,7 @@ In this exercise, you'll create an Azure Cosmos DB  database, and container usin
             {         
                 using (CosmosClient client = new CosmosClient(_endpointUri, _primaryKey))
                 {        
-                    DatabaseResponse databaseResponse = await client.CreateDatabaseIfNotExistsAsync("EntertainmentDatabase");
+                    DatabaseResponse databaseResponse = await client.CreateDatabaseIfNotExistsAsync("Products");
                     Database targetDatabase = databaseResponse.Database;
                     await Console.Out.WriteLineAsync($"Database Id:\t{targetDatabase.Id}");
                 }
@@ -187,7 +187,7 @@ In this exercise, you'll create an Azure Cosmos DB  database, and container usin
 18. After running your application, you should see this output in your console:
 
     ```bash
-    Database Id:    EntertainmentDatabase
+    Database Id:    Products
     ```
 
 19. Now that your Database was created, you're ready to create a Container to store your documents. Locate the **using** block within the Main method and add the following code to create a new IndexingPolicy instance with a custom indexing policy configured:
@@ -205,7 +205,7 @@ In this exercise, you'll create an Azure Cosmos DB  database, and container usin
             }
         }
     };
-    var containerProperties = new ContainerProperties("CustomCollection", "/type")
+    var containerProperties = new ContainerProperties("Clothing", "/type")
     {
         IndexingPolicy = indexingPolicy
     };
@@ -239,13 +239,13 @@ In this exercise, you'll create an Azure Cosmos DB  database, and container usin
     {
         public class Program
         {
-            private static readonly string _endpointUri = "https://cosmosdblabs.documents.azure.com:443/";
-            private static readonly string _primaryKey = "N5M1lz1C1719MQf3muXiL3F8cbf4Hx9j2Oflo6GfnSlOqMb2shMkAjPi0kCqwnGEvrd8Bazx8xNKfsSXvvRrSw==";
+            private static readonly string _endpointUri = "YOUR_URI";
+            private static readonly string _primaryKey = "YOUR_KEY";
             public static async Task Main(string[] args)
             {         
                 using (CosmosClient client = new CosmosClient(_endpointUri, _primaryKey))
                 {        
-                    DatabaseResponse databaseResponse = await client.CreateDatabaseIfNotExistsAsync("EntertainmentDatabase");
+                    DatabaseResponse databaseResponse = await client.CreateDatabaseIfNotExistsAsync("Products");
                     Database targetDatabase = databaseResponse.Database;
                     await Console.Out.WriteLineAsync($"Database Id:\t{targetDatabase.Id}");
                     IndexingPolicy indexingPolicy = new IndexingPolicy
@@ -260,7 +260,7 @@ In this exercise, you'll create an Azure Cosmos DB  database, and container usin
                             }
                         }
                     };
-                    var containerProperties = new ContainerProperties("CustomCollection", "/type")
+                    var containerProperties = new ContainerProperties("Clothing", "/type")
                     {
                         IndexingPolicy = indexingPolicy
                     };
@@ -286,8 +286,8 @@ In this exercise, you'll create an Azure Cosmos DB  database, and container usin
 25. After running your application, you should see this output in your console:
 
     ```bash
-    Database Id:    EntertainmentDatabase
-    Custom Container Id:    CustomCollection
+    Database Id:    Products
+    Custom Container Id:    Clothing
     ```
 ::: zone-end
 
@@ -369,7 +369,7 @@ In this exercise, you'll create an Azure Cosmos DB  database, and container usin
 7. Add the following class variables
 
     ```java
-    private static final String databaseName = "EntertainmentDatabase";
+    private static final String databaseName = "Products";
     private static ExecutorService executorService;
     private static Scheduler scheduler;
     private static AsyncDocumentClient client;
@@ -466,7 +466,7 @@ In this exercise, you'll create an Azure Cosmos DB  database, and container usin
      */
     public class App 
     {
-        private static final String databaseName = "EntertainmentDatabase";
+        private static final String databaseName = "Products";
         private static ExecutorService executorService;
         private static Scheduler scheduler;
         private static AsyncDocumentClient client;
@@ -534,11 +534,9 @@ In this exercise, you'll create an Azure Cosmos DB  database, and container usin
 14. Your Application will create a new database. The console will show this output:
 
     ```bash
-    SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
-    SLF4J: Defaulting to no-operation (NOP) logger implementation
     SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-    database EntertainmentDatabase doesn't exist, creating it...
-    Checking database EntertainmentDatabase completed!
+    database Products doesn't exist, creating it...
+    Checking database Products completed!
     
     Database created, please hold while resources are released
     close the client
@@ -547,7 +545,7 @@ In this exercise, you'll create an Azure Cosmos DB  database, and container usin
 15. Now that a Database exists, we'll add the code to add a Container. Below the Class declaration, add the following variables:
 
     ```java
-    private static final String collectionId = "CustomCollection";
+    private static final String collectionId = "Clothing";
     private static final String partitionKeyPath = "/type";
     private static final int throughPut = 400;
     ```
@@ -645,8 +643,8 @@ In this exercise, you'll create an Azure Cosmos DB  database, and container usin
 
     ```bash
     SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-    database EntertainmentDatabase already exists.
-    Checking database EntertainmentDatabase completed!
+    database Products already exists.
+    Checking database Products completed!
     
     Database created, please hold while resources are released
     creating collection...
