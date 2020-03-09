@@ -34,16 +34,16 @@ To clean up your resource group:
 
 ## Move the work item to Done
 
-Here you move the work item that you assigned to yourself earlier in this module. You move **Refactor leaderboard API as an Azure Function** to the **Done** column.
+Here you move the work item that you assigned to yourself earlier in this module. You move **Refactor leaderboard API as an Azure Functions app** to the **Done** column.
 
-In practice, "Done" often means putting working software into the hands of your users. For learning purposes, here you mark this work as done because you fulfilled the goal for the Tailspin team. They wanted to refactor their project to extract a leaderboard API as an Azure Function.
+In practice, "Done" often means putting working software into the hands of your users. For learning purposes, here you mark this work as done because you fulfilled the goal for the Tailspin team. They wanted to refactor their project to extract a leaderboard API as a function app.
 
 At the end of each *sprint*, or work iteration, you and your team can hold a retrospective meeting. In the meeting, share the work you completed, what went well, and what you can improve.
 
 To complete the work item:
 
 1. From Azure DevOps, navigate to **Boards** and then select **Boards** from the menu.
-1. Move the **Refactor leaderboard API as an Azure Function** work item from the **Doing** column to the **Done** column.
+1. Move the **Refactor leaderboard API as an Azure Functions app** work item from the **Doing** column to the **Done** column.
 
     ![Azure Boards, showing the card in the Done column](../media/5-azure-boards-wi1-done.png)
 

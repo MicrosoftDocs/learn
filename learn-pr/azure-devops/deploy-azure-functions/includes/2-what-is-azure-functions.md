@@ -16,7 +16,7 @@ Irwin, the product manager, has called an urgent meeting with key team members i
 
 **Irwin:** Well, it's not that simple. They started off talking about "leveraging" and "synergy" and I sort of zoned out checking email. When I came back around they were asking me to task you with finding the most secure way for us to give anonymous third parties access to our database.
 
-**Tim:** What?!? That's insane! What are they thinking?
+**Tim:** What?!? That's a terrible idea! Do they understand how many security risks that could create?
 
 **Irwin:** I know, I know. That was my first reaction as well. I probed a bit deeper and it turns out that they really just want the ability for anyone to integrate leaderboard data into their own applications. They think it would be really cool to have the same leaderboard options on our site, from within the game, on gaming review sites run by partners, and even by random players who want to show it on their blogs and personal sites.
 
@@ -70,8 +70,4 @@ The Tailspin team selected Azure Functions for this scenario because it met all 
 - We need to have massive scale without making a massive commitment.
   - *Serverless technologies have virtually unlimited scale that can automatically ramp up and down much faster than virtual machines or app services.*
 
-It's important to note that there are quite a few serverless offerings under the Azure umbrella, and there is some overlap between various services. For a more in-depth review of some key serverless options, including Azure Functions, Microsoft Flow, Azure Logic Apps, and Azure App Service WebJobs, please see [Choose the right integration and automation services in Azure](https://docs.microsoft.com/azure/azure-functions/functions-compare-logic-apps-ms-flow-webjobs).
-
-Azure Functions are also a great option for microservice solutions like the one the Tailspin team is evolving towards here. To understand the different options for microservices on Azure, including Azure Functions, Kubernetes, and Service Fabric, please see [Choosing an Azure compute option for microservices](https://docs.microsoft.com/azure/architecture/microservices/design/compute-options).
-
-However, serverless isn't always appropriate for every situation. Stateful applications, for example, are not a good fit for serverless computing. Fortunately, Azure provides many different compute offerings that cover virtually every cloud scenario. For help finding the right one for your application, please see [Choose an Azure compute service for your application](https://docs.microsoft.com/azure/architecture/guide/technology-choices/compute-decision-tree).
+Azure Functions and other serverless technologies are not always the right fit for every solution. Later on we will discuss where you can find resources to help you select the right technology for the job.

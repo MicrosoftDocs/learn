@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.azdo.deploy-azure-functions
 metadata:
-  title: Automate Azure Function deployments with Azure Pipelines - Learn
+  title: Automate Azure Functions deployments with Azure Pipelines - Learn
   description: Learn to implement a CI/CD pipeline for Azure Functions.
   ms.date: 03/02/2020
   author: edkaim
@@ -9,12 +9,12 @@ metadata:
   ms.topic: interactive-tutorial
   #ms.learn-contact: v-edkaim
   ms.prod: learning-azure
-title: Automate Azure Function deployments with Azure Pipelines
+title: Automate Azure Functions deployments with Azure Pipelines
 summary: Learn to implement a CI/CD pipeline for Azure Functions.
 abstract: |
   In this module, you will:
-  - Create Azure resources to support a multi-tier web application and an Azure Function.
-  - Extend a basic release pipeline to also deploy an Azure Function.
+  - Create Azure resources to support a multi-tier web application and an Azure Function app.
+  - Extend a basic release pipeline to also deploy an Azure Function app.
   - Monitor the build, release, and deployment of the project.
 prerequisites: |
   - An Azure subscription
@@ -35,7 +35,7 @@ units:
 - learn.azdo.deploy-azure-functions.1-introduction
 - learn.azdo.deploy-azure-functions.2-what-is-azure-functions
 - learn.azdo.deploy-azure-functions.3-set-up-environment
-- learn.azdo.deploy-azure-functions.4-deploy-azure-function
+- learn.azdo.deploy-azure-functions.4-deploy-azure-functions
 - learn.azdo.deploy-azure-functions.5-clean-up-environment
 - learn.azdo.deploy-azure-functions.6-summary
 badge:
