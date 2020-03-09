@@ -186,7 +186,7 @@ For more information about working with Software Collections, view the following
 
 [https://access.redhat.com/documentation/en-us/red_hat_software_collections/2/html/2.4_release_notes/chap-rhscl](https://access.redhat.com/documentation/en-us/red_hat_software_collections/2/html/2.4_release_notes/chap-rhscl?azure-portal=true).
 
-> ![Important]
+> [!Important]
 > If you needed to use `scl enable` to run `python3 --version`, then you may need to enter this command each time you want to work in Python.  There are workarounds, but this is the intended functionality of Software Collections.  See the following article for a possible work-around: [https://access.redhat.com/solutions/527703](https://access.redhat.com/solutions/527703?azure-portal=true).
 
 ::: zone-end
@@ -201,8 +201,8 @@ The steps that follow will download the Python installer directly from the Pytho
 > [!NOTE]
 > At the time of this writing, Python 3.8.0 was the most current version, so that version is referenced specifically in the instructions.  However, you should install the latest version available to you.  In this case, the text of buttons and files might be slightly different from what you see.
 
-![Note]
-Alternatively, you can use Homebrew to install Python and Visual Studio Code.  For instructions, visit this URL instead:
+> [!Note]
+> Alternatively, you can use Homebrew to install Python and Visual Studio Code.  For instructions, visit this URL instead:
 [https://docs.brew.sh/Homebrew-and-Python](https://docs.brew.sh/Homebrew-and-Python?azure-portal=true)
 
 ### Step 1: Navigate to the Python downloads website and download the installer.

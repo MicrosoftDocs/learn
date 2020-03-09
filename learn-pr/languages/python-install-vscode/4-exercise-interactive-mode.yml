@@ -2,7 +2,7 @@
 uid: learn.languages.python-install-vscode.exercise-interactive-mode
 title: Use Python's interactive mode to write and execute code
 metadata:
-  title: Use Python's interactive mode to Write and execute code
+  title: Use Python's interactive mode to write and execute code
   description: Python's interactive mode is a great way to experiment with writing Python.
   ms.date: 3/2/2020
   author: bobtabor-msft
