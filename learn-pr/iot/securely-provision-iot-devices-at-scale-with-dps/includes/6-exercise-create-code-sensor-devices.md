@@ -391,7 +391,7 @@ This section adds code to send telemetry from a simulated sensor device.
 1. Change the &lt;your leaf path&gt; to the actual path to your leaf certificate.
 
     ```csharp
-          private static string s_certificateFileName = "C:\\Users\\<your user name>\\Documents\\cheesecave certs\\new-device.cert1.pfx";
+          private static string s_certificateFileName = "C:\\Users\\<your user name>\\Documents\\cheese cave certs\\new-device.cert1.pfx";
     ```
 
 1. Set the app running. In Visual Studio, select **Debug/Start without Debugging**. In Visual Studio Code, enter `dotnet run` in the terminal.
