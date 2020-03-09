@@ -31,7 +31,7 @@ Now you're ready to create your database and container. In this exercise, you'll
 
 In this exercise, you'll create an Azure Cosmos DB  database, and container using the C# and the .NET SDK for Azure Cosmos DB. 
 
-1. In the Azure portal, inside your Cosmos DB resource, select **Keys** . Copy the URI and PRIMARY KEY as you will use these values later.
+1. In the Azure portal, inside your Cosmos DB resource, select **Keys** . Copy the URI and PRIMARY KEY values as you'll need them later.
 
 2. Open the Azure Cloud Shell Bash shell and create a new .Net Console application
 
@@ -68,7 +68,7 @@ In this exercise, you'll create an Azure Cosmos DB  database, and container usin
      > [!div class="mx-imgBorder"]
     > ![Bash Shell and Code Editor](../media/5-azure-cosmos-db-new-shell-and-editor.png)
 
-7. Click on the myApp.csproj file. It will open on the right side of the editor. We will now add a new PropertyGroup XML element to the project configuration within the Project element. To add a new PropertyGroup, insert the following lines of code under the line that reads:
+7. Click on the myApp.csproj file. It will open on the right side of the editor. We'll now add a new PropertyGroup XML element to the project configuration within the Project element. To add a new PropertyGroup, insert the following lines of code under the line that reads:
 
     ```xml
     <PropertyGroup>
@@ -104,7 +104,7 @@ In this exercise, you'll create an Azure Cosmos DB  database, and container usin
     using Microsoft.Azure.Cosmos;
     ```
 
-10. We will now create a CosmosClient instance. This is the main "entry point" to using the SQL API in Azure Cosmos DB. Locate the Program class and replace it with the following class:
+10. We'll now create a CosmosClient instance. This is the main "entry point" to using the SQL API in Azure Cosmos DB. Locate the Program class and replace it with the following class:
 
     ```csharp
     public class Program
@@ -123,7 +123,7 @@ In this exercise, you'll create an Azure Cosmos DB  database, and container usin
 
     Replace the values YOUR_URI and YOUR_KEY with the values you obtained from your Cosmos DB resource on Step #1.
 
-12. Locate the **Main** method and add the following lines of code to creates a CosmosClient instance
+12. Locate the **Main** method and add the following lines of code to create a CosmosClient instance
 
     ```csharp
     using (CosmosClient client = new CosmosClient(_endpointUri, _primaryKey))
@@ -131,16 +131,16 @@ In this exercise, you'll create an Azure Cosmos DB  database, and container usin
     }
     ```
 
-13. Add the following code to the method to create a new Database instance if one does not already exist:
+13. Add the following code to the method to create a new Database instance if one doesn't already exist:
 
     ```csharp
     DatabaseResponse databaseResponse = await client.CreateDatabaseIfNotExistsAsync("EntertainmentDatabase");
     Database targetDatabase = databaseResponse.Database;
     ```
 
-    This code will check to see if a database exists in your Azure Cosmos DB account that meets the specified parameters. If a database that matches does not exist, it will create a new database
+    This code checks if a database with the specified parameters exists in your Azure Cosmos DB account. If a database that matches doesn't exist, it will create a new database
 
-14. Finally, add the following code to print out the ID of the database. The targetDatabase variable will have metadata about the database whether a new database is created or an existing one is read.
+14. Finally, add the following code to print out the ID of the database. The targetDatabase variable has metadata about the database whether a new database is created or an existing one is read.
 
     ```csharp
     await Console.Out.WriteLineAsync($"Database Id:\t{targetDatabase.Id}");
@@ -174,7 +174,7 @@ In this exercise, you'll create an Azure Cosmos DB  database, and container usin
     }
     ```
 
-    Notice you will have different values for YOUR_URI and YOUR_KEY.
+    Notice you'll have different values for YOUR_URI and YOUR_KEY.
 
 16. Close your Bash Code Editor by typing Ctrl+Q or selecting Close from the Editor menu in the upper right.
 
@@ -190,7 +190,7 @@ In this exercise, you'll create an Azure Cosmos DB  database, and container usin
     Database Id:    EntertainmentDatabase
     ```
 
-19. Now that your Database was created, you are ready to create a Container to store your documents. Locate the **using** block within the Main method and add the following code to create a new IndexingPolicy instance with a custom indexing policy configured:
+19. Now that your Database was created, you're ready to create a Container to store your documents. Locate the **using** block within the Main method and add the following code to create a new IndexingPolicy instance with a custom indexing policy configured:
 
     ```csharp
     IndexingPolicy indexingPolicy = new IndexingPolicy
@@ -210,14 +210,14 @@ In this exercise, you'll create an Azure Cosmos DB  database, and container usin
         IndexingPolicy = indexingPolicy
     };
     ```
-20. Add the following lines of code to create a new Container instance if one does not already exist within your database. Specify the previously created settings and a value for throughput:
+20. Add the following lines of code to create a new Container instance if one doesn't already exist within your database. Specify the previously created settings and a value for throughput:
 
     ```csharp
     var containerResponse = await targetDatabase.CreateContainerIfNotExistsAsync(containerProperties, 10000);
     var customContainer = containerResponse.Container;
     ```
     
-    This code will check to see if a container exists in your database that meets all of the specified parameters. If a container that matches does not exist, it will create a new container. Here is where we can specify the RU/s allocated for a newly created container. If this is not specified, the SDK has a default value for RU/s assigned to a container
+    This code will check to see if a container with the specified parameters exists in your database. If a container that matches doesn't exist, it will create a new container. Here is where we can specify the RU/s allocated for a newly created container. When not specified, the SDK has a default value for RU/s assigned to a container
 
 21. Add the following code to print out the ID of the container:
 
@@ -273,7 +273,7 @@ In this exercise, you'll create an Azure Cosmos DB  database, and container usin
     }
     ```
 
-    Notice you will have different values for YOUR_URI and YOUR_KEY.
+    Notice you'll have different values for YOUR_URI and YOUR_KEY.
 
 23. Close your Bash Code Editor by typing Ctrl+Q or selecting Close from the Editor menu in the upper right.
 
