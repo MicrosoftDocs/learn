@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.iot.automatically-provision-iot-devices-securely-and-at-scale-with-dps
+metadata:
+  title: Securely provision IoT devices at scale with DPS
+  description: In this module, create an Azure IoT Hub, and a DPS resource. Code for a number of simulated sensors is created, and the focus of the module is getting these devices securely provisioned and communicating with the hub, via a DPS group enrollment. The scenario is sensors in multiple cheese caves.
+  ms.date: 3/15/2020
+  author: PeterTurcan
+  ms.author: Olivier.Bloch
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Securely provision IoT devices at scale with DPS
+summary: >
+ In this module, create an Azure IoT Hub, and a DPS resource. Code for a number of simulated sensors is created, and the focus of the module is getting these devices securely provisioned and communicating with the hub, via a DPS group enrollment. The scenario is sensors in multiple cheese caves.
+abstract: | 
+  In this module, you will:
+  - Create a custom Azure IoT Hub, using the Azure portal
+  - Learn about device provisioning, X.509 certificates, and enrollments
+  - Create a DPS resource and a group enrollment, using the Azure portal
+  - Create an app to send device telemetry to your IoT Hub, using Visual Studio, or Visual Studio Code
+  - Test multiple devices are provisioned by your DPS resource
+prerequisites: | 
+  - An introductory knowledge of Azure IoT
+  - Ability to navigate the Azure IoT portal
+  - Ability to use C#, at the beginner level
+  - Experience using Visual Studio, or Visual Studio Code, at the beginner level
+iconUrl: /learn/achievements/iot/automatically-provision-iot-devices-securely-and-at-scale-with-dps.svg
+ratingEnabled: true
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure-iot-hub
+units:
+- learn.iot.automatically-provision-iot-devices-securely-and-at-scale-with-dps.introduction
+- learn.iot.automatically-provision-iot-devices-securely-and-at-scale-with-dps.create-iot-hub
+- learn.iot.automatically-provision-iot-devices-securely-and-at-scale-with-dps.overview-dps-x509-certificates-enrollments
+- learn.iot.automatically-provision-iot-devices-securely-and-at-scale-with-dps.exercise-create-dps-resource-root-certificate-group-enrollment
+- learn.iot.automatically-provision-iot-devices-securely-and-at-scale-with-dps.exercise-create-multiple-leaf-certificates
+- learn.iot.automatically-provision-iot-devices-securely-and-at-scale-with-dps.exercise-create-code-sensor-devices
+- learn.iot.automatically-provision-iot-devices-securely-and-at-scale-with-dps.exercise-test-multiple-devices-provision-correctly
+- learn.iot.automatically-provision-iot-devices-securely-and-at-scale-with-dps.summary
+badge:
+  uid: learn.iot.automatically-provision-iot-devices-securely-and-at-scale-with-dps.badge
