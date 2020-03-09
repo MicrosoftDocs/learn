@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.publish-app-with-maven-plugin-for-azure-web-apps.exercise-deploy-web-app-azure
+title: Exercise - Deploy your web app to Azure App Service
+metadata:
+  title: Exercise - Deploy your web app to Azure App Service
+  description: In this exercise, you'll deploy your web app to Azure App Service.
+  ms.date: 03/01/2020
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+interactive: bash
+azureSandbox: true
+content: |
+  [!include[](includes/5-exercise-deploy-web-app-azure.md)]
