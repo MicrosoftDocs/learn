@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.tm-create-a-threat-model-using-foundational-data-flow-diagram-elements.5-data-flow-the-data-in-transit-element
-title: Data-Flow - The Data in Transit Element
+title: Data-flow - The data in transit element
 metadata:
-  title: Data-Flow - The Data in Transit Element
+  title: Data-flow - The data in transit element
   description: The data-flow element in a data-flow diagram
   ms.date: 02/28/2020
   author: rodsan
