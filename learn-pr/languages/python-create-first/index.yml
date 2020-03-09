@@ -24,13 +24,13 @@ prerequisites: |
   - Visual Studio Code installed
   - Python tools for Visual Studio Code installed, as well as all recommended tools like pylint
 ratingEnabled: true
-iconUrl: /learn/achievements/python-create-first.svg
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
 roles:
 - developer
 products:
-- dotnet
+- vs
 units:
 - learn.languages.python-create-first.introduction
 - learn.languages.python-create-first.exercise-hello-world
