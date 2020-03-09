@@ -1,12 +1,12 @@
-You have a web app that needs to handle patients' healthcare-related data. You've been asked to ensure patients can securely access the data they need through the application. Patients should be allowed to use an existing social identity, such as Facebook or Twitter.
+You have a web app that needs to handle patient healthcare data. You've been asked to ensure patients can securely access the data they need through the application. Patients should be allowed to use an existing social identity, such as Facebook or Twitter.
 
-Here, you'll discover why you should use Azure Active Directory B2C. You'll also explore the concepts that will help you achieve customized and secure access for your patients.
+Here, you'll discover why you should use Azure Active Directory business-to-consumer (Azure AD B2C). You'll also explore the concepts that will help you achieve customized and secure access for your patients.
 
 ## Why should you use Azure Active Directory B2C?
 
 ![Azure AD B2C overview](../media/2-azureadb2c-overview.png)
 
-Azure Active Directory B2C (Azure AD B2C) is a service you use to manage customers' identities and their access to your applications. The service can support millions of users. Use Azure AD B2C to securely authenticate your customers through their preferred identity providers. Azure AD B2C can handle billions of authentications per day. Use the service to monitor for, and automatically take care of, threats like brute force and denial-of-service attacks. Azure AD B2C integrates with other services, such as Azure Application Insights. Use this integration to improve your applications' security and user experience.
+Azure AD B2C is a service you use to manage customer identities and their access to your applications. The service can support millions of users. Use Azure AD B2C to securely authenticate your customers through their preferred identity providers. Azure AD B2C can handle billions of authentications per day. Use the service to monitor for, and automatically take care of, threats like brute force and denial-of-service attacks. Azure AD B2C integrates with other services, such as Azure Application Insights. Use this integration to improve your application security and user experience.
 
 ### Configure user journeys through policies
 

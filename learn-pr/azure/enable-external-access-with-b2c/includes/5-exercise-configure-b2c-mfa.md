@@ -1,6 +1,6 @@
 You've been asked to integrate your healthcare application with Azure AD B2C. Azure AD B2C must handle all the patients' registration and sign-in processes for the application. Any user who attempts to access the healthcare application must also be challenged with multi-factor authentication.
 
-You'll now create a B2C tenant, register an application, and put together a sign-up and sign-in user flow. You'll enable multi-factor authentication to take advantage of its protection. Also, you'll try out patients' user experience by doing test runs for the user flow.
+You'll now create a B2C tenant, register an application, and put together a sign-up and sign-in user flow. You'll enable multi-factor authentication to take advantage of its protection. Also, you'll try out patient user experience by doing test runs for the user flow.
 
 ## Create your Azure AD B2C tenant
 

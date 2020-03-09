@@ -1,4 +1,4 @@
-Azure Active Directory B2C (Azure AD B2C) lets you manage how customers access your applications. 
+Azure Active Directory B2C (Azure AD B2C) lets you manage how customers access your applications.
 
 You're the solution architect for a healthcare organization. The organization is publishing an application that allows patients to view their health records. You'll implement a secure identity solution for the application to protect your patients' sensitive health data.
 
