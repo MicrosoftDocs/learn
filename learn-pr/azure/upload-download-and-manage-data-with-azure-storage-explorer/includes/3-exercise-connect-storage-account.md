@@ -52,7 +52,7 @@ You've now connected Storage Explorer to your Azure Subscription. Don't close th
 
     ```azurecli
     az storage account create \
-    --name  mslearn$RANDOM\
+    --name  mslearn$RANDOM \
     --resource-group <rgn>[sandbox resource group name]</rgn> \
     --sku Standard_GRS \
     --kind StorageV2 \
