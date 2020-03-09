@@ -1,6 +1,6 @@
 Azure Storage Explorer doesn't just access Azure Storage. It can also access data in Azure Cosmos DB and Azure Data Lake.
 
-You've worked through the basics of connecting Storage Explorer to your Azure account. In the customer relationship management system, your developers use Azure Cosmos DB for day-to-day operations, and Data Lake for big data storage. You want to use Storage Explorer to connect to both of these databases.
+You've worked through the basics of connecting Storage Explorer to your Azure account. In the CRM system, your developers use Azure Cosmos DB for day-to-day operations, and Data Lake for big data storage. You want to use Storage Explorer to connect to both of these databases.
 
 ## Use Storage Explorer to manage Azure Cosmos DB
 

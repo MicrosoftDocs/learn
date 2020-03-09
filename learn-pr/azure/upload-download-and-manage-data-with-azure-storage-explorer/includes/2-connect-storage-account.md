@@ -1,6 +1,6 @@
 Storage accounts provide a flexible solution that keeps data as files, tables, and messages. With Storage Explorer, it's easy to read and manipulate this data.
 
-You want to enable your engineers to manage the data stored in Azure Storage, so they can maintain the data that your customer relationship management application uses. You want to assess whether they can use Storage Explorer for this purpose.
+You want to enable your engineers to manage the data stored in Azure Storage, so they can maintain the data that your CRM application uses. You want to assess whether they can use Storage Explorer for this purpose.
 
 Here, you'll learn about Storage Explorer, and how you can use it to manage data from multiple storage accounts and subscriptions. You'll learn different ways of using Storage Explorer to connect to your data, Azure Stack, and data held in Azure Cosmos DB and Azure Data Lake.
 

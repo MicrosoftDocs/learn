@@ -1,6 +1,6 @@
 It's easy to browse through the contents of an Azure storage account by using Azure Storage Explorer.
 
-Now that you have a better understanding of the features and capabilities of Storage Explorer, you can try it for yourself. Use Storage Explorer to explore some of the files that your customer relationship management system stores in Azure Storage.
+Now that you have a better understanding of the features and capabilities of Storage Explorer, you can try it for yourself. Use Storage Explorer to explore some of the files that your CRM system stores in Azure Storage.
 
 Here, you'll try Storage Explorer by downloading, installing, and connecting to an Azure storage account. You'll create a blob and a queue in your storage account.
 
@@ -109,4 +109,4 @@ To create a queue in your storage account:
 
     ![Screenshot that shows the content and details of the new myblob blob container](../media/3-storage-explorer-create-queue-view.png)
 
-    From this view, you can manage the content of the queue. If our application used this queue and was experiencing an issue processing a message, you could connect to the queue and view the contents of a message to determine the issue.
+    From this view, you can manage the content of the queue. If our application used this queue and experienced an issue with processing a message, you could connect to the queue and view the contents of a message to determine the issue.

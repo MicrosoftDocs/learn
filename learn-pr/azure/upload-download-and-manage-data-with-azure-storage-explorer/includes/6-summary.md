@@ -1,4 +1,4 @@
-Your customer relationship management application is a complex system that stores data in Azure Storage, Azure Cosmos DB, and Azure Data Lake. You wanted an easy-to-use tool that helps your engineers to administer the data in the different Azure locations.
+Your CRM application is a complex system that stores data in Azure Storage, Azure Cosmos DB, and Azure Data Lake. You wanted an easy-to-use tool that helps your engineers to administer the data in the different Azure locations.
 
 You can use Azure Storage Explorer to give your developers a tool that manages and controls data stored in Azure, including Azure Cosmos DB and Azure Data Lake Gen1 and Gen2.
 

@@ -1,6 +1,6 @@
 Azure Storage Explorer isn't just about storage accounts. You can also use it to investigate and download data from Azure Cosmos DB or Azure Data Lake.
 
-You've seen how simple it is to create and manage blob and queue resources in your Azure storage account. Now you want to push your understanding further and see how the storage account connects to your developers' Cosmos DB database and data lake, which they use to store infrastructure data for the customer relationship management system.
+You've seen how simple it is to create and manage blob and queue resources in your Azure storage account. Now you want to push your understanding further and see how the storage account connects to your developers' Cosmos DB database and data lake, which they use to store infrastructure data for the CRM system.
 
 Here, you'll learn how to create a new Storage Explorer connection to Azure Cosmos DB, create a database, and populate it with content. Finally, you'll see how to connect to an Azure Data Lake Storage Gen2 account, create a container, and upload data into it. 
 
