@@ -1,71 +1,72 @@
-One of the biggest problems with security is being able to see all the areas you need to protect and to find vulnerabilities before hackers do. Azure provides a service which makes this much easier called Azure Security Center.
+An Azure Spring Cloud cluster can be created either using [the Azure portal](https://portal.azure.com/?WT.mc_id=azurespringcloud-mslearn-judubois) or [the Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest&WT.mc_id=azurespringcloud-mslearn-judubois). In this first module, we will configure the necessary tools, and create our first cluster.
 
-## What is Azure Security Center?
+## Set up the Azure CLI
 
-Azure Security Center (ASC) is a monitoring service that provides threat protection across all of your services both in Azure, and on-premises. It can:
+If it isn't already installed on your machine, install [the Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest&WT.mc_id=azurespringcloud-mslearn-judubois). You can check the version of your current Azure CLI installation by running:
 
-- Provide security recommendations based on your configurations, resources, and networks.
-- Monitor security settings across on-premises and cloud workloads and automatically apply required security to new services as they come online.
-- Continuously monitor all your services and perform automatic security assessments to identify potential vulnerabilities before they can be exploited.
-- Use machine learning to detect and block malware from being installed in your services and virtual machines. You can also allowlist applications to ensure that only the apps you validate are allowed to execute.
-- Analyze and identify potential inbound attacks and help to investigate threats and any post-breach activity which might have occurred.
-- Just-In-Time access control for ports, reducing your attack surface by ensuring the network only allows traffic you require.
+```bash
+az --version
+```
 
-ASC is part of the [Center for Internet Security](https://www.cisecurity.org/cis-benchmarks/) (CIS) recommendations.
+Ensure your Azure CLI is logged into your Azure subscription.
 
-## Activating Azure Security Center
+```bash
+az login # Sign into an azure account
+az account show # See the currently signed-in account.
+```
 
-Azure Security Center provides unified security management and advanced threat protection for hybrid cloud workloads and is offered in two tiers: Free and Standard. The free tier provides security policies, assessments, and recommendations while the Standard tier provides a robust set of features, including threat intelligence.
+Ensure your default subscription is the one you intend to use for this lab, and if not, set the subscription using:
 
-Given the benefits of ASC, the security team at your company has decided that it be turned on for all subscriptions at your office. You got an email this morning to turn it on for your applications - so let's look at how to do that.
+```bash
+az account set --subscription <SUBSCRIPTION_ID>
+```
 
-> [!IMPORTANT]
-> Azure Security Center is not supported in the free Azure sandbox. You can perform these steps in your own subscription, or just follow along to understand how to activate ASC.
+Install the `spring-cloud` extension for Azure CLI, by running:
 
-1. Open the [Azure portal](https://portal.azure.com?azure-portal=true) and select **Azure Security Center** from the left-hand menu, if you don't see it there, you can select **All services** and find **Security Center** in the security section as shown below.
+```bash
+az extension add -n spring-cloud -y
+```
 
-   ![Screenshot showing the All services pane with Security Center highlighted.](../media/2-ASC-Menu.png)
+**Congratulations, the Azure CLI is now ready to create your first cluster!**
 
-1. If you have never opened ASC, the pane will start on the **Getting started** entry which might ask you to upgrade your subscription. Ignore that for now, select **Skip** at the bottom of the page, and then select **Overview**.
-    - This will display the "big security picture" across all the elements available in your subscription.
-    - This has a ton of great information you can explore.
+## Create an Azure Spring Cloud instance
 
-1. Next, select **Coverage**, under "Policy and Compliance". This will display what subscription elements are being covered (or not covered) by ASC. Here you can turn on ASC for any subscription you have access to. Try switching between the three coverage areas: "Not covered", "Basic coverage" and "Standard coverage".
+In this section, we will create our Azure Spring Cloud instance using Azure CLI. It is possible to do exactly the same configuration using the Azure Portal.
 
-1. Subscriptions that are not covered will have a prompt to activate ASC. You can press the "Upgrade Now" button to enable ASC for all the resources in the subscription.
+First, you will need to come up with a name for your Azure Spring Cloud instance.
 
-![Screenshot showing the Upgrade now button in the Basic coverage tab of the Security Center - Coverage page.](../media/2-Upgrade-Now.png)
+- __The name must be unique among all Azure Spring Cloud instances across all of Azure__. Consider using your username as part of the name.
+- The name can contain only lowercase letters, numbers and hyphens. The first character must be a letter. The last character must be a letter or number. The value must be between 4 and 32 characters long.
 
-### Free vs. Standard pricing tier
+To limit typing, set the variable `RESOURCE_GROUP_NAME` to the name of the resource group created in the previous section. Set the variable `SPRING_CLOUD_NAME` to the name of the Azure Spring Cloud instance to be created:
 
-While you can use a free Azure subscription tier with ASC, it is limited to assessments and recommendations of Azure resources only. To really leverage ASC, you will need to upgrade to a Standard tier subscription as shown above. You can upgrade your subscription through the "Upgrade Now" button in the **Coverage** pane as noted above. You can also switch to the **Getting Started** pane in the ASC menu which will walk you through changing your subscription level. The pricing and features may change based on the region, you can get a full overview on the [pricing page](https://azure.microsoft.com/pricing/details/security-center/).
+> Be sure to substitute your own values for `RESOURCE_GROUP_NAME` and `SPRING_CLOUD_NAME` as described above. __`SPRING_CLOUD_NAME` must be globally unique.__
 
-> [!NOTE]
-> To upgrade a subscription to the Standard tier, you must be assigned the role of Subscription Owner, Subscription Contributor, or Security Admin.
+```bash
+RESOURCE_GROUP_NAME=spring-cloud-workshop
+SPRING_CLOUD_NAME=azure-spring-cloud-workshop
+```
 
-> [!IMPORTANT]
-> After the 30-day trial period is over, ASC Standard is priced at **$15/node per month** and will be billed to your account.
+With these variables set, you can now create your resource group:
 
-## Turning off Azure Security Center
+```bash
+az group create \
+    -g "$RESOURCE_GROUP_NAME"
+```
 
-For production systems, you will definitely want to keep Azure Security Center turned on so it can monitor all your resources for threats. However, if you are just playing with ASC and turned it on, you will likely want to disable it to ensure you are not charged. Let's do that now.
+And then create the Azure Spring Cloud instance:
 
-1. Open the [Azure portal](https://portal.azure.com?azure-portal=true) and select **Azure Security Center** from the left-hand menu, if you don't see it there, you can select **All services** and find **Security Center** in the security section as shown below.
+```bash
+az spring-cloud create \
+    -g "$RESOURCE_GROUP_NAME" \
+    -n "$SPRING_CLOUD_NAME"
+```
 
-    ![Screenshot showing the All services pane with Security Center highlighted.](../media/2-ASC-Menu.png)
+This command takes time to complete, you can continue reading while it completes.
 
-1. Select **Security Policy** from the left-hand menu.
+For the remainder of this workshop, we will be running Azure CLI commands referencing the same resource group and Azure Spring Cloud instance. So let's set them as defaults, so we don't have to specify them again:
 
-1. Next, select **Edit settings >**, next to the subscription for which you want to downgrade ASC.
-
-1. On the next screen select "Pricing Tier" from the left-hand menu.
-
-1. A new page will appear that looks like the image below. Click on the box on the left that says "Free (for Azure resources only)".
-
-    ![Screenshot showing free and standard pricing tiers options.](../media/2-Pricing-Tier.png)
-
-1. Press the **Save** button at the top of the screen.
-
-You have now downgraded your subscription to the free tier of Azure Security Center.
-
-Congratulations, you have taken your first (and most important) step to securing your application, data and network!
+```bash
+az configure --defaults group=${RESOURCE_GROUP_NAME}
+az configure --defaults spring-cloud=${SPRING_CLOUD_NAME}
+```

@@ -1,52 +1,85 @@
-Many developers consider the frameworks and libraries they use to build their software with to be primarily decided by features or personal preference. However, the framework that you choose is an important decision, not only from a design and functionality perspective but also from a _security_ perspective. Choosing a framework with modern security features and keeping it up-to-date is one of the best ways to ensure your apps are secure.
+In this module, we will build a [Spring Cloud Gateway](https://spring.io/projects/spring-cloud-gateway) and deploy it on Azure Spring Cloud.
 
-## Choose your framework carefully
+Gateways are used to route public HTTP traffic to microservices:
 
-The most important factor regarding security when choosing a framework is how well supported it is. The best frameworks have stated security arrangements and are supported by large communities who improve and test the framework. No software is 100% bug-free or totally secure, but when a vulnerability is identified, we want to be certain that it will be closed or have a workaround provided quickly.
+- They handle the routing logic.
+- They secure the access to the microservices (which will not be publicly available).
+- They can also have Quality of Service (QoS) capabilities, like doing HTTP rate limiting.
 
-Often "well supported" is synonymous with "modern". Older frameworks tend to either be replaced or eventually fade in popularity. Even if you have significant experience with (or many apps written in) an older framework, you'll be better off choosing a modern library that has the features you need. Modern frameworks tend to build on the lessons learned by earlier iterations which makes choosing them for new apps a form of threat surface reduction. You will have one more app to worry about if a vulnerability is discovered in the older framework that your legacy applications are written in.
+## Create a Spring Cloud Gateway
 
-For more information on secure design and reducing threat surface, see [Design For Security in Azure](https://docs.microsoft.com/learn/modules/design-for-security-in-azure/).
+To create our gateway, we will use [https://start.spring.io/](https://start.spring.io/) with the command line:
 
-## Keep your framework updated
+```bash
+curl https://start.spring.io/starter.tgz -d dependencies=cloud-gateway,cloud-eureka,cloud-config-client -d baseDir=gateway -d bootVersion=2.2.5.RELEASE | tar -xzvf -
+```
 
-Software development frameworks, such as Java Spring and .NET Core release updates and new versions regularly. These updates include new features, removal of old features, and often security fixes or improvements. When we allow our frameworks to become out of date, it creates "technical debt". The further out of date we get, the harder and riskier it will be to bring our code up to the latest version. In addition, much like the initial framework choice, staying on older versions of the framework open you up to more security threats which have been fixed in newer releases of the framework.
+> We use the `Cloud Gateway`, `Eureka Discovery Client` and the `Config Client` components.
 
-As an example, from 2016-2017, [over 30 vulnerabilities](https://www.cvedetails.com/product/6117/Apache-Struts.html?vendor_id=45) were found in the Apache Struts framework. These were quickly addressed by the development team, but some companies didn't apply the patches and [paid the price in the form of a data breach](https://www.zdnet.com/article/equifax-confirms-apache-struts-flaw-it-failed-to-patch-was-to-blame-for-data-breach/). **Make sure to keep your frameworks and libraries up-to-date**.
+## Add a "cloud" Maven profile
 
-### How do I update my framework?
+To deploy to Azure Spring Cloud, we add a "cloud" Maven profile like in the previous module.
 
-Some frameworks, like Java or .NET, require an install and tend to release on a known cadence. It's a good idea to watch for new releases and plan to make a branch of your code to try it out when it's released. As an example, .NET Core maintains a [release notes page](https://github.com/dotnet/core/tree/master/release-notes) which you can check to find the latest versions available.
+At the end of the application's `pom.xml` file (just before the closing `</project>` XML node), add the following code:
 
-More specialized libraries such as JavaScript frameworks, or .NET components can be updated through a package manager. **NPM** and **Webpack** are popular choices for web projects and are supported by most IDEs or build tools. In .NET, we use **NuGet** to manage our component dependencies. Much like updating the core framework, branching your code, updating the components and testing is a good technique to validate a new version of a dependency.
+```xml
+    <profiles>
+        <profile>
+            <id>cloud</id>
+            <dependencies>
+                <dependency>
+                    <groupId>com.microsoft.azure</groupId>
+                    <artifactId>spring-cloud-starter-azure-spring-cloud-client</artifactId>
+                    <version>2.2.0</version>
+                </dependency>
+            </dependencies>
+        </profile>
+    </profiles>
+```
 
-> [!NOTE]
-> The `dotnet` command-line tool has an `add package` and `remove package` option to add or remove NuGet packages but doesn't have a corresponding `update package` command. However, it turns out you can run `dotnet add package <package-name>` in your project and it will automatically _upgrade_ the package to the latest version. This is an easy way to update dependencies without having to open the IDE.
+## Configure the application
 
-## Take advantage of built-in security
+In the `src/main/resources/application.properties` configuration file, add the following property:
 
-Always check to see what security features your frameworks offer. **Never** roll your own security if there's a standard technique or capability built in. In addition, rely on proven algorithms and workflows because these have often been scrutinized by many experts, critiqued and strengthened so you can be assured that they are reliable and secure.
+```yaml
+spring.cloud.gateway.discovery.locator.enabled=true
+```
 
-The .NET Core framework has countless security features, here are a few core starting places in the documentation.
-* [Authentication -Identity Management](https://docs.microsoft.com/aspnet/core/security/authentication/index?view=aspnetcore-2.1)
-* [Authorization](https://docs.microsoft.com/aspnet/core/security/authorization/index?view=aspnetcore-2.1)
-* [Data Protection](https://docs.microsoft.com/aspnet/core/security/data-protection/index?view=aspnetcore-2.1)
-* [Secure Configuration](https://docs.microsoft.com/aspnet/core/security/data-protection/configuration/index?view=aspnetcore-2.1)
-* [Security Extensibility APIs](https://docs.microsoft.com/aspnet/core/security/data-protection/extensibility/index?view=aspnetcore-2.1)
+- The `spring.cloud.gateway.discovery.locator.enabled=true` part is to configure Spring Cloud Gateway to use the Spring Cloud Service Registry to discover the available microservices.
 
-Each one of these features was written by experts in their field, and then battered with tests to ensure that it works as intended, and only as intended. Other frameworks offer similar features - check with the vendor that provides the framework to find out what they have in each category.
+## Create the application on Azure Spring Cloud
 
-> [!WARNING]
-> Writing your own security controls, instead of using those provided by your framework, is not only wasting time, it's less secure.
+As in the previous module, create a specific `gateway` application in your Azure Spring Cloud instance. As this application is a gateway, we add the `--is-public true` flag so it is exposed publicly.
 
+```bash
+az spring-cloud app create -n gateway --is-public true
+```
 
-## Azure Security Center
+## Deploy the application
 
-When using Azure to host your web applications, Security Center will warn you if your frameworks are out of date as part of the recommendations tab.  Don't forget to look there from time to time to see if there are any warnings related to your apps.
+You can now build your "gateway" project and send it to Azure Spring Cloud:
 
-![Azure Security Center recommending a framework upgrade.](../media/5-ASCFramework.png)
+```bash
+cd gateway
+./mvnw clean package -DskipTests -Pcloud
+az spring-cloud app deploy -n gateway --jar-path target/demo-0.0.1-SNAPSHOT.jar
+cd ..
+```
 
+## Test the project in the cloud
 
-## Summary
+- Go to "Apps" in your Azure Spring Cloud instance.
+  - Verify that `gateway` has a `Discovery status` which says `UP(1),DOWN(0)`. This shows that it is correctly registered in the Spring Cloud Service Registry.
+  - Select `gateway` to have more information on the microservice.
+- Copy/paste the public URL that is provided (there is a "Test Endpoint" like for microservices, but the gateway is directly exposed on the Internet, so let's use the public URL). Keep this URL handy for subsequent sections.
 
-Whenever possible, choose a modern framework to build your apps, always use the built-in security features, and make sure you keep it up-to-date. These simple rules will help to ensure your application starts on a solid foundation.
+As the gateway is connected to the Spring Cloud Service Registry, it should have automatically opened routes to the available microservices, with URL paths in the form of `/MICROSERVICE-ID/**`:
+[The MICROSERVICE-ID must be in capital letters]
+
+Test the `todo-service` microservice endpoint by doing: `curl https://XXXXXXXX-gateway.azuremicroservices.io/TODO-SERVICE/` (replacing XXXXXXXX with the name of your Azure Spring Cloud instance)
+
+As in the previous module, the result of this command should be the three items that were initially inserted in the Cosmos DB database:
+
+```json
+[{"id":"1","description":"First item","done":true},{"id":"2","description":"Second item","done":true},{"id":"3","description":"Third item","done":false}]
+```

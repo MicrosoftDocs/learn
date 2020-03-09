@@ -16,11 +16,19 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: "True or false: Azure Security Center works for Azure resources and on-premises resources."
+  - content: "True or false: you need to use the Azure CLI to create an Azure Spring Cloud cluster"
+    choices:
+    - content: "True"
+      isCorrect: false
+      explanation: "An Azure Spring Cloud cluster can be created either using the Azure CLI or the Azure Portal."
+    - content: "False"
+      isCorrect: true
+      explanation: "An Azure Spring Cloud cluster can also be created using the Azure Portal."
+  - content: "The name of an Azure Spring Cloud cluster should be unique across all of Azure"
     choices:
     - content: "True"
       isCorrect: true
-      explanation: "Azure Security Center can monitor all your services, both in Azure and on premises."
+      explanation: "The name of an Azure Spring Cloud cluster should be unique across all of Azure."
     - content: "False"
       isCorrect: false
-      explanation: "Azure Security Center is not limited to Azure-hosted resources."
+      explanation: "The name of an Azure Spring Cloud cluster should be unique across all of Azure."

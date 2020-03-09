@@ -1,58 +1,68 @@
-The most prevalent security weakness of current applications is a failure to correctly process data that is received from external sources, particularly _user input_. You should always take a close look at any input to make sure it has been validated before it is used. Failing to analyze user input for possible attacks can result in data loss or exposure, elevation of privilege, or even execution of malicious code on other users' computers.
+In this module, you will configure a [Spring Cloud Config Server](https://cloud.spring.io/spring-cloud-config), that will be entirely managed and supported by Azure Spring Cloud, to be used by Spring Boot microservices.
 
-The tragedy in this situation is that this scenario an easy problem to solve. In this unit we will cover how to treat data; when it's received, when it's displayed on the screen, and when it's stored for later use.
+This Spring Cloud Config Server will get its configuration data from a Git repository, where Spring Boot configuration files will be stored. Storing configuration files using this mechanism has the following advantages:
 
-## Why do we need to validate our input?
+- Your application's sensitive parameters (like your database password) will not be checked into your application code.
+- The Git repository storing your configuration can be specifically secured, so that only a your operations team has access to it.
+- As the configuration files are stored in Git, you can tag them or rollback them, making it easy to manage your production environment.
+- It provides a centralized place to store all your configuration data, for all your microservices.
 
-Imagine that you are building an interface to allow a user to create an account on your website. Our profile data includes a name, email, and a nickname that we will display to everyone who visits the site. What if a new user creates a profile and enters a nickname that includes some SQL commands? For example - what if a malicious user enters something like the following excerpt:
+## Create a Git repository for storing the application configuration
 
-```sql
-Eve'); DROP TABLE Users;--
+On your [GitHub account](https://github.com), create a new **private** repository where the Spring Boot configurations will be stored.
+
+In the new private GitHub repository, add a new `application.yml` file which will store configuration data for all our microservices.
+
+Typically, each Spring Boot application includes such a file within the application binaries to contain application settings. A Spring Cloud Configuration Server allow such settings to be stored outside your application, which provides the following benefits:
+
+- It allows to store sensitive parameters (like your database password) outside of your application.
+- Your configuration is stored in a Git repository, so its data can be tagged or rollbacked.
+- It uses a specific Git repository, which can be secured separately.
+- It provides a centralized place to store all your configuration data, for all your microservices.
+
+For the moment, our `application.yml` will just store a message to check if the configuration is successful:
+
+```yaml
+application:
+    message: Configured by Azure Spring Cloud
 ```
 
-If we blindly insert this value into a database, it could potentially alter the SQL statement to execute commands we absolutely don't want to run! This example is referred to as a "SQL Injection" attack, which is one of the _many_ types of exploits that can potentially be done when you don't properly handle user input. So, what can we do to fix this situation? This unit will teach you when to validate input, how to encode output, and how to create parameterized queries (which solves the above exploit). These techniques are the three main defense techniques against malicious input being entered into your applications.
+Commit and push the new file:
 
-## When do I need to validate input?
-
-The answer is _always_. You must validate **every** input for your application. This includes parameters in the URL, input from the user, data from the database, data from an API and anything that is passed in the clear that a user could potentially manipulate. Always use an _allow list_ approach, which means you only accept "known good" input, instead of a _deny list_ (where you specifically look for bad input) because it's impossible to think of a complete list of potentially dangerous input.  Do this work on the server, not the client-side (or in addition to the client-side), to ensure that your defenses cannot be circumvented. Treat **ALL** data as untrusted and you will protect yourself from most of the common web app vulnerabilities.
-
-If you are using ASP.NET, the framework provides [great support for validating input](https://docs.microsoft.com/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites) on both the client and server side.
-
-If you are using another web framework, there are some great techniques for doing input validation available on the [OWASP Input Validation Cheatsheet](https://www.owasp.org/index.php/Input_Validation_Cheat_Sheet).
-
-
-## Always use parameterized queries
-
-SQL databases are commonly used to store data; for example - your application could store user profile information in a database. Yous should never create inline SQL or other database queries in your code using raw user input and send it directly to the database; this behavior is a recipe for disaster, as we saw above.
-
-For example - **do not** create code like the following inline SQL example:
-
-```csharp
-string userName = Request.QueryString["username"]; // receive input from the user BEWARE!
-...
-string query = "SELECT *  FROM  [dbo].[users] WHERE userName = '" + userName + "'";
+```bash
+git add application.yml
+git commit -m 'Add new Spring Boot configuration file'
+git push
 ```
 
-Here we concatenate text strings together to create the query, taking the input from the user and generating a dynamic SQL query to look up the user. Again, if a malicious user realized we were doing this, or just _tried_ different input styles to see if there was a vulnerability, we could end up with a major disaster. Instead, use parameterized SQL statements or stored procedures such as this:
+## Create a GitHub personal token
 
-```sql
--- Lookup a user
-CREATE PROCEDURE sp_findUser
-(
-@UserName varchar(50)
-)
+Azure Spring Cloud can access Git repositories that are public, secured by SSH, or secured using HTTP basic authentication. We will use that last option, as it is easier to create and manage with GitHub.
 
-SELECT *  FROM  [dbo].[users] WHERE userName = @UserName
-```
+Follow the [GitHub guide to create a personal token](https://help.github.com/en/articles/creating-a-personal-access-token-for-the-command-line) and save your token. When asked to select scopes, check off the entire "repo" section (as shown below) and nothing else.
 
-With this method you can invoke the procedure from your code safely, passing it the `userName` string without worrying about it being treated as part of the SQL statement.
+![GitHub personal access token](media/3-github-personal-access-token.png)
 
-## Always encode your output
+Once the token is generated, leave that tab open until the end of this section.
 
-Any output you present either visually or within a document should always be encoded and escaped. This can protect you in case something was missed in the sanitization pass, or the code accidentally generates something that can be used maliciously. This desigh principle will make sure that everything is displayed as _output_ and not inadvertently interpreted as something that should be executed, which is another common attack technique that is referred to as "Cross-Site Scripting" (XSS).
+## Configure Azure Spring Cloud to access the Git repository
 
-Since XSS prevention is a common application requirement, this security technique is another area where ASP.NET will do the work for you. By default, all output is already encoded. If you are using another web framework, you can verify your options for output encoding on websites with the [OWASP XSS Prevention Cheatsheet](https://www.owasp.org/index.php/XSS_(Cross_Site_Scripting)_Prevention_Cheat_Sheet).
+- Go to [the Azure portal](https://portal.azure.com/?WT.mc_id=azurespringcloud-mslearn-judubois).
+- Go to the overview page of your Azure Spring Cloud server and select "Config server" in the menu
+- Configure the repository we previously created:
+  - Add the repository URL, for example `https://github.com/<YOUR_USERNAME>/azure-spring-cloud-config.git`.
 
-## Summary
+     >💡 Make you include the `.git` ending in the URL.
 
-Sanitizing and validating your input is a necessary requirement to ensure your input is valid and safe to use and store. Most modern web frameworks offer built-in features that can automate some of this work. You can check your preferred framework's documentation and see what features it offers. While web applications are the most common place where this happens, keep in mind that other types of applications can be just as vulnerable. Don't think you're safe just because your new application is a desktop app. You will still need to properly handle user input to ensure someone doesn't use your app to corrupt your data, or damage your company's reputation.
+  - Click on `Authentication` and select `HTTP Basic`
+  - The __username__ is your GitHub login name
+  - The __password__ is the personal token we created in the previous section
+- Click on "Apply" and wait for the operation to succeed
+
+![Spring Cloud config server](media/3-config-server.png)
+
+## Review
+
+We have now created a private configuration repository. We have enabled Azure Spring Cloud to create a configuration server with the configuration files from this repository.
+
+In the next section, we will create an application that consumes this configuration, specifically the custom message we defined in `application.yml`.

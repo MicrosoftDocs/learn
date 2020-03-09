@@ -1,13 +1,15 @@
-Security is top-of-mind for most people working in technology, and this is especially true when it comes to software. It seems we are constantly hearing about companies and governments that we entrusted our private data to, being compromised. When this happens - either maliciously or accidentally, it costs them customers and, ultimately money.
+Azure Spring Cloud (ASC) is a managed service to run Spring Boot microservices, jointly created and supported by Microsoft and Pivotal.
 
-Did you know that the most common cause of data breaches is poor security in software? It's true.  This means that the pressure is on for software developers to be more diligent than ever. But where do they begin? This module is the start of your journey into the world of application security, with the top five defenses for web applications. Learn how to secure your web applications on Azure and protect your apps against the most common and dangerous web application attacks.
+This workshop is a condensed version of our [full Azure Spring Cloud training](https://github.com/microsoft/azure-spring-cloud-training), and it is aimed at making you get started using Azure Spring Cloud in one hour and a half, providing you the key concepts and tools.
 
 ## Learning objectives
 
 In this module, you will:
 
-* Use Azure Security Center
-* Verify your application's inputs and outputs
-* Store your secrets into Key Vault
-* Ensure you are using the latest version of your framework, and its security features
-* Validate that your program dependencies and libraries are safe to use
+* Set up an Azure Spring Cloud cluster
+* Learn to configure a Spring Cloud Config Server
+* Learn to use a Spring Cloud Discovery Server
+* Configure service binding
+* Create and deploy a Spring Boot microservice
+* Create and deploy a Spring Cloud Gateway
+* Configure a GitHub Actions workflow to automate your deployment

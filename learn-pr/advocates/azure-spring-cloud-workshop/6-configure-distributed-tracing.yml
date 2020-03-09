@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-spring-cloud-workshop.6-configure-distributed-tracing
+title: Configure distributed tracing
+metadata:
+  title: Configure distributed tracing
+  description: Configure distributed tracing
+  author: judubois
+  ms.author: judubois
+  ms.date: 03/04/2020
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-configure-distributed-tracing.md)]

@@ -16,44 +16,35 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'Which of the following data sources need to be validated?'
+  - content: 'On Azure Spring Cloud, which security mechanisms do Spring Cloud Config Server support?'
     choices:
-    - content: 'Data from a 3rd party API'
+    - content: 'Only HTTP basic authentication'
       isCorrect: false
-      explanation: 'This is just one of many sources that needs to be validated.'
-    - content: 'Data from the URL parameter'
-      isCorrect: false
-      explanation: 'This is just one of many sources that needs to be validated'
-    - content: 'Data collected from the user via an input field'
-      isCorrect: false
-      explanation: 'This is just one of many sources that needs to be validated.'
-    - content: 'All of the above'
+      explanation: 'Spring Cloud Config Server can also access Git repositories that are public and secured by SSH.'
+    - content: 'Public, secured by SSH, or secured using HTTP basic authentication'
       isCorrect: true
-      explanation: 'All these sources of data need to be validated. Never trust any data that could have been modified.'
+      explanation: 'Spring Cloud Config Server can access Git repositories that are public, secured by SSH, or secured using HTTP basic authentication.'
+    - content: 'Secured by SSH, or secured using HTTP basic authentication'
+      isCorrect: false
+      explanation: 'Spring Cloud Config Server can also access Git repositories that are public.'
+    - content: 'Only publicly-available (unsecured) Git repositories'
+      isCorrect: false
+      explanation: 'Spring Cloud Config Server can also access Git repositories that are secured by SSH or secured using HTTP basic authentication.'
 
-  - content: 'Parameterized queries (stored procedures in SQL) are a secure way to talk to the database because:'
+  - content: 'Using Spring Cloud Config is a great solution as:'
     choices:
-    - content: 'They are more organized than inline database commands, and therefore less confusing for users.'
+    - content: 'It uses Git, so your configuration data can be tagged or rollbacked.'
       isCorrect: false
-      explanation: 'Organization of the code is not the reason that parameterized queries are more secure than inline SQL.'
-    - content: 'There is a clear outline of the script in the stored procedure, ensuring better visibility.'
+      explanation: 'This is correct, but it is not the only reason why this is a good idea.'
+    - content: 'Configuration is stored in a specific Git repository, which can be secured separately.'
       isCorrect: false
-      explanation: 'Clear outline of the script is not the reason that parameterized queries are more secure than inline SQL.'
-    - content: 'Parameterized queries substitute variables before running queries, meaning it avoids the opportunity for code to be submitted in place of a variable.'
+      explanation: 'This is correct, but it is not the only reason why this is a good idea.'
+    - content: 'It provides a centralized place to store all your configuration data, for all your microservices.'
+      isCorrect: false
+      explanation: 'This is correct, but it is not the only reason why this is a good idea.'
+    - content: 'It allows to store sensitive parameters (like your database password) outside of your application.'
+      isCorrect: false
+      explanation: 'This is correct, but it is not the only reason why this is a good idea.'
+    - content: 'All of the above.'
       isCorrect: true
-      explanation: 'Parameter fields used in parameterized queries are treated as data, not code, protecting against injection vulnerabilities. For more information on how to implement parameterized queries please see the [OWASP Query Parameterization Cheat Sheet]( https://www.owasp.org/index.php/Query_Parameterization_Cheat_Sheet).'
-
-  - content: 'Which of the following data needs to be output encoded?'
-    choices:
-    - content: 'Data saved to the database'
-      isCorrect: false
-      explanation: 'Although data saved to the database needs to be validated to ensure the data is good, we do not need to encode it for output.'
-    - content: 'Data to be output to the screen'
-      isCorrect: true
-      explanation: 'Data sent to the screen needs to be output encoded to ensure it is never interpreted as code.'
-    - content: 'Data sent to a 3rd party API'
-      isCorrect: false
-      explanation: 'Although data sent to a 3rd party API needs to be validated to ensure the data is good, we do not need to encode it for output.'
-    - content: 'Data in the URL parameters'
-      isCorrect: false
-      explanation: 'Although data from URL Parameters needs to be validated before it is used in our application, we do not need to encode it for output.'
+      explanation: 'Spring Cloud Config allows to store your sensitive data in a separate, centralized and secured Git repository.'
