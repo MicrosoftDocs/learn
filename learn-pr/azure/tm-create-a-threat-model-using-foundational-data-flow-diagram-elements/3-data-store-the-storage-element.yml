@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.tm-create-a-threat-model-using-foundational-data-flow-diagram-elements.3-data-store-the-storage-element
-title: Data Store - The Storage Element
+title: Data store - The storage element
 metadata:
-  title: Data Store - The Storage Element
+  title: Data store - The storage element
   description: The data store element in a data-flow diagram
   ms.date: 02/28/2020
   author: rodsan
