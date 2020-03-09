@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.languages.python-introduction.what-is-programming
+uid: learn.languages.python-introduction.understanding-programming
 title: What is programming?
 metadata:
   title: What is programming?
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 4
 content: |
-  [!include[](includes/2-what-is-programming.md)]
+  [!include[](includes/2-understanding-programming.md)]
