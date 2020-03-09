@@ -26,9 +26,9 @@ products:
 - vs
 units:
 - learn.languages.python-introduction.introduction
-- learn.languages.python-introduction.understanding-programming
-- learn.languages.python-introduction.understanding-compilation
-- learn.languages.python-introduction.understanding-process-programming
+- learn.languages.python-introduction.understand-programming
+- learn.languages.python-introduction.understand-compilation
+- learn.languages.python-introduction.understand-process-programming
 - learn.languages.python-introduction.knowledge-check
 - learn.languages.python-introduction.summary
 
