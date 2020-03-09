@@ -57,7 +57,7 @@ pylint is one of the more popular Python linters.  A *linter* is a useful tool t
 
 The Python extension for Visual Studio Code will recommend you install pylint and will handle most of the details required for installation.
 
-To initiate installation, you'll create a new file with a .py file extension which will trigger a pop up message with an easy install button.  We'll begin that process in the next step.
+To initiate installation, you'll create a new file with a .py file extension, which will trigger a pop-up message with an easy install button.  We'll begin that process in the next step.
 
 > [!NOTE]
 > In this module, we'll merely create a file as a means of triggering the Python extension for Visual Studio Code to display a pop up message to initiate the installation of pylint.  We will not use the file in this module, but will learn how to write and execute a code file in the next module titled "Create your First Python Program".
@@ -71,7 +71,7 @@ The Explorer displays two sections:
 - `Open Editors` displaying all of the tabs visible in the main area.
 - The name of the current working folder
 
-However, since this is the first time you've open Visual Studio Code, you will see a section titled "No Folder Openend" instead.  Below this header, you'll see the message "You have not yet opened a folder" and an **Open Folder** button.
+However, since this is the first time you've open Visual Studio Code, you will see a section titled "No Folder Opened" instead.  Below this header, you'll see the message "You have not yet opened a folder" and an **Open Folder** button.
 
 ### Step 5 - Create a new Working folder
 
@@ -89,14 +89,14 @@ In the main area, the new file appears.
 
 It's likely that you'll see one or more pop-up messages appear in the lower right-hand corner of Visual Studio Code.
 
-### Step 7 - Initiate the pylint installation from the pop up
+### Step 7 - Initiate the pylint installation from the pop-up
 
-In this step, we'll focus on the pop up with the message "Linter pylint is not installed".
+In this step, we'll focus on the pop-up with the message "Linter pylint is not installed".
 
 > [!NOTE]
 > Installing pylint is optional.  If you have a specific reason to not install it, use the `x` icon to close the pop-up message.
 
-To install pylint click **Install**.  Visual Studio Code's terminal window will open below your code file.  A command-line utility named **pip** is used to install pylint.
+To install pylint, click **Install**.  Visual Studio Code's terminal window will open below your code file.  A command-line utility named **pip** is used to install pylint.
 
 ::: zone pivot="linux"
 
@@ -117,11 +117,11 @@ sudo pip3 install pylint
 ::: zone-end
 
 
-## Step 8 - Address other pop up messages
+### Step 8 - Address other pop-up messages
 
-You may see other pop up messages appear.
+You may see other pop-up messages appear.
 
-The most critical of these messages is: "No Python interpretter is selected.  You need to select a Python interpreter to enable features such as IntelliSense, linting, and debugging."
+The most critical of these messages is: "No Python interpreter is selected.  You need to select a Python interpreter to enable features such as IntelliSense, linting, and debugging."
 
 If you click **Select Python Interpreter**, you will see a list of Python interpreters displayed near the top of Visual Studio Code in the command bar.  Click on the most recent version you have installed, making sure that it is at least version 3.
 
@@ -133,4 +133,4 @@ This message just alerts you to the fact that you have an interpreter selected, 
 
 Click **Got it!** to dismiss, or **Do not show again** to permanently disable this tip.
 
-Once you've addressed all of the pop up messages, you've successfully set up the Python extension for Visual Studio Code and are ready to begin writing Python code!
+Once you've addressed all of the pop-up messages, you've successfully set up the Python extension for Visual Studio Code and are ready to begin writing Python code!

@@ -20,7 +20,7 @@ abstract: |
   - Execute your Python script file code using Python's command-line tools
 prerequisites: None
 ratingEnabled: true
-iconUrl: /learn/achievements/python-install-vscode.svg
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
 roles:

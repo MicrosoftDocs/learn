@@ -4,7 +4,7 @@ If you determined that you already have Python 3 installed, scroll to the bottom
 
 ::: zone pivot="windows"
 
-### Install Python on Windows
+## Install Python on Windows
 
 At the time this module was written, Python 3.8 is the latest version of Python available, so we'll be referring to that version in the following instructions.
 
@@ -13,7 +13,7 @@ Also, these instructions are specifically for Windows 10.  If you're using a pre
 > [!NOTE]
 > At the time of this writing, Python 3.8.0 was the most current version, so that version is referenced specifically in the instructions.  However, you should install the latest version available to you.  In this case, the text of buttons and files might be slightly different from what you see.
 
-#### Step 1 - Download the Python 3.8 installer for Windows.
+### Step 1 - Download the Python 3.8 installer for Windows.
 
 Open a web browser and navigate to:
 
@@ -21,13 +21,13 @@ Open a web browser and navigate to:
 
 Click the button with the text "Download Python 3.x".  When your browser prompts you to save the file, take note of the download path, then save it to your local hard drive.  Most web browsers save downloaded files into your `Downloads` folder.
 
-#### Step 2 - Locate and run the installer application.
+### Step 2 - Locate and run the installer application.
 
 Depending on which web browser you use, you may have the option to execute the file immediately after it has successfully downloaded.  
 
 If not, you can open Windows Explorer, navigate to the download path from the previous step, then double-click the file.  The file's name should be `python-3.8.0.exe`.
 
-#### Step 3 - Choose options and begin the installation process.
+### Step 3 - Choose options and begin the installation process.
 
 After the installer's dialog appears, add a check to the option `Add Python 3.8 to PATH`.
 
@@ -43,17 +43,17 @@ The second page of options is titled "Advanced Options".  Near the bottom, you c
 
 Once you're satisfied with the path, select the `Install` button.
 
-#### Step 4 - Accept the User Account Control dialog.
+### Step 4 - Accept the User Account Control dialog.
 
 Next you'll see Windows' User Account Control dialog, which asks "Do you want to allow this app to make changes to your device?"
 
 Select the `Yes` button to continue.
 
-#### Step 5 - Close the installer.
+### Step 5 - Close the installer.
 
 Click the `Close` button.
 
-#### Step 6 - Check your installation.
+### Step 6 - Check your installation.
 
 To confirm that Python 3 is installed correctly, type the following command at the bash prompt and select the <kbd>Enter</kbd> key on your keyboard:
 
@@ -80,7 +80,7 @@ As you're likely aware, different Linux distributions use different package mana
 
 We provide instructions for `apt` and `yum` below.  If your distribution of Linux uses a different package manager, you may need to perform a search for: `[your Linux distribution] install python 3`.
 
-## `apt`
+## Install using `apt`
 
 ### Step 1 - Open a Terminal window.
 
@@ -124,7 +124,7 @@ As long as the first number is `3`, then Python 3 was successfully installed on 
 
 However, if the installation failed, you may see an error message.  Use a search engine and type the exact error message into the search bar to find possible causes and solutions.
 
-## `yum`
+## Install using `yum`
 
 The YUM package manager is used primarily by Red Hat based systems, like Red Hat Enterprise Linux and Fedora, as well as CentOS.  If your system doesn't have `apt` installed, you can try `yum` instead. 
 
@@ -166,7 +166,7 @@ As long as the first number is `3`, then Python 3 was successfully installed on 
 
 However, if the installation failed you may see an error message.  If this happens, continue on to Step 5, below.
 
-#### Step 5 - (Optional) Enable the Software Collections feature in bash
+### Step 5 - (Optional) Enable the Software Collections feature in bash
 
 Software Collections allow you to install multiple versions of the same software components on your system.  Therefore, you must specify which version of Python you want to run in the shell.  Enter the following command at the bash prompt and select the <kbd>Enter</kbd> key on your keyboard:
 
@@ -186,15 +186,15 @@ For more information about working with Software Collections, view the following
 
 [https://access.redhat.com/documentation/en-us/red_hat_software_collections/2/html/2.4_release_notes/chap-rhscl](https://access.redhat.com/documentation/en-us/red_hat_software_collections/2/html/2.4_release_notes/chap-rhscl?azure-portal=true).
 
-![Important]
-If you needed to use `scl enable` to run `python3 --version`, then you may need to enter this command each time you want to work in Python.  There are workarounds, but this is the intended functionality of Software Collections.  See the following article for a possible work-around: [https://access.redhat.com/solutions/527703](https://access.redhat.com/solutions/527703?azure-portal=true).
+> ![Important]
+> If you needed to use `scl enable` to run `python3 --version`, then you may need to enter this command each time you want to work in Python.  There are workarounds, but this is the intended functionality of Software Collections.  See the following article for a possible work-around: [https://access.redhat.com/solutions/527703](https://access.redhat.com/solutions/527703?azure-portal=true).
 
 ::: zone-end
 
 
 ::: zone pivot="macos"
 
-### Install Python on macOS
+## Install Python on macOS
 
 The steps that follow will download the Python installer directly from the Python website.
 
@@ -205,7 +205,7 @@ The steps that follow will download the Python installer directly from the Pytho
 Alternatively, you can use Homebrew to install Python and Visual Studio Code.  For instructions, visit this URL instead:
 [https://docs.brew.sh/Homebrew-and-Python](https://docs.brew.sh/Homebrew-and-Python?azure-portal=true)
 
-#### Step 1: Navigate to the Python downloads website and download the installer.
+### Step 1: Navigate to the Python downloads website and download the installer.
 
 Navigate your web browser to:
 
@@ -217,7 +217,7 @@ You may see a popup asking whether you allow downloads on "python.org".  Click t
 
 After a few moments, a file named `python-3.8.0-mascosx10.9.pkg' should be downloaded to the Downloads stack in your Dock.
 
-#### Step 2: Launch the Python installer and accept options for a standard install.
+### Step 2: Launch the Python installer and accept options for a standard install.
 
 Double-click the `.pkg` file you downloaded to launch the installer.  The Python installer will ask to install, verify, and accept various options and license agreements.  Take the time to read through these prompts to understand what the installer will do to your computer.
 
@@ -225,7 +225,7 @@ When the installation process finishes, a Finder window will appear with the con
 
 If you're prompted to move the Python installer to the Trash, you may do so.
 
-#### Step 3: Check to ensure that Python 3 was installed correctly.
+### Step 3: Check to ensure that Python 3 was installed correctly.
 
 Using Spotlight (<kbd>Command</kbd> + <kbd>Spacebar</kbd>) type `terminal` and select the <kbd>Return</kbd> key on your keyboard to launch Terminal.
 
