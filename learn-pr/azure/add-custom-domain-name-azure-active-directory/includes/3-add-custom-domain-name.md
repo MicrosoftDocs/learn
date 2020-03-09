@@ -1,19 +1,25 @@
-You use Azure to add your organization's custom domain name and allow employees to create memorable user names.
+You use Azure to add your organization's custom domain name and allow employees to create memorable usernames.
 
-In this unit, you'll see how to associate your custom domain to an existing Azure Active Directory (Azure AD) organization, set it to be the primary domain, and then add users.
+In this unit, you'll see how to:
 
-You won't be able to complete the steps in this unit unless you've purchased a domain name and registered it with a DNS provider. So the following steps walk through the process to add a custom domain name to Azure. If you do own a domain name that's not being  used, you can choose to follow along in your own Azure AD organization.
+- Associate your custom domain with an existing Azure Active Directory (Azure AD) organization.
+- Set the custom domain to be the primary domain.
+- Add users.
 
-## Add custom domain name to Azure AD
+You can't complete this unit unless you've purchased a domain name and registered it with a Domain Name System (DNS) provider.
 
-In our scenario, the organization has an Azure AD organization where they can add the domain name.
+The following steps walk through the process to add a custom domain name to Azure. If you own an unused domain name, you can follow along in your own Azure AD organization.
+
+## Add a custom domain name to Azure AD
+
+In our scenario, your company has an Azure AD organization where you can add the domain name.
 
 1. In Azure AD, under **Manage** select **Custom domain name**.
 
     ![Screenshot of the Overview page with Custom domain name highlighted](../media/3-overview-page.png)
 
-1. Select **+ Add custom domain**
-1. For **Custom domain name**, enter your domain name like proseware.com.
+1. Select **+ Add custom domain**.
+1. For **Custom domain name**, enter the domain name **proseware.com**.
 1. Select **Add domain**.
 1. On the **proseware.com** page, copy the DNS information.
 
@@ -22,8 +28,7 @@ In our scenario, the organization has an Azure AD organization where they can ad
 ## Add your DNS information to the domain registrar
 
 1. Go to your domain registrar.
-1. Create records for your domain based on the DNS information you copied from Azure. For example, the following screenshot shows a text record added to Azure DNS. Azure DNS is acting as the domain registrar.
-
+1. Create records for your domain based on the DNS information you copied from Azure. The following screenshot shows a text record added to Azure DNS. Azure DNS is acting as the domain registrar.
 
     ![Screenshot of a domain registrar that shows a TXT record for the custom domain](../media/3-dns-records.png)
 
@@ -35,50 +40,45 @@ In our scenario, the organization has an Azure AD organization where they can ad
 1. Select your custom domain name.
 1. Select **Verify**.
 
-    ![Screenshot of the verify button on the custom domain's DNS information page](../media/3-verify-domain.png)
+    ![Screenshot of the Verify button on the custom domain's DNS information page](../media/3-verify-domain.png)
 
-
-
-
-1. If Azure verifies that the correct record exists, the domain name status will be updated to "verified".
+1. If Azure verifies that the correct record exists, the domain name status changes to "Verified."
 
     ![Screenshot of a verified domain](../media/3-verified-domain.png)
 
-
-
-1. To add a subdomain, select **+ Add domain name** and enter the subdomain name such as marketing.proseware.com. You don't need to repeat the verification steps.
+1. To add a subdomain, select **+ Add domain name** and enter a subdomain name like **marketing.proseware.com**. You don't need to repeat the verification steps.
 
     ![Screenshot showing a subdomain added and verified](../media/3-added-subdomain.png)
 
 ## Set the primary domain name
 
-After you add the custom domain name and any subdomains, set one of domain names as the primary.
+After you add the custom domain name and any subdomains, set one of the domain names as the primary.
 
-1. Select the **proseware.com** from the list of custom domain names.
-1. Select  **Make primary**.
+1. Select **proseware.com** from the list of custom domain names.
+1. Select **Make primary**.
 
     ![Screenshot of the information for a domain](../media/3-make-primary.png)
 
 1. Select **Yes**.
-1. On the list of custom domain names, you see the **Primary** column is now checked for **proseware.com**.
+1. In the list of custom domain names, the **Primary** column is now checked for **proseware.com**.
 
 ## Manage custom domain names by using Azure PowerShell
 
 You might prefer to manage your domain names by using Azure PowerShell.
 
 - `New-AzureADDomain`: Creates a new domain. Use the parameter `-IsDefault` to set the domain name as the primary domain name.
-- `Confirm-AzureADDomain`: Allows you to try to validate the ownership of a domain.
-- `Set-AzureADDomain`: Updates a domain name, and can be used to set the domain to the primary domain name.
+- `Confirm-AzureADDomain`: Lets you try to validate the ownership of a domain.
+- `Set-AzureADDomain`: Updates a domain name and can set the domain to the primary domain name.
 - `Remove-AzureADDomain`: Deletes a domain from Azure AD.
 
 ## Add a user
 
-After you add a custom domain name and set it to the primary domain, add users.
+After you add a custom domain name and set it to be the primary domain, add users.
 
-1. On the portal, go to the **Azure Active Directory**.
-1. On the left, under **Manage**, select **Users**.
+1. In the Azure portal, go to **Azure Active Directory**.
+1. On the left side of the pane, under **Manage** select **Users**.
 1. Select **+ New user**.
 
    ![Screenshot of adding a new user for a custom domain](../media/3-add-users.png)
 
-1. Enter the **User name** and **Name** for your pilot user. Notice that the primary domain name is shown as part of the user name.
+1. For **User name** and **Name**, enter values for your pilot user. The primary domain name appears as part of the username.
