@@ -1,6 +1,6 @@
 This module uses X.509 certificates to validate devices, before the devices are allowed to communicate with the IoT Hub. Let's go over some background information about these certificates.
 
-## Introduction to DPS and X.509 certificates
+## Introduction to the Device Provisioning Service and X.509 certificates
 
 The basis of the X.509 certificate is the concept of public/private key encryption. A _public_ key enables data to be encrypted. Use of the key distorts the text of the message into incomprehensible characters. A _private_ key is used to decrypt the message, back into its original text. The public key can't be used to decrypt the message. Public/private keys is a form of _asymmetric_ encryption. Asymmetric encryption is more secure than _symmetric_ encryption, where the same key is used to encrypt and decrypt a message. However, the private key needs to be kept secret.
 
@@ -8,7 +8,7 @@ To keep private keys secret, a _public key infrastructure_ (PKI) is needed to pr
 
 To validate the authenticity of X.509 certificates, the certificates need to be _signed_. There are two ways of signing. You can use an organization known as a _Certificate Authority_ (or, CA) that specializes in supplying signed certificates. This approach might be the right way to go in a production environment, though there can be a cost involved. The alternative is known as _self-signed_ certificates, where the user validates their own certificates. There's no cost to this second option, though as you would be relying on publicly available tools, this system isn't recommended for production. For our purposes in this module, self-signed certificates will work fine.
 
-The name "X.509" originates from the format the certificate is stored in. If you open the certificate file it will look like the following image. In addition to the key, the certificate contains metadata such as version, encoding algorithm, issuers ID, and similar data. For most of us though, the contents of a certificate are a _black box_, and can stay that way!
+The name "X.509" originates from the format the certificate is stored in. If you open the certificate file, it will look like the following image. In addition to the key, the certificate contains metadata such as version, encoding algorithm, issuers ID, and similar data. For most of us though, the contents of a certificate are a _black box_, and can stay that way!
 
 [![Screenshot showing a coded version of an X.509 certificate](../media/iot-hub-dps-certificate.png)](../media/cheese-rect4.png#lightbox)
 
@@ -54,4 +54,4 @@ This process is how you provide proof that you own the root certificate. There's
 
 ### Next step
 
-That should be enough theory. For the next step, let's create an Azure DPS resource, and then all the necessary certificates.
+That summary should be enough theory. For the next step, let's create an Azure DPS resource, and then all the necessary certificates.

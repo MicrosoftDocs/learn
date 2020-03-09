@@ -1,6 +1,6 @@
 In this unit, we need to create one leaf certificate for each device that we want to send telemetry to the hub. Two is company, three is a crowd. So, let's create code for a "crowd" of devices. Remember, in our scenario description we stated that there were now 30 cheese caves, requiring 30 sensor devices. Let's limit this number to three for the sake of explanation and testing!
 
-1. In the Azure Cloud Shell, make sure you're in the **certificates** folder.
+1. In the Microsoft Azure Cloud Shell, make sure you're in the **certificates** folder.
 
 1. Run the following command:
 
@@ -22,13 +22,13 @@ In this unit, we need to create one leaf certificate for each device that we wan
 
 1. Copy the **new-device-cert.pfx** file from its downloaded location into the **cheese cave certs** folder, and rename it **new-device-cert1.pfx**.
 
-1. In the Azure Cloud Shell, delete the **new-device-cert** files. This step is important so the tools can be used to create further certificates. You can delete the file, in the **certificates/certs** folder, by going through the following procedure:
+1. In the Cloud Shell, delete the **new-device-cert** files. This step is important so the tools can be used to create further certificates. You can delete the file, in the **certificates/certs** folder, by going through the following procedure:
     1. Type `cd certs`.
     1. Type `rm new*`.
     1. Answer `y` to the question on the protected file.
     1. Type `cd ..`.
 
-1. In the Azure Cloud Shell, create a second leaf certificate:
+1. In the Cloud Shell, create a second leaf certificate:
 
     ```azurecli
      ./certGen.sh create_device_certificate cheesecave-device2
@@ -46,13 +46,13 @@ In this unit, we need to create one leaf certificate for each device that we wan
 
 1. Copy the **new-device-cert.pfx** file from its downloaded location into the **cheese cave certs** folder, and rename it **new-device-cert2.pfx**.
 
-1. In the Azure Cloud Shell, delete the **new-device-cert** files:
+1. In the Cloud Shell, delete the **new-device-cert** files:
     1. Type `cd certs`.
     1. Type `rm new*`.
     1. Answer `y` to the question on the protected file.
     1. Type `cd ..`.
 
-1. In the Azure Cloud Shell, create a third leaf certificate:
+1. In the Cloud Shell, create a third leaf certificate:
 
     ```azurecli
      ./certGen.sh create_device_certificate cheesecave-device3

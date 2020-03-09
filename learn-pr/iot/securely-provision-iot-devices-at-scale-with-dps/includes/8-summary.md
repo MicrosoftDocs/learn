@@ -1,6 +1,6 @@
 Completing this module should have given you valuable insight into the dark world of cryptography and message security. If you're new to this world, you'll appreciate the thought and design that has gone into X.509 certificates, and Azure DPS Group Enrollments. You'll see how these technologies neatly map the root and leaf X.509 certificates to an IoT Hub and its range of IoT devices. You'll also appreciate how well these technologies make security user-friendly enough for those of us who don't want to know too much about the underlying math.
 
-In short, you have learnt how to keep your cheese maturing practices a secret!
+In short, you've learnt how to keep your cheese maturing practices a secret!
 
 [![Photograph of mature blue cheese](../media/cheese-rect3.png)](../media/cheese-rect3.png#lightbox)
 

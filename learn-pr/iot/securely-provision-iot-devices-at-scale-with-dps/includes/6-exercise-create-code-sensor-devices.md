@@ -21,7 +21,7 @@ The code is written in C#, and you can choose Visual Studio, or Visual Studio Co
     - **dotnet add package Microsoft.Azure.Devices.Provisioning.Client**
     - **dotnet add package Microsoft.Azure.Devices.Provisioning.Transport.AMQP**
 
-1. From the **File** menu, open up the **Program.cs** file, and delete the default contents. You will have to navigate to the `CaveDevice1` folder.
+1. From the **File** menu, open up the **Program.cs** file, and delete the default contents. You'll have to navigate to the `CaveDevice1` folder.
 
 1. After you've entered the code below into the **Program.cs** file, you can run the app with the command `dotnet run`. This command will run the **Program.cs** file in the current folder, so ensure you are in the `CaveDevice1` folder.
 

@@ -40,7 +40,7 @@ Before we can go any further with the DPS resource, by adding enrollments, we mu
 
 The first time we create any X.509 certificates, we need to download some tools.
 
-1. Open an Azure Cloud Shell, and select the **Bash** shell option. We need the Bash option, as the helper tools that you'll download next are written for Bash.
+1. Open a Microsoft Azure Cloud Shell, and select the **Bash** shell option. We need the Bash option, as the helper tools that you'll download next are written for Bash.
 
 1. Run the following script. It creates a certificate directory in the shell storage, and downloads some helper scripts to it.
 
@@ -108,7 +108,7 @@ After the root certificate has been uploaded, the **Certificates** pane will dis
      ./certGen.sh create_verification_certificate <verification-code>
     ```
 
-1. Back in the Azure Cloud Shell, and in the **certificates** directory, run the completed command. This command generates a verification certificate that is chained to the root certificate. The generated certificate is named `verification-code.cert.pem`, and is located within the **./certs** directory of the Azure Cloud Shell.
+1. Back in the Cloud Shell, and in the **certificates** directory, run the completed command. This command generates a verification certificate that is chained to the root certificate. The generated certificate is named `verification-code.cert.pem`, and is located within the **./certs** directory of the Cloud Shell.
 
 1. Run the following command to download the verification certificate to your local machine.
 
@@ -142,4 +142,4 @@ Great progress, you've created a root certificate, and validated to Azure DPS th
 
 1. Finally, click **Save**, and verify your new enrollment group appears in the **Enrollment Groups** pane.
 
-A group enrollment is going to be very useful in handling remote devices at scale. The next unit create multiple leaf certificates.
+A group enrollment is going to be very useful in handling remote devices at scale. In the next unit, we create multiple leaf certificates.
