@@ -35,7 +35,7 @@ Autoscaling by metric requires that you define one or more autoscale rules. An a
 - **Disk Queue Length**. This metric is a measure of the number of outstanding I/O requests across all instances. A high value means that disk contention could be occurring.
 - **Http Queue Length**. This metric shows how many client requests are waiting for processing by the web app. If this number is large, client requests might fail with HTTP 408 (Timeout) errors.
 - **Data In**. This metric is the number of bytes received across all instances.
-- **Data Out**. This metric is te number of bytes sent by all instances.
+- **Data Out**. This metric is the number of bytes sent by all instances.
 
 You can also scale based on metrics for other Azure services. For example, if the web app processes requests received from a Service Bus Queue, you might want to spin up additional instances of a web app if the number of items held in an Azure Service Bus Queue exceeds a critical length.
 
