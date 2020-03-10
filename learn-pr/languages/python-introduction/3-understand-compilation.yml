@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.languages.python-introduction.what-is-compilation
+uid: learn.languages.python-introduction.understand-compilation
 title: What is compilation?
 metadata:
   title: What is compilation?
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 3
 content: |
-  [!include[](includes/3-what-is-compilation.md)]
+  [!include[](includes/3-understand-compilation.md)]
