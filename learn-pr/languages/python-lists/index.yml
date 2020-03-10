@@ -21,7 +21,7 @@ prerequisites: |
   - You should know how to work with data types like `str` and `int`, know how to work with variables, and so on.
   - You should be familiar with importing the `random` module and how to call functions from that module like `randint()`.
 ratingEnabled: true
-iconUrl: /learn/achievements/python-lists.svg
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
 roles:
