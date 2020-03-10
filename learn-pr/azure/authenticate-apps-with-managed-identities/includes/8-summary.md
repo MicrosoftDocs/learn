@@ -4,8 +4,6 @@ In this module, you explored service principals in the Azure platform. You saw h
 
 ## Learn more
 
-To learn more about service principals and managed identities in Azure AD, visit the following articles:
-
 - The list of services supporting managed identities, including region availability and configuration options, is available in the [Azure documentation](https://docs.microsoft.com/azure/active-directory/managed-identities-azure-resources/services-support-managed-identities)
 - [Integrating Azure Active Directory with the application getting started guide](https://docs.microsoft.com/azure/active-directory/manage-apps/plan-an-application-integration)
 - [Getting started on managing service principals using C#](https://azure.microsoft.com/resources/samples/aad-dotnet-manage-service-principals/)

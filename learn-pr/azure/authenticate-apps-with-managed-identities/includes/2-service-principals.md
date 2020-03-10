@@ -84,7 +84,7 @@ Whether you opt to use a client secret or a certificate, you need to define when
 
 You only need to use the above manual process of creating Azure AD applications, associating service principals, and granting access to resources, in two specific scenarios:
 
-- When your application or service is running on-premises.
-- The resources or applications you need access to don't support managed identities.
+1. When your application or service is running on-premises.
+1. The resources or applications you need access to don't support managed identities.
 
 The most secure and convenient way for you to handle authentication within Azure is to use managed identities.
