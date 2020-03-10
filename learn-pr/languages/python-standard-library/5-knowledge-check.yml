@@ -38,6 +38,6 @@ quiz:
     - content: "The `pip` utility will help you find packages to solve your programming problems."
       isCorrect: false
       explanation: "The `pip` utility does not help you discover or search for packages.  You use it after researching packages that might help."
-    - content: "The `pip` utility installs packages from the Python Standard Library."
+    - content: "The `pip` utility installs packages from the Python standard library."
       isCorrect: false
-      explanation: "The Python Standard Library is already installed when you install Python on your local computer."
+      explanation: "The Python standard library is already installed when you install Python on your local computer."
