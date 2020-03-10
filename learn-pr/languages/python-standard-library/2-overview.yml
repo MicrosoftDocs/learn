@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.languages.python-standard-library.overview
-title: Overview of the Python Standard Library
+title: Overview of the Python standard library
 metadata:
-  title: Overview of the Python Standard Library
-  description: What is the Python Standard Library, what can it do, and how to use it in your programs.
+  title: Overview of the Python standard library
+  description: What is the Python standard library, what can it do, and how to use it in your programs.
   ms.date: 02/19/2020
   author: bobtabor-msft
   ms.author: rotabor

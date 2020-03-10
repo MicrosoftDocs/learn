@@ -29,15 +29,15 @@ quiz:
       explanation: "Correct!"
   - content: "What does the `pip` utility do?"
     choices:
-    - content: "The `pip` utility will install packages from Github."
+    - content: "The `pip` utility will install packages from GitHub."
       isCorrect: false
-      explanation: "While the source code for packages may be hosted on Github, packages are hosted on PyPI."
+      explanation: "While the source code for packages may be hosted on GitHub, packages are hosted on PyPI."
     - content: "The `pip` utility installs packages and their dependencies that are listed on the Python Package Index."
       isCorrect: true
       explanation: "Correct!"
     - content: "The `pip` utility will help you find packages to solve your programming problems."
       isCorrect: false
       explanation: "The `pip` utility does not help you discover or search for packages.  You use it after researching packages that might help."
-    - content: "The `pip` utility installs packages from the Python Standard Library."
+    - content: "The `pip` utility installs packages from the Python standard library."
       isCorrect: false
-      explanation: "The Python Standard Library is already installed when you install Python on your local computer."
+      explanation: "The Python standard library is already installed when you install Python on your local computer."

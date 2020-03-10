@@ -1,8 +1,8 @@
-While the Python Standard Library has extensive support for a wide array of features, it couldn't possibly address every possible problem with a solution.  Fortunately, a rich third-party open-source software community has create thousands of packages that fill in the gaps.
+While the Python standard library has extensive support for a wide array of features, it couldn't possibly address every possible problem with a solution.  Fortunately, a rich third-party open-source software community has create thousands of packages that fill in the gaps.
 
 In this exercise, you'll use `pip`, a utility that accesses a popular Python package index named PyPI.  Combining the two, you can find packages you need for just about any purpose imaginable.
 
-Suppose you want to enhance your output with emoticons, like a smiley face or thumbs up symbol.  The Python Standard Library does not support that.  However, you can find candidate packages available on PyPI and use `pip` to install a package locally for development.
+Suppose you want to enhance your output with emoticons, like a smiley face or thumbs up symbol.  The Python standard library does not support that.  However, you can find candidate packages available on PyPI and use `pip` to install a package locally for development.
 
 ### What is a Python package?
 

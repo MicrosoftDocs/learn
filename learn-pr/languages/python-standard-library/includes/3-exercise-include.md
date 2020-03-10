@@ -8,7 +8,7 @@ Inside that folder, create a file for this exercise.  For example, you might cre
 
 When you're instructed to execute your code, you can use the Python Tools for Visual Studio Code integration by selecting the green arrow, or you can use a command in the integrated terminal using techniques we learned about in previous modules.
 
-### Step 2 - Import the `random` module from the Python Standard Library.
+### Step 2 - Import the `random` module from the Python standard library.
 
 The syntax of the `import` statement is simple.  You must use the `import` statement before you actually attempt to use the functions contained within the module you are importing.  Also, by convention, you should add the `import` statement to the top of your code file before any other code.
 
@@ -101,7 +101,7 @@ When you execute the program, it should still work.
 
 ## Recap
 
-- Use the `import` statement to include a package from the Python Standard Library in your program.  All of the module's functionality is available through the use of the member access operator `.`.
+- Use the `import` statement to include a package from the Python standard library in your program.  All of the module's functionality is available through the use of the member access operator `.`.
 - In Visual Studio Code, the Intellisense feature can show you the members (functions, constants, and services) that are available after typing the member access operator.
 - Use the `import ... as` statement to create an alias for the module if it will help describe its role in your software system.
 - The `random` package provides a way to generate a random value.  This will come in handy as we build more interesting code examples in upcoming Microsoft Learn modules.
