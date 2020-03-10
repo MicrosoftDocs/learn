@@ -8,7 +8,7 @@ Many classes of applications require different infrastructure, process, and secu
 
 ![Comparison of the most popular service providers](../media/security-4.jpg)
 
-_Figure 14: Comparison of popular service providers_ ([Source](http://www.cs.ucsb.edu/~koc/ns/projects/12Reports/pucherdimopoulos.pdf))
+_Figure 14: Comparison of popular service providers_ ([Source](https://pdfs.semanticscholar.org/5dfb/286f90cbe73bc8bcca44598fea709b86a289.pdf))
 
 Understanding the details of these certifications is not a goal for this course, but Mather<sup>[1][^1]</sup> provides a good reference for those interested in digging deeper into these aspects. 
 
