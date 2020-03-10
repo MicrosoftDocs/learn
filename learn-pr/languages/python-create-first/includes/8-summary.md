@@ -1,0 +1,5 @@
+Our goal was to build a program that accepts input from the user and displays information to the user.
+
+Using basic Python syntax, we wrote programs that prompted the user to enter data, store the data in variables and combine it with literal string data to display a new message to the user.  We used Visual Studio Code to help us create code files, identify potential errors, and execute our code.  We learned about functions, variables, comments, data types, and other code constructs to realize the programs we design in our imagination.
+
+While the applications we built may seem mundane at first, we're just getting started.  In upcoming modules, we'll keep layering new ideas to this foundation we've built to give you more control and flexibility in your programs.  There's much more to learn.  Don't give up!  You can do it!  Take consistent, daily baby steps to add to your knowledge little by little each day.
