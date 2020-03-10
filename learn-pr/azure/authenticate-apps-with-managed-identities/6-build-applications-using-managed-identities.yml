@@ -2,7 +2,7 @@
 uid: learn.authenticate-apps-with-managed-identities.6-build-applications-using-managed-identities
 metadata:
   title: Build applications using Azure AD managed identities
-  description: TODO
+  description: Learn more about how applications can use managed identities to authenticate requests. You'll see how to define an authorization policy with Azure Key Vault to enable an authenticated identity to read secret information.
   ms.date: 04/30/2019
   author: jboeshart
   ms.author: jaboes

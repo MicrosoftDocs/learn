@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.authenticate-apps-with-managed-identities.4-user-managed-identities-with-vms
+uid: learn.authenticate-apps-with-managed-identities.4-use-managed-identities-with-vms
 metadata:
   title: Using managed identities with Azure virtual machines
-  description: TODO
+  description: Learn about the management of identity within Azure virtual machines and how it interacts with the Azure Resource Manager to form a more secure working environment for applications and their authentication.
   ms.date: 04/30/2019
   author: jboeshart
   ms.author: jaboes
@@ -12,4 +12,4 @@ metadata:
 title: Using managed identities with Azure virtual machines
 durationInMinutes: 10
 content: |
-  [!include[](includes/4-user-managed-identities-with-vms.md)]
+  [!include[](includes/4-use-managed-identities-with-vms.md)]

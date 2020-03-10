@@ -153,19 +153,19 @@ Identify the subtasks of *Authenticate apps to Azure services with service princ
 - Use the .NET Azure Management client libraries and the included classes for authentication, but mention what is going on behind the scenes (token acquisition, etc.)
 - This module was originally intended to follow a separate module about service principal authentication that does not use managed identities. That module has been canceled and the content coverage merged in with the scope of this module. For reference, here's the design doc for that module.
   - <https://github.com/MicrosoftDocs/learn-pr/blob/NEW-authenticate-apps-with-service-principals/learn-pr/azure/authenticate-apps-with-service-principals/resources/design-doc.md>
-- <https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/>
+- <https://docs.microsoft.com/azure/active-directory/managed-identities-azure-resources/>
 
 <!-- REVIEW make it clear which notes are applicable - e.g. are the exercises in the sandbox or not -->
 
 ## Useful Resources
 
-<https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/application-proxy-add-on-premises-application>
-<https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/plan-an-application-integration>
-<https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/application-proxy>
-<https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-manager-api-authentication>
-<https://docs.microsoft.com/en-us/powershell/azure/create-azure-service-principal-azureps?view=azps-1.6.0>
-<https://azure.microsoft.com/en-gb/resources/samples/aad-dotnet-manage-service-principals/>
-<https://docs.microsoft.com/en-us/cli/azure/create-an-azure-service-principal-azure-cli?view=azure-cli-latest>
-<https://docs.microsoft.com/en-us/azure/active-directory/develop/app-objects-and-service-principals#overview>
-<https://docs.microsoft.com/en-us/azure/data-lake-store/data-lake-store-service-to-service-authenticate-net-sdk>
-<https://docs.microsoft.com/en-us/azure/key-vault/service-to-service-authentication#running-the-application-using-managed-identity-or-user-assigned-identity>
+- <https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-add-on-premises-application>
+- <https://docs.microsoft.com/azure/active-directory/manage-apps/plan-an-application-integration>
+- <https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy>
+- <https://docs.microsoft.com/azure/azure-resource-manager/resource-manager-api-authentication>
+- <https://docs.microsoft.com/powershell/azure/create-azure-service-principal-azureps?view=azps-1.6.0>
+- <https://azure.microsoft.com/resources/samples/aad-dotnet-manage-service-principals/>
+- <https://docs.microsoft.com/cli/azure/create-an-azure-service-principal-azure-cli?view=azure-cli-latest>
+- <https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals#overview>
+- <https://docs.microsoft.com/azure/data-lake-store/data-lake-store-service-to-service-authenticate-net-sdk>
+- <https://docs.microsoft.com/azure/key-vault/service-to-service-authentication#running-the-application-using-managed-identity-or-user-assigned-identity>

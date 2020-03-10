@@ -2,7 +2,7 @@
 uid: learn.authenticate-apps-with-managed-identities.7-exercise-configure-app-using-managed-identity
 metadata:
   title: Exercise - Configure a custom application in .NET using managed identity
-  description: TODO
+  description: In this exercise, you'll create a secret and store it in Key Vault. Then, you'll assign the service principal for the VM you created in the earlier exercises permissions to retrieve this secret. Finally, build and run an app on the VM that uses the service principal to access Key Vault and retrieve the secret.
   ms.date: 04/30/2019
   author: jboeshart
   ms.author: jaboes
