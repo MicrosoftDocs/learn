@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.iot.manage-your-azure-iot-hub-with-metrics-alerts
 metadata:
-  title: Manage your Azure IoT Hub with alerts and metrics
+  title: Manage your Azure IoT Hub with metrics and alerts
   description:  Learn about metrics, alerts, diagnostics, and logs. Create an Azure IoT Hub, an app to send vibration telemetry, and then create and test some metrics and alerts.
   ms.date: 3/6/2020
   author: PeterTurcan
   ms.author: Olivier.Bloch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Manage your Azure IoT Hub with alerts and metrics
+title: Manage your Azure IoT Hub with metrics and alerts
 hidden: true
 summary: >
  Learn about metrics, alerts, diagnostics, and logs. Create an Azure IoT Hub, an app to send vibration telemetry, and then create and test some metrics and alerts.
