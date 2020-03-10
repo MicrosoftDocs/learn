@@ -10,9 +10,10 @@ In this module you will:
 
 - Create a custom Azure IoT Hub, using the Azure portal
 - Learn about device provisioning, X.509 certificates, and enrollments
-- Create a DPS resource and a group enrollment, using the Azure portal
+- Create a DPS resource, and a group enrollment, using the Azure portal
+- Create an X.509 root certificate, and multiple leaf certificates, using downloaded scripts
 - Create an app to send device telemetry to your IoT Hub, using Visual Studio, or Visual Studio Code
-- Test multiple devices are provisioned by your DPS resource
+- Test multiple IoT devices are provisioned by your DPS resource
 
 ## Prerequisites
 

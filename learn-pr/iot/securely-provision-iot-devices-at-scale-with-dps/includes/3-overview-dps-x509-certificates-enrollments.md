@@ -30,15 +30,15 @@ All these certificates will be self-signed.
 
 Cryptography is a complex technology, that goes deep into mathematics, so isn't for everyone. Follow the links on the **Summary** page of this module, if you're interested in a deeper introduction than we have given here. For the record, X.509 certification is the basis of the secure HTTPS protocol - for secure browsing of the internet.
 
-Suffice to conclude that public/private key technology is state-of-the-art security, and by using X.509 certificates correctly, you can be confident you IoT Hub is secure. Secure against an invalid device supplying invalid data, and secure against a denial-of-service type attack. However, no security is perfect, and doing your own research on certification is recommended.
+Suffice to conclude that public/private key technology is state-of-the-art security, and by using X.509 certificates correctly, you can be confident your IoT Hub is secure. Secure against an invalid device supplying invalid data, and secure against a denial-of-service type attack. However, no security is perfect, and doing your own research on certification is recommended.
 
-An Azure Device Provisioning Service can be linked to one, or more, IoT Hubs, and can be thought of as a system for managing your certificates, and managing your enrollments.
+An Azure Device Provisioning Service can be linked to one, or more, IoT Hubs, and can be thought of as a system for managing your certificates and your enrollments.
 
 ### Individual and Group Enrollments
 
 An Azure DPS can contain a number of individual, or group, enrollments. In our scenario, the group enrollment provides the solution we're looking for. One enrollment group works with one root certificate, and any number of leaf certificates signed by this root. An enrollment maintains information on all the devices that have tried to register.
 
-Individual enrollments are best used for devices that have a unique configuration, and require greater security than the connection strings you may have used in other Learn modules or Azure samples. Unique configurations aren't what we're looking for in our scenario, where we have many sensors configured to provide an identical set of telemetry data.
+Individual enrollments are best used for devices that have a unique configuration, and require greater security than the connection strings you may have used in other Learn modules or Azure samples. Unique configurations aren't what we're looking for in our scenario, where we have many sensors configured to provide an identical format of telemetry data.
 
 Another concept you'll see when we create an Azure DPS resource, is that of _allocation policy_. This policy isn't something we delve into. Allocation policies only apply when you've multiple IoT Hubs handling telemetry from a huge number of devices, and want to direct the incoming data to one of these hubs based on a policy.
 
@@ -48,7 +48,7 @@ After creating your enrollments, and self-signed root certificate, there's one m
 
 When uploading certificates to Azure DPS, you'll be asked to generate a verification code.
 
-_Proof of Possession_ of a certificate is provided to DPS by uploading a _verification_ certificate generated from the root certificate with the verification code that you generated within DPS. The verification certificate is _chained_ to the root certificate.
+_Proof of Possession_ of a certificate is provided to DPS by uploading a _verification_ certificate generated from the root certificate with this verification code. The verification certificate is _chained_ to the root certificate.
 
 This process is how you provide proof that you own the root certificate. There's no need to provide proof of possession of the leaf certificates, as, if you own the root, trust has been established.
 

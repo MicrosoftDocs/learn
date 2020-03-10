@@ -2,7 +2,7 @@
 uid: learn.iot.automatically-provision-iot-devices-securely-and-at-scale-with-dps
 metadata:
   title: Automatically provision IoT devices securely and at scale with DPS
-  description: The focus of this module is on creating a Device Provisioning Service (DPS) to securely handle multiple remote devices. First, you create an IoT Hub, and add the DPS service. Next, an X.509 root certificate, and multiple leaf certificates, are created to handle security. Code for a simulated device is provided. You then link all the pieces together, and verify that your DPS resource works. After completing the module you should have a good understanding of how to provision Azure IoT devices at scale.
+  description: The focus of this module is on creating a Device Provisioning Service (DPS) to securely handle multiple remote devices. First, you create an IoT Hub, and add the DPS service. Next, an X.509 root certificate, and multiple leaf certificates, are created to handle security. Code for a simulated device is provided. You then link all the pieces together, and verify that your DPS resource works. After completing the module, you should have a good understanding of how to provision Azure IoT devices at scale.
   ms.date: 3/15/2020
   author: PeterTurcan
   ms.author: Olivier.Bloch
@@ -10,14 +10,15 @@ metadata:
   ms.prod: learning-azure
 title: Automatically provision IoT devices securely and at scale with DPS
 summary: >
- The focus of this module is on creating a Device Provisioning Service (DPS) to securely handle multiple remote devices. First, you create an IoT Hub, and add the DPS service. Next, an X.509 root certificate, and multiple leaf certificates, are created to handle security. Code for a simulated device is provided. You then link all the pieces together, and verify that your DPS resource works. After completing the module you should have a good understanding of how to provision Azure IoT devices at scale.
+ The focus of this module is on creating a Device Provisioning Service (DPS) to securely handle multiple remote devices. First, you create an IoT Hub, and add the DPS service. Next, an X.509 root certificate, and multiple leaf certificates, are created to handle security. Code for a simulated device is provided. You then link all the pieces together, and verify that your DPS resource works. After completing the module, you should have a good understanding of how to provision Azure IoT devices at scale.
 abstract: | 
   In this module, you will:
   - Create a custom Azure IoT Hub, using the Azure portal
   - Learn about device provisioning, X.509 certificates, and enrollments
-  - Create a DPS resource and a group enrollment, using the Azure portal
+  - Create a DPS resource, and a group enrollment, using the Azure portal
+  - Create an X.509 root certificate, and multiple leaf certificates, using downloaded scripts
   - Create an app to send device telemetry to your IoT Hub, using Visual Studio, or Visual Studio Code
-  - Test multiple devices are provisioned by your DPS resource
+  - Test multiple IoT devices are provisioned by your DPS resource
 prerequisites: | 
   - An introductory knowledge of Azure IoT
   - Ability to navigate the Azure IoT portal

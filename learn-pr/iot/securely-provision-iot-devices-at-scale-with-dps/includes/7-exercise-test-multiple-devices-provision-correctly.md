@@ -1,4 +1,4 @@
-In this unit, we verify all the pieces we have put in place work as expected. You've already set all the device apps running. First, we'll check the IoT Hub gets automatic updates to its list of connected IoT devices. Next, we'll check the hub receives telemetry from the devices. Finally, in the portal, we change a device twin setting for one device, and verify the correct device picks up the change.
+In this unit, we verify all the pieces you've put in place work as expected. You've already set all the device apps running. First, we'll check the IoT Hub gets automatic updates to its list of connected IoT devices. Next, we'll check the hub receives telemetry from the devices. Finally, in the portal, we change a device twin setting for one device, and verify the correct device picks up the change.
 
 ## Test the multiple devices are automatically assigned to your IoT Hub
 
@@ -9,7 +9,7 @@ In this unit, we verify all the pieces we have put in place work as expected. Yo
 
     [![Console output showing all three devices running](../media/iot-hub-dps-devices123.png)](../media/iot-hub-dps-devices123.png#lightbox)
 
-1. In the Azure portal, this time for your IoT Hub, select **IoT devices** in the left-hand menu. Verify all three devices are listed, and have **Status** set to **Enabled**.
+1. In the Azure portal, for your IoT Hub, select **IoT devices** in the left-hand menu. Verify all three devices are listed, and have **Status** set to **Enabled**.
 
     [![Screenshot showing the list of device IDs enabled in the IoT Hub](../media/iot-hub-dps-device-list.png)](../media/iot-hub-dps-device-list.png#lightbox)
 

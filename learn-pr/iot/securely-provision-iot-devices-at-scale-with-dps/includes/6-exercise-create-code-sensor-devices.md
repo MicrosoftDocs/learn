@@ -383,12 +383,12 @@ This section adds code to send telemetry from a simulated sensor device.
     }
     ```
 
-1. Change the &lt;your DPS ID Scope&gt; string to your actual DPS **ID Scope**.
+1. Change the `<your DPS ID Scope>` string to your actual DPS **ID Scope**, that you saved off in an earlier unit.
 
     > [!NOTE]
     > The `dpsIdScope` string is identical for all devices connected to this DPS resource.
 
-1. Change the &lt;your leaf path&gt; to the actual path to your leaf certificate.
+1. Change the `<your leaf path>` to the actual path to your leaf certificate.
 
     ```csharp
           private static string s_certificateFileName = "C:\\Users\\<your user name>\\Documents\\cheese cave certs\\new-device.cert1.pfx";

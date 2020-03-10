@@ -1,4 +1,4 @@
-A Device Provisioning Service (DPS) can be linked to one, or multiple hubs. So, it's a separate resource, and is independent of any one IoT Hub. You create a DPS resource the same way you create any other Azure resource.
+A Device Provisioning Service (DPS) can be linked to one or more hubs. So, it's a separate resource, and is independent of any one IoT Hub. You create a DPS resource the same way you create any other Azure resource.
 
 ## Create an Azure IoT Hub Device Provisioning Service
 
@@ -59,7 +59,7 @@ The first time we create any X.509 certificates, we need to download some tools.
      chmod 700 certGen.sh
     ```
 
-    These helper scripts are downloaded from the Azure/azure-iot-sdk-c open-source project hosted on GitHub. This project is a part of the Azure IoT SDK. The certGen.sh helper script will help demonstrate the purpose of CA Certificates without diving into the specifics of OpenSSL configuration. If you need additional instructions on using these helper scripts, or for instructions on how to use PowerShell instead of Bash, refer to [CACertificateOverview](https://github.com/Azure/azure-iot-sdk-c/blob/master/tools/CACertificates/CACertificateOverview.md).
+    These helper scripts are downloaded from the _Azure/azure-iot-sdk-c_ open-source project hosted on GitHub. This project is a part of the Azure IoT SDK. The _certGen.sh_ helper script will help demonstrate the purpose of CA Certificates without diving into the specifics of OpenSSL configuration. If you need additional instructions on using these helper scripts, or for instructions on how to use PowerShell instead of Bash, refer to [CACertificateOverview](https://github.com/Azure/azure-iot-sdk-c/blob/master/tools/CACertificates/CACertificateOverview.md).
 
     >[!WARNING]
     >Do not use these helper scripts in a production environment, as the scripts contain hard-coded passwords that expire after 30 days. The scripts are provided only for demo purposes.
@@ -77,7 +77,7 @@ The first time we create any X.509 certificates, we need to download some tools.
     ```
 1. Create a new folder in your **Documents** folder, called "cheese cave certs", or something similar.
 
-1. Copy the file you downloaded into the **cheese cave certs** folder.
+1. Copy the certificate file you downloaded into the **cheese cave certs** folder.
 
 ### Configure Azure DPS to trust the root certificate
 
@@ -87,7 +87,7 @@ The first time we create any X.509 certificates, we need to download some tools.
 
 1. Click **Add**. For the **Certificate Name**, enter an understandable name such as "cheesecave-dps-root". The name doesn't have to be the same as the certificate filename.
 
-1. For **Certificate .pem or .cer file**, navigate to and select the azure-iot-test-only.root.ca.cert.pem file that you downloaded.
+1. For **Certificate .pem or .cer file**, navigate to the **cheese cave certs** folder, and select the azure-iot-test-only.root.ca.cert.pem file that you downloaded.
 
 1. Click **Save**.
 
@@ -101,11 +101,11 @@ After the root certificate has been uploaded, the **Certificates** pane will dis
 
 1. Copy the **Verification Code** that is displayed above the **Generate Verification Code** button. There's a button to the right of the textbox to copy the code for you. Open a text editor, such as Notepad, and paste in the verification code.
 
-    Proof of Possession of the CA certificate is provided to DPS by uploading a verification certificate generated from the root certificate. The verification certificate contains the verification code you just generated. This process is how you provide proof that you own the CA Certificate.
+    Proof of Possession of the CA certificate is provided to DPS by uploading a verification certificate generated from the root certificate. The verification certificate contains the verification code you just generated.
 
 1. Leave the **Certificate Details** pane open while you generate the verification certificate. If you close the pane, you'll invalidate the verification code, and will need to generate a new one.
 
-1. Copy the following command to the text file containing the verification code, and change the &lt;verification-code&gt; to the actual code.
+1. Copy the following command to the text file containing the verification code, and change `<verification-code>` to the actual code.
 
     ```azurecli
      ./certGen.sh create_verification_certificate <verification-code>
