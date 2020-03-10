@@ -1,4 +1,4 @@
-Your company has several on-premises applications used by its staff in the day-to-day running of the business. Recently, the company completed an enterprise-wide security assessment and audit.  The results of the audit highlighted a design flaw in several applications. Username and password credentials were stored, either in application source code, or in the associated configuration files. 
+Your company has several on-premises applications used by its staff in the day-to-day running of the business. Recently, the company completed an enterprise-wide security assessment and audit. The results of the audit highlighted a design flaw in several applications. Username and password credentials were stored, either in application source code, or in the associated configuration files. 
 
 The report indicated the following security issues with storing usernames and passwords in code, or within configuration files:
 
@@ -29,7 +29,7 @@ You create your service principal:
 
 ## Using Microsoft identity platform in your applications
 
-Microsoft identity platform simplifies the way your application authenticates with your Azure AD.  It provides a unified way to authenticate your apps.  When an application successfully authenticates against  Azure AD, it's given a unique token.  This token is used each time your application makes a call to an API, or to access a service.  To build an application, use the Microsoft Authentication Library (MSAL) to provide single sign-on support.
+Microsoft identity platform simplifies the way your application authenticates with your Azure AD. It provides a unified way to authenticate your apps. When an application successfully authenticates against Azure AD, it's given a unique token. This token is used each time your application makes a call to an API, or to access a service. To build an application, use the Microsoft Authentication Library (MSAL) to provide single sign-on support.
 
 While there are several ways to provision an application for Microsoft identity platform, you'll focus on using the portal to register an application in Azure:
 
@@ -46,7 +46,7 @@ While there are several ways to provision an application for Microsoft identity 
 
 ## Assigning application roles
 
-Azure AD applications must be assigned roles to work with other services.  Azure uses role-based access control (RBAC) to tightly manage access to Azure resources and what can be done with them. The roles assigned to the application determine which permissions and scope the application will have.
+Azure AD applications must be assigned roles to work with other services. Azure uses role-based access control (RBAC) to tightly manage access to Azure resources and what can be done with them. The roles assigned to the application determine which permissions and scope the application will have.
 
 RBAC permissions are inherited from the level of the scope set. For example, if you assign the reader role on a resource group, read permissions are assigned to all resources within that group.
 
