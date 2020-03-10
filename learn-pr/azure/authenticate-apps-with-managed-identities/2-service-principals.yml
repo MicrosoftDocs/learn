@@ -29,7 +29,7 @@ quiz:
       explanation: Both a public key or an authentication key can be used but both are not required.
     - content: Tenant ID, Application ID, and authentication key. 
       isCorrect: true
-      explanation: The tenant ID, application id, and authentication key are required for successful authorization request.
+      explanation: The tenant ID, application ID, and authentication key are required for successful authorization request.
   - content: "What service is called when your application is passing a token to Azure?"
     choices:
     - content: Azure Active Directory

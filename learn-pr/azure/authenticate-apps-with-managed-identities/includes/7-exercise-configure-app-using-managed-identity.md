@@ -159,7 +159,7 @@ In this exercise, you'll edit your app to use the new key vault. Then grant the 
           --secret-permissions get list
     ```
 
-    The value returned will be in JSON format and contains id, location, name, and all the associated properties.
+    The value returned will be in JSON format and contains ID, location, name, and all the associated properties.
 
 ## Test the application again
 
