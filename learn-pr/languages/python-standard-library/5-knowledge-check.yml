@@ -29,9 +29,9 @@ quiz:
       explanation: "Correct!"
   - content: "What does the `pip` utility do?"
     choices:
-    - content: "The `pip` utility will install packages from Github."
+    - content: "The `pip` utility will install packages from GitHub."
       isCorrect: false
-      explanation: "While the source code for packages may be hosted on Github, packages are hosted on PyPI."
+      explanation: "While the source code for packages may be hosted on GitHub, packages are hosted on PyPI."
     - content: "The `pip` utility installs packages and their dependencies that are listed on the Python Package Index."
       isCorrect: true
       explanation: "Correct!"
