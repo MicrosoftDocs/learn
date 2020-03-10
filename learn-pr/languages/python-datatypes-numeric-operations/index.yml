@@ -21,7 +21,7 @@ prerequisites: |
   - You should know how to create and use variables, and how to perform basic operations on strings like concatenation.
   - You should already have some exposure to data type conversion functions like the `int()` and `str()` functions.
 ratingEnabled: true
-iconUrl: /learn/achievements/python-datatypes-numeric-operations.svg
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
 roles:
