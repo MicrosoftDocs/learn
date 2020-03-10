@@ -40,7 +40,7 @@ Before we can go any further with the DPS resource, by adding enrollments, we mu
 
 The first time we create any X.509 certificates, we need to download some tools.
 
-1. Open a Microsoft Azure Cloud Shell, and select the **Bash** shell option. We need the Bash option, as the helper tools that you'll download next are written for Bash.
+1. Open a Microsoft Azure Cloud Shell, and select the **Bash** shell option. We need the Bash option, as the helper tools that you'll download next are written for Bash. If you are given a choice, there is no need to choose the sandbox cloud shell, as we are not creating any resources.
 
 1. Run the following script. It creates a certificate directory in the shell storage, and downloads some helper scripts to it.
 
