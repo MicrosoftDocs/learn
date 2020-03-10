@@ -1,6 +1,6 @@
 Our microservice and gateway are easy to deploy manually, but it is of course better to automate all those tasks! We are going to use [GitHub actions](https://github.com/features/actions) as a Continuous Integration / Continuous Deployment platform (or CI/CD for short).
 
-We will automate the deployment of the `todo-service` microservice that was developed in [the "Build a Spring Boot microservice" section](4-build-a-spring-boot-microservice). It is exactly the same configuration that would need to be done for the gateway, so if you want to automate it too, you can just copy/paste what is being done in the current module.
+We will automate the deployment of the `todo-service` microservice that was developed in [the "Build a Spring Boot microservice" section](4-build-a-spring-boot-microservice.md). It is exactly the same configuration that would need to be done for the gateway, so if you want to automate it too, you can just copy/paste what is being done in the current module.
 
 ## Configure GitHub
 
