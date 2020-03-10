@@ -59,7 +59,8 @@ quiz:
       explanation: This endpoint doesn't apply to all devices.
     - content: 'The setting for SecurityProviderX509'
       isCorrect: false
-      explanation: This variable is used in the code, and isn't related to a global endpoint.
+      explanation: This variable is used
+       in the code, and isn't related to a global endpoint.
 
   - content: 'Which allocation policy for Azure IoT DPS systems is the default?'
     choices:
