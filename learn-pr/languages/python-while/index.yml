@@ -22,13 +22,13 @@ prerequisites: |
   - You should understand how to include a module from the Python Standard Library.
   - Experience using if statements and the string's `isnumeric()` helper method to evaluate user input.
 ratingEnabled: true
-iconUrl: /learn/achievements/python-while.svg
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
 roles:
 - developer
 products:
-- dotnet
+- vs
 units:
 - learn.languages.python-while.introduction
 - learn.languages.python-while.exercise-while
