@@ -18,7 +18,7 @@ In this module, you will:
 - Use mathematical operators to perform basic math operations on numeric data.
 - Use the `float` data type to represent values that include fractional values represented with numbers after the decimal point.
 
-## Prerequisites:
+## Prerequisites
 
 - You should have your Python development environment already set up and know how to create, edit, and execute Python code stored in a `.py` file.
 - You should have exposure to the use of input and output functions like `print()` and `input()`.
