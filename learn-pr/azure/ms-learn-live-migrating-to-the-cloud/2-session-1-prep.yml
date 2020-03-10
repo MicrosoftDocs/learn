@@ -21,7 +21,7 @@ metadata:
 
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
+azureSandbox: true
 
 # Estimate the time needed to complete the preparation document including the creation of resources on Azure. 
 # It's best to follow the instructions and take the time.
