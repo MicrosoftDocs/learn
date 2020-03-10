@@ -20,7 +20,7 @@ abstract: |
    - Build a GitHub Action to create a continuous delivery workflow
    - Test the capabilities of a progressive web app
 prerequisites: None
-iconUrl: /learn/achievements/create-web-app-with-refreshable-models.svg
+iconUrl: /learn/achievements/advocates/create-web-app-with-refreshable-models.svg
 levels:
   - beginner
 roles:
