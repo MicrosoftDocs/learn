@@ -14,19 +14,17 @@ You can think of Azure Files as a standard file share, hosted on Azure, that you
 
 Azure Files can be used to supplement, or replace, a company's existing on-premises NAS devices or file servers. Some of the reasons why your organization will want to use Azure Files are:
 
-  - Developers can store apps and configuration files in a file share and connect new VMs to the shared files. This action reduces the speed to get new machines into production.
-  - Cloud-based apps can efficiently write log files using the File REST API to the shared storage. Developers can then map to the shared folder and run their local debugging tools on the shared data.
-  - File shares on Azure don't need a company to buy and deploy expensive redundant hardware and manage software updates.
-  - You can automate the creation and editing of file shares using PowerShell, or Azure CLI commands, leading to an increase in the productivity of a company's operations.
-  - All of the resilience of the Azure platform is inherited by your file share, making files globally redundant. You also gain options to use the integrated snapshots feature and set up automatic backups using Recovery Services vaults.
-  - All the data is encrypted in transit using HTTPS and is stored encrypted when at rest.
-  - The shares are cross-platform, and you can connect to them from Windows, Linux, or macOS.
+- Developers can store apps and configuration files in a file share and connect new VMs to the shared files. This action reduces the speed to get new machines into production.
+- Cloud-based apps can efficiently write log files using the File REST API to the shared storage. Developers can then map to the shared folder and run their local debugging tools on the shared data.
+- File shares on Azure don't need a company to buy and deploy expensive redundant hardware and manage software updates.
+- You can automate the creation and editing of file shares using PowerShell, or Azure CLI commands, leading to an increase in the productivity of a company's operations.
+- All of the resilience of the Azure platform is inherited by your file share, making files globally redundant. You also gain options to use the integrated snapshots feature and set up automatic backups using Recovery Services vaults.
+- All the data is encrypted in transit using HTTPS and is stored encrypted when at rest.
+- The shares are cross-platform, and you can connect to them from Windows, Linux, or macOS.
 
 Moving a companies existing file shares into Azure Files gives them the flexibility to move their data and processing, or just data, into the cloud. They can then benefit from its scalability, security, and reduced costs compared to running and maintaining the required resources on-premises.
 
 ### Choose your data access method
-
-![Flowchart on how to decide on which data access method](../media/2-data-access-method.png)
 
 There are two built-in methods of data access supported by Azure Files. One is direct access via a mounted drive in your operating system. The other is to use a Windows Server (either on-premises or in Azure) and install Azure File Sync to synchronize the files between local shares and Azure Files.
 
