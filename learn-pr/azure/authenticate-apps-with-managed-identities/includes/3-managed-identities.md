@@ -1,4 +1,4 @@
-Azure managed identity is a feature of Azure Active Directory that you can use free of charge. This feature automatically creates identities, to allow apps to authenticate with Azure resources and services. 
+Azure managed identity is a feature of Azure Active Directory that you can use free of charge. This feature automatically creates identities to allow apps to authenticate with Azure resources and services.
 
 Your company is moving all its applications from on-premises servers to Azure hosted virtual machines. As on-premises applications, they authenticate to Azure with service principals. Now you're hosting the application on virtual machines in Azure, you can use managed identities.
 

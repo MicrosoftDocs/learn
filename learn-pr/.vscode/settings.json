@@ -1,5 +1,8 @@
 {
     "cSpell.words": [
         "Availabilty"
+    ],
+    "cSpell.ignoreWords": [
+        "azurecli"
     ]
 }
