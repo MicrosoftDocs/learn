@@ -21,30 +21,30 @@ quiz:
     - content: 'Only HTTP basic authentication'
       isCorrect: false
       explanation: 'Spring Cloud Config Server can also access Git repositories that are public and secured by SSH.'
-    - content: 'Public, secured by SSH, or secured using HTTP basic authentication'
+    - content: 'Public, secured by SSH or secured using HTTP basic authentication'
       isCorrect: true
-      explanation: 'Spring Cloud Config Server can access Git repositories that are public, secured by SSH, or secured using HTTP basic authentication.'
+      explanation: 'Spring Cloud Config Server can access Git repositories that are public, secured by SSH or secured using HTTP basic authentication.'
     - content: 'Secured by SSH, or secured using HTTP basic authentication'
       isCorrect: false
       explanation: 'Spring Cloud Config Server can also access Git repositories that are public.'
-    - content: 'Only publicly-available (unsecured) Git repositories'
+    - content: 'Only publicly available (unsecured) Git repositories'
       isCorrect: false
       explanation: 'Spring Cloud Config Server can also access Git repositories that are secured by SSH or secured using HTTP basic authentication.'
 
   - content: 'Using Spring Cloud Config is a great solution as:'
     choices:
-    - content: 'It uses Git, so your configuration data can be tagged or rollbacked.'
+    - content: 'It uses Git, so your configuration data can be tagged or rolled back.'
       isCorrect: false
-      explanation: 'This is correct, but it is not the only reason why this is a good idea.'
+      explanation: 'This answer is correct, but it is not the only reason why it is a good idea.'
     - content: 'Configuration is stored in a specific Git repository, which can be secured separately.'
       isCorrect: false
-      explanation: 'This is correct, but it is not the only reason why this is a good idea.'
+      explanation: 'This answer is correct, but it is not the only reason why it is a good idea.'
     - content: 'It provides a centralized place to store all your configuration data, for all your microservices.'
       isCorrect: false
-      explanation: 'This is correct, but it is not the only reason why this is a good idea.'
-    - content: 'It allows to store sensitive parameters (like your database password) outside of your application.'
+      explanation: 'This answer is correct, but it is not the only reason why it is a good idea.'
+    - content: 'It allows storing sensitive parameters (like your database password) outside of your application.'
       isCorrect: false
-      explanation: 'This is correct, but it is not the only reason why this is a good idea.'
+      explanation: 'This answer is correct, but it is not the only reason why it is a good idea.'
     - content: 'All of the above.'
       isCorrect: true
-      explanation: 'Spring Cloud Config allows to store your sensitive data in a separate, centralized and secured Git repository.'
+      explanation: 'Spring Cloud Config allows to store your sensitive data in a separate, centralized, and secured Git repository.'

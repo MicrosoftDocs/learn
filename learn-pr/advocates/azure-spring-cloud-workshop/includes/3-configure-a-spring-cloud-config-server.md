@@ -15,8 +15,8 @@ In the new private GitHub repository, add a new `application.yml` file which wil
 
 Typically, each Spring Boot application includes such a file within the application binaries to contain application settings. A Spring Cloud Configuration Server allow such settings to be stored outside your application, which provides the following benefits:
 
-- It allows to store sensitive parameters (like your database password) outside of your application.
-- Your configuration is stored in a Git repository, so its data can be tagged or rollbacked.
+- It allows storing sensitive parameters (like your database password) outside of your application.
+- Your configuration is stored in a Git repository, so its data can be tagged or rolled back.
 - It uses a specific Git repository, which can be secured separately.
 - It provides a centralized place to store all your configuration data, for all your microservices.
 
@@ -37,7 +37,7 @@ git push
 
 ## Create a GitHub personal token
 
-Azure Spring Cloud can access Git repositories that are public, secured by SSH, or secured using HTTP basic authentication. We will use that last option, as it is easier to create and manage with GitHub.
+Azure Spring Cloud can access Git repositories that are public, secured by SSH or secured using HTTP basic authentication. We will use that last option, as it is easier to create and manage with GitHub.
 
 Follow the [GitHub guide to create a personal token](https://help.github.com/en/articles/creating-a-personal-access-token-for-the-command-line) and save your token. When asked to select scopes, check off the entire "repo" section (as shown below) and nothing else.
 
