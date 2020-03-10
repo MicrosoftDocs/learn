@@ -21,7 +21,7 @@ prerequisites: |
   - You should know how to execute a code script using the command line or functionality from your local Python development environment.
   - Basic Python knowledge including an understanding of types, variables, value assignment, calling functions, passing arguments, and importing modules.
 ratingEnabled: true
-iconUrl: /learn/achievements/python-functions.svg
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
 roles:
