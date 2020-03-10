@@ -63,14 +63,14 @@ Add the highlighted code below to the end of your pipeline. If you would like to
 
     ![Locating the web site URL](../media/4-deploy-url.png)
 
-1. You will see the site in production. Scroll down to confirm that the leaderboard has real data in it. This is powered by the function app.
+1. You see the site in production. Scroll down to confirm that the leaderboard has real data in it. This is powered by the function app.
 
     ![Reviewing Space Game](../media/4-space-game.png)
 
     > [!NOTE]
     > If there is an error loading the leaderboard, double-check the steps followed in this module. If you see the exception message "An attempt was made to access a socket in a way forbidden by its access permissions", make sure that the app service's AppSettings:LeaderboardFunctionUrl setting is being set correctly.
 
-1. You can also test out the function app directly. Just navigate to your URL using the format below. The response will be in JSON, which should just render as text in your browser.
+1. You can also test out the function app directly. Just navigate to your URL using the format below. The response is JSON, which should just render as text in your browser.
 
     ```
     http://<leaderboard function name>.azurewebsites.net/api/LeaderboardFunction?pageSize=10

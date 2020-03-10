@@ -57,7 +57,7 @@ The meeting breaks up. The next morning, Andy excitedly pops into Mara's office 
 
 ## What is Azure Functions?
 
-**Azure Functions** is one of the specific offerings within the broader spectrum of Azure serverless computing technologies. It provides an easy way for developers to build straightforward functions that exist in a stateless, serverless environment. They can be triggered using a variety of methods, including HTTP requests, changes to data in storage, receipt of a message from a queue, and more. You can learn more about the various trigger and bindings in [Azure Functions triggers and bindings concepts](https://docs.microsoft.com/azure/azure-functions/functions-triggers-bindings).
+**Azure Functions** is one of the specific offerings within the broader spectrum of Azure serverless computing technologies. It provides an easy way for developers to build straightforward functions that exist in a stateless, serverless environment. They can be triggered using a variety of methods, including HTTP requests, changes to data in storage, receipt of a message from a queue, and more. You can learn more about the various trigger and bindings in [Azure Functions triggers and bindings concepts](https://docs.microsoft.com/azure/azure-functions/functions-triggers-bindings?azure-portal=true).
 
 The Tailspin team selected Azure Functions for this scenario because it met all their needs:
 
