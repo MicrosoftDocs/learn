@@ -19,7 +19,7 @@ The code is written in C#, and you can choose Visual Studio, or Visual Studio Co
 1. In the terminal, install the required libraries. Enter:
     - **dotnet add package Microsoft.Azure.Devices.Client**
     - **dotnet add package Microsoft.Azure.Devices.Provisioning.Client**
-    - **dotnet add package Microsoft.Azure.Devices.Provisioning.Transport.AMQP**
+    - **dotnet add package Microsoft.Azure.Devices.Provisioning.Transport.Amqp**
 
 1. From the **File** menu, open up the **Program.cs** file, and delete the default contents. You'll have to navigate to the `CaveDevice1` folder.
 
@@ -35,7 +35,7 @@ The code is written in C#, and you can choose Visual Studio, or Visual Studio Co
 1. Under **Tools/NuGet Package Manager**, select **Manage NuGet Packages for Solution**. Install the following libraries:
     - **Microsoft.Azure.Devices.Client**
     - **Microsoft.Azure.Devices.Provisioning.Client**
-    - **Microsoft.Azure.Devices.Provisioning.Transport.AMQP**
+    - **Microsoft.Azure.Devices.Provisioning.Transport.Amqp**
 
 1. Delete the default contents of the **Program.cs** file.
 

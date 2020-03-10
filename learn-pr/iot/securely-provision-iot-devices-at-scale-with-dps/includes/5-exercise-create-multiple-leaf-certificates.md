@@ -18,8 +18,6 @@ In this unit, we need to create one leaf certificate for each device that we wan
     download ~/certificates/certs/new-device.cert.pfx
     ```
 
-1. Create a new folder in your **Documents** folder, called "cheese cave certs", or something similar.
-
 1. Copy the **new-device-cert.pfx** file from its downloaded location into the **cheese cave certs** folder, and rename it **new-device-cert1.pfx**.
 
 1. In the Cloud Shell, delete the **new-device-cert** files. This step is important so the tools can be used to create further certificates. You can delete the file, in the **certificates/certs** folder, by going through the following procedure:

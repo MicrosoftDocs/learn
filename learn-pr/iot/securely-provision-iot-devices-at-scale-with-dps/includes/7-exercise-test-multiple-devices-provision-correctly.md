@@ -9,7 +9,7 @@ In this unit, we verify all the pieces we have put in place work as expected. Yo
 
     [![Console output showing all three devices running](../media/iot-hub-dps-devices123.png)](../media/iot-hub-dps-devices123.png#lightbox)
 
-1. In the Azure portal for your DPS service, locate **Monitoring** in the left-hand menu, and select **Metrics**. Verify all three devices are assigned, by setting **Metric** to **Devices assigned**, and **Aggregation** to **Sum**.
+1. In the Azure portal for your DPS service, locate **Monitoring** in the left-hand menu, and select **Metrics**. Verify all three devices are assigned, by setting **Metric** to **Devices assigned**, and **Aggregation** to **Sum**. It might take a minute or two for the metrics to show up.
 
     [![Screenshot showing devices assigned metrics](../media/iot-hub-dps-metrics-devices.png)](../media/iot-hub-dps-metrics-devices.png#lightbox)
 
@@ -38,7 +38,11 @@ In this test, let's change one of the device twin properties in the portal, and 
 
 1. Locate the **desired** section of the **properties** in the code that appears.
 
-1. Change the desired temperature to something different and noticeable: say "50.123". And click **Save**.
+1. Add a desired temperature to something noticeable: say "50.123". And click **Save**.
+
+    ```json
+        "temperature": "50.1234",
+    ```
 
     [![Screenshot showing a change to the desired properties, in a device twin](../media/iot-hub-dps-twin-temp.png)](../media/iot-hub-dps-twin-temp.png#lightbox)
 

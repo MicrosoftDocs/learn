@@ -12,11 +12,11 @@ A Device Provisioning Service (DPS) can be linked to one, or multiple hubs. So, 
 
     [![Screenshot showing the completed fields for a new DPS](../media/iot-hub-dps-resource-name.png)](../media/iot-hub-dps-resource-name.png#lightbox)
 
-1. Create the resource, and wait for it to deploy.
+1. Create the resource, and wait for it to deploy. It can take a minute or two for the deployment message to appear.
 
 ### Link the DPS resource to your IoT Hub
 
-1. In the DPS resource, locate, and select, the **Linked IoT hubs** entry, under **Settings**.
+1. In the DPS resource, locate, and select, the **Linked IoT hubs** entry, under **Settings** in the left-hand menu.
 
 1. Click **+ Add**.
 
@@ -75,6 +75,9 @@ The first time we create any X.509 certificates, we need to download some tools.
     ```azurecli
      download ~/certificates/certs/azure-iot-test-only.root.ca.cert.pem
     ```
+1. Create a new folder in your **Documents** folder, called "cheese cave certs", or something similar.
+
+1. Copy the file you downloaded into the **cheese cave certs** folder.
 
 ### Configure Azure DPS to trust the root certificate
 
@@ -115,6 +118,8 @@ After the root certificate has been uploaded, the **Certificates** pane will dis
     ```azurecli
     download ~/certificates/certs/verification-code.cert.pem
     ```
+
+1. Copy the downloaded file to your **cheese cave certs** folder.
 
 1. Change focus back to the **Certificate Details** pane of the Azure portal. For **Verification Certificate .pem or .cer file**, navigate to, and select the `verification-code.cert.pem` file.
 
