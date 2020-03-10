@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azdo.deploy-azure-functions.2-what-is-azure-functions
-title: What is Azure Functions
+title: What is Azure Functions?
 metadata:
-  title: What is Azure Functions
+  title: What is Azure Functions?
   description: Understand the benefits of Azure Functions and when to use them.
   ms.date: 03/02/2020
   author: edkaim
