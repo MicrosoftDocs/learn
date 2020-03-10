@@ -12,4 +12,4 @@ Spring Boot microservices and gateways running inside Azure Spring Cloud can be 
 - You can now scale your service horizontally, for example you can give it 2 CPUs and 4 Gb of RAM.
 - You can also scale your service vertically, for example you can set the instance count to 6.
 
-![Scaling](media/7-scaling.png)
+![Scaling](../media/7-scaling.png)
