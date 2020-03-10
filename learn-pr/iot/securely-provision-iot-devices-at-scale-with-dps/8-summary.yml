@@ -23,7 +23,7 @@ quiz:
       explanation: Close, but no.
     - content: 'Device Provisioning Service'
       isCorrect: true
-      explanation: The service can be linked to one or more IoT Hubs.
+      explanation: The service can be linked to one, or more, IoT Hubs.
     - content: 'Device Provisioning Security'
       isCorrect: false
       explanation: Close, but no.
@@ -35,7 +35,7 @@ quiz:
     choices:
     - content: 'Proof of Possession'
       isCorrect: true
-      explanation: Proof of Possession of the CA certificate is provided to DPS by uploading a certificate generated from the CA certificate with the verification code that was generated within DPS. This process is how you provide proof that you own the CA Certificate.
+      explanation: Proof of Possession of the CA certificate is provided to DPS by uploading a certificate generated from the CA certificate with a verification code. This process is how you provide proof that you own the CA Certificate.
     - content: 'Generate Verification Code'
       isCorrect: false
       explanation: Generating a verification code is part of the process, but not the name for the complete process.
@@ -59,7 +59,7 @@ quiz:
       explanation: This endpoint doesn't apply to all devices.
     - content: 'The setting for SecurityProviderX509'
       isCorrect: false
-      explanation: This variable is use in the code, and isn't related to a global endpoint.
+      explanation: This variable is used in the code, and isn't related to a global endpoint.
 
   - content: 'Which allocation policy for Azure IoT DPS systems is the default?'
     choices:
@@ -71,7 +71,7 @@ quiz:
       explanation: This policy is the default, and the right one to use with a single IoT Hub.
     - content: 'Static configuration: This policy requires a desired IoT Hub be listed in the enrollment entry for a device to be provisioned.'
       isCorrect: false
-      explanation: Not the default. This policy enables a specified IoT Hub to be used for any one device.
+      explanation: Not the default. This policy enables a specified IoT Hub to be used for specific devices.
 
 
   - content: 'Each Group Enrollment requires one root X.509 certificate. What single certificate is chained to the root certificate?'
