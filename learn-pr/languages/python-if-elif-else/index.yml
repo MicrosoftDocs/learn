@@ -20,7 +20,7 @@ prerequisites: |
   - You should have exposure to the use of input and output functions like `print()` and `input()`.
   - You should know how to create and assign values to variables.
 ratingEnabled: true
-iconUrl: /learn/achievements/python-if-elif-else.svg
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
 roles:
