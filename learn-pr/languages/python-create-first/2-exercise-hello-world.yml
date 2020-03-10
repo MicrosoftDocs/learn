@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.languages.python-create-first.exercise-hello-world
-title: Exercise - Hello World!
+title: Exercise - Hello world!
 metadata:
-  title: Exercise - Hello World!
+  title: Exercise - Hello world!
   description: Learn to work in Visual Studio Code and write your first program that simply displays a message to output.
   ms.date: 1/7/2020
   author: bobtabor-msft
