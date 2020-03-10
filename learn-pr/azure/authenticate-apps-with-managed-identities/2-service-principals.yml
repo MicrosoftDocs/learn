@@ -3,12 +3,11 @@ uid: learn.authenticate-apps-with-managed-identities.2-service-principals
 metadata:
   title: Authentication with service principals in Azure AD
   description: Explore Azure service principals, the concept behind them, and how to implement them to gain access to Azure resources.
-  ms.date: 04/30/2019
+  ms.date: 03/11/2020
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 title: Authentication with service principals in Azure AD
 durationInMinutes: 10
 content: |
@@ -18,23 +17,23 @@ quiz:
   questions:
   - content: "Which three items are needed for a custom app to authenticate with an Azure AD application?"
     choices:
-    - content: Tenant ID, Application ID, and Object ID.  
+    - content: Tenant ID, application ID, and object ID.  
       isCorrect: false
-      explanation: The Object ID is the identifier for the application object rather than the application itself.
-    - content: Object ID, Application ID, and authentication key.  
+      explanation: The object ID is the identifier for the application object rather than the application itself.
+    - content: Object ID, application ID, and authentication key.  
       isCorrect: false
       explanation: Specifying a tenant is a key component of an authentication request.
-    - content: Tenant ID, public key, and authentication key. 
+    - content: Tenant ID, public key, and authentication key.
       isCorrect: false
       explanation: Both a public key or an authentication key can be used but both are not required.
-    - content: Tenant ID, Application ID, and authentication key. 
+    - content: Tenant ID, application ID, and authentication key.
       isCorrect: true
       explanation: The tenant ID, application ID, and authentication key are required for successful authorization request.
   - content: "What service is called when your application is passing a token to Azure?"
     choices:
-    - content: Azure Active Directory
+    - content: Azure AD
       isCorrect: false
-      explanation: Authentication is completed using Azure Active Directory (AD) but the token is not passed to Azure AD.
+      explanation: Authentication is completed using Azure AD but the token is not passed to Azure AD.
     - content: Azure Resource Manager
       isCorrect: true
       explanation: Azure Resource Manager is the framework used to connect or authenticate to Azure resources from a custom application.

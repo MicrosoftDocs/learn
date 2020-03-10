@@ -3,12 +3,11 @@ uid: learn.authenticate-apps-with-managed-identities.8-summary
 metadata:
   title: Summary
   description: Summary
-  ms.date: 04/30/2019
+  ms.date: 03/11/2020
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 title: Summary
 durationInMinutes: 5
 content: |

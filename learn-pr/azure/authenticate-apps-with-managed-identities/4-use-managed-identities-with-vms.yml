@@ -3,12 +3,11 @@ uid: learn.authenticate-apps-with-managed-identities.4-use-managed-identities-wi
 metadata:
   title: Using managed identities with Azure virtual machines
   description: Learn about the management of identity within Azure virtual machines and how it interacts with the Azure Resource Manager to form a more secure working environment for applications and their authentication.
-  ms.date: 04/30/2019
+  ms.date: 03/11/2020
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 title: Using managed identities with Azure virtual machines
 durationInMinutes: 10
 content: |
