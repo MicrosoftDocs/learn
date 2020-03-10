@@ -19,11 +19,11 @@ In this exercise, you'll edit your app to use the new key vault. Then grant the 
     >
     > ```azurecli
     > export publicIP=$(az vm show \
-    > --name prodserver \
-    > --resource-group <rgn>[Sandbox resource group]</rgn> \
-    > --show-details \
-    > --query [publicIps] \
-    > --output tsv)
+    >     --name prodserver \
+    >     --resource-group <rgn>[Sandbox resource group]</rgn> \
+    >     --show-details \
+    >     --query [publicIps] \
+    >     --output tsv)
     >```
     >
     > Then rerun `ssh $publicIP`
@@ -129,11 +129,11 @@ In this exercise, you'll edit your app to use the new key vault. Then grant the 
     exit
     ```
 
-1. You should still have a note of the principal ID for your VM from the previous exercise. If not, run the following command to find the system-assigned ID for your VM. Replace *\<vm name>* with the name of your VM:
+1. You should still have a note of the principal ID for your VM from the previous exercise. If not, run the following command to find the system-assigned ID for your VM. Replace `<vm name>` with the name of your VM:
 
     ```azurecli
     az vm identity show \
-      --name prodserver \
+      --name <vm name> \
       --resource-group <rgn>[Sandbox resource group]</rgn>
     ```
 
@@ -141,8 +141,8 @@ In this exercise, you'll edit your app to use the new key vault. Then grant the 
 
     ```JSON
     {
-        "principalId": "dba6da53-9780-47fc-8fc4-4b25f154e845",
-        "tenantId": "a95baa51-dc91-4b9a-8362-877408afddbe",
+        "principalId": "aba6da53-9180-47fc-8fc4-4b35f154e845",
+        "tenantId": "a95baa51-dcb1-4b9a-8312-8774a8afddbe",
         "type": "SystemAssigned",
         "userAssignedIdentities": null
     }
@@ -153,10 +153,14 @@ In this exercise, you'll edit your app to use the new key vault. Then grant the 
 1. Authorize the VM to retrieve and list secrets in your key vault using this principal ID:
 
     ```azurecli
-        az keyvault set-policy \
-          --name $KVNAME \
-          --object-id $(az vm identity show --name prodserver --resource-group <rgn>[Sandbox resource group]</rgn> --output tsv --query principalId) \
-          --secret-permissions get list
+    az keyvault set-policy \
+        --name $KVNAME \
+        --secret-permissions get list \
+        --object-id $(az vm identity show \
+                        --name prodserver \
+                        --resource-group <rgn>[Sandbox resource group]</rgn> \
+                        --output tsv \
+                        --query principalId)
     ```
 
     The value returned will be in JSON format and contains ID, location, name, and all the associated properties.
@@ -169,7 +173,7 @@ In this exercise, you'll edit your app to use the new key vault. Then grant the 
     ssh $publicIP
     ```
 
-1. Go to the `identity/secretapp` folder:
+1. Change to the `identity/secretapp` folder:
 
     ```bash
     cd ~/identity/secretapp
