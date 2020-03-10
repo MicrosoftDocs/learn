@@ -1,6 +1,6 @@
 In this module, we will build Spring Boot microservice that is cloud-enabled: it uses a Spring Cloud Service Registry and a [Spring Cloud Config Server](https://cloud.spring.io/spring-cloud-config) which are both managed and supported by Azure Spring Cloud.
 
-This microservice will use Spring Data MongoDB to read and write data from an [Azure Cosmos DB database](https://docs.microsoft.com/en-us/azure/cosmos-db/?WT.mc_id=azurespringcloud-mslearn-judubois) database:
+This microservice will use Spring Data MongoDB to read and write data from an [Azure Cosmos DB database](https://docs.microsoft.com/azure/cosmos-db/?WT.mc_id=azurespringcloud-mslearn-judubois) database:
 
 - That database will be automatically bound to our service by Azure Spring Cloud.
 - CosmosDB is a globally-distributed database, which supports the MongoDB protocol, so in this (simplified) case, we will use it as if it was a normal MongoDB database.
