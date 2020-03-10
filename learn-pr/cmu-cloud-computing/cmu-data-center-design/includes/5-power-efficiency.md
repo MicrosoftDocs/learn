@@ -30,7 +30,7 @@ In 2007, the Lawrence Berkeley National Labs (LBNL) ran an energy study for 25 d
 
 ![PUE of 25 datacenters studied by Lawrence Berkeley National Labs, 2007](../media/pue-25-data-centers.png)
 
-_Figure 20: PUE of 25 datacenters studied by LBNL_ ([Lawrence Berkeley National Labs, 2007](http://hightech.lbl.gov/documents/data_centers/gsagovenergycard_03_09.pdf))
+_Figure 20: PUE of 25 datacenters studied by LBNL_ (Lawrence Berkeley National Labs, 2007)
 
 The PUE allows companies to identify areas for improvement, address these areas, and monitor the progress in PUE over time. Google publishes quarterly PUEs for their actual datacenters, as shown in Figure 21. Because Google's datacenters are mostly in the northern hemisphere, the average PUE typically rises in the summer because the datacenters require increased use of the cooling equipment.
 

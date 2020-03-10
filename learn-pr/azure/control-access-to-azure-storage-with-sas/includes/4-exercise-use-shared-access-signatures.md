@@ -129,7 +129,7 @@ In this exercise, you'll create a storage account and upload some example patien
     Application started. Press Ctrl+C to shut down.
     ```
 
-1. Go to your personal URL, which should be in this format: **https://gateway11.northeurope.console.azure.com/n/cc-4016c848/cc-4016c848/proxy/8000/**. Make sure you have a **/** at the end of the address.
+1. Go to your personal URL, which should be in this format: **https:\//gateway11.northeurope.console.azure.com/n/cc-4016c848/cc-4016c848/proxy/8000/**. Make sure you have a **/** at the end of the address.
 
 1. Select **Get all patients**, to view all the images stored in the storage account.
 
