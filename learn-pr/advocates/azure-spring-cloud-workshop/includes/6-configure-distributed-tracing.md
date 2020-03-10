@@ -55,4 +55,4 @@ cd ..
 
 You should now have access to a full application map, as well as a search engine that allows to find performance bottlenecks.
 
-![Distributed tracing](media/6-distributed-tracing.png)
+![Distributed tracing](../media/6-distributed-tracing.png)

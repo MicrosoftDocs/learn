@@ -84,6 +84,6 @@ You can now commit and push the `azure-spring-cloud.yml` file we just created.
 
 Going to the `Actions` tab of your  GitHub project, you should see that your project is automatically built and deployed to your Azure Spring Cloud instance:
 
-![GitHub workflow](media/8-github-workflow.png)
+![GitHub workflow](../media/8-github-workflow.png)
 
 Congratulations! Each time you `git push` your code, your microservice is now automatically deployed to production.
