@@ -1,0 +1,46 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-lighthouse.2-intro-azure-lighthouse
+metadata:
+  title: Introduction to Azure Lighthouse
+  description: Obtain a clear understanding of the what Azure Lighthouse offers, and the benefits it can bring to your managed service offering.
+  ms.date: 01/08/2020
+  author: iankensey
+  ms.author: v-geo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction to Azure Lighthouse
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-intro-azure-lighthouse.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: 'How much does Azure Lighthouse cost to use?'
+    choices:
+    - content: Free
+      isCorrect: true
+      explanation: That's correct. It's free as long as you have an existing Azure subscription.
+    - content: Cost is based on number of onboarded customers.
+      isCorrect: false
+      explanation: That's incorrect. Azure Lighthouse is free to use, as long as you have an existing Azure subscription.
+    - content: Free for the first ten onboarded customers.
+      isCorrect: false
+      explanation: That's incorrect. Azure Lighthouse is free to use, as long as you have an existing Azure subscription.
+    - content: Cost is based on number of marketplace offers and Azure Resource Manager Templates used.
+      isCorrect: false
+      explanation: That's incorrect. Azure Lighthouse is free to use, as long as you have an existing Azure subscription.
+  - content: 'What Azure Lighthouse page would a Service Provider use to manage their customers?'
+    choices:
+    - content: My Service Offerings.
+      isCorrect: false
+      explanation: That's incorrect. There is only one page to view your onboarded customers, my customers.
+    - content: My Offerings.
+      isCorrect: false
+      explanation: That's incorrect. There is only one page to view your onboarded customers, my customers.
+    - content: My Customers.
+      isCorrect: true
+      explanation: That's correct. The My Customers page lets you see all the customers you have onboarded.
+    - content: My Customer Offerings.
+      isCorrect: false
+      explanation: That's incorrect. There is only one page to view your onboarded customers, my customers.
+
