@@ -10,6 +10,6 @@ metadata:
   ms.prod: learning-azure
 title: Create an IoT Hub
 azureSandbox: true
-durationInMinutes: 8
+durationInMinutes: 4
 content: |
   [!include[](includes/2-create-iot-hub.md)]

@@ -10,6 +10,6 @@ metadata:
   ms.prod: learning-azure
   zone_pivot_groups: vsandcode
 title: Exercise - create the code for the sensor devices
-durationInMinutes: 12
+durationInMinutes: 10
 content: |
   [!include[](includes/6-exercise-create-code-sensor-devices.md)]

@@ -10,6 +10,6 @@ metadata:
   ms.prod: learning-azure
 title: Exercise - Create a DPS resource, root certificate, and group enrollment
 azureSandbox: true
-durationInMinutes: 12
+durationInMinutes: 10
 content: |
   [!include[](includes/4-exercise-create-dps-resource-root-certificate-group-enrollment.md)]

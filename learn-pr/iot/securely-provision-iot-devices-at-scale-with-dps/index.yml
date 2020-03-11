@@ -3,7 +3,7 @@ uid: learn.iot.automatically-provision-iot-devices-securely-and-at-scale-with-dp
 metadata:
   title: Automatically provision IoT devices securely and at scale with DPS
   description: The focus of this module is on creating a Device Provisioning Service (DPS) to securely handle multiple remote devices. First, you create an IoT Hub, and add the DPS service. Next, an X.509 root certificate, and multiple leaf certificates, are created to handle security. Code for a simulated device is provided. You then link all the pieces together, and verify that your DPS resource works. After completing the module, you should have a good understanding of how to provision Azure IoT devices at scale.
-  ms.date: 3/15/2020
+  ms.date: 3/11/2020
   author: PeterTurcan
   ms.author: Olivier.Bloch
   ms.topic: interactive-tutorial
