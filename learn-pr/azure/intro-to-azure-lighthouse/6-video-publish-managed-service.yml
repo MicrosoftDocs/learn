@@ -30,11 +30,11 @@ quiz:
     choices:
     - content: Enterprise Agreement.
       isCorrect: false
-      explanation: That's incorrect. You'd use the Bring your own licence model.
+      explanation: That's incorrect. You'd use the Bring your own license model.
     - content: Pay-As-You-Go.
       isCorrect: false
-      explanation: That's incorrect. You'd use the Bring your own licence model.
+      explanation: That's incorrect. You'd use the Bring your own license model.
     - content: Bring your own license.
       isCorrect: true
-      explanation: That's correct. The Bring your own licence model is the only applicable one for a managed service offer.
+      explanation: That's correct. The Bring your own license model is the only applicable one for a managed service offer.
 

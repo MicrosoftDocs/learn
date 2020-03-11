@@ -71,7 +71,7 @@ Learn about and adopt Azure Lighthouse for your managed service business to mana
 
    In this unit, we want to cover preparing your organization to use Azure Lighthouse, highlighting the roles of users, groups, and tenants. Also, the security considerations when implementing Azure Lighthouse.  This unit will cover these subjects in more detail.
 
-   Note: The unit scenario should indicate you want to admin their security centre so this how you'd onboard for a specific scenario.  
+   Note: The unit scenario should indicate you want to admin their security center so this how you'd onboard for a specific scenario.  
 
    - **Getting started**
 
@@ -147,7 +147,7 @@ Learn about and adopt Azure Lighthouse for your managed service business to mana
    - **Managing Azure Resources**
      - Taking over management tasks
    - **Enhanced services and scenarios**
-     - Using security centre to set up alerts/notifications
+     - Using security center to set up alerts/notifications
 
    **Knowledge Check**
 
