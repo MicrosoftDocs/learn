@@ -30,7 +30,7 @@ units:
 - learn.intro-to-azure-lighthouse.1-introduction
 - learn.intro-to-azure-lighthouse.2-intro-azure-lighthouse
 - learn.intro-to-azure-lighthouse.3-prepare-for-azure-lighthouse
-- learn.intro-to-azure-lighthouse.4-using-arm-templates
+- learn.intro-to-azure-lighthouse.4-using-templates
 - learn.intro-to-azure-lighthouse.5-video-cross-tenant-management
 - learn.intro-to-azure-lighthouse.6-video-publish-managed-service
 - learn.intro-to-azure-lighthouse.7-summary

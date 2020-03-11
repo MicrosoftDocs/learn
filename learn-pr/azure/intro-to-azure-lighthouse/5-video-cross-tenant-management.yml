@@ -8,7 +8,6 @@ metadata:
   ms.author: v-geo
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 title: Set up cross-tenant management
 durationInMinutes: 12
 content: |
@@ -18,23 +17,23 @@ quiz:
   questions:
   - content: 'As Contoso, how would you find the customers you have onboarded?'
     choices:
-    - content: From the Onboarded Customers page
+    - content: From the Onboarded Customers page.
       isCorrect: false
-      explanation: There is no onboarded customers page. The My customers page shows the onboarded subscriptions
-    - content: From the My Customers page
+      explanation: That's incorrect. There is no onboarded customers page. The My customers page shows the onboarded subscriptions.
+    - content: From the My Customers page.
       isCorrect: true
-      explanation: This page will show all the customers who have completed the onboarding processes
-    - content: From the Subscriptions page
+      explanation: That's correct. This page will show all the customers who have completed the onboarding processes.
+    - content: From the Subscriptions page.
       isCorrect: false
-      explanation: The subscriptions page only shows the Contoso subscriptions. The My customers page shows the onboarded subscriptions
+      explanation: That's incorrect. The subscriptions page only shows the Contoso subscriptions. The My customers page shows the onboarded subscriptions.
   - content: 'How would you check the compliance of an onboarded customers resource against Azures default security policy?'
     choices:
-    - content: Using Azure Sentinel and filtering for the desired customer
+    - content: Using Azure Sentinel and filtering for the desired customer.
       isCorrect: false
-      explanation: Security Center will let you know if a subscription or other resource meets Azure's default security policy
-    - content: Using Azure Monitor and filtering for the desired customer
+      explanation: That's incorrect. Security Center will let you know if a subscription or other resource meets Azure's default security policy.
+    - content: Using Azure Monitor and filtering for the desired customer.
       isCorrect: false
-      explanation: Security Center will let you know if a subscription or other resource meets Azure's default security policy
-    - content: Using Security Center and filtering for the desired customer
+      explanation: That's incorrect. Security Center will let you know if a subscription or other resource meets Azure's default security policy.
+    - content: Using Security Center and filtering for the desired customer.
       isCorrect: true
-      explanation: Security Center will let you know if a specific or all subscriptions meet the security policy
+      explanation: That's correct. Security Center will let you know if a specific or all subscriptions meet the security policy.
