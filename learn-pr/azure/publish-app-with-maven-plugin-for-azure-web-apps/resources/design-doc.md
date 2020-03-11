@@ -129,8 +129,8 @@ Why would a customer use the technology; that is, what type of problem does it s
 
 Environment setup and commands:
 
-- guide: https://docs.microsoft.com/en-gb/java/azure/eclipse/azure-toolkit-for-eclipse-create-hello-world-web-app
-- guide: https://docs.microsoft.com/en-gb/azure/app-service/app-service-web-get-started-java 
+- guide: https://docs.microsoft.com/java/azure/eclipse/azure-toolkit-for-eclipse-create-hello-world-web-app
+- guide: https://docs.microsoft.com/azure/app-service/app-service-web-get-started-java 
 - Create a directory
 - run: mvn archetype:generate -DgroupId=example.demo -DartifactId=helloworld -DarchetypeArtifactId=maven-archetype-webapp
 - cd helloworld

@@ -4,7 +4,7 @@ title: Authenticate deployments to Azure App Service
 metadata:
   title: Authenticate deployments to Azure App Service
   description: In this unit, you'll learn how to authenticate your web app deployments to Azure App Service.
-  ms.date: 03/01/2020
+  ms.date: 03/10/2020
   author: rmcmurray
   ms.author: robmcm
   ms.topic: interactive-tutorial

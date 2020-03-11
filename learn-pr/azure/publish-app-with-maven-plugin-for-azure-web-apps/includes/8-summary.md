@@ -20,7 +20,7 @@ Now that you've learned how to use the Maven Plugin for Azure App Service, you'r
 
 The following links discuss additional information related to Java development on Azure:
 
-- [Azure for Java cloud developers](https://docs.microsoft.com//azure/java)
+- [Azure for Java cloud developers](https://docs.microsoft.com/azure/java)
 - [Install the JDK for Azure and Azure Stack](https://docs.microsoft.com/azure/java/jdk/java-jdk-install)
 - [Tomcat project page](https://tomcat.apache.org/maven-plugin-2.2)
 - [Create an Azure service principal with Azure CLI](https://docs.microsoft.com/cli/azure/create-an-azure-service-principal-azure-cli?view=azure-cli-latest)
