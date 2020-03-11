@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.advocates.shifting-nodejs-express-apis-to-serverless.1-introduction
+uid: learn.azure.shift-express-api-azure-functions.1-introduction
 metadata:
   title: Introduction
   description: Refactor Node.js Express APIs to Serverless APIs with Azure Functions

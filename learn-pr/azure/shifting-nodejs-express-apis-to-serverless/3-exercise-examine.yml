@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.advocates.shifting-nodejs-express-apis-to-serverless.3-exercise-examine
+uid: learn.azure.shift-express-api-azure-functions.3-exercise-examine
 metadata:
   title: Exercise - Analyze the limitations of a polling-based web app
   description: Review the implementation of polling website and run the app on your machine.

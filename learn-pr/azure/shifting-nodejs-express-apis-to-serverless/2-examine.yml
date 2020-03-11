@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.advocates.shifting-nodejs-express-apis-to-serverless.2-examine
+uid: learn.azure.shift-express-api-azure-functions.2-examine
 metadata:
   title: Analyze the limitations of a polling-based web app
   description: Discuss the drawbacks of a web application that relies on polling to keep the UI updated.
