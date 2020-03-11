@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.protect-identities-with-aad-idp.5-investigate-detected-risks
+uid: learn.protect-identities-with-aad-idp.4-investigate-detected-risks
 metadata:
   title: Investigate and remediate risks detected by Identity Protection
   description: Investigate and remediate risks detected by Identity Protection
-  ms.date: 12/30/2019
+  ms.date: 03/11/2019
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
@@ -11,7 +11,7 @@ metadata:
 title: Investigate and remediate risks detected by Identity Protection
 durationInMinutes: 10
 content: |
-  [!include[](includes/5-investigate-detected-risks.md)]
+  [!include[](includes/4-investigate-detected-risks.md)]
 quiz:
   title: Check your knowledge
   questions:

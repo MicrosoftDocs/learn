@@ -11,7 +11,7 @@ By the end of this module, you'll know how to protect your organization's identi
 In this module, you will:
 
 - Describe the features of Identity Protection
-- Configure and simulate a risk detection
+- Describe the investigation and remediation features of Azure AD Identity Protection
 
 ## Prerequisites
 
