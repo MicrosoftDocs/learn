@@ -18,4 +18,4 @@ In this module, you'll:
 - Experience writing web apps in Java
 - Knowledge of building and deploying Java web apps with Maven
 
-[//]: # (NOTE: The following prerequisites would be necessary if the learner wasn't using the sandbox: A supported Azure Java Development Kit (JDK) https://aka.ms/azure-jdks and Apache Maven https://aka.ms/apache-maven)
+[//]: # (NOTE: The following prerequisites would be necessary if the learner wasn't using the sandbox - A supported Azure Java Development Kit https://aka.ms/azure-jdks and Apache Maven https://aka.ms/apache-maven)
