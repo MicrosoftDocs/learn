@@ -1,7 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.iot.automatically-provision-iot-devices-securely-and-at-scale-with-dps.exercise-create-multiple-leaf-certificates
 metadata:
-  title: Exercise - create multiple leaf certificates
   description: Create one leaf certificate for each remote sensor device.
   ms.date: 3/15/2020
   author: PeterTurcan

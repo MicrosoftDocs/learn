@@ -1,7 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.iot.automatically-provision-iot-devices-securely-and-at-scale-with-dps.summary
 metadata:
-  title: Summary
   description: Summarizes the skills learnt in the module, and finishes with a knowledge check.
   ms.date: 3/15/2020
   author: PeterTurcan

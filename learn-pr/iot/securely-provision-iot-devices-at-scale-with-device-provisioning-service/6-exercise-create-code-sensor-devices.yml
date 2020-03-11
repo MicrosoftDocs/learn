@@ -1,7 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.iot.automatically-provision-iot-devices-securely-and-at-scale-with-dps.exercise-create-code-sensor-devices
 metadata:
-  title: Exercise - create the code for the sensor devices
   description: Create multiple apps, each app simulating one sensor device.
   ms.date: 3/15/2020
   author: PeterTurcan

@@ -1,7 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.iot.automatically-provision-iot-devices-securely-and-at-scale-with-dps.overview-dps-x509-certificates-enrollments
 metadata:
-  title: Overview of the Device Provisioning Service resource, X.509 certificates, and enrollments
   description: Provides an overview of the Azure Device Provisioning Service, X.509 certificates, and individual and group enrollments.
   ms.date: 3/15/2020
   author: PeterTurcan

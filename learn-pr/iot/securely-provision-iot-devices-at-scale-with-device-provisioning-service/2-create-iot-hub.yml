@@ -1,7 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.iot.automatically-provision-iot-devices-securely-and-at-scale-with-dps.create-iot-hub
 metadata:
-  title: Create an IoT Hub
   description: Goes through the process of creating an IoT Hub to handle cheese cave telemetry.
   ms.date: 3/15/2020
   author: PeterTurcan
