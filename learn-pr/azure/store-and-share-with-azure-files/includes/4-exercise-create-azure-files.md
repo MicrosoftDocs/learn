@@ -8,12 +8,12 @@ In this exercise, you'll first a new storage account and two file shares for rep
 
 1. Create a storage account using the Azure CLI command.
 
-    ```bash
+    ```azurecli
     export STORAGEACCT=learnazurefileshare$RANDOM
 
     az storage account create \
         --name $STORAGEACCT \
-        --resource-group <rgn>[sandbox Resource Group]</rgn> \
+        --resource-group <rgn>[sandbox resource group]</rgn> \
         --sku Standard_GRS
     ```
 
@@ -21,7 +21,7 @@ In this exercise, you'll first a new storage account and two file shares for rep
 
     ```azurecli
     STORAGEKEY=$(az storage account keys list \
-        --resource-group <rgn>[sandbox Resource Group]</rgn> \
+        --resource-group <rgn>[sandbox resource group]</rgn> \
         --account-name $STORAGEACCT \
         --query "[0].value" | tr -d '"')
     ```
@@ -54,7 +54,7 @@ Next, create a Windows Server VM to simulate an on-premises machine running in t
 
     ```azurecli
     az vm create \
-        --resource-group <rgn>[sandbox Resource Group]</rgn> \
+        --resource-group <rgn>[sandbox resource group]</rgn> \
         --name 2019FileServer \
         --image Win2019Datacenter \
         --admin-username azureuser

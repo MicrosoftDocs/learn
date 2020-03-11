@@ -38,7 +38,7 @@ The only required argument to the above command is `--name` but it won't enable 
 
 There are interesting optional arguments that you may find useful in some situations. The first argument controls the size of the share in gigabytes. If you need this restriction, use the `--quota` argument. The second argument lets you control the timeout for calls to the service in seconds with `--timeout`.
 
-The defaults for these arguments are acceptable in our scenario. So the full command takes the following form:
+The defaults for these arguments are acceptable in our scenario. So, the full command takes the following form:
 
 ```azurelci
 az storage share create \

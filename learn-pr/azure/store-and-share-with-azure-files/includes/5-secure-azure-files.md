@@ -17,13 +17,19 @@ When mounting Azure file shares, Windows needs to communicate over port 445. Org
 To limit access to your on-premises networks, you'll need to know your public-facing IP address. With this information, enable the storage accounts firewall to allow access from selected networks. You can then add your public IP address to the list of allowed addresses, either in the portal or by using a PowerShell command:
 
 ```powershell
-Add-AzStorageAccountNetworkRule -ResourceGroupName "myresourcegroup" -AccountName "mystorageaccount" -IPAddressOrRange "NNN.NNN.NNN.NNN"
+Add-AzStorageAccountNetworkRule `
+    -ResourceGroupName "myresourcegroup" `
+    -AccountName "mystorageaccount" `
+    -IPAddressOrRange "NNN.NNN.NNN.NNN"
 ```
 
 Or you could use a CLI command:
 
 ```azurelci
-az storage account network-rule add --resource-group "myresourcegroup" --account-name "mystorageaccount" --ip-address "NNN.NNN.NNN.NNN"
+az storage account network-rule add \
+    --resource-group "myresourcegroup" \
+    --account-name "mystorageaccount" \
+    --ip-address "NNN.NNN.NNN.NNN"
 ```
 
 Where `NNN.NNN.NNN.NNN` is your public-facing IP address.
@@ -37,13 +43,19 @@ Using the commands in the previous exercise creates an Azure storage account wit
 Or you can automate it with a PowerShell command:
 
 ```powershell
-Set-AzStorageAccount -Name "StorageAccountName" -ResourceGroupName "ResourceGroupName" -EnableHttpsTrafficOnly $True
+Set-AzStorageAccount `
+    -Name "StorageAccountName" `
+    -ResourceGroupName "ResourceGroupName" `
+    -EnableHttpsTrafficOnly $True
 ```
 
 Or you could use a CLI command:
 
 ```azurecli
-az storage account update -g ResourceGroupName -n StorageAccountName --https-only true
+az storage account update \
+    --resource-group ResourceGroupName \
+    --name StorageAccountName \
+    --https-only true
 ```
 
 The secure transfer option only allows requests to the storage account over a secure HTTPS connection. Any requests using HTTP will be rejected. When you're using the Azure Files service, connections without encryption will fail, including when you're using SMB 2.1, SMB 3.0 without encryption, or some flavors of the Linux SMB client.
@@ -54,7 +66,7 @@ The finance company is running their new reporting application on a VM hosted on
 
 The benefits of Azure AD DS are that you can manage access with role-based access controls. Files inherit their existing NTFS DACLs.
 
-The first step to setting up Azure AD DS is to enable Azure AD Domain Services for the tenant and have the VM reside in the same VNET. With these things in place, you'll enable Azure AD DS authentication on the storage account. You can then grant access permissions to a share in the storage account. These permissions can be at the user, group, or service principal level.
+The first step to setting up Azure AD DS is to enable Azure AD Domain Services for the tenant and have the VM reside in the same virtual network. With these things in place, you'll enable Azure AD DS authentication on the storage account. You can then grant access permissions to a share in the storage account. These permissions can be at the user, group, or service principal level.
 
 ![A diagram showing the steps in order required to set up Azure AD DS](../media/5-azure-active-directory-over-smb-workflow.png)
 
