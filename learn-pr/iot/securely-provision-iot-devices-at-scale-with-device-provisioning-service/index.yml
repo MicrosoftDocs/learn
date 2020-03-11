@@ -24,7 +24,7 @@ prerequisites: |
   - Ability to navigate the Azure IoT portal
   - Ability to use C#, at the beginner level
   - Experience using Visual Studio, or Visual Studio Code, at the beginner level
-iconUrl: /learn/achievements/iot/automatically-provision-iot-devices-securely-and-at-scale-with-dps.svg
+iconUrl: /learn/achievements/iot/automatically-provision-iot-devices-securely-at-scale-with-device-provisioning-service.svg
 ratingEnabled: true
 levels:
 - beginner
@@ -42,4 +42,4 @@ units:
 - learn.iot.automatically-provision-iot-devices-securely-and-at-scale-with-dps.exercise-test-multiple-devices-provision-correctly
 - learn.iot.automatically-provision-iot-devices-securely-and-at-scale-with-dps.summary
 badge:
-  uid: learn.iot.automatically-provision-iot-devices-securely-and-at-scale-with-dps.badge
+  uid: learn.iot.automatically-provision-iot-devices-securely-at-scale-with-device-provisioning-service.badge

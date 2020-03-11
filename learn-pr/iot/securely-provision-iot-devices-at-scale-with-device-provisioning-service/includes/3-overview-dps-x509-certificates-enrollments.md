@@ -34,7 +34,7 @@ Suffice to conclude that public/private key technology is state-of-the-art secur
 
 An Azure Device Provisioning Service can be linked to one, or more, IoT Hubs, and can be thought of as a system for managing your certificates and your enrollments.
 
-### Individual and Group Enrollments
+### Individual and group enrollments
 
 An Azure DPS can contain a number of individual, or group, enrollments. In our scenario, the group enrollment provides the solution we're looking for. One enrollment group works with one root certificate, and any number of leaf certificates signed by this root. An enrollment maintains information on all the devices that have tried to register.
 
@@ -44,7 +44,7 @@ Another concept you'll see when we create an Azure DPS resource, is that of _all
 
 After creating your enrollments, and self-signed root certificate, there's one more process necessary to prove to the provisioning service that you own the root certificate.
 
-### Proof of Possession
+### Proof of possession
 
 When uploading certificates to Azure DPS, you'll be asked to generate a verification code.
 
