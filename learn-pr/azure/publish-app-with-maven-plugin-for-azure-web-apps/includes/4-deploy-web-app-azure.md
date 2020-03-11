@@ -1,14 +1,14 @@
-The `azure-webapp-maven-plugin` has two goals for Java developers: the first is to make managing and configuring the Azure App Service plugin easier, and the second is to simplify deploying Maven projects to Azure App Service. In the previous exericise, you created a quick "hello world" example Java web app and tested it locally. Adding the Maven Plugin for Azure App Service to your project allows you to deploy your app to Azure App Service.
+The `azure-webapp-maven-plugin` has two goals for Java developers: the first is to make managing and configuring the Azure App Service plugin easier, and the second is to simplify deploying Maven projects to Azure App Service. In the previous exercise, you created a quick "hello world" example Java web app and tested it locally. Adding the Maven Plugin for Azure App Service to your project allows you to deploy your app to Azure App Service.
 
 In this unit, you'll look at the options for your company to host its apps on Azure App Service. Then you'll see how to add and configure the `azure-webapp-maven-plugin` to your Maven project.
 
 ## Introduction to the Azure App Service
 
-The Azure App Service allows you to host your company's websites, web apps, REST APIs, and other application code on Azure. Your project code is running in the cloud; you don't have to provision or configure any infrastructure. Running your web app in Azure App Service proivdes you with all the benefits of running on Azure: your app is globally available, it scales automatically, has security and compliance built-in, and you only pay for the resources you use.
+The Azure App Service allows you to host your company's websites, web apps, REST APIs, and other application code on Azure. Your project code is running in the cloud; you don't have to provision or configure any infrastructure. Running your web app in Azure App Service provides you with all the benefits of running on Azure: your app is globally available, it scales automatically, has security and compliance built-in, and you only pay for the resources you use.
 
 ### Features
 
-Azure App Service supports multiple programming languages, which allows developers to continue writing their applications using the languages where they are most comfortable. Java is a first-class citizen, along with other languages like .NET Core, Python, Node.js, etc. The web apps you create can be hosted on Linux, Windows, or inside a docker container. Before you deploy your web app to Azure, you'll create an App Service plan on Azure that specifies the OS and the pricing tier, which determines the size of the provisioned compute resources that your app needs.
+Azure App Service supports multiple programming languages, which allows developers to continue writing their applications using the languages where they're most comfortable. Java is a first-class citizen, along with other languages like .NET Core, Python, Node.js, etc. The web apps you create can be hosted on Linux, Windows, or inside a docker container. Before you deploy your web app to Azure, you'll create an App Service plan on Azure that specifies the OS and the pricing tier, which determines the size of the provisioned compute resources that your app needs.
 
 There are three categories of pricing tier:
 
@@ -26,7 +26,7 @@ There are three categories of pricing tier:
 
 ### Why use an App Service?
 
-Azure has lots of different options if you need to run your application code in the cloud. Azure App Service is one of those options, but if your code has different requirements, you might choose a different option. For example, you might want use Azure App Service when you don't need full control of the hosting environment.
+Azure has lots of different options if you need to run your application code in the cloud. Azure App Service is one of those options, but if your code has different requirements, you might choose a different option. For example, you might want to use Azure App Service when you don't need full control of the hosting environment.
 
 The following flowchart can help you decide if using an Azure App Service is the best solution for your application code.
 
@@ -43,7 +43,7 @@ Maven has three built-in lifecycles for building projects: `default`, `clean`, a
 | `install` | Installs the package into your local repository |
 | `deploy` | Copies the final package into your remote repository |
 
-However, when you are using the Maven Plugin for Azure App Service, you won't use the deploy phase that is included with Maven's `default` lifecycle. Instead, you will deploy your app to Azure with the `mvn azure-webapp:deploy` command.
+However, when you're using the Maven Plugin for Azure App Service, you won't use the deploy phase that is included with Maven's `default` lifecycle. Instead, you'll deploy your app to Azure with the `mvn azure-webapp:deploy` command.
 
 ## Adding the Maven Plugin for Azure App Service to your project
 
@@ -55,14 +55,14 @@ The following excerpt illustrates the XML elements that you need to add to your 
 <plugin>
   <groupId>com.microsoft.azure</groupId>
   <artifactId>azure-webapp-maven-plugin</artifactId>
-  <version>1.7.0</version>
+  <version>1.8.0</version>
 </plugin>
 ```
 
 > [!NOTE]
 > Please check the [Maven Plugin for Azure App Service documention](https://github.com/microsoft/azure-maven-plugins/wiki/Azure-Web-App), or the [Maven Central Repository](https://search.maven.org/artifact/com.microsoft.azure/azure-webapp-maven-plugin/), for information on the latest version of the Maven plugin.
 
-After you have added the plugin to your project's `pom.xml` file, you can run the following command to complete the plugin setup interactively.
+After you've added the plugin to your project's `pom.xml` file, you can run the following command to complete the plugin setup interactively.
 
 ```bash
 mvn azure-webapp:config
@@ -72,7 +72,7 @@ The plugin will prompt you for the information that is required to configure the
 
 ### Configuration options
 
-The preceding section of this unit demonstrated using the Maven Plugin for Azure App Service interactively in order to configure your web app. However, you do not need to run the configuration interactively. If you wish, you can add the plugin's XML to your project's `pom.xml` file manually.
+The preceding section of this unit demonstrated using the Maven Plugin for Azure App Service interactively to configure your web app. However, you don't need to run the configuration interactively. If you wish, you can add the plugin's XML to your project's `pom.xml` file manually.
 
 The following annotated excerpt from a `pom.xml` file demonstrates some of the settings that are required:
 
@@ -80,7 +80,7 @@ The following annotated excerpt from a `pom.xml` file demonstrates some of the s
 <plugin>
     <groupId>com.microsoft.azure</groupId>
     <artifactId>azure-webapp-maven-plugin</artifactId>
-    <version>1.7.0</version>
+    <version>1.8.0</version>
     <configuration>
         <schemaVersion>v2</schemaVersion>
         <resourceGroup>${RESOURCEGROUP_NAME}</resourceGroup>
@@ -147,12 +147,12 @@ Some of the relevant configuration options are in the table below. For a full li
 | `<authentication>` | Specifies the authentication method to use – three different methods are supported |
 | `<appSettings>` | Specifies settings for Spring Boot apps |
 | `<deploymentSlotSetting>` | Specifies an existing deployment slot |
-| `<allowTelemetry>` | Specifies whether to allow the plugin to send telemetry data to Microsoft – this is enabled by default |
+| `<allowTelemetry>` | Specifies whether to allow the plugin to send telemetry data to Microsoft – this option is enabled by default |
 | `<stopAppDuringDeployment>` | Allows you to stop the target web app, which may prevent deployment failures on Windows with IIS locking files |
 
 ### Deployment options
 
-If you have already created an App Service plan, you can specify the settings for that plan in your `pom.xml` file. When you deploy your web app to Azure, Maven will use those settings to deploy your new app to the existing App Service plan.
+If you've already created an App Service plan, you can specify the settings for that plan in your `pom.xml` file. When you deploy your web app to Azure, Maven will use those settings to deploy your new app to the existing App Service plan.
 
 ```xml
 <!-- Deploy Web App to the existing App Service Plan -->

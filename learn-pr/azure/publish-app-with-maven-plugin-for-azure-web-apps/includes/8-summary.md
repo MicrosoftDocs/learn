@@ -1,4 +1,4 @@
-Your company wanted to learn how they could use their existing expertise in Maven to automate deployment of their Java web apps to Azure App Service. In order to test how easy it would be for your company to use the Maven Plugin for Azure App Service, you used the following steps:
+Your company wanted to learn how they could use their existing expertise in Maven to automate deployment of their Java web apps to Azure App Service. To test how easy it would be for your company to use the Maven Plugin for Azure App Service, you used the following steps:
 
 1. You created a sample web app with a Maven archetype, and you tested it locally using Tomcat.
 

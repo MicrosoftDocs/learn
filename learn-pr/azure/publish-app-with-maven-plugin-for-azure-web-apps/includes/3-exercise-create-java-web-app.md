@@ -1,10 +1,10 @@
-In the previous unit you learned that there are two common plugins that developers use to run web apps locally on their machines: _Eclipse Jetty_ and _Apache Tomcat_. Both of these web servers are supported by the Azure App Service plugin, and your company has chosen to use Tomcat for its Java web projects because of its extensive industry adoption and support from the Apache foundation. In order to help you understand what your company needs to do to migrate existing Java projects to Azure, you've decided to create a test web app using Maven and archetypes.
+In the previous unit you learned that there are two common plugins that developers use to run web apps locally on their machines: _Eclipse Jetty_ and _Apache Tomcat_. The Azure App Service plugin supports both of these web servers, and your company has chosen to use Tomcat for its Java web projects because of its extensive industry adoption and support from the Apache foundation. To help you understand what your company needs to do to migrate existing Java projects to Azure, you've decided to create a test web app using Maven and archetypes.
 
 In this exercise, you'll create a new Java web app using the `maven-archetype-webapp` archetype. After you create the web app, you'll update the `pom.xml` file to add the Tomcat plugin so you can test your app locally. Then you'll update it to provide more information about where the app is running.
 
 ## Create a Java web app
 
-1. In the Cloud Shell on the right, use the following Maven command to create a new Java web app.
+1. In the Azure Cloud Shell on the right, use the following Maven command to create a new Java web app.
 
     ```bash
     mvn archetype:generate \
@@ -47,7 +47,7 @@ In this exercise, you'll create a new Java web app using the `maven-archetype-we
     mvn package
     ```
 
-    You should see a series of messages written to the console while your web app is built, which should culminate with a status message similar to the following example:
+    Maven will display a series of messages in the console while it builds your web app, which should conclude with a status message that is similar to the following example:
 
     ```output
     [INFO] Packaging webapp
@@ -74,7 +74,7 @@ In this exercise, you'll create a new Java web app using the `maven-archetype-we
     curl -X POST http://localhost:8888/openPort/8000;
     ```
 
-1. The `curl` command returns a JSON object like the following example, which provides you with a URL that you will use later in this exercise to view the web server.
+1. The `curl` command returns a JSON object like the following example, which contains a URL that you'll use later in this exercise to view the web server.
 
     ```json
     {"message":"Port 8000 is open","url":"https://gateway18.westeurope.console.azure.com/n/cc-1829663c/cc-1829663c/proxy/8000/"}

@@ -1,6 +1,6 @@
-In the preceding unit, you learned how the Maven Plugin for Azure App Service provides makes it easy for Java developers to automate the build and deployment of their web apps to Azure. Once you have created your web app tested it locally, your next step is to deploy it to Azure App Service.
+In the preceding unit, you learned how the Maven Plugin for Azure App Service provides makes it easy for Java developers to automate the build and deployment of their web apps to Azure. Once you've created your web app tested it locally, your next step is to deploy it to Azure App Service.
 
-In this exercise, you'll add the `azure-webapp-maven-plugin` plugin to your project and configure the requisite settings to deploy your app to Azure App Service. After you have successfully deployed your web app to Azure, you'll test your web app running on Azure App Service.
+In this exercise, you'll add the `azure-webapp-maven-plugin` plugin to your project and configure the requisite settings to deploy your app to Azure App Service. After you've successfully deployed your web app to Azure, you'll test your web app running on Azure App Service.
 
 ## Add the `azure-webapp-maven-plugin` plugin to your project
 
@@ -17,11 +17,11 @@ In this exercise, you'll add the `azure-webapp-maven-plugin` plugin to your proj
     <plugin>
       <groupId>com.microsoft.azure</groupId>
       <artifactId>azure-webapp-maven-plugin</artifactId>
-      <version>1.7.0</version>
+      <version>1.8.0</version>
     </plugin>
     ```
 
-1. The `<build>` section of your the `pom.xml` file should resemble the following example.
+1. The `<build>` section of your `pom.xml` file should resemble the following example.
 
     ```xml
     <build>
@@ -39,7 +39,7 @@ In this exercise, you'll add the `azure-webapp-maven-plugin` plugin to your proj
         <plugin>
           <groupId>com.microsoft.azure</groupId>
           <artifactId>azure-webapp-maven-plugin</artifactId>
-          <version>1.7.0</version>
+          <version>1.8.0</version>
         </plugin>
       </plugins>
     </build>
@@ -68,7 +68,7 @@ In this exercise, you'll add the `azure-webapp-maven-plugin` plugin to your proj
 
     The plugin will add the appropriate settings that reflect your choices to your `pom.xml` file.
 
-1. For this exercise, you will need to determine the name and location of the resource group for your sandbox. To do so, use the following command.
+1. For this exercise, you'll need to determine the name and location of the resource group for your sandbox. To do so, use the following command.
 
     ```azurecli
     az group list --query [0].name
@@ -89,7 +89,7 @@ In this exercise, you'll add the `azure-webapp-maven-plugin` plugin to your proj
     |---|---|
     | **Please choose which part to config** | _Enter the corresponding number to configure the **Application**_ |
     | **Define value for appName** | _Accept the default_ |
-    | **Define value for resourceGroup** | _Enter the **name** of the resource group that you copied earlier, (which should be **<rgn>[sandbox resource group name]</rgn>**)_ |
+    | **Define value for resourceGroup** | _Enter the **name** of the resource group that you copied earlier (which should be **<rgn>[sandbox resource group name]</rgn>**)_ |
     | **Define value for region** | _Enter the **location** for the resource group that you copied earlier_ |
     | **Define value for pricingTier** | _Enter the corresponding number for the **f1** tier_ |
     | **Confirm (Y/N)** | _Enter **Y**_ |

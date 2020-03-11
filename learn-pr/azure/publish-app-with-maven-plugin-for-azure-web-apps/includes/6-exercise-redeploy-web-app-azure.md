@@ -1,4 +1,4 @@
-In the previous exercise, you learned how to configure your web app to use the Maven Plugin for Azure App Service. Now that your Maven project is properly configured and tested, you can iterate, improve, and then redeploy your app to Azure. For example, let's say that you'd like to retrieve some specific details about where Azure has deployed your application code and redeploy your web app.
+In the previous exercise, you learned how to configure your web app to use the Maven Plugin for Azure App Service. Your Maven project is properly configured and tested, and you can iterate, improve, and then redeploy your app to Azure. For example, let's say you want to retrieve some specific details about where Azure has deployed your application code and redeploy your web app.
 
 In this exercise, you'll update the `index.jsp` page for your web app to include some information about the server. After testing those changes locally, you'll redeploy your web app to Azure.
 
@@ -80,7 +80,7 @@ In this exercise, you'll update the `index.jsp` page for your web app to include
     [INFO] Building MyWebApp Maven Webapp 1.0-SNAPSHOT
     [INFO] ------------------------------------------------------------------------
     [INFO]
-    [INFO] --- azure-webapp-maven-plugin:1.7.0:deploy (default-cli) @ MyWebApp ---
+    [INFO] --- azure-webapp-maven-plugin:1.8.0:deploy (default-cli) @ MyWebApp ---
     [INFO] [Correlation ID: 3e5cf479-6732-4c6a-96da-88044cdadcc0] Instance discovery was successful
     [INFO] Updating app service plan
     [INFO] Updating target Web App...

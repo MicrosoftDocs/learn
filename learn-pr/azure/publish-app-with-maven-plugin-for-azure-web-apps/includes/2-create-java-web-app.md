@@ -1,4 +1,4 @@
-Your company is currently running several Java web apps on internal servers. In order to reduce the high costs that are associated with maintaining those servers, your company wants to migrate your web apps to Azure App Service.
+Your company is currently running several Java web apps on internal servers. To reduce the high costs that are associated with maintaining those servers, your company wants to migrate your web apps to Azure App Service.
 
 Your development team has experience using Maven to create desktop apps, and you already use Maven to automate the build process for your Java projects. You understand that Maven uses plugins for projects to add extra functionality, and you want to use an archetype to create a web app that you can deploy to Azure App Service.
 
@@ -29,7 +29,7 @@ The creators of Maven needed a way to provide a consistent best practice to foll
 | `maven-archetype-site-simple` | Generates a simple Maven site |
 | **`maven-archetype-webapp`** |  Generates a Maven web app project |
 
-In the next exercise, you will create a web app that you can deploy to Azure. For example, to create a new Java web app using Maven, you would use the following syntax:
+In the next exercise, you'll create a web app that you can deploy to Azure. For example, to create a new Java web app using Maven, you would use the following syntax:
 
 ```bash
 mvn archetype:generate \
@@ -43,9 +43,9 @@ Running the above command creates a project directory structure with these conte
 
 ![Project folder and file hierarchy](../media/2-project-tree.png)
 
-[//]: # ( NOTE: The following code is used to generate the preceding image )
+[//]: # (NOTE: The following code is used to generate the preceding image)
 
-[//]: # ( <p><big><nobr><strong>project</strong><br/>&#xA0;&#xA0;&#xA0;&#x251C;&#x2500;&#x2500;&#xA0;<em>pom.xml</em><br/>&#xA0;&#xA0;&#xA0;&#x2514;&#x2500;&#x2500;&#xA0;<strong>src</strong><br/>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#x2514;&#x2500;&#x2500;&#xA0;<strong>main</strong><br/>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#x2514;&#x2500;&#x2500;&#xA0;<strong>webapp</strong><br/>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#x251C;&#x2500;&#x2500;&#xA0;<em>index.jsp</em><br/>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#x2514;&#x2500;&#x2500;&#xA0;<strong>WEB-INF</strong><br/>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#x2514;&#x2500;&#x2500;&#xA0;<em>web.xml</em></nobr></big></p> )
+[//]: # (<p><big><nobr><strong>project</strong><br/>&#xA0;&#xA0;&#xA0;&#x251C;&#x2500;&#x2500;&#xA0;<em>pom.xml</em><br/>&#xA0;&#xA0;&#xA0;&#x2514;&#x2500;&#x2500;&#xA0;<strong>src</strong><br/>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#x2514;&#x2500;&#x2500;&#xA0;<strong>main</strong><br/>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#x2514;&#x2500;&#x2500;&#xA0;<strong>webapp</strong><br/>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#x251C;&#x2500;&#x2500;&#xA0;<em>index.jsp</em><br/>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#x2514;&#x2500;&#x2500;&#xA0;<strong>WEB-INF</strong><br/>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#x2514;&#x2500;&#x2500;&#xA0;<em>web.xml</em></nobr></big></p>)
 
 ### What are Project Object Model (POM) files?
 
@@ -132,7 +132,7 @@ When you add the XML for the Tomcat plugin to your `pom.xml` file, it should res
 </project>
 ```
 
-After you have added the Tomcat plugin to your project, you can use the following Maven command to start the Tomcat server and test your web app:
+After you've added the Tomcat plugin to your project, you can use the following Maven command to start the Tomcat server and test your web app:
 
 ```bash
 mvn tomcat7:run

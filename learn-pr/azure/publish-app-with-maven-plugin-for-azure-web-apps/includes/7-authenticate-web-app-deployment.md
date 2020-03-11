@@ -1,4 +1,4 @@
-In order to complete the exercises in this module, you have been logged into the sandbox environment. Because this environment is interactive, all of your deployments have been authenticated using the credentials that you used when you initalized the sandbox. However, your deployments will not use this interactive environment if you are automating your build process. In an automation scenario, you will need to configure your project to use one of the supported authentication methods.
+To complete the exercises in this module, you've been logged into the sandbox environment. Because this environment is interactive, all of your deployments have been authenticated using the credentials that you used when you initialized the sandbox. However, your deployments will not use this interactive environment if you're automating your build process. In an automation scenario, you'll need to configure your project to use one of the supported authentication methods.
 
 In this unit, you'll learn how your company can configure Maven to use Azure authentication.
 
@@ -12,19 +12,19 @@ Azure gives you the flexibility to decide how you want to authenticate your app.
 
 - Create an Azure service principal, add your service principal credentials to a Maven `settings.xml` file, and modify your project's `pom.xml` file to use the Maven settings
 
-Microsoft recommends the third option, as it provides the most reliable, flexible, and consistent approach to authentication. In a real world setting, your company's existing Java web apps might be running on local servers that don't have the Azure CLI tools installed. With that in mind, you would probably implement the recommendation to add authentication using a service principal and a Maven `settings.xml` file. However, for this exercise, the sandbox does not have sufficient privileges to create service pricipals.
+Microsoft recommends the third option, as it provides the most reliable, flexible, and consistent approach to authentication. In a real world setting, your company's existing Java web apps might be running on local servers that don't have the Azure CLI tools installed. With that in mind, you would probably implement the recommendation to add authentication using a service principal and a Maven `settings.xml` file. However, for this exercise, the sandbox does not have sufficient privileges to create service principals.
 
 ### Authentication with the Azure CLI
 
 The easiest way to authenticate Maven is to sign in with the Azure CLI. The Maven Plugin for Azure App Service can then deploy the app using your credentials, with no extra configuration required.
 
-If you're using the Azure Cloud Shell, as you have been when completing the exercises with the Microsoft Learn Sandbox in this module, then you're logged in to Azure by default – you don't need to run any additional commands. However, if you're using the Azure CLI from a separate computer, then you will need to sign in by using the `az login` command.
+If you're using the Azure Cloud Shell, as you've been when completing the exercises with the Microsoft Learn Sandbox in this module, then you're logged in to Azure by default – you don't need to run any additional commands. However, if you're using the Azure CLI from a separate computer, then you'll need to sign in by using the `az login` command.
 
 ### Authentication with an authentication file
 
-The second method for authenticating your web app involves creating an Azure service principal, and saving your service principal credentials to a file that you will reference from your project settings.
+The second method for authenticating your web app involves creating an Azure service principal, and saving your service principal credentials to a file that you'll reference from your project settings.
 
-To create an Azure service service principal with the the Azure CLI, use the following steps.
+To create an Azure service principal with the Azure CLI, use the following steps.
 
 1. Run the following command from the Azure CLI to create an Azure service principal:
 
@@ -106,7 +106,7 @@ To create an Azure service service principal with the the Azure CLI, use the fol
         <plugin> 
           <groupId>com.microsoft.azure</groupId>  
           <artifactId>azure-webapp-maven-plugin</artifactId>  
-          <version>1.7.0</version>  
+          <version>1.8.0</version>  
           <configuration> 
             <schemaVersion>V2</schemaVersion>  
             <resourceGroup>maven-publish</resourceGroup>  
@@ -152,7 +152,7 @@ To create an Azure service service principal with the the Azure CLI, use the fol
     [INFO] Building MyWebApp Maven Webapp 1.0-SNAPSHOT
     [INFO] ------------------------------------------------------------------------
     [INFO]
-    [INFO] --- azure-webapp-maven-plugin:1.7.0:deploy (default-cli) @ MyWebApp ---
+    [INFO] --- azure-webapp-maven-plugin:1.8.0:deploy (default-cli) @ MyWebApp ---
     [INFO] Authenticate with file: /home/username/MyWebApp/auth.json
     [INFO] [Correlation ID: 12345678-1234-1234-1234-123456789abc] Instance discovery was successful
     [INFO] Updating app service plan
@@ -177,7 +177,7 @@ To create an Azure service service principal with the the Azure CLI, use the fol
 
 The third method for authenticating your web app involves creating an Azure service principal, then creating a Maven `settings.xml` file that contains your service principal credentials, and then modifying your project's `pom.xml` file to use the Maven settings.
 
-The steps to create an Azure service service principal with the the Azure CLI are the same as in the preceding section of this unit.
+The steps to create an Azure service principal with the Azure CLI are the same as in the preceding section of this unit.
 
 1. Run the following command from the Azure CLI to create an Azure service principal:
 
@@ -264,7 +264,7 @@ The steps to create an Azure service service principal with the the Azure CLI ar
         <plugin> 
           <groupId>com.microsoft.azure</groupId>  
           <artifactId>azure-webapp-maven-plugin</artifactId>  
-          <version>1.7.0</version>  
+          <version>1.8.0</version>  
           <configuration> 
             <schemaVersion>V2</schemaVersion>  
             <resourceGroup>maven-publish</resourceGroup>  
@@ -310,7 +310,7 @@ The steps to create an Azure service service principal with the the Azure CLI ar
     [INFO] Building MyWebApp Maven Webapp 1.0-SNAPSHOT
     [INFO] ------------------------------------------------------------------------
     [INFO]
-    [INFO] --- azure-webapp-maven-plugin:1.7.0:deploy (default-cli) @ MyWebApp ---
+    [INFO] --- azure-webapp-maven-plugin:1.8.0:deploy (default-cli) @ MyWebApp ---
     [INFO] Authenticate with ServerId: azure-auth
     [INFO] [Correlation ID: 12345678-1234-1234-1234-123456789abc] Instance discovery was successful
     [INFO] Updating app service plan
