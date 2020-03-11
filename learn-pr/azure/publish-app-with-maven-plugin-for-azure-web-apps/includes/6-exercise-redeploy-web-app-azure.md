@@ -50,7 +50,11 @@ In this exercise, you'll update the `index.jsp` page for your web app to include
     ```bash
     curl -X POST http://localhost:8888/openPort/8000;
     ```
-1. Run the app locally with the `mvn tomcat7:run` command.
+1. Run the app locally with the following Maven command.
+
+    ```bash
+    mvn tomcat7:run
+    ```
 
 1. Open a new browser tab using the URL in the JSON, appending `MyWebApp/`. You should see the new Server Status page.
 
@@ -102,5 +106,9 @@ In this exercise, you'll update the `index.jsp` page for your web app to include
 1. Visit the deployed app by selecting the URL in the shell.
     
     ![Example web app running on Azure App Service in a web browser](../media/6-web-app-on-production-server.png)
+
+    > [!NOTE]
+    > It might take a few minutes for the published changes to be live.
+
 
 In the next unit, you'll learn how to authenticate your web app deployments to Azure App Service.
