@@ -3,7 +3,7 @@ uid: learn.store-and-share-with-azure-files.6-exercise-secure-azure-files
 metadata:
   title: Exercise - Secure access to files stored in Azure Files
   description: Exercise - Secure access to files stored in Azure Files
-  ms.date: 12/30/2019
+  ms.date: 03/11/2020
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
