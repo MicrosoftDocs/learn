@@ -4,8 +4,10 @@ You used Azure Active Directory Identity Protection to protect your organization
 
 Without Identity Protection, your organization's identities wouldn't be protected and could have been compromised again. Your company can now use Identity Protection to protect its identities and help prevent negative reputation and financial loss.
 
-[!include[](../../../includes/azure-sandbox-cleanup.md)]
-
 ## Learn more
 
-[What is Azure Active Directory Identity Protection?](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection)
+To learn more about Azure Active Directory Identity Protection, please visit the following articles:
+
+- [What is Azure Active Directory Identity Protection?](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection)
+- [Azure Active Directory Identity Protection - Security overview](https://docs.microsoft.com/azure/active-directory/identity-protection/concept-identity-protection-security-overview)
+- [What is risk?](https://docs.microsoft.com/azure/active-directory/identity-protection/concept-identity-protection-risks)

@@ -1,6 +1,6 @@
 Azure Active Directory Identity Protection helps you to automatically detect, remediate, and investigate identity-based risks for your organization. 
 
-The retail company you work for is very conscious about its reputation. Compromised identities have previous enabled malicious users to obtain customer information fraudulently. These attacks have affected you organization's reputation, and ultimately its profitability. Your manager has asked you to investigate Identity Protection as a solution. You've been asked to report back on what the service does and how it's used.
+The retail company you work for is conscious about its reputation. Compromised identities have previous enabled malicious users to obtain customer information fraudulently. These attacks have affected you organization's reputation, and ultimately its profitability. Your manager has asked you to investigate Identity Protection as a solution. You've been asked to report back on what the service does and how it's used.
 
 In this unit, you'll learn what Identity Protection is and the risks involved in using it. You'll explore the different workflows you can use in Identity Protection to protect your identities.
 
