@@ -1,6 +1,6 @@
 How do companies keep up as industries evolve? The answer is innovation.
 
-Companies can "do everything right" with respect to running their existing business models, but they will lose market competitiveness if they don't embrace innovative disruptions.  Indeed, 52 percent of Fortune 500 companies from year 2000 have either been acquired, gone bankrupt, or ceased to exist as a result of digital disruption.
+Even if companies "do everything right" with respect to their existing business models, they will lose competitiveness if they don't embrace innovative disruptions. Indeed, 52 percent of Fortune 500 companies from year 2000 have either been acquired, gone bankrupt, or ceased to exist.
 
 The capacity to pivot as a business and foster innovation is crucial to long-term success. Innovative companies generally lead their industry's market share, attract top talent, and create cutting-edge products and services.
 
@@ -34,7 +34,7 @@ It can sometimes be challenging to connect R&D with real-world business needs. T
 
 ### Involve all employees in identifying solutions to business problems
 
-We've found it beneficial to foster a company culture where employees across all departments and levels are empowered to share their ideas. We take a three-pronged approach to eliciting ideas from employees:
+We've found it beneficial to foster a company culture where employees across all departments and levels are empowered to share their ideas. We take a three-pronged approach to stimulating and collecting ideas from employees:
 
 * Learning: allow every employee to share their ideas and knowledge openly.
    * A prime example is The Innovation Pipeline (TIP) built by AT&T. As one of the largest crowdsourcing programs, TIP encourages ideas from all employees and helps the best ones rise to the top. Ten years since its inception, 130,000 employees across 54 countries have submitted over 50,000 ideas. These ideas have transformed over 100 projects into real products and services that benefit the company and its customers.
@@ -48,7 +48,7 @@ Focusing on disruptive innovations across multiple industries allows for the cre
 
 ### Measure research projects by their business impact
 
-Turn "moon shot" ideas into actionable steps by having regular reviews and feedback loops to prove a project's value and ensure it's on track. It's important to note that research measurements cannot conform to traditional revenue targets since work is still in innovation and incubation stages. Helpful KPIs to measure against may include new IP and patents, new customer or partner connections, improved enablement, and updates to a product group strategy.
+Turn moon shot ideas into actionable steps by having regular reviews and feedback loops to prove a project's value and ensure it's on track. Helpful KPIs to measure against may include new IP and patents, new customer or partner connections, improved enablement, and updates to a product group strategy.
 
 ## Keep responsibility at the center throughout the innovation process
 
