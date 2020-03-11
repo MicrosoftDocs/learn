@@ -70,9 +70,10 @@ In this exercise, you'll update the `index.jsp` page for your web app to include
 
 ## Redeploy your web app
 
- 1. Redeploy the app
+ 1. Rebuild and redeploy the app.
 
     ```bash
+    mvn clean package
     mvn azure-webapp:deploy 
     ```
 1. You'll see this console output showing that the deployment used the new authentication configuration.
@@ -106,9 +107,5 @@ In this exercise, you'll update the `index.jsp` page for your web app to include
 1. Visit the deployed app by selecting the URL in the shell.
     
     ![Example web app running on Azure App Service in a web browser](../media/6-web-app-on-production-server.png)
-
-    > [!NOTE]
-    > It might take a few minutes for the published changes to be live.
-
 
 In the next unit, you'll learn how to authenticate your web app deployments to Azure App Service.
