@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.advocates.shifting-nodejs-express-apis-to-serverless.4-summary
+metadata:
+  title: Summary
+  description: Review changes made to your application that removed polling and added server push technologies.
+  ms.date: 03/20/20
+  author: johnpapa
+  ms.author: jopapa
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Summary
+durationInMinutes: 2
+content: |
+  [!include[](includes/4-summary.md)]
