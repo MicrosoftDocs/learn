@@ -63,11 +63,11 @@ Besides the three record types above, there are also these record types:
 
 - Wildcards
 - CAA (Certificate Authority)
-- NS (Name Server)
-- SOA (Start of Authority)
+- NS (Name server)
+- SOA (Start of authority)
 - SPF (Sender policy framework)
 - SRV (server locations)
-- TXT.
+- TXT 
 
 The SOA and NS records are created automatically when you create a DNS zone using Azure DNS.
 
