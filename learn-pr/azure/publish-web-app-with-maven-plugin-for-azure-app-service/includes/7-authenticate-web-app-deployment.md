@@ -106,7 +106,7 @@ To create an Azure service principal with the Azure CLI, use the following steps
         <plugin> 
           <groupId>com.microsoft.azure</groupId>  
           <artifactId>azure-webapp-maven-plugin</artifactId>  
-          <version>1.8.0</version>  
+          <version>1.9.0</version>  
           <configuration> 
             <schemaVersion>V2</schemaVersion>  
             <resourceGroup>maven-publish</resourceGroup>  
@@ -152,7 +152,7 @@ To create an Azure service principal with the Azure CLI, use the following steps
     [INFO] Building MyWebApp Maven Webapp 1.0-SNAPSHOT
     [INFO] ------------------------------------------------------------------------
     [INFO]
-    [INFO] --- azure-webapp-maven-plugin:1.8.0:deploy (default-cli) @ MyWebApp ---
+    [INFO] --- azure-webapp-maven-plugin:1.9.0:deploy (default-cli) @ MyWebApp ---
     [INFO] Authenticate with file: /home/username/MyWebApp/auth.json
     [INFO] [Correlation ID: 12345678-1234-1234-1234-123456789abc] Instance discovery was successful
     [INFO] Updating app service plan
@@ -264,7 +264,7 @@ The steps to create an Azure service principal with the Azure CLI are the same a
         <plugin> 
           <groupId>com.microsoft.azure</groupId>  
           <artifactId>azure-webapp-maven-plugin</artifactId>  
-          <version>1.8.0</version>  
+          <version>1.9.0</version>  
           <configuration> 
             <schemaVersion>V2</schemaVersion>  
             <resourceGroup>maven-publish</resourceGroup>  
@@ -310,7 +310,7 @@ The steps to create an Azure service principal with the Azure CLI are the same a
     [INFO] Building MyWebApp Maven Webapp 1.0-SNAPSHOT
     [INFO] ------------------------------------------------------------------------
     [INFO]
-    [INFO] --- azure-webapp-maven-plugin:1.8.0:deploy (default-cli) @ MyWebApp ---
+    [INFO] --- azure-webapp-maven-plugin:1.9.0:deploy (default-cli) @ MyWebApp ---
     [INFO] Authenticate with ServerId: azure-auth
     [INFO] [Correlation ID: 12345678-1234-1234-1234-123456789abc] Instance discovery was successful
     [INFO] Updating app service plan

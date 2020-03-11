@@ -17,7 +17,7 @@ In this exercise, you'll add the `azure-webapp-maven-plugin` plugin to your proj
     <plugin>
       <groupId>com.microsoft.azure</groupId>
       <artifactId>azure-webapp-maven-plugin</artifactId>
-      <version>1.8.0</version>
+      <version>1.9.0</version>
     </plugin>
     ```
 
@@ -39,7 +39,7 @@ In this exercise, you'll add the `azure-webapp-maven-plugin` plugin to your proj
         <plugin>
           <groupId>com.microsoft.azure</groupId>
           <artifactId>azure-webapp-maven-plugin</artifactId>
-          <version>1.8.0</version>
+          <version>1.9.0</version>
         </plugin>
       </plugins>
     </build>

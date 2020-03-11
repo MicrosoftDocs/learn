@@ -85,7 +85,7 @@ In this exercise, you'll update the `index.jsp` page for your web app to include
     [INFO] Building MyWebApp Maven Webapp 1.0-SNAPSHOT
     [INFO] ------------------------------------------------------------------------
     [INFO]
-    [INFO] --- azure-webapp-maven-plugin:1.8.0:deploy (default-cli) @ MyWebApp ---
+    [INFO] --- azure-webapp-maven-plugin:1.9.0:deploy (default-cli) @ MyWebApp ---
     [INFO] [Correlation ID: 3e5cf479-6732-4c6a-96da-88044cdadcc0] Instance discovery was successful
     [INFO] Updating app service plan
     [INFO] Updating target Web App...

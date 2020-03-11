@@ -55,7 +55,7 @@ The following excerpt illustrates the XML elements that you need to add to your 
 <plugin>
   <groupId>com.microsoft.azure</groupId>
   <artifactId>azure-webapp-maven-plugin</artifactId>
-  <version>1.8.0</version>
+  <version>1.9.0</version>
 </plugin>
 ```
 
@@ -80,7 +80,7 @@ The following annotated excerpt from a `pom.xml` file demonstrates some of the s
 <plugin>
     <groupId>com.microsoft.azure</groupId>
     <artifactId>azure-webapp-maven-plugin</artifactId>
-    <version>1.8.0</version>
+    <version>1.9.0</version>
     <configuration>
         <schemaVersion>v2</schemaVersion>
         <resourceGroup>${RESOURCEGROUP_NAME}</resourceGroup>
