@@ -32,17 +32,12 @@ The modules in this learning path form a progression. You follow the Tailspin we
 Run a template that sets up your Azure DevOps organization:
 
 > [!div class="nextstepaction"]
-> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?name=deploy-azure-functions&azure-portal=true)
+> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?name=DeployAzureFunction&azure-portal=true)
 
 From the Azure DevOps Demo Generator site, follow these steps to run the template:
 
 1. Select **Sign In** and accept the usage terms.
-1. On the **Create New Project** page, select your Azure DevOps organization. Enter a project name, such as *Space Game - web - 
-2. 
-3. 
-4. 
-5. 
-6. s*.
+1. On the **Create New Project** page, select your Azure DevOps organization. Enter a project name, such as *Space Game - web - Azure Functions*.
 
     ![Creating a project through Azure DevOps Demo Generator](../media/3-create-new-project.png)
 
@@ -285,7 +280,7 @@ To add the variables:
 
 1. Repeat the process to add another variable named *LeaderboardAppName* with the value of your Azure Functions app name, such as *tailspin-space-game-leaderboard-4692*.
 
-1. Add a final variable named *ResourceGroupName* with the value *taispin-space-game-rg*.
+1. Add a final variable named *ResourceGroupName* with the value *tailspin-space-game-rg*.
 
 1. Near the top of the page, select **Save** to save your variable to the pipeline.
 
@@ -304,7 +299,7 @@ Here you create a service connection that enables Azure Pipelines to access your
 1. From the bottom corner of the page, select **Project settings**.
 1. Under **Pipelines**, select **Service connections**.
 1. Select **New service connection**, then choose **Azure Resource Manager**, then select **Next**.
-1. Near the top of the page, select **Service Principal Authentication**.
+1. Near the top of the page, select **Service principal (automatic)**.
 1. Fill in these fields:
 
     | Field               | Value                                        |
