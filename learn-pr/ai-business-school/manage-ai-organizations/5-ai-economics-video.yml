@@ -9,7 +9,6 @@ metadata:
   ms.author: rawortma
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
-durationInMinutes: 9 
+  durationInMinutes: 9 
 content: |
   [!include[](includes/5-ai-economics-video.md)] 
