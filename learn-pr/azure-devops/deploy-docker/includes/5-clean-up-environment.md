@@ -34,16 +34,16 @@ To clean up your resource group:
 
 ## Move the work item to Done
 
-Here you move the work item that you assigned to yourself earlier in this module. You move **Refactor leaderboard API as an Azure Functions app** to the **Done** column.
+Here you move the work item that you assigned to yourself earlier in this module. You move **Create container version of web site using Docker** to the **Done** column.
 
-In practice, "Done" often means putting working software into the hands of your users. For learning purposes, here you mark this work as done because you fulfilled the goal for the Tailspin team. They wanted to refactor their project to extract a leaderboard API as a function app.
+In practice, "Done" often means putting working software into the hands of your users. For learning purposes, here you mark this work as done because you fulfilled the goal for the Tailspin team. They wanted to package and deploy their web app as a Docker container.
 
 At the end of each *sprint*, or work iteration, you and your team can hold a retrospective meeting. In the meeting, share the work you completed, what went well, and what you can improve.
 
 To complete the work item:
 
 1. From Azure DevOps, navigate to **Boards** and then select **Boards** from the menu.
-1. Move the **Refactor leaderboard API as an Azure Functions app** work item from the **Doing** column to the **Done** column.
+1. Move the **Create container version of web site using Docker** work item from the **Doing** column to the **Done** column.
 
     ![Azure Boards, showing the card in the Done column](../media/5-azure-boards-wi1-done.png)
 
@@ -78,7 +78,7 @@ Delete your Azure DevOps project, including the contents of Azure Boards and you
 
 To delete the project:
 
-1. In Azure DevOps, navigate to your project. Earlier, we recommended that you name this project **Space Game - web - Azure Functions**.
+1. In Azure DevOps, navigate to your project. Earlier, we recommended that you name this project **Space Game - web - Docker**.
 1. Select the gear icon next to the project name.
 
     The icon might not appear until you move your mouse over the area.
