@@ -19,7 +19,6 @@ Now create a Cosmos DB database using the MongoDB API:
 
 - Cosmos DB is a globally distributed NoSQL database, that supports the MongoDB API.
 - For this module, we will use it as a normal MongoDB server.
-- When creating the MongoDB collection, be careful to keep the throughput at `400` (which should be the default value), in order to benefit from Cosmos DB's free tier.
 
 ```bash
 az cosmosdb create \
