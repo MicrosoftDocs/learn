@@ -25,8 +25,6 @@ The user selects the link in the email invitation to access the application.
 
 An organization can have application owners, who decide who is and isn't allowed to use a particular application. These owners will typically have a good idea of what type of usage is expected from an application. They're in a good position to decide who should be a guest user for a particular application.
 
-![Application owner adding user](../media/3-application-owner.png)
-
 Azure AD B2B allows you to delegate guest user access to these application owners. You configure self-service management to allow application owners to use the applications access panel to invite guest users to a particular application. First, you allow self-service group management for your directory in the Azure portal. You create a group for the application, and set the owner for it. Then you configure the application for self-service and assign your group to it.
 
 ## Protect your shared applications through policies
