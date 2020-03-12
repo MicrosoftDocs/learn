@@ -18,26 +18,26 @@ quiz:
 
   - content: 'How do you configure distributed tracing for an application deployed to Azure Spring Cloud?'
     choices:
-    - content: 'You need to add some specific Spring Boot configuration properties'
+    - content: 'Add some specific Spring Boot configuration properties'
       isCorrect: false
-      explanation: 'There is no specific configuration to set up.'
-    - content: 'You need to configure a specific Spring bean'
+      explanation: 'There\'s no specific configuration to set up.'
+    - content: 'Configure a specific Spring bean'
       isCorrect: false
-      explanation: 'There is no Spring bean to configure.'
-    - content: 'You need to add a Spring Boot starter, in the Maven `pom.xml` file'
+      explanation: 'There\'s no Spring bean to configure.'
+    - content: 'Add a Spring Boot starter, in the Maven `pom.xml` file'
       isCorrect: true
-      explanation: 'Adding the MAven dependency will auto-configure everything.'
+      explanation: 'Adding the Maven dependency will autoconfigure everything.'
   - content: 'Once your telemetry data is ingested by Azure Monitor, what will you be able to do?'
     choices:
-    - content: 'You will have access to an automatically-generated map of all your microservices'
+    - content: 'You\'ll have access to an automatically generated map of all your microservices'
       isCorrect: false
-      explanation: 'This is correct, but it is not the only correct answer.'
-    - content: 'You will be able to launch a debugger, and hot replace code in production'
+      explanation: 'This answer is correct, but it is not the only one.'
+    - content: 'You\'ll be able to launch a debugger, and hot replace code in production'
       isCorrect: false
-      explanation: 'Azure Monitor is only capable of monitoring an application, not change some of its code or run a debugger.'
-    - content: 'You will have access to a search engine, to find your performance bottlenecks'
+      explanation: 'Azure Monitor is only capable of monitoring an application, but it cannot change some of its code or run a debugger.'
+    - content: 'You\'ll have access to a search engine, to find your performance bottlenecks'
       isCorrect: false
-      explanation: 'This is correct, but it is not the only correct answer.'
+      explanation: 'This answer is correct, but it is not the only one.'
     - content: 'Points 1 and 3'
       isCorrect: true
-      explanation: 'You will have access to both a map of your microservices, and a search engine to find performance issues.'
+      explanation: 'You\'ll have access to both a map of your microservices, and a search engine to find performance issues.'
