@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.enable-external-collaboration-with-b2b.6-summary
+uid: learn.enable-external-collaboration-with-b2b.5-summary
 metadata:
   title: Summary
   description: Summary
@@ -11,4 +11,4 @@ metadata:
 title: Summary
 durationInMinutes: 2
 content: |
-  [!include[](includes/6-summary.md)]
+  [!include[](includes/5-summary.md)]
