@@ -46,7 +46,7 @@ Here's an explanation of some of those terms:
 
 ## Default user permissions
 
-Azure AD gives all of the users in your tenant a default set of permissions. Permissions dictate what a user can and can't do. The set of permissions granted by default depends on whether a user is a natural member of the tenant (like an internal employee) or a member of an outside organization. The latter is considered a guest. An example of a guest is an external collaborating user. Guest users are invited to the tenant through an Azure AD feature called Azure Active Directory B2B.
+Azure AD gives all of the users in your tenant a default set of permissions. Permissions dictate what a user can and can't do. The set of permissions granted by default depends on whether a user is a natural member of the tenant (like an internal employee) or a member of an outside organization. The latter is considered a guest. An example of a guest would be a vendor that is performing work for you, but is not an official employee of the organization. Guest users are invited to the tenant through an Azure AD feature called Azure Active Directory B2B.
 
 Member users can do many things that guest users can't. For example, member users manage their own profile details, like their phone number and profile photos. Guest users typically have more restrictions. Guest users can, for instance, view their display photos but can't change them. For the external healthcare professionals that your company works with regularly, you could grant guest-user access. This way, they'd have more restricted permissions than a regular internal staff member, but they would still have enough permissions to do their work.
 
