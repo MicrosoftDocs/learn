@@ -47,4 +47,8 @@ Remove the resources you've created in this module:
 
 ## Learn more
 
-[Azure Active Directory B2B documentation](https://docs.microsoft.com/azure/active-directory/b2b/)
+To learn more about Azure AD B2B, please visit the following articles:
+
+- [Azure Active Directory B2B documentation](https://docs.microsoft.com/azure/active-directory/b2b/)
+- [What is guest user access in Azure Active Directory B2B](https://docs.microsoft.com/azure/active-directory/b2b/what-is-b2b)
+- [Compare B2B collaboration and B2C in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/b2b/compare-with-b2c)
