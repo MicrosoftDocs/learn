@@ -1,0 +1,33 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-sentinel.5-workbooks
+title: "Leveraging built-in Workbooks"
+metadata:
+  title: "Leveraging built-in Workbooks"
+  description: "Leveraging built-in Workbooks"
+  ms.date: 03/10/2020
+  author: debryen
+  ms.author: debryen
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-workbooks.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+#TODO - ADD ONE OR TWO RELEVANT QUESTIONS HERE
+  - content: 'Which of these things is *not* a characteristic of toil (in the SRE context)? '
+    choices:
+    - content: 'The work is repetitive'
+      isCorrect: false
+      explanation: 'Toil is repetitive in nature.'
+    - content: 'The work is tracked in a ticket system'
+      isCorrect: true
+      explanation: 'How the work is tracked is not a characteristic of toil. While toil is often tracked this way, ticket systems could be used to track other, more productive kinds of work.'
+    - content: 'The work provides no lasting value'
+      isCorrect: false
+      explanation: 'Work that is toil has no enduring value.'
+    - content: 'The work is largely manual in nature and not automated'
+      isCorrect: false
+      explanation: 'Toil is almost always manual work that could be automated.'

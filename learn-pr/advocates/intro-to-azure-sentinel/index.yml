@@ -1,0 +1,37 @@
+### YamlMime:Module
+uid: learn.intro-to-azure-sentinel
+metadata:
+  title: Introduction to Azure Sentinel
+  description: Learn about Azure Sentinel, a cloud native Security, Incident and Event Management (SIEM) service.
+  ms.date: 09/26/2018
+  author: debryen
+  ms.author: debryen
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  #ms.learn-contact: luken
+title: Introduction to Azure Sentinel
+summary: Traditional Security Incident and Event Management (SIEM) systems typically take a long time to get set up and configured. They are also not neccesarily designed with cloud workloads in mind. Azure Sentinel enables you to start getting valuable security insights from your cloud and on premises data within very little time. This module will help you get started. 
+abstract: |
+  In this module you will:
+  - Gain a basic understanding of the Azure Sentinel service.
+  - Gain a basic understanding of Kusto Query Language (KQL)
+iconUrl: /learn/achievements/intro-to-azure-sentinel.svg
+levels:
+- beginner
+roles:
+- administrator
+- devops-engineer
+- solution-architect
+products:
+- azure
+- azure-sentinel
+prerequisites: None
+units:
+- learn.intro-to-azure-sentinel.1-introduction
+- learn.intro-to-azure-sentinel.2-tour-of-sentinel
+- learn.intro-to-azure-sentinel.3-data-connectors
+- learn.intro-to-azure-sentinel.4-kql
+- learn.intro-to-azure-sentinel.5-workbooks
+- learn.intro-to-azure-sentinel.6-summary
+badge:
+  uid: learn.intro-to-azure-sentinel.badge

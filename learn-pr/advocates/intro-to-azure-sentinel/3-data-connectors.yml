@@ -1,0 +1,31 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-sentinel.3-data-connectors
+title: Getting Started with Sentinel
+metadata:
+  title: Getting Started with Sentinel
+  description: Getting Started with Sentinel
+  ms.date: 03/10/2020
+  author: debryen
+  ms.author: debryen
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-data-connectors.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: 'Which of the following data connectors are free in Azure Sentinel'
+    choices:
+    - content: 'Azure Activity Log'
+      isCorrect: true
+      explanation: 'The Azure Activity Log, Office 365 Audit Logs (all SharePoint activity and Exchange admin activity) and alerts from Microsoft Threat Protection products (Azure Security Center, Office 365 ATP, Azure ATP, Microsoft Defender ATP, Microsoft Cloud App Security, Azure Information Protection) can be ingested at no additional cost into both Azure Sentinel, and Azure Monitor Log Analytics.'
+    - content: 'Windows Server Event Logs'
+      isCorrect: false
+      explanation: 'windows Server Event logs are chargeable'
+    - content: 'Azure AD audit Logs'
+      isCorrect: false
+      explanation: 'Azure Active Directory (AAD) audit data is not free and is billed for ingestion into both Azure Sentinel, and Azure Monitor Log Analytics.'
+#TODO -  Add another question here.

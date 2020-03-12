@@ -1,0 +1,35 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-sentinel.4-kql
+title: "Introduction to Kusto Query Language (KQL)"
+metadata:
+  title: "Introduction to Kusto Query Language (KQL)"
+  description: "Introduction to Kusto Query Language (KQL)"
+  ms.date: 03/10/2020
+  author: debryen
+  ms.author: debryen
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 15
+content: |
+  [!include[](includes/4-kql.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  #TODO : ADD A RELEVANT QUESTION OR TWO HERE
+  - content: 'What does SLI stand for (in an SRE context)?'
+    choices:
+    - content: 'Standard Level Indicator '
+      isCorrect: false
+      explanation: 'SLI stands for Service Level Indicator.'
+    - content: 'Service Level Indicator'
+      isCorrect: true
+    - content: 'Safe Load Indicator'
+      isCorrect: false
+      explanation: 'SLO stands for Service Level Indicator.'
+    - content: 'System Level Interface'
+      isCorrect: false
+      explanation: 'SLO stands for Service Level Indicator.'
+
+  

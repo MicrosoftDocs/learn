@@ -1,0 +1,42 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-sentinel.2-tour-of-azure-sentinel
+title: What does Azure Sentinel have to offer?
+metadata:
+  title: What does Azure Sentinel have to offer?
+  description: What does Azure Sentinel have to offer?
+  ms.date: 03/10/2020
+  author: debryen
+  ms.author: debryen
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 15
+content: |
+  [!include[](includes/2-tour-of-sentinel.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: 'What does Azure Sentinel provide?'
+    choices:
+    - content: 'A solution for checking your security posture in the cloud'
+      isCorrect: false
+      explanation: 'Being aware of  your security posture in the cloud is ver important. Azure Security Center is a product that helps you to understand this, not Azure Sentinel.'
+    - content: 'An end to end solution for security operations'
+      isCorrect:  true
+      explanation: 'Yes, Azure Sentinel give you and end tio end solution for security operations, including visibility, analytics, hunting,incident and automation.'
+    - content: 'A solution for securely storing keys and secrets in the cloud'
+      isCorrect: false
+      explanation: 'Azure Key Vault helps you do this. Azure Sentinel is focussed on security operations'
+
+  - content: 'Which Language is used to query data within Azure Sentinel?'
+    choices:
+    - content: 'SQL'
+      isCorrect: false
+      explanation: 'SQL is used to query SQL based relational databases.'
+    - content: 'GraphQL'
+      isCorrect: false
+      explanation: 'GraphQL is a specification for querying API data'
+    - content: 'KQL'
+      isCorrect: true
+      explanation: 'Kusto Query Language (KQL) is a language used for querying data in Log Analytics, which is where Azure Sentinel holds its data.'
