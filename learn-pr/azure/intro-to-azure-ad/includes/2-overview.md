@@ -15,11 +15,9 @@ Azure AD also helps you keep user identities and applications secure through fea
 
 ![Azure AD](../media/2-azure-ad.svg)
 
-Azure AD stores your users in a tenant that represents an organization. For example, say you have a company tenant where all of your internal staff members are maintained. Tenant users can also be grouped so they have a common shared-access level. You could have one group for developers and another group for application testers. These groups would have different access levels for applications.
+Azure AD stores your users in a tenant that represents an organization. For example, say you have a company tenant where all of your employee user accounts are stored. Users in this tenant can be added to groups so they have a common shared-access level. You could have one group for developers and another group for application testers. These groups would have different access levels for applications. Each tenant can have multiple groups that hold multiple users.
 
-In Azure, you can create multiple tenants under multiple subscriptions. Each tenant can have multiple groups that hold multiple users.
-
-### Who benefits from Azure AD?
+## Who benefits from Azure AD?
 
 Azure AD meets the needs of many types of users. For instance, an IT administrator can use Azure AD to determine who should have access to applications and resources, based on company requirements. An administrator can add another layer of protection to applications and services by enforcing multi-factor authentication on sign-ins.
 
