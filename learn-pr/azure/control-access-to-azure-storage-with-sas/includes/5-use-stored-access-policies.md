@@ -1,6 +1,6 @@
-Shared access signatures are a secure way of giving access to clients without having to share your Azure credentials. With this ease of use comes a downside that anyone with the correct SAS can access the file while it's still valid. The only way you can revoke access to the storage is to regenerate the access keys. This regeneration would require you to update all apps using a shared key to use the new one. There's another option that uses SAS by associating them with a stored access policy. 
+Shared access signatures (SASes) are a secure way to give access to clients without having to share your Azure credentials. This ease of use comes with a downside. Anyone with the correct SAS can access the file while it's still valid. The only way you can revoke access to the storage is to regenerate the access keys. This regeneration requires you to update all apps by using a shared key to use the new one. There's another option that uses SASes by associating them with a stored access policy.
 
-After adding SAS functionality to your app, it highlighted the inflexibility of creating a SAS for each image, with its own expiration and access controls. You'd like to update your app to use a stored access policy on the storage container. With the policy in place, you want to test you can update the expiration and affect all the created SAS tokens.
+After you added SAS functionality to your app, it highlighted the inflexibility of creating a SAS for each image, with its own expiration and access controls. You want to update your app to use a stored access policy on the storage container. With the policy in place, you want to test that you can update the expiration and affect all the created SAS tokens.
 
 In this unit, you'll see how to use a stored access policy. You'll learn the C# Storage API commands you use to create SAS tokens associated with your new access policy. Finally, you'll test that the SAS tokens can all be changed by updating the stored access policy on the Azure portal.
 
@@ -8,23 +8,23 @@ In this unit, you'll see how to use a stored access policy. You'll learn the C# 
 
 You can create a stored access policy on four kinds of storage resources:
 
-1. Blob containers.
-1. File shares.
-1. Queues.
-1. Tables.
+- Blob containers
+- File shares
+- Queues
+- Tables
 
 The stored access policy you create for a blob container can be used for all the blobs contained in it and the container itself. The stored access policy is created with the following properties:
 
-- **Identifier**: the name you'll use to reference the stored access policy
-- **Start time**: a DateTimeOffset for when the policy might be used from; this value can be null
-- **Expiry time**: a DateTimeOffset for when the policy expires; after this time, requests to the storage will fail with 403
-- **Permissions**: the list of permissions as a string that can be one or all of **acdlrw**
+- **Identifier**: The name you use to reference the stored access policy.
+- **Start time**: A DateTimeOffset value for the date and time when the policy might start to be used. This value can be null.
+- **Expiry time**: A DateTimeOffset value for the date and time when the policy expires. After this time, requests to the storage will fail with a 403 error-code message.
+- **Permissions**: The list of permissions as a string that can be one or all of **acdlrw**.
 
-![Screenshot of the Azure portal showing a stored access policy](../media/5-shared-acces-policy.png)
+![Screenshot of the Azure portal that shows a stored access policy](../media/5-shared-acces-policy.png)
 
 ### Create stored access policies
 
-You can create a shared access policy with C# code, using the Azure portal, or Azure CLI commands.
+You can create a stored access policy with C# code by using the Azure portal or Azure CLI commands.
 
 #### With C# .NET code
 
@@ -44,11 +44,11 @@ blobContainer.SetAccessPolicy(permissions: new BlobSignedIdentifier[] { identifi
 
 #### With the portal
 
-On the portal, you'll go to the storage account, and then the blob storage container. On the left, select the **Access policy**. To add a new stored access policy, select the **+ Add policy**.
+In the portal, go to the storage account and then go to the blob storage container. On the left, select **Access policy**. To add a new stored access policy, select **+ Add policy**.
 
 You can then enter all the required parameters.
 
-![Screenshots fot the options when adding an access policy](../media/5-add-a-policy.png)
+![Screenshots for the options when you add an access policy](../media/5-add-a-policy.png)
 
 #### With Azure CLI commands
 
@@ -65,9 +65,9 @@ az storage container policy create \
 
 ### Create SAS tokens and associate them with stored access policies
 
-You can now associate the stored access policy you've created with any new SAS tokens you need. For your company's patient diagnostic image web app, you'll update the existing code to add the above code. Then, in the method that creates the SAS token, you reference the new stored access policy.
+You can now associate the stored access policy you created with any new SAS tokens you need. For your company's patient diagnostic image web app, you update the existing code to add the previous code. Then, in the method that creates the SAS token, you reference the new stored access policy.
 
-All of your existing code needed to create the SAS token:
+All of your existing code that's needed to create the SAS token:
 
 ```csharp
 BlobSasBuilder sas = new BlobSasBuilder
@@ -91,4 +91,4 @@ BlobSasBuilder sas = new BlobSasBuilder
 };
 ```
 
-There's a maximum number of stored access policies allowed on a single blob container. You can have up to five associated with them.
+Five is the maximum number of stored access policies allowed on a single blob container.
