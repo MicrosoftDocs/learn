@@ -3,7 +3,7 @@ uid: learn.enable-external-collaboration-with-b2b
 metadata:
   title: Enable secure external collaboration for your applications with Azure AD B2B
   description: Azure AD B2B collaboration lets you securely share your company's applications and services with guest users from any other organization, while maintaining control over your own corporate data.
-  ms.date: 09/30/2019
+  ms.date: 03/12/2020
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
