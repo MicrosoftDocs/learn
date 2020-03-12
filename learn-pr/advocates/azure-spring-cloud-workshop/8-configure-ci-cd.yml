@@ -24,12 +24,9 @@ quiz:
     - content: 'It allows testing the application automatically'
       isCorrect: false
       explanation: ''
-    - content: 'It can automatically create a new application'
-      isCorrect: false
-      explanation: ''
     - content: 'It can automatically deploy an application to production'
       isCorrect: false
       explanation: ''
-    - content: '1, 2 and 4'
+    - content: '1, 2 and 3'
       isCorrect: true
       explanation: ''
