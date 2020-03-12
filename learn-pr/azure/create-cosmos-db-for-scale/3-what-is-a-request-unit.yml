@@ -15,20 +15,14 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: 'When you create an Azure Cosmos DB account, and you want to ensure it will grow with your application’s needs, what’s the minimum value you should set the throughput to?'
+  - content: 'True or false: The number of RUs used for a given database operation over the same data varies over time.'
     choices:
-    - content: 400 RU/s
+    - content: 'True'
+      isCorrect: false
+      explanation: Azure Cosmos DB ensures that the number of RUs for a given database operation over a given dataset is deterministic.
+    - content: 'False'
       isCorrect: true
-      explanation: A throughput of 400 RU/s is the minimum value to enable autoscaling of your database.
-    - content: 1000 RU/s
-      isCorrect: false
-      explanation: A throughput of 400 RU/s is the minimum value to enable autoscaling of your database.
-    - content: 1400 RU/s
-      isCorrect: false
-      explanation: A throughput of 400 RU/s is the minimum value to enable autoscaling of your database.
-    - content: '250,000 RU/s'
-      isCorrect: false
-      explanation: A throughput of 400 RU/s is the minimum value to enable autoscaling of your database.
+      explanation: Azure Cosmos DB ensures that the number of RUs for a given database operation over a given dataset is deterministic.
 
   - content: 'Which of the following affects the number of request units it takes to write a document?'
     choices:

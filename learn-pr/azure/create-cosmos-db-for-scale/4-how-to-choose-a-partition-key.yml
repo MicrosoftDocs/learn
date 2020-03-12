@@ -24,11 +24,12 @@ quiz:
       isCorrect: true
       explanation: You can set the partition key only when the container is created.
 
-  - content: 'True or false: You can **change** the partition key after the Azure Cosmos DB container has been created.'
+  - content: 'An organization is planning to use Azure Cosmos DB to store vehicle telemetry data generated from millions of vehicles every second. What selection of Partition Key will optimize storage distribution?'
     choices:
-    - content: 'True'
+    - content: 'Vehicle Model'
       isCorrect: false
-      explanation: Partition keys cannot be modified after the container is created.
-    - content: 'False'
+      explanation: Most auto manufactures only have a couple dozen models. This is potentially the least granular option, will create a fixed number of logical partitions, and may not distribute data evenly across all physical partitions.
+    - content: 'Current Month'
       isCorrect: true
-      explanation: Partition keys cannot be modified after the container is created.
+      explanation: Auto manufacturers have transactions occurring throughout the year. This will create a more balanced distribution of storage across partition key values.
+
