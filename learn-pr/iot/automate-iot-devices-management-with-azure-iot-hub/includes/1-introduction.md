@@ -1,4 +1,4 @@
-Azure IoT Hub is a cloud service designed to be your cloud gateway for IoT devices. The service allows to establish a secure bidirectional communication between IoT devices and the cloud. IoT Hub collects data from sensors and allows for remote monitoring and management of the IoT devices.
+Azure IoT Hub is a cloud service designed to be your cloud gateway for IoT devices. The service allows establishing a secure bidirectional communication between IoT devices and the cloud. IoT Hub collects data from sensors and allows for remote monitoring and management of the IoT devices.
 
 In this module, you'll learn how IoT Hub can be used to configure and manage IoT devices remotely and at scale.
 
@@ -9,7 +9,7 @@ In this module you will:
 - Create a custom Azure IoT Hub, using the Azure CLI
 - Create IoT Hub device IDs, using the Azure CLI
 - Create an app that will simulate a device implementing a firmware update in C#
-- Test a single firmware update setting it up and initiating it from the Azure Portal
+- Test a single firmware update setting it up and initiating it from the Azure portal
 - Use Automatic device management to automate the firmware update on several groups of devices in sequence, using the Azure CLI
 
 ## Prerequisites
@@ -38,5 +38,5 @@ In the following units you will go through these steps:
 
 - Set up an Azure IoT environment: an Azure IoT Hub instance and device Ids
 - Write code for simulating the device that will implement the firmware update
-- Test the firmware update process on a single device using Azure IoT Hub automatic device management in the Azure Portal
+- Test the firmware update process on a single device using Azure IoT Hub automatic device management in the Azure portal
 - Set up an automatic device management configuration to deploy the firmware update on a group of devices using the Azure CLI

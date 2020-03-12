@@ -21,22 +21,22 @@ mydevice: Current firmware version: 1.0.0
 ## Create the device management configuration
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
-1. Go to the IoT Hub blade. You can find your IoT Hub by typing in the search bar (on top) the name you used when creating it in unit 2.
-1. In the IoT Hub, find the "Automatic Device Management" blade and select "IoT Device Configuration", then select "Add Device Configuration"
-
-    :::image type="content" source="../media/device-management-1.png" alt-text="IoT Devive Configuration":::
+1. Go to the IoT Hub page. You can find your IoT Hub by typing in the search bar (on top) the name you used when creating it in unit 2.
+1. In the IoT Hub, find the "Automatic Device Management" page and select "IoT Device Configuration", then select "Add Device Configuration"
+    
+    [ ![IoT Device Configuration](../media/device-management-1.png) ](../media/device-management-1.png#lightbox)
     
 1. Enter an ID for the configuration such as "firmwareupdate" then click on "Next: Twins settings >"
 
-    :::image type="content" source="../media/device-management-2.png" alt-text="Configuration ID":::
+    [ ![Configuration ID](../media/device-management-2.png) ](../media/device-management-2.png#lightbox)
     
-1. For the "Device Twin Property" field, enter the below. To define a desired property you need to prefix the value in the field with "properties.desired". You can also add several desired properties, but in our case we will only add one.
+1. For the "Device Twin Property" field, enter the below. To define a desired property, you need to prefix the value in the field with "properties.desired". You can also add several desired properties but in our case we will only add one.
 
     ```json
     properties.desired.firmware
     ```
         
-1. In the "Device Twin Property Content" field type the following then click on "Next: Metrics >"
+1. In the "Device Twin Property Content" field, type the following then click on "Next: Metrics >"
 
     ```json
     {
@@ -46,42 +46,42 @@ mydevice: Current firmware version: 1.0.0
     }
     ```
 
-    :::image type="content" source="../media/device-management-3.png" alt-text="Device Twin configuration":::
+    [ ![Device Twin configuration](../media/device-management-3.png) ](../media/device-management-3.png#lightbox)
 
-1. In the "Metrics" blade, we will define a custom metric to track the firmware update was effective. Create a new custom metric called "fwupdated" and type in the below criteria, then click on "Next: Target devices >"
+1. In the "Metrics" section, we will define a custom metric to track the firmware update was effective. Create a new custom metric called "fwupdated" and type in the below criteria, then click on "Next: Target devices >"
 
     ```SQL
         SELECT deviceId FROM devices
            WHERE properties.reported.firmware.currentFwVersion='1.0.1'
     ```
 
-    :::image type="content" source="../media/device-management-4.png" alt-text="Metrics":::
+    [ ![Metrics](../media/device-management-4.png) ](../media/device-management-4.png#lightbox)
 
-1. In the "Priority" field, type "10" and in the "Target Condition" field, type in the following query, replacing "\<your device id\>" with the device Id you used to create the device in unit 2, then click on "Next: Review + Create >". (Note that valid conditions specify either a deviceId (e.g. deviceId='{id}'), one or more device twin tag criteria (e.g. tags.environment = 'prod' AND tags.location = 'westus'), or reported property criteria)
+1. In the "Priority" field, type "10", and in the "Target Condition" field, type in the below query, replacing "\<your device id\>" with the device ID you used to create the device in unit 2, then click on "Next: Review + Create >". (Valid conditions specify either a deviceId (for example, deviceId='{id}'), one or more device twin tag criteria (for example, tags.environment = 'prod' AND tags.location = 'westus'), or reported property criteria)
 
     ```SQL
         deviceId='<your device id>'
     ```
 
-    :::image type="content" source="../media/device-management-5.png" alt-text="Target Devices":::
+    [ ![Target Devices](../media/device-management-5.png) ](../media/device-management-5.png#lightbox)
 
-1. On the next blade, you should see the validation succeed for your new configuration. Click on "Create".
+1. On the next page, you should see the validation succeed for your new configuration. Click on "Create".
 
-    :::image type="content" source="../media/device-management-6.png" alt-text="Validation":::
+    [ ![Validation](../media/device-management-6.png) ](../media/device-management-6.png#lightbox)
 
-1. Once the configuration has been created, you will see it in the automatic device management blade:
+1. Once the configuration has been created, you will see it in the automatic device management page:
 
-    :::image type="content" source="../media/device-management-7.png" alt-text="New Configuration added":::
+    [ ![New Configuration added](../media/device-management-7.png) ](../media/device-management-7.png#lightbox)
 
 ## See the magic happen
 
 IoT Hub will now look for devices matching the configuration's target devices criteria, and will apply the firmware update configuration automatically.
 In the terminal, you started the device on, you should see the bellow traces indicating the progress of the firmware update process on the device itself:
 
-:::image type="content" source="../media/simulated-device-1.png" alt-text="Simulated Device executing FW update":::
+[ ![Simulated Device executing FW update](../media/simulated-device-1.png) ](../media/simulated-device-1.png#lightbox)
 
 And on the "Device Management Configuration" you should see:
 
-:::image type="content" source="../media/device-management-8.png" alt-text="Configuration applied and successful":::
+[ ![Configuration applied and successful](../media/device-management-8.png) ](../media/device-management-8.png#lightbox)
 
 You have validated that the firmware update process on your simulated device works. You can stop the device simulator by typing "q" and pressing the "Enter" key in the terminal.

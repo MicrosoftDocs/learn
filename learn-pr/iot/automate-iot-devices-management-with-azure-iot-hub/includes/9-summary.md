@@ -4,7 +4,7 @@ In this module you learned how to:
 - Create a custom Azure IoT Hub, using the Azure CLI
 - Create IoT Hub device IDs, using the Azure CLI
 - Create an app that will simulate a device implementing a firmware update in C#
-- Test a single device firmware update setting it up and initiating it from the Azure Portal
+- Test a single device firmware update setting it up and initiating it from the Azure portal
 - Use the Automatic device management feature of Azure IoT Hub to automate the firmware update on several groups of devices in sequence, using the Azure CLI
 
 ## Next steps

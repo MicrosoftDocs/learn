@@ -23,25 +23,25 @@ quiz:
     choices:  
     - content: 'az iot-hub create'
       isCorrect: false
-      explanation: iot-hub is not a sub-command of az.
+      explanation: iot-hub is not a subcommand of az.
     - content: 'az iot create-hub'
       isCorrect: false
-      explanation: create-hub is not a sub-command of az iot.
+      explanation: create-hub is not a subcommand of az iot.
     - content: 'az iot hub create' 
       isCorrect: true
       explanation: That's right. You can learn more about the Azure IoT extension for Azure CLI typing az iot -h 
     - content: 'az iothub create'
       isCorrect: false
-      explanation: iothub is not a sub-command of az.
+      explanation: iothub is not a subcommand of az.
 
-  - content: 'To create a new device Id in IoT Hub using the Azure CLI, you will need'
+  - content: 'To create a new device ID in IoT Hub using the Azure CLI, you will need'
     choices:  
-    - content: 'The IoT Hub instance name, the Resource Group name, a new device id'
+    - content: 'The IoT Hub instance name, the Resource Group name, a new device ID'
       isCorrect: false
-      explanation: The device id is not a resource and you will not need the resource group name to create one.
-    - content: 'A new device id'
+      explanation: The device ID is not a resource and you will not need the resource group name to create one.
+    - content: 'A new device ID'
       isCorrect: false
       explanation: For the command to work you will need to indicate the name of the IoT Hub as well.  
-    - content: 'The IoT Hub instance name, a new device id'
+    - content: 'The IoT Hub instance name, a new device ID'
       isCorrect: true
-      explanation: Yes, you only need the name of the IoT Hub which is unique and a new device id
+      explanation: Yes, you only need the name of the IoT Hub, which is unique and a new device ID
