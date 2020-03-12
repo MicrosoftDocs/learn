@@ -45,9 +45,6 @@ Remove the resources you've created in this module:
 
     ![Delete checks](../media/6-delete-check-directory.png)
 
-
-
 ## Learn more
 
 [Azure Active Directory B2B documentation](https://docs.microsoft.com/azure/active-directory/b2b/)
-
