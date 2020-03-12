@@ -52,7 +52,7 @@ Azure AD is a cloud-based identity solution that helps you manage users and appl
 
 Azure AD doesn't replace Active Directory. The service you use depends on your organization's needs. The two services can be used together, so you can take advantage of their combined features and capabilities.
 
-### Hybrid identity for linking on-premises Active Directory with Azure AD
+## Hybrid identity for linking on-premises Active Directory with Azure AD
 
 Your users will want to access applications from both the cloud and on-premises. You can use Azure AD and Active Directory together to provide an identity solution that spans on-premises and the cloud. A single user identity can be used for authentication and to access applications and resources, whatever their location. This user identity is called a hybrid identity.
 
