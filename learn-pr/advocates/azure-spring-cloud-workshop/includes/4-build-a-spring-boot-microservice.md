@@ -80,6 +80,8 @@ At the end of the application's `pom.xml` file (just before the closing `</proje
     </profiles>
 ```
 
+This dependency is specific to Azure Spring Cloud, and will allow your microservice to connect automatically and securely to the managed Spring Cloud Discovery Server and to the managed Spring Cloud Config Server.
+
 ## Add Spring code to manage data using Spring Data MongoDB
 
 Next to the `DemoApplication` class, create a `Todo` MongoDB collection:
