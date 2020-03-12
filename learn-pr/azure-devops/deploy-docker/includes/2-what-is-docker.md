@@ -33,11 +33,11 @@ The next morning, Andy calls a meeting to present a new idea to the team.
 
 **Mara:** What is a container? Is that like a zip file?
 
-**Andy:** Not exactly. It's more like a lightweight virtual machine designed to run directly on the host operating system. When you build your project, the output is a complete container that includes your software along with its dependencies. And since it's not a fully virtualized system, it can spin up in a little as sub-second times.
+**Andy:** Not exactly. It's more like a lightweight virtual machine designed to run directly on the host operating system. When you build your project, the output is a complete container that includes your software along with its dependencies. However, it's not actually a virtualized system, so it can spin up in a little as sub-second times.
 
 **Tim:** How does it handle security and isolation?
 
-**Andy:** Those are handled by the host operating system. When your container runs in a host process, it's isolated from the other processes on that same host machine. This allows it to load whatever versions of components it needs regardless of what other containers are doing. It also means you can run tons of containers on the same host simultaneously.
+**Andy:** Those are handled by the host operating system. When your container runs in a host process, it's isolated from the other processes on that same host machine. This allows it to load whatever versions of components it needs regardless of what other containers are doing. It also means you can easily run multiple containers on the same host simultaneously.
 
 **Amita:** That sounds great for the production environment, but does it solve the challenges we're facing earlier in the pipeline?
 
@@ -45,11 +45,11 @@ The next morning, Andy calls a meeting to present a new idea to the team.
 
 **Mara:** How hard is it to develop a container application? Do we have to make significant changes to our existing code?
 
-**Andy:** Containers are really more of a packaging and deployment technology. They don't impact the fundamental software we're writing. We can just instruct our tools to produce a Docker container at the end of the build. Then, when we debug, the application will run out of that local container instead of our local web server. I actually forked our web site project last night and converted it to build as a Docker container to test out the process. Besides some basic container configuration, I didn't need to change any code.
+**Andy:** Containers are really more of a packaging and deployment technology. They don't impact the fundamental software we're writing. We can just instruct our tools to produce a Docker container at the end of the build. Then, when we debug, the application will run out of that local container instead of our local web server. In fact, tools like Visual Studio even let you switch between debug environments like Docker and IIS Express to give us the flexibility we need. I actually forked our web site project last night and converted it to build as a Docker container to test out the process. Besides adding some basic container configuration, I didn't need to change any of our existing code.
 
 **Mara:** That's great to know. I bet we can even update the Azure DevOps release pipeline in your fork to build and deploy the Docker version.
 
-**Andy:** You read my mind.
+**Andy:** You read my mind...
 
 ## What is Docker?
 
@@ -59,7 +59,7 @@ The Tailspin team selected Docker containers for this scenario because it met al
 * Dependency versioning challenges for QA
     * *Applications are packaged as containers that bring the correct versions of their dependencies with them.*
 * Overhead due to solving app isolation with VMs
-    * *Many containers can be run on the same host with benefits over virtual machines including faster startup time to greater resource efficiency.*
+    * *Many isolated containers can be run on the same host with benefits over virtual machines including faster startup time to greater resource efficiency.*
 * Configuration inconsistencies between DevOps stages
     * *Containers ship with manifests that automate configuration requirements, such as which ports need to be exposed.*
 

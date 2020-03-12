@@ -5,10 +5,10 @@ In this part, you'll:
 > [!div class="checklist"]
 > * Define some pipeline variables to make the build pipeline easier to maintain.
 > * Replace the existing **Build** tasks with a unified task to build and push a Docker container.
-> * Replace the existing **Deploy** task with one that updates the App Service Web App with the updated container.
+> * Replace the existing **Deploy** task with one that updates the App Service Web App with the new container image.
 > * Save the pipeline to trigger a CI/CD workflow.
 
-## Define a pipeline variable for the container tag
+## Define variables to be shared within the pipeline 
 
 Here you add a new pipeline variable to the existing CI/CD pipeline defined in *azure-pipelines.yml*. 
 
@@ -16,7 +16,7 @@ Here you add a new pipeline variable to the existing CI/CD pipeline defined in *
 1. Select the pipeline.
 1. Select **Edit**. This will bring up the azure-pipelines.yml file that defines the existing CI/CD pipeline.
 
-**Andy:** This was our previous build stage. I haven't made any changes yet, so we'll need to completely update it to build and push the container. 
+    **Andy:** This was our previous build stage. I haven't made any changes yet, so we'll need to completely update it to build and push the container. We added some variables to the shared library that will make it easier to update the pipeline if we change our deployment settings. However, we have some other strings that will be reused across tasks, so we should set them as pipeline variables within the file itself.
 
 1. Add the highlighted line below to add a pipeline variables named `webRepository` and `tag`. These will be used in multiple tasks to uniquely identify the specific version of the container being referenced. You may also remove the `buildConfiguration` variable as it won't be needed anymore.
 
@@ -26,7 +26,7 @@ Here you add a new pipeline variable to the existing CI/CD pipeline defined in *
 
 **Andy:** I don't think we need any of these build tasks anymore since the Dockerfile in the project folder already defines the build we want. However, I haven't had the chance to see what we can use to build the image using a Dockerfile yet. Any ideas?
 
-**Mara:** I was just looking that up. It looks like we can build the container and even push it to the repository with a single task. Let's add it now.
+**Mara:** I was just looking that up. It seems like should be able to build the container and even push it to the repository with a single task. Let's add it now.
 
 ### Docker task
 
@@ -36,9 +36,8 @@ The `Docker@2` task is designed to build and deploy Docker containers. It's idea
 * `buildContext` specifies the path to the build context.
 * `repository` specifies the name of the repository.
 * `dockerfile` specifies the path to the Dockerfile.
-* `buildContext` specifies the path to the build context.
 * `containerRegistry` specifies the name of the container registry connection to use.
-* `tags` indicates which tags to apply to the container.
+* `tags` indicates which tags to apply to the container image.
 
 You can learn more about the flexibility of this task in the official docs for the [Docker task](/azure/devops/pipelines/tasks/build/docker?azure-portal=true)
 

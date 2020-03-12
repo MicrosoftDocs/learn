@@ -6,9 +6,8 @@ To accomplish these goals, you:
 > * Add a user to ensure Azure DevOps can connect to your Azure subscription.
 > * Set up an Azure DevOps project for this module.
 > * On Azure Boards, move the work item for this module to the **Doing** column.
-> * Make sure your project is set up locally so that you can push changes to the pipeline.
 > * Create an Azure Container Registry and an Azure App Service Web App using the Azure CLI in Azure Cloud Shell.
-> * Create pipeline variables that define the names of your Docker resources.
+> * Create pipeline variables that define the names of your Azure resources.
 > * Create a service connection that enables Azure Pipelines to securely access your Azure subscription.
 
 ## Add a user to Azure DevOps
@@ -218,7 +217,13 @@ This solution requires several Azure resources for deployment, which will be cre
     tailspin-space-game-web-4692.azurewebsites.net  Running
     ```
 
-1. Run the following `az acr list` command to list the login server of the Azure Container Registry instance.
+1. As an optional step, go to the web host name. Verify that it's running and that the default home page appears.
+
+    Here's what you see:
+
+    ![The default home page on Azure App Service](../../shared/media/app-service-default.png)
+
+1. Run the following `az acr list` command to list the login server of the Azure Container Registry instance. You will need this server name when creating pipeline variables later.
 
     ```azurecli
     az acr list \
@@ -234,12 +239,6 @@ This solution requires several Azure resources for deployment, which will be cre
 	---------------------------------
 	tailspinspacegame4692.azurecr.io    
     ```
-
-1. As an optional step, go to the web host name. Verify that it's running and that the default home page appears.
-
-    Here's what you see:
-
-    ![The default home page on Azure App Service](../../shared/media/app-service-default.png)
 
 > [!IMPORTANT]
 > The [Clean up your Azure DevOps environment](/learn/modules/deploy-docker/5-clean-up-environment?azure-portal=true) page in this module contains important cleanup steps. Cleaning up helps ensure that you're not charged for Azure resources after you complete this module. Be sure to perform the cleanup steps even if you don't complete this module.
@@ -269,7 +268,7 @@ To add the variables:
     > [!IMPORTANT]
     > Set the name of the App Service instance, not its host name. In this example, you would enter *tailspin-space-game-web-4692* and not *tailspin-space-game-web-4692.azurewebsites.net*.
 
-1. Repeat the process to add another variable named *RegistryName* with the value of your Azure Container Registry name, such as *tailspinspacegame4692.azurecr.io*.
+1. Repeat the process to add another variable named *RegistryName* with the value of your Azure Container Registry login server, such as *tailspinspacegame4692.azurecr.io*.
 
 1. Near the top of the page, select **Save** to save your variable to the pipeline.
 
