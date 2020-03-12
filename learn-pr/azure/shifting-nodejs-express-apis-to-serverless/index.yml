@@ -10,7 +10,6 @@ metadata:
   ms.prod: learning-azure
 title: Refactor Node.js and Express APIs to Serverless APIs with Azure Functions
 summary: Refactor Node.js and Express APIs from a server based architecture to serverless APIs with Azure Functions.
-abstract: Refactor Node.js and Express APIs from a server based architecture to serverless APIs with Azure Functions.
 abstract: |
   In this module, you will:
     - Evaluate an existing project that implements Express APIs
