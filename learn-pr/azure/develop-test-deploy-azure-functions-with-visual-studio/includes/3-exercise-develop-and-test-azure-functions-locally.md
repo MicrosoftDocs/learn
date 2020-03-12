@@ -44,13 +44,15 @@ Before starting this exercise, you must install the Azure Functions tools extens
         public static class Function1
         {
             [FunctionName("Function1")]
-            public static IActionResult Run([HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = null)]HttpRequest req, TraceWriter log)
+            public static async Task<IActionResult> Run(
+            [HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = null)] HttpRequest req,
+            ILogger log)
             {
-                log.Info("C# HTTP trigger function processed a request.");
+                log.LogInformation("C# HTTP trigger function processed a request.");
 
                 string name = req.Query["name"];
 
-                string requestBody = new StreamReader(req.Body).ReadToEnd();
+                string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
                 dynamic data = JsonConvert.DeserializeObject(requestBody);
                 name = name ?? data?.name;
 
