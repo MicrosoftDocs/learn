@@ -4,7 +4,7 @@ Here, you'll learn how to take a phased approach to deploying Azure AD for your 
 
 ## Deploy in phases
 
-A good way to deploy Azure AD is in phases. Your deployment is split into several stages. Each stage addresses a key aspect of Azure AD. A phase includes tasks that you'll need to complete before you go to the next stage. This approach lays a foundation for your Azure AD instance. It helps secure the instance and then ensures it's fit for the purpose from the beginning.
+A good way to deploy Azure AD is in phases. Your deployment is split into several stages. Each stage addresses a key aspect of Azure AD. A phase includes tasks that you'll need to complete before you go to the next stage. This approach lays a secure foundation for your Azure AD instance.
 
 ### Stage 1: Build a secure foundation
 
