@@ -14,7 +14,7 @@ abstract: Sample Learn Module
 prerequisites: /
   - Text defined by content developer
 iconUrl: /learn/achievements/generic-badge.svg
-levels: <choose the appropriate level>
+levels: 
   - beginner
   - intermediate
   - advanced
