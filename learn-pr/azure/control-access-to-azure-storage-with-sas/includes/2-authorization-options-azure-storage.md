@@ -47,4 +47,4 @@ There are three types of SAS:
 
 You create an SAS in an ad-hoc way. Specify all the options of the SAS that can include start time, expiry time, and permissions.
 
-If you plan to create a service SAS, there's another option to associate it with a stored access policy. Five SASes can be associated to a stored access policy at a time. You then control the access and expiration at the stored access policy level. You take this approach to gain greater control, change the expiration, or revoke a SAS. The only way to revoke or change an ad-hoc SAS is to change the storage account keys.
+If you plan to create a service SAS, there's another option to associate it with a stored access policy. Five SASs can be associated to a stored access policy at a time. You then control the access and expiration at the stored access policy level. You take this approach to gain greater control, change the expiration, or revoke a SAS. The only way to revoke or change an ad-hoc SAS is to change the storage account keys.

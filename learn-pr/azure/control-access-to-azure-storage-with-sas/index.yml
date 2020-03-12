@@ -12,12 +12,13 @@ title: Control access to Azure Storage with shared access signatures
 summary: Grant access to data stored in your Azure Storage accounts securely through the use of shared access signatures.
 abstract: | 
   In this module, you will:
-  - Identify the features of Shared Access Signatures (SAS) for Azure Storage
-  - Identify the features of Stored Access Policies
-  - Programmatically generate and use SAS to access storage
+  - Identify the features of shared access signature (SAS) for Azure Storage.
+  - Identify the features of stored access policies.
+  - Programmatically generate and use SAS to access storage.
 prerequisites: | 
   - Knowledge of Azure Storage accounts
   - Familiarity with C#
+  - Familiarity with jQuery and JSON
 iconUrl: /learn/achievements/control-access-to-azure-storage-with-sas.svg
 levels:
 - intermediate

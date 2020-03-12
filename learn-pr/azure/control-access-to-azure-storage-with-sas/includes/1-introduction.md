@@ -4,7 +4,7 @@ You work for a healthcare organization and are developing an application that st
 
 In this module, you'll explore the options available to authorize access to your Azure storage. The focus in the module is on SAS and its different variants. You'll deploy a web app that uses a storage account and enhance it to use SAS.
 
-After you complete this module, you'll have a running web app that uses SAS associated with a stored access policy. You'll see how your patients' images are only accessible by using a SAS. Then you'll revoke access by updating the stored access policy.
+After you finish this module, you'll have a running web app that uses SAS associated with a stored access policy. You'll see how your patients' images are only accessible by using a SAS. Then you'll revoke access by updating the stored access policy.
 
 ## Learning objectives
 

@@ -1,6 +1,6 @@
-Shared access signatures (SASes) let you delegate access to your resources. Clients don't have direct access to your storage account credentials and, at a granular level, you control what they access.
+By using shared access signature (SAS), you can delegate access to your resources. Clients don't have direct access to your storage account credentials and, at a granular level, you control what they access.
 
-After you investigate all the authorization options, you decide to look at SAS in more detail. You know you'll want to create and use SAS in a C# .NET web app. You'd also like to follow Microsoft's best practices on when and how to use SAS.
+After you investigate all the authorization options, you decide to look at SAS in more detail. You know you'll want to create and use SAS in a C# .NET web app. You also want to follow Microsoft's best practices on when and how to use SAS.
 
 In this unit, you'll review how SAS works at a technical level and what C# code you write to use it.
 

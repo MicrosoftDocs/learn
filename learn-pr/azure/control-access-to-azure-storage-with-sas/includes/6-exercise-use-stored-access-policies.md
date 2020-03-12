@@ -1,8 +1,8 @@
-Instead of creating shared access signatures (SASes) individually, each with their own access permissions and expiration dates, you can associate them with a stored access policy. Changing the policy affects all the SASes associated with it.
+Instead of creating shared access signatures (SASs) individually, each with their own access permissions and expiration dates, you can associate them with a stored access policy. Changing the policy affects all the SASs associated with it.
 
-You now know there's a better way to create and manage your company's SASes. You can update your new test pages to use stored access policies.
+You now know there's a better way to create and manage your company's SASs. You can update your new test pages to use stored access policies.
 
-In this exercise, you'll update your web app to create SASes with stored access policies. Then you'll use Azure CLI commands to change the policies and test that access is revoked.
+In this exercise, you'll update your web app to create SASs with stored access policies. Then you'll use Azure CLI commands to change the policies and test that access is revoked.
 
 ## Add a method to create stored access policies
 

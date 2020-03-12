@@ -1,4 +1,4 @@
-You use Azure Storage to authorize access to files with a shared key, with shared access signatures (SASes), or via Azure Active Directory (Azure AD). With SASes, you control what a client can do with the files and for how long.
+You use Azure Storage to authorize access to files with a shared key, with shared access signature (SAS), or via Azure Active Directory (Azure AD). With SAS, you control what a client can do with the files and for how long.
 
 Your company's image diagnostic system accesses its patient images internally via a shared key. Your team needs to create an API to allow third parties access to diagnostic images. You'll create a test page on your web app to see how SAS helps you grant secure access to third-party clients.
 
