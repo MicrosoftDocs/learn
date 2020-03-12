@@ -52,10 +52,10 @@ You've now connected Storage Explorer to your Azure subscription. Don't close th
 
     ```azurecli
     az storage account create \
-    --name  mslearn$RANDOM\
+    --name  mslearn$RANDOM \
     --resource-group <rgn>[sandbox resource group name]</rgn> \
     --sku Standard_GRS \
-    --kind StorageV2 \
+    --kind StorageV2
     ```
 
     In the output, note the name of the storage account. After the storage account is created, switch back to Storage Explorer.
