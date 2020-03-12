@@ -1,0 +1,35 @@
+### YamlMime:Module
+uid: learn.wwl.use-automated-machine-learning
+metadata:
+  title: Use Automated Machine Learning in Azure Machine Learning
+  description: "Training a machine learning model is an iterative process that requires time and compute resources. Automated machine learning can help make it easier."
+  ms.date: 03/13/2020
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Use automated machine learning in Azure Machine Learning
+summary: Training a machine learning model is an iterative process that requires time and compute resources. Automated machine learning can help make it easier.
+abstract: |
+  The automated machine learning user interface in Azure Machine Learning
+prerequisites: |
+  Ability to navigate the Azure portal
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- ai-engineer
+- data-scientist
+products:
+- azure-machine-learning-service
+units:
+- learn.wwl.use-automated-machine-learning.introduction
+- learn.wwl.use-automated-machine-learning.machine-learning
+- learn.wwl.use-automated-machine-learning.create-azure-machine-learning-workspace
+- learn.wwl.use-automated-machine-learning.create-compute
+- learn.wwl.use-automated-machine-learning.data
+- learn.wwl.use-automated-machine-learning.use-automl
+- learn.wwl.use-automated-machine-learning.deploy-model
+- learn.wwl.use-automated-machine-learning.summary
+badge:
+  uid: learn.wwl.use-automated-machine-learning.badge
