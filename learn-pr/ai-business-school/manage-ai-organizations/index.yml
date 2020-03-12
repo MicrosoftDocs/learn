@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn-wwl.ai-strategy-in-government
+uid: learn-wwl.manage-ai-organizations
 metadata:
   title: Define an AI strategy to create value in government
   description: Explore the strategic components, special factors, and use cases of an AI strategy in Government that creates value, with INSEAD and Microsoft.
@@ -17,7 +17,7 @@ abstract: |
   - Articulate the components of an AI strategy. 
   - Apply the value creation framework.
 prerequisites: None
-iconUrl: /learn/achievements/ai-strategy-in-government.svg
+iconUrl: /learn/achievements/manage-ai-organizations.svg
 levels: 
 - intermediate
 roles: 
@@ -28,12 +28,15 @@ products:
 - dynamics
 - m365
 units: 
-- learn-wwl.ai-strategy-in-government.introduction
-- learn-wwl.ai-strategy-in-government.ai-value-in-government-insead
-- learn-wwl.ai-strategy-in-government.government-case-study-introduction
-- learn-wwl.ai-strategy-in-government.government-executive-QA
-- learn-wwl.ai-strategy-in-government.government-case-study-resolution
-- learn-wwl.ai-strategy-in-government.knowledge-check
-- learn-wwl.ai-strategy-in-government.summary-and-resources
+- learn-wwl.manage-ai-organizations.introduction
+- learn-wwl.manage-ai-organizations.managing-innovation
+- learn-wwl.manage-ai-organizations.managing-innovation-video
+- learn-wwl.manage-ai-organizations.ai-economics
+- learn-wwl.manage-ai-organizations.ai-economics-video
+- learn-wwl.manage-ai-organizations.mlops-creating-ml
+- learn-wwl.manage-ai-organizations.mlops-servicing-ml
+- learn-wwl.manage-ai-organizations.ai-organizational-models
+- learn-wwl.manage-ai-organizations.knowledge-check
+- learn-wwl.manage-ai-organizations.summary-and-resources
 badge: 
-  uid: learn-wwl.ai-strategy-in-government.badge #add the uid for your achievement badge.
+  uid: learn-wwl.manage-ai-organizations.badge #add the uid for your achievement badge.

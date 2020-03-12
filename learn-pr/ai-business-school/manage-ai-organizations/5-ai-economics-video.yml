@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn-wwl.ai-strategy-in-government.government-case-study-resolution
+uid: learn-wwl.manage-ai-organizations.ai-economics-video
 title: Transform processes in government with AI - Case study resolution
 metadata:
   title: Transform processes in government with AI - Case study resolution
@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 9 
 content: |
-  [!include[](includes/5-government-case-study-resolution.md)] 
+  [!include[](includes/5-ai-economics-video.md)] 

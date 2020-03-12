@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn-wwl.ai-strategy-in-government.government-executive-QA
+uid: learn-wwl.manage-ai-organizations.ai-economics
 title: Transform processes in government with AI – Executive Q&A
 metadata:
   title: Transform processes in government with AI – Executive Q&A
@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 10 
 content: |
-  [!include[](includes/4-government-executive-QA.md)] 
+  [!include[](includes/4-ai-economics.md)] 

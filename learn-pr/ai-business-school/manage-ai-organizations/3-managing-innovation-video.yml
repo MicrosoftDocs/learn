@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn-wwl.ai-strategy-in-government.government-case-study-introduction
+uid: learn-wwl.manage-ai-organizations.managing-innovation-video
 title: Transform processes in government with AI - Case study introduction
 metadata:
   title: Transform processes in government with AI - Case study introduction
@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 6 
 content: |
-  [!include[](includes/3-government-case-study-introduction.md)] 
+  [!include[](includes/3-managing-innovation-video.md)] 

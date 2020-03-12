@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn-wwl.ai-strategy-in-government.introduction
+uid: learn-wwl.manage-ai-organizations.mlops-creating-ml
 title: Introduction
 metadata:
   title: Introduction
@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 1 
 content: |
-  [!include[](includes/1-introduction.md)] 
+  [!include[](includes/6-mlops-creating-ml.md)] 
