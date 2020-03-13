@@ -22,7 +22,7 @@ You will perform these steps on the Azure IoT Edge Gateway Virtual Machine that 
 
 1. Within the Cloud Shell, paste in the modified `ssh` command, and press **Enter**.
 
-1. When prompted with **Are you sure you want to continue connecting?**, type `yes` and press Enter. This prompt is a security confirmation since the certificate used to secure the connection to the VM is self-signed. The answer to this prompt will be remembered for subsequent connections, and is only prompted on the first connection.
+1. When prompted with "**Are you sure you want to continue connecting?**", type `yes` and press Enter. This prompt is a security confirmation since the certificate used to secure the connection to the VM is self-signed. The answer to this prompt will be remembered for subsequent connections, and is only prompted on the first connection.
 
 1. When prompted to enter the password, enter the Administrator password that was entered when the VM was provisioned.
 
@@ -60,7 +60,7 @@ You will perform these steps on the Azure IoT Edge Gateway Virtual Machine that 
      ls 
     ```
 
-    This command should output there are 2 files within the directory. The `certGen.sh` is the helper bash script, and the `openssl_root_ca.cnf` file is the configuration file needed for generating the certificates with the helper script using OpenSSL.
+    This command should output there are two files within the directory. The `certGen.sh` is the helper bash script, and the `openssl_root_ca.cnf` file is the configuration file needed for generating the certificates with the helper script using OpenSSL.
 
    ```bash
      username@AZ-220-VM-EDGEGW:~/certificates$ ls
