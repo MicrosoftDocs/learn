@@ -15,17 +15,32 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "You are making a pitch to management to move your company's IT resources to the cloud. Which of the following arguments is NOT one that you would use to make your case?"
+  - content: "Which of the following test scenarios will not help test the resiliency and readiness of a cloud service?"
     choices:
-    - content: "We incur no up-front costs for deploying resources to the cloud, and we pay only for the resources that we use."
+    - content: "Randomly turning off VM instances that make up the service"
       isCorrect: false
-      explanation: "Incorrect. You pay for cloud resources using a pay-as-you-go model, and you only pay for the resources that you use."
-    - content: "Moving to the cloud will make it easier for us to scale our Web site as our customer base grows."
+      explanation: "Incorrect. This will help in testing the resiliency and readiness of a cloud service, but is it the only one?"
+    - content: "Turning off an entire data center or availability zone"
       isCorrect: false
-      explanation: "Incorrect. One of the benefits of cloud computing is rapid scalability."
-    - content: "If we choose one vendor's cloud platform and later change our mind, it is easy to move virtual machines and other resources from one cloud platform to another."
+      explanation: "Incorrect. This will help in testing the resiliency and readiness of a cloud service, but is it the only one?"
+    - content: "Randomly deleting the files that back up the production database of the main web server"
+      isCorrect: false
+      explanation: "Incorrect. This will help in testing the resiliency and readiness of a cloud service, but is it the only one?"
+    - content: "All of these tests ensure the resiliency of the cloud service"
       isCorrect: true
-      explanation: "Correct! Vendor lock-in is one of the risks you incur with cloud computing. While there are ways to mitigate the risks, moving resources from one cloud to another is typically labor-intensive."
-    - content: "Cloud computing makes us more agile. We can deploy virtual machines in minutes, whereas procuring a physical server and installing it on-premises can take weeks or months."
+      explanation: "Correct!"
+
+  - content: "An organization deploys a solution consisting of a Web site and a database to the cloud. It also deploys a replica solution to take over in the event that the primary solution fails. In the background, each request that reaches the primary Web site is forwarded to (and also processed by) the secondary Web site. Responses from the secondary site are ignored, while responses from the primary site are transmitted back to the client. While no attempt is made to synchronize the actions of the primary site and its replica, the intent is to make sure that the secondary database mirrors the primary database as closely as possible. Which resource replication strategy does this represent?"
+    choices:
+    - content: "Active replication"
       isCorrect: false
-      explanation: "Incorrect. One of the benefits of cloud computing is fast resource-provisioning times."
+      explanation: "Incorrect. Active replication would synchronize the actions of the primary and secondary sites."
+    - content: "Semi-active replication"
+      isCorrect: true
+      explanation: "Correct!"
+    - content: "Passive replication"
+      isCorrect: false
+      explanation: "Incorrect. Passive replication would attempt to constantly replicate the database rather than forward requests to the secondary site."
+    - content: "Semi-passive replication"
+      isCorrect: false
+      explanation: "Incorrect. Semi-passive replication would attempt to constantly replicate the database rather than forward requests to the secondary site, and it would make no distinction between primaries and secondaries."
