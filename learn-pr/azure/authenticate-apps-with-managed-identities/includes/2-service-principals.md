@@ -18,7 +18,7 @@ Think of an Azure service principal as a proxy account, or identity, that repres
 
 In the Azure portal, you'll create an Azure AD application to represent your app. This application object is then associated with a service principal. You'll only need to associate one service principal if all the resources are in the same tenant. If your app needs access to Azure resources in a different tenant, you'll require a service principal for each of them.
 
-![Diagram showing the relationship between service principals and tenants.](../media/2-service-principal-overview.png)
+![Diagram showing the relationship between service principals and tenants.](../media/2-service-principal-overview.svg)
 
 You create your service principal:
 
@@ -35,7 +35,7 @@ While there are several ways to provision an application for Microsoft identity 
 
 - Sign in to the Azure portal, and select **Azure Active Directory**.
 - Select **App registrations**, and in the top left, select **New registration**.
-![Screenshot of adding an application to Azure AD](../media/2-adding-an-app.png)
+    ![Screenshot of adding an application to Azure AD](../media/2-adding-an-app.png)
 - Enter a display name for the app, one that doesn't need to follow Azure naming conventions.
 - Supported account types must be specified. Choose from:
   - Accounts within your company's active directory
