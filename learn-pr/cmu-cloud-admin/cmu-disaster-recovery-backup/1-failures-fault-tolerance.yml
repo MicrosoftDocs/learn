@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.cmu-cloud-admin.overview-of-the-cloud.cmu-cloud-admin-overview.01-define-cloud-computing
-title: Define cloud computing
+uid: learn.cmu-cloud-admin.cmu-disaster-recovery-backup.1-failures-fault-tolerance
+title: Failures and fault tolerance
 metadata:
-  title: Define cloud computing
-  description: Definition of cloud computing
+  title: Failures and fault tolerance
+  description: Failures and fault tolerance
   ms.date: 08/15/2019
   author: shanamatthews
   ms.author: shanama
@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 7
 content: |
-  [!include[](includes/01-define-cloud-computing.md)]
+  [!include[](includes/1-failures-fault-tolerance.md)]
 quiz:
   title: Check your knowledge
   questions:

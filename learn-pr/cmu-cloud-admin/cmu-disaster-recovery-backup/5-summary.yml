@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.cmu-cloud-admin.overview-of-the-cloud.cmu-cloud-admin-overview.05-cloud-types
-title: Types of clouds
+uid: learn.cmu-cloud-admin.cmu-disaster-recovery-backup.5-summary
+title: Summary
 metadata:
-  title: Types of clouds
-  description: Cloud Deployment Models
+  title: Summary
+  description: Summary
   ms.date: 08/15/2019
   author: shanamatthews
   ms.author: shanama
@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 8
 content: |
-  [!include[](includes/05-cloud-types.md)]
+  [!include[](includes/5-summary.md)]
 quiz:
   title: Check your knowledge
   questions:

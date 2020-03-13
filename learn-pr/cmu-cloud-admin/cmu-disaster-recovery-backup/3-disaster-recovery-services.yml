@@ -1,17 +1,17 @@
 ### YamlMime:ModuleUnit
-uid: learn.cmu-cloud-admin.overview-of-the-cloud.cmu-cloud-admin-overview.03-evolution
-title: The evolution of cloud computing
+uid: learn.cmu-cloud-admin.cmu-disaster-recovery-backup.3-disaster-recovery-services
+title: Disaster recovery services
 metadata:
-  title: The evolution of cloud computing
-  description: Evolution of Cloud Computing
-  ms.date: 08/15/2019
+  title: Disaster recovery services
+  description: Disaster recovery services
+  ms.date: 03/15/2020
   author: shanamatthews
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 12
 content: |
-  [!include[](includes/03-evolution.md)]
+  [!include[](includes/3-disaster-recovery-services.md)]
 quiz:
   title: Check your knowledge
   questions:

@@ -1,17 +1,17 @@
 ### YamlMime:ModuleUnit
-uid: learn.cmu-cloud-admin.overview-of-the-cloud.cmu-cloud-admin-overview.02-before-the-cloud
-title: Before the cloud
+uid: learn.cmu-cloud-admin.cmu-disaster-recovery-backup.2-backup-services
+title: Backup services
 metadata:
-  title: Before the cloud
-  description: Pre-Cloud Computing Domains and Applications
-  ms.date: 08/15/2019
+  title: Backup services
+  description: Backup services
+  ms.date: 03/15/2020
   author: shanamatthews
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 17
 content: |
-  [!include[](includes/02-before-the-cloud.md)]
+  [!include[](includes/2-backup-services.md)]
 quiz:
   title: Check your knowledge
   questions:

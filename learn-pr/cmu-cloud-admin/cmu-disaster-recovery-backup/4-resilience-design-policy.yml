@@ -1,17 +1,17 @@
 ### YamlMime:ModuleUnit
-uid: learn.cmu-cloud-admin.overview-of-the-cloud.cmu-cloud-admin-overview.04-building-blocks
-title: Building blocks of the cloud
+uid: learn.cmu-cloud-admin.cmu-disaster-recovery-backup.4-resilience-design-policy
+title: Resilience in design and policy
 metadata:
-  title: Building blocks of the cloud
-  description: Cloud Building Blocks and Service Models
-  ms.date: 08/15/2019
+  title: Resilience in design and policy
+  description: Resilience in design and policy
+  ms.date: 03/15/2020
   author: shanamatthews
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 24
 content: |
-  [!include[](includes/04-building-blocks.md)]
+  [!include[](includes/4-resilience-design-policy.md)]
 quiz:
   title: Check your knowledge
   questions:
