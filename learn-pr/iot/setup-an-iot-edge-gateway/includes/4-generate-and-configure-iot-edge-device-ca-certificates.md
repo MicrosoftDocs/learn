@@ -178,4 +178,4 @@ You will do this on the `az-220-vm-edgegw-{YOUR-ID}` Virtual Machine using a hel
     
      Once the files are copied to the **Azure Cloud Shell** storage, from the **AZ-220-VM-EDGEGW** virtual machine, you will be able to easily download any of the IoT Edge Device certificate and key files to your local machine as necessary. Files can be downloaded from the Azure Cloud Shell using the `download <filename>` command.
 
-     Congratulations, that's the end of the module! In the next module, we will create an IoT Edge Device Identity in IoT Hub using the Azure Portal.
+     Congratulations, that's the end of the module! In the next module, we will setup an IoT Edge Gateway Hostname.

@@ -64,4 +64,4 @@ In this module, you will create a new IoT Edge Device identity in Azure IoT Hub 
 
 1. On the **Review + create** step, click the **Create** button.
 
-Congratulations, that's the end of the module! In the next module, we will setup an IoT Edge Gateway Hostname.
+Congratulations, that's the end of the module! In the next module, we will deploy an Azure IoT Edge enabled Linux Virtual Machine.

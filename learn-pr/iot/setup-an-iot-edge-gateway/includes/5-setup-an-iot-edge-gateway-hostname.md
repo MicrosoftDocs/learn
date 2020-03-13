@@ -72,4 +72,4 @@ In this module, you will configure the DNS name for Public IP Address of the AZ-
 
 1. Save the file and exit vi/vim.
 
-Congratulations, that's the end of the module! In the next module, we will connect an IoT Edge Gateway Device to IoT Hub.
+Congratulations, that's the end of the module! In the next module, we will open IoT Edge Gateway Device Ports for communication with Downstream Devices.

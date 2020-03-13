@@ -38,9 +38,9 @@ products:
 - azure-iot-edge
 units:
 - learn.iot.setup-an-iot-edge-gateway.introduction
+- learn.iot.setup-an-iot-edge-gateway.create-an-iot-edge-device-identity-in-iot-hub-using-azure-portal
 - learn.iot.setup-an-iot-edge-gateway.deploy-an-azure-iot-edge-enabled-linux-vm-as-an-iot-edge-device
 - learn.iot.setup-an-iot-edge-gateway.generate-and-configure-iot-edge-device-ca-certificates
-- learn.iot.setup-an-iot-edge-gateway.create-an-iot-edge-device-identity-in-iot-hub-using-azure-portal
 - learn.iot.setup-an-iot-edge-gateway.setup-an-iot-edge-gateway-hostname
 - learn.iot.setup-an-iot-edge-gateway.open-iot-edge-gateway-device-ports-for-communication-with-downstream-devices
 - learn.iot.setup-an-iot-edge-gateway.create-a-downstream-device-identity-in-iot-hub
