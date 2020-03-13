@@ -23,13 +23,17 @@ CNAME records that you may need for a Traffic Manager profile or Azure Content D
 
 Azure alias records enable a zone apex domain to reference other Azure resources from the DNS zone, without the need to create complex redirection policies. One of the other possible uses for an Azure alias is to route all traffic through Azure Traffic Manager.
 
-The Azure alias record can connect to two types of Azure resources: Traffic Manager Service and public IP addresses.
+The Azure alias record can point to the following Azure resources:
+
+- Traffic Manager profile
+- Azure CDN endpoints
+- Public IP resource
+- Front Door profile
 
 Benefits of using alias records:
 
 - Provides lifecycle tracking of target resources, ensuring changes to any target resource are automatically applied to the DNS zone.
 - Provides support for load balanced applications in the zone apex.
-- Can reference Azure Traffic Manager and Public IP.
 
 The alias record set supports the following DNS zone record types:
 

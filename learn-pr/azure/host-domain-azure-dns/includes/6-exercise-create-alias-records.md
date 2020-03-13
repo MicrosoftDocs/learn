@@ -35,7 +35,7 @@ Manually creating a virtual network, load balancer, and two VMs will take some t
     - Create a load balancer referencing the VMs, including load balancer rules.
     - Link the NICs to the load balancer
 
-    After the script completes, it shows you the public IP address for the load balancer. Copy the IP address to use it later. 
+    After the script completes, it shows you the public IP address for the load balancer. Copy the IP address to use it later.
 
 ## Create an alias record in your zone apex
 
