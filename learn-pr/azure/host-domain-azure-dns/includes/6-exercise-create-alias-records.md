@@ -14,7 +14,6 @@ Manually creating a virtual network, load balancer, and two VMs will take some t
 
 1. Using the Cloud Shell, run the following setup script.
 
-    <!-- Replace with new repo - script.sh and cloud-init.txt in resources folder -->
     ```bash
     git clone https://github.com/MicrosoftDocs/mslearn-host-domain-azure-dns.git
     ```
