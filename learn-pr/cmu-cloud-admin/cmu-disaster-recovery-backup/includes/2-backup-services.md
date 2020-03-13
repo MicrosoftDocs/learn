@@ -12,7 +12,7 @@ However, as even a cursory examination of modern data centers will reveal, not a
 
 ### AWS Backup
 
-In early 2019, Amazon Web Services redesigned its cloud-based backup service for customers' hybrid cloud environments. At the center of the new AWS Backup, whose browser-based console appears in Figure 9.2, is a *policy engine*, not unlike the arbiter of rules for a firewall. With this engine, the backup administrator writes rules that specify the following:
+In early 2019, Amazon Web Services redesigned its cloud-based backup service for customers' hybrid cloud environments. At the center of the new AWS Backup, whose browser-based console appears in Figure 2, is a *policy engine*, not unlike the arbiter of rules for a firewall. With this engine, the backup administrator writes rules that specify the following:
 
 - Which resources in a system require backup
 
@@ -46,7 +46,7 @@ From an architectural perspective, AWS Backup is designed to serve as a mirror f
 
 ### Azure Backup
 
-Azure Backup is equally capable of backing up on-premises resources (servers and virtual machines) and resources hosted in Azure. It does not aim to change the existing backup policy in the data center -- just to replace local discs and tape drives with cloud storage. The cloud-based location for backed-up files and volumes on Azure is called the *Recovery Services Vault*, whose browser-based console appears in Figure 9.3. During the setup process for this vault through the Azure portal, the administrator downloads and installs the client-side agent known as the Microsoft Azure Recovery Services agent or "MARS." In Windows Server, MARS runs as an application, looking very much like a System Center add-on. (Alternately, an admin may prefer to use System Center Data Protection Manager, where MARS functionality is already built in.) The administrator locates the volumes and services in the network whose data requires backup, and MARS distributes its agents to the server addresses responsible for those components.
+Azure Backup is equally capable of backing up on-premises resources (servers and virtual machines) and resources hosted in Azure. It does not aim to change the existing backup policy in the data center -- just to replace local discs and tape drives with cloud storage. The cloud-based location for backed-up files and volumes on Azure is called the *Recovery Services Vault*, whose browser-based console appears in Figure 3. During the setup process for this vault through the Azure portal, the administrator downloads and installs the client-side agent known as the Microsoft Azure Recovery Services agent or "MARS." In Windows Server, MARS runs as an application, looking very much like a System Center add-on. (Alternately, an admin may prefer to use System Center Data Protection Manager, where MARS functionality is already built in.) The administrator locates the volumes and services in the network whose data requires backup, and MARS distributes its agents to the server addresses responsible for those components.
 
 ![Figure 3: The console for Azure Recovery Services Vault. \[Courtesy Microsoft\]](../media/fig9-3.png)
 
@@ -66,7 +66,7 @@ Google offers a variety of Cloud Storage tiers based on the class of data being 
 
 _Figure 4: The contents of a Google Cloud Storage bucket. \[Courtesy Google\]_
 
-As with AWS, Google calls its general-purpose storage container a *bucket*. Figure 9.4 shows one step in the process of importing data from local storage into a Google Cloud Storage (GCS) bucket. Similar to how Azure bases its delivery model around three key parameters, GCS's key parameters are:
+As with AWS, Google calls its general-purpose storage container a *bucket*. Figure 4 shows one step in the process of importing data from local storage into a Google Cloud Storage (GCS) bucket. Similar to how Azure bases its delivery model around three key parameters, GCS's key parameters are:
 
 - **Performance**, which in this context is synonymous with availability (how quickly servers will respond to customers' request for data reads)
 

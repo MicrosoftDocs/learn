@@ -60,7 +60,7 @@ A *proactive FT technique* is undertaken prior to the revelation of any fault's 
 
 The key to an effective resource replication strategy may not be to just "back up everything." A systems analyst should be capable of ascertaining which resources in a system (for example, a database engine, Web server, or virtual network router) can restore themselves following a failure event, and which ones may be irrecoverable. Smart replication may be the first line of defense in a fault-tolerant system.
 
-There are four common strategies used to implement resource replication, all of which are depicted in Figure 9.1:
+There are four common strategies used to implement resource replication, all of which are depicted in Figure 1:
 
 - **Active replication** --- All replicated resources are active concurrently, each independently maintaining its own *state* -- its own local data which makes it functional. This means that a client's request is received by all replicated resources in a class, and all resources process a response. However, it is the designated primary resource in that class whose response is delivered to the client. In the event of a failure of one resource, including the primary node, another node is designated its successor. This requires processing between the primary and replica nodes to be *deterministic* -- to take place in tandem, and on a set itinerary.
 
