@@ -1,0 +1,31 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.ms-learn-live-foundations-serverless-dev.2-session-1
+
+# Use the format "Prepare for session x - [Title of the session]" (do not use a colon in the title, it will make VScode show YAML errors).
+title: TODO
+
+metadata:
+  # Use the same as the "title".
+  title: TODO
+  # Same as "title".
+  description: TODO
+  
+  # Update this after changing the file.
+  ms.date: 3/13/2020
+  
+  # Your Github alias
+  author: krumelur
+
+  # Your Microsoft alias
+  ms.author: renrup
+
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: true
+
+# Estimate the time needed to complete the preparation document including the creation of resources on Azure. 
+# It's best to follow the instructions and take the time.
+durationInMinutes: 10
+
+content: |
+  [!include[](includes/2-session-1.md)]
