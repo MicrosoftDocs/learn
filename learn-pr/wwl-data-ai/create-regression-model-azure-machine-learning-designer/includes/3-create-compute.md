@@ -1,4 +1,4 @@
-To train and deploy models using Azure Machine Learning designer, you need compute targets on which to run the training process, test the model, and host the model in a deployed service.
+To train and deploy models using Azure Machine Learning designer, you need compute on which to run the training process, test the model, and host the model in a deployed service.
 
 ## Create compute targets
 
