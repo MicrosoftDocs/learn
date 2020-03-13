@@ -6,15 +6,15 @@ In this module, you will configure the DNS name for Public IP Address of the AZ-
 
     If you have more than one Azure account, be sure that you are logged in with the account that is tied to the subscription that you will be using for this course.
 
-1. Navigate to the **AZ-220-VM-EDGEGW-_{YOUR-ID}_** IoT Edge virtual machine.
+1. Navigate to the IoT Edge virtual machine.
 
 1. On the **Overview** pane of the **Virtual machine** blade, click the **Configure** link next to **DNS name**.
 
-1. On the **Public IP Address** Configuration blade for the **AZ-220-VM-EDGEGW-_{YOUR-ID}_** virtual machine, enter `az-220-vm-edgegw-{YOUR-ID}` into the **DNS name label** field (the label must be globally unique, and only lowercase letters, numbers, and hyphens).
+1. On the **Public IP Address** Configuration blade for the * virtual machine, take note of into the **DNS name label** field which should be in the format:
 
-1. Click **Save**.
+    `az-220-vm-edgegw-{YOUR-ID}`
 
-1. Note the full DNS name for the Public IP Address of the **AZ-220-VM-EDGEGW-_{YOUR-ID}_** virtual machine, and save it for reference later.
+1. Note the full DNS name for the Public IP Address of the virtual machine, and save it for reference later.
 
     The full DNS name is composed of the az-220-vm-edgegw-{YOUR-ID} value suffixed by the text below the DNS name label field.
 
@@ -26,9 +26,9 @@ In this module, you will configure the DNS name for Public IP Address of the AZ-
     
     All Public IP Address DNS names will be at the **.cloudapp.azure.com** domain name. This example is for the VM being hosted in the eastus Azure region. This part fo the DNS name will vary depending on what Azure region the VM is hosted within.
 
-    Setting the DNS name for the Public IP Address of the **AZ-220-VM-EDGEGW** will give it an FQDN (Fully Qualified Domain Name) for the downstream device(s) to use as the **GatewayHostName** to connect to it. Since the VM, in this case, is accessible across the Internet an Internet DNS name is needed. If the Azure IoT Edge Gateway were hosted in a Private or Hybrid network, then the machine name would meet the requirements of a **GatewayHostName** for on-premises downstream devices to connect.
+    The DNS name for the Public IP Address of the virtual machine provides an FQDN (Fully Qualified Domain Name) for the downstream device(s) to use as the **GatewayHostName** to connect to it. Since the VM, in this case, is accessible across the Internet an Internet DNS name is needed. If the Azure IoT Edge Gateway were hosted in a Private or Hybrid network, then the machine name would meet the requirements of a **GatewayHostName** for on-premises downstream devices to connect.
 
-1. Navigate to the **AZ-220-VM-EDGEGW** IoT Edge virtual machine within the Azure portal.
+1. Navigate to the IoT Edge virtual machine within the Azure portal.
 
 1. On the **Overview** pane of the **Virtual machine** blade, click the **Connect** button at the top.
 
@@ -37,11 +37,19 @@ In this module, you will configure the DNS name for Public IP Address of the AZ-
     You can modify this sample SSH command which will be used to connect to the virtual machine that contains the IP Address for the VM and the Administrator username. Now that the DNS name label has been configured, the command is formatted similar to `ssh demouser@AZ-220-VM-EDGEGW.eastus.cloudapp.azure.com`.
 
     >[!NOTE]
-    > If a “Host key verification failed” messages displays, then use the VM’s IP Address with the `ssh` command to connect tot he virtual machine.
+    > If a "Host key verification failed" messages displays, then use the VM's IP Address with the `ssh` command to connect to the virtual machine.
 
 1. Navigate to the Azure portal and click on the **Cloud Shell** icon to open up the **Azure Cloud Shell**. When the pane opens, choose the option for the **Bash** terminal within the Cloud Shell.
 
-1. Within the Cloud Shell, paste in the `ssh` command that was copied, and press **Enter**.
+1. Within the **Connect to virtual machine pane**, select the **SSH** option, then look for the section **Run the example command below to connect to your VM.**.
+
+    This should look like the following
+    
+    `ssh -i <private key path> usernam@az-220-vm-edgegw-{YOUR-ID}.westus.cloudapp.azure.com
+
+    This is a sample SSH command that will be used to connect to the virtual machine that contains the hostname for the VM and the Administrator username. Modify this  command so that it is formatted similar to `ssh username@az-220-vm-edgegw-{YOUR-ID}.westus.cloudapp.azure.com`.
+
+1. Within the Cloud Shell, paste in the modified `ssh` command, and press **Enter**.
 
 1. When prompted to enter the password, enter the Administrator password that was entered when the VM was provisioned.
 
@@ -50,7 +58,7 @@ In this module, you will configure the DNS name for Public IP Address of the AZ-
     ```bash
     sudo vi /etc/iotedge/config.yaml
     ```
-1. Locate the **Edge device hostname** section within the file. Update the **hostname** value to be set to the **DNS name** set previously for the Public IP Address of the **AZ-220-VM-EDGEGW-_{YOUR-ID}_** virtual machine.
+1. Locate the **Edge device hostname** section within the file. Update the **hostname** value to be set to the **DNS name** set previously for the Public IP Address of the Azure IoT Edge Gateway Virtual Machine.
 
     The resulting value will look similar to the following:
 
@@ -71,5 +79,13 @@ In this module, you will configure the DNS name for Public IP Address of the AZ-
     >- To quit vi, type `:quit` and press `Enter`.
 
 1. Save the file and exit vi/vim.
+
+1. Now restart the IoT Edge Service to take into account the new hostname and ensure that it starts successfully.  
+
+    ```bash
+    sudo service iotedge restart
+    ```
+
+    If the Edge runtime does not restart successfully, ensure that you have modified `/etc/iotedge/config.yaml` appropriately.
 
 Congratulations, that's the end of the module! In the next module, we will open IoT Edge Gateway Device Ports for communication with Downstream Devices.

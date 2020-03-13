@@ -2,7 +2,7 @@ In this module, you will configure the Network Security Group (NSG) that secures
 
 ## Open IoT Edge Gateway Device Ports for Communication with Downstream Devices
 
-For the Azure IoT Edge Gateway to function, at least one of the IoT Edge hub’s supported protocols must be open for inbound traffic from downstream devices. The supported protocols are MQTT, AMQP, and HTTPS.
+For the Azure IoT Edge Gateway to function, at least one of the IoT Edge hub's supported protocols must be open for inbound traffic from downstream devices. The supported protocols are MQTT, AMQP, and HTTPS.
 
 The IoT communication protocols supported by Azure IoT Edge have the following port mappings:
 
@@ -21,9 +21,9 @@ In a production scenario, you will only want to open the minimum number of ports
 
     If you have more than one Azure account, be sure that you are logged in with the account that is tied to the subscription that you will be using for this course.
 
-1. Navigate to the Resource Group that contains the **AZ-220-VM-EDGEGW-_{YOUR-ID}_** VM.
+1. Navigate to the Resource Group that contains the Azure IoT Edge Gateway Virtual Machine.
 
-1. On the Resource Group blade, click on the **AZ-220-VM-EDGEGW-_{YOUR-ID}_-nsg** Network Security Group (NSG) resource.
+1. On the Resource Group blade, click on the Network Security Group (NSG) resource.
 
 1. On the Network security group blade, click on **Inbound security rules** under the Settings section.
 

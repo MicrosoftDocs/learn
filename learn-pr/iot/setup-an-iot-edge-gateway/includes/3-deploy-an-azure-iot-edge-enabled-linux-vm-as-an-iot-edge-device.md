@@ -4,42 +4,36 @@ In this module, you will deploy an Ubuntu Server VM with Azure IoT Edge runtime 
 
 If necessary, log in to your Azure portal using your Azure account credentials.
 
-1. Make sure you've activated the sandbox, using the button above. The sandbox creates a free temporary resource.
+1. Make sure that you have activated the sandbox, using the button above. The sandbox will allow us to create the necessary resources without incurring any charges.
 
-1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
+1. We will deploy an Azure IoT Edge enabled Linux VM using the iotedge-vm-deploy ARM Template.  To begin, click the button below:
 
-1. In the Azure Portal, click **Create a resource** open the Azure Marketplace.
+    <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fazure%2Fiotedge-vm-deploy%2Fms-learn%2FedgeDeploy.json" target="_blank">
+        <img src="https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazure.png" />
+    </a>
 
-1. On the **New** blade, in the **Search the Marketplace box**, type in and search for **Azure IoT Edge on Ubuntu**.
+1. Ensure that you are logged in with the account used to create the sandbox and make absolutely sure that you are using the "Microsoft Learn Sandbox" subscription.
 
-1. In the search results, select the **Azure IoT Edge on Ubuntu** item.
+1. We will now fill in the available form fields:
 
-1. On the Azure IoT Edge on Ubuntu item, click **Create**.
+    **Subscription**: Ensure "Concierge Subscription" is selected.
 
-1. On the **Create a virtual machine** blade, select your Azure Subscription and use the **Create new** Resource group option to create a new Resource Group for the VM named `AZ-220-GWVM-RG`.
+    **DNS Label Prefix**: Enter a name in the following format `az-220-vm-edgegw-{YOUR-ID}`.
 
-1. In the **Virtual machine name** box, enter `az-220-vm-edgegw-{YOUR-ID}` for the name of the Virtual Machine.
+    **Resource group**: Choose the pre-created entry that looks similar to  `learn-00000000-0000-0000-0000-000000000000`.
 
-1. In the **Region** dropdown, select the Azure Region closest to you, or the region where your Azure IoT Hub is provisioned.
+    **Admin Username**: Enter a username of you choice.
 
-1. Notice the **Image** dropdown has the **Ubuntu Server 16.04 LTS + Azure IoT Edge runtime** image selected.
+    **Device Connection String**: Enter the Device Connection string for the device that was created within your IoT Hub in the previous module.
 
-1. Under **Size**, click **Change size**. In the displayed list of sizes, select **DS1_v2** and click **Select**.
+    **VM Size**, **Ubuntu OS Version**, and **Location**, should be left at their default values.
 
-    >[!NOTE]
-    >Not all VM sizes are available in all regions. If, in a later step, you are unable to select the VM size, try a different region. For example, if West US doesn’t have the sizes available, try West US 2.
+    **Authentication Type**: Select "password" from the dropdown.
 
-1. Under **Administrator account**, select the **Password** option for **Authentication type**.
+    **Admin Password or Key**: Enter a password of your choice.
 
-1. Enter an Administrator **Username** and **Password** for the VM.
+    When all fields have been filled in, select the checkbox at the bottom of the page to accept the terms and select "Purchase" to begin the deployment.
 
-1. Notice the **Inbound port rules** is configured to enable inbound **SSH** access to the VM. This will be used to remote into the VM to configure/manage it.
-
-1. Click **Review + create** to create the IoT Edge on Ubuntu virtual machine.
-
-1. Once validation passes, click **Create** to begin deploying the virtual machine.
-
-    >[!NOTE]
-    >Note: Deployment will take approximately 5 minutes to complete. You can continue on to the next unit while it is deploying.
+1. Verify that the deployment has completed successfully.  A Virtual machine resource should have been deployed into the selected resource group.  Take note of the machine name which should be in the following format `vm-0000000000000`.
 
 Congratulations, that's the end of the module! In the next module, we will generate and configure IoT Edge Device CA Certificates to allow devices to securely connect to our IoT Edge Gateway.
