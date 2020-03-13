@@ -77,7 +77,7 @@ In this exercise, you'll create a storage account and upload some example patien
 
 1. Replace the `"[account key]"` string with the account key you copied.
 
-1. The **appsettings.json** file should now look similar to this output:
+1. The **appsettings.json** file should now look similar to this output.
 
     ```json
     {
