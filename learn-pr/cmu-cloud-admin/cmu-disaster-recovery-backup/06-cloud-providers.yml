@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-admin.overview-of-the-cloud.cmu-cloud-admin-overview.06-cloud-providers
+title: Major cloud providers
+metadata:
+  title: Major cloud providers
+  description: Popular Cloud Stacks
+  ms.date: 08/15/2019
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 12
+content: |
+  [!include[](includes/06-cloud-providers.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+    - content: "Your company has decided to host its web site using a PaaS service in the cloud so it can quickly and easily scale  the site to meet changing demand. Which of the following services is NOT a candidate for hosting a web site?"
+      choices:
+      - content: "AWS Elastic Beanstalk"
+        isCorrect: false
+        explanation: "Incorrect. AWS Elastic Beanstalk is a PaaS service that is perfect for hosting web sites and web apps."
+      - content: "AWS S3"
+        isCorrect: true
+        explanation: "Correct! S3 is a storage service, not a hosting service."
+      - content: "Azure App Service"
+        isCorrect: false
+        explanation: "Incorrect. Azure App Service is a PaaS service that is perfect for hosting web sites and web apps."
+      - content: "Google App Engine"
+        isCorrect: false
+        explanation: "Incorrect. Google App Engine is a PaaS service that is perfect for hosting web sites and web apps."
+      
+    - content: "Which of the following cloud service providers offers IaaS and PaaS services, but not SaaS services?"
+      choices:
+      - content: "Amazon"
+        isCorrect: false
+        explanation: "Incorrect. Amazon AWS offers IaaS, PaaS, and SaaS services."
+      - content: "Microsoft"
+        isCorrect: false
+        explanation: "Incorrect. Microsoft Azure offers IaaS, PaaS, and SaaS services."
+      - content: "Google App Engine"
+        isCorrect: false
+        explanation: "Incorrect. Google Cloud Platform offers IaaS, PaaS, and SaaS services."
+      - content: "None of the above"
+        isCorrect: true
+        explanation: "Correct! All three major cloud service providers offer a range of IaaS, PaaS, and SaaS services."
