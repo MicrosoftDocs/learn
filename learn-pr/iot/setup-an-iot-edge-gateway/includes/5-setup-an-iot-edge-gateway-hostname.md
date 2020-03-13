@@ -41,11 +41,12 @@ In this module, you will configure the DNS name for Public IP Address of the AZ-
 
 1. Navigate to the Azure portal and click on the **Cloud Shell** icon to open up the **Azure Cloud Shell**. When the pane opens, choose the option for the **Bash** terminal within the Cloud Shell.
 
-1. Within the **Connect to virtual machine pane**, select the **SSH** option, then look for the section **Run the example command below to connect to your VM.**.
+1. Within the **Connect to virtual machine pane**, select the **SSH** option, then look for the section "**Run the example command below to connect to your VM.**".
 
-    This should look like the following
+    This section should contain an entry that looks like the following
     
     `ssh -i <private key path> usernam@az-220-vm-edgegw-{YOUR-ID}.westus.cloudapp.azure.com
+    `
 
     This is a sample SSH command that will be used to connect to the virtual machine that contains the hostname for the VM and the Administrator username. Modify this  command so that it is formatted similar to `ssh username@az-220-vm-edgegw-{YOUR-ID}.westus.cloudapp.azure.com`.
 

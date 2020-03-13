@@ -1,4 +1,4 @@
-In this module, you will configure a pre-built Downstream Device to connect to the IoT Edge Gateway.
+In this module, we'll configure a pre-built Downstream Device to connect to the IoT Edge Gateway.
 
 ## Connect a Downstream Device to IoT Edge Gateway
 
@@ -16,7 +16,7 @@ In this module, you will configure a pre-built Downstream Device to connect to t
 
     The Azure IoT Edge Gateway was configured (within the `/etc/iotedge/config.yaml file`) previously to use this **root CA** X.509 certificate for encrypting communications with any downstream devices connecting to the gateway. This X.509 certificate will need to be copied to the downstream devices so they can use it to encrypt communications with the gateway.
 
-1. Obtain the contents of the **DownstreamDevice** folder available in the [**AZ-220-Microsoft-Azure-IoT-Developer Github Repo**](https://github.com/MicrosoftLearning/AZ-220-Microsoft-Azure-IoT-Developer/tree/master/Allfiles/Labs/12-Setup%20an%20IoT%20Edge%20Gateway/Starter)
+1. Obtain the contents of the **DownstreamDevice** folder available in the [**AZ-220-Microsoft-Azure-IoT-Developer GitHub Repo**](https://github.com/MicrosoftLearning/AZ-220-Microsoft-Azure-IoT-Developer/tree/master/Allfiles/Labs/12-Setup%20an%20IoT%20Edge%20Gateway/Starter)
        
     Copy the `azure-iot-test-only.root.ca.cert.pem` X.509 certificate file to the **DownstreamDevice** folder where the source code for the downstream IoT device is located.
 

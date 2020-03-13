@@ -2,16 +2,16 @@ In this module, you will generate test certificates using Linux.
 
 ## Generate and Configure IoT Edge Device CA Certificates
 
-You will do this on the Azure IoT Edge Gateway Virtual Machine that was deployed in the previous step.
+You will perform these steps on the Azure IoT Edge Gateway Virtual Machine that was deployed in the previous step.
 
 1. Navigate to the Azure IoT Edge Gateway Virtual Machine within the Azure Portal.  It should be named according to the following format:
  `vm-0000000000000`
 
 1. On the **Overview** pane of the **Virtual machine** blade, click the **Connect** button at the top.
 
-1. Within the **Connect to virtual machine pane**, select the **SSH** option, then look for the section **Run the example command below to connect to your VM.**.
+1. Within the **Connect to virtual machine pane**, select the **SSH** option, then look for the section "**Run the example command below to connect to your VM.**".
 
-    This should look like the following
+    This section should contain an entry that looks like the following
     
     `ssh -i <private key path> usernam@az-220-vm-edgegw-{YOUR-ID}.westus.cloudapp.azure.com
     `
@@ -26,7 +26,7 @@ You will do this on the Azure IoT Edge Gateway Virtual Machine that was deployed
 
 1. When prompted to enter the password, enter the Administrator password that was entered when the VM was provisioned.
 
-1. Once connected, the terminal will change to show the name of the Linux VM, similar to the following. This tells you which VM you are connected to.
+1. Once connected, the terminal will change to show the name of the Linux VM, similar to the following.
 
     ```bash
     username@az-220-vm-edgegw-{YOUR-ID}:~$
@@ -130,7 +130,7 @@ You will do this on the Azure IoT Edge Gateway Virtual Machine that was deployed
 
 1. Locate the **Certificate settings** section within the file, remove the leading `#` character before the certificate properties to uncomment those lines, then edit the certificate settings to contain the correct certificate and key paths. After changes are made, save the file and exit the editor.
 
-    After the X.509 certificate settings changes made to the `config.yaml` file, this section of the file will look like the following:
+    After the X.509 certificate settings changes have been made to the `config.yaml` file, this section of the file will look like the following:
     
     ```bash
     certificates:
@@ -139,15 +139,15 @@ You will do this on the Azure IoT Edge Gateway Virtual Machine that was deployed
        trusted_ca_certs: "/home/<username>/certificates/certs/azure-iot-test-only.root.ca.cert.pem"
     ```
 
-   Be sure to replace the `<username>` placeholder within the file locations with the Username of the user your connected to SSH with.
+   Be sure to replace the `<username>` placeholder within the file locations with the Username of the user you are connected with in the SSH session.
 
     The X.509 certificates configured in this section are used for the following purposes: 
 
     | Setting  |  Purpose |
     |----------|:-------------:|
-    | `device_ca_cert` |  This is the Device CA Certificate for the IoT Edge Device. | 
-    | `device_ca_pk` |    This is the Device CA Private Key for the IoT Edge Device.   | 
-    | `trusted_ca_certs` | This is the Root CA Certificate. This certificate must contain all the trusted CA certificates required for Edge module communications.
+    | `device_ca_cert` |  This is the entry for the Device CA Certificate for the IoT Edge Device. | 
+    | `device_ca_pk` |    This is the entry for the Device CA Private Key for the IoT Edge Device.   | 
+    | `trusted_ca_certs` | This is the entry for the Root CA Certificate. This certificate must contain all the trusted CA certificates required for Edge module communications.
 
     >[!NOTE]
     > Here are some tips for using **vi** when editing the `config.yaml file`: 
