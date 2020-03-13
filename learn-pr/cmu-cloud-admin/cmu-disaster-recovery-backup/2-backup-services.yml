@@ -15,23 +15,17 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Your customer base is growing, and the servers that host your Web site are struggling to handle the load. Which of the following solutions might you use to scale the system?"
+  - content: "The primary goal of cloud-based backup services is to:"
     choices:
-    - content: "Increase the number of servers to handle increased traffic"
+    - content: "Prevent disruptions in service by failing over to a secondary virtual machine when a primary virtual machine fails"
       isCorrect: false
-      explanation: "Incorrect. Horizontal scaling is one solution, but is it the only solution?"
-    - content: "Replace older servers with new ones containing more RAM and faster CPUs"
+      explanation: "Incorrect. This description more accurately applies to disaster recovery."
+    - content: "Prevent disruptions in service by failing over to a secondary database when a primary database fails"
       isCorrect: false
-      explanation: "Incorrect. Vertical scaling is one solution, but is it the only solution?"
-    - content: "Reboot the servers using a round-robin scheduling algorithm"
-      isCorrect: false
-      explanation: "Incorrect. Rebooting servers does not increase the capacity of the server farm."
-    - content: "Option 1 or Option 2"
+      explanation: "Incorrect. This description more accurately applies to disaster recovery."
+    - content: "Prevent data loss by backing up virtual machines and other resources that store data"
       isCorrect: true
-      explanation: "Correct! You can increase the capacity of the server farm by scaling horizontally or vertically."
-    - content: "Option 2 or Option 3"
+      explanation: "Correct!"
+    - content: "Prevent data loss by backing up cloud resources to on-premises resources"
       isCorrect: false
-      explanation: "Incorrect. Rebooting servers does not increase the capacity of the server farm."
-    - content: "Option 1 or Option 3"
-      isCorrect: false
-      explanation: "Incorrect. Rebooting servers does not increase the capacity of the server farm."
+      explanation: "Incorrect. Cloud-based backup services store backups in the cloud, not on-premises."
