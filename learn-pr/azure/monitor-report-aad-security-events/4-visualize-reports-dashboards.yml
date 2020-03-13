@@ -9,6 +9,31 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Set up reports and dashboards to visualize the information
-durationInMinutes: 10
+durationInMinutes: 6
 content: |
   [!include[](includes/4-visualize-reports-dashboards.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: 'Which of these is a valid pre-built view you can download and install in to your Log Analytics workspace?'
+    choices:
+    - content: Audit Events
+      isCorrect: false
+      explanation: There are only two downloadable pre-built views, Audit events isn't one of them.
+    - content: Azure AD Account Auditing Events
+      isCorrect: false
+      explanation: There are only two downloadable pre-built views, Azure AD Account Auditing events isn't one of them.
+    - content: Sign-in Events
+      isCorrect: true
+      explanation: Sign-in and Azure AD Account Provisioning Events are the two pre-built views you can download and install in to you Log Analytics workspace.
+  - content: 'When exporting reports, which one of the following is not a supported export type?'
+    choices:
+    - content: Excel
+      isCorrect: false
+      explanation: You can export you report data as a CSV file that can be imported into Excel.`
+    - content: PowerPoint
+      isCorrect: true
+      explanation: You can export reports either as Excel or Power BI
+    - content: Power BI
+      isCorrect: false
+      explanation: You can export your report into Power BI.
