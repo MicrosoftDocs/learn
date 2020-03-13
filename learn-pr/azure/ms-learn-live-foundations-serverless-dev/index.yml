@@ -47,6 +47,7 @@ roles:
 - developer
 
 products:
+- azure-functions
 
 units:
 - learn.azure.ms-learn-live-foundations-serverless-dev.1-introduction
