@@ -16,7 +16,7 @@ In this module, you will configure the DNS name for Public IP Address of the AZ-
 
 1. Note the full DNS name for the Public IP Address of the **AZ-220-VM-EDGEGW-_{YOUR-ID}_** virtual machine, and save it for reference later.
 
-    The full DNS name is composed of the AZ-220-VM-EDGEGW-{YOUR-ID} value suffixed by the text below the DNS name label field.
+    The full DNS name is composed of the az-220-vm-edgegw-{YOUR-ID} value suffixed by the text below the DNS name label field.
 
     For example, the full DNS name will be:
 

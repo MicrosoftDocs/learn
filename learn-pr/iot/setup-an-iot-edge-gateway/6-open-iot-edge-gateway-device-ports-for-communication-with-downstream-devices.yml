@@ -12,4 +12,4 @@ title: Open IoT Edge Gateway Device Ports for Communication with Downstream Devi
 # azureSandbox: true
 durationInMinutes: 10
 content: |
-  [!include[](includes/7-open-iot-edge-gateway-device-ports-for-communication-with-downstream-devices.md)]
+  [!include[](includes/6-open-iot-edge-gateway-device-ports-for-communication-with-downstream-devices.md)]

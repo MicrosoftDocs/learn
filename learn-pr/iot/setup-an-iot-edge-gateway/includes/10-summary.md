@@ -1,10 +1,9 @@
 In this module, you learned how to:
 
+- Create an IoT Edge Device Identity in IoT Hub using Azure Portal
 - Deploy an Azure IoT Edge enabled Linux VM
 - Generate and Configure IoT Edge Device CA Certificates
-- Create an IoT Edge Device Identity in IoT Hub using Azure Portal
 - Setup an IoT Edge Gateway Hostname
-- Connect an IoT Edge Device to IoT Hub
 - Open IoT Edge Gateway Device Ports for Communication with Downstream Devices
 - Create a Downstream Device Identity in IoT Hub
 - Connect a Downstream Device to IoT Edge Gateway

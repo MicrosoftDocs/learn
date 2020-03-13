@@ -18,7 +18,7 @@ If necessary, log in to your Azure portal using your Azure account credentials.
 
 1. On the **Create a virtual machine** blade, select your Azure Subscription and use the **Create new** Resource group option to create a new Resource Group for the VM named `AZ-220-GWVM-RG`.
 
-1. In the **Virtual machine name** box, enter `AZ-220-VM-EDGEGW-{YOUR-ID}` for the name of the Virtual Machine.
+1. In the **Virtual machine name** box, enter `az-220-vm-edgegw-{YOUR-ID}` for the name of the Virtual Machine.
 
 1. In the **Region** dropdown, select the Azure Region closest to you, or the region where your Azure IoT Hub is provisioned.
 

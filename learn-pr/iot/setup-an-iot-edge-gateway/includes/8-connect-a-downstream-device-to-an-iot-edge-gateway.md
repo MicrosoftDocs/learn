@@ -60,7 +60,7 @@ In this module, you will configure a pre-built Downstream Device to connect to t
 
 1. Locate the **SendDeviceToCloudMessagesAsync** method. This method contains the code that generates the simulated device telemetry, and sends the events to the IoT Edge Gateway.
 
-1. Locate the **InstallCACert** and browse the code that installed the **root CA** X.509 certificate to the local machine certificate store.
+1. Locate the **InstallCACert** method and browse the code that installed the **root CA** X.509 certificate to the local machine certificate store.
 
 1. Open a command-prompt / terminal and navigate to the location of the `DownstreamDevice` directory.
 

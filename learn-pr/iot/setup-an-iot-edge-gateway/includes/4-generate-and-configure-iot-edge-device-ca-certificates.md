@@ -2,9 +2,9 @@ In this module, you will generate test certificates using Linux.
 
 ## Generate and Configure IoT Edge Device CA Certificates
 
-You will do this on the `AZ-220-VM-EDGEGW-{YOUR-ID}` Virtual Machine using a helper script contained within the Azure/IoTEdge GitHub project.
+You will do this on the `az-220-vm-edgegw-{YOUR-ID}` Virtual Machine using a helper script contained within the Azure/IoTEdge GitHub project.
 
-1. Navigate to the `AZ-220-VM-EDGEGW-{YOUR-ID}` IoT Edge virtual machine within the Azure Portal.
+1. Navigate to the `az-220-vm-edgegw-{YOUR-ID}` IoT Edge virtual machine within the Azure Portal.
 
 1. On the **Overview** pane of the **Virtual machine** blade, click the **Connect** button at the top.
 
@@ -23,7 +23,7 @@ You will do this on the `AZ-220-VM-EDGEGW-{YOUR-ID}` Virtual Machine using a hel
 1. Once connected, the terminal will change to show the name of the Linux VM, similar to the following. This tells you which VM you are connected to.
 
     ```bash
-    username@AZ-220-VM-EDGEGW-{YOUR-ID}:~$
+    username@az-220-vm-edgegw-{YOUR-ID}:~$
     ```
 
 1. The `Azure/IoTEdge` GitHub project contains scripts to generate non-production certificates. These scripts will help you create the necessary scripts to set up a Transparent IoT Edge Gateway. Run the following command:
@@ -44,7 +44,7 @@ You will do this on the `AZ-220-VM-EDGEGW-{YOUR-ID}` Virtual Machine using a hel
 
     ```bash
      cp ../iotedge/tools/CACertificates/*.cnf .
-     cp ../iotedge/tools/CACertificates/certGen.sh 
+     cp ../iotedge/tools/CACertificates/certGen.sh .
     ```
     These commands will copy just the necessary files for running the helper script for generating test CA certificates. The rest of the source files within the Azure/iotedge repository are not needed for this unit.
 

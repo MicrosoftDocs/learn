@@ -32,7 +32,7 @@ In this module, you will create a new IoT Edge Device identity in Azure IoT Hub 
 
 1. Click the **Add an IoT Edge device** button to begin adding a new IoT Edge Device to the IoT Hub.
 
-1. On the **Create a device** blade, enter `AZ-220-VM-EDGEGW-{YOUR-ID}` into the **Device ID** field. This is the device identity used for authentication and access control.
+1. On the **Create a device** blade, enter `az-220-vm-edgegw-{YOUR-ID}` into the **Device ID** field. This is the device identity used for authentication and access control.
 
 1. Select **Symmetric key** for the **Authentication type**, and leave the **Auto-generate keys** box checked. This will have IoT Hub automatically generate the Symmetric keys for authenticating the device.
 

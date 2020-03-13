@@ -12,4 +12,4 @@ title: Create an IoT Edge Device Identity in IoT Hub using Azure Portal
 azureSandbox: true
 durationInMinutes: 10
 content: |
-  [!include[](includes/4-create-an-iot-edge-device-identity-in-iot-hub-using-azure-portal.md)]
+  [!include[](includes/2-create-an-iot-edge-device-identity-in-iot-hub-using-azure-portal.md)]

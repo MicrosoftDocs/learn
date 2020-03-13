@@ -11,6 +11,7 @@ In this module, you will use the Azure CLI to monitor the events sent to Azure I
 1. Within the **Cloud Shell**, run the following command to monitor the stream of events flowing to the Azure IoT Hub. This step will verify that events from the simulate device, being sent to the IoT Edge Gateway, are being received by the Azure IoT Hub.
 
     ```bash
+    az extension add --name azure-iot
     az iot hub monitor-events -n <IoT-Hub-Name>
     ```
 
@@ -36,7 +37,7 @@ In this module, you will use the Azure CLI to monitor the events sent to Azure I
          }
      }
 
-    Once you have completed this lab and verified the event flow, exit the console application by pressing **CTRL+C**.
+Once you have completed this lab and verified the event flow, exit the console application by pressing **CTRL+C**.
 
 ## Next steps
 

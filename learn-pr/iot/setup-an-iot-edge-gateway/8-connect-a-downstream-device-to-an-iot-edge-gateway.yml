@@ -12,4 +12,4 @@ title: Connect a Downstream Device to IoT Edge Gateway
 # azureSandbox: true
 durationInMinutes: 10
 content: |
-  [!include[](includes/9-connect-a-downstream-device-to-an-iot-edge-gateway.md)]
+  [!include[](includes/8-connect-a-downstream-device-to-an-iot-edge-gateway.md)]
