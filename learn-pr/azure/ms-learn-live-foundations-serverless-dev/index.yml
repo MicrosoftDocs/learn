@@ -38,7 +38,7 @@ prerequisites: |
   TODO
 iconUrl: /learn/achievements/generic-badge.svg
 badge:
-  uid: learn.azure.ms-learn-live.badge
+  uid: learn.azure.ms-learn-live-live-foundations-serverless-dev.badge
 
 levels: 
 - beginner
