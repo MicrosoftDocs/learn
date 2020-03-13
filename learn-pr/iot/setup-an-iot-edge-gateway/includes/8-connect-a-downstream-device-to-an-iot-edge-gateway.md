@@ -6,7 +6,7 @@ In this module, we'll configure a pre-built Downstream Device to connect to the 
 
     If you have more than one Azure account, ensure that you are logged in with the account that is tied to the subscription that you intend to use for this course.
 
-1. At the top of the Azure Portal click on the **Cloud Shell** icon to open up the **Azure Cloud Shell** within the Azure Portal. When the pane opens, choose the option for the **Bash** terminal within the Cloud Shell.
+1. At the top of the Azure Portal, click on the **Cloud Shell** icon to open up the **Azure Cloud Shell** within the Azure Portal. When the pane opens, choose the option for the **Bash** terminal within the Cloud Shell.
 
 1. Within the **Cloud Shell**, run the following command to download the **root CA** X.509 certificate for the Azure IoT Edge Gateway Virtual Machine.
 
@@ -56,7 +56,7 @@ In this module, we'll configure a pre-built Downstream Device to connect to the 
     csharps_deviceClient = DeviceClient.CreateFromConnectionString(s_connectionString, TransportType.Mqtt); SendDeviceToCloudMessagesAsync(); 
     ```
     
-    This method also executes the **InstallCACert** method which has some code to automatically install the **root CA** X.509 certiifcate to the local machine. And it executes the **SendDeviceToCloudMessagesAsync** method that sends event telemetry from the simulated device.
+    This method also executes the **InstallCACert** method which has some code to automatically install the **root CA** X.509 certifcate to the local machine. And it executes the **SendDeviceToCloudMessagesAsync** method that sends event telemetry from the simulated device.
 
 1. Locate the **SendDeviceToCloudMessagesAsync** method. This method contains the code that generates the simulated device telemetry, and sends the events to the IoT Edge Gateway.
 
