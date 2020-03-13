@@ -19,8 +19,8 @@ The SAS token itself is made up of several components.
 | Component | Description  |
 |-----------|--------------|
 | sp=r      | Controls the access rights. The values can be a for add, c for create, d for delete, l for list, r for read, or w for write. This example is read only. The example sp=acdlrw grants all the available rights.        |
-| st=2020-01-20T11:42:32Z | The date time access starts from. |
-| se=2020-01-20T19:42:32Z | The date time access ends. This example grants eight hours of access. |
+| st=2020-01-20T11:42:32Z | The date and time when access starts. |
+| se=2020-01-20T19:42:32Z | The date and time when access ends. This example grants eight hours of access. |
 | sv=2019-02-02 | The version of the storage API to use. |
 | sr=b | The kind of storage being accessed. In this example, b is for blob. |
 | sig=SrW1HZ5Nb6MbRzTbXCaPm%2BJiSEn15tC91Y4umMPwVZs%3D | The cryptographic signature. |
