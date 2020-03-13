@@ -21,7 +21,6 @@ In this module you will:
 - Open IoT Edge Gateway Device Ports for Communication with Downstream Devices
 - Create a Downstream Device Identity in IoT Hub
 - Connect a Downstream Device to IoT Edge Gateway
-- Verify Event Flow from Downstream Device through IoT Edge Gateway to IoT Hub
 
 ## Prerequisites
 

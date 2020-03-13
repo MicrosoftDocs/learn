@@ -4,7 +4,7 @@ In this module, you will configure the DNS name for Public IP Address of the AZ-
 
 1. If necessary, log in to your Azure portal using your Azure account credentials.
 
-    If you have more than one Azure account, ensure that you are logged in with the account that is tied to the subscription that intend to use for this course.
+    If you have more than one Azure account, ensure that you are logged in with the account that is tied to the subscription that you intend to use for this course.
 
 1. Navigate to the IoT Edge virtual machine.
 

@@ -20,7 +20,6 @@ abstract: |
   - Open IoT Edge Gateway Device Ports for Communication with Downstream Devices
   - Create a Downstream Device Identity in IoT Hub
   - Connect a Downstream Device to IoT Edge Gateway
-  - Verify Event Flow from Downstream Device through IoT Edge Gateway to IoT Hub
 prerequisites: | 
   - An introductory knowledge of the purpose of Azure IoT
   -	Ability to navigate Azure IoT portal 
@@ -45,7 +44,6 @@ units:
 - learn.iot.setup-an-iot-edge-gateway.open-iot-edge-gateway-device-ports-for-communication-with-downstream-devices
 - learn.iot.setup-an-iot-edge-gateway.create-a-downstream-device-identity-in-iot-hub
 - learn.iot.setup-an-iot-edge-gateway.connect-a-downstream-device-to-an-iot-edge-gateway
-- learn.iot.setup-an-iot-edge-gateway.verify-event-flow-from-downstream-device-through-iot-edge-gateway-to-iot-hub
 - learn.iot.setup-an-iot-edge-gateway.summary
 badge:
 ###  uid: learn.iot.iot-test.badge
