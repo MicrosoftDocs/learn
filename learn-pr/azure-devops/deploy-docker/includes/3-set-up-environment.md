@@ -217,12 +217,6 @@ This solution requires several Azure resources for deployment, which will be cre
     tailspin-space-game-web-4692.azurewebsites.net  Running
     ```
 
-1. As an optional step, go to the web host name. Verify that it's running and that the default home page appears.
-
-    Here's what you see:
-
-    ![The default home page on Azure App Service](../../shared/media/app-service-default.png)
-
 1. Run the following `az acr list` command to list the login server of the Azure Container Registry instance. You will need this server name when creating pipeline variables later.
 
     ```azurecli

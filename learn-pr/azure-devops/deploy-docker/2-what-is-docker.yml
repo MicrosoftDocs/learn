@@ -37,7 +37,7 @@ quiz:
     - content: "They both offer the same performance."
       isCorrect: false
       explanation: "While there is overhead in both scenarios, container applications have near-instant startup time and run against the host kernel. Virtual machines, on the other hand, face a more substantial performance hit due to their complete virtualization."
-  - content: "How much overhead does migrating an existing .NET Core application to Docker require?"
+  - content: "How much overhead does migrating an existing .NET Core application to use a Docker container require?"
     choices:
     - content: "A lot. Docker uses its own programming languages and development framework, so applications need to be rebuilt."
       isCorrect: false
