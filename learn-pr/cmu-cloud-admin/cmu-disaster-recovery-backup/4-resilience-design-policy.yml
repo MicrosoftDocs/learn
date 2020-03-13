@@ -16,107 +16,27 @@ quiz:
   title: Check your knowledge
   questions:
 
-    - content: "Customer relationship management (CRM) software is an example of what layer in the Cloud Building Blocks?"
+    - content: "What is the primary purpose of resilience in information systems?"
       choices:
-      - content: "Application Software"
+      - content: "To ensure that all data, whether stored on-premises or in the cloud, is backed up and ready to be restored if an unplanned failure occurs"
+        isCorrect: false
+        explanation: "Incorrect. Backup and replication are elements that contribute to resilience, but backups alone do not make systems resilient."
+      - content: "To ensure that systems can scale to meet demand when demand spikes unexpectedly"
+        isCorrect: false
+        explanation: "Incorrect. This is a description of elasticity, not resilience."
+      - content: "To reduce the cost of maintaining failover clusters, which typically aren't used unless an unplanned failure occurs"
+        isCorrect: false
+        explanation: "Incorrect. Resiliency typically increases costs by maintaining replicas of the resources that comprise a system."
+      - content: "To maintain acceptable service levels even when unplanned failures occur"
         isCorrect: true
-        explanation: "Correct!"
-      - content: "Development Platforms"
-        isCorrect: false
-        explanation: "Incorrect. CRM software delivered as a service sits higher in the stack."
-      - content: "Resource Sharing"
-        isCorrect: false
-        explanation: "Incorrect. CRM software delivered as a service sits higher in the stack."
-      - content: "Infrastructure"
-        isCorrect: false
-        explanation: "Incorrect. CRM software delivered as a service sits higher in the stack."
-      
-    - content: "Virtualization software is an example of what layer in the Cloud Building Blocks?"
-      choices: 
-      - content: "Application Software"
-        isCorrect: false
-        explanation: "Incorrect. Virtualization software sits lower in the stack."
-      - content: "Development Platforms"
-        isCorrect: false
-        explanation: "Incorrect. Virtualization software sits lower in the stack."
-      - content: "Resource Sharing"
-        isCorrect: true
-        explanation: "Correct!"
-      - content: "Infrastructure"
-        isCorrect: false
-        explanation: "Incorrect. Virtualization software sits higher in the stack."
-
-    - content: "A virtual machine is an example of which cloud service model?"
-      choices:
-      - content: "Infrastructure-as-a-service (IaaS)"
-        isCorrect: true
-        explanation: "Correct! A virtual machine is a canonical example of virtualized computing infrastructure."
-      - content: "Platform-as-a-service (PaaS)"
-        isCorrect: false
-        explanation: "Incorrect. Virtual machines are frequently used in PaaS solutions but are not themselves considered PaaS."
-      - content: "Software-as-a-service (SaaS)"
-        isCorrect: false
-        explanation: "Incorrect. Virtual machines are frequently used in PaaS solutions but are not themselves considered SaaS."
-      - content: "None of the above"
-        isCorrect: false
-        explanation: "Incorrect."
+        explanation: "Correct! A system that fails over to a secondary set of resources when primary resources go down is a resilient system."
     
-    - content: "Which of the following is considered to be a characteristic of IaaS?"
+    - content: "True or false: Hosting an application on a resilient cloud platform makes the application resilient, too"
       choices:
-      - content: "IaaS providers do not allow clients to scale resources on demand"
+      - content: "True"
         isCorrect: false
-        explanation: "Incorrect. IaaS providers allow clients to scale resources up or down to meet demand."
-      - content: "IaaS providers provide computing resources such as virtual machines to customers as a service"
+        explanation: "Incorrect. Applications must be designed for resiliency, even if they're hosted on resilient cloud platforms."
+      - content: "False"
         isCorrect: true
-        explanation: "Correct! Virtual networks are also examples of IaaS."
-      - content: "Users are aware of whom they share physical resources with"
-        isCorrect: false
-        explanation: "Incorrect. IaaS cloud providers do not indicate how the resources are shared among multiple users."
-      - content: "Users are not responsible for patching and maintaining the operating system"
-        isCorrect: false
-        explanation: "Incorrect. Once a virtual machine is created, it is the user's responsibility to keep it up to date."
-
-    - content: "Google App Engine (GAE) is an example of PaaS. Which of the following statements about GAE is incorrect?"
-      choices:
-      - content: "Applications deployed on GAE can dynamically scale to meet demand"
-        isCorrect: false
-        explanation: "Incorrect. PaaS offers built-in scaling mechanisms that are automatically handled by the cloud provider."
-      - content: "Customers have the flexibility to decide the number and configuration of physical servers required for hosting a GAE application"
-        isCorrect: true
-        explanation: "Correct! The user does not have the flexibility to decide the number of physical servers required for hosting an application; the cloud provider makes this decision."
-      - content: "GAE provides customers with web-based tools for using and configuring the platform"
-        isCorrect: false
-        explanation: "Incorrect. This statement is correct because PaaS providers offer web-based tools for managing PaaS deployments."
-      - content: "GAE handles the patching and maintenance of the underlying operating system"
-        isCorrect: false
-        explanation: "Incorrect. One of the principles of PaaS is that the cloud service provider handles operating-system maintenance."
-
-    - content: "Cloud service providers offers function runtimes such as Azure Functions for executing code that you upload to the cloud in a serverless environment. To which service model do function runtimes belong?"
-      choices:
-      - content: "Infrastructure-as-a-service (IaaS)"
-        isCorrect: false
-        explanation: "Incorrect. Function runtimes utilize virtual machines under the hood, but they are not IaaS."
-      - content: "Platform-as-a-service (PaaS)"
-        isCorrect: true
-        explanation: "Correct! Function runtimes are generally considered to be PaaS services."
-      - content: "Software-as-a-service (SaaS)"
-        isCorrect: false
-        explanation: "Incorrect. Function runtimes are considered platforms, not software-as-a-service."
-      - content: "None of the above"
-        isCorrect: false
-        explanation: "Incorrect."
-
-    - content: "Which of the following tasks is the best fit for Azure Functions, AWS Lambda, and Google Cloud Functions?"
-      choices:
-      - content: "Hosting a web site that can automatically scale up and down as traffic to the site fluctuates"
-        isCorrect: false
-        explanation: "Incorrect. Functions are ideal for tasks that run relatively infrequently or for short periods of time, not for applications that run 24/7."
-      - content: "Training machine-learning models that require substantial amounts of compute power"
-        isCorrect: false
-        explanation: "Incorrect. While most functions do offer limited scalability, they are not a substitute for HPC clusters."
-      - content: "Delivering software such as Office 365 and Google Docs over the web"
-        isCorrect: false
-        explanation: "Incorrect. Functions are ideal for tasks that run relatively infrequently or for short periods of time, not for applications that run 24/7."
-      - content: "Performing nightly backups or weekly billing operations"
-        isCorrect: true
-        explanation: "Correct! Tasks that occur relatively infrequently or run for short periods of time are ideal candidates for functions because most function runtimes support a consumption model that only charges you while a function is executing."
+        explanation: "Correct! Applications must be designed for resiliency, even if they're hosted on resilient cloud platforms."
+      

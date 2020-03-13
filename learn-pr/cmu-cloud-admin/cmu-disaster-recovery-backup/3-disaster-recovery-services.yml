@@ -16,44 +16,32 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: "When did the general ideas about cloud computing and utility computing emerge?"
+  - content: "In disaster recovery, a failover occurs when a primary resource set becomes unreachable or unresponsive and traffic is routed to a secondary resource set that mirrors the primary. Failover time is key because you want to minimize downtime. Which of the following DR methodologies would you expect to have the greatest failover time?"
     choices:
-    - content: "Between 1950 and 1966"
+    - content: "Pilot light"
       isCorrect: true
-      explanation: "Correct! The idea of utility computing emerged in the 1950s and 1960s when mainframes were prevalent and expensive, and computer engineers were figuring out ways to share a mainframe among multiple users (such as time sharing). The idea of utility computing is mainly attributed to Professor John McCarthy in the 1960s."
-    - content: "Between 1995 and 2000"
+      explanation: "Correct! Pilot light typically has the greatest failover time because applications and services have to be replicated before traffic can be directed to them."
+    - content: "Warm standby"
       isCorrect: false
-      explanation: "That is not quite right. The ideas behind utility computing have been around since much earlier than that."
-    - content: "Between 2006 and the present"
+      explanation: "Incorrect. Pilot light typically has the greatest failover time because applications and services have to be replicated before traffic can be directed to them."
+    - content: "Hot standby"
       isCorrect: false
-      explanation: "That is not quite right. The ideas behind utility computing have been around since much earlier than that."
+      explanation: "Incorrect. Pilot light typically has the greatest failover time because applications and services have to be replicated before traffic can be directed to them."
+    - content: "All three exhibit roughly equal failover times"
+      isCorrect: false
+      explanation: "Incorrect. Pilot light typically has the greatest failover time because applications and services have to be replicated before traffic can be directed to them."
 
-  - content: "Which of the following did NOT contribute significantly to the rise of cloud computing?"
+  - content: "Key service-level objectives that organizations use to structure backup and disaster-recovery plans are Recovery Point Objective (RPO), Recovery Time Objective (RTO), and retention time. Suppose an organization decides that minimizing data loss is more important than minimizing downtime. Which service-level objective does the organization favor?"
     choices:
-    - content: "Privacy regulations passed by governmental entities"
+    - content: "RPO"
       isCorrect: true
-      explanation: "Correct! The rise of cloud computing predates privacy regulations such as GDPR."
-    - content: "Emergence of high-speed and ubiquitous networking"
+      explanation: "Correct! Minimizing RPO minimizes data loss, even at the expense of increased recovery time."
+    - content: "RTO"
       isCorrect: false
-      explanation: "Incorrect. High-speed networking allows data to move more quickly to and from the cloud and within the cloud."
-    - content: "Rapid growth of the World Wide Web"
+      explanation: "Incorrect. Minimizing RTO minimizes recovery time, even at the expense of increased data loss."
+    - content: "RPO and RTO"
       isCorrect: false
-      explanation: "Incorrect. The explosive growth of the web fueled the need for super-scalable systems."
-    - content: "Virtualization"
+      explanation: "Incorrect. Minimizing RPO minimizes data loss, even at the expense of increased recovery time. Increasing RTO frequently increases rather than decreases data loss."
+    - content: "Retention time"
       isCorrect: false
-      explanation: "Incorrect. Virtual machines are the backbone of cloud computing and are only possible because of virtualization."
-  
-  - content: "Which technology enables multiple servers to be consolidated into one physical server?"
-    choices:
-    - content: "Distributed computing"
-      isCorrect: false
-      explanation: "Incorrect. Distributed computing allows processing tasks to be shared among several computers."
-    - content: "Parallel processing"
-      isCorrect: false
-      explanation: "Incorrect. The Internet does enable fast, efficient communication between connected devices, but parallel processing doesn't help consolidate multiple servers into one."
-    - content: "Virtualization"
-      isCorrect: true
-      explanation: "Correct! Virtualization is the primary enabler for server consolidation, enabling one physical machine to host several virtual machines."
-    - content: "Grid computing"
-      isCorrect: false
-      explanation: "Incorrect. Grid computing consolidates a large number of computers as a distributed system to allow the execution of large compute problems."
+      explanation: "Incorrect. Retention time determines how long backups are kept. It does not set minimum acceptable levels for data loss or recovery time."
