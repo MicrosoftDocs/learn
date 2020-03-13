@@ -33,16 +33,17 @@ Microsoft identity platform simplifies the way your application authenticates wi
 
 While there are several ways to provision an application for Microsoft identity platform, you'll focus on using the portal to register an application in Azure:
 
-- Sign in to the Azure portal, and select **Azure Active Directory**.
-- Select **App registrations**, and in the top left, select **New registration**.
+1. Sign in to the Azure portal, and select **Azure Active Directory**.
+1. Select **App registrations**, and in the top left, select **New registration**.
     ![Screenshot of adding an application to Azure AD](../media/2-adding-an-app.png)
-- Enter a display name for the app, one that doesn't need to follow Azure naming conventions.
-- Supported account types must be specified. Choose from:
-  - Accounts within your company's active directory
-  - Accounts in any company's active directory using Azure 
-  - Any organizational accounts and personal accounts, such as Microsoft or XBox
-- A **redirect URI** is an optional parameter. Two types are available: **Web** or **Public Client**. A redirect URI takes the form of a web link (https) but doesn't need to be a valid link unless you're selecting a public client.
-- The application is then registered with Azure AD and has a service principal associated with it.
+1. Enter a display name for the app, one that doesn't need to follow Azure naming conventions.
+1. Supported account types must be specified. Choose from:
+   - Accounts within your company's active directory
+   - Accounts in any company's active directory using Azure 
+   - Any organizational accounts and personal accounts, such as Microsoft or XBox
+1. (Optional) A **redirect URI** is an optional parameter. Two types are available: **Web** or **Public Client**. A redirect URI takes the form of a web link (https), but it doesn't need to be a valid link unless you're selecting a public client.
+
+The application is then registered with Azure AD and has a service principal associated with it.
 
 ## Assigning application roles
 
@@ -54,12 +55,12 @@ RBAC permissions are inherited from the level of the scope set. For example, if 
 
 Use the Azure portal to assign the required roles for your app to access the key vault by:
 
-- Selecting your key vault in the portal.
-- On the left, select **Access Control (IAM)**.
-- Select **Add** from the **Add a role** assignment pane.
-- Choose the role you need.
-- Accept the default **assign access to** option: Azure AD user, group, or service principal.
-- Search for your created application; it won't appear in the drop-down. Select the application, and then select **Save**.
+1. Selecting your key vault in the portal.
+1. On the left, select **Access Control (IAM)**.
+1. Select **Add** from the **Add a role** assignment pane.
+1. Choose the role you need.
+1. Accept the default **assign access to** option: Azure AD user, group, or service principal.
+1. Search for your created application; it won't appear in the drop-down. Select the application, and then select **Save**.
 
 ## Managing keys and permissions
 
