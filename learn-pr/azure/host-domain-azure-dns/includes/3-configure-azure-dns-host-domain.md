@@ -18,14 +18,18 @@ To host the domain name with Azure DNS, you first need to create a DNS zone for 
 
 When creating a DNS Zone, you need to supply the following details:
 
-- **Name**: The name of your domain, in this instance wideworldimports.com.
 - **Subscription**: The subscription to be used.
 - **Resource group**: The name of the resource group to hold your domains. If one doesn't exist, create one to allow for better control and management.
-- **Location** - Nearest region to you, for example, East US.
+- **Name**: The name of your domain, in this instance wideworldimports.com.
+- **Resource group location** - The location defaults to the location of the resource group.
+
+    ![Screenshot of the DNS Zone create page](../media/3-create-dns-zone.png)
 
 ### Step 2: Get your Azure DNS name servers
 
 After you create a DNS Zone for the domain, you need to get the name server details from name servers (NS) record. You use these details to update your domain registrar's information and point to the Azure DNS zone.
+
+![Screenshot of the name server details on the DNS zone page](../media/3-name-server.png)
 
 ### Step 3: Update the domain registrar setting
 
@@ -49,49 +53,26 @@ nslookup -type=SOA wideworldimports.com
 
 ### Step 5: Configure your custom DNS settings
 
-The domain name is wideworldimports.com. When used in a browser, the domain resolves to your website. But what if you want to add in web servers, or load balancers? These resources need to have their own custom settings in the DNS zone, either as a CNAME, or an A record.
+The domain name is wideworldimports.com. When used in a browser, the domain resolves to your website. But what if you want to add in web servers, or load balancers? These resources need to have their own custom settings in the DNS zone, either as an A record or a CNAME.
+
+#### A record
 
 Each A record requires the following details:
 
 - **Name**: The name of the custom domain, for example webserver1.
-- **Type**: In this instance, it will A.
+- **Type**: In this instance, it's A.
 - **TTL**: Represents the Time to Live as a whole unit, where 1 is one hour. This value indicates how long the A record lives in a DNS cache before it expires.
 - **IP address**: The IP address of the server this A record should resolve to.
 
-If you exposed a web function, you would create a CNAME record that resolves to the Azure function.
-
-### DNS records and configurations
-
-The three primary records types needed in the public DNS zone are A, CNAME, and TXT.
-
-#### A record
-
-The A record maps a domain name to one or more IPv4 addresses. The settings for a webserver under the wideworldimports.com domain might look like:
-
-- Name: **websrv01**
-- Resource group: The resource group allocated for the public domain.
-- TTL: **3600**
-- Record type: **A**
-- IP address: The IP address assigned to the webserver.
-
 #### CNAME record
 
-The CNAME is the canonical name, or the alias for an A record. You would use CNAME where you have different domain names that all accessed the same website. For example, you may need a CNAME in the wideworldimports zone where you want www.wideworldimports.com and wideworldimports.com to resolve to the same IP address. You would create the CNAME record in the wideworldimports zone with the following information.
+The CNAME is the canonical name, or the alias for an A record. You would use CNAME where you have different domain names that all accessed the same website. For example, you may need a CNAME in the wideworldimports zone where you want www.wideworldimports.com and wideworldimports.com to resolve to the same IP address. You would create the CNAME record in the wideworldimports zone with the following information:
 
-- NAME: **www**
-- TTL: **600** seconds
-- Record type: **CNAME**
+- NAME: **www**
+- TTL: **600** seconds
+- Record type: **CNAME**
 
-#### TXT record
-
-The TXT record verifies that you own the custom domain. It's used only at the time of configuration.
-
-To verify our domain, we might use the following information:
-
-- Name: **wideworldimports.com**
-- Resource group: The name of the resource group the domain is assigned to.
-- TTL: **3600**
-- Record type: **TXT**
+If you exposed a web function, you would create a CNAME record that resolves to the Azure function.
 
 ## Configure private DNS zone
 
@@ -101,12 +82,22 @@ If you want to provide name resolution for virtual machines (VMs) within a virtu
 
 In the Azure portal, search on **private dns zones**. To create the private zone, you need enter a resource group and name of the zone. For example, the name might be something like private.wideworldimports.com.
 
+![Screenshot of the Create Private DNS zone page](../media/3-create-private-dns-zone.png)
+
 ### Step 2: Identify virtual networks
 
 Let's assume your organization has already created your virtual machines (VMs) and virtual networks in a production environment. Identify the virtual networks associated with VMs that need name resolution support. To link the virtual networks to the private zone, you need the virtual network names.
 
 ### Step 3: Link your virtual network to a private DNS zone
 
-To link the private DNS zone to a virtual network, you create a virtual network link. In the Azure portal, you go to the private zone and select **Virtual network links**. From there, you select the virtual network you want to link to the private zone. You add a link virtual network link record for each virtual network that needs private name resolution support.
+To link the private DNS zone to a virtual network, you create a virtual network link. In the Azure portal, you go to the private zone and select **Virtual network links**.
+
+![Screenshot of the Create Private DNS zone page](../media/3-virtual-network-link-option.png)
+
+Select **Add** to pick the virtual network you want to link to the private zone.
+
+![Screenshot of the Create Private DNS zone page](../media/3-add-virtual-network-link.png)
+
+You add a virtual network link record for each virtual network that needs private name resolution support.
 
 In the next unit, you'll learn how to create a public DNS zone.

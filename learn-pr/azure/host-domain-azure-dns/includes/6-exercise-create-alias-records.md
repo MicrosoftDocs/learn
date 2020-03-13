@@ -14,7 +14,6 @@ Manually creating a virtual network, load balancer, and two VMs will take some t
 
 1. Using the Cloud Shell, run the following setup script.
 
-    <!-- Replace with new repo - script.sh and cloud-init.txt in resources folder -->
     ```bash
     git clone https://github.com/MicrosoftDocs/mslearn-host-domain-azure-dns.git
     ```
@@ -69,7 +68,10 @@ When the new alias record is created, it should look something like this:
 
 Now you need to verify the alias record is set up correctly. In a real world scenario, you'll have an actual domain and would have completed the domain delegation to the Azure DNS.  So you would use the registered domain name for this exercise.  Because this unit assumes there's no registered domain, you'll use the public IP address.
 
-1. In a web browser, paste in the public IP address as the URL. If you don't have the IP address, go to the resource group and select myPublicIP. The IP address is on the top right-hand side.
+
+1. If you didn't copy the public IP address in a previous step, go to the resource group and select myPublicIP. The IP address is on the top right-hand side.
+![Image showing the DNS zone with an alias record created](../media/6-publicIpaddress.png)
+1. In a web browser, paste in the public IP address as the URL.
 1. You'll see a basic web page that shows the name of the VM that the load balancer sent the request to.
 
 The aim of this test is to check that the alias record is correctly pointing to the load balancer.
