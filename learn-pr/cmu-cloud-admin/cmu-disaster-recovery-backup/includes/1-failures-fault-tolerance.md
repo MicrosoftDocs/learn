@@ -70,7 +70,7 @@ There are four common strategies used to implement resource replication, all of 
 
 - **Semi-passive replication** --- This methodology has the same relationship pattern as for passive replication, except that there is no permanent primary resource. Instead, the role of *coordinator* is designated to each resource in turn, with the coordination of turns determined by a token-passing model called the *rotating coordinator paradigm*.
 
-![Figure 1: Client nodes, primary nodes, and replica nodes in a replicated information system.](../media/c.png)
+![Figure 1: Client nodes, primary nodes, and replica nodes in a replicated information system.](../media/fig9-1.png)
 
 _Figure 1: Client nodes, primary nodes, and replica nodes in a replicated information system._
 
