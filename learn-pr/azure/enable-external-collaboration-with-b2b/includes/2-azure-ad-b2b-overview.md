@@ -29,7 +29,7 @@ Azure AD B2B lets you collaborate with external partner users through the proces
 
     The user is asked for their consent the first time they use the link. In this way, Azure AD B2B helps to provide transparency for partner users. Your external users will always know what information they're sharing. The user must accept the permissions needed by Azure AD B2B before they can gain access.
 
-    ![Permissions](../media/2-consentscreen.png)
+    ![Permissions](../media/2-consent-screen.png)
 
 1. **Multi-factor authentication**
 

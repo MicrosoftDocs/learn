@@ -44,10 +44,10 @@ When you create a Conditional Access policy, you'll specify which users or group
 
 When your policy is configured and enabled, you test it using the **What If** tool in the Azure portal.
 
-![What if test](../media/5-whatif.png)
+![What if test](../media/5-what-if.png)
 
 This tool will help simulate a user signing in and show you which policies would be applied, based on your test simulation. If successful, you'll see your policy in the list that will apply, based on your simulation.
 
-![What if result](../media/5-whatif-result.png)
+![What if result](../media/5-what-if-result.png)
 
 You then do a final test by attempting to sign in as the user for the application. Test the Conditional Access policy by verifying whether multi-factor authentication is enforced correctly.
