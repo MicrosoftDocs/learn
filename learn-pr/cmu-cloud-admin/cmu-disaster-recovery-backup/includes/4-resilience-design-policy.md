@@ -34,13 +34,13 @@ Taking a cue from how soldiers, sailors, and Marines in an active theater of ope
 
 - **Refine** future behaviors as necessary in order to be better prepared for their reoccurrence
 
-![Figure 9: The lifecycle of best-practice activities in an environment that utilizes ResiliNets.](../media/fig9-9.png)
+![Figure 9: The lifecycle of best-practice activities in an environment that utilizes ResiliNets.](../media/fig9-9.jpg)
 
 _Figure 9: The lifecycle of best-practice activities in an environment that utilizes ResiliNets._
 
 During each of these stages, certain performance and operational metrics are obtained, both for people and systems. The combination of these metrics results in points that can be plotted on a chart like the one in Figure 9.10 using a Euclidean geometric plane. Each metric can be reduced to two one-dimensional values: one that reflects service-level parameters *P*, and another that represents operational state *N*. As all six stages in the ResiliNets cycle are implemented and repeated, the service state *S* is plotted on the chart at coordinates (*N*, *P*).
 
-![Figure 10: The ResiliNets state space and strategy inner loop.](../media/fig9-10.png)
+![Figure 10: The ResiliNets state space and strategy inner loop.](../media/fig9-10.jpg)
 
 _Figure 10: The ResiliNets state space and strategy inner loop._
 
@@ -70,7 +70,7 @@ This ISO framework does not actually define business continuity, or for that mat
 
 Figure 11 is Microsoft's depiction of Azure's multi-stage implementation of ISO 22301 compliance. Note the inclusion of service-level agreement (SLA) up-time objectives. For customers choosing this level of resilience, Azure replicates virtual data centers within their local availability zones, but then provisions separate replicas whose geolocation is separated by hundreds of miles. For legal reasons, however (especially to maintain compliance with the European Union's privacy laws), this geolocation-separated redundancy is typically limited to "data residency boundaries" such as North America or Europe.
 
-![Figure 11: Azure Resiliency Framework, which protects active components on multiple levels, in accordance with ISO 22301. \[Courtesy Microsoft\]](../media/fig9-11.png)
+![Figure 11: Azure Resiliency Framework, which protects active components on multiple levels, in accordance with ISO 22301. \[Courtesy Microsoft\]](../media/fig9-11.jpg)
 
 _Figure 11: Azure Resiliency Framework, which protects active components on multiple levels, in accordance with ISO 22301. \[Courtesy Microsoft\]_
 
