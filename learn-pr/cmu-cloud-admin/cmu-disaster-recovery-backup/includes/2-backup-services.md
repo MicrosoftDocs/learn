@@ -96,7 +96,7 @@ This way, the GCS customer organization selects the infrastructure it needs for 
 
 ### References
 
-1. _Amazon Web Services, Inc.. *Traffic management with AWS Global Accelerator* <https://aws.amazon.com/blogs/networking-and-content-delivery/traffic-management-with-aws-global-accelerator/>._
+1. _Amazon Web Services, Inc. *Traffic management with AWS Global Accelerator* <https://aws.amazon.com/blogs/networking-and-content-delivery/traffic-management-with-aws-global-accelerator/>._
 
 2. _Amazon Web Services, Inc.. *Overview of Setting Up Replication* <https://docs.aws.amazon.com/AmazonS3/latest/dev/replication-how-setup.html>._
 
