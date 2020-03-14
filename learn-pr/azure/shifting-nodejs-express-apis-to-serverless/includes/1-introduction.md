@@ -12,21 +12,22 @@ You'll start by exploring and running the Node and Express APIs in the sample pr
 
 In this module, you will:
 
-- Evaluate an existing project that implements Express APIs
-- Create a new Azure Functions application
-- Refactor the Express APIs to the Azure Functions application
-- Run and debug the application locally
-- Understand the differences and similarities in refactoring Express APIs to Azure Functions
+- Establish an Application Programming Interfaces (API).
+- Evaluate an existing project that implements Express APIs.
+- Create a new Azure Functions application.
+- Refactor the Express APIs to the Azure Functions application.
+- Run and debug the application locally.
+- Understand the differences and similarities in refactoring Express APIs to Azure Functions.
 
 ## Pre-requisites
 
-- some knowledge of JavaScript
-- some familiarity with Node.js and Express APIs
-- some familiarity with Azure Functions
-- install [Node.js](https://nodejs.org/en/)
-- install [Visual Studio Code](https://code.visualstudio.com/)
-- install [Azure Functions Core Tools](https://github.com/Azure/azure-functions-core-tools)
-- install the [Azure Functions](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions) extension
+- Must have some knowledge of JavaScript
+- Must have some familiarity with Node.js and Express APIs
+- Must have some familiarity with Azure Functions
+- Must have [Node.js](https://nodejs.org/en/) installed
+- Must have [Visual Studio Code](https://code.visualstudio.com/) installed
+- Must have [Azure Functions Core Tools](https://github.com/Azure/azure-functions-core-tools) installed
+- Must have the [Azure Functions](https://marketplace.visualstudio.com/items?itemName=ms-azuretools. vscode-azurefunctions) extension installed
 
 ## Planning the Shift to Serverless
 
@@ -40,7 +41,7 @@ When you why make this shift? Overall there's less to think about with serverles
 
 ## About the Project You'll Build
 
-The project represents a Node Express API's application in TypeScript that is shifted to Azure Functions.
+The project represents a Node Express application in TypeScript that is shifted to Azure Functions.
 
 But what if you aren't using TypeScript? That's fine. If your Express app is using JavaScript, feel free to shift it to Azure Functions using JavaScript.
 
