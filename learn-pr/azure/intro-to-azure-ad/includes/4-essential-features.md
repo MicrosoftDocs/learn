@@ -1,6 +1,6 @@
 Your company wants to improve how it provides services to doctors and how it collaborates with external healthcare organizations. You've been asked to investigate what other capabilities and services Azure AD could provide for the organization.
 
-Here, you explore some essential features of Azure AD and how you can use them. For example, you look at features like Azure Active Directory business-to-business (Azure AD B2B), Azure Active Directory business-to-consumer (Azure AD B2C), Azure AD Domain Services, and Azure Identity Protection. You see which features you can use to help improve how you manage applications in Azure AD.
+Here, you explore some essential features of Azure AD and how you can use them. For example, you look at features like Azure Active Directory B2B (Azure AD B2B), Azure Active Directory B2C (Azure AD B2C), Azure AD Domain Services, and Azure Identity Protection. You see which features you can use to help improve how you manage applications in Azure AD.
 
 ## Azure AD B2B
 
