@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.use-git-from-vs-code.3-exercise
+title: Exercise
+metadata:
+  title: Exercise
+  description: Exercise
+  ms.date: 10/04/2019
+  author: nickwalkmsft
+  ms.author: nickwalk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 2
+content: |
+  [!include[](includes/3-exercise.md)]
