@@ -398,7 +398,6 @@ Now we have a device pumping out telemetry, we need to listen for that telemetry
 1. From the **File** menu, create a new file. Insert a single line as a comment, such as `// Cheese Cave back-end service app`. Save the file to the "cheesecaveservice" folder (locating this folder might involve a bit of navigation), with the name "app.js".
 
 1. Back in the terminal, enter the following commands:
-    * **npm install &#64;azure/event-hubs**
     * **npm install azure-iothub**
     * **npm install chalk**
 
@@ -428,7 +427,6 @@ Now we have a device pumping out telemetry, we need to listen for that telemetry
 1. Navigate to the **JavaScript** project types, and create a new **Blank Node.js Console Application** project, called "CheeseCaveOperator".
 
 1. In the **Solution Explorer** tab, right click **npm**, and select **Install New npm Packages**. Install the following libraries:
-    * **&#64;azure/event-hubs**
     * **azure-iothub**
     * **chalk**
 
