@@ -12,7 +12,7 @@ You can use different features of Azure AD, depending on the type of license you
 
 - **Azure Active Directory Premium P2**. You get all the features of the previous two tiers, along with Active Directory Identity Protection. This feature helps you configure risk-based conditional access to protect applications from identity risks. You can also use privileged identity management, which lets you monitor and put detailed restrictions on administrators.
 
-- **Pay-as-you-go licenses for specific features**. You access specific Azure AD features, like Azure AD business-to-consumer (B2C), on a pay-as-you-go basis. Azure AD B2C lets you manage identity and access for consumer users and the applications they use.
+- **Pay-as-you-go licenses for specific features**. You access specific Azure AD features, like Azure AD B2C, on a pay-as-you-go basis. Azure AD B2C lets you manage identity and access for consumer users and the applications they use.
 
 Choose the license type you want, based on your organization's needs.
 
