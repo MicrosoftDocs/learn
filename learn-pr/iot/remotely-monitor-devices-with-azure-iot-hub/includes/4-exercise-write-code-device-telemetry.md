@@ -18,9 +18,9 @@ At the end of this unit, you'll be sending and receiving telemetry.
 1. After you've entered the code below into the **app.js** file, you can run it from the terminal by entering `node app.js`. Ensure that the cheesecave folder is the current folder of the terminal, when you run the app.
 
 ::: zone-end
-::: zone pivot="vscode-csharp"
-
-1. To use C# in Visual Studio Code, ensure both [.NET Core](https://dotnet.microsoft.com/download), and the [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp) are installed.
+:::    zone pivot="vscode-csharp"
+    
+1.     o use C# in Visual Studio Code, ensure both [.NET Core](https://dotnet.microsoft.com/download), and the [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp) are installed.
 
 1. Open a terminal in Visual Studio Code, and create a folder called "cheesecavedevice" (enter `mkdir cheesecavedevice`). Navigate to the cheesecavedevice folder.
 
