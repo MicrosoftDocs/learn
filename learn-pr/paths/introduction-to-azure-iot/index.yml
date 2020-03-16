@@ -4,12 +4,12 @@ metadata:
   title: Introduction to azure iot
   description: Follow this learning path for a broad and compelling introduction to the fundamentals of building IoT solutions with Azure IoT.
   brand: azure
-  ms.date: 12/27/2018
+  ms.date: 03/16/2020
   author: altaohms
   ms.author: pacorte
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Introduction to azure iot
+title: Introduction to Azure IoT
 summary: |
   Interested in building end to end IoT solutions or about Azure IoT, but aren't quite how to get started? This path is the place to start.
 
