@@ -1,6 +1,6 @@
-Your company wants to improve how it provides services to doctors and how it collaborates with external healthcare organizations. You've been asked to investigate what other capabilities and services Azure AD could provide for the organization.
+Your company wants to improve how it provides services to doctors and how it collaborates with external healthcare organizations. You've been asked to investigate what other capabilities and services Azure Active Directory (Azure AD) can provide for the organization.
 
-Here, you explore some essential features of Azure AD and how you can use them. For example, you look at features like Azure Active Directory B2B (Azure AD B2B), Azure Active Directory B2C (Azure AD B2C), Azure AD Domain Services, and Azure Identity Protection. You see which features you can use to help improve how you manage applications in Azure AD.
+Here, you explore some essential features of Azure AD and how you can use them. For example, you look at features like Azure AD B2B, Azure AD B2C, Azure AD Domain Services (AD DS), and Azure AD Identity Protection. You see which features you can use to help improve how you manage applications in Azure AD.
 
 ## Azure AD B2B
 
@@ -38,9 +38,9 @@ For example, a flow for the sign-in process might go like this:
 
 This feature is available on a pay-as-you-go basis.
 
-## Azure AD Domain Services
+## Azure AD DS
 
-Azure AD Domain Services (Azure AD DS) lets you add virtual machines to a domain without needing domain controllers. Your internal staff users can access virtual machines by using their company Azure AD credentials. 
+Azure AD DS lets you add virtual machines to a domain without needing domain controllers. Your internal staff users can access virtual machines by using their company Azure AD credentials. 
 
 Use this service to reduce the complexity of migrating on-premises applications to Azure. An organization could also use Azure AD DS to handle its infrastructure if it runs applications both on-premises and in the cloud. The process might go like this:
 
