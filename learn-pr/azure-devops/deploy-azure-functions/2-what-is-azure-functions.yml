@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azdo.deploy-azure-functions.2-what-is-azure-functions
-title: What is Azure Functions
+title: What is Azure Functions?
 metadata:
-  title: What is Azure Functions
+  title: What is Azure Functions?
   description: Understand the benefits of Azure Functions and when to use them.
   ms.date: 03/02/2020
   author: edkaim
@@ -37,14 +37,14 @@ quiz:
     - content: "They are a replacement for app services and virtual machines."
       isCorrect: true
       explanation: "Azure Functions are great for providing specific services, but are not intended to replace app services or virtual machines."
-  - content: "Which of the following is not a supported way to directly trigger an Azure Function?"
+  - content: "Which of the following is not a supported way to directly trigger an Azure Functions app?"
     choices:
     - content: "Making a HTTP request over the public Internet."
       isCorrect: false
       explanation: "This is one of the most common ways to integrate with Azure Functions."
     - content: "Detecting a new message on a message queue."
       isCorrect: false
-      explanation: "This is a very common way to invoke an Azure Function asynchronously."
+      explanation: "This is a very common way to invoke an Azure Functions app asynchronously."
     - content: "Receiving a carefully filled-out form via fax machine."
       isCorrect: true
       explanation: "At this time, incoming fax messages are not directly supported. However, there's no reason you couldn't wire up fax software to another trigger method."

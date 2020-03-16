@@ -8,16 +8,17 @@
               runtimeStack: DOCKER|microsoft/azure-functions-dotnet-core2.0:2.0
               startUpCommand: 'func azure functionapp publish $(functionAppName) --no-bundler'
 
-          - task: AzureAppServiceSettings@0
+          - task: AzureAppServiceSettings@1
             displayName: 'Update web app settings'
-              inputs:
-                azureSubscription: 'Resource Manager - Tailspin - Space Game'
-                appName: $(WebAppName)
-                appSettings: |
-                  [
-                    {
-                      "name": "AppSettings:LeaderboardFunctionUrl",
-                      "value": 'http://$(LeaderboardAppName).azurewebsites.net/api/LeaderboardFunction,
-                      "slotSetting": false
-                    }
-                  ]
+            inputs:
+              azureSubscription: 'Resource Manager - Tailspin - Space Game'
+              appName: $(WebAppName)
+              resourceGroupName: $(ResourceGroupName)
+              appSettings: |
+                [
+                  {
+                    "name": "AppSettings:LeaderboardFunctionUrl",
+                    "value": "http://$(LeaderboardAppName).azurewebsites.net/api/LeaderboardFunction",
+                    "slotSetting": false
+                  }
+                ]

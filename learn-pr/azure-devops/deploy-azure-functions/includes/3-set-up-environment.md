@@ -7,8 +7,8 @@ To accomplish these goals, you:
 > * Set up an Azure DevOps project for this module.
 > * On Azure Boards, move the work item for this module to the **Doing** column.
 > * Make sure your project is set up locally so that you can push changes to the pipeline.
-> * Create the Azure App Service and Azure Function using the Azure CLI in Azure Cloud Shell.
-> * Create pipeline variables that define the names of your App Service and Azure Function.
+> * Create the Azure App Service and Azure Functions app using the Azure CLI in Azure Cloud Shell.
+> * Create pipeline variables that define the names of your App Service and Azure Functions instance.
 > * Create a service connection that enables Azure Pipelines to securely access your Azure subscription.
 
 ## Add a user to Azure DevOps
@@ -32,7 +32,7 @@ The modules in this learning path form a progression. You follow the Tailspin we
 Run a template that sets up your Azure DevOps organization:
 
 > [!div class="nextstepaction"]
-> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?name=deploy-azure-functions&azure-portal=true)
+> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?name=DeployAzureFunction&azure-portal=true)
 
 From the Azure DevOps Demo Generator site, follow these steps to run the template:
 
@@ -65,7 +65,7 @@ Here you assign a work item to yourself on Azure Boards. You also move the work 
 
 This work assignment gives you a checklist to work from. It gives other team members visibility into what you're working on and how much work is left. The work item also helps enforce work-in-progress (WIP) limits so that the team doesn't take on too much work at one time.
 
-Here you move the first item, **Refactor leaderboard API as an Azure Function**, to the **Doing** column. Then you assign yourself to the work item.
+Here you move the first item, **Refactor leaderboard API as an Azure Functions app**, to the **Doing** column. Then you assign yourself to the work item.
 
 To set up the work item:
 
@@ -84,7 +84,7 @@ At the end of this module, you'll move the card to the **Done** column after you
 
 ## Create the Azure App Service environments
 
-Here you create the App Service and Azure Function required to deploy the new version of the site and API.
+Here you create the App Service and Azure Functions app required to deploy the new version of the site and API.
 
 In [Create a release pipeline with Azure Pipelines](/learn/modules/create-release-pipeline?azure-portal=true), you brought up App Service through the Azure portal. Although the portal is a great way to explore what's available on Azure or to do basic tasks, bringing up components such as App Service can be tedious.
 
@@ -200,7 +200,7 @@ This solution requires several Azure resources for deployment, which will be cre
 	  --sku Standard_LRS
 	```
 
-1. Run the following `az functionapp create` command to create the Azure Functions instance. Replace the &lt;region&gt; with your preferred region.
+1. Run the following `az functionapp create` command to create the Azure Functions app instance. Replace the &lt;region&gt; with your preferred region.
 
     ```azurecli
     az functionapp create \
@@ -255,7 +255,7 @@ This solution requires several Azure resources for deployment, which will be cre
 
 ## Create pipeline variables in Azure Pipelines
 
-In [Create a release pipeline with Azure Pipelines](/learn/modules/create-release-pipeline?azure-portal=true), you added a variable to your pipeline that stores the name of your web app in App Service. Here you do the same. In addition, you will add the name of your leaderboard app for the Azure Function.
+In [Create a release pipeline with Azure Pipelines](/learn/modules/create-release-pipeline?azure-portal=true), you added a variable to your pipeline that stores the name of your web app in App Service. Here you do the same. In addition, you will add the name of your leaderboard app for the Azure Functions instance.
 
 You could hard-code these names in your pipeline configuration, but if you define them as variables, your configuration will be more reusable. Plus, if the names of your instances change, you can update the variables and trigger your pipeline without modifying your configuration.
 
@@ -278,9 +278,9 @@ To add the variables:
     > [!IMPORTANT]
     > Set the name of the App Service instance, not its host name. In this example, you would enter *tailspin-space-game-web-4692* and not *tailspin-space-game-web-4692.azurewebsites.net*.
 
-1. Repeat the process to add another variable named *LeaderboardAppName* with the value of your Azure Function name, such as *tailspin-space-game-leaderboard-4692*.
+1. Repeat the process to add another variable named *LeaderboardAppName* with the value of your Azure Functions app name, such as *tailspin-space-game-leaderboard-4692*.
 
-1. Add a final variable named *ResourceGroupName* with the value *taispin-space-game-rg*.
+1. Add a final variable named *ResourceGroupName* with the value *tailspin-space-game-rg*.
 
 1. Near the top of the page, select **Save** to save your variable to the pipeline.
 
@@ -299,7 +299,7 @@ Here you create a service connection that enables Azure Pipelines to access your
 1. From the bottom corner of the page, select **Project settings**.
 1. Under **Pipelines**, select **Service connections**.
 1. Select **New service connection**, then choose **Azure Resource Manager**, then select **Next**.
-1. Near the top of the page, select **Service Principal Authentication**.
+1. Near the top of the page, select **Service principal (automatic)**.
 1. Fill in these fields:
 
     | Field               | Value                                        |
