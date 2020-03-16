@@ -15,45 +15,59 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "How can governments strengthen their AI outcomes?"
+  - content: "Why is it beneficial for people from technical teams and lines of business to collaborate on AI initiatives?"
     choices:
-    - content: "Replace employees with conversational agents."
+    - content: "The technical teams need to make sure the solution has the latest and greatest AI capabilities."
       isCorrect: false
-      explanation: "Incorrect. Employees are critical to the success of government initiatives, and AI empowers them to do more."
-    - content: "Leave it to AI experts to plan for and execute an AI solution."
-      isCorrect: false
-      explanation: "Incorrect. It is important for AI experts to collaborate with domain experts to create an effective solution that aligns with organizational goals and processes."
-    - content: "Establish data practices that make it easier to collect and aggregate data from a variety of sources."
+      explanation: "Incorrect. An AI solution’s complexity should be suited to the business use case."
+    - content: "All relevant teams need to be involved in design, implementation, and ongoing maintenance to make sure the solution functions properly and achieves its business objectives."
       isCorrect: true
-      explanation: "Correct. AI solutions are only as strong as the data they are based on. It is crucial for organizations to prioritize data when creating an AI strategy."
-    - content: "Focus on internal uses of AI above citizen-facing uses."
+      explanation: "Correct. Technical and line-of-business teams bring different perspectives to the table that are essential for creating and maintaining a successful solution."
+    - content: "Line-of-business leaders need to make sure the solution costs as little as possible."
       isCorrect: false
-      explanation: "Incorrect. There are many valuable citizen-facing uses of AI that governments can consider, and they should focus on what will create the most value."
-  - content: "Which of the following will most likely help an AI solution perform more effectively?"
+      explanation: "Incorrect. While cost is a consideration, it isn’t the primary benefit of collaboration."
+    - content: "Line-of-business leaders need to make sure the solution doesn’t change any existing work processes."
+      isCorrect: false
+      explanation: "Incorrect. While usability is a consideration, it isn’t the primary benefit of collaboration. Business processes often need to adapt to new technologies."
+  - content: "What is a crucial step to connecting R&D with real business challenges?"
     choices:
-    - content: "Spending more money on the development of the AI solution."
-      isCorrect: false
-      explanation: "Incorrect. While allocating sufficient financial resources is crucial, spending more money alone will not help your solution become more effective."
-    - content: "Leveraging domain experts."
+    - content: "Make sure employees on the ground can share ideas related to their jobs."
       isCorrect: true
-      explanation: "Correct. By including relevant subject matter experts (such as those with consumer credit expertise for a credit scoring AI system) in the design process and in deployment decisions, governments can make sure the AI solution is most effectively designed to meet its purpose."
-    - content: "Developing the solution in-house."
+      explanation: "Correct. Allowing people from all departments and levels to identify and share solutions helps bridge the connection between R&D and real-world challenges."
+    - content: "Members of C-suite should ensure research efforts are geared towards relevant needs for the company."
       isCorrect: false
-      explanation: "Incorrect. It can be just as effective and potentially more cost effective to work with technological partners when developing the AI solution."
-    - content: "Using more complex algorithms."
+      explanation: "Incorrect. While it is important for the C-suite to focus on immediate business needs, they’re not always in the best position to identify day-to-day challenges."
+    - content: "Hire data scientists to drive innovation projects."
       isCorrect: false
-      explanation: "Incorrect. Using more complex algorithms will not necessarily lead to better results. Sometimes a simple algorithm combined with the right data can be more effective than a more complex algorithm."
-  - content: "A local government is considering implementing an AI solution. Which criteria should it consider when choosing the best use case to start with?"
+      explanation: "Incorrect. Data scientists are just one of many roles that contribute to innovation projects."
+    - content: "Publish academic papers to establish your company as an innovative business."
+      isCorrect: false
+      explanation: "Incorrect. While papers are a useful way to share information, they’re not a strong tool for connecting R&D with real business challenges."
+  - content: "Why is it helpful to prioritize Horizon 1 initiatives over Horizon 2 or Horizon 3 when starting out with AI?"
     choices:
-    - content: "Value creation."
+    - content: "Horizon 1 initiatives can create new business models and revenue streams."
+      isCorrect: false
+      explanation: "Incorrect. This is accurate of Horizon 2 or Horizon 3 initiatives."
+    - content: "New customer needs may be generated during Horizon 1 initiatives, which can fuel business growth during H2 and H3."
+      isCorrect: false
+      explanation: "Incorrect. An initiative that generates new customer need would likely fall in H2 or H3."
+    - content: "H1 initiatives can be carried out quickly, driving immediate value to the business."
+      isCorrect: false
+      explanation: "Incorrect. H1 initiatives optimize core business functions, but there’s no timetable for how long this may take."
+    - content: "It’s also helpful to grow capabilities and get buy-in with simpler technologies before moving on to more complex projects."
       isCorrect: true
-      explanation: "Correct. Government agencies should prioritize the overall value of the solution, which includes factors like cost, benefits, and organizational readiness for AI."
-    - content: "Cost reduction."
+      explanation: "Correct. Capabilities and buy-in gained in H1 can benefit later initiatives in H2 and H3."
+  - content: "What is a benefit of a machine learning pipeline?"
+    choices:
+    - content: "Machine learning pipelines create a dependent workflow process to ensure each stage of a workflow is tested and completed before moving on to the next stage."
       isCorrect: false
-      explanation: "Incorrect. While cost reduction is important, the ultimate consideration should be choosing solutions that create the most value for your organization."
-    - content: "Work reduction for employees."
+      explanation: "Incorrect. Machine learning pipelines are independently executable workflows of complete machine learning tasks."
+    - content: "Machine learning pipelines serve as an audit trail for a model’s history and make it possible to automatically trigger workflows after certain events."
       isCorrect: false
-      explanation: "Incorrect. While AI can help employees with certain tasks, the ultimate consideration should be choosing solutions that create the most value for your organization."
-    - content: "Difficulty of data cleansing."
+      explanation: "Incorrect. Incorrect. This is a benefit of a model registry."
+    - content: "Machine learning pipelines require data scientists to begin their work from the beginning to make changes, which improves their accuracy and performance."
       isCorrect: false
-      explanation: "Incorrect. While data is an important consideration, the ultimate consideration should be choosing solutions that create the most value for your organization."
+      explanation: "Incorrect. Machine learning pipelines allow data scientists to start from where the change needs to occur, which prevents running costly and time-intensive steps like data ingestion."
+    - content: "Having independent steps saved to a pipeline allows multiple data scientists to work on the same pipeline concurrently."
+      isCorrect: true
+      explanation: "Correct. Machine learning pipelines allow data scientists to better collaborate and make changes more easily, which saves time and money."
