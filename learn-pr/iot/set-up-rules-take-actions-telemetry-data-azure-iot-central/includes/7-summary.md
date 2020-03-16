@@ -1,4 +1,4 @@
-Congratulations, you have completed all the development and testing work for this module. Let's summarize what we've learned, and finish with a short knowledge check.
+Congratulations, you've completed all the development and testing work for this module. Let's summarize what we've learned, and finish with a short knowledge check.
 
 In this module, you learned how to:
 

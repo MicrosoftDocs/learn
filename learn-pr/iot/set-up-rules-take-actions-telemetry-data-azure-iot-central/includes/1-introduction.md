@@ -49,7 +49,7 @@ You'll construct the app displayed in the above image, from supplied components.
     > [!NOTE]
     > Click on any image to display a full-sized image.
 
-1. Fill out your contact info, and click **Create**. Wait a few seconds whilst the app resource is built.
+1. Fill out your contact info, and click **Create**. Wait a few seconds while the app resource is built.
 
 1. You should now see a **Dashboard** with a few default links.
 
