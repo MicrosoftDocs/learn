@@ -27,7 +27,7 @@ roles:
 - security-engineer
 products:
 - azure
-- azure-sql-data-warehouse
+- azure-synapse-analytics
 units:
 - learn.data-ai.data-warehouse-security.introduction
 - learn.data-ai.data-warehouse-security.azure-dw-security-control
