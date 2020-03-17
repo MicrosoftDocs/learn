@@ -3,7 +3,7 @@ uid: troubleshoot-inbound-network-connectivity-azure-load-balancer
 metadata:
   title: Troubleshoot inbound network connectivity for Azure Load Balancer
   description: Learn how to troubleshoot inbound network connectivity for Azure Load Balancer.
-  ms.date: 03/06/2020
+  ms.date: 03/23/2020
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial
@@ -32,6 +32,7 @@ units:
 - learn.azure.troubleshoot-inbound-network-connectivity-azure-load-balancer.introduction
 - learn.azure.troubleshoot-inbound-network-connectivity-azure-load-balancer.troubleshoot-azure-load-balancer
 - learn.azure.troubleshoot-inbound-network-connectivity-azure-load-balancer.diagnose-issues-by-reviewing-configurations-and-metrics
+- learn.azure.troubleshoot-inbound-network-connectivity-azure-load-balancer.exercise-set-up-environment
 - learn.azure.troubleshoot-inbound-network-connectivity-azure-load-balancer.exercise-identify-and-resolve-inbound-network-connectivity
 - learn.azure.troubleshoot-inbound-network-connectivity-azure-load-balancer.summary
 badge:
