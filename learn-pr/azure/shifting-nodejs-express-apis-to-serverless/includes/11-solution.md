@@ -1,5 +1,3 @@
-### Looking at the Functions App
-
 The Azure Functions app now has folders that map to their appropriate endpoints as shown below.
 
 | method | route endpoint | folder          |

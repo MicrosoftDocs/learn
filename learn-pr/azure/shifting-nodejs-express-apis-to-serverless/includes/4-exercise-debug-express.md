@@ -1,4 +1,4 @@
-When I want to become familiar with an app, I find it helpful to run and step through an app with the debugger. Let's do this together.
+When I want to become familiar with an app, I find it helpful to run and step through an app with the debugger.
 
 Let's start by opening the app in Visual Studio Code.
 

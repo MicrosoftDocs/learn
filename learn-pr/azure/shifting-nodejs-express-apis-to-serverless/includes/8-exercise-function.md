@@ -8,7 +8,7 @@ You may recall that we have eight endpoints in the Express app. Follow these ste
 
 Notice that there is now a folder _functions/heroes-get_ that contains a few files. The _function.json_ contains the configuration for the function. Open _function.json_ and notice that the methods allow both GET and POST. Change this to only allow GET.
 
-By default the route to execute this function will be **heroes-get**. The route in the Express app is simply **heroes**. We want these to be the same, so add a `route: "heroes"` entry in the **bindings** section in the _function.json_. Now the function will be executed when an HTTP GET on **/heroes** is called.
+By default the route to execute the function will be **heroes-get**. The route in the Express app is simply **heroes**. We want these routes to be the same, so add a `route: "heroes"` entry in the **bindings** section in the _function.json_. Now the function will be executed when an HTTP GET on **/heroes** is called.
 
 Your _function.json_ should look like the following code.
 
