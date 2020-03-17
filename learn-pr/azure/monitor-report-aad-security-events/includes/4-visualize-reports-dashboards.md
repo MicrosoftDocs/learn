@@ -10,7 +10,7 @@ In this unit, you'll explore some of the prebuilt views available for reporting 
 
 In addition to building your own reports and queries to report on user activity, you can also use prebuilt log analytics views. These views help you report on frequently encountered scenarios using the sign-in and audit log events. All reports and views can be linked with alerts to warn of any unusual results.
 
-Prebuilt views are available on GitHub here: ([https://github.com/AzureAD/Deployment-Plans/tree/master/Log%20Analytics%20Views](https://github.com/AzureAD/Deployment-Plans/tree/master/Log Analytics Views)). There are two views available to use:
+Prebuilt views are available on GitHub in the [AzureAD/Deployment-Plans](https://github.com/AzureAD/Deployment-Plans/tree/master/Log%20Analytics%20Views?azure-portal=true) repository. There are two views available to use:
 
 - Azure AD Account Provisioning Events
 - Sign-in Events
@@ -23,7 +23,7 @@ This view is a collection of reports based on audit log data, focused around acc
 - Gauge the number of users successfully updated, and how many failed.
 - Get the number of users deprovisioned, and any that failed.
 
-You'll need to download the file from the GitHub repository: [Azure AD Account Provisioning Events.omsview](https://github.com/AzureAD/Deployment-Plans/blob/master/Log Analytics Views/Azure AD Account Provisioning Events.omsview).
+You'll need to download the [Azure AD Account Provisioning Events.omsview](https://github.com/AzureAD/Deployment-Plans/blob/master/Log%20Analytics%20Views/Azure%20AD%20Account%20Provisioning%20Events.omsview) file from the GitHub repository.
 
 ### Sign-in Events view
 
@@ -34,7 +34,7 @@ This view is a collection of reports that monitor your users' sign-in attempts. 
 - Sign in by device
 - Sign-ins over time
 
-You'll need to download the file from the GitHub repository: [AzureADSignins.omsview](https://github.com/AzureAD/Deployment-Plans/blob/master/Log Analytics Views/AzureADSignins.omsview).
+You'll need to download the [AzureADSignins.omsview](https://github.com/AzureAD/Deployment-Plans/blob/master/Log%20Analytics%20Views/AzureADSignins.omsview) file from the GitHub repository.
 
 ### Install a prebuilt view
 
@@ -134,5 +134,3 @@ With the link created, you can now select any of the reporting chart styles to r
 ![Screenshots showing how to build a report in Power BI](../media/4-power-bi-analytics-visualize.png)
 
 When you've laid out the report as you want, you can select **Publish to Web** to publish the report to your Azure Power BI cloud workspace. From there, the report can be used on other web pages.
-
-![Screenshot showing how to publish a Power BI report to your Azure Power BI cloud workspace](../media/4-publish-power-bi.png)
