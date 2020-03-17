@@ -9,6 +9,6 @@ metadata:
   ms.author: rawortma
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 1 
+durationInMinutes: 10 
 content: |
   [!include[](includes/6-mlops-create-ml.md)] 
