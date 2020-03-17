@@ -19,7 +19,7 @@ With AI initiatives, you need to think like a venture capitalist. That means bei
    :::column span="2":::
       At Microsoft, we use a "horizon-based" framework to evaluate and prioritize AI investments. This groups AI projects into three "horizons," from improving core business functions to creating brand new revenue streams. The risk and uncertainty of specific applications depends on a company's level of AI maturity, size, business objectives, and more.
    :::column-end:::
-   :::column span="":::
+   :::column span="2":::
       ![Graph with the title "Horizon framework." The y-axis is labeled "Where to invest" and the x-axis as labeled as "Risk and uncertainty" and "Disruptive potential." The graph shows three groups of potential investments, all starting at the top of the y-axis where the x-axis starts. The first group is labelled as "H1 - running. Operate and optimize the core business" and its line is curved, almost circular, running from the top of the y-axis when x equals zero, to stopping one-third of the way along the x-axis. The area contained in this line is light blue. The next group is labelled "H2 - Growing. Improve market position" and it's line is curved, almost circular, running from the top of the y-axis when x equals zero, to stopping two-thirds of the way along the x-axis. The area under the line is a darker blue. The next horizon is labelled "H3 - Transforming. Change market position" and it's line is curved, in a circular fashion, running from the top of the y-axis when x equals zero, to stopping at the end of the x-axis. The area under this line is the darkest shade of blue.](../media/manage-ai-organizations-1.png)
    :::column-end:::
 :::row-end:::
@@ -70,7 +70,7 @@ For example, a chemical manufacturer could sell "fertilizer-as-a-service"—whic
       
       Scenarios that fall below the middle line help the organization survive more than thrive. They might address competitive and disruptive threats, improve operations, or empower employees in the organization. Scenarios above the middle line help companies create new value propositions, revenue streams, or business models.
    :::column-end:::
-   :::column span="":::
+   :::column span="2":::
       ![Graph with the title "Transformational framework." The left side of the x-axis is labeled "Tactical" and the right is labeled "Strategic." A double-sided arrow sits on the x-axis, pointing to both ends. The bottom of the y-axis is labeled "Existing business models" and the right side is labeled "New business models." A double-sided arrow runs along the y-axis and points to both ends. Within the graph are four quadrants. The bottom left quadrant is a grey box labeled "H1 – Operational." The box contains an icon of a wrench and a gear. The bottom right quadrant is a blue box labeled "H2 – Incremental" containing the icon of a drone. The top left quadrant is a blue box labeled "H2 – Incremental," containing the icon of augmented reality glasses. The top right is a dark blue box labeled "H3 - Transformational," containing the icon of a robotic arm. A grey arrow extends from the bottom left H1 box to the top right H3 box, indicating that initiatives start operational and move to transformational.](../media/manage-ai-organizations-2.png)
    :::column-end:::
 :::row-end:::
@@ -85,7 +85,7 @@ As you map initiatives, it's helpful to involve the CFO office and other stakeho
       
       We recommend this approach because it's helpful to grow capabilities and get buy-in before you move to more complex projects. You'll need to form technical teams that can prepare data properly and familiarize themselves with AI models. Starting with foundational initiatives also helps establish trust across the business and manage expectations related to AI initiatives. The success and value you're able to demonstrate in early initiatives pave the way for the more transformational projects.
    :::column-end:::
-   :::column span="":::
+   :::column span="2":::
       ![Diagram titled "Prioritization Framework." The left side of the x-axis is labeled "Tactical" and the right is labeled "Strategic." A double-sided arrow sits on the x-axis, pointing to both ends. The bottom of the y-axis is labeled "Existing business models" and the top side is labeled "New business models." A double-sided arrow runs along the y-axis and points to both ends. Within the graph are four quadrants. The bottom left quadrant is labeled "Incremental." The bottom right quadrant is labeled "Evolutionary." The top left quadrant is labeled "Experimental." The top right quadrant is labeled "Aspirational." There are three curved, c-shapes over the quadrants representing each horizon, H1, H2, and H3. H1 is in bottom left quadrant. H2 is in the middle of the graph, spanning the Experimental, Aspirational, and Evolutionary quadrants. The H3 c-shape sits in the Aspirational quadrant. Each shape has several grey circles on them, representing AI initiatives. Projects A and B are on H1, and they connect with grey arrows to Projects D, C, and E on H2. Those projects connect with arrows to projects F, H, and G on the H3 shape. The arrows show how the projects and horizons flow from left to right.](../media/manage-ai-organizations-3.png)
    :::column-end:::
 :::row-end:::
