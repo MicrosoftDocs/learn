@@ -6,37 +6,31 @@ Now let's explore the [sample project on GitHub](https://github.com/johnpapa/exp
 
 The application is a conventional Node.js and Express API that serves the following eight endpoints.
 
-| method | route endpoint |
-| ------ | -------------- |
-| GET    | heroes         |
-| POST   | heroes         |
-| PUT    | heroes:id      |
-| DELETE | heroes/:id     |
-| GET    | villains       |
-| POST   | villains       |
-| PUT    | villains:id    |
-| DELETE | villains/:id   |
+| methods | route endpoints |
+| ------- | --------------- |
+| GET     | vacations       |
+| POST    | vacations       |
+| PUT     | vacations:id    |
+| DELETE  | vacations/:id   |
 
 The structure of the Node Express app is straight-forward and contained in the _server_ folder.
 
 ```text
 server
  | - routes
- | | - hero.routes.ts  👈 The hero routes
+ | | - vacation.routes.ts  👈 The vacation routes
  | | - index.ts
- | | - villain.routes.ts
  | - services
- | | - data.ts         👈 The hero data (could be database API calls)
- | | - hero.service.ts 👈 The logic to get the hero data
+ | | - data.ts         👈 The vacation data (could be database API calls)
+ | | - vacation.service.ts 👈 The logic to get the vacation data
  | | - index.ts
- | | - villain.service.ts
  | - index.ts
  | - server.ts         👈 The Express server
  | - tsconfig.json
 ```
 
-The entry point is the _server/index.ts_ file, which runs the _server.ts_ code to start the Express server. Then the routes (such as /heroes) are then loaded from the _/routes_ folder. These routes execute the appropriate code in the _/services_ folder. The _data.ts_ file is where the app defines the data store configuration.
+The entry point is the _server/index.ts_ file, which runs the _server.ts_ code to start the Express server. Then the routes (such as /vacations) are then loaded from the _/routes_ folder. These routes execute the appropriate code in the _/services_ folder. The _data.ts_ file is where the app defines the data store configuration.
 
-For example, when the client app makes an HTTP GET to the _/heroes_ route, the route executes the logic in the _/services/hero.service.ts_ file to get the heroes.
+For example, when the client app makes an HTTP GET to the _/vacations_ route, the route executes the logic in the _/services/vacation.service.ts_ file to get the vacations.
 
 Feel free to explore the code for the Express logic in the _server_ folder on your own.

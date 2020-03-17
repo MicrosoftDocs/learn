@@ -14,7 +14,7 @@ Why write everything from scratch and throw away your hard work if you do not ha
 
 Now we have some minor refactoring to make the code work with Azure Functions instead of Express. The one thing that changes here is that the routing API and how request and response are passed. Let's refactor for this API difference.
 
-1. Open the **functions/services/hero.service.ts** file
+1. Open the **functions/services/vacation.service.ts** file
 1. Replace `import { Request, Response } from 'express';` with `import { Context } from '@azure/functions';`
 1. Replace every instance of `(req: Request, res: Response)` with `({ req, res }: Context)`.
 
@@ -25,64 +25,64 @@ Your code will look like the following when you are done refactoring. Notice the
 import { Context } from '@azure/functions';
 import * as data from './data';
 
-// 👇 This was async function getHeroes(req: Request, res: Response) {
-async function getHeroes({ req, res }: Context) {
+// 👇 This was async function getVacations(req: Request, res: Response) {
+async function getVacations({ req, res }: Context) {
   try {
-    const heroes = data.getHeroes();
-    res.status(200).json(heroes);
+    const vacations = data.getVacations();
+    res.status(200).json(vacations);
   } catch (error) {
     res.status(500).send(error);
   }
 }
 
-// 👇 This was async function postHero(req: Request, res: Response) {
-async function postHero({ req, res }: Context) {
-  const hero = {
+// 👇 This was async function postVacation(req: Request, res: Response) {
+async function postVacation({ req, res }: Context) {
+  const vacation = {
     id: undefined,
     name: req.body.name,
     description: req.body.description
   };
 
   try {
-    const newHero = data.addHero(hero);
-    res.status(201).json(newHero);
+    const newVacation = data.addVacation(vacation);
+    res.status(201).json(newVacation);
   } catch (error) {
     res.status(500).send(error);
   }
 }
 
-// 👇 This was async function putHero(req: Request, res: Response) {
-async function putHero({ req, res }: Context) {
-  const hero = {
+// 👇 This was async function putVacation(req: Request, res: Response) {
+async function putVacation({ req, res }: Context) {
+  const vacation = {
     id: req.params.id,
     name: req.body.name,
     description: req.body.description
   };
 
   try {
-    const updatedHero = data.updateHero(hero);
-    res.status(200).json(updatedHero);
+    const updatedVacation = data.updateVacation(vacation);
+    res.status(200).json(updatedVacation);
   } catch (error) {
     res.status(500).send(error);
   }
 }
 
-// 👇 This was async function deleteHero(req: Request, res: Response) {
-async function deleteHero({ req, res }: Context) {
+// 👇 This was async function deleteVacation(req: Request, res: Response) {
+async function deleteVacation({ req, res }: Context) {
   const { id } = req.params;
 
   try {
-    data.deleteHero(id);
+    data.deleteVacation(id);
     res.status(200).json({});
   } catch (error) {
     res.status(500).send(error);
   }
 }
 
-export default { getHeroes, postHero, putHero, deleteHero };
+export default { getVacations, postVacation, putVacation, deleteVacation };
 ```
 
-There are four functions where request and response are parameters. One each for `getHeroes`, `postHero`, `putHero`, and `deleteHero`.
+There are four functions where request and response are parameters. One each for `getVacations`, `postVacation`, `putVacation`, and `deleteVacation`.
 
 The parameters to every function in the Express app contain `req` and `res`. The Azure Functions app can still get to the request and response objects, but they are contained within a `context` object. We use destructuring to access them.
 
@@ -90,20 +90,20 @@ The parameters to every function in the Express app contain `req` and `res`. The
 
 #### Refactor the Route
 
-Now point your route to the service in your **functions/heroes-get/index.ts** file. Open that file and replace it with the following code.
+Now point your route to the service in your **functions/vacations-get/index.ts** file. Open that file and replace it with the following code.
 
 ```typescript
 import { AzureFunction, Context, HttpRequest } from '@azure/functions';
-import { heroService } from '../services';
+import { vacationService } from '../services';
 
 const httpTrigger: AzureFunction = async function(context: Context, req: HttpRequest): Promise<void> {
-  await heroService.getHeroes(context); // 👈 This calls the hero service
+  await vacationService.getVacations(context); // 👈 This calls the vacation service
 };
 
 export default httpTrigger;
 ```
 
-The code that you add calls the asynchronous function `heroService.getHeroes` and passes in the `context` which contain the request and response objects.
+The code that you add calls the asynchronous function `vacationService.getVacations` and passes in the `context` which contain the request and response objects.
 
 ### Create the Remaining Functions
 
@@ -112,9 +112,9 @@ Remember, there are eight total endpoints in the Express app and we just created
 1. Open the command palette by pressing **F1**
 1. Type and select **Azure Functions: Create Function**
 1. Choose **HTTP Trigger** for the type of function
-1. Enter the name of the function for heroes and villains. I recommend **heroes-get**, **heroes-post**, **heroes-put**, **heroes-delete**, **villains-get**, **villains-post**, **villains-put**, **villains-delete**)
+1. Enter the name of the function for vacations. I recommend three additional functions name **vacations-post**, **vacations-put**, **vacations-delete**
 1. Select **Anonymous** for the authentication level
 1. Open _function.json_ and set the method to the appropriate value of get, post, put or delete.
-1. In the bindings section, for the **get** and **post**, add a `route: "heroes"` (or villains as appropriate) entry.
-1. In the bindings section, for the **delete** and **put**, add a `route: "heroes/{id}"` (or villains as appropriate) entry.
-1. Add the code in each function's _index.ts_ file to call the appropriate hero or villain service function.
+1. In the bindings section, for the **get** and **post**, add a `route: "vacations"` entry.
+1. In the bindings section, for the **delete** and **put**, add a `route: "vacations/{id}"` entry.
+1. Add the code in each function's _index.ts_ file to call the appropriate vacation service function.
