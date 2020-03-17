@@ -3,7 +3,7 @@ uid: learn-wwl.manage-ai-organizations.mlops-service-ml
 title: Manage the machine learning lifecycle with MLOps
 metadata:
   title: Manage the machine learning lifecycle with MLOps
-  description: Introduction to AI strategy in government.
+  description: Manage, monitor, and retrain MLOps models over time.
   ms.date: 05/28/2020
   author: RWortmanMorris
   ms.author: rawortma
