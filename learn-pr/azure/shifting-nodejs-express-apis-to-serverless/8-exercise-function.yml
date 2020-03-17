@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.shift-express-api-azure-functions.8-exercise-function
+metadata:
+  title: Exercise - Shifting Routes and Creating the Function
+  description: Shifting Routes and Creating the Function
+  ms.date: 03/20/20
+  author: johnpapa
+  ms.author: jopapa
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Exercise - Shifting Routes and Creating the Function
+durationInMinutes: 3
+content: |
+  [!include[](includes/8-exercise-function.md)]

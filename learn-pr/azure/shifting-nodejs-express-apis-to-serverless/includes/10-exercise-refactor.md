@@ -1,5 +1,3 @@
-### Data - Shift the Services to Serverless
-
 All of the logic that executes to interact with the data store is contained in the _server/services_ folder of the Express app. We can lift that code and shift it over to the Azure Functions app and make a few small adjustments. This may seem like it wouldn't work, but let's consider what is different about the Express app and the Azure Functions app. Here are some main differences in the services.
 
 1. The Express app uses the npm package **express** while the Azure Functions app uses the npm package **@azure/functions**

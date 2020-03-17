@@ -1,5 +1,3 @@
-## Debug Node Express and Angular
-
 Now it's time to run the app and see if it all works! We'll do this through the VS Code debugger.
 
 > Just to keep things separate, we'll make sure the Express app uses port **7070** and the Azure Functions app uses port **7071**. If we were truly removing the Express app (which we could absolutely do at this point) we could keep the same port. But for educational purposes, let's keep them both around

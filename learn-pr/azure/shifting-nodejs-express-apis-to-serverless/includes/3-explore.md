@@ -40,7 +40,3 @@ The entry point is the _server/index.ts_ file which runs the _server.ts_ code to
 For example, when the client app makes a HTTP GET to the _/heroes_ route, the route executes the logic in the _/services/hero.service.ts_ file to get the heroes.
 
 Feel free to explore the code for the Express logic in the _server_ folder on your own.
-
-Here is a screen capture of the running application.
-
-![Tour of Heroes](https://thepracticaldev.s3.amazonaws.com/i/bp83wqpwc4ne6lot6x8d.jpg)
