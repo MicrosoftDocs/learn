@@ -20,7 +20,7 @@ quiz:
 # content: "Arrange the various entities of an HBase table in *decreasing* order of size in the HBase hierarchy:"
 
 # Did I Get This block 2 question 1
-  - content: "How does Apache HBase tolerate regionserver failures?"
+  - content: "How does Apache HBase tolerate region server failures?"
     choices:
     - content: "HBase always replicates each row when inserted to multiple region servers to provide redundancy."
       isCorrect: false

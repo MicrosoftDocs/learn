@@ -8,7 +8,7 @@
 - HBase is not fully ACID compliant, particularly with operations that span rows. In such cases, subsequent requests for data from HBase can return stale data.
 - HBase is best suited for big-data storage and supports fast access to multiple rows for aggregations. Multiple interfaces allow for connectivity to MapReduce and to<!-- or for --> Web applications.
 - HBase does not support joins, and its consistency model must be considered<!-- taken into account --> while designing applications.
-- MongoDB is a document store that stores doucuments in collections.
+- MongoDB is a document store that stores documents in collections.
 - MongoDB stores data internally using the Binary JSON (BSON) format.
 - MongoDB can be scaled to multiple clusters using replication and sharding.
 - MongoDB is popular for applications that require scale-out, have the need for fast, bulk writes, as well as data that needs to have geo-spatial indices.

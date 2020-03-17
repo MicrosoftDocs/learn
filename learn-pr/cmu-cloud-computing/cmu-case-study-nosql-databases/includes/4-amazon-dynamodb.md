@@ -35,7 +35,7 @@ Amazon's DynamoDB is based on the Dynamo architecture.<sup>[1][^1]</sup> Amazon 
 
 ### Consistency in dynamoDB
 
-Data stored in DynamoDB tables are replicated across 3 Amazon data centers to ensure that data is not lost in the event of a data-center wide failure. DynamoDB gives users the option to specify the consistency of read operation. By default, all reads as **eventually consistent** and may not reflect the results of a recently completed write. If the application requires strong consistency, that can be specified when making the read request to DynamoDB; this results in a performance hit as multiple replicas may have to consulted before the result of a read can be sent back to the client, but all prior writes that were successfully completed will be reflected in the read operation.
+Data stored in DynamoDB tables are replicated across 3 Amazon data centers to ensure that data is not lost in the event of a data-center wide failure. DynamoDB gives users the option to specify the consistency of read operation. By default, all reads as **eventually consistent** and may not reflect the results of a recently completed write. If the application requires strong consistency, that can be specified when making the read request to DynamoDB. This results in a performance hit as multiple replicas may have to be consulted before the result of a read can be sent back to the client, but all prior writes that were successfully completed will be reflected in the read operation.
 
 ### DynamoDB use cases
 

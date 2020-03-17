@@ -14,8 +14,8 @@
 - Ceph is a storage system designed for cloud applications. Ceph is based on a distributed object store with services layered on top of it.
 - At the core of Ceph is RADOS, a self-managing cluster of object store daemons (OSDs) and monitor nodes. The nodes use advanced techniques to be self-managing, fault-tolerant and scalable.
 - An object in RADOS is hashed to a placement group and is then associated to an OSD using the CRUSH algorithm.
-- RADOS can be accessed through librados, a native RADOS client that works with different programming languages.
-- Applications can also access data in RADOS as Objects thorugh the Rados Gateway, which supports the S3 and Swift protocols through a REST interface.
+- RADOS can be accessed through **librados**, a native RADOS client that works with different programming languages.
+- Applications can also access data in RADOS as Objects through the RADOS Gateway, which supports the S3 and Swift protocols through a REST interface.
 - RADOS can also export block storage devices through the use of RBD. These can be used as disk images for virtual machines.
 - Ceph FS is a filesystem layered over RADOS. This is achieved through the use of special Metadata nodes which keep track of the filesystem metadata. Metadata nodes partition the filesystem tree dynamically through a special algorithm. Metadata entries are also journaled to RADOS for fault-tolerance.
 <!-- Commented on 1/18/2018 to merge quizzes 8 and 9 <section> <title>Cloud Storage Quiz</title> <body> <p>This checkpoint will test your understanding of the material you have learned in this unit.</p> <activity idref="u04_quiz_02" purpose="checkpoint"/> </body> </section> -->

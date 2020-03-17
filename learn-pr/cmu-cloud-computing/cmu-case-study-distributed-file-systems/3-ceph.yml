@@ -20,7 +20,7 @@ quiz:
     choices:
     - content: "Distributed file system"
       isCorrect: false
-      explanation: "Incorrect. While Ceph can be used as a distributed file sytem thorugh CephFS, its core element is not a distributed file system. What kind of system is RADOS?"
+      explanation: "Incorrect. While Ceph can be used as a distributed file system through CephFS, its core element is not a distributed file system. What kind of system is RADOS?"
     - content: "Block storage system"
       isCorrect: false
       explanation: "Incorrect. While a layer called RBD can be used to export block storage devices from Ceph, it is not a block storage system at its core. What kind of system is RADOS?"      
@@ -41,4 +41,4 @@ quiz:
       explanation: "Incorrect. Are these the only APIs available to interact with a Ceph storage cluster? There is a lower level API that can be used to interact with Ceph. "
     - content: "False"
       isCorrect: true
-      explanation: "Correct! The librados library allows developers to interact with a Ceph storage cluster at the lowest (object) level."
+      explanation: "Correct! The **librados** library allows developers to interact with a Ceph storage cluster at the lowest (object) level."

@@ -6,13 +6,13 @@ The adage "use the right tool for the job" is appropriate because<!-- here. --> 
 
 NoSQL databases are not a good fit in situations in which the data is fairly well structured and defined and may not exceed a few gigabytes or terabytes in size. Most NoSQL databases rely on a large number of machines organized as a cluster to process data in parallel. As an example, if HBase or Cassandra is run on a single node, the performance of either may not match that of MySQL or any other RDMBS product.
 
-A good example of a nonrelational database that is a good fit for NoSQL databases is a web table,as shown in the following figure. A we table is a data structure that holds results of a web crawl. A web crawl is the process of visiting a list of web pages and following the links in them in order to catalog and index the information that is contained in a web site. 
+A good example of a nonrelational database that is a good fit for NoSQL databases is a webtable,as shown in the following figure. A we table is a data structure that holds results of a web crawl. A web crawl is the process of visiting a list of web pages and following the links in them in order to catalog and index the information that is contained in a web site. 
 
-![NoSQL web table](../media/nosql-web-table.png)
+![NoSQL webtable](../media/nosql-web-table.png)
 
-_Figure 1: NoSQL web table_
+_Figure 1: NoSQL webtable_
 
-Each unique URL in a web crawl can be stored as a row in a webtable, with the URL being the unique identifying characteristic of that row, which makes the URL<!-- hence being --> the key. The columns of the web table can store the binary content and metadata of the URL. As the webtable is parsed, new columns can be added with semantic information derived from the HTML content, such as the links of other pages in the URL object, and any other information. The webtable can also act as the database back end for a web archive service, such as an Internet archive, and hence clients can directly retrieve objects using the URL as the key.
+Each unique URL in a web crawl can be stored as a row in a webtable, with the URL being the unique identifying characteristic of that row, which makes the URL<!-- hence being --> the key. The columns of the webtable can store the binary content and metadata of the URL. As the webtable is parsed, new columns can be added with semantic information derived from the HTML content, such as the links of other pages in the URL object, and any other information. The webtable can also act as the database back end for a web archive service, such as an Internet archive, and hence clients can directly retrieve objects using the URL as the key.
 
 Creating a webtable for a few URLs may be a simple task that can be handled by a traditional RDBMSs, but when billions of websites need to be crawled and their information has to be stored in a table that may be accessed by hundreds of thousands of <!-- simultaneous -->clients simultaneously, then the data store is best maintained on a large cluster using a NoSQL solution.
 
