@@ -8,10 +8,10 @@ The application is a conventional Node.js and Express API that serves the follow
 
 | methods | route endpoints |
 | ------- | --------------- |
-| GET     | vacations       |
-| POST    | vacations       |
-| PUT     | vacations:id    |
-| DELETE  | vacations/:id   |
+| GET     | `vacations`     |
+| POST    | `vacations`     |
+| PUT     | `vacations:id`  |
+| DELETE  | `vacations/:id` |
 
 The structure of the Node Express app is straight-forward and contained in the _server_ folder.
 
@@ -29,7 +29,7 @@ server
  | - tsconfig.json
 ```
 
-The entry point is the _server/index.ts_ file, which runs the _server.ts_ code to start the Express server. Then the routes (such as /vacations) are then loaded from the _/routes_ folder. These routes execute the appropriate code in the _/services_ folder. The _data.ts_ file is where the app defines the data store configuration.
+The entry point is the _server/index.ts_ file, which runs the _server.ts_ code to start the Express server. Then the routes (such as `/vacations`) are then loaded from the _/routes_ folder. These routes execute the appropriate code in the _/services_ folder. The _data.ts_ file is where the app defines the data store configuration.
 
 For example, when the client app makes an HTTP GET to the _/vacations_ route, the route executes the logic in the _/services/vacation.service.ts_ file to get the vacations.
 
