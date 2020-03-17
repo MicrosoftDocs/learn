@@ -3,12 +3,13 @@ uid: learn.wwl.use-compute-contexts-in-aml.introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: Introduction
+  description: "Introduction"
   ms.date: 02/10/2020
-  author: GraemeMalcolm
+  author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+azureSandbox: false
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]

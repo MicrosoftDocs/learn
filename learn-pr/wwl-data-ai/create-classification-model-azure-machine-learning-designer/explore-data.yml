@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-classification-model-with-azure-machine-learning-designer.explore-data
+title: Explore data
+metadata:
+  title: Explore data
+  description: "How do you know if a classification model is accurate? Learn how to evaluate classification performance in this unit."
+  ms.date: 03/13/2020
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-explore-data.md)]

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-regression-model-azure-machine-learning-designer.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "What is regression? Find out in this unit."
+  ms.date: 03/13/2020
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

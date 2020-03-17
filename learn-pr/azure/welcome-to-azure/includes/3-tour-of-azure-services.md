@@ -139,7 +139,7 @@ There are a number of services that can assist and drive end-to-end solutions fo
 > | Service Name | Description |
 > |--------------|-------------|
 > | IoT Central | Fully-managed global IoT software as a service (SaaS) solution that makes it easy to connect, monitor, and manage your IoT assets at scale |
-> | Azure IoT Hub | Messaging hub that provides secure communications and monitoring between millions of IoT devices |
+> | Azure IoT Hub | Messaging hub that provides secure communications between and monitoring of millions of IoT devices |
 > | IoT Edge | Push your data analysis models directly onto your IoT devices, allowing them to react quickly to state changes without needing to consult cloud-based AI models.
 
 ### Big Data

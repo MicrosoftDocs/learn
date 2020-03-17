@@ -3,12 +3,13 @@ uid: learn.wwl.use-compute-contexts-in-aml.compute-targets
 title: Introduction to compute targets
 metadata:
   title: Introduction to compute targets
-  description: Learn how to create Azure Machine Learning compute targets.
+  description: "How to create Azure Machine Learning compute targets."
   ms.date: 02/10/2020
-  author: GraemeMalcolm
+  author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+azureSandbox: false
 durationInMinutes: 5
 content: |
   [!include[](includes/3-compute-targets.md)]

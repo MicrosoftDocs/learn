@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.tm-prioritize-your-issues-and-apply-security-controls
+metadata:
+  title: Prioritize your issues and apply security controls
+  description: Threat modeling provides you with a list of threats and ways to reduce or eliminate risk, but it doesn't prioritize them for you. Also, there are no layered security control recommendations based on their type and function.
+  ms.date: 02/28/2020
+  author: rodsan
+  ms.author: rodsan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-threat-modeling
+title: Prioritize your issues and apply security controls
+summary: Threat modeling provides you with a list of threats and ways to reduce or eliminate risk, but it doesn't prioritize them for you. Also, there are no layered security control recommendations based on their type and function.
+abstract: |
+  In this module, you will be able to:
+  - Prioritize your issues
+  - Categorize security controls
+  - Understand each security control type and function
+prerequisites: None
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- administrator
+- developer
+- devops-engineer
+- security-engineer
+- solution-architect
+products:
+- azure-iot-security-center
+- azure-security-center
+- m365-security-center
+- m365-ems-cloud-app-security
+units:
+- learn.tm-prioritize-your-issues-and-apply-security-controls.1-introduction
+- learn.tm-prioritize-your-issues-and-apply-security-controls.1b-priorities-types-and-functions
+- learn.tm-prioritize-your-issues-and-apply-security-controls.2-prioritize-security-issues
+- learn.tm-prioritize-your-issues-and-apply-security-controls.3-categorize-each-security-control-type
+- learn.tm-prioritize-your-issues-and-apply-security-controls.5-summary
+badge:
+  uid: learn.tm-prioritize-your-issues-and-apply-security-controls.badge

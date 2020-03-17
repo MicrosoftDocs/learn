@@ -2,7 +2,7 @@ If you have questions around Azure services or curious about its capabilities, w
 
 ## Azure free support resources
 
-You have 24/7 access to the online documentation, community support, and new Azure capabilities demo videos on YouTube channel. Created by Azure engineers, these demo videos are available on Azure Friday, Microsoft Mechanics, and Azure portal how-to videos playlists. As an Azure customer, the following free support resources are available to you as well.
+You have 24/7 access to the online documentation, community support, and new Azure capabilities demo videos on YouTube. Created by Azure engineers, these demo videos are available on Azure Friday, Microsoft Mechanics, and Azure portal how-to videos playlists. As an Azure customer, the following free support resources are available to you as well.
 
 - Billing and subscription management support
 - Azure Quickstart Center, a guided experience in the Azure portal available to anyone who wants to improve their knowledge of Azure
@@ -22,6 +22,8 @@ Azure offers customers reactive and proactive technical support. Choose the supp
 > | Best for |Non-critical workloads |Production workloads |Business-critical workloads |
 > | Reactive technical support | 1 business day response |1-hour response for critical cases |1-hour response + priority tracking of critical cases |
 > | Proactive technical support |  Not applicable | Not applicable  | Access to a pool of technical experts |
+
+For the full list, see [Azure support plans](https://azure.microsoft.com/support/plans/).
 
 ## Azure community support
 

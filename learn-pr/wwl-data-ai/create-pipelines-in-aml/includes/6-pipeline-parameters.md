@@ -1,6 +1,6 @@
 You can increase the flexibility of a pipeline by defining parameters.
 
-## Defining Parameters for a Pipeline
+## Defining parameters for a pipeline
 
 To define parameters for a pipeline, create a **PipelineParameter** object for each parameter, and specify each parameter in at least one step.
 
@@ -21,10 +21,10 @@ step2 = EstimatorStep(name = 'train model',
                                                         '--reg', reg_param])
 ```
 
-> [NOTE!]
+> [!NOTE]
 > You must define parameters for a pipeline before publishing it.
 
-## Running a Pipeline with a Parameter
+## Running a pipeline with a parameter
 
 After you publish a parameterized pipeline, you can pass parameter values in the JSON payload for the REST interface:
 
