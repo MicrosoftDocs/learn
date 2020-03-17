@@ -12,4 +12,4 @@ metadata:
 durationInMinutes: 80
 azureSandbox: false
 content: |
-  [!include[](includes/4-exercise-identify-and-resolve-inbound-network-connectivity.md)]
+  [!include[](includes/5-exercise-identify-and-resolve-inbound-network-connectivity.md)]
