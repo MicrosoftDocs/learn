@@ -8,21 +8,21 @@ At the end of this unit, you'll be sending and receiving telemetry.
 
 1. In the opened terminal, create an empty folder where you'll develop your code, called "cheesecave", by entering `mkdir cheesecave`. Then, navigate to that folder with `cd cheesecave`.
 
-1. From the **File** menu, create a new file. Insert a single line as a comment, such as `// Cheese Cave device app`. Save the file to the "cheesecave" folder (locating this folder might involve a bit of navigation), with the name "app.js". By using the .js file extension, Visual Studio Code interprets this file as JavaScript and evaluates the contents with the JavaScript language service.
+1. From the **File** menu, create a new file. Insert a single line as a comment, such as `// Cheese Cave device app`. Save the file to the `cheesecave` folder (locating this folder might involve a bit of navigation), with the name `app.js`. By using the .js file extension, Visual Studio Code interprets this file as JavaScript and evaluates the contents with the JavaScript language service.
 
 1. Back in the terminal, install the required libraries. Enter:
     * **npm install azure-iot-device**
     * **npm install azure-iot-device-mqtt**
     * **npm install chalk**
 
-1. After you've entered the code below into the **app.js** file, you can run it from the terminal by entering `node app.js`. Ensure that the cheesecave folder is the current folder of the terminal, when you run the app.
+1. After you've entered the code below into the **app.js** file, you can run it from the terminal by entering `node app.js`. Ensure that the `cheesecave` folder is the current folder of the terminal, when you run the app.
 
 ::: zone-end
-:::    zone pivot="vscode-csharp"
-    
-1.     o use C# in Visual Studio Code, ensure both [.NET Core](https://dotnet.microsoft.com/download), and the [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp) are installed.
+::: zone pivot="vscode-csharp"
 
-1. Open a terminal in Visual Studio Code, and create a folder called "cheesecavedevice" (enter `mkdir cheesecavedevice`). Navigate to the cheesecavedevice folder.
+1. To use C# in Visual Studio Code, ensure both [.NET Core](https://dotnet.microsoft.com/download), and the [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp) are installed.
+
+1. Open a terminal in Visual Studio Code, and create a folder called "cheesecavedevice" (enter `mkdir cheesecavedevice`). Navigate to the `cheesecavedevice` folder.
 
 1. Enter the following command in the terminal: `dotnet new console`. This command creates a **Program.cs** file in your folder, along with a project file.
 
@@ -35,7 +35,7 @@ At the end of this unit, you'll be sending and receiving telemetry.
 
 1. From the **File** menu, open up the **Program.cs** file, and delete the default contents.
 
-1. After you've entered the code below into the **Program.cs** file, you can run the app with the command `dotnet run`. This command will run the **Program.cs** file in the current folder, so ensure you are in the cheesecavedevice folder.
+1. After you've entered the code below into the **Program.cs** file, you can run the app with the command `dotnet run`. This command will run the **Program.cs** file in the current folder, so ensure you are in the `cheesecavedevice` folder.
 
 ::: zone-end
 ::: zone pivot="vs-node"
@@ -51,7 +51,7 @@ At the end of this unit, you'll be sending and receiving telemetry.
 
     [![Screenshot showing how to install npm packages into your Visual Studio project](../media/cheesecave-vs-npm.png)](../media/cheesecave-vs-npm.png#lightbox)
 
-1. Delete the default contents of the **app.js** file. Add the line `// Cheese Cave device app`.
+1. Delete the default contents of the **app.js** file.
 
 1. When you've entered the code below, you'll be able to run the app with the **Start Without Debugging**, or **Start Debugging**, options. In the latter case, you can set breakpoints, examine data, and do other debugging tasks.
 
@@ -199,7 +199,7 @@ This section adds code to send telemetry from a simulated device. The device sen
     > [!NOTE]
     > Read through the comments in the code, noting how the temperature and humidity settings from the description of the scenario in the introduction have worked their way into the code.
 
-1. Replace the &lt;your device connection string&gt; with the device connection string you saved off in the previous unit. No other lines of code need to be changed.
+1. Replace the `<your device connection string>` with the device connection string you saved off in an earlier unit. No other lines of code need to be changed.
 
 1. Save the **app.js** file.
 
@@ -366,7 +366,7 @@ This section adds code to send telemetry from a simulated device. The device sen
     > [!NOTE]
     > Read through the comments in the code, noting how the temperature and humidity settings from the description of the scenario in the introduction have worked their way into the code.
 
-1. Replace the &lt;your device connection string&gt; with the device connection string you saved off in the previous unit. No other lines of code need to be changed.
+1. Replace the `<your device connection string>` with the device connection string you saved off in an earlier unit. No other lines of code need to be changed.
 
 1. Save the **Program.cs** file.
 
@@ -395,18 +395,18 @@ Now we have a device pumping out telemetry, we need to listen for that telemetry
 
 1. In the opened terminal, create an empty folder where you'll develop your code, called "cheesecaveservice", by entering `mkdir cheesecaveservice`. Then, navigate to that folder with `cd cheesecaveservice`.
 
-1. From the **File** menu, create a new file. Insert a single line as a comment, such as `// Cheese Cave back-end service app`. Save the file to the "cheesecaveservice" folder (locating this folder might involve a bit of navigation), with the name "app.js".
+1. From the **File** menu, create a new file. Insert a single line as a comment, such as `// Cheese Cave back-end service app`. Save the file to the `cheesecaveservice` folder (locating this folder might involve a bit of navigation), with the name `app.js`.
 
 1. Back in the terminal, enter the following commands:
     * **npm install azure-iothub**
     * **npm install chalk**
 
-1. After you've entered the code below into the **app.js** file, you can run it from the terminal by entering `node app.js`. Ensure that the "cheesecaveservice" folder is the current folder of the terminal.
+1. After you've entered the code below into the **app.js** file, you can run it from the terminal by entering `node app.js`. Ensure that the `cheesecaveservice` folder is the current folder of the terminal.
 
 ::: zone-end
 ::: zone pivot="vscode-csharp"
 
-1. Open a terminal in Visual Studio Code, and create a folder called "cheesecaveoperator" (enter `mkdir cheesecaveoperator`). Navigate to the cheesecaveoperator folder.
+1. Open a terminal in Visual Studio Code, and create a folder called "cheesecaveoperator" (enter `mkdir cheesecaveoperator`). Navigate to the `cheesecaveoperator` folder.
 
 1. Enter the following command in the terminal: `dotnet new console`. This command creates a **Program.cs** file in your folder, along with a project file.
 
@@ -430,7 +430,7 @@ Now we have a device pumping out telemetry, we need to listen for that telemetry
     * **azure-iothub**
     * **chalk**
 
-1. Delete the default contents of the **app.js** file. Add a comment line such as `// Cheese Cave Operator back-end app`.
+1. Delete the default contents of the **app.js** file.
 
 1. When you've entered the code below, you'll be able to run the app with the **Start Without Debugging**, or **Start Debugging**, options.
 
@@ -534,7 +534,7 @@ Now we have a device pumping out telemetry, we need to listen for that telemetry
     > [!NOTE]
     > Our implementation only reads messages after the app has been started. Any telemetry sent prior to this isn't handled.
 
-1. Replace the &lt;your service connection string&gt; with the _service_ connection string you saved off in a text file, in the previous unit.
+1. Replace the `<your service connection string>` with the _service_ connection string you saved off in a text file, in an earlier unit.
 
 1. Replace the `const deviceId` if you did not use the suggested "CheeseCaveID".
 
@@ -654,9 +654,9 @@ Now we have a device pumping out telemetry, we need to listen for that telemetry
     > [!NOTE]
     > Our implementation only reads messages after the back-end app has been started. Any telemetry sent prior to this isn't handled.
 
-1. Replace the &lt;your service connection string&gt; with the _service_ connection string you saved off in a text file, in the previous unit.
+1. Replace the `<your service connection string>` with the _service_ connection string you saved off in a text file, in an earlier unit.
 
-1. Replace the &lt;your event hub endpoint&gt;, &lt;your event hub path&gt;, and the &lt;your event hub Sas key&gt; with the strings you saved off to your text file.
+1. Replace the `<your event hub endpoint>`, `<your event hub path>`, and the `<your event hub Sas key>` with the strings you saved off to your text file.
 
 1. Save the **Program.cs** file.
 
