@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.cmu-cloud-computing.how-cloud-works.cmu-virtualization-case-studies.2-elastic-compute
-title: Amazon Elastic Compute Cloud (Amazon EC2)
+title: EC2 compute
 metadata:
-  title: Amazon Elastic Compute Cloud
+  title: EC2 compute
   description: Amazon Elastic Compute Cloud (Amazon EC2)
   ms.date: 03/20/2020
   author: shanamatthews

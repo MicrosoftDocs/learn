@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.cmu-cloud-computing.how-cloud-works.cmu-virtualize-input-output.3-xen-virtualization
-title: Xen Project's approach to I/O virtualization
+title: How Xen does I/O virtualization
 metadata:
-  title: Xen Project's approach to I/O virtualization
-  description: Xen Project's approach to I/O virtualization
+  title: How Xen does I/O virtualization
+  description: How Xen does I/O virtualization
   ms.date: 03/20/2020
   author: shanamatthews
   ms.author: shanama

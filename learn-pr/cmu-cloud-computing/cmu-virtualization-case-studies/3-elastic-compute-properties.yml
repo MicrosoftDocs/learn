@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.cmu-cloud-computing.how-cloud-works.cmu-virtualization-case-studies.3-elastic-compute-properties
-title: Amazon EC2 properties
+title: EC2 properties
 metadata:
-  title: Amazon EC2 properties
+  title: EC2 properties
   description: Amazon EC2 properties
   ms.date: 03/20/2020
   author: shanamatthews

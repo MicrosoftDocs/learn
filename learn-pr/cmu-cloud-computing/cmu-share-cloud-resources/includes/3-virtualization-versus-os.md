@@ -16,6 +16,4 @@ _Figure 4: Traditional operating systems and popular hypervisors along the effic
 
 1. _Soltesz et al. (2007). [Container-Based Operating System Virtualization: A Scalable, High-Performance Alternative to Hypervisors](https://dl.acm.org/citation.cfm?id=1273025)  In ACM SIGOPS Operating Systems Review (Vol. 41, No. 3, pp. 275-287), ACM_
 
-***
-
 [^1]: <https://dl.acm.org/citation.cfm?id=1273025> "Soltesz et al. (2007). *Container-Based Operating System Virtualization: A Scalable, High-Performance Alternative to Hypervisors* In ACM SIGOPS Operating Systems Review (Vol. 41, No. 3, pp. 275-287), ACM"

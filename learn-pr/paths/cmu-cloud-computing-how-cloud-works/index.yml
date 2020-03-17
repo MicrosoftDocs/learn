@@ -1,7 +1,7 @@
 ### YamlMime:LearningPath
 uid: learn.cmu-cloud-computing.how-cloud-works
 metadata:
-  title: How the cloud works for cloud developers
+  title: Virtualization - Sharing cloud resources
   description: Carnegie Mellon University's Cloud Developer course. Dive deeper into how the cloud works by understanding virtualization. How are computing power, memory, input and output, networking, and storage virtualized?
   brand: azure
   ms.date: 03/20/2020
@@ -10,7 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   showCreativeCommonsFooter: true
-title: How the cloud works for cloud developers
+title: Virtualization - Sharing cloud resources
 summary: |
   Dive deeper into how the cloud works by understanding virtualization. How are computing power, memory, input and output, networking, and storage virtualized?
 
