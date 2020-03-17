@@ -9,6 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Sample Learn Module
+hidden: true
 summary: Sample Learn Module
 abstract: Sample Learn Module
 prerequisites: /
