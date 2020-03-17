@@ -13,12 +13,10 @@ Let's start by getting the code and setting up the development environment. Foll
 
 1. Make a copy of the _env.example_ file named _.env_, in the root of the project. It should contain the following code.
 
-_.env_
-
-```
-NODE_ENV=development
-PORT=7070
-WWW=./
-```
+   ```
+   NODE_ENV=development
+   PORT=7070
+   WWW=./
+   ```
 
 > Environment Variables: Applications may have very important environment variables located in the root in _.env_ file. This file is not checked into GitHub because it may contain sensitive information.

@@ -15,17 +15,17 @@ The application is a conventional Node.js and Express API that serves the follow
 
 The structure of the Node Express app is straight-forward and contained in the _server_ folder.
 
-```text
+```files
 server
  | - routes
  | | - vacation.routes.ts  👈 The vacation routes
  | | - index.ts
  | - services
- | | - data.ts         👈 The vacation data (could be database API calls)
+ | | - data.ts             👈 The vacation data (could be database API calls)
  | | - vacation.service.ts 👈 The logic to get the vacation data
  | | - index.ts
  | - index.ts
- | - server.ts         👈 The Express server
+ | - server.ts             👈 The Express server
  | - tsconfig.json
 ```
 
