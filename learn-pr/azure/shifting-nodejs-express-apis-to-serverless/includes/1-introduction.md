@@ -1,6 +1,6 @@
-Consider the following scenario. Your company has a website that provides access to vacation planning to their customers. Your customers will add, edit, update and remove their vacation plans from wish list. All of the data requests use standard HTTP requests to your API server. Your API server is critical to the success of the application. The APIs are hosted on a server running Node.js and Express.js, which is common for many companies.
+Consider the following scenario. Your company has a website that provides access to vacation planning to their customers. Your customers will view, edit, add, and remove their vacation plans from wish list. All of the data requests use standard HTTP requests to your API server. Your API server is critical to the success of the application. The APIs are hosted on a server running Node.js and Express.
 
-Your company wants your Express application to go, live, so you need to deploy it to a server. You'll need to maintain your application. You'll need to scale it up and down as needed. And you'll also need to budget for the cost.
+Your company wants your application to go live, so you need to deploy it to a server. You'll need to maintain your application. You'll need to scale it up and down as needed. And you'll also need to budget for the cost.
 
 What if you could reduce some of these burdens without rewriting your entire API? You can shift the API to a serverless model using Azure Functions and gain many benefits for this scenario. You'll gain many benefits with serverless: no server to maintain, reduced cost, and your application will scale up and down when needed. Plus, you may write less code!
 
@@ -35,9 +35,9 @@ Before you shift your Express.js APIs to the serverless model, you should consid
 
 Your Express application requires a server, which you must configure, maintain, and scale. You'll have a cost associated with deploying your server, too. Serverless eases some of this effort and cost for you.
 
-You'll import a series of middleware and write your logic to start your Express.js server. Azure Functions starts up with no additional code. What does this mean to you, in a concrete example? Well, when using Azure Functions the _server.ts_ file that you write in your Express.js application effectively goes away.
+You'll import a series of middleware and write your logic to start your Express.js server. Azure Functions starts up with no additional code. What does this mean to you, in a concrete example? Well, when using Azure Functions the _server.ts_ file that you write in your Express application effectively goes away.
 
-When you why make this shift? Overall there's less to think about with serverless.
+Why would you make this shift? Overall there's less to think about with serverless.
 
 ## About the Project You'll Build
 
