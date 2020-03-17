@@ -59,13 +59,13 @@ groups:
     - id: portal
       title: Azure portal
 - id: subscription-type
-  title: Environment
-  prompt: Choose your execution environment
+  title: Subscription Type
+  prompt: Choose subscription type
   pivots:
-    - id: sandbox-subscription
-      title: Azure Sandbox
+    - id: hosted-subscription
+      title: Hosted
     - id: personal-subscription
-      title: Personal Azure Subscription
+      title: Personal
 - id: dev-lang-csharp-javascript
   title: Development language
   prompt: Choose your development language

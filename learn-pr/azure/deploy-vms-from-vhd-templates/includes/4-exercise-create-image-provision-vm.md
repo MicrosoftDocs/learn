@@ -24,7 +24,7 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
 
 ::: zone-end
 
-::: zone pivot="sandbox-subscription"
+::: zone pivot="hosted-subscription"
 
 1. Activate the Cloud Shell window on the right by signing into the Azure Sandbox.
 
@@ -124,7 +124,7 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
 
 ::: zone-end
 
-::: zone pivot="windows-cloud, sandbox-subscription"
+::: zone pivot="windows-cloud, hosted-subscription"
 
 1. On the Azure portal menu or from the **Home** page, select **Resource groups**, and then select the **<rgn>[Sandbox resource group name]</rgn>** resource group.
 
