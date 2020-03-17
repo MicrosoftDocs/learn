@@ -1,33 +1,16 @@
-Consider the following scenario. Your company has a website that provides access to vacation planning to their customers. Your customers will view, edit, add, and remove their vacation plans from wish list. All of the data requests use standard HTTP requests to your API server. Your API server is critical to the success of the application. The APIs are hosted on a server running Node.js and Express.
+Consider the following scenario. Your company has a website that provides access to vacation planning to their customers. Your customers will view, edit, add, and remove their vacation plans from wish list. All of the data requests use standard HTTP requests to your API server, running Node.js and Express. Your API server is critical to the success of the application.
 
-Your company wants your application to go live, so you need to deploy it to a server. You'll need to maintain your application. You'll need to scale it up and down as needed. And you'll also need to budget for the cost.
+Your company wants your application to go live, so you need to deploy it to a server. You'll need to maintain your application. You'll need to scale it up and down as needed. And you'll also need to budget for the cost. There is a lot for you to think about!
 
 What if you could reduce some of these burdens without rewriting your entire API? You can shift the API to a serverless model using Azure Functions and gain many benefits for this scenario. You'll gain many benefits with serverless: no server to maintain, reduced cost, and your application will scale up and down when needed. Plus, you may write less code!
 
 Your objective in this module is to refactor your Node.js and Express APIs from a server-based architecture to serverless APIs with Azure Functions.
 
-## Learning objectives
+## Learning objective
 
-You'll start by exploring and running the Node and Express APIs in the sample project. Then you'll create an Azure Functions application followed by refactoring the Express routes and data calls to the Azure Functions application. Finally, you'll explore the results.
+You'll start by exploring and running the Node and Express APIs in the sample project. Then you'll create an Azure Functions application followed by refactoring the Express routes and data calls to the Azure Functions application. Finally, you'll explore and launch your application, as shown below.
 
-In this module, you will:
-
-- Establish an Application Programming Interfaces (API).
-- Evaluate an existing project that implements Express APIs.
-- Create a new Azure Functions application.
-- Refactor the Express APIs to the Azure Functions application.
-- Run and debug the application locally.
-- Understand the differences and similarities in refactoring Express APIs to Azure Functions.
-
-## Pre-requisites
-
-- Must have some knowledge of JavaScript
-- Must have some familiarity with Node.js and Express APIs
-- Must have some familiarity with Azure Functions
-- Must have [Node.js](https://nodejs.org/en/) installed
-- Must have [Visual Studio Code](https://code.visualstudio.com/) installed
-- Must have [Azure Functions Core Tools](https://github.com/Azure/azure-functions-core-tools) installed
-- Must have the [Azure Functions](https://marketplace.visualstudio.com/items?itemName=ms-azuretools. vscode-azurefunctions) extension installed
+![Vacation Wish List sample application](../media/vacation-wish-list-app.png)
 
 ## Planning the Shift to Serverless
 

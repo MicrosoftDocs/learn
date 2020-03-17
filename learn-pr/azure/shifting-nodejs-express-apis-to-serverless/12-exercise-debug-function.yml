@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.shift-express-api-azure-functions.12-exercise-debug-function
 metadata:
-  title: Debug Node Express and Angular
-  description: Debug Node Express and Angular
+  title: Exercise - Debug Node Express and Angular
+  description: Exercise - Debug Node Express and Angular
   ms.date: 03/20/20
   author: johnpapa
   ms.author: jopapa
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-title: Debug Node Express and Angular
+title: Exercise - Debug Node Express and Angular
 durationInMinutes: 3
 content: |
   [!include[](includes/12-exercise-debug-function.md)]
