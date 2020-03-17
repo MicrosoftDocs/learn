@@ -22,7 +22,7 @@ prerequisites: |
   - Must have some knowledge of JavaScript
   - Must have some familiarity with Node.js and Express APIs
   - Must have some familiarity with Azure Functions
-  - Must have [Node.js](https://nodejs.org/en/) installed
+  - Must have [Node.js](https://nodejs.org/) installed
   - Must have [Visual Studio Code](https://code.visualstudio.com/) installed
   - Must have [Azure Functions Core Tools](https://github.com/Azure/azure-functions-core-tools) installed
   - Must have the [Azure Functions](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions) extension installed
