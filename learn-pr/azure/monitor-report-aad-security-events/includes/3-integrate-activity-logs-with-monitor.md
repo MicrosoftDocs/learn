@@ -130,7 +130,7 @@ There are many other commands you can use to build your queries. Check the Micro
 
 Suppose you wanted to know the most used applications requested and signed in to over the last week. Your query would look something like this:
 
-```SQL
+```kusto
 SigninLogs
 | where CreatedDataTime >= ago(7d)
 | summarize signInCount = count() by AppDisplayName
@@ -139,7 +139,7 @@ SigninLogs
 
 Or, if you wanted to see how many of your users were flagged as risky in the last fortnight, you'd use:
 
-```SQL
+```kusto
 SigninLogs
 | where CreatedDataTime >= ago(14d)
 | where isRisky == true
@@ -149,7 +149,7 @@ SigninLogs
 
 Now suppose you wanted to know the most common user event for the last week. You'd use a query like this:
 
-```SQL
+```kusto
 AuditLogs
 | where TimeGenerated >= ago(7d)
 | summarize auditCount = count() by OperationName
@@ -170,7 +170,7 @@ Suppose you want to be alerted when more than 10 applications are used in the pa
 
 You'd run the following query:
 
-```SQL
+```kusto
 SignInLogs
 | where CreatedDateTime >= ao(7d)
 | summarize signInCount = count() by AppDisplayName
