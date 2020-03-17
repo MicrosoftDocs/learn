@@ -54,7 +54,7 @@ This exercise is optional. To complete it, you need access to an Azure subscript
 
     This script takes up to 25 minutes to run.
 
-### Check resources created
+## Check resources created
 
 1. In the Azure portal, search for **Resource groups**.
 1. Select **learn-ts-loadbalancer-rg**.

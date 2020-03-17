@@ -104,11 +104,12 @@ The **PsPing** command tests *ping* connectivity through an endpoint. This comma
 ```CMD
 psping -n 100 -i 0 -q -h <ip address>:<port>
 ```
-
-- *-n* specifies the number of pings to do 
-- *-i* indicates the interval in seconds between iterations
-- *-q* suppresses output during the pings. Only a summary is shown at the end.
-- *-h* prints a histogram that shows the latency of the requests 
+|Flag| Description|
+|-|-|
+|*-n* |Specifies the number of pings to do.
+|*-i* |Indicates the interval in seconds between iterations.|
+|*-q* |Suppresses output during the pings. Only a summary is shown at the end.|
+|*-h*| Prints a histogram that shows the latency of the requests.|
 
 Typical output looks like this:
 

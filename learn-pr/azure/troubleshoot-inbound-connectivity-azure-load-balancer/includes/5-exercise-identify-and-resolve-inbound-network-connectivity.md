@@ -304,6 +304,7 @@ It seems that the *appretailvm2* virtual machine might not be handling requests 
 
 1. Press Enter to stop the application.
 
+## Issues you resolved
 
 In this exercise, you resolved the following issues:
 
