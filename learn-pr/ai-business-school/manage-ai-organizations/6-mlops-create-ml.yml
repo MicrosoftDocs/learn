@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn-wwl.manage-ai-organizations.mlops-creating-ml
+uid: learn-wwl.manage-ai-organizations.mlops-create-ml
 title: Start the machine learning lifecycle with MLOps
 metadata:
   title: Start the machine learning lifecycle with MLOps
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 1 
 content: |
-  [!include[](includes/6-mlops-creating-ml.md)] 
+  [!include[](includes/6-mlops-create-ml.md)] 

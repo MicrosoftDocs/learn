@@ -1,4 +1,4 @@
-This module provides Microsoft's perspective on how to manage AI-related processes and responsibilities in an organization. 
+This module provides Microsoft's perspective on how to manage AI-related processes and responsibilities in an organization. No prerequisites are required.
 
 **In this module, you will learn to:**
 

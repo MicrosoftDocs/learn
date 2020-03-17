@@ -20,7 +20,7 @@ With AI initiatives, you need to think like a venture capitalist. That means bei
       At Microsoft, we use a "horizon-based" framework to evaluate and prioritize AI investments. This groups AI projects into three "horizons," from improving core business functions to creating brand new revenue streams. The risk and uncertainty of specific applications depends on a company's level of AI maturity, size, business objectives, and more.
    :::column-end:::
    :::column span="":::
-      ![The horizon framework categorizes AI initiatives into three groups – running, growing, and transforming business.](../media/manage-ai-organizations1.png)
+      ![The horizon framework categorizes AI initiatives into three groups – running, growing, and transforming business.](../media/manage-ai-organizations-1.png)
    :::column-end:::
 :::row-end:::
 
@@ -71,7 +71,7 @@ For example, a chemical manufacturer could sell "fertilizer-as-a-service"—whic
       Scenarios that fall below the middle line help the organization survive more than thrive. They might address competitive and disruptive threats, improve operations, or empower employees in the organization. Scenarios above the middle line help companies create new value propositions, revenue streams, or business models.
    :::column-end:::
    :::column span="":::
-      ![The transformational framework helps map AI initiatives.](../media/manage-ai-organizations2.png)
+      ![The transformational framework helps map AI initiatives.](../media/manage-ai-organizations-2.png)
    :::column-end:::
 :::row-end:::
 
@@ -86,7 +86,7 @@ As you map initiatives, it's helpful to involve the CFO office and other stakeho
       We recommend this approach because it's helpful to grow capabilities and get buy-in before you move to more complex projects. You'll need to form technical teams that can prepare data properly and familiarize themselves with AI models. Starting with foundational initiatives also helps establish trust across the business and manage expectations related to AI initiatives. The success and value you're able to demonstrate in early initiatives pave the way for the more transformational projects.
    :::column-end:::
    :::column span="":::
-      ![The prioritization framework helps organizations choose where to start.](../media/manage-ai-organizations3.png)
+      ![The prioritization framework helps organizations choose where to start.](../media/manage-ai-organizations-3.png)
    :::column-end:::
 :::row-end:::
 

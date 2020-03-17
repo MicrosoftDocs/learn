@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn-wwl.manage-ai-organizations.managing-innovation-video
+uid: learn-wwl.manage-ai-organizations.manage-innovation-video
 title: Apply best practices for fueling innovation in your organization - Executive overview
 metadata:
   title: Apply best practices for fueling innovation in your organization - Executive overview
-  description: TBD  
+  description: Executive lecture of successful professional on enabling innovation in businesses.   
   ms.date: 05/28/2020
   author: RWortmanMorris
   ms.author: rawortma
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 1 
 content: |
-  [!include[](includes/3-managing-innovation-video.md)] 
+  [!include[](includes/3-manage-innovation-video.md)] 

@@ -20,7 +20,7 @@ These challenges are similar to what application development teams face when cre
 
 ## Typical ML lifecycle
 
-![The typical stages of the machine learning lifecycle are train, package, validate, deploy, monitor, and retrain.](../media/manage-ai-organizations4.png)
+![The typical stages of the machine learning lifecycle are train, package, validate, deploy, monitor, and retrain.](../media/manage-ai-organizations-4.png)
 
 1. **Train and test:** First, data scientists need to prepare training data. This is often the biggest time commitment in the lifecycle. Preparation includes standardizing the data so it's in a usable format and identifying discrete "features" or variables. For example, to predict credit risk, features might include customer age, account size, and account age. Next, they apply algorithms to the data to "train" a machine learning model. Then they test it with new data to see how accurate its predictions are.
 
@@ -38,7 +38,7 @@ These challenges are similar to what application development teams face when cre
 
 MLOps is the practice of collaboration among data scientists, ML engineers, app developers, and other IT teams to manage the ML lifecycle. MLOps processes and tools help those teams collaborate and provide visibility through shared, auditable documentation. MLOps technologies provide the ability to save and track changes to data sources, code, libraries, SDKs, and models. These technologies can also create efficiencies and accelerate the lifecycle with automation, repeatable workflows, and reusable assets. 
 
-![MLOps practices involve data scientists and IT professionals working together to ensure model reproducibility, validation, deployment, and retraining.](../media/manage-ai-organizations5.png)
+![MLOps practices involve data scientists and IT professionals working together to ensure model reproducibility, validation, deployment, and retraining.](../media/manage-ai-organizations-5.png)
 
 ### Model reproducibility
 
@@ -60,15 +60,6 @@ Before a model is deployed, it's critical to validate its performance metrics ag
 You may have several metrics that are used to indicate the "best" model. It's important to work with data scientists to understand what metrics are important and evaluate them before deployment. There are **tools to evaluate model metrics**, such as a loss function or a confusion matrix.
 
 If the model is a newer version of an existing model, you'll need to see if it performs better than the previous one on key metrics.
-
-:::row:::
-   :::column span="":::
-      ![Confusion matrix of an ML model with high accuracy.](../media/manage-ai-organizations6.png)
-   :::column-end:::
-   :::column span="":::
-      ![Confusion matrix of an ML model with high accuracy and high bias in model predictions.](../media/manage-ai-organizations7.png)
-   :::column-end:::
-:::row-end:::
 
 ### Model deployment
 

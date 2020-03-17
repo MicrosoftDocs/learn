@@ -2,7 +2,7 @@ In the previous unit, we introduced the concept of MLOps. MLOps is the practice 
 
 In this unit, we'll describe the process of managing, monitoring, and retraining those models over time. We discuss the importance of creating dedicated workflows for model monitoring and incident response. 
 
-![The typical stages of the machine learning lifecycle are train, package, validate, deploy, monitor, and retrain.](../media/manage-ai-organizations8.png)
+![The typical stages of the machine learning lifecycle are train, package, validate, deploy, monitor, and retrain.](../media/manage-ai-organizations-8.png)
 
 ## ML lifecycle: why do ML models need to be monitored and retrained?
 
@@ -17,7 +17,7 @@ Reasons for inaccurate predictions might include:
 
 The monitoring and maintenance process is similar for pre-trained models and custom models. However, the responsibilities of different teams may vary.
 
-![MLOps practices involve data scientists and IT professionals working together to ensure model reproducibility, validation, deployment, and retraining.](../media/manage-ai-organizations9.png)
+![MLOps practices involve data scientists and IT professionals working together to ensure model reproducibility, validation, deployment, and retraining.](../media/manage-ai-organizations-9.png)
 
 ## MLOps practices for model monitoring and retraining 
 
@@ -41,8 +41,6 @@ Let's say your monitoring efforts catch a performance issue. We recommend a thre
 1. Level-one response consists of the MLOps team responsible for ongoing monitoring. These aren't data scientists, but they're operations people who understand the technology that the business uses and how AI models fit into it. They may have scripted approaches for how to respond, such as: if you see issue X, run script Y, and determine if the issue is resolved by executing script Z.
 1. If the level-one team can't fix the issue, they then escalate to the level-two team. This team is composed of data scientists who are tasked only with incident response (that is, they're not involved in model or application development). This team will diagnose and attempt to solve the issue at a data science level. For instance, they might examine the models to determine feature distribution and if there are challenges there. Or they will look for anomalies in the datasets and retrain or reevaluate the model.
 1. If the level-two team fails to solve the problem, only then do they escalate the problem to the team that built the model. It's important to only pull in the development team when necessary. That way, they can remain focused on developing new models and driving innovation rather than being round-the-clock incident response.
-
-![The MLOps incident response workflow from detection of an issue through Level one through three incident resolution.](../media/manage-ai-organizations10.png)
 
 With different tiers responding to problems, it's critical to orchestrate their activities with the central incident log to ensure there's no duplication of efforts.
 

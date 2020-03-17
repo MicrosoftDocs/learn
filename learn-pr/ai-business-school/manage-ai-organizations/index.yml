@@ -30,14 +30,14 @@ products:
 - m365
 units: 
 - learn-wwl.manage-ai-organizations.introduction
-- learn-wwl.manage-ai-organizations.managing-innovation
-- learn-wwl.manage-ai-organizations.managing-innovation-video
+- learn-wwl.manage-ai-organizations.manage-innovation
+- learn-wwl.manage-ai-organizations.manage-innovation-video
 - learn-wwl.manage-ai-organizations.ai-economics
 - learn-wwl.manage-ai-organizations.ai-economics-video
-- learn-wwl.manage-ai-organizations.mlops-creating-ml
-- learn-wwl.manage-ai-organizations.mlops-servicing-ml
+- learn-wwl.manage-ai-organizations.mlops-create-ml
+- learn-wwl.manage-ai-organizations.mlops-service-ml
 - learn-wwl.manage-ai-organizations.ai-organizational-models
 - learn-wwl.manage-ai-organizations.knowledge-check
-- learn-wwl.manage-ai-organizations.summary-and-resources
+- learn-wwl.manage-ai-organizations.summary-resources
 badge: 
-  uid: learn-wwl.manage-ai-organizations.badge #add the uid for your achievement badge.
+  uid: learn-wwl.manage-ai-organizations.badge

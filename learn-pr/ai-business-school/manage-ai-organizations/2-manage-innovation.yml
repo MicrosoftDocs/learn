@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn-wwl.manage-ai-organizations.managing-innovation
+uid: learn-wwl.manage-ai-organizations.manage-innovation
 title: Apply best practices for fueling innovation in your organization
 metadata:
   title: Apply best practices for fueling innovation in your organization
-  description: TBD 
+  description: Enable a culture of innovation, apply innovation strategically to business challenges, and keep responsibility throughout the process.
   ms.date: 05/28/2020
   author: RWortmanMorris
   ms.author: rawortma
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 17
 content: |
-  [!include[](includes/2-managing-innovation.md)] 
+  [!include[](includes/2-manage-innovation.md)] 

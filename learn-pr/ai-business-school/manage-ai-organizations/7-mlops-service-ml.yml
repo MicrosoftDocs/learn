@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn-wwl.manage-ai-organizations.mlops-servicing-ml
+uid: learn-wwl.manage-ai-organizations.mlops-service-ml
 title: Manage the machine learning lifecycle with MLOps
 metadata:
   title: Manage the machine learning lifecycle with MLOps
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 1 
 content: |
-  [!include[](includes/7-mlops-servicing-ml.md)] 
+  [!include[](includes/7-mlops-service-ml.md)] 
