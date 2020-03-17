@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.cmu-cloud-computing.how-cloud-works.cmu-virtualize-input-output
 metadata:
-  title: Resource virtualization input and output
+  title: Virtualize I/O
   description: Carnegie Mellon University's Cloud Developer course. Learn about how computer input/output is virtualized. Covers I/O basics and a case study of virtualizing I/O.
   ms.date: 03/20/2020
   author: shanamatthews
@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   showCreativeCommonsFooter: true
-title: Resource virtualization input and output
+title: Virtualize I/O
 summary: Learn about how computer input/output is virtualized. Covers I/O basics and a case study of virtualizing I/O.
 abstract: | 
   In this module, you will:
