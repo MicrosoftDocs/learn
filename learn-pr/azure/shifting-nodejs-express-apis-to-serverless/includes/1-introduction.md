@@ -1,4 +1,4 @@
-Consider the following scenario. Your company has a website that provides access to vacation planning to their customers. Your customers will search for vacations and save their favorites. All of the data requests use standard HTTP requests to your API server. Your API server is critical to the success of the application. The APIs are hosted on a server running Node.js and Express.js, which is common for many companies.
+Consider the following scenario. Your company has a website that provides access to vacation planning to their customers. Your customers will add, edit, update and remove their vacation plans from wish list. All of the data requests use standard HTTP requests to your API server. Your API server is critical to the success of the application. The APIs are hosted on a server running Node.js and Express.js, which is common for many companies.
 
 Your company wants your Express application to go, live, so you need to deploy it to a server. You'll need to maintain your application. You'll need to scale it up and down as needed. And you'll also need to budget for the cost.
 
