@@ -10,6 +10,6 @@ metadata:
   ms.prod: learning-azure
   ROBOTS: NOINDEX
 title: Exercise - Getting Started
-durationInMinutes: 3
+durationInMinutes: 2
 content: |
   [!include[](includes/2-exercise-setup.md)]
