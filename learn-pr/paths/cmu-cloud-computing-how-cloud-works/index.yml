@@ -1,0 +1,51 @@
+### YamlMime:LearningPath
+uid: learn.cmu-cloud-computing.how-cloud-works
+metadata:
+  title: How the cloud works for cloud developers
+  description: Carnegie Mellon University's Cloud Developer course. Dive deeper into how the cloud works by understanding virtualization. How are computing power, memory, input and output, networking, and storage virtualized?
+  brand: azure
+  ms.date: 03/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  showCreativeCommonsFooter: true
+title: How the cloud works for cloud developers
+summary: |
+  Dive deeper into how the cloud works by understanding virtualization. How are computing power, memory, input and output, networking, and storage virtualized?
+
+  In this learning path, you will:
+    - Get an overview of virtualization technology and how it is used in the cloud
+    - Learn a formal definition of virtualization and its different types
+    - Understand how CPUs are virtualized
+    - Understand how memory is virtualized
+    - Understand how I/O is virtualized
+    - Understand how storage and networking is virtualized
+  
+  In partnership with Dr. Majd Sakr and Carnegie Mellon University.
+prerequisites: |
+  - Understand what cloud computing is, including cloud service models, and common cloud providers
+  - Know the technologies that enable cloud computing
+  - Understand how cloud service providers pay for and bill for the cloud
+  - Know what datacenters are and why they exist
+  - Know how datacenters are set up, powered, and provisioned
+  - Understand how cloud resources are provisioned and metered
+iconUrl: /learn/achievements/cmu-cloud-developer/virtualization-share-cloud-resources.svg
+levels:
+- beginner
+- intermediate
+roles:
+- developer
+- student
+products:
+- azure
+modules:
+- learn.cmu-cloud-computing.how-cloud-works.cmu-share-cloud-resources
+- learn.cmu-cloud-computing.how-cloud-works.cmu-virtualization
+- learn.cmu-cloud-computing.how-cloud-works.cmu-virtualize-computing-power
+- learn.cmu-cloud-computing.how-cloud-works.cmu-virtualize-memory
+- learn.cmu-cloud-computing.how-cloud-works.cmu-virtualize-input-output
+- learn.cmu-cloud-computing.how-cloud-works.cmu-virtualization-case-studies
+- learn.cmu-cloud-computing.how-cloud-works.cmu-storage-network-virtualization
+trophy:
+  uid: learn.cmu-cloud-computing.how-cloud-works.trophy

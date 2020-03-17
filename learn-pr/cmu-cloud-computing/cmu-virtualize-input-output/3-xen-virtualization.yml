@@ -1,0 +1,42 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-computing.how-cloud-works.cmu-virtualize-input-output.3-xen-virtualization
+title: Xen Project's approach to I/O virtualization
+metadata:
+  title: Xen Project's approach to I/O virtualization
+  description: Xen Project's approach to I/O virtualization
+  ms.date: 03/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-xen-virtualization.md)]
+
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: "How does Xen Project avoid having device drivers for the hypervisor and the guest operating systems?"
+    choices:
+    - content: "By borrowing the device drivers provided in guest OSs"
+      isCorrect: false 
+      explanation: "Incorrect. The device drivers of the guest OSs cannot be borrowed to directly interact with the physical devices because guest OSs do not run on top of bare metal. If Xen wants to avoid writing its own device drivers, think about whose drivers it can use."
+    - content: "By adopting a user-mode hosted virtualized system"
+      isCorrect: false
+      explanation: "Incorrect. Xen Project runs the hypervisor on bare metal; thus a user-mode hosted virtualized approach is not employed. If Xen wants to avoid writing its own device drivers, think about whose drivers it can use."
+    - content: "By adopting a dual-mode hosted virtualized system and using only the device drivers defined at the host OS"
+      isCorrect: true
+      explanation: "Correct!"
+    - content: "By collocating its hypervisor with a traditional OS and using only the device drivers defined at the hypervisor"
+      isCorrect: false
+      explanation: "Incorrect. There is no need for a dual-mode hosted virtualized system if device drivers will be defined at the hypervisor. But Xen Project avoids having individual device drivers for the guest OS and hypervisor. The rationale behind using a dual-mode hosted virtualized system is to be able to borrow the device drivers already present at the traditional host OS, which Xen Project does. If Xen wants to avoid writing its own device drivers, think about whose drivers it can use."
+
+  - content: "In Xen, would every domain be vacant of virtual I/O devices and relevant drivers, including domain 0?"
+    choices:
+    - content: "Yes"
+      isCorrect: true
+      explanation: "Correct!"
+    - content: "No"
+      isCorrect: false
+      explanation: "Incorrect. Domain 0 will run a traditional OS (e.g., Linux) on bare metal with all the required device drivers being already available. The device drivers can interact directly with the physical devices. Hence, there is no need to provide virtual I/O devices at domain 0. Additionally, domain U<sub>i</sub> will always delegate I/O requests to domain 0, which can handle them through the host OS. Accordingly, there is no need also to provide virtual I/O devices and relevant drivers at domain U<sub>i</sub>. Remember that in Xen, hypervisor is collocated with the host OS and borrows the guest OS's drivers."

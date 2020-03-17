@@ -1,0 +1,62 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-computing.how-cloud-works.cmu-virtualize-memory.1-one-level-page-map
+title: One-level page mapping
+metadata:
+  title: One-level page mapping
+  description: One-level page mapping
+  ms.date: 03/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/1-one-level-page-map.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: "In traditional virtual memories, each process is provided with:"
+    choices:
+    - content: "A virtual address space with a page table."
+      isCorrect: true
+      explanation: "Correct!"  
+    - content: "A physical address space without a page table."
+      isCorrect: false
+      explanation: "Incorrect. Processes in general-purpose OSs generate only virtual addresses. Can a VM be allowed to access physical pages directly? If not, it might need some way to translate virtual addresses to physical addresses."
+    - content: "A physical address space with a page table."
+      isCorrect: false
+      explanation: "Incorrect. Processes in general-purpose OSs generate only virtual addresses. Can a VM be allowed to access physical pages directly? If not, it might need some way to translate virtual addresses to physical addresses."
+    - content: "A virtual address space without a page table."
+      isCorrect: false
+      explanation: "Incorrect. Because processes in general-purpose OSs generate only virtual addresses, these addresses have to be translated to physical addresses to locate the desired physical pages. Can a VM be allowed to access physical pages directly? If not, it might need some way to translate virtual addresses to physical addresses."
+
+  - content: "Assume a system has a 64-KB virtual address space, 32 KB of physical memory, and a page size of 4 KB. If the virtual and physical pages are of the same size, how many virtual and physical pages will such a system contain?"
+    choices:
+    - content: "64 and 12 virtual and physical pages, respectively"
+      isCorrect: false
+      explanation: "Incorrect. The number of virtual pages typically is larger than the number of physical pages. Calculate how many physical pages can fit in the physical memory, and how many virtual pages can fit in virtual memory."
+    - content: "12 and 64 virtual and physical pages, respectively"
+      isCorrect: false
+      explanation: "Incorrect. The given virtual and physical address spaces cannot accommodate 12 virtual and 64 and physical pages. Calculate how many physical pages can fit in the physical memory, and how many virtual pages can fit in virtual memory."
+    - content: "8 and 16 virtual and physical pages, respectively"
+      isCorrect: false
+      explanation: "Incorrect. The number of virtual pages typically is larger than the number of physical pages. Calculate how many physical pages can fit in the physical memory, and how many virtual pages can fit in virtual memory."
+    - content: "16 and 8 virtual and physical pages, respectively"
+      isCorrect: true
+      explanation: "Correct! The number of virtual pages is 64 / 4 = 16, and the number of physical pages is 32 / 4 = 8."
+
+  - content: "One-level page mapping as employed by traditional OSs entails:"
+    choices:
+    - content: "Real-to-physical address translation"
+      isCorrect: false
+      explanation: "Incorrect. Traditional OSs deal only with virtual and physical addresses. Do traditional OSs have a real address space?"
+    - content: "Virtual-to-real and then real-to-physical address translations"
+      isCorrect: false
+      explanation: "Incorrect. Traditional OSs deal only with virtual and physical addresses. Do traditional OSs have a real address space?"
+    - content: "Virtual-to-physical address translation"
+      isCorrect: true
+      explanation: "Correct!"      
+    - content: "Physical-to-virtual address translation"
+      isCorrect: false
+      explanation: "Incorrect. Processes in traditional OSs issue virtual addresses. Do traditional OSs have a real address space?"

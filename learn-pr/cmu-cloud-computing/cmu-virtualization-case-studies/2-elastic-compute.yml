@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-computing.how-cloud-works.cmu-virtualization-case-studies.2-elastic-compute
+title: Amazon Elastic Compute Cloud (Amazon EC2)
+metadata:
+  title: Amazon Elastic Compute Cloud
+  description: Amazon Elastic Compute Cloud (Amazon EC2)
+  ms.date: 03/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 9
+content: |
+  [!include[](includes/2-elastic-compute.md)]
