@@ -1,6 +1,6 @@
-Consider the following scenario. Your company has a website that provides access to vacation planning to their customers. Your customers will view, edit, add, and remove their vacation plans from wish list. All of the data requests use standard HTTP requests to your API server, running Node.js and Express. Your API server is critical to the success of the application.
+Consider the following scenario. Your company has a website that provides access to vacation planning to their customers. Your customers will view, edit, add, and remove their vacation plans from their wish list. All of the data requests use standard HTTP requests to your API server, running Node.js and Express. Your API server is critical to the success of the application.
 
-Your company wants your application to go live, so you need to deploy it to a server. You'll need to maintain your application. You'll need to scale it up and down as needed. And you'll also need to budget for the cost. There is a lot for you to think about!
+Your company wants their application to go live, so you need to deploy it to a server, and soon. But have you considered everything you'll need? You'll need to maintain your application. You'll need to scale it up and down as needed. And you'll also need to budget for the cost. There is a lot for you to think about!
 
 What if you could reduce some of these burdens without rewriting your entire API? You can shift the API to a serverless model using Azure Functions and gain many benefits for this scenario. You'll gain many benefits with serverless: no server to maintain, reduced cost, and your application will scale up and down when needed. Plus, you may write less code!
 
