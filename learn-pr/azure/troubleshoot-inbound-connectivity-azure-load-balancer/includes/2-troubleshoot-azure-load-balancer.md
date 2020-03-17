@@ -41,7 +41,7 @@ The hashed value is used as a key to a table that holds the IP addresses in the 
 
 ### Scalability
 
-Load Balancer scales automatically. You can start additional VM instances and add their IP addresses to the back-end pool at any time. Load Balancer will include these new instances when it distributes user requests.
+You can start additional VM instances and add their IP addresses to the back-end pool at any time. Load Balancer will include these new instances when it distributes user requests.
 
 Load Balancer can expose more than one public front-end IP address, and might have multiple back-end pools. This scheme enables you to reuse the same instance of Load Balancer to handle requests for different systems.
 
@@ -78,15 +78,13 @@ There can be many reasons for these failures, most commonly associated with prob
 
 Probing issues result when one or more VMs in the backend pool fail to respond to health probe requests. These issues could be a result of:
 
-- A network security group rule in the virtual network housing the VMs blocking the IP addresses or ports used by probe requests.
 - An incorrect probe configuration, such as the wrong URL or port.
-- A VM failing to respond to the probe because of an application issue, or the required port not being open.
-- A failure of one or more VMs in the backend pool, leading to possible overloading, slow responses, and timeouts.
+- A VM fails to respond to the probe because the required port isn't open.
 
 ### Data path issues
 
 Data path issues occur when a Load Balancer is unable to route a client request to the application that runs on a VM in the backend pool. Possible causes include:
 
-- A network security group rule or firewall blocking the ports used by the application.
+- A network security group rule or firewall blocking the ports or IP addresses used by the application.
 - A VM is down or not responding. The VM might be turned off or failing, or there's a security issue such as an expired certificate on the server.
 - The application is not responding. The VMs might be overloaded, the application is listening on an incorrect port, or the application is crashing.
