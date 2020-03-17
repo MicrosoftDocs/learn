@@ -1,23 +1,23 @@
-As you learned in the previous module, before you can begin writing Python code you'll need to install a few tools on your local computer.  You'll need:
+As you learned in the previous module, before you can begin writing Python code, you'll need to install a few tools on your local computer. You'll need:
 
-- The Python installer, which contains the interpreter that compiles and executes your code, additional code libraries and other useful tools for Python developers.  It's possible you already have it installed.  In a moment, we'll check whether you have it installed or not.
+- The Python installer, which contains the interpreter that compiles and runs your code, additional code libraries, and other useful tools for Python developers. You might already have it installed. In a moment, we'll check whether you have it installed.
 
-- A code editor, ideally one with features that can help you write Python code. In this module, we'll walk through the installation of Visual Studio Code, one of the most popular free code editors. Furthermore, we'll install the Python extension for Visual Studio Code to add enhanced functionality.
+- A code editor, ideally one that has features that can help you write Python code. In this module, we'll walk through the installation of Visual Studio Code, one of the most popular free code editors. We'll also install the Python extension for Visual Studio Code to add enhanced functionality.
 
-### Python 2 versus Python 3
+### Python 2 vs. Python 3
 
-In this module, we make an effort to distinguish between Python versions 2 and 3. We make this distinction because the creators of Python discourage developers from using Python 2 from now on. Significant improvements were made in Python version 3 and some of those changes impacted code that was written years ago using Python version 2.
+In this module, we make an effort to distinguish between Python version 2 and Python version 3. We make this distinction because the creators of Python discourage developers from using Python 2. Significant improvements were made in Python 3, and some of those changes affected code that was written years ago in Python 2.
 
-The key idea is that you want to use Python version 3 from now on.
+The key idea is that you want to use Python 3 from now on.
 
 > [!NOTE]
-> Why is it important to emphasize the need to use Python version 3? Computers running macOS and some distributions of Linux have Python 2 pre-installed, so you'll need to take extra steps to install Python 3.
+> Why is it important to emphasize the need to use Python 3? Computers that run macOS and some distributions of Linux have Python 2 pre-installed on them, so you'll need to take extra steps to install Python 3.
 
 ### How do I know if I already have Python 3 installed on my computer?
 
-It's possible you already have Python 3 installed on your computer. Sometimes this can happen because another application installed Python 3 without your awareness.
+It's possible you already have Python 3 installed on your computer. This can happen because sometimes an application will install Python 3 without you knowing about it.
 
-Select the appropriate tab below that represents your operating system.
+At the top of this page, select the tab that represents your operating system.
 
 ::: zone pivot="windows"
 
@@ -25,22 +25,22 @@ Select the appropriate tab below that represents your operating system.
 
 To determine if your Windows computer already has Python 3 installed:
 
-- Open a command prompt by typing `Command Prompt` in the Windows 10 search bar, then select the Command Prompt App from the "Best Match" section of the results.
-- Type the following command and select the `Enter` key:
+1. Open a command prompt by entering **command prompt** in the Windows 10 search box and selecting the **Command Prompt App** in the **Best match** section of the results.
+1. Enter the following command and then select the **Enter** key:
 
 ```console
 py --version
 ```
-It's likely that executing `py --version` will produce no output at all.  This means that no version of Python has been installed on your computer.  We'll walk through installation of Python 3 on Windows in the next unit.
+Running `py --version` probably won't produce any output. This means that you don't have any version of Python on your computer. We'll walk through the installation of Python 3 on Windows in the next unit.
 
-However, if you see the word `Python` with a set of numbers separated with the `.` character, then some version of Python has been installed.  Here's an example of the output you might see.
+But if you see the word `Python` with a set of numbers separated by the `.` character, some version of Python is installed. Here's an example of the output you might see:
 
 ```output
 Python 3.8.0
 ```
-As long as the first number is `3`, you're all set.  There's nothing more to do.  You can skip the next unit where we install Python on Windows.
+As long as the first number is `3`, you're all set.  There's nothing more to do. You can skip the next unit, where we install Python on Windows.
 
-If the first number is `2`, then you'll need to install Python 3.  We'll walk through installation of Python 3 in the next unit.
+If the first number is `2`, you'll need to install Python 3. We'll walk through installation of Python 3 in the next unit.
 
 ::: zone-end
 
