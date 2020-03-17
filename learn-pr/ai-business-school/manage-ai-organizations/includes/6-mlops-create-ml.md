@@ -20,7 +20,7 @@ These challenges are similar to what application development teams face when cre
 
 ## Typical ML lifecycle
 
-![The typical stages of the machine learning lifecycle are train, package, validate, deploy, monitor, and retrain.](../media/manage-ai-organizations-4.png)
+![A diagram titled "The ML lifecycle." There are five blue circles in a row, each containing an icon. Grey arrows go from one circle to the next, indicating they flow into one another. A label sits above each circle. The first circle is labeled "Train model." The icon shows an arrow pointing from 1's and 0's towards an icon of an ML model. The ML model icon looks like several random dots connected by lines in a loose pentagon shape. The second circle's label says, "Package model." The icon shows the ML model icon going into a box. The third circle is labeled "Validate model." The icon shows the ML model icon with a check mark next to it. The fourth circle is labeled "Deploy model." The icon shows the ML model with an arrow pointing towards three blocks. Two are white boxes and one just has a white outline and blue center. The fifth circle is labeled "Monitor model." The icon shows the ML model next to a line graph. Then, there is a grey arrow that goes down from the fifth stage and turns left, back to the first stage. The arrow is labeled "Retrain model."](../media/manage-ai-organizations-4.png)
 
 1. **Train and test:** First, data scientists need to prepare training data. This is often the biggest time commitment in the lifecycle. Preparation includes standardizing the data so it's in a usable format and identifying discrete "features" or variables. For example, to predict credit risk, features might include customer age, account size, and account age. Next, they apply algorithms to the data to "train" a machine learning model. Then they test it with new data to see how accurate its predictions are.
 
@@ -38,7 +38,7 @@ These challenges are similar to what application development teams face when cre
 
 MLOps is the practice of collaboration among data scientists, ML engineers, app developers, and other IT teams to manage the ML lifecycle. MLOps processes and tools help those teams collaborate and provide visibility through shared, auditable documentation. MLOps technologies provide the ability to save and track changes to data sources, code, libraries, SDKs, and models. These technologies can also create efficiencies and accelerate the lifecycle with automation, repeatable workflows, and reusable assets. 
 
-![MLOps practices involve data scientists and IT professionals working together to ensure model reproducibility, validation, deployment, and retraining.](../media/manage-ai-organizations-5.png)
+![Diagram called "MLOps practices." There are two large blue circles in the center of the diagram, with an icon and text in each. The left circle is labeled, "Data scientist" and has a nucleus icon in it. The other blue circle reads, "IT professional" and has an icon of a person next to a computer. There is an infinity symbol that loops around both circles, indicating they work in harmony. Underneath both circles, the four MLOps practices are listed in a line from left to right. These say, "Model reproducibility," "Model validation," "Model deployment," and "Model retraining."](../media/manage-ai-organizations-5.png)
 
 ### Model reproducibility
 

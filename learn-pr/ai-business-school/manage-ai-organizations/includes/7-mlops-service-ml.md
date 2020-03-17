@@ -2,7 +2,7 @@ In the previous unit, we introduced the concept of MLOps. MLOps is the practice 
 
 In this unit, we'll describe the process of managing, monitoring, and retraining those models over time. We discuss the importance of creating dedicated workflows for model monitoring and incident response. 
 
-![The typical stages of the machine learning lifecycle are train, package, validate, deploy, monitor, and retrain.](../media/manage-ai-organizations-8.png)
+![A diagram titled "The ML lifecycle." There are five blue circles in a row, each containing an icon. Grey arrows go from one circle to the next, indicating they flow into one another. A label for sits above each circle. The first circle is labeled "Train model." The icon shows an arrow pointing from 1's and 0's towards an icon of an ML model. The ML model icon looks like several random dots connected by lines in a loose pentagon shape. The second circle's label says, "Package model." The icon shows the ML model icon going into a box. The third circle is labeled "Validate model." The icon shows the ML model icon with a check mark next to it. The fourth circle is labeled "Deploy model." The icon shows the ML model with an arrow pointing towards three blocks. Two are white boxes and one just has a white outline and blue center. The fifth circle is labeled "Monitor model." The icon shows the ML model next to a line graph. Then, there is a grey arrow that goes down from the fifth stage and turns left, back to the first stage. The arrow is labeled "Retrain model."](../media/manage-ai-organizations-8.png)
 
 ## ML lifecycle: why do ML models need to be monitored and retrained?
 
@@ -17,7 +17,7 @@ Reasons for inaccurate predictions might include:
 
 The monitoring and maintenance process is similar for pre-trained models and custom models. However, the responsibilities of different teams may vary.
 
-![MLOps practices involve data scientists and IT professionals working together to ensure model reproducibility, validation, deployment, and retraining.](../media/manage-ai-organizations-9.png)
+![Diagram called "MLOps practices." There are two large blue circles in the center of the diagram, with an icon and text in each. The left circle is labeled, "Data scientist" and has a nucleus icon in it. The other blue circle reads, "IT professional" and has an icon of a person next to a computer. There is an infinity symbol that loops around both circles, indicating they work in harmony. Underneath both circles, the four MLOps practices are listed in a line from left to right. These say, "Model reproducibility," "Model validation," "Model deployment," and "Model retraining."](../media/manage-ai-organizations-9.png)
 
 ## MLOps practices for model monitoring and retraining 
 

@@ -25,9 +25,9 @@ This person is a business executive responsible for operations of a particular f
 * **Create optional communities for exchanging ideas:** These communities provide opportunities for IT and business roles to connect on an ongoing basis. This could be done virtually through tools such as Yammer, or in-person at networking events or brown bag sessions.
 * **Train business experts to become Agile Product Owners:** A Product Owner is a member of the Agile team responsible for defining the features of the application and streamlining execution. Including this role as part or all of a business expert's responsibilities will allow them to dedicate time and effort to AI initiatives.
 
-### Chief digital officer
+### Chief Digital Officer
 
-The Chief digital officer is a change agent who oversees the transformation of traditional operations using digital processes. Their goal is to generate new business opportunities, revenue streams, and customer services.
+The Chief Digital Officer is a change agent who oversees the transformation of traditional operations using digital processes. Their goal is to generate new business opportunities, revenue streams, and customer services.
 
 * **Cultivate a culture of data sharing across the company:** Most organizations generate, store, and use data in a siloed manner. While each department may have a good view of their own data, they may lack other information that could be relevant to their operations. For instance, a sales department might not have a complete view of a customer because they're missing e-commerce data that's controlled by another department. Sharing data is key to efficiently using AI.
 * **Create your AI manifesto:** This is the 'north star' that clearly outlines the organization's vision for AI and digital transformation more broadly. Its goal is not only to solidify the company's strategy, but to inspire everyone across the organization and help them understand what the transformation will mean for them. The CDO will need to work with other members of C-suite to create the document and message it to the company.
@@ -48,7 +48,7 @@ An HR director makes fundamental contributions to an organization's culture and 
 
 ### IT leader
 
-While the chief digital officer is charged with creating and implementing overall digital strategy, an IT director oversees the day-to-day technology operations. 
+While the Chief Digital Officer is charged with creating and implementing overall digital strategy, an IT director oversees the day-to-day technology operations. 
 * **Launch Agile working initiatives between business and IT:** Implementing Agile processes between business and IT teams can help keep those teams aligned around a common goal. This requires a cultural shift to facilitate collaboration and reduce turf wars. Tools such as Microsoft Teams, Skype, and Slack are effective collaboration tools. 
 * **Create a "dark data" remediation plan:** Dark data is unstructured, untagged, and siloed data that organizations fail to analyze. Across industries, companies stand to benefit greatly if they can bring dark data into the light. To do so, they need a plan to remove data siloes, extract structured information from unstructured content, and clean out unnecessary data. 
 * **Set up agile cross-functional delivery teams and projects:** Cross-functional delivery teams are crucial to running successful AI projects. People with intimate knowledge of and control over business goals and processes should be a central part of planning and maintaining AI solutions. Data scientists working in isolation might create models that lack the context, purpose, or value that would make them effective.
