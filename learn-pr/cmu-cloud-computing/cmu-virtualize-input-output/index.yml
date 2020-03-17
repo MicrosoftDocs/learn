@@ -1,0 +1,51 @@
+### YamlMime:Module
+uid: learn.cmu-cloud-computing.how-cloud-works.cmu-virtualize-input-output
+metadata:
+  title: Resource virtualization input and output
+  description: Carnegie Mellon University's Cloud Developer course. Learn about how computer input/output is virtualized. Covers I/O basics and a case study of virtualizing I/O.
+  ms.date: 03/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  showCreativeCommonsFooter: true
+title: Resource virtualization input and output
+summary: Learn about how computer input/output is virtualized. Covers I/O basics and a case study of virtualizing I/O.
+abstract: | 
+  In this module, you will:
+  - Recognize how CPU and I/O devices communicate in traditional systems
+  - Identify how many I/O device drivers can/should be supported per physical device for different virtualized systems, such as native and dual-mode hosted virtualized systems
+  - Recognize the need for and ease of intercepting I/O requests by the hypervisor
+  - Identify at which system interfaces the hypervisor can intercept I/O requests
+  - Explain the pros and cons of intercepting I/O requests at different system interfaces
+  - Describe the overall I/O virtualization process as applied to a network interface card
+  - Discuss Xen Project's approach to I/O virtualization
+  
+  In partnership with Dr. Majd Sakr and Carnegie Mellon University.
+prerequisites: |
+  - Understand what cloud computing is, including cloud service models and common cloud providers
+  - Know the technologies that enable cloud computing
+  - Understand how cloud service providers pay for and bill for the cloud
+  - Know what datacenters are and why they exist
+  - Know how datacenters are set up, powered, and provisioned
+  - Understand how cloud resources are provisioned and metered
+  - Be familiar with the concept of virtualization
+  - Know what the different types of virtualization are
+  - Understand CPU virtualization
+  - Understand memory virtualization
+iconUrl: /learn/achievements/cmu-cloud-developer/resource-virtualization-input-output.svg
+levels:
+- beginner
+roles:
+- developer
+- student
+products:
+- azure
+units:
+- learn.cmu-cloud-computing.how-cloud-works.cmu-virtualize-input-output.0-introduction
+- learn.cmu-cloud-computing.how-cloud-works.cmu-virtualize-input-output.1-input-output-basics
+- learn.cmu-cloud-computing.how-cloud-works.cmu-virtualize-input-output.2-input-output-devices
+- learn.cmu-cloud-computing.how-cloud-works.cmu-virtualize-input-output.3-xen-virtualization
+- learn.cmu-cloud-computing.how-cloud-works.cmu-virtualize-input-output.4-summary
+badge:
+  uid: learn.cmu-cloud-computing.how-cloud-works.cmu-virtualize-input-output.badge

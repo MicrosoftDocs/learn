@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-computing.how-cloud-works.cmu-virtualization-case-studies.1-taxonomy
+title: Taxonomy of virtualization suites
+metadata:
+  title: Taxonomy of virtualization suites
+  description: Taxonomy of virtualization suites
+  ms.date: 03/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 8
+content: |
+  [!include[](includes/1-taxonomy.md)]

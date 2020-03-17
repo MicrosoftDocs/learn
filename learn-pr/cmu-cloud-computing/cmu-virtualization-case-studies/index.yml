@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.cmu-cloud-computing.how-cloud-works.cmu-virtualization-case-studies
+metadata:
+  title: Case studies for virtualization
+  description: Carnegie Mellon University's Cloud Developer course. Dive deeper into resource sharing and virtualization with case studies of how real cloud providers use virtualization.
+  ms.date: 03/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  showCreativeCommonsFooter: true
+title: Case studies for virtualization
+summary: Dive deeper into resource sharing and virtualization with case studies of how real cloud providers use virtualization.
+abstract: | 
+  In this module, you will:
+  - Differentiate popular virtualization suites by architecture and features
+  - Describe Amazon's EC2 service
+  - Identify the various techniques used by Amazon to offer typical cloud properties to users
+  
+  In partnership with Dr. Majd Sakr and Carnegie Mellon University.
+prerequisites: |
+  - Understand what cloud computing is, including cloud service models and common cloud providers
+  - Know the technologies that enable cloud computing
+  - Understand how cloud service providers pay for and bill for the cloud
+  - Know what datacenters are and why they exist
+  - Know how datacenters are set up, powered, and provisioned
+  - Understand how cloud resources are provisioned and metered
+  - Be familiar with the concept of virtualization
+  - Know what the different types of virtualization are
+  - Understand CPU virtualization
+  - Understand memory virtualization
+  - Understand I/O virtualization
+iconUrl: /learn/achievements/cmu-cloud-developer/virtualization-case-studies.svg
+levels:
+- beginner
+roles:
+- developer
+- student
+products:
+- azure
+units:
+- learn.cmu-cloud-computing.how-cloud-works.cmu-virtualization-case-studies.0-introduction
+- learn.cmu-cloud-computing.how-cloud-works.cmu-virtualization-case-studies.1-taxonomy
+- learn.cmu-cloud-computing.how-cloud-works.cmu-virtualization-case-studies.2-elastic-compute
+- learn.cmu-cloud-computing.how-cloud-works.cmu-virtualization-case-studies.3-elastic-compute-properties
+- learn.cmu-cloud-computing.how-cloud-works.cmu-virtualization-case-studies.4-summary
+badge:
+  uid: learn.cmu-cloud-computing.how-cloud-works.cmu-virtualization-case-studies.badge
