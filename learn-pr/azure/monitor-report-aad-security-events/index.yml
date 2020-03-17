@@ -18,7 +18,7 @@ abstract: |
 prerequisites: | 
   - Familiarity with Azure AD
   - Familiarity with Azure Monitor
-iconUrl: http://via.placeholder.com/120x120
+iconUrl: /learn/achievements/monitor-report-aad-security-events.svg
 levels:
 - intermediate
 roles:
