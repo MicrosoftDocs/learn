@@ -20,15 +20,12 @@ quiz:
     - content: The number of virtual machines in the backend pool that are responding to health probe requests.
       isCorrect: false
       explanation: No. The average **Health Probe Status** shows the percentage of virtual machines in the backend pool that are responding to health probe requests.
-    - content: The percentage of virtual machines in the backend pool that are responding to health probe requests
+    - content: The percentage of virtual machines in the backend pool that are responding to health probe requests.
       isCorrect: true
       explanation: This answer is correct.
     - content: The number of virtual machines available that will respond to client requests.
       isCorrect: false
       explanation: No. The average **Health Probe Status** shows the percentage of virtual machines in the backend pool that are responding to health probe requests. Even if all virtual machines respond to a health probe, they might be inaccessible to clients because of other issues, such as NSG rules blocking requests from outside the subnet.
-    - content: The total number of virtual machines in the backend pool.
-      isCorrect: false
-      explanation: No. The average **Health Probe Status** shows the percentage of virtual machines in the backend pool that are responding to health probe requests.
   - content: You are monitoring the average packet count metric for a load balancer. The average packet count suddenly increases by a significant amount, although the number of clients doesn't appear to have changed. What is the most probable cause?
     choices:
     - content: Additional virtual machines have become available in the backend pool.
@@ -40,7 +37,4 @@ quiz:
     - content: One or more virtual machines in the backend pool are no longer responding to health probe requests and are no longer participating in load balancing.
       isCorrect: true
       explanation: This answer is correct.
-    - content: You have added an extra front-end port which can handle additional traffic from clients.
-      isCorrect: false
-      explanation: No. The most probable cause is that one or more virtual machines in the backend pool are no longer responding to health probe requests and are no longer participating in load balancing.
-    
+        

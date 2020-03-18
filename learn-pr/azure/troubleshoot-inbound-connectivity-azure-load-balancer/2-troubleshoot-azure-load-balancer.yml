@@ -26,9 +26,6 @@ quiz:
     - content: Load Balancer doesn't know which VM has failed, and so stops sending requests to all VMs in the backend pool.
       isCorrect: false
       explanation: Load Balancer won't notice the failure and continues to route traffic to the failed VM.
-    - content: Load Balancer sends a response back to the client indicating that it can't route requests to VMs in the backend pool.
-      isCorrect: false
-      explanation: Load Balancer won't notice the failure and continues to route traffic to the failed VM.
   - content: You closed a port in a network security group used by a virtual network that hosts the VMs in the Load Balancer pool. How might this affect load balancing?
     choices:
     - content: If one is available, Load Balancer attempts to use a different port. Requests are sent to VMs through this port instead.
@@ -37,9 +34,6 @@ quiz:
     - content: If the port is used to send traffic to the VMs in the pool, then this traffic is blocked. All requests time out and eventually fail. If this port was a probe port, the VM is removed from rotation.
       isCorrect: true
       explanation: Traffic is blocked and all requests time out and eventually fail unless this port was a probe port. In that case, the VM is removed from rotation.
-    - content: Load Balancer reports an error to the client stating that no VMs are available, and to try again later.
-      isCorrect: false
-      explanation: Traffic is blocked and all requests time out and eventually fail unless this port was a probe port. In that case, the VM is removed from rotation. 
     - content: Load Balancer queues client requests until the port is opened again. At that point, the requests are sent.
       isCorrect: false
       explanation: Traffic is blocked and all requests time out and eventually fail unless this port was a probe port. In that case, the VM is removed from rotation.

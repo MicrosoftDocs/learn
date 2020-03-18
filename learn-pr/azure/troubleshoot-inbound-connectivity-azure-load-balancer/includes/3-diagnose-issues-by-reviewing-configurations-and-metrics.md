@@ -95,7 +95,7 @@ Use the following steps to determine the cause of the problem with an unhealthy 
 
 Load Balancer requires you to correctly configure the routing rules that direct incoming traffic from the front end to the back-end pool. If a routing rule is missing or not configured correctly, traffic arriving at the front end will be dropped, and the application is reported to clients as inaccessible.
 
-Validate the route through Load Balancer from the front end to the back-end pool. You can use tools such as [PsPing](https://docs.microsoft.com/sysinternals/downloads/psping) on Windows, and *TCPing* and *netsh*, which are available for Windows and Linux.
+Validate the route through Load Balancer from the front end to the back-end pool. You can use tools such as PsPing on Windows, and *TCPing* and *netsh*, which are available for Windows and Linux.
 
 #### Using PsPing
 
@@ -169,7 +169,7 @@ Approximate trip times in milli-seconds:
 
 #### Using netsh
 
-The *netsh* utility is a general purpose network configuration tool. Use the *trace* command in *netsh* to capture network traffic, and then analyze it using a tool such as [Microsoft Message Analyzer](https://www.microsoft.com/download/details.aspx?id=44226). Use *netsh trace* to examine the network packets sent and received by *psping* when testing connectivity through Load Balancer as follows:
+The *netsh* utility is a general purpose network configuration tool. Use the *trace* command in *netsh* to capture network traffic, and then analyze it using a tool such as Microsoft Message Analyzer or Wireshark. Use *netsh trace* to examine the network packets sent and received by *psping* when testing connectivity through Load Balancer as follows:
 
 1. Start a network trace from a command prompt running as Administrator. The following example traces internet client traffic (HTTP requests) to and from the specified IP address. Replace \<*ip address*\> with the address of the Load Balancer instance. The trace data is written to a file named *trace.etl*:
 
@@ -228,4 +228,4 @@ Load Balancer operates at layer 4 in the ISO network stack and doesn't examine o
 
 All client requests are terminated by a VM in the back-end pool. Load Balancer is invisible to clients. If no VMs are available, a client request will fail. Client applications can't communicate with, or otherwise interrogate the status of, Load Balancer or any of its components.
 
-If you need to implement,  load balancing based on the contents of messages, consider using [Application Gateway](https://docs.microsoft.com/azure/application-gateway/application-gateway-introduction). Or you could configure a proxy web server to handle incoming client requests and direct them towards specific VMs.
+If you need to implement,  load balancing based on the contents of messages, consider using Azure Application Gateway. Or you could configure a proxy web server to handle incoming client requests and direct them towards specific VMs.
