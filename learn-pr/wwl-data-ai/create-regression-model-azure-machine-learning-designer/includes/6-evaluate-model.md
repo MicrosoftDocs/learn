@@ -6,7 +6,8 @@ To evaluate a regression model, you could simply compare the predicted labels to
 2. In the pane on the left, in the **Model Scoring & Evaluation** section, drag an **Evaluate Model** module to the canvas, under the **Score Model** module, and connect the output of the **Score Model** module to the **Scored dataset** (left) input of the **Evaluate Model** module.
 3. Ensure your pipeline looks like this:
 
-    <p style='text-align:center'><img src='media/evaluate.png' alt='Evaluate Model module added to Score Model module'/></p>
+> [!div class="centered"]
+> ![Evaluate Model module added to Score Model module](../media/evaluate.png)
 
 4. Select **Submit**, and run the pipeline using the existing experiment named **auto-price-training**.
 5. Wait for the experiment run to complete.

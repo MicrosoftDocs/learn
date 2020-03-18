@@ -4,7 +4,7 @@ To train and deploy models using Azure Machine Learning designer, you need compu
 
 Compute targets are cloud-based resources on which you can run model training and data exploration processes.
 
-1. In [Azure Machine Learning studio](https://ml.azure.com]), view the **Compute** page (under **Manage**). This is where you manage the compute targets for your data science activities. There are four kinds of compute resource you can create:
+1. In [Azure Machine Learning studio](https://ml.azure.com), view the **Compute** page (under **Manage**). This is where you manage the compute targets for your data science activities. There are four kinds of compute resource you can create:
     - **Compute Instances**: Development workstations that data scientists can use to work with data and models.
     - **Training Clusters**: Scalable clusters of virtual machines for on-demand processing of model training code.
     - **Inference Clusters**: Deployment targets for predictive services that use your trained models.

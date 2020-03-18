@@ -1,0 +1,74 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-computing.cloud-storage.case-study-distributed-fs.2-hadoop
+title: 'Case study: Hadoop distributed file system (HDFS)'
+metadata:
+  title: 'Case study: Hadoop distributed file system (HDFS)'
+  description: Case study about the Hadoop distributed file system (HDFS).
+  ms.date: 03/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 24
+content: |
+  [!include[](includes/2-hadoop.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+# Did I Get This block 1 question has only intro statement and no visible graphic      
+# content: "Order the operations of a file write in HDFS in the table."
+
+# Did I Get This block 2 question 1
+  - content: "What are the advantages of HDFS over local file systems?"
+    choices:
+    - content: "Common namespace for the cluster"
+      isCorrect: false
+      explanation: "That's not quite right. A common namespace is an advantage of HDFS, but it is not the only advantage HDFS has over local file systems."
+    - content: "Streaming file access"
+      isCorrect: false
+      explanation: "That's not quite right. Streaming file access is an advantage of HDFS, but it is not the only advantage HDFS has over local file systems."
+    - content: "Support for large files"
+      isCorrect: false
+      explanation: "That's not quite right. Support for large files is an advantage of HDFS, but it is not the only advantage HDFS has over local file systems."
+    - content: "Support for a large number of small files"
+      isCorrect: false
+      explanation: "Incorrect. HDFS typically uses large block sizes when compared to local file systems, which can cause performance issues for a large number of small files."
+    - content: "High data availability through replication"
+      isCorrect: false
+      explanation: "That's not quite right. High data availability through replication is an advantage of HDFS, but it is not the only advantage HDFS has over local file systems."
+    - content: "No single point of failure (SPOF)"
+      isCorrect: false
+      explanation: "Incorrect. The NameNode in HDFS is currently a SPOF."
+    - content: "Common namespace for the cluster, support for large files, support for a large number of small files, high data availability through replication, and no single point of failure (SPOF)"
+      isCorrect: false
+      explanation: "That's not quite right. HDFS does not natively support a large number of small files, and the NameNode in HDFS is currently an SPOF."
+    - content: "Common namespace for the cluster, streaming file access, support for large files, and high data availability through replication"
+      isCorrect: true
+      explanation: "Correct!"
+    - content: "All of the above"
+      isCorrect: false
+      explanation: "That's not quite right. HDFS does not natively support a large number of small files, and the NameNode in HDFS is currently an SPOF."      
+
+# Did I Get This block 2 question 2 - $ symbols open and close LaTeX math formatting
+  - content: "When does HDFS commit a write to disk?"
+    choices:
+    - content: "When the first replica has finished writing to a disk"
+      isCorrect: false
+      explanation: "Incorrect. Although HDFS streams the `N - 1` replicas of a block directly from the server writing the first replica, the write is not committed at this point. Remember that HDFS offers strongly consistent file systems."
+    - content: "When a majority of the replicas have finished writing `( > N/2 )`"
+      isCorrect: false
+      explanation: "Incorrect. HDFS requires all replicas to be written to disk for a write to be committed. Remember that HDFS offers strongly consistent file systems."
+    - content: "When the last replica has finished writing to a disk"
+      isCorrect: true
+      explanation: "Correct!"
+
+# Did I Get This block 2 question 3
+  - content: "What kind of consistency model does HDFS offer?"
+    choices:
+    - content: "Strong consistency"
+      isCorrect: true
+      explanation: "Correct! HDFS's immutable semantics, along with its replica commit policy, give it strong consistency guarantees."
+    - content: "Weak consistency"
+      isCorrect: false
+      explanation: "Incorrect. HDFS has immutable semantics, and a write is committed only after all replicas are written to a disk. Think about any possible restrictions in HDFS, and why they are in place. Will any client at any time see an inconsistent view of the file system?"      
