@@ -87,4 +87,4 @@ Data path issues occur when a Load Balancer is unable to route a client request 
 
 - A network security group rule or firewall blocking the ports or IP addresses used by the application.
 - A VM is down or not responding. The VM might be turned off or failing, or there's a security issue such as an expired certificate on the server.
-- The application is not responding. The VMs might be overloaded, the application is listening on an incorrect port, or the application is crashing.
+- The application isn't responding. The VMs might be overloaded, the application is listening on an incorrect port, or the application is crashing.
