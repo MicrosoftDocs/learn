@@ -9,8 +9,6 @@ In this module, you've learned how to:
 
 You can use this knowledge to build a customized virtual machine image that's configured to meet your organization's requirements. You can then use this image to roll out virtual machines across the entire organization.
 
-[!include[](../../../includes/subscription-cloudshell-azurecli-cleanup.md)]
-
 ## Learn more
 
 For more information about disk imaging in Azure, see the following articles:
