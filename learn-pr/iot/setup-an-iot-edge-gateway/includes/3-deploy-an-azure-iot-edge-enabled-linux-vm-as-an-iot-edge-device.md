@@ -16,6 +16,8 @@ If necessary, log in to your Azure portal using your Azure account credentials.
 
 1. We will now fill in the available form fields:
 
+    [![Screenshot showing the iotedge-vm-deploy template](../media/iotedge-vm-deploy.png)](../media/iotedge-vm-deploy.png#lightbox)
+
     **Subscription**: Ensure "Concierge Subscription" is selected.
 
     **DNS Label Prefix**: Enter a name in the following format `az-220-vm-edgegw-{YOUR-ID}`.
