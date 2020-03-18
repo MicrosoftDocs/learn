@@ -9,7 +9,7 @@ metadata:
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
-durationInMinutes: 2
+  zone_pivot_groups: subscription-type
+  durationInMinutes: 2
 content: |
   [!include[](includes/5-summary.md)]
