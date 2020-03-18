@@ -6,9 +6,9 @@ As more teams adopt Azure Boards, the organization begins to see the network eff
 
 In this module, you will:
 
-- Install the Delivery Plans extension for your Azure DevOps project
-- Create a delivery plan
-- Adjust a team's sprint workload to optimize delivery efficiency
+- Learn how a _delivery plan_ helps enable multiple teams to coordinate and schedule related work.
+- Install the Delivery Plans extension for your Azure DevOps project.
+- Create a delivery plan and adjust a team's sprint workload to optimize delivery efficiency.
 
 ## Prerequisites
 
