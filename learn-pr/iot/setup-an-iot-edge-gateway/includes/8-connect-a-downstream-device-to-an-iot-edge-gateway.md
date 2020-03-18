@@ -56,7 +56,7 @@ In this module, we'll configure a pre-built Downstream Device to connect to the 
     csharps_deviceClient = DeviceClient.CreateFromConnectionString(s_connectionString, TransportType.Mqtt); SendDeviceToCloudMessagesAsync(); 
     ```
     
-    This method also executes the **InstallCACert** method which has some code to automatically install the **root CA** X.509 certifcate to the local machine. And it executes the **SendDeviceToCloudMessagesAsync** method that sends event telemetry from the simulated device.
+    This method also executes the **InstallCACert** method which has some code to automatically install the **root CA** X.509 certificate to the local machine. And it executes the **SendDeviceToCloudMessagesAsync** method that sends event telemetry from the simulated device.
 
 1. Locate the **SendDeviceToCloudMessagesAsync** method. This method contains the code that generates the simulated device telemetry, and sends the events to the IoT Edge Gateway.
 
