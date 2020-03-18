@@ -1,4 +1,4 @@
-In this module, you will use the Azure CLI to monitor the events sent to Azure IoT Hub from the downstream IoT Device through the IoT Edge Gateway. These steps will validate that everything is working correctly.
+In this module, you will use the Azure CLI to monitor the events sent to Azure IoT Hub from the downstream IoT Device through the IoT Edge Gateway. These steps will validate that event flow from downstream device to IoT Edge Gateway and upstream to IoT Hub is working correctly.
 
 ## Verify Event Flow from Downstream Device through IoT Edge Gateway to IoT Hub
 

@@ -1,4 +1,4 @@
-In this module, you will generate test certificates using Linux. 
+In this module, you will generate test certificates using Linux. This will allow us to ensure that only securely authenticated downstream devices are able to communicate with the IoT Edge Gateway.
 
 ## Generate and Configure IoT Edge Device CA Certificates
 
