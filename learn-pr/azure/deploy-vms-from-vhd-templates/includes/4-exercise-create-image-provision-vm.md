@@ -1,40 +1,12 @@
 In this sample scenario, your organization is rolling out a new environment in Azure that uses virtual machines. You've already constructed a virtual machine that contains the software and tools required to support the organization's functions. You need to use this virtual machine to generate a custom image that you can then use to create new virtual machine instances.
 
-In this exercise, you'll create a virtual machine and generalize it. You'll then create an image from the generalized virtual machine, and then use this image to create another virtual machine.
+In this exercise, you'll create a virtual machine and generalize it. You'll then create an image from the generalized virtual machine, and then use this image to create another virtual machine. You can try this out with either Windows or Linux (or both) by selecting the platform type above.
 
 ## Create a virtual machine
 
 In this task, you'll quickly create a virtual machine that runs a simple web app. The web app displays the name of the host machine. You'll use this virtual machine as the basis for the rest of the exercise.
 
-::: zone pivot="personal-subscription"
-
-1. Browse to the [Azure Cloud Shell](https://shell.azure.com?azure-portal=true) and sign into your Azure subscription.
-
-1. Create a new Azure Resource Group to hold your virtual machine. In the Cloud Shell window, run the following command.
-
-    ```azurecli
-    az group create --name "learn-vm"
-    ```
-
-1. Set the default resource group for the Azure CLI by typing the following command into the Cloud Shell window. This allows you to omit the resource group name from all the commands.
-
-    ```azurecli
-    az configure --defaults group=learn-vm
-    ```
-
-::: zone-end
-
-::: zone pivot="hosted-subscription"
-
-1. Activate the Cloud Shell window on the right by signing into the Azure Sandbox.
-
-1. Set the default resource group to work with by typing the following command into the Cloud Shell on the right. This allows you to omit the resource group name from all the commands.
-
-    ```azurecli
-    az configure --defaults group=<rgn>[Sandbox resource group name]</rgn>
-    ```
-
-::: zone-end
+[!include[](../../../includes/subscription-cloudshell-azurecli-create-rg.md)]
 
 ::: zone pivot="windows-cloud"
 
@@ -132,7 +104,7 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
 
 ::: zone pivot="windows-cloud, personal-subscription"
 
-1. On the Azure portal menu or from the **Home** page, select **Resource groups**, and then select the **learn-vm** resource group.
+1. On the Azure portal menu or from the **Home** page, select **Resource groups**, and then select the **learn-resources** resource group.
 
 ::: zone-end
 
