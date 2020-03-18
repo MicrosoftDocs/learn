@@ -311,6 +311,6 @@ At the start of this exercise, you saw that the virtual machines weren't respond
 - On the load balancer rule *retailapprule*, the port used by the health probe was misconfigured to use 85 instead of 80. You updated the rule to use port 80.
 - The network security group *retailappnsg* didn't have an inbound security rule that allowed traffic on port 80. So the network security group blocked the health probe. You added an inbound security rule to allow traffic on port 80.
 - You checked the VM retailappvm2 and saw that it stopped. You restarted the VM.
-- After you started the VM retailappvm2 and saw that the app was running, you couldn't connect to the app. The network security group had an inbound rule that blocked all network traffic for the TCP protocol. This "deny all" rule took precedence over the inbound security rule that allowed traffic to port 80. You changed the priority of the deny all rule so it was higher than the port 80 rule. This change allowed inbound network traffic on port 80 for TCP.
+- After you started the VM retailappvm2 and saw that the app was running, you couldn't connect to the app. The network security group had an inbound rule that blocked all network traffic for the TCP protocol. This "deny all" rule took precedence over the inbound security rule that allowed traffic to port 80. You changed the priority of the "deny all" rule so it was higher than the port 80 rule. This change allowed inbound network traffic on port 80 for TCP.
 
 You returned the load-balanced HTTP service back to full operation.

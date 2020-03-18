@@ -58,10 +58,10 @@ This exercise is optional. To complete it, you need access to an Azure subscript
 
 1. In the Azure portal, search for **Resource groups**.
 1. Select **learn-ts-loadbalancer-rg**.
-
+1. Sort the list of resources by **Type**.
 1. The resource group should contain the following resources:
 
-    | Resource name  | Resource type  | Description |
+    | Name  | Type  | Description |
     |---|---|---|
     | **retailappvm1_disk1_xxx** and **retailappvm1_disk1_xxx** | Disk | Virtual hard disks for the two VMs |
     | **retailapplb** | Load balancer | Load balancer for the app running on the VMs. The back-end pool in the load balancer references the **retailappvm1** and **retailappvm2** virtual machines. |
