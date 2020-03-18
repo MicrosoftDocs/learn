@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.nodejs-io.5-processes
+title: Processes
+metadata:
+  title: Processes
+  description: Processes
+  author: softchris
+  ms.author: chnoring
+  ms.date: 03/18/2018
+  ms.topic: interactive-tutorial
+  ms.prod: vs
+durationInMinutes: 2
+content: |
+  [!include[](includes/5-processes.md)]

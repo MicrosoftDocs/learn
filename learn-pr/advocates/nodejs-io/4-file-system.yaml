@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.nodejs-io.4-file-system
+title: File system
+metadata:
+  title: File system
+  description: File system
+  author: softchris
+  ms.author: chnoring
+  ms.date: 03/18/2018
+  ms.topic: interactive-tutorial
+  ms.prod: vs
+durationInMinutes: 2
+content: |
+  [!include[](includes/4-file-system.md)]

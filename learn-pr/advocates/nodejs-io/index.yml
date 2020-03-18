@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.nodejs-io
+metadata:
+  title: Introduction to Node.js I/O
+  description: Learn about I/O in Node.js, working with files, Streams and Processes 
+  ms.date: 18/03/2020
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  #ms.learn-contact: luken
+title: Introduction to Node.js I/O
+summary: Understanding how to work with I/O in Node.js is a vital part to understanding Node.js itself. This is an area you should have good grasp on if working full time on Node.js
+abstract: |
+  In this module you will:
+  - Gain a basic understanding of the different I/O concepts that exist in Node.js
+  - Learn how work with the file system
+  - Leverage Streams to make your apps more performant
+  - Understand how you can create and control processes
+iconUrl: /learn/achievements/nodejs-io.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- vs
+prerequisites: None
+units:
+- learn.nodejs-io.1-introduction
+- learn.nodejs-io.2-paths
+- learn.nodejs-io.3-exercise-paths
+- learn.nodejs-io.4-file-system
+- learn.nodejs-io.5-exercise-file-system
+- learn.nodejs-io.6-streams
+- learn.nodejs-io.7-exercise-streams
+- learn.nodejs-io.8-processes
+- learn.nodejs-io.9-exercise-processes
+- learn.nodejs-io.10-summary
+badge:
+  uid: learn.nodejs-io.badge
