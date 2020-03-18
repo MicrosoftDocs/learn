@@ -123,7 +123,7 @@ Ethernet can also travel over fiber-optic cable (as shown in Figure 4b). Fiber i
 
 ![Unshielded twisted pair (UTP) cable showing four pairs of cables, and fiber-optic network cables with LC connectors on top and ST connectors on bottom](../media/utp-fiber-optic-network.png)
 
-_Figure 4: (a) Cutout of an unshielded twisted pair (UTP) cable, showing four pairs of cables. (b) Fiber-optic network cable. LC connectors on top and ST connectors on bottom._ ([Source](http://en.wikipedia.org/wiki/file:utp_cable.jpg))
+_Figure 4: (a) Cutout of an unshielded twisted pair (UTP) cable, showing four pairs of cables. (b) Fiber-optic network cable. LC connectors on top and ST connectors on bottom._ ([Source](https://en.wikipedia.org/wiki/File:UTP_cable.jpg))
 
 **Fibre Channel (FC)** is a protocol designed to support SANs and remote block-level storage devices. Even though it typically runs over fiber, it can also run over copper. It can also be encapsulated in Ethernet in the form of Fibre Channel over Ethernet (FCoE) but is not routable like iSCSI. Fibre Channel HCA and switch generations are named by their speed (in Gbps)—# GFC, in which # is 1, 2, 4, 8, 10, or 16. The most common now is 8 GFC, which supports 8-Gbps links (approximately 800 MB/s in each direction).
 
@@ -139,7 +139,7 @@ InfiniBand and 40-Gbit Ethernet are also being deployed as a **converged network
 
 ![InfiniBand switch](../media/infiniband-switch.png)
 
-_Figure 5: An InfiniBand switch._ ([Source](http://en.wikipedia.org/wiki/file:utp_cable.jpg))
+_Figure 5: An InfiniBand switch._ ([Source](https://en.wikipedia.org/wiki/File:UTP_cable.jpg))
 
 The choice of network technology and topology to deploy in a datacenter also depends on your applications but will typically include multiple tiers, with the connection between the tiers being high-speed fiber. Copper UTP cabling is prevalent within the rack and will continue to function well for low-speed management networks.
 

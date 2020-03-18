@@ -4,3 +4,8 @@ In addition, you have seen how Update Management can generate a report indicatin
 
 ## Cleanup
 Delete the `mslearn-vmupdate` resource group to clean up your subscription.
+
+## Learn more
+
+- [An introduction to Azure Automation](https://docs.microsoft.com/azure/automation/automation-intro)
+- [Automate resources in your datacenter or cloud by using Hybrid Runbook Worker](https://docs.microsoft.com/azure/automation/automation-hybrid-runbook-worker)

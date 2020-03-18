@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.authenticate-apps-with-managed-identities.5-exercise-configure-managed-identity-for-vm
+metadata:
+  title: Exercise - Configure a system-assigned managed identity for an Azure VM
+  description: In this exercise, you'll configure a managed identity on your virtual machine. You'll create a system-assigned managed identity for the VM, and see how to access Azure resources from inside the VM.
+  ms.date: 03/11/2020
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise - Configure a system-assigned managed identity for an Azure VM
+durationInMinutes: 6
+interactive: bash
+azureSandbox: true
+content: |
+  [!include[](includes/5-exercise-configure-managed-identity-for-vm.md)]
