@@ -35,9 +35,10 @@ After creating and running a pipeline to train the model, you need a second pipe
     - Connect the output from the **Score Model** module to the **Dataset1** (left-most) input of the **Execute Python Script**, and connect the output of the **Execute Python Script** module to the **Web Service Output**.
 8. Verify that your pipeline looks similar to the following:
 
-    <p style='text-align:center'><img src='media/visual-inference.jpg' alt="A visual inference pipeline"/></p>
+> [!div class="centered"]
+> ![A visual inference pipeline](../media/visual-inference.png)
 
-8. Run the pipeline as a new experiment named **predict-diabetes** on the **aml-compute** compute target you used for training. This may take a while!
-9. When the pipeline has completed, select the **Execute Python Script** module, and in the settings pane, on the **Output + Logs** tab, visualize the **Result dataset** to see the predicted labels and probabilities for the three patient observations in the input data.
+9. Run the pipeline as a new experiment named **predict-diabetes** on the **aml-compute** compute target you used for training. This may take a while!
+10. When the pipeline has completed, select the **Execute Python Script** module, and in the settings pane, on the **Output + Logs** tab, visualize the **Result dataset** to see the predicted labels and probabilities for the three patient observations in the input data.
 
 Your inference pipeline predicts whether or not patients are at risk for diabetes based on their features. Now you're ready to publish the pipeline so that client applications can use it.

@@ -4,7 +4,7 @@ title: Create and run a training pipeline
 metadata:
   title: Create and run a training pipeline
   description: "Let's use Azure machine Learning designer to train and publish a regression model."
-  ms.date: 03/13/2020
+  ms.date: 03/18/2020
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial

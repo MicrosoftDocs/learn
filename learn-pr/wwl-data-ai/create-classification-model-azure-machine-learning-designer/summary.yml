@@ -4,7 +4,7 @@ title: Summary
 metadata:
   title: Summary
   description: "Summary"
-  ms.date: 03/13/2020
+  ms.date: 03/18/2020
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -16,17 +16,17 @@ content: |
 quiz:
   title: "Knowledge check"
   questions:
-  - content: "You are using Azure Machine Learning designer to create a training pipeline for a binary classification model. You have added a dataset containing features and labels, a Two-Class Decision Forest module, and a Train Model module. You plan to use Score Model and *Evaluate Model modules to test the trained model with a subset of the dataset that was not used for training. Which additional kind of module should you add?"
+  - content: "You are using Azure Machine Learning designer to create a training pipeline for a binary classification model. You have added a dataset containing features and labels, a Two-Class Decision Forest module, and a Train Model module. You plan to use Score Model and Evaluate Model modules to test the trained model with a subset of the dataset that was not used for training. Which additional kind of module should you add?"
     choices:
     - content: "Join Data"
       isCorrect: false
-      explanation: "That is incorrect. Use a Split Data module ro randomly split a dataset into test and validation subsets."
+      explanation: "That is incorrect. Use a Split Data module to randomly split a dataset into test and validation subsets."
     - content: "Split Data"
       isCorrect: true
-      explanation: "That is correct. Use a Split Data module ro randomly split a dataset into test and validation subsets."
+      explanation: "That is correct. Use a Split Data module to randomly split a dataset into test and validation subsets."
     - content: "Select Columns in Dataset"
       isCorrect: false
-      explanation: "That is incorrect. Use a Split Data module ro randomly split a dataset into test and validation subsets."
+      explanation: "That is incorrect. Use a Split Data module to randomly split a dataset into test and validation subsets."
   - content: "You use an Azure Machine Learning designer pipeline to train and test a binary classification model. You review the model's performance metrics in an Evaluate Model module, and note that it has an AUC score of 0.3. What can you conclude about the model?"
     choices:
     - content: "The model can explain 30% of the variance between true and predicted labels."
