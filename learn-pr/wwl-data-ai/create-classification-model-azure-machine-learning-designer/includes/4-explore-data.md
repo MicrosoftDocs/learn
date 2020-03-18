@@ -55,7 +55,8 @@ Before you can train a model, you typically need to apply some preprocessing tra
     - **DiabetesPedigree**
     - **Age**
 
-<p style='text-align:center'><img src='media/normalize-data.jpg' alt='columns selected for normalization'/></p>
+> [!div class="centered"]
+> ![columns selected for normalization](../media/normalize-data.png)
 
 The data transformation is normalizing the numeric columns to put them on the same scale, which should help prevent columns with large values from dominating model training. You'd usually apply a whole bunch of pre-processing transformations like this to prepare your data for training, but we'll keep things simple in this exercise.
 
@@ -65,11 +66,12 @@ To see the effect of your data transformations, you need to run the pipeline as 
 
 1. Ensure your pipeline looks similar to this:
 
-<p style='text-align:center'><img src='media/data-prep-pipeline.jpg' alt='diabetes-data dataset with Normalize Data module'/></p>
+> [!div class="centered"]
+> ![diabetes-data dataset with Normalize Data module](../media/data-prep-pipeline.png)
 
 2. Select **Submit**, and run the pipeline as a new experiment named **diabetes-training**.
 3. Wait for the run to complete - this may take a few minutes.
 4. When the run has completed (indicated by a &#x2705; icon for each module other than the dataset), select the **Normalize Data** module and in the settings pane, on the **Outputs + Logs** tab, under **Port outputs** in the **Transformed dataset** section, use the **Visualize** icon to view the transformed columns.
-5. Close the **Normalize Data** visualization, and then close or resize the settings pane using the X or **<sub>&#8599;</sub><sup>&#8601;</sup>** icon.
+5. Close the **Normalize Data** visualization, then close or resize the settings pane using the X or **<sub>&#8599;</sub><sup>&#8601;</sup>** icon.
 
 The dataset is now prepared for model training.
