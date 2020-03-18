@@ -36,11 +36,12 @@ In this module, you will use the Azure CLI to monitor the events sent to Azure I
              "payload": "{\"temperature\":30.699204018199445,\"humidity\":78.04910910224966}"
          }
      }
+     ```
+
+    Once you have completed this lab and verified the event flow, exit the console application by pressing **CTRL+C**.
 
     >[!NOTE]
     > Due to the secure nature of the Azure Sandbox, you may not receive any data back when running the command above.  This is because the Gateway device requires that ports 8883, 5671, and 443 are opened in order to allow for communication back to the IoT Hub instance.  Even though we opened these ports in step 6, the policy will not actually effect the machine.  If you wish to fully verify the results, you may need to deploy into a personal subscription which allows you to make these configuration changes.
-
-Once you have completed this lab and verified the event flow, exit the console application by pressing **CTRL+C**.
 
 ## Next steps
 
