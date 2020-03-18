@@ -15,7 +15,7 @@ Before allowing access, multi-factor authentication asks the user to complete ch
 
 ![Graphic showing multi-factor authentication challenges](../media/5-mfa.png)
 
-A secret password or answer to a security question should be something that only the user knows. Users also have devices that can be classified as something they have. For example, a user might have a cell phone and be able to receive a text message with a secret, one-time-use code. You might also make successful authentication contingent on the user, through biometrics collected from them. This biometric information is classified as something the user is. For example, you could make authentication rely on the user's fingerprints or voice as an additional step.
+A secret password or answer to a security question should be something that only the user knows. Users also have devices that can be classified as something they have. For example, a user might have a cell phone and be able to receive a text message with a secret, one-time-use code. You might also make successful authentication contingent on the user, through biometrics collected from them. This biometric information is classified as something the user is. For example, you might make authentication rely on the user's fingerprints or voice as an additional step.
 
 ## Conditional access policies
 
@@ -28,7 +28,7 @@ Conditional access policies have two key parts:
 
 You configure enforcement of multi-factor authentication by creating a conditional access policy in the Azure portal. To do so, you must be either a conditional access administrator or a security administrator.
 
-You implement multi-factor authentication policies at different scopes. You set multi-factor authentication at a specific individual user level, or application level. Anyone trying to access the application must go through a multi-factor authentication process. Also, you could set multi-factor authentication at a tenant level, where everyone who's a member of a tenant is expected to complete the process.
+You implement multi-factor authentication policies at different scopes. You set multi-factor authentication at a specific individual user level, or application level. Anyone trying to access the application must go through a multi-factor authentication process. Also, you can set multi-factor authentication at a tenant level, where everyone who's a member of a tenant is expected to complete the process.
 
 Azure supports different forms of second factor methods, including:
 
