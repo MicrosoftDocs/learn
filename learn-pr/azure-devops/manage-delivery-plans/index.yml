@@ -3,9 +3,9 @@ uid: learn.azdo.manage-delivery-plans
 metadata:
   title: Manage Agile software delivery plans across teams - Learn
   description: Learn to optimize delivery efficiency by improving work plan visibility across teams.
-  ms.date: 02/19/2020
-  author: edkaim
-  ms.author: v-edkaim
+  ms.date: 03/18/2020
+  author: tpetchel
+  ms.author: thpetche
   ms.topic: interactive-tutorial
   #ms.learn-contact: thpetche
   ms.prod: learning-azure
