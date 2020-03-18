@@ -305,29 +305,19 @@ Here you create service connections that enable Azure Pipelines to access your A
 1. Ensure that **Grant access permission to all pipelines** is selected.
 1. Select **OK**.
 
-## Create a pipeline environment
-
-Here you create an Azure DevOps environment to track Kubernetes deployments. Environments provide a great way to track current and past deployments, which include pipeline and resource history. They also provide a convenient way to monitor Kubernetes deployments. You may be asked to log in to your Azure account as part of this process.
-
 1. Under **Pipelines**, select **Environments**.
 
     ![Azure Pipelines showing the Environments menu option](../media/3-pipelines-environments.png)
 
-1. Select **Create environment**.
-1. Fill in these fields:
-
-    | Field               | Value                                        |
-    |---------------------|----------------------------------------------|
-    | Name    | *spike*                          |
-    | Resource  | **Kubernetes** |
-
-1. Select **Next**.
+1. Select the **spike** environment. This environment was automatically inferred from the release pipeline.
+1. Select **Add resource**.
+1. Select **Kubernetes** and then **Next**.
 1. Fill in these fields:
 
     | Field               | Value                                        |
     |---------------------|----------------------------------------------|
     | Provider    | **Azure Kubernetes Service**                         |
-    | Resource  | **Kubernetes** |
+    | Azure Subscription  | Your Azure subscription |
     | Cluster  | **Select the one you created earlier** |
     | Namespace | **Existing** / **default**          |
 
@@ -341,6 +331,6 @@ Here you update the Kubernetes *deployment.yml* manifest to point to the contain
 1. Open the file at **/manifests/deployment.yml** in edit mode.
 1. Change the container image references to use your ACR login server. The code below uses *tailspinspacegame2439.azurecr.io* as an example. 
 
-    [!code-yml[](code/3-1-azure-pipelines.yml?highlight=17,37)]
+    [!code-yml[](code/3-1-deployment.yml?highlight=17,37)]
 
 1. Commit the changes to the master branch.

@@ -55,7 +55,7 @@ Here you add a new pipeline variable to the existing CI/CD pipeline defined in *
 
 **Mara**: That's what the `PublishBuildArtifacts@1` task is for. It's so common that there's even a shorthand for it, `publish`.
 
-1. Add a `publish` task that stores the *manifests* folder for a future stage as shown below.
+1. Add a `publish` task that stores the *manifests* folder for a future stage as shown below. Be sure to match the indentation of the previous task.
 
     [!code-yml[](code/4-4-azure-pipelines.yml?highlight=12-13)]
 
