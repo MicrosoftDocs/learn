@@ -9,7 +9,7 @@ metadata:
   ms.author: thpetche
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 15
+durationInMinutes: 6
 content: |
   [!include[](includes/3-what-is-delivery-plans.md)]
 quiz:
