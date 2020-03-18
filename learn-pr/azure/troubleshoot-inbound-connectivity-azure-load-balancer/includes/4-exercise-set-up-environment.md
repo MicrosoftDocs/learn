@@ -22,7 +22,7 @@ This exercise is optional. To complete it, you need access to an Azure subscript
 1. Run the following command to set the user name for the VMs. You can change the user name to something different. You'll need the user name later in this exercise so make a note of what you use.
 
     ```bash
-    export = USERNAME=azureuser
+    export USERNAME=azureuser
     ```
 
 1. Run the following command to create a password for the virtual machines created by the scripts. The password is stored in a variable, and also recorded in the text file passwd.txt in case you need it later.
