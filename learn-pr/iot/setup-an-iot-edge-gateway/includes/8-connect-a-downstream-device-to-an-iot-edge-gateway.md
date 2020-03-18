@@ -90,8 +90,4 @@ In this module, we'll configure a pre-built Downstream Device to connect to the 
 
 1. Leave the simulated device running while you move on to the next module.
 
-Congratulations, that's the end of the module! 
-
-## Next steps
-
-To finish this module, complete the following knowledge check.    
+Congratulations, that's the end of the module! In the next module, we will verify event flow from downstream device through IoT Edge Gateway to IoT Hub. 
