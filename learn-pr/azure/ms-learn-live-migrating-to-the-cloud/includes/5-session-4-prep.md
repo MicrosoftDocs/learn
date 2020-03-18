@@ -53,8 +53,8 @@ You're now ready to join session four! :-)
 
 ## Resources
 
-- Overview of features of Azure Storage Account settings: [docs.microsoft.com/de-de/azure/storage/common/storage-introduction#types-of-storage-accounts](https://docs.microsoft.com/de-de/azure/storage/common/storage-introduction#types-of-storage-accounts)
-- Storage Redundancy reference: [docs.microsoft.com/de-de/azure/storage/common/storage-redundancy](https://docs.microsoft.com/de-de/azure/storage/common/storage-redundancy)
+- Overview of features of Azure Storage Account settings: [docs.microsoft.com/de-de/azure/storage/common/storage-introduction#types-of-storage-accounts](https://docs.microsoft.com/azure/storage/common/storage-introduction#types-of-storage-accounts)
+- Storage Redundancy reference: [docs.microsoft.com/de-de/azure/storage/common/storage-redundancy](https://docs.microsoft.com/azure/storage/common/storage-redundancy)
 - Azure Storage Explorer: [azure.microsoft.com/features/storage-explorer/](https://azure.microsoft.com/features/storage-explorer/)
 - Windows.Azure.Storage.Blob NuGet: [www.nuget.org/packages/Microsoft.Azure.Storage.Blob/](https://www.nuget.org/packages/Microsoft.Azure.Storage.Blob/)
 - Microsoft Learn Module: [Store Application Data with Azure Blob storage](https://docs.microsoft.com/learn/modules/store-app-data-with-azure-blob-storage/)
