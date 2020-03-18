@@ -1,0 +1,20 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-computing.how-cloud-works.cmu-share-cloud-resources.4-abstractions
+title: Abstractions in computing
+metadata:
+  title: Abstractions in computing
+  description: Abstractions in computing
+  ms.date: 03/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-abstractions.md)]
+#quiz:
+#  title: Check your knowledge
+#  questions:
+#
+# Did I Get This block question has intro statement and no visible graphic      
+#  - content: "Please match the abstractions to the proper hardware component."
