@@ -4,7 +4,7 @@ In this module, you will use the Azure CLI to monitor the events sent to Azure I
 
 1. If necessary, log in to your Azure portal using your Azure account credentials.
 
-    If you have more than one Azure account, ensure that you are logged in with the account that is tied to the subscription that intend to use for this course.
+    If you have more than one Azure account, ensure that you are logged in with the account that is tied to the subscription that you intend to use for this course.
 
 1. Navigate to the Azure portal and click on the **Cloud Shell** icon to open up the **Azure Cloud Shell**. When the pane opens, choose the option for the **Bash** terminal within the Cloud Shell.
 
@@ -44,4 +44,4 @@ Once you have completed this lab and verified the event flow, exit the console a
 
 ## Next steps
 
-To finish the module, please complete the following knowledge check.
+To finish the module, complete the following knowledge check.
