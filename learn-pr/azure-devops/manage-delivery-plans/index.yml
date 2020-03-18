@@ -17,7 +17,7 @@ abstract: |
   - Create a delivery plan
   - Adjust a team's sprint workload to optimize delivery efficiency
 prerequisites: An Azure DevOps organization
-iconUrl: /learn/achievements/azure-devops/choose-an-agile-approach-to-software-development.svg
+iconUrl: /learn/achievements/azure-devops/manage-agile-software-delivery-plans-across-teams.svg
 ratingEnabled: true
 levels:
 - beginner
