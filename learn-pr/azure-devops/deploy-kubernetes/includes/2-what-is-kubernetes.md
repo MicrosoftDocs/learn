@@ -11,7 +11,7 @@ Things are looking up at Tailspin. At a recent management offsite, Andy presente
 
 **Amita**: Microservices? Like apps for phones and watches?
 
-**Andy**: No, microservices are just typical web apps. The main difference is that instead of building and deploying a single monolithic app, we refactor any components that would be better maintained and managed as autonomous services. We then build those services to be really good at what they do and deploy them to operate independently.
+**Andy**: No, microservices are just typical apps, like our web app. The main difference is that instead of building and deploying a single monolithic app, we refactor any components that would be better maintained and managed as autonomous services. We then build those services to be really good at what they do and deploy them to operate independently.
 
 **Tim**: I'm not sure I like the sound of that. I'm already dealing with so many services across our environments. I don't know if I want more on my plate.
 

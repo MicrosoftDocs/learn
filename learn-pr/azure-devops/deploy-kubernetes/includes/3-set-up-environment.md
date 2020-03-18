@@ -212,7 +212,7 @@ This solution requires several Azure resources for deployment, which will be cre
       --output tsv)
     ```
 
-1. Create a variable to store the ID of the Azure Container Registry.
+1. Run the following `az acr list` command to print the login server for your ACR instance.
 
     ```azurecli
     az acr list \
@@ -223,11 +223,13 @@ This solution requires several Azure resources for deployment, which will be cre
 
     Note the login server for your container registry. You'll need this when configuring the pipeline and environment in some upcoming steps. Here's an example:
 
-    | LoginServer                      |
-    |----------------------------------|
-    | tailspinspacegame4692.azurecr.io |
+    ```output
+    LoginServer                      
+    --------------------------------
+    tailspinspacegame4692.azurecr.io
+    ```
 
-1. Create a role assignment to authorize the AKS cluster to connect to the Azure Container Registry.
+1. Run the following `az role assignment create` command to create a role assignment to authorize the AKS cluster to connect to the Azure Container Registry.
 
     ```azurecli
     az role assignment create --assignee $clientId \
@@ -268,7 +270,7 @@ To add the variables:
 
 ## Create required service connections
 
-Here you create a service connection that enables Azure Pipelines to access your Azure Container Registry and Azure Kubernetes Service instances. Azure Pipelines uses these service connections to push your containers, as well as to instruct your AKS cluster to pull them in to update the deployed service.
+Here you create service connections that enable Azure Pipelines to access your Azure Container Registry and Azure Kubernetes Service instances. Azure Pipelines uses these service connections to push your containers, as well as to instruct your AKS cluster to pull them in to update the deployed service.
 
 > [!IMPORTANT]
 > Make sure that you're signed in to both the Azure portal and Azure DevOps under the same Microsoft account.
@@ -339,6 +341,6 @@ Here you update the Kubernetes *deployment.yml* manifest to point to the contain
 1. Open the file at **/manifests/deployment.yml** in edit mode.
 1. Change the container image references to use your ACR login server. The code below uses *tailspinspacegame2439.azurecr.io* as an example. 
 
-    [!code-yml[](code/4-1-azure-pipelines.yml?highlight=17,37)]
+    [!code-yml[](code/3-1-azure-pipelines.yml?highlight=17,37)]
 
 1. Commit the changes to the master branch.

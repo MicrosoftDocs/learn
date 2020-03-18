@@ -5,7 +5,6 @@ In this part, you'll:
 > [!div class="checklist"]
 > * Update the pipeline to support CI/CD on a commit to the master branch.
 > * Define some pipeline variables to make the build pipeline easier to maintain.
-> * Replace the existing **Deploy** stage with one that uses a deployment job.
 > * Add a task to build and publish the leaderboard container to your container registry.
 > * Add a task to publish Kubernetes manifests from the **Build** stage so that they can be downloaded for use in the **Deploy** stage.
 > * Add a task to create an image pull secret for use between your Kubernetes and container registry instances.
@@ -22,7 +21,7 @@ Here you add a new pipeline variable to the existing CI/CD pipeline defined in *
 
     **Andy:** This was the build stage we had in place for the previous single-container solution. I knew it wasn't going to run properly, so I disabled it. We can start off by re-enabling CI/CD for commits to the master branch.
 
-1. Replace the existing `trigger` line with the code below. This will automate runs when there is a commit to the master branch.
+1. Replace the existing `trigger` line at the top of the file with the code below. This will automate runs when there is a commit to the master branch.
 
     [!code-yml[](code/4-1-azure-pipelines.yml)]
 
@@ -64,7 +63,7 @@ Here you add a new pipeline variable to the existing CI/CD pipeline defined in *
 
 **Mara:** I am going to replace our existing **Deploy** stage with one that uses a deployment job. A *deployment job* is a special kind of job that allows us to associate our deployment with the Azure DevOps environment created earlier. This will make it easier to track deployment history, which will be especially useful as our solutions get more sophisticated. Another benefit is that it helps us monitor our Kubernetes cluster with integrated features for reviewing pods, services, and more.
 
-1. Remove the existing **Deploy** stage and replace it with the code below. Note the highlighted code that specifies the deployment environment to use created by `(Azure DevOps environment name).(AKS namespace)`.
+1. Remove the existing **Deploy** stage (everything after the build stage) and replace it with the code below. Note the highlighted code that specifies the deployment environment to use created by `(Azure DevOps environment name).(AKS namespace)`.
 
     [!code-yml[](code/4-5-azure-pipelines.yml?highlight=9)]
 
@@ -72,7 +71,7 @@ Here you add a new pipeline variable to the existing CI/CD pipeline defined in *
 
     **Andy:** Let me guess, is there a `download` shorthand for that task?
 
-    **Mara:** Exactly correct!
+    **Mara:** Exactly correct! We can use the `current` specifier to indicate that we want the artifact from the current run of the pipeline.
 
 1. Add the highlighted code as the first step of the **Deploy** stage.
 
@@ -82,34 +81,33 @@ Here you add a new pipeline variable to the existing CI/CD pipeline defined in *
 
     **Mara:** I was just looking that up, and we are in luck. The `KubernetesManifest@0` task supports an action to create the secret needed.
 
-### Kubernetes manifest task
+ ### Kubernetes manifest task
 
-The `KubernetesManifest@0` task is designed to manage all of the mainstream deployment operations required for Kubernetes. It supports multiple `action` options that range from creating secrets to deploying images. In this case, the `createSecret` action will be used, along with the additional parameters defined below.
+	The `KubernetesManifest@0` task is designed to manage all of the mainstream deployment operations required for Kubernetes. It supports multiple `action` options that range from creating secrets to deploying images. In this case, the `createSecret` action will be used, along with the additional parameters defined below.
+	
+	* `action` indicates the feature to run. In this case, `createSecret` creates the shared secret.
+	* `secretName` specifies the name of the secret to create.
+	* `dockerRegistryEndpoint` specifies the name of the Azure Container Services connection.
+	* `kubernetesServiceConnection` specifies the name of the Azure Kubernetes Services connection.
+	* `namespace` specifies the Kubernetes namespace this action applies to.
+	
+	You can learn more about the flexibility of this task in the official docs for the [Kubernetes manifest task](/azure/devops/pipelines/tasks/deploy/kubernetes-manifest?azure-portal=true)
 
-* `action` indicates the feature to run. In this case, `createSecret` creates the shared secret.
-* `secretName` specifies the name of the secret to create.
-* `dockerRegistryEndpoint` specifies the name of the Azure Container Services connection.
-* `kubernetesServiceConnection` specifies the name of the Azure Kubernetes Services connection.
-* `namespace` specifies the Kubernetes namespace this action applies to.
+1. Add the code below to the end of the pipeline. Be sure to indent it to match the `publish` step before it.
 
-You can learn more about the flexibility of this task in the official docs for the [Kubernetes manifest task](/azure/devops/pipelines/tasks/deploy/kubernetes-manifest?azure-portal=true)
+    [!code-yml[](code/4-7-azure-pipelines.yml)]
 
-1. Add the code below to the end of the pipeline.
+    **Andy:** The final step is to trigger the deployment of our updates images to the Kubernetes cluster. Based on the documentation, it looks like we can use the same task, but with a different action and parameters.
 
-[!code-yml[](code/4-7-azure-pipelines.yml)]
+    * `action` indicates the feature to run. In this case, `deploy` does exactly what it sounds like.
+	* `kubernetesServiceConnection` specifies the name of the Azure Kubernetes Services connection.
+	* `namespace` specifies the Kubernetes namespace this action applies to.
+	* `imagePullSecrets` specifies the list of secrets needed to pull from the container registry.
+	* `containers` specifies the list of container images to deploy.
 
-**Andy:** The final step is to trigger the deployment of our updates images to the Kubernetes cluster. Based on the documentation, it looks like we can use the same task, but with a different action and parameters.
+1. Add the code below to the end of the pipeline. Be sure to indent it to match the previous task.
 
-* `action` indicates the feature to run. In this case, `deploy` does exactly what it sounds like.
-* `kubernetesServiceConnection` specifies the name of the Azure Kubernetes Services connection.
-* `namespace` specifies the Kubernetes namespace this action applies to.
-* `imagePullSecrets` specifies the list of secrets needed to pull from the container registry.
-* `containers` specifies the list of container images to deploy.
-
-1. Add the code below to the end of the pipeline.
-
-[!code-yml[](code/4-8-azure-pipelines.yml)]
-
+	[!code-yml[](code/4-8-azure-pipelines.yml)]
 
 ## Save the pipeline to trigger a build and release
 
@@ -124,7 +122,7 @@ You can learn more about the flexibility of this task in the official docs for t
 
     ![Locating the web site IP address](../media/4-deploy-ip.png)
 
-1. Navigate to the copied IP address in a new browser tab. You see the site running.
+1. Navigate to the copied IP address in a new browser tab.
 1. You see the site in production.
 
     ![Reviewing Space Game](../media/4-space-game.png)
@@ -132,12 +130,12 @@ You can learn more about the flexibility of this task in the official docs for t
 1. Return to the Azure DevOps browser tab.
 1. Use the browser **Back** button to return to the **default** namespace page.
 1. Select **leaderboard**. Here you see the service details and associated pods for the **leaderboard** service.
-1. Like before, select the **Copy External IP to  clipboard** button. This IP address is where the site is publicly hosted.
+1. Like before, select the **Copy External IP to  clipboard** button. This IP address is where the leaderboard API is publicly hosted.
 1. The full URL to the public leaderboard API is at that IP address using path `/api/Leaderboard`. You can also add a `pageSize=10` query parameter to make it easier to view the JSON response in your browser. Use a URL like the one below in a new browser tab.
  
     `http://[IP]/api/Leaderboard?pageSize=10`
 
-You see the raw JSON response from the leaderboard API hosted in the Kubernetes cluster.
+1. You see the raw JSON response from the leaderboard API hosted in the Kubernetes cluster.
 
 ![Reviewing the leaderboard JSON response](../media/4-leaderboard-api.png)
 
