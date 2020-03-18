@@ -1,17 +1,26 @@
 ### YamlMime:Module
 uid: learn.azure.use-git-from-vs-code
 metadata:
-  title: TODO - Learn
-  description: TODO
-  ms.date: 10/04/2019
-  author: nickwalkmsft
-  ms.author: nickwalk
+  title: Use Git Version Control from Visual Studio Code
+  description: Utilize Visual Studio Code's tight integration with the source control management system Git.
+  ms.date: 3/18/2020
+  author: bobtabor-msft
+  ms.author: rotabor
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: TODO
-summary: TODO
-abstract: TODO
-prerequisites: TODO
+title: Use Git Version Control from Visual Studio Code 
+summary: Utilize Visual Studio Code's tight integration with the source control management system Git.
+abstract: |
+  In this module, you will:
+  - Utilize Visual Studio Code's Command Pallet to perform many Git tasks like cloning repositories and creating branches.
+  - Take visual cues from Visual Studio Code to understand the status of your work.
+  - Harness Visual Studio Code's Source Control view to stage and unstage changes and create commits.
+  - Uncover numerous time saving short cuts tucked into the Visual Studio Code user interface.
+prerequisites: |
+  - You must have Git installed.
+  - You must have Visual Studio Code installed.
+  - You should have a basic understanding of Git concepts and commands, such as working with repositories, forks, clones, branches, staged and unstaged changes, commits, and pushing commits.
+  - You will need a GitHub account.
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
@@ -21,8 +30,9 @@ products:
 - azure
 units:
 - learn.azure.use-git-from-vs-code.1-introduction
-- learn.azure.use-git-from-vs-code.2-content
-- learn.azure.use-git-from-vs-code.3-exercise
-- learn.azure.use-git-from-vs-code.4-summary
+- learn.azure.use-git-from-vs-code.2-exercise-clone-branch
+- learn.azure.use-git-from-vs-code.3-exercise-stage-commit
+- learn.azure.use-git-from-vs-code.4-knowledge-check
+- learn.azure.use-git-from-vs-code.5-summary
 badge:
   uid: learn.azure.use-git-from-vs-code.badge
