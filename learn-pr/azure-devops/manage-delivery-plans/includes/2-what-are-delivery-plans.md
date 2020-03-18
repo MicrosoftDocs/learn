@@ -2,12 +2,14 @@ As development organizations grow, they need to reorganize into smaller teams th
 
 A _delivery plan_ is a visualization of one or more work schedules. It is intended to provide teams and management an overall view of what each team is planning to produce and when. This allows decisions to be made that optimize the investments across the organization.
 
-It is important that teams regularly review their delivery plans in order to make sure that their work schedule aligns with the schedules of other teams. These reviews should ask questions like:
+It's important that teams regularly review their delivery plans in order to make sure that their work schedule aligns with the schedules of other teams. These reviews should ask questions like:
 * Are we sure we can deliver what we have committed to on our current schedule?
-* Are we confident the teams we are depending on will deliver what we need on their current schedule?
+* Are we confident that the teams we depend on will deliver what we need on their current schedule?
 * Are there lulls in our schedule that we could fill with work?
 
 Delivery plans add value at any point in a project's lifecycle. Since they are dynamically generated based on team backlogs, they're always up-to-date and offer the latest insights.
+
+Let's join the Tailspin web team in their discussion.
 
 **Andy:** I just had a great meeting with engineering management. I demoed the work we're doing with Azure Boards and they're excited about the prospect of getting other teams on board.
 
@@ -29,9 +31,9 @@ Unfortunately, more sophisticated team structures can result in gaps or lags in 
 
 **Mara:** The mountaintop music festival?
 
-**Andy:** Yeah, apparently it's a huge deal in the design community and their entire team just drops off the grid for a whole week to attend. The game engine team is pretty upset because it slipped their schedule by three weeks. Had they known it was coming, they would have made sure to get the artifacts they needed ahead of time. They also apologized for not letting us know sooner. They didn't realize we would be waiting on their beta to ship our bits.
+**Andy:** Yeah, apparently it's a huge deal in the design community and their entire team just drops off the grid for a whole week to attend. The game engine team is pretty upset because it slipped their schedule by three weeks. Had they known it was coming, they would have made sure to get the artifacts they needed ahead of time. They also apologized for not letting us know sooner. They didn't realize we would be waiting on their beta to ship our part.
 
-**Mara:** Well at least we can be glad that the game engine team is publishing their sprint plans. It helped us find this dependency issue early enough to adjust our schedule. 
+**Mara:** Well at least we can be glad that the game engine team is publishing their sprint plans. It helped us find this dependency issue early enough to adjust our schedule.
 
 **Andy:** I just wish there was a way to see these potential risks coming more easily. Our teams have so many dependencies across the company that there's no way we can attend every meeting and subscribe to every distribution group.
 
@@ -39,7 +41,7 @@ Unfortunately, more sophisticated team structures can result in gaps or lags in 
 
 ## Recommendations for managing multiple Agile teams
 
-An Agile approach, along with Azure DevOps, can substantially improve project transparency and predictability. However, projects may still into traditional challenges, often related to personnel and/or miscommunication. Here are a few things to consider as you scale your Agile efforts.
+An Agile approach, along with Azure DevOps, can substantially improve project transparency and predictability. However, projects may still run into traditional challenges, often related to personnel or miscommunication. Here are a few things to consider as you scale your Agile efforts.
 
 ### Build trust in your people and processes
 
