@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.azdo.deploy-kubernetes
+metadata:
+  title: Automate Docker container deployments with Azure Pipelines - Learn
+  description: Learn to implement a CI/CD pipeline for Docker containers.
+  ms.date: 03/18/2020
+  author: edkaim
+  ms.author: v-edkaim
+  ms.topic: interactive-tutorial
+  #ms.learn-contact: v-edkaim
+  ms.prod: learning-azure
+title: Automate Docker container deployments with Azure Pipelines
+summary: Learn to implement a CI/CD pipeline for Docker containers.
+abstract: |
+  In this module, you will:
+  - Create Azure resources to support a Docker container web application.
+  - Update a basic release pipeline to build, publish, and deploy a Docker container.
+  - Monitor the build, release, and deployment of the project.
+prerequisites: |
+  - An Azure subscription
+  - An Azure DevOps organization
+  - A GitHub account
+iconUrl: /learn/achievements/azure-devops/create-multi-stage-pipeline.svg
+levels:
+- beginner
+roles:
+- devops-engineer
+- administrator
+- developer
+- solution-architect
+products:
+- azure
+- azure-devops
+units:
+- learn.azdo.deploy-kubernetes.1-introduction
+- learn.azdo.deploy-kubernetes.2-what-is-kubernetes
+- learn.azdo.deploy-kubernetes.3-set-up-environment
+- learn.azdo.deploy-kubernetes.4-deploy-kubernetes
+- learn.azdo.deploy-kubernetes.5-clean-up-environment
+- learn.azdo.deploy-kubernetes.6-summary
+badge:
+  uid: learn.azdo.deploy-kubernetes.badge
