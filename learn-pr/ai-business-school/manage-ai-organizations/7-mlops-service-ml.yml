@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn-wwl.manage-ai-organizations.mlops-servicing-ml
+uid: learn-wwl.manage-ai-organizations.mlops-service-ml
 title: Manage the machine learning lifecycle with MLOps
 metadata:
   title: Manage the machine learning lifecycle with MLOps
-  description: Introduction to AI strategy in government.
+  description: Manage, monitor, and retrain MLOps models over time.
   ms.date: 05/28/2020
   author: RWortmanMorris
   ms.author: rawortma
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 1 
+durationInMinutes: 9 
 content: |
-  [!include[](includes/7-mlops-servicing-ml.md)] 
+  [!include[](includes/7-mlops-service-ml.md)] 

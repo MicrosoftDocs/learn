@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn-wwl.manage-ai-organizations.mlops-creating-ml
+uid: learn-wwl.manage-ai-organizations.mlops-create-ml
 title: Start the machine learning lifecycle with MLOps
 metadata:
   title: Start the machine learning lifecycle with MLOps
-  description: Introduction to AI strategy in government.
+  description: Introduction to MLOps and the typical ML lifecycle.
   ms.date: 05/28/2020
   author: RWortmanMorris
   ms.author: rawortma
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 1 
+durationInMinutes: 10 
 content: |
-  [!include[](includes/6-mlops-creating-ml.md)] 
+  [!include[](includes/6-mlops-create-ml.md)] 
