@@ -1,16 +1,16 @@
-Now that Python 3 is installed, let's write one line of Python code to see it working.  This tiny line of code will not win you any awards for software design, but it's the first step all software developers take as they begin their learning journey.
+Now that Python 3 is installed, let's write one line of Python code to see it working. This tiny line of code won't win you any awards for software design, but it's the first step all software developers take as they begin their learning journey.
 
 ## Using the Python interpreter's interactive mode
 
-In this module, you'll learn that there are two workflows to write and execute Python code:
+In this module, you'll learn that there are two workflows for writing and running Python code:
 
-- Using the Python interpreter's interactive mode to write and execute one line of Python code at a time
-- Writing Python code in a script file, then using command-line tools to execute the contents of the script file
+- Use the Python interpreter's interactive mode to write and run one line of Python code at a time.
+- Write Python code in a script file and then use command-line tools to run the contents of the script file.
 
-interactive mode allows you to experiment with Python without having to perform additional setup, so it's great for learning new ideas.  However, it is limited: once you exit interactive mode, your code is gone forever.
+Interactive mode allows you to experiment with Python without having to perform additional setup, so it's great for learning new things. But it's limited: after you leave interactive mode, your code is gone forever.
 
 > [!NOTE]
-> Sometimes "interactive mode" is referred to as the "REPL", which is an acronym for "read-eval-print loop".  Many programming languages have a REPL that can be used for this same purpose.
+> Sometimes interactive mode is referred to as "the REPL", which is an acronym for "read-eval-print loop."  Many programming languages have a REPL that can be used for this same purpose.
 
 > [!IMPORTANT]
 > The Python interpretter's interactive mode is different from Visual Studio Code's Python Interactive Window which we'll learn about in another module.

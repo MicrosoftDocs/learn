@@ -1,72 +1,71 @@
-In the previous unit, you ran a command to determine whether you had Python 3 installed.  If you need to install Python 3, choose your operating system below, then follow the instructions.
+In the previous unit, you ran a command to determine whether you had Python 3 installed.  If you need to install Python 3, choose your operating system at the top of this page, and then follow the instructions.
 
-If you determined that you already have Python 3 installed, scroll to the bottom of this page and click the `Continue` button.
+If you determined that you already have Python 3 installed, scroll to the bottom of this page and select **Continue**.
 
 ::: zone pivot="windows"
 
 ## Install Python on Windows
 
-At the time this module was written, Python 3.8 is the latest version of Python available, so we'll be referring to that version in the following instructions.
+At the time this module was written, Python 3.8 was the latest version of Python available, so we'll be referring to that version in the following instructions.
 
-Also, these instructions are specifically for Windows 10.  If you're using a previous version of Windows, the basic instructions are the same, though the wording in some steps might be slightly different.
+Also, these instructions are specifically for Windows 10. If you're using a previous version of Windows, the basic instructions are the same, though the process in some steps might be slightly different.
 
 > [!NOTE]
-> At the time of this writing, Python 3.8.0 was the most current version, so that version is referenced specifically in the instructions.  However, you should install the latest version available to you.  In this case, the text of buttons and files might be slightly different from what you see.
+> At the time of this writing, Python 3.8.0 was the most current version of Python, so we refer to that version in these instructions. You should install the latest version available. If you install a different version, the text on buttons and the file names that you see might be slightly different from the ones in these instructions.
 
-### Step 1 - Download the Python 3.8 installer for Windows.
+### Step 1 - Download the Python 3.8 installer for Windows
 
-Open a web browser and navigate to:
+Open a web browser and go to
+[https://www.python.org/downloads/](https://www.python.org/downloads/?azure-portal=true).
 
-[https://www.python.org/downloads/](https://www.python.org/downloads/?azure-portal=true)
+Select the **Download Python 3.*x*** button. When your browser prompts you to save the file, note the download path, and then save the file to your local hard drive.  Most web browsers save downloaded files into your Downloads folder.
 
-Click the button with the text "Download Python 3.x".  When your browser prompts you to save the file, take note of the download path, then save it to your local hard drive.  Most web browsers save downloaded files into your `Downloads` folder.
+### Step 2 - Locate and run the installer application
 
-### Step 2 - Locate and run the installer application.
+Depending on the web browser you use, you might have the option to run the file immediately after it has downloaded.  
 
-Depending on which web browser you use, you may have the option to execute the file immediately after it has successfully downloaded.  
+If not, you can open File Explorer, go to the download path that you noted in the previous step, and then double-click the file. The file's name should be **python-3.8.0.exe**.
 
-If not, you can open Windows Explorer, navigate to the download path from the previous step, then double-click the file.  The file's name should be `python-3.8.0.exe`.
+### Step 3 - Choose options and start the installation process
 
-### Step 3 - Choose options and begin the installation process.
+After the installer's dialog box appears, select **Add Python 3.8 to PATH**.
 
-After the installer's dialog appears, add a check to the option `Add Python 3.8 to PATH`.
+Next, take note of the installation path under **Install Now**.
 
-Next, take note of the installation path under the words `Install Now`.
+If you're satisfied with the installation location, select **Install Now**.
 
-If you're satisfied with the location where Python will be installed, click `Install Now`.
+If you want to change the installation path, select **Customize installation**.
 
-If you want to change the installation path, select `Customize installation`.
+The first page of options is called **Optional Features**. You don't need to change the default selections. Select **Next**.
 
-The first page of options is titled "Optional Features".  There's no need to change the default selections.  Click the `Next` button.
+The second page of options is called **Advanced Options**. Near the bottom of the page, you can change the installation path under **Customize install location**.
 
-The second page of options is titled "Advanced Options".  Near the bottom, you can change the installation path under `Customize install location`.
+After you're satisfied with the path, select **Install**.
 
-Once you're satisfied with the path, select the `Install` button.
+### Step 4 - Accept the installation
 
-### Step 4 - Accept the User Account Control dialog.
+Next, you'll see the Windows User Account Control dialog box, which prompts you to allow the app to make changes to your device.
 
-Next you'll see Windows' User Account Control dialog, which asks "Do you want to allow this app to make changes to your device?"
+Select **Yes** to continue.
 
-Select the `Yes` button to continue.
+### Step 5 - Close the installer
 
-### Step 5 - Close the installer.
+Select **Close**.
 
-Click the `Close` button.
+### Step 6 - Check your installation
 
-### Step 6 - Check your installation.
-
-To confirm that Python 3 is installed correctly, type the following command at the bash prompt and select the <kbd>Enter</kbd> key on your keyboard:
+To confirm that Python 3 is installed correctly, type the following command at a Bash prompt and then select the <kbd>Enter</kbd> key:
 
 ```bash
 py --version
 ```
 
-You should see the word `Python` with a set of numbers separated with the `.` character.  Here's an example of the output you might see:
+You should see the word `Python` with a set of numbers separated by `.` characters. Here's an example of the output you might see:
 
 ```output
 Python 3.8.0
 ```
-As long as the first of the three numbers is `3`, then congratulations!  You successfully installed Python 3 on your Windows computer.
+As long as the first of the three numbers is `3`, congratulations! You successfully installed Python 3 on your Windows computer.
 
 ::: zone-end
 
@@ -74,120 +73,121 @@ As long as the first of the three numbers is `3`, then congratulations!  You suc
 
 ## Install Python on Linux
 
-At the time this module was written, Python 3.8 is the latest version of Python available, so we'll be referring to that version in the following instructions.
+At the time this module was written, Python 3.8 was the latest version of Python available, so we'll be referring to that version in the following instructions.
 
-As you're likely aware, different Linux distributions use different package managers.  Most popular Linux distributions include either `apt` (an acronym for "Advanced Packaging Tool") or `yum` (an acronym for "Yellowdog Updater, Modified").
+As you're probably aware, different Linux distributions use different package managers. Most popular Linux distributions include either APT (an acronym for "Advanced Packaging Tool") or YUM (an acronym for "Yellowdog Updater, Modified").
 
-We provide instructions for `apt` and `yum` below.  If your distribution of Linux uses a different package manager, you may need to perform a search for: `[your Linux distribution] install python 3`.
+We provide instructions for APT and YUM in this unit. If your distribution of Linux uses a different package manager, you might need to search for **[your Linux distribution] install python 3**.
 
-## Install using `apt`
+## Install by using APT
 
-### Step 1 - Open a Terminal window.
+### Step 1 - Open a Terminal window
 
-Assuming you're running a Linux graphical user interface desktop environment, locate, and launch a terminal window using the Terminal icon.
+Assuming you're running a Linux graphical user interface desktop environment, locate and open a terminal window by using the Terminal icon.
 
-### Step 2 - Update the apt package indexes.
+### Step 2 - Update the APT package indexes
+
+Run the this command:
 
 ```bash
 sudo apt-get update
 ```
-The `apt-get update` command updates the list of packages (the package indexes) from the repositories and Personal Package Archives (PPAs) it knows about so `apt-get` can find the latest version of the packages and their dependencies that you want to install.
+The `apt-get update` command updates the list of packages (the package indexes) from the repositories and Personal Package Archives (PPAs) that it's aware of. This update enables `apt-get` to find the latest versions of the packages that you want to install and their dependencies.
 
-Using the `sudo` command temporarily elevates your permissions to root, the most powerful level of the system.  Invoking `sudo` usually means you'll be asked for your user account's password.
+The `sudo` command temporarily elevates your permissions to root, the most powerful level of the system. When you use `sudo` you'll usually be asked for your user account's password.
 
-`apt-get update` will display all of the items it will update, and may ask you to approve by typing `y` or `yes`, then select the <kbd>Enter</kbd> key on your keyboard.
+`apt-get update` will display all the items it will update. It might prompt you to approve by entering `y` or `yes` and then selecting the <kbd>Enter</kbd> key.
 
-### Step 3 - Install Python 3.
+### Step 3 - Install Python 3
 
-Type the following command at the bash prompt and select the <kbd>Enter</kbd> key on your keyboard:
+Enter the following command at a Bash prompt and then select the <kbd>Enter</kbd> key:
 
 ```bash
 sudo apt-get install python3
 ```
 
-`apt-get install` will locate the appropriate packages from the package index, download the necessary files, and install them into the appropriate folders.
+`apt-get install` will locate the appropriate packages from the package index, download the necessary files, and install the files into the appropriate folders.
 
-### Step 4 - Check your installation.
+### Step 4 - Check your installation
 
-To confirm that Python 3 is installed correctly, type the following command at the bash prompt and select the <kbd>Enter</kbd> key on your keyboard:
+To confirm that Python 3 is installed correctly, enter the following command at a Bash prompt and then select the <kbd>Enter</kbd> key:
 
 ```bash
 python3 --version
 ```
 
-You should see the word `Python` with a set of numbers separated with the `.` character.  Here's an example of the output you might see:
+You should see the word `Python` with a set of numbers separated by `.` characters. Here's an example of the output you might see:
 
 ```output
 Python 3.6.7
 ```
-As long as the first number is `3`, then Python 3 was successfully installed on your system.
+As long as the first number is `3`, Python 3 installed successfully.
 
-However, if the installation failed, you may see an error message.  Use a search engine and type the exact error message into the search bar to find possible causes and solutions.
+If the installation failed, you might see an error message. Enter the exact error message into a search engine's search box to find possible causes and solutions.
 
-## Install using `yum`
+## Install by using YUM
 
-The YUM package manager is used primarily by Red Hat based systems, like Red Hat Enterprise Linux and Fedora, as well as CentOS.  If your system doesn't have `apt` installed, you can try `yum` instead. 
+The YUM package manager is used mainly by Red Hat systems, like Red Hat Enterprise Linux and Fedora, and by CentOS. If APT isn't installed on your system, you can try YUM instead. 
 
-### Step 1 - Open a Terminal window.
+### Step 1 - Open a Terminal window
 
-Assuming you're running a Linux graphical user interface desktop environment, locate, and launch a terminal window using the Terminal icon.
+Assuming you're running a Linux graphical user interface desktop environment, locate and open a terminal window by using the Terminal icon.
 
-### Step 2 - Update the YUM package indexes.
+### Step 2 - Update the YUM package indexes
 
-Type the following command at the bash prompt and select the <kbd>Enter</kbd> key on your keyboard:
+Type the following command at a Bash prompt and then select the <kbd>Enter</kbd> key:
 
 ```bash
 sudo yum update
 ```
-`yum update` will make sure all packages and their dependencies are up to date.  Updating the package list is a good practice before installing new software.
+`yum update` will make sure all packages and their dependencies are up to date. It's a good idea to update the package list before you install new software.
 
-### Step 3 - Install Python 3.
+### Step 3 - Install Python 3
 
-Type the following command at the bash prompt and select the <kbd>Enter</kbd> key on your keyboard:
+Type the following command at a Bash prompt and then select the <kbd>Enter</kbd> key:
 
 ```bash
 yum install rh-python36
 ```
 
-### Step 4 - Check your installation.
+### Step 4 - Check your installation
 
-To confirm that Python 3 is installed correctly, type the following command at the bash prompt and select the <kbd>Enter</kbd> key on your keyboard:
+To confirm that Python 3 is installed correctly, type the following command at a Bash prompt and then select the <kbd>Enter</kbd> key:
 
 ```bash
 python3 --version
 ```
 
-You should see the word `Python` with a set of numbers separated with the `.` character.  Here's an example of the output you might see:
+You should see the word `Python` with a set of numbers separated by `.` characters. Here's an example of the output you might see:
 
 ```output
 Python 3.6.7
 ```
-As long as the first number is `3`, then Python 3 was successfully installed on your system.
+As long as the first number is `3`, Python 3 installed successfully.
 
-However, if the installation failed you may see an error message.  If this happens, continue on to Step 5, below.
+If the installation failed, you might see an error message. If this happens, continue on to step 5.
 
-### Step 5 - (Optional) Enable the Software Collections feature in bash
+### Step 5 - (Optional) Enable the Software Collections feature in Bash
 
-Software Collections allow you to install multiple versions of the same software components on your system.  Therefore, you must specify which version of Python you want to run in the shell.  Enter the following command at the bash prompt and select the <kbd>Enter</kbd> key on your keyboard:
+Software Collections allows you to install multiple versions of the same software components on your system. So you need to specify which version of Python you want to run in the shell. Enter the following command at a Bash prompt and then select the <kbd>Enter</kbd> key:
 
 ```bash
 scl enable rh-python36 bash
 ```
-Now, retry Step 4.  The output should resemble the following output:
+Now retry step 4. The output should resemble this output:
 
 ```output
 Python 3.6.7
 ```
-As long as the first number is `3`, the Python 3 was successfully installed on your system, albeit in the context of a Software Collection.
+As long as the first number is `3`, Python 3 installed successfully, in the context of a Software Collection.
 
-`scl enable` launches a new bash session setting Python 3.6 as the default Python version.  However, Python 3.6 is only the default Python for the current shell session.  If you exit the session or open a new session from another terminal, then bash will revert to Python 2.7 as the default Python version.
+`scl enable` starts a new Bash session, setting Python 3.6 as the default Python version. But Python 3.6 is the default version only for the current shell session. If you exit the session or open a new session from another terminal, Bash will revert to Python 2.7 as the default Python version.
 
-For more information about working with Software Collections, view the following hyperlink:
+For more information, see
+[Red Hat Software Collections 2.4](https://access.redhat.com/documentation/en-us/red_hat_software_collections/2/html/2.4_release_notes/chap-rhscl?azure-portal=true).
 
-[https://access.redhat.com/documentation/en-us/red_hat_software_collections/2/html/2.4_release_notes/chap-rhscl](https://access.redhat.com/documentation/en-us/red_hat_software_collections/2/html/2.4_release_notes/chap-rhscl?azure-portal=true).
-
-> [!Important]
-> If you needed to use `scl enable` to run `python3 --version`, then you may need to enter this command each time you want to work in Python.  There are workarounds, but this is the intended functionality of Software Collections.  See the following article for a possible work-around: [https://access.redhat.com/solutions/527703](https://access.redhat.com/solutions/527703?azure-portal=true).
+> [!IMPORTANT]
+> If you needed to use `scl enable` to run `python3 --version`, you might need to enter that command every time you want to work in Python. There are workarounds, but this is the intended functionality of Software Collections.  See [Make a Red Hat Software Collection persist](https://access.redhat.com/solutions/527703?azure-portal=true) for a possible workaround.
 
 ::: zone-end
 
@@ -196,51 +196,49 @@ For more information about working with Software Collections, view the following
 
 ## Install Python on macOS
 
-The steps that follow will download the Python installer directly from the Python website.
+Follow these steps to download the Python installer from the Python website.
 
 > [!NOTE]
-> At the time of this writing, Python 3.8.0 was the most current version, so that version is referenced specifically in the instructions.  However, you should install the latest version available to you.  In this case, the text of buttons and files might be slightly different from what you see.
+> At the time of this writing, Python 3.8.0 was the most current version, so we refer to that version in these instructions. You should install the latest version available. If you install a different version, the text on buttons and the file names that you see might be slightly different from the ones in these instructions.
 
-> [!Note]
-> Alternatively, you can use Homebrew to install Python and Visual Studio Code.  For instructions, visit this URL instead:
-[https://docs.brew.sh/Homebrew-and-Python](https://docs.brew.sh/Homebrew-and-Python?azure-portal=true)
+> [!NOTE]
+> Alternatively, you can use Homebrew to install Python and Visual Studio Code. For instructions, see the 
+[Homebrew documentation](https://docs.brew.sh/Homebrew-and-Python?azure-portal=true).
 
-### Step 1: Navigate to the Python downloads website and download the installer.
+### Step 1: Go to the Python download website and download the installer
 
-Navigate your web browser to:
+Go to [https://www.python.org/downloads/](https://www.python.org/downloads/?azure-portal=true).
 
-[https://www.python.org/downloads/](https://www.python.org/downloads/?azure-portal=true)
+The website should automatically direct you to a page specifically for Mac OS X. Select the **Download Python 3.8.0** button.
 
-The website should automatically direct you to a page specifically for `Mac OS X`.  Click the large button with the text "Download Python 3.8.0".
+You might see a window prompting you to allow downloads from python.org. Select **Allow**.
 
-You may see a popup asking whether you allow downloads on "python.org".  Click the "Allow" button.
+After a moment, a file named python-3.8.0-mascosx10.9.pkg should download to the Downloads stack in your Dock.
 
-After a few moments, a file named `python-3.8.0-mascosx10.9.pkg' should be downloaded to the Downloads stack in your Dock.
+### Step 2: Start the Python installer and accept options for a standard installation
 
-### Step 2: Launch the Python installer and accept options for a standard install.
+Double-click the .pkg file that you downloaded to start the installer. The Python installer will prompt you to install, verify, and accept various options and license agreements. Take the time to read through these prompts to understand what the installer will do to your computer.
 
-Double-click the `.pkg` file you downloaded to launch the installer.  The Python installer will ask to install, verify, and accept various options and license agreements.  Take the time to read through these prompts to understand what the installer will do to your computer.
+When the installation process finishes, a Finder window will appear showing the contents of the Python folder. You also should see a congratulations screen when the installation finishes. At that point you can select **Close**.
 
-When the installation process finishes, a Finder window will appear with the contents of the Python folder.  You also should see a "Congratulations!" screen at the successful completion of the installation process, at which point you can choose the "Close" button to exit the installer.
+If you're prompted to move the Python installer to the trash, you can do so.
 
-If you're prompted to move the Python installer to the Trash, you may do so.
+### Step 3: Check to ensure that Python 3 installed correctly
 
-### Step 3: Check to ensure that Python 3 was installed correctly.
+Using Spotlight (<kbd>Command</kbd> + <kbd>Spacebar</kbd>), enter **terminal** and then select the <kbd>Return</kbd> key to launch Terminal.
 
-Using Spotlight (<kbd>Command</kbd> + <kbd>Spacebar</kbd>) type `terminal` and select the <kbd>Return</kbd> key on your keyboard to launch Terminal.
-
-At the Terminal prompt, type the following and select the <kbd>Return</kbd> key on your keyboard:
+At the Terminal prompt, enter the following command and then select the <kbd>Return</kbd> key:
 
 ```bash
 python3 --version
 ```
 
-You should see the word `Python` with a set of numbers separated with the `.` character.  Here's an example of the output you might see:
+You should see the word `Python` with a set of numbers separated by `.` characters. Here's an example of the output you might see:
 
 ```output
 Python 3.8.0
 ```
-As long as the first number is `3`, then Python 3 was successfully installed on your system.
+As long as the first number is `3`, Python 3 installed successfully.
 
 
 ::: zone-end
