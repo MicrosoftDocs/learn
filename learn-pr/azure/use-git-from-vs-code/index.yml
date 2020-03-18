@@ -29,10 +29,10 @@ roles:
 products:
 - azure
 units:
-- learn.azure.use-git-from-vs-code.1-introduction
-- learn.azure.use-git-from-vs-code.2-exercise-clone-branch
-- learn.azure.use-git-from-vs-code.3-exercise-stage-commit
-- learn.azure.use-git-from-vs-code.4-knowledge-check
-- learn.azure.use-git-from-vs-code.5-summary
+- learn.azure.use-git-from-vs-code.introduction
+- learn.azure.use-git-from-vs-code.exercise-clone-branch
+- learn.azure.use-git-from-vs-code.exercise-stage-commit
+- learn.azure.use-git-from-vs-code.knowledge-check
+- learn.azure.use-git-from-vs-code.summary
 badge:
   uid: learn.azure.use-git-from-vs-code.badge

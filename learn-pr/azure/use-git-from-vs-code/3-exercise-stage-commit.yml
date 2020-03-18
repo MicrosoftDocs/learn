@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.use-git-from-vs-code.3-stage-commit
+uid: learn.azure.use-git-from-vs-code.exercise-stage-commit
 title: Exercise - Stage, commit and push changes to a remote repo using Visual Studio Code's Git integration
 metadata:
   title: Exercise - Stage, commit and push changes to a remote repo using Visual Studio Code's Git integration
