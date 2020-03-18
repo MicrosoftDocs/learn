@@ -28,6 +28,7 @@ products:
 - azure
 - azure-portal
 - azure-active-directory
+- azure-rbac
 units:
 - learn.secure-azure-resources-with-rbac.1-introduction
 - learn.secure-azure-resources-with-rbac.2-rbac-overview

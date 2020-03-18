@@ -78,7 +78,7 @@ You can connect your virtual networks in any of several ways.  You can use Azure
 
 ### Azure VPN Gateway
 
-When you're working toward integrating your on-premises network with Azure, there needs to be a bridge between them. VPN Gateway is an Azure service that provides this functionality. A VPN gateway can send encrypted traffic between the two networks. VPN gateways support multiple connections, which enable them to route VPN tunnels that use any available bandwidth. A virtual network can have only one gateway assigned. VPN gateways make connections possible from virtual network to virtual network in Azure.
+When you're working toward integrating your on-premises network with Azure, there needs to be a bridge between them. VPN Gateway is an Azure service that provides this functionality. A VPN gateway can send encrypted traffic between the two networks. VPN gateways support multiple connections, which enable them to route VPN tunnels that use any available bandwidth. A virtual network can have only one gateway assigned. VPN gateways can also be used for connections between virtual networks in Azure.
 
 Implementing a VPN gateway requires two or more virtual machines to be deployed to the subnet that you create when you set up the virtual network. In this instance, the subnet is also known as the gateway subnet. Each virtual machine is assigned a default configuration for routing and gateway services, explicit to the provisioned gateway. You can configure these virtual machines directly.
 

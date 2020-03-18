@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.define-foundation-pillars.explore-last-foundation
+title: Explore the last foundation pillar of DevOps, Technology
+metadata:
+  title: Explore the last foundation pillar of DevOps, Technology
+  description: "Explore the last foundation pillar of DevOps, Technology."
+  ms.date: 03/06/2020
+  author: wwlpublish
+  ms.author: sallybre
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-explore-last-foundation.md)]

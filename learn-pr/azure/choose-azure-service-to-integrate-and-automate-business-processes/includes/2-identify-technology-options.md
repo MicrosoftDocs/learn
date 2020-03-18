@@ -11,7 +11,7 @@ Frequently, a business runs into issues when it merges with a second business or
 Business processes modeled in software are often called **workflows**. Azure includes four different technologies that you can use to build and implement workflows that integrate multiple systems:
 
 - Logic Apps
-- Microsoft Flow
+- Microsoft Power Automate
 - WebJobs
 - Azure Functions
 
@@ -26,7 +26,7 @@ In addition, workflows created with these technologies can either start based on
 
 ## Design-first technologies
 
-When business analysts discuss and plan a business process, they may draw a flow diagram on paper. With Logic Apps and Microsoft Flow, you can take a similar approach to designing a workflow. They both include user interfaces in which you can draw out the workflow. We call this approach a *design-first* approach.
+When business analysts discuss and plan a business process, they may draw a flow diagram on paper. With Logic Apps and Microsoft Power Automate, you can take a similar approach to designing a workflow. They both include user interfaces in which you can draw out the workflow. We call this approach a *design-first* approach.
 
 ### Logic Apps
 
@@ -42,11 +42,11 @@ Alternatively, if you prefer to work in code, you can create or edit a workflow 
 
 One reason why Logic Apps is so good at integration is that over 200 connectors are included. A *connector* is a Logic Apps component that provides an interface to an external service. For example, the Twitter connector allows you to send and retrieve tweets, while the Office 365 Outlook connector lets you manage your email, calendar, and contacts. Logic Apps provides hundreds of pre-built connectors that you can use to create your apps. If you have an unusual or unique system that you want to call from a Logic Apps, you can create your own connector if your system exposes a REST API.
 
-### Microsoft Flow
+### Microsoft Power Automate
 
-![Logo Microsoft Flow](../media/2-microsoft-flow-logo.png)
+![Logo Microsoft Power Automate](../media/2-microsoft-flow-logo.png)
 
-Microsoft Flow is a service that you can use to create workflows even when you have no development or IT Pro experience. You can create workflows that integrate and orchestrate many different components by using the website or the Microsoft Flow mobile app.
+Microsoft Power Automate is a service that you can use to create workflows even when you have no development or IT Pro experience. You can create workflows that integrate and orchestrate many different components by using the website or the Microsoft Power Automate mobile app.
 
 There are four different types of flow that you can create:
 
@@ -55,22 +55,22 @@ There are four different types of flow that you can create:
 - **Scheduled**: A flow that executes on a regular basis such as once a week, on a specific date, or after 10 hours.
 - **Business process**: A flow that models a business process such as the stock ordering process or the complaints procedure.
 
-Microsoft Flow provides an easy-to-use design surface that anyone can use to create flows of the above types. As the following screenshot illustrates, the designer makes it easy to design and layout your process.
+Microsoft Power Automate provides an easy-to-use design surface that anyone can use to create flows of the above types. As the following screenshot illustrates, the designer makes it easy to design and layout your process.
 
-![Microsoft Flow designer showing a workflow with a file trigger, an Office action to get a user's profile and an Outlook action to send an email.](../media/2-flow-designer.png)
+![Microsoft Power Automate designer showing a workflow with a file trigger, an Office action to get a user's profile and an Outlook action to send an email.](../media/2-flow-designer.png)
 
-Under the hood, Microsoft Flow is built on Logic Apps. This fact means that Flow supports the same range of connectors and actions. You can also use custom connectors in Microsoft Flow.
+Under the hood, Microsoft Power Automate is built on Logic Apps. This fact means that Power Automate supports the same range of connectors and actions. You can also use custom connectors in Microsoft Power Automate.
 
 ### Design-first technologies compared
 
-As you can see from the following table, Microsoft Flow is more appropriate for use by non-technical staff. If your workflow designers are IT professionals, developers, or DevOps practitioners, Logic Apps are usually a better fit:
+As you can see from the following table, Microsoft Power Automate is more appropriate for use by non-technical staff. If your workflow designers are IT professionals, developers, or DevOps practitioners, Logic Apps are usually a better fit:
 
-| | Microsoft Flow| Logic Apps |
+| | Microsoft Power Automate| Logic Apps |
 | -- | -- | -- |
 | **Intended users** | Office workers and business analysts | Developers and IT pros |
 | **Intended scenarios** | Self-service workflow creation | Advanced integration projects |
 | **Design tools** | GUI only. Browser and mobile app | Browser and Visual Studio designer. Code editing is possible |
-| **Application Lifecycle Management** | Flow includes testing and production environments | Logic Apps source code can be included in Azure DevOps and source code management systems |
+| **Application Lifecycle Management** | Power Automate includes testing and production environments | Logic Apps source code can be included in Azure DevOps and source code management systems |
 
 ## Code-first technologies
 
@@ -128,4 +128,4 @@ In most cases, the simple administration and more flexible coding model provided
 | Can be part of an App Service application | Yes | No |
 | Provides close control of `JobHost` | Yes | No |
 
-Now you know what design-first and code-first technologies are available to you, how do you narrow you choice down for a given scenario? We'll look at this question in the next unit.
+Now that you know what design-first and code-first technologies are available to you, how do you narrow your choices? We'll look at this question in the next unit.

@@ -1,0 +1,53 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-computing.cloud-storage.cloud-storage-overview.12-newsql-databases
+title: NewSQL databases
+metadata:
+  title: NewSQL databases
+  description: NewSQL databases
+  ms.date: 03/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/12-newsql-databases.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: "What are the primary tradeoffs in most NoSQL databases?"
+    choices:
+    - content: "Strong consistency is traded for performance and scalability"
+      isCorrect: false
+      explanation: "That's not the only right answer! What is consistency traded for in NoSQL databases?"
+    - content: "Partition tolerance is traded for availability"
+      isCorrect: false
+      explanation: "That's not quite right. What is consistency traded for in NoSQL databases?"
+    - content: "Consistency is traded for availability and partition tolerance"
+      isCorrect: false
+      explanation: "That's not the only right answer! What is consistency traded for in NoSQL databases?"
+    - content: "Strong consistency is traded for performance and scalability, and consistency is traded for availability and partition tolerance"
+      isCorrect: true
+      explanation: "Correct! The primary tradeoff is with consistency. Most NoSQL databases trade consistency to ensure availability and partition tolerance. They also trade strong consistency for performance and availability."
+    - content: "None of the above"
+      isCorrect: false
+      explanation: "That's not quite right. Review the NoSQL and CAP theorem sections. What is consistency traded for in NoSQL databases?"
+
+  - content: "An online art creation and distribution website allows users to upload artwork and share it with other users. Other users can comment on and, if the uploader allows, remix the artwork submitted by the original artist. The website has become popular and is now evaluating storage options that can scale as the website continually increases in popularity. Given the needs of the website, what type of database would be the best fit to store the users' artwork?"
+    choices:
+    - content: "Graph database"
+      isCorrect: false
+      explanation: "That's not quite right. Graph databases work best with data that can be represented in graph form. Note that the website is dealing with artworks and it needs to store them. Because the website is growing rapidly, it needs a scalable storage system."
+    - content: "Relational database"
+      isCorrect: false
+      explanation: "That's not quite right. Relational databases work well with structured data, while the artwork submitted by users typically consists of binary objects. Note that the website is dealing with artworks and it needs to store them. Because the website is growing rapidly, it needs a scalable storage system."          
+    - content: "Document store"
+      isCorrect: true
+      explanation: "Correct! A document store might be the best option for this website because the artwork submitted by users can be treated as individual documents."
+    - content: "Key-value store"
+      isCorrect: false
+      explanation: "That's not quite right. Key-value stores do support a diverse range of databases, but for this purpose, a document store may be better suited because it is designed to handle binary large objects (BLOBs). Note that the website is dealing with artworks and it needs to store them. Because the website is growing rapidly, it needs a scalable storage system."      
+    - content: "Columnar database"
+      isCorrect: false
+      explanation: "That's not quite right. Columnar databases are similar to RDMSs, but they store information in column order. We need a database that is flexible enough to store artwork as binary objects. Note that the website is dealing with artworks and it needs to store them. Because the website is growing rapidly, it needs a scalable storage system."

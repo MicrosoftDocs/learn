@@ -1,0 +1,32 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-computing.cloud-basics.cmu-build-apps-cloud.6-tail-latency
+title: How to deal with tail latency
+metadata:
+  title: How to deal with tail latency
+  description: Learn how to deal with tail latency
+  ms.date: 02/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 13
+content: |
+  [!include[](includes/6-tail-latency.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which of the following is **not** a recommended way to solve the variability problem that leads to a long tail?"
+    choices:
+    - content: "Speculative replication of jobs when resources are available"
+      isCorrect: false
+      explanation: "Incorrect. Which of the options presented seems to be counterintuitive?"
+    - content: "Scheduling the shortest jobs to run first to reduce queuing delay"
+      isCorrect: true
+      explanation: "Correct!"
+    - content: "Simply accepting the results that are returned within the first 50 ms and generating the final response to the user based on incomplete or inaccurate data"
+      isCorrect: false
+      explanation: "Incorrect. Which of the options presented seems to be counterintuitive?"
+    - content: "Turning off power-saving and idling mechanisms on the servers"
+      isCorrect: false
+      explanation: "Incorrect. Which of the options presented seems to be counterintuitive?"
+

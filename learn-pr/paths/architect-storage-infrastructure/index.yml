@@ -23,6 +23,7 @@ products:
 modules:
 - learn.choose-storage-approach-in-azure
 - learn.create-azure-storage-account
+- learn.upload-download-and-manage-data-with-azure-storage-explorer
 - learn.connect-app-to-azure-storage
 - learn.ha-application-storage-with-grs
 - learn.azure.secure-azure-storage-account

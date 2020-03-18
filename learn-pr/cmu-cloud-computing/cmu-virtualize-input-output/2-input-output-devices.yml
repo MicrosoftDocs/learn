@@ -1,0 +1,93 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-computing.how-cloud-works.cmu-virtualize-input-output.2-input-output-devices
+title: Virtualize I/O devices
+metadata:
+  title: Virtualize I/O devices
+  description: Virtualize I/O devices
+  ms.date: 03/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-input-output-devices.md)]
+
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: "In a native virtualized system, how many device drivers should be supported for each physical device?"
+    choices:
+    - content: "1"
+      isCorrect: false
+      explanation: "Incorrect! OSs do not interact directly with physical devices. Thus, for such a system to work, there should be OSs that do not interact directly with physical devices. There should also be more device drivers available. It depends on which modules need to interact directly with hardware."
+    - content: "2"
+      isCorrect: true
+      explanation: "Correct!"
+    - content: "3"
+      isCorrect: false
+      explanation: "Incorrect. In native virtualized systems, the hypervisor should support device drivers for each physical device because it interacts directly with the physical layer. Furthermore, guest OSs should support device drivers for interacting with virtual devices. Nothing more is required. It depends on which modules need to interact directly with hardware."
+    - content: "4"
+      isCorrect: false
+      explanation: "Incorrect. In native virtualized systems, the hypervisor should support device drivers for each physical device because it interacts directly with the physical layer. Furthermore, guest OSs should support device drivers for interacting with virtual devices. Nothing more is required. It depends on which modules need to interact directly with hardware."
+
+  - content: "In a dual-mode hosted virtualized system, how many device drivers can be supported for each physical device?"
+    choices:
+    - content: "1"
+      isCorrect: true
+      explanation: "Correct! Dual-mode hosted virtualized systems collocate the hypervisor with a traditional OS on the same physical machine. Thus, the device drivers provided by the host OS can be simply borrowed to handle I/O requests. Guest OSs can delegate I/O requests to the hypervisor, which, in return, can delegate them to the host OS for fulfillment."
+    - content: "2"
+      isCorrect: false
+      explanation: "Incorrect. In dual-mode hosted virtualized systems, device drivers provided by the host OS can be borrowed to handle I/O requests, making having them at the hypervisor superfluous. It depends on which modules need to interact directly with hardware."
+    - content: "3"
+      isCorrect: false
+      explanation: "Incorrect. In dual-mode hosted virtualized systems, device drivers provided by the host OS can be borrowed to handle I/O requests, making having them at the hypervisor superfluous. It depends on which modules need to interact directly with hardware."
+    - content: "4"
+      isCorrect: false
+      explanation: "Incorrect. In dual-mode hosted virtualized systems, device drivers provided by the host OS can be borrowed to handle I/O requests, making having them at the hypervisor superfluous. It depends on which modules need to interact directly with hardware."
+
+  - content: "I/O requests must be intercepted by the hypervisor because they are converted to:"
+    choices:
+    - content: "Sensitive instructions."
+      isCorrect: false
+      explanation: "Incorrect. Sensitive instructions can be privileged and unprivileged. I/O requests can be intercepted easily by the hypervisor because they are privileged."
+    - content: "Unprivileged instructions."
+      isCorrect: false
+      explanation: "Incorrect. Unprivileged instructions are user instructions. User instructions do not trap to the hypervisor. Thus, the hypervisor need not intercept them."
+    - content: "Critical instructions."
+      isCorrect: false
+      explanation: "Incorrect. Critical instructions are sensitive, yet unprivileged, instructions. I/O requests are not converted to critical instructions."
+    - content: "Privileged instructions."
+      isCorrect: true
+      explanation: "Correct!"
+    - content: "User instructions."
+      isCorrect: false
+      explanation: "Incorrect. User instructions do not trap to the hypervisor. Thus, the hypervisor need not intercept them."
+
+  - content: "The hypervisor can intercept I/O requests:"
+    choices:
+    - content: "At only the system call interface."
+      isCorrect: false
+      explanation: "Incorrect. In principle, the hypervisor can further intercept I/O requests at the device driver interface."
+    - content: "At only the device driver interface."
+      isCorrect: false
+      explanation: "Incorrect. In principle, the hypervisor can further intercept I/O requests at the system call interface."
+    - content: "At only the operation-level interface."
+      isCorrect: false
+      explanation: "Incorrect. In principle, the hypervisor can further intercept I/O requests at the device driver interface."
+    - content: "At either the system call or the device driver interface."
+      isCorrect: false
+      explanation: "Incorrect. In principle, the hypervisor can intercept I/O requests at the operation-level interface."
+    - content: "At any system interface."
+      isCorrect: true
+      explanation: "Correct!"
+
+  - content: "Assume two VMs, VM1 and VM2, are running on the same physical machine. If VM1 sends messages to VM2, would the hypervisor transmit those messages through the NIC of the physical machine?"
+    choices:
+    - content: "Yes"
+      isCorrect: false
+      explanation: "Incorrect. The hypervisor can easily determine if the source and destination addresses are for VMs running on the same physical machine. Subsequently, the hypervisor can internally reroute (by scheduling I/O interrupts at the destination VM) the messages from the source VM to the destination VM without involving the physical NIC. Hint: Watch the video!"
+    - content: "No"
+      isCorrect: true
+      explanation: "Correct!"
