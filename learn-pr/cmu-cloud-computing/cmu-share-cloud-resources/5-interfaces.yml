@@ -1,0 +1,42 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-computing.how-cloud-works.cmu-share-cloud-resources.5-interfaces
+title: Interfaces in computing
+metadata:
+  title: Interfaces in computing
+  description: Interfaces in computing
+  ms.date: 03/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-interfaces.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: "The definition of the memory resources and the instructions that manipulate them are documented in the:"
+    choices:
+    - content: "ISA"
+      isCorrect: true
+      explanation: "Correct!"
+    - content: "API"
+      isCorrect: false
+      explanation: "Incorrect. The API includes data types, data structures, functions, and object classes. Understand the differences between API, ABI, and ISA. Review the video again if you're not sure."
+    - content: "ABI"
+      isCorrect: false
+      explanation: "Incorrect. ABI is a binary of the API. The API includes data types, data structures, functions, and object classes. Understand the differences between API, ABI, and ISA. Review the video again if you're not sure."
+
+  - content: "The actual mechanisms by which the operating system communicates with the underlying hardware in order to carry out its requested services and resource management decisions are included in the:"
+    choices:
+    - content: "ABI"
+      isCorrect: false
+      explanation: "Incorrect. ABI is a binary of the API. The API includes data types, data structures, functions, and object classes. Understand the differences between API, ABI, and ISA. Review the video again if you're not sure."
+    - content: "ISA"
+      isCorrect: true
+      explanation: "Correct!"
+    - content: "API"
+      isCorrect: false
+      explanation: "Incorrect. The API includes data types, data structures, functions, and object classes. Understand the differences between API, ABI, and ISA. Review the video again if you're not sure."
+      
