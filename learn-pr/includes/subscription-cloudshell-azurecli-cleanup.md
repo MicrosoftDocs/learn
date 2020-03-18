@@ -3,10 +3,10 @@
 <!-- Standard resource group creation -->
 ::: zone pivot="personal-subscription"
 
-The Azure resources that you created can incur ongoing costs. To avoid such costs, make sure to delete the resource group that contains all those resources with the following Azure CLI command:
+The Azure resources that you created can incur ongoing costs. Make sure to delete the resource group that contains all those resources with the following Azure CLI command in the Cloud Shell. This will deallocate and remove all the created resources from your subscription.
 
 ```azurecli
-az group delete --name learn-rg
+az group delete --name learn-resources
 ```
 
 ::: zone-end
