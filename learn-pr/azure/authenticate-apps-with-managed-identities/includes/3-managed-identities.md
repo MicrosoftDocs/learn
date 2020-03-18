@@ -24,7 +24,7 @@ When you work with managed identities, you should know some common terms:
 
 You can create two types of managed identity: system-assigned identity and user-assigned managed identity. These types are similar, but they're used differently.
 
-### System-assigned identity
+### System-assigned managed identity
 
 You enable system-assigned identity directly on an Azure service instance, such as a VM. When you enable that identity, Azure creates a service principal through Azure Resource Manager. 
 

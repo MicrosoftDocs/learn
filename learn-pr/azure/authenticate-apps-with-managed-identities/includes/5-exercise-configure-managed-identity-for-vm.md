@@ -1,10 +1,10 @@
-The VM you use to host your app has been deployed in Azure. You now need to enable a managed identity in the company's Azure subscription. The idea is to allow your stock-tracking app access to the Azure resources it needs.
+The VM that hosts your app has been deployed in Azure. You now need to enable a managed identity in the company's Azure subscription. The idea is to allow your stock-tracking app to access the Azure resources that it needs.
 
-In this unit, you'll create a system-assigned managed identity for your virtual machine, and see how to access Azure resources from inside it.
+In this unit, you'll create a system-assigned managed identity for your virtual machine. You'll see how to access Azure resources from inside the identity.
 
-### Set up the environment
+## Set up the environment
 
-1. Create an Azure Key Vault to store your company's private data. Every Azure Key Vault name needs to be globally unique.
+1. Create an instance of Azure Key Vault to store your company's private data. Every Azure Key Vault name needs to be globally unique.
 
     ```azurecli
     export VMNAME=prodserver
@@ -17,7 +17,7 @@ In this unit, you'll create a system-assigned managed identity for your virtual 
         --sku standard
     ```
 
-1. Create a VM to host your company's app, and store the public IP address in an environment variable.
+1. Create a VM to host your company's app. Store the public IP address in an environment variable.
 
     ```azurecli
     export publicIP=$(az vm create \
@@ -30,9 +30,9 @@ In this unit, you'll create a system-assigned managed identity for your virtual 
     ```
 
     > [!NOTE]
-    > Creating the VM can take a couple of minutes to complete.
+    > Creating the VM can take a few minutes.
 
-### Configure a system-assigned managed identity for an Azure VM
+## Configure a system-assigned managed identity for an Azure VM
 
 1. Assign a system-managed identity to the VM.
 
@@ -42,7 +42,7 @@ In this unit, you'll create a system-assigned managed identity for your virtual 
       --resource-group <rgn>[Sandbox resource group]</rgn>
     ```
 
-    This command should return a similar response showing the managed identity:
+    This command should return a response that shows the managed identity. Here's an example  response:
 
     ```json
     {
@@ -51,9 +51,9 @@ In this unit, you'll create a system-assigned managed identity for your virtual 
     }
     ```
 
-### Use your Key Vault to store a secret
+## Use your key vault to store a secret
 
-1. Add your connection string to the key vault:
+1. Add your connection string to the key vault.
 
     ```azurecli
     az keyvault secret set \
@@ -62,23 +62,23 @@ In this unit, you'll create a system-assigned managed identity for your virtual 
       --value "Server=tcp:prodserverSQL.database.windows.net,1433;Database=myDataBase;User ID=mylogin@myserver;Password=examplePassword;Trusted_Connection=False;Encrypt=True;"
     ```
 
-1. Make a note of your key vault name:
+1. Make a note of your key vault name. 
 
     ```bash
     echo $KVNAME
     ```
 
-### Set up the VM for your company's stock-tracking app
+## Set up the VM for your company's stock-tracking app
 
-1. SSH into your VM.
+1. Use SSH to access your VM.
 
     ```bash
     ssh $publicIP
     ```
 
-    At the prompt, type **yes**.
+    At the prompt, type *yes*.
 
-1. Install .NET Core on the VM, for the next exercise.
+1. For the next exercise, install .NET Core on the VM.
 
     ```bash
     wget -q https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
@@ -91,13 +91,14 @@ In this unit, you'll create a system-assigned managed identity for your virtual 
 
     ```
 
-1. Run the following command to download the source code for the sample app for this module:
+1. Download the source code for this module's sample app.
 
     ```bash
     git clone https://github.com/MicrosoftDocs/mslearn-authenticate-apps-with-managed-identities identity
     ```
 
-1. Finally, you need to exit the SSH session:
+1. End the SSH session.
+
     ```bash
     exit
     ```
