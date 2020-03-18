@@ -6,14 +6,16 @@ The validation data you held back and used to score the model includes the known
 2. In the pane on the left, in the **Model Scoring & Evaluation** section, drag an **Evaluate Model** module to the canvas, under the **Score Model** module, and connect the output of the **Score Model** module to the **Scored dataset** (left) input of the **Evaluate Model** module.
 3. Ensure your pipeline looks like this:
 
-<p style='text-align:center'><img src='media/evaluate-pipeline.jpg' alt='Evaluate Model module added to Score Model module'/></p>
+> [!div class="centered"]
+> ![Evaluate Model module added to Score Model module](../media/evaluate-pipeline.png)
 
 4. Select **Submit**, and run the pipeline using the existing experiment named **diabetes-training**.
 5. Wait for the experiment run to complete.
 6. When the experiment run has completed, select the **Evaluate Model** module and in the settings pane, on the **Outputs + Logs** tab, under **Port outputs** in the **Evaluation results** section, use the **Visualize** icon to view the performance metrics. These metrics can help data scientists assess how well the model predicts based on the validation data.
 7. View the *confusion matrix* for the model, which is a tabulation of the predicted and actual value counts for each possible class. For a binary classification model like this one, where you're predicting one of two possible values, the confusion matrix is a 2x2 grid showing the predicted and actual value counts for classes **0** and **1**, similar to this:
 
-<p style='text-align:center'><img src='media/confusion-matrix.jpg' alt="A confusion matrix showing actual and predicted value counts for each class"/></p>
+> [!div class="centered"]
+> ![A confusion matrix showing actual and predicted value counts for each class](../media/confusion-matrix.png)
 
 The confusion matrix shows cases where both the predicted and actual values were 1 (known as *true positives*) at the top left, and cases where both the predicted and the actual values were 0 (*true negatives*) at the bottom right. The other cells show cases where the predicted and actual values differ (*false positives* and *false negatives*). The cells in the matrix are colored so that the more cases represented in the cell, the more intense the color - with the result that you can identify a model that predicts accurately for all classes by looking for a diagonal line of intensely colored cells from the top left to the bottom right (in other words, the cells where the predicted values match the actual values). For a multi-class classification model (where there are more than two possible classes), the same approach is used to tabulate each possible combination of actual and predicted value counts - so a model with three possible classes would result in a 3x3 matrix with a diagonal line of cells where the predicted and actual labels match.
 
