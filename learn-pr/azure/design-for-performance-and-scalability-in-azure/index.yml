@@ -2,7 +2,7 @@
 uid: learn.design-for-performance-and-scalability
 metadata:
   title: Design for performance and scalability in Azure
-  description: Scaling your system to handle load, identifying network bottlenecks, and optimizing your storage performance are important to ensure your users have the best experience. In this module, we'll see how to make your application perform at its best.
+  description: Learn how to adjust your capacity based on workload, and how to optimize network performance, storage and database performance.
   ms.date: 09/24/2018
   author: jboeshart
   ms.author: jaboes

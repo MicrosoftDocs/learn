@@ -36,7 +36,7 @@ You use either the Azure portal or the CLI to create a metric alert. In this exe
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) by using the same account that you used to activate the sandbox.
 
-1. On the left, select **Monitor**, and then select **Alerts** in the left panel.
+1. On the Azure portal menu, select **Monitor**, and then select **Alerts** in the left panel.
 
 1. Select **+ New alert rule**. The **Create rule** page appears.
 
@@ -127,7 +127,7 @@ It might take 10 minutes before you see the alerts show up in your portal.
 
 1. Return to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
 
-1. On the left, select **Monitor**, and then select **Alerts** in the left panel.
+1. On the Azure portal menu, select **Monitor**, and then select **Alerts** in the left panel.
 
    This step presents the alert summary page, where you can see the count of the number of alerts at each severity.
 

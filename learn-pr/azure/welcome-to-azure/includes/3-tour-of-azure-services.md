@@ -125,7 +125,7 @@ Having a great web experience is critical in today's business world. Azure inclu
 > | Azure App Service | Quickly create powerful cloud web-based apps |
 > | Azure Notification Hubs |Send push notifications to any platform from any back end. |
 > | Azure API Management | Publish APIs to developers, partners, and employees securely and at scale. |
-> | Azure Search | Fully managed search as a service. |
+> | Azure Cognitive Search | Fully managed search as a service. |
 > | Web Apps feature of Azure App Service | Create and deploy mission-critical web apps at scale. |
 > | Azure SignalR Service | Add real-time web functionalities easily. |
 
@@ -139,7 +139,7 @@ There are a number of services that can assist and drive end-to-end solutions fo
 > | Service Name | Description |
 > |--------------|-------------|
 > | IoT Central | Fully-managed global IoT software as a service (SaaS) solution that makes it easy to connect, monitor, and manage your IoT assets at scale |
-> | Azure IoT Hub | Messaging hub that provides secure communications and monitoring between millions of IoT devices |
+> | Azure IoT Hub | Messaging hub that provides secure communications between and monitoring of millions of IoT devices |
 > | IoT Edge | Push your data analysis models directly onto your IoT devices, allowing them to react quickly to state changes without needing to consult cloud-based AI models.
 
 ### Big Data
@@ -153,7 +153,7 @@ Open source cluster technologies have been developed to deal with these large da
 > |--------------|-------------|
 > | Azure SQL Data Warehouse | Run analytics at a massive scale using a cloud-based Enterprise Data Warehouse (EDW) that leverages massive parallel processing (MPP) to run complex queries quickly across petabytes of data |
 > | Azure HDInsight | Process massive amounts of data with managed clusters of Hadoop clusters in the cloud |
-> | Azure Databricks (preview) | Collaborative Apache Spark–based analytics service that can be integrated with other Big Data services in Azure. |
+> | Azure Databricks | Collaborative Apache Spark–based analytics service that can be integrated with other Big Data services in Azure. |
 
 ### Artificial Intelligence
 

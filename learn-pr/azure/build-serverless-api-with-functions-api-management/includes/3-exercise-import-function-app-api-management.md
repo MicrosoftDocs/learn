@@ -30,7 +30,7 @@ In this exercise, you will add an Azure Functions app to Azure API Management. L
 Now, let's test the ProductDetails function, to see how it behaves before we add it to API Management:
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account with which you activated the sandbox.
-1. Select **All resources**.
+1. On the Azure portal menu or from the **Home** page, select **All resources**.
 1. Choose the App Service whose name begins with **ProductFunction**. The Function Apps UI for this app opens in the portal.
 1. Under **Functions**, select **ProductDetails**, and then select **Test**, as highlighted in the following screenshot: 
 

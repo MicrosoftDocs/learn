@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.iot.create-your-first-iot-central-app.monitor-a-simulated-device
 metadata:
-  title: Monitor a simulated device
-  description: Monitor the automatically created simulated device in the Azure IoT Central web portal. Then test your knowledge so far.
+  title: Exercise - Create a rich dashboard and a real device
+  description: Use the IoT Central portal to build a rich dashboard from an array of tiles. The center piece of the dashboard is the location map. Following this, create a real IoT device, and record its connection keys. Finish the unit with a short knowledge check.
   ms.date: 10/17/2019
   author: PeterTurcan
   ms.author: Olivier.Bloch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Monitor a simulated device
+title: Create a rich dashboard and a real device
 # azureSandbox: true
 durationInMinutes: 10
 content: |
@@ -17,56 +17,56 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'Which of the following lists all of the types of Measurements in a Device Template?'
+  - content: 'Which of the following lists all of the Capability types in a Device Template?'
     choices: 
-    - content: 'Telemetry, State, Event, Properties'
-      isCorrect: false
-      explanation: Properties are not Measurements.
-    - content: 'Telemetry, State, Event, Location'
+    - content: 'Telemetry, Commands, Properties'
       isCorrect: true
-      explanation: These elements are the four types of Measurements.
-    - content: 'Telemetry, State, Event, Settings'
+      explanation: These elements are the three types of capability.
+    - content: 'Telemetry, State, Event, Location'
       isCorrect: false
-      explanation: Settings are not Measurements.
+      explanation: Events and Location are types of Telemetry.
+    - content: 'Telemetry, State, Commands'
+      isCorrect: false
+      explanation: State is a type of Telemetry.
 
-  - content: 'What is the purpose of the Field Name attribute that appears in all Device Template elements?'
+  - content: 'What is the purpose of the Name attribute that appears in all Device Template elements?'
     choices: 
     - content: 'To appear in the IoT Central portal UI, naming the element being displayed.'
       isCorrect: false
       explanation: This purpose applies to the Display Name.
     - content: 'To act as a description of the element.'
       isCorrect: false
-      explanation: Sometimes a description field is available, but Field Name is not the name of this field.
+      explanation: Sometimes a description field is available, but Name isn't the name of this field.
     - content: 'To match the entries in the code running on the IoT device, to enable communications.'
       isCorrect: true
-      explanation: Field Names must be copied exactly in the code running on the device.
+      explanation: Names must be copied exactly in the code running on the device.
     - content: 'To appear in tooltip type text boxes when the operator clicks on an element in the app UI.'
       isCorrect: false
-      explanation: Field Names are not descriptive text.
+      explanation: Names aren't descriptive text.
 
-  - content: 'What is the difference in concept between a Device Template Setting and a Device Template Property?'
+  - content: 'What is meant by a Writable Property?'
     choices: 
-    - content: 'Properties and Settings can be used interchangeably.'
+    - content: 'A property that can be written to in the device app, but not changed by the IoT Central app.'
       isCorrect: false
-      explanation: Settings and Commands have some similarities. Properties are not sent by the cloud.
-    - content: 'Properties are communicated from the cloud to the device. Settings are communicated from the device to the cloud.'
+      explanation: IoT Central can change a writable property. 
+    - content: 'A property that can be written to by the IoT Central app, but not by the device app.'
       isCorrect: false
-      explanation: Properties are communicated from the device to the cloud, and Settings from the cloud to the device.
-    - content: 'A Property is typically communicated once from the device to the cloud, a Setting is typically communicated from the cloud to the device, when changes are needed.'
+      explanation: A device app can change any of its own properties.
+    - content: 'A Property that can be written to by the IoT Central app, that will be picked up by the device app.'
       isCorrect: true
-      explanation: A Property might be something like a unique ID (a truck license plate, for example). A Setting must have a corresponding value, such as an optimal temperature for the truck contents.
+      explanation: A property such as optimal temperature can be set with a default value, but the IoT Central app can write a new value, if needed.
   
-  - content: 'What are represented by diamond shaped icons in the chart view for a device?'
+  - content: 'What control makes a device template available for use?'
     choices: 
-    - content: 'Events'
+    - content: 'Publish'
       isCorrect: true
-      explanation: Clicking on the diamond icons will reveal more details of the event.
-    - content: 'States'
+      explanation: Publishing a template makes it available in your IoT app.
+    - content: 'Save'
       isCorrect: false
-      explanation: State is shown in the bar graphs.
-    - content: 'Telemetry'
+      explanation: Save does save the elements of your interface, but does not make it available for use.
+    - content: 'Views'
       isCorrect: false
-      explanation: Telemetry is shown in the line chart.
-    - content: 'Locations'
+      explanation: The Views control is used to create dashboards.
+    - content: 'Delete'
       isCorrect: false
-      explanation: Location is shown on the map view.
+      explanation: Delete is a very useful key.

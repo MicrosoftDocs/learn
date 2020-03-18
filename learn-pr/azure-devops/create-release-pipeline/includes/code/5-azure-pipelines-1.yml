@@ -1,3 +1,6 @@
+trigger:
+- '*'
+
 variables:
   buildConfiguration: 'Release'
 
@@ -8,16 +11,16 @@ stages:
   - job: 'Build'
     displayName: 'Build job'
     pool:
-      vmImage: 'Ubuntu-16.04'
+      vmImage: 'ubuntu-16.04'
       demands:
         - npm
 
     variables:
       wwwrootDir: 'Tailspin.SpaceGame.Web/wwwroot'
-      dotnetSdkVersion: '2.1.505'
+      dotnetSdkVersion: '3.1.100'
 
     steps:
-    - task: DotNetCoreInstaller@0
+    - task: UseDotNet@2
       displayName: 'Use .NET Core SDK $(dotnetSdkVersion)'
       inputs:
         version: '$(dotnetSdkVersion)'

@@ -1,0 +1,45 @@
+### YamlMime:ModuleUnit
+uid: learn.authenticate-apps-with-managed-identities.3-managed-identities
+metadata:
+  title: Authentication with managed identities
+  description: Explore managed identities within the Azure, what a managed identity is, how it works and what services can be used.
+  ms.date: 03/11/2020
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Authentication with managed identities
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-managed-identities.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What is the Azure Instance Metadata Service?"
+    choices:
+    - content: The framework used for authenticating to a IaaS VM
+      isCorrect: false
+      explanation: IMDS is not a framework or for virtual machine authentication. Azure VM authentication is handled by Azure AD. 
+    - content: A REST API endpoint accessible from an IaaS VM
+      isCorrect: true
+      explanation: IMDS is a REST API endpoint accessible to all IaaS VMs created via Azure Resource Manager, it can only be accessed from within the VM.
+    - content: A service containing detailed data for provisioned Azure resources
+      isCorrect: false
+      explanation: IMDS does contain data, as every service does, but it is not for all provisioned Azure resources.
+    - content: The service used for service principal objects
+      isCorrect: false
+      explanation: IMDS is not a service used for service principal objects, it is only applicable to Azure IaaS VMs.
+  - content: "Why can't a custom application hosted on-premises use managed identities?"
+    choices:
+    - content: Custom applications are not supported with managed identities
+      isCorrect: false
+      explanation: Custom applications are supported when integrating with Azure AD.
+    - content: Managed identities are only supported in Azure AD
+      isCorrect: false
+      explanation: Managed identities are a feature of Azure AD but supported in other services.
+    - content: Managed identities can only be used with Azure resources
+      isCorrect: true
+      explanation: Managed identities can only be used within the confines of Azure resources or through Azure AD integration
+    - content: Managed identities is a feature of Azure Virtual Machines
+      isCorrect: false
+      explanation: Managed identities can be enabled on Azure VMs not a feature

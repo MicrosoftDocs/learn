@@ -1,8 +1,9 @@
 ### YamlMime:LearningPath
 uid: learn.data-science
+hidden: true
 metadata:
   title: Extract knowledge and insights from your data with Azure Databricks
-  description: Learn how to use Azure Databricks to perform predictive and analytical data science techniques, such as exploratory data analysis, model training, text analytics and deep learning. 
+  description: With this learning path, get started with Azure Databricks for predictive and analytical Data Science techniques such as exploratory data analysis, text analytics, and deep learning.
   brand: azure
   ms.date: 01/31/2019
   author: barlan
@@ -10,7 +11,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Extract knowledge and insights from your data with Azure Databricks
-summary: Learn how to use Azure Databricks to perform predictive and analytical data science techniques, such as exploratory data analysis, model training, text analytics and deep learning.
+summary: Learn how to use Azure Databricks to perform predictive and analytical data science techniques, such as exploratory data analysis, model training, text analytics, and deep learning.
 prerequisites: |
   An Azure subscription. 
 iconUrl: /learn/achievements/data-science.svg
@@ -18,6 +19,7 @@ levels:
 - intermediate
 roles:
 - data-scientist
+- student
 products:
 - azure
 - azure-databricks

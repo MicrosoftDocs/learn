@@ -1,0 +1,3 @@
+In this module, you learned what a programming language does, and why Python is so popular and is a great choice as your first programming language to learn.  You learned why you must compile instructions written using a programming language into computer-understandable format.  You learned about the different steps you'll need to take in just about every program you'll ever write.  You also learned that you'll need to install some tools to build your own software development environment.
+
+In the next module in this Learning Path, we'll walk through the steps you'll need to take to install Python, Visual Studio Code and more.  Then you'll be ready to write your first lines of code!

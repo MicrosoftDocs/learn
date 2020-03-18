@@ -10,10 +10,8 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-
 durationInMinutes: 7
 quiz:
-  title: ""
   questions:
   - content: "The Cloud Adoption Framework for Azure helps customers make their journey to the cloud. What are the three main stages of the framework?"
     choices:

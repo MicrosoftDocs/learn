@@ -1,18 +1,22 @@
 In this unit, the application event log is analyzed through Kudu console.
 
-## Access the Application Event Log through Azure Portal
+## Access the Application Event Log through Azure portal
 
 1. Go to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
-1. In the Azure Portal, open the **&lt;yourname&gt;HotelApp** app in **All resources**.
+
+1. In the Azure portal, search for and select the **HotelApp-####** app service you created, replacing #### with the name of your app service.
+
 1. Select **Diagnose and solve problems**.
 
-![Diagnose and solve problems](../media/DiagnoseAndSolveProblems.png)
+    ![Diagnose and solve problems](../media/DiagnoseAndSolveProblems.png)
 
 1. Select **Diagnostic Tools** menu option.
+
 1. Select **Application Event Logs** under **Support Tools**.
+
 1. Review the latest error provided by *IIS AspNetCoreModule* or *IIS AspNetCoreModule V2* in the **Source** column.
 
-![Application Events](../media/ApplicationEvents.png)
+    ![Application Events](../media/ApplicationEvents.png)
 
 ## Access the Application Event Log through Kudu Console
 
@@ -20,7 +24,7 @@ In this unit, the application event log is analyzed through Kudu console.
 1. Under the **Development Tools** section, open **Advanced Tools**. 
 1. Select the **Go** button. Use the same Sandbox login credentials when the login page opens.This opens Kudu Console in a new window.
 
-![Advanced Tools](../media/AdvancedTools.png)
+    ![Advanced Tools](../media/AdvancedTools.png)
 
 1. Open **Debug Console** in the top navigation bar and select **CMD**.
 1. Open **LogFiles** folder.
@@ -32,7 +36,7 @@ In this unit, the application event log is analyzed through Kudu console.
 
 You can run the app in Kudu console Remote Execution Console to discover useful information that is not immediately visible in the Application Event Log.
 
-1. Under the **Development Tools** section in the Azure Portal, open **Advanced Tools**. 
+1. Under the **Development Tools** section in the Azure portal, open **Advanced Tools**. 
 1. Select the **Go** button. This opens Kudu Console in a new window.
 1. Open **Debug Console** in the top navigation bar and select **CMD**.
 Run the following commands in the command prompt:

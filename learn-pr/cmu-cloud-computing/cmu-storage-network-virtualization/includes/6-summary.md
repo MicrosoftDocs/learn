@@ -1,0 +1,9 @@
+- A software-defined datacenter (SDCC) makes infrastructure easy to manage by virtualizing all components within a cluster, including servers, networking fabric, and storage systems.
+- Software-defined networking (SDN) and software-defined storage (SDS) are emerging technologies that are showing promise in improving the flexibility of datacenter design, while also improving utilization and isolation.
+- Datacenter network designers have to carefully select the topology, addressing scheme, traffic shaping policies, and fault-tolerance mechanisms. 
+- In multi-tenant networks, there is a strong need for virtualization, as overlay networks are constructed to allow tenants to flexibly share network resources.
+- Virtual networks can be provisioned, migrated, reconfigured, and snapshotted just like virtual machines.
+- SDN is an alternative to basic virtualization, whereby the data plane is decoupled from the control plane of the network.
+- SDN may rely on central controllers to make routing decisions, and may help in tunneling packets by adding appropriate header information based on a global view.
+- Cloud datacenters rely on shared storage mechanisms to quickly create volumes for many virtual machines. The sharing is generally done over a high-speed network fabric.
+- SDS is a recent approach to provide storage as a service that meets client SLOs. An example of an SDS system is IOFlow, which allows the application of policies such as data-rate metrics or malware detection on I/O traffic.

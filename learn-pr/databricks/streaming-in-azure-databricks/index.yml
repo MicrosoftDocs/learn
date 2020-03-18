@@ -1,5 +1,6 @@
 ### YamlMime:Module
 uid: learn.streaming-in-azure-databricks
+hidden: true
 metadata:
   title: Work with streaming data in Azure Databricks
   description: Learn how to analyze and process streaming data by using Azure Event Hubs, Spark Structured Streaming, and Databricks Delta.

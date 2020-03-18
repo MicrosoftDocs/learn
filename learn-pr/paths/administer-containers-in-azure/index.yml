@@ -2,7 +2,7 @@
 uid: learn.administer-containers-in-azure
 metadata:
   title: Administer containers in Azure learning path
-  description: Azure Container Instances are the quickest and easiest way to run containers in Azure. This learning path will teach you how to create and manage your containers, and how ACI can be used to provide elastic scale for Kubernetes.
+  description: With this learning path, you'll create and manage your Azure Container Instances, and see how they can be used to provide elastic scale for Kubernetes.
   brand: azure
   author: markjulmar
   ms.author: smmark
@@ -22,6 +22,7 @@ products:
 - azure-container-instances
 - azure-container-registry
 modules:
+- learn.intro-to-docker-containers
 - learn.intro-to-containers
 - learn.azure-container-registry
 - learn.run-docker-containers-aci
