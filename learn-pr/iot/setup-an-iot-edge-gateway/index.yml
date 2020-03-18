@@ -26,7 +26,7 @@ prerequisites: |
   -	Experience using Visual Studio, or Visual Studio Code, at the beginner level 
 ### iconUrl: /learn/achievements/generic-badge.svg
 ### iconUrl: /learn/achievements/iot/iot-hub-conveyor-belt-vibration-detection.svg
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/setup-an-iot-edge-gateway.svg
 ### hidden: true
 ratingEnabled: true
 levels:
@@ -44,7 +44,8 @@ units:
 - learn.iot.setup-an-iot-edge-gateway.open-iot-edge-gateway-device-ports-for-communication-with-downstream-devices
 - learn.iot.setup-an-iot-edge-gateway.create-a-downstream-device-identity-in-iot-hub
 - learn.iot.setup-an-iot-edge-gateway.connect-a-downstream-device-to-an-iot-edge-gateway
+- learn.iot.setup-an-iot-edge-gateway.verify-event-flow-from-downstream-device-through-iot-edge-gateway-to-iot-hub
 - learn.iot.setup-an-iot-edge-gateway.summary
 badge:
 ###  uid: learn.iot.iot-test.badge
-  uid: learn.iot.iot-test.badge
+  uid: learn.iot.setup-an-iot-edge-gateway.badge
