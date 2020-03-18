@@ -38,7 +38,7 @@ Here you add a new pipeline variable to the existing CI/CD pipeline defined in *
 
 **Andy:** We already have a task for building the web app as a Docker container, which we publish to our container registry. We can just use a second task to do the same for our leaderboard.
 
-1. Add a second `Docker@2` task that builds and pushes the leaderboard container. It should go after the web container task.
+1. Add a second `Docker@2` task that builds and pushes the leaderboard container using the highlighted code below. It should go after the web container task.
 
     [!code-yml[](code/4-3-azure-pipelines.yml?highlight=12-21)]
 
@@ -64,7 +64,7 @@ Here you add a new pipeline variable to the existing CI/CD pipeline defined in *
 
 **Mara:** I am going to replace our existing **Deploy** stage with one that uses a deployment job. A *deployment job* is a special kind of job that allows us to associate our deployment with the Azure DevOps environment created earlier. This will make it easier to track deployment history, which will be especially useful as our solutions get more sophisticated. Another benefit is that it helps us monitor our Kubernetes cluster with integrated features for reviewing pods, services, and more.
 
-1. Remove the existing **Deploy** stage and replace it with the code below. Note the highlighted code that specifies the deployment environment to use created by `(environment name).(AKS namespace)`.
+1. Remove the existing **Deploy** stage and replace it with the code below. Note the highlighted code that specifies the deployment environment to use created by `(Azure DevOps environment name).(AKS namespace)`.
 
     [!code-yml[](code/4-5-azure-pipelines.yml?highlight=9)]
 
@@ -86,7 +86,7 @@ Here you add a new pipeline variable to the existing CI/CD pipeline defined in *
 
 The `KubernetesManifest@0` task is designed to manage all of the mainstream deployment operations required for Kubernetes. It supports multiple `action` options that range from creating secrets to deploying images. In this case, the `createSecret` action will be used, along with the additional parameters defined below.
 
-* `action` indicates the feature to run. In this case, `createSecret` does exactly what it sounds like.
+* `action` indicates the feature to run. In this case, `createSecret` creates the shared secret.
 * `secretName` specifies the name of the secret to create.
 * `dockerRegistryEndpoint` specifies the name of the Azure Container Services connection.
 * `kubernetesServiceConnection` specifies the name of the Azure Kubernetes Services connection.
@@ -122,12 +122,23 @@ You can learn more about the flexibility of this task in the official docs for t
 1. Select **web**. Here you see the service details and associated pods for the **web** service.
 1. Select the **Copy External IP to  clipboard** button. This IP address is where the site is publicly hosted.
 
-    ![Locating the web site IP address](../media/4-deploy-url.png)
+    ![Locating the web site IP address](../media/4-deploy-ip.png)
 
-1. Navigate to the copied IP address in a new tab. You see the site running.
-
+1. Navigate to the copied IP address in a new browser tab. You see the site running.
 1. You see the site in production.
 
     ![Reviewing Space Game](../media/4-space-game.png)
+
+1. Return to the Azure DevOps browser tab.
+1. Use the browser **Back** button to return to the **default** namespace page.
+1. Select **leaderboard**. Here you see the service details and associated pods for the **leaderboard** service.
+1. Like before, select the **Copy External IP to  clipboard** button. This IP address is where the site is publicly hosted.
+1. The full URL to the public leaderboard API is at that IP address using path `/api/Leaderboard`. You can also add a `pageSize=10` query parameter to make it easier to view the JSON response in your browser. Use a URL like the one below in a new browser tab.
+ 
+    `http://[IP]/api/Leaderboard?pageSize=10`
+
+You see the raw JSON response from the leaderboard API hosted in the Kubernetes cluster.
+
+![Reviewing the leaderboard JSON response](../media/4-leaderboard-api.png)
 
 **Andy:** This turned out great! I think using Kubernetes would be a great way for us to adopt a broader microservices strategy.

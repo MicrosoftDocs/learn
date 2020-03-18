@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azdo.deploy-kubernetes.4-deploy-kubernetes
-title: Exercise - Deploy a Docker container to Azure
+title: Exercise - Deploy a multi-container solution to Kubernetes
 metadata:
-  title: Exercise - Deploy a Docker container to Azure
-  description: Extend the CI/CD pipeline to build and deploy a Docker container.
+  title: Exercise - Deploy a multi-container solution to Kubernetes
+  description: Extend the CI/CD pipeline to build and deploy a multi-container solution to Kubernetes.
   ms.date: 03/18/2020
   author: edkaim
   ms.author: v-edkaim
