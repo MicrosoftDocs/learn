@@ -1,4 +1,4 @@
-As we stated in the introduction, Visual Studio Code provides tight source control integration with Git by default and with other SCM providers through extensions.   
+As we stated in the introduction, Visual Studio Code provides tight source control integration with Git by default and with other source code management (SCM) providers through extensions.   
 
 If you're an avid user of Visual Studio Code, it's possible you have kept Git bash open in a separate window, or used Visual Studio Code's integrated terminal window to type Git commands.  While this technique will work, you may come to realize that you can enhance your workflow by learning more about what Visual Studio Code has to offer.  Visual Studio Code provides lots of visual cues, helpful prompts and shortcuts to common git features tucked away and available using common tools like the Command Pallet, the Status Bar and the Source Control view.
 
