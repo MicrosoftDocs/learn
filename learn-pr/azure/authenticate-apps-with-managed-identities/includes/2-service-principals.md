@@ -42,7 +42,7 @@ You can provision an application for Microsoft identity platform in several ways
 
     ![Screenshot showing how to add an application to Azure AD](../media/2-adding-an-app.png)
 
-1. Enter a display name for the app. Choose an app that doesn't need to follow Azure naming conventions.
+1. Enter a display name for the app.
 1. Specify supported account types. Choose from the following accounts:
    - Accounts within your company's active directory
    - Accounts in any company's active directory that uses Azure 
