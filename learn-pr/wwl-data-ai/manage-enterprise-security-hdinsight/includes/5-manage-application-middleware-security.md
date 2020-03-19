@@ -107,4 +107,4 @@ Azure Monitoring is enabled from the Azure portal using a few clicks.
 
 1. Logs tables relevant to security can be found in the Custom Logs section on the left. These can then be queried to extract relevant access information.
 
-	[![Viewing custom logs](../media/18-viewing-custom-logs.png)](../media/18-viewing-custom-logs.png##lightbox) 
+	[![Viewing custom logs](../media/18-viewing-custom-logs.png)](../media/18-viewing-custom-logs.png) 

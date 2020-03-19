@@ -1,0 +1,49 @@
+### YamlMime:LearningPath
+uid: learn.cmu-cloud-computing.cloud-storage
+metadata:
+  title: Cloud storage
+  description: Carnegie Mellon University's Cloud Developer course. Gain a deep understanding of data and how it's stored on the cloud.
+  brand: azure
+  ms.date: 03/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  showCreativeCommonsFooter: true
+title: Cloud storage
+summary: |
+  Gain a deep understanding of data and how it's stored on the cloud.
+
+  In this learning path, you will:
+    - Get an overview of data and how it can be stored
+    - Read case studies of how data is stored in distributed file systems
+    - Learn from case studes of how NoSQL databases and cloud object storage works
+
+  In partnership with Dr. Majd Sakr and Carnegie Mellon University.
+prerequisites: |
+  - Understand what cloud computing is, including cloud service models, and common cloud providers
+  - Know the technologies that enable cloud computing
+  - Understand how cloud service providers pay for and bill for the cloud
+  - Know what datacenters are and why they exist
+  - Know how datacenters are set up, powered, and provisioned
+  - Understand how cloud resources are provisioned and metered
+  - Be familiar with the concept of virtualization
+  - Know what the different types of virtualization are
+  - Understand CPU virtualization
+  - Understand memory virtualization
+  - Understand I/O virtualization
+iconUrl: /learn/achievements/cmu-cloud-developer/cloud-storage.svg
+levels:
+- beginner
+- intermediate
+roles:
+- developer
+- student
+products:
+- azure
+modules:
+- learn.cmu-cloud-computing.cloud-storage.cloud-storage-overview
+- learn.cmu-cloud-computing.cloud-storage.case-study-distributed-file-systems
+- learn.cmu-cloud-computing.cloud-storage.case-study-nosql-databases-object-storage
+trophy:
+  uid: learn.cmu-cloud-computing.cloud-storage.trophy

@@ -95,6 +95,12 @@ The next rule we want to create calls an Azure Function. So, first, let's create
 
 1. Wait for the deployment succeeded message, which may take a minute or two, then click **Go to resource**.
 
+    > [!NOTE]
+    > There is an Azure resource error that might catch you unawares. Creating resources in all regions is not always possible, due to capacity limits.  You may get the error shown in the following image. If this happens, change your selected region.
+
+    [![Screenshot showing an error message when a resource cannot be created in the specified region](../media/metrics-alerts-region-error.png)](../media/metrics-alerts-region-error.png#lightbox)
+
+
 1. Click the plus sign to the right of **Functions**.
 
     [![Screenshot showing the button to click to add an Azure Function](../media/metrics-alerts-function-plus.png)](../media/metrics-alerts-function-plus.png#lightbox)
@@ -140,7 +146,7 @@ Create a second alert for your IoT Hub.
 
 1. Click **OK** to complete the action group.
 
-1. Back in the **Create rule** page, select **CONDITION**. We'll add a condition that will fire when the total number of telemetry messages exceeds 30.
+1. Back in the **Create rule** page, locate **CONDITION**, and click **Add**. We'll add a condition that will fire when the total number of telemetry messages exceeds 30.
 
 1. In the **Configure signal logic** page, type "telemetry" into the search bar. Select **Telemetry messages sent** from the list under **Signal name**.
 
@@ -149,6 +155,10 @@ Create a second alert for your IoT Hub.
     [![Screenshot showing the alert logic used to trigger the Azure Function](../media/metrics-alerts-function-logic.png)](../media/metrics-alerts-function-logic.png#lightbox)
 
 1. Click **Done**.
+
+1. Enter an **Alert rule name**, such as "Telemetry greater than 30", and some text for **Description**.
+
+1. Click **Create alert rule**.
 
 ## Next step
 
