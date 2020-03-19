@@ -8,15 +8,11 @@ You can add an additional authentication layer to secure your data and applicati
 
 Before you allow access to the application, use multi-factor authentication to ensure the user completes additional challenges. These challenges fit into three general categories:
 
-  ![MFA challenges](../media/3-mfa-challenges.png)
-
+  ![MFA challenges](../media/3-mfa-challenges.svg)
 
 - Something the user knows
-
 - Something the user owns
-
 - Something the user is
-
 
 A secret password or a secret answer to a security question should be something that only the user knows. Users also have devices that can be classified as something they own. For example, a user with a mobile phone would receive a text message with a secret one-time-use code. You could also make successful authentication contingent on the user, through biometrics. This biometric information is classified as something the user is. For example, as an additional step, you could make authentication rely on the user's fingerprints or voice.
 
