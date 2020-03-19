@@ -1,5 +1,3 @@
-# Exercise - working with streams
-
 In this exercise we will learn how to
 
 - Work with readable and writable streams

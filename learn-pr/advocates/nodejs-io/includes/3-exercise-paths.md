@@ -1,5 +1,3 @@
-# Exercise - working with the module `path`
-
 In this exercise we will learn how to work with the module `path` to do things such as
 
 - Information, gain information on the path

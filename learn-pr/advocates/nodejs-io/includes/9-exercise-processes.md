@@ -1,5 +1,3 @@
-# Exercises - invoke processes
-
 - Learn how to invoke a command with arguments
 - Running executable files, `exec()` vs `execFile()`
 - Understand parent/child communication with `fork()`

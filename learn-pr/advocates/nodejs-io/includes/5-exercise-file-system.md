@@ -1,5 +1,3 @@
-# Exercise - working with the file system
-
 In this exercise we will learn how to work with the module `fs` to do things such as
 
 - Read/Write files, we will learn how to do so in asynchronous and synchronous way

@@ -1,5 +1,3 @@
-# Processes
-
 To work with process we will need to use the module `child_process`. This module allows us to spawn processes. To ensure we don't block the Node.js event-loop we want to spawn up new processes using the method `spawn()`. There is a synchronous version of this ending in `Sync`, but usually we want to avoid blocking in Node.js as much as we can.
 
 By default, pipes for `stdin`, `stdout`, and `stderr` are created  between the parent Node.js process and the spawned child. This means we have access to the mentioned streams and can therefore listen to events being produced by any of these streams.

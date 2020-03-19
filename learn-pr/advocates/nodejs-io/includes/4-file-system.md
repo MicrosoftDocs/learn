@@ -1,5 +1,3 @@
-# Working with files and directories
-
 There are many things you can do when interacting with the file system like:
 
 - Read/write files

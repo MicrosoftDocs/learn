@@ -1,5 +1,3 @@
-# Streams
-
 Streams are a fundamental concept in Node.js. They are a representation of data that flow continuously over time. This makes streams ideal to use when doing I/O operations like reading files, or doing network communication.
 
 ## Why streams

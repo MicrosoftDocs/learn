@@ -1,5 +1,3 @@
-# Work with file paths
-
 A file path represents where a directory or file is located in your file system. It can look like this:
 
 ```bash

@@ -1,5 +1,3 @@
-# Introduction
-
 The file system is an important part of many applications. This means working with files, directories but also dealing with different access levels and things like streams and processes.
 
 Working with files is in Node.js a synchronous or an asynchronous process. Node.js is single threaded which means if we need to carry things out in parallel we need an approach that supports it. That approach is the callback pattern.
