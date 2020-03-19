@@ -6,7 +6,7 @@ In this unit, you'll work through a series of steps to ensure your application i
 
 Users have higher expectations for mobile applications now than they did when smart phones first were released. If your app looks or behaves poorly, users will probably switch to another one that's better. That's why it's important to pay attention to quality.
 
-![Illustration of quality considerations with several inputs: images, platform idioms, animations, device sizes, localizaiton, and testing.](../media/2-quality.png)
+![Illustration of quality considerations with several inputs: images, platform idioms, animations, device sizes, localization, and testing.](../media/2-quality.png)
 
 You'll want to focus on these considerations:
 
