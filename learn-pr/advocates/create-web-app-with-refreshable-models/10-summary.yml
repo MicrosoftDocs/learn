@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.advocates.create-web-app-with-refreshable-models.7-summary
+uid: learn.advocates.create-web-app-with-refreshable-models.10-summary
 metadata:
   title: Summary
   description: Summary
@@ -12,4 +12,4 @@ metadata:
 title: Summary
 durationInMinutes: 5
 content: |
-  [!include[](includes/7-summary.md)]
+  [!include[](includes/10-summary.md)]

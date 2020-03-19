@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.advocates.create-web-app-with-refreshable-models.6-test-pwa
+uid: learn.advocates.create-web-app-with-refreshable-models.9-test-pwa
 metadata:
   title: Test Your PWA
   description: Test your PWA
@@ -12,4 +12,4 @@ metadata:
 title: Test your PWA
 durationInMinutes: 5
 content: |
-  [!include[](includes/6-test-pwa.md)]
+  [!include[](includes/9-test-pwa.md)]

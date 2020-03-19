@@ -23,7 +23,3 @@ An example of some of Karen Zack's collages of tricky images.
 When you build a web app using machine learning technologies, you have a few choices on how to use the models that the training process produces. You could host the model externally in the cloud. Then you could use an API to query it using the data with which you want to perform inference. Alternately, you could host the model itself within the web app's codebase.
 
 An advantage to doing the latter is that your app will perform inference offline, as no API calls to an internet-connected service are made. Instead, the app uses the model that is included in the build process of the web app. A disadvantage to using a local model is that when you edit a model by retraining it you're obliged to rebuild your web app to refresh the model. In this module, we will create an architecture for this web app to enable a GitHub Action to rebuild the app if a developer pushes code to its repository.
-
-## What is a GitHub Action?
-
-A GitHub Action is a tool available within GitHub's repositories that help to automate software workflows. With GitHub Actions, you can build, test, and deploy your code from within GitHub. For the purposes of this module you will use a GitHub Action to trigger a build process when new code is pushed to your app's repository.

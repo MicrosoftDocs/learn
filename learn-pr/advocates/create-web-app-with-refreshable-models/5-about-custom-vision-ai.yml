@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.advocates.create-web-app-with-refreshable-models.5-about-custom-vision-ai
+metadata:
+  title: About Custom Vision AI
+  description: What is Custom Vision AI?
+  author: jlooper
+  ms.date: 02/10/2020
+  ms.author: jelooper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: About Custom Vision AI
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-about-custom-vision-ai.md)]

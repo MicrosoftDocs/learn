@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.advocates.create-web-app-with-refreshable-models.3-about-pwas
+metadata:
+  title: About PWAs
+  description: What is a PWA, or Progressive Web App?
+  author: jlooper
+  ms.date: 02/10/2020
+  ms.author: jelooper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: About PWAs
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-about-pwas.md)]

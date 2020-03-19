@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.advocates.create-web-app-with-refreshable-models.4-train-model-build-inference-interface
+uid: learn.advocates.create-web-app-with-refreshable-models.6-train-model-build-inference-interface
 metadata:
   title: Exercise - Train Your Machine Learning Model and Build the Web Interface to Use It
   description: Exercise - Train your machine learning model and build the web interface to use it
@@ -13,4 +13,4 @@ metadata:
 title: Exercise -  Train your machine learning model and build the web interface to use it
 durationInMinutes: 15
 content: |
-  [!include[](includes/4-train-model-build-inference-interface.md)]
+  [!include[](includes/6-train-model-build-inference-interface.md)]

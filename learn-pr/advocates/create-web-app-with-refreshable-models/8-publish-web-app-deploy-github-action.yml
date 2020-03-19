@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.advocates.create-web-app-with-refreshable-models.5-publish-web-app-deploy-github-action
+uid: learn.advocates.create-web-app-with-refreshable-models.8-publish-web-app-deploy-github-action
 metadata:
   title: Exercise - Publish Your Web App and Deploy It With A GitHub Action
   description: Exercise - publish your web app and deploy it with a GitHub Action
@@ -13,4 +13,4 @@ metadata:
 title: Exercise -  publish your web app and deploy it with a GitHub Action
 durationInMinutes: 10
 content: |
-  [!include[](includes/5-publish-web-app-deploy-github-action.md)]
+  [!include[](includes/8-publish-web-app-deploy-github-action.md)]

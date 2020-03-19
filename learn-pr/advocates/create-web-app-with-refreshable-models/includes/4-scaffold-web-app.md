@@ -42,51 +42,53 @@ First, rename the file `HelloWorld.vue` in your codebase's `/src/components` fol
 
 ```html
 <template>
-	<div id="app">
-		<DetectImage msg="What do you see?" />
-	</div>
+    <div id="app">
+        <DetectImage msg="What do you see?" />
+    </div>
 </template>
 
 <script>
-	import DetectImage from './components/DetectImage.vue';
+    import DetectImage from './components/DetectImage.vue';
 
-	export default {
-		name: 'app',
-		components: {
-			DetectImage,
-		},
-	};
+    export default {
+        name: 'app',
+        components: {
+            DetectImage,
+        },
+    };
 </script>
 
 <style>
-	#app {
-		font-family: 'Avenir', Helvetica, Arial, sans-serif;
-		-webkit-font-smoothing: antialiased;
-		-moz-osx-font-smoothing: grayscale;
-		text-align: center;
-		color: #2c3e50;
-		margin-top: 60px;
-	}
+    #app {
+        font-family: 'Avenir', Helvetica, Arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-align: center;
+        color: #2c3e50;
+        margin-top: 60px;
+    }
 </style>
 ```
 
-Create a folder in `/src/assets` called 'images' to house the images you will use for inference. Extract [this zip file](../media/images.zip) into that folder. This file includes ten images, including a blank one.
+Create a folder in `/src/assets` called 'images' to house the images you will use for inference. Extract [this zip file](../media/images.zip) into that folder. This file includes seventeen images, including a blank one.
+
+> These images are the ones Karen Zack used to create her dalmatians vs. ice cream collage
 
 Display an image and a button to switch it by editing the `<template>` in `DetectImage.vue` to include this layout:
 
 ```html
 <div>
-	<h1>{{ msg }}</h1>
-	<div>
-		<img class="image" ref="img" :src="require('../assets/images/' + getImgIndex + '.jpg')" />
-	</div>
-	<div>
-		<button class="button" @click="next()" :disabled="disable">Next</button>
-	</div>
-	<div v-for="pred in predictions" :key="pred.index">
-		{{ pred.label }}: {{ pred.probability.toFixed(0) + '%' }}
-	</div>
-	<div v-if="!predictions.length">hmm.....</div>
+    <h1>{{ msg }}</h1>
+    <div>
+        <img class="image" ref="img" :src="require('../assets/images/' + getImgIndex + '.jpg')" />
+    </div>
+    <div>
+        <button class="button" @click="next()" :disabled="disable">Next</button>
+    </div>
+    <div v-for="pred in predictions" :key="pred.index">
+        {{ pred.label }}: {{ pred.probability.toFixed(0) + '%' }}
+    </div>
+    <div v-if="!predictions.length">hmm.....</div>
 </div>
 ```
 
@@ -94,10 +96,10 @@ Add a `data()` method under the closing parenthesis of the `props` object (add a
 
 ```javascript
 data() {
-	return {
-		image: 0,
-		numImages: 16,
-	};
+    return {
+        image: 0,
+        numImages: 16,
+    };
 },
 ```
 
@@ -105,14 +107,14 @@ Under this object, create a `computed` property to return the index of an image 
 
 ```JavaScript
 computed: {
-	getImgIndex() {
-		return this.image.toString();
-	},
-	disable() {
-		if (this.image == this.numImages) {
-			return true;
-		} else return false;
-	},
+    getImgIndex() {
+        return this.image.toString();
+    },
+    disable() {
+        if (this.image == this.numImages) {
+            return true;
+        } else return false;
+    },
 },
 ```
 
@@ -120,11 +122,11 @@ Create a `methods` object under the computed properties object to capture user i
 
 ```javascript
 methods: {
-	next() {
-		this.image++;
-		this.predictions = [];
-		setTimeout(this.predict, 500);
-	},
+    next() {
+        this.image++;
+        this.predictions = [];
+        setTimeout(this.predict, 500);
+    },
 },
 ```
 
@@ -133,29 +135,29 @@ Finally, add some styles by overwriting the `<styles>` block at the bottom of th
 ```HTML
 <style scoped>
 h3 {
-	margin: 40px 0 0;
+    margin: 40px 0 0;
 }
 .image {
-	min-height: 300px;
-	max-height: 300px;
-	max-width: 100%;
+    min-height: 300px;
+    max-height: 300px;
+    max-width: 100%;
 }
 .button {
-	width: 200px;
-	height: 50px;
-	border-radius: 5px;
-	background-color: blueviolet;
-	color: white;
-	font-size: 20pt;
-	margin: 10px;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: blueviolet;
+    color: white;
+    font-size: 20pt;
+    margin: 10px;
 }
 .button:disabled,
 .button[disabled] {
-	border: 1px solid #999999;
-	background-color: #cccccc;
-	color: #666666;
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
 }
 </style>
 ```
 
-Now, you should be able to click through a gallery of 16 images, one after the other, starting with a blank one. How does the model perform? Is it better discerning dalmatians or ice cream? Why?
+Now, you should be able to click through a gallery of 16 images, one after the other, starting with a blank one. Next, you need to build a model for use in this app.

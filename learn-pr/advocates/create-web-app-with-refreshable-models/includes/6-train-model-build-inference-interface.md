@@ -1,4 +1,4 @@
-Now you can start training a custom machine learning model using images different from the ones you use in your app. The ones in your app you can view as 'testing' images, and the ones you train with will be your 'training' image set.
+Now you can start training a custom machine learning model using images different from the ones you use in your app. The ones in your app will be used to test the model's accuracy in performing inference. You will create the model itself in Custom Vision AI's interface using a different image set.
 
 > [!NOTE]
 > You are only going to train on a few images, which in a production system is inadequate for the creation of a quality model. This training set is for demo purposes only.
@@ -66,14 +66,14 @@ To do this, create a new file in the root of your app called `webpack.config.js`
 
 ```javascript
 module.exports = {
-	module: {
-		rules: [
-			{
-				test: /\.txt$/i,
-				use: 'raw-loader',
-			},
-		],
-	},
+    module: {
+        rules: [
+            {
+                test: /\.txt$/i,
+                use: 'raw-loader',
+            },
+        ],
+    },
 };
 ```
 
