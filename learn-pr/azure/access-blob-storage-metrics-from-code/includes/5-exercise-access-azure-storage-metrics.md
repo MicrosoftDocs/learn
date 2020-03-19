@@ -42,7 +42,7 @@ In order to grant your app permission to access Azure Monitor metrics, you must 
 1. In the **Application type** drop-down list, select **Web app/API**.	
 1. In the **Sign-on URL** type **https://contoso.org/metricapp** and then click **Create**.
 
-    ![Screenshot of the create panel with the create button highlighted.](../media/5-create-app-registration.png)
+    ![Screenshot of the create pane with the create button highlighted.](../media/5-create-app-registration.png)
 
 1. On the **metricapp** registration page, make a note of the **Application ID**, and then click **Settings**
 1. Under **API Access** click **Keys**.
@@ -50,7 +50,7 @@ In order to grant your app permission to access Azure Monitor metrics, you must 
 1. In the **Expires** drop-down list, select **In 1 Year**.
 1. Click **Save**.
 
-    ![Screenshot of the keys panel with the save button highlighted.](../media/5-configure-access-key.png)
+    ![Screenshot of the keys pane with the save button highlighted.](../media/5-configure-access-key.png)
 
 1. Make a note of the key in the **VALUE** column.
 
@@ -75,7 +75,7 @@ You must now add the app service principal to a role, so that the app has permis
 1. In the **Assign access to** drop-down list, select **Azure AD user, group, or service principal**.
 1. In the **Select** textbox, type **metricapp**, and then click **metricapp**.
 
-    ![Screenshot of the add role assignment panel with the metricapp option highlighted.](../media/5-assign-role-to-app.png)
+    ![Screenshot of the add role assignment pane with the metricapp option highlighted.](../media/5-assign-role-to-app.png)
 
 1. Click **Save**.
 
