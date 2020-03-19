@@ -23,7 +23,7 @@ Use the following steps to create a Jupyter notebook in the Azure portal.
     ![Selecting your Jupyter Notebook in the Azure portal](../media/4-img02.png)
 
 > [!Note]
-> There is a known issue creating Jupyter Notebooks. Use the following link for information on how to create a Jupyter Notebook with the following [workaround](https://docs.microsoft.com/azure/hdinsight/hdinsight-release-notes#known-issues)
+> There is a known issue creating Jupyter Notebooks. Use the following link for information on how to create a Jupyter Notebook with the following [workaround](https://docs.microsoft.com/azure/hdinsight/hdinsight-release-notes-archive#known-issues)
 
 2. Select **New > PySpark** to create a notebook.
 
