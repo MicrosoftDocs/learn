@@ -192,7 +192,7 @@ The problem might be caused by a network security rule blocking external traffic
 1. In the Azure portal, go to the dashboard.
 1. Select the chart for the average Packet Count metric. Note the peak value for the latest run of the stress test application. This value should be at least double that of the value recorded earlier when both virtual machines were available. Although you now have a functioning system, you're in danger of overloading the working virtual machine.
 
-### Test the *appretailvm2** virtual machine
+### Test the appretailvm2 virtual machine
 
 It seems that the *appretailvm2* virtual machine might not be handling requests properly. You need to check whether this virtual machine is up, and whether Load Balancer can connect to it.
 
