@@ -8,21 +8,13 @@ Let's listen in on the team as they work out a better way to collaborate. Curren
 
 Mara is diligently working on her assigned features when Andy walks in.
 
-**Andy:** Hi Mara, are you finished with those files yet? I need them released to finish my build. I'm blocked until I can get them.
+**Andy:** Hi Mara. In the leadership meeting this morning it was brought up that our team and the game development team are using different version control systems. In an effort to streamline how we share resources between teams we have been asked to move to a distributed version control system that can better handle the collaboration.
 
-**Mara:** I have one more small bug to fix and then I want to test all the files together. I should be done with them in a few hours.
+**Mara:** That's good to know. If you remember, we put it on our board. Currently, we are using a centralized version control system. This works great for us now, but I agree that when we start to share between teams and our team gets bigger, a distributed version control system is a better choice. It's also a task on our board to increase visibility so all the stakeholders know what everyone is doing. I think a distributed source control system like Git would help there as well.
 
-Andy gives a heavy sigh.
+**Andy:** I've been wanting to try Git for a while. I just never seem to have the time. Is it difficult to learn or set up? If it seems reasonable, maybe we could work on it now. I'm tired of always putting things off. And it would be nice to be able to see what everyone is doing and to have access to the entire repository. OK, what's it all about?
 
-**Andy:** Fine, just let me know when they are available.
-
-**Mara:** You know, Andy, maybe we should think about implementing a Git workflow now. It's on our board. If we were using distributed version control, you wouldn't be blocked. It would be much easier for all of us to work together on the same project. It's also a task on our board to increase visibility so all the stakeholders know what everyone is doing. I think a distributed source control system like Git would help there as well.
-
-**Andy:** I've been wanting to try Git for a while. I just never seem to have the time. Is it difficult to learn or set up? If it seems reasonable, maybe we could work on it now. I'm tired of always putting things off.
-
-It would be nice to be able to see what everyone is doing and to have access to the entire repository. OK, what's it all about?
-
-**Mara:** Let me explain it, and then you can decide if it sounds like a good fit.
+**Mara:** Let me explain it, and then you can decide if it sounds like something we want to implement right away.
 
 Mara and Andy move to the whiteboard for a discussion on version control.
 
@@ -30,15 +22,13 @@ Mara and Andy move to the whiteboard for a discussion on version control.
 
 ![A hand-drawn illustration of centralized versus distributed source control](../media/2-whiteboard-centralized-vs-distributed-drawing.png)
 
-**Mara:** The drawing on the left is _centralized version control_, like what we're using now. We have a central version of the code base ![Callout 1](../../shared/media/callout-01.png) in Team Foundation Version Control (TFVC) that everyone uses. We each check out the files we need to change and then merge them back into the master repository when we're finished with them. We all need access to the server in order to do that, so we're limited to working on the project only when we can access the server.
+**Mara:** The drawing on the left is _centralized version control_, like what we're using now. We have a central version of the code base ![Callout 1](../../shared/media/callout-01.png) in Team Foundation Version Control (TFVC) that everyone uses. We each work on the files we need to change and then merge them back into the master repository when we're finished with them.
 
-**Andy:** Like when I went to the conference. I couldn't get to the code.
+**Andy:** Yes, and that is working for us. Well, except when I was blocked that time that a breaking change got merged into the central repo.
 
-**Mara:** Right! And you were blocked ![Callout 2](../../shared/media/callout-02.png) from checking out the files you needed today, because I have them checked out. We could use a branching strategy with TFVC to solve the blocking issue but, in our current configuration, merging might get a bit more complicated.
+**Mara:** Right! You were blocked ![Callout 2](../../shared/media/callout-02.png). We could use a branching strategy with TFVC to solve the blocking issue but, in our current configuration, merging might get a bit more complicated. And when we had that breaking change ![Callout 3](../../shared/media/callout-03.png) no one could get any work done until we got that resolved. That problem is always lurking, because we're all using the same copy of the code.
 
-And remember when we had that breaking change ![Callout 3](../../shared/media/callout-03.png) merged into the main repository? No one could get any work done until we got that solved. That problem is always lurking, because we're all using the same copy of the code.
-
-On the right is a drawing of _distributed version control_. We still have a main, or `master`, repository ![Callout 4](../../shared/media/callout-04.png) that's the stable version of the code base, but each developer has their own copy ![Callout 5](../../shared/media/callout-05.png) of it to work from. This frees us up to experiment and try a variety of approaches without affecting the main repository or locking other developers out of the files they're working with.
+On the right is a drawing of _distributed version control_. We still have a main, or `master`, repository ![Callout 4](../../shared/media/callout-04.png) that's the stable version of the code base, but each developer has their own copy ![Callout 5](../../shared/media/callout-05.png) of it to work from. This frees us up to experiment and try a variety of approaches without affecting the main repository.
 
 Distributed version control also ensures that only working code ![Callout 6](../../shared/media/callout-06.png) gets merged into the master repository. We could even set it up to where code can't be merged until it's been reviewed.
 
@@ -48,7 +38,7 @@ What's cool about Azure DevOps is that it works well with both centralized and d
 
 **Mara:** Often, Git can merge multiple changes automatically. Of course, we want to always make sure the combination of changes results in working code. When Git can't automatically merge changes, it marks the conflicts directly in the files so that a human can choose which changes to accept.
 
-**Andy:** What about the problem of accessing the code when we're not in the building?
+**Andy:** Right now, our code is stored in our own server. Where will it be if we move to using distributed version control?
 
 **Mara:** I'm glad you asked. That's where hosting comes in.
 

@@ -45,7 +45,7 @@ For AC, higher voltage (400 V and 480 V) is more efficient for distributing powe
 
 ![C13 power connector, and C19 power connector](../media/power-connectors.png)
 
-_Figure 8: (a) C13 power connector. (b) C19 power connector._ ([Source](http://en.wikipedia.org/wiki/iec_60320))
+_Figure 8: (a) C13 power connector. (b) C19 power connector._ ([Source](https://en.wikipedia.org/wiki/IEC_60320))
 
 Some vendors offer DC distribution, in which the AC-to-DC conversion is done per rack, per row, or per bay, rather than converting AC to DC within every server power supply. These systems have been measured to be more efficient than their AC counterparts, but only 2% to 4% for average loads. For details, see the white paper "[Quantitative analysis of power distribution configurations for data centers (WP#16)](https://www.thegreengrid.org/en/resources/library-and-tools/393-WP#16---Quantitative-Analysis-of-Power-Distribution-Configurations-for-Data-Centers-)."<sup>[1][^1]</sup>
 

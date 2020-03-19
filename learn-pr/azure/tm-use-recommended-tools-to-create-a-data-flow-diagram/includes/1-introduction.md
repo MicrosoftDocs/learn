@@ -20,7 +20,6 @@ In this module, you will be able to:
 
 - Learn more about the Threat Modeling Tool
 - Learn more about Visio
-- Check out the new Threats Manager Platform
 
 ## Prerequisites
 

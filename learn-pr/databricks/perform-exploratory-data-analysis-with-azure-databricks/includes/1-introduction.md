@@ -4,7 +4,7 @@ The focus of EDA is answering the following questions about a dataset:
 
 - What type of data is in the dataset, and what's its structure?
 - Is there missing or incomplete information?
-- Are there are mistakes or anomalies?
+- Are there any mistakes or anomalies?
 - What are the relationships between different variables?
 - How will different assumptions work against the available dataset?
 

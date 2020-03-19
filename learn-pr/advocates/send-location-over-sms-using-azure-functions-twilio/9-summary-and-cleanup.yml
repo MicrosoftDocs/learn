@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.send-location-over-sms-from-mobile-using-azure-functions-twilio.9-summary-and-cleanup
-title: Summary and clean-up
+title: Summary
 metadata:
-  title: Summary and clean-up
+  title: Summary
   description: A summary or the steps taken and clean-up instructions to clean up the provisioned Azure resources
   ms.date: 09/24/2018
   #TODO: Update with real author name.
