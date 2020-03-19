@@ -44,7 +44,7 @@ You can provision an application for Microsoft identity platform in several ways
 
 1. Enter a display name for the app.
 1. Specify supported account types. Choose from the following accounts:
-   - Accounts within your company's Azure AD teanant.
+   - Accounts within your company's Azure AD tenant.
    - Accounts in any company's Azure AD tenant. 
    - Any organization accounts and personal accounts, such as Microsoft or Xbox.
 1. (Optional) Choose a **redirect URI** parameter. The two available types are **Web** and **Public Client**. A redirect URI takes the form of a web link (HTTPS). The link doesn't need to be valid unless you select a public client.
