@@ -3,7 +3,7 @@ uid: learn.enable-external-access-with-b2c
 metadata:
   title: Enable secure external user access for your applications with Azure AD B2C
   description: TODO
-  ms.date: 04/30/2019
+  ms.date: 03/20/2020
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
@@ -16,7 +16,7 @@ abstract: |
   - Enable multi-factor authentication for Azure AD B2C
 prerequisites: | 
   - Basic understanding of Azure AD
-iconUrl: http://via.placeholder.com/120x120
+iconUrl: /learn/achievements/enable-external-access-with-b2c.svg
 levels:
 - beginner
 roles:
