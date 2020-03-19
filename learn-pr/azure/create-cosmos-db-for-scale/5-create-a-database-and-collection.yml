@@ -9,8 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Exercise - Create a database and container in Azure Cosmos DB
-interactive: bash
-azureSandbox: true
+azureSandbox: false
 durationInMinutes: 3
 content: |
   [!include[](includes/5-create-a-database-and-collection.md)]
