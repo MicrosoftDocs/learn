@@ -96,9 +96,9 @@ In this exercise, you'll edit your app to use the new key vault. Then you'll gra
     > [!NOTE]
     > No password, certificate, or client secret is stored in the code.
 
-1. To save your changes, press <kbd>CTRL</kbd>+<kbd>O</kbd>, and then press **Enter**.
+1. To save your changes, press <kbd>Ctrl</kbd>+<kbd>O</kbd>, and then press **Enter**.
 
-1. To close the nano editor, press <kbd>CTRL</kbd>+<kbd>X</kbd>.
+1. To close the nano editor, press <kbd>Ctrl</kbd>+<kbd>X</kbd>.
 
 ## Test the application
 
