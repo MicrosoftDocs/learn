@@ -4,7 +4,7 @@ Now you're ready to create your database and container. In this exercise, you'll
 
 ## Creating your database and container
 
-1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the account you activated the sandbox with.
+1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the account you activated the sandbox with. 
 
 1. On the Azure portal menu, select **All services**.
 
