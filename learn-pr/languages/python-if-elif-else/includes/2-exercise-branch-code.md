@@ -1,10 +1,10 @@
-Using the `if ... elif ... else` statement is a vital part of building virtually any meaningful program. You can use it to automate complicated decision logic so that it can be applied repeatedly and consistently to your end-user input or data.
+Using the `if ... elif ... else` statement is a vital part of building virtually any meaningful program. You can use it to automate complicated decision logic so that it can be applied repeatedly and consistently to your user input or data.
 
-When we use the term *code logic* or *decision logic*, we're referring to our ability to imbue our program with the ability to make a decision based on inputs. Based on the decision, we can instruct the Python interpreter to execute some code and skip over other code.
+When we use the term *code logic* or *decision logic*, we're referring to our ability to imbue our program with the ability to make a decision based on inputs. Based on the decision, we can instruct the Python interpreter to run some code and skip over other code.
 
 In this exercise, we'll use the `if` statement, along with optional `elif` and `else` statements, to branch the execution of our code depending on a Boolean expression.
 
-A *Boolean expression* is any code that returns a *Boolean value*.  A Boolean value is either `True` or `False` and is its own data type in Python, just like `str` and `int`.
+A *Boolean expression* is any code that returns a *Boolean value*. A Boolean value is either `True` or `False` and is its own data type in Python, just like `str` and `int`.
 
 In this exercise, we'll use a Boolean expression to evaluate whether two values are equal. In the next unit, we'll learn how to create more expressive Boolean expressions and work with functions that return a Boolean value.
 
@@ -16,9 +16,9 @@ Using the techniques you learned in previous modules, create a new folder for yo
 
 Inside that folder, create a file for this exercise. For example, you might create a file named `exercise1.py`.
 
-When it's time to execute your code, you can use the Python Tools for Visual Studio Code integration by selecting the green arrow. Or you can use a command in the integrated terminal by using techniques we learned about in previous modules.
+When it's time to run your code, you can use the Python Tools for Visual Studio Code integration by selecting the green arrow. Or you can use a command in the integrated terminal by using techniques we learned about in previous modules.
 
-### Step 2: Add an if statement to the new code file
+### Step 2: Add an `if` statement to the new code file
 
 Add the following code to your code file:
 
@@ -36,7 +36,7 @@ There are three parts to the `if` statement:
 - The Boolean expression `value == '7'`
 - The required colon `:` character
 
-What comes next is just as important. The next line must contain a code block that will be executed if the Boolean expression evaluates to `True`. In Python, a code block is defined by using indentation. In this case, we used the <kdb>Tab</kbd> key to insert four individual spaces. This indentation tells the Python interpreter that this code *belongs to* the `if` statement and should be executed when the Boolean expression evaluates to `True`.
+What comes next is just as important. The next line must contain a code block that runs if the Boolean expression evaluates to `True`. In Python, a code block is defined by using indentation. In this case, we used the <kdb>Tab</kbd> key to insert four individual spaces. This indentation tells the Python interpreter that this code *belongs to* the `if` statement and should run when the Boolean expression evaluates to `True`.
 
 If the Boolean expression evaluates to `False`, all of the indented code should be ignored by the Python interpreter.
 
@@ -56,7 +56,7 @@ When you run the code, you'll see the following output:
 ```output
 Finished!
 ```
-The line of code beneath the `if` statement is ignored because the Boolean expression evaluates to `False`.  The final line of code that prints the term `Finished` is executed because it isn't indented beneath the `if` statement.
+The line of code beneath the `if` statement is ignored because the Boolean expression evaluates to `False`.  The final line of code that prints the term `Finished` runs because it isn't indented beneath the `if` statement.
 
 ### Step 3: Add a tab character to the last line of code to understand the importance of indentation
 
@@ -73,7 +73,7 @@ if value == '7':
     print('Finished!')
 ```
 
-When you execute the code this time, there's no output. That's because the last line of code is now part of the same code block that belongs to the `if` statement.  
+When you run the code this time, there's no output. That's because the last line of code is now part of the same code block that belongs to the `if` statement.
 
 Indentation defines a code block in Python. A code block consists of one or more lines of code that are treated as a unit of work. The code block is only executed based on the statement above it, which is the `if` statement in this case. We'll come across code blocks often in Python as we learn about new constructs like loops, functions, classes, and more.
 
@@ -88,7 +88,7 @@ if value == '7':
    print('Finished!')
 ```
 
-And then attempt to execute the code again, you'll see the following error:
+And then attempt to run the code again, you'll see the following error:
 
 ```output
   File "exercise1.py", line 6
@@ -97,9 +97,9 @@ And then attempt to execute the code again, you'll see the following error:
 IndentationError: unindent does not match any outer indentation level
 ```
 
-### Step 4: Update the code example to include an else statement
+### Step 4: Update the code example to include an `else` statement
 
-The `else` statement is an optional part of an `if` statement that can handle the opposite case. In other words, when the Boolean expression in the `if` statement evaluates to `False`, execute the code block that belongs to the `else` statement instead.
+The `else` statement is an optional part of an `if` statement that can handle the opposite case. In other words, when the Boolean expression in the `if` statement evaluates to `False`, run the code block that belongs to the `else` statement instead.
 
 Update your code to match the following code passage. In addition to adding the `else` statement, notice that we removed the tab from the last line of code.
 
@@ -114,7 +114,7 @@ else:
 print('Finished!')
 ```
 
-If you execute the code, you'll see the following output:
+If you run the code, you'll see the following output:
 
 ```output
 The value is not 7
@@ -129,9 +129,9 @@ There are two parts to the `else` statement:
 As before, the code block following the `else` statement is just as important. All indented lines of code below the `else` statement become part of its code block and are executed with the Boolean expression if the `if` statement evaluates to `False`.
 
 
-### Step 5: Update the code example to include an elif statement
+### Step 5: Update the code example to include an `elif` statement
 
-The `elif`, or rather, *else if* statement is another optional statement that can be added below an `if` statement. Use the `elif` to test another related Boolean expression. If that Boolean expression evaluates to `True`, the indented code below it is executed. All code blocks that belong to other `if`, `elif`, and `else` statements are ignored.
+The `elif`, or rather, *else if* statement is another optional statement that can be added below an `if` statement. Use the `elif` to test another related Boolean expression. If that Boolean expression evaluates to `True`, the indented code below it runs. All code blocks that belong to other `if`, `elif`, and `else` statements are ignored.
 
 Modify the code example to match the following output:
 
@@ -154,9 +154,9 @@ Just like the `if` statement, there are three parts to the `elif` statement:
 - Must include a Boolean expression
 - Must terminate by using a colon `:` keyboard symbol
 
-And just as before, all indented code below the `elif` is part of the code block that will be executed if the Boolean expression evaluates to `True`.
+And just as before, all indented code below the `elif` is part of the code block that runs if the Boolean expression evaluates to `True`.
 
-When you execute the code, you'll see the following output:
+When you run the code, you'll see the following output:
 
 ```output
 The value is 8
@@ -204,7 +204,7 @@ The problem is that the `elif` statement will never execute because any `value` 
 
 This scenario would likely never manifest in a runtime error. If we were expecting to handle these differently, we would have introduced a subtle logic error into our application. We would need to swap the Boolean expressions between the `if` and the `elif` to fix the issue. It's always useful to test your application with multiple inputs to make sure you get the intended result.
 
-### Nested if code blocks
+### Nested `if` code blocks
 
 Consider the following code example:
 
@@ -251,9 +251,9 @@ IndentationError: expected an indented block
 
 We learned about some crucial ideas in this unit:
 
-- Use the `if` statement to evaluate a Boolean expression. If the expression evaluates to `True`, the code block beneath the `if` statement is executed by the Python interpreter. Otherwise, it's ignored.
-- A code block is one or more indented lines of code. The code block *belongs to* the `if` statement and is executed or ignored based on the evaluation of the Boolean expression. Accidentally indenting (or not indenting) lines of code will undoubtedly affect how your code operates and might even produce errors. All indentation must use the same number of space characters or the Python interpreter will raise an error.
+- Use the `if` statement to evaluate a Boolean expression. If the expression evaluates to `True`, the code block beneath the `if` statement runs by the Python interpreter. Otherwise, it's ignored.
+- A code block is one or more indented lines of code. The code block *belongs to* the `if` statement and runs or is ignored based on the evaluation of the Boolean expression. Accidentally indenting (or not indenting) lines of code will undoubtedly affect how your code operates and might even produce errors. All indentation must use the same number of space characters or the Python interpreter will raise an error.
 - Add an optional `else` statement when you want to execute code that's only relevant if the Boolean expression evaluates to `False`. Otherwise, it's ignored.
-- Add an optional `elif` after the `if` statement (but before the `else` statement, if it exists) to evaluate a second and subsequent Boolean expression. Just like the `if` statement, the indented code block beneath it is executed if the Boolean expression evaluates to `True`. Otherwise, it's ignored.
+- Add an optional `elif` after the `if` statement (but before the `else` statement, if it exists) to evaluate a second and subsequent Boolean expression. Just like the `if` statement, the indented code block beneath it runs if the Boolean expression evaluates to `True`. Otherwise, it's ignored.
 - When you use the `if` statement along with one or more `elif` statements and the `else` statement, once a Boolean expression is satisfied, no other statements are evaluated. As a result, the order in which you perform your evaluations could be important.
 - You can nest `if` statements if you need to check for related (but different) conditions before you perform some operation.
