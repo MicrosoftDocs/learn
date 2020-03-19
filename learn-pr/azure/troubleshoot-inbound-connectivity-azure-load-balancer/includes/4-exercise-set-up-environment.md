@@ -134,14 +134,21 @@ This exercise is optional. To complete it, you need access to an Azure subscript
     | Metric Namespace | Load balancer standard metrics  |
     | Metric | Packet Count |
     | Aggregation | Avg |
-
+1. Select the **Finish editing** check mark.
 1. At the top of the page, set the time range to **Last 30 minutes**. The chart should look similar to the one shown below. Note the peak value of the average packet count.
 
     > [!div class="mx-imgBorder"]
     > ![The average packet count while the load balancer is in a healthy state](../media/4-packet-count-healthy.png)
 
-1. Select **Pin to dashboard** > **Pin to current dashboard**. If you don't have a dashboard, create a new one.
+1. Select **Pin to dashboard** > **Select another dashboard**. 
+1. Select **Create new** and use the following values:
 
+    | Field | Value  |
+    |---|---|
+    | Dashboard name | dashboard-learn-ts-loadbalancer |
+    | Publish to the 'dashboards' resource group. | Deselect check box  |
+    | Resource group |learn-ts-loadbalancer-rg |
+1. Select **Apply**.
 1. Select **+ New Chart**, and add the following metric:
 
     | Property  | Value  |
@@ -159,9 +166,11 @@ This exercise is optional. To complete it, you need access to an Azure subscript
     | Metric Namespace | Load balancer standard metrics  |
     | Metric | Data Path Availability |
     | Aggregation | Avg |
-
+1. Select the **Finish editing** check mark.
 1. Set the time range to **Last 30 minutes**. The chart should report both statistics at 100 percent.
 
-1. Select **Pin to dashboard** > **Pin to current dashboard**.
+1. Select **Pin to dashboard** > **Select another dashboard** > **Browse dashboards**.
+1. For Dashboard, select **dashboard-learn-ts-loadbalancer**.
+1. Select **Apply**.
 
 You now have a baseline set of metrics for the system when it's running correctly.
