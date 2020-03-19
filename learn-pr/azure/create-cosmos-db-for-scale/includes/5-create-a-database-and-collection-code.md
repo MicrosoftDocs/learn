@@ -631,7 +631,7 @@ In this exercise, you'll create an Azure Cosmos DB  database, and container usin
 
 ::: zone-end
 
-::: zone pivot="node"
+::: zone pivot="cli"
 
 ## Create an Azure Cosmos DB account + database with the Azure CLI
 
