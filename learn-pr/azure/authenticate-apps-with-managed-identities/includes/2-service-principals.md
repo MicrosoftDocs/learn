@@ -20,7 +20,7 @@ Service principals exist at the tenant level in Azure. They're used to grant acc
 
 In the Azure portal, you create an Azure AD application to represent your app. You then associate this application object with a service principal. 
 
-If all of the resources are in the same tenant, then you need to associate only one service principal. If your app needs access to Azure resources in a different tenant, then you need a service principal for each of them.
+If all of the resources are in the same tenant, then you need to associate only one service principal. If your app needs access to Azure resources in a different tenant, then you need a service principal for each application.
 
 ![Diagram showing the relationship between service principals and tenants](../media/2-service-principal-overview.svg)
 
