@@ -1,6 +1,6 @@
 _Delivery Plans_ is an extension for Azure DevOps that helps organizations plan and review work schedules across multiple teams. The Tailspin team will use this extension to get a better idea of how their work relates to work to be produced by other teams.
 
-Mara installed Delivery Plans on the team's Azure DevOps account. She then created a delivery plan and added the sprints for her team and the game engine team. Excited to show off the potential, she invites Andy over for a quick demo.
+Mara installed Delivery Plans in the team's Azure DevOps organization. She then created a delivery plan and added the sprints for her team and the game engine team. Excited to show off the potential, she invites Andy over for a quick demo.
 
 **Mara:** After our last conversation I looked into our options for managing delivery plans. I found an Azure DevOps extension that seems to give us everything we need.
 
