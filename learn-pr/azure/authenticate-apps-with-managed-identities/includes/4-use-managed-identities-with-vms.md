@@ -31,7 +31,7 @@ Permissions are formed by role-based access. Role-based access consists of three
 
 ## Using managed identity in an application
 
-An application that runs inside an environment, such as a VM or a function app, uses a managed identity to authenticate and access other resources.
+An application that runs on an Azure resource, such as a VM or a function app, uses a managed identity to authenticate and access other resources.
 
 The authentication and access process involves a series of requests to the Azure Instance Metadata Service: 
 
