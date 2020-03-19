@@ -62,11 +62,11 @@ This should produce the following output (exact output might vary)
 rw-r--r--  1 <user>  <group>   311B 17 Mar 21:23 <name of your app file>.js
 ```
 
-## Running executable files
+## Running executable files
 
 We have dedicated methods on our `child_process` module that allows us to run commands. Generally the `exec()` method is preferred, over `execFile()` as it doesn't create a shell and thereby is less resource intensive. However that's only possible on Linux. On Windows `.cmd` and `.bat` files are only allowed to run in a shell so therefore `execFile()` is the only choice.
 
-### Prerequisites for Linux
+### Prerequisites for Linux
 
 Let's create a file `command.sh`, give it for example a content like this:
 

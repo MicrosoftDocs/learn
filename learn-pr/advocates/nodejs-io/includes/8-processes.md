@@ -4,7 +4,7 @@ To work with process we will need to use the module `child_process`. This module
 
 By default, pipes for `stdin`, `stdout`, and `stderr` are created  between the parent Node.js process and the spawned child. This means we have access to the mentioned streams and can therefore listen to events being produced by any of these streams.
 
-## Process creation
+## Process creation
 
 There are four ways a process an be created
 

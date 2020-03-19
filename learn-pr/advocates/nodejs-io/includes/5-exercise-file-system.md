@@ -24,7 +24,7 @@ sub -|
 ---| c.txt
 ```
 
-## Read/Write files
+## Read/Write files
 
 First, start by giving your `app.js` file the following content on the top:
 
@@ -83,7 +83,7 @@ Async Content: info
 
 Note above how the text `After sync call` is printed right after it lists the file content from our synchronous call. Additionally note how text `After async call` is printed *before* `Async Content: info`. This means anything asynchronous happens last. This is an important realization about asynchronous operations, they may be non-blocking but they don't complete right away. So if order is important you should be looking at constructs such Promises and Async/await.
 
-## List stats
+## List stats
 
 For various reasons you may want to list detailed information on a specific file/directory. For that we have `stat()` method. This also comes in a asynchronous/synchronous version.
 
@@ -126,7 +126,7 @@ Is file true
 
 Results above may vary depending on what content you have in your file `info.txt` and when it was created.
 
-## Open directory
+## Open directory
 
 Lastly, we will open up a directory using the method `readdir()`. This will produce an array of files/directories contained within the specified directory:
 
