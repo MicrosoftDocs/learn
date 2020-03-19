@@ -14,7 +14,7 @@ durationInMinutes: 3
 quiz:
   title: Check your knowledge
   questions:
-  - content: "You want to clone a remote repository to your local machine.  What command do you type into Visual Studio Code's Command Pallet?"
+  - content: "You want to clone a remote repository to your local machine.  What command do you type into Visual Studio Code's Command Palette?"
     choices:
     - content: "pull"
       isCorrect: false
@@ -28,7 +28,7 @@ quiz:
     - content: "clone"
       isCorrect: true
       explanation: "Correct!"
-  - content: "What does the Synchronize Changes in the Status Bar do?"
+  - content: "What does the Synchronize Changes button in the Status Bar do?"
     choices:
     - content: "A `git rebase`"
       isCorrect: false

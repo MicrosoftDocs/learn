@@ -1,6 +1,6 @@
 As we stated in the introduction, Visual Studio Code provides tight source control integration with Git by default and with other source code management (SCM) providers through extensions.   
 
-If you're an avid user of Visual Studio Code, it's possible you have kept Git bash open in a separate window, or used Visual Studio Code's integrated terminal window to type Git commands.  While this technique will work, you may come to realize that you can enhance your workflow by learning more about what Visual Studio Code has to offer.  Visual Studio Code provides lots of visual cues, helpful prompts, and shortcuts to common git features tucked away and available using common tools like the Command Pallet, the Status Bar, and the Source Control view.
+If you're an avid user of Visual Studio Code, it's possible you have kept Git bash open in a separate window, or used Visual Studio Code's integrated terminal window to type Git commands.  While this technique will work, you may come to realize that you can enhance your workflow by learning more about what Visual Studio Code has to offer.  Visual Studio Code provides lots of visual cues, helpful prompts, and shortcuts to common git features tucked away and available using common tools like the Command Palette, the Status Bar, and the Source Control view.
 
 ## What you'll accomplish in this exercise
 
@@ -27,7 +27,7 @@ After a moment or two, the repository will be forked to your GitHub account.
 
 ### Step 2 - Copy the URL to your forked repository.
 
-You'll need to URL to clone your fork to your local hard drive.
+You'll need the URL to clone your fork to your local hard drive.
 
 To copy the URL, select the green "Clone or download" button near the upper-right hand corner of the web page.  A dropdown will appear titled "Clone with HTTPS".  
 
@@ -39,14 +39,14 @@ Select the clipboard icon next to the URL to copy the URL to your computer's cli
 
 Launch Visual Studio Code.
 
-In Windows, select <kbd>Ctrl+Shift+P</kbd> to open the Visual Studio Code Command Pallet.
+In Windows, select <kbd>Ctrl+Shift+P</kbd> to open the Visual Studio Code Command Palette.
 
 Enter the word `clone`.  The dropdown option should list "Git: Clone" as the selected option.  Select <kbd>Enter</kbd>.
 
-The Command Pallet will prompt you to enter the "Repository URL".  Select <kbd>Ctrl+V</kbd> to paste the URL you copied in the previous step.  Select <kbd>Enter</kbd>.
+The Command Palette will prompt you to enter the "Repository URL".  Select <kbd>Ctrl+V</kbd> to paste the URL you copied in the previous step.  Select <kbd>Enter</kbd>.
 
 > [!NOTE]
-> The Command Pallet provides access to many git features with helpful prompts.  If you're curious as to what you can accomplish from the Command Pallet, open it by selecting select <kbd>Ctrl+Shift+P</kbd>, then type `git`.  You'll see a long list containing dozens of commands.
+> The Command Palette provides access to many git features with helpful prompts.  If you're curious as to what you can accomplish from the Command Palette, open it by selecting select <kbd>Ctrl+Shift+P</kbd>, then type `git`.  You'll see a long list containing dozens of commands.
 
 Next, the Select Folder dialog will appear.  Choose the folder on your local hard drive where you want to store the files for the cloned repository.  Once you've navigated the file system, select the "Select Repository Location" button to continue.
 
@@ -59,7 +59,7 @@ You should now see all of the code files for the repository in Visual Studio Cod
 
 ### Step 3 - Create a branch for your changes.
 
-The Visual Studio Code's Status Bar provides a host of functionality depending on the extensions you have loaded and what you're working on.  The Status Bar features some handy Git information and functionality.  There are two parts:
+The Status Bar provides a host of functionality depending on the extensions you have loaded and what you're working on.  The Status Bar features some handy Git information and functionality.  There are two parts:
 
 - On the left, you see the name of current working branch.  If you modify any tracked files in the working branch, it will add an asterisk symbol `*` next to the branch name.  
 
@@ -77,13 +77,13 @@ And the following image shows you what the "Publish Changes" icon looks like:
 
 ![Screenshot of the Status Bar with an arrow pointing to the Publish Changes icon.](../media/2-exercise-clone-branch-05.png)
 
-To create a branch, click the branch name (currently set to `master`) in the Status Bar.  This will pop open the Command Pallet and allow you to either:
+To create a branch, click the branch name (currently set to `master`) in the Status Bar.  This will pop open the Command Palette and allow you to either:
 - Switch to an existing branch
 - Create a new branch
 
 Start typing the name of the new branch: `update-response`.  When you do, you'll notice that the existing branch names disappear.
 
-After typing `update-response`, select <kbd>Enter</kbd>.  The Command Pallet will prompt you to select the branch you will base your new branch on.  Select `master`.
+After typing `update-response`, select <kbd>Enter</kbd>.  The Command Palette will prompt you to select the branch you will base your new branch on.  Select `master`.
 
 The Status Bar should now display `update-response` indicating the branch you're now working on.
 
@@ -140,7 +140,7 @@ Finally, after you commit your changes, this icon will disappear.  We'll do that
 
 There are a few important takeaways from this exercise:
 
-- To quickly clone a repository, open the Command Pallet (<kbd>Ctrl+Shift+P</kbd>) and enter `clone`.
+- To quickly clone a repository, open the Command Palette (<kbd>Ctrl+Shift+P</kbd>) and enter `clone`.
 - To quickly see which branch you're working with, glance at the Status Bar.
 - To quickly switch to a new branch or create a new branch, click the current branch name in the Status Bar.
 - To quickly perform a `git pull` and `git push` on an existing branch, click the "Synchronize Changes" button.
