@@ -2,24 +2,20 @@ You now understand how request units are used to determine database throughput. 
 
 Now you're ready to create your database and container. In this exercise, you'll create an Azure Cosmos DB Database named **"Products"** and Container named **"Clothing"** and set your partition key and throughput values.
 
-::: zone pivot="csharp"
+## Creating your database and container
 
-## TODO: C# content goes here
+1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the account you activated the sandbox with.
 
-::: zone-end
-
-::: zone pivot="java"
-
-## TODO: Java content goes here
-
-::: zone-end
+1. On the Azure portal menu, select **All services**.
 
 ::: zone pivot="cli"
 
 ## Creating your database and container
 
-1. In the Azure portal, select **Data Explorer** from your Cosmos DB resource and then click the **New Container** button in the toolbar.
+1. Select **Databases** > **Azure Cosmos DB**. Then select your account, click **Data Explorer**, and then click **Open Full Screen**.
 
+1. Click the **New Container** button in the toolbar.
+    
     The **Add Container** area is displayed on the far right. You may need to scroll right to see it.
 
     ![The Azure portal Data Explorer, Add Container pane](../media/5-azure-cosmosdb-data-explorer.png)
