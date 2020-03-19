@@ -6,7 +6,7 @@ In this unit, you'll work through a series of steps to ensure your application i
 
 Users have higher expectations for mobile applications now than they did when smart phones first were released. If your app looks or behaves poorly, users will probably switch to another one that's better. That's why it's important to pay attention to quality.
 
-![An illustration that shows quality considerations.](../media/2-quality.png)
+![Illustration of quality considerations with several inputs: images, platform idioms, animations, device sizes, localizaiton, and testing.](../media/2-quality.png)
 
 You'll want to focus on these considerations:
 
@@ -18,7 +18,7 @@ You'll want to focus on these considerations:
 
 ## Localize your app
 
-![An illustration promoting localization.](../media/2-localization.png)
+:::image type="icon" source="../media/2-localization.png":::
 
 Users prefer apps in their native language. Some applications might not even be usable if they're not properly translated. Without translations, you could be excluding a large percentage of your potential users.
 
@@ -30,7 +30,7 @@ Most mobile app stores will test your application before it's published.
 
 Your application will be rejected if it crashes or behaves incorrectly at any point during the review phase. Apps that crash are automatically rejected.
 
-![An illustration showing areas in an app that need testing.](../media/2-testing.png)
+![Illustration showing several areas in an app that need testing: dropped network, older devices, bad input, and orientation changes.](../media/2-testing.png)
 
 All your applications will go through some form of development testing. It might be unit tests to verify your code logic or user acceptance tests to verify the scenarios in your app. Whatever type of tests you run, make sure to test the edge cases. Include the scenarios that you hope don't happen often but that you know will happen periodically.
 
@@ -64,6 +64,6 @@ It's helpful to get reports on how your app is being used and any problems peopl
 
 Each of the three vendors, Apple, Google, and Microsoft, have analytics engines you can integrate with that will provide your app statistics and crash information.
 
-![A screenshot of Visual Studio App Center.](../media/2-analytics.png)
+![Screenshot of the Overview panel of Visual Studio App Center.](../media/2-analytics.png)
 
 Microsoft provides App Center Analytics. We highly recommend that you use this offering because it integrates nicely with the tools and with the runtime.
