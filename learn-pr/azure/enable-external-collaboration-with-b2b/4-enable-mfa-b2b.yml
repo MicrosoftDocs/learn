@@ -20,7 +20,7 @@ quiz:
     - content: Application level, user level, and category level.
       isCorrect: false
       explanation: There is no such thing as *category level* in multi-factor authentication enforcement that uses conditional access policies.
-    - content: Tenant level, user level, and application level
+    - content: Tenant level, user level, and application level.
       isCorrect: True
       explanation: You can enforce multi-factor authentication at different scopes through conditional access policies. This means that you can further secure your collaboration in Azure AD B2B.
     - content: User level, application level, and strength level.
