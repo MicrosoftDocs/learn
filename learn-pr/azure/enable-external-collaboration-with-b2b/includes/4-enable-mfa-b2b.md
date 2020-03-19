@@ -1,5 +1,5 @@
 
-It's important for your organization to secure the application as much as possible. You'll add an additional layer of security with Azure AD B2B, by enabling multi-factor authentication for guest B2B users.
+It's important for your organization to secure the application as much as possible. You'll add an additional layer of security with Azure Active Directory B2B (Azure AD B2B), by enabling multi-factor authentication for guest B2B users.
 
 The clinicians need to be able to collaborate securely. You can enforce multi-factor authentication at the application level. This action ensures that everyone who uses the application must pass an additional authentication challenge before accessing it.
 

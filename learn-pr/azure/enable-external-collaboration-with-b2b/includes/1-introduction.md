@@ -1,6 +1,6 @@
 Organizations naturally need to collaborate with external users. These external users might be required to provide vital services and work. As a result, applications and resources must often be shared. External users might be individuals without an IT department, or part of another organization with its own IT infrastructure.
 
-Organizations must ensure that any sharing process is secure. You should give access to the permission levels necessary, for the right amount of time. Azure Active Directory business-to-business (Azure AD B2B) collaboration allows organizations to work with external users by ensuring that applications and resources are shared securely.
+Organizations must ensure that any sharing process is secure. You should give access to the permission levels necessary, for the right amount of time. Azure Active Directory B2B (Azure AD B2B) collaboration allows organizations to work with external users by ensuring that applications and resources are shared securely.
 
 Let's say that you're the solution architect for a healthcare organization. Your company is publishing an application that allows clinicians from partnering health providers to access health records for patients at your facilities. You'll make sure these organizations collaborate in a secure way.
 

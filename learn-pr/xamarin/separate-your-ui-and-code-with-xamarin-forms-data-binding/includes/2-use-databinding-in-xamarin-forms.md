@@ -9,7 +9,9 @@ Apps typically have two synchronization tasks:
 
 You can use code for both of these jobs. The following image shows the UI for a "to-do list" application and the code used to transfer data between the UI and the data-model objects. The `task` object is the data model. `Name`, `Notes`, and `IsDone` are the UI elements that display the data. Notice that there are two blocks of code: one loads data into the UI, and the other reacts when the user changes the data.
 
-![An image showing how to use code to keep a UI and data-model objects synchronized.](../media/ImperativeCodeToUI.png)
+:::image type="complex" source="../media/ImperativeCodeToUI.png" alt-text="Image showing an example of a Task tracking app, with code used to keep a UI and data-model objects synchronized and the result iOS app screenshot.":::
+   Code assigns the Text property of two labels and the IsToggled property of a toggle button. The UI is then modified via TextChanged and Toggled event handles.
+:::image-end:::
 
 This approach can work for small apps. But it gets difficult to do as your app gets bigger and the interactions become more complex. For example, you might have several controls that manipulate the same data. Or there can be events in one control that affect the state of other controls. It's also challenging to write unit tests when all your logic is in the `Page`'s code-behind file.
 
@@ -25,7 +27,7 @@ The rules for source and target are different:
 
 The following illustration summarizes the rules for the source and target of a binding.
 
-![Binding as intermediary](../media/BindingAsIntermediary.png)
+![Illustration showing a binding as an intermediary between a source object property and a target object bindable property.](../media/BindingAsIntermediary.png)
 
 ## Create data bindings in XAML
 
@@ -33,7 +35,14 @@ It's most common to create bindings in XAML. There are a couple of reasons to pr
 
 Let's look at an example binding created in XAML by using the `{Binding}` markup extension. It's binding the `Todo.Title` property of the source to the `Entry.Text` property of the UI control.
 
-![An illustration showing annotated code that creates a binding in Xaml.](../media/BindingInXaml.png)
+```xaml
+<Entry Text="{Binding Title,
+              Source={StaticResource getMilk}}" />
+```
+
+:::image type="complex" source="../media/BindingInXaml.png" alt-text="Annotated example XAML of the previous Entry Text binding.":::
+    A callout "Assigned to Target property" points to the Entry Text property. A callout about the bindings first unnamed argument being the Path points to the Title of the binding XAML. Lastly, a callout "Source supplied through resource" points to the StaticResource syntax.
+:::image-end:::
 
 For the source:
 
@@ -77,7 +86,9 @@ There are a couple interesting things to call out here.
 
 So far we've discussed one binding at a time. But in the most common situation, we have several controls that pull data from the same source object. For example, the following image shows part of the UI for a to-do app and the data-object that's used as the binding source. Notice how this page displays three properties from a single `Todo` object.
 
-![Multiple controls with bindings to same source](../media/MultipleBindingsPerPage.png)
+:::image type="complex" source="../media/MultipleBindingsPerPage.png" alt-text="Diagram between a class' properties and the resulting UI they are bound to.":::
+    Code is a Todo class with properties Title, Notes, and Completed. The Title property binds to a Name entry, Notes property binds to a Notes entry, and Completed property binds to a toggle button.
+:::image-end:::
 
 This situation is so common that bindings have a special case to handle it. The `BindableObject` class defines a property named `BindingContext`. All Xamarin.Forms pages, layout panels, and controls inherit from `BindableObject`, so they all have this property.
 

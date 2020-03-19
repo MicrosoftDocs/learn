@@ -4,7 +4,7 @@ In this unit, you'll look at three different storage options and learn when to u
 
 ## Data storage options
 
-![An illustration showing the three different types of data storage options (preferences, file system, and database)](../media/2-data-storage-options.png)
+![Illustration showing the three different types of data storage options: preferences, file system, and database.](../media/2-data-storage-options.png)
 
 In Xamarin.Forms, there are three common options for storing data locally:
 

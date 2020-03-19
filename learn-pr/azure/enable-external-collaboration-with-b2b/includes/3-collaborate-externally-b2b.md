@@ -1,5 +1,5 @@
 
-You'll need to invite the clinicians as guest users in Azure AD B2B to share your company's healthcare application with them securely.
+You'll need to invite the clinicians as guest users in Azure Active Directory B2B (Azure AD B2B) to share your company's healthcare application with them securely.
 
 ## Collaborate with external users who are using their identities
 
