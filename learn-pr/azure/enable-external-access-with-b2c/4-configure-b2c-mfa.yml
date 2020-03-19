@@ -3,12 +3,11 @@ uid: learn.enable-external-access-with-b2c.4-configure-b2c-mfa
 metadata:
   title: Configure Azure AD B2C with MFA
   description: Configure Azure AD B2C with MFA
-  ms.date: 09/30/2019
+  ms.date: 03/20/2020
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 title: Configure Azure AD B2C with MFA
 durationInMinutes: 3
 content: |
