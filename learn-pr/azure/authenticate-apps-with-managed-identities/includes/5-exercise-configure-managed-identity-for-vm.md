@@ -88,7 +88,6 @@ In this unit, you'll create a system-assigned managed identity for your virtual 
     sudo apt-get install apt-transport-https
     sudo apt-get update
     sudo apt-get install dotnet-sdk-3.1
-
     ```
 
 1. Download the source code for this module's sample app.
