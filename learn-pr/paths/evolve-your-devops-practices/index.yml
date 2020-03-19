@@ -18,7 +18,6 @@ summary: |
     - See how value stream maps can help you evaluate your current processes and technologies
     - Sign up for your free Azure DevOps organization
     - Learn how to plan and track work items using Azure Boards
-    - Optimize sprint workloads across multiple Agile teams
 
   Take this learning path to help prepare for [Exam AZ-400: Microsoft Azure DevOps Solutions](https://www.microsoft.com/learning/exam-az-400.aspx).
 cardDescription: DevOps is the union of people, process, and products to enable continuous delivery of value to your end users. Azure DevOps is a set of services that gives you the tools you need to do just that. With Azure DevOps, you can build, test, and deploy any application, either to the cloud or on premises. DevOps practices that enable transparency, cooperation, continuous delivery and continuous deployment become embedded in your software development lifecycle.
@@ -36,6 +35,5 @@ modules:
 - learn.azdo.assess-your-development-process
 - learn.get-started-with-devops
 - learn.azdo.choose-an-agile-approach
-- learn.azdo.manage-delivery-plans
 trophy:
   uid: learn.azdo.evolve-your-devops-practices.trophy
