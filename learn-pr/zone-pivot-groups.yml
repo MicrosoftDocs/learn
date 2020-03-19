@@ -266,7 +266,7 @@ groups:
       title: Bash
     - id: vscode
       title: Visual Studio Code
-- id: csharp-java-cli
+- id: dev-approach-csharp-java-cli
   title: Approach
   prompt: Choose your preferred approach
   pivots:
