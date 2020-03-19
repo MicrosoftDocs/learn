@@ -68,7 +68,7 @@ In this exercise, you'll create a new Java web app using the `maven-archetype-we
 
 ## Test the sample web app
 
-1. For this exercise, you'll need to open a port to make the local web server available to view in a browser. To do so, use the following `curl` command in the cloud shell.
+1. For this exercise, you'll need to open a port to make the local web server available to view in a browser. To do so, use the following `curl` command in the Cloud Shell.
 
     ```bash
     curl -X POST http://localhost:8888/openPort/8000;
@@ -90,6 +90,6 @@ In this exercise, you'll create a new Java web app using the `maven-archetype-we
 
     ![Example web app running on Tomcat in a web browser](../media/3-tomcat-server-response.png)
 
-1. Quit the web server by typing <kbd>Ctrl</kbd>+<kbd>C</kbd> in the cloud shell.
+1. Quit the web server by typing <kbd>Ctrl</kbd>+<kbd>C</kbd> in the Cloud Shell.
 
 In the next unit, you'll learn how to deploy your web app to Azure App Service.
