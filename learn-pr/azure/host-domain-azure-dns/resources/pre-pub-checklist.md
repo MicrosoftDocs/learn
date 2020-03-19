@@ -10,7 +10,7 @@
 
 ### Content/Media/assets
 - [X ] Remove locale from urls
-- [ ] Final images/screenshots are present
+- [X ] Final images/screenshots are present
 - [ X] Badge images are present
 - [X ] Verify Acrolinx score for all content (score > 80)
 
@@ -20,7 +20,7 @@
 - [ X] *summary* is set and follows guidelines
 - [ X] *abstract* is set and lists objectives (no periods)
 - [ X] *prerequisites* are set
-- [ ] *ms.date* is set to publication date
+- [X ] *ms.date* is set to publication date
 - [ X] *author* and *ms.author* are set
 - [ X] *ms.prod* is set to **learning-azure**
 - [X ] *iconUrl* is set and points to a valid svg
@@ -30,7 +30,7 @@
 ### All other yml files
 - [ X] *uid* is set and matches index.yml
 - [ X] *title* is set
-- [ ] *ms.date* is set 
+- [ X] *ms.date* is set 
 - [ X] *author* and *ms.author* are set
 - [ X] *durationInMinutes* is set and IS ACCURATE
 - [ X] *interactive* is set to **bash** or **azure-portal** (if exercise)
@@ -39,4 +39,4 @@
 - [ X]  Remove *ROBOTS: NOINDEX*
 
 ### Exercises
-- [ ] All exercise units have *Exercise - * prefix on titles
+- [X ] All exercise units have *Exercise - * prefix on titles
