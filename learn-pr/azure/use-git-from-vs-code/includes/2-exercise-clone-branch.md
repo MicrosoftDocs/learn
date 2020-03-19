@@ -1,27 +1,27 @@
 As we stated in the introduction, Visual Studio Code provides tight source control integration with Git by default and with other source code management (SCM) providers through extensions.   
 
-If you're an avid user of Visual Studio Code, it's possible you have kept Git bash open in a separate window, or used Visual Studio Code's integrated terminal window to type Git commands.  While this technique will work, you may come to realize that you can enhance your workflow by learning more about what Visual Studio Code has to offer.  Visual Studio Code provides lots of visual cues, helpful prompts and shortcuts to common git features tucked away and available using common tools like the Command Pallet, the Status Bar and the Source Control view.
+If you're an avid user of Visual Studio Code, it's possible you have kept Git bash open in a separate window, or used Visual Studio Code's integrated terminal window to type Git commands.  While this technique will work, you may come to realize that you can enhance your workflow by learning more about what Visual Studio Code has to offer.  Visual Studio Code provides lots of visual cues, helpful prompts, and shortcuts to common git features tucked away and available using common tools like the Command Pallet, the Status Bar, and the Source Control view.
 
 ## What you'll accomplish in this exercise
 
-In this first exercise, you'll simulate the process of contributing to an open source library.  This will provide the perfect context for using Visual Studio Code's Git integration.  You'll see how each tool and feature plays a part in creating a local clone and making your first change to the project's code.  In the next exercise, we'll stage and commit the changes and push to your remote fork.
+In this first exercise, you'll simulate the process of contributing to an open-source library.  This will provide the perfect context for using Visual Studio Code's Git integration.  You'll see how each tool and feature plays a part in creating a local clone and making your first change to the project's code.  In the next exercise, we'll stage and commit the changes and push to your remote fork.
 
 > [!IMPORTANT]
 > To continue with this exercise, you will need to observe the requirements for this module: Git should be installed locally, as well as Visual Studio Code.  Also, you'll need a GitHub account.  Finally, this exercise assumes you already know how to use Git.  The intent is to demonstrate Git integration in Visual Studio Code.
 
-### Step 1 - Create a fork of an open source project in GitHub.
+### Step 1 - Create a fork of an open-source project in GitHub.
 
-First, log into your Github account.  If you don't already have an account, you should create one now.
+First, log into your GitHub account.  If you don't already have an account, you should create one now.
 
 Next, navigate to: 
 
 [https://github.com/aaronpowell/trivia-api](https://github.com/aaronpowell/trivia-api?azure-portal=true)
 
-We don't need to worry about what the code in this repository does, how it works, nor get it running locally since we're only interested in Visual Studio Code's Git integration.  It's just code we can fork, clone, and modify.
+We don't need to worry about what the code in this repository does, how it works, nor get it running locally since we're only interested in Visual Studio Code's Git integration.  This project contains code we can fork, clone, and modify.
 
 Next, select the Fork button near the upper right-hand corner of the web page.
 
-![Screenshot of a GitHub repository web page with a callout highlighting the Fork button](../media/2-exercise-clone-branch-01.png)
+![Screenshot of a GitHub repository web page with a callout highlighting the Fork button.](../media/2-exercise-clone-branch-01.png)
 
 After a moment or two, the repository will be forked to your GitHub account.
 
@@ -33,7 +33,7 @@ To copy the URL, select the green "Clone or download" button near the upper-righ
 
 Select the clipboard icon next to the URL to copy the URL to your computer's clipboard.
 
-![Screenshot of the GitHub repository web page with focus on the Clone or download button and the clipboard icon to copy the URL](../media/2-exercise-clone-branch-02.png)
+![Screenshot of the GitHub repository web page with focus on the Clone or download button and the clipboard icon to copy the URL.](../media/2-exercise-clone-branch-02.png)
 
 ### Step 3 - Clone the forked project to your local development environment.
 
@@ -63,13 +63,13 @@ The Visual Studio Code's Status Bar provides a host of functionality depending o
 
 - On the left, you see the name of current working branch.  If you modify any tracked files in the working branch, it will add an asterisk symbol `*` next to the branch name.  
 
-![Screenshot of ...](../media/2-exercise-clone-branch-03.png)
+![Screenshot of the Status Bar with an arrow pointing to the asterisk next to the working branch name.](../media/2-exercise-clone-branch-03.png)
 
 When you stage those changes, the asterisk changes into a plus symbol `+`.  Once you commit staged changes, the plus symbol disappears and you only see the branch name.
 
 - On the right, you see an icon that switches from a circle with arrows ("Synchronize Changes") to a cloud with an arrow pointing upwards ("Publish Changes").
 
-The following image shows you what the "Syncronize Changes" icon looks like:
+The following image shows you what the "Synchronize Changes" icon looks like:
 
 ![Screenshot of the Status Bar with an arrow pointing to the Synchronize Changes icon.](../media/2-exercise-clone-branch-04.png)
 
@@ -123,7 +123,7 @@ module.exports = async function(context, req) {
 
 If you pay close attention, you'll notice several visual clues indicating a change of state to your files in Visual Studio Code.  As you're editing the file, a small blue icon will appear on the Explorer View icon in the left column.  The number indicates how many files have unsaved changes.
 
-Once you save your changes to the file using <kbd>Ctrl+S</kbd> the blue icon on the Explorer View will disappear.  However, a moment later, a new blue icon featuring a clock will appear over the Source Control View's icon in the left column.  This indicates that Visual Studio Code is working with Git behind the scenes to understand what just changed.
+Once you save your changes to the file using <kbd>Ctrl+S</kbd>, the blue icon on the Explorer View will disappear.  However, a moment later, a new blue icon featuring a clock will appear over the Source Control View's icon in the left column.  This indicates that Visual Studio Code is working with Git behind the scenes to understand what just changed.
 
 After a moment, the clock icon will disappear, and a new blue icon with a number will appear indicating the number of pending changes (unstaged or staged changes) are ready to be committed.  The number will increment as you make more changes to the files.
 
@@ -138,7 +138,7 @@ Finally, after you commit your changes, this icon will disappear.  We'll do that
 
 ## Recap
 
-There are a few important take aways from this exercise:
+There are a few important takeaways from this exercise:
 
 - To quickly clone a repository, open the Command Pallet (<kbd>Ctrl+Shift+P</kbd>) and enter `clone`.
 - To quickly see which branch you're working with, glance at the Status Bar.

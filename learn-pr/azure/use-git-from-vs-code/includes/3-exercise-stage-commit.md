@@ -1,39 +1,37 @@
-If you've worked with Git, you've probably relied heavily on the `git status` command to help you understand what files are unstaged or staged.  Furthermore, you've likely relied on `git commit -m "Your commit message"` to commit staged files.  Visual Studio Code's Git integration helps accelate these activities and more.
+If you've worked with Git, you've probably relied heavily on the `git status` command to help you understand what files are unstaged or staged.  Furthermore, you've likely relied on `git commit -m "Your commit message"` to commit staged files.  Visual Studio Code's Git integration helps accelerate these activities and more.
 
 ## What you'll accomplish in this exercise
 
-Having already made a change to the source code in the previous exercise, we now have a unstaged change that we need to commit.  Finally, we will want to push our new branch with our new commit to our forked repository.  We'll use Visual Studio Code's integrated Git tooling to perform these activities.
+Having already made a change to the source code in the previous exercise, we now have an unstaged change that we need to commit.  Finally, we will want to push our new branch with our new commit to our forked repository.  We'll use Visual Studio Code's integrated Git tooling to perform these activities.
 
 ### Step 1 - Open the Source Control view to see unstaged changes.
 
 Choose the Source Control icon on the left.  The Source Control view shows both staged and unstaged changes.  Our goal is to create a commit, which we can also do from this view.  But first we must decide which changes should be added to our commit.
 
-![Screenshot of the Source Control view.](../media/3-exercise-stage-commit-01.png)
+![Screenshot of VS Code's Source Control view with the file containing changes is listed under the changes section.](../media/3-exercise-stage-commit-01.png)
 
 We can see that our `index.js` file is listed under the section titled "Changes".  To the right of the file name, there are four icons.  They are:
 
 - A file icon to open and display the file in the main area.
-- An arrow curved backwards icon to discard changes.  This will revert the file to its state in the previous commit.
+- An arrow curved backwards icon to discard changes.  This button will revert the file to its state in the previous commit.
 - A plus symbol `+` icon to stage our changes to be committed.
 - An `M` Icon indicating that this file existed previously and has been modified.
 
 ### Step 2 - Stage the changed file.
 
-Click the "Stage changes" icon.  
+Click the "Stage changes" icon to move the file under a new section titled "Staged Changes".
 
-This moves the file under a new section titled "Staged Changes".
-
-One of the icons to the right of the file name is a minus, or dash, symbol `-`.  This will unstage a staged change.
+One of the icons to the right of the file name is a minus, or dash, symbol `-`.  This button will unstage a staged change.
 
 ### Step 3 - Unstage the change.  (Then stage it again.)
 
-Click the minus symbol `-` next to the file name to unstage the change.  This moves the change back to the unstaged "Changes" section.  This might be useful if you mistakenly staged a change you intended for a different commit.
+Click the minus symbol `-` next to the file name to unstage the change.  This button moves the change back to the unstaged "Changes" section, which might be useful if you mistakenly staged a change you intended for a different commit.
 
-Repeat step 2 (above) to re-stage the change.
+Repeat step 2 (above) to restage the change.
 
 ### Step 4 - Create a commit.
 
-Near the top of the Source Control view are several icons.  The checkmark icon commits your changes.
+The Source Control view displays are several icons near the top of the pane.  The checkmark icon commits your changes.
 
 We want to add a commit message to our commit.  In the text box beneath the checkmark icon, enter the message:
 
@@ -58,17 +56,17 @@ Select that icon now to perform a `git pull` then a `git push`.  There should be
 
 Back in GitHub, navigate to your fork of the repository you created in the previous exercise.
 
-Click on the "Branch: master" button to reveal a dropdown containing all the branches in your repository.  Select the branch you just created in this exercise.
+Click on the "Branch: master" button to reveal a dropdown containing all the branches in your repository.  Select the branch you created in this exercise.
 
 ![Screenshot of GitHub's list of branches with a callout arrow pointing to the new update-response branch.](../media/3-exercise-stage-commit-03.png)
 
-Next, click on the "Commits" link above the "Branch: update-response" button.  This will display all of the commits, and the commit you created in an earlier step of this exercise should be listed at the top.
+Next, click on the "Commits" link above the "Branch: update-response" button.  Clicking this link will display all of the commits, and the commit you created in an earlier step of this exercise should be listed at the top.
 
 ![Screenshot of GitHub's commits page listing all of the commits added to the currently selected branch.](../media/3-exercise-stage-commit-04.png)
 
 ## Next steps
 
-If this were a real open source project, you might want to create a pull request (PR) to add the commits in your fork to the project's source code stored in the upstream repository.  For more information on this, see the following URL:
+If we were working on a real open-source project, you might want to create a pull request (PR) to add the commits in your fork to the project's source code stored in the upstream repository.  For more information on creating pull requests, see the following URL:
 
 [https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests?azure-portal=true)
 
