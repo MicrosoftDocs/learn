@@ -10,8 +10,8 @@ By the end of this module, you'll know how to use Azure AD B2C with multi-factor
 
 At the end of this module, you will be able to:
 
-- Secure access to an application with Azure AD B2C
-- Enable multi-factor authentication for Azure AD B2C
+- Learn how to secure access to an application with Azure AD B2C
+- Learn how to enable multi-factor authentication for Azure AD B2C
 
 ## Prerequisites
 

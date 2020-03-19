@@ -12,8 +12,8 @@ title: Enable secure external user access for your applications with Azure AD B2
 summary: Use Azure AD B2C as the full-featured identity system for your application, and ensure users are required to sign in securely through multi-factor authentication.
 abstract: | 
   In this module, you will:
-  - Secure access to an application with Azure AD B2C
-  - Enable multi-factor authentication for Azure AD B2C
+  - Learn how to secure access to an application with Azure AD B2C
+  - Learn how to enable multi-factor authentication for Azure AD B2C
 prerequisites: | 
   - Basic understanding of Azure AD
 iconUrl: /learn/achievements/enable-external-access-with-b2c.svg
