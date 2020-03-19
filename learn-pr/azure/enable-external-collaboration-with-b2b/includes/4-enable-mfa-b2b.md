@@ -15,7 +15,7 @@ Before allowing access, multi-factor authentication asks the user to complete ch
 - Something the user has
 - Something the user is
 
-    ![MFA challenges](../media/5-mfa.png)
+    ![MFA challenges](../media/5-mfa.svg)
 
 A secret password or answer to a security question should be something that only the user knows. Users also have devices that can be classified as something they have. For example, a user might have a cell phone and be able to receive a text message with a secret, one-time-use code. You could also make successful authentication contingent on the user, through biometrics collected from them. This biometric information is classified as something the user is. For example, you could make authentication rely on the user's fingerprints or voice as an additional step.
 

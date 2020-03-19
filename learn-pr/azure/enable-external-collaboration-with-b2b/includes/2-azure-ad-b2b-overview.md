@@ -9,7 +9,7 @@ Your organization needs to work with external users. To collaborate, these users
 
 Azure AD B2B lets you collaborate with external partner users through the process below. The numbers in the diagram are explained in the subsequent sections.
 
-![Azure AD B2B overview](../media/2-guest-user.png)
+![Azure AD B2B overview](../media/2-guest-user.svg)
 
 1. **Invite a guest user**
 
