@@ -1,6 +1,5 @@
 You now understand how request units are used to determine database throughput. You also know how to use partition keys to create a scale-out strategy for your database. 
 
-
 Now you're ready to create your database and container. In this exercise, you'll create an Azure Cosmos DB Database named **"Products"** and Container named **"Clothing"** and set your partition key and throughput values.
 
 ## Creating your database and container
@@ -8,6 +7,10 @@ Now you're ready to create your database and container. In this exercise, you'll
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the account you activated the sandbox with.
 
 1. On the Azure portal menu, select **All services**.
+
+::: zone pivot="cli"
+
+## Creating your database and container
 
 1. Select **Databases** > **Azure Cosmos DB**. Then select your account, click **Data Explorer**, and then click **Open Full Screen**.
 
@@ -31,6 +34,8 @@ Now you're ready to create your database and container. In this exercise, you'll
 1. Click **OK**. The Data Explorer displays the new database **Products** and the container **Clothing**.
 
     ![The Azure portal Data Explorer, showing the new database and container](../media/5-azure-cosmos-db-new-collection.png)
+
+::: zone-end
 
 ## Summary
 
