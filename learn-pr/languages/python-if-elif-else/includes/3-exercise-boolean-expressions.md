@@ -139,13 +139,14 @@ An operator is like a mini function. Operators perform an operation on operands,
 
 - Arithmetic operators
 - Assignment operators
-- Comparison operators
-- Logical operators
-- Identity operators
-- Membership operators
 - Bitwise operators
+- Comparison operators
+- Identity operators
+- Logical operators
+- Membership operators
 
-We'll look at comparison and logic operators in this unit. We'll likely cover most operators as we continue through this Learning Path.
+
+We'll look at comparison and logic operators in this unit. We'll likely cover most operators as we continue through this learning path.
 
 Some operators consist of a single symbol, like many of the operators we'll use in this unit. They operate on the values to their left and right. Other operators consist of a pair of symbols. They operate on the values in between their opening symbol and their closing symbol.
 

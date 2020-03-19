@@ -13,18 +13,18 @@ durationInMinutes: 3
 quiz:
   title: Check your knowledge
   questions:
-  - content: "What's wrong with the following line of code?  `if x == 3`"
+  - content: "What's wrong with the line of code `if x == 3`?"
     choices:
     - content: "It uses `==` instead of `=` to check for equality."
       isCorrect: false
       explanation: "The equality operator is two equal sign characters."
-    - content: "Missing the keyword `then` at the end."
+    - content: "It's missing the keyword `then` at the end."
       isCorrect: false
       explanation: "There's no `then` keyword in Python."
-    - content: "Missing parentheses around the Boolean expression."
+    - content: "It's missing parentheses around the Boolean expression."
       isCorrect: false
       explanation: "Parentheses aren't required when you use the Python if statement."
-    - content: "Missing `:` at the end."
+    - content: "It's missing `:` at the end."
       isCorrect: true
       explanation: "Valid if statements must terminate with a colon character."
   - content: "What's the result of the following Boolean expression when `x = 6`: `x > 3 or x < 5`?"
@@ -38,7 +38,7 @@ quiz:
     - content: "The syntax is incorrect for a Boolean expression."
       isCorrect: false
       explanation: "The Boolean expression syntax in this code example is correct."
-  - content: "What's the result of the following Boolean expression when `x = 6`: `not x`"
+  - content: "What's the result of the following Boolean expression when `x = 6`: `not x`?"
     choices:
     - content: "True"
       isCorrect: false

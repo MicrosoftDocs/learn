@@ -20,4 +20,4 @@ In this module, you will:
 - You should have exposure to the use of input and output functions like `print()` and `input()`.
 - You should know how to create and assign values to variables.
 
-If you need to review or learn any of these concepts, visit all preceding modules in this Learning Path.
+If you need to review or learn any of these concepts, visit all preceding modules in this learning path.
