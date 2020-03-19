@@ -34,7 +34,7 @@ In this unit, you'll create a system-assigned managed identity for your virtual 
 
 ## Configure a system-assigned managed identity for an Azure VM
 
-1. Assign a system-managed identity to the VM.
+1. Assign a system-assigned managed identity to the VM.
 
     ```azurecli
     az vm identity assign \
