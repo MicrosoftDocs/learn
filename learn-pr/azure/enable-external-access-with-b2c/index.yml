@@ -29,7 +29,6 @@ units:
 - learn.enable-external-access-with-b2c.2-b2c-overview
 - learn.enable-external-access-with-b2c.3-protect-with-mfa
 - learn.enable-external-access-with-b2c.4-configure-b2c-mfa
-- learn.enable-external-access-with-b2c.5-exercise-configure-b2c-mfa
-- learn.enable-external-access-with-b2c.6-summary
+- learn.enable-external-access-with-b2c.5-summary
 badge:
   uid: learn.enable-external-access-with-b2c.badge
