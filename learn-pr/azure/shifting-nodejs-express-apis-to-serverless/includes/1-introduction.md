@@ -1,10 +1,8 @@
-Consider the following scenario. Your company has a website that provides access to vacation planning to their customers. Your customers will view, edit, add, and remove their vacation plans from their wish list. All of the data requests use standard HTTP requests to your API server, running Node.js and Express. Your API server is critical to the success of the application.
+Your company is launching a website that lets your customers plan their vacations. They can view, edit, add, and remove their vacation plans from their wish list. All of the data requests use standard HTTP requests to your API server.
 
-Your company wants their application to go live, so you need to deploy it to a server, and soon. But have you considered everything you'll need? You'll need to maintain your application. You'll need to scale it up and down as needed. And you'll also need to budget for the cost. There is a lot for you to think about!
+Your API server is critical to the success of the application. The APIs are hosted on a server running Node.js and Express. Your need to launch your application, then have it scale up and down as needed while minimizing costs. There is a lot for you to think about!
 
-What if you could reduce some of these burdens without rewriting your entire API? You can shift the API to a serverless model using Azure Functions and gain many benefits for this scenario. You'll gain many benefits with serverless: no server to maintain, reduced cost, and your application will scale up and down when needed. Plus, you may write less code!
-
-Your objective in this module is to refactor your Node.js and Express APIs from a server-based architecture to serverless APIs with Azure Functions.
+What if you could reduce some of these burdens without rewriting your entire API? Try shifting the API to a serverless model using Azure Functions: no server to maintain, reduce your cost, and your application will scale up and down when needed. Plus, you could write less code!
 
 ## Learning objective
 
