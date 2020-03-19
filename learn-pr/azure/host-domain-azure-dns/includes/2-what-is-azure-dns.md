@@ -58,6 +58,7 @@ The configuration information for your DNS server is stored as a file within a z
 - **A** is the host record, and is the most common type of DNS record. It maps the domain or host name to the IP address.
 - **CNAME** is the canonical name, or the alias for an A record. If you had different domain names that all accessed the same website, you would use CNAME.
 - **MX** is the mail exchange record. It maps mail requests to your mail server, whether hosted on-premises or in the cloud.
+- **TXT** is the text record. It's used to associate text strings with a domain name. Azure and Office 365 use TXT records to verify domain ownership.
 
 Besides the three record types above, there are also these record types:
 
@@ -67,7 +68,6 @@ Besides the three record types above, there are also these record types:
 - SOA (Start of authority)
 - SPF (Sender policy framework)
 - SRV (server locations)
-- TXT 
 
 The SOA and NS records are created automatically when you create a DNS zone using Azure DNS.
 
