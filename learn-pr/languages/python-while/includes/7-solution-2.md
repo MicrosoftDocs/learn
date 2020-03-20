@@ -27,9 +27,9 @@ else:
     print(f'You guessed it in {count} tries!')
 ```
 
-This code is merely "*one possible solution*".  However, you should have used the `while` statement to loop through the game logic, and the `continue` statement to handle the case where the end user does not enter a numeric value.
+This code is only *one possible solution*. You should have used the `while` statement to loop through the game logic, and used the `continue` statement to handle the case where the user doesn't enter a numeric value.
 
-Also, you should have kept track (and displayed) the current guess, and provided helpful hints ("too high" and "too low") when the end user guessed incorrectly.
+Also, you should have kept track and displayed the current guess. You should have provided helpful hints like "too high" and "too low" when the user guessed incorrectly.
 
 ```output
 Guess a number between 1 and 10
@@ -43,7 +43,7 @@ Enter guess #4: 2
 You guessed it in 4 tries!
 ```
 
-If you were successful, congratulations!  Continue on to the knowledge check in the next unit.
+If you were successful, congratulations! Continue on to the knowledge check in the next unit.
 
 > [!IMPORTANT]
-> If you had trouble completing this challenge, maybe you should review the previous units before you continue on.  All new ideas we discuss in other modules will depend on your understanding of the ideas that were presented in this module.
+> If you had trouble finishing this challenge, maybe you should review the previous units before you continue on. All new ideas we discuss in other modules will depend on your understanding of the ideas that were presented in this module.

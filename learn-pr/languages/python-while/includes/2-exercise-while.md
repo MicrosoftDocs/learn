@@ -1,14 +1,14 @@
 In this exercise, we'll use the `while` statement to build a small game that will keep looping over a code block with the game logic required to generate and evaluate a random value.
 
-### Step 1 - Create a new working folder and python code file.
+### Step 1: Create a new working folder and Python code file
 
-Using the techniques you learned in previous modules, create a new folder for your work in this module.  For example, you might create a folder named `python-while`.
+Using the techniques you learned in previous modules, create a new folder for your work in this module. For example, you might create a folder named `python-while`.
 
-Inside that folder, create a file for this exercise.  For example, you might create a file named `exercise1.py`.
+Inside that folder, create a file for this exercise. For example, you might create a file named `exercise1.py`.
 
-When it's time to execute your code in the steps of the exercises you can use the Python Tools for Visual Studio Code integration by selecting the green arrow, or you can use a command in the integrated terminal using techniques we learned about in previous modules.
+When it's time to run your code in the steps of the exercises, you can use the Python Tools for Visual Studio Code integration by selecting the green arrow. Or you can use a command in the integrated terminal by using techniques you learned about in previous modules.
 
-### Step 2 - Add code to loop through a code block using the `while` statement.
+### Step 2: Add code to loop through a code block by using the `while` statement
 
 Add the following code listing to your new file:
 
@@ -27,17 +27,17 @@ print(f'It took {count} rolls to roll a 5!')
 ```
 
 The `while` statement has three parts:
-- the `while` keyword
-- a Boolean expression
-- an end of statement colon symbol `:`
+- The `while` keyword
+- A Boolean expression
+- An end of statement colon symbol `:`
 
-Also important is the code block beneath the `while` statement.  We've looked at code blocks in other modules.  This code block belongs to the while statement, and will continue to be repeatedly executed until the Boolean expression evaluates to `False`.
+Also important is the code block beneath the `while` statement. We've looked at code blocks in other modules. This code block belongs to the while statement and will continue to be repeatedly executed until the Boolean expression evaluates to `False`.
 
-In this case, we use the `random` module's `randint()` function to generate a random number between 1 and 5.  We use the `roll` variable to hold the current value of the randomly generated number, and we use the `count` variable to keep track of how many times we've called the `randint()` function.
+In this case, we use the `random` module's `randint()` function to generate a random number between 1 and 5. We use the `roll` variable to hold the current value of the randomly generated number. We use the `count` variable to keep track of how many times we've called the `randint()` function.
 
-Each time we execute the code block, the value of `roll` will be set to a new random number between 1 and 5.  Once the last line of the code block is executed, the Python interpreter will check the Boolean expression again.  If the new value of `roll` is still not `5`, then the process is repeated in a loop until the Boolean expression evaluates to `False`.  In other words, once `roll` equals `5`, the Boolean expression will be `False`.  The execution path will exit the loop and continue with the rest of the program.
+Each time we run the code block, the value of `roll` is set to a new random number between 1 and 5. After the last line of the code block runs, the Python interpreter checks the Boolean expression again. If the new value of `roll` is still not `5`, the process is repeated in a loop until the Boolean expression evaluates to `False`. In other words, once `roll` equals `5`, the Boolean expression is `False`. The execution path exits the loop and continues with the rest of the program.
 
-Each time we executed the code block, we incremented the value of `count` by `1`, so we know how many times our code performed the loop.
+Each time we ran the code block, we incremented the value of `count` by `1`, so we know how many times our code performed the loop.
 
 When you execute the code, you should see similar output:
 
@@ -51,11 +51,11 @@ When you execute the code, you should see similar output:
 5
 It took 8 rolls to roll a 5!
 ```
-Using a `while` statement with the `random` module could be the basis for many mini-games.  Let's expand this to build a slightly more interactive version in the next step.
+Using a `while` statement with the `random` module could be the basis for many mini-games. Let's expand this to build a slightly more interactive version in the next step.
 
-### Step 3 - break and else
+### Step 3: Use the optional statements break and else
 
-In certain situations, you may want to break out of the while statement prematurely.  For example, you may prompt the end user for input.  If they enter a certain letter or term, you may want to exit the loop circumventing the normal flow.
+In certain situations, you might want to break out of the while statement prematurely. For example, you might prompt the user for input. If they enter a certain character or term, you might want to exit the loop that circumvents the normal flow.
 
 Update the code from the previous step to match the following code listing:
 
@@ -80,11 +80,11 @@ else:
 
 print(f'You rolled the dice {count} times.')
 ```
-In this version of our mini-game, we prompt the user for a name.  Each time a new name is entered, a random value is generated (a "roll").  The first person to roll a `5` wins.
+In this version of our mini-game, we prompt the user for a name. Each time a new name is entered, a random value is generated (a "roll"). The first person to roll a `5` wins.
 
-If the player continues to enter names until a `5` is rolled, then the Boolean expression is no longer `True`, and the code execution path skips to the `else` statement to print the winning message.
+If the player continues to enter names until a `5` is rolled, the Boolean expression is no longer `True`. Then the code execution path skips to the `else` statement to print the winning message.
 
-When you execute the code and keep entering names, you should eventually see similar output:
+When you run the code and keep entering names, you should eventually see similar output:
 
 ```output
 First person to roll a 5 wins!
@@ -96,11 +96,11 @@ Charlee Wins!!!
 You rolled the dice 2 times.
 ```
 
-However, we allow the player to exit the game prematurely by typing the letter `q` instead of a name.  We use an `if` statement to check the value the user typed in, and if they entered `q`, then we call the `break` statement.
+However, we allow the player to exit the game prematurely by typing the letter `q` instead of a name. We use an `if` statement to check the value the user typed in. If they entered `q`, we call the `break` statement.
 
-The `break` statement instructs the Python interpreter to exit the loop and continue executing the code after the `while` statement's code block.  In this case, the `else` statement is skipped -- there is no winner.
+The `break` statement instructs the Python interpreter to exit the loop and continue running the code after the `while` statement's code block. In this case, the `else` statement is skipped--there's no winner.
 
-When you execute the code but enter a `q` at some point, you would see similar output:
+When you run the code but enter a `q` at some point, you see similar output:
 
 ```output
 First person to roll a 5 wins!
@@ -116,9 +116,9 @@ You rolled the dice 3 times.
 
 Both `break` and `else` are optional statements in the `while` looping structure.
 
-### Step 4 - Update the code example to handle the case where the user enters nothing using the `continue` statement.
+### Step 4: Update the code example to handle the case where the user enters nothing by using the `continue` statement
 
-Let's expand our previous example.  Let's make sure that the player doesn't enter an empty string.  In other words, if the end user selects <kbd>enter</kbd> without entering any other keystrokes (or merely the <kbd>space bar</kbd>) we want to ignore that entry, and prompt the user again to enter a number.
+Let's expand our previous example. Let's make sure that the player doesn't enter an empty string. In other words, if the user selects <kbd>Enter</kbd> without entering any other keystrokes (or merely the <kbd>Spacebar</kbd>), we want to ignore that entry and prompt the user again to enter a number.
 
 ```python
 import random 
@@ -145,11 +145,11 @@ else:
 print(f'You rolled the dice {count} times.')
 ```
 
-In this case, we perform a gated check on the value entered by the end user.  If after stripping out the empty spaces using the string helper method `strip()`, the `name` variable is empty, then we use the `continue` keyword to skip the remainder of the code block and go back to the top, where we evaluate the Boolean expression and continue looping through the code block.
+In this case, we perform a gated check on the value entered by the user. After we strip out the empty spaces by using the string helper method `strip()`, the `name` variable is empty. Then we use the `continue` keyword to skip the remainder of the code block and go back to the top, where we evaluate the Boolean expression and continue looping through the code block.
 
-This will allow us to avoid the possibility that our program will create rolls when there is no name.
+By using a gated check, we can avoid the possibility that our program creates rolls when there's no name.
 
-When you execute the code and select the <kbd>enter</kbd> key a few times without entering a name, you should see the similar output:
+When you run the code and select the <kbd>Enter</kbd> key a few times without entering a name, you should see the similar output:
 
 ```output
 First person to roll a 5 wins!
@@ -169,7 +169,7 @@ You rolled the dice 3 times.
 
 ## Recap
 
-- The `while` statement allows you to create a looping structure that will continue to loop through a code block until a Boolean expression evaluates to `False`.
+- The `while` statement allows you to create a looping structure that continues to loop through a code block until a Boolean expression evaluates to `False`.
 - Add the `break` statement to exit out of a code block prematurely before the Boolean expression evaluates to `False`.
-- Add the `else` statement to provide a second code block that will execute once the `while` statement's Boolean expression evaluates to `False`.
+- Add the `else` statement to provide a second code block that runs after the `while` statement's Boolean expression evaluates to `False`.
 - Add the `continue` statement to skip over the remainder of the code block and set the execution path back to the Boolean expression.
