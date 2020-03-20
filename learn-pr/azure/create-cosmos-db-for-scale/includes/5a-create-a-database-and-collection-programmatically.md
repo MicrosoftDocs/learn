@@ -289,7 +289,7 @@ Now that you have created your database, you're ready to create a container to s
 
     1. Close the Code Editor by typing <kbd>Ctrl+Q</kbd>, or by selecting **Close** from the Editor menu in the upper right.
 
-1. On the Bash Shell terminal, compile and run the .NET Core app.
+1. On the Bash Shell terminal, compile and run the .NET Core app:
 
     ```bash
     dotnet build
@@ -318,7 +318,7 @@ In this exercise, you'll create an Azure Cosmos DB  database, and container usin
     
     1. Copy the **URI** and **PRIMARY KEY** values, which you'll need later.
 
-1. Open the Azure Cloud Shell Bash shell and create a new Java application using **Maven** and the *maven-archetype-quickstart*.  
+1. Open the Azure Cloud Shell Bash shell and create a new Java application using **Maven** and the *maven-archetype-quickstart*:
 
     ```bash
     mvn archetype:generate -DgroupId=com.mslearn -DartifactId=cosmosjavaprj -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
@@ -450,7 +450,7 @@ In this exercise, you'll create an Azure Cosmos DB  database, and container usin
         }
         ```
 
-    1. Within the `main` method, add the following lines of code to create and dispose of the `AsyncDocumentClient` instance
+    1. Within the `main` method, add the following lines of code to create and dispose of the `AsyncDocumentClient` instance:
 
         ```java
         try {
@@ -594,7 +594,7 @@ Now that you have created your database, you're ready to create a container to s
 
         Your class should now have seven class variables. The new name of the collection is defined by `collectionId`, and `partitionKeyPath` indicates the partition key.
 
-    1. Add a new `DocumentCollection()` method below the `createDatabase()` method. This method defines the multi-partition parameters, which will set the indexing policy for your collection, and include the partition key and collection id.
+    1. Add a new `DocumentCollection()` method below the `createDatabase()` method. This method defines the multi-partition parameters, which will set the indexing policy for your collection, and include the partition key and collection id:
 
         ```java
         private static DocumentCollection getMultiPartitionCollectionDefinition() {
@@ -629,7 +629,7 @@ Now that you have created your database, you're ready to create a container to s
         }
         ```
 
-    1. Add a new `createMultiPartitionCollection()` method below the previous method. This method will create the multi partition collection and also set the throughput value.
+    1. Add a new `createMultiPartitionCollection()` method below the previous method. This method will create the multi partition collection and also set the throughput value:
 
         ```java
         public static void createMultiPartitionCollection() throws Exception {
@@ -642,7 +642,7 @@ Now that you have created your database, you're ready to create a container to s
     
             final CountDownLatch countDownLatch = new CountDownLatch(1);
     
-            createCollectionObservable.single() // We know there is only single result
+            createCollectionObservable.single() // there is only single result
                     .subscribe(collectionResourceResponse -> {
                         System.out.println(collectionResourceResponse.getActivityId());
                         countDownLatch.countDown();
@@ -704,7 +704,7 @@ Now that you have created your database, you're ready to create a container to s
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the account you activated the sandbox with.  Locate your Cosmos DB resource, and save the name of it.
 
-1. Paste the following command into the Cloud Shell on the right to create to store the name of the Azure Cosmos DB account name in an environment variable to use later. Make sure to replace **COSMOS_NAME** with the name of your account.
+1. Paste the following command into the Cloud Shell on the right to create to store the name of the Azure Cosmos DB account name in an environment variable to use later. Make sure to replace **COSMOS_NAME** with the name of your account:
 
     ```bash
     export NAME= COSMOS_NAME
@@ -715,13 +715,12 @@ Now that you have created your database, you're ready to create a container to s
     > This exercise uses Bash for the shell. However, if you were using PowerShell instead of Bash with your personal Azure account, you would need to use the following commands to set the value for the `$NAME` environment variable that you'll use later:
     >
     > ```powershell
-    > $RANDOM = Get-Random
-    > $NAME = "cosmos$RANDOM"
+    > $NAME = "COSMOS_NAME"
     > ```
     >
     > In addition, you would need to replace the backslash line continuation characters from Bash with the corresponding backtick characters for PowerShell, or remove them entirely.
 
-1. Use the following command into the Cloud Shell on the right to create a new Azure Cosmos DB account with your specified name.
+1. Use the following command into the Cloud Shell on the right to create a new Azure Cosmos DB account with your specified name:
 
     ```azurecli
     az cosmosdb create \
@@ -756,7 +755,7 @@ Now that you have created your database, you're ready to create a container to s
     }
     ```
 
-1. Create the `Products` database in the account using the `cosmosdb database create` command. It takes a `db-name` parameter that we'll set to **"Products"** since this database will hold the inventory data.
+1. Create the `Products` database in the account using the `cosmosdb database create` command. It takes a `db-name` parameter that you'll set to **"Products"** since this database will hold the inventory data:
 
     ```azurecli
     az cosmosdb sql database create \
@@ -781,7 +780,7 @@ Now that you have created your database, you're ready to create a container to s
     }
     ```
 
-1. Finally, create the `Clothing` container with the `cosmosdb collection create` command in the Cloud Shell, where you will specify your partition key and throughput values.
+1. Finally, create the `Clothing` container with the `cosmosdb collection create` command in the Cloud Shell, where you will specify your partition key and throughput values:
 
     ```azurecli
     az cosmosdb sql container create \
