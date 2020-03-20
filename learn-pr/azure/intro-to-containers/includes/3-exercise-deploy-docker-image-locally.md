@@ -33,7 +33,7 @@ In this exercise, you'll pull an image from Docker Hub and run it. You'll examin
 
 5. Open a web browser and go to the page for the sample web app at `http://localhost:8080`. The page looks like the following screenshot.
 
-    ![Screenshot of the sample web app running in a browser](../media/3-sample-web-app.png)
+    :::image type="content" source="../media/3-sample-web-app.png" alt-text="Screenshot of the sample web app running in a browser.":::
 
 ## Examine the container in the local Docker registry
 

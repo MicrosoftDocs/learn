@@ -4,7 +4,7 @@ CORS is nifty for production, but it's a bummer when you're trying to build an a
 
 1. If the Function app is running, press the "disconnect" button in the debug bar to terminate it.
 
-   ![VS Code debug bar with a red box outlining the disconnect button](../media/terminate-debug-process.png)
+   ![Screenshot of VS Code debug bar with a red box outlining the disconnect button.](../media/terminate-debug-process.png)
 
 1. Open the `api/local.settings.json` file.
 
@@ -40,7 +40,7 @@ CORS is nifty for production, but it's a bummer when you're trying to build an a
 
 1. The application loads in the data from the API.
 
-   ![Products Manager application shown populated with data](../media/working-application.png)
+   ![Screenshot of web browser displaying the Products Manager application shown populated with data.](../media/working-application.png)
 
 1. Try creating, updating, and deleting products to ensure that all endpoints work.
 
