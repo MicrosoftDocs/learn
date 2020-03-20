@@ -8,7 +8,7 @@ In this unit, you will create an Azure container registry using the Azure CLI.
 
 1. Open the Azure Cloud Shell from the Azure portal using the Cloud Shell icon.
 
-    ![Image showing Cloud Shell icon in the Azure portal](../media/2-portal-cloudshell-access.png)
+    :::image type="icon" source="<../media/2-portal-cloudshell-access.png>":::
 
 1. Create a new resource group with the name **learn-deploy-acr-rg** so that it will be easier to clean up these resources when you are finished with the module. If you choose a different resource group name, remember it for the rest of the exercises in this module. You also need to choose a region in which you want to create the resource group, for example *centralus*.
 
@@ -42,7 +42,7 @@ To begin, we'll define an environment variable in the Cloud Shell called **ACR_N
     [!include[](../../../includes/azure-cloudshell-copy-paste-tip.md)]
 
     The following snippet is an example response from the `az acr create` command. In this example, the registry name was *myACR*. Note that the loginServer value below is the registry name in lowercase, by default.  
-    
+
     Make sure to note the value returned for the `location` value as we'll need in a later exercise.
 
     ```output
@@ -67,6 +67,6 @@ To begin, we'll define an environment variable in the Cloud Shell called **ACR_N
     ```
 
 > [!IMPORTANT]
-> Commands in the rest of this module will use the **ACR_NAME** variable value. 
+> Commands in the rest of this module will use the **ACR_NAME** variable value.
 
 In this unit, you created an Azure Container Registry using the Azure CLI. We'll use that new container registry in the next unit when we build container images.

@@ -56,4 +56,4 @@ In this exercise, we will enable the registry admin account and use it to deploy
 
 1. Open a browser and navigate to the IP address of the container. If everything has been configured correctly, you should see the following results:
 
-![Sample web application with the text Hello World](../media/hello.png)
+:::image type="content" source="<../media/hello.png>" alt-text="<Screenshot of a browser window that shows a webpage with text that reads: Hello World. Version: 9.11.2.>":::
