@@ -9,6 +9,6 @@ metadata:
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 8
+durationInMinutes: 2
 content: |
   [!include[](includes/5-summary.md)]

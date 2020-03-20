@@ -9,7 +9,7 @@ metadata:
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 12
+durationInMinutes: 13
 content: |
   [!include[](includes/3-disaster-recovery-services.md)]
 quiz:

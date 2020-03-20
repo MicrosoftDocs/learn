@@ -9,7 +9,7 @@ metadata:
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 17
+durationInMinutes: 13
 content: |
   [!include[](includes/2-backup-services.md)]
 quiz:
