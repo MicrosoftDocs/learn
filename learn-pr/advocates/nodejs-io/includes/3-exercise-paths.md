@@ -1,7 +1,7 @@
-In this exercise we will learn how to work with the module `path` to do things such as
+In this exercise, we will learn how to work with the module `path` to do things such as
 
 - Information, gain information on the path
-- Join paths, we will learn how to concatenate different paths and work with paths in an OS dependent way
+- Join paths, we will learn how to concatenate different paths and work with paths in an OS-dependent way
 - Absolute path, we will learn to gain information on the absolute path
 - Normalize paths, sometimes our path contains things such as `./` or `../`
 
@@ -10,7 +10,7 @@ Pre-steps
 1. Create a directory for your app
 2. Navigate to your directory `cd <name of dir>`
 3. Now create a JavaScript file that will contain your code, suggestion is `app.js`
-4. In the same directory create a file `info.txt` and give it some sample data if you want
+4. In the same directory, create a file `info.txt` and give it some sample data if you want
 
 ## Information
 
@@ -94,7 +94,7 @@ Abs path /to/my/file.txt
 Abs path <this is specific to your system>/info.txt
 ```
 
-Note, how we in our second example is using the `resolve()` method on `info.txt` a file that exist in the same directory as we run our code:
+Note, how we in our second example are using the `resolve()` method on `info.txt` a file that exists in the same directory as we run our code:
 
 ```javascript
 console.log(`Abs path ${path.resolve("info.txt")}`);
