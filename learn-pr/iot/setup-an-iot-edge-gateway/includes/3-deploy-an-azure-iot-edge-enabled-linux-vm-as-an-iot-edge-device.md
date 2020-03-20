@@ -10,7 +10,7 @@ If necessary, log in to your Azure portal using your Azure account credentials.
 
     [![Deploy to Azure Button for iotedge-vm-deploy](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fazure%2Fiotedge-vm-deploy%2Fms-learn%2FedgeDeploy.json)
 
-1. Ensure that you are logged in with the account used to create the sandbox and make absolutely sure that you are using the "Microsoft Learn Sandbox" subscription.
+1. Ensure that you are logged in with the account used to create the sandbox and make sure that you are using the "Microsoft Learn Sandbox" subscription.
 
 1. We will now fill in the available form fields:
 
@@ -22,7 +22,7 @@ If necessary, log in to your Azure portal using your Azure account credentials.
 
     **Resource group**: Choose the pre-created entry that looks similar to  `learn-00000000-0000-0000-0000-000000000000`.
 
-    **Admin Username**: Enter a username of you choice.
+    **Admin Username**: Enter a username of your choice.
 
     **Device Connection String**: Enter the Device Connection string for the device that was created within your IoT Hub in the previous module.
 
