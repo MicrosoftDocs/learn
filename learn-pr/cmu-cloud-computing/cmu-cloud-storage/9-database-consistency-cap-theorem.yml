@@ -1,0 +1,32 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-computing.cloud-storage.cloud-storage-overview.9-database-consistency-cap-theorem
+title: 'Database design: Consistency and the CAP theorem'
+metadata:
+  title: 'Database design: Consistency and the CAP theorem'
+  description: Learn how to design databases with a focus on consistency and use of the CAP theorem.
+  ms.date: 03/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 22
+content: |
+  [!include[](includes/9-database-consistency-cap-theorem.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Suppose a customer of a bank transfers $1,000 into another customer's account and obtains a successful transaction message. Five minutes later, the second customer checks their account online and doesn't see the transaction listed. Which of the ACID properties was most clearly violated in the case of this transaction?"
+    choices:
+    - content: "The atomicity of the transaction"
+      isCorrect: false
+      explanation: "That's not quite right. The transaction appeared to have happened atomically, since the customer received a successful transaction message. See the definitions of the ACID properties above."
+    - content: "The consistency of the transaction"
+      isCorrect: false
+      explanation: "That's not quite right. Although the database might be inconsistent after a transaction is completed, its effects are not seen. This is more of a violation of one of the other properties. See the definitions of the ACID properties above."
+    - content: "The isolation of the transaction"
+      isCorrect: false
+      explanation: "That's not quite right. The question presents no evidence to support that another transaction on this database might have affected this one. See the definitions of the ACID properties above."
+    - content: "The durability of the transaction"
+      isCorrect: true
+      explanation: "Correct! The effects of the transaction are expected to persist in the database after the transaction is committed, but the account fails to show so. Hence, there is a violation of the durability property of the transaction."
+

@@ -7,7 +7,7 @@ The default Azure Active Directory (Azure AD) organization in the Azure sandbox 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) with the same account you used to activate the sandbox.
 1. Select **Create a resource** > **Identity** > **Azure Active Directory**.
 
-   ![Screenshot that shows Azure Active Directory in the Azure Marketplace](../media/4-create-active-directory.png)
+   ![Screenshot that shows Azure Active Directory in the Azure Marketplace.](../media/4-create-active-directory.png)
 1. On the **Create directory** page, use these values, and then select **Create**.
 
     | Property | Value |
@@ -47,7 +47,7 @@ You want to roll out SSPR to a limited set of users first to make sure your SSPR
 
 1. Select **Create**.
 
-    ![Screenshot that shows new group form](../media/4-create-group.png)
+    ![Screenshot that shows new group form.](../media/4-create-group.png)
 
 ## Create a user account
 
@@ -73,7 +73,7 @@ Now you're ready to enable SSPR for the group.
 1. If the **Password reset** page still displays the message **Get a free Premium trial to use this feature**, wait for a few minutes and then refresh the page.
 1. On the **Properties** page, select **Selected**. Select the **SSPRTesters** group, and then select **Save**.
 
-    ![Screenshot that shows the SSPR group in the password reset properties](../media/4-choose-sspr-group.png)
+    ![Screenshot of the Password Reset properties panel wwith SSPR enabled and selected group set to SSPRTesters.](../media/4-choose-sspr-group.png)
 
 1. Under **Manage**, select the **Authentication methods**, **Registration**, and **Notifications** pages to review the default values.
 1. Select **Customization**.
@@ -90,7 +90,7 @@ Now that the SSPR configuration is complete, register a mobile phone number for 
 1. Next to **Authentication phone is not configured**, select **Set it up now**.
 1. Enter your mobile phone details.
 
-    ![Screenshot that shows mobile phone registration form for SSPR](../media/4-register-mobile-phone.png)
+    ![Screenshot that shows mobile phone registration form for SSPR.](../media/4-register-mobile-phone.png)
 
 1. Select **text me**.
 1. When you receive the code on your mobile phone, enter the code in the text box.
@@ -103,7 +103,7 @@ Now let's test whether the user can reset their password.
 1. In a new browser window, go to https://aka.ms/sspr.
 1. For **User ID**, type balas@organization-domain-name.onmicrosoft.com. Replace "organization-domain-name" with the domain you used for your Azure AD organization.
 
-    ![Screenshot that shows the password reset](../media/4-start-password-reset.png)
+    ![Screenshot that shows the password reset dialog.](../media/4-start-password-reset.png)
 1. Complete the captcha, and then select **Next**.
 1. Enter your mobile phone number, and then select **Text**.
 1. When the text arrives, in the **Enter your verification code** text box, enter the code you were sent. Select **Next**.
