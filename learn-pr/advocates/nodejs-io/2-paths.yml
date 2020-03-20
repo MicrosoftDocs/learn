@@ -18,15 +18,9 @@ quiz:
 
   - content: 'The Path module can help us with the following'
     choices:
-    - content: 'Path information such as directory, file extension and filename'
-      isCorrect: true
-      explanation: 'Correct: Being able to inspect a path and give information on directory, extension and filename is definitely a responsibility of the path module'
     - content: 'Creating paths given directory names and filenames'
       isCorrect: true
       explanation: 'Correct: Constructing a path that is OS independent is a key functionality with the path module'
-    - content: 'Calculating the distance between two paths'
-      isCorrect: true
-      explanation: 'Correct: Being able to normalize a path is an important area that the path module can help with'
     - content: 'Read and Write files'
       isCorrect: false
       explanation: 'Incorrect: This is not a responsibility of the Path module but the fs module'

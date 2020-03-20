@@ -12,3 +12,23 @@ metadata:
 durationInMinutes: 3
 content: |
   [!include[](includes/6-streams.md)]
+quiz:
+  title: 'Check your knowledge'
+  questions:
+
+    - content: 'True/False. The primary reason we use streams is to ensure we have maximum throughput and use as little resources as possible'
+      choices:
+        - content: 'This is true'
+          isCorrect: true
+          explanation: 'Correct: Using streams can greatly reduce how much memory your app is using and will increase the perceived responsiveness.'
+        - content: 'This false'
+          isCorrect: false
+          explanation: 'Incorrect: This is the primary reason you should learn to use and manage streams'
+    - content: 'What happens when you push data to a readable stream?'
+      choices:
+        - content: 'The data is written to a buffer'
+          isCorrect: true
+          explanation: "You can't write data to a Readable stream but you can push to it. The pushed data ends up in a buffer."
+        - content: "You can't it is a read-only stream"
+          isCorrect: false
+          explanation: 'It is true it is a read-only stream but you can still push to it. You can listen to specific events or connect it to a writable stream to read the pushed data'

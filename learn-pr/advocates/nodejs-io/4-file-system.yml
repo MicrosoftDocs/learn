@@ -29,9 +29,6 @@ quiz:
         - content: 'Read/Write files and directories'
           isCorrect: true
           explanation: 'Correct: This is one of the primary responsibilities of the fs module'
-        - content: 'Inspect files/directories for information such as size, creation date and more'
-          isCorrect: true
-          explanation: 'Correct: This is definitely a thing the fs module can do'
         - content: 'Learn information on the underlying OS of the host machine the application is run on'
           isCorrect: false
           explanation: 'Incorrect: this is the responsibility of the os module'
