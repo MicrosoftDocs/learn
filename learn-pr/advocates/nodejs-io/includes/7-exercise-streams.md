@@ -6,7 +6,7 @@ In this exercise we will learn how to
 
 ## Work with readable and writable streams
 
-In this exercise we will learn how we can work with readable and writable streams.
+In this exercise, we will learn how we can work with readable and writable streams.
 
 Start by creating a file for your application, suggestion is to call it `app.js`. Thereafter add the following to the top of your file:
 
@@ -34,7 +34,7 @@ readableStream.push('some data');
 
 NOTE, because this is readable stream, everything we push into it will be buffered.
 
-To read data from the stream we have two options:
+To read data from the stream, we have two options:
 
 1. Listen to the `readable` event
 2. Connect the readable stream to a writable stream using the method `pipe()`
@@ -112,9 +112,9 @@ Write: even more data
 
 ## Learn how to work with File streaming
 
-In this exercise we are looking to learn how to read a file using the stream API and also control how many bytes are read.
+In this exercise, we are looking to learn how to read a file using the stream API and also control how many bytes are read.
 
-Pre requisites:
+Prerequisites:
 
 1. Create an application file, suggestion is to name it `app-file-streaming.js`
 2. Create a file in the same directory and call it `orders.csv`. Give it the following content:
@@ -124,7 +124,7 @@ Pre requisites:
 2 120 Lisa
 ```
 
-Now add the following at the top:
+Now add the following code at the top:
 
 ```javascript
 const fs = require('fs');
@@ -139,7 +139,7 @@ const readStream = fs.createReadStream('orders.csv', {
 })
 ```
 
-Let's explain what we are doing above, We are opening a file `orders.csv`. Additionally we are setting the encoding `utf8`. Finally, we are setting a property `highWaterMark`, this property decided how many bytes we read in per read. We will change this value in this exercise so you will be able to see the difference.
+Let's explain what we are doing above. We are opening a file `orders.csv`. Additionally we are setting the encoding `utf8`. Finally, we are setting a property `highWaterMark`, this property decided how many bytes we read in per read. We will change this value in this exercise so you will be able to see the difference.
 
 Next we need to listen to the event `data`, like so:
 
@@ -149,7 +149,7 @@ readStream.on('data', (data) => {
 })
 ```
 
-This will ensure we log out every time the file stream presents new data. Lastly we will listen to the event `close`. It's always nice if we an feed bak to the user when we are done:
+This will ensure we log out every time the file stream presents new data. Lastly we will listen to the event `close`. It's always nice if we an feed back to the user when we are done:
 
 ```javascript
 readStream.on('close', () => {
@@ -173,7 +173,7 @@ finished reading file
 
 ### Change `highWaterMark`
 
-At this point we have explicitly set our `highWaterMark` to 10 bytes per read. Let's not set it and see what happens. Set that part of the code to:
+At this point, we have explicitly set our `highWaterMark` to 10 bytes per read. Let's not set it and see what happens. Set that part of the code to:
 
 ```javascript
 const readStream = fs.createReadStream('orders.csv', {
@@ -199,7 +199,7 @@ Observe how we are able to read the entire file in one read. This is because the
 
 ### Key takeaway
 
-So why are we doing this? Well we know that streaming is better technology over just reading the file, so when will we notice this? The answer is at around 16 MB the streaming version of reading a file will outperform a simple file read in terms of both speed but also memory consumption:
+So why are we doing this? Well we know that streaming is better technology over just reading the file, so when will we notice this? The answer is at around 16 MB the streaming version of reading a file will outperform a file read in terms of both speed but also memory consumption:
 
 ![Graph showing when stream is paying off](https://miro.medium.com/max/1200/1*cbwiLw312iZxrC7lO7nlrw.png)
 
@@ -207,9 +207,9 @@ All credit to the following article [Read file vs Streams article](https://mediu
 
 ## Working with Streams and HTTP
 
-In this exercise we will create a HTTP Server and serve up a file.
+In this exercise, we will create an HTTP Server and serve up a file.
 
-Pre requisites
+Prerequisites
 
 - Create a directory `static` with the following content:
 
@@ -247,7 +247,7 @@ http.createServer(function (req, res) {
 }).listen(8080);
 ```
 
-Above we are creating a HTTP server by invoking `createServer()` and giving it a callback. Then we construct a `filename` by combining `__dirname`, our subdirectory `static` and the request URL `req.url`:
+Above we are creating an HTTP server by invoking `createServer()` and giving it a callback. Then we construct a `filename` by combining `__dirname`, our subdirectory `static`, and the request URL `req.url`:
 
 ```javascript
 var filename = path.join( __dirname, 'static', req.url);
@@ -283,7 +283,7 @@ node <name of your app file>.js
 
 Go to your browser at `http://localhost:8080/file.txt`. It should display the file content of `file.txt`.
 
-This will only work for text files though. The reason is that the response header is set to text format. We can easily change that by adding the following at the top of our callback to:
+This will only work for text files though. The reason is that the response header is set to text format. We can easily change that by adding the following code at the top of our callback to:
 
 ```javascript
 res.writeHead(200, {
@@ -301,4 +301,4 @@ Go to your browser at `http://localhost:8080/image.jpg`. It should display your 
 
 ### Summary
 
-We can easily connect a file stream to a HTTP stream. This will make your web server more responsive. Just ensure that you are able to serve up different content by setting the correct header on the response.
+We can easily connect a file stream to an HTTP stream. This will make your web server more responsive. Just ensure that you are able to serve up different content by setting the correct header on the response.
