@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.learn-the-data-science-method.causality-and-experiments
+title: Causality and Experiments
+metadata:
+  title: Causality and Experiments
+  description: Understand causual analysis in experiments/
+  ms.date: 03/12/2020
+  author: kvah
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: Azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/03-causality-and-experiments.md)]
