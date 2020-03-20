@@ -58,14 +58,6 @@ groups:
       title: PowerShell
     - id: portal
       title: Azure portal
-- id: subscription-type
-  title: Subscription Type
-  prompt: Choose subscription type
-  pivots:
-    - id: hosted-subscription
-      title: Hosted
-    - id: personal-subscription
-      title: Personal
 - id: dev-lang-csharp-javascript
   title: Development language
   prompt: Choose your development language
