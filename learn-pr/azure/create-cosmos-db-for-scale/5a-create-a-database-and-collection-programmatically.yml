@@ -8,10 +8,10 @@ metadata:
   ms.author: anlo
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  zone_pivot_groups: dev-approach-csharp-java-cli
+  zone_pivot_groups: dev-env-csharp-java-cli
 title: Exercise - Create a database and container in Azure Cosmos DB Programmatically
 interactive: bash
 azureSandbox: true
-durationInMinutes: 3
+durationInMinutes: 8
 content: |
   [!include[](includes/5a-create-a-database-and-collection-programmatically.md)]

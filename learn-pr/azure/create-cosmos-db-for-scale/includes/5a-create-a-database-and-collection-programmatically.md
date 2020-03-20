@@ -24,7 +24,7 @@ In this exercise, you'll create an Azure Cosmos DB  database, and container usin
 
     ASP.NET Core creates a new directory called *myApp*, which contains your new console C# app.
 
-1. Change directory to your new app's directory:
+1. Change to your new app's directory:
 
     ```bash
     cd myApp
@@ -43,7 +43,7 @@ In this exercise, you'll create an Azure Cosmos DB  database, and container usin
     dotnet build
     ```
 
-1. Use the Cloud Shell Code Editor to make changes to your project:
+1. Open the Cloud Shell Code Editor to make changes to your project:
 
     ```bash
     code .
@@ -51,7 +51,7 @@ In this exercise, you'll create an Azure Cosmos DB  database, and container usin
 
     The Bash shell screen splits into two sections, showing you the coding interface at the top. You can maximize the screen to have more space to edit your files.
 
-    ![Bash Shell and Code Editor](../media/5-azure-cosmos-db-new-shell-and-editor.png)
+    ![Bash Shell and Code Editor](../media/5-azure-cosmos-db-new-shell-and-editor-csharp.png)
 
 1. Click *myApp.csproj* in the Explorer pane to open the file in the code editor.
 
@@ -174,7 +174,7 @@ In this exercise, you'll create an Azure Cosmos DB  database, and container usin
     
     1. Close the Code Editor by typing <kbd>Ctrl+Q</kbd>, or selecting **Close** from the Editor menu in the upper right.
 
-1. On the Bash Shell terminal, compile and run the .NET Core app:
+1. On the Bash Shell terminal, compile and run your .NET Core app:
 
     ```bash
     dotnet build
@@ -227,7 +227,7 @@ Now that you have created your database, you're ready to create a container to s
         var customContainer = containerResponse.Container;
         ```
     
-        This code checks to see if a container with the specified parameters exists in your database, and it creates a new container if there is no match. Here is where we can specify the RU/s allocated for a newly created container. When you do not specify the RU/s, the SDK has a default value for RU/s assigned to a container.
+        This code checks to see if a container with the specified parameters exists in your database, and it creates a new container if there is no match. You can also specify the RU/s allocated for the container that you create. When you do not specify the RU/s, the SDK has a default value for RU/s assigned to a container.
 
     1. Add the following code to print out the ID of the container:
 
@@ -310,202 +310,118 @@ Now that you have created your database, you're ready to create a container to s
 
 In this exercise, you'll create an Azure Cosmos DB  database, and container using the Java SDK for Azure Cosmos DB. 
 
-1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the account you activated the sandbox with. 
+### Create a new app using Maven and database using Java
 
-1. In the Azure portal, inside your Cosmos DB resource, select **Keys**. Copy the URI and PRIMARY KEY values as you'll need them later.
+1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the account you activated the sandbox with.
 
-2. Open the Azure Cloud Shell Bash shell and create a new Java application using **Maven** and the *maven-archetype-quickstart*.  
+    1. Locate your Cosmos DB resource, and select **Keys**.
+    
+    1. Copy the **URI** and **PRIMARY KEY** values, which you'll need later.
+
+1. Open the Azure Cloud Shell Bash shell and create a new Java application using **Maven** and the *maven-archetype-quickstart*.  
 
     ```bash
     mvn archetype:generate -DgroupId=com.mslearn -DartifactId=cosmosjavaprj -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
-    ``` 
-    Maven will create the project in a called cosmosjavaprj, and provide a sample App.
+    ```
 
-3. From the Bash Shell Terminal, navigate inside the newly created folder and open the Cloud Shell Code Editor:
+    Maven creates a project called *cosmosjavaprj*, and provides a sample App to get you started.
+
+1. Change to your new app's directory:
 
     ```bash
     cd cosmosjavaprj
+    ```
+
+1. Open the Cloud Shell Code Editor to make changes to your project:
+
+    ```bash
     code .
     ```
 
-4. To add the Maven project dependencies required to work with Cosmos DB, you should update the pom.xml file located at the bottom of your project. Add the following entry within the dependencies section:
-
-    ```xml
-    <dependency>
-      <groupId>com.microsoft.azure</groupId>
-      <artifactId>azure-cosmosdb</artifactId>
-      <version>2.4.3</version>
-    </dependency>
-    ```
-    
-    You'll also need to change the source and target compiler versions to Java 1.8. The code uses lambda syntax supported only on Java 8 onwards. Add the following code to below the dependencies section
-
-    ```xml
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
-    </properties>
-    ```
-
-    Make sure to save your changes by typing Ctrl+S or selecting Save from the Cloud Shell Editor menu on the upper right.
-
-5. Navigate the folder structure on the Code Editor and click the App.java link in the Explorer pane to open the file in the editor. The file should be located under src\main\java\com\mslearn\App.java
+    The Bash shell screen splits into two sections, showing you the coding interface at the top. You can maximize the screen to have more space to edit your files.
 
     ![Bash Shell and Code Editor](../media/5-azure-cosmos-db-new-shell-and-editor-java.png)
 
+1. Click *pom.xml* in the Explorer pane to open the file in the code editor.
 
-6.  Below the **package com.mslearn** line, add the following lines:
+    1. To add the Maven project dependencies required to work with Cosmos DB, add the following entry within the dependencies section:
 
-    ```java
-    import java.util.ArrayList;
-    import java.util.Collection;
-    import java.util.List;
-    import java.util.concurrent.CountDownLatch;
-    import java.util.concurrent.ExecutorService;
-    import java.util.concurrent.Executors;
-    import com.microsoft.azure.cosmosdb.ConnectionPolicy;
-    import com.microsoft.azure.cosmosdb.ConsistencyLevel;
-    import com.microsoft.azure.cosmosdb.DataType;
-    import com.microsoft.azure.cosmosdb.Database;
-    import com.microsoft.azure.cosmosdb.DocumentClientException;
-    import com.microsoft.azure.cosmosdb.DocumentCollection;
-    import com.microsoft.azure.cosmosdb.IncludedPath;
-    import com.microsoft.azure.cosmosdb.Index;
-    import com.microsoft.azure.cosmosdb.IndexingPolicy;
-    import com.microsoft.azure.cosmosdb.PartitionKeyDefinition;
-    import com.microsoft.azure.cosmosdb.RequestOptions;
-    import com.microsoft.azure.cosmosdb.ResourceResponse;
-    import com.microsoft.azure.cosmosdb.rx.AsyncDocumentClient;
-    import rx.Observable;
-    import rx.Scheduler;
-    import rx.schedulers.Schedulers;
-    ```
-7. Add the following class variables
-
-    ```java
-    private static final String databaseName = "Products";
-    private static ExecutorService executorService;
-    private static Scheduler scheduler;
-    private static AsyncDocumentClient client;
-    ```
-8. Replace the default program content inside the main method with the following content:
-
-    ```java
-    executorService = Executors.newFixedThreadPool(100);
-    scheduler = Schedulers.from(executorService);
-    client = new AsyncDocumentClient.Builder().withServiceEndpoint("YOUR_URI")
-    .withMasterKeyOrResourceToken("YOUR_KEY")
-    .withConnectionPolicy(ConnectionPolicy.GetDefault()).withConsistencyLevel(ConsistencyLevel.Eventual)
-    .build();
-    ```
-    The code will create a scheduler used to switch to a user app thread, which is required for async IO operations) and also the AsyncDocumentClient.
-    Make sure to replace "YOUR_URI" and "YOUR_KEY" with the values you recorded in the first step.
-
-9. Below the main method in the Program class, add the following methods for creating a database, and closing down the AsyncDocumentClient
-
-    ```java
-    private static void createDatabase() throws Exception {
-        String databaseLink = String.format("/dbs/%s", databaseName);
-        Observable<ResourceResponse<Database>> databaseReadObs = client.readDatabase(databaseLink, null);
-        Observable<ResourceResponse<Database>> databaseExistenceObs = databaseReadObs.doOnNext(x -> {
-            System.out.println("database " + databaseName + " already exists.");
-        }).onErrorResumeNext(e -> {
-            if (e instanceof DocumentClientException) {
-                DocumentClientException de = (DocumentClientException) e;
-                if (de.getStatusCode() == 404) {
-                    System.out.println("database " + databaseName + " doesn't exist," + " creating it...");
-                    Database dbDefinition = new Database();
-                    dbDefinition.setId(databaseName);
-                    return client.createDatabase(dbDefinition, null);
-                }
-            }
-            System.err.println("Reading database " + databaseName + " failed.");
-            return Observable.error(e);
-        });
-        databaseExistenceObs.toCompletable().await();
-        System.out.println("Checking database " + databaseName + " completed!\n");
-    }
+        ```xml
+        <dependency>
+          <groupId>com.microsoft.azure</groupId>
+          <artifactId>azure-cosmosdb</artifactId>
+          <version>2.4.3</version>
+        </dependency>
+        ```
     
-    public static void close() {
-        executorService.shutdown();
-        client.close();
-    }
-    ```
+    1. You'll also need to change the source and target compiler versions to Java 1.8. The code uses lambda syntax supported only on Java 8 onwards. Add the following code to below the `<dependencies>` section:
 
-10. Within the Main method, add the following lines of code to create and dispose of the AsyncDocumentClient instance
+        ```xml
+        <properties>
+            <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+            <maven.compiler.source>1.8</maven.compiler.source>
+            <maven.compiler.target>1.8</maven.compiler.target>
+        </properties>
+        ```
 
-    ```java
-    try {
-        p.createDatabase();
-        System.out.println(String.format("Database created, please hold while resources are released"));
-    } catch (Exception e) {
-        System.err.println(String.format("Cosmos DB GetStarted failed with %s", e));
-    } finally {
-        System.out.println("close the client");
-        p.close();
-    }
-    System.exit(0);
-    ```
+    1. Save your changes by typing <kbd>Ctrl+S</kbd>, or by selecting the **Save** option from the Editor menu on the upper right corner.
 
-11. Your final App.java file should look like this
+1. In the Explorer pane of the Code Editor, expand the nodes in the tree to *src\main\java\com\mslearn*, then click *App.java* to open the file in the editor.
 
-    ```java
-    package com.mslearn;
-    import java.util.ArrayList;
-    import java.util.Collection;
-    import java.util.List;
-    import java.util.concurrent.CountDownLatch;
-    import java.util.concurrent.ExecutorService;
-    import java.util.concurrent.Executors;
-    import com.microsoft.azure.cosmosdb.ConnectionPolicy;
-    import com.microsoft.azure.cosmosdb.ConsistencyLevel;
-    import com.microsoft.azure.cosmosdb.DataType;
-    import com.microsoft.azure.cosmosdb.Database;
-    import com.microsoft.azure.cosmosdb.DocumentClientException;
-    import com.microsoft.azure.cosmosdb.DocumentCollection;
-    import com.microsoft.azure.cosmosdb.IncludedPath;
-    import com.microsoft.azure.cosmosdb.Index;
-    import com.microsoft.azure.cosmosdb.IndexingPolicy;
-    import com.microsoft.azure.cosmosdb.PartitionKeyDefinition;
-    import com.microsoft.azure.cosmosdb.RequestOptions;
-    import com.microsoft.azure.cosmosdb.ResourceResponse;
-    import com.microsoft.azure.cosmosdb.rx.AsyncDocumentClient;
-    import rx.Observable;
-    import rx.Scheduler;
-    import rx.schedulers.Schedulers;
-    
-    /**
-     * Hello world!
-     *
-     */
-    public class App 
-    {
+    ![Bash Shell and Code Editor](../media/5-azure-cosmos-db-new-shell-and-editor-java-app.png)
+
+    1.  Below the **package com.mslearn** line, add the following imports:
+
+        ```java
+        import java.util.ArrayList;
+        import java.util.Collection;
+        import java.util.List;
+        import java.util.concurrent.CountDownLatch;
+        import java.util.concurrent.ExecutorService;
+        import java.util.concurrent.Executors;
+        import com.microsoft.azure.cosmosdb.ConnectionPolicy;
+        import com.microsoft.azure.cosmosdb.ConsistencyLevel;
+        import com.microsoft.azure.cosmosdb.DataType;
+        import com.microsoft.azure.cosmosdb.Database;
+        import com.microsoft.azure.cosmosdb.DocumentClientException;
+        import com.microsoft.azure.cosmosdb.DocumentCollection;
+        import com.microsoft.azure.cosmosdb.IncludedPath;
+        import com.microsoft.azure.cosmosdb.Index;
+        import com.microsoft.azure.cosmosdb.IndexingPolicy;
+        import com.microsoft.azure.cosmosdb.PartitionKeyDefinition;
+        import com.microsoft.azure.cosmosdb.RequestOptions;
+        import com.microsoft.azure.cosmosdb.ResourceResponse;
+        import com.microsoft.azure.cosmosdb.rx.AsyncDocumentClient;
+        import rx.Observable;
+        import rx.Scheduler;
+        import rx.schedulers.Schedulers;
+        ```
+
+    1. Add the following class variables:
+
+        ```java
         private static final String databaseName = "Products";
         private static ExecutorService executorService;
         private static Scheduler scheduler;
         private static AsyncDocumentClient client;
-    
-        public static void main( String[] args )
-        {
-            executorService = Executors.newFixedThreadPool(100);
-            scheduler = Schedulers.from(executorService);
-            client = new AsyncDocumentClient.Builder().withServiceEndpoint("YOUR_URI")
+        ```
+
+    1. Replace the default code inside the `main` method with the following code:
+
+        ```java
+        executorService = Executors.newFixedThreadPool(100);
+        scheduler = Schedulers.from(executorService);
+        client = new AsyncDocumentClient.Builder().withServiceEndpoint("YOUR_URI")
             .withMasterKeyOrResourceToken("YOUR_KEY")
             .withConnectionPolicy(ConnectionPolicy.GetDefault()).withConsistencyLevel(ConsistencyLevel.Eventual)
             .build();
-            try {
-                createDatabase();
-                System.out.println(String.format("Database created, please hold while resources are released"));
-            } catch (Exception e) {
-                System.err.println(String.format("Cosmos DB GetStarted failed with %s", e));
-            } finally {
-                System.out.println("close the client");
-                close();
-            }
-            System.exit(0);
-        }
-    
+        ```
+
+        The code will create a scheduler used to switch to a user app thread, which is required for async IO operations) and also the `AsyncDocumentClient`. Replace the values `YOUR_URI` and `YOUR_KEY` with the values that you obtained from your Cosmos DB resource in the Azure portal earlier.
+
+    1. Below the `main` method in the `App` class, add the following methods for creating a database, and closing down the `AsyncDocumentClient`:
+
+        ```java
         private static void createDatabase() throws Exception {
             String databaseLink = String.format("/dbs/%s", databaseName);
             Observable<ResourceResponse<Database>> databaseReadObs = client.readDatabase(databaseLink, null);
@@ -532,21 +448,120 @@ In this exercise, you'll create an Azure Cosmos DB  database, and container usin
             executorService.shutdown();
             client.close();
         }
-    }
+        ```
+
+    1. Within the `main` method, add the following lines of code to create and dispose of the `AsyncDocumentClient` instance
+
+        ```java
+        try {
+            p.createDatabase();
+            System.out.println(String.format("Database created, please hold while resources are released"));
+        } catch (Exception e) {
+            System.err.println(String.format("Cosmos DB GetStarted failed with %s", e));
+        } finally {
+            System.out.println("close the client");
+            p.close();
+        }
+        System.exit(0);
+        ```
+
+        Your final App.java file should resemble the following example:
+
+        ```java
+        package com.mslearn;
+        import java.util.ArrayList;
+        import java.util.Collection;
+        import java.util.List;
+        import java.util.concurrent.CountDownLatch;
+        import java.util.concurrent.ExecutorService;
+        import java.util.concurrent.Executors;
+        import com.microsoft.azure.cosmosdb.ConnectionPolicy;
+        import com.microsoft.azure.cosmosdb.ConsistencyLevel;
+        import com.microsoft.azure.cosmosdb.DataType;
+        import com.microsoft.azure.cosmosdb.Database;
+        import com.microsoft.azure.cosmosdb.DocumentClientException;
+        import com.microsoft.azure.cosmosdb.DocumentCollection;
+        import com.microsoft.azure.cosmosdb.IncludedPath;
+        import com.microsoft.azure.cosmosdb.Index;
+        import com.microsoft.azure.cosmosdb.IndexingPolicy;
+        import com.microsoft.azure.cosmosdb.PartitionKeyDefinition;
+        import com.microsoft.azure.cosmosdb.RequestOptions;
+        import com.microsoft.azure.cosmosdb.ResourceResponse;
+        import com.microsoft.azure.cosmosdb.rx.AsyncDocumentClient;
+        import rx.Observable;
+        import rx.Scheduler;
+        import rx.schedulers.Schedulers;
     
-    ```
-    Make sure you use the correct values for YOUR_URI and YOUR_KEY.
+        public class App 
+        {
+            private static final String databaseName = "Products";
+            private static ExecutorService executorService;
+            private static Scheduler scheduler;
+            private static AsyncDocumentClient client;
+    
+            public static void main( String[] args )
+            {
+                executorService = Executors.newFixedThreadPool(100);
+                scheduler = Schedulers.from(executorService);
+                client = new AsyncDocumentClient.Builder().withServiceEndpoint("YOUR_URI")
+                    .withMasterKeyOrResourceToken("YOUR_KEY")
+                    .withConnectionPolicy(ConnectionPolicy.GetDefault()).withConsistencyLevel(ConsistencyLevel.Eventual)
+                    .build();
+                try {
+                    createDatabase();
+                    System.out.println(String.format("Database created, please hold while resources are released"));
+                } catch (Exception e) {
+                    System.err.println(String.format("Cosmos DB GetStarted failed with %s", e));
+                } finally {
+                    System.out.println("close the client");
+                    close();
+                }
+                System.exit(0);
+            }
+    
+            private static void createDatabase() throws Exception {
+                String databaseLink = String.format("/dbs/%s", databaseName);
+                Observable<ResourceResponse<Database>> databaseReadObs = client.readDatabase(databaseLink, null);
+                Observable<ResourceResponse<Database>> databaseExistenceObs = databaseReadObs.doOnNext(x -> {
+                    System.out.println("database " + databaseName + " already exists.");
+                }).onErrorResumeNext(e -> {
+                    if (e instanceof DocumentClientException) {
+                        DocumentClientException de = (DocumentClientException) e;
+                        if (de.getStatusCode() == 404) {
+                            System.out.println("database " + databaseName + " doesn't exist," + " creating it...");
+                            Database dbDefinition = new Database();
+                            dbDefinition.setId(databaseName);
+                            return client.createDatabase(dbDefinition, null);
+                        }
+                    }
+                    System.err.println("Reading database " + databaseName + " failed.");
+                    return Observable.error(e);
+                });
+                databaseExistenceObs.toCompletable().await();
+                System.out.println("Checking database " + databaseName + " completed!\n");
+            }
+    
+            public static void close() {
+                executorService.shutdown();
+                client.close();
+            }
+        }
+        ```
 
-12. Save your changes by typing Ctrl+S or selecting Save from the Cloud Shell Editor menu on the upper right. 
+        Make sure you use the correct values for `YOUR_URI` and `YOUR_KEY`.
 
-13. Compile and run your Java application
+    1. Save your changes by typing <kbd>Ctrl+S</kbd>, or by selecting the **Save** option from the Editor menu on the upper right corner.
+    
+    1. Close the Code Editor by typing <kbd>Ctrl+Q</kbd>, or selecting **Close** from the Editor menu in the upper right.
+
+1. On the Bash Shell terminal, compile and run your Java application:
 
     ```bash
     mvn compile
     mvn exec:java -Dexec.mainClass=com.mslearn.App
     ```
 
-14. Your Application will create a new database. The console will show this output:
+    Your Application will create a new database. The console will show this output:
 
     ```bash
     SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
@@ -557,82 +572,94 @@ In this exercise, you'll create an Azure Cosmos DB  database, and container usin
     close the client
     ```
 
-15. Now that a Database exists, we'll add the code to add a Container. Below the Class declaration, add the following variables:
+### Add a new container to your database using Java
 
-    ```java
-    private static final String collectionId = "Clothing";
-    private static final String partitionKeyPath = "/type";
-    private static final int throughPut = 400;
+Now that you have created your database, you're ready to create a container to store your documents.
+
+1. Open the Cloud Shell Code Editor to make changes to your project:
+
+    ```bash
+    code .
     ```
 
-    You'll have seven class variables. The new name of the collection is defined by collectionId and partitionKeyPath indicates the partition key.
+1. In the Explorer pane of the Code Editor, expand the nodes in the tree to *src\main\java\com\mslearn*, then click *App.java* to open the file in the editor.
 
-16. Now create another method within the class, below the createDatabase() method, to define the multi-partition parameters. This will set indexing policy for your collection, and include the partition key and collection id:
+    1. Below the `class` declaration, add the following variables:
 
-    ```java
-    private static DocumentCollection getMultiPartitionCollectionDefinition() {
-        DocumentCollection collectionDefinition = new DocumentCollection();
-        collectionDefinition.setId(collectionId);
-    
-        PartitionKeyDefinition partitionKeyDefinition = new PartitionKeyDefinition();
-        List<String> paths = new ArrayList<>();
-        paths.add(partitionKeyPath);
-        partitionKeyDefinition.setPaths(paths);
-        collectionDefinition.setPartitionKey(partitionKeyDefinition);
-    
-        // Set indexing policy to be range for string and number
-        IndexingPolicy indexingPolicy = new IndexingPolicy();
-        Collection<IncludedPath> includedPaths = new ArrayList<>();
-        IncludedPath includedPath = new IncludedPath();
-        includedPath.setPath("/*");
-        Collection<Index> indexes = new ArrayList<>();
-        Index stringIndex = Index.Range(DataType.String);
-        stringIndex.set("precision", -1);
-        indexes.add(stringIndex);
-    
-        Index numberIndex = Index.Range(DataType.Number);
-        numberIndex.set("precision", -1);
-        indexes.add(numberIndex);
-        includedPath.setIndexes(indexes);
-        includedPaths.add(includedPath);
-        indexingPolicy.setIncludedPaths(includedPaths);
-        collectionDefinition.setIndexingPolicy(indexingPolicy);
-    
-        return collectionDefinition;
-    }
-    ```
+        ```java
+        private static final String collectionId = "Clothing";
+        private static final String partitionKeyPath = "/type";
+        private static final int throughPut = 400;
+        ```
 
-17. Now, below this method, add another method that will create the multi partition collection and also set the throughput value:
+        Your class should now have seven class variables. The new name of the collection is defined by `collectionId`, and `partitionKeyPath` indicates the partition key.
 
-    ```java
-    public static void createMultiPartitionCollection() throws Exception {
-        RequestOptions multiPartitionRequestOptions = new RequestOptions();
-        multiPartitionRequestOptions.setOfferThroughput(throughPut);
-        String databaseLink = String.format("/dbs/%s", databaseName);
-    
-        Observable<ResourceResponse<DocumentCollection>> createCollectionObservable = client.createCollection(
-            databaseLink, getMultiPartitionCollectionDefinition(), multiPartitionRequestOptions);
-    
-        final CountDownLatch countDownLatch = new CountDownLatch(1);
-    
-        createCollectionObservable.single() // We know there is only single result
-                .subscribe(collectionResourceResponse -> {
-                    System.out.println(collectionResourceResponse.getActivityId());
-                    countDownLatch.countDown();
-                }, error -> {
-                    System.err.println(
-                            "an error occurred while creating the collection: actual cause: " + error.getMessage());
-                    countDownLatch.countDown();
-                });
-        System.out.println("creating collection...");
-        countDownLatch.await();
-    }
-    ```
+    1. Add a new `DocumentCollection()` method below the `createDatabase()` method. This method defines the multi-partition parameters, which will set the indexing policy for your collection, and include the partition key and collection id.
 
-18. Finally, update the try catch block on your *main* method to add a call to the new createMultiPartitionCollection() method. The new try catch block should look like this:
+        ```java
+        private static DocumentCollection getMultiPartitionCollectionDefinition() {
+            DocumentCollection collectionDefinition = new DocumentCollection();
+            collectionDefinition.setId(collectionId);
+    
+            PartitionKeyDefinition partitionKeyDefinition = new PartitionKeyDefinition();
+            List<String> paths = new ArrayList<>();
+            paths.add(partitionKeyPath);
+            partitionKeyDefinition.setPaths(paths);
+            collectionDefinition.setPartitionKey(partitionKeyDefinition);
+    
+            // Set indexing policy to be range for string and number
+            IndexingPolicy indexingPolicy = new IndexingPolicy();
+            Collection<IncludedPath> includedPaths = new ArrayList<>();
+            IncludedPath includedPath = new IncludedPath();
+            includedPath.setPath("/*");
+            Collection<Index> indexes = new ArrayList<>();
+            Index stringIndex = Index.Range(DataType.String);
+            stringIndex.set("precision", -1);
+            indexes.add(stringIndex);
+    
+            Index numberIndex = Index.Range(DataType.Number);
+            numberIndex.set("precision", -1);
+            indexes.add(numberIndex);
+            includedPath.setIndexes(indexes);
+            includedPaths.add(includedPath);
+            indexingPolicy.setIncludedPaths(includedPaths);
+            collectionDefinition.setIndexingPolicy(indexingPolicy);
+    
+            return collectionDefinition;
+        }
+        ```
 
-    ```java
-    try {
+    1. Add a new `createMultiPartitionCollection()` method below the previous method. This method will create the multi partition collection and also set the throughput value.
+
+        ```java
+        public static void createMultiPartitionCollection() throws Exception {
+            RequestOptions multiPartitionRequestOptions = new RequestOptions();
+            multiPartitionRequestOptions.setOfferThroughput(throughPut);
+            String databaseLink = String.format("/dbs/%s", databaseName);
+    
+            Observable<ResourceResponse<DocumentCollection>> createCollectionObservable = client.createCollection(
+                databaseLink, getMultiPartitionCollectionDefinition(), multiPartitionRequestOptions);
+    
+            final CountDownLatch countDownLatch = new CountDownLatch(1);
+    
+            createCollectionObservable.single() // We know there is only single result
+                    .subscribe(collectionResourceResponse -> {
+                        System.out.println(collectionResourceResponse.getActivityId());
+                        countDownLatch.countDown();
+                    }, error -> {
+                        System.err.println(
+                                "an error occurred while creating the collection: actual cause: " + error.getMessage());
+                        countDownLatch.countDown();
+                    });
+            System.out.println("creating collection...");
+            countDownLatch.await();
+        }
+        ```
+
+    1. Finally, update the try/catch block of your `main()` method to add a call to the new `createMultiPartitionCollection()` method:
+
+        ```java
+        try {
             createDatabase();
             System.out.println(String.format("Database created, please hold while resources are released"));
             createMultiPartitionCollection();
@@ -643,18 +670,20 @@ In this exercise, you'll create an Azure Cosmos DB  database, and container usin
             close();
         }
         System.exit(0);
-    ```
+        ```
 
-19. Save your changes by typing Ctrl+S or selecting Save from the Cloud Shell Editor menu on the upper right. 
+    1. Save your changes by typing <kbd>Ctrl+S</kbd>, or by selecting the **Save** option from the Editor menu on the upper right corner.
+    
+    1. Close the Code Editor by typing <kbd>Ctrl+Q</kbd>, or selecting **Close** from the Editor menu in the upper right.
 
-20. Compile and run your Java application
+1. On the Bash Shell terminal, compile and run your Java application:
 
     ```bash
     mvn compile
     mvn exec:java -Dexec.mainClass=com.mslearn.App
     ```
 
-21. You now have a new collection on your database. Your console output should look like:
+    You now have a new collection on your database.  The console will show this output:
 
     ```bash
     SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
@@ -673,7 +702,9 @@ In this exercise, you'll create an Azure Cosmos DB  database, and container usin
 
 ## Create an Azure Cosmos DB account + database with the Azure CLI
 
-The first thing you need to do is create an empty Azure Cosmos DB database and container to work with. We want them to match the ones you created in the last module in this Learning Path: a database named **"Products"** and a container named **"Clothing"**. Use the following instructions and the Azure Cloud Shell on the right side of the screen to recreate the database.
+The first thing you need to do is create an empty Azure Cosmos DB database and container to work with. For consitency with the previous exercise, you'll create a database named **"Products"** and a container named **"Clothing"**.
+
+[//]: # (NOTE: TODO: @tonio-lora, is this necessary? Why can't this use the Cosmos DB account that was created in the first exercise?)
 
 You'll start by creating an environment variable to hold the Azure Cosmos DB account name so you don't have to type the same value each time in the following commands. The database account name must be unique across all Azure Cosmos DB instances.
 
@@ -695,7 +726,7 @@ We'll use the Azure CLI `cosmosdb create` command to create a new Azure Cosmos D
 
     > [!NOTE]
     > 
-    > If you're using PowerShell instead of Bash, you'll need to use the following commands to set the value for the `$NAME` environment variable that you'll use later:
+    > This exercise uses Bash for the shell. However, if you were using PowerShell instead of Bash with your personal Azure account, you would need to use the following commands to set the value for the `$NAME` environment variable that you'll use later:
     >
     > ```powershell
     > $RANDOM = Get-Random

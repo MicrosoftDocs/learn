@@ -266,13 +266,13 @@ groups:
       title: Bash
     - id: vscode
       title: Visual Studio Code
-- id: dev-approach-csharp-java-cli
-  title: Approach
-  prompt: Choose your preferred approach
+- id: dev-env-csharp-java-cli
+  title: Development enviroment
+  prompt: Choose your development enviroment
   pivots:
     - id: csharp
       title: C#
     - id: java
       title: Java
     - id: cli
-      title: Command-line
+      title: Azure CLI
