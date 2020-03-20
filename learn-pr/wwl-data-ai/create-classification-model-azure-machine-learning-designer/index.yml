@@ -14,7 +14,7 @@ abstract: |
   Train and publish a classification model with Azure Machine Learning designer
 prerequisites: |
   Ability to navigate the Azure portal
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/create-classification-model-azure-machine-learning-designer.svg
 levels:
 - beginner
 roles:
