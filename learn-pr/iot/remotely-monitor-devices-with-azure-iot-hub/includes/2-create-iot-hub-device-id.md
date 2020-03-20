@@ -66,11 +66,11 @@ For C# versions of the code, you also need the _Event Hubs-compatible endpoint_,
 
 1. Copy the **Event Hub-compatible endpoint**, and paste the string into a text file.
 
-1. Extract the string that starts with `sb://` and ends with `servicebus.windows.net/`. This string replaces the `<your event hub endpoint>` string, when writing code in a later unit. The full string will be something like "sb://iothub-ns-cheesexxxx-xxxxxxx-xxxxxxxxxx.servicebus.windows.net/";
+1. Extract the `Endpoint=` string that starts with `sb://` and ends with `servicebus.windows.net/`. This string will replace the `<your event hub endpoint>` string, when writing code in a later unit. The full string will be something like "sb://iothub-ns-cheesexxxx-xxxxxxx-xxxxxxxxxx.servicebus.windows.net/";
 
-1. Extract the `EntityPath=` string. This will be a lower-case version of your hub name. Do not include the `EntityPath=` text in your saved path string. This string replaces the  `<your event hub path>` string.
+1. Extract the `EntityPath=` string. This will be a lower-case version of your hub name. Do not include the `EntityPath=` text in your saved path string. This string will replace the  `<your event hub path>` string.
 
-1. Extract the `SharedAccessKey=` string. Do not include the `SharedAccessKey=` text, nor the ending semicolon, in your saved key string. This string replaces the `<your event hub Sas key>` string.
+1. Extract the `SharedAccessKey=` string. Do not include the `SharedAccessKey=` text, nor the ending semicolon, in your saved key string. This string will replace the `<your event hub Sas key>` string.
 
 ::: zone-end
 
