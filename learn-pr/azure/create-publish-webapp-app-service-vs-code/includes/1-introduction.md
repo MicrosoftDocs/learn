@@ -10,12 +10,12 @@ By the end of this module, you'll be able to publish and update websites built i
 
 In this module, you will:
 
-- Create an Express.js web application in VS Code
+- Create a new web application in Visual Studio Code
 - Publish the app to Azure App Service
-- Update the app in VS Code and publish the updates
+- Update the app in Visual Studio Code and publish the updates
 
 ## Prerequisites
 
 - Familiarity with web app concepts
 - Beginner-level programming knowledge
-- Local installations of Visual Studio Code and Node.js
+- Local installations of Visual Studio Code and either Node.js or Python

@@ -1,3 +1,5 @@
+::: zone pivot="nodeexpress"
+
 When you have changes to deploy to the webapp, you can use the same tools in VS Code.
 
 Suppose you want to make an improvement to the proof-of-concept website: Instead of displaying the count down in milliseconds, you want to display it in days. You want to make this change and deploy it to Azure before you display the page to stakeholders.
@@ -66,3 +68,11 @@ Your changes are complete. Let's deploy the finished website to Azure:
 1. When the deployment is complete, select **Browse Website**, and then select **Open Link**. Then Azure website is displayed in your browser. Notice that the countdown is now displayed in days.
 
     ![Express.js website hosted in Azure](../media/7-deployed-webapp.png)
+
+::: zone-end
+
+::: zone pivot="pythonflask"
+
+TODO
+
+::: zone-end

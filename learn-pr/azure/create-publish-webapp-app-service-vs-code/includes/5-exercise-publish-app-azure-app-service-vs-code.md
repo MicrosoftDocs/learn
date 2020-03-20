@@ -1,3 +1,5 @@
+::: zone pivot="nodeexpress"
+
 In VS Code, you can use the Azure App Service extension to create and deploy webapps to Azure.
 
 Suppose you have started to create the new website that will promote the new video game launch. The new site has been written in JavaScript and uses Node.js and Express.js. You've decided that the completed website will be hosted in Azure App Service. Now, you want to create that instance of App Service and deploy the first version of the website to it.
@@ -52,3 +54,11 @@ Now, you can deploy your Express.js site to Azure:
 1. When the deployment is complete, select **Browse Website**, and then select **Open Link**. Then Azure website is displayed in your browser. Notice that the website is hosted in the **azurewebsites.net** domain.
 
     ![Express.js website hosted in Azure](../media/5-deployed-webapp.png)
+
+::: zone-end
+
+::: zone pivot="pythonflask"
+
+TODO
+
+::: zone-end
