@@ -27,7 +27,7 @@ Your API is ready for prime time. Let's put it in the cloud. Azure, here we come
 
 1. When prompted, select "Upload Settings".
 
-   ![VS Code notification asking if you want to upload settings](../media/upload-settings.png)
+   ![Screenshot of a VS Code notification asking if you want to upload settings. A callout highlights the Upload settings button.](../media/upload-settings.png)
 
 ## Set the API URL for the frontend application
 
@@ -49,19 +49,19 @@ Your API is ready for prime time. Let's put it in the cloud. Azure, here we come
 
    This will open the Function App in your browser.
 
-1. Click on "Platform Features" in the
+1. Click on "Platform Features" for a specific Function App.
 
-   ![Azure portal with red box outlining the "Platform features" tab](../media/platform-features.png)
+   ![Screenshot of the Azure portal with red box outlining the "Platform features" tab.](../media/platform-features.png)
 
 1. Click on "Function App Settings"
 
-   ![Azure portal with red box outlining the "Function app settings" option](../media/function-app-settings.png)
+   ![Screenshot of the Azure portal with red box outlining the "Function app settings" option.](../media/function-app-settings.png)
 
 1. Scroll down to the "Host Keys" section.
 
 1. Click the "copy" button next to the "default" key.
 
-   ![Azure portal with red box outlining the "Host keys" section and the copy button for the default key](../media/copy-default-key.png)
+   ![Screenshot of the Azure portal with red box outlining the "Host keys" section and the copy button for the default key.](../media/copy-default-key.png)
 
 ## Set the function key for the frontend application
 
@@ -81,7 +81,7 @@ Your API is ready for prime time. Let's put it in the cloud. Azure, here we come
 
 1. Notice there's a "blocked by CORS policy" message.
 
-   ![Browser developer tools showing a "blocked by CORS" error message in the console](../media/blocked-by-cors.png)
+   ![Screenshot of a web browser with developer tools open showing a "blocked by CORS" error message in the console.](../media/blocked-by-cors.png)
 
 ## Enable CORS on the Function app in Azure
 
@@ -89,11 +89,11 @@ Your API is ready for prime time. Let's put it in the cloud. Azure, here we come
 
 1. Click on "Platform Features"
 
-   ![Azure portal with red box outlining the "Platform features" tab](../media/platform-features.png)
+   ![Screenshot of the Azure portal with red box outlining the "Platform features" tab.](../media/platform-features.png)
 
 1. Click on the "CORS" option.
 
-   ![Azure portal with red box outlining the "Platform features" tab](../media/cors-option.png)
+   ![Screenshot of the Azure portal with red box outlining the "Platform features" tab.](../media/cors-option.png)
 
 1. Add `http://localhost:5000` to the list of allowed URLs.
 
@@ -109,4 +109,4 @@ Your API is ready for prime time. Let's put it in the cloud. Azure, here we come
 
 1. Refresh the page. The application should still show the data, but this time using the API that is in production.
 
-   ![Products Manager application shown populated with data](../media/working-application.png)
+   ![Screenshot of a web browser with the Products Manager application running shown populated with data.](../media/working-application.png)

@@ -11,13 +11,13 @@ In the Products Manager application, there are two distinct parts of the applica
 * Website
 * Database
 
-![The parts of the Products Manager application](../media/product-manager-parts.svg)
+![Diagram displaying the two parts of the Products Manager application: the web site and the database with the products data.](../media/product-manager-parts.svg)
 
 Sometimes, applications talk directly to a database. Other times, it's just not a good idea to talk directly to the database. The Products Manager application is a website that runs in a browser. Databases require secure connection information. You don't want to put secure connection information in the browser where anyone can see it.
 
 A better idea would be to put all of the database connection code into a separate part of the application. This part connects securely to the database, but keeps your secret connection information safe and sound. Instead of talking to the database, the website talks to this new part of the application. This new part is the "API".
 
-![All of the parts of the Products Manager application](../media/product-manager-all-parts.svg)
+![Diagram displaying the parts of the application: web site, the API using Azure Functions, and the database with the products data.](../media/product-manager-all-parts.svg)
 
 In this module, you're going to build the "API" that the Products Manager application will use to "interface" with the database.
 
