@@ -12,3 +12,27 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/4-file-system.md)]
+quiz:
+  title: 'Check your knowledge'
+  questions:
+
+    - content: 'Asynchronous file access is?'
+      choices:
+        - content: 'Blocking'
+          isCorrect: false
+          explanation: 'Incorrect: Asynchronous file access does not block and is the preferred way to interact with the file system'
+        - content: 'Nonblocking'
+          isCorrect: true
+          explanation: 'Correct: Asynchronous file access uses callbacks to handle success or errors. Therefore it is able to avoid blocking other code.'
+    - content: 'The fs module is able to do the following'
+      choices:
+        - content: 'Read/Write files and directories'
+          isCorrect: true
+          explanation: 'Correct: This is one of the primary responsibilities of the fs module'
+        - content: 'Inspect files/directories for information such as size, creation date and more'
+          isCorrect: true
+          explanation: 'Correct: This is definitely a thing the fs module can do'
+        - content: 'Learn information on the underlying OS of the host machine the application is run on'
+          isCorrect: false
+          explanation: 'Incorrect: this is the responsibility of the os module'
+      
