@@ -1,0 +1,57 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.use-git-from-vs-code.knowledge-check
+title: Knowledge check
+metadata:
+  title: Check your knowledge
+  description: Review what you've learned
+  ms.date: 3/18/2020
+  author: bobtabor-msft
+  ms.author: rotabor
+  ms.topic: interactive-tutorial
+  ms.prod: learning-languages
+durationInMinutes: 3
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "You want to clone a remote repository to your local machine.  What command do you type into Visual Studio Code's Command Palette?"
+    choices:
+    - content: "pull"
+      isCorrect: false
+      explanation: "No, you would not type `pull` to clone a remote repo."
+    - content: "fetch"
+      isCorrect: false
+      explanation: "No, you would not type `fetch` to clone a remote repo."
+    - content: "synchronize"
+      isCorrect: false
+      explanation: "No, you would not type `synchronize` to clone a remote repo."
+    - content: "clone"
+      isCorrect: true
+      explanation: "Correct!"
+  - content: "What does Synchronize Changes in the Status Bar do?"
+    choices:
+    - content: "A `git rebase`"
+      isCorrect: false
+      explanation: "Synchronize does not perform a rebase."
+    - content: "A `git pull` then `git push`"
+      isCorrect: true
+      explanation: "Correct!"
+    - content: "A `git pull` only"
+      isCorrect: false
+      explanation: "Synchronize does perform a `git pull`, but it also performs a `git push`."
+    - content: "A `git push` only"
+      isCorrect: false
+      explanation: "Synchronize does perform a `git push`, but it also performs a `git pull`."
+  - content: "How do you stage a change in VS Code?"
+    choices:
+    - content: "Use the plus `+` icon in the Source Control view."
+      isCorrect: true
+      explanation: "Correct!"
+    - content: "Use the checkmark icon in the Source Control view."
+      isCorrect: false
+      explanation: "The checkmark icon will perform a commit."
+    - content: "The minus `-` icon in the Source Control view."
+      isCorrect: false
+      explanation: "The minus icon will unstage a staged change."
+    - content: "The plus `+` icon in the Status Bar."
+      isCorrect: false
+      explanation: "The plus icon does not reside in the Status Bar."
