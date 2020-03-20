@@ -702,26 +702,12 @@ Now that you have created your database, you're ready to create a container to s
 
 ## Create an Azure Cosmos DB account + database with the Azure CLI
 
-The first thing you need to do is create an empty Azure Cosmos DB database and container to work with. For consitency with the previous exercise, you'll create a database named **"Products"** and a container named **"Clothing"**.
+1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the account you activated the sandbox with.  Locate your Cosmos DB resource, and save the name of it.
 
-[//]: # (NOTE: TODO: @tonio-lora, is this necessary? Why can't this use the Cosmos DB account that was created in the first exercise?)
-
-You'll start by creating an environment variable to hold the Azure Cosmos DB account name so you don't have to type the same value each time in the following commands. The database account name must be unique across all Azure Cosmos DB instances.
-
-### Create the Azure Cosmos DB account
-
-We'll use the Azure CLI `cosmosdb create` command to create a new Azure Cosmos DB account. The command accepts the following parameters:
-
-| Parameter | Required | Description |
-|---|---|---|
-| `--name`  | Yes | The unique name for the resource. |
-| `--kind`  | No | Kind of database, we'll use _GlobalDocumentDB_. |
-| `--resource-group` | Yes | The resource group that owns this database. Normally you would create one in your Azure subscription, but in this case, we're using the Azure Sandbox and a Resource Group named **<rgn>[sandbox Resource Group]</rgn>** has been created for you. |
-
-1. Paste the following command into the Cloud Shell on the right to create to generate a random Azure Cosmos DB account name and store it in an environment variable to use later.
+1. Paste the following command into the Cloud Shell on the right to create to store the name of the Azure Cosmos DB account name in an environment variable to use later. Make sure to replace **COSMOS_NAME** with the name of your account.
 
     ```bash
-    export NAME=cosmos$RANDOM
+    export NAME= COSMOS_NAME
     ```
 
     > [!NOTE]
