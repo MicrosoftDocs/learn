@@ -9,7 +9,7 @@ By the end of this module, you will have mastered your use of Git inside of Visu
 ## Learning objectives
 
 In this module, you will:
-- Utilize Visual Studio Code's Command Pallet to perform many Git tasks like cloning repositories and creating branches
+- Utilize Visual Studio Code's Command Palette to perform many Git tasks like cloning repositories and creating branches
 - Take visual cues from Visual Studio Code to understand the status of your work
 - Harness Visual Studio Code's Source Control view to stage and unstage changes and create commits
 - Uncover numerous time saving short cuts tucked into the Visual Studio Code user interface
