@@ -1,5 +1,3 @@
-# Summary
-
 In this module, you learned how to work with Node.js and I/O. You've learned about the following topics:
 
 - Paths, you've learned how to inspect a path and extract certain parts of it. You've also learned how construct and compute paths.
