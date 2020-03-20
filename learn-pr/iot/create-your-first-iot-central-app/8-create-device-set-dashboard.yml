@@ -1,7 +1,7 @@
 ### YamlMime:ModuleUnit
 uid: learn.iot.create-your-first-iot-central-app.create-a-device-set-dashboard
 metadata:
-  title: Create multiple devices
+  title: Exercise - Create multiple devices
   description: An optional unit, to create and test multiple devices.
   ms.date: 10/17/2019
   author: PeterTurcan

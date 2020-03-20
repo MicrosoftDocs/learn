@@ -30,12 +30,14 @@ You typically apply data transformations to prepare the data for modeling. In th
 2. Drag a **Select Columns in Dataset** module to the canvas, below the **Automobile price data (Raw)** module. Then connect the output at the bottom of the **Automobile price data (Raw)** module to the input at the top of the **Select Columns in Dataset** module.
 3. Select the **Select Columns in Dataset** module, and in its **Settings** pane on the right, select **Edit column**. Then in the **Select columns** window, select **By name** and use the **+** links to add all columns other than **normalized-losses**, like this:
 
-    <p style='text-align:center'><img src='media/select-columns.png' alt='all columns other than normalized_losses'/></p>
+> [!div class="centered"]
+> ![all columns other than normalized_losses](../media/select-columns.png)
 
 4. Drag a **Clean Missing Data** module from the **Data Transformations** section, and place it under the **Select Columns in Dataset** module. Then connect the output from the **Select Columns in Dataset** module to the input of the **Clean Missing Data** module.
 5. Select the **Clean Missing Data** module, and in the settings pane on the right, click **Edit column**. Then in the **Select columns** window, select **With rules**, in the **Include** list select **Column names**, in the box of column names enter **bore**, **stroke**, and **horsepower** (making sure you match the spelling and capitalization exactly), like this:
 
-    <p style='text-align:center'><img src='media/clean-missing-values.png' alt='bore, stroke, and horsepower columns are selected'/></p>
+> [!div class="centered"]
+> ![bore, stroke, and horsepower columns are selected](../media/clean-missing-values.png)
 
 6. With the **Clean Missing Data** module still selected, in the settings pane, set the following configuration settings:
     - **Minimum missing value ratio**: 0.0
@@ -58,7 +60,8 @@ You typically apply data transformations to prepare the data for modeling. In th
     - **city-mpg**
     - **highway-mpg**
 
-    <p style='text-align:center'><img src='media/normalize-rules.png' alt='all numeric columns other than price are selected'/></p>
+> [!div class="centered"]
+> ![all numeric columns other than price are selected](../media/normalize-rules.png)
 
 ## Run the pipeline
 
@@ -66,7 +69,8 @@ To see the effect of your data transformations, you need to run the pipeline as 
 
 1. Ensure your pipeline looks similar to this:
 
-    <p style='text-align:center'><img src='media/data-transforms.png' alt='Automobile price data (Raw) dataset with Select Columns in Dataset, Clean Missing Data, and Normalize Data modules'/></p>
+> [!div class="centered"]
+> ![Automobile price data (Raw) dataset with Select Columns in Dataset, Clean Missing Data, and Normalize Data modules](../media/data-transforms.png)
 
 2. Select **Submit**, and run the pipeline as a new experiment named **auto-price-training**.
 3. Wait for the run to complete - this may take 5 minutes or more.

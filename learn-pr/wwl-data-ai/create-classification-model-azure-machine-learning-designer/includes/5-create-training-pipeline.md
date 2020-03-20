@@ -17,7 +17,8 @@ It's common practice to train the model using a subset of the data, while holdin
 7. To test the trained model, we need to use it to *score* the validation dataset we held back when we split the original data - in other words, predict labels for the features in the validation dataset. Expand the **Model Scoring & Evaluation** section and drag a **Score Model** module to the canvas, below the **Train Model** module. Then connect the output of the **Train Model** module to the **Trained model** (left) input of the **Score Model** module; and connect the **Results dataset2** (right) output of the **Split Data** module to the **Dataset** (right) input of the **Score Model** module.
 8. Ensure your pipeline looks like this:
 
-<p style='text-align:center'><img src='media/train-score-pipeline.jpg' alt='split data, then train with linear regression and score'/></p>
+ > [!div class="centered"]
+ > ![split data, then train with linear regression and score](../media/train-score-pipeline.png)
 
 ## Run the training pipeline
 

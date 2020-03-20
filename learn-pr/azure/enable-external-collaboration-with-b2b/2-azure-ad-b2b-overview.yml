@@ -33,7 +33,7 @@ quiz:
       explanation: There's no such thing as unconditional access policies in Azure.
     - content: Use conditional access policies in Azure AD B2B.
       isCorrect: true
-      explanation: Conditional access policies offer further protection for your applications. You can ensure your applications are only accessed when all conditions you set have been met.
+      explanation: Conditional access policies offer further protection for your applications. You can ensure that your applications are only accessed when all conditions you set have been met.
     - content: Use criteria access policies in Azure AD B2B.
       isCorrect: false
       explanation: There's no such thing as criteria access policies in Azure.
