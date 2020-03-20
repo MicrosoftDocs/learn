@@ -138,7 +138,7 @@ The new standard allows for the address to be simplified by using the following 
 - One or more leading zeros from any group can be removed, so `0042` becomes `42`.
 - Consecutive sections of zeros are replaced with a double colon (`::`), which can be used only once in an address. So the three sets of `0000` in this example are replaced by three colons (`:::`).
 
-The shortened version of the IPv6 example is `2001:db8::8a2e:370:7334`. Notice that all the instances of `0000` are removed.
+The shortened version of the IPv6 example is `2001:db8:::8a2e:370:7334`. Notice that all the instances of `0000` are removed.
 
 ## DNS
 
