@@ -4,7 +4,7 @@
 
 ## Spawn a process
 
-In this exercise we will learn how to spawn up a process and also invoke a command with arguments.
+In this exercise, we will learn how to spawn up a process and also invoke a command with arguments.
 
 First, let's create an application file to work in, the suggestion is calling it `app.js`.
 
@@ -14,7 +14,7 @@ Now, add the following code:
 const { spawn } = require('child_process');
 ```
 
-This will import the module `child_process`. From there we will use the method `spawn()` that will create a shell. We need to provide it with a command so that's up next:
+This will import the module `child_process`. From there, we will use the method `spawn()` that will create a shell. We need to provide it with a command so that's up next:
 
 ```javascript
 const ls = spawn('ls', ['-lh']);
@@ -62,7 +62,7 @@ rw-r--r--  1 <user>  <group>   311B 17 Mar 21:23 <name of your app file>.js
 
 ## Running executable files
 
-We have dedicated methods on our `child_process` module that allows us to run commands. Generally the `exec()` method is preferred, over `execFile()` as it doesn't create a shell and thereby is less resource intensive. However that's only possible on Linux. On Windows `.cmd` and `.bat` files are only allowed to run in a shell so therefore `execFile()` is the only choice.
+We have dedicated methods on our `child_process` module that allows us to run commands. Generally the `exec()` method is preferred, over `execFile()` as it doesn't create a shell and thereby is less resource intensive. However that's only possible on Linux. On Windows, `.cmd` and `.bat` files are only allowed to run in a shell so therefore `execFile()` is the only choice.
 
 ### Prerequisites for Linux
 
@@ -136,7 +136,7 @@ rw-r--r--  1 <user>  <group>   311B 17 Mar 21:23 <name of your app file>.js
 
 ### Parent/child communication with `fork()`
 
-This spawns a new Node.js process and invokes a specified module with an IPC communication channel established that allows sending messages between parent and child. Let's demonstrate this by doing the following:
+Using the `fork()` method spawns a new Node.js process and invokes a specified module with an IPC communication channel established. This allows sending messages between parent and child. Let's demonstrate this communication by doing the following:
 
 - Create a file `parent.js`
 - Create a file `child.js`
