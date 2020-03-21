@@ -73,7 +73,7 @@ In this exercise, you'll create an Azure Cosmos DB  database, and container usin
             </PropertyGroup>
             <PropertyGroup>
                 <LangVersion>latest</LangVersion>
-                </PropertyGroup>
+            </PropertyGroup>
             <ItemGroup>
                 <PackageReference Include="Microsoft.Azure.Cosmos" Version="3.0.0" />
             </ItemGroup>
