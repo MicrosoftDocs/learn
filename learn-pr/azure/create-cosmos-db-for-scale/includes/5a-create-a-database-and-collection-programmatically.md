@@ -704,15 +704,15 @@ Now that you have created your database, you're ready to create a container to s
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the account you activated the sandbox with.  Locate your Cosmos DB resource, and save the name of it.
 
-1. Paste the following command into the Cloud Shell on the right to create to store the name of the Azure Cosmos DB account name in an environment variable to use later. Make sure to replace **COSMOS_NAME** with the name of your account:
+1. Paste the following command into the Cloud Shell on the right to create to store the name of the Azure Cosmos DB account name in an environment variable to use later. Make sure to replace `COSMOS_NAME` with the name of the Cosmos DB account that you specified when you created your account in the first exercise of this module:
 
     ```bash
-    export NAME= COSMOS_NAME
+    export NAME=COSMOS_NAME
     ```
 
     > [!NOTE]
     > 
-    > This exercise uses Bash for the shell. However, if you were using PowerShell instead of Bash with your personal Azure account, you would need to use the following commands to set the value for the `$NAME` environment variable that you'll use later:
+    > This exercise uses Bash for the shell. However, if you were using PowerShell instead of Bash with your personal Azure account, you would need to use the following command to set the value for the `$NAME` environment variable that you'll use later:
     >
     > ```powershell
     > $NAME = "COSMOS_NAME"
