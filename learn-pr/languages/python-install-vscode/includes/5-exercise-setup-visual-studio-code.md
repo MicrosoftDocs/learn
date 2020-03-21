@@ -1,6 +1,6 @@
-We've already seen how we can execute Python code line by line using Python's Interactive Mode.  Interactive Mode is useful when you want to experiment with a few lines of code.  The downside is that once you leave Interactive Mode, any code you wrote is gone forever.
+You've already seen how you can run Python code line by line by using Python's interactive mode. Interactive mode is useful when you want to experiment with a few lines of code. The downside is that once you leave interactive mode, any code you wrote is gone forever.
 
-As an aspiring Python developer, you will likely prefer to write a Python **script**.  A script is a text file with a `.py` file extension that you type all of your Python code into.  Once you save the code in your script file, you use the Python Interpreter to open, compile, interpret, and execute the code in that file.
+As an aspiring Python developer, you'll probably prefer to write a Python *script*.  A script is a text file with a .py file extension that you type all your Python code into. Once you save the code in your script file, you use the Python Interpreter to open, compile, interpret, and execute the code in that file.
 
 ## Tools to write Python code
 

@@ -45,7 +45,7 @@ After the primary prompt (`>>>`) enter the following Python code, and then selec
 ```python
 print('Hello World!')
 ```
-You should see the following output displayed on the next line:
+You should see this output on the next line:
 
 ```output
 Hello World!
@@ -53,11 +53,11 @@ Hello World!
 
 If you see an error message instead of the output, retype the code. Pay close attention to each character, and make sure your code looks exactly like the preceding code. Even one tiny punctuation error can cause significant problems when you write code.
 
-In the next module, we'll examine this line of code to help you learn about Python's syntax. You'll learn what each individual word and punctuation mark does in the code.
+In the next module, we'll examine this line of code to help you learn about Python syntax. You'll learn what each individual word and punctuation mark does in the code.
 
 ### Step 3 - Close interactive mode
 
-We're finished working in interactive mode, but we'll use it again throughout this series of modules. For now, you can close interactive mode by typing the following command after the primary prompt (`>>>`) and then selecting the <kbd>Enter</kbd> key:
+We're done working in interactive mode, but we'll use it again throughout this series of modules. For now, you can close interactive mode by typing the following command after the primary prompt (`>>>`) and then selecting the <kbd>Enter</kbd> key:
 
 ```python
 exit()
@@ -70,7 +70,7 @@ You should be returned to your command or Bash prompt.
 
 #### Start Python's interactive mode in Linux
 
-At the Bash prompt, type the following line of code and then select the <kbd>Enter</kbd> key:
+At the Bash prompt, enter the following line of code, and then select the <kbd>Enter</kbd> key:
 
 ```bash
 python3
@@ -78,7 +78,7 @@ python3
 
 When you use it this way, the `python3` utility will start Python in interactive mode.
 
-You should now see the following prompt:
+You should now see this prompt:
 
 ```output
 >>>
@@ -95,7 +95,7 @@ After the primary prompt (`>>>`), enter the following Python code, and then sele
 ```python
 print('Hello World!')
 ```
-You should see the following output displayed on the next line:
+You should see this output on the next line:
 
 ```output
 Hello World!
@@ -103,64 +103,64 @@ Hello World!
 
 If you see an error message instead of the output, retype the code. Pay close attention to each character, and make sure your code looks exactly like the preceding code. Even one tiny punctuation error can cause significant problems when you write code.
 
-In the next module, we'll examine this line of code to help you learn about Python's syntax. You'll learn what each individual word and punctuation mark does in the code.
+In the next module, we'll examine this line of code to help you learn about Python syntax. You'll learn what each individual word and punctuation mark does in the code.
 
-### Step 3 - Exit interactive mode
+### Step 3 - Close interactive mode
 
-We're finished working in interactive mode, but we'll use it again throughout this series of modules.  For now, you can exit interactive mode by typing the following command after the primary prompt `>>>` then select the <kbd>Enter</kbd> key on your keyboard:
+We're done working in interactive mode, but we'll use it again throughout this series of modules. For now, you can close interactive mode by entering the following command after the primary prompt (`>>>`) and then selecting the <kbd>Enter</kbd> key:
 
 ```python
 exit()
 ```
-You should be returned back to your command or bash prompt.
+You should be returned back to your command or Bash prompt.
 
 ::: zone-end
 
 ::: zone pivot="macos"
 
-#### Launch Python's interactive mode in macOS
+#### Start Python's interactive mode in macOS
 
-At the bash prompt, type the following line of code and select the <kbd>Return</kbd> key on your keyboard:
+At a Bash prompt, enter the following line of code, and then select the <kbd>Return</kbd> key:
 
 ```bash
 python3
 ```
-When used in this way, the `python3` utility will launch Python in interactive mode.
+When you use it this way, the `python3` utility will start Python in interactive mode.
 
-You should now see the following prompt:
+You should now see this prompt:
 
 ```output
 >>>
 ```
-The three arrows `>>>` are called a *primary prompt*.  We'll discover a *secondary prompt* later.
+The three arrows (`>>>`) are called a *primary prompt*.  We'll discuss a *secondary prompt* later.
 
-The primary prompt is where you can write and execute one line of Python at a time.  Let's try it.
+On the primary prompt, you can write and run one line of Python at a time. Let's try it.
 
 ### Step 2 - Write your first line of Python code
 
-After the primary prompt `>>>` type the following Python code, then select the <kbd>Return</kbd> key on your keyboard:
+After the primary prompt (`>>>`) enter the following Python code, and then select the <kbd>Return</kbd> key:
 
 ```python
 print('Hello World!')
 ```
-You should see the following output displayed on the next line:
+You should see this output on the next line:
 
 ```output
 Hello World!
 ```
 
-If you got an error message instead of the output, retype the code paying close attention to each character and make sure your code looks exactly like the code, above.  Even one tiny punctuation error can cause significant problems when writing code.
+If you see an error message instead of the output, retype the code. Pay close attention to each character, and make sure your code looks exactly like the preceding code. Even one tiny punctuation error can cause significant problems when you write code.
 
-In the next module, we'll examine this line of code to learn about Python's syntax.  We'll learn the job that each individual word and punctuation mark performs in our code.
+In the next module, we'll examine this line of code to help you learn about Python syntax. You'll learn what each individual word and punctuation mark does in the code.
 
-### Step 3 - Exit interactive mode
+### Step 3 - Close interactive mode
 
-We're finished working in interactive mode, but we'll use it again throughout this series of modules.  For now, you can exit interactive mode by typing the following command after the primary prompt `>>>` then select the <kbd>Return</kbd> key on your keyboard:
+We're done working in interactive mode, but we'll use it again throughout this series of modules. For now, you can close interactive mode by entering the following command after the primary prompt (`>>>`) and then selecting the <kbd>Return</kbd> key:
 
 ```python
 exit()
 ```
-You should be returned back to your command or bash prompt.
+You should be returned back to your command or Bash prompt.
 
 
 ::: zone-end
@@ -170,6 +170,6 @@ You should be returned back to your command or bash prompt.
 
 The important takeaways from this unit:
 
-- Writing code requires precision.  Even one small mistake can cause an error.
-- You can use interactive mode to quickly try writing Python.  Each line will be interpreted and executed immediately.
-- To exit interactive mode, use the `exit()` command.
+- Writing code requires precision. Even one small mistake can cause an error.
+- You can use interactive mode to quickly try writing Python. Each line will be interpreted and run immediately.
+- To close interactive mode, use the `exit()` command.
