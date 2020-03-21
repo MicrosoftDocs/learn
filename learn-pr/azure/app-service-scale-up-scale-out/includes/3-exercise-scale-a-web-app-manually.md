@@ -71,7 +71,7 @@ The exercise also runs a client app that simulates a number of users issuing POS
 
 1. Use your web browser to go to `http://<your-webapp-name>.azurewebsites.net/api/reservations/1`. You should see a JSON document that contains the details for reservation number 1:
 
-    ![Screenshot of the running web app, showing the details for reservation number 1](../media/3-web-app.png)
+    ![Screenshot of the running web app, showing the details for reservation number 1 in JSON format.](../media/3-web-app.png)
 
 ## Monitor the performance of the web app before scaling out
 
@@ -117,7 +117,7 @@ The exercise also runs a client app that simulates a number of users issuing POS
     dotnet run
     ```
 
-   ![Screenshot of a running client app, showing the responses and error messages that occur](../media/3-web-client.png)
+   ![Screenshot of a running client app, showing the responses and error messages that occur.](../media/3-web-client.png)
 
 1. In the Azure portal, go to the pane for your web app (not the service plan). Under **Monitoring**, select **Metrics**.
 
@@ -130,7 +130,7 @@ The exercise also runs a client app that simulates a number of users issuing POS
 
 1. Allow the system to run for five minutes to stabilize, and then note the CPU Time, the number of HTTP 4.xx errors, and the average response time. You should see a significant number of HTTP 4xx errors (these are HTTP 408 Timeout errors), and that the average response time is several seconds. You might see the occasional HTTP server error, depending on how the web server is coping with the burden.
 
-   ![Screenshot showing the performance metrics for the web app before scaling out](../media/3-web-app-chart-before-scaling-out.png)
+   ![Screenshot showing the performance metrics for the web app before scaling out.](../media/3-web-app-chart-before-scaling-out.png)
 
 1. Leave the client app running while you perform the next task.
 
@@ -140,13 +140,13 @@ The exercise also runs a client app that simulates a number of users issuing POS
 
 1. On the **Configure** page, set the **Instance count** to **5**, and then select **Save**.
 
-    ![Screenshot of the Configure page for the App Service plan, scaling out to five instances](../media/3-scale-out-to-5.png)
+    ![Screenshot of the Configure page for the App Service plan, scaling out to five instances.](../media/3-scale-out-to-5.png)
 
 1. Switch to the Cloud Shell that's running the client app. You should see fewer requests failing with errors, though you'll still see some that time out.
 
 1. Run the app for another five minutes. Then go to the chart that shows the metrics for the app on the dashboard in the Azure portal. You should see that the CPU time has increased dramatically because there's now five times more CPU power available. The average response time should have dropped, and the number of HTTP 4xx errors should also have decreased. The following chart shows a typical set of results. The point at which scale out occurred is noted.
 
-    ![Screenshot showing the performance metrics for the web app after scaling out to five instances](../media/3-web-app-chart-after-scaling-out.png)
+    ![Screenshot showing the performance metrics for the web app after scaling out to five instances.](../media/3-web-app-chart-after-scaling-out.png)
 
 1. If you want to experiment some more, try increasing the instance count for the App Service plan to 10. Ten is the maximum number of instances supported by the S1 tier. You should notice a further increase in CPU time, and a corresponding drop in response time and HTTP 4xx errors.
 

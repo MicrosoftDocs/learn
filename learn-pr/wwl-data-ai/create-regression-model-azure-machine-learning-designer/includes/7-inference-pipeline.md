@@ -35,7 +35,8 @@ After creating and running a pipeline to train the model, you need a second pipe
     - Connect the output from the **Score Model** module to the **Dataset1** (left-most) input of the **Execute Python Script**, and connect the output of the **Execute Python Script** module to the **Web Service Output**.
 9. Verify that your pipeline looks similar to the following:
 
-    <p style='text-align:center'><img src='media/inference-pipeline.png' alt="A visual inference pipeline"/></p>
+> [!div class="centered"]
+> ![A visual inference pipeline](../media/inference-pipeline.png)
 
 10. Submit the pipeline as a new experiment named **predict-auto-price** on the **aml-compute** compute target you used for training. This may take a while!
 11. When the pipeline has completed, select the **Execute Python Script** module, and in the settings pane, on the **Output + Logs** tab, visualize the **Result dataset** to see the predicted prices for the three cars in the input data.
