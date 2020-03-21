@@ -35,7 +35,7 @@ Android requires every app include a manifest. Keep these requirements in mind:
 
 * It must be in the **Properties** of the app's directory structure. The build tools ensure the final manifest is placed in the correct folder within the .apk file structure installed on devices or emulators.
 
-![A screenshot showing the Android manifest file editor in the Xamarin.Android project properties panel](../media/6-android-manifest.png)
+![Screenshot of Visual Studio showing the Android manifest file editor in the Xamarin.Android project properties panel.](../media/6-android-manifest.png)
 
 You can edit the **AndroidManifest.xml** file directly or by using your project's options property panel. The property panel is more convenient, but it doesn't cover all the options you might want to set. Sometimes you'll have to update the XML by hand.
 
@@ -96,7 +96,7 @@ An activity's UI isn't loaded automatically. In fact, there's no automatic relat
 
 To load a file, you need some way to identify your layout file from code. Using the file and folder names is awkward, so Android provides a nice convenience. The build process automatically generates a `Resource.designer.cs` class file.
 
-![A screenshot showing the Android manifest file editor in the Xamarin Android project properties panel](../media/6-resource-designer-cs.png)
+![Screenshot of Visual Studio solution explorer with the Resource.designer.cs file highlighted within the Resources folder.](../media/6-resource-designer-cs.png)
 
 Android generates a field to identify each layout file. The build process also automatically generates a `Resource.Layout` class that contains an identifier for each of your layout files:
 

@@ -14,7 +14,7 @@ abstract: |
   Learn how to use the automated machine learning user interface in Azure Machine Learning
 prerequisites: |
   Ability to navigate the Azure portal
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/use-automated-machine-learning.svg
 levels:
 - beginner
 roles:
