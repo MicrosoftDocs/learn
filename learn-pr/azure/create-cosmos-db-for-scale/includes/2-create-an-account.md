@@ -35,14 +35,16 @@ You can optionally set up virtual networks and geo-redundancy during account cre
 
     | Setting | Value | Description |
     |---|---|---|
-    | Subscription | *Concierge Subscription* | Select the Concierge Subscription. If you do not see the Concierge Subscription listed, you have multiple tenants enabled on your subscription, and you need to change tenants. To do so, login again using the following portal link: [Azure portal for sandbox](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true). |
-    | Resource Group | Use existing<br><br>**<rgn>[sandbox resource group name]</rgn>** | Here you would either create a new resource group, or select an existing one in your subscription. |
-    | Account Name | *Enter a unique name* | Enter a unique name to identify this Azure Cosmos DB account. Because *documents.azure.com* is appended to the ID that you provide to create your URI, use a unique but identifiable ID.<br><br>The ID can contain only lowercase letters, numbers, and the hyphen (-) character, and it must contain 3 to 31 characters. |
-    | API | SQL | The API determines the type of account to create. Azure Cosmos DB provides five APIs to suit the needs of your application: SQL (document database), Gremlin (graph database), MongoDB (document database), Azure Table, and Cassandra, each of which currently requires a separate account. <br><br>Select **Core (SQL)** because in this module you are creating a document database that is queryable using SQL syntax and accessible with the SQL API. |
-    | Apache Spark | None | Apache Spark is not necessary for this module. |
-    | Location | *Select the region closest to you from the list above* | Select the location where the database should be located. |
-    | Geo-Redundancy | Disable | This setting creates a replicated version of your database in a second (paired) region. Leave this set to disabled for now, as the database can be replicated later. |
-    | Multi-region Writes | Enable | This setting enables you to write to multiple regions at the same time. |
+    | **Subscription** | *Concierge Subscription* | Select the Concierge Subscription. If you do not see the Concierge Subscription listed, you have multiple tenants enabled on your subscription, and you need to change tenants. To do so, login again using the following portal link: [Azure portal for sandbox](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true). |
+    | **Resource Group** | **<rgn>[sandbox resource group name]</rgn>** | Here you would either create a new resource group, or select an existing one in your subscription. |
+    | **Account Name** | *Enter a unique name* | Enter a unique name to identify this Azure Cosmos DB account. Because *documents.azure.com* is appended to the ID that you provide to create your URI, use a unique but identifiable ID. You will use this ID to complete the exercises later in this module.<br><br>The ID can contain only lowercase letters, numbers, and the hyphen (-) character, and it must contain 3 to 31 characters. |
+    | **API** | *Core (SQL)* | The API determines the type of account to create. Azure Cosmos DB provides five APIs to suit the needs of your application: SQL (document database), Gremlin (graph database), MongoDB (document database), Azure Table, and Cassandra, each of which currently requires a separate account. <br><br>Select *Core (SQL)* because in this module you are creating a document database that is queryable using SQL syntax and accessible with the SQL API. |
+    | **Notebooks** | *Off* | Notebooks are not necessary for this module. |
+    | **Apply Free Tier Discount* | *Apply* | You will use the free tier to complete this module. |
+    | **Location** | *Select the region closest to you from the list above* | Select the location where the database should be located. |
+    | **Account Type* | *Non-Production* | This module is for learning, so your database is not meant for production use. |
+    | **Geo-Redundancy** | *Disable* | This setting creates a replicated version of your database in a second (paired) region. Leave this set to disabled for now, as the database can be replicated later. |
+    | **Multi-region Writes** | *Enable* | This setting enables you to write to multiple regions at the same time. |
 
 1. Click **Review + Create**.
 
