@@ -8,7 +8,7 @@ If you continue to add new data to a single server or a single partition, it wil
 
 A partition key defines the partition strategy, it's set when you create a container and can't be changed. Selecting the right partition key is an important decision to make early in your development process.  
 
-In this unit, you'll learn how to choose a partition key that's right for your scenario. This will enable you to take advantage of Azure Cosmos DB autoscaling.
+In this unit, you'll learn how to choose a partition key that's right for your scenario, which will enable you to take advantage of Azure Cosmos DB autoscaling.
 
 ## What is a partition key?
 
@@ -18,7 +18,7 @@ In our online retail scenario, using the `userID` or `productId` value as the pa
 
 Using the current time would be a poor choice of partition key, because all the incoming data would go to a single partition key. `userID` or `productId` would be better, as all the users on your site would likely be adding and updating their shopping cart or profile information at about the same frequency, which distributes the reads and writes across all the user and product partitions.
 
-The amount of required RU's and storage determines the number of required physical partitions for the container which are completely managed by Azure Cosmos DB. When additional physical partitions are needed, Cosmos DB automatically creates them by splitting existing ones. There is no downtime or performance impact for the application.
+The amount of required RU's and storage determines the number of required physical partitions for the container, which are completely managed by Azure Cosmos DB. When additional physical partitions are needed, Cosmos DB automatically creates them by splitting existing ones. There is no downtime or performance impact for the application.
 
 The storage space for the data associated with each partition key can't exceed 20 GB, which is the size of one physical partition in Azure Cosmos DB. So, if your single `userID` or `productId` record is going to be larger than 20 GB, think about using a composite key instead so that each record is smaller. An example of a composite key would be `userID-date`, which would look like **CustomerName-08072018**. This composite key approach would enable you to create a new partition for each day a user visited the site.
 
@@ -34,7 +34,7 @@ When you're trying to determine the right partition key and the solution isn't o
 
 For each Azure Cosmos DB container, you should specify a partition key that satisfies the following core properties:
 
-- Have a high cardinality. This allows data to distribute evenly across all physical partitions.
+- Have a high cardinality. This option allows data to distribute evenly across all physical partitions.
 - Evenly distribute requests. Remember the total number of RU/s is evenly divided across all physical partitions.
 - Evenly distribute storage. Each partition can grow up to 20 GB in size.
 
