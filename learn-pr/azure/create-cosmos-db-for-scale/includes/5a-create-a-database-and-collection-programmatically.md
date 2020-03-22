@@ -94,7 +94,7 @@ In this exercise, you'll create an Azure Cosmos DB  database, and container usin
         using Microsoft.Azure.Cosmos;
         ```
 
-    1. Create a `CosmosClient` instance which is the main "entry point" to using the SQL API in Azure Cosmos DB. To do so, locate the `Program` class and replace it with the following class:
+    1. Create a `CosmosClient` instance, which is the main "entry point" to using the SQL API in Azure Cosmos DB. To do so, locate the `Program` class and replace it with the following class:
 
         ```csharp
         public class Program
@@ -131,7 +131,7 @@ In this exercise, you'll create an Azure Cosmos DB  database, and container usin
 
         This code checks if a database with the specified parameters exists in your Azure Cosmos DB account. If a database that matches doesn't exist, it will create a new database.
 
-    1. As a final step, add the following code below the `Database` instance to print out the ID of the database that you just created:
+    1. As a final step, add the following code below the `Database` instance to print out the ID of the database that you  created:
 
         ```csharp
         await Console.Out.WriteLineAsync($"Database Id:\t{targetDatabase.Id}");
@@ -283,7 +283,7 @@ Now that you have created your database, you're ready to create a container to s
         }
         ```
 
-        Note that you'll have different values for `YOUR_URI` and `YOUR_KEY`.
+        Remember that you'll have different values for `YOUR_URI` and `YOUR_KEY`.
 
     1. Save your changes by typing <kbd>Ctrl+S</kbd>, or by selecting the **Save** option from the Editor menu on the upper right corner.
 
