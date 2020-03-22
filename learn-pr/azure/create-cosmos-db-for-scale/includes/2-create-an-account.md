@@ -12,7 +12,7 @@ SQL API is the preferred data model if you are creating a new application. If yo
 
 When creating an account, choose an ID that is meaningful to you; it is how you identify your account. Further, create the account in the Azure region that's closest to your users to minimize latency between the datacenter and your users.
 
-You can optionally set up virtual networks and geo-redundancy during account creation, but this can also be done later. In this module we will not enable those settings.
+You can optionally set up virtual networks and geo-redundancy during account creation, but you can configure those options later. However, we will not enable those settings in this module.
 
 ## Creating an Azure Cosmos DB account in the portal
 
