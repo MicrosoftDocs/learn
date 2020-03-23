@@ -91,7 +91,7 @@ Add three knowledge check questions to verify the student's understanding of the
 You need to monitor the performance of your load-balanced system to ensure that the performance meets requirements. If the performance trails off, and connections to VMs start to fail, you need to troubleshoot the system to determine the cause and rectify the problem. By the end of this unit, you will be able to:
 
 - Describe the the metrics available for measuring the throughput and performance of a load-balanced system
-- Use the resource health page in Azure Portal to monitor the health of your system
+- Use the resource health page in Azure portal to monitor the health of your system
 - Explain how to resolve common problems in a load-balanced system
 
 Explain how to use the diagnostic capabilities of Azure Monitor to monitor, manage, and troubleshoot load balancer resources. Cover the following topics:
@@ -147,7 +147,7 @@ Add three knowledge check questions
 
 In this exercise, you will start with a pre-configured environment which has multiple health probe failures, and use the skills learned in this module to diagnose and rectify the issues to return the public facing standard load-balanced HTTP service back to full service.
 
-This exercise will use the Azure Portal
+This exercise will use the Azure portal.
 
 1. Provide a script that creates a pre-configured environment. The environment should have errors which the student has to diagnose:
 
