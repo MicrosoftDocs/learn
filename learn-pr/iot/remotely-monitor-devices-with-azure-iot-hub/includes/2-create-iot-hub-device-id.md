@@ -59,6 +59,8 @@ For C# versions of the code, you also need the _Event Hubs-compatible endpoint_,
 
 1. Copy the strings that are returned back to your text file.
 
+    The endpoint string will be something like "sb://iothub-ns-cheesexxxx-xxxxxxx-xxxxxxxxxx.servicebus.windows.net/". The path will be a lower-case version of your hub name. The service key will be a coded string, similar to any primary key in the Azure portal. These strings replace the `<your event hub endpoint>`, `<your event hub path>`, and `<your event hub Sas key>` strings, respectively, in an upcoming unit.
+
 ::: zone-end
 
 You've now completed the preparatory work for this module, the next steps are all coding and testing. Before we advance though, a quick knowledge check!
