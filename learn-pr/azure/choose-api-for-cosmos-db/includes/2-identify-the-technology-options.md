@@ -1,4 +1,4 @@
-![Diagram showing how Azure Cosmos DB is globally distributed, supports five principles, four models, and five APIs](../media/azure-cosmos-db.png)
+![Diagram showing how Azure Cosmos DB is globally distributed, supports five principles, four models, and five APIs.](../media/azure-cosmos-db.png)
 
 Azure Cosmos DB is a globally distributed and elastically scalable database. It has a guaranteed low latency that is backed by a comprehensive set of Service Level Agreements (SLAs). Consistency can sometimes be an issue when you are working with distributed systems, but Azure Cosmos DB alleviates this situation by offering you five different consistency levels: *strong*, *bounded staleness*, *session*, *consistent prefix*, and *eventual*.
 
@@ -17,7 +17,7 @@ In this unit you'll discover, at a High Level, what each of the API choices are,
 Core (SQL) is the default API for Azure Cosmos DB, which provides you with a view of your data that resembles a traditional NoSQL document store. You can query the hierarchical JSON documents with a SQL-like language. Core (SQL) uses JavaScript's type system, expression evaluation, and function invocation.
   :::column-end:::
   :::column:::
-![Icon representing the CORE API](../media/core-api.png)
+:::image type="icon" source="../media/core-api.png":::
   :::column-end:::
 :::row-end:::
 
@@ -64,7 +64,7 @@ For developers who have experience with the SQL query language, Core (SQL) provi
 Azure Cosmos DB's API for MongoDB supports the MongoDB wire protocol. This API allows existing MongoDB client SDKs, drivers, and tools to interact with the data transparently, as if they are running against an actual MongoDB database. The data is stored in document format, which is the same as using Core (SQL). Azure Cosmos DB's API for MongoDB is currently compatible with 3.2 version of the MongoDB wire protocol.
   :::column-end:::
   :::column:::
-![Icon representing the MongoDB API](../media/mongo-api.png)
+:::image type="icon" source="../media/mongo-api.png":::
   :::column-end:::
 :::row-end:::
 
@@ -81,7 +81,7 @@ db.Items.find({},{productName:1,_id:0})
 Azure Cosmos DB's support for the Cassandra API makes it possible to query data by using the Cassandra Query Language (CQL), and your data will appear to be a partitioned row store. Just like the MongoDB API, any clients or tools should be able to connect transparently to Azure Cosmos DB; only your connection settings should need to be updated. Cosmos DB's Cassandra API currently supports version 4 of the CQL wire protocol.
   :::column-end:::
   :::column:::
-![Icon representing the Cassandra API](../media/cassandra-api.png)
+:::image type="icon" source="../media/../media/cassandra-api.png":::
   :::column-end:::
 :::row-end:::
 
@@ -116,7 +116,7 @@ SELECT id, productName FROM catalog.items
 Azure Cosmos DB's Azure Table API provides support for applications that are written for Azure Table Storage that need premium capabilities like global distribution, high availability, scalable throughput. The original Table API only allows for indexing on the Partition and Row keys; there are no secondary indexes. Storing table data in Comsos DB automatically indexes all the properties, and requires no index management.
   :::column-end:::
   :::column:::
-![Icon representing the Table API](../media/table-api.png)
+:::image type="icon" source="../media/../media/table-api.png":::
   :::column-end:::
 :::row-end:::
 
@@ -135,7 +135,7 @@ SELECT i.productName FROM Items i
 Choosing Gremlin as the API provides a graph-based view over the data. Remember that at the lowest level, all data in any Azure Cosmos DB is stored in an ARS format. A graph-based view on the database means data is either a vertex (which is an individual item in the database), or an edge (which is a relationship between items in the database).
   :::column-end:::
   :::column:::
-![Icon representing the Gremlin API](../media/graph-api.png)
+:::image type="icon" source="../media/../media/graph-api.png":::
   :::column-end:::
 :::row-end:::
 
