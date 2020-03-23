@@ -3,7 +3,7 @@ In this unit, we'll first create an IoT Hub, and add a single device to that hub
 ## Create a custom IoT Hub
 
 1. Make sure you've activated the sandbox, using the button above. The sandbox creates a free temporary resource.
-1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
+1. Right-click on [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), and select **Open in new window**.
 1. Select **+ Create a resource**, from the top of the left-hand menu. In the **Search the Marketplace** search box, enter "IoT Hub".
 1. Select **IoT Hub** from the search results, and click **Create**.
 1. You'll be required to enter a **Subscription** from the selection offered to you. A sandbox subscription will be **Concierge Subscription**, so choose that. For **Resource Group**, enter <rgn>[sandbox resource group name]</rgn>. A resource group is similar to a folder, it's largely there to help you organize your resources.
@@ -44,11 +44,7 @@ Now we need to create a single device identity, the sensor monitoring the cheese
 
 For C# versions of the code, you also need the _Event Hubs-compatible endpoint_, _Event Hubs-compatible path_, and _service primary key_ from your IoT hub. These strings enable the back-end app to connect to your IoT Hub, and retrieve messages.
 
-1. Right click on [Azure Cloud Shell](https://shell.azure.com/), and select **Open in a new window**. If you are given the option of directory, choose **Microsoft Learn Sandbox**.
-
-1. If you get a **You have no storage mounted** dialog, ensure the **Subscription** is **Concierge Subscription**, and click **Show advanced settings**. Select **Create new** under **File share**, and enter any appropriate name for your cloud file storage. Then select **Create storage**. If you get an error with this method, use the alternative process listed below. Errors might occur if resources are constrained.
-
-1. Copy the following three commands to your text file, and replace &lt;YourIoTHubName&gt; with the name of your hub.
+1. Copy the following three commands to your text file, and replace `<YourIoTHubName>` with the name of your hub.
 
     ``` Azure CLI
     az iot hub show --query properties.eventHubEndpoints.events.endpoint --name <YourIoTHubName>
@@ -56,21 +52,12 @@ For C# versions of the code, you also need the _Event Hubs-compatible endpoint_,
     az iot hub show --query properties.eventHubEndpoints.events.path --name <YourIoTHubName>
 
     az iot hub policy show --name service --query primaryKey --hub-name <YourIoTHubName>
+
     ```
 
-1. One at a time, copy the commands from the text file into the Azure Cloud Shell, and run them. Record the results back into your text file.
+1. Copy all the commands from the text file to the **Azure Cloud Shell** pane.
 
-### Alternative method of retrieving the endpoint, path, and key
-
-1. In the portal for your hub, select **Built-in endpoints** in the left-hand menu.
-
-1. Copy the **Event Hub-compatible endpoint**, and paste the string into a text file.
-
-1. Extract the `Endpoint=` string that starts with `sb://` and ends with `servicebus.windows.net/`. This string will replace the `<your event hub endpoint>` string, when writing code in a later unit. The full string will be something like "sb://iothub-ns-cheesexxxx-xxxxxxx-xxxxxxxxxx.servicebus.windows.net/";
-
-1. Extract the `EntityPath=` string. This will be a lower-case version of your hub name. Do not include the `EntityPath=` text in your saved path string. This string will replace the  `<your event hub path>` string.
-
-1. Extract the `SharedAccessKey=` string. Do not include the `SharedAccessKey=` text, nor the ending semicolon, in your saved key string. This string will replace the `<your event hub Sas key>` string.
+1. Copy the strings that are returned back to your text file.
 
 ::: zone-end
 
