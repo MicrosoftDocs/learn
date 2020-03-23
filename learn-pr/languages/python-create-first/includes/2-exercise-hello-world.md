@@ -2,7 +2,7 @@ The easiest way to learn programming is to write dozens (if not hundreds) of tin
 
 ## What you'll build
 
-In this unit, we start building a program that prints a message to screen by using a single line of code.  This activity requires you to navigate Visual Studio Code and work in the code editor.
+In this unit, you start building a program that prints a message to screen by using a single line of code.  This activity requires you to navigate Visual Studio Code and work in the code editor.
 
 ### Step 1 - Create a new folder for your first Python project
 
