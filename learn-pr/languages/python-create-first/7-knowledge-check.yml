@@ -18,7 +18,7 @@ quiz:
     - content: "All variables are of string data type by default."
       isCorrect: true
       explanation: "This is a false statement.  A variable can point to values in memory that are of many different data types."
-    - content: "The print() function can only work with both integer and string data types."
+    - content: "The print() function can work only with both integer and string data types."
       isCorrect: false
       explanation: "This is a true statement."
     - content: "You use the same symbol for both addition and concatenation, and Python will understand which to perform based on the two values' data types."
@@ -40,12 +40,12 @@ quiz:
       explanation: "This two-word variable name adequately describes the value it is storing, and it uses the underscore character to separate the two words."
     - content: "inv-ct"
       isCorrect: false
-      explanation: "This option uses odd contractions for the words 'inventory' and 'count,' it uses a dash instead of an underscore, and it is difficult to read.  There's a better variable name choice you can make."
+      explanation: "This option uses odd contractions for the words 'inventory' and 'count,' it uses a dash instead of an underscore, and it's difficult to read.  There's a better variable name choice you can make."
   - content: "What is the purpose of the opening and closing parentheses next to a function name?"
     choices:
     - content: "They define the order of operations, as they do in math."
       isCorrect: false
-      explanation: "Although you'll soon learn that a set of parentheses can be used to define the order of operations, they do not serve this purpose when they are used next to a function name."
+      explanation: "Although you'll soon learn that a set of parentheses can be used to define the order of operations, they do not serve this purpose when they're used next to a function name."
     - content: "Parentheses are the function invocation operators that instruct Python to execute the function."
       isCorrect: true
       explanation: "Correct!  Without parentheses, you're merely referencing the name of the function, not instructing Python what to do with it."
