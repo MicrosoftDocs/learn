@@ -30,25 +30,25 @@ Let's apply some tags to the resources you created. Recall that we created a res
 
 1. On the **Overview** tab of your resource group, you should see your two VNets listed. The default view doesn't display the tags column, so let's add that to the display. Select **Edit columns** at the top. In the **Available columns** list, select **Tags** and click **->** to add it to the **Selected columns** list. Click **Apply** to apply your changes.
 
-    ![Image of portal showing how to add the tags column to the display](../media/3-add-tag-column.PNG)
+    ![Screenshot of portal that shows how to add the tags column to the display.](../media/3-add-tag-column.PNG)
 
 1. You should now see the tags column, but it will be empty since we haven't added any tags yet. We'll add the tags directly here. You can also add tags to any resource that supports it on the resource's **Tags** panel. In the list of resources, you should see an **...**. Select the **...** for the **msftlearn-vnet1** resource, then select **Edit tags**.
 
 1. This will display the dialog to edit the Tags. Let's add a couple tags to this VNet. In the **NAME** box type **Department**, and in the **VALUE** box type **Finance**. Click **Save** to save your changes, then click **Close** to close the dialog.
 
-    ![Image of portal showing the dialog to add tags](../media/3-add-tag-1.PNG)
+    ![Screenshot that shows the tags page with the name and value fields.](../media/3-add-tag-1.PNG)
 
 1. Let's do the same steps for the **msftlearn-vnet2** VNet. For this VNet, add a **Department:Marketing** tag to the resource.
 
     You should now see your tags applied to each resource.
 
-    ![Image of portal showing resources with tags](../media/3-tags-displayed.PNG)
+    ![Screenshot that shows msftlearn-vnet1 resource with the tag Finance and msftlearn-vnet2 with tag Marketing.](../media/3-tags-displayed.PNG)
 
 1. Let's add tags to both of these resources in bulk. Select the checkbox on the left for each of the VNets and click **Assign tags** in the top menu. By selecting multiple resources, we can add a tag to them in bulk, making it easy if we have multiple resources we want to apply the same tag to.
 
     Add the **Environment:Training** tag to the resources. You should see in the dialog that the tag will be applied to each of the VNets.
 
-    ![Image of portal showing the dialog to add tags in bulk](../media/3-add-bulk-tag.PNG)
+    ![Screenshot that shows the tag fields name and value and both VNets.](../media/3-add-bulk-tag.PNG)
 
     Back in the resource list you'll now see a **2** displayed as we now have two tags applied to each resource.
 
@@ -56,7 +56,7 @@ Let's apply some tags to the resources you created. Recall that we created a res
 
 1. Select **Add filter**. In the **Tags**, select **Environment**, then select **Training**. You should see only your two VNets displayed, since we tagged those resources with the **Environment:Training** tag.
 
-    ![Image of all resources filtered on the Training tag](../media/3-tag-filter.PNG)
+    ![Screenshot of all resources filtered on the Training tag.](../media/3-tag-filter.PNG)
 
 1. We can further filter these resources by additionally filtering on the **Department:Finance** or **Department:Marketing** tags.
 
