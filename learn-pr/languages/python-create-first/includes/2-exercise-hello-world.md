@@ -52,7 +52,7 @@ After typing the code, select the File menu's Save option.
 
 To execute your program, click the green arrow to the right of the tabs.  If you hover over the arrow, you'll see the tooltip "Run Python File in Terminal".  That lets you know you're in the right place.
 
-![alt text](../media/2-exercise-hello-world-03.png "Screenshot of Visual Studio Code with a callout around the green triangle button used to run your Python code")
+![Screenshot of Visual Studio Code with a callout around the green triangle "Play" button used to run your Python code.](../media/2-exercise-hello-world-03.png)
 
 When it executes, you'll see two lines appear.
 
@@ -92,7 +92,7 @@ As we said earlier, you must be precise when writing code.  Python is case-sensi
 
 Fortunately, Visual Studio Code can help you spot mistakes like this.  You should see a red squiggly line under `Print`.  If you hover your mouse cursor over the word `Print`, you will see a popup that includes the phrase "Undefined variable 'Print'".  The specific message will require more explanation, but for now you can at least spot potential problems in your code.
 
-![alt text](../media/2-exercise-hello-world-01.png "Screenshot of Visual Studio Code with a red squiggly line under the word print with an upper-case letter p")
+![Screenshot of Visual Studio Code with a red squiggly line under the word "Print" with an upper-case letter P.](../media/2-exercise-hello-world-01.png)
 
 > [!Important]
 > You must save the changes to your file to see the red squiggly line appear.
@@ -121,7 +121,7 @@ print["Hello World!"]
 ```
 Once you save the file, you will see a red squiggly line under `print`.  This time when you hover your mouse cursor over the red squiggly line, you see a large dialog with additional information.  
 
-![alt text](../media/2-exercise-hello-world-02.png "Screenshot of Visual Studio Code as the mouse hovers over a red squiggly line to reveal a large message box filled with reference information about the print command and an error message")
+![Screenshot of Visual Studio Code as the mouse hovers over a red squiggly line to reveal a large message box filled with reference information about the print command and an error message.](../media/2-exercise-hello-world-02.png)
 
 We'll talk about what all this information means in another module, but let's just skip over it for now since it's a bit advanced at this point.  The main takeaway is that there's a problem with the code.
 
