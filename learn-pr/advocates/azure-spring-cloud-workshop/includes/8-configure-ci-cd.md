@@ -31,7 +31,7 @@ az ad sp create-for-rbac --name "${SPNAME}" --role contributor --scopes "$RESOUR
 
 This should output a JSON text, that you need to copy.
 
-Then, in your GitHub project, select `Settings > Secrets` and add a new secret called `AZURE_CREDENTIALS`. Paste the JSON text you just copied into that secret.
+Then, in your project's GitHub repository, select `Settings > Secrets` and add a new secret called `AZURE_CREDENTIALS`. Paste the JSON text you just copied into that secret.
 
 ## Create a GitHub Action
 
