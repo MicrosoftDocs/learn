@@ -28,7 +28,7 @@ In early 2019, Amazon Web Services redesigned its cloud-based backup service for
 
 The complete itinerary encompassing all active policies is the *backup plan*. Here, each rule refers to resources within the AWS cloud that require backup by the value of its tag, which is an arbitrary name given by the administrator. To include a resource such as an Elastic Block Storage (EBS) volume in a backup plan, its administrator need only give that resource a tag name that AWS Backup will recognize. This way, the administrator or caretaker with responsibility for an AWS resource does not need to use the AWS Backup console just to establish a resource under the caretaker's purview as part of an existing backup plan.
 
-![Figure 2: The AWS Backup console. \[Courtesy Amazon\]](../media/fig9-2.jpg)
+![Figure 2: The AWS Backup console. \[Courtesy Amazon\]](../media/fig9-2.png)
 
 _Figure 2: The AWS Backup console. \[Courtesy Amazon\]_
 
