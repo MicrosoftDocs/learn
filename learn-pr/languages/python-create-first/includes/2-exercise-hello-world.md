@@ -52,7 +52,7 @@ After typing the code, select **File** > **Save**.
 
 To execute your program, select the green arrow to the right of the tabs.  If you hover over the arrow, you'll see the tooltip "Run Python File in Terminal."  That lets you know you're in the right place.
 
-![alt text](../media/2-exercise-hello-world-03.png "The Visual Studio Code green arrow button")
+![The Visual Studio Code green arrow button](../media/2-exercise-hello-world-03.png)
 
 When the code is run, two lines appear in the **Terminal** window:
 
@@ -94,7 +94,7 @@ As discussed earlier, you must be precise when writing code.  Python is case-sen
 
 Fortunately, Visual Studio Code can help you spot mistakes like this before you run the code.  You should see a red squiggly line under *Print*.  If you hover over the word, a tooltip displays the phrase "Undefined variable 'Print'".  The specific message requires more explanation, but for now you can at least spot potential problems in your code.
 
-![alt text](../media/2-exercise-hello-world-01.png "The word "Print" with a red squiggly line")
+![The word "Print" with a red squiggly line](../media/2-exercise-hello-world-01.png)
 
 > [!Important]
 > You must save the changes to your file to remove the red squiggly line.
@@ -123,7 +123,7 @@ print["Hello World!"]
 ```
 Once you save the file, you will see a red squiggly line under *print*.  This time when you hover over the red squiggly line, you see a large dialog with additional information.  
 
-![alt text](../media/2-exercise-hello-world-02.png "Screenshot of Visual Studio Code as the mouse hovers over a red squiggly line to reveal a large message box filled with reference information about the print command and an error message")
+![Screenshot of Visual Studio Code as the mouse hovers over a red squiggly line to reveal a large message box filled with reference information about the print command and an error message.](../media/2-exercise-hello-world-02.png)
 
 We'll talk about what all this information means in another module, but let's just skip over it for now since it's a bit advanced at this point.  The main takeaway is that there's a problem with the code.
 
