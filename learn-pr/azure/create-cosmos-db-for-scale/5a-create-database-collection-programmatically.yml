@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.create-cosmos-db-for-scale.5a-create-a-database-and-collection-programmatically
+uid: learn.create-cosmos-db-for-scale.5a-create-database-collection-programmatically
 metadata:
   title: Exercise - Create a database and container in Azure Cosmos DB Programmatically
   description: Apply what you've learned about request units and partitioning to build an Azure Cosmos DB database and container built for scale. 
@@ -9,9 +9,9 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   zone_pivot_groups: dev-env-csharp-java-cli
-title: Exercise - Create a database and container in Azure Cosmos DB Programmatically
+title: Exercise - Create a database and container in Azure Cosmos DB programmatically
 interactive: bash
 azureSandbox: true
 durationInMinutes: 8
 content: |
-  [!include[](includes/5a-create-a-database-and-collection-programmatically.md)]
+  [!include[](includes/5a-create-database-collection-programmatically.md)]

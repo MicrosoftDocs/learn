@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.create-cosmos-db-for-scale.5-create-a-database-and-collection
+uid: learn.create-cosmos-db-for-scale.5-create-a-database-collection
 metadata:
   title: Exercise - Create a database and container in Azure Cosmos DB using the Portal
   description: Apply what you've learned about request units and partitioning to build an Azure Cosmos DB database and container built for scale. 
@@ -8,8 +8,8 @@ metadata:
   ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Exercise - Create a database and container in Azure Cosmos DB using the Portal
+title: Exercise - Create a database and container in Azure Cosmos DB using the portal
 azureSandbox: false
 durationInMinutes: 3
 content: |
-  [!include[](includes/5-create-a-database-and-collection.md)]
+  [!include[](includes/5-create-a-database-collection.md)]
