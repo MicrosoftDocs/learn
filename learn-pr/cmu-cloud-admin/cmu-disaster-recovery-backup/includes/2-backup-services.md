@@ -28,7 +28,7 @@ In early 2019, Amazon Web Services redesigned its cloud-based backup service for
 
 The complete itinerary encompassing all active policies is the *backup plan*. Here, each rule refers to resources within the AWS cloud that require backup by the value of its tag, which is an arbitrary name given by the administrator. To include a resource such as an Elastic Block Storage (EBS) volume in a backup plan, its administrator need only give that resource a tag name that AWS Backup will recognize. This way, the administrator or caretaker with responsibility for an AWS resource does not need to use the AWS Backup console just to establish a resource under the caretaker's purview as part of an existing backup plan.
 
-![Figure 2: The AWS Backup console. \[Courtesy Amazon\]](../media/fig9-2.jpg)
+![Figure 2: The AWS Backup console. \[Courtesy Amazon\]](../media/fig9-2.png)
 
 _Figure 2: The AWS Backup console. \[Courtesy Amazon\]_
 
@@ -48,7 +48,7 @@ From an architectural perspective, AWS Backup is designed to serve as a mirror f
 
 Azure Backup is equally capable of backing up on-premises resources (servers and virtual machines) and resources hosted in Azure. It does not aim to change the existing backup policy in the data center - just to replace local discs and tape drives with cloud storage. The cloud-based location for backed-up files and volumes on Azure is called the *Recovery Services Vault*, whose browser-based console appears in Figure 3. During the setup process for this vault through the Azure portal, the administrator downloads and installs the client-side agent known as the Microsoft Azure Recovery Services agent or "MARS." In Windows Server, MARS runs as an application, looking very much like a System Center add-on. (Alternately, an admin may prefer to use System Center Data Protection Manager, where MARS functionality is already built in.) The administrator locates the volumes and services in the network whose data requires backup, and MARS distributes its agents to the server addresses responsible for those components.
 
-![Figure 3: The console for Azure Recovery Services Vault. \[Courtesy Microsoft\]](../media/fig9-3.jpg)
+![Figure 3: The console for Azure Recovery Services Vault. \[Courtesy Microsoft\]](../media/fig9-3.png)
 
 _Figure 3: The console for Azure Recovery Services Vault. \[Courtesy Microsoft\]_
 
