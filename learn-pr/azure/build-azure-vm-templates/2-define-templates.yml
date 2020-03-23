@@ -5,8 +5,8 @@ metadata:
   title: Define Azure Resource Manager templates
   description: Learn what's in a Resource Manager template and how templates can help you deploy faster and more reliably
   ms.date: 09/24/2018
-  author: cwatson-cat
-  ms.author: cwatson
+  author: pierreroman
+  ms.author: pierrer
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX

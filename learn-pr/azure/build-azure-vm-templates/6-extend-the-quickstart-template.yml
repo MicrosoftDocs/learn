@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Extend the Quickstart template to deploy a basic web site
   description: Add a resource to your template and deploy the change to your VM
   ms.date: 01/16/2020
-  author: cwatson-cat
-  ms.author: cwatson
+  author: pierreroman
+  ms.author: pierrer
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
