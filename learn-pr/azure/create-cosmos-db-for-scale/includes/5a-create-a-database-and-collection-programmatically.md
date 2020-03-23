@@ -1,5 +1,3 @@
-In the previous exercise, you learned how to use the Azure portal to create a database and container, with throughput and scaling settings that are appropriate for your business needs.
-
 In this exercise, you'll learn how to create an Azure Cosmos DB database and container programmatically. Following the example from the previous exercise, you'll create a database named **"Products"** and a container named **"Clothing"**, and specify your partition key and throughput values.
 
 ::: zone pivot="csharp"
