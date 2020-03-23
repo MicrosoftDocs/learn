@@ -15,7 +15,7 @@ First, log into your GitHub account.  If you don't already have an account, you 
 
 Next, navigate to: 
 
-[https://github.com/aaronpowell/trivia-api](https://github.com/aaronpowell/trivia-api?azure-portal=true)
+[https://github.com/MicrosoftDocs/mslearn-use-git-from-vs-code](https://github.com/MicrosoftDocs/mslearn-use-git-from-vs-code)
 
 We don't need to worry about what the code in this repository does, how it works, nor get it running locally since we're only interested in Visual Studio Code's Git integration.  This project contains code we can fork, clone, and modify.
 
@@ -33,7 +33,7 @@ To copy the URL, select the green "Clone or download" button near the upper-righ
 
 Select the clipboard icon next to the URL to copy the URL to your computer's clipboard.
 
-![Screenshot of the GitHub repository web page with focus on the Clone or download button and the clipboard icon to copy the URL.](../media/2-exercise-clone-branch-02.png)
+:::image type="content" source="../media/2-exercise-clone-branch-02.png" alt-text="Screenshot of the GitHub repository web page with focus on the Clone or download button and the clipboard icon to copy the URL.":::
 
 ### Step 3 - Clone the forked project to your local development environment.
 
@@ -90,30 +90,21 @@ The Status Bar should now display `update-response` indicating the branch you're
 
 ### Step 4 - Make a change to the source code.
 
-In the Explorer View, expand the `GetAllQuestions` folder and select the `index.js` file so that it is displayed in the code editor area of Visual Studio Code.
+In the Explorer View, expand the `node/routes` folder and select the `index.js` file so that it is displayed in the code editor area of Visual Studio Code.
 
 Update the code example to match the following passage of code:
 
 ```javascript
-const questions = require("../questions");
+var express = require('express');
+var router = express.Router();
 
-module.exports = async function(context, req) {
-  context.log("Request for all questions");
+/* GET home page. */
+router.get('/', function(req, res, next) {
+  res.render('index', { title: 'Hello Git!' });
+});
 
-  // context.res = {
-  //    body: questions
-  // };
+module.exports = router;
 
-  context.res = {
-    body: questions.map(q => {
-      return {
-        question: q.question,
-        answers: q.incorrect_answers.concat([q.correct_answer]).sort()
-      };
-    })
-  };
-  
-};
 ```
 
 > [!IMPORTANT]
@@ -127,7 +118,7 @@ Once you save your changes to the file using <kbd>Ctrl+S</kbd>, the blue icon on
 
 After a moment, the clock icon will disappear, and a new blue icon with a number will appear indicating the number of pending changes (unstaged or staged changes) are ready to be committed.  The number will increment as you make more changes to the files.
 
-![Screenshot of the Status Bar with an arrow pointing to the Publish Changes icon.](../media/2-exercise-clone-branch-06.png)
+:::image type="content" source="../media/2-exercise-clone-branch-06.png" alt-text="Screenshot of the Status Bar with an arrow pointing to the Publish Changes icon.":::
 
 This corresponds to the appearance of the asterisk symbol `*` in the Status Bar next to the branch name.
 

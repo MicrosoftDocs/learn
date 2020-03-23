@@ -8,7 +8,7 @@ Having already made a change to the source code in the previous exercise, we now
 
 Choose the Source Control icon on the left.  The Source Control view shows both staged and unstaged changes.  Our goal is to create a commit, which we can also do from this view.  But first we must decide which changes should be added to our commit.
 
-![Screenshot of VS Code's Source Control view with the file containing changes is listed under the changes section.](../media/3-exercise-stage-commit-01.png)
+:::image type="content" source="../media/3-exercise-stage-commit-01.png" alt-text="Screenshot of VS Code's Source Control view with the file containing changes is listed under the changes section.":::
 
 We can see that our `index.js` file is listed under the section titled "Changes".  To the right of the file name, there are four icons.  They are:
 
@@ -50,8 +50,6 @@ In the previous exercise, we talked about the Synchronize Changes icon in the St
 
 ![Screenshot of the Status Bar featuring icons indicating how many commits will be pushed.](../media/3-exercise-stage-commit-02.png)
 
-// NW: I had a "cloud-and-up-arrow" icon at this point, as I had not previously authenticated to GitHub. Clicking it popped a GitHub auth prompt. My branch was pushed after that, and then I also got the "would you periodically like to run git fetch" dialog.
-
 Select that icon now to perform a `git pull` then a `git push`.  There should be nothing new to pull, but should push our latest commit to our branch on our forked repository.
 
 ### Step 6 - Confirm that your new branch and commit were created in GitHub.
@@ -67,8 +65,6 @@ Next, click on the "Commits" link above the "Branch: update-response" button.  C
 ![Screenshot of GitHub's commits page listing all of the commits added to the currently selected branch.](../media/3-exercise-stage-commit-04.png)
 
 ## Next steps
-
-// NW: This is perfect; consider moving to summary (esp. given the external link)
 
 If we were working on a real open-source project, you might want to create a pull request (PR) to add the commits in your fork to the project's source code stored in the upstream repository.  For more information on creating pull requests, see the following URL:
 
