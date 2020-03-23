@@ -102,12 +102,12 @@ This process is a systematic and semi-automated way for information systems to a
 
 1. _Sterbenz, James P.G., *et al.* "ResiliNets: Multilevel Resilient and Survivable Networking Initiative." <https://www.ittc.ku.edu/resilinets/>._
 
-2. _Patterson, David, *et al*. "Recovery Oriented Computing: Motivation, Definition, Principles, and Examples." Microsoft Research, March 2002. <https://www.microsoft.com/en-us/research/publication/recovery-oriented-computing-motivation-definition-principles-and-examples/>._
+2. _Patterson, David, *et al*. "Recovery Oriented Computing: Motivation, Definition, Principles, and Examples." Microsoft Research, March 2002. <https://www.microsoft.com/research/publication/recovery-oriented-computing-motivation-definition-principles-and-examples/>._
 
 3. _ISO. "Security and resilience - Business continuity management systems - Requirements." <https://dri.ca/docs/ISO_DIS_22301_(E).pdf>._
 
 [^1]:  <https://www.ittc.ku.edu/resilinets/>  "Sterbenz, James P.G., *et al.* *ResiliNets: Multilevel Resilient and Survivable Networking Initiative.*"
 
-[^2]:  <https://www.microsoft.com/en-us/research/publication/recovery-oriented-computing-motivation-definition-principles-and-examples/>  "Patterson, David, *et al*. *Recovery Oriented Computing: Motivation, Definition, Principles, and Examples.* Microsoft Research, March 2002."
+[^2]:  <https://www.microsoft.com/research/publication/recovery-oriented-computing-motivation-definition-principles-and-examples/>  "Patterson, David, *et al*. *Recovery Oriented Computing: Motivation, Definition, Principles, and Examples.* Microsoft Research, March 2002."
 
 [^3]:  <https://dri.ca/docs/ISO_DIS_22301_(E).pdf>  "ISO. *Security and resilience - Business continuity management systems - Requirements.*"

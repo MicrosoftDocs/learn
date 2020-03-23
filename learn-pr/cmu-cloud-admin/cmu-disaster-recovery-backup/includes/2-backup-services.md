@@ -48,7 +48,7 @@ From an architectural perspective, AWS Backup is designed to serve as a mirror f
 
 Azure Backup is equally capable of backing up on-premises resources (servers and virtual machines) and resources hosted in Azure. It does not aim to change the existing backup policy in the data center - just to replace local discs and tape drives with cloud storage. The cloud-based location for backed-up files and volumes on Azure is called the *Recovery Services Vault*, whose browser-based console appears in Figure 3. During the setup process for this vault through the Azure portal, the administrator downloads and installs the client-side agent known as the Microsoft Azure Recovery Services agent or "MARS." In Windows Server, MARS runs as an application, looking very much like a System Center add-on. (Alternately, an admin may prefer to use System Center Data Protection Manager, where MARS functionality is already built in.) The administrator locates the volumes and services in the network whose data requires backup, and MARS distributes its agents to the server addresses responsible for those components.
 
-![Figure 3: The console for Azure Recovery Services Vault. \[Courtesy Microsoft\]](../media/fig9-3.jpg)
+![Figure 3: The console for Azure Recovery Services Vault. \[Courtesy Microsoft\]](../media/fig9-3.png)
 
 _Figure 3: The console for Azure Recovery Services Vault. \[Courtesy Microsoft\]_
 
