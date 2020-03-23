@@ -21,7 +21,7 @@ Recall our **msftlearn-core-infrastructure-rg** resource group. We've now got tw
 
 1. Click **+ Add**. Name the lock **BlockDeletion** and select a **Lock type** of **Delete**. Click **OK**.
 
-    ![Image of the portal showing a new resource lock being configured](../media/6-add-lock.PNG)
+    ![Screenshot of new resource lock being configured in the Azure portal.](../media/6-add-lock.PNG)
 
     You now have a lock applied to the resource group that will prevent deletion of the resource group, and is inherited by all resources within the resource group. Let's try to delete one of the VNets to see what happens.
 
@@ -29,7 +29,7 @@ Recall our **msftlearn-core-infrastructure-rg** resource group. We've now got tw
 
 1. In the **Overview** pane for **msftlearn-vnet1**, click **Delete** at the top, then **Yes** to confirm. You should receive an error, stating that there is a lock on the resource preventing its deletion.
 
-    ![Image of error showing resource is blocked from deletion](../media/6-delete-error.PNG)
+    ![Screenshot of an error titled "Failed to delete virtual network".](../media/6-delete-error.PNG)
 
 1. In the **Settings** section in the left menu, select **Locks**. You should see here that our **msftlearn-vnet1** has a lock that is inherited by from the resource group.
 
