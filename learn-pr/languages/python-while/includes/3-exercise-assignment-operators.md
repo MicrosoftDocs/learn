@@ -1,4 +1,4 @@
-We've been using the basic assignment operator, a single equal sign symbol `=`, since we assigned a value to our first variable. There are other assignment operators that you should also be aware of.
+We've used the basic assignment operator, a single equal sign symbol `=`, since we assigned a value to our first variable. There are other assignment operators that you should also be aware of.
 
 Incrementing a value in a looping structure is a common operation. In this exercise, you'll learn how to use other assignment operators that will perform a mathematical operation and assign a new value to a variable in a shortened form.
 

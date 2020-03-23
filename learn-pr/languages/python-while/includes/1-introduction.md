@@ -16,8 +16,8 @@ In this module, you will:
 
 ## Prerequisites
 
-- You should have your Python development environment set up, know how to create a working folder and code files, and know how to execute the code in a code file.
-- You should understand data types like `str` and `int` and how to define, set, and get values from a variable.
+- You should have your Python development environment set up, know how to create a working folder and code files, and know how to run the code in a code file.
+- You should understand data types like `str` and `int` and know how to define, set, and get values from a variable.
 - You should understand what a code block is and how to define one.
 - You should understand how to include a module from the Python Standard Library.
 - You should have experience using if statements and the string's `isnumeric()` helper method to evaluate user input.

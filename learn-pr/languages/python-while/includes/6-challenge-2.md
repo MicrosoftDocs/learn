@@ -15,7 +15,7 @@ Rebuild the number guessing game, but this time:
 
 Also, take note of the output. The prompts and messages have changed when compared to the original challenge.
 
-No matter how you do it, your code should produce the following output (given the randomly generated answer and the guesses):
+No matter how you do it, your code should produce the following output (given the randomly generated answer and the guesses).
 
 ```output
 Guess a number between 1 and 10
@@ -29,7 +29,7 @@ Enter guess #4: 6
 You guessed it in 4 tries!
 ```
 
-If the user types in a value that isn't numeric, display an error message. In the following example output, the user enters a few strings and is reminded to only enter numbers:
+If the user types in a value that isn't numeric, display an error message. In the following example output, the user enters a few strings and is reminded to only enter numbers.
 
 ```output
 Guess a number between 1 and 10

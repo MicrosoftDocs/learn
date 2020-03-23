@@ -29,7 +29,7 @@ print(f'It took {count} rolls to roll a 5!')
 The `while` statement has three parts:
 - The `while` keyword
 - A Boolean expression
-- An end of statement colon symbol `:`
+- An end-of-statement colon symbol `:`
 
 Also important is the code block beneath the `while` statement. We've looked at code blocks in other modules. This code block belongs to the while statement and will continue to be repeatedly executed until the Boolean expression evaluates to `False`.
 
@@ -39,7 +39,7 @@ Each time we run the code block, the value of `roll` is set to a new random numb
 
 Each time we ran the code block, we incremented the value of `count` by `1`, so we know how many times our code performed the loop.
 
-When you execute the code, you should see similar output:
+When you run the code, you should see similar output:
 
 ```output
 3
@@ -51,9 +51,9 @@ When you execute the code, you should see similar output:
 5
 It took 8 rolls to roll a 5!
 ```
-Using a `while` statement with the `random` module could be the basis for many mini-games. Let's expand this to build a slightly more interactive version in the next step.
+Using a `while` statement with the `random` module could be the basis for many mini-games. Let's build a slightly more interactive version in the next step.
 
-### Step 3: Use the optional statements break and else
+### Step 3: Use the optional statements `break` and `else`
 
 In certain situations, you might want to break out of the while statement prematurely. For example, you might prompt the user for input. If they enter a certain character or term, you might want to exit the loop that circumvents the normal flow.
 
@@ -96,7 +96,7 @@ Charlee Wins!!!
 You rolled the dice 2 times.
 ```
 
-However, we allow the player to exit the game prematurely by typing the letter `q` instead of a name. We use an `if` statement to check the value the user typed in. If they entered `q`, we call the `break` statement.
+We allow the player to exit the game prematurely by typing the letter `q` instead of a name. We use an `if` statement to check the value the user typed in. If they entered `q`, we call the `break` statement.
 
 The `break` statement instructs the Python interpreter to exit the loop and continue running the code after the `while` statement's code block. In this case, the `else` statement is skipped--there's no winner.
 
@@ -118,7 +118,7 @@ Both `break` and `else` are optional statements in the `while` looping structure
 
 ### Step 4: Update the code example to handle the case where the user enters nothing by using the `continue` statement
 
-Let's expand our previous example. Let's make sure that the player doesn't enter an empty string. In other words, if the user selects <kbd>Enter</kbd> without entering any other keystrokes (or merely the <kbd>Spacebar</kbd>), we want to ignore that entry and prompt the user again to enter a number.
+Let's expand our previous example. Let's make sure that the player doesn't enter an empty string. In other words, if the user selects <kbd>Enter</kbd> without entering any other keystrokes (or merely selects the <kbd>Spacebar</kbd>), we want to ignore that entry and prompt the user again to enter a number.
 
 ```python
 import random 

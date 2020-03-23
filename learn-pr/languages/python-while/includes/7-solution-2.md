@@ -27,7 +27,7 @@ else:
     print(f'You guessed it in {count} tries!')
 ```
 
-This code is only *one possible solution*. You should have used the `while` statement to loop through the game logic, and used the `continue` statement to handle the case where the user doesn't enter a numeric value.
+This code is only *one possible solution*. You should have used the `while` statement to loop through the game logic and used the `continue` statement to handle the case where the user doesn't enter a numeric value.
 
 Also, you should have kept track and displayed the current guess. You should have provided helpful hints like "too high" and "too low" when the user guessed incorrectly.
 
