@@ -34,11 +34,11 @@ The first task is to enable your application to connect to the Cosmos DB account
 
 6. In the **Cosmos DB** pane, if you aren't already connected, click **Sign in to Azure**. Sign in with the same credentials you used to set up the sandbox.
 
-    ![Screenshot of Cosmos DB pane in VS Code. The user is about to sign in to Azure](../media/7-azure-sign-in.png)
+    ![Screenshot of Cosmos DB pane in VS Code. The user is about to sign in to Azure.](../media/7-azure-sign-in.png)
 
 7. Expand your Azure account, right-click your Cosmos DB account, and then click **Copy Connection String**.
 
-    ![Screenshot of Cosmos DB pane in VS Code. The user is copying the connection string for the Cosmos DB account to the clipboard](../media/7-connection.png)
+    ![Screenshot of Cosmos DB pane in VS Code. The user is copying the connection string for the Cosmos DB account to the clipboard.](../media/7-connection.png)
 
 8. Paste the connection string for your Cosmos DB account where indicated in the **connectionString** property of the **config** object in your code.
 
@@ -356,11 +356,11 @@ You'll now query the documents in the database directly, using the Azure Cosmos 
 
 1. In the **Cosmos DB** pane, expand your Azure account, expand the **\<your name or initials\>school** Cosmos DB account, expand the **SchoolDB** database, expand the **StudentCourseGrades** container, right-click **Documents**, and then click **Refresh**.
 
-    ![Screenshot of Cosmos DB pane in VS Code. The user has selected the **Refresh** command](../media/7-cosmosdb-refresh.png)
+    ![Screenshot of Cosmos DB pane in VS Code. The user has selected the **Refresh** command.](../media/7-cosmosdb-refresh.png)
 
 2. Expand the **Documents** folder. You should see only the documents **S901** and **S902**. The documents that you created in the first exercise (**S101**, and **S102**) should have been deleted:
 
-    ![Screenshot of Cosmos DB pane in VS Code showing the documents in the **StudentCourseGrades** container](../media/7-cosmosdb-documents.png)
+    ![Screenshot of Cosmos DB pane in VS Code showing the documents in the **StudentCourseGrades** container.](../media/7-cosmosdb-documents.png)
 
 3. Click the **S901** document. It should look similar to this:
 

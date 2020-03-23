@@ -1,8 +1,10 @@
 Imagine that you want to create a simple bookmark lookup service. Your service is read-only initially. If users want to find an entry, they send a request with the ID of the entry and you return the URL. The following flowchart explains the flow:
 
-![Flow diagram showing the process of finding a bookmark in our Azure Cosmos DB back-end. When the Azure function receives a request with the bookmark ID, it first checks whether the request is valid, if not an error response is generated. For valid requests, the function checks if the bookmark ID is present in the Azure Cosmos DB database, if not present an error response is generated. If the bookmark ID is found, a success response is generated.](../media/5-find-bookmark-flow-small.png)
+![Decision flow diagram illustrating the process of finding a bookmark in our Azure Cosmos DB back-end and returning a response. ](../media/5-find-bookmark-flow-small.png)
 
 When users send you a request with some text, you try to find an entry in your back-end database that contains this text as a key or ID. You return a result that indicates whether you found the entry.
+
+When the Azure function receives a request with the bookmark ID, it first checks whether the request is valid, if not an error response is generated. For valid requests, the function checks if the bookmark ID is present in the Azure Cosmos DB database, if not present an error response is generated. If the bookmark ID is found, a success response is generated.
 
 You need to store the data somewhere. In this flowchart, the data store is an Azure Cosmos DB instance. But how do you connect to a database from a function and read data? In the world of functions, you configure an *input binding* for that job. Configuring a binding through the Azure portal is straightforward. As you'll see shortly, you don't have to write code for such tasks as opening a storage connection. The Azure Functions runtime and bindings take care of those tasks for you.
 
@@ -39,7 +41,7 @@ A database account is a container for managing one or more databases. Before we 
 
 1. Deployment can take some time. So, wait for a **Deployment succeeded** message in the Notification Hub before proceeding.
 
-    ![Notification that database account deployment has completed](../media/5-db-deploy-success.PNG)
+    ![Screenshot of a notification that database account deployment has completed.](../media/5-db-deploy-success.PNG)
 
 1. Select **Go to resource** to navigate to the database account in the portal. We'll add a collection to the database next.
 
@@ -126,7 +128,7 @@ You'll add data to the new container using Data Explorer.
 
 1. When you've finished, your container should look like the following:
 
-    ![The SQL API UI in the portal, showing the list of entries you added to your bookmarks container](../media/5-db-bookmark-coll.PNG)
+    ![Screenshot of the SQL API UI in the portal, showing the list of entries you added to your bookmarks container.](../media/5-db-bookmark-coll.PNG)
 
 You now have a few entries in your **Bookmarks** container. Our scenario will work as follows. If a request arrives with, for example, "id=docs", you'll look up that ID in your bookmarks container and return the URL `https://docs.microsoft.com/azure`. Let's make an Azure function that looks up values in this container.
 
@@ -193,7 +195,7 @@ To read data from the database, you need to define an input binding. As you'll s
 
 1. If the following message appears in the **Azure Cosmos DB input** configuration UI telling you that you must install an extension, select **Install**. 
 
-    ![The default JavaScript implementation of an HTTP-triggered Azure function](../media/extension-not-installed.png)
+    ![Screenshot of error message that the integration requires the Microsoft.Azure.WebJobs.Extensions.CosmosDB extension to be installed.](../media/extension-not-installed.png)
 
     > [!NOTE]
     > It can take a while to install an extension, so please wait for installation to complete before proceeding to the next step.
