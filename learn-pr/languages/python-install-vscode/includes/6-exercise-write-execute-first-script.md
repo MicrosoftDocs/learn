@@ -6,7 +6,7 @@ Visual Studio Code is a great lightweight general-purpose code editor.  Extensio
 
 ### Step 1 - Open Extensions view
 
-You can browse through extenstions and install them from within Visual Studio Code. 
+You can browse through extensions and install them from within Visual Studio Code. 
 
 Bring up the Extensions view. Go to **View** and select **Extensions**, or select the **Extensions** icon in the Activity Bar on the left side of Visual Studio Code.
 
@@ -127,13 +127,13 @@ The most critical of these messages is this one:
 
 If you click **Select Python Interpreter**, you'll see a list of Python interpreters near the top of Visual Studio Code, in the command bar.  Select the most recent version that you have installed, making sure that it's version 3 or later.
 
-Your selection will be reflected in the Visual Studio Code status bar, near the bottom left corner.
+Your selection will be reflected in the Visual Studio Code status bar, near the lower-left corner.
 
 Alternatively, you might see this message: 
 
 "Tip: you can change the Python interpreter used by the Python extension by clicking on the Python version in the status bar".
 
-This message just lets you know that you have an interpreter selected, but you can change it if you want. You can change it by clicking the currently selected interpreter near the bottom left corner and then choosing from the list of Python interpreters displayed near the top of Visual Studio Code in the command bar.
+This message just lets you know you have an interpreter selected, but you can change it if you want. You can change it by clicking the currently selected interpreter near the lower-left corner and then choosing from the list of Python interpreters displayed near the top of Visual Studio Code in the command bar.
 
 Select **Got it!** to dismiss the tip, or select **Do not show again** to permanently disable it.
 

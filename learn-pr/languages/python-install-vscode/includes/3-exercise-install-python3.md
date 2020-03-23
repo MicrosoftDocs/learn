@@ -54,7 +54,7 @@ Select **Close**.
 
 ### Step 6 - Check your installation
 
-To confirm that Python 3 is installed correctly, type the following command at a Bash prompt and then select the <kbd>Enter</kbd> key:
+To confirm that Python 3 installed correctly, type the following command at a Bash prompt and then select the <kbd>Enter</kbd> key:
 
 ```bash
 py --version
@@ -87,14 +87,14 @@ Assuming you're running a Linux graphical user interface desktop environment, lo
 
 ### Step 2 - Update the APT package indexes
 
-Run the this command:
+Run this command:
 
 ```bash
 sudo apt-get update
 ```
 The `apt-get update` command updates the list of packages (the package indexes) from the repositories and Personal Package Archives (PPAs) that it's aware of. This update enables `apt-get` to find the latest versions of the packages that you want to install and their dependencies.
 
-The `sudo` command temporarily elevates your permissions to root, the most powerful level of the system. When you use `sudo` you'll usually be asked for your user account's password.
+The `sudo` command temporarily elevates your permissions to root, the most powerful level of the system. When you use `sudo`, you'll usually be asked for your user account's password.
 
 `apt-get update` will display all the items it will update. It might prompt you to approve by entering `y` or `yes` and then selecting the <kbd>Enter</kbd> key.
 
@@ -110,7 +110,7 @@ sudo apt-get install python3
 
 ### Step 4 - Check your installation
 
-To confirm that Python 3 is installed correctly, enter the following command at a Bash prompt and then select the <kbd>Enter</kbd> key:
+To confirm that Python 3 installed correctly, enter the following command at a Bash prompt and then select the <kbd>Enter</kbd> key:
 
 ```bash
 python3 --version
@@ -152,7 +152,7 @@ yum install rh-python36
 
 ### Step 4 - Check your installation
 
-To confirm that Python 3 is installed correctly, type the following command at a Bash prompt and then select the <kbd>Enter</kbd> key:
+To confirm that Python 3 installed correctly, type the following command at a Bash prompt and then select the <kbd>Enter</kbd> key:
 
 ```bash
 python3 --version
@@ -165,7 +165,7 @@ Python 3.6.7
 ```
 As long as the first number is `3`, Python 3 installed successfully.
 
-If the installation failed, you might see an error message. If this happens, continue on to step 5.
+If the installation failed, you might see an error message. If you do, continue to step 5.
 
 ### Step 5 - (Optional) Enable the Software Collections feature in Bash
 

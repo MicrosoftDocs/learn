@@ -7,7 +7,7 @@ In this module, you'll learn that there are two workflows for writing and runnin
 - Use the Python interpreter's interactive mode to write and run one line of Python code at a time.
 - Write Python code in a script file and then use command-line tools to run the contents of the script file.
 
-Interactive mode allows you to experiment with Python without having to perform additional setup, so it's great for learning new things. But it's limited: after you leave interactive mode, your code is gone forever.
+Interactive mode allows you to experiment with Python without having to do additional setup, so it's great for learning new things. But it's limited: after you leave interactive mode, your code is gone forever.
 
 > [!NOTE]
 > Interactive mode is sometimes referred to as "the REPL," which is an acronym for "read-eval-print loop."  Many programming languages have a REPL that can be used for this same purpose.
@@ -40,7 +40,7 @@ On the primary prompt, you can write and run one line of Python at a time. Let's
 
 ### Step 2 - Write your first line of Python code
 
-After the primary prompt (`>>>`) enter the following Python code, and then select the <kbd>Enter</kbd> key:
+After the primary prompt (`>>>`), enter the following Python code, and then select the <kbd>Enter</kbd> key:
 
 ```python
 print('Hello World!')
@@ -138,7 +138,7 @@ On the primary prompt, you can write and run one line of Python at a time. Let's
 
 ### Step 2 - Write your first line of Python code
 
-After the primary prompt (`>>>`) enter the following Python code, and then select the <kbd>Return</kbd> key:
+After the primary prompt (`>>>`), enter the following Python code, and then select the <kbd>Return</kbd> key:
 
 ```python
 print('Hello World!')

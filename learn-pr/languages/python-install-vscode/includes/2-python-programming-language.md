@@ -15,7 +15,7 @@ The key idea is that you want to use Python 3 from now on.
 
 ### How do I know if I already have Python 3 installed on my computer?
 
-It's possible you already have Python 3 installed on your computer. This can happen because sometimes an application will install Python 3 without you knowing about it.
+It's possible you already have Python 3 installed on your computer. Sometimes an application will install Python 3 without you knowing about it.
 
 At the top of this page, select the tab that represents your operating system.
 
@@ -31,7 +31,7 @@ To determine if your Windows computer already has Python 3 installed:
 ```console
 py --version
 ```
-Running `py --version` probably won't produce any output. This means that you don't have any version of Python on your computer. We'll walk through the installation of Python 3 on Windows in the next unit.
+Running `py --version` probably won't produce any output. If you don't get any output, you don't have any version of Python on your computer. We'll walk through the installation of Python 3 on Windows in the next unit.
 
 But if you see the word `Python` with a set of numbers separated by `.` characters, some version of Python is installed. Here's an example of the output you might see:
 
