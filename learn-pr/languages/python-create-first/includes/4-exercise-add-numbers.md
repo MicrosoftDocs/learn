@@ -23,18 +23,18 @@ second_number = input()
 sum = first_number + second_number
 print(sum)
 ```
-For the most part, this code example is almost identical to what you built in previous exercises.  However, we did something subtly different in this line of code:
+For the most part, this code example is almost identical to what you built in previous exercises.  However, you did something subtly different in this line of code:
 
 ```python
 sum = first_number + second_number
 ```
-Here we introduce a *temporary variable* to hold a computed value that we'll use later in the program.  In other words, we could have written the last line of code this way instead:
+Here you introduce a *temporary variable* to hold a computed value that you'll use later in the program.  In other words, you could have written the last line of code this way instead:
 
 ```python
 print(first_number + second_number)
 ```
 
-If we chose to do this, we wouldn't need to introduce the `sum` variable.  So then, why did we create the `sum` variable?  Sometimes a temporary variable can make your code more readable.  In this case, we know that the last line of code will grow more complex later in this exercise, and it might make that line shorter and more manageable to just eliminate the addition, concatenation, and printing all in a single line of code.  These are matters of judgment, and as a developer, you'll develop a style and personal preferences about what looks readable to you the more you write code.  
+If you chose to do this, you wouldn't need to introduce the `sum` variable.  So then, why did you create the `sum` variable?  Sometimes a temporary variable can make your code more readable.  In this case, you know that the last line of code will grow more complex later in this exercise, and it might make that line shorter and more manageable to just eliminate the addition, concatenation, and printing all in a single line of code.  These are matters of judgment, and as a developer, you'll develop a style and personal preferences about what looks readable to you the more you write code.  
 
 The Python community merely recommends that you make sure your code is readable for your own future sanity, or the sanity of others who will read your code in the future.  One often-recited phrase in the Python developer community is that "you'll write your code once, but will read it many times, so optimize for readability."
 
@@ -56,11 +56,11 @@ Second Number:
 54
 ```
 
-This is not the desired output.  We want our program to add two numbers to create a sum, but it appears that our program has concatenated two strings instead.  The problem is that the `input()` function returns data represented as strings, not numbers.  
+This is not the desired output.  You want your program to add two numbers to create a sum, but it appears that your program has concatenated two strings instead.  The problem is that the `input()` function returns data represented as strings, not numbers.  
 
-In Python, every value in your programs has an associated data type that describes what kind of data it is and what you can do with it.  In other words, since our two values are strings, they can only be concatenated.  If you want to perform mathematical operations on two values, they both must be numeric data types.
+In Python, every value in your programs has an associated data type that describes what kind of data it is and what you can do with it.  In other words, since your two values are strings, they can only be concatenated.  If you want to perform mathematical operations on two values, they both must be numeric data types.
 
-How can we convert a string value into an integer value, and why do we need to?
+How can you convert a string value into an integer value, and why do you need to?
 
 ### What is a data type?
 
@@ -68,7 +68,7 @@ Data types exist in all programming languages.  Most programming languages have 
 
 Each data type exists to fill a need that programmers have at some point during their career.  You'll use some data types frequently and others infrequently, if ever.
 
-If the values you're working with in your program are not of the right data type, you can convert them to the desired data type by using built-in functions.  In our scenario, we'll use the `int()` function to convert a string into an integer (whole) number.  When the value is of the correct data type, you can use it as you'd like.  For example, after you convert the string data to integer data, you can perform the addition operation on the data.
+If the values you're working with in your program are not of the right data type, you can convert them to the desired data type by using built-in functions.  In this scenario, you'll use the `int()` function to convert a string into an integer (whole) number.  When the value is of the correct data type, you can use it as you'd like.  For example, after you convert the string data to integer data, you can perform the addition operation on the data.
 
 ### Step 4 - Revise code to convert input to integers
 
@@ -83,7 +83,7 @@ sum = first_number + second_number
 print(sum)
 ```
 
-Note the key difference in this code example.  Here, we're wrapping the call to the `input()` function with a call to the `int()` function.  In other words, the Python interpreter first executes the `input()` function and, after a value is returned from the `input()` function containing user input, it's passed as an input parameter to the `int()` function, which converts the value from a string to an integer.
+Note the key difference in this code example.  Here, you're wrapping the call to the `input()` function with a call to the `int()` function.  In other words, the Python interpreter first executes the `input()` function and, after a value is returned from the `input()` function containing user input, it's passed as an input parameter to the `int()` function, which converts the value from a string to an integer.
 
 ### Step 5 - Save and execute the code
 
@@ -110,13 +110,13 @@ Traceback (most recent call last):
 ValueError: invalid literal for int() with base 10: 'bob'
 ```
 
-Here, when we reran the program, we entered a first name, *bob*, instead of a number.  When we select Enter, our program encounters a runtime error and exits.  Unlike a compile-time error that the Python compiler can catch when you attempt to run your program and fix before you distribute the program to end users, a runtime error occurs when users, through no fault of their own, experience an error when using the program.
+Here, when you reran the program, you entered a first name, *bob*, instead of a number.  When you select Enter, your program encounters a runtime error and exits.  Unlike a compile-time error that the Python compiler can catch when you attempt to run your program and fix before you distribute the program to end users, a runtime error occurs when users, through no fault of their own, experience an error when using the program.
 
-Ideally, you would first perform a check to ensure that the value users enter can be converted into a number before you actually perform a data conversion.  If users didn't enter a number, we could ignore their entry and ask them again to enter a number.  For now, acknowledge that this is a potential issue with your program. You can address it after you learn more about Python.
+Ideally, you would first perform a check to ensure that the value users enter can be converted into a number before you actually perform a data conversion.  If users didn't enter a number, you could ignore their entry and ask them again to enter a number.  For now, acknowledge that this is a potential issue with your program. You can address it after you learn more about Python.
 
 ### Step 6 - Revise the code to display a label in front of the sum value
 
-The next task is to format the last line of content to make it clear what the number `9` represents.  Ideally, we would preface that number with a label, such as *Sum :*.
+The next task is to format the last line of content to make it clear what the number `9` represents.  Ideally, you would preface that number with a label, such as *Sum :*.
 
 Update the last line of code to match the following code example:
 
@@ -143,7 +143,7 @@ TypeError: can only concatenate str (not "int") to str
 
 The problem seems to be related to concatenating a *string* to an *int*.
 
-The reason this code won't work is because Python won't implicitly convert our first_number to a string.  It looks at the literal string, then sees a `+` and is expecting another value of type string so that it can perform a concatenation.  When it encounters an integer, it throws up its hands and reports an error.
+The reason this code won't work is because Python won't implicitly convert your first_number to a string.  It looks at the literal string, then sees a `+` and is expecting another value of type string so that it can perform a concatenation.  When it encounters an integer, it throws up its hands and reports an error.
 
 To fix this, you need to perform the addition operation first, convert the sum from an integer to a string, and then perform the concatenation.
 
