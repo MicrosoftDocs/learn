@@ -52,10 +52,10 @@ Identify the subtasks of *Protect your identities with Azure AD Identity Protect
 	- What is Azure Active Directory Identity Protection?
 	- What are risks in Azure Active Directory Identity Protection?
 	- Azure Active Directory Identity Protection workflow
-	    - Illustrate a typical AADIP workflow
+	    - Illustrate a typical Azure AD Identity Prorection workflow
 
     **Knowledge check**
-    - How do you protect against identity-based risks using AADIP?
+    - How do you protect against identity-based risks using Azure AD Idenity Protection?
             - Configure a report, investigate using a policy, and then remediate.
             - Configure a report, remediate, and then configure a policy.
             - Configure a policy, investigate using a report, and remediate.
