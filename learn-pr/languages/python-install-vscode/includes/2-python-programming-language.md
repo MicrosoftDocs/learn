@@ -1,6 +1,6 @@
 As you learned in the previous module, before you can begin writing Python code, you'll need to install a few tools on your local computer. You'll need:
 
-- The Python installer, which contains the interpreter that compiles and runs your code, additional code libraries, and other useful tools for Python developers. You might already have it installed. In a moment, we'll check whether you have it installed.
+- The Python installer, which contains the interpreter that compiles and runs your code, additional code libraries, and other useful tools for Python developers. You might already have it installed. In a moment, we'll check whether you do.
 
 - A code editor, ideally one that has features that can help you write Python code. In this module, we'll walk through the installation of Visual Studio Code, one of the most popular free code editors. We'll also install the Python extension for Visual Studio Code to add enhanced functionality.
 
