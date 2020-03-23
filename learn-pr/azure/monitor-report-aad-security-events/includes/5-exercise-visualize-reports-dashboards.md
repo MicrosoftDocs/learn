@@ -8,8 +8,7 @@ In this exercise, you'll create a Log Analytics workspace in your Azure sandbox,
 
 It's straightforward to create a Log Analytics workspace:
 
-1. Log in to your Azure portal or sandbox instance.
-1. Select **all service** and in the search field enter **log analytics**.
+1. Go to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) and select **all service** and in the search field enter **log analytics**.
 
    ![screenshot showing how to find the Log Analytics features](../media/3-log-analytics.png)
 1. Select the **Log Analytics workspaces**.
@@ -21,7 +20,7 @@ It's straightforward to create a Log Analytics workspace:
    - Select **Create New**, as this workspace will be unique to the user who logs in.
    - Each workspace needs a **name** that's globally unique across any Azure Monitor subscriptions. Use the name **ContosoWorkspace**.
    - Now select the subscription this workspace will use.  
-   - Use an existing **Resource group**, and select **Contoso**.
+   - For the **Resource group** select **\<rgn\>\[sandbox Resource Group\]\<\/rgn\>**.
    - Select the nearest **Location** to you.
    - The pricing tier is automatically assigned as **pay-as-you-go** and is based on a per GB cost.
 
