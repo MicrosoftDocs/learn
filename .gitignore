@@ -14,3 +14,4 @@ _dependentPackages/
 .vs/
 .DS_Store
 Thumbs.db
+update.bat
