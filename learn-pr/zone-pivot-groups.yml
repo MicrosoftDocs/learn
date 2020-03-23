@@ -267,8 +267,8 @@ groups:
     - id: vscode
       title: Visual Studio Code
 - id: dev-env-csharp-java-cli
-  title: Development enviroment
-  prompt: Choose your development enviroment
+  title: Development environment
+  prompt: Choose your development environment
   pivots:
     - id: csharp
       title: C#
