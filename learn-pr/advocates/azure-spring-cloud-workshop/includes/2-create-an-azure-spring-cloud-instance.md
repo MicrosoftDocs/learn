@@ -47,11 +47,12 @@ RESOURCE_GROUP_NAME=spring-cloud-workshop
 SPRING_CLOUD_NAME=azure-spring-cloud-workshop
 ```
 
-With these variables set, you can now create your resource group:
+With these variables set, you can now create your resource group. In the following script, the resource group is located in the `eastus` region (using the `-l eastus` argument), but you can choose a region closer to you for better performance (use `az account list-locations` to list all available regions):
 
 ```bash
 az group create \
-    -g "$RESOURCE_GROUP_NAME"
+    -g "$RESOURCE_GROUP_NAME" \
+    -l eastus
 ```
 
 And then create the Azure Spring Cloud instance:
