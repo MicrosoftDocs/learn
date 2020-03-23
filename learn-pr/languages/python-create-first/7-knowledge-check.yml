@@ -40,7 +40,7 @@ quiz:
       explanation: "This two-word variable name adequately describes the value it is storing, and it uses the underscore character to separate the two words."
     - content: "inv-ct"
       isCorrect: false
-      explanation: "This option uses odd contractions for the words "inventory" and "count," it uses a dash instead of an underscore, and it is difficult to read.  There's a better variable name choice you can make."
+      explanation: "This option uses odd contractions for the words 'inventory' and 'count,' it uses a dash instead of an underscore, and it is difficult to read.  There's a better variable name choice you can make."
   - content: "What is the purpose of the opening and closing parentheses next to a function name?"
     choices:
     - content: "They define the order of operations, as they do in math."
