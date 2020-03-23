@@ -33,7 +33,7 @@ When you run the code, you should see the following output:
 5
 ```
 
-### Step 3: Comment out the previous code and add code to increment `count` by `3`
+### Step 3: Comment out the previous code and add code to increment count by 3
 
 You can increment by any value. Let's increment `count` by `3` until `count` is no longer `<= 20`.
 
@@ -58,7 +58,7 @@ When you run the code, you should see the following output:
 21
 ```
 
-### Step 4: Comment out the previous code and add code that decrements `count` by three
+### Step 4: Comment out the previous code and add code that decrements count by 3
 
 You can use the `-=` assignment operator to subtract a value, and then assign it to the variable. What if we want to count backwards from a number until we reach `0`?
 

@@ -8,7 +8,7 @@ Inside that folder, create a file for this exercise. For example, you might crea
 
 When it's time to run your code in the steps of the exercises, you can use the Python Tools for Visual Studio Code integration by selecting the green arrow. Or you can use a command in the integrated terminal by using techniques you learned about in previous modules.
 
-### Step 2: Add code to loop through a code block by using the `while` statement
+### Step 2: Add code to loop through a code block by using the while statement
 
 Add the following code listing to your new file:
 
@@ -53,7 +53,7 @@ It took 8 rolls to roll a 5!
 ```
 Using a `while` statement with the `random` module could be the basis for many mini-games. Let's build a slightly more interactive version in the next step.
 
-### Step 3: Use the optional statements `break` and `else`
+### Step 3: Use the optional statements break and else
 
 In certain situations, you might want to break out of the while statement prematurely. For example, you might prompt the user for input. If they enter a certain character or term, you might want to exit the loop that circumvents the normal flow.
 
@@ -116,9 +116,9 @@ You rolled the dice 3 times.
 
 Both `break` and `else` are optional statements in the `while` looping structure.
 
-### Step 4: Update the code example to handle the case where the user enters nothing by using the `continue` statement
+### Step 4: Update the code example to handle the case where the user enters nothing by using the continue statement
 
-Let's expand our previous example. Let's make sure that the player doesn't enter an empty string. In other words, if the user selects <kbd>Enter</kbd> without entering any other keystrokes (or merely selects the <kbd>Spacebar</kbd>), we want to ignore that entry and prompt the user again to enter a number.
+Let's expand our previous example. Let's make sure that the player doesn't enter an empty string. In other words, if the user selects Enter without entering any other keystrokes (or merely selects the Spacebar), we want to ignore that entry and prompt the user again to enter a number.
 
 ```python
 import random 
@@ -149,7 +149,7 @@ In this case, we perform a gated check on the value entered by the user. After w
 
 By using a gated check, we can avoid the possibility that our program creates rolls when there's no name.
 
-When you run the code and select the <kbd>Enter</kbd> key a few times without entering a name, you should see the similar output:
+When you run the code and select the Enter key a few times without entering a name, you should see the similar output:
 
 ```output
 First person to roll a 5 wins!

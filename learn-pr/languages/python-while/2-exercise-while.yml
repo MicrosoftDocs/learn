@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.languages.python-while.exercise-while
-title: Exercise - the while statement
+title: Exercise - The while statement
 metadata:
   title: Exercise - The while statement
   description: Add loops that continue to execute a code block as long as a condition evaluates to `True`.
