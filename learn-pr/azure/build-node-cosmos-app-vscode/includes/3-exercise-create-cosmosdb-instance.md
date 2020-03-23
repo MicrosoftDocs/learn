@@ -19,7 +19,7 @@ This exercise runs on your desktop computer, and uses an Azure sandbox for your 
 
 4. In the list of extensions, select the **Azure Cosmos DB** extension published by Microsoft, and click **Install**.
 
-    ![Screenshot of VS Code. The user has selected the Azure Cosmos DB extension](../media/3-install-cosmosdb-extension.png)
+    ![Screenshot of VS Code. The user has selected the Azure Cosmos DB extension.](../media/3-install-cosmosdb-extension.png)
 
 5. Wait while the extension is installed.
 
@@ -29,11 +29,11 @@ This exercise runs on your desktop computer, and uses an Azure sandbox for your 
 
 2. In the command palette, type **Azure**, and then select **Azure: Focus on Cosmos DB View**.
 
-    ![Screenshot of the command palette in VS Code. The user has selected the **Focus on Cosmos DB View** command](../media/3-command-palette-cosmosdb.png)
+    ![Screenshot of the command palette in VS Code. The user has selected the **Focus on Cosmos DB View** command.](../media/3-command-palette-cosmosdb.png)
 
     The Azure Cosmos DB pane will appear.
 
-    ![Screenshot of the Cosmos DB pane in VS Code.](../media/3-cosmosdb-pane.png)
+    ![Screenshot of the Cosmos DB pane in Visual Studio Code.](../media/3-cosmosdb-pane.png)
 
 3. In the Cosmos DB pane, click **Sign in to Azure**.
 
@@ -41,7 +41,7 @@ This exercise runs on your desktop computer, and uses an Azure sandbox for your 
 
 5. In the toolbar above the Cosmos DB pane, click **Create Account** (the **+** sign).
 
-    ![Screenshot of the Cosmos DB pane in VS Code. The user has selected the **Create Account** command](../media/3-add-comsosdb-account.png)
+    ![Screenshot of the Cosmos DB pane in VS Code. The user has selected the **Create Account** command.](../media/3-add-comsosdb-account.png)
 
     A wizard will start that prompts you for the details of the new account.
 
@@ -59,13 +59,13 @@ This exercise runs on your desktop computer, and uses an Azure sandbox for your 
 
 12. When the account has been created, in the Cosmos DB pane, expand the Concierge Subscription. Verify that the new Cosmos DB account appears:
 
-    ![Screenshot of the Cosmos DB pane in VS Code. The new Cosmos DB account is listed under the user's Azure account](../media/3-new-comsosdb-account.png)
+    ![Screenshot of the Cosmos DB pane in VS Code. The new Cosmos DB account is listed under the user's Azure account.](../media/3-new-comsosdb-account.png)
 
 ## Create a database and container
 
 1. In the Cosmos DB pane, right-click the Cosmos DB account you created and then click **Create Database**.
 
-    ![Screenshot of the Cosmos DB pane in VS Code. The user has selected the **Create Database** command for the Cosmos DB account](../media/3-cosmosdb-create-database.png)
+    ![Screenshot of the Cosmos DB pane in VS Code. The user has selected the **Create Database** command for the Cosmos DB account.](../media/3-cosmosdb-create-database.png)
 
 2. In the **Database Name** box, type **SchoolDB**, and then press Enter.
 
@@ -79,7 +79,7 @@ This exercise runs on your desktop computer, and uses an Azure sandbox for your 
 
 6. Verify that the **SchoolDB** database, containing the **StudentCourseGrades** container, appears.
 
-    ![Screenshot of the Cosmos DB pane in VS Code, showing the **SchoolDB** database and the **StudentCourseGrades** container](../media/3-database-and-container.png)
+    ![Screenshot of the Cosmos DB pane in VS Code, showing the **SchoolDB** database and the **StudentCourseGrades** container.](../media/3-database-and-container.png)
 
 ## Create and view documents
 
@@ -87,7 +87,7 @@ This exercise runs on your desktop computer, and uses an Azure sandbox for your 
 
 2. Right-click the **Documents** folder, and then click **Create Document**.
 
-    ![Screenshot of the Cosmos DB pane in VS Code. The user has selected the **Create Document** command in the **StudentCourseGrades** container](../media/3-create-document.png)
+    ![Screenshot of the Cosmos DB pane in VS Code. The user has selected the **Create Document** command in the **StudentCourseGrades** container.](../media/3-create-document.png)
 
 3. In the **Enter a document ID** box, type **S101**, and then press Enter. This will be the ID of a student document.
 
@@ -95,7 +95,7 @@ This exercise runs on your desktop computer, and uses an Azure sandbox for your 
 
     The document will be created and displayed in VS Code, in JSON format. The **id** and **StudentNumber** fields will be populated with the values you specified. The document will also contain other fields that are added automatically by Cosmos DB for its own internal use.
 
-    ![Screenshot of VS Code showing the newly created document](../media/3-new-document.png)
+    ![Screenshot of VS Code showing the newly created document.](../media/3-new-document.png)
 
 5. In the Cosmos DB pane, right-click the **Documents** folder again, and then click **Create Document**.
 
@@ -120,7 +120,7 @@ This exercise runs on your desktop computer, and uses an Azure sandbox for your 
 
 4. Right-click anywhere in the document pane, and then click **Update to Cloud**.
 
-    ![Screenshot of VS Code showing the edited document. The student has selected the **Update to Cloud** command to save the changes back to Cosmos DB](../media/3-save-changes.png)
+    ![Screenshot of VS Code showing the edited document. The student has selected the **Update to Cloud** command to save the changes back to Cosmos DB.](../media/3-save-changes.png)
 
     The document will be written back to Cosmos DB. The VS Code log window will appear. The final message in the log should be similar to the following example:
 

@@ -36,7 +36,7 @@ This exercise runs on your desktop computer, and uses an Azure sandbox for your 
 
 6. In the **Explorer** window, click the **package.json** file.
 
-    ![Screenshot of VS Code. The user is editing the **package.json** file](../media/5-edit-package.png)
+    ![Screenshot of VS Code. The user is editing the **package.json** file.](../media/5-edit-package.png)
 
 7. In the editor pane, change the **description** property to **Student and course grades maintenance**, and change the **main** property to **studentgrades.js**. The file should look like this:
 
