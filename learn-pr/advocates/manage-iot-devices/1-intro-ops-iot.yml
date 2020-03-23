@@ -2,8 +2,7 @@
 # Unit uids are manually created by the content author and should follow the format (repo).(module-short-name).(unit-short-name). Keep it easy on yourself and keep the unit-short-name the same as the unit YAML file name.
 uid: learn.manage-iot-devices.1-intro-to-ops-in-iot
 metadata:
-  title: Introducing IoT for Ops
-  description: This is an introdcution to IoT for IT Admins
+  description: This is an introduction to IoT for IT Admins
   author: lnyswonger
   ms.date: 09/24/2018
   ms.author: luken
