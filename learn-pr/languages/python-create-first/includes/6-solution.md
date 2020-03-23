@@ -36,4 +36,4 @@ Calorie content for December 7th, 2020: 1200
 If you're successful, congratulations!  Continue on to the knowledge check in the next unit.
 
 > [!IMPORTANT]
-> If you had trouble completing this challenge, it might be a good idea to review the earlier units in this module before you continue on.  The new ideas we'll discuss in the next modules depend on your understanding of the ideas that were presented so far.
+> If you had trouble completing this challenge, it might be a good idea to review the earlier units in this module before you continue on.  The new ideas we'll discuss in the next modules depend on your understanding of the ideas that we've presented so far.
