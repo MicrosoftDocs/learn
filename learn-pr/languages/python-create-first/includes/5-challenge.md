@@ -34,7 +34,7 @@ To solve the challenge, you need to perform the following tasks:
 
 ### Task 1 - Create a new file for your challenge
 
-You may call your new file anything you want.  Just make sure that you're comfortable creating a new *.py* file and adding code to it.
+You can call your new file anything you want.  Just make sure that you're comfortable creating a new *.py* file and adding code to it.
 
 ### Task 2 - Write the necessary Python code to duplicate the example output
 
