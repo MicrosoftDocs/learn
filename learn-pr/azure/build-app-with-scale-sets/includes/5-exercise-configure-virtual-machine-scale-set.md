@@ -17,11 +17,11 @@ In this exercise, you'll configure autoscaling. You'll define scale rules that s
 
 1. Select **Custom autoscale**.
 
-    ![Screenshot of the virtual machine scale set page](../media/5-enable-autoscale.png)
+    ![Screenshot of the virtual machine scale set page with a callout featuring the Custom autoscale option.](../media/5-enable-autoscale.png)
 
 1. In the **Default** scale rule, ensure that the **Scale mode** is set to **Scale based on a metric**. Then select **+ Add a rule**.
 
-   ![Screenshot of the virtual machine scale set page](../media/5-add-rule.png)
+   ![Screenshot of the virtual machine scale set page with a callout featuring the Scale based on a metric option and the Add a rule link.](../media/5-add-rule.png)
 
 1. On the **Scale rule** page, specify the following settings, and then select **Add**:
 
@@ -61,4 +61,4 @@ In this exercise, you'll configure autoscaling. You'll define scale rules that s
 
     The **Default** scale condition now contains two scale rules. One rule scales the number of instances out. Another rule scales the number of instances back in.
 
-    ![Screenshot of the virtual machine scale set page](../media/5-scale-rules.png)
+    ![Screenshot of the virtual machine scale set page with a callout featuring the rules section and the save button.](../media/5-scale-rules.png)
