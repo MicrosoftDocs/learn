@@ -10,7 +10,7 @@ In this unit you will install the Azure Cosmos DB extension for Visual Studio, a
 
 1. After installation is complete, click **Reload**.
 
-    Visual Studio Code displays the :::image type="icon" source="../media/2-setup/visual-studo-code-explorer-icon.png"::: Azure icon on the left side of the screen after the extension is installed and reloaded.
+    Visual Studio Code displays the Azure icon on the left side of the screen after the extension is installed and reloaded.
 
 ## Create an Azure Cosmos DB account in Visual Studio Code
 
@@ -21,7 +21,7 @@ In this unit you will install the Azure Cosmos DB extension for Visual Studio, a
 
     Follow the prompts to copy and paste the code provided in the web browser, which authenticates your Visual Studio Code session.
 
-1. Click the :::image type="icon" source="../media/2-setup/visual-studo-code-explorer-icon.png"::: **Azure** icon on the left menu, and then right-click **Concierge Subscription**, and click **Create Account**.
+1. Click the **Azure** icon on the left menu, and then right-click **Concierge Subscription**, and click **Create Account**.
 
     > [!NOTE]
     > If you do not see the Concierge Subscription listed, ensure you logged into Azure in Visual Studio Code using the same account used to create the sandbox. Additionally, if you have filtered your Azure subscriptions in the Azure Account extension, verify the Concierge Subscription is checked in the `> Azure: Select Subscriptions` command.

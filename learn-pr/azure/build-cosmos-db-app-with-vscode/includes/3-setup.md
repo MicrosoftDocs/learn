@@ -71,7 +71,7 @@ In this unit, you will create a basic console app using the integrated terminal,
     </configuration>
     ```
 
-1. Copy your connection string by clicking the :::image type="icon" source="../media/2-setup/visual-studo-code-explorer-icon.png"::: Azure icon on the left, expanding your Concierge Subscription, right-clicking your new Azure Cosmos DB account, and then clicking **Copy Connection String**.
+1. Copy your connection string by clicking the Azure icon on the left, expanding your Concierge Subscription, right-clicking your new Azure Cosmos DB account, and then clicking **Copy Connection String**.
 
 1. Paste the connection string into the end of the App.config file, and then copy the **AccountEndpoint** portion from the connection string into the **accountEndpoint** value in App.config.
 
