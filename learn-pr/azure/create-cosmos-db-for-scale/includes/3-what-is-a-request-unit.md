@@ -16,11 +16,11 @@ Azure Cosmos DB measures throughput using something called a **request unit (RU)
 
 ## Request unit basics
 
-A single request unit, 1 RU, is equal to the approximate cost of performing a single GET request on a 1-KB document using a document's ID. Performing a GET by using a document's ID is an efficient means for retrieving a document, and thus the cost is small. Creating, replacing, or deleting the same item requires additional processing by the service, and therefore requires more request units.
+A single request unit, one RU, is equal to the approximate cost of performing a single GET request on a 1-KB document using a document's ID. Performing a GET by using a document's ID is an efficient means for retrieving a document, and thus the cost is small. Creating, replacing, or deleting the same item requires additional processing by the service, and therefore requires more request units.
 
 The number of request units consumed for an operation changes depending on the document size, the number of properties in the document, the operation being performed, and some additional concepts such as consistency and indexing policy.
 
-When provisioning throughput you should understand how many RUs your most common operations consume. You can [obtain the request unit charge](/azure/cosmos-db/find-request-unit-charge) for any operation on your Azure Cosmos DB containers. Multiply the amount of consumed RUs of each operation by the estimated number of times each operation (write, read, update, and delete) will be executed per second. If you run several different queries on your data, you should understand how many RUs each query will consume. By summing the number of consumed RUs for each operation, you will be able to accurately estimate how many RUs to provision.
+When provisioning throughput, you should understand how many RUs your most common operations consume. You can [obtain the request unit charge](/azure/cosmos-db/find-request-unit-charge) for any operation on your Azure Cosmos DB containers. Multiply the number of consumed RUs of each operation by the estimated number of times each operation (write, read, update, and delete) will be executed per second. If you run several different queries on your data, you should understand how many RUs each query will consume. By summing the number of consumed RUs for each operation, you will be able to accurately estimate how many RUs to provision.
 
 Azure Cosmos DB guarantees that the number of RUs for a given database operation for the same dataset is deterministic. Understanding  your application's throughput requirements and the factors that affect RU charges will allow you run your application cost effectively.
 
