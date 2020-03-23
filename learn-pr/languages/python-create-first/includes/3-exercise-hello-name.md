@@ -1,8 +1,8 @@
-Programs are more interesting when we can prompt the user for input and use that input in our programs.
+Programs are more interesting when you can prompt the user for input and use that input in your programs.
 
 ## What you'll build
 
-We'll build on the preceding exercise to prompt the user for their name to deliver a customized message.
+You'll build on the preceding exercise to prompt users for their name to deliver a customized message.
 
 ### Step 1 - Comment out the code from the preceding exercise
 
@@ -31,34 +31,34 @@ print("Hello, " + name)
 
 This code example presents three new ideas:
 
-* The first line is similar to our previous exercise.  We are merely printing a new literal string to output.
+* The first line is similar to that in the preceding exercise.  You're merely printing a new literal string to output.
 
-* The second line performs three distinct operations.  To begin, we're invoking the `input()` function, which retrieves keyboard input from an end user.  When the user types information and selects Enter, the information is returned from the `input()` function.
+* The second line performs three distinct operations.  To begin, you're invoking the `input()` function, which retrieves keyboard input from an end user.  When the user types information and selects Enter, the information is returned from the `input()` function.
 
-* Some functions, such as the `print()` function, can finish their work quietly.  It sends alphanumeric text to output and exits the function without returning any value.  Other functions can return a value when they exit.  In this case, the `input()` function returns all the alphanumeric characters that the user entered.
+* Some functions, such as the `print()` function, can finish their work quietly.  The function sends alphanumeric text to output and exits without returning any value.  Other functions can return a value when they exit.  In this case, the `input()` function returns all the alphanumeric characters that the user entered.
 
-What should we do with the value returned from the `input()` function?  We need to temporarily store it for use in the next lines of code.  To do that, we create a variable.  
+What should you do with the value returned from the `input()` function?  You need to temporarily store it for use in the next lines of code.  To do that, you create a variable.  
 
 ### Create a variable
 
-In Python, you can create a variable by merely choosing a variable name that isn't already in use and isn't one of Python's special keywords.  In this case, we create a variable called `name` that will store the alphanumeric characters that are returned from the `input()` function.
+In Python, you can create a variable by merely choosing a variable name that isn't already in use and isn't one of Python's special keywords.  In this case, you create a variable called `name` that will store the alphanumeric characters that are returned from the `input()` function.
 
-Now that we've defined a variable, we need to assign a value to it.  The equal sign (**=**) symbol is the assignment operator.  We're assigning the value retrieved from the `input()` function to the new `name` variable.
+Now that you've defined a variable, you need to assign a value to it.  The equal sign (**=**) symbol is the assignment operator.  You're assigning the value retrieved from the `input()` function to the new `name` variable.
 
-To recap line 2, we've performed three operations:
-- Call the `input()` function to retrieve user input.
-- Create a new variable called `name`.
-- Perform an assignment, setting `name` to the value returned from `input()`.
+To recap line 2, you've performed three operations:
+- Called the `input()` function to retrieve user input.
+- Created a new variable called `name`.
+- Performed an assignment, setting `name` to the value returned from `input()`.
 
 After this line of code is executed, the `name` variable holds the value that was entered by the user.
 
-In the third line, we want to print a message that combines a literal string and the variable from line 2.  Here again, we call the `print` function and pass a literal string `"Hello, "`.  But we also use the plus sign (**+**) symbol and the variable name.  Combining two or more strings is called *string concatenation*.  We want to append the literal string to the variable.  When the plus sign (**+**) symbol is used in this context, the Python compiler knows that we want to combine these two values into a new value.
+In the third line, you want to print a message that combines a literal string and the variable from line 2.  Here again, you call the `print` function and pass a literal string `"Hello, "`.  But you also use the plus sign (**+**) symbol and the variable name.  Combining two or more strings is called *string concatenation*.  You want to append the literal string to the variable.  When the plus sign (**+**) symbol is used in this context, the Python compiler knows that you want to combine these two values into a new value.
 
 After the new string value is created, it's passed to the `print` function.
 
 ### Step 3 - Save and execute the program by using the py utility
 
-To see our program in action, we could use the green arrow icon in Visual Studio Code, as we did in the preceding exercise.  But this time, to demonstrate that there are many different ways to run your code, let's use the Visual Studio Code terminal.
+To see your program in action, you could use the green arrow icon in Visual Studio Code, as you did in the preceding exercise.  But this time, to demonstrate that there are many different ways to run your code, let's use the Visual Studio Code terminal.
 
 In the terminal window below the code editor, place your mouse cursor on the command prompt and type the following command, and then select Enter:
 
@@ -82,7 +82,7 @@ Keywords are commands built into the programming language that have a special me
 
 ### What are operators?
 
-An operator is a character that instructs the Python compiler to perform some special operation.  We've already seen several operators:
+An operator is a character that instructs the Python compiler to perform some special operation.  You've already seen several operators:
 
 - The opening and closing parentheses `()` are function invocation operators (when placed to the right of a function name).
 - The equal sign `=` is the assignment operator, used to assign a value to a variable.
