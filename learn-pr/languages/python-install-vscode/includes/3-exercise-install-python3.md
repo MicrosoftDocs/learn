@@ -15,8 +15,8 @@ Also, these instructions are specifically for Windows 10. If you're using a prev
 
 ### Step 1 - Download the Python 3.8 installer for Windows
 
-Open a web browser and go to
-[https://www.python.org/downloads/](https://www.python.org/downloads/?azure-portal=true).
+Open a web browser and go to the
+[Python download page](https://www.python.org/downloads/?azure-portal=true).
 
 Select the **Download Python 3.*x*** button. When your browser prompts you to save the file, note the download path, and then save the file to your local hard drive.  Most web browsers save downloaded files into your Downloads folder.
 
@@ -207,7 +207,7 @@ Follow these steps to download the Python installer from the Python website.
 
 ### Step 1: Go to the Python download website and download the installer
 
-Go to [https://www.python.org/downloads/](https://www.python.org/downloads/?azure-portal=true).
+Go to the [Python download page](https://www.python.org/downloads/?azure-portal=true).
 
 The website should automatically direct you to a page specifically for Mac OS X. Select the **Download Python 3.8.0** button.
 
