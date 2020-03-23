@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.Authoring.Azure.Resource.Manager.Templates
+metadata:
+  title: Authoring Azure Resource Manager templates from Scratch
+  description: This Module will teach you how to create a template and deploy it to Azure from scratch.
+  ms.date: 03/23/2020
+  author: pierreroman
+  ms.author: pierrer
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title:  Authoring Azure Resource Manager templates from scratch.
+summary: Learn to write Resource Manager templates enabling you to deploy your infrastructure and solutions faster and more reliably.
+abstract: |
+  In this module, you will:
+  - Write an Azure Resource Manager template from scratch.
+  - You will add parameters, variables, resources and functions to your template.
+  - Customize your Resource Manager template to configure a basic web server on your VM
+prerequisites: |
+  - Experience using Bash and the Azure CLI
+  - Experience working with Azure resources and resource groups
+iconUrl: /learn/achievements/build-azure-vm-templates.svg
+levels:
+- beginner
+roles:
+- administrator
+- solution-architect
+products:
+- azure
+- azure-clis
+- azure-virtual-machines
+- azure-resource-manager
+units:
+- learn.authoring-arm-templates.1-introduction
+- learn.authoring-arm-templates.10-Add-variables-to-templates
+- learn.authoring-arm-templates.11-Add-variables-to-templates-Exercise
+- learn.authoring-arm-templates.12-Use-parameter-file-Exercise
+- learn.authoring-arm-templates.12-Use-parameter-file
+- learn.authoring-arm-templates.13-Summary
+- learn.authoring-arm-templates.2-Create-first-template
+- learn.authoring-arm-templates.3-Create-first-template-Exercise
+- learn.authoring-arm-templates.4-Add-resources-to-templates
+- learn.authoring-arm-templates.5-Add-resources-to-templates-Exercise
+- learn.authoring-arm-templates.6-Add-parameters-to-templates
+- learn.authoring-arm-templates.7-Add-parameters-to-templates-Exercise
+- learn.authoring-arm-templates.8-Template-functions
+- learn.authoring-arm-templates.9-Template-functions-Exercise
+badge:
+  uid: learn.Authoring-Azure-Resource-Manager-Templates
