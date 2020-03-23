@@ -69,7 +69,7 @@ To create a new project from Visual Studio 2019, go to the New Project dialog bo
 
 The structure of the solution looks like this:
 
-![Screenshot of Solution Explorer showing the app projects created by the blank Xamarin.Forms template collapsed with only project names visible: App1, App1.Android, and App1.iOS](../media/2-solution-with-project-names.png)
+![Screenshot of Solution Explorer showing a new blank Xamarin.Forms app collapsed to project names: App1, App1.Android, and App1.iOS.](../media/2-solution-with-project-names.png)
 
 We notice three projects are created in the solution. They all have the same root name, but two of them have a suffix (".iOS" or ".Android"). Those projects compile to executable programs, one for each platform. These are sometimes called *head projects*. The third project is used by the executables, and it's where we'll put all the code and markup we want them to have in common. In a typical Xamarin.Forms solution, almost all of our work will happen in this third project.
 
@@ -77,7 +77,9 @@ We notice three projects are created in the solution. They all have the same roo
 
 Taking a closer look at the head projects, we can see that iOS and Android have different basic constructions. For instance, iOS has a Main.cs and an AppDelegate.cs, but Android has a MainActivity.cs. The reason they're different is that the iOS project's construction uses the same building blocks as any iOS project, including Objective C or Swift projects. The Android project uses the same building blocks as a Java or Kotlin Android project. Fundamentally, these _are_ just an Android app and an iOS app (using Xamarin.iOS and Xamarin.Android, respectively, to expose their APIs as C# classes).
 
-![Screenshot showing platform-specific head projects, with project file structure and contents expanded](../media/2-head-projects-with-contents.png)
+:::image type="complex" source="../media/2-head-projects-with-contents.png" alt-text="Screenshot showing platform-specific head projects, with project file structure and contents expanded.":::
+    The Android app, App1.Android, includes an Assets folder, Resources folder, and MainActivity.cs. The iOS app, App1.iOS, includes Asset Catalogs, Native References, Resources, AppDelegate.cs, and Entitlements.plist.
+:::image-end:::
 
 If we look at the main entry point for each project type, we see that each one initializes Xamarin.Forms, and explicitly gives our Xamarin.Forms app the ability to control how the UI is created.
 

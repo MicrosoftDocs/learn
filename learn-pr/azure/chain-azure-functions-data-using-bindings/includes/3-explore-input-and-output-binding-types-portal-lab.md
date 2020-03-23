@@ -2,13 +2,13 @@ The following is a high-level illustration of what we're going to build in this 
 
 ::: zone pivot="javascript"
 
-![An illustration of default HTTP trigger, showing HTTP request and response as well as respective req and res binding parameters](../media/3-default-http-trigger-visual-small.png)
+![Illustration of default HTTP trigger, showing HTTP request and response as well as respective req and res binding parameters.](../media/3-default-http-trigger-visual-small.png)
 
 ::: zone-end
 
 ::: zone pivot="powershell"
 
-![An illustration of default HTTP trigger, showing HTTP request and response as well as respective req and res binding parameters](../media/3-default-http-trigger-implementation-pwsh.png)
+![Illustration of default HTTP trigger, showing HTTP request and response as well as respective req and res binding parameters.](../media/3-default-http-trigger-implementation-pwsh.png)
 
 ::: zone-end
 
@@ -41,11 +41,11 @@ Let's create a function app that we'll use throughout this entire module. A func
 
 1. Select the Notification icon in the upper-right corner of the portal and watch for a **Deployment in progress** message similar to the following message.
 
-    ![Notification that function app deployment is in progress](../media/3-func-app-deploy-progress-small.PNG)
+    ![Screenshot of a notification that function app deployment is in progress.](../media/3-func-app-deploy-progress-small.PNG)
 
 1. Deployment can take some time. So, stay in the notification hub and  watch for a **Deployment succeeded** message similar to the following message.
 
-    ![Notification that function app deployment has completed](../media/3-func-app-deploy-success-small.PNG)
+    ![Screenshot of a notification that function app deployment has completed.](../media/3-func-app-deploy-success-small.PNG)
 
  1. Once the function app is deployed, go to **All resources** in the portal. The function app will be listed with type **App Service** and has the name you gave it. Select the function app from the list to open it.
 
@@ -77,11 +77,11 @@ Let's create a function app that we'll use throughout this entire module. A func
 
 1. Select the Notification icon in the upper-right corner of the portal and watch for a **Deployment in progress** message similar to the following message.
 
-    ![Notification that function app deployment is in progress](../media/3-func-app-deploy-progress-small.PNG)
+    ![Screenshot of a notification that function app deployment is in progress.](../media/3-func-app-deploy-progress-small.PNG)
 
 1. Deployment can take some time. So, stay in the notification hub and  watch for a **Deployment succeeded** message similar to the following message.
 
-    ![Notification that function app deployment has completed](../media/3-func-app-deploy-success-small.PNG)
+    ![Screenshot of a notification that function app deployment has completed.](../media/3-func-app-deploy-success-small.PNG)
 
  1. Once the function app is deployed, go to **All resources** in the portal. The function app will be listed with type **App Service** and has the name you gave it. Select the function app from the list to open it.
 
@@ -118,7 +118,7 @@ Now that we have a function app, it's time to create a function. A function is a
 
 As you can see from this exercise so far, you have to select a trigger type when you create a function. Every function has a single trigger. In this example, we're using an HTTP trigger, which means that our function starts when it receives an HTTP request. The default implementation, shown in the following screenshot in JavaScript, responds with the value of the parameter *name* it received in the query string or body of the request. If no string was provided, the function responds with a message that asks whomever is calling to supply a name value.
 
-![The default JavaScript implementation of an HTTP-triggered Azure function](../media/3-default-http-trigger-implementation-small.PNG)
+![Screenshot of the default JavaScript implementation of an HTTP-triggered Azure function.](../media/3-default-http-trigger-implementation-small.PNG)
 
 All of this code is in the **index.js** file in this function's folder. 
 
@@ -182,7 +182,7 @@ Now that we have a function app, it's time to create a function. A function is a
 
 As you can see from this exercise so far, you have to select a trigger type when you create a function. Every function has a single trigger. In this example, we're using an HTTP trigger, which means that our function starts when it receives an HTTP request. The default implementation, shown in the following screenshot in PowerShell, uses the `Push-OutputBinding` cmdlet to respond with the value of the parameter *name* it received in the query string or body of the request. If no string was provided, the function responds with a message that asks whomever is calling to supply a name value.
 
-![The default PowerShell implementation of an HTTP-triggered Azure function](../media/3-default-http-trigger-implementation-pwsh.png)
+![Screenshot of the default PowerShell implementation of an HTTP-triggered Azure function.](../media/3-default-http-trigger-implementation-pwsh.png)
 
 All of this code is in the **run.ps1** file in this function's folder. 
 
@@ -226,7 +226,7 @@ As you can see, this function has a trigger binding named **Request** of type `h
 
 1. Select the **Integrate** menu item to open the integration tab for our function. If you've been following along with this unit, the integrate tab should look very similar to the following screenshot.
 
-    ![Screenshot showing integrate UI or tab.](../media/3-func-integrate-tab-small.PNG)
+    ![Screenshot showing the integrate tab for our function.](../media/3-func-integrate-tab-small.PNG)
 
     > [!NOTE]
     > We have already defined a trigger and an output binding, as shown in the screenshot. You can see that we can't add more than _one_ trigger. In fact, to change the trigger for our function we would have to first delete the trigger and create a new one. However, the **Inputs** and **Outputs** sections of this UI display a plus sign (+) to add more bindings so we can accept more than one input value and emit more than one output value.

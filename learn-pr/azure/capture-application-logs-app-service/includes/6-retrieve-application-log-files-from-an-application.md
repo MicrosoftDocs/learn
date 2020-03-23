@@ -51,25 +51,23 @@ You can also access KUDU from the Azure portal. On the app pane, in the **Develo
 To download the log files from Windows apps:
 
 1. Click **Debug Console**, and then click **CMD**.
-     ![Using Kudu to access log location for Windows apps](../media/6-kudu-windows-logs-cmd.png)
+     ![Screenshot of Kudu's environment page with a callout highlighting the Debug Console cmd menu option.](../media/6-kudu-windows-logs-cmd.png)
 1. Then, in the file explorer section, click **LogFiles**, and then click the **Download** button for the **Application** folder; the logs will be downloaded to your computer as **Application.zip**.
 
-   ![Using Kudu to download logs from Windows apps](../media/6-kudu-windows-logs-download.png)
+   ![Screenshot of Kudu's user interface displaying file and folder listing with a highlight next to the download icon for the Application folder.](../media/6-kudu-windows-logs-download.png)
 
 
 
 For Linux apps, click the download link on the Environment page.
 
-  ![Using Kudu to download logs from Linux apps](../media/6-kudu-linux-logs.png)
+  ![Screenshot of Kudu's user environment page with a callout highlighting the link to download a zip file containing the current Docker logs.](../media/6-kudu-linux-logs.png)
 
 
 ### Azure Storage Explorer
 To access Windows logs saved to an Azure Blob Storage container, you can use the Azure portal, and **Storage Explorer** to view and download the contents of the log file container. Open the relevant year, month, date, and hour folder, then double-click a CSV file to download it to your computer. 
 
 
-
-![Using Storage Explorer to view Windows app logs](../media/6-blob-logs.png)
-
+![Screenshot of the Storage Explorer to download Windows app logs from blob containers.](../media/6-blob-logs.png)
 
 
 If you have Microsoft Excel on your computer, the log file will automatically open as a worksheet; otherwise, you can open the file using a text editor such as Notepad.
