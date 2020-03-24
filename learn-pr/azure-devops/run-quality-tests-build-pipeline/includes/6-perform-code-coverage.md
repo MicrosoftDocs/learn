@@ -108,7 +108,7 @@ Before Mara and Andy write any pipeline code, they decide to try things manually
 
     You see the coverage report summary.
 
-    ![Screnshot of local code coverage report summary showing 20.9 percent line coverage.](../media/6-coverage-report-summary.png)
+    ![Screenshot of local code coverage report summary showing 20.9 percent line coverage.](../media/6-coverage-report-summary.png)
 
 1. Scroll to the bottom of the page to see a coverage breakdown by class type.
 
