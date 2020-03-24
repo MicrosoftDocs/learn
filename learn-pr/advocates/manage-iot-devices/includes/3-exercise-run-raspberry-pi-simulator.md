@@ -5,7 +5,6 @@ simulated weather data and via the Azure IoT Hub.
 
 While this exercise is being conducted in a simulated environment, the application running on the simulated device can be transferred to a real device in the future.
 
-
 ## Create an IoT hub
 
 Azure IoT Hub provides the features and an extensibility model that enable device and back-end developers to build robust device management solutions. Devices range from constrained sensors and single purpose microcontrollers, to powerful gateways that route communications for groups of devices. In addition, the use cases and requirements for IoT operators vary significantly across industries. Despite this variation, device management with IoT Hub provides the capabilities, patterns, and code libraries to cater to a diverse set of devices and end users.
@@ -39,16 +38,6 @@ In order to start collecting the data from the Raspberry Pi simulator, you need 
 1. Review your IoT hub information, then click **Create**. Your IoT hub might take a few minutes to deploy. 
 
 1. Click **Go to resource**, when the deployment is complete.
-
-<!--STOPPED HERE-->
-<!--
-Now that you have created an IoT hub, it's time to locate the important information that you use to connect devices and applications to your IoT hub. In your IoT hub navigation menu, open **Shared access policies**. Select the **iothubowner** policy, and then copy the **Connection string---primary key** of your IoT hub. For more information, see [Control access to IoT Hub](https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-security).
-
-> [!NOTE]
-> You do not need this iothubowner connection string for this set-up exercise. However, you may need it for some of the tutorials or different IoT scenarios after you complete this set-up.
-
-![Get your IoT hub connection string](../media/a4b41e6ea46ccbef653c411a9829610c.png)
--->
 
 ## Register a device
 
