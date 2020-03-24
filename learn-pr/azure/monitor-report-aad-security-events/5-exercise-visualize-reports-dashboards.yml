@@ -9,8 +9,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Exercise - Set up reports and dashboards to visualize the information
-durationInMinutes: 10
-interactive: bash
 azureSandbox: true
 content: |
   [!include[](includes/5-exercise-visualize-reports-dashboards.md)]

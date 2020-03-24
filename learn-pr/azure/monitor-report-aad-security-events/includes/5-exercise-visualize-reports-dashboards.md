@@ -4,9 +4,12 @@ You want to implement a dashboard for the security team so they see the potentia
 
 In this exercise, you'll create a Log Analytics workspace in your Azure sandbox, using the Azure portal.  Then you'll direct the audit and sign-in log files to your workspace.  Next, you'll download and install the prebuilt user sign-in and audit log views from GitHub. Finally, you'll create a dashboard with a report built into it from the workspace that your security team will use.
 
-## Create a Log Analytics workspace
+> [!NOTE]
+> This exercise is optional. If you don't have an Azure account, you can read through the instructions so you understand how to use log analytics and dashboards.
+>
+> If you want to complete this exercise but you don't have an Azure subscription or prefer not to use your own account, you will need to create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
 
-It's straightforward to create a Log Analytics workspace:
+## Create a Log Analytics workspace
 
 1. Go to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) and select **All services** and in the search field type **log analytics**.
 
@@ -18,9 +21,8 @@ It's straightforward to create a Log Analytics workspace:
 1. To create a new Log Analytics workspace, you'll need to supply some details.
 
    - Select **Create New**, as this workspace will be unique to the user who logs in.
-   - Each workspace needs a **name** that's globally unique across any Azure Monitor subscriptions. Use the name **ContosoWorkspace**.
-   - Now select the subscription this workspace will use.  
-   - For the **Resource group** select **\<rgn\>\[sandbox Resource Group\]\<\/rgn\>**.
+   - Each workspace needs a **name** that's globally unique across any Azure Monitor subscriptions. Use the name **ContosoWorkspace** and append unique characters.  
+   - For the **Resource group** select **Create new**, and use a unique resource name.
    - Select the nearest **Location** to you.
    - The pricing tier is automatically assigned as **pay-as-you-go** and is based on a per GB cost.
 
