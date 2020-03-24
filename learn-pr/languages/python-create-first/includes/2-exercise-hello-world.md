@@ -8,7 +8,7 @@ In this unit, you start building a program that prints a message to screen by us
 
 First, on your computer, create a folder structure where you'll store your work.  
 
-We recommend that you create a single folder to contain all of the exercises for each module.  You can call this new parent folder anything you like, such as *python* or *learn*.  Use the tools and techniques you're comfortable with, and create it in a place on your hard drive that's easy to find.  
+We recommend that you create a single folder to contain all of the exercises for each module.  You can call this new parent folder anything you like, such as *python* or *learn*.  Use the tools and techniques you're comfortable with, and create the folder in a place on your hard drive that's easy to find.  
 
 Second, in this top-level folder, create a subfolder for the exercise files you'll work with in this module.  You can call the new child folder anything you like, such as *hello*.
 
@@ -90,14 +90,14 @@ Traceback (most recent call last):
 NameError: name 'Print' is not defined
 ```
 
-As discussed earlier, you must be precise when writing code.  Python is case-sensitive, which means that *print* and *Print* are two different things, and there's no function called `Print` with an uppercase *P*.
+As discussed earlier, precision is critical when you're writing code.  Python is case-sensitive, which means that *print* and *Print* are two different things. There's no function called `Print` with an uppercase *P*.
 
 Fortunately, Visual Studio Code can help you spot mistakes like this before you run the code.  You should see a red squiggly line under *Print*.  If you hover over the word, a tooltip displays the phrase "Undefined variable 'Print'".  The specific message requires more explanation, but for now you can at least spot potential problems in your code.
 
 ![The word "Print" with a red squiggly line](../media/2-exercise-hello-world-01.png)
 
 > [!Important]
-> You must save the changes to your file to remove the red squiggly line.
+> You must save the changes to your file to display the red squiggly line.
 
 You can use this same technique to locate other types of issues in your code.  For example, let's say you transposed the order of certain characters, such as the closing parenthesis and closing quotation mark, as shown here:
 
@@ -114,20 +114,20 @@ SyntaxError: unexpected EOF while parsing
 ```
 Here again, the error message might not be meaningful yet. After you save the file, Visual Studio Code adds a red squiggly line under the closing quotation mark, which should at least provide a useful clue as you self-diagnose the error.
 
-This doesn't work because it doesn't follow the syntax rules of Python.  Syntax in code is similar to grammar in a human-language.  We'll explain why this violates Python syntax rules in just a moment.
+This doesn't work because it doesn't follow the syntax rules of Python.  Syntax in code is similar to grammar in human language.  We'll explain why this violates Python syntax rules in just a moment.
 
-Some errors are easy to spot and easy to fix.  Others require a bit more effort.  Let's suppose you used a set of square brackets instead of a set of parenthesis, as shown here:
+Some errors are easy to spot and easy to fix.  Others require a bit more effort.  Let's suppose you used square brackets instead of parentheses, as shown here:
 
 ```python
 print["Hello World!"]
 ```
-After you save the file, a red squiggly line appears under *print*.  This time, when you hover over the red squiggly line, you see a large dialog with additional information.  
+After you save the file, a red squiggly line appears under *print*.  This time, when you hover over the red squiggly line, you see a paragraph with additional information.  
 
 ![A message containing reference information about the print command and an error message](../media/2-exercise-hello-world-02.png)
 
 We'll discuss what this information means in another module, but we can skip over it for now because it's a bit advanced at this point.  The main takeaway is that there's a problem with the code.
 
-When you run the program, you see the following error message in the output.
+When you run the program, the following error message appears in the output:
 
 ```output
 Traceback (most recent call last):
@@ -143,11 +143,11 @@ You gain both knowledge and a keen eye through experience.  It may seem daunting
 
 ## How did your program work?
 
-You invoked a *function* named `print`.  A function contains code that works together to complete a single task in a software system.  The function is given a name so that you can call it by its name to invoke its functionality.  The `print` function's only job is to send information to output, and that output can be displayed via a command line or terminal window.
+You invoked a *function* named `print`.  A function contains code that works together to complete a single task in a software system.  The function is given a name so that you can call it by that name to invoke its functionality.  The `print` function's only job is to send information to output, and that output can be displayed via a command line or terminal window.
 
-To invoke a function, you use a set of parentheses called the function invocation operators.  This is your instruction to the Python interpreter that you want it to execute that function for us.
+To invoke a function, you use a set of parentheses called function invocation operators.  The set of parentheses is your instruction to the Python interpreter that you want it to execute that function for us.
 
-Later, you'll learn how to create your own functions.  At first, you'll use functions that the creators of Python have created to help you write applications more quickly.  Also, you'll learn how to apply third-party libraries that dramatically expand the functionality available to your Python programs to perform a vast array of tasks.
+Later, you'll learn how to create your own functions.  At first, you'll use functions that the creators of Python have created to help you write applications more quickly.  Also, you'll learn how to apply third-party libraries that dramatically expand the functionality that's available to your Python programs to perform a vast array of tasks.
 
 Some functions allow you to pass an argument, which the function can use to complete its task.  In this case, you sent the `print` function a *literal string* containing your message, `Hello World!`.  You pass arguments inside of the function invocation operators.
 
