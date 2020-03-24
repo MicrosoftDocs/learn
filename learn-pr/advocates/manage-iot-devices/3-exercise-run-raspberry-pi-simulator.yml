@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.manage-iot-devices.3-connect-device
+uid: learn.manage-iot-devices.3-exercise-run-raspberry-pi-simulator
 metadata:
   description: Setting up IoT Hub and connecting your first device.
   author: lnyswonger
@@ -8,8 +8,8 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-azureSandbox: true
 title: Setting up IoT Hub and connecting your first device
 durationInMinutes: 20
+azureSandbox: true
 content: |
-  [!include[](includes/3-connect-device.md)]
+  [!include[](includes/3-exercise-run-raspberry-pi-simulator.md)]
