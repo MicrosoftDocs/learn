@@ -1,12 +1,14 @@
-Most collections are iterable, meaning, they have the internal implementation that allows you to iterate through each item in the collection (in this module, a Python list) one by one using a `for` statement.
+Most collections are *iterable*. They have an internal implementation that allows you to iterate through each item in the collection one by one, by using a `for` statement. In this module, we'll iterate through a Python list.
 
-### Step 1 - Add a new file for this exercise to the working folder.
+## Step 1 - Add a file for this exercise
 
-Assuming you're continuing from the previous unit, use the techniques you learned in previous modules to add a new code file in the current folder dedicated to this module.  For example, you might create a file named `exercise2.py`.
+If you're continuing from the previous unit, then use the techniques that you learned in previous modules to add a new code file in this module's folder.  For example, you might create a file named *exercise2.py*.
 
-### Step 2 - Add code to use the `in` and `not in` to test a value for inclusion in a list.
+## Step 2 - Test a value for inclusion in a list
 
-The `in` keyword will allow us to iterate through each item in a list.  However, we can use it as a stand-alone operator to test whether an item belongs to a list.  What if we want to know if a certain number is part of a list of numbers?  We could iterate through each number, then use an `if` statement to see if we find the value.  A better approach would be to simply use the `in` or `not in` operators to test the item for inclusion.
+The `in` keyword allows us to iterate through each item in a list. But we can also use it as a standalone operator to test whether an item belongs to a list.  
+
+What if we want to know if a certain number is part of a list of numbers?  We can iterate through each number and then use an `if` statement to see if we find the value. But a better approach uses the `in` or `not in` operators to test the item for inclusion.
 
 Add the following code to your new code file:
 
@@ -28,18 +30,18 @@ False
 True
 ```
 
-### Step 3 - Comment out the code from the previous step, then add code to loop through a list.
+## Step 3 - Loop through a list
 
-The `for` statement allows us to iterate through each item in a list.  There are several parts to the `for` statement:
-- the `for` keyword
-- the variable name that will hold the next item in the list.  This variable will be available in the code block below.
-- the `in` keyword
-- the variable name of the list
-- the colon symbol `:`, which terminates the statement
+The `for` statement allows us to iterate through each item in a list.  The `for` statement includes:
+- The `for` keyword.
+- The variable name that will hold the next item in the list.  This variable is available in the code block that follows.
+- The `in` keyword.
+- The variable name of the list.
+- The colon symbol (`:`), which ends the statement.
 
-What comes after the `for` statement is just as important.  You define a code block that will be executed for each item in the list.  The current item's value will be set to a variable in the `for` statement, and will be available in the body of the code block.
+The part after the `for` statement is just as important. There, you define a code block that will be executed for each item in the list.  The current item's value is set to a variable in the `for` statement. It's available in the body of the code block.
 
-Comment out the code from the previous step and add the following code listing:
+Comment out the code from the previous section. Then add the following code listing:
 
 ```python
 cities = ["Chicago", "London", "Tokyo"]
@@ -47,7 +49,7 @@ cities = ["Chicago", "London", "Tokyo"]
 for city in cities:
   print(city)
 ```
-In this example, we merely print each item in the list, one per line.  However, you can see the basic structure of the `for` loop and how all the parts work.
+In this example, we merely print each item in the list, one item per line. But you can see the basic structure of the `for` loop and how all of the parts work.
 
 When you execute the code, you should see the following output:
 
@@ -57,13 +59,13 @@ London
 Tokyo
 ```
 
-### Step 4 - Comment out the previous code and add code to break out of a `for` loop.
+## Step 4 - Break out of a `for` loop
 
-The `for` statement has similar features to the `while` statement that we learned about in another module.
+The `for` statement has features similar to the `while` statement, which we explored in another module.
 
-The `break` statement allows you to break out of the `for` iteration.  In this example, we'll break out of the loop once we find a value that exceeds a specific threshold.  This allows us to filter the original list.
+The `break` statement allows you to break out of the `for` iteration.  In this example, we break out of the loop after we find a value that exceeds a specific threshold. After we break out, we can filter the original list.
 
-Comment out the code from the previous step and add the following code listing:
+Comment out the code from the previous section. Then add the following code listing:
 
 ```python
 numbers = [42, 77, 16, 101, 23, 8, 4, 15, 55]
@@ -85,11 +87,11 @@ When you execute the code, you should see the following output:
 42
 ```
 
-### Step 6 - Comment out the previous code and add code that utilizes an `else` statement.
+## Step 5 - Use an `else` statement
 
-If you want to execute code only after each item in the list has been processed successfully (and you did not break out of the loop), then you can use the `else` statement.  In the example below, we'll only print the phrase `No numbers greater than 90` if each number in our random list of five numbers is below the value `90`.
+If you didn't break out of the loop and you want to execute code only after each item in the list has been processed, then you can use the `else` statement.  In the following example, we'll print the phrase `No numbers greater than 90` only if each number in our random list of five numbers is below the value `90`.
 
-Comment out the code from the previous step and add the following code listing:
+Comment out the code from the previous section. Then add the following code listing:
 
 ```python
 import random
@@ -108,7 +110,7 @@ else:
 
 print('Complete')
 ```
-When you execute the code, you should see the following output (given that the numbers generated will be random):
+When you execute the code, you might see something like the following output. Your output will differ because the generated numbers are random.
 
 ```output
 82
@@ -119,7 +121,7 @@ When you execute the code, you should see the following output (given that the n
 No numbers greater than 90
 ```
 
-However, if one of the random numbers is 90 or greater, you would see the following output (given that the numbers generated will be random):
+If one of the random numbers is 90 or greater, you see something like the following output. Again, your output will differ because the generated numbers are random.
 
 ```output
 37
@@ -131,13 +133,13 @@ Found at least one number greater than 90
 Complete
 ```
 
-### Step 7 - Comment out the previous code and add code that utilizes a `continue` statement.
+## Step 6 - Use a `continue` statement
 
-Use the `continue` statement inside of a code block to skip the remainder of the logic and move to the next item in a list in a `for` statement.
+Use the `continue` statement in a code block to skip the remaining logic and move to the next item in a list in a `for` statement.
 
-In this step, we'll build a short program that filters out a list.  The list contains both `int` and `string`, and we want to create a new list that only contains the `str` values.  We use the `continue` statement to move to the next item in the list instead of adding the current item to the filtered list.
+In this section, we build a short program that filters out a list.  The list contains both `int` and `string`. We want to create a new list that contains only the `str` values.  We use the `continue` statement to move to the next item in the list instead of adding the current item to the filtered list.
 
-Comment out the code from the previous step and add the following code listing:
+Comment out the code from the previous section. Then add the following code listing:
 
 ```python
 values = ["laptop", 7, "phone", 3, "dslr", 5]
@@ -157,13 +159,13 @@ laptop
 phone
 dslr
 ```
-### Step 8 - Comment out code in previous steps and add code to create nested for loops.
+## Step 7 - Create nested `for` loops
 
-Nesting one `for` loop inside of another `for` loop is a common pattern when you want to generate a combination of values.
+Nesting one `for` loop inside of another `for` loop is a common way to generate a combination of values.
 
-Suppose we were building a playing card program.  We would want to create one card for each combination of a suit and rank.  We could hardcode all 52 values in a deck of cards, or we could generate a deck of cards by creating a list of suits and a list of ranks, then using a nested `for` loop to generate all the cards.
+Suppose we're building a program for card playing. We want to create one card for each combination of a suit and a rank.  We could hard-code all 52 values in a deck of cards. Or we could generate a deck of cards by first creating a list of suits and a list of ranks and then using a nested `for` loop.
 
-Comment out the code from the previous step and add the following code listing:
+Comment out the code from the previous section. Then add the following code listing:
 
 ```python
 suits = ["Hearts", "Spades", "Clubs", "Diamonds"]
@@ -230,13 +232,13 @@ Queen of Diamonds
 King of Diamonds
 Ace of Diamonds
 ```
-This technique will come in handy when we work on the challenge later in this module.
+This technique will come in handy when we work on a challenge later in this module.
 
-### Step 9 - Comment out the previous code and add code that makes random choices from a list.
+## Step 8 - Choose randomly from a list
 
-You may want to retrieve a sampling of all the values in a list.  Using the `random` module, you can call the `choice()` function to randomly select a single item from a list, or the `choices()` function to randomly select a number of items from a list.
+Suppose you want to retrieve a sampling of all values in a list. By using the `random` module, you can call the `choice()` function to randomly select an item from a list. Or you can call the `choices()` function to randomly select a number of items from a list.
 
-Comment out the code from the previous step and add the following code listing:
+Comment out the code from the previous section. Then add the following code listing:
 
 ```python
 import random
@@ -249,20 +251,20 @@ selected_numbers = random.choices(numbers, k=3)
 print(selected_numbers)
 ```
 
-When you execute the code, you should see the following output (given the random items that are selected):
+When you execute the code, you should see something like the following output. Your output will differ because the selected items are random.
 
 ```output
 101
 [77, 4, 8]
 ```
-This technique will also prove useful when we work on the challenge later in this module.
+This technique will also prove useful when we work on a challenge later in this module.
 
 ### Recap
 
-- Use the `in` and `not in` keyword as part of a Boolean expression to test whether a value is part of a list or not.
-- Use the `for` statement to iterate through all items `in` a list and execute a code block that puts the current item of the list in scope to be inspected in the logic of code block.
-- Use the `continue` statement to skip the remaining code block logic and continue to the next list item as assigned by the `for` statement.
-- Use the `break` statement to break out of the `for` statement pre-maturely.
-- Use the `else` statement to create a code block that executes at the successful completion of iterating through all items in the list when using the `for` statement.
-- You can nest `for` statements to create a list of every combination of two lists.
+- Use the `in` and `not in` keywords as part of a Boolean expression to test whether a value is part of a list.
+- Use the `for` statement to iterate through all items in a list. Also use the statement to execute a code block that puts the current item in scope to be inspected in the logic of the code block.
+- Use the `continue` statement to skip the remaining code block logic and continue to the next list item that's assigned by the `for` statement.
+- Use the `break` statement to break out of the `for` statement prematurely.
+- Use the `else` statement to create a code block that executes after you use the `for` statement to iterate through all items in the list.
+- Nest `for` statements to create a list of every combination of two lists.
 - Use the `random` module's `choice()` and `choices()` functions to select one or many items from the list, respectively.
