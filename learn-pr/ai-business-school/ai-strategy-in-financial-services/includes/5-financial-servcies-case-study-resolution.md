@@ -22,7 +22,7 @@ The software continuously operates in real time, protecting against identity fra
 Because authentication happens in the background, users don't find the authentication at all disruptive. It happens invisibly, keeping them safe without the hassle of interruption.
 :::column-end:::
 :::column span="2":::
-!["Organizations sit on troves of data; much of it is uncorrelated, which means that decision-makes and business strategists miss opportunites to create improved experiences for existing customers." - Frances Zelazny, Chief Strategy and Marketing Officer at BioCatch.](../media/1-3-4-A-BioCatch-case-study-resolution.jpg)
+!["Organizations sit on troves of data; much of it is uncorrelated, which means that decision-makes and business strategists miss opportunities to create improved experiences for existing customers." - Frances Zelazny, Chief Strategy and Marketing Officer at BioCatch.](../media/1-3-4-A-BioCatch-case-study-resolution.jpg)
 :::column-end:::
 :::row-end:::
 

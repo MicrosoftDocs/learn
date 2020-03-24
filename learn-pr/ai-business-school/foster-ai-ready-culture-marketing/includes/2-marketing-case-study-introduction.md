@@ -2,7 +2,7 @@
 
 :::row:::
 :::column span="2":::
-Marketing faces unique challenges in today's business environment. While marketers are exceling in generating leads (a key performance indicator), conversion of leads to sales remains low. Only about 28% of businesses are satisfied with their conversion rate,<sup>1</sup> and 42% of B2B professionals identify converting leads into customers as their biggest lead generation challenge.<sup>2</sup>
+Marketing faces unique challenges in today's business environment. While marketers are excelling in generating leads (a key performance indicator), conversion of leads to sales remains low. Only about 28% of businesses are satisfied with their conversion rate,<sup>1</sup> and 42% of B2B professionals identify converting leads into customers as their biggest lead generation challenge.<sup>2</sup>
 
 In part, this may be because sellers today have low confidence in marketing leads, which makes them less likely to act on them: a survey by CEB showed that sellers are only 45% likely to pursue a lead referred by a marketing demand generation program.<sup>3</sup> Low confidence is typically driven by past experience with marketing leads. If a seller has had multiple experiences where they've contacted a marketing-qualified lead only to discover that the contact information was fake or the lead had no interest, that seller will be reticent to continue pursuing unproductive marketing leads.
 
