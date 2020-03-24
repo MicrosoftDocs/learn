@@ -1,5 +1,4 @@
 ### YamlMime:ModuleUnit
-# Unit uids are manually created by the content author and should follow the format (repo).(module-short-name).(unit-short-name). Keep it easy on yourself and keep the unit-short-name the same as the unit YAML file name.
 uid: learn.manage-iot-devices.3-connect-device
 metadata:
   description: Setting up IoT Hub and connecting your first device.
@@ -9,17 +8,8 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-# TODO: Portal interactive
-# interactive: azure-portal
 azureSandbox: true
 title: Setting up IoT Hub and connecting your first device
 durationInMinutes: 20
 content: |
   [!include[](includes/3-connect-device.md)]
-tasks:
-- action: exists
-  environment: azure
-  azure:
-    resource:
-      type: "Microsoft.Devices/IotHubs"
-  hint: "Use the instructions above to create an IoT Hub, register your device, and send telemetry."

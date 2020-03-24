@@ -100,6 +100,5 @@ So what's happening? IoT hub is receiving the device-to-cloud messages sent from
 
    ![Screenshot showing the Pi simulator run button](../media/iot-admin-device-metrics.png)
 
-
 <!--Reference links
 https://docs.microsoft.com/azure/iot-hub/iot-hub-raspberry-pi-web-simulator-get-started-->
