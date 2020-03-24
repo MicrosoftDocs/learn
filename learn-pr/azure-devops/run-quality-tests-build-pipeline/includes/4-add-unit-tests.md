@@ -2,7 +2,7 @@ Andy is going to work with Mara to add unit tests to the automated build that Ma
 
 The following image illustrates Amita's problem. When Amita selects "Milky Way" to show only scores from that game map, she gets results from other game maps, such as Andromeda.
 
-![Screebsgit of leaderboard showing incorrect galaxy results: Andromeda galexy scores show in the Milky Way galaxy listing](../media/4-leaderboard-bug.png)
+![Screenshot of leaderboard showing incorrect galaxy results: Andromeda galaxy scores show in the Milky Way galaxy listing.](../media/4-leaderboard-bug.png)
 
 Both Andy and Mara want to catch the error before it reaches Amita, the tester. Unit tests are a great way to automatically test for regression bugs.
 
