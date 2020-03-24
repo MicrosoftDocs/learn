@@ -2,7 +2,7 @@ Andy is going to work with Mara to add unit tests to the automated build that Ma
 
 The following image illustrates Amita's problem. When Amita selects "Milky Way" to show only scores from that game map, she gets results from other game maps, such as Andromeda.
 
-![The leaderboard showing incorrect results](../media/4-leaderboard-bug.png)
+![Screebsgit of leaderboard showing incorrect galaxy results: Andromeda galexy scores show in the Milky Way galaxy listing](../media/4-leaderboard-bug.png)
 
 Both Andy and Mara want to catch the error before it reaches Amita, the tester. Unit tests are a great way to automatically test for regression bugs.
 
@@ -184,21 +184,21 @@ Here you see the tests run in the pipeline and then visualize the results from M
 
     You see that the **Run unit tests - Release** task runs the unit tests just as you did manually from the command line.
 
-    ![Azure Pipelines showing running unit tests](../media/4-pipeline-task.png)
+    ![Screenshot of Azure Pipelines showing console output from running unit tests.](../media/4-pipeline-task.png)
 
 1. Navigate back to the pipeline summary.
 
-    ![Azure Pipelines showing the pipeline summary page with Tests tab highlighted](../media/4-pipeline-summary-tests-tab.png)
+    ![Screenshot of Azure Pipelines showing the pipeline summary pane with "100% passed" result and Tests tab highlighted.](../media/4-pipeline-summary-tests-tab.png)
 
 1. Move to the **Tests** tab.
 
     You see a summary of the test run. All five tests have passed.
 
-    ![Azure Pipelines showing the Tests tab](../media/4-test-tab-summary.png)
+    ![Screenshot of Azure Pipelines showing the Tests tab with 5 total tests run and 100 percent passing.](../media/4-test-tab-summary.png)
 
 1. In Azure DevOps, select **Test Plans**, and then select **Runs**.
 
-    ![Opening Azure Test Plans](../media/4-test-plans-runs.png)
+    ![Screenshot of Azure DevOps navigation menu with Test Plans section and Runs tab highlighted.](../media/4-test-plans-runs.png)
 
     You see the most recent test runs, including the one you just ran.
 
@@ -206,7 +206,7 @@ Here you see the tests run in the pipeline and then visualize the results from M
 
     You see a summary of the results.
 
-    ![Test results summary in Azure Test Plans](../media/4-test-run-results.png)
+    ![Screenshot of Azure DevOps test run results summary showing 5 passed tests.](../media/4-test-run-results.png)
 
     In this example, all five tests have passed. If any tests failed, you could navigate to the build task to get additional details.
 

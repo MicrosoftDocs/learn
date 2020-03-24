@@ -46,9 +46,9 @@ Manual testing has its benefits. But as your code base grows in size, testing al
 
 When we think about automated testing, it's common to separate tests into layers. Mike Cohn proposes this concept, known as the _test pyramid_, in his book _Succeeding with Agile_.
 
-![The test pyramid showing the unit and UI layers](../media/2-test-pyramid.png)
+![Screenshot of test pyramid showing the unit test layer at the bottom, marked with callout 1, and UI layer tests at the top, marked with callout 2.](../media/2-test-pyramid.png)
 
-Although this is a simplistic version of Cohn's model, the concept illustrates that you focus most of your effort on writing tests that verify the foundational levels ![Callout 1](../../shared/media/callout-01.png) of your software, such as functions, classes, and methods. You focus progressively less effort as features are combined, such as at the user interface (UI) layer ![Callout 2](../../shared/media/callout-02.png). The idea is that if you can verify that each lower-level component works as expected in isolation, tests at the higher levels need only verify that multiple components work together to get the expected result.
+Although this is a simplistic version of Cohn's model, the concept illustrates that you focus most of your effort on writing tests that verify the foundational levels of your software (callout 1 in the pyramid), such as functions, classes, and methods. You focus progressively less effort as features are combined, such as at the user interface (UI) layer (callout 2 in the pyramid). The idea is that if you can verify that each lower-level component works as expected in isolation, tests at the higher levels need only verify that multiple components work together to get the expected result.
 
 ### When should I write tests?
 

@@ -16,7 +16,7 @@ To complete the work item:
 1. From Azure DevOps, navigate to **Boards** and then select **Boards** from the menu.
 1. Move the **Check open source code for vulnerabilities and licensing terms** work item from the **Doing** to the **Done** column.
 
-    ![Screenshot of Azure DevOps Boards showing the vulnerability check card in the Done column.](../media/5-azure-boards-wi5-done.png)
+    ![Screenshot of Azure Boards showing the vulnerability check card in the Done column.](../media/5-azure-boards-wi5-done.png)
 
 ## Disable the pipeline or delete your project
 
@@ -35,10 +35,10 @@ To disable the pipeline:
 1. From Azure Pipelines, go to your pipeline.
 1. Select **Edit**.
 
-    ![Screenshot of Azure DevOps Pipelines with a highlighted Edit button next to the default Run pipeline button.](../../shared/media/azure-pipelines-edit-button.png)
+    ![Screenshot of Azure Pipelines with a highlighted Edit button next to the default Run pipeline button.](../../shared/media/azure-pipelines-edit-button.png)
 1. On the menu in the upper corner, select **Settings**.
 
-    ![Screenshot of Azure DevOps Pipelines with a highlighted Settings menu option under the Run button.](../../shared/media/azure-pipelines-settings-button.png)
+    ![Screenshot of Azure Pipelines with a highlighted Settings menu option under the Run button.](../../shared/media/azure-pipelines-settings-button.png)
 1. Under **Processing of new run requests**, select **Disabled**. Then select **Save**.
 
     Your pipeline will no longer process build requests.

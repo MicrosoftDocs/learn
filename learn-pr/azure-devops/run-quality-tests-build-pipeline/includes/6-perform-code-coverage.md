@@ -108,17 +108,17 @@ Before Mara and Andy write any pipeline code, they decide to try things manually
 
     You see the coverage report summary.
 
-    ![The coverage report summary](../media/6-coverage-report-summary.png)
+    ![Screnshot of local code coverage report summary showing 20.9 percent line coverage.](../media/6-coverage-report-summary.png)
 
 1. Scroll to the bottom of the page to see a coverage breakdown by class type.
 
-    ![The coverage report class summary](../media/6-coverage-class-summary.png)
+    ![Screenshot of local coverage report class summary showing coverage stats across classes found in the Tailspin.SpaceGame.Web code.](../media/6-coverage-class-summary.png)
 
 1. Select the link to ``TailSpin.SpaceGame.Web.LocalDocumentDBRepository`1`` to view further details.
 
     Notice that the `GetItemsAsync` method is covered by unit tests, but the `CountItemsAsync` method has no coverage.
 
-    ![A visual representation of unit test coverage for two C# methods](../media/6-coverage-class-details.png)
+    ![Screenshot of local class coverage detail with a visual representation of unit test coverage for two C# methods, one with all code lines green (covered) and one with all lines red (not covered).](../media/6-coverage-class-details.png)
 
     This makes sense, because the `FetchOnlyRequestedGameRegion` test method calls the `GetItemsAsync` method but does not call the `CountItemsAsync` method. (To review the test code, see the *DocumentDBRepository_GetItemsAsyncShould.cs* file.)
 
@@ -173,7 +173,7 @@ Here you see the tests run in the pipeline and then visualize the results from A
 
     You view the same results that you did when you ran the tests locally.
 
-    ![Azure Pipelines showing the Code Coverage tab](../media/6-coverage-report-pipeline.png)
+    ![Screenshot of Azure Pipelines showing the Code Coverage tab, with code coverage report summary showing 14.2 percent line coverage.](../media/6-coverage-report-pipeline.png)
 
     As an optional step, you can explore the results from Azure Pipelines.
 
@@ -194,7 +194,7 @@ Here you'll add a second widget that summarizes code coverage.
 1. Select **Edit**.
 1. Search for **Code Coverage**, and then select **Code Coverage**.
 
-    ![Visual Studio Marketplace showing the Code Coverage widget](../media/6-add-code-coverage-widget.png)
+    ![Screenshot of Visual Studio Marketplace showing the Code Coverage widget card.](../media/6-add-code-coverage-widget.png)
 1. Drag **Code Coverage** to the canvas.
 1. Select the gear icon to configure the widget.
 1. Keep all the default settings, except for:
@@ -206,7 +206,7 @@ Here you'll add a second widget that summarizes code coverage.
 
     The widget shows the percentage of code your unit tests cover.
 
-    ![The Code Coverage widget showing 14 percent of code is covered](../media/6-dashboard-widget.png)
+    ![Screenshot of Azure DevOps Code Coverage widget showing 14 percent coverage of the sample project.](../media/6-dashboard-widget.png)
 
 You now have code coverage set up in your pipeline. Although your existing code coverage is low, you have a baseline that you can improve over time.
 
