@@ -32,7 +32,7 @@ The modules in this learning path form a progression. You follow the Tailspin we
 Run a template that sets up your Azure DevOps organization:
 
 > [!div class="nextstepaction"]
-> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?name=deploy-kubernetes&azure-portal=true)
+> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?name=Deploymulti-containersolutionstoKubernetes&azure-portal=true)
 
 From the Azure DevOps Demo Generator site, follow these steps to run the template:
 
