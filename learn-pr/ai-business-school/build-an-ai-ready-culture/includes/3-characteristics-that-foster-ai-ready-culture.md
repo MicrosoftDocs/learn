@@ -8,7 +8,7 @@ Fostering an AI-ready culture requires:
 2. Empowering people to participate in the AI transformation, and creating an inclusive environment that allows cross-functional, multidisciplinary collaboration
 3. Creating a responsible approach to AI that addresses the challenging questions AI presents
 
-Of course, this is only possible with strong leadership that drives change by both adopting the changes this transformation will require and actively supporting people throughout. Below, we share our perspective on the changes you need to make to achieve an AI-ready culture.
+Of course, this is only possible with strong leadership that drives change by both adopting the changes this transformation will require and actively supporting people throughout. Below we share our perspective on the changes you need to make to achieve an AI-ready culture.
 
 ## Data-driven
 

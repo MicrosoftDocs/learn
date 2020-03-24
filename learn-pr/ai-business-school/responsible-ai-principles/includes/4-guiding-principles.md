@@ -40,7 +40,7 @@ At Microsoft, we firmly believe everyone should benefit from intelligent technol
 Inclusive design practices can help system developers understand and address potential barriers in a product environment that could unintentionally exclude people. By addressing these barriers, we create opportunities to innovate and design better experiences that benefit everyone.
 :::column-end:::
 :::column span="2":::
-![Microsoft Inclusive Design Principles, represented by icons: recognize exclusion (person in a wheelchair); solve for one, extend to many (man and woman holding two children, a dog stands next to them); learn from diversity (two people walking holding hands, one of them is also holding a cane).](../media/3-2-1b.jpg)
+![Microsoft Inclusive Design Principles, represented by icons: Recognize exclusion (person in a wheelchair). Solve for one, extend to many (man and woman hold two children, a dog stands next to them). Learn from diversity (two people walk holding hands, one of them is also holding a cane).](../media/3-2-1b.jpg)
 :::column-end:::
 :::row-end:::
 
