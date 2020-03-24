@@ -1,9 +1,10 @@
-1. Open Visual Studio Code from the Azure shell .
-1. From the **File** menu, select **New File** to create a new file.
-1. From the **File** menu, select **Save as**.
-1. Name the file **azuredeploy** and select the **JSON** file extension. The complete name of the file **azuredeploy.json**.
-1. Save the file to your workstation. Select a path that is easy to remember because you'll provide that path later when deploying the template.
-1. Copy and paste the following JSON into the file:
+1. Open Visual Studio Code from the Azure shell provide here in the sandbox by using the following command.
+
+    ```shell
+    code .
+    ```
+
+1. Copy and paste the following JSON into the editor:
 
     ```json
     {
@@ -13,58 +14,25 @@
     }
     ```
 
-    Here's what your VS Code environment looks like:
 
-    ![Resource Manager template visual studio code first template](./media/template-tutorial-create-first-template/resource-manager-visual-studio-code-first-template.png)
+1. From the **editor** menu, select **save** to create a the new file and name it **azuredeploy.json**
 
-    This template doesn't deploy any resources. We're starting with a blank template so you can get familiar with the steps to deploy a template while minimizing the chance of something going wrong.
+    ![visual studio code in shell save first template](../media/save-template.gif)
 
-    The JSON file has these elements:
+  This template doesn't deploy any resources. We're starting with a blank template so you can get familiar with the steps to deploy a template while minimizing the chance of something going wrong.
+
+  The JSON file has these elements:
 
     - **$schema**: Specifies the location of the JSON schema file. The schema file describes the properties that are available within a template. For example, the schema defines **resources** as one of the valid properties for a template. Don't worry that the date for the schema is 2019-04-01. This schema version is up-to-date and includes all of the latest features. The schema date hasn't been changed because there have been no breaking changes since its introduction.
     - **contentVersion**: Specifies the version of the template (such as 1.0.0.0). You can provide any value for this element. Use this value to document significant changes in your template. When deploying resources using the template, this value can be used to make sure that the right template is being used.
     - **resources**: Contains the resources you want to deploy or update. Currently, it's empty, but you'll add resources later.
 
-1. Save the file.
-
-Congratulations, you've created your first template.
-
-## Sign in to Azure
-
-To start working with Azure PowerShell/Azure CLI, sign in with your Azure credentials.
-
-# [PowerShell](#tab/azure-powershell)
-
-```azurepowershell
-Connect-AzAccount
-```
-
-# [Azure CLI](#tab/azure-cli)
-
-```azurecli
-az login
-```
-
 ---
 ## Create resource group
 
-When you deploy a template, you specify a resource group that will contain the resources. Before running the deployment command, create the resource group with either Azure CLI or Azure PowerShell. Select the tabs in the following code section to choose between Azure PowerShell and Azure CLI. The CLI examples in this article are written for the Bash shell.
+When you deploy a template, you need to specify a resource group that will contain the resources. Before running the deployment command, you must create the resource group. However, in the sandbox provided here, you already have a resource group you can target your deplyment.
 
-# [PowerShell](#tab/azure-powershell)
-
-```azurepowershell
-New-AzResourceGroup `
-  -Name myResourceGroup `
-  -Location "Central US"
-```
-
-# [Azure CLI](#tab/azure-cli)
-
-```azurecli
-az group create \
-  --name myResourceGroup \
-  --location "Central US"
-```
+1. To get the name of the resource group where 
 
 ---
 
