@@ -43,6 +43,5 @@ units:
   - learn.advocates.create-web-app-with-refreshable-models.8-publish-web-app-deploy-github-action
   - learn.advocates.create-web-app-with-refreshable-models.9-test-pwa
   - learn.advocates.create-web-app-with-refreshable-models.10-summary
-
 badge:
   uid: learn.advocates.create-web-app-with-refreshable-models.badge
