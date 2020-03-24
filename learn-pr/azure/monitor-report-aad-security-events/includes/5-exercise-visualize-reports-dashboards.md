@@ -46,13 +46,23 @@ To stream the audit and sign-in logs to your Log Analytics workspace, you'll nee
 
 1. When you're done, select **Save**.  
 
+## Download pebuilt views
+
+1. In a new browser tab navigate to [Azure AD Account Provisioning Events.omsview](https://github.com/AzureAD/Deployment-Plans/blob/master/Log%20Analytics%20Views/Azure%20AD%20Account%20Provisioning%20Events.omsview).
+1. Right-click on **Raw**, select **Save link as**.
+1. Select your desktop as the destination.
+1. Navigate to [AzureADSignins.omsview](https://github.com/AzureAD/Deployment-Plans/blob/master/Log%20Analytics%20Views/AzureADSignins.omsview).
+1. Right-click on **Raw**, select **Save link as**.
+1. Select your desktop as the destination.
+
 ## Install prebuilt views into Azure Log Analytics workspace
 
 1. In the Azure portal, select **All resources**.
 1. Select the Log Analytics workspace you created earlier.
 1. Under the **General** section, select **View Designer**.
-1. Select **Import**, choose **File**, and then browse to the location where you downloaded both views. Select the **Azure AD Account Provisioning Events** file, and select **Save**.
-1. Repeat step 3, but select the **Sign-in Events** file, then select **Save**.
+1. Select **Import**, choose **File**, and then browse to your desktop.
+1. Select the **Azure AD Account Provisioning Events.omsview** file, and select **Save**.
+1. Repeat step 3, but select the **AzureADSignins.omsview** file, then select **Save**.
 
 You've now imported the prebuilt workspace views into your workspace. You can use them to look at common views of your audit and sign-in data. Next, you'll set up a dashboard that your security team can begin to use.
 
@@ -72,25 +82,27 @@ From your Azure portal:
 
 1. Confirm the sharing and access control are correct:  
 
-   1. The **Dashboard name** will be: **Security Dashboard**.
-   1. Leave the subscription with the default value.
-   1. Ensure that **Publish to the 'dashboards' resource group** isn't checked.
-   1. Select **Publish** to make the empty dashboard available.
+   - The **Dashboard name** will be: **Security Dashboard**.
+   - Leave the subscription with the default value.
+   - Ensure that **Publish to the 'dashboards' resource group** isn't checked.
+   - Select **Publish** to make the empty dashboard available.
 
    ![screenshot showing the sharing and access control panel](../media/4-dashboard-share.png)
 
-Return to your Log Analytics workspace. You'll need to build a query for the dashboard.
+## Build a query for the dashboard
 
-From the log analytics workspace, create a new query.  
+1. Select **All resources**.
+1. Select the Log Analytics workspace you created earlier.
+1. Under the **General** section, select **Logs**. 
 
-You wanted to know the most common user event for last week.  Copy this query into your query editor.
+1. You wanted to know the most common user event for last week.  Copy this query into your query editor.
 
-```Kusto
-AuditLogs
-| where TimeGenerated >= ago(7d)
-| summarize auditCount = count() by OperationName
-| sort by auditCount desc
-```
+    ```
+    AuditLogs
+    | where TimeGenerated >= ago(7d)
+    | summarize auditCount = count() by OperationName
+    | sort by auditCount desc
+    ```
 
 1. Select the **Run** option from the navigation bar to test the query returns data.
 1. When you're satisfied you have the data you want, select **Save** from the navigation bar by selecting the disc icon from the menu bar.

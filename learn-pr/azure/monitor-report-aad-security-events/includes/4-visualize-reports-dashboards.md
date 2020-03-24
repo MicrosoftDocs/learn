@@ -75,7 +75,7 @@ With the empty dashboard created, you'll need to add a query report. You might t
 
 From the log analytics workspace, create a new query. Suppose you wanted to identify the most common user event for the last week. You'd use a query like this one:
 
-```Kusto
+```
 AuditLogs
 | where TimeGenerated >= ago(7d)
 | summarize auditCount = count() by OperationName
