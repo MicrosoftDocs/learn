@@ -26,7 +26,7 @@ products:
 units:
 - learn.manage-iot-devices.1-intro-to-ops-in-iot
 - learn.manage-iot-devices.2-raspberry-pi-emulator
-- learn.manage-iot-devices.3-exercise-run-raspberry-pi-simulator
+- learn.manage-iot-devices.3-connect-device
 - learn.manage-iot-devices.4-summary
 badge:
   uid: learn.manage-iot-devices.badge
