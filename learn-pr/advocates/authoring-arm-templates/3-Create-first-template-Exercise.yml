@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.Authoring-Azure-Resource-Manager-Templates.3-Create-first-template-Exercise
 title: Introduction
+interactive: bash
+azureSandbox: true
 metadata:
   title: Introduction
   description: Introduction
@@ -10,6 +12,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-durationInMinutes: 1
+durationInMinutes: 10
 content: |
   [!include[](includes/3-Create-first-template-Exercise.md)]
