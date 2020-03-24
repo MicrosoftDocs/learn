@@ -25,7 +25,7 @@ There are three areas in the web simulator:
 2. **Coding Area**. An online code editor for you to make an app on Raspberry Pi with Node.js. The
     default sample application helps to collect sensor data from the BME280 sensor and sends it to your Azure IoT Hub.
 3. **Integrated console window**. This is where you can see the output of your app. Within the console there are three functions:
-    - `run` - Runs the sample code (When sample is running, code is read-only).
+    - `Run` - Runs the sample code. When the sample is running, code is read-only.
     - `Stop` - Stops the sample code running.
     - `Reset` - Resets the code.
 

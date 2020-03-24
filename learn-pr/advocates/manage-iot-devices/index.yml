@@ -1,7 +1,6 @@
 ### YamlMime:Module
 uid: learn.manage-iot-devices
 metadata:
-  title: Learn how to manage IoT devices as an IT Administrator
   description: With IoT adoption on the rise, learn what tools Microsoft offers Operations to help deploy, manage and secure said plethora of devices.
   author: WirelessLife
   ms.date: 09/24/2018

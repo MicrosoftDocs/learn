@@ -1,4 +1,4 @@
-<!--Video script: It began with Personal Digital Assistants, then smartphones and now everything from smart watches to smart thermostats are connecting people with more information than ever before. Once limited to just PCs, the Internet now allows anything that has valuable information to go online. How does this trend have the potential to impact all aspects of IT professional’s role? More importantly, how can IT professionals prepare for the Internet of Things?-->
+<!--Video script: It began with Personal Digital Assistants, then smartphones and now everything from smart watches to smart thermostats are connecting people with more information than ever before. Once limited to just PCs, the Internet now allows anything that has valuable information to go online. How does this trend have the potential to impact all aspects of IT professional's role? More importantly, how can IT professionals prepare for the Internet of Things?-->
 
 Improving your hard skills is just one of the steps necessary for success in
 this changing technological landscape. Gone are the days of getting years
@@ -11,7 +11,7 @@ The amount of data that the Internet of Things can capture will create a unique
 opportunity for IT Operations. Businesses will be looking to IT Ops to help them
 understand what data to collect and help them unleash the full potential of that
 data. As an example, IoT can be harnessed to capture and run predictive
-analytics on data from heart monitors alerting users when they’re at risk of a
+analytics on data from heart monitors alerting users when they're at risk of a
 heart episode. These same heart monitors could possibly collect information
 enabling doctors to make more informed treatment plans for their patients.
 
@@ -24,11 +24,13 @@ authority in it.
 
  The rest of this module will take this foundational knowledge of IoT and apply it to a real world scenario. You will be interacting with and online Raspberry Pi simulator to capture simulated weather data via the Azure IoT Hub.
 
- ## Learning objectives
- In this module, you will:
-  - Get an introduction to IoT
-  - Interact with a Raspberry Pi Simulator
-  - Configure Azure IoT Hub to capture data
+## Learning objectives
+
+In this module, you will:
+
+- Get an introduction to IoT
+- Interact with a Raspberry Pi Simulator
+- Configure Azure IoT Hub to capture data
 
 <!--Reference links: 
 Move to end.
