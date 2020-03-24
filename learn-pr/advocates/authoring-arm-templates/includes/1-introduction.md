@@ -1,10 +1,8 @@
-Let's say you're a systems administrator at a growing financial services company. Analysts create financial models to help recommend the best investment options to investors.
+With more enterprises adopting the cloud, many of them are adopting agile development methods. These teams iterate quickly. They need to repeatedly deploy their solutions to the cloud, and know their infrastructure is in a reliable state. Infrastructure is now an integral part of the iterative process, the division between operations and development is  disappearing. You need to manage infrastructure and application code through a unified process.
 
-These financial models are run on virtual machines running on Azure. A model can take between a few minutes and several hours to run. You typically create a new virtual machine to run each new model, then delete it after the analyst collects the results.
+To meet these challenges, you can use the practice of infrastructure as code (IaC). IaC defines the infrastructure that needs to be deployed. And just like application code, you store the infrastructure code (the templates) in a source repository and version it. Any one on your team can run the code and deploy similar environments.  Therefore you retain control of what gets deployed but are unburdened of the daily deployments in dev, test or production environments
 
-The financial services business moves quickly. You find yourself constantly deploying and deleting cloud resources. You initially created resources through the Azure portal, and now you use the Azure CLI and scripts to further automate things. Although you see certain patterns among your deployments, it still takes time to connect virtual machines to networking and storage components. At the end of each run, you need to delete only the components related to that run.
-
-How can you keep up with the pace of your analysts? Azure Resource Manager templates are one way to further automate your deployments.
+To implement infrastructure as code for your Azure solutions, use Azure Resource Manager (ARM) templates. The template is a JavaScript Object Notation (JSON) file that defines the infrastructure and configuration for your project.
 
 ## Learning objectives
 
