@@ -195,7 +195,7 @@ There are a number of ways you can use Chef on Azure.
 
 On [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace?azure-portal=true), you'll find a number of images that you can use. They include:
 
-* Chef Extension for [Windows](https://azuremarketplace.microsoft.com/marketplace/apps/chef-software.chef-client-windows-arm?tab=Overview?azure-portal=true) and [Linux](https://azuremarketplace.microsoft.com/marketplace/apps/chef-software.chef-client-linux?azure-portal=true), published by Chef Software.
+* [Chef Extension](https://docs.chef.io/azure_portal/) for Windows and Linux, published by Chef Software.
 
     These images come with the Chef Client. Chef Client is an agent that runs on each node that's managed through Chef. Chef Client applies the cookbooks and recipes you specify. Chef Client can also send reporting data back to a Chef Server or a Chef Automate server, so that you can track and audit your configuration runs over time.
 
