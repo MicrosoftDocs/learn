@@ -8,7 +8,7 @@ In this exercise, you'll create a Log Analytics workspace in your Azure sandbox,
 
 It's straightforward to create a Log Analytics workspace:
 
-1. Go to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) and select **all service** and in the search field enter **log analytics**.
+1. Go to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) and select **All services** and in the search field type **log analytics**.
 
    ![screenshot showing how to find the Log Analytics features](../media/3-log-analytics.png)
 1. Select the **Log Analytics workspaces**.
@@ -38,8 +38,8 @@ To stream the audit and sign-in logs to your Log Analytics workspace, you'll nee
 1. This page is where you'll create the connection between the two log files and your Log Analytics workspace.
 
    - Give the new diagnostic a **name**. Type: **SendToLogAnalytics**.
-   - Make sure the **Send to Log Analytics** option has been checked.
-   - Select the **Configure** option, and select the Log Analytics workspace you created earlier: **ContosoWorkspace**.
+   - Make sure the **Send to Log Analytics** option has been selected.
+   - Select the Log Analytics workspace you created earlier: **ContosoWorkspace**.
    - Finally, decide which of the log files you want to stream to the workspace. In this instance, you need to have both **Audit log** and **Sign-up logs**. Check both options.
 
      ![screenshot of the diagnostic settings for streaming audit and sign-in logs to your Log Analytics workspace](../media/3-log-analytics-send-to.png)
@@ -48,8 +48,9 @@ To stream the audit and sign-in logs to your Log Analytics workspace, you'll nee
 
 ## Install prebuilt views into Azure Log Analytics workspace
 
-1. In the Azure portal, select **All services**, and type **Log Analytics**. Select the Log Analytics workspace you created earlier.
-1. Select **View Designer**.
+1. In the Azure portal, select **All resources**.
+1. Select the Log Analytics workspace you created earlier.
+1. Under the **General** section, select **View Designer**.
 1. Select **Import**, choose **File**, and then browse to the location where you downloaded both views. Select the **Azure AD Account Provisioning Events** file, and select **Save**.
 1. Repeat step 3, but select the **Sign-in Events** file, then select **Save**.
 
