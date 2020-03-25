@@ -11,7 +11,7 @@ Using RBAC, you can:
 
 To view access permissions, use the **Access control (IAM)** panel for the resource in the Azure portal. On this panel, you can see who has access to an area and their role. Using this same panel, you can also grant or remove access.
 
-![Screenshot of the Access control - Role assignment pane. In the Access control (IAM) pane, settings, and permissions for a user display](../media/5-resource-group-access-control.png)
+![Screenshot of Azure portal Access control - Role assignment pane showing a backup operator and billing reader roles assigned to different users.](../media/5-resource-group-access-control.png)
 
 In the above screenshot, **Alain Charon** has been assigned the **Backup Operator** role for this resource group.
 
@@ -25,4 +25,4 @@ Here are some best practices you should use when setting up resources.
 
 - Segregate duties within your team and grant only the amount of access to users that they need to perform their jobs. Instead of giving everybody unrestricted permissions in your Azure subscription or resources, allow only specific actions at a particular scope.
 - When planning your access control strategy, grant users the lowest privilege level that they need to do their work.
-- Use **Resource Locks** to ensure critical resources aren't modified or deleted (more on that next!)
+- Use **Resource Locks** to ensure critical resources aren't modified or deleted (more on that next!).

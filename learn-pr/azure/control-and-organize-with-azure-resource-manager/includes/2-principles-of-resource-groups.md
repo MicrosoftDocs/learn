@@ -1,4 +1,4 @@
-In your first week on your new job, you've  looked through the existing resources in your company's Azure subscription. There are a number of resource groups that contain many different resources, but they aren't organized into a coherent structure. You've worked on Azure before, but aren't entirely sure how resource groups work and what their role is. You've guessed (correctly) that they can play a role in how you organize your resources. Let's look at what they are, and how they can be used.
+In your first week on your new job, you've looked through the existing resources in your company's Azure subscription. There are a number of resource groups that contain many different resources, but they aren't organized into a coherent structure. You've worked on Azure before, but aren't entirely sure how resource groups work and what their role is. You've guessed (correctly) that they can play a role in how you organize your resources. Let's look at what they are, and how they can be used.
 
 [!INCLUDE [azure-free-trial-note](../../../includes/azure-free-trial-note.md)]
 
@@ -39,15 +39,15 @@ Let's walk through the steps you'd take to create a resource group in the Azure 
 
 1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
 
-1. Type **Resource Group** in the search box and hit Enter.
+1. Type **Resource group** in the search box and hit Enter. If this doesn't go immediately to the resource group creation, select **Resource group** from the search results and select the **Create** button.
 
-1. The first item in the list should be the resource group resource. Select it and then select the **Create** button.
+1. Select the subscription it should be in, and select the region for the resource group.
 
-    ![Search results searching the marketplace for a new resource group](../media/2-create-search-resource-group.png)
+1. Enter your resource group name, let's use **msftlearn-core-infrastructure-rg**.
 
-1. Enter your resource group name, let's use **msftlearn-core-infrastructure-rg**. Select the subscription it should be in, and select the region for the resource group. Select **Review + Create** and then **Create** to create the resource group.
+    ![Screenshot of Azure portal showing the resource group creation with subscription, resource group, and region entered.](../media/2-create-resource-group.png)
 
-    ![Fill in the required fields to create the resource group](../media/2-create-resource-group.png)
+1. Select **Review + Create** and then, once it is validated, select **Create** to create the resource group.
 
 That's it, you've created a resource group that you can now use when you deploy Azure resources. Let's take a closer look at this resource group and some important things to consider.
 
@@ -55,7 +55,7 @@ That's it, you've created a resource group that you can now use when you deploy 
 
 On the Azure portal menu or from the **Home** page, select **Resource groups**, and select your newly created resource group. Note that you may also see a resource group called **NetworkWatcherRG**. You can ignore this resource group, it's created automatically to enable Network Watcher in Azure virtual networks.
 
-![Overview panel of resource group](../media/2-rg-overview.png)
+![Screenshot of Azure portal showing new resource group pane with no resources in it yet.](../media/2-rg-overview.png)
 
 On the Overview panel, there's the basic information about the resource group like the subscription it's in, the subscription ID, any tags that are applied, and a history of the deployments to this resource group. We'll cover tags in the next unit. The deployments link takes you to a new panel with the history of all deployments to this resource group. Anytime you create a resource, it's a deployment, and you see that history for the resource group here.
 
@@ -65,19 +65,29 @@ On the left menu, there are a number of options
 
 We don't have any resources in this resource group yet, so the list at the bottom is empty. Let's create a couple resources inside the resource group.
 
-1. Select **+ Add** at the top or select the **Create resources**, either will work.
+1. Select **+ Add** at the top or select the **Create resources**; either will work.
 
-1. Search for **Virtual network**. The first result should be the virtual network resource. Select it, and on the next screen select **Create**.
+1. Search for **Virtual Network**. The first result should be the virtual network resource. Select it, and on the next screen select **Create**.
 
-1. Name the virtual network **msftlearn-vnet1**. For the **Resource group** drop-down, select the resource group that you created earlier. Enter **192.168.0.0/24** for both the **Address space** and subnet **Address range**. Leave the defaults for all other options, and select **Create**.
+1. Name the virtual network `msftlearn-vnet1`. For the **Resource group** drop-down, select the resource group that you created earlier.
 
-1. Repeat the steps again to create one more VNet, where both the **Address space** and subnet **Address range** are for a different network than your previous network, (e.g. **192.168.100.0/24**). Name it **msftlearn-vnet2**, and make sure to place it in the resource group that you created earlier.
+1. Select **Next: IP Addresses** to continue to the next creation step.
 
-1. Go back to your resource group, and on the **Overview** panel you should see the two VNets you created.
+1. Enter `192.168.0.0/24` for **IPv4 address space**.
 
-    ![Overview panel of resource group showing the VNet](../media/2-rg-with-vnet.png)
+1. Select **+ Add subnet** to start creating a subnet.
 
-Our resource group now contains two virtual network resources because we specified in our deployment (when we created the resources) which resource group we wanted the VNet to be placed in. We could create additional resources inside this resource group, or we could create additional resource groups in the subscription to deploy resources into.
+1. For **Subnet name** enter `msftlearn-vnet1-subnet1` and enter the same address space as the range: `192.168.0.0/24`. Select **Add** to return to the **IP Addresses** pane.
+
+1. Back on the virtual network creation, select **Review + create** and then select **Create** to add the virtual network to your resource group.
+
+1. Repeat the virtual network creation steps again to create one more virtual network using an **Address space** and added **Subnet address range** that are for a different network than your previous network. For example, you can use `192.168.100.0/24`. Name the network `msftlearn-vnet2` and the subnet `msftlearn-vnet2-subnet1`, and make sure to place the virtual network in the resource group that you created earlier.
+
+1. Go back to your resource group, and on the **Overview** panel you should see the two virtual networks you created.
+
+    ![Screenshot of Azure portal showing resource group overview containing two virtual network resources.](../media/2-rg-with-vnet.png)
+
+Our resource group now contains two virtual network resources because we specified in our deployment (when we created the resources) which resource group we wanted the virtual network to be placed in. We could create additional resources inside this resource group, or we could create additional resource groups in the subscription to deploy resources into.
 
 When creating resources, you usually have the option to create a new resource group as an alternative to using an existing resource group. This simplifies the process a bit, but as you see in your new organization, can lead to resources spread across resource groups with little thought as to how to organize them.
 
@@ -87,25 +97,25 @@ So how can you use resource groups to your advantage in your new organization? T
 
 ### Consistent naming convention
 
-You can start with using an understandable naming convention. We named our resource group **msftlearn-core-infrastructure-rg**. We've given some indication of what it's used for (**msftlearn**), the types of resources contained within (**core-infrastructure**), and the type of resource it is itself (**rg**). This descriptive name gives us a better idea of what it is. If we had named it **my-resource-group** or **rg1**, we have no idea on a glance of what the usage may be. In this case, we can deduce that there are probably core pieces of infrastructure contained within. If we created additional VNets, storage accounts, or other resources the company may consider _core infrastructure_, we could place them here as well, to improve the organization of our resources. Naming conventions can vary widely between and even within companies, but some planning can help.
+You can start with using an understandable naming convention. We named our resource group **msftlearn-core-infrastructure-rg**. We've given some indication of what it's used for (**msftlearn**), the types of resources contained within (**core-infrastructure**), and the type of resource it is itself (**rg**). This descriptive name gives us a better idea of what it is. If we had named it **my-resource-group** or **rg1**, we have no idea on a glance of what the usage may be. In this case, we can deduce that there are probably core pieces of infrastructure contained within. If we created additional virtual networks, storage accounts, or other resources the company may consider _core infrastructure_, we could place them here as well, to improve the organization of our resources. Naming conventions can vary widely between and even within companies, but some planning can help.
 
 ### Organizing principles
 
-Resource groups can be organized in a number of ways, let's take a look at a few examples. We might put all resources that are _core infrastructure_ into this resource group. But we could also organize them strictly by resource type. For example, put all VNets in one resource group, all virtual machines in another resource group, and all Azure Cosmos DB instances in yet another resource group.
+Resource groups can be organized in a number of ways, let's take a look at a few examples. We might put all resources that are _core infrastructure_ into this resource group. But we could also organize them strictly by resource type. For example, put all virtual networks in one resource group, all virtual machines in another resource group, and all Azure Cosmos DB instances in yet another resource group.
 
-![Image of resources organized by type](../media/2-resource-type-rg.png)
+![Diagram of resources grouped by type: vnet-rg for virtual networks, vm-rg for virtual machines, and db-rg for databases.](../media/2-resource-type-rg.png)
 
 We could organize them by environment (prod, qa, dev). In this case, all production resources are in one resource group, all test resources are in another resource group, and so on.
 
-![Image of resources organized by environment](../media/2-environment-rg.png)
+![Diagram of resources grouped by environment: prod-rg for production, qa-rg for QA, and dev-rg for development.](../media/2-environment-rg.png)
 
 We could organize them by department (marketing, finance, human resources). Marketing resources go in one resource group, finance in another resource group, and HR in a third resource group.
 
-![Image of resources organized by department](../media/2-department-rg.png)
+![Diagram of resources grouped by department: finance-rg for finance, marketing-rg for marketing, and hr-rg for HR.](../media/2-department-rg.png)
 
 We could even use a combination of these strategies and organize by environment and department. Put production finance resources in one resource group, dev finance resources in another, and the same for the marketing resources.
 
-![Image of resources organized by environment and department](../media/2-env-dept-rg.png)
+![Diagram of resources grouped by environment and department: prod-finance, dev-finance, prod-marketing, and dev-marketing.](../media/2-env-dept-rg.png)
 
 There are a few factors that can play into the strategy you use to organize resources: authorization, resource life cycle, and billing.
 
