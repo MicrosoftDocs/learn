@@ -106,3 +106,7 @@ In this exercise, you will monitor events from the **ChildIoTDevice** are being 
 1. The **IoTEdgeGateway** IoT Edge Transparent Gateway can now connect with Azure IoT Hub. The **IoTEdgeGateway** IoT Edge Transparent Gateway will sync the event telemetry from all connected child devices including the saved telemetry that couldn’t be sent while disconnected, and all telemetry still being sent to the gateway.
 
     **Note:** The IoT Edge Gateway device will take a couple minutes to reconnect to Azure IoT Hub and resume sending telemetry. After waiting a couple minutes, you will see events showing up in the az iot hub monitor-events command output again.
+    
+## Next steps
+
+To finish the module, pass the following knowledge check.
