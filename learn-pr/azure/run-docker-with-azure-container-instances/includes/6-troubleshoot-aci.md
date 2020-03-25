@@ -176,7 +176,7 @@ Here you'll see how to monitor CPU and memory usage on your container.
     2018-08-20 21:55:00  Memory Usage  19181568.0
     ```
 
-![Azure portal view of Azure Container Instances CPU and memory usage information](../media/6-cpu-memory.png)
+:::image type="content" source="../media/6-cpu-memory.png" alt-text="Screenshot that shows the Azure portal view of Azure Container Instances CPU and memory usage information.":::
 
 ## Clean up resources
 
