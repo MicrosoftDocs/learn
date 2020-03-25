@@ -77,15 +77,15 @@ At the time this module was written, Python 3.8 was the latest version of Python
 
 As you're probably aware, different Linux distributions use different package managers. Most popular Linux distributions include either APT (an acronym for "Advanced Packaging Tool") or YUM (an acronym for "Yellowdog Updater, Modified").
 
-We provide instructions for APT and YUM in this unit. If your distribution of Linux uses a different package manager, you might need to search for **[your Linux distribution] install python 3**.
+We provide instructions for APT and YUM in this unit. If your distribution of Linux uses a different package manager, you might need to search for **\<your Linux distribution> install python 3**.
 
-## Install by using APT
+### Install by using APT
 
-### Step 1 - Open a Terminal window
+#### Step 1 - Open a Terminal window
 
 Assuming you're running a Linux graphical user interface desktop environment, locate and open a terminal window by using the Terminal icon.
 
-### Step 2 - Update the APT package indexes
+#### Step 2 - Update the APT package indexes
 
 Run this command:
 
@@ -98,7 +98,7 @@ The `sudo` command temporarily elevates your permissions to root, the most power
 
 `apt-get update` will display all the items it will update. It might prompt you to approve by entering `y` or `yes` and then selecting the <kbd>Enter</kbd> key.
 
-### Step 3 - Install Python 3
+#### Step 3 - Install Python 3
 
 Enter the following command at a Bash prompt and then select the <kbd>Enter</kbd> key:
 
@@ -108,7 +108,7 @@ sudo apt-get install python3
 
 `apt-get install` will locate the appropriate packages from the package index, download the necessary files, and install the files into the appropriate folders.
 
-### Step 4 - Check your installation
+#### Step 4 - Check your installation
 
 To confirm that Python 3 installed correctly, enter the following command at a Bash prompt and then select the <kbd>Enter</kbd> key:
 
@@ -125,15 +125,15 @@ As long as the first number is `3`, Python 3 installed successfully.
 
 If the installation failed, you might see an error message. Enter the exact error message into a search engine's search box to find possible causes and solutions.
 
-## Install by using YUM
+### Install by using YUM
 
 The YUM package manager is used mainly by Red Hat systems, like Red Hat Enterprise Linux and Fedora, and by CentOS. If APT isn't installed on your system, you can try YUM instead. 
 
-### Step 1 - Open a Terminal window
+#### Step 1 - Open a Terminal window
 
 Assuming you're running a Linux graphical user interface desktop environment, locate and open a terminal window by using the Terminal icon.
 
-### Step 2 - Update the YUM package indexes
+#### Step 2 - Update the YUM package indexes
 
 Type the following command at a Bash prompt and then select the <kbd>Enter</kbd> key:
 
@@ -142,7 +142,7 @@ sudo yum update
 ```
 `yum update` will make sure all packages and their dependencies are up to date. It's a good idea to update the package list before you install new software.
 
-### Step 3 - Install Python 3
+#### Step 3 - Install Python 3
 
 Type the following command at a Bash prompt and then select the <kbd>Enter</kbd> key:
 
@@ -150,7 +150,7 @@ Type the following command at a Bash prompt and then select the <kbd>Enter</kbd>
 yum install rh-python36
 ```
 
-### Step 4 - Check your installation
+#### Step 4 - Check your installation
 
 To confirm that Python 3 installed correctly, type the following command at a Bash prompt and then select the <kbd>Enter</kbd> key:
 
@@ -167,7 +167,7 @@ As long as the first number is `3`, Python 3 installed successfully.
 
 If the installation failed, you might see an error message. If you do, continue to step 5.
 
-### Step 5 - (Optional) Enable the Software Collections feature in Bash
+#### Step 5 - (Optional) Enable the Software Collections feature in Bash
 
 Software Collections allows you to install multiple versions of the same software components on your system. So you need to specify which version of Python you want to run in the shell. Enter the following command at a Bash prompt and then select the <kbd>Enter</kbd> key:
 

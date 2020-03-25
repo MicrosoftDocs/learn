@@ -15,7 +15,7 @@ The key idea is that you want to use Python 3 from now on.
 
 ### How do I know if I already have Python 3 installed on my computer?
 
-It's possible you already have Python 3 installed on your computer. Sometimes an application will install Python 3 without you knowing about it.
+You might already have Python 3 installed on your computer. Sometimes an application will install Python 3 without you knowing about it.
 
 At the top of this page, select the tab that represents your operating system.
 
@@ -23,7 +23,7 @@ At the top of this page, select the tab that represents your operating system.
 
 ### Windows
 
-To determine if your Windows computer already has Python 3 installed:
+To determine if your Windows computer already has Python 3:
 
 1. Open a command prompt by entering **command prompt** in the Windows 10 search box and selecting the **Command Prompt App** in the **Best match** section of the results.
 1. Enter the following command and then select the <kbd>Enter</kbd> key:
@@ -50,7 +50,7 @@ If the first number is `2`, you'll need to install Python 3. We'll walk through 
 
 To determine if your Linux computer already has Python 3 installed:
 
-- Open a Linux terminal session. The instructions for opening this session depend on your distribution and version of Linux. Consult the online documentation for your Linux distribution for instructions on how to open a terminal.
+- Open a Linux terminal session. The instructions for opening this session depend on your distribution and version of Linux. Check the online documentation for your Linux distribution for instructions on how to open a terminal.
 - Enter the following command and then select the <kbd>Enter</kbd> key on your keyboard:
 
 ```bash
@@ -64,7 +64,7 @@ Python 3.6.7
 ```
 As long as the first number is `3`, you're all set. There's nothing more to do.
 
-Python is pre-installed on some Linux distributions (like Ubuntu). Even if you don't have the most up-to-date version, you'll be able to follow along in all of these beginner Python modules on Microsoft Learn.
+Python is pre-installed on some Linux distributions (like Ubuntu). Even if you don't have the most up-to-date version, you'll be able to follow along in all of the beginner Python modules on Microsoft Learn.
 
 On other Linux distributions, Python 3 isn't installed by default, so you might see some other message. Here's the output you would see on Debian version 10:
 
