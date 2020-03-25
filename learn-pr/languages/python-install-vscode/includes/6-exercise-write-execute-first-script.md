@@ -77,13 +77,13 @@ But because this is the first time you've opened Visual Studio Code, you'll see 
 
 Select **Open Folder** to open your operating system's Open dialog box.
 
-Create a folder in your system's Documents folder called **hello**. Select it.
+Create a folder called **hello** in your system's Documents folder. Select it.
 
 After you select the new **hello** folder, back in Explorer view, you should see the title of the section change to **hello**.
 
 ### Step 3 - Create a file
 
-To create a script file in your **hello** folder, go to **File**, and select **New File**.
+To create a script file in your **hello** folder, go to **File** and select **New File**.
 
 In the main area, the new file appears.
 
@@ -131,7 +131,7 @@ Your selection will be reflected in the Visual Studio Code status bar, near the 
 
 Alternatively, you might see this message: 
 
-"Tip: you can change the Python interpreter used by the Python extension by clicking on the Python version in the status bar".
+"Tip: you can change the Python interpreter used by the Python extension by clicking on the Python version in the status bar."
 
 This message just lets you know you have an interpreter selected, but you can change it if you want. You can change it by clicking the currently selected interpreter near the lower-left corner and then choosing from the list of Python interpreters displayed near the top of Visual Studio Code in the command bar.
 

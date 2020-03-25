@@ -6,7 +6,7 @@ If you determined that you already have Python 3 installed, scroll to the bottom
 
 ## Install Python on Windows
 
-At the time this module was written, Python 3.8 was the latest version of Python available, so we'll be referring to that version in the following instructions.
+When this module was written, Python 3.8 was the latest version of Python available, so we'll be referring to that version in the following instructions.
 
 Also, these instructions are specifically for Windows 10. If you're using a previous version of Windows, the basic instructions are the same, though the process in some steps might be slightly different.
 
@@ -15,14 +15,14 @@ Also, these instructions are specifically for Windows 10. If you're using a prev
 
 ### Step 1 - Download the Python 3.8 installer for Windows
 
-Open a web browser and go to the
+Go to the
 [Python download page](https://www.python.org/downloads/?azure-portal=true).
 
 Select the **Download Python 3.*x*** button. When your browser prompts you to save the file, note the download path, and then save the file to your local hard drive.  Most web browsers save downloaded files into your Downloads folder.
 
 ### Step 2 - Locate and run the installer application
 
-Depending on the web browser you use, you might have the option to run the file immediately after it has downloaded.  
+Depending on the web browser you use, you might have the option to run the file immediately after it downloads.  
 
 If not, you can open File Explorer, go to the download path that you noted in the previous step, and then double-click the file. The file's name should be **python-3.8.0.exe**.
 
@@ -73,7 +73,7 @@ As long as the first of the three numbers is `3`, congratulations! You successfu
 
 ## Install Python on Linux
 
-At the time this module was written, Python 3.8 was the latest version of Python available, so we'll be referring to that version in the following instructions.
+When this module was written, Python 3.8 was the latest version of Python available, so we'll be referring to that version in the following instructions.
 
 As you're probably aware, different Linux distributions use different package managers. Most popular Linux distributions include either APT (an acronym for "Advanced Packaging Tool") or YUM (an acronym for "Yellowdog Updater, Modified").
 
@@ -219,7 +219,7 @@ After a moment, a file named python-3.8.0-mascosx10.9.pkg should download to the
 
 Double-click the .pkg file that you downloaded to start the installer. The Python installer will prompt you to install, verify, and accept various options and license agreements. Take the time to read through these prompts to understand what the installer will do to your computer.
 
-When the installation process finishes, a Finder window will appear showing the contents of the Python folder. You also should see a congratulations screen when the installation finishes. At that point you can select **Close**.
+When the installation process finishes, a Finder window showing the contents of the Python folder will appear. You also should see a congratulations screen when the installation finishes. At that point you can select **Close**.
 
 If you're prompted to move the Python installer to the trash, you can do so.
 

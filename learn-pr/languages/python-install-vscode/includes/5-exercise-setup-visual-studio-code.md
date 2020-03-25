@@ -54,7 +54,7 @@ Go to the [Visual Studio Code download page](https://code.visualstudio.com/Downl
 
 The web page displays logos for Windows, Linux, and Mac.
 
-Under the Linux logo, choose either the **.deb** installer (for .deb-based package managers) or the **.rpm** installer (for .rpm-based package managers).
+Under the Linux logo, select either the **.deb** installer (for .deb-based package managers) or the **.rpm** installer (for .rpm-based package managers).
 
 ### Step 2 - Start the installer
 
