@@ -69,7 +69,7 @@ Next, create a Windows Server VM to simulate an on-premises machine running in t
 ## Map drives to the Azure file shares
 
 1. In the portal, select **Storage Accounts** from the portal menu.
-1. Select the created storage account that should be named learnazurefileshare, followed by random numbers.
+1. Select the created storage account that should be named **learnazurefileshare**, followed by random numbers.
 
     ![Screenshot of the Azure portal showing the storage account overview](../media/4-select-file-shares.png)
 
