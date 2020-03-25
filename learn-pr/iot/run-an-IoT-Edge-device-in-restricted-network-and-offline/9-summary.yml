@@ -24,10 +24,10 @@ content: |
       explanation:  Once messages reach the parent IoT Edge Device, the IoT Edge Modules and Routing will handle the messages as configured; including sending the messages to the Azure IoT Hub when connected.
     - content: 'The ability to remove child devices within an Azure IoT solution'
       isCorrect: false
-      explanation: Think about the solution delivered specificcaly addressing the capture of data.
+      explanation: Think about the solution delivered specifically addressing the capture of data.
     - content: 'The ability to add security certificates to child devices within an Azure IoT solution'
       isCorrect: false
-      explanation: Think about the solution delivered specificcaly addressing the capture of data.
+      explanation: Think about the solution delivered specifically addressing the capture of data.
 
   - content: 'Within the Azure Cloud Shell, what communication protocols were given commands to add Inbound rules to the NSG?'
     choices: 
@@ -64,6 +64,6 @@ content: |
     - content: 'A Connection String containing the Symmetric Key and the Gateway Hostname for the Parent IoT Edge Device'
       isCorrect: true
       explanation: Correct.
-    - content: 'An Role Based Access Control (RBAC) assignment'
+    - content: 'A Role Based Access Control (RBAC) assignment'
       isCorrect: false
       explanation: Incorrect. Please try again.
