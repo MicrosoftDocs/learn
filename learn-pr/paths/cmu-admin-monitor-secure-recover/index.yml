@@ -38,4 +38,4 @@ modules:
 - learn.cmu-cloud-admin.cmu-cloud-security
 - learn.cmu-cloud-admin.cmu-disaster-recovery-backup
 trophy:
-  uid: learn.cmu-cloud-admin.cmu-manage-cloud-resources.trophy
+  uid: learn.cmu-cloud-admin.cmu-monitor-secure-recover.trophy
