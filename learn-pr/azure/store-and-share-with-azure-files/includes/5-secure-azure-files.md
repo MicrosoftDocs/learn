@@ -14,7 +14,7 @@ When you mount Azure file shares, Windows needs to communicate over port 445. Or
 
 ### Configure IP-based firewall rules
 
-To limit access to your on-premises networks, you'll need to know your public-facing IP address. With this information, enable the storage account's firewall to allow access from selected networks. You can then add your public IP address to the list of allowed addresses, either in the portal or by using a PowerShell command:
+To limit access to your on-premises networks, you'll need to know your public-facing IP address. With this information, enable the storage account's firewall to allow access from selected networks. You can then add your public IP address to the list of allowed addresses, either in the Azure portal or by using a PowerShell command:
 
 ```powershell
 Add-AzStorageAccountNetworkRule `

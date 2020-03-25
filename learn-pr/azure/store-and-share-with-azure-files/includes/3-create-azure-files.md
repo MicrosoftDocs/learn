@@ -4,13 +4,13 @@ After you've reviewed all the options, you're going to propose to the finance co
 
 In this unit, you'll see how to use Azure CLI commands to create the storage account you need. You'll learn how to authenticate with Azure and persist credentials to allow the company's satellite offices to maintain connections to the file shares.
 
-## Create a storage account with Azure CLI
+## Create a storage account with the Azure CLI
 
 ```azurecli
 az storage account create
 ```
 
-The CLI command to create a storage account has many options. These options can be narrowed down to the ones required if you know the sku of account you need.
+The CLI command to create a storage account has many options. These options can be narrowed down to the ones required if you know the sku of the account you need.
 
 For the finance company, you've decided that GRS is the best choice. This decision limits the arguments to be concerned with to `--sku`. The allowed values for this argument are Premium_LRS, Premium_ZRS, Standard_GRS, Standard_GZRS, Standard_LRS, Standard_RAGRS, Standard_RAGZRS, or Standard_ZRS. In our scenario, the argument should be set to `Standard_GRS`.
 

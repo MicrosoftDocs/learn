@@ -60,7 +60,7 @@ You need to balance the availability and performance requirements to decide on t
 
 ### Choose your data migration solution
 
-The finance company has existing systems, data, and file shares. You need to migrate this data into Azure Files, so you have another decision to make. Because you can connect over SMB or use the REST APIs, you have many options. For example, you can write a custom utility or use Microsoft solutions. Here's a table that lists the most common utilities.
+The finance company has existing systems, data, and file shares. You need to migrate this data into Azure Files, so you have another decision to make. Because you can connect over SMB or use the REST APIs, you have many options. For example, you can write a custom utility or use Microsoft solutions. The table lists the most common utilities.
 
 ![Most common utilities](../media/2-azure-data-transfer-options.svg)
 
