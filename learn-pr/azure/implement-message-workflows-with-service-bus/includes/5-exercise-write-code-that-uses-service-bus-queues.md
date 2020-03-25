@@ -203,7 +203,7 @@ az servicebus queue show \
 
 ## Retrieve a message from the queue
 
-To run the component that sends a message about a sale, run this command in the Cloud Shell:
+To run the component that receives a message about a sale, run this command in the Cloud Shell:
 
 ```bash
 dotnet run -p privatemessagereceiver

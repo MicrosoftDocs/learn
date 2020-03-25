@@ -20,7 +20,7 @@ A container image is immutable. Once you've built an image, the image can't be c
 
 The host OS is the OS on which the Docker engine runs. Docker containers running on Linux share the host OS kernel and don't require a container OS as long as the binary can access the OS kernel directly.
 
-![An illustration showing a Docker image with no base OS and the dependency on the host OS Kernel.](../media/3-container-scratch-host-os.svg)
+:::image type="content" source="../media/3-container-scratch-host-os.svg" alt-text="Diagram showing a Docker image with no base OS and the dependency on the host OS Kernel.":::
 
  However, Windows containers need a container OS. The container depends on the OS kernel to manage services such as the file system, network management, process scheduling, and memory management.
 
@@ -28,7 +28,7 @@ The host OS is the OS on which the Docker engine runs. Docker containers running
 
 The container OS is the OS that is part of the packaged image. We have the flexibility to include different versions of Linux or Windows OSs in a container. This flexibility allows us to access specific OS features or install additional software our applications may use.
 
-![An illustration showing a Docker image with an Ubuntu base OS and the dependency on the host OS Kernel.](../media/3-container-ubuntu-host-os.svg)
+:::image type="content" source="../media/3-container-ubuntu-host-os.svg" alt-text="Diagram showing a Docker image with an Ubuntu base OS and the dependency on the host OS Kernel.":::
 
 The container OS is isolated from the host OS and is the environment in which we deploy and run our application. Combined with the image's immutability, this isolation means the environment for our application running in development is the same as in production.
 
@@ -38,7 +38,7 @@ In our example, we're using Ubuntu Linux as the container OS and this OS doesn't
 
 `Unionfs` is used to create Docker images. `Unionfs` is a filesystem that allows you to stack several directories, called branches, in such a way that it appears as if the content is merged. However, the content is physically kept separate. `Unionfs` allows you to add and remove branches as you build out your file system.
 
-![An illustration showing the stacking of layers in a Docker image.](../media/3-unionfs-diagram.svg)
+:::image type="content" source="../media/3-unionfs-diagram.svg" alt-text="Diagram showing the stacking of layers in a Docker image created with unionfs.":::
 
 For example, assume we're building an image for our web application from earlier. We'll layer the Ubuntu distribution as a base image on top of the boot file system. Next we'll install Nginx and our web app. We're effectively layering Nginx and the web app on top of the original Ubuntu image.
 
