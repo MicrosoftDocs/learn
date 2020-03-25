@@ -19,7 +19,7 @@ When we use Docker, we immediately get access to the benefits containerization o
 
 Containers run without using a virtual machine (VM).  As we saw, the container relies on the host kernel for functions such as file system, network management, process scheduling, and memory management.
 
-![An illustration contrasting VM resource use versus Docker resource use.](../media/5-efficient-use-hardware.svg)
+:::image type="content" source="../media/5-efficient-use-hardware.svg" alt-text="Diagram contrasting VM resource use versus Docker resource use.":::
 
 Compared to a VM, we see that a VM requires an OS installed to provide kernel functions to the running applications inside the VM. Keep in mind that the VM OS also requires disk space, memory, and CPU time. By removing the VM and the additional OS requirement, we can free resources on the host and use it for running other containers.
 
@@ -29,7 +29,7 @@ Docker containers provide security features to run multiple containers simultane
 
 Let's compare this feature to using VMs.
 
-![Image](../media/5-multiple-app-isolation.svg)
+:::image type="content" source="../media/5-multiple-app-isolation.svg" alt-text="Diagram that shows a physical host running multiple VMs.":::
 
  Assume we have a physical host running two VMs. We have three applications that we want to run isolated from each other. We decide to deploy the first app onto VM 1 and the second onto VM2 to separate the two apps from each other. If we now choose to install the third application, we'll need to install another VM to continue this pattern.
 

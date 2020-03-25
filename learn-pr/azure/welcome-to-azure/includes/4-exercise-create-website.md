@@ -50,14 +50,12 @@ In the free Azure sandbox environment, you'll use the pre-created resource group
 
 1. Next, you're presented several options to configure your deployment. Enter the following information:
 
-    | Field | Value |
-    |---|---|
-    | **App Name** | Choose a unique value for the App name. It will form part of a Fully Qualified Domain Name (FQDN). |
-    | **Subscription** | Make sure the **Concierge Subscription** is selected. |
-    | **Resource Group** | Select the **Use existing** radio button, then select the **<rgn>[sandbox resource group name]</rgn>** resource group from the drop-down list. |
-    | **Database Provider** | Select **MySQL in App**. |
-    | **App Service plan/location** | You'll change the App Service plan in the next step. |
-    | **Application Insights** | Leave at the default configuration. |
+    1. **App Name**: Choose a unique value for the App name. It will form part of a Fully Qualified Domain Name (FQDN).
+    1. **Subscription**: Make sure the **Concierge Subscription** is selected.
+    1. **Resource Group**: Select the **Use existing** radio button, then select the **<rgn>[sandbox resource group name]</rgn>** resource group from the drop-down list.
+    1. **Database Provider**: Select **MySQL in App**.
+    1. **App Service plan/location**: You'll change the App Service plan in the next step.
+    1. **Application Insights**: Leave at the default configuration.
 
     Your configuration should look like this:
 
