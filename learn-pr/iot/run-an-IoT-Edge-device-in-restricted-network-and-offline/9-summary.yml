@@ -13,3 +13,57 @@ title: Summary
 durationInMinutes: 15
 content: |
   [!include[](includes/9-summary.md)]
+  quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: 'What does the use of Parent / Child relationships including an IoT Edge Gateway (the parent) and other IoT Devices (the child or leaf devices) enable?'
+    choices: 
+    - content: 'The use of Offline capabilities within an Azure IoT solution'
+      isCorrect: true
+      explanation:  Once messages reach the parent IoT Edge Device, the IoT Edge Modules and Routing will handle the messages as configured; including sending the messages to the Azure IoT Hub when connected.
+    - content: 'The ability to remove child devices within an Azure IoT solution'
+      isCorrect: false
+      explanation: Think about the solution delivered specificcaly addressing the capture of data.
+    - content: 'The ability to add security certificates to child devices within an Azure IoT solution'
+      isCorrect: false
+      explanation: Think about the solution delivered specificcaly addressing the capture of data.
+
+  - content: 'Within the Azure Cloud Shell, what communication protocols were given commands to add Inbound rules to the NSG?'
+    choices: 
+    - content: 'TCP and UDP'
+      isCorrect: false
+      explanation: Remember we are looking for communication protocols.
+    - content: 'SMTP, IMAP & POP3'
+      isCorrect: false
+      explanation: We are not sending emails in this scenario.
+    - content: 'MQTT, AMQP, and HTTPS'
+      isCorrect: true
+      explanation: Correct. Within the Azure Cloud Shell, Inbound rules are added to the NSG for MQTT, AMQP, and HTTPS communication protocols.
+      
+  - content: 'What is the Module Twin for the IoT Edge Hub is called?'
+    choices: 
+    - content: '$edgeHub'
+      isCorrect: true
+      explanation: Correct and it is used to coordinate communications between the IoT Edge Hub running on the device and the Azure IoT Hub service.
+    - content: '$iotHub'
+      isCorrect: false
+      explanation: Incorrect. Please try again.
+    - content: '$iotCentral'
+      isCorrect: false
+      explanation: Incorrect. Please try again.
+    - content: '$edgeCentral'
+      isCorrect: false
+      explanation: Incorrect. Please try again.
+      
+  - content: 'What will the child devices need configured to connect to IoT Hub and the parent IoT Edge Device?'
+    choices: 
+    - content: 'A certificate as issued by IoT Sphere to each child device'
+      isCorrect: false
+      explanation: Parent Gateway would not be required in this scenario.
+    - content: 'A Connection String containing the Symmetric Key and the Gateway Hostname for the Parent IoT Edge Device'
+      isCorrect: true
+      explanation: Correct.
+    - content: 'An Role Based Access Control (RBAC) assignment'
+      isCorrect: false
+      explanation: Incorrect. Please try again.
