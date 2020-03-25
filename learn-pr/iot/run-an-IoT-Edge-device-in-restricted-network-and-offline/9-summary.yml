@@ -13,7 +13,7 @@ title: Summary
 durationInMinutes: 15
 content: |
   [!include[](includes/9-summary.md)]
-  quiz:
+quiz:
   title: Check your knowledge
   questions:
 
