@@ -18,6 +18,9 @@ levels:
 roles:
 - administrator
 - solution-architect
+- business-analyst
+- business-user
+- technology-manager
 products:
 - azure
 - azure-portal
