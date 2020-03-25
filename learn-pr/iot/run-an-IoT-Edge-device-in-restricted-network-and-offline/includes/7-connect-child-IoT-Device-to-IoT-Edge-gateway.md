@@ -18,7 +18,7 @@ In a previous unit, you created the IoT Device Identities in Azure IoT Hub. You 
 
     The Connection String will match the following format:
 
-    ```Bash
+    ```bash
         HostName=<iot-hub-name>.azure-devices.net;DeviceId=DownstreamDevice1;SharedAccessKey=<iot-device-key>;GatewayHostName=<iot-edge-gateway-hostname>
     ```
     Be sure to replace the placeholders with the appropriate values:
@@ -35,7 +35,7 @@ In a previous unit, you created the IoT Device Identities in Azure IoT Hub. You 
 
 1. Run the following command to build the code for the **ChildIoTDevice** simulated device, and execute it to start sending device telemetry:
 
-    ```Bash
+    ```bash
          dotnet run
     ```
 
@@ -45,7 +45,7 @@ In a previous unit, you created the IoT Device Identities in Azure IoT Hub. You 
 
     The terminal output will look similar to the following example:
 
-    ```Bash
+    ```bash
        IoT Hub Quickstarts #1 - Simulated device. Ctrl-C to exit.
 
         User configured CA certificate path: azure-iot-test-only.root.ca.cert.pem
