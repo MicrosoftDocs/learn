@@ -22,7 +22,7 @@ Let's set up a project on SonarCloud. You need to save some information, such as
     * Select **Continue**.
     * Under **Choose a plan** select **Free plan** and then **Create Organization**.
 
-    ![Setting up a SonarCloud project manually through the web interface](../media/3-sonar-cloud-create-project.png)
+    ![Screenshot of setting up a SonarCloud project manually through the web interface with an organization, key, display name, and avatar entered.](../media/3-sonar-cloud-create-project.png)
 
 ## Set up your project for analysis
 
@@ -239,11 +239,11 @@ Here you return to the SonarCloud portal and review the results of your scan.
 
     There are several categories that you can examine. Start with **Reliability** at the top. If you have bugs, they show up here. We have two bugs. Select it to see more details.
 
-    ![The SonarCloud dashboard](../media/3-sonar-scan-dashboard.png)
+    ![Screenshot of SonarCloud dashboard showing 2 bugs (C rating), 4 vulnerabilities (B rating), 4 code smells with 15 minutes of debt (A rating), and 11.5 percent coverage.](../media/3-sonar-scan-dashboard.png)
 
     The first bug recommends that you replace the bold `<b>` tag with the `<strong>` tag.
 
-    ![Bug details on SonarCloud](../media/3-sonar-scan-bug.png)
+    ![Screenshot of SonarCloud bug details for "Replace this <b> tag by <strong>".](../media/3-sonar-scan-bug.png)
 
     You can select **See Rule** to learn more about the rationale behind this recommendation.
 

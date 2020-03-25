@@ -11,7 +11,7 @@ You can have Azure Machine Learning manage environment creation and package inst
 ## Creating environments
 There are multiple ways to create environments in Azure Machine Learning.
 
-### Creating an Environment from a Specification File
+### Creating an environment from a specification file
 
 You can use a Conda or pip specification file to define the packages required in a Python environment, and use it to create an **Environment** object.
 
@@ -36,7 +36,7 @@ env = Environment.from_conda_specification(name='training_environment',
                                            file_path='./conda.yml')
 ```
 
-### Creating an Environment from an Existing Conda Environment
+### Creating an environment from an existing Conda environment
 
 If you have an existing Conda environment defined on your workstation, you can use it to define an Azure Machine Learning environment:
 
@@ -47,7 +47,7 @@ env = Environment.from_existing_conda_environment(name='training_environment',
                                                   conda_environment_name='py_env')
 ```
 
-### Creating an Environment by Specifying Packages
+### Creating an environment by specifying packages
 
 You can define an environment by specifying the Conda and pip packages you need in a **CondaDependencies** object, like this:
 
@@ -61,11 +61,11 @@ deps = CondaDependencies.create(conda_packages=['scikit-learn','pandas','numpy']
 env.python.conda_dependencies = deps
 ```
 
-## Registering and Reusing Environments
+## Registering and reusing environments
 
 After you've created an environment, you can register it in your workspace and reuse it for future experiments that have the same Python dependencies.
 
-### Registering an Environment
+### Registering an environment
 
 Use the **register** method of an **Environment** object to register an environment:
 
@@ -83,7 +83,7 @@ for env_name in env_names:
     print('Name:',env_name)
 ```
 
-### Retrieving and using an Environment
+### Retrieving and using an environment
 
 You can retrieve a registered environment by using the **get** method of the **Environment** class, and then assign it to a **ScriptRunConfig** or **Estimator**.
 

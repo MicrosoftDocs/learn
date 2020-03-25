@@ -21,7 +21,7 @@ For scenarios where you need full container orchestration, including service dis
 
 1. Open the Azure Cloud Shell from the Azure portal using the Cloud Shell icon.
 
-    ![Image showing Cloud Shell icon in the Azure portal](../media/2-portal-cloudshell-access.png)
+    :::image type="icon" source="../media/2-portal-cloudshell-access.png":::
 
 1. Create a new resource group with the name **learn-deploy-aci-rg** so that it will be easier to clean up these resources when you are finished with the module. If you choose a different resource group name, remember it for the rest of the exercises in this module. You also need to choose a region in which you want to create the resource group, for example **East US**.
 
@@ -73,7 +73,7 @@ For scenarios where you need full container orchestration, including service dis
 
 1. From a browser, navigate to your container's FQDN to see it running. You see this.
 
-    ![The sample Node.js container app running in a browser](../media/2-browser.png)
+    :::image type="content" source="../media/2-browser.png" alt-text="Screenshot of the sample Node.js container app running in a browser.":::
 
 ## Summary
 

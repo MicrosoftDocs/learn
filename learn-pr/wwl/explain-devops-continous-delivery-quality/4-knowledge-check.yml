@@ -1,0 +1,73 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explain-devops-continous-delivery-quality.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/06/2020
+  author: wwlpublish
+  ms.author: sallybre
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Why is it difficult to pull together various processes into Continuous Delivery?"
+    choices:
+    - content: "Because increased deployment frequency leads to team burnout."
+      isCorrect: false
+      explanation: "Sorry, that’s incorrect. This isn't why it’s difficult to pull together various processes into Continuous Delivery."
+    - content: "Because Continuous Delivery requires a combination of people, process, and automation working together."
+      isCorrect: true
+      explanation: "That’s correct. This is why it's difficult to pull together various processes into Continuous Delivery."
+    - content: "Because the waste elimination process is more time-consuming than other processes."
+      isCorrect: false
+      explanation: "Sorry, that’s incorrect. This isn't why it’s difficult to pull together various processes into Continuous Delivery."
+  - content: "Which is the most important question to ask as a way to understand delivery performance in an organization?"
+    choices:
+    - content: "How many deployments does your organization achieve in a week?"
+      isCorrect: false
+      explanation: "Sorry, that’s incorrect. This isn't an important question to ask as a way to understand delivery performance."
+    - content: "How does your organization identify and remedy deployment failures?"
+      isCorrect: false
+      explanation: "Sorry, that’s incorrect. This isn't an important question to ask as a way to understand delivery performance."
+    - content: "How big is your deployment pain to production?"
+      isCorrect: true
+      explanation: "That’s correct. This is the important question to ask as a way to understand delivery performance."
+  - content: "Which of the following is a benefit of Continuous Delivery?"
+    choices:
+    - content: "Faster ROI"
+      isCorrect: true
+      explanation: "That’s correct. This is one of the many benefits of Continuous Delivery."
+    - content: "Improved code production metrics"
+      isCorrect: false
+      explanation: "Sorry, that’s incorrect. This isn't one of the many benefits of Continuous Delivery."
+    - content: "Fault-focused monitoring"
+      isCorrect: false
+      explanation: "Sorry, that’s incorrect. This isn't one of the many benefits of Continuous Delivery."
+  - content: "What false assumption should you beware of when striving for Continuous Quality?"
+    choices:
+    - content: "Quality should be assured by tests conducted by a dedicated team"
+      isCorrect: false
+      explanation: "Sorry, that’s incorrect. This isn't a false assumption about Continuous Quality."
+    - content: "Quality is primarily a marketing asset and yields few other benefits"
+      isCorrect: false
+      explanation: "Sorry, that’s incorrect. This isn't a false assumption about Continuous Quality."
+    - content: "The more bugs that are found and fixed, the better the quality"
+      isCorrect: true
+      explanation: "That’s correct. This is a false assumption about Continuous Quality."
+  - content: "Who is primarily responsible for the existence of bugs in software?"
+    choices:
+    - content: "The product owner and the coder"
+      isCorrect: false
+      explanation: "Sorry, that’s incorrect. These aren't the only people responsible for the existence of bugs in the software."
+    - content: "The product owner, the coder and the tester"
+      isCorrect: true
+      explanation: "That’s correct. All of these persons, together, are primarily responsible for bugs in software."
+    - content: "The coder and the tester"
+      isCorrect: false
+      explanation: "Sorry, that’s incorrect. These aren't the only people responsible for the existence of bugs in the software."

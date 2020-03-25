@@ -1,6 +1,6 @@
 After you have created a pipeline, you can publish it to create a REST endpoint through which the pipeline can be run on demand.
 
-## Publishing a Pipeline
+## Publishing a pipeline
 
 To publish a pipeline, you can call its **publish** method, as shown here:
 
@@ -30,7 +30,7 @@ rest_endpoint = published_pipeline.endpoint
 print(rest_endpoint)
 ```
 
-## Using a Published Pipeline
+## Using a published pipeline
 
 To initiate a published endpoint, you make an HTTP request to its REST endpoint, passing an authorization header with a token for a service principal with permission to run the pipeline, and a JSON payload specifying the experiment name. The pipeline is run asynchronously, so the response from a successful REST call includes the run ID. You can use this to track the run in Azure Machine Learning studio.
 

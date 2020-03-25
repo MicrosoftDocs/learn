@@ -22,7 +22,7 @@ We already discussed economization, or the mixing of colder outside air with the
 
 ![Global average temperature map from Wikipedia, 2014](../media/temperature-map.png)
 
-_Figure 10: Global average temperature map_ ([Wikipedia, 2014](http://commons.wikimedia.org/wiki/file:annual_average_temperature_map.jpg))
+_Figure 10: Global average temperature map_ ([Wikipedia, 2014](https://commons.wikimedia.org/wiki/File:Annual_Average_Temperature_Map.jpg))
 
 As you will see in the section about power usage effectiveness (PUE) later in this module, the energy utilization will be higher during hot months and lower during cold months. This is due to the efficiency gains from "free cooling" (using either air economizers or naturally cold water).
 
@@ -74,7 +74,7 @@ The internet relies on fiber optics to send and receive data over long distances
 
 ![Internet connectivity from Wikipedia, 2014](../media/internet-connectivity.png)
 
-_Figure 19: Internet connectivity_ ([Wikipedia, 2014](http://en.wikipedia.org/wiki/file:internet_connectivity_distribution_%26_core.svg))
+_Figure 19: Internet connectivity_ ([Wikipedia, 2014](https://en.wikipedia.org/wiki/File:Internet_Connectivity_Distribution_%26_Core.svg))
 
 In order to support a large amount of users, a cloud provider should choose a datacenter location that is in a city/region that has a tier 2 or tier 1 provider. This will also decrease the latency to global users due to fewer hops (each router is a hop) between the client and the server. A datacenter's requirement for uplink to the internet ranges from a few megabits per second to several hundred gigabits per second, and that much bandwidth simply is not yet available everywhere.
 

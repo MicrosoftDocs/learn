@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.cmu-cloud-computing.how-cloud-works.cmu-virtualization
+metadata:
+  title: Understand virtualization
+  description: Carnegie Mellon University's Cloud Developer course. Take a deep dive into virtualization by understanding its formal definition as well as the different types of virtual machines.
+  ms.date: 03/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  showCreativeCommonsFooter: true
+title: Understand virtualization
+summary: Take a deep dive into virtualization by understanding its formal definition as well as the different types of virtual machines.
+abstract: | 
+  In this module, you will:
+  - Define virtualization, and distinguish between its applicability to a single system component and to an entire machine
+  - Identify different virtual machine types, and indicate the main technique that enables each type.
+  - Recognize the different classes of system virtual machines.
+  
+  In partnership with Dr. Majd Sakr and Carnegie Mellon University.
+prerequisites: |
+  - Understand what cloud computing is, including cloud service models, and common cloud providers
+  - Know the technologies that enable cloud computing
+  - Understand how cloud service providers pay for and bill for the cloud
+  - Know what datacenters are and why they exist
+  - Know how datacenters are set up, powered, and provisioned
+  - Understand how cloud resources are provisioned and metered
+  - Be familiar with the concept of virtualization
+iconUrl: /learn/achievements/cmu-cloud-developer/understand-virtualization.svg
+levels:
+- beginner
+roles:
+- developer
+- student
+products:
+- azure
+units:
+- learn.cmu-cloud-computing.how-cloud-works.cmu-virtualization.0-introduction
+- learn.cmu-cloud-computing.how-cloud-works.cmu-virtualization.1-virtualization
+- learn.cmu-cloud-computing.how-cloud-works.cmu-virtualization.2-virtual-machine-type
+- learn.cmu-cloud-computing.how-cloud-works.cmu-virtualization.3-summary
+badge:
+  uid: learn.cmu-cloud-computing.how-cloud-works.cmu-virtualization.badge

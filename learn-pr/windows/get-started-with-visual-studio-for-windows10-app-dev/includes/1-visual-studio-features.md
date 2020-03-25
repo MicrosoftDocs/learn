@@ -6,7 +6,7 @@ Visual Studio is a complete Integrated Development Environment (IDE) that you ca
 
 There are three editions of Visual Studio 2017: Community, Professional, and Enterprise. Visual Studio Community is free, and it's the edition we'll use in this module. If you're using a different edition, the screen images might look slightly different.
 
-You can download and install Visual Studio directly from the [Visual Studio](http://www.visualstudio.com) website. For more complete instructions and some automated scripts to make it even easier, check out the *Introduction to Windows 10* module.
+You can download and install Visual Studio directly from the [Visual Studio](https://www.visualstudio.com) website. For more complete instructions and some automated scripts to make it even easier, check out the *Introduction to Windows 10* module.
 
 > [!NOTE]
 > Don't confuse Visual Studio with Visual Studio Code. [Visual Studio Code](https://code.visualstudio.com) is a standalone editor.
