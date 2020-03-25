@@ -27,9 +27,9 @@ These TCP/IP port numbers are for the supported protocols:
 
 1. Within the **Azure Cloud Shell**, to find the name of the Network Security Group (NSG) in use by the Azure IoT Edge Gateway VM, enter the following command:
 
-        ```CLI
-         az network nsg list --resource-group AZ-220-IoTEdgeResources -o table
-        ```
+    ```CLI
+     az network nsg list --resource-group AZ-220-IoTEdgeResources -o table
+    ```
 
 1. Within the **Azure Cloud Shell**, run the following commands to add **Inbound rules** to the NSG for MQTT, AMQP, and HTTPS communication protocols:
 
