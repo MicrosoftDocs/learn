@@ -24,7 +24,7 @@ quiz:
   - content: 'Tags applied at a resource group level are propagated to resources within the resource group.'
     choices:
     - content: 'True'
-      explanation: 'Tags are not inherited. You need to apply tags to every supported resource that you need tagged.'
+      explanation: 'Tags are not inherited. You must apply tags to every supported resource that you need tagged.'
       isCorrect: false
     - content: 'False'
       isCorrect: true
@@ -38,7 +38,7 @@ quiz:
       isCorrect: true
     - content: 'Role-based access control can be applied to the resource group.'
       isCorrect: false
-  - content: 'Which of the following might be a good usage of tags?'
+  - content: 'Which of the following approaches might be a good usage of tags?'
     choices:
     - content: 'Using tags to associate a cost center with resources for internal chargeback'
       isCorrect: false
@@ -48,7 +48,7 @@ quiz:
       isCorrect: false
     - content: 'All of the above are good ways to use tags'
       isCorrect: true
-  - content: 'Which of the following would be the most efficient way to ensure a naming convention was followed across your subscription?'
+  - content: 'Which of the following approaches would be the most efficient way to ensure a naming convention was followed across your subscription?'
     choices:
     - content: 'Send out an email with the details of your naming conventions and hope it is followed'
       isCorrect: false
@@ -56,7 +56,7 @@ quiz:
       isCorrect: true
     - content: 'Give all other users except for yourself read-only access to the subscription. Have all requests to create resources sent to you so you can review the names being assigned to resources, and then create them.'
       isCorrect: false
-  - content: 'Which of the following would be good to put a resource lock on?'
+  - content: 'Which of the following items would be good to put a resource lock on?'
     choices:
     - content: 'An ExpressRoute circuit with connectivity back to your on-premises network'
       isCorrect: true

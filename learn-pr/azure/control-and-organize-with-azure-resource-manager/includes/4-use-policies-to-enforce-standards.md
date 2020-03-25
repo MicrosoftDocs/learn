@@ -16,7 +16,7 @@ You'd like to ensure that all resources have the **Department** tag associated w
 
 1. Select the **Definitions** pane from the **Authoring** section in the left menu.
 
-1. You should see a list of built-in policies that you can use. In this case, you'll going to create our own custom policy. Click **+ Policy definition** in the top menu.
+1. You should see a list of built-in policies that you can use. In this case, you're going to create our own custom policy. Click **+ Policy definition** in the top menu.
 
 1. This brings up the **New policy definition** dialog. To set the **Definition location**, click the blue **...**. Select the subscription for the policy to be stored in, which should be the same subscription as our resource group. Click **Select**.
 

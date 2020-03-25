@@ -2,7 +2,7 @@ You've gone through your resources and moved them into resource groups that are 
 
 ## What are tags?
 
-Tags are name/value pairs of text data that you can apply to resources and resource groups. Tags allow you to associate custom details about your resource, in addition to the standard Azure properties a resource has the following:
+Tags are name/value pairs of text data that you can apply to resources and resource groups. Tags allow you to associate custom details about your resource, in addition to the standard Azure properties a resource has the following properties:
 
 - department (like finance, marketing, and more)
 - environment (prod, test, dev)
@@ -32,11 +32,11 @@ Let's apply some tags to the resources you created. Recall that you created a re
 
     ![Screenshot of Azure portal showing edit columns dialog with available columns on the left and selected columns on the right.](../media/3-add-tag-column.PNG)
 
-    You should now see the tags column, but it will be empty since you haven't added any tags yet. We'll add the tags directly here.
+    You should now see the tags column, but it will be empty since you haven't added any tags yet. You'll add the tags directly here.
 
-1. You can also add tags to any resource that supports it on the resource's **Tags** panel. In the list of resources, you should see an ellipsis menu (**...**). Select the **...** for the **msftlearn-vnet1** resource, then select **Edit tags**.
+1. You can also add tags to any resource that supports it on the resource's **Tags** panel. In the list of resources, you should see an ellipsis menu (**...**). Select the **...** for the **msftlearn-vnet1** resource, then select **Edit tags** to display the **Edit tags** dialog.
 
-1. This will display the **Edit tags** dialog. Let's add a couple tags to this virtual network. In the **Name** box type `Department`, and in the **Value** box type `Finance`. Click **Save** to save your changes.
+1. You'll add a couple tags to this virtual network. In the **Name** box type `Department`, and in the **Value** box type `Finance`. Click **Save** to save your changes.
 
     ![Screenshot of Azure portal showing the edit tags dialog with new tag name and value entered.](../media/3-add-tag-1.PNG)
 
@@ -60,7 +60,7 @@ Let's apply some tags to the resources you created. Recall that you created a re
 
     ![Screenshot of Azure portal resource list filtered on the training environment tag.](../media/3-tag-filter.PNG)
 
-1. We can further filter these resources by additionally filtering on the **Department:Finance** or **Department:Marketing** tags.
+1. You can further filter these resources by additionally filtering on the **Department:Finance** or **Department:Marketing** tags.
 
 ## Use tags for organization
 
@@ -72,4 +72,4 @@ You can retrieve all the resources in your subscription with a specific tag name
 
 Tagging resources can also help in monitoring to track down impacted resources. Monitoring systems could include tag data with alerts, giving you the ability to know exactly who is impacted. In our example above, you applied the **Department:Finance** tag to the **msftlearn-vnet1** resource. If an alarm was thrown on **msftlearn-vnet1** and the alarm included the tag, you'd know that the finance department may be impacted by the condition that triggered the alarm. This contextual information can be valuable if an issue occurs.
 
-It's also common for tags to be used in automation. If you want to automate the shutdown and startup of virtual machines in development environments during off-hours to save costs, you can use tags to assist in this. Add a **shutdown:6PM** and **startup:7AM** tag to the virtual machines, then create an automation job that looks for these tags, and shuts them down or starts them up based on the tag value. There are several solutions in the Azure Automation Runbooks Gallery that use tags in a similar manner to accomplish this.
+It's also common for tags to be used in automation. If you want to automate the shutdown and startup of virtual machines in development environments during off-hours to save costs, you can use tags to assist in this automation. Add a **shutdown:6PM** and **startup:7AM** tag to the virtual machines, then create an automation job that looks for these tags, and shuts them down or starts them up based on the tag value. There are several solutions in the Azure Automation Runbooks Gallery that use tags in a similar manner to accomplish this result.

@@ -25,4 +25,4 @@ Here are some best practices you should use when setting up resources.
 
 - Segregate duties within your team and grant only the amount of access to users that they need to perform their jobs. Instead of giving everybody unrestricted permissions in your Azure subscription or resources, allow only specific actions at a particular scope.
 - When planning your access control strategy, grant users the lowest privilege level that they need to do their work.
-- Use **Resource Locks** to ensure critical resources aren't modified or deleted (more on that next!).
+- Use **Resource Locks** to ensure critical resources aren't modified or deleted (as you'll see in the next unit).
