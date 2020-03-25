@@ -1,4 +1,4 @@
-In a previous module, we learned about a helper function, `isnumeric()`, that allows us to understand the contents of a string, and whether we could convert that string into an `int` or `float`. A helper method is a function that's available to values of a given data type, and provides additional helpful functionality. We even briefly toured a few additional `is___()` style string helper methods.
+In a previous module, we learned about a helper function, `isnumeric()`, that allows us to understand the contents of a string, and whether we can convert that string into an `int` or `float`. A helper method is a function that's available to values of a particular data type, and provides additional helpful functionality. We even briefly toured a few additional `is___()` style string helper methods.
 
 There are many other helper methods available to strings, and in this exercise we'll work with over a dozen that you'll likely use when building real-world Python programs.
 
@@ -31,7 +31,7 @@ The second time we call the function as a member of the literal string. In other
 
 The third time we call the function as a member of a variable. Like the previous example, we access the `str` helper method by using the member access operator on the variable that points to a literal string. Again, we don't need to pass anything as an argument, because the function operates on the string our variable points to.
 
-There are multiple ways to call these helper methods, and you'll likely use the one that makes the most sense in a given context.
+There are multiple ways to call these helper methods, and you'll likely use the one that makes the most sense in a particular context.
 
 For the remainder of this exercise, we'll usually use the third example. However, the important takeaway is to understand there are different ways to achieve the same result when you're writing code. Even if we do not demonstrate it here, you can use one of several different styles when you're calling these methods.
 
@@ -161,7 +161,7 @@ print('.' + message.lstrip() + '.')
 print('.' + message.rstrip() + '.')
 print('.' + message.strip() + '.')
 ```
-Here, we concatenate a literal string that contains a period symbol (``.``) before and after the `message` variable and the call to one of the stripping functions. This enables you to see how it impacts the content of the string.
+Here, we concatenate a literal string that contains a period symbol (``.``) before and after the `message` variable and the call to one of the stripping functions. This enables you to see how it affects the content of the string.
 
 When you run the code, you should see the following output:
 
