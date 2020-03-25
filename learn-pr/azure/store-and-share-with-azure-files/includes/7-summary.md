@@ -16,3 +16,4 @@ To learn more about Azure Files, please visit the following articles:
 - [Use an Azure file share with Windows](https://docs.microsoft.com/azure/storage/files/storage-how-to-use-files-windows)
 - [Use Azure Files with Linux](https://docs.microsoft.com/azure/storage/files/storage-how-to-use-files-linux)
 - [Mount Azure file share over SMB with macOS](https://docs.microsoft.com/azure/storage/files/storage-how-to-use-files-mac)
+- [Deploy Azure File Sync](https://docs.microsoft.com/azure/storage/files/storage-sync-files-deployment-guide)
