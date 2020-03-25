@@ -58,7 +58,7 @@ In this exercise, you will monitor events from the **ChildIoTDevice** are being 
 
 1. Within the **Azure Cloud Shell** connect to the **IoTEdgeGateway** VM using ssh with the following command:
 
-    ```Bash
+    ```bash
       ssh <username>@<ip-address>
     ```
 
@@ -73,7 +73,7 @@ In this exercise, you will monitor events from the **ChildIoTDevice** are being 
 
 1. Once connected to the **IoTEdgeGateway** VM via ssh, run the following command to reset the IoT Edge Runtime.
 
-    ```Bash
+    ```bash
         sudo systemctl restart iotedge
     ```
 
@@ -83,7 +83,7 @@ In this exercise, you will monitor events from the **ChildIoTDevice** are being 
 
 1. Run the az iot hub monitor-events command again within the **Azure Cloud Shell** to start monitoring the Events being received by the Azure IoT Hub:
 
-    ```Bash
+    ```bash
         az iot hub monitor-events --hub-name AZ-220-HUB-_{YOUR-ID}_
     ```
 
