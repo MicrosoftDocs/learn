@@ -1,4 +1,3 @@
-# Train the LUIS Model
 
 We're now ready to train our model.
 
