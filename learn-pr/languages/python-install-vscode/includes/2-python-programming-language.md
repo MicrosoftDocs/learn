@@ -50,8 +50,8 @@ If the first number is `2`, you'll need to install Python 3. We'll walk through 
 
 To determine if your Linux computer already has Python 3 installed:
 
-- Open a Linux terminal session. The instructions for opening this session depend on your distribution and version of Linux. Check the online documentation for your Linux distribution for instructions on how to open a terminal.
-- Enter the following command and then select the <kbd>Enter</kbd> key on your keyboard:
+1. Open a Linux terminal session. The instructions for opening this session depend on your distribution and version of Linux. Check the online documentation for your Linux distribution for instructions on how to open a terminal.
+1. Enter the following command and then select the <kbd>Enter</kbd> key on your keyboard:
 
 ```bash
 python3 --version
@@ -81,8 +81,8 @@ In this case, you'll need to install Python 3. We'll walk through the installati
 
 To determine if your macOS computer already has Python 3 installed:
 
-- Open the Terminal app. To locate and start it, you can use the <kbd>Command</kbd> + <kbd>Spacebar</kbd> key combination to search by using Spotlight.  In the search box, enter **Terminal**. You should see the Terminal app in the results. Use the <kbd>Return</kbd> key to start the app.
-- Enter the following command at the command prompt:
+1. Open the Terminal app. To locate and start it, you can use the <kbd>Command</kbd> + <kbd>Spacebar</kbd> key combination to search by using Spotlight.  In the search box, enter **Terminal**. You should see the Terminal app in the results. Use the <kbd>Return</kbd> key to start the app.
+1. Enter the following command at the command prompt:
 
 ```bash
 python3 --version
