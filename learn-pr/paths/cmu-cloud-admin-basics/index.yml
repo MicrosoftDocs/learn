@@ -25,7 +25,7 @@ summary: |
 
   In partnership with Dr. Majd Sakr and Carnegie Mellon University.
 prerequisites: None.
-iconUrl: /learn/achievements/cmu-cloud-admin/cloud-admin-basics.svg
+iconUrl: /learn/achievements/cmu-cloud-admin/cmu-cloud-admin-basics.svg
 levels:
 - beginner
 roles:
@@ -39,4 +39,4 @@ modules:
 - learn.cmu-cloud-admin.secure-cloud-resources
 
 trophy:
-  uid: learn.cmu-cloud-admin.cmu-cloud-admin-basics.trophy 
+  uid: learn.cmu-cloud-admin.cmu-cloud-admin-basics.trophy
