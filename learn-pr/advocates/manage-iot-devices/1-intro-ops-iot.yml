@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.manage-iot-devices.1-intro-to-ops-in-iot
 metadata:
-  description: This is an introduction to IoT for IT Admins
+  description: This module is an introduction to the Internet-of-Things, for IT Admins.
   author: lnyswonger
   ms.date: 09/24/2018
   ms.author: luken
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-title: Introducing IoT for Ops
+title: Introduction to the Internet-of-Things
 durationInMinutes: 2
 content: |
   [!include[](includes/1-intro-to-ops-in-iot.md)]

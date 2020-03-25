@@ -45,7 +45,7 @@ A device must be registered with your IoT hub before the device can connect.
 
 1. In your IoT hub navigation menu, open **IoT devices**, then click **Add** to register a device in your IoT hub.
 
-    ![Screenshot showing how to add a device to your IoT hub](../media/iot-admin-name-hub.png)
+    ![Screenshot showing how to add a device to your IoT hub](../media/iot-admin-create-device.png)
 
 1. Enter a **Device ID** for the new device. Choose a meaningful ID to represent your device, something like "PiHubDevice-your-id", again replacing "your-id" with something appropriate. Device IDs are case sensitive.
 
@@ -64,9 +64,9 @@ A device must be registered with your IoT hub before the device can connect.
 
 ## Send simulated telemetry
 
-1. Open the [Raspberry Pi Azure IoT Simulator](https://azure-samples.github.io/raspberry-pi-web-simulator?azure-portal=true).
+1. Right-click [Raspberry Pi Azure IoT Simulator](https://azure-samples.github.io/raspberry-pi-web-simulator?azure-portal=true), and select **Open in new window**.
 
-1. Replace the placeholder in Line 15 with the Azure IoT hub device connection string from your text file.
+1. Replace the placeholder in line 15 with the Azure IoT hub device connection string from your text file.
 
     ![Screenshot showing where to replace the device connection string](../media/Line15.png)
 
@@ -90,5 +90,3 @@ So what's happening? IoT hub is receiving the device-to-cloud messages sent from
 
    ![Screenshot showing the Pi simulator run button](../media/iot-admin-device-metrics.png)
 
-<!--Reference links
-https://docs.microsoft.com/azure/iot-hub/iot-hub-raspberry-pi-web-simulator-get-started-->
