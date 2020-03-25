@@ -117,12 +117,12 @@ Before continuing, it is essential to ensure that the user profile for the IoT E
 
 1. Once connected, the terminal will change to show the name of the Linux VM, similar to the following and reports which VM you are connected to.
 
-    ```Bash
+    ```bash
         username@AZ220EdgeVM{YOUR-ID}:~$
     ```
 
 1. To view the running IoT Edge modules, enter the following command:
-    ```Bash
+    ```bash
         iotedge list
     ```
 
@@ -138,19 +138,19 @@ Before continuing, it is essential to ensure that the user profile for the IoT E
 
 1. To confirm the issue with the directory permission, enter the following command:
 
-    ```Bash
+    ```bash
         iotedge logs edgeHub
     ```
 
     The terminal will output the current log - if you scroll through the log you will see the relevant entry:
 
-    ```Bash
+    ```bash
          Unhandled Exception: System.AggregateException: One or more errors occurred. (Access to the path '/iotedge/storage/edgeHub' is denied.) ---> System.UnauthorizedAccessException: Access to the path '/iotedge/storage/edgeHub' is denied. ---> System.IO.IOException: Permission denied
     ```
 
 1. To update the directory permissions, enter the following commands:
 
-    ```Bash
+    ```bash
         sudo chown $( whoami ):iotedge /etc/iotedge/storage/
         sudo chmod 775 /etc/iotedge/storage/
     ```
@@ -159,14 +159,14 @@ Before continuing, it is essential to ensure that the user profile for the IoT E
 
 1. To restart the edgeHub module and verify it started, enter the following commands:
 
-    ```Bash
+    ```bash
         iotedge restart edgeHub
         iotedge list
     ```
 
     You should see that the edgeHub module is now running:
 
-    ```Bash
+    ```
         NAME             STATUS           DESCRIPTION      CONFIG
         edgeAgent        running          Up 13 minutes    mcr.microsoft.com/azureiotedge-agent:1.0
         edgeHub          running          Up 6 seconds     mcr.microsoft.com/azureiotedge-hub:1.0
