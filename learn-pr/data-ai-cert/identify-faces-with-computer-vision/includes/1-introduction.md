@@ -1,4 +1,3 @@
-# Introduction
 
 Faces are everywhere. Earth is filled with more than 7,500,000,000 faces, each one of them unique. Although faces change over time with age and other conditions, the human brain excels in its ability to detect, identify, and recognize faces.
 
