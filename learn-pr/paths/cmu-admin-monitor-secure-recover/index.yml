@@ -1,0 +1,41 @@
+### YamlMime:LearningPath
+uid: learn.cmu-cloud-admin.cmu-monitor-secure-recover
+metadata:
+  title: Safeguarding cloud resources
+  description: The third and final learning path in a course on Cloud Administration from Carnegie Mellon University. Learn to monitor your cloud resources, keep them safe, and protect or recover them in the case of a disaster.
+  brand: azure
+  ms.date: 3/31/2019
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  showCreativeCommonsFooter: true
+title: Safeguarding cloud resources
+summary: |
+  Learn to monitor your cloud resources, keep them safe, and protect or recover them in the case of a disaster.
+
+  In this learning path, you will:
+    - Learn why and how to monitor cloud services
+    - Describe what KPIs are and how they differ from metrics
+    - Be familiar with different types of security
+    - Be familiar with some of the main threats to cloud security
+    - Understand the meaning of “fault tolerance”
+    - Understand the role that backup services play in disaster response and recovery
+
+
+  In Partnership with Dr. Majd Sakr and Carnegie Mellon University.
+prerequisites: none
+iconUrl: /learn/achievements/cmu-cloud-admin/cmu-monitor-secure-recover.svg
+levels:
+- beginner
+roles:
+- administrator
+- student
+products:
+- azure
+modules:
+- learn.cmu-cloud-admin.cmu-monitor-cloud-resources
+- learn.cmu-cloud-admin.cmu-cloud-security
+- learn.cmu-cloud-admin.cmu-disaster-recovery-backup
+trophy:
+  uid: learn.cmu-cloud-admin.cmu-monitor-secure-recover.trophy
