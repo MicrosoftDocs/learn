@@ -26,7 +26,7 @@ prerequisites: |
   -	Experience using Visual Studio, or Visual Studio Code, at the beginner level 
 ### iconUrl: /learn/achievements/generic-badge.svg
 ### iconUrl: /learn/achievements/iot/iot-hub-conveyor-belt-vibration-detection.svg
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/Run-IoT-Edge-device-in-restricted-network-and-offline.svg
 ### hidden: true
 ratingEnabled: true
 levels:
