@@ -75,7 +75,7 @@ The two environment variables you created in the last part, `COSMOS_DB_ENDPOINT`
 
     Once the app is available, you see this.
 
-    ![Azure voting application with two choices, cats or dogs.](../media/4-azure-vote.png)
+    :::image type="content" source="../media/4-azure-vote.png" alt-text="Screenshot that shows the Azure voting application with two choices in a browser. Cats and Dogs.":::
 
     Try casting a vote for cats or dogs. Each vote is stored in your Azure Cosmos DB instance.
 
