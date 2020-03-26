@@ -1,6 +1,6 @@
 Code challenges throughout these modules will reinforce what you've learned and help you gain some confidence before continuing on.
 
-## Challenge - Build a calorie counter
+## What you'll build
 
 In this challenge, you build a calorie counter that prompts the user for:
 
