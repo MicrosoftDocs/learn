@@ -165,7 +165,7 @@ The Products Manager API is about to get serious style upgrade courtesy of you -
 
 1. Notices that the URL's for your function endpoints are now different.
 
-   ![Screenshot of the VS Code terminal showing endpoints running on new routes.](../media/restful-endpoints.png)
+   :::image type="content" source="../media/restful-endpoints.png" alt-text="Screenshot of the VS Code terminal showing endpoints running on new routes." loc-scope="vs-code":::
 
 Look at that stunning API. It's simply gorgeous. Notice how you specified the same exact same route for the CreateProduct, UpdateProduct and DeleteProduct functions? Only the HTTP request method is different. You've turned three URL's into one while still having three endpoints. You're a magician. That's the power of REST.
 

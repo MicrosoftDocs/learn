@@ -88,7 +88,7 @@ In this exercise, you'll create a new Java web app using the `maven-archetype-we
 
 1. Open a new browser tab by using the URL from the JSON that was returned by the `curl` command you ran earlier, appending `MyWebApp/` to the end of the URL. For example, using the above illustration, that URL would be https:\//gateway18.westeurope.console.azure.com/n/cc-1829663c/cc-1829663c/proxy/8000/MyWebApp/. You should see **Hello World!** displayed in your browser.
 
-    ![Example web app running on Tomcat in a web browser](../media/3-tomcat-server-response.png)
+    :::image type="content" source="../media/3-tomcat-server-response.png" alt-text="Example web app running on Tomcat in a web browser." loc-scope="other"::: <!-- no-loc -->
 
 1. Quit the web server by typing <kbd>Ctrl</kbd>+<kbd>C</kbd> in the Cloud Shell.
 
