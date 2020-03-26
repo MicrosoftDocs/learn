@@ -1,24 +1,24 @@
 The Fruit Smoothies' ratings website consists of several components. There's a web frontend, a document database that stores captured data, and a RESTful ratings API that allows the web frontend to communicate with the database. The development team is using MongoDB as the document store database of choice for the ratings website.
 
-In the previous unit, we deployed the ratings API. We'll continue our deployment and deploy the ratings web front end. The ratings web front end is a Node.js application. Recall that we've already created an Azure Container Registry instance. We used it to build a Docker image of the front end and store it in a repository.
+In the previous unit, you deployed the ratings API. You'll continue your deployment and deploy the ratings web front end. The ratings web front end is a Node.js application. Recall that you've already created an Azure Container Registry instance. You used it to build a Docker image of the front end and store it in a repository.
 
 :::image type="content" source="../media/06-arch-3.svg" border="false" alt-text="Diagram that shows the deployed resources on the Azure Kubernetes Service cluster.":::
 
-In this exercise, we'll deploy that Docker image of the front end to Azure Kubernetes Service (AKS) by creating a Kubernetes deployment. We'll then expose it through a load balancer by creating a Kubernetes service. Additionally, we'll configure the front end to connect to the ratings API that we already deployed.
+In this exercise, you'll deploy that Docker image of the front end to Azure Kubernetes Service (AKS) by creating a Kubernetes deployment. You'll then expose it through a load balancer by creating a Kubernetes service. Additionally, you'll configure the front end to connect to the ratings API that you already deployed.
 
-Before we start with the exercise steps, let's define some of the items mentioned.
+Before you start with the exercise steps, let's define some of the items mentioned.
 
 ### What is a Kubernetes deployment?
 
-A Kubernetes deployment gives us a way to provide declarative updates for Pods. We describe the desired state of the workload in a deployment manifest file, and use `kubectl` to submit the manifest to the Deployment Controller. The Deployment Controller in turn actions the desired state of the defined workload, for example, deploy a new Pod, increase the Pod count, or decrease the Pod count.
+A Kubernetes deployment gives you a way to provide declarative updates for Pods. You describe the desired state of the workload in a deployment manifest file, and use `kubectl` to submit the manifest to the Deployment Controller. The Deployment Controller in turn actions the desired state of the defined workload, for example, deploy a new Pod, increase the Pod count, or decrease the Pod count.
 
 ### What is a Kubernetes service?
 
-A Service is a Kubernetes object that provides stable networking for Pods by exposing them as a network service. We use Kubernetes Services to enable communication between nodes, pods, and users of our application, both internal and external, to our cluster. A Service, just like a node or Pod, gets an IP address assigned by Kubernetes when we create them. Services is also assigned a DNS name based on the service name, and an IP port.
+A Service is a Kubernetes object that provides stable networking for Pods by exposing them as a network service. You use Kubernetes Services to enable communication between nodes, pods, and users of your application, both internal and external, to your cluster. A Service, just like a node or Pod, gets an IP address assigned by Kubernetes when you create them. Services is also assigned a DNS name based on the service name, and an IP port.
 
 ### What is a LoadBalancer?
 
-A LoadBalancer allows us to expose a Kubernetes service on a public IP in the cluster. The type makes the service reachable from outside the cluster.
+A LoadBalancer allows you to expose a Kubernetes service on a public IP in the cluster. The type makes the service reachable from outside the cluster.
 
 ## Create a Kubernetes deployment file for the ratings web front end
 
@@ -62,17 +62,17 @@ A LoadBalancer allows us to expose a Kubernetes service on a public IP in the cl
                 memory: 512Mi
     ```
 
-1. In the `image` key update, the value replaces `<acrname>` with the name of our Container Registry instance.
+1. In the `image` key update, the value replaces `<acrname>` with the name of your Container Registry instance.
 
 1. Review the file, and note the following points:
 
     - **Image**
 
-       We'll create a deployment running the image we pushed in the Container Registry instance we created earlier, for example, `acr4229.azurecr.io/ratings-web:v1`. The container listens to port `8080`. The deployment and the pods are labeled with `app=ratings-web`.
+       You'll create a deployment running the image you pushed in the Container Registry instance you created earlier, for example, `acr4229.azurecr.io/ratings-web:v1`. The container listens to port `8080`. The deployment and the pods are labeled with `app=ratings-web`.
 
     - **Environment variables**
 
-       The ratings front end expects to connect to the API endpoint configured in an `API` environment variable. If we used the defaults and deployed the ratings API service in the `ratingsapp` namespace, the value of that should be `http://ratings-api.ratingsapp.svc.cluster.local`.
+       The ratings front end expects to connect to the API endpoint configured in an `API` environment variable. If you used the defaults and deployed the ratings API service in the `ratingsapp` namespace, the value of that should be `http://ratings-api.ratingsapp.svc.cluster.local`.
 
     - **Resource requests and limits**
 
@@ -82,7 +82,7 @@ A LoadBalancer allows us to expose a Kubernetes service on a public IP in the cl
 
 ## Apply the Kubernetes deployment file
 
-1. Apply the configuration by using the `kubectl apply` command. We'll deploy the application in the `ratingsapp` namespace.
+1. Apply the configuration by using the `kubectl apply` command and deploy the application in the `ratingsapp` namespace.
 
     ```bash
     kubectl apply \
@@ -90,26 +90,26 @@ A LoadBalancer allows us to expose a Kubernetes service on a public IP in the cl
     -f ratings-web-deployment.yaml
     ```
 
-    We'll see an output like this example.
+    You'll see an output like this example.
 
     ```output
     deployment.apps/ratings-web created
     ```
 
-1. We can *watch* the pods rolling out using the `-w` flag with the `kubectl get pods` command. Make sure to query for pods in the `ratingsapp` namespace that are labeled with `app=ratings-web`. Select <kbd>Ctrl+C</kbd> to stop watching.
+1. You can *watch* the pods rolling out using the `-w` flag with the `kubectl get pods` command. Make sure to query for pods in the `ratingsapp` namespace that are labeled with `app=ratings-web`. Select <kbd>Ctrl+C</kbd> to stop watching.
 
     ```bash
     kubectl get pods --namespace ratingsapp -l app=ratings-web -w
     ```
 
-    In a few seconds, we'll see the pods transition to the `Running` state. Select `CTRL+C` to stop watching.
+    In a few seconds, you'll see the pods transition to the `Running` state. Select `CTRL+C` to stop watching.
 
     ```output
     NAME                          READY   STATUS    RESTARTS   AGE
     ratings-web-fcc464b8d-vck96   1/1     Running   0          37s
     ```
 
-    If the pods aren't starting, aren't ready, or are crashing, we can view their logs by using `kubectl logs <pod name> --namespace ratingsapp` and `kubectl describe pod <pod name> --namespace ratingsapp`.
+    If the pods aren't starting, aren't ready, or are crashing, you can view their logs by using `kubectl logs <pod name> --namespace ratingsapp` and `kubectl describe pod <pod name> --namespace ratingsapp`.
 
 1. Check the status of the deployment.
 
@@ -126,7 +126,7 @@ A LoadBalancer allows us to expose a Kubernetes service on a public IP in the cl
 
 ## Create a Kubernetes service file for the ratings API service
 
-Our next step is to simplify the network configuration for our application workloads. We'll use a Kubernetes service to group our pods and provide network connectivity.
+Your next step is to simplify the network configuration for your application workloads. Use a Kubernetes service to group your pods and provide network connectivity.
 
 1. Create a file called `ratings-web-service.yaml` by using the integrated editor.
 
@@ -155,7 +155,7 @@ Our next step is to simplify the network configuration for our application workl
 
     - **Selector**
 
-       The set of pods targeted by a service is determined by the selector. In the following example, Kubernetes load balances traffic to pods that have the label `app: ratings-web`. The label was defined when we created the deployment. The controller for the service continuously scans for pods that match that label to add them to the load balancer.
+       The set of pods targeted by a service is determined by the selector. In the following example, Kubernetes load balances traffic to pods that have the label `app: ratings-web`. The label was defined when you created the deployment. The controller for the service continuously scans for pods that match that label to add them to the load balancer.
 
     - **Ports**
 
@@ -177,7 +177,7 @@ Our next step is to simplify the network configuration for our application workl
         -f ratings-web-service.yaml
     ```
 
-    We'll see an output like this example.
+    You'll see an output like this example.
 
     ```output
     service/ratings-web created
@@ -197,7 +197,7 @@ Our next step is to simplify the network configuration for our application workl
     ratings-web   LoadBalancer   10.2.0.112   13.90.152.99   80:32747/TCP    5m
     ```
 
-    Make note of that EXTERNAL-IP, for example, `13.90.152.99`. We'll use the address to access the application.
+    Make note of that EXTERNAL-IP, for example, `13.90.152.99`. You'll use the address to access the application.
 
 ## Test the application
 
@@ -206,7 +206,7 @@ Now that the ratings-web service has a public IP, open the IP in a web browser, 
 :::image type="content" source="../media/06-ratings-web.png" alt-text="Screenshot of the ratings-web application running in a browser.":::
 
 
-In this exercise, we created a deployment of **ratings-web** and exposed it to the internet through a LoadBalancer type service.
+In this exercise, you created a deployment of **ratings-web** and exposed it to the internet through a LoadBalancer type service.
 
 - **Deployment/ratings-web**: The web front end.
 - **Service/ratings-web**: The load-balanced service, which is exposed on Azure Load Balancer through a public IP.

@@ -4,7 +4,7 @@ Our goal is to deploy an Azure managed Kubernetes service, Azure Kubernetes Serv
 
 :::image type="content" source="../media/02-arch-tmp.svg" border="false" alt-text="Diagram that shows the deployed resources on the Azure Kubernetes Service cluster.":::
 
-There are several tasks that we'll complete to show how Kubernetes abstracts away complex container management and provides us with declarative configuration to orchestrate containers.
+There are several tasks that you'll complete to show how Kubernetes abstracts away complex container management and provides you with declarative configuration to orchestrate containers.
 
 1. Use AKS to deploy a Kubernetes cluster.
 
@@ -29,13 +29,13 @@ There are several tasks that we'll complete to show how Kubernetes abstracts awa
 [!include[](../../../includes/azure-exercise-subscription-prerequisite.md)]
 [!include[](../../../includes/azure-cloudshell-copy-paste-tip.md)]
 
-In this exercise, we'll use AKS to deploy a Kubernetes cluster.
+In this exercise, you'll use AKS to deploy a Kubernetes cluster.
 
 ## Create a new resource group
 
 1. Sign in to [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true) with your Azure account.
 
-1. We're going to reuse some values throughout the deployment scripts. For example, we need to choose a region where we want to create a resource group, for example, **East US**. If we select a different value, remember it for the rest of the exercises in this module. We may need to redefine the value between Cloud Shell sessions. Run the following commands to record these values in Bash variables.
+1. We're going to reuse some values throughout the deployment scripts. For example, you need to choose a region where you want to create a resource group, for example, **East US**. If you select a different value, remember it for the rest of the exercises in this module. You may need to redefine the value between Cloud Shell sessions. Run the following commands to record these values in Bash variables.
 
     ```azurecli
     REGION_NAME=eastus
@@ -44,9 +44,9 @@ In this exercise, we'll use AKS to deploy a Kubernetes cluster.
     VNET_NAME=aks-vnet
     ```
 
-    We can check each value using the `echo` command, for example, `echo $REGION_NAME`.
+    You can check each value using the `echo` command, for example, `echo $REGION_NAME`.
 
-1. Create a new resource group with the name **aksworkshop**. We'll deploy all resources created in these exercises in this resource group. A single resource group makes it easier to clean up the resources after we finish the module.
+1. Create a new resource group with the name **aksworkshop**. Deploy all resources created in these exercises in this resource group. A single resource group makes it easier to clean up the resources after you finish the module.
 
     ```azurecli
     az group create \
@@ -66,13 +66,13 @@ Network address translation (NAT) is then configured so that the pods can reach 
 
 ### What is Azure Container Networking Interface (CNI) networking?
 
-With Azure CNI, the AKS cluster is connected to existing virtual network resources and configurations. In this networking model, every pod gets an IP address from the subnet and can be accessed directly. These IP addresses must be unique across our network space and calculated in advance.
+With Azure CNI, the AKS cluster is connected to existing virtual network resources and configurations. In this networking model, every pod gets an IP address from the subnet and can be accessed directly. These IP addresses must be unique across your network space and calculated in advance.
 
-Some of the features we'll use require us to deploy the AKS cluster by using the *Azure Container Networking Interface networking* configuration.
+Some of the features you'll use require you to deploy the AKS cluster by using the *Azure Container Networking Interface networking* configuration.
 
 For a more detailed comparison, see the *Learn more* section at the end of this module.
 
-1. First, create a virtual network and subnet. Pods deployed in our cluster are assigned an IP from this subnet. Run the following command to create the virtual network.
+1. First, create a virtual network and subnet. Pods deployed in your cluster are assigned an IP from this subnet. Run the following command to create the virtual network.
 
     ```azurecli
     az network vnet create \
@@ -96,9 +96,9 @@ For a more detailed comparison, see the *Learn more* section at the end of this 
 
 ## Create the AKS cluster
 
-With the new virtual network in place, we can go ahead and create our new cluster. There are two values we need to know before running the `az aks create` command. The first is the version of the latest, non-preview, Kubernetes version available in our selected region, and the second is a unique name for our cluster.
+With the new virtual network in place, you can go ahead and create your new cluster. There are two values you need to know before running the `az aks create` command. The first is the version of the latest, non-preview, Kubernetes version available in your selected region, and the second is a unique name for your cluster.
 
-1. To get the latest, non-preview, Kubernetes version we use the `az aks get-versions` command. We'll store the value that returns from the command in a Bash variable named `VERSION`. Run the command below the retrieve and store the version number.
+1. To get the latest, non-preview, Kubernetes version you use the `az aks get-versions` command. Store the value that returns from the command in a Bash variable named `VERSION`. Run the command below the retrieve and store the version number.
 
     ```azurecli
     VERSION=$(az aks get-versions \
@@ -107,14 +107,14 @@ With the new virtual network in place, we can go ahead and create our new cluste
         --output tsv)
     ```
 
-1. Our AKS cluster name must be unique. Run the following command to create a Bash variable that holds a unique name.
+1. the AKS cluster name must be unique. Run the following command to create a Bash variable that holds a unique name.
 
     ```azurecli
     AKS_CLUSTER_NAME=aksworkshop-$RANDOM
     ```
 
     > [!NOTE]
-    > Make a note of the value stored in $AKS_CLUSTER_NAME by running `echo $AKS_CLUSTER_NAME`. We'll need it to reconfigure the variable in the future, if necessary.
+    > Make a note of the value stored in $AKS_CLUSTER_NAME by running `echo $AKS_CLUSTER_NAME`. You'll need it to reconfigure the variable in the future, if necessary.
 
 1. Run the following `az aks create` command to create the AKS cluster by using the latest version. This command can take a few minutes to complete.
 
@@ -137,14 +137,14 @@ With the new virtual network in place, we can go ahead and create our new cluste
     Let's review the variables in the previous command:
 
     - `$AKS_CLUSTER_NAME` specifies the name of the AKS cluster.
-    - `$VERSION` is the latest Kubernetes version we retrieved earlier.
+    - `$VERSION` is the latest Kubernetes version you retrieved earlier.
     - `$SUBNET_NAME_ID` is the ID of the subnet created on the virtual network to be configured with AKS.
 
     Note the following deployment configuration:
 
     - **VM set type**
 
-        We're specifying that the cluster is created by using virtual machine scale sets. The virtual machine scale sets enable us to switch on the cluster autoscaler when needed.
+        We're specifying that the cluster is created by using virtual machine scale sets. The virtual machine scale sets enable you to switch on the cluster autoscaler when needed.
 
     - **Network plug-in**
 
@@ -152,7 +152,7 @@ With the new virtual network in place, we can go ahead and create our new cluste
 
     - **Kubernetes service address range**
 
-        This address range is the set of virtual IPs that Kubernetes assigns to internal services in our cluster. The range must not be within the virtual network IP address range of our cluster. It should be different from the subnet created for the pods.
+        This address range is the set of virtual IPs that Kubernetes assigns to internal services in your cluster. The range must not be within the virtual network IP address range of your cluster. It should be different from the subnet created for the pods.
 
     - **Kubernetes DNS service IP address**
 
@@ -160,11 +160,11 @@ With the new virtual network in place, we can go ahead and create our new cluste
 
     - **Docker bridge address**
 
-        The Docker bridge network address represents the default *docker0* bridge network address present in all Docker installations. AKS clusters or the pods themselves don't use *docker0* bridge. However, we have to set this address to continue supporting scenarios such as *docker build* within the AKS cluster. It's required to select a classless inter-domain routing (CIDR) for the Docker bridge network address. If we don't set a CIDR, Docker chooses a subnet automatically. This subnet could conflict with other CIDRs. Choose an address space that doesn't collide with the rest of the CIDRs on our networks, which includes the cluster's service CIDR and pod CIDR.
+        The Docker bridge network address represents the default *docker0* bridge network address present in all Docker installations. AKS clusters or the pods themselves don't use *docker0* bridge. However, you have to set this address to continue supporting scenarios such as *docker build* within the AKS cluster. It's required to select a classless inter-domain routing (CIDR) for the Docker bridge network address. If you don't set a CIDR, Docker chooses a subnet automatically. This subnet could conflict with other CIDRs. Choose an address space that doesn't collide with the rest of the CIDRs on your networks, which includes the cluster's service CIDR and pod CIDR.
 
 ## Test cluster connectivity by using `kubectl`
 
-*kubectl* is the main Kubernetes command-line client we use to interact with our cluster and is available in Cloud Shell. A cluster context is required to allow *kubectl* to connect to a cluster. The context contains the cluster's address, a user, and a namespace. We'll use the `az aks get-credentials` command to configure our instance of *kubectl*.
+*kubectl* is the main Kubernetes command-line client you use to interact with your cluster and is available in Cloud Shell. A cluster context is required to allow *kubectl* to connect to a cluster. The context contains the cluster's address, a user, and a namespace. Use the `az aks get-credentials` command to configure your instance of *kubectl*.
 
 1. Retrieve the cluster credentials by running the command below.
 
@@ -174,13 +174,13 @@ With the new virtual network in place, we can go ahead and create our new cluste
         --name $AKS_CLUSTER_NAME
     ```
 
-1. Let's take a look at what was deployed by listing all the nodes in our cluster. Use the `kubectl get nodes` command to list all the nodes.
+1. Let's take a look at what was deployed by listing all the nodes in your cluster. Use the `kubectl get nodes` command to list all the nodes.
 
     ```bash
     kubectl get nodes
     ```
 
-    We'll see a list of our cluster's nodes. Here's an example.
+    You'll see a list of your cluster's nodes. Here's an example.
 
     ```output
     NAME                                STATUS   ROLES   AGE  VERSION
@@ -191,13 +191,13 @@ With the new virtual network in place, we can go ahead and create our new cluste
 
 ## Create a Kubernetes namespace for the application
 
-Froot Smoothies want to deploy several apps from other teams in the deployed AKS cluster as well. Instead of running multiple clusters, the company wants to use the Kubernetes features that let us logically isolate teams and workloads in the same cluster. The goal is to provide the least number of privileges scoped to the resources each team needs. 
+Froot Smoothies want to deploy several apps from other teams in the deployed AKS cluster as well. Instead of running multiple clusters, the company wants to use the Kubernetes features that let you logically isolate teams and workloads in the same cluster. The goal is to provide the least number of privileges scoped to the resources each team needs. 
 
 ### What is a namespace?
 
-A namespace in Kubernetes creates a logical isolation boundary. Names of resources must be unique within a namespace but not across namespaces. If we don't specify the namespace when we work with Kubernetes resources, the *default* namespace is implied.
+A namespace in Kubernetes creates a logical isolation boundary. Names of resources must be unique within a namespace but not across namespaces. If you don't specify the namespace when you work with Kubernetes resources, the *default* namespace is implied.
 
-Let's create a namespace for our ratings application.
+Let's create a namespace for your ratings application.
 
 1. List the current namespaces in the cluster.
 
@@ -205,7 +205,7 @@ Let's create a namespace for our ratings application.
     kubectl get namespace
     ```
 
-    We'll see a list of namespaces similar to this output.
+    You'll see a list of namespaces similar to this output.
 
     ```output
     NAME              STATUS   AGE
@@ -221,10 +221,10 @@ Let's create a namespace for our ratings application.
     kubectl create namespace *ratingsapp*
     ```
 
-    We'll see a confirmation that the namespace was created.
+    You'll see a confirmation that the namespace was created.
 
     ```output
     namespace/ratingsapp created
     ```
 
-Next, we'll create and configure an Azure Container Registry (ACR) instance to use with our AKS cluster. We'll store our containerized ratings app in ACR.
+Next, you'll create and configure an Azure Container Registry (ACR) instance to use with your AKS cluster and store your containerized ratings app.

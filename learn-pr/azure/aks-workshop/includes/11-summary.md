@@ -1,10 +1,10 @@
-In this workshop, we deployed a multicontainer application to Azure Kubernetes Service (AKS). We used Azure Container Registry to store our container images. We deployed MongoDB with Helm and learned about key Kubernetes concepts to make deployments easier, and support communication between applications and services. We set up TSL/SSL to ensure communication is encrypted, and also set up autoscaling to handle fluctuations in traffic. 
+In this workshop, you deployed a multicontainer application to Azure Kubernetes Service (AKS). You used Azure Container Registry to store your container images. You deployed MongoDB with Helm and learned about key Kubernetes concepts to make deployments easier, and support communication between applications and services. Wou set up TSL/SSL to ensure communication is encrypted, and also set up autoscaling to handle fluctuations in traffic. 
 
 You can now use what you learned to deploy container-based applications in your environment to AKS.
 
 ## Clean up resources
 
-In this module, you created resources by using our Azure subscription. You want to clean up these resources so that there's no continued charge against your account for these resources.
+In this module, you created resources by using your Azure subscription. You want to clean up these resources so that there's no continued charge against your account for these resources.
 
 1. Open the [Azure portal](https://portal.azure.com?azure-portal=true).
 

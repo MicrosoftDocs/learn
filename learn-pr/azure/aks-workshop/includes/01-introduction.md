@@ -4,7 +4,7 @@ The ratings website consists of several components. There's a web frontend, a do
 
 Fruit Smoothies wants to use Kubernetes as their compute platform. The development teams already use containers for application development and deployment, and using an orchestration platform will introduce many benefits. Kubernetes is a portable, extensible open-source platform for automating deployment, scaling, and the management of containerized workloads. Kubernetes abstracts away complex container management and provides declarative configuration to orchestrate containers in different compute environments. This orchestration platform give the same ease of use and flexibility as with Platform as a Service (PaaS) and Infrastructure as a Service (IaaS) offerings.
 
-In this module, we'll go through tasks to deploy a multicontainer application to Kubernetes on Azure Kubernetes Service (AKS).
+In this module, you'll go through tasks to deploy a multicontainer application to Kubernetes on Azure Kubernetes Service (AKS).
 
 You'll use your Azure subscription to deploy the resources in this workshop. To estimate the expected costs for these resources, see the [preconfigured Azure Calculator estimate](https://aka.ms/aks-workshop-estimate?azure-portal=true) of the resources that you'll deploy.
 

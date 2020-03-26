@@ -2,26 +2,25 @@ The online security and privacy of user data is a primary concern for Fruit Smoo
 
 :::image type="content" source="../media/08-arch-5.svg" border="false" alt-text="Diagram that shows the deployed resources on the Azure Kubernetes Service cluster.":::
 
-In this exercise, we'll deploy cert-manager and configure it to automatically issue Let's Encrypt certificates. We'll also configure the ingress created earlier to serve encrypted SSL/TLS traffic through the generated certificates.
+In this exercise, you'll deploy cert-manager and configure it to automatically issue Let's Encrypt certificates. You'll also configure the ingress created earlier to serve encrypted SSL/TLS traffic through the generated certificates.
 
-Before we start with the exercise steps, let's define some of the items mentioned.
+Before you start with the exercise steps, let's define some of the items mentioned.
 
 ### What is a Let's Encrypt?
 
-Let's Encrypt is a nonprofit Certificate Authority that provides TLS certificates. Let's Encrypt allows us to set up an HTTP server and have it automatically obtain a browser-trusted certificate. The process of retrieving and installing a certificate is fully automated without human intervention and managed by running a certificate management agent on the webserver. For more information about Let's Encrypt, see the *learn more* section at the end of this module.
+Let's Encrypt is a nonprofit Certificate Authority that provides TLS certificates. Let's Encrypt allows you to set up an HTTP server and have it automatically obtain a browser-trusted certificate. The process of retrieving and installing a certificate is fully automated without human intervention and managed by running a certificate management agent on the webserver. For more information about Let's Encrypt, see the *learn more* section at the end of this module.
 
 ### What is cert-manager?
 
-Cert-manager is a Kubernetes certificate management controller that makes it possible to automate certificate management in cloud-native environments. Cert-manager supports various sources including Let's Encrypt, HashiCorp Vault, Venafi, simple signing key pairs, or self-signed certificates. We'll use cert-manager to ensure our website's certificate is valid and up to date, and attempt to renew certificates at a configured time before the certificate expires.
+Cert-manager is a Kubernetes certificate management controller that makes it possible to automate certificate management in cloud-native environments. Cert-manager supports various sources including Let's Encrypt, HashiCorp Vault, Venafi, simple signing key pairs, or self-signed certificates. You'll use cert-manager to ensure your website's certificate is valid and up to date, and attempt to renew certificates at a configured time before the certificate expires.
 
 ### What is a Kubernetes custom resource definition (CRD)?
 
-A Kubernetes custom resource is an object that allows us to extend the Kubernetes API or to introduce our own API into a cluster. We use custom resource definition (CRD) files to define our object kinds and the API Server handle the lifecycle of the object.
-
+A Kubernetes custom resource is an object that allows you to extend the Kubernetes API or to introduce your API into a cluster. You use custom resource definition (CRD) files to define your object kinds and the API Server handle the lifecycle of the object.
 
 ## Install cert-manager
 
-We'll use Helm to install cert-manager and then configure it to use Let's Encrypt as the certificate issuer.
+You'll use Helm to install cert-manager and then configure it to use Let's Encrypt as the certificate issuer.
 
 1. Let's start by creating a namespace for cert-manager.
 
@@ -29,14 +28,14 @@ We'll use Helm to install cert-manager and then configure it to use Let's Encryp
     kubectl create namespace cert-manager
     ```
 
-1. We'll use the Jetstack Helm repository to find and install cert-manager. First, we'll add the Jetstack Helm repository by running the code below.
+1. You'll use the Jetstack Helm repository to find and install cert-manager. First, you'll add the Jetstack Helm repository by running the code below.
 
     ```bash
     helm repo add jetstack https://charts.jetstack.io
     helm repo update
     ```
 
-1. Next, we'll install cert-manager by installing the cert-manager custom resource definition (CRD).
+1. Next, you'll install cert-manager by installing the cert-manager custom resource definition (CRD).
 
     ```bash
     kubectl apply --validate=false -f https://raw.githubusercontent.com/jetstack/cert-manager/release-0.14/deploy/manifests/00-crds.yaml
@@ -51,7 +50,7 @@ We'll use Helm to install cert-manager and then configure it to use Let's Encryp
         jetstack/cert-manager
     ```
 
-1. We'll see output similar to the example below when the installation completes.
+1. You'll see output similar to the example below when the installation completes.
 
     ```output
     NAME: cert-manager
@@ -70,7 +69,7 @@ We'll use Helm to install cert-manager and then configure it to use Let's Encryp
     kubectl get pods --namespace cert-manager
     ```
 
-    We'll see that the `cert-manager`, `cert-manager-cainjector`, and `cert-manager-webhook` pod is in a `Running` state. It might take a couple of minutes to provision the web hook required for the TLS assets.
+    You'll see that the `cert-manager`, `cert-manager-cainjector`, and `cert-manager-webhook` pod is in a `Running` state. It might take a couple of minutes to provision the web hook required for the TLS assets.
 
     ```output
     NAME                                       READY   STATUS    RESTARTS   AGE
@@ -81,7 +80,7 @@ We'll use Helm to install cert-manager and then configure it to use Let's Encryp
 
 ## Create a Kubernetes configuration file for ClusterIssuer with Let's Encrypt
 
-Cert-manager will ensure that our website's certificate is valid and up to date, and even attempt to renew certificates at a configured time before the certificate expires. However, we need to set up a *ClusterIssuer* before we can begin the certificate issuing process. The cluster issuer acts as an interface to a certificate-issuing service such as Let's Encrypt.
+Cert-manager will ensure that your website's certificate is valid and up to date, and even attempt to renew certificates at a configured time before the certificate expires. However, you need to set up a *ClusterIssuer* before you can begin the certificate issuing process. The cluster issuer acts as an interface to a certificate-issuing service such as Let's Encrypt.
 
 1. Edit the file called `cluster-issuer.yaml` by using the integrated editor.
 
@@ -108,7 +107,7 @@ Cert-manager will ensure that our website's certificate is valid and up to date,
               class: nginx
     ```
 
-    In the `email` key, we'll update the value by replacing `<your email>` with a valid certificate administrator email from our organization.
+    In the `email` key, you'll update the value by replacing `<your email>` with a valid certificate administrator email from your organization.
 
 1. To save the file, select <kbd>Ctrl+S</kbd>. To close the editor, select <kbd>Ctrl+Q</kbd>.
 
@@ -122,7 +121,7 @@ Cert-manager will ensure that our website's certificate is valid and up to date,
         -f cluster-issuer.yaml
     ```
 
-    We'll see an output similar to this example.
+    You'll see an output similar to this example.
 
     ```output
     clusterissuer.cert-manager.io/letsencrypt created
@@ -163,7 +162,7 @@ The last part of the configuration is to configure the Kubernetes ingress file f
             path: /
     ```
 
-    In this file, update the `<ingress ip>` value in the `host` key with the *dashed* public IP of the ingress we retrieved earlier, for example, frontend.13-68-177-68.nip.io. This value allows us to access the ingress via a host name instead of an IP address.
+    In this file, update the `<ingress ip>` value in the `host` key with the *dashed* public IP of the ingress you retrieved earlier, for example, frontend.13-68-177-68.nip.io. This value allows you to access the ingress via a host name instead of an IP address.
 
 1. To save the file, select <kbd>Ctrl+S</kbd>. To close the editor, select <kbd>Ctrl+Q</kbd>.
 
@@ -177,7 +176,7 @@ The last part of the configuration is to configure the Kubernetes ingress file f
         -f ratings-web-ingress.yaml
     ```
 
-    We'll see an output similar to this example.
+    You'll see an output similar to this example.
 
     ```output
     ingress.networking.k8s.io/ratings-web-ingress configured
@@ -225,7 +224,7 @@ The last part of the configuration is to configure the Kubernetes ingress file f
 
 ## Test the application
 
-Open the host name we configured on the ingress in a web browser over SSL/TLS to view and interact with the application. For example, at https:\//frontend.13-68-177-68.nip.io.
+Open the host name you configured on the ingress in a web browser over SSL/TLS to view and interact with the application. For example, at https:\//frontend.13-68-177-68.nip.io.
 
 :::image type="content" source="../media/08-ratings-web-ingress-tls.png" alt-text="Screenshot of the ratings-web application." loc-scope="other"::: <!-- no-loc -->
 
@@ -233,4 +232,4 @@ Verify that the front end is accessible over HTTPS and that the certificate is v
 
 :::image type="content" source="../media/08-ratings-web-cert.png" alt-text="Screenshot of the valid SSL/TLS certificate." loc-scope="other":::
 
-In this exercise, we deployed cert-manager and configured it to issue Let's Encrypt certificates automatically. We then configured the ingress we created earlier to serve encrypted TLS/SSL traffic through the generated certificates.
+In this exercise, you deployed cert-manager and configured it to issue Let's Encrypt certificates automatically. You then configured the ingress you created earlier to serve encrypted TLS/SSL traffic through the generated certificates.
