@@ -2,7 +2,7 @@ Most collections are *iterable*. They have an internal implementation that allow
 
 ## Step 1 - Add a file for this exercise
 
-If you're continuing from the previous unit, then use the techniques that you learned in previous modules to add a new code file in this module's folder.  For example, you might create a file named *exercise2.py*.
+Use the techniques that you learned in previous modules to add a new code file in this module's folder.  For example, you might create a file named *exercise2.py*.
 
 ## Step 2 - Test a value for inclusion in a list
 
