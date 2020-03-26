@@ -147,7 +147,7 @@ You invoked a *function* named `print`.  A function contains code that works tog
 
 To invoke a function, you use a set of parentheses called function invocation operators.  The set of parentheses is your instruction to the Python interpreter that you want it to execute that function for us.
 
-Later, you'll learn how to create your own functions.  At first, you'll use functions that the creators of Python have created to help you write applications more quickly.  Also, you'll learn how to apply third-party libraries that dramatically expand the functionality that's available to your Python programs to perform a vast array of tasks.
+Later, you'll learn how to create your own functions.  At first, you'll use functions that the creators of Python have created to help you write applications more quickly.  Also, you'll learn how to utilize third-party libraries that dramatically expand the functionality that's available to your Python programs to perform a vast array of tasks.
 
 Some functions allow you to pass an argument, which the function can use to complete its task.  In this case, you sent the `print` function a *literal string* containing your message, `Hello World!`.  You pass arguments inside of the function invocation operators.
 
