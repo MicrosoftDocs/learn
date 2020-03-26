@@ -22,7 +22,7 @@ You're a new developer at Tailwind Traders. Before you can start, you'll need to
 
 1. Enter the tenant from your clipboard into the **Azure: Tenant** textbox.
 
-    :::image type="content" source="../media/azure-tenant.png" alt-text="Screenshot of VS Code settings with a red box outlining the "Azure Tenant" setting." loc-scope="vs-code":::
+    :::image type="content" source="../media/azure-tenant.png" alt-text="Screenshot of VS Code settings with a red box outlining the Azure Tenant setting." loc-scope="vs-code":::
 
 1. Press <kbd>F1</kbd> to open the Command Palette.
 
