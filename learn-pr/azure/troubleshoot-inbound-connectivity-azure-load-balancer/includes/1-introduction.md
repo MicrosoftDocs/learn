@@ -4,7 +4,7 @@ Imagine you're an administrator for a large retail company that uses Load Balanc
 
 ## Learning objectives
 
-In this module, you'll:
+In this module, you will:
 
 - Identify common load balancer inbound connectivity issues.
 - Identify steps to resolve issues when virtual machines aren't responding to a health probe.

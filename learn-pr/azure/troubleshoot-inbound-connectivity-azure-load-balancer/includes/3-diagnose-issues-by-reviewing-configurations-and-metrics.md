@@ -24,7 +24,7 @@ The **Health Probe Status** metric is similar, but it only applies to the health
 The image shows the chart for average Data Path Availability and average Health Probe Status for a load balancer with two VMs in the back-end pool. One of the machines isn't responding to the health probe. The average Health Probe Status is hovering around the 50 percent mark:
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot of the Metrics page for Azure Load Balancer showing data captured for the average Health Probe Status and average Data Path Availability metrics. The Health Probe status is at 50%](../media/3-probe-metrics-unhealthy.png)
+> ![Screenshot of the Metrics page for Azure Load Balancer showing data captured for the average Health Probe Status and average Data Path Availability metrics. The Health Probe status is at 50%.](../media/3-probe-metrics-unhealthy.png)
 
 Another way to examine these metrics is to use the **Count** aggregation. This approach can yield additional insights into potential problems with your configuration. The following example shows the graphs for the count of the Health Probe Status and Data Path Availability metrics. The graph shows how many successful probes were done over time.
 
@@ -86,9 +86,7 @@ In this case, most VMs are responding normally, but one or two others aren't. Be
 Use the following steps to determine the cause of the problem with an unhealthy VM:
 
 - Sign in to an unhealthy VM to verify that it's up. Check that the VM can respond to basic checks such as *ping*, *rdp*, or *ssh* requests from another VM in the back-end pool.
-
 - If the VM is up and accessible, verify that the application is running.
-
 - Run the `netstat -an` command and verify that the ports used by the health probe and application are listed as *LISTENING*.
 
 ### Misconfigurations in Load Balancer
@@ -169,7 +167,7 @@ Approximate trip times in milli-seconds:
 
 #### Use netsh
 
-The *netsh* utility is a general purpose network configuration tool. Use the *trace* command in *netsh* to capture network traffic. Then analyze it by using a tool such as Microsoft Message Analyzer or Wireshark. Use *netsh trace* to examine the network packets sent and received by *psping* when you test connectivity through Load Balancer as follows:
+The *netsh* utility is a general-purpose network configuration tool. Use the *trace* command in *netsh* to capture network traffic. Then analyze it by using a tool such as Microsoft Message Analyzer or Wireshark. Use *netsh trace* to examine the network packets sent and received by *psping* when you test connectivity through Load Balancer as follows:
 
 1. Start a network trace from a command prompt running as Administrator. The following example traces internet client traffic (HTTP requests) to and from the specified IP address. Replace \<*ip address*\> with the address of the Load Balancer instance. The trace data is written to a file named *trace.etl*:
 
