@@ -141,7 +141,7 @@ You'll now configure a **receiver** (also known as **subscribers** or **consumer
 
 For the receiver application, two methods are available; **EventHubReceiver** and **EventProcessorHost**. EventProcessorHost is built on top of EventHubReceiver, but provides simpler programmatic interface than EventHubReceiver. EventProcessorHost can automatically distribute message partitions across multiple instances of EventProcessorHost using the same storage account.
 
-In this unit, you’ll use the EventProcessorHost method. You'll edit the EventProcessorSample application to add your Event Hubs namespace, Event Hub name, shared access policy name and primary key, storage account name, connection string, and container name.
+In this unit, you'll use the EventProcessorHost method. You'll edit the EventProcessorSample application to add your Event Hubs namespace, Event Hub name, shared access policy name and primary key, storage account name, connection string, and container name.
 
 1. Change to the **EventProcessorSample** folder using the following command:
 
@@ -187,7 +187,7 @@ In this unit, you’ll use the EventProcessorHost method. You'll edit the EventP
 
     The build process may take several minutes to complete. Ensure that you see a **[INFO] BUILD SUCCESS** message before continuing.
 
-    ![Build results for receiver application](../media/5-receiver-build.png)
+    :::image type="content" source="../media/5-receiver-build.png" alt-text="Build results for receiver application." loc-scope="other"::: <!-- no-loc -->
 
 ## Start the sender and receiver apps
 

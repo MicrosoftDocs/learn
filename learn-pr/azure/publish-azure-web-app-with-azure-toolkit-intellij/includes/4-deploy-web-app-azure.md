@@ -24,6 +24,6 @@ For applications written in Java, you specify a web container as well. You can c
 
 When you have the Azure Toolkit for IntelliJ installed, you can configure all of the above objects and information within IntelliJ IDEA in the **Deploy to Azure** wizard.
 
-![Setting up a new Azure web app in IntelliJ IDEA](../media/4-create-webapp-wizard.png)
+:::image type="content" source="../media/4-create-webapp-wizard.png" alt-text="Setting up a new Azure web app in IntelliJ IDEA." loc-scope="azure-app-service":::
 
 In the following exercise, you will use this wizard to deploy the web app that you created in the preceding exercise.
