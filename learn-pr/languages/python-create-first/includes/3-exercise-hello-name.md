@@ -95,7 +95,7 @@ Python has dozens of operators that perform mathematical, logical, and relationa
 
 As mentioned earlier, functions such as `print()` and `input()` were created by Python developers.  The functions are part of the Python Standard Library, an extensive set of functionality that's available either automatically or can be easily refenced and added as needed.  The library is divided into modules.  Each module contains related functions.  You'll learn more about accessing the full breadth of functionality in upcoming modules.
 
-When you say you want to "learn Python," you're really saying that you want to :
+When you say you want to "learn Python," you're really saying that you want to:
 
 - Learn what many or all of the keywords and operators do.
 - Learn how to write code that uses the keywords and operators correctly (that is, the syntax).
