@@ -48,7 +48,7 @@ Let's apply some tags to the resources you created. Recall that you created a re
 
 1. Add tags to both of these resources in bulk. Select the checkbox on the left for each of the virtual networks and click **Assign tags** in the top menu. (The option may be contained inside an **...** menu.) By selecting multiple resources, you can add a tag to them in bulk, making it easy if you have multiple resources you want to apply the same tag to.
 
-    Add the **Environment:Training** tag to the resources. You should see in the dialog that the tag will be applied to each of the virtual networks.
+    Add the `Environment`:`Training` tag to the resources. You should see in the dialog that the tag will be applied to each of the virtual networks.
 
     ![Screenshot of Azure portal showing the assign tags dialog to add tags in bulk.](../media/3-add-bulk-tag.PNG)
 
@@ -56,11 +56,11 @@ Let's apply some tags to the resources you created. Recall that you created a re
 
 1. Take a look at how you can use tags to filter your resources. On the Azure portal menu or from the **Home** page, select **All resources**.
 
-1. Select **Add filter**. In the **Tags**, select **Environment**, then select **Training**. You should see only your two virtual networks displayed, since you tagged those resources with the **Environment:Training** tag.
+1. Select **Add filter**. In the **Tags**, select **Environment**, then select **Training**. You should see only your two virtual networks displayed, since you tagged those resources with the **Environment** tag set to **Training**.
 
     ![Screenshot of Azure portal resource list filtered on the training environment tag.](../media/3-tag-filter.PNG)
 
-1. You can further filter these resources by additionally filtering on the **Department:Finance** or **Department:Marketing** tags.
+1. You can further filter these resources by additionally filtering on a **Department** tag with a value of **Finance** or **Marketing**.
 
 ## Use tags for organization
 
@@ -70,6 +70,6 @@ You can use tags to group your billing data. For example, if you're running mult
 
 You can retrieve all the resources in your subscription with a specific tag name or value. Tags enable you to retrieve related resources from different resource groups. This approach is helpful when you need to organize resources for billing or management.
 
-Tagging resources can also help in monitoring to track down impacted resources. Monitoring systems could include tag data with alerts, giving you the ability to know exactly who is impacted. In our example above, you applied the **Department:Finance** tag to the **msftlearn-vnet1** resource. If an alarm was thrown on **msftlearn-vnet1** and the alarm included the tag, you'd know that the finance department may be impacted by the condition that triggered the alarm. This contextual information can be valuable if an issue occurs.
+Tagging resources can also help in monitoring to track down impacted resources. Monitoring systems could include tag data with alerts, giving you the ability to know exactly who is impacted. In our example above, you applied the **Department** tag with a value of **Finance** to the **msftlearn-vnet1** resource. If an alarm was thrown on **msftlearn-vnet1** and the alarm included the tag, you'd know that the finance department may be impacted by the condition that triggered the alarm. This contextual information can be valuable if an issue occurs.
 
 It's also common for tags to be used in automation. If you want to automate the shutdown and startup of virtual machines in development environments during off-hours to save costs, you can use tags to assist in this automation. Add a **shutdown:6PM** and **startup:7AM** tag to the virtual machines, then create an automation job that looks for these tags, and shuts them down or starts them up based on the tag value. There are several solutions in the Azure Automation Runbooks Gallery that use tags in a similar manner to accomplish this result.

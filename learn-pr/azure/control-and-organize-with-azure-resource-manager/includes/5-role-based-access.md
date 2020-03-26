@@ -9,7 +9,7 @@ Using RBAC, you can:
 - Allow a user to manage all resources in a resource group, such as VMs, websites, and virtual subnets.
 - Allow an application to access all resources in a resource group.
 
-To view access permissions, use the **Access control (IAM)** panel for the resource in the Azure portal. On this panel, you can see who has access to an area and their role. Using this same panel, you can also grant or remove access.
+To view access permissions, use the **Access control (IAM)** panel for the resource in the Azure portal. On this panel, you can see who can access an area and their assigned role. Using this same panel, you can also grant or remove access.
 
 ![Screenshot of Azure portal Access control - Role assignment pane showing a backup operator and billing reader roles assigned to different users.](../media/5-resource-group-access-control.png)
 

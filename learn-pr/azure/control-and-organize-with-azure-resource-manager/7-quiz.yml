@@ -23,11 +23,11 @@ quiz:
   - content: 'Tags applied at a resource group level are propagated to resources within the resource group.'
     choices:
     - content: 'True'
-      explanation: 'Tags are not inherited. You must apply tags to every supported resource that you need tagged.'
+      explanation: 'Tags are not inherited. Tags need to be applied to every supported resource that you want tagged.'
       isCorrect: false
     - content: 'False'
       isCorrect: true
-  - content: 'Which of the following is not a feature of resource groups?'
+  - content: 'Which of the following features does not apply to resource groups?'
     choices:
     - content: 'Resources can be in only one resource group.'
       isCorrect: false
@@ -55,7 +55,7 @@ quiz:
       isCorrect: true
     - content: 'Give all other users except for yourself read-only access to the subscription. Have all requests to create resources sent to you so you can review the names being assigned to resources, and then create them.'
       isCorrect: false
-  - content: 'Which of the following items would be good to put a resource lock on?'
+  - content: 'Which of the following items would be good use of a resource lock?'
     choices:
     - content: 'An ExpressRoute circuit with connectivity back to your on-premises network'
       isCorrect: true
