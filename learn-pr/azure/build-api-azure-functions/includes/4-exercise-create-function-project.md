@@ -93,11 +93,11 @@ Azure Functions projects can be run and debugged locally from within VS Code.
 
    The Azure Functions project will launch. Notice that the terminal shows you what URL the function is running on.
 
-   ![Screenshot of the VS Code integrated terminal showing functions URLs.](../media/functions-in-terminal.png)
+   :::image type="content" source="../media/functions-in-terminal.png" alt-text="Screenshot of the VS Code integrated terminal showing functions URLs." loc-scope="other"::: <!-- no-loc -->
 
 1. Press <kbd>Cmd/Ctrl</kbd> and click on the "GetProducts" link to open it in a browser.
 
-   ![Screenshot of a web browser showing the execution result of the new HTTP function.](../media/get-products-page.png)
+   :::image type="content" source="../media/get-products-page.png" alt-text="Screenshot of a web browser showing the execution result of the new HTTP function." loc-scope="other"::: <!-- no-loc -->
 
 1. The default function template takes in a name parameter and returns a greeting. To pass in the name parameter, modify the url to pass in a query string parameter called "name"
 
@@ -108,6 +108,6 @@ Azure Functions projects can be run and debugged locally from within VS Code.
    > [!NOTE]
    > Note that your name may not _actually_ be "John Jacob Jingleheimer Schmidt. Feel free to use your own name if it's different than that.
 
-   ![Screenshot of a web browser displaying the text "Hello John Jacob Jingleheimer Schmidt".](../media/hello-message.png)
+    :::image type="content" source="../media/hello-message.png" alt-text="Screenshot of a web browser displaying the text "Hello John Jacob Jingleheimer Schmidt"." loc-scope="other"::: <!-- no-loc -->
 
 What a productive 8 minutes! You've got all of the endpoints created and running in Azure Functions. Now, you can sit back and REST - Representational State Transfer Protocol. What is that? I'm glad you asked, because it's going to make your API the envy of applications everywhere. In the next section, we'll talk about why.

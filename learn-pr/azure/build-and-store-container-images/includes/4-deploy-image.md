@@ -56,4 +56,4 @@ In this exercise, we'll enable the registry admin account and use it to deploy y
 
 1. Open a browser and navigate to the IP address of the container. If everything has been configured correctly, you should see the following results:
 
-:::image type="content" source="../media/hello.png" alt-text="Screenshot of a browser window that shows a webpage with text that reads: Hello World. Version: 9.11.2.":::
+:::image type="content" source="../media/hello.png" alt-text="Screenshot of a browser window that shows a webpage with text that reads: Hello World. Version: 9.11.2." loc-scope-"other"::: <!-- no-loc -->
