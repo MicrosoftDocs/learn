@@ -18,19 +18,16 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'To which sources you can connect a Time Series Insights?'
+  - content: 'To which sources you can not connect a Time Series Insights?'
     choices:  
-    - content: 'SQL Database'
-      isCorrect: false
-      explanation: SQL Database doesn't have built-in support for Time Series Insights
     - content: 'Cosmos DB'
-      isCorrect: false
+      isCorrect: true
       explanation: Cosmos DB doesn't have built-in support. You can build your own feature with Azure Functions.
     - content: 'Event Hubs'
-      isCorrect: true
+      isCorrect: false
       explanation: Event Hubs can send messages to Time Series Insights. You may need to format these messages accordingly.
     - content: 'IoT Hub'
-      isCorrect: true
+      isCorrect: false
       explanation: IoT Hub can send all IoT devices events directly to Time Series Insights.
 
   - content: 'Which type of storage do you need if you want unlimited retention?'
@@ -48,11 +45,11 @@ quiz:
       isCorrect: false
       explanation: Azure IoT Hub allows you to connect and manage your IoT Devices, while Time Series Insights turns IoT data into actionable insights.
     - content: 'Time Series Insights is an event ingestion service. It can receive and process millions of events per second.'
-      isCorrect: true
-      explanation: Time Series Insights ingest events, but can't process it  
+      isCorrect: false
+      explanation: Time Series Insights ingest events, but can't process it. 
     - content: 'Time Series Insights is a real-time analytics service, designed to give you insights on IoT data.'
       isCorrect: true
-      explanation: Turning IoT data into actionable insights is the role of Time Series Insights
+      explanation: Turning IoT data into actionable insights is the role of Time Series Insights.
 
   - content: 'Which type of storage do you need if you want faster queries?'
     choices:  

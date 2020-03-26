@@ -15,8 +15,8 @@ All resources created using the sandbox will be automatically deleted. If you cr
 
 Take your interest further with:
 
-- [Time Series Modeling](https://docs.microsoft.com/en-us/azure/time-series-insights/time-series-insights-update-tsm)
-- [Azure Time Series Insights documentation](https://docs.microsoft.com/en-us/azure/time-series-insights/)
+- [Time Series Modeling](https://docs.microsoft.com/azure/time-series-insights/time-series-insights-update-tsm)
+- [Azure Time Series Insights documentation](https://docs.microsoft.com/azure/time-series-insights/)
 
 And look out for additional Learn modules on IoT Hub.
 
