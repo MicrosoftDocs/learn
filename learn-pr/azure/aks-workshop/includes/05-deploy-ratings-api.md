@@ -2,16 +2,15 @@ The Fruit Smoothies' ratings website consists of several components. There's a w
 
 In the previous unit, we deployed MongoDB using Helm. We'll continue our deployment and deploy the ratings API. The ratings API is a Node.js application written by using the Express framework. It stores and retrieves items and their ratings in a MongoDB database. Recall that we've already created an Azure Container Registry instance.
 
-In this exercise, we deploy the Docker image of the API to the Azure Kubernetes Service (AKS) by creating a Kubernetes deployment. We'll then expose it through a load balancer by creating a Kubernetes service. Additionally, we'll configure the API to connect to the MongoDB database by attaching the Kubernetes secret.
-
 :::image type="content" source="../media/05-arch-2.svg" border="false" alt-text="Diagram that shows the deployed resources on the Azure Kubernetes Service cluster.":::
 
-By the end of this unit, we'll have the ratings API deployed and configured to communicate with MongoDB.
+In this exercise, we'll deploy the Docker image of the API to the Azure Kubernetes Service (AKS) by creating a Kubernetes deployment. We'll then expose it through a load balancer by creating a Kubernetes service. Additionally, we'll configure the API to connect to the MongoDB database by attaching the Kubernetes secret.
+
+Before we start with the exercise steps, let's define some of the items mentioned.
 
 > [!TIP]
 > Azure Cloud Shell includes an [integrated file editor](https://docs.microsoft.com/azure/cloud-shell/using-cloud-shell-editor). The Cloud Shell editor supports features such as language highlighting, the command palette, and a file explorer. For simple file creation and editing, launch the editor by running `code .` in the Cloud Shell terminal. This action opens the editor with our active working directory set in the terminal. To directly open a file for quick editing, run `code <filename>` to open the editor without the file explorer. To open the editor via UI button, select the `{}` editor icon on the toolbar. This action opens the editor and defaults the file explorer to the `/home/<user>` directory.
 
-Before we start with the exercise steps, let's define some of the items mentioned.
 
 ### What is a Kubernetes deployment?
 

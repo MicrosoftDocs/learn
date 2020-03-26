@@ -2,11 +2,9 @@ The Fruit Smoothies' ratings website consists of several components. There's a w
 
 In the previous unit, we deployed the ratings API. We'll continue our deployment and deploy the ratings web front end. The ratings web front end is a Node.js application. Recall that we've already created an Azure Container Registry instance. We used it to build a Docker image of the front end and store it in a repository.
 
-In this exercise, we'll deploy that Docker image of the front end to Azure Kubernetes Service (AKS) by creating a Kubernetes deployment. We'll then expose it through a load balancer by creating a Kubernetes service. Additionally, we'll configure the front end to connect to the ratings API that we already deployed.
-
-By the end of this unit, we should have deployed the ratings web front end and configured it to communicate with the ratings API. The front end is exposed through a public IP.
-
 :::image type="content" source="../media/06-arch-3.svg" border="false" alt-text="Diagram that shows the deployed resources on the Azure Kubernetes Service cluster.":::
+
+In this exercise, we'll deploy that Docker image of the front end to Azure Kubernetes Service (AKS) by creating a Kubernetes deployment. We'll then expose it through a load balancer by creating a Kubernetes service. Additionally, we'll configure the front end to connect to the ratings API that we already deployed.
 
 Before we start with the exercise steps, let's define some of the items mentioned.
 
@@ -21,9 +19,6 @@ A Service is a Kubernetes object that provides stable networking for Pods by exp
 ### What is a LoadBalancer?
 
 A LoadBalancer allows us to expose a Kubernetes service on a public IP in the cluster. The type makes the service reachable from outside the cluster.
-
-:::image type="content" source="../media/06-ratings-web.png" alt-text="Screenshot of the ratings-web application." loc-scope="other"::: <!-- no-loc -->
-
 
 ## Create a Kubernetes deployment file for the ratings web front end
 

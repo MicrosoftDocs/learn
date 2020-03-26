@@ -1,8 +1,8 @@
 The Fruit Smoothies' ratings website consists of several components. There's a web frontend, a document database that stores captured data, and a RESTful API that allows the web frontend to communicate with the database. The development team is using MongoDB as the document store database of choice for the ratings website.
 
-In this exercise, we'll deploy MongoDB to the Azure Kubernetes Service (AKS) cluster using Helm. We'll also see how to use a Kubernetes secret to store the MongoDB connection username and password.
-
 :::image type="content" source="../media/04-arch-1.svg" border="false" alt-text="Diagram that shows the deployed resources on the Azure Kubernetes Service cluster.":::
+
+In this exercise, we'll deploy MongoDB to the Azure Kubernetes Service (AKS) cluster using Helm. We'll also see how to use a Kubernetes secret to store the MongoDB connection username and password.
 
 Before we start with the exercise steps, let's define some of the items mentioned.
 

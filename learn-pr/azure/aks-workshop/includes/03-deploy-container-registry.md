@@ -7,9 +7,11 @@ The Fruit Smoothies software development and operations teams made the decision 
 
 The teams made the decision to store all containers in a central and secure location and the decision made is to use Azure Container Registry.
 
+In this exercise, we'll configure an Azure Container Registry and build and push our Fruit Smoothies web application images to the registry. We'll then configure the AKS cluster to authenticate to the container registry.
+
 Before we start with the exercise steps, let's define some of the items mentioned.
 
-### What is Azure Container Registry?
+### What is Azure Container Registry (ACR)?
 
 Azure Container Registry is a managed Docker registry service based on the open-source Docker Registry 2.0. Container Registry is private and hosted in Azure. We use it to build, store, and manage images for all types of container deployments.
 
@@ -17,7 +19,7 @@ Container images can be pushed and pulled with Container Registry by using the D
 
 Azure Container Registry Tasks can also build container images in Azure. Tasks use a standard Dockerfile to create and store a container image in Azure Container Registry without the need for local Docker tooling. With Azure Container Registry Tasks, we can build on-demand or fully automate container image builds by using DevOps processes and tooling.
 
-In this unit, we'll create a container registry by using the Azure CLI.
+In this exercise, we'll create a container registry by using the Azure CLI.
 
 ## Create a container registry
 
@@ -81,7 +83,7 @@ In this unit, we'll create a container registry by using the Azure CLI.
 
 The Fruit Smoothies rating app makes use of two coded container images, one for the front-end website and one for the RESTfull API web service. Our development teams use the local Docker tooling to build the container images for the website and API web service. A third container is used to deploy the document database provided by the database publisher. We'll not store the database container in ACR.
 
-We can also use Azure Container Registry to build these containers. A standard Dockerfile provides build instructions. With Azure Container Registry, we can reuse any Dockerfile currently in our environment, which includes multi-staged builds.
+We can also use Azure Container Registry to build these containers using a standard Dockerfile to provide build instructions. With Azure Container Registry, we can reuse any Dockerfile currently in our environment, which includes multi-staged builds.
 
 ### Build the ratings-api image
 

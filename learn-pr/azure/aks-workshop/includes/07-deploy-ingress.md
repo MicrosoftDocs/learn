@@ -2,15 +2,15 @@ In the previous units, we exposed the Fruit Smoothies' ratings website and RESTf
 
 Even though the load balancer exposes the ratings website via a publicly accessible IP, there are limitations that we need to consider.
 
-Let's assume the Fruit Smoothies' development team decides to extend the project. The current ratings website responds at `FruitSmoothies.com`. Fans of Fruit Smoothies can submit videos of how they're enjoying their smoothies at home, at the beach, or work. When we deploy the new video site, we want the new site to respond at `fruitsmoothies.com/videos` and the ratings site at `fruitsmoothies.com/ratings`.
+Let's assume the Fruit Smoothies' development team decides to extend the project by adding a video upload website. Fans of Fruit Smoothies can submit videos of how they're enjoying their smoothies at home, at the beach, or work. The current ratings website responds at `FruitSmoothies.com`. When we deploy the new video site, we want the new site to respond at `fruitsmoothies.com/videos` and the ratings site at `fruitsmoothies.com/ratings`.
 
 If we continue to use the load balancer solution, we'll need to deploy a separate load balancer on the cluster and map its IP address to a new Fully Qualified Domain Name (FQDN), for example, `videos.fruitsmoothies.com`. To implement the required URL-based routing configuration, we'll need to install additional software outside of our cluster.
 
 The extra effort is that a Kubernetes load balancer service is a Layer 4 load balancer. Layer 4 load balancers only deal with routing decisions between IPs addresses, TCP, and UDP ports. Kubernetes provides us with an option to simplify the above configuration by using an ingress controller.
 
-In this exercise, we'll use an ingress controller and ingress rules that allow a single IP address to route traffic to multiple services in a Kubernetes cluster.
-
 :::image type="content" source="../media/07-arch-4.svg" border="false" alt-text="Diagram that shows the deployed resources on the Azure Kubernetes Service cluster.":::
+
+In this exercise, we'll use an ingress controller and ingress rules that allow a single IP address to route traffic to multiple services in a Kubernetes cluster.
 
 Before we start with the exercise steps, let's define some of the items mentioned.
 
