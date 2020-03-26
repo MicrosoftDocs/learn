@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.aks-workshop.06-deploy-ratings-web
 metadata:
-  title: Deploy the ratings front end
+  title: Exercise - Deploy the ratings front end
   description: Deploy the ratings front end
   ms.date: 03/31/2020
   author: sabbour
   ms.author: chrvaw
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Deploy the ratings front end
+title: Exercise - Deploy the ratings front end
 durationInMinutes: 20
 content: |
   [!include[](includes/06-deploy-ratings-web.md)]

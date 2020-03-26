@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.aks-workshop.09-configure-monitoring
 metadata:
-  title: Configure monitoring for your application
+  title: Exercise - Configure monitoring for your application
   description: Configure monitoring for your application
   ms.date: 03/31/2020
   author: sabbour
   ms.author: chrvaw
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Configure monitoring for your application
+title: Exercise - Configure monitoring for your application
 durationInMinutes: 10
 content: |
   [!include[](includes/09-configure-monitoring.md)]

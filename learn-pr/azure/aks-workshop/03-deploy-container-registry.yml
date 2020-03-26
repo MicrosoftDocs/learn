@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.aks-workshop.03-deploy-container-registry
 metadata:
-  title: Create a private, highly available container registry
+  title: Exercise - Create a private, highly available container registry
   description: Create a private, highly available container registry
   ms.date: 03/31/2020
   author: sabbour
   ms.author: chrvaw
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Create a private, highly available container registry
+title: Exercise - Create a private, highly available container registry
 durationInMinutes: 15
 content: |
   [!include[](includes/03-deploy-container-registry.md)]

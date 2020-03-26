@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.aks-workshop.10-scale-application
 metadata:
-  title: Scale your application to meet demand
+  title: Exercise - Scale your application to meet demand
   description: Scale your application to meet demand
   ms.date: 03/31/2020
   author: sabbour
   ms.author: chrvaw
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Scale your application to meet demand
+title: Exercise - Scale your application to meet demand
 durationInMinutes: 5
 content: |
   [!include[](includes/10-scale-application.md)]

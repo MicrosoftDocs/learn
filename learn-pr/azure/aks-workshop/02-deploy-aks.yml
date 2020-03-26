@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.aks-workshop.02-deploy-aks
 metadata:
-  title: Deploy Kubernetes with Azure Kubernetes Service
+  title: Exercise - Deploy Kubernetes with Azure Kubernetes Service
   description: Deploy Kubernetes with Azure Kubernetes Service
   ms.date: 03/31/2020
   author: sabbour
   ms.author: chrvaw
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Deploy Kubernetes with Azure Kubernetes Service
+title: Exercise - Deploy Kubernetes with Azure Kubernetes Service
 durationInMinutes: 15
 content: |
   [!include[](includes/02-deploy-aks.md)]
