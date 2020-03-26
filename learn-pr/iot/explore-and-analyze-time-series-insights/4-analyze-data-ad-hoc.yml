@@ -11,6 +11,6 @@ metadata:
   ROBOTS: NOINDEX
 title: Analyze data ad-hoc
 azureSandbox: true
-durationInMinutes: 1
+durationInMinutes: 8
 content: |
   [!include[](includes/4-analyze-data-ad-hoc.md)]

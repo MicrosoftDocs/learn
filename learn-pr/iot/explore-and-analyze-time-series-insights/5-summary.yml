@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.iot.explore-and-analyze-time-series-insights.summary
 metadata:
-  title: Configure Data model
-  description: In this module, you'll configure a data model to analyze specific data.
+  title: Summary
+  description: Summary
   ms.date: 10/03/2020
   author: cmaneu
   ms.author: chmaneu
@@ -11,7 +11,7 @@ metadata:
   ROBOTS: NOINDEX
 title: Configure Data model
 azureSandbox: true
-durationInMinutes: 1
+durationInMinutes: 4
 content: |
   [!include[](includes/5-summary.md)]
 quiz:

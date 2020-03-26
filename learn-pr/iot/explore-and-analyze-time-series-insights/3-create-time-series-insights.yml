@@ -11,6 +11,6 @@ metadata:
   ROBOTS: NOINDEX
 title: Create a Time Series Insights environment
 azureSandbox: true
-durationInMinutes: 1
+durationInMinutes: 10
 content: |
   [!include[](includes/3-create-time-series-insights.md)]

@@ -13,6 +13,6 @@ metadata:
 azureSandbox: true
 interactive: bash-editor
 title: Create an IoT Hub and simulate devices
-durationInMinutes: 8
+durationInMinutes: 12
 content: |
   [!include[](includes/2-create-iot-hub-and-simulate-devices.md)]
