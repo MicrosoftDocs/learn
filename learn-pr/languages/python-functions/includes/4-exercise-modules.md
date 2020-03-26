@@ -1,20 +1,20 @@
-Now that we know how to create functions, let's create our own module to hold one or more functions.
+Now that you now know how to create functions, create your own module to hold one or more functions.
 
-We learned about Python modules in a previous Microsoft Learn module.  A Python module is just a code file containing files, constants, or services.  We can split up our programs into multiple code files to increase the modularity and reuse of our code across our entire program, or even multiple programs that might need to share the same code.
+You learned about Python modules in a previous Microsoft Learn module. A Python module is just a code file containing files, constants, or services. You can split up a program into multiple code files to increase the modularity and code reuse across the entire program. Modules even let multiple programs share the same code.
 
-This exercise utilizes a module to separate the code we might use in multiple applications.  At the very least, it provides separation between the code that implements our card deck from the code that uses the card deck.
+This exercise uses a module to separate code you might use in multiple apps. The module separates code that implements your card deck from code that uses the card deck.
 
-### Step 1 - Create a new file in the working folder for this exercise.
+### Step 1 - Create a new file in the working folder for this exercise
 
-Assuming you're continuing from the previous unit, use the techniques you learned in previous modules to add a new code file in the current folder dedicated to this module.  For example, you might create a new file named `exercise3.py`.
+This unit assumes you're continuing from the previous unit. Use the techniques you learned in previous modules to add a new code file in the folder dedicated to this module. Name the new file exercise3.py.
 
-### Step 2 - Create another new file in the working folder for a new module named `deck`.
+### Step 2 - Create another new file in the working folder for a new module named `deck`
 
-In the same working folder as the `exercise3.py` file, create another file called `deck.py`.
+In the same working folder as the exercise3.py file, create another file called deck.py.
 
-### Step 3 - Add code to create a deck of cards in the new deck module.
+### Step 3 - Add code to create a deck of cards in the new deck module
 
-Add the following code to the `deck.py` file.  This is similar code that we created in the module when we learned about lists.  The `create_deck()` function returns a list called `deck` containing 52 string representing each combination of suit and rank in a standard deck of cards.
+Add the following code to the deck.py file. This code is similar to what you created in the module when you learned about lists. The `create_deck()` function returns a list called `deck`. The list contains 52 strings that represent every combination of suits and ranks in a standard deck of cards.
 
 ```python
 def create_deck():
@@ -29,9 +29,9 @@ def create_deck():
   return deck
 ```
 
-### Step 4 - Add code to the exercise3 code file that calls the `create_deck()` method of the `deck` module.
+### Step 4 - Add code to the exercise3 code file that calls the `create_deck()` method of the `deck` module
 
-Back in the `exercise3.py` file, add the following code.
+In the exercise3.py file, add the following code.
 
 ```python
 import deck
@@ -44,13 +44,13 @@ for card in cards:
 
 This code consumes the deck module and its functionality.
 
-The first line of code imports the `deck` module.  The second line of code calls the `create_deck()` function of the `deck` module.
+The first line of code imports the `deck` module. The second line of code calls the `create_deck()` function of the `deck` module.
 
-When you execute the code, you should see the list of cards printed to the console.
+When you run the code, it should print the list of cards.
 
 ## Recap
 
-In this exercise, we learned how to create our own modules:
+In this exercise, you learned how to create your own modules.
 
-- Create a module to separate out reusable code in a modular way.  A Python module is a code file.  By placing functions in a module, you make that code usable from other code files both inside and outside of your program.
-- Use the `import` statement to access the module's functions.
+- Create a module to separate out reusable code in a modular way. A Python module is a code file. By placing functions in a module, you make that code usable from other code files both inside and outside of your program.
+- Use the **import** statement to access a module's functions.
