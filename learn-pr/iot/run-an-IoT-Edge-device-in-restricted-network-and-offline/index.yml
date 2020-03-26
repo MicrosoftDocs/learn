@@ -47,5 +47,4 @@ units:
 - learn.iot.run-an-IoT-Edge-device-in-restricted-network-and-offline.test-device-connectivity-and-offline-support
 - learn.iot.run-an-IoT-Edge-device-in-restricted-network-and-offline.Summary
 badge:
-###  uid: learn.iot.iot-test.badge
-  uid: learn.iot.iot-test.badge
+  uid: learn.iot.run-iot-edge-device-in-restricted-network-and-offline
