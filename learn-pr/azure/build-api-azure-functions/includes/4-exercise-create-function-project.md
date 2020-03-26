@@ -108,6 +108,6 @@ Azure Functions projects can be run and debugged locally from within VS Code.
    > [!NOTE]
    > Note that your name may not _actually_ be "John Jacob Jingleheimer Schmidt. Feel free to use your own name if it's different than that.
 
-    :::image type="content" source="../media/hello-message.png" alt-text="Screenshot of a web browser displaying the text "Hello John Jacob Jingleheimer Schmidt"." loc-scope="other"::: <!-- no-loc -->
+    :::image type="content" source="../media/hello-message.png" alt-text="Screenshot of a web browser displaying the text Hello John Jacob Jingleheimer Schmidt." loc-scope="other"::: <!-- no-loc -->
 
 What a productive 8 minutes! You've got all of the endpoints created and running in Azure Functions. Now, you can sit back and REST - Representational State Transfer Protocol. What is that? I'm glad you asked, because it's going to make your API the envy of applications everywhere. In the next section, we'll talk about why.
