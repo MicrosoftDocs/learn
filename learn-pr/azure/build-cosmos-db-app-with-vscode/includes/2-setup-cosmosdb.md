@@ -38,7 +38,7 @@ In this unit you will install the Azure Cosmos DB extension for Visual Studio, a
 
 1. After the account is created, expand your Azure subscription in the **Azure: Cosmos DB** pane and the extension displays the new Azure Cosmos DB account. In the following image, the new account is named **learning-modules**.
 
-    ![Screenshot of the Azure Cosmos DB Visual Studio Code extension with a callout highlighting the learning-modules account listed in the pane.](../media/2-setup/azure-cosmos-db-vs-code-extension.png)
+    :::image type="content" source="../media/2-setup/azure-cosmos-db-vs-code-extension.png" alt-text="Screenshot of the Azure Cosmos DB Visual Studio Code extension with a callout highlighting the learning-modules account listed in the pane." loc-scope="vs":::
 
 ## Create an Azure Cosmos DB database and collection in Visual Studio Code
 

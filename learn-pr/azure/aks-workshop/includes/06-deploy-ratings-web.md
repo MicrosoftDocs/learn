@@ -189,7 +189,7 @@ To simplify the network configuration for application workloads, Kubernetes uses
 
 Now that the ratings-web service has a public IP, open the IP in a web browser, for example, at <http://13.90.152.99>, to view and interact with the application.
 
-![Screenshot of the ratings-web application](../media/06-ratings-web.png)
+:::image type="content" source="../media/06-ratings-web.png" alt-text="Screenshot of the ratings-web application." loc-scope="other"::: <!-- no-loc -->
 
 In this exercise, you created a deployment of **ratings-web** and exposed it to the internet through a LoadBalancer type service.
 

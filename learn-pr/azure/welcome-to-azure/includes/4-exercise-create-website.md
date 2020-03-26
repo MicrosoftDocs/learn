@@ -116,4 +116,4 @@ We can track the progress of the deployment at any time.
 
     Copy the **URL** information. Open a new tab in your browser and use the information to browse to your new WordPress site. You can now configure your WordPress website and add content.
 
-   ![Screenshot showing pre-configured WordPress website](../media/4-configure-wordpress.png)
+    :::image type="content" source="../media/4-configure-wordpress.png" alt-text="Screenshot showing pre-configured WordPress website." loc-scope="third-party"::: <!-- Wordpress -->
