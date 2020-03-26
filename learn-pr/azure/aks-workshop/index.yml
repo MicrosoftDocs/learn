@@ -3,9 +3,9 @@ uid: learn.aks-workshop
 metadata:
   title: Azure Kubernetes Service Workshop
   description: In this workshop, you'll go through tasks to deploy a multicontainer application to Kubernetes on Azure Kubernetes Service (AKS).
-  ms.date: 01/30/2020
+  ms.date: 03/31/2020
   author: sabbour
-  ms.author: asabbour
+  ms.author: chrvaw
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Azure Kubernetes Service Workshop

@@ -3,9 +3,9 @@ uid: learn.aks-workshop.08-enable-ssl
 metadata:
   title: Enable SSL/TLS on the front-end ingress
   description: Enable SSL/TLS on the front-end ingress
-  ms.date: 01/30/2020
+  ms.date: 03/31/2020
   author: sabbour
-  ms.author: asabbour
+  ms.author: chrvaw
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Enable SSL/TLS on the front-end ingress
