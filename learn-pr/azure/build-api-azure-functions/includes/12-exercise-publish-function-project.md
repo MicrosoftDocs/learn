@@ -81,7 +81,7 @@ Your API is ready for prime time. Let's put it in the cloud. Azure, here we come
 
 1. Notice there's a "blocked by CORS policy" message.
 
-    :::image type="content" source="../media/blocked-by-cors.png" alt-text="Screenshot of a web browser with developer tools open showing a "blocked by CORS" error message in the console." loc-scope="other"::: <!-- no-loc -->
+    :::image type="content" source="../media/blocked-by-cors.png" alt-text="Screenshot of a web browser with developer tools open showing a blocked by CORS error message in the console." loc-scope="other"::: <!-- no-loc -->
 
 ## Enable CORS on the Function app in Azure
 
