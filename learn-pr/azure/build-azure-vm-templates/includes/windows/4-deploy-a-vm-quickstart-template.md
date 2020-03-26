@@ -57,7 +57,7 @@ Near the start of the template, you see a section named `parameters`. This secti
 * `windowsOSVersion`
 * `location`
 
-![The source code for the template's parameters section, highlighting each parameter name](../../media/4-armviz-params-windows.png)
+:::image type="content" source="../../media/4-armviz-params-windows.png" alt-text="The source code for the template's parameters section, highlighting each parameter name." loc-scope="other"::: <!-- Azure Resource Manager Visualizer, no-loc -->
 
 Two of these parameters &ndash; `windowsOSVersion` and `location` &ndash; have default values. The default value for `windowsOSVersion` is "2016-Datacenter" and the default value for `location` is the parent resource group's location.
 

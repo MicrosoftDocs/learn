@@ -158,6 +158,6 @@ There's no need to use a public IP for the service because you're going to expos
 
 Open the host name you configured on the ingress in a web browser, for example, at http:\//frontend.13-68-177-68.nip.io, to view and interact with the application.
 
-![Screenshot of the ratings-web application](../media/07-ratings-web-ingress.png)
+:::image type="content" source="../media/07-ratings-web-ingress.png" alt-text="Screenshot of the ratings-web application." loc-scope="other"::: <!-- no-loc -->
 
 In this exercise, you deployed an NGINX ingress controller and updated the **ratings-web** service to be accessible only from within the cluster. You then created an ingress route to reverse proxy the deployment of the **ratings-web** service through a host name.
