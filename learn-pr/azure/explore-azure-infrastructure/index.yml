@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.explore-azure-infrastructure
 title: Core Cloud Services - Azure architecture and service guarantees
-summary: Azure provides a global network of secure datacenters you can deploy your services into. Learn about the physical architecture of Azure, how redundancy is provided, and what sort of service guarantees Microsoft provides.
+summary: Azure provides a global network of secure datacenters you can deploy your services into. Learn about the physical architecture of Azure, how redundancy is provided, and what service guarantees Microsoft provides.
 metadata:
   title: Core Cloud Services - Explore Azure architecture and service guarantees
   description: Learn about the Azure global network of physical datacenters, the physical architecture of Azure, how redundancy is provided, and Microsoft service guarantees.
