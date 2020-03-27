@@ -9,6 +9,6 @@ The Express server runs the API on a server. You can create an Azure Functions p
 
 Congratulations, you just created an Azure Function app!
 
-> The Azure Functions app is what serves our routes.
+> You created the function app in the _functions_ folder, which separates it from the Angular app in the same project. You can decide how to structure your application, but for this sample it helps to see them all in one place.
 
-You created the function app in the _functions_ folder, which separates it from the Angular app in the same project. You certainly have freedom to structure your application to your needs, but for this sample it helps to see them all in one place.
+The Azure Functions app is what serves our routes.
