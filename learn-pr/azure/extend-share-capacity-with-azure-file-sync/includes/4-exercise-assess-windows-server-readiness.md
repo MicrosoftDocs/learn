@@ -16,7 +16,7 @@ You'd normally install Azure File Sync on your on-premises server. For this exer
 
    The following list has some location values you can use.
 
-   [!include[](../../../../includes/azure-sandbox-regions-note.md)]
+   [!include[](../../../includes/azure-sandbox-regions-note.md)]
 
 1. In PowerShell, run the following command to create a subnet and virtual network in the same location as the resource group.
 
