@@ -5,11 +5,10 @@ metadata:
   title: Exercise - Deploy a basic Logic Apps workflow using an ARM template
   description: Exercise - Deploy a basic Logic Apps workflow using an ARM template
   ms.date: 05/03/2019
-  author: andrewjbyrne
-  ms.author: anbyrne
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 8
 interactive: bash
 azureSandbox: true

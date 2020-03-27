@@ -6,7 +6,7 @@ We can create Linux VMs with the Azure portal, the Azure CLI, or Azure PowerShel
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-1. Click **Create a resource** in the upper-left corner of the Azure portal.
+1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
 
 1. In the search box, enter  **Ubuntu Server**. 
 1. Under the **Marketplace** result, select the **All results** link on the top right-hand side to see the different versions available. 
@@ -18,7 +18,7 @@ We can create Linux VMs with the Azure portal, the Azure CLI, or Azure PowerShel
 
 The VM creation experience in the portal is presented in a wizard format to walk you through all the configuration areas for the VM. Clicking the **Next** button will take you to the next configurable section. However, you can move between the sections at will with the tabs running across the top that identify each part.
 
-![Screenshot of the Azure portal showing the initial Create a virtual machine blade for an Ubuntu Server machine.](../media/3-azure-portal-create-vm.png)
+![Screenshot of the Azure portal showing the initial Create a virtual machine pane for an Ubuntu Server machine.](../media/3-azure-portal-create-vm.png)
 
 Once you fill in all the required options (identified with red asterisks), you can skip the remainder of the wizard experience and start creating the VM through the **Review + Create** button at the bottom.
 
@@ -72,7 +72,7 @@ Recall that we will get an OS disk (/dev/sda) and a temporary disk (/dev/sdb). L
 
 1. Click the **Create and attach a new disk** link in the **Data disks** section.
 
-    ![Screenshot of the Azure portal showing the Create a new disk blade.](../media/3-add-data-disk.png)
+    ![Screenshot of the Azure portal showing the Create a new disk pane.](../media/3-add-data-disk.png)
 
 1. You can take all the defaults: **Premium SSD**, the auto-generated name, size of **1023** GiB, and **None (empty disk)** for **Source type**, although notice that source type is where you could use a snapshot or Azure Blob storage to create a VHD.
 

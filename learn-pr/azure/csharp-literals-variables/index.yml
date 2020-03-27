@@ -2,14 +2,14 @@
 uid: learn.languages.csharp-literals-variables
 metadata:
   title: Store and retrieve data using literal and variable values in C#
-  description: Use data in your applications be creating literal values and variable values of different data types.
+  description: Use data in your applications by creating literal values and variable values of different data types.
   ms.date: 09/03/2019
   author: bobtabor-msft
   ms.author: rotabor
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Store and retrieve data using literal and variable values in C#
-summary: Use data in your applications be creating literal values and variable values of different data types.
+summary: Use data in your applications by creating literal values and variable values of different data types.
 abstract: |
   In this module, you will:
   - Create literal values for five basic data types
@@ -25,6 +25,7 @@ levels:
 - beginner
 roles:
 - developer
+- student
 products:
 - dotnet
 units:

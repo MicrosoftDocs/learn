@@ -4,11 +4,10 @@ metadata:
   title: Introduction to the Azure Data Science Virtual Machine
   description: Azure provides some pre-configured virtual machine images specifically designed for data science.  Learn how you can use these to get a jump start on your data science work.
   ms.date: 03/18/2019
-  author: bcafferky
-  ms.author: brcaffer
+  author: GraemeMalcolm
+  ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #ms.learn-contact: smmark
 title: Introduction to the Azure Data Science Virtual Machine
 summary: Azure provides some pre-configured virtual machine images specifically designed for data science.  Learn how you can use these to get a jump start on your data science work.
 abstract: |
@@ -21,6 +20,7 @@ levels:
 - beginner
 roles:
 - data-scientist
+- student
 products:
 - azure
 units:

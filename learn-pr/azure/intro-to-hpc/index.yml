@@ -1,0 +1,36 @@
+### YamlMime:Module
+uid: learn.intro-to-hpc
+metadata:
+  title: Introduction to high-performance computing (HPC) on Azure
+  description: Discover the services available on Azure for your high-performance computing workloads.
+  ms.date: 10/10/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction to high-performance computing (HPC) on Azure
+summary: Discover the services available on Azure for your high-performance computing workloads.
+abstract: | 
+  In this module, you will:
+  - Identify the HPC and batch solutions available on Azure
+  - Identify the scenarios where HPC and batch technologies are a fit
+prerequisites: | 
+  - Basic familiarity with Azure compute services
+iconUrl: /learn/achievements/intro-to-hpc.svg
+levels:
+- beginner
+roles:
+- solution-architect
+products:
+- azure
+- azure-batch
+- azure-virtual-machines
+units:
+- learn.intro-to-hpc.1-introduction
+- learn.intro-to-hpc.2-azure-batch
+- learn.intro-to-hpc.3-azure-vm-hpc-instances
+- learn.intro-to-hpc.4-microsoft-hpc-pack
+- learn.intro-to-hpc.5-scenarios-for-hpc-and-batch
+- learn.intro-to-hpc.6-summary
+badge:
+  uid: learn.intro-to-hpc.badge

@@ -96,6 +96,38 @@ groups:
       title: Node.js
     - id: python
       title: Python
+- id: dev-lang-csharp-python
+  title: Development language
+  prompt: Choose your development language
+  pivots:
+    - id: csharp
+      title: C#
+    - id: python
+      title: Python
+- id: dev-lang-csharp-node
+  title: Development language
+  prompt: Choose your development language
+  pivots:
+    - id: csharp
+      title: C#
+    - id: node
+      title: Node.js
+- id: dev-lang-javascript-powershell
+  title: Development language
+  prompt: Choose your development language
+  pivots:
+    - id: javascript
+      title: JavaScript
+    - id: powershell
+      title: PowerShell
+- id: dev-lang-csharp-powershell
+  title: Development language
+  prompt: Choose your development language
+  pivots:
+    - id: csharp
+      title: C#
+    - id: powershell
+      title: PowerShell
 - id: platform-cloud
   title: Platform
   prompt: Choose which platform you want to run in the cloud
@@ -206,3 +238,31 @@ groups:
       title: PostgreSQL
     - id: sql
       title: SQL Server
+- id: vsandcode
+  title: IDE
+  prompt: Choose your app Integrated Development Environment (IDE)
+  pivots:
+    - id: vscode
+      title: Visual Studio Code
+    - id: vstudio
+      title: Visual Studio
+- id: vs-vscode-language
+  title: IDE and language
+  prompt: Choose your Integrated Development Environment (IDE) and development language
+  pivots:
+    - id: vscode-node
+      title: Visual Studio Code + Node.js
+    - id: vscode-csharp
+      title: Visual Studio Code + C#
+    - id: vs-node
+      title: Visual Studio + Node.js
+    - id: vs-csharp
+      title: Visual Studio + C#
+- id: bash-vscode
+  title: Operating system
+  prompt: Choose an Integrated Development Environment (IDE) or the shell
+  pivots:
+    - id: bash
+      title: Bash
+    - id: vscode
+      title: Visual Studio Code

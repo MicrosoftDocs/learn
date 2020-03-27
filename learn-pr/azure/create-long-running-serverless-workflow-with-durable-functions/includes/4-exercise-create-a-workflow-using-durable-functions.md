@@ -4,7 +4,7 @@ In this unit, using the example from the previous unit, you'll learn how to crea
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account with which you activated the sandbox.
 
-1. Select the **Create a resource** button found on the upper left-hand corner of the Azure portal.
+1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
 
 1. Select **Compute**, and then select **Function App**.
 
@@ -31,10 +31,9 @@ In this unit, using the example from the previous unit, you'll learn how to crea
 
 ## Install the durable-functions npm package 
 
-Since we are creating JavaScript Durable Functions, we need to install the `durable-functions` npm package using the following instructions. 
+Since we are creating JavaScript Durable Functions, we need to install the `durable-functions` npm package using the following instructions.
 
-
-1. In the left-hand navigation pane of the Azure portal, select **All resources**, and then select your function app.
+1. On the Azure portal menu or from the **Home** page, select **All resources**, and then select your function app.
 
 1. Click **Platform Features**.
 

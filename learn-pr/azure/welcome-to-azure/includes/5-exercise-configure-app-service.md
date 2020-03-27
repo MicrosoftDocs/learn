@@ -2,23 +2,23 @@ Recall from earlier, that we're using an App Service to run our WordPress applic
 
 Let's have a look at some of this information.
 
-1. Open the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
+1. Open the [Azure portal](https://portal.azure.com/?azure-portal=true).
 
-1. Select **Dashboard** on the left sidebar to access a list of all resources in your subscription.
+1. From the left-hand navigation menu, select **Dashboard** to access a list of all resources in your subscription. You may have to click the menu icon to show the navigation choices.
 
-    [ ![Screenshot showing the MS Learn sandbox subscription with new resources](../media/5-dashboard-resources.png)](../media/5-dashboard-resources-expanded.png#lightbox)
+    ![Screenshot showing the MS Learn sandbox subscription with new resources](../media/5-dashboard-resources.png)
 
 1. Select the **App Service** with the name you chose it in the previous exercise.
 
-    [ ![Screenshot showing the App Service](../media/5-select-app-service.png)](../media/5-select-app-service-expanded.png#lightbox)
+    ![Screenshot showing the App Service](../media/5-select-app-service.png)
 
 1. By default, the app service's overview is displayed, if not select **Overview**.
 
-    [ ![Screenshot showing the App Service overview information](../media/5-overview.png)](../media/5-overview-expanded.png#lightbox)
+    [![Screenshot showing the App Service overview information](../media/5-overview.png)](../media/5-overview-expanded.png#lightbox)
 
 1. Scroll down in the overview view to where you can see the graphs for your newly created website. These graphs provide statistics about the number of requests received by our website, the amount of data in, data out, and the number of errors encountered on the site.
 
-    [ ![Screenshot showing App Service graphs](../media/5-graphs.png)](../media/5-graphs-expanded.png#lightbox)
+    [![Screenshot showing App Service graphs](../media/5-graphs.png)](../media/5-graphs-expanded.png#lightbox)
 
     The information displayed here is near real-time data and gives a quick overview of the performance of your website. Problems with the site's performance will manifest in these graphs as early warnings.
 
@@ -42,7 +42,7 @@ When you have more time, feel free to go through each section and explore the va
 
 ## How to change the App Service configuration
 
-The App Services has many configurable options available and group in sections of functionality.
+The App Services has many configurable options available and groups these options in sections of functionality.
 
 The first section displayed is a group of common options you'd access to get a view of the health of your application. However, each following section provides additional functionality and information.
 
@@ -56,12 +56,12 @@ For example, the **Settings** section gives you access to configure various aspe
 
     ![Screenshot showing Scale up selection](../media/5-settings-scale.png)
 
-1. Notice that there are three workload categories to choose from in the configuration blade. These three categories make it easier to decide the type of workload we'll run.
+1. Notice that there are three workload categories to choose from in the configuration pane. These three categories make it easier to decide the type of workload we'll run.
 
     | Category | Description |
     | --- | --- |
     | **Dev / Test** | This category is ideal for less demanding workloads. This category is predominantly focused on providing shared infrastructure. In this category, you have additional features that become available to the App Service application. For example, Custom domains / SSL and manual scale. |
-    | **Production** | This category is ideal for less demanding workloads. In this category, you'll also notice added features such as staging slots, daily backups, and a traffic manager. |
+    | **Production** | This category is ideal for more demanding workloads. In this category, you'll also notice added features such as staging slots, daily backups, and a traffic manager. |
     | **Isolated** | This category is ideal for workloads that require advanced networking and fine-grained scaling. |
 
     Within each category, there are pricing tiers that will allow us to scale the resources available to our App service. These pricing tiers give us access to the additional features mentioned above.

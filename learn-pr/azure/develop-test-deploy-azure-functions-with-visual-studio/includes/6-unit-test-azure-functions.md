@@ -2,7 +2,7 @@ Unit testing is a fundamental part of an Agile methodology. Visual Studio provid
 
 In the luxury watch online website scenario, your development team has a policy to achieve at least 80% coverage of code in unit testing. You would like to implement the same policy for Azure Functions.
 
-In this unit, you'll see how to use te `xUnit` test framework with Visual Studio to test Azure Functions.
+In this unit, you'll see how to use the `xUnit` test framework with Visual Studio to test Azure Functions.
 
 ## Create a unit test project
 
@@ -18,7 +18,7 @@ The first step is to create a project that contains your unit tests, and add it 
 
 1. When the project has been added, right-click the **WatchFunctionTests** project in the **Solution Explorer** window, and then click **Manage NuGet Packages**.
 
-1. In the **NuGet: WatchFunctionTests** window, click the **Browse** tab. In the **Search** box, type **Microsoft.AspNetCore.Mvc**. Click the **Microsoft.AspNetCore.Mvs** package, and then click **Install**.
+1. In the **NuGet: WatchFunctionTests** window, click the **Browse** tab. In the **Search** box, type **Microsoft.AspNetCore.Mvc**. Click the **Microsoft.AspNetCore.Mvc** package, and then click **Install**.
 
     ![ Screenshot of the NuGet Package Manager window. The user is installing the Microsoft.AspNetCore.Mvc package ](../media/6-nuget-install-aspnet-mvc.png)
 

@@ -1,32 +1,32 @@
 ### YamlMime:Module
 uid: learn.azdo.run-non-functional-tests-azure-pipelines
 metadata:
-  title: Run non-functional tests in Azure Pipelines - Learn
-  description: Run automated load tests with Apache JMeter, a form of non-functional testing, in Azure Pipelines.
-  ms.date: 09/30/2019
+  title: Run nonfunctional tests in Azure Pipelines - Learn
+  description: Run automated load tests by using Apache JMeter, a form of nonfunctional testing, in Azure Pipelines.
+  ms.date: 01/21/2020
   author: tpetchel
   ms.author: thpetche
   ms.topic: interactive-tutorial
   #ms.learn-contact: thpetche
   ms.prod: learning-azure
-title: Run non-functional tests in Azure Pipelines
-summary: Run automated load tests with Apache JMeter, a form of non-functional testing, in Azure Pipelines.
+title: Run nonfunctional tests in Azure Pipelines
+summary: Run automated load tests by using Apache JMeter, a form of nonfunctional testing, in Azure Pipelines.
 abstract: |
   In this module, you will:
-  - Define what non-functional tests are and how they compare to functional tests.
-  - Identify some of the more popular kinds of non-functional tests you can run.
-  - Run automated load tests in the pipeline with Apache JMeter.
+  - Define nonfunctional tests and explain how they compare to functional tests.
+  - Identify some popular kinds of nonfunctional tests you can run.
+  - Run automated load tests in the pipeline by using Apache JMeter.
   - Convert test results to a format that Azure Pipelines can visualize for you.
 prerequisites: |
   - An Azure subscription
-  - An Azure DevOps account
+  - An Azure DevOps organization
   - Visual Studio Code
-  - .NET Core 2.1
+  - .NET Core 3.1
   - Git
   - A GitHub account
 iconUrl: /learn/achievements/azure-devops/run-non-functional-tests-azure-pipelines.svg
 levels:
-- intermediate
+- beginner
 roles:
 - devops-engineer
 - administrator

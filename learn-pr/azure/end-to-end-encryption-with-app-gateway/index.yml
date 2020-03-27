@@ -23,6 +23,7 @@ levels:
 roles:
 - solution-architect
 - developer
+- security-engineer
 products:
 - azure
 - azure-virtual-network

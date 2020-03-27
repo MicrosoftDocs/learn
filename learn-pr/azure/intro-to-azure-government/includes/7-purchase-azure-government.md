@@ -16,7 +16,7 @@ Proof of membership in one of the groups listed above is required for access to 
 
 ## Test Azure Government with a 90-day free trial
 
-The Azure Government 90-day trial includes $500 per month to spend on Azure Government services. This trial is a non-renewable, fixed-term, agreement. Customers and partners who wish to continue using Azure Government after 90 days or after the $500 limit is exceeded need an Enterprise Agreement or a Pay-As-You-Go subscription.
+The Azure Government 90-day trial includes $500 per month to spend on Azure Government services. This trial is a non-renewable, fixed-term, agreement. Customers and partners who wish to continue using Azure Government after 90 days or after the spending limit is exceeded will need an Enterprise Agreement or a Pay-As-You-Go subscription.
 
 Request your trial online at [https://azure.microsoft.com/global-infrastructure/government/request/?ReqType=Trial](https://azure.microsoft.com/global-infrastructure/government/request/?ReqType=Trial).
 

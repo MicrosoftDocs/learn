@@ -23,6 +23,7 @@ levels:
 - beginner
 roles:
 - developer
+- security-engineer
 products:
 - azure
 - dotnet

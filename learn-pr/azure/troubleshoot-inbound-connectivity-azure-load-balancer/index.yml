@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: troubleshoot-inbound-network-connectivity-azure-load-balancer
+metadata:
+  title: Troubleshoot inbound network connectivity for Azure Load Balancer
+  description: Learn how to troubleshoot inbound network connectivity for Azure Load Balancer.
+  ms.date: 03/23/2020
+  author: cwatson-cat
+  ms.author: cwatson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Troubleshoot inbound network connectivity for Azure Load Balancer
+summary: Review multi-dimensional metrics for the load balancer in Azure Monitor Metrics, and check health probe status for the Load Balancer.
+abstract: | 
+  In this module, you will:
+  - Identify common Load Balancer inbound connectivity issues
+  - Identify steps to resolve issues when virtual machines aren't responding to health probe
+prerequisites: | 
+  - Basic understanding of Azure Load Balancer
+  - Familiarity with Azure Virtual Machines (VMs)
+  - Basic understanding of Azure Monitor
+  - (Optional) Access to an Azure subscription
+iconUrl: /learn/achievements/troubleshoot-inbound-connectivity-azure-load-balancer.svg
+levels:
+- beginner
+roles:
+- administrator
+products:
+- azure
+- azure-monitor
+- azure-load-balancer
+units:
+- learn.azure.troubleshoot-inbound-network-connectivity-azure-load-balancer.introduction
+- learn.azure.troubleshoot-inbound-network-connectivity-azure-load-balancer.troubleshoot-azure-load-balancer
+- learn.azure.troubleshoot-inbound-network-connectivity-azure-load-balancer.diagnose-issues-by-reviewing-configurations-and-metrics
+- learn.azure.troubleshoot-inbound-network-connectivity-azure-load-balancer.exercise-set-up-environment
+- learn.azure.troubleshoot-inbound-network-connectivity-azure-load-balancer.exercise-identify-and-resolve-inbound-network-connectivity
+- learn.azure.troubleshoot-inbound-network-connectivity-azure-load-balancer.summary
+badge:
+  uid: learn.azure.troubleshoot-inbound-network-connectivity-azure-load-balancer.badge

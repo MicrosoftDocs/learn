@@ -39,7 +39,7 @@ The following diagram shows a conceptual view of the behavior and data flow with
 
 ### Hybrid Worker Groups
 
- Windows computers that are directly connected to your Log Analytics workspace are automatically configured as a Hybrid Runbook Worker to support the runbooks that are included in this solution. Each Windows computer that's managed by the solution is listed in the Hybrid worker groups pane as a System hybrid worker group for the Automation account. The solutions use the naming convention Hostname FQDN_GUID.
+ Windows computers that are directly connected to your Log Analytics workspace are automatically configured as a Hybrid Runbook Worker to support the runbooks that are included in this solution. Each Windows computer that's managed by the solution shows up as a system hybrid worker group for the Automation account. The solutions use the naming convention Hostname FQDN_GUID.
 
 ## Operations Manager Management Packs
 

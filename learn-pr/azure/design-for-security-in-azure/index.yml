@@ -2,7 +2,7 @@
 uid: learn.design-for-security
 metadata:
   title: Design for security in Azure
-  description: Learn how to incorporate security into your architecture design, and discover the tools that Azure provides to help you create a secure environment through all the layers of your architecture.
+  description: Discover the tools that Azure provides to help you design a secure environment throughout your infrastructure, data, network, and applications.
   ms.date: 09/24/2018
   author: jboeshart
   ms.author: jaboes
@@ -24,6 +24,7 @@ levels:
 - intermediate
 roles:
 - solution-architect
+- security-engineer
 products:
 - azure
 - azure-active-directory
@@ -34,6 +35,7 @@ units:
 - learn.design-for-security.4-infrastructure-protection
 - learn.design-for-security.5-encryption
 - learn.design-for-security.6-network-security
+- learn.design-for-security.7-application-security
 - learn.design-for-security.8-summary
 badge:
   uid: learn.design-for-security.badge

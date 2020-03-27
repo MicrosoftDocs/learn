@@ -5,36 +5,16 @@ Mara has been given the task of changing some text on the home page of the websi
 Let's briefly review the steps to follow to complete the task:
 
 > [!div class="checklist"]
-> * Synchronize with the latest `master` branch on GitHub.
+> * Synchronize your local repository with the latest `master` branch on GitHub.
 > * Create a branch to hold your changes.
 > * Make the code changes you need, and verify them locally.
 > * Push your branch to GitHub.
 > * Merge any recent changes from the `master` branch on GitHub into your local working branch, and verify that your changes still work.
 > * Push up any remaining changes, watch Azure Pipelines build the application, and submit your pull request.
 
-> [!IMPORTANT]
-> This unit builds on work you did in the [Create a build pipeline with Azure Pipelines](/learn/modules/create-a-build-pipeline?azure-portal=true) module. Be sure to complete that module before you continue with this one. It provides everything you need to get set up.
+## Fetch the latest master branch
 
-## Get the latest code from GitHub
-
-In this section, you prepare Visual Studio Code for development, get the latest source code from GitHub, and then run the application to verify that things are working properly.
-
-> [!NOTE]
-> If you're using two-factor authentication on GitHub and are prompted for a username and password, [create a personal access token](https://help.github.com/en/articles/creating-a-personal-access-token-for-the-command-line?azure-portal=true) for the command line.
-
-### Prepare Visual Studio Code
-
-1. Open Visual Studio Code.
-1. On the **View** menu, select **Terminal**.
-1. Run the `cd` command to go to the directory where you put the _Space Game_ web project. Here's an example:
-
-    ```bash
-    cd ~/mslearn-tailspin-spacegame-web
-    ```
-
-### Fetch the latest master branch
-
-In the last unit, you created a pull request and merged your `build-pipeline` branch into the `master` branch on GitHub. Now you need to pull the changes to `master` back to your local branch.
+In the previous unit, you created a pull request and merged your `code-workflow` branch into the `master` branch on GitHub. Now you need to pull the changes to `master` back to your local branch.
 
 The `git pull` command fetches the latest code from the remote repository and merges it into your local repository. This way, you know you're working with the latest codebase.
 
@@ -56,18 +36,7 @@ The `git pull` command fetches the latest code from the remote repository and me
 
     Later, you'll fetch starter code from the Microsoft GitHub repository, known as _upstream_.
 
-### Open the project in File Explorer
-
-If you already have the _Space Game_ web project open in Visual Studio Code, move to the next step.
-
-In Visual Studio Code, your terminal window points to the root directory of the _Space Game_ web project. You open the project from File Explorer so that you can view its structure and work with files.
-
-1. On the **File** menu, select **Open** or **Open Folder**.
-1. Go to the root directory of the _Space Game_ web project.
-
-    You can view the directory and file tree in File Explorer.
-
-### Build and run the web application
+## Build and run the web application
 
 To ensure that you have a working copy to start your changes, build and run the web application locally.
 
@@ -83,37 +52,41 @@ To ensure that you have a working copy to start your changes, build and run the 
     dotnet run --configuration Release --no-build --project Tailspin.SpaceGame.Web
     ```
 
-### Verify that the application is running
+    > [!TIP]
+    > If you see an error in your browser that's related to a certificate error, select <kbd>Ctrl+C</kbd> from your terminal to stop the running application.
+    > Then run `dotnet dev-certs https --trust` and select **Yes** when prompted. Or [see this blog post](https://www.hanselman.com/blog/DevelopingLocallyWithASPNETCoreUnderHTTPSSSLAndSelfSignedCerts.aspx?azure-portal=true) for more information.
+    >
+    > After your computer trusts your local SSL certificate, run the `dotnet run` command a second time and go to `http://localhost:5000` from a new browser tab to see the running application.
 
-In development mode, the _Space Game_ website is configured to run on port 5000.
+## Verify that the application is running
 
-1. On a new browser tab, go to [http://localhost:5000](http://localhost:5000?azure-portal=true) to view the running application.
+In development mode, the *Space Game* website is configured to run on port 5000.
 
-    The following window is displayed:
+In a new browser tab, navigate to `http://localhost:5000` to see the running application.
 
-    ![The Space Game website](../media/3-space-game-top.png)
+You see this:
 
-    When you're finished, return to the terminal window and press Ctrl + C to stop the running application.
+![The Space Game website](../media/3-space-game-top.png)
+
+You can interact with the page, including the leaderboard. When you select a player's name, you see details about that player.
+
+When you're finished, return to the terminal window and select <kbd>Ctrl+C</kbd> to stop the running application.
 
 ## Create a feature branch
 
 In this section, you create a Git branch so that you can work on files without affecting anyone else. No one will even know you're working on those files until you push them to the remote repository.
 
-To create a branch, you use the `git checkout` command and give your branch a name.
+To create a branch, you use the `git checkout` command and give your branch a name, just like you did in the previous part.
 
 Before you create a branch, it's a good idea to adhere to a naming convention. For example, if your branch is for working on a new feature, you might use `feature/<branch-name>`. For a bug fix, you could use `bugfix/<bug-number>`. In this example, your branch name will be `feature/home-page-text`.
 
-1. In your terminal, run the following `git checkout` command:
+In your terminal, run the following `git checkout` command:
 
-    ```bash
-    git checkout -b feature/home-page-text
-    ```
+```bash
+git checkout -b feature/home-page-text
+```
 
-    The `-b` argument specifies to create a new branch if it doesn't exist. Omit the `-b` argument when you want to switch to an existing branch.
-
-    By default, your new branch builds on the previous branch from where you ran the `git checkout` command. Here, the parent branch is `master`. But the parent branch can be another one, such as a feature branch someone else started that you want to build on or experiment with.
-
-    It's now safe to make whatever changes you need, because you're on your own local branch. If you want to see which branch you're on, run `git branch -v`.
+Like before, the `feature/home-page-text` is based off of `master`.
 
 ## Make changes and test it locally
 
@@ -146,13 +119,13 @@ Before you create a branch, it's a good idea to adhere to a naming convention. F
     dotnet run --configuration Release --no-build --project Tailspin.SpaceGame.Web
     ```
 
-1. On a new browser tab, go to [http://localhost:5000](http://localhost:5000?azure-portal=true) to see the running application.
+1. On a new browser tab, go to `http://localhost:5000` to see the running application.
 
     You can see that the home page contains the updated text.
 
     ![The Space Game website](../media/5-web-site-revised-text.png)
 
-    When you're finished, return to the terminal window, and then press Ctrl+C to stop the running application.
+    When you're finished, return to the terminal window, and then press <kbd>Ctrl+C</kbd> to stop the running application.
 
 ## Commit and push your branch
 
@@ -164,7 +137,7 @@ Here you'll stage your changes to *Index.cshtml*, commit the change to your bran
     git status
     ```
 
-    You see that *Index.cshtml* has been modified. You'll commit that to your branch shortly, but you first need to make sure that Git is tracking this file. This is called _staging_ the file.
+    You see that *Index.cshtml* has been modified. Like before, the next step is to make sure that Git is tracking this file. This is called _staging_ the file.
 
 1. Run the following `git add` command to stage *Index.cshtml*.
 
@@ -177,13 +150,6 @@ Here you'll stage your changes to *Index.cshtml*, commit the change to your bran
     ```bash
     git commit -m "Improve the text at the top of the home page"
     ```
-
-    The `-m` argument specifies the commit message. The commit message becomes part of a changed file's history. It helps reviewers understand the change as well as help future maintainers understand how the file changed over time.
-
-    > [!TIP]
-    > The best commit messages complete the sentence, "If you apply this commit, you will ..."
-
-    If you omit the `-m` argument, Git brings up a text editor where you can detail the change. This option is useful when you want to specify a commit message that spans multiple lines. The text up to the first blank line specifies the commit title.
 
 1. Run this `git push` command to push, or upload, the `feature/home-page-text` branch to your repository on GitHub.
 
@@ -280,12 +246,14 @@ In this section, you submit a pull request just as you did previously.
 1. Ensure that the **base** drop-down list specifies your repository and not the Microsoft repository.
 
     > [!IMPORTANT]
-    > Again, this step is important because you can't merge your changes into the Microsoft repository. When you work directly with your own repository, and not a fork, your `master` branch is selected by default.
+    > Again, this step is important because you can't merge your changes into the Microsoft repository.
+    >
+    > When you work directly with your own repository, and not a fork, your `master` branch is selected by default.
 
 1. Enter a title and a description for your pull request.
 
-    * **Title**: Enter _Improve the text at the top of the home page_.
-    * **Description**: Enter _Received the latest home page text from the product team_.
+    * **Title**: _Improve the text at the top of the home page_
+    * **Description**: _Received the latest home page text from the product team._
 
 1. To complete your pull request, select **Create pull request**.
 

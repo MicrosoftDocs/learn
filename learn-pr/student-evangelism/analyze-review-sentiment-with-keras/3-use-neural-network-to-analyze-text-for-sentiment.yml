@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.analyze-review-sentiment-with-keras.use-neural-network-to-analyze-text-for-sentiment
-title: Use the Neural Network to Analyze Text for Sentiment
+title: Exercise - Use the Neural Network to Analyze Text for Sentiment
 metadata:
-  title: Use the Neural Network to Analyze Text for Sentiment
+  title: Exercise - Use the Neural Network to Analyze Text for Sentiment
   description: Use the Neural Network to Analyze Text for Sentiment
   ms.date: 02/24/2019
   author: JeffProsise
