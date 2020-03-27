@@ -9,6 +9,31 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Use sign-in, audit, and provisioning logs to detect suspicious activity
-durationInMinutes: 10
+durationInMinutes: 8
 content: |
   [!include[](includes/2-use-logs-detect-suspicious-activity.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: 'In which log would you find information about the MFA method used?'
+    choices:
+    - content: Audit log files
+      isCorrect: false
+      explanation: The audit log file provides a history of every task that is done in your tenant.
+    - content: Sign-in log files
+      isCorrect: true
+      explanation: The sign-in log file contains information on multi-factor authentication.
+    - content: Risky sign-ins log
+      isCorrect: false
+      explanation: This holds data on user accounts where the users sign-in behavior isn't consistent with previous sign-in attempts.
+  - content: 'In which log would you find information about Identity Protection?'
+    choices:
+    - content: Audit Log
+      isCorrect: true
+      explanation: The services column can be used to obtain information on Identity Protection.
+    - content: Sign-in log files
+      isCorrect: false
+      explanation: The sign-in log file tracks details of user authentication, and doesn't contain information on Identity Protection.
+    - content: Risky sign-in log
+      isCorrect: false
+      explanation: THe risky sign-in log file hold information on user who have been flagged as having inconsistent behavior.
