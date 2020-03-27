@@ -2,7 +2,15 @@ The online security and privacy of user data is a primary concern for Fruit Smoo
 
 :::image type="content" source="../media/08-arch-5.svg" border="false" alt-text="Diagram that shows the deployed resources on the Azure Kubernetes Service cluster.":::
 
-In this exercise, you'll deploy cert-manager and configure it to automatically issue Let's Encrypt certificates. You'll also configure the ingress created earlier to serve encrypted SSL/TLS traffic through the generated certificates.
+In this exercise, you'll:
+
+> [!div class="checklist"]
+> * Install Kubernetes cert-manager by using Helm
+> * Create a Kubernetes manifest file for ClusterIssuer with Let's Encrypt
+> * Apply the ClusterIssuer manifest file to create a cluster issuer
+> * Edit the Kubernetes ingress manifest file for the ratings web service to enable SSL/TLS
+> * Apply the updated Kubernetes ingress manifest file
+> * Test the application
 
 Before you start with the exercise steps, let's define some of the items mentioned.
 
@@ -12,11 +20,11 @@ Let's Encrypt is a nonprofit Certificate Authority that provides TLS certificate
 
 ### What is cert-manager?
 
-Cert-manager is a Kubernetes certificate management controller that makes it possible to automate certificate management in cloud-native environments. Cert-manager supports various sources including Let's Encrypt, HashiCorp Vault, Venafi, simple signing key pairs, or self-signed certificates. You'll use cert-manager to ensure your website's certificate is valid and up to date, and attempt to renew certificates at a configured time before the certificate expires.
+`cert-manager` is a Kubernetes certificate management controller that makes it possible to automate certificate management in cloud-native environments. `cert-manager` supports various sources including Let's Encrypt, HashiCorp Vault, Venafi, simple signing key pairs, or self-signed certificates. You'll use `cert-manager`to ensure your website's certificate is valid and up to date, and attempt to renew certificates at a configured time before the certificate expires.
 
 ### What is a Kubernetes custom resource definition (CRD)?
 
-A Kubernetes custom resource is an object that allows you to extend the Kubernetes API or to introduce your API into a cluster. You use custom resource definition (CRD) files to define your object kinds and the API Server handle the lifecycle of the object.
+A Kubernetes custom resource is an object that allows you to extend the Kubernetes API or to introduce your API into a cluster. You use custom resource definition (CRD) files to define your object kinds and the API Server manage the lifecycle of the object.
 
 ## Install cert-manager
 
@@ -111,7 +119,7 @@ Cert-manager will ensure that your website's certificate is valid and up to date
 
 1. To save the file, select <kbd>Ctrl+S</kbd>. To close the editor, select <kbd>Ctrl+Q</kbd>.
 
-## Apply the cluster-issuer configuration to create a cluster issuer
+## Apply the ClusterIssuer manifest file to create a cluster issuer
 
 1. Apply the configuration by using the `kubectl apply` command. Deploy the cluster-issuer configuration in the `ratingsapp` namespace.
 
@@ -127,7 +135,7 @@ Cert-manager will ensure that your website's certificate is valid and up to date
     clusterissuer.cert-manager.io/letsencrypt created
     ```
 
-## Edit the Kubernetes ingress file for the ratings web service to enable SSL/TLS
+## Edit the Kubernetes ingress manifest file for the ratings web service to enable SSL/TLS
 
 The last part of the configuration is to configure the Kubernetes ingress file for the ratings web service to enable SSL/TLS.
 
@@ -166,7 +174,7 @@ The last part of the configuration is to configure the Kubernetes ingress file f
 
 1. To save the file, select <kbd>Ctrl+S</kbd>. To close the editor, select <kbd>Ctrl+Q</kbd>.
 
-## Apply the updated Kubernetes ingress file
+## Apply the updated Kubernetes ingress manifest file
 
 1. Apply the configuration by using the `kubectl apply` command. Deploy the updated Kubernetes ingress file in the `ratingsapp` namespace.
 

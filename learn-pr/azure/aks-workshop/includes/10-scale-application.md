@@ -1,8 +1,13 @@
 Fruit Smoothies has outlets worldwide with a large follower base and the expectation is that many users will use the ratings website to rate their favorite smoothy flavor. As the popularity of your application grows, the application needs to scale appropriately to manage demand changes. You have to ensure that your application remains responsive as the number of ratings increases.
 
-In this exercise, you explore the Azure Kubernetes Service (AKS) horizontal pod autoscaler (HPA) and cluster autoscaler capabilities.
-
 :::image type="content" source="../media/10-cluster-autoscaler.png" border="false" alt-text="Diagram of the cluster autoscaler and horizontal pod autoscaler working together to support the required application demands.":::
+
+In this exercise, you'll:
+
+> [!div class="checklist"]
+> * Create an AKS horizontal pod autoscaler
+> * Run a load test with horizontal pod autoscaler enabled
+> * Autoscale the AKS cluster
 
 Before you start with the exercise steps, let's define some of the items mentioned.
 
@@ -203,7 +208,7 @@ We might have to force this situation by artificially increasing the resource `r
     ratings-web-7bc649bccb-gshn7       1/1     Running   0          99m
     ```
 
-To solve the pending pod problem, you can enable the cluster autoscaler to scale the cluster automatically.
+    To solve the pending pod problem, you can enable the cluster autoscaler to scale the cluster automatically.
 
 1. Configure the cluster autoscaler. You should see it dynamically adding and removing nodes based on the cluster utilization. Use the `az aks update` command to enable the cluster autoscaler. Specify a minimum and maximum value for the number of nodes. Make sure to use the same resource group from earlier, for example, **aksworkshop**.
 

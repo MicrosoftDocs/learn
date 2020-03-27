@@ -1,6 +1,12 @@
 The success of Fruit Smoothies' marketing campaign is the ongoing performance of the ratings website. The performance is depended on your cluster's performance and relies on the fact that you can monitor the different components in your application, view logs, and get alerts whenever your application goes down or some parts of it fail. You can use a combination of available tools to set up alerting capabilities for your application.
 
-In this exercise, you'll explore some of these tools. First, you'll create a Log Analytics workspace and enable Azure Monitor for containers. Then you'll inspect the Azure Kubernetes Service (AKS) event logs and monitor your cluster's health.
+In this exercise, you'll:
+
+> [!div class="checklist"]
+> * Create a Log Analytics workspace
+> * Enable the AKS monitoring add-on
+> * Inspect the AKS event or logs and monitor cluster health
+> * View the live container logs and AKS events
 
 You'll also see how to create a *Role* and a *RoleBinding*. These objects enable and set permissions for the agent to collect the data from the cluster.
 
@@ -53,7 +59,7 @@ You use Log Analytics in Azure Monitor to store monitoring data, events, and met
             --properties '{}' -o table
     ```
 
-## Enable the monitoring add-on
+## Enable the AKS monitoring add-on
 
 Once the workspace is ready, you can integrate the Azure Monitor add-on that's used for containers monitoring into it.
 

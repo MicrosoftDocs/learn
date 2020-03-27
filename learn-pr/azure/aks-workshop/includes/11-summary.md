@@ -20,24 +20,20 @@ In this module, you created resources by using your Azure subscription. You want
 
 We've covered a number of concepts in this module. Check out the URLs below to learn more about each of the concepts:
 
-* [Network concepts for applications in AKS](https://docs.microsoft.com/azure/aks/concepts-network#azure-virtual-networks).
-* [The ratings-web application source code](https://github.com/MicrosoftDocs/mslearn-aks-workshop-ratings-web?azure-portal=true)
-* [The ratings-api application source code](https://github.com/MicrosoftDocs/mslearn-aks-workshop-ratings-api?azure-portal=true)
+* [Network concepts for applications in AKS](https://docs.microsoft.com/azure/aks/concepts-network#azure-virtual-networks)
 * [Helm](https://helm.sh?azure-portal=true)
 * [How to use Helm](https://helm.sh/docs/intro/using_helm/?azure-portal=true)
 * [Helm charts](https://helm.sh/docs/topics/charts/?azure-portal=true)
 * [GitHub Helm charts repository](https://github.com/helm/charts?azure-portal=true)
 * [Helm Hub](https://hub.helm.sh?azure-portal=true)
-* [MongoDB Helm chart](https://github.com/helm/charts/tree/master/stable/mongodb?azure-portal=true)]
-* [Kubernetes Deployment manifest](https://docs.microsoft.com/azure/aks/concepts-clusters-workloads?azure-portal=true#deployments-and-yaml-manifests)
-* [Kubernetes Service](https://docs.microsoft.com/azure/aks/concepts-network?azure-portal=true#services)
+* [MongoDB Helm chart repository](https://github.com/helm/charts/tree/master/stable/mongodb?azure-portal=true)
+* [Kubernetes Deployments](https://docs.microsoft.com/azure/aks/concepts-clusters-workloads?azure-portal=true#deployments-and-yaml-manifests)
+* [Kubernetes Services](https://docs.microsoft.com/azure/aks/concepts-network?azure-portal=true#services)
 * [Kubernetes security concepts](https://docs.microsoft.com//azure/aks/concepts-security?azure-portal=true#kubernetes-secrets)
 * [Kubernetes secrets](https://kubernetes.io/docs/concepts/configuration/secret/?azure-portal=true)
 * [Let's Encrypt](https://letsencrypt.org/)
 * [cert-manager](https://cert-manager.io)
-* [nip.io](https://nip.io)
-* [xip.io](http://xip.io)
-* [sslip.io](https://sslip.io)
+* Wildcard DNS services - [nip.io](https://nip.io), [xip.io](http://xip.io), [sslip.io](https://sslip.io)
 * [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview?azure-portal=true)
 * [Azure Monitor for containers](https://docs.microsoft.com/azure/azure-monitor/insights/container-insights-overview?azure-portal=true)
 * [Log Analytics workspace](https://docs.microsoft.com/azure/azure-monitor/learn/quick-create-workspace?azure-portal=true)

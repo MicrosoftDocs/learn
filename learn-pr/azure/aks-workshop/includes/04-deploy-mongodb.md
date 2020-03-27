@@ -4,6 +4,13 @@ The Fruit Smoothies' ratings website consists of several components. There's a w
 
 In this exercise, you'll deploy MongoDB to the Azure Kubernetes Service (AKS) cluster using Helm. You'll also see how to use a Kubernetes secret to store the MongoDB connection username and password.
 
+In this exercise, you'll:
+
+> [!div class="checklist"]
+> * Configure the Helm stable repository
+> * Install the MongoDB chart
+> * Create a Kubernetes secret to hold database credentials
+
 Before you start with the exercise steps, let's define some of the items mentioned.
 
 ### What is Helm?

@@ -10,7 +10,14 @@ The extra effort is that a Kubernetes load balancer service is a Layer 4 load ba
 
 :::image type="content" source="../media/07-arch-4.svg" border="false" alt-text="Diagram that shows the deployed resources on the Azure Kubernetes Service cluster.":::
 
-In this exercise, you'll use an ingress controller and ingress rules that allow a single IP address to route traffic to multiple services in a Kubernetes cluster.
+In this exercise, you'll:
+
+> [!div class="checklist"]
+> * Deploy an NGINX ingress controller using Helm
+> * Edit the Kubernetes service manifest file for the ratings web service
+> * Create an ingress route file for the ratings web service
+> * Apply the Kubernetes ingress route file to create a load-balanced service
+> * Test the application
 
 Before you start with the exercise steps, let's define some of the items mentioned.
 

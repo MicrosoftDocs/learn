@@ -7,7 +7,13 @@ The Fruit Smoothies software development and operations teams made the decision 
 
 The teams made the decision to store all containers in a central and secure location and the decision made is to use Azure Container Registry.
 
-In this exercise, you'll configure an Azure Container Registry and build and push the Fruit Smoothies web application images to the registry. You'll then configure the AKS cluster to authenticate to the container registry.
+In this exercise, you'll:
+
+> [!div class="checklist"]
+> * Create a container registry by using the Azure CLI
+> * Build container images by using Azure Container Registry Tasks
+> * Verify container images in Azure Container Registry
+> * Configure an AKS cluster to authenticate to an Azure Container Registry
 
 Before you start with the exercise steps, let's define some of the items mentioned.
 
@@ -18,8 +24,6 @@ Azure Container Registry is a managed Docker registry service based on the open-
 Container images can be pushed and pulled with Container Registry by using the Docker CLI or the Azure CLI. You can use Azure portal integration to visually inspect the container images in the container registry. In distributed environments, the Container Registry geo-replication feature can be used to distribute container images to multiple Azure datacenters for localized distribution.
 
 Azure Container Registry Tasks can also build container images in Azure. Tasks use a standard Dockerfile to create and store a container image in Azure Container Registry without the need for local Docker tooling. With Azure Container Registry Tasks, you can build on-demand or fully automate container image builds by using DevOps processes and tooling.
-
-In this exercise, you'll create a container registry by using the Azure CLI.
 
 ## Create a container registry
 

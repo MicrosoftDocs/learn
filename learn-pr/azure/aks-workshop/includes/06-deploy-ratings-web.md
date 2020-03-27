@@ -4,7 +4,14 @@ In the previous unit, you deployed the ratings API. You'll continue your deploym
 
 :::image type="content" source="../media/06-arch-3.svg" border="false" alt-text="Diagram that shows the deployed resources on the Azure Kubernetes Service cluster.":::
 
-In this exercise, you'll deploy that Docker image of the front end to Azure Kubernetes Service (AKS) by creating a Kubernetes deployment. You'll then expose it through a load balancer by creating a Kubernetes service. Additionally, you'll configure the front end to connect to the ratings API that you already deployed.
+In this exercise, you'll:
+
+> [!div class="checklist"]
+> * Create a Kubernetes deployment manifest file for the web front end
+> * Apply the Kubernetes deployment manifest file
+> * Create a Kubernetes service manifest file to expose the web front end
+> * Apply the Kubernetes service manifest file to create a load-balanced service
+> * Test the web front end
 
 Before you start with the exercise steps, let's define some of the items mentioned.
 

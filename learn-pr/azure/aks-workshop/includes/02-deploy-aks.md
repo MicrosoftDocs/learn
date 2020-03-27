@@ -29,7 +29,34 @@ There are several tasks that you'll complete to show how Kubernetes abstracts aw
 [!include[](../../../includes/azure-exercise-subscription-prerequisite.md)]
 [!include[](../../../includes/azure-cloudshell-copy-paste-tip.md)]
 
-In this exercise, you'll use AKS to deploy a Kubernetes cluster.
+In this exercise, you'll:
+
+> [!div class="checklist"]
+> * Create a new resource group
+> * Azure Container Networking Interface (CNI) networking
+> * Create an Azure Kubernetes Service cluster
+> * Connect to the Kubernetes cluster by using `kubectl`
+> * Create a Kubernetes namespace
+
+Before you start with the exercise steps, let's define some of the items mentioned.
+
+### What is Kubenet networking?
+
+Kubenet networking is the default networking model in Kubernetes. With Kubenet networking, nodes get assigned an IP address from the Azure virtual network subnet. Pods receive an IP address from a logically different address space to the Azure virtual network subnet of the nodes.
+
+Network address translation (NAT) is then configured so that the pods can reach resources on the Azure virtual network. The source IP address of the traffic is translated to the node's primary IP address and then configured on the nodes. Note, that pods receive an IP address that's "hidden" behind the node IP.
+
+### What is Azure Container Networking Interface (CNI) networking?
+
+With Azure Container Networking Interface (CNI), the AKS cluster is connected to existing virtual network resources and configurations. In this networking model, every pod gets an IP address from the subnet and can be accessed directly. These IP addresses must be unique across your network space and calculated in advance.
+
+Some of the features you'll use require you to deploy the AKS cluster by using the *Azure Container Networking Interface networking* configuration.
+
+For a more detailed comparison, see the **Learn more** section at the end of this module.
+
+### What is a namespace?
+
+A namespace in Kubernetes creates a logical isolation boundary. Names of resources must be unique within a namespace but not across namespaces. If you don't specify the namespace when you work with Kubernetes resources, the *default* namespace is implied.
 
 ## Create a new resource group
 
@@ -56,21 +83,7 @@ In this exercise, you'll use AKS to deploy a Kubernetes cluster.
 
 ## Configure networking
 
-We have two network models to choose from when deploying an AKS cluster. The first model is *Kubenet networking*, and the second is *Azure Container Networking Interface (CNI) networking*.
-
-### What is Kubenet networking?
-
-Kubenet networking is the default networking model in Kubernetes. With Kubenet networking, nodes get assigned an IP address from the Azure virtual network subnet. Pods receive an IP address from a logically different address space to the Azure virtual network subnet of the nodes.
-
-Network address translation (NAT) is then configured so that the pods can reach resources on the Azure virtual network. The source IP address of the traffic is translated to the node's primary IP address and then configured on the nodes. Note, that pods receive an IP address that's "hidden" behind the node IP.
-
-### What is Azure Container Networking Interface (CNI) networking?
-
-With Azure CNI, the AKS cluster is connected to existing virtual network resources and configurations. In this networking model, every pod gets an IP address from the subnet and can be accessed directly. These IP addresses must be unique across your network space and calculated in advance.
-
-Some of the features you'll use require you to deploy the AKS cluster by using the *Azure Container Networking Interface networking* configuration.
-
-For a more detailed comparison, see the *Learn more* section at the end of this module.
+We have two network models to choose from when deploying an AKS cluster. The first model is *Kubenet networking*, and the second is *Azure Container Networking Interface (CNI) networking*. In this exercise, you'll configure Azure CNI networking for the Fruit Smoothies AKS cluster.
 
 1. First, create a virtual network and subnet. Pods deployed in your cluster are assigned an IP from this subnet. Run the following command to create the virtual network.
 
@@ -191,11 +204,7 @@ With the new virtual network in place, you can go ahead and create your new clus
 
 ## Create a Kubernetes namespace for the application
 
-Froot Smoothies want to deploy several apps from other teams in the deployed AKS cluster as well. Instead of running multiple clusters, the company wants to use the Kubernetes features that let you logically isolate teams and workloads in the same cluster. The goal is to provide the least number of privileges scoped to the resources each team needs. 
-
-### What is a namespace?
-
-A namespace in Kubernetes creates a logical isolation boundary. Names of resources must be unique within a namespace but not across namespaces. If you don't specify the namespace when you work with Kubernetes resources, the *default* namespace is implied.
+Fruit Smoothies want to deploy several apps from other teams in the deployed AKS cluster as well. Instead of running multiple clusters, the company wants to use the Kubernetes features that let you logically isolate teams and workloads in the same cluster. The goal is to provide the least number of privileges scoped to the resources each team needs.
 
 Let's create a namespace for your ratings application.
 

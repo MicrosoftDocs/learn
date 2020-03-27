@@ -4,13 +4,18 @@ In the previous unit, you deployed MongoDB using Helm. You'll continue your depl
 
 :::image type="content" source="../media/05-arch-2.svg" border="false" alt-text="Diagram that shows the deployed resources on the Azure Kubernetes Service cluster.":::
 
-In this exercise, you'll deploy the Docker image of the API to the Azure Kubernetes Service (AKS) by creating a Kubernetes deployment. You'll then expose it through a load balancer by creating a Kubernetes service. Additionally, you'll configure the API to connect to the MongoDB database by attaching the Kubernetes secret.
+In this exercise, you'll:
+
+> [!div class="checklist"]
+> * Create a Kubernetes deployment manifest file for the RESTful API
+> * Apply the Kubernetes deployment manifest file
+> * Create a Kubernetes service manifest file to expose the RESTful API
+> * Apply the Kubernetes service manifest file to create a load-balanced service
 
 Before you start with the exercise steps, let's define some of the items mentioned.
 
 > [!TIP]
 > Azure Cloud Shell includes an [integrated file editor](https://docs.microsoft.com/azure/cloud-shell/using-cloud-shell-editor). The Cloud Shell editor supports features such as language highlighting, the command palette, and a file explorer. For simple file creation and editing, launch the editor by running `code .` in the Cloud Shell terminal. This action opens the editor with your active working directory set in the terminal. To directly open a file for quick editing, run `code <filename>` to open the editor without the file explorer. To open the editor via UI button, select the `{}` editor icon on the toolbar. This action opens the editor and defaults the file explorer to the `/home/<user>` directory.
-
 
 ### What is a Kubernetes deployment?
 
@@ -30,7 +35,7 @@ A ClusterIP allows you to expose a Kubernetes service on an internal IP in the c
 
 Kubernetes Secrets allows you to store and manage all kinds of sensitive information. For example, you want to store the username and password to allow the API to connect to the MongoDB database. Storing confidential information in a Secret is safer and more flexible than hard coding the information in the container image.
 
-## Create a Kubernetes deployment file for the ratings API
+## Create a Kubernetes deployment manifest file for the ratings API
 
 1. Create a file called `ratings-api-deployment.yaml` by using the integrated editor.
 
@@ -151,7 +156,7 @@ Kubernetes Secrets allows you to store and manage all kinds of sensitive informa
     ratings-api   1/1     1            1           2m
     ```
 
-## Create a Kubernetes service file for the ratings API service
+## Create a Kubernetes service manifest file for the ratings API service
 
 Our next step is to simplify the network configuration for your application workloads. You'll use a Kubernetes service to group your pods and provide network connectivity.
 
@@ -194,7 +199,7 @@ Our next step is to simplify the network configuration for your application work
 
 1. To save the file, select <kbd>Ctrl+S</kbd>. To close the editor, select <kbd>Ctrl+Q</kbd>.
 
-## Apply the Kubernetes service file to create a load-balanced service
+## Apply the Kubernetes service manifest file to create a load-balanced service
 
 1. Apply the configuration by using the `kubectl apply` command, and use the `ratingsapp` namespace.
 
