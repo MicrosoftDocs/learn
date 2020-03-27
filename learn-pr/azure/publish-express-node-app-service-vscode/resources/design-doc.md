@@ -97,4 +97,4 @@ Create a JavaScript web application with Express.js and VS Code and publish it t
 
 ## Notes
 
-This is effectively the JavaScript/VSCode/Linux App Service version of https://docs.microsoft.com/en-us/learn/modules/publish-azure-web-app-with-visual-studio/
+This is effectively the JavaScript/VS Code/Linux App Service version of https://docs.microsoft.com/en-us/learn/modules/publish-azure-web-app-with-visual-studio/

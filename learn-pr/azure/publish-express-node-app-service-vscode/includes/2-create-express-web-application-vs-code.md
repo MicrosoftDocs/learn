@@ -41,7 +41,7 @@ When you want to create a skeleton webapp in Express.js, as a starting point for
 
 ## What is Visual Studio Code?
 
-Visual Studio Code is a free code editor for Windows, macOS, and Linux. It has support for JavaScript, TypeScript, and Node.js out-of-the-box, and you can install many extensions for other languages and runtimes. 
+[Visual Studio Code](https://code.visualstudio.com) is a free code editor for Windows, macOS, and Linux. It has support for JavaScript, TypeScript, and Node.js out-of-the-box, and you can install many extensions for other languages and runtimes. 
 
 You can use VS Code as your editor regardless of the languages, frameworks, operating systems, and deployment mechanisms you use. There is also an extension for Azure App Service, which you will use later in this module to create webapps and deploy code.
 
