@@ -1,4 +1,3 @@
-
 In this module, you learned how to:
 
 - Configure an Azure IoT Hub to capture data

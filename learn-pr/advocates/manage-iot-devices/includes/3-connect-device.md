@@ -23,7 +23,7 @@ In order to start collecting the data from the Raspberry Pi simulator, you need 
 
 1. In the **IoT hub** pane, enter the following information for your IoT hub:
 
-   - **Subscription**: Use the sandbox subscription for this example.
+   - **Subscription**: Use the **Concierge subscription** for this example. This is the sandbox subscription.
    - **Resource group**: Use the sandbox resource group.
    - **Name**: Create a unique name for your IoT hub, something like "PiHub-your-id", replacing "your-id" with something appropriate. If the name you enter is available, a green check mark appears.
    - **Region**: Select the closest region to your location.
@@ -78,13 +78,17 @@ A device must be registered with your IoT hub before the device can connect.
 
    ![Screenshot showing the Pi simulator console output](../media/iot-admin-device-telemetry.png)
 
+1. Make sure you don't miss the LED flash, each time a message is sent!
+
+   ![Screenshot showing the Pi simulator LED flash](../media/iot-admin-led-flash.png)
+
 ## Read the telemetry from your hub
 
 So what's happening? IoT hub is receiving the device-to-cloud messages sent from the simulated device. In order to see that, let's take a quick look at how Azure IoT Hub is processing the incoming data.
 
 1. In your IoT Hub, under **Monitoring**, select **Metrics**.
 
-1. For **METRIC** locate  **Telemetry messages sent** - it is near the end of the list of available metrics. Select **Sum**, for **AGGREGATION**.
+1. For **Metric** locate  **Telemetry messages sent** - it is near the end of the list of available metrics. Select **Sum**, for **Aggregation**.
 
 1. Change the time range to **Last 30 minutes**, in the box top-right. Give it a few minutes as you wait for the data to come into the picture.
 

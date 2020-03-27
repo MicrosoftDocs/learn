@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.manage-iot-devices.4-summary
+uid: learn.manage-iot-devices.5-summary
 metadata:
   description: Summary
   author: lnyswonger
@@ -9,9 +9,9 @@ metadata:
   ms.prod: learning-azure
   ROBOTS: NOINDEX
 title: Summary
-durationInMinutes: 7
+durationInMinutes: 4
 content: |
-  [!include[](includes/4-summary.md)]
+  [!include[](includes/5-summary.md)]
 quiz:
   title: Check your knowledge
   questions:

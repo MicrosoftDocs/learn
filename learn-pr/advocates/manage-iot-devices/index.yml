@@ -28,6 +28,7 @@ units:
 - learn.manage-iot-devices.1-intro-to-ops-in-iot
 - learn.manage-iot-devices.2-raspberry-pi-emulator
 - learn.manage-iot-devices.3-connect-device
-- learn.manage-iot-devices.4-summary
+- learn.manage-iot-devices.4-administer-your-hub
+- learn.manage-iot-devices.5-summary
 badge:
   uid: learn.manage-iot-devices.badge
