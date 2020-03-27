@@ -1,4 +1,3 @@
-In this module you were able to learn more about how to manage devices in the IoT Hub and setup the cloud for automatic device provisioning using the IoT Hub Device Provisioning Service. NOT TRUE
 
 In this module, you learned how to:
 
@@ -14,3 +13,7 @@ Take your interest further with:
 - [Raspberry Pi Simulator documentation](https://docs.microsoft.com/azure/iot-hub/iot-hub-raspberry-pi-web-simulator-get-started)
 
 [!include[](../../../includes/azure-sandbox-cleanup.md)]
+
+## Learn more with a Channel 9 video series
+
+- [IoT 101](https://channel9.msdn.com/Series/IoT-101/?&WT.mc_id=EducationalIoT-c9-niner&azure-portal=true)
