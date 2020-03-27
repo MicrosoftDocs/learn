@@ -23,7 +23,7 @@ This view is a collection of reports based on audit log data, focused around acc
 - Gauge the number of users successfully updated, and how many failed.
 - Get the number of users deprovisioned, and any that failed.
 
-You'll need to download the [Azure AD Account Provisioning Events.omsview](https://github.com/AzureAD/Deployment-Plans/blob/master/Log%20Analytics%20Views/Azure%20AD%20Account%20Provisioning%20Events.omsview) file from the GitHub repository.
+You'll need to download the [Azure AD Account Provisioning Events.omsview](https://github.com/AzureAD/Deployment-Plans/blob/master/Log%20Analytics%20Views/Azure%20AD%20Account%20Provisioning%20Events.omsview?azure-portal=true) file from the GitHub repository.
 
 ### Sign-in Events view
 
@@ -34,7 +34,7 @@ This view is a collection of reports that monitor your users' sign-in attempts. 
 - Sign in by device
 - Sign-ins over time
 
-You'll need to download the [AzureADSignins.omsview](https://github.com/AzureAD/Deployment-Plans/blob/master/Log%20Analytics%20Views/AzureADSignins.omsview) file from the GitHub repository.
+You'll need to download the [AzureADSignins.omsview](https://github.com/AzureAD/Deployment-Plans/blob/master/Log%20Analytics%20Views/AzureADSignins.omsview?azure-portal=true) file from the GitHub repository.
 
 ### Install a prebuilt view
 
@@ -75,7 +75,7 @@ With the empty dashboard created, you'll need to add a query report. You might t
 
 From the log analytics workspace, create a new query. Suppose you wanted to identify the most common user event for the last week. You'd use a query like this one:
 
-```
+```kusto
 AuditLogs
 | where TimeGenerated >= ago(7d)
 | summarize auditCount = count() by OperationName

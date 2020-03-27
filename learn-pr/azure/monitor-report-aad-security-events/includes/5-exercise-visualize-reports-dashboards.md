@@ -50,10 +50,10 @@ To stream the audit and sign-in logs to your Log Analytics workspace, you'll nee
 
 ## Download prebuilt views
 
-1. In a new browser tab navigate to [Azure AD Account Provisioning Events.omsview](https://github.com/AzureAD/Deployment-Plans/blob/master/Log%20Analytics%20Views/Azure%20AD%20Account%20Provisioning%20Events.omsview).
+1. In a new browser tab navigate to [Azure AD Account Provisioning Events.omsview](https://github.com/AzureAD/Deployment-Plans/blob/master/Log%20Analytics%20Views/Azure%20AD%20Account%20Provisioning%20Events.omsview?azure-portal=true).
 1. Right-click on **Raw**, select **Save link as**.
 1. Select your desktop as the destination.
-1. Navigate to [AzureADSignins.omsview](https://github.com/AzureAD/Deployment-Plans/blob/master/Log%20Analytics%20Views/AzureADSignins.omsview).
+1. Navigate to [AzureADSignins.omsview](https://github.com/AzureAD/Deployment-Plans/blob/master/Log%20Analytics%20Views/AzureADSignins.omsview?azure-portal=true).
 1. Right-click on **Raw**, select **Save link as**.
 1. Select your desktop as the destination.
 
@@ -99,7 +99,7 @@ From your Azure portal:
 
 1. You wanted to know the most common user event for last week.  Copy this query into your query editor.
 
-    ```
+    ```kusto
     AuditLogs
     | where TimeGenerated >= ago(7d)
     | summarize auditCount = count() by OperationName

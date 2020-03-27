@@ -3,7 +3,7 @@ uid: learn.monitor-report-aad-security-events
 metadata:
   title: Monitor and report on security events in Azure AD
   description: Keep tabs on security events in your Azure AD resources by using built-in reporting and monitoring capabilities. Respond to events as they happen and address security risks before they become a problem.
-  ms.date: 12/30/2019
+  ms.date: 03/27/2020
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial

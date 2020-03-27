@@ -3,7 +3,7 @@ uid: learn.monitor-report-aad-security-events.2-use-logs-detect-suspicious-activ
 metadata:
   title: Use sign-in, audit, and provisioning logs to detect suspicious activity
   description: Use sign-in, audit, and provisioning logs to detect suspicious activity
-  ms.date: 12/30/2019
+  ms.date: 03/27/2020
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
