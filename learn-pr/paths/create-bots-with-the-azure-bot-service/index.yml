@@ -2,7 +2,7 @@
 uid: learn.data-ai.create-bots-with-the-azure-bot-service
 metadata:
   title: Create Intelligent Bots with the Azure Bot Service
-  description: Allowing customers to interact with computer applications in a conversational way using text, graphics, or speech, can be realized using Bots. It may be a simple question and answer dialog, or a sophisticated bot that allows people to interact with services in an intelligent manner using pattern matching, state tracking and artificial intelligence techniques well-integrated with existing business services.  Learn how to build a chat bot and add intelligence to the Bot by integrating QnA Maker and LUIS
+  description: In this learning path, find out how to build a chat bot to interact with customers using text, graphics, or speech with extras from QnA Maker and LUIS.
   brand: azure
   ms.date: 02/25/2019
   author: gerryaobrien
@@ -25,6 +25,5 @@ products:
 - azure-bot-service
 modules:
 - learn.data-ai.build-a-faq-chat-bot-with-qna-maker-and-azure-bot-service
-- learn.build-azure-bot-services-bot
 trophy:
   uid: learn.data-ai.create-bots-with-the-azure-bot-service.trophy

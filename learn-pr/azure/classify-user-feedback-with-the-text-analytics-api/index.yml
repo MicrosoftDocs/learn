@@ -2,10 +2,10 @@
 uid: learn.classify-user-feedback-with-the-text-analytics-api
 metadata:
   title: Discover sentiment in text with the Text Analytics API
-  description: Learn how to use the Text Analytics API to discover sentiment in user feedback.
+  description: Learn how to use the Text Analytics API and Azure Functions to discover what your customers are really saying in their feedback about your products or brands.
   ms.date: 09/24/2018
-  author: AndrewJByrne
-  ms.author: anbyrne
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title:  Discover sentiment in text with the Text Analytics API
@@ -23,6 +23,7 @@ levels:
 roles: 
 - developer
 - ai-engineer
+- student
 products:
 - azure
 - azure-cosmos-db

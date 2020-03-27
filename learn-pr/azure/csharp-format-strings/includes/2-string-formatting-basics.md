@@ -23,7 +23,7 @@ There are a few important things to notice about this code.
 
 - Data types and variables of a given data type have built-in "helper methods" to make certain tasks easy.
 - The literal string `"{0} {1}!"` forms a template, parts of which will be replaced at run time.
-- The token `{0}` is replaced by the first argument after the string templating other words, the value of the variable `first`.
+- The token `{0}` is replaced by the first argument after the string template, in other words, the value of the variable `first`.
 - The token `{1}` is replaced by the second argument after the string template, in other words, the value of the variable `second`.
 
 > [!NOTE]
@@ -40,8 +40,8 @@ Console.WriteLine("{0} {0} {0}!", first, second);
 If you run this you should see the following output.
 
 ```output
-Hello World!
-Hello Hello Hello
+World Hello!
+Hello Hello Hello!
 ```
 
 A few observations about these examples:

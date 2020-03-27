@@ -54,7 +54,7 @@ Start by deploying a new VM from a Windows Server 2016 image.
 
 1. Use your Microsoft Learn account to sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
 
-1. In the left pane, select **Create a resource**.
+1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
 
 1. In the **Search the Marketplace** text box, enter **Automation**.
 
@@ -197,4 +197,4 @@ In your web browser, go to `http://[public-ip]`. Here, `[public-ip]` is the publ
 
 You should see the default IIS webpage. IIS has been deployed. Azure Automation used the PowerShell DSC script you uploaded to your Azure Automation account.
 
-![Screenshot of the web browser, showing the default IIS page](../media/4-iis.png)
+:::image type="content" source="../media/4-iis.png" alt-text="Screenshot of the web browser, showing the default IIS page." loc-scope="other"::: <!-- no-loc -->

@@ -2,8 +2,8 @@
 uid: learn.intro-to-governance
 metadata:
   title: Apply and monitor infrastructure standards with Azure Policy
-  description: Learn about governance and management in Azure services.
-  ms.date: 12/27/2018
+  description: Learn about tools Azure provides for policy and standards management that support your teams' ownership and development of their resources in the cloud.
+  ms.date: 02/28/2020
   author: patridge
   ms.author: adpatrid
   ms.topic: interactive-tutorial
@@ -25,6 +25,7 @@ roles:
 - administrator
 - solution-architect
 - security-engineer
+- student
 products:
 - azure
 units:

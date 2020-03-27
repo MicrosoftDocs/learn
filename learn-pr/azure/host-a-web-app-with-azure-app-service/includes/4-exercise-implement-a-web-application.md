@@ -6,7 +6,15 @@
 
 The heart of the .NET CLI tools is the `dotnet` command-line tool. Using this command, you will create a new ASP.NET Core web project.
 
-In the Cloud Shell on the right, create a new ASP.NET Core MVC application. Name it "BestBikeApp".
+First, let's install the appropriate version of `dotnet` into the Cloud Shell. For this exercise, we'll be using SDK version 3.1.102. Run the following commands in the Cloud Shell panel on the right to install it.
+
+```bash
+wget -q -O - https://dot.net/v1/dotnet-install.sh | bash -s -- --version 3.1.102
+export PATH="~/.dotnet:$PATH"
+echo "export PATH=~/.dotnet:\$PATH" >> ~/.bashrc
+```
+
+Next, run the following commands to create a new ASP.NET Core MVC application named "BestBikeApp".
 
 ```bash
 dotnet new mvc --name BestBikeApp
@@ -22,16 +30,21 @@ dotnet run
 You should get something like:
 
 ```console
-Hosting environment: Development
-Content root path: /home/your-user/BestBikeApp
-Now listening on: https://localhost:5001
-Now listening on: http://localhost:5000
-Application started.
+info: Microsoft.Hosting.Lifetime[0]
+      Now listening on: https://localhost:5001
+info: Microsoft.Hosting.Lifetime[0]
+      Now listening on: http://localhost:5000
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /home/user/BestBikeApp
 ```
 
 The output describes the situation after starting your app: the application is running and listening at port 5000.
 
-If we were running the app on our own machine, we'd be able to open a browser to http://localhost:5000 and see our site. To make this accessible from outside of our own machine, we'll need to deploy the app to somewhere with a public endpoint. The App Service instance we created earlier is perfect for that.
+If we were running the app on our own machine, we'd be able to open a browser to `http://localhost:5000` and see our site. To make this accessible from outside of our own machine, we'll need to deploy the app to somewhere with a public endpoint. The App Service instance we created earlier is perfect for that.
 
 Press <kbd>Ctrl+C</kbd> to shut down the running app.
 
@@ -155,7 +168,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    return "<html><body><h1>Hello World!</h1></body></html>\n"
+    return "<html><body><h1>Hello Best Bike App!</h1></body></html>\n"
 ```
 
 Save the file and exit the editor. You can save the file and exit the editor through the "..." menu on the top right, or press <kbd>Ctrl+S</kbd> and <kbd>Ctrl+Q</kbd>.

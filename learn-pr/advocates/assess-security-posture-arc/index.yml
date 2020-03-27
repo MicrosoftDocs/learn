@@ -1,0 +1,32 @@
+### YamlMime:Module
+uid: learn.advocates.assess-security-posture-arc
+metadata:
+  title: Sample Learn Module
+  description: Sample Learn Module
+  ms.date: 10/02/2019
+  author: burkeholland
+  ms.author: buhollan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Sample Learn Module
+hidden: true
+summary: Sample Learn Module
+abstract: Sample Learn Module
+prerequisites: /
+  - Text defined by content developer
+iconUrl: /learn/achievements/generic-badge.svg
+levels: 
+  - beginner
+  - intermediate
+  - advanced
+roles: 
+  - developer
+products: 
+  - azure
+  - azure-functions
+units: 
+  - learn.advocates.assess-security-posture-arc.1-introduction
+  - learn.advocates.assess-security-posture-arc.2-content
+  - learn.advocates.assess-security-posture-arc.3-exercise
+badge: 
+  uid: learn.advocates.assess-security-posture-arc.badge

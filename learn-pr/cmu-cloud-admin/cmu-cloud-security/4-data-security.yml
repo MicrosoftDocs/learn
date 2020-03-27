@@ -1,0 +1,59 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-admin.cmu-cloud-security.4-data-security
+title: Data security in the cloud
+metadata:
+  title: Data security in the cloud
+  description: Data security in the cloud
+  ms.date: 01/15/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 14
+content: |
+  [!include[](includes/4-data-security.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+    - content: "You are responsible for the security of a cloud database, so you implement a multilayered security strategy that includes encryption, firewalling, and more. A software developer in another organization deploys an application that connects to your database. The application, unfortunately, contains a SQL-injection vulnerability that allows hackers to use malformed query strings to extract information from the database that the application wouldn't ordinarily show. Which of the following defenses might safeguard the database from SQL-injection attacks?"
+      choices:
+      - content: "Transparently encrypting the database's contents"
+        isCorrect: false
+        explanation: "Incorrect. Since the data is transparently encrypted, an attacker who manages to access it via SQL injection will see the data in unencrypted form. Active threat detection can safeguard a database from SQL-injection attacks."
+      - content: "Configuring the firewall to disallow connections from the outside except for a select few database administrators (DBAs)"
+        isCorrect: false
+        explanation: "Incorrect. Active threat detection can safeguard a database from SQL-injection attacks."
+      - content: "Placing the database server on a different VNet  than the application"
+        isCorrect: false
+        explanation: "Incorrect. Active threat detection can safeguard a database from SQL-injection attacks."
+      - content: "Placing the database server on a different subnet  than the application"
+        isCorrect: false
+        explanation: "Incorrect. Active threat detection can safeguard a database from SQL-injection attacks."
+      - content: "Enabling active threat detection on the database"
+        isCorrect: true
+        explanation: "Correct! Active threat detection can safeguard a database from SQL-injection attacks. Many cloud database services support active threat detection as an option."
+      - content: "None of the above"
+        isCorrect: false
+        explanation: "Incorrect. Active threat detection can safeguard a database from SQL-injection attacks."
+
+    - content: "By default, Microsoft SQL Server uses TCP port 1433 for connections from SQL Server Management Studio. Assuming this port must be left open in the firewall so administrators can manage the database, which of the following defenses would be most effective in preventing a port scanner from finding and exploiting this port?"
+      choices:
+      - content: "Transparently encrypting the database's contents"
+        isCorrect: false
+        explanation: "Incorrect. Since the data is transparently encrypted, an attacker who manages to connect with SQL Server Management Studio will see the data in unencrypted form. The best defense is to restrict access to the database based on IP addresses."
+      - content: "Using IP restrictions to disallow connections from the outside except for a select few database administrators (DBAs)"
+        isCorrect: true
+        explanation: "Correct! The best defense is to restrict access to the database based on IP addresses. This won't prevent a port scanner from finding the open port, but it will prevent attackers from exploiting it."
+      - content: "Placing the database server on a different VNet than the application"
+        isCorrect: false
+        explanation: "Incorrect. The best defense is to restrict access to the database based on IP addresses."
+      - content: "Placing the database server on a different subnet than the application"
+        isCorrect: false
+        explanation: "Incorrect. The best defense is to restrict access to the database based on IP addresses."
+      - content: "Opening port 1433 to UDP traffic but not TCP traffic"
+        isCorrect: false
+        explanation: "Incorrect. The best defense is to restrict access to the database based on IP addresses. Even legitimate users won't be able to connect if the port isn't open to TCP traffic."
+      - content: "Enabling active threat detection on the database"
+        isCorrect: false
+        explanation: "Incorrect. The best defense is to restrict access to the database based on IP addresses."

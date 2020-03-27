@@ -43,7 +43,7 @@ In this step, we're going to create a VM with the following properties:
 
 1. The following image is an example of what the **Basics** configuration looks like when filled out. Leave the defaults for the remaining tabs and fields and click **Review + create**.
 
-    ![Screenshot of the Azure portal showing the Create a virtual machine blade with some example Basics configuration filled out as described.](../media/4-basics-vm.png)
+    ![Screenshot of the Azure portal showing the Create a virtual machine pane with some example Basics configuration filled out as described.](../media/4-basics-vm.png)
 
 1. After reviewing your new VM settings, click **Create** to start the deploying your new VM.
 
@@ -59,7 +59,7 @@ Once our VM is deployed, we can confirm the caching status of the OS disk using 
 
 1. On the **Disks** pane, the VM has one disk, the OS disk. Its cache type is currently set to the default value of **Read/write**.
 
-![Screenshot of the Azure portal showing the Disks section of a VM blade, with the OS disk shown and set to Read-only caching.](../media/4-os-disk-rw.PNG)
+![Screenshot of the Azure portal showing the Disks section of a VM pane, with the OS disk shown and set to Read-only caching.](../media/4-os-disk-rw.PNG)
 
 ## Change the cache settings of the OS disk in the portal
 
@@ -100,4 +100,4 @@ Let's move on to data disk cache configuration. To configure a disk, we'll need 
 
 In this exercise, we used the Azure portal to configure caching on a new VM, change cache settings on an existing disk, and configure caching on a new data disk. The following screenshot shows the final configuration:
 
-![Screenshot of the Azure portal showing the OS disk and new data disk in the Disks section of our VM blade, with both disks set to Read-only caching.](../media/disks-final-config-portal.PNG)
+![Screenshot showing the OS disk and new data disk in the Disks section of our VM pane, with both disks set to Read-only caching.](../media/disks-final-config-portal.PNG)

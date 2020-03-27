@@ -26,10 +26,6 @@ There are a various types of DSVMs that are available for different machine lear
 
 DSVM supports both Windows and Linux operating systems, with each offering various machine learning tools. The key difference between the two servers is that Windows operating systems offer scalability with Machine Learning in SQL Server, and Linux does not.
 
-### Deep Learning Virtual Machine
-
-A *Deep Learning Virtual Machine* (DLVM) is a version of DSVM that offers a variety of deep-learning tools for building artificial neural networks—an algorithmic process that simulates the decision process of the human neural network.
-
 ### Geo AI DSVM
 
 This version of a DSVM includes tools specific to Machine Learning that relate to geospatial data. Geo AI DSVM comes with other standard machine learning software, but it also includes ArcGIS, which is a commercial platform for Geo AI.

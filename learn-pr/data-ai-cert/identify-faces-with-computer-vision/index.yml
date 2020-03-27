@@ -2,7 +2,7 @@
 uid: learn.data-ai.identify-faces-with-computer-vision
 metadata:
   title: Identify faces and expressions by using the Computer Vision API in Azure Cognitive Services
-  description: Learn how to use the Computer Vision API in Azure to identify facial details in pictures
+  description: Learn how to use the artificial intelligence algorithms in the Computer Vision API in Azure to identify facial details in images.
   ms.date: 1/4/2019
   author: gerryaobrien
   ms.author: gerryo
@@ -22,6 +22,7 @@ roles:
 - developer
 - solution-architect
 - ai-engineer
+- student
 products:
 - azure
 - azure-sdks

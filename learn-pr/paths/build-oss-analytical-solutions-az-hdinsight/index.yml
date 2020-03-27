@@ -28,6 +28,8 @@ modules:
 - learn.wwl.introduction-open-source-analytics-offering
 - learn.wwl.hdinsight-configuration-to-build-open-source-analytical-solutions
 - learn.wwl.creating-and-configuring-hdinsight-cluster
+- learn.wwl.perform-advanced-streaming-data-transformations-with-spark-kafka
 - learn.wwl.perform-zero-etl-analytics-hdinsight-interactive-query
+- learn.wwl.manage-enterprise-security-in-hdinsight
 trophy:
   uid: learn.wwl.build-oss-analytical-solutions-az-hdinsight.trophy

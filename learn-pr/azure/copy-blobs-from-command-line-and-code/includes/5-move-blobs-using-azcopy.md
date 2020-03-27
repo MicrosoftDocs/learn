@@ -1,4 +1,4 @@
-The **AzCopy** command is a command-line utility specially created and optimized for moving data in and out of Azure storage. Using AzCopy, you can bulk-transfer from the local file system on an on-premises computer to the cloud. 
+The **AzCopy** command is a command-line utility specially created and optimized for moving data in and out of Azure storage. Using AzCopy, you can bulk-transfer from the local file system on an on-premises computer to the cloud.
 
 In this unit, you'll learn how to use the AzCopy utility to upload, download, and transfer blob data between storage accounts.
 

@@ -16,7 +16,7 @@ Tim finds Andy and Mara talking in the break room.
 
 **Tim:** No, but I've been tasked with reporting on potential vulnerabilities in our entire codebase, and that *does* include you. So, I need a report on the quality and safety of our team's code. We need something with real numbers and concrete examples.
 
-**Mara:** That's a big request! I don't think we have any ways to analyze our code easily.
+**Mara:** That's a big request! I don't think we have any way to analyze our code easily.
 
 **Andy:** I saw something at a user group meeting I went to a few weeks ago. I saved a document with some links.
 
@@ -26,7 +26,7 @@ There are many tools and processes you can use to analyze your code. You can eva
 
 ### OWASP
 
-The Open Web Application Security Project ([OWASP](http://www.owasp.org?azure-portal=true)) is a not-for-profit organization focused on improving the security of software. OWASP hosts global and regional events where practitioners from all industries can meet to share and learn the latest best practices around security management.
+The Open Web Application Security Project ([OWASP](https://www.owasp.org?azure-portal=true)) is a not-for-profit organization focused on improving the security of software. OWASP hosts global and regional events where practitioners from all industries can meet to share and learn the latest best practices around security management.
 
 OWASP also provides tools, code, and documentation to help practitioners understand potential threats in their code and to take action.
 
@@ -36,11 +36,11 @@ You see the OWASP Top Ten in action when you scan the _Space Game_ project later
 
 ### Roslyn analyzers
 
-Roslyn refers to the .NET Compiler Platform. [Roslyn analyzers](https://docs.microsoft.com/visualstudio/code-quality/roslyn-analyzers-overview?view=vs-2017#roslyn-analyzers-vs-static-code-analysis&azure-portal=true) highlight potential problems in your code. Categories include code style, quality and maintainability, and design.
+Roslyn refers to the .NET Compiler Platform. [Roslyn analyzers](https://docs.microsoft.com/visualstudio/code-quality/roslyn-analyzers-overview?view=vs-2017#source-code-analysis-versus-legacy-analysis) highlight potential problems in your code. Categories include code style, quality and maintainability, and design.
 
 You can run Roslyn analyzers from Visual Studio or from the command line. The following image shows an example of running the Roslyn analyzers on the _Space Game_ web project from Visual Studio.
 
-![Visual Studio showing a run of Roslyn analyzers](../media/2-roslyn-results.png)
+![Screenshot of Visual Studio showing a run of Roslyn analyzers with two unused variable declaration warnings.](../media/2-roslyn-results.png)
 
 ### SonarCloud
 
@@ -54,7 +54,7 @@ SonarCloud works with programming languages like Java, C++, C#, and Python. Sona
 
 When the analysis completes, SonarCloud can upload the results so that they're available from its web interface. Here's an example that shows the summary for an analysis run on the _Space Game_ web project.
 
-![The summary for the analysis on SonarCloud](../media/3-sonar-scan-summary.png)
+![Screenshot of SonarCloud analysis summary showing 1 bug (B rating), 4 vulnerabilities (B rating), 4 code smells (A rating), and 11.5 percent coverage.](../media/3-sonar-scan-summary.png)
 
 You can select a category to learn more about the potential bugs or vulnerabilities the scan discovered.
 
@@ -123,3 +123,25 @@ But how do these tools fit into a DevOps world? In this short video, Abel Wang, 
 **Ask Abel**
 
 > [!VIDEO https://channel9.msdn.com/Blogs/One-Dev-Minute/How-do-you-handle-security-in-a-DevOps-world--One-Dev-Question/player?format=ny]
+
+## The importance of a secure development strategy
+
+It's now commonplace that security for applications is extremely important. News services frequently carry stories about some company's systems that have been breached and private company and customer data that was stolen.
+
+So, what are the issues to think about when planning a secure development strategy? Clearly, we need to protect information from being disclosed to people that should not have access to it. But more importantly than that, we need to ensure that the information isn't inappropriately altered or destroyed, and that it is actually destroyed when it's supposed to be.
+
+We need to make sure we properly authenticate who is accessing the data and that they have the correct permissions to do so. Through historical or archival data or logs, we need to be able to find evidence when something has gone wrong.
+
+There are many aspects to building and deploying secure applications. First, there is a general knowledge problem. Many developers and other staff members assume they understand security, but they don't. Cybersecurity is a constantly evolving discipline. A program of ongoing education and training is essential.
+
+Second, we need to ensure that the code is created correctly, and securely implements the required features. We also need to make sure that the features were designed with security in mind in the first place.
+
+Third, we need to ensure that the application complies with the rules and regulations that it's required to meet. We have to test for compliance while building the code and retest periodically, even after deployment.
+
+Security isn't something you can just add to an application or a system later. Secure development must be part of every stage of the software development life cycle. This is even more important for critical applications and those that process sensitive or highly confidential information.
+
+Application security concepts haven't been a focus for developers in the past. Apart from the education and training issues, it's because their organizations have emphasized fast development of features.
+
+With the introduction of DevOps practices however, security testing is much easier to integrate into the pipeline. Rather than being a task performed by security specialists, security testing should just be part of the day-to-day delivery processes.
+
+Overall, when the time for rework is taken into account, adding security to your DevOps practices can actually reduce the overall time it takes to develop quality software.

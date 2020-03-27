@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.build-node-cosmos-app-vscode.6-javascript-cosmosdb
+title: Add JavaScript code to work with Cosmos DB
+metadata:
+  title: Add JavaScript code to work with Cosmos DB
+  description: Write JavaScript code to insert, update, delete, and query documents in Cosmos DB
+  ms.date: 11/18/2019
+  author: nickwalkmsft
+  ms.author: nickwalk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 15
+content: |
+  [!include[](includes/6-javascript-cosmosdb.md)]

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.oxford.intro-to-iot-edge.when-to-use-iot-edge
+title: When to use IoT Edge
+metadata:
+  title: When to use IoT Edge
+  description: When to use IoT Edge
+  ms.date: 09/24/2019
+  author: leestott
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-edge
+durationInMinutes: 8 # dummy number at present
+content: |
+  [!include[](includes/4-when-to-use-iot-edge.md)]

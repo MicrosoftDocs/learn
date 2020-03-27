@@ -16,7 +16,7 @@ In this exercise, you will create an Azure HDInsight Spark Cluster using the Azu
 |Cluster version| This field will auto-populate with the default version once the cluster type has been selected. Select Spark 2.4 (HDI 4.0).|
 |Cluster log in username| Enter the cluster log in username. The default name is admin. You use this account to log in in to the Jupyter notebook.|
 |Cluster log in password| Enter the cluster log in password.|
-|Secure Shell (SSH) |username Enter the SSH username. By default, this account shares the same password as the Cluster Log in username account.|
+|Secure Shell (SSH) username| Enter the SSH username. By default, this account shares the same password as the Cluster Log in username account.|
 
 ![A screenshot of the basic tab in the Create AzureHDInsight Cluster screen in the Azure portal](../media/3-img02.png)
 

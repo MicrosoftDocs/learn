@@ -7,8 +7,7 @@ Some of the common areas you will see previews for include:
 - New or enhanced integration with other platforms
 - New APIs for services
 
-> [!IMPORTANT]
-> Azure feature previews are available under certain terms and conditions that are specific to each particular Azure preview. Also, some previews are not covered by customer support.
+Azure feature previews are available under certain terms and conditions that are specific to each particular Azure preview. Also, some previews are not covered by customer support.
 
 Once a feature has been evaluated and tested successfully, it might be released to customers as part of Azure's default product set. This release is referred to as **General Availability** (GA).
 
@@ -26,8 +25,8 @@ You can learn about preview features through the [preview features page](https:/
 You can also find Azure preview features in the portal as follows:
 
 - Sign in to Azure portal.
-- Select **Create a resource** in the resources panel to open the **New** blade.
-- Enter the word *preview* into the search box at the top of the **New** blade.
+- Select **Create a resource** in the resources panel to open the **New** pane.
+- Enter the word *preview* into the search box at the top of the **New** pane.
 - A list of available preview features is displayed, with the word **(preview)** next to each one.
 
 ## Azure portal preview features
@@ -50,4 +49,3 @@ Alternatively, you can use the [Azure Updates](https://azure.microsoft.com/updat
 - Browse updates by product category or update type, by using the provided dropdown lists.
 - Search for updates by keyword by entering search terms into a text-entry field.
 - Subscribe to get Azure update notifications by RSS.
-- Access the Microsoft Connect page to read Azure product news and announcements.

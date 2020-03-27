@@ -3,4 +3,4 @@ The starting point for data analysis using HDInsight is creating an HDInsight cl
 - Create an HDInsight Spark Cluster 
 - Execute queries on an HDInsight Spark Cluster 
 - Monitor an HDInsight Spark Cluster
-- Learn how to fix common provisioning issue
+- Learn how to fix common provisioning issues

@@ -2,11 +2,8 @@ In this module, you learned how to:
 
 - Create an Azure IoT Central custom app, using the IoT Central portal
 - Create a Device Template for a custom device, using the IoT Central portal
-- Add Node.js code to support a simulated device - a refrigerated truck - with routes selected by Azure Maps
-- Add Node.js code to support communications between IoT Central and a real device
+- Create a programming project to simulate a sensor device in a refrigerated truck - with routes selected by Azure Maps
 - Monitor and command the simulated device, from the IoT Central Device portal
-- Add Node.js code to support multiple simulated devices - a fleet of five refrigerated trucks - by running multiple Node.js apps
-- Monitor and command the fleet of simulated trucks, from a Device set dashboard built using the IoT Central portal
 
 ## Clean up
 
@@ -21,5 +18,9 @@ Take your interest further with:
 - [Azure Certified for IoT device catalog](https://catalog.azureiotsolutions.com/)
 
 And look out for additional Learn modules covering IoT Central.
+
+## Learn more with a Channel 9 video series
+
+- [IoT 101](https://channel9.msdn.com/Series/IoT-101/?&WT.mc_id=EducationalIoT-c9-niner&azure-portal=true)
 
 To finish this module, and earn your rewards, complete a final knowledge check.

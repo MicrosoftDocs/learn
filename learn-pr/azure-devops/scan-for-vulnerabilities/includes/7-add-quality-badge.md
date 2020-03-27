@@ -14,11 +14,11 @@ You can add other kinds of badges to your repository, such as a quality badge th
 
 Here's an example quality badge:
 
-![The quality badge on GitHub](../media/7-example-quality-badge.png)
+![Screenshot of an example quality badge on GitHub, saying quality gate passed.](../media/7-example-quality-badge.png)
 
 ## Add the quality badge
 
-Previously, you got the Markdown code for your build badge from Azure Pipelines. You then added that code directly to your README.md file through GitHub.
+Previously, you got the Markdown code for your build badge from Azure Pipelines. You then added that code directly to your *README.md* file through GitHub.
 
 Here, you follow a similar process. You get the Markdown code you need from SonarCloud.
 
@@ -31,15 +31,18 @@ Here, you follow a similar process. You get the Markdown code you need from Sona
 
 1. Select **Markdown** from the **Format** drop-down list.
 1. Select **Copy** to copy the Markdown code to your clipboard.
-1. From GitHub, navigate to your project page.
-1. Make sure you're on the `master` branch. Then locate README.md from the files area, and select the file to open it.
+1. From GitHub, navigate to your project.
+1. Make sure you're on the `master` branch. Then locate *README.md* from the files area, and select the file to open it.
 1. Select the pencil icon to open the file in the editor.
-1. At the top of the page, paste the contents of the clipboard. You can add the quality badge on the same line as your build badge or on a separate line. It's common to maintain all badges on the same line.
+1. At the top of the page, paste the contents of the clipboard. 
+
+    > [!TIP]
+    > When working with multiple badges, you can add each one one a separate line, or you can add them all to the same line. It's common to maintain all badges on the same line.
 1. Select the **Preview changes** tab to see your proposed changes.
 
     GitHub renders the Markdown file and shows you the quality badge.
 
-    ![Previewing the quality badge on GitHub](../media/7-github-preview-changes.png)
+    ![Screenshot of GitHub change previewing the addition of a quality badge.](../media/7-github-preview-changes.png)
 
 ## Commit your changes to master
 
@@ -48,9 +51,9 @@ Here you commit your changes to the `master` branch on GitHub.
 1. Scroll to the bottom of the page and specify a commit message, such as "Add quality badge."
 1. Leave the "Commit directly to the `master` branch" option selected, and select **Commit changes** to commit your changes to the `master` branch.
 
-    You see your quality badge on the README.md page.
+    You see your quality badge on the README page.
 
-    ![The build quality on GitHub](../media/7-quality-badge.png)
+    ![Screenshot of GitHub project showing the quality gate badge adjacent to an existing Azure Pipelines succeeded badge.](../media/7-example-quality-badge.png)
 
     This process is a more basic way to merge code into GitHub. Instead of committing directly, you also can  create a pull request with your changes for others to review.
 

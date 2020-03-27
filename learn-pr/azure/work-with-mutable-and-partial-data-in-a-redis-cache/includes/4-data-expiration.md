@@ -1,4 +1,4 @@
-Data is not always permanent, and there are times you would like to delete it at a specific time. For example, in your instant messaging application, users can set the display name of the group chat. However, you want the name to reset after one hour. You could accomplish this by writing your own server-side logic that set an hour timer and deleted the name. However, Azure Cache for Redis supports data expiration, which is a feature that does this automatically without writing additional logic.
+Data is not always permanent, and there are times you would like to delete it at a specific time. For example, in your instant messaging application, users can set the display name of the group chat. However, you want the name to reset after one hour. You could accomplish this by writing your own server-side logic that set an hour timer and reset the name. However, Azure Cache for Redis supports data expiration, which is a feature that does this automatically without writing additional logic.
 
 Here, you'll learn about the common Redis commands to implement data expiration.
 

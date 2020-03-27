@@ -1,0 +1,77 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-admin.cmu-cloud-security.2-threats
+title: Threats to cloud security
+metadata:
+  title: Threats to cloud security
+  description: Threats to cloud security
+  ms.date: 01/15/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 15
+content: |
+  [!include[](includes/2-threats.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+    - content: "An organization discovers that some of the personal information it stores regarding users of an application has been divulged, not as a result of someone gaining unauthorized access to the application or its back-end data stores, but as the result of a SQL-injection vulnerability in the application itself. Does this incident qualify as a data breach?"
+      choices:
+      - content: "Yes"
+        isCorrect: true
+        explanation: "Correct! If personal information is divulged, it is considered a data breach regardless of how it was divulged."
+      - content: "Yes, but only if the person or organization responsible for stealing the data can be identified"
+        isCorrect: false
+        explanation: "Incorrect. If personal information is divulged, it is considered a data breach regardless of how it was divulged or who is responsible."
+      - content: "Yes, but only if applicable state and federal regulations define it as a data breach"
+        isCorrect: false
+        explanation: "Incorrect. If personal information is divulged, it is considered a data breach regardless of how it was divulged or whether state and federal regulations define it as a data breach."
+      - content: "No"
+        isCorrect: false
+        explanation: "Incorrect. If personal information is divulged, it is considered a data breach regardless of how it was divulged."
+      
+    - content: "Which of the following statements is true?"
+      choices:
+      - content: "Security threats targeting public clouds can affect only IaaS services"
+        isCorrect: false
+        explanation: "Incorrect. Security threats can affect all three cloud service models."
+      - content: "Security threats targeting public clouds can affect only IaaS and PaaS services"
+        isCorrect: false
+        explanation: "Incorrect. Security threats can affect all three cloud service models."
+      - content: "Security threats targeting public clouds can affect IaaS, PaaS, and SaaS services"
+        isCorrect: true
+        explanation: "Correct! Security threats can affect all three cloud service models."
+      - content: "Security threats targeting public clouds can affect only PaaS and SaaS services"
+        isCorrect: false
+        explanation: "Incorrect. Security threats can affect all three cloud service models."
+
+    - content: "Your organization owns a public-facing Web site that is hosted in Azure. It requires users to log in and uses trusted identity providers such as Microsoft and Google to support logins. A hacker sends a malicious e-mail to the employees of your organization containing a link to a login page that looks identical to the real login page, but in fact is designed to \"spoof\" unsuspecting users into revealing their user names and passwords. What type of security threat is this attack?"
+      choices:
+      - content: "SQL injection attack"
+        isCorrect: false
+        explanation: "Incorrect. This attack is an example of phishing, where an attacker directs users to an illicit login page for the purpose of harvesting login credentials."
+      - content: "Cross-site scripting attack"
+        isCorrect: false
+        explanation: "Incorrect. This attack is an example of phishing, where an attacker directs users to an illicit login page for the purpose of harvesting login credentials."
+      - content: "Man-in-the-middle attack"
+        isCorrect: false
+        explanation: "Incorrect. This attack is an example of phishing, where an attacker directs users to an illicit login page for the purpose of harvesting login credentials."
+      - content: "Phishing attack"
+        isCorrect: true
+        explanation: "Correct! This attack is an example of phishing, where an attacker directs users to an illicit login page for the purpose of harvesting login credentials."
+
+    - content: "Some cloud service providers offer dedicated VM instances as an added security measure. Such instances are guaranteed to run on dedicated hardware, which will not be shared with other users of the cloud service. Which of the following threats does a dedicated VM instance protect against?"
+      choices:
+      - content: "A zero-day vulnerability (http://en.wikipedia.org/wiki/Zero-day_attack) on the physical server that the cloud provider did not patch"
+        isCorrect: false
+        explanation: "Incorrect. Consider the type of attacks made possible when a cloud provider offers shared infrastructure to multiple tenants."
+      - content: "Malicious code from a competitor hosted in a neighboring VM"
+        isCorrect: true
+        explanation: "Correct! With dedicated infrastructure, we can eliminate the threat of a competitor running malicious code from a neighboring VM."
+      - content: "Data center failure leading to your VM shutting down"
+        isCorrect: false
+        explanation: "Incorrect. Consider the type of attacks made possible when a cloud provider offers shared infrastructure to multiple tenants."
+      - content: "A vulnerability in your website allowing hackers to deface it"
+        isCorrect: false
+        explanation: "Incorrect. Consider the type of attacks made possible when a cloud provider offers shared infrastructure to multiple tenants."

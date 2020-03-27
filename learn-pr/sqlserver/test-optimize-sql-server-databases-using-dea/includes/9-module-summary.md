@@ -8,6 +8,6 @@ The Microsoft Database Experimentation Assistant is an essential tool for determ
 
 ## Further Reading
 
-- [Download the Data Experimentation Assistant](https://www.microsoft.com/download/details.aspx?id=54090)
+- [Download the Database Experimentation Assistant](https://www.microsoft.com/download/details.aspx?id=54090)
 - [Technical Preview: Database Experimentation Assistant](https://blogs.msdn.microsoft.com/datamigration/2016/10/24/database-experimentation-assistant-v1-0-preview/)
 - [Technical Preview: Database Experimentation Assistant](https://cloudblogs.microsoft.com/sqlserver/2017/03/31/technical-preview-database-experimentation-assistant-2/)

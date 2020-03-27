@@ -14,7 +14,7 @@ summary: Learn how to architect a data platform in Azure and build solutions to 
 prerequisites: |
   - Familiarity with relational databases
   - Familiarity with NoSQL databases
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/architect-data-platform.svg
 levels:
 - intermediate
 roles:
@@ -22,12 +22,13 @@ roles:
 products:
 - azure
 - azure-sql-database
-- azure-sql-data-warehouse
+- azure-synapse-analytics
 - azure-cosmos-db
 modules:
 - learn.intro-to-data-in-azure
 - learn.provision-azure-sql-db
 - learn.azure-scale-azure-sql-dbs-elastic-pools
+- learn.migrate-sql-server-relational-data
 - learn.develop-app-that-queries-azure-sql
 - learn.create-cosmos-db-for-scale
 - learn.distribute-data-globally-with-cosmos-db

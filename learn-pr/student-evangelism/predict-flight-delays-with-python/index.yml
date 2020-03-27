@@ -2,7 +2,7 @@
 uid: learn.student-evangelism.predict-flight-delays-with-python
 metadata:
   title: Predict flight delays by creating a machine learning model in Python
-  description: Import airline arrival data into a Jupyter notebook and use Pandas to clean it. Then, build a machine learning model with Scikit-Learn and use Matplotlib to visualize output
+  description: Learn how to import airline arrival data into a Jupyter notebook, use Pandas and Scikit-Learn, and then visualize the output with Matplotlib.
   ms.date: 02/24/2019
   author: JeffProsise
   ms.author: shanama
@@ -23,6 +23,7 @@ levels:
 roles:
 - developer
 - data-scientist
+- student
 products:
 - azure
 units:
