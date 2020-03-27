@@ -1,4 +1,4 @@
-Azure Quantum is a cloud service that allows you to run Quantum Programs and solve Quantum-Inspired Optimization (QIO) problems in the cloud. Azure Quantum takes these jobs and schedules them with the desired provider for execution. Using our SDKs and tools you can easily run a job against multiple providers and targets to find the one that will work best for your scenario.
+<span style="color:red">some **Azure Quantum is a cloud service that allows you to run Quantum Programs and solve Quantum-Inspired Optimization (QIO) problems in the cloud. Azure Quantum takes these jobs and schedules them with the desired provider for execution. Using our SDKs and tools you can easily run a job against multiple providers and targets to find the one that will work best for your scenario.** text</span>
 
 In this module, you'll run an example on Azure Quantum and solve a Quantum-Inspired Optimization problem.
 
@@ -17,7 +17,8 @@ In this module you will:
 
 - Have taken the "Azure Quantum Overview" introductory module
 - Ability to use Python, at the beginner level
-- Experience using Visual Studio Code, at the beginner level
+- Experience using Visual Studio Code, at the beginner level 
+<span style="color:red">some **May not need** text</span>
 - Ability to use the Azure CLI
 
 
