@@ -11,7 +11,7 @@ In this module, you learned how to:
 
 ## Clean up
 
-Any assets created within the Sandbox environment will remove themselves automatically.  If you created assets in a personal Azure Subscription, it is now okay to delete the Virtual Machine and associated resources that were created during the previous modules.
+Any assets created within the Sandbox environment will remove themselves automatically.  If you created assets in a personal Azure Subscription, it is now okay to delete the Virtual Machine and associated resources that were created during the previous units.
 
 ## Next steps
 

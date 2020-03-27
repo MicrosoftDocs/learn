@@ -1,4 +1,4 @@
-In this module, you will deploy an Ubuntu Server VM with Azure IoT Edge runtime support from the Azure Marketplace.
+In this unit, you will deploy an Ubuntu Server VM with Azure IoT Edge runtime support from the Azure Marketplace.
 
 ## Deploy an Azure IoT Edge enabled Linux VM
 
@@ -24,7 +24,7 @@ If necessary, log in to your Azure portal using your Azure account credentials.
 
     **Admin Username**: Enter a username of your choice.
 
-    **Device Connection String**: Enter the Device Connection string for the device that was created within your IoT Hub in the previous module.
+    **Device Connection String**: Enter the Device Connection string for the device that was created within your IoT Hub in the previous unit.
 
     **VM Size**, **Ubuntu OS Version**, and **Location**, should be left at their default values.
 
@@ -41,4 +41,4 @@ If necessary, log in to your Azure portal using your Azure account credentials.
     > [!div class="mx-imgBorder"]
     > [![Screenshot showing the dns name of the iotedge vm](../media/iotedge-vm-dns-name.png)](../media/iotedge-vm-dns-name.png)
 
-Congratulations, that's the end of the module! In the next module, we will generate and configure IoT Edge Device CA Certificates to allow devices to securely connect to our IoT Edge Gateway.
+Congratulations, that's the end of the unit! In the next unit, we will generate and configure IoT Edge Device CA Certificates to allow devices to securely connect to our IoT Edge Gateway.

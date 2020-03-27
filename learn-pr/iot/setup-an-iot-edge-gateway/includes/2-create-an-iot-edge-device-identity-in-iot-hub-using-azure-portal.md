@@ -1,10 +1,10 @@
-In this module, you will create a new IoT Edge Device identity in Azure IoT Hub for the IoT Edge Transparent Gateway.
+In this unit, you will create a new IoT Edge Device identity in Azure IoT Hub for the IoT Edge Transparent Gateway.
 
 ## Create an IoT Edge Device Identity in IoT Hub using Azure Portal
 
 1. Make sure you've activated the sandbox, using the button above. The sandbox creates a free temporary resource.
 
-1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
+1. Right-click on [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) then select **Open in new window**.
 
 1. Select **+ Create a resource**, from the top of the left-hand menu. In the **Search the Marketplace** search box, enter "IoT Hub".
 
@@ -20,9 +20,6 @@ In this module, you will create a new IoT Edge Device identity in Azure IoT Hub 
     >Your hub names are publicly discoverable, so take this into account when entering names. Hub names must also be unique, as they form part of the Azure URL.
 
 1. Select **Next: Size and scale** to view the capabilities of your hub, noting all the services we need are enabled. Open up **Advanced Settings** to see the number of partitions. You can leave all entries at their default settings. Or, for peace of mind, you can change **Pricing and scale tier** to **F1: Free tier**, although you'll not be charged if you leave the tier at **S1: Standard tier**, as sandbox resources are free.
-
-    > [!NOTE]
-    > A single _partition_ has a maximum number of concurrent readers processing data. In our cheese cave scenario, we only have one reader (the back-end service app), so could get away with one partition. However, if high telemetry throughput is an issue, increasing the number of partitions, and number of concurrent connected readers, will aid in increasing efficiency.
 
 1. Now, select **Review + create**, this option gives you a chance to verify your choices before clicking **Create**, and building the hub. Building your hub can take a few minutes.
 
@@ -46,11 +43,11 @@ In this module, you will create a new IoT Edge Device identity in Azure IoT Hub 
 
     The IoT Edge Agent (`$edgeAgent`) and IoT Edge Hub (`$edgeHub`) modules are a part of the IoT Edge Runtime. The Edge Hub is responsible for communication, and the Edge Agent deploys and monitors the modules on the device.
 
-1. Click the **Set Modules** button at the top of the IoT Edge Device summary blade. This is used to add additional modules to the IoT Edge Device. At this time, you’ll use this to ensure the message routing is configured correctly for the IoT Edge Gateway device.
+1. Click the **Set Modules** button at the top of the IoT Edge Device summary blade. This is used to add additional modules to the IoT Edge Device. At this time, you'll use this to ensure the message routing is configured correctly for the IoT Edge Gateway device.
 
 1. Leave all fields as they are in the **Modules** step, and click **Next: Routes >**.
 
-1. Within the **Specify Routes**, the editor will display the configured default route for the IoT Edge Device. At this time, it should be configured with a route that sends all messages from all modules to Azure IoT Hub. If the route configuration doesn’t match this, then update it to match the following route:
+1. Within the **Specify Routes**, the editor will display the configured default route for the IoT Edge Device. At this time, it should be configured with a route that sends all messages from all modules to Azure IoT Hub. If the route configuration doesn't match this, then update it to match the following route:
 
     - Name: **route**
     - Value: `FROM /* INTO $upstream`
@@ -64,4 +61,4 @@ In this module, you will create a new IoT Edge Device identity in Azure IoT Hub 
 
 1. On the **Review + create** step, click the **Create** button.
 
-Congratulations, that's the end of the module! In the next module, we will deploy an Azure IoT Edge enabled Linux Virtual Machine.
+Congratulations, that's the end of the unit! In the next unit, we will deploy an Azure IoT Edge enabled Linux Virtual Machine.

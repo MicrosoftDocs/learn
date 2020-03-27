@@ -1,4 +1,4 @@
-In this module, we'll configure a pre-built Downstream Device to connect to the IoT Edge Gateway. This device will be configured with the certificate we created earlier to ensure communication is secure between the downstream device and the IoT Edge Gateway.
+In this unit, we'll configure a pre-built Downstream Device to connect to the IoT Edge Gateway. This device will be configured with the certificate we created earlier to ensure communication is secure between the downstream device and the IoT Edge Gateway.
 
 ## Connect a Downstream Device to IoT Edge Gateway
 
@@ -90,4 +90,4 @@ In this module, we'll configure a pre-built Downstream Device to connect to the 
 
 1. Leave the simulated device running while you move on to the next module.
 
-Congratulations, that's the end of the module! In the next module, we will verify event flow from downstream device through IoT Edge Gateway to IoT Hub. 
+Congratulations, that's the end of the unit! In the next unit, we will verify event flow from downstream device through IoT Edge Gateway to IoT Hub. 

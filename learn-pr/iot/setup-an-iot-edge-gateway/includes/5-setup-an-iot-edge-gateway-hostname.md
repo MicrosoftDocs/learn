@@ -1,4 +1,4 @@
-In this module, you will configure the DNS name for Public IP Address of the AZ-220-VM-EDGEGW-_{YOUR-ID}_, and configure that DNS name as the hostname of the IoT Edge Gateway device.
+In this unit, you will configure the DNS name for Public IP Address of the AZ-220-VM-EDGEGW-_{YOUR-ID}_, and configure that DNS name as the hostname of the IoT Edge Gateway device.
 
 ## Setup an IoT Edge Gateway Hostname
 
@@ -89,4 +89,4 @@ In this module, you will configure the DNS name for Public IP Address of the AZ-
 
     If the Edge runtime does not restart successfully, ensure that you have modified `/etc/iotedge/config.yaml` appropriately.
 
-Congratulations, that's the end of the module! In the next module, we will open IoT Edge Gateway Device Ports for communication with Downstream Devices.
+Congratulations, that's the end of the unit! In the next unit, we will open IoT Edge Gateway Device Ports for communication with Downstream Devices.

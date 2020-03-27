@@ -1,4 +1,4 @@
-In this module, you will configure the Network Security Group (NSG) that secures access to the Azure IoT Edge Gateway from the Internet. The necessary ports for MQTT, AMQP, and HTTPS communications need to be opened so the downstream IoT device(s) can communicate with the gateway.
+In this unit, you will configure the Network Security Group (NSG) that secures access to the Azure IoT Edge Gateway from the Internet. The necessary ports for MQTT, AMQP, and HTTPS communications need to be opened so the downstream IoT device(s) can communicate with the gateway.
 
 ## Open IoT Edge Gateway Device Ports for Communication with Downstream Devices
 
@@ -42,4 +42,4 @@ In a production scenario, you will only want to open the minimum number of ports
 
 1. With these three ports open on the Network Security Group (NSG), the downstream devices will be able to connect to the IoT Edge Gateway using either MQTT, AMQP, or HTTPS protocols.
 
-Congratulations, that's the end of the module! In the next module, we will create a downstream device identity in IoT Hub.
+Congratulations, that's the end of the unit! In the next unit, we will create a downstream device identity in IoT Hub.

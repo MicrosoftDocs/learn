@@ -1,4 +1,4 @@
-In this module, you will create a new IoT Device identity in Azure IoT Hub for the downstream IoT device. This device identity will be configured so that the Azure IoT Edge Gateway is a parent device for this downstream device.
+In this unit, you will create a new IoT Device identity in Azure IoT Hub for the downstream IoT device. This device identity will be configured so that the Azure IoT Edge Gateway is a parent device for this downstream device.
 
 ## Create a Downstream Device Identity in IoT Hub
 
@@ -28,4 +28,4 @@ In this module, you will create a new IoT Device identity in Azure IoT Hub for t
 
 1. On the IoT Device summary pane, copy the **Primary Connection String** for the **DownstreamDevice1** IoT Device, and save it for reference later.
 
-Congratulations, that's the end of the module! In the next module, we will connect a downstream device to an IoT Edge Gateway.
+Congratulations, that's the end of the unit! In the next unit, we will connect a downstream device to an IoT Edge Gateway.

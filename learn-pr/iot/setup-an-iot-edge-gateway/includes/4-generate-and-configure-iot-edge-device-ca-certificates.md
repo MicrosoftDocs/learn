@@ -1,4 +1,4 @@
-In this module, you will generate test certificates using Linux. This will allow us to ensure that only securely authenticated downstream devices are able to communicate with the IoT Edge Gateway.
+In this unit, you will generate test certificates using Linux. This will allow us to ensure that only securely authenticated downstream devices are able to communicate with the IoT Edge Gateway.
 
 ## Generate and Configure IoT Edge Device CA Certificates
 
@@ -192,4 +192,4 @@ You will perform these steps on the Azure IoT Edge Gateway Virtual Machine that 
     
      Once the files are copied to the **Azure Cloud Shell** storage, from the virtual machine, you will be able to easily download any of the IoT Edge Device certificate and key files to your local machine as necessary. Files can be downloaded from the Azure Cloud Shell using the `download <filename>` command.
 
-     Congratulations, that's the end of the module! In the next module, we will setup an IoT Edge Gateway Hostname.
+     Congratulations, that's the end of the unit! In the next unit, we will setup an IoT Edge Gateway Hostname.
