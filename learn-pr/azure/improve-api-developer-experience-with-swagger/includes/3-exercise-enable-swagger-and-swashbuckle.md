@@ -64,7 +64,7 @@ Since we created the API, we knew its shape, but an external developer who wants
     dotnet add package Swashbuckle.AspNetCore
     ```
 
-1. Open the code editor window for the project using the following command.
+1. Open the Cloud Shell editor for the project using the following command.
 
     ```bash
     code .
