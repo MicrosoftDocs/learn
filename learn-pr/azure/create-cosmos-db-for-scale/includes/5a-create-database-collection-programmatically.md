@@ -92,7 +92,7 @@ In this exercise, you'll create an Azure Cosmos DB  database, and container usin
         using Microsoft.Azure.Cosmos;
         ```
 
-    1. Create a `CosmosClient` instance, which is the main "entry point" to using the SQL API in Azure Cosmos DB. To do so, locate the `Program` class and replace it with the following class:
+    1. Create a `CosmosClient` instance, which is the primary entry point to use the SQL API in Azure Cosmos DB. To do so, locate the `Program` class and replace it with the following class:
 
         ```csharp
         public class Program
@@ -312,9 +312,11 @@ In this exercise, you'll create an Azure Cosmos DB  database, and container usin
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the account you activated the sandbox with.
 
-    1. Locate your Cosmos DB resource, and select **Keys**.
+    1. Locate your Cosmos DB resource.
     
-    1. Copy the **URI** and **PRIMARY KEY** values, which you'll need later.
+    1. Select **Overview**, and copy the **Write Locations** values, which you'll need later.
+
+    1. Select **Keys**, and copy the **URI** and **PRIMARY KEY** values, which you'll need later.
 
 1. Open the Azure Cloud Shell Bash shell and create a new Java application using **Maven** and the *maven-archetype-quickstart*:
 
@@ -342,7 +344,7 @@ In this exercise, you'll create an Azure Cosmos DB  database, and container usin
 
 1. Click *pom.xml* in the Explorer pane to open the file in the code editor.
 
-    1. To add the Maven project dependencies required to work with Cosmos DB, add the following entry within the dependencies section:
+    1. To add the Maven project dependencies required to work with Cosmos DB, add the following entries to the `<dependencies>` section:
 
         ```xml
         <dependency>
@@ -384,13 +386,13 @@ In this exercise, you'll create an Azure Cosmos DB  database, and container usin
 
 ### Create CosmosAsyncClient Instance
 
-The CosmosAsyncClient class is the main "entry point" to using the SQL API in Azure Cosmos DB. You'll create an instance of the CosmosAsyncClient class by passing in connection metadata as parameters of the class' constructor. You'll then use this class instance throughout the lab.
+The `CosmosAsyncClient` class is the primary entry point to use the SQL API in Azure Cosmos DB. You'll create an instance of the CosmosAsyncClient class by passing in connection metadata as parameters of the class' constructor. You'll then use this class instance throughout the exercise.
 
 1. In the Explorer pane of the Code Editor, expand the nodes in the tree to *src\main\java\com\mslearn*, then click *App.java* to open the file in the editor.
 
 ![Bash Shell and Code Editor](../media/5-azure-cosmos-db-new-shell-editor-java-app.png)
 
-1.  Below the **package com.mslearn** line, add the following imports:
+1.  Below the `package com.mslearn` line, add the following imports:
 
     ```java
     import org.slf4j.Logger;
@@ -428,9 +430,10 @@ The CosmosAsyncClient class is the main "entry point" to using the SQL API in Az
     private static String endpointUri = "YOUR_URI";
     private static String primaryKey = "YOUR_KEY";
     ```
-    For the endpointUri variable, replace the placeholder value with the URI value and for the primaryKey variable, replace the placeholder value with the PRIMARY KEY value from your Azure Cosmos DB account.
+    
+    Replace the placeholder values for the `endpointUri` and `primaryKey` variables with the **URI** and **PRIMARY KEY** values from your Azure Cosmos DB account.
 
-1. Locate the main method and delete the `System.out` line:
+1. Locate the `main()` method and delete the `System.out` line:
 
     ```java
     public static void main( String[] args )
@@ -439,11 +442,11 @@ The CosmosAsyncClient class is the main "entry point" to using the SQL API in Az
     }
     ```
 
-1. Within the main method, add the following lines of code to create a CosmosAsyncClient instance, replacing the Azure Cosmos DB Account Location placeholder with the location setting of your Azure Cosmos DB account:
+1. Within the `main()` method, add the following lines of code to create a `CosmosAsyncClient` instance:
 
     ```java
     ConnectionPolicy defaultPolicy = ConnectionPolicy.getDefaultPolicy();
-    defaultPolicy.setPreferredLocations(Lists.newArrayList("<your azure cosmos db account location>"));
+    defaultPolicy.setPreferredLocations(Lists.newArrayList("YOUR_LOCATION"));
     
     CosmosAsyncClient client = new CosmosClientBuilder()
             .setEndpoint(endpointUri)
@@ -452,6 +455,8 @@ The CosmosAsyncClient class is the main "entry point" to using the SQL API in Az
             .setConsistencyLevel(ConsistencyLevel.EVENTUAL)
             .buildAsyncClient();
     ```
+
+    Replace the placeholder `YOUR_LOCATION` value with the **Write Locations** value for your Azure Cosmos DB account.
 
 1. Now add a line at the end of the main method which closes the client:
 
@@ -465,14 +470,14 @@ The CosmosAsyncClient class is the main "entry point" to using the SQL API in Az
 
 To create a container, you must specify a name and a partition key path. You will specify those values when creating a container in this task. A partition key is a logical hint for distributing data onto a scaled out underlying set of physical partitions and for efficiently routing queries to the appropriate underlying partition
 
-1. At the top of the Lab01Main class definition, add two more static class variables for the database and container instances:
+1. At the top of the class definition, add the following static class variables for the database and container instances:
 
     ```java
     private static CosmosAsyncDatabase targetDatabase;
     private static CosmosAsyncContainer customContainer;
     private static AtomicBoolean resourcesCreated = new AtomicBoolean(false);
     ```
-1. All code added in subsequent steps should be placed between the build-client call and the close-client call in the main method:
+1. In the `main()` method, locate the `CosmosClientBuilder()` call that you added earlier. In the subsequent steps, you'll add code between this call and the `client.close()` call.
 
     ```java
     CosmosAsyncClient client = new CosmosClientBuilder()
@@ -481,17 +486,19 @@ To create a container, you must specify a name and a partition key path. You wil
             .setConnectionPolicy(defaultPolicy)
             .setConsistencyLevel(ConsistencyLevel.EVENTUAL)
             .buildAsyncClient();
-    // <= Add code here
+
+    // ***** ADD CODE HERE *****
+
     client.close();  
     ```
 
-1. Add the following code to the method to create new CosmosAsyncDatabase and CosmosAsyncContainerinstances if they do not already exist:
+1. Add the following code to the method to create new `CosmosAsyncDatabase` and `CosmosAsyncContainerinstances` if they do not already exist:
 
     ```java
-    client.createDatabaseIfNotExists("EntertainmentDatabase").flatMap(databaseResponse -> {
+    client.createDatabaseIfNotExists("Products").flatMap(databaseResponse -> {
         targetDatabase = databaseResponse.getDatabase();
         CosmosContainerProperties containerProperties = 
-            new CosmosContainerProperties("CustomCollection", "/type");
+            new CosmosContainerProperties("Clothing", "/type");
         return targetDatabase.createContainerIfNotExists(containerProperties, 400);
     }).flatMap(containerResponse -> {
         customContainer = containerResponse.getContainer();
@@ -505,7 +512,7 @@ To create a container, you must specify a name and a partition key path. You wil
     
     This code will check to see if a database and a container already exist in your Azure Cosmos DB account with the specified configuration parameters. If a database or container that matches does not exist, it will be created.
 
-1. After the while loop, add the following code to print out the ID of the database:
+1. After the `while` loop, add the following code to print out the ID of the database:
 
     ```java
     logger.info("Database Id:\t{}",targetDatabase.getId());
@@ -561,7 +568,7 @@ To create a container, you must specify a name and a partition key path. You wil
         public static void main( String[] args )
         {
             ConnectionPolicy defaultPolicy = ConnectionPolicy.getDefaultPolicy();
-            defaultPolicy.setPreferredLocations(Lists.newArrayList("<your azure cosmos db account location>"));
+            defaultPolicy.setPreferredLocations(Lists.newArrayList("YOUR_LOCATION"));
     
             CosmosAsyncClient client = new CosmosClientBuilder()
                     .setEndpoint(endpointUri)
@@ -570,10 +577,10 @@ To create a container, you must specify a name and a partition key path. You wil
                     .setConsistencyLevel(ConsistencyLevel.EVENTUAL)
                     .buildAsyncClient();
             
-            client.createDatabaseIfNotExists("EntertainmentDatabase").flatMap(databaseResponse -> {
+            client.createDatabaseIfNotExists("Products").flatMap(databaseResponse -> {
                 targetDatabase = databaseResponse.getDatabase();
                 CosmosContainerProperties containerProperties = 
-                    new CosmosContainerProperties("CustomCollection", "/type");
+                    new CosmosContainerProperties("Clothing", "/type");
                 return targetDatabase.createContainerIfNotExists(containerProperties, 400);
             }).flatMap(containerResponse -> {
                 customContainer = containerResponse.getContainer();
@@ -590,10 +597,9 @@ To create a container, you must specify a name and a partition key path. You wil
     
         }
     }
-    
     ```
     
-    Make sure you use the correct values for `YOUR_URI` and `YOUR_KEY`.
+    Make sure you replace the placeholder values for `YOUR_URI`, `YOUR_KEY`, and `YOUR_LOCATION`.
 
 1. Save your changes by typing <kbd>Ctrl+S</kbd>, or by selecting the **Save** option from the Editor menu on the upper right corner.
 
