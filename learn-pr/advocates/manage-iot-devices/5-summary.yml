@@ -33,4 +33,32 @@ quiz:
       isCorrect: true
       explanation: "Even though you're not using physical hardware, you can still receive telemetry data when using the Raspberry Pi Azure IoT Simulator."  
 
+  - content: "Which two metrics are shown by default in the Overview page for your IoT hub?"
+    choices:
+    - content: 'Properties and Settings'
+      isCorrect: false
+      explanation: These are left-hand menu entries, not metrics.
+    - content: 'Device to cloud messages, and Cloud to device messages'
+      isCorrect: false
+      explanation: There are a range of metics for messages going either way, but cloud to device messages are not shown by default.
+    - content: "Telemetry data sent, and Successful twin reads from back end"
+      isCorrect: true
+      explanation: For a single device, the first metric might show a few hundred messages, and the second metric will show 1.
+    - content: "Device to cloud messages, and Device twin operations"
+      isCorrect: false
+      explanation: Close, these are the titles of the tiles, not the names of the metrics.
 
+  - content: 'What left-hand menu option do you select to view the hub keys?'
+    choices:
+    - content: 'IoT devices'
+      isCorrect: false
+      explanation: This will give you the device keys, but not the hub keys.
+    - content: 'Shared access policies'
+      isCorrect: true
+      explanation: The keys are displayed by clicking on a policy, such as iothubowner.
+    - content: 'Properties'
+      isCorrect: false
+      explanation: This provides information on names, location, subscription, and so on. But not the keys.
+    - content: 'Security'
+      isCorrect: false
+      explanation: This provides information on threat prevention, and resource health.
