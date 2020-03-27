@@ -114,7 +114,7 @@ You can run and debug the app inside Visual Studio Code.
 
     ```output
     Http Functions:
-    
+
             MojifyImage: http://localhost:7071/api/MojifyImage
     ```
 

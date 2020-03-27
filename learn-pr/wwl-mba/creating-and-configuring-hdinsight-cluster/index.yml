@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.wwl.creating-and-configuring-hdinsight-cluster
+metadata:
+  title: Creating and configuring a HDInsight Cluster
+  description: Creating and configuring a HDInsight Cluster
+  ms.date: 10/25/2019
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Creating and configuring a HDInsight cluster
+summary: In this module, you will learn how to create a HDInsight Cluster, monitor a cluster and be aware of common provisioning issues.
+abstract: |
+  In this module you will:
+  - Create an HDInsight Spark Cluster
+  - Execute queries on an HDInsight Spark Cluster
+  - Monitor an HDInsight Spark Cluster
+  - Learn how to fix common provisioning issues
+ratingEnabled: true
+prerequisites: |
+  The following pre-requisite should be completed:
+  - Successfully login to the Azure portal
+  - Understand the Azure storage options
+  - Understand the Azure compute options
+iconUrl: /learn/achievements/learn-pr/achievements/creating-and-configuring-a-hdinsight-cluster.svg
+levels:
+- beginner
+roles:
+- data-engineer
+- data-scientist
+products:
+- azure-hdinsight
+units:
+- learn.wwl.creating-and-configuring-hdinsight-cluster.1-introduction
+- learn.wwl.creating-and-configuring-hdinsight-cluster.2-creating-a-hdinsight-cluster
+- learn.wwl.creating-and-configuring-hdinsight-cluster.3-exercise-create-hdinsight-cluster-via-azure-portal
+- learn.wwl.creating-and-configuring-hdinsight-cluster.4-opening-jupyter-notebook-hdinsight-spark-cluster
+- learn.wwl.creating-and-configuring-hdinsight-cluster.5-exercise-execute-queries-hdinsight-spark-cluster
+- learn.wwl.creating-and-configuring-hdinsight-cluster.6-enabling-monitoring-hdinsight-jobs
+- learn.wwl.creating-and-configuring-hdinsight-cluster.7-common-provisioning-issues
+- learn.wwl.creating-and-configuring-hdinsight-cluster.8-exercise-monitor-hdinsight-cluster
+- learn.wwl.creating-and-configuring-hdinsight-cluster.9-summary
+- learn.wwl.creating-and-configuring-hdinsight-cluster.10-knowledge-check
+badge:
+  uid: learn.wwl.creating-and-configuring-hdinsight-cluster.badge

@@ -43,7 +43,7 @@ These alerts are triggered when either a threat or suspicious activity takes pla
 
 ## Viewing security alerts
 
-You can view collected security alerts directly in Azure Security Center on the **Overview** page, through command-line tools, or using the REST API. The portal is the easiest way to view alerts - it displays a graph of your current alerts, colored by the severity level (high, medium, or low).
+You can view collected security alerts directly in Azure Security Center on the **Overview** page, through command-line tools, or using the REST API. The portal is the easiest way to view alerts - it displays a graph of your current alerts, colored by the severity level (high, medium, or low). Here's an example of a subscription with running resources being monitored.
 
 ![Screenshot of the threat-protection area of Security Center](../media/6-security-center-dashboard-alert.png)
 

@@ -15,7 +15,8 @@ The *:::no-loc text="ContosoPets.UI":::* project directory should be currently o
 1. Run the following .NET Core CLI command in the command shell at the current directory.
 
 	```dotnetcli
-	dotnet new page --name Create --namespace ContosoPets.Ui.Pages.Products 
+	dotnet new page --name Create \
+        --namespace ContosoPets.Ui.Pages.Products
 	```
 
 	A new Razor page named *:::no-loc text="Create.cshtml":::* and its *:::no-loc text="PageModel":::* class file named *:::no-loc text="Create.cshtml.cs":::* are created in the *:::no-loc text="ContosoPets.Ui/Pages/Products/":::* directory. By convention, the Razor page and its *:::no-loc text="PageModel":::* class file share the same name and location.
@@ -31,16 +32,15 @@ The *:::no-loc text="ContosoPets.UI":::* project directory should be currently o
 	@model ContosoPets.Ui.Pages.CreateModel
 	@{
 	}
-
 	```
 
  The preceding default Razor Page contains:
 
 * Reserved Razor keywords:
-	* The `@page` directive is what makes this a Razor page. It indicates this page can handle HTTP requests. The `@page` directive must be the first directive on a Razor page.
-	* The `@model` directive is Razor syntax specifying the type of the model made available to the Razor page. In this case, the `ContosoPets.UI.Pages.Products.Create` `PageModel`-derived class. `ContosoPets.UI.Pages.Products.CreateModel` was automatically defined in the *:::no-loc text="Create.cshtml.cs":::* class file. *:::no-loc text="Create.cshtml.cs":::* was generated when you made a new Razor page named *:::no-loc text="Create":::*.
-* HTML: Such as an `<h1>` tag.
-* C# code: The `@` character starts single-statement C# blocks. Multi-statement C# blocks can be created when using `@{}`. For example:
+  * The `@page` directive is what makes this a Razor page. It indicates this page can handle HTTP requests. The `@page` directive must be the first directive on a Razor page.
+  * The `@model` directive is Razor syntax specifying the type of the model made available to the Razor page. In this case, the `ContosoPets.UI.Pages.Products.Create` `PageModel`-derived class. `ContosoPets.UI.Pages.Products.CreateModel` was automatically defined in the *:::no-loc text="Create.cshtml.cs":::* class file. *:::no-loc text="Create.cshtml.cs":::* was generated when you made a new Razor page named *:::no-loc text="Create":::*.
+  * HTML: Such as an `<h1>` tag.
+  * C# code: The `@` character starts single-statement C# blocks. Multi-statement C# blocks can be created when using `@{}`. For example:
 
 	```cshtml
 	@{
@@ -48,7 +48,6 @@ The *:::no-loc text="ContosoPets.UI":::* project directory should be currently o
     	ViewData["Title"] = pageTitle;
 	}
 	```
-
 
 ## Render HTML and transition to C#
 
@@ -121,7 +120,7 @@ The following markup uses the Input Tag Helper. It extends the standard HTML `<i
 The *:::no-loc text="Input Tag Helper":::* takes care of a lot for you:
 
 * Like the *:::no-loc text="Label Tag Helper":::* It evaluates the *:::no-loc text="Product.Name":::* property defined in the *:::no-loc text="PageModel":::* in C#, adds an *:::no-loc text="id":::* and *:::no-loc text="name":::* based on that property and sets the input type appropriately. For example if the specified property is a *:::no-loc text="Boolean":::*, then an input type of *:::no-loc text="checkbox":::* would be dynamically generated in the HTML output. In this case the *:::no-loc text="Product.Name":::* property is a *:::no-loc text="String":::*. This is set by the model's data annotation attributes which will be reviewed later in this module.
-* It provides client-side validation using JQuery based on the model's data annotation attributes provided through the *:::no-loc text="PageModel":::*. The *:::no-loc text="Input Tag Helper":::* also prompts the Razor engine to provide additional, more robust server-side validation if client-side validation was successful. You will walk through the *:::no-loc text="Create":::* Razor Page's *:::no-loc text="POST":::* event lifecycle, which includes client-side and server-side input validation later in this module. 
+* It provides client-side validation using JQuery based on the model's data annotation attributes provided through the *:::no-loc text="PageModel":::*. The *:::no-loc text="Input Tag Helper":::* also prompts the Razor engine to provide additional, more robust server-side validation if client-side validation was successful. You will walk through the *:::no-loc text="Create":::* Razor Page's *:::no-loc text="POST":::* event lifecycle, which includes client-side and server-side input validation later in this module.
 
 The following is the generated HTML output from the *:::no-loc text="Input Tag Helper":::* from the *:::no-loc text="Create":::* page:
 
@@ -135,6 +134,8 @@ The following markup uses the *:::no-loc text="Validation Message Tag Helper":::
 
 ```cshtml
 <span asp-validation-for="Product.Price" class="text-danger"></span>
+```
+
 The *:::no-loc text="Input Tag Helper":::* adds HTML5 attributes prefixed with `data-` to input elements. The attributes are based on properties in your C# model classes. While responsive client-side validation occurs, validation is also performed on the server which is more secure.
 
 The following is the HTML rendered by the *:::no-loc text="Validation Message Tag Helper":::*:

@@ -21,11 +21,12 @@ abstract: |
 prerequisites: |
   - Basic understanding of identity and role-based access control
   - Understand how to use the Azure portal
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/manage-users-and-groups-in-aad.svg
 levels:
 - beginner
 roles:
 - security-engineer
+- administrator
 products:
 - azure
 - azure-active-directory

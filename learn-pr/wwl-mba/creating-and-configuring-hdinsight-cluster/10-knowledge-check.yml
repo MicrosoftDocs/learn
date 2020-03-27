@@ -1,0 +1,38 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.creating-and-configuring-hdinsight-cluster.10-knowledge-check
+title: Knowledge check
+metadata:
+  title: 'Knowledge Check '
+  description: 'Knowledge Check '
+  ms.date: 10/25/2019
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: False
+durationInMinutes: 5
+
+quiz:
+  questions:
+  - content: "You want to enable integration with Azure Active Directory, what option should you select when you create an HDInsight cluster?"
+    choices:
+    - content: "You should define a cluster login and password on the basic tab of the Cluster creation screen"
+      isCorrect: false
+      explanation: "Defining a cluster or SSH login and password on the basic tab of the Cluster creation screen does not enable integration with Azure Active Directory."
+    - content: "You should enable Enterprise security package on the Security and network tab of the Cluster creation screen"
+      isCorrect: true
+      explanation: "Enabling Enterprise Security Package on the Security and network tab of the Cluster creation screen does enable integration with Azure Active Directory."
+    - content: "You should define a SSH login and password on the basic tab of the Cluster creation screen"
+      isCorrect: false
+      explanation: "Defining a cluster or SSH login and password on the basic tab of the Cluster creation screen does not enable integration with Azure Active Directory."
+  - content: "What open source software can you use to monitor an HDInsight cluster?"
+    choices:
+    - content: "Apache Hive"
+      isCorrect: false
+      explanation: "Apache Hive provides a SQL abstraction layer to query data through MapReduce."
+    - content: "Apache Ambari"
+      isCorrect: true
+      explanation: "Apache Ambari is used to monitor an HDInsight cluster"
+    - content: "Apache Ranger"
+      isCorrect: false
+      explanation: "Apache Ranger is a security feature."

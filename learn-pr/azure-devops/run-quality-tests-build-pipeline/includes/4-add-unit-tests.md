@@ -1,8 +1,8 @@
-Andy is going to work with Mara to add unit tests to the automated build that Mara created with Azure Pipelines. Regression bugs are creeping into their code and breaking the leaderboard's filtering functionality. Specifically, the wrong game mode keeps appearing.
+Andy is going to work with Mara to add unit tests to the automated build that Mara created with Microsoft Azure Pipelines. Regression bugs are creeping into their code and breaking the leaderboard's filtering functionality. Specifically, the wrong game mode keeps appearing.
 
 The following image illustrates Amita's problem. When Amita selects "Milky Way" to show only scores from that game map, she gets results from other game maps, such as Andromeda.
 
-![The leaderboard showing incorrect results](../media/4-leaderboard-bug.png)
+![Screenshot of leaderboard showing incorrect galaxy results: Andromeda galaxy scores show in the Milky Way galaxy listing.](../media/4-leaderboard-bug.png)
 
 Both Andy and Mara want to catch the error before it reaches Amita, the tester. Unit tests are a great way to automatically test for regression bugs.
 
@@ -88,7 +88,7 @@ This branch contains the _Space Game_ project that you worked with in the previo
 
     ```bash
     git fetch upstream unit-tests
-    git checkout unit-tests
+    git checkout -b unit-tests upstream/unit-tests
     ```
 
     The format of this command enables you to get starter code from the Microsoft GitHub repository, known as `upstream`. Shortly, you'll push this branch to your GitHub repository, known as `origin`.
@@ -152,11 +152,11 @@ Here you configure the build pipeline to run your unit tests and collect the res
 
 1. In Visual Studio Code, modify *azure-pipelines.yml* like this:
 
-    [!code-yml[](code/4-azure-pipelines.yml?highlight=45-51)]
+    [!code-yml[](code/4-azure-pipelines.yml?highlight=48-54)]
 
     This version introduces this `DotNetCoreCLI@2` build task.
 
-    [!code-yml[](code/4-azure-pipelines.yml?range=45-51)]
+    [!code-yml[](code/4-azure-pipelines.yml?range=48-54)]
 
     This build task runs the `dotnet test` command.
 
@@ -168,7 +168,7 @@ Here you configure the build pipeline to run your unit tests and collect the res
 
 Here you push your changes to GitHub and see the pipeline run. Recall that you're currently on the `unit-tests` branch.
 
-1. In the integrated terminal, add **azure-pipelines.yml** to the index, commit the changes, and push the branch up to GitHub.
+1. In the integrated terminal, add *azure-pipelines.yml* to the index, commit the changes, and push the branch up to GitHub.
 
     ```bash
     git add azure-pipelines.yml
@@ -178,29 +178,27 @@ Here you push your changes to GitHub and see the pipeline run. Recall that you'r
 
 ## Watch Azure Pipelines run the tests
 
-Here you see the tests run in the pipeline and then visualize the results from Azure Test Plans. Azure Test Plans provides all the tools you need to successfully test your applications. You can create and run manual test plans, generate automated tests, and collect feedback from stakeholders.
+Here you see the tests run in the pipeline and then visualize the results from Microsoft Azure Test Plans. Azure Test Plans provides all the tools you need to successfully test your applications. You can create and run manual test plans, generate automated tests, and collect feedback from stakeholders.
 
-1. In Azure DevOps, trace the build through each of the steps.
+1. In Azure Pipelines, trace the build through each of the steps.
 
     You see that the **Run unit tests - Release** task runs the unit tests just as you did manually from the command line.
 
-    ![Azure Pipelines showing running unit tests](../media/4-pipeline-task.png)
+    ![Screenshot of Azure Pipelines showing console output from running unit tests.](../media/4-pipeline-task.png)
 
-1. After the build is complete, select the **Summary** tab.
+1. Navigate back to the pipeline summary.
 
-    You see that the test run is included in the progression.
-
-    ![Azure Pipelines showing the Summary tab](../media/4-summary-report.png)
+    ![Screenshot of Azure Pipelines showing the pipeline summary pane with "100% passed" result and Tests tab highlighted.](../media/4-pipeline-summary-tests-tab.png)
 
 1. Move to the **Tests** tab.
 
     You see a summary of the test run. All five tests have passed.
 
-    ![Azure Pipelines showing the Tests tab](../media/4-test-tab-summary.png)
+    ![Screenshot of Azure Pipelines showing the Tests tab with 5 total tests run and 100 percent passing.](../media/4-test-tab-summary.png)
 
 1. In Azure DevOps, select **Test Plans**, and then select **Runs**.
 
-    ![Opening Azure Test Plans](../media/4-test-plans-runs.png)
+    ![Screenshot of Azure DevOps navigation menu with Test Plans section and Runs tab highlighted.](../media/4-test-plans-runs.png)
 
     You see the most recent test runs, including the one you just ran.
 
@@ -208,7 +206,7 @@ Here you see the tests run in the pipeline and then visualize the results from A
 
     You see a summary of the results.
 
-    ![Test results summary in Azure Test Plans](../media/4-test-run-results.png)
+    ![Screenshot of Azure DevOps test run results summary showing 5 passed tests.](../media/4-test-run-results.png)
 
     In this example, all five tests have passed. If any tests failed, you could navigate to the build task to get additional details.
 

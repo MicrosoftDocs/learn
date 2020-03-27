@@ -4,42 +4,42 @@ Recall that in [Scan code for vulnerabilities in your build pipeline](/learn/mod
 
 Let's check in with the team at their weekly meeting and see how things are progressing.
 
-**Andy**: Tim, before we start, how did your meeting go with the security consultant?
+## Weekly meeting
 
-**Tim**: I was nervous going into it, but it went really well considering the topic. What impressed him most was how easily we were able to produce such a thorough report. Although our source code is far from clean, we can identify potential security holes and prioritize the order in which we address them. Plus, we can identify issues before the code goes to QA or production.
+**Andy:** Tim, before we start, how did your meeting go with the security consultant?
 
-**Mara**: That's great! So what's the plan?
+**Tim:** I was nervous going into it, but it went really well considering the topic. What impressed him most was how easily we were able to produce such a thorough report. Although our source code is far from clean, we can identify potential security holes and prioritize the order in which we address them. Plus, we can identify issues before the code goes to QA or production.
 
-**Tim**: That's what I wanted to talk about. One other issue came up, and that's around how we use open source. The security consultant found that other teams were using software that was licensed under GPL 3.0.
+**Mara:** That's great! So what's the plan?
 
-**Andy**: I've heard of GPL. That stands for GNU General Public License. What's the issue?
+**Tim:** That's what I wanted to talk about. One other issue came up, and that's around how we use open source. The security consultant found that other teams were using software that was licensed under GPL 3.0.
 
-**Tim**: Well, it turns out that if you modify certain open-source libraries, even if it's to fix a bug or make a minor enhancement, you might be required to make those changes publicly available. Those changes could include intellectual property we want to protect. There's this big conversation happening with our legal team to identify what's next. I'm worried that this might affect our team as well.
+**Andy:** I've heard of GPL. That stands for GNU General Public License. What's the issue?
 
-**Amita**: I wasn't aware that this project used much open-source software.
+**Tim:** Well, it turns out that if you modify certain open-source libraries, even if it's to fix a bug or make a minor enhancement, you might be required to make those changes publicly available. Those changes could include intellectual property we want to protect. There's this big conversation happening with our legal team to identify what's next. I'm worried that this might affect our team as well.
 
-**Andy**: It's indeed surprising how much open-source we use. We use frameworks such as Bootstrap and jQuery to make it easier to work with JavaScript and CSS. In fact, some components include other components that we haven't checked for security vulnerabilities, or haven't checked how they're licensed. We'd better make sure of where we stand before we move forward.
+**Amita:** I wasn't aware that this project used much open-source software.
 
-**Amita**: Licenses can be hard to read and interpret. Do we need a lawyer to help?
+**Andy:** It's indeed surprising how much open-source we use. We use frameworks such as Bootstrap and jQuery to make it easier to work with JavaScript and CSS. In fact, some components include other components that we haven't checked for security vulnerabilities, or haven't checked how they're licensed. We'd better make sure of where we stand before we move forward.
 
-**Tim**: The legal team wants to meet with us next week. But first they want us to investigate which open-source components we're using and how those components are licensed. Andy, Mara, you're the most familiar with how the code is structured. Would you mind doing some investigation for the team?
+**Amita:** Licenses can be hard to read and interpret. Do we need a lawyer to help?
 
-**Andy**: Sure, we got this. We'll take a look after this meeting and report back with what we find.
+**Tim:** The legal team wants to meet with us next week. But first they want us to investigate which open-source components we're using and how those components are licensed. Andy, Mara, you're the most familiar with how the code is structured. Would you mind doing some investigation for the team?
+
+**Andy:** Sure, we got this. We'll take a look after this meeting and report back with what we find.
 
 ## How can I access security and license ratings in open-source software?
 
 Andy and Mara return to their desks.
 
-**Andy**: I was at a user conference a few months ago where they talked about licenses and security in open-source software. I can bring up the slides from the presentation. Maybe we can identify a tool or process we can use.
+**Andy:** I was at a user conference a few months ago where they talked about licenses and security in open-source software. I can bring up the slides from the presentation. Maybe we can identify a tool or process we can use.
 
 Andy and Mara review the slides and investigate further. They find a few options.
 
 ### Black Duck
 
-[Black Duck](https://www.blackducksoftware.com?azure-portal=true) by Synopsys scans your open-source dependencies against their own database. They keep that database up-to-date with the latest vulnerabilities and give you timely information on fixes, workarounds, and on the exploits. They cover over 80 programming languages, and get their information from many sources. 
+[Black Duck](https://www.blackducksoftware.com?azure-portal=true) by Synopsys scans your open-source dependencies against their own database. They keep that database up-to-date with the latest vulnerabilities and give you timely information on fixes, workarounds, and on the exploits. They cover over 80 programming languages, and get their information from many sources.
 
-Their [Azure Pipelines extension](https://marketplace.visualstudio.com/items?itemName=black-duck-software.detect-for-tfs&azure-portal=true) enables you to set policies that affect the build and send alerts.
- 
 ### GitLab
 
 [GitLab](https://about.gitlab.com?azure-portal=true) is a CI/CD pipeline tool that enables you to scan the dependencies in code that comes from GitLab repositories. It supports Javascript, Ruby, Python, PHP, and Java. 

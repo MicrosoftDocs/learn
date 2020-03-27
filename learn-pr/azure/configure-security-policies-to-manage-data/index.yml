@@ -16,7 +16,7 @@ abstract: |
   - Configure your data retention requirements
   - Explore data ownership and sovereignty
 prerequisites: None
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/configure-security-policies-to-manage-data.svg
 levels:
 - beginner
 roles:

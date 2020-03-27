@@ -3,48 +3,48 @@ uid: learn.azdo.create-multi-stage-pipeline.2-design-the-pipeline
 title: Design the pipeline
 metadata:
   title: Design the pipeline
-  description: Define the stages you need in your release pipeline and how to promote changes from one stage to the next.
-  ms.date: 09/30/2019
+  description: Define stages in your release pipeline and promote changes from one stage to the next.
+  ms.date: 01/21/2020
   author: tpetchel
   ms.author: thpetche
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 11
+durationInMinutes: 15
 content: |
   [!include[](includes/2-design-the-pipeline.md)]
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Your pipeline includes many tests and quality checks that take several minutes to complete. Which kind of trigger can you use to limit your tests to run only on code that's been reviewed by a peer?"
+  - content: "Your pipeline includes many tests and quality checks that take several minutes to finish. Which kind of trigger is best for running tests only on code that a peer has reviewed?"
     choices:
-    - content: "A build completion trigger."
+    - content: "A build completion trigger"
       isCorrect: false
-      explanation: "A build completion trigger runs a build when another build, such as one for a dependent component, completes successfully."
-    - content: "A CI or PR trigger."
+      explanation: "A build completion trigger runs a build when another build, such as one for a dependent component, finishes successfully."
+    - content: "A CI trigger or PR trigger"
       isCorrect: true
-      explanation: "CI and PR triggers let us control which branches participate in the overall process. You can use them to run your pipeline only during a pull request or after a pull request is merged into a certain branch, such as `master` or a release branch."
-    - content: "A scheduled trigger."
+      explanation: "Use CI and PR triggers to control which branches participate in the overall process. You can use them to run your pipeline only during a pull request or after a pull request is merged into a certain branch, such as `master` or a release branch."
+    - content: "A scheduled trigger"
       isCorrect: false
-      explanation: "Although you could use a scheduled trigger to run tests on a regular interval, is there a better way that will run your tests at the time it's needed, and only when it's needed?"
-  - content: "How can you pause the pipeline until a change is signed off by an approver?"
+      explanation: "Although you can use a scheduled trigger to run tests regularly, is there a better way to run tests only when they're needed?"
+  - content: "What's the best way to pause the pipeline until an approver signs off on a change?"
     choices:
     - content: "Use a release approval."
       isCorrect: true
       explanation: "A release approval pauses the pipeline until an approver accepts or rejects the release."
     - content: "Install a Marketplace extension that provides Azure Pipelines tasks that can pause the pipeline."
       isCorrect: false
-      explanation: "Although you might find such an extension, is there a built-in mechanism that you can use?"
-    - content: "Ask your approver to look at the change and then manually trigger the pipeline to run."
+      explanation: "Although you might find an extension that can fulfill your need, can you use a built-in mechanism instead?"
+    - content: "Ask your approver to look at the change. Then manually trigger the pipeline to run."
       isCorrect: false
-      explanation: "Is there a more automated way that would allow the approver to see working software, and then promote the process to the next stage?"
-  - content: "You want to deploy your webapp to the _Test_ environment each time another build completes. What's the easiest way to set that up?"
+      explanation: "Is there an automated way to allow the approver to see the working software and then promote it to the next stage?"
+  - content: "You want to deploy your web app to the _Test_ environment each time a build finishes. What's the easiest way to set up the process?"
     choices:
     - content: "Use a scheduled trigger."
       isCorrect: false
-      explanation: "Although a scheduled trigger enables you to build your webapp and pick up the latest dependencies on a regular schedule, it does not trigger your pipeline to run when another build completes."
-    - content: "Watch for build notification emails and manually trigger your build when the other one completes successfully."
+      explanation: "Although a scheduled trigger enables you to build your web app and pick up the latest dependencies on a regular schedule, it doesn't trigger your pipeline to run when a build finishes."
+    - content: "Watch for build notification emails and manually trigger your build when the other one finishes successfully."
       isCorrect: false
-      explanation: "Although you could do this, it's not efficient. Is there a way to automatically trigger the build?"
+      explanation: "This method is inefficient. Is there a way to trigger the build automatically?"
     - content: "Use a build completion trigger."
       isCorrect: true
-      explanation: "A build completion trigger runs a build when another build, such as one for a dependent component, completes successfully."
+      explanation: "A build completion trigger runs a build when another build, such as one for a dependent component, finishes successfully."

@@ -157,7 +157,7 @@ Functions can be run locally using a local storage account and local Azure Funct
 
 1. Take a note of the port that the function is listening on. You'll need this in the next unit to test out the mobile app. In the image above, the function is listening on port **7071**.
 
-    ```sh
+    ```bash
     Listening on http://localhost:7071/
     ```
 

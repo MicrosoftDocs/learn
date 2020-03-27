@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-title: Introduction
+title: What is API Management?
 durationInMinutes: 5
 content: |
   [!include[](includes/1a-understand-apim.md)]

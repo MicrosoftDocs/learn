@@ -2,9 +2,9 @@ Designing for high availability helps keep an application or process running des
 
 ## What is disaster recovery?
 
-Disaster recovery is about *recovering from high-impact events* that result in downtime and data loss. A disaster is a single, major event with an impact much larger and long-lasting than the application can mitigate through the high-availability portion of its design.
+Disaster recovery is about recovering from high-impact events that result in downtime and data loss. A disaster is a single, major event with an impact much larger and long-lasting than the application can mitigate through the high-availability portion of its design.
 
-The word "disaster" often evokes thoughts of *natural* disasters and external events (earthquakes, floods, tropical storms, and so on) but many other kinds of disasters exist as well. A failed deployment or upgrade can leave an app in an unrecognizable state. Malicious hackers can encrypt or delete data and inflict other kinds of damage that take an app offline or eliminate some of its functionality.
+The word "disaster" often evokes thoughts of natural disasters and external events (earthquakes, floods, tropical storms, and so on) but many other kinds of disasters exist as well. A failed deployment or upgrade can leave an app in an unrecognizable state. Malicious hackers can encrypt or delete data and inflict other kinds of damage that take an app offline or eliminate some of its functionality.
 
 Regardless of its cause, the best remedy for a disaster once it has occurred is a well-defined, tested disaster recovery plan and an application that actively supports disaster recovery efforts through its design.
 
@@ -67,7 +67,7 @@ Replication is not something you implement from scratch. Most fully featured dat
 
 Different Azure services support various levels and concepts of replication. For example:
 
-* **Azure Storage** replication capabilities depend on the replication type of selected for the storage account. This replication can be local (within a datacenter), zonal (between data centers within a region), or regional (between regions). Neither your application nor your operators interact with it directly. Failovers are automatic and transparent, and you simply need to select a replication level that balances cost and risk.
+* **Azure Storage** replication capabilities depend on the type of replication that is selected for the storage account. This replication can be local (within a datacenter), zonal (between data centers within a region), or regional (between regions). Neither your application nor your operators interact with it directly. Failovers are automatic and transparent, and you simply need to select a replication level that balances cost and risk.
 * **Azure SQL Database** replication is automatic at a small scale, but recovery from a full Azure datacenter or regional outage requires geo-replication. Setting up geo-replication is manual, but it's a first-class feature of the service and well supported by documentation.
 * **Azure Cosmos DB** is a globally distributed database system, and replication is central to its implementation. With Azure Cosmos DB, instead of configuring replication directly, you configure options related to partitioning and data consistency.
 

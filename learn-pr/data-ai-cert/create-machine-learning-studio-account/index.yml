@@ -1,13 +1,13 @@
 ### YamlMime:Module
 uid: learn.data-ai.create-machine-learning-studio-account
+hidden: true
 metadata:
   title: Create an Azure Machine Learning Studio Account
-  description: Get a high-level overview of machine learning. Using Microsoft Azure Machine Learning Studio, you will create an experiment, publish it as a web service and consume the web service with a Python application
+  description: Get an overview of Azure Machine Learning Studio as you create an experiment, publish it as a web service, and consume the web service with a Python application.
   ms.date: 12/12/2018
   author: gerryaobrien
   ms.author: gerryo
   ms.topic: interactive-tutorial
-  #ms.learn-contact: smmark
   ms.prod: learning-azure
 title: Create an Azure Machine Learning Studio Account
 summary: Get a high-level overview of machine learning and Microsoft Azure Machine Learning Studio.

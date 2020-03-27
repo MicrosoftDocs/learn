@@ -4,11 +4,11 @@ title: Exercise - Publish the result to the pipeline
 metadata:
   title: Exercise - Publish the result to the pipeline
   description: Publish your build artifact to the pipeline so others can access the build results.
-  ms.date: 06/21/2019
+  ms.date: 01/21/2020
   author: tpetchel
   ms.author: thpetche
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 6
+durationInMinutes: 10
 content: |
   [!include[](includes/7-publish-build-result.md)]

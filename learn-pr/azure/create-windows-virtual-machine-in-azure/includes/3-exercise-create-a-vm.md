@@ -6,7 +6,7 @@ We can create Windows VMs with the Azure portal, Azure CLI, or Azure PowerShell.
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-1. Click **Create a resource** in the upper left corner of the Azure portal.
+1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
 
 1. In the search box, enter  **Windows Server**  and then click on the link with the same title in the presented list.
 
@@ -37,29 +37,29 @@ We'll start with the **Basics** section.
 
 1. For **Resource group**, choose "**<rgn>[sandbox resource group name]</rgn>**".
 
-1. In the **INSTANCE DETAILS** section, enter a name for your VM, such as **test-vp-vm2** (for Test Video Processor VM #2).
+1. In the **Instance Details** section, enter a name for your VM, such as **test-vp-vm2** (for Test Video Processor VM #2).
     - It's best practice to standardize your resource names so you can easily identify their purpose. Windows VM names are a bit limited - they must be between 1 and 15 characters, cannot contain non-ASCII or special characters, and must be unique in the current resource group.
 
 1. Select a region close to you from the locations below.
 
    [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
-1. Leave **Availability options** as "None". This option is used to ensure the VM is highly available by grouping multiple VMs together a set to deal with planned or unplanned maintenance events or outages.
+1. Leave **Availability options** as "No Infrastructure redundancy required". This option is used to ensure the VM is highly available by grouping multiple VMs together a set to deal with planned or unplanned maintenance events or outages.
 
-1. Ensure the image is set to "Windows Server 2016 Datacenter". You can open the drop-down list to see all the options available.
+1. Ensure the image is set to "[smalldisk] Windows Server 2016 Datacenter". You can open the drop-down list to see all the options available.
 
 1. The **Size** field is not directly editable and has a DS1 default size. Click the **Change size** link to explore other VM sizes. The resulting dialog allows you to filter based on # of CPUs, Name, and Disk Type. Select "Standard DS1 v2" (normally the default) when you are done. That will give the VM 1 CPU and 3.5 GB of memory.
 
     > [!TIP]
     > You can also just slide the view to the left to get back to the VM settings as it opened a new window off to the right and slid the window over to view it.
 
-1. In the **ADMINISTRATOR ACCOUNT** section, set the **Username** field to a username you will use to sign in to the VM.
+1. In the **Administrator Account** section, set the **Username** field to a username you will use to sign in to the VM.
 
 1. In the **Password** field, enter a password that's at least 12 characters long. It must have three of the following: one lower case character, one uppercase character, one number, and one special character that is not '\\' or '-'. Use something you will remember or write it down, you will need it later.
 
 1. Confirm the **password**.
 
-1. In the **INBOUND PORT RULES** section, open the list and choose _Allow selected ports_. Since this is a Windows VM, we want to be able to access the desktop using RDP. Scroll the list if necessary until you find RDP (3389) and select it. As the note in the UI indicates, we can also adjust the network ports after we create the VM.
+1. In the **Inbound Port Rules** section, open the list and choose _Allow selected ports_. Since this is a Windows VM, we want to be able to access the desktop using RDP. Scroll the list if necessary until you find RDP (3389) and select it. As the note in the UI indicates, we can also adjust the network ports after we create the VM.
 
     ![Screenshot showing the drop-down for opening the port for RDP access on the Windows VM.](../media/3-open-ports.png)
 

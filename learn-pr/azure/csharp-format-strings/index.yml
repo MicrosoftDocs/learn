@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.languages.csharp-format-strings
+metadata:
+  title: Format alphanumeric data for presentation in C#
+  description: Use C# to format strings with white space, special characters, padding, and alignment.  Give context to numeric data like currency, percentages, and numbers with decimals.
+  ms.date: 1/3/2020
+  author: bobtabor-msft
+  ms.author: rotabor
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Format alphanumeric data for presentation in C#
+summary: Use C# to format strings with white space, special characters, padding, and alignment.  Give context to numeric data like currency, percentages, and numbers with decimals.
+abstract: |
+  In this module, you will:
+  - Use character escape sequences to add tabs, new lines, and Unicode characters to our strings
+  - Create verbatim string literals, and escape common characters like backslash and double-quotes
+  - Merge templates with variables using composite formatting and string interpolation
+  - Include various format specifiers for percentages, currency, and numbers
+prerequisites: |
+  - Introductory experience with creating and initializing variables of type `string` and `decimal`
+  - Introductory experience with literal values of type `string` and `decimal`
+  - Introductory experience with `Console.WriteLine()`
+ratingEnabled: true
+iconUrl: /learn/achievements/csharp-format-strings.svg
+levels:
+- beginner
+roles:
+- developer
+- student
+products:
+- dotnet
+units:
+- learn.languages.csharp-format-strings.introduction
+- learn.languages.csharp-format-strings.string-formatting-basics
+- learn.languages.csharp-format-strings.exercise-string-interpolation
+- learn.languages.csharp-format-strings.exercise-string-methods-padding
+- learn.languages.csharp-format-strings.challenge
+- learn.languages.csharp-format-strings.solution
+- learn.languages.csharp-format-strings.knowledge-check
+- learn.languages.csharp-format-strings.summary
+
+badge:
+  uid: learn.languages.csharp-format-strings.badge

@@ -1,8 +1,15 @@
-You need to be in the _Standard pricing tier_ of Azure Security Center to use this feature. Once you migrate a subscription to this tier, you can enable JIT VM Access for selected Azure VMs in the subscription.
+You need to be in the _Standard pricing tier_ of Azure Security Center to use this feature. Once you activate a trial or migrate a subscription to this tier, you can enable JIT VM Access for selected Azure VMs in the subscription. If you don't want to start a trial now, you can read through the below instructions to see the steps necessary.
 
 ## Create a new Virtual Machine
 
-Let's start by creating a Virtual Machine using the Cloud Shell on the right. This exercise can't be performed in the Azure Sandbox, so make sure to select the appropriate subscription you want to work in that's enrolled in the standard tier of Security Center.
+Let's start by creating a Virtual Machine using the Cloud Shell.
+
+> [!NOTE]
+> This exercise can't be performed in the Azure Sandbox, so make sure to select a subscription that's enrolled in the standard tier of Security Center, or has an active 30-day trial for Security Center.
+
+1. Sign into the [Azure portal](https://portal.azure.com?azure-portal=true) using an account that has access to a subscription where Azure Security Center is setup for the standard tier.
+
+1. Select the Cloud Shell button from the top toolbar - this will open the Cloud Shell at the bottom of the portal window.
 
 1. Start by setting some default values, so you don't have to type them multiple times.
 
@@ -58,8 +65,6 @@ Let's start by creating a Virtual Machine using the Cloud Shell on the right. Th
 You should be able to connect and administer the VM. Let's fix that!
 
 ## Enable JIT VM access in Security Center
-
-1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true) and make sure you are in the same subscription you created the VM in.
 
 1. Navigate to **Security Center** using the tile on the main Azure dashboard.
 
