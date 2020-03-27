@@ -2,15 +2,15 @@ Now that you know your server is compatible with Azure File Sync, you're ready t
 
 ## Create the storage account
 
-1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
+1. Sign into the [Azure portal](https://portal.azure.com?azure-portal=true) using the same account you activated the sandbox with.
 1. Search for **Storage accounts** by using the Azure portal search box.
 1. In **Storage accounts**, select **+ Add**.
 1. Use the following values for the storage account:
    
    |Field |value  |
    |---------|---------|
-   |Resource group | <rgn>[sandbox resource group name]</rgn>        |
-   |Storage account name   | **extendcadfiles**      |
+   |Resource group | learn-file-sync-rg        |
+   |Storage account name   | extendcadfiles      |
 
    Accept the defaults for the rest of the values.
 1. Select **Review + create** and **Create**.
@@ -40,7 +40,7 @@ Now that you know your server is compatible with Azure File Sync, you're ready t
 
    |Field |value  |
    |---------|---------|
-   |Resource group | <rgn>[sandbox resource group name]</rgn>        |
+   |Resource group | learn-file-sync-rg        |
    |Storage Sync Service name  | CADSyncService |
 
 1. Select **Review + Create** and **Create** to deploy the Storage Sync Service.

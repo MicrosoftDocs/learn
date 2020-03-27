@@ -10,6 +10,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 12
-azureSandbox: true
+azureSandbox: false
 content: |
   [!include[](includes/10-exercise-troubleshoot-azure-file-sync.md)]

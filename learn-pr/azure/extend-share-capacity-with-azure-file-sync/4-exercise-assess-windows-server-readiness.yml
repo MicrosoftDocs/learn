@@ -10,7 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 15
-interactive: powershell
-azureSandbox: true
+## interactive: powershell
+azureSandbox: false
 content: |
   [!include[](includes/4-exercise-assess-windows-server-readiness.md)]

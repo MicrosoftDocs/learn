@@ -5,14 +5,14 @@ In this exercise, you'll change the security setting to allow you to download th
 ### Disable IE Enhanced security configuration
 
 1. If you closed your Remote Desktop Connection, use the following steps to connect to the virtual machine (VM).
-    1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
+    1. Sign into the [Azure portal](https://portal.azure.com?azure-portal=true) using the same account you activated the sandbox with.
     1. Go to **Virtual machines** > **FileServerLocal**.
     1. Select **Connect** > **Download RDP File** > open the RDP file.
     1. In the **Windows Security** window, select **More choices** > **Use a different account**.
     1. Enter the username **learnadmin** and the password you used when you created the VM.
 1. In your Remote Desktop Connection, on the toolbar, select **Server Manager** > **Local Server**.
 1. On the **Properties** pane, go to **IE Enhanced Security Configuration** and select the **On** link.
-    ![Screenshot that shows on link for IE Enhanced Security Configuration](../media/8-local-server-ie-security-config.png)
+    ![Screenshot that shows on link for IE Enhanced Security Configuration.](../media/8-local-server-ie-security-config.png)
 1. Select **Off** for **Administrators** and **Users**.
 
 ### Install the Azure File Sync agent
@@ -33,8 +33,8 @@ In this exercise, you'll change the security setting to allow you to download th
 
    |Field |value  |
    |---------|---------|
-   |Azure Subscription     |  Concierge Subscription       |
-   |Resource Group    |  **<rgn>[sandbox resource group name]</rgn>**       |
+   |Azure Subscription     | Subscription where you created the Azure File Sync resources       |
+   |Resource Group    |  learn-file-sync-rg       |
    |Storage Sync Service     |  CADSyncService       |
 
 1. Select **Register**.
@@ -44,12 +44,12 @@ In this exercise, you'll change the security setting to allow you to download th
 
 ### Add the server endpoint
 
-1. On your local machine, sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
+1. On your local machine, sign into the [Azure portal](https://portal.azure.com?azure-portal=true) using the same account you activated the sandbox with.
 1. Go to the sync group CADFiles. Select **All resources** > **CADSyncService** > **CADFiles**.
 1. Select **Add server endpoint**.
 1. Use the following values:
 
-    ![Screenshot of the add server endpoint pane, showing the Registered Server as FileServerLocal, and Path set to C:\CADFolder](../media/8-add-server-endpoint.png)
+    ![Screenshot of the add server endpoint pane, showing the Registered Server as FileServerLocal, and Path set to C:\CADFolder.](../media/8-add-server-endpoint.png)
 
    |Field |value  |
    |---------|---------|
@@ -61,4 +61,4 @@ In this exercise, you'll change the security setting to allow you to download th
 1. Select **Create**.
 1. When the endpoint is created, the file sync process begins. This process may take a couple of minutes.
 
-    ![Screenshot that shows the status of the endpoint](../media/8-created-endpoint.png)
+    ![Screenshot that shows the status of the endpoint.](../media/8-created-endpoint.png)

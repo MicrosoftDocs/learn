@@ -8,7 +8,9 @@ Those actions have extended your on-premises file server storage capacity to inc
 - You set up and configured Azure File Sync on a Windows Server.
 - You found out how to troubleshoot Azure File Sync issues.
 
-[!include[](../../../includes/azure-sandbox-cleanup.md)]
+## Clean up
+
+When you're working in your own subscription, it's a good idea at the end of a project to identify whether you still need the resources you created. Resources left running can cost you money. Delete the Azure File Sync resources individually, in the reverse order you've created them.
 
 ## Learn more
 
