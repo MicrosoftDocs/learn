@@ -22,3 +22,5 @@ Let's start by getting the code and setting up your development environment. Fol
    ```
 
 Is it time to run the code yet? Not quite. You've gathered your code to your local computer, installed its dependencies, and compiled your application. Before you run it, you're probably wondering how the application is structured. Let's explore that next.
+
+Next, we'll explore the application's structure and code.

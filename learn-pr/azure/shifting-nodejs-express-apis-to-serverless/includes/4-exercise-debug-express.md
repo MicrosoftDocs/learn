@@ -82,3 +82,5 @@ There are two debugging processes running: one for Angular and one for Node.js E
 1. Press **SHIFT** and **F5** to stop the remaining debugger
 
 The debugger is no longer running.
+
+Next, we'll begin shifting the Node.js Express application to an Azure Functions application.
