@@ -2,7 +2,7 @@
 uid: learn.pillars-of-a-great-azure-architecture
 metadata:
   title: Pillars of a great Azure architecture
-  description: You want to build great things on Azure, but you’re not sure exactly what that means. Using key principles throughout your architecture regardless of technology choice, can help you design, build, and continuously improve your architecture.
+  description: Learn how using key principles throughout your cloud architecture can help you design and build a solid architectural foundation that you can continuously improve.
   ms.date: 09/24/2018
   author: jboeshart
   ms.author: jaboes

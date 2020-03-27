@@ -19,7 +19,7 @@ There is a single Activity Log for each Azure subscription. It provides data abo
 1. Configure the setting.
 1. Select **Save**.
 
-![Screenshot the activity log profile setting blade](../media/6-export-log.png)
+![Screenshot the activity log profile setting pane](../media/6-export-log.png)
 
 ### Ensure that activity log retention is set to 365 days or more - Level 1
 
@@ -38,7 +38,7 @@ Setting the Retention (days) to 0 retains the data forever.
 1. Select **Policy** from the **Filter by resource type** pull down.
 1. Click **Done**.
 
-![Screenshot the activity log profile setting blade](../media/6-resource.png)
+![Screenshot the activity log profile setting pane](../media/6-resource.png)
 
 ### Create an activity log alert for "Creating, updating, or deleting a Network Security Group" - Level 1
 
@@ -62,7 +62,7 @@ Monitoring for **Create or update SQL Server Firewall Rule** events gives insigh
 1. Select **SQL servers** from the **Filter by resource type** pull down.
 1. Click **Done**
 
-![Screenshot the activity log profile setting blade](../media/6-sql-server.png)
+![Screenshot the activity log profile setting pane](../media/6-sql-server.png)
 
 > [!TIP]
 > Remember to select **Save** if you make changes to any of the settings.

@@ -13,37 +13,37 @@ In this exercise, you'll use a custom script extension to roll out a new version
 
 1. In the [Azure portal](https://portal.azure.com), run the following command to view the current upgrade policy for the scale set:
 
-    ```bash
-        az vmss show \
-            --name webServerScaleSet \
-            --resource-group scalesetrg \
-            --query upgradePolicy.mode
+    ```azurecli
+    az vmss show \
+        --name webServerScaleSet \
+        --resource-group scalesetrg \
+        --query upgradePolicy.mode
     ```
 
     Verify that the upgrade policy is set to `Automatic`. You specified this policy when you created the scale set in the first lab. If the policy were `Manual`, you would apply any VM changes by hand. Because the policy is `Automatic`, you can use the custom script extension and allow the scale set to do the update.
 
 1. Run the following command to apply the update script:
 
-    ```bash
-        az vmss extension set \
-            --publisher Microsoft.Azure.Extensions \
-            --version 2.0 \
-            --name CustomScript \
-            --vmss-name webServerScaleSet \
-            --resource-group scalesetrg \
-            --settings "{\"commandToExecute\": \"echo This is the updated app installed on the Virtual Machine Scale Set ! > /var/www/html/index.html\"}"
+    ```azurecli
+    az vmss extension set \
+        --publisher Microsoft.Azure.Extensions \
+        --version 2.0 \
+        --name CustomScript \
+        --vmss-name webServerScaleSet \
+        --resource-group scalesetrg \
+        --settings "{\"commandToExecute\": \"echo This is the updated app installed on the Virtual Machine Scale Set ! > /var/www/html/index.html\"}"
     ```
 
 ## Test the updated web application
 
 1. Run the following command to retrieve the IP address of the load balancer for the scale set:
 
-    ```bash
-        az network public-ip show \
-            --name webServerScaleSetLBPublicIP \
-            --resource-group scalesetrg \
-            --output tsv \
-            --query ipAddress
+    ```azurecli
+    az network public-ip show \
+        --name webServerScaleSetLBPublicIP \
+        --resource-group scalesetrg \
+        --output tsv \
+        --query ipAddress
     ```
 
 1. In your web browser, go to the public address of the scale set load balancer. Verify that you see the message **This is the updated app installed on the Virtual Machine Scale Set !**.

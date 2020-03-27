@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.protect-infrastructure-with-azure-site-recovery
+metadata:
+  title: Protect your Azure infrastructure with Azure Site Recovery
+  description: Provide disaster recovery for your Azure infrastructure by managing and orchestrating replication, failover, and failback of Azure virtual machines with Azure Site Recovery.
+  ms.date: 11/15/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Protect your Azure infrastructure with Azure Site Recovery
+summary: Provide disaster recovery for your Azure infrastructure by managing and orchestrating replication, failover, and failback of Azure virtual machines with Azure Site Recovery.
+abstract: | 
+  In this module, you will:
+  - Protect Azure virtual machines with Azure Site Recovery
+  - Run a disaster recovery drill to validate protection
+  - Failover and failback your virtual machines
+prerequisites: | 
+  - Basic understanding of Azure virtual machines
+  - Basic understanding of Azure virtual networking
+iconUrl: /learn/achievements/protect-infrastructure-with-azure-site-recovery.svg
+levels:
+- intermediate
+roles:
+- solution-architect
+- administrator
+products:
+- azure
+units:
+- learn.protect-infrastructure-with-azure-site-recovery.1-introduction
+- learn.protect-infrastructure-with-azure-site-recovery.2-what-is-site-recovery
+- learn.protect-infrastructure-with-azure-site-recovery.3-site-recovery-setup
+- learn.protect-infrastructure-with-azure-site-recovery.4-exercise-site-recovery-setup
+- learn.protect-infrastructure-with-azure-site-recovery.5-run-disaster-recovery-drill
+- learn.protect-infrastructure-with-azure-site-recovery.6-exercise-run-disaster-recovery-drill
+- learn.protect-infrastructure-with-azure-site-recovery.7-failover-and-failback
+- learn.protect-infrastructure-with-azure-site-recovery.8-exercise-failover-and-failback
+- learn.protect-infrastructure-with-azure-site-recovery.9-summary
+badge:
+  uid: learn.protect-infrastructure-with-azure-site-recovery.badge

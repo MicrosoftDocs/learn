@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-security.resolve-threats-with-azure-security-center.use-a-playbook
-title: Use a Security playbook to automate responses
+title: Use a Workflow automation to automate responses
 metadata:
-  title: Use a Security playbook to automate responses
-  description: Use a Security playbook to automate responses
+  title: Use a Workflow automation to automate responses
+  description: Use a Workflow automation to automate responses
   ms.date: 09/30/2019
   author: markjulmar
   ms.author: smmark

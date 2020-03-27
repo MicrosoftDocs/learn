@@ -1,0 +1,53 @@
+### YamlMime:Module
+uid: learn.cmu-cloud-admin.cmu-disaster-recovery-backup
+metadata:
+  title: Disaster recovery and backup
+  description: Cloud Admin course from Dr. Majd Sakr at Carnegie Mellon University. What do you do when something goes wrong with your resources on the cloud? How do you prepare for such an issue? Learn about disaster backup and recovery with this module.
+  ms.date: 03/15/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  showCreativeCommonsFooter: true
+title: Cloud security
+summary: What do you do when something goes wrong with your resources on the cloud? How do you prepare for such an issue? Learn about disaster backup and recovery with this module.
+abstract: | 
+  In this module you will:
+  - Understand the meaning of “fault tolerance”
+  - List reactive techniques used to achieve fault tolerance in cloud platforms
+  - List proactive techniques used to achieve fault tolerance in cloud platforms
+  - Understand the backup services offered by leading cloud service providers
+  - Understand the role that backup services play in disaster response and recovery
+  - Explain the difference between backup services and disaster-recovery services
+  - List the service-level objectives that drive disaster-recovery planning
+  - List the disaster-recovery services offered by leading cloud service providers
+  - Explain what resilience is and how it is measured
+  - Explain how resilience contributes to business continuity
+
+
+
+  In Partnership with Dr. Majd Sakr and Carnegie Mellon University.
+prerequisites: |
+  - Understand what cloud computing is, including cloud service models, and common cloud providers
+  - Know the different type of clouds (public, private, hybrid)
+  - Recognize cloud service models such as IaaS, PaaS, and SaaS and differentiate between them
+  - Understand how cloud resource provisioning works
+  - Know how data centers work and how data is stored in the cloud
+  - Understand the basics of cloud security
+iconUrl: /learn/achievements/cmu-cloud-admin/cmu-disaster-recovery-backup.svg
+levels:
+- beginner
+roles:
+- administrator
+products:
+- azure
+units:
+- learn.cmu-cloud-admin.cmu-disaster-recovery-backup.0-introduction
+- learn.cmu-cloud-admin.cmu-disaster-recovery-backup.1-failures-fault-tolerance
+- learn.cmu-cloud-admin.cmu-disaster-recovery-backup.2-backup-services
+- learn.cmu-cloud-admin.cmu-disaster-recovery-backup.3-disaster-recovery-services
+- learn.cmu-cloud-admin.cmu-disaster-recovery-backup.4-resilience-design-policy
+- learn.cmu-cloud-admin.cmu-disaster-recovery-backup.5-summary
+
+badge:
+  uid: learn.cmu-cloud-admin.cmu-disaster-recovery-backup.badge

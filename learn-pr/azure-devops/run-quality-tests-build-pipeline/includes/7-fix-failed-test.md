@@ -18,11 +18,11 @@ First, let's check in with Mara and Andy.
 
 Mara shows Andy the updated build configuration on Azure Pipelines. Andy likes what he sees, especially the dashboard widgets.
 
-**Andy**: Last time we met, we got code coverage working on your laptop. It's great to see the same thing working in the build pipeline!
+**Andy:** Last time we met, we got code coverage working on your laptop. It's great to see the same thing working in the build pipeline!
 
-**Mara**: Yes, I'm glad we got things working locally first. Fitting it into the build pipeline was easy after that.
+**Mara:** Yes, I'm glad we got things working locally first. Fitting it into the build pipeline was easy after that.
 
-**Andy**: I'll be sure to add a unit test the next time I add a feature. It'll be great to increase our code coverage! In fact, Amita is waiting on this new leaderboard feature so she can do user testing on it. I promised her I'd have the change ready by today. See you later!
+**Andy:** I'll be sure to add a unit test the next time I add a feature. It'll be great to increase our code coverage! In fact, Amita is waiting on this new leaderboard feature so she can do user testing on it. I promised her I'd have the change ready by today. See you later!
 
 ## Review the new unit test
 
@@ -73,7 +73,7 @@ As you did earlier, you fetch the `failed-test` branch from GitHub and check out
 
     ```bash
     git fetch upstream failed-test
-    git checkout failed-test
+    git checkout -b failed-test upstream/failed-test
     ```
 
     We named the branch `failed-test` for learning purposes. In practice, you would name a branch after its purpose or feature.
@@ -105,10 +105,9 @@ Let's say that Andy was in a hurry and pushed up his work without running the te
 
     You see that the `ReturnRequestedCount` test method fails.
 
-    ![The dashboard showing a failure on the Test Results Trend widget](../media/7-pipeline-test-failure.png)
+    ![Screenshot of Azure Pipelines dashboard showing output log of an assertion failure on the unit test, expecting 10 but was 9.](../media/7-pipeline-test-failure.png)
 
     The test passes when the input value is 0, but it fails when the input value is 1 or 10.
-1. When the build is complete, notice that the **Artifacts** button doesn't appear.
 
     The build is published to the pipeline only when the previous task succeeds. Here, the build wasn't published because the unit tests failed. This prevents others from accidentally obtaining a broken build.
 
@@ -118,22 +117,22 @@ In practice, you won't always manually trace the build as it runs. Here are a fe
 
     Azure DevOps sends you an email notification when the build is complete. The subject line starts with "[Build failed]" when the build fails.
 
-    ![A portion of a build failed email notification](../media/7-email-notification.png)
+    ![Screenshot of a portion of a build failed email notification.](../media/7-email-notification.png)
 * **Azure Test Plans**
 
     In Azure DevOps, select **Test Plans**, and then select **Runs**. You see the recent test runs, including the one that just ran. Select the latest completed test. You see that two of the eight tests failed.
 
-    ![Test run outcome showing two failed tests](../media/7-test-run-outcome.png)
+    ![Screenshot of Azure DevOps test run outcome showing two of eight failed tests in a ring chart.](../media/7-test-run-outcome.png)
 * **The dashboard**
 
     In Azure DevOps, select **Overview**, and then select **Dashboards**. You see the failure appear in the **Test Results Trend** widget. The **Code Coverage** widget is blank, which indicates that code coverage was not run.
 
-    ![The dashboard widget showing a failed test](../media/7-dashboard-failed-test.png)
+    ![Screenshot of Azure DevOps dashboard trend chart widget showing two failed test in the last test run.](../media/7-dashboard-failed-test.png)
 * **The build badge**
 
     Although the `failed-test` branch doesn't include the build badge in the *README.md* file, here's what you would see on GitHub when the build fails:
 
-    ![The build badge on GitHub indicating a failure](../media/7-badge-failed.png)
+    ![Screenshot of Azure Pipelines build badge on GitHub indicating a failure.](../media/7-badge-failed.png)
 
 ## Analyze the test failure
 
@@ -144,11 +143,11 @@ When unit tests fail, you ordinarily have two choices, depending on the nature o
 
 Mara notices the build failure and checks in with Andy.
 
-**Mara**: Hey, Andy. I just saw the email notification in my inbox. It looks like the build is broken.
+**Mara:** Hey, Andy. I just saw the email notification in my inbox. It looks like the build is broken.
 
-**Andy**: Yes, I just saw that as well. I already started to investigate. It looks like we have a failing unit test. Would you mind taking a look with me?
+**Andy:** Yes, I just saw that as well. I already started to investigate. It looks like we have a failing unit test. Would you mind taking a look with me?
 
-**Mara**: Sure, let's take a look. I say we start by verifying that we can reproduce the failure on your computer.
+**Mara:** Sure, let's take a look. I say we start by verifying that we can reproduce the failure on your computer.
 
 ### Reproduce the failure locally
 
@@ -170,13 +169,13 @@ In this section, you reproduce the failure locally, just like Mara and Andy.
     You see the same errors that you saw in the pipeline. Here's part of the output:
 
     ```output
-    Failed   ReturnRequestedCount(10)
-    Error Message:
-       Expected: 10
+      X ReturnRequestedCount(10) [6ms]
+      Error Message:
+         Expected: 10
       But was:  9
 
-    Stack Trace:
-       at NUnit.Framework.Internal.Commands.TestMethodCommand.Execute(TestExecutionContext context)
+      Stack Trace:
+         at NUnit.Framework.Internal.Commands.TestMethodCommand.Execute(TestExecutionContext context)
        at NUnit.Framework.Internal.Commands.BeforeAndAfterTestCommand.Execute(TestExecutionContext context)
        at NUnit.Framework.Internal.Execution.SimpleWorkItem.PerformWork()
        at NUnit.Framework.Internal.Execution.CompositeWorkItem.RunChildren()
@@ -185,16 +184,18 @@ In this section, you reproduce the failure locally, just like Mara and Andy.
        at System.Threading.Thread.ThreadMain_ThreadStart()
 
 
-    Total tests: 8. Passed: 6. Failed: 2. Skipped: 0.
     Test Run Failed.
-    Test execution time: 1.2035 Seconds
+    Total tests: 8
+         Passed: 6
+         Failed: 2
+     Total time: 1.3882 Seconds
     ```
 
 ### Find the cause of the error
 
 Mara notices that each failed test produces a result that's off by one. For example, when 10 is expected, the test returns 9.
 
-Mara and Andy look at the source code for the method that's being tested, ``IDocumentDBRepository`1.GetItemsAsync``. They see this:
+Mara and Andy look at the source code for the method that's being tested, ``LocalDocumentDBRepository`1.GetItemsAsync``. They see this:
 
 ```csharp
 public Task<IEnumerable<T>> GetItemsAsync(
@@ -216,13 +217,13 @@ public Task<IEnumerable<T>> GetItemsAsync(
 
 They examine the file on GitHub and notice that it was recently changed.
 
-![GitHub showing a file diff](../media/7-github-diff.png)
+![Screenshot of GitHub showing a file diff where a minus one operation was added.](../media/7-github-diff.png)
 
 Mara suspects that `pageSize - 1` is returning one fewer results and that this should be just `pageSize`.
 
-**Mara**: Andy, do you remember why you made this change?
+**Mara:** Andy, do you remember why you made this change?
 
-**Andy**: I was experimenting with something and I must have forgotten to change it back. It looks like changing back to the original code will fix things.
+**Andy:** I was experimenting with something and I must have forgotten to change it back. It looks like changing back to the original code will fix things.
 
 Mara and Andy decide to change the code back to its original state and then verify that the unit tests pass.
 
@@ -276,9 +277,12 @@ In this section, you fix the error by changing the code back to its original sta
     You see that the tests pass.
 
     ```output
-    Total tests: 8. Passed: 8. Failed: 0. Skipped: 0.
+    Starting test execution, please wait...
+
     Test Run Successful.
-    Test execution time: 1.2248 Seconds
+    Total tests: 8
+         Passed: 8
+     Total time: 1.2506 Seconds
     ```
 
 1. In the integrated terminal, add each modified file to the index, commit the changes, and push the branch up to GitHub.
@@ -296,16 +300,16 @@ In this section, you fix the error by changing the code back to its original sta
 
 1. Return to Azure Pipelines. Watch the change move through the pipeline. The tests pass, and the overall build succeeds.
 
-    Optionally, to verify the test results, you can select the **Summary** and **Code Coverage** tabs when the build completes.
+    Optionally, to verify the test results, you can select the **Tests** and **Code Coverage** tabs when the build completes.
 
     You can also check out the dashboard to view the updated results trend.
 
-    ![The dashboard showing a passing tests on the Test Results Trend widget](../media/7-dashboard-passing-test.png)
+    ![Screenshot of Azure DevOps dashboard trend chart widget showing a return to all tests passing.](../media/7-dashboard-passing-test.png)
 
     As a bonus, the added unit test increases the percentage of code covered from around 14 percent to 17 percent.
 
-    ![The Code Coverage widget showing an increased amount of coverage](../media/7-dashboard-widget.png)
+    ![Screenshot of the Azure DevOps Code Coverage widget showing coverage of 17 percent.](../media/7-dashboard-widget.png)
 
-**Andy**: Great! We fixed the build! I'm sorry for breaking it. I was in a hurry and I forgot to run the tests one final time.
+**Andy:** Great! We fixed the build! I'm sorry for breaking it. I was in a hurry and I forgot to run the tests one final time.
 
-**Mara**: That's OK. The fix was easy enough. And we caught it early, _way_ before it reached QA or production. Now Amita has a clean build to work from.
+**Mara:** That's OK. The fix was easy enough. And we caught it early, _way_ before it reached QA or production. Now Amita has a clean build to work from.

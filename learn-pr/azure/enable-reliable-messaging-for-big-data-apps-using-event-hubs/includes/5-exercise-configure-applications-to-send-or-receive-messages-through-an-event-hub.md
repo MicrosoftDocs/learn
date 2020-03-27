@@ -16,16 +16,16 @@ The Java receiver application, that you'll configure in this unit, stores messag
     |--resource-group (required)  | The resource group owner. We'll use the pre-created sandbox resource group. |
     |--location (optional) | An optional location if you want the storage account in a specific place vs. the resource group location. |
 
-    Set the storage account name into a variable. It must be composed of all lower-case letters, numbers, with hyphen separators allowed. It also must be unique within Azure.
+    Set the storage account name into a variable. It must be between 3 and 24 characters in length and use numbers and lower-case letters only. It also must be unique within Azure.
 
     ```azurecli
-    STORAGE_NAME=[name]
+    STORAGE_NAME=storagename$RANDOM
     ```
 
     Then use this command to create the storage account.
 
     ```azurecli
-    az storage account create --name $STORAGE_NAME --sku Standard_RAGRS --encryption blob
+    az storage account create --name $STORAGE_NAME --sku Standard_RAGRS --encryption-service blob
     ```
 
     > [!TIP]
@@ -81,7 +81,7 @@ You'll need to write out your edits using <kbd>Ctrl+O</kbd>, and then <kbd>ENTER
 1. Change to the **SimpleSend** folder.
 
     ```bash
-    cd azure-event-hubs/samples/Java/Basic/SimpleSend/src/main/java/com/microsoft/azure/eventhubs/samples/SimpleSend
+    cd ~/azure-event-hubs/samples/Java/Basic/SimpleSend/src/main/java/com/microsoft/azure/eventhubs/samples/SimpleSend
     ```
 
 1. Open the code editor in the current folder. This will show a list of files on the left and an editor space on the right.
@@ -106,6 +106,8 @@ You'll need to write out your edits using <kbd>Ctrl+O</kbd>, and then <kbd>ENTER
 
     ```bash
     echo $NS_NAME
+    echo $HUB_NAME
+    echo $STORAGE_NAME
     ```
     When you create an Event Hubs namespace, a 256-bit SAS key called **RootManageSharedAccessKey** is created that has an associated pair of primary and secondary keys that grant send, listen, and manage rights to the namespace. In the previous unit, you displayed the key using an Azure CLI command, and you can also find this key by opening the **Shared access policies** page for your Event Hubs namespace in the Azure portal.
 
@@ -139,7 +141,7 @@ You'll now configure a **receiver** (also known as **subscribers** or **consumer
 
 For the receiver application, two methods are available; **EventHubReceiver** and **EventProcessorHost**. EventProcessorHost is built on top of EventHubReceiver, but provides simpler programmatic interface than EventHubReceiver. EventProcessorHost can automatically distribute message partitions across multiple instances of EventProcessorHost using the same storage account.
 
-In this unit, you’ll use the EventProcessorHost method. You'll edit the EventProcessorSample application to add your Event Hubs namespace, Event Hub name, shared access policy name and primary key, storage account name, connection string, and container name.
+In this unit, you'll use the EventProcessorHost method. You'll edit the EventProcessorSample application to add your Event Hubs namespace, Event Hub name, shared access policy name and primary key, storage account name, connection string, and container name.
 
 1. Change to the **EventProcessorSample** folder using the following command:
 
@@ -185,7 +187,7 @@ In this unit, you’ll use the EventProcessorHost method. You'll edit the EventP
 
     The build process may take several minutes to complete. Ensure that you see a **[INFO] BUILD SUCCESS** message before continuing.
 
-    ![Build results for receiver application](../media/5-receiver-build.png)
+    :::image type="content" source="../media/5-receiver-build.png" alt-text="Build results for receiver application." loc-scope="other"::: <!-- no-loc -->
 
 ## Start the sender and receiver apps
 

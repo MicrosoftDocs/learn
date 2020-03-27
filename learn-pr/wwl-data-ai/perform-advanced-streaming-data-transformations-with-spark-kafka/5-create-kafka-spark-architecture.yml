@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.perform-advanced-streaming-data-transformations-with-spark-kafka.create-kafka-spark-architecture
+title: Create a Kafka and Spark architecture
+metadata:
+  title: Create a Kafka and Spark architecture
+  description: "Create a Kafka and Spark architecture"
+  ms.date: 02/28/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-create-kafka-spark-architecture.md)]

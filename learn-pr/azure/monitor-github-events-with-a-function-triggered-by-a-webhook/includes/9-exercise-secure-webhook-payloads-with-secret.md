@@ -30,7 +30,7 @@ In this exercise, you'll protect your webhook payload with a secret, and learn h
 
     This code computes the hash of the key, using the same mechanism as GitHub.
 
-1. Add `sha1=` to the start of the key, so that it matches the format of `x-xub-signature` in the request header. Add the following code to your function.
+1. Add `sha1=` to the start of the key, so that it matches the format of `x-hub-signature` in the request header. Add the following code to your function.
 
     ```JavaScript
     var shaSignature =  `sha1=${signature}`;
@@ -121,7 +121,7 @@ In this exercise, you'll protect your webhook payload with a secret, and learn h
 
 1. Select the **Edit** button next to your webhook.
 
-1. In the **Secret** text box, enter the default key from your function that your saved earlier in this exercise.
+1. In the **Secret** text box, enter the default key from your function that you saved earlier in this exercise.
 
 1. At the bottom of the page, select **Update webhook**.
 

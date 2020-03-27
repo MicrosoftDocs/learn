@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.monitor-diagnose-and-troubleshoot-azure-storage.4-exercise-storage-metrics
+metadata:
+  title: Exercise - Enable storage metrics and view metric data
+  description: In this exercise, we'll explore how to enable storage metrics and view metric data.
+  ms.date: 11/15/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise - Enabling storage metrics and view metric data
+durationInMinutes: 10
+interactive: powershell
+azureSandbox: true
+content: |
+  [!include[](includes/4-exercise-storage-metrics.md)]

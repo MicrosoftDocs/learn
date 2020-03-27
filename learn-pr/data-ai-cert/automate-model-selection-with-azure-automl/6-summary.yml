@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.data-ai.automate-model-selection-with-azure-automl.summary
+title: Summary
+metadata:
+  title: Summary
+  description: Summary
+  ms.date: 01/13/2020
+  author: GraemeMalcolm
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-summary.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "You are using automated machine learning to train a model that predicts the species of an iris based on its petal and sepal measurements. Which kind of task should you specify for automated machine learning?"
+    choices: 
+    - content: "Regression"
+      isCorrect: false
+      explanation: "This is incorrect. Predicting a class requires a classification task."
+    - content: "Forecasting"
+      isCorrect: false
+      explanation: "That is incorrect. Predicting a class requires a classification task."
+    - content: "Classification"
+      isCorrect: true
+      explanation: "This is correct.  Predicting a class requires a classification task."
+  
+  - content: "You have submitted an automated machine learning run using the Python SDk for Azure Machine Learning. When the run completes, which method of the run object should you use to retrieve the best model?"
+    choices: 
+    - content: "get_output()"
+      isCorrect: true
+      explanation: "That is correct. The get_output method of an automated machine learning run returns the best mode and the child run that trained it."
+    - content: "load_model()"
+      isCorrect: false
+      explanation: "That is incorrect. The get_output method of an automated machine learning run returns the best mode and the child run that trained it."
+    - content: "get_metrics()"
+      isCorrect: false
+      explanation: "That is incorrect. The get_output method of an automated machine learning run returns the best mode and the child run that trained it."

@@ -339,6 +339,641 @@
       "source_path": "learn-pr/azure/authenticate-browser-based-apps-with-azure-app-services/9-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/app-center/intro-to-app-center/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-app-center/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/app-center/intro-to-app-center/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-app-center/1-introduction",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/app-center/intro-to-app-center/2-what-is-app-center.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-app-center/2-what-is-app-center",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/app-center/intro-to-app-center/3-how-app-center-build-works.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-app-center/3-how-app-center-build-works",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/app-center/intro-to-app-center/4-how-app-center-test-works.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-app-center/4-how-app-center-test-works",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/app-center/intro-to-app-center/5-how-app-center-distribute-works.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-app-center/5-how-app-center-distribute-works",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/app-center/intro-to-app-center/6-how-app-center-diagnostics-works.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-app-center/6-how-app-center-diagnostics-works",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/app-center/intro-to-app-center/7-how-app-center-analytics-works.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-app-center/7-how-app-center-analytics-works",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/app-center/intro-to-app-center/8-exercise-create-app-center-account.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-app-center/8-exercise-create-app-center-account",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/app-center/intro-to-app-center/9-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-app-center/9-summary",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/modules/intro-to-mobile-app-service/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-app-center/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/modules/intro-to-mobile-app-service/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-app-center/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/modules/intro-to-mobile-app-service/2-what-are-mobile-apps.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-app-center/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/modules/intro-to-mobile-app-service/3-how-mobile-apps-work.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-app-center/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/modules/intro-to-mobile-app-service/4-when-to-use-mobile-apps.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-app-center/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/modules/intro-to-mobile-app-service/5-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-app-center/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/modules/intro-to-mobile-app-service/6-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-app-center/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/microsoft-approach-to-ai/2-intelligent-bot-demo.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/microsoft-approach-to-ai/3-intelligent-bot-demo",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/microsoft-approach-to-ai/3-pre-trained-cognitive-services.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/microsoft-approach-to-ai/4-pre-trained-cognitive-services",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/microsoft-approach-to-ai/4-cognitive-search.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/microsoft-approach-to-ai/5-cognitive-search",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/microsoft-approach-to-ai/5-conversational-ai.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/microsoft-approach-to-ai/6-conversational-ai",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/microsoft-approach-to-ai/6-saas-ai-and-embedded-ai.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/microsoft-approach-to-ai/7-saas-ai-and-embedded-ai",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/microsoft-approach-to-ai/7-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/microsoft-approach-to-ai/8-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/microsoft-approach-to-ai/8-summary-and-resources.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/microsoft-approach-to-ai/9-summary-and-resources",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/responsible-ai-principles/7-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/responsible-ai-principles/8-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/responsible-ai-principles/8-summary-and-resources.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/responsible-ai-principles/9-summary-resources",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/microsoft-responsible-ai-practices/2-engineering-design-principles.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/microsoft-responsible-ai-practices/5-engineering-design-principles",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/microsoft-responsible-ai-practices/3-responsible-ai-tools.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/microsoft-responsible-ai-practices/6-responsible-ai-tools",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/microsoft-responsible-ai-practices/4-ai-for-good.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/microsoft-responsible-ai-practices/7-ai-for-good",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/microsoft-responsible-ai-practices/5-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/microsoft-responsible-ai-practices/8-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/microsoft-responsible-ai-practices/6-summary-and-resources.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/microsoft-responsible-ai-practices/9-summary-resources",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/microsoft-cloud-adoption-framework-for-azure/3-motivations.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/microsoft-cloud-adoption-framework-for-azure/3-define-strategy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/microsoft-cloud-adoption-framework-for-azure/4-strategy.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/microsoft-cloud-adoption-framework-for-azure/3-define-strategy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/microsoft-cloud-adoption-framework-for-azure/5-plan.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/microsoft-cloud-adoption-framework-for-azure/4-plan",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/microsoft-cloud-adoption-framework-for-azure/6-ready.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/microsoft-cloud-adoption-framework-for-azure/5-ready",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/microsoft-cloud-adoption-framework-for-azure/7-adopt.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/microsoft-cloud-adoption-framework-for-azure/6-adopt",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/microsoft-cloud-adoption-framework-for-azure/8-operate.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/microsoft-cloud-adoption-framework-for-azure/7-govern-and-manage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/microsoft-cloud-adoption-framework-for-azure/9-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/microsoft-cloud-adoption-framework-for-azure/8-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/microsoft-cloud-adoption-framework-for-azure/10-summary-and-resources.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/microsoft-cloud-adoption-framework-for-azure/9-summary-and-resources",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/cloud-operating-model/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/microsoft-cloud-adoption-framework-for-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/cloud-operating-model/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/microsoft-cloud-adoption-framework-for-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/cloud-operating-model/2-Cloud-Operating-Model-Overview.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/microsoft-cloud-adoption-framework-for-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/cloud-operating-model/3-modernization-triggers.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/microsoft-cloud-adoption-framework-for-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/cloud-operating-model/4-business-strategy.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/microsoft-cloud-adoption-framework-for-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/cloud-operating-model/5-people-strategy.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/microsoft-cloud-adoption-framework-for-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/cloud-operating-model/6-technology-strategy.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/microsoft-cloud-adoption-framework-for-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/cloud-operating-model/7-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/microsoft-cloud-adoption-framework-for-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/cloud-operating-model/8-summary-and-resources.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/microsoft-cloud-adoption-framework-for-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/intro-azure-areas-and-solutions/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-to-azure-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/intro-azure-areas-and-solutions/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-to-azure-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/intro-azure-areas-and-solutions/2-enabling-digital-transformation-with-azure.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-to-azure-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/intro-azure-areas-and-solutions/3-the-unique-value-of-azure.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-to-azure-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/intro-azure-areas-and-solutions/4-azure-solutions.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-to-azure-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/intro-azure-areas-and-solutions/5-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-to-azure-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/intro-azure-areas-and-solutions/6-summary-and-resources.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-to-azure-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/welcome-to-azure-generalist/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-to-azure-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/welcome-to-azure-generalist/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-to-azure-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/welcome-to-azure-generalist/2-executive-welcome.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-to-azure-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-an-azure-account/3b-transfer-account.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-an-azure-account",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-an-azure-account/3a-multiple-subscriptions.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-an-azure-account",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-an-azure-account/4-azure-tenants.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-an-azure-account",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-an-azure-account/6-support-options.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-an-azure-account",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/keep-your-virtual-machines-updated/6-knowledge-check.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/keep-your-virtual-machines-updated",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/automate-model-selection-with-azure-automl/2-understand-ml-pipeline.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/automate-model-selection-with-azure-automl",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/automate-model-selection-with-azure-automl/3-what-is-automl.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/automate-model-selection-with-azure-automl",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/automate-model-selection-with-azure-automl/4-automl-recommend-model.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/automate-model-selection-with-azure-automl",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/automate-model-selection-with-azure-automl/5-summary.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/automate-model-selection-with-azure-automl",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/automate-model-selection-with-azure-automl/4-automl-experiment.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/automate-model-selection-with-azure-automl",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/intro-to-azure-machine-learning-service/2-azure-ml-service-vs-ml-studio.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-machine-learning-service",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/intro-to-azure-machine-learning-service/3-azure-ml-service-with-ds-process.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-machine-learning-service",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/intro-to-azure-machine-learning-service/4-create-ml-experiment.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-machine-learning-service",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/intro-to-azure-machine-learning-service/5-create-pipeline.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-machine-learning-service",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/intro-to-azure-machine-learning-service/6-train-model.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-machine-learning-service",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/intro-to-azure-machine-learning-service/7-summary.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-azure-machine-learning-service",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/register-and-deploy-model-with-amls/10-scoring-data-with-deployed-model.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/register-and-deploy-model-with-amls",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/register-and-deploy-model-with-amls/11-manage-and-monitor-models.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/register-and-deploy-model-with-amls",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/register-and-deploy-model-with-amls/2-create-deployment-workspace-azure-portal.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/register-and-deploy-model-with-amls",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/register-and-deploy-model-with-amls/3-create-deployment-workspace-azure-ml-sdk.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/register-and-deploy-model-with-amls",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/register-and-deploy-model-with-amls/4-register-model.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/register-and-deploy-model-with-amls",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/register-and-deploy-model-with-amls/5-create-scoring-script.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/register-and-deploy-model-with-amls",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/register-and-deploy-model-with-amls/6-create-environment-yaml.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/register-and-deploy-model-with-amls",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/register-and-deploy-model-with-amls/7-create-container-image.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/register-and-deploy-model-with-amls",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/register-and-deploy-model-with-amls/8-where-to-deploy-model.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/register-and-deploy-model-with-amls",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/register-and-deploy-model-with-amls/9-deploy-model-web-service.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/register-and-deploy-model-with-amls",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/register-and-deploy-model-with-amls/12-summary.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/register-and-deploy-model-with-amls",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/train-local-model-with-azure-mls/2-simple-log-regression-model.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/train-local-model-with-azure-mls",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/train-local-model-with-azure-mls/3-run-log-reg-model-sklearn.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/train-local-model-with-azure-mls",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/train-local-model-with-azure-mls/4-create-ml-experiment.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/train-local-model-with-azure-mls",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/train-local-model-with-azure-mls/5-what-are-hyperparameters.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/train-local-model-with-azure-mls",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/train-local-model-with-azure-mls/6-train-model-using-experiment-service.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/train-local-model-with-azure-mls",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/train-local-model-with-azure-mls/7-summary.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/train-local-model-with-azure-mls",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/design-azure-sql-data-warehouse/2-types-of-dw-solutions.yml",
+      "redirect_url": "https://docs.microsoft.com/en-gb/learn/modules/design-azure-sql-data-warehouse",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/design-azure-sql-data-warehouse/3-azure-sql-dw.yml",
+      "redirect_url": "https://docs.microsoft.com/en-gb/learn/modules/design-azure-sql-data-warehouse",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/design-azure-sql-data-warehouse/4-massively-parallel-processing.yml",
+      "redirect_url": "https://docs.microsoft.com/en-gb/learn/modules/design-azure-sql-data-warehouse",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/design-azure-sql-data-warehouse/5-table-geometries.yml",
+      "redirect_url": "https://docs.microsoft.com/en-gb/learn/modules/design-azure-sql-data-warehouse",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/design-azure-sql-data-warehouse/6-create-azure-dw-using-portal.yml",
+      "redirect_url": "https://docs.microsoft.com/en-gb/learn/modules/design-azure-sql-data-warehouse",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/design-azure-sql-data-warehouse/7-summary.yml",
+      "redirect_url": "https://docs.microsoft.com/en-gb/learn/modules/design-azure-sql-data-warehouse",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/secure-azure-resources-with-conditional-access/1-introduction.yml",
+      "redirect_url": "https://docs.microsoft.com/azure/active-directory/conditional-access/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/secure-azure-resources-with-conditional-access/2-azure-ad-overview.yml",
+      "redirect_url": "https://docs.microsoft.com/azure/active-directory/conditional-access/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/secure-azure-resources-with-conditional-access/3-build-azure-ad.yml",
+      "redirect_url": "https://docs.microsoft.com/azure/active-directory/conditional-access/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/secure-azure-resources-with-conditional-access/4-secure-access.yml",
+      "redirect_url": "https://docs.microsoft.com/azure/active-directory/conditional-access/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/secure-azure-resources-with-conditional-access/5-test-access.yml",
+      "redirect_url": "https://docs.microsoft.com/azure/active-directory/conditional-access/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/secure-azure-resources-with-conditional-access/6-summary.yml",
+      "redirect_url": "https://docs.microsoft.com/azure/active-directory/conditional-access/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/introduction-open-source-database-migration-azure-cosmos-db/2-cosmos-db-overview.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-open-source-database-migration-azure-cosmos-db/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/introduction-open-source-database-migration-azure-cosmos-db/3-cosmos-db-apis.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-open-source-database-migration-azure-cosmos-db/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/introduction-open-source-database-migration-azure-cosmos-db/4-considerations-migrate-nosql-cosmos-db.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-open-source-database-migration-azure-cosmos-db/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/introduction-open-source-database-migration-azure-cosmos-db/5-provision-cosmos-db-throughput.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-open-source-database-migration-azure-cosmos-db/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/introduction-open-source-database-migration-azure-cosmos-db/6-cosmos-db-partition-best-practices.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-open-source-database-migration-azure-cosmos-db/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/introduction-open-source-database-migration-azure-cosmos-db/7-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-open-source-database-migration-azure-cosmos-db/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/introduction-open-source-database-migration-azure-cosmos-db/8-knowlege-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-open-source-database-migration-azure-cosmos-db/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/migrate-cassandra-workloads-cosmos-db/2-cassandra-cosmos-db-migration-benefits.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/migrate-cassandra-workloads-cosmos-db/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/migrate-cassandra-workloads-cosmos-db/3-cassandra-cosmos-db-migration-plan.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/migrate-cassandra-workloads-cosmos-db/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/migrate-cassandra-workloads-cosmos-db/4-cassandra-cosmos-db-data-migration.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/migrate-cassandra-workloads-cosmos-db/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/migrate-cassandra-workloads-cosmos-db/5-cassandra-cosmos-db-application-migration.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/migrate-cassandra-workloads-cosmos-db/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/migrate-cassandra-workloads-cosmos-db/6-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/migrate-cassandra-workloads-cosmos-db/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/migrate-cassandra-workloads-cosmos-db/7-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/migrate-cassandra-workloads-cosmos-db/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/introduction-open-source-database-migration-azure/2-mysql-postgresql-database-services-azure.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-open-source-database-migration-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/introduction-open-source-database-migration-azure/5-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-open-source-database-migration-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/introduction-open-source-database-migration-azure/6-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-open-source-database-migration-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/protecting-monitoring-tuning-migrated-database/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/protect-monitor-tuning-migrated-database/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/protecting-monitoring-tuning-migrated-database/2-protecting-database-server.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/protect-monitor-tuning-migrated-database/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/protecting-monitoring-tuning-migrated-database/3-monitor-configure-database-server.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/protect-monitor-tuning-migrated-database/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/protecting-monitoring-tuning-migrated-database/4-trace-track-activity.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/protect-monitor-tuning-migrated-database/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/protecting-monitoring-tuning-migrated-database/5-configure-read-replicas.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/protect-monitor-tuning-migrated-database/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/protecting-monitoring-tuning-migrated-database/6-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/protect-monitor-tuning-migrated-database/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/protecting-monitoring-tuning-migrated-database/7-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/protect-monitor-tuning-migrated-database/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/protecting-monitoring-tuning-migrated-database/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/protect-monitor-tuning-migrated-database/",
+      "redirect_document_id": false
     }
   ]
 }

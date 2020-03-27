@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="107px" height="107px" viewBox="0 0 107 107" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60 (88103) - https://sketch.com -->
+    <title>Architect message brokering and serverless applications in Azure/react-to-state-changes-in-your-azure-services-using-event-grid</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="100" height="100" rx="50"></rect>
+        <filter x="-6.8%" y="-8.3%" width="113.6%" height="116.7%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0981657609 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <path d="M51.734183,35 L59,42 L51.734183,49 L51.734,44 L35,44 L35,40 L51.734,40 L51.734183,35 Z" id="path-4"></path>
+        <filter x="-4.2%" y="-7.1%" width="108.3%" height="128.6%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <path d="M50.734183,48 L58,55 L50.734183,62 L50.734,57 L34,57 L34,53 L50.734,53 L50.734183,48 Z" id="path-6"></path>
+        <filter x="-4.2%" y="-21.4%" width="108.3%" height="128.6%" filterUnits="objectBoundingBox" id="filter-7">
+            <feOffset dx="0" dy="-2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="78.4210223%" y1="-7.24023438%" x2="15.5786468%" y2="110.793945%" id="linearGradient-8">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.5" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-9" x="-3" y="-3" width="106" height="106" rx="53"></rect>
+        <filter x="-0.5%" y="-0.5%" width="101.9%" height="101.9%" filterUnits="objectBoundingBox" id="filter-10">
+            <feOffset dx="1" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="4" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="1" dy="1" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Badges" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Architect-message-brokering-and-serverless-applications-in-Azure" transform="translate(-47.000000, -257.000000)">
+            <g id="Architect-message-brokering-and-serverless-applications-in-Azure/react-to-state-changes-in-your-azure-services-using-event-grid" transform="translate(50.000000, 260.000000)">
+                <g id="Mask" transform="translate(2.000000, 2.000000)">
+                    <g id="Circle-" transform="translate(-2.000000, 0.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="BG"></g>
+                        <g id="Color/Blue" mask="url(#mask-2)" fill="#55A2FF" fill-rule="evenodd">
+                            <rect id="Rectangle" x="0" y="0" width="100" height="100"></rect>
+                        </g>
+                    </g>
+                    <g id="Browser-Gear" filter="url(#filter-3)" transform="translate(17.000000, 23.000000)">
+                        <path d="M3.6875,48 C1.659375,48 0,46.4 0,44.4444444 L0,3.55555556 C0,1.6 1.659375,0 3.6875,0 L55.3125,0 C57.340625,0 59,1.6 59,3.55555556 L59,44.4444444 C59,46.4 57.340625,48 55.3125,48 L3.6875,48" id="Fill-1485" fill="#30404D"></path>
+                        <path d="M4.82758621,45 C3.82241379,45 3,44.1857143 3,43.1904762 L3,8.80952381 C3,7.81428571 3.82241379,7 4.82758621,7 L54.1724138,7 C55.1775862,7 56,7.81428571 56,8.80952381 L56,43.1904762 C56,44.1857143 55.1775862,45 54.1724138,45 L4.82758621,45" id="Fill-1486" fill="#E1E4E1"></path>
+                        <path d="M3,3.5 C3,2.671 3.672,2 4.5,2 C5.329,2 6,2.671 6,3.5 C6,4.328 5.329,5 4.5,5 C3.672,5 3,4.328 3,3.5" id="Fill-1487" fill="#DF5142"></path>
+                        <path d="M9,3.5 C9,2.671 9.672,2 10.5,2 C11.329,2 12,2.671 12,3.5 C12,4.328 11.329,5 10.5,5 C9.672,5 9,4.328 9,3.5" id="Fill-1488" fill="#EFB252"></path>
+                        <path d="M14,3.5 C14,2.671 14.672,2 15.5,2 C16.329,2 17,2.671 17,3.5 C17,4.328 16.329,5 15.5,5 C14.672,5 14,4.328 14,3.5" id="Fill-1489" fill="#7CB65A"></path>
+                        <path d="M54.6216216,5 L23.3783784,5 C22.6175135,5 22,4.328 22,3.5 C22,2.672 22.6175135,2 23.3783784,2 L54.6216216,2 C55.3824865,2 56,2.672 56,3.5 C56,4.328 55.3824865,5 54.6216216,5" id="Fill-1490" fill="#697D85"></path>
+                    </g>
+                    <circle id="Oval" fill="#4C98FF" cx="70.5" cy="65.5" r="13.5"></circle>
+                    <circle id="Oval" fill="#FFFFFF" cx="70.5" cy="65.5" r="11.5"></circle>
+                    <g id="Azure-black" transform="translate(63.000000, 58.000000)" fill="#2F404E">
+                        <polygon id="Path" points="4 11.9988068 15 12 9.07563791 1 7.27126367 6.3108797 10.7363305 10.7268684"></polygon>
+                        <polygon id="Path" points="9 0 4.15119739 3.97080457 0 10.9887971 3.74436729 10.9887971 3.74436729 11"></polygon>
+                    </g>
+                    <g id="Combined-Shape">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
+                        <use fill="#2F404E" fill-rule="evenodd" xlink:href="#path-4"></use>
+                    </g>
+                    <g id="Combined-Shape" transform="translate(46.000000, 55.000000) rotate(-180.000000) translate(-46.000000, -55.000000) ">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-7)" xlink:href="#path-6"></use>
+                        <use fill="#2F404E" fill-rule="evenodd" xlink:href="#path-6"></use>
+                    </g>
+                </g>
+                <g id="Azure-Border">
+                    <path d="M50,0 C74.5263677,-4.50542066e-15 94.9281966,17.6592499 99.1842495,40.9565123 L94.2027317,73.3905473 C85.8096395,89.2186645 69.1638777,100 50,100 C30.9551233,100 14.3971863,89.3521454 5.95457608,73.6848234 L0.0261464987,48.3675131 C0.887696267,21.508872 22.932015,4.97230817e-15 50,0 Z" id="Combined-Shape" fill="url(#linearGradient-8)" fill-rule="evenodd" opacity="0.400000006" style="mix-blend-mode: overlay;"></path>
+                    <g>
+                        <use fill="black" fill-opacity="1" filter="url(#filter-10)" xlink:href="#path-9"></use>
+                        <rect stroke="#F2F1F0" stroke-width="4" stroke-linejoin="square" x="-1" y="-1" width="102" height="102" rx="51"></rect>
+                    </g>
+                    <rect stroke="#0078D4" stroke-width="4" x="2" y="2" width="96" height="96" rx="48"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

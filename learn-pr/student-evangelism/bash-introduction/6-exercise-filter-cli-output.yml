@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.bash-introduction.6-exercise-filter-cli-output
+title: Exercise - Use Bash and grep to filter CLI output
+metadata:
+  title: Exercise - Use Bash and grep to filter CLI output
+  description: Learn how to use Bash with the Azure CLI and Azure Cloud Shell.
+  ms.date: 01/31/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-bash
+durationInMinutes: 3
+interactive: bash
+azureSandbox: true
+content: |
+  [!include[](includes/6-exercise-filter-cli-output.md)]

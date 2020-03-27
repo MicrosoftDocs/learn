@@ -1,0 +1,31 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.ms-learn-live.2-session-1-prep
+
+# Use the format "Prepare for session x - [Title of the session]" (do not use a colon in the title, it will make VScode show YAML errors).
+title: Prepare for session 1 - "Choose the best hosting option and deploy the app"
+
+metadata:
+  # Use the same as the "title".
+  title: Prepare for session 1 - "Choose the best hosting option and deploy the app"
+  # Same as "title".
+  description: Prepare for session 1 - "Choose the best hosting option and deploy the app"
+  
+  # Update this after changing the file.
+  ms.date: 1/20/2020
+  
+  # Your Github alias
+  author: krumelur
+
+  # Your Microsoft alias
+  ms.author: renrup
+
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: true
+
+# Estimate the time needed to complete the preparation document including the creation of resources on Azure. 
+# It's best to follow the instructions and take the time.
+durationInMinutes: 10
+
+content: |
+  [!include[](includes/2-session-1-prep.md)]

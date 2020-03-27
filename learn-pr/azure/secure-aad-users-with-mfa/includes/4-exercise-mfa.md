@@ -3,7 +3,7 @@
 Let's walk through the basic steps necessary to configure and enable Azure Multi-Factory Authentication using Conditional policies. **Keep in mind that a real deployment requires significant thought and planning**. Make sure you review the documentation links at the end of this module before you enable MFA for your environments.
 
 > [!IMPORTANT]
-> Azure AD Premium is need for this exercise. You can use a [30-day free trial](https://azure.microsoft.com/en-us/trial/get-started-active-directory/) to try this feature out, or just read through the instructions below to understand the flow.
+> Azure AD Premium is need for this exercise. You can use a [30-day free trial](https://azure.microsoft.com/trial/get-started-active-directory/) to try this feature out, or just read through the instructions below to understand the flow.
 
 ## Configure Multi-Factor Authentication options
 
@@ -13,17 +13,17 @@ Let's walk through the basic steps necessary to configure and enable Azure Multi
 
     ![Screenshot showing MFA options in the dashboard](../media/4-mfa-options.png)
 
-1. Select the **Additional cloud-based MFA settings** link under **Configure**. This will open a new browser page where you can see all the MFA options for Azure.
+1. Select the **Additional cloud-based MFA settings** link under **Configure**. A new browser page will open, where you can see all the MFA options for Azure.
 
     ![Screenshot showing MFA configuration](../media/4-set-mfa.png)
 
     This is where you would select the supported authentication methods, in the screen above, all of them are selected.
 
-    You can also enable or disable _app passwords_ here which allow users to create unique account passwords for apps which don't support multi-factor authentication. This feature let's the user authenticate with their Azure AD identity using a different password specific to that app.
+    You can also enable or disable _app passwords_ here, which allow users to create unique account passwords for apps that don't support multi-factor authentication. This feature lets the user authenticate with their Azure AD identity using a different password specific to that app.
 
 ## Setup conditional access rules for MFA
 
-Next let's examine how to setup Conditional Access policy rules that would enforce MFA for guest users accessing specific apps on your network.
+Next let's examine how to set up Conditional Access policy rules that would enforce MFA for guest users accessing specific apps on your network.
 
 1. Switch back to the Azure portal and select **Azure Active Directory > Conditional access**.
 
@@ -64,7 +64,7 @@ Finally, let's look at how to configure MFA for user accounts. This is another w
 1. Navigate back to the **Azure Active Directory** dashboard in the Azure portal.
 
 1. Select **Users**.
-1. At the top of the **Users** blade, select **Multi-Factor Authentication**.
+1. At the top of the **Users** pane, select **Multi-Factor Authentication**.
 
     ![Screenshot showing the MFA option](../media/4-user-mfa.png)
 

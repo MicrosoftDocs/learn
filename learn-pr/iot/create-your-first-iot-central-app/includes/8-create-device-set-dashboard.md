@@ -1,49 +1,114 @@
-A Device Set in IoT Central is a group of devices that match one Device Template (including, different versions of that template). The simplest Device Set would be all devices created using the template. However, there can be exceptions, based on device properties, to limit the Device Set to a concise subset of all the created devices.
+All the required units for this module have been completed. In this unit, we consider what steps would be necessary to add multiple trucks to our system. 
 
-## Create a device set
+Feel free to skip this unit, completing it is optional!
 
-1. In [Azure IoT Central](https://apps.azureiotcentral.com/?azure-portal=true), click the **Device sets** left-hand menu entry.
+## Add multiple devices to the IoT Central app
 
-1. Select your device template, and there should be a default device set, ending in **All devices**. Click this device set.
+1. To add multiple devices, start in the [Azure IoT Central](https://apps.azureiotcentral.com/?azure-portal=true) app, clicking **Devices** in the left-hand menu.
 
-1. Leave, or edit, the device set name, and verify the template (**RefrigeratedTruck 1.0.0**):
+1. Click **RefrigeratedTruck** in the **Devices** menu, to ensure the device we create uses this device template. The device template you select will be shown in bold text.
 
-    ![Screenshot showing how to create a new Device Set, called "All refrigerated trucks"](../media/refrigerated-trucks-deviceset.png)
+1. Click **+ New**. Verify in the dialog that the device name includes the **RefrigeratedTruck** text. If it doesn't, you've not selected the right device template.
 
-1. Click **Save**.
+1. Change the **Device ID** to a friendlier name, say "RefrigeratedTruck2".
 
-1. Click  **Dashboard** on the bar, click **Edit**, then click **Map** in the library of options. Give the map a title, such as "Delivery Map". The **Location** entry should just have the one option (**Location**). And select one of the three states to be displayed, say **Truck state**.
+1. Change the **Device name** to a friendlier name, say "RefrigeratedTruck - 2".
 
-1. Click **Save**.
+1. Leave the **Simulated** setting at **Off**.
 
-1. Click **Grid** in the library options, name it something like "Trucks", and add **Truck ID** and **Optimal temperature** to the columns to be displayed. And again, click **Save**.
+1. Click **Create**.
 
-1. Click **Done** to save your device set dashboard.
+Repeat this process to create as many devices as you need.
 
-1. You may need to zoom out a bit on your Delivery Map; you should get a map with five trucks at base.
+## Provision the new devices
 
-    ![Screenshot showing the Device Set dashboard, with a map showing the initial location of the five trucks at the base, and a table of the truck IDs and optimal temperatures](../media/refrigerated-trucks-deviceset-base.png)
+1. Double-click on **RefrigeratedTruck - 2**, and then click **Connect** (top right of your IoT Central screen).
 
-1. In order to make commanding the trucks easier, you should add links to the commands page for each truck. Navigate through the **Devices** menu to the **Commands** for **RefrigeratedTruck - 1**. Copy the URL, which will be something like `https://refrigerated-trucks.azureiotcentral.com/details/device/<your device>/commands`. Now, navigate back to the device set dashboard, click **Edit**, and add a **Link** from the library. Call the link something like "Truck 1 commands", and paste in the URL.
+1. In the **Device Connection** screen, copy the **Device ID** and the **Primary Key** to your text file, noting that they are for the second truck. There's no need to copy the **Scope ID**, as this value is identical to the value for the first truck (it identifies your app, not an individual device).
 
-1. Click **Done**.
+1. Click **Close**.
 
-1. Test out your link by ordering the truck to a customer.
+1. Back on the **Devices** page, repeat the process for any other devices you created, copying their **Device ID** and **Primary Key** to your text file.
 
-## Completing the dashboard
+1. When you have completed connecting all new trucks, notice that the **Provisioning Status** is still **Registered**. Not until you make the connection will this change.
 
-You have almost completed this module, great job. This section provides a few optional ideas to develop your dashboard further.
+::: zone pivot="vs-node,vscode-node"
 
-1. Rather than have link text, if you enter the library **Image** option, you can attach a link to an image on the dashboard. Consider adding five images to your dashboard, each linking to the Commands page for one of the five trucks. In the following image, Truck number 4 has been directed to a customer, the others remain at base:
+## Create connection strings for the new devices
 
-    ![Screenshot showing the complete Device Set dashboard, now with five truck icons that can be clicked to jump to the command screen for each truck](../media/refrigerated-trucks-deviceset-images.png)
+1. In your text file, create strings that match the following outline, replacing `{scope_id}` with the value for the first truck, and the appropriate device values for each `{device_id#}` and `{primary_key#}` placeholder. Also add the truck number to the name of the text file.
 
-1. Consider creating a _Job_, a command that applies to all devices (or, all devices with exceptions). Such a job could change the optimal temperature for all trucks, or perhaps recall all trucks. Consider adding a link to the job from the dashboard.
+    ```bash
+    ./dps_cstr {scope_id} {device_id2} {primary_key2} > connection2.txt
+    ```
 
-By building up the device set dashboard in this way, you can make controlling multiple devices a matter of a few clicks. You could add links, or images with links, to other device pages (the chart view, or table view, for example).
+1. Navigate to the [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true).
 
-When you have completed your dashboard, order trucks to different customer IDs, and give any other commands or jobs you have created, and get a feel for IoT Central control of remote devices.
+1. In the Cloud Shell session, navigate to the `refrigerated-truck` folder.
+
+1. Copy across one at a time, from your text file, each of the strings (starting with **./dps_cstr...**) and press Enter after each is pasted into Azure Cloud Shell. Each command will take a few seconds to run.
+
+1. Select the **{ }** icon to open up the file structure, open the **refrigerated-truck** folder.
+
+1. Open up each one of the connection.txt files in turn, and copy across the connection string (from "HostName=" to the end of the file) to your text file.
+
+1. Close Azure Cloud Shell.
+
+1. Verify that each connection string ends with an exact copy of the **Primary Key**, just in case there's spurious text at the end of any of the **connection#.txt** files.
+
+## Update the device app to handle multiple devices
+
+1. Open up your device app in the development environment you are using.
+
+1. Locate the `connectionString` statement at the top of the file, and replace it with the following code:
+
+    ```js
+    var connectionString;
+
+    switch (truckNum) {
+        case 1:
+            connectionString = "<your first truck connection string>";
+            break;
+
+        case 2:
+            connectionString = "<your second truck connection string>";
+            break;
+
+        case 3:
+            connectionString = "<your third truck connection string>";
+            break;
+    }
+    ```
+
+1. Carefully copy the connection strings from your text file, to the correct location in this switch statement.
+
+1. Take a moment to verify you have copied all strings exactly, each connection string should be of identical length.
+
+1. For as many devices as you have set up, change the `truckNum` variable, and set all device apps running.
+
+::: zone-end
+::: zone pivot="vs-csharp,vscode-csharp"
+
+## Create new apps for each new device
+
+Each truck is simulated by one running copy of the device app. So, you need multiple versions of this app running simultaneously.
+
+1. Create multiple projects by repeating the steps in the **Create a programming project for a real device** for each new device. Copy and paste the entire app from your current working project, replacing the `DeviceID` and device `PrimaryKey` with new values. No need to change the `ScopeID` or the `AzureMapsKey`, as these values are identical for all devices.
+
+1. Remember to add the necessary libraries to each new project.
+
+1. Change the `truckNum` in each project to a different value.
+
+1. Set each project app running.
+
+::: zone-end
+
+## Verify the telemetry from all the devices
+
+1. Verify that the one dashboard you created works for all trucks.
+
+1. Using the dashboard for each truck, try ordering the trucks to different customers. Using the **Location** map on each dashboard, verify the trucks are heading in the right direction!
 
 ## Next steps
 
-To finish the module, pass the following knowledge check!
+To finish the module, pass the following knowledge check.
