@@ -2,7 +2,7 @@ The Express server runs the API on a server. You can create an Azure Functions p
 
 Once the extension is installed, follow these steps to create the Azure Functions on your computer.
 
-1. Open the command palette by pressing **F1**
+1. In Visual Studio Code, open the command palette by pressing **F1**
 1. Type and select **Azure Functions: Create New Project**
 1. Choose **Browse** to find the folder to create the functions
 1. Create a new folder in your project called _functions_

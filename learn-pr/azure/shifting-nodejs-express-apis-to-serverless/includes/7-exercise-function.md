@@ -1,14 +1,26 @@
-You may recall that we have eight endpoints in the Express app. Follow these steps to create a function for the first of these endpoints. We'll come back and create the other seven endpoints soon.
+You may recall that we have four endpoints in the Node.js Express app. In this exercise, you'll create the function for the first of these endpoints. We'll come back and create the other endpoints in a future exercise.
 
-1. Open the command palette by pressing **F1**
+## Create a New Function
+
+1. In Visual Studio Code, open the command palette by pressing **F1**
 1. Type and select **Azure Functions: Create Function**
-1. Choose **HTTP Trigger** for the type of function
+1. Choose **HTTP Trigger** as the type of function
 1. Enter **vacations-get** as the name of the function
-1. Select **Anonymous** for the authentication level
+1. Select **Anonymous** as the authentication level
 
-Notice that there is now a folder _functions/vacations-get_ that contains a few files. The _function.json_ contains the configuration for the function. Open _function.json_ and notice that the methods allow both `GET` and `POST`. Change this to only allow `GET`.
+### Set the HTTP Method for the Function
 
-By default the route to execute the function will be **vacations-get**. The route in the Express app is simply **vacations**. We want these routes to be the same, so add a `route: "vacations"` entry in the **bindings** section in the _function.json_. Now the function will be executed when an HTTP `GET` on **/vacations** is called.
+Notice that there's now a folder _functions/vacations-get_ that contains a few files. The _function.json_ contains the configuration for the function. Open the file _functions/vacations-get/function.json_ and notice that the methods allow both `GET` and `POST`. Change the methods array to only allow `GET` requests.
+
+### Name the Route's Endpoint
+
+By convention, the route endpoint will have the same name as the folder that contains the function. Because the function is created in the folder _vacations-get_, the route endpoint for the function will be **vacations-get**. The route in the Node.js Express app is **vacations**. We want these route endpoints to be the same.
+
+1. Open the file _functions/vacations-get/function.json_
+1. Go to the `bindings` section's `req` properties
+1. Add a `route: "vacations"` entry
+
+Now the function will be executed when an HTTP `GET` on **/vacations** is requested.
 
 Your _function.json_ should look like the following code.
 
@@ -34,4 +46,6 @@ Your _function.json_ should look like the following code.
 }
 ```
 
-The other important file here in the _functions/vacations-get_ folder is _index.ts_. This file contains the logic that runs when the route is invoked. We already have all this logic from our Express app. We'll go get that next.
+The other important file here in the _functions/vacations-get_ folder is _index.ts_. This file contains the logic that runs when the route endpoint is requested. We already have this logic from our Node.js Express application.
+
+In the next unit, we'll shift our endpoint's logic from the Node.js Express application to our Azure Functions application.
