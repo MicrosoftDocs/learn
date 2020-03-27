@@ -314,7 +314,7 @@ In this exercise, you'll create an Azure Cosmos DB  database, and container usin
 
     1. Locate your Cosmos DB resource.
     
-    1. Select **Overview**, and copy the **Write Locations** values, which you'll need later.
+    1. Select **Overview**, and copy the **Write Locations** value, which you'll need later.
 
     1. Select **Keys**, and copy the **URI** and **PRIMARY KEY** values, which you'll need later.
 
