@@ -2,6 +2,8 @@ You may recall that we have four endpoints in the Node.js Express app. In this e
 
 ## Create a New Function
 
+Create a new function in your Azure Functions application.
+
 1. In Visual Studio Code, open the command palette by pressing **F1**
 1. Type and select **Azure Functions: Create Function**
 1. Choose **HTTP Trigger** as the type of function

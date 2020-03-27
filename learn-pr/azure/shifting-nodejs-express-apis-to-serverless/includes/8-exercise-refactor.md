@@ -1,7 +1,15 @@
-All of the logic that executes to interact with the data store is contained in the _server/services_ folder of the Express app. We can lift that code and shift it over to the Azure Functions app and make a few small adjustments. This may seem like it wouldn't work, but let's consider what is different about the Express app and the Azure Functions app. Here are some main differences in the services.
+All of the Node.js Express logic that gets the data is contained in the _server/services_ folder. We can lift that code and shift it over to the Azure Functions app, making a few small adjustments along the way.
 
-1. The Express app uses the npm package `express` while the Azure Functions app uses the npm package `@azure/functions`
-2. Express has `req` and `res` parameters representing Request and Response. Azure Functions puts these inside of a `context` object variable.
+In this exercise, you'll migrate the logic that gets the data from the Node.js Express application to the Azure Functions application.
+
+## Migrating from Node.js Express to Azure Functions
+
+At first glance you might think migrating the code wouldn't work, but let's consider what is different about the Node.js Express app and the Azure Functions app. Here are some main differences in the services.
+
+|                                      | Node.js Express | Azure Functions                 |
+| ------------------------------------ | --------------- | ------------------------------- |
+| npm package to serve the application | `express`       | `@azure/functions`              |
+| Request and Response objects         | `req` and `res` | `context.req` and `context.res` |
 
 That is all we have to know. So armed with this information, it makes sense that we can copy the code for the services from the Express app to the Azure Functions app with minimal changes. Let's do this now.
 
