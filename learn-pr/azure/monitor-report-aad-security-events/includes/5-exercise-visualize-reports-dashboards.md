@@ -48,7 +48,7 @@ To stream the audit and sign-in logs to your Log Analytics workspace, you'll nee
 
 1. When you're done, select **Save**.  
 
-## Download pebuilt views
+## Download prebuilt views
 
 1. In a new browser tab navigate to [Azure AD Account Provisioning Events.omsview](https://github.com/AzureAD/Deployment-Plans/blob/master/Log%20Analytics%20Views/Azure%20AD%20Account%20Provisioning%20Events.omsview).
 1. Right-click on **Raw**, select **Save link as**.
