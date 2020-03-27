@@ -1,3 +1,6 @@
+trigger:
+- '*'
+
 variables:
   buildConfiguration: 'Release'
 
@@ -8,16 +11,16 @@ stages:
   - job: 'Build'
     displayName: 'Build job'
     pool:
-      vmImage: 'Ubuntu-16.04'
+      vmImage: 'ubuntu-16.04'
       demands:
         - npm
 
     variables:
       wwwrootDir: 'Tailspin.SpaceGame.Web/wwwroot'
-      dotnetSdkVersion: '2.1.505'
+      dotnetSdkVersion: '3.1.100'
 
     steps:
-    - task: DotNetCoreInstaller@0
+    - task: UseDotNet@2
       displayName: 'Use .NET Core SDK $(dotnetSdkVersion)'
       inputs:
         version: '$(dotnetSdkVersion)'
@@ -68,7 +71,7 @@ stages:
   jobs:
   - deployment: Deploy
     pool:
-      vmImage: 'Ubuntu-16.04'
+      vmImage: 'ubuntu-16.04'
     environment: dev
     variables:
     - group: Release
@@ -91,7 +94,7 @@ stages:
   jobs:
   - deployment: Deploy
     pool:
-      vmImage: 'Ubuntu-16.04'
+      vmImage: 'ubuntu-16.04'
     environment: test
     variables:
     - group: 'Release'
@@ -114,7 +117,7 @@ stages:
   jobs:
   - deployment: Deploy
     pool:
-      vmImage: 'Ubuntu-16.04'
+      vmImage: 'ubuntu-16.04'
     environment: staging
     variables:
     - group: 'Release'
@@ -134,9 +137,9 @@ stages:
     dependsOn: Deploy
     displayName: 'Run load tests'
     pool:
-      vmImage: 'Ubuntu-16.04'
+      vmImage: 'ubuntu-16.04'
     variables:
-      jmeterVersion: '5.1.1'
+      jmeterVersion: '5.2'
     steps: 
     - script: |
         wget -c ftp.ps.pl/pub/apache/jmeter/binaries/apache-jmeter-$(jmeterVersion).tgz
@@ -145,6 +148,7 @@ stages:
     - script: apache-jmeter-$(jmeterVersion)/bin/./jmeter -n -t LoadTest.jmx -o Results.xml -Jhostname=$(STAGING_HOSTNAME)
       displayName: 'Run Load tests'
     - script: |
+        sudo apt-get update
         sudo apt-get install xsltproc
         xsltproc JMeter2JUnit.xsl Results.xml > JUnit.xml
       displayName: 'Transform JMeter output to JUnit'

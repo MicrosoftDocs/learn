@@ -1,0 +1,59 @@
+### YamlMime:ModuleUnit
+uid: learn.design-a-hybrid-network-architecture.2-on-premises-integration-on-azure
+metadata:
+  title: On-premises network integration on Azure
+  description: Explore on-premises connectivity in the Azure platform, get an overview of Azure Virtual Networks, and how to use VPN gateways to secure traffic to an on-premises network.
+  ms.date: 01/14/2020
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: On-premises network integration on Azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-on-premises-integration-on-azure.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: 'Where is a point-to-site VPN connection established?'
+    choices:
+    - content: The VPN gateway initializes the connection
+      isCorrect: false
+      explanation: The VPN gateway is a bridge between on-premises or local to the cloud, not where the connection is established.
+    - content: From the host machine
+      isCorrect: false
+      explanation: To connect to a host machine, a point-to-site connection needs to be established.
+    - content: From a client computer
+      isCorrect: true
+      explanation: Point-to-site connections get established from a client machine, such as a desktop computer connecting to the VPN. 
+    - content: In an Azure virtual network
+      isCorrect: false
+      explanation: An Azure virtual network is a virtual communication channel, not where a VPN connection is established.
+  - content: 'How is a site-to-site VPN authenticated?'
+    choices:
+    - content: No authentication is needed
+      isCorrect: false
+      explanation: Authentication between sites is required for secure communications in the network. 
+    - content: By using an administrator account
+      isCorrect: false
+      explanation: Storing the credentials for an administrator account in a VPN is not a secure or supported method for site-to-site VPN connections.
+    - content: Through a service principal in Azure Active Directory
+      isCorrect: false
+      explanation: Service principals are used for authentication, but not in site-to-site VPN connections.
+    - content: By using an ASCII string secret
+      isCorrect: true
+      explanation: An ASCII string secret is used to authenticate between the VPN device and the VPN gateway.
+  - content: 'When you connect to Azure by using a VPN, which connection method would you use?'
+    choices:
+    - content: A VPN gateway
+      isCorrect: true
+      explanation: A VPN gateway must be set up to bridge the connection between on-premises and Azure.
+    - content: An encrypted connection
+      isCorrect: false
+      explanation: All Azure VPN connections get encrypted automatically. There is no requirement to enable encryption.
+    - content: An Azure virtual machine
+      isCorrect: false
+      explanation: Several Azure virtual machines are used to host VPN connections, but this is transparent to users.
+    - content: A VPN tunnel
+      isCorrect: false
+      explanation: A VPN tunnel, such as IPsec, is the method for connecting between on-premises and Azure.

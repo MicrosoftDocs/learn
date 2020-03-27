@@ -32,7 +32,7 @@ We're now ready to train our model.
 
 1. Under **Publish this app**, select **Publish**.
 
-    ![Publish the LUIS model to the Production endpoint](../media/5-exercise-train-luis-model-publish.png)
+    ![Publish the LUIS model to the Production endpoint](../media/5-train-luis-model-publish.png)
 
     Publishing creates an endpoint to call the LUIS model. The endpoint URL will be displayed. Copy the endpoint URL and add it to your list of keys for future use.
 

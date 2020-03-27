@@ -33,13 +33,13 @@ roles:
 - devops-engineer
 - administrator
 - developer
-- solution-architect
 products:
 - azure
 - azure-devops
 modules:
 - learn.azdo.create-release-pipeline
 - learn.azdo.create-multi-stage-pipeline
+- learn.azdo.manage-database-changes-in-azure-pipelines
 - learn.azdo.run-functional-tests-azure-pipelines
 - learn.azdo.run-non-functional-tests-azure-pipelines
 - learn.azdo.manage-release-cadence

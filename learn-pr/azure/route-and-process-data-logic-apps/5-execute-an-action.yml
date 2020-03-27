@@ -6,11 +6,10 @@ metadata:
   title: Execute an action
   description: Execute an action
   ms.date: 5/10/2019
-  author: AndrewJByrne
-  ms.author: anbyrne
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 
 durationInMinutes: 5
 content: |

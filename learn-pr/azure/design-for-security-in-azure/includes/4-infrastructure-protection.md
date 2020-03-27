@@ -75,7 +75,7 @@ For example, Lamna Healthcare can assign its deployment scripts to run authentic
 
 ### Managed identities for Azure resources
 
-The creation of service principals can be a tedious process, and there are a lot of touch points that can make maintaining them difficult. Manage identities for Azure resources are much easier and will do most of the work for you.
+The creation of service principals can be a tedious process, and there are a lot of touch points that can make maintaining them difficult. Managed identities for Azure resources are much easier and will do most of the work for you.
 
 A managed identity can be instantly created for any Azure service that supports it (the list is constantly growing). When you create a managed identity for a service, you are creating an account on the Azure AD tenant. Azure infrastructure will automatically take care of authenticating the service and managing the account. You can then use that account like any other AD account including securely letting the authenticated service access other Azure resources.
 

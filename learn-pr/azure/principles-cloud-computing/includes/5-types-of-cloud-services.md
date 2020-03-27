@@ -4,7 +4,8 @@ When talking about cloud computing, there are three major categories. It's impor
 
 #### IaaS versus SaaS versus PaaS
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2yEbs]
+[//]: # (Video temporarily removed until confusing graphics can be updated.)
+[//]: # (> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2yEbs])
 
 :::row:::
   :::column:::
@@ -14,7 +15,7 @@ When talking about cloud computing, there are three major categories. It's impor
 
 ### Infrastructure as a service (IaaS)
 
-Infrastructure as a Service is the most flexible category of cloud services. It aims to give you complete control over the hardware that runs your application (IT infrastructure servers and virtual machines (VMs), storage, networks, and operating systems). Instead of buying hardware, with IaaS, you rent it. It's an instant computing infrastructure, provisioned and managed over the internet.
+Infrastructure as a Service is the most flexible category of cloud services. It aims to give you complete control over the hardware that runs your application (IT infrastructure servers and virtual machines (VMs), storage, and operating systems). Instead of buying hardware, with IaaS, you rent it. It's an instant computing infrastructure, provisioned and managed over the internet.
   :::column-end:::
 :::row-end:::
 

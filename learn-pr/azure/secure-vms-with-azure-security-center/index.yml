@@ -17,7 +17,7 @@ abstract: |
 prerequisites: |
   - Basic familiarity with Azure services, particularly Azure Security Center.
   - Familiarity with Azure virtual machines and virtual networking.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/secure-vms-with-azure-security-center.svg
 levels:
 - intermediate
 roles:

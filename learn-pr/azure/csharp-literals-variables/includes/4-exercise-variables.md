@@ -1,4 +1,4 @@
-Since variables are temporary storage containers for data, they're meant to be *written to* and *read from*.  You'll get a chance do both in the following exercise.
+Since variables are temporary storage containers for data, they're meant to be *written to* and *read from*.  You'll get a chance to do both in the following exercise.
 
 ## Exercise - Working with variables
 
@@ -24,7 +24,7 @@ Assigning a value is also referred to as "setting the variable", or simply, a "s
 
 ### Step 3:  Attempt to improperly assign a value to a variable.
 
-It's important to notice that assignment happens from left to right.  If you reverse the order, you'll confuse the C# compiler.
+It's important to notice that assignment happens from right to left.  In other words, the C# compiler must first understand the value on the right side of the assignment operator, then it can perform the assignment to the variable on the left side of the assignment operator.  If you reverse the order, you'll confuse the C# compiler.
 
 Modify the code you wrote in Step 2 to match the following code:
 
@@ -108,7 +108,7 @@ Grant
 
 ### Step 7: Initialize the variable.
 
-You must set variable to a value before you can get the value from the variable.  Otherwise, you'll see an error.
+You must set a variable to a value before you can get the value from the variable.  Otherwise, you'll see an error.
 
 Modify the code you wrote in Step 6 to match the following code:
 
@@ -146,6 +146,6 @@ Here's the main takeaways you learned about working with variables so far:
 
 - You must assign (set) a value to a variable before you can retrieve (get) a value from a variable
 - You can initialize a variable by assigning a value to the variable at the point of declaration
-- Assignment happens from left to right
+- Assignment happens from right to left
 - You use a single equals character as the assignment operator
 - To retrieve the value from the variable, you merely use the variable's name

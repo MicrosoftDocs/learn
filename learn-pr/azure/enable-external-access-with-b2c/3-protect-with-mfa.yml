@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.enable-external-access-with-b2c.3-protect-with-mfa
+metadata:
+  title: Use multi-factor authentication to protect your application
+  description: Use multi-factor authentication to protect your application
+  ms.date: 03/20/2020
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Use multi-factor authentication to protect your application
+durationInMinutes: 2
+content: |
+  [!include[](includes/3-protect-with-mfa.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: Some patients have difficulties hearing. You have been asked to ensure that multi-factor authentication takes these difficulties into account. How can you do meet this requirement with minimal effort?
+    choices:
+    - content: Configure multi-factor authentication in your application code. Configure the app to let users select they want to receive text-messages instead of phone calls.
+      isCorrect: false
+      explanation: You don't need to add code to your application to configure multi-factor authentication. Instead, use user flows to configure multi-factor authentication for your app.
+    - content: Configure multi-factor authentication in your user flow. The users can select that they want to receive a text-message rather than a phone call.
+      isCorrect: true
+      explanation: Your users with hearing-difficulties can select that they want to receive a text-message.
+    - content: Configure multi-factor authentication in your page layout template. The users can select that they want to receive a text-message rather than a phone call.
+      isCorrect: false
+      explanation: Use page layout templates to customize your app's UI. Use user flows to configure multi-factor authentication for your app.
+  - content: You need to disable multi-factor authentication for the healthcare application temporarily, how can you do this?
+    choices:
+    - content: You'll delete the user flow and create a new one to disable multi-factor authentication.
+      isCorrect: false
+      explanation: You can go back to your user flow and disable multi-factor authentication.
+    - content: You pause the user flow and disable multi-factor authentication, then resume the user flow.
+      isCorrect: false
+      explanation: You don't pause a user flow. You can go back to your user flow and disable multi-factor authentication. 
+    - content: You go back to your user flow and disable multi-factor authentication using the toggle.
+      isCorrect: true
+      explanation: Use the toggle in your user flow to disable MFA, and enable it again when you are ready.

@@ -2,7 +2,7 @@
 uid: learn.incident-response-with-alerting-on-azure.3-metric-alerts
 metadata:
   title: Use metric alerts to alert on performance issues in your Azure environment
-  description: Investigate the different kinds of metric alerts supported by Azure Monitor.
+  description: Investigate the different kinds of metric alerts that Azure Monitor supports.
   ms.date: 10/10/2019
   author: jboeshart
   ms.author: jaboes

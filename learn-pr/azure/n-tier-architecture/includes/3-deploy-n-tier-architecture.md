@@ -8,8 +8,6 @@ Here's a high-level visualization of what is deployed with this template.
 
 ![Visualization of the N-tier architecture to be deployed in this unit](../media/3-n-tier-simple.svg)
 
-[!include[](../../../includes/azure-lab-environment-not-available.md)]
-
 ## Deploy an N-tier architecture
 
 1. Run the following command to start the deployment. The `az group deployment create` command starts a deployment into our sandbox resource group using the template file and parameters we specify. We also specify a random 32 character string generated from the `head /dev/urandom | tr -dc A-Za-z0-9 | head -c 32` command as the password parameter.

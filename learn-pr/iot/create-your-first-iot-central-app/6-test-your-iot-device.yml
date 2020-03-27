@@ -1,66 +1,56 @@
 ### YamlMime:ModuleUnit
 uid: learn.iot.create-your-first-iot-central-app.test-your-iot-device
 metadata:
-  title: Test your IoT Central device
-  description: Test a device by giving it commands and monitoring the results on the dashboard.
+  title: Exercise - Test your IoT Central device
+  description: Test a device by monitoring the results on the dashboard.
   ms.date: 10/17/2019
   author: PeterTurcan
   ms.author: Olivier.Bloch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  zone_pivot_groups: vs-vscode-language
 title: Test your IoT Central device
 # azureSandbox: true
-durationInMinutes: 15
+durationInMinutes: 10
 content: |
   [!include[](includes/6-test-your-iot-device.md)]
 quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'A connection string is an encoded version of what?'
+  - content: 'What keys are required to connect an app to IoT Central?'
     choices: 
     - content: 'Device ID and Primary Key'
       isCorrect: false
-      explanation: Both these are needed, but more information is needed to complete the string.
+      explanation: Both of these values are needed, but more information is required to complete a connection.
     - content: 'Scope ID, Device ID, and Primary Key'
       isCorrect: true
       explanation: These three strings identify the app, the device, and permission to communicate with IoT Central.
     - content:  'Scope ID, Device ID, Primary Key, and Secondary Key'
       isCorrect: false
-      explanation: Secondary Key is not needed.
+      explanation: Secondary Key isn't needed.
       
-  - content: 'In our scenario, what does the following Node.js statement do:  setInterval(sendTruckTelemetry, 5000)?'
+  - content: 'In our scenario, what states can the cooling fan be in?'
     choices: 
-    - content: 'Specifies that the sendTruckTelemetry function should be called every five seconds.'
+    - content: 'On, Off, and Failed'
       isCorrect: true
-      explanation: This is an important call set in the device callback, determining how often telemetry is sent.
-    - content: 'Specifies that the sendTruckTelemetry function should be called every 0.5 of a second.'
+      explanation: A failing cooling fan triggers a series of events, melting contents, truck recalls, that is helpful to simulate.
+    - content: 'On, Off, and Melting.'
       isCorrect: false
-      explanation: 0.5 is not the correct interval.
-    - content: 'Specifies that sendTruckTelemetry is a data structure, that should be communicated at the specified interval.'
+      explanation: A melting cooling fan would be bad, but isn't something that is simulated.
+    - content: 'On and Off.'
       isCorrect: false
-      explanation: The sendTruckTelemetry name does not identify a data structure.
+      explanation: Unfortunately, mechanical systems aren't this perfect.
 
   - content: 'In our scenario, the simulated time interval is 60 seconds, the actual time interval is 5 seconds. What does this mean?'
     choices:    
     - content: 'The simulation runs in real time, with 12 sets of telemetry data communicated to IoT Central every minute.'
       isCorrect: false
-      explanation: Telemetry data is sent 12 times per minute, but the simulation does not run in real time.
+      explanation: Telemetry data is sent 12 times per minute, but the simulation doesn't run in real time.
     - content: 'The simulation runs at 60 times real time, with the telemetry reported every five seconds.'
       isCorrect: false
-      explanation: The simulation does not run at 60 times real time.
+      explanation: The simulation doesn't run at 60 times real time.
     - content: 'The simulation is run at 60/5 = 12 times real time.'
       isCorrect: true
       explanation: Many simulations are set to run faster than real time.
       
-  - content: "In our scenario, interpret the following line of code:  client.onDeviceMethod('cmdGoTo', CmdGoToCustomer)?"
-    choices:
-    - content: 'The IoT Central app has a command with Field Name "cmdGoTo", and the Node.js app has a function "CmdGoToCustomer" to be called when the operator invokes cmdGoTo.'
-      isCorrect: true
-      explanation: The order of parameters in most references to IoT Central is the Field Name followed by the Node.js app name. This applies to Telemetry, Events, Properties, Settings, as well as Commands.
-    - content: 'The IoT Central app has a command with Field Name "CmdGoToCustomer", and the Node.js app has a function "cmdGoTo" to be called when the operator invokes CmdGoToCustomer.'
-      isCorrect: false
-      explanation: The names are the wrong way round.
-    - content: 'Two commands, with functions named CmdGoToCustomer and cmdGoTo, are defined in the Node.js app.'
-      isCorrect: false
-      explanation: These two names refer to one command.

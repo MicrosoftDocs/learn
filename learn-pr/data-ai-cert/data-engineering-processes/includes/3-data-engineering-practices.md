@@ -13,7 +13,7 @@ Here are some of the tasks of an Azure data engineer:
 
 ## Moving data around
 
-As a data engineer, you can transfer and move data in several ways. One way is to start an extract, transform, and load (ETL) process. 
+As a data engineer, you can transfer and move data in several ways. One way is to start an *Extract, Transform, and Load (ETL)* process. 
 
 Extraction sources can include databases, files, and streams. Each source has unique data formats that can be structured, semistructured, or unstructured.  In Azure, data sources include Azure Cosmos DB, Azure Data Lake, files, and Azure Blob storage. 
 
@@ -41,7 +41,7 @@ During the extraction process, data engineers define the data and its source:
 
 ## ETL tools
 
-As a data engineer, you'll use several tools to for ETL. The most common tool is Azure Data Factory, which provides robust resources and nearly 100 enterprise connectors. Data Factory also allows you to transform data by using a wide variety of languages.
+As a data engineer, you'll use several tools for ETL. The most common tool is Azure Data Factory, which provides robust resources and nearly 100 enterprise connectors. Data Factory also allows you to transform data by using a wide variety of languages.
 
 You might find that you also need a repository to maintain information about your organization's data sources and dictionaries. Azure Data Catalog can store this information centrally.
 

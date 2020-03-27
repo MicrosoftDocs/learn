@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.introduction-to-git.3-basic-git-commands
+title: Basic Git commands
+metadata:
+  title: Basic Git commands
+  description: Learn the most basic Git commands
+  ms.date: 06/24/2019
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-git
+  ROBOTS: NOINDEX
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-basic-git-commands.md)]

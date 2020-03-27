@@ -31,7 +31,7 @@ Suppose you have to troubleshoot a virtual network created by your colleagues. U
 
 You use the Azure portal to view the topology of an Azure network. In the Azure portal:
 
-1. Go to **All Services** > **Networking** > **Network Watcher**.
+1. On the Azure portal menu, select **All services**. Then go to **Networking** > **Network Watcher**.
 
 1. Select **Topology**.
 
