@@ -1,6 +1,6 @@
-In this module, you refactored your Node.js Express application to Azure Functions. Now you can think about servers less (get it, because we are using serverless?).
+In this module, you refactored your Node.js Express application to Azure Functions. Now you can think about servers less (get it, because we're using serverless?).
 
-Node and Express have been incredibly powerful and oft used for serving API endpoints. Now with serverless you could shift your APIs and not worry about server setup or maintenance, possibly reduce cost of an always on server, and replace the Express server with Azure Functions service. And for your efforts, you get an API that scales well and lets you focus on the code, not the servers.
+Node.js and Express have been incredibly powerful and oft used for serving API endpoints. Now with serverless you could shift your APIs and not worry about server setup or maintenance. You can also possibly reduce your cost of an always-on server by replacing the Node.js Express server with Azure Functions. And for your efforts, you get an API that scales well. Ultimately, with Azure Functions you can focus on the code, not the servers.
 
 > If you want to deploy the Azure Functions app to the cloud, you can [deploy it by following this tutorial](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions). All you need is an [Azure account](https://azure.microsoft.com/free/) and then use the Azure Functions extension for Visual Studio Code to deploy it.
 
@@ -10,13 +10,13 @@ To verify your implementation, you can reference the _end_ folder or you can [vi
 
 ## Additional Resources
 
-Here are several resources where you can learn more about the topics covered in this module.
+Here are several resources where you can learn more about the Azure Functions, Visual Studio Code, and other concepts covered in this module.
 
-### VS Code
+### Visual Studio Code
 
-- Get [VS Code](https://code.visualstudio.com)
-- Get the [VS Code Extension for Azure Tools](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-node-azure-pack)
-- Get the [VS Code Extension for Azure Functions](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions)
+- Get [Visual Studio Code](https://code.visualstudio.com)
+- Get the [Visual Studio Code Extension for Azure Tools](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-node-azure-pack)
+- Get the [Visual Studio Code Extension for Azure Functions](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions)
 
 ### Azure Functions
 
@@ -27,7 +27,7 @@ Here are several resources where you can learn more about the topics covered in 
 
 ### Debugging Resources
 
-- [Debugging Angular in VS Code](https://code.visualstudio.com/docs/nodejs/angular-tutorial)
-- [Debugging React in VS Code](https://code.visualstudio.com/docs/nodejs/reactjs-tutorial)
-- [Debugging Vue in VS Code](https://code.visualstudio.com/docs/nodejs/vuejs-tutorial)
-- [Tasks in VS Code](https://code.visualstudio.com/Docs/editor/tasks)
+- [Debugging Angular.js in Visual Studio Code](https://code.visualstudio.com/docs/nodejs/angular-tutorial)
+- [Debugging React.js in Visual Studio Code](https://code.visualstudio.com/docs/nodejs/reactjs-tutorial)
+- [Debugging Vue.js in Visual Studio Code](https://code.visualstudio.com/docs/nodejs/vuejs-tutorial)
+- [Tasks in Visual Studio Code](https://code.visualstudio.com/Docs/editor/tasks)

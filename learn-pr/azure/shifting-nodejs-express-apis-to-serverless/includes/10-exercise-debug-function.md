@@ -1,16 +1,80 @@
-Now it's time to run the app and see if it all works! We'll do the VS Code debugger.
+Now it's time for you to run and debug both applications together.
 
-> Just to keep things separate, we'll make sure the Express app uses port **7070** and the Azure Functions app uses port **7071**. If we were truly removing the Express app, we could keep the same port. But for educational purposes, let's keep them both around
+Let's start by opening the code in Visual Studio Code.
 
-1. Open _proxy.conf.json_ and change the port to **7071** (our function app)
+## Set the Breakpoints
+
+We see a list of vacations displayed in the application. Let's explore the code that fetches the vacations and renders them in the browser. We'll step through the code with the debugger by setting breakpoints in the Azure Functions and Angular code.
+
+### Set a Breakpoint in the Azure Functions Code
+
+The Angular application makes a call to the `vacations` endpoint in the Azure Functions API. The endpoint's route is defined in the file _functions/vacations-get/index.ts_. We'll set a breakpoint in this file so we can step through the code that fetches the vacations.
+
+1. Open _functions/vacations-get/index.ts_ and locate the code shown below.
+
+   ```typescript
+   async function getVacations({ req, res }: Context) {
+     try {
+       const vacations = data.getVacations();
+       res.status(200).json(vacations);
+     } catch (error) {
+       res.status(500).send(error);
+     }
+   }
+   ```
+
+1. Set a breakpoint by clicking in the editor's gutter to the left of the line of code `try {`.
+
+> The files _.vscode/launch.json_ and _.vscode/tasks.json_ are integral to the debugging experience for this project. I encourage you to explore those files and copy/refactor their contents for your own purposes.
+
+## Run and Debug the Application
+
+You've set a breakpoint in both the Angular and the Azure Functions applications. Now it's time to run and debug them together.
+
+### Proxy the Requests from Angular to Azure Functions
+
+The Azure Functions API runs on port **7071**. The Angular application runs on a different port, **4200**. The Angular application can't make requests across the domains to the Azure Functions application. We'll proxy the calls from the Angular application to the Azure Functions application.
+
+We'll allow the Angular application to proxy requests to the Azure Functions application using Angular's _proxy.conf.json_ file.
+
+1. Open _proxy.conf.json_
+1. Change the port to **7071**
+
+   ```json
+   {
+     "/api": {
+       "target": "http://localhost:7071",
+       "secure": false
+     }
+   }
+   ```
+
+You just told the Angular application that it can talk to the Azure Functions application.
+
+> The Node.js Express application uses port **7070** and the Azure Functions application uses port **7071**. If we were truly removing the Node.js Express application, we could keep the same port. But for educational purposes, let's keep them both.
+
+### Debug Both Applications
+
+When the application launches, Angular requests the vacations data from the Node.js Express application. These two applications work together to get the data and render it in the browser.
+
+We'll run and debug the applications together. We'll hit pause on the breakpoints, giving us the opportunity to explore how these applications work together.
+
 1. Open the VS Code Command Palette **F1**
-1. Type **View: Show Debug** and press **ENTER**
-1. Select **Debug Functions and Angular**
-1. Press **F5**
-1. Open the browser to <http://localhost:7071>
+1. Type **View: Show Run and Debug** and press **ENTER**
+1. Select **Debug Functions and Angular** from the dropdown list
+1. Press **F5** to start the debugger
 
-You may now set breakpoints in the Functions and Angular code.
+When the application launches, it will get the list of vacations. The Angular `VacationComponent` will start the HTTP request to get the vacations. When the browser opens to <http://localhost:7071>, the code execution will pause on your first breakpoint in the _vacations.component.ts_ file in the `getVacations()` function.
 
-![Debugging Azure Functions](https://thepracticaldev.s3.amazonaws.com/i/2l27psjcsqyh8f2u32ls.jpg)
+You can unpause execution and continue by pressing the **F5**.
 
-> In case you missed it - the files _.vscode/launch.json_ and _.vscode/tasks.json_ are integral to the debugging experience for this project. I encourage you to explore those files and copy/refactor their contents for your own purposes.
+Now the code will pause on your second breakpoint in the _functions/vacations-get/index.ts_ file. The Node.js Express route `vacations` was hit by the Angular application.
+
+### Stop the Debuggers
+
+There are two debugging processes running: one for Angular and one for Azure Functions. Let's stop both debuggers.
+
+1. Press **SHIFT** and **F5** to stop the active debugger
+1. Press **SHIFT** and **F5** to stop the remaining debugger
+
+The debugger is no longer running.

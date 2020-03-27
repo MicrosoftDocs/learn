@@ -22,7 +22,7 @@ The vacations are rendered using the `VacationComponent` Angular code found in t
 
 ### Set a Breakpoint in the Express Code
 
-The Angular app makes a call to the `vacations` endpoint in the Node.js Express API. The endpoint's route is defined in the file _server/routes/vacation.routes.ts_. We'll set a breakpoint in this file so we can step through the code that fetches the vacations.
+The Angular application makes a call to the `vacations` endpoint in the Node.js Express API. The endpoint's route is defined in the file _server/routes/vacation.routes.ts_. We'll set a breakpoint in this file so we can step through the code that fetches the vacations.
 
 1. Open _server/routes/vacation.routes.ts_ and locate the code shown below.
 
@@ -38,13 +38,16 @@ The Angular app makes a call to the `vacations` endpoint in the Node.js Express 
 
 ## Run and Debug the Application
 
+You've set a breakpoint in both the Angular and the Node.js Express applications. Now it's time to run and debug them together.
+
 ### Proxy the Requests from Angular to Node.js Express
 
 The Node.js Express API runs on port **7070**. The Angular application runs on a different port, **4200**. The Angular application can't make requests across the domains to the Node.js Express application. We'll proxy the calls from the Angular application to the Node.js Express application.
 
 We'll allow the Angular application to proxy requests to the Node.js Express application using Angular's _proxy.conf.json_ file.
 
-1. Open _proxy.conf.json_ and change that the port to **7070**
+1. Open _proxy.conf.json_
+1. Change the port to **7070**
 
    ```json
    {

@@ -1,4 +1,8 @@
-The Azure Functions app now has folders that map to their appropriate endpoints as shown below.
+Congratulations! You completed your Azure Functions application by shifting your Node.js Express code and making minimal changes. Next, let's review the structure of your application.
+
+## Azure Functions and Folders
+
+The Azure Functions application has folders that map to each of their appropriate endpoints, as shown below.
 
 | methods | route endpoints | folders          |
 | ------- | --------------- | ---------------- |
@@ -7,7 +11,9 @@ The Azure Functions app now has folders that map to their appropriate endpoints 
 | PUT     | `vacations:id`  | vacations-put    |
 | DELETE  | `vacations/:id` | vacations-delete |
 
-The structure of the Azure Function app contained in the _functions_ folder should look like the following.
+## File Structure
+
+The structure of the Azure Functions application contained in the _functions_ folder should look like the following file structure.
 
 ```files
 functions
@@ -25,8 +31,8 @@ functions
  | | - index.ts
  | - services              👈 The same folder that the Express app has
  | | - data.ts             👈 The vacation data (could be database API calls)
- | | - vacation.service.ts 👈 The logic to get the vacation data
  | | - index.ts
+ | | - vacation.service.ts 👈 The logic to get the vacation data
  | - .funcignore
  | - .gitignore
  | - host.json
@@ -35,3 +41,5 @@ functions
  | - proxies.json
  | - tsconfig.json
 ```
+
+Next, you'll run and debug your Angular application and Azure Functions application together.
