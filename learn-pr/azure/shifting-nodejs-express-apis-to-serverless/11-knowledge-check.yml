@@ -47,13 +47,13 @@ quiz:
       choices:
         - content: "Use the `Context` parameter that is passed to each function."
           isCorrect: true
-          explanation: "Correct.  Each function is passed a `Context` object which contains, among other properties, `req` and a `res` properties. These are the Request and Response of the HTTP call."
+          explanation: "Correct.  Each function is passed a `Context` object, which contains, among other properties, `req` and a `res` properties. `Context.req` and `Context.res` are the Request and Response of the HTTP call."
         - content: "Use the `HttpRequest` parameter that is passed to each function."
           isCorrect: false
-          explanation: "Incorrect. The `HttpRequest` parameter represents the HTTP Request, but it does not offer access to the Response."
-        - content: "Use the `Request` and `Reponse` parameters that are passed to each function."
+          explanation: "Incorrect. The `HttpRequest` parameter represents the HTTP Request, but it doesn't offer access to the Response."
+        - content: "Use the `Request` and `Response` parameters that are passed to each function."
           isCorrect: false
-          explanation: "Incorrect. The Request and Response are not directly passed to a function."
+          explanation: "Incorrect. The Request and Response aren't directly passed to a function."
         - content: "Use the async/await syntax to access the Request and Response."
           isCorrect: false
-          explanation: "Incorrect. The async/await syntax helps execute asynchronous code, not the Request and Response."
+          explanation: "Incorrect. The async/await syntax helps execute asynchronous code not the Request and Response."
