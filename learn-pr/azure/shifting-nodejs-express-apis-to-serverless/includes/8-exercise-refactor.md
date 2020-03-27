@@ -1,30 +1,54 @@
-All of the Node.js Express logic that gets the data is contained in the _server/services_ folder. We can lift that code and shift it over to the Azure Functions app, making a few small adjustments along the way.
+All of the Node.js Express logic that gets the data is contained in the _server/services_ folder. We can lift that code and shift it over to the Azure Functions application, making a few small adjustments along the way.
 
 In this exercise, you'll migrate the logic that gets the data from the Node.js Express application to the Azure Functions application.
 
 ## Migrating from Node.js Express to Azure Functions
 
-At first glance you might think migrating the code wouldn't work, but let's consider what is different about the Node.js Express app and the Azure Functions app. Here are some main differences in the services.
+At first glance you might think migrating the code wouldn't work, but let's consider what is different about the Node.js Express application and the Azure Functions application. Here are some main differences in the services.
 
 |                                      | Node.js Express | Azure Functions                 |
 | ------------------------------------ | --------------- | ------------------------------- |
 | npm package to serve the application | `express`       | `@azure/functions`              |
 | Request and Response objects         | `req` and `res` | `context.req` and `context.res` |
 
-That is all we have to know. So armed with this information, it makes sense that we can copy the code for the services from the Express app to the Azure Functions app with minimal changes. Let's do this now.
+Once we're armed with this information, we can copy the code for the services from the Node.js Express application to the Azure Functions application with minimal changes. Let's copy the code now.
 
-#### Shift the Code from Express to Functions
+### Shift the Code from Express to Functions
 
-Why write everything from scratch and throw away your hard work if you do not have to, right? Well, we can take the services code from our Express app and copy it to our Azure Functions app.
+Why write everything from scratch and throw away your hard work if you don't have to, right? We can take the services code from our Express application and copy it to our Azure Functions application.
 
+1. Open Visual Studio Code
 1. Copy the _server/services_ folder
 1. Paste into the _functions_ folder
 
-Now we have some minor refactoring to make the code work with Azure Functions instead of Express. The one thing that changes here is that the routing API and how request and response are passed. Let's refactor for this API difference.
+### Refactor the Request and Response Code
+
+Now we have some minor refactoring to make the code work with Azure Functions instead of Node.js Express. Let's refactor the code to handle the difference in how the request and response are passed and for importing the appropriate npm package.
 
 1. Open the _functions/services/vacation.service.ts_ file
-1. Replace `import { Request, Response } from 'express';` with `import { Context } from '@azure/functions';`
-1. Replace every instance of `(req: Request, res: Response)` with `({ req, res }: Context)`.
+1. Remove the following code
+
+   ```typescript
+   import { Request, Response } from 'express';
+   ```
+
+1. Add the following code in it's place
+
+   ```typescript
+   import { Context } from '@azure/functions';
+   ```
+
+1. Find every instance of the following code
+
+   ```typescript
+   (req: Request, res: Response)
+   ```
+
+1. Replace every instance with the following code
+
+   ```typescript
+   ({ req, res }: Context)
+   ```
 
 Your code will look like the following when you are done refactoring. Notice the places that changed are commented.
 
@@ -63,11 +87,11 @@ export default { getVacations, postVacation, putVacation, deleteVacation };
 
 There are four functions where request and response are parameters. One each for `getVacations`, `postVacation`, `putVacation`, and `deleteVacation`.
 
-The parameters to every function in the Express app contain `req` and `res`. The Azure Functions app can still get to the request and response objects, but they are contained within a `context` object. We use destructuring to access them.
+The parameters to every function in the Node.js Express application contain `req` and `res`. The Azure Functions application can access the request and response objects, but they are contained within a `context` object. We use destructuring to access them.
 
-> The `Context` object also contains other APIs, such as `log` (ex: `context.log('hello')`). This could be used in place of the common `console.log` you use in Node apps.
+> The `Context` object also contains other APIs, such as `log` (ex: `context.log('hello')`). This could be used in place of the common `console.log` you use in Node.js applications.
 
-#### Refactor the Route
+### Refactor the Route
 
 Now point your route to the service in your _functions/vacations-get/index.ts_ file. Open that file and replace it with the following code.
 
@@ -86,7 +110,7 @@ The code that you add calls the asynchronous function `vacationService.getVacati
 
 ### Create the Remaining Functions
 
-Remember, there are eight total endpoints in the Express app and we just created the first one. Now, follow these steps to create an Azure Function for the rest of the endpoints.
+Remember, there are eight total endpoints in the Express application and we just created the first one. Now, follow these steps to create an Azure Function for the rest of the endpoints.
 
 1. Open the command palette by pressing **F1**
 1. Type and select **Azure Functions: Create Function**

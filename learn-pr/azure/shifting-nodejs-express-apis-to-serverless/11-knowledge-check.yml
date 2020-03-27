@@ -13,18 +13,19 @@ durationInMinutes: 5
 content: |
   [!include[](includes/11-knowledge-check.md)]
 quiz:
+  title: Check your knowledge
   questions:
     - content: "What setting in the _function.json_ file would you add or change to set the function's endpoint?"
       choices:
-        - content: 'The `route` property in the `bindings` array `req` object'
+        - content: "The `route` property in the `bindings` array `req` object"
           isCorrect: true
-          explanation: 'Correct.  By convention, the `req` object will default it's route to the same name as the folder that contains the function. When you want to override the name of the route, you can add a `route` property to the `req` object in the `bindings` array of the _function.json_.'
-        - content: 'The `methods` property in the `bindings` array `req` object'
+          explanation: "Correct.  By convention, the `req` object will default the route to the same name as the folder that contains the function. When you want to override the name of the route, you can add a `route` property to the `req` object in the `bindings` array of the _function.json_."
+        - content: "The `methods` property in the `bindings` array `req` object"
           isCorrect: false
-          explanation: 'Incorrect. The `methods` property defines which HTTP methods will be directed to the route.'
-        - content: 'The `authLevel` property in the `bindings` array `req` object'
+          explanation: "Incorrect. The `methods` property defines which HTTP methods will be directed to the route."
+        - content: "The `authLevel` property in the `bindings` array `req` object"
           isCorrect: false
-          explanation: 'Incorrect. The `authLevel` property defines the authorization level required to access the function.'
-        - content: 'The `redirect` property in the `bindings` array `req` object'
+          explanation: "Incorrect. The `authLevel` property defines the authorization level required to access the function."
+        - content: "The `redirect` property in the `bindings` array `req` object"
           isCorrect: false
-          explanation: 'Incorrect. There is no redirect property in the `bindings` array `req` object.'
+          explanation: "Incorrect. There is no redirect property in the `bindings` array `req` object."
