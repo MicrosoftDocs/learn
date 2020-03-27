@@ -24,8 +24,10 @@ Why would you make this shift? Overall there's less to think about with serverle
 
 The project represents a Node Express application in TypeScript that is shifted to Azure Functions.
 
+> If your Express app is using JavaScript instead of TypeScript, feel free to shift it to Azure Functions using JavaScript.
+
 What's in the [sample project on GitHub](https://github.com/MicrosoftDocs/mslearn-module-shifting-nodejs-express-apis-to-serverless) that you'll learn about in this module? That's a great question!
 
-But what if you aren't using TypeScript? That's fine. If your Express app is using JavaScript, feel free to shift it to Azure Functions using JavaScript.
-
 The client application is Angular. However you could easily have written it with Vue.js, React.js, or any of your favorite frameworks. You'll learn how to create the Azure Functions application in this module. You'll learn to run and debug them and your Angular application locally on your computer. And you'll have refactored your application and its API with all the benefits of serverless technology!
+
+Next, we'll get the sample application, install it's dependencies, and build it locally.
