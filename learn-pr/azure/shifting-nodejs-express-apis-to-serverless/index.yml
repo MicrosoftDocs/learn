@@ -41,12 +41,11 @@ units:
   - learn.azure.shift-express-api-azure-functions.4-exercise-debug-express
   - learn.azure.shift-express-api-azure-functions.5-function-app
   - learn.azure.shift-express-api-azure-functions.6-exercise-function-app
-  - learn.azure.shift-express-api-azure-functions.7-function
-  - learn.azure.shift-express-api-azure-functions.8-exercise-function
-  - learn.azure.shift-express-api-azure-functions.9-refactor
-  - learn.azure.shift-express-api-azure-functions.10-exercise-refactor
-  - learn.azure.shift-express-api-azure-functions.11-solution
-  - learn.azure.shift-express-api-azure-functions.12-exercise-debug-function
-  - learn.azure.shift-express-api-azure-functions.13-summary
+  - learn.azure.shift-express-api-azure-functions.7-exercise-function
+  - learn.azure.shift-express-api-azure-functions.8-exercise-refactor
+  - learn.azure.shift-express-api-azure-functions.9-solution
+  - learn.azure.shift-express-api-azure-functions.10-exercise-debug-function
+  - learn.azure.shift-express-api-azure-functions.11-knowledge-check
+  - learn.azure.shift-express-api-azure-functions.12-summary
 badge:
   uid: learn.azure.shift-express-api-azure-functions.badge
