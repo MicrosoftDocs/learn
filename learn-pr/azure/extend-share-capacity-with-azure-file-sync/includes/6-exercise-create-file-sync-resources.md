@@ -55,7 +55,7 @@ Now that you know your server is compatible with Azure File Sync, you're ready t
    |Field |value  |
    |---------|---------|
    |Sync group name | CADFiles |
-   |Storage account | **extendcadfiles** |
+   |Storage account | extendcadfiles |
    |Azure File Share|cadfileshare|
 
 1. Select **create**.
