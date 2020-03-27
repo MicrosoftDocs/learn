@@ -1,4 +1,6 @@
-The Express server runs the API on a server. You can create an Azure Functions project to run the APIs instead. I recommend using the [VS Code Extension for Azure Functions](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions&WT.mc_id=devto-blog-jopapa). Once installed, follow these steps to create the Azure Functions on your computer.
+The Express server runs the API on a server. You can create an Azure Functions project to run the APIs instead. In this exercise, you'll create the Azure Functions application using the [VS Code Extension for Azure Functions](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions&WT.mc_id=devto-blog-jopapa).
+
+Once the extension is installed, follow these steps to create the Azure Functions on your computer.
 
 1. Open the command palette by pressing **F1**
 1. Type and select **Azure Functions: Create New Project**
@@ -12,3 +14,5 @@ Congratulations, you just created an Azure Function app!
 > You created the function app in the _functions_ folder, which separates it from the Angular app in the same project. You can decide how to structure your application, but for this sample it helps to see them all in one place.
 
 The Azure Functions app is what serves our routes.
+
+Next you'll create the function that will fetch and return the list of vacations.

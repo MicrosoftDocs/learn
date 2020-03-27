@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.shift-express-api-azure-functions.10-exercise-refactor
+uid: learn.azure.shift-express-api-azure-functions.8-exercise-refactor
 metadata:
   title: Exercise - Shifting the Services to Serverless
   description: Shifting the Services to Serverless
-  ms.date: 03/20/20
+  ms.date: 03/30/20
   author: johnpapa
   ms.author: jopapa
   ms.topic: interactive-tutorial
@@ -12,4 +12,4 @@ metadata:
 title: Exercise - Shifting the Services to Serverless
 durationInMinutes: 8
 content: |
-  [!include[](includes/10-exercise-refactor.md)]
+  [!include[](includes/8-exercise-refactor.md)]

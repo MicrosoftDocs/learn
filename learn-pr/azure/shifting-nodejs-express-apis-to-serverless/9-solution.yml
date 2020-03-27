@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.shift-express-api-azure-functions.11-solution
+uid: learn.azure.shift-express-api-azure-functions.9-solution
 metadata:
   title: Looking at the Functions App
   description: Looking at the Functions App
-  ms.date: 03/20/20
+  ms.date: 03/30/20
   author: johnpapa
   ms.author: jopapa
   ms.topic: interactive-tutorial
@@ -12,4 +12,4 @@ metadata:
 title: Looking at the Functions App
 durationInMinutes: 2
 content: |
-  [!include[](includes/11-solution.md)]
+  [!include[](includes/9-solution.md)]
