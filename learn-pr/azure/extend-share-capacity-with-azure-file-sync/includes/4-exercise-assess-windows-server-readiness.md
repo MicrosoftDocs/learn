@@ -6,6 +6,18 @@ Before you install and set up Azure File Sync on your company's CAD file server,
 
 You'd normally install Azure File Sync on your on-premises server. For this exercise, you'll create an Azure Virtual Machine (VM) to act as your Windows file server.
 
+1. Run the following command to create a resource group. Replace the EastUS value with a location near you.
+
+    ```powershell
+    $resourceGroup = learn-file-sync-rg `
+    $location = EastUS `
+    New-AzResourceGroup -Name $resourceGroup -Location $location
+    ```
+
+   The following list has some location values you can use.
+
+   [!include[](../../../includes/azure-sandbox-regions-note.md)]
+
 1. In PowerShell, run the following command to create a subnet and virtual network in the same location as the resource group.
 
     ```powershell
@@ -13,13 +25,11 @@ You'd normally install Azure File Sync on your on-premises server. For this exer
     -Name Syncpublicnet `
     -AddressPrefix 10.0.0.0/24
 
-    $location = (Get-AzResourceGroup -Name <rgn>[sandbox resource group name]</rgn>).Location
-
     $virtualNetwork = New-AzVirtualNetwork `
     -Name Syncvnet `
     -AddressPrefix 10.0.0.0/16 `
     -Location $location `
-    -ResourceGroupName <rgn>[sandbox resource group name]</rgn> `
+    -ResourceGroupName $resourceGroup`
     -Subnet $subnetConfig
 
     ```
@@ -37,7 +47,7 @@ You'd normally install Azure File Sync on your on-premises server. For this exer
     New-Azvm `
     -Name FileServerLocal `
     -Credential $cred `
-    -ResourceGroupName <rgn>[sandbox resource group name]</rgn> `
+    -ResourceGroupName $resourceGroup `
     -Size Standard_DS1_v2 `
     -VirtualNetworkName Syncvnet `
     -SubnetName Syncpublicnet `
@@ -52,7 +62,7 @@ You'd normally install Azure File Sync on your on-premises server. For this exer
 
 Connect to the new server by using Remote Desktop Client. You'll download a sample CAD file and install the Azure PowerShell module that you'll use later.
 
-1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
+1. Sign into the [Azure portal](https://portal.azure.com?azure-portal=true) using the same account you activated the sandbox with.
 1. On the portal, in the left menu, select **Virtual machines**.
 1. Select the **FileServerLocal** VM.
 1. In the top menu, select **Connect**.

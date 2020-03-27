@@ -6,7 +6,7 @@ In this exercise, you'll first check that file sync is working correctly. Then g
 
 ## Find your connection details
 
-1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
+1. Sign into the [Azure portal](https://portal.azure.com?azure-portal=true) using the same account you activated the sandbox with.
 1. Go to the storage account. Select **All resources** > **extendcadfiles**.
 1. Under **Settings**, select **Access keys**.
 
@@ -17,7 +17,7 @@ In this exercise, you'll first check that file sync is working correctly. Then g
 ## Create a mapped drive to Azure File Share
 
 1. If you closed your Remote Desktop Connection, use the following steps to connect to the virtual machine (VM).
-    1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
+    1. Sign into the [Azure portal](https://portal.azure.com?azure-portal=true) using the same account you activated the sandbox with.
     1. Go to **Virtual machines** > **FileServerLocal**.
     1. Select **Connect** > **Download RDP File** > open the RDP file.
     1. In the **Windows Security** window, select **More choices** > **Use a different account**.
