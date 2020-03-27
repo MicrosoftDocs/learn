@@ -2,7 +2,7 @@
 uid: learn.azure.app-service-scale-up-scale-out
 metadata:
   title: Scale an App Service web app to efficiently meet demand with App Service scale up and scale out
-  description: In this module, you'll learn how to respond to periods of increased activity by incrementally increasing the resources available and then freeing these resources when activity drops. 
+  description: Learn how to respond to periods of increased activity by incrementally increasing the resources available and then freeing these resources when activity drops.
   ms.date: 04/11/2019
   author: nickwalkmsft
   ms.author: nickwalk
@@ -24,6 +24,7 @@ roles:
 - developer
 - solution-architect
 - administrator
+- student
 products:
 - azure
 - dotnet

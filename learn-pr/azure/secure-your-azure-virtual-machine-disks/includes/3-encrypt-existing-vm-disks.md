@@ -40,7 +40,7 @@ az keyvault create \
 
 An Azure Key Vault is a resource that can be created in the [Azure portal](https://aka.ms/portal) using the normal resource creation process.
 
-1. Click **Create a resource** in the sidebar on the left.
+1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
 
 1. Search for "Key vault". Click **Create** in the details window.
 

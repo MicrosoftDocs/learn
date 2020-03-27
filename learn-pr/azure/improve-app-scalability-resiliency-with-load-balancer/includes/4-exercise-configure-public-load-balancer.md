@@ -13,15 +13,10 @@ First, deploy your patient portal application across two virtual machines in a s
 
 To deploy the patient portal web application:
 
-1. Run the following `git clone` command in Azure Cloud Shell. The command clones the repo that contains the source for the app and runs the setup script from GitHub.
+1. Run the following `git clone` command in Azure Cloud Shell. The command clones the repo that contains the source for the app and runs the setup script from GitHub. You then change to the directory of the cloned repo.
 
     ```bash
     git clone https://github.com/MicrosoftDocs/mslearn-improve-app-scalability-resiliency-with-load-balancer.git
-    ```
-
-1. Go to the repo folder locally.
-
-    ```bash
     cd mslearn-improve-app-scalability-resiliency-with-load-balancer
     ```
 
@@ -31,7 +26,7 @@ To deploy the patient portal web application:
     bash create-high-availability-vm-with-sets.sh <rgn>[sandbox resource group name]</rgn>
     ```
 
-1. When the script finishes, in the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), select **Resource groups**, then select the **<rgn>[sandbox resource group name]</rgn>** resource group. Review the resources that were created by the script.
+1. When the script finishes, on the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **Resource groups**, then select the **<rgn>[sandbox resource group name]</rgn>** resource group. Review the resources that were created by the script.
 
 ::: zone pivot="portal"
 
@@ -39,7 +34,9 @@ To deploy the patient portal web application:
 
 Now, let's create the load balancer.
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), select **Create a resource** > **Networking** > **Load Balancer**. Then, select **Create**.
+1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **Create a resource**.
+
+1. In the **Search the Marketplace** field, search for and select **Load Balancer**. Then, select **Create**.
 
     ![Create a Load Balancer instance in the Azure portal](../media/4-create-lb.png)
 
@@ -67,7 +64,7 @@ Now, let's create the load balancer.
 
 Next, create a back-end pool in the load balancer and add the virtual machines to it:
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), select **All resources**, and then select the load balancer you created.
+1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **All resources**, and then select the load balancer you created.
 
 1. Under **Settings**, select **Backend pools**, and then select **Add**.
 
@@ -78,18 +75,12 @@ Next, create a back-end pool in the load balancer and add the virtual machines t
     | Field | Information |
     | ----- | ----------- |
     | **Name** | Enter a unique name for the back-end pool. For example, **bepool-http**. |
+    | **Virtual network** | **bePortalVnet** |
     | **IP version** | Select **IPv4**. |
-    | **Associated to** | Select **Availability set**. |
-    | **Availability set** | Select the existing **portalAvailabilitySet** availability set. |
+    | **Associated to** | Select **Virtual machine**. |
     | | |
 
-1. Select **Add a target network IP configuration**. Select the **webVM1** virtual machine in the availability set.
-
-1. Select the **ipconfig1** network IP configuration.
-
-1. Select **Add a target network IP configuration** again, and then select the **webVM2** virtual machine from the availability set.
-
-1. Select the **ipconfig2** network IP configuration, and then select **OK**.
+1. In the **Virtual machines** section, select the **webVM1** and **webVM2** virtual machines and the **ipconfig1** IP addresses for both VMs.
 
     ![Add a new back-end pool](../media/4-backend-pool-create.png)
 
@@ -111,7 +102,7 @@ Create a health probe that monitors the two virtual machines:
 
     ![Add a new health probe](../media/4-new-health-probe.png)
 
-1. Select **OK**.
+1. Select **Add**.
 
 ## Add a load balancer rule
 
@@ -335,6 +326,6 @@ Let's test the load balancer setup to show how it can handle availability and he
 
 1. Try a "force refresh" by pressing Ctrl+F5 a few times to see that the response is returned randomly from both virtual machines.
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), select **All resources** > **webVM1** > **Stop**.
+1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **All resources**. Then select **webVM1** > **Stop**.
 
 1. Return to the tab that shows the website and force a refresh of the webpage. All requests are returned from **webVM2**.

@@ -7,7 +7,7 @@ Next, you’ll use a Zeppelin Notebook to quickly visualize trends in the data. 
 
 ## Download real estate data
 
-1. Go to https://github.com/Azure/hdinsight-mslearn/tree/master/Sample%20data, and download the data set to save the propertysales.csv file to your computer. 
+1. Go to https://github.com/Azure/hdinsight-mslearn, click Clone or download, and then click Download ZIP. Extract the content of the zip file and save Sample data/propertysales.csv to your computer. 
 
 ## Upload the data using Data Analytics Studio
 
@@ -27,13 +27,13 @@ If you run into an error, go to the **Overview tab** of the cluster in the Azure
 
 4. Name the database ‘newyorkrealestate’ and then click **Create**.
 
-5. In Database Explorer, click the **database name box**, and then select **newyorkrealestate**.
+5. Refresh the page, and then in Database Explorer, click the **database name box**, and then select **newyorkrealestate**.
 
 ![Database Explorer in the Data Analytics Studio application](../media/5-database-analytics-studio-newyorkrealestate.png)
 
 6.	In Database Explorer, click **+** and then click **Create Table**.
 
-![Create table button Database Explorer in the Data Analytics Studio application](../media/5-database-analytics-studio-newyorkrealestate.png)
+![Create table button Database Explorer in the Data Analytics Studio application](../media/5-database-analytics-studio-create-table.png)
 
 7. Name the new table ‘propertysales’ and then click **Upload table**. Table names must only contain lowercase letters and numbers, no special characters.
 
@@ -80,11 +80,11 @@ If there were any performance recommendations available, the tool would display 
 
 1. In the Azure portal, on the **Overview page**, in the **Cluster dashboard** box, click **Zeppelin Notebook**.
 
-![Opening a Zeppelin Notebook in the Azure Portal](../media/5-zeppelin-notebook.png)
+![Opening a Zeppelin Notebook in the Azure portal](../media/5-zeppelin-notebook.png)
 
-2. Click **New Note**, name the note Real Estate Data, and then click **Create**.
+2. Click **Create New Note**, name the note Real Estate Data, and then click **Create**.
 
-![Create a new Zeppelin Notebook in the Azure Portal](../media/5-zepplin-new-note.png)
+![Create a new Zeppelin Notebook in the Azure portal](../media/5-zepplin-new-note.png)
 
 3. Paste the following code snippet into the command prompt in the Zeppelin Window and click the play icon.
 
@@ -95,7 +95,7 @@ select * from newyorkrealestate.propertysales limit 10 ;
 ```
 The query output is displayed in the window. You can see that the first 10 results are returned.
 
-![Viewing Query results in a Zeppelin Notebook in the Azure Portal](../media/5-zepplin-initial-output.png)
+![Viewing Query results in a Zeppelin Notebook in the Azure portal](../media/5-zepplin-initial-output.png)
 
 4. Now fire a more complex query to use some of the visualization and graphing capabilities available in Zeppelin. Copy the following query into the command prompt and click  .
 
@@ -107,4 +107,4 @@ where `sale price` < 20000000 AND `square footage` < 50000;
 
 By default, the query output is displayed in table format. Instead, select Scatter Chart to see one of the visuals that the Zeppelin notebooks provides.
 
-![Visualizations in a Zeppelin Notebook in the Azure Portal](../media/5-zeppelin-visual-scatter.png)
+![Visualizations in a Zeppelin Notebook in the Azure portal](../media/5-zeppelin-visual-scatter.png)

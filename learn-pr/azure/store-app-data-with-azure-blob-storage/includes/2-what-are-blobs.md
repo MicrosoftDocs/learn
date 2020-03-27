@@ -20,7 +20,7 @@ In Blob storage, every blob lives inside a *blob container*. You can store an un
 Blobs and containers support metadata in the form of name-value string pairs. Your apps can use metadata for anything you like: a human-readable description of a blob's contents to be displayed by the application, a string that your app uses to determine how to process the blob's data, etc.
 
 > [!TIP]
-> Blob storage does not provide any mechanism for searching or sorting blobs by metadata. See the Further Reading section at the end of this module for information about using Azure Search to achieve this.
+> Blob storage does not provide any mechanism for searching or sorting blobs by metadata. See the Further Reading section at the end of this module for information about using Azure Cognitive Search to achieve this.
 
 ## The Blob storage API and client libraries
 

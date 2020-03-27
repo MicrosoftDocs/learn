@@ -20,7 +20,7 @@ We're going to use one of the WordPress application options from the Azure Marke
 
 Typically, the first thing we'd do is to create a *resource group* to hold all the things that we need to create. The *resource group* allows us to administer all the services, disks, network interfaces, and other elements that potentially make up our solution as a unit. We can use the Azure portal to create and manage our solution's resource groups. However, keep in mind that you can also manage resources via a command line using the Azure CLI. The Azure CLI is a useful option should you need to automate the process in the future.
 
-In the free Azure sandbox environment you'll use the pre-created resource group **<rgn>[sandbox resource group name]</rgn>**, and you don't need to do this step.
+In the free Azure sandbox environment, you'll use the pre-created resource group **<rgn>[sandbox resource group name]</rgn>**, and you don't need to do this step.
 
 ## Choosing a location
 
@@ -36,7 +36,7 @@ In the free Azure sandbox environment you'll use the pre-created resource group 
 
     ![Screenshot showing the Create a resource option](../media/4-create-resource.png)
 
-    This takes you to the **Azure Marketplace**.
+    This option takes you to the **Azure Marketplace**.
 
     ![Screenshot showing Azure marketplace](../media/4-azure-marketplace.png)]
 
@@ -50,20 +50,18 @@ In the free Azure sandbox environment you'll use the pre-created resource group 
 
 1. Next, you're presented several options to configure your deployment. Enter the following information:
 
-    | Option | Value |
-    |--- | --- |
-    | **App Name** | Choose a unique for the App name. It will form part of a Fully Qualified Domain Name (FQDN).|
-    | **Subscription** | Make sure the **Concierge Subscription** is selected. |
-    | **Resource Group** | Select the **Use existing** radio button, then select the **<rgn>[sandbox resource group name]</rgn>** resource group from the drop-down list. |
-    | **Database Provider** | Select **MySQL in App**. |
-    | **App Service plan/location** | Leave at the default configuration for the moment, you'll change the App Service plan in the next step. |
-    | **Application Insights** | Leave at the default configuration. |
+    1. **App Name**: Choose a unique value for the App name. It will form part of a Fully Qualified Domain Name (FQDN).
+    1. **Subscription**: Make sure the **Concierge Subscription** is selected.
+    1. **Resource Group**: Select the **Use existing** radio button, then select the **<rgn>[sandbox resource group name]</rgn>** resource group from the drop-down list.
+    1. **Database Provider**: Select **MySQL in App**.
+    1. **App Service plan/location**: You'll change the App Service plan in the next step.
+    1. **Application Insights**: Leave at the default configuration.
 
     Your configuration should look like this:
 
     [![Screenshot showing app service configuration information](../media/4-config-info-create.png)](../media/4-config-info-create-expanded.png#lightbox)
 
-1. Now let's configure the App Service plan. This specifies the compute resources and location for the web app. Select **App Service plan/location**.
+1. Now let's configure the App Service plan to use a specific pricing tier. The App Service plan specifies the compute resources and location for the web app. Select **App Service plan/location**.
 
     ![Screenshot showing App Service plan link](../media/4-config-app-service-plan.png)
 
@@ -71,7 +69,9 @@ In the free Azure sandbox environment you'll use the pre-created resource group 
 
     ![Screenshot showing the Create new App Service plan button](../media/4-new-app-service-plan.png)
 
-1. In the **New App Service plan** panel, enter a **name** for the new service plan and then select **Pricing tier**.
+1. In the **New App Service plan** panel, enter a **name** for the new service plan.
+1. For **Location**, pick **Central US** to make sure we pick a region that allows the service plan you will pick. Normally, you would pick the region that is closest to your customers while offering the services you need.
+1. Select **Pricing tier** to see the performance and feature options of the various types of service plans.
 
     ![Screenshot showing the New App Service Plan configuration](../media/4-new-service-plan-config.png)
 
@@ -79,11 +79,14 @@ In the free Azure sandbox environment you'll use the pre-created resource group 
 
     Select the **Dev / Test** tab and select the **F1** pricing tier. Then select **Apply**.
 
-    [![Screenshot showing the notification information](../media/4-select-pricing-tier.png)](../media/4-select-pricing-tier-expanded.png#lightbox)
+    [![Screenshot showing the App Service Plan Pricing Tier panel with the Dev/Test section selected and the free F1 tier highlighted and chosen to apply](../media/4-select-pricing-tier.png)](../media/4-select-pricing-tier-expanded.png#lightbox)
 
 1. Back on the **New App Service plan** panel, select **OK** to create the new plan and close the panel.
 
 1. Finally, select the **Create** button to start the deployment of your new site.
+
+> [!NOTE]
+> If you encounter an issue creating the resources, verify you've selected the **F1** pricing tier in the new App Service plan. This is a requirement of the sandbox system when creating this WordPress site.
 
 ## Verify your website is running
 
@@ -93,15 +96,15 @@ We can track the progress of the deployment at any time.
 
 1. Select the **notification bell** icon at the top of the portal. If your browser window width is smaller, it may be shown when you click on the ellipsis (**...**) icon at the top right.
 
-    ![Screenshot showing the notification bell button](../media/4-notification-bell.png)
+    ![Screenshot showing the Azure portal top-right menu with the notification bell button highlighted](../media/4-notification-bell.png)
 
 1. Select **Deployment in progress...** to see the details about all the resources that are created.
 
-    ![Screenshot showing the notification information](../media/4-notification-bell-info.png)
+    ![Screenshot showing the deployment notification in the notifications list](../media/4-notification-bell-info.png)
 
     Notice how resources are listed as they're created and the status changes to a green check as each component in the deployment completes.
 
-    [![Screenshot showing the notification information](../media/4-deployment-progress.png)](../media/4-deployment-progress-expanded.png#lightbox)
+    [![Screenshot showing the details of the deployment notification, stating "Your deployment is underway"](../media/4-deployment-progress.png)](../media/4-deployment-progress-expanded.png#lightbox)
 
 1. Once the deployment status message change to **Your deployment is complete**, you'll notice the status in the notification dialogue changes to **Deployment succeeded**. Select **Go to resource** to navigate to the App Service overview.
 
@@ -113,4 +116,4 @@ We can track the progress of the deployment at any time.
 
     Copy the **URL** information. Open a new tab in your browser and use the information to browse to your new WordPress site. You can now configure your WordPress website and add content.
 
-   ![Screenshot showing pre-configured WordPress website](../media/4-configure-wordpress.png)
+    :::image type="content" source="../media/4-configure-wordpress.png" alt-text="Screenshot showing pre-configured WordPress website." loc-scope="third-party"::: <!-- Wordpress -->

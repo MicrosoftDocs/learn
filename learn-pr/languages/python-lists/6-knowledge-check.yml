@@ -1,0 +1,57 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.python-lists.knowledge-check
+title: Knowledge check
+metadata:
+  title: Check your knowledge
+  description: Review what you've learned
+  ms.date: 02/19/2020
+  author: bobtabor-msft
+  ms.author: rotabor
+  ms.topic: interactive-tutorial
+  ms.prod: learning-languages
+durationInMinutes: 3
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "You have a five item list and you want to retrieve the last three items.  Which slice will accomplish that?"
+    choices:
+    - content: "`my_list[1:4]`"
+      isCorrect: false
+      explanation: "`my_list[1:4]` will select the middle three items."
+    - content: "`my_list[:2]`"
+      isCorrect: false
+      explanation: "`my_list[:2]` will select the first two items."
+    - content: "`my_list[:-3]`"
+      isCorrect: false
+      explanation: "`my_list[:-3]` will select the first two items."
+    - content: "`my_list[-3:]`"
+      isCorrect: true
+      explanation: "Correct!"
+  - content: "Which of the following helper functions allow me to simulate a queue with my list?"
+    choices:
+    - content: "`remove()`"
+      isCorrect: false
+      explanation: "The `remove()` function removes the item from the list, but it's not the best choice."
+    - content: "`pop()`"
+      isCorrect: true
+      explanation: "The `pop()` function selects and removes an item from a list.  This is similar to how a queue operates."
+    - content: "`del()`"
+      isCorrect: false
+      explanation: "There is no `del()` function."
+    - content: "`clear()`"
+      isCorrect: false
+      explanation: "The `clear()` function removes all the items."
+  - content: "What's the easiest way to tell if a value belongs to a list?"
+    choices:
+    - content: "Use the `find()` helper function."
+      isCorrect: false
+      explanation: "There is no `find()` helper function on lists."
+    - content: "Use the `in` operator."
+      isCorrect: true
+      explanation: "Correct!"
+    - content: "Use the `is` operator."
+      isCorrect: false
+      explanation: "The `is` checks to see if two objects are the same object.  That won't help us in this case."
+    - content: "Use the `contains()` helper method."
+      isCorrect: false
+      explanation: "A list does not have a helper method named `contains()`."

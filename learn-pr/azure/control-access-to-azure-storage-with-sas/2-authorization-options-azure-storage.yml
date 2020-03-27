@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.control-access-to-azure-storage-with-sas.2-authorization-options-azure-storage
+metadata:
+  title: Authorization options for Azure Storage
+  description: Authorization options for Azure Storage
+  ms.date: 03/06/2020
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Authorization options for Azure Storage
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-authorization-options-azure-storage.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Your organization has an internal system to share patient appointment information and notes. You can secure the access based on a users' membership of an AD group. Which kind of authorization supports this scenario best, and why?"
+    choices:
+    - content: "Shared access signature. You would use the AD credentials and a user delegation SAS token."
+      isCorrect: false
+      explanation: "This is the most secure way to use SAS, but in this case the best option is to authenticate using an Azure service principal."
+    - content: "Azure Active Directory. Using AD you can create a service principal to authenticate the app."
+      isCorrect: true
+      explanation: "This is the best option as no code or configuration files need to store credentials. Access is controlled with AD, and can be extended be revoked without requiring any code changes."
+    - content: "Shared key. The Azure Storage account can create and revoke keys that will be used in your App."
+      isCorrect: false
+      explanation: "This isn't correct and involves your app needing to keep an up-to-date key in code or configuration files. It also grants root like level access to the storage account."
+  - content: "Your public facing static website stores all its public UI images in blob storage. The web site needs to display the graphics without any kind of authorization. Which is the best option?"
+    choices:
+    - content: "Public access."
+      isCorrect: true
+      explanation: "This is requires the least effort to implement. There are no credentials that need to be stored or managed. For this website, it's the best option."
+    - content: "Shared key."
+      isCorrect: false
+      explanation: "This isn't a good solution in this scenario. Only read-only access is required, using a shared key gives root like access to the storage."
+    - content: "Shared access signature."
+      isCorrect: false
+      explanation: "The flexibility and security of using SAS aren't required in this scenario, public access is the best option."

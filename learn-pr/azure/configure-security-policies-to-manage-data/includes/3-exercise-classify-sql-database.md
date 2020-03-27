@@ -1,7 +1,7 @@
 
 In this step, you will create your resource group and an Azure SQL Database single database containing the AdventureWorksLT sample data
 
-1. Sign-in to the [Azure portal](https://portal.azure.com?azure-portal=true) using the same account you used to activate the Azure Sandbox.
+1. Sign-in to the [Azure portal](https://portal.azure.com?azure-portal=true) using the same account you used to activate the Azure Sandbox. Make sure you are in the Microsoft Learn Sandbox directory.
 1. Select **+ Create a resource** in the left sidebar of the Azure portal.
 1. Select **Databases** and then select **SQL Database** to open the **Create SQL Database** page.
 
@@ -32,6 +32,7 @@ In this step, you will create your resource group and an Azure SQL Database sing
 
     ![Screenshot of additional configuration page](../media/M04-L01-01-create-sql-database-additional-settings.png)
 
+1. Under **Enable Advanced Data Security**, verify **Start free trial** is selected.
 1. Leave the rest of the values as default and select **Review + Create** at the bottom of the form.
 1. Review the final settings and select **Create**.
 
@@ -51,15 +52,16 @@ at protecting the data, not just the database:
 
 Let's classify the data in this sample Azure SQL database.
 
-1. Under the **Security** heading in the Azure SQL Database pane, navigate to **Advanced Data Security**, and select the **Enable** button to enable advanced data security. You could have also turned this on as part of the DB creation. This will take a minute to activate.
+1. Under the **Security** heading in the Azure SQL Database pane, navigate to **Advanced Data Security**.
+1. If Advanced Data Security isn't enabled, select the **Enable** button to enable it. As noted in the instructions above, you can turn this on as part of the DB creation. This will take a minute to activate.
 
 1. Select the **Data Discovery and Classification** card.
 
-    ![Screenshot of the Advanced Threat Protection blade, with the Data Discovery and Classification preview card called out.](../media/M4_01_02_01.png)
+    ![Screenshot of the Advanced Threat Protection pane, with the Data Discovery and Classification preview card called out.](../media/M4_01_02_01.png)
 
 1. The initial state will have recommended columns - 15 in this case, but none of them will be classified yet. Select the recommendations info tip at the top of the screen to see the recommended columns.
 
-    ‎![Screenshot of the Data discovery and classification (preview) blade, Overview tab with the previously mentioned items displaying.](../media/M4_01_02_02.png)
+    ‎![Screenshot of the Data discovery and classification (preview) pane, Overview tab with the previously mentioned items displaying.](../media/M4_01_02_02.png)
 
 1. Select all the columns and then **Accept selected recommendations**.
 
@@ -67,11 +69,11 @@ Let's classify the data in this sample Azure SQL database.
 
 1. Review the **Overview** tab. Notice that it includes a summary of the current classification state of the database, including a detailed list of all classified columns. You can also filter this view to only see specific schema parts, information types, and labels.
 
-    ‎![Screenshot of the Data discovery and classification (preview) blade, Overview tab with the previously mentioned items displaying.](../media/M4_01_02_021.png)
+    ‎![Screenshot of the Data discovery and classification (preview) pane, Overview tab with the previously mentioned items displaying.](../media/M4_01_02_021.png)
 
 1. To download a report in Excel format, in the top menu of the window select Export.
 
-    ![Screenshot of the Data discovery and classification (preview) blade with Export selected.](../media/M4_01_02_03.png)
+    ![Screenshot of the Data discovery and classification (preview) pane with Export selected.](../media/M4_01_02_03.png)
 
 ### Customizing the classification
 
@@ -85,18 +87,24 @@ You can either take the suggested classifications as we did earlier, or manually
 
 1. In the top menu of the window, select **Add classification**.
 
-    ![Screenshot of the Data discovery and classification (preview) blade with Add classification selected.](../media/M4_01_02_06.png)
+    ![Screenshot of the Data discovery and classification (preview) pane with Add classification selected.](../media/M4_01_02_06.png)
 
-1. In the Add classification blade, configure the five fields that display, and then select Add classification:
+1. In the Add classification pane, configure the five fields that display, and then select Add classification:
    * Schema name
    * Table name
    * Column name
    * Information type
    * Sensitivity label.
 
-    ![In the Add classification blade, the previously mentioned fields are called out.](../media/M4_01_02_07.png)
+    ![In the Add classification pane, the previously mentioned fields are called out.](../media/M4_01_02_07.png)
 
 1. To complete your classification and persistently label (tag) the database columns with the new classification metadata, in the top menu of the window, select **Save**.
+
+1. Switch back to the **Overview** tab to now see **16** columns identified.
+
+1. Try changing some of the other classifications for identified columns - for example, setting the password data to **Highly Confidential**.
+
+1. You can also filter the data being viewed through the filter boxes right below the graphs on the **Overview** tab.
 
 ## Monitor access to sensitive data
 

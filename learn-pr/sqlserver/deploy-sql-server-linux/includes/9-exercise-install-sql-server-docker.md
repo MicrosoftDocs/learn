@@ -10,7 +10,7 @@ In this unit, you will see how to deploy SQL Server on a container with Docker.
 
 Before you can run any containers, you must begin by installing the Docker container host software. Follow these steps:
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), click **All resources**, and then click the Ubuntu VM you created in unit 3.
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), when the VM deployment is complete, search for and select the Ubuntu VM you created in unit 3.
 1. In the top left of the **Overview** page, click **Connect**.
 1. On the **SSH** tab, to the right of the **Login using VM local account** textbox, click the **Copy** button.
 

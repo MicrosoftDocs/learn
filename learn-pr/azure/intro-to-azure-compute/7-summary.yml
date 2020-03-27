@@ -40,7 +40,7 @@ quiz:
         isCorrect: false
         explanation: "A VM can take a few minutes to start. This delay might not provide quick enough scaling to respond to a sharp spike in demand."
 
-    - content: "The compute options give you different levels of control over the configuration of the environment in which your application runs. Which of the following lists the compute options in order from \"most control\" to \"least control\"?"
+    - content: "The compute options give you different levels of control over the configuration of the environment in which your application runs. Which of the following lists the compute options in order of your control from \"most control\" to \"least control\"?"
       choices:
       - content: "Serverless computing, containers, virtual machines"
         isCorrect: false

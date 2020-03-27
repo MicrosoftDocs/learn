@@ -1,15 +1,15 @@
 ### YamlMime:Module
 uid: learn.wwl.hdinsight-configuration-to-build-open-source-analytical-solutions
 metadata:
-  title: Choose the correct HDInsight Configuration to build open source analytical solutions
-  description: Choose the correct HDInsight Configuration to build open source analytical solutions
+  title: Choose the correct HDInsight Configuration to build open-source analytics solutions
+  description: Choose the correct HDInsight Configuration to build open-source analytics solutions
   ms.date: 10/25/2019
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Choose the correct HDInsight Configuration to build open source analytical solutions
-summary: In this module, you will learn the different configuration for ensuring optimal use of HDInsight from both a performance and cost perspective.
+title: Choose the correct HDInsight Configuration to build open-source analytics solutions
+summary: In this module, you will learn the different configurations for ensuring optimal use of HDInsight from both a performance and cost perspective.
 abstract: |
   At the end of this module you will understand:
   - The correct HDInsight configuration options
@@ -19,10 +19,9 @@ abstract: |
 ratingEnabled: true
 prerequisites: |
   The following pre-requisite should be completed
-  - Successfully login to the Azure Portal
+  - Successfully log in to the Azure portal
   - Understand the Azure storage options
   - Understand the Azure compute options
-  - Create a HDInsight Cluster in the Azure Portal
 iconUrl: /learn/achievements/learn-pr/achievements/hdinsight-config-build-oss-analytical-solutions.svg
 levels:
 - beginner

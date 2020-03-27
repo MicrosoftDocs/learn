@@ -6,7 +6,7 @@ Data Lake Storage Gen2 users take advantage of Azure Blob storage, a hierarchica
 
 Data Lake Storage is designed to store massive amounts of data for big-data analytics. For example, Contoso Life Sciences is a cancer research center that analyzes petabytes of genetic data, patient data, and records of related sample data. Data Lake Storage Gen2 reduces computation times, making the research faster and less expensive. 
 
-The compute aspect that sits above this storage can vary. The aspect can include platforms like HDInsight, Hadoop, Cloudera, Azure Databricks, and Hortonworks.
+The compute aspect that sits above this storage can vary. The aspect can include platforms like HDInsight, Hadoop, and Azure Databricks.
 
 ## Key features
 

@@ -1,8 +1,8 @@
 There are several common provisioning issues that you should be aware of when you create an HDInsight cluster. Some errors are transient and may succeed if you retry the creation after 15 minutes. 
 
-Azure Policy and Firewall configuration
+## Azure Policy and Firewall configuration
 
-The most common provisioning issue is Azure Policy restrictions that either prevent the creation of a cluster. In general, the following policies can impact cluster creation:
+The most common provisioning issue is Azure Policy restrictions that prevent the creation of a cluster.  In general, the following policies can impact cluster creation:
 
 - Policies preventing creation of an IP address & load balancers within the subscription.
 - Policies preventing creation of storage account.

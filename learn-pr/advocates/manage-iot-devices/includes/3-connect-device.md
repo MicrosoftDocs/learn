@@ -10,13 +10,15 @@ Azure IoT Hub provides the features and an extensibility model that enable devic
 
 In order to start collecting the data from the Raspberry Pi simulator, you need to first create an IoT hub.
 
-1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-2. Choose **Create a resource** in the upper left-hand corner of the Azure portal.
+1. From the Azure portal menu, select **Create a resource**.
 
-3. Select **Internet of Things**, and then select **IoT Hub**.
+    ![Screenshot of Azure portal menu and Create a resource option.](../media/create-a-resource.png)
 
-![Screenshot of Azure portal navigation to IoT Hub](../media/fa40d1bc51bc4490f657e3c1a8371b5b.png)
+1. Select **Internet of Things**, and then select **IoT Hub**.
+
+    ![Screenshot of the Internet of Things and IoT hub options.](../media/internet-of-things-hub.png)
 
 4. In the **IoT hub** pane, enter the following information for your IoT hub:
 

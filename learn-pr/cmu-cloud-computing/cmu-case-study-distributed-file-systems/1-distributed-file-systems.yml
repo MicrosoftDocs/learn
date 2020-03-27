@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-computing.cloud-storage.case-study-distributed-fs.1-distributed-file-systems
+title: History of distributed file systems
+metadata:
+  title: History of distributed file systems
+  description: History of distributed file systems
+  ms.date: 03/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 7
+content: |
+  [!include[](includes/1-distributed-file-systems.md)]

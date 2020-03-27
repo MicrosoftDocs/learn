@@ -41,7 +41,7 @@ Now go to the newly created data factory. You should see the **Data factory** ho
 ## Create a Data Lake Storage Gen1 account
 
 1. On the left, select **Create a new resource**.
-1. On the **New** blade, select **Storage** > **Data Lake Storage Gen1**.
+1. On the **New** pane, select **Storage** > **Data Lake Storage Gen1**.
 1. In the **Name** box, type **dlsgen1XXX**, but replace _XXX_ with numbers that you choose. A green check mark indicates that the name is unique.
 1. In the **Subscription** list, select your subscription.
 1. In the **Resource Group** list, select **mslearn-datalake-test**.
@@ -69,22 +69,22 @@ You'll upload this data file in various ways. Keep in mind that this is a _simpl
 ## Upload a file into a Data Lake Storage Gen1 account
 
 1. In the Azure portal, search for the Data Lake Storage Gen1 service you created (**dlsgen1XXX**).
-1. On the **Overview** blade, select **Data Explorer**.
-1. On the **Data Explorer** blade, select the **Upload** button.
-1. On the **Upload file** blade, select the browse icon, go to the folder, and select **salesUK.txt**. Then select **Add selected files**. You'll know the file is uploaded when the **States** column displays **Completed**.
-1. Close the **Upload files** blade.
+1. On the **Overview** pane, select **Data Explorer**.
+1. On the **Data Explorer** pane, select the **Upload** button.
+1. On the **Upload file** pane, select the browse icon, go to the folder, and select **salesUK.txt**. Then select **Add selected files**. You'll know the file is uploaded when the **States** column displays **Completed**.
+1. Close the **Upload files** pane.
 
 ## Set permissions for the Data Lake Storage Gen1 account
 
 Set permissions to allow the data factory to access the data in your Data Lake Store Gen1 account.
 
 1. In the Azure portal, search for your Data Lake Storage Gen1 service named **dlsgen1XXX**.
-1. On the **Overview** blade, select **Access control (IAM)**.
-1. On the **Access control (IAM)** blade, in the **Add Role Assignment** box, select **Add**.
-1. On the **Add Role Assignment** blade, for the **Role**, select **Owner**.
+1. On the **Overview** pane, select **Access control (IAM)**.
+1. On the **Access control (IAM)** pane, in the **Add Role Assignment** box, select **Add**.
+1. On the **Add Role Assignment** pane, for the **Role**, select **Owner**.
 1. Under **Select**, enter your data factory name.
 1. Select **Save**.
-1. Close the **Access control (IAM)** blade.
+1. Close the **Access control (IAM)** pane.
 
 ## Load data into the Data Lake Storage Gen2 account
 

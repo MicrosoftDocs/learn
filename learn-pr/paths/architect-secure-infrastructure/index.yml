@@ -12,7 +12,7 @@ metadata:
 title: Architect secure infrastructure in Azure
 summary: Learn about the tools and services available on Azure to ensure your resources are secure.
 prerequisites: None
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/architect-secure-infrastructure.svg
 levels:
 - intermediate
 roles:

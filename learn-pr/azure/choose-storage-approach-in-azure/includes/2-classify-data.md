@@ -8,44 +8,91 @@ Application data can be classified in one of three ways: structured, semi-struct
 
 ## Structured data
 
-Structured data is data that adheres to a schema, so all of the data has the same fields or properties. Structured data can be stored in a database table with rows and columns. Structured data relies on keys to indicate how one row in a table relates to data in another row of another table. Structured data is also referred to as relational data, as the data's schema defines the table of data, the fields in the table, and the clear relationship between the two.
+Structured data, sometimes referred to as _relational data_, is data that adheres to a strict schema, so all of the data has the same fields or properties. The shared schema allows this type of data to be easily searched with query languages such as SQL (Structured Query Language). This capability makes this data style perfect for applications such as CRM systems, reservations, and inventory management.
+
+Structured data is often stored in database tables with rows and columns with key columns to indicate how one row in a table relates to data in another row of another table. The below image shows data about students and classes with a relationship to grades that ties them together.
+
+![Diagram showing two structured data tables and a relationship table containing data that ties them together.](../media/2-relational-db.png)
 
 Structured data is straightforward in that it's easy to enter, query, and analyze. All of the data follows the same format. However, forcing a consistent structure also means evolution of the data is more difficult as each record has to be updated to conform to the new structure.
 
-Examples of structured data include:
-
-- Sensor data
-- Financial data
-
 ## Semi-structured data
 
-Semi-structured data is less organized than structured data, and is not stored in a relational format, as the fields do not neatly fit into tables, rows, and columns. Semi-structured data contains tags that make the organization and hierarchy of the data apparent. Semi-structured data is also referred to as non-relational or NoSQL data. The data structure is defined by a *serialization language*.
+Semi-structured data is less organized than structured data, and is not stored in a relational format, as the fields do not neatly fit into tables, rows, and columns. Semi-structured data contains tags that make the organization and hierarchy of the data apparent - for example, key/value pairs. Semi-structured data is also referred to as non-relational or _NoSQL data_. The expression and structure of the data in this style is defined by a *serialization language*.
 
-For software developers, data serialization languages are particularly important because they can be used to write data stored in memory to a file, sent to another system, parsed and read. The sender and receiver don’t need to know details about the other system, as long as the same serialization language is used, the data can be understood by both systems.
+For software developers, data serialization languages are important because they can be used to write data stored in memory to a file, sent to another system, parsed and read. The sender and receiver don’t need to know details about the other system, as long as the same serialization language is used, the data can be understood by both systems.
 
-Today, there are three common serialization languages you'll like encounter:
+> [!VIDEO https://channel9.msdn.com/Shows/Docs-Learn/Data-Serialization-Languages/player?format=ny]
 
-**XML**, or *extensible markup language*, was one of the first languages to receive widespread support.  Parsers for it can be found for almost all popular development platforms. XML relies on tags surrounded by angle braces, as a result, the data is somewhat verbose and can be challenging to read or edit by hand.
+### Common formats
 
-**JSON** – or *JavaScript Object Notation*, has a lightweight specification and relies on curly braces to indicate data structure. Compared to XML, it is less verbose and easier to read by humans. It is  frequently used today by REST services to return data.
+Today, there are three common serialization languages you're likely to encounter:
 
-**YAML** – or *YAML Ain’t Markup Language*, is a relatively new language that’s growing quickly in popularity in part due to its human-friendliness. The data structure is defined by line separation and indentation, and reduces the dependency on structural characters like parentheses and brackets.
+**XML**, or *extensible markup language*, was one of the first data languages to receive widespread support. It's text-based, which makes it easily human and machine-readable. In addition, parsers for it can be found for almost all popular development platforms. XML allows you to express relationships and has standards for schema, transformation, and even displaying on the web. 
 
+Here's an example of a person with hobbies expressed in XML.
 
-#### What is NoSQL?
+```xml
+<Person Age="23">
+    <FirstName>John</FirstName>
+    <LastName>Smith</LastName>
+    <Hobbies>
+        <Hobby Type="Sports">Golf</Hobby>
+        <Hobby Type="Leisure">Reading</Hobby>
+        <Hobby Type="Leisure">Guitar</Hobby>
+   </Hobbies>
+</Person>
+```
+
+XML expresses the shape of the data using _tags_. These tags come in two forms: _elements_ such as `<FirstName>` and _attributes that can be expressed in text like `Age="23"`. Elements can  have child elements to express relationships - such as the `<Hobbies>` tag above which is expressing a collection of `Hobby` elements.
+
+XML is flexible and can express complex data easily. However it tends to be more verbose making it larger to store, process, or pass over a network. As a result, other formats have become more popular.
+
+**JSON** – or *JavaScript Object Notation*, has a lightweight specification and relies on curly braces to indicate data structure. Compared to XML, it is less verbose and easier to read by humans. JSON is frequently used by web services to return data.
+
+Here's the same person expressed in JSON.
+
+```json
+{
+    "firstName": "John",
+    "lastName": "Doe",
+    "age": "23",
+    "hobbies": [
+        { "type": "Sports", "value": "Golf" },
+        { "type": "Leisure", "value": "Reading" },
+        { "type": "Leisure", "value": "Guitar" }
+    ]
+}
+```
+
+Notice that this format isn't as formal as XML. It's closer to a key/value pair model than a formal data expression. As you might guess from the name, JavaScript has built-in support for this format - making it very popular for web development. Like XML, other languages have parsers you can use to work with this data format. The downside to JSON is that it tends to be more programmer-oriented making it harder for non-technical people to read and modify.
+
+**YAML** – or *YAML Ain’t Markup Language*, is a relatively new data language that’s growing quickly in popularity in part due to its human-friendliness. The data structure is defined by line separation and indentation, and reduces the dependency on structural characters like parentheses, commas and brackets.
+
+Here's the same person data expressed in YAML.
+
+```yaml
+firstName: John
+lastName: Doe
+age: 23
+hobbies:
+    - type: Sports
+      value: Golf
+    - type: Leisure
+      value: Reading
+    - type: Leisure
+      value: Guitar
+```
+
+This format is more readable than JSON and is often used for configuration files that need to be written by people but parsed by programs. However, YAML is the newest of these data formats and doesn't have as much support in programming languages as JSON and XML.
+
+#### What is NoSQL / semi-structured data?
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2yEvd]
 
-Examples of semi-structured data include:
-
-- Key / Value pairs
-- Graph data
-- JSON files
-- XML files
-
 ## Unstructured data
 
-The organization of unstructured data is generally ambiguous. Unstructured data is often delivered in files, such as photos or videos. The video file itself may have an overall structure and come with semi-structured metadata, but the data that comprises the video itself is unstructured. Therefore, photos, videos, and other similar files are classified as unstructured data.
+The organization of unstructured data is ambiguous. Unstructured data is often delivered in files, such as photos or videos. The video file itself may have an overall structure and come with semi-structured metadata, but the data that comprises the video itself is unstructured. Therefore, photos, videos, and other similar files are classified as unstructured data.
 
 Examples of unstructured data include:
 

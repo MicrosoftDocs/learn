@@ -31,9 +31,9 @@ First, you'll sign in to the Azure portal, and then you'll click **Create a reso
 
 You'll select **Databases** and **Azure Database for PostgreSQL**. You can also use the **Search** functionality to find this category.
 
-The portal will display a PostgreSQL server configuration screen, also called a blade, and you make your selection.
+The portal will display a PostgreSQL server configuration screen, also called a pane, and you make your selection.
 
-You'll need to give a value to all the items in the blade, so let's have a look at each.
+You'll need to give a value to all the items in the pane, so let's have a look at each.
 
 ### Server name
 

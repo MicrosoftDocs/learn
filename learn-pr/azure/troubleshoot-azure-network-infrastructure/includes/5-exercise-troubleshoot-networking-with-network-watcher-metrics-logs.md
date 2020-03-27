@@ -10,7 +10,7 @@ NSG flow logging requires the *Microsoft.Insights* provider. Complete the follow
 
 1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true) and log in to the directory with access to the subscription you created resources in.
 
-1. In the upper-left corner of the portal, select **All services**. In the **Filter** box, enter **Subscriptions**. When **Subscriptions** appears in the search results, select it.
+1. In the Azure portal, search for and select **Subscriptions**. When **Subscriptions** appears in the search results, select it.
 
 1. Select the your subscription. Then under **Settings**, select **Resource providers**.
 
@@ -24,7 +24,7 @@ NSG flow logging requires the *Microsoft.Insights* provider. Complete the follow
 
 Now, create a storage account for the NSG flow logs.
 
-1. In the upper-left corner of portal, select **Create a resource** > **Storage** > **Storage account**.
+1. On the Azure portal menu or from the **Home** page, select **Create a resource**. Then select **Storage** > **Storage account**.
 
 1. On the **Create storage account** page, fill in these settings:
 
@@ -47,7 +47,7 @@ Now, create a storage account for the NSG flow logs.
 
 To view the NSG flow logs, you'll use Log Analytics. To install Log Analytics.
 
-1. In the upper-left corner of the portal, select **All services**. In the **Filter** box, enter **Log analytics**. When **Log analytics workspaces** appears in the search results, select it.
+1. In the Azure portal, search for and select **Log analytics workspaces**.
 1. Select **+ Add**, complete the page with these values, and then select **OK**:
 
     | Setting | Value |
@@ -65,7 +65,7 @@ To view the NSG flow logs, you'll use Log Analytics. To install Log Analytics.
 
 To set up flow logs, you must configure the NSG to connect to the storage account, and add traffic analytics for the NSG.
 
-1. In the upper-left corner of the portal, select **All resources**. Then select the **MyNSG** network security group.
+1. On the Azure portal menu, select **All resources**. Then select the **MyNSG** network security group.
 
 1. Under **Monitoring**, select **NSG flow logs**.
 
@@ -83,7 +83,7 @@ To set up flow logs, you must configure the NSG to connect to the storage accoun
 
 You'll use the Telnet client to test connections between the VMs. Let's install that client now.
 
-1. In the upper-left corner of the portal, select **All resources**, select **FrontendVM**, and then select **Connect**.
+1. On the Azure portal menu, select **All resources**, select **FrontendVM**, and then select **Connect**.
 
 1. Select **Download RDP File**, and then select **OK**. If you see a warning about the publisher of the remote connection, select **Connect**.
 
@@ -119,7 +119,7 @@ Both connections fail after a few seconds.
 
 Now, let's use log analytics to view the NSG flow logs.
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), select **All services**, enter **Network Watcher**, and then select the **Network Watcher** resource.
+1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu, select **All services**. Then select **Networking** > **Network Watcher**.
 
 1. Under **Logs**, select **Traffic Analytics**.
 
@@ -129,13 +129,15 @@ Now, let's use log analytics to view the NSG flow logs.
 
 ## Fix the problem
 
-An NSG rule is blocking outbound traffic from the back-end subnet to everywhere over the ports 80, 443, and 3389. Let's reconfigure that rule now.
+An NSG rule is blocking inbound traffic to the back-end subnet from everywhere over the ports 80, 443, and 3389 instead of just blocking inbound traffic from the Internet. Let's reconfigure that rule now.
 
-1. Select **All resources**, and then select **MyVNet1**.
+1. On the Azure portal menu, select **All resources**, and then select **MyNsg**.
 
-1. Under **Settings**, select **Subnets**, and then select **BackendSubnet**.
+1. Under **Settings**, select **Inbound security rules**, and then select **MyNSGRule**.
 
-1. Select **Network security group**, select **None**, and then select **Save**.
+1. Change **Source** to be **Service Tag**, and configure **Source service tag** to be **Internet**.
+
+1. Select **Save**.
 
 ## Retest the connection
 
