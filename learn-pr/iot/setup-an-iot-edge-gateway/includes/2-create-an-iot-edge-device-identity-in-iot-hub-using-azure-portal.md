@@ -1,3 +1,11 @@
+It's the first day on the job as lead IoT Solutions Engineer.  We've been told that we are in charge of implementing an Azure IoT Edge Gateway solution to facilitate secure transmission of manufacturing floor telemetry into the cloud.  
+
+This is a pretty big task, and lots of teams are counting on this project.  Our Machine Learning and Data Analysts believe that we can automate a majority of our operations and optimize production if we can capture this data into Microsoft Azure.
+
+[![First day of work](../media/work.png)](../media/work.png#lightbox)
+
+The first thing we need, is a registered identity for our IoT Edge Gateway.  This will ensure that the Azure cloud is ready for our eventual on-site deployment within the manufacturing site network.
+
 In this unit, you will create a new IoT Edge Device identity in Azure IoT Hub for the IoT Edge Transparent Gateway.
 
 ## Create an IoT Edge Device Identity in IoT Hub using Azure Portal
@@ -25,7 +33,9 @@ In this unit, you will create a new IoT Edge Device identity in Azure IoT Hub fo
 
 1. With a sandbox, a containing resource with a name such as **AZ-220-HUB-_{YOUR-ID}** is created. From this containing resource, click **Go to resource** to go to the home page for your temporary hub.
 
-1. On the IoT Hub summary blade, click **IoT Edge** under the Automatic Device Management section. This section of the IoT Hub blade allows you to manage the IoT Edge devices connected to the IoT Hub.
+1. On the IoT Hub summary blade, click **IoT Edge** under the **Automatic Device Management** section. This section of the IoT Hub blade allows you to manage the IoT Edge devices connected to the IoT Hub.
+
+    [![Transparent Gateway Devices Diagram](../media/portal-view-devices.png)](../media/portal-view-devices.png#lightbox)
 
 1. Click the **Add an IoT Edge device** button to begin adding a new IoT Edge Device to the IoT Hub.
 
@@ -55,7 +65,7 @@ In this unit, you will create a new IoT Edge Device identity in Azure IoT Hub fo
     The `FROM /*` part of the message route will match all device-to-cloud messages or twin change notifications from any module or leaf device. Then, the `INTO $upstream` tells the route to send those messages to the Azure IoT Hub.
  
     >[!NOTE]
-    >To learn more about configuring message routing within Azure IoT Edge, reference the Learn how to deploy modules and establish routes in IoT Edge documentation article.
+    >To learn more about configuring message routing within Azure IoT Edge, reference the [Learn how to deploy modules and establish routes in IoT Edge documentation article](https://docs.microsoft.com/azure/iot-edge/module-composition).
 
 1. Click the **Next: Review + create >** button.
 

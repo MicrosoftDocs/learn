@@ -1,8 +1,18 @@
-In this unit, you will generate test certificates using Linux. This will allow us to ensure that only securely authenticated downstream devices are able to communicate with the IoT Edge Gateway.
+Security is our priority, and we need to ensure that only authorized devices are able to connect and publish data into our IoT Edge Gateway.  Certificate based authentication will allow us to keep out unauthorized devices and secure our transmission channel back to our IoT Hub.
+
+[![security](../media/security.png)](../media/security.png#lightbox)
+
+The process is very similar to how we gain access into the physical manufacturing building.  
+
+We present credentials to a guard (the IoT Edge Gateway), who validates that we are who we say we are.  If the credentials check out, then we are able to pass into our destination (the Azure IoT Hub).
+
+[![Transparent Gateway Devices Diagram](../media/transparent-gateway-devices.png)](../media/transparent-gateway-devices.png#lightbox)
+
+In this unit, you will generate test certificates using tooling on Linux. This will allow us to ensure that only securely authenticated downstream devices are able to communicate with the IoT Edge Gateway.
 
 ## Generate and Configure IoT Edge Device CA Certificates
 
-You will perform these steps on the Azure IoT Edge Gateway Virtual Machine that was deployed in the previous step.
+You will perform these steps on the Azure IoT Edge Gateway Virtual Machine that was deployed in the previous unit.
 
 1. Navigate to the Azure IoT Edge Gateway Virtual Machine within the Azure Portal.  It should be named according to the following format:
  `vm-0000000000000`

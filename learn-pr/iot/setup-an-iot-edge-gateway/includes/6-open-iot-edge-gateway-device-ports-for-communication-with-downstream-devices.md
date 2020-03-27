@@ -1,3 +1,9 @@
+The security operations team has informed us that we need to conform to the company policy of only allowing authorized services to communicate on production devices.  This team watches everything that happens on the company network and could potentially block our access to to the network if we do not comply.
+
+[![Operations](../media/ops.png)](../media/ops.png#lightbox)
+
+To meet this requirement, we can employ firewall settings that explicitly authorize pre-determined modes of data transmission then block everything else.  This will ensure that our IoT Edge Gateway is locked down and running only the services that we have granted permission to.  
+
 In this unit, you will configure the Network Security Group (NSG) that secures access to the Azure IoT Edge Gateway from the Internet. The necessary ports for MQTT, AMQP, and HTTPS communications need to be opened so the downstream IoT device(s) can communicate with the gateway.
 
 ## Open IoT Edge Gateway Device Ports for Communication with Downstream Devices

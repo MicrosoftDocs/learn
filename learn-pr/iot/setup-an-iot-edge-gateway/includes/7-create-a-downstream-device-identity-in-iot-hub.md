@@ -1,3 +1,9 @@
+We are now ready to setup a downstream device that will be registered for communication with our IoT Edge Gateway.  This process is required for onboarding new sensors into the manufacturing line. 
+
+We aren't sure the exact specs of the device at this time, but the research and development team tells us it's extremely innovative and will help us ensure that regulations are met during production runs.
+
+[![Secret Sensor](../media/kinectpreview.png)](../media/kinectpreview.png#lightbox)
+
 In this unit, you will create a new IoT Device identity in Azure IoT Hub for the downstream IoT device. This device identity will be configured so that the Azure IoT Edge Gateway is a parent device for this downstream device.
 
 ## Create a Downstream Device Identity in IoT Hub

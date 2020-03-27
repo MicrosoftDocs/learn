@@ -1,3 +1,7 @@
+With our newly registered device identity, we can now deploy a virtual machine that uses those device credentials to securely connect to the Azure cloud.  Since we are in the development phase, this will be a great way to test out our deployment before installing onto a physical device within the manufacturing facility.
+
+[![Developer Developer Developer](../media/developer.png)](../media/developer.png#lightbox)
+
 In this unit, you will deploy an Ubuntu Server VM with Azure IoT Edge runtime support from the Azure Marketplace.
 
 ## Deploy an Azure IoT Edge enabled Linux VM
