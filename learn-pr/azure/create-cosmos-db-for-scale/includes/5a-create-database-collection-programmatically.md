@@ -608,6 +608,117 @@ mvn exec:java -Dexec.mainClass=com.mslearn.App
 
 Your Application will create a new database and container inside your Azure Cosmos DB account.
 
+::: zone-end
+
+::: zone pivot="cli"
+
+## Create an Azure Cosmos DB account + database with the Azure CLI
+
+1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the account you activated the sandbox with.  Locate your Cosmos DB resource, and save the name of it.
+
+1. Paste the following command into the Cloud Shell on the right to create to store the name of the Azure Cosmos DB account name in an environment variable to use later. Make sure to replace **COSMOS_NAME** with the name of your account:
+
+    ```bash
+    export NAME= COSMOS_NAME
+    ```
+
+    > [!NOTE]
+    > 
+    > This exercise uses Bash for the shell. However, if you were using PowerShell instead of Bash with your personal Azure account, you would need to use the following commands to set the value for the `$NAME` environment variable that you'll use later:
+    >
+    > ```powershell
+    > $NAME = "COSMOS_NAME"
+    > ```
+    >
+    > In addition, you would need to replace the backslash line continuation characters from Bash with the corresponding backtick characters for PowerShell, or remove them entirely.
+
+1. Use the following command into the Cloud Shell on the right to create a new Azure Cosmos DB account with your specified name:
+
+    ```azurecli
+    az cosmosdb create \
+        --name $NAME \
+        --kind GlobalDocumentDB \
+        --resource-group <rgn>[sandbox resource group name]</rgn>
+    ```
+
+    [!include[](../../../includes/azure-cloudshell-copy-paste-tip.md)]
+
+    The command takes a few minutes to complete. When the command has finished, it displays the settings as a JSON object for the new account, which may resemble the following example:
+
+    ```json
+    {
+      "capabilities": [],
+      "consistencyPolicy": {
+        ...
+      },
+      "databaseAccountOfferType": "Standard",
+      "documentEndpoint": "https://cosmos123456.documents.azure.com:443/",
+      "enableAutomaticFailover": false,
+      "enableMultipleWriteLocations": false,
+      "failoverPolicies": [
+        ...
+      ],
+      "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/<rgn>[sandbox resource group name]</rgn>/providers/Microsoft.DocumentDB/databaseAccounts/cosmos123456",
+      "ipRangeFilter": "",
+      "isVirtualNetworkFilterEnabled": false,
+      "keyVaultKeyUri": null,
+      "kind": "GlobalDocumentDB",
+      ...
+    }
+    ```
+
+1. Create the `Products` database in the account using the `cosmosdb database create` command. It takes a `db-name` parameter that you'll set to **"Products"** since this database will hold the inventory data:
+
+    ```azurecli
+    az cosmosdb sql database create \
+        --account-name $NAME \
+        --name "Products" \
+        --resource-group <rgn>[sandbox resource group name]</rgn>
+    ```
+
+    This command displays a JSON object when it has finished, which may resemble the following excerpt:
+
+    ```json
+    {
+      "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/<rgn>[sandbox resource group name]</rgn>/providers/Microsoft.DocumentDB/databaseAccounts/cosmos123456/sqlDatabases/Products",
+      "location": null,
+      "name": "Products",
+      "resource": {
+        ...
+      },
+      "resourceGroup": "<rgn>[sandbox resource group name]</rgn>",
+      "tags": null,
+      "type": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases"
+    }
+    ```
+
+1. Finally, create the `Clothing` container with the `cosmosdb collection create` command in the Cloud Shell, where you will specify your partition key and throughput values:
+
+    ```azurecli
+    az cosmosdb sql container create \
+        --account-name $NAME \
+        --database-name "Products" \
+        --name "Clothing" \
+        --partition-key-path "/productId" \
+        --throughput 1000 \
+        --resource-group <rgn>[sandbox resource group name]</rgn>
+    ```
+
+    This command displays a JSON object when it has finished, which may resemble the following excerpt:
+
+    ```json
+    {
+      "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/<rgn>[sandbox resource group name]</rgn>/providers/Microsoft.DocumentDB/databaseAccounts/cosmos123456/sqlDatabases/Products/containers/Clothing",
+      "location": null,
+      "name": "Clothing",
+      "resource": {
+        ...
+      },
+      "resourceGroup": "<rgn>[sandbox resource group name]</rgn>",
+      "tags": null,
+      "type": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers"
+    }
+    ```
 
 ::: zone-end
 
