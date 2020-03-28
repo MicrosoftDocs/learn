@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.manage-iot-devices.2-raspberry-pi-emulator
 metadata:
-  description: Using the Raspberry Pi Simulator
+  description: Describes the features, and layout, of the Raspberry Pi Simulator.
   author: lnyswonger
   ms.date: 09/24/2018
   ms.author: luken
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-title: Using the Raspberry Pi Simulator
+title: Introduction to the Raspberry Pi Simulator
 durationInMinutes: 10
 content: |
   [!include[](includes/2-raspberry-pi-emulator.md)]

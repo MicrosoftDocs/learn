@@ -1,20 +1,21 @@
 ### YamlMime:Module
 uid: learn.manage-iot-devices
 metadata:
-  description: With IoT adoption on the rise, learn what tools Microsoft offers Operations to help deploy, manage, and secure said plethora of devices.
+  description: This module is an introduction to the Internet-of-Things, for IT Admins.
+  ### Updated by Peter Turcan (v-pettur) March 2020
   author: WirelessLife
   ms.date: 09/24/2018
   ms.author: abartolo
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Learn how to manage IoT devices as an IT Admin
-summary: With IoT adoption on the rise, learn what tools Microsoft offers Operations to help deploy, manage, and secure said plethora of devices.
+summary: This module is an introduction to the Internet-of-Things, for IT Admins.
 abstract: | 
  In this module, you will:
   - Get an introduction to IoT  
   - Configure an Azure IoT Hub to capture data
   - Interact with a Raspberry Pi Simulator
-
+  - Navigate the IoT hub left-hand menu
 prerequisites: None
 iconUrl: /learn/achievements/manage-your-iot-devices.svg
 ratingEnabled: true

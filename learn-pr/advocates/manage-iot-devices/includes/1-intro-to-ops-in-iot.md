@@ -2,7 +2,7 @@ For many businesses, the Internet of Things is new territory, opened up by the c
 
 The amount of data that IoT devices can capture creates a big challenge for IT Operations. Businesses will be looking to IT administrators to help them understand what data to collect, and help them realize the full potential of that data.
 
-## Flatten the learning curve
+## Flatten the IoT learning curve
 
 IT professionals that have plenty of experience with computer technology, but are new to the Internet of Things (IoT), will want to experiment with test hardware, or simulated IoT devices. Getting one "thing" communicating with the Azure cloud is a big step in gaining confidence and knowledge with working with this new technology.
 
@@ -19,6 +19,8 @@ Imagine a scenario where there are many sensor devices. For example, devices rec
 
 In this module, you will learn the basics of hub administration.
 
+[![Photograph of a Raspberry Pi device](../media/raspberrypi.png)](../media/raspberrypi.png#lightbox)
+
 A popular device for getting experience with IoT is the Raspberry Pi device. This is a small circuit board with some LED lights, some sensors including temperature, and the ability to communicate with an IoT hub. Some developers will want to physically connect the device, and gain experience that way. There is an even simpler alternative, to use Microsoft's Raspberry Pi Simulator, and do everything in software on your computer. This is the approach we take in this module: you will set up an IoT hub, define a single device, then use the simulator to send telemetry to the hub.
 
 As the hub admin, you will learn about the portal used to set up, monitor, and control, external devices.
@@ -32,5 +34,5 @@ In this module, you will:
 - Get an introduction to IoT  
 - Configure an Azure IoT Hub to capture data
 - Interact with a Raspberry Pi Simulator
-
+- Navigate the IoT hub left-hand menu
   

@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.manage-iot-devices.3-connect-device
 metadata:
-  description: Setting up IoT Hub and connecting your first device.
+  description: Describes how to create an IoT hub, and register a device ID. Then the Raspberry Pi simulator is set running, and telemetry examined in the hub.
   author: lnyswonger
   ms.date: 09/24/2018
   ms.author: luken
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-title: Setting up IoT Hub and connecting your first device
+title: Set up your IoT Hub, then register and run a device
 durationInMinutes: 20
 azureSandbox: true
 content: |

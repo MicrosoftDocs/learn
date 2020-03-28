@@ -7,7 +7,7 @@ allows users to enter Node.js code to control the LED, and collect dummy data fr
 
 By default, the simulator operates a sample temperature capture program which is displayed via the command line. The same sample application can also be run on a real Pi as the simulator is designed to allow people to test code before transferring it to a real device.
 
-![Raspberry Pi Simulator](../media/RaspberryPiSimulator.png)
+[![Raspberry Pi Simulator](../media/RaspberryPiSimulator.png)](../media/RaspberryPiSimulator.png#lightbox)
 
 There are three areas in the web simulator:
 
@@ -18,8 +18,8 @@ There are three areas in the web simulator:
 
 1. **Integrated console window**. This is where you can see the output of your app. Within the console there are three functions:
     - `Run` - Runs the sample code. When the sample is running, code is read-only.
-    - `Stop` - Stops the sample code running.
-    - `Reset` - Resets the code.
+    - `Stop` - Stops the sample code running. You can click `Run` again to restart where you left off.
+    - `Reset` - Resets the simulator to its starting state.
 
 Now that you have an overview of the Raspberry Pi simulator, we'll explore the IoT Hub in Azure where you will create a new resource to capture data from the simulator.
 
