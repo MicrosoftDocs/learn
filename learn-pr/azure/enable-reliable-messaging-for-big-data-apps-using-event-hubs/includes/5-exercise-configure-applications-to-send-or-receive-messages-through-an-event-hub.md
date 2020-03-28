@@ -72,7 +72,7 @@ Use the following steps to clone the Event Hubs GitHub repository with `git`. Yo
 
 ## Edit SimpleSend.java
 
-We're going to use the built-in Cloud Shell Code editor. This is based on the Monaco editor and is similar to Visual Studio Code, but completely online.
+We're going to use the built-in Cloud Shell editor. This is based on the Monaco editor used by Visual Studio Code, but is completely online.
 
 We'll use the editor to modify the SimpleSend application and add your Event Hubs namespace, Event Hub name, shared access policy name, and primary key. The main commands are displayed at the bottom of the editor window. 
 
@@ -84,7 +84,7 @@ You'll need to write out your edits using <kbd>Ctrl+O</kbd>, and then <kbd>ENTER
     cd ~/azure-event-hubs/samples/Java/Basic/SimpleSend/src/main/java/com/microsoft/azure/eventhubs/samples/SimpleSend
     ```
 
-1. Open the code editor in the current folder. This will show a list of files on the left and an editor space on the right.
+1. Open the Cloud Shell editor in the current folder. This will show a list of files on the left and an editor space on the right.
 
     ```bash
     code .
@@ -149,7 +149,7 @@ In this unit, you'll use the EventProcessorHost method. You'll edit the EventPro
     cd ~/azure-event-hubs/samples/Java/Basic/EventProcessorSample/src/main/java/com/microsoft/azure/eventhubs/samples/eventprocessorsample
     ```
 
-1. Open the code editor.
+1. Open the Cloud Shell editor.
 
     ```bash
     code .
