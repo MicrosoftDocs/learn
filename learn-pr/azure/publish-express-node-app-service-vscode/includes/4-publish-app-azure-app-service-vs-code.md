@@ -1,4 +1,4 @@
-If you want to deploy your Express.js webapp to Azure App Service, there is an [Azure App Service](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureappservice) extension for Visual Studio Code that makes your work easier.
+If you want to deploy your Express.js webapp to Azure App Service, there is an Azure App Service extension for Visual Studio Code that makes your work easier.
 
 Suppose, you've completed your proof-of-concept webapp that provides a countdown to the new video game's launch date. Now, you want to show that it works in Azure App Service, which you want to use as the final host. You want a quick way to deploy the app and you'd like to be able to debug it in Azure as well.
 
