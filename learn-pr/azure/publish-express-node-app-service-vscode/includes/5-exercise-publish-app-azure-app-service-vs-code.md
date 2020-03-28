@@ -6,7 +6,7 @@ In this unit, you'll use VS Code to deploy the Express.js site, which you create
 
 ## Install the Azure App Service extension in VS Code
 
-The Azure App Service extension is not installed by default in VS Code. Let's start by installing it:
+The **Azure App Service** extension is not installed by default in VS Code. Let's start by installing it:
 
 1. In VS Code, on the **View** menu, select **Extensions**.
 1. In the **Search Extensions in Marketplace** textbox, type **Azure App Service**, and then select the **Azure App Service** extension.
