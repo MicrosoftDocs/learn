@@ -17,16 +17,16 @@ quiz:
     choices:
     - content: "When you need to encapsulate often-needed functionality in one place."
       isCorrect: false
-      explanation: "This statement is incorrect because encapsulation is actually a great reason to use functions."
+      explanation: "This statement is incorrect. Encapsulation is actually a great reason to create a function."
     - content: "When you need to help break down a larger problem into smaller, more manageable pieces."
       isCorrect: false
-      explanation: "This statement is incorrect because breakdown is actually a great reason to use functions."
+      explanation: "This statement is incorrect. Breakdown is actually a great reason to create a function."
     - content: "When you need to share functionality across one or more programs by adding it to a module."
       isCorrect: false
-      explanation: "This statement is incorrect because sharing functionality is actually a great reason to use functions."
+      explanation: "This statement is incorrect. Sharing functionality is actually a great reason to create a function."
     - content: "When you need to store information that will be used throughout your program."
       isCorrect: true
-      explanation: "This answer is correct because storing information isn't a good reason to create a function."
+      explanation: "This answer is correct. Storing information isn't a good reason to create a function."
   - content: "How can you make an input argument optional?"
     choices:
     - content: "By adding the **required** keyword."
@@ -38,6 +38,6 @@ quiz:
     - content: "By using keyword arguments."
       isCorrect: false
       explanation: "While you can use keyword arguments this way, they aren't the right technique to make an argument optional."
-    - content: "By checking the value to see if it equals **None**."
+    - content: "By checking its value to see if it equals **None**."
       isCorrect: false
       explanation: "This answer is incorrect. Your program will throw an error before it reaches any line of code that checks an input parameter for the value **None**."

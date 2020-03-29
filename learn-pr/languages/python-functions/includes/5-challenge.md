@@ -1,4 +1,4 @@
-Code challenges throughout these modules reinforce what you've learned and help you gain some confidence before continuing on.
+Code challenges throughout these modules reinforce what you learned and help you gain some confidence before continuing.
 
 In this challenge, you'll create a new module containing functions that let the provided code work as expected.
 
@@ -46,4 +46,4 @@ Rule 3: The `process_numbers()` function must select all numeric values, even th
 
 Rule 4: The `process_names()` function must select all string values that aren't numeric and return them as a list. The list must be sorted. The function must handle the possibility that the input parameter isn't formatted as a list. In that case, it must return an empty list.
 
-Whether you get stuck and need to peek at the solution or you finish successfully, continue on to view a solution to this challenge.
+Whether you get stuck and need to peek at the solution or you finish successfully, continue to view a solution to this challenge.

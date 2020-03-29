@@ -1,4 +1,6 @@
-In the previous unit, you got your first chance to create your own functions. You created functions with multiple input parameters and even input parameters with default values. You have additional options when it comes to input parameters. These options include arbitrary argument lists and keyword (or named) arguments.
+In the previous unit, you got your first chance to create your own functions. You created functions with multiple input parameters and input parameters with default values.
+
+You have additional options for input parameters. These options include arbitrary arguments lists and keyword (or named) arguments.
 
 ### Step 1 - Add a new file for this exercise to your working directory
 
@@ -33,7 +35,7 @@ arg = b
 arg = c
 ```
 
-Use argument lists when a function doesn't know how many arguments a caller will pass but wants to handle them all. Your code will likely need to iterate through each item in `args` and sum, concatenate, or do some other aggregate operation on those items.
+Use arbitrary arguments lists in functions when you don't know how many arguments callers will pass but want the functions to handle whatever is passed. Your code will likely need to iterate through each item in `args` and sum, concatenate, or do some other aggregate operation on those items.
 
 But what is the data type of `args`? Comment out the iteration statement and add `print` statements that display the content and data type of `args`.
 
@@ -60,17 +62,17 @@ When you run the code, you should see the following output:
 <class 'tuple'>
 ```
 
-An arguments list isn't of type **list** but rather is of type **tuple**.
+An arbitrary arguments list isn't of type **list** but rather is of type **tuple**.
 
-What is a tuple? In short, it's much like a list. The most notable difference is that you can't modify the contents of a tuple. In the current code sample, the function can't call **append()** or **remove()**, call **sort()** or **reverse()**, or assign a new value to an element.
+What is a tuple? In short, it's just like a list with a few differences. The most notable difference is that you can't modify the contents of a tuple. In the current code sample, the function can't call **append()** or **remove()**, call **sort()** or **reverse()**, or assign a new value to an element.
 
-For example, your code couldn't do this assignment:
+For example, your code can't do this assignment:
 
 ```python
 args[0] = 'z'
 ```
 
-Such code would produce this error:
+Such code produces this error:
 
 ```output
 TypeError: 'tuple' object does not support item assignment
@@ -78,7 +80,7 @@ TypeError: 'tuple' object does not support item assignment
 
 ### Step 3 - Comment out the code from the previous step and add code that accepts keyword arguments
 
-Similar to the arbitrary arguments list is keyword arguments, which are also known as named arguments. Callers can pass an arbitrary number of keyword arguments. Each argument must specify its name along with its value.
+Keyword arguments, which are also know as named arguments, are similar to arbitrary arguments lists. Callers can pass any number of keyword arguments. Each argument must specify its name along with its value.
 
 Comment out the code from the previous step and add the following code listing:
 
@@ -97,7 +99,7 @@ print_keyword_args(first='d', second='e', third='f')
 
 In this case, the code calls the `print_keyword_args()` function three times. Each time, it passes in one or more keyword arguments like `first='a'`. The function body can access a specific existing argument by using the `kwargs.get()` method.
 
-Each call passes in a name and a default value. In the current example, the function looks for a keyword named `'third'`. If `third` doesn't exist in `kwargs`, it's set it to the default value `None`.
+Each call to `kwargs.get()` passes in a name and a default value. In the current example, the function looks for a keyword named `'third'`. If `'third'` doesn't exist in `kwargs`, the variable `third` is set to the default value `None`.
 
 When you run the code, you should see the following output:
 
@@ -138,7 +140,7 @@ You added a `for` statement to iterate through the collection. If you're familia
 for key, value in kwargs.items():
 ```
 
-In this case, you're working with not a **list** object but rather a **dict** object or dictionary. A dictionary is like a list, except each item has two parts: a name (or key) and a value. You'll learn more about dictionaries in another module. In your code example, `key` is set to the argument's keyword, and `value` is set to the argument's value.
+In this case, you're working with not a **list** object but rather a **dict** object or dictionary. A dictionary is like a list, except each item has two parts: a name (or key) and a value. You'll learn more about dictionaries in another module. In your code example, `key` is set to an argument's keyword, and `value` is set to that argument's value.
 
 When you run the code, you should see the following output:
 
@@ -202,11 +204,11 @@ third = f
 third arg = f
 ```
 
-The dictionary is defined using a pair of braces (`{}`). Each item in the dictionary follows the format `'name': 'value'`. You also see that the data type of `kwargs` is `dict`.
+The dictionary is defined using braces symbols (`{}`). Each item in the dictionary follows the format `'<name>': '<value>'`. You also see that the data type of `kwargs` is `dict`.
 
 ## Recap
 
 In this exercise, you learned a few ways to make your functions more flexible.
 
-- You can define functions that use argument lists of arbitrary length. A list lets a caller pass in any number of arguments. In the previous examples, the `args` input parameter manages the entries as a **tuple** value.
-- You can define functions that use keyword or named arguments. A caller can pass in any number of named arguments. In the previous examples, the `kwargs` input parameter manages the entries as a **dict** value.
+- You can define functions that use arbitrary arguments lists. A list lets a caller pass in any number of arguments. In the previous examples, the `args` input parameter manages the entries as **tuple** values.
+- You can define functions that use keyword or named arguments. A caller can pass in any number of named arguments. In the previous examples, the `kwargs` input parameter manages the entries as **dict** values.

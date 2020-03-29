@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.languages.python-functions.exercise-parameters
-title: Exercise - Add arbitrary argument lists and keyword arguments to functions
+title: Exercise - Add argument lists and keyword arguments to functions
 metadata:
-  title: Exercise - Add arbitrary argument lists and keyword arguments to functions
+  title: Exercise - Add argument lists and keyword arguments to functions
   description: Define functions with advanced input parameters.
   ms.date: 02/19/2020
   author: bobtabor-msft
