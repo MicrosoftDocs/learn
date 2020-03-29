@@ -1,4 +1,4 @@
-When you have changes to deploy to the webapp, you can use the same tools in VS Code.
+When you have changes to deploy to the webapp, you can use the same tools in Visual Studio Code.
 
 Suppose you want to make an improvement to the proof-of-concept website: Instead of displaying the count down in milliseconds, you want to display it in days. You want to make this change and deploy it to Azure before you display the page to stakeholders.
 
