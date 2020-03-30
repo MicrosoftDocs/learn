@@ -44,11 +44,11 @@ The `type()` function merely examines the value you pass it as an input paramete
 
 ## The `isinstance()` function
 
-The next technique uses the `isinstance()` function, which allows you to assert that you expect a value to be a certain data type.  `isinstance()` will tell you whether the value is what you expected.  It returns the value `True` if your expectation is correct, and `False` if it's incorrect.
+The next technique uses the `isinstance()` function, which allows you to assert that you expect a value to be a certain data type. The `isinstance()` function tells you whether the value is what you expected.  It returns the value `True` if your expectation is correct and `False` if it's incorrect.
 
 ### Step 3 - Comment out the previous code and add code that utilizes the `isinstance()` function to the code file
 
-In your code file, comment out all the code you wrote previously by adding the number sign (**#**) symbol, followed by a space, at the beginning of each line.
+In your code file, comment out all the code that you wrote previously by adding a number sign (**#**), followed by a space, at the beginning of each line.
 
 Next, add code that uses `isinstance()` to check the data type of the various values.  When you're finished, your code file should look like this:
 
@@ -80,7 +80,7 @@ The `isinstance()` function returns a Boolean value.  Unlike the previous techni
 
 You'll explore the term *is an instance of* in an upcoming module that explores classes and objects.  But for now, you can think of it as an easy way to compare a value and the data type that you expect it to be.
 
-### Can you create a Boolean expression using the type() function?
+### Can you create a Boolean expression by using the `type()` function?
 
 You might be wondering whether using the following code is the same as using the `isinstance()` function:
 
@@ -93,9 +93,9 @@ print(type(7) == str)
 print(type('7') == int)
 print(type('7.1') == float)
 ```
-The short answer is "yes." In these simple cases they are roughly equivalent.  However, as you learn more about classes and objects, you'll see that this code might not give you the expected results in more complicated scenarios.  We recommend that you do not use the `type()` function with the intent to check for equality.
+The short answer is "yes." In these simple cases, they are roughly equivalent.  However, as you learn more about classes and objects, you'll see that this code might not give you the expected results in more complicated scenarios.  We recommend that you do not use the `type()` function with the intent to check for equality.
 
-Although the `type()` and `isinstance()` functions both allow you to evaluate the current data type, you need to use a different technique to help you understand whether a specified value *could be converted* to a different type.  You'll learn about a third technique that allows you to do that in the next unit.
+Although the `type()` and `isinstance()` functions both allow you to evaluate the current data type, you need to use a different technique to help you understand whether a specified value *could be converted* to a different type.  In the next unit, you'll learn about a third technique that allows you to do that.
 
 ### What is the relationship between data types and variables?
 
@@ -117,7 +117,7 @@ When you run the code, you should see the following output:
 <class 'bool'>
 ```
 
-In this code example, the only thing that changed was the literal value that you pointed the variable `x` to.  No data conversion was required to switch from `x` pointing to a string in the first line of code and then to an integer or Boolean value in the next lines of code.
+In this code example, the only thing that changed was the literal value that you pointed the variable `x` to.  No data conversion was required to switch from having `x` point to a string in the first line of code and then to an integer or Boolean value in the next lines of code.
 
 This is an important distinction in Python, and a key difference from other programming languages.
 
@@ -127,5 +127,5 @@ You learned some important ideas in this unit:
 
 - The `type()` function returns the data type of a specified value.
 - The `instanceof()` function allows you to check to see whether a value is an instance of a specified data type.
-- The `float` data type is for numeric values containing fractional values that are represented as numbers with values after the decimal point.
+- The `float` data type is for numeric values containing fractional values that are represented as numbers after the decimal point.
 - Values have data types, and variables do not.  A variable is merely pointed to a value, and it can point to any value of any data type.
