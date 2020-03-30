@@ -7,27 +7,15 @@ In the previous unit, you deployed the ratings API. You'll continue your deploym
 In this exercise, you'll:
 
 > [!div class="checklist"]
-> * Create a Kubernetes deployment manifest file for the web front end
-> * Apply the Kubernetes deployment manifest file
-> * Create a Kubernetes service manifest file to expose the web front end
-> * Apply the Kubernetes service manifest file to create a load-balanced service
-> * Test the web front end
-
-Before you start with the exercise steps, let's define some of the items mentioned.
-
-### What is a Kubernetes deployment?
-
-A Kubernetes deployment gives you a way to provide declarative updates for Pods. You describe the desired state of the workload in a deployment manifest file, and use `kubectl` to submit the manifest to the Deployment Controller. The Deployment Controller in turn actions the desired state of the defined workload, for example, deploy a new Pod, increase the Pod count, or decrease the Pod count.
-
-### What is a Kubernetes service?
-
-A Service is a Kubernetes object that provides stable networking for Pods by exposing them as a network service. You use Kubernetes Services to enable communication between nodes, pods, and users of your application, both internal and external, to your cluster. A Service, just like a node or Pod, gets an IP address assigned by Kubernetes when you create them. Services is also assigned a DNS name based on the service name, and an IP port.
+> - Create a Kubernetes deployment for the web front end
+> - Create a Kubernetes service manifest file to expose the web front end as a load-balanced service
+> - Test the web front end
 
 ### What is a LoadBalancer?
 
-A LoadBalancer allows you to expose a Kubernetes service on a public IP in the cluster. The type makes the service reachable from outside the cluster.
 
-## Create a Kubernetes deployment file for the ratings web front end
+
+## Create a Kubernetes deployment for the ratings web front end
 
 1. Create a file called `ratings-web-deployment.yaml` by using the integrated editor.
 
@@ -73,21 +61,13 @@ A LoadBalancer allows you to expose a Kubernetes service on a public IP in the c
 
 1. Review the file, and note the following points:
 
-    - **Image**
+    - `image`: You'll create a deployment running the image you pushed in the Container Registry instance you created earlier, for example, `acr4229.azurecr.io/ratings-web:v1`. The container listens to port `8080`. The deployment and the pods are labeled with `app=ratings-web`.
 
-       You'll create a deployment running the image you pushed in the Container Registry instance you created earlier, for example, `acr4229.azurecr.io/ratings-web:v1`. The container listens to port `8080`. The deployment and the pods are labeled with `app=ratings-web`.
+    - `env`: The ratings front end expects to connect to the API endpoint configured in an `API` environment variable. If you used the defaults and deployed the ratings API service in the `ratingsapp` namespace, the value of that should be `http://ratings-api.ratingsapp.svc.cluster.local`.
 
-    - **Environment variables**
-
-       The ratings front end expects to connect to the API endpoint configured in an `API` environment variable. If you used the defaults and deployed the ratings API service in the `ratingsapp` namespace, the value of that should be `http://ratings-api.ratingsapp.svc.cluster.local`.
-
-    - **Resource requests and limits**
-
-       Each container instance is given a minimum of 0.25 cores and 64 Mb of memory. The Kubernetes scheduler looks for a node with available capacity to schedule such a pod. A container might or might not be allowed to exceed its CPU limit for extended periods. But it won't be killed for excessive CPU usage. If a container exceeds its memory limit, it could be terminated.
+    - `resources`: Each container instance is given a minimum of 0.25 cores and 64 Mb of memory. The Kubernetes scheduler looks for a node with available capacity to schedule such a pod. A container might or might not be allowed to exceed its CPU limit for extended periods. But it won't be killed for excessive CPU usage. If a container exceeds its memory limit, it could be terminated.
 
 1. To save the file, select <kbd>Ctrl+S</kbd>. To close the editor, select <kbd>Ctrl+Q</kbd>.
-
-## Apply the Kubernetes deployment file
 
 1. Apply the configuration by using the `kubectl apply` command and deploy the application in the `ratingsapp` namespace.
 
@@ -131,9 +111,11 @@ A LoadBalancer allows you to expose a Kubernetes service on a public IP in the c
     ratings-web   1/1     1            1           2m
     ```
 
-## Create a Kubernetes service file for the ratings API service
+## Create a Kubernetes service for the ratings API service
 
 Your next step is to simplify the network configuration for your application workloads. Use a Kubernetes service to group your pods and provide network connectivity.
+
+You'll use a Kubernetes *LoadBalancer* instead of a *ClusterIP* for this service. A *LoadBalancer* allows you to expose a Kubernetes service on a public IP in the cluster. The type makes the service reachable from outside the cluster.
 
 1. Create a file called `ratings-web-service.yaml` by using the integrated editor.
 
@@ -160,23 +142,15 @@ Your next step is to simplify the network configuration for your application wor
 
 1. Review the file, and note the following points:
 
-    - **Selector**
+    - `selector`: The set of pods targeted by a service is determined by the selector. In the following example, Kubernetes load balances traffic to pods that have the label `app: ratings-web`. The label was defined when you created the deployment. The controller for the service continuously scans for pods that match that label to add them to the load balancer.
 
-       The set of pods targeted by a service is determined by the selector. In the following example, Kubernetes load balances traffic to pods that have the label `app: ratings-web`. The label was defined when you created the deployment. The controller for the service continuously scans for pods that match that label to add them to the load balancer.
+    - `ports`: A service can map an incoming `port` to `targetPort`. The incoming port is what the service responds to. The target port is what the pods are configured to listen to. For example, the service is exposed externally at port `80` and load balances the traffic to the ratings-web pods listening on port `8080`.
 
-    - **Ports**
-
-       A service can map an incoming `port` to `targetPort`. The incoming port is what the service responds to. The target port is what the pods are configured to listen to. For example, the service is exposed externally at port `80` and load balances the traffic to the ratings-web pods listening on port `8080`.
-
-    - **Type**
-
-       A service of type **LoadBalancer** creates a public IP address in Azure and assigns it to Azure Load Balancer. Choosing this value makes the service reachable from outside the cluster.
+    - `type`: A service of type `LoadBalancer` creates a public IP address in Azure and assigns it to Azure Load Balancer. Choosing this value makes the service reachable from outside the cluster.
 
 1. To save the file, select <kbd>Ctrl+S</kbd>. To close the editor, select <kbd>Ctrl+Q</kbd>.
 
-## Apply the Kubernetes service file to create a load-balanced service
-
-1. Apply the configuration by using the `kubectl apply` command. Deploy the service in the `ratingsapp` namespace.
+1. Apply the configuration by using the `kubectl apply` command to deploy the service in the `ratingsapp` namespace.
 
     ```bash
     kubectl apply \
@@ -212,8 +186,11 @@ Now that the ratings-web service has a public IP, open the IP in a web browser, 
 
 :::image type="content" source="../media/06-ratings-web.png" alt-text="Screenshot of the ratings-web application running in a browser.":::
 
+## Summary
 
 In this exercise, you created a deployment of **ratings-web** and exposed it to the internet through a LoadBalancer type service.
 
 - **Deployment/ratings-web**: The web front end.
 - **Service/ratings-web**: The load-balanced service, which is exposed on Azure Load Balancer through a public IP.
+
+Next, we'll improve the network accessability of the application by using Ingress.

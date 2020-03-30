@@ -10,28 +10,23 @@ The extra effort is that a Kubernetes load balancer service is a Layer 4 load ba
 
 :::image type="content" source="../media/07-arch-4.svg" border="false" alt-text="Diagram that shows the deployed resources on the Azure Kubernetes Service cluster.":::
 
-In this exercise, you'll:
+In this exercise, you will:
 
 > [!div class="checklist"]
-> * Deploy an NGINX ingress controller using Helm
-> * Edit the Kubernetes service manifest file for the ratings web service
-> * Create an ingress route file for the ratings web service
-> * Apply the Kubernetes ingress route file to create a load-balanced service
-> * Test the application
+> - Deploy a Kubernetes ingress controller running NGINX
+> - Reconfigure the ratings web service to use ClusterIP
+> - Create an Ingress resource for the ratings web service
+> - Test the application
 
-Before you start with the exercise steps, let's define some of the items mentioned.
+## Deploy a Kubernetes ingress controller running NGINX
 
-### What is Kubernetes ingress?
-
-A Kubernetes ingress controller is a piece of software that provides layer 7 load balancer features. Features such as reverse proxy, configurable traffic routing, and TLS termination for Kubernetes services. You install the ingress controller and configure it to replace the load balancer. With the ingress controller, you can now do all load balancing, authentication, TSL/SSL, and URL-based routing configuration without the need for extra software outside of the cluster.
+A Kubernetes ingress controller is software that provides layer 7 load balancer features. These features include reverse proxy, configurable traffic routing, and TLS termination for Kubernetes services. You install the ingress controller and configure it to replace the load balancer. With the ingress controller, you can now do all load balancing, authentication, TSL/SSL, and URL-based routing configuration without the need for extra software outside of the cluster.
 
 :::image type="content" source="../media/07-ratings-web-ingress.png" alt-text="Screenshot of the ratings-web application." loc-scope="other"::: <!-- no-loc -->
 
 There are several options for running Kubernetes ingress on Azure Kubernetes Service (AKS), such as Azure Application Gateway, Ambassador, HAProxy, Kong, NGINX, and Traefik. The ingress controllers are exposed to the internet by using a Kubernetes service of type LoadBalancer. The ingress controller watches and implements Kubernetes ingress resources, which create routes to application endpoints. Here, you'll deploy a basic Kubernetes ingress controller by using NGINX. Then you'll configure the ratings front-end service to use that ingress for traffic.
 
-## Deploy the NGINX ingress controller with Helm
-
-NGINX ingress controller is deployed as any other deployment in Kubernetes. You can either use a Deployment manifest file and specify the NGINX ingress controller image or you can use an nginx-ingress Helm chart. The NGINX helm chart simplifies the deployment configuration required for the ingress controller. For example, you don't need to define a configuration mapping or configure a service account for the NGINX deployment. Here, you'll use a Helm chart to install the ingress controller on your cluster.
+NGINX ingress controller is deployed as any other deployment in Kubernetes. You can either use a deployment manifest file and specify the NGINX ingress controller image or you can use an nginx-ingress Helm chart. The NGINX helm chart simplifies the deployment configuration required for the ingress controller. For example, you don't need to define a configuration mapping or configure a service account for the NGINX deployment. Here, you'll use a Helm chart to install the ingress controller on your cluster.
 
 1. Start by creating a namespace for the ingress.
 
@@ -79,9 +74,9 @@ NGINX ingress controller is deployed as any other deployment in Kubernetes. You 
 
     Make a note of that EXTERNAL-IP, for example, 13.68.177.68.
 
-## Edit the Kubernetes service file for the ratings web service
+## Reconfigure the ratings web service to use ClusterIP
 
-There's no need to use a public IP for the service because we're going to expose the deployment by using an ingress. That's why you can set the type of service to be `ClusterIP` instead of `LoadBalancer`.
+There's no need to use a public IP for the service because we're going to expose the deployment through ingress. Here, you'll change the service to use `ClusterIP` instead of `LoadBalancer`.
 
 1. Edit the file called `ratings-web-service.yaml` by using the integrated editor.
 
@@ -108,7 +103,7 @@ There's no need to use a public IP for the service because we're going to expose
 
 1. To save the file, select <kbd>Ctrl+S</kbd>. To close the editor, select <kbd>Ctrl+Q</kbd>.
 
-1. You can't change the value of `type` on a deployed service isn't allowed. You have to delete the service and re-create it with the changed configuration.
+1. You can't update the value of `type` on a deployed service. You have to delete the service and re-create it with the changed configuration.
 
     Run the following command to delete the service.
 
@@ -126,7 +121,13 @@ There's no need to use a public IP for the service because we're going to expose
         -f ratings-web-service.yaml
     ```
 
-## Create an ingress route file for the ratings web service
+## Create an Ingress resource for the ratings web service
+
+In order for your Kubernetes Ingress controller to route requests to the ratings-web service, you will need an Ingress resource. The Ingress resource is where you specify the configuration of the Ingress controller.
+
+Each Ingress resource will contain one or more Ingress rules, which specify an optional host, a list of paths to evaluate in the request, and a backend to route the request to. These rules are evaluated to determine the route that each request should take.
+
+Let's set up an Ingress resource with a route to the ratings-web service.
 
 1. Edit the file called `ratings-web-ingress.yaml` by using the integrated editor.
 
@@ -161,8 +162,6 @@ There's no need to use a public IP for the service because we're going to expose
 
 1. To save the file, select <kbd>Ctrl+S</kbd>. To close the editor, select <kbd>Ctrl+Q</kbd>.
 
-## Apply the Kubernetes ingress route file to create a load-balanced service
-
 1. Apply the configuration by using the `kubectl apply` command and deploy the ingress route file in the `ratingsapp` namespace.
 
     ```bash
@@ -179,8 +178,10 @@ There's no need to use a public IP for the service because we're going to expose
 
 ## Test the application
 
-Open the host name you configured on the ingress in a web browser to view and interact with the application. For example, at http:\//frontend.13-68-177-68.nip.io.
+Open the host name you configured on the ingress in a web browser to view and interact with the application. For example, at http://frontend.13-68-177-68.nip.io.
 
 ![Screenshot of the ratings-web application](../media/07-ratings-web-ingress.png)
 
-In this exercise, you deployed an NGINX ingress controller and updated the **ratings-web** service to be accessible only from within the cluster. You then created an ingress route to reverse proxy the deployment of the **ratings-web** service through a host name.
+## Summary
+
+In this exercise, you deployed an NGINX Ingress controller and updated the **ratings-web** service to be accessible only from within the cluster. You then created an Ingress resource with a route to reverse proxy the deployment of the **ratings-web** service through a host name.

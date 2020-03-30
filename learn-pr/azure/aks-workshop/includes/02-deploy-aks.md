@@ -2,14 +2,14 @@ Fruit Smoothies wants to use Kubernetes as their compute platform. The developme
 
 To do this, you need to deploy the foundation of your Kubernetes environment.
 
-In this exercise, you'll:
+In this exercise, you will:
 
 > [!div class="checklist"]
-> * Create a new resource group.
-> * Configure cluster networking.
-> * Create an Azure Kubernetes Service cluster.
-> * Connect to the Kubernetes cluster by using `kubectl`.
-> * Create a Kubernetes namespace.
+> - Create a new resource group.
+> - Configure cluster networking.
+> - Create an Azure Kubernetes Service cluster.
+> - Connect to the Kubernetes cluster by using `kubectl`.
+> - Create a Kubernetes namespace.
 
 [!include[](../../../includes/azure-exercise-subscription-prerequisite.md)]
 [!include[](../../../includes/azure-cloudshell-copy-paste-tip.md)]
@@ -132,25 +132,15 @@ With the new virtual network in place, you can go ahead and create your new clus
 
     Note the following deployment configuration:
 
-    - `--vm-set-type`
+    - `--vm-set-type`: We're specifying that the cluster is created by using virtual machine scale sets. The virtual machine scale sets enable you to switch on the cluster autoscaler when needed.
 
-        We're specifying that the cluster is created by using virtual machine scale sets. The virtual machine scale sets enable you to switch on the cluster autoscaler when needed.
+    - `--network-plugin`: We're specifying the creation of the AKS cluster by using the CNI plug-in.
 
-    - `--network-plugin`
+    - `--service-cidr`: This address range is the set of virtual IPs that Kubernetes assigns to internal services in your cluster. The range must not be within the virtual network IP address range of your cluster. It should be different from the subnet created for the pods.
 
-        We're specifying the creation of the AKS cluster by using the CNI plug-in.
+    - `--dns-service-ip`: The IP address is for the cluster's DNS service. This address must be within the *Kubernetes service address range*. Don't use the first IP address in the address range, such as 0.1. The first address in the subnet range is used for the *kubernetes.default.svc.cluster.local* address.
 
-    - `--service-cidr`
-
-        This address range is the set of virtual IPs that Kubernetes assigns to internal services in your cluster. The range must not be within the virtual network IP address range of your cluster. It should be different from the subnet created for the pods.
-
-    - `--dns-service-ip`
-
-        The IP address is for the cluster's DNS service. This address must be within the *Kubernetes service address range*. Don't use the first IP address in the address range, such as 0.1. The first address in the subnet range is used for the *kubernetes.default.svc.cluster.local* address.
-
-    - `--docker-bridge-address`
-
-        The Docker bridge network address represents the default *docker0* bridge network address present in all Docker installations. AKS clusters or the pods themselves don't use *docker0* bridge. However, you have to set this address to continue supporting scenarios such as *docker build* within the AKS cluster. It's required to select a classless inter-domain routing (CIDR) for the Docker bridge network address. If you don't set a CIDR, Docker chooses a subnet automatically. This subnet could conflict with other CIDRs. Choose an address space that doesn't collide with the rest of the CIDRs on your networks, which includes the cluster's service CIDR and pod CIDR.
+    - `--docker-bridge-address`: The Docker bridge network address represents the default *docker0* bridge network address present in all Docker installations. AKS clusters or the pods themselves don't use *docker0* bridge. However, you have to set this address to continue supporting scenarios such as *docker build* within the AKS cluster. It's required to select a classless inter-domain routing (CIDR) for the Docker bridge network address. If you don't set a CIDR, Docker chooses a subnet automatically. This subnet could conflict with other CIDRs. Choose an address space that doesn't collide with the rest of the CIDRs on your networks, which includes the cluster's service CIDR and pod CIDR.
 
 ## Test cluster connectivity by using `kubectl`
 

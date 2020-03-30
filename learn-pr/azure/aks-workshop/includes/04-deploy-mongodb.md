@@ -6,12 +6,12 @@ In this exercise, you'll deploy MongoDB to the Azure Kubernetes Service (AKS) cl
 
 This example architecture deploys MongoDB on the cluster for the application to use to store data. While this is acceptable for test and development environments, it's not recommended for production environments. For production, it's recommended to store your application state and data in a scalable data storage platform, such as CosmosDB.
 
-In this exercise, you'll:
+In this exercise, you will:
 
 > [!div class="checklist"]
-> * Configure the Helm stable repository
-> * Install the MongoDB chart
-> * Create a Kubernetes secret to hold database credentials
+> - Configure the Helm stable repository
+> - Install the MongoDB chart
+> - Create a Kubernetes secret to hold database credentials
 
 ## Add the Helm stable repository
 

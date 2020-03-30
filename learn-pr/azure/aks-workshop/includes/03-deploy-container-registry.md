@@ -7,13 +7,13 @@ The Fruit Smoothies software development and operations teams made the decision 
 
 The teams made the decision to store all containers in a central and secure location and the decision made is to use Azure Container Registry.
 
-In this exercise, you'll:
+In this exercise, you will:
 
 > [!div class="checklist"]
-> * Create a container registry by using the Azure CLI
-> * Build container images by using Azure Container Registry Tasks
-> * Verify container images in Azure Container Registry
-> * Configure an AKS cluster to authenticate to an Azure Container Registry
+> - Create a container registry by using the Azure CLI
+> - Build container images by using Azure Container Registry Tasks
+> - Verify container images in Azure Container Registry
+> - Configure an AKS cluster to authenticate to an Azure Container Registry
 
 ## Create a container registry
 

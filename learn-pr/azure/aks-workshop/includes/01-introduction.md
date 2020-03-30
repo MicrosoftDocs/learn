@@ -32,8 +32,6 @@ Our goal is to deploy an Azure managed Kubernetes service, Azure Kubernetes Serv
 
 :::image type="content" source="../media/02-arch-tmp.svg" border="false" alt-text="Diagram that shows the deployed resources on the Azure Kubernetes Service cluster.":::
 
-<!-- [![](../media/02-arch-tmp.svg "Diagram that shows the deployed resources on the Azure Kubernetes Service cluster.")](../media/02-arch-tmp.svg#lightbox) -->
-
 There are several tasks that you'll complete to show how Kubernetes abstracts away complex container management and provides you with declarative configuration to orchestrate containers.
 
 1. Use AKS to deploy a Kubernetes cluster.
