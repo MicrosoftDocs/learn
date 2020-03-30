@@ -10,6 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   zone_pivot_groups: dev-lang-csharp-python
+azureSandbox: false
 durationInMinutes: 20
 content: |
   [!include[](includes/5-exercise-convert-speech-file-to-text.md)]
