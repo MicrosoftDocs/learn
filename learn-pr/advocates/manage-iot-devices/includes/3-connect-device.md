@@ -83,7 +83,7 @@ So what's happening? IoT hub is receiving the device-to-cloud messages sent from
 
 1. In your IoT Hub, under **Monitoring**, select **Metrics**.
 
-1. For **Metric** locate  **Telemetry messages sent** - it is near the end of the list of available metrics. Select **Sum**, for **Aggregation**.
+1. For **Metric** locate  **Telemetry messages sent** - it's near the end of the list of available metrics. Select **Sum**, for **Aggregation**.
 
 1. Change the time range to **Last 30 minutes**, in the box top-right. Give it a few minutes as you wait for the data to come into the picture.
 

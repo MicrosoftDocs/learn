@@ -1,4 +1,4 @@
-Raspberry Pi boards are popular IoT devices for eduction, for testing ideas, and even for building some worthwhile systems. While the cost of this board is not prohibitive, we can test out the Raspberry Pi functionality before investing in actual hardware.
+Raspberry Pi boards are popular IoT devices for eduction, for testing ideas, and even for building some worthwhile systems. While the cost of this board isn't prohibitive, we can test out the Raspberry Pi functionality before investing in actual hardware.
 
 Microsoft has built an online [Raspberry Pi Azure IoT Simulator](https://azure-samples.github.io/raspberry-pi-web-simulator?azure-portal=true), allowing users to control the emulated hardware via code. The simulator portrays a graphic of a Raspberry Pi connected to a temperature, humidity, and pressure sensor, and a red LED. There is a breadboard, allowing circuits to be wired together. The displayed side panel
 allows users to enter Node.js code to control the LED, and collect dummy data from the simulated sensor.

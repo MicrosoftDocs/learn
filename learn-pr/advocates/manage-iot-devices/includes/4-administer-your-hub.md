@@ -12,7 +12,7 @@ The overview contains some useful data, if you scroll to the bottom of the page 
 
 [![Screenshot showing the default charts in the IoT hub overview](../media/iot-admin-overview.png)](../media/iot-admin-overview.png#lightbox)
 
-The overview, however, is not the most useful of the menu entries, as we'll see as we explore the menu. You can click on **Activity log**, though you may not understand what and why the entries are there. Logs often contain too much information! Also, click on **Diagnose and solve problems**. This page is a resource to go to if issues arise. No guarantee it will have the information you need, but it might.
+The overview, however, isn't the most useful of the menu entries, as we'll see as we explore the menu. You can click on **Activity log**, though you may not understand what and why the entries are there. Logs often contain too much information! Also, click on **Diagnose and solve problems**. This page is a resource to go to if issues arise. No guarantee it will have the information you need, but it might.
 
 [![Screenshot showing the troubleshooting options for an IoT hub](../media/iot-admin-common-problems.png)](../media/iot-admin-common-problems.png#lightbox)
 

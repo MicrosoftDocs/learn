@@ -15,14 +15,14 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "True or false: IoT Hub is an Azure service that enables back-end developers to build device management solutions?"
+  - content: "True or false: IoT Hub is an Azure service that enables back-end developers to build remote device management solutions?"
     choices:
     - content: "True"
       isCorrect: true
-      explanation: "Azure IoT Hub provides features and an extensibility model that enables device and back-end developers to build robust device management solutions. Devices range from constrained sensors and single purpose microcontrollers, to powerful gateways that route communications for groups of devices."
+      explanation: "Devices range from sensors, to powerful gateways that route communications for groups of devices."
     - content: "False"
       isCorrect: false
-      explanation: "Azure IoT Hub provides features and an extensibility model that enables device and back-end developers to build robust device management solutions. Devices range from constrained sensors and single purpose microcontrollers, to powerful gateways that route communications for groups of devices."    
+      explanation: "Devices range from sensors, to powerful gateways that route communications for groups of devices."    
 
   - content: "True or false: you can't receive telemetry data in the Azure portal when using the Raspberry Pi Azure IoT Simulator?"
     choices:
@@ -37,16 +37,16 @@ quiz:
     choices:
     - content: 'Properties and Settings'
       isCorrect: false
-      explanation: These are left-hand menu entries, not metrics.
+      explanation: Properties and Setting are left-hand menu entries, not metrics.
     - content: 'Device to cloud messages, and Cloud to device messages'
       isCorrect: false
-      explanation: There are a range of metrics for messages going either way, but cloud to device messages are not shown by default.
+      explanation: There are a range of metrics for messages going either way, but cloud to device messages aren't shown by default.
     - content: "Telemetry data sent, and Successful twin reads from back end"
       isCorrect: true
       explanation: For a single device, the first metric might show a few hundred messages, and the second metric will show 1.
     - content: "Device to cloud messages, and Device twin operations"
       isCorrect: false
-      explanation: Close, these are the titles of the tiles, not the names of the metrics.
+      explanation: Close, these phrases are the titles of the tiles, not the names of the metrics.
 
   - content: 'What left-hand menu option do you select to view the hub keys?'
     choices:
