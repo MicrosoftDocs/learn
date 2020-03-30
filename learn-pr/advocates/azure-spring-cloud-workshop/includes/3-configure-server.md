@@ -47,7 +47,7 @@ Once the token is generated, leave that tab open until the end of this section.
 
 ## Configure Azure Spring Cloud to access the Git repository
 
-- Go to [the Azure portal](https://portal.azure.com/?WT.mc_id=azurespringcloud-mslearn-judubois).
+- Go to [the Azure Portal](https://portal.azure.com/?WT.mc_id=azurespringcloud-mslearn-judubois).
 - Go to the overview page of your Azure Spring Cloud server and select "Config server" in the menu
 - Configure the repository we previously created:
   - Add the repository URL, for example `https://github.com/<YOUR_USERNAME>/azure-spring-cloud-config.git`.

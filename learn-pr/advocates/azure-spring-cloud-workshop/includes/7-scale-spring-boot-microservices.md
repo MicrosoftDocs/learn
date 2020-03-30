@@ -5,7 +5,7 @@ Spring Boot microservices and gateways running inside Azure Spring Cloud can be 
 
 ## Scaling the "todo-service" microservice
 
-- Go to [the Azure portal](https://portal.azure.com/?WT.mc_id=azurespringcloud-mslearn-judubois).
+- Go to [the Azure Portal](https://portal.azure.com/?WT.mc_id=azurespringcloud-mslearn-judubois).
 - Go to the overview page of your Azure Spring Cloud cluster and select "Apps" in the menu.
 - Select the "todo-service" application.
 - Select "Scale" in the left hand-side menu.
