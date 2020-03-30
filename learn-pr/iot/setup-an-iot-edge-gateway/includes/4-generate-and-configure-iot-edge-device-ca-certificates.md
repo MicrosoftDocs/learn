@@ -1,36 +1,36 @@
-Security is our priority, and we need to ensure that only authorized devices are able to connect and publish data into our IoT Edge Gateway.  Certificate based authentication will allow us to keep out unauthorized devices and secure our transmission channel back to our IoT Hub.
+Security is our priority, and we need to ensure that only authorized devices are able to connect and publish data into our IoT Edge Gateway.  Certificate-based authentication will allow us to keep out unauthorized devices and secure our transmission channel back to our IoT Hub.
 
 [![security](../media/security.png)](../media/security.png#lightbox)
 
-The process is very similar to how we gain access into the physical manufacturing building.  
+The process is similar to how we gain access into the physical manufacturing building.  
 
 We present credentials to a guard (the IoT Edge Gateway), who validates that we are who we say we are.  If the credentials check out, then we are able to pass into our destination (the Azure IoT Hub).
 
 [![Transparent Gateway Devices Diagram](../media/transparent-gateway-devices.png)](../media/transparent-gateway-devices.png#lightbox)
 
-In this unit, you will generate test certificates using tooling on Linux. This will allow us to ensure that only securely authenticated downstream devices are able to communicate with the IoT Edge Gateway.
+In this unit, you'll generate test certificates using tooling on Linux. The certs will ensure that only securely authenticated downstream devices are able to communicate with the IoT Edge Gateway.
 
 ## Generate and Configure IoT Edge Device CA Certificates
 
 You will perform these steps on the Azure IoT Edge Gateway Virtual Machine that was deployed in the previous unit.
 
-1. Navigate to the Azure IoT Edge Gateway Virtual Machine within the Azure Portal.  It should be named according to the following format:
+1. Navigate to the Azure IoT Edge Gateway Virtual Machine within the Azure portal.  It should be named according to the following format:
  `vm-0000000000000`
 
 1. On the **Overview** pane of the **Virtual machine** blade, click the **Connect** button at the top.
 
 1. Within the **Connect to virtual machine pane**, select the **SSH** option, then look for the section "**Run the example command below to connect to your VM.**".
 
-    This section should contain an entry that looks like the following
+    This section should contain an entry that looks similar to the text below:
     
     `ssh -i <private key path> usernam@az-220-vm-edgegw-{YOUR-ID}.westus.cloudapp.azure.com
     `
 
-    This is a sample SSH command that will be used to connect to the virtual machine that contains the hostname for the VM and the Administrator username. Modify this  command so that it is formatted similar to `ssh username@az-220-vm-edgegw-{YOUR-ID}.westus.cloudapp.azure.com`.
+    This entry is a sample SSH command that will be used to connect to the virtual machine that contains the hostname for the VM and the Administrator username. Modify this  command so that it is formatted similar to `ssh username@az-220-vm-edgegw-{YOUR-ID}.westus.cloudapp.azure.com`.
 
-1. At the top of the Azure Portal click on the **Cloud Shell** icon to open up the **Azure Cloud Shell** within the Azure Portal. When the pane opens, choose the option for the **Bash** terminal within the Cloud Shell.
+1. At the top of the Azure portal click on the **cloud shell** icon to open up the **Azure cloud shell** within the Azure portal. When the pane opens, choose the option for the **Bash** terminal within the cloud shell.
 
-1. Within the Cloud Shell, paste in the modified `ssh` command, and press **Enter**.
+1. Within the cloud shell, paste in the modified `ssh` command, and press **Enter**.
 
 1. When prompted with "**Are you sure you want to continue connecting?**", type `yes` and press Enter. This prompt is a security confirmation since the certificate used to secure the connection to the VM is self-signed. The answer to this prompt will be remembered for subsequent connections, and is only prompted on the first connection.
 
@@ -77,7 +77,7 @@ You will perform these steps on the Azure IoT Edge Gateway Virtual Machine that 
      certGen.sh  openssl_root_ca.cnf
     ```
 
-    Make note that the directory where you're running the script is located at `~/certificates`. This maps to the `/home/<username>/certificates` directory, where `<username>` is the user your logged into SSH with. You will need to use this directory location later when configuring Azure IoT Edge to use the generated certificates.
+    Make note that the directory where you're running the script is located at `~/certificates`. This path maps to the `/home/<username>/certificates` directory, where `<username>` is the user your logged into SSH with. You will need to use this directory location later when configuring Azure IoT Edge to use the generated certificates.
 
 1. The `certGen.sh` helper script is run with the `create_root_and_intermediate` parameter to generate the root CA certificate and one intermediate certificate. Run the following command to do this:
 
@@ -155,9 +155,9 @@ You will perform these steps on the Azure IoT Edge Gateway Virtual Machine that 
 
     | Setting  |  Purpose |
     |----------|:-------------:|
-    | `device_ca_cert` |  This is the entry for the Device CA Certificate for the IoT Edge Device. | 
-    | `device_ca_pk` |    This is the entry for the Device CA Private Key for the IoT Edge Device.   | 
-    | `trusted_ca_certs` | This is the entry for the Root CA Certificate. This certificate must contain all the trusted CA certificates required for Edge module communications.
+    | `device_ca_cert` |  This setting is for the Device CA Certificate for the IoT Edge Device. | 
+    | `device_ca_pk` |    This setting is for the Device CA Private Key for the IoT Edge Device.   | 
+    | `trusted_ca_certs` | This setting is for the Root CA Certificate. This certificate must contain all the trusted CA certificates required for Edge module communications.
 
     >[!NOTE]
     > Here are some tips for using **vi** when editing the `config.yaml file`: 
@@ -175,12 +175,12 @@ You will perform these steps on the Azure IoT Edge Gateway Virtual Machine that 
 
     If the Edge runtime does not restart successfully, ensure that you have modified `/etc/iotedge/config.yaml` appropriately.
 
-1. The `MyEdgeDeviceCA` certificate needs to be downloaded from the Azure IoT Edge Gateway Virtual Machine so it can be used to configure the IoT Edge device enrollment within Azure IoT Hub Device Provisioning Service. Type `exit` in the **Azure Cloud Shell** to end the SSH session.  
+1. The `MyEdgeDeviceCA` certificate needs to be downloaded from the Azure IoT Edge Gateway Virtual Machine so it can be used to configure the IoT Edge device enrollment within Azure IoT Hub Device Provisioning Service. Type `exit` in the **Azure cloud shell** to end the SSH session.  
 
     ```bash
      exit
     ```
-1. Within the **Cloud Shell** run the following commands to download the `~/certificates` directory and its contents from the virtual machine to the **Cloud Shell** storage:
+1. Within the **cloud shell** run the following commands to download the `~/certificates` directory and its contents from the virtual machine to the **cloud shell** storage:
 
     ```bash
      mkdir certificates
@@ -191,7 +191,7 @@ You will perform these steps on the Azure IoT Edge Gateway Virtual Machine that 
     
     When executing the command, enter the Admin password for the VM when prompted.
 
-1. Once the command has executed, it will have downloaded a copy of the `~/certificates` directory with the certificate and key files over SSH to the Cloud Shell storage. You can verify the file has been downloaded by running the `ls` command within the `~/certificates` directory to view its contents.
+1. Once the command has executed, it will have downloaded a copy of the `~/certificates` directory with the certificate and key files over SSH to the cloud shell storage. You can verify the file has been downloaded by running the `ls` command within the `~/certificates` directory to view its contents.
 
     ```bash
      User@Azure:~$ cd certificates
@@ -200,6 +200,6 @@ You will perform these steps on the Azure IoT Edge Gateway Virtual Machine that 
      certs       index.txt  index.txt.attr.old  newcerts       private              serial.old
      ```
     
-     Once the files are copied to the **Azure Cloud Shell** storage, from the virtual machine, you will be able to easily download any of the IoT Edge Device certificate and key files to your local machine as necessary. Files can be downloaded from the Azure Cloud Shell using the `download <filename>` command.
+     Once the files are copied to the **Azure cloud shell** storage, from the virtual machine, you will be able to easily download any of the IoT Edge Device certificate and key files to your local machine as necessary. Files can be downloaded from the Azure cloud shell using the `download <filename>` command.
 
-     Congratulations, that's the end of the unit! In the next unit, we will setup an IoT Edge Gateway Hostname.
+     Congratulations, that's the end of the unit! In the next unit, we'll set up an IoT Edge Gateway Hostname.
