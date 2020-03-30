@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.languages.python-datatypes-numeric-operations.solution-2
-title: Solution - Simple calculator
+title: Solution - Build a simple calculator
 metadata:
-  title: Solution - Simple calculator
-  description: One possible solution to the challenge in the previous unit.
+  title: Solution - Built a simple calculator
+  description: One possible solution to the challenge presented in the preceding unit.
   ms.date: 02/18/2020
   author: bobtabor-msft
   ms.author: rotabor
