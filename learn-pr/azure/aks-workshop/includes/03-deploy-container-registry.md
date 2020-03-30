@@ -15,9 +15,7 @@ In this exercise, you'll:
 > * Verify container images in Azure Container Registry
 > * Configure an AKS cluster to authenticate to an Azure Container Registry
 
-Before you start with the exercise steps, let's define some of the items mentioned.
-
-### What is Azure Container Registry (ACR)?
+## Create a container registry
 
 Azure Container Registry is a managed Docker registry service based on the open-source Docker Registry 2.0. Container Registry is private and hosted in Azure. You use it to build, store, and manage images for all types of container deployments.
 
@@ -25,11 +23,11 @@ Container images can be pushed and pulled with Container Registry by using the D
 
 Azure Container Registry Tasks can also build container images in Azure. Tasks use a standard Dockerfile to create and store a container image in Azure Container Registry without the need for local Docker tooling. With Azure Container Registry Tasks, you can build on-demand or fully automate container image builds by using DevOps processes and tooling.
 
-## Create a container registry
+Let's deploy a container registry for the Fruit Smoothies environment.
 
 1. The container registry name must be unique within Azure and contain between 5 and 50 *alphanumeric* characters. For learning purposes, run this command from Azure Cloud Shell to create a Bash variable that holds a unique name.
 
-    ```azurecli
+    ```bash
     ACR_NAME=acr$RANDOM
     ```
 
@@ -85,7 +83,7 @@ Azure Container Registry Tasks can also build container images in Azure. Tasks u
 
 ## Build the container images by using Azure Container Registry Tasks
 
-The Fruit Smoothies rating app makes use of two coded container images, one for the front-end website and one for the RESTfull API web service. Your development teams use the local Docker tooling to build the container images for the website and API web service. A third container is used to deploy the document database provided by the database publisher and will not be stored the database container in ACR.
+The Fruit Smoothies rating app makes use of two coded container images, one for the front-end website and one for the RESTful API web service. Your development teams use the local Docker tooling to build the container images for the website and API web service. A third container is used to deploy the document database provided by the database publisher and will not be stored the database container in ACR.
 
 You can also use Azure Container Registry to build these containers using a standard Dockerfile to provide build instructions. With Azure Container Registry, you can reuse any Dockerfile currently in your environment, which includes multi-staged builds.
 
@@ -97,13 +95,13 @@ Clone the repository and then build the docker image using the included Dockerfi
 
 1. Clone the repository onto Cloud Shell.
 
-    ```azurecli
+    ```bash
     git clone https://github.com/MicrosoftDocs/mslearn-aks-workshop-ratings-api.git
     ```
 
 1. Change into the newly cloned directory.
 
-    ```azurecli
+    ```bash
     cd mslearn-aks-workshop-ratings-api
     ```
 
@@ -118,7 +116,7 @@ Clone the repository and then build the docker image using the included Dockerfi
     > [!NOTE]
     > Don't forget the period `.` at the end of the preceding command. It represents the source directory that contains the **Dockerfile**. In this case, it's the current directory. Because you didn't specify the name of a file with the `--file` parameter, the command looks for a file called **Dockerfile** in the current directory.
 
-    In a few minutes, you'll see a response similar to this example.
+    After a few minutes, you'll see a response similar to this example.
 
     ```output
     2019/12/28 02:04:11 Successfully pushed image: acr4229.azurecr.io/ratings-api:v1
@@ -153,19 +151,19 @@ The steps you follow are the same as before. Clone the repository and then build
 
 1. First, change back to the home directory.
 
-    ```azurecli
+    ```bash
     cd ~
     ```
 
 1. Clone the *ratings-web* repo.
 
-    ```azurecli
+    ```bash
     git clone https://github.com/MicrosoftDocs/mslearn-aks-workshop-ratings-web.git
     ```
 
 1. Change into the newly cloned directory.
 
-    ```azurecli
+    ```bash
     cd mslearn-aks-workshop-ratings-web
     ```
 
@@ -239,5 +237,9 @@ az aks update \
     --resource-group $RESOURCE_GROUP \
     --attach-acr $ACR_NAME
 ```
+
+## Summary
+
+In this exercise you created a container registry for the Fruit Smoothies application. You then built and added continer images for the *ratings-api* and *ratings-web* to the container registry. You then verified the container images, and configured your AKS cluster to authenticate to the container registry.
 
 Next, you'll take the first step to deploy your ratings app. The first component you'll deploy is MongoDB as your document store database, and you'll see how to use the HELM package manager for Kubernetes.
