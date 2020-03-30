@@ -8,9 +8,9 @@ IT professionals that have plenty of experience with computer technology, but ar
 
 A "thing" in the IoT world is often a sensor device. The device will have some processing power, but isn't a computer that can compare with a smartphone, laptop, PC, or workstation. The sensor device typically takes some measurements (temperature, velocity, acceleration, humidity, and so on), at a specified time interval, and transmits the values for processing to the cloud. These values are called _telemetry_.
 
-As another, topical, example. An IoT system might capture and run predictive analytics on data from health monitors.Doctors could then make informed treatment plans for their patients. All handled remotely.
+As another, topical, example. An IoT system might capture and run predictive analytics on data from health monitors. Doctors could then make informed treatment plans for their patients. All handled remotely.
 
-In addition to the transmitting of data, IoT devices can receive some instructions from the cloud. For example, the time interval might be changed, additional sensors can be enabled or disabled. Or, for a more complex device that both records telemetry, and can change settings using a fan, the device can receive from the cloud _desired_ values. The device will then adjust the fan settings to try to match the desired values it has received. These values could be temperature, humidity, velocity, and so on.
+In addition to the transmitting of data, IoT devices can receive some instructions from the cloud. For example, the time interval might be changed, additional sensors could be enabled or disabled. For a more complex device, one that both records telemetry, and changes settings, the device can receive _desired_ values from the cloud. The device will then adjust its settings to try to match the desired values it has received. These values could be temperature, humidity, velocity, and so on.
 
 In the world of IoT devices, there are the key concepts of _recorded_ values, and _desired_ values. In this module, we'll only be testing recorded values.
 
