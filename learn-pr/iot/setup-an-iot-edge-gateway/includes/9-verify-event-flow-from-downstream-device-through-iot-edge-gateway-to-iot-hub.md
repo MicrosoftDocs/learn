@@ -10,9 +10,9 @@ In this unit, you'll use the Azure CLI to monitor the events sent to Azure IoT H
 
     If you have more than one Azure account, ensure that you are logged in with the account that is tied to the subscription that you intend to use for this course.
 
-1. Navigate to the Azure portal and click on the **cloud shell** icon to open up the **Azure cloud shell**. When the pane opens, choose the option for the **Bash** terminal within the cloud shell.
+1. Navigate to the Azure portal and click on the **Cloud Shell** icon to open up the **Azure Cloud Shell**. When the pane opens, choose the option for the **Bash** terminal within the Cloud Shell.
 
-1. Within the **cloud shell**, run the following command to monitor the stream of events flowing to the Azure IoT Hub. This step will verify that events from the simulate device, being sent to the IoT Edge Gateway, are being received by the Azure IoT Hub.
+1. Within the **Cloud Shell**, run the following command to monitor the stream of events flowing to the Azure IoT Hub. This step will verify that events from the simulate device, being sent to the IoT Edge Gateway, are being received by the Azure IoT Hub.
 
     ```bash
     az extension add --name azure-iot
