@@ -41,7 +41,7 @@ Even the most basic program will do one or more of the following tasks:
   - Stored as data in a file.
   - Communicated from a network connection.
 - **Processing** - Processing includes:
-  - Logic analysis.
+  - Performing logic.
   - Calculation of mathematical formulas.
   - Other manipulation or calculation of input to produce new data.
 - **Output** - Output includes information:
@@ -83,7 +83,7 @@ The _syntax_ of a programming language includes keywords, operators, and grammar
 
 Many programming languages use English words and phrases as keywords. Python uses English words like **if**, **return**, **while**, and **import** as keywords. Fortunately, there are fewer than 40 keywords in Python, so you don't need to know English before you can start with Python.
 
-To become fluent in any language, you need to learn and practice new vocabulary and concepts. Learning a programming language is no exception. For any language, there's much to learn. Fortunately, each concept is simple on its own. You can learn any programming language, so don't give up!
+To become fluent in any language, you need to learn and practice new vocabulary and concepts. Learning a programming language is no exception. For any language, there's much to learn. Fortunately, each concept is simple on its own. Don't give up! You can learn it!
 
 ### Why are there so many programming languages?
 
@@ -91,7 +91,7 @@ There are dozens of different programming languages. Programmers have discovered
 
 Python was created to simplify software development by masking more complex interactions with the hardware. The tradeoff is that Python offers less control over those interactions. So Python might not be ideal for some processor-intensive apps.
 
-Other programming languages provide greater control over complex interactions with the hardware. If used properly, they can yield performance better than Python's. But they're more difficult to understand. Many software apps don't require this degree of optimization to improve performance.
+Other programming languages provide greater control over complex interactions with the hardware. If used properly, they can yield performance better than Python's. But they can be more difficult to understand. Many software apps don't require this degree of optimization to improve performance.
 
 ### Should I learn Python first?
 
