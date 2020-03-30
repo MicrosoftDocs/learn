@@ -1,4 +1,8 @@
-Congratulations! You have completed the Azure Spring Cloud learning path!
+## Summary
+
+Congratulations! You have deployed to production a complete microservice architecture using Azure Spring Cloud.
+
+## More information on Azure Spring Cloud
 
 There are still advanced topics that might interest you, so if you want to learn more about Azure Spring Cloud, we recommend the following materials:
 
