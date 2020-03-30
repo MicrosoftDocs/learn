@@ -1,10 +1,10 @@
 It's the first day on the job as lead IoT Solutions Engineer.  We've been told that we are in charge of implementing an Azure IoT Edge Gateway solution to facilitate secure transmission of manufacturing floor telemetry into the cloud.  
 
-The implementation of this solution is seen as high-impact, with lots of teams across the company counting on it's success.  Our Machine Learning and Data Analysts believe that we can automate a majority of our operations and the supply chain folks think that it could help optimize material usage and delivery of product.  If we can capture data from the manufacturing floor into Microsoft Azure, all of our business units can theoretically access and make use of it.
+The implementation of this solution is seen as high-impact, with lots of teams across the company counting on it's success.  Our Machine Learning and Data Analysts believe that we can automate a majority of our operations and the supply chain folks think that it could help optimize material usage and delivery of product.  If we successfully capture data from the manufacturing floor into Microsoft Azure, all of our business units can theoretically access and make use of it.
 
 [![First day of work](../media/work.png)](../media/work.png#lightbox)
 
-The first thing we need, is a registered identity for our IoT Edge Gateway.  This will ensure that the Azure cloud is ready for our eventual on-site deployment within the manufacturing site network.
+The first thing we need, is a registered identity for our IoT Edge Gateway.  This entity will ensure that the Azure cloud is ready for our eventual on-site deployment within the manufacturing site network.
 
 In this unit, you will create a new IoT Edge Device identity in Azure IoT Hub for the IoT Edge Transparent Gateway.
 
@@ -39,9 +39,9 @@ In this unit, you will create a new IoT Edge Device identity in Azure IoT Hub fo
 
 1. Click the **Add an IoT Edge device** button to begin adding a new IoT Edge Device to the IoT Hub.
 
-1. On the **Create a device** blade, enter `az-220-vm-edgegw-{YOUR-ID}` into the **Device ID** field. This is the device identity used for authentication and access control.
+1. On the **Create a device** blade, enter `az-220-vm-edgegw-{YOUR-ID}` into the **Device ID** field. This value is the device identity used for authentication and access control.
 
-1. Select **Symmetric key** for the **Authentication type**, and leave the **Auto-generate keys** box checked. This will have IoT Hub automatically generate the Symmetric keys for authenticating the device.
+1. Select **Symmetric key** for the **Authentication type**, and leave the **Auto-generate keys** box checked. This option tells the IoT Hub to automatically generate the symmetric keys for authenticating the device.
 
 1. Click **Save**.
 
@@ -53,7 +53,7 @@ In this unit, you will create a new IoT Edge Device identity in Azure IoT Hub fo
 
     The IoT Edge Agent (`$edgeAgent`) and IoT Edge Hub (`$edgeHub`) modules are a part of the IoT Edge Runtime. The Edge Hub is responsible for communication, and the Edge Agent deploys and monitors the modules on the device.
 
-1. Click the **Set Modules** button at the top of the IoT Edge Device summary blade. This is used to add additional modules to the IoT Edge Device. At this time, you'll use this to ensure the message routing is configured correctly for the IoT Edge Gateway device.
+1. Click the **Set Modules** button at the top of the IoT Edge Device summary blade. This is used to add additional modules to the IoT Edge Device. You'll use this to ensure the message routing is configured correctly for the IoT Edge Gateway device.
 
 1. Leave all fields as they are in the **Modules** step, and click **Next: Routes >**.
 

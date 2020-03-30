@@ -20,7 +20,7 @@ In this unit, you'll create a new IoT Device identity in Azure IoT Hub for the d
 
 1. On the **Create a device** blade, enter `DownstreamDevice1` into the **Device ID** field. This is the device identity used for authentication and access control.
 
-1. Select **Symmetric key** for the **Authentication type**, and leave the **Auto-generate keys** box checked. This option tells the IoT Hub to automatically generate the Symmetric keys for authenticating the device.
+1. Select **Symmetric key** for the **Authentication type**, and leave the **Auto-generate keys** box checked. This option tells the IoT Hub to automatically generate the symmetric keys for authenticating the device.
 
 1. Under **Parent device**, click the **Set a parent device** link to begin configuring this downstream device to communicate with IoT Hub through the IoT Edge Gateway.
 
