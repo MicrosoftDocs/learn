@@ -1,12 +1,12 @@
-Azure Active Directory Identity Protection helps you to automatically detect, remediate, and investigate identity-based risks for your organization. 
+Azure Active Directory Identity Protection helps you to automatically detect, remediate, and investigate identity-based risks for your organization.
 
-The retail company you work for is conscious about its reputation. Compromised identities have previous enabled malicious users to obtain customer information fraudulently. These attacks have affected you organization's reputation, and ultimately its profitability. Your manager has asked you to investigate Identity Protection as a solution. You've been asked to report back on what the service does and how it's used.
+The retail company you work for is conscious about its reputation. Compromised identities have previously enabled malicious users to obtain customer information fraudulently. These attacks have affected your organization's reputation, and ultimately its profitability. Your manager has asked you to investigate Identity Protection as a solution. You've been asked to report back on what the service does and how it's used.
 
 In this unit, you'll learn what Identity Protection is and the risks involved in using it. You'll explore the different workflows you can use in Identity Protection to protect your identities.
 
 ## What is Azure Active Directory Identity Protection?
 
-Identity Protection is a solution built into Azure Active Directory, that is designed to protect your identities through a three-part process:
+Identity Protection is a solution built into Azure Active Directory that's designed to protect your identities through a three-part process.
 
 ![Identity Protection overview](../media/2-identity-protection-overview.svg)
 
@@ -14,7 +14,7 @@ Your company's specialist expertise is in retail, not in identity protection. It
 
 ## What are risks?
 
-Risks can be described as suspicious activity and actions by users when they sign in or when they're taking actions after signing in. That's why risks are categorized in two ways; user risks and sign-in risks.
+Risks can be described as suspicious activity and actions by users when they sign in or when they take actions after signing in. That's why risks are categorized in two ways, as user risks and sign-in risks.
 
 ### User risk
 
@@ -22,7 +22,7 @@ A user risk is caused when a user's identity or account is compromised. User ris
 
 | Risk  | Description |
 | --- | --- |
-| Unusual behavior | The account is showing unusual activity, or the patterns of usage are similar to those patterns that Microsoft systems and experts have identified as attacks. |
+| Unusual behavior | The account showed unusual activity or the patterns of usage are similar to those patterns that Microsoft systems and experts have identified as attacks. |
 | Leaked credentials | The user's credentials could have been leaked. For example, Microsoft might have found a list of leaked credentials on the dark web, which could affect your user accounts. |
 
 ### Sign-in risk
@@ -32,17 +32,17 @@ Here, Identity Protection scrutinizes each authentication request to judge wheth
 | Risk  | Description |
 | --- | --- |
 | Unfamiliar sign-in properties | Identity Protection remembers and learns a particular user's sign-in history. For example, when a sign-in occurs from a location that's unusual for the user, a risk detection is triggered. |
-| Atypical travel | For example, when two or more sign-ins occur from distant locations, in an unrealistically short time period, a risk detection is raised. |
-| Malware linked IP address | For example, if the IP address where the sign-in originates is known to have been in contact with an active bot server, a risk detection is raised. |
+| Atypical travel | For example, when two or more sign-ins occur from distant locations in an unrealistically short time period, a risk detection is raised. |
+| Malware-linked IP address | For example, if the IP address where the sign-in originates is known to have been in contact with an active bot server, a risk detection is raised. |
 | Anonymous IP address | For example, a sign-in originates from an anonymous IP address. Because these details can be used by attackers to hide their real IP address or location, a risk detection is raised. |
 
 ## Azure Active Directory Identity Protection workflow
 
-There are two different ways to detect and handle identity risks.
+There are two different ways to detect and handle identity risks:
 
 - **Self-remediation workflow**
 
-    Identity Protection uses risk policies to automatically respond to detected threats for you. You configure a risk policy to decide how you want Identity Protection to respond to a particular type of risk. You then choose the action the user is asked to complete. The action could be a self-service password reset, or multi-factor authentication enforcement. Using policies in this way helps save time, and gives you peace of mind.
+    Identity Protection uses risk policies to automatically respond to detected threats for you. You configure a risk policy to decide how you want Identity Protection to respond to a particular type of risk. You then choose the action the user is asked to complete. The action could be a self-service password reset or multifactor authentication enforcement. Using policies in this way helps save time and gives you peace of mind.
 
     ![Automated remediation](../media/2-identity-protection-flow.svg)
 
@@ -54,4 +54,4 @@ There are two different ways to detect and handle identity risks.
 
     ![Admin remediation](../media/2-admin-remediation.svg)
 
-    In this workflow, the administrator configures risk policies. The policies then monitor for identity risks. The administrator is notified of risks in a report. The administrator views the detailed report and takes appropriate action to remediate the risks. For example, an administrator might decide a sign-in is safe and accept the risk.
+    In this workflow, the administrator configures risk policies. The policies then monitor for identity risks. The administrator is notified of risks in a report. The administrator views the detailed report and takes appropriate action to remediate the risks. For example, the administrator might decide a sign-in is safe and accept the risk.

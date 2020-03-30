@@ -15,7 +15,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: Which report would you review to find devices that have been identified as part of a detected risk?
+  - content: Which report would you review to find devices that were identified as part of a detected risk?
     choices:
     - content: Risky sign-in report
       isCorrect: true
@@ -26,7 +26,7 @@ quiz:
     - content: Risky registration report
       isCorrect: false
       explanation: There's no such thing as a risky registration report.
-  - content: You want to use a risky sign-ins report to find information on risky sign-ins for the past 29 days. How can you access this report?
+  - content: You want to use a risky sign-in report to find information on risky sign-ins for the past 29 days. How can you access this report?
     choices:
     - content: You can access and download the report from the Azure portal.
       isCorrect: true
@@ -34,6 +34,6 @@ quiz:
     - content: You can't access the report from the portal because the data isn't retained any longer.
       isCorrect: false
       explanation: You can access the report. The report data is retained for 30 days. 
-    - content: You can't access the report from the portal but only if you've downloaded it in the first 30 days. 
+    - content: You can't access the report from the portal, but only if you downloaded it in the first 30 days. 
       isCorrect: false
       explanation: While it's good practice to keep a copy, you don't need to download the report if you want to view data from the last 30 days.
