@@ -10,7 +10,7 @@ In this unit, you'll create a new IoT Device identity in Azure IoT Hub for the d
 
 1. If necessary, sign in to your Azure portal using your Azure account credentials.
 
-    If you have more than one Azure account, ensure that you are logged in with the account that is tied to the subscription that you intend to use for this course.
+    If you've got more than one Azure account, ensure that you're signed in with the account for the subscription you intend to use for this course
 
 1. On your Resource group tile, click **AZ-220-HUB-_{YOUR-ID}_** to navigate to the Azure IoT Hub.
 

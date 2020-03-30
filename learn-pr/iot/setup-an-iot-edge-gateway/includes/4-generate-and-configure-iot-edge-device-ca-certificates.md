@@ -1,4 +1,4 @@
-We need to ensure only authorized devices can publish data into our IoT Edge Gateway.  Certificate-based authentication will allow us to keep out unauthorized devices and secure our transmission channel back to our IoT Hub.
+We need to ensure that only authorized devices can publish data into the IoT Edge Gateway.  Certificate-based authentication will allow us to keep out unauthorized devices and secure the transmission channel back to our IoT Hub.
 
 [![security](../media/security.png)](../media/security.png#lightbox)
 
@@ -8,11 +8,11 @@ We present credentials to a guard (the IoT Edge Gateway), who validates that we 
 
 [![Transparent Gateway Devices Diagram](../media/transparent-gateway-devices.png)](../media/transparent-gateway-devices.png#lightbox)
 
-In this unit, you'll generate test certificates using tooling on Linux. The certs will ensure that only securely authenticated downstream devices are able to communicate with the IoT Edge Gateway.
+In this unit, you'll generate test certificates using tooling on Linux. The certs will ensure that only securely authenticated downstream devices can communicate with the IoT Edge Gateway.
 
 ## Generate and Configure IoT Edge Device CA Certificates
 
-You'll perform these steps on the Azure IoT Edge Gateway Virtual Machine that was deployed in the previous unit.
+You'll complete these steps on the Azure IoT Edge Gateway that was deployed in the previous unit.
 
 1. Navigate to the Azure IoT Edge Gateway Virtual Machine within the Azure portal.  It should be named according to the following format:
  `vm-0000000000000`
@@ -26,13 +26,13 @@ You'll perform these steps on the Azure IoT Edge Gateway Virtual Machine that wa
     `ssh -i <private key path> usernam@az-220-vm-edgegw-{YOUR-ID}.westus.cloudapp.azure.com
     `
 
-    This entry is a sample SSH command that will be used to connect to the virtual machine that contains the hostname for the VM and the Administrator username. Modify this command so that it is formatted similar to `ssh username@az-220-vm-edgegw-{YOUR-ID}.westus.cloudapp.azure.com`.
+    This entry is a sample SSH command that will be used to connect to the virtual machine.  It contains the hostname for the VM and the Administrator username. Modify this command so that it is formatted similar to `ssh username@az-220-vm-edgegw-{YOUR-ID}.westus.cloudapp.azure.com`.
 
 1. At the top of the Azure portal click on the **Cloud Shell** icon to open up the **Azure Cloud Shell** within the Azure portal. When the pane opens, choose the option for the **Bash** terminal within the Cloud Shell.
 
 1. Within the Cloud Shell, paste in the modified `ssh` command, and press **Enter**.
 
-1. When prompted with "**Are you sure you want to continue connecting?**", type `yes` and press Enter. This prompt is a security confirmation since the certificate used to secure the connection to the VM is self-signed. The answer to this prompt will be remembered for subsequent connections.
+1. When prompted with "Are you sure, you want to continue connecting?**", type `yes` and press Enter. This prompt is a security confirmation since the certificate used to secure the connection to the VM is self-signed.
 
 1. When prompted to enter the password, enter the Administrator password that was entered when the VM was provisioned.
 
@@ -173,9 +173,9 @@ You'll perform these steps on the Azure IoT Edge Gateway Virtual Machine that wa
     sudo service iotedge restart
     ```
 
-    If the Edge runtime does not restart successfully, you'll want to double-check that you have modified `/etc/iotedge/config.yaml` appropriately.
+    If the Edge runtime doesn't restart successfully, you'll want to double-check that you have modified `/etc/iotedge/config.yaml` appropriately.
 
-1. The `MyEdgeDeviceCA` certificate needs to be downloaded from the Azure IoT Edge Gateway Virtual Machine so it can be used to configure the IoT Edge device enrollment within Azure IoT Hub Device Provisioning Service. Type `exit` in the **Azure Cloud Shell** to end the SSH session.  
+1. The `MyEdgeDeviceCA` certificate must be downloaded from the Azure IoT Edge Gateway Virtual Machine so it can be used to configure the IoT Edge device enrollment within Azure IoT Hub Device Provisioning Service. Type `exit` in the **Azure Cloud Shell** to end the SSH session.  
 
     ```bash
      exit

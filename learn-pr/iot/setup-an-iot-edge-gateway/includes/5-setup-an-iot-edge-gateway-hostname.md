@@ -1,10 +1,10 @@
 The testing team has been monitoring the uptime of our IoT Edge Gateway.  Their test is performed by pinging the ip address of the virtual machine at regular intervals.  It seems they are having difficulty getting a response. Perhaps we forgot to set up a static ip?  
 
-Using a static ip may not be enough since we'll eventually deploy the solution in our internal environment.  Maybe there is a better way. 
+A static ip may not be the best options since we'll eventually deploy the solution into the internal environment.  Maybe there is a better way. 
 
 [![Developer](../media/developer2.png)](../media/developer2.png#lightbox)
 
-We need a reliable mechanism for connecting to our IoT Edge Gateway.  IP addresses are fine for testing, but are subject to change, especially in our production environment.  To accommodate this need, we will set a up DNS Name for our IoT Edge Gateway then update the associated IoT Edge configuration.
+We need a reliable mechanism for connecting to the IoT Edge Gateway.  IP addresses are fine for testing, but are subject to change in our production environment.  To accommodate this issue, we'll set a up DNS Name for our IoT Edge Gateway then update the associated IoT Edge configuration.
 
 In this unit, you'll configure a DNS name for the **Public IP Address** of AZ-220-VM-EDGEGW-_{YOUR-ID}_, and configure that DNS name as the hostname of the IoT Edge Gateway device.
 
@@ -12,7 +12,7 @@ In this unit, you'll configure a DNS name for the **Public IP Address** of AZ-22
 
 1. If necessary, sign in to your Azure portal using your Azure account credentials.
 
-    If you have more than one Azure account, ensure that you are logged in with the account that is tied to the subscription that you intend to use for this course.
+    If you've got more than one Azure account, ensure that you're signed in with the account for the subscription you intend to use for this course.
 
 1. Navigate to the IoT Edge virtual machine.
 
@@ -34,7 +34,7 @@ In this unit, you'll configure a DNS name for the **Public IP Address** of AZ-22
     
     All Public IP Address DNS names will be at the **.cloudapp.azure.com** domain name. This example is for the VM being hosted in the eastus Azure region. This part fo the DNS name will vary depending on what Azure region the VM is hosted within.
 
-    The DNS name for the Public IP Address of the virtual machine provides an FQDN (Fully Qualified Domain Name) for the downstream device(s) to use as the **GatewayHostName** to connect to it. Since the VM, in this case, is accessible across the Internet an Internet DNS name is needed. If the Azure IoT Edge Gateway is hosted in a Private or Hybrid network, then the machine name would meet the requirements of a **GatewayHostName** for on-premises downstream devices to connect.
+    The DNS name for the Public IP Address of the virtual machine provides an FQDN (Fully Qualified Domain Name) for the downstream device(s) to use as the **GatewayHostName** to connect to it. Since the VM, in this case, is accessible across the Internet an Internet DNS name is needed. If the Azure IoT Edge Gateway is hosted in a Private or Hybrid network, then the machine name needs to meet the requirements of a **GatewayHostName** for on-premises downstream devices to connect.
 
 1. Navigate to the IoT Edge virtual machine within the Azure portal.
 
@@ -75,7 +75,7 @@ In this unit, you'll configure a DNS name for the **Public IP Address** of AZ-22
     hostname: "az-220-vm-edgegw-{YOUR-ID}.eastus.cloudapp.azure.com"
     ```
 
-    The `hostname` setting configures the Edge Hub server hostname. Regardless of the case used for this setting, a lowercase value is used to configure the Edge Hub server. This value is also the hostname that downstream IoT devices will need to use when connecting to the IoT Edge Gateway for secure communication to work properly.
+    The `hostname` setting configures the Edge Hub server hostname. Regardless of the case used for this setting, a lowercase value is used to configure the Edge Hub server. This value is the hostname that downstream IoT devices will use when connecting to the IoT Edge Gateway.
 
     >[!NOTE]
     > Here are some tips for using **vi** when editing the `config.yaml file`: 
@@ -95,6 +95,6 @@ In this unit, you'll configure a DNS name for the **Public IP Address** of AZ-22
     sudo service iotedge restart
     ```
 
-    If the Edge runtime does not restart successfully, ensure that you have modified `/etc/iotedge/config.yaml` appropriately.
+    If the Edge runtime doesn't restart successfully, verify that you have modified `/etc/iotedge/config.yaml` appropriately.
 
 Congratulations, that's the end of the unit! In the next unit, we'll open IoT Edge Gateway Device Ports for communication with Downstream Devices.

@@ -8,7 +8,7 @@ In this unit, you'll use the Azure CLI to monitor events sent to Azure IoT Hub. 
 
 1. If necessary, log in to your Azure portal using your Azure account credentials.
 
-    If you have more than one Azure account, ensure that you are signed in with the account that is tied to the subscription that you intend to use for this course.
+    If you've got more than one Azure account, ensure that you're signed in with the account for the subscription you intend to use for this course
 
 1. Navigate to the Azure portal and click on the **Cloud Shell** icon to open up the **Azure Cloud Shell**. When the pane opens, choose the option for the **Bash** terminal within the Cloud Shell.
 

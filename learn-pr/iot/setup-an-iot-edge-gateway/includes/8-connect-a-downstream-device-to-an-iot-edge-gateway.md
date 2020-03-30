@@ -8,7 +8,7 @@ In this unit, we'll configure a pre-built Downstream Device to connect to the Io
 
 1. If necessary, sign in to your Azure portal using your Azure account credentials.
 
-    If you have more than one Azure account, ensure that you are logged in with the account that is tied to the subscription that you intend to use for this course.
+    If you've got more than one Azure account, ensure that you're signed in with the account for the subscription you intend to use for this course
 
 1. At the top of the Azure portal, click on the **cloud shell** icon to open up the **Azure cloud shell** within the Azure portal. When the pane opens, choose the option for the **Bash** terminal within the cloud shell.
 
