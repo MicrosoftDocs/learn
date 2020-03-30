@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure-spring-cloud-workshop.3-configure-a-spring-cloud-config-server
+uid: learn.azure-spring-cloud-workshop.3-configure-server
 title: Configure a Spring Cloud Config Server
 metadata:
   title: Configure a Spring Cloud Config Server
@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 10
 content: |
-  [!include[](includes/3-configure-a-spring-cloud-config-server.md)]
+  [!include[](includes/3-configure-server.md)]
 quiz:
   title: Check your knowledge
   questions:
