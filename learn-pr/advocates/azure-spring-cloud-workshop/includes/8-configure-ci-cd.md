@@ -6,7 +6,8 @@ We will automate the deployment of the `todo-service` microservice that we devel
 
 [Create a new GitHub repository](https://github.com/new) and commit the code from the `todo-service` microservice into that repository:
 
-> 🛑 Make sure you substitute the Git URL from your own github repository (make sure you use the HTTPS URL, not the SSH URL).
+> [!CAUTION]
+> Make sure you substitute the Git URL from your own github repository (make sure you use the HTTPS URL, not the SSH URL).
 
 ```bash
 cd todo-service
@@ -39,7 +40,8 @@ Inside the `todo-service` directory, create a new directory called `.github/work
 
 In that file, copy/paste the following content, performing the indicated substitutions:
 
->🛑 You must substitute the name of your Azure Spring Cloud cluster for `<SPRING_CLOUD_NAME>` and the name of the resource group for `<RESOURCE_GROUP>` in the YAML below.
+> [!CAUTION]
+> You must substitute the name of your Azure Spring Cloud cluster for `<SPRING_CLOUD_NAME>` and the name of the resource group for `<RESOURCE_GROUP>` in the YAML below.
 
 ```yaml
 name: Build and deploy to Azure Spring Cloud

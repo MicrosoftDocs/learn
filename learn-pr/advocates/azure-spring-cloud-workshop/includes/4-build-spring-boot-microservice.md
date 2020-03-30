@@ -57,6 +57,7 @@ To create our microservice, we will use [https://start.spring.io/](https://start
 curl https://start.spring.io/starter.tgz -d dependencies=web,data-mongodb,cloud-eureka,cloud-config-client -d baseDir=todo-service -d bootVersion=2.2.5.RELEASE | tar -xzvf -
 ```
 
+> [!NOTE]
 > We use the `Spring Web`, `Spring Data MongoDB`, `Eureka Discovery Client` and the `Config Client` components.
 
 ## Add a "cloud" Maven profile

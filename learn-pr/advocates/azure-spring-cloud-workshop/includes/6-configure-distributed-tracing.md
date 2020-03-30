@@ -51,7 +51,8 @@ cd ..
 1. Go to the overview page of your Azure Spring Cloud cluster and select "Distributed tracing" in the menu.
 1. Select "Enable" and create a new Azure Application Insights instance to store your tracing data.
 
->💡 Tracing data can take a couple of minutes to be ingested by the system, so use this time to generate some load, and wait for the data to arrive.
+> [!TIP]
+> Tracing data can take a couple of minutes to be ingested by the system, so use this time to generate some load, and wait for the data to arrive.
 
 You should now have access to a full application map, as well as a search engine that allows to find performance bottlenecks.
 

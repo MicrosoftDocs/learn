@@ -52,7 +52,8 @@ Once the token is generated, leave that tab open until the end of this section.
 1. Configure the repository we previously created:
     1. Add the repository URL, for example `https://github.com/<YOUR_USERNAME>/azure-spring-cloud-config.git`.
 
-     >💡 Make sure you include the `.git` ending in the URL.
+     > [!TIP]
+     > Make sure you include the `.git` ending in the URL.
 
     1. Click on `Authentication` and select `HTTP Basic`
     1. The __username__ is your GitHub login name

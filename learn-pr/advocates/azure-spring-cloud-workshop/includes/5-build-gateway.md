@@ -14,6 +14,7 @@ To create our gateway, we will use [https://start.spring.io/](https://start.spri
 curl https://start.spring.io/starter.tgz -d dependencies=cloud-gateway,cloud-eureka,cloud-config-client -d baseDir=gateway -d bootVersion=2.2.5.RELEASE | tar -xzvf -
 ```
 
+> [!NOTE]
 > We use the `Cloud Gateway`, `Eureka Discovery Client` and the `Config Client` components.
 
 ## Add a "cloud" Maven profile
