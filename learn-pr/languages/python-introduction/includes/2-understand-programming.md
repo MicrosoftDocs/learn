@@ -9,9 +9,9 @@ _Hardware_ describes the physical components that accept input, process that inp
 - A central processing unit (CPU).
 - Random-access memory (RAM) for short-term storage.
 - A hard drive for long-term storage.
-- a screen.
-- a microphone.
-- connector ports like headphone jacks and USB ports.
+- A screen.
+- A microphone.
+- Connector ports like headphone jacks and USB ports.
 
 _Software_ describes the electronic instructions that tell the hardware what to do. Types of software include:
 
