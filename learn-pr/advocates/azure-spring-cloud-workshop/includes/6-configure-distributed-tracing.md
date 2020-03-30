@@ -47,9 +47,9 @@ cd ..
 
 ### Once everything is deployed
 
-- Go to [the Azure Portal](https://portal.azure.com/?WT.mc_id=azurespringcloud-mslearn-judubois).
-- Go to the overview page of your Azure Spring Cloud cluster and select "Distributed tracing" in the menu.
-- Select "Enable" and create a new Azure Application Insights instance to store your tracing data.
+1. Go to [the Azure Portal](https://portal.azure.com/?WT.mc_id=azurespringcloud-mslearn-judubois).
+1. Go to the overview page of your Azure Spring Cloud cluster and select "Distributed tracing" in the menu.
+1. Select "Enable" and create a new Azure Application Insights instance to store your tracing data.
 
 >💡 Tracing data can take a couple of minutes to be ingested by the system, so use this time to generate some load, and wait for the data to arrive.
 
