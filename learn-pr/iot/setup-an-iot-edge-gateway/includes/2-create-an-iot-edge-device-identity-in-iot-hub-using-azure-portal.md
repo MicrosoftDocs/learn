@@ -1,6 +1,6 @@
 It's the first day on the job as lead IoT Solutions Engineer.  We've been told that we are in charge of implementing an Azure IoT Edge Gateway solution to facilitate secure transmission of manufacturing floor telemetry into the cloud.  
 
-This is a pretty big task, and lots of teams are counting on this project.  Our Machine Learning and Data Analysts believe that we can automate a majority of our operations and optimize production if we can capture this data into Microsoft Azure.
+The implementation of this solution is seen as high-impact, with lots of teams across the company counting on it's success.  Our Machine Learning and Data Analysts believe that we can automate a majority of our operations and the supply chain folks think that it could help optimize material usage and delivery of product.  If we can capture data from the manufacturing floor into Microsoft Azure, all of our business units can theoretically access and make use of it.
 
 [![First day of work](../media/work.png)](../media/work.png#lightbox)
 
@@ -71,4 +71,4 @@ In this unit, you will create a new IoT Edge Device identity in Azure IoT Hub fo
 
 1. On the **Review + create** step, click the **Create** button.
 
-Congratulations, that's the end of the unit! In the next unit, we will deploy an Azure IoT Edge enabled Linux Virtual Machine.
+Congratulations, that's the end of the unit! In the next unit, we'll deploy an Azure IoT Edge enabled Linux Virtual Machine.
