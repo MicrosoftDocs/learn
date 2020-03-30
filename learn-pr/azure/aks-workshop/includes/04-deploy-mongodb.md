@@ -134,6 +134,6 @@ You now have an AKS cluster with a configured MongoDB database in a namespace ca
 
 ## Summary
 
-In this exercise you configured the Helm stable repository, then installed the MongoDB chart to your cluster. You then created a Kubernetes secret to hold database credentials.
+In this exercise you configured the Helm stable repository, then used a Helm chart to deploy MongoDB to your cluster. You then created a Kubernetes secret to hold database credentials.
 
 Next, you'll deploy the Fruit Smoothies ratings-api to your AKS cluster.
