@@ -19,7 +19,7 @@ abstract: |
    - Use these assets to perform inference using hard-to-distinguish images
    - Build a GitHub Action to create a continuous delivery workflow
    - Test the capabilities of a progressive web app
-prerequisites:
+prerequisites: |
   - Vue.js
   - Progressive Web Apps
 iconUrl: /learn/achievements/advocates/create-web-app-with-refreshable-models.svg
