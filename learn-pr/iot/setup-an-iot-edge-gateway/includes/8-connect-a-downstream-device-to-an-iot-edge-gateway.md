@@ -1,4 +1,4 @@
-This is it!  We are now ready to connect our first sensor.  Research and development has informed us that we will be using a modified Azure Kinect device, which will consist of a module for reading the temperature and humidity of our manufacturing floor.  This will allow us to easily manage operations that require explicit temperatures during our production phases.
+This is it!  We are now ready to connect our first sensor.  Research and development has informed us that we will be using a modified Azure Kinect device, which will consist of a module for reading the temperature and humidity of our manufacturing floor.  This solutio will allow us to easily manage operations that require explicit temperatures during our production phases.
 
 [![Azure Kinect](../media/azurekinect.png)](../media/azurekinect.png#lightbox)
 
@@ -46,7 +46,7 @@ In this unit, we'll configure a pre-built Downstream Device to connect to the Io
     - `<IoT-Device-Primary-Key>`: The Primary Key for the **DownstreamDevice1** IoT Device in Azure IoT Hub.
     - `<IoT-Edge-DNS-Name>`: The DNS name set for the **AZ-220-VM-EDGEGW**.
 
-    The `s_connectionString` variable with the Connection String value will look similar to the following:
+    The `s_connectionString` variable with the Connection String value will look similar to the following value:
 
     ```csharp
      private readonly static string s_connectionString = "HostName=AZ-220-HUB-1119.azure-devices.net;DeviceId=DownstreamDevice1;SharedAccessKey=ygNT/WqWs2d8AbVD9NAlxcoSS2rr628fI7YLPzmBdgE=;GatewayHostName=AZ-220-VM-EDGEGW.eastus.cloudapp.azure.com";
@@ -60,7 +60,7 @@ In this unit, we'll configure a pre-built Downstream Device to connect to the Io
     csharps_deviceClient = DeviceClient.CreateFromConnectionString(s_connectionString, TransportType.Mqtt); SendDeviceToCloudMessagesAsync(); 
     ```
     
-    This method also executes the **InstallCACert** method which has some code to automatically install the **root CA** X.509 certificate to the local machine. And it executes the **SendDeviceToCloudMessagesAsync** method that sends event telemetry from the simulated device.
+    This method also executes the **InstallCACert** method, which has some code to automatically install the **root CA** X.509 certificate to the local machine. It also executes the **SendDeviceToCloudMessagesAsync** method that sends event telemetry from the simulated device.
 
 1. Locate the **SendDeviceToCloudMessagesAsync** method. This method contains the code that generates the simulated device telemetry, and sends the events to the IoT Edge Gateway.
 
@@ -78,7 +78,7 @@ In this unit, we'll configure a pre-built Downstream Device to connect to the Io
 
 1. Once the simulated device is running, the console output will display the events being sent to the Azure IoT Edge Gateway.
 
-    The terminal output will look similar to the following:
+    The terminal output will look similar to the following output:
 
     ```bash
      IoT Hub Quickstarts #1 - Simulated device. Ctrl-C to exit.
