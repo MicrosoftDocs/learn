@@ -18,20 +18,20 @@ quiz:
 
 # Did I get this block question 1
 # Order of choices changed from what's shown in original course
-  - content: "On an EC2 instance, if you install Wireshark, you should be able to sniff packets from:"
+  - content: "On VM, if you install Wireshark, you should be able to sniff packets from:"
     choices:
     - content: "Only my VM."
       isCorrect: true
-      explanation: "Correct. Due to the isolation provided by EC2, Wireshark will work only in your VM."
-    - content: "Nothing. Wireshark will not work on the EC2 instance."
+      explanation: "Correct. Due to the isolation provided by VM's cloud provider, Wireshark will work only in your VM."
+    - content: "Nothing. Wireshark will not work on the VM."
       isCorrect: false
-      explanation: "That's not quite right. Consider the types of attacks made possible when a cloud provider offers shared infrastructure to multiple tenants. What level of isolation is provided in EC2?"
+      explanation: "That's not quite right. Consider the types of attacks made possible when a cloud provider offers shared infrastructure to multiple tenants. What level of isolation is provided in a VM?"
     - content: "All VMs in the same physical machine."
       isCorrect: false
-      explanation: "That's not quite right. Consider the types of attacks made possible when a cloud provider offers shared infrastructure to multiple tenants. What level of isolation is provided in EC2?"
+      explanation: "That's not quite right. Consider the types of attacks made possible when a cloud provider offers shared infrastructure to multiple tenants. What level of isolation is provided in a VM?"
     - content: "All VMs in the same rack."
       isCorrect: false
-      explanation: "That's not quite right. Consider the types of attacks made possible when a cloud provider offers shared infrastructure to multiple tenants. What level of isolation is provided in EC2?"
+      explanation: "That's not quite right. Consider the types of attacks made possible when a cloud provider offers shared infrastructure to multiple tenants. What level of isolation is provided in a VM?"
 
 # Did I get this block question 2
   - content: "The process of mapping instances from the virtual cloud to the physical infrastructure is called <italic>cloud cartography</italic>. Assuming that you're an IaaS provider, which of the following will protect an attacker from mapping your service?"
@@ -51,7 +51,7 @@ quiz:
 
 # Did I get this block question 3
 # Answer for choice #2 includes additional explanation from what is in original course
-  - content: "You host an email server on Amazon only to find that the emails that your service sends are categorized as spam by anti-spammers Iike Spamhaus. However, the content of your mails is not spam-like. What could be a possible reason for this filtering?"
+  - content: "You host an email server on the cloud only to find that the emails that your service sends are categorized as spam by anti-spammers like Spamhaus. However, the content of your mails is not spam-like. What could be a possible reason for this filtering?"
     choices:
     - content: "This is just an inherent problem of public clouds, where you have to share resources with untrusted entities, which could impact you in unpredictable ways. Cloud providers should add features like outbound spam monitoring to protect their own reputation. Services like Spamhaus should continue unchanged."
       isCorrect: false
@@ -59,7 +59,7 @@ quiz:
     - content: "You should never host an email server on the public cloud because the Massive Surveillance Bureau will be tracking it."
       isCorrect: false
       explanation: "Incorrect. Public clouds can be an extremely secure place to store data if used properly, and the Massive Surveillance Bureau is something we made up. Consider the techniques used by Spamhaus to blacklist spam sources. Do they translate well to public cloud infrastructure?"
-    - content: "Both Spamhaus and AWS need to adapt to this new type of problem."
+    - content: "Both Spamhaus and cloud providers need to adapt to this new type of problem."
       isCorrect: true
       explanation: "Correct! This is an evolving problem due to the complex and ever-changing patterns of spam."      
     - content: "This problem is due to IP reputation systems only. These systems broadly categorize large subnets of IP addresses as spammers, even if only a few of them actually contribute to spam traffic. Instead, reputation-based blocking should be done for each IP address. The cloud provider cannot take any action to protect itself."
@@ -83,18 +83,18 @@ quiz:
       explanation: "That's not quite right. Consider the types of attacks that are made possible when a cloud provider offers shared infrastructure to multiple tenants. What security risks are posed by shared infrastructure in clouds?"
 
 # Did I get this block question 5
-  - content: "The AWS firewall resides within the hypervisor layer, between the physical network interface and the instance's virtual interface. All packets must pass through this layer; thus an instance's neighbors have no more access to that instance than any other host on the internet and can be treated as if they are on separate physical hosts. These can be configured as security groups. What is one disadvantage of this method?"
+  - content: "A cloud firewall resides within the hypervisor layer, between the physical network interface and the instance's virtual interface. All packets must pass through this layer; thus an instance's neighbors have no more access to that instance than any other host on the internet and can be treated as if they are on separate physical hosts. These can be configured as security groups. What is one disadvantage of this method?"
     choices:
-    - content: "It doesn't protect you from bad traffic sent from other AWS instances, since they're inside the firewall."
+    - content: "It doesn't protect you from bad traffic sent from other instances, since they're inside the firewall."
       isCorrect: false
       explanation: "That's not quite right. Think about the disadvantages of having an externally managed firewall over which you have limited control."
     - content: "Because the firewall isn't hosted on the instance, it's more vulnerable if your instance gets breached, because the attacker can easily change the security group settings from within the instance."
       isCorrect: false
       explanation: "That's not quite right. Think about the disadvantages of having an externally managed firewall over which you have limited control."
-    - content: "It doesn't protect you from bad traffic sent from other AWS instances on the same hardware."
+    - content: "It doesn't protect you from bad traffic sent from other instances on the same hardware."
       isCorrect: false
       explanation: "That's not quite right. Think about the disadvantages of having an externally managed firewall over which you have limited control."
-    - content: "The AWS security groups don't let you log traffic that's being blocked, so you have reduced visibility about security events."
+    - content: "The security groups don't let you log traffic that's being blocked, so you have reduced visibility about security events."
       isCorrect: true
       explanation: "Correct!" 
 
