@@ -18,11 +18,11 @@ As you write your code, IntelliSense can perform type checking and code completi
 
 As you type, IntelliSense will use a combination of type checking and type inference to show suggestions appropriate to the current context. Type inference enables IntelliSense to present valid code completion suggestions as you write your code:
 
-![Screenshot of the editor VS Code, showing an Intellisense prompt.](../media/4-intellisense.png)
+4:::image type="content" source="../media/4-intellisense.png" alt-text="Screenshot of the editor VS Code, showing an Intellisense prompt." loc-scope="vs-code":::
 
 Type checking enables IntelliSense to show the parameters that a function call can take, and will type-check the expressions you provide for each function:
 
-![Screenshot of the editor VS Code, showing the parameters for a function call.](../media/4-function-params.png)
+:::image type="content" source="../media/4-function-params.png" alt-text="Screenshot of the editor VS Code, showing the parameters for a function call." loc-scope="vs-code":::
 
 Other IntelliSense features available in VS Code include:
 
@@ -64,12 +64,12 @@ To begin a debug session, first set one or more breakpoints in your application 
 
 Next, select **Start Debugging** on the **Debug** menu. If you're using an external terminal, a new terminal window will appear. If your application expects any input, enter it into this window. Any messages output by your application will appear in this window:
 
-![Screenshot of the debugger external terminal window.](../media/4-debugger-terminal.png)
+:::image type="content" source="../media/4-debugger-terminal.png" alt-text="Screenshot of the debugger external terminal window." loc-scope="vs-code":::
 
 If you aren't using an external terminal, debugger output will appear in the **Output** window in VS Code.
 
 When the debugger reaches a breakpoint in your application, execution will pause, and the breakpoint statement is highlighted. On the left, you'll see windows where you can examine and set the values of local and global variables, and the call stack. You can also add **Watch** expressions, which are evaluated and displayed as execution proceeds:
 
-![Screenshot of the VS Code debugger in action pausing at a breakpoint on some sample JavaScript code.](../media/4-debugger-at-breakpoint.png)
+:::image type="content" source="../media/4-debugger-at-breakpoint.png" alt-text="Screenshot of the VS Code debugger in action pausing at a breakpoint on some sample JavaScript code." loc-scope="vs-code":::
 
 The **Debug** toolbar appears above the editor window. This toolbar contains commands that enable you to single step through your code. If a statement contains a function call, you can step into that function, or step over it. The step out command continues execution until the function finishes. You can also continue running the application, either until the debugger reaches another breakpoint, or the application finishes.
