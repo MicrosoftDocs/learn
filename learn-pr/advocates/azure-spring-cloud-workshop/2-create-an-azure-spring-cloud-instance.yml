@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure-spring-cloud-workshop.2-create-an-azure-spring-cloud-instance
+uid: learn.azure-spring-cloud-workshop.2-create-instance
 title: Create an Azure Spring Cloud instance
 metadata:
   title: Create an Azure Spring Cloud instance
@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 10
 content: |
-  [!include[](includes/2-create-an-azure-spring-cloud-instance.md)]
+  [!include[](includes/2-create-instance.md)]
 quiz:
   title: Check your knowledge
   questions:

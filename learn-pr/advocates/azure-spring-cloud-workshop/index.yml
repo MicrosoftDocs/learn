@@ -31,7 +31,7 @@ products:
 - azure-spring-cloud
 units:
 - learn.azure-spring-cloud-workshop.1-introduction
-- learn.azure-spring-cloud-workshop.2-create-an-azure-spring-cloud-instance
+- learn.azure-spring-cloud-workshop.2-create-instance
 - learn.azure-spring-cloud-workshop.3-configure-a-spring-cloud-config-server
 - learn.azure-spring-cloud-workshop.4-build-a-spring-boot-microservice
 - learn.azure-spring-cloud-workshop.5-build-a-spring-cloud-gateway
