@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.oxford.deploy-cog-ser-iot-edge-azure-func.introduction
+uid: learn.oxford.deploy-cog-ser-iot-edge-azure-func
 metadata:
   title: "Introduction to Azure functions for IoT Edge"
   description: "University of Oxford"
