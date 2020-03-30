@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure-spring-cloud-workshop.4-build-a-spring-boot-microservice
+uid: learn.azure-spring-cloud-workshop.4-build-spring-boot-microservice
 title: Build a Spring Boot microservice
 metadata:
   title: Build a Spring Boot microservice
@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 20
 content: |
-  [!include[](includes/4-build-a-spring-boot-microservice.md)]
+  [!include[](includes/4-build-spring-boot-microservice.md)]
 quiz:
   title: Check your knowledge
   questions:

@@ -33,7 +33,7 @@ units:
 - learn.azure-spring-cloud-workshop.1-introduction
 - learn.azure-spring-cloud-workshop.2-create-instance
 - learn.azure-spring-cloud-workshop.3-configure-server
-- learn.azure-spring-cloud-workshop.4-build-a-spring-boot-microservice
+- learn.azure-spring-cloud-workshop.4-build-spring-boot-microservice
 - learn.azure-spring-cloud-workshop.5-build-a-spring-cloud-gateway
 - learn.azure-spring-cloud-workshop.6-configure-distributed-tracing
 - learn.azure-spring-cloud-workshop.7-scale-spring-boot-microservices
