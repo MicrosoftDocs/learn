@@ -1,6 +1,6 @@
-Now you have a better understanding of the benefits and capabilities of using Azure Lighthouse, you're beginning to see how to apply Azure Lighthouse to Lamna Healthcare.
+Now you have a better understanding of the benefits and capabilities of using Azure Lighthouse; you're beginning to see how to apply Azure Lighthouse to Lamna Healthcare.
 
-Contoso has existing customer management processes and roles you use for non-Azure managed customers. You'd like to understand what's needed to get ready to onboard Lamna Healthcare, your first Azure Lighthouse customer.
+Contoso has existing customer management processes and roles you use for other customers. You'd like to understand what's needed to get ready to onboard Lamna Healthcare, your first Azure Lighthouse customer.
 
 In this unit, you'll take a close look at tenants and how they work with Azure Lighthouse, and the use of roles and users in the day-to-day management of customers. Finally, you'll learn about security recommendations about access to, and using, Azure Lighthouse.
 
@@ -12,17 +12,17 @@ Through Azure delegated resource management, Lamna Healthcare's Azure subscripti
 
 This logical mapping is automatically created when the customer accepts a Service Management offering on the Azure Marketplace. It also occurs when they deploy one of your Azure Resource Manager templates on their Azure tenant.
 
-Before we get to onboarding Lamna Healthcare, there's a few more things you'll need to take care of at Contoso first. Next, you need to think about roles and authorizations.
+Before we get to onboarding Lamna Healthcare, there are a few more things you'll need to take care of at Contoso first. Next, you need to think about roles and authorizations.
 
 ## Roles and authorizations
 
 When you make a managed service offer to Lamna Healthcare, one of the things you'll need to decide is which roles are required to manage that offering. These roles will be based on the type of tasks you'll perform. The roles needed to align with the built-in role-based access control (RBAC) list.
 
-Lamna Healthcare has requested that we manage and administer their subscription. Also, they've mentioned they're interested in the management and security of their database systems within that subscription. The **Contributor** role would seem to be the obvious choice, since this role does have the broadest scope for use across the Lamna Healthcare subscription. The Contributor role is better suited to managing administrative needs for the subscription rather than focused access. If the demand for a Contributor role is high, limit the group to senior Contoso managed service users. For Lamna Healthcare, we'll create a limited-access user group called Lamna Subscription Management.
+Lamna Healthcare has requested that we manage and administer their subscription. Also, they've mentioned they're interested in the management and security of their database systems within that subscription. The **Contributor** role would seem to be the obvious choice since this role does have the broadest scope for use across the Lamna Healthcare subscription. The Contributor role is better suited to managing administrative needs for the subscription rather than focused access. If the demand for a Contributor role is high, limit the group to senior Contoso managed service users. For Lamna Healthcare, we'll create a limited-access user group called Lamna Subscription Management.
 
-For the other Contoso managed service users, you'll create specific tightly focused roles to meet Lamna Healthcare's database management needs. For example, **SQL DB Contributor**, and **SQL Security Manager**.
+For the other Contoso managed service users, you'll create specific, tightly focused roles to meet Lamna Healthcare's database management needs. For example, **SQL DB Contributor**, and **SQL Security Manager**.
 
-Your managed service users will need to be assigned the **Reader** role (or another built-in role, which includes reader access) to view Lamna Healthcare's subscription, in the **My Customers** page. The need for the **Reader** role would apply to any other Azure delegated resource management customer's subscription.
+Your managed service users will need to be assigned the **Reader** role (or another built-in role, which includes reader access) to view Lamna Healthcare's subscription, in the **My Customers** page.
 
 When selecting roles for your Lamna Healthcare offering, you should consider that these roles have to work within the Azure delegated resource management framework. At this time, that means there are a few roles that aren't supported. You can't use custom roles or the Owner role. You'll also need to avoid using any built-in roles that have **DataAction** permissions.
 
@@ -60,7 +60,7 @@ With your permission structure defined, you need to assign users to these groups
 
 Security is a constant consideration for any Azure Active Directory. When you introduce Azure delegated resource management into your tenant, you should also consider the security of your customers, including Lamna Healthcare.
 
-When you prepare to onboard Lamna Healthcare, and for scaling Azure Lighthouse to all your other Azure customers later, there's a few things to do:
+When you prepare to onboard Lamna Healthcare, and for scaling Azure Lighthouse to all your other Azure customers later, there are a few things to do:
 
 - Implement Azure Multi-Factor Authentication for all users in your service provider tenant, including any users with responsibility for managing Lamna Healthcare's subscription. This authentication method reduces the likelihood of attackers gaining access to Lamna Healthcare's systems or databases from the Contoso Azure AD tenant
 - Apply the **principle of least privilege** when giving permissions to your users;  Contoso users should have enough permissions to do their job and no more

@@ -2,10 +2,10 @@ With Node.js and Express.js, you can create a webapp very quickly.
 
 Suppose you've been asked to start building the website to promote the new video game launch. You've decided to use Node.js to run server-side code and, to make the development as quick as possible, you're going to use the Express.js framework for webapps. You want to create a quick, proof-of-concept webapp that displays a countdown to the launch date.
 
-Here, you'll install the necessary software and then use VS Code to create and test a website.
+Here, you'll install the necessary software and then use Visual Studio Code to create and test a website.
 
 > [!NOTE]
-> You must have VS Code and Node.js installed on your computer before you begin this exercise.
+> You must have [Visual Studio Code](https://code.visualstudio.com) and [Node.js](https://nodejs.org) installed on your computer before you begin this exercise.
 
 ## Create an app folder
 

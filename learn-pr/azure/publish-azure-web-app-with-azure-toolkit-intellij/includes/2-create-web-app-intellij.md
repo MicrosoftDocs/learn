@@ -45,7 +45,7 @@ An important file in any Maven archetype is the **pom.xml** file, which stores t
 - The location of test directories and resources.
 - Profiles for building test, release, and other versions of the project.
 
-![IntelliJ IDEA](../media/2-intellij-idea.png)
+:::image type="content" source="../media/2-intellij-idea.png" alt-text="IntelliJ IDEA." loc-scope="third-party":::
 
 ## The Azure Toolkit for IntelliJ
 

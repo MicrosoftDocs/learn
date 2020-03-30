@@ -12,10 +12,12 @@ Azure delegated resource management provides two ways to onboard new customers. 
 
 Here's a high-level overview of how Azure delegated resource management works for your scenario:
 
-1. As the service provider, Contoso needs to specify the roles and access your users, service principals, and groups will need to manage your onboarded Lamna Healthcare customer. The managed service offer definition contains your tenant ID, and a list of the access authorizations required for the offer. The authorization access is specified through the principal IDs associated with the roles you've defined. For Lamna Healthcare, using the permissions structure previously defined, you'd want authorization for the following Azure AD user groups:
+1. As the service provider, Contoso needs to specify the roles and access your users, service principals, and groups will need to manage your onboarded Lamna Healthcare customer. The managed service offer definition contains your tenant ID and a list of the access authorizations required for the offer. The authorization access is specified through the principal IDs associated with the roles you've defined. For Lamna Healthcare, using the permissions structure previously defined, you'd want authorization for the following Azure AD user groups:
    - Lamna_Subscription_Management
    - Lamna_Database_Management
-   - Lamna_Delegated_Resource_Management
+   - Lamna_Managed_Service_Registration
+   - Lamna_Policy_Automation_Account
+   - Manage_Lighthouse_Customers
 
 1. To complete the onboarding process, Lamna Healthcare has to deploy an Azure Resource Manager template on their subscription. When they complete the onboarding process, you're ready to begin managing. All Contoso staff assigned to the authorized roles can start managing Lamna Healthcare's Azure AD tenant.
 
@@ -23,7 +25,7 @@ Here's a high-level overview of how Azure delegated resource management works fo
    - Public offers are available to any customer searching the Azure Marketplace
    - Private offers are only available to named customers
 
-## Azure Resource Management templates
+## Azure Resource Manager templates
 
 You can onboard Lamna Healthcare's Azure subscription through Azure Resource Manager templates. These templates are free to use and are available online via GitHub. Each template is just a code block that contains the instructions that allow you to meet a specific scenario or need, and a parameter file. 
 
@@ -36,18 +38,18 @@ When you visit the GitHub repository (https://github.com/Azure/Azure-Lighthouse-
 | Multiple resource groups within a subscription               | [multipleRgDelegatedResourceManagement](https://github.com/Azure/Azure-Lighthouse-samples/blob/master/Azure-Delegated-Resource-Management/templates/rg-delegated-resource-management/multipleRgDelegatedResourceManagement.json) |
 | Subscription when using an offer published to Azure Marketplace | [marketplace-delegated-resource-management](https://github.com/Azure/Azure-Lighthouse-samples/tree/master/Azure-Delegated-Resource-Management/templates/marketplace-delegated-resource-management) |
 
-As Contoso expands its Azure-managed service offerings, you'll pick the corresponding template to meet the service offering you want to manage. For Lamna Healthcare, it's straightforward. One of the requirements they've asked us to manage is their subscription. Looking at the list, the template that best meets our need is the **delegated resource management template**, which enables Lamna Healthcare to project an entire subscription into Contoso's tenant.
+As Contoso expands its Azure-managed service offerings, you'll pick the corresponding template to meet the service offering you want to manage. For Lamna Healthcare, it's straightforward. One of the requirements they've asked us to manage is their subscription. Looking at the list, the template that best meets our need is the **delegated-resource-management template**, which enables Lamna Healthcare to project an entire subscription into Contoso's tenant.
 
 Templates can be used to automate and streamline the onboarding process, however:
 
 - If you have multiple subscriptions in a tenant, each one will need a separate onboarding deployment
-- If you want to onboard multiple resource groups, each with different subscriptions,  will also need separate onboarding deployments
+- If you want to onboard multiple resource groups, each with different subscriptions will also need separate onboarding deployments
 
 ## Configuring an Azure Resource Manager template
 
-Now you've selected the **Deploy Azure delegated resource management** template for Lamna Healthcare, it's time to configure it, ready for deployment. 
+Now you've selected the **Deploy Azure delegated-resource-management** template for Lamna Healthcare, it's time to configure it, ready for deployment. 
 
-All service offerings require the same core information: offer name, offer description, Contoso's tenant ID, and a list of Contoso's requested authorizations. This information will appear on the Lamna Healthcare **Service Providers** page after they've been onboarded. 
+All service offerings require the same core information: offer name, offer description, Contoso's tenant ID, and a list of Contoso's requested authorizations. This information will appear on the Lamna Healthcare **Service Providers** page after they've been onboarded.
 
 A template is divided into two parts: a code (template) file and a parameter file. Unless you're modifying or creating a new template, there's no need to go near the code file. For Lamna Healthcare, and most of your future Azure customers, you only need to modify the parameter file.
 
@@ -123,7 +125,7 @@ This template will allow Lamna Healthcare's Azure subscription to be managed by 
 | **Field**           | **Value**                                           | **Notes**                                                    |
 | ------------------- | --------------------------------------------------- | ------------------------------------------------------------ |
 | mspOfferName        | Contoso managed subscription offer                  | The offer name that will be displayed to  Lamna Healthcare and Contoso's users. |
-| mspOfferDescription | Contoso managed services for a single  subscription | A short description of the managed  service offer. |
+| mspOfferDescription | Contoso managed services for a single subscription | A short description of the managed service offer. |
 | managedByTenantId   | df4602a3-920c-435f-98c4-49ff031b9ef6                | The Contoso tenant ID.                     |
 
 > [!Note]
@@ -132,7 +134,7 @@ This template will allow Lamna Healthcare's Azure subscription to be managed by 
 Next, you'll describe the authorizations needed to manage Lamna Healthcare's subscription. You'll need to add, modify, or remove some of the existing authorizations.
 
 > [!Note]
-> The principalIds shown below are examples. When updating the parameters file, you'll need to obtain the principalId's for each user, or user groups, you've set up in your tenant.
+> The principalIds shown below are examples. When updating the parameters file, you'll need to obtain the principalId's for each user or user groups you've set up in your tenant.
 
 From your permission structure, you know you need:
 
@@ -144,21 +146,13 @@ From your permission structure, you know you need:
 | principalIdDisplayName | Lamna Subscription Management        |
 | roleDefinitionId       | b24988ac-6180-42a0-ab88-20f7382dd24c |
 
-- Lamna Database Contributor
+- Lamna Database Management
 
 | **Field**              | **Value**                            |
 | ---------------------- | ------------------------------------ |
 | principalId            | 0251bcab-a12a-f2d3-aa22-b731cc74a463 |
-| principalIdDisplayName | Lamna Database Contributor           |
+| principalIdDisplayName | Lamna Database Management           |
 | roleDefinitionId       | 9b7fa17d-e63e-47b0-bb0a-15c516ac86ec |
-
-- Lamna Database Security Manager
-
-| **Field**              | **Value**                            |
-| ---------------------- | ------------------------------------ |
-| principalId            | 0420acae-b21a-2ed4-7a21-a256ca71a174 |
-| principalIdDisplayName | Lamna Database Security Management   |
-| roleDefinitionId       | 056cd41c-7e88-42e1-933e-88ba6a50c9c3 |
 
 - Lamna Managed Service Registration
 
@@ -175,6 +169,14 @@ From your permission structure, you know you need:
 | principalId            | 1a26aefe-a645-2759-e7e6-1ff04b05c24a                         |
 | principalIdDisplayName | Lamna Policy Automation Account                              |
 | roleDefinitionId       | b24988ac-6180-42a0-ab88-20f7382dd24c   92aaf0da-9dab-42b6-94a3-d43ce8d16293 |
+
+- Manage Lighthouse Customer
+
+| **Field**              | **Value**                            |
+| ---------------------- | ------------------------------------ |
+| principalId            | 0420acae-b21a-2ed4-7a21-a256ca71a174 |
+| principalIdDisplayName | Manage Lighthouse Customer           |
+| roleDefinitionId       | 056cd41c-7e88-42e1-933e-88ba6a50c9c3 |
 
 When you've finished changing the parameter file, it should look like this:
 
@@ -201,18 +203,18 @@ When you've finished changing the parameter file, it should look like this:
         },
         {
             "principalId": "0251bcab-a12a-f2d3-aa22-b731cc74a463",
-            "principalIdDisplayName": "Lamna Database Contributor",
+            "principalIdDisplayName": "Lamna Database Management",
             "roleDefinitionId": "9b7fa17d-e63e-47b0-bb0a-15c516ac86ec"
-        },
-        {
-            "principalId": "0420acae-b21a-2ed4-7a21-a256ca71a174",
-            "principalIdDisplayName": "Lamna Database Security Management",
-            "roleDefinitionId": "056cd41c-7e88-42e1-933e-88ba6a50c9c3"
         },
         {
             "principalId": "0035cefb-2d14-18d3-b316-c1701cf3b317",
             "principalIdDisplayName": "Lamna Managed Service Registration",
             "roleDefinitionId": "91c1777a-f3dc-4fae-b103-61d183457e46"
+        },
+        {
+            "principalId": "0420acae-b21a-2ed4-7a21-a256ca71a174",
+            "principalIdDisplayName": "Manage Lighthouse Customer",
+            "roleDefinitionId": "056cd41c-7e88-42e1-933e-88ba6a50c9c3"
         },
         {
             "principalId": "1a26aefe-a645-2759-e7e6-1ff04b05c24a",
@@ -255,7 +257,7 @@ az deployment create --name delegated-resource-management \
 ```
 
 > [!Note]
-> Because this is a subscription-level deployment, the Lamna Healthcare user who's doing it can't have a guest account. Also, they must have the **Owner** role in the Azure AD for the subscription, or subscriptions, they want to onboard.
+> Because this is a subscription-level deployment, the Lamna Healthcare user who's doing it can't have a guest account. Also, they must have the **Owner** role in the Azure AD for the subscription or subscriptions they want to onboard.
 
 ## Confirming successful onboarding using an Azure Resource Manager template
 
@@ -271,4 +273,4 @@ Lamna Healthcare can now see all their managed service provider details from the
 
 1. Go to the [Service Providers page](https://docs.microsoft.com/azure/lighthouse/how-to/view-manage-service-providers).
 1. Select **Service provider offers**.
-1. Confirm that you can see the service provider's name, and the offer name that was given in the Resource Manager template.
+1. Confirm that you can see the service provider's name and the offer name that was given in the Resource Manager template.

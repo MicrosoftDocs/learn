@@ -2,7 +2,7 @@ If you want to deploy your Express.js webapp to Azure App Service, there is an A
 
 Suppose, you've completed your proof-of-concept webapp that provides a countdown to the new video game's launch date. Now, you want to show that it works in Azure App Service, which you want to use as the final host. You want a quick way to deploy the app and you'd like to be able to debug it in Azure as well.
 
-In this unit, you'll learn about Azure App Service and how to work with it by using VS Code. 
+In this unit, you'll learn about Azure App Service and how to work with it by using Visual Studio Code. 
 
 ## What is Azure App Service?
 
@@ -40,7 +40,7 @@ Use pricing tiers to control costs and match the scalability of your app to the 
 
 ## What is the VS Code Azure App Service extension?
 
-If you are working with Azure App Service and VS Code, you can consider installing the Azure App Service extension. With this extension, you get an extra explorer window that displays all the webapps in your subscription. You can use this explorer to connect your app to a backend database or configure GitHub deployment. You can also create deployment slots or define new application settings. You can also create new webapps and deploy source code straight from your local hard drive to Azure.
+If you are working with Azure App Service and VS Code, you can consider installing the [Azure App Service](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureappservice) extension. With this extension, you get an extra explorer window that displays all the webapps in your subscription. You can use this explorer to connect your app to a backend database or configure GitHub deployment. You can also create deployment slots or define new application settings. You can also create new webapps and deploy source code straight from your local hard drive to Azure.
 
 ![The Azure explorer in VS Code](../media/4-azure-explorer.png)
 
