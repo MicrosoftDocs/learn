@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.iot.setup-an-iot-edge-gateway
 metadata:
-  title: Setup an IoT Edge Gateway
+  title: Set up an IoT Edge Gateway
   description: This module is theoretical and will walk you through how an IoT Edge device can be used as a gateway.
   ms.date: 02/12/2020
   author: PeterTurcan
