@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.languages.python-datatypes-numeric-operations.challenge
-title: Challenge - Temperature converter
+title: Challenge - Convert Fahrenheit temperatures to Celsius
 metadata:
-  title: Challenge - Temperature converter
-  description: Test your understanding of this module with a coding challenge
+  title: Challenge - Convert Fahrenheit temperatures to Celsius
+  description: Test your understanding of this module with a coding challenge.
   ms.date: 02/18/2020
   author: bobtabor-msft
   ms.author: rotabor

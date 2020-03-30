@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.languages.python-datatypes-numeric-operations.knowledge-check
-title: Knowledge check
+title: Check your knowledge
 metadata:
   title: Check your knowledge
-  description: Review what you've learned
+  description: Review what you've learned in this module.
   ms.date: 02/18/2020
   author: bobtabor-msft
   ms.author: rotabor
@@ -13,35 +13,35 @@ durationInMinutes: 3
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which function should you use when you want to evaluate whether or not a value is of type string?"
+  - content: "Which function should you use when you want to evaluate whether a value is of type string?"
     choices:
     - content: "The `isstring()` function"
       isCorrect: false
-      explanation: "There is no `isstring()` function"
+      explanation: "There is no `isstring()` function."
     - content: "The `type()` function"
       isCorrect: false
-      explanation: "The `type()` function only returns the type.  It does not evaluate the type to see if it matches some type like `str`."
+      explanation: "The `type()` function returns only the type.  It doesn't evaluate the type to see whether it matches some type, such as `str`."
     - content: "The `instanceof()` function."
       isCorrect: true
-      explanation: "Choose `instanceof()` when you want to evaluate whether or not a value is of a certain type."
+      explanation: "Choose `instanceof()` when you want to evaluate whether a value is of a certain type."
     - content: "The `isnumeric()` function"
       isCorrect: false
-      explanation: "The `isnumeric()` function will not allow you to evaluate whether or not a value is of type string."
-  - content: "You want to determine if one number divides evenly into another.  Which operator would you use for that?"
+      explanation: "The `isnumeric()` function doesn't allow you to evaluate whether a value is of type string."
+  - content: "You want to determine whether one number divides evenly into another.  Which operator would you use for that?"
     choices:
     - content: "The `/` operator"
       isCorrect: false
-      explanation: "Simple division alone will not answer this question."
+      explanation: "Simple division alone doesn't answer this question."
     - content: "The `^` operator"
       isCorrect: false
       explanation: "The `^` symbol is not used in Python."
     - content: "The `&` operator"
       isCorrect: false
-      explanation: "The `&` symbol is used for bitwise operations and will not answer this question."
+      explanation: "The `&` symbol is used for bitwise operations and doesn't answer this question."
     - content: "The `%` operator"
       isCorrect: true
-      explanation: "If the modulus is `0`, then the divisor divides evenly into the dividend."
-  - content: "Suppose you have a value `1.468` in a variable called `interest_rate` and you want to round it to `1.5`.  How would you call the `round()` method?"
+      explanation: "If the modulus is *0*, the divisor divides evenly into the dividend."
+  - content: "Suppose you have a value *1.468* in a variable called `interest_rate` and you want to round it to `1.5`.  How would you call the `round()` method?"
     choices:
     - content: "`round(interest_rate)`"
       isCorrect: false
