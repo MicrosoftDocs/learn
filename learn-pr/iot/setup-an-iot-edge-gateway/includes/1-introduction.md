@@ -12,7 +12,7 @@ There are three patterns for using an IoT Edge device as a gateway: transparent,
 
     [![IoT Edge Protocol Translation Diagram](../media/protocol-translation.png)](../media/protocol-translation.png#lightbox)
 
-    This pattern can allow for translation of legacy data protocols into a secure endpoint for both translation and transmission up to the cloud.  The configuration is often used in environments that employ pre-existing sensors that do not support MQTT, AMQP, or HTTP.
+    This pattern can allow for translation of legacy data protocols into a secure endpoint for transmission up to the cloud.  The configuration is often used in environments that employ pre-existing sensors that do not support MQTT, AMQP, or HTTP.
 
 - Identity translation - Devices that cannot connect to IoT Hub can connect to a gateway device, instead. The gateway provides IoT Hub identity and protocol translation on behalf of the downstream devices. The gateway is smart enough to understand the protocol used by the downstream devices, provide them identity, and translate IoT Hub primitives. Downstream devices appear in IoT Hub as first-class devices with twins and methods. A user can interact with the devices in IoT Hub and is unaware of the intermediate gateway device.
 
@@ -45,7 +45,7 @@ In this module you will:
 
 [![Manufacturing Scenario](../media/manufacturing.png)](../media/manufacturing.png#lightbox)
 
-You have been tasked to implement an IoT Edge solution into a manufacturing environment that employs a variety of sensors for ensuring quality control on a production line. The facility is under strict regulation to ensure that sensor data is only transported out of the network through a secure endpoint. This requirement ensures that mission-critical control mechanisms are not exposed to outside attacks and ensures that compliance regulations are satisfied.
+You have been tasked to implement an IoT Edge solution into a manufacturing environment for ensuring quality control on a production line. The facility is under strict regulation to ensure that sensor data is only transported out of the network through a secure endpoint. This requirement ensures that mission-critical control mechanisms are not exposed to outside attacks and ensures that compliance regulations are satisfied.
 
 To accommodate this requirement, an Azure IoT Edge Gateway will be employed to ensure that only trusted devices are able to pass data through the gateway endpoint into Microsoft Azure.  This strategy allows the site implementation to operate with all of the capabilities available to Azure IoT Edge Devices (offline operation, updating running modules from the cloud down to the field, high-throughput telemetry transmission via MQTT/AMQP protocols etc.) plus the added benefit of offering a secure route to the cloud for publishing telemetry and transmitting Cloud to Device messages down to devices in the factory.
 
