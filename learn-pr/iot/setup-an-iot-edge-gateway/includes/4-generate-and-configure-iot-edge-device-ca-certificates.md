@@ -26,7 +26,7 @@ You will perform these steps on the Azure IoT Edge Gateway Virtual Machine that 
     `ssh -i <private key path> usernam@az-220-vm-edgegw-{YOUR-ID}.westus.cloudapp.azure.com
     `
 
-    This entry is a sample SSH command that will be used to connect to the virtual machine that contains the hostname for the VM and the Administrator username. Modify this  command so that it is formatted similar to `ssh username@az-220-vm-edgegw-{YOUR-ID}.westus.cloudapp.azure.com`.
+    This entry is a sample SSH command that will be used to connect to the virtual machine that contains the hostname for the VM and the Administrator username. Modify this command so that it is formatted similar to `ssh username@az-220-vm-edgegw-{YOUR-ID}.westus.cloudapp.azure.com`.
 
 1. At the top of the Azure portal click on the **cloud shell** icon to open up the **Azure cloud shell** within the Azure portal. When the pane opens, choose the option for the **Bash** terminal within the cloud shell.
 
@@ -119,7 +119,7 @@ You will perform these steps on the Azure IoT Edge Gateway Virtual Machine that 
 
      This command will output the version of the Azure IoT Edge Runtime that is currently installed on the virtual machine.
 
-    The version output will be similar to the following:
+    The version will be similar to the following output:
 
     ```bash
     username@AZ-220-VM-EDGEGW:~/certificates$ iotedge version
