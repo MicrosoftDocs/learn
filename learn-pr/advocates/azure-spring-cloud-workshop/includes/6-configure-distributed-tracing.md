@@ -7,10 +7,10 @@ We now have a complete microservices stack:
 
 However, even with only those two components, it already is quite challenging to monitor and study performance issues in our architecture.
 
-In order to solve that issue, we are going to set up a distributed tracing solution:
+To solve that issue, we're going to set up a distributed tracing solution:
 
-- We will instrument our applications by adding the `spring-cloud-starter-zipkin` dependency, so that they send telemetry data.
-- In Azure Spring Cloud, this telemetry data will automatically by ingested and analyzed by Azure Monitor.
+- We'll instrument our applications by adding the `spring-cloud-starter-zipkin` dependency, so that they send telemetry data.
+- In Azure Spring Cloud, this telemetry data will automatically be ingested and analyzed by Azure Monitor.
 
 ## Enable distributed tracing to better understand the architecture
 
@@ -27,7 +27,7 @@ This dependency will add distributed tracing capabilities to our microservice an
 
 Now you need to update those applications on Azure Spring Cloud.
 
-Re-deploy the `todo-service` microservice:
+Redeploy the `todo-service` microservice:
 
 ```bash
 cd todo-service
@@ -36,7 +36,7 @@ az spring-cloud app deploy -n todo-service --jar-path target/demo-0.0.1-SNAPSHOT
 cd ..
 ```
 
-Re-deploy the `gateway` gateway:
+Redeploy the `gateway` gateway:
 
 ```bash
 cd gateway
@@ -54,6 +54,6 @@ cd ..
 > [!TIP]
 > Tracing data can take a couple of minutes to be ingested by the system, so use this time to generate some load, and wait for the data to arrive.
 
-You should now have access to a full application map, as well as a search engine that allows to find performance bottlenecks.
+You should now have access to a full application map and to a search engine that allows to find performance bottlenecks.
 
 ![Distributed tracing](../media/6-distributed-tracing.png)
