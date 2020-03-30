@@ -1,10 +1,10 @@
-Security is our priority, and we need to ensure that only authorized devices are able to connect and publish data into our IoT Edge Gateway.  Certificate-based authentication will allow us to keep out unauthorized devices and secure our transmission channel back to our IoT Hub.
+We need to ensure only authorized devices can publish data into our IoT Edge Gateway.  Certificate-based authentication will allow us to keep out unauthorized devices and secure our transmission channel back to our IoT Hub.
 
 [![security](../media/security.png)](../media/security.png#lightbox)
 
 The process is similar to how we gain access into the physical manufacturing building.  
 
-We present credentials to a guard (the IoT Edge Gateway), who validates that we are who we say we are.  If the credentials check out, then we are able to pass into our destination (the Azure IoT Hub).
+We present credentials to a guard (the IoT Edge Gateway), who validates that we are who we say we are.  If the credentials check out, then we can pass into our destination (the Azure IoT Hub).
 
 [![Transparent Gateway Devices Diagram](../media/transparent-gateway-devices.png)](../media/transparent-gateway-devices.png#lightbox)
 
@@ -28,11 +28,11 @@ You'll perform these steps on the Azure IoT Edge Gateway Virtual Machine that wa
 
     This entry is a sample SSH command that will be used to connect to the virtual machine that contains the hostname for the VM and the Administrator username. Modify this command so that it is formatted similar to `ssh username@az-220-vm-edgegw-{YOUR-ID}.westus.cloudapp.azure.com`.
 
-1. At the top of the Azure portal click on the **cloud shell** icon to open up the **Azure cloud shell** within the Azure portal. When the pane opens, choose the option for the **Bash** terminal within the cloud shell.
+1. At the top of the Azure portal click on the **Cloud Shell** icon to open up the **Azure Cloud Shell** within the Azure portal. When the pane opens, choose the option for the **Bash** terminal within the Cloud Shell.
 
-1. Within the cloud shell, paste in the modified `ssh` command, and press **Enter**.
+1. Within the Cloud Shell, paste in the modified `ssh` command, and press **Enter**.
 
-1. When prompted with "**Are you sure you want to continue connecting?**", type `yes` and press Enter. This prompt is a security confirmation since the certificate used to secure the connection to the VM is self-signed. The answer to this prompt will be remembered for subsequent connections, and is only prompted on the first connection.
+1. When prompted with "**Are you sure you want to continue connecting?**", type `yes` and press Enter. This prompt is a security confirmation since the certificate used to secure the connection to the VM is self-signed. The answer to this prompt will be remembered for subsequent connections.
 
 1. When prompted to enter the password, enter the Administrator password that was entered when the VM was provisioned.
 
@@ -56,7 +56,7 @@ You'll perform these steps on the Azure IoT Edge Gateway Virtual Machine that wa
      mkdir certificates
      cd certificates
     ```
-1. To generate the certificates, the helper scripts need to be copied to the working directory. To do this, run the following commands:
+1. To generate the certificates, the helper scripts need to be copied to the working directory. To perform this action, run the following commands:
 
     ```bash
      cp ../iotedge/tools/CACertificates/*.cnf .
@@ -79,7 +79,7 @@ You'll perform these steps on the Azure IoT Edge Gateway Virtual Machine that wa
 
     Make note that the directory where you're running the script is located at `~/certificates`. This path maps to the `/home/<username>/certificates` directory, where `<username>` is the user your logged into SSH with. You will need to use this directory location later when configuring Azure IoT Edge to use the generated certificates.
 
-1. The `certGen.sh` helper script is run with the `create_root_and_intermediate` parameter to generate the root CA certificate and one intermediate certificate. Run the following command to do this:
+1. The `certGen.sh` helper script is run with the `create_root_and_intermediate` parameter to generate the root CA certificate and one intermediate certificate. Run the script by executing the following commands:
 
     ```bash
      ./certGen.sh create_root_and_intermediate
@@ -140,7 +140,7 @@ You'll perform these steps on the Azure IoT Edge Gateway Virtual Machine that wa
 
 1. Locate the **Certificate settings** section within the file, remove the leading `#` character before the certificate properties to uncomment those lines, then edit the certificate settings to contain the correct certificate and key paths. After changes are made, save the file and exit the editor.
 
-    After the X.509 certificate settings changes have been made to the `config.yaml` file, this section of the file will look like the following:
+    After the X.509 certificate settings changes have been made to the `config.yaml` file, this section of the file will look like the following entry:
     
     ```bash
     certificates:
@@ -173,14 +173,14 @@ You'll perform these steps on the Azure IoT Edge Gateway Virtual Machine that wa
     sudo service iotedge restart
     ```
 
-    If the Edge runtime does not restart successfully, ensure that you have modified `/etc/iotedge/config.yaml` appropriately.
+    If the Edge runtime does not restart successfully, you'll want to double-check that you have modified `/etc/iotedge/config.yaml` appropriately.
 
-1. The `MyEdgeDeviceCA` certificate needs to be downloaded from the Azure IoT Edge Gateway Virtual Machine so it can be used to configure the IoT Edge device enrollment within Azure IoT Hub Device Provisioning Service. Type `exit` in the **Azure cloud shell** to end the SSH session.  
+1. The `MyEdgeDeviceCA` certificate needs to be downloaded from the Azure IoT Edge Gateway Virtual Machine so it can be used to configure the IoT Edge device enrollment within Azure IoT Hub Device Provisioning Service. Type `exit` in the **Azure Cloud Shell** to end the SSH session.  
 
     ```bash
      exit
     ```
-1. Within the **cloud shell** run the following commands to download the `~/certificates` directory and its contents from the virtual machine to the **cloud shell** storage:
+1. Within the **Cloud Shell**, run the following commands to download the `~/certificates` directory and its contents from the virtual machine to the **Cloud Shell** storage:
 
     ```bash
      mkdir certificates
@@ -191,7 +191,7 @@ You'll perform these steps on the Azure IoT Edge Gateway Virtual Machine that wa
     
     When executing the command, enter the Admin password for the VM when prompted.
 
-1. Once the command has executed, it will have downloaded a copy of the `~/certificates` directory with the certificate and key files over SSH to the cloud shell storage. You can verify the file has been downloaded by running the `ls` command within the `~/certificates` directory to view its contents.
+1. Once the command has executed, it will have downloaded a copy of the `~/certificates` directory with the certificate and key files over SSH to the Cloud Shell storage. You can verify the file has been downloaded by running the `ls` command within the `~/certificates` directory to view its contents.
 
     ```bash
      User@Azure:~$ cd certificates
@@ -200,6 +200,6 @@ You'll perform these steps on the Azure IoT Edge Gateway Virtual Machine that wa
      certs       index.txt  index.txt.attr.old  newcerts       private              serial.old
      ```
     
-     Once the files are copied to the **Azure cloud shell** storage, from the virtual machine, you will be able to easily download any of the IoT Edge Device certificate and key files to your local machine as necessary. Files can be downloaded from the Azure cloud shell using the `download <filename>` command.
+     Once the files are copied to the **Azure Cloud Shell** storage, you'll be able to easily download the IoT Edge Device certificate and key files to your local machine. The files can be downloaded from the Azure Cloud Shell using the `download <filename>` command.
 
      Congratulations, that's the end of the unit! In the next unit, we'll set up an IoT Edge Gateway Hostname.

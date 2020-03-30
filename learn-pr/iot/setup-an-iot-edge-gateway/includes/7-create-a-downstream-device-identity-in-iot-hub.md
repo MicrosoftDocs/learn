@@ -1,6 +1,6 @@
-We are now ready to set up a downstream device that will be registered for communication with our IoT Edge Gateway.  This process is required for onboarding new sensors into the manufacturing line. 
+We're now ready to set up a downstream device that will be registered for communication with our IoT Edge Gateway.  This process is required for onboarding new sensors into the manufacturing line. 
 
-We aren't sure the exact specs of the device at this time, but the research and development team tells us it's innovative and will help us ensure that regulations are met during production runs.
+We aren't sure the exact specs of the device at this time, but the research and development team tell us it will ensure that regulations are met during production runs.
 
 [![Secret Sensor](../media/kinectpreview.png)](../media/kinectpreview.png#lightbox)
 
@@ -8,7 +8,7 @@ In this unit, you'll create a new IoT Device identity in Azure IoT Hub for the d
 
 ## Create a Downstream Device Identity in IoT Hub
 
-1. If necessary, log in to your Azure portal using your Azure account credentials.
+1. If necessary, sign in to your Azure portal using your Azure account credentials.
 
     If you have more than one Azure account, ensure that you are logged in with the account that is tied to the subscription that you intend to use for this course.
 
@@ -18,7 +18,7 @@ In this unit, you'll create a new IoT Device identity in Azure IoT Hub for the d
 
 1. Click the **New** button to begin adding a new IoT Device Identity to the IoT Hub.
 
-1. On the **Create a device** blade, enter `DownstreamDevice1` into the **Device ID** field. This is the device identity used for authentication and access control.
+1. On the **Create a device** blade, enter `DownstreamDevice1` into the **Device ID** field. This value is the device identity used for authentication and access control.
 
 1. Select **Symmetric key** for the **Authentication type**, and leave the **Auto-generate keys** box checked. This option tells the IoT Hub to automatically generate the symmetric keys for authenticating the device.
 

@@ -1,4 +1,4 @@
-With our newly registered device identity, we can now deploy a virtual machine that uses those device credentials to securely connect to the Azure cloud.  Since we are in the development phase, using a virtual machine will be a great way to test out our deployment before installing onto a physical device within the manufacturing facility.
+We can now deploy a virtual machine that uses our newly registered device identity to securely connect to the Azure cloud.  Since we are in the development phase, using a virtual machine will be a great way to test out our deployment before installing onto a physical device within the manufacturing facility.
 
 [![Developer](../media/developer.png)](../media/developer.png#lightbox)
 

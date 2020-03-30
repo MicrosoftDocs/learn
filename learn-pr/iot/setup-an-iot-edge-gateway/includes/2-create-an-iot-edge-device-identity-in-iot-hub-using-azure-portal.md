@@ -1,4 +1,4 @@
-It's the first day on the job as lead IoT Solutions Engineer.  We've been told that we are in charge of implementing an Azure IoT Edge Gateway solution to facilitate secure transmission of manufacturing floor telemetry into the cloud.  
+It's the first day on the job as lead IoT Solutions Engineer.  You've been told that you are in charge of implementing an Azure IoT Edge Gateway solution to facilitate secure transmission of manufacturing floor data into the cloud.  
 
 The implementation of this solution is seen as high-impact, with lots of teams across the company counting on it's success.  Our Machine Learning and Data Analysts believe that we can automate a majority of our operations and the supply chain folks think that it could help optimize material usage and delivery of product.  If we successfully capture data from the manufacturing floor into Microsoft Azure, all of our business units can theoretically access and make use of it.
 
@@ -33,13 +33,13 @@ In this unit, you will create a new IoT Edge Device identity in Azure IoT Hub fo
 
 1. With a sandbox, a containing resource with a name such as **AZ-220-HUB-_{YOUR-ID}** is created. From this containing resource, click **Go to resource** to go to the home page for your temporary hub.
 
-1. On the IoT Hub summary blade, click **IoT Edge** under the **Automatic Device Management** section. This section of the IoT Hub blade allows you to manage the IoT Edge devices connected to the IoT Hub.
+1. On the IoT Hub summary, click **IoT Edge** under the **Automatic Device Management** section. This section of the IoT Hub summary allows you to manage the IoT Edge devices connected to the IoT Hub.
 
     [![Transparent Gateway Devices Diagram](../media/portal-view-devices.png)](../media/portal-view-devices.png#lightbox)
 
 1. Click the **Add an IoT Edge device** button to begin adding a new IoT Edge Device to the IoT Hub.
 
-1. On the **Create a device** blade, enter `az-220-vm-edgegw-{YOUR-ID}` into the **Device ID** field. This value is the device identity used for authentication and access control.
+1. On the **Create a device** section, enter `az-220-vm-edgegw-{YOUR-ID}` into the **Device ID** field. This value is the device identity used for authentication and access control.
 
 1. Select **Symmetric key** for the **Authentication type**, and leave the **Auto-generate keys** box checked. This option tells the IoT Hub to automatically generate the symmetric keys for authenticating the device.
 
@@ -47,17 +47,17 @@ In this unit, you will create a new IoT Edge Device identity in Azure IoT Hub fo
 
 1. Once the IoT Edge Device is added, click on the **Device ID** in the list of IoT Edge devices.
 
-1. On the IoT Edge Device summary blade, copy the **Primary Connection String** and save it for later.
+1. On the IoT Edge Device summary, copy the **Primary Connection String** and save it for later.
 
 1. Notice the list of **Modules** configured for the IoT Edge Device contains the **$edgeAgent** and **$edgeHub** modules.
 
     The IoT Edge Agent (`$edgeAgent`) and IoT Edge Hub (`$edgeHub`) modules are a part of the IoT Edge Runtime. The Edge Hub is responsible for communication, and the Edge Agent deploys and monitors the modules on the device.
 
-1. Click the **Set Modules** button at the top of the IoT Edge Device summary blade. This is used to add additional modules to the IoT Edge Device. You'll use this to ensure the message routing is configured correctly for the IoT Edge Gateway device.
+1. Click the **Set Modules** button at the top of the IoT Edge Device summary blade. This section is used to add additional modules to the IoT Edge Device. You'll use this section to ensure the message routing is configured correctly for the IoT Edge Gateway device.
 
 1. Leave all fields as they are in the **Modules** step, and click **Next: Routes >**.
 
-1. Within the **Specify Routes**, the editor will display the configured default route for the IoT Edge Device. At this time, it should be configured with a route that sends all messages from all modules to Azure IoT Hub. If the route configuration doesn't match this, then update it to match the following route:
+1. Within the **Specify Routes**, the editor will display the configured default route for the IoT Edge Device. It should be configured with a route that sends all messages from all modules to Azure IoT Hub. If the route configuration doesn't match this definition, then update it to match the following route:
 
     - Name: **route**
     - Value: `FROM /* INTO $upstream`

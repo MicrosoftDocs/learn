@@ -1,4 +1,4 @@
-This is it!  We are now ready to connect our first sensor.  Research and development has informed us that we will be using a modified Azure Kinect device, which will consist of a module for reading the temperature and humidity of our manufacturing floor.  This solutio will allow us to easily manage operations that require explicit temperatures during our production phases.
+We're now ready to connect our first sensor!  Research and development have informed us that we will be using a modified Azure Kinect device, which will consist of a module for reading the temperature and humidity of our manufacturing floor.  This solution will allow us to easily manage operations that require explicit temperatures during our production phases.
 
 [![Azure Kinect](../media/azurekinect.png)](../media/azurekinect.png#lightbox)
 
@@ -6,7 +6,7 @@ In this unit, we'll configure a pre-built Downstream Device to connect to the Io
 
 ## Connect a Downstream Device to IoT Edge Gateway
 
-1. If necessary, log in to your Azure portal using your Azure account credentials.
+1. If necessary, sign in to your Azure portal using your Azure account credentials.
 
     If you have more than one Azure account, ensure that you are logged in with the account that is tied to the subscription that you intend to use for this course.
 
@@ -18,7 +18,7 @@ In this unit, we'll configure a pre-built Downstream Device to connect to the Io
      download certificates/certs/azure-iot-test-only.root.ca.cert.pem
     ```
 
-    The Azure IoT Edge Gateway was configured (within the `/etc/iotedge/config.yaml file`) previously to use this **root CA** X.509 certificate for encrypting communications with any downstream devices connecting to the gateway. This X.509 certificate will need to be copied to the downstream devices so they can use it to encrypt communications with the gateway.
+    The Azure IoT Edge Gateway was configured (within the `/etc/iotedge/config.yaml file`) previously to use this **root CA** X.509 certificate for encrypting communications with any downstream devices connecting to the gateway. This X.509 certificate will need to be copied to the downstream devices to allow for encrypting communications with the gateway.
 
 1. Obtain the contents of the **DownstreamDevice** folder available in the [**AZ-220-Microsoft-Azure-IoT-Developer GitHub Repo**](https://github.com/MicrosoftLearning/AZ-220-Microsoft-Azure-IoT-Developer/tree/master/Allfiles/Labs/12-Setup%20an%20IoT%20Edge%20Gateway/Starter)
        
@@ -74,7 +74,7 @@ In this unit, we'll configure a pre-built Downstream Device to connect to the Io
      dotnet run
     ```
 
-1. When the app installed the ***X.509 certificate** on the local machine so it can use it to authenticate with the IoT Edge Gateway, it may prompt asking if you would like to install the certificate. Click **Yes** to allow it and continue.
+1. When the app installed the ***X.509 certificate** on the local machine, it may prompt by asking if you would like to install the certificate. Click **Yes** to allow it and continue.
 
 1. Once the simulated device is running, the console output will display the events being sent to the Azure IoT Edge Gateway.
 
@@ -94,4 +94,4 @@ In this unit, we'll configure a pre-built Downstream Device to connect to the Io
 
 1. Leave the simulated device running while you move on to the next module.
 
-Congratulations, that's the end of the unit! In the next unit, we will verify event flow from downstream device through IoT Edge Gateway to IoT Hub. 
+Congratulations, that's the end of the unit! In the next unit, we'll verify event flow from downstream device through IoT Edge Gateway to IoT Hub. 

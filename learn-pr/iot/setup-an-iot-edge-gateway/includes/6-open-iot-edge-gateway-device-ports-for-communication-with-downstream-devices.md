@@ -1,4 +1,4 @@
-The security operations team has informed us that we need to conform to the company policy of only allowing authorized services to communicate on production devices.  This team watches everything that happens on the company network and could potentially block our access to the network if we do not comply with their policies.
+The security operations team has informed us that we need to conform to the company policy of only allowing authorized services to communicate on production devices.  This team watches everything that happens on the company network and could potentially block our access to the network if we do not adhere to their policies.
 
 [![Operations](../media/ops.png)](../media/ops.png#lightbox)
 
