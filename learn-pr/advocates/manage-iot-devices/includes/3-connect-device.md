@@ -1,6 +1,6 @@
-In this unit, you will be interacting with the online Raspberry Pi simulator you learned about in the previous unit.
+In this unit, you'll be interacting with the online Raspberry Pi simulator you learned about in the previous unit.
 
-While this exercise is being conducted in a simulated environment, the app running on the simulated device is very similar to the code that would be running on a real device. In the IoT world, device simulation is a valuable step when building a production grade solution.
+While this exercise is being conducted in a simulated environment, the app running on the simulated device is similar to the code that would be running on a real device. In the IoT world, device simulation is a valuable step when building a production grade solution.
 
 ## Create an IoT hub
 
@@ -18,7 +18,7 @@ In order to start collecting the data from the Raspberry Pi simulator, you need 
 
 1. In the **IoT hub** pane, enter the following information for your IoT hub:
 
-   - **Subscription**: Use the **Concierge subscription** for this example. This is the sandbox subscription.
+   - **Subscription**: Use the **Concierge subscription** for this example. This entry is the sandbox subscription.
    - **Resource group**: Use the sandbox resource group.
    - **Name**: Create a unique name for your IoT hub, something like "PiHub-your-id", replacing "your-id" with something appropriate. If the name you enter is available, a green check mark appears.
    - **Region**: Select the closest region to your location.
@@ -38,11 +38,11 @@ In order to start collecting the data from the Raspberry Pi simulator, you need 
 
 A device must be registered with your IoT hub before the device can connect.
 
-1. In your IoT hub navigation menu, open **IoT devices**, then click **Add** to register a device in your IoT hub.
+1. In your IoT hub navigation menu, open **IoT devices**, then click **+ New** to register a device in your IoT hub.
 
     [![Screenshot showing how to add a device to your IoT hub](../media/iot-admin-create-device.png)](../media/iot-admin-create-device.png#lightbox)
 
-1. Enter a **Device ID** for the new device. Choose a meaningful ID to represent your device, something like "PiHubDevice-your-id", again replacing "your-id" with something appropriate. Device IDs are case sensitive.
+1. Enter a **Device ID** for the new device. Choose a meaningful ID to represent your device, something like "PiHubDevice-your-id", again replacing "your-id" with something appropriate. Device IDs are case-sensitive.
 
     > [!IMPORTANT]
     > The device ID may be visible in the logs collected for customer support and troubleshooting, so make sure to avoid any sensitive information while naming it.
@@ -89,6 +89,8 @@ So what's happening? IoT hub is receiving the device-to-cloud messages sent from
 
    [![Screenshot showing the Pi simulator run button](../media/iot-admin-device-metrics.png)](../media/iot-admin-device-metrics.png#lightbox)
 
+1. The shape of the graph will depend on the volume of messages arriving, and the sequence of `Run`, `Stop`, and `Reset` commands that you use. Feel free to stop, and restart, the sending of telemetry. Notice how the graph changes, and when it changes, as there's some latency.
+
 ### Next steps
 
-For the penultimate unit of this module, let's look at some of the most useful left-hand menu entries for your IoT hub. 
+For the penultimate unit of this module, let's look at some of the most useful left-hand menu entries for your job as hub administrator.

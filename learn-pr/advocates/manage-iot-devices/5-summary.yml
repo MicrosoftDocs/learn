@@ -40,7 +40,7 @@ quiz:
       explanation: These are left-hand menu entries, not metrics.
     - content: 'Device to cloud messages, and Cloud to device messages'
       isCorrect: false
-      explanation: There are a range of metics for messages going either way, but cloud to device messages are not shown by default.
+      explanation: There are a range of metrics for messages going either way, but cloud to device messages are not shown by default.
     - content: "Telemetry data sent, and Successful twin reads from back end"
       isCorrect: true
       explanation: For a single device, the first metric might show a few hundred messages, and the second metric will show 1.
@@ -52,13 +52,13 @@ quiz:
     choices:
     - content: 'IoT devices'
       isCorrect: false
-      explanation: This will give you the device keys, but not the hub keys.
+      explanation: This entry will give you the device keys, but not the hub keys.
     - content: 'Shared access policies'
       isCorrect: true
       explanation: The keys are displayed by clicking on a policy, such as iothubowner.
     - content: 'Properties'
       isCorrect: false
-      explanation: This provides information on names, location, subscription, and so on. But not the keys.
+      explanation: This entry provides information on names, location, subscription, and so on. But not the keys.
     - content: 'Security'
       isCorrect: false
-      explanation: This provides information on threat prevention, and resource health.
+      explanation: This entry provides information on threat prevention, and resource health.
