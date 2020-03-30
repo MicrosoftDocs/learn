@@ -17,12 +17,12 @@ As you start, your need could be an assignment or coding challenge for a course.
 
 Building a new program follows a predictable series of actions:
 
-1. **Analyze** requirements - The first step is to understand the problem you're trying to solve. How you begin depends on whether you're building the program to satisfy a teacher, a client, or yourself. You typically want to immerse yourself in the problem. You ask critical questions about what the problem is, read any available communication or notes, and take other actions.
-1. **Design** a solution - Next, you begin to think about considerations like the program's appearance, its functionality, and what happens when an unexpected problem arises. You might draw diagrams, take notes, or mentally visualize the design of the program. You also might begin to imagine the approach you'll take for certain challenges in your code.
-1. **Write** your code - You spend the most time writing code that realizes the design you created.
-1. **Test** your code - As you write code, you test to see if the code works correctly. Later, you might add more formal testing that even involves users.
-1. **Deploy** your code - You distribute your code to others so they can begin using it to solve their problems. Or in a classroom, you might send your code to an instructor, which is a form of deployment.
-1. **Maintain** your code - Over time, users of your program might ask for new features or report bugs in your program. You fix the problems and redistribute your code to your users.
+1. **Analyze** requirements: The first step is to understand the problem you're trying to solve. How you begin depends on whether you're building the program to satisfy a teacher, a client, or yourself. You typically want to immerse yourself in the problem. You ask critical questions about what the problem is, read any available communication or notes, and take other actions.
+1. **Design** a solution: Next, you begin to think about considerations like the program's appearance, its functionality, and what happens when an unexpected problem arises. You might draw diagrams, take notes, or mentally visualize the design of the program. You also might begin to imagine the approach you'll take for certain challenges in your code.
+1. **Write** your code: You spend the most time writing code that realizes the design you created.
+1. **Test** your code: As you write code, you test to see if the code works correctly. Later, you might add more formal testing that even involves users.
+1. **Deploy** your code: You distribute your code to others so they can begin using it to solve their problems. Or in a classroom, you might send your code to an instructor, which is a form of deployment.
+1. **Maintain** your code: Over time, users of your program might ask for new features or report bugs in your program. You fix the problems and redistribute your code to your users.
 
 You might be your program's only user. Or you might work in a large team and distribute your program to thousands of users. In either case, the basic process is the same. Writing code is important, but it's not the only step, even when you solve coding challenges or assignments for a class.
 
@@ -44,13 +44,13 @@ You need a Python compiler, interpreter, and editor. You could use a basic text 
 
 Here are the tools to use as you get started:
 
-**Python** - The Python installer contains many utilities and features. The most important are:
+**Python**: The Python installer contains many utilities and features. The most important are:
 
 - The Python runtime, which is the compiler and the interpreter.
 - The Python Standard Library, which is a large collection of code that implements common functionality so you don't have to. Later, we'll devote entire modules to exploring this code library.
 
-**Visual Studio Code** - You can use a basic text editor to write code. But a dedicated code editor like Visual Studio Code lets you manage your code files, provides helpful visual hints as you code, and much more.
+**Visual Studio Code**: You can use a basic text editor to write code. But a dedicated code editor like Visual Studio Code lets you manage your code files, provides helpful visual hints as you code, and much more.
 
-**Python extension for Visual Studio Code** - The Python extension enhances the default Visual Studio Code experience by customizing the editor to help you write Python.
+**Python extension for Visual Studio Code**: The Python extension enhances the default Visual Studio Code experience by customizing the editor to help you write Python.
 
 Collectively, these software tools are typically referred to as your _developer environment_. In the next module, you'll walk through the steps to install the software tools you need to start programming with Python.
