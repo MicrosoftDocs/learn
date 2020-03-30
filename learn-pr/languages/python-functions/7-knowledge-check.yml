@@ -20,7 +20,7 @@ quiz:
       explanation: "This statement is incorrect. Encapsulation is actually a great reason to create a function."
     - content: "When you need to help break down a larger problem into smaller, more manageable pieces."
       isCorrect: false
-      explanation: "This statement is incorrect. Breakdown is actually a great reason to create a function."
+      explanation: "This statement is incorrect. Breaking down a problem into smaller, more manageable pieces is actually a great reason to create a function."
     - content: "When you need to share functionality across one or more programs by adding it to a module."
       isCorrect: false
       explanation: "This statement is incorrect. Sharing functionality is actually a great reason to create a function."

@@ -80,7 +80,7 @@ TypeError: 'tuple' object does not support item assignment
 
 ### Step 3 - Comment out the code from the previous step and add code that accepts keyword arguments
 
-Keyword arguments, which are also know as named arguments, are similar to arbitrary arguments lists. Callers can pass any number of keyword arguments. Each argument must specify its name along with its value.
+Keyword arguments, which are also known as named arguments, are similar to arbitrary arguments lists. Callers can pass any number of keyword arguments. Each argument must specify its name along with its value.
 
 Comment out the code from the previous step and add the following code listing:
 

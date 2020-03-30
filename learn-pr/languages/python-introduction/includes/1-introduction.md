@@ -1,4 +1,4 @@
-The Python programming language lets you build many types of programs, like:
+The Python programming language allows you to build many types of programs, like:
 
 - business applications to capture, analyze, and process data
 - dynamic web applications that can be accessed from a web browser

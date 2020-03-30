@@ -6,7 +6,7 @@ In this challenge, you'll create a new module containing functions that let the 
 
 Use the techniques you learned in previous modules to add a new code file in the current folder dedicated to this module. Name the file challenge.py.
 
-### Step 2
+### Step 2 - Copy the starter code into the new file
 
 Copy the following code into the new challenge.py file:
 
@@ -46,4 +46,4 @@ Rule 3: The `process_numbers()` function must select all numeric values, even th
 
 Rule 4: The `process_names()` function must select all string values that aren't numeric and return them as a list. The list must be sorted. The function must handle the possibility that the input parameter isn't formatted as a list. In that case, it must return an empty list.
 
-Whether you get stuck and need to peek at the solution or you finish successfully, continue to view a solution to this challenge.
+Whether you get stuck and need to peek at the solution or you finish successfully, continue on to view a solution to this challenge.
