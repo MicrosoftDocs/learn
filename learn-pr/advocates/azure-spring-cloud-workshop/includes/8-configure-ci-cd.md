@@ -22,7 +22,7 @@ cd ..
 You now need to allow access from your GitHub workflow to your Azure Spring Cloud cluster. Open up a terminal and copy/paste the following commands.
 
 ```bash
-# Get the ARM resource ID of the resource group
+# Get the Azure Resource Manager resource ID of the resource group
 RESOURCE_ID=$(az group show --name "$RESOURCE_GROUP_NAME" --query id -o tsv)
 
 # Create a service principal with a Contributor role to the resource group.
