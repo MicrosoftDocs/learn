@@ -1,4 +1,4 @@
-Azure Active Directory Identity Protection helps you to automatically detect, remediate, and investigate identity-based risks for your organization.
+Azure Active Directory (Azure AD) Identity Protection helps you to automatically detect, remediate, and investigate identity-based risks for your organization.
 
 The retail company you work for is conscious about its reputation. Compromised identities have previously enabled malicious users to obtain customer information fraudulently. These attacks have affected your organization's reputation, and ultimately its profitability. Your manager has asked you to investigate Identity Protection as a solution. You've been asked to report back on what the service does and how it's used.
 
@@ -6,7 +6,7 @@ In this unit, you'll learn what Identity Protection is and the risks involved in
 
 ## What is Azure Active Directory Identity Protection?
 
-Identity Protection is a solution built into Azure Active Directory that's designed to protect your identities through a three-part process.
+Identity Protection is a solution built into Azure AD that's designed to protect your identities through a three-part process.
 
 ![Identity Protection overview](../media/2-identity-protection-overview.svg)
 

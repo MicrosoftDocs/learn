@@ -36,7 +36,7 @@ There are different ways to remediate risks. The methods you use depend on your 
 
 ### Unblock users
 
-User accounts can be blocked by risk policies or manually by the administrator after an investigation. How these user accounts are unblocked depends on the type of risk that caused the blockage.
+User accounts can be blocked by risk policies or manually by the administrator after an investigation. How these user accounts are unblocked depends on the type of risk that caused the blockage:
 
 - **Accounts blocked because of sign-in risk**
 
