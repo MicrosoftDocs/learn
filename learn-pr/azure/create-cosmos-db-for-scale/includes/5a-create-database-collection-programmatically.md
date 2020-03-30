@@ -6,7 +6,7 @@ In this exercise, you'll learn how to create an Azure Cosmos DB database and con
 
 In this exercise, you'll create an Azure Cosmos DB  database, and container using the C# and the .NET SDK for Azure Cosmos DB.
 
-### Create a new .NET app and database using C#
+### Create a new .NET app, database, and container using C#
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the account you activated the sandbox with.
 
@@ -185,7 +185,7 @@ In this exercise, you'll create an Azure Cosmos DB  database, and container usin
     Database Id:    Products
     ```
 
-### Add a new container to your database using C#
+### Create a partitioned container using C#
 
 Now that you have created your database, you're ready to create a container to store your documents.
 
@@ -304,11 +304,11 @@ Now that you have created your database, you're ready to create a container to s
 
 ::: zone pivot="java"
 
-## Creating your database and container using the Java SDK
+## Creating a database and container using the Java SDK
 
 In this exercise, you'll create an Azure Cosmos DB  database, and container using the Java SDK for Azure Cosmos DB. 
 
-### Create a new app using Maven and database using Java
+### Create a new Java app, database, and container using Java
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the account you activated the sandbox with.
 
@@ -342,51 +342,69 @@ In this exercise, you'll create an Azure Cosmos DB  database, and container usin
 
     ![Bash Shell and Code Editor](../media/5-azure-cosmos-db-new-shell-editor-java.png)
 
-1. Click *pom.xml* in the Explorer pane to open the file in the code editor.
+1. Click *pom.xml* in the Explorer pane to open the file in the code editor. Replace the entire file with the following code:
 
-    1. To add the Maven project dependencies required to work with Cosmos DB, add the following entries to the `<dependencies>` section:
-
-        ```xml
-        <dependency>
-            <groupId>com.azure</groupId>
-            <artifactId>azure-cosmos</artifactId>
-            <version>4.0.1-beta.1</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.logging.log4j</groupId>
-            <artifactId>log4j-slf4j-impl</artifactId>
-            <version>2.13.0</version>
-            <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.apache.logging.log4j</groupId>
-            <artifactId>log4j-api</artifactId>
-            <version>2.11.1</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-jdk14</artifactId>
-            <version>1.7.28</version>
-        </dependency>
-        ```
-    
-    1. You'll also need to change the source and target compiler versions to Java 1.8. The code uses lambda syntax supported only on Java 8 onwards. Add the following code to below the `<dependencies>` section:
-
-        ```xml
+    ```xml
+    <?xml version="1.0" encoding="UTF-8"?>
+    <project xmlns="http://maven.apache.org/POM/4.0.0"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+        <modelVersion>4.0.0</modelVersion>
+     
+        <groupId>com.azure</groupId>
+        <artifactId>azure-cosmos-java-sql-api-samples</artifactId>
+        <version>1.0-SNAPSHOT</version>
+        <name>Get Started With Sync / Async Java SDK for SQL API of Azure Cosmos DB Database Service
+        </name>
         <properties>
             <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-            <maven.compiler.source>1.8</maven.compiler.source>
-            <maven.compiler.target>1.8</maven.compiler.target>
         </properties>
-        ```
-
-    1. Save your changes by typing <kbd>Ctrl+S</kbd>, or by selecting the **Save** option from the Editor menu on the upper right corner.
-
-### Create CosmosAsyncClient Instance
-
-The `CosmosAsyncClient` class is the primary entry point to use the SQL API in Azure Cosmos DB. You'll create an instance of the CosmosAsyncClient class by passing in connection metadata as parameters of the class' constructor. You'll then use this class instance throughout the exercise.
+     
+        <build>
+            <plugins>
+                <plugin>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.1</version>
+                    <configuration>
+                        <source>1.8</source>
+                        <target>1.8</target>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>exec-maven-plugin</artifactId>
+                    <version>1.6.0</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-eclipse-plugin</artifactId>
+                    <version>2.8</version>
+                    <configuration>
+                        <classpathContainers>
+                            <classpathContainer>
+                                org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8
+                            </classpathContainer>
+                        </classpathContainers>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </build>
+        <dependencies>
+            <dependency>
+                <groupId>com.azure</groupId>
+                <artifactId>azure-cosmos</artifactId>
+                <version>4.0.1-beta.1</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.javafaker</groupId>
+                <artifactId>javafaker</artifactId>
+                <version>1.0.2</version>
+            </dependency>
+        </dependencies>
+    </project>
+    ```
+    
+1. Save your changes by typing <kbd>Ctrl+S</kbd>, or by selecting the **Save** option from the Editor menu on the upper right corner.
 
 1. In the Explorer pane of the Code Editor, expand the nodes in the tree to *src\main\java\com\mslearn*, then click *App.java* to open the file in the editor.
 
@@ -395,11 +413,6 @@ The `CosmosAsyncClient` class is the primary entry point to use the SQL API in A
 1.  Below the `package com.mslearn` line, add the following imports:
 
     ```java
-    import org.slf4j.Logger;
-    import org.slf4j.LoggerFactory;
-    import java.math.BigDecimal;
-    import java.text.DecimalFormat;
-    
     import com.azure.cosmos.ConnectionPolicy;
     import com.azure.cosmos.ConsistencyLevel;
     import com.azure.cosmos.CosmosAsyncClient;
@@ -426,7 +439,6 @@ The `CosmosAsyncClient` class is the primary entry point to use the SQL API in A
 1. Within the App.java class, add the following lines of code to create variables for your connection information:
 
     ```java
-    protected static Logger logger = LoggerFactory.getLogger(App.class.getSimpleName());
     private static String endpointUri = "YOUR_URI";
     private static String primaryKey = "YOUR_KEY";
     ```
@@ -456,7 +468,7 @@ The `CosmosAsyncClient` class is the primary entry point to use the SQL API in A
             .buildAsyncClient();
     ```
 
-    Replace the placeholder `YOUR_LOCATION` value with the **Write Locations** value for your Azure Cosmos DB account.
+    Replace the placeholder `YOUR_LOCATION` value with the **Write Locations** value for your Azure Cosmos DB account (e.g. West US).
 
 1. Now add a line at the end of the main method which closes the client:
 
@@ -466,10 +478,6 @@ The `CosmosAsyncClient` class is the primary entry point to use the SQL API in A
 
 1. Save your changes by typing <kbd>Ctrl+S</kbd>, or by selecting the **Save** option from the Editor menu on the upper right corner.
 
-### Create a Database and a Partitioned Container using the SDK
-
-To create a container, you must specify a name and a partition key path. You will specify those values when creating a container in this task. A partition key is a logical hint for distributing data onto a scaled out underlying set of physical partitions and for efficiently routing queries to the appropriate underlying partition
-
 1. At the top of the class definition, add the following static class variables for the database and container instances:
 
     ```java
@@ -477,7 +485,7 @@ To create a container, you must specify a name and a partition key path. You wil
     private static CosmosAsyncContainer customContainer;
     private static AtomicBoolean resourcesCreated = new AtomicBoolean(false);
     ```
-1. In the `main()` method, locate the `CosmosClientBuilder()` call that you added earlier. In the subsequent steps, you'll add code between this call and the `client.close()` call.
+1. In the `main()` method, locate the `CosmosClientBuilder()` call that you added earlier. In the subsequent steps, you'll add code between this call and the `client.close()` call:
 
     ```java
     CosmosAsyncClient client = new CosmosClientBuilder()
@@ -495,10 +503,10 @@ To create a container, you must specify a name and a partition key path. You wil
 1. Add the following code to the method to create new `CosmosAsyncDatabase` and `CosmosAsyncContainerinstances` if they do not already exist:
 
     ```java
-    client.createDatabaseIfNotExists("Products").flatMap(databaseResponse -> {
+    client.createDatabaseIfNotExists("EntertainmentDatabase").flatMap    (databaseResponse -> {
         targetDatabase = databaseResponse.getDatabase();
         CosmosContainerProperties containerProperties = 
-            new CosmosContainerProperties("Clothing", "/type");
+            new CosmosContainerProperties("CustomCollection", "/type");
         return targetDatabase.createContainerIfNotExists(containerProperties, 400);
     }).flatMap(containerResponse -> {
         customContainer = containerResponse.getContainer();
@@ -515,27 +523,21 @@ To create a container, you must specify a name and a partition key path. You wil
 1. After the `while` loop, add the following code to print out the ID of the database:
 
     ```java
-    logger.info("Database Id:\t{}",targetDatabase.getId());
-    logger.info("Container Id:\t{}",customContainer.getId());
+    System.out.println(String.format("Database Id:\t%s",targetDatabase.getId()));
+    System.out.println(String.format("Container Id:\t%s",customContainer.getId()));
     ```
 
 1. Your final App.java file should resemble the following example:
 
     ```java
     package com.mslearn;
-    
-    import org.slf4j.Logger;
-    import org.slf4j.LoggerFactory;
-    import java.math.BigDecimal;
-    import java.text.DecimalFormat;
-    
+
     import com.azure.cosmos.ConnectionPolicy;
     import com.azure.cosmos.ConsistencyLevel;
     import com.azure.cosmos.CosmosAsyncClient;
     import com.azure.cosmos.CosmosAsyncDatabase;
     import com.azure.cosmos.CosmosAsyncContainer;
     import com.azure.cosmos.CosmosClientBuilder;
-    
     import com.azure.cosmos.models.CosmosAsyncItemResponse;
     import com.azure.cosmos.models.CosmosContainerProperties;
     import com.azure.cosmos.models.CosmosItemResponse;
@@ -558,7 +560,6 @@ To create a container, you must specify a name and a partition key path. You wil
      */
     public class App 
     {
-        protected static Logger logger = LoggerFactory.getLogger(App.class.getSimpleName());
         private static String endpointUri = "YOUR_URI";
         private static String primaryKey = "YOUR_KEY";
         private static CosmosAsyncDatabase targetDatabase;
@@ -569,18 +570,17 @@ To create a container, you must specify a name and a partition key path. You wil
         {
             ConnectionPolicy defaultPolicy = ConnectionPolicy.getDefaultPolicy();
             defaultPolicy.setPreferredLocations(Lists.newArrayList("YOUR_LOCATION"));
-    
+            
             CosmosAsyncClient client = new CosmosClientBuilder()
                     .setEndpoint(endpointUri)
                     .setKey(primaryKey)
                     .setConnectionPolicy(defaultPolicy)
                     .setConsistencyLevel(ConsistencyLevel.EVENTUAL)
                     .buildAsyncClient();
-            
-            client.createDatabaseIfNotExists("Products").flatMap(databaseResponse -> {
+            client.createDatabaseIfNotExists("EntertainmentDatabase").flatMap    (databaseResponse -> {
                 targetDatabase = databaseResponse.getDatabase();
                 CosmosContainerProperties containerProperties = 
-                    new CosmosContainerProperties("Clothing", "/type");
+                    new CosmosContainerProperties("CustomCollection", "/type");
                 return targetDatabase.createContainerIfNotExists(containerProperties, 400);
             }).flatMap(containerResponse -> {
                 customContainer = containerResponse.getContainer();
@@ -590,13 +590,15 @@ To create a container, you must specify a name and a partition key path. You wil
             });
             
             while (!resourcesCreated.get());
-            logger.info("Database Id:\t{}",targetDatabase.getId());
-            logger.info("Container Id:\t{}",customContainer.getId());
-    
-            client.close();
+            
+            System.out.println(String.format("Database Id:\t%s",targetDatabase.getId()));
+            System.out.println(String.format("Container Id:\t%s",customContainer.getId()));
+
+            client.close();   
     
         }
     }
+    
     ```
     
     Make sure you replace the placeholder values for `YOUR_URI`, `YOUR_KEY`, and `YOUR_LOCATION`.
@@ -608,11 +610,173 @@ To create a container, you must specify a name and a partition key path. You wil
 1. On the Bash Shell terminal, compile and run your Java application:
 
 ```bash
-mvn package
-mvn exec:java -Dexec.mainClass=com.mslearn.App
+mvn compile
+mvn exec:java -Dexec.mainClass=com.mslearn.App -Dexec.cleanupDaemonThreads=false
+
 ```
 
-Your Application will create a new database and container inside your Azure Cosmos DB account.
+Your Application will create a new database and container inside your Azure Cosmos DB account. You will see the names on the output console:
+
+```bash
+Database Id:    EntertainmentDatabase
+Container Id:   CustomCollection
+```
+
+### Create a partitioned Container using Java
+
+To create a container, you must specify a name and a partition key path. You'll specify those values when creating a container in this task. A partition key is a logical hint for distributing data onto a scaled out underlying set of physical partitions and for efficiently routing queries to the appropriate underlying partition
+
+1. Now you'll review the code we have written and add custom throughput provisioning and indexing. Take a look at the create-container-if-not-exists call:
+
+    ```csharp
+    CosmosContainerProperties containerProperties = 
+        new CosmosContainerProperties("CustomCollection", "/type");
+    return targetDatabase.createContainerIfNotExists(containerProperties, 400);
+    ```
+
+1. In general, you'll customize the container's dedicated throughput for your application. Modify the last line above to provision 10000 RU/s for this container as shown below:
+
+    ```csharp
+    CosmosContainerProperties containerProperties = 
+        new CosmosContainerProperties("CustomCollection", "/type");
+    return targetDatabase.createContainerIfNotExists(containerProperties, 10000);
+    ```
+
+1. Above these lines of code, create a new IndexingPolicy instance with a custom indexing policy configured:
+
+    ```csharp
+    IndexingPolicy indexingPolicy = new IndexingPolicy();
+    indexingPolicy.setIndexingMode(IndexingMode.CONSISTENT);
+    indexingPolicy.setAutomatic(true);
+    List<IncludedPath> includedPaths = new ArrayList<>();
+    IncludedPath includedPath = new IncludedPath();
+    includedPath.setPath("/*");
+    includedPaths.add(includedPath);
+    indexingPolicy.setIncludedPaths(includedPaths); 
+    ```
+
+1. In order to apply this indexing policy container, modify the CosmosContainerProperties indexing policy as shown below:
+
+    ```csharp
+    IndexingPolicy indexingPolicy = new IndexingPolicy();
+    indexingPolicy.setIndexingMode(IndexingMode.CONSISTENT);
+    indexingPolicy.setAutomatic(true);
+    List<IncludedPath> includedPaths = new ArrayList<>();
+    IncludedPath includedPath = new IncludedPath();
+    includedPath.setPath("/*");
+    includedPaths.add(includedPath);
+    indexingPolicy.setIncludedPaths(includedPaths);  
+    
+    CosmosContainerProperties containerProperties = 
+        new CosmosContainerProperties("CustomCollection", "/type");
+    containerProperties.setIndexingPolicy(indexingPolicy);
+    return targetDatabase.createContainerIfNotExists(containerProperties, 10000); 
+    ```
+
+1. Your final code will look like this:
+
+    ```csharp
+    package com.mslearn;
+    
+    import com.azure.cosmos.ConnectionPolicy;
+    import com.azure.cosmos.ConsistencyLevel;
+    import com.azure.cosmos.CosmosAsyncClient;
+    import com.azure.cosmos.CosmosAsyncDatabase;
+    import com.azure.cosmos.CosmosAsyncContainer;
+    import com.azure.cosmos.CosmosClientBuilder;
+    import com.azure.cosmos.models.CosmosAsyncItemResponse;
+    import com.azure.cosmos.models.CosmosContainerProperties;
+    import com.azure.cosmos.models.CosmosItemResponse;
+    import com.azure.cosmos.models.IndexingMode;
+    import com.azure.cosmos.models.IndexingPolicy;
+    import com.azure.cosmos.models.IncludedPath;
+    
+    import reactor.core.publisher.Flux;
+    import reactor.core.publisher.Mono;
+    
+    import java.util.ArrayList;
+    import java.util.List;
+    import java.util.UUID;
+    import java.util.concurrent.atomic.AtomicBoolean;
+    import com.google.common.collect.Lists;
+    
+    /**
+     * Hello world!
+     *
+     */
+    public class App 
+    {
+        private static String endpointUri = "YOUR_URI";
+        private static String primaryKey = "YOUR_KEY";
+        private static CosmosAsyncDatabase targetDatabase;
+        private static CosmosAsyncContainer customContainer;
+        private static AtomicBoolean resourcesCreated = new AtomicBoolean(false);
+    
+        public static void main( String[] args )
+        {
+            ConnectionPolicy defaultPolicy = ConnectionPolicy.getDefaultPolicy();
+            defaultPolicy.setPreferredLocations(Lists.newArrayList("YOUR_LOCATION"));
+            
+            CosmosAsyncClient client = new CosmosClientBuilder()
+                    .setEndpoint(endpointUri)
+                    .setKey(primaryKey)
+                    .setConnectionPolicy(defaultPolicy)
+                    .setConsistencyLevel(ConsistencyLevel.EVENTUAL)
+                    .buildAsyncClient();
+            client.createDatabaseIfNotExists("EntertainmentDatabase").flatMap    (databaseResponse -> {
+                targetDatabase = databaseResponse.getDatabase();
+            
+            IndexingPolicy indexingPolicy = new IndexingPolicy();
+            indexingPolicy.setIndexingMode(IndexingMode.CONSISTENT);
+            indexingPolicy.setAutomatic(true);
+            List<IncludedPath> includedPaths = new ArrayList<>();
+            IncludedPath includedPath = new IncludedPath();
+            includedPath.setPath("/*");
+            includedPaths.add(includedPath);
+            indexingPolicy.setIncludedPaths(includedPaths);  
+    
+            CosmosContainerProperties containerProperties = 
+                new CosmosContainerProperties("CustomCollection", "/type");
+            containerProperties.setIndexingPolicy(indexingPolicy);
+            return targetDatabase.createContainerIfNotExists(containerProperties, 10000); 
+            
+            }).flatMap(containerResponse -> {
+                customContainer = containerResponse.getContainer();
+                return Mono.empty();
+            }).subscribe(voidItem -> {}, err -> {}, () -> {
+                resourcesCreated.set(true);
+            });
+            
+            while (!resourcesCreated.get());
+    
+            System.out.println(String.format("Database Id:\t%s",targetDatabase.getId()));
+            System.out.println(String.format("Container Id:\t%s",customContainer.getId()));
+    
+            client.close();   
+    
+        }
+    }
+    ```
+
+    Make sure you replace the placeholder values for `YOUR_URI`, `YOUR_KEY`, and `YOUR_LOCATION`.
+
+1. Save your changes by typing <kbd>Ctrl+S</kbd>, or by selecting the **Save** option from the Editor menu on the upper right corner.
+
+1. Close the Code Editor by typing <kbd>Ctrl+Q</kbd>, or selecting **Close** from the Editor menu in the upper right.
+
+1. On the Bash Shell terminal, compile and run your Java application:
+
+    ```bash
+    mvn compile
+    mvn exec:java -Dexec.mainClass=com.mslearn.App -Dexec.cleanupDaemonThreads=false
+    ```
+
+Your Application will create a new database and a partitioned container container inside your Azure Cosmos DB account. You will see the names on the output console:
+
+```bash
+Database Id:    EntertainmentDatabase
+Container Id:   CustomCollection
+```
 
 ::: zone-end
 
