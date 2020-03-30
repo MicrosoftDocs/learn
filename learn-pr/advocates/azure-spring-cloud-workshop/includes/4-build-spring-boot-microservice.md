@@ -36,14 +36,14 @@ Once this operation completes, you can have a look at what was created in the re
 
 Azure Spring Cloud can automatically bind the Cosmos DB database we created to our microservice.
 
-- Go to "Apps" in your Azure Spring Cloud instance.
-- Select the `todo-service` application
-- Go to `Service bindings`
-- Click on `Create service binding``
-  - Give your binding a name, for example `cosmosdb-todos`
-  - Select the Cosmos DB account and database we created and select the `mongodb` API type
-  - In the drop-down list, select the primary master key
-  - Click on `Create` to create the database binding
+1. Go to "Apps" in your Azure Spring Cloud instance.
+1. Select the `todo-service` application
+1. Go to `Service bindings`
+1. Click on `Create service binding``
+    1. Give your binding a name, for example `cosmosdb-todos`
+    1. Select the Cosmos DB account and database we created and select the `mongodb` API type
+    1. In the drop-down list, select the primary master key
+    1. Click on `Create` to create the database binding
 
 That's all you need to do to have your Spring Boot microservice automatically configured to access the Cosmos DB database that we set up.
 
@@ -182,10 +182,10 @@ az spring-cloud app logs -n todo-service -f
 
 Now that the application is deployed, it's time to test it!
 
-- In the Azure Portal, go to "Apps" in your Azure Spring Cloud instance.
-  - Verify that `todo-service` has a `Discovery status` which says `UP(1),DOWN(0)`. This shows that it is correctly registered in the Spring Cloud Service Registry.
-  - Select `todo-service` to have more information on the microservice.
-- Copy/paste the "Test Endpoint" that is provided.
+1. In the Azure Portal, go to "Apps" in your Azure Spring Cloud instance.
+    1. Verify that `todo-service` has a `Discovery status` which says `UP(1),DOWN(0)`. This shows that it is correctly registered in the Spring Cloud Service Registry.
+    1. Select `todo-service` to have more information on the microservice.
+1. Copy/paste the "Test Endpoint" that is provided.
 
 You can now use cURL to test the endpoint. Your test command should look like:
 
