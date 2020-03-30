@@ -1,4 +1,4 @@
-A busy website is rarely considered finished. Instead, code is updated regularly to fix issues and add new features. You can deploy new versions by using VS Code and manage them by using deployment slots.
+A busy website is rarely considered finished. Instead, code is updated regularly to fix issues and add new features. You can deploy new versions by using Visual Studio Code and manage them by using deployment slots.
 
 Suppose you've been making updates to your launch countdown website that will promote your new video game. You want to deploy these changes to Azure and test them. Then, if the new code passes the tests, you want to move it into the production website.
 

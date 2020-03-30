@@ -26,6 +26,7 @@ roles:
 - developer
 products:
 - azure
+- vs-code
 units:
 - learn.azure.publish-express-node-app-service-vscode.1-introduction
 - learn.azure.publish-express-node-app-service-vscode.2-create-express-web-application-vs-code

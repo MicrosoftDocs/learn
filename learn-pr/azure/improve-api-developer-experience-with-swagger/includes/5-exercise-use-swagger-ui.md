@@ -17,7 +17,7 @@ In this exercise we'll enrich the documentation a developer sees about our API b
     cd ~/code/PrintFramerAPI
     ```
 
-1. Open the Code editor window for the project using the following command.
+1. Open the Cloud Shell editor for the project using the following command.
 
     ```bash
     code .
