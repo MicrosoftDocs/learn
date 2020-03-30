@@ -58,7 +58,7 @@ Often you'll find that there's an image in Docker Hub that closely matches the t
 
 Docker Hub contains many thousands of images. You can search and browse a registry using Docker from the command line or the Docker Hub website. The website allows you to search, filter, and select images by type and publisher. The figure below shows an example of the search page.
 
-![Screenshot of the Docker Hub search page](../media/2-docker-hub-search.png)
+:::image type="content" source="../media/2-docker-hub-search.png" alt-text="Screenshot of the Docker Hub search page that lists various container images." loc-scope="third-party"::: <!-- Docker Hub, no-loc -->
 
 You use the `docker pull` command with the image name to retrieve an image. By default, Docker will download the image tagged `latest` from that repository on Docker Hub if you specify only the repository name. Keep in mind that you can modify the command to pull different tags and from different repositories. This example fetches the image with the tag `aspnetapp` from the *mcr.microsoft.com/dotnet/core/samples:aspnetapp* repository. This image contains a simple ASP.NET Core web app.
 
@@ -117,7 +117,7 @@ docker run -p 8080:80 -d mcr.microsoft.com/dotnet/core/samples:aspnetapp
 
 The command maps port 80 in the container to port 8080 on your computer. If you visit the page `http://localhost:8080` in a browser, you'll see the sample web app.
 
-![Screenshot of the sample web app running in a browser](../media/2-sample-web-app.png)
+:::image type="content" source="../media/2-sample-web-app.png" alt-text="Screenshot of the sample web app running in a browser." loc-scope="other"::: <!-- no-loc -->
 
 ## Containers and files
 

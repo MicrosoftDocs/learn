@@ -26,8 +26,7 @@ To redeploy a web app after you've made changes, follow the same procedure that 
 
 As described in an earlier unit, if you're redeploying a web app after making modifications to its functionality, it's a good idea to use a new deployment slot. You would leave the existing version of the web app running until you're satisfied that the new version is functioning correctly. When you deploy the new version of the web app, in the **Deploy Web App** wizard, select the **Deploy to Slot** option. You can reuse an existing deployment slot, or create a new one. The example below deploys a new version of the **contosocurrenylistener** web app to a deployment slot named **contosocurrenylistenerv2**. The previous version of the web service stays in the original deployment slot.
 
-> [!div class="mx-imgBorder"]
-> ![The **Deploy Web App** wizard. The user is deploying the web app to a new deployment slot](../media/6-deploy-web-app.png)
+:::image type="content" source="../media/6-deploy-web-app.png" alt-text="The Deploy Web App wizard. The user is deploying the web app to a new deployment slot." loc-scope="third-party":::
 
 After you have deployed your web app to a new deployment slot, the deployment slot name will be appended to the name of the web app. In the example shown above, the new version of the web app would be available through the URL **http://contosocurrencylister-contosocurrencylistenerv2.azurewebsites.net/**, while the original web app would still be available at **http://contosocurrencylister.azurewebsites.net/**.
 

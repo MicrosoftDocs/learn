@@ -70,7 +70,7 @@ ws = Workspace.from_config()
 ds1 = ws.datasets['csv_table']
 
 # Get a dataset by name from the datasets class
-ds2 = Datasets.get_by_name(ws, 'img_files')
+ds2 = Dataset.get_by_name(ws, 'img_files')
 ```
 
 ## Dataset versioning
@@ -88,7 +88,7 @@ file_ds = file_ds.register(workspace=ws, name='img_files', create_new_version=Tr
 
 In this example, the .png files in the **images** folder have been added to the definition of the **img_paths** dataset example used in the previous topic.
 
-## Retrieving a Specific Dataset version
+## Retrieving a specific dataset version
 
 You can retrieve a specific version of a dataset by specifying the **version** parameter in the **get_by_name** method of the **Dataset** class.
 

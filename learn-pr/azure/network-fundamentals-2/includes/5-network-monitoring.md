@@ -66,10 +66,10 @@ Azure Monitor is a unifying solution that collects log data for analysis, helpin
 
 Use Azure Monitor to configure alerts to notify us about potential problems. These alerts help you take further action, when needed, to rectify potential problems in your network environment.
 
-![Configuring an alert](../media/5-alerts.png)
+:::image type="content" source="../media/5-alerts.png" alt-text="Screenshot that shows how to configure an alert rule in the Azure portal for log analytics.":::
 
 **Log Analytics**
 
 Use the Log Analytics tool in Azure Monitor to query and aggregate large amounts of log data for comprehensive analysis. This tool helps you gain a better understanding of the resources and services across your network.
 
-![Log analytics](../media/5-log-analytics.png)
+:::image type="content" source="../media/5-log-analytics.png" alt-text="Screenshot of example log analytics results over 24 hours in the Azure portal.":::

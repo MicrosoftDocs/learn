@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-computing.how-cloud-works.cmu-storage-network-virtualization.2-data-center-networks
+title: Networking within datacenters
+metadata:
+  title: Networking within datacenters
+  description: Networking within datacenters
+  ms.date: 03/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 14
+content: |
+  [!include[](includes/2-data-center-networks.md)]

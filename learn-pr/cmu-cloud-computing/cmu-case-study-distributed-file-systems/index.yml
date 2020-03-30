@@ -1,0 +1,51 @@
+### YamlMime:Module
+uid: learn.cmu-cloud-computing.cloud-storage.case-study-distributed-file-systems
+metadata:
+  title: 'Case studies: Distributed file systems'
+  description: Carnegie Mellon University's Cloud Developer course. Discover how distributed file systems work, then learn about Hadoop and Ceph.
+  brand: azure
+  ms.date: 03/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  showCreativeCommonsFooter: true
+title: 'Case studies: Distributed file systems'
+summary: Discover how distributed file systems work, then learn about Hadoop and Ceph.
+abstract: | 
+  In this module, you will:
+    - Review the design goals and architectural characteristics of Hadoop distributed file system (HDFS)
+    - Review the design goals and architectural characteristics of the Ceph file system (Ceph FS)
+    - Compare and contrast HDFS and the Ceph file system
+  
+  In partnership with Dr. Majd Sakr and Carnegie Mellon University.
+prerequisites: |
+  - Understand what cloud computing is, including cloud service models, and common cloud providers
+  - Know the technologies that enable cloud computing
+  - Understand how cloud service providers pay for and bill for the cloud
+  - Know what datacenters are and why they exist
+  - Know how datacenters are set up, powered, and provisioned
+  - Understand how cloud resources are provisioned and metered
+  - Be familiar with the concept of virtualization
+  - Know what the different types of virtualization are
+  - Understand CPU virtualization
+  - Understand memory virtualization
+  - Understand I/O virtualization
+  - Know about the different types of data and how they are stored
+iconUrl: /learn/achievements/cmu-cloud-developer/case-studies-distributed-file-systems.svg
+levels:
+- beginner
+roles:
+- developer
+- student
+products:
+- azure
+units:
+- learn.cmu-cloud-computing.cloud-storage.case-study-distributed-fs.0-introduction
+- learn.cmu-cloud-computing.cloud-storage.case-study-distributed-fs.1-distributed-file-systems
+- learn.cmu-cloud-computing.cloud-storage.case-study-distributed-fs.2-hadoop
+- learn.cmu-cloud-computing.cloud-storage.case-study-distributed-fs.3-ceph
+- learn.cmu-cloud-computing.cloud-storage.case-study-distributed-fs.4-hadoop-versus-ceph
+- learn.cmu-cloud-computing.cloud-storage.case-study-distributed-fs.5-summary
+badge:
+  uid: learn.cmu-cloud-computing.cloud-storage.case-study-distributed-fs.badge

@@ -1,6 +1,6 @@
 In this exercise, you'll use nested `StackLayout` containers to arrange the views in your UI. The first screenshot shows the starter project, and the second one shows the completed project. Your job is to use `StackLayout` containers and `LayoutOptions` to turn the starter project into the completed version.
 
-![A screenshot showing the starter solution and the completed solution.](../media/5-ex-starter-and-complete.png)
+![Screenshot showing the starter solution, with all the labels in close proximity, and the completed solution, with the tip percantage controls at the bottom.](../media/5-ex-starter-and-complete.png)
 
 ## Explore the starter solution
 
