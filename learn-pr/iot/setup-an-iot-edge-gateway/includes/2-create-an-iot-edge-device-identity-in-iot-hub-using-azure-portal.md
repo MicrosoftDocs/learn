@@ -8,7 +8,7 @@ The first thing we need, is a registered identity for our IoT Edge Gateway.  Thi
 
 In this unit, you will create a new IoT Edge Device identity in Azure IoT Hub for the IoT Edge Transparent Gateway.
 
-## Create an IoT Edge Device Identity in IoT Hub using Azure Portal
+## Create an IoT Edge Device Identity in IoT Hub using Azure portal
 
 1. Make sure you've activated the sandbox, using the button above. The sandbox creates a free temporary resource.
 
