@@ -4,7 +4,7 @@ The testing team has been monitoring the uptime of our IoT Edge Gateway by pingi
 
 We need a reliable mechanism for connecting to our IoT Edge Gateway.  IP addresses are fine for testing, but are subject to change, especially in our production environment.  To accommodate this, we will set a up DNS Name for our gateway in Azure then update the associated IoT Edge configuration for our gateway.
 
-In this unit, you will configure a DNS name for the **Public IP Address** of AZ-220-VM-EDGEGW-_{YOUR-ID}_, and configure that DNS name as the hostname of the IoT Edge Gateway device.
+In this unit, you'll configure a DNS name for the **Public IP Address** of AZ-220-VM-EDGEGW-_{YOUR-ID}_, and configure that DNS name as the hostname of the IoT Edge Gateway device.
 
 ## Set up an IoT Edge Gateway Hostname
 

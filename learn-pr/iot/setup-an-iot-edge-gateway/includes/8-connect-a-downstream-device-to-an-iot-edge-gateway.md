@@ -10,9 +10,9 @@ In this unit, we'll configure a pre-built Downstream Device to connect to the Io
 
     If you have more than one Azure account, ensure that you are logged in with the account that is tied to the subscription that you intend to use for this course.
 
-1. At the top of the Azure Portal, click on the **Cloud Shell** icon to open up the **Azure Cloud Shell** within the Azure Portal. When the pane opens, choose the option for the **Bash** terminal within the Cloud Shell.
+1. At the top of the Azure portal, click on the **cloud shell** icon to open up the **Azure cloud shell** within the Azure portal. When the pane opens, choose the option for the **Bash** terminal within the cloud shell.
 
-1. Within the **Cloud Shell**, run the following command to download the **root CA** X.509 certificate for the Azure IoT Edge Gateway Virtual Machine.
+1. Within the **cloud shell**, run the following command to download the **root CA** X.509 certificate for the Azure IoT Edge Gateway Virtual Machine.
 
     ```bash
      download certificates/certs/azure-iot-test-only.root.ca.cert.pem

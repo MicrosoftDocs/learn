@@ -1,8 +1,8 @@
-One last step! We have a downstream device pushing data into our IoT Edge Gateway, now we need to verify that data is propogating into the Azure cloud where we will later perform hot-path operations on live data and cold-path requirements for archival and storage of our telemetry.  Our operations team is already plugged in and waiting, let's make sure the data is ready and flowing!
+One last step! We have a downstream device pushing data into our IoT Edge Gateway, now we need to verify that data is propagating into the Azure cloud where we will later make hot-path operations on live data and meet cold-path requirements for archival and storage of our telemetry.  Our operations team is already plugged in and waiting, let's make sure the data is ready and flowing!
 
 [![Operator](../media/operator.png)](../media/operator.png#lightbox)
 
-In this unit, you will use the Azure CLI to monitor the events sent to Azure IoT Hub from the downstream IoT Device through the IoT Edge Gateway. These steps will validate that event flow from downstream device to IoT Edge Gateway and upstream to IoT Hub is working correctly.
+In this unit, you'll use the Azure CLI to monitor the events sent to Azure IoT Hub from the downstream IoT Device through the IoT Edge Gateway. These steps will validate that event flow from downstream device to IoT Edge Gateway and upstream to IoT Hub is working correctly.
 
 ## Verify Event Flow from Downstream Device through IoT Edge Gateway to IoT Hub
 
@@ -10,9 +10,9 @@ In this unit, you will use the Azure CLI to monitor the events sent to Azure IoT
 
     If you have more than one Azure account, ensure that you are logged in with the account that is tied to the subscription that you intend to use for this course.
 
-1. Navigate to the Azure portal and click on the **Cloud Shell** icon to open up the **Azure Cloud Shell**. When the pane opens, choose the option for the **Bash** terminal within the Cloud Shell.
+1. Navigate to the Azure portal and click on the **cloud shell** icon to open up the **Azure cloud shell**. When the pane opens, choose the option for the **Bash** terminal within the cloud shell.
 
-1. Within the **Cloud Shell**, run the following command to monitor the stream of events flowing to the Azure IoT Hub. This step will verify that events from the simulate device, being sent to the IoT Edge Gateway, are being received by the Azure IoT Hub.
+1. Within the **cloud shell**, run the following command to monitor the stream of events flowing to the Azure IoT Hub. This step will verify that events from the simulate device, being sent to the IoT Edge Gateway, are being received by the Azure IoT Hub.
 
     ```bash
     az extension add --name azure-iot
@@ -45,7 +45,7 @@ In this unit, you will use the Azure CLI to monitor the events sent to Azure IoT
     Once you have completed this lab and verified the event flow, exit the console application by pressing **CTRL+C**.
 
     >[!NOTE]
-    > Due to the secure nature of the Azure Sandbox, you may not receive any data back when running the command above.  This is because the Gateway device requires that ports 8883, 5671, and 443 are opened in order to allow for communication back to the IoT Hub instance.  Even though we opened these ports in step 6, the policy will not actually effect the machine.  If you wish to fully verify the results, you may need to deploy into a personal subscription which allows you to make these configuration changes.
+    > Due to the secure nature of the Azure Sandbox, you may not receive any data back when running the command above.  This is because the Gateway device requires that ports 8883, 5671, and 443 are opened in order to allow for communication back to the IoT Hub instance.  Even though we opened these ports in step 6, the policy will not actually affect the machine.  If you wish to fully verify the results, you may need to deploy into a personal subscription which allows you to make these configuration changes.
 
 ## Next steps
 

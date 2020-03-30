@@ -12,7 +12,7 @@ In this unit, you'll generate test certificates using tooling on Linux. The cert
 
 ## Generate and Configure IoT Edge Device CA Certificates
 
-You will perform these steps on the Azure IoT Edge Gateway Virtual Machine that was deployed in the previous unit.
+You'll perform these steps on the Azure IoT Edge Gateway Virtual Machine that was deployed in the previous unit.
 
 1. Navigate to the Azure IoT Edge Gateway Virtual Machine within the Azure portal.  It should be named according to the following format:
  `vm-0000000000000`

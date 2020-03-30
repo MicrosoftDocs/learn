@@ -1,10 +1,10 @@
-We are now ready to setup a downstream device that will be registered for communication with our IoT Edge Gateway.  This process is required for onboarding new sensors into the manufacturing line. 
+We are now ready to set up a downstream device that will be registered for communication with our IoT Edge Gateway.  This process is required for onboarding new sensors into the manufacturing line. 
 
-We aren't sure the exact specs of the device at this time, but the research and development team tells us it's extremely innovative and will help us ensure that regulations are met during production runs.
+We aren't sure the exact specs of the device at this time, but the research and development team tells us it's innovative and will help us ensure that regulations are met during production runs.
 
 [![Secret Sensor](../media/kinectpreview.png)](../media/kinectpreview.png#lightbox)
 
-In this unit, you will create a new IoT Device identity in Azure IoT Hub for the downstream IoT device. This device identity will be configured so that the Azure IoT Edge Gateway is a parent device for this downstream device.
+In this unit, you'll create a new IoT Device identity in Azure IoT Hub for the downstream IoT device. This device identity will be configured so that the Azure IoT Edge Gateway is a parent device for this downstream device.
 
 ## Create a Downstream Device Identity in IoT Hub
 
@@ -20,9 +20,9 @@ In this unit, you will create a new IoT Device identity in Azure IoT Hub for the
 
 1. On the **Create a device** blade, enter `DownstreamDevice1` into the **Device ID** field. This is the device identity used for authentication and access control.
 
-1. Select **Symmetric key** for the **Authentication type**, and leave the **Auto-generate keys** box checked. This will have IoT Hub automatically generate the Symmetric keys for authenticating the device.
+1. Select **Symmetric key** for the **Authentication type**, and leave the **Auto-generate keys** box checked. This option tells the IoT Hub to automatically generate the Symmetric keys for authenticating the device.
 
-1. Under **Parent device** click the **Set a parent device** link to begin configuring this downstream device to communicate with IoT Hub through the IoT Edge Gateway.
+1. Under **Parent device**, click the **Set a parent device** link to begin configuring this downstream device to communicate with IoT Hub through the IoT Edge Gateway.
 
 1. On the **Set an Edge device as a parent device** blade, select the **AZ-220-VM-EDGEGW-_{YOUR-ID}_** Device ID in the list of IoT Edge Devices.
 
@@ -30,8 +30,8 @@ In this unit, you will create a new IoT Device identity in Azure IoT Hub for the
 
 1. Click **Save** to create the IoT Device identity for the downstream device.
 
-1. Once the `DownstreamDevice1` IoT Device Identity is created, click on the Device ID in the list. This will open the details view for this device.
+1. Once the `DownstreamDevice1` IoT Device Identity is created, click on the Device ID in the list. This option will open the details view for this device.
 
 1. On the IoT Device summary pane, copy the **Primary Connection String** for the **DownstreamDevice1** IoT Device, and save it for reference later.
 
-Congratulations, that's the end of the unit! In the next unit, we will connect a downstream device to an IoT Edge Gateway.
+Congratulations, that's the end of the unit! In the next unit, we'll connect a downstream device to an IoT Edge Gateway.
