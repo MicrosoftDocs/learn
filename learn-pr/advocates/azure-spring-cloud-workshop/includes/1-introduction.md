@@ -13,3 +13,9 @@ In this module, you will:
 * Create and deploy a Spring Boot microservice
 * Create and deploy a Spring Cloud Gateway
 * Configure a GitHub Actions workflow to automate your deployment
+
+## Prerequisites
+
+ 1- [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&WT.mc_id=azurespringcloud-mslearn-judubois).
+ 1- [Java 8](https://www.azul.com/downloads/zulu-community/?architecture=x86-64-bit&package=jdk) and an IDE.
+ 1- [cURL](https://curl.haxx.se/) or a similar HTTP utility.

@@ -19,7 +19,10 @@ abstract: |
   - Use Spring Cloud Service Registry to discover your microservice
   - Configure distributed tracing to debug a microservices architecture
   - Deploy a Spring Boot microservice using GitHub Actions
-prerequisites: None
+prerequisites:  |
+ - Azure CLI.
+ - Java 8 and an IDE.
+ - cURL or a similar HTTP utility.
 iconUrl: /learn/achievements/azure-spring-cloud-workshop.svg
 levels:
 - intermediate
