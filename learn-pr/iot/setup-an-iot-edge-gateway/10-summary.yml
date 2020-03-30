@@ -16,7 +16,7 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'Which IoT Edge Gateway configuration patterns are best used for legacy devices which do not have support for MQTT/AMQP/HTTP?'
+  - content: 'Which IoT Edge Gateway configuration patterns are best used for legacy devices that do not support MQTT/AMQP/HTTP?'
     choices: 
     - content: 'Transparent and Protocol Translation'
       isCorrect: false
@@ -28,17 +28,17 @@ quiz:
       isCorrect: true
       explanation: Both of these services allow for translation of legacy data protocols.
 
-  - content: 'When configuring `config.yaml` for an IoT Edge Gateway Device, which X.509 certificate settings correspond to the certificate used by the downstream device for secure authentication?'
+  - content: 'When setting up the `config.yaml` for an IoT Edge Gateway Device, which X.509 certificate settings correspond to the certificate used by the downstream device for secure authentication?'
     choices: 
     - content: 'device_ca_cert'
       isCorrect: true
-      explanation: This is the Device CA Certificate for the IoT Edge Device.
+      explanation: The 'device_ca_cert' entry is the Device CA Certificate for the IoT Edge Device.
     - content: 'device_ca_pk'
       isCorrect: false
-      explanation: This is the Device CA Private Key for the IoT Edge Device.
+      explanation: The 'device_ca_pk' is the Device CA Private Key for the IoT Edge Device.
     - content: 'trusted_ca_certs'
       isCorrect: false
-      explanation: This is the Root CA Certificate. This certificate must contain all the trusted CA certificates required for Edge module communications.
+      explanation: The 'trusted_ca_certs' entry is for the Root CA Certificate. This certificate must contain all the trusted CA certificates required for Edge module communications.
 
   - content: 'What is the port number designated for MQTT transport on IoT Edge devices'
     choices: 
@@ -56,7 +56,7 @@ quiz:
     choices: 
     - content: 'The IP Configurator'
       isCorrect: false
-      explanation: This is a fictitious Azure Resource.
+      explanation: This choice represents a fictitious Azure Resource.
     - content: 'The IoT Edge configuration file (config.yaml)'
       isCorrect: false
       explanation: The IoT Edge configuration file specifies the authentication mechanisms and other properties available to devices that have the IoT Edge runtime installed.  It does not have any control over port access rules.
@@ -77,10 +77,10 @@ quiz:
     choices: 
     - content: 'DeviceId, SharedAccessKey, and GatewayHostName'
       isCorrect: false
-      explanation: The DownStream Device's HostName is also part of it's device connection string.
+      explanation: The DownStream Device's HostName is also part of its device connection string.
     - content: 'HostName, DeviceId, SharedAccessKey, and GatewayHostName'
       isCorrect: true
       explanation: All of these values are required to properly authenticate a Downstream Device with a connection string.
     - content: 'IP address, DeviceId, SharedAccessKey, and GatewayHostName'
       isCorrect: false
-      explanation: The DownStream Device's ip address is not part of it's device connection string.
+      explanation: The DownStream Device's ip address is not part of its device connection string.
