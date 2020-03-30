@@ -26,6 +26,36 @@ In this module, you will:
 - Familiarity with [Azure Cloud Shell](https://shell.azure.com?azure-portal=true).
 - A [GitHub](https://github.com/join?azure-portal=true) account.
 
+## Application architecture
+
+Our goal is to deploy an Azure managed Kubernetes service, Azure Kubernetes Service (AKS), that runs the Fruit Smoothies ratings website in the following series of exercises.
+
+:::image type="content" source="../media/02-arch-tmp.svg" border="false" alt-text="Diagram that shows the deployed resources on the Azure Kubernetes Service cluster.":::
+
+<!-- [![](../media/02-arch-tmp.svg "Diagram that shows the deployed resources on the Azure Kubernetes Service cluster.")](../media/02-arch-tmp.svg#lightbox) -->
+
+There are several tasks that you'll complete to show how Kubernetes abstracts away complex container management and provides you with declarative configuration to orchestrate containers.
+
+1. Use AKS to deploy a Kubernetes cluster.
+
+1. Configure an Azure Container Registry to store application container images.
+
+1. Deploy the three ratings application components.
+
+    1. Deploy the Fruit Smoothies website document database using Helm 3.
+
+    1. Deploy the Fruit smoothies RESTFul API using deployment manifests.
+
+    1. Deploy the Fruit smoothies website frontend using deployment manifests.
+
+1. Deploy Azure Kubernetes ingress using Helm 3.
+
+1. Configure SSL/TLS on the controller using `cert-manager`.
+
+1. Configure Azure Monitor for containers to monitor the Fruit Smoothies website deployment.
+
+1. Configure cluster autoscaler and horizontal pod autoscaler for the Fruit Smoothies cluster.
+
 ## Source code
 
 The application consists of two components: the API and the front end. Both components are written in Node.js. The API stores data in a MongoDB database.
