@@ -3,11 +3,10 @@ uid: learn.manage-iot-devices.2-raspberry-pi-emulator
 metadata:
   description: Describes the features, and layout, of the Raspberry Pi Simulator.
   author: lnyswonger
-  ms.date: 09/24/2018
+  ms.date: 03/30/2020
   ms.author: luken
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 title: Introduction to the Raspberry Pi Simulator
 durationInMinutes: 10
 content: |

@@ -63,7 +63,7 @@ A device must be registered with your IoT hub before the device can connect.
 
 1. Replace the placeholder in line 15 with the Azure IoT hub device connection string from your text file.
 
-    [![Screenshot showing where to replace the device connection string](../media/Line15.png)](../media/Line15.png#lightbox)
+    [![Screenshot showing where to replace the device connection string](../media/iot-admin-line-15.png)](../media/iot-admin-line-15.png#lightbox)
 
 1. Click the `Run` button, or type `npm start` in the console window, to run the application.
 

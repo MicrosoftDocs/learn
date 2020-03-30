@@ -7,7 +7,7 @@ allows users to enter Node.js code to control the LED, and collect dummy data fr
 
 By default, the simulator operates a sample temperature capture program, which is displayed via the command line. The same sample application can also be run on a real Pi as the simulator is designed to allow people to test code before transferring it to a real device.
 
-[![Raspberry Pi Simulator](../media/RaspberryPiSimulator.png)](../media/RaspberryPiSimulator.png#lightbox)
+[![Raspberry Pi Simulator](../media/iot-admin-raspberry-pi-simulator.png)](../media/iot-admin-raspberry-pi-simulator.png#lightbox)
 
 There are three screen areas in the web simulator:
 
