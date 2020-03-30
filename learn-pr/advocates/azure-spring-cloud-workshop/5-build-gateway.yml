@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure-spring-cloud-workshop.5-build-a-spring-cloud-gateway
+uid: learn.azure-spring-cloud-workshop.5-build-gateway
 title: Build a Spring Cloud Gateway
 metadata:
   title: Build a Spring Cloud Gateway
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 7
 content: |
-  [!include[](includes/5-build-a-spring-cloud-gateway.md)]
+  [!include[](includes/5-build-gateway.md)]
