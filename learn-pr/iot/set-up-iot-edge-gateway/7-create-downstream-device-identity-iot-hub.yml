@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.iot.setup-an-iot-edge-gateway.create-downstream-device-identity-iot-hub
+uid: learn.iot.set-up-iot-edge-gateway.create-downstream-device-identity-iot-hub
 metadata:
   title: Create a Downstream Device Identity in IoT Hub
   description: Create a Downstream Device Identity in IoT Hub

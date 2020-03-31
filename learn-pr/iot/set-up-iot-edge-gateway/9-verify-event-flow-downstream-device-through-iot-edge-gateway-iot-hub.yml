@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.iot.setup-an-iot-edge-gateway.verify-event-flow-downstream-device-through-iot-edge-gateway-iot-hub
+uid: learn.iot.set-up-iot-edge-gateway.verify-event-flow-downstream-device-through-iot-edge-gateway-iot-hub
 metadata:
   title: Verify Event Flow from Downstream Device through IoT Edge Gateway to IoT Hub
   description: Verify Event Flow from Downstream Device through IoT Edge Gateway to IoT Hub

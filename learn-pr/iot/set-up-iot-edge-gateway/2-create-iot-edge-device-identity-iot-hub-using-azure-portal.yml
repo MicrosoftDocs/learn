@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.iot.setup-an-iot-edge-gateway.create-iot-edge-device-identity-iot-hub-using-azure-portal
+uid: learn.iot.set-up-iot-edge-gateway.create-iot-edge-device-identity-iot-hub-using-azure-portal
 metadata:
   title: Create an IoT Edge Device Identity in IoT Hub using Azure portal
   description: Create an IoT Edge Device Identity in IoT Hub using Azure portal

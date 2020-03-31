@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.iot.setup-an-iot-edge-gateway.generate-configure-iot-edge-device-certificates
+uid: learn.iot.set-up-iot-edge-gateway.generate-configure-iot-edge-device-certificates
 metadata:
   title: Generate and Configure IoT Edge Device CA Certificates
   description: Generate and Configure IoT Edge Device CA Certificates

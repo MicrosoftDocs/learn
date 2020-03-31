@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.iot.setup-an-iot-edge-gateway.connect-downstream-device-iot-edge-gateway
+uid: learn.iot.set-up-iot-edge-gateway.connect-downstream-device-iot-edge-gateway
 metadata:
   title: Connect a Downstream Device to IoT Edge Gateway
   description: Connect a Downstream Device to IoT Edge Gateway

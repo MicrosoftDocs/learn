@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.iot.setup-an-iot-edge-gateway
+uid: learn.iot.set-up-iot-edge-gateway
 metadata:
   title: Set up an IoT Edge Gateway
   description: This module is theoretical and will walk you through how an IoT Edge device can be used as a gateway.
@@ -26,7 +26,7 @@ prerequisites: |
   -	Experience using Visual Studio, or Visual Studio Code, at the beginner level 
 ### iconUrl: /learn/achievements/generic-badge.svg
 ### iconUrl: /learn/achievements/iot/iot-hub-conveyor-belt-vibration-detection.svg
-iconUrl: /learn/achievements/setup-an-iot-edge-gateway.svg
+iconUrl: /learn/achievements/set-up-iot-edge-gateway.svg
 ### hidden: true
 ratingEnabled: true
 levels:
@@ -36,16 +36,16 @@ roles:
 products:
 - azure-iot-edge
 units:
-- learn.iot.setup-an-iot-edge-gateway.introduction
-- learn.iot.setup-an-iot-edge-gateway.create-iot-edge-device-identity-iot-hub-using-azure-portal
-- learn.iot.setup-an-iot-edge-gateway.deploy-azure-iot-edge-enabled-linux-vm-iot-edge-device
-- learn.iot.setup-an-iot-edge-gateway.generate-configure-iot-edge-device-certificates
-- learn.iot.setup-an-iot-edge-gateway.setup-iot-edge-gateway-hostname
-- learn.iot.setup-an-iot-edge-gateway.open-iot-edge-gateway-device-ports-communication-downstream-devices
-- learn.iot.setup-an-iot-edge-gateway.create-downstream-device-identity-iot-hub
-- learn.iot.setup-an-iot-edge-gateway.connect-downstream-device-iot-edge-gateway
-- learn.iot.setup-an-iot-edge-gateway.verify-event-flow-downstream-device-through-iot-edge-gateway-iot-hub
-- learn.iot.setup-an-iot-edge-gateway.summary
+- learn.iot.set-up-iot-edge-gateway.introduction
+- learn.iot.set-up-iot-edge-gateway.create-iot-edge-device-identity-iot-hub-using-azure-portal
+- learn.iot.set-up-iot-edge-gateway.deploy-azure-iot-edge-enabled-linux-vm-iot-edge-device
+- learn.iot.set-up-iot-edge-gateway.generate-configure-iot-edge-device-certificates
+- learn.iot.set-up-iot-edge-gateway.setup-iot-edge-gateway-hostname
+- learn.iot.set-up-iot-edge-gateway.open-iot-edge-gateway-device-ports-communication-downstream-devices
+- learn.iot.set-up-iot-edge-gateway.create-downstream-device-identity-iot-hub
+- learn.iot.set-up-iot-edge-gateway.connect-downstream-device-iot-edge-gateway
+- learn.iot.set-up-iot-edge-gateway.verify-event-flow-downstream-device-through-iot-edge-gateway-iot-hub
+- learn.iot.set-up-iot-edge-gateway.summary
 badge:
 ###  uid: learn.iot.iot-test.badge
-  uid: learn.iot.setup-an-iot-edge-gateway.badge
+  uid: learn.iot.set-up-iot-edge-gateway.badge

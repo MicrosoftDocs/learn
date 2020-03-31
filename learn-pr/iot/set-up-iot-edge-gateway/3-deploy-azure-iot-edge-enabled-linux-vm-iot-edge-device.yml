@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.iot.setup-an-iot-edge-gateway.deploy-azure-iot-edge-enabled-linux-vm-iot-edge-device
+uid: learn.iot.set-up-iot-edge-gateway.deploy-azure-iot-edge-enabled-linux-vm-iot-edge-device
 metadata:
   title: Deploy an Azure IoT Edge Enabled Linux VM as an IoT Edge Device
   description: Set up an IoT Edge Gateway
