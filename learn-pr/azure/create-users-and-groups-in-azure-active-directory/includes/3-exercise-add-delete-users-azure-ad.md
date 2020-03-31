@@ -29,7 +29,7 @@ Create a new organization to hold all of the users you create in this exercise.
 
 You'll need to activate a free trial for Azure AD Premium to complete all the exercises in this module.
 
-1. In the organization you just created, select **Get started**.
+1. In the organization you just created, select **Getting started**.
 1. Under **Getting started with Azure AD**, select **Get a free trial for Azure AD Premium**.
 
     ![Screenshot that shows the link to create trial](../media/3-ad-get-started-get-trial.png)

@@ -148,6 +148,7 @@ This section is where you define the Azure resources that make up your deploymen
 Here's an example that creates a public IP address resource.
 
 ```json
+"resources": [
 {
   "type": "Microsoft.Network/publicIPAddresses",
   "name": "[variables('publicIPAddressName')]",
@@ -160,6 +161,7 @@ Here's an example that creates a public IP address resource.
     }
   }
 }
+],
 ```
 
 Here, the type of resource is `Microsoft.Network/publicIPAddresses`. Its name is read from the variables section and its location, or Azure region, is read from the parameters section.

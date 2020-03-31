@@ -27,7 +27,7 @@ quiz:
     - content: "99.999%"
       isCorrect: false
       explanation: "That's incorrect. Azure SQL Database does not have a 99.999% availability guarantee."
-  - content: "What type of authentication isn't possible with Azure SQL Database? Authentication with security principals in Azure SQL Database supports two types of authentication:"
+  - content: "Authentication with security principals in Azure SQL Database supports two types of authentication. What type of authentication isn't possible with Azure SQL Database?"
     choices:
     - content: "SQL authentication"
       isCorrect: false

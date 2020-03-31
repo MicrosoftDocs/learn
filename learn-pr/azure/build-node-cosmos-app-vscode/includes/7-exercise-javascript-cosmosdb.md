@@ -356,11 +356,11 @@ You'll now query the documents in the database directly, using the Azure Cosmos 
 
 1. In the **Cosmos DB** pane, expand your Azure account, expand the **\<your name or initials\>school** Cosmos DB account, expand the **SchoolDB** database, expand the **StudentCourseGrades** container, right-click **Documents**, and then click **Refresh**.
 
-    ![Screenshot of Cosmos DB pane in VS Code. The user has selected the **Refresh** command.](../media/7-cosmosdb-refresh.png)
+    :::image type="content" source="../media/7-cosmosdb-refresh.png" alt-text="Screenshot of Cosmos DB pane in VS Code. The user has selected the Refresh command." loc-scope="vs-code":::
 
 2. Expand the **Documents** folder. You should see only the documents **S901** and **S902**. The documents that you created in the first exercise (**S101**, and **S102**) should have been deleted:
 
-    ![Screenshot of Cosmos DB pane in VS Code showing the documents in the **StudentCourseGrades** container.](../media/7-cosmosdb-documents.png)
+    :::image type="content" source="../media/7-cosmosdb-documents.png" alt-text="Screenshot of Cosmos DB pane in VS Code showing the documents in the StudentCourseGrades container." loc-scope="vs-code":::
 
 3. Click the **S901** document. It should look similar to this:
 
