@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.iot.setup-an-iot-edge-gateway.connect-a-downstream-device-to-an-iot-edge-gateway
+uid: learn.iot.setup-an-iot-edge-gateway.connect-downstream-device-iot-edge-gateway
 metadata:
   title: Connect a Downstream Device to IoT Edge Gateway
   description: Connect a Downstream Device to IoT Edge Gateway
@@ -12,4 +12,4 @@ title: Connect a Downstream Device to IoT Edge Gateway
 # azureSandbox: true
 durationInMinutes: 10
 content: |
-  [!include[](includes/8-connect-a-downstream-device-to-an-iot-edge-gateway.md)]
+  [!include[](includes/8-connect-downstream-device-iot-edge-gateway.md)]

@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.iot.setup-an-iot-edge-gateway.verify-event-flow-from-downstream-device-through-iot-edge-gateway-to-iot-hub
+uid: learn.iot.setup-an-iot-edge-gateway.verify-event-flow-downstream-device-through-iot-edge-gateway-iot-hub
 metadata:
   title: Verify Event Flow from Downstream Device through IoT Edge Gateway to IoT Hub
   description: Verify Event Flow from Downstream Device through IoT Edge Gateway to IoT Hub
@@ -12,4 +12,4 @@ title: Verify Event Flow from Downstream Device through IoT Edge Gateway to IoT 
 # azureSandbox: true
 durationInMinutes: 10
 content: |
-  [!include[](includes/9-verify-event-flow-from-downstream-device-through-iot-edge-gateway-to-iot-hub.md)]
+  [!include[](includes/9-verify-event-flow-downstream-device-through-iot-edge-gateway-iot-hub.md)]

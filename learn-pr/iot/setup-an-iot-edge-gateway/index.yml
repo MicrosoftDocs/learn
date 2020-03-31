@@ -37,14 +37,14 @@ products:
 - azure-iot-edge
 units:
 - learn.iot.setup-an-iot-edge-gateway.introduction
-- learn.iot.setup-an-iot-edge-gateway.create-an-iot-edge-device-identity-in-iot-hub-using-azure-portal
-- learn.iot.setup-an-iot-edge-gateway.deploy-an-azure-iot-edge-enabled-linux-vm-as-an-iot-edge-device
-- learn.iot.setup-an-iot-edge-gateway.generate-and-configure-iot-edge-device-ca-certificates
-- learn.iot.setup-an-iot-edge-gateway.setup-an-iot-edge-gateway-hostname
-- learn.iot.setup-an-iot-edge-gateway.open-iot-edge-gateway-device-ports-for-communication-with-downstream-devices
-- learn.iot.setup-an-iot-edge-gateway.create-a-downstream-device-identity-in-iot-hub
-- learn.iot.setup-an-iot-edge-gateway.connect-a-downstream-device-to-an-iot-edge-gateway
-- learn.iot.setup-an-iot-edge-gateway.verify-event-flow-from-downstream-device-through-iot-edge-gateway-to-iot-hub
+- learn.iot.setup-an-iot-edge-gateway.create-iot-edge-device-identity-iot-hub-using-azure-portal
+- learn.iot.setup-an-iot-edge-gateway.deploy-azure-iot-edge-enabled-linux-vm-iot-edge-device
+- learn.iot.setup-an-iot-edge-gateway.generate-configure-iot-edge-device-certificates
+- learn.iot.setup-an-iot-edge-gateway.setup-iot-edge-gateway-hostname
+- learn.iot.setup-an-iot-edge-gateway.open-iot-edge-gateway-device-ports-communication-downstream-devices
+- learn.iot.setup-an-iot-edge-gateway.create-downstream-device-identity-iot-hub
+- learn.iot.setup-an-iot-edge-gateway.connect-downstream-device-iot-edge-gateway
+- learn.iot.setup-an-iot-edge-gateway.verify-event-flow-downstream-device-through-iot-edge-gateway-iot-hub
 - learn.iot.setup-an-iot-edge-gateway.summary
 badge:
 ###  uid: learn.iot.iot-test.badge
