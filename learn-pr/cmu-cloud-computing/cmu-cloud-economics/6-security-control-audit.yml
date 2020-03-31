@@ -61,7 +61,7 @@ quiz:
       explanation: "Incorrect. Public clouds can be an extremely secure place to store data if used properly, and the Massive Surveillance Bureau is something we made up. Consider the techniques used by Spamhaus to blacklist spam sources. Do they translate well to public cloud infrastructure?"
     - content: "Both Spamhaus and cloud providers need to adapt to this new type of problem."
       isCorrect: true
-      explanation: "Correct! This is an evolving problem due to the complex and ever-changing patterns of spam."      
+      explanation: "Correct! This is an evolving problem due to the complex and ever-changing patterns of spam."
     - content: "This problem is due to IP reputation systems only. These systems broadly categorize large subnets of IP addresses as spammers, even if only a few of them actually contribute to spam traffic. Instead, reputation-based blocking should be done for each IP address. The cloud provider cannot take any action to protect itself."
       isCorrect: false
       explanation: "Incorrect. Reputation-based blocking can't be done per IP address because this technique is not scalable. IP addresses can be easily changed. Consider the techniques used by Spamhaus to blacklist spam sources. Do they translate well to public cloud infrastructure?"
@@ -71,7 +71,7 @@ quiz:
     choices:
     - content: "Datacenter failure leading to your VM shutting down."
       isCorrect: false
-      explanation: "That's not quite right. Consider the types of attacks that are made possible when a cloud provider offers shared infrastructure to multiple tenants. What security risks are posed by shared infrastructure in clouds?"    
+      explanation: "That's not quite right. Consider the types of attacks that are made possible when a cloud provider offers shared infrastructure to multiple tenants. What security risks are posed by shared infrastructure in clouds?"
     - content: "A vulnerability in your website that allows hackers to deface it."
       isCorrect: false
       explanation: "That's not quite right. Consider the types of attacks that are made possible when a cloud provider offers shared infrastructure to multiple tenants. What security risks are posed by shared infrastructure in clouds?"
@@ -99,7 +99,7 @@ quiz:
       explanation: "Correct!" 
 
 # Did I get this block question 6
-  - content: "Homomorphic encryption is a special form of encryption where computation can be carded out on encrypted data. For instance, if Google used homomorphic encryption, it would receive an encrypted version of your search term, find the matches without looking at it, and return an encrypted version of the results. Your data would never be exposed. Recent research from Craig Gentry at Stanford demonstrated a practical way to create an encryption scheme that allows addition and multiplication. Why is this not widely used?"
+  - content: "Homomorphic encryption is a special form of encryption where computation can be carded out on encrypted data. For instance, if Bing used homomorphic encryption, it would receive an encrypted version of your search term, find the matches without looking at it, and return an encrypted version of the results. Your data would never be exposed. Recent research from Craig Gentry at Stanford demonstrated a practical way to create an encryption scheme that allows addition and multiplication. Why is this not widely used?"
     choices:
     - content: "The government won't allow encryption that it can't decrypt through a legal channel."
       isCorrect: true
@@ -108,9 +108,6 @@ quiz:
       isCorrect: false
       explanation: "That's not quite right. Think about the efficiency of computing in an encrypted space."
     - content: "Gentry's scheme supports both addition and multiplication operations on ciphertexts, from which it's impossible to construct circuits for performing arbitrary computation."
-      isCorrect: false
-      explanation: "That's not quite right. Think about the efficiency of computing in an encrypted space."
-    - content: "Companies like Google want to spy on users."
       isCorrect: false
       explanation: "That's not quite right. Think about the efficiency of computing in an encrypted space."
 
