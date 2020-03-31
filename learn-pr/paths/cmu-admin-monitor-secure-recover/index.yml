@@ -4,7 +4,7 @@ metadata:
   title: Safeguard cloud resources
   description: The third and final learning path in a course on Cloud Administration from Carnegie Mellon University. Learn to monitor your cloud resources, keep them safe, and protect or recover them in the case of a disaster.
   brand: azure
-  ms.date: 3/31/2019
+  ms.date: 03/31/2020
   author: shanamatthews
   ms.author: shanama
   ms.topic: interactive-tutorial
