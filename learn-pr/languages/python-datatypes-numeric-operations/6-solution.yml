@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.languages.python-datatypes-numeric-operations.solution
-title: Solution - Convert Fahrenheit temperatures to Celsius
+title: Solution - Convert temperature from Fahrenheit to Celsius
 metadata:
-  title: Solution - Convert Fahrenheit temperatures to Celsius
+  title: Solution - Convert temperature from Fahrenheit to Celsius
   description: One possible solution to the challenge presented in the preceding unit.
   ms.date: 02/18/2020
   author: bobtabor-msft
