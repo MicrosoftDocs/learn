@@ -16,7 +16,7 @@ In this unit, you'll configure a DNS name for the **Public IP Address** of AZ-22
 
 1. Navigate to the IoT Edge virtual machine.
 
-1. On the **Overview** pane of the **virtual machine**, take note of the DNS name in the far right, and save its for reference later.
+1. On the **Overview** pane of the **virtual machine**, take note of the DNS name in the far right, and save it for reference later.
 
     The full DNS name is composed of the az-220-vm-edgegw-{YOUR-ID} value suffixed by the text below the DNS name label field.
 
