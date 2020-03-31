@@ -83,7 +83,7 @@ Let's deploy a container registry for the Fruit Smoothies environment.
 
 ## Build the container images by using Azure Container Registry Tasks
 
-The Fruit Smoothies rating app makes use of two coded container images, one for the front-end website and one for the RESTful API web service. Your development teams use the local Docker tooling to build the container images for the website and API web service. A third container is used to deploy the document database provided by the database publisher and will not be stored the database container in ACR.
+The Fruit Smoothies rating app makes use of two container images, one for the front-end website and one for the RESTful API web service. Your development teams use the local Docker tooling to build the container images for the website and API web service. A third container is used to deploy the document database provided by the database publisher and will not be stored the database container in ACR.
 
 You can also use Azure Container Registry to build these containers using a standard Dockerfile to provide build instructions. With Azure Container Registry, you can reuse any Dockerfile currently in your environment, which includes multi-staged builds.
 
