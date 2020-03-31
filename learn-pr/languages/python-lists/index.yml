@@ -2,14 +2,14 @@
 uid: learn.languages.python-lists
 metadata:
   title: Manage a sequence of data by using Python lists
-  description: Learn how to use lists to manage a collection of data. Use helper methods to manipulate the list. Use the `for` statement to iterate through the list.
+  description: Learn how to use lists to manage a collection of data. Use helper functions to manipulate the list. Use the `for` statement to iterate through the list.
   ms.date: 02/19/2020
   author: bobtabor-msft
   ms.author: rotabor
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Manage a sequence of data by using Python lists
-summary: Learn how to use lists to manage a collection of data. Use helper methods to manipulate the list. Use the for statement to iterate through the list.
+summary: Learn how to use lists to manage a collection of data. Use helper functions to manipulate the list. Use the for statement to iterate through the list.
 abstract: |
   In this module, you will:
   - Create lists of related data.

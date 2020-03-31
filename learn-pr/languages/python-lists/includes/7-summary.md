@@ -7,7 +7,7 @@ Our goal in this module was to manage values in a list. We managed values to:
 
 We used Python syntax to initialize a new list and retrieve one or more items from the list. 
 
-We used helper methods to:
+We used helper functions to:
 
 - Append and remove items from the list. 
 - Sort the list.
