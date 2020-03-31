@@ -19,7 +19,7 @@ abstract: |
 prerequisites: | 
   - An introductory knowledge of Azure IoT
   - Basic understanding of the Azure CLI tool from the **Control Azure services with the CLI** module.
-iconUrl: https://docs.microsoft.com/media/learn/module.svg
+iconUrl:  /learn/achievements/iot/explore-and-analyze-time-stamped-data-with-Time-Series-Insights.svg
 levels:
 - intermediate
 roles:
@@ -35,4 +35,4 @@ units:
 - learn.iot.explore-and-analyze-time-series-insights.analyze-data-ad-hoc
 - learn.iot.explore-and-analyze-time-series-insights.summary
 badge:
-  uid: learn.explore-and-analyze-time-series-insights.badge
+  uid: learn.iot.explore-and-analyze-time-series-insights.badge
