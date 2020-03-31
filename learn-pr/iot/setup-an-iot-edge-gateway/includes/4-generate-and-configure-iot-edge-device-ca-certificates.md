@@ -189,7 +189,7 @@ You'll complete these steps on the Azure IoT Edge Gateway that was deployed in t
      scp -r -p <username>@<DNSName>:~/certificates .
      ```
 
-     Replace the `<username>` placeholder with the username of the admin user for the VM, and replace the `<DNSName>` placeholder with the **DNS Name** the VM.
+     Replace the `<username>` placeholder with the username of the admin user for the VM, and replace the `<DNSName>` placeholder with the **DNS Name** of the VM.
     
     When executing the command, enter the Admin password for the VM when prompted.
 
