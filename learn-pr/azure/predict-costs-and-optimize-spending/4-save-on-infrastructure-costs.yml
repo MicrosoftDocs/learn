@@ -4,12 +4,11 @@ title: Save on infrastructure costs
 metadata:
   title: Save on infrastructure costs
   description: In this unit, we'll discuss how to save on infrastructure costs 
-  ms.date: 09/24/2018
+  ms.date: 03/31/2020
   author: patridge
   ms.author: adpatrid
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 10
 content: |
   [!include[](includes/4-save-on-infrastructure-costs.md)]
