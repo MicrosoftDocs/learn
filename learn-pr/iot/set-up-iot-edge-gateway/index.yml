@@ -8,7 +8,7 @@ metadata:
   ms.author: pdecarlo
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Setup an IoT Edge Gateway
+title: Set up an IoT Edge Gateway
 summary: >
   This module is theoretical and will walk you through how an IoT Edge device can be used as a gateway.
 abstract: | 
@@ -40,7 +40,7 @@ units:
 - learn.iot.set-up-iot-edge-gateway.create-iot-edge-device-identity-iot-hub-using-azure-portal
 - learn.iot.set-up-iot-edge-gateway.deploy-azure-iot-edge-enabled-linux-vm-iot-edge-device
 - learn.iot.set-up-iot-edge-gateway.generate-configure-iot-edge-device-certificates
-- learn.iot.set-up-iot-edge-gateway.setup-iot-edge-gateway-hostname
+- learn.iot.set-up-iot-edge-gateway.set-up-iot-edge-gateway-hostname
 - learn.iot.set-up-iot-edge-gateway.open-iot-edge-gateway-device-ports-communication-downstream-devices
 - learn.iot.set-up-iot-edge-gateway.create-downstream-device-identity-iot-hub
 - learn.iot.set-up-iot-edge-gateway.connect-downstream-device-iot-edge-gateway

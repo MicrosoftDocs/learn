@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.iot.set-up-iot-edge-gateway.setup-iot-edge-gateway-hostname
+uid: learn.iot.set-up-iot-edge-gateway.set-up-iot-edge-gateway-hostname
 metadata:
   title: Set up an IoT Edge Gateway Hostname
   description: Set up an IoT Edge Gateway Hostname
@@ -12,4 +12,4 @@ title: Set up an IoT Edge Gateway Hostname
 # azureSandbox: true
 durationInMinutes: 10
 content: |
-  [!include[](includes/5-setup-iot-edge-gateway-hostname.md)]
+  [!include[](includes/5-set-up-iot-edge-gateway-hostname.md)]
