@@ -17,10 +17,6 @@ In this exercise, you will:
 
 Helm is an application package manager for Kubernetes. It offers a way to easily deploy applications and services using charts. 
 
-:::image type="content" source="../media/04-use-helm.png" border="false" alt-text="Diagram that shows the interaction between the helm client and the Tiller server to deploy resources on an Azure Kubernetes Service cluster.":::
-
-A Helm installation has two parts. The Helm client is named *helm* and the Helm server is named *Tiller*. AKS clusters come with with *Tiller* already installed, so you can begin using Helm as soon as your cluster is deployed.
-
 The Helm client is already installed in the Azure Cloud Shell and can be run with the `helm` command. Helm provides a standard repository of charts for many different software packages. Helm has a chart for MongoDB that is part of the official Helm *stable* charts repository.
 
 1. Configure the Helm client to use the stable repository by running the `helm repo add` command below.
