@@ -45,7 +45,7 @@ Keep in mind you want to set your server storage size at 20 GB, compute Gen 5 su
    | `--backup-retention` | Specify the number of days a backup is retained. |
    | `--version` | Specify the major version of the server. |
 
-   Run the following command. Remember to replace the <location> value with one of the regions suggested above.
+   Run the following command. Remember to replace the `<location>` value with one of the regions suggested above.
    
    ```azurecli
    az postgres server create \
