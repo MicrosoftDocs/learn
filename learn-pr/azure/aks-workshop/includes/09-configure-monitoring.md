@@ -1,43 +1,17 @@
 The success of Fruit Smoothies' marketing campaign is the ongoing performance of the ratings website. The performance is depended on your cluster's performance and relies on the fact that you can monitor the different components in your application, view logs, and get alerts whenever your application goes down or some parts of it fail. You can use a combination of available tools to set up alerting capabilities for your application.
 
-In this exercise, you'll:
+In this exercise, you will:
 
 > [!div class="checklist"]
-> * Create a Log Analytics workspace
-> * Enable the AKS monitoring add-on
-> * Inspect the AKS event or logs and monitor cluster health
-> * View the live container logs and AKS events
-
-You'll also see how to create a *Role* and a *RoleBinding*. These objects enable and set permissions for the agent to collect the data from the cluster.
-
-Before you start with the exercise steps, let's define some of the items mentioned.
-
-### What is Azure Monitor for containers?
-
-Azure Monitor for containers is a comprehensive monitoring solution for Azure Kubernetes Service. This solution gives you insight into the performance of your cluster by collecting memory and processor metrics from controllers, nodes, and containers.
-
-### What is a Log Analytics workspace?
-
-A Log Analytics workspace is a container that includes data and configuration information and is used by Azure Monitor to store log data. You'll also use the workspace to manage access to the data logged.
-
-### What is Role-based access control (RBAC)?
-
-We use Role-based access control (RBAC) in Kubernetes as a way of regulating access to resources based on the roles of individual users within your organization. RBAC authorization uses a set of related paths in the Kubernetes API to allow you to dynamically configure policies. The RBAC API defines four Kubernetes objects:
-
-- Role
-- ClusterRole
-- RoleBinding
-- ClusterRoleBinding
-
-### What is a Kubernetes Role?
-
-The RBAC Role and ClusterRole objects allow you to set up rules that represent a set of permissions. The main difference between a Role and a ClusterRole is that a Role is used with resources in a specific namespace and ClusterRole is used with non-namespace resources in a cluster. You'll see how to define a ClusterRole later in the exercise.
-
-### What is a Kubernetes RoleBinding?
-
-We use a role binding to grant the permissions defined in a role to a user or set of users. A role binding contains the list of users, groups, or service accounts, and a reference to the role being granted. Like the Role and ClusterRole, a RoleBinding grants permission within a specific namespace and the ClusterRoleBinding grants access to the cluster. You'll use a ClusterRoleBinding bind your ClusterRole to all the namespaces in your cluster.
+> - Create a Log Analytics workspace
+> - Enable the AKS monitoring add-on
+> - Inspect the AKS event logs and monitor cluster health
+> - Configure Kubernetes RBAC to enable live log data
+> - View the live container logs and AKS events
 
 ## Create a Log Analytics workspace
+
+Azure Monitor for containers is a comprehensive monitoring solution for Azure Kubernetes Service. This solution gives you insight into the performance of your cluster by collecting memory and processor metrics from controllers, nodes, and containers.
 
 You use Log Analytics in Azure Monitor to store monitoring data, events, and metrics from your AKS cluster and the applications. First, you'll pre-create the Log Analytics workspace in your assigned environment resource group.
 
@@ -61,7 +35,7 @@ You use Log Analytics in Azure Monitor to store monitoring data, events, and met
 
 ## Enable the AKS monitoring add-on
 
-Once the workspace is ready, you can integrate the Azure Monitor add-on that's used for containers monitoring into it.
+Once the workspace is ready, you can integrate the Azure Monitor add-on and enable container monitoring on your AKS cluster.
 
 1. You need to provide the resource ID of your workspace to enable the add-on. Run the following command to retrieve and store the workspace ID in a Bash variable named `WORKSPACE_ID`.
 
@@ -85,7 +59,7 @@ Once the workspace is ready, you can integrate the Azure Monitor add-on that's u
     > [!NOTE]
     > It might take some time to establish monitoring data flow for newly created clusters. Allow at least 5 to 10 minutes for data to appear for your cluster.
 
-## Inspect the AKS event or logs and monitor cluster health
+## Inspect the AKS event logs and monitor cluster health
 
 We view utilization reports and charts for your cluster in the Azure portal by using Azure Monitor. Azure Monitor gives you a global perspective of all containers deployed across subscriptions and resource groups. From here, you can track containers that are monitored and those containers that aren't monitored. You can also inspect each container's statistics individually.
 
@@ -109,11 +83,28 @@ Let's look at the steps you need to take to get a detailed view of the health of
 
     ![Screenshot showing nodes and pods in a cluster.](../media/09-podmetrics.png#lightbox)
 
-## View the live container logs and AKS events
+## Configure Kubernetes RBAC to enable live log data
 
 In addition to the high-level overview of your cluster's health, you can also view live log data of specific containers.
 
 To enable and set permissions for the agent to collect the data, first, create a *Role* that has access to pod logs and events. Then you'll assign permissions to users by using *RoleBinding*.
+
+### What is role-based access control (RBAC)?
+
+We use role-based access control (RBAC) in Kubernetes as a way of regulating access to resources based on the roles of individual users within your organization. RBAC authorization uses a set of related paths in the Kubernetes API to allow you to dynamically configure policies. The RBAC API defines four Kubernetes objects:
+
+- Role
+- ClusterRole
+- RoleBinding
+- ClusterRoleBinding
+
+### What is a Kubernetes Role?
+
+The RBAC Role and ClusterRole objects allow you to set up rules that represent a set of permissions. The main difference between a Role and a ClusterRole is that a Role is used with resources in a specific namespace and ClusterRole is used with non-namespace resources in a cluster. You'll see how to define a ClusterRole later in the exercise.
+
+### What is a Kubernetes RoleBinding?
+
+We use a role binding to grant the permissions defined in a role to a user or set of users. A role binding contains the list of users, groups, or service accounts, and a reference to the role being granted. Like the Role and ClusterRole, a RoleBinding grants permission within a specific namespace and the ClusterRoleBinding grants access to the cluster. You'll use a ClusterRoleBinding bind your ClusterRole to all the namespaces in your cluster.
 
 In this exercise, you'll set up *Roles* and *RoleBindings* that aren't limited to a specific namespace. You can configure *Roles* and *RoleBindings* to grant permissions and bind roles to users across the entire cluster or to cluster resources outside a given namespace.
 
@@ -164,6 +155,8 @@ In this exercise, you'll set up *Roles* and *RoleBindings* that aren't limited t
         -f logreader-rbac.yaml
     ```
 
+## View the live container logs and AKS events
+
 1. Switch back to the AKS cluster in the Azure portal.
 
 1. Select **Insights** under **Monitoring**.
@@ -171,3 +164,9 @@ In this exercise, you'll set up *Roles* and *RoleBindings* that aren't limited t
 1. Select the **Controllers** tab, and choose a container to view its live logs or event logs. For example, choose the **ratings-api** container. The new view allows you to debug the status of the container.
 
     ![Screenshot showing an example of the event logs for an Azure Kubernetes Service cluster](../media/09-livelogs.png#lightbox)
+
+## Summary
+
+In this exercise you created a Log Analytics workspace in Azure Monitor to store monitoring and logging data for your AKS cluster. You enabled the AKS monitoring add-on to enable the collection of data, and inspected the AKS cluster health. You then used Kubernetes RBAC to enable the collection of live logging data and then viewed live log data in the Azure Portal.
+
+Next, we'll take a look at scaling the Fruit Smoothies AKS cluster.
