@@ -65,4 +65,4 @@ Your changes are complete. Let's deploy the finished website to Azure:
 1. Select the **countdownExpressApp** folder, and then select **Deploy**.
 1. When the deployment is complete, select **Browse Website**, and then select **Open Link**. Then Azure website is displayed in your browser. Notice that the countdown is now displayed in days.
 
-    ![Express.js website hosted in Azure](../media/7-deployed-webapp.png)
+    :::image type="content" source="../media/7-deployed-webapp.png" alt-text="Express.js website hosted in Azure." loc-scope="other":::
