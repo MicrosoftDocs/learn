@@ -2,7 +2,7 @@ You have now successfully delegated the domain from the domain registrar to your
 
 The next phase of the deployment is to improve resiliency by using a load balancer. Load balancers distribute inbound data requests and traffic across one or more servers. They reduce the load on any one server, and improve performance. This technology is well established, and will be used throughout your on-premises network.
 
-You know that the A record and CNAME record don't support direct connection to Azure resources like your load balancers. You've been tasked with finding out how to link the apex domain with Azure Load Balancer.
+You know that the A record and CNAME record don't support direct connection to Azure resources like your load balancers. You've been tasked with finding out how to link the apex domain with a load balancer.
 
 ## What is an apex domain?
 
@@ -40,4 +40,4 @@ The following are some of the advantages of using alias records:
 - **Hosts load-balanced applications at the zone apex**: Alias records allow for zone apex resource routing to Traffic Manager. 
 - **Points zone apex to Azure Content Delivery Network endpoints**: With alias records, you can now directly reference your Azure Content Delivery Network.
 
-An alias record enables you to link the zone apex (wideworldimports.com) to Load Balancer. It creates a link to the Azure resource, rather than a direct IP-based connection. So, if the IP address of Load Balancer changes, the zone apex record continues to work.
+An alias record enables you to link the zone apex (wideworldimports.com) to a load balancer. It creates a link to the Azure resource, rather than a direct IP-based connection. So, if the IP address of your load balancer changes, the zone apex record continues to work.

@@ -39,7 +39,7 @@ Changing the NS details is called *domain delegation*. When you delegate the dom
 
 ### Step 4: Verify delegation of domain name services
 
-The next step is to verify that the delegated domain now points to the Azure DNS zone you created for the domain. This can take as few as 10 minutes, but could take longer.
+The next step is to verify that the delegated domain now points to the Azure DNS zone you created for the domain. This can take as few as 10 minutes, but might take longer.
 
 To verify the success of the domain delegation, query the start of authority (SOA) record. The SOA record was automatically created when the Azure DNS zone was set up. You can do this by using a third-party tool, like nslookup.
 
@@ -66,7 +66,7 @@ Each A record requires the following details:
 
 #### CNAME record
 
-The CNAME is the canonical name, or the alias for an A record. Use CNAME when you have different domain names that all access the same website. For example, you may need a CNAME in the *wideworldimports* zone, if you want both www.wideworldimports.com and wideworldimports.com to resolve to the same IP address.
+The CNAME is the canonical name, or the alias for an A record. Use CNAME when you have different domain names that all access the same website. For example, you might need a CNAME in the *wideworldimports* zone, if you want both www.wideworldimports.com and wideworldimports.com to resolve to the same IP address.
 
 You would create the CNAME record in the *wideworldimports* zone with the following information:
 

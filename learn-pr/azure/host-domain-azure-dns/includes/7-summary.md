@@ -4,7 +4,7 @@ Your company wanted to manage all their infrastructure and related domain name i
 
 You learned the uses of the different record sets, A, AAAA, CNAME, NS, and SOA.  You also learned how you could use Azure aliases to override the static A/AAAA/CNAME record to provide a dynamic reference to your resources. Using an Azure DNS zone improved your company's administration of resources, because your staff only needed one place to manage DNS-related tasks.
 
-The Azure DNS zone allows better control and integration with your Azure resources. It's possible that you could achieve some of the more basic record set functions by using the domain registrar's management console. However, linking to any of your Azure resources becomes difficult or impossible without a high degree of complex redirection.
+The Azure DNS zone allows better control and integration with your Azure resources. It's possible to achieve some of the more basic record set functions by using the domain registrar's management console. However, linking to any of your Azure resources becomes difficult or impossible without a high degree of complex redirection.
 
 By using an Azure DNS zone to host your domain, your organization benefits by having all the resources managed through a single, common interface. This includes better integration with existing Azure resources, improved security, and monitoring tools.
 

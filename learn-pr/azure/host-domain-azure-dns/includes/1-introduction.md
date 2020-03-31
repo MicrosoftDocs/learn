@@ -14,4 +14,4 @@ In this module, you will:
 
 ## Prerequisites
 
-- Knowledge of networking concepts like name resolution and IP addresses.
+- Knowledge of networking concepts, like name resolution and IP addresses.
