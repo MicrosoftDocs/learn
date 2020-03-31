@@ -42,7 +42,7 @@ Use pricing tiers to control costs and match the scalability of your app to the 
 
 If you are working with Azure App Service and VS Code, you can consider installing the [Azure App Service](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureappservice) extension. With this extension, you get an extra explorer window that displays all the webapps in your subscription. You can use this explorer to connect your app to a backend database or configure GitHub deployment. You can also create deployment slots or define new application settings. You can also create new webapps and deploy source code straight from your local hard drive to Azure.
 
-![The Azure explorer in VS Code](../media/4-azure-explorer.png)
+:::image type="content" source="../media/4-azure-explorer.png" alt-text="The Azure explorer in VS Code." loc-scope="vs-code":::
 
 ## Deploy a website to Azure
 
@@ -55,7 +55,7 @@ However, if you want to complete the deployment fast, entirely within VS Code, y
 1. Select an operating system and version for the virtual machines. The extension creates a new App Service plan and resource group to contain your web app.
 1. Select a folder that contains the source code. The extension deploys this code and starts that webapp.
 
-![Deploy source code to a webapp](../media/4-deploy-web-app.png)
+:::image type="content" source="../media/4-deploy-web-app.png" alt-text="Deploy source code to a webapp." loc-scope="vs-code":::
 
 ## Debug a website in Azure
 
@@ -63,6 +63,6 @@ Once you've installed the Azure App Service extension, you can also use VS Code 
 
 To start a debugging session, right-click the app in the Azure explorer and then select **Start Remote Debugging**:
 
-![Debug a webapp running in Azure](../media/4-debug-web-app.png)
+:::image type="content" source="../media/4-debug-web-app.png" alt-text="Debug a webapp running in Azure." loc-scope="vs-code":::
 
 VS Code connects to the app's debugging port through a Secure Shell (SSH) connection. It may take longer to make this connection than it does to start the local debugger. Once the connection is made, you can use tools such as the debugging console and break points in exactly the same way as you do when debugging locally. 

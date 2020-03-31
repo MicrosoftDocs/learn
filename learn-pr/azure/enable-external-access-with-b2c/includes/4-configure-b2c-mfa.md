@@ -57,13 +57,13 @@ After your user's flow and multi-factor authentication has been configured, the 
 
 Because your healthcare application is a web app, the user accesses it through their browser. Users must sign up to your application if they don't already have an account. In the sign-up page, they're expected to provide the information you wanted to collect in your user flow. The sign-up form might look like this:
 
-![Sign-up form](../media/4-sign-up-form.png)
+:::image type="content" source="../media/4-sign-up-form.png" alt-text="Sign-up form." loc-scope="azure-active-directory-b2c":::
 
 You'll see this form collects attributes like **Country/Region**, **Given Name**, and **Surname** from the user. The **Send verification code** button sends a verification code via email. The code is then used to complete registration.
 
 When your user has registered an account, they sign in. The sign-in form might look like this:
 
-![Sign-in form](../media/4-sign-in-form.png)
+:::image type="content" source="../media/4-sign-in-form.png" alt-text="Sign-in form." loc-scope="azure-active-directory-b2c":::
 
 After a user's credentials are verified, they'll complete a multi-factor authentication challenge. The user enters their phone number, and chooses to receive a code, either sent via text message or in a call. 
 
