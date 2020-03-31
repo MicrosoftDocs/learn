@@ -4,7 +4,7 @@ Let's verify that data is propagating from the IoT Edge Gateway into the Azure c
 
 In this unit, you'll use the Azure CLI to monitor events sent to Azure IoT Hub.  These events will come from the downstream IoT Device connected to the IoT Edge Gateway. These steps will validate that event flow from downstream device to IoT Edge Gateway and upstream to IoT Hub is working correctly.
 
-## Verify Event Flow from Downstream Device through IoT Edge Gateway to IoT Hub
+## Verify event flow from Downstream Device through IoT Edge Gateway to IoT Hub
 
 1. If necessary, sign in to your Azure portal using your Azure account credentials.
 

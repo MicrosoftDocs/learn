@@ -8,7 +8,7 @@ We need a reliable mechanism for connecting to the IoT Edge Gateway.  IP address
 
 In this unit, you'll configure a DNS name for the **Public IP Address** of AZ-220-VM-EDGEGW-_{YOUR-ID}_, and configure that DNS name as the hostname of the IoT Edge Gateway device.
 
-## Set up an IoT Edge Gateway Hostname
+## Set up an IoT Edge Gateway hostname
 
 1. If necessary, sign in to your Azure portal using your Azure account credentials.
 

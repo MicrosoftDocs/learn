@@ -10,7 +10,7 @@ We present credentials to a guard (the IoT Edge Gateway), who validates that we 
 
 In this unit, you'll generate test certificates using tooling on Linux. The certs will ensure that only securely authenticated downstream devices can communicate with the IoT Edge Gateway.
 
-## Generate and Configure IoT Edge Device CA Certificates
+## Generate and configure IoT Edge device CA certificates
 
 You'll complete these steps on the Azure IoT Edge Gateway that was deployed in the previous unit.
 
