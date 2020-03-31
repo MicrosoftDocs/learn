@@ -12,7 +12,7 @@ In this exercise, you will:
 > - Create a Kubernetes namespace.
 
 [!include[](../../../includes/azure-exercise-subscription-prerequisite.md)]
-[!include[](../../../includes/azure-cloudshell-copy-paste-tip.md)]
+
 
 ## Create a new resource group
 
@@ -28,6 +28,8 @@ You'll first need to create a resource group for your resources to deploy into.
     SUBNET_NAME=aks-subnet
     VNET_NAME=aks-vnet
     ```
+
+    [!include[](../../../includes/azure-cloudshell-copy-paste-tip.md)]
 
     You can check each value using the `echo` command, for example, `echo $REGION_NAME`.
 
