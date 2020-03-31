@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.nodejs.03-knowledge-check
+title: Knowledge Check
+metadata:
+  title: Knowledge Check
+  description: Check your knowledge of Node.js and its ecosystem
+  ms.date: 03/23/2020
+  author: manekinekko
+  ms.author: wachegha
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+azureSandbox: true
+durationInMinutes: 4
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: "What is Node.js?"
+      choices:
+        - content: "A JavaScript framework."
+          isCorrect: false
+          explanation: "Node.js is usually wrongly presented as a framework but it's not."
+        - content: "A JavaScript runtime."
+          isCorrect: true
+          explanation: "Correct. Node.js is a runtime that can execute JavaScript applications."
+        - content: "A JavaScript server."
+          isCorrect: false
+          explanation: "Although Node.js can be used to implement a server, it's not a server."
+    - content: "Why should you use Node.js?"
+      choices:
+        - content: "Because it has a huge community supporting the project."
+          isCorrect: true
+          explanation: "Correct. Node.js is supported by the OpenJS foundation and counts more than 3k active contributors."
+        - content: "Because it can run Java."
+          isCorrect: false
+          explanation: "Node.js can run JavaScript, not Java."
+        - content: "Because I can use it to build mobile applications."
+          isCorrect: false
+          explanation: "Mobile applications can be built with many languages including JavaScript. Node.js is a runtime not a language."

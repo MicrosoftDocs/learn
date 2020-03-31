@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.azure.nodejs
+metadata:
+  title: Node.js Essentials
+  description: Explore the essentials APIs of Node.js that allow you to build performant and maintainable JavaScript applications.
+  ms.date: 02/25/2020
+  author: manekinekko
+  ms.author: wachegha
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Node.js Essentials
+summary: Explore the essentials APIs of Node.js that allow you to build performant and maintainable JavaScript applications.
+abstract: |
+  In this module, you'll learn how to:
+  - Install and configure Node.js.
+  - Create and import Node.js modules.
+  - Manipulate binary data using Buffers.
+  - Use Node.js events and timers.
+  - Work with Streams, filesystem, and processes.
+  - Create an HTTP server and client using the built-in modules.
+  - Connect to a database.
+  - Debug and test a Node.js application.
+  - Secure a Node.js application.
+  - Configure an application and deploy it to production.
+prerequisites: |
+  - JavaScript and basic notions of UNIX, TCP, and HTTP.
+iconUrl: /learn/achievements/advocates/node-js-essentials-badge.svg
+levels:
+  - intermediate
+roles:
+  - developer
+products:
+  - azure
+units:
+  - learn.azure.nodejs.01-what-is-nodejs
+  - learn.azure.nodejs.02-why-nodejs
+  - learn.azure.nodejs.03-knowledge-check
+  - learn.azure.nodejs.09-summary
+badge:
+  uid: learn.azure.nodejs.badge

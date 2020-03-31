@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.nodejs.01-what-is-nodejs
+title: What is Node.js?
+metadata:
+  title: What is Node.js?
+  description: Learn the fundamentals of Node.js. You'll cover the core APIs of Node.js. You'll also explore testing and debugging Node.js applications. Finally, you'll explore how to secure and deploy your application to production.
+  ms.date: 02/25/2020
+  author: manekinekko
+  ms.author: wachegha
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/01-what-is-nodejs.md)]
