@@ -18,7 +18,7 @@ As you write your code, IntelliSense can perform type checking and code completi
 
 As you type, IntelliSense will use a combination of type checking and type inference to show suggestions appropriate to the current context. Type inference enables IntelliSense to present valid code completion suggestions as you write your code:
 
-4:::image type="content" source="../media/4-intellisense.png" alt-text="Screenshot of the editor VS Code, showing an Intellisense prompt." loc-scope="vs-code":::
+:::image type="content" source="../media/4-intellisense.png" alt-text="Screenshot of the editor VS Code, showing an Intellisense prompt." loc-scope="vs-code":::
 
 Type checking enables IntelliSense to show the parameters that a function call can take, and will type-check the expressions you provide for each function:
 
