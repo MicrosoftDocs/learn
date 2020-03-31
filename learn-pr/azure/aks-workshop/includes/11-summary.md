@@ -21,14 +21,16 @@ In this module, you created resources by using your Azure subscription. You want
 We've covered a number of concepts in this module. Visit the articles and sites below to learn more about each of the concepts.
 
 Azure and AKS resources:
-- [Kubernetes core concepts for AKS](https://docs.microsoft.com/azure/aks/concepts-clusters-workloads)
-- [Network concepts for applications in AKS](https://docs.microsoft.com/azure/aks/concepts-network)
-- [Security concepts for applications and clusters in Azure Kubernetes Service (AKS)](https://docs.microsoft.com//azure/aks/concepts-security)
-- [Azure Monitor for containers overview](https://docs.microsoft.com/azure/azure-monitor/insights/container-insights-overview)
-- [Create a Log Analytics workspace in the Azure portal](https://docs.microsoft.com/azure/azure-monitor/learn/quick-create-workspace)
+
+- [Kubernetes core concepts for AKS](https://docs.microsoft.com/azure/aks/concepts-clusters-workloads?azure-portal=true)
+- [Network concepts for applications in AKS](https://docs.microsoft.com/azure/aks/concepts-network?azure-portal=true)
+- [Security concepts for applications and clusters in Azure Kubernetes Service (AKS)](https://docs.microsoft.com//azure/aks/concepts-security?azure-portal=true)
+- [Azure Monitor for containers overview](https://docs.microsoft.com/azure/azure-monitor/insights/container-insights-overview?azure-portal=true)
+- [Create a Log Analytics workspace in the Azure portal](https://docs.microsoft.com/azure/azure-monitor/learn/quick-create-workspace?azure-portal=true)
 
 Kubernetes and Helm resources:
-- [Kubernetes documentation](https://kubernetes.io/docs/home/)
+
+- [Kubernetes documentation](https://kubernetes.io/docs/home/?azure-portal=true)
 - [Kubernetes secrets](https://kubernetes.io/docs/concepts/configuration/secret/?azure-portal=true)
 - [Helm](https://helm.sh?azure-portal=true)
 - [How to use Helm](https://helm.sh/docs/intro/using_helm/?azure-portal=true)
@@ -38,9 +40,10 @@ Kubernetes and Helm resources:
 - [MongoDB Helm chart repository](https://github.com/helm/charts/tree/master/stable/mongodb?azure-portal=true)
 
 Other utilities and resources:
-- [Let's Encrypt](https://letsencrypt.org/)
-- [cert-manager](https://cert-manager.io)
+
+- [Let's Encrypt](https://letsencrypt.org/?azure-portal=true)
+- [cert-manager](https://cert-manager.io?azure-portal=true)
 - Wildcard DNS services
-  - [nip.io](https://nip.io)
-  - [xip.io](http://xip.io)
-  - [sslip.io](https://sslip.io)
+  - [nip.io](https://nip.io?azure-portal=true)
+  - [xip.io](http://xip.io?azure-portal=true)
+  - [sslip.io](https://sslip.io?azure-portal=true)
