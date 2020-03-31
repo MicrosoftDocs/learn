@@ -139,7 +139,7 @@ As we saw in the first `print()` statement, the value on the left side of the co
 
 If you don't define an index on the left side of the colon, then the slice will start at the beginning of the list.  If you don't define an index on the right side of the colon, then the slice will continue to the end of the list.
 
-As you can see from the last example, you can use negative values. Negative values let you work from the end of the list. Using this method can be bewildering at first, but keep in mind that nothing changes.  If you define the slice as `[-4:-1]`, then the slice contains the fourth item from the end of the list through the last item in the list.
+As you can see from the last example, you can use negative values. Negative values let you work from the end of the list. Using this method can be bewildering at first, but keep in mind that the same rules you learned still apply.  If you define the slice as `[-4:-1]`, then the slice contains the the last four items in the list.
 
 When you execute the code, you should see the following output:
 
