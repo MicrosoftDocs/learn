@@ -1,10 +1,10 @@
 In this second challenge, you combine what you learned about accepting user input and performing data conversions with what you previously learned about the `if...elif...else` statement.
 
-Here, you build a limited calculator application that prompts the user for two values and a mathematical operation,  performs the calculation, then formats and displays the output.
+Here, you build a limited calculator application that prompts users for two values and a mathematical operation, performs the calculation, and then formats and displays the output.
 
 ### Step 1: Add a new file to your working folder
 
-If you're continuing from the preceding unit, use the techniques you learned in previous modules to add a new code file in the current folder that's dedicated to this module.  For example, you might create a file named *challenge2.py*.
+Use the techniques you learned in previous modules to add a new code file in the current folder that's dedicated to this module.  For example, you might create a file named *challenge2.py*.
 
 Use this file for the code you'll write in Step 2.
 
@@ -24,20 +24,20 @@ product of 4 * 5 equals 20
 
 Your program should accept a symbol, such as the asterisk symbol (**\***), to perform a multiplication and produce a product.  Make sure that you implement logic for the following results:
 
-- sum
-- difference
-- product
-- quotient
-- exponent
-- modulus
+- Sum
+- Difference
+- Product
+- Quotient
+- Exponent
+- Modulus
 
-If users fail to enter a numeric value, display the message:
+If users fail to enter a numeric value, display the following message:
 
 ```output
 Please input a number.
 ```
 
-If the operation entered by the end user is not recognized, you should display the message:
+If users enter an operation that isn't recognized, display the following message:
 
 ```output
 Operation not recognized.
