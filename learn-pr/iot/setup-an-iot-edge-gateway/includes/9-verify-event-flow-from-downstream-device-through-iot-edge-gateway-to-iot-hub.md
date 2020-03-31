@@ -45,7 +45,7 @@ In this unit, you'll use the Azure CLI to monitor events sent to Azure IoT Hub. 
     When you've completed this lab and verified the event flow, you may exit the console application with **CTRL+C**.
 
     >[!NOTE]
-    > Due to the secure nature of the Azure Sandbox, you may not receive any data back when running the command above.  This is because the Gateway device requires that ports 8883, 5671, and 443 are opened in order to allow for communication back to the IoT Hub instance.  Even though we opened these ports in step 6, the policy will not actually affect the machine.  If you wish to fully verify the results, you may need to deploy into a personal subscription which allows you to make these configuration changes.
+    > Due to the secure nature of the Azure Sandbox, you may not receive any data back when running the command above.  This is because the Gateway device requires that ports 8883, 5671, and 443 are opened in order to allow for communication back to the IoT Hub instance.  Even though we opened these ports in unit 6, the policy will not actually affect the machine.  If you wish to fully verify the results, you may need to deploy into a personal subscription which allows you to make these configuration changes.
 
 ## Next steps
 

@@ -30,6 +30,8 @@ You'll complete these steps on the Azure IoT Edge Gateway that was deployed in t
 
 1. At the top of the Azure portal click on the **Cloud Shell** icon to open up the **Azure Cloud Shell** within the Azure portal. When the pane opens, choose the option for the **Bash** terminal within the Cloud Shell.
 
+1. Follow the instructions to create the necessary storage accounts for use in the **Cloud Shell**.
+
 1. Within the Cloud Shell, paste in the modified `ssh` command, and press **Enter**.
 
 1. When prompted with "Are you sure, you want to continue connecting?**", type `yes` and press Enter. This prompt is a security confirmation since the certificate used to secure the connection to the VM is self-signed.
@@ -184,10 +186,10 @@ You'll complete these steps on the Azure IoT Edge Gateway that was deployed in t
 
     ```bash
      mkdir certificates
-     scp -r -p <username>@<ipaddress>:~/certificates .
+     scp -r -p <username>@<DNSName>:~/certificates .
      ```
 
-     Replace the `<username>` placeholder with the username of the admin user for the VM, and replace the `<ipaddress>` placeholder with the IP Address fo the VM.
+     Replace the `<username>` placeholder with the username of the admin user for the VM, and replace the `<DNSName>` placeholder with the **DNS Name** the VM.
     
     When executing the command, enter the Admin password for the VM when prompted.
 

@@ -31,7 +31,7 @@ In this unit, you will create a new IoT Edge Device identity in Azure IoT Hub fo
 
 1. Now, select **Review + create**, this option gives you a chance to verify your choices before clicking **Create**, and building the hub. Building your hub can take a few minutes.
 
-1. With a sandbox, a containing resource with a name such as **AZ-220-HUB-_{YOUR-ID}** is created. From this containing resource, click **Go to resource** to go to the home page for your temporary hub.
+1. With a sandbox, a containing resource with a name such as **AZ-220-HUB-_{YOUR-ID}_** is created. From this containing resource, click **Go to resource** to go to the home page for your temporary hub.
 
 1. On the IoT Hub summary, click **IoT Edge** under the **Automatic Device Management** section. This section of the IoT Hub summary allows you to manage the IoT Edge devices connected to the IoT Hub.
 

@@ -16,13 +16,7 @@ In this unit, you'll configure a DNS name for the **Public IP Address** of AZ-22
 
 1. Navigate to the IoT Edge virtual machine.
 
-1. On the **Overview** pane of the **Virtual machine** blade, click the **Configure** link next to **DNS name**.
-
-1. On the **Public IP Address** Configuration blade for the * virtual machine, take note of into the **DNS name label** field, which should be in the format:
-
-    `az-220-vm-edgegw-{YOUR-ID}`
-
-1. Note the full DNS name for the Public IP Address of the virtual machine, and save it for reference later.
+1. On the **Overview** pane of the **virtual machine**, take note of the DNS name in the far right, and save its for reference later.
 
     The full DNS name is composed of the az-220-vm-edgegw-{YOUR-ID} value suffixed by the text below the DNS name label field.
 
@@ -36,8 +30,6 @@ In this unit, you'll configure a DNS name for the **Public IP Address** of AZ-22
 
     The DNS name for the Public IP Address of the virtual machine provides an FQDN (Fully Qualified Domain Name) for the downstream device(s) to use as the **GatewayHostName** to connect to it. Since the VM, in this case, is accessible across the Internet an Internet DNS name is needed. If the Azure IoT Edge Gateway is hosted in a Private or Hybrid network, then the machine name needs to meet the requirements of a **GatewayHostName** for on-premises downstream devices to connect.
 
-1. Navigate to the IoT Edge virtual machine within the Azure portal.
-
 1. On the **Overview** pane of the **Virtual machine** blade, click the **Connect** button at the top.
 
 1. Within the **Connect to virtual machine** pane, select the **SSH** option, then copy the **Login using VM local** account value.
@@ -47,7 +39,7 @@ In this unit, you'll configure a DNS name for the **Public IP Address** of AZ-22
     >[!NOTE]
     > If a "Host key verification failed" messages displays, then use the VM's IP Address with the `ssh` command to connect to the virtual machine.
 
-1. Navigate to the Azure portal and click on the **cloud shell** icon to open up the **Azure cloud shell**. When the pane opens, choose the option for the **Bash** terminal within the cloud shell.
+1. Navigate to the Azure portal and click on the **Cloud Shell** icon to open up the **Azure Cloud Shell**. When the pane opens, choose the option for the **Bash** terminal within the Cloud Shell.
 
 1. Within the **Connect to virtual machine pane**, select the **SSH** option, then look for the section "**Run the example command below to connect to your VM.**".
 
@@ -58,7 +50,7 @@ In this unit, you'll configure a DNS name for the **Public IP Address** of AZ-22
 
     This entry is a sample SSH command that will be used to connect to the virtual machine that contains the hostname for the VM and the Administrator username. Modify this command so that it is formatted similar to `ssh username@az-220-vm-edgegw-{YOUR-ID}.westus.cloudapp.azure.com`.
 
-1. Within the cloud shell, paste in the modified `ssh` command, and press **Enter**.
+1. Within the Cloud Shell, paste in the modified `ssh` command, and press **Enter**.
 
 1. When prompted to enter the password, enter the Administrator password that was entered when the VM was provisioned.
 
