@@ -46,9 +46,9 @@ else:
 print(label + ' of ' + str(first_number) + ' ' + operation + ' ' + str(second_number) + ' equals ' + str(result))
 ```
 
-This code is merely *one possible solution*, because we didn't specify the name of variables, the order in which you should perform the gated checks, or other implementation details.
+This code is merely *one possible solution*, because we didn't specify the name of variables, the order in which you should perform the gated checks, and other implementation details.
 
-As long as your program can handle all the scenarios outlined in the challenge, you were successful!
+As long as your program can handle all the scenarios outlined in the challenge, you were successful.
 
 ```output
 First number? 4
