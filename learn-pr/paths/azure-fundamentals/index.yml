@@ -5,8 +5,8 @@ metadata:
   description: Follow this learning path for a broad and compelling introduction to the fundamentals of Azure cloud computing.
   brand: azure
   ms.date: 12/27/2018
-  author: markjulmar
-  ms.author: smmark
+  author: patridge
+  ms.author: adpatrid
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Azure fundamentals
@@ -17,10 +17,10 @@ summary: |
     - Learn cloud concepts such as High Availability, Scalability, Elasticity, Agility, Fault Tolerance, and Disaster Recovery
     - Understand the benefits of cloud computing in Azure and how it can save you time and money
     - Compare and contrast basic strategies for transitioning to the Azure cloud
-    - Explore the breadth of services available in Azure including compute, network, storage and security
+    - Explore the breadth of services available in Azure including compute, network, storage, and security
   
   Once you complete this learning path, you will have the necessary knowledge to take the [AZ900 Microsoft Azure Fundamentals Exam](https://www.microsoft.com/learning/exam-AZ-900.aspx).
-cardDescription: Interested in the cloud, but aren't quite sure what it can do for you? This path is the place to start.
+cardDescription: Interested in the cloud, but aren't sure what it can do for you? This path is the place to start.
 prerequisites: None
 iconUrl: /learn/achievements/azure-fundamentals.svg
 levels:

@@ -40,7 +40,7 @@ Take for instance this image:
 
 To process this image, you make a POST request to an API endpoint, like this one:
 
- https://westcentralus.api.cognitive.microsoft.com/face/v1.0/detect?returnFaceId=false&returnFaceLandmarks=false&returnFaceAttributes=emotion
+ `https://westcentralus.api.cognitive.microsoft.com/face/v1.0/detect?returnFaceId=false&returnFaceLandmarks=false&returnFaceAttributes=emotion`
 
 You provide the image in the body:
 

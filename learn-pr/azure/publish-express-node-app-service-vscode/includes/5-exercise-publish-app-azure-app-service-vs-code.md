@@ -1,4 +1,4 @@
-In VS Code, you can use the Azure App Service extension to create and deploy webapps to Azure.
+In Visual Studio Code, you can use the Azure App Service extension to create and deploy webapps to Azure.
 
 Suppose you have started to create the new website that will promote the new video game launch. The new site has been written in JavaScript and uses Node.js and Express.js. You've decided that the completed website will be hosted in Azure App Service. Now, you want to create that instance of App Service and deploy the first version of the website to it.
 

@@ -119,6 +119,6 @@ In this exercise, you'll add the `azure-webapp-maven-plugin` plugin to your proj
 
 1. Visit the deployed app by selecting the URL in the shell.
 
-    ![Example web app running on Azure App Service in a web browser](../media/3-app-service-response.png)
+    :::image type="content" source="../media/3-app-service-response.png" alt-text="Example web app running on Azure App Service in a web browser." loc-scope="other"::: <!-- no-loc -->
 
 In the next exercise, you'll update your web app and redeploy it to Azure App Service.
