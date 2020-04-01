@@ -1,5 +1,3 @@
-## Summary
-
 Congratulations! You have deployed to production a complete microservice architecture using Azure Spring Cloud.
 
 ## More information on Azure Spring Cloud
