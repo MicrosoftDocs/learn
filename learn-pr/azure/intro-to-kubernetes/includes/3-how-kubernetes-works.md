@@ -88,11 +88,9 @@ Kubelet is responsible for monitoring the nodes and making sure that the contain
 
 #### What is  the Container runtime
 
-The Container Runtime is the underlying software that runs containers on a Kubernetes cluster. The runtime is responsible for fetching, starting, and stopping container images. Kubernetes supports several container runtimes, including but not limited to docker, rkt, CRI-O, containerd, and frakti. Each container runtime has its strengths, and you provide links in the summary section if you want to learn more.
+The Container Runtime is the underlying software that runs containers on a Kubernetes cluster. The runtime is responsible for fetching, starting, and stopping container images. Kubernetes supports several container runtimes, including but not limited to docker, rkt, CRI-O, containerd, and frakti. The support for many container runtimes is based on the Container Runtime Interface (CRI). The CRI is a plugin design that provides a container runtime interface and allows Kubelet to communicate with the available container runtime.
 
-The support for many container runtimes is based on the Container Runtime Interface (CRI). The CRI is a plugin design that provides a container runtime interface and allows Kubelet to communicate with the available container runtime.
-
-The default container runtime in Azure Kubernetes Service is docker. However, you may also use kata-containers and containerd. Keep in mind that the Windows support for containerd is experimental.
+The default container runtime in Azure Kubernetes Service is Docker. However, you may also use kata-containers and containerd. Keep in mind that the Windows support for containerd is experimental.
 
 #### What is kube-proxy?
 
