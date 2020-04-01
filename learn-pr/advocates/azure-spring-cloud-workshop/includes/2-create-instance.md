@@ -1,4 +1,4 @@
-An Azure Spring Cloud cluster can be created either using [the Azure Portal](https://portal.azure.com/?WT.mc_id=azurespringcloud-mslearn-judubois) or [the Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&WT.mc_id=azurespringcloud-mslearn-judubois). In this first module, we will configure the necessary tools, and create our first cluster.
+An Azure Spring Cloud cluster can be created either using [the Azure portal](https://portal.azure.com/?WT.mc_id=azurespringcloud-mslearn-judubois) or [the Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&WT.mc_id=azurespringcloud-mslearn-judubois). In this first module, we will configure the necessary tools, and create our first cluster.
 
 ## Set up the Azure CLI
 
@@ -31,7 +31,7 @@ az extension add -n spring-cloud -y
 
 ## Create an Azure Spring Cloud instance
 
-In this section, we will create our Azure Spring Cloud instance using Azure CLI. It is possible to do exactly the same configuration using the Azure Portal.
+In this section, we will create our Azure Spring Cloud instance using Azure CLI. It is possible to do exactly the same configuration using the Azure portal.
 
 First, you will need to come up with a name for your Azure Spring Cloud instance.
 
