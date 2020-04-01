@@ -7,7 +7,7 @@ Download [this](https://github.com/MicrosoftDocs/mslearn-build-pwa-and-push-new-
 
 ## Custom Vision AI
 
-In a browser, navigate to [Custom Vision AI](https://https://www.customvision.ai) and login. Create a new project called 'Chocolate or Dalmatian'. In the popup, give your project a description and allocate a Resource so that your model can be trained in the cloud. Create a new one if needed.
+In a browser, navigate to [Custom Vision AI](https://www.customvision.ai) and login. Create a new project called 'Chocolate or Dalmatian'. In the popup, give your project a description and allocate a Resource so that your model can be trained in the cloud. Create a new one if needed.
 
 ![Create your project](../media/create-project.png)
 
