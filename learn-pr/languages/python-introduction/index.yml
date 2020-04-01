@@ -2,19 +2,19 @@
 uid: learn.languages.python-introduction
 metadata:
   title: What is Python?
-  description: A quick introduction into Python, programming languages, compilation, and the process of programming.
+  description: A quick introduction to Python, programming languages, compilation, and the process of programming.
   ms.date: 12/04/2019
   author: bobtabor-msft
   ms.author: rotabor
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: What is Python?
-summary: A quick introduction into Python, programming languages, compilation, and the process of programming.
+summary: A quick introduction to Python, programming languages, compilation, and the process of programming.
 abstract: |
-  In this module, you will:
-  - Learn what a programming language does, and why Python is so popular and is a great choice as your first programming language to learn.
-  - Learn why you must compile your code into computer-understandable format.
-  - Learn the process of programming and the software tools you must install.
+  In this module, you'll learn:
+  - What a programming language does, why Python is so popular, and why it's a great choice as your first programming language.
+  - Why you must compile your code into a format that computers understand.
+  - The process of programming and the software tools you must install.
 prerequisites: None
 ratingEnabled: true
 iconUrl: /learn/achievements/generic-badge.svg
