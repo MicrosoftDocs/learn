@@ -35,7 +35,7 @@ For Azure SQL Database, the Azure Hybrid Benefit works as follows:
 
 The following illustration shows the vCore-based options available in each service tier with Azure Hybrid Benefit for SQL Server licenses.
 
-:::image type="complex" source="../media/5-sql-tradein-value.png" alt-text="Diagram showing an example of maximizing existing SQL server license value using the Azure Hybrid Benefit.":::
+:::image type="complex" border="false" source="../media/5-sql-tradein-value.png" alt-text="Diagram showing an example of maximizing existing SQL server license value using the Azure Hybrid Benefit.":::
     An example of SQL Server license benefit. One Standard Edition license allows one general purpose vCore. One Enterprise Edition license allows one business critical vCore. And one Hyper virtualized Enterprise Edition license allows four general purpose vCores.
 :::image-end:::
 
