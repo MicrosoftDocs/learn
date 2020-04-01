@@ -70,7 +70,7 @@ First, rename the file `HelloWorld.vue` in your codebase's `/src/components` fol
 </style>
 ```
 
-Create a folder in `/src/assets` called 'images' to house the images you will use for inference. Extract [this zip file](../media/images.zip) into that folder. This file includes seventeen images, including a blank one.
+Create a folder in `/src/assets` called 'images' to house the images you will use for inference. Extract [this zip file](https://github.com/MicrosoftDocs/mslearn-build-pwa-and-push-new-models-ad-hoc/raw/master/media/training%20images.zip) into that folder. This file includes seventeen images, including a blank one.
 
 > These images are the ones Karen Zack used to create her dalmatians vs. ice cream collage
 

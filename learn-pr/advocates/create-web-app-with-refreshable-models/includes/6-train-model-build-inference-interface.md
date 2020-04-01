@@ -3,7 +3,7 @@ Now you can start training a custom machine learning model using images differen
 > [!NOTE]
 > You are only going to train on a few images, which in a production system is inadequate for the creation of a quality model. This training set is for demo purposes only.
 
-Download [this](../media/training-images.zip) compressed file of twelve training images and extract it to your local computer.
+Download [this](https://github.com/MicrosoftDocs/mslearn-build-pwa-and-push-new-models-ad-hoc/raw/master/media/training%20images.zip) compressed file of twelve training images and extract it to your local computer.
 
 ## Custom Vision AI
 
