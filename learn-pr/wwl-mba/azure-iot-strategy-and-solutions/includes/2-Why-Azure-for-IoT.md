@@ -30,4 +30,4 @@ An IoT application consists of the following subsystems:
 >[!TIP]
 >For details beyond those described above, see the Microsoft Azure IoT Reference Architecture in the "Summary and resources" unit at the end of the module.
 
-Let’s look at the capabilities that can help businesses meet their objectives along with examples of innovation across different industries.
+Let's look at the capabilities that can help businesses meet their objectives along with examples of innovation across different industries.

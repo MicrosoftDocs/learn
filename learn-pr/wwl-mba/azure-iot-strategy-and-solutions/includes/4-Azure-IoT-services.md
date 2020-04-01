@@ -1,4 +1,4 @@
-Now that you’ve learned about how Azure IoT has been applied to various industries, let’s learn more about when and how you can utilize these services. 
+Now that you've learned about how Azure IoT has been applied to various industries, let's learn more about when and how you can utilize these services. 
 
 ### Azure IoT Services 
 
@@ -13,7 +13,7 @@ Now that you’ve learned about how Azure IoT has been applied to various indust
 -----------------------
 
 >[!TIP]
->For more details on the full set of Azure IoT products and services, use the products tab on azure.com. See links in the “Summary and resources” unit at the end of the module.
+>For more details on the full set of Azure IoT products and services, use the products tab on azure.com. See links in the "Summary and resources" unit at the end of the module.
 
 |  |  |
 | ------------ | -------------|

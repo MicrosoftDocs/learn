@@ -2,10 +2,10 @@ With intelligently connected devices and systems, organizations can evolve their
 
 Now that you have reviewed this module, you should be able to:
 
-- Learn about the Microsoft vision for Azure IoT.
-- Understand what Azure IoT is, how it works, and how it’s built.
+- Understand the Microsoft vision for Azure IoT.
+- Understand what Azure IoT is, how it works, and how it's built.
 - Identify ways you can use Azure IoT.
-- Learn how Azure IoT enables digital transformation to address business challenges.
+- Understand how Azure IoT enables digital transformation to address business challenges.
 
 ### Key takeaways
 
@@ -14,9 +14,9 @@ Here are the three key takeaways from this module:
 :::row:::
 ![Icon of key](../media/key-takeaway.png)
   :::column span="1":::
-1.	Microsoft Azure IoT addresses common business challenges that can help accelerate business transformation by reducing cost and complexity while improving security at scale.
-2.	Insights uncovered from connected devices and backend systems can be transformed into powerful applications and services to achieve business success.
-3.	Azure IoT supports a wide range of business outcomes, including empowering employees, engaging customers, optimizing operations, and transforming products, across all industries.
+1. Microsoft Azure IoT addresses common business challenges that can help accelerate business transformation by reducing cost and complexity while improving security at scale.
+1. Insights uncovered from connected devices and backend systems can be transformed into powerful applications and services to achieve business success.
+1. Azure IoT supports a wide range of business outcomes, including empowering employees, engaging customers, optimizing operations, and transforming products, across all industries.
 :::column-end:::
 :::row-end:::
 
