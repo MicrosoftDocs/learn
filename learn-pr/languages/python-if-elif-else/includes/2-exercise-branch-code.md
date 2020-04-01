@@ -133,7 +133,7 @@ As before, the code block following the `else` statement is just as important. A
 
 The `elif`, or rather, *else if* statement is another optional statement that can be added below an `if` statement. Use the `elif` to test another related Boolean expression. If that Boolean expression evaluates to `True`, the indented code below it runs. All code blocks that belong to other `if`, `elif`, and `else` statements are ignored.
 
-Modify the code example to match the following output:
+Modify the code example to match the following code listing:
 
 ```python
 value = '8'
