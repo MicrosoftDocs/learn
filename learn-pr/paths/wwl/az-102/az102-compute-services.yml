@@ -5,8 +5,8 @@ metadata:
   description: This learning path teaches how to create and customize Windows and Linux virtual machines, connect them to virtual networks, and keep them updated.
   brand: azure
   ms.date: 10/24/2019
-  author: markjulmar
-  ms.author: smmark
+  author: adrianstevens
+  ms.author: adsteven
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: "AZ-102: Administer compute resources in Azure"

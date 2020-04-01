@@ -6,8 +6,8 @@ metadata:
   description: Create a brand-new Xamarin.Forms app using Xamarin.Essentials
   ms.date: 09/24/2018
   #TODO: Update with real author name.
-  author: markjulmar
-  ms.author: smmark
+  author: adrianstevens
+  ms.author: adsteven
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
