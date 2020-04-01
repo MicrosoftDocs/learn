@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn-wwl.azure-iot-strategy-and-solutions
 metadata:
-  description: This module provides an overview of Azure IoT and demonstrates Microsoft tools, services, and infrastructure that can help bring IoT to life for your organization and customers.
+  description: This module provides an overview of Azure IoT, and describes Microsoft tools, services, and infrastructure. This knowledge can help bring IoT to life for your organization and customers.
   ms.date: 04/10/2020
   author: msmkitris1
   ms.author: mkitris
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Microsoft Azure IoT strategy and solutions
-summary: This module provides an overview of Azure IoT and demonstrates Microsoft tools, services, and infrastructure that can help bring IoT to life for your organization and customers.
+summary: This module provides an overview of Azure IoT, and describes Microsoft tools, services, and infrastructure. This knowledge can help bring IoT to life for your organization and customers.
 abstract: |
   In this module, you will:
   - Learn about the Microsoft vision for Azure IoT.

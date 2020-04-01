@@ -21,7 +21,7 @@ quiz:
       explanation: "Azure IoT has a comprehensive set of solutions that help customers reduce costs, simplify complexity, and mitigate security concerns."
     - content: "Complexity, security, and flexibility"
       isCorrect: false
-      explanation: "While Azure IoT does offer flexibility across hybrid and cloud environments, this is not one of the common business challenges that customers face."
+      explanation: "While Azure IoT does offer flexibility across hybrid and cloud environments, this feature is not one of the common business challenges that customers face."
     - content: "Cost and security"
       isCorrect: false
       explanation: "Cost and security are certainly challenges, but there is a better answer."
@@ -29,26 +29,26 @@ quiz:
       isCorrect: false
       explanation: "Cost and complexity are certainly challenges, but there is a better answer."
 
-  - content: "Which of the following best describes how IoT works?"
+  - content: "Which of the following descriptions best describes how IoT works?"
     choices:
-    - content: "A microcontroller unit (MCU) embedded in a connected device, either alongside or in place of existing MCU(s), enhances security, productivity, and opportunity for product manufacturers."
+    - content: "A microcontroller unit (MCU) embedded in a connected device, either alongside or in place of existing MCUs. The embedded MCU enhances security, productivity, and opportunity for product manufacturers."
       isCorrect: false
-      explanation: "The Azure Sphere is a microcontroller unit embedded in a connected device, either alongside or in place of existing MCU(s), to enhance security, productivity, and opportunity for product manufacturers."
-    - content: "Remote monitoring helps maintain the health of your solution by tracking events such as device creation, device failures, and device connections."
+      explanation: "This description might apply well to Azure Sphere."
+    - content: "Remote monitoring helps maintain the health of your solution by tracking events such as device creation, failures, and connections."
       isCorrect: false
-      explanation: "While IoT Hub is a managed service that allows you to monitor the health of your solution, there is a better answer to this question."
-    - content: "Real-time data and alerts streamline logistics and decision-making."
+      explanation: "IoT Hub is a managed service that allows you to monitor the health of your solution. However, there is a better answer to this question."
+    - content: "Real-time data and alerts that streamline logistics and decision-making."
       isCorrect: false
-      explanation: "IoT enables real-time data and alerts to streamline logistics, but there is a better answer to this question."
+      explanation: "IoT does enable real-time data, and alerts, to streamline logistics. However, there is a better answer to this question."
     - content: "A set of things, connected to the Internet, collects insights that then enable people or machines to take actions based on data."
       isCorrect: true
-      explanation: "IoT is a network of Internet connected devices that communicate embedded sensor data to the cloud. Once data is collected, it becomes possible to analyze it to gain meaningful, actionable insights."
+      explanation: "IoT is a network of Internet connected devices. These devices communicate embedded sensor data to the cloud. Once data is collected, it becomes possible to analyze it, and gain meaningful, actionable insights."
   
-  - content: "Which IoT subsystem consumes data, integrates with business processes and places the data in storage?"
+  - content: "Which IoT subsystem consumes data, integrates with business processes, and places the data in storage?"
     choices:
     - content: "IoT devices"
       isCorrect: false
-      explanation: "IoT devices collect data and send it to the cloud."
+      explanation: "IoT devices collect data, and sends the data to the cloud."
     - content: "Cloud gateway service"
       isCorrect: false
       explanation: "A cloud gateway service, or hub, securely accepts data from devices and provides device management capabilities."
@@ -61,15 +61,15 @@ quiz:
 
   - content: "What are the most common IoT solutions used across industries?"
     choices:
-    - content: "IoT devices, stream processors, cloud gateways, storage, UI reporting and tools, business integration"
+    - content: "IoT devices, stream processors, cloud gateways, storage, UI reporting and tools, and business integration"
       isCorrect: false
-      explanation: "This lists IoT subsystems, not solutions."
+      explanation: "These components are IoT subsystems, not solutions."
     - content: "Remote monitoring, predictive maintenance, facilities management, connected manufacturing, and fleet management"
       isCorrect: true
-      explanation: "This lists the most common IoT solutions used across various industries today."
-    - content: "Empower employees, engage customers, optimize operations, transform products"
+      explanation: "These IoT solutions are currently the most commonly used."
+    - content: "Empower employees, engage customers, optimize operations, and transform products"
       isCorrect: false
-      explanation: "This lists the digital transformation pillars that may be enabled by IoT, but they are not IoT solutions."
-    - content: "Cloud migration, application modernization, microservices, serverless computing, DevOps"
+      explanation: "These goals are the digital transformation pillars that may be enabled by IoT, but they are not IoT solutions."
+    - content: "Cloud migration, application modernization, microservices, serverless computing, and DevOps"
       isCorrect: false
-      explanation: "These are components of application migration and modernization, not IoT solutions."
+      explanation: "These processes are components of application migration and modernization, not IoT solutions."
