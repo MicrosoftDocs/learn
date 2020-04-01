@@ -79,7 +79,7 @@ As the gateway is connected to the Spring Cloud Service Registry, it should have
 
 Test the `todo-service` microservice endpoint by doing: `curl https://XXXXXXXX-gateway.azuremicroservices.io/TODO-SERVICE/` (replacing XXXXXXXX with the name of your Azure Spring Cloud instance)
 
-As in the previous module, the result of this command should be the three items that were initially inserted in the Cosmos DB database:
+As in the previous module, the result of this command should be the three items that were initially inserted in the Azure Cosmos DB database:
 
 ```json
 [{"id":"1","description":"First item","done":true},{"id":"2","description":"Second item","done":true},{"id":"3","description":"Third item","done":false}]
