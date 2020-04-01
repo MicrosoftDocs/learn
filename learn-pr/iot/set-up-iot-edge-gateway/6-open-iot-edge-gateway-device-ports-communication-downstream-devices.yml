@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.iot.set-up-iot-edge-gateway.open-iot-edge-gateway-device-ports-communication-downstream-devices
 metadata:
-  title: Open IoT Edge Gateway Device Ports for Communication with Downstream Devices
-  description: Open IoT Edge Gateway Device Ports for Communication with Downstream Devices
+  title: Open IoT Edge Gateway device ports for communication with downstream devices
+  description: Open IoT Edge Gateway device ports for communication with downstream devices
   ms.date: 02/12/2020
   author: PeterTurcan
   ms.author: pdecarlo
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Open IoT Edge Gateway Device Ports for Communication with Downstream Devices
+title: Open IoT Edge Gateway device ports for communication with downstream devices
 # azureSandbox: true
 durationInMinutes: 10
 content: |

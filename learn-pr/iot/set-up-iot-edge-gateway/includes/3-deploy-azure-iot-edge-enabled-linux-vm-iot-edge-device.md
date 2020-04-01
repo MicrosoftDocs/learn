@@ -18,7 +18,7 @@ If necessary, log in to your Azure portal using your Azure account credentials.
 
 1. We will now fill in the available form fields:
 
-    [![Screenshot showing the iotedge-vm-deploy template](../media/iotedge-vm-deploy.png)](../media/iotedge-vm-deploy.png#lightbox)
+    [![Screenshot showing the iotedge-vm-deploy template](../media/iot-edge-vm-deploy.png)](../media/iot-edge-vm-deploy.png#lightbox)
 
     **Subscription**: Ensure "Concierge Subscription" is selected.
 
@@ -43,6 +43,6 @@ If necessary, log in to your Azure portal using your Azure account credentials.
     The **DNS Name** can be obtained from the **Overview** section of the newly deployed virtual machine within the Azure portal.
 
     > [!div class="mx-imgBorder"]
-    > [![Screenshot showing the dns name of the IoT Edge virtual machine](../media/iotedge-vm-dns-name.png)](../media/iotedge-vm-dns-name.png)
+    > [![Screenshot showing the dns name of the IoT Edge virtual machine](../media/iot-edge-vm-dns-name.png)](../media/iot-edge-vm-dns-name.png)
 
 Congratulations, that's the end of the unit! In the next unit, we will generate and configure IoT Edge Device CA Certificates to allow devices to securely connect to our IoT Edge Gateway.
