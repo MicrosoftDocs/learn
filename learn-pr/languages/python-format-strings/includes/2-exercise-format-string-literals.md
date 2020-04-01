@@ -1,6 +1,6 @@
-Python strings have many built-in features, including some that might not be obvious. Before we explore some advanced string formatting that use special functions, let's make use of everything strings can do by themselves.
+Python strings have many built-in features, including some that might not be obvious. Before we explore some advanced string formatting that uses special functions, let's make use of everything strings can do by themselves.
 
-### Step 1 - Create a new working folder and python code file
+### Step 1 - Create a new working folder and Python code file
 
 Using the techniques you learned in previous modules, create a new folder for your work in this module. For example, you might create a folder named `python-format-strings`.
 
@@ -22,11 +22,11 @@ When you run the code, you'll see the following output:
 ```output
 True
 ```
-You can use either single- or double-quotes. Here, we'll typically use single-quotes.
+You can use either single or double quotes. Here, we'll typically use single quotes.
 
-### Step 3 - Comment out the previous code, and add code that uses quotes inside of other quotes
+### Step 3 - Comment out the previous code, and add code that uses quotes inside other quotes
 
-If you need to use a single- or double-quotation mark in the string itself, you can use a double-quote inside of a set of single-quotes, and vice versa.
+If you need to use a single- or double-quotation mark in the string itself, you can use a double quote inside a set of single quotes, and vice versa.
 
 Comment out the code from the previous step, and add the following code to your code file:
 
@@ -36,7 +36,7 @@ fourth_string = "A double quoted literal string with a ' single quote"
 print(third_string)
 print(fourth_string)
 ```
-In this case, `third_string` points to a literal string that embeds a double-quote inside of a string defined with single-quotes. Conversely, `fourth_string` points to a literal string that embeds a single-quote inside of a string defined with double-quotes.
+In this case, `third_string` points to a literal string that embeds a double quote inside a string defined with single quotes. Conversely, `fourth_string` points to a literal string that embeds a single quote inside a string defined with double quotes.
 
 When you run the code, you should see the following output:
 
@@ -47,7 +47,7 @@ A double quoted literal string with a ' single quote
 
 ### Step 4 - Comment out the previous code, and add code that uses escape sequences
 
-But what if you need to embed a single-quote in a literal string, and you want to define the string by using single-quotes? Or, conversely, use a double-quote inside a literal string defined with double-quotes? In this case, you can use the `\` character to create an escape sequence.
+But what if you need to embed a single quote in a literal string, and you want to define the string by using single quotes? Or, conversely, use a double quote inside a literal string defined with double quotes? In this case, you can use the `\` character to create an escape sequence.
 
 There are several escape sequences available to Python strings. Comment out the code from the previous steps, and then add the code in the following code listing:
 
@@ -94,7 +94,7 @@ A literal string with a \n new line character printed raw
 
 ### Step 6 - Comment out the previous code, and add code that uses multi-line strings
 
-If you need to display a string across multiple lines, you can use the new line escape sequence we just learned about. Alternatively, you can create a multi-line string by defining the string with a set of three single-quotes, or a set of three double-quotes.
+If you need to display a string across multiple lines, you can use the new line escape sequence we just learned about. Alternatively, you can create a multi-line string by defining the string with a set of three single quotes, or a set of three double quotes.
 
 Comment out the code from the previous step, and add the code from the following code listing:
 
@@ -142,7 +142,7 @@ print(first, second, third, sep='-')
 print(first, second, third, sep='-', end='.')
 ```
 
-The first and second calls of the `print()` function concatenates strings together before displaying them to the console. The `print()` function is defined in such a way that we can send in a variable number of arguments (two, three, four, or more). Each of them will be concatenated together, each separated by an empty space, and displayed to the console.
+The first and second calls of the `print()` function concatenate strings together before displaying them to the console. The `print()` function is defined in such a way that we can send in a variable number of arguments (two, three, four, or more). Each of them will be concatenated together, each separated by an empty space, and displayed to the console.
 
 The third call to the `print()` function adds an optional named argument `sep`. This defines the character we want to use to separate the strings as they're concatenated together for display.
 

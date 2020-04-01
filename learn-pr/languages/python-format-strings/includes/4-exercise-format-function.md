@@ -30,7 +30,7 @@ print(instructions)
 
 In this code example, we define a format string that contains a series of replacement fields, as defined by a set of curly braces `{}`.
 
-In the first example, the replacement fields have no values inside of them. By using the member access operator, we call the `format()` function. We pass in the values we want to substitute in each replacement field, in the order in which they appear.
+In the first example, the replacement fields have no values inside them. By using the member access operator, we call the `format()` function. We pass in the values we want to substitute in each replacement field, in the order in which they appear.
 
 In the second example, we fill the replacement fields with a zero-based numeric value, which accesses the argument passed into the `format()` function. We intentionally mixed up the order to show that you can use the arguments in any position of your format string. You do this by changing the ordinal position in the replacement field.
 
@@ -74,7 +74,7 @@ Count to 10.  Multiply by 3.14.
 
 ### Step 4 - Comment out the previous code, and add code to evaluate simple expressions in the replacement field of an f-string
 
-You can perform just about any expression inside of a replacement field. In the following example, we'll perform calculations directly inside of the replacement field. You might not prefer to do this, because it's less readable than creating a temporary variable to perform the calculations. But it's helpful to know what's possible.
+You can perform just about any expression inside a replacement field. In the following example, we'll perform calculations directly inside the replacement field. You might not prefer to do this, because it's less readable than creating a temporary variable to perform the calculations. But it's helpful to know what's possible.
 
 Comment out the code from the previous step, and add the following code listing:
 
