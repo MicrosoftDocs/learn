@@ -16,15 +16,15 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: "True or false: you need to use the Azure CLI to create an Azure Spring Cloud cluster"
+  - content: "True or false: You need to use the Azure CLI to create an Azure Spring Cloud cluster."
     choices:
     - content: "True"
       isCorrect: false
-      explanation: "An Azure Spring Cloud cluster can be created either using the Azure CLI or the Azure Portal."
+      explanation: "An Azure Spring Cloud cluster can be created either using the Azure CLI or the Azure portal."
     - content: "False"
       isCorrect: true
-      explanation: "An Azure Spring Cloud cluster can also be created using the Azure Portal."
-  - content: "The name of an Azure Spring Cloud cluster should be unique across all of Azure"
+      explanation: "An Azure Spring Cloud cluster can also be created using the Azure portal."
+  - content: "True or false: The name of an Azure Spring Cloud cluster should be unique across all of Azure."
     choices:
     - content: "True"
       isCorrect: true
