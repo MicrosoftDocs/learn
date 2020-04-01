@@ -22,6 +22,7 @@ levels:
 - beginner
 roles:
 - solution-architect
+- administrator
 products:
 - azure
 - azure-files

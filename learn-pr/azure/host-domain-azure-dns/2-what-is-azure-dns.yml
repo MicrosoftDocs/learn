@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.host-domain-azure-dns.what-is-azure-dns
+title: What is Azure DNS?
+metadata:
+  title: What is Azure DNS?
+  description: What is Azure DNS?
+  ms.date: 03/20/2020
+  author: cwatson-cat
+  ms.author: cwatson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-what-is-azure-dns.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: What does Azure DNS allows you to do?
+    choices:
+    - content: Manage the security and access to your Website.
+      isCorrect: false
+      explanation: Azure DNS supports a robust security model. But Azure DNS primarily allows you to host your domain, and manage DNS zone records.
+    - content: Register new domain names, removing the need to use a domain registrar.
+      isCorrect: false
+      explanation: Azure DNS isn't a domain registrar. It hosts your domain, and allows you to manage DNS zone records.
+    - content: Manage and host your registered domain and associated records.
+      isCorrect: true
+      explanation: Azure DNS allows you to host your registered domains. You can control and configure the domain records, like A, CNAME, MX, and setup alias records.
+  - content: What security features does Azure DNS provide?
+    choices:
+    - content: RBAC, activity logs, and resource locking
+      isCorrect: true
+      explanation: Azure DNS is built on Azure Resource Manager that provides security across all resources in Azure DNS.
+    - content: RBAC, activity logs, and Azure threat detection
+      isCorrect: false
+      explanation: Azure DNS uses RBAC, and Activity logs, but threat detection is handled by Azure Security Manager.
+    - content: RBAC, activity logs, and Azure infrastructure security
+      isCorrect: false
+      explanation: Azure DNS uses RBAC, and activity logs. But infrastructure security is handled by Azure Security Manager.
+  - content: What type of DNS record should you create to map one or more IP addresses against a single domain?
+    choices:
+    - content: CNAME
+      isCorrect: false
+      explanation: The CNAME record maps multiple domain names or hosts to a single IP address.
+    - content: A or AAAA
+      isCorrect: true
+      explanation: The A or AAAA record maps an IP address to a domain. Multiple IP addresses are known as a record set.
+    - content: SOA
+      isCorrect: false
+      explanation: The SOA record is the start of authority for your domain. It's used by other DNS servers to resolve your domain.
