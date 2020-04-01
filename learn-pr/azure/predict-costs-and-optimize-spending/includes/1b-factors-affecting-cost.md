@@ -19,7 +19,7 @@ The Azure team develops and offers first-party products and services, while prod
    :::column-end:::
    :::column:::
 
-:::image type="icon" source="../media/2b-billing-period-graphic.png":::
+:::image type="icon" border="false" source="../media/2b-billing-period-graphic.png":::
 
    :::column-end:::
 :::row-end:::
@@ -40,7 +40,7 @@ Bandwidth refers to data moving in and out of Azure datacenters. Most of the tim
    :::column-end:::
    :::column:::
 
-:::image type="icon" source="../media/1b-azure-regions-globe.png":::
+:::image type="icon" border="false" source="../media/1b-azure-regions-globe.png":::
 
    :::column-end:::
 :::row-end:::
