@@ -3,7 +3,7 @@ In this module, we will build Spring Boot microservice that is cloud-enabled: it
 This microservice will use Spring Data MongoDB to read and write data from an [Azure Cosmos DB database](https://docs.microsoft.com/azure/cosmos-db/?WT.mc_id=azurespringcloud-mslearn-judubois) database:
 
 - That database will be automatically bound to our service by Azure Spring Cloud.
-- CosmosDB is a globally-distributed database, which supports the MongoDB protocol, so in this (simplified) case, we will use it as if it was a normal MongoDB database.
+- Azure Cosmos DB is a globally-distributed database, which supports the MongoDB protocol, so in this (simplified) case, we will use it as if it was a normal MongoDB database.
 
 ## Create the application on Azure Spring Cloud
 
@@ -13,11 +13,11 @@ Create a specific `todo-service` application in your Azure Spring Cloud instance
 az spring-cloud app create -n todo-service
 ```
 
-## Create a Cosmos DB database with the MongoDB API
+## Create an Azure Cosmos DB database with the MongoDB API
 
-Now create a Cosmos DB database using the MongoDB API:
+Now create an Azure Cosmos DB database using the MongoDB API:
 
-- Cosmos DB is a globally distributed NoSQL database, that supports the MongoDB API.
+- Azure Cosmos DB is a globally distributed NoSQL database, that supports the MongoDB API.
 - For this module, we will use it as a normal MongoDB server.
 
 ```bash
@@ -32,20 +32,20 @@ az cosmosdb mongodb database create \
 
 Once this operation completes, you can have a look at what was created in the resource group that you created for this workshop.
 
-## Bind the Cosmos DB database to the application
+## Bind the Azure Cosmos DB database to the application
 
-Azure Spring Cloud can automatically bind the Cosmos DB database we created to our microservice.
+Azure Spring Cloud can automatically bind the Azure Cosmos DB database we created to our microservice.
 
 1. Go to "Apps" in your Azure Spring Cloud instance.
-1. Select the `todo-service` application
-1. Go to `Service bindings`
-1. Click on `Create service binding``
-    1. Give your binding a name, for example `cosmosdb-todos`
-    1. Select the Cosmos DB account and database we created and select the `mongodb` API type
-    1. In the drop-down list, select the primary master key
-    1. Click on `Create` to create the database binding
+1. Select the `todo-service` application.
+1. Go to `Service bindings`.
+1. Click on `Create service binding`.
+    1. Give your binding a name, for example `cosmosdb-todos`.
+    1. Select the Azure Cosmos DB account and database we created and select the `mongodb` API type.
+    1. In the drop-down list, select the primary master key.
+    1. Click on `Create` to create the database binding.
 
-That's all you need to do to have your Spring Boot microservice automatically configured to access the Cosmos DB database that we set up.
+That's all you need to do to have your Spring Boot microservice automatically configured to access the Azure Cosmos DB database that we set up.
 
 ## Create a Spring Boot microservice
 
@@ -183,7 +183,7 @@ az spring-cloud app logs -n todo-service -f
 
 Now that the application is deployed, it's time to test it!
 
-1. In the Azure Portal, go to "Apps" in your Azure Spring Cloud instance.
+1. In the Azure portal, go to "Apps" in your Azure Spring Cloud instance.
     1. Verify that `todo-service` has a `Discovery status` which says `UP(1),DOWN(0)`. This shows that it is correctly registered in the Spring Cloud Service Registry.
     1. Select `todo-service` to have more information on the microservice.
 1. Copy/paste the "Test Endpoint" that is provided.
@@ -194,7 +194,7 @@ You can now use cURL to test the endpoint. Your test command should look like:
 curl https://primary:XXXXXXXXXXXXXXXXXXXXXXXXXXXXX@azure-spring-cloud-workshop.test.azuremicroservices.io/todo-service/default/
 ```
 
-And the result of this command should be the three items that were previously inserted in the Cosmos DB database:
+And the result of this command should be the three items that were previously inserted in the Azure Cosmos DB database:
 
 ```json
 [{"id":"1","description":"First item","done":true},{"id":"2","description":"Second item","done":true},{"id":"3","description":"Third item","done":false}]
