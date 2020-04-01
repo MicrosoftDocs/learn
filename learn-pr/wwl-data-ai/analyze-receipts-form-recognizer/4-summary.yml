@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.analyze-receipts-form-recognizer.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Review what you've learned"
+  ms.date: 04/24/2020
+  author: benjiang
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-summary.md)]
+quiz:
+  title: "Knowledge check"
+  questions:
+  - content: "You plan to use the Form Recognizer pre-built receipt model. Which kind of Azure resource should you create?"
+    choices:
+    - content: "Computer Vision"
+      isCorrect: false
+      explanation: "Incorrect: The Computer Vision resource type does not include the Form Recognizer service"
+    - content: "Form Recognizer"
+      isCorrect: true
+      explanation: "Correct: Only the Form Recognizer resource type provides access to the Form Recognizer service"
+    - content: "Cognitive Services"
+      isCorrect: false
+      explanation: "Incorrect: The Cognitive Services resource  does not include the Form Recognizer service"
+  - content: "You are using the Form Recognizer service to analyze receipts that you have scanned into JPG format images. What is the maximum file size of JPG file you can submit to the pre-built receipt model?"
+    choices:
+    - content: "2 MB"
+      isCorrect: false
+      explanation: "Incorrect: The maximum file size for the pre-built receipt model is 20 MB"
+    - content: "20 MB"
+      isCorrect: true
+      explanation: "Correct: The maximum file size for the pre-built receipt model is 20 MB"
+    - content: "200 MB"
+      isCorrect: false
+      explanation: "Incorrect: The maximum file size for the pre-built receipt model is 20 MB"
