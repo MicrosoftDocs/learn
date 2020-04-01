@@ -1,13 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.manage-vms-with-azure-cli-data.5-sizing-vms
-title: Sizing VMs properly
+title: Exercise - Sizing VMs properly
 metadata:
-  title: Sizing VMs properly
+  title: Exercise - Sizing VMs properly
   description: Learn how to size the VM to the assigned workload
   ms.date: 09/24/2018
-  #TODO: Update with real author name.
-  author: markjulmar
-  ms.author: smmark
+  author: cwatson-cat
+  ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX

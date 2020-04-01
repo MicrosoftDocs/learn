@@ -2,11 +2,9 @@ In this unit, using the example from the previous unit, you'll learn how to crea
 
 ## Create a Function App
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account with which you activated the sandbox.
 
-1. Select the **Create a resource** button found on the upper left-hand corner of the Azure portal.
+1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
 
 1. Select **Compute**, and then select **Function App**.
 
@@ -25,6 +23,7 @@ In this unit, using the example from the previous unit, you'll learn how to crea
     | **Storage** |  Globally unique name |  Name of the new storage account used by your function app. Storage account names must be between 3 and 24 characters in length and may contain numbers and lowercase letters only. This dialog populates the field with a unique name that is derived from the name you gave the app. However, feel free to use a different name or even an existing account. |
 
     ### Sandbox regions
+
     [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
 1. Select **Create** to provision and deploy the function app. 
@@ -32,10 +31,9 @@ In this unit, using the example from the previous unit, you'll learn how to crea
 
 ## Install the durable-functions npm package 
 
-Since we are creating JavaScript Durable Functions, we need to install the `durable-functions` npm package using the following instructions. 
+Since we are creating JavaScript Durable Functions, we need to install the `durable-functions` npm package using the following instructions.
 
-
-1. In the left-hand navigation pane of the Azure portal, select **All resources**, and then select your function app.
+1. On the Azure portal menu or from the **Home** page, select **All resources**, and then select your function app.
 
 1. Click **Platform Features**.
 
@@ -55,7 +53,7 @@ Since we are creating JavaScript Durable Functions, we need to install the `dura
     npm install durable-functions
     ```
 
-    This command installs the durable-functions package (and any required supporting packages). 
+    This command installs the durable-functions package (and any required supporting packages). This may take a few minutes to complete and will display some warnings, which can be ignored.
 
 1. Installing the durable-functions package and its dependencies takes a couple of minutes. Wait until all packages have finished installing. You can ignore any warnings that appear from the node package manager.
 

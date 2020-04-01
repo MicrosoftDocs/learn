@@ -1,4 +1,4 @@
-Your mobile app is now up and running and you've created the initial version of the . In this unit, you'll call the Azure Functions from the mobile app, passing in the user's location and the list of phone numbers the user wants to send SMS to.
+Your mobile app is now up and running and you've created the initial version of the Azure Functions. In this unit, you'll call the Azure Functions from the mobile app, passing in the user's location and the list of phone numbers the user wants to send SMS to.
 
 ## Call the Azure Functions from the mobile app
 

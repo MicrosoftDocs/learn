@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.azure-security.manage-users-and-groups-in-aad
+metadata:
+  title: Manage users and groups in Azure Active Directory
+  description: Manage users and groups in Azure Active Directory
+  ms.date: 09/30/2019
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Manage users and groups in Azure Active Directory
+summary: Manage users and groups in Azure Active Directory
+abstract: | 
+  In this module, you will:
+  - Learn the difference between Azure AD and Windows Server Active Directory
+  - Understand tenants, subscriptions, and users
+  - Create a new Azure Active Directory
+  - Add users and groups to an Azure AD
+  - Manage roles in an Azure AD
+  - Learn how to create a hybrid identity solution with Azure AD Connect
+prerequisites: |
+  - Basic understanding of identity and role-based access control
+  - Understand how to use the Azure portal
+iconUrl: /learn/achievements/manage-users-and-groups-in-aad.svg
+levels:
+- beginner
+roles:
+- security-engineer
+- administrator
+products:
+- azure
+- azure-active-directory
+units:
+- learn.azure-security.manage-users-and-groups-in-aad.introduction
+- learn.azure-security.manage-users-and-groups-in-aad.create-aad
+- learn.azure-security.manage-users-and-groups-in-aad.users
+- learn.azure-security.manage-users-and-groups-in-aad.groups
+- learn.azure-security.manage-users-and-groups-in-aad.manage-aad-roles
+- learn.azure-security.manage-users-and-groups-in-aad.azure-ad-connect
+- learn.azure-security.manage-users-and-groups-in-aad.summary
+badge:
+  uid: learn.azure-security.manage-users-and-groups-in-aad.badge

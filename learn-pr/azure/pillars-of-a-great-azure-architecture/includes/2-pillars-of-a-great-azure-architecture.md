@@ -2,9 +2,6 @@ The cloud has changed the way organizations solve their business challenges, and
 
 #### Design a great Azure Architecture
 
-<!-- TODO: revisit this video after Ignite -->
-<!-- > VIDEO: https://www.microsoft.com/videoplayer/embed/RE2yEv2 -->
-
 While there is no one-size-fits-all approach to designing an architecture, there are some universal concepts that will apply regardless of the architecture, technology, or cloud provider. While these are not all-inclusive, focusing on these concepts will help you build a reliable, secure, and flexible foundation for your application.
 
 A great architecture starts with a solid foundation built on four pillars:

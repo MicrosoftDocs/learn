@@ -8,7 +8,6 @@ metadata:
   ms.author: mkitris
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 8
 content: |
   [!include[](includes/3-Innovate-with-Azure-IoT-industry-solutions.md)]

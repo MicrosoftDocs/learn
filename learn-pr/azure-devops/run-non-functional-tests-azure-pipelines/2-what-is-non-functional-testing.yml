@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.azdo.run-non-functional-tests-azure-pipelines.2-what-is-non-functional-testing
+title: What is nonfunctional testing?
+metadata:
+  title: What is nonfunctional testing?
+  description: Define nonfunctional tests and identify some popular kinds of tests that you can run.
+  ms.date: 01/21/2020
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-what-is-non-functional-testing.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "You recently connected your web app to a database. Database records appear when the page loads. You want to verify that database calls don't cause the page to take more than one second to load. Which kind of nonfunctional testing might you use?"
+    choices:
+    - content: "Load testing."
+      isCorrect: true
+      explanation: "Load tests determine the performance of an application under realistic loads. If loading the page causes your load tests to fail, you might then test the performance of the database directly to help diagnose the bottleneck."
+    - content: "Stress testing."
+      isCorrect: false
+      explanation: "Stress testing relates more to testing an application under extremely heavy loads that go beyond what's specified for the application."
+    - content: "Compliance testing."
+      isCorrect: false
+      explanation: "Compliance testing relates more to ensuring that your application is compliant with some set of requirements, such as HIPAA."
+  - content: "Your website sells concert tickets for a local venue. The venue is hosting a multiple-day event that includes many popular performers. You're nervous that the site won't be able to handle the sudden surge in traffic. What kind of testing might help ease your mind?"
+    choices:
+    - content: "Load testing."
+      isCorrect: false
+      explanation: "Load testing relates more to the performance of an application under normal, realistic loads."
+    - content: "Stress testing."
+      isCorrect: true
+      explanation: "Stress testing places an application under extremely heavy loads that go beyond what's specified for the application. You can run stress tests over a period of time to measure how your website handles the spike in traffic."
+    - content: "Penetration testing."
+      isCorrect: false
+      explanation: "Penetration testing relates more to verifying whether your application or service exposes vulnerabilities that an attacker could exploit."
+  - content: "You suspect that your website exposes a vulnerability that would allow a hacker to access sensitive data. Which kind of nonfunctional testing might you run to discover this vulnerability?"
+    choices:
+    - content: "Penetration testing."
+      isCorrect: true
+      explanation: "Penetration testing, or pen testing, involves an authorized, simulated cyber attack to check for vulnerabilities that an attacker could exploit."
+    - content: "Compliance testing."
+      isCorrect: false
+      explanation: "Compliance testing relates more to ensuring that your application is compliant with some set of requirements, such as HIPAA."
+    - content: "Stress testing."
+      isCorrect: false
+      explanation: "Stress testing relates more to testing an application under extremely heavy loads that go beyond what's specified for the application."

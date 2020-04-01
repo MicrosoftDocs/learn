@@ -1,7 +1,5 @@
 You've developed two Azure functions locally. Let's now get your local functions running in the cloud so that you can call them from Slack.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 ## Create an Azure Function App on Azure
 
 You're going to start by creating the Azure Function App using VS Code, and the Azure Functions extension.

@@ -2,15 +2,13 @@ In this exercise, we'll create our social-media monitor app using the Azure port
 
 ![An illustration showing the triggers and actions in the social-media monitor Logic App. The first step is a Twitter trigger labeled "When a new tweet is posted". This trigger is highlighted to indicate that is the part of the app that will be completed in this exercise.](../media/exercise-add-trigger.png)
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 ## Locate the Azure Logic App resource
 
 The first thing we need to do is create an Azure Logic App. In order to do that, we need to locate the Azure Logic App resource type in the Azure portal.
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) with the same account you used to activate the sandbox.
 
-1. In the left navigation bar, select **Create a resource**.
+1. On the Azure portal menu or from the Home page, select **Create a resource**.
 
 1. In the search box, type **Logic app**.
 

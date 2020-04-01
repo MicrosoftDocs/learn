@@ -1,6 +1,6 @@
 Azure Container Registry enables you to store Docker images in the cloud, in an Azure storage account.
 
-In the example scenario, the team has decided to use Container Registry to host its Docker images. They can use Container Registry to create a Docker image registry in Azure, alongside their other Azure resources, and to securely store their images.
+In the example scenario, the team has decided to use Container Registry to host their Docker images. They can use Container Registry to create a Docker image registry in Azure, alongside their other Azure resources, and store their Docker images securely.
 
 In this unit, you'll learn more about Container Registry and the advantages it provides for storing Docker images.
 
@@ -32,3 +32,5 @@ In addition to storing and hosting images, you can also use Container Registry t
 ```bash
 az acr build --file Dockerfile --registry myregistry --image myimage .
 ```
+
+Additional information about Azure Container Registry as well as a link to supported CLI commands to manage private registries are available in the learn more section of this module.

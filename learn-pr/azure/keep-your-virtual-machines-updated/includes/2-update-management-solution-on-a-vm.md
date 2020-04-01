@@ -8,10 +8,10 @@ Here, we'll introduce the Update Management solution for Azure.
 
  There are several advantages to the Update Management solution:
   1. There are no agents or additional configuration within the virtual machine.
-  1. You can run updates without logging into the VM. You also dont have to create passwords to install the update.
+  1. You can run updates without logging into the VM. You also don't have to create passwords to install the update.
   1. The Update Management solution lists missing updates and provides information about failed deployments in an easy-to-read format.
 
-Update Management can be used to natively onboard machines in multiple subscriptions in the same tenant. To manage machines in a different tenant you must onboard them as non-Azure machines.
+Update Management can be used to natively onboard machines in multiple subscriptions in the same tenant. To manage machines in a different tenant, you must onboard them as non-Azure machines.
 
 ## Supported Operating Systems
 
@@ -22,7 +22,7 @@ Update Management solution supports Windows and Linux, specifically:
  - SUSE Linux Enterprise Server 11 (x86/x64) and 12 (x64)
  - Ubuntu 14.04 LTS, 16.04 LTS and 18.04 (x86/x64)
 
-In this module we'll work with Windows Server 2016 virtual machine deployed in Azure.
+In this module, we'll work with Windows Server 2016 virtual machine deployed in Azure.
  
 ## Components Used by Update Management
 
@@ -39,7 +39,7 @@ The following diagram shows a conceptual view of the behavior and data flow with
 
 ### Hybrid Worker Groups
 
- Windows computers that are directly connected to your Log Analytics workspace are automatically configured as a Hybrid Runbook Worker to support the runbooks that are included in this solution. Each Windows computer that's managed by the solution is listed in the Hybrid worker groups pane as a System hybrid worker group for the Automation account. The solutions use the naming convention Hostname FQDN_GUID.
+ Windows computers that are directly connected to your Log Analytics workspace are automatically configured as a Hybrid Runbook Worker to support the runbooks that are included in this solution. Each Windows computer that's managed by the solution shows up as a system hybrid worker group for the Automation account. The solutions use the naming convention Hostname FQDN_GUID.
 
 ## Operations Manager Management Packs
 

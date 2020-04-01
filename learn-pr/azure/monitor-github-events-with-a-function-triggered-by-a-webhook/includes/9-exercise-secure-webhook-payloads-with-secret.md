@@ -9,43 +9,43 @@ In this exercise, you'll protect your webhook payload with a secret, and learn h
 
 1. Select the function that you created.
 
-1. Click **Manage**.
-
-1. In the **Function Keys** section, click **Click to show** next to the **default** key. It should look like:
-
-1. Under **Actions**, click **Copy**.
-
-1. Select you function again, and in the **index.js** JavaScript file, add a reference to the **crypto-js** library at the start of the file, above the `module.exports` statement.
+1. In your function's **index.js** JavaScript file, add a reference to the **crypto-js** library at the start of the file, above the `module.exports` statement.
 
     ```JavaScript
     var Crypto = require('crypto');
     ```
 
-1. In the body of the function, after the `context.log` statement, add the following code. Replace *\<default key\> with the default key that you copied to the clipboard earlier:
+1. In the side menu, select **Manage**.
+
+1. In the **Function Keys** section, select **Click to show** next to the **default** key. 
+
+1. Under **Actions**, select **Copy** and save this key for use in the next step.
+
+1. Back in the body of your function, after the `context.log` statement, add the following code. Replace *\<default key\> with the default key that you copied to the clipboard earlier:
 
     ```JavaScript
-    var hmac = Crypto.createHmac("sha1", "ciCDNcluUthgW5DwCxVx8/FTR6QBSL2/K6svSDYkgvZcng/qbdp/5A==");
+    var hmac = Crypto.createHmac("sha1", "<default key>");
     var signature = hmac.update(JSON.stringify(req.body)).digest('hex');
     ```
 
     This code computes the hash of the key, using the same mechanism as GitHub.
 
-1. Add `sha1=` to the start of the key, so that it matches the format of `X-Hub-Signature` in the request header. Add the following code to your function.
+1. Add `sha1=` to the start of the key, so that it matches the format of `x-hub-signature` in the request header. Add the following code to your function.
 
     ```JavaScript
-    var signature =  "sha1=" + signature;
+    var shaSignature =  `sha1=${signature}`;
     ```
 
 1. Add the following code to retrieve the GitHub signature from the request header: 
 
     ```JavaScript
-    var gitHubSignature = req.headers['X-Hub-Signature'];
+    var gitHubSignature = req.headers['x-hub-signature'];
     ```
 
 1. Compare the two strings. If they match, process the request, as follows:
 
     ```JavaScript
-    if (!signature.localeCompare(gitHubSignature)) {
+    if (!shaSignature.localeCompare(gitHubSignature)) {
         // Existing code
         if (req.body.pages[0].title) {
             ...
@@ -59,7 +59,7 @@ In this exercise, you'll protect your webhook payload with a secret, and learn h
 1. If the strings don't match, return an HTTP 401 (Unauthorized) response, with a message telling the sender that the signatures don't match.
 
     ```JavaScript
-    if (signature.localeCompare(gitHubSignature) == 0)
+    if (!shaSignature.localeCompare(gitHubSignature))
     {
         ...
     }
@@ -72,7 +72,7 @@ In this exercise, you'll protect your webhook payload with a secret, and learn h
 
     ```
 
-1. Click **Save**.
+1. Select **Save**.
 
     The completed function should look like this:
 
@@ -84,10 +84,10 @@ In this exercise, you'll protect your webhook payload with a secret, and learn h
 
         var hmac = Crypto.createHmac("sha1", "<default key>");
         var signature = hmac.update(JSON.stringify(req.body)).digest('hex');
-        var signature =  "sha1=" + signature;
+        var shaSignature =  `sha1=${signature}`;
         var gitHubSignature = req.headers['x-hub-signature'];
 
-        if (!signature.localeCompare(gitHubSignature)) {
+        if (!shaSignature.localeCompare(gitHubSignature)) {
             if (req.body.pages[0].title) {
                 context.res = {
                     body: "Page is " + req.body.pages[0].title + ", Action is " + req.body.pages[0].action + ", Event Type is " + req.headers['x-github-event']
@@ -117,13 +117,13 @@ In this exercise, you'll protect your webhook payload with a secret, and learn h
 
 1. Select the **Settings** tab.
 
-1. Click **Webhooks** in the navigation panel.
+1. Select **Webhooks** in the navigation panel.
 
-1. Click the **Edit** button next to your webhook.
+1. Select the **Edit** button next to your webhook.
 
-1. In the **Secret** text box, enter the default key from your function.
+1. In the **Secret** text box, enter the default key from your function that you saved earlier in this exercise.
 
-1. At the bottom of the page, click **Update webhook**.
+1. At the bottom of the page, select **Update webhook**.
 
 ## Test the webhook and the Azure Function
 
@@ -131,11 +131,11 @@ In this exercise, you'll protect your webhook payload with a secret, and learn h
 
 1. Select the latest delivery entry by clicking the ellipsis (...) button.
 
-1. Click **Redeliver**, and then click **Yes, redeliver this payload**. 
+1. Click **Redeliver**, and then select **Yes, redeliver this payload**. 
 
     This action simulates you changing your Wiki page again.
 
-1. In the header, you'll see the `X-Hub-Signature`. You'll also see that the response code is 200, indicating that the request was processed successfully.
+1. In the header, you'll see the `x-hub-signature`. You'll also see that the response code is 200, indicating that the request was processed successfully.
 
     ```text
     Request URL: https://testwh123456.azurewebsites.net/api/HttpTrigger1?code=aUjXIpqdJ0ZHPQuB0SzFegxGJu0nAXmsQBnmkCpJ6RYxleRaoxJ8cQ%3D%3D
@@ -150,18 +150,18 @@ In this exercise, you'll protect your webhook payload with a secret, and learn h
 
 ## Test an invalid signature
 
-1. In the GitHub portal, on the webhooks page, scroll up to the **Secret** test box and then click **Edit**.
+1. In the GitHub portal, on the webhooks page, scroll up to the **Secret** test box and then select **Edit**.
 
-1. Enter a random string, scroll down, and then click **Update webhook**.
+1. Enter a random string, scroll down, and then select **Update webhook**.
 
     The key used by the webhook should no longer match that expected by the Azure function.
 
 1. Scroll down to the **Recent Deliveries** section.
 
-1. Select the latest delivery entry by clicking the ellipsis (...) button.
+1. Select the latest delivery entry by selecting the ellipsis (...) button.
 
-1. Click **Redeliver**, and then click **Yes, redeliver this payload**.
+1. Select **Redeliver**, and then **Yes, redeliver this payload**.
 
 1. This time, you'll see that the response code is 401, indicating that the request was not authorized.
 
-1. Click the **Response** tab, and verify that the message "Signatures don't match" appears as the body of the response.
+1. Select the **Response** tab, and verify that the message "Signatures don't match" appears as the body of the response.

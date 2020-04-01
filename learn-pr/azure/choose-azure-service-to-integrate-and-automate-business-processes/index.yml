@@ -1,20 +1,21 @@
 ### YamlMime:Module
 uid: learn.choose-azure-service-to-integrate-and-automate-business-processes
 metadata:
-  title: Choose the appropriate Azure service to integrate and automate business processes
+  title: Choose the best Azure service to automate your business processes
   description: In this module, we'll discuss how to choose the appropriate Azure service to integrate and automate business processes.
   ms.date: 04/10/2019
-  author: AndrewJByrne
-  ms.author: anbyrne
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Choose the appropriate Azure service to integrate and automate business processes
-summary: "Microsoft Azure provides several different ways to host and execute code or workflows without using Virtual Machines (VMs) including Azure Functions, Microsoft Flow, Azure Logic Apps, and Azure WebJobs. In this module, you will learn about these technologies and how to choose the right one for a given scenario."
+title: Choose the best Azure service to automate your business processes
+summary: "Microsoft Azure provides several different ways to host and execute code or workflows without using Virtual Machines (VMs) including Azure Functions, Microsoft Power Automate, Azure Logic Apps, and Azure WebJobs. In this module, you will learn about these technologies and how to choose the right one for a given scenario."
 abstract: | 
-  In this module, you will:
-  - Compare Azure services for integration and process automation scenarios
-  - Identify which Azure service is best for different process integration and automation needs
-prerequisites: None
+  Upon completion of this module, you'll be able to:
+  - Evaluate Azure services for integration and process automation scenarios
+prerequisites: |
+  - Familiarity with Azure
+  - Basic knowledge of REST and APIs
 iconUrl: /learn/achievements/choose-azure-service-to-integrate-and-automate-business-processes.svg
 levels:
 - beginner

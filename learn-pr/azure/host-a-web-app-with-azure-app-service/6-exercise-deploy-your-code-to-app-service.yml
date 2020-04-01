@@ -9,10 +9,7 @@ metadata:
   ms.author: nickwalk
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
-  zone_pivot_groups: dev-lang-csharp-java-node
-# TODO: Consider Azure Portal Interactivity
-# interactive: azure-portal
+  zone_pivot_groups: dev-lang-csharp-java-node-python
 interactive: bash
 azureSandbox: true
 durationInMinutes: 20

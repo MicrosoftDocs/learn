@@ -1,0 +1,56 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-computing.how-cloud-works.cmu-virtualization.2-virtual-machine-type
+title: Types of virtual machines
+metadata:
+  title: Types of virtual machines
+  description: Types of virtual machines
+  ms.date: 03/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-virtual-machine-type.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: "A web browser for Android and iOS platforms claims to be much more secure than its competitors. Its claim to fame is its ability to execute code natively on users' devices to deliver rich applications that run smoothly. This browser also delivers higher security because all web-based plugins (for example, JavaScript, Flash, Java applets) execute in a runtime virtualization engine built into the web browser. This web browser is an example of:"
+    choices:
+    - content: "A native system virtual machine"
+      isCorrect: false
+      explanation: "Incorrect. The browser is simply another program running on the OS. It is not a system virtual machine. At what level does this virtualization engine run in this application?"
+    - content: "A process virtual machine"
+      isCorrect: true
+      explanation: "Correct!"
+    - content: "A hosted system virtual machine"
+      isCorrect: false
+      explanation: "Incorrect. The browser is simply another program running on the OS. It is not a system virtual machine. At what level does this virtualization engine run in this application?"
+    - content: "A dual-mode system virtual machine"
+      isCorrect: false
+      explanation: "Incorrect. The browser is simply another program running on the OS. It is not a system virtual machine. At what level does this virtualization engine run in this application?"
+
+  - content: "Connectix Virtual Game Station (CVGS) is a program developed by Connectix that allows PCs (typically running a 32-bit x26 processor or PowerPC architecture) to run video games designed to run on Sony PlayStation (running on a 32-bit MIPS processor). CVGS is compatible with Microsoft Windows and Mac OS. What kind of application is CVGS?"
+    choices:
+    - content: "A process virtual machine with hardware-assisted virtualization"
+      isCorrect: false
+      explanation: "Incorrect. There is no hardware to assist a virtual machine. Do x86 and MIPS share the same ISA?"    
+    - content: "A process virtual machine with ISA emulation"
+      isCorrect: true
+      explanation: "Correct!"
+    - content: "A system virtual machine with hardware-assisted virtualization"
+      isCorrect: false
+      explanation: "Incorrect. CVGS is simply a program that runs on an OS. It allows, via emulation, the execution of video games compiled for an ISA different from that of the host machine. Do x86 and MIPS share the same ISA?"
+
+  - content: "VirtualBox is a popular hypervisor that allows users to run multiple OSs on a single machine. VirtualBox can run on top of Microsoft Windows, Linux, Mac OS, and Solaris. What kind of hypervisor is VirtualBox?"
+    choices:
+    - content: "A hosted system virtual machine"
+      isCorrect: true
+      explanation: "Correct!"
+    - content: "A native system virtual machine"
+      isCorrect: false
+      explanation: "Incorrect. VirtualBox can only run on top of a host OS. It cannot run on bare metal. Can VirtualBox run without an operating system?"    
+    - content: "A process virtual machine"
+      isCorrect: false
+      explanation: "Incorrect. VirtualBox provides a full system image that allows the execution of multiple processes. Can VirtualBox run without an operating system?"

@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.build-app-with-scale-sets.configure-virtual-machine-scale-set
+title: Configure a virtual machine scale set
+
+metadata:
+  title: Configure a virtual machine scale set
+  description: Configure a virtual machine scale set
+  ms.date: 09/02/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-configure-virtual-machine-scale-set.md)]

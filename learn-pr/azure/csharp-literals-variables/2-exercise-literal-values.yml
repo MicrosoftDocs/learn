@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.csharp-literals-variables.exercise-literal-values
+title: Exercise - Literal Values
+metadata:
+  title: Exercise - Literal Values
+  description: Create literal values of the most popular data types.
+  ms.date: 09/03/2019
+  author: bobtabor-msft
+  ms.author: rtabor
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+azureSandbox: false
+interactive: csharp
+content: |
+  [!include[](includes/2-exercise-literal-values.md)]

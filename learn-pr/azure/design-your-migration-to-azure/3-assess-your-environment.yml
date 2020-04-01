@@ -18,23 +18,23 @@ quiz:
   questions:
   - content: "Which of the following are valid reasons to use Azure Migrate?"
     choices:
-    - content: "Assess Azure readiness, Obtain VM size recommendations, Migrate with confidence"
+    - content: "Assess Azure readiness, obtain VM size recommendations, migrate with confidence"
       isCorrect: true
       explanation: "All three are valid reasons to use Azure Migrate."
-    - content: "Assess Azure readiness, Migrate with confidence, Migrate databases"
+    - content: "Assess Azure readiness, migrate with confidence, migrate databases"
       isCorrect: false
-      explanation: "Migrate databases isn't a valid feature of Azure Migrate, the Azure Database Migration service should be used for database migration."
-    - content: "Obtain VM size recommendations, Assess Azure readiness, Assess Physical Servers"
+      explanation: "Migrate databases isn't a feature of Azure Migrate. You use Azure Database Migration Service for database migration."
+    - content: "Obtain VM size recommendations, assess Azure readiness, replicate identities to Azure AD"
       isCorrect: false
-      explanation: "Azure Migrate cannot be used to assess physical servers, third-party partner tools are needed for this."
-  - content: "How are the steps ordered to complete an Azure readiness assessment?"
+      explanation: "Azure Migrate isn't used to replicate identities to Azure AD. You can use Azure AD Connect to replicate your Active Directory to Azure AD."
+  - content: "What is the order of steps to complete an Azure readiness assessment?"
     choices:
-    - content: "Install dependency agents on each On-premises VM, install the collector appliance on the vCenter Server, edit the default properties of an assessment, and then create the assessment."
+    - content: "Install the Dependency Agent on each on-premises VM, install the collector appliance on the vCenter Server, edit the default properties of an assessment, and then create the assessment."
       isCorrect: false
-      explanation: "Download and install the collector appliance first and then install the dependency agents. You can't change the properties of an assessment until one has been created."
-    - content: "Install dependency agents on each On-premises VM, install the collector appliance on the vCenter Server, create the assessment, and then edit the default properties of the assessment to your requirements."
+      explanation: "Download and install the collector appliance first, and then install the dependency agents. You can't change the properties of an assessment until one has been created."
+    - content: "Install dependency agents on each on-premises VM, install the collector appliance on the vCenter Server, create the assessment, and then edit the default properties of the assessment to your requirements."
       isCorrect: false
-      explanation: "Download and install the collector appliance first and then install the dependency agents."
-    - content: "Install the collector appliance on the vCenter Server, install dependency agents on each On-premises VM, create the assessment, and then edit the default properties of the assessment to your requirements."
+      explanation: "Download and install the collector appliance first, and then install the dependency agents."
+    - content: "Install the collector appliance on the vCenter Server, install dependency agents on each on-premises VM, create the assessment, and then edit the default properties of the assessment to your requirements."
       isCorrect: true
-      explanation: "This is the correct answer, remember that installing the dependency agents are optional. Also you don't need to edit the assessment if the defaults are sufficient."
+      explanation: "This is the correct answer. Remember that installing the dependency agents is optional. Also, you don't need to edit the assessment properties if the defaults are sufficient."

@@ -4,7 +4,7 @@ Now that you have your Data Science Virtual Machine up and running, you decide t
 
 Make sure you're still connected to your VM through ssh. If not, just run this command again to remote back into the virtual machine.
 
-1. Execute the following command in Azure Cloud Shell to sign into the VM.
+1. Execute the following command in [Azure Cloud Shell](https://shell.azure.com?azure-portal=true) to sign into the VM.
 
     ```azurecli 
     ssh <USERNAME>@<IP>
@@ -49,18 +49,18 @@ Make sure you're still connected to your VM through ssh. If not, just run this c
 
 Once the Jupyter notebook is running in the container, you'll  see a message similar to the following message. 
 
-> *Copy/paste this URL into your browser when you connect for the first time, to login with a token: http://(5b8783e7911d or 127.0.0.1):8888/?token={sometoken}*
+> Copy/paste this URL into your browser when you connect for the first time, to login with a token: `http://(5b8783e7911d` or `127.0.0.1:8888/?token={sometoken}`
 
-1. Replace the **http://(5b8783e7911d or 127.0.0.1)** part of the URL with the Fully Qualified Domain Name (FQDN) or the IP address of the VM and navigate to the address in a new tab of your browser.
+1. Replace the `http://(5b8783e7911d` or `127.0.0.1` part of the URL with the Fully Qualified Domain Name (FQDN) or the IP address of the VM and navigate to the address in a new tab of your browser.
 
     ![Screenshot showing Jupyter Notebooks dashboard. ](../media/notebook-in-docker.png)
 
     > [!TIP]
     > You can get the FQDN and IP address of your VM with the following command:
     > 
-    > `az vm show -d --name <HOSTNAME> --resource-group <rgn>[sandbox resource group name]</rgn> --output table`
+    > `az vm show -d --name <HOSTNAME> --resource-group learn-deep-dsvm --output table`
     >
-    > Remember to replace `<HOSTNAME>` with the name you gave your VM. 
+    > Remember to replace `<HOSTNAME>` with the name you gave your VM.
     
     This time we only see a single notebook. That's because we're in a container and only copied down this notebook. In the next exercise, we'll experiment with this notebook. 
     

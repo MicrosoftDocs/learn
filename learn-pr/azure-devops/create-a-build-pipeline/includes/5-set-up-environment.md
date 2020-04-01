@@ -1,17 +1,18 @@
-In this section, you'll make sure that your Azure DevOps organization is set up to complete the rest of this module.
+In this section, you'll make sure that your Microsoft Azure DevOps organization is set up to complete the rest of this module.
 
 The modules in this learning path form a progression in which you follow the Tailspin web team through its DevOps journey.
 
 This learning path also builds on the [Evolve your DevOps practices](/learn/paths/evolve-your-devops-practices?azure-portal=true) learning path. There, you set up your Azure DevOps organization and created a task backlog on Azure Boards by using the Basic process.
 
-## Run the template
+## Get the Azure DevOps project
 
-At this point, you have two options:
+Here, you make sure that your Azure DevOps organization is set up to complete the rest of this module. You do this by running a template that creates a project for you in Azure DevOps.
 
-1. Continue with the Azure DevOps project that you created in the **Evolve your DevOps practices** learning path.
-1. Run a template that sets up everything for you in your Azure DevOps organization.
+The modules in this learning path form a progression, where you follow the Tailspin web team through their DevOps journey. For learning purposes, each module has an associated Azure DevOps project.
 
-You can continue using your existing project if you completed the previous modules and have the Tailspin project set up in Azure DevOps. Run the template if you don't have the project set up or want to repeat this module in a fresh environment.
+### Run the template
+
+Run a template that sets up everything for you in your Azure DevOps organization.
 
 > [!div class="nextstepaction"]
 > [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?name=create-build-pipeline&azure-portal=true)
@@ -19,7 +20,7 @@ You can continue using your existing project if you completed the previous modul
 On the Azure DevOps Demo Generator site, perform these steps to run the template:
 
 1. Select **Sign In** and accept the usage terms.
-1. On the **Create New Project** page, select your Azure DevOps organization and enter a project name, like **Space Game - web - Pipeline**. Then select **Create Project**.
+1. On the **Create New Project** page, select your Azure DevOps organization and enter a project name, like *Space Game - web - Pipeline*. Then select **Create Project**.
 
     ![Creating a project through the Azure DevOps Demo Generator](../media/5-create-new-project.png)
 
@@ -28,6 +29,8 @@ On the Azure DevOps Demo Generator site, perform these steps to run the template
 
 > [!IMPORTANT]
 > The [Clean up your Azure DevOps environment](/learn/modules/create-a-build-pipeline/9-clean-up-environment?azure-portal=true) unit in this module provides important cleanup steps. Cleaning up helps ensure that you don't run out of free build minutes. Be sure to perform the cleanup steps even if you don't complete this module.
+
+[!include[](../../shared/includes/project-visibility.md)]
 
 ## Move the work item to Doing
 
@@ -38,6 +41,9 @@ Assigning work in this way gives you a checklist to work from. It gives others o
 Recall that the team settled on these seven top issues:
 
 ![Backlog of tasks](../../shared/media/build-all-tasks.png)
+
+> [!NOTE]
+> Within an Azure DevOps organization, work items are numbered sequentially. In your project, the number that's assigned to each work item might not match what you see here.
 
 You'll now move the first item, **Stabilize the build server** to the **Doing** column and assign yourself to the work item.
 

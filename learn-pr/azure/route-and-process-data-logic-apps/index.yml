@@ -2,10 +2,10 @@
 uid: learn.azure.route-and-process-data-logic-apps
 metadata:
   title: "Route and process data automatically using Logic Apps"
-  description: "Define a workflow using built-in triggers, actions, and conditional operators. Your workflow will run automatically when data is available, process the data in the cloud, record results in a database, and send email notifications."
+  description: Learn how to define a workflow to run your business with Logic apps using built-in triggers, actions, and conditional operators.
   ms.date: 5/10/2019
-  author: marktap
-  ms.author: matapar
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: "Route and process data automatically using Logic Apps"

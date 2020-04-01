@@ -2,9 +2,6 @@ Recall our original scenario - creating VMs to test our CRM software. When a new
 
 Let's try the commands you would use to create a VM.
 
-<!-- Activate the sandbox -->
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 ## Create a Linux VM with Azure PowerShell
 
 Since we are using the Azure sandbox, you won't have to create a Resource Group. Instead, use the Resource Group **<rgn>[sandbox resource group name]</rgn>**. In addition, be aware of the location restrictions.
@@ -21,7 +18,7 @@ Let's create a new Azure VM with PowerShell.
     - Use "UbuntuLTS" for the image - this is Ubuntu Linux.
     - Use the `Get-Credential` cmdlet and feed the results into the `Credential` parameter.
       > [!IMPORTANT]
-      > Please see the [Linux VM FAQ](https://docs.microsoft.com/azure/virtual-machines/linux/faq#what-are-the-username-requirements-when-creating-a-vm?azure-portal=true) for username and password limitations. Passwords must be 12 - 123 characters in length and meet 3 out of the following 4 complexity requirements:
+      > Please see the [Linux VM FAQ](https://docs.microsoft.com/azure/virtual-machines/linux/faq#what-are-the-username-requirements-when-creating-a-vm) for username and password limitations. Passwords must be 12 - 123 characters in length and meet 3 out of the following 4 complexity requirements:
       > - Have lower characters
       > - Have upper characters
       > - Have a digit

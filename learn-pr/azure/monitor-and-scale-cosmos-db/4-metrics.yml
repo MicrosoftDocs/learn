@@ -2,11 +2,11 @@
 uid: learn.monitor-azure-cosmos-db.4-metrics
 title: Exercise - Monitor and measure your Azure Cosmos DB database
 metadata:
-  title: Measure the efficiency of a NoSQL database
+  title: Exercise - Measure the efficiency of a NoSQL database
   description: By using the Azure portal, measure the efficiency of the database
   ms.date: 02/08/2019
-  author: natke
-  ms.author: nakersha
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX

@@ -6,7 +6,7 @@ Costs are resource-specific, so the usage that a meter tracks and the number of 
 > [!NOTE] 
 > Each meter tracks a *particular kind of usage*.  For example, a meter might track bandwidth usage (ingress or egress network traffic in bits-per-second), the number of operations, size (storage capacity in bytes), or similar items.
 
-The usage that a meter tracks correlates to a number of billable units. Those are charged to your account for each billing period, and the rate per billable unit depends on the resource type you are using.
+The usage that a meter tracks correlates to a number of billable units. Those units are charged to your account for each billing period, and the rate per billable unit depends on the resource type you are using.
 
 ### Services
 
@@ -26,7 +26,7 @@ The Azure team develops and offers first-party products and services, while prod
 ### Location
 Azure has datacenters all over the world. Usage costs vary between locations that offer particular Azure products, services, and resources based on popularity, demand, and local infrastructure costs.
 
-For example, you might want to build your Azure solution by provisioning resources in locations that offer the lowest prices, but this would require transferring data between locations if dependent resources and their users are located in different parts of the world. If there are meters tracking the volume of data that moves between the resources you provision, any potential savings you make from choosing the cheapest location could be offset by the additional cost of transferring data between those resources.
+For example, you might want to build your Azure solution by provisioning resources in locations that offer the lowest prices, but this approach would require transferring data between locations if dependent resources and their users are located in different parts of the world. If there are meters tracking the volume of data that moves between the resources you provision, any potential savings you make from choosing the cheapest location could be offset by the additional cost of transferring data between those resources.
 
 ### Azure billing zones
 Bandwidth refers to data moving in and out of Azure datacenters. Most of the time inbound data transfers (data going _into_ Azure datacenters) are free. For outbound data transfers (data going _out_ of Azure datacenters), the data transfer pricing is based on **Billing Zones**.
@@ -37,9 +37,9 @@ A **Zone** is a geographical grouping of Azure Regions for billing purposes. The
 
 | Zone | Areas |
 |------|---------|
-| Zone 1 | United States, Europe, Canada, UK, France | 
-| Zone 2 | Asia Pacific, Japan, Australia, India, Korea |
-| Zone 3 | Brazil |
+| Zone 1 | United States, US Government, Europe, Canada, UK, France, Switzerland | 
+| Zone 2 | East Asia, Southeast Asia, Japan, Australia, India, Korea |
+| Zone 3 | Brazil, South Africa, UAE |
 | DE Zone 1 | Germany |
 
 In most zones, the first outbound 5 GB per month is free. After that, you are billed a fixed price per GB.

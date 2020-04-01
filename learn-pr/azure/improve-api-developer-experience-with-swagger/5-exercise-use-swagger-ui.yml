@@ -5,11 +5,10 @@ metadata:
   title: Exercise - Customize and extend your Swagger documentation with XML comments and annotations
   description: Exercise - Customize and extend your Swagger documentation with XML comments and annotations
   ms.date: 05/06/2019
-  author: andrewjbyrne
-  ms.author: anbyrne
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
   zone_pivot_groups: 
 interactive: bash
 azureSandbox: true

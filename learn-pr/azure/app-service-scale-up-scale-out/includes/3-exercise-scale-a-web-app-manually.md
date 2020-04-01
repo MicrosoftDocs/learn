@@ -10,11 +10,13 @@ The exercise also runs a client app that simulates a number of users issuing POS
 
 ## Create an App Service plan and web app
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
+[!include[](../../../includes/azure-exercise-subscription-prerequisite.md)]
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) with your MSLearn account.
+1. Sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true).
 
-1. Select **Create a resource** > **Web** > **Web App**.
+1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
+
+1. Select **Web** > **Web App**.
 
 1. On the **Web App** page, enter the values in the following table.
 
@@ -24,8 +26,8 @@ The exercise also runs a client app that simulates a number of users issuing POS
     | Property  | Value  |
     |---|---|
     | App name | \<your-webapp-name\> |
-    | Subscription | Concierge Subscription  |
-    | Resource Group | Use the existing resource group <rgn>[Sandbox resource group]</rgn> |
+    | Subscription | Select the Azure subscription you'd like to use for this exercise  |
+    | Resource Group | Create a new resource group called **mslearn-scale** |
     | OS | Windows |
     | Publish | Code |
     | App Service plan/Location | *Leave default* |
@@ -34,7 +36,7 @@ The exercise also runs a client app that simulates a number of users issuing POS
 
 ## Build and deploy the web app
 
-1. In the Cloud Shell window on the right side of the screen, run this command to download the source code for the hotel reservation system:
+1. Open the Cloud Shell in the Azure portal. Run this command to download the source code for the hotel reservation system:
 
      ```bash
     git clone https://github.com/MicrosoftDocs/mslearn-hotel-reservation-system.git
@@ -64,12 +66,12 @@ The exercise also runs a client app that simulates a number of users issuing POS
      ```bash
     cd website
     zip website.zip *
-    az webapp deployment source config-zip --src website.zip --name <your-webapp-name> --resource-group <rgn>[Sandbox resource group]</rgn>
+    az webapp deployment source config-zip --src website.zip --name <your-webapp-name> --resource-group mslearn-scale
     ```
 
-1. Use your web browser to go to http://<your-webapp-name>.azurewebsites.net/api/reservations/1. You should see a JSON document that contains the details for reservation number 1:
+1. Use your web browser to go to `http://<your-webapp-name>.azurewebsites.net/api/reservations/1`. You should see a JSON document that contains the details for reservation number 1:
 
-    ![Screenshot of the running web app, showing the details for reservation number 1](../media/3-web-app.png)
+    ![Screenshot of the running web app, showing the details for reservation number 1 in JSON format.](../media/3-web-app.png)
 
 ## Monitor the performance of the web app before scaling out
 
@@ -85,7 +87,7 @@ The exercise also runs a client app that simulates a number of users issuing POS
     code App.config
     ```
 
-1. Uncomment the line that specifies the `ReservationsServiceURI` and replace the value with the URL of your web app. The file should like this example:
+1. Uncomment the line that specifies the `ReservationsServiceURI` and replace the value with the URL of your web app. The file should look like this example:
 
     ```text
     <?xml version="1.0" encoding="utf-8" ?>
@@ -115,9 +117,9 @@ The exercise also runs a client app that simulates a number of users issuing POS
     dotnet run
     ```
 
-   ![Screenshot of a running client app, showing the responses and error messages that occur](../media/3-web-client.png)
+   ![Screenshot of a running client app, showing the responses and error messages that occur.](../media/3-web-client.png)
 
-1. In the Azure portal, go to the blade for your web app (not the service plan). Under **Monitoring**, select **Metrics**.
+1. In the Azure portal, go to the pane for your web app (not the service plan). Under **Monitoring**, select **Metrics**.
 
 1. Add the following metrics to the chart, set the time range to **Last 30 minutes**, and then pin the chart to the current dashboard.
 
@@ -128,23 +130,23 @@ The exercise also runs a client app that simulates a number of users issuing POS
 
 1. Allow the system to run for five minutes to stabilize, and then note the CPU Time, the number of HTTP 4.xx errors, and the average response time. You should see a significant number of HTTP 4xx errors (these are HTTP 408 Timeout errors), and that the average response time is several seconds. You might see the occasional HTTP server error, depending on how the web server is coping with the burden.
 
-   ![Screenshot showing the performance metrics for the web app before scaling out](../media/3-web-app-chart-before-scaling-out.png)
+   ![Screenshot showing the performance metrics for the web app before scaling out.](../media/3-web-app-chart-before-scaling-out.png)
 
 1. Leave the client app running while you perform the next task.
 
 ## Scale out the web app and verify the performance improvement
 
-1. In the Azure portal, in the blade for your web app, under **Settings**, select **Scale out (App Service Plan)**.
+1. In the Azure portal, in the pane for your web app, under **Settings**, select **Scale out (App Service Plan)**.
 
 1. On the **Configure** page, set the **Instance count** to **5**, and then select **Save**.
 
-    ![Screenshot of the Configure page for the App Service plan, scaling out to five instances](../media/3-scale-out-to-5.png)
+    ![Screenshot of the Configure page for the App Service plan, scaling out to five instances.](../media/3-scale-out-to-5.png)
 
 1. Switch to the Cloud Shell that's running the client app. You should see fewer requests failing with errors, though you'll still see some that time out.
 
 1. Run the app for another five minutes. Then go to the chart that shows the metrics for the app on the dashboard in the Azure portal. You should see that the CPU time has increased dramatically because there's now five times more CPU power available. The average response time should have dropped, and the number of HTTP 4xx errors should also have decreased. The following chart shows a typical set of results. The point at which scale out occurred is noted.
 
-    ![Screenshot showing the performance metrics for the web app after scaling out to five instances](../media/3-web-app-chart-after-scaling-out.png)
+    ![Screenshot showing the performance metrics for the web app after scaling out to five instances.](../media/3-web-app-chart-after-scaling-out.png)
 
 1. If you want to experiment some more, try increasing the instance count for the App Service plan to 10. Ten is the maximum number of instances supported by the S1 tier. You should notice a further increase in CPU time, and a corresponding drop in response time and HTTP 4xx errors.
 

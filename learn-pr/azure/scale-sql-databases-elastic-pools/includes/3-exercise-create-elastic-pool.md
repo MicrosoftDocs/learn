@@ -1,7 +1,5 @@
 In this exercise, we'll create two Azure SQL databases to represent two fitness locations, and then create a SQL elastic pool to manage two databases.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 ## Create SQL servers
 
 We'll start by creating a SQL server for our fitness databases and we'll add databases for two locations. The steps use Vancouver and Paris but feel free to use other location names. 
@@ -50,7 +48,7 @@ We're ready to set up the resources for the SQL elastic pool. We'll switch to th
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you used to activate the sandbox.
 
-1. Click on **+ Create a resource** and search for **SQL Elastic database pool**.
+1. From the Azure portal menu or the **Home** page, select **Create a resource**. Search for and select **SQL Elastic database pool**.
 
 1. Select the **SQL Elastic database pool** result and then press the **Create** button on the next screen.
 

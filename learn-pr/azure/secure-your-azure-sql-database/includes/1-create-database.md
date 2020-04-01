@@ -6,22 +6,19 @@ Here you'll set up the resources you'll need for use throughout this module. Let
 
 Let's get things set up!
 
-<!-- Activate the sandbox -->
-[!INCLUDE [azure-sandbox-activate](../../../includes/azure-sandbox-activate.md)]
-
 ## Create an Azure SQL Database
 
-1. First, let's set up some variables. Replace values below that are shown in `<>` with values of your choice. Note that the `<password>` must have at least eight characters and contain characters from at least three of these categories: uppercase characters, lowercase characters, numbers, and non-alphanumeric characters. Save the login for use later.
+1. First, let's set up some variables. Replace values below that are shown in `[]` with values of your choice. Note that the `[password]` must have at least eight characters and contain characters from at least three of these categories: uppercase characters, lowercase characters, numbers, and non-alphanumeric characters. Save the login for use later.
 
     ```bash
     # Set an admin login and password for your database
-    export ADMINLOGIN='<ServerAdmin>'
-    export PASSWORD='<password>'
+    export ADMINLOGIN='[ServerAdmin]'
+    export PASSWORD='[password]'
     # Set the logical SQL server name. We'll add a random string as it needs to be globally unique.
     export SERVERNAME=server$RANDOM
     export RESOURCEGROUP=<rgn>[sandbox resource group name]</rgn>
     # Set the location, we'll pull the location from our resource group.
-    export LOCATION=$(az group show --name <rgn>[sandbox resource group name]</rgn> | jq -r '.location')
+    export LOCATION=$(az group show --name $RESOURCEGROUP | jq -r '.location')
     ```
 
 1. Run the following command to create a new Azure SQL Database logical server.
@@ -51,17 +48,17 @@ Let's get things set up!
     az sql db show-connection-string --client sqlcmd --name marketplaceDb --server $SERVERNAME | jq -r
     ```
 
-    Your output resembles this. Keep this handy, you'll need this command to connect to your database later in this module. Note the `<username>` and `<password>` placeholders in the command that you will want to replace with the `ADMINLOGIN` and `PASSWORD` credentials you specified in variables earlier.
+    Your output resembles this. Keep this handy, you'll need this command to connect to your database later in this module. Note the `[username]` and `[password]` placeholders in the command that you will want to replace with the `ADMINLOGIN` and `PASSWORD` credentials you specified in variables earlier.
 
     ```output
-    sqlcmd -S tcp:server12345.database.windows.net,1433 -d marketplaceDb -U <username> -P <password> -N -l 30
+    sqlcmd -S tcp:server12345.database.windows.net,1433 -d marketplaceDb -U [username] -P [password] -N -l 30
     ```
 
 ## Create and configure a Linux virtual machine
 
 Now let's create the Linux VM that we'll use through some examples.
 
-1. Run the following command to create the VM.
+1. Run the following command to create the VM; this might take several minutes to complete.
 
     ```azurecli
     az vm create \
@@ -72,11 +69,29 @@ Now let's create the Linux VM that we'll use through some examples.
       --generate-ssh-keys
     ```
 
-1. Once your VM is successfully created, connect to it via SSH.
+    When this command completes, you should see output that resembles the following example:
+
+    ```json
+    {
+      "fqdns": "",
+      "id": "/subscriptions/nnnnnnnn-nnnn-nnnn-nnnn-nnnnnnnnnnnn/resourceGroups/learn-nnnnnnnn-nnnn-nnnn-nnnn-nnnnnnnnnnnn/providers/Microsoft.Compute/virtualMachines/appServer",
+      "location": "westus",
+      "macAddress": "nn-nn-nn-nn-nn-nn",
+      "powerState": "VM running",
+      "privateIpAddress": "nn.nn.nn.nn",
+      "publicIpAddress": "nnn.nnn.nnn.nnn",
+      "resourceGroup": "learn-nnnnnnnn-nnnn-nnnn-nnnn-nnnnnnnnnnnn",
+      "zones": ""
+    }
+    ```
+
+1. Once your VM is successfully created, connect to its public IP address using SSH.
 
     ```azurecli
-    ssh <X.X.X.X>
+    ssh nnn.nnn.nnn.nnn
     ```
+
+    Where `nnn.nnn.nnn.nnn` is the value from the `publicIpAddress` output in the previous step.
 
     > [!NOTE]
     > Two things to note. First, we don't need a password because we generated an SSH key pair as part of the VM creation. Second, on the initial shell connection into the VM it will give you a prompt about the authenticity of the host. This occurs because we are connecting to an IP address instead of a host name. Answering "yes" will save the IP as a valid host for connection and allow the connection to proceed.

@@ -29,7 +29,7 @@ Update the **Orders** collection to index none of the properties.
     ```
 
     ```bash
-    export KEY=$(az cosmosdb keys list --resource-group <rgn>Sandbox Resource Group</rgn>  \
+    export KEY=$(az cosmosdb list-keys --resource-group <rgn>Sandbox Resource Group</rgn>  \
             --name $COSMOS_NAME --output tsv --query primaryMasterKey)
     ```
 

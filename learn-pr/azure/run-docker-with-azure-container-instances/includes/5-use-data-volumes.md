@@ -1,6 +1,6 @@
 By default, Azure Container Instances are stateless. If the container crashes or stops, all of its state is lost. To persist state beyond the lifetime of the container, you must mount a volume from an external store.
 
-Here, you'll mount an Azure file share to an Azure container instance to you can store data and access it later.
+Here, you'll mount an Azure file share to an Azure container instance so you can store data and access it later.
 
 ## Create an Azure file share
 
@@ -16,7 +16,7 @@ Here you'll create a storage account and a file share that you'll later make acc
 
     ```azurecli
     az storage account create \
-      --resource-group <rgn>[sandbox resource group name]</rgn> \
+      --resource-group learn-deploy-aci-rg \
       --name $STORAGE_ACCOUNT_NAME \
       --sku Standard_LRS \
       --location eastus
@@ -26,7 +26,7 @@ Here you'll create a storage account and a file share that you'll later make acc
 
     ```azurecli
     export AZURE_STORAGE_CONNECTION_STRING=$(az storage account show-connection-string \
-      --resource-group <rgn>[sandbox resource group name]</rgn> \
+      --resource-group learn-deploy-aci-rg \
       --name $STORAGE_ACCOUNT_NAME \
       --output tsv)
     ```
@@ -53,7 +53,7 @@ You already have the first two values. The storage account name is stored in the
 
     ```azurecli
     STORAGE_KEY=$(az storage account keys list \
-      --resource-group <rgn>[sandbox resource group name]</rgn> \
+      --resource-group learn-deploy-aci-rg \
       --account-name $STORAGE_ACCOUNT_NAME \
       --query "[0].value" \
       --output tsv)
@@ -75,7 +75,7 @@ To mount an Azure file share as a volume in a container, you specify the share a
 
     ```azurecli
     az container create \
-      --resource-group <rgn>[sandbox resource group name]</rgn> \
+      --resource-group learn-deploy-aci-rg \
       --name aci-demo-files \
       --image microsoft/aci-hellofiles \
       --location eastus \
@@ -91,7 +91,7 @@ To mount an Azure file share as a volume in a container, you specify the share a
 
     ```azurecli
     az container show \
-      --resource-group <rgn>[sandbox resource group name]</rgn> \
+      --resource-group learn-deploy-aci-rg \
       --name aci-demo-files \
       --query ipAddress.ip \
       --output tsv
@@ -99,7 +99,7 @@ To mount an Azure file share as a volume in a container, you specify the share a
 
 1. From a browser, navigate to your container's IP address. You see this.
 
-    ![Azure Container Instances file share demo](../media/5-files-ui.png)
+    :::image type="content" source="../media/5-files-ui.png" alt-text="Screenshot of the Azure Container Instances file share demo running in a browser.":::
 
 1. Enter some text into the form and click **Submit**. This action creates a file that contains the text you entered in the Azure file share.
 

@@ -21,7 +21,7 @@ In this unit, you will connect your bot to the QnA Maker knowledge base you buil
 
     ![Screenshot of the QnA Maker portal showing the Sample HTTP Request with the endpoint knowledge base ID and host name highlighted.](../media/6-copy-endpoint-info.png)
 
-1. Return to the Web App Bot in the Azure portal. Select **Application settings** in the menu on the left, and scroll down until you find application settings named "QnAKnowledgebaseId," "QnAAuthKey," and "QnAEndpointHostName."
+1. Return to the Web App Bot in the Azure portal. Select **Configuration** in the menu on the left, and scroll down until you find application settings named "QnAKnowledgebaseId," "QnAAuthKey," and "QnAEndpointHostName."
 
 1. Click **Show Values** to display editable fields.
 
@@ -29,11 +29,11 @@ In this unit, you will connect your bot to the QnA Maker knowledge base you buil
 
 1. Select **Save** at the top of the window to persist your changes.
 
-    ![Screenshot of the Azure portal showing the bot blade and Application Settings details with the Application Settings menu item and appropriate setting keys highlighting.](../media/6-enter-app-settings.png)
+    ![Screenshot of the bot pane and Application Settings details with the Application Settings menu item and appropriate setting keys highlighting.](../media/6-enter-app-settings.png)
 
 ## Setup the Bot service code
 
-1. Switch to **Visual Studio Code** and replace the contents of **app.js** with the code below. Then, save the file.
+1. Switch to **Visual Studio Code** and replace the contents of **index.js** with the code below. Then, save the file.
 
     ```JavaScript
     var restify = require('restify');
@@ -123,11 +123,11 @@ In this unit, you will connect your bot to the QnA Maker knowledge base you buil
 ## Publish the bot code
 
 1. Select the **Source Control** button in the activity bar in Visual Studio Code.
-1. Hover over the **app.js** file and select the __+__ button to stage that file's changes for the next commit.
+1. Hover over the **index.js** file and select the __+__ button to stage that file's changes for the next commit.
 1. Type "Connected to knowledge base" into the message box, and select the check mark to commit your changes.
 
     > [!Warning]
-    > If you see changes to a **package.json** file ensure you do NOT include them in your commit. Your commit should only include your changes to **app.js**.
+    > If you see changes to a **package.json** file ensure you do NOT include them in your commit. Your commit should only include your changes to **index.js**.
 
 1. Then, select the ellipsis (__...__) button and use the **Publish Branch** command to push these changes to the remote repository and the Azure Web App.
 

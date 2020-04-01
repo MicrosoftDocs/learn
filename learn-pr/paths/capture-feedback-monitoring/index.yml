@@ -1,0 +1,44 @@
+### YamlMime:LearningPath
+uid: learn.azdo.capture-feedback-monitoring
+metadata:
+  title: Capture feedback and monitoring data to continuously improve your software learning path
+  description: Learn how to configure release pipelines that continuously build, test, and deploy your applications.
+  brand: azure
+  ms.date: 12/20/2019
+  author: tpetchel
+  ms.author: thpetche
+  #ms.learn-contact: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Capture feedback and monitoring data to continuously improve your software
+summary: |
+  Azure DevOps enables you to build, test, and deploy any application to any cloud or on premises. Learn how to recommend and design system feedback mechanisms, implement a process for routing system feedback to development teams, and optimize feedback mechanisms.
+
+  In this learning path, you will:
+  - Learn different techniques for gathering customer feedback.
+  - Learn how Azure Monitor and Application Insights enable continuous monitoring on your applications and on your infrastructure.
+  - Tune monitoring to help ensure that alerts you receive are meaningful.
+
+  Take this learning path to help prepare for [Exam AZ-400: Microsoft Azure DevOps Solutions](https://www.microsoft.com/learning/exam-az-400.aspx).
+cardDescription: Learn how to recommend and design system feedback mechanisms, implement a process for routing system feedback to development teams, and optimize feedback mechanisms.
+prerequisites: |
+  - [Evolve your DevOps practices](/learn/paths/evolve-your-devops-practices)
+  - [Build applications with Azure DevOps](/learn/paths/build-applications-with-azure-devops)
+  - [Deploy applications with Azure DevOps](/learn/paths/deploy-applications-with-azure-devops)
+  - [Automate your deployments with Azure DevOps](/learn/paths/automate-deployments-azure-devops)
+iconUrl: /learn/achievements/azure-devops/capture-feedback-monitoring.svg
+levels:
+- intermediate
+roles:
+- devops-engineer
+- administrator
+- developer
+products:
+- azure
+- azure-devops
+modules:
+- learn.azdo.recommend-system-feedback-mechanisms
+- learn.azdo.route-system-feedback
+- learn.azdo.manage-site-reliability
+trophy:
+  uid: learn.azdo.capture-feedback-monitoring.trophy

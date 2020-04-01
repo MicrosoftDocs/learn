@@ -11,6 +11,19 @@ An in-memory database is used in this unit for simplicity. Choose a different da
 
 1. Run the following command:
 
+    ```dotnetcli
+    dotnet add package Microsoft.EntityFrameworkCore.InMemory
+    ```
+
+    The preceding command:
+
+    * Adds the specified NuGet package reference to the project.
+    * Downloads the specified NuGet package and its dependencies.
+
+    The `Microsoft.EntityFrameworkCore.InMemory` package is required to use EF Core in-memory databases.
+
+1. Run the following command:
+
     ```bash
     mkdir Models && touch $_/Product.cs
     ```
@@ -140,8 +153,8 @@ An in-memory database is used in this unit for simplicity. Choose a different da
 
     ```csharp
     using System;
-    using Microsoft.AspNetCore;
     using Microsoft.AspNetCore.Hosting;
+    using Microsoft.Extensions.Hosting;
     using Microsoft.Extensions.DependencyInjection;
     using Microsoft.Extensions.Logging;
     using ContosoPets.Api.Data;
@@ -152,16 +165,19 @@ An in-memory database is used in this unit for simplicity. Choose a different da
         {
             public static void Main(string[] args)
             {
-                var host = CreateWebHostBuilder(args).Build();
+                var host = CreateHostBuilder(args).Build();
                 SeedDatabase(host);
                 host.Run();
             }
 
-            public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
-                WebHost.CreateDefaultBuilder(args)
-                    .UseStartup<Startup>();
+            public static IHostBuilder CreateHostBuilder(string[] args) =>
+                Host.CreateDefaultBuilder(args)
+                    .ConfigureWebHostDefaults(webBuilder =>
+                    {
+                        webBuilder.UseStartup<Startup>();
+                    });
 
-            private static void SeedDatabase(IWebHost host)
+            private static void SeedDatabase(IHost host)
             {
                 var scopeFactory = host.Services.GetRequiredService<IServiceScopeFactory>();
 

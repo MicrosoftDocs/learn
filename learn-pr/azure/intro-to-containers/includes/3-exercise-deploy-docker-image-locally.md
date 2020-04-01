@@ -14,7 +14,7 @@ In this exercise, you'll pull an image from Docker Hub and run it. You'll examin
 2. Pull the **ASP.NET Sample** app image from the Docker Hub registry. This image contains a sample web app developed by Microsoft. It's based on the default ASP.NET template available in Visual Studio.
 
     ```bash
-    docker pull microsoft/dotnet-samples:aspnetapp
+    docker pull mcr.microsoft.com/dotnet/core/samples:aspnetapp
     ```
 
 3. Verify that the image has been stored locally.
@@ -23,17 +23,17 @@ In this exercise, you'll pull an image from Docker Hub and run it. You'll examin
     docker image list
     ```
 
-    You should see a repository named *microsoft/dotnet-samples* with a tag of *aspnetapp*.
+    You should see a repository named *mcr.microsoft.com/dotnet/core/samples* with a tag of *aspnetapp*.
 
 4. Start the sample app. Specify the *-d* flag to run it as a background, non-interactive app. Use the *-p* flag to map port 80 in the container that is created to port 8080 locally, to avoid conflicts with any web apps already running on your computer. The command will respond with a lengthy hexadecimal identifier for the instance.
 
     ```bash
-    docker run -d -p 8080:80 microsoft/dotnet-samples:aspnetapp
+    docker run -d -p 8080:80 mcr.microsoft.com/dotnet/core/samples:aspnetapp
     ```
 
-5. Open a web browser and go to the page for the sample web app at http://localhost:8080. The page looks like the following screenshot.
+5. Open a web browser and go to the page for the sample web app at `http://localhost:8080`. The page looks like the following screenshot.
 
-    ![Screenshot of the sample web app running in a browser](../media/3-sample-web-app.png)
+    :::image type="content" source="../media/3-sample-web-app.png" alt-text="Screenshot of the sample web app running in a browser." loc-scope="other"::: <!--no-loc -->
 
 ## Examine the container in the local Docker registry
 
@@ -47,7 +47,7 @@ In this exercise, you'll pull an image from Docker Hub and run it. You'll examin
 
    ```console
    CONTAINER ID        IMAGE                                COMMAND                  CREATED             STATUS              PORTS                  NAMES
-   f7b541794d4a        microsoft/dotnet-samples:aspnetapp   "dotnet aspnetapp.dll"   11 minutes ago      Up 11 minutes       0.0.0.0:8080->80/tcp   peaceful_tu
+   bffd59ae5c22        mcr.microsoft.com/dotnet/core/samples:aspnetapp   "dotnet aspnetapp.dll"   12 seconds ago      Up 11 seconds       0.0.0.0:8080->80/tcp   competent_hoover
    ```
 
    The **COMMAND** field shows the container started by running the command *dotnet aspnetapp.dll*. This command invokes the .NET Core runtime to start the code in the aspnetapp.dll (the code for the sample web app). The *PORTS* field indicates port 80 in the image was mapped to port 8080 on your computer. The *STATUS* field shows the application is still running. Make a note of the container's *NAME*.
@@ -89,7 +89,7 @@ In this exercise, you'll pull an image from Docker Hub and run it. You'll examin
 1. Remove the image from the registry.
 
     ```bash
-    docker image rm microsoft/dotnet-samples:aspnetapp
+    docker image rm mcr.microsoft.com/dotnet/core/samples:aspnetapp
     ```
 
 1. List the images again to verify that the image for the *microsoft/dotnet-samples* web app has disappeared.

@@ -1,7 +1,5 @@
 The first thing we need to do is create an empty Azure Cosmos DB database and container to work with. We want them to match the ones you created in the last module in this Learning Path: a database named **"Products"** and a container named **"Clothing"**. Use the following instructions and the Azure Cloud Shell on the right side of the screen to recreate the database.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 ## Create an Azure Cosmos DB account + database with the Azure CLI
 
 We'll start by creating an environment variable to hold the Azure Cosmos DB account name so you don't have to type the same value each time in the following commands. The database account name must be unique across all Azure Cosmos DB instances.
@@ -14,18 +12,19 @@ export NAME=cosmos$RANDOM
 
 ### Create the Azure Cosmos DB account
 
-We'll use the Azure CLI `cosmosdb create` command to create a new Azure Cosmos DB account. Recall from previous lessons that the command has three required parameters:
+We'll use the Azure CLI `cosmosdb create` command to create a new Azure Cosmos DB account. Recall from previous lessons that the command accepts the following parameters:
 
-| Parameter | Description |
-|-----------|-------------|
-| `--name`  | The unique name for the resource. |
-| `--kind`  | Kind of database, we'll use _GlobalDocumentDB_. |
-| `--resource-group` | The resource group that owns this database. Normally you would create one in your Azure subscription, but in this case, we're using the Azure Sandbox and a Resource Group named **<rgn>[sandbox Resource Group]</rgn>** has been created for you. |
+| Parameter | Required | Description |
+|---|---|---|
+| `--name`  | Yes | The unique name for the resource. |
+| `--kind`  | No | Kind of database, we'll use _GlobalDocumentDB_. |
+| `--resource-group` | Yes | The resource group that owns this database. Normally you would create one in your Azure subscription, but in this case, we're using the Azure Sandbox and a Resource Group named **<rgn>[sandbox Resource Group]</rgn>** has been created for you. |
 
 1. Paste the following command into the Cloud Shell on the right to create a new Azure Cosmos DB account with your specified name.
 
     ```azurecli
-    az cosmosdb create --name $NAME \
+    az cosmosdb create \
+        --name $NAME \
         --kind GlobalDocumentDB \
         --resource-group <rgn>[sandbox resource group name]</rgn>
     ```
@@ -62,8 +61,9 @@ We'll use the Azure CLI `cosmosdb create` command to create a new Azure Cosmos D
 1. Create the `Products` database in the account using the `cosmosdb database create` command. It takes a `db-name` parameter that we'll set to **"Products"** since this database will hold the inventory data.
 
     ```azurecli
-    az cosmosdb database create --name $NAME \
-        --db-name "Products" \
+    az cosmosdb sql database create \
+        --account-name $NAME \
+        --name "Products" \
         --resource-group <rgn>[sandbox resource group name]</rgn>
     ```
 
@@ -84,10 +84,10 @@ We'll use the Azure CLI `cosmosdb create` command to create a new Azure Cosmos D
 1. Finally, create the `Clothing` container with the `cosmosdb collection create` command in the Cloud Shell.
 
     ```azurecli
-    az cosmosdb collection create \
-        --name $NAME \
-        --db-name "Products" \
-        --collection-name "Clothing" \
+    az cosmosdb sql container create \
+        --account-name $NAME \
+        --database-name "Products" \
+        --name "Clothing" \
         --partition-key-path "/productId" \
         --throughput 1000 \
         --resource-group <rgn>[sandbox resource group name]</rgn>

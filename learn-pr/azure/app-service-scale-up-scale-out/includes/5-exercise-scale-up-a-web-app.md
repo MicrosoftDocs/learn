@@ -6,15 +6,15 @@ In this exercise, you'll scale up the hotel reservation system web app that you 
 
 ## Examine the current pricing tier for the web app
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
+[!include[](../../../includes/azure-exercise-subscription-prerequisite.md)]
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) with your MSLearn account.
+1. Sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true).
 
-1. Select **All resources**, and then go to your App Service plan.
+1. On the Azure portal menu or from the **Home** page, select **All resources**, and then go to your App Service plan.
 
 1. Under **Settings**, select **Scale up (App Service plan)**. You should see details of the pricing tier for your App Service plan. The pricing tier is S1, which provides 100 Azure Compute Units and 1.75 GB of memory running on an A-Series virtual machine.
 
-    ![Screenshot of the pricing tier details for the App Service plan](../media/5-pricing-tier.png)
+    ![Screenshot of the pricing tier details for the App Service plan S1.](../media/5-pricing-tier.png)
 
 ## Run the test client app
 
@@ -46,6 +46,6 @@ In this exercise, you'll scale up the hotel reservation system web app that you 
 
    The chart in this image shows an example of the performance metrics for the web app. The point at which the system was scaled up is noted.
 
-    ![Screenshot of the performance chart for the web app, with the point of scale-up noted](../media/5-scale-up.png)
+    ![Screenshot of the performance chart for the web app, with the point of scale-up noted.](../media/5-scale-up.png)
 
 1. Return to the Cloud Shell that's running the client app. Select Enter to stop the app.

@@ -4,11 +4,10 @@ metadata:
   title: Optimize your web applications by caching read-only data with Redis
   description: Use Redis caching in Azure to reduce the load on databases. Apply different caching architectures to support larger loads in distributed and high-volume environments.
   ms.date: 09/24/2018
-  author: kphillpotts
-  ms.author: kyphi
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #ms.learn-contact: kyphi
 title: Optimize your web applications by caching read-only data with Redis
 summary: Use Redis caching in Azure to reduce the load on databases. Apply different caching architectures to support larger loads in distributed and high-volume environments.
 abstract:  | 
@@ -20,7 +19,6 @@ abstract:  |
 prerequisites: |
   - Experience with app development
   - Experience using data in apps
-  - Basic .NET knowledge
 iconUrl: /learn/achievements/optimize-web-apps-with-redis.svg
 levels:
 - beginner
@@ -33,7 +31,6 @@ products:
 - aspnet-core
 - dotnet-core
 units:
-#TODO: None of these units have a knowledge task or task validation component (need to add somewhere so users don't get marked complete solely by viewing the pages).
 - learn.optimize-web-app-with-redis.1-introduction
 - learn.optimize-web-app-with-redis.2-decide-if-you-want-use-redis-in-azure
 - learn.optimize-web-app-with-redis.3-configure-redis-cache

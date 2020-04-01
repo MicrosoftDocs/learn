@@ -11,7 +11,5 @@ metadata:
   ROBOTS: NOINDEX
 title: Exercise - Configure backend pools for encryption
 durationInMinutes: 30
-interactive: bash
-azureSandbox: true
 content: |
   [!include[](includes/4-exercise-configure-backend-pools-for-encryption.md)]

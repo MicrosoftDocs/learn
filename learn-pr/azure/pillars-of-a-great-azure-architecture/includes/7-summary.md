@@ -11,4 +11,4 @@ Focusing on these pillars when designing your architecture will ensure you're la
 
 ## Learn more
 
-For more information on architecting solutions on Azure, visit the [Azure Application Architecture Guide](https://docs.microsoft.com/azure/architecture/guide/) on the Azure Architecture Center.
+For more information on architecting solutions on Azure, visit the [Pillars of software quality](https://docs.microsoft.com/azure/architecture/guide/pillars) guide on the Azure Architecture Center.

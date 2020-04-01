@@ -5,8 +5,8 @@ metadata:
   title: Summary
   description: Summary
   ms.date: 09/24/2018
-  author: markjulmar
-  ms.author: smmark
+  author: cwatson-cat
+  ms.author: scwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
@@ -21,20 +21,20 @@ quiz:
     choices:
     - content: XML
       isCorrect: false
-      explanation: "Azure dashboards are stored as JSON files which allows them to be uploaded and downloaded to share with other members of the Azure directory."
+      explanation: "Azure dashboards are stored as JSON files, which allow them to be uploaded and downloaded to share with other members of the Azure directory."
     - content: JSON
       isCorrect: true
-      explanation: "Azure dashboards are stored as JSON files which allows them to be uploaded and downloaded to share with other members of the Azure directory."
+      explanation: "Azure dashboards are stored as JSON files, which allow them to be uploaded and downloaded to share with other members of the Azure directory."
     - content: PNG
       isCorrect: false
-      explanation: "Azure dashboards are stored as JSON files which allows them to be uploaded and downloaded to share with other members of the Azure directory."
+      explanation: "Azure dashboards are stored as JSON files, which allow them to be uploaded and downloaded to share with other members of the Azure directory."
 
-  - content: "Azure Advisor provides advice on: (Select one)"
+  - content: "Azure Advisor provides advice on which of these topics:"
     choices:
     - content: "Creating an Azure account"
       isCorrect: false
       explanation: "You must already have an account to use Azure Advisor."
-    - content: "Best practices and Security for your services"
+    - content: "Best practices and security for your services"
       isCorrect: true
       explanation: "Azure Advisor is a free service built into Azure that provides recommendations on high availability, security, performance, and cost."
     - content: "Using the Azure portal effectively"

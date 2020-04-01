@@ -1,16 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.route-and-process-data-logic-apps.create-social-media-tracker
-title: "Exercise - Create the social-media tracker Logic App"
+title: Exercise - Create the social-media tracker Logic App
 
 metadata:
-  title: "Exercise - Create the social-media tracker Logic App"
-  description: "Exercise - Create the social-media tracker Logic App"
+  title: Exercise - Create the social-media tracker Logic App
+  description: Exercise - Create the social-media tracker Logic App
   ms.date: 5/10/2019
-  author: marktap
-  ms.author: matapar
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
+
 azureSandbox: true
 durationInMinutes: 5
 content: |

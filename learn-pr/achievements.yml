@@ -15,3 +15,48 @@ achievements:
   title: Scale and size Virtual Machines in Azure
   summary: Scale and size Virtual Machines in Azure
   iconUrl: /learn/achievements/scale-and-size-virtual-machines.svg
+- uid: learn.authenticate-browser-based-apps-with-azure-app-services.badge
+  type: badge
+  title: Authenticate browser-based apps with Azure App Services
+  summary: Authenticate browser-based apps with Azure App Services
+  iconUrl: /learn/achievements/authenticate-browser-based-apps-with-azure-app-services.svg
+- uid: learn.azure-intro-mobile-app-service.badge
+  type: badge
+  title: "Introduction to Mobile Apps in Azure App Service"
+  summary: "Introduction to Mobile Apps in Azure App Service"
+  iconUrl: /learn/achievements/azure-intro-mobile-app-service.svg
+- uid: learn-wwl.learn-business-value-of-azure.trophy
+  type: trophy
+  title: Learn the business value of Microsoft Azure
+  summary: Learn the business value of Microsoft Azure
+  iconUrl: /learn/achievements/azure-sfa-generalist-path.svg
+- uid: learn-wwl.microsoft-cloud-adoption-framework-for-azure.badge
+  type: badge
+  title: Microsoft Cloud Adoption Framework for Azure
+  summary: Microsoft Cloud Adoption Framework for Azure
+  iconUrl: /learn/achievements/microsoft-cloud-adoption-framework-for-azure.svg
+- uid: learn-wwl.cloud-operating-model.badge
+  type: badge
+  title: Overview of the Microsoft Cloud Operating Model
+  summary: Overview of the Microsoft Cloud Operating Model
+  iconUrl: /learn/achievements/cloud-operating-model.svg
+- uid: learn-wwl.welcome-to-the-azure-generalist.badge
+  type: badge
+  title: Welcome to Microsoft Azure
+  summary: Welcome to Microsoft Azure
+  iconUrl: /learn/achievements/welcome-azure-generalist.svg
+- uid: learn-wwl.introduction-to-azure-areas-and-solutions.badge
+  type: badge
+  title: Introduction to Azure solutions
+  summary: Introduction to Azure solutions
+  iconUrl: /learn/achievements/intro-to-azure-areas-and-solutions.svg
+- uid: learn-xamarin.university-veteran.badge
+  type: badge
+  title: Xamarin University Veteran
+  summary: Prior student of Xamarin University
+  iconUrl: /learn/achievements/xamarin/xamarin-university-veteran-badge.svg
+- uid: learn.secure-access-azure-ad-multi-factor-authentication.badge
+  type: badge
+  title: Secure your Azure resources with Conditional Access
+  summary: Secure your Azure resources with Conditional Access
+  iconUrl: /learn/achievements/secure-azure-resources-with-conditional-access.svg

@@ -16,28 +16,28 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "What service can be used to migrate large quantities of data to Azure?"
+  - content: "What service can you use to migrate large quantities of data to Azure?"
     choices:
     - content: "Azure TCO Calculator"
       isCorrect: false
       explanation: "Azure TCO Calculator is used to estimate costs on Azure."
     - content: "Azure Data Box"
       isCorrect: true
-      explanation: "Correct, Azure Data Box can be used to migrate large amounts of data to Azure."
+      explanation: "Correct. Azure Data Box can be used to migrate large amounts of data to Azure."
     - content: "Azure Advisor"
       isCorrect: false
-      explanation: "Azure Advisor is used to improve your environment with recommended best practices."
+      explanation: "Azure Advisor recommends best practices to improve your environment."
     - content: "Azure Sentinel"
       isCorrect: false
-      explanation: "Azure Sentinel is a SEIM service on Azure."
-  - content: "In your scenario which two tools will your company be using in the migrate phase?"
+      explanation: "Azure Sentinel is a SIEM service on Azure."
+  - content: "In your scenario, which two tools will your company use in the Migrate stage?"
     choices:  
     - content: "Azure Site Recovery, Azure Database Migration Service"
       isCorrect: true
-      explanation: "This is correct, as you have VMware workloads and relational databases to migrate." 
+      explanation: "This is the correct answer, because you have VMware workloads and relational databases to migrate." 
     - content: "Azure Migrate, Azure Data Box"
       isCorrect: false
-      explanation: "This is incorrect, you will use Azure Migrate but this is in the assess phase, and Azure Data Box isn't required in your scenario."
+      explanation: "Incorrect. You'll use Azure Migrate in the Assess stage, not the Migrate stage, and Azure Data Box isn't required in your scenario."
     - content: "Data Migration Tool, Azure Backup"
       isCorrect: false
-      explanation: "This is incorrect, the Data Migration Tool is used to migrate data into Azure Cosmos DB, and Azure Backup is used in the monitor phase."
+      explanation: "Incorrect. The Data Migration Tool is used to migrate data into Azure Cosmos DB, and Azure Backup is used in the Monitor stage."

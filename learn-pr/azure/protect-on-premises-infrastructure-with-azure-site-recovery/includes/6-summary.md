@@ -1,11 +1,11 @@
-In this module, you've learned about Azure Site Recovery and how it integrates with your company’s BCDR plan. With the plan in place, you've seen how to run a disaster recovery drill on a single VM instance, from a VMware on-premises VM to Azure. 
+In this module, you learned about Azure Site Recovery and how it integrates with your company’s business continuity and disaster recovery plan. With the plan in place, you saw how to run a disaster recovery drill on a single VM instance, from a VMware on-premises VM to Azure. 
 
-Then you saw how to take recovery time objectives and recovery point objectives in to account. Finally you've learned about using Site Recovery to test failovers. Failing over and failing back the environment to the secondary location and also securing access to Site Recovery using Role-Based Access Control (RBAC).
+Then you saw how to take recovery time objectives and recovery point objectives into account. Finally, you learned about how to use Site Recovery to test failovers. You learned how to fail over and fail back the environment to the secondary location and also how to secure access to Site Recovery by using role-based access control.
 
 
 ## Learn more
 
-To learn more about Azure Site Recovery, please visit the following articles.
+To learn more about Azure Site Recovery, see the following articles:
 
 - [Azure Site Recovery overview](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview)
 - [VMware disaster recovery overview](https://docs.microsoft.com/azure/site-recovery/vmware-azure-about-disaster-recovery)
