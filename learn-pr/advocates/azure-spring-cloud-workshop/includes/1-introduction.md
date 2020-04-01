@@ -16,6 +16,6 @@ In this module, you will:
 
 ## Prerequisites
 
- 1. [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&WT.mc_id=azurespringcloud-mslearn-judubois).
- 1. [Java 8](https://www.azul.com/downloads/zulu-community/?architecture=x86-64-bit&package=jdk) and an IDE.
- 1. [cURL](https://curl.haxx.se/) or a similar HTTP utility.
+ - [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&WT.mc_id=azurespringcloud-mslearn-judubois)
+ - [Java 8](https://www.azul.com/downloads/zulu-community/?architecture=x86-64-bit&package=jdk) and an IDE
+ - [cURL](https://curl.haxx.se/) or a similar HTTP utility
