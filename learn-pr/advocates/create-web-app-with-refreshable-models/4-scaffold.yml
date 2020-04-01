@@ -1,15 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.advocates.create-web-app-with-refreshable-models.4-scaffold-web-app
+uid: learn.advocates.create-web-app-with-refreshable-models.4-scaffold
 metadata:
-  title: Exercise - Scaffold a Web App
+  title: Exercise - Scaffold a web app
   description: Exercise - Scaffold a web app and create an interface for inference
   author: jlooper
   ms.date: 02/10/2020
   ms.author: jelooper
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 title: Exercise - Scaffold a web app and create an interface for inference
 durationInMinutes: 10
 content: |
-  [!include[](includes/4-scaffold-web-app.md)]
+  [!include[](includes/4-scaffold.md)]

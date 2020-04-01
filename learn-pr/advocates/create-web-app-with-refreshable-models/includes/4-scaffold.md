@@ -32,7 +32,7 @@ You should see a basic Vue.js app scaffolded in your browser locally.
 
 ![Your app](../media/web-app.png)
 
-In the Developer Tools, click 'Audits' and review the Lighthouse area of your app. You can test how your PWA performs using this tool, but you won\'t do this until later when you deploy the app to azurewebsites.net.
+In the Developer Tools, click 'Audits' and review the Lighthouse area of your app. You can test how your Progressive Web App performs using this tool, but you won\'t do this until later when you deploy the app to azurewebsites.net.
 
 ## Build the inference interface
 

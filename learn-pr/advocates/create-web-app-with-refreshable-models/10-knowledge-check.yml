@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.advocates.create-web-app-with-refreshable-models.11-knowledge-check
+metadata:
+# Search engine metadata  
+  title: Knowledge check 
+  description: Knowledge check
+  author: jlooper
+  ms.date: 02/10/2020
+  ms.author: jelooper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Check your knowledge
+durationInMinutes: 11
+content: |
+  [!include[](includes/10-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: "Which statement best describes a Progressive Web App?"
+    choices:
+    - content: "An app that tracks your progress."
+      isCorrect: false
+      explanation: "The term Progressive refers to the app's ability to work for every user regardless of browser."
+    - content: "An app that is designed to work with any browser and creates an experience similar to native apps."
+      isCorrect: true
+      explanation: "Progressive Web Apps are web applications that work offline and can include device hardware access."
+    - content: "An app that must be delivered like a native app, through the Apple App Store or Google Play."
+      isCorrect: false
+      explanation: "Since this type of app is designed to work with all browsers, it does not need to be delivered via native distribution systems."
+
+  - content: "True or false: Custom Vision AI is a cognitive service that helps improve human vision."
+    choices:
+    - content: "True"
+      isCorrect: false
+      explanation: "Custom Vision AI is not designed to test human vision."
+    - content: "False"
+      isCorrect: true
+      explanation: "Custom Vision AI is a service designed to create custom computer vision models."
+
+  - content: "True or false: GitHub Actions are designed to help developers automate their software development workflows."
+    choices:
+    - content: "True"
+      isCorrect: true
+      explanation: "GitHub Actions use workflows that are custom automated processes hosted in any GitHub repository to build and deploy code projects on GitHub."
+    - content: "False"
+      isCorrect: false
+      explanation: "GitHub Actions can help automate software development workflows from within a GitHub repository."

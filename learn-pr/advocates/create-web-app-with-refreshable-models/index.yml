@@ -18,7 +18,7 @@ abstract: |
    - Build a Vue.js web app to host the model assets
    - Use these assets to perform inference using hard-to-distinguish images
    - Build a GitHub Action to create a continuous delivery workflow
-   - Test the capabilities of a progressive web app
+   - Test the capabilities of a Progressive Web App
 prerequisites: |
   - Vue.js
   - Progressive Web Apps
@@ -35,13 +35,14 @@ products:
 units:
   - learn.advocates.create-web-app-with-refreshable-models.1-introduction
   - learn.advocates.create-web-app-with-refreshable-models.2-conceptual-overview
-  - learn.advocates.create-web-app-with-refreshable-models.3-about-pwas
-  - learn.advocates.create-web-app-with-refreshable-models.4-scaffold-web-app
+  - learn.advocates.create-web-app-with-refreshable-models.3-about-progressive-web-apps
+  - learn.advocates.create-web-app-with-refreshable-models.4-scaffold
   - learn.advocates.create-web-app-with-refreshable-models.5-about-custom-vision-ai
   - learn.advocates.create-web-app-with-refreshable-models.6-train-model-build-inference-interface
   - learn.advocates.create-web-app-with-refreshable-models.7-about-github-actions
-  - learn.advocates.create-web-app-with-refreshable-models.8-publish-web-app-deploy-github-action
-  - learn.advocates.create-web-app-with-refreshable-models.9-test-pwa
-  - learn.advocates.create-web-app-with-refreshable-models.10-summary
+  - learn.advocates.create-web-app-with-refreshable-models.8-publish-deploy-github-action
+  - learn.advocates.create-web-app-with-refreshable-models.9-test-progressive-web-app
+  - learn.advocates.create-web-app-with-refreshable-models.10-knowledge-check
+  - learn.advocates.create-web-app-with-refreshable-models.11-summary
 badge:
   uid: learn.advocates.create-web-app-with-refreshable-models.badge

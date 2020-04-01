@@ -1,8 +1,8 @@
-You have a web app, and it's been published to Azure. Now you can make sure that it works as a PWA, or Progressive Web App. These apps are interesting if they need to be used offline.
+You have a web app, and it's been published to Azure. Now you can make sure that it works as a Progressive Web App.
 
-## Configure your PWA
+## Configure your Progressive Web App
 
-For the most part, the Vue CLI has already created the files you need for your PWA. If you look in the `/public/images/icons` folder, you'll find ready made icons so that a user can create a bookmark to the app on a desktop. The build process also creates a `service-workers.js` file to launch a service worker that takes care of offline capabilities. Make sure that a service worker can be created by adding one more file to your app: a `vue.config.js` file.
+For the most part, the Vue CLI has already created the files you need for your Progressive Web App. If you look in the `/public/images/icons` folder, you'll find ready made icons so that a user can create a bookmark to the app on a desktop. The build process also creates a `service-workers.js` file to launch a service worker that takes care of offline capabilities. Make sure that a service worker can be created by adding one more file to your app: a `vue.config.js` file.
 
 Add a new file called `vue.config.js` to the root of your web app. This file will help Webpack filter files that stop service workers from being created.
 
@@ -18,7 +18,7 @@ module.exports = {
 };
 ```
 
-Now, when you push your code to GitHub and it's built, a service worker should be created. You can use the Developer Tools to determine your page's Lighthouse Score, which is a good way to gauge the performance of your PWA.
+Now, when you push your code to GitHub and it's built, a service worker should be created. You can use the Developer Tools to determine your page's Lighthouse Score, which is a good way to gauge the performance of your Progressive Web App.
 
 ![lighthouse score](../media/lighthouse.png)
 
