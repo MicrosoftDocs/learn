@@ -1,4 +1,4 @@
-Python strings have many built-in features, including some that might not be obvious. Before we explore some advanced string formatting that use special functions, let's make use of everything strings can do by themselves.
+Python strings have many built-in features, including some that might not be obvious. Before we explore some advanced string formatting that uses special functions, let's make use of everything strings can do by themselves.
 
 ### Step 1 - Create a new working folder and python code file
 
@@ -142,7 +142,7 @@ print(first, second, third, sep='-')
 print(first, second, third, sep='-', end='.')
 ```
 
-The first and second calls of the `print()` function concatenates strings together before displaying them to the console. The `print()` function is defined in such a way that we can send in a variable number of arguments (two, three, four, or more). Each of them will be concatenated together, each separated by an empty space, and displayed to the console.
+The first and second calls of the `print()` function concatenate strings together before displaying them to the console. The `print()` function is defined in such a way that we can send in a variable number of arguments (two, three, four, or more). Each of them will be concatenated together, each separated by an empty space, and displayed to the console.
 
 The third call to the `print()` function adds an optional named argument `sep`. This defines the character we want to use to separate the strings as they're concatenated together for display.
 
