@@ -8,7 +8,7 @@ IoT enables businesses to evolve their operations, products, and customer experi
 
 ## Learning objectives
 
-In this module, you will:
+In this module, you'll:
 
 - Learn about the Microsoft vision for Azure IoT.
 - Understand what Azure IoT is, how it works, and how it's built.

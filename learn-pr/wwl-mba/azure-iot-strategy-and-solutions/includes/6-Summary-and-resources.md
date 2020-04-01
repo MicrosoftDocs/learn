@@ -1,6 +1,6 @@
 With intelligently connected devices and systems, organizations can evolve their operations, products, and customer experiences to create new revenue streams and minimize costs. With Azure IoT, you can leverage new insights and opportunities to transform your business.
 
-Now that you have reviewed this module, you should be able to:
+Now that you've reviewed this module, you should be able to:
 
 - Understand the Microsoft vision for Azure IoT.
 - Understand what Azure IoT is, how it works, and how it's built.

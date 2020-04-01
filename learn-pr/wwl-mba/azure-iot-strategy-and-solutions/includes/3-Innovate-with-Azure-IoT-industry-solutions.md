@@ -14,7 +14,7 @@ Industries with opportunity to innovate with IoT include:
 
 ### Azure IoT solutions applied across industries
 
-Azure IoT solutions tend to be horizontal and span multiple industries. Industry experts may use different terminology to describe IoT applications, but they are generally referring to the five common scenarios listed below. Later in the module, we will also review how these solutions can be applied with Azure IoT services.
+Azure IoT solutions tend to be horizontal and span multiple industries. Industry experts may use different terminology to describe IoT applications, but the're generally referring to the five common scenarios listed below. Later in the module, we'll also review how these solutions can be applied with Azure IoT services.
 
 |Scenario|Description|Industry Example|
 |----------|-----------|----------|
@@ -50,7 +50,7 @@ The Alaska Department of Transportation uses Azure IoT technologies to make info
 
 With Azure IoT solutions, including Azure IoT Edge and Azure IoT Hub, the Alaska Department of Transportation found a scalable IoT solution to fight winter storms.
 
-Azure IoT is not only a transformative tool for driving business outcomes, it is a catalyst for greater change within an organization. When you connect equipment, machines, and tools, you can draw insights for innovation and opportunities.
+Azure IoT isn't only a transformative tool for driving business outcomes, it's a catalyst for greater change within an organization. When you connect equipment, machines, and tools, you can draw insights for innovation and opportunities.
 
 |  |  |
 | ------------ | -------------|
