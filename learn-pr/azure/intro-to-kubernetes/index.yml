@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.intro-to-kubernetes
+metadata:
+  title: Introduction to Kubernetes
+  description: Get acquainted with the Kubernetes open-source container-orchestration system for automating application deployment, scaling, and management.
+  ms.date: 4/01/2019
+  author: cryophobia
+  ms.author: chrvaw
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction to Kubernetes
+summary: Determine the types of business problems that can be solved using Azure Kubernetes Service. Describe the benefits of container orchestration with features like deployment management, automatic updates, and self-healing.
+abstract: |
+  In this module, you will:
+  - Evaluate whether Kubernetes is an appropriate orchestration platform for you
+  - Describe the difference between master nodes and nodes in a Kubernetes cluster
+  - Describe how the components of Kubernetes work to support compute container orchestration
+prerequisites: |
+  - Basic understanding of microservices
+  - Basic knowledge of installing software using a command-line interface
+# iconUrl: /learn/achievements/intro-to-kubernetes.svg
+iconUrl: http://via.placeholder.com/120x120
+badge:
+  uid: learn.intro-to-kubernetes.badge
+levels: 
+- beginner
+roles: 
+- developer
+- administrator
+- solution-architect
+- student
+products:
+- azure
+- azure-kubernetes-service
+units:
+- learn.intro-to-kubernetes.introduction
+- learn.intro-to-kubernetes.what-is-kubernetes
+- learn.intro-to-kubernetes.how-kubernetes-works
+- learn.intro-to-kubernetes.how-app-deployment-works
+- learn.intro-to-kubernetes.exercise-kubernetes-functionality
+- learn.intro-to-kubernetes.when-to-use-kubernetes
+- learn.intro-to-kubernetes.summary

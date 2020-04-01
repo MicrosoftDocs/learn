@@ -1,0 +1,102 @@
+Let's start with a few definitions that we'll use before our tour into Kubernetes. This overview should help you decide whether Kubernetes might be a good fit for your containerization management strategy.
+
+## What is a container?
+
+A *container* is an atomic unit of software that packages up code, dependencies, and configuration for a specific application. Containers allow you to split up monolithic applications into individual services that make up the solution. This rearchitecting of your application will enable you to deploy these separate services via containers.
+
+:::image type="content" source="../media/2-container.png" alt-text="An image of a server or application replicated as containers for cloud deployment" border="false":::
+
+## Why use a container?
+
+You realize that you have to scale out your solution to meet customer demand. One option is to deploy a new virtual machine (VM) for each application and then deploy the applications to the VMs. However, doing so will make you responsible for the management of each additional VM. For example, you'll have to make sure the correct operating system (OS) versions and dependencies for each application is installed and configured. You also must make sure you're installing and upgrading the correct versions of the applications. If there are errors, you have to make sure you can roll back the installation with the least amount of disruption to your solution.
+
+:::image type="content" source="../media/2-deploy-multiple-instances.png" alt-text="An image of replicated servers as VMs in the cloud and how this problem raises migration questions and problems." border="false":::
+
+The above deployment is cumbersome, sometimes error-prone and doesn't easily scale single services. For example, you might find you can't easily scale only the caching service used in the web application. Containers help solve these types of problems.
+
+The container concept gives you three major benefits:
+
+1. **A container is immutable** - the unchanging nature of a container allows it to be deployed and run reliably with the same behavior from one compute environment to another. A container image tested in a QA environment is the same container image deployed to production.
+
+1. **A container is lightweight** - you can think of a container as a VM image, but smaller. A VM image is normally installed on a physical host. The image contains both the OS and the application you want to run. In contrast, a container doesn't need an OS, only the application. The container always relies on the host installed OS for Kernel-specific services. Containers are less resource-intensive, and multiple containers can be installed on the same computing environment.
+
+1. **Container startup is fast** - containers can start up in few seconds instead of minutes, like a VM.
+
+The above benefits make containers a popular choice for developers and IT operations alike.
+
+## What is container management?
+
+:::image type="content" source="../media/2-deploy-multiple-containers.png" alt-text="Image of replicated servers as multiple containers in the cloud." border="false":::
+
+Even though you can think of containers as VMs, you have to keep in mind that they aren't. A container has a distinct life cycle. It's deployed, started, stopped, and destroyed as requested. This life cycle makes containers disposable and impacts how developers and IT operations should think about the management of large container deployments.
+
+The process of deploying, updating, monitoring, and removing containers introduces many challenges.
+
+Suppose you want to scale your drone tracking website. You find that at specific times during the day, you need more instances of the site's caching service to manage performance. You can solve this problem by adding additional caching service containers.
+
+Now let's assume you need to roll out a new version of the caching service. How do you make sure you update all the containers? How do you remove all the older versioned containers?
+
+These types of questions justify a system to help you manage your container deployment.
+
+## What is container orchestration?
+
+Container orchestration is a concept that describes all the tasks you or a system performs to manage containers. A container orchestrator is a system that deploys and manages containerized applications. The orchestrator also dynamically responds to changes in the environment to increase or decrease the deployed instances of the managed application.
+
+In Kubernetes, these tasks include:
+
+- Deployment of containers
+
+- Self-heal of containers, for example, restarting containers that fail or replacing containers
+
+- Scale application container count up or down based on demand
+
+- Automated rolling updates and rollbacks of containers
+
+- Management of storage
+
+- Management of network traffic
+
+- Store and manage sensitive information such as usernames and passwords
+
+Keep in mind, all of the above aspects of Kubernetes requires configuration and a good understanding of the underlying technologies covered. For example, you need to understand concepts such as virtual networks, load balancers, reverse proxies, and so on to configure Kubernetes networking.
+
+## What is a cloud-native application?
+
+A cloud-native application is an application designed and built to take advantage of services such as auto-scaling, rolling updates, self-healing, and so on. These are applications that run and is managed in an orchestration platform such as Kubernetes. A cloud-native application isn't limited to running in public or private cloud environments as they can also run in a hybrid cloud and on-premises data centers.
+
+## What is a microservices application?
+
+A microservices application is an application that is designed and structured as loosely coupled collaborative services. These services are deployed separately from each other to simplify large application design and maintenance. The services communicate over RESTful APIs, or Advanced Message Queuing Protocol (AMQP) enabled services. A microservice designed application forms an important part of cloud-native applications.
+
+In the drone tracking example, you can see how each of the components is easily identifiable as a microservice. You can deploy, update, and scale each service independently from the other.
+
+## What is Kubernetes?
+
+:::image type="content" source="../media/2-deploy-multiple-containers-k8s.png" alt-text="Image of replicated servers as multiple containers in a Kubernetes cluster." border="false":::
+
+Kubernetes is a portable, extensible open-source platform for automating deployment, scaling, and the management of containerized workloads. Kubernetes abstracts away complex container management and provides you with declarative configuration to orchestrate containers in different computing environments. This orchestration platform gives you the same ease of use and flexibility as with Platform as a Service (PaaS) and Infrastructure as a Service (IaaS) offerings.
+
+Kubernetes allows you to view your data center as one large computer. You don't worry about how and where you deploy your containers, only about deploying and scaling your applications as needed.
+
+However, this view might be slightly misleading as there are a few aspects to keep in mind:
+
+- Kubernetes isn't a full PaaS offering. It operates at the container level and offers only a common set of PaaS features.
+
+- Kubernetes isn't monolithic. It's not a single installed application. Aspects such as deployment, scaling, load balancing, logging, and monitoring are all optional. You're responsible for finding the best solution that fits your needs to address these aspects.
+
+- Kubernetes doesn't limit the types of applications that can run. If your application can run in a container, it can run on Kubernetes. Your developers need to understand concepts such as microservices architecture, to make optimal use of container solutions.
+
+- Kubernetes doesn't provide middleware, data-processing frameworks, databases, caches, nor cluster storage systems. All these items are run as containers or as part of another service offering.
+
+- A Kubernetes deployment is configured as a cluster. A cluster consists of at least one master and one or more workers machines. These machines can be physical hardware or VMs.
+
+With all the benefits you receive with Kubernetes, keep in mind that you're responsible for maintaining your Kubernetes cluster. For example, you need to manage OS upgrades and the Kubernetes installation and upgrades. You also manage the hardware configuration of the host machines, such as networking, memory, and storage.
+
+> [!NOTE]
+> Kubernetes is sometimes abbreviated to **K8s**. The 8 represents the eight characters between the K and the s of the word K[*ubernete*]s.
+
+## What is the difference between Kubernetes and Docker?
+
+Your company's drone tracking solution is currently deployed as docker containers in Docker. A common question asked by both team members and management is, "What the difference is between Docker and Kubernetes?".
+
+For Kubernetes to run containers, it needs to support a container runtime. Docker is such a container runtime. The container runtime manages the containers. For example, it starts and stops the containers that run in the cluster. Kubernetes manages the runtime container. Keep in mind that Docker isn't the only container runtime Kubernetes supports.
