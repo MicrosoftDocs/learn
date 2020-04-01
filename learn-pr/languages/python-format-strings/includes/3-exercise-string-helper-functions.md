@@ -124,9 +124,9 @@ False
 True
 ```
 
-### Step 6 - Comment out the previous code, and add code that finds the position of a string inside of another string
+### Step 6 - Comment out the previous code, and add code that finds the position of a string inside another string
 
-The `find()` method locates the zero-based position of one string inside of another string. In other words, starting with the number `0`, the method tells you where the search string is located. If it can't find the string, it returns `-1`.
+The `find()` method locates the zero-based position of one string inside another string. In other words, starting with the number `0`, the method tells you where the search string is located. If it can't find the string, it returns `-1`.
 
 You can use the `find()` function to split a string at a specific place, to perform additional modifications to the string. In an upcoming module, you'll learn a technique called *slicing* that can use the character position to retrieve some portion of a longer string.
 
