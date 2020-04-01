@@ -11,15 +11,15 @@ metadata:
 title: Create reusable functionality with functions in Python
 summary:  Define functions to create encapsulated modular code that accept input and return results.
 abstract: |
-  In this module, you will:
+  In this module, you'll:
   - Define functions that encapsulate functionality.
-  - Add input parameters to functions so that they can be called using input arguments.
+  - Add input parameters to functions so they can be called using input arguments.
   - Return values from functions.
-  - Create modules to host functions that can be imported into another code file.
+  - Create modules to host functions that can be imported into other code files.
 prerequisites: |
-  - You should have a local Python development environment setup to run Python 3 using a code editor like Visual Studio Code.
-  - You should know how to execute a code script using the command line or functionality from your local Python development environment.
-  - Basic Python knowledge including an understanding of types, variables, value assignment, calling functions, passing arguments, and importing modules.
+  - A local Python development environment set up to run Python 3 using a code editor like Visual Studio Code
+  - Knowledge of how to run a code script using either a command line or your local Python development environment
+  - Basic Python knowledge that includes an understanding of types, variables, value assignment, function calls, passing arguments, and module import
 ratingEnabled: true
 iconUrl: /learn/achievements/generic-badge.svg
 levels:

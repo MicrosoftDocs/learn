@@ -1,33 +1,41 @@
-The Python programming language allows you to build many types of programs, like:
+The Python programming language lets you build many types of programs like:
 
-- business applications to capture, analyze, and process data
-- dynamic web applications that can be accessed from a web browser
-- games, both 2D and 3D
-- financial and scientific applications
-- cloud-based applications
-- mobile applications
+- Business apps to capture, analyze, and process data.
+- Dynamic web apps that a web browser can access.
+- Games in both 2D and 3D.
+- Financial and scientific apps.
+- Cloud-based apps.
+- Mobile apps.
 
-As programming languages go, Python is relatively simple yet powerful, which likely has contributed to its enormous popularity. Beyond the programming language itself, Python boasts a wealth of third-party libraries that can reduce complex tasks into a few lines of code.
+As programming languages go, Python is relatively simple yet powerful. This combination likely has contributed to its enormous popularity. Beyond the programming language itself, Python boasts a wealth of libraries that can reduce complex tasks into a few lines of code.
 
-In this module, we start by explaining the most basic concepts to make sure you have a firm grasp on how programming works. We'll discuss the role of a programming language's syntax, the need for compilation and interpretation, the process of programming, and finally the tools you'll need to build your own software development environment.
+This module starts by explaining the most basic concepts to make sure you have a firm grasp on how programming works. We'll discuss:
+
+- The role of a programming language's syntax.
+- The need for compilation and interpretation.
+- The process of programming.
+- The tools you need to build your own software development environment.
 
 ## What's the best way to learn Python?
 
-By far, the best way to learn how to build programs by writing Python code is to write as much Python code as possible. Soon, we'll work through dozens of small code examples. When we get to that point, we encourage you to type along with the exercises. Completing the exercises and solving small coding challenges will accelerate your learning.
+The best way to learn how to build Python programs is to write as much Python code as you can. Soon, you'll work through dozens of small code examples. When you get to that point, we'll encourage you to type along with the exercises. Completing the exercises and solving small coding challenges will help you learn more quickly.
 
-But first, we'll cover some high-level conceptual information and in the next module, help you install and configure the tools you'll need to get started.
+But first, we'll cover some high-level conceptual information. In the next module, we'll help you install and configure the tools you need to get started.
 
-Once we help you get oriented in the right direction, we'll start writing code. Continual practice and exploration by completing exercises and challenges reinforces small foundational concepts that you'll build on throughout your entire career.
+After we help you get oriented, you'll start writing code. Continually practice and explore by completing exercises and challenges. These actions reinforce foundational concepts. You'll build on these concepts throughout your career.
 
-Let's start with the most basic question: what exactly is Python?  To understand what Python is and what it does, you need to understand how a programming language provides a way for a human to communicate instructions with a computer.
+Let's start with the most basic question: what exactly is Python? To answer what question, you must understand how a programming language lets a human communicate instructions to a computer.
 
 ## Learning objectives
 
-In this module, you will:
+In this module, you'll learn:
 
-- Learn what a programming language does, and why Python is so popular and is a great choice as your first programming language to learn.
-- Learn why you must compile your code into computer-understandable format.
-- Learn the process of programming and the software tools you must install.
+- What a programming language does.
+- Why Python is so popular.
+- Why Python is a great choice as your first programming language.
+- Why you must compile your code into a format that computers understand.
+- The process of programming.
+- What software tools you must install.
 
 ## Prerequisites
 
