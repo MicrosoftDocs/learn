@@ -2,7 +2,7 @@ Monitor our services with Azure Spring Cloud's distributed tracing mechanism, to
 
 We now have a complete microservices stack:
 
-- A Spring Boot microservice, that stores its data in Cosmos DB.
+- A Spring Boot microservice, that stores its data in Azure Cosmos DB.
 - A gateway based on Spring Cloud Gateway.
 
 However, even with only those two components, it already is quite challenging to monitor and study performance issues in our architecture.
@@ -47,7 +47,7 @@ cd ..
 
 ### Once everything is deployed
 
-1. Go to [the Azure Portal](https://portal.azure.com/?WT.mc_id=azurespringcloud-mslearn-judubois).
+1. Go to [the Azure portal](https://portal.azure.com/?WT.mc_id=azurespringcloud-mslearn-judubois).
 1. Go to the overview page of your Azure Spring Cloud cluster and select "Distributed tracing" in the menu.
 1. Select "Enable" and create a new Azure Application Insights instance to store your tracing data.
 
