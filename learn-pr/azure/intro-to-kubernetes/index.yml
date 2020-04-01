@@ -36,7 +36,7 @@ units:
 - learn.intro-to-kubernetes.introduction
 - learn.intro-to-kubernetes.what-is-kubernetes
 - learn.intro-to-kubernetes.how-kubernetes-works
-- learn.intro-to-kubernetes.how-app-deployment-works
+- learn.intro-to-kubernetes.how-app-deployments-work
 - learn.intro-to-kubernetes.exercise-kubernetes-functionality
 - learn.intro-to-kubernetes.when-to-use-kubernetes
 - learn.intro-to-kubernetes.summary

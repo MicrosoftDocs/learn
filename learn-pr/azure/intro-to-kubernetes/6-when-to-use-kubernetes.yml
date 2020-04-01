@@ -13,4 +13,4 @@ metadata:
 
 durationInMinutes: 4
 content: |
-  [!include[](includes/5-when-to-use-kubernetes.md)]
+  [!include[](includes/6-when-to-use-kubernetes.md)]
