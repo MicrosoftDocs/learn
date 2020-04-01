@@ -31,7 +31,7 @@ For an architecture to perform well and be scalable, it should properly match re
 
 Every architect’s worst fear is having your architecture go down with no way to recover it. A successful cloud environment is designed in a way that anticipates failure at all levels. Part of anticipating these failures is designing a system that can recover from the failure, within the time required by your stakeholders and customers.
 
-![An illustration showing two virtual machines in a virtual network. One of the machines is shown as failed while the other is working to service customer requests.](../media/system-failure.png)
+:::image type="content" source="../media/system-failure.png" alt-text="An illustration showing two virtual machines in a virtual network. One of the machines is shown as failed while the other is working to service customer requests." loc-scope="other"::: <!--no-loc -->
 
 ## Efficiency and operations
 

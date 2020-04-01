@@ -16,7 +16,7 @@ With tools to monitor for and diagnose problems, Network Watcher gives you a cen
 ## Network Watcher monitoring tools
 
 Network Watchers provides three monitoring tools:
-
+:::image type="content" source="../media/2-network-watcher-topology.png" alt-text="" loc-scope="azure-network-watcher":::
 - Topology
 - Connection Monitor
 - Network Performance Monitor
@@ -42,7 +42,7 @@ You use the Azure portal to view the topology of an Azure network. In the Azure 
 
     Here's an example of a topology generated for a virtual network named MyVNet:
 
-    ![A diagram that shows a virtual network topology as shown in Network Watcher](../media/2-network-watcher-topology.png)
+    :::image type="content" source="../media/2-network-watcher-topology.png" alt-text="A diagram that shows a virtual network topology as shown in Network Watcher." loc-scope="azure-network-watcher":::
 
 ### What is the Connection Monitor tool?
 
