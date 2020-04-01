@@ -17,7 +17,7 @@ Make sure to give this project the type 'Classification' as it will simply deter
 
 Now you are ready to train on your image set.
 
-In the folder you downloaded, you'll find two folders, one labelled 'ice cream' and the other 'dalmatian'. Click the `+` icon in your Custom Vision AI project and select the images in the `dalmatian` folder. Tag those `dalmatian`. Do the same process for the `ice cream` folder, tagging those `ice cream`.
+In the folder you downloaded, you'll find two folders, one labeled 'ice cream' and the other 'dalmatian'. Click the `+` icon in your Custom Vision AI project and select the images in the `dalmatian` folder. Tag those `dalmatian`. Do the same process for the `ice cream` folder, tagging those `ice cream`.
 
 ![tagging](../media/tagging.png)
 
@@ -33,7 +33,7 @@ Drag this image to your desktop, then click the 'checkmark' icon in the Custom V
 
 Click the down-arrow icon at the top of the Custom Vision AI interface to download your model and its associated assets. Choose 'TensorFlow' as the model type and `tensorflow.js` in the dropdown.
 
-![tf.js](../media/tfjs.png)
+![tf.js](../media/tensorflowjs.png)
 
 A zipped file will be exported to your local computer. Extract is file and name the resultant folder `models`. Inside this folder you'll find four files: a `cvexport.manifest` file, a `labels.txt` file, a `model.json` file, and a `weights.bin`.
 

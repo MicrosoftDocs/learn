@@ -86,6 +86,6 @@ In your GitHub repo, go to Settings > Secrets. Copy and paste the contents of th
 
 Now, when you push new code to your repo, your GitHub action will build and publish the new codebase and your web app will be refreshed.
 
-![Publishing changes](../media/gh-actions.png)
+![Publishing changes](../media/github-actions.png)
 
 Try it with a new model to watch the changes happen automatically.
