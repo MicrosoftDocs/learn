@@ -9,9 +9,9 @@ Using RBAC, you can:
 - Allow a user to manage all resources in a resource group, such as VMs, websites, and virtual subnets.
 - Allow an application to access all resources in a resource group.
 
-To view access permissions, use the **Access control (IAM)** panel for the resource in the Azure portal. On this panel, you can see who has access to an area and their role. Using this same panel, you can also grant or remove access.
+To view access permissions, use the **Access control (IAM)** panel for the resource in the Azure portal. On this panel, you can see who can access an area and their assigned role. Using this same panel, you can also grant or remove access.
 
-![Screenshot that highlights the Access control (IAM) option and a user on the Role assignment page.](../media/5-resource-group-access-control.png)
+![Screenshot of Azure portal Access control - Role assignment pane showing a backup operator and billing reader roles assigned to different users.](../media/5-resource-group-access-control.png)
 
 In the above screenshot, **Alain Charon** has been assigned the **Backup Operator** role for this resource group.
 
@@ -25,4 +25,4 @@ Here are some best practices you should use when setting up resources.
 
 - Segregate duties within your team and grant only the amount of access to users that they need to perform their jobs. Instead of giving everybody unrestricted permissions in your Azure subscription or resources, allow only specific actions at a particular scope.
 - When planning your access control strategy, grant users the lowest privilege level that they need to do their work.
-- Use **Resource Locks** to ensure critical resources aren't modified or deleted (more on that next!)
+- Use **Resource Locks** to ensure critical resources aren't modified or deleted (as you'll see in the next unit).

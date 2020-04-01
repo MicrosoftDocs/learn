@@ -73,7 +73,7 @@ For scenarios where you need full container orchestration, including service dis
 
 1. From a browser, navigate to your container's FQDN to see it running. You see this.
 
-    :::image type="content" source="../media/2-browser.png" alt-text="Screenshot of the sample Node.js container app running in a browser.":::
+    :::image type="content" source="../media/2-browser.png" alt-text="Screenshot of the sample Node.js container app running in a browser." loc-scope="other"::: <!-- no-loc -->
 
 ## Summary
 

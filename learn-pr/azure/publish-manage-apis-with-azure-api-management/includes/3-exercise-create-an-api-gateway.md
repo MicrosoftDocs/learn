@@ -42,7 +42,7 @@ The script takes about a minute to run. When the script finishes, it will displa
     - **api/Products**, which generates a list of products
     - **api/Products/{productid}**, which returns the details for the specified productid
 
-![Overview of API management](../media/3-swagger.png)
+:::image type="content" source="../media/3-swagger.png" alt-text="Overview of API management." loc-scope="third-party"::: <!-- no-loc -->
 
 Finally, copy the last URL from the Cloud Shell output, this is the swagger JSON URL, you will need this in the next exercise
 

@@ -87,7 +87,7 @@ The exercise also runs a client app that simulates a number of users issuing POS
     code App.config
     ```
 
-1. Uncomment the line that specifies the `ReservationsServiceURI` and replace the value with the URL of your web app. The file should like this example:
+1. Uncomment the line that specifies the `ReservationsServiceURI` and replace the value with the URL of your web app. The file should look like this example:
 
     ```text
     <?xml version="1.0" encoding="utf-8" ?>
