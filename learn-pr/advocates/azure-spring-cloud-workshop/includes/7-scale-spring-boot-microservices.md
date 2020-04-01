@@ -1,11 +1,11 @@
 Spring Boot microservices and gateways running inside Azure Spring Cloud can be scaled vertically or horizontally:
 
-1. Vertical scaling means you increase (or decrease) the CPU and RAM of a given service.
-1. Horizontal scaling means you can add (or remove) nodes for a given service.
+- Vertical scaling means you increase (or decrease) the CPU and RAM of a given service.
+- Horizontal scaling means you can add (or remove) nodes for a given service.
 
 ## Scaling the "todo-service" microservice
 
-1. Go to [the Azure Portal](https://portal.azure.com/?WT.mc_id=azurespringcloud-mslearn-judubois).
+1. Go to [the Azure portal](https://portal.azure.com/?WT.mc_id=azurespringcloud-mslearn-judubois).
 1. Go to the overview page of your Azure Spring Cloud cluster and select "Apps" in the menu.
 1. Select the "todo-service" application.
 1. Select "Scale" in the left hand-side menu.
