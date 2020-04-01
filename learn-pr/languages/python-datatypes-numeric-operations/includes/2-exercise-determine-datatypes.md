@@ -76,7 +76,7 @@ False
 False
 ```
 
-The `isinstance()` function returns a Boolean value.  Unlike the previous technique you used when you checked a value using the `type()` function and used the equality operator, 
+The `isinstance()` function returns a Boolean value.  Unlike the previous technique you used when you checked a value using the `type()` function and used the equality operator, `isinstance()` accomplishes the same result more succinctly.
 
 You'll explore the term *is an instance of* in an upcoming module that explores classes and objects.  But for now, you can think of it as an easy way to compare a value and the data type that you expect it to be.
 
