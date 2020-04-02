@@ -9,7 +9,7 @@ metadata:
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-reactors
+  show_latex: true
 durationInMinutes: 5
-show_latex: true
 content: |
   [!include[](includes/2-types-arithmetic-numeric.md)] 
