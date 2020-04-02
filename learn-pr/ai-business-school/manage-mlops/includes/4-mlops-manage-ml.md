@@ -28,6 +28,7 @@ Reasons for inaccurate predictions might include:
 There are two large blue circles in the center of the diagram, with an icon and text in each. The left circle is labeled, “Data scientist” and has a nucleus icon in it. The other blue circle reads, “IT” and has an icon of a person next to a computer. There is an infinity symbol that loops around both circles, indicating they work in harmony. Underneath both circles, the four MLOps practices are listed, two on top and two on bottom. They are separated by lines forming a cross between the four. These say, “Model reproducibility,” “Model validation,” “Model deployment,” and “Model retraining.”
 :::image-end:::
 :::column-end:::
+:::row-end:::
 
 Regardless of whether you use a pre-trained model or a custom model, your approach to monitoring and incident response should be the same. However, for pre-trained models, the way you pull teams in, exactly what they have control over, and how teams troubleshoot issues, may vary.
 

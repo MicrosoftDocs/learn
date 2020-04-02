@@ -83,10 +83,10 @@ As you map initiatives, it's helpful to involve the CFO office and other stakeho
 
 ## Prioritize investments and organize phases
 
-:::row:::
-:::column span="2":::
 We recommend prioritizing initiatives in phases: start with foundational initiatives in the bottom left and move towards transformational initiatives in the top right.
 
+:::row:::
+:::column span="2":::
 We recommend this approach because it's helpful to grow capabilities and get buy-in before you move to more complex projects. You'll need to form technical teams that can prepare data properly and familiarize themselves with AI models. Starting with foundational initiatives also helps establish trust across the business and manage expectations related to AI initiatives. The success and value you're able to demonstrate in early initiatives pave the way for the more transformational projects.
 
 Another reason to start at the bottom left is that the technology used to support H1 initiatives is typically more accessible than advanced use cases. There are countless out-of-the-box and pre-trained AI models you can leverage for common use cases. These applications cost less and their impact on the business is easier to estimate. As you build maturity with these accessible models, you can experiment with more complex AI initiatives and hone your objectives.
