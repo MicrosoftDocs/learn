@@ -14,7 +14,8 @@ Other benefits to name a few are:
 
 - **Orchestration**: Unlike a script, You don't have to worry about the order of operations. The Azure Resource Manager orchestrates the deployment of the resources so they're created in the correct order and when possible, in parallel so your deployments finish faster than scripted  deployments.
 
-![Template Processing](../media/template-processing.png)
+    ![Template Processing](../media/template-processing.png)
+
 - **Built-in validation**: Your template has to pass validation before starting the deployment. Azure Resource Manager checks the template before starting the deployment to make sure the deployment will succeed. Unlike a script that may run halfway and stop in a half-finished state.
 - **Modular**: You can break your templates into smaller, reusable components and link them together at deployment time. You can also nest one or multiple templates inside another templates.
 - **Tracked deployments**: In the Azure portal, you can review your deployment history and get information about the state of the deployment. You can see all the parameter values passed in, and any output values.
