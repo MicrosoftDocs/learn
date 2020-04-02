@@ -8,10 +8,10 @@ The unknowns aren't all negative. Individual models improve over time in ways th
 
 With AI initiatives, you need to think like a venture capitalist. That means being willing to invest and take risks without being blocked by uncertainties. But you don't have to shoot in the dark—you'll need a framework to help prioritize AI investments. In the following sections, we'll describe how to:
 
-* Leverage a horizon-based framework for evaluating initiatives
-* Map scenarios and use cases to the framework 
-* Prioritize investments in phases 
-* Define clear value drivers and KPIs
+* Leverage a horizon-based framework for evaluating initiatives.
+* Map scenarios and use cases to the framework.
+* Prioritize investments in phases.
+* Define clear value drivers and KPIs.
 
 ## Leverage a horizon-based framework
 
