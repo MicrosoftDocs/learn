@@ -22,7 +22,7 @@ You're a new developer at Tailwind Traders. Before you can start, you'll need to
 
 1. Enter the tenant from your clipboard into the **Azure: Tenant** textbox.
 
-   ![Screenshot of VS Code settings with a red box outlining the "Azure Tenant" setting.](../media/azure-tenant.png)
+    :::image type="content" source="../media/azure-tenant.png" alt-text="Screenshot of VS Code settings with a red box outlining the Azure Tenant setting." loc-scope="vs-code":::
 
 1. Press <kbd>F1</kbd> to open the Command Palette.
 
@@ -32,7 +32,7 @@ You're a new developer at Tailwind Traders. Before you can start, you'll need to
 
 1. Select "Concierge Subscription" by checking the box next to it.
 
-   ![Screenshot of VS Code Command Palette displaying available Azure Subscriptions to connect to.](../media/select-subscription.png)
+   :::image type="content" source="../media/select-subscription.png" alt-text="Screenshot of VS Code Command Palette displaying available Azure Subscriptions to connect to." loc-scope="vs-code":::
 
 ## Create the database
 
@@ -40,7 +40,7 @@ You're a new developer at Tailwind Traders. Before you can start, you'll need to
 
 1. Type "Cloud Shell" and select "Azure: Open Bash in Cloud Shell"
 
-   ![Screenshot of the cloud shell inside of a VS Code terminal instance.](../media/vs-code-cloud-shell.png)
+    :::image type="content" source="../media/vs-code-cloud-shell.png" alt-text="Screenshot of the cloud shell inside of a VS Code terminal instance." loc-scope="vs-code":::
 
 1. Copy the following line and paste it into the Cloud Shell terminal instance in VS Code
 
@@ -72,7 +72,7 @@ Fortunately, someone has already written the frontend part of the application. T
 
 1. VS Code will detect a workspace file in this project and ask if you want to open it. Select "Open Workspace".
 
-   ![Screenshot of VS Code notification prompt to open workspace.](../media/open-workspace.png)
+   :::image type="content" source="../media/open-workspace.png" alt-text="Screenshot of VS Code notification prompt to open workspace." loc-scope="vs-code":::
 
 There will be two projects in VS Code: "frontend" and "api". The "frontend" project contains the web application. The "api" project is where you will be building the serverless API with Azure Functions.
 
@@ -90,12 +90,12 @@ There will be two projects in VS Code: "frontend" and "api". The "frontend" proj
 
    A small webserver called "serve" should be running in your terminal. It will output the URL where the frontend application is running.
 
-   ![Screenshot of VS Code terminal with a callout highlighting the url and port of running application.](../media/npm-start.png)
+   :::image type="content" source="../media/npm-start.png" alt-text="Screenshot of VS Code terminal with a callout highlighting the url and port of running application." loc-scope="vs-code":::
 
-1. Click on that url in the terminal to open the application in the browser.
+1. Click on that URL in the terminal to open the application in the browser.
 
 1. The application will load, but there will be no data present. This is because you have not yet created the API for this application.
 
-   ![Screenshot of the application running in a browser. No data is displayed and an error message explaining that the get operation failed.](../media/products-manager-start.png)
+    :::image type="content" source="../media/products-manager-start.png" alt-text="Screenshot of the application running in a browser. No data is displayed and an error message explaining that the get operation failed." loc-scope="other"::: <!-- no-loc -->
 
 Excellent! You've successfully configured your environment to be a productive developer at Tailwind Traders. You've got VS Code connected to Azure and the frontend project is running locally on your machine. That means that it's time to create the Azure Functions project that will serve as the API for the Products Manager application.

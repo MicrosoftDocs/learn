@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.languages.python-format-strings.exercise-format-string-literals
-title: Exercise - Format strings literals
+title: Exercise - Format string literals
 metadata:
-  title: Exercise - Format strings literals
+  title: Exercise - Format string literals
   description: Use built-in features of literal strings to manipulate the presentation of strings.
   ms.date: 02/19/2020
   author: bobtabor-msft

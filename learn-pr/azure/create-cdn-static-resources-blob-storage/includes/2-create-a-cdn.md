@@ -53,7 +53,7 @@ The server locations are referred to as Point-of-presence (POP) locations. CDNs 
 Features that Microsoft Azure CDNs offer are:
 
 - **Dynamic site acceleration** - speed up the delivery of static files
-- **HTTPS custom domain support** - enable encrypted connections to custom domains, such as https://www.contoso.com
+- **HTTPS custom domain support** - enable encrypted connections to custom domains, such as `https://www.contoso.com`
 - **Azure diagnostics logs** - view core analytic information and send the data to an Azure Storage Account, Azure Event Hubs, or Log Analytics Workspace
 - **File compression** - increase performance by reducing the number of bytes in transit
 - **Geo-filtering** - create rules on your CDN endpoint that uses specific paths to allow or block content in selected countries
@@ -99,7 +99,7 @@ When you create a profile, you can specify to create a CDN endpoint or you can c
 
 ### CDN Endpoints
 
-When you create an endpoint, you must ensure that the endpoint type matches the origin source correctly. For example, static websites in Azure require an endpoint set to “custom origin”. With storage accounts, where you can create a CDN matched to that account.
+When you create an endpoint, you must ensure that the endpoint type matches the origin source correctly. For example, static websites in Azure require an endpoint set to "custom origin". With storage accounts, where you can create a CDN matched to that account.
 
 For more information on integrating a storage account into an Azure CDN, see the Further Reading section of the Summary unit.
 

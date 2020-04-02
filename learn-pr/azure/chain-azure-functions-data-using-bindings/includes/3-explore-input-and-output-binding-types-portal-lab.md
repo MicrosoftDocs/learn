@@ -2,7 +2,7 @@ The following is a high-level illustration of what we're going to build in this 
 
 ::: zone pivot="javascript"
 
-![Illustration of default HTTP trigger, showing HTTP request and response as well as respective req and res binding parameters.](../media/3-default-http-trigger-visual-small.png)
+:::image type="content" source="../media/3-default-http-trigger-implementation-small.PNG" alt-text="Illustration of default HTTP trigger, showing HTTP request and response as well as respective req and res binding parameters." loc-scope="other"::: <!-- no-loc -->
 
 ::: zone-end
 

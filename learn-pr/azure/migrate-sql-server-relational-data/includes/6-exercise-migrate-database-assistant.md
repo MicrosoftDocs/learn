@@ -22,7 +22,7 @@ In this exercise, you create a migration project by using Data Migration Assista
 
 1. After you're connected, you'll see a list of databases. In the list, you can select only one database to migrate. In this case, you have only the **Social** database.
 
-    ![Source server](../media/6-02-source-server.png)
+    :::image type="content" source="../media/6-02-source-server.png" alt-text="Source server." loc-scope="azure-database-migration":::
 
 1. Select **Next** to continue.
 
@@ -32,11 +32,11 @@ In this exercise, you create a migration project by using Data Migration Assista
 
 1. Open the **admsdemorg** resource group, and locate the SQL Server instance. Select the server name to open the **Overview** pane.
 
-    ![Items in the resource group, with the SQL Server instance selected](../media/06-azure-sql-server.png)
+    :::image type="content" source="../media/06-azure-sql-server.png" alt-text="Items in the resource group, with the SQL Server instance selected." loc-scope="azure":::
 
 1. Move the mouse to the end of the **Server name** line and select **Copy to clipboard**.
 
-    ![Selection for copying the server name](../media/06-azure-sql-server-copy.png)
+    :::image type="content" source="../media/06-azure-sql-server.png" alt-text="Selection for copying the server name." loc-scope="azure-database-migration":::
 
 1. Switch back to Data Migration Assistant on your virtual machine. Paste the name of your SQL Server instance into the **Server name** box.
 
@@ -50,7 +50,7 @@ In this exercise, you create a migration project by using Data Migration Assista
 
 1. You should see the **Social** database that you created during the setup exercise, and it should be selected by default. Select **Next** to proceed to the next step.
 
-    ![Social database selected as a target](../media/6-03-select-target.png)
+    :::image type="content" source="../media/6-03-select-target.png" alt-text="Social database selected as a target." loc-scope="azure-database-migration":::
 
 ## Select objects to migrate and deploy the schema
 
@@ -58,16 +58,16 @@ In this step, you can select the database objects that you want to migrate and d
 
 1. Select the **dbo.Twitters** line, and you'll see there are no issues found for this object. This is in part because we fixed any issues during the assessment phase of the migration.
 
-    ![Selected object with no issues](../media/6-04-select-objects.png)
+    :::image type="content" source="../media/6-04-select-objects.png" alt-text="Selected object with no issues." loc-scope="azure-database-migration":::
 
 1. Select **Generate SQL script** to proceed. This step generates a T-SQL script that will re-create the selected database objects on the target server. Note the warning provided about SQL logins that might have been selected as part of the migration.
 
-    ![Generated script for a schema](../media/6-05-deploy-schema.png)
+    :::image type="content" source="../media/6-05-deploy-schema.png" alt-text="Generated script for a schema." loc-scope="azure-database-migration":::
 
 1. Select **Deploy Schema** to deploy the schema to the target server.
 
     After the target database is updated, it displays the results on the right.
 
-    ![Deployment results](../media/6-06-deploy-results.png)
+    :::image type="content" source="../media/6-06-deploy-results.png" alt-text="Deployment results." loc-scope="azure-database-migration":::
 
 You have now completed the schema migration and can close Data Migration Assistant.
