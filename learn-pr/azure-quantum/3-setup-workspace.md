@@ -1,3 +1,6 @@
+** This unit may be taken out as we won't have interactive element for learning by //Build as it will still be in private preview.
+
+
 In this unit, we will explain the process of setting up a Workspace on Azure Quantum. 
 
 ## Set up an Azure Quantum subscription
@@ -8,8 +11,7 @@ Azure Quantum is a service provided by Azure. Like other Azure services, you nee
 
 Once you create a Workspace, you'll be able to select which third party providers you would like to be able to use in that Workspace. Every Workspace also comes with the Microsoft provider always enabled. 
 
-<span style="color:red">some **Use screenshots to show the following:
-** text</span>
+**Use screenshots to show the following:
 
 Ensure you have the neccesary information
 

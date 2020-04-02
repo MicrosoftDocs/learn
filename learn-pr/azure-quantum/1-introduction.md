@@ -9,7 +9,6 @@ In this module you will:
 - Understand the types of problems Azure Quantum service can help you solve
 - Walk through the process of creating a project on Azure Quantum portal
 - Learn about the hardware systems you can use through Azure Quantum
-- Learn about the problems that can use quantum-inspired techniques to solve
 
 ## Prerequisites
 
