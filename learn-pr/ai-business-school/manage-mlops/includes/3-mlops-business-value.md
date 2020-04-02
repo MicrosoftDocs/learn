@@ -1,5 +1,3 @@
-## Business value of MLOps
-
 :::row:::
 :::column span="2":::
 MLOps is the practice of collaboration among data scientists, ML engineers, app developers, and other IT teams to manage the ML lifecycle.
@@ -13,7 +11,7 @@ There are two large blue circles in the center of the diagram, with an icon and 
 :::column-end:::
 :::row-end:::
 
-### Model reproducibility
+## Model reproducibility
 
 During initial iterative training and later model retraining, there are a few things that can make the complex process more manageable.
 
@@ -26,7 +24,7 @@ First, it's helpful to centrally **manage assets** like environments, code, data
 
 Second, we recommend creating **machine learning "pipelines."** Pipelines are independently executable workflows of complete machine learning tasks (such as data preparation, training configuration, training processes, and model validation). Having independent steps saved to a pipeline allows multiple data scientists to work on the same pipeline concurrently. Additionally, when data scientists need to go back and make changes to their work, they can start from where the change needs to occur instead of going back to the beginning. This helps them avoid running costly and time-intensive steps like data ingestion again if the underlying data hasn't changed.
 
-### Model validation
+## Model validation
 
 Before a model is deployed, it's critical to validate its performance metrics against the business use case. For example, perhaps you designed a model to predict patient health. As a healthcare provider dealing with life and death situations, you likely prefer to have false positive diagnoses rather than an incredibly high rate of accuracy that misses diagnoses.
 
@@ -43,13 +41,13 @@ The confusion matrix is a two by two table. The y-axis is titled, “Predicted L
 :::column-end:::
 :::row-end:::
 
-### Model deployment
+## Model deployment
 
 Model developers should work with the infrastructure or app developers to determine how to best deploy the model into production. One option is deploying models using the cloud (often leveraging an API). Scalable web infrastructures like Kubernetes or Azure Container Instances are often used to automate and simplify this process. Models can also be deployed directly in on-prem servers or on edge devices like cameras, IoT gateways, and machinery.
 
 No matter where you deploy the model, the workflow is similar. First, you'll register the model in the model registry. Then, you'll prepare to deploy the model by specifying assets, usage, and the compute target. Finally, you'll deploy it to your desired location, test it, and continue to monitor model-specific metrics throughout the lifecycle.
 
-### Model retraining
+## Model retraining
 
 Although this is the end of the development process, this is just the beginning of the maintenance cycle. Models need to be monitored and periodically retrained to correct performance issues and take advantage of newer training data. To set yourself up for success, you'll want to create a retraining loop—or a systematic and iterative process to continually refine and ensure the accuracy of the model.
 
