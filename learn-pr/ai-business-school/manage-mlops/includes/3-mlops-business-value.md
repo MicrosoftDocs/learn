@@ -4,13 +4,14 @@ MLOps processes and tools help those teams collaborate and provide visibility th
 
 ## Model reproducibility
 
-:::row:::
-:::column span="2":::
 During initial iterative training and later model retraining, there are a few things that can make the complex process more manageable.
 
 First, it's helpful to centrally **manage assets** like environments, code, datasets, and models so teams can share and reuse them.
 
+:::row:::
+:::column span="2":::
 * **Model registry:** As teams experiment with different versions of a model, a model registry provides a central place to save each version. With a registry, teams can easily revert to a previous version if something isn't working, even after the solution has gone into production. The model registry also serves as an audit trail for each model's history and makes it possible to automatically trigger workflows after certain actions or events.
+* **Code management:** Technical decision-makers will need to determine which technologies and processes their teams will use for code management. This generally includes code repositories like GitHub where code can be saved, versioned, shared, and reused. It also includes tools for using and versioning code libraries, notebooks, and software development kits (SDKs).
 :::column-end:::
 :::column span="2":::
 :::image type="complex" source="../media/manage-mlops-2.png" alt-text="Illustration of the MLOps practices.":::
@@ -19,7 +20,6 @@ There are two large blue circles in the center of the diagram, with an icon and 
 :::column-end:::
 :::row-end:::
 
-* **Code management:** Technical decision-makers will need to determine which technologies and processes their teams will use for code management. This generally includes code repositories like GitHub where code can be saved, versioned, shared, and reused. It also includes tools for using and versioning code libraries, notebooks, and software development kits (SDKs).
 * **Dataset management:** We also recommend saving training datasets centrally. This way, teams can reuse them, share them with colleagues, or monitor how they change over time in order to manage drift.
 * **Shared environments:** Create model environments that can be shared among individuals. This simplifies the handoff between steps in the model creation process and makes it possible for teams to collaborate on certain steps.
 

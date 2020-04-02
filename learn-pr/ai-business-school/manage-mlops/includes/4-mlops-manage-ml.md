@@ -9,6 +9,7 @@ In this unit, we'll describe the process of managing, monitoring, and retraining
 There are six blue circles in a circular formation, each containing an icon. Grey arrows go from one blue circle to the next, indicating they flow into one another. A label sits above each circle. The first step at the top of the circle is labeled “Train model.” The icon shows 1’s and 0’s in a square formation. The second circle’s label says, “Package model.” The icon shows a box. The third circle is labeled “Validate model.” The icon shows an ML model icon with a check mark next to it. The ML model icon looks like several random dots connected by lines in a loose pentagon shape. The fourth circle is labeled “Deploy model.” The icon shows an arrow pointing towards three blocks. Two are white boxes and one just has a white outline and blue center. The fifth circle is labeled “Monitor model.” The icon shows a line graph. The sixth and final circle is labeled “Retrain Model.” The icon shows two arrows leading into one another in a square shape. 
 :::image-end:::
 :::column-end:::
+:::row-end:::
 
 ## ML lifecycle: why do ML models need to be monitored and retrained
 
