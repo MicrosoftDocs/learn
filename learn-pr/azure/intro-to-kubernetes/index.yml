@@ -17,6 +17,7 @@ abstract: |
   - Describe how the components of Kubernetes work to support compute container orchestration
 prerequisites: |
   - Basic understanding of microservices
+  - Basic understanding of how Docker containers work
   - Basic knowledge of installing software using a command-line interface
 # iconUrl: /learn/achievements/intro-to-kubernetes.svg
 iconUrl: http://via.placeholder.com/120x120

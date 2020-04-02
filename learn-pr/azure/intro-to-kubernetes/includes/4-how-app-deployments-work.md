@@ -9,7 +9,7 @@ Let's review the drone the components of the drone tracking application. There i
 - A private data processing service
 - A private NoSQL database
 
-Each of these services have a requirements in terms of user network access, inter process network access and data storage. Let's have a brief look at networking and storage options with Kubernetes before we look at Pod deployment options.
+Each of these services has requirements in terms of user network access, inter-process network access and data storage. Let's have a brief look at networking and storage options with Kubernetes before we look at Pod deployment options.
 
 ## Kubernetes Networking
 
@@ -34,7 +34,7 @@ pods can communicate with one another across nodes without Network Address Trans
 nodes can communicate with all Pods and vice-versa without NAT
 agents on a node can communicate with all nodes and pods.
 
-It's your responsibility to install a networking solution when you set up your Kubernetes cluster. However, Kubernetes does not specify a preferred networking solution, and there are several options available. For example, Antrea, Cisco Application Centric Infrastructure (ACI), Cilium, Flannel, Kubenet, VMware NSX-T, Weave Net, and so on. Cloud providers may also provide their networking solutions, for example, Azure Kubernetes Service support Azure Virtual Network container network interface (CNI) by default. AKS does however also support the Kubenet, Flannel, Cilium, and Antrea network plugins.
+It's your responsibility to install a networking solution when you set up your Kubernetes cluster. However, Kubernetes does not specify a preferred networking solution, and there are several options available. For example, Antrea, Cisco Application Centric Infrastructure (ACI), Cilium, Flannel, Kubenet, VMware NSX-T, Weave Net, and so on. Cloud providers may also provide their networking solutions, for example, Azure Kubernetes Service (AKS) support Azure Virtual Network container network interface (CNI) by default. AKS does however also support the Kubenet, Flannel, Cilium, and Antrea network plugins.
 
 Each of these solutions has its strengths that you can leverage. See the learn more section at the end of the module to learn more.
 
@@ -104,7 +104,7 @@ A Replication Controller uses Pod templates and defines a specified number of po
 
 ### Replica Sets
 
-Replica Sets replaces the Replication Controller in terms of the preferred way to deploy replicas. A Replica Set includes the same functionality as a Replication Controller. However, it includes an extra configuration option to include a selector value. 
+Replica Sets replaces the Replication Controller in terms of the preferred way to deploy replicas. A Replica Set includes the same functionality as a Replication Controller. However, it includes an extra configuration option to include a selector value.
 
 **[Diagram that shows five Pods group with a Selector in a Node.]**
 
@@ -116,7 +116,7 @@ A Deployment creates a management object one lever higher than a Replica Set. Th
 
 **[Diagram that shows five Pods running on a Node with the same Pod version.]**
 
-Let's assume you have five instances of your application deployed in your cluster. There are five pods running version 1.0 of your application. If you decide to update your application manually, you can terminate all Pods and then launch new Pods running version 1.1 of your application. With this strategy, you're your application will experience downtime.
+Assume you have five instances of your application deployed in your cluster. There are five pods running version 1.0 of your application. If you decide to update your application manually, you can terminate all Pods and then launch new Pods running version 1.1 of your application. With this strategy, you're your application will experience downtime.
 
 **[Diagram that shows five Pods running on a Node with two of the same version and tree with a later version.]**
 
@@ -124,7 +124,7 @@ What you instead want to do is execute a rolling update where you launch Pods ru
 
 Deployments, by default, provide a rolling update strategy when updating Pods. You also have the option to use a recreate strategy. This strategy will terminate Pods before launching new Pods.
 
-Deployments also provide you with a rollback strategy, which you can action using `kubectl`.
+Deployments also provide you with a rollback strategy, which you can execute using `kubectl`.
 
 Deployments make use of YAML-based definition files and make it easy to manage deployments. Keep in mind that deployments allow you to apply any changes to your cluster. For example, deploy new versions of an app, updating labels, running other replicas of your Pods, and so on.
 

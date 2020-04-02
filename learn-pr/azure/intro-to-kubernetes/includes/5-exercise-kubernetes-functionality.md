@@ -194,7 +194,7 @@ microk8s provides a version of `kubectl` you can use to interact with your new K
 
 Recall from earlier that a Kubernetes cluster exists out of master and worker nodes. Let's explore the new cluster to see what is installed.
 
-1. Your first step is to check the nodes that are running in your cluster. You know that microsk8s is a single node cluster install and expect to see only one node. Keep in mind though that this node is both the control plane and a worker node in the cluster. Let's confirm this configuration by running the `kubectl get nodes` command. The `kubectl get` command allows you to retrieve information about all the resources in your cluster.
+1. Your first step is to check the nodes that are running in your cluster. You know that microsk8s is a single node cluster install and expect to see only one node. Keep in mind though that this node is both the control plane and a worker node in the cluster. Confirm this configuration by running the `kubectl get nodes` command. The `kubectl get` command allows you to retrieve information about all the resources in your cluster.
 
     Run the following command.
 
@@ -325,7 +325,7 @@ Remember, that even though this method is handy, using manifest files is recomme
 
 ### Test the website installation
 
-Let's test the NGINX installation by connecting to the webserver using the Pod IP address. You'll need to find the address of the Pod first to access the site using the  `-o wide` parameter.
+Test the NGINX installation by connecting to the webserver using the Pod IP address. You'll need to find the address of the Pod first to access the site using the  `-o wide` parameter.
 
 1. Run the following command to fetch info about the Pod.
 
@@ -366,7 +366,7 @@ Let's look at how to easily increase the number of instances of the website in y
 
 ### Scale a webserver deployment on a cluster
 
-Assume that you suddenly see an increase in users that access your website and the website starts failing because of the load. You can deploy more instances of the site and split the load across the instances. Let's look at how to scale your website from one to three instances.
+Assume that you suddenly see an increase in users that access your website and the website starts failing because of the load. You can deploy more instances of the site and split the load across the instances.
 
 The `kubectl scale` command allows you to scale the number of replicas in your deployment. You specify the number of replicas you need and the name of the deployment.
 

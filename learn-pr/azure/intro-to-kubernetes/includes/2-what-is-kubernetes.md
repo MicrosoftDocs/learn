@@ -34,7 +34,7 @@ The process of deploying, updating, monitoring, and removing containers introduc
 
 Suppose you want to scale your drone tracking website. You find that at specific times during the day, you need more instances of the site's caching service to manage performance. You can solve this problem by adding additional caching service containers.
 
-Now let's assume you need to roll out a new version of the caching service. How do you make sure you update all the containers? How do you remove all the older versioned containers?
+Assume you need to roll out a new version of the caching service. How do you make sure you update all the containers? How do you remove all the older versioned containers?
 
 These types of questions justify a system to help you manage your container deployment.
 
@@ -42,27 +42,9 @@ These types of questions justify a system to help you manage your container depl
 
 Container orchestration is a concept that describes all the tasks you or a system performs to manage containers. A container orchestrator is a system that deploys and manages containerized applications. The orchestrator also dynamically responds to changes in the environment to increase or decrease the deployed instances of the managed application.
 
-In Kubernetes, these tasks include:
-
-- Deployment of containers
-
-- Self-heal of containers, for example, restarting containers that fail or replacing containers
-
-- Scale application container count up or down based on demand
-
-- Automated rolling updates and rollbacks of containers
-
-- Management of storage
-
-- Management of network traffic
-
-- Store and manage sensitive information such as usernames and passwords
-
-Keep in mind, all of the above aspects of Kubernetes requires configuration and a good understanding of the underlying technologies covered. For example, you need to understand concepts such as virtual networks, load balancers, reverse proxies, and so on to configure Kubernetes networking.
-
 ## What is a cloud-native application?
 
-A cloud-native application is an application designed and built to take advantage of services such as auto-scaling, rolling updates, self-healing, and so on. These are applications that run and is managed in an orchestration platform such as Kubernetes. A cloud-native application isn't limited to running in public or private cloud environments as they can also run in a hybrid cloud and on-premises data centers.
+A cloud-native application is an application designed and built to take advantage of services such as auto-scaling, rolling updates, self-healing, and the other tasks listed above. These are applications that run and are managed in an orchestration platform such as Kubernetes. A cloud-native application isn't limited to running in public or private cloud environments as it can also run in a hybrid cloud and on-premises data centers.
 
 ## What is a microservices application?
 
@@ -76,27 +58,45 @@ In the drone tracking example, you can see how each of the components is easily 
 
 Kubernetes is a portable, extensible open-source platform for automating deployment, scaling, and the management of containerized workloads. Kubernetes abstracts away complex container management and provides you with declarative configuration to orchestrate containers in different computing environments. This orchestration platform gives you the same ease of use and flexibility as with Platform as a Service (PaaS) and Infrastructure as a Service (IaaS) offerings.
 
-Kubernetes allows you to view your data center as one large computer. You don't worry about how and where you deploy your containers, only about deploying and scaling your applications as needed.
+### Kubernetes benefits
 
-However, this view might be slightly misleading as there are a few aspects to keep in mind:
+The benefits of using Kubernetes is based on the abstraction of tasks, these tasks include:
+
+- Deployment of containers
+
+- Self-heal of containers, for example, restarting containers that fail or replacing containers
+
+- Scale application container count up or down dynamically based on demand
+
+- Automate rolling updates and rollbacks of containers
+
+- Management of storage
+
+- Management of network traffic
+
+- Store and manage sensitive information such as usernames and passwords
+
+Keep in mind, all of the above aspects of Kubernetes requires configuration and a good understanding of the underlying technologies covered. For example, you need to understand concepts such as virtual networks, load balancers, reverse proxies, and so on to configure Kubernetes networking.
+
+### Kubernetes disadvantages
+
+Kubernetes allows you to view your data center as one large computer. You don't worry about how and where you deploy your containers, only about deploying and scaling your applications as needed. However, this view might be slightly misleading as there are a few aspects to keep in mind:
 
 - Kubernetes isn't a full PaaS offering. It operates at the container level and offers only a common set of PaaS features.
 
 - Kubernetes isn't monolithic. It's not a single installed application. Aspects such as deployment, scaling, load balancing, logging, and monitoring are all optional. You're responsible for finding the best solution that fits your needs to address these aspects.
 
-- Kubernetes doesn't limit the types of applications that can run. If your application can run in a container, it can run on Kubernetes. Your developers need to understand concepts such as microservices architecture, to make optimal use of container solutions.
+- Kubernetes doesn't limit the types of applications that can run on the platform. If your application can run in a container, it can run on Kubernetes. However, your developers need to understand concepts such as microservices architecture, to make optimal use of containerized solutions.
 
 - Kubernetes doesn't provide middleware, data-processing frameworks, databases, caches, nor cluster storage systems. All these items are run as containers or as part of another service offering.
 
-- A Kubernetes deployment is configured as a cluster. A cluster consists of at least one master and one or more workers machines. These machines can be physical hardware or VMs.
+You're responsible for maintaining your Kubernetes environment. For example, you need to manage OS upgrades and the Kubernetes installation and upgrades. You also manage the hardware configuration of the host machines, such as networking, memory, and storage.
 
-With all the benefits you receive with Kubernetes, keep in mind that you're responsible for maintaining your Kubernetes cluster. For example, you need to manage OS upgrades and the Kubernetes installation and upgrades. You also manage the hardware configuration of the host machines, such as networking, memory, and storage.
+Cloud services such Azure Kubernetes Service (AKS),  greatly reduce these challenges by providing a hosted Kubernetes environment and makes it simple to deploy and manage containerized applications in Azure. With AKS, we get the benefits of open-source Kubernetes without the complexity or operational overhead compared to running our own custom Kubernetes cluster.
 
 > [!NOTE]
 > Kubernetes is sometimes abbreviated to **K8s**. The 8 represents the eight characters between the K and the s of the word K[*ubernete*]s.
 
-## What is the difference between Kubernetes and Docker?
+## The use of Docker in Kubernetes
 
-Your company's drone tracking solution is currently deployed as docker containers in Docker. A common question asked by both team members and management is, "What the difference is between Docker and Kubernetes?".
-
-For Kubernetes to run containers, it needs to support a container runtime. Docker is such a container runtime. The container runtime manages the containers. For example, it starts and stops the containers that run in the cluster. Kubernetes manages the runtime container. Keep in mind that Docker isn't the only container runtime Kubernetes supports.
+For Kubernetes to run containers, it needs to support a container runtime. Kubernetes is responsible for managing the container runtime and does not directly manage containers. The container runtime, is the object that is responsible for managing containers. For example, the container runtime starts, stops and reports on the container's status. Docker is such a container runtime.

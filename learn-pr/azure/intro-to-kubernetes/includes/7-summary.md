@@ -21,6 +21,6 @@ You were looking for a container orchestration platform to deploy and manage you
 ## Learn more
 
 - [Kubernetes](https://kubernetes.io)
-- [Azure Kubernetes Services](https://azure.microsoft.com/services/kubernetes-service/)
+- [Azure Kubernetes Service](https://azure.microsoft.com/services/kubernetes-service/)
 - [microk8s](https://microk8s.io)
 - [Multipass GitHub repository](https://github.com/canonical/multipass/releases)
