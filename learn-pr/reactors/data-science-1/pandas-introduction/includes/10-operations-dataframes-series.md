@@ -6,7 +6,7 @@ Index and column alignment gets maintained in operations between a DataFrame and
 > - Add output for commands.
 >
 
-```input
+```Python
 df3 = pd.DataFrame(rng.randint(10, size=(3, 4)), columns=list('WXYZ'))
 df3
 ```
@@ -16,7 +16,7 @@ df3
 TBD
 ```
 
-```input
+```Python
 df3 - df3.iloc[0]
 ```
 
@@ -27,7 +27,7 @@ TBD
 
 But what if you need to operate column-wise? You can do this by using object methods and specifying the axis keyword.
 
-```input
+```Python
 df3.subtract(df3['X'], axis=0)
 ```
 
@@ -38,7 +38,7 @@ TBD
 
 And when you do operations between DataFrames and Series operations, you still get automatic index alignment:
 
-```input
+```Python
 halfrow = df3.iloc[0, ::2]
 halfrow
 ```
@@ -50,7 +50,7 @@ TBD
 
 Note that the output from that operation was transposed. That was so that we can subtract it from the DataFrame:
 
-```input
+```Python
 df3 - halfrow
 ```
 

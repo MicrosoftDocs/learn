@@ -13,7 +13,7 @@ Both Series and DataFrames in pandas have explicit indices that enable you to re
 
 It's worth the time to get to know the properties of the Index object. Let's return to an example from earlier in the section to examine these properties.
 
-```input
+```Python
 series_example = pd.Series([-0.5, 0.75, 1.0, -2], index=['a', 'b', 'c', 'd'])
 ind = series_example.index
 ind
@@ -26,7 +26,7 @@ TBD
 
 The Index works a lot like an array. we have already seen how to use standard Python indexing notation to retrieve values or slices:
 
-```input
+```Python
 ind[1]
 ind[::2]
 ```
@@ -38,7 +38,7 @@ TBD
 
 But Index objects are immutable; you cannot be modified via the normal means:
 
-```input
+```Python
 ind[1] = 0
 ```
 
@@ -51,7 +51,7 @@ This immutability is a good thing: it makes it safer to share indices between mu
 
 In addition to being array-like, a Index also behaves like a fixed-size set, including following many of the conventions used by Python's built-in set data structure, so that unions, intersections, differences, and other combinations can be computed in a familiar way. Let's play around with this to see it in action.
 
-```input
+```Python
 ind_odd = pd.Index([1, 3, 5, 7, 9])
 ind_prime = pd.Index([2, 3, 5, 7, 11])
 ```
@@ -63,7 +63,7 @@ TBD
 
 In the code cell below, try out the intersection (ind_odd & ind_prime), union (ind_odd | ind_prime), and the symmetric difference (ind_odd ^ ind_prime) of ind_odd and ind_prime.
 
-```input
+```Python
 ???
 ```
 

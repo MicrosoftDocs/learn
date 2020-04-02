@@ -7,7 +7,7 @@ The same kind of alignment takes place in both dimension (columns and indices) w
 > - There are a few input commands where the input syntax is not specified. Search on "???".
 >
 
-```input
+```Python
 df1 = pd.DataFrame(rng.randint(0, 20, (2, 2)),
                    columns=list('AB'))
 df1
@@ -18,7 +18,7 @@ df1
 TBD
 ```
 
-```input
+```Python
 df2 = pd.DataFrame(rng.randint(0, 10, (3, 3)),
                    columns=list('BAC'))
 df2
@@ -31,7 +31,7 @@ TBD
 
 Add df1 and df2. Is the output what you expected?
 
-```input
+```Python
 ???
 ```
 
@@ -44,7 +44,7 @@ Even though we passed the columns in a different order in df2 than in df1, the i
 
 You can also use fill values for missing values with Data Frames. In this example, let's fill the missing values with the mean of all values in df1 (computed by first stacking the rows of df1):
 
-```input
+```Python
 fill = df1.stack().mean()
 df1.add(df2, fill_value=fill)
 ```

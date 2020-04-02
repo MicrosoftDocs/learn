@@ -16,7 +16,7 @@ The name _pandas_ actually has nothing to do with Chinese bears, but rather come
 
 Just as you imported NumPy with the alias `np`, we will import pandas under the alias `pd`:
 
-```input
+```Python
 import pandas as pd
 ```
 
@@ -24,7 +24,7 @@ As with the NumPy convention, `pd` is an important and widely used convention in
 
 As we progress through this module, don't forget that IPython provides the tab-completion feature and function documentation with the `?` character. If you don't understand anything about a function you see in this module, take a moment and read the documentation. The docs can help a great deal. As a reminder, to display the built-in pandas documentation, use this code:
 
-```input
+```Python
 ipython
 pd?
 ```

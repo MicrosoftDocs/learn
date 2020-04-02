@@ -9,12 +9,12 @@ As a refresher, a Series object acts in many ways like both a one-dimensional nd
 
 Like a dictionary, the Series object provides a mapping from a collection of arbitrary keys to a collection of arbitrary values. Back to an old example:
 
-```input
+```Python
 series_example2 = pd.Series([-0.5, 0.75, 1.0, -2], index=['a', 'b', 'c', 'd'])
 series_example2
 ```
 
-```input
+```Python
 series_example2['b']
 ```
 
@@ -25,15 +25,15 @@ TBD
 
 You can also examine the keys/indices and values using dictionary-like Python tools:
 
-```input
+```Python
 'a' in series_example2
 ```
 
-```input
+```Python
 series_example2.keys()
 ```
 
-```input
+```Python
 list(series_example2.items())
 ```
 
@@ -44,7 +44,7 @@ TBD
 
 As with dictionaries, you can extend a dictionary by assigning to a new key, you can extend a Series by assigning to a new index value:
 
-```input
+```Python
 series_example2['e'] = 1.25
 series_example2
 ```
@@ -60,7 +60,7 @@ Because Series also provide array-style functionality, you can use the NumPy tec
 
 ### Slicing using the explicit index
 
-```input
+```Python
 series_example2['a':'c']
 ```
 
@@ -71,7 +71,7 @@ TBD
 
 ### Slicing using the implicit integer index
 
-```input
+```Python
 series_example2[0:2]
 ```
 
@@ -82,7 +82,7 @@ TBD
 
 ### Masking
 
-```input
+```Python
 series_example2[(series_example2 > -1) & (series_example2 < 0.8)]
 ```
 
@@ -93,7 +93,7 @@ TBD
 
 ### Fancy indexing
 
-```input
+```Python
 series_example2[['a', 'e']]
 ```
 
@@ -113,11 +113,11 @@ A great thing about pandas is that you can use a lot different things for your e
 
 The loc attribute allows indexing and slicing that always references the explicit index:
 
-```input
+```Python
 series_example2.loc['a']
 ```
 
-```input
+```Python
 series_example2.loc['a':'c']
 ```
 
@@ -128,11 +128,11 @@ TBD
 
 The iloc attribute enables indexing and slicing using the implicit, Python-style index:
 
-```input
+```Python
 series_example2.iloc[0]
 ```
 
-```input
+```Python
 series_example2.iloc[0:2]
 ```
 

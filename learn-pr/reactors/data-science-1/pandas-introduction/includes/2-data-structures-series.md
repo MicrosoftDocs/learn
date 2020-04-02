@@ -12,7 +12,7 @@ Both Series and DataFrames are a lot like the `ndarrays` you encountered in the 
 
 A pandas `Series` is a lot like an `ndarray` in NumPy, a one-dimensional array of indexed data. You can create a simple `Series` from an array of data like this:
 
-```input
+```Python
 series_example = pd.Series([-0.5, 0.75, 1.0, -2])
 series_example
 ```
@@ -28,7 +28,7 @@ What is different from an ndarray is that the Series automatically wraps both a 
 
 Try accessing the values first; they are just a familiar NumPy array:
 
-```input
+```Python
 series_example.values
 ```
 
@@ -39,7 +39,7 @@ TBD
 
 The index is also an array-like object:
 
-```input
+```Python
 series_example.index
 ```
 
@@ -50,7 +50,7 @@ TBD
 
 Just as with ndarras, you can access specific data elements in a Series via the familiar Python square-bracket index notation and slicing:
 
-```input
+```Python
 series_example[1]
 series_example[1:3]
 ```
@@ -62,7 +62,7 @@ TBD
 
 Despite a lot of similarities, pandas Series have an important distinction from NumPy ndarrays: whereas ndarrays have implicitly defined integer indices (as do Python lists), pandas Series have explicitly defined indices. The best part is that you can set the index:
 
-```input
+```Python
 series_example2 = pd.Series([-0.5, 0.75, 1.0, -2], index=['a', 'b', 'c', 'd'])
 series_example2
 ```
@@ -74,7 +74,7 @@ TBD
 
 These explicit indices work exactly the way you would expect them to:
 
-```input
+```Python
 series_example2['b']
 ```
 
@@ -95,7 +95,7 @@ With explicit indices in the mix, a Series is basically a fixed-length, ordered 
 
 But the connection between Series and dictionaries is nevertheless very real. You can construct a Series object directly from a Python dictionary:
 
-```input
+```Python
 population_dict = { 'France': 65429495,
                     'Germany': 82408706,
                     'Russia': 143910127,
@@ -113,7 +113,7 @@ Did you see what happened there? The order of the keys Russia and Japan in the s
 
 So, at one level, you can interact with Series as you would with dictionaries:
 
-```input
+```Python
 population['Russia']
 But you can also do powerful array-like operations with Series like slicing:
 ```
@@ -125,7 +125,7 @@ You can also add elements to a Series the way that you would to an ndarray. Try 
 
 You can also add elements to a Series the way that you would to an ndarray. Try it in the code cell below:
 
-```input
+```Python
 ???
 ```
 
@@ -136,7 +136,7 @@ TBD
 
 ### Run population Series
 
-```input
+```Python
 population['Albania'] = 2937590
 ```
 
@@ -150,7 +150,7 @@ What order do the keys appear in when you run population? Is it what you expecte
 
 Another useful Series feature (and definitely a difference from dictionaries) is that Series automatically aligns differently indexed data in arithmetic operations:
 
-```input
+```Python
 pop2 = pd.Series({'Spain': 46432074, 'France': 102321, 'Albania': 50532})
 population + pop2
 ```
