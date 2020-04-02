@@ -9,38 +9,41 @@ In a second step, we'll code and execute a program to simulate data coming from 
 ## Setup IoT Hub and devices
 
 1. Make sure you've activated the sandbox, using the button above. The sandbox will give you access to free Azure resources for the duration of this module.
-2. In the below, we're using the [Azure IoT extension for Azure CLI](https://github.com/Azure/azure-iot-cli-extension). To install the extension, type the following command in the terminal:
+2. In the following code, we're using the [Azure IoT extension for Azure CLI](https://github.com/Azure/azure-iot-cli-extension). To install the extension, type the following command in the terminal:
     > [!NOTE]
     > In order to paste code and commands in the Azure Shell terminal, you need to right click and select "Paste"
 
     ```Azure CLI
     az extension add --name azure-cli-iot-ext
+
     ```
 
-3. Run this command to create a new IoT Hub instance.
+3. Open a text file, copy the following code in. Replace `{your iot hub name}` with a name for your IoT Hub. You can then run this command to create a new IoT Hub instance.
     >[!IMPORTANT]
     >Your hub names are publicly discoverable, so take this into account when entering names. Hub names must also be unique, as they form part of the Azure URL. You can use a name like *cheesecavesmanager-anID*
 
     ```Azure CLI
-    az iot hub create --name {your iot hub name} --resource-group <rgn>[sandbox resource group name]</rgn> --sku S1
+    iotHubName='{your iot hub name}'
+    az iot hub create --name $iotHubName --resource-group <rgn>[sandbox resource group name]</rgn> --sku S1
     ```
 
     > [!NOTE]
     > Across the module you will have to execute command like the above one in the Azure Shell that might take some time to execute. Be patient as Azure creates and configures resources for you.
-4. Run this command to create the three devices.
+4. Open a text file, copy the following code in. Replace `{your iot hub name}` with the name you've picked up in the previous step. Then, run this command to create the three devices.
 
     ```Azure CLI
-    az iot hub device-identity create --hub-name {your iot hub name} --device-id TruckDevice
-    az iot hub device-identity create --hub-name {your iot hub name} --device-id AirplaneDevice
-    az iot hub device-identity create --hub-name {your iot hub name} --device-id ContainerDevice
+    az iot hub device-identity create --hub-name $iotHubName --device-id TruckDevice
+    az iot hub device-identity create --hub-name $iotHubName --device-id AirplaneDevice
+    az iot hub device-identity create --hub-name $iotHubName --device-id ContainerDevice
     ```
 
-5. Run this command to get connection string for the three devices. Don't close or clean the window, as you'll need these values in the next step.
+5. Run this command to get connection string for the three devices. Don't close or clean the window, as you'll need these values in the next step. You can copy them in a text file for convenience.
 
     ```Azure CLI
-    az iot hub device-identity show-connection-string --hub-name {your iot hub name} --device-id TruckDevice --output tsv
-    az iot hub device-identity show-connection-string --hub-name {your iot hub name} --device-id AirplaneDevice --output tsv
-    az iot hub device-identity show-connection-string --hub-name {your iot hub name} --device-id ContainerDevice --output tsv
+    az iot hub device-identity show-connection-string --hub-name $iotHubName --device-id TruckDevice --output tsv
+    az iot hub device-identity show-connection-string --hub-name $iotHubName --device-id AirplaneDevice --output tsv
+    az iot hub device-identity show-connection-string --hub-name $iotHubName --device-id ContainerDevice --output tsv
+
     ```
 
 ## Create the device simulator app
@@ -51,24 +54,27 @@ As Time Series Insights needs time-stamped data, we'll write some code to simula
 
 1. In the Azure Shell terminal, create a folder called **simulator** and navigate to it:
 
-    ```bash
+    ```Azure CLI
     mkdir simulator
     cd simulator
+
     ```
 
-2. Enter the below commands in the terminal. The first command creates a **Program.cs** file in your folder, along with a project file and the second one gives your app access to the required .NET packages.
+2. Enter the following commands in the terminal. The first command creates a **Program.cs** file in your folder, along with a project file and the second one gives your app access to the required .NET packages.
 
-    ```bash
+    ```Azure CLI
     dotnet new console
     dotnet restore
+
     ```
 
 3. In the terminal, install the required libraries using the following commands:
 
-    ```bash
+    ```Azure CLI
     dotnet add package Microsoft.Azure.Devices.Client
     dotnet add package Microsoft.Azure.Devices.Shared
     dotnet add package Newtonsoft.Json
+
     ```
 
 At this point, your project is ready for coding.
@@ -77,8 +83,9 @@ At this point, your project is ready for coding.
 
 1. Open the **Program.cs** file for the device app typing the following command in the Azure shell:
 
-    ```bash
+    ```Azure CLI
     code Program.cs
+
     ```
 
 2. Delete all the content form the document.
@@ -293,30 +300,31 @@ At this point, your project is ready for coding.
     private readonly static string connectionString_Container = "{Your Container device connection string here}";
     ```
     
-    At the end, the code should look like this
+    At the end, the code should look like the following code
 
     ```csharp
     private readonly static string connectionString_Truck = "HostName=chmaiotlearn.azure-devices.net;DeviceId=ContainerDevice;SharedAccessKey=ABCDeFgHijkLJ2rNffx2SSEdEWtgaxeDYKwVflBuQJY=";
     ```
 
-5. Save the **Program.cs** file and close the editor (to close the editor, find the ellipse "..." menu on the right-hand side of the editor).
+5. Save the **Program.cs** file and close the editor. To close the editor, find the ellipse "..." menu on the right-hand side of the editor and click **Close Editor**.
 
 
 ## Simulate data
 
 This program will generate data for the three sensors. To start sending data to IoT Hub, you just need to run the following command in Azure Cloud Shell.
 
-```azcli
+```Azure CLI
 dotnet run
+
 ```
 
 > [!NOTE]
 > You need to run this program for a couple of minutes in order to get sufficient data.
 > You can leave this terminal window open while doing the next steps by opening the next unit in a new tab.
 
-Once the DeviceSimulation app is running, it will begin outputting sensor data to the terminal. This is the sensor data that's sent to Azure IoT Hub.
+Once the DeviceSimulation app is running, it will begin outputting sensor data to the terminal. It's the same data that's sent to Azure IoT Hub.
 
-When the DeviceSimulation app is running, the Terminal output will look similar to the following:
+When the DeviceSimulation app is running, the Terminal output will look similar to the following output:
 
     ```
      12/27/2019 8:51:30 PM > Sending TRUCK message: {"temperature":35.15660452608195,"humidity":48.422323938240865}

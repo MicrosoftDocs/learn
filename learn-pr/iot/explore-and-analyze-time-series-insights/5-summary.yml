@@ -38,7 +38,10 @@ quiz:
     - content: 'Warm storage'
       isCorrect: false
       explanation: Warm storage can store up to 31 days of data.
-  
+    - content: 'Cosmos DB storage'
+      isCorrect: false
+      explanation: You can't connect Cosmos DB to Time Series Insights.
+ 
   - content: 'What is the purpose of Time Series Insights?'
     choices:  
     - content: 'Time Series Insights is a service that allows you to connect your IoT devices'
@@ -59,4 +62,7 @@ quiz:
     - content: 'Warm storage'
       isCorrect: true
       explanation: Warm storage allows to query latest data faster.
-
+    - content: 'Cosmos DB storage'
+      isCorrect: false
+      explanation: You can't connect Cosmos DB to Time Series Insights.
+ 

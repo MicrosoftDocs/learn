@@ -13,13 +13,15 @@ You'll now specify basic
 1. In the **Resource group** dropdown, select the resource group created by the sandbox, <rgn>[sandbox resource group name]</rgn>.
 1. In the **Location** dropdown, select the same location you choose for the IoT Hub in the previous unit.
 
+![Azure Portal screenshot](../media/explore6.png)
+
 ## Configure Storage options
 
 You'll now need to select a pricing option. For using Time Series Insights (TSI) Preview, select **PAYG** option.
 Time Series Insights Preview allows you to store your data in two different stores:
 
 - **A cold store**, for long-term durable storage. It's the default storage option.
-- **A Warm store**, managed by Time Series Insights, optimized for higher query performance, and unlimited queries. It's an optional feature that can be enabled at creation time or later on.
+- **A warm store**, managed by Time Series Insights, optimized for higher query performance, and unlimited queries. It's an optional feature that can be enabled at creation time or later on.
 
 For this module, we'll enable both. Time Series Insights needs a way to partition your data, with a value contained
 in your messages. That's the name of the property containing your value that you need to specify next. 
@@ -33,6 +35,8 @@ in your messages. That's the name of the property containing your value that you
 1. In the **Storage account replication** dropdown, for this course, leave _Locally redundant storage (LRS)_.
 1. In the **Enable warm store** selector, select _Yes_.
 1. Click on **Next: Event Source >>** button.
+
+![Azure Portal screenshot](../media/explore7.png)
 
 ## Setup event source
 
@@ -57,6 +61,9 @@ We'll now create a dedicated consumer group for the IoT Hub. It allows you to ha
 1. Under the **TIMESTAMP** section, leave the **Property Name** blank.
 1. Click on the **Review + create** button at the bottom-left of the page.
 1. Click on **Create** button.
+
+
+![Azure Portal screenshot](../media/explore8.png)
 
 Deployment of Time Series Insights (TSI) will take a couple of minutes to complete. Once your Time Series Insights deployment is complete, you've completed this unit.
 

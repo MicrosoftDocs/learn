@@ -1,6 +1,11 @@
+
+![Time Series Insights Banner](../media/explore-and-analyze-time-stamped-data-with-Time-Series-Insights.png)
+
+Time Series Insights allows you to quickly and easily get sense of IoT generated date. Your analysis can span across the last hours or the last years.
+
 In this module, you learned how to:
 
-- Create an IoT Hub and generating data from simulated devices
+- Create an IoT Hub and generating data from simulated devices, with Azure CLI and a console application
 - Create a Time Series Insights (TSI) Environment
 - Connect to IoT Hub with Time Series Insights (TSI)
 - Use Ad Hoc queries to gain insights
@@ -11,9 +16,9 @@ You can now stop your device simulator.
 
 All resources created using the sandbox will be automatically deleted. If you created any resources outside of the sandbox, delete them from your Azure portal.
 
-## Next steps
+## Learn more
 
-Take your interest further with:
+Take your interest further with the documentation pages below.
 
 - [Time Series Modeling](https://docs.microsoft.com/azure/time-series-insights/time-series-insights-update-tsm)
 - [Azure Time Series Insights documentation](https://docs.microsoft.com/azure/time-series-insights/)

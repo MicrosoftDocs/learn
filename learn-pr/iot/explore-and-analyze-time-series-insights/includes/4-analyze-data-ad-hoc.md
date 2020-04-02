@@ -12,6 +12,7 @@ Your browser will now open a new window with Time Series Insights main page.
 
 ![alt-text](../media/explore2.png)
 
+> [!TIP]
 > In a real project, you can bookmark this link for future usages, so you can explore your data without having to go through Azure Portal First.
 
 ## Explore Data ingested by Time Series Insights
@@ -30,7 +31,7 @@ You should now have a similar view, with the graph lines that may be different d
 ![alt-text](../media/explore3.png)
 
 > [!TIP]
-When you found something interesting, you can save your setup by clicking the **Save** button at the top of the screen. You can also export your graph or your data by clicking the **More actions** button on the right of the screen.
+> When you found something interesting, you can save your setup by clicking the **Save** button at the top of the screen. You can also export your graph or your data by clicking the **More actions** button on the right of the screen.
 
 ## Compare time-sensitive data
 
@@ -45,7 +46,7 @@ You can achieve Time comparative analysis with Time Series Insights.
 1. Click on the **Show Advanced explore options for time Series** button at the bottom of the page (![alt-text](../media/explore4.png))
 1. In the popup, you can change the time frame you're using for comparing data. You can select **30 minutes earlier** and click on **Apply** button.
 
-You'll now see two lined on your graph, with a different shade of color. As you can see in the screenshot below, there's quite a difference between the actual temperature and the temperature 30 minutes ago.
+You'll now see two lines on your graph, with a different shade of color. As you can see in the screenshot below, there's quite a difference between the actual temperature and the temperature 30 minutes ago.
 
 ![alt-text](../media/explore5.png)
 
