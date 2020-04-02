@@ -1,0 +1,13 @@
+uid: learn.reactors.data-science-1.python-introduction.10-dictionaries
+title: Dictionaries
+metadata:
+  title: Use dictionaries in Python for data science
+  description: Learn how to use dictionaries in Python for data science.
+  ms.date: 05/19/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-reactors
+durationInMinutes: 5
+content: |
+  [!include[](includes/10-dictionaries.md)] 
