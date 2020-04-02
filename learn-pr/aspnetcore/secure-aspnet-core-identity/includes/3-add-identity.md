@@ -11,30 +11,50 @@ In this unit, Identity will be added to the existing ASP.NET Core Razor Pages pr
 1. Install the ASP.NET Core code scaffolder:
 
     ```dotnetcli
-    dotnet tool install -g dotnet-aspnet-codegenerator --version 2.2.4
+    dotnet tool install dotnet-aspnet-codegenerator
     ```
 
     The following output appears:
 
     ```console
     You can invoke the tool using the following command: dotnet-aspnet-codegenerator
-    Tool 'dotnet-aspnet-codegenerator' (version '<VERSION>') was successfully installed.
+    Tool 'dotnet-aspnet-codegenerator' (version '<VERSION>') was successfully installed. Entry is added to the manifest file /home/<user>/contoso-pets/src/ContosoPets.Ui/.config/dotnet-tools.json.
     ```
 
-    The scaffolder is a .NET Core global tool that will:
+    The scaffolder is a .NET Core tool that will:
 
     * Be used to add the default Identity components to the project.
     * Enable customization of Identity UI components in the next unit.
     * Be invoked via `dotnet aspnet-codegenerator` in this module.
 
-1. Add the following NuGet package to the project:
+1. Add the following NuGet packages to the project:
+
+    ::: zone pivot="pg"
 
     ```dotnetcli
-    dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design \
-        --version 2.2.4
+    dotnet add packages Microsoft.VisualStudio.Web.CodeGeneration.Design
+    dotnet add package Microsoft.AspNetCore.Identity.UI
+    dotnet add package Microsoft.AspNetCore.Identity.EntityFrameworkCore
+    dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL
+    dotnet add package Microsoft.EntityFrameworkCore.Design 
     ```
 
-    The package installs code generation templates that are used by the scaffolder.
+    ::: zone-end
+
+    ::: zone pivot="sql"
+
+    ```dotnetcli
+    dotnet add packages Microsoft.VisualStudio.Web.CodeGeneration.Design
+    dotnet add package Microsoft.AspNetCore.Identity.UI
+    dotnet add package Microsoft.AspNetCore.Identity.EntityFrameworkCore
+    dotnet add package System.Data.SqlClient
+    dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+    dotnet add package Microsoft.EntityFrameworkCore.Design 
+    ```
+
+    ::: zone-end
+
+    These packages install code generation templates and dependencies that are used by the scaffolder.
 
     > [!TIP]
     > To view the available generators:
@@ -71,20 +91,6 @@ In this unit, Identity will be added to the existing ASP.NET Core Razor Pages pr
 
     Areas provide a way to partition an ASP.NET Core web app into smaller functional groups.
 
-::: zone pivot="pg"
-
-## Add the PostgreSQL database provider
-
-Run the following command from the project root to install the PostgreSQL database provider for EF Core:
-
-```dotnetcli
-dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL --version 2.2.4
-```
-
-This NuGet package provides EF Core with knowledge of how to interact with a PostgreSQL database.
-
-::: zone-end
-
 ## Configure the database connection
 
 1. Replace the `Configure` method of *:::no-loc text="Areas/Identity/IdentityHostingStartup.cs":::* with the following code:
@@ -96,15 +102,18 @@ This NuGet package provides EF Core with knowledge of how to interact with a Pos
     {
         builder.ConfigureServices((context, services) => {
             var connBuilder = new NpgsqlConnectionStringBuilder(
-                context.Configuration.GetConnectionString("ContosoPetsAuthConnection"));
-            connBuilder.Username = context.Configuration["DbUsername"];
-            connBuilder.Password = context.Configuration["DbPassword"];
+                context.Configuration.GetConnectionString("ContosoPetsAuthConnection"))
+            {
+                Username = context.Configuration["DbUsername"];
+                Password = context.Configuration["DbPassword"];
+            };
+
 
             services.AddDbContext<ContosoPetsAuth>(options =>
                 options.UseNpgsql(connBuilder.ConnectionString));
 
             services.AddDefaultIdentity<IdentityUser>()
-                .AddDefaultUI(UIFramework.Bootstrap4)
+                .AddDefaultUI()
                 .AddEntityFrameworkStores<ContosoPetsAuth>();
         });
     }
@@ -119,15 +128,17 @@ This NuGet package provides EF Core with knowledge of how to interact with a Pos
     {
         builder.ConfigureServices((context, services) => {
             var connBuilder = new SqlConnectionStringBuilder(
-                context.Configuration.GetConnectionString("ContosoPetsAuthConnection"));
-            connBuilder.UserID = context.Configuration["DbUsername"];
-            connBuilder.Password = context.Configuration["DbPassword"];
+                context.Configuration.GetConnectionString("ContosoPetsAuthConnection"))
+            {
+                UserID = context.Configuration["DbUsername"],
+                Password = context.Configuration["DbPassword"]
+            };
 
             services.AddDbContext<ContosoPetsAuth>(options =>
                 options.UseSqlServer(connBuilder.ConnectionString));
 
             services.AddDefaultIdentity<IdentityUser>()
-                .AddDefaultUI(UIFramework.Bootstrap4)
+                .AddDefaultUI()
                 .AddEntityFrameworkStores<ContosoPetsAuth>();
         });
     }
@@ -140,13 +151,13 @@ This NuGet package provides EF Core with knowledge of how to interact with a Pos
     * The Azure Key Vault configuration provider is implicitly used to retrieve the database username and password:
 
         ```csharp
-        connBuilder.UserID = context.Configuration["DbUsername"];
-        connBuilder.Password = context.Configuration["DbPassword"];
+        UserID = context.Configuration["DbUsername"];
+        Password = context.Configuration["DbPassword"];
         ```
 
     * The database username and password are injected into the connection string stored in *:::no-loc text="appsettings.json":::*.
     * The EF Core database context class, named `ContosoPetsAuth`, is configured with the appropriate connection string.
-    * The Identity services are registered, including the default UI (based on Bootstrap version 4), token providers, and cookie-based authentication.
+    * The Identity services are registered, including the default UI, token providers, and cookie-based authentication.
 
 1. Also in *:::no-loc text="IdentityHostingStartup.cs":::*, add the following code to the block of `using` statements at the top. Save your changes.
 
@@ -212,6 +223,25 @@ This NuGet package provides EF Core with knowledge of how to interact with a Pos
 
 ## Update the database
 
+1. Install the Entity Framework Core migration tool:
+
+    ```dotnetcli
+    dotnet tool install dotnet-ef
+    ```
+
+    The following output appears:
+
+    ```console
+    You can invoke the tool from this directory using the following commands: 'dotnet tool run dotnet-ef' or 'dotnet dotnet-ef'.
+    Tool 'dotnet-ef' (version '3.0.0') was successfully installed. Entry is added to the manifest file /home/<user>/contoso-pets/src/ContosoPets.Ui/.config/dotnet-tools.json.
+    ```
+
+    The migration tool is a .NET Core tool that will:
+
+    * Generate code called a migration to create and update the database that supports the Identity entity model. 
+    * Execute migrations against an existing database.
+    * Be invoked via `dotnet ef` in this module.
+    
 1. Create and run an EF Core migration to update the database:
 
     ```dotnetcli
