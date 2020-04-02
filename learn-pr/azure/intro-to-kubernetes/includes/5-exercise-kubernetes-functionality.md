@@ -128,7 +128,7 @@ The status command in microk8s allows you to view the status of the installed ad
     sudo microk8s.status --wait-ready
     ```
 
-    Notice there are several add-ons that you can enable on your cluster. Don't worry about the add-ons you don't recognize. You'll enable only three of these add-ons in your cluster.
+    Notice there are several add-ons you can enable on your cluster. Don't worry about the add-ons you don't recognize. You'll enable only three of these add-ons in your cluster.
 
     ```output
     ubuntu@microk8s-vm:~$ sudo microk8s.status --wait-ready

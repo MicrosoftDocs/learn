@@ -1,6 +1,6 @@
 Our goal was to help you evaluate whether Kubernetes would be a good choice as a container orchestration platform for your business. We looked at several features that enhance the AKS Kubernetes offering. We saw how these features could help you decide if Kubernetes is a good fit for new projects, or convince you to move to Kubernetes to orchestrate current container deployments.
 
-You saw how Kubernetes provide for:
+You saw how Kubernetes provides for:
 
 - The deployment of containers
 
