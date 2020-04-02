@@ -1,3 +1,3 @@
 > [!NOTE]
 > When using the Microsoft Learn Sandbox, it's always good to verify you are in the **Microsoft Learn Sandbox** tenant when working within the Azure portal. The tenant name is listed either under your email at the top of page or above your account information when you select the user icon.
-> Additionally, make sure you have activated the sandbox at the start of any exercise that uses the sandbox. This will ensure you are allocated your own resource group to use for resources created in the exercise.
+> Additionally, make sure you have activated the sandbox at the start of any exercise that uses the sandbox. This will ensure you are allocated an Azure subscription and your own resource group to use for resources created in the exercise.
