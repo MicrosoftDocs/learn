@@ -6,7 +6,7 @@
 Besides numbers, Python can also manipulate strings. Strings can be enclosed in single quotes ('...') or double quotes ("...") with the same result. Use \ to escape quotes; that is, use \ in order to use quotation marks within the string itself:
 
 
-```input
+```Python
 'spam eggs'  # Single quotes.
 ```
 
@@ -16,7 +16,7 @@ Besides numbers, Python can also manipulate strings. Strings can be enclosed in 
 ```
 
 
-```input
+```Python
 'doesn\'t'  # Use \' to escape the single quote...
 ```
 
@@ -26,7 +26,7 @@ Besides numbers, Python can also manipulate strings. Strings can be enclosed in 
 ```
 
 
-```input
+```Python
 "doesn't"  # ...or use double quotes instead.
 ```
 
@@ -38,7 +38,7 @@ Besides numbers, Python can also manipulate strings. Strings can be enclosed in 
 In the interactive interpreter and Jupyter Notebooks, the output string is enclosed in quotes and special characters are escaped with backslashes. Although this output sometimes looks different from the input (the enclosing quotes could change), the two strings are equivalent. The string is enclosed in double quotes if the string contains a single quote and no double quotes; otherwise, it’s enclosed in single quotes. The print() function produces a more readable output by omitting the enclosing quotes and by printing escaped and special characters:
 
 
-```input
+```Python
 '"Isn\'t," she said.'
 ```
 
@@ -48,7 +48,7 @@ In the interactive interpreter and Jupyter Notebooks, the output string is enclo
 ```
 
 
-```input
+```Python
 print('"Isn\'t," she said.')
 ```
 
@@ -60,7 +60,7 @@ print('"Isn\'t," she said.')
 If you don't want escaped characters (prefaced by \) to be interpreted as special characters, use raw strings by adding an r before the first quote:
 
 
-```input
+```Python
 print('C:\some\name')  # Here \n means newline!
 # Im adding some more comments - woo!
 ```
@@ -72,7 +72,7 @@ ame
 ```
 
 
-```input
+```Python
 print(r'C:\some\name')  # Note the r before the quote.
 ```
 
@@ -88,7 +88,7 @@ String literals can span multiple lines and are delineated by triple-quotes: """
 Because Python doesn't provide a means for creating multi-line comments, developers often just use triple quotes for this purpose. In a Jupyter notebook, however, such quotes define a string literal that appears as the output of a code cell:
 
 
-```input
+```Python
 """
 Everything between the first three quotes, including new lines,
 is part of the multi-line comment. Technically, the Python interpreter
@@ -107,7 +107,7 @@ For this reason, it's best in notebooks to use the # comment character at the be
 Strings can be concatenated (glued together) with the + operator, and repeated with *:
 
 
-```input
+```Python
 # 3 times 'un', followed by 'ium'
 3 * 'un' + 'ium'
 ```
@@ -124,7 +124,7 @@ The order of operations applies to operators when they are used with strings as 
 Two or more string literals placed next to each other are automatically concatenated:
 
 
-```input
+```Python
 'Py' 'thon'
 ```
 
@@ -136,7 +136,7 @@ Two or more string literals placed next to each other are automatically concaten
 However, to concatenate variables or a variable and a literal, use +:
 
 
-```input
+```Python
 prefix = 'Py'
 prefix + 'thon'
 ```

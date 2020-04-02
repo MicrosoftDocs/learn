@@ -15,7 +15,7 @@ Now that you have a working understanding of the fundamental data types and stru
 
 If statements in Python are similar to those in other programming languages like Java, and they form the backbone of the logical flow of most programs.
 
-```input
+```Python
 y = 6
 if y % 2 == 0:
     print('Even')
@@ -33,7 +33,7 @@ Did you notice the indentation for print under the if statement? That indentatio
 
 To cover more contingencies without having to construct a follow-on if statement, you can add an else statement:
 
-```input
+```Python
 y = 7
 if y % 2 == 0:
     print('Even')
@@ -47,7 +47,7 @@ Odd
 
 `elif` enables you to insert an additional logical test to an if statement:
 
-```input
+```Python
 y = 1
 if y % 2 == 0:
     print('Even')
@@ -71,7 +71,7 @@ Try changing the value of `y` in the snippet above. Do you get the output that y
 
 It is often necessary in programs to iterate over some set of items. This is where for loops prove useful. For example, they can provide a useful way to iterate over the items of a list:
 
-```input
+```Python
 colors = ['red', 'yellow', 'blue']
 for color in colors:
     print(color)
@@ -85,7 +85,7 @@ blue
 
 Sometimes, you will want to iterate over a list using the list index rather than items from that list (say, when you want to access items from another list at the same time). In this case, you can combine list-object methods and for loops:
 
-```input
+```Python
 comp_colors = ['green', 'purple', 'orange']
 for i in range(len(comp_colors)):
     print(colors[i], comp_colors[i])
@@ -99,7 +99,7 @@ blue orange
 
 We've met len() before, but range() is new to us. That function produces a sequence of integers from 0 to 1 less than the number passed into it. Hence:
 
-```input
+```Python
 for j in range(5):
     print(j)
 ```
@@ -122,7 +122,7 @@ How about counting by threes from 17 to 41?
 
 It can also be important to break out of a loop. Python uses the break statement borrowed from C to do this. To see this in action, consider two nested for loops:
 
-```input
+```Python
 for n in range(2, 10):
     for x in range(2, n):
         if n % x == 0:
@@ -151,7 +151,7 @@ Try changing the code snippet above after you remove the break statement. What o
 
 As part of the control flow of your program, you might want to continue to the next iteration of your loop. The continue statement (also borrowed from C) can help with that:
 
-```input
+```Python
 for num in range(2, 10):
     if num % 2 == 0:
         print("Found an even number:", num)
@@ -180,7 +180,7 @@ If we cross the functionality of the if statement with that of the for loop, we 
 
 In the Fibonacci series, the sum of two elements defines the next.
 
-```input
+```Python
 a, b = 0, 1
 
 while b < 100:    

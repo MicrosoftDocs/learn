@@ -31,7 +31,7 @@ Many of the examples in this notebook include comments. Comments in Python start
 >
 
  
-```input
+```Python
 # this is the first comment
 spam = 1  # and this is the second comment
           # ... and now a third!
@@ -53,7 +53,7 @@ How can you see the results? The Python interpreter runs inside this notebook. T
 Open VS Code and type this into a Python cell:
 
  
-```input
+```Python
 print("Hello, world.")
 ```
 

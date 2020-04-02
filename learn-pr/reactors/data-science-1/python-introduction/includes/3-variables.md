@@ -1,7 +1,7 @@
 As in other programming languages, it is often essential to save values for later using variables in Python. Python assigns values to variables using the equals sign (=):
 
 
-```input
+```Python
 length = 15
 width = 3 * 5
 length * width
@@ -15,7 +15,7 @@ length * width
 If you come from a programming background in another programming language (such as Java), you might have noticed that we never specified the variable type when we declared our variables length and width. Python does not require this, and you can change variable types as you wish:
 
 
-```input
+```Python
 length = 15
 length
 ```
@@ -26,7 +26,7 @@ length
 ```
 
 
-```input
+```Python
 length = 15.0
 length
 ```
@@ -37,7 +37,7 @@ length
 ```
 
 
-```input
+```Python
 length = 'fifteen'
 length
 ```
@@ -50,7 +50,7 @@ length
 Note that, for all the flexibility of variables in Python, you do have to define them. If you try to use an undefined variable, it will produce an error:
 
 
-```input
+```Python
 n
 ```
 
@@ -66,7 +66,7 @@ NameError: name 'n' is not defined
 In Python's interactive mode and in Jupyter Notebooks, you can use the built-in variable _, which automatically takes the value of the last printed expression. For example:
 
 
-```input
+```Python
 tax = 11.3 / 100
 price = 19.95
 price * tax
@@ -78,7 +78,7 @@ price * tax
 ```
 
 
-```input
+```Python
 price + _
 ```
 
@@ -92,7 +92,7 @@ Note that you should always treat the _ variable as read-only. Explicitly assign
 Our previous output was kind of a mess, however; we generally use only two or fewer decimal points when working with prices. In order to clean this up, we can use a built-in function, round().
 
 
-```input
+```Python
 round(_, 2)
 ```
 
@@ -106,7 +106,7 @@ We will cover some of the other functions built into Python later in this sectio
 You do not have to define variables one at a time. You can define multiple variables on a single line, like so:
 
 
-```input
+```Python
 a, b, c, = 3.2, 1, 6
 a, b, c
 ```
@@ -119,7 +119,7 @@ a, b, c
 You can also augment variable assignments. This will be particularly useful when we tackle loops in the next section.
 
 
-```input
+```Python
 x = 5
 x = x + 1  # Un-pythonic variable augmentation
 x += 1  # Pythonic variable augmentation

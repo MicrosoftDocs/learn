@@ -1,7 +1,7 @@
 As with other programming languages, expressions are critical for decision making controlling the logical flow of Python programs. The most fundamental way of doing this in Python is with a comparison operator, such as "<":
 
 
-```input
+```Python
 2 < 5
 ```
 
@@ -33,7 +33,7 @@ Python supplies serveral comparison operators:
 Python does not restrict you to comparing just two operands at a time. For example:
 
 
-```input
+```Python
 a, b, c = 1, 2, 3
 a < b < c
 ```
@@ -48,7 +48,7 @@ This entire expression is True because 1 < 2 is True and 2 < 3 is True.
 You can also use built-in functions in Python for comparing data. For example:
 
 
-```input
+```Python
 min(3, 2.4, 5)
 ```
 
@@ -58,7 +58,7 @@ min(3, 2.4, 5)
 ```
 
 
-```input
+```Python
 max(3, 2.4, 5)
 ```
 
@@ -70,7 +70,7 @@ max(3, 2.4, 5)
 You can also combine comparison operators into compound expressions. For example:
 
 
-```input
+```Python
 1 < 2 and 2 < 3
 ```
 
@@ -84,7 +84,7 @@ This compound expression returned True because both 1 < 2 is true and 2 < 3 is t
 Python also provides the or Boolean operator, which requires that only one simple expression in a compound expression be true in order to return True. For example:
 
 
-```input
+```Python
 1 < 2 or 1 > 2
 ```
 
@@ -96,7 +96,7 @@ True
 Finally, not inverts the truth evaluation of an expression, such as in:
 
 
-```input
+```Python
 not (2 < 3)
 ```
 
@@ -111,7 +111,7 @@ Copy the following code snippet and change different parts of the expression.
 Predict what the result will be first and then run the code cell to see if you got it right!
 
 
-```input
+```Python
 i = 7
 (i == 2) or not (i % 2 != 0 and 1 < i < 5)
 ```

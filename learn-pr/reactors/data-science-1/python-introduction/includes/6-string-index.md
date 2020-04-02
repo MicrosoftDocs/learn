@@ -1,7 +1,7 @@
 Strings can be indexed (subscripted), with the first character having index 0. There is no separate character type; a character is simply a string of size one:
 
 
-```input
+```Python
 word = 'Python'
 word[0]  # Character in position 0.
 ```
@@ -12,7 +12,7 @@ word[0]  # Character in position 0.
 ```
 
 
-```input
+```Python
 word[5]  # Character in position 5.
 ```
 
@@ -24,7 +24,7 @@ word[5]  # Character in position 5.
 Indices may also be negative numbers, which means to start counting from the end of the string. Note that because -0 is the same as 0, negative indices start from -1:
 
 
-```input
+```Python
 word[-1]  # Last character.
 ```
 
@@ -34,7 +34,7 @@ word[-1]  # Last character.
 ```
 
 
-```input
+```Python
 word[-2]  # Second-last character.
 ```
 
@@ -44,7 +44,7 @@ word[-2]  # Second-last character.
 ```
 
 
-```input
+```Python
 word[-6]
 ```
 
@@ -58,7 +58,7 @@ word[-6]
 In addition to indexing, which extracts individual characters, Python also supports slicing, which extracts a substring. To slice, you indicate a range in the format start:end, where the start position is included but the end position is excluded:
 
 
-```input
+```Python
 word[0:2]  # Characters from position 0 (included) to 2 (excluded).
 ```
 
@@ -68,7 +68,7 @@ word[0:2]  # Characters from position 0 (included) to 2 (excluded).
 ```
 
 
-```input
+```Python
 word[2:5]  # Characters from position 2 (included) to 5 (excluded).
 ```
 
@@ -80,7 +80,7 @@ word[2:5]  # Characters from position 2 (included) to 5 (excluded).
 If you omit either position, the default start position is 0 and the default end is the length of the string:
 
 
-```input
+```Python
 word[:2]   # Character from the beginning to position 2 (excluded).
 ```
 
@@ -90,7 +90,7 @@ word[:2]   # Character from the beginning to position 2 (excluded).
 ```
 
 
-```input
+```Python
 word[4:]  # Characters from position 4 (included) to the end.
 ```
 
@@ -100,7 +100,7 @@ word[4:]  # Characters from position 4 (included) to the end.
 ```
 
 
-```input
+```Python
 word[-2:] # Characters from the second-last (included) to the end.
 ```
 
@@ -112,7 +112,7 @@ word[-2:] # Characters from the second-last (included) to the end.
 This characteristic means that s[:i] + s[i:] is always equal to s:
 
 
-```input
+```Python
 word[:2] + word[2:]
 ```
 
@@ -122,7 +122,7 @@ word[:2] + word[2:]
 ```
 
 
-```input
+```Python
 word[:4] + word[4:]
 ```
 
@@ -144,7 +144,7 @@ For non-negative indices, the length of a slice is the difference of the indices
 Attempting to use an index that is too large results in an error:
 
 
-```input
+```Python
 word[42]  # The word only has 6 characters.
 ```
 
@@ -160,7 +160,7 @@ IndexError: string index out of range
 However, when used in a range, an index that's too large defaults to the size of the string and does not give an error. This characteristic is useful when you always want to slice at a particular index regardless of the length of a string:
 
 
-```input
+```Python
 word[4:42]
 ```
 
@@ -170,7 +170,7 @@ word[4:42]
 ```
 
 
-```input
+```Python
 word[42:]
 ```
 
@@ -182,7 +182,7 @@ word[42:]
 Python strings are immutable, which means they cannot be changed. Therefore, assigning a value to an indexed position in a string results in an error:
 
 
-```input
+```Python
 word[0] = 'J'
 ```
 
@@ -198,7 +198,7 @@ TypeError: 'str' object does not support item assignment
 The following cell also produces an error:
 
 
-```input
+```Python
 word[2:] = 'py'
 ```
 
@@ -214,7 +214,7 @@ TypeError: 'str' object does not support item assignment
 A slice is itself a value that you can concatenate with other values using +:
 
 
-```input
+```Python
 'J' + word[1:]
 ```
 
@@ -224,7 +224,7 @@ A slice is itself a value that you can concatenate with other values using +:
 ```
 
 
-```input
+```Python
 word[:2] + 'Py'
 ```
 
@@ -236,7 +236,7 @@ word[:2] + 'Py'
 A slice, however, is not a string literal, and it cannot be used with automatic concatenation. The following code produces an error:
 
 
-```input
+```Python
 word[:2] 'Py'    # Slice is not a literal; produces an error
 ```
 
@@ -251,7 +251,7 @@ SyntaxError: invalid syntax
 Oftentimes, while working with strings, it can be useful to evaluate the length of a string. The built-in function len() returns the length of a string:
 
 
-```input
+```Python
 s = 'supercalifragilisticexpialidocious'
 len(s)
 ```
@@ -264,7 +264,7 @@ len(s)
 Another useful built-in function for working with strings is str(). This function takes any object and returns a printable string version of that object. For example:
 
 
-```input
+```Python
 str(2)
 ```
 
@@ -274,7 +274,7 @@ str(2)
 ```
 
 
-```input
+```Python
 str(2.5)
 ```
 

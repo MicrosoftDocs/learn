@@ -3,7 +3,7 @@
 Expression syntax is straightforward. The operators plus (+), minus (-), multiply (*), and divide or slash (/) work just like in most other programming languages (such as Java or C). For example, type the following in a Python code cell in VS Code:
 
 
-```input
+```Python
 2 + 3
 ```
 
@@ -16,7 +16,7 @@ And you should get:
 The order of operations also works as in other programming languages (and in math class):
 
 
-```input
+```Python
 30 - 4 * 5
 ```
 
@@ -28,7 +28,7 @@ The order of operations also works as in other programming languages (and in mat
 Note what happens when you use division:
 
 
-```input
+```Python
 7 / 5
 ```
 
@@ -42,7 +42,7 @@ Division (/) always returns a floating-point number, which brings up a good poin
 You can mix numeric types in calculations:
 
 
-```input
+```Python
 3 * 3.5
 ```
 
@@ -52,7 +52,7 @@ You can mix numeric types in calculations:
 ```
 
 
-```input
+```Python
 7.0 / 5
 ```
 
@@ -64,7 +64,7 @@ You can mix numeric types in calculations:
 You can perform a type of division that returns an integer: floor division. Floor division uses the double slash (//) operator, discards any remainders, and just returns an int.
 
 
-```input
+```Python
 7 // 5
 ```
 
@@ -76,7 +76,7 @@ You can perform a type of division that returns an integer: floor division. Floo
 To calculate the remainder, you can use the modulo operator (%):
 
 
-```input
+```Python
 7 % 5
 ```
 
@@ -88,7 +88,7 @@ To calculate the remainder, you can use the modulo operator (%):
 For exponents, use the power (**) operator. For example, you can write $5^2$ as:
 
 
-```input
+```Python
 5 ** 2
 ```
 
@@ -100,7 +100,7 @@ For exponents, use the power (**) operator. For example, you can write $5^2$ as:
 Conversely, $2^5$ would be:
 
 
-```input
+```Python
 2 ** 5
 ```
 
@@ -112,7 +112,7 @@ Conversely, $2^5$ would be:
 Note that power (**) has higher precedence in the order of operations than the negative sign (-). This means that $-5^2$ is actually the same thing as $-\left(5^2\right)$:
 
 
-```input
+```Python
 -5 ** 2
 ```
 
@@ -124,7 +124,7 @@ Note that power (**) has higher precedence in the order of operations than the n
 In order to assert the order of precedence that you want, use parentheses ():
 
 
-```input
+```Python
 (-5) ** 2
 ```
 
@@ -136,7 +136,7 @@ In order to assert the order of precedence that you want, use parentheses ():
 Parentheses () can supersede the order of operations in any calculation you need to run:
 
 
-```input
+```Python
 (30 - 4) * 5
 ```
 

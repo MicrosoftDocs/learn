@@ -14,7 +14,7 @@ Python includes a number of handy functions that are available to all lists.
 
 For example, append() and extend() enable you to add to the end of a list, much like the += operator:
 
-```input
+```Python
 beatles = ['John', 'Paul']
 beatles.append('George')
 beatles
@@ -26,7 +26,7 @@ beatles
 
 Notice that you did not actually pass a list to append(); passing a list to append() results in this behavior:
 
-```input
+```Python
 beatles2 = ['John', 'Paul', 'George']
 beatles2.append(['Stuart', 'Pete'])
 beatles2
@@ -38,7 +38,7 @@ beatles2
 
 To tack a list on the end of an existing list, use extend() instead:
 
-```input
+```Python
 beatles.extend(['Stuart', 'Pete'])
 beatles
 ```
@@ -49,7 +49,7 @@ beatles
 
 index() returns the index of the first matching item in a list (if present):
 
-```input
+```Python
 beatles.index('George')
 ```
 
@@ -59,7 +59,7 @@ beatles.index('George')
 
 The count() method returns the number of items in a list that match objects you pass in:
 
-```input
+```Python
 beatles.count('John')
 ```
 
@@ -69,7 +69,7 @@ beatles.count('John')
 
 There are two methods for removing items from a list. The first is remove(), which locates the first occurrence of an item in the list and removes it (if present):
 
-```input
+```Python
 beatles.remove('Stuart')
 beatles
 ```
@@ -80,7 +80,7 @@ beatles
 
 The other method for removing items from lists is the pop() method. If you supply pop() with an index number, it will remove the item from that location in the list and return it; otherwise, pop() removes the last item in a list and returns that:
 
-```input
+```Python
 beatles.pop()
 ```
 
@@ -90,7 +90,7 @@ beatles.pop()
 
 The insert() method enables you to add an item to a specific location in a list:
 
-```input
+```Python
 beatles.insert(1, 'Ringo')
 beatles
 ```
@@ -101,7 +101,7 @@ beatles
 
 Unsurprisingly, the reverse() method reverses the order of items in a list:
 
-```input
+```Python
 beatles.reverse()
 beatles
 ```
@@ -112,7 +112,7 @@ beatles
 
 Finally, the sort() method orders the items in a list:
 
-```input
+```Python
 beatles.sort()
 beatles
 ```

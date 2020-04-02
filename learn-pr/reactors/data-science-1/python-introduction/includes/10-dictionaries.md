@@ -1,6 +1,6 @@
 Dictionaries in Python provide a means of mapping information between unique keys and values. You create dictionaries by listing zero or more key-value pairs inside of braces, like this:
 
-```input
+```Python
 capitals = {'France': ('Paris', 2140526)}
 ```
 
@@ -8,7 +8,7 @@ Keys for dictionaries can be three things: strings, numbers, or tuples (that con
 
 You add to dictionaries like this:
 
-```input
+```Python
 capitals['Nigeria'] = ('Lagos', 6048430)
 capitals
 ```
@@ -23,7 +23,7 @@ Now try adding another country (or something else) to the capitals dictionary.
 
 You reference entries much like you do as through an index number for a string, list, or tuple, but instead of an index, use a key:
 
-```input
+```Python
 capitals['France']
 ```
 
@@ -33,7 +33,7 @@ capitals['France']
 
 You can also update entries in the dictionary:
 
-```input
+```Python
 capitals['Nigeria'] = ('Abuja', 1235880)
 capitals
 ```
@@ -44,7 +44,7 @@ capitals
 
 When used on a dictionary, the len() method returns the number of keys in a dictionary:
 
-```input
+```Python
 len(capitals)
 ```
 
@@ -54,7 +54,7 @@ len(capitals)
 
 Similar to the pop() method for lists, the popitem() method randomly removes a key from the dictionary, along with its associated value:
 
-```input
+```Python
 capitals.popitem()
 ```
 
@@ -62,7 +62,7 @@ capitals.popitem()
 ('Nigeria', ('Abuja', 1235880))
 ```
 
-```input
+```Python
 capitals
 ```
 

@@ -9,7 +9,7 @@ To support this, Python has a way to put definitions in a file and use them in a
 
 For example, the factorial() function is not one of the standard functions built into Python. It is part of the Python math module. So, when we run factorial() before importing math, we get an error:
 
-```input
+```Python
 factorial(5)
 ```
 
@@ -23,7 +23,7 @@ NameError: name 'factorial' is not defined
 
 However, the situation changes after we import the math module:
 
-```input
+```Python
 import math
 math.factorial(5)
 ```
@@ -34,7 +34,7 @@ math.factorial(5)
 
 Notice that we still have to prepend math to the front of the factorial() function. We can use a different method to import that specific function from the math module and use it as if it were defined in our program:
 
-```input
+```Python
 from math import factorial
 factorial(5)
 ```

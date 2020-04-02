@@ -5,7 +5,7 @@
 
 Sometimes, it makes more sense to generate a list algorithmically. Consider the last example. We really wanted just a list of numbers from 1 to 10. Rather than type those out, we can use a list comprehension to generate it:
 
-```input
+```Python
 numbers = [x for x in range(1,11)] # Remember to create a range 1 more than the number you actually want.
 numbers
 ```
@@ -16,7 +16,7 @@ numbers
 
 We can also perform computation on the items generated for the list:
 
-```input
+```Python
 squares = [x*x for x in range(1,11)]
 squares
 ```
@@ -27,7 +27,7 @@ squares
 
 We can even perform logical tests on list items in the comprehension:
 
-```input
+```Python
 odd_squares = [x*x for x in range(1,11) if x % 2 != 0]
 odd_squares
 ```

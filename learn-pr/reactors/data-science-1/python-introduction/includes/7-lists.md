@@ -7,7 +7,7 @@ Python knows a number of compound data types, which are used to group together o
 >
 
 
-```input
+```Python
 squares = [1, 4, 9, 16, 25]
 squares
 ```
@@ -20,7 +20,7 @@ squares
 Like strings (and all other built-in sequence types), lists can be indexed and sliced:
 
 
-```input
+```Python
 squares[0]  # Indexing returns the item.
 ```
 
@@ -30,7 +30,7 @@ squares[0]  # Indexing returns the item.
 ```
 
 
-```input
+```Python
 squares[-1]
 ```
 
@@ -40,7 +40,7 @@ squares[-1]
 ```
 
 
-```input
+```Python
 squares[-3:]  # Slicing returns a new list.
 ```
 
@@ -52,7 +52,7 @@ squares[-3:]  # Slicing returns a new list.
 All slice operations return a new list containing the requested elements. This means that the following slice returns a new (shallow) copy of the list:
 
 
-```input
+```Python
 squares[:]
 ```
 
@@ -64,7 +64,7 @@ squares[:]
 Lists also support concatenation with the + operator:
 
 
-```input
+```Python
 squares + [36, 49, 64, 81, 100]
 ```
 
@@ -76,7 +76,7 @@ squares + [36, 49, 64, 81, 100]
 Unlike strings, which are immutable, lists are a mutable type, which means you can change any value in the list:
 
 
-```input
+```Python
 cubes = [1, 8, 27, 65, 125]  # Something's wrong here ...
 4 ** 3  # the cube of 4 is 64, not 65!
 ```
@@ -87,7 +87,7 @@ cubes = [1, 8, 27, 65, 125]  # Something's wrong here ...
 ```
 
 
-```input
+```Python
 cubes[3] = 64  # Replace the wrong value.
 cubes
 ```
@@ -100,7 +100,7 @@ cubes
 You can assign to slices, which can change the size of the list or clear it entirely:
 
 
-```input
+```Python
 letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
 letters
 ```
@@ -111,7 +111,7 @@ letters
 ```
 
 
-```input
+```Python
 # Replace some values.
 letters[2:5] = ['C', 'D', 'E']
 letters
@@ -123,7 +123,7 @@ letters
 ```
 
 
-```input
+```Python
 # Now remove them.
 letters[2:5] = []
 letters
@@ -135,7 +135,7 @@ letters
 ```
 
 
-```input
+```Python
 # Clear the list by replacing all the elements with an empty list.
 letters[:] = []
 letters
@@ -149,7 +149,7 @@ letters
 The built-in len() function also applies to lists for getting their lengths:
 
 
-```input
+```Python
 letters = ['a', 'b', 'c', 'd']
 len(letters)
 ```
@@ -162,7 +162,7 @@ len(letters)
 You can nest lists, which means to create lists that contain other lists. For example:
 
 
-```input
+```Python
 a = ['a', 'b', 'c']
 n = [1, 2, 3]
 x = [a, n]
@@ -177,7 +177,7 @@ x
 x is a list of lists, and you can access its constituent lists through the same indexing you use with simpler lists:
 
 
-```input
+```Python
 x[0]
 ```
 
@@ -189,7 +189,7 @@ x[0]
 And by using additional index numbers, you can directly access elements within those sub-lists:
 
 
-```input
+```Python
 x[0][0]
 ```
 

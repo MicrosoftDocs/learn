@@ -6,7 +6,7 @@ Another immutable data type in Python are tuples. It can be useful at times to c
 > This unit has a knowledge check question at the end that's more similar to a Try it yourself block. We revised the format.
 >
 
-```input
+```Python
 t = (1, 2, 3)
 t
 ```
@@ -17,7 +17,7 @@ t
 
 Because tuples are immutable, you cannot change elements within them:
 
-```input
+```Python
 t[1] = 2.0
 ```
 
@@ -31,7 +31,7 @@ TypeError: 'tuple' object does not support item assignment
 
 However, you can refer to elements within them:
 
-```input
+```Python
 t[1]
 ```
 
@@ -41,7 +41,7 @@ t[1]
 
 You can also slice tuples:
 
-```input
+```Python
 t[:2]
 ```
 
@@ -51,7 +51,7 @@ t[:2]
 
 You can also create tuples from lists:
 
-```input
+```Python
 l = ['baked', 'beans', 'spam']
 l = tuple(l)
 l
@@ -63,7 +63,7 @@ l
 
 Or you can create lists from tuples:
 
-```input
+```Python
 l = list(l)
 l
 ```
@@ -76,7 +76,7 @@ l
 
 As your Python programming grows more complex, you will want to test lists and tuples for the membership of specific data. The in operator enables you to do that.
 
-```input
+```Python
 tup = ('a', 'b', 'c')
 'b' in tup
 ```
@@ -87,7 +87,7 @@ True
 
 You can also test to see if something is not in a list or tuple using not in:
 
-```input
+```Python
 lis = ['a', 'b', 'c']
 'a' not in lis
 ```
