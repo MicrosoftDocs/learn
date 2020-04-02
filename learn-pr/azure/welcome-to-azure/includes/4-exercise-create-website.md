@@ -28,6 +28,8 @@ In the free Azure sandbox environment, you'll use the pre-created resource group
 
 ## Create a WordPress website
 
+1. If you haven't already, verify that you have activated the sandbox above. Activating the sandbox will allocate the subscription and resource group you will use in this exercise. This step is required for any Microsoft Learn exercises that use a sandbox.
+
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
     [!include[](../../../includes/verify-directory-and-sandbox.md)]
