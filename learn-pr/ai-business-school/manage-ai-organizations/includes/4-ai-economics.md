@@ -13,21 +13,14 @@ With AI initiatives, you need to think like a venture capitalist. That means bei
 * Prioritize investments in phases.
 * Define clear value drivers and KPIs.
 
-:::row:::
-:::column span="2":::
 ## Leverage a horizon-based framework
 
 At Microsoft, we use a "horizon-based" framework to evaluate and prioritize AI investments. This groups AI projects into three "horizons," from improving core business functions to creating brand new revenue streams. The risk and uncertainty of specific applications depends on a company's level of AI maturity, size, business objectives, and more.
-:::column-end:::
-:::column span="2":::
-:::image type="complex" source="../media/manage-ai-organizations-1.png" alt-text="Illustration of horizon framework.":::
-The y-axis is labeled "Where to invest" and the x-axis is labeled as "Risk and uncertainty" and "Disruptive potential." The graph shows three groups of potential investments, all starting at the top of the y-axis where the x-axis starts. The first group is labelled as "H1" and its line is curved, almost circular, running from the top of the y-axis when x equals zero, to stopping one-third of the way along the x-axis. The area contained in this line is light blue. The next group is labelled "H2" and its line is curved, almost circular, running from the top of the y-axis when x equals zero, to stopping two-thirds of the way along the x-axis. The area under the line is a darker blue. The next horizon is labelled "H3" and its line is curved, in a circular fashion, running from the top of the y-axis when x equals zero, to stopping at the end of the x-axis. The area under this line is the darkest shade of blue. 
-:::image-end:::
-:::column-end:::
-:::row-end:::
 
 ### Horizon 1: Running (operate and optimize the core business)
 
+:::row:::
+:::column span="2":::
 Not every AI application involves revolutionary changes. In fact, using AI to improve or automate existing processes is becoming essential to remaining competitive.
 
 Horizon 1 (H1) represents AI initiatives that optimize core business functions. For example: perhaps you manufacture electronic components. While you might manually inspect quality for 100 parts per hour, an AI model with image recognition capabilities could inspect 1,000 parts per hour.
@@ -38,6 +31,13 @@ Horizon 1 (H1) represents AI initiatives that optimize core business functions. 
 * Analyzing sentiment in customer feedback or social media
 * Scoring marketing leads
 * Forecasting demand or revenue
+:::column-end:::
+:::column span="2":::
+:::image type="complex" source="../media/manage-ai-organizations-1.png" alt-text="Illustration of horizon framework.":::
+The y-axis is labeled "Where to invest" and the x-axis is labeled as "Risk and uncertainty" and "Disruptive potential." The graph shows three groups of potential investments, all starting at the top of the y-axis where the x-axis starts. The first group is labelled as "H1" and its line is curved, almost circular, running from the top of the y-axis when x equals zero, to stopping one-third of the way along the x-axis. The area contained in this line is light blue. The next group is labelled "H2" and its line is curved, almost circular, running from the top of the y-axis when x equals zero, to stopping two-thirds of the way along the x-axis. The area under the line is a darker blue. The next horizon is labelled "H3" and its line is curved, in a circular fashion, running from the top of the y-axis when x equals zero, to stopping at the end of the x-axis. The area under this line is the darkest shade of blue. 
+:::image-end:::
+:::column-end:::
+:::row-end:::
 
 ### Horizon 2: Growing (improve market position)
 
@@ -88,6 +88,8 @@ As you map initiatives, it's helpful to involve the CFO office and other stakeho
 We recommend prioritizing initiatives in phases: start with foundational initiatives in the bottom left and move towards transformational initiatives in the top right.
 
 We recommend this approach because it's helpful to grow capabilities and get buy-in before you move to more complex projects. You'll need to form technical teams that can prepare data properly and familiarize themselves with AI models. Starting with foundational initiatives also helps establish trust across the business and manage expectations related to AI initiatives. The success and value you're able to demonstrate in early initiatives pave the way for the more transformational projects.
+
+Another reason to start at the bottom left is that the technology used to support H1 initiatives is typically more accessible than advanced use cases. There are countless out-of-the-box and pre-trained AI models you can leverage for common use cases. These applications cost less and their impact on the business is easier to estimate. As you build maturity with these accessible models, you can experiment with more complex AI initiatives and hone your objectives.
 :::column-end:::
 :::column span="2":::
 :::image type="complex" source="../media/manage-ai-organizations-3.png" alt-text="Illustration of prioritization framework.":::
@@ -95,8 +97,6 @@ The left side of the x-axis is labeled "Tactical" and the right is labeled "Stra
 :::image-end:::
 :::column-end:::
 :::row-end:::
-
-Another reason to start at the bottom left is that the technology used to support H1 initiatives is typically more accessible than advanced use cases. There are countless out-of-the-box and pre-trained AI models you can leverage for common use cases. These applications cost less and their impact on the business is easier to estimate. As you build maturity with these accessible models, you can experiment with more complex AI initiatives and hone your objectives.
 
 H2 and H3 initiatives require more sophisticated data science capabilities, which may result in unintended or unexpected outcomes. These initiatives often require businesses to work with partners to create a custom model that can't be bought off the shelf. These solutions require the most resources, time, and risk, but they offer the greatest reward. Achieving a lasting competitive advantage requires solutions that can't be easily duplicated by others.
 

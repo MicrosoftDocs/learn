@@ -21,11 +21,20 @@ The diagram is composed of three circles. The top circle in the diagram is label
 :::column-end:::
 :::row-end:::
 
-:::row:::
-:::column span="2":::
 It's the ultimate responsibility of the C-suite to own the overall AI strategy and investment decisions, creating an AI-ready culture, change management, and responsible AI policies.
 
 As for the other leaders across an organization, there's no single model to follow, but we've provided the example below to show how different roles can play a part. You'll need to determine a model that's suited to your strategy and objectives, the teams within your business, and your AI maturity.
+
+### Line of business leader
+
+This person is a business executive responsible for operations of a particular function, line of business, or process within an organization.
+
+:::row:::
+:::column span="2":::
+* **Source ideas from all employees:** It's important to empower people from every department and level to contribute ideas, ask questions, and make suggestions related to AI. We've discovered that ideas for our most impactful application of AI have come from our employees within business functions, not from outside or above. See the first unit in this module for more information on this topic. 
+* **Identify new business models:** The real value of AI lies in business transformation: driving new business models, enabling innovative services, creating new revenue streams, and more. For example, Telefónica, one of the world's largest telecommunications companies, used a personalized AI-based assistant to transform its relationships with customers.<sup>5</sup> Ultimately, this increased customer loyalty and satisfaction. 
+* **Create optional communities for exchanging ideas:** These communities provide opportunities for IT and business roles to connect on an ongoing basis. This could be done virtually through tools such as Yammer, or in-person at networking events or brown bag sessions.
+* **Train business experts to become Agile Product Owners:** A Product Owner is a member of the Agile team responsible for defining the features of the application and streamlining execution. Including this role as part or all of a business expert's responsibilities will allow them to dedicate time and effort to AI initiatives.
 :::column-end:::
 :::column span="2":::
 :::image type="complex" source="../media/manage-ai-organizations-5.png" alt-text="Diagram showing AI-related roles.":::
@@ -33,15 +42,6 @@ This graphic shows the business roles that are involved with AI initiatives. The
 :::image-end:::
 :::column-end:::
 :::row-end:::
-
-### Line of business leader
-
-This person is a business executive responsible for operations of a particular function, line of business, or process within an organization.
-
-* **Source ideas from all employees:** It's important to empower people from every department and level to contribute ideas, ask questions, and make suggestions related to AI. We've discovered that ideas for our most impactful application of AI have come from our employees within business functions, not from outside or above. See the first unit in this module for more information on this topic. 
-* **Identify new business models:** The real value of AI lies in business transformation: driving new business models, enabling innovative services, creating new revenue streams, and more. For example, Telefónica, one of the world's largest telecommunications companies, used a personalized AI-based assistant to transform its relationships with customers.<sup>5</sup> Ultimately, this increased customer loyalty and satisfaction. 
-* **Create optional communities for exchanging ideas:** These communities provide opportunities for IT and business roles to connect on an ongoing basis. This could be done virtually through tools such as Yammer, or in-person at networking events or brown bag sessions.
-* **Train business experts to become Agile Product Owners:** A Product Owner is a member of the Agile team responsible for defining the features of the application and streamlining execution. Including this role as part or all of a business expert's responsibilities will allow them to dedicate time and effort to AI initiatives.
 
 ### Chief Digital Officer
 

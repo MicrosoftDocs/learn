@@ -62,6 +62,7 @@ Let's say your monitoring efforts catch a performance issue. We recommend a thre
 The diagram consists of four blue rectangles and grey arrows going between each one, representing the workflow. In the top left of each blue rectangle, there is a shield icon next to the text. The diagram starts with a blue rectangle in the top left corner labeled “Detection of an issue.” A grey arrow goes from the first blue rectangle down to the second blue rectangle, titled, “L1 incident resolution.” An arrow goes from the right side of the second rectangle up to the third rectangle in the top right of the diagram. The blue rectangle is labeled “L2 incident resolution.” A grey arrow points down from the third rectangle to the fourth blue rectangle in the bottom right of the diagram, titled “L3 incident resolution.” Above the L1 and L2 rectangles, there is a label that reads “MLOps team.” Above the L3 rectangle there is a label that reads, “Development team.”
 :::image-end:::
 :::column-end:::
+:::row-end:::
 
 With different tiers responding to problems, it's critical to orchestrate their activities with the central incident log to ensure there's no duplication of efforts.
 

@@ -11,6 +11,7 @@ MLOps processes and tools help those teams collaborate and provide visibility th
 There are two large blue circles in the center of the diagram, with an icon and text in each. The left circle is labeled, “Data scientist” and has a nucleus icon in it. The other blue circle reads, “IT” and has an icon of a person next to a computer. There is an infinity symbol that loops around both circles, indicating they work in harmony. Underneath both circles, the four MLOps practices are listed, two on top and two on bottom. They are separated by lines forming a cross between the four. These say, “Model reproducibility,” “Model validation,” “Model deployment,” and “Model retraining.”
 :::image-end:::
 :::column-end:::
+:::row-end:::
 
 ### Model reproducibility
 
@@ -40,6 +41,7 @@ If the model is a newer version of an existing model, you'll need to see if it p
 The confusion matrix is a two by two table. The y-axis is titled, “Predicted Label,” and the x-axis is titled, “True Label.” Along both axes starting in the top left, the first cell is labeled “no,” the second is labeled “yes.” The diagonal cells in the matrix (top left, bottom right) are blue, and contain the values 167 and163. The top right cell is light blue and contains the value 1. The bottom left cell is white and contains the value 0. Below the graphic, text readers, “alignment of true and predicted values indicates high accuracy.” 
 :::image-end:::
 :::column-end:::
+:::row-end:::
 
 ### Model deployment
 
