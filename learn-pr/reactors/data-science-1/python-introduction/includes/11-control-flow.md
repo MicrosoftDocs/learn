@@ -170,7 +170,7 @@ Found an even number: 8
 Found an odd number: 9
 ```
 
-## Exercise: TBD subtitle
+### Exercise: TBD subtitle
 
 What happens when you replace the continue statement above with a break?
 
