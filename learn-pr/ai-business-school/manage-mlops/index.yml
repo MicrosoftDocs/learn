@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn-wwl.manage-mlops
+metadata:
+  title: Start the machine learning lifecycle with MLOps
+  description: Learn enterprise AI management with our free open online course, including machine learning.
+  ms.date: 05/28/2020
+  author: RWortmanMorris
+  ms.author: rawortma
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  #ms.learn-contact: barlan
+title: Start the machine learning lifecycle with MLOps
+summary: In this module, we discuss best practices for creating and managing machine learning (ML) models using MLOps processes. MLOps is the practice of collaboration between data scientists, ML engineers, software developers, and other IT teams to manage the end-to-end ML lifecycle. 
+abstract: | 
+  In this module, you will learn to: 
+  - Identify the different steps of the ML lifecycle.
+  - Describe how to create and manage machine learning models using MLOps processes.
+  - Articulate processes to monitor models and respond to incidents. 
+prerequisites: None
+iconUrl: /learn/achievements/manage-mlops.svg
+levels: 
+- intermediate
+roles: 
+- functional-consultant
+- business-user
+products: 
+- azure
+- dynamics
+- m365
+units: 
+- learn-wwl.manage-mlops.introduction
+- learn-wwl.manage-mlops.mlops-introduction
+- learn-wwl.manage-mlops.mlops-business-value
+- learn-wwl.manage-mlops.mlops-manage-ml
+- learn-wwl.manage-mlops.knowledge-check
+- learn-wwl.manage-mlops.summary-resources
+badge: 
+  uid: learn-wwl.manage-mlops.badge

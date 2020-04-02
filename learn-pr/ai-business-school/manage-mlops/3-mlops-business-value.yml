@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.manage-mlops.mlops-business-value
+title: Discover the business value of MLOps
+metadata:
+  title: Discover the business value of MLOps
+  description: TBD
+  ms.date: 05/28/2020
+  author: RWortmanMorris
+  ms.author: rawortma
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 6 
+content: |
+  [!include[](includes/3-mlops-business-value.md)] 

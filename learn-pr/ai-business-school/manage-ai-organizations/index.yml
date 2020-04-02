@@ -10,13 +10,12 @@ metadata:
   ms.prod: learning-azure
   #ms.learn-contact: barlan
 title: Introduction to managing an AI organization
-summary: Everyone in an organization has a role to play in AI transformation. At the highest levels, leaders need to prioritize AI use cases strategically and create an environment where innovative ideas can flourish. Then, those ideas come to life and succeed long-term thanks to collaboration across lines of business and technical teams. This module provides insight into managing AI-related processes and responsibilities in an organization. 
+summary: Everyone in an organization has a role to play in AI transformation. At the highest levels, leaders need to prioritize AI use cases strategically and create an environment where innovative ideas can flourish. Then, those ideas come to life and succeed long-term thanks to collaboration across lines of business and technical teams. This module provides insight into managing AI-related processes and responsibilities in an organization.
 abstract: | 
-  In this module, you will learn to: 
-  - Apply best practices for fueling innovation in your organization 
-  - Evaluate and prioritize AI investments 
-  - Create and manage machine learning models using MLOps processes 
-  - Establish AI-related roles and responsibilities  
+  In this module, you will:
+  - Apply best practices for fueling innovation in your organization. 
+  -	Evaluate and prioritize AI investments. 
+  -	Establish AI-related roles and responsibilities.
 prerequisites: None
 iconUrl: /learn/achievements/manage-ai-organizations.svg
 levels: 
@@ -34,8 +33,6 @@ units:
 - learn-wwl.manage-ai-organizations.manage-innovation-video
 - learn-wwl.manage-ai-organizations.ai-economics
 - learn-wwl.manage-ai-organizations.ai-economics-video
-- learn-wwl.manage-ai-organizations.mlops-create-ml
-- learn-wwl.manage-ai-organizations.mlops-service-ml
 - learn-wwl.manage-ai-organizations.ai-organizational-models
 - learn-wwl.manage-ai-organizations.knowledge-check
 - learn-wwl.manage-ai-organizations.summary-resources
