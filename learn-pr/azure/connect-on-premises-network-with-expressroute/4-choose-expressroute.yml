@@ -30,7 +30,7 @@ quiz:
     - content: "To save connection costs for occasionally connected users to the Microsoft cloud."
       isCorrect: false
       explanation: "No. ExpressRoute is intended for an always-on connection to the Microsoft cloud."
-  - content: "Which connection type is best to use for Office 365 users?"
+  - content: "Which connection type supports connectivity to Office 365?"
     choices:
     - content: "Point-to-site over a VPN connection through an Azure network gateway."
       isCorrect: false
