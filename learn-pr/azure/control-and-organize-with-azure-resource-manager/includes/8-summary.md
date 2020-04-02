@@ -12,7 +12,7 @@ By using these tools throughout your Azure environment, you'll have greater orga
 
 ## Clean up
 
-Let's clean up the resources that we created. You'll need to delete the resoucre group you created, as well as the policy assignment and policy definition.
+Let's clean up the resources that we created. You'll need to delete the resource group you created, as well as the policy assignment and policy definition.
 
 1. Navigate to the [Azure portal](https://portal.azure.com/?azure-portal=true) in a web browser if you haven't already. In the search box in the top navigation bar, search for **msftlearn-core-infrastructure-rg** and click on the resource group.
 
