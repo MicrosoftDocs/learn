@@ -12,20 +12,3 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/9-tuples.md)] 
-quiz:
-  title: Check your knowledge
-  questions:
-  - content: "QUESTION"
-    choices:
-    - content: "ANSWER"
-      isCorrect: false
-      explanation: "Incorrect."
-    - content: "ANSWER"
-      isCorrect: false
-      explanation: "Incorrect."
-    - content: "ANSWER"
-      isCorrect: false
-      explanation: "Incorrect."
-    - content: "ANSWER"
-      isCorrect: true
-      explanation: "Correct!"  
