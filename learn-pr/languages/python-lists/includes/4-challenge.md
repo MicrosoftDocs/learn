@@ -1,32 +1,32 @@
-Code challenges throughout these modules will reinforce what you've learned and help you gain some confidence before continuing on.
+Throughout these learning modules, code challenges like this one reinforce what you've learned and help you gain confidence before you continue.
 
-### Step 1 - Add a new file for this challenge to the working folder.
+## Step 1 - Add a new file for this challenge 
 
-Assuming you're continuing from the previous unit, use the techniques you learned in previous modules to add a new code file in the current folder dedicated to this module.  For example, you might create a file named `challenge1.py`.
+Use the techniques that you learned in previous modules to add a new code file. Add it to the folder that's dedicated to this module.  For example, you might create a file named *challenge1.py*.
 
-### Step 2 - Write code to create a list containing a standard deck of cards.
+## Step 2 - Create a list for a standard deck of cards
 
-Using the technique from the previous unit to create every combination of suit and rank to create an entire set of 52 cards.  Instead of just printing the value of the card, add the card to a list that represents a deck of cards.
+Use the technique from the previous unit to list every combination of suit and rank in a set of 52 cards.  Instead of just printing the value of the card, add the card to a list that represents a deck of cards.
 
-When you're complete, display the number of cards in the deck using the function that provides a count of items in the list.
+When you finish, display the number of cards in the deck by using the function that provides a count of items in the list.
 
 ```output
 There are 52 cards in the deck.
 ```
 
-### Step 3 - Write code to randomly choose five cards from the deck and add to a player's hand.
+## Step 3 - Randomly choose five cards to add to a player's hand
 
-Next, create a second list that will contain the result of a "deal" ... to simulate dealing five random cards, use the appropriate method to choose a card.  Make sure you add the card to the list representing the player's hand, and remove it from the list representing the deck.
+Next, create a second list for the results of a deal. To simulate the dealing of five random cards, use the appropriate method to choose a card.  Add the card to the list that represents the player's hand. Remove the card from the list that represents the deck.
 
-Before simulating the deal, print the message:
+Before you simulate the deal, print this message:
 
 ```output
 Dealing ...
 ```
 
-After simulating the deal, print out the number of cards in the list representing the deck.  Finally, print out the cards in the player's hand.
+After you simulate the deal, print out the number of cards in the list that represents the deck.  Finally, print out the cards in the player's hand.
 
-When complete, you should see the following output (given that each time there's likely to be different randomly dealt cards):
+When the process is complete, you should see something like the following output. Your output will differ because the cards are dealt randomly.
 
 ```output
 There are 52 cards in the deck.
@@ -36,4 +36,4 @@ Player has the following cards in their hand:
 ['Jack of Hearts', 'Queen of Hearts', '4 of Spades', 'Ace of Hearts', '9 of Diamonds']
 ```
 
-Whether you get stuck and need to peek at the solution or you finish successfully, continue on to view a solution to this challenge.
+If you finish successfully or you get stuck and need to peek at the solution, continue to view a solution to this challenge.
