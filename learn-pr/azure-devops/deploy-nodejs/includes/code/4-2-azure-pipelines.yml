@@ -1,0 +1,13 @@
+variables:
+
+  # Azure Resource Manager connection created during pipeline creation
+  azureSubscription: '457991d3-d669-4e6f-980d-510798914090'
+  
+  # Web app name
+  webAppName: 'nodejs-cicd-16353'
+  
+  # Environment name
+  environmentName: 'nodejs-cicd-16353'
+
+  # Agent VM image name
+  vmImageName: 'ubuntu-latest'
