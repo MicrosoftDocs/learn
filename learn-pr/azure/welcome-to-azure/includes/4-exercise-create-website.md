@@ -30,6 +30,8 @@ In the free Azure sandbox environment, you'll use the pre-created resource group
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
+    [!include[](../../../includes/azure-sandbox-regions-first-mention-note.md)]
+
 1. Expand the left-hand navigation panel.
 
 1. From the top of the Azure portal navigation list, select **Create a resource**.
