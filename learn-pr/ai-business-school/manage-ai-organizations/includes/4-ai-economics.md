@@ -13,9 +13,18 @@ With AI initiatives, you need to think like a venture capitalist. That means bei
 * Prioritize investments in phases.
 * Define clear value drivers and KPIs.
 
+:::row:::
+:::column span="2":::
 ## Leverage a horizon-based framework
 
 At Microsoft, we use a "horizon-based" framework to evaluate and prioritize AI investments. This groups AI projects into three "horizons," from improving core business functions to creating brand new revenue streams. The risk and uncertainty of specific applications depends on a company's level of AI maturity, size, business objectives, and more.
+:::column-end:::
+:::column span="2":::
+:::image type="complex" source="../media/manage-ai-organizations-1.png" alt-text="Illustration of horizon framework.":::
+The y-axis is labeled "Where to invest" and the x-axis is labeled as "Risk and uncertainty" and "Disruptive potential." The graph shows three groups of potential investments, all starting at the top of the y-axis where the x-axis starts. The first group is labelled as "H1" and its line is curved, almost circular, running from the top of the y-axis when x equals zero, to stopping one-third of the way along the x-axis. The area contained in this line is light blue. The next group is labelled "H2" and its line is curved, almost circular, running from the top of the y-axis when x equals zero, to stopping two-thirds of the way along the x-axis. The area under the line is a darker blue. The next horizon is labelled "H3" and its line is curved, in a circular fashion, running from the top of the y-axis when x equals zero, to stopping at the end of the x-axis. The area under this line is the darkest shade of blue. 
+:::image-end:::
+:::column-end:::
+:::row-end:::
 
 ### Horizon 1: Running (operate and optimize the core business)
 
@@ -55,19 +64,37 @@ For example, a chemical manufacturer could sell "fertilizer-as-a-service"—whic
 
 ## Map scenarios and use cases to the framework
 
+:::row:::
+:::column span="2":::
 Using this framework, you can then map AI scenarios into quadrants. The "tactical" spectrum represents initiatives that are confined to a single team or use cases. The "strategic" side represents larger business initiatives that might impact the entire organization.
 
 To use a retail example, you might place location-based targeted advertising in the upper left quadrant. It's an initiative that digitizes and optimizes an existing business model without requiring systemic changes.
 
 Scenarios that fall below the middle line help the organization survive more than thrive. They might address competitive and disruptive threats, improve operations, or empower employees in the organization. Scenarios above the middle line help companies create new value propositions, revenue streams, or business models.
+:::column-end:::
+:::column span="2":::
+:::image type="complex" source="../media/manage-ai-organizations-2.png" alt-text="Illustration of transformational framework.":::
+The left side of the x-axis is labeled "Tactical" and the right is labeled "Strategic." A double-sided arrow sits on the x-axis, pointing to both ends. The bottom of the y-axis is labeled "Existing business models" and the right side is labeled "New business models." A double-sided arrow runs along the y-axis and points to both ends. Within the graph are four quadrants. The bottom left quadrant is a grey box labeled "H1." The box contains an icon of a wrench and a gear. The bottom right quadrant is a blue box labeled "H2," containing the icon of a drone. The top left quadrant is a blue box labeled "H2," containing the icon of augmented reality glasses. The top right is a dark blue box labeled "H3," containing the icon of a robotic arm. A grey arrow extends from the bottom left H1 box to the top right H3 box, indicating that initiatives start operational and move to transformational.
+:::image-end:::
+:::column-end:::
+:::row-end:::
 
 As you map initiatives, it's helpful to involve the CFO office and other stakeholders to ensure you've made the right assumptions around the opportunity valuation.
 
 ## Prioritize investments and organize phases
 
+:::row:::
+:::column span="2":::
 We recommend prioritizing initiatives in phases: start with foundational initiatives in the bottom left and move towards transformational initiatives in the top right.
 
 We recommend this approach because it's helpful to grow capabilities and get buy-in before you move to more complex projects. You'll need to form technical teams that can prepare data properly and familiarize themselves with AI models. Starting with foundational initiatives also helps establish trust across the business and manage expectations related to AI initiatives. The success and value you're able to demonstrate in early initiatives pave the way for the more transformational projects.
+:::column-end:::
+:::column span="2":::
+:::image type="complex" source="../media/manage-ai-organizations-3.png" alt-text="Illustration of prioritization framework.":::
+The left side of the x-axis is labeled "Tactical" and the right is labeled "Strategic." A double-sided arrow sits on the x-axis, pointing to both ends. The bottom of the y-axis is labeled "Existing business models" and the top side is labeled "New business models." A double-sided arrow runs along the y-axis and points to both ends. Within the graph are four quadrants. The bottom left quadrant is labeled "Incremental." The bottom right quadrant is labeled "Evolutionary." The top left quadrant is labeled "Experimental." The top right quadrant is labeled "Aspirational." There are three slightly curved rectangular shapes over the quadrants representing each horizon, H1, H2, and H3. H1 is in bottom left quadrant. H2 is in the middle of the graph, spanning the Experimental, Aspirational, and Evolutionary quadrants. The H3 shape sits in the Aspirational quadrant. Each shape has one grey circle on them, representing AI initiatives. Circle "A" is on H1, and it connects with grey arrows to circle "B" on the H2 shape. That grey circle connects with a grey arrow to circle "C." The arrows show how the projects and horizons flow from left to right.
+:::image-end:::
+:::column-end:::
+:::row-end:::
 
 Another reason to start at the bottom left is that the technology used to support H1 initiatives is typically more accessible than advanced use cases. There are countless out-of-the-box and pre-trained AI models you can leverage for common use cases. These applications cost less and their impact on the business is easier to estimate. As you build maturity with these accessible models, you can experiment with more complex AI initiatives and hone your objectives.
 
