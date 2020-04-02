@@ -27,7 +27,7 @@ Port 80 is open on the NSG applied to the subnet. But port 80 is blocked by the 
 
 Use the IP address of the server to make an HTTP request. It should now work.
 
-    :::image type="content" source="../media/8-apache-works.png" alt-text="Screenshot of a web browser showing the Apache default web page hosted at the IP of the new Linux VM." loc-scope="other":::
+:::image type="content" source="../media/8-apache-works.png" alt-text="Screenshot of a web browser showing the Apache default web page hosted at the IP of the new Linux VM." loc-scope="other":::
 
 ## One more thing
 
