@@ -1,17 +1,33 @@
+:::row:::
+:::column span="2":::
 In the previous unit, we introduced the concept of MLOps. MLOps is the practice of collaboration between data scientists, ML engineers, software developers, and other IT teams to manage the end-to-end ML lifecycle. We outlined best practices to efficiently create and deploy AI models.
 
 In this unit, we'll describe the process of managing, monitoring, and retraining those models over time. We discuss the importance of creating dedicated workflows for model monitoring and incident response.
+:::column-end:::
+:::column span="2":::
+:::image type="complex" source="../media/manage-mlops-4.png" alt-text="Illustration of the ML lifecycle.":::
+There are six blue circles in a circular formation, each containing an icon. Grey arrows go from one blue circle to the next, indicating they flow into one another. A label sits above each circle. The first step at the top of the circle is labeled “Train model.” The icon shows 1’s and 0’s in a square formation. The second circle’s label says, “Package model.” The icon shows a box. The third circle is labeled “Validate model.” The icon shows an ML model icon with a check mark next to it. The ML model icon looks like several random dots connected by lines in a loose pentagon shape. The fourth circle is labeled “Deploy model.” The icon shows an arrow pointing towards three blocks. Two are white boxes and one just has a white outline and blue center. The fifth circle is labeled “Monitor model.” The icon shows a line graph. The sixth and final circle is labeled “Retrain Model.” The icon shows two arrows leading into one another in a square shape. 
+:::image-end:::
+:::column-end:::
 
 ## ML lifecycle: why do ML models need to be monitored and retrained
 
 All models—including those that work perfectly on deployment—require monitoring and retraining over time to maintain high performance. 
 
+:::row:::
+:::column span="2":::
 Reasons for inaccurate predictions might include:  
 
 * **Inadequate training**. For example: app users submit photos taken at night for object recognition, but the model was only trained on well-lit photos.
 * **Issues with the "live data" that the model evaluates**. For example: sellers record customer data inconsistently in a company's CRM system.  
 * **The model itself "drifts" or declines over time**. This includes "concept drift," where the concept of what you're trying to predict changes. "Data drift," or when the properties of the data change, is also common. And "upstream data changes," or operational changes to how or what data is collected, can impact models as well. To learn more about model drift, we recommend this resource from Databricks.  
 * **The world changes**. For example: a financial trading model based on 2001 data probably isn't effective in 2020.
+:::column-end:::
+:::column span="2":::
+:::image type="complex" source="../media/manage-mlops-5.png" alt-text="Illustration of the MLOps practices.":::
+There are two large blue circles in the center of the diagram, with an icon and text in each. The left circle is labeled, “Data scientist” and has a nucleus icon in it. The other blue circle reads, “IT” and has an icon of a person next to a computer. There is an infinity symbol that loops around both circles, indicating they work in harmony. Underneath both circles, the four MLOps practices are listed, two on top and two on bottom. They are separated by lines forming a cross between the four. These say, “Model reproducibility,” “Model validation,” “Model deployment,” and “Model retraining.”
+:::image-end:::
+:::column-end:::
 
 Regardless of whether you use a pre-trained model or a custom model, your approach to monitoring and incident response should be the same. However, for pre-trained models, the way you pull teams in, exactly what they have control over, and how teams troubleshoot issues, may vary.
 
@@ -35,8 +51,17 @@ Regardless of how you detect a problem, the issue should be recorded in a centra
 Let's say your monitoring efforts catch a performance issue. We recommend a three-tiered approach to resolution:
 
 1. Level-one response consists of the MLOps team responsible for ongoing monitoring. These are not data scientists, but operations people who understand the technology that the business uses and how AI models fit into it. They may have scripted approaches for how to respond, such as: if you see issue X, run script Y, and determine if the issue is resolved by executing script Z.
-1. If the level-one team can't fix the issue, they then escalate to the level-two team. This team is composed of data scientists who are tasked only with incident response (that is, they are not involved in model or application development). This team will diagnose and attempt to solve the issue at a data science level. For instance, they might examine the models to determine feature distribution and if there are challenges there. Or they will look for anomalies in the datasets and retrain or reevaluate the model.
-1. If the level-two team fails to solve the problem, only then do they escalate the problem to the team that built the model. It's important to only pull in the development team when necessary. That way, they can remain focused on developing new models and driving innovation rather than being round-the-clock incident response.
+
+:::row:::
+:::column span="2":::
+2. If the level-one team can't fix the issue, they then escalate to the level-two team. This team is composed of data scientists who are tasked only with incident response (that is, they are not involved in model or application development). This team will diagnose and attempt to solve the issue at a data science level. For instance, they might examine the models to determine feature distribution and if there are challenges there. Or they will look for anomalies in the datasets and retrain or reevaluate the model.
+3. If the level-two team fails to solve the problem, only then do they escalate the problem to the team that built the model. It's important to only pull in the development team when necessary. That way, they can remain focused on developing new models and driving innovation rather than being round-the-clock incident response.
+:::column-end:::
+:::column span="2":::
+:::image type="complex" source="../media/manage-mlops-6.png" alt-text="Illustration of an MLOps incident response.":::
+The diagram consists of four blue rectangles and grey arrows going between each one, representing the workflow. In the top left of each blue rectangle, there is a shield icon next to the text. The diagram starts with a blue rectangle in the top left corner labeled “Detection of an issue.” A grey arrow goes from the first blue rectangle down to the second blue rectangle, titled, “L1 incident resolution.” An arrow goes from the right side of the second rectangle up to the third rectangle in the top right of the diagram. The blue rectangle is labeled “L2 incident resolution.” A grey arrow points down from the third rectangle to the fourth blue rectangle in the bottom right of the diagram, titled “L3 incident resolution.” Above the L1 and L2 rectangles, there is a label that reads “MLOps team.” Above the L3 rectangle there is a label that reads, “Development team.”
+:::image-end:::
+:::column-end:::
 
 With different tiers responding to problems, it's critical to orchestrate their activities with the central incident log to ensure there's no duplication of efforts.
 

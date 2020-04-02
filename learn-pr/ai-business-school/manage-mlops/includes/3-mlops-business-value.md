@@ -1,8 +1,16 @@
 ## Business value of MLOps
 
+:::row:::
+:::column span="2":::
 MLOps is the practice of collaboration among data scientists, ML engineers, app developers, and other IT teams to manage the ML lifecycle.
 
 MLOps processes and tools help those teams collaborate and provide visibility through shared, auditable documentation. MLOps technologies provide the ability to save and track changes to data sources, code, libraries, SDKs, and models. These technologies can also create efficiencies and accelerate the lifecycle with automation, repeatable workflows, and reusable assets.
+:::column-end:::
+:::column span="2":::
+:::image type="complex" source="../media/manage-mlops-2.png" alt-text="Illustration of the MLOps practices.":::
+There are two large blue circles in the center of the diagram, with an icon and text in each. The left circle is labeled, “Data scientist” and has a nucleus icon in it. The other blue circle reads, “IT” and has an icon of a person next to a computer. There is an infinity symbol that loops around both circles, indicating they work in harmony. Underneath both circles, the four MLOps practices are listed, two on top and two on bottom. They are separated by lines forming a cross between the four. These say, “Model reproducibility,” “Model validation,” “Model deployment,” and “Model retraining.”
+:::image-end:::
+:::column-end:::
 
 ### Model reproducibility
 
@@ -21,9 +29,17 @@ Second, we recommend creating **machine learning "pipelines."** Pipelines are in
 
 Before a model is deployed, it's critical to validate its performance metrics against the business use case. For example, perhaps you designed a model to predict patient health. As a healthcare provider dealing with life and death situations, you likely prefer to have false positive diagnoses rather than an incredibly high rate of accuracy that misses diagnoses.
 
+:::row:::
+:::column span="2":::
 You may have several metrics that are used to indicate the "best" model. It's important to work with data scientists to understand what metrics are important and evaluate them before deployment. There are **tools to evaluate model metrics**, such as a loss function or a confusion matrix.
 
 If the model is a newer version of an existing model, you'll need to see if it performs better than the previous one on key metrics.
+:::column-end:::
+:::column span="2":::
+:::image type="complex" source="../media/manage-mlops-3.png" alt-text="Graphic of an ML model confusion matrix.":::
+The confusion matrix is a two by two table. The y-axis is titled, “Predicted Label,” and the x-axis is titled, “True Label.” Along both axes starting in the top left, the first cell is labeled “no,” the second is labeled “yes.” The diagonal cells in the matrix (top left, bottom right) are blue, and contain the values 167 and163. The top right cell is light blue and contains the value 1. The bottom left cell is white and contains the value 0. Below the graphic, text readers, “alignment of true and predicted values indicates high accuracy.” 
+:::image-end:::
+:::column-end:::
 
 ### Model deployment
 
