@@ -1,0 +1,30 @@
+### YamlMime:Module
+uid: learn.reactors.environment-setup
+metadata:
+  title: Set up the environment
+  description: Set up the environment TBD.
+  ms.date: 05/19/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-python
+title: Set up the environment
+summary: Set up the environment ...
+abstract:  | 
+  In this module, you will:
+  - Set up the environment ... *TBD*
+prerequisites: |
+  - None
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+- student
+products:
+- azure
+- vs-code
+units:
+- learn.reactors.environment-setup.1-setup
+badge:
+  uid: learn.reactors.environment-setup.badge 
