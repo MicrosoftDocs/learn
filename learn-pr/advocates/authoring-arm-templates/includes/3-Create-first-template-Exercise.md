@@ -1,17 +1,19 @@
 1. Open Visual Studio Code from the Azure shell provides here in the sandbox by using the following command.
        
-                ```shell
-                      code
-                ```
+    ```shell
+     code
+
+    ```
               
-                     Copy and paste the following JSON into the editor:
-              
-                ```json
-                      {
-                  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
-            "contentVersion": "1.0.0.0",
+Copy and paste the following JSON into the editor:
+
+    ```json
+    {
+      "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+      "contentVersion": "1.0.0.0",
       "resources": []
     }
+
     ```
 
 
