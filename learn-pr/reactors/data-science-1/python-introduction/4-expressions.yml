@@ -27,10 +27,10 @@ quiz:
   - content: "What will the expression `1 < 2 and 3 > 2` result in, True or False?"
     choices:
     - content: "True"
-      isCorrect: false
+      isCorrect: true
       explanation: "Correct."
     - content: "False"
-      isCorrect: true
+      isCorrect: false
       explanation: "Incorrect. Both parts of the expression are true. The expression results in True."
 
   - content: "What will the expression `1 > 2 and 3 > 2` result in, True or False?"
