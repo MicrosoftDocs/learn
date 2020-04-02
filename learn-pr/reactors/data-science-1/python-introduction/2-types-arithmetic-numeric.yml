@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.reactors.data-science-1.python-introduction.2-types-arithmetic-numeric
+title: Arithmetic and numeric types in Python
+metadata:
+  title: Arithmetic and numeric types in Python
+  description: Learn about arithmetic and numeric types in Python.
+  ms.date: 05/19/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-reactors
+  show_latex: true
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-types-arithmetic-numeric.md)] 
