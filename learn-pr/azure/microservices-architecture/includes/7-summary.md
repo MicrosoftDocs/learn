@@ -2,7 +2,7 @@ Your application architecture will likely have more complexity, different challe
 
 ## Learn more
 
-To learn more about microservices, check out the following docs in the Azure Architecture Center:
+To learn more about microservices, check out the following docs:
 
 - [Introduction to microservices](https://docs.microsoft.com/azure/architecture/microservices/introduction)
 - [Design a microservices architecture](https://docs.microsoft.com/azure/architecture/microservices/design/)
