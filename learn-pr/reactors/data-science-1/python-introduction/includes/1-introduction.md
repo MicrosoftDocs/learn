@@ -30,7 +30,7 @@ Many of the examples in this notebook include comments. Comments in Python start
 > We might format these instances as plain text or another style.
 >
 
-Input: 
+ 
 ```input
 # this is the first comment
 spam = 1  # and this is the second comment
@@ -40,7 +40,7 @@ print(text)
 ```
 
 ## Try it Yourself
-Open the TBD in VS Code. Copy and paste the code snippet from above into a Python code cell Run it and you should get the following output:
+Open the TBD in VS Code. Copy and paste the code snippet from above into a Python code cell Run it and you should get the following 
 
 ```output
 # This is not a comment because it's inside quotes.
@@ -52,7 +52,7 @@ How can you see the results? The Python interpreter runs inside this notebook. T
 
 Open VS Code and type this into a Python cell:
 
-Input: 
+ 
 ```input
 print("Hello, world.")
 ```
