@@ -29,7 +29,7 @@ ipython
 pd?
 ```
 
-Output:
+
 ```output
 TBD
 ```
@@ -40,7 +40,7 @@ Because it can be useful to lean about Series and DataFrames in pandas a extensi
 import numpy as np
 ```
 
-Output:
+
 ```output
 TBD
 ```

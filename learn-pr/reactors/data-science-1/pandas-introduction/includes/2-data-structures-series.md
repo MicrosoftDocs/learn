@@ -17,7 +17,7 @@ series_example = pd.Series([-0.5, 0.75, 1.0, -2])
 series_example
 ```
 
-Output:
+
 ```output
 TBD
 ```
@@ -32,7 +32,7 @@ Try accessing the values first; they are just a familiar NumPy array:
 series_example.values
 ```
 
-Output:
+
 ```output
 TBD
 ```
@@ -43,7 +43,7 @@ The index is also an array-like object:
 series_example.index
 ```
 
-Output:
+
 ```output
 TBD
 ```
@@ -55,7 +55,7 @@ series_example[1]
 series_example[1:3]
 ```
 
-Output:
+
 ```output
 TBD
 ```
@@ -67,7 +67,7 @@ series_example2 = pd.Series([-0.5, 0.75, 1.0, -2], index=['a', 'b', 'c', 'd'])
 series_example2
 ```
 
-Output:
+
 ```output
 TBD
 ```
@@ -78,7 +78,7 @@ These explicit indices work exactly the way you would expect them to:
 series_example2['b']
 ```
 
-Output:
+
 ```output
 TBD
 ```
@@ -104,7 +104,7 @@ population = pd.Series(population_dict)
 population
 ```
 
-Output:
+
 ```output
 TBD
 ```
@@ -129,7 +129,7 @@ You can also add elements to a Series the way that you would to an ndarray. Try 
 ???
 ```
 
-Output:
+
 ```output
 TBD
 ```
@@ -140,7 +140,7 @@ TBD
 population['Albania'] = 2937590
 ```
 
-Output:
+
 ```output
 TBD
 ```
@@ -155,7 +155,7 @@ pop2 = pd.Series({'Spain': 46432074, 'France': 102321, 'Albania': 50532})
 population + pop2
 ```
 
-Output:
+
 ```output
 TBD
 ```

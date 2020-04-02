@@ -13,7 +13,7 @@ df1 = pd.DataFrame(rng.randint(0, 20, (2, 2)),
 df1
 ```
 
-Output:
+
 ```output
 TBD
 ```
@@ -24,7 +24,7 @@ df2 = pd.DataFrame(rng.randint(0, 10, (3, 3)),
 df2
 ```
 
-Output:
+
 ```output
 TBD
 ```
@@ -35,7 +35,7 @@ Add df1 and df2. Is the output what you expected?
 ???
 ```
 
-Output:
+
 ```output
 TBD
 ```
@@ -49,7 +49,7 @@ fill = df1.stack().mean()
 df1.add(df2, fill_value=fill)
 ```
 
-Output:
+
 ```output
 TBD
 ```

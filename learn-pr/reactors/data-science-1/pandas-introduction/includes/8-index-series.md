@@ -16,7 +16,7 @@ population = pd.Series({'China': 1409517397, 'India': 1339180127,
                         'Brazil': 207652865}, name='population')
 ```
 
-Output:
+
 ```output
 TBD
 ```
@@ -27,7 +27,7 @@ Now divide these to compute the population density
 ???
 ```
 
-Output:
+
 ```output
 TBD
 ```
@@ -42,7 +42,7 @@ series2 = pd.Series([3, 5, 7], index=[1, 2, 3])
 series1 + series2
 ```
 
-Output:
+
 ```output
 TBD
 ```
@@ -53,7 +53,7 @@ NaN values are not always convenient to work with; NaN combined with any other v
 series1.add(series2, fill_value=0)
 ```
 
-Output:
+
 ```output
 TBD
 ```

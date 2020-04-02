@@ -22,7 +22,7 @@ ser_example = pd.Series(rng.randint(0, 10, 4))
 ser_example
 ```
 
-Output:
+
 ```output
 TBD
 ```
@@ -35,7 +35,7 @@ df_example = pd.DataFrame(rng.randint(0, 10, (3, 4)),
 df_example
 ```
 
-Output:
+
 ```output
 TBD
 ```
@@ -46,7 +46,7 @@ Let's apply a ufunc to our example Series:
 np.exp(ser_example)
 ```
 
-Output:
+
 ```output
 TBD
 ```
@@ -57,7 +57,7 @@ The same thing happens with a slightly more complex operation on our example Dat
 np.cos(df_example * np.pi / 4)
 ```
 
-Output:
+
 ```output
 TBD
 ```

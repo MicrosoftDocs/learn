@@ -18,7 +18,7 @@ series_example2
 series_example2['b']
 ```
 
-Output:
+
 ```output
 TBD
 ```
@@ -37,7 +37,7 @@ series_example2.keys()
 list(series_example2.items())
 ```
 
-Output:
+
 ```output
 TBD
 ```
@@ -49,7 +49,7 @@ series_example2['e'] = 1.25
 series_example2
 ```
 
-Output:
+
 ```output
 TBD
 ```
@@ -64,7 +64,7 @@ Because Series also provide array-style functionality, you can use the NumPy tec
 series_example2['a':'c']
 ```
 
-Output:
+
 ```output
 TBD
 ```
@@ -75,7 +75,7 @@ TBD
 series_example2[0:2]
 ```
 
-Output:
+
 ```output
 TBD
 ```
@@ -86,7 +86,7 @@ TBD
 series_example2[(series_example2 > -1) & (series_example2 < 0.8)]
 ```
 
-Output:
+
 ```output
 TBD
 ```
@@ -97,7 +97,7 @@ TBD
 series_example2[['a', 'e']]
 ```
 
-Output:
+
 ```output
 TBD
 ```
@@ -121,7 +121,7 @@ series_example2.loc['a']
 series_example2.loc['a':'c']
 ```
 
-Output:
+
 ```output
 TBD
 ```
@@ -136,7 +136,7 @@ series_example2.iloc[0]
 series_example2.iloc[0:2]
 ```
 
-Output:
+
 ```output
 TBD
 ```

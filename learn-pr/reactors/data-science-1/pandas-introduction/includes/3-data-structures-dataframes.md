@@ -21,7 +21,7 @@ area = pd.Series(area_dict)
 area
 ```
 
-Output:
+
 ```output
 TBD
 ```
@@ -33,7 +33,7 @@ countries = pd.DataFrame({'Population': population, 'Area': area})
 countries
 ```
 
-Output:
+
 ```output
 TBD
 ```
@@ -47,7 +47,7 @@ countries['Capital'] = ['Tirana', 'Paris', 'Berlin', 'Tokyo', 'Moscow']
 countries
 ```
 
-Output:
+
 ```output
 TBD
 ```
@@ -59,7 +59,7 @@ countries = countries[['Capital', 'Area', 'Population']]
 countries
 ```
 
-Output:
+
 ```output
 TBD
 ```
@@ -71,7 +71,7 @@ countries['Population Density'] = countries['Population'] / countries['Area']
 countries
 ```
 
-Output:
+
 ```output
 TBD
 ```
@@ -85,7 +85,7 @@ We have stated before that DataFrames are like dictionaries, and it's true. You 
 countries['Area']
 ```
 
-Output:
+
 ```output
 TBD
 ```
@@ -95,7 +95,7 @@ What about using the row indices?
 ```input
 ???
 ```
-Output:
+
 ```output
 TBD
 ```
@@ -106,7 +106,7 @@ Now try accessing row data with a command like `countries['Japan']`
 countries['Japan']
 ```
 
-Output:
+
 ```output
 TBD
 ```
@@ -117,7 +117,7 @@ This returns an error: DataFrames are dictionaries of Series, which are the colu
 countries.loc['Japan']
 ```
 
-Output:
+
 ```output
 TBD
 ```
@@ -128,7 +128,7 @@ Note that what .loc returns is an indexed object in its own right and you can ac
 countries.loc['Japan']['Area']
 ```
 
-Output:
+
 ```output
 TBD
 ```
@@ -142,7 +142,7 @@ Can you think of a way to return the area of Japan without using .iloc?
 ???
 ```
 
-Output:
+
 ```output
 TBD
 ```
@@ -153,7 +153,7 @@ Can you slice along these indices as well?
 ???
 ```
 
-Output:
+
 ```output
 TBD
 ```
@@ -165,7 +165,7 @@ countries['Debt-to-GDP Ratio'] = np.nan
 countries
 ```
 
-Output:
+
 ```output
 TBD
 ```
@@ -180,7 +180,7 @@ countries['Debt-to-GDP Ratio'] = debt
 countries
 ```
 
-Output:
+
 ```output
 TBD
 ```
@@ -192,7 +192,7 @@ del countries['Capital']
 countries
 ```
 
-Output:
+
 ```output
 TBD
 ```
@@ -203,7 +203,7 @@ In addition to their dictionary-like behavior, DataFrames also behave like two-d
 countries.T
 ```
 
-Output:
+
 ```output
 TBD
 ```
@@ -219,7 +219,7 @@ pd.DataFrame(np.random.rand(3, 2),
              index=['a', 'b', 'c'])
 ```
 
-Output:
+
 ```output
 TBD
 ```

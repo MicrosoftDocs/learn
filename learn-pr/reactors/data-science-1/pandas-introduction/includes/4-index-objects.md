@@ -19,7 +19,7 @@ ind = series_example.index
 ind
 ```
 
-Output:
+
 ```output
 TBD
 ```
@@ -31,7 +31,7 @@ ind[1]
 ind[::2]
 ```
 
-Output:
+
 ```output
 TBD
 ```
@@ -42,7 +42,7 @@ But Index objects are immutable; you cannot be modified via the normal means:
 ind[1] = 0
 ```
 
-Output:
+
 ```output
 TBD
 ```
@@ -56,7 +56,7 @@ ind_odd = pd.Index([1, 3, 5, 7, 9])
 ind_prime = pd.Index([2, 3, 5, 7, 11])
 ```
 
-Output:
+
 ```output
 TBD
 ```
@@ -67,7 +67,7 @@ In the code cell below, try out the intersection (ind_odd & ind_prime), union (i
 ???
 ```
 
-Output:
+
 ```output
 TBD
 ```

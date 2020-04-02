@@ -11,7 +11,7 @@ df3 = pd.DataFrame(rng.randint(10, size=(3, 4)), columns=list('WXYZ'))
 df3
 ```
 
-Output:
+
 ```output
 TBD
 ```
@@ -20,7 +20,7 @@ TBD
 df3 - df3.iloc[0]
 ```
 
-Output:
+
 ```output
 TBD
 ```
@@ -31,7 +31,7 @@ But what if you need to operate column-wise? You can do this by using object met
 df3.subtract(df3['X'], axis=0)
 ```
 
-Output:
+
 ```output
 TBD
 ```
@@ -43,7 +43,7 @@ halfrow = df3.iloc[0, ::2]
 halfrow
 ```
 
-Output:
+
 ```output
 TBD
 ```
@@ -54,7 +54,7 @@ Note that the output from that operation was transposed. That was so that we can
 df3 - halfrow
 ```
 
-Output:
+
 ```output
 TBD
 ```

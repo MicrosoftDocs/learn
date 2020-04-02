@@ -27,7 +27,7 @@ countries = pd.DataFrame({'Area': area, 'Population': population})
 countries
 ```
 
-Output:
+
 ```output
 TBD
 ```
@@ -38,7 +38,7 @@ You can access the individual Series that make up the columns of a DataFrame via
 countries['Area']
 ```
 
-Output:
+
 ```output
 TBD
 ```
@@ -50,7 +50,7 @@ countries['Population Density'] = countries['Population'] / countries['Area']
 countries
 ```
 
-Output:
+
 ```output
 TBD
 ```
@@ -63,7 +63,7 @@ You can also think of DataFrames as two-dimensional arrays. You can examine the 
 countries.values
 ```
 
-Output:
+
 ```output
 TBD
 ```
@@ -74,7 +74,7 @@ Viewed this way it makes sense that we can transpose the rows and columns of a D
 countries.T
 ```
 
-Output:
+
 ```output
 TBD
 ```
@@ -85,7 +85,7 @@ DataFrames also uses the loc and iloc indexers. With iloc, you can index the und
 countries.iloc[:3, :2]
 ```
 
-Output:
+
 ```output
 TBD
 ```
@@ -96,7 +96,7 @@ loc also permits array-like slicing but using the explicit index and column name
 countries.loc[:'Germany', :'Population']
 ```
 
-Output:
+
 ```output
 TBD
 ```
@@ -116,7 +116,7 @@ Be sure to put the the masking and fancy indexing inside the square brackets: `c
 ???
 ```
 
-Output:
+
 ```output
 TBD
 ```
@@ -129,7 +129,7 @@ In practice in the world of data science (and pandas more generally), indexing r
 countries['France':'Japan']
 ```
 
-Output:
+
 ```output
 TBD
 ```
@@ -140,7 +140,7 @@ Such slices can also refer to rows by number rather than by index:
 countries[1:3]
 ```
 
-Output:
+
 ```output
 TBD
 ```
@@ -151,7 +151,7 @@ Similarly, direct masking operations are also interpreted row-wise rather than c
 countries[countries['Population Density'] > 200]
 ```
 
-Output:
+
 ```output
 TBD
 ```
