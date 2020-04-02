@@ -1,4 +1,4 @@
-Both Series and DataFrames are a lot like the `ndarrays` you encountered in the NumPy module. They provide clean, efficent data storage and handling at the scales necessary for data science. What both of them provide that ndarrays lack, however, are essential data-science features like flexibility when dealing with missing data and the ability to label data. These capabilities (along with others) help make Series and DataFrames essential to the "data munging" that make up so much of data science.
+Both Series and DataFrames are a lot like the `ndarrays` you encountered in the NumPy module. They provide clean, efficient data storage and handling at the scales necessary for data science. What both of them provide that ndarrays lack, however, are essential data-science features like flexibility when dealing with missing data and the ability to label data. These capabilities (along with others) help make Series and DataFrames essential to the "data munging" that make up so much of data science.
 
 > [!Note]
 > **Sarah: Action items**
@@ -24,7 +24,7 @@ TBD
 
 Similar to an `ndarray`, a `Series` upcasts entries to be of the same type of data (that -2 integer in the original array became a -2.00 float in the Series).
 
-What is different from an ndarray is that the Series automatically wraps both a sequence of values and a sequence of indices. These are two separate objects within the Seriers object that can access with the values and index attributes.
+What is different from an ndarray is that the Series automatically wraps both a sequence of values and a sequence of indices. These are two separate objects within the Series object that can access with the values and index attributes.
 
 Try accessing the values first; they are just a familiar NumPy array:
 

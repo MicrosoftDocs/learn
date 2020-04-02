@@ -47,7 +47,7 @@ Output:
 TBD
 ```
 
-NaN values are not always convenient to work with; NaN combined with any other values results in NaN, which can be a pain, particulalry if you are combining multiple data sources with missing values. To help with this, pandas allows you to specify a default value to use for missing values in the operation. For example, calling series1.add(series2) is equivalent to calling series1 + series2, but you can supply the fill value:
+NaN values are not always convenient to work with; NaN combined with any other values results in NaN, which can be a pain, particularly if you are combining multiple data sources with missing values. To help with this, pandas allows you to specify a default value to use for missing values in the operation. For example, calling series1.add(series2) is equivalent to calling series1 + series2, but you can supply the fill value:
 
 ```input
 series1.add(series2, fill_value=0)

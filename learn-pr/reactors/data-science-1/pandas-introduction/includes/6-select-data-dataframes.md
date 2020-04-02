@@ -68,7 +68,7 @@ Output:
 TBD
 ```
 
-Viewed thsi way it makes sense that we can transpose the rows and columns of a DataFrame the same way we would an array:
+Viewed this way it makes sense that we can transpose the rows and columns of a DataFrame the same way we would an array:
 
 ```input
 countries.T
@@ -101,13 +101,13 @@ Output:
 TBD
 ```
 
-You can also use array-like techniques such as masking and fancing indexing with loc.
+You can also use array-like techniques such as masking and fancy indexing with loc.
 
 ## Exercise
 
 Can you think of how to combine masking and fancy indexing in one line?
 
-- Your masking could be somthing like `countries['Population Density'] > 200`.
+- Your masking could be something like `countries['Population Density'] > 200`.
 - Your fancy indexing could be something like `['Population', 'Population Density']`.
 
 Be sure to put the the masking and fancy indexing inside the square brackets: `countries.loc[]`.

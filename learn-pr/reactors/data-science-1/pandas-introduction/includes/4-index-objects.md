@@ -1,4 +1,4 @@
-A huge part of data science is manipulating data in order to analyze it. (One rule of thumb is that 80% of any data science project will be concerned with cleaning and organizing the data for the project.) So it makes sense to lear the tools that pandas provides for handling data in Series and especially DataFrames. Because both of those data structures are ordered, let's first start by taking a closer look at what gives them their structure: the Index.
+A huge part of data science is manipulating data in order to analyze it. (One rule of thumb is that 80% of any data science project will be concerned with cleaning and organizing the data for the project.) So it makes sense to learn the tools that pandas provides for handling data in Series and especially DataFrames. Because both of those data structures are ordered, let's first start by taking a closer look at what gives them their structure: the Index.
 
 > [!Note]
 > **Sarah: Action items**

@@ -25,7 +25,7 @@ Output:
 TBD
 ```
 
-But what if you need to operate column-wise? You can do this by using object methodsand specifying the axis keyword.
+But what if you need to operate column-wise? You can do this by using object methods and specifying the axis keyword.
 
 ```input
 df3.subtract(df3['X'], axis=0)
