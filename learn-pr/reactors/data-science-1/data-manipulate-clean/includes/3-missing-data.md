@@ -25,8 +25,7 @@ example1
 
 The output looks like this:
 
-
-```python
+```output
 array([2, None, 6, 8], dtype=object)
 ```
 
@@ -38,11 +37,23 @@ The second side effect stems from the first. Because **None** essentially drags 
 example1.sum()
 ```
 
-The output looks like this:
+This is returned:
 
+```output
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+<ipython-input-108-ce9901ad18bd> in <module>
+----> 1 example1.sum()
 
-> Insert output (screenshot?)
+/opt/anaconda3/lib/python3.7/site-packages/numpy/core/_methods.py in _sum(a, axis, dtype, out, keepdims, initial)
+     34 def _sum(a, axis=None, dtype=None, out=None, keepdims=False,
+     35          initial=_NoValue):
+---> 36     return umr_sum(a, axis, dtype, out, keepdims, initial)
+     37 
+     38 def _prod(a, axis=None, dtype=None, out=None, keepdims=False,
 
+TypeError: unsupported operand type(s) for +: 'int' and 'NoneType'
+```
 
 > [!div class="alert is-tip"]
 > ### Key takeaway
@@ -59,7 +70,7 @@ np.nan + 1
 
 The output looks like this:
 
-```python
+```output
 nan
 ```
 
@@ -67,14 +78,13 @@ nan
 > 
 > **SARAH** - It would be best to have some intro/explanatory text before each command. That is, no "stacked" commands, either input or output (because they look the same in the module).
 
-
 ```python
 np.nan * 0
 ```
 
 The output looks like this:
 
-```python
+```output
 nan
 ```
 
@@ -88,7 +98,7 @@ example2.sum(), example2.min(), example2.max()
 The output looks like this:
 
 
-```python
+```output
 (nan, nan, nan)
 ```
 
@@ -110,7 +120,7 @@ int_series
 The output looks like this:
 
 
-```python
+```output
 0    1
 1    2
 2    3
@@ -134,7 +144,7 @@ In the process of upcasting data types to establish data homogeneity in series a
 
 These are important methods to master and get comfortable with, so let's go over them each in some depth.
 
-## Detecting null values
+## Detect null values
 
 Both `isnull()` and notnull() are your primary methods for detecting null data. Both return Boolean masks over your data.
 
@@ -148,8 +158,7 @@ example3.isnull()
 
 The output looks like this:
 
-
-```python
+```output
 0    False
 1     True
 2    False
@@ -167,7 +176,10 @@ Try running example3[example3.notnull()].
 
 Before you do so, what do you expect to see?
 
-> Need to provide/verify output
+> [!NOTE]
+> 
+> **SARAH** - Should we provide some output or feedback when a "rhetorical" query is given to the student to ponder in an exercise?
+>
 
 > [!div class="alert is-tip"]
 > ### Key takeaway
@@ -185,8 +197,7 @@ example3
 
 The output looks like this:
 
-
-```python
+```output
 0    0
 2     
 dtype: object
@@ -205,7 +216,10 @@ example4
 
 The output looks like this:
 
-> insert output (screenshot?)
+> [!NOTE]
+> 
+> **SARAH** - *Insert image*: Add screenshot of the output table.
+>
 
 Did you notice that pandas upcast two of the columns to floats to accommodate the **NaN**s?
 
@@ -217,7 +231,10 @@ example4.dropna()
 
 The output looks like this:
 
-> insert output (screenshot?)
+> [!NOTE]
+> 
+> **SARAH** - *Insert image*: Add screenshot of the output table.
+>
 
 If necessary, you can drop NA values from columns. Use axis=1 to do so:
 
@@ -227,7 +244,10 @@ example4.dropna(axis='columns')
 
 The output looks like this:
 
-> insert output (screenshot?)
+> [!NOTE]
+> 
+> **SARAH** - *Insert image*: Add screenshot of the output table.
+>
 
 Notice that this can drop a lot of data that you might want to keep, particularly in smaller datasets. What if you just want to drop rows or columns that contain several or even just all null values? You specify those setting in `dropna` with the `how` and `thresh` parameters.
 
@@ -240,7 +260,10 @@ example4
 
 The output looks like this:
 
-> insert output (screenshot?)
+> [!NOTE]
+> 
+> **SARAH** - *Insert image*: Add screenshot of the output table.
+>
 
 ### Exercise
 
@@ -256,11 +279,14 @@ example4.dropna(axis='rows', thresh=3)
 
 The output looks like this:
 
-> insert output (screenshot?)
+> [!NOTE]
+> 
+> **SARAH** - *Insert image*: Add screenshot of the output table.
+>
 
 Here, the first and last row were dropped because they contain only two non-null values.
 
-## Filling null values
+## Fill null values
 
 Depending on your dataset, it can sometimes make more sense to fill null values with valid ones rather than drop them. You could use `isnull` to do this in place, but that can be laborious, particularly if you have a lot of values to fill. Because this is such a common task in data science, pandas provides fillna, which returns a copy of the Series or DataFrame with the missing values replaced with one that you choose. Let's create another example Series to see how this works in practice.
 
@@ -271,7 +297,7 @@ example5
 
 The output looks like this:
 
-```python
+```output
 a    1.0
 b    NaN
 c    2.0
@@ -288,7 +314,7 @@ example5.fillna(0)
 
 The output looks like this:
 
-```python
+```output
 a    1.0
 b    0.0
 c    2.0
@@ -309,7 +335,7 @@ example5.fillna(method='ffill')
 
 The output looks like this:
 
-```python
+```output
 a    1.0
 b    1.0
 c    2.0
@@ -326,7 +352,7 @@ example5.fillna(method='bfill')
 
 The output looks like this:
 
-```python
+```output
 a    1.0
 b    2.0
 c    2.0
@@ -343,7 +369,10 @@ example4
 
 The output looks like this:
 
-> insert output (screenshot?)
+> [!NOTE]
+> 
+> **SARAH** - *Insert image*: Add screenshot of the output table.
+>
 
 ```python
 example4.fillna(method='ffill', axis=1)
@@ -351,7 +380,10 @@ example4.fillna(method='ffill', axis=1)
 
 The output looks like this:
 
-> insert output (screenshot?)
+> [!NOTE]
+> 
+> **SARAH** - *Insert image*: Add screenshot of the output table.
+>
 
 Notice that when a previous value is not available for forward-filling, the null value remains.
 
@@ -371,7 +403,10 @@ example4.fillna(example4.mean())
 
 The output looks like this:
 
-> insert output (screenshot?)
+> [!NOTE]
+> 
+> **SARAH** - *Insert image*: Add screenshot of the output table.
+>
 
 Notice that column 3 is still valueless: the default direction is to fill values row-wise.
 
