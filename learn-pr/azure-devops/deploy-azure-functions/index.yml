@@ -3,11 +3,10 @@ uid: learn.azdo.deploy-azure-functions
 metadata:
   title: Automate Azure Functions deployments with Azure Pipelines - Learn
   description: Implement a CI/CD pipeline for Azure Functions.
-  ms.date: 03/02/2020
-  author: edkaim
-  ms.author: v-edkaim
+  ms.date: 04/03/2020
+  author: tpetchel
+  ms.author: thpetche
   ms.topic: interactive-tutorial
-  #ms.learn-contact: v-edkaim
   ms.prod: learning-azure
 title: Automate Azure Functions deployments with Azure Pipelines
 summary: Implement a CI/CD pipeline for Azure Functions.
