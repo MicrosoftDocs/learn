@@ -1,22 +1,31 @@
-The application stores and retrieves item ratings from a MongoDB database. In this exercise, you deploy MongoDB to the Azure Kubernetes Service (AKS) cluster via Helm.
+The Fruit Smoothies' ratings website consists of several components. There's a web frontend, a document database that stores captured data, and a RESTful API that allows the web frontend to communicate with the database. The development team is using MongoDB as the document store database of choice for the ratings website.
 
-[Helm](https://helm.sh?azure-portal=true) is an application package manager for Kubernetes. It offers a way to easily deploy applications and services via [charts](https://helm.sh/docs/topics/charts/?azure-portal=true). A chart is a collection of files that describe a related set of Kubernetes resources. You can use a single chart to deploy something simple, like a memcached pod, or something complex, like a full web app stack with HTTP servers, databases, and caches.
+In this exercise, you'll deploy MongoDB to the Azure Kubernetes Service (AKS) cluster using Helm. You'll also see how to use a Kubernetes secret to store the MongoDB connection username and password.
 
-Charts are stored in Helm chart repositories. The official chart repository is maintained on [GitHub](https://github.com/helm/charts?azure-portal=true). The [Helm Hub](https://hub.helm.sh?azure-portal=true) provides a way to discover and view documentation of such charts.
+This example architecture deploys MongoDB on the cluster for the application to use to store data. While this is acceptable for test and development environments, it's not recommended for production environments. For production, it's recommended to store your application state and data in a scalable data storage platform, such as CosmosDB.
 
-By the end of this unit, you'll have a MongoDB deployment done by using Helm. You'll also store the MongoDB credentials in a Kubernetes secret.
+In this exercise, you will:
 
-![Deployed resources on the Azure Kubernetes Service cluster](../media/04-arch-1.svg)
+> [!div class="checklist"]
+> - Configure the Helm stable repository
+> - Install the MongoDB chart
+> - Create a Kubernetes secret to hold database credentials
+
+:::image type="content" source="../media/04-arch-1.svg" border="false" alt-text="Diagram that shows the deployed resources on the Azure Kubernetes Service cluster.":::
 
 ## Add the Helm stable repository
 
-1. To use Helm, you need the `helm` command, which is already installed in Azure Cloud Shell. Helm provides a standard repository of charts for many different software packages. It has one for [MongoDB](https://github.com/helm/charts/tree/master/stable/mongodb?azure-portal=true). The MongoDB chart is part of the official Helm *stable* charts repository. Configure the Helm client to use the stable repository by running the `helm repo add` command.
+Helm is an application package manager for Kubernetes. It offers a way to easily deploy applications and services using charts. 
+
+The Helm client is already installed in the Azure Cloud Shell and can be run with the `helm` command. Helm provides a standard repository of charts for many different software packages. Helm has a chart for MongoDB that is part of the official Helm *stable* charts repository.
+
+1. Configure the Helm client to use the stable repository by running the `helm repo add` command below.
 
     ```bash
     helm repo add stable https://kubernetes-charts.storage.googleapis.com/
     ```
 
-1. After the repo is added, list the charts you can install.
+1. You can now list the charts to install by running the `helm search repo` command. Notice how you can list all charts from the stable channel in the command below.
 
     ```bash
     helm search repo stable
@@ -33,9 +42,17 @@ By the end of this unit, you'll have a MongoDB deployment done by using Helm. Yo
     ...
     ```
 
-## Install the MongoDB chart
+## Install a Helm chart
 
-1. To install a chart, run the `helm install` command. In the following example, the release is called `ratings` and is deployed into the `ratingsapp` namespace. Replace `<username>` and `<password>` with values of your choice, and note them for later use.
+A Helm chart is a collection of files that describe a related set of Kubernetes resources. You can use a single chart to deploy something simple, like a memcached pod, or something complex, like a full web app stack with HTTP servers, databases, and caches.
+
+Helm charts are stored in Helm chart repositories. The official chart repository is maintained on GitHub. The Helm Hub provides a way to discover and view documentation of such charts.
+
+You're now ready to install the MonogoDB instance. Recall from earlier, that you configured your cluster with a `ratingsapp` namespace. You'll specify the namespace as part of the `helm install` command, and a name for the database release. The release is called `ratings` and is deployed into the `ratingsapp` namespace.
+
+1. Run the `helm install` command below. Make sure to replace `<username>` and `<password>` with appropriate values, and note them for later use.
+
+    Keep in mind that the MongoDB connection string is a URI. You have to escape special characters using a standard URI escape mechanism when choosing special characters in the username or password.
 
     ```bash
     helm install ratings stable/mongodb \
@@ -43,7 +60,7 @@ By the end of this unit, you'll have a MongoDB deployment done by using Helm. Yo
         --set mongodbUsername=<username>,mongodbPassword=<password>,mongodbDatabase=ratingsdb
     ```
 
-    You provide parameters with the `--set` switch and a comma-separated list of `key=value` pairs. Pay attention to the `mongodbUsername`, `mongodbPassword`, and `mongodbDatabase` parameters and their values, which set the username, password, and database name, respectively. The application expects that the database is called **ratingsdb**. The `helm install` command is a powerful command with many capabilities. To learn more about it, see [Using Helm](https://helm.sh/docs/intro/using_helm/?azure-portal=true).
+    You provide parameters with the `--set` switch and a comma-separated list of `key=value` pairs. Pay attention to the `mongodbUsername`, `mongodbPassword`, and `mongodbDatabase` parameters and their values, which set the username, password, and database name, respectively. The application expects that the database is called **ratingsdb**. The `helm install` command is a powerful command with many capabilities.
 
 1. After the installation is finished, you should get an output similar to this example. Make a note of the MongoDB host, which should be `ratings-mongodb.ratingsapp.svc.cluster.local`, if you used the same parameters.
 
@@ -62,11 +79,13 @@ By the end of this unit, you'll have a MongoDB deployment done by using Helm. Yo
         ratings-mongodb.ratingsapp.svc.cluster.local
     ```
 
+    Keep in mind that you can easily remove a Helm release by running the `helm uninstall` command. The full command is `helm uninstall ratings --namespace ratingsapp`. In this exercise, uninstalling a chart should only be necessary if you made a mistake specifying a non-escaped username or password.
+
 ## Create a Kubernetes secret to hold the MongoDB details
 
- Kubernetes has a concept of [secrets](https://kubernetes.io/docs/concepts/configuration/secret/?azure-portal=true). Secrets let you store and manage sensitive information, such as passwords. Putting this information in a secret is safer and more flexible than hard coding it in a pod definition or a container image.
+In the previous step, you installed MongoDB using Helm, with a specified username, password, and database name. Now you'll store these details in a Kubernetes secret. This step ensures that you don't leak secrets by hard coding them into configuration files.
 
- In the previous step, you installed MongoDB by using Helm, with a specified username, password, and database name. Now you store those details in a Kubernetes secret to use later.
+Kubernetes has a concept of secrets. Secrets let you store and manage sensitive information, such as passwords. Putting this information in a secret is safer and more flexible than hard coding it in a pod definition or a container image.
 
  The ratings API expects to find the connection details to the MongoDB database in the form of `mongodb://<username>:<password>@<endpoint>:27017/ratingsdb`. Replace `<username>`, `<password>`, and `<endpoint>` with the ones you used when you created the database, for example, `mongodb://ratingsuser:ratingspassword@ratings-mongodb.ratingsapp.svc.cluster.local:27017/ratingsdb`.
 
@@ -78,7 +97,7 @@ By the end of this unit, you'll have a MongoDB deployment done by using Helm. Yo
         --from-literal=MONGOCONNECTION="mongodb://<username>:<password>@ratings-mongodb.ratingsapp.svc.cluster.local:27017/ratingsdb"
     ```
 
-1. To validate that the secret was created, run the `kubectl describe secret` command.
+1. Run the `kubectl describe secret` command to validate that the secret.
 
     ```bash
     kubectl describe secret mongosecret --namespace ratingsapp
@@ -99,9 +118,18 @@ By the end of this unit, you'll have a MongoDB deployment done by using Helm. Yo
     MONGOCONNECTION:  98 bytes
     ```
 
-You now have an Azure Kubernetes Service cluster created and configured with a namespace called `ratingsapp`. In that namespace, there should be Kubernetes resources that correspond to the MongoDB database that was deployed:
+You now have an AKS cluster with a configured MongoDB database in a namespace called `ratingsapp`. In this namespace, you'll find the following resources:
 
 - **Deployment/ratings-mongodb**: A deployment represents one or more identical pods managed by the Kubernetes Deployment Controller. This deployment defines the number of replicas (pods) to create for MongoDB. The Kubernetes Scheduler ensures that if pods or nodes encounter problems, additional pods are scheduled on healthy nodes.
+
 - **Pod/ratings-mongodb-{random-string}**: Kubernetes uses pods to run an instance of MongoDB.
+
 - **Service/ratings-mongodb**: To simplify the network configuration, Kubernetes uses services to group a set of pods and provide network connectivity logically. Connectivity to the MongoDB database is exposed via this service through the DNS name **ratings-mongodb.ratingsapp.svc.cluster.local**.
+
 - **Secret/mongosecret**: A Kubernetes secret is used to inject sensitive data into pods, such as access credentials or keys. This secret holds the MongoDB connection details. You'll use it in the next unit to configure the API to communicate with MongoDB.
+
+## Summary
+
+In this exercise, you configured the Helm stable repository, then used a Helm chart to deploy MongoDB to your cluster. You then created a Kubernetes secret to hold database credentials.
+
+Next, you'll deploy the Fruit Smoothies ratings-api to your AKS cluster.
