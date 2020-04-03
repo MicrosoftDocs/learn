@@ -2,13 +2,13 @@ The Fruit Smoothies' ratings website consists of several components. There's a w
 
 In the previous unit, you deployed MongoDB using Helm. You'll continue your deployment and deploy the ratings API. The ratings API is a Node.js application written by using the Express framework. It stores and retrieves items and their ratings in a MongoDB database. Recall that you already created an Azure Container Registry instance.
 
-:::image type="content" source="../media/05-arch-2.svg" border="false" alt-text="Diagram that shows the deployed resources on the Azure Kubernetes Service cluster.":::
-
 In this exercise, you will:
 
 > [!div class="checklist"]
 > - Create a Kubernetes deployment for the RESTful API
 > - Create a Kubernetes service to expose the RESTful API over the network
+
+:::image type="content" source="../media/05-arch-2.svg" border="false" alt-text="Diagram that shows the deployed resources on the Azure Kubernetes Service cluster.":::
 
 ## Create a Kubernetes deployment for the ratings API
 
