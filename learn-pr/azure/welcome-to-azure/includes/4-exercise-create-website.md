@@ -32,7 +32,7 @@ In the free Azure sandbox environment, you'll use the pre-created resource group
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-    [!include[](../../../includes/verify-directory-and-sandbox.md)]
+    [!include[](../../includes/verify-directory-and-sandbox.md)]
 
 1. Expand the left-hand navigation panel.
 
