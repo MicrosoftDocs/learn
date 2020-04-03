@@ -5,7 +5,8 @@ In this exercise, you will make use of the Speech Service you created earlier.  
 
 1. Start by opening a browser tab or window and navigating to [Visual Studio Code Online](https://visualstudio.microsoft.com/services/visual-studio-online/)
 
-    [!NOTE] At this time, Safari is not a supported browser for the preview of VS Code Online
+    > [!NOTE]
+    > At this time, Safari is not a supported browser for the preview of VS Code Online.
 
 1. You will require an Azure subscription to create an environment for Visual Studio Code Online
 1. Select the **Get started** button.
@@ -17,7 +18,7 @@ In this exercise, you will make use of the Speech Service you created earlier.  
 1. Once your plan is created, you can then create you first environment.  
 1. If the **Create Environment** panel does not open automatically, select **Create environment**.
 1. Enter an environment name of your choosing, example **SpeechToTextPython**
-1. Copy the following URL and past it into the Git Repository area on the **Create Environment** panel, https://github.com/MicrosoftLearning/AI-SpeechToText
+1. Copy the following URL and paste it into the Git Repository area on the **Create Environment** panel: `https://github.com/MicrosoftLearning/AI-SpeechToText`
 1. Leave the rest of the settings at their default and select **Create**.
 1. It will take a few minutes for the environment to be created so while you wait, go to your **Speech** service in the **Azure portal** and copy one of your keys, and also note the region where the service was created.
 1. Once the environment indicates that it is available, either select the title, or select the three vertical dots in the lower right of the environment box and choose **Connect**.
@@ -37,7 +38,8 @@ In this exercise, you will make use of the Speech Service you created earlier.  
 
 1. Start by opening a browser tab or window and navigating to [Visual Studio Code Online](https://visualstudio.microsoft.com/services/visual-studio-online/)
 
-    [!NOTE] At this time, Safari is not a supported browser for the preview of VS Code Online
+    > [!NOTE]
+    > At this time, Safari is not a supported browser for the preview of VS Code Online.
 
 1. You will require an Azure subscription to create an environment for Visual Studio Code Online
 1. Select the **Get started** button.
@@ -49,7 +51,7 @@ In this exercise, you will make use of the Speech Service you created earlier.  
 1. Once your plan is created, you can then create your first environment.  
 1. If the **Create Environment** panel does not open automatically, select **Create environment**.
 1. Enter an environment name of your choosing, example **SpeechToTextCS**.
-1. Copy the following URL and past it into the Git Repository area on the **Create Environment** panel, https://github.com/MicrosoftLearning/SpeechToTextCS
+1. Copy the following URL and paste it into the Git Repository area on the **Create Environment** panel: `https://github.com/MicrosoftLearning/SpeechToTextCS`
 1. Leave the rest of the settings at their default and select **Create**.
 1. It will take a few minutes for the environment to be created so while you wait, go to your Speech service in the Azure portal and copy one of your keys, and also note the region where the service was created.
 1. Once the environment indicates that it is available, either select the title or select the three vertical dots in the lower right of the environment box and choose **Connect**.
@@ -129,19 +131,21 @@ In this exercise, you will make use of the Speech Service you created earlier.  
     }
 
     ```
+
 1. In the terminal window, type the following command 
     ```dotnet add package Microsoft.CognitiveServices.Speech``` 
     and press Enter
-1. In the terminal windows, type the following command to also add the Audio package, ``` dotnet add package Microsoft.CognitiveServices.Speech.Audio```, and press Enter
+1. In the terminal windows, type the following command to also add the Audio package, ```dotnet add package Microsoft.CognitiveServices.Speech.Audio```, and press Enter
 1. Visual Studio Code installs the package for use with the AudioConfig class that will be used in the code
-1. Include the package in Program.cs by entering the following using statement 
+1. Include the package in Program.cs by entering the following using statement
+
     ```csharp
         using Microsoft.CognitiveServices.Speech.Audio;
     ```
+
 1. In the Program.cs file, paste your Speech Service key where the text **YourSubscriptionKey** is
 1. Enter your location, such as **westus** in the **YourServiceRegion** option of that same line
 1. Locate the text **YourAudioFileName** and replace it with **narration.wav**
 1. In the terminal window, type ```dotnet run``` and if all was entered correctly, you should see the result of the translation in the terminal window.
 
 ::: zone-end
-
