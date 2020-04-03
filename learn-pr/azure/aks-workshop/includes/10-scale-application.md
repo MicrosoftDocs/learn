@@ -1,13 +1,13 @@
 Fruit Smoothies has shops worldwide with a large follower base and the expectation is that many users will use the ratings website to rate their favorite smoothy flavor. As the popularity of your application grows, the application needs to scale appropriately to manage demand changes. You have to ensure that your application remains responsive as the number of ratings increases.
 
-:::image type="content" source="../media/10-cluster-autoscaler.png" border="false" alt-text="Diagram of the cluster autoscaler and horizontal pod autoscaler working together to support the required application demands.":::
-
 In this exercise, you'll:
 
 > [!div class="checklist"]
 > - Create an AKS horizontal pod autoscaler
 > - Run a load test with horizontal pod autoscaler enabled
 > - Autoscale the AKS cluster
+
+:::image type="content" source="../media/10-cluster-autoscaler.png" border="false" alt-text="Diagram of the cluster autoscaler and horizontal pod autoscaler working together to support the required application demands.":::
 
 ## Create the horizontal pod autoscaler
 
