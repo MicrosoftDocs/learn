@@ -15,7 +15,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which of the following is a good candidate for serverless computing?"
+  - content: "Which of these projects is a good candidate for serverless computing?"
     choices:
     - content: "A service that recognizes people in images."
       isCorrect: true
@@ -30,16 +30,16 @@ quiz:
     choices:
     - content: "They do not require any special configuration to be massively scalable."
       isCorrect: false
-      explanation: "Azure Functions automatically scale based on demand. In fact, you can even specify specialized behavior, such as keeping a certain number of instances warm at all times."
+      explanation: "Azure Functions automatically scales based on demand. In fact, you can even specify specialized behavior, such as keeping a certain number of instances warm at all times."
     - content: "They can be written in virtually any mainstream language."
       isCorrect: false
       explanation: "Azure Functions can be developed in C#, Java, JavaScript, Python, PowerShell, and more."
     - content: "They are a replacement for app services and virtual machines."
       isCorrect: true
-      explanation: "Azure Functions are great for providing specific services, but are not intended to replace app services or virtual machines."
+      explanation: "Azure Functions is great for providing specific services, but are not intended to replace app services or virtual machines."
   - content: "Which of the following is not a supported way to directly trigger an Azure Functions app?"
     choices:
-    - content: "Making a HTTP request over the public Internet."
+    - content: "Making an HTTP request over the public Internet."
       isCorrect: false
       explanation: "This is one of the most common ways to integrate with Azure Functions."
     - content: "Detecting a new message on a message queue."
