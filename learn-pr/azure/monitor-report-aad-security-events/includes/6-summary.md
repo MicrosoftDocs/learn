@@ -1,12 +1,14 @@
-Your organization recently began integrating their identities with Azure AD. Your security team wanted improved security reporting and monitoring to reduce incidents. You needed to demonstrate the reporting capabilities in Azure AD, to ensure that proper monitoring is in place to alert on security events.
+Your organization recently began integrating its identities with Azure Active Directory (Azure AD). Your security team wants improved security reporting and monitoring to help reduce incidents. 
 
-By using the sign-in and activity logs, Azure Monitor alerts you to unusual or unexpected behaviors. With Azure Monitor, you create bespoke dashboards with metrics and essential data regarding user activity and security across your Azure Active Directory.
+Your role is to demonstrate the reporting capabilities of Azure AD, to ensure that proper monitoring is in place and the team is alerted about security events.
 
-Without Azure Monitor providing alerts and giving a single, at-a-glance view of your Azure AD estate, you'd have no visibility of an attack until it was too late. That's a situation your security team is keen to avoid.
+By using sign-in and activity logs, Azure Monitor can provide alerts about unusual or unexpected user behaviors. With Azure Monitor, you can build custom dashboards that display metrics and essential data about user activity and security across Azure AD.
+
+Without Azure Monitor alerts and its single, at-a-glance, dashboard view of your team's Azure AD estate, they might have no warning about unexpected incidents until it is too late. In this module, you've learned to build that view and help prevent such situations, which your team is eager to avoid.
 
 ## Learn more
 
-To learn more about events in Azure AD, visit the following articles:
+To learn more about events in Azure AD, see the following articles:
 
 - [What are Azure Active Directory reports?](https://docs.microsoft.com/azure/active-directory/reports-monitoring/overview-reports)
 - [What is Azure Active Directory monitoring?](https://docs.microsoft.com/azure/active-directory/reports-monitoring/overview-monitoring)

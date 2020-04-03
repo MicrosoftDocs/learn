@@ -1,79 +1,83 @@
-You've used the tools and services in the Azure portal to gather logging details about your users and their activities. You've taken the audit and sign-in data, and built queries to gain answers and insights into specific behaviors. These queries will also alert you when there's suspicious behavior. This process has gone a long way towards meeting your team's security concerns.
+You've used the tools and services in the Azure portal to gather logging details about your users and their activities. You've taken the audit and sign-in data, and built queries to gain answers and insights into specific behaviors. These queries will also alert you when there's suspicious behavior. This process has gone a long way toward meeting your team's security concerns.
 
-Your security team is pleased. They'll be alerted when identified behaviors are found, but they know those alerts are tightly focused. Now the team wants to know whether Azure can give real-time views of the security of their estate. The team can then identify and respond to new threats.
+Your security team members are pleased. They'll be alerted when suspicious behaviors are identified, but they know that those alerts are tightly focused. Now the members want to know whether Azure can give real-time views of the security of their estate. They can then identify and respond to new threats.
 
-Azure provides several visualization tools and reports that can meet your security team's needs. You want to understand how to put these tools and reports into practice.
+Azure provides several visualization tools and reports that can meet the team's needs. You want to understand how to put these tools and reports into practice.
 
-In this unit, you'll explore some of the prebuilt views available for reporting on sign-in events. You'll also learn how to enhance and customize the underlying report queries, and save them to a security dashboard. Finally, you'll learn how to export these reports to Excel and Power BI.
+In this unit, you explore some of the prebuilt views that are available for reporting on sign-in events. You also learn how to enhance and customize the underlying report queries, and save them to a security dashboard. Finally, you learn how to export these reports to Excel and Power BI.
 
-## Understanding prebuilt views
+## Understand prebuilt views
 
-In addition to building your own reports and queries to report on user activity, you can also use prebuilt log analytics views. These views help you report on frequently encountered scenarios using the sign-in and audit log events. All reports and views can be linked with alerts to warn of any unusual results.
+In addition to building your own reports and queries to report on user activity, you can use prebuilt log analytics views. These views help you report on frequently encountered scenarios by using the sign-in and audit log events. All reports and views can be linked with alerts to warn of any unusual results.
 
-Prebuilt views are available on GitHub in the [AzureAD/Deployment-Plans](https://github.com/AzureAD/Deployment-Plans/tree/master/Log%20Analytics%20Views?azure-portal=true) repository. There are two views available to use:
+Prebuilt views are available on GitHub in the [AzureAD/Deployment-Plans](https://github.com/AzureAD/Deployment-Plans/tree/master/Log%20Analytics%20Views?azure-portal=true) repository. Two views are available to use:
 
 - Azure AD Account Provisioning Events
-- Sign-in Events
+- Sign-ins Events
 
-### Azure AD Account Provision Events view
+### The Azure AD Account Provisioning Events view
 
-This view is a collection of reports based on audit log data, focused around account provisioning. You can use reports to:
+This view is a collection of reports that are based on audit log data and focused on account provisioning. You can use reports to:
 
-- See the number of newly provisioned users, and how many failed.
-- Gauge the number of users successfully updated, and how many failed.
-- Get the number of users deprovisioned, and any that failed.
+- View the number of newly setup users, and the number of failed attempts.
+- Gauge the number of successfully updated users, and the number of failed attempts.
+- View the number of deprovisioned users, and the number of failed attempts.
 
-You'll need to download the [Azure AD Account Provisioning Events.omsview](https://github.com/AzureAD/Deployment-Plans/blob/master/Log%20Analytics%20Views/Azure%20AD%20Account%20Provisioning%20Events.omsview?azure-portal=true) file from the GitHub repository.
+To get these reports, download the [*Azure AD Account Provisioning Events.omsview* file](https://github.com/AzureAD/Deployment-Plans/blob/master/Log%20Analytics%20Views/Azure%20AD%20Account%20Provisioning%20Events.omsview?azure-portal=true) from the GitHub repository.
 
-### Sign-in Events view
+### The Sign-ins Events view
 
 This view is a collection of reports that monitor your users' sign-in attempts. With this view, you can report and monitor:
 
-- Sign in by application
-- Sign in by user
-- Sign in by device
+- Sign-ins by application
+- Sign-ins by user
+- Sign-ins by device
 - Sign-ins over time
 
-You'll need to download the [AzureADSignins.omsview](https://github.com/AzureAD/Deployment-Plans/blob/master/Log%20Analytics%20Views/AzureADSignins.omsview?azure-portal=true) file from the GitHub repository.
+To get these reports, download the [*AzureADSignins.omsview* file](https://github.com/AzureAD/Deployment-Plans/blob/master/Log%20Analytics%20Views/AzureADSignins.omsview?azure-portal=true) from the GitHub repository.
 
 ### Install a prebuilt view
 
-You can choose to download and install one or both of these prebuilt views into your Log Analytics workspace.  You'll be using the one to which you previously directed the audit and sign-in data streams.
+You can choose to download and install one or both of these prebuilt views in your Log Analytics workspace.  You'll be using the one to which you previously directed the audit and sign-in data streams.
 
-1. In the Azure portal, select **All services**, and type **Log Analytics**. Select the Log Analytics workspace you created earlier.
+1. In the Azure portal, select **All services**, enter **Log Analytics**, and then select the Log Analytics workspace that you created earlier.
 1. Select **View Designer**.
-1. Select **Import**, select **Choose file**, and then browse to the location where you downloaded both views. Select the **Azure AD Account Provisioning Events** file, and select **Save**.
-1. Repeat step 3, but select the **Sign-in Events** file, and select **Save**.
+1. Select **Import**, select **Choose file**, and then browse to the location where you downloaded both views. 
+1. Select the **Azure AD Account Provisioning Events** file, and select **Save**.
+1. Repeat the preceding step, but select the **Sign-ins Events** file instead, and then select **Save**.
 
-You've now imported both prebuilt views into your Log Analytics workspace.
+You've now imported both prebuilt views to your Log Analytics workspace.
 
 ### Using the prebuilt views
 
-With the two prebuilt views installed, you can start using them to assess your users' activity and behaviors.  From the **Log Analytics workspace** summary, you'll see the views you installed.
+With the two prebuilt views installed, you can start using them to assess your users' activity and behavior.  
 
-- Sign-in Events
+From the **Log Analytics workspace** summary, you'll see the views you installed:
+
+- Sign-ins Events
 - Azure AD Account Provisioning Events
 
-To access the view, select the one you're interested in.  Each view comes with many reports you can tailor to give the insight you're looking for.
+To access a view, select the one you're interested in.  Each view comes with many reports that you can tailor to give the insight you're looking for.
 
 ## Create a security dashboard
 
-Dashboards provide an organized view of the resources in your Azure cloud instance. From the dashboard, you organize and arrange your day-to-day and recurring operational tasks and activities. Each dashboard can be built around a specific activity, like a task or a project.
+Dashboards provide an organized view of the resources in your Azure cloud instance. From a dashboard, you can organize and arrange your day-to-day and recurring operational tasks and activities. Each dashboard can be built around a specific activity, such as a task or a project.
 
 Start by creating a new dashboard for your security team.
 
-From your Azure portal:
+1. In the Azure portal, search for **Dashboard**.
 
-1. Search for **Dashboard**.
-1. Select **New Dashboard**, which will create an empty dashboard.
-1. Give the dashboard a name, and select **Done**.
-1. Even though the dashboard contains no data, you can still share it.  Select the **Share** option, then confirm the sharing and access controls are correct. Give this dashboard a unique and recognizable name; for instance, "security dashboard".  
+1. Select **New Dashboard** to create an empty dashboard.
 
-With the empty dashboard created, you'll need to add a query report. You might think that you could directly add your audit, or sign-in log data, to your dashboard, but that isn't the case. You'll need to return to the Log Analytics workspace you created earlier, to build a query for the dashboard.
+1. Give the dashboard a name, and then select **Done**.
 
-### Building a dashboard query
+1. Even though the dashboard contains no data, you can still share it.  Select the **Share** option, and then confirm that the sharing and access controls are correct. Give this dashboard a unique and recognizable name, such as **Security Dashboard**.  
 
-From the log analytics workspace, create a new query. Suppose you wanted to identify the most common user event for the last week. You'd use a query like this one:
+Now that you've created a dashboard, you need to add a query report to it. It might seem as though you can add audit or sign-in log data directly to the dashboard, but you can't yet. To build a query to add to the dashboard, you need to return to the Log Analytics workspace you created earlier.
+
+### Build a dashboard query
+
+From the Log Analytics workspace, create a new query. Let's suppose you want to identify the most common user event for the last week. You would use a query like this one:
 
 ```kusto
 AuditLogs
@@ -84,53 +88,54 @@ AuditLogs
 
 It's good practice to check any query by running it. When the query returns a valid result set, you can save it.
 
-![screenshot showing the save and pin to dashboard options for a Log Analytics Query](../media/4-save-query.png)
+![Screenshot of the "Save" and "Pin to dashboard" buttons for a Log Analytics query.](../media/4-save-query.png)
 
-When the save query control panel appears:
+When the **Save query** control pane appears, do the following:
 
-1. Give the query a meaningful **Name**; for instance, "Common User Events Last 7 days".
-1. Select the **Category** of **Dashboards**.
-1. Select the **Save** option. Saving queries like this allows you to build up a library of the ones most often used.
-1. Finally, select **Pin to dashboard**. You'll need to choose the dashboard you created earlier.
+1. Give the query a meaningful **Name**, such as *Common User Events Last 7 days*.
+1. For **Category**, select **Dashboards**.
+1. Select **Save**. By saving queries, you can build a library of the ones you use most often.
+1. Select **Pin to dashboard**, and then select the dashboard that you created earlier.
 
-With the query pinned, you can now return to the security dashboard you've already created.  When you open the **Security Dashboard**, you'll see the analytics result displayed.
+Now that you've pinned the query to the dashboard, you can return to the security dashboard that you created earlier.  When you open **Security Dashboard**, the analytics result is displayed.
 
-The name of the report needs to be improved, so you should rename it to something meaningful.
+The name of the report could be improved, so consider renaming it to something more specific.
 
-![Screenshot showing the updated dashboard with the edit name and edit button highlighted](../media/4-log-analytics-modify-dashboard.png)
+![Screenshot of the updated dashboard, with a new name and the "Edit" (pencil icon) button.](../media/4-log-analytics-modify-dashboard.png)
 
-Select the edit option to change the **title** to a more meaningful name. For example, "Top User Events past seven days". When you've made all your changes, select **Update**.
+1. To change the dashboard name, select the **Edit** (pencil icon) button. A more specific title might be **Top User Events past seven days**. 
+1. When you've made all your changes, select **Update**.
 
-## Exporting reports
+## Export reports
 
-When you're satisfied with the report, you can export it to Excel or the Power BI desktop application. From the navigation bar, select the **Export** option. You'll then have a couple of choices: Export to Excel (all columns or displayed columns), or Export a Power BI M Query.
+When you're satisfied with the report, you can export it to Excel or the Power BI desktop application. From the navigation bar, select the **Export** drop-down list, and then select **Export to Excel - All Columns**, **Export to Excel - Displayed Columns**, or **Power BI Query (M)**.
 
-![Screenshot showing the export options](../media/4-export-options.png)
+![Screenshot of the options in the "Export" drop-down list.](../media/4-export-options.png)
 
 ### Export a report to Excel
 
-When exporting to Excel, you have two choices.  You can export the whole report, or export selected columns.  This action will export all the result set data for the query you've built. You can save the CSV file to your local computer.
+When you export to Excel, you have two choices. You can export the whole report or selected columns.  This action exports all the result set data for the query you've built. You can save the CSV file to your local computer.
 
 ### Export a report to Power BI (M)
 
-Power BI lets you build complex and dynamic reports and dashboards from the data you supply it.  From your Log Analytics workspace, you export the report to Power BI by selecting **Export** and choosing the **Power BI (M)** option.  This export doesn't export the data, but builds a complex M Query.  The Power BI desktop application will use the M Query to make a connection to your Azure instance, and pull active data from it.
+Power BI lets you build complex and dynamic reports and dashboards from the data you supply it.  From your Log Analytics workspace, you export the report to Power BI by selecting the **Export** drop-down list and then selecting the **Power BI (M)** option.  This sequence doesn't export the data directly, but it builds a complex M query. The Power BI desktop application uses the M query to make a connection to your Azure instance and pull active data from it.
 
-1. **Save** the text file to a location on your local computer.
-1. Open the saved file in your chosen a text editor. You'll need to copy the content to Power BI.
-1. Open the **Power BI Desktop** application.
-1. Select **Get Data**, and then choose **Blank Query**.
+1. Select **Save** to save the report text file to your local computer.
 
-When the query editor opens:
+1. Open the saved file in a text editor. In a moment, you'll copy the content to Power BI.
+1. Open Power BI Desktop.
+1. Select **Get Data**, and then select **Blank Query**.
 
-1. Select the **View** menu option, and choose **Advanced Editor**.
-1. **Copy** the content from the saved Power BI (M) file.
+   The Power BI query editor is displayed.
+1. Select the **View** menu option, and then select **Advanced Editor**.
+1. Copy the content from the saved Power BI (M) file.
 1. Paste the **M Language script** into the editor pane.
-1. Select **Done** when ready.
+1. Select **Done**.
 
-Because this query originated in Azure, you'll need to use the **Organizational account** option, and your Azure authentication credentials to grant Power BI access to your Azure instance.
+Because this query originated in Azure, you'll need to use the **Organizational account** option and your Azure authentication credentials to grant Power BI access to your Azure instance.
 
-With the link created, you can now select any of the reporting chart styles to represent your data in the way you want.  
+Now that you've created the link, you can select a reporting chart style to represent your data in the way you want.  
 
-![Screenshots showing how to build a report in Power BI](../media/4-power-bi-analytics-visualize.png)
+![Screenshot of a report in the Power BI query editor pane.](../media/4-power-bi-analytics-visualize.png)
 
-When you've laid out the report as you want, you can select **Publish to Web** to publish the report to your Azure Power BI cloud workspace. From there, the report can be used on other web pages.
+After you've designed the report as you want it, you can select **Publish to Web** to publish it to your Azure Power BI cloud workspace. From there, you can display the report on other webpages as well.
