@@ -2,6 +2,9 @@ There are several options available when running Kubernetes locally. Recall, you
 
 However, your goal in this exercise is to explore a Kubernetes installation and explore a single-node Kubernetes cluster. You're going to configure a mikro8s environment that is easy to set up and tear down. Then you'll deploy an NGINX website and scale it out to multiple instances. Finally, you'll go through the steps to delete the running pods and clean up the cluster.
 
+> [!NOTE]
+> This exercise is optional and includes steps that show how to delete and uninstall the software and resources you'll use in the exercise.
+
 Keep in mind that there are other options such as MiniKube, and Kubernetes support in Docker, to do the same.
 
 ## What is Mikro8s?
@@ -22,7 +25,7 @@ The Linux installation of microk8s is the installation option with the least num
     sudo snap install microk8s --classic
     ```
 
-    A successful install shows the following message. 
+    A successful install shows the following message.
 
     ```output
     ubuntu@microk8s-vm:~$ sudo snap install microk8s --classic
@@ -406,7 +409,7 @@ There are several additional configurations that you would need to apply to the 
 
 ## How to uninstall microk8s
 
-You can remove everything we've deployed so far and even the VM to recover space on your development machine. Keep in mind that this step is optional. Run the following commands to remove microk8s and the VM from your machine.
+You can remove everything you've deployed so far and even the VM to recover space on your development machine. Keep in mind that this step is optional. Run the following commands to remove microk8s and the VM from your machine.
 
 1. Remove the add-ons from the cluster by running the `microk8s.disable` disable command and specifying the add-ons to remove.
 
