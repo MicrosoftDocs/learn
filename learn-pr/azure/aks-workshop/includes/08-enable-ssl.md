@@ -1,14 +1,14 @@
 The online security and privacy of user data is a primary concern for Fruit Smoothies as a company. It's important the ratings website allows HTTPS connections to all customers. NGINX ingress controller supports TLS termination and provides several ways to retrieve and configure certificates for HTTPS. This exercise demonstrates how to use *cert-manager*, which provides automatic *Let's Encrypt* certificate generation and management functionality.
 
-:::image type="content" source="../media/08-arch-5.svg" border="false" alt-text="Diagram that shows the deployed resources on the Azure Kubernetes Service cluster.":::
-
-In this exercise, you'll:
+In this exercise, you will:
 
 > [!div class="checklist"]
 > - Deploy cert-manager by using Helm
 > - Deploy a ClusterIssuer resource for Let's Encrypt
 > - Enable SSL/TLS for the ratings web service on Ingress
 > - Test the application
+
+:::image type="content" source="../media/08-arch-5.svg" border="false" alt-text="Diagram that shows the deployed resources on the Azure Kubernetes Service cluster.":::
 
 ## Deploy cert-manager
 
