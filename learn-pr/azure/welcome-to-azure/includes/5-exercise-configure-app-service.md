@@ -6,19 +6,19 @@ Let's have a look at some of this information.
 
 1. From the left-hand navigation menu, select **Dashboard** to access a list of all resources in your subscription. You may have to click the menu icon to show the navigation choices.
 
-    ![Screenshot showing the MS Learn sandbox subscription with new resources](../media/5-dashboard-resources.png)
+    ![Screenshot of Azure portal showing several resources in the all resources widget of a dashboard.](../media/5-dashboard-resources.png)
 
 1. Select the **App Service** with the name you chose it in the previous exercise.
 
-    ![Screenshot showing the App Service](../media/5-select-app-service.png)
+    ![Screenshot of Azure portal showing the dashboard all resources widget with the learn-blog App Service highlighted.](../media/5-select-app-service.png)
 
 1. By default, the app service's overview is displayed, if not select **Overview**.
 
-    [![Screenshot showing the App Service overview information](../media/5-overview.png)](../media/5-overview-expanded.png#lightbox)
+    [![Screenshot of Azure portal showing the App Service overview pane.](../media/5-overview.png)](../media/5-overview-expanded.png#lightbox)
 
 1. Scroll down in the overview view to where you can see the graphs for your newly created website. These graphs provide statistics about the number of requests received by our website, the amount of data in, data out, and the number of errors encountered on the site.
 
-    [![Screenshot showing App Service graphs](../media/5-graphs.png)](../media/5-graphs-expanded.png#lightbox)
+    [![Screenshot of Azure portal showing App Service graphs: Http 5xx, Data In, Data Out, Requests, and Average Response Time.](../media/5-graphs.png)](../media/5-graphs-expanded.png#lightbox)
 
     The information displayed here is near real-time data and gives a quick overview of the performance of your website. Problems with the site's performance will manifest in these graphs as early warnings.
 
@@ -48,13 +48,13 @@ The first section displayed is a group of common options you'd access to get a v
 
 For example, the **Settings** section gives you access to configure various aspects such as application settings, backups, custom domains, TLS/SSL settings, options to scale up the resources of the application, and so on.
 
-![Screenshot showing settings category options](../media/5-settings.png)
+![Screenshot of Azure portal showing App Service settings menu options.](../media/5-settings.png)
 
 ## Scale up your App Service
 
 1. In the **Settings** configuration section for your app service, select **Scale up (App service plan)**.
 
-    ![Screenshot showing Scale up selection](../media/5-settings-scale.png)
+    ![Screenshot of Azure portal showing App Service settings menu with Scale up section highlighted.](../media/5-settings-scale.png)
 
 1. Notice that there are three workload categories to choose from in the configuration pane. These three categories make it easier to decide the type of workload we'll run.
 
