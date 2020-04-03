@@ -2,20 +2,18 @@ The Fruit Smoothies' ratings website consists of several components. There's a w
 
 In the previous unit, you deployed the ratings API. You'll continue your deployment and deploy the ratings web front end. The ratings web front end is a Node.js application. Recall that you've already created an Azure Container Registry instance. You used it to build a Docker image of the front end and store it in a repository.
 
-:::image type="content" source="../media/06-arch-3.svg" border="false" alt-text="Diagram that shows the deployed resources on the Azure Kubernetes Service cluster.":::
-
-In this exercise, you'll:
+In this exercise, you will:
 
 > [!div class="checklist"]
 > - Create a Kubernetes deployment for the web front end
 > - Create a Kubernetes service manifest file to expose the web front end as a load-balanced service
 > - Test the web front end
 
-### What is a LoadBalancer?
-
-
+:::image type="content" source="../media/06-arch-3.svg" border="false" alt-text="Diagram that shows the deployed resources on the Azure Kubernetes Service cluster.":::
 
 ## Create a Kubernetes deployment for the ratings web front end
+
+Let's start by creating a deployment for the ratings front end.
 
 1. Create a file called `ratings-web-deployment.yaml` by using the integrated editor.
 
