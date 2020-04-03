@@ -55,6 +55,9 @@ The meeting breaks up. The next morning, Andy excitedly pops into Mara's office 
 
 **Mara:** This sounds like exactly what we need. I can help extend the existing CI/CD pipeline to support building and deploying it like we do for the main site project.
 
+> [!NOTE]
+> In this module, we won't focus on how to connect your app to Azure Functions. But if you're interested, you can [review the source code](https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web-azure-functions?azure-portal=true). The code uses the [Azure Functions runtime for C#](https://docs.microsoft.com/azure/azure-functions/functions-dotnet-class-library?azure-portal=true) to read leaderboard data from Azure Functions.
+
 ## What is Azure Functions?
 
 **Azure Functions** is one of the specific offerings within the broader spectrum of Azure serverless computing technologies. It provides an easy way for developers to build straightforward functions that exist in a stateless, serverless environment. They can be triggered using a variety of methods, including HTTP requests, changes to data in storage, receipt of a message from a queue, and more. You can learn more about the various trigger and bindings in [Azure Functions triggers and bindings concepts](https://docs.microsoft.com/azure/azure-functions/functions-triggers-bindings?azure-portal=true).
