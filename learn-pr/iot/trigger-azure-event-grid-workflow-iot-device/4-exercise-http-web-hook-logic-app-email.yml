@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.iot.trigger-azure-event-grid-workflow-iot-device.exercise-http-web-hook-logic-app-email
+title: Exercise - Create an HTTP web hook logic app that sends email
+metadata:
+  title: Exercise - Create HTTP web hook logic app that sends email
+  description: Create HTTP web hook logic app that sends email
+  ms.date: 3/20/20
+  author: olivierbloch
+  ms.author: Olivier.Bloch
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: True
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-exercise-create-http-web-hook-logic-app-email.md)]

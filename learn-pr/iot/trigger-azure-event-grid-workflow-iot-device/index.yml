@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.iot.trigger-azure-event-grid-workflow-iot-device
+metadata:
+  title: Trigger An Azure Event Grid Workflow from an IoT Device
+  description: Trigger An Azure Event Grid Workflow from an IoT Device
+  ms.date:  03/20/2020
+  author: olivierbloch
+  ms.author: Olivier.Bloch
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Trigger An Azure Event Grid Workflow from an IoT Device
+summary: Trigger An Azure Event Grid Workflow from an IoT Device
+abstract: |
+  Azure IoT Hub integrates with Azure Event Grid so that you can send event notifications to other services and trigger downstream processes and workflows. Configure your business applications to listen for IoT Hub events so that you can react to critical events in a reliable, scalable, and secure manner. For example, build an application that updates a database, creates a work ticket, and delivers an email notification every time a new IoT device is registered to your IoT hub.
+  In this module, you'll learn about integrating Azure IoT Hub with Azure Event Grid to trigger a workflow in a business scenario when a new IoT device is added to a solution.
+  Here are the steps you will go through:
+    - Create an IoT Hub
+    - Create a Logic App that sends an email
+    - Configure Azure IoT Hub Event Subscription
+    - Create new devices triggering a Logic App which sends an email when alert is flagged by device
+prerequisites: |
+  - An introductory knowledge of the purpose of Azure IoT
+  - Ability to navigate Azure IoT portal
+  - An outlook.com email address
+iconUrl: https://docs.microsoft.com/media/learn/module.svg
+levels: 
+- intermediate
+roles:
+- developer
+products:
+- azure-iot-hub
+- azure-event-grid
+- azure-logic-apps
+units:
+- learn.iot.trigger-azure-event-grid-workflow-iot-device.introduction
+- learn.iot.trigger-azure-event-grid-workflow-iot-device.business-integration-with-event-grid
+- learn.iot.trigger-azure-event-grid-workflow-iot-device.exercise-create-iot-hub
+- learn.iot.trigger-azure-event-grid-workflow-iot-device.exercise-http-web-hook-logic-app-email
+- learn.iot.trigger-azure-event-grid-workflow-iot-device.exercise-event-grid-iot-hub
+- learn.iot.trigger-azure-event-grid-workflow-iot-device.exercise-configure-azure-iot-hub-event-subscription
+- learn.iot.trigger-azure-event-grid-workflow-iot-device.exercise-test-logic-app
+- learn.iot.trigger-azure-event-grid-workflow-iot-device.summary
+badge:
+  uid: learn.iot.trigger-azure-event-grid-workflow-iot-device.badge

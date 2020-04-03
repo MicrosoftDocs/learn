@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.iot.trigger-azure-event-grid-workflow-iot-device.introduction
+metadata:
+  title: Introduction
+  description: In this module you will learn how to integrate Azure IoT Hub with Azure Event Grid to trigger business workflows
+  ms.date: 03/20/2020
+  author: olivierbloch
+  ms.author: Olivier.Bloch
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]
