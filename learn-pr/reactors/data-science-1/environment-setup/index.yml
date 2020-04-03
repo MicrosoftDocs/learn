@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.reactors.environment-setup
+uid: learn.reactors.data-science-1.environment-setup
 metadata:
   title: Set up the environment
   description: Set up the environment TBD.
@@ -25,6 +25,6 @@ products:
 - azure
 - vs-code
 units:
-- learn.reactors.environment-setup.1-setup
+- learn.reactors.data-science-1.environment-setup.1-setup
 badge:
-  uid: learn.reactors.environment-setup.badge 
+  uid: learn.reactors.data-science-1.environment-setup.badge 

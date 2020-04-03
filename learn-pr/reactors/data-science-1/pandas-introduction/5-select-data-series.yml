@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.reactors.data-science-1.pandas-introduction.5-select-data-series
+title: Select data in Series objects
+metadata:
+  title: Select data in Series objects
+  description: Learn how to select data in Series objects.
+  ms.date: 05/19/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-reactors
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-select-data-series.md)]

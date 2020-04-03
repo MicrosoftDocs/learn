@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.reactors.data-science-1.pandas-introduction
+metadata:
+  title: Introduction to the Pandas package for data science
+  description: Learn about the Pandas package for data science. Execute statements and scripts, declare variables, and create a basic Pandas app.
+  ms.date: 05/19/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-reactors
+title: Introduction to the Pandas package for data science
+summary: Learn about the Pandas package for data science. Execute statements and scripts, declare variables, and create a basic Pandas app.
+abstract: |
+  In this module, you will:
+  - Explore the choices available to run Python apps
+  - Use the Python interpreter to execute statements and scripts
+  - Learn how to declare variables
+  - Build a simple Python app that takes input and produces output
+prerequisites: |
+  - Set up your environment
+  - Python for data science
+  - NumPy for data science
+# placeholder icon
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+- student
+products:
+- azure
+units:
+- learn.reactors.data-science-1.pandas-introduction.1-introduction
+- learn.reactors.data-science-1.pandas-introduction.2-data-structures-series
+- learn.reactors.data-science-1.pandas-introduction.3-data-structures-dataframes
+- learn.reactors.data-science-1.pandas-introduction.4-index-objects
+- learn.reactors.data-science-1.pandas-introduction.5-select-data-series
+- learn.reactors.data-science-1.pandas-introduction.6-select-data-dataframes
+- learn.reactors.data-science-1.pandas-introduction.7-operate-index
+- learn.reactors.data-science-1.pandas-introduction.8-index-series
+- learn.reactors.data-science-1.pandas-introduction.9-index-dataframes
+- learn.reactors.data-science-1.pandas-introduction.10-operations-dataframes-series
+badge:
+  uid: learn.reactors.data-science-1.pandas-introduction.badge

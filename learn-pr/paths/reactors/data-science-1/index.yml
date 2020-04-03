@@ -13,6 +13,7 @@ title: Introduction to Python for data science
 summary: |
   Welcome to the Introduction to Python for Data Science Learning Path! The content in this learning path pairs with in person workshops that run in Microsoft Reactors and are stand alone learning resources (you don't have to come to a workshop to benefit from these modules).
   Throughout this Learning Path you will be encouraged to test out Python code in Visual Studio Code (VS Code) using the Python extension and Jupyter Notebooks.
+
   In this learning path, you'll:
     - Learn about Python for data science
     - Understand the basics of using the NumPy and Pandas packages
@@ -29,10 +30,10 @@ roles:
 products:
 - azure
 modules:
-# learn.reactors.data-science-1.environment-setup
+- learn.reactors.data-science-1.environment-setup
 - learn.reactors.data-science-1.python-introduction
 # - learn.reactors.data-science-1.numpy-introduction
-# - learn.reactors.data-science-1.pandas-introduction
-# - learn.reactors.data-science-1.data-manipulate-clean
+- learn.reactors.data-science-1.pandas-introduction
+- learn.reactors.data-science-1.data-manipulate-clean
 trophy:
   uid: learn.reactors.data-science-1.trophy

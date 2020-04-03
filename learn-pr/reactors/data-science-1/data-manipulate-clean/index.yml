@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.reactors.data-manipulate-clean
+uid: learn.reactors.data-science-1.data-manipulate-clean
 metadata:
   title: Manipulate and clean data in Python
   description: Learn how to manipulate and clean data and datasets in Python, pandas, and NumPy.
@@ -31,12 +31,12 @@ products:
 - azure
 - vs-code
 units:
-- learn.reactors.data-manipulate-clean.1-introduction
-- learn.reactors.data-manipulate-clean.2-explore-dataframes
-- learn.reactors.data-manipulate-clean.3-missing-data
-- learn.reactors.data-manipulate-clean.4-duplicate-data
-- learn.reactors.data-manipulate-clean.5-combine-datasets
-- learn.reactors.data-manipulate-clean.6-exploratory-statistics-visualization
-- learn.reactors.data-manipulate-clean.7-summary
+- learn.reactors.data-science-1.data-manipulate-clean.1-introduction
+- learn.reactors.data-science-1.data-manipulate-clean.2-explore-dataframes
+- learn.reactors.data-science-1.data-manipulate-clean.3-missing-data
+- learn.reactors.data-science-1.data-manipulate-clean.4-duplicate-data
+- learn.reactors.data-science-1.data-manipulate-clean.5-combine-datasets
+- learn.reactors.data-science-1.data-manipulate-clean.6-exploratory-statistics-visualization
+- learn.reactors.data-science-1.data-manipulate-clean.7-summary
 badge:
-  uid: learn.reactors.data-manipulate-clean.badge 
+  uid: learn.reactors.data-science-1.data-manipulate-clean.badge 
