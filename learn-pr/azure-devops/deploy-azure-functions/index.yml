@@ -20,7 +20,7 @@ prerequisites: |
   - An Azure subscription
   - An Azure DevOps organization
   - A GitHub account
-iconUrl: /learn/achievements/azure-devops/create-multi-stage-pipeline.svg
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
 roles:
