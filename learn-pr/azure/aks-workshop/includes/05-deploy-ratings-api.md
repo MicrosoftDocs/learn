@@ -216,6 +216,6 @@ You've now created a deployment of the **ratings-api** and exposed it as an inte
 
 ## Summary
 
-In this exercise you created a Kubernetes deployment for the *ratings-api* by creating a deployment manifest file and applying it to the cluster. You've also created a Kubernetes service for the *ratings-api* by creating a manifest file and applying it to the cluster. You now have a *ratings-api* endpoint that is available through a cluster IP over the network.
+In this exercise, you created a Kubernetes deployment for the *ratings-api* by creating a deployment manifest file and applying it to the cluster. You've also created a Kubernetes service for the *ratings-api* by creating a manifest file and applying it to the cluster. You now have a *ratings-api* endpoint that is available through a cluster IP over the network.
 
 Next, you'll use a similar process to deploy the Fruit Smoothies ratings website.

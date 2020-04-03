@@ -167,6 +167,6 @@ In this exercise, you'll set up *Roles* and *RoleBindings* that aren't limited t
 
 ## Summary
 
-In this exercise you created a Log Analytics workspace in Azure Monitor to store monitoring and logging data for your AKS cluster. You enabled the AKS monitoring add-on to enable the collection of data, and inspected the AKS cluster health. You then used Kubernetes RBAC to enable the collection of live logging data and then viewed live log data in the Azure Portal.
+In this exercise, you created a Log Analytics workspace in Azure Monitor to store monitoring and logging data for your AKS cluster. You enabled the AKS monitoring add-on to enable the collection of data, and inspected the AKS cluster health. You then used Kubernetes RBAC to enable the collection of live logging data and then viewed live log data in the Azure portal.
 
 Next, we'll take a look at scaling the Fruit Smoothies AKS cluster.

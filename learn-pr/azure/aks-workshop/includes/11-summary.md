@@ -1,4 +1,4 @@
-In this workshop, you deployed a multicontainer application to Azure Kubernetes Service (AKS). You used Azure Container Registry to store your container images. You deployed MongoDB with Helm and learned about key Kubernetes concepts to make deployments easier, and support communication between applications and services. Wou set up TSL/SSL to ensure communication is encrypted, and also set up autoscaling to handle fluctuations in traffic.
+In this workshop, you deployed a multicontainer application to Azure Kubernetes Service (AKS). You used Azure Container Registry to store your container images. You deployed MongoDB with Helm and learned about key Kubernetes concepts to make deployments easier, and support communication between applications and services. You set up TSL/SSL to ensure communication is encrypted, and also set up autoscaling to handle fluctuations in traffic.
 
 You can now use what you learned to deploy container-based applications in your environment to AKS.
 

@@ -83,7 +83,7 @@ You're now ready to install the MonogoDB instance. Recall from earlier, that you
 
 ## Create a Kubernetes secret to hold the MongoDB details
 
-In the previous step, you installed MongoDB using Helm, with a specified username, password, and database name. Now you'll store these details in a Kubernetes secret. This step ensures that youe don't leak secrets by hard coding them into configuration files.
+In the previous step, you installed MongoDB using Helm, with a specified username, password, and database name. Now you'll store these details in a Kubernetes secret. This step ensures that you don't leak secrets by hard coding them into configuration files.
 
 Kubernetes has a concept of secrets. Secrets let you store and manage sensitive information, such as passwords. Putting this information in a secret is safer and more flexible than hard coding it in a pod definition or a container image.
 
@@ -130,6 +130,6 @@ You now have an AKS cluster with a configured MongoDB database in a namespace ca
 
 ## Summary
 
-In this exercise you configured the Helm stable repository, then used a Helm chart to deploy MongoDB to your cluster. You then created a Kubernetes secret to hold database credentials.
+In this exercise, you configured the Helm stable repository, then used a Helm chart to deploy MongoDB to your cluster. You then created a Kubernetes secret to hold database credentials.
 
 Next, you'll deploy the Fruit Smoothies ratings-api to your AKS cluster.

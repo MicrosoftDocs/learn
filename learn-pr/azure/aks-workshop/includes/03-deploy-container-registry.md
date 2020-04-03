@@ -240,6 +240,6 @@ az aks update \
 
 ## Summary
 
-In this exercise you created a container registry for the Fruit Smoothies application. You then built and added continer images for the *ratings-api* and *ratings-web* to the container registry. You then verified the container images, and configured your AKS cluster to authenticate to the container registry.
+In this exercise, you created a container registry for the Fruit Smoothies application. You then built and added container images for the *ratings-api* and *ratings-web* to the container registry. You then verified the container images, and configured your AKS cluster to authenticate to the container registry.
 
 Next, you'll take the first step to deploy your ratings app. The first component you'll deploy is MongoDB as your document store database, and you'll see how to use the HELM package manager for Kubernetes.

@@ -191,4 +191,4 @@ In this exercise, you created a deployment of **ratings-web** and exposed it to 
 - **Deployment/ratings-web**: The web front end.
 - **Service/ratings-web**: The load-balanced service, which is exposed on Azure Load Balancer through a public IP.
 
-Next, we'll improve the network accessability of the application by using Ingress.
+Next, we'll improve the network accessibility of the application by using Ingress.
