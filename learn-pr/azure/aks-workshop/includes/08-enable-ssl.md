@@ -10,8 +10,6 @@ In this exercise, you'll:
 > - Enable SSL/TLS for the ratings web service on Ingress
 > - Test the application
 
-Before you start with the exercise steps, let's define some of the items mentioned.
-
 ## Deploy cert-manager
 
 *cert-manager* is a Kubernetes certificate management controller that makes it possible to automate certificate management in cloud-native environments. cert-manager supports various sources including Let's Encrypt, HashiCorp Vault, Venafi, simple signing key pairs, or self-signed certificates. You'll use `cert-manager`to ensure your website's certificate is valid and up to date, and attempt to renew certificates at a configured time before the certificate expires.
