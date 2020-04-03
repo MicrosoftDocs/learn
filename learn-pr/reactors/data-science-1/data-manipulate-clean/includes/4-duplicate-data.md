@@ -17,7 +17,10 @@ example6
 
 The output looks like this:
 
-> insert output (screenshot?)
+> [!NOTE]
+> 
+> **SARAH** - *Insert image*: Add screenshot of the output table.
+>
 
 ```python
 example6.duplicated()
@@ -25,7 +28,7 @@ example6.duplicated()
 
 The output looks like this:
 
-```python
+```output
 0    False
 1    False
 2     True
@@ -44,7 +47,10 @@ example6.drop_duplicates()
 
 The output looks like this:
 
-> insert output (screenshot?)
+> [!NOTE]
+> 
+> **SARAH** - *Insert image*: Add screenshot of the output table.
+>
 
 Both `duplicated` and `drop_duplicates` default to consider all columns, but you can specify that they examine only a subset of columns in your DataFrame:
 
@@ -54,7 +60,10 @@ example6.drop_duplicates(['letters'])
 
 The output looks like this:
 
-> insert output (screenshot?)
+> [!NOTE]
+> 
+> **SARAH** - *Insert image*: Add screenshot of the output table.
+>
 
 > [!div class="alert is-tip"]
 > ### Takeaway
