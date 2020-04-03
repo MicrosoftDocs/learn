@@ -2,7 +2,7 @@ Azure can help you tackle tough business challenges. You bring your requirements
 
 Let's take a quick tour of the high-level services Azure offers.
 
-#### Azure: the big picture
+#### Azure: overall picture
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2yuas]
 
@@ -10,9 +10,9 @@ Let's take a quick tour of the high-level services Azure offers.
 
 Here's a big-picture view of the available services and features in Azure.
 
-[![Diagram showing big picture view of Azure services with sections for security and management, platform services, hybrid cloud, and infrastructure services.](../media/3-azure-services.png)](../media/3-azure-services.png#lightbox)
+[![Diagram showing overall view of Azure services with sections for security and management, platform services, hybrid cloud, and infrastructure services.](../media/3-azure-services.png)](../media/3-azure-services.png#lightbox)
 
-Let's take a closer look at the most commonly-used categories:
+Let's take a closer look at the most commonly used categories:
 
 :::row:::
   :::column:::
@@ -149,7 +149,7 @@ There are a number of services that can assist and drive end-to-end solutions fo
 
 ### Big Data
 
-Data comes in all formats and sizes. When we talk about Big Data, we're referring to _large_ volumes of data. Data from weather systems, communications systems, genomic research, imaging platforms, and many other scenarios generate hundreds of gigabytes of data. This amount of data makes it hard to analyze and make decisions around. It's often so large that traditional forms of processing and analysis are no longer appropriate.
+Data comes in all formats and sizes. When we talk about Big Data, we're referring to _large_ volumes of data. Data from weather systems, communications systems, genomic research, imaging platforms, and many other scenarios generate hundreds of gigabytes of data. This amount of data makes it hard to analyze and make decisions. It's often so large that traditional forms of processing and analysis are no longer appropriate.
 
 Open source cluster technologies have been developed to deal with these large data sets. Microsoft Azure supports a broad range of technologies and services to provide big data and analytic solutions.
 

@@ -66,6 +66,6 @@ For example, the **Settings** section gives you access to configure various aspe
 
     Within each category, there are pricing tiers that will allow us to scale the resources available to our App service. These pricing tiers give us access to the additional features mentioned above.
 
-    We'll leave the configuration on the **F1** tier, but know that this is where you can go to make scaling adjustments in your app service if you have changes in load for your application.
+    We'll leave the configuration on the **F1** tier, but know that this pane is where you can go to make scaling adjustments in your app service if you have changes in load for your application.
 
     Let's now take a look at how to use the Cloud Shell to configure Azure resources, such as App Service.

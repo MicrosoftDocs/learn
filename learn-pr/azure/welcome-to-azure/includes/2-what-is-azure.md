@@ -19,7 +19,7 @@ Instead of maintaining CPUs and storage in your data center, you rent them for t
 
 You can treat cloud resources like you would your resources in your own data center. When you're done using them, you give them back. You're billed only for what you use.
 
-While this is all great, the real value of the cloud is that it enables you to quickly solve your toughest business challenges and bring cutting edge solutions to your users.
+While this approach is great, the real value of the cloud is that it enables you to quickly solve your toughest business challenges and bring cutting edge solutions to your users.
 
   :::column-end:::
 :::row-end:::
@@ -37,9 +37,9 @@ In our ever-changing digital world, two trends emerge:
 * Teams are delivering new features to their users at record speeds.
 * End users expect an increasingly rich and immersive experience with their devices and with software.
 
-Software releases were once scheduled in terms of months or even years. Today, teams are releasing features in smaller batches. Releases are now often scheduled in terms of days or weeks. Some teams even deliver software updates continuously &mdash; sometimes with multiple releases within the same day.
+Software releases were once scheduled in terms of months or even years. Today, teams are releasing features in smaller batches. Releases are now often scheduled in terms of days or weeks. Some teams even deliver software updates continuously&mdash;sometimes with multiple releases within the same day.
 
-Think of all the ways you interact with devices that you couldn't do just a few years ago. Many devices can recognize your face and respond to voice commands. Augmented reality changes the way you interact with the physical world. Household appliances are even beginning to act intelligently. These are just a few examples, many of which are powered by the cloud.
+Think of all the ways you interact with devices that you couldn't do just a few years ago. Many devices can recognize your face and respond to voice commands. Augmented reality changes the way you interact with the physical world. Household appliances are even beginning to act intelligently. These technologies are just a few examples, many of which are powered by the cloud.
 
 To power your services and deliver innovative and novel user experiences more quickly, the cloud provides on-demand access to:
 

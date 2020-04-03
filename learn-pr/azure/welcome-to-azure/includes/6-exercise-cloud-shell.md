@@ -8,9 +8,9 @@ Cloud Shell provides two experiences to choose from, Bash and PowerShell. Both i
 
 You can use any Azure management interface, including the Azure portal, Azure CLI, and Azure PowerShell, to manage Azure resources. For learning purposes, here you'll use the Azure CLI to start and stop the WordPress site we created earlier.
 
-Suppose you have several websites deployed and want to stop or start each of these websites without accessing each App service individually using the portal. This is an easy task that you can convert into a script using Cloud Shell and Azure CLI.
+Suppose you have several websites deployed and want to stop or start each of these websites without accessing each App service individually using the portal. This effort is an easy task that you can convert into a script using Cloud Shell and Azure CLI.
 
-In this exercise, you'll use the Cloud Shell window shown side-by-side with the exercise instructions. When normally accessing the Cloud Shell from within the Azure portal, you'll click the Cloud Shell icon from the top navigation bar. This icon is sometimes within the ellipsis (...) menu icon next to your profile.
+In this exercise, you'll use the Cloud Shell window shown side by side with the exercise instructions. When normally accessing the Cloud Shell from within the Azure portal, you'll click the Cloud Shell icon from the top navigation bar. This icon is sometimes within the ellipsis (...) menu icon next to your profile.
 
 ![Screenshot of Azure portal navigation bar with ellipses menu expanded and Cloud Shell icon highlighted.](../media/6-cloud-shell-in-portal.png)
 
@@ -40,7 +40,7 @@ For this exercise, we'll use the Cloud Shell experience as part of our sandbox i
         --resource-type Microsoft.Web/sites
     ```
 
-    Here an example of the command's output::
+    Here an example of the command's output:
 
     ```output
     {
