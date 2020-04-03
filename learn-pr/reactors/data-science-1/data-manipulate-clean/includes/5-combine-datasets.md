@@ -564,10 +564,7 @@ df9.append(df9)
 
 The output looks like this:
 
-![call df9.append](../media/call-df-append.png)
-
-
-
+![Output from the call df9.append command](../media/call-df-append.png)
 
 > [!NOTE]
 > 
