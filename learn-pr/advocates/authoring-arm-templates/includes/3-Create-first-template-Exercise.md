@@ -1,21 +1,24 @@
 1. Open Visual Studio Code from the Azure shell provides here in the sandbox by using the following command.
        
-    ```shell
-     code
-
-    ```
+```shell
+    code
+```
               
 Copy and paste the following JSON into the editor:
 
-    ```json
-    {
-      "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
-      "contentVersion": "1.0.0.0",
-      "resources": []
-    }
+```JSON
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "apiProfile": "",
+    "parameters": {},
+    "variables": {},
+    "functions": [],
+    "resources": [],
+    "outputs": {}
+}
 
-    ```
-
+```
 
 1. From the **editor** menu, select **save** to create the new file and name it **azuredeploy.json**
 
