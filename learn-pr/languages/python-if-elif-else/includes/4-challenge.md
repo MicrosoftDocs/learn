@@ -1,27 +1,27 @@
-Code challenges throughout these modules will reinforce what you've learned and help you gain some confidence before continuing on.
+Code challenges throughout these modules will reinforce what you've learned and help you gain some confidence before you continue on.
 
-### Step 1: Add a new file.
+### Step 1: Add a new file
 
-Create a new code file for this challenge.  For example, you might create a file named `challenge.py`.
+Create a new code file for this challenge. For example, you might create a file named `challenge.py`.
 
-### Step 2: Write code in the new file to solve the challenge.
+### Step 2: Write code in the new file to solve the challenge
 
-Write a short program that merely prints one of several messages to the end user based on their input.
+Write a short program that prints one of several messages to the user based on their input.
 
-First, prompt the user whether they would like to continue or not.
+First, prompt the user about whether they want to continue or not.
 
-If the user responds with either `no` or `n`, then print the phrase `Exiting`.
+If the user responds with either `no` or `n`, print the phrase `Exiting`.
 
-You should match the following output in this `no` scenario (with the user entering `no` when prompted):
+Match the following output in this `no` scenario. The user entered `no` when prompted.
 
 ```output
 Would you like to continue? no
 Exiting
 ```
 
-If the user responds with either `yes` or `y`, then print the phrases `Continuing ...` and `Complete!`.
+If the user responds with either `yes` or `y`, print the phrases `Continuing ...` and `Complete!`.
 
-You should match the following output in this `yes` scenario (with the user entering `yes` when prompted):
+Match the following output in this `yes` scenario. The user entered `yes` when prompted.
 
 ```output
 Would you like to continue? yes
@@ -29,9 +29,9 @@ Continuing ...
 Complete!
 ```
 
-If the user responds with anything else, then print the phrase `Please try again and respond with yes or no.`
+If the user responds with anything else, print the phrase `Please try again and respond with yes or no.`
 
-You should match the following output in this last scenario (with the user entering `bob` when prompted):
+Match the following output in this last scenario. The user entered `bob` when prompted.
 
 ```output
 Would you like to continue? bob 
