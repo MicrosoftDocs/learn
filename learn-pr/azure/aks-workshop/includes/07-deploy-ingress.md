@@ -8,8 +8,6 @@ If you continue to use the load balancer solution, you'll need to deploy a separ
 
 The extra effort is that a Kubernetes load balancer service is a Layer 4 load balancer. Layer 4 load balancers only deal with routing decisions between IPs addresses, TCP, and UDP ports. Kubernetes provides you with an option to simplify the above configuration by using an ingress controller.
 
-:::image type="content" source="../media/07-arch-4.svg" border="false" alt-text="Diagram that shows the deployed resources on the Azure Kubernetes Service cluster.":::
-
 In this exercise, you will:
 
 > [!div class="checklist"]
@@ -17,6 +15,8 @@ In this exercise, you will:
 > - Reconfigure the ratings web service to use ClusterIP
 > - Create an Ingress resource for the ratings web service
 > - Test the application
+
+:::image type="content" source="../media/07-arch-4.svg" border="false" alt-text="Diagram that shows the deployed resources on the Azure Kubernetes Service cluster.":::
 
 ## Deploy a Kubernetes ingress controller running NGINX
 
