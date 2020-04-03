@@ -1,6 +1,6 @@
 Great work! In this module, we extended a release pipeline to add support for deploying an Azure Functions app. The single release pipeline now builds a multi-project solution and deploys different components to different cloud targets in Azure.
 
-While this module specifically focused on an App Service and Azure Functions app, the fundamentals covered apply across a wide range of build and deployment targets. You can also see how Azure Pipelines can scale to support even the most sophisticated scenarios.
+While this module specifically focused on an app that uses Azure App Service and Azure Functions, the fundamentals covered apply across a wide range of build and deployment targets. You can also see how Azure Pipelines can scale to support even the most sophisticated scenarios.
 
 ## Learn more
 

@@ -82,13 +82,13 @@ To set up the work item:
 
 At the end of this module, you'll move the card to the **Done** column after you complete the task.
 
-## Create the Azure App Service environments
+## Create the Azure App Service and Azure Functions environments
 
 Here you create the App Service and Azure Functions app required to deploy the new version of the site and API.
 
 In [Create a release pipeline with Azure Pipelines](/learn/modules/create-release-pipeline?azure-portal=true), you brought up App Service through the Azure portal. Although the portal is a great way to explore what's available on Azure or to do basic tasks, bringing up components such as App Service can be tedious.
 
-In this module, you use the Azure CLI to bring up three App Service instances. You can access the Azure CLI from a terminal or through Visual Studio Code. Here you access the Azure CLI from Azure Cloud Shell. This browser-based shell experience is hosted in the cloud. In Cloud Shell, the Azure CLI is configured for use with your Azure subscription.
+In this module, you use the Azure CLI to bring up an App Service instance. You can access the Azure CLI from a terminal or through Visual Studio Code. Here you access the Azure CLI from Azure Cloud Shell. This browser-based shell experience is hosted in the cloud. In Cloud Shell, the Azure CLI is configured for use with your Azure subscription.
 
 > [!IMPORTANT]
 > You need your own Azure subscription to complete the exercises in this module.
@@ -137,23 +137,24 @@ Here, create some Bash variables to make the setup process more convenient and l
 
 1. From Cloud Shell, generate a random number. This will make it easier to create globally unique names for certain services in the next step.
 
-    ```azurecli
+    ```bash
     resourceSuffix=$RANDOM
     ```
 
 1. Create three globally unique names for your App Service, Azure Function, and storage accounts. Note that these commands use double quotes, which instructs Bash to interpolate the variables using the inline syntax.
-    ```azurecli
-	webName="tailspin-space-game-web-${resourceSuffix}"
-	leaderboardName="tailspin-space-game-leaderboard-${resourceSuffix}"
-	storageName="tailspinspacegame${resourceSuffix}"
-	```
 
-1. Create two more Bash variables to store the names of your resource group and service plan. 
+    ```bash
+    webName="tailspin-space-game-web-${resourceSuffix}"
+    leaderboardName="tailspin-space-game-leaderboard-${resourceSuffix}"
+    storageName="tailspinspacegame${resourceSuffix}"
+    ```
 
-    ```azurecli
-	rgName='tailspin-space-game-rg'
-	planName='tailspin-space-game-asp'
-	```
+1. Create two more Bash variables to store the names of your resource group and service plan.
+
+    ```bash
+    rgName='tailspin-space-game-rg'
+    planName='tailspin-space-game-asp'
+    ```
 
 ### Create the Azure resources required
 
@@ -165,16 +166,16 @@ This solution requires several Azure resources for deployment, which will be cre
 1. Run the following `az group create` command to create a resource group using the name defined earlier.
 
     ```azurecli
-	az group create --name $rgName
+    az group create --name $rgName
     ```
 
 1. Run the following `az appservice plan create` command to create an App Service plan using the name defined earlier.
 
     ```azurecli
-	az appservice plan create \
-	  --name $planName \
-	  --resource-group $rgName \
-	  --sku B1
+    az appservice plan create \
+      --name $planName \
+      --resource-group $rgName \
+      --sku B1
     ```
 
     The `--sku` argument specifies the B1 plan. This plan runs on the Basic tier.
@@ -186,37 +187,37 @@ This solution requires several Azure resources for deployment, which will be cre
 
     ```azurecli
     az webapp create \
-	  --name $webName \
-	  --resource-group $rgName \
-	  --plan $planName
+      --name $webName \
+      --resource-group $rgName \
+      --plan $planName
     ```
 
 1. Azure Functions requires a storage account for deployment. Run the following `az storage account create` command to create it.
 
     ```azurecli
-	az storage account create \
-	  --name $storageName \
-	  --resource-group $rgName \
-	  --sku Standard_LRS
-	```
+    az storage account create \
+      --name $storageName \
+      --resource-group $rgName \
+      --sku Standard_LRS
+    ```
 
 1. Run the following `az functionapp create` command to create the Azure Functions app instance. Replace the &lt;region&gt; with your preferred region.
 
     ```azurecli
     az functionapp create \
-	  --name $leaderboardName \
-	  --resource-group $rgName \
-	  --storage-account $storageName \
-	  --consumption-plan-location <region>
+      --name $leaderboardName \
+      --resource-group $rgName \
+      --storage-account $storageName \
+      --consumption-plan-location <region>
     ```
 
 1. Run the following `az webapp list` command to list the host name and state of the App Service instance.
 
     ```azurecli
     az webapp list \
-	  --resource-group $rgName \
-	  --query "[].{hostName: defaultHostName, state: state}" \
-	  --output table
+      --resource-group $rgName \
+      --query "[].{hostName: defaultHostName, state: state}" \
+      --output table
     ```
 
     Note the host name for each running service. You'll need the web host name later when you verify your work. Here's an example:
@@ -231,9 +232,9 @@ This solution requires several Azure resources for deployment, which will be cre
 
     ```azurecli
     az functionapp list \
-	  --resource-group $rgName \
-	  --query "[].{hostName: defaultHostName, state: state}" \
-	  --output table
+      --resource-group $rgName \
+      --query "[].{hostName: defaultHostName, state: state}" \
+      --output table
     ```
 
     Note the host name for each running service. You'll need the leaderboard host name later when you verify your work. Here's an example:
@@ -243,6 +244,8 @@ This solution requires several Azure resources for deployment, which will be cre
     ------------------------------------------------------  -------
     tailspin-space-game-leaderboard-4692.azurewebsites.net  Running
     ```
+
+1. Copy these two host names to a location you can easily access later.
 
 1. As an optional step, go to one or more of the host names. Verify that they're running and that the default home page appears.
 
@@ -311,7 +314,7 @@ Here you create a service connection that enables Azure Pipelines to access your
 
     During the process, you might be prompted to sign in to your Microsoft account.
 
-1. Ensure that **Allow all pipelines to use this connection** is selected.
+1. Ensure that **Grant access permission to all pipelines** is selected.
 
 1. Select **OK**.
 

@@ -1,10 +1,10 @@
-Here you follow the Tailspin team as they discuss how to best deliver on new marketing requirements driven by management. As always, they have the navigate a combination of organizational, business, and technical challenges to deliver their software. In this scenario, the team will need to integrate some serverless technology, specifically Azure Functions, into their DevOps process.
+Here you follow the Tailspin team as they discuss how to best deliver on new marketing requirements driven by management. As always, the team needs to navigate a combination of organizational, business, and technical challenges to deliver their software. In this scenario, the team needs to integrate some serverless technology, specifically Azure Functions, into their DevOps process.
 
 The team has been making great strides in building out their automated processes. However, part of the reality of DevOps is that requirements can be fluid, so the ability to react to change is paramount. Let's check in with the team.
 
 ## The new requirements
 
-Irwin, the product manager, has called an urgent meeting with key team members in order to deliver news about some new requirements. 
+Irwin, the product manager, has called an urgent meeting with key team members in order to deliver news about some new requirements.
 
 **Irwin:** Thanks for meeting on such short notice. Things are heating up and the marketing team is starting to make some promises that could make things complicated for all of us.
 
@@ -16,13 +16,13 @@ Irwin, the product manager, has called an urgent meeting with key team members i
 
 **Irwin:** Well, it's not that simple. They started off talking about "leveraging" and "synergy" and I sort of zoned out checking email. When I came back around they were asking me to task you with finding the most secure way for us to give anonymous third parties access to our database.
 
-**Tim:** What?!? That's a terrible idea! Do they understand how many security risks that could create?
+**Tim:** What? That's a terrible idea! Do they understand how many security risks that could create?
 
-**Irwin:** I know, I know. That was my first reaction as well. I probed a bit deeper and it turns out that they really just want the ability for anyone to integrate leaderboard data into their own applications. They think it would be really cool to have the same leaderboard options on our site, from within the game, on gaming review sites run by partners, and even by random players who want to show it on their blogs and personal sites.
+**Irwin:** I know, I know. That was my first reaction as well. I probed a bit deeper and it turns out that they really just want the ability for anyone to integrate leaderboard data into their own applications. They think it would be really cool to have the same leaderboard options on our site, from within the game, on gaming review sites run by partners, and even by our players who want to show it on their blogs and personal sites.
 
 **Andy:** So then it's just an API they're after. We already kind of have what we need to expose that, and I'm sure we can make it developer-friendly and scale up using Azure.
 
-**Irwin:** Yes, I know you can. However, there are a few potential challenges we need to work through. The game engine team currently owns the production database we pull leaderboard data from. They think they should build and own the API moving forward. I told them that it's really a better fit for our team, but management isn't sure either way.
+**Irwin:** Yes, I know you can. However, there are a few potential challenges we need to work through. The game engine team currently owns the production database that we pull leaderboard data from. They think they should build and own the API moving forward. I told them that it's really a better fit for our team, but management isn't sure either way.
 
 **Andy:** How can we show them that we have it under control?
 

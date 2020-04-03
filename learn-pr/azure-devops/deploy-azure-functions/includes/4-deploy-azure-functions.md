@@ -1,9 +1,9 @@
-Your project came with a release pipeline that builds the projects in the solution and deploys the web app to its App Service. Now it's time to extend that pipeline to also deploy the new Azure Functions project.
+Your project came with a release pipeline that builds the projects in the solution and deploys the web app to Azure App Service. Now it's time to extend that pipeline to also deploy the new Azure Functions project.
 
 In this part, you'll:
 
 > [!div class="checklist"]
-> * Review the **Build** stage.
+> * Review the *Build* stage.
 > * Add a task to deploy your function app.
 > * Add a task configure the published App Service to use the published function.
 > * Save the pipeline to trigger a CI/CD workflow.
@@ -14,7 +14,7 @@ Here you review the existing CI/CD pipeline defined in *azure-pipelines.yml*.
 
 1. From Azure DevOps, navigate to **Pipelines**.
 1. Select the pipeline.
-1. Select **Edit**. This will bring up the azure-pipelines.yml file that defines the existing CI/CD pipeline. Because of the use of wildcards to the project paths, the highlighted tasks below will automatically restore, build, and publish the new Azure Functions project.
+1. Select **Edit**. This will bring up the *azure-pipelines.yml* file that defines the existing CI/CD pipeline. Because of the use of wildcards to the project paths, the highlighted tasks below will automatically restore, build, and publish the new Azure Functions project.
 
     [!code-yml[](code/4-1-azure-pipelines.yml?highlight=37-57)]
 
@@ -26,7 +26,7 @@ Here you review the existing CI/CD pipeline defined in *azure-pipelines.yml*.
 
 **Andy:** I think we can also reuse the App Service deployment task as-is. Hopefully there's something similar we can use for deploying a function app.
 
-**Mara:** I have good news. After a little research, it looks like there's a task that's conceptually similar to the App Service deployment task, but for Azure Pipelines deployments. Let's add it now.
+**Mara:** I have good news. After a little research, it looks like there's a task that's conceptually similar to the App Service deployment task, but for Azure Functions deployments. Let's add it now.
 
 ## Azure Function App Task
 
@@ -39,11 +39,14 @@ The `AzureFunctionApp@1` task is designed to deploy function apps. It is concept
 * `runtimeStack` indicates which image the function should be run on, which is required for Linux deployments.
 * `startUpCommand` specifies the startup command to run after the function has been deployed, which is required for Linux deployments.
 
-You can learn more about the flexibility of this task in the official docs for the [Azure Function App task](/azure/devops/pipelines/tasks/deploy/azure-function-app?azure-portal=true)
+You can learn more about the flexibility of this task in the documentation for the [Azure Function App task](/azure/devops/pipelines/tasks/deploy/azure-function-app?azure-portal=true).
 
 Add the highlighted code below to the end of your pipeline.
 
 [!code-yml[](code/4-2-azure-pipelines.yml?highlight=25-33)]
+
+> [!TIP]
+> In a YAML file, whitespace is important. Ensure that the task you add here uses the same indentation as the previous task.
 
 ## Add a task to update the App Service's app settings
 

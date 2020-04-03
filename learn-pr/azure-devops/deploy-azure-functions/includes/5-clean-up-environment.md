@@ -5,7 +5,7 @@ You're finished with the tasks for this module. Here you'll clean up your Azure 
 
 ## Clean up Azure resources
 
-Here you delete your Azure App Service instances. The easiest way to delete the instances is to delete their parent resource group. When you delete a resource group, you delete all resources in that group.
+Here you delete your Azure App Service and Azure Functions instances. The easiest way to delete the instances is to delete their parent resource group. When you delete a resource group, you delete all resources in that group.
 
 In the [Create a release pipeline with Azure Pipelines](/learn/modules/create-release-pipeline?azure-portal=true) module, you managed Azure resources through the Azure portal. Here you tear down your deployment by using the Azure CLI through Azure Cloud Shell. The steps are similar to the steps that you used when you created the resources.
 
@@ -18,7 +18,7 @@ To clean up your resource group:
 
 1. Run the following `az group delete` command to delete the resource group that you used, `tailspin-space-game-rg`.
 
-    ```bash
+    ```azurecli
     az group delete --name tailspin-space-game-rg
     ```
 
@@ -26,7 +26,7 @@ To clean up your resource group:
 
 1. As an optional step, after the previous command finishes, run the following `az group list` command.
 
-    ```bash
+    ```azurecli
     az group list --output table
     ```
 
