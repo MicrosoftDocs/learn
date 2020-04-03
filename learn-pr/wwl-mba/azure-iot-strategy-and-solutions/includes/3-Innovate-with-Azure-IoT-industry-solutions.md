@@ -1,6 +1,6 @@
-Insights uncovered from connected devices and backend systems can be transformed into powerful applications and services that help you improve operational and business performance.
+Insights are uncovered from the telemetry data of connected IoT devices, processed by backend systems. These insights can be transformed into powerful processes and services that help you improve operational and business performance.
 
-Industries with opportunity to innovate with IoT include:
+Many industries can benefit by innovating with IoT. Currently, businesses that identify with IoT include:
 
 - Manufacturing
 - Transportation and logistics
@@ -10,11 +10,11 @@ Industries with opportunity to innovate with IoT include:
 - Government
 - Healthcare
 - Financial services
-- Smart spaces
+- Smart spaces management
 
 ### Azure IoT solutions applied across industries
 
-Azure IoT solutions tend to be horizontal and span multiple industries. Industry experts may use different terminology to describe IoT applications, but the're generally referring to the five common scenarios listed below. Later in the module, we'll also review how these solutions can be applied with Azure IoT services.
+Azure IoT solutions tend to be horizontal, and can span multiple industries. Industry experts may use different terminology to describe IoT applications, but the're generally referring to the five common scenarios listed below. Later in the module, we'll also review how these solutions can be applied with Azure IoT services.
 
 |Scenario|Description|Industry Example|
 |----------|-----------|----------|
@@ -28,7 +28,7 @@ Azure IoT solutions tend to be horizontal and span multiple industries. Industry
 
 ### How Azure IoT works for preventative maintenance and analytics
 
-With preventative maintenance and analytics through IoT, you can adjust processes and systems to trigger actions that can be prevented. In addition, you can translate insights from the data your organization collects on manufacturing equipment to identify operational changes.
+With preventative maintenance and stream analytics through IoT, you can set conditions that, if met, will trigger actions. These actions can preemptively prevent equipment from failing. In addition, you can translate insights from the streaming data to identify operational changes. Not failure prevention, but improvements in performance.
 
 |  |  |
 | ------------ | -------------|
@@ -36,11 +36,11 @@ With preventative maintenance and analytics through IoT, you can adjust processe
 
 > [!Video https://www.microsoft.com/videoplayer/embed/RE2NQ4B]
 
-Through a greater understanding of maintenance planning, Rolls-Royce's airline customers were able to reduce flight disruptions while saving millions of dollars per year.
+Through a greater understanding of maintenance planning, Rolls-Royce's airline customers were able to reduce flight disruptions, while saving millions of dollars per year.
 
 ### How Azure IoT works for transportation and smart cities
 
-The Alaska Department of Transportation uses Azure IoT technologies to make informed decisions about deploying road crews that address challenges and better meet citizen expectations.
+With Azure IoT solutions, including Azure IoT Edge and Azure IoT Hub, the Alaska Department of Transportation found a scalable IoT solution to fight winter storms.
 
 |  |  |
 | ------------ | -------------|
@@ -48,13 +48,11 @@ The Alaska Department of Transportation uses Azure IoT technologies to make info
 
 > [!Video https://www.microsoft.com/videoplayer/embed/RE2NvkS]
 
-With Azure IoT solutions, including Azure IoT Edge and Azure IoT Hub, the Alaska Department of Transportation found a scalable IoT solution to fight winter storms.
-
 Azure IoT isn't only a transformative tool for driving business outcomes, it's a catalyst for greater change within an organization. When you connect equipment, machines, and tools, you can draw insights for innovation and opportunities.
 
 |  |  |
 | ------------ | -------------|
-|![Icon of lightbulb](../media/lightbulb.png)|*Take another look at the variety of business outcomes supported by Azure IoT. Which ones are relevant to your industry and your organization? Are there solutions from other industries that you can also leverage?*
+|![Icon of lightbulb](../media/lightbulb.png)|*Take another look at the variety of business outcomes supported by Azure IoT. Which ones are relevant to your industry or your organization? Are there solutions from other industries that you might leverage?*
 |
 
 Now that you've seen examples of IoT being applied to some industries, let's take a look at IoT solutions.
