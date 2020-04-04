@@ -122,7 +122,7 @@ Support for `async` and `await` on `Main` methods was added to C# 7.1. This migh
       <PropertyGroup>
         <OutputType>Exe</OutputType>
         <LangVersion>7.1</LangVersion>
-        <TargetFramework>netcoreapp2.0</TargetFramework>
+        <TargetFramework>netcoreapp2.2</TargetFramework>
       </PropertyGroup>
       ...
     </Project>

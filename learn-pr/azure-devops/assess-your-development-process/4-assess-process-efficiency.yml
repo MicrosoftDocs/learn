@@ -9,6 +9,7 @@ metadata:
   ms.author: thpetche
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  show_latex: true
 durationInMinutes: 8
 content: |
   [!include[](includes/4-assess-process-efficiency.md)]

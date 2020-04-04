@@ -12,7 +12,7 @@ Password authentication is the most familiar form of authentication. The user en
 
 ### Two-factor authentication
 
-![An image depicting two-factor authentication](../media/3-two-fa.svg)
+:::image type="content" source="../media/3-two-fa.svg" alt-text="Image depicting two-factor authentication where the authentication token is sent to a mobile device.":::
 
 Two-factor authentication is a mechanism that allows users to verify an authentication attempt. The user needs to provide a one-time code sent to their device as a confirmation of authentication. For example, they might receive a code through a text message, or a code generated through an app on their phone, like Microsoft Authenticator.
 
@@ -36,7 +36,7 @@ Computer recognition authentication looks at the device being used to access the
 
 ### CAPTCHA
 
-![Captcha example](../media/3-captcha.png)
+:::image type="icon" source="../media/3-captcha.png":::
 
 The Completely Automated Public Turing test to tell Computers and Humans Apart (CAPTCHA) is used to verify whether the entity attempting access to a system is a human.
 
@@ -56,7 +56,7 @@ An authentication protocol is a shared set of rules for how information is excha
 
 Kerberos is an authentication protocol used across different operating systems. Windows uses Kerberos as its default authentication protocol. Linux and Mac OSs can also use Kerberos.
 
-![Kerberos process](../media/3-kerberos.svg)
+:::image type="content" source="../media/3-kerberos.svg" alt-text="Diagram that shows the process flow of Kerberos authentication.":::
 
 Kerberos authentication protocol relies on a trusted server called a Key Distribution Center (KDC). A KDC consists of a few components:
 
@@ -74,7 +74,7 @@ You'll often see a padlock on the browser when a site makes use of a secure conn
 
 SSL is the predecessor of TLS and is deprecated. We'll often find the two terms used interchangeably.  The protocols work as follows:
 
-![SSL/TLS process](../media/3-tls-ssl.svg)
+:::image type="content" source="../media/3-tls-ssl.svg" alt-text="Diagram that shows the process flow of SSL/TLS process authentication.":::
 
 1. The client sends a "ClientHello" message to the server. This message includes information like the SSL/TLS version, and the cryptographic algorithms that the client supports.
 

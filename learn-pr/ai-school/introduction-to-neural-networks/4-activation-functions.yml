@@ -29,11 +29,11 @@ quiz:
     - content: "Sigmoid is always the first activation function you should try."
       isCorrect: false
       explanation: "Incorrect. There is no rule that you have to try a specific activation function first."
-    - content: "Back Propagation:"
+  - content: "Back Propagation:"
     choices:
     - content: "Helps to undo design errors when setting up a neural network."
       isCorrect: false
-      explanation: "Incorrect. Back propagation helps neural networks optimize their predictions, but don't undo design errors."
+      explanation: "Incorrect. Back propagation helps neural networks optimize their predictions, but won't undo design errors."
     - content: "Is a method by which neural networks learn."
       isCorrect: true
       explanation: "Correct. Back propagation helps neural networks optimize their weights effectively, increasing accuracy."

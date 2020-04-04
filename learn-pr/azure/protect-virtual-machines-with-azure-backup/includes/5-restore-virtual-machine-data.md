@@ -43,3 +43,12 @@ Certain limitations apply when you restore encrypted virtual machines:
 - Azure Backup supports only standalone key encryption. Any key that's part of a certificate isn't supported currently.
 - File-level or folder-level restores are not supported with encrypted virtual machines. To restore to that level of granularity, the whole virtual machine has to be restored. You can then manually copy the file or folders.
 - The **Replace existing VM** option isn't available for encrypted virtual machines.
+
+## Soft delete for virtual machines 
+
+**Soft delete** provides the ability to protect cloud backups for IaaS virtual machines from accidental as well as malicious deletion of backups. Key features include: 
+
+- **14 days extended retention of data**. With soft delete, even if a user deletes the backup (all the recovery points) of a VM, the backup data is retained for 14 additional days, allowing the recovery with no data loss.
+- **Native built-in protection at no additional cost**. The backup data protection with soft delete is offered at no additional cost. This security feature is natively built-in for all the recovery services vaults. 
+- **Intuitive recovery of 'soft deleted' data**. Recover soft deleted backup items using an ‘Undelete’ operation, and then restore them to any recovery point that existed before the deletion.
+

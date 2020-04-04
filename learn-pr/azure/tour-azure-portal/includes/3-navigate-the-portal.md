@@ -114,7 +114,7 @@ Azure is a large product, and the Azure portal user interface (UI) reflects this
 
 ### Azure Advisor
 
-Finally, the Azure Advisor is a free service built into Azure that provides recommendations on high availability, security, performance, operational excellence, and cost. Advisor analyzes your deployed services and looks for ways to improve your environment across those four areas. You can view recommendations in the portal or download them in PDF or CSV format.
+Finally, the Azure Advisor is a free service built into Azure that provides recommendations on high availability, security, performance, operational excellence, and cost. Advisor analyzes your deployed services and looks for ways to improve your environment across those areas. You can view recommendations in the portal or download them in PDF or CSV format.
 
 With Azure Advisor, you can:
 

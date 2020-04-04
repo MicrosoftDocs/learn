@@ -1,4 +1,4 @@
-Big data applications must be ability to process increased throughput by scaling out to meet increased transaction volumes.
+Big data applications must be able to process increased throughput by scaling out to meet increased transaction volumes.
 
 Suppose you work in the credit card department of a bank. You're part of a team that manages the system responsible for fraud testing to determine whether to approve or decline each transaction. Your system receives a stream of transactions and needs to process them in real time.
 
