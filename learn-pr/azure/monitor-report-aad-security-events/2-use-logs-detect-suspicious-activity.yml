@@ -15,7 +15,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: 'In which log would you find information about the multi-factor authentication method that's being used?'
+  - content: 'In which log would you find information about the multi-factor authentication method that is being used?'
     choices:
     - content: Audit log files
       isCorrect: false
