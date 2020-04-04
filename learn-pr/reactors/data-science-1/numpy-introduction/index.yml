@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.reactors.data-science-1.numpy-introduction
+metadata:
+  title: Introduction to NumPy for data science
+  description: Learn about NumPy for data science. Create, index, and sort arrays.
+  ms.date: 05/19/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-reactors
+title: Introduction to NumPy for data science
+summary: Learn about NumPy for data science. Create, index, and sort arrays.
+abstract: |
+  In this module, you will:
+  - TBD
+  - TBD
+  - TBD
+prerequisites: |
+  - Set up your environment
+  - Introduction to Python for data science
+
+# placeholder icon
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+- student
+products:
+- azure
+units:
+- learn.reactors.data-science-1.numpy-introduction.1-introduction
+- learn.reactors.data-science-1.numpy-introduction.2-help
+- learn.reactors.data-science-1.numpy-introduction.3-arrays
+- learn.reactors.data-science-1.numpy-introduction.4-exercise-arrays
+- learn.reactors.data-science-1.numpy-introduction.5-fancy-index
+- learn.reactors.data-science-1.numpy-introduction.6-sort-arrays
+- learn.reactors.data-science-1.numpy-introduction.7-computation
+- learn.reactors.data-science-1.numpy-introduction.8-aggregations
+- learn.reactors.data-science-1.numpy-introduction.9-computation-broadcast
+- learn.reactors.data-science-1.numpy-introduction.10-compare-masks-boolean-logic
+- learn.reactors.data-science-1.numpy-introduction.11-boolean-arrays
+- learn.reactors.data-science-1.numpy-introduction.12-boolean-arrays-masks
+- learn.reactors.data-science-1.numpy-introduction.13-summary
+badge:
+  uid: learn.reactors.data-science-1.numpy-introduction.badge
