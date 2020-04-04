@@ -10,7 +10,7 @@ The Azure Sphere platform provides an ecosystem to develop, deploy, and maintain
 
 - The ability to securely and remotely **maintain connected IoT devices** in the field
 - **Protection from different kinds of security risks** such as spoofing, rogue software, or denial of service attacks
-- **The ability to receive software updates automatically** to overcome latest security threats. Software updates can be automatically deployed from the cloud to any connected device. These updates could fix problems, provide new functionality or counter emerging methods of attack. 
+- **The ability to receive software updates automatically** to overcome latest security threats. Software updates can be automatically deployed from the cloud to any connected device. These updates could fix problems, provide new functionality or counter emerging methods of attack
 - **Improved productivity** of support personnel through automated provision of software updates
 - The ability to **acquire product usage data** from the field that can help in diagnosing problems and designing new products
 - **Overall benefits** to the value chain including customer satisfaction, product support and future development.
