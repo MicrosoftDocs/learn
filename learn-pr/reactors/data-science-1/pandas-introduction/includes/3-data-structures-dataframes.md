@@ -39,8 +39,13 @@ Now you can combine this with the `population` `Series` you created earlier by u
 countries = pd.DataFrame({'Population': population, 'Area': area})
 countries
 ```
-
-<div style="border: 1px solid black; background-color:rgb(240,240,240); width: 300px">
+<br>
+<div>
+<style>
+   table { border-collapse: collapse; border: 1px solid darkgrey; background-color:rgb(240,240,240); width: 250px; padding: 5px; }
+   tr { border: 1px solid darkgrey; }
+   td { border: 1px solid darkgrey; }
+</style>
    <table>
      <tr>
        <th width=75px></th>
