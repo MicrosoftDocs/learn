@@ -35,7 +35,7 @@ pd?
 
 Because it can be useful to lean about `Series` and `DataFrames` in pandas a extension of `ndarrays` in NumPy, go ahead also import NumPy. You will want it for some of the examples later on:
 
-```
+```Python
 import numpy as np
 ```
 
