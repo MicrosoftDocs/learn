@@ -24,7 +24,7 @@ area = pd.Series(area_dict)
 area
 ```
 
-```output
+```Output
 Albania       28748
 France       643801
 Germany      357386
@@ -40,17 +40,37 @@ countries = pd.DataFrame({'Population': population, 'Area': area})
 countries
 ```
 
-> [!div class="alert is-tip"]
-> output
-> |<div style="width:50px"></div>|<div style="width:75px">Population</div>|<div style="width:50px">Area</div>|
-> |---|---|---|
-> | **Albania** | NaN | 28748 |
-> | **France** | 65429495.0 | 643801 |
-> | **Germany** | 82408706.0 | 357386 |
-> | **Japan** | 126922333.0 | 377972 |
-> | **Russia** | 143910127.0 | 17125200 |
+<div style="border: 1px solid black; background-color:rgb(240,240,240); width: 300px">
+   <table>
+     <tr>
+       <th width=75px></th>
+       <th width=75px>Population</th>
+       <th width=50px>Area</th>
+     </tr>
+     <tr><th>Albania</th>
+         <td>NaN</td><td>28748</td></tr>
+     <tr><th>France</th>
+         <td>65429495.0</td><td>643801</td></tr>
+     <tr><th>Germany</th>
+         <td>82408706.0</td><td>357386</td></tr>
+     <tr><th>Japan</th>
+         <td>126922333.0</td><td>377972</td></tr>
+     <tr><th>Russia</th>
+         <td>143910127.0</td><td>17125200</td></tr>
+</table></div>
 
-As with `Series`, note that `DataFrames` also automatically order indices (in this case, the column indices 'Area' and 'Population').
+<!--
+|<div style="width:50px"></div>|<div style="width:75px">Population</div>|<div style="width:50px">Area</div>|
+|---|---|---|
+| **Albania** | NaN | 28748 |
+| **France** | 65429495.0 | 643801 |
+| **Germany** | 82408706.0 | 357386 |
+| **Japan** | 126922333.0 | 377972 |
+| **Russia** | 143910127.0 | 17125200 |
+</div>
+-->
+
+As with `Series`, the `DataFrames` also automatically order indices (in this case, the column indices 'Area' and 'Population').
 
 So far we have combined dictionaries together to compose a `DataFrame` (which has given our `DataFrame` a row-centric feel), but you can also create `DataFrames` in a column-wise fashion. Consider adding a 'Capital' column using our reliable old array-analog, a list:
 
@@ -60,7 +80,7 @@ countries
 ```
 
 > [!div class="alert is-tip"]
-> output
+> Output
 > |<div style="width:50px"></div>|<div style="width:75px">Population</div>|<div style="width:50px">Area</div>|<div style="width:50px">Capital</div>|
 > |---|---|---|---|
 > | **Albania** | NaN | 28748 | Tirana |
@@ -77,7 +97,7 @@ countries
 ```
 
 > [!div class="alert is-tip"]
-> output
+> Output
 > |<div style="width:50px"></div>|<div style="width:50px">Capital</div>|<div style="width:50px">Area</div>|<div style="width:75px">Population</div>|
 > |---|---|---|---|
 > | **Albania** | Tirana | 28748 | NaN |
@@ -94,7 +114,7 @@ countries
 ```
 
 > [!div class="alert is-tip"]
-> output
+> Output
 > |<div style="width:50px"></div>|<div style="width:50px">Capital</div>|<div style="width:50px">Area</div>|<div style="width:75px">Population</div>|<div style="width:75px">Population density</div>|
 > |---|---|---|---|---|
 > | **Albania** | Tirana | 28748 | NaN | NaN |
@@ -112,7 +132,7 @@ We have stated before that `DataFrames` are like dictionaries, and it's true. Yo
 countries['Area']
 ```
 
-```output
+```Output
 Albania       28748
 France       643801
 Germany      357386
@@ -131,7 +151,7 @@ This returns an error. `DataFrames` are dictionaries of `Series`, which are the 
 countries.loc['Japan']
 ```
 
-```output
+```Output
 Capital                     Tokyo
 Area                       377972
 Population            1.26922e+08
@@ -145,7 +165,7 @@ Note that what the `.loc` method returns is an indexed object in its own right a
 countries.loc['Japan']['Area']
 ```
 
-```output
+```Output
 377972
 ```
 
@@ -165,7 +185,7 @@ countries
 ```
 
 > [!div class="alert is-tip"]
-> output
+> Output
 > |<div style="width:50px"></div>|<div style="width:50px">Capital</div>|<div style="width:50px">Area</div>|<div style="width:75px">Population</div>|<div style="width:75px">Population density</div>|<div style="width:75px">Debt-to-GDP ratio</div>|
 > |---|---|---|---|---|---|
 > | **Albania** | Tirana | 28748 | NaN | NaN | NaN |
@@ -185,7 +205,7 @@ countries
 ```
 
 > [!div class="alert is-tip"]
-> output
+> Output
 > |<div style="width:50px"></div>|<div style="width:50px">Capital</div>|<div style="width:50px">Area</div>|<div style="width:75px">Population</div>|<div style="width:75px">Population density</div>|<div style="width:75px">Debt-to-GDP ratio</div>|
 > |---|---|---|---|---|---|
 > | **Albania** | Tirana | 28748 | NaN | NaN | NaN |
@@ -202,7 +222,7 @@ countries
 ```
 
 > [!div class="alert is-tip"]
-> output
+> Output
 > |<div style="width:50px"></div>|<div style="width:50px">Area</div>|<div style="width:75px">Population</div>|<div style="width:75px">Population density</div>|<div style="width:75px">Debt-to-GDP ratio</div>|
 > |---|---|---|---|---|
 > | **Albania** | 28748 | NaN | NaN | NaN |
@@ -218,7 +238,7 @@ countries.T
 ```
 
 > [!div class="alert is-tip"]
-> output
+> Output
 > |<div style="width:50px"></div>|<div style="width:75px">Albania</div>|<div style="width:75px">France</div>|<div style="width:75px">Germany</div>|<div style="width:75px">Japan</div>|<div style="width:75px">Russia</div>|
 > |---|---|---|---|---|---|
 > | **Area** | 28748.0 | 6.438010e+05 | 3.573860e+05 | 3.779720e+05 | 1.712520e+07 |
@@ -241,9 +261,9 @@ pd.DataFrame(np.random.rand(3, 2),
 ```
 
 > [!div class="alert is-tip"]
-> output
-> |<div style="width:50px"></div>|<div style="width:5opx">foo</div>|<div style="width:50px">bar</div>|
+> Output
+> |<div style="width:25px"></div>|<div style="width:5opx">foo</div>|<div style="width:50px">bar</div>|
 > |---|---|---|
 > | **a** | 0.733086 | 0.708453 |
 > | **b** | 0.722008 | 0.048097 |
-> | **c**	| 0.275534 | 0.822378 |
+> | **c** | 0.275534 | 0.822378 |

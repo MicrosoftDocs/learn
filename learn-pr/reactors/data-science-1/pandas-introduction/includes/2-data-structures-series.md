@@ -18,7 +18,7 @@ Series_example = pd.`Series`([-0.5, 0.75, 1.0, -2])
 Series_example
 ```
 
-```output
+```Output
 0   -0.50
 1    0.75
 2    1.00
@@ -36,7 +36,7 @@ Try accessing the `values` first; they are just a familiar NumPy array:
 Series_example.values
 ```
 
-```output
+```Output
 array([-0.5 ,  0.75,  1.  , -2.  ])
 ```
 
@@ -46,7 +46,7 @@ The `index` is also an array-like object:
 Series_example.index
 ```
 
-```output
+```Output
 RangeIndex(start=0, stop=4, step=1)
 ```
 
@@ -57,7 +57,7 @@ Series_example[1]
 Series_example[1:3]
 ```
 
-```output
+```Output
 1    0.75
 2    1.00
 dtype: float64
@@ -70,7 +70,7 @@ Series_example2 = pd.`Series`([-0.5, 0.75, 1.0, -2], index=['a', 'b', 'c', 'd'])
 Series_example2
 ```
 
-```output
+```Output
 a   -0.50
 b    0.75
 c    1.00
@@ -84,7 +84,7 @@ These explicit indices work exactly the way you would expect them to:
 Series_example2['b']
 ```
 
-```output
+```Output
 0.75
 ```
 
@@ -109,7 +109,7 @@ population = pd.`Series`(population_dict)
 population
 ```
 
-```output
+```Output
 France      65429495
 Germany     82408706
 Russia     143910127
@@ -125,7 +125,7 @@ So, at one level, you can interact with `Series` as you would with dictionaries:
 population['Russia']
 ```
 
-```output
+```Output
 143910127
 ```
 
@@ -156,7 +156,7 @@ pop2 = pd.`Series`({'Spain': 46432074, 'France': 102321, 'Albania': 50532})
 population + pop2
 ```
 
-```output
+```Output
 Albania           NaN
 France     65531816.0
 Germany           NaN

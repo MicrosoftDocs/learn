@@ -19,7 +19,7 @@ ind = series_example.index
 ind
 ```
 
-```output
+```Output
 Index(['a', 'b', 'c', 'd'], dtype='object')
 ```
 
@@ -29,7 +29,7 @@ The `Index` works a lot like an array. we have already seen how to use standard 
 ind[1]
 ```
 
-```output
+```Output
 'b'
 ```
 
@@ -37,7 +37,7 @@ ind[1]
 ind[::2]
 ```
 
-```output
+```Output
 Index(['a', 'c'], dtype='object')
 ```
 
@@ -47,7 +47,7 @@ But `Index` objects are immutable; you cannot be modified via the normal means:
 ind[1] = 0
 ```
 
-```Error output
+```Error
 TypeError                                 Traceback (most recent call last)
 <ipython-input-34-906a9fa1424c> in <module>
 ----> 1 ind[1] = 0
