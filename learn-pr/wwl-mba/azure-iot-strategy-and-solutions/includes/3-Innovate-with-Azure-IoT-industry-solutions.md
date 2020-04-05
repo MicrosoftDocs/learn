@@ -2,15 +2,15 @@ Insights are uncovered from the telemetry data of connected IoT devices, process
 
 Many industries can benefit by innovating with IoT. Currently, businesses that identify with IoT include:
 
-- Manufacturing
-- Transportation and logistics
-- Energy and natural resources
-- Agriculture
-- Retail
-- Government
-- Healthcare
+- Manufacturing                    - preventive maintenance, workplace safety, quality control
+- Transportation and logistics    - remote monitoring of vehicles
+- Energy and natural resources`    - smart meter analytics, solar power monitoring
+- Agriculture`                    - temp/humidity control
+- Retail`                            - in-store analytics, smart inventory, digital distribution tracking
+- Government                        - water quality monitoring, connected waste management, weather monitoring
+- Healthcare`                        - continuous and remote patient monitoring
 - Financial services
-- Smart spaces management
+- Smart buildings, and smart cities    - energy conservation, waste management, traffic control, access control
 
 ### Azure IoT solutions applied across industries
 
