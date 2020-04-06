@@ -15,31 +15,25 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: 'Where will you find the Azure Lighthouse Resource Management templates?'
+  - content: 'Where will you find the Azure Lighthouse Resource Manager templates?'
     choices:
     - content: Azure Marketplace.
       isCorrect: false
-      explanation: That's incorrect. The Azure Lighthouse Resource Management templates can be found on GitHub.
+      explanation: That's incorrect. The Azure Lighthouse Resource Manager templates can be found on GitHub.
     - content: Azure Resource Manager.
       isCorrect: false
-      explanation: That's incorrect. The Azure Lighthouse Resource Management templates can be found on GitHub.
-    - content: One Drive.
-      isCorrect: false
-      explanation: That's incorrect. The Azure Lighthouse Resource Management templates can be found on GitHub.
+      explanation: That's incorrect. The Azure Lighthouse Resource Manager templates can be found on GitHub.
     - content: GitHub.
       isCorrect: true
-      explanation: That's correct. GitHub has a number of Resource Management templates, which are suitable for Azure Lighthouse.
-  - content: 'When deploying an Azure Resource Management template on the customers Azure instance, which CLI command would you use?'
+      explanation: That's correct. GitHub has a number of Resource Manager templates, which are suitable for Azure Lighthouse.
+  - content: 'When deploying an Azure Resource Manager template on the customers Azure instance, which CLI command would you use?'
     choices:
-    - content: az deployment --name delegated-resource-management  --location westUS --template-file delegatedResourceManagement.json --parameters delegatedResourceManagement.parameters.json --verbose.
+    - content: The command `az deployment onboard --name delegated-resource-management  --location westUS --template-file delegatedResourceManagement.json --parameters delegatedResourceManagement.parameters.json --verbose`
       isCorrect: false
-      explanation: That's incorrect. When deploying an Azure Resource Management template, you'd use the create command.
-    - content: az deployment onboard --name delegated-resource-management  --location westUS --template-file delegatedResourceManagement.json --parameters delegatedResourceManagement.parameters.json --verbose.
-      isCorrect: false
-      explanation: That's incorrect. When deploying an Azure Resource Management template, you'd use the create command.
-    - content: az deployment create --name delegated-resource-management  --location westUS --template-file delegatedResourceManagement.json --parameters delegatedResourceManagement.parameters.json --verbose.
+      explanation: That's incorrect. When deploying an Azure Resource Manager template, you wouldn't use the onboard command.
+    - content: The command `az deployment create --name delegated-resource-management  --location westUS --template-file delegatedResourceManagement.json --parameters delegatedResourceManagement.parameters.json --verbose`
       isCorrect: true
-      explanation: That's correct. The create command will deploy the Azure Resource Management template onto the customer's Azure instance.
-    - content: az deployment deploy --name delegated-resource-management  --location westUS --template-file delegatedResourceManagement.json --parameters delegatedResourceManagement.parameters.json --verbose.
+      explanation: That's correct. The create command will deploy the Azure Resource Manager template onto the customer's Azure instance.
+    - content: The command `az deployment deploy --name delegated-resource-management  --location westUS --template-file delegatedResourceManagement.json --parameters delegatedResourceManagement.parameters.json --verbose`
       isCorrect: false
-      explanation: That's incorrect. When deploying an Azure Resource Management template, you'd use the create command.
+      explanation: That's incorrect. When deploying an Azure Resource Manager template, you wouldn't use the deploy command.
