@@ -10,17 +10,19 @@ Create a new function in your Azure Functions application.
 1. Enter **vacations-get** as the name of the function
 1. Select **Anonymous** as the authentication level
 
-### Set the HTTP Method for the Function
+### Set the HTTP Method and Route Endpoint Names
 
-Notice that there's now a folder _functions/vacations-get_ that contains a few files. The _function.json_ contains the configuration for the function. Open the file _functions/vacations-get/function.json_ and notice that the methods allow both `GET` and `POST`. Change the methods array to only allow `GET` requests.
+Notice that there's now a folder _functions/vacations-get_ that contains a few files.
 
-### Name the Route's Endpoint
-
-By convention, the route endpoint will have the same name as the folder that contains the function. Because the function is created in the folder _vacations-get_, the route endpoint for the function will be **vacations-get**. The route in the Node.js Express app is **vacations**. We want these route endpoints to be the same.
+The _function.json_ contains the configuration for the function.
 
 1. Open the file _functions/vacations-get/function.json_
+1. Notice the methods allow both `GET` and `POST`
+1. Change the methods array to only allow `GET` requests
 1. Go to the `bindings` section's `req` properties
 1. Add a `route: "vacations"` entry
+
+By convention, the route endpoint will have the same name as the folder that contains the function. Because the function is created in the folder _vacations-get_, the route endpoint for the function will be **vacations-get**. The route in the Node.js Express app is **vacations**. We want these route endpoints to be the same.
 
 Now the function will be executed when an HTTP `GET` on **/vacations** is requested.
 
