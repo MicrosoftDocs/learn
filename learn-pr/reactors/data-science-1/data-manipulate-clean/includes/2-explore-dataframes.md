@@ -3,10 +3,6 @@
 >
 > By the end of this module, you should be comfortable finding general information about the data that's stored in pandas DataFrames.
 
-> [!NOTE]
-> 
-> **SARAH** - This is formatting created by `div` that we used in Shana's modules. We could use it for learning goals, takeaways, and key takeaways. Do you like the way it looks?
-
 After you load your data into pandas, the data most likely will be in a DataFrame. However, if the data set in your DataFrame has 60,000 rows and 400 columns, how do you even begin to get a sense of what you're working with? Fortunately, pandas provides some convenient tools to quickly look at overall information about a DataFrame and the first few and last few rows.
 
 By the end of this module, you should be comfortable finding general information about the data stored in pandas DataFrames.
@@ -45,12 +41,9 @@ Next, let's see what the first few rows of our DataFrame look like:
 iris_df.head()
 ```
 
-This is what the output looks like:
+Here's the output:
 
-> [!NOTE]
-> 
-> **SARAH** - *Insert image*: Add screenshot of the output table.
->
+![A screenshot that shows the output of running iris_df.head()](../media/iris-df-head.png)
 
 ### Exercise
 
@@ -67,12 +60,9 @@ The flip side of `DataFrame.head` is `DataFrame.tail`, which returns the last fi
 iris_df.tail()
 ```
 
-This is what the output looks like:
+Here's the output:
 
-> [!NOTE]
-> 
-> **SARAH** - *Insert mage*: Add screenshot of the output table.
->
+![A screenshot that shows the output of running iris_df.tail()](../media/iris-df-tail.png)
 
 In practice, it's useful to be able to easily examine the first few rows or the last few rows of a DataFrame, particularly when you are looking for outliers in ordered datasets.
 
