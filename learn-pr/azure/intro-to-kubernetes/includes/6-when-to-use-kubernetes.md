@@ -2,7 +2,7 @@ The decision to use a container orchestration platform like Kubernetes depends o
 
 The drone tracking solution is built as microservices that are designed as loosely coupled, collaborative services. You're deploying these services separately from each other to simplify the solution's design and maintenance. Here is the current design of your solution.
 
-**[Image of the high-level architecture that describes the drone tracking solution.]**
+**[Diagram of the high-level architecture that describes the drone tracking solution.]**
 
 - A drone tracking website that includes maps and information about tracked assets
 

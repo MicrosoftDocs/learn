@@ -10,7 +10,7 @@ A *container* is an atomic unit of software that packages up code, dependencies,
 
 You realize that you have to scale out your solution to meet customer demand. One option is to deploy a new virtual machine (VM) for each application and then deploy the applications to the VMs. However, doing so will make you responsible for the management of each additional VM. For example, you'll have to make sure the correct operating system (OS) versions and dependencies for each application is installed and configured. You also must make sure you're installing and upgrading the correct versions of the applications. If there are errors, you have to make sure you can roll back the installation with the least amount of disruption to your solution.
 
-:::image type="content" source="../media/2-deploy-multiple-instances.png" alt-text="An image of replicated servers as VMs in the cloud and how this problem raises migration questions and problems." border="false":::
+:::image type="content" source="../media/2-deploy-multiple-instances.png" alt-text="Diagram of replicated servers as VMs in the cloud and how this problem raises migration questions and problems." border="false":::
 
 The above deployment is cumbersome, sometimes error-prone and doesn't easily scale single services. For example, you might find you can't easily scale only the caching service used in the web application. Containers help solve these types of problems.
 
@@ -26,7 +26,7 @@ The above benefits make containers a popular choice for developers and IT operat
 
 ## What is container management?
 
-:::image type="content" source="../media/2-deploy-multiple-containers.png" alt-text="Image of replicated servers as multiple containers in the cloud." border="false":::
+:::image type="content" source="../media/2-deploy-multiple-containers.png" alt-text="Diagram of replicated servers as multiple containers in the cloud." border="false":::
 
 Even though you can think of containers as VMs, you have to keep in mind that they aren't. A container has a distinct life cycle. It's deployed, started, stopped, and destroyed as requested. This life cycle makes containers disposable and impacts how developers and IT operations should think about the management of large container deployments.
 
@@ -54,7 +54,7 @@ In the drone tracking example, you can see how each of the components is easily 
 
 ## What is Kubernetes?
 
-:::image type="content" source="../media/2-deploy-multiple-containers-k8s.png" alt-text="Image of replicated servers as multiple containers in a Kubernetes cluster." border="false":::
+:::image type="content" source="../media/2-deploy-multiple-containers-k8s.png" alt-text="Diagram of replicated servers as multiple containers in a Kubernetes cluster." border="false":::
 
 Kubernetes is a portable, extensible open-source platform for automating deployment, scaling, and the management of containerized workloads. Kubernetes abstracts away complex container management and provides you with declarative configuration to orchestrate containers in different computing environments. This orchestration platform gives you the same ease of use and flexibility as with Platform as a Service (PaaS) and Infrastructure as a Service (IaaS) offerings.
 

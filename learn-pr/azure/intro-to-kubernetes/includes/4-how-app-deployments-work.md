@@ -17,14 +17,11 @@ Part of the installation choices you make when installing a Kubernetes cluster i
 
 Assume you have a cluster with one master and two nodes. When you add nodes to Kubernetes, an IP address gets automatically assigned to each node from an internal private network range. For example, assume your local network range is 192.168.1.0/24.
 
-[Image of simple cluster configuration with Nodes.]
+:::image type="content" source="../media/4-nodes-assigned-ip-addresses-tmp.svg" alt-text="Diagram of Nodes with assigned IP addresses in cluster." border="false":::
 
 Each Pod that you deploy gets assigned an IP from a pool of IP addresses. For example, assume your configuration uses the 10.32.0.0/12 network range.
 
-10.32.0.94    clusters01
-10.42.0.14    clusters02
-
-[Image of simple cluster configuration with Pods in Nodes.]
+:::image type="content" source="../media/4-nodes-pods-assigned-ip-addresses-tmp.svg" alt-text="Diagram of Nodes and Pods with assigned IP addresses in cluster." border="false":::
 
 By default the Pods and Nodes can't communicate with each other using theses different IP address ranges.
 
@@ -72,11 +69,11 @@ You'll then configure all other components that require private network access u
 
 Pod IP addresses change as controllers recreate them, and you may have any number of pods running. Managing Pods by IP address isn't practical.
 
-A Service allows you to target specific components in your cluster by using a selector value. The selector value matches the Pod label you define in a Pod's definition file.
+A Service allows you to target and manage specific Pods in your cluster by using selector labels. You set the selector label in a service definition to match the Pod label defined in the Pod's definition file.
 
-**[Image of Service with labels]**
+:::image type="content" source="../media/4-service-with-selector-tmp.svg" alt-text="Diagram of Service with selector labels." border="false":::
 
-For example, assume you have many running pods. Only a few of these are front-end pods. You can apply your Service to expose these pods by referencing the Pod label as a Selector value in the Service's definition file. The Service will now effectively group only these Pods that match the label. If a Pod gets removed and recreated, the new Pod is automatically added to the service group using its matching label.
+For example, assume you have many running pods. Only a few of these are front-end pods and you want to set a LoadBalancer service that targets only the front-end pods. You can apply your Service to expose these pods by referencing the Pod label as a Selector value in the Service's definition file. The Service will now  group only these Pods that match the label. If a Pod gets removed and recreated, the new Pod is automatically added to the service group using its matching label.
 
 ## Kubernetes Storage
 
@@ -118,21 +115,21 @@ A Replication Controller uses Pod templates and defines a specified number of po
 
 Replica Sets replaces the Replication Controller in terms of the preferred way to deploy replicas. A Replica Set includes the same functionality as a Replication Controller. However, it includes an extra configuration option to include a selector value.
 
-**[Diagram that shows five Pods group with a Selector in a Node.]**
-
 A Selector allows the Replica Set to identify all the Pods running underneath it. This feature allows you to manage Pods labeled with the same value as the selector value, but not created with the replicate set.
 
 ### Deployments
 
 A Deployment creates a management object one lever higher than a Replica Set. The deployment management updates allow you to manage how you update Pods in a cluster.
 
-**[Diagram that shows five Pods running on a Node with the same Pod version.]**
+Assume you have five instances of your application deployed in your cluster. There are five pods running version 1.0.0 of your application.
 
-Assume you have five instances of your application deployed in your cluster. There are five pods running version 1.0 of your application. If you decide to update your application manually, you can terminate all Pods and then launch new Pods running version 1.1 of your application. With this strategy, your application will experience downtime.
+:::image type="content" source="../media/4-pods-running-same-version-tmp.svg" alt-text="Diagram that shows five Pods running on a Node with the same Pod version." border="false":::
 
-**[Diagram that shows five Pods running on a Node with two of the same version and tree with a later version.]**
+If you decide to update your application manually, you can terminate all Pods and then launch new Pods running version 2.0.0 of your application. With this strategy, your application will experience downtime.
 
 What you instead want to do is execute a rolling update where you launch Pods running the new version of your application before you terminate the Pods running the older version of your application. Rolling updates will launch one Pod at a time instead of taking down all the older Pods at once. Deployments honor the number of replicas configured in the replica set information section. It will make sure to maintain that the amount of Pods specified in the Replica Set as it terminates old Pods and launches new Pods.
+
+:::image type="content" source="../media/4-pods-running-different-version-tmp.svg" alt-text="Diagram that shows five Pods running on a Node with two of the same version and tree with a later version." border="false":::
 
 Deployments, by default, provide a rolling update strategy when updating Pods. You also have the option to use a recreate strategy. This strategy will terminate Pods before launching new Pods.
 
