@@ -10,6 +10,6 @@ metadata:
   ms.prod: learning-azure
   ROBOTS: NOINDEX
 title: Exercise - Shifting the Services to Azure Functions
-durationInMinutes: 8
+durationInMinutes: 9
 content: |
   [!include[](includes/8-exercise-refactor.md)]

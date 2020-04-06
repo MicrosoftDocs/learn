@@ -119,24 +119,90 @@ The code that you add calls the asynchronous function `vacationService.getVacati
 
 ### Create the Remaining Functions
 
-There are four endpoints in the Node.js Express application and we just created the first one. Now, follow these steps to create an Azure Function for the rest of the route endpoints.
+There are four endpoints in the Node.js Express application and we just created the first one. Now, follow these steps to create an Azure Function for the rest of the route endpoints. Here are the endpoints you'll create.
+
+| methods | route endpoints      |
+| ------- | -------------------- |
+| POST    | **vacations-post**   |
+| PUT     | **vacations-put**    |
+| DELETE  | **vacations-delete** |
+
+#### Create the HTTP Post Function
 
 1. Open the command palette by pressing **F1**
 1. Type and select **Azure Functions: Create Function**
 1. Choose **HTTP Trigger** for the type of function
-1. Enter the name of the function for vacations. I recommend three additional functions named
-
-   | methods | route endpoints      |
-   | ------- | -------------------- |
-   | POST    | **vacations-post**   |
-   | PUT     | **vacations-put**    |
-   | DELETE  | **vacations-delete** |
-
+1. Enter the name **vacations-post** for the function
 1. Select **Anonymous** for the authentication level
 1. Open the file _function.json_
-1. Set the method to the appropriate value of **post**, **put**, or **delete**
-1. Go to the bindings section's **req** object and for the `POST` add a `route: "vacations"` entry
-1. Go to the bindings section's **req** object and for the `DELETE` and `PUT` add a `route: "vacations"` entry
-1. Add the code in each function's _index.ts_ file to call the appropriate vacation service function
+1. Set the method to **post**
+1. Go to the bindings section's **req** object and add `route: "vacations"` entry
+1. Open the _functions/vacations-post/index.ts_ file
+1. Add the code to call the `vacationService.postVacations` function
+
+Your code will look like the following when you're done refactoring this function.
+
+```typescript
+import { AzureFunction, Context, HttpRequest } from '@azure/functions';
+import { vacationService } from '../services';
+
+const httpTrigger: AzureFunction = async function (context: Context, req: HttpRequest): Promise<void> {
+  await vacationService.postVacation(context);
+};
+
+export default httpTrigger;
+```
+
+#### Create the HTTP Put Function
+
+1. Open the command palette by pressing **F1**
+1. Type and select **Azure Functions: Create Function**
+1. Choose **HTTP Trigger** for the type of function
+1. Enter the name **vacations-put** for the function
+1. Select **Anonymous** for the authentication level
+1. Open the file _function.json_
+1. Set the method to **put**
+1. Go to the bindings section's **req** object and add `route: "vacations"` entry
+1. Open the _functions/vacations-put/index.ts_ file
+1. Add the code to call the `vacationService.putVacations` function
+
+Your code will look like the following when you're done refactoring this function.
+
+```typescript
+import { AzureFunction, Context, HttpRequest } from '@azure/functions';
+import { vacationService } from '../services';
+
+const httpTrigger: AzureFunction = async function (context: Context, req: HttpRequest): Promise<void> {
+  await vacationService.putVacation(context);
+};
+
+export default httpTrigger;
+```
+
+#### Create the HTTP Delete Function
+
+1. Open the command palette by pressing **F1**
+1. Type and select **Azure Functions: Create Function**
+1. Choose **HTTP Trigger** for the type of function
+1. Enter the name **vacations-delete** for the function
+1. Select **Anonymous** for the authentication level
+1. Open the file _function.json_
+1. Set the method to **delete**
+1. Go to the bindings section's **req** object and add `route: "vacations"` entry
+1. Open the _functions/vacations-delete/index.ts_ file
+1. Add the code to call the `vacationService.deleteVacations` function
+
+Your code will look like the following when you're done refactoring this function.
+
+```typescript
+import { AzureFunction, Context, HttpRequest } from '@azure/functions';
+import { vacationService } from '../services';
+
+const httpTrigger: AzureFunction = async function (context: Context, req: HttpRequest): Promise<void> {
+  await vacationService.deleteVacation(context);
+};
+
+export default httpTrigger;
+```
 
 Next, you'll review the Azure Functions application you created.
