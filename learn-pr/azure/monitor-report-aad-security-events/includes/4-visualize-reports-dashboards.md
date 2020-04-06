@@ -1,6 +1,6 @@
-You've used the tools and services in the Azure portal to gather logging details about your users and their activities. You've taken the audit and sign-in data, and built queries to gain answers and insights into specific behaviors. These queries will also alert you when there's suspicious behavior. This process has gone a long way toward meeting your team's security concerns.
+You've used the tools and services in the Azure portal to gather logging details about your users and their activities. With the collected audit and sign-in data, you've built queries to gain answers and insights into specific behaviors. These queries will also alert your team when there's suspicious user behavior. This process has gone a long way toward meeting your team's security concerns.
 
-Your security team members are pleased. They'll be alerted when suspicious behaviors are identified, but they know that those alerts are tightly focused. Now the members want to know whether Azure can give real-time views of the security of their estate. They can then identify and respond to new threats.
+Your team members are pleased. They'll be alerted when suspicious behaviors are identified, and they know that those alerts are tightly focused. Now they want to know whether Azure can provide real-time views of the security of their estate. They can then identify and respond to new threats.
 
 Azure provides several visualization tools and reports that can meet the team's needs. You want to understand how to put these tools and reports into practice.
 
@@ -19,7 +19,7 @@ Prebuilt views are available on GitHub in the [AzureAD/Deployment-Plans](https:/
 
 This view is a collection of reports that are based on audit log data and focused on account provisioning. You can use reports to:
 
-- View the number of newly setup users, and the number of failed attempts.
+- View the number of newly set up users, and the number of failed attempts.
 - Gauge the number of successfully updated users, and the number of failed attempts.
 - View the number of deprovisioned users, and the number of failed attempts.
 
@@ -44,26 +44,26 @@ You can choose to download and install one or both of these prebuilt views in yo
 1. Select **View Designer**.
 1. Select **Import**, select **Choose file**, and then browse to the location where you downloaded both views. 
 1. Select the **Azure AD Account Provisioning Events** file, and select **Save**.
-1. Repeat the preceding step, but select the **Sign-ins Events** file instead, and then select **Save**.
+1. Repeat the preceding steps, but select the **Sign-ins Events** file instead, and then select **Save**.
 
 You've now imported both prebuilt views to your Log Analytics workspace.
 
-### Using the prebuilt views
+### Use the prebuilt views
 
 With the two prebuilt views installed, you can start using them to assess your users' activity and behavior.  
 
-From the **Log Analytics workspace** summary, you'll see the views you installed:
+In the **Log Analytics workspace** summary, you can see the views you installed:
 
 - Sign-ins Events
 - Azure AD Account Provisioning Events
 
-To access a view, select the one you're interested in.  Each view comes with many reports that you can tailor to give the insight you're looking for.
+To access a view, select the one you're interested in.  Each view comes with many reports that you can tailor to provide the insight you're looking for.
 
 ## Create a security dashboard
 
 Dashboards provide an organized view of the resources in your Azure cloud instance. From a dashboard, you can organize and arrange your day-to-day and recurring operational tasks and activities. Each dashboard can be built around a specific activity, such as a task or a project.
 
-Start by creating a new dashboard for your security team.
+To create a new dashboard for your security team, do the following:
 
 1. In the Azure portal, search for **Dashboard**.
 
@@ -108,7 +108,7 @@ The name of the report could be improved, so consider renaming it to something m
 
 ## Export reports
 
-When you're satisfied with the report, you can export it to Excel or the Power BI desktop application. From the navigation bar, select the **Export** drop-down list, and then select **Export to Excel - All Columns**, **Export to Excel - Displayed Columns**, or **Power BI Query (M)**.
+When you're satisfied with the report, you can export it to Excel or the Power BI Desktop application. From the navigation bar, select the **Export** drop-down list, and then select **Export to Excel - All Columns**, **Export to Excel - Displayed Columns**, or **Power BI Query (M)**.
 
 ![Screenshot of the options in the "Export" drop-down list.](../media/4-export-options.png)
 
