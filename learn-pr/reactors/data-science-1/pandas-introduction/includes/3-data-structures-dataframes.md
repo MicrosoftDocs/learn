@@ -40,9 +40,39 @@ countries = pd.DataFrame({'Population': population, 'Area': area})
 countries
 ```
 
-### Table created with Markdown syntax
+### Markdown inside HTML div
 
 ```Output```
+
+<div>
+
+<style>
+   table { border-collapse: collapse; border: 1px solid darkgrey; background-color:rgb(240,240,240); width: 300px; padding: 5px; }
+   tr { border: 1px solid darkgrey; text-align: left; padding: 5px; }
+   td { border: 1px solid darkgrey; padding: 5px; }
+</style>
+
+|  | Population | Area |
+|---------|------------|----------|
+| **Albania** | NaN         | 28748    |
+| **France**  | 65429495.0  | 643801   |
+| **Germany** | 82408706.0  | 357386   |
+| **Japan**   | 126922333.0 | 377972   |
+| **Russia**  | 143910127.0 | 17125200 |
+
+</div>
+
+### Markdown - try to set spacing
+
+|  | Population | Area |
+|---------|------------|----------|
+| **Albania** | NaN         | 28748    |
+| **France**  | 65429495.0  | 643801   |
+| **Germany** | 82408706.0  | 357386   |
+| **Japan**   | 126922333.0 | 377972   |
+| **Russia**  | 143910127.0 | 17125200 |
+
+### Markdown (too wide)
 
 |   | Population | Area |
 |---|---|---|
@@ -52,7 +82,7 @@ countries
 | **Japan** | 126922333.0 | 377972 |
 | **Russia** | 143910127.0 | 17125200 |
 
-### Table created with HTML div and table syntax
+### HTML div and table (extends off right edge)
 
 <div>
 <style>

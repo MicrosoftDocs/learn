@@ -1,3 +1,11 @@
+<div>
+<style>
+   table { border-collapse: collapse; border: 1px solid darkgrey; background-color:rgb(240,240,240); width: 300px; padding: 5px; }
+   tr { border: 1px solid darkgrey; text-align: left; padding: 5px; }
+   td { border: 1px solid darkgrey; padding: 5px; }
+</style>
+</div>
+
 `DataFrames` also exhibit dual behavior, acting both like a two-dimensional `ndarray` and like a dictionary of `Series` sharing the same index.
 
 > [!Note]

@@ -1,3 +1,11 @@
+<div>
+<style>
+   table { border-collapse: collapse; border: 1px solid darkgrey; background-color:rgb(240,240,240); width: 300px; padding: 5px; }
+   tr { border: 1px solid darkgrey; text-align: left; padding: 5px; }
+   td { border: 1px solid darkgrey; padding: 5px; }
+</style>
+</div>
+
 As you begin to work in data science, operating on data is imperative. It is the very heart of data science. Another aspect of pandas that makes it a compelling tool for many data scientists is pandas' capability to perform efficient element-wise operations on data. pandas builds on ufuncs from NumPy to supply theses capabilities and then extends them to provide additional power for data manipulation:
 
 - For unary operations (such as negation and trigonometric functions), ufuncs in pandas **preserve index and column labels** in the output.
