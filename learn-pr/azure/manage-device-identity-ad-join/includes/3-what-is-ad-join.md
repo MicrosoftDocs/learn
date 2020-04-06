@@ -67,8 +67,8 @@ The table below shows the key features of each approach.
 
 In the Azure portal, you control how new devices are joined to your organization. Go to **Azure Active Directory**> **Devices** > **Device settings**. From there, you can configure the following features and turn on Azure AD join.
 
-[!div class="mx-imgBorder"]
-![Screenshot of the Azure AD device settings.](../media/3-device-settings.png)
+>[!div class="mx-imgBorder"]
+>![Screenshot of the Azure AD device settings.](../media/3-device-settings.png)
 
 
 |Field  |Description  |
@@ -85,8 +85,8 @@ For our scenario, we could add a pilot group of users to try AD Join. In that ca
 
 You may need to add a MDM provider before you can configure mobility settings. To add your MDM provider, go to **Azure Active Directory** > **Mobility (MDM and MAM)** > **Add application**.
 
-[!div class="mx-imgBorder"]
-![Screenshot that shows mobility applications you can add like Microsoft Intune.](../media/3-mobility-add-application.png)
+>[!div class="mx-imgBorder"]
+>![Screenshot that shows mobility applications you can add like Microsoft Intune.](../media/3-mobility-add-application.png)
 
 
 When you have your MDM provider added, you can configure the following mobility settings.
@@ -100,11 +100,11 @@ When you have your MDM provider added, you can configure the following mobility 
 
 Recall that you need to restrict access to the organization's resources to only those devices managed by your organization and considered compliant by your mobile device management (MDM) system. So for our scenario, we'd want to add our organizations MDM provider and select the **MDM user scope** > **All**. 
 
-## Join a Windows 10 device through Azure AD join
+## User experience when joining a Windows 10 device
 
-Your organization wants to provide a second layer of security when a new device is added to your domain. You've provided a new device to a tech-savvy employee. They will use the self-service approach to join the device to your Active Directory organization, which is using MFA. The following steps show you what that workflow looks like.
+You've provided a new device to a tech-savvy employee. They will use the self-service approach to join the device to your Active Directory organization, which is using MFA. The following steps show you what that workflow looks like.
 
-1. After powering up the device, follow the prompts to set it up, including customizing your region and selecting a language.
+1. After starting the device, they follow the prompts to set it up, including customizing their region and selecting a language.
 
     ![Screenshot of the region customization for Windows 10.](../media/3-walk-setup-pc.png)
 
@@ -113,7 +113,8 @@ Your organization wants to provide a second layer of security when a new device 
 1. When asked, **who owns this PC?**, select **This device belongs to my organization**.
 
     ![Screenshot that shows the who owns this pc prompt.](../media/3-walk-who-owns.png)
-1. Sign in with the credentials supplied by your organization.
-1. The employee will be prompted with a Multi-Factor Authentication challenge.
+1. Employee signs in with the credentials supplied by your organization.
+1. The employee is prompted with a MFA challenge.
 1. Azure AD checks the configuration settings to see if the device should be enrolled in MDM.
-1. When successful, the device is registered with the organization's Azure AD. If MDM is being used, that will also be fulfilled.
+1. When successful, the device is registered with the organization's Azure AD. If MDM is being used, the device is enrolled and managed.
+
