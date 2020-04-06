@@ -9,10 +9,9 @@ metadata:
   ms.author: chmaneu
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 azureSandbox: true
 interactive: bash-editor
 title: Create an IoT Hub and simulate devices
 durationInMinutes: 12
 content: |
-  [!include[](includes/2-create-iot-hub-and-simulate-devices.md)]
+  [!include[](includes/2-create-iot-hub-simulate-devices.md)]

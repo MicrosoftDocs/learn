@@ -13,7 +13,7 @@ You'll now specify basic
 1. In the **Resource group** dropdown, select the resource group created by the sandbox, <rgn>[sandbox resource group name]</rgn>.
 1. In the **Location** dropdown, select the same location you choose for the IoT Hub in the previous unit.
 
-![Azure Portal screenshot](../media/explore6.png)
+![Azure Portal screenshot](../media/explore-6.png)
 
 ## Configure Storage options
 
@@ -36,7 +36,7 @@ in your messages. That's the name of the property containing your value that you
 1. In the **Enable warm store** selector, select _Yes_.
 1. Click on **Next: Event Source >>** button.
 
-![Azure Portal screenshot](../media/explore7.png)
+![Azure Portal screenshot](../media/explore-7.png)
 
 ## Setup event source
 
@@ -63,7 +63,7 @@ We'll now create a dedicated consumer group for the IoT Hub. It allows you to ha
 1. Click on **Create** button.
 
 
-![Azure Portal screenshot](../media/explore8.png)
+![Azure Portal screenshot](../media/explore-8.png)
 
 Deployment of Time Series Insights (TSI) will take a couple of minutes to complete. Once your Time Series Insights deployment is complete, you've completed this unit.
 

@@ -8,9 +8,8 @@ metadata:
   ms.author: chmaneu
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 title: Create a Time Series Insights environment
 azureSandbox: true
 durationInMinutes: 10
 content: |
-  [!include[](includes/3-create-time-series-insights.md)]
+  [!include[](includes/3-create-environment.md)]
