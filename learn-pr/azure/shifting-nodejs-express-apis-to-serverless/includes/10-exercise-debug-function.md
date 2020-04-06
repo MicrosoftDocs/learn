@@ -10,7 +10,7 @@ We see a list of vacations displayed in the application. Let's explore the code 
 
 The Angular application makes a call to the `vacations` endpoint in the Azure Functions API. The endpoint's route is defined in the file _functions/vacations-get/index.ts_. We'll set a breakpoint in this file so we can step through the code that fetches the vacations.
 
-1. Open _functions/vacations-get/index.ts_ and locate the code shown below.
+1. Open _functions/services/vacations.service.ts_ and locate the code shown below.
 
    ```typescript
    async function getVacations({ req, res }: Context) {
@@ -25,11 +25,13 @@ The Angular application makes a call to the `vacations` endpoint in the Azure Fu
 
 1. Set a breakpoint by clicking in the editor's gutter to the left of the line of code `try {`.
 
-> The files _.vscode/launch.json_ and _.vscode/tasks.json_ are integral to the debugging experience for this project. I encourage you to explore those files and copy/refactor their contents for your own purposes.
+> The files _.vscode/launch.json_ and _.vscode/tasks.json_ are integral to the debugging experience for this project.
 
 ## Run and Debug the Application
 
 You've set a breakpoint in both the Angular and the Azure Functions applications. Now it's time to run and debug them together.
+
+> You're not running the functions in Azure yet. You're using the very powerful and convenient core tools to run and debug locally.
 
 ### Proxy the Requests from Angular to Azure Functions
 
