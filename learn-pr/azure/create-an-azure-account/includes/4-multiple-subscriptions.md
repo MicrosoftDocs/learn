@@ -24,4 +24,6 @@ Depending on your needs, you can set up multiple invoices within the same billin
 
 The following diagram shows an overview of how billing is structured. If you've previously signed up for Azure or if your organization has an Enterprise Agreement, your billing might be set up differently.
 
-![Diagram that shows an overview of how billing is structured with the billing account at the top](../media/4-billing-structure-overview.png)
+:::image type="complex" source="../media/4-billing-structure-overview.png" alt-text="Diagram showing overview of billing structure, with billing account at the top, down to several Azure subscriptions.":::
+    Top tier is a single billing account, then split to two billing profiles which have invoices and payment methods, then each profile splits to two invoice sections (four total), which then each split to two Azure subscriptions (eight total).
+:::image-end:::
