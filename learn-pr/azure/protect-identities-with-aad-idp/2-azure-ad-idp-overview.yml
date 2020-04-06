@@ -15,7 +15,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: How do you protect against identity-based risks by using Azure Active Directory Identity Protection?
+  - content: How do you protect against identity-based risks by using Azure AD Identity Protection?
     choices:
     - content: Configure an investigation policy and then remediate.
       isCorrect: false
