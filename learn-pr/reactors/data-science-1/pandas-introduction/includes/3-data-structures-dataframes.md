@@ -48,13 +48,15 @@ countries = pd.DataFrame({'Population': population, 'Area': area})
 countries
 ```
 
-|| Population | Area |
-|---|---|---|
-|**Albania** | NaN         | 28748    |
-|**France**  | 65429495.0  | 643801   |
-|**Germany** | 82408706.0  | 357386   |
-|**Japan**   | 126922333.0 | 377972   |
-|**Russia**  | 143910127.0 | 17125200 |
+```Output
+|          | Population   | Area      |
+---------------------------------------
+| Albania  | NaN          | 28748     |
+| France   | 65429495.0   | 643801    |
+| Germany  | 82408706.0   | 357386    |
+| Japan    | 126922333.0  | 377972    |
+| Russia   | 143910127.0  | 17125200  |
+```
 
 As with `Series`, the `DataFrames` also automatically order indices (in this case, the column indices 'Area' and 'Population').
 

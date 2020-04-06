@@ -60,19 +60,14 @@ df1.add(df2, fill_value=fill)
 
 This table lists Python operators and their equivalent pandas object methods:
 
-<div>
-<style>
-   table {background-color:white;}
-</style>
-
-| Python operator | Pandas method(s) |
-|:--:|---|
-| + | add() |
-| - | sub(), subtract() |
-| * | mul(), multiply() | 
-| / | truediv(), div(), divide() |
-| // | floordiv() |
-| % | mod() |
-| ** | pow() |
-
-</div>
+> [!div class="mx-tdBreakAll"]
+> | Python operator | Pandas method(s) |
+> |:------------:|----------|
+> | + | add() |
+> | - | sub(), subtract() |
+> | * | mul(), multiply() | 
+> | / | truediv(), div(), divide() |
+> | // | floordiv() |
+> | % | mod() |
+> | ** | pow() |
+>
