@@ -23,7 +23,7 @@ example1 = np.array([2, None, 6, 8])
 example1
 ```
 
-The output looks like this:
+Here's the output:
 
 ```output
 array([2, None, 6, 8], dtype=object)
@@ -68,7 +68,7 @@ In contrast to **None**, NumPy (and therefore pandas) supports **NaN** for its f
 np.nan + 1
 ```
 
-The output looks like this:
+Here's the output:
 
 ```output
 nan
@@ -82,7 +82,7 @@ nan
 np.nan * 0
 ```
 
-The output looks like this:
+Here's the output:
 
 ```output
 nan
@@ -95,8 +95,7 @@ example2 = np.array([2, np.nan, 6, 8])
 example2.sum(), example2.min(), example2.max()
 ```
 
-The output looks like this:
-
+Here's the output:
 
 ```output
 (nan, nan, nan)
@@ -117,8 +116,7 @@ int_series = pd.Series([1, 2, 3], dtype=int)
 int_series
 ```
 
-The output looks like this:
-
+Here's the output:
 
 ```output
 0    1
@@ -156,7 +154,7 @@ example3 = pd.Series([0, np.nan, '', None])
 example3.isnull()
 ```
 
-The output looks like this:
+Here's the output:
 
 ```output
 0    False
@@ -188,14 +186,14 @@ Before you do so, what do you expect to see?
 
 ## Drop null values
 
-Beyond identifying missing values, pandas provides a convenient means to remove null values from Series and DataFrames. (Particularly on large data sets, it is often more advisable to simply remove missing [NA] values from your analysis than deal with them in other ways.) To see this in action, let's return to example3:
+Beyond identifying missing values, pandas provides a convenient means to remove null values from `Series` and `DataFrames`. (Particularly on large data sets, it is often more advisable to simply remove missing [NA] values from your analysis than deal with them in other ways.) To see this in action, let's return to example3:
 
 ```python
 example3 = example3.dropna()
 example3
 ```
 
-The output looks like this:
+Here's the output:
 
 ```output
 0    0
@@ -214,16 +212,13 @@ example4 = pd.DataFrame([[1,      np.nan, 7],
 example4
 ```
 
-The output looks like this:
+Here's the output:
 
-> [!NOTE]
-> 
-> **SARAH** - *Insert image*: Add screenshot of the output table.
->
+![A screenshot that shows the output of running pd.DataFrame](../media/pd-data-frame.png)
 
 Did you notice that pandas upcast two of the columns to floats to accommodate the **NaN**s?
 
-You cannot drop a single value from a DataFrame, so you have to drop full rows or columns. Depending on what you are doing, you might want to do one or the other, and so pandas gives you options for both. Because in data science, columns generally represent variables and rows represent observations, you are more likely to drop rows of data; the default setting for dropna() is to drop all rows that contain any null values:
+You cannot drop a single value from a DataFrame, so you have to drop full rows or columns. Depending on what you are doing, you might want to do one or the other, and so pandas gives you options for both. Because in data science, columns generally represent variables and rows represent observations, you are more likely to drop rows of data; the default setting for `dropna()` is to drop all rows that contain any null values:
 
 ```python
 example4.dropna()

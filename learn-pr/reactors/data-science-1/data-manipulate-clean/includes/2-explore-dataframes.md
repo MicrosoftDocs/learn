@@ -41,7 +41,7 @@ Next, let's see what the first few rows of our DataFrame look like:
 iris_df.head()
 ```
 
-This is what the output looks like:
+Here's the output:
 
 ![A screenshot that shows the output of running iris_df.head()](../media/iris-df-head.png)
 
@@ -60,7 +60,7 @@ The flip side of `DataFrame.head` is `DataFrame.tail`, which returns the last fi
 iris_df.tail()
 ```
 
-This is what the output looks like:
+Here's the output:
 
 ![A screenshot that shows the output of running iris_df.tail()](../media/iris-df-tail.png)
 
