@@ -1,3 +1,11 @@
+<div>
+<style>
+   table { border-collapse: collapse; border: 1px solid darkgrey; background-color:rgb(240,240,240); width: 300px; padding: 5px; }
+   tr { border: 1px solid darkgrey; text-align: left; padding: 5px; }
+   td { border: 1px solid darkgrey; padding: 5px; }
+</style>
+</div>
+
 The other crucial data structure in pandas to get to know for data science is the `DataFrame`. Like the `Series` object, `DataFrames` can be thought of either as generalizations of `ndarrays` (or as specializations of Python dictionaries).
 
 Just as a `Series` is like a one-dimensional array with flexible indices, a `DataFrame` is like a two-dimensional array with both flexible row indices and flexible column names. Essentially, a `DataFrame` represents a rectangular table of data and contains an ordered collection of labeled columns, each of which can be a different value type (`string`, `int`, `float`, and so on). The `DataFrame` has both a row and column index; in this way you can think of it as a dictionary of `Series`, all of which share the same index.
@@ -40,74 +48,13 @@ countries = pd.DataFrame({'Population': population, 'Area': area})
 countries
 ```
 
-### Markdown inside HTML div
-
-```Output```
-
-<div>
-
-<style>
-   table { border-collapse: collapse; border: 1px solid darkgrey; background-color:rgb(240,240,240); width: 300px; padding: 5px; }
-   tr { border: 1px solid darkgrey; text-align: left; padding: 5px; }
-   td { border: 1px solid darkgrey; padding: 5px; }
-</style>
-
-|  | Population | Area |
-|---------|------------|----------|
-| **Albania** | NaN         | 28748    |
-| **France**  | 65429495.0  | 643801   |
-| **Germany** | 82408706.0  | 357386   |
-| **Japan**   | 126922333.0 | 377972   |
-| **Russia**  | 143910127.0 | 17125200 |
-
-</div>
-
-### Markdown - try to set spacing
-
-|  | Population | Area |
-|---------|------------|----------|
-| **Albania** | NaN         | 28748    |
-| **France**  | 65429495.0  | 643801   |
-| **Germany** | 82408706.0  | 357386   |
-| **Japan**   | 126922333.0 | 377972   |
-| **Russia**  | 143910127.0 | 17125200 |
-
-### Markdown (too wide)
-
-|   | Population | Area |
+|| Population | Area |
 |---|---|---|
-| **Albania** | NaN | 28748 |
-| **France** | 65429495.0 | 643801 |
-| **Germany** | 82408706.0 | 357386 |
-| **Japan** | 126922333.0 | 377972 |
-| **Russia** | 143910127.0 | 17125200 |
-
-### HTML div and table (extends off right edge)
-
-<div>
-<style>
-   table { border-collapse: collapse; border: 1px solid darkgrey; background-color:rgb(240,240,240); width: 300px; padding: 5px; }
-   th { border: 1px solid darkgrey; text-align: left; padding: 5px; }
-   tr { border: 1px solid darkgrey; text-align: left; padding: 5px; }
-   td { border: 1px solid darkgrey; padding: 5px; }
-</style>
-<table>
-   <tr>
-       <th style="width: 100px"  ></th>
-       <th style="width: 125px" >Population</th>
-       <th style="width: 75px"  >Area</th></tr>
-   <tr><th>Albania</th>
-       <td>NaN</td><td>28748</td></tr>
-   <tr><th>France</th>
-       <td>65429495.0</td><td>643801</td></tr>
-   <tr><th>Germany</th>
-       <td>82408706.0</td><td>357386</td></tr>
-   <tr><th>Japan</th>
-       <td>126922333.0</td><td>377972</td></tr>
-   <tr><th>Russia</th>
-       <td>143910127.0</td><td>17125200</td></tr>
-</table></div>
-
+|**Albania** | NaN         | 28748    |
+|**France**  | 65429495.0  | 643801   |
+|**Germany** | 82408706.0  | 357386   |
+|**Japan**   | 126922333.0 | 377972   |
+|**Russia**  | 143910127.0 | 17125200 |
 
 As with `Series`, the `DataFrames` also automatically order indices (in this case, the column indices 'Area' and 'Population').
 
