@@ -1,6 +1,6 @@
 So far, you've learned about the various user-based logging methods provided by Azure. You've learned how to route the audit and sign-in data to an Azure Log Analytics workspace. Also, you've seen how to use this data to create a variety of views and reports for your security team.
 
-You want to implement a dashboard for the security team so they can see the potential of Azure Monitor Logs and alerting to better understand user behavior. 
+You want to implement a dashboard for the security team so they can see the potential of Azure Monitor logs and alerting to help them better understand user behavior. 
 
 In this exercise, you create a Log Analytics workspace in your Azure sandbox by using the Azure portal. You then direct the audit and sign-in log files to your workspace. Next, you download and install the prebuilt user sign-in and audit log views from GitHub. Finally, you create a dashboard for your security team that displays reports that are built into it from the workspace.
 
@@ -43,7 +43,7 @@ To stream the audit and sign-in logs to your Log Analytics workspace, do the fol
 
 1.  On the **Add diagnostics settings** page, do the following;
 
-    a. In the **Name** box, give the new diagnostics a name, such as **SendToLogAnalytics**.  
+    a. In the **Name** box, give the new diagnostics settings a name, such as **SendToLogAnalytics**.  
     b. Select the **Send to Log Analytics** check box.  
     c. Select the Log Analytics workspace that you created earlier, **ContosoWorkspace**.  
     d. Decide which of the log files you want to stream to the workspace. For this exercise, select both **Audit log** and **Sign-up logs**.
@@ -105,7 +105,7 @@ In the next section, you set up a dashboard that your security team can begin to
 1. Select the Log Analytics workspace that you created earlier.
 1. Under **General**, select **Logs**. 
 
-1. For this exercise, you want to know the most common user event for last week. Into your query editor, paste the following query:
+1. For this exercise, you want to know the most common user event for last week. In your query editor, paste the following query:
 
     ```kusto
     AuditLogs
