@@ -4,21 +4,21 @@ You've seen how to access the sign-in and audit logs, and how you might use them
 
 Azure Monitor can provide the real-time views and alerting that your security team needs.  To reassure your team, you want to learn more about Azure Monitor and how it's used to identify suspicious sign-in behavior.
 
-In this unit, you set up a Log Analytics workspace to hold and store the audit and sign-in log data. You then learn how to send the log files to Azure Monitor. Finally, you see how to create Azure Monitor alerts to notify the team when there's suspicious user behavior or activities.
+In this unit, you set up a Log Analytics workspace to hold and store the audit and sign-in log data. You then learn how to send the log files to Azure Monitor. Finally, you see how to create Azure Monitor alerts to notify the team when there's suspicious user behavior or activity.
 
 ## Prerequisites
 
-To use the Log Analytics workspace and Azure Monitor Logs, make sure that you have the following items available or set up:
+To use the Log Analytics workspace and Azure Monitor logs, make sure that you have the following items available or set up:
 
 - Access to the Log Analytics workspace
-- Access to Azure Monitor Logs
+- Access to Azure Monitor logs
 - Access to Azure Active Directory (Azure AD) diagnostic settings
 - An Azure AD Premium 1 or Premium 2 subscription
 - Any of the following Azure AD roles:
-  - Security Administrator
-  - Security Reader
-  - Report Reader
-  - Global Administrator
+  - *Security Administrator*
+  - *Security Reader*
+  - *Report Reader*
+  - *Global Administrator*
 
 ## The Log Analytics workspace
 
@@ -28,12 +28,12 @@ Creating a Log Analytics workspace is straightforward.
 
 1. Sign in to your Azure portal or Sandbox instance.
 1. Select **All service** and, in the **Search** box, enter **log analytics**.
-1. In the results list, select **Log Analytics workspaces**, and then select **Add** to create a new Log Analytics workspace. To create a new Log Analytics workspace, you'll need to supply the following details:
+1. In the results list, select **Log Analytics workspaces**, and then select **Add** to create a new Log Analytics workspace. To create a new Log Analytics workspace, supply the following details:
 
-   a. Select **Create New**, because this workspace will be unique to the user who's signing in. Each workspace needs a **Name** that's globally unique among Azure Monitor subscriptions.  
-   b. Select the subscription, and then select the workspace you'll use, such as an existing **Resource group**.
+   a. Select **Create New**, because this workspace is unique to the user who's signing in. Each workspace needs a **Name** that's globally unique among Azure Monitor subscriptions.  
+   b. Select the subscription, and then select the workspace you want to use, such as an existing **Resource group**.
    
-   The pricing tier is automatically assigned as **pay-as-you-go** and is based on a cost per-gigabyte (GB).
+   The pricing tier is automatically assigned as **pay-as-you-go** and is based on a per-gigabyte (GB) cost.
 
 1. Select **OK** to create the workspace.
 
@@ -47,7 +47,7 @@ To put that into some perspective, if your tenant has 1,000 users, your audit lo
 
 ## Send user logs to the Log Analytics workspace
 
-Now that you've created a Log Analytics workspace, you assign the user audit and sign-in logs. All the data you want to use in Azure Monitor Logs must be stored in a Log Analytics workspace.
+Now that you've created a Log Analytics workspace, you assign the user audit and sign-in logs. All the data you want to use in Azure Monitor logs must be stored in a Log Analytics workspace.
 
 To stream the audit and sign-in logs to your Log Analytics workspace, you need to:
 
@@ -65,13 +65,13 @@ To stream the audit and sign-in logs to your Log Analytics workspace, you need t
 
 You've now set up a data streaming process that will push audit and sign-in data to the Log Analytics workspace. Because this is a new service, it takes about 15 minutes for any data to appear in the workspace.
 
-## Analyze the log files in Azure Monitor Logs
+## Analyze the log files in Azure Monitor logs
 
-You've set up your Log Analytics workspace to receive user activity data. Now you can use the power of Azure Monitor Logs to view the activity within your environment. Azure Monitor Logs lets you query your data to spot trends, specific events, or correlate multiple data sources.  
+You've set up your Log Analytics workspace to receive user activity data. Now you can use the power of Azure Monitor logs to view the activity within your environment. With Azure Monitor logs, you can query your data to spot trends, specific events, or correlate multiple data sources.  
 
 ### Log data schemas
 
-The data streams for both the audit and sign-in logs are stored in your Log Analytics workspace in two separate tables, **AuditLogs** and **SignInLogs**.  Each table has its own schema you use to query against.
+The data streams for both the audit and sign-in logs are stored in your Log Analytics workspace in two separate tables, **AuditLogs** and **SignInLogs**.  Each table has its own schema that you can use to query against.
 
 | Audit log schema   | Sign-in log schema        |
 | ------------------ | ------------------------- |
@@ -106,7 +106,7 @@ The data streams for both the audit and sign-in logs are stored in your Log Anal
 
 ### Write activity log queries
 
-With the audit logs stored in your workspace tables, you can now run queries against them. You can write two types of queries, table-based and search. The schema structures in the preceding section show you all the fields you can query against.
+With the audit logs stored in your workspace tables, you can now run queries against them. You can write two types of queries, *table-based* and *search-based*. The schema structures in the preceding section show you all the fields you can query against.
 
 The query language you use is Kusto.  It's designed to process data and return a result set.
 
