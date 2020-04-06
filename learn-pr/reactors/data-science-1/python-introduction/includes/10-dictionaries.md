@@ -1,5 +1,12 @@
 Dictionaries in Python provide a means of mapping information between unique keys and values. You create dictionaries by listing zero or more key-value pairs inside of braces, like this:
 
+> [!Note]
+> **Sarah: Action items**
+> 
+> Please verify:
+> I added a link for popItem: https://docs.python.org/3.6/library/stdtypes.html?highlight=popitem#dict.popitem.
+>
+
 ```Python
 capitals = {'France': ('Paris', 2140526)}
 ```
@@ -42,7 +49,7 @@ capitals
 {'France': ('Paris', 2140526), 'Nigeria': ('Abuja', 1235880)}
 ```
 
-When used on a dictionary, the len() method returns the number of keys in a dictionary:
+When used on a dictionary, the `len()` method returns the number of keys in a dictionary:
 
 ```Python
 len(capitals)
@@ -52,7 +59,7 @@ len(capitals)
 2
 ```
 
-Similar to the pop() method for lists, the popitem() method randomly removes a key from the dictionary, along with its associated value:
+Similar to the `pop()` method for lists, the [popitem()](https://docs.python.org/3.6/library/stdtypes.html?highlight=popitem#dict.popitem) method randomly removes a key from the dictionary, along with its associated value:
 
 ```Python
 capitals.popitem()

@@ -7,7 +7,6 @@
 > 
 > **SARAH** - This is formatting created by `div` that we used in Shana's modules. We could use it for learning goals, takeaways, and key takeaways. Do you like the way it looks?
 
-
 After you load your data into pandas, the data most likely will be in a DataFrame. However, if the data set in your DataFrame has 60,000 rows and 400 columns, how do you even begin to get a sense of what you're working with? Fortunately, pandas provides some convenient tools to quickly look at overall information about a DataFrame and the first few and last few rows.
 
 By the end of this module, you should be comfortable finding general information about the data stored in pandas DataFrames.
@@ -34,12 +33,9 @@ iris_df.info()
 
 From the output, we know that the Iris dataset has 150 entries in four columns. All of the data is stored as 64-bit floating-point numbers.
 
-
 > [!NOTE]
 > 
 > **SARAH** - It seems like we would need to display the output in the module. Would you agree?
-
-
 
 ## `DataFrame.head`
 
@@ -49,12 +45,12 @@ Next, let's see what the first few rows of our DataFrame look like:
 iris_df.head()
 ```
 
+This is what the output looks like:
+
 > [!NOTE]
 > 
-> **SARAH** - We need to determine how to display the output. In most Learn modules, it'd be a screenshot referenced as an image file. Does that sound like the best (or maybe only) option?
+> **SARAH** - *Insert image*: Add screenshot of the output table.
 >
-
-> Insert output--screenshot?
 
 ### Exercise
 
@@ -70,7 +66,13 @@ The flip side of `DataFrame.head` is `DataFrame.tail`, which returns the last fi
 ```python
 iris_df.tail()
 ```
-> Insert output--screenshot?
+
+This is what the output looks like:
+
+> [!NOTE]
+> 
+> **SARAH** - *Insert mage*: Add screenshot of the output table.
+>
 
 In practice, it's useful to be able to easily examine the first few rows or the last few rows of a DataFrame, particularly when you are looking for outliers in ordered datasets.
 

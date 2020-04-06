@@ -4,11 +4,16 @@ Since its first release in 1991, Python has risen to become not just a popular g
 > **Sarah: Conversion feedback**
 > 
 > The environment set up content is the first module in this learning path and it's extremely short--one unit topic.
-> Suggest moving the setup content into this unit topic, or making it the next unit topic in this module.
-> Then, duplicate the set up content in the same topic location in all modules in the learning path.
+> Suggest moving the setup content into this unit topic, and duplicate the set up content in all modules (as needed) in the learning path.
+>
+> **Sarah: Action items**
+>
+> - Search on "TBD" and add content as needed.
+> - Add list of learning objectives.
+> - Add list of prerequisites, or "None."
 >
 
-Several examples in this learning path draw from the python.org introductory tutorial and examples given in the Python 3 documentation (with edits and amendments). This introduction to Python is written for Python 3.6.7 but is generally applicable to other Python 3.x versions.
+Several examples in this learning path draw from the [python.org introductory tutorial](https://docs.python.org/3.5/tutorial/introduction.html) and examples given in the [Python 3 documentation](https://docs.python.org/3/) (with edits and amendments). This introduction to Python is written for Python 3.6.7 but is generally applicable to other Python 3.x versions.
 
 Original material from python.org is Copyright (c) 2001-2019 Python Software Foundation.
 
@@ -22,14 +27,6 @@ Jupyter Notebooks are divided into cells. Each cell contains either text written
 ## Comments
 
 Many of the examples in this notebook include comments. Comments in Python start with the hash character (#) and extend to the end of the physical line. A comment may appear at the start of a line or following white space or code, but not within a string literal. A hash character within a string literal is just a hash character. Because comments are there to clarify code and are not interpreted by Python, they may be omitted when typing in examples. For example:
-
-> [!Note]
-> **Sarah: Action items**
-> 
-> - Use the code style for comment that appear on a separate line and not with other syntax?
-> We might format these instances as plain text or another style.
->
-
  
 ```Python
 # this is the first comment
@@ -39,7 +36,8 @@ text = "# This is not a comment because it's inside quotes."
 print(text)
 ```
 
-## Try it Yourself
+## Try it yourself
+
 Open the TBD in VS Code. Copy and paste the code snippet from above into a Python code cell Run it and you should get the following 
 
 ```output
@@ -48,11 +46,10 @@ Open the TBD in VS Code. Copy and paste the code snippet from above into a Pytho
 
 Python is an interpreted language, which means that you can interactively use the interpreter to get immediate results. You can see this by using the Python interpreter as a simple calculator: type an expression, and you can see the output immediately.
 
-How can you see the results? The Python interpreter runs inside this notebook. To run the code inside a cell, either click the Run Cell button at the top of the window or press Ctrl+Enter. Try running the contents of the cell below. (Don't worry, we'll cover what the syntax of the Python code means later on in this module.)
+How can you see the results? The Python interpreter runs inside this notebook. To run the code inside a cell, either click the **Run Cell** button at the top of the window or press **Ctrl+Enter**. Try running the contents of the cell below. (Don't worry, we'll cover what the syntax of the Python code means later on in this module.)
 
 Open VS Code and type this into a Python cell:
 
- 
 ```Python
 print("Hello, world.")
 ```
@@ -64,7 +61,7 @@ Hello, world.
 ```
 
 ## Learning objectives
-<!-- List of learning objectives for this module -->
+
 In this module, you will:
 
 - TBD
@@ -72,6 +69,5 @@ In this module, you will:
 - TBD
 
 ## Prerequisites
-<!-- List of prerequisites for this module; otherwise, "None." -->
 
 None.
