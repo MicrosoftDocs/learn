@@ -40,7 +40,8 @@ countries = pd.DataFrame({'Population': population, 'Area': area})
 countries
 ```
 
-```Output```<br>
+```Output```
+
 |   | Population | Area |
 |---|---|---|
 | **Albania** | NaN | 28748 |
@@ -58,7 +59,8 @@ countries['Capital'] = ['Tirana', 'Paris', 'Berlin', 'Tokyo', 'Moscow']
 countries
 ```
 
-```Output```<br>
+```Output```
+
 |   | Population | Area | Capital |
 |---|---|---|---|
 | **Albania** | NaN | 28748 | Tirana |
@@ -74,7 +76,8 @@ countries = countries[['Capital', 'Area', 'Population']]
 countries
 ```
 
-```Output```<br>
+```Output```
+
 |   | Capital | Area |  Population |
 |---|---|---|---|
 | **Albania** | Tirana | 28748 | NaN |
@@ -90,7 +93,8 @@ countries['Population Density'] = countries['Population'] / countries['Area']
 countries
 ```
 
-```Output```<br>
+```Output```
+
 |   | Capital | Area |  Population | Population density |
 |---|---|---|---|---|
 | **Albania** | Tirana | 28748 | NaN | NaN |
@@ -160,7 +164,8 @@ countries['Debt-to-GDP Ratio'] = np.nan
 countries
 ```
 
-```Output```<br>
+```Output```
+
 |   | Capital | Area |  Population | Population density | Debt-to-GDP ratio |
 |---|---|---|---|---|---|
 | **Albania** | Tirana | 28748 | NaN | NaN | NaN |
@@ -179,7 +184,8 @@ countries['Debt-to-GDP Ratio'] = debt
 countries
 ```
 
-```Output```<br>
+```Output```
+
 |   | Capital | Area |  Population | Population density | Debt-to-GDP ratio |
 |---|---|---|---|---|---|
 | **Albania** | Tirana | 28748 | NaN | NaN | NaN |
@@ -195,7 +201,8 @@ del countries['Capital']
 countries
 ```
 
-```Output```<br>
+```Output```
+
 |   | Area |  Population | Population density | Debt-to-GDP ratio |
 |---|---|---|---|---|
 | **Albania** | 28748 | NaN | NaN | NaN |
@@ -210,7 +217,8 @@ In addition to their dictionary-like behavior, `DataFrames` also behave like two
 countries.T
 ```
 
-```Output```<br>
+```Output```
+
 |   | Albania |  France | Germany | Japan | Russia |
 |---|---|---|---|---|---|
 | **Area** | 28748.0 | 6.438010e+05 | 3.573860e+05 | 3.779720e+05 | 1.712520e+07 |
@@ -232,7 +240,8 @@ pd.DataFrame(np.random.rand(3, 2),
              index=['a', 'b', 'c'])
 ```
 
-```Output```<br>
+```Output```
+
 |   | foo | bar |
 |---|---|---|
 | **a** | 0.733086 | 0.708453 |

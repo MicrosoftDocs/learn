@@ -1,4 +1,4 @@
-As a refresher, a `Series` object acts in many ways like both a one-dimensional ndarray and a standard Python dictionary.
+As a refresher, a `Series` object acts in many ways like both a one-dimensional `ndarray` and a standard Python dictionary.
 
 > [!Note]
 > **Sarah: Action items**
