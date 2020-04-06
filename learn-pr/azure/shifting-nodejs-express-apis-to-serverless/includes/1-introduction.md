@@ -23,7 +23,7 @@ In this tutorial, you move from an Express API to a serverless architecture thro
 
 ## Planning the Shift to Serverless
 
-Before you shift your Express.js APIs to the serverless model, you should consider why you might consider shifting and what effort it takes for you to make the shift.
+Before you shift your Express.js APIs to the serverless model, consider why you might make these changes and what effort is required to update your app.
 
 Your Express application requires a server, which you must configure, maintain, and scale. You'll have a cost associated with deploying your server, too. Serverless eases some of this effort and cost for you.
 
