@@ -19,7 +19,7 @@ quiz:
     choices:
     - content: Risky sign-in report
       isCorrect: true
-      explanation: Information like device details and location details are included in risky sign-in reports.
+      explanation: Information like device details and location details is included in risky sign-in reports.
     - content: Risky user report
       isCorrect: false
       explanation: A risky user report shows things like lists of users at risk and a user's history of risky sign-ins.
