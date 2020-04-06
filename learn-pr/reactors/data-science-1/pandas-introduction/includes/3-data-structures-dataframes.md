@@ -40,7 +40,7 @@ countries = pd.DataFrame({'Population': population, 'Area': area})
 countries
 ```
 
-```Output```
+```Output```<br>
 |   | Population | Area |
 |---|---|---|
 | **Albania** | NaN | 28748 |
@@ -58,7 +58,7 @@ countries['Capital'] = ['Tirana', 'Paris', 'Berlin', 'Tokyo', 'Moscow']
 countries
 ```
 
-```Output```
+```Output```<br>
 |   | Population | Area | Capital |
 |---|---|---|---|
 | **Albania** | NaN | 28748 | Tirana |
@@ -74,7 +74,7 @@ countries = countries[['Capital', 'Area', 'Population']]
 countries
 ```
 
-```Output```
+```Output```<br>
 |   | Capital | Area |  Population |
 |---|---|---|---|
 | **Albania** | Tirana | 28748 | NaN |
@@ -90,7 +90,7 @@ countries['Population Density'] = countries['Population'] / countries['Area']
 countries
 ```
 
-```Output```
+```Output```<br>
 |   | Capital | Area |  Population | Population density |
 |---|---|---|---|---|
 | **Albania** | Tirana | 28748 | NaN | NaN |
@@ -145,7 +145,7 @@ countries.loc['Japan']['Area']
 377972
 ```
 
-Can you think of a way to return the area of Japan without using the `.loc` method?
+Can you think of a way to return the area of Japan without using the `.iloc` method?
 
 > [!Tip]
 > Try putting the column index first.
@@ -160,7 +160,7 @@ countries['Debt-to-GDP Ratio'] = np.nan
 countries
 ```
 
-```Output```
+```Output```<br>
 |   | Capital | Area |  Population | Population density | Debt-to-GDP ratio |
 |---|---|---|---|---|---|
 | **Albania** | Tirana | 28748 | NaN | NaN | NaN |
@@ -179,7 +179,7 @@ countries['Debt-to-GDP Ratio'] = debt
 countries
 ```
 
-```Output```
+```Output```<br>
 |   | Capital | Area |  Population | Population density | Debt-to-GDP ratio |
 |---|---|---|---|---|---|
 | **Albania** | Tirana | 28748 | NaN | NaN | NaN |
@@ -195,7 +195,7 @@ del countries['Capital']
 countries
 ```
 
-```Output```
+```Output```<br>
 |   | Area |  Population | Population density | Debt-to-GDP ratio |
 |---|---|---|---|---|
 | **Albania** | 28748 | NaN | NaN | NaN |
@@ -210,7 +210,7 @@ In addition to their dictionary-like behavior, `DataFrames` also behave like two
 countries.T
 ```
 
-```Output```
+```Output```<br>
 |   | Albania |  France | Germany | Japan | Russia |
 |---|---|---|---|---|---|
 | **Area** | 28748.0 | 6.438010e+05 | 3.573860e+05 | 3.779720e+05 | 1.712520e+07 |
@@ -232,7 +232,7 @@ pd.DataFrame(np.random.rand(3, 2),
              index=['a', 'b', 'c'])
 ```
 
-```Output```
+```Output```<br>
 |   | foo | bar |
 |---|---|---|
 | **a** | 0.733086 | 0.708453 |
