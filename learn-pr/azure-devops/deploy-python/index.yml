@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.azdo.deploy-python
+metadata:
+  title: Automate Python deployments with Azure Pipelines - Learn
+  description: Learn to implement a CI/CD pipeline for Python.
+  ms.date: 04/07/2020
+  author: tpetchel
+  ms.author: tpetchel
+  ms.topic: interactive-tutorial
+  #ms.learn-contact: tpetchel
+  ms.prod: learning-azure
+title: Automate Python deployments with Azure Pipelines
+summary: Learn to implement a CI/CD pipeline for Python.
+abstract: |
+  In this module, you will:
+  - Create Azure resources to support a Python solution.
+  - Create an Azure DevOps pipeline to build and release the solution to Azure.
+  - Monitor the build, release, and deployment of the project.
+prerequisites: |
+  - An Azure subscription
+  - An Azure DevOps organization
+  - A GitHub account
+iconUrl: /learn/achievements/azure-devops/create-multi-stage-pipeline.svg
+levels:
+- beginner
+roles:
+- devops-engineer
+- administrator
+- developer
+- solution-architect
+products:
+- azure
+- azure-devops
+units:
+- learn.azdo.deploy-python.1-introduction
+- learn.azdo.deploy-python.2-what-is-python
+- learn.azdo.deploy-python.3-set-up-environment
+- learn.azdo.deploy-python.4-deploy-python
+- learn.azdo.deploy-python.5-clean-up-environment
+- learn.azdo.deploy-python.6-summary
+badge:
+  uid: learn.azdo.deploy-python.badge
