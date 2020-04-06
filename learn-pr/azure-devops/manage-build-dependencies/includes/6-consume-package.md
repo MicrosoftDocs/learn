@@ -33,10 +33,10 @@ You see the directory and file tree in the file explorer.
 
     ```bash
     git fetch upstream models-package
-    git checkout models-package
+    git checkout -b models-package upstream/models-package
     ```
 
-    The format of this command enables you to get starter code from the Microsoft GitHub repository, known as `upstream`. Shortly, you'll push this branch up to your GitHub repository, known as `origin`.
+    The format of these commands enables you to get starter code from the Microsoft GitHub repository, known as `upstream`. Shortly, you'll push this branch up to your GitHub repository, known as `origin`.
 1. As an optional step, verify that the **Models** directory no longer exists in the file explorer.
 
     Instead, you see **Controllers**, **Views**, and other directories.
@@ -62,16 +62,16 @@ You see the directory and file tree in the file explorer.
 
 ## Add the pipeline configuration
 
-The `models-package` branch doesn't contain an initial **azure-pipelines.yml** file. Here's your chance to create it.
+The `models-package` branch doesn't contain an initial *azure-pipelines.yml* file. Here's your chance to create it.
 
-1. From Visual Studio Code, select **File** > **New File**. Then select **File** > **Save** to save the blank file as **azure-pipelines.yml** in your project's root directory, such as **~/mslearn-tailspin-spacegame-web**.
+1. From Visual Studio Code, select **File** > **New File**. Then select **File** > **Save** to save the blank file as *azure-pipelines.yml* in your project's root directory, such as *~/mslearn-tailspin-spacegame-web*.
 
     > [!IMPORTANT]
     > On Windows, ensure that you select **YAML** from the **Save as type** field.
 
-1. Copy the following YAML code into **azure-pipelines.yml**:
+1. Copy the following YAML code into *azure-pipelines.yml*:
 
-    [!code-yml[](code/6-azure-pipelines-yaml.yml?highlight=36-42)]
+    [!code-yml[](code/6-azure-pipelines-yaml.yml?highlight=39-45)]
 
     The highlighted code shows where the pipeline restores dependencies, and looks in your Azure Artifacts feed for the dependencies that might be there.
 
@@ -83,4 +83,4 @@ The `models-package` branch doesn't contain an initial **azure-pipelines.yml** f
     git push origin models-package
     ```
 
-1. Go to Azure Pipelines and watch the build run. The build picks up your Models package from Azure Artifacts, and builds the project successfully.
+1. Go to Microsoft Azure Pipelines and watch the build run. The build picks up your Models package from Azure Artifacts, and builds the project successfully.

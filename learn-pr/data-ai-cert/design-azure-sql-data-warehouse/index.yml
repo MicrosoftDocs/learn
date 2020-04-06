@@ -1,23 +1,22 @@
 ### YamlMime:Module
 uid: learn.data-ai.design-azure-sql-data-warehouse
 metadata:
-  title: Design a data warehouse with Azure SQL Data Warehouse
-  description: Learn how to create a data warehouse in Azure SQL Data Warehouse in minutes to take advantage of massively parallel processing (MPP) and run complex queries at petabyte scale quickly
+  title: Design a data warehouse with Azure Synapse Analytics
+  description: Learn how to create a data warehouse in Azure Synapse Analytics in minutes to take advantage of massively parallel processing (MPP) and run complex queries at petabyte scale quickly
   ms.date: 01/31/2019
-  author: ctesta-oneillmsft
-  ms.author: chris.testaoneill
+  author: wwlpublish
+  ms.author: chtestao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #ms.learn-contact: smmark
-title: Design a data warehouse with Azure SQL Data Warehouse
-summary: Learn how to create a data warehouse in Azure SQL Data Warehouse in minutes to take advantage of massively parallel processing (MPP) and run complex queries at petabyte scale quickly.
+title: Design a data warehouse with Azure Synapse Analytics
+summary: Learn how to create a data warehouse in Azure Synapse Analytics in minutes to take advantage of massively parallel processing (MPP) and run complex queries at petabyte scale quickly.
 abstract: | 
   In this module, you will:
+  - Learn how Azure Synapse Analytics works
   - Learn about the types of data warehousing solutions
-  - Learn how Azure SQL Data Warehouse works
   - Understand massively parallel processing (MPP) concepts
   - Compare table geometries
-  - Create a data warehouse in Azure SQL Data Warehouse
+  - Create a data warehouse in Azure Synapse Analytics
 prerequisites: None
 iconUrl: /learn/achievements/data-ai/design-azure-sql-data-warehouse-badge.svg
 levels:
@@ -27,11 +26,12 @@ roles:
 - solution-architect
 products:
 - azure
-- azure-sql-data-warehouse
+- azure-synapse-analytics
 units:
 - learn.data-ai.design-azure-sql-data-warehouse.introduction
-- learn.data-ai.design-azure-sql-data-warehouse.types-of-dw-solutions
 - learn.data-ai.design-azure-sql-data-warehouse.azure-sql-dw
+- learn.data-ai.design-azure-sql-data-warehouse.azure-sql-dw-features
+- learn.data-ai.design-azure-sql-data-warehouse.types-of-dw-solutions
 - learn.data-ai.design-azure-sql-data-warehouse.massively-parallel-processing
 - learn.data-ai.design-azure-sql-data-warehouse.table-geometries
 - learn.data-ai.design-azure-sql-data-warehouse.create-azure-dw-using-portal

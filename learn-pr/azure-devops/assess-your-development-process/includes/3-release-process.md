@@ -1,4 +1,11 @@
-The first step to setting up a DevOps practice is to assess your current process. Let's do that with the Tailspin team and see how DevOps can help.
+The first step to setting up a DevOps practice is to assess your current process. This means analyzing:
+
+* Your existing artifacts, such as deployment packages and NuGet, as well as your container repositories.
+* Your existing test management tools.
+* Your existing work management tools.
+* Recommending migration and integration strategies.
+
+Let's do that with the Tailspin team and see how DevOps can help.
 
 After Irwin the product manager leaves, Amita says, "We need help. I don't know when these fixes are due, but I do know it's soon. We're not set up for a fast turnaround. Plus, the new _Space Game_ website will have to wait until we get this mess solved &mdash; and that game is coming up fast."
 

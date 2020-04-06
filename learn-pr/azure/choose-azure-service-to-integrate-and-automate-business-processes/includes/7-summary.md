@@ -8,20 +8,18 @@ Some business processes are simple, but often they include challenges such as:
 
 As you have seen, Azure includes the following technologies that you can use to overcome these challenges:
 
-- Microsoft Flow
+- Microsoft Power Automate
 - Azure Logic Apps
 - Azure Functions
 - Azure App Service WebJobs
 
 Your choice of technology depends on whether you prefer a design-first or a code-first approach, and whether you have skilled developers to work on the project.
 
-Remember that you can use a combination of these technologies for any given project. That's because, for example, you can call a Microsoft Flow from an action within an Azure Logic App. These technologies constitute a rich toolbox that will help you improve quality in your organization by building strict business processes.
-
 ## Further reading
 
-- [What are Microsoft Flow, Logic Apps, Functions, and WebJobs?](https://docs.microsoft.com/azure/azure-functions/functions-compare-logic-apps-ms-flow-webjobs)
+- [Choose the right integration and automation services in Azure](https://docs.microsoft.com/azure/azure-functions/functions-compare-logic-apps-ms-flow-webjobs)
 - [What is Azure Logic Apps?](https://docs.microsoft.com/azure/logic-apps/logic-apps-overview)
-- [Get started with Microsoft Flow](https://docs.microsoft.com/flow/getting-started)
+- [Get started with Power Automate](https://docs.microsoft.com/power-automate/getting-started)
 - [Run Background tasks with WebJobs in Azure App Service](https://docs.microsoft.com/azure/app-service/webjobs-create)
 - [An introduction to Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-overview)
 - [Create a function that integrates with Azure Logic Apps](https://docs.microsoft.com/azure/azure-functions/functions-twitter-email)

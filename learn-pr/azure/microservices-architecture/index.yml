@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.microservices-architecture
+metadata:
+  title: Decompose a monolithic application into a microservices architecture
+  description: Improve development agility, deployment, fault tolerance, and scalability by modernizing your application with a microservices architecture.
+  ms.date: 08/30/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Decompose a monolithic application into a microservices architecture
+summary: Improve development agility, deployment, fault tolerance, and scalability by modernizing your application with a microservices architecture.
+abstract: | 
+  In this module, you will:
+  - Identify the properties and benefits of a microservices application
+  - Decompose a monolithic application into a microservices architecture
+prerequisites: | 
+  - Basic understanding of application and system architecture
+  - Basic knowledge of C#
+iconUrl: /learn/achievements/microservices-architecture.svg
+levels:
+- advanced
+roles:
+- solution-architect
+products:
+- azure
+- azure-functions
+- azure-app-service
+units:
+- learn.microservices-architecture.1-introduction
+- learn.microservices-architecture.2-monolith-microservices
+- learn.microservices-architecture.3-exercise-deploy-monolithic-app
+- learn.microservices-architecture.4-monolith-performance
+- learn.microservices-architecture.5-analyze-decompose
+- learn.microservices-architecture.6-exercise-refactor-microservice
+- learn.microservices-architecture.7-summary
+badge:
+  uid: learn.microservices-architecture.badge

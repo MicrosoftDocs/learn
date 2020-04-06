@@ -2,8 +2,6 @@ The university currently stores their data in a series of comma-delimited files.
 
 In this exercise, you'll create a database server and a single database by using the SQL Database service. Next, you'll create tables and import data into the database. Finally, you'll use the query editor and the `sqlcmd` utility to query the data.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 ## Examine the existing comma-delimited data
 
 1. In the Azure Cloud Shell window on the right side of your screen, run the following command to download the data files and application code for the university system.
@@ -105,9 +103,13 @@ Let's create the database and server to store the data for the app.
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) by using the account that you used to activate the sandbox.
 
-1. In the left pane, select **+ Create a resource**, **Databases**, and then **SQL Database**.
+1. From the Azure portal menu, select **Create a resource**.
 
-    ![The "New" page in the Azure portal showing the databases options that are available in the Azure Marketplace](../media/3-new-database-annotated.png)
+    ![Screenshot of Azure portal menu and Create a resource option.](../media/2-create-a-resource.png)
+
+1. Select **Databases**, and then select **SQL Database**.
+
+    ![Screenshot of the Databases and SQL Database options.](../media/2-databases-sql-database.png)
 
 1. On the **Create SQL Database** page, specify the values in the following table for the database properties.
 
@@ -115,23 +117,30 @@ Let's create the database and server to store the data for the app.
     |---|---|
     | Subscription | Concierge Subscription |
     | Resource Group | <rgn>[Sandbox resource group]</rgn> |
-    | Database name | The database must have a unique name. We suggest using something like **coursedatabase*NNN***, where *NNN* is a random number. |
+    | Database name | The database must have a unique name. We suggest using something like **coursedatabase<em>NNN</em>**, where *NNN* is a random number. |
     | Server | Select **Create new**, and enter the details that are in the following table. |
     | Want to use SQL elastic pool? | No |
     | Compute + storage | General purpose |
 
     For the server, specify the following details in the **New server** pane, and then click **Select**.
 
-    [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
-
     | Property  | Value  |
     |---|---|
-    | Server name | **courseserver*NNN***, where *NNN* is the same number that you selected for the database |
+    | Server name | **courseserver<em>NNN</em>**, where *NNN* is the same number that you selected for the database |
     | Server admin login | azuresql |
     | Password | Enter a password that meets the requirements. |
     | Confirm password | Confirm your password. |
-    | Location | Accept the default location. |
-    | Allow Azure services to access server | Checked |
+    | Location | Central US |
+
+1. Select **Next : Networking >**.
+
+1. On the **Networking** pane, configure the following values:
+
+    | Property  | Value  |
+    |---|---|
+    | Connectivity method | Public endpoint |
+    | Allow Azure services and resources to access this server | Yes |
+    | Add current client IP address | Yes |
 
 1. Select **Review + create**.
 
@@ -141,15 +150,15 @@ Let's create the database and server to store the data for the app.
 
 You can now create the tables to store the data from the .csv files.
 
-1. In pane on the left side of the Azure portal, select **SQL databases**.
+1. On the Azure portal menu, select **SQL databases**.
 
-1. On the **SQL databases** page, select **coursedatabase*NNN***.
+1. On the **SQL databases** page, select **coursedatabase<em>NNN</em>**.
 
-1. On the **coursedatabase*NNN*** page, select **Query editor**.
+1. On the **coursedatabase<em>NNN</em>** page, select **Query editor**.
 
     ![The database page in the Azure portal with the query editor option highlighted](../media/3-query-editor-annotated.png)
 
-1. On the **coursedatabase*NNN* - Query editor** page, enter the following details, and then select **OK** to connect to the database service.
+1. On the **coursedatabase<em>NNN</em> - Query editor** page, enter the following details, and then select **OK** to connect to the database service.
 
     | Property  | Value  |
     |---|---|
@@ -282,13 +291,13 @@ You can now create the tables to store the data from the .csv files.
 
 1. Return to the Azure portal.
 
-1. In the pane on the left side, select **SQL databases**.
+1. On the Azure portal menu, select **SQL databases**.
 
-1. On the **SQL databases** page, select **coursedatabase*NNN***.
+1. On the **SQL databases** page, select **coursedatabase<em>NNN</em>**.
 
-1. On the **coursedatabase*NNN*** page, under **Overview**, select **Query editor**.
+1. On the **coursedatabase<em>NNN</em>** page, under **Overview**, select **Query editor**.
 
-1. On the **coursedatabase*NNN* - Query editor** page, enter the following details, and then select **OK** to connect to the database service.
+1. On the **coursedatabase<em>NNN</em> - Query editor** page, enter the following details, and then select **OK** to connect to the database service.
 
     | Property  | Value  |
     |---|---|

@@ -2,7 +2,7 @@ Let's connect to our Linux VM with SSH, and configure Apache, so we have a runni
 
 ### Get the public IP address of the VM
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), ensure the **Overview** panel for the virtual machine that you created earlier is open. You can find the VM under **All Resources** if you need to open it. The overview panel allows you to
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), ensure the **Overview** panel for the virtual machine that you created earlier is open. You can find the VM under **All Resources** if you need to open it. The overview panel allows you to:
 
     - See if the VM is running
     - Stop or restart the VM

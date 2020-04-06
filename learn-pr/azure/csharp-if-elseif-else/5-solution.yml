@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.csharp-if-elseif-else.solution
+title: Solution
+metadata:
+  title: Solution
+  description: View one possible solution to the challenge in this module.
+  ms.date: 09/19/2019
+  author: bobtabor-msft
+  ms.author: rtabor
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 2
+azureSandbox: false
+interactive: csharp
+content: |
+  [!include[](includes/5-solution.md)]

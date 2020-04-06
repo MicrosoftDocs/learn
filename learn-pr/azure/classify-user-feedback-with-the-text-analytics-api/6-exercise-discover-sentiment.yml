@@ -5,12 +5,10 @@ metadata:
   title: Exercise - Call the Text Analytics API from an app
   description: We're ready to make calls to the Text Analytics API from our function. This lab adds the code to do just that.
   ms.date: 09/24/2018
-  author: AndrewJByrne
-  ms.author: anbyrne
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
-# interactive: azure-portal
 azureSandbox: true
 durationInMinutes: 9
 content: |

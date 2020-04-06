@@ -32,21 +32,23 @@ In this unit, the Azure SQL database's tables will be populated with data. You'l
 
     Inclusion of the preceding namespace resolves the reference to `OrderService` in the previous step.
 
+1. [!INCLUDE[dotnet build command](../../includes/dotnet-build-no-restore-command.md)]
+
 1. Run the following .NET Core CLI command to run the app in development mode:
 
-    ```bash
-    dotnet run --environment Development > $srcWorkingDirectory/ContosoPets.Api.log &
+    ```dotnetcli
+    dotnet ./bin/Debug/netcoreapp3.0/ContosoPets.Api.dll \
+        --environment Development \
+        > $srcWorkingDirectory/ContosoPets.Api.log &
     ```
 
     The preceding command:
 
-    * Restores the project's NuGet packages.
-    * Builds the project code.
     * Sets the hosting environment to *:::no-loc text="Development":::*.
-    * Hosts the web API with ASP.NET Core's Kestrel web server.
+    * Hosts the compiled web API DLL with ASP.NET Core's Kestrel web server.
     * Displays the background task's process ID.
 
-    .NET Core emits logging information and blocks command shell input. The command shell needs to be usable to test the running app. Therefore, the `dotnet run` output is redirected to a *:::no-loc text="ContosoPets.Api.log":::* text file. Additionally, the `&` runs the app as a background task to unblock command shell input.
+    .NET Core emits logging information and blocks command shell input. The command shell needs to be usable to test the running app. Therefore, the console output is redirected to a *:::no-loc text="ContosoPets.Api.log":::* text file. Additionally, the `&` runs the app as a background task to unblock command shell input.
 
     The web API is hosted at both `http://localhost:5000` and `https://localhost:5001`. This module uses the secure URL beginning with `https`.
 
@@ -56,7 +58,7 @@ In this unit, the Azure SQL database's tables will be populated with data. You'l
 1. Run the following command to test retrieval of a distinct order:
 
     ```bash
-    curl -k -s https://localhost:5001/api/Orders/2 | jq
+    curl -k -s https://localhost:5001/Orders/2 | jq
     ```
 
     The preceding command sends an HTTP GET request to the `GetById` action of `OrdersController` in *:::no-loc text="ContosoPets.Api":::*. The order corresponding to ID 2 is displayed in JSON format.
@@ -66,7 +68,7 @@ In this unit, the Azure SQL database's tables will be populated with data. You'l
     ```bash
     curl -k -i -X PUT \
         -H "Content-Length: 0" \
-        https://localhost:5001/api/Orders/2
+        https://localhost:5001/Orders/2
     ```
 
     The order from the previous step has shipped to the customer. The preceding code sends an HTTP PUT request to the `SetFulfilled` action of `OrdersController`. The `SetFulfilled` action calls `OrderService.SetFulfilled` in *:::no-loc text="ContosoPets.DataAccess":::*. An HTTP status code of 204 indicates success:
@@ -88,13 +90,13 @@ In this unit, the Azure SQL database's tables will be populated with data. You'l
     * Retrieve and display all orders:
 
         ```bash
-        curl -k -s https://localhost:5001/api/Orders | jq
+        curl -k -s https://localhost:5001/Orders | jq
         ```
 
     * Retrieve and display the specified order:
 
         ```bash
-        curl -k -s https://localhost:5001/api/Orders/1 | jq
+        curl -k -s https://localhost:5001/Orders/1 | jq
         ```
 
     * Set the fulfillment date on the specified order:
@@ -102,7 +104,7 @@ In this unit, the Azure SQL database's tables will be populated with data. You'l
         ```bash
         curl -k -i -X PUT \
             -H "Content-Length: 0" \
-            https://localhost:5001/api/Orders/1
+            https://localhost:5001/Orders/1
         ```
 
     * Create a new order:
@@ -110,7 +112,7 @@ In this unit, the Azure SQL database's tables will be populated with data. You'l
         ```bash
         curl -k -i -X POST \
             -H "Content-Type: application/json" \
-            https://localhost:5001/api/Orders \
+            https://localhost:5001/Orders \
             -d '{"CustomerId":2,"ProductOrder":[{"ProductId":1,"Quantity":3},{"ProductId":2,"Quantity":1}]}'
         ```
 
@@ -119,7 +121,7 @@ In this unit, the Azure SQL database's tables will be populated with data. You'l
     * Delete the specified order:
 
         ```bash
-        curl -k -i -X DELETE https://localhost:5001/api/Orders/1
+        curl -k -i -X DELETE https://localhost:5001/Orders/1
         ```
 
     * Observe changes in the database:

@@ -12,7 +12,7 @@ An image can be customized by starting a container with the base image and makin
 
 Manually completing the above process is time-consuming and error-prone. It could be scripted with a script language like Bash, but Docker provides a more effective way of automating image creation via a *Dockerfile*.
 
-A Dockerfile is a plain text file containing all the commands needed to build an image. Dockerfiles are written in a minimal scripting language designed for building and configuring images. documents the operations required to build an image starting with a base image.
+A Dockerfile is a plain text file containing all the commands needed to build an image. Dockerfiles are written in a minimal scripting language designed for building and configuring images, and documents the operations required to build an image starting with a base image.
 
 The following example shows a Dockerfile that builds a .NET Core 2.2 application and packages it into a new image.
 
@@ -33,7 +33,7 @@ In this file:
 - The **COPY** command copies files from the host computer to the container. The first argument (`myapp_code`) is a file or folder on the host computer. The second argument (`.`) specifies the name of the file or folder to act as the destination in the container. In this case, the destination is the current working directory (`/app`).
 - The **RUN** command executes a command in the container. Arguments to the RUN command are command-line commands.
 - The **EXPOSE** command creates configuration in the new image that specifies which ports are intended to be opened when the container is run. If the container is running a web app, it's common to EXPOSE port 80.
-- The **ENTRYPOINT** command specifies the operation the container should run when it starts. In this example, it runs the newly-built app. You specify the command to be run and each of its arguments as a string array.
+- The **ENTRYPOINT** command specifies the operation the container should run when it starts. In this example, it runs the newly built app. You specify the command to be run and each of its arguments as a string array.
 
 By convention, applications meant to be packaged as Docker images typically have a Dockerfile located in the root of their source code, and it's almost always named `Dockerfile`.
 

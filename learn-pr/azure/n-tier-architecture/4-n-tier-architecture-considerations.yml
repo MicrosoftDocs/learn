@@ -8,6 +8,7 @@ metadata:
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ROBOTS: NOINDEX
 title: Considerations for N-tier architectures
 durationInMinutes: 7
 content: |
@@ -19,7 +20,7 @@ quiz:
     choices:
     - content: 'Deploy larger virtual machines to each tier.'
       isCorrect: false
-      explanation: 'While increasing the size of virtual machines may improve performance, it does not miminize costs. As the load drops, the virtual machines remain the same size and your costs do not decrease.'
+      explanation: 'While increasing the size of virtual machines may improve performance, it does not minimize costs. As the load drops, the virtual machines remain the same size and your costs do not decrease.'
     - content: 'Use autoscaling to handle fluctuations in load.'
       isCorrect: true
       explanation: 'This is a good way to minimize your costs. As load increases or decreases, your compute resources can adjust with them, ensuring your costs are optimized to your load.'
@@ -27,7 +28,7 @@ quiz:
       isCorrect: false
       explanation: 'Placing an application behind a load balancer alone does not have a direct impact on performance or costs.'
 
-  - content: 'Which of the following would improve the security of an application?'
+  - content: 'Which of the following actions would improve the security of an application?'
     choices:
     - content: 'Restrict access to your data tier from the internet.'
       isCorrect: true

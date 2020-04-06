@@ -10,8 +10,7 @@ A standard Dockerfile provides build instructions. Azure Container Registry Task
 
 We'll use a new Dockerfile for our example.
 
-<!-- Activate the sandbox -->
-[!include[](../../../includes/azure-sandbox-activate.md)]
+[!include[](../../../includes/azure-exercise-subscription-prerequisite.md)]
 
 The first step is to create a new file named `Dockerfile`. You can use any text editor to edit the file. We'll use Cloud Shell Editor for this example.
 
@@ -43,7 +42,7 @@ The first step is to create a new file named `Dockerfile`. You can use any text 
     ```
 
     > [!NOTE]
-    > Don't forget the period `.` at the end of the preceding command. It represents the source directory containing the docker file, which in our case is the current directory. Since we didn't specify the name of a file with the --file parameter, the command looks for a file called **Dockerfile** in our current directory.
+    > Don't forget the period `.` at the end of the preceding command. It represents the source directory containing the docker file, which in our case is the current directory. Since we didn't specify the name of a file with the `--file` parameter, the command looks for a file called **Dockerfile** in our current directory.
 
 ## Verify the image
 
@@ -53,9 +52,9 @@ The first step is to create a new file named `Dockerfile`. You can use any text 
     az acr repository list --name $ACR_NAME --output table
     ```
 
-    The output from this command should look similar to the following:
-    
-    ```console
+    The output from this command should look similar to the following example:
+
+    ```output
     Result
     -------------
     helloacrtasks

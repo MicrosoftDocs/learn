@@ -24,6 +24,7 @@ levels:
 roles:
 - solution-architect
 - developer
+- security-engineer
 products:
 - azure
 - azure-active-directory

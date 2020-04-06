@@ -8,7 +8,6 @@ metadata:
   ms.author: mkitris
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 3
 content: |
   [!include[](includes/1-Introduction-to-IoT.md)]

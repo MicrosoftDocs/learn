@@ -4,9 +4,9 @@ title: Summary
 metadata:
   title: Summary
   description: Summary
-  ms.date: 12/26/2018
-  author: markjulmar
-  ms.author: smmark
+  ms.date: 12/20/2019
+  author: patridge
+  ms.author: adpatrid
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
@@ -23,11 +23,11 @@ quiz:
         explanation: "At this level, the cloud provider provides physical security to compute resources. However, it's your responsibility to patch and secure your operating systems and software, as well as configure your network to be secure."
       - content: "Platform as a service (PaaS)"
         isCorrect: false
-        explanation: "At this level, the cloud provider handles many security concerns, more than with other categories. This includes providing physical security and keeping operating systems patched and up to date."
+        explanation: "At this level, the cloud provider handles many security concerns, more than with other categories. The cloud provider handles physical security and keeping operating systems patched and up to date."
       - content: "Software as a service (SaaS)"
         isCorrect: false
         explanation: "At this level, the cloud provider handles most security concerns for you. Your main responsibility is to provide your organization's users with proper access to the software."
-    - content: "Which of these helps you most easily disable an account when an employee leaves your company?"
+    - content: "Which of these options helps you most easily disable an account when an employee leaves your company?"
       choices:
       - content: "Enforce multi-factor authentication (MFA)"
         isCorrect: false
@@ -38,7 +38,7 @@ quiz:
       - content: "Use single sign-on (SSO)"
         isCorrect: true
         explanation: "SSO centralizes user identity, so you can disable an inactive account in a single step."
-    - content: "Which of these is the _strongest_ way to protect sensitive customer data?"
+    - content: "Which of these approaches is the _strongest_ way to protect sensitive customer data?"
       choices:
       - content: "Encrypt data as it sits in your database"
         isCorrect: false
@@ -56,13 +56,13 @@ quiz:
         explanation: "DDoS protection is the correct answer, because it will help prevent DDoS attacks."
       - content: "Azure Firewall"
         isCorrect: false
-        explanation: "Azure Firewall is incorrect. It will helps control access to your network, but may not prevent DDoS attacks."
+        explanation: "Azure Firewall is incorrect. It will help control access to your network, but may not prevent DDoS attacks."
       - content: "Network Security Group"
         isCorrect: false
         explanation: "Network security group is incorrect, because while it will help protect access to your virtual network, it may not prevent a DDoS attack."
       - content: "Application Gateway"
         isCorrect: false
-        explanation: "Application Gateway is incorrect. While it will help make an application available and help protect it, and it also has a built in web application firewall, it won't prevent DDoS-style attacks."
+        explanation: "Application Gateway is incorrect. While it will help make an application available and help protect it, and it also has a built-in web application firewall, it won't prevent DDoS-style attacks."
     - content: "You want to store certificates in Azure to centrally manage them for your services. Which Azure service should you use?"
       choices:
       - content: "AIP"
@@ -70,7 +70,7 @@ quiz:
         explanation: "AIP is a cloud-based solution that helps an organization classify, and optionally, protect its documents and emails by applying labels."
       - content: "Azure AD"
         isCorrect: false
-        explanation: "Azure AD is Microsoft’s cloud-based identity and access management service that helps employees of an organization sign in and access resources."      
+        explanation: "Azure AD is Microsoft’s cloud-based identity and access management service that helps employees of an organization sign-in and access resources."
       - content: "Azure Key Vault"
         isCorrect: true
         explanation: "Azure Key Vault is the correct answer, because it is a centralized cloud service for storing application secrets, referred to as a secret store."

@@ -1,0 +1,35 @@
+### YamlMime:LearningPath
+uid: learn.wwl.build-oss-analytical-solutions-az-hdinsight
+metadata:
+  title: Building Open Source Software (OSS) Analytical Solutions with Azure HDInsight
+  description: Building Open Source Software (OSS) Analytical Solutions with Azure HDInsight
+  ms.date: 10/31/2019
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Building Open Source Software (OSS) Analytical Solutions with Azure HDInsight
+prerequisites: |
+  The following pre-requisite should be completed
+  - Successfully login to the Azure portal
+  - Understand the Azure storage options
+  - Understand the Azure compute options
+summary: |
+  In this learning path, the learner will be introduced to HDInsight and how to apply this technology to solve a range of real world challenges.
+iconUrl: /learn/achievements/building-oss-analytical-solutions-with-azure-hdinsight.svg
+levels:
+- intermediate
+roles:
+- data-engineer
+- data-scientist
+products:
+- azure-hdinsight
+modules:
+- learn.wwl.introduction-open-source-analytics-offering
+- learn.wwl.hdinsight-configuration-to-build-open-source-analytical-solutions
+- learn.wwl.creating-and-configuring-hdinsight-cluster
+- learn.wwl.perform-advanced-streaming-data-transformations-with-spark-kafka
+- learn.wwl.perform-zero-etl-analytics-hdinsight-interactive-query
+- learn.wwl.manage-enterprise-security-in-hdinsight
+trophy:
+  uid: learn.wwl.build-oss-analytical-solutions-az-hdinsight.trophy

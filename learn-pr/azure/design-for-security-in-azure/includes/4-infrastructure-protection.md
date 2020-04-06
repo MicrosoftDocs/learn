@@ -27,13 +27,33 @@ Management groups are an additional hierarchical level recently introduced into 
 
 The ability to flow roles through an arbitrarily defined subscription hierarchy also allows administrators to grant temporary access to an entire environment for authenticated users. For example, an auditor may require temporary read-only access to all subscriptions.
 
-![An illustration showing the hierarchal representation of role-based access in a management group.](../media/management_groups.png)
+:::image type="content" source="../media/management_groups.png" alt-text="An illustration showing the hierarchal representation of role-based access in a management group." loc-scope="other"::: <!-- no-loc -->
 
 ### Privileged Identity Management
 
 In addition to managing Azure resource access with RBAC, a comprehensive approach to infrastructure protection should consider including the ongoing auditing of role members as their organization changes and evolves. Azure AD Privileged Identity Management (PIM) is an additional paid-for offering that provides oversight of role assignments, self-service, and just-in-time role activation and Azure AD & Azure resource access reviews.
 
 ![Screenshot of Privileged identity management dashboard](../media/PIM_Dashboard.png)
+
+With the Azure AD Privileged Identity Management (PIM) service, you can manage, control, and monitor access to important resources in your organization. This includes access to resources in Azure AD; Azure; and other Microsoft Online Services, like Office 365 and Microsoft Intune. This control does not eliminate the need for users to carry out privileged operations in Azure AD, Azure, Office 365, and Software as a Service (SaaS) apps.
+
+Organizations can give users just-in-time (JIT) privileged access to Azure resources and Azure AD. Oversight is needed for what those users do with their administrator privileges. PIM helps mitigate the risk of excessive, unnecessary, or misused access rights.
+
+Here are some of the key features of PIM:
+
+* Providing just-in-time privileged access to Azure AD and Azure resources
+* Assigning time-bound access to resources by using start and end dates
+* Requiring approval to activate privileged roles
+* Enforcing Azure Multi-Factor Authentication (MFA) to activate any role
+* Using justification to understand why users activate
+* Getting notifications when privileged roles are activated
+* Conducting access reviews to ensure that users still need roles
+* Downloading an audit history for an internal or external audit
+
+To use PIM, you need one of the following paid or trial licenses:
+
+* Azure AD Premium P2
+* Enterprise Mobility + Security (EMS) E5
 
 ## Providing identities to services
 
@@ -55,7 +75,7 @@ For example, Lamna Healthcare can assign its deployment scripts to run authentic
 
 ### Managed identities for Azure resources
 
-The creation of service principals can be a tedious process, and there are a lot of touch points that can make maintaining them difficult. Manage identities for Azure resources are much easier and will do most of the work for you.
+The creation of service principals can be a tedious process, and there are a lot of touch points that can make maintaining them difficult. Managed identities for Azure resources are much easier and will do most of the work for you.
 
 A managed identity can be instantly created for any Azure service that supports it (the list is constantly growing). When you create a managed identity for a service, you are creating an account on the Azure AD tenant. Azure infrastructure will automatically take care of authenticating the service and managing the account. You can then use that account like any other AD account including securely letting the authenticated service access other Azure resources.
 

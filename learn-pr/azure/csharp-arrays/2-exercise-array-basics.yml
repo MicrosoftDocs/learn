@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.csharp-arrays.exercise-array-basics
+title: Exercise - Array Basics
+metadata:
+  title: Exercise - Array Basics
+  description: Use arrays to collect a sequence of data into a single data type.
+  ms.date: 09/19/2019
+  author: bobtabor-msft
+  ms.author: rtabor
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 12
+azureSandbox: false
+interactive: csharp
+content: |
+  [!include[](includes/2-exercise-array-basics.md)]

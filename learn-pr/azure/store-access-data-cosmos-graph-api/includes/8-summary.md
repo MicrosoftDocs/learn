@@ -13,4 +13,3 @@ You've learned how to:
 - [Introduction to Azure Cosmos DB: Gremlin API](https://docs.microsoft.com/azure/cosmos-db/graph-introduction)
 - [Quickstart: Create, query, and traverse an Azure Cosmos DB graph database using the Gremlin console](https://docs.microsoft.com/azure/cosmos-db/create-graph-gremlin-console)
 - [Tutorial: Query Azure Cosmos DB Gremlin API by using Gremlin](https://docs.microsoft.com/azure/cosmos-db/tutorial-query-graph)
- -[Source: Gremlin.Net](https://github.com/apache/tinkerpop/tree/master/gremlin-dotnet)

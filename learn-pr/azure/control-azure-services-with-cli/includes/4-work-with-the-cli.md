@@ -17,13 +17,13 @@ az find blob
 Example - Show me the most popular commands for an Azure CLI command group, such as `az vm`.
 
 ```azurecli
-az find 'az vm'
+az find "az vm"
 ```
 
 Example - Show me the most popular parameters and subcommands for an Azure CLI command.
 
 ```azurecli
-az find 'az vm create'
+az find "az vm create"
 ```
 
 If you already know the name of the command you want, the `--help` argument for that command will get you more detailed information on the command, and for a command group, a list of the available subcommands. So, with our storage example, here's how you can get a list of the subgroups and commands for managing blob storage:

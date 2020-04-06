@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.csharp-choose-data-type.exercise-reference-types
+title: Exercise - reference types
+metadata:
+  title: Exercise - reference types
+  description: Work with the `new` operator to learn how reference type data is allocated memory and referenced throughout its life time.
+  ms.date: 09/05/2019
+  author: bobtabor-msft
+  ms.author: rtabor
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+azureSandbox: false
+interactive: csharp
+content: |
+  [!include[](includes/5-exercise-reference-types.md)]

@@ -4,13 +4,12 @@ title: Implement a secure development process
 metadata:
   title: Implement a secure development process
   description: Learn how potential security vulnerabilities can affect your team and what tools you can use to see where you stand.
-  ms.date: 06/21/2019
+  ms.date: 01/21/2020
   author: tpetchel
   ms.author: thpetche
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
-durationInMinutes: 8
+durationInMinutes: 12
 content: |
   [!include[](includes/2-implement-secure-process.md)]
 quiz:

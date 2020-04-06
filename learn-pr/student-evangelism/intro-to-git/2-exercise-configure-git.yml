@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.introduction-to-git.2-exercise-configure-git
+title: Exercise - Try out Git
+metadata:
+  title: Exercise - Try out Git
+  description: Try out Git and configure it with your name and email
+  ms.date: 06/24/2019
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-git
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+azureSandbox: true
+interactive: bash
+content: |
+  [!include[](includes/2-exercise-configure-git.md)]

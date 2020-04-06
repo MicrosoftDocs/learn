@@ -2,13 +2,12 @@
 uid: learn.data-ai.provision-and-use-azure-dsvm
 metadata:
   title: Provision and use an Azure Data Science Virtual Machine
-  description: Provision and use an Azure Data Science Virtual Machine
+  description: Learn how to create an Azure Data Science Virtual Machine using the Azure portal with code, its output, and explanatory text integrated into a Jupyter Notebook.
   ms.date: 03/18/2019
-  author: bcafferky
-  ms.author: brcaffer
+  author: GraemeMalcolm
+  ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #ms.learn-contact: smmark
 title: Provision and use an Azure Data Science Virtual Machine
 summary: Provision and use an Azure Data Science Virtual Machine
 abstract: | 
@@ -18,12 +17,13 @@ abstract: |
   - Learn about the Jupyter Notebook
   - Create a Jupyter Notebook
   - Learn about the learning tools that are pre-installed on a Data Science Virtual Machine
-prerequisites: An Azure subscription
+prerequisites: None
 iconUrl: /learn/achievements/data-ai/provision-and-use-azure-dsvm-badge.svg
 levels:
 - beginner
 roles:
 - data-scientist
+- student
 products:
 - azure
 units:

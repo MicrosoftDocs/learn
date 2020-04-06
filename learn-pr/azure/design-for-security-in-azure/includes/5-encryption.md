@@ -48,15 +48,34 @@ Let's take a look at some ways that Azure enables you to encrypt data across ser
 
 ### Encrypting raw storage
 
-Azure Storage Service Encryption for data at rest helps you protect your data to meet your organizational security and compliance commitments. With this feature, the Azure storage platform automatically encrypts your data before persisting it to Azure Managed Disks, Azure Blob storage, Azure Files, or Azure Queue storage, and decrypts the data before retrieval. The handling of encryption, encryption at rest, decryption, and key management in Storage Service Encryption is transparent to applications using the services.
+Azure Storage Service Encryption (SSE) for data at rest helps you protect your data to meet your organizational security and compliance commitments. With this feature, the Azure storage platform automatically encrypts your data with 256-bit Advanced Encryption Standard (AES) encryption before persisting it to disk and decrypts the data during retrieval. This handling of encryption, encryption at rest, decryption, and key management in Storage Service Encryption is transparent to applications using the services - you don't need to add any code or turn on any features.
 
-For Lamna Healthcare, this means that whenever they are using services that support storage service encryption, their data is encrypted on the physical medium of storage. In the highly unlikely event that access to the physical disk is obtained, data will be unreadable since it has been encrypted as written to the physical disk.
+You can use Microsoft-managed encryption keys with SSE, or you can use your own encryption keys by selecting the option in the Azure portal as shown below.
+
+![Screenshot of the Azure portal showing the SSE always encrypted screen](../media/5-sse-always-encrypt.png)
+
+SSE automatically encrypts data in:
+
+- All Azure Storage services including Azure Managed Disks, Azure Blob storage, Azure Files, Azure Queue storage, and Azure Table storage
+- Both performance tiers (Standard and Premium)
+- Both deployment models (Resource Manager and classic)
+
+For Lamna Healthcare, SSE means that whenever they are using services that support storage service encryption, their data is encrypted on the physical medium of storage. In the highly unlikely event that access to the physical disk is obtained, data will be unreadable since it has been encrypted as written to the physical disk.
 
 ### Encrypting virtual machines
 
 Storage Service encryption provides low-level encryption protection for data written to physical disk, but how do you protect the virtual hard disks (VHD) of virtual machines? If a malicious attacker gained access to your Azure subscription and exfiltrated the VHDs of your virtual machines, how would you ensure they would be unable to access data stored on the VHD?
 
 Azure Disk Encryption (ADE) is a capability that helps you encrypt your Windows and Linux IaaS virtual machine disks. ADE leverages the industry standard BitLocker feature of Windows and the DM-Crypt feature of Linux to provide volume encryption for the OS and data disks. The solution is integrated with Azure Key Vault to help you control and manage the disk-encryption keys and secrets (and you can use managed identity for Azure services for accessing the key vault).
+
+Disk Encryption for Windows IaaS and Linux VMs is in General Availability in all Azure public regions and Azure Government regions for Standard VMs and VMs with Azure Premium Storage. When you apply the Disk Encryption management solution, you can satisfy the following business needs:
+
+1. IaaS VMs are secured at rest by using industry-standard encryption technology to address organizational security and compliance requirements.
+1. IaaS VMs boot under customer-controlled keys and policies. You can audit their usage in your key vault.
+
+In addition, if you use Azure Security Center, you're alerted if you have VMs that aren't encrypted. The alerts display as High Severity, and the recommendation is to encrypt these VMs as shown below.
+
+![Screenshot showing the warning from Azure Security Center to encrypt the VM disks in the subscription](../media/5-security-center-disk-encryption.png)
 
  Lamna Healthcare can apply ADE to their virtual machines to be sure any data stored on VHDs is secured to their organizational and compliance requirements. Because boot disks are also encrypted, they can control and audit usage.
 
@@ -70,6 +89,8 @@ TDE encrypts the storage of an entire database by using a symmetric key called t
 
 Since TDE is enabled by default, Lamna Healthcare can be confident they have the proper protections in place for data stored in their databases.
 
+For their on-premises Microsoft SQL Server databases, Lamna Healthcare has turned on the SQL Server Always Encrypted feature. Always Encrypted is designed to protect sensitive data, such as client personal information or financial data. This feature protects column data at rest and in transit by having the client application handle the encryption and decryption outside the SQL Server database through an installed driver. This allows Lamna Healthcare to minimize exposure of data as the database never works with unencrypted data. The Always Encrypted client driver performs the actual encryption and decryption processes, rewriting the T-SQL queries as necessary to encrypt data passed to the DB and decrypt the results, while keeping these operations transparent to the application.
+
 ### Encrypting secrets
 
 We've seen that the encryption services all use keys to encrypt and decrypt data, so how do we ensure that the keys themselves are secure? Lamna Healthcare may also have passwords, connection strings, or other sensitive pieces of information that they need to securely store.
@@ -79,6 +100,12 @@ Azure Key Vault is a cloud service that works as a secure secrets store. Key Vau
 Because Azure AD identities can be granted access to use Azure Key Vault secrets, applications using managed identities for Azure services can automatically and seamlessly acquire the secrets they need.
 
 Lamna Healthcare can use Key Vault for the storage of all their sensitive application information, including the TLS certificates they use to secure communication between systems.
+
+### Encrypting backups
+
+Encrypting all their data won't help Lamna Healthcare if the daily backups they take of their systems aren't also encrypted. Lamna Healthcare uses Azure Backup to backup data from their on-premises machines and Azure VMs. Azure Backup lets the IT department back up and recover data at a granular level, including backups of files, folders, machine system state, and app-aware data.
+
+Luckily for our hard-working IT department, there's no work to do here as all our data is stored encrypted at rest. Azure Backup encrypts local backups using AES256 and a key created from the passphrase configured by the administrator. The data is securely transferred to Azure using HTTPS, and once there, the already-encrypted data is stored on disk. Azure VMs are also automatically encrypted at rest as they use Azure Storage for their disks.
 
 ## Encryption at Lamna Healthcare
 

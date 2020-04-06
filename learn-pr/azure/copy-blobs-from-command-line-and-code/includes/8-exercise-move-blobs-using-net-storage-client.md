@@ -1,14 +1,23 @@
-The .NET Client library provides support for Azure storage. You can use this library to write your own custom applications tha move data around Azure storage. 
+The .NET Client library provides support for Azure storage. You can use this library to write your own custom applications tha move data around Azure storage.
 
 In this exercise, you'll see how to write an application that can migrate blobs from hot to cool storage.
-
-[!include[](../../../includes/azure-sandbox-activate.md)]
 
 ## Setup
 
 We'll start by downloading and building an existing .NET Core application. You may have cloned the sample git repository in a previous exercise.
 
-1. In the Cloud Shell window, run the following command to download the sample source code. 
+1. Before we begin, you need to repopulate your hot storage account using the command you ran in a previous exercise. Run this command in the Cloud Shell window to give yourself new blobs to manage.
+
+    ```azurecli
+    az storage blob upload-batch \
+      --destination specifications \
+      --pattern "*.md" \
+      --source ~/sample/specifications \
+      --account-name $HOT_STORAGE_NAME \
+      --account-key $HOT_KEY
+    ```
+
+1. Next, run the following command to download the sample source code for this exercise.
 
     ```bash
     git clone https://github.com/MicrosoftDocs/mslearn-copy-move-blobs-from-containers-or-storage-accounts sample
@@ -87,7 +96,7 @@ We'll start by downloading and building an existing .NET Core application. You m
         // Iterate through the blobs in the source container
         do
         {
-            BlobResultSegment segment = await 
+            BlobResultSegment segment = await
                 blobContainer.ListBlobsSegmentedAsync(prefix: "", currentToken: token);
 
             foreach (CloudBlockBlob blobItem in segment.Results)
@@ -155,25 +164,33 @@ We'll start by downloading and building an existing .NET Core application. You m
 
 ## Test the ArchiveBlobs application
 
-1. Using the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), move to your source storage account.
+1. Using the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), move to your source (hot) storage account.
 
-1. Under **Settings**, click **Access keys**. Make a copy of the connection string for **key** in Notepad.
+1. Under **Settings**, click **Access keys**. Make a copy of the connection string for **key** in a text file on your local computer.
 
-1. Click **Overview**.
-
-1. In the **Services** section, click **Blobs**.
+1. Under **Blob service**, click **Containers**.
 
 1. Click the **specifications** container.
 
+In order to have some blobs with a different modified date from the batch upload time, you will modified a few of them.
+
+1. From the **specifications** container, click one of the specification files (for example, _specifications04.md_).
+
+1. Click **Edit** from the blob panel and add adding any text you wish.
+
+1. Click **Save** to commit the changes to the blob.
+
+1. Repeat this for one or two additional blob files.
+
+With several blobs showing newer modification dates, you can differentiate between them when you run the .NET app.
+
 1. In the list of blobs in this container, note the modification date for the blobs. Select a date and time that is roughly in the middle of the modification date for the blobs (some blobs should have a modification time before your selected date, and others after).
 
-1. Using the portal, move to your destination storage account.
+1. Using the portal, move to your destination (cold) storage account.
 
-1. Under **Settings**, click **Access keys**. Make a copy of the connection string for **key** in Notepad.
+1. Under **Settings**, click **Access keys**. Make a copy of the connection string for **key** in a text file on your local computer.
 
-1. Click **Overview**.
-
-1. In the **Services** section, click **Blobs**.
+1. In the **Blob service** section, click **Containers**.
 
 1. Click **+ Container**, and create a new container named **archive-test**.
 
@@ -187,12 +204,10 @@ We'll start by downloading and building an existing .NET Core application. You m
 
 1. When the application has finished, return to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
 
-1. Move to your destination storage account.
+1. Move to your destination (cold) storage account.
 
 1. Browse the **archive-test** folder. Verify it contains the blobs that were moved.
 
-1. Move to your source storage account.
+1. Move to your source (hot) storage account.
 
-2. Browse the **specifications** folder. Verify the blobs that were transferred have been removed from this folder.
- 
-  
+1. Browse the **specifications** folder. Verify the blobs that were transferred have been removed from this folder.

@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.azdo.run-functional-tests-azure-pipelines.2-what-is-functional-testing
+title: What is functional testing?
+metadata:
+  title: What is functional testing?
+  description: Define functional tests and identify some popular kinds of tests you can run.
+  ms.date: 01/21/2020
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-what-is-functional-testing.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Your customer service team receives too many refund requests from customers who accidentally make purchases from your mobile application. Customers report that the **Purchase** button and **Cancel** button are too close together. Which kind of functional testing might help catch this sort of problem before it reaches your users?"
+    choices:
+    - content: "UI testing"
+      isCorrect: false
+      explanation: "Although UI testing can help you verify that the buttons appear and function correctly, it doesn't help you verify that the user has a good experience."
+    - content: "Integration testing"
+      isCorrect: false
+      explanation: "Although integration testing can tell you whether the **Purchase** button successfully fulfills the order, it doesn't help you verify that the user has a good experience."
+    - content: "Usability testing"
+      isCorrect: true
+      explanation: "Usability testing helps you validate your application from the user's perspective. You can combine usability testing with user-acceptance testing to get feedback from real customers."
+  - content: "Your user experience (UX) team proposed some drastic changes to your website's home page. Which kind of functional testing can you use to ensure that each button on the page performs the correct function?"
+    choices:
+    - content: "UI testing"
+      isCorrect: true
+      explanation: "UI tests help verify that the *sequence*, or order, of user interactions leads to the expected result."
+    - content: "Integration testing"
+      isCorrect: false
+      explanation: "Although integration testing can verify that the UI receives data correctly from say, a database, it doesn't verify that the result functions as expected for the user."
+    - content: "Unit testing"
+      isCorrect: false
+      explanation: "Although unit testing can verify that your application's business logic produces the correct result given certain inputs, it doesn't verify that the result functions as expected for the user."
+  - content: "Which kind of functional testing is typically performed by humans, rather than through automation?"
+    choices:
+    - content: "Unit testing"
+      isCorrect: false
+      explanation: "Unit tests are best expressed through code. Tests that are expressed through code are better candidates for automation than manual processes."
+    - content: "Usability testing"
+      isCorrect: true
+      explanation: "Usability testing is typically performed by humans to validate that the software is intuitive and meets the user's needs."
+    - content: "Smoke testing"
+      isCorrect: false
+      explanation: "Although you might occasionally smoke-test changes manually before you deploy, smoke tests are usually an automated process. If your smoke tests fail, you know that no further testing is required."

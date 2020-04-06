@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.control-network-traffic-flow-with-routes.7-summary
+metadata:
+  title: Summary
+  description: Summary
+  ms.date: 08/28/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Summary
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-summary.md)]

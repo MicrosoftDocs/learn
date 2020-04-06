@@ -253,4 +253,4 @@ Your team decides to implement these requirements in the *:::no-loc text="Contos
     * If the order is found, the parent record in the `Orders` table and all children in `ProductOrders` are deleted from the database. A value of `true` is returned.
     * If order isn't found, `false` is returned.
 
-1. [!INCLUDE[dotnet build command](../../includes/dotnet-build-command.md)]
+1. [!INCLUDE[dotnet build command](../../includes/dotnet-build-no-restore-command.md)]

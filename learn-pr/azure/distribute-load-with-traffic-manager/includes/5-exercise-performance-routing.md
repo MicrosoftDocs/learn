@@ -1,96 +1,44 @@
-Your network architect would like to take advantage of performance routing to ensure customers have the best performance. They need you to deploy your company's music streaming app to two more regions and configure performance routing.
+Your network architect would like to ensure customers have the best performance. By using the performance routing method in Traffic Manager, you can ensure that users access the location closest to them. Let's configure an instance of Traffic Manager to use performance routing.
 
-![World map that shows the four endpoints Central USA, West USA, East Asia, and Northern Europe](../media/5-performance-exercise.svg)
-
-Now, you'll deploy the application to two more regions. Then, you'll create a new Traffic Manager instance to use all four endpoints.
-
-## Deploy additional instances and configure Traffic Manager
-
-1. Create two new endpoints in Central US and North Europe by deploying the application to new instances of Azure App Service in those regions.
-
-    ```azurecli
-    CENTRALAPP="MusicStore-CentralUS-$RANDOM"
-
-    az appservice plan create \
-        --resource-group <rgn>[sandbox resource group name]</rgn>  \
-        --name MusicStore-CentralUS-Plan \
-        --location centralus \
-        --sku S1
-
-    az webapp create \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
-        --name $CENTRALAPP \
-        --plan MusicStore-CentralUS-Plan \
-        --runtime "node|10.6" \
-        --deployment-source-url https://github.com/MicrosoftDocs/mslearn-distribute-load-with-traffic-manager
-
-    EUROPEAPP="MusicStore-Europe-$RANDOM"
-
-    az appservice plan create \
-        --resource-group <rgn>[sandbox resource group name]</rgn>  \
-        --name MusicStore-Europe-Plan \
-        --location northeurope \
-        --sku S1
-
-    az webapp create \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
-        --name $EUROPEAPP \
-        --plan MusicStore-Europe-Plan \
-        --runtime "node|10.6" \
-        --deployment-source-url https://github.com/MicrosoftDocs/mslearn-distribute-load-with-traffic-manager
-    ```
+## Create a Traffic Manager profile using performance routing
 
 1. Create a new Traffic Manager profile that is set up with performance routing.
 
     ```azurecli
         az network traffic-manager profile create \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group <rgn>Sandbox resource group </rgn> \
         --name TM-MusicStream-Performance \
         --routing-method Performance \
         --unique-dns-name TM-MusicStream-Performance-$RANDOM \
         --output table
     ```
 
-1. Create four new endpoints that can use the deployed four web apps.
+1. Create two new endpoints that that point to the public IP addresses of the virutal machines.
 
     ```azurecli
-    CentralId=$(az webapp show \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
-        --name $CENTRALAPP \
+    WestId=$(az network public-ip show \
+        --resource-group <rgn>Sandbox resource group </rgn> \
+        --name westus2-vm-nic-pip \
         --query id \
         --out tsv)
 
     az network traffic-manager endpoint create \
-        --resource-group <rgn>[sandbox resource group name]</rgn>  \
+        --resource-group <rgn>Sandbox resource group </rgn> \
         --profile-name TM-MusicStream-Performance \
-        --name "Central-US" \
-        --type azureEndpoints \
-        --target-resource-id $CentralId
-
-    EuropeId=$(az webapp show \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
-        --name $EUROPEAPP \
-        --query id \
-        --out tsv)
-
-    az network traffic-manager endpoint create \
-        --resource-group <rgn>[sandbox resource group name]</rgn>  \
-        --profile-name TM-MusicStream-Performance \
-        --name "Europe" \
-        --type azureEndpoints \
-        --target-resource-id $EuropeId
-
-    az network traffic-manager endpoint create \
-        --resource-group <rgn>[sandbox resource group name]</rgn>  \
-        --profile-name TM-MusicStream-Performance \
-        --name "West-US" \
+        --name "WestUS" \
         --type azureEndpoints \
         --target-resource-id $WestId
 
+    EastId=$(az network public-ip show \
+        --resource-group <rgn>Sandbox resource group </rgn> \
+        --name eastasia-vm-nic-pip \
+        --query id \
+        --out tsv)
+
     az network traffic-manager endpoint create \
-        --resource-group <rgn>[sandbox resource group name]</rgn>  \
+        --resource-group <rgn>Sandbox resource group </rgn> \
         --profile-name TM-MusicStream-Performance \
-        --name "East-Asia" \
+        --name "EastAsia" \
         --type azureEndpoints \
         --target-resource-id $EastId
     ```
@@ -101,7 +49,7 @@ Now, you'll deploy the application to two more regions. Then, you'll create a ne
 
     ```bash
     echo http://$(az network traffic-manager profile show \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group <rgn>Sandbox resource group </rgn> \
         --name TM-MusicStream-Performance \
         --query dnsConfig.fqdn \
         --output tsv)
@@ -115,7 +63,7 @@ Now, you'll deploy the application to two more regions. Then, you'll create a ne
 
     ```bash
     nslookup $(az network traffic-manager profile show \
-            --resource-group <rgn>[sandbox resource group name]</rgn> \
+            --resource-group <rgn>Sandbox resource group </rgn> \
             --name TM-MusicStream-Performance \
             --query dnsConfig.fqdn \
             --output tsv)
@@ -125,17 +73,9 @@ Now, you'll deploy the application to two more regions. Then, you'll create a ne
 
     ```output
     Non-authoritative answer:
-    tm-musicstream-performance-13522.trafficmanager.net
-    canonical name = musicstore-europe-23644.azurewebsites.net.
-
-    musicstore-europe-23644.azurewebsites.net
-    canonical name = waws-prod-db3-129.sip.azurewebsites.windows.net.
-
-    waws-prod-db3-129.sip.azurewebsites.windows.net
-    canonical name = waws-prod-db3-129.cloudapp.net.
-
-    Name:   waws-prod-db3-129.cloudapp.net
-    Address: 23.100.56.27
+    tm-musicstream-performance-29605.trafficmanager.net     canonical name = westus2-vm-rmzkcs3kmupuq.westus2.cloudapp.azure.com.
+    Name:   westus2-vm-rmzkcs3kmupuq.westus2.cloudapp.azure.com
+    Address: 13.66.168.61
     ```
 
 If your customers have two endpoints that have equal network latency, they might be routed to either endpoint. Refresh the web page to see if you are served the same endpoint.

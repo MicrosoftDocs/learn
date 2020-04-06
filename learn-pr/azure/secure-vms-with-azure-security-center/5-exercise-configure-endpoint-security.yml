@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-security.secure-vms-with-security-center.exercise-configure-endpoint-security
+title: Exercise - configure malware detection
+metadata:
+  title: Exercise - configure malware detection
+  description: Exercise - configure malware detection
+  ms.date: 09/30/2019
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-exercise-configure-endpoint-security.md)]

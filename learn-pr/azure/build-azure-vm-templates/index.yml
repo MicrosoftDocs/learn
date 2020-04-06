@@ -4,10 +4,9 @@ metadata:
   title: Build Azure Resource Manager templates
   description: Learn how Resource Manager templates express your deployments as code, enabling you to deploy faster and more reliably. 
   ms.date: 09/24/2018
-  author: tpetchel
-  ms.author: thpetche
+  author: cwatson-cat
+  ms.author: cwatson
   ms.topic: interactive-tutorial
-  #ms.learn-contact: thpetche
   ms.prod: learning-azure
 title: Build Azure Resource Manager templates
 summary: Learn how Resource Manager templates express your deployments as code, enabling you to deploy faster and more reliably. 
@@ -29,6 +28,7 @@ products:
 - azure
 - azure-clis
 - azure-virtual-machines
+- azure-resource-manager
 units:
 - learn.build-azure-vm-templates.1-introduction
 - learn.build-azure-vm-templates.2-define-templates

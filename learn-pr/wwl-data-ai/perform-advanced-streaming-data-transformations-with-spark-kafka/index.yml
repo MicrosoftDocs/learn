@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.wwl.perform-advanced-streaming-data-transformations-with-spark-kafka
+metadata:
+  title: Perform advanced streaming data transformations with Apache Spark and Kafka in Azure HDInsight
+  description: "Perform advanced streaming data transformations with Apache Spark and Kafka in Azure HDInsight"
+  ms.date: 02/28/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Perform advanced streaming data transformations with Apache Spark and Kafka in Azure HDInsight
+summary: In this module, you will learn how to create real-time streaming data analytics pipelines and applications on the cloud by using Azure HDInsight with Apache Kafka and Apache Spark.
+abstract: |
+  At the end of this module you will understand:
+  - When to use Apache Spark and Kafka with HDInsight
+  - How Spark Structured Streaming works
+  - The architecture of a Kafka and Spark solution
+  - How to provision HDInsight, create a Kafka producer, and stream Kafka data to a Jupyter notebook
+  - How to replicate data to a secondary cluster
+prerequisites: |
+  The following pre-requisite should be completed:
+  * Successfully login to the Azure portal
+  * Understand the Azure storage options
+  * Understand the Azure compute options
+  * Create and configure a HDInsight Cluster in the Azure portal
+iconUrl: /learn/achievements/perform-advanced-streaming-data-transformations.svg
+levels:
+- intermediate
+roles:
+- data-engineer
+- data-scientist
+products:
+- azure-hdinsight
+units:
+- learn.wwl.perform-advanced-streaming-data-transformations-with-spark-kafka.introduction
+- learn.wwl.perform-advanced-streaming-data-transformations-with-spark-kafka.use-hdinsight-spark-kafka
+- learn.wwl.perform-advanced-streaming-data-transformations-with-spark-kafka.stream-data-with-apache-kafka
+- learn.wwl.perform-advanced-streaming-data-transformations-with-spark-kafka.describe-spark-structured-streaming
+- learn.wwl.perform-advanced-streaming-data-transformations-with-spark-kafka.create-kafka-spark-architecture
+- learn.wwl.perform-advanced-streaming-data-transformations-with-spark-kafka.exercise-provision-hdinsight-perform-data-transformations
+- learn.wwl.perform-advanced-streaming-data-transformations-with-spark-kafka.exercise-create-kafka-producer
+- learn.wwl.perform-advanced-streaming-data-transformations-with-spark-kafka.exercise-stream-kafka-data-to-jupyter-notebook-window-data
+- learn.wwl.perform-advanced-streaming-data-transformations-with-spark-kafka.replicate-data-to-secondary-cluster
+- learn.wwl.perform-advanced-streaming-data-transformations-with-spark-kafka.knowledge-check
+- learn.wwl.perform-advanced-streaming-data-transformations-with-spark-kafka.summary
+badge:
+  uid: learn.wwl.perform-advanced-streaming-data-transformations-with-spark-kafka.badge

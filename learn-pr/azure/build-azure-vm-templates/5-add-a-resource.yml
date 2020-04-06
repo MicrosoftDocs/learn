@@ -4,9 +4,9 @@ title: Add a resource to the template
 metadata:
   title: Add a resource to the template
   description: Examine the requirements for your VM's web server and learn how to build resources you can add to your templates
-  ms.date: 09/24/2018
-  author: tpetchel
-  ms.author: thpetche
+  ms.date: 01/16/2020
+  author: cwatson-cat
+  ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX

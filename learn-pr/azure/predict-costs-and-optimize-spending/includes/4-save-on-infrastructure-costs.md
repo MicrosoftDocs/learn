@@ -7,6 +7,7 @@ Visual Studio subscribers can activate a monthly credit benefit that allows you 
 When you activate this benefit, you will own a separate Azure subscription under your account with a monthly credit balance that renews each month while you remain an active Visual Studio subscriber.
 
 The credit amount varies based on the program level, and you should check the documentation for more details on how much credit you receive for your specific subscription level. For example:
+
 - $50 per month for VS Professional
 - $150 per month for Enterprise
 
@@ -29,11 +30,11 @@ You are notified by email when you hit the spending limit for your subscription.
 
 ## Use reserved instances
 
-If you have VM workloads that are static and predictable, particularly ones that run 24x7x365, using reserved instances is a fantastic way to potentially save up to 70-80%, depending on the VM size. The following illustration shows that using Azure reserved instances saves you up to 72% and using reserved instance plus Azure Hybrid Benefit saves up to 80% in costs.
+If you have VM workloads that are static and predictable, particularly ones that run non-stop all year long, using reserved instances is a fantastic way to potentially save up to 70-80% of the pay-as-you-go cost, depending on the VM size. The following illustration shows that using Azure reserved instances saves you up to 72% and using reserved instance plus Azure Hybrid Benefit saves up to 80% in costs.
 
 ![An illustration showing cost benefits of using Azure reserved instances and Azure Hybrid Benefits compared to pay-as-you-go.](../media/4-savings-coins.png)
 
-Reserved instances are purchased in one-year or three-year terms, with payment required for the full term up front. After it's purchased, Microsoft matches up the reservation to running instances and decrements the hours from your reservation. Reservations can be purchased through the Azure portal. And because reserved instances are a compute discount, they are available for both Windows and Linux VMs.
+You commit to reserved instances in one-year or three-year terms. Payment can be made in full for the entire commitment period, or the commitment can be billed monthly. After it's reserved, Microsoft matches up the reservation to running instances and decrements the hours from your reservation. Reservations can be purchased through the Azure portal. And because reserved instances are a compute discount, they are available for both Windows and Linux VMs.
 
 ## Choose low-cost locations and regions
 
@@ -44,7 +45,7 @@ The cost of Azure products, services, and resources can vary across locations an
 
 ## Research available cost-saving offers
 
-Keep up-to-date with the latest Azure customer and subscription offers, and switch to offers that provide the most significant cost-saving benefit.
+Keep up to date with the latest Azure customer and subscription offers, and switch to offers that provide the most significant cost-saving benefit.
 
 You can check the [Azure Updates page](https://azure.microsoft.com/updates/) for information about the latest updates to Azure products, services, and features, as well as product roadmaps and announcements.
 
@@ -67,7 +68,7 @@ This approach is an excellent strategy for development environments. It's often 
 
 You can also use the auto-shutdown feature on a virtual machine to schedule automated shutdowns.
 
-![Screenshot of the Azure portal showing the Auto-shutdown section of a virtual machine blade with a shutdown time enabled.](../media/4-vm-auto-shutdown.png)
+![Screenshot of the Azure portal showing the Auto-shutdown section of a virtual machine pane with a shutdown time enabled.](../media/4-vm-auto-shutdown.png)
 
 ## Delete unused virtual machines
 

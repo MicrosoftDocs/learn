@@ -28,9 +28,9 @@ Use these resources to discover more.
 >To open a resource link, right-click and select "Open in a new tab or window," that way, you can check out the resource and easily return to the module tab to unlock your achievement when done.
 
 Learn more about IoT Products:
-- [Azure IoT](http://azure.com/iot)
+- [Azure IoT](https://azure.com/iot)
 
-Learn more about IoT Reference Architecture: 
+Learn more about IoT Reference Architecture:
 - [Azure IoT Reference Architecture](https://aka.ms/iotrefarchitecture)
 
 Learn more about IoT customer Stories:
@@ -39,6 +39,11 @@ Learn more about IoT customer Stories:
 - [Alaska Department of Transportation](https://customers.microsoft.com/story/alaskadotpf-government-azure-iot)
 - [Royal Dutch Shell](https://customers.microsoft.com/story/shell-mining-oil-gas-azure-databricks)
 - [Schneider Electric](https://customers.microsoft.com/story/schneider-electric-process-mfg-resources-azure-machine-learning)
-- [ExxonMobil](http://customers.microsoft.com/story/exxonmobil-mining-oil-gas-azure)
+- [ExxonMobil](https://customers.microsoft.com/story/exxonmobil-mining-oil-gas-azure)
 - [Kohler](https://customers.microsoft.com/story/kohler-konnect-azure-iot)
 - [Roche Diagnostics](https://customers.microsoft.com/story/roche-diagnostics)
+
+## Learn more with a Channel 9 video series
+
+- [IoT 101](https://channel9.msdn.com/Series/IoT-101/?&WT.mc_id=EducationalIoT-c9-niner&azure-portal=true)
+

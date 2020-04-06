@@ -1,6 +1,6 @@
 Here, you create a container in Azure and expose it to the Internet with a fully qualified domain name (FQDN).
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
+[!include[](../../../includes/azure-exercise-subscription-prerequisite.md)]
 
 ## Why use Azure Container Instances?
 
@@ -17,26 +17,23 @@ For scenarios where you need full container orchestration, including service dis
 
 ## Create a container
 
-You create a container by providing a name, a Docker image, and an Azure resource group to the `az container create` command. You can optionally expose the container to the Internet by specifying a DNS name label. In this example, you deploy a container that hosts a small web app. You can also select the location to place the image - you'll use the **East US** region, but you can change it to a location close to you from the following list.
+1. Sign into the [Azure portal](https://portal.azure.com/?azure-portal=true) with your Azure subscription.
 
-<!-- TODO: fix region list so it's not hardcoded here -->
-The free sandbox allows you to create resources in a subset of Azure's global regions. Select a region from the following list when creating any resources:
+1. Open the Azure Cloud Shell from the Azure portal using the Cloud Shell icon.
 
-:::row:::
-    :::column:::
-        - westus2
-        - southcentralus
-        - centralus
-        - eastus
-        - westeurope
-        - southeastasia
-        - centralindia
-    :::column-end:::
-:::row-end:::
+    :::image type="icon" source="../media/2-portal-cloudshell-access.png":::
+
+1. Create a new resource group with the name **learn-deploy-aci-rg** so that it will be easier to clean up these resources when you are finished with the module. If you choose a different resource group name, remember it for the rest of the exercises in this module. You also need to choose a region in which you want to create the resource group, for example **East US**.
+
+    ```azurecli
+    az group create --name learn-deploy-aci-rg --location eastus
+    ```
+
+    You create a container by providing a name, a Docker image, and an Azure resource group to the `az container create` command. You can optionally expose the container to the Internet by specifying a DNS name label. In this example, you deploy a container that hosts a small web app. You can also select the location to place the image - you'll use the **East US** region, but you can change it to a location close to you.
 
 1. You provide a DNS name to expose your container to the Internet. Your DNS name must be unique. For learning purposes, run this command from Cloud Shell to create a Bash variable that holds a unique name.
 
-    ```bash
+    ```azurecli
     DNS_NAME_LABEL=aci-demo-$RANDOM
     ```
 
@@ -44,7 +41,7 @@ The free sandbox allows you to create resources in a subset of Azure's global re
 
     ```azurecli
     az container create \
-      --resource-group <rgn>[sandbox resource group name]</rgn> \
+      --resource-group learn-deploy-aci-rg \
       --name mycontainer \
       --image microsoft/aci-helloworld \
       --ports 80 \
@@ -58,7 +55,7 @@ The free sandbox allows you to create resources in a subset of Azure's global re
 
     ```azurecli
     az container show \
-      --resource-group <rgn>[sandbox resource group name]</rgn> \
+      --resource-group learn-deploy-aci-rg \
       --name mycontainer \
       --query "{FQDN:ipAddress.fqdn,ProvisioningState:provisioningState}" \
       --out table
@@ -76,7 +73,7 @@ The free sandbox allows you to create resources in a subset of Azure's global re
 
 1. From a browser, navigate to your container's FQDN to see it running. You see this.
 
-    ![The sample Node.js container app running in a browser](../media/2-browser.png)
+    :::image type="content" source="../media/2-browser.png" alt-text="Screenshot of the sample Node.js container app running in a browser." loc-scope="other"::: <!-- no-loc -->
 
 ## Summary
 

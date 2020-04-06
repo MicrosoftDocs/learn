@@ -4,9 +4,6 @@ Your company has an API called **PrintFramerAPI** that calculates the cost of a 
 
 In this exercise, we'll try out Swagger and Swashbuckle, in a real-world example. First, let's create an ASP.NET Core Web API project.
 
-<!-- Activate the sandbox -->
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 ## Download the sample web API project to Cloud Shell
 
 1. Run the following `git clone` command in the Cloud Shell to clone the sample Web API Project from GitHub. 
@@ -67,7 +64,7 @@ Since we created the API, we knew its shape, but an external developer who wants
     dotnet add package Swashbuckle.AspNetCore
     ```
 
-1. Open the code editor window for the project using the following command.
+1. Open the Cloud Shell editor for the project using the following command.
 
     ```bash
     code .

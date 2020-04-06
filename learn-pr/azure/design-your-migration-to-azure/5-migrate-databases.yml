@@ -2,7 +2,7 @@
 uid: learn.design-your-migration-to-azure.5-migrate-databases
 metadata:
   title: Migrate databases with Azure Database Migration Service
-  description: See how to use the Azure Database Migration Service, which provides a way to move on-premises SQL server databases efficiently to the Azure cloud.
+  description: Learn how to use Azure Database Migration Service, which provides a way to move on-premises SQL Server databases efficiently to the Azure cloud platform.
   ms.date: 07/30/2019
   author: jboeshart
   ms.author: jaboes
@@ -16,25 +16,25 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "When choosing a destination for your on-premise database, which destination will guarantee 100% compatibility with the SQL Server Database Engine, and includes all the other features of SQL Server?"
+  - content: "When you're choosing a destination for your on-premises database, which destination guarantees 100% compatibility with the SQL Server Database Engine and includes all the other features of SQL Server?"
     choices:
-    - content: "Azure SQL Managed Instance"
+    - content: "Azure SQL Database managed instance"
       isCorrect: false
-      explanation: "Managed instances offer 100% database engine compatibility, but are missing some minimal features of the full on-premises SQL Server product"
-    - content: "Single Azure SQL DB"
+      explanation: "Managed instances offer 100% database engine compatibility, but are missing some minor features of the full, on-premises SQL Server product."
+    - content: "Single Azure SQL Database instance"
       isCorrect: false
-      explanation: "Azure SQL DB is a great choice for simplicity and cost effectiveness, but is missing complex features from the SQL Server like the ability to run SQL Agent jobs"
-    - content: "SQL Server on Azure VM"
+      explanation: "Azure SQL Database is a great choice for simplicity and cost effectiveness, but is missing advanced features of SQL Server such as the ability to run SQL Agent jobs."
+    - content: "SQL Server on Azure Virtual Machines"
       isCorrect: true
-      explanation: "Running SQL Server inside an Azure Virtual Machine offers you the ability to life and shift your on-premises SQL Server workloads, as you are running your chosen version of SQL Server in a VM."
-  - content: "Name the two permissions that are required to be added to the credentials used to connect to your source SQL instance during a planned migration"
+      explanation: "Running SQL Server inside an Azure Virtual Machines instance offers you the ability to lift and shift your on-premises SQL Server workloads, because you're running your chosen version of SQL Server in a VM."
+  - content: "Name the two permissions that must be added to the credentials used to connect to your source SQL Server instance during a planned migration."
     choices:
-    - content: "Control Services, Control Database"
+    - content: "CONTROL SERVICES, CONTROL DATABASE"
       isCorrect: false
-      explanation: "Control Services isn't a valid permission."
-    - content: "Control Server, Control Database"
+      explanation: "CONTROL SERVICES isn't a valid permission."
+    - content: "CONTROL SERVER, CONTROL DATABASE"
       isCorrect: true
-      explanation: "These are both valid permissions that need to be added to the account used to connect to the source SQL instance during a planned migration."
-    - content: "Control Services, Control Data"
+      explanation: "These permissions must both be added to the account that's used to connect to the source SQL Server instance during a planned migration."
+    - content: "CONTROL SERVICES, CONTROL DATA"
       isCorrect: false
-      explanation: "Neither Control Services or Control Data are supported permissions."
+      explanation: "Neither CONTROL SERVICES nor CONTROL DATA is a supported permission."

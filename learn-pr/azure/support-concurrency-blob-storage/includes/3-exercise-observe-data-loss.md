@@ -8,9 +8,6 @@ The newsroom chief has been receiving complaints from their reporters that stori
 
 In this exercise, you'll deploy the app and observe the last writer wins issues created by concurrent updates.
 
-<!-- Remind students to activate the sandbox -->
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 ## Create an Azure storage account and store the connection string
 
 To experiment with Blob storage concurrency code, we'll start by creating a Blob storage account using the Cloud Shell.

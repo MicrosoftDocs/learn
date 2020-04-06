@@ -2,11 +2,11 @@
 uid: learn.monitor-azure-cosmos-db.8-index-exercise
 title: Exercise - Measure the impact of index policy choice
 metadata:
-  title: Learn how to measure the impact of index policy choices for Azure Cosmos DB
+  title: Exercise - Learn how to measure the impact of index policy choices for Azure Cosmos DB
   description: Interactive demonstration of the impact of index configuration
   ms.date: 02/25/2019
-  author: natke
-  ms.author: nakersha
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX

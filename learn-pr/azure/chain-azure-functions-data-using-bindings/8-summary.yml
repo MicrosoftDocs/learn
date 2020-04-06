@@ -5,11 +5,10 @@ metadata:
   title: What we've learned
   description: Summary
   ms.date: 09/24/2018
-  author: andrewjbyrne
-  ms.author: anbyrne
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 5
 content: |
   [!include[](includes/8-summary.md)]
@@ -30,19 +29,19 @@ quiz:
       explanation: "Bindings provide a declarative way to connect to data. They let you avoid the complexity of coding connection logic like making a database connection or invoking web API interfaces."
 
   - content: "What is the name of the file that contains function configuration data?"
-    choices: 
+    choices:
     - content: "config.txt"
       isCorrect: false
       explanation: "The configuration is written in JSON."
     - content: "config.json"
       isCorrect: false
       explanation: "It is a JSON file, but this is not the correct name."
-    - content: "function.json" 
+    - content: "function.json"
       isCorrect: true
       explanation: "The configuration is named `function.json`, which contains JSON configuration data such as binding declarations."
 
   - content: "How many triggers must a function have?"
-    choices: 
+    choices:
     - content: "Zero"
       isCorrect: false
       explanation: "A function must have exactly one trigger."
@@ -52,16 +51,3 @@ quiz:
     - content: "Two"
       isCorrect: false
       explanation: "A function must have exactly one trigger."
-
-  - content: Which of the following lines of JavaScript writes "hello" to an Azure Queue Storage queue using a function parameter called **myQueueItem**?
-    choices: 
-    - content: context.myQueueItem = "hello";
-      isCorrect: false
-      explanation: This is the correct parameter name, but it needs to be accessed through the context of the object.
-    - content: context.bindings.myQueueItem = "hello";
-      isCorrect: true
-      explanation: context.bindings returns a named object that contains all your input and output data. 
-    - content: myQueueItem = "hello";
-      isCorrect: false
-      explanation: This is the correct parameter name, but it needs to be accessed through the context of the object.
- 

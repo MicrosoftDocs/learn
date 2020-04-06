@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.organize-blobs-properties-metadata.add-blob-metadata-using-azure-tools-and-code
-title: Add blob metadata using azure tools and code
+title: Exercise - Add blob metadata using azure tools and code
 metadata:
-  title: Add blob metadata using azure tools and code
+  title: Exercise - Add blob metadata using azure tools and code
   description: Add blob metadata using azure tools and code
   ms.date: 04/26/2019
   author: rmcmurray

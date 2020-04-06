@@ -1,0 +1,53 @@
+### YamlMime:Module
+#LP name: Introduction to the Cloud with Carnegie Mellon
+uid: learn.cmu-cloud-admin.overview-of-the-cloud.cmu-cloud-admin-overview
+metadata:
+  title: Foundations of cloud computing for administrators
+  description: Cloud Admin course from Dr. Majd Sakr at Carnegie Mellon University. Learn about the cloud, including the history, building blocks, and types on your way to becoming a Cloud Administrator.
+  ms.date: 08/15/2019
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  showCreativeCommonsFooter: true
+title: Foundations of cloud computing for administrators
+summary: Learn about the cloud, including the history, building blocks, and types on your way to becoming a Cloud Administrator.
+abstract: | 
+  In this module you will:
+  - Explain the concept of cloud computing
+  - Briefly understand how computing systems across domains dealt with scale before the cloud
+  - Briefly recall the recent history of cloud computing, illustrating its evolution
+  - List some of the enabling technologies in cloud computing, and discuss their significance
+  - Recognize cloud service models such as IaaS, PaaS, and SaaS and differentiate between them
+  - Enumerate the different types of clouds, and compare and contrast them
+  - List some of the common cloud providers and the features offered in their cloud stacks
+  - Articulate the economic benefits of the cloud paradigm for cloud users and cloud service providers
+  - Discuss some of the advantages and disadvantages of the cloud paradigm
+  - Define SLAs and SLOs and describe their importance in Cloud Computing
+  - Recall popular cloud use case scenarios
+
+  This content is provided in partnership with Dr. Majd Sakr and Carnegie Mellon University.
+prerequisites: None
+iconUrl: /learn/achievements/cmu-cloud-admin/cloud-admin-overview.svg
+levels:
+- beginner
+roles:
+- administrator
+- student
+products:
+- azure
+units:
+- learn.cmu-cloud-admin.overview-of-the-cloud.cmu-cloud-admin-overview.00-intro
+- learn.cmu-cloud-admin.overview-of-the-cloud.cmu-cloud-admin-overview.01-define-cloud-computing
+- learn.cmu-cloud-admin.overview-of-the-cloud.cmu-cloud-admin-overview.02-before-the-cloud
+- learn.cmu-cloud-admin.overview-of-the-cloud.cmu-cloud-admin-overview.03-evolution
+- learn.cmu-cloud-admin.overview-of-the-cloud.cmu-cloud-admin-overview.04-building-blocks
+- learn.cmu-cloud-admin.overview-of-the-cloud.cmu-cloud-admin-overview.05-cloud-types
+- learn.cmu-cloud-admin.overview-of-the-cloud.cmu-cloud-admin-overview.06-cloud-providers
+- learn.cmu-cloud-admin.overview-of-the-cloud.cmu-cloud-admin-overview.07-economics
+- learn.cmu-cloud-admin.overview-of-the-cloud.cmu-cloud-admin-overview.08-pros-cons
+- learn.cmu-cloud-admin.overview-of-the-cloud.cmu-cloud-admin-overview.09-sla
+- learn.cmu-cloud-admin.overview-of-the-cloud.cmu-cloud-admin-overview.10-use-cases
+- learn.cmu-cloud-admin.overview-of-the-cloud.cmu-cloud-admin-overview.11-summary
+badge:
+  uid: learn.cmu-cloud-admin.overview-of-the-cloud.cmu-cloud-admin-overview.badge

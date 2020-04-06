@@ -1,14 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.capture-page-load-times-application-insights.4-view-application-insights-metrics
-title: Viewing Application Insights metrics in the Azure portal
+title: View Application Insights metrics in the Azure portal
 metadata:
-  title: Viewing Application Insights metrics in the Azure portal
+  title: View Application Insights metrics in the Azure portal
   description: Learn how to use the rich visualization tools in the Azure portal to investigate web app telemetry.
   ms.date: 01/08/2019
   author: adrianstevens
   ms.author: adrianstevens
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ROBOTS: NOINDEX
 durationInMinutes: 10
 content: |
   [!include[](includes/4-view-application-insights-metrics.md)]

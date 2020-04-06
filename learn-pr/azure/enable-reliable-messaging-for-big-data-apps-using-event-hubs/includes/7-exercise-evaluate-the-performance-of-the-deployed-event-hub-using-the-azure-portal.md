@@ -1,10 +1,10 @@
-In this unit, you'll use the Azure portal to verify your Event Hub is working and performing according to the desired expectations. You'll also test how Event Hub messaging works when it's temporarily unavailable and use Event Hubs metrics to check the performance of your Event Hub.
+In this unit, you'll use the Azure portal to verify your Event Hub is working according to the wanted expectations. You'll also test how Event Hub messaging works when it's temporarily unavailable and use Event Hubs metrics to check the performance of your Event Hub.
 
 ## View Event Hub activity
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-1. Find your Event Hub, using the Search bar, and open it.
+1. Find your Event Hub using the Search bar, and open it as we did in the previous exercise.
 
 1. On the Overview page, view the message counts.
 
@@ -48,7 +48,7 @@ Use the following steps to see what happens when an application sends messages t
 
 1. When messages stop being displayed to the console, press <kbd>ENTER</kbd>.
 
-1. Back in the Azure portal, go back to your Event Hub Namespace. If you are still on the Event Hub page, you can use the breadcrumb on the top of the screen to go backwards. Or you can search for the namespace and select it.
+1. Back in the Azure portal, go back to your Event Hub Namespace. If you're still on the Event Hub page, you can use the breadcrumb on the top of the screen to go backwards. Or you can search for the namespace and select it.
 
 1. Click **MONITORING** > **Metrics (preview)**.
 

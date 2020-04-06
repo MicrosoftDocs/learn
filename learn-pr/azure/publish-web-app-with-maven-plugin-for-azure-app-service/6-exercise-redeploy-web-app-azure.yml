@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.publish-app-with-maven-plugin-for-azure-web-apps.exercise-redeploy-web-app-azure
+title: Exercise - Redeploy your web app to Azure App Service
+metadata:
+  title: Exercise - Redeploy your web app to Azure App Service
+  description: In this exercise, you'll update your web app and redeploy it to Azure App Service.
+  ms.date: 03/10/2020
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+interactive: bash
+azureSandbox: true
+content: |
+  [!include[](includes/6-exercise-redeploy-web-app-azure.md)]

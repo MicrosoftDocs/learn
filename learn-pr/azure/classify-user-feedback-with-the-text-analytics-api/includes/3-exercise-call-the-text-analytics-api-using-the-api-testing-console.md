@@ -1,16 +1,14 @@
 To see the Text Analytics API in action, let's make some calls using the built-in API testing console tool located in the online reference documentation. Before we do that, we'll need an access key to make those calls.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 ## Create an access key
 
 Every call to Text Analytics API requires a subscription key. Often called an access key, it is used to validate that you have access to make the call. We'll use the Azure portal to grab a key.
 
-1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
+1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you used to activate the sandbox.
 
-1. Click **Create a resource**.
+1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
 
-1. In the **Search the Marketplace** search box, type in *text analytics* and hit return.
+1. In the **Search the Marketplace** search box, type in *text analytics* and hit the <kbd>Enter</kbd> or <kbd>Return</kbd> key.
 
 1. Select **Text Analytics** in the search results and then select the **Create** button in the bottom right of the screen.
 
@@ -18,14 +16,11 @@ Every call to Text Analytics API requires a subscription key. Often called an ac
 
     |Property  | Value  | Description  |
     |---------|---------|---------|
-    |Name     |    MyTextAnalyticsAPIAccount     |  The name of the Cognitive Services account. We recommend using a descriptive name. Valid characters are `a-z`, `0-9`, and `-`.    |
+    |Name     |    *Choose a unique name*     |  The name of the Cognitive Services account. We recommend using a descriptive name. Valid characters are `a-z`, `0-9`, and `-`.    |
     |Subscription     |  Concierge Subscription    |   The subscription under which this new Cognitive Services API account with **Text Analytics API** is created.      |
-    |Location     |  *choose a region from the dropdown*       |  Since you're using the free sandbox, select a location from the dropdown that is **also** on the sandbox region list shown below.  |
+    |Location     |  *Choose a region from the dropdown*       |  Select a location from the dropdown.  |
     |Pricing tier     | **F0 Free**     |   The cost of your Cognitive Services account depends on the actual usage and the options you choose. We recommend selecting the free tier for our purposes here.      |
     |Resource group     |  Select **Use existing** and choose <rgn>[sandbox resource group name]</rgn>       |  Name for the new resource group in which to create your Cognitive Services Text Analytics API account.       |
-
-    ### Sandbox region list
-    [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
     > [!TIP]
     > Remember the location you selected when creating the Text Analytics cognitive services account. You'll use it to make API calls shortly. 
@@ -85,24 +80,25 @@ We'll pass in our subscription key, or access key, in the **ocp-Apim-Subscriptio
 
     In the Headers section of the user interface, we set the access, or subscription, key in the header of our request.
 
-    ![Screenshot of headers section.](../media/2-marker.PNG)
+    :::image type="content" source="../media/2-marker.png" alt-text="Screenshot of headers section." loc-scope="azure-text-analytics":::
 
     Next, we have the request body section, which holds a **documents** array. Each document in the array has three properties. The properties are *"language"*, *"id"*, and *"text"*. The *"id"* is a number in this example, but it can be anything you want as long as it's unique in the documents array. In this example, we're also passing in documents written in three different languages. Over 15 languages are supported in the Sentiment feature of the Text Analytics API. For more information, check out [Supported languages in the Text Analytics API](https://docs.microsoft.com/azure/cognitive-services/text-analytics/text-analytics-supported-languages). The maximum size of a single document is 5,000 characters, and one request can have up to 1,000 documents.
 
-    ![Screenshot of Request Body section](../media/3-marker.PNG)
+    :::image type="content" source="../media/3-marker.png" alt-text="Screenshot of Request Body section." loc-scope="azure-text-analytics":::
 
     The complete request, including the headers and the request URL are displayed in the next section. In this example, you can see that the requests are routed to a URL that begins with `westus`. The URL differs depending on the location you selected when you created your Text Analytics account.
 
-    ![Screenshot of section number four showing the request URL.](../media/4-marker.PNG)
-    ![Screenshot of the section number five showing detailed HTTP request.](../media/5-marker.PNG)
+    :::image type="content" source="../media/4-marker.png" alt-text="Screenshot of section number four showing the request URL." loc-scope="azure-text-analytics":::
 
-    Then we have information about the response. In the example, we see that the request was a success and code `200` was returned. We can also see that the round trip took 38 ms.
+    :::image type="content" source="../media/5-marker.png" alt-text="Screenshot of section number five showing the detailed HTTP request." loc-scope="azure-text-analytics":::
 
-    ![Screenshot of section number five showing the response status](../media/6-marker.PNG)
+    Then we have information about the response. In the example, we see that the request was a success and code `200` was returned.
+
+    :::image type="content" source="../media/6-marker.png" alt-text="Screenshot of section number five showing the response status." loc-scope="azure-text-analytics":::
 
     Finally, we see the response to our request. The response holds the insight the Text Analytics API had about our documents. An array of documents is returned to us, without the original text. We get back an *"id"* and *"score"* for each document. The API returns a numeric score between 0 and 1. Scores close to 1 indicate positive sentiment, while scores close to 0 indicate negative sentiment. A score of 0.5 indicates the lack of sentiment, a neutral statement. In this example, we have two pretty positive documents and one negative document.
 
-    ![Screenshot of the section number five showing the response content.](../media/7-marker.PNG)
+    :::image type="content" source="../media/7-marker.png" alt-text="Screenshot of the section number five showing the response content." loc-scope="azure-text-analytics":::
 
 Congratulations! You've made your first call to the Text Analytics API without writing a line of code. Feel free to stay in the console and try out more calls. Here are some suggestions:
 

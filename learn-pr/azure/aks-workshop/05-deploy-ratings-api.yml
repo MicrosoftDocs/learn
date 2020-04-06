@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.aks-workshop.05-deploy-ratings-api
+metadata:
+  title: Deploy the ratings API
+  description: Deploy the ratings API
+  ms.date: 01/30/2020
+  author: sabbour
+  ms.author: asabbour
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Deploy the ratings API
+durationInMinutes: 20
+content: |
+  [!include[](includes/05-deploy-ratings-api.md)]

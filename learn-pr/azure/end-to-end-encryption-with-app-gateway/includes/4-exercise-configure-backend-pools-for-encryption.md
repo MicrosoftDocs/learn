@@ -8,7 +8,15 @@ The following image highlights the elements you'll configure in this exercise. Y
 
 ## Deploy a virtual machine and an application gateway
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
+1. Open the [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true) in your browser, and log in to the directory with access to the subscription you want to create resources in.
+
+1. Run the following command in the Cloud Shell to create a variable to store your resource group name, and a resource group for your resources. Replace `<resource group name>` with a name for your resource group, and `<location>` with the Azure region you'd like to deploy your resources in.
+
+    ```azurecli
+    export rgName=<resource group name>
+
+    az group create --name $rgName --location <location>
+    ```
 
 1. In Azure Cloud Shell, run the following command to download the source code for the shipping portal.
 
@@ -22,10 +30,9 @@ The following image highlights the elements you'll configure in this exercise. Y
     cd shippingportal
     ```
 
-1. Run the following commands to create a variable named `rgName` that references the sandbox resource group. Execute the setup script to create the virtual machine, certificates, and application gateway.
+1. Run the following setup script to create the virtual machine, certificates, and application gateway.
 
     ```bash
-    export rgName=<rgn>[Sandbox resource group]</rgn>
     bash setup-infra.sh
     ```
 
@@ -39,7 +46,7 @@ The following image highlights the elements you'll configure in this exercise. Y
     ```bash
     echo https://"$(az vm show \
       --name webservervm1 \
-      --resource-group <rgn>[Sandbox resource group]</rgn> \
+      --resource-group $rgName \
       --show-details \
       --query [publicIps] \
       --output tsv)"
@@ -61,7 +68,7 @@ The following image highlights the elements you'll configure in this exercise. Y
 
     ```bash
     privateip="$(az vm list-ip-addresses \
-      --resource-group <rgn>[Sandbox resource group]</rgn> \
+      --resource-group $rgName \
       --name webservervm1 \
       --query "[0].virtualMachine.network.privateIpAddresses[0]" \
       --output tsv)"
@@ -71,7 +78,7 @@ The following image highlights the elements you'll configure in this exercise. Y
 
     ```azurecli
     az network application-gateway address-pool create \
-      --resource-group <rgn>[Sandbox resource group]</rgn> \
+      --resource-group $rgName \
       --gateway-name gw-shipping \
       --name ap-backend \
       --servers $privateip
@@ -81,7 +88,7 @@ The following image highlights the elements you'll configure in this exercise. Y
 
     ```azurecli
     az network application-gateway root-cert create \
-      --resource-group <rgn>[Sandbox resource group]</rgn> \
+      --resource-group $rgName \
       --gateway-name gw-shipping \
       --name shipping-root-cert \
       --cert-file server-config/shipping-ssl.crt
@@ -91,7 +98,7 @@ The following image highlights the elements you'll configure in this exercise. Y
 
     ```azurecli
     az network application-gateway http-settings create \
-      --resource-group <rgn>[Sandbox resource group]</rgn> \
+      --resource-group $rgName \
       --gateway-name gw-shipping \
       --name https-settings \
       --port 443 \
@@ -102,10 +109,10 @@ The following image highlights the elements you'll configure in this exercise. Y
 1. Run the following commands to set the trusted certificate for the backend pool to the certificate installed on the backend VM.
 
     ```azurecli
-    export rgID="$(az group show --name <rgn>[Sandbox resource group]</rgn> --query id --output tsv)"
+    export rgID="$(az group show --name $rgName --query id --output tsv)"
 
     az network application-gateway http-settings update \
-        --resource-group <rgn>[Sandbox resource group]</rgn> \
+        --resource-group $rgName \
         --gateway-name gw-shipping \
         --name https-settings \
         --set trustedRootCertificates='[{"id": "'$rgID'/providers/Microsoft.Network/applicationGateways/gw-shipping/trustedRootCertificates/shipping-root-cert"}]'
