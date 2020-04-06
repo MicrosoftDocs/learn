@@ -121,7 +121,7 @@ Require administrators to register custom applications.
 1. Sign in to the Azure portal.
 1. On the left, select **Azure Active Directory** > **Users**
 1. Go to **User settings**.
-1. Ensure that **USer can register applications** is set to **No**.
+1. Ensure that **User can register applications** is set to **No**.
 
     ![Screenshot showing the Azure portal in the AAD users section showing app registration turned off](../media/2-app-registrations.png)
 

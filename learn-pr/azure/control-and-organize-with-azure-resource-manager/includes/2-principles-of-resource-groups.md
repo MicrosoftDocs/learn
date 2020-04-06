@@ -71,17 +71,9 @@ You don't have any resources in this resource group yet, so the list at the bott
 
 1. Name the virtual network `msftlearn-vnet1`. For the **Resource group** drop-down, select the resource group that you created earlier.
 
-1. Select **Next: IP Addresses** to continue to the next creation step.
+1. Select **Review + create** and then select **Create** to add the virtual network to your resource group.
 
-1. Enter `192.168.0.0/24` for **IPv4 address space**.
-
-1. Select **+ Add subnet** to start creating a subnet.
-
-1. For **Subnet name** enter `msftlearn-vnet1-subnet1` and enter the same address space as the range: `192.168.0.0/24`. Select **Add** to return to the **IP Addresses** pane.
-
-1. Back on the virtual network creation, select **Review + create** and then select **Create** to add the virtual network to your resource group.
-
-1. Repeat the virtual network creation steps again to create one more virtual network using an **Address space** and added **Subnet address range** that are for a different network than your previous network. For example, you can use `192.168.100.0/24`. Name the network `msftlearn-vnet2` and the subnet `msftlearn-vnet2-subnet1`, and make sure to place the virtual network in the resource group that you created earlier.
+1. Repeat the virtual network creation steps again to create one more virtual network. Name the network `msftlearn-vnet2` and make sure to place the virtual network in the resource group that you created earlier.
 
 1. Go back to your resource group, and on the **Overview** panel you should see the two virtual networks you created.
 

@@ -1,7 +1,9 @@
 <!-- Standard resource group creation -->
 ::: zone pivot="personal-subscription"
 
-1. Browse to the [Azure Cloud Shell](https://shell.azure.com?azure-portal=true) and sign into your Azure subscription.
+1. Browse to the [Microsoft Azure Portal](https://portal.azure.com?azure-portal=true) and sign into your Azure subscription.
+
+1. Using the icon at the upper right of the Azure Portal, open Cloud Shell.
 
 1. Create a new Azure Resource Group named 'learn-resources' to hold your virtual machine. In the Cloud Shell window, run the following Azure CLI command.
 

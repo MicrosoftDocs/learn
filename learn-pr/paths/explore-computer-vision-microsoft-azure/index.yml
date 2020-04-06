@@ -1,0 +1,35 @@
+### YamlMime:LearningPath
+uid: learn.wwl.explore-computer-vision-microsoft-azure
+metadata:
+  title: Explore computer vision in Microsoft Azure
+  description: Computer vision is an area of artificial intelligence (AI) in which software systems are designed to perceive the world visually, though cameras, images, and video. There are multiple specific types of computer vision problem that AI engineers and data scientists can solve using a mix of custom machine learning models and platform-as-a-service (PaaS) solutions - including many cognitive services in Microsoft Azure.
+  ms.date: 04/24/2020
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Explore computer vision in Microsoft Azure
+prerequisites: |
+  Ability to navigate the Azure portal
+summary: |
+  Computer vision is an area of artificial intelligence (AI) in which software systems are designed to perceive the world visually, though cameras, images, and video. There are multiple specific types of computer vision problem that AI engineers and data scientists can solve using a mix of custom machine learning models and platform-as-a-service (PaaS) solutions - including many cognitive services in Microsoft Azure.
+iconUrl: /learn/achievements/generic-trophy.svg
+levels:
+- beginner
+roles:
+- ai-engineer
+- data-scientist
+- developer
+- solution-architect
+- student
+products:
+- azure-cognitive-services
+modules:
+- learn.wwl.analyze-images-computer-vision
+- learn.wwl.classify-images-custom-vision
+- learn.wwl.detect-objects-images-custom-vision
+- learn.wwl.detect-analyze-faces
+- learn.wwl.read-text-computer-vision
+- learn.wwl.analyze-receipts-form-recognizer
+trophy:
+  uid: learn.wwl.explore-computer-vision-microsoft-azure.trophy

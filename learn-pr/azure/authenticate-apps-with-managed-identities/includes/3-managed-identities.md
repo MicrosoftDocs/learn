@@ -53,4 +53,4 @@ Next, the system reminds you that the server will be registered with Azure AD an
 
 You can always see the current managed identities for the subscription in Azure AD, on the **Enterprise applications** page. On the overview page, you can assign users and change permissions.
 
-![Screenshot of the Azure portal, showing the overview page for a managed identity](../media/3-managed-identity.png)
+:::image type="content" source="../media/3-managed-identity.png" alt-text="Screenshot of the Azure portal, showing the overview page for a managed identity." loc-scope="azure-active-directory-b2c":::
