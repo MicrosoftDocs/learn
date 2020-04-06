@@ -31,7 +31,7 @@ You'll import a series of middleware and write your logic to start your Express.
 
 Why would you make this shift? Overall there's less to think about with serverless.
 
-## About the Project You'll Build
+## About your project
 
 The project represents a Node Express application in TypeScript that is shifted to Azure Functions.
 
