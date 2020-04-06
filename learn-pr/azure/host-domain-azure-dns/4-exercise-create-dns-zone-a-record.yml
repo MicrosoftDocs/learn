@@ -1,0 +1,24 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.host-domain-azure-dns.exercise-create-dns-zone-a-record
+title: Exercise - Create DNS Zone and A record using Azure DNS
+metadata:
+  title: Exercise - Create DNS Zone and A record using Azure DNS
+  description: Exercise - Create DNS Zone and A record using Azure DNS
+  ms.date: 03/20/2020
+  author: cwatson-cat
+  ms.author: cwatson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  zone_pivot_groups: 
+interactive: bash
+azureSandbox: true
+durationInMinutes: 12
+content: |
+  [!include[](includes/4-exercise-create-dns-zone-a-record.md)]
+tasks:
+- action: exists
+  environment: azure
+  hint: "Follow the directions to create a DNS zone."
+  azure:
+    resource:
+      type: "Microsoft.Network/dnszones"

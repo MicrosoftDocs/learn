@@ -8,7 +8,8 @@ To train a clustering model, you need to apply a clustering algorithm to the dat
 2. Expand the **Model Training** section in the pane on the left, and drag a **Train Clustering Model** module to the canvas, under the **iris** dataset. Then connect the output of the dataset to the *Dataset* (right) input of the **Train Clustering Model** module.
 3. The clustering model should assign clusters to the data items by using only the four measurements - we're going to ignore the fact that we already know the species. Select the **Train Clustering Model** module and in its settings pane, on the **Parameters** tab, select **Edit Columns** and include only the column names **Column1**, **Column2**, **Column3**, and **Column4**; like this:
 
-<p style='text-align:center'><img src='media/cluster-features.jpg' alt='include column names Column1, Column2, Column3, and Column4'/></p>
+> [!div class="centered"]
+> ![include column names Column1, Column2, Column3, and Column4](../media/cluster-features.png)
 
 4. The model we're training will use the four feature columns to group the data into clusters, so we need to train the model using a *clustering* algorithm. Expand the **Machine Learning Algorithms** section, and under **Clustering**, drag a **K-Means Clustering** module to the canvas, to the left of the **iris** dataset and above the **Train Clustering Model** module. Then connect its output to the **Untrained model** (left) input of the **Train Clustering Model** module.
 5. The *K-Means* algorithm groups items into the number of clusters you specify - a value referred to as ***K***. Select the **K-Means Clustering** module and in its settings pane, on the **Parameters** tab, set the **Number of centroids** parameter to **3**.
@@ -23,7 +24,8 @@ To train a clustering model, you need to apply a clustering algorithm to the dat
 
 6. Ensure your pipeline looks like this:
 
-<p style='text-align:center'><img src='media/k-means.jpg' alt='iris dataset, K-Means Clustering algorithm. and Train Clustering Model module'/></p>
+> [!div class="centered"]
+> ![iris dataset, K-Means Clustering algorithm. and Train Clustering Model module](../media/k-means.png)
 
 ## Run the training pipeline
 

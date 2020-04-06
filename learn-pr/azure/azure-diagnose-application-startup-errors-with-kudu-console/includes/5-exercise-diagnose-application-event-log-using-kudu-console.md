@@ -8,7 +8,7 @@ In this unit, the application event log is analyzed through Kudu console.
 
 1. Select **Diagnose and solve problems**.
 
-    ![Diagnose and solve problems](../media/DiagnoseAndSolveProblems.png)
+    ![Screenshot of App Service's Diagnose and solve problems panel.](../media/DiagnoseAndSolveProblems.png)
 
 1. Select **Diagnostic Tools** menu option.
 
@@ -16,7 +16,7 @@ In this unit, the application event log is analyzed through Kudu console.
 
 1. Review the latest error provided by *IIS AspNetCoreModule* or *IIS AspNetCoreModule V2* in the **Source** column.
 
-    ![Application Events](../media/ApplicationEvents.png)
+    ![Screenshot of Diagnose and solve problems listing Application Events.](../media/ApplicationEvents.png)
 
 ## Access the Application Event Log through Kudu Console
 
@@ -24,7 +24,7 @@ In this unit, the application event log is analyzed through Kudu console.
 1. Under the **Development Tools** section, open **Advanced Tools**. 
 1. Select the **Go** button. Use the same Sandbox login credentials when the login page opens.This opens Kudu Console in a new window.
 
-    ![Advanced Tools](../media/AdvancedTools.png)
+    ![Screenshot of an App Service's Advanced Tools panel.](../media/AdvancedTools.png)
 
 1. Open **Debug Console** in the top navigation bar and select **CMD**.
 1. Open **LogFiles** folder.
@@ -45,6 +45,6 @@ Run the following commands in the command prompt:
 
 The console output from the app, showing any errors, is piped to the Kudu console.
 
-![Errors](../media/Errors.png)
+![Screenshot of a Kudu console with a list of folders and files on top and a DOS console displaying an error for a dotnet assembly.](../media/Errors.png)
 
 The error message in the screenshot points out the "Content root... does not exist" error.

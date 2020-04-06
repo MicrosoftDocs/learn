@@ -1,12 +1,12 @@
-By using shared access signature (SAS), you can delegate access to your resources. Clients don't have direct access to your storage account credentials and, at a granular level, you control what they access.
+By using a shared access signature (SAS), you can delegate access to your resources. Clients don't have direct access to your storage account credentials and, at a granular level, you control what they access.
 
-After you investigate all the authorization options, you decide to look at SAS in more detail. You know you'll want to create and use SAS in a C# .NET web app. You also want to follow Microsoft's best practices on when and how to use SAS.
+After you investigate all the authorization options, you decide to look at a SAS in more detail. You know you'll want to create and use a SAS in a C# .NET web app. You also want to follow Microsoft's best practices on when and how to use a SAS.
 
-In this unit, you'll review how SAS works at a technical level and what C# code you write to use it.
+In this unit, you'll review how a SAS works at a technical level and what C# code you write to use it.
 
 ## How shared access signatures work
 
-When you use a SAS to access data stored in Azure Storage, you need two components. The first is a URI to the resource you want to access. The second part is an SAS token that you've created to authorize access to that resource.
+When you use a SAS to access data stored in Azure Storage, you need two components. The first is a URI to the resource you want to access. The second part is a SAS token that you've created to authorize access to that resource.
 
 In a single URI, such as `https://medicalrecords.blob.core.windows.net/patient-images/patient-116139-nq8z7f.jpg?sp=r&st=2020-01-20T11:42:32Z&se=2020-01-20T19:42:32Z&spr=https&sv=2019-02-02&sr=b&sig=SrW1HZ5Nb6MbRzTbXCaPm%2BJiSEn15tC91Y4umMPwVZs%3D`, you can separate the URI from the SAS token as follows:
 
@@ -74,12 +74,12 @@ sasToken = sas.ToSasQueryParameters(storageSharedKeyCredential).ToString();
 
 ### Best practices
 
-To reduce the potential risks of using SAS, Microsoft provides some guidance:
+To reduce the potential risks of using a SAS, Microsoft provides some guidance:
 
 - To securely distribute a SAS and prevent man-in-the-middle attacks, always use HTTPS.
 - The most secure SAS is a user delegation SAS. Use it wherever possible because it removes the need to store your storage account key in code. You must use Azure AD to manage credentials. This option might not be possible for your solution.
 - Try to set your expiration time to the smallest useful value. If a SAS key becomes compromised, it can be exploited for only a short time.
 - Apply the rule of minimum-required privileges. Only grant the access that's required. For example, in your app, read-only access is sufficient.
-- There are some situations where SAS isn't the correct solution. When there's an unacceptable risk of using SAS, create a middle-tier service to manage users and their access to storage.
+- There are some situations where a SAS isn't the correct solution. When there's an unacceptable risk of using a SAS, create a middle-tier service to manage users and their access to storage.
 
 The most flexible and secure way to use a service or account SAS is to associate the SAS tokens with a stored access policy. You'll explore these benefits and how they work in a later unit.

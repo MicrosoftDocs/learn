@@ -6,7 +6,7 @@ In this unit, you'll see how to customize the appearance of your `ListView` rows
 
 Recall that by default, `ListView` calls `ToString` on each item in its collection to visualize the item on the screen. For example, the following screenshot shows what the visualization might look like for the cooking app:
 
-![A screenshot showing a ListView displaying a collection of data by calling ToString() on each item](../media/5-default-row.png)
+![Screenshot showing a ListView collection of string data by calling ToString on each item.](../media/5-default-row.png)
 
 This style isn't ideal. You'll typically want to display multiple things, customize the position of the text, or choose specific colors.
 
@@ -43,7 +43,7 @@ You define `DataTemplate` and load it into the `ItemTemplate` property of your `
 
 This screenshot shows an example of the four predefined cell types.
 
-![A screenshot showing an example of TextCell, EntryCell, SwitchCell, and ImageCell on an iOS device](../media/5-cells.png)
+![Screenshot showing an example of TextCell, EntryCell, SwitchCell, and ImageCell on an iOS device.](../media/5-cells.png)
 
 If none of the prebuilt cells work for your data, you can build an entirely custom visualization. You'd start with `ViewCell` inside your `DataTemplate` and add a layout panel with all the controls you need.
 

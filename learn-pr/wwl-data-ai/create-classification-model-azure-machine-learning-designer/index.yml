@@ -3,7 +3,7 @@ uid: learn.wwl.create-classification-model-with-azure-machine-learning-designer
 metadata:
   title: Create a classification model with Azure Machine Learning designer
   description: "Classification is a supervised machine learning technique used to predict categories or classes. Learn how to create classification models using Azure Machine Learning designer."
-  ms.date: 03/13/2020
+  ms.date: 03/18/2020
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -14,7 +14,7 @@ abstract: |
   Train and publish a classification model with Azure Machine Learning designer
 prerequisites: |
   Ability to navigate the Azure portal
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/create-classification-model-azure-machine-learning-designer.svg
 levels:
 - beginner
 roles:

@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.send-location-over-sms-from-mobile-using-azure-functions-twilio.8-publish-to-azure
-title: Publish the function to Azure
+title: Exercise - Publish the function to Azure
 metadata:
   title: Publish the function to Azure
   description: Publish the function to Azure, configure it, and call it from the mobile app
   ms.date: 09/24/2018
   #TODO: Update with real author name.
-  author: markjulmar
-  ms.author: smmark
+  author: adrianstevens
+  ms.author: adsteven
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX

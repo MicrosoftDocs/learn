@@ -17,9 +17,9 @@ quiz:
   questions:
   - content: "Your organization has an internal system to share patient appointment information and notes. You can secure the access based on a user's membership in an Azure Active Directory (Azure AD) group. Which kind of authorization supports this scenario best, and why?"
     choices:
-    - content: "Shared access signature (SAS). You use the Azure AD credentials and a user delegation SAS token."
+    - content: "Shared access signature. You use the Azure AD credentials and a user delegation shared access signature token."
       isCorrect: false
-      explanation: "This option is the most secure way to use SAS, but in this case the best option is to authenticate by using an Azure service principal."
+      explanation: "This option is the most secure way to use a shared access signature, but in this case the best option is to authenticate by using an Azure service principal."
     - content: "Azure Active Directory. By using Azure AD, you can create a service principal to authenticate the app."
       isCorrect: true
       explanation: "This option is the best because no code or configuration files need to store credentials. Access is controlled with Azure AD and can be extended or revoked without requiring any code changes."
@@ -36,4 +36,4 @@ quiz:
       explanation: "This option isn't a good solution in this scenario. Only read-only access is required. Using a shared key gives root-like access to the storage."
     - content: "Shared access signature."
       isCorrect: false
-      explanation: "The flexibility and security of using SAS aren't required in this scenario. Public access is the best option."
+      explanation: "The flexibility and security of using a shared access signature aren't required in this scenario. Public access is the best option."

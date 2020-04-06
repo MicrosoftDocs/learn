@@ -85,7 +85,9 @@ These method names reflect their purpose with the prefixes **Should**, **Will**,
 
 Model-View-Controller (MVC) is a mature presentation pattern. It's applied to all sorts of application types from graphic user interfaces (GUI) to web apps. In fact, it's the default design approach for any iOS or macOS application as Apple even adopted the pattern in CocoaTouch and UIKit.
 
-![A diagram showing the Model View Controller design pattern](../media/5-mvc-pattern-diagram.png)
+:::image type="complex" source="../media/5-mvc-pattern-diagram.png" alt-text="Diagram showing the Model View Controller design pattern.":::
+    Boxes labeled View, Model, and ViewController. View has a dashed arrow pointing to ViewController labeled "user action". Model has a dashed arrow to the ViewController labeled "notify". ViewController has a solid arrow to both View and Model labeled "update".
+:::image-end:::
 
 ### What is the Model in the MVC pattern?
 

@@ -1,4 +1,4 @@
-Shared access signature (SAS) provides a secure way of granting access to resources for clients. But it's not the only way to give access. In some situations, other options might be a better choice for your organization.
+A shared access signature (SAS) provides a secure way of granting access to resources for clients. But it's not the only way to give access. In some situations, other options might be a better choice for your organization.
 
 Before you enhance your company's patient diagnostic image web app, you'd like to understand all the options. Your company could make use of more than just the SAS method of authentication.
 
@@ -19,7 +19,7 @@ Files stored in Azure Storage are accessed by clients over HTTP/HTTPS. Azure nee
 
 Public access is also known as anonymous client access. This option grants anyone read access to files stored in blob storage. You just need the URL to a file to view it. You grant anonymous access for blobs only, or on a container and its blobs. When you grant access for blobs only, they're individually accessible but you can't browse other blobs in the container. If you grant anonymous access on the container, all blobs are accessible and you can enumerate the container.
 
-The advantages of this approach are that you don't need to share keys with clients who require access to your files. You also don't need to manage SAS.
+The advantages of this approach are that you don't need to share keys with clients who require access to your files. You also don't need to manage an SAS.
 
 Anonymous access is controlled at the container level, not individual blobs. If you want to secure some files and not others, you need to segregate them into different blob containers.
 
@@ -37,13 +37,13 @@ We recommend that you manage your storage keys with Azure Key Vault. It's then e
 
 ### Shared access signature
 
-SAS lets you grant granular access to files in Azure Storage. This control includes the level of access like read only or read and write. You also set the expiration time, after which the SAS no longer enables the client to access the chosen resources.
+An SAS lets you grant granular access to files in Azure Storage. This control includes the level of access like read only or read and write. You also set the expiration time, after which the SAS no longer enables the client to access the chosen resources.
 
-There are three types of SAS:
+There are three types of shared access signatures:
 
 - **User delegation SAS**: Secured with Azure AD credentials and can be used only on Azure Blob storage.
-- **Service SAS**: Secured with a storage account key. Service SAS is used on only one service at a time, like Blob storage, Azure Queue storage, Azure Table storage, or Azure Files.
-- **Account SAS**: Secured with a storage account key. Account SAS has the same controls as a service SAS but can also control access to service-level operations, like Get Service Stats.
+- **Service SAS**: Secured with a storage account key. A service SAS is used on only one service at a time, like Blob storage, Azure Queue storage, Azure Table storage, or Azure Files.
+- **Account SAS**: Secured with a storage account key. An account SAS has the same controls as a service SAS but can also control access to service-level operations, like Get Service Stats.
 
 You create an SAS in an ad-hoc way. Specify all the options of the SAS that can include start time, expiry time, and permissions.
 

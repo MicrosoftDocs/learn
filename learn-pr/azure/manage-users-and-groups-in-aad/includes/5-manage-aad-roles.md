@@ -40,7 +40,7 @@ Next, let's explore some of the other built-in roles.
 
 1. Open the [Azure portal](https://portal.azure.com?azure-portal=true)
 1. Select **Resource groups** from the left sidebar.
-1. Select the sole resource group **<rgn>[Learn sandbox resource group</rgn>** from the list.
+1. Select the resource group.
 1. Select the **Access control (IAM)** item from the sidebar menu.
 1. Select the **Roles** tab as shown below to see the list of available roles.
 
