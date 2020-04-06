@@ -2,7 +2,7 @@ Now that you've learned about how Azure IoT has been applied to various industri
 
 ### Azure IoT Services
 
-The two top-level services are IoT Hub, and IoT Central.
+The two top-level services are IoT Hub, and IoT Central. All IoT solutions must have one or the other of these resources.
 
 |Business Need | Azure Services | Description | Benefits |
 |---------|---------|---------|---------|
@@ -34,12 +34,9 @@ There are many services that enable data analysis, here are some of them.
 |Ability to view the locations of vehicles on a map, and to calculate best routes.|Azure Maps|Plan a transit route from A to B taking into consideration different transit options: vehicle type, hazmat cargo, vehicle height and width, current traffic.|Render maps and satellite imagery across many geographies in several styles. Calculates best transit routes given a myriad of parameters and preferences.|
 |Create and work with a digital model of your physical space or assets.|Azure Digital Twins|Azure Digital Twins is an IoT service that creates comprehensive models of the physical environment. The solution can query data from a physical space rather than from many disparate sensors.|This service helps you build spatially aware experiences that link streaming data across the digital and physical world. This can be used to build solutions to manage building operations more efficiently. In addition, it can increase and optimize the efficiency of the building and design process by modeling physical environments.|
 
-
------------------------
-
 >[!TIP]
 >For more details on the full set of Azure IoT products and services, use the products tab on azure.com. See links in the "Summary and resources" unit at the end of the module.
-          
+
 |           |  |
 |           ----------- | -------------|
 |![Icon of lightbulb](../media/lightbulb.png)|*Azure IoT solutions offer a wide range of capabilities while adapting to your existing infrastructure. Whether you are just embarking on your IoT journey, or you already have IoT assets to manage and deploy, Azure IoT solutions can help you take your next step. First, take a moment to reflect on the outcomes you would like to achieve. Then, consider any possibilities you can imagine with IoT to further drive your digital transformation.*

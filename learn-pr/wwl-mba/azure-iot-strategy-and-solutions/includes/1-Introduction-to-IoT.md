@@ -21,12 +21,12 @@ With IoT solutions, everyday things can be IoT-enabled: office buildings, home a
 
 IoT can be easily understood as a set of technologies connected across three main areas:
 
-- **Things:** Physical "things," including industry equipment, devices, or sensors, that are connected to the Internet. 
-- **Insights:** Data from connected devices, and the process to normalize, transform, and analyze that information to produce insights. 
+- **Things:** Physical "things," including industry equipment, devices, or sensors, that are connected to the Internet.
+- **Insights:** Data from connected devices, and the process to normalize, transform, and analyze that information to produce insights.
 - **Action:** The systems and tools that enable people and machines to take actions based on data, in an automated, or predictive manner.
 
 |  |  |
-| ------------ | -------------| 
+| ------------ | -------------|
 |![Icon of lightbulb](../media/lightbulb.png)|*Let's review one example of an IoT-enabled object. An engine (a thing) collects pressure and temperature data that is used to evaluate whether the engine is performing as expected (an insight). This data is used to proactively prioritize the engine maintenance schedule (an action).  Now think about the things that you use every day. Pick one and list out some insights that this item could collect. What actions would these insights enable? How might these actions simplify your work?*
 |
 
