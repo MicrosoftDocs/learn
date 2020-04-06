@@ -65,7 +65,7 @@ The table below shows the key features of each approach.
 
 ## Device settings
 
-In the Azure portal, you control how new devices are joined to your organization. Go to **Azure Active Directory**> **Devices** >**Device settings**. From there, you can configure the following features and turn on Azure AD join.
+In the Azure portal, you control how new devices are joined to your organization. Go to **Azure Active Directory**> **Devices** > **Device settings**. From there, you can configure the following features and turn on Azure AD join.
 
 [!div class="mx-imgBorder"]
 ![Screenshot of the Azure AD device settings.](../media/3-device-settings.png)

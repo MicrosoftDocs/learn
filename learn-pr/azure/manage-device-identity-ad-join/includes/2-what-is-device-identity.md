@@ -64,8 +64,7 @@ Those criteria can be one or more of:
 - An approved application
 - Needs an app protection policy
 
-[!div class="mx-imgBorder"]
-![Screenshot of the access control grant settings.](../media/2-access-controls-grant.png)
+:::image type="content" source="../media/2-access-controls-grant.png" alt-text="Screenshot of the access control grant settings.":::
 
 If your organization uses MFA, users don't have to do MFA when they're using an MDM compliant, AD joined device. You can choose the option **Require one of the selected controls** with your grant controls selected. If you need extra security for something like a payroll app, choose **Require all the selected controls** to require MFA and a compliant device. 
 
