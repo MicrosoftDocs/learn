@@ -8,7 +8,7 @@ Starting and stopping a web app using Azure Explorer is a straightforward proces
 
 To stop a web app in the **Azure Explorer** window, right-click the web app in the **Web Apps** folder, and then click **Stop**.
 
-![Screenshot of the **Azure Explorer** window. The user has selected the **Stop** command for a web app.](../media/6-stop-web-app.png)
+:::image type="content" source="../media/6-stop-web-app.png" alt-text="Screenshot of the Azure Explorer window. The user has selected the Stop command for a web app." loc-scope="third-party":::
 
 The web app will stop accepting new requests and then shut down, and the icon for the web app will change to indicate that it has stopped.
 
@@ -37,7 +37,7 @@ The advantages of deploying new versions of an app this way include:
 
 In IntelliJ IDEA, the **Deploy to Azure** wizard allows you to choose a deployment slot, or to create a new one:
 
-![Screenshot of deploying to a specific deployment slot.](../media/6-deploy-to-slot.png)
+:::image type="content" source="../media/6-deploy-to-slot.png" alt-text="Screenshot of deploying to a specific deployment slot." loc-scope="third-party":::
 
 You can use the Azure portal to execute the swap.
 
@@ -63,4 +63,4 @@ In the lower part of the **Deploy to Azure** wizard, you can add custom actions 
 
     Gradle is an alternative build automation system that you might use instead of Maven lifecycles. You can use this deployment option to run extra Gradle tasks before the web app is launched. 
 
-    ![Add custom action](../media/6-add-custom-action.png)
+    :::image type="content" source="../media/6-add-custom-action.png" alt-text="Add custom action." loc-scope="third-party":::

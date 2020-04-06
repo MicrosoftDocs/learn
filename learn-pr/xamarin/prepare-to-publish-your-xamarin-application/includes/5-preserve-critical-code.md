@@ -96,13 +96,13 @@ public sealed class PreserveAttribute : System.Attribute
 
 The second approach is to create a Linker configuration file. You use XML to create a list of specific assemblies, types, and operations to preserve. The Linker uses the information to make sure the preserved items are kept in the final binary.
 
-![A screenshot of a LinkerDescription file.](../media/5-advanced-linker-xml-file.png)
+![Screenshot of the solution explorer with LinkDescription.xml file selected.](../media/5-advanced-linker-xml-file.png)
 
 Keep in mind that you only need to list things that you don't actively reference but want to keep. Hard references to methods and types in your code will always be preserved.
 
 To use the Linker XML file, you add it to your project and then set the **Build Action** for the file to **LinkDescription**:
 
-![A screenshot of a LinkerDescription file's properties.](../media/5-advanced-linker-file-properties.png)
+![Screenshot of a LinkDescription file's properties, with LinkDescription option selected from Build Action.](../media/5-advanced-linker-file-properties.png)
 
 The format of this file is well defined. It lets you control the process as much as you need to.
 

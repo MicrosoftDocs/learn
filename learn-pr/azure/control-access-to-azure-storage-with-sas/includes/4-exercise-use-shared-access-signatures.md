@@ -4,7 +4,7 @@ Your company's image diagnostic system accesses its patient images internally vi
 
 In this exercise, you'll create a storage account and upload some example patient images. You'll deploy your team's existing web app and test that it can access the storage. The last step is to add C# and JavaScript code to generate a SAS token on demand to view the images securely.
 
-![Screenshot of your company's patient diagnostic image system that shows three example images loaded](../media/4-app-running.png)
+:::image type="content" source="../media/4-app-running.png" alt-text="Screenshot your company's patient diagnostic image system, showing three example images loaded." loc-scope="other"::: <!-- no-loc -->
 
 ### Create a storage account and upload images
 
@@ -237,7 +237,7 @@ In this exercise, you'll create a storage account and upload some example patien
 
 1. Select **View scan**. The patient's diagnostic image should be displayed.
 
-    ![Screenshot of the patient diagnostic image web app showing a patient's image.](../media/4-viewing-image.png)
+    :::image type="content" source="../media/4-viewing-image.png" alt-text="Screenshot of the patient diagnostic image web app showing a patient's image." loc-scope="other":::
 
 1. In your browser, right-click the image and copy the image address.
 

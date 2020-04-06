@@ -1,0 +1,59 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-computing.how-cloud-works.cmu-virtualize-memory.3-memory-over-commit
+title: Memory overcommitment
+metadata:
+  title: Memory overcommitment
+  description: Memory overcommitment
+  ms.date: 03/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-memory-over-commit.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: "Memory overcommitment implies that:"
+    choices:
+    - content: "The combined total size of the real memories equals the size of the physical memory."
+      isCorrect: false
+      explanation: "Incorrect. This will not work because of the overhead memories needed by the hypervisor."
+    - content: "The combined total size of the real memories is less than the size of the physical memory."
+      isCorrect: false
+      explanation: "Incorrect. This will work, but it won't be a memory overcommitment case."
+    - content: "The combined total size of the real memories is greater than the size of the physical memory."
+      isCorrect: true
+      explanation: "Correct!"
+
+  - content: "Assume a hypervisor does not employ memory overcommitment. Assume also a physical memory of 9 GB. What is the maximum number of virtual machines that can be provisioned on such a hypervisor if the real memory of each VM should be at least 3 GB?"
+    choices:
+    - content: "1 VM"
+      isCorrect: false
+      explanation: "Incorrect. One VM can be provisioned on such a hypervisor, but this is not the maximum number of VMs that can be provisioned. Consider the amount of overhead memory that the hypervisor might need, if any."
+    - content: "2 VMs"
+      isCorrect: true
+      explanation: "Correct!"
+    - content: "3 VMs"
+      isCorrect: false
+      explanation: "Incorrect. Although three VMs would require 9 GB in total (which the hypervisor owns), the hypervisor cannot provide them all to the VMs due to requiring some memory capacity for various virtualization data structures. Consider the amount of overhead memory that the hypervisor might need, if any."
+    - content: "4 VMs"
+      isCorrect: false
+      explanation: "Incorrect. The memory required for four VMs (12 GB) would exceed the memory that the hypervisor owns (9 GB). Consider the amount of overhead memory that the hypervisor might need, if any."
+    - content: "As many VMs as we like"
+      isCorrect: false
+      explanation: "Incorrect. The memory required for an infinite number of VMs (infinite GBs) would exceed the memory that the hypervisor owns (9 GB). Consider the amount of overhead memory that the hypervisor might need, if any."
+
+  - content: "Assume a hypervisor employs memory overcommitment. To avoid information leaking among virtual machines during page reclamations, the hypervisor will:"
+    choices:
+    - content: "Reclaim pages that haven't been previously used by any VM."
+      isCorrect: false
+      explanation: "Incorrect. This cannot be done until all physical pages are consumed. Afterward, the hypervisor will halt."
+    - content: "Avoid reclaiming pages."
+      isCorrect: false
+      explanation: "Incorrect. The hypervisor has to reclaim pages. Otherwise, it will halt when all physical pages are consumed."
+    - content: "Erase every reclaimed page irrespective of whether it's been used previously."
+      isCorrect: true
+      explanation: "Correct!"
