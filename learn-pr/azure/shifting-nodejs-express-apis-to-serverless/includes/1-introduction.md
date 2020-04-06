@@ -1,6 +1,6 @@
-Your company is launching a website that lets your customers plan their vacations. They can view, edit, add, and remove their vacation plans from their wish list. All of the data requests use standard HTTP requests to your API server.
+Your company is launching a vacation planning website that helps customers view, edit, add, and remove plans from their wish list. Your API, which powers these features, runs on Node.js and Express is critical to the success of the application
 
-Your API server is critical to the success of the application. The APIs are hosted on a server running Node.js and Express. Your need to launch your application, then have it scale up and down as needed while minimizing costs. There is a lot for you to think about!
+Your API server is critical to the success of the application. The APIs are hosted on a server running Node.js and Express. You need to launch your application and it must scale up and down as needed while minimizing costs. There is a lot for you to think about!
 
 What if you could reduce some of these burdens without rewriting your entire API? Try shifting the API to a serverless model using Azure Functions: no server to maintain, reduce your cost, and your application will scale up and down when needed. Plus, you could write less code!
 
