@@ -4,7 +4,7 @@ In this exercise, you'll use a script to reconfigure the environment and cause h
 
 ## Reconfigure load balancer and retest
 
-1. In the cloud shell, go to the **src/scripts** folder.
+1. In Azure Cloud Shell, go to the **src/scripts** folder.
 
     ```bash
     cd ~/load-balancer/src/scripts
@@ -45,7 +45,7 @@ The first step is to check that the virtual machines are running. Let's resolve 
 
 You can't ping the *appretailvm1* or *appretailvm2* virtual machines directly because they have private addresses that are only available to other virtual machines on the same subnet. First you connect to the jump box, which has a public IP address and is in the same subnet. Then you can ping the virtual machines from there.
 
-1. Return to the cloud shell.
+1. Return to Cloud Shell.
 
 1. Run the following commands to get the IP address of the jump box virtual machine.
 
@@ -140,7 +140,7 @@ The *retailappvm1* virtual machine is up, and the application is running on that
 
     Select the chart to go to the metrics page for Load Balancer. This page enables you to refresh the chart and zoom in on a specific time period.
 
-1. In the cloud shell, run the following command to leave the jump box.
+1. In Cloud Shell, run the following command to leave the jump box.
 
     ```bash
     exit
@@ -180,7 +180,7 @@ The problem might be caused by a network security rule blocking external traffic
     | Name | Port_80 |
     | Description | HTTP port |
 
-1. In the cloud shell, run the stress test application again by using the load balancer's IP address.
+1. In Cloud Shell, run the stress test application again by using the load balancer's IP address.
 
     ```bash
     cd ~/load-balancer/src/stresstest
@@ -196,7 +196,7 @@ The problem might be caused by a network security rule blocking external traffic
 
 It seems that the *appretailvm2* virtual machine might not be handling requests properly. You need to check whether this virtual machine is up and whether Load Balancer can connect to it.
 
-1. In the cloud shell, sign in to the jump box again.
+1. In Cloud Shell, sign in to the jump box again.
 
     ```bash
     ssh azureuser@<jump box ip address>
@@ -218,7 +218,7 @@ It seems that the *appretailvm2* virtual machine might not be handling requests 
     > [!div class="mx-imgBorder"]
     > ![Screenshot showing the Overview page for the *retailappvm2* virtual machine](../media/5-retailappvm2.png)
 
-1. Return to the cloud shell connected to the jump box, and repeat the ping command.
+1. Return to Cloud Shell connected to the jump box, and repeat the ping command.
 
     ```bash
     ping retailappvm2 -c 10
@@ -293,7 +293,7 @@ It seems that the *appretailvm2* virtual machine might not be handling requests 
     > [!div class="mx-imgBorder"]
     > ![Screenshot showing the Health Probe Status for the load balancer](../media/5-probe-healthy.png)
 
-1. Switch to the cloud shell, and run the *stresstest* application again by using the load balancer's IP address.
+1. Switch to Cloud Shell, and run the *stresstest* application again by using the load balancer's IP address.
 
     ```bash
     cd ~/load-balancer/src/stresstest
