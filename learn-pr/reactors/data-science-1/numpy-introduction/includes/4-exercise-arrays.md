@@ -367,7 +367,6 @@ How about the third row of a3?
 
 It's important to know that slicing produces *views* of array data, not *copies*. This is a **huge** difference between NumPy array slicing and Python list slicing. With Python lists, slices are only shallow copies of lists; if you modify a copy, it doesn't affect the parent list. When you modify a NumPy subarray, you modify the original list. Be careful: this can have ramifications when you are trying to just work with a small part of a large dataset and you don't want to change the whole thing. Let's look more closely.
 
-In [53]:
 ```python
 print(a2)
 ```
@@ -603,7 +602,6 @@ Notice that *N* split-points produces to *N + 1* subarrays. In this case it 
 
 #### Exercise
 
-In [72]:
 ```python
 grid = np.arange(16).reshape((4, 4))
 grid
@@ -619,7 +617,7 @@ array([[ 0,  1,  2,  3],
 What does `np.split(grid, [1, 2])` produce?
 What about `np.split(grid, [1, 2], axis=1)`?
 
->[!div class="alert is-tip"]>
+>[!div class="alert is-tip"]
 >### Takeaway
 >
 > Manipulating datasets is a fundamental part of preparing data for analysis. The skills you learned and practiced here will form building blocks for the most sophisticated data-manipulation you will learn in later sections in this course.

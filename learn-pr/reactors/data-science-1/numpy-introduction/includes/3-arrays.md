@@ -1,4 +1,4 @@
-> [!div class="alert is-tip"]
+>[!div class="alert is-tip"]
 >
 > ### Learning goal
 >
