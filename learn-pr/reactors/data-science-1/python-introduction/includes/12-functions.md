@@ -5,7 +5,13 @@
 
 As in other programming languages, it is often essential in Python to break down your program into reusable chunks. A primary means of doing that is through functions.
 
-For example, we could rewrite the while loop code snippet above as a formal function:
+> [!Note]
+> **Sarah: Conversion feedback**
+> 
+> Consider moving the learning goal text to the list of Learning Objectives in the Introduction unit.
+>
+
+For example, we could rewrite the `while` loop code snippet above as a formal function:
 
 ```Python
 def fib(n):
@@ -26,7 +32,7 @@ fib(2000)
 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597,
 ```
 
-Python can also define new functions on the fly. These anonymous functions are called lambda functions because you define them with the lambda keyword. Lambda functions can contain any number of arguments but only one expression.
+Python can also define new functions on the fly. These anonymous functions are called _lambda functions_ because you define them with the lambda keyword. Lambda functions can contain any number of arguments but only one expression.
 
 ```Python
 nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]

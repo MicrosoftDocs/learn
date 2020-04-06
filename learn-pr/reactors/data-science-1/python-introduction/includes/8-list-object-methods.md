@@ -12,7 +12,7 @@ Python includes a number of handy functions that are available to all lists.
 > For details, see https://microsoft.sharepoint.com/sites/celaweb-copyrights-trademarks-and-patents/sitepages/trademarks-fictitious-content-faq.aspx.
 >
 
-For example, append() and extend() enable you to add to the end of a list, much like the += operator:
+For example, [append()](https://docs.python.org/3.6/tutorial/datastructures.html) and [extend()](https://docs.python.org/3.6/tutorial/datastructures.html) enable you to add to the end of a list, much like the += operator:
 
 ```Python
 beatles = ['John', 'Paul']
@@ -24,7 +24,7 @@ beatles
 ['John', 'Paul', 'George']
 ```
 
-Notice that you did not actually pass a list to append(); passing a list to append() results in this behavior:
+Notice that you did not actually pass a list to `append()`; passing a list to `append()` results in this behavior:
 
 ```Python
 beatles2 = ['John', 'Paul', 'George']
@@ -36,7 +36,7 @@ beatles2
 ['John', 'Paul', 'George', ['Stuart', 'Pete']]
 ```
 
-To tack a list on the end of an existing list, use extend() instead:
+To tack a list on the end of an existing list, use [extend()](https://docs.python.org/3.6/tutorial/datastructures.html) instead:
 
 ```Python
 beatles.extend(['Stuart', 'Pete'])
@@ -47,7 +47,7 @@ beatles
 ['John', 'Paul', 'George', 'Stuart', 'Pete']
 ```
 
-index() returns the index of the first matching item in a list (if present):
+[index()](https://docs.python.org/3.6/tutorial/datastructures.html) returns the index of the first matching item in a list (if present):
 
 ```Python
 beatles.index('George')
@@ -57,7 +57,7 @@ beatles.index('George')
 2
 ```
 
-The count() method returns the number of items in a list that match objects you pass in:
+The [count()](https://docs.python.org/3.6/tutorial/datastructures.html) method returns the number of items in a list that match objects you pass in:
 
 ```Python
 beatles.count('John')
@@ -67,7 +67,7 @@ beatles.count('John')
 1
 ```
 
-There are two methods for removing items from a list. The first is remove(), which locates the first occurrence of an item in the list and removes it (if present):
+There are two methods for removing items from a list. The first is [remove()](https://docs.python.org/3.6/tutorial/datastructures.html), which locates the first occurrence of an item in the list and removes it (if present):
 
 ```Python
 beatles.remove('Stuart')
@@ -78,7 +78,7 @@ beatles
 ['John', 'Paul', 'George', 'Pete']
 ```
 
-The other method for removing items from lists is the pop() method. If you supply pop() with an index number, it will remove the item from that location in the list and return it; otherwise, pop() removes the last item in a list and returns that:
+The other method for removing items from lists is the [pop()](https://docs.python.org/3.6/tutorial/datastructures.html) method. If you supply `pop()` with an index number, it will remove the item from that location in the list and return it; otherwise, `pop()` removes the last item in a list and returns that:
 
 ```Python
 beatles.pop()
@@ -88,7 +88,7 @@ beatles.pop()
 'Pete'
 ```
 
-The insert() method enables you to add an item to a specific location in a list:
+The [insert()](https://docs.python.org/3.6/tutorial/datastructures.html) method enables you to add an item to a specific location in a list:
 
 ```Python
 beatles.insert(1, 'Ringo')
@@ -99,7 +99,7 @@ beatles
 ['John', 'Ringo', 'Paul', 'George']
 ```
 
-Unsurprisingly, the reverse() method reverses the order of items in a list:
+Unsurprisingly, the [reverse()](https://docs.python.org/3.6/tutorial/datastructures.html) method reverses the order of items in a list:
 
 ```Python
 beatles.reverse()
@@ -110,7 +110,7 @@ beatles
 ['George', 'Paul', 'Ringo', 'John']
 ```
 
-Finally, the sort() method orders the items in a list:
+Finally, the [sort()](https://docs.python.org/3.6/tutorial/datastructures.html) method orders the items in a list:
 
 ```Python
 beatles.sort()
@@ -126,4 +126,4 @@ beatles
 - What happens if you run `beatles.extend(beatles)`?
 - How about `beatles.append(beatles)`?
 
-Note that you can supply your own lambda function to `sort()` for use in comparing items in a list. We will cover lambda functions in a later topic.
+Note that you can supply your own _lambda function _to `sort()` for use in comparing items in a list. We will cover lambda functions in a later topic.

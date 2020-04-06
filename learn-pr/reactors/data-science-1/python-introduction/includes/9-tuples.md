@@ -85,7 +85,7 @@ tup = ('a', 'b', 'c')
 True
 ```
 
-You can also test to see if something is not in a list or tuple using not in:
+You can also test to see if something is not in a list or tuple using `not in`:
 
 ```Python
 lis = ['a', 'b', 'c']
