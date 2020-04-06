@@ -1,4 +1,5 @@
->**Learning goal:**
+>[!div class="alert is-tip"]
+>### Learning goal
 >
 >By the end of this subsection, you should be comfortable aggregating data in NumPy.
 
@@ -10,39 +11,41 @@ NumPy has fast built-in aggregation functions for working on arrays that are the
 
 You can use the built-in Python `sum` function to sum up the values in an array.
 
-In [117]:
-
+```python
 import numpy as np
+```
 
-In [118]:
-
+```python
 myList = np.random.random(100)
 sum(myList)
+```
 
-Out[118]:
-
+```output
 50.461758453195614
+```
 
 If you guessed that there is also a built-in NumPy function for this, you guessed correctly:
 
-In [119]:
-
+```python
 np.sum(myList)
+```
 
-Out[119]:
-
+```output
 50.46175845319564
+```
 
 And if you guessed that the NumPy version is faster, you are doubly correct:
 
-In [120]:
-
+```python
 large_array = np.random.rand(1000000)
 %timeit sum(large_array)
 %timeit np.sum(large_array)
+```
 
+```output
 124 ms ± 5.38 ms per loop (mean ± std. dev. of 7 runs, 10 loops each)
 814 µs ± 74.4 µs per loop (mean ± std. dev. of 7 runs, 1000 loops each)
+```
 
 For all their similarity, bear in mind that `sum` and `np.sum` are not identical; their optional arguments have different meanings, and `np.sum` is aware of multiple array dimensions.
 
@@ -50,60 +53,62 @@ For all their similarity, bear in mind that `sum` and `np.sum` are not ident
 
 Just as Python has built-in `min` and `max` functions, NumPy has similar, vectorized versions:
 
-In [121]:
-
+```python
 np.min(large_array), np.max(large_array)
+```
 
-Out[121]:
-
+```output
 (7.071203171893359e-07, 0.9999997207656334)
+```
 
 You can also use `min`, `max`, and `sum` (and several other NumPy aggregates) as methods of the array object itself:
 
-In [122]:
-
+```python
 print(large_array.min(), large_array.max(), large_array.sum())
+```
 
+```output
 7.071203171893359e-07 0.9999997207656334 500216.8034810001
+```
 
 ## Multidimensional aggregates
 
 Because you will often treat the rows and columns of two-dimensional arrays differently (treating columns as variables and rows as observations of those variables, for example), it can often be desirable to aggregate array data along a row or column. Let's consider a two-dimensional array:
 
-In [123]:
-
+```python
 md = np.random.random((3, 4))
 print(md)
+```
 
+```output
 [[0.79832448 0.44923861 0.95274259 0.03193135]
  [0.18441813 0.71417358 0.76371195 0.11957117]
  [0.37578601 0.11936151 0.37497044 0.22944653]]
+```
 
 Unless you specify otherwise, each NumPy aggregation function will compute the aggregate for the entire array. Hence:
 
-In [124]:
-
+```python
 md.sum()
+```
 
-Out[124]:
-
+```output
 5.1136763453287335
+```
 
 Aggregation functions take an additional argument specifying the *axis* along which to compute the aggregation. For example, we can find the minimum value within each column by specifying `axis=0`:
 
-In [125]:
-
+```python
 md.min(axis=0)
+```
 
-Out[125]:
-
+```output
 array([0.18441813, 0.11936151, 0.37497044, 0.03193135])
+```
 
-### Exercise:
+#### Exercise
 
-In [126]:
-
-What do you get when you try md.max(axis=1)?
+What do you get when you try `md.max(axis=1)`?
 
 Remember that the `axis` keyword specifies the *dimension of the array that is to be collapsed*, not the dimension that will be returned. Thus specifying `axis=0` means that the first axis will be the one collapsed: for two-dimensional arrays, this means that values within each column will be aggregated.
 
@@ -129,6 +134,7 @@ The table below lists other aggregation functions in NumPy. Most NumPy aggregate
 
 We will see these aggregates often throughout the rest of the course.
 
->**Takeaway:**
+>[!div class="alert is-tip"]
+>### Takeaway
 >
 >Aggregation is the primary means you will use to explore you data, not just when using NumPy, but particularly in conjunction with pandas, the Python library you will learn about in the next section, which builds off of NumPy and thus off of everything you have learned thus far.

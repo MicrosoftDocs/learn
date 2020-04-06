@@ -25,10 +25,10 @@ Get used to this convention - it's a common convention in Python, and it's the w
 In this module, you will:
 
 - Explore NumPy
-- TBD
-- TBD
+- _TBD - can incorporate from the **Learning goals** that are present in some of the units_
+- _TBD_
 
 ## Prerequisites
 <!-- List of prerequisites for this module; otherwise, "None." -->
-
-None.
+- Set up your environment
+- Python for data science

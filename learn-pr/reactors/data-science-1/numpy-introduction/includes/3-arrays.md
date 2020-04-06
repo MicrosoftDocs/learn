@@ -1,4 +1,7 @@
->**Learning goal**
+> [!div class="alert is-tip"]
+>
+> ### Learning goal
+>
 > By the end of this subsection, you should have a basic understanding of what NumPy arrays are and how they differ from the other Python data structures you have studied thus far.
 
 We started the discussion in this section by noting that data science starts by representing data as arrays of numbers.
@@ -49,66 +52,66 @@ Enter the fixed-type, NumPy-style array.
 
 At the level of implementation by the computer, the `ndarray` that is part of the NumPy package contains a single pointer to one contiguous block of data. This is efficient memory-wise and computationally. Better still, NumPy provides efficient *operations* on data stored in `ndarray` objects.
 
-(Note that we will pretty much use "array," "NumPy array," and "ndarray" interchangeably throughout this section to refer to the ndarray object.)
+>[!NOTE]
+>We will pretty much use "array," "NumPy array," and "ndarray" interchangeably throughout this section to refer to the ndarray object.
 
 ### Creating NumPy arrays method 1: using Python lists
 
 There are multiple ways to create arrays in NumPy. Let's start by using our good old familiar Python lists. We will use the `np.array()` function to do this (remember, we imported NumPy as '`np`'):
 
-In [5]:
-
 Create an integer array:
+
+```python
 np.array([1, 4, 2, 5, 3])
+```
 
-Out[5]:
-
+```output
 array([1, 4, 2, 5, 3])
+```
 
 Remember that, unlike Python lists, NumPy constrains arrays to contain a single type. So, if data types fed into a NumPy array do not match, NumPy will attempt to *upcast* them if possible. To see what we mean, here NumPy upcasts integers to floats:
 
-In [6]:
-
+```python
 np.array([3.14, 4, 2, 3])
+```
 
-Out[6]:
-
+```output
 array([3.14, 4.  , 2.  , 3.  ])
+```
 
-### Exercise
+#### Exercise
 
-In [ ]:
-
-Try constructing an array using a list that contains a combination of integers, floats, and strings?
+What happens if you construct an array using a list that contains a combination of integers, floats, and strings?
 
 If you want to explicitly set the data type of your array when you create it, you can use the `dtype` keyword:
 
 In [7]:
-
+```python
 np.array([1, 2, 3, 4], dtype='float32')
+```
 
-Out[7]:
-
+```output
 array([1., 2., 3., 4.], dtype=float32)
+```
 
-### Exercise
+#### Exercise
 
-In [ ]:
+Try this using a different `dtype`.
+Remember that you can always refer to the documentation with the command `np.array`.
 
-Try this using a different dtype.
-Remember that you can always refer to the documentation with the command np.array.
+Most usefully for a lot of applications in data science, NumPy arrays can explicitly be multidimensional (like matrices or tensors). Here's one way of creating a multidimensional array using a list of lists.
 
-Most usefully for a lot of applications in data science, NumPy arrays can explicitly be multidimensional (like matrices or tensors). Here's one way of creating a multidimensional array using a list of lists:
+Nested lists result in multi-dimensional arrays:
 
-In [8]:
-
-nested lists result in multi-dimensional arrays
+```python
 np.array([range(i, i + 3) for i in [2, 4, 6]])
+```
 
-Out[8]:
-
+```output
 array([[2, 3, 4],
        [4, 5, 6],
        [6, 7, 8]])
+```
 
 The inner lists in a list of lists are treated as rows of the two-dimensional array you created.
 
@@ -116,114 +119,121 @@ The inner lists in a list of lists are treated as rows of the two-dimensional ar
 
 In practice, it is often more efficient to create arrays from scratch using functions built into NumPy, particularly for larger arrays. Here are a few examples; these example will help introduce you to several useful NumPy functions.
 
-In [9]:
+Create an integer array of length 10 filled with zeros:
 
-Create an integer array of length 10 filled with zeros
+```python
 np.zeros(10, dtype=int)
+```
 
-Out[9]:
-
+```output
 array([0, 0, 0, 0, 0, 0, 0, 0, 0, 0])
+```
 
-In [10]:
+Create a 3x5 floating-point array filled with ones:
 
-Create a 3x5 floating-point array filled with ones
+```python
 np.ones((3, 5), dtype=float)
+```
 
-Out[10]:
-
+```output
 array([[1., 1., 1., 1., 1.],
        [1., 1., 1., 1., 1.],
        [1., 1., 1., 1., 1.]])
+```
 
-In [11]:
+Create a 3x5 array filled with 3.14.
+The first number in the tuple gives the number of rows.
+The second number in the tuple sets the number of columns.
 
-Create a 3x5 array filled with 3.14
-The first number in the tuple gives the number of rows
-The second number in the tuple sets the number of columns
+```python
 np.full((3, 5), 3.14)
+```
 
-Out[11]:
-
+```output
 array([[3.14, 3.14, 3.14, 3.14, 3.14],
        [3.14, 3.14, 3.14, 3.14, 3.14],
        [3.14, 3.14, 3.14, 3.14, 3.14]])
+```
 
-In [12]:
+Create an array filled with a linear sequence.
+Starting at 0, ending at 20, stepping by 2 (this is similar to the built-in Python range() function):
 
-Create an array filled with a linear sequence
-Starting at 0, ending at 20, stepping by 2
-(this is similar to the built-in Python range() function)
-np.arange(0, 20, 2)
+```python
+np.arange(0, 20, 2).
+```
 
-Out[12]:
-
+```output
 array([ 0,  2,  4,  6,  8, 10, 12, 14, 16, 18])
+```
 
-In [13]:
+Create an array of five values evenly spaced between 0 and 1:
 
-Create an array of five values evenly spaced between 0 and 1
+```python
 np.linspace(0, 1, 5)
+```
 
-Out[13]:
-
+```output
 array([0.  , 0.25, 0.5 , 0.75, 1.  ])
-
-In [14]:
+```
 
 Create a 3x3 array of uniformly distributed
-random values between 0 and 1
+random values between 0 and 1:
+
+```python
 np.random.random((3, 3))
+```
 
-Out[14]:
-
+```output
 array([[0.1293533 , 0.00963681, 0.76015197],
        [0.97076867, 0.16947551, 0.51899825],
        [0.28123745, 0.37741323, 0.01221669]])
-
-In [15]:
+```
 
 Create a 3x3 array of normally distributed random values
-with mean 0 and standard deviation 1
+with mean 0 and standard deviation 1:
+
+```python
 np.random.normal(0, 1, (3, 3))
+```
 
-Out[15]:
-
+```output
 array([[ 0.41781774,  1.10706673, -1.84875856],
        [ 0.9436157 ,  0.36446661,  0.1319522 ],
        [-1.18743752,  0.48199796,  0.37693047]])
+```
 
-In [16]:
+Create a 3x3 array of random integers in the interval [0, 10):
 
-Create a 3x3 array of random integers in the interval [0, 10)
+```python
 np.random.randint(0, 10, (3, 3))
+```
 
-Out[16]:
-
+```output
 array([[0, 3, 7],
        [8, 1, 8],
        [0, 5, 7]])
+```
 
-In [17]:
-
-Create a 3x3 identity matrix
+Create a 3x3 identity matrix:
+```python
 np.eye(3)
+```
 
-Out[17]:
-
+```output
 array([[1., 0., 0.],
        [0., 1., 0.],
        [0., 0., 1.]])
+```
 
-In [18]:
-
-Create an uninitialized array of three integers
-The values will be whatever happens to already exist at that memory location
+Create an uninitialized array of three integers:
+The values will be whatever happens to already exist at that memory location.
+```python
 np.empty(3)
+```
 
-Out[18]:
-
+```output
 array([1., 1., 1.])
+```
 
 Now take a couple of minutes to go back and play with these code snippets, changing the parameters. These functions are the bread-and-butter of creating NumPy arrays and you will want to become comfortable with them.
 
@@ -248,11 +258,11 @@ Below is a table listing out several of the array-creation functions in NumPy.
 
 The standard NumPy data types are listed in the following table. Note that when constructing an array, they can be specified using a string:
 
-np.zeros(8, dtype='int16')
+`np.zeros(8, dtype='int16')`
 
 Or they can be specified directly using the NumPy object:
 
-np.zeros(8, dtype=np.int16)
+`np.zeros(8, dtype=np.int16)`
 
 | Data type | Description |
 | --- | --- |
@@ -278,6 +288,8 @@ np.zeros(8, dtype=np.int16)
 
 If these data types seem a lot like those in C, that's because NumPy is built in C.
 
-> **Takeaway:**
+> [!div class="alert is-tip"]
+>
+> ### Takeaway
 >
 > NumPy arrays are a data structure similar to Python lists that provide high performance when storing and working on large amounts of homogeneous data - precisely the kind of data that you will encounter frequently in doing data science. NumPy arrays support many data types beyond those discussed in this course. With all of that said, however, don't worry about memorizing all of the NumPy dtypes. **It's often just necessary to care about the general kind of data you're dealing with: floating point, integer, Boolean, string, or general Python object.
