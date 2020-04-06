@@ -1,4 +1,4 @@
-> [!div class="alert is-tip"]
+>[!div class="alert is-tip"]
 >### Learning goal
 >
 >By the end of this subsection, you should be comfortable working with NumPy arrays in basic ways.
