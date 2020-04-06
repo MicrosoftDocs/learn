@@ -87,7 +87,7 @@ This exercise is optional. To complete it, you need access to an Azure subscript
   
 ## Test the load balancer
 
-1. Return to the cloud shell.
+1. Return to Azure Cloud Shell.
 
 1. Run the following command to find the public IP address of the load balancer front end.
 
@@ -100,7 +100,7 @@ This exercise is optional. To complete it, you need access to an Azure subscript
     > [!div class="mx-imgBorder"]
     > ![Screenshot of the browser showing the response from the sample app running in Load Balancer](../media/4-browser-response.png)
 
-1. In the cloud shell, run the following command to go to the **src/stresstest** folder.
+1. In Cloud Shell, run the following command to go to the **src/stresstest** folder.
 
     ```bash
     cd ~/load-balancer/src/stresstest
@@ -170,7 +170,7 @@ This exercise is optional. To complete it, you need access to an Azure subscript
 1. Set the time range to **Last 30 minutes**. The chart should report both statistics at 100 percent.
 
 1. Select **Pin to dashboard** > **Select another dashboard** > **Browse dashboards**.
-1. For Dashboard, select **dashboard-learn-ts-loadbalancer**.
+1. For a dashboard, select **dashboard-learn-ts-loadbalancer**.
 1. Select **Apply**.
 
 You now have a baseline set of metrics for the system when it's running correctly.
