@@ -1,7 +1,7 @@
 > [!div class="alert is-tip"]
 > ### Learning goal
 >
-> By the end of this subsection, you should be comfortable identifying and removing duplicate values from DataFrames.
+> By the end of this unit, you should be comfortable identifying and removing duplicate values from DataFrames.
 
 In addition to missing data, often, you encounter duplicated data in real-world datasets. Fortunately, pandas provides an easy means of detecting and removing duplicate entries.
 
