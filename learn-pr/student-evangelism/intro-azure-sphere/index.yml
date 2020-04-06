@@ -1,0 +1,27 @@
+### YamlMime:Module
+uid: learn.oxford.intro-azure-sphere
+metadata:
+  title: "Introduction to Azure Sphere"
+  description: "University of Oxford"
+  ms.date: 03/31/2020
+  author: leestott
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-edge
+title: "Introduction to Azure Sphere"
+summary: ""
+abstract: |
+prerequisites: |
+iconUrl: http://via.placeholder.com/120x120
+badge:
+  uid: learn.oxford.intro-to-azure-sphere
+levels:
+- beginner
+roles:
+- ai-edge-engineer
+products:
+- azure-iot-edge
+units:
+- learn.oxford.intro-azure-sphere.introduction
+- learn.oxford.intro-azure-sphere.what-azure-sphere
+- learn.oxford.intro-azure-sphere.how-azure-sphere-works
