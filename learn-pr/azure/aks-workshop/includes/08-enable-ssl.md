@@ -1,42 +1,52 @@
-The NGINX ingress controller supports TLS termination. There are several ways to retrieve and configure certificates for HTTPS. This unit demonstrates how to use [cert-manager](https://github.com/jetstack/cert-manager), which provides automatic [Let's Encrypt](https://letsencrypt.org/) certificate generation and management functionality.
+The online security and privacy of user data is a primary concern for Fruit Smoothies as a company. It's important the ratings website allows HTTPS connections to all customers. NGINX ingress controller supports TLS termination and provides several ways to retrieve and configure certificates for HTTPS. This exercise demonstrates how to use *cert-manager*, which provides automatic *Let's Encrypt* certificate generation and management functionality.
 
-In this exercise, you deploy cert-manager and configure it to automatically issue Let's Encrypt certificates. You also configure the ingress you created previously to serve encrypted SSL/TLS traffic through the generated certificates.
+In this exercise, you will:
 
-![Deployed resources on the Azure Kubernetes Service cluster](../media/08-arch-5.svg)
+> [!div class="checklist"]
+> - Deploy cert-manager by using Helm
+> - Deploy a ClusterIssuer resource for Let's Encrypt
+> - Enable SSL/TLS for the ratings web service on Ingress
+> - Test the application
 
-## Install cert-manager
+:::image type="content" source="../media/08-arch-5.svg" border="false" alt-text="Diagram that shows the deployed resources on the Azure Kubernetes Service cluster.":::
 
-Install cert-manager by using Helm. Configure it to use Let's Encrypt as the certificate issuer.
+## Deploy cert-manager
 
-1. Create a namespace for cert-manager.
+*cert-manager* is a Kubernetes certificate management controller that makes it possible to automate certificate management in cloud-native environments. cert-manager supports various sources including Let's Encrypt, HashiCorp Vault, Venafi, simple signing key pairs, or self-signed certificates. You'll use `cert-manager`to ensure your website's certificate is valid and up to date, and attempt to renew certificates at a configured time before the certificate expires.
+
+cert-manager uses Kubernetes custom resources. A Kubernetes custom resource is an object that allows you to extend the Kubernetes API or to introduce your API into a cluster. You use custom resource definition (CRD) files to define your object kinds and the API Server manage the lifecycle of the object.
+
+Here, you'll use Helm to install cert-manager and then configure it to use Let's Encrypt as the certificate issuer.
+
+1. Let's start by creating a namespace for cert-manager.
 
     ```bash
     kubectl create namespace cert-manager
     ```
 
-1. You can find cert-manager in the Jetstack Helm repository. Add the Jetstack Helm repository.
+1. You'll use the Jetstack Helm repository to find and install cert-manager. First, you'll add the Jetstack Helm repository by running the code below.
 
     ```bash
     helm repo add jetstack https://charts.jetstack.io
     helm repo update
     ```
 
-1. You can now go ahead and install cert-manager. Install the cert-manager custom resource definition (CRD).
+1. Next, run the following command to install cert-manager by deploying the cert-manager CRD.
 
     ```bash
-    kubectl apply --validate=false -f https://raw.githubusercontent.com/jetstack/cert-manager/release-0.13/deploy/manifests/00-crds.yaml
+    kubectl apply --validate=false -f https://raw.githubusercontent.com/jetstack/cert-manager/release-0.14/deploy/manifests/00-crds.yaml
     ```
 
-1. Install the cert-manager Helm chart.
+1. Install the cert-manager Helm chart
 
     ```bash
     helm install cert-manager \
         --namespace cert-manager \
-        --version v0.13.0 \
+        --version v0.14.0 \
         jetstack/cert-manager
     ```
 
-1. After the installation is finished, you'll get an output similar to this example.
+1. You'll see output similar to the example below when the installation completes.
 
     ```output
     NAME: cert-manager
@@ -64,9 +74,11 @@ Install cert-manager by using Helm. Configure it to use Let's Encrypt as the cer
     cert-manager-webhook-787858fcdb-nlzsq      1/1     Running   0          2m
     ```
 
-## Create a Kubernetes configuration file for ClusterIssuer with Let's Encrypt
+## Deploy a ClusterIssuer resource for Let's Encrypt
 
-You need to set up ClusterIssuer before you can begin issuing certificates. The cluster issuer acts as an interface to a certificate-issuing service such as Let's Encrypt.
+Cert-manager will ensure that your website's certificate is valid and up to date, and even attempt to renew certificates at a configured time before the certificate expires. However, you need to set up a *ClusterIssuer* before you can begin the certificate issuing process. The cluster issuer acts as an interface to a certificate-issuing service such as Let's Encrypt.
+
+Let's Encrypt is a nonprofit Certificate Authority that provides TLS certificates. Let's Encrypt allows you to set up an HTTP server and have it automatically obtain a browser-trusted certificate. The process of retrieving and installing a certificate is fully automated without human intervention and managed by running a certificate management agent on the webserver. For more information about Let's Encrypt, see the *learn more* section at the end of this module.
 
 1. Edit the file called `cluster-issuer.yaml` by using the integrated editor.
 
@@ -93,11 +105,9 @@ You need to set up ClusterIssuer before you can begin issuing certificates. The 
               class: nginx
     ```
 
-    In the `email` key, update the value by replacing `<your email>` with a valid email from your organization.
+    In the `email` key, you'll update the value by replacing `<your email>` with a valid certificate administrator email from your organization.
 
 1. To save the file, select <kbd>Ctrl+S</kbd>. To close the editor, select <kbd>Ctrl+Q</kbd>.
-
-## Apply the cluster-issuer configuration to create a cluster issuer
 
 1. Apply the configuration by using the `kubectl apply` command. Deploy the cluster-issuer configuration in the `ratingsapp` namespace.
 
@@ -107,13 +117,15 @@ You need to set up ClusterIssuer before you can begin issuing certificates. The 
         -f cluster-issuer.yaml
     ```
 
-    You'll get an output similar to this example.
+    You'll see an output similar to this example.
 
     ```output
     clusterissuer.cert-manager.io/letsencrypt created
     ```
 
-## Edit the Kubernetes ingress file for the ratings web service to enable SSL/TLS
+## Enable SSL/TLS for the ratings web service on Ingress
+
+The last part of the configuration is to configure the Kubernetes Ingress file for the ratings web service to enable SSL/TLS.
 
 1. Edit the file called `ratings-web-ingress.yaml` by using the integrated editor.
 
@@ -150,8 +162,6 @@ You need to set up ClusterIssuer before you can begin issuing certificates. The 
 
 1. To save the file, select <kbd>Ctrl+S</kbd>. To close the editor, select <kbd>Ctrl+Q</kbd>.
 
-## Apply the updated Kubernetes ingress file
-
 1. Apply the configuration by using the `kubectl apply` command. Deploy the updated Kubernetes ingress file in the `ratingsapp` namespace.
 
     ```bash
@@ -160,7 +170,7 @@ You need to set up ClusterIssuer before you can begin issuing certificates. The 
         -f ratings-web-ingress.yaml
     ```
 
-    You'll get an output similar to this example.
+    You'll see an output similar to this example.
 
     ```output
     ingress.networking.k8s.io/ratings-web-ingress configured
@@ -208,7 +218,7 @@ You need to set up ClusterIssuer before you can begin issuing certificates. The 
 
 ## Test the application
 
-Open the host name you configured on the ingress in a web browser over SSL/TLS, for example, at https:\//frontend.13-68-177-68.nip.io, to view and interact with the application.
+Open the host name you configured on the ingress in a web browser over SSL/TLS to view and interact with the application. For example, at https:\//frontend.13-68-177-68.nip.io.
 
 :::image type="content" source="../media/08-ratings-web-ingress-tls.png" alt-text="Screenshot of the ratings-web application." loc-scope="other"::: <!-- no-loc -->
 
@@ -216,4 +226,8 @@ Verify that the front end is accessible over HTTPS and that the certificate is v
 
 :::image type="content" source="../media/08-ratings-web-cert.png" alt-text="Screenshot of the valid SSL/TLS certificate." loc-scope="other":::
 
-In this exercise, you deployed cert-manager and configured it to issue Let's Encrypt certificates automatically. You then configured the ingress you created earlier to serve encrypted SSL/TLS traffic through the generated certificates.
+## Summary
+
+In this exercise, you deployed cert-manager and configured it to issue Let's Encrypt certificates automatically. You then configured the ingress you created earlier to serve encrypted TLS/SSL traffic through the generated certificates.
+
+Next, you'll configure monitoring for your AKS cluster.

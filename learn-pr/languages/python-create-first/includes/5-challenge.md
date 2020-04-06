@@ -2,17 +2,17 @@ Code challenges throughout these modules will reinforce what you've learned and 
 
 ## What you'll build
 
-In this challenge, you'll build a calorie counter that prompts the user for:
+In this challenge, you build a calorie counter that prompts the user for:
 
-- the current date (in any format, it doesn't matter)
-- breakfast calories eaten
-- lunch calories eaten
-- dinner calories eaten
-- snack calories eaten
+- The current date (in any format)
+- Breakfast calories eaten
+- Lunch calories eaten
+- Dinner calories eaten
+- Snack calories eaten
 
-The program then will sum up all of the calories and format them into a message.
+The program will then sum up all of the calories and format them into a message.
 
-Here's an example of the output from running the program.
+Here's an example of the output from running the program:
 
 ```output
 Today's date?
@@ -34,13 +34,13 @@ To solve the challenge, you need to perform the following tasks:
 
 ### Task 1 - Create a new file for your challenge
 
-You may call your new file anything you want.  Just make sure you're comfortable creating a new `.py` file and adding code to it.
+You can call your new file anything you want.  Just make sure that you're comfortable creating a new *.py* file and adding code to it.
 
 ### Task 2 - Write the necessary Python code to duplicate the example output
 
-Use the techniques we learned previously to build the program.  If you get stuck, focus on just one part at a time.  For example, just collect the date information and display it.  Then move on to the next tiny step -- collecting the breakfast calories and display that.  By breaking up one large problem into many smaller programs, testing your work along the way to make sure it still works, your approach to problem solving will match that of most software developers.
+To build the program, use the techniques that you learned earlier.  If you get stuck, focus on just one part at a time.  For example, first collect and display only the date information.  Then move on to the next tiny step, collecting the breakfast calories information and displaying that.  By breaking up one large problem into many smaller programs and testing your work along the way to make sure that it still works, your approach to problem solving will match that of most software developers.
 
-No matter how you do it, your code should produce the following output (depending on the values you type in when prompted):
+No matter how you approach writing your code, it should produce the following output, depending on the values you enter when you're prompted:
 
 ```output
 Today's date?

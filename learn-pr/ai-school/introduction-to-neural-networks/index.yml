@@ -8,7 +8,7 @@ metadata:
   ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #ms.learn-contact: markjulmar
+  #ms.learn-contact: adrianstevens
 title: Make predictions from complex data with neural networks
 summary: Use neural network models to make predictions. Change neural network structures to refine predictions using TensorFlow and Keras.
 abstract: | 

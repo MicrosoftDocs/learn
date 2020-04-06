@@ -15,7 +15,7 @@ To use the Azure DevOps Portal to view tests that you've run from the Azure port
 
 If this is the first time you've opened the Azure DevOps dashboard to view the tests, you'll need to select your Azure DevOps organization and then create a new project. In any project, the **Load test** section under **Test Plans** will list the test runs that you initiated from the Azure portal:
 
-![Load tests in Azure DevOps](../media/5-devops-load-test.png)
+:::image type="content" source="../media/5-devops-load-test.png" alt-text="Load tests in Azure DevOps." loc-scope="azure-devops":::
 
 >[!NOTE]
 >Load tests are organization-level entities and are not linked to particular projects. If you have more than one project, you'll see that each project's Load Tests link points to the same set of load tests.

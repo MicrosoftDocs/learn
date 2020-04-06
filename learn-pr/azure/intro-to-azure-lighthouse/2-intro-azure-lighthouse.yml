@@ -33,14 +33,14 @@ quiz:
     choices:
     - content: My Service Offerings.
       isCorrect: false
-      explanation: That's incorrect. There is only one page to view your onboarded customers, my customers.
+      explanation: That's incorrect. The My Customers page lets you see all the customers you have onboarded.
     - content: My Offerings.
       isCorrect: false
-      explanation: That's incorrect. There is only one page to view your onboarded customers, my customers.
+      explanation: That's incorrect. The My Customers page lets you see all the customers you have onboarded.
     - content: My Customers.
       isCorrect: true
       explanation: That's correct. The My Customers page lets you see all the customers you have onboarded.
     - content: My Customer Offerings.
       isCorrect: false
-      explanation: That's incorrect. There is only one page to view your onboarded customers, my customers.
-
+      explanation: That's incorrect. The My Customers page lets you see all the customers you have onboarded.
+      

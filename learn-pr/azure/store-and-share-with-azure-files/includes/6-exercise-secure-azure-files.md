@@ -2,7 +2,7 @@ Azure provides several options to improve security and restrict access to file s
 
 The finance company you're working for wants to migrate existing data files from their on-premises file shares. Before moving these files to the cloud, the company wants to ensure that only their data center and branch offices can access them. To ensure security is in place, you'll enable secure transfers, and then only allow access from a specific set of IP addresses.
 
-In this exercise, you'll check that secure transfers are enforced on the file shares you created previously. After checking, you'll add firewall rules to restrict access to a specific IP address, then test that it can't be accessed from anywhere else. You'll use AzCopy to move all the local files to Azure now that adequate security is in place.
+In this exercise, you'll check that secure transfers are enforced on the file shares you created previously. After checking, you'll add firewall rules to restrict access to a specific IP address, then test that it can't be accessed from anywhere else. Finally, you'll create a snapshot of your file share that you can use to recover files.
 
 ## Enable secure file transfer
 
@@ -49,7 +49,7 @@ In this exercise, you'll check that secure transfers are enforced on the file sh
 > [!NOTE]
 > You may need to navigate to the reports share as the error page could be cached for the data file share.
 
-## Install AzCopy and log in to Azure
+<!-- ## Install AzCopy and log in to Azure
 
 1. Connect to your VM using the Remote Desktop Connection.
 1. Use the browser to download AzCopy by going to [https://aka.ms/downloadazcopy-v10-windows](https://aka.ms/downloadazcopy-v10-windows).
@@ -72,16 +72,16 @@ In this exercise, you'll check that secure transfers are enforced on the file sh
 
     ```powershell
     .\azcopy.exe login
-    ```
+    ``` -->
 
-1. The console prompts you to browse to [https://microsoft.com/devicelogin](https://microsoft.com/devicelogin). Use the code displayed.
+<!-- 1. The console prompts you to browse to [https://microsoft.com/devicelogin](https://microsoft.com/devicelogin). Use the code displayed.
 
-## Copy local files with AzCopy to Azure
+## Copy local files to Azure
 
 1. Create some local example test files using PowerShell.
 
     ```powershell
-    1..1000 | % { New-Item -Path D:\ -Name "$_.txt" -Value (Get-Date).toString() -ItemType file}
+    1..100 | % { New-Item -Path F:\ -Name "$_.txt" -Value (Get-Date).toString() -ItemType file}
     ```
 
 1. Sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true).
@@ -127,7 +127,7 @@ In this exercise, you'll check that secure transfers are enforced on the file sh
     Number of Transfers Skipped: 0
     TotalBytesTransferred: 21650
     Final Job Status: Completed
-    ```
+    ``` -->
 
 ## Create a share snapshot
 
@@ -143,3 +143,5 @@ In this exercise, you'll check that secure transfers are enforced on the file sh
 1. In the File properties window, select **Previous Versions**, and see the listed snapshots created on the file share.
 
     ![Screenshot of the file properties window, showing previous snapshots](../media/6-previous-versions.png)
+    
+    From here, you can **Open** the previous version to browse the files at that snapshot, or **Restore** files from a snapshot.
