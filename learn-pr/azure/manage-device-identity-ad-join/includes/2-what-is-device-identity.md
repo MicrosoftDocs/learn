@@ -64,16 +64,19 @@ Those criteria can be one or more of:
 - An approved application
 - Needs an app protection policy
 
+If your organization uses MFA, users don't have to do MFA when they're using an MDM compliant, AD joined device. You can choose the option **Require one of the selected controls** with your grant controls selected. If you need extra security for something like a payroll app, choose **Require all the selected controls** to require MFA and a compliant device. 
+
 :::image type="content" source="../media/2-access-controls-grant.png" alt-text="Screenshot of the access control grant settings.":::
 
-If your organization uses MFA, users don't have to do MFA when they're using an MDM compliant, AD joined device. You can choose the option **Require one of the selected controls** with your grant controls selected. If you need extra security for something like a payroll app, choose **Require all the selected controls** to require MFA and a compliant device. 
+
 
 ### Create Conditional Access policies
 
 To create a Conditional Access policy, go to **Azure Active Directory** > **Security** > **Conditional Access** > **New policy**.
 
-[!div class="mx-imgBorder"]
-![Screenshot that show a new Conditional Access policy with no assignments or access controls set.](../media/2-conditional-access-policies.png)
+
+>[!div class="mx-imgBorder"]
+>![Screenshot that show a new Conditional Access policy with no assignments or access controls set.](../media/2-conditional-access-policies.png)
 
 ## Benefits of device identity management
 
