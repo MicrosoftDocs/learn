@@ -63,20 +63,42 @@ The table below shows the key features of each approach.
 | Local admin rights to primary user | Yes | Configurable | No |
 | Requires OEM support | No | Yes | No |
 
-## Configuring device settings
+## Device settings
 
-In the Azure portal, you control how new devices are joined to your organization. Go to **Azure Active Directory**> **Devices** >**Device settings**. From there, you can configure the following features.
+In the Azure portal, you control how new devices are joined to your organization. Go to **Azure Active Directory**> **Devices** >**Device settings**. From there, you can configure the following features and turn on Azure AD join.
 
-![Screenshot of the region customization for Windows 10.](../media/3-device-settings.png)
+[!div class="mx-imgBorder"]
+![Screenshot of the Azure AD device settings.](../media/3-device-settings.png)
 
 
 |Field  |Description  |
 |---------|---------|
-|Users may join devices to Azure AD   |  **All** allows for any device to be joined. **Selected** gives fine-grained control over the type of devices you can add. **None** prevents new devices from joining your Azure AD.     |
-|Additional local administrators on Azure AD joined devices     | Lets you specify other users to be included as local administrators on all joined devices.  |
-|Require Multi-Factor Authentication to join device |  Lets you enforce Multi-Factor Authentication (MFA) when the device joins your Azure AD.    |
-|Maximum number of devices per user| Maximum number of devices a user can have in Azure AD. If they reach this maximum, they'd need to remove a device to add a new one. |
+|Users may join devices to Azure AD   |  **All** allows for any user to join their device. **Selected** allows you to add specific users that can join devices. **None** prevents all users from joining their devices.     |
+|Additional local administrators on Azure AD joined devices     | Lets you specify other users to be included as local administrators on all joined devices. By default, this option is enabled. Azure adds the global administrator and device administrator roles as local administrators on device. |
+|Users may register their devices with Azure AD|Allows users to register their devices with Azure AD Join. If you're using Microsoft Intune or Mobile Device Management for Office 365, device registration is required. If either of these services are configured in your Azure AD organization, *All* is selected and this option is disabled.|
+|Require Multi-Factor Authentication to join device |  Lets you enforce Multi-Factor Authentication (MFA) when the device joins your Azure AD. For the users that join devices to Azure AD using MFA, the device itself becomes a 2nd factor.   |
+|Maximum number of devices per user| Maximum number of devices a user can have in Azure AD. If they reach this maximum, the user would need to remove a device to add a new one. |
 
+For our scenario, we could add a pilot group of users to try AD Join. In that case, you'd choose **Users may join devices to Azure AD** > **Selected** and then add members of your pilot group. When you're ready to roll this out to your organization, select **All**.
+
+## Mobility settings
+
+You may need to add a MDM provider before you can configure mobility settings. To add your MDM provider, go to **Azure Active Directory** > **Mobility (MDM and MAM)** > **Add application**.
+
+[!div class="mx-imgBorder"]
+![Screenshot that shows mobility applications you can add like Microsoft Intune.](../media/3-mobility-add-application.png)
+
+
+When you have your MDM provider added, you can configure the following mobility settings.
+
+|Mobility setting  |description  |
+|---------|---------|
+|MDM user scope    |  Select **None**, **Some**, or **All**.  If the user *is* in the MDM scope and you have an Azure AD Premium subscription, MDM enrollment is automated along with Azure AD join. All users within the scope must have an appropriate license for your MDM. If not, the MDM enrollment fails and Azure AD join is rolled back. If the user *isn't* in the MDM scope, Azure AD join completes without any MDM enrollment. The device is an unmanaged device.  |
+|MDM URLs    | The three URLs related to your MDM configuration are **MDM terms of use URL**, **MDM discovery URL** and **MDM compliance URL**. Each URL has a predefined default value. If these fields are empty, please contact your MDM provider for more information.    |
+|MAM settings     |  Mobile Application Management (MAM) does not apply to Azure AD join.       |
+
+
+Recall that you need to restrict access to the organization's resources to only those devices managed by your organization and considered compliant by your mobile device management (MDM) system. So for our scenario, we'd want to add our organizations MDM provider and select the **MDM user scope** > **All**. 
 
 ## Join a Windows 10 device through Azure AD join
 
