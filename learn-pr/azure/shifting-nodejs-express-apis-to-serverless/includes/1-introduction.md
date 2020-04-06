@@ -12,7 +12,12 @@ Plus, you could write less code!
 
 ## Learning objective
 
-You'll start by exploring and running the Node and Express APIs in the sample project. Then you'll create an Azure Functions application followed by refactoring the Express routes and data calls to the Azure Functions application. Finally, you'll explore and launch your application, as shown below.
+In this tutorial, you move from an Express API to a serverless architecture through the following steps: 
+
+1. You'll begin by exploring and running the Node and Express APIs in the sample project
+2. Next, you'll create an Azure Functions application
+3. Then, you'll refactor the Express routes and data calls to use the Azure Functions application
+4. Finally, you'll explore and launch your application, as shown below
 
 ![Vacation Wish List sample application](../media/vacation-wish-list-app.png)
 
