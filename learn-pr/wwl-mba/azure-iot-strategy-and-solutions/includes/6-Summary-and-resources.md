@@ -19,7 +19,7 @@ Here are the three key takeaways from this module:
 
 1. Microsoft Azure IoT addresses common business challenges that can help accelerate business transformation by reducing cost and complexity while improving security at scale.
 1. Insights uncovered from connected devices and backend systems can be transformed into powerful applications and services to achieve business success.
-1. Azure IoT supports a wide range of business outcomes, including empowering employees, engaging customers, optimizing operations, and transforming products, across all industries.
+1. Azure IoT supports a wide range of business outcomes, across many industries. These outcomes include empowering employees, engaging customers, optimizing operations, and transforming products.
 
 :::column-end:::
 

@@ -68,7 +68,7 @@ quiz:
       explanation: "These IoT solutions are currently the most commonly used."
     - content: "Empower employees, engage customers, optimize operations, and transform products"
       isCorrect: false
-      explanation: "These goals are the digital transformation pillars that may be enabled by IoT, but they are not IoT solutions."
+      explanation: "These goals are the digital transformation pillars that may be enabled by IoT, but they aren't IoT solutions."
     - content: "Cloud migration, application modernization, microservices, serverless computing, and DevOps"
       isCorrect: false
       explanation: "These processes are components of application migration and modernization, not IoT solutions."
