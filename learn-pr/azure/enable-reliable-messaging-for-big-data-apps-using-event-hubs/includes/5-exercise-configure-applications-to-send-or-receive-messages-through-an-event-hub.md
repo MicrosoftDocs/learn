@@ -72,7 +72,7 @@ Use the following steps to clone the Event Hubs GitHub repository with `git`. Yo
 
 ## Edit SimpleSend.java
 
-We're going to use the built-in Cloud Shell Code editor. This is based on the Monaco editor and is similar to Visual Studio Code, but completely online.
+We're going to use the built-in Cloud Shell editor. This is based on the Monaco editor used by Visual Studio Code, but is completely online.
 
 We'll use the editor to modify the SimpleSend application and add your Event Hubs namespace, Event Hub name, shared access policy name, and primary key. The main commands are displayed at the bottom of the editor window. 
 
@@ -84,7 +84,7 @@ You'll need to write out your edits using <kbd>Ctrl+O</kbd>, and then <kbd>ENTER
     cd ~/azure-event-hubs/samples/Java/Basic/SimpleSend/src/main/java/com/microsoft/azure/eventhubs/samples/SimpleSend
     ```
 
-1. Open the code editor in the current folder. This will show a list of files on the left and an editor space on the right.
+1. Open the Cloud Shell editor in the current folder. This will show a list of files on the left and an editor space on the right.
 
     ```bash
     code .
@@ -141,7 +141,7 @@ You'll now configure a **receiver** (also known as **subscribers** or **consumer
 
 For the receiver application, two methods are available; **EventHubReceiver** and **EventProcessorHost**. EventProcessorHost is built on top of EventHubReceiver, but provides simpler programmatic interface than EventHubReceiver. EventProcessorHost can automatically distribute message partitions across multiple instances of EventProcessorHost using the same storage account.
 
-In this unit, you’ll use the EventProcessorHost method. You'll edit the EventProcessorSample application to add your Event Hubs namespace, Event Hub name, shared access policy name and primary key, storage account name, connection string, and container name.
+In this unit, you'll use the EventProcessorHost method. You'll edit the EventProcessorSample application to add your Event Hubs namespace, Event Hub name, shared access policy name and primary key, storage account name, connection string, and container name.
 
 1. Change to the **EventProcessorSample** folder using the following command:
 
@@ -149,7 +149,7 @@ In this unit, you’ll use the EventProcessorHost method. You'll edit the EventP
     cd ~/azure-event-hubs/samples/Java/Basic/EventProcessorSample/src/main/java/com/microsoft/azure/eventhubs/samples/eventprocessorsample
     ```
 
-1. Open the code editor.
+1. Open the Cloud Shell editor.
 
     ```bash
     code .
@@ -187,7 +187,7 @@ In this unit, you’ll use the EventProcessorHost method. You'll edit the EventP
 
     The build process may take several minutes to complete. Ensure that you see a **[INFO] BUILD SUCCESS** message before continuing.
 
-    ![Build results for receiver application](../media/5-receiver-build.png)
+    :::image type="content" source="../media/5-receiver-build.png" alt-text="Build results for receiver application." loc-scope="other"::: <!-- no-loc -->
 
 ## Start the sender and receiver apps
 

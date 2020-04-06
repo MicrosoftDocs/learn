@@ -5,8 +5,8 @@ metadata:
   title: Application security
   description: In this unit we'll discuss how to integrate application security into your architecture
   ms.date: 10/02/2019
-  author: markjulmar
-  ms.author: smmark
+  author: adrianstevens
+  ms.author: adsteven
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 8

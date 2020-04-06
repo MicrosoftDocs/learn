@@ -49,7 +49,7 @@ If you have an application that is hosted as a project in GitHub, you can make a
 
 You can use one of the built-in editors in the Cloud Shell to modify all the files that make up the application and add your Event Hub namespace, Event Hub name, shared access policy name, and primary key. 
 
-The Cloud Shell supports **nano**, **vim**, **emacs, and a Visual Studio Code-like editor named **code**. Just type the name of the editor you want and it will launch in the environment. We'll use the **code** editor in the next unit.
+The Cloud Shell supports **nano**, **vim**, **emacs, and the Cloud Shell editor (code)**. Just type the name of the editor you want and it will launch in the environment. We'll use the Cloud Shell editor (**code**) editor in the next unit.
 
 ## Summary
 

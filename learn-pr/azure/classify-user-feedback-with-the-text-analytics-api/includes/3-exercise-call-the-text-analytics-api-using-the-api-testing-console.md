@@ -80,24 +80,25 @@ We'll pass in our subscription key, or access key, in the **ocp-Apim-Subscriptio
 
     In the Headers section of the user interface, we set the access, or subscription, key in the header of our request.
 
-    ![Screenshot of headers section.](../media/2-marker.PNG)
+    :::image type="content" source="../media/2-marker.png" alt-text="Screenshot of headers section." loc-scope="azure-text-analytics":::
 
     Next, we have the request body section, which holds a **documents** array. Each document in the array has three properties. The properties are *"language"*, *"id"*, and *"text"*. The *"id"* is a number in this example, but it can be anything you want as long as it's unique in the documents array. In this example, we're also passing in documents written in three different languages. Over 15 languages are supported in the Sentiment feature of the Text Analytics API. For more information, check out [Supported languages in the Text Analytics API](https://docs.microsoft.com/azure/cognitive-services/text-analytics/text-analytics-supported-languages). The maximum size of a single document is 5,000 characters, and one request can have up to 1,000 documents.
 
-    ![Screenshot of Request Body section](../media/3-marker.PNG)
+    :::image type="content" source="../media/3-marker.png" alt-text="Screenshot of Request Body section." loc-scope="azure-text-analytics":::
 
     The complete request, including the headers and the request URL are displayed in the next section. In this example, you can see that the requests are routed to a URL that begins with `westus`. The URL differs depending on the location you selected when you created your Text Analytics account.
 
-    ![Screenshot of section number four showing the request URL.](../media/4-marker.PNG)
-    ![Screenshot of the section number five showing detailed HTTP request.](../media/5-marker.PNG)
+    :::image type="content" source="../media/4-marker.png" alt-text="Screenshot of section number four showing the request URL." loc-scope="azure-text-analytics":::
+
+    :::image type="content" source="../media/5-marker.png" alt-text="Screenshot of section number five showing the detailed HTTP request." loc-scope="azure-text-analytics":::
 
     Then we have information about the response. In the example, we see that the request was a success and code `200` was returned.
 
-    ![Screenshot of section number five showing the response status](../media/6-marker.PNG)
+    :::image type="content" source="../media/6-marker.png" alt-text="Screenshot of section number five showing the response status." loc-scope="azure-text-analytics":::
 
     Finally, we see the response to our request. The response holds the insight the Text Analytics API had about our documents. An array of documents is returned to us, without the original text. We get back an *"id"* and *"score"* for each document. The API returns a numeric score between 0 and 1. Scores close to 1 indicate positive sentiment, while scores close to 0 indicate negative sentiment. A score of 0.5 indicates the lack of sentiment, a neutral statement. In this example, we have two pretty positive documents and one negative document.
 
-    ![Screenshot of the section number five showing the response content.](../media/7-marker.PNG)
+    :::image type="content" source="../media/7-marker.png" alt-text="Screenshot of the section number five showing the response content." loc-scope="azure-text-analytics":::
 
 Congratulations! You've made your first call to the Text Analytics API without writing a line of code. Feel free to stay in the console and try out more calls. Here are some suggestions:
 

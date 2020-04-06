@@ -24,9 +24,7 @@ roles:
 - security-engineer
 products:
 - azure-iot-security-center
-- m365-security-center
 - azure-iot-security-center
-- m365-ems-cloud-app-security
 modules:
 - learn.tm-introduction-to-threat-modeling
 - learn.tm-create-a-threat-model-using-foundational-data-flow-diagram-elements

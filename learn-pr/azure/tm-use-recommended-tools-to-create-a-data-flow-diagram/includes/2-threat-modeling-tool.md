@@ -28,11 +28,11 @@ For more advanced users, the template can be customized across three main sectio
 
 Process, external entity, data store, data-flow, and trust boundaries make up the parent elements.
 
-![Parent Stencils](../media/ParentStencils.JPG)
+:::image type="content" source="../media/parentstencils.jpg" alt-text="Parent Stencils." loc-scope="other":::
 
 You can also create children elements to help provide granularity for additional context, actionable threat generation, and risk reduction strategies.
 
-![Expanded Flow Stencils](../media/ExpandedFlowStencils.JPG)
+:::image type="content" source="../media/expandedflowstencils.jpg" alt-text="Expanded Flow Stencils." loc-scope="other":::
 
 #### Example of How Children Elements Work
 
@@ -42,21 +42,21 @@ HTTP should generate more threats because tampering, information disclosure and 
 
 ##### Using HTTP
 
-![HTTP](../media/HTTP.JPG)
+:::image type="content" source="../media/HTTP.JPG" alt-text="Illustrates the HTTP child element." loc-scope="other":::
 
 ##### Using HTTPS
 
-![HTTPS](../media/HTTPS.JPG)
+:::image type="content" source="../media/HTTPS.JPG" alt-text="Illustrates the HTTPS child element." loc-scope="other":::
 
 #### How to Add Element Properties
 
 If you have additional properties that must be included in the default template, you can add them to each element in the administrator view.
 
-![Stencil Properties Admin View](../media/StencilPropertiesAdmin.JPG)
+:::image type="content" source="../media/StencilPropertiesAdmin.JPG" alt-text="Stencil Properties Admin View." loc-scope="other":::
 
 Users will see the changes whenever they drag and drop that element onto the canvas.
 
-![Stencil Properties User View](../media/StencilProperties.JPG)
+:::image type="content" source="../media/StencilProperties.JPG" alt-text="Stencil Properties User View." loc-scope="other":::
 
 ### Threat Properties
 
@@ -74,13 +74,13 @@ Add fields that give you more context and actionable steps. Examples include:
 - **Hyperlinks** - link issues to online documentation
 - **External Risk Mapping** - speak the same risk language of other organizations by using reliable third-party sources, such as OWASP Top 10 and CWE Details
 
-![Threat Properties Admin View](../media/ThreatAdminView.JPG)
+:::image type="content" source="../media/ThreatAdminView.JPG" alt-text="Threat Properties Admin View." loc-scope="other":::
 
 ##### User View
 
 Threat Modeling Tool users will see those changes whenever they analyze their data-flow diagrams.
 
-![Threat Properties User View](../media/ThreatUserView.JPG)|
+:::image type="content" source="../media/ThreatUserView.JPG" alt-text="Threat Properties User View." loc-scope="other":::
 
 ### Threats and Risk Reduction Strategies
 
@@ -122,7 +122,7 @@ The Cross Site Scripting threat above will **only** be generated when:
 - The process is either a Web Server or a Web Application
 - Input and output are not sanitized
 
-![Include Exclude](../media/IncludeExclude.JPG)|
+:::image type="content" source="../media/IncludeExclude.JPG" alt-text="Include Exclude." loc-scope="other":::
 
 > [!NOTE]
 > Microsoft Threat Modeling Tool template creation is a complex topic and will not be fully discussed in this learning path.

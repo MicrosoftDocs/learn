@@ -10,7 +10,7 @@ It's time to put some gasoline in this API engine and fire it up. That's an anal
 
 1. Select the "tailwind-xxxxx" account. Your five-digit number will be different than the ones shown in this screenshot as each database account is unique and special. Like a snowflake.
 
-   ![Screenshot listing all available Azure Cosmos DB accounts in the VS Code Command Palette.](../media/cosmos-select-account.png)
+   :::image type="content" source="../media/cosmos-select-account.png" alt-text="Screenshot listing all available Azure Cosmos DB accounts in the VS Code Command Palette." loc-scope="vs-code":::
 
 1. Press <kbd>Enter</kbd>
 
@@ -214,6 +214,6 @@ Install the Azure Cosmos DB package from npm.
 
 1. Behold the products.
 
-   ![Screenshot of a web browser displaying items in the products collection displayed is JSON format.](../media/all-products.png)
+    :::image type="content" source="../media/all-products.png" alt-text="Screenshot of a web browser displaying items in the products collection displayed is JSON format." loc-scope="other"::: <!-- no-loc -->
 
 This API is DONE. Excellent work. Now you'll bring the frontend web project to life like a mad scientist by pointing it at your API. Unfortunately, your browser isn't going to go for that plan at all. The reason for that is something called "Cross-Origin Resource Sharing". Let's talk about that.

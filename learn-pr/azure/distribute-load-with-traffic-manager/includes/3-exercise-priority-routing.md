@@ -118,7 +118,7 @@ In this exercise, you set up Traffic Manager to use the United States endpoint a
 
 1. Verify that the application is working and the location shown at the bottom of the page is West US 2.
 
-    ![Screenshot of the running West US web app](../media/3-west-us-app.png)
+    :::image type="content" source="../media/3-west-us-app.png" alt-text="Screenshot of the running West US web app." loc-scope="other"::: <!-- no-loc -->
 
 1. Disable the primary endpoint.
 
@@ -158,4 +158,4 @@ In this exercise, you set up Traffic Manager to use the United States endpoint a
 
 1. Test the application again from your browser by refreshing the web page. Traffic Manager should automatically redirect the traffic to the East Asia endpoint. Depending on your browser, it might take a few minutes for the locally cached address to expire. Opening the site in a private window should bypass the cache, so you can see the change immediately.
 
-    ![Screenshot of the running East Asia web app](../media/3-east-asia-app.png)
+    :::image type="content" source="../media/3-east-asia-app.png" alt-text="Screenshot of the running East Asia web app." loc-scope="other":::

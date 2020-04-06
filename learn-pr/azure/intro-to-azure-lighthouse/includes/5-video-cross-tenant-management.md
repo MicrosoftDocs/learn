@@ -8,7 +8,7 @@ In this unit, you'll see how a Contoso management user goes about managing the L
 
 ## Overview
 
-The Azure Lighthouse service has two parts to it. The first is the service provider, looking to provide a scalable Azure-managed service. The second is the customer looking to have some aspect of the Azure subscription or resource groups administered on their behalf. Both of parts have unique requirements, each with their own prerequisites and configurations. Setting up two disparate environments is beyond the scope of this module.
+The Azure Lighthouse service has two parts to it. The first is the service provider, looking to provide a scalable Azure-managed service. The second is the customer looking to have some aspect of the Azure subscription or resource groups administered on their behalf. Both parts have unique requirements, each with their own prerequisites and configurations. Setting up two disparate environments is beyond the scope of this module.
 
 So, to better demonstrate the capabilities of using Azure Lighthouse with our customer Lamna Healthcare, a video presentation has been created.
 
