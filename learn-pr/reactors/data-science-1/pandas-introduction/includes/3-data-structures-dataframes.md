@@ -40,6 +40,8 @@ countries = pd.DataFrame({'Population': population, 'Area': area})
 countries
 ```
 
+### Table created with Markdown syntax
+
 ```Output```
 
 |   | Population | Area |
@@ -49,6 +51,33 @@ countries
 | **Germany** | 82408706.0 | 357386 |
 | **Japan** | 126922333.0 | 377972 |
 | **Russia** | 143910127.0 | 17125200 |
+
+### Table created with HTML div and table syntax
+
+<div>
+<style>
+   table { border-collapse: collapse; border: 1px solid darkgrey; background-color:rgb(240,240,240); width: 300px; padding: 5px; }
+   th { border: 1px solid darkgrey; text-align: left; padding: 5px; }
+   tr { border: 1px solid darkgrey; text-align: left; padding: 5px; }
+   td { border: 1px solid darkgrey; padding: 5px; }
+</style>
+<table>
+   <tr>
+       <th style="width: 100px"  ></th>
+       <th style="width: 125px" >Population</th>
+       <th style="width: 75px"  >Area</th></tr>
+   <tr><th>Albania</th>
+       <td>NaN</td><td>28748</td></tr>
+   <tr><th>France</th>
+       <td>65429495.0</td><td>643801</td></tr>
+   <tr><th>Germany</th>
+       <td>82408706.0</td><td>357386</td></tr>
+   <tr><th>Japan</th>
+       <td>126922333.0</td><td>377972</td></tr>
+   <tr><th>Russia</th>
+       <td>143910127.0</td><td>17125200</td></tr>
+</table></div>
+
 
 As with `Series`, the `DataFrames` also automatically order indices (in this case, the column indices 'Area' and 'Population').
 

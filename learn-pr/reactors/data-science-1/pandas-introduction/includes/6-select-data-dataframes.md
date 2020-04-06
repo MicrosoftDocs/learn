@@ -4,7 +4,6 @@
 > **Sarah: Action items**
 > 
 > - Add one or more sentences as introduction / scenario statement for the Exercise H2 heading.
-> - There are a few input commands where the input syntax is not specified. Search on "???".
 >
 
 ## DataFrame as dictionary of Series
