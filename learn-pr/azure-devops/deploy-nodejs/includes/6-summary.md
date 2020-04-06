@@ -1,13 +1,9 @@
-Great work! In this module, we extended a release pipeline to add support for deploying an Azure Functions app. The single release pipeline now builds a multi-project solution and deploys different components to different cloud targets in Azure.
+Great work! In this module, you built a release pipeline to deploy a Node.js solution to Azure via Azure DevOps. The pipeline automatically runs whenever a commit is made to the master branch, builds and tests the solution, and securely deploys to cloud assets.
 
-While this module specifically focused on an App Service and Azure Functions app, the fundamentals covered apply across a wide range of build and deployment targets. You can also see how Azure Pipelines can scale to support even the most sophisticated scenarios.
+While this module specifically focused on a Node.js app deployed to an Azure App Service, the fundamentals covered apply across a wide range of build and deployment targets. You can also see how Azure Pipelines can scale to support even the most sophisticated scenarios.
 
 ## Learn more
 
-In this module, you worked with Azure Functions, which are one of the development models within the broader Azure serverless computing offerings. Azure Functions was a great solution for the Tailspin team, but your needs will vary, and it's important to understand which compute options are best for your scenario. Explore these resources to learn more.
+In this module, you worked with Node.js, which is just one of the many platforms Azure supports natively. To learn about support and tutorials for different developer platforms, see [Build applications with Azure](https://azure.microsoft.com/en-us/developer/?azure-portal=true).
 
-There are quite a few serverless offerings under the Azure umbrella, and there is some overlap between various services. For a more in-depth review of some key serverless options, including Azure Functions, Microsoft Flow, Azure Logic Apps, and Azure App Service WebJobs, see [Choose the right integration and automation services in Azure](https://docs.microsoft.com/azure/azure-functions/functions-compare-logic-apps-ms-flow-webjobs?azure-portal=true).
-
-Azure Functions is also a great option for microservice solutions like the one the Tailspin team is evolving towards here. To understand the different options for microservices on Azure, including Azure Functions, Kubernetes, and Service Fabric, see [Choosing an Azure compute option for microservices](https://docs.microsoft.com/azure/architecture/microservices/design/compute-options?azure-portal=true).
-
-However, serverless isn't always appropriate for every situation. Stateful applications, for example, are not a good fit for serverless computing. Fortunately, Azure provides many different compute offerings that cover virtually every cloud scenario. For help finding the right one for your application, see [Choose an Azure compute service for your application](https://docs.microsoft.com/azure/architecture/guide/technology-choices/compute-decision-tree?azure-portal=true).
+In addition to supporting multiple platforms, Azure also provides a variety of resources that can be used from Node.js solutions. For an example using Visual Studio Code and Azure Cosmos DB, see [Build a Node.js app for Azure Cosmos DB in Visual Studio Code](/learn/modules/build-node-cosmos-app-vscode/?azure-portal=true).

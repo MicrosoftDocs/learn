@@ -4,9 +4,9 @@ title: What is Node.js?
 metadata:
   title: What is Node.js?
   description: Understand what Node.js is and how it can be deployed to Azure.
-  ms.date: 04/04/2020
-  author: edkaim
-  ms.author: v-edkaim
+  ms.date: 04/07/2020
+  author: tpetchel
+  ms.author: tpetchel
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 7

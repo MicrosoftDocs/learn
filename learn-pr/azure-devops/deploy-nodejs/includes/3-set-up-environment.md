@@ -4,7 +4,7 @@ To accomplish these goals, you:
 
 > [!div class="checklist"]
 > * Add a user to ensure Azure DevOps can connect to your Azure subscription.
-> * Set up an Azure DevOps project for this module.
+> * Clone a GitHub repo for this module.
 > * Create the Azure App Service using the Azure CLI in Azure Cloud Shell.
 
 ## Add a user to Azure DevOps
@@ -17,38 +17,12 @@ If you use different Microsoft accounts to sign in to Azure and Azure DevOps, ad
 
 Then sign out of Azure DevOps and sign in. Use the Microsoft account that you use to sign in to your Azure subscription.
 
-## Get the Azure DevOps project
+## Clone the GitHub repo
 
-Here you make sure that your Azure DevOps organization is set up to complete the rest of this module. To do so, you run a template that creates a project in Azure DevOps.
+Here you clone the GitHub repo required for this project. It's a simple Hello World app built using Node.js.
 
-The modules in this learning path form a progression. You follow the Tailspin web team through their DevOps journey. For learning purposes, each module has its own Azure DevOps project.
-
-### Run the template
-
-Run a template that sets up your Azure DevOps organization:
-
-> [!div class="nextstepaction"]
-> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?name=DeployNodeJS&azure-portal=true)
-
-From the Azure DevOps Demo Generator site, follow these steps to run the template:
-
-1. Select **Sign In** and accept the usage terms.
-1. On the **Create New Project** page, select your Azure DevOps organization. Enter a project name, such as *Node.js CICD*.
-
-    ![Creating a project through Azure DevOps Demo Generator](../media/3-create-new-project.png)
-
-1. Select **Yes, I want to fork this repository** > **Authorize**.
-
-    If a window appears, authorize access to your GitHub account.
-
-    > [!IMPORTANT]
-    > You need to select this option so the template will connect to your GitHub repository. Select it even if you've already forked the _Node.js Docs Hello World_ website project. The template uses your existing fork.
-
-1. Select **Create Project**.
-
-    The template takes a few moments to run.
-
-1. Select **Navigate to project** to go to your project in Azure DevOps.
+1. Navigate your browser to the [Node.js Hello World repo](https://github.com/Azure-Samples/nodejs-docs-hello-world?azure-portal=true).
+1. Select **Fork** and select an account to fork into.
 
 > [!IMPORTANT]
 > In this module, the [Clean up your Azure DevOps environment](/learn/modules/deploy-nodejs/5-clean-up-environment?azure-portal=true) page contains important cleanup steps. Cleaning up helps ensure that you don't run out of free build minutes. Be sure to follow the cleanup steps even if you don't complete this module.

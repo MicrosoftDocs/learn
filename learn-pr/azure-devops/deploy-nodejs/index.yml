@@ -3,9 +3,9 @@ uid: learn.azdo.deploy-nodejs
 metadata:
   title: Automate Node.js deployments with Azure Pipelines - Learn
   description: Learn to implement a CI/CD pipeline for Node.js.
-  ms.date: 04/04/2020
-  author: edkaim
-  ms.author: v-edkaim
+  ms.date: 04/07/2020
+  author: tpetchel
+  ms.author: tpetchel
   ms.topic: interactive-tutorial
   #ms.learn-contact: v-edkaim
   ms.prod: learning-azure
@@ -13,8 +13,8 @@ title: Automate Node.js deployments with Azure Pipelines
 summary: Learn to implement a CI/CD pipeline for Node.js.
 abstract: |
   In this module, you will:
-  - Create Azure resources to support a Node.js app.
-  - Create a basic release pipeline to build and deploy a Node.js app.
+  - Create Azure resources to support a Node.js solution.
+  - Create an Azure DevOps pipeline to build and release the solution to Azure.
   - Monitor the build, release, and deployment of the project.
 prerequisites: |
   - An Azure subscription

@@ -3,21 +3,38 @@ The GitHub repo cloned for this project contains the source for a minimal Node.j
 In this part, you'll:
 
 > [!div class="checklist"]
+> * Install Azure Pipelines for your GitHub repo.
+> * Set up an Azure DevOps project for this module.
 > * Create a CI/CD pipeline triggered by commits to the *master* branch.
 > * Review the pipeline tasks.
 > * Save the pipeline to trigger a CI/CD workflow.
 
+## Install the Azure Pipelines extension
+
+Here you install Azure Pipelines for the forked repo
+
+1. Use your browser to navigate to the [GitHub Marketplace](https://github.com/marketplace?azure-portal=true).
+1. Search for **Azure Pipelines** and select the **Azure Pipelines** result.
+1. Locate the *Free* option and select **Install it for free**.
+1. Select **Complete order and begin installation**.
+1. Select **Only select repositories** and choose the **nodejs-docs-hello-world** repo forked earlier.
+1. Select **Install**.
+
+## Set up an Azure DevOps project
+
+The previous task will begin the process of linking your GitHub repo to your Azure DevOps account. You now complete that process and create a new Azure DevOps project as part of the process.
+
+1. Sign in when prompted.
+1. Use the form to create a new Azure DevOps project. 
+1. Select **Continue**.
+
 ## Create a CI/CD pipeline
 
-Here you create a new existing CI/CD pipeline. This will be saved as *azure-pipelines.yml* in the repo root.
+Here you create a new CI/CD pipeline using one of the built-in templates. This will be saved as *azure-pipelines.yml* in the repo root.
 
-1. From Azure DevOps, navigate to **Pipelines**.
-1. Select **Create Pipeline**.
-1. Select **GitHub**.
 1. Select the Node.js project created earlier (called *nodejs-docs-hello-world*).
-1. Select **Approve & Install**.
 1. Select **Node.js Express Web App to Linux on Azure**.
-1. If prompted, select your Azure subscription.
+1. If prompted, select the Azure subscription you created resources under earlier.
 1. Select the **Web App name** created earlier.
 1. Select **Validate and configure**. 
 
@@ -82,7 +99,7 @@ You can learn more about the flexibility of this task in the official docs for t
 
 ## Save the pipeline to trigger a build and release
 
-1. Select **Save** from the top right corner of the page. Confirm the **Save** to trigger a run.
+1. Select **Save and run** from the top right corner of the page. Confirm the **Save and run** to trigger a run.
 1. In Azure Pipelines, go to the build. Trace the build as it runs.
 1. After the build has succeeded, select the web site's deploy task and click the URL to view the deployed site.
 

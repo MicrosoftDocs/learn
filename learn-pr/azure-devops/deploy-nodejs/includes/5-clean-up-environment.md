@@ -1,4 +1,4 @@
-You're finished with the tasks for this module. Here you'll clean up your Azure resources, move the work item to the **Done** state on Azure Boards, and clean up your Azure DevOps environment.
+You're finished with the tasks for this module. Here you'll clean up your Azure resources and clean up your Azure DevOps environment.
 
 > [!IMPORTANT]
 > This page contains important cleanup steps. Cleaning up helps ensure that you don't run out of free build minutes. It also helps ensure that you're not charged for Azure resources after you complete this module.
@@ -16,10 +16,10 @@ To clean up your resource group:
 
     ![Selecting Cloud Shell from the menu bar](../../shared/media/azure-portal-menu-cloud-shell.png)
 
-1. Run the following `az group delete` command to delete the resource group that you used, `tailspin-space-game-rg`.
+1. Run the following `az group delete` command to delete the resource group that you used, `nodejs-cicd-rg`.
 
     ```bash
-    az group delete --name tailspin-space-game-rg
+    az group delete --name nodejs-cicd-rg
     ```
 
     When prompted, enter `y` to confirm the operation.
@@ -30,22 +30,7 @@ To clean up your resource group:
     az group list --output table
     ```
 
-    You see that the resource group `tailspin-space-game-rg` no longer exists.
-
-## Move the work item to Done
-
-Here you move the work item that you assigned to yourself earlier in this module. You move **Refactor leaderboard API as an Azure Functions app** to the **Done** column.
-
-In practice, "Done" often means putting working software into the hands of your users. For learning purposes, here you mark this work as done because you fulfilled the goal for the Tailspin team. They wanted to refactor their project to extract a leaderboard API as a function app.
-
-At the end of each *sprint*, or work iteration, you and your team can hold a retrospective meeting. In the meeting, share the work you completed, what went well, and what you can improve.
-
-To complete the work item:
-
-1. From Azure DevOps, navigate to **Boards** and then select **Boards** from the menu.
-1. Move the **Refactor leaderboard API as an Azure Functions app** work item from the **Doing** column to the **Done** column.
-
-    ![Azure Boards, showing the card in the Done column](../media/5-azure-boards-wi1-done.png)
+    You see that the resource group `nodejs-cicd-rg` no longer exists.
 
 ## Disable the pipeline or delete your project
 
