@@ -2,7 +2,13 @@ Your company is launching a vacation planning website that helps customers view,
 
 Your API server is critical to the success of the application. The APIs are hosted on a server running Node.js and Express. You need to launch your application and it must scale up and down as needed while minimizing costs. There is a lot for you to think about!
 
-What if you could reduce some of these burdens without rewriting your entire API? Try shifting the API to a serverless model using Azure Functions: no server to maintain, reduce your cost, and your application will scale up and down when needed. Plus, you could write less code!
+What if you could reduce some of these burdens without rewriting your entire API? By shifting the API to a serverless model using Azure Functions you enjoy the following benefits:
+
+- No server to maintain
+- Cost reductions
+- Application scaling up and down as needed
+
+Plus, you could write less code!
 
 ## Learning objective
 
