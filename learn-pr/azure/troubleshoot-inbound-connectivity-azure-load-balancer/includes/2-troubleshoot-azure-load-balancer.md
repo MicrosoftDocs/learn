@@ -61,7 +61,7 @@ If you don't provide a health probe, Load Balancer doesn't know whether a VM is 
 
 The VMs referenced by the back-end pool are typically in a virtual network subnet, hosted by Azure. You protect the VMs in this network by configuring a network security group (NSG). An NSG implements inbound and outbound security rules that can limit the traffic entering and exiting the virtual network to a set of well-defined endpoints.
 
-For example, the VMs in the back-end pool of Load Balancer typically allow inbound traffic on port 80 (HTTP) and port 443 (HTTPS) that arrives from outside of the virtual network. But VMs might block traffic that appears on other ports.
+For example, the VMs in the back-end pool of Load Balancer typically allow inbound traffic on port 80 (HTTP) and port 443 (HTTPS) that arrives from outside the virtual network. But VMs might block traffic that appears on other ports.
 
 ## Symptoms and causes of failure with Load Balancer
 
@@ -69,8 +69,8 @@ Problems arise when Load Balancer loses connectivity with one or more VMs in the
 
 - The application is unreachable.
 - The VMs running the application are unreachable.
-- Slow response times.
-- User requests timing out.
+- Response times are slow.
+- User requests are timing out.
 
 There can be many reasons for these failures. They're most commonly associated with probing issues and data path issues.
 
@@ -79,12 +79,12 @@ There can be many reasons for these failures. They're most commonly associated w
 Probing issues result when one or more VMs in the back-end pool fail to respond to health probe requests. These issues could be a result of:
 
 - An incorrect probe configuration, such as the wrong URL or port.
-- A VM fails to respond to the probe because the required port isn't open.
+- A VM that fails to respond to the probe because the required port isn't open.
 
 ### Data path issues
 
 Data path issues occur when a Load Balancer is unable to route a client request to the application that runs on a VM in the back-end pool. Possible causes include:
 
-- A network security group rule or firewall blocking the ports or IP addresses used by the application.
+- A network security group rule or firewall is blocking the ports or IP addresses used by the application.
 - A VM is down or not responding. The VM might be turned off or failing, or there's a security issue such as an expired certificate on the server.
 - The application isn't responding. The VMs might be overloaded, the application is listening on an incorrect port, or the application is crashing.
