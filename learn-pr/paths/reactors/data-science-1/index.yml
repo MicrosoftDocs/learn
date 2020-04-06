@@ -32,7 +32,7 @@ products:
 modules:
 - learn.reactors.data-science-1.environment-setup
 - learn.reactors.data-science-1.python-introduction
-# - learn.reactors.data-science-1.numpy-introduction
+- learn.reactors.data-science-1.numpy-introduction
 - learn.reactors.data-science-1.pandas-introduction
 - learn.reactors.data-science-1.data-manipulate-clean
 trophy:
