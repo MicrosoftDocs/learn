@@ -151,9 +151,4 @@ In this exercise, you'll update your web app to create SASs with stored access p
 
     :::image type="content" source="../media/7-sas-fails.png" alt-text="Screenshot of the web app failing to view a patient image." loc-scope="other":::
 
-<<<<<<< HEAD
 The image won't be returned from Azure Storage with a 403 authentication error.
-=======
-
-The image won't be returned from Azure Storage with a 403 authentication error-code message.
->>>>>>> 4088a21713e5f093417c21f5914283bb0984ec58

@@ -43,7 +43,7 @@ There are three types of shared access signatures:
 
 - **User delegation SAS**: Secured with Azure AD credentials and can be used only on Azure Blob storage.
 - **Service SAS**: Secured with a storage account key. A service SAS is used on only one service at a time, like Blob storage, Azure Queue storage, Azure Table storage, or Azure Files.
-- **Account SAS**: Secured with a storage account key. An account SAS has the same controls as a service SAS but can also control access to service-level operations, like Get Service Stats.
+- **Account SAS**: Secured with a storage account key. A account SAS has the same controls as a service SAS but can also control access to service-level operations, like Get Service Stats.
 
 You create an SAS in an ad-hoc way. Specify all the options of the SAS that can include start time, expiry time, and permissions.
 

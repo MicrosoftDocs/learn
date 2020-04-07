@@ -28,12 +28,12 @@ quiz:
       explanation: "This option isn't correct and involves your app needing to keep an up-to-date key in code or configuration files. It also grants root-like level access to the storage account."
   - content: "Your public-facing static website stores all its public UI images in blob storage. The website needs to display the graphics without any kind of authorization. Which is the best option?"
     choices:
-    - content: "Public access."
+    - content: "Public access"
       isCorrect: true
       explanation: "This option requires the least effort to implement. There are no credentials that need to be stored or managed. For this website, it's the best option."
-    - content: "Shared key."
+    - content: "Shared key"
       isCorrect: false
       explanation: "This option isn't a good solution in this scenario. Only read-only access is required. Using a shared key gives root-like access to the storage."
-    - content: "Shared access signature."
+    - content: "Shared access signature"
       isCorrect: false
       explanation: "The flexibility and security of using a shared access signature aren't required in this scenario. Public access is the best option."
