@@ -6,7 +6,7 @@ The components used in this unit are:
 
 **Device connection string:** used by devices to send Device to Cloud messages, receive Cloud to Device messages or response direct method. The IoT Devkit can communicate with the cloud by configuring the connection string.
 
-**Device Code:** The device code is in the Device folder in the project sample, and contains a single file called **DevKitTranslator.ino**. This file is an Arduino sketch file for the firmware. Arduino code has two functions called setup and loop. The setup function for this project is called once when the device starts up. It initializes the device, connects to WiFi, connects to the IoT Hub.  After that, the loop function is called repeatedly to do whatever your solution needs. The loop function has a switch-case structure for this proect. It includes the following functions described in the code file.
+**Device Code:** The device code is in the Device folder in the project sample, and contains a single file called **DevKitTranslator.ino**. This file is an Arduino sketch file for the firmware. Arduino code has two functions called setup and loop. The setup function for this project is called once when the device starts up. It initializes the device, connects to WiFi, connects to the IoT Hub.  After that, the loop function is called repeatedly to do whatever your solution needs. The loop function has a switch-case structure for this project. It includes the following functions described in the code file.
 
 - DoIdle()
 

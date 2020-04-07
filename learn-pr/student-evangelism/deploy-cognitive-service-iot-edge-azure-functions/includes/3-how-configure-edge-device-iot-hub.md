@@ -1,6 +1,6 @@
- Firstly, you create an IoT Hub and register the device with the IoT Hub. Then you will configure the IoT device (Mxchip AZ3166) to connect to the WiFi.  
+ Firstly, you create an IoT Hub and register the device with the IoT Hub. Then you'll configure the IoT device (Mxchip AZ3166) to connect to the WiFi.  
 
- You will use the following components for this stage:  
+ You'll use the following components for this stage:  
 
 - **Resource Group:** a collection of resources for a solution.
 
@@ -19,5 +19,5 @@
 
 Before you begin, if you don't have an active Azure subscription, you need to create a free account, and you can use 30 days free trial, or you can create your pay-as-you-go subscription.
 
-After completing this unit, your device will be connected to the WiFi, and you will have a device identity created in the IoT Hub. The device identity retrieves the connection string that will be used to configure the IoT device to send the data to the cloud.
+After completing this unit, your device will be connected to the WiFi, and you'll have a device identity created in the IoT Hub. The device identity retrieves the connection string that will be used to configure the IoT device to send the data to the cloud.
 
