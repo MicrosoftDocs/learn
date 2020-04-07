@@ -1,6 +1,6 @@
 After you have published a pipeline, you can initiate it on demand through its REST endpoint, or you can have the pipeline run automatically based on a periodic schedule or in response to data updates.
 
-## Scheduling a Pipeline for Periodic Intervals
+## Scheduling a pipeline for periodic intervals
 
 To schedule a pipeline to run at periodic intervals, you must define a **ScheduleRecurrance** that determines the run frequency, and use it to create a **Schedule**.
 
@@ -17,7 +17,7 @@ pipeline_schedule = Schedule.create(ws, name='Daily Training',
                                         recurrence=daily)
 ```
 
-## Triggering a Pipeline Run on Data Changes
+## Triggering a pipeline run on data changes
 
 To schedule a pipeline to run whenever data changes, you must create a **Schedule** that monitors a specified path on a datastore, like this:
 

@@ -5,8 +5,8 @@ metadata:
   description: Learn how to work with subscriptions, users, and groups by configuring Microsoft Azure Active Directory for workloads.
   brand: azure
   ms.date: 10/1/2019
-  author: markjulmar
-  ms.author: smmark
+  author: adrianstevens
+  ms.author: adsteven
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Manage identity and access in Azure Active Directory
@@ -34,5 +34,6 @@ modules:
 - learn.secure-app-with-oidc-and-azure-ad
 - learn.azure-security.secure-aad-users-with-mfa
 - learn.azure.allow-users-to-reset-their-password
+- learn.azure.add-custom-domain-name-azure-active-directory
 trophy:
   uid: learn.security.manage-identity-and-access.trophy

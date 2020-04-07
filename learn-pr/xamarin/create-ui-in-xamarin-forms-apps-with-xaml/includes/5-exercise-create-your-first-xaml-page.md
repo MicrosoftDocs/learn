@@ -19,7 +19,7 @@ In this exercise, you start with an app that displays an alpha numeric telephone
     1. Select the **Visual C#** > **Xamarin.Forms** > **Content Page XAML** template.
     1. Name the new file **MainPage** as shown in the following screenshot.
 
-![Screenshot of a new file in the file menu](../media/4-new-contentpage-class.png)
+![Screenshot of Visual Studio Add New File dialog with the Content Page template highlighted.](../media/4-new-contentpage-class.png)
 
 ## Re-create the UI
 

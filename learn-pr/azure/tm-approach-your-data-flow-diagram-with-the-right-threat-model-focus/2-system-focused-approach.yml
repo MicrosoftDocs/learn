@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.tm-approach-your-data-flow-diagram-with-the-right-threat-model-focus.2-system-focused-approach
+title: System and other focused approaches
+metadata:
+  title: System and other focused approaches
+  description: Learn how to use the different approaches in threat modeling
+  ms.date: 02/28/2020
+  author: rodsan
+  ms.author: rodsan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-threat-modeling
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-system-focused-approach.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the benefit of the system focused approach?"
+    choices:
+    - content: "This approach allows you to focus on one critical asset at a time to help identify all potential threats and ways to reduce or eliminate risk"
+      isCorrect: false
+      explanation: "This statement corresponds to the asset focused approach"
+    - content: "This approach provides information into a potential attacker, including their means, motive, and plan of action"
+      isCorrect: false
+      explanation: "This statement corresponds to the attacker focused approach"
+    - content: "This approach allows you to focus on how the system handles users and data. It also validates security assumptions across physical and logical assets used with the service"
+      isCorrect: true
+      explanation: "The system focused approach looks at the whole system, not just parts of it"
+  - content: "What is the benefit of the attacker focused approach?"
+    choices:
+    - content: "This approach allows you to focus on one critical asset at a time and identifies all potential threats and ways to reduce risk"
+      isCorrect: false
+      explanation: "This statement describes the asset focused approach"
+    - content: "Instead of focusing on the service, this approach focuses on the attacker, their motivations and means to attack your system"
+      isCorrect: true
+      explanation: "The attacker focused approach is based on the attacker and their plan of attack"
+    - content: "This approach provides information into the system, especially as it handles errors and requests"
+      isCorrect: false
+      explanation: "This statement describes the system focused approach"

@@ -39,7 +39,7 @@ You could pick off any object you like by casting the `Content` property, but it
 The proper way to find elements that are created in the XAML is to name the object. Use the XAML attribute `x:Name`. The `x:Name` attribute does two things:
 
 - A private field is added to the generated code-behind file that is mapped to this element. Use the field to interact with the visual element to set runtime properties and to handle events.
-- The element is made known to XAML through a name. You can refer to these elements from other elements that defined in the same XAML file.
+- The element is made known to XAML through a name. You can refer to these elements from other elements defined in the same XAML file.
 
 You can't use any arbitrary string when you name the element. The value assigned to the name attribute is used to create a field in code. Instead, it must conform to the naming conventions for a variable. The name also must be unique because it's compiled into the code-behind definition.
 

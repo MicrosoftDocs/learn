@@ -6,7 +6,7 @@ This exercise is optional. To complete it, you need access to an Azure subscript
 
 Create a custom role within Azure for the new employee.
 
-1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) with the account where you have the User Access Administrator or Owner role.
+1. Sign into the [Azure portal](https://portal.azure.com?azure-portal=true) with the account where you have the User Access Administrator or Owner role.
 1. Select **Cloud Shell** from the top right-hand side menu bar.
 1. Select **Bash**.
 1. Run the following command to get the subscription ID to use for your custom role definition. Copy the subscription ID.

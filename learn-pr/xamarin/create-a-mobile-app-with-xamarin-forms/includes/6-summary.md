@@ -7,3 +7,8 @@ This app acts as the proof-of-concept for the requirement we defined in the intr
 - Runs on iOS and Android.
 - Minimizes development time.
 - Can access our phone dialer.
+
+## Learn more with a Channel 9 video series
+
+- [Xamarin Tutorial 101](https://channel9.msdn.com/Series/Xamarin-101/?WT.mc_id=Educationalmobile-c9-niner&azure-portal=true)
+- [Intro to Visual Studio for Mac](https://channel9.msdn.com/Series/Intro-to-Visual-Studio-for-Mac?azure-portal=true)

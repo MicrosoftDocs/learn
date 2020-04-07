@@ -2,8 +2,8 @@ In this module, you learned how to use Azure Event Grid to handle events within 
 
 ## Learn more
 
-To learn more about using Event Grid in your environment visit the following articles:
+To learn more about using Event Grid in your environment, visit the following articles:
 
-- [Event Grid Schema](https://docs.microsoft.com/azure/event-grid/event-schema)
-- [Azure Event Grid With Logic Apps and Functions](https://social.technet.microsoft.com/wiki/contents/articles/39969.azure-event-grid-with-logic-apps-and-functions.aspx)
-- [Azure Event Grid Connector](https://docs.microsoft.com/connectors/azureeventgrid/)
+- [Event Grid schema](https://docs.microsoft.com/azure/event-grid/event-schema)
+- [Azure Event Grid with Logic Apps and Functions](https://social.technet.microsoft.com/wiki/contents/articles/39969.azure-event-grid-with-logic-apps-and-functions.aspx)
+- [Azure Event Grid connector](https://docs.microsoft.com/connectors/azureeventgrid/)
