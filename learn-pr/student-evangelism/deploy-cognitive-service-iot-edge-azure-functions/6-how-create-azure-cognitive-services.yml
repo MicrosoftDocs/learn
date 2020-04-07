@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure-iot-edge
 durationInMinutes: 4 # dummy number at present
 content: |
-  [!include[](includes/6-how-create-azure-cognitive-services)]
+  [!include[](includes/6-how-create-azure-cognitive-services.md)]
