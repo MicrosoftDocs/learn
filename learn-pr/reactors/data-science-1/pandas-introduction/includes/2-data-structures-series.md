@@ -1,24 +1,24 @@
-Both Series and DataFrames are a lot like the `ndarrays` you encountered in the NumPy module. They provide clean, efficient data storage and handling at the scales necessary for data science. What both of them provide that ndarrays lack, however, are essential data-science features like flexibility when dealing with missing data and the ability to label data. These capabilities (along with others) help make Series and DataFrames essential to the "data munging" that make up so much of data science.
+<!--- Reviewer note: This unit uses LaTex math formatting. The dollar sign $ starts and ends each LaTeX statement. -->
+
+Both `Series` and `DataFrames` are a lot like the `ndarrays` you encountered in the NumPy module. They provide clean, efficient data storage and handling at the scales necessary for data science. What both of them provide that `ndarrays` lack, however, are essential data-science features like flexibility when dealing with missing data and the ability to label data. These capabilities (along with others) help make `Series` and `DataFrames` essential to the "data munging" that make up so much of data science.
 
 > [!Note]
 > **Sarah: Action items**
 > 
-> - Add output for commands.
 > - Add one or more sentences as introduction / scenario statement for the Exercises H2 heading and H3 headings that follow.
+> - Search on "code cell below." These statements will need to be updated to coordinate with the new side-by-side exercise model. 
 > - Lead sentence mentions NumPy module in the LP, which isn't standard for Learn content.
->
 
 ## Series objects in pandas
 
 A pandas `Series` is a lot like an `ndarray` in NumPy, a one-dimensional array of indexed data. You can create a simple `Series` from an array of data like this:
 
 ```Python
-series_example = pd.Series([-0.5, 0.75, 1.0, -2])
-series_example
+Series_example = pd.`Series`([-0.5, 0.75, 1.0, -2])
+Series_example
 ```
 
-
-```output
+```Output
 0   -0.50
 1    0.75
 2    1.00
@@ -26,40 +26,37 @@ series_example
 dtype: float64
 ```
 
-Similar to an `ndarray`, a `Series` upcasts entries to be of the same type of data (that -2 integer in the original array became a -2.00 float in the Series).
+Similar to an `ndarray`, a `Series` upcasts entries to be of the same type of data (that -2 integer in the original array became a -2.00 float in the `Series`).
 
-What is different from an ndarray is that the Series automatically wraps both a sequence of values and a sequence of indices. These are two separate objects within the Series object that can access with the values and index attributes.
+What is different from an `ndarray` is that the `Series` automatically wraps both a sequence of values and a sequence of indices. These are two separate objects within the `Series` object that can access with the `values` and `index` attributes.
 
-Try accessing the values first; they are just a familiar NumPy array:
+Try accessing the `values` first; they are just a familiar NumPy array:
 
 ```Python
-series_example.values
+Series_example.values
 ```
 
-
-```output
+```Output
 array([-0.5 ,  0.75,  1.  , -2.  ])
 ```
 
-The index is also an array-like object:
+The `index` is also an array-like object:
 
 ```Python
-series_example.index
+Series_example.index
 ```
 
-
-```output
+```Output
 RangeIndex(start=0, stop=4, step=1)
 ```
 
-Just as with ndarras, you can access specific data elements in a Series via the familiar Python square-bracket index notation and slicing:
+Just as with `ndarrays`, you can access specific data elements in a `Series` via the familiar Python square-bracket `[]` index notation and slicing:
 
 ```Python
 series_example[1]
-```
+``1
 
-
-```output
+```Output
 0.75
 ```
 
@@ -67,23 +64,20 @@ series_example[1]
 series_example[1:3]
 ```
 
-
-```output
+```Output
 1    0.75
 2    1.00
 dtype: float64
 ```
 
-
-Despite a lot of similarities, pandas Series have an important distinction from NumPy ndarrays: whereas ndarrays have implicitly defined integer indices (as do Python lists), pandas Series have explicitly defined indices. The best part is that you can set the index:
+Despite a lot of similarities, pandas `Series` have an important distinction from NumPy `ndarrays`: whereas `ndarrays` have _implicitly defined_ integer indices (as do Python lists), pandas `Series` have explicitly defined indices. The best part is that you can set the index:
 
 ```Python
-series_example2 = pd.Series([-0.5, 0.75, 1.0, -2], index=['a', 'b', 'c', 'd'])
-series_example2
+Series_example2 = pd.`Series`([-0.5, 0.75, 1.0, -2], index=['a', 'b', 'c', 'd'])
+Series_example2
 ```
 
-
-```output
+```Output
 a   -0.50
 b    0.75
 c    1.00
@@ -94,11 +88,10 @@ dtype: float64
 These explicit indices work exactly the way you would expect them to:
 
 ```Python
-series_example2['b']
+Series_example2['b']
 ```
 
-
-```output
+```Output
 0.75
 ```
 
@@ -110,21 +103,24 @@ Test: Try it out in VS Code, what that what you expected?
 
 ## Explicit Indices
 
-With explicit indices in the mix, a Series is basically a fixed-length, ordered dictionary in that it maps arbitrary typed index values to arbitrary typed data values. But like ndarrays these data are all of the same type, which is important. Just as the type-specific compiled code behind ndarray makes them more efficient than a Python lists for certain operations, the type information of pandas Series makes them much more efficient than Python dictionaries for certain operations.
+Do explicit `Series` indices work _exactly_ the way you might expect? Try slicing `Series_example2` using its explicit index and find out.
 
-But the connection between Series and dictionaries is nevertheless very real. You can construct a Series object directly from a Python dictionary:
+### Slicing
+
+With explicit indices in the mix, a `Series` is basically a fixed-length, ordered dictionary in that it maps arbitrary typed index values to arbitrary typed data values. But like `ndarrays` these data are all of the same type, which is important. Just as the type-specific compiled code behind `ndarray` makes them more efficient than a Python lists for certain operations, the type information of pandas `Series` makes them much more efficient than Python dictionaries for certain operations.
+
+But the connection between `Series` and dictionaries is nevertheless very real. You can construct a `Series` object directly from a Python dictionary:
 
 ```Python
 population_dict = { 'France': 65429495,
                     'Germany': 82408706,
                     'Russia': 143910127,
                     'Japan': 126922333 }
-population = pd.Series(population_dict)
+population = pd.`Series`(population_dict)
 population
 ```
 
-
-```output
+```Output
 France      65429495
 Germany     82408706
 Russia     143910127
@@ -132,15 +128,15 @@ Japan      126922333
 dtype: int64
 ```
 
-Did you see what happened there? The order of the keys Russia and Japan in the switched places between the order in which they were entered in population_dict and how they ended up in the population Series object. While Python dictionary keys have no order, Series keys are ordered.
+Did you see what happened there? The order of the keys 'Russia' and 'Japan' switched places between the order in which they were entered in `population_dict` and how they ended up in the `population` `Series` object. While Python dictionary keys have no order, `Series` keys are ordered.
 
-So, at one level, you can interact with Series as you would with dictionaries:
+So, at one level, you can interact with `Series` as you would with dictionaries:
 
 ```Python
 population['Russia']
 ```
 
-```output
+```Output
 143910127
 ```
 
@@ -152,50 +148,45 @@ Test: Try it out in VS Code, create an unordered Series and try slicing it? Did 
 
 ## Slice population Series
 
-Try slicing on the `population` Series on your own. Would slicing be possible if Series keys were not ordered?
-You can also add elements to a Series the way that you would to an ndarray. Try it in the code cell below:
+```Output
+143910127
+```
 
-You can also add elements to a Series the way that you would to an ndarray. Try it in the code cell below:
+### Use array-like operations
+
+You can also do powerful array-like operations with `Series` like slicing.
+
+- Try slicing on the `population` `Series` on your own.
+
+Would slicing be possible if `Series` keys were not ordered?
+
+### Add elements
+
+You can also add elements to a `Series` the way that you would to an `ndarray`.
+
+1. Try adding elements to a `Series` in the code cell below.
+
+1. Try running `population['Albania'] = 2937590` (or another country of your choice).
+
+What order do the keys appear in when you run `population`? Is it what you expected?
+
+### Align indexed data
+
+Another useful `Series` feature (and definitely a difference from dictionaries) is that `Series` automatically aligns differently indexed data in arithmetic operations:
 
 ```Python
-???
-```
-
-
-```output
-TBD
-```
-
-### Run population Series
-
-```Python
-population['Albania'] = 2937590
-```
-
-
-```output
-TBD
-```
-
-Try running population['Albania'] = 2937590 (or another country of your choice)
-What order do the keys appear in when you run population? Is it what you expected?
-
-Another useful Series feature (and definitely a difference from dictionaries) is that Series automatically aligns differently indexed data in arithmetic operations:
-
-```Python
-pop2 = pd.Series({'Spain': 46432074, 'France': 102321, 'Albania': 50532})
+pop2 = pd.`Series`({'Spain': 46432074, 'France': 102321, 'Albania': 50532})
 population + pop2
 ```
 
-
-```output
-TBD
+```Output
+Albania           NaN
+France     65531816.0
+Germany           NaN
+Japan             NaN
+Russia            NaN
+Spain             NaN
+dtype: float64
 ```
 
-Notice that in the case of Germany, Japan, Russia, and Spain (and Albania, depending on what you did in the previous exercise), the addition operation produced NaN (not a number) values. pandas does not treat missing values as 0, but as NaN (and it can be helpful to think of arithmetic operations involving NaN as essentially NaN$ + x=$ NaN).
-
-> [!Note]
-> **Sarah: Conversion feedback**
-> 
-> We recommend a transition to a new unit topic here.
-> Move to the next unit inthe module to continue with the content from the source material.
+Notice that in the case of 'Germany', 'Japan', 'Russia', and 'Spain' (and 'Albania', depending on what you did in the previous exercise), the addition operation produced NaN (not a number) values. Pandas does not treat missing values as 0, but as NaN. (It can be helpful to think of arithmetic operations involving NaN as essentially $NaN + x= NaN$).

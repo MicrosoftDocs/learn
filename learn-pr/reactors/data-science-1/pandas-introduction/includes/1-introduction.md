@@ -1,21 +1,18 @@
 Now that we've explored NumPy, it's time to get to know the other workhorse of data science in Python: pandas. The pandas library in Python really does a lot to make working with data, like importing, cleaning, and organizing it, so much easier, that it's hard to imagine doing data science in Python without it.
 
-But it was not always this way. Wes McKinney developed the library out of necessity in 2008 while at AQR Capital Management in order to have a better tool for dealing with data analysis. The library has since taken off as an open-source software project that has become a mature and integral part of the data science ecosystem. (In fact, some examples in this module  will be drawn from McKinney's book, [Python for Data Analysis](https://wesmckinney.com/pages/book.html).)
+But it was not always this way. Wes McKinney developed the library out of necessity in 2008 while at AQR Capital Management in order to have a better tool for dealing with data analysis. The library has since taken off as an open-source software project that has become a mature and integral part of the data science ecosystem. (In fact, some examples in this module will be drawn from McKinney's book, _[Python for Data Analysis](https://wesmckinney.com/pages/book.html)_.)
 
-The name _pandas_ actually has nothing to do with Chinese bears, but rather comes from the term panel data, a form of multi-dimensional data involving measurements over time that comes out the econometrics and statistics community. Ironically, while panel data is a usable data structure in pandas, it's not generally used today and we won't examine it in this course. Instead, we'll focus on the two most widely used data structures in pandas: Series and DataFrames.
+The name _pandas_ actually has nothing to do with Chinese bears, but rather comes from the term _panel data_, a form of multi-dimensional data involving measurements over time that comes out the econometrics and statistics community. Ironically, while panel data is a usable data structure in pandas, it's not generally used today and we won't examine it in this course. Instead, we'll focus on the two most widely used data structures in pandas: `Series` and `DataFrames`.
 
-> [!Note]
-> **Sarah: Conversion feedback**
-> 
-> The environment set up content is the first module in this learning path and it's extremely short--one unit topic.
-> Suggest moving the setup content into this unit topic, or making it the next unit topic in this module.
-> Then, duplicate the set up content in the same topic location in all modules in the learning path.
->
-> **From Sarah**: I think we should link back to it here and it should be added to the first module as a unit.
+## Set up your environment
+
+For details about how to set up your environment, see the first unit in the Python module:
+- Set up your environment
+- Test your environment
 
 ## Tips: Import data and access the docs
 
-Just as you imported NumPy with the alias `np`, we will import pandas under the alias `pd`:
+Just as you imported NumPy with the alias `np`, we will import pandas under the alias `pd`. Make sure you've installed Pandas first (run `pip install pandas` in the terminal below).
 
 ```Python
 import pandas as pd
@@ -30,8 +27,9 @@ ipython
 pd?
 ```
 
+Because it can be useful to lean about `Series` and `DataFrames` in pandas a extension of `ndarrays` in NumPy, go ahead also import NumPy. You will want it for some of the examples later on:
 
-```output
+```Output
 Type:        module
 String form: 
 File:        /opt/anaconda3/lib/python3.7/site-packages/pandas/__init__.py
@@ -65,21 +63,18 @@ Here are just a few of the things that pandas does well:
 
 Because it can be useful to lean about Series and DataFrames in pandas a extension of ndarrays in NumPy, go ahead also import NumPy. You will want it for some of the examples later on:
 
-```
+```Python
 import numpy as np
 ```
 
 ## Learning objectives
-<!-- List of learning objectives for this module -->
 In this module, you will:
-
   - Import the Pandas library into Jupyter Notebooks in VS Code
   - Understand how to use Series and DataFrames to store remote data
   - Learn how to clean and manipulate large, remote datasets
   - Apply operations to Series and DataFrames for data science analysis
 
 ## Prerequisites
-<!-- List of prerequisites for this module; otherwise, "None." -->
 - Introduction to Python for data science
 - Introduction to NumPy for data science
 
