@@ -4,12 +4,12 @@ title: What is the device identity in Azure?
 metadata:
   title:  What is device identity in Azure?
   description: Learn about device identity in Azure.
-  ms.date: 03/30/2020
+  ms.date: 04/15/2020
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 5
+durationInMinutes: 7
 content: |
   [!include[](includes/2-what-is-device-identity.md)]
 quiz:
@@ -26,6 +26,17 @@ quiz:
     - content: "Windows 10 and macOS"
       isCorrect: false
       explanation: "Azure AD register supports any device running Windows 10, iOS, iPadOS, Android, and macOS."
+  - content: "What security measures are supported by Azure AD join?"
+    choices:
+    - content: "An Azure AD organizational account with password, PIN, pattern, or Windows Hello"
+      isCorrect: false
+      explanation: "No, Azure AD join doesn't support PIN or pattern."
+    - content: "An Azure AD organizational account with password or Windows Hello, and MFA"
+      isCorrect: true
+      explanation: "Azure AD join supports Windows 10 devices where users sign in by using their organizational account with a password or Windows Hello. Azure MFA is also supported."
+    - content: "A Microsoft account with password, Windows Hello, and MFA."
+      isCorrect: false
+      explanation: "No, Azure AD join requires users to access your Azure AD organization through their Azure AD organizational account."
   - content: "When is Conditional Access applied?"
     choices:
     - content: "Before first factor authentication"
