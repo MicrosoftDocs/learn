@@ -9,13 +9,13 @@ Keep in mind that there are other options such as MiniKube, and Kubernetes suppo
 
 ## What is Mikrok8s?
 
-microk8s allows you to deploy a single-node Kubernetes cluster as a single package to target workstations and Internet of Things (IoT) devices. Canonical, the creators of Ubuntu Linux, originally developed and maintains mikro8s.
+microk8s allows you to deploy a single-node Kubernetes cluster as a single package to target workstations and Internet of Things (IoT) devices. Canonical, the creators of Ubuntu Linux, originally developed and maintains mikrok8s.
 
 You can install microk8s on Linux, Windows, and macOS. However, installation instructions are slightly different for each OS. Choose the option that best fits your environment.
 
 ::: zone pivot="linux"
 
-### How to install microk8s on Linux
+### Install microk8s on Linux
 
 The Linux installation of microk8s is the installation option with the least number of steps. Switch to a terminal window and run the commands in the instructions below.
 
@@ -39,7 +39,7 @@ We're now ready to install add-ons on the cluster.
 
 ::: zone pivot="windows"
 
-### How to install microk8s on Windows
+### Install microk8s on Windows
 
 You use Multipass to run mikro8s on Windows. Multipass is a lightweight VM manager for Linux, Windows, and macOS.
 
@@ -79,7 +79,7 @@ We're now ready to install add-ons on the cluster.
 
 ::: zone pivot="macos"
 
-### How to install microk8s on macOS
+### Install microk8s on macOS
 
 You use Multipass to run mikro8s on macOS. Multipass is a lightweight VM manager for Linux, Windows, and macOS.
 
