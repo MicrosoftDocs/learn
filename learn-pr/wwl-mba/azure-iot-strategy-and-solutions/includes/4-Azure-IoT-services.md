@@ -25,7 +25,6 @@ There are services aimed at improving the flow, efficiency, and customization of
 |Extend intelligence from the cloud to your edge devices.|Azure IoT Edge|Azure IoT Edge is a service that builds on top of Azure IoT Hub. This service is meant for customers who want to analyze data on devices instead of in the cloud. Azure IoT Edge devices can be deployed and executed locally.|Enable scenarios that aren't currently cloud-feasible due to networking issues, low-latency requirements, or regulatory concerns.|
 |For intermediate and advanced developers, the ability to build custom IoT apps.|Azure IoT Device SDK|A REST-based SDK, to support third-party industry-specific sensors, and other IoT devices. Supports RTOS, Linux, Windows, Android, and iOS.|Provides the customization options that might be needed for specialized devices.|
 
-
 There are many services that enable data analysis, here are some of them.
 
 |Business Need | Azure Services | Description | Benefits |

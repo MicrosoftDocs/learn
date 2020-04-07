@@ -1,6 +1,6 @@
-Microsoft Azure IoT helps simplify your business journey through connected devices, so you can accelerate your business transformation. You can leverage the skills, technology, and resources you already have to create an IoT solution tailored to your business. Your solution can easily capture new data from your connected devices, and then create valuable insights. For example, companies in the oil and gas industry have overcome challenges related to monitoring a vast number of widely dispersed field assets by using Azure IoT to digitally collect, store, and analyze data. These connected devices help companies gain insight into optimizing oil, or gas, well operations, and identify future drilling locations.
+Microsoft Azure IoT helps leverage the skills, technology, and resources you already have, to create an IoT solution.  Your solution can easily capture data from your connected devices, and then create valuable insights into your business.
 
-With Azure IoT, you can build intelligence across your organization by bringing machine learning and artificial intelligence (AI) to the edge, leading to faster predictions, smarter actions, and a secure and trusted platform.
+With Azure IoT, you can build intelligence across your organization by bringing machine learning and artificial intelligence (AI) to the solution. These advanced technologies lead to faster predictions, smarter actions, and a secure and trusted platform.
 
 ### Business Challenges
 

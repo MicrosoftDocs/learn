@@ -7,6 +7,8 @@ Now that you've reviewed this module, you should be able to:
 - Identify ways you can use Azure IoT.
 - Understand how Azure IoT enables digital transformation to address business challenges.
 
+[![Graph showing vibration telemetry](../media/iot-strategy-vibrations.png)](../media/iot-strategy-vibrations.png#lightbox)
+
 ### Key takeaways
 
 Here are the three key takeaways from this module:
