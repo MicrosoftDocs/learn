@@ -66,7 +66,7 @@ When the application launches, Angular requests the vacations data from the Node
 
 We'll run and debug the applications together. We'll hit pause on the breakpoints, giving us the opportunity to explore how these applications work together.
 
-1. Open the VS Code Command Palette **F1**
+1. Open the VS Code Command Palette by pressing **F1**
 1. Type **View: Show Run and Debug** and press **ENTER**
 1. Select **Debug Express and Angular** from the dropdown list
 1. Press **F5** to start the debugger
