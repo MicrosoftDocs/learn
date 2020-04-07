@@ -8,15 +8,15 @@ For organizations across all industries, Azure IoT can help solve a common set o
 
 |Business Challenge |Business Challenge Description |Why Microsoft and Azure IoT?|
 |----------|-----------|-----------|
-|**Complexity** | IoT implementation and operations can be complex because of changing requirements, technology updates, business expansion, and security requirements. This complexity can impact business operations. | Azure IoT reduces complexity with Azure IoT Central, a SaaS (software-as-a-service) offering to get up and running quickly with IoT, and solutions accelerators for developing custom IoT for the most common use cases (for example, remote monitoring, predictive maintenance). |
-|**Cost** | Implementing an IoT solution can be expensive. The biggest concern is understanding the TCO (Total Cost of Ownership), and the ROI (Return on Investment) of the implementation.  | With Azure IoT, customers can choose a fully managed or finished solution from a partner.  The other option is a fully managed SaaS offering with per device pricing that makes the cost to start and upgrade clear and predictable over a fully customized solution. |
+|**Complexity** | IoT implementation and operations can be complex because of changing requirements, technology updates, business expansion, and security requirements. This complexity can impact business operations. | Azure IoT reduces complexity through the Azure IoT portal, your single point of contact with the cloud. For the simplest solution, look to IoT Central to provide the shortest route to building an IoT solution. |
+|**Cost** | Implementing an IoT solution can be expensive. The biggest concern is understanding the TCO (Total Cost of Ownership), and the ROI (Return on Investment) of the implementation.  | With Azure IoT, customers can choose a fully managed or finished solution from a partner.  The other option is a fully managed SaaS offering, with per device pricing, that makes the cost to start and upgrade clear and predictable for your proposed solution. |
 |**Security** |  Without proper planning and oversight, IoT can be prone to security vulnerabilities in areas like device control and data privacy.   | Azure IoT is built for security with an end-to-end approach to maintain control and trust for data, devices, and applications with Azure Security Center support for end-to-end IoT deployments. |
 
 -----------------------------
 
 ### What does an Azure IoT architecture look like?
 
-The diagram illustrates a recommended IoT solution architecture that is cloud native, microservices, and serverless-based.
+The diagram illustrates a recommended IoT solution architecture that will work for many businesses.
 
 [![Azure IoT reference architecture illustration](../media/ic-gm07-diagram.png)](../media/ic-gm07-diagram.png#lightbox)
 

@@ -1,4 +1,4 @@
-With intelligently connected devices and systems, organizations can evolve their operations, products, and customer experiences to create new revenue streams and minimize costs. With Azure IoT, you can leverage new insights and opportunities to transform your business.
+With intelligently connected devices and systems, organizations can evolve their operations, products, and customer experiences to high levels of efficiency, and minimize costs. With Azure IoT, you can leverage deep insights and create opportunities to transform your business.
 
 Now that you've reviewed this module, you should be able to:
 
@@ -19,8 +19,8 @@ Here are the three key takeaways from this module:
 
 :::column span="1":::
 
-1. Microsoft Azure IoT addresses common business challenges that can help accelerate business transformation by reducing cost and complexity while improving security at scale.
-1. Insights uncovered from connected devices and backend systems can be transformed into powerful applications and services to achieve business success.
+1. Microsoft Azure IoT addresses common business challenges. Azure IoT can help accelerate business transformation, by reducing cost and complexity, while improving security at scale.
+1. Insights uncovered from connected devices, using backend systems, can be transformed into powerful applications and services to achieve business success.
 1. Azure IoT supports a wide range of business outcomes, across many industries. These outcomes include empowering employees, engaging customers, optimizing operations, and transforming products.
 
 :::column-end:::
