@@ -20,11 +20,11 @@ By combining Azure Active Directory (Azure AD) with single sign-on, users can ac
 
 You have three device registration options to add a device to your Azure AD: 
 
-- **Azure AD registered** devices fall into the Bring Your Own Device (BYOD) category. These devices are privately owned and use a personal or local Microsoft account. This method of device registration is the most promiscuous as it supports devices running Windows 10, iOS, iPadOS, Android, and macOS. Device security is typically provided from a password, PIN, pattern, or Windows Hello.
+- **Azure AD registered** devices fall into the Bring Your Own Device (BYOD) category. These devices are privately owned and use a personal or local Microsoft account. This method of device registration is the least restrictive as it supports devices running Windows 10, iOS, iPadOS, Android, and macOS. Device security is typically provided from a password, PIN, pattern, or Windows Hello.
 
-- **Azure AD joined** devices are owned by your organization. Users access your cloud-based Azure AD through their work account. Devices exist only in the cloud. This option is only available to Windows 10 devices. Security for this option uses either a password or Microsoft Hello.
+- **Azure AD joined** devices are owned by your organization. Users access your cloud-based Azure AD through their work account. Device identities only exist in the cloud. This option is only available to Windows 10 devices. Security for this option uses either a password or Microsoft Hello.
 
-- **Hybrid Azure AD joined** is similar to AD joined. The devices are owned by the organization, and are signed in with an Azure AD account that belongs to that organization. Devices exist in the cloud and on-premises. The hybrid option is better suited to organizations that need on-premises access, including the cloud. This option supports Windows 7, 8.1 and 10, and Windows Server 2008 or better.
+- **Hybrid Azure AD joined** is similar to AD joined. The devices are owned by the organization, and are signed in with an Azure AD account that belongs to that organization. Device identities exist in the cloud and on-premises. The hybrid option is better suited to organizations that need on-premises and the cloud access. This option supports Windows 7, 8.1 and 10, and Windows Server 2008 or better.
 
 ## Conditional access
 
@@ -63,6 +63,18 @@ Those criteria can be one or more of:
 - Device is Hybrid Azure AD joined
 - An approved application
 - Needs an app protection policy
+
+If your organization uses MFA, users don't have to do MFA when they're using an MDM compliant, AD joined device. You can choose the option **Require one of the selected controls** with your grant controls selected. If you need extra security for something like a payroll app, choose **Require all the selected controls** to require MFA and a compliant device. 
+
+>[!div class="mx-imgBorder"]
+>![Screenshot of the access control grant settings with the options selected: Require MFA, Require device compliant, and Require one of the selected controls.](../media/2-access-controls-grant.png)
+
+### Create Conditional Access policies
+
+To create a Conditional Access policy, go to **Azure Active Directory** > **Security** > **Conditional Access** > **New policy**.
+
+>[!div class="mx-imgBorder"]
+>![Screenshot that show a new Conditional Access policy with no assignments or access controls set.](../media/2-conditional-access-policies.png)
 
 ## Benefits of device identity management
 
