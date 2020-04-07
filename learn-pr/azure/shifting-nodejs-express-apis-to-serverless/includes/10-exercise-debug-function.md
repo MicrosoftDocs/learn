@@ -1,6 +1,6 @@
 Now it's time for you to run and debug both applications together.
 
-Let's start by opening the code in Visual Studio Code.
+Let's start by opening the project in Visual Studio Code.
 
 ## Set the Breakpoints
 
