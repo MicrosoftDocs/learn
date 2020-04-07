@@ -61,7 +61,7 @@ To support these scenarios, you can configure three types of services to expose 
 | **NodePort** | The Kubernetes control plane assigns a node port, between 30000 and 32767, to the Service. For example, 192.169.1.11 on clusters01. You then configure the Service with a target port on the pod you want to expose. For example, port 80 on the pod running one of the front-ends. You can now access the front end through a node IP and port address.  |
 | **LoadBalancer** | Allows for the distribution of load between nodes running your application and exposing pod to public network access. You typically configure load balancers when you use cloud providers. In this case, traffic from the external load balancer is directed to the pods running your application. |
 
-In the drone tracking application, you'll expose all public applications by using LoadBalancer services. For example, the tracking website and the RESTFul API.
+In the drone tracking application, you'll expose all public applications by using LoadBalancer services. For example, the tracking website and the RESTful API.
 
 You'll then configure all other components that require private network access using ClusterIP services.
 
