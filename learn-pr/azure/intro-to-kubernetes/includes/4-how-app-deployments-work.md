@@ -45,7 +45,7 @@ Kubernetes assigns a Service an IP address on creation just like a node or pod. 
 
 In the drone tracking application, network communication is as follows:
 
-- The website and RESTFul API is accessible to users outside of the cluster
+- The website and RESTful API is accessible to users outside of the cluster
 
 - The in-memory cache and message queue services are accessible to the front-end and RESTFul API respectively, but not to external users
 
