@@ -29,7 +29,7 @@ Deploy a containerized app to Azure Kubernetes Services
 - An Azure Subscription
 - An Azure Container Registry already created
 - Ability to log in and interact with Azure via Azure CLI
-- Ability to navigate the Azure Portal
+- Ability to navigate the Azure portal
 - Ability to interact with any Kubernetes cluster through `kubectl`
 - Basic knowledge of Docker and its concepts
 - Basic knowledge of containers and their concepts
@@ -64,9 +64,9 @@ Identify the subtasks of *module title*
 | 1 | Overview of the deployed app | Overview the app, introduce needed workloads | Knowledge Check | 1, 4, 5 | Yes |
 | 2 | Creating YAML files for each workload | Creating the needed resources | Knowledge Check | 1, 4, 5, 6 | Yes |
 | 3 | Deploying the application using a DockerHub image | Deploying and testing the app on DockerHub | Exercise | 1, 6, 7 | Yes |
-| 4 | Setting up local environment | Set up local environment | Exercise | 1, 2, 9 | No, combined with subtask 3 |
+| 4 | Setting up local environment | Setup local environment | Exercise | 1, 2, 9 | No, combined with subtask 3 |
 | 5 | Deploying the application using an ACR image | Deploying and testing the app outside of DockerHub | Exercise | 1, 6, 8, 9 | Yes |
-| 6 | Attaching ACR to AKS | Being able to deploy from a private registry | Exercise | 1, 3, 8, 9 | No, combined with subtask 5 |
+| 6 | Attaching ACR to AKS | Deploy from a private registry | Exercise | 1, 3, 8, 9 | No, combined with subtask 5 |
 
 ## Outline the units
 
@@ -74,7 +74,7 @@ Identify the subtasks of *module title*
 
 1. **Introduction**
 
-    Imagine you work for a transport company that delivers goods around the world using cargo ships as a devOps Engineer. The company already adopted AKS as the chosen infrastructure solution. Now, the internal product team finished a long-waited internal management tool that needs to be deployed ASAP to track ship movement across the globe. The application has already been containerized and deployed to the company's private registry in the ACR, it just needs to be deployed to the existent cluster using its public image source so employees can use it.
+    Imagine you work for a transport company that delivers goods around the world using cargo ships as a devOps Engineer. The company already adopted AKS as the chosen infrastructure solution. Now, the internal product team finished a long-waited internal management tool that needs to be deployed ASAP to track ship movement across the globe. The application has already been containerized and pushed to the company's private registry in the ACR. It just needs to be deployed to the existent cluster so employees can use it.
 
     <!-- *Add your scenario [(Scenario guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-scenarios)* -->
 
@@ -106,11 +106,11 @@ Identify the subtasks of *module title*
     - What are the benefits of having a declarative paradigm?
     - What is the purpose of the YAML files for Kubernetes?
     - Which of the options correctly describes a deployment YAML?
-        - Present the user with 3 different YAML descriptions
+        - Present the user with three different YAML descriptions
     - Which of the options correctly describes a service YAML?
-        - Present the user with 3 different YAML descriptions
+        - Present the user with three different YAML descriptions
     - Which of the options correctly describes an ingress YAML?
-        - Present the user with 3 different YAML descriptions
+        - Present the user with three different YAML descriptions
 
 4. **Deploying a public image**
 
@@ -125,9 +125,9 @@ Identify the subtasks of *module title*
 
 5. **Exercise - Deploying a public image**
 
-    1. Ask the learner to run `az aks get-credentials` to set up the local environment
-    2. Ask the learner to write an YAML file for the database deployment
-    3. Ask the learner to write an YAML file for the database service
+    1. Ask the learner to run `az aks get-credentials` to setup the local environment
+    2. Ask the learner to write a YAML file for the database deployment
+    3. Ask the learner to write a YAML file for the database service
     4. Ask the learner to run `kubectl create -f <files>` to deploy the files
     5. Test it with `kubectl get deployment <name>` and `kubectl get svc <name>`
 
@@ -150,9 +150,9 @@ Identify the subtasks of *module title*
 
 7. **Exercise - Deploying a private ACR image**
 
-    1. Ask the learner to write an YAML file for the applications deployments
-    2. Ask the learner to write an YAML file for the applications services
-    3. Ask the learner to write an YAML file for the applications ingresses
+    1. Ask the learner to write a YAML file for the applications deployments
+    2. Ask the learner to write a YAML file for the applications services
+    3. Ask the learner to write a YAML file for the applications ingresses
     4. Ask the learner to attach ACR to the existing AKS cluster
     5. Run `kubectl create -f <files>` to deploy the files
     6. Test it with `kubectl get deployment <name>` and `kubectl get svc <name>` and `kubectl get ing <name>`
@@ -162,13 +162,15 @@ Identify the subtasks of *module title*
 
 8. **Summary**
 
-    The company team needed to be able to access the new tracking system ASAP so the ships would be tracked across deliveries. We needed something fast and easy to deploy our containerized application to the cloud and make it available to the internal team.
+    The company team needed to access the new tracking system ASAP so the ships would be tracked across deliveries. We needed something fast and easy to deploy our containerized application to the cloud and make it available to the internal team.
 
-    We used Kubernetes' native declarative paradigm to help us verify and describe what we wanted to create, this way we are able to keep version history and make it easily reproducible. AZ CLI allowed us to connect in a single line to our recently created managed Kubernetes service with AKS without having to worry about control planes or service discoveries and the ACR integration with AKS allowed us to shortcut in downloading private images.
+    We used Kubernetes' declarative paradigm to help us describe what we wanted to create, this way we can keep a version history and make it easily reproducible.
 
-    Imagine how would it be to deploy this application on a VM or another environment without Kubernetes, having AKS to manage the heavy lifting for us and leveraging the integration between Azure services made possible for us to not only save a lot of time but to make our deployment very simple, yet very secure.
+    AZ CLI allowed us to connect to our managed Kubernetes service with AKS without having to worry about infrastructure and the ACR integration with AKS allowed us to download private images much faster.
 
-    Thanks to this agility, the company's tracking team can now use the system to track deliveries around the world and optimize time between routes, which means less wasted fuel, better economy and cleaner operations!
+    Imagine how would it be to deploy this application on a VM or another environment without Kubernetes. Having AKS to manage the heavy lifting for us, and using the integration between Azure services, made possible not only to save much time but to make our deployment much simpler.
+
+    Thanks to this agility, the company can now use the system to track deliveries around the world. Optimizing time between routes, which means less wasted fuel, better economy and cleaner operations!
 
     <!-- *Add your summary [(Summary guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-module-summary-unit)* -->
 
