@@ -1,8 +1,3 @@
-> [!div class="alert is-tip"]
-> ### Learning goal
->
-> By the end of this unit, you should have a general knowledge of the various ways to combine DataFrames.
-
 Your most interesting analyses often will come from data melded together from more than one source. Because of this, pandas provides several methods of merging and joining datasets to make this necessary job easier:
 
 * `pandas.merge` connects rows in DataFrames based on one or more keys.

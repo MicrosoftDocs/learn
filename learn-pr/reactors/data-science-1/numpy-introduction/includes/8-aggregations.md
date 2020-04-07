@@ -1,8 +1,3 @@
->[!div class="alert is-tip"]
->### Learning goal
->
->By the end of this subsection, you should be comfortable aggregating data in NumPy.
-
 One of the first things you will find yourself doing with most datasets is computing the summary statistics for the data in order to get a general overview of your data before exploring it further. These summary statistics include the mean and standard deviation, in addition to other aggregates, such as the sum, product, median, minimum and maximum, or quantiles of the data.
 
 NumPy has fast built-in aggregation functions for working on arrays that are the subject of this sub-section.

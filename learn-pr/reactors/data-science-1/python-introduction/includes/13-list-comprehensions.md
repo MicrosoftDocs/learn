@@ -1,15 +1,4 @@
-> [!div class="alert is-tip"]
-> ### Learning goal
->
-> By the end of this subsection, you should understand how to economically and computationally create lists.
-
 Sometimes, it makes more sense to generate a list algorithmically. Consider the last example. We really wanted just a list of numbers from 1 to 10. Rather than type those out, we can use a _list comprehension_ to generate it:
-
-> [!Note]
-> **Sarah: Conversion feedback**
-> 
-> Consider moving the learning goal text to the list of Learning Objectives in the Introduction unit.
->
 
 ```Python
 numbers = [x for x in range(1,11)] # Remember to create a range 1 more than the number you actually want.
@@ -42,7 +31,7 @@ odd_squares
 [1, 9, 25, 49, 81]
 ```
 
-### Exercise
+### Try it yourself
 
 Use a list comprehension to generate a list of odd cubes from 1 to 2,197.
 

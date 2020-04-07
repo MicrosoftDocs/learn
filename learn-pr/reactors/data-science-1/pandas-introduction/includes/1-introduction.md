@@ -11,6 +11,7 @@ The name _pandas_ actually has nothing to do with Chinese bears, but rather come
 > Suggest moving the setup content into this unit topic, or making it the next unit topic in this module.
 > Then, duplicate the set up content in the same topic location in all modules in the learning path.
 >
+> **From Sarah**: I think we should link back to it here and it should be added to the first module as a unit.
 
 ## Tips: Import data and access the docs
 
@@ -31,7 +32,35 @@ pd?
 
 
 ```output
-TBD
+Type:        module
+String form: 
+File:        /opt/anaconda3/lib/python3.7/site-packages/pandas/__init__.py
+Docstring:  
+pandas - a powerful data analysis and manipulation library for Python
+=====================================================================
+
+**pandas** is a Python package providing fast, flexible, and expressive data
+structures designed to make working with "relational" or "labeled" data both
+easy and intuitive. It aims to be the fundamental high-level building block for
+doing practical, **real world** data analysis in Python. Additionally, it has
+the broader goal of becoming **the most powerful and flexible open source data
+analysis / manipulation tool available in any language**. It is already well on
+its way toward this goal.
+
+Main Features
+-------------
+Here are just a few of the things that pandas does well:
+
+  - Easy handling of missing data in floating point as well as non-floating
+    point data.
+  - Size mutability: columns can be inserted and deleted from DataFrame and
+    higher dimensional objects
+  - Automatic and explicit data alignment: objects can be explicitly aligned
+    to a set of labels, or the user can simply ignore the labels and let
+    `Series`, `DataFrame`, etc. automatically align the data for you in
+    computations.
+  - Powerful, flexible group by functionality to perform split-apply-combine
+    operations on data sets, for both aggregating and transforming data.
 ```
 
 Because it can be useful to lean about Series and DataFrames in pandas a extension of ndarrays in NumPy, go ahead also import NumPy. You will want it for some of the examples later on:
@@ -40,22 +69,18 @@ Because it can be useful to lean about Series and DataFrames in pandas a extensi
 import numpy as np
 ```
 
-
-```output
-TBD
-```
-
 ## Learning objectives
 <!-- List of learning objectives for this module -->
 In this module, you will:
 
-- Explore NumPy
-- TBD
-- TBD
+  - Import the Pandas library into Jupyter Notebooks in VS Code
+  - Understand how to use Series and DataFrames to store remote data
+  - Learn how to clean and manipulate large, remote datasets
+  - Apply operations to Series and DataFrames for data science analysis
 
 ## Prerequisites
 <!-- List of prerequisites for this module; otherwise, "None." -->
-
-None.
+- Introduction to Python for data science
+- Introduction to NumPy for data science
 
 Now, on to pandas!

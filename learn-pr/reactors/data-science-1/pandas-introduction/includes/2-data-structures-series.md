@@ -19,7 +19,11 @@ series_example
 
 
 ```output
-TBD
+0   -0.50
+1    0.75
+2    1.00
+3   -2.00
+dtype: float64
 ```
 
 Similar to an `ndarray`, a `Series` upcasts entries to be of the same type of data (that -2 integer in the original array became a -2.00 float in the Series).
@@ -34,7 +38,7 @@ series_example.values
 
 
 ```output
-TBD
+array([-0.5 ,  0.75,  1.  , -2.  ])
 ```
 
 The index is also an array-like object:
@@ -45,20 +49,31 @@ series_example.index
 
 
 ```output
-TBD
+RangeIndex(start=0, stop=4, step=1)
 ```
 
 Just as with ndarras, you can access specific data elements in a Series via the familiar Python square-bracket index notation and slicing:
 
 ```Python
 series_example[1]
+```
+
+
+```output
+0.75
+```
+
+```Python
 series_example[1:3]
 ```
 
 
 ```output
-TBD
+1    0.75
+2    1.00
+dtype: float64
 ```
+
 
 Despite a lot of similarities, pandas Series have an important distinction from NumPy ndarrays: whereas ndarrays have implicitly defined integer indices (as do Python lists), pandas Series have explicitly defined indices. The best part is that you can set the index:
 
@@ -69,7 +84,11 @@ series_example2
 
 
 ```output
-TBD
+a   -0.50
+b    0.75
+c    1.00
+d   -2.00
+dtype: float64
 ```
 
 These explicit indices work exactly the way you would expect them to:
@@ -80,16 +99,16 @@ series_example2['b']
 
 
 ```output
-TBD
+0.75
 ```
 
-## Exercises
+### Try it yourself
 
-Let's try these exercises.
+You're experienced in Jupyter Notebooks and experimenting with Python now, so use those new super-powers to predict and test:
+Predict: What would happen if you sliced `series_example2` using its explicit index?
+Test: Try it out in VS Code, what that what you expected?
 
-### Slice series_example2 Series
-
-Do explicit Series indices work _exactly_ the way you might expect? Try slicing `series_example2` using its explicit index and find out.
+## Explicit Indices
 
 With explicit indices in the mix, a Series is basically a fixed-length, ordered dictionary in that it maps arbitrary typed index values to arbitrary typed data values. But like ndarrays these data are all of the same type, which is important. Just as the type-specific compiled code behind ndarray makes them more efficient than a Python lists for certain operations, the type information of pandas Series makes them much more efficient than Python dictionaries for certain operations.
 
@@ -106,7 +125,11 @@ population
 
 
 ```output
-TBD
+France      65429495
+Germany     82408706
+Russia     143910127
+Japan      126922333
+dtype: int64
 ```
 
 Did you see what happened there? The order of the keys Russia and Japan in the switched places between the order in which they were entered in population_dict and how they ended up in the population Series object. While Python dictionary keys have no order, Series keys are ordered.
@@ -115,10 +138,19 @@ So, at one level, you can interact with Series as you would with dictionaries:
 
 ```Python
 population['Russia']
-But you can also do powerful array-like operations with Series like slicing:
 ```
 
-### Slice population Series
+```output
+143910127
+```
+
+### Try it yourself
+
+But you can also do powerful array-like operations with Series like slicing. 
+Predict: Whould slicing be possible if Series keys were not ordered?
+Test: Try it out in VS Code, create an unordered Series and try slicing it? Did it do what you expected?
+
+## Slice population Series
 
 Try slicing on the `population` Series on your own. Would slicing be possible if Series keys were not ordered?
 You can also add elements to a Series the way that you would to an ndarray. Try it in the code cell below:

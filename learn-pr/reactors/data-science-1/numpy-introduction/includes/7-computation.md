@@ -1,8 +1,3 @@
->[!div class="alert is-tip"]
-> ### Learning goal:
->
-> By the end of this subsection, you should have a basic understanding of what NumPy universal functions are and how (and why) to use them.
-
 Some of the properties that make Python great to work with for data science (its dynamic, interpreted nature, for example) can also make it slow. This is particularly true with looping. These small performance hits can add up to minutes (or longer) when dealing with truly huge datasets.
 
 When we first examined loops in the Introduction to Pything, you probably didn't notice any delay: the loops were short enough that Python's relatively slow looping wasn't an issue. Consider this function, which calculates the reciprocal for an array of numbers:

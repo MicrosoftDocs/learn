@@ -12,10 +12,12 @@ title: Introduction to Python
 summary: Learn how to use Python for data science operations.
 abstract: |
   In this module, you will:
-  - Explore the choices available to run Python apps
-  - Use the Python interpreter to execute statements and scripts
-  - Learn how to declare variables
-  - Build a simple Python app that takes input and produces output
+  - Explore the basic syntax and features of Python
+  - Use Jupyter Notebooks to execute Python code within VS Code
+  - Learn how to store and manipulate simple data in Python
+  - Know how to import external modules into your Python environment
+
+  Complimentary content to Microsoft Reactor Workshops.
 prerequisites: |
   - Set up your environment
 # placeholder icon
@@ -25,8 +27,10 @@ levels:
 roles:
 - developer
 - student
+- data-scientist
 products:
 - azure
+- vs-code
 units:
 - learn.reactors.data-science-1.python-introduction.1-introduction
 - learn.reactors.data-science-1.python-introduction.2-types-arithmetic-numeric
