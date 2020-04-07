@@ -25,9 +25,9 @@ In this tutorial, you move from an Express API to a serverless architecture thro
 
 You're ready to shift your Express.js APIs to the serverless model. But first, let's consider why you might make these changes and what effort is required to update your app. Here are three things to consider:
 
-1. Your Express app requires a server, which you must configure and maintain.
-1. You'll want your Express app to scale up and down, as demand on it fluctuates
-1. You'll have a cost associated with deploying your server.
+1. Configure and maintain the physical server for your Express app
+1. Managing scaling for your app (up and down), as demand fluctuates
+1. Costs associated with deploying your server
 
 Serverless eases some of this effort and cost for you.
 
