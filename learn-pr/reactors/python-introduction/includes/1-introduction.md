@@ -1,17 +1,5 @@
 Since its first release in 1991, Python has risen to become not just a popular general-purpose programming language, but a preeminent computer language for data science. This learning path will use Python and the Python extension for Visual Studio Code as the primary means of illustrating data-science tools and resources.
 
-> [!Note]
-> **Sarah: Conversion feedback**
-> 
-> The environment set up content is the first module in this learning path and it's extremely short--one unit topic.
-> Suggest moving the setup content into this unit topic, and duplicate the set up content in all modules (as needed) in the learning path.
-
->
-> **From Sarah:**
->
-> Yes, pelase move the setup into this introduction module.
->
-
 >
 > **Sarah: Action items**
 >
@@ -24,13 +12,31 @@ Several examples in this learning path draw from the [python.org introductory tu
 
 Original material from python.org is Copyright (c) 2001-2019 Python Software Foundation.
 
-This learning path makes extensive use of Jupyter Notebooks that run in Visual Studio Code. Visual Studio Code runs on macOS, Linux, and Windows. To get started, follow the instructions in 0-IntroductionAndSetup.
+This learning path makes extensive use of Jupyter Notebooks that run in Visual Studio Code. Visual Studio Code runs on macOS, Linux, and Windows. Throughout this learning path, you will be encouraged to test out Python code in Visual Studio Code (VS Code) by using the Python extension and integrated Jupyter Notebooks.
 
->
-> **From Sarah:**
->
-> Please link appropriately the 0-IntroductionAndSetup to the setup instructions.
->
+## Set up your environment
+
+To learn most effectively throughout this learning path, we recommend that you set up your environment so you can follow along. 
+
+Complete these steps to set up your environment:
+
+1. Download and install [VS Code](https://code.visualstudio.com). This is free and works on Windows, Mac, and Linux. Select the stable build for your platform. 
+2. Download and install the [Python extension for Visual Studio code](https://marketplace.visualstudio.com/items?itemName=ms-python.python). This will include first installing a supported version of Python.
+3. Activate the [Anaconda environment in VS Code](https://code.visualstudio.com/docs/python/jupyter-support) to be able to run Jupyter notebooks.
+4. Set up a [Data Science environment in VS Code](https://code.visualstudio.com/docs/python/data-science-tutorial) to be able to use NumPy and Pandas.
+
+## Test your environment
+
+If you have successfully setup your environment with VS Code, Python, Anaconda, and the NumPy and Pandas libraries you should be able to run a Jupyter notebook inside of VS Code.
+
+1. Clone the [Reactor repository](https://github.com/microsoft/Reactors) and open the [Learn/Intro-Python-Data-Science folder](https://github.com/microsoft/Reactors/tree/master/Learn/Intro-python-data-science/README.md) in VS Code.
+2. Run the [`Test-Setup-Config.ipynb`](https://github.com/microsoft/Reactors/tree/master/Learn/Intro-python-data-science/Test-Setup-Config.ipynb) file to ensure you're ready to continue through the Learning Path.
+
+*Embedded Video Goes Here*
+
+## Working through this learning path
+
+As you're working through this learning path, you will be encouraged to try out code. Use the files you cloned to do this.
 
 Jupyter Notebooks are divided into cells. Each cell contains either text written in the Markdown markup language or a space in which to write and execute computer code. Because all the code resides inside code cells, you can run each code cell inline rather than using a separate Python interactive window.
 

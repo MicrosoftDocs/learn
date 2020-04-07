@@ -1,10 +1,10 @@
 ### YamlMime:LearningPath
-uid: learn.reactors.data-science-1
+uid: learn.reactors.introduction-python-data-science
 metadata:
   title: Introduction to Python for data science
   description: Introduction to Python for data science
   brand: azure
-  ms.date: 05/19/2020
+  ms.date: 04/22/2020
   author: sguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial
@@ -20,7 +20,7 @@ summary: |
     - Clean and manipulate data to prepare for analysis
     - Work with your data in VS Code with Jupyter Notebooks
 
-  Complimentary content to Microsoft Reactor Workshops.
+  Complementary content for Microsoft Reactor Workshops.
   
 prerequisites: |
   None.
@@ -30,13 +30,14 @@ levels:
 roles:
 - developer
 - student
+- data-scientist
 products:
 - azure
+- vs-code
 modules:
-- learn.reactors.data-science-1.environment-setup
-- learn.reactors.data-science-1.python-introduction
-- learn.reactors.data-science-1.numpy-introduction
-- learn.reactors.data-science-1.pandas-introduction
-- learn.reactors.data-science-1.data-manipulate-clean
+- learn.reactors.introduction-python-data-science.python-introduction
+- learn.reactors.introduction-python-data-science.numpy-introduction
+- learn.reactors.introduction-python-data-science.pandas-introduction
+- learn.reactors.introduction-python-data-science.data-manipulate-clean
 trophy:
-  uid: learn.reactors.data-science-1.trophy
+  uid: learn.reactors.introduction-python-data-science.trophy
