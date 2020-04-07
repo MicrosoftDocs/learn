@@ -1,6 +1,6 @@
 Azure provides several options to improve security and restrict access to file shares you've created.
 
-The finance company you're working for wants to migrate existing data files from their on-premises file shares. Before they move these files to the cloud, the company wants to ensure that only their datacenter and branch offices can access them. To ensure security is in place, you'll enable secure transfers and then  allow access only from a specific set of IP addresses.
+The finance company you're working for wants to migrate existing data files from their on-premises file shares. Before moving these files to the cloud, the company wants to ensure that only their datacenter and branch offices can access them. To ensure security is in place, you'll enable secure transfers, and then allow access only from a specific set of IP addresses.
 
 In this exercise, you'll check that secure transfers are enforced on the file shares you created previously. After checking, you'll add firewall rules to restrict access to a specific IP address, and then test that it can't be accessed from anywhere else. Finally, you'll create a snapshot of your file share that you can use to recover files.
 
@@ -39,7 +39,7 @@ In this exercise, you'll check that secure transfers are enforced on the file sh
 
     ![Screenshot showing access is denied to the share](../media/6-access-denied.png)
 
-1. Return to the **Firewalls and virtual networks** setting.
+1. Return to the **Firewalls and virtual networks** settings.
 1. Select the **Add your client IP address** check box.
 1. Select **Save**.
 1. Select **Overview**, and then select **File shares**.
@@ -51,7 +51,7 @@ In this exercise, you'll check that secure transfers are enforced on the file sh
 
 <!-- ## Install AzCopy and sign in to Azure
 
-1. Connect to your VM by using Remote Desktop Connection.
+1. Connect to your VM by using the remote desktop connection.
 1. Use the browser to download AzCopy by going to [https://aka.ms/downloadazcopy-v10-windows](https://aka.ms/downloadazcopy-v10-windows).
 1. In the browser, select **Save**.
 1. Open the folder that contains the zip file.
@@ -59,9 +59,9 @@ In this exercise, you'll check that secure transfers are enforced on the file sh
     ![Screenshot of expanding the AzCopy zip folder](../media/6-unzip-azcopy.png)
 
 1. Select the **azcopy_windows_amd64** zip file.
-1. On the menu, select **Compressed Folder Tools** > **Extract all**.
-1. In the **Extract Compressed (Zipped) Folders** window, select **Extract**.
-1. Select **Start** > **Windows PowerShell folder** > **Windows PowerShell**.
+1. On the menu, select **Compressed Folder Tools**, and then select **Extract all**.
+1. In the Extract Compressed (Zipped) Folders window, select **Extract**.
+1. Select **Start**, select the **Windows PowerShell folder**, and then select **Windows PowerShell**.
 1. Move to the folder that contains **AzCopy**.
 
     ```powershell
@@ -89,12 +89,12 @@ In this exercise, you'll check that secure transfers are enforced on the file sh
 1. Select the created storage account. It should be named **learnazurefileshare** followed by random numbers.
 1. Under **Settings**, select **Shared access signatures**.
 
-    ![text](../media/6-sas-connection-string.png)
+    ![Screenshot showing Shared access signatures](../media/6-sas-connection-string.png)
 
 1. AzCopy requires a shared access signature (SAS) to authorize access to the share.
 1. Select **Generate SAS and connection string**.
 1. Copy the **File service SAS URL**.
-1. Paste the connection string into Notepad, and add a path to the data share. Change the string by adding `data/` to the path from:
+1. Paste the connection string into Notepad and add a path to the data share. Change the string by adding `data/` to the path from:
 
     `https://learnazurefileshare6438.file.core.windows.net/?sv=2019-02-02&ss=bfqt&srt=sco&sp=rwdlacup&se=2019-12-05T20:46:09Z&st=2019-12-05T12:46:09Z&spr=https&sig=TW1ZMwzksKMhKMqJxSCMBy5wFmut7yuR3vNlTSwFhKQ%3D`
 
@@ -140,7 +140,7 @@ In this exercise, you'll check that secure transfers are enforced on the file sh
 
 1. Return to your VM, and open **File Explorer**.
 1. Browse to the data share mounted at the **F** drive, right-click any of the text files, and select **Properties**.
-1. In the file properties window, select **Previous Versions** and see the listed snapshots created on the file share.
+1. In the File properties window, select **Previous Versions**, and see the listed snapshots created on the file share.
 
     ![Screenshot of the file properties window showing previous snapshots](../media/6-previous-versions.png)
     
