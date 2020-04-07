@@ -1,0 +1,74 @@
+### YamlMime:Module
+uid: learn.cmu-cloud-computing.distributed-programming.introduction
+metadata:
+  title: What is distributed programming?
+  description: Carnegie Mellon University's Cloud Developer course. Learn about distributed programming and why it's useful for the cloud, including programming models, types of parallelism, and symmetrical vs. asymmetrical architecture.
+  ms.date: 03/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  showCreativeCommonsFooter: true
+title: What is distributed programming?
+summary: Learn about distributed programming and why it's useful for the cloud, including programming models, types of parallelism, and symmetrical vs. asymmetrical architecture.
+abstract: | 
+  In this module, you will:
+    - Classify programs as sequential, concurrent, parallel, and distributed
+    - Indicate why programmers usually parallelize sequential programs
+    - Explain why cloud programs are important for solving complex computing problems
+    - Define distributed systems, and indicate the relationship between distributed systems and clouds
+    - Define distributed programming models
+    - Indicate why synchronization is needed in shared-memory systems
+    - Describe how tasks can communicate by using the message-passing programming model
+    - Outline the difference between synchronous and asynchronous programs
+    - Explain the bulk synchronous parallel (BSP) model
+    - Outline the difference between data parallelism and graph parallelism
+    - Distinguish between these distributed programs: single program, multiple data (SPMD); and multiple program, multiple data (MPMD)
+    - Discuss the two main techniques that can be incorporated in distributed programs so as to address the communication bottleneck in the cloud
+    - Define heterogeneous and homogenous clouds, and identify the main reasons for heterogeneity in the cloud
+    - State when and why synchronization is required in the cloud
+    - Identify the main technique that can be used to tolerate faults in clouds
+    - Outline the difference between task scheduling and job scheduling
+
+  In partnership with Dr. Majd Sakr and Carnegie Mellon University.
+prerequisites: |
+  - Understand what cloud computing is, including cloud service models and common cloud providers
+  - Know the technologies that enable cloud computing
+  - Understand how cloud service providers pay for and bill for the cloud
+  - Know what datacenters are and why they exist
+  - Know how datacenters are set up, powered, and provisioned
+  - Understand how cloud resources are provisioned and metered
+  - Be familiar with the concept of virtualization
+  - Know the different types of virtualization
+  - Understand CPU virtualization
+  - Understand memory virtualization
+  - Understand I/O virtualization
+  - Know about the different types of data and how they're stored
+  - Be familiar with distributed file systems and how they work
+  - Be familiar with NoSQL databases and object storage, and how they work
+iconUrl: /learn/achievements/cmu-cloud-developer/distributed-programming-introduction.svg
+levels:
+- beginner
+roles:
+- developer
+- student
+products:
+- azure
+units:
+- learn.cmu-cloud-computing.distributed-programming.introduction.0-introduction
+- learn.cmu-cloud-computing.distributed-programming.introduction.1-taxonomy-programs
+- learn.cmu-cloud-computing.distributed-programming.introduction.2-distributed-programs
+- learn.cmu-cloud-computing.distributed-programming.introduction.3-program-cloud
+- learn.cmu-cloud-computing.distributed-programming.introduction.4-program-cloud-models
+- learn.cmu-cloud-computing.distributed-programming.introduction.5-program-cloud-synchronization
+- learn.cmu-cloud-computing.distributed-programming.introduction.6-data-graph-parallelism
+- learn.cmu-cloud-computing.distributed-programming.introduction.7-program-cloud-symmetry
+- learn.cmu-cloud-computing.distributed-programming.introduction.8-challenges-scalability
+- learn.cmu-cloud-computing.distributed-programming.introduction.9-challenges-communication
+- learn.cmu-cloud-computing.distributed-programming.introduction.10-challenges-heterogeneity
+- learn.cmu-cloud-computing.distributed-programming.introduction.11-challenges-synchronization
+- learn.cmu-cloud-computing.distributed-programming.introduction.12-challenges-fault-tolerance
+- learn.cmu-cloud-computing.distributed-programming.introduction.13-challenges-schedules
+- learn.cmu-cloud-computing.distributed-programming.introduction.14-summary
+badge:
+  uid: learn.cmu-cloud-computing.distributed-programming.introduction.badge
