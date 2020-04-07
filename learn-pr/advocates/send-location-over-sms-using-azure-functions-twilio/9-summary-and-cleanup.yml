@@ -6,8 +6,8 @@ metadata:
   description: A summary or the steps taken and clean-up instructions to clean up the provisioned Azure resources
   ms.date: 09/24/2018
   #TODO: Update with real author name.
-  author: markjulmar
-  ms.author: smmark
+  author: adrianstevens
+  ms.author: adsteven
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX

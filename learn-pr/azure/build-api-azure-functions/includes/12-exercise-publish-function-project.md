@@ -27,7 +27,7 @@ Your API is ready for prime time. Let's put it in the cloud. Azure, here we come
 
 1. When prompted, select "Upload Settings".
 
-   ![Screenshot of a VS Code notification asking if you want to upload settings. A callout highlights the Upload settings button.](../media/upload-settings.png)
+    :::image type="content" source="../media/upload-settings.png" alt-text="Screenshot of a VS Code notification asking if you want to upload settings. A callout highlights the Upload settings button." loc-scope="vs-code":::
 
 ## Set the API URL for the frontend application
 
@@ -81,7 +81,7 @@ Your API is ready for prime time. Let's put it in the cloud. Azure, here we come
 
 1. Notice there's a "blocked by CORS policy" message.
 
-   ![Screenshot of a web browser with developer tools open showing a "blocked by CORS" error message in the console.](../media/blocked-by-cors.png)
+    :::image type="content" source="../media/blocked-by-cors.png" alt-text="Screenshot of a web browser with developer tools open showing a blocked by CORS error message in the console." loc-scope="other"::: <!-- no-loc -->
 
 ## Enable CORS on the Function app in Azure
 
