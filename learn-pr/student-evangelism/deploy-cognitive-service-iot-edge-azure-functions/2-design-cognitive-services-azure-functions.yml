@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.oxford.deploy-cog-ser-iot-edge-azure-func.design-cog-ser
+title: Design Cognitive Services using Azure Functions
+metadata:
+  title: Design Cognitive Services using Azure Functions
+  description: In this section, we help the learner to understand the design of the deploying cognitive services using Azure Functions
+  ms.date: 04/07/2020
+  author: leestott
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-edge
+durationInMinutes: 6 # dummy number at present
+content: |
+  [!include[](includes/2-design-cognitive-services-azure-functions.md)]
