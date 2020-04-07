@@ -1,6 +1,6 @@
 Your company is launching a vacation planning website that helps customers add, edit, view, and remove plans from their wish list. Your API, which powers these features, runs on Node.js and Express is critical to the success of the application.
 
-Your API server is critical to the success of the application. The APIs are hosted on a server running Node.js and Express. You need to launch your application and it must scale up and down as needed while minimizing costs. There's a lot for you to think about!
+Your API server is critical to the success of the application. The APIs are hosted on a server running Node.js and Express. When you launch your application, it must scale up and down as needed while minimizing costs. There's a lot for you to think about!
 
 What if you could reduce some of these burdens without rewriting your entire API? By shifting the API to a serverless model using Azure Functions, you enjoy the following benefits:
 
@@ -35,7 +35,7 @@ Why would you make this shift? Overall there's less to think about when building
 
 ## About your project
 
-The project represents a Node Express application in TypeScript that is shifted to Azure Functions.
+The app begins as a Node Express application in TypeScript that you'll shift to an Azure Functions app.
 
 > ![NOTE]
 > If your Express app is using JavaScript instead of TypeScript, create an Azure Functions app using JavaScript.
