@@ -1,0 +1,89 @@
+### YamlMime:LearningPath
+uid: learn.cmu-cloud-computing.distributed-programming
+metadata:
+  title: Distributed programming on the cloud
+  description: Carnegie Mellon University's Cloud Developer course. Gain a deep understanding of data and how it's stored on the cloud.
+  brand: azure
+  ms.date: 03/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  showCreativeCommonsFooter: true
+title: Distributed programming on the cloud
+summary: |
+  Learn about how complex computer programs must be architected for the cloud by using distributed programming.
+
+  In this module, you will:
+    - Classify programs as sequential, concurrent, parallel, and distributed
+    - Indicate why programmers usually parallelize sequential programs
+    - Explain why cloud programs are important for solving complex computing problems
+    - Define distributed systems, and indicate the relationship between distributed systems and clouds
+    - Define distributed programming models
+    - Explain the two classical distributed programming models (shared-memory and message-passing)
+    - Describe how tasks can communicate by using the shared-memory programming model
+    - Indicate why synchronization is needed in shared-memory systems
+    - Describe how tasks can communicate by using the message-passing programming model
+    - Compare and contrast the shared-memory and the message-passing programming models in terms of five aspects (communication, synchronization, hardware support, development effort, and tuning effort)
+    - Outline the difference between synchronous and asynchronous programs
+    - Explain the bulk synchronous parallel (BSP) model
+    - Outline the difference between data parallelism and graph parallelism
+    - Distinguish between these distributed programs: single program, multiple data (SPMD); and multiple program, multiple data (MPMD)
+    - Describe how graph partitioning can be applied by using the edge-cut metric
+    - Explain the master-slave architectural model, and identify its pros and cons
+    - Describe the push-based and the pull-based management protocols that are used in master-slave architectures
+    - Explain the peer-to-peer architectural model, and identify its pros and cons
+    - Discuss the challenges with scalability, communication, heterogeneity, synchronization, fault tolerance, and scheduling that are encountered when building cloud programs
+    - Identify reasons for why linear scalability is hard to achieve in clouds
+    - Explain Amdahl's law, and discuss some of its implications that pertain to scalability
+    - Discuss the two main techniques that can be incorporated in distributed programs so as to address the communication bottleneck in the cloud
+    - Define heterogeneous and homogenous clouds, and identify the main reasons for heterogeneity in the cloud
+    - List the main challenges that heterogeneity poses on distributed programs, and outline some strategies for how to address such challenges
+    - State when and why synchronization is required in the cloud
+    - List the three main methods that can be employed to synchronize the sequence of read and write operations in distributed systems
+    - Identify the main synchronization properties that must be guaranteed for distributed and cloud programs
+    - Indicate the difference between partial and complete failures
+    - Identify the main technique that can be used to tolerate faults in clouds
+    - Compare and contrast between flat and hierarchical task redundancy groups
+    - Explain how fault tolerance can be achieved in clouds from two perspectives (tolerating faults and recovering from failures)
+    - Describe why and how distributed checkpointing and message logging can be utilized in clouds
+    - Define the consistent global state property of distributed checkpoints, and explain how it can be maintained without inflicting domino effects
+    - Outline the difference between task scheduling and job scheduling
+    - Explain how heterogeneity and locality can influence task schedulers
+    - Explain why it's difficult for task schedulers to balance between system utilization, load balancing, task parallelism, communication overhead, and scalability, all at once
+    - Describe how service level objectives (SLOs) can be expressed in task and job schedulers
+    - Define task elasticity, and indicate why SLOs are hard to achieve in multitenant heterogeneous clusters
+
+  In partnership with Dr. Majd Sakr and Carnegie Mellon University.
+prerequisites: |
+  - Understand what cloud computing is, including cloud service models and common cloud providers
+  - Know the technologies that enable cloud computing
+  - Understand how cloud service providers pay for and bill for the cloud
+  - Know what datacenters are and why they exist
+  - Know how datacenters are set up, powered, and provisioned
+  - Understand how cloud resources are provisioned and metered
+  - Be familiar with the concept of virtualization
+  - Know the different types of virtualization
+  - Understand CPU virtualization
+  - Understand memory virtualization
+  - Understand I/O virtualization
+  - Know about the different types of data and how they're stored
+  - Be familiar with distributed file systems and how they work
+  - Be familiar with NoSQL databases and object storage, and how they work
+iconUrl: /learn/achievements/cmu-cloud-developer/distributed-programming-cloud-computing.svg
+levels:
+- beginner
+- intermediate
+roles:
+- developer
+- student
+products:
+- azure
+modules:
+- learn.cmu-cloud-computing.distributed-programming.introduction
+- learn.cmu-cloud-computing.distributed-programming.analytics-engines-mapreduce
+- learn.cmu-cloud-computing.distributed-programming.analytics-engines-graphlab
+- learn.cmu-cloud-computing.distributed-programming.analytics-engines-spark
+- learn.cmu-cloud-computing.distributed-programming.message-queues-stream-processing
+trophy:
+  uid: learn.cmu-cloud-computing.distributed-programming.trophy
