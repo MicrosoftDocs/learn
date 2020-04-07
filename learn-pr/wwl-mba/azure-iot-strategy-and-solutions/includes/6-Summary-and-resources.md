@@ -1,4 +1,4 @@
-With intelligently connected devices and systems, organizations can evolve their operations, products, and customer experiences to high levels of efficiency, and minimize costs. With Azure IoT, you can leverage deep insights and create opportunities to transform your business.
+With intelligently connected devices and systems, organizations can evolve their operations, products, and customer experiences to high levels of efficiency. With Azure IoT, you can leverage deep insights, and create opportunities to transform your business.
 
 Now that you've reviewed this module, you should be able to:
 
