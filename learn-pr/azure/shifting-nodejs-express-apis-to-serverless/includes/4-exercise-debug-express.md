@@ -60,7 +60,7 @@ We'll allow the Angular application to proxy requests to the Node.js Express app
 
 You just told the Angular application that it can talk to the Node.js Express application.
 
-### Debug Both Applications
+### Debug both applications
 
 When the application launches, Angular requests the vacations data from the Node.js Express application. These two applications work together to get the data and render it in the browser.
 
