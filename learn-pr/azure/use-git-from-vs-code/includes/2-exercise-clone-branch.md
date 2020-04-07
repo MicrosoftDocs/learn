@@ -11,9 +11,17 @@ In this first exercise, you'll simulate the process of contributing to an open-s
 
 ### Step 1 - Create a fork of an open-source project in GitHub.
 
+If you clone someone else's GitHub repository and make some changes, you'll find that you don't have permission to push those changes back to GitHub. The workflow for making contributions to other peoples' projects on GitHub is a little more complex than working directly in the project repository, and starts with creating a **fork**.
+
+A fork is a copy of a GitHub repository that is associated with your GitHub account. When you create a fork, you will be granted full permissions to push changes to it, even if you don't have those permissions on the original repository.
+
+Once you've created a fork of the repository you want to contribute to, you can clone the fork repository to your computer, make the changes you want, then push them back to your fork. Then, you can ask the project maintainers to merge your changes into their repository by creating GitHub pull requests from your fork.
+
+Creating a fork of a repository you want to contribute to is an important first step. Forking takes place entirely within GitHub, so we use the GitHub web interface to do it, not a tool on your development computer.
+
 First, log into your GitHub account.  If you don't already have an account, you should create one now.
 
-Next, navigate to: 
+Next, navigate to:
 
 [https://github.com/MicrosoftDocs/mslearn-use-git-from-vs-code](https://github.com/MicrosoftDocs/mslearn-use-git-from-vs-code)
 
@@ -27,9 +35,9 @@ After a moment or two, the repository will be forked to your GitHub account.
 
 ### Step 2 - Copy the URL to your forked repository.
 
-You'll need the URL to clone your fork to your local hard drive.
+When you are working with a fork of a project repository, you usually want to perform the clone operation from the fork and not from the original repository. This automatically configures Git on your development computer to push your changes to the fork, where you have permissions to do so.
 
-To copy the URL, select the green "Clone or download" button near the upper-right hand corner of the web page.  A dropdown will appear titled "Clone with HTTPS".  
+You'll need the URL of your fork to clone it to your local hard drive. To copy the URL, select the green "Clone or download" button near the upper-right hand corner of the web page.  A dropdown will appear titled "Clone with HTTPS".  
 
 Select the clipboard icon next to the URL to copy the URL to your computer's clipboard.
 
@@ -137,5 +145,3 @@ There are a few important takeaways from this exercise:
 - To quickly perform a `git pull` and `git push` on an existing branch, click the "Synchronize Changes" button.
 - To quickly perform a `git push` on a new branch, click the "Publish Changes" button.
 - To quickly see how many unstaged or staged changes there are, glance at the blue icon over the Source Control icon in the left column.
-
-

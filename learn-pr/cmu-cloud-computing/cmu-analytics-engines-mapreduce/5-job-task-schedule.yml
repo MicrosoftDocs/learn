@@ -1,0 +1,132 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-computing.distributed-programming.analytics-engines-mapreduce.5-job-task-schedule
+title: Job and task scheduling
+metadata:
+  title: Job and task scheduling
+  description: Learn about job and task scheduling in MapReduce.
+  ms.date: 03/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  show_latex: true
+durationInMinutes: 21
+content: |
+  [!include[](includes/5-job-task-schedule.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+# Did I Get This block question 1
+  - content: "How many levels of scheduling are present in Hadoop MapReduce?"
+    choices:
+    - content: "One level"
+      isCorrect: false
+      explanation: "Incorrect. There are more levels of scheduling in Hadoop MapReduce. Does Hadoop only schedule tasks?"
+    - content: "Two levels"
+      isCorrect: true
+      explanation: "Correct! Hadoop has two levels of scheduling. Scheduling is present at the job and task levels."
+    - content: "Three levels"
+      isCorrect: false
+      explanation: "Incorrect. Hadoop doesn't have a third level of scheduling. Does Hadoop only schedule tasks?"
+
+# Did I Get This block question 2
+  - content: "Which of the following statements is **not** true about the FIFO Scheduler?"
+    choices:
+    - content: "The FIFO Scheduler supports job preemption, whereby running jobs can be preempted to make way for waiting jobs to proceed."
+      isCorrect: true
+      explanation: "Correct! This statement is not true. The FIFO Scheduler cannot be preempted to make way for waiting jobs to proceed."
+    - content: "The FIFO Scheduler doesn't organize jobs by priority or size."
+      isCorrect: false
+      explanation: "Incorrect. This statement is true about the FIFO Scheduler. There's no notion of a priority in the FIFO Scheduler, and by default, it follows the FIFO order. What's the main drawback of the FIFO scheduler in Hadoop?"
+    - content: "Jobs that occupy the entire cluster cannot be preempted and will cause other jobs to wait for their turn."
+      isCorrect: false
+      explanation: "Incorrect. This statement is true about the FIFO Scheduler. Any job that occupies the entire cluster cannot be preempted for other jobs in the queue. What's the main drawback of the FIFO scheduler in Hadoop?"
+    - content: "If there are vacant slots in the cluster while a job is running, tasks from other jobs that are waiting in the queue can be scheduled."
+      isCorrect: false
+      explanation: "Incorrect. This statement is true about the FIFO Scheduler. Tasks from other jobs in the queue can be scheduled if a job does not fully occupy a cluster. What's the main drawback of the FIFO scheduler in Hadoop?"
+
+# Did I Get This block question 3
+  - content: "What are the main differences between the Fair Scheduler and the Capacity Scheduler?"
+    choices:
+    - content: "A. The Fair Scheduler employs job preemption if needed, while the Capacity Scheduler doesn't."
+      isCorrect: false
+      explanation: "That's not quite right. The Fair Scheduler does employ job preemption if needed, while the Capacity Scheduler doesn't, but is this the only difference between the Fair and Capacity schedulers? What about the job organization in each scheduler?"
+    - content: "B. The Capacity Scheduler employs job preemption if needed, while the Fair Scheduler doesn't."
+      isCorrect: false
+      explanation: "Incorrect. It's the other way round. The Fair Scheduler employs job preemption, while the Capacity Scheduler doesn't."
+    - content: "C. The Fair Scheduler organizes jobs into pools, while the Capacity Scheduler organizes jobs into priority queues."
+      isCorrect: false
+      explanation: "That's not quite right. The Fair Scheduler does organize jobs into pools, while the Capacity Scheduler organizes jobs into priority queues, but is this the only difference between the Fair and Capacity schedulers? What about job preemption in each scheduler?"
+    - content: "D. The Capacity Scheduler organizes jobs into pools, while the Fair Scheduler organizes jobs into priority queues."
+      isCorrect: false
+      explanation: "Incorrect. It's the other way round. The Fair Scheduler organizes jobs into pools, while the Capacity Scheduler organizes them into priority queues."
+    - content: "A. and C."
+      isCorrect: true
+      explanation: "Correct!"
+    - content: "B. and D."
+      isCorrect: false
+      explanation: "That's not quite right. Both B and D are incorrect."
+
+# Did I Get This block question 4
+  - content: "Which of the following task-scheduling mechanisms is locality aware?"
+    choices:
+    - content: "A. Map task scheduler"
+      isCorrect: true
+      explanation: "Correct! Only the map task scheduler is locality aware in Hadoop MapReduce."
+    - content: "B. Reduce task scheduler"
+      isCorrect: false
+      explanation: "Incorrect. The reduce task scheduler is not locality aware by default in Hadoop MapReduce. Is locality considered when reduce tasks are scheduled?"
+    - content: "A. and B."
+      isCorrect: false
+      explanation: "That's not quite right. Only the map task scheduler is locality aware in Hadoop MapReduce. Is locality considered when reduce tasks are scheduled?"
+
+# Did I Get This block question 5
+  - content: "How are skewed partitions formed in MapReduce?"
+    choices:
+    - content: "When the partitioner doesn't distribute immediate key-value pairs evenly across reduce tasks"
+      isCorrect: true
+      explanation: "Correct! Partition skew is usually created by the partitioner itself, which may not distribute the intermediate key-value pairs evenly across reducers."
+    - content: "When the number of reduce tasks is odd"
+      isCorrect: false
+      explanation: "Incorrect. Partition skew is not a function of the number of reducers. How are partitions created? What would influence the size of a partition?"
+    - content: "When the number of reduce tasks is even"
+      isCorrect: false
+      explanation: "Incorrect. Partition skew is not a function of the number of reducers. How are partitions created? What would influence the size of a partition?"
+    - content: "When there is a large number of reduce tasks"
+      isCorrect: false
+      explanation: "Incorrect. Partition skew is not a function of the number of reducers. How are partitions created? What would influence the size of a partition?"
+    - content: "All of the above"
+      isCorrect: false
+      explanation: "Incorrect. The answer is one of the above choices, not all of them. How are partitions created? What would influence the size of a partition?"
+
+# Did I Get This block question 6
+# Question uses image "quiz-unit-6-cluster-nodes-1.png"
+# Original course uses interactive GUI not available in YAML. Added sample choices.
+#    - content: "The following image illustrates a six-node cluster in three racks. Each node hosts an input split, numbered either 1 or 2. There are three copies of each split because the file system is configured to be triple replicated.<br> 
+#      <img src=./media/quiz-unit-6-cluster-nodes-1.png></img> <br>
+#      Assume that nodes A, B, and E are available to process input split 1. What is the order of priority for these nodes that they'll be accorded during scheduling of a map task to process input split 1?"
+#    choices:
+#    - content: "1. Rack 1: Node A (input split 1), Node B (input split 2), 2. Rack 2: Node C (input split 1), Node D (input split 1), 3. Rack 3: Node E (input split 2), Node F (input split 2)."
+#      isCorrect: false
+#      explanation: "Incorrect. The scheduler prioritizes based on input split locality."
+#    - content: "1. Rack 1: Node A (input split 1), Node B (input split 2), 2. Rack 3: Node E (input split 2), Node F (input split 2)"
+#      isCorrect: true
+#      explanation: "Correct."
+#    - content: "1. Rack 3: Node E (input split 2), Node F (input split 2), 2. Rack 1: Node A (input split 1), Node B (input split 2)"
+#      isCorrect: false
+#      explanation: "Incorrect. The scheduler prioritizes based on input split locality."
+
+# Did I Get This block question 7
+# Original course uses interactive GUI not available in YAML. Added sample choices.
+#  - content: "Given the same scenario described in the previous question, assume that nodes A, B, and C are available to process input split 2. In addition, the JT noticed that node B has been slow in executing previous map tasks. What is the order of priority for these nodes that they'll be accorded during scheduling of a map task to process input split 1?"
+#    choices:
+#    - content: "1. Rack 1: Node A (input split 1), Node B (input split 2), 2. Rack 2: Node C (input split 1), Node D (input split 1), 3. Rack 3: Node E (input split 2), Node F (input split 2)"
+#      isCorrect: false
+#      explanation: "Incorrect. How do straggling tasks influence scheduling decisions in Hadoop?"
+#    - content: "1. Rack 1: Node A (input split 1), Node B (input split 2), 2. Rack 2: Node C (input split 1), Node D (input split 1)"
+#      isCorrect: true
+#      explanation: "Correct."
+#    - content: "1. Rack 2: Node C (input split 1), Node D (input split 1), 2. Rack 1: Node A (input split 1), Node B (input split 2)"
+#      isCorrect: false
+#      explanation: "Incorrect. How do straggling tasks influence scheduling decisions in Hadoop?"
