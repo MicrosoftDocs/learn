@@ -129,6 +129,8 @@ There are four endpoints in the Node.js Express application and we just created 
 
 #### Create the HTTP Post Function
 
+Follow the following steps to create a function that handles adding a vacation.
+
 1. Open the command palette by pressing **F1**
 1. Type and select **Azure Functions: Create Function**
 1. Choose **HTTP Trigger** for the type of function
@@ -155,6 +157,8 @@ export default httpTrigger;
 
 #### Create the HTTP Put Function
 
+Follow the following steps to create a function that handles updating a vacation.
+
 1. Open the command palette by pressing **F1**
 1. Type and select **Azure Functions: Create Function**
 1. Choose **HTTP Trigger** for the type of function
@@ -162,7 +166,7 @@ export default httpTrigger;
 1. Select **Anonymous** for the authentication level
 1. Open the file _function.json_
 1. Set the method to **put**
-1. Go to the bindings section's **req** object and add `route: "vacations"` entry
+1. Go to the bindings section's **req** object and add `route: "vacations/{id}"` entry
 1. Open the _functions/vacations-put/index.ts_ file
 1. Add the code to call the `vacationService.putVacations` function
 
@@ -181,6 +185,8 @@ export default httpTrigger;
 
 #### Create the HTTP Delete Function
 
+Follow the following steps to create a function that handles deleting a vacation.
+
 1. Open the command palette by pressing **F1**
 1. Type and select **Azure Functions: Create Function**
 1. Choose **HTTP Trigger** for the type of function
@@ -188,7 +194,7 @@ export default httpTrigger;
 1. Select **Anonymous** for the authentication level
 1. Open the file _function.json_
 1. Set the method to **delete**
-1. Go to the bindings section's **req** object and add `route: "vacations"` entry
+1. Go to the bindings section's **req** object and add `route: "vacations/{id}"` entry
 1. Open the _functions/vacations-delete/index.ts_ file
 1. Add the code to call the `vacationService.deleteVacations` function
 
