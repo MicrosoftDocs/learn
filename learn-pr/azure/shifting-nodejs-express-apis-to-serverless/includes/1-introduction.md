@@ -29,7 +29,7 @@ You're ready to shift your Express.js APIs to the serverless model. But first, l
 1. Managing scaling for your app (up and down), as demand fluctuates
 1. Costs associated with deploying your server
 
-Serverless eases some of this effort and cost for you.
+Serverless architecture eases some of this effort and cost for you.
 
 You'll import a series of middleware and write your logic to start your Express.js server. Azure Functions starts up with no additional code. What does this mean to you, in a concrete example? Well, when using Azure Functions the _server.ts_ file that you write in your Express application effectively is eliminated.
 
