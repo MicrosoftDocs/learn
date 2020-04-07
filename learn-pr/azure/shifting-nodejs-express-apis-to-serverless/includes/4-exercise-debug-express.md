@@ -71,7 +71,7 @@ We'll run and debug the applications together. We'll hit pause on the breakpoint
 1. Select **Debug Express and Angular** from the dropdown list
 1. Press **F5** to start the debugger
 
-When the application launches, it will get the list of vacations. The Angular `VacationComponent` will start the HTTP request to get the vacations. When the browser opens to <http://localhost:7070>, the code execution will pause on your first breakpoint in the _vacations.component.ts_ file in the `getVacations()` function.
+When the application launches, it gets the list of vacations. The Angular `VacationComponent` sends an HTTP request to get the vacation data. When the browser opens to <http://localhost:7070>, the code execution pauses on your first breakpoint in the _vacations.component.ts_ file for the `getVacations()` function.
 
 You can unpause execution and continue by pressing the **F5**.
 
