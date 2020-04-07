@@ -2,17 +2,15 @@ In this module, we’ll build a translator application by deploying Azure Functi
 
 You will use the following components in the design of the solution: 
 
-**Azure Functions and serverless:** Serverless computing enables developers to build applications without worrying about application infrastructure. Serverless computing has three parts:
+- **Azure Functions and serverless:** Serverless computing enables developers to build applications without worrying about application infrastructure. Serverless computing has three parts:
 
- a) Serverless Kubernetes
+   a) Serverless Kubernetes
 
- b) Serverless Functions
+   b) Serverless Functions
 
- c) Serverless Application Environments
+   c) Serverless Application Environments
 
-In this module, we use Azure functions only. Azure Functions enable you to develop serverless applications. You run small pieces of code (called "functions").  Specific events trigger the function to run the code.
-
-In this module, you will use the following components:  
+  In this module, we use Azure functions only. Azure Functions enable you to develop serverless applications. You run small pieces of code (called "functions").  Specific events trigger the function to run the code.
 
 - **Cognitive Speech Service:** The Speech service is an API that provides you speech-to-text, text-to-speech, and speech translation functionality into a single Azure subscription. In this module, you will use the Cognitive Speech service to integrate real-time speech translation.  
 - **Visual Studio Code**: is a source-code editor. You use Visual Studio Code as a development tool for the IoT Devkit.  
