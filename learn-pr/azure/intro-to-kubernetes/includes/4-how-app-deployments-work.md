@@ -111,6 +111,8 @@ You use a Pod template to deploy pods manually. Keep in mind that a manually dep
 
 A Replication Controller uses Pod templates and defines a specified number of pods that must run. The controller helps you run multiple instances of the same Pod and ensures that the number of Pods specified is always running on one or more nodes in the cluster. A Replication Controller will replace pods launched in this way with new pods if they fail, are deleted or terminated.
 
+For example, assume you deploy the drone tracking front-end website and users start accessing the website. If all the Pods fail for any reason, the website is unavailable to your users unless you launch new Pods. A Replication Controller helps you make sure your website is always available.
+
 ### Replica Sets
 
 Replica Sets replaces the Replication Controller in terms of the preferred way to deploy replicas. A Replica Set includes the same functionality as a Replication Controller. However, it includes an extra configuration option to include a selector value.
