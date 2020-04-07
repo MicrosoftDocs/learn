@@ -1,0 +1,133 @@
+### Adding resources to your ARM template
+
+In order to carry on with your exercises, you will add a storage account definition to your existing template.  To do so, you will edit the empty template you created in the last exercise.
+
+1. Open Visual Studio Code from the Azure shell provides here in the **sandbox** provided for you by using the following command.
+       
+```shell
+    code azuredeploy.json
+```
+              
+2. Copy and paste the following code in the resource section of your ARM template.
+
+> [!IMPORTANT]
+> When copying the code. Please ensure to replace the **{provide-unique-name}** (including the curly brackets) with a unique storage account name.  Guessing a unique names for Azure resources isn't easy and should not be counted on to address automating large deployments. Later in this Learn Module, you'll use built-in template features to create a unique name.
+
+```json
+   {
+     "type": "Microsoft.Storage/storageAccounts",
+     "apiVersion": "2019-04-01",
+     "name": "{provide-unique-name}",
+     "location": "eastus",
+     "sku": {
+       "name": "Standard_LRS"
+     },
+     "kind": "StorageV2",
+     "properties": {
+       "supportsHttpsTrafficOnly": true
+     }
+   }
+```
+At this point your ARM template should now look like the following:
+
+```JSON
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.1",
+    "apiProfile": "",
+    "parameters": {},
+    "variables": {},
+    "functions": [],
+    "resources": [
+         {
+             "type": "Microsoft.Storage/storageAccounts",
+             "apiVersion": "2019-04-01",
+             "name": "{provide-unique-name}",
+             "location": "eastus",
+             "sku": {
+               "name": "Standard_LRS"
+             },
+             "kind": "StorageV2",
+             "properties": {
+               "supportsHttpsTrafficOnly": true
+             }
+          }
+    ],
+    "outputs": {}
+}
+```
+> [!NOTE]
+>Notice that in this example we incremented the "contentVersion" value since we are making a significant change to the template.
+
+#### Resource properties
+
+#### Deploy template
+
+You can deploy the template to create the storage account. Give your deployment a different name so you can easily find it in the history.
+
+Just as it was in the first exercise, you need to specify a resource group that will contain the resources. Before running the deployment command, you **must** create the resource group. However, in the **sandbox** provided here, you already have a resource group to target your deployment.
+
+1. To get the name of the resource group in the sandbox, you can use an azurecli command. Type the code below in the sandbox to list the resource group name.
+
+    ```shell
+    az group list --query "[?contains(name, 'learn')]" -o table
+    ```
+
+1. In order to use the resource group name in the deployment, we will store it in a variable in the shell by using the command:
+
+    ```shell
+    RG=$(az group list --query "[?contains(name, 'learn')].name" -o tsv)
+    ```
+
+#### Azure CLI
+
+To run this deployment you will use Azure CLI that is built-in the Azure shell that is currently available in the sandbox provided for this exercise.  To deploy your new template version, use the code below.  This code will store the template name, the date (used to create the deployment name) and the constructed deployment name in variables to be used by the **az deployment** command as parameters.
+
+```azurecli
+templateFile="azuredeploy.json"
+today=$(date +"%d-%b-%Y")
+DeploymentName="addstorage-"$today
+
+az deployment group create \
+  --name $DeploymentName \
+  --resource-group $RG \
+  --template-file $templateFile
+```
+
+
+> [!NOTE]
+>If the deployment failed, use the debug switch with the deployment command to show the debug logs. You can also use the verbose switch to show the full debug logs.
+
+Two possible deployment failures that you might encounter:
+
+- Error: Code=AccountNameInvalid; Message={provide-unique-name} is not a valid storage account name. Storage account name must be between 3 and 24 characters in length and use numbers and lower-case letters only.<br>In the template, replace {provide-unique-name} with a unique storage account name. See Add resource.
+
+- Error: Code=StorageAccountAlreadyTaken; Message=The storage account named store1abc09092019 is already taken.<br>In the template, try a different storage account name.
+
+### Verify deployment
+
+You can verify the deployment by exploring the resource group from the Azure portal.
+
+1. Sign in to the sign into the [Azure portal for sandbox](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
+
+>[!NOTE]
+> When accessing the portal, please authenticate using the same account you used to access Microsoft Learn
+
+1. From the left menu, select **Resource groups**.
+
+1. Select the resource group you used to deploy your new template in the last command. The resource group will have a name similar to **learn-0ab1c234-d567-8e90-fabcd-12e34d56789f**. You will **now** see a storage account deployed within that resource group based on the resource defined in your template.
+
+1. Notice in the upper right of the overview, You now have **2 Succeeded** deployment listed in the upper-right portion of the portal. And your storage account is showing as a resource in your resource group.
+
+   ![View deployment status](../media/portal-verify-deployment-2.png)
+
+1. In the contextual menu on the left, click on **Deployments** and select the latest deployment to see the deployment details.
+
+   ![Select deployment](../media/portal-verify-storagetemplate.png)
+
+1. You see a summary of the deployment. You now see the storage account resources deployed.
+
+   ![View deployment summary](../media/Storage-account-deploy-details.png)
+---
+
+You have now added a resource to your template.  The next unit will cover how to add parameters.

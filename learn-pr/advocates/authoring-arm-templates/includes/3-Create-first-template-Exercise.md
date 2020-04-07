@@ -63,7 +63,6 @@ The code below, sets the variables for:
 
 
 ```azurecli
-
 templateFile="azuredeploy.json"
 today=$(date +"%d-%b-%Y")
 DeploymentName="blanktemplate-"$today
@@ -72,7 +71,6 @@ az deployment group create \
   --name $DeploymentName \
   --resource-group $RG \
   --template-file $templateFile
-
 ```
 
 The deployment command returns results in a JSON format. Look for `ProvisioningState` to see whether the deployment succeeded.
