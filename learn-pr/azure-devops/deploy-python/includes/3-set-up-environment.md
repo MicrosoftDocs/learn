@@ -111,7 +111,7 @@ This solution requires several Azure resources for deployment, which will be cre
 	  --name python-cicd-$RANDOM \
 	  --resource-group python-cicd-rg \
 	  --plan python-cicd-asp \
-      --runtime "node|10.10"
+      --runtime "python|3.6"
     ```
 
 1. Run the following `az webapp list` command to list the host name and state of the App Service instance.
