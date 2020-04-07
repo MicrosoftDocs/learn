@@ -1,4 +1,4 @@
-Your company is launching a vacation planning website. It helps customers view, edit, add, and remove plans from their wish list. Your API, which powers these features, runs on Node.js and Express is critical to the success of the application
+Your company is launching a vacation planning website that helps customers add, edit, view, and remove plans from their wish list. Your API, which powers these features, runs on Node.js and Express is critical to the success of the application.
 
 Your API server is critical to the success of the application. The APIs are hosted on a server running Node.js and Express. You need to launch your application and it must scale up and down as needed while minimizing costs. There's a lot for you to think about!
 
