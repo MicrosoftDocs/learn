@@ -54,7 +54,7 @@ Just as with `ndarrays`, you can access specific data elements in a `Series` via
 
 ```Python
 series_example[1]
-``1
+```
 
 ```Output
 0.75
