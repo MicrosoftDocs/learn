@@ -7,7 +7,7 @@ However, your goal in this exercise is to explore a Kubernetes installation and 
 
 Keep in mind that there are other options such as MiniKube, and Kubernetes support in Docker, to do the same.
 
-## What is Mikro8s?
+## What is Mikrok8s?
 
 microk8s allows you to deploy a single-node Kubernetes cluster as a single package to target workstations and Internet of Things (IoT) devices. Canonical, the creators of Ubuntu Linux, originally developed and maintains mikro8s.
 
@@ -41,9 +41,9 @@ We're now ready to install add-ons on the cluster.
 
 ### How to install microk8s on Windows
 
-You use Multipass to run mikro8s on Windows. Multipass is a lightweight VM manager for Linux, Windows, and macOS. 
+You use Multipass to run mikro8s on Windows. Multipass is a lightweight VM manager for Linux, Windows, and macOS.
 
-1. Download and install the latest release of Multipass for Windows from [GitHub] (https://github.com/canonical/multipass/releases).
+1. Download and install the latest release of Multipass for Windows from [GitHub](https://github.com/canonical/multipass/releases?azure-portal=true).
 
 1. In a command console, run the Multipass launch command to configure and run the microk8s-vm image. This step may take a few minutes to complete depending on the speed of your internet connection and desktop.
 
@@ -274,11 +274,11 @@ Recall from earlier that a Kubernetes cluster exists out of master and worker no
 
 You want to schedule a webserver on the cluster to serve a website to your customers. There are several options you can choose from, however, for this example, you'll use NGINX.
 
-Recall from earlier, you can use Pod manifest files to describe your Pods, ReplicaSets, and Deployments to define workloads. Since you haven't covered these files in detail, you'll use `kubectl` to directly pass the information to the API server.
+Recall from earlier, you can use pod manifest files to describe your pods, ReplicaSets, and Deployments to define workloads. Since you haven't covered these files in detail, you'll use `kubectl` to directly pass the information to the API server.
 
 Remember, that even though this method is handy, using manifest files is recommended best practice. Manifest files allow you to roll forward or back deployments with ease in your cluster. These files also help document the configuration of a cluster.
 
-1. You'll use the `kubectl create deployment` command to create your NGINX deployment. You specify the name of the deployment and the container image to create a single instance of the Pod.
+1. You'll use the `kubectl create deployment` command to create your NGINX deployment. You specify the name of the deployment and the container image to create a single instance of the pod.
 
     Run the following command to create an NGINX deployment.
 
@@ -309,7 +309,7 @@ Remember, that even though this method is handy, using manifest files is recomme
     nginx   1/1     1            1           18s
     ```
 
-1. The deployment created a Pod. You use the `kubectl get pods` command to fetch info about your cluster's Pods.
+1. The deployment created a pod. You use the `kubectl get pods` command to fetch info about your cluster's pods.
 
     Run the following command to fetch info about the deployment.
 
@@ -317,7 +317,7 @@ Remember, that even though this method is handy, using manifest files is recomme
     ubuntu@microk8s-vm:~$ sudo kubectl get pods
     ```
 
-    The result will be similar to the example below. Notice the name of the Pod is a generated value prefixed with the name of the deployment, and the status of the Pod is running.
+    The result will be similar to the example below. Notice the name of the pod is a generated value prefixed with the name of the deployment, and the status of the pod is running.
 
     ```bash
     ubuntu@microk8s-vm:~$ sudo kubectl get pods
@@ -328,9 +328,9 @@ Remember, that even though this method is handy, using manifest files is recomme
 
 ### Test the website installation
 
-Test the NGINX installation by connecting to the webserver using the Pod IP address. You'll need to find the address of the Pod first to access the site using the  `-o wide` parameter.
+Test the NGINX installation by connecting to the webserver using the pod IP address. You'll need to find the address of the pod first to access the site using the  `-o wide` parameter.
 
-1. Run the following command to fetch info about the Pod.
+1. Run the following command to fetch info about the pod.
 
     ```bash
     ubuntu@microk8s-vm:~$ sudo kubectl get pods -o wide
@@ -394,7 +394,7 @@ The `kubectl scale` command allows you to scale the number of replicas in your d
     ubuntu@microk8s-vm:~$ sudo kubectl get pods -o wide
     ```
 
-    The result will be similar to the example below. Notice that you now see three running Pods, each with its unique IP address.
+    The result will be similar to the example below. Notice that you now see three running pods, each with its unique IP address.
 
     ```bash
     ubuntu@microk8s-vm:~$ sudo kubectl get pods -o wide

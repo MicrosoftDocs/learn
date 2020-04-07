@@ -8,7 +8,7 @@ A *container* is an atomic unit of software that packages up code, dependencies,
 
 ## Why use a container?
 
-You realize that you have to scale out your solution to meet customer demand. One option is to deploy a new virtual machine (VM) for each application and then deploy the applications to the VMs. However, doing so will make you responsible for the management of each additional VM. For example, you'll have to make sure the correct operating system (OS) versions and dependencies for each application is installed and configured. You also must make sure you're installing and upgrading the correct versions of the applications. If there are errors, you have to make sure you can roll back the installation with the least amount of disruption to your solution.
+You realize that you have to scale out your solution to meet customer demand. One option is to deploy a new virtual machine (VM) for each application and then deploy the applications to the VMs. However, doing so will make you responsible for the management of each additional VM. For example, you'll have to make sure the correct operating system (OS) versions and dependencies for each application are installed and configured. You also must make sure you're installing and upgrading the correct versions of the applications. If there are errors, you have to make sure you can roll back the installation with the least amount of disruption to your solution.
 
 :::image type="content" source="../media/2-deploy-multiple-instances.png" alt-text="Diagram of replicated servers as VMs in the cloud and how this problem raises migration questions and problems." border="false":::
 
@@ -16,11 +16,11 @@ The above deployment is cumbersome, sometimes error-prone and doesn't easily sca
 
 The container concept gives you three major benefits:
 
-1. **A container is immutable** - the unchanging nature of a container allows it to be deployed and run reliably with the same behavior from one compute environment to another. A container image tested in a QA environment is the same container image deployed to production.
+1. **A container is immutable**: The unchanging nature of a container allows it to be deployed and run reliably with the same behavior from one compute environment to another. A container image tested in a QA environment is the same container image deployed to production.
 
-1. **A container is lightweight** - you can think of a container as a VM image, but smaller. A VM image is normally installed on a physical host. The image contains both the OS and the application you want to run. In contrast, a container doesn't need an OS, only the application. The container always relies on the host installed OS for Kernel-specific services. Containers are less resource-intensive, and multiple containers can be installed on the same computing environment.
+1. **A container is lightweight**: You can think of a container as a VM image, but smaller. A VM image is normally installed on a physical host. The image contains both the OS and the application you want to run. In contrast, a container doesn't need an OS, only the application. The container always relies on the host installed OS for kernel-specific services. Containers are less resource-intensive, and multiple containers can be installed on the same computing environment.
 
-1. **Container startup is fast** - containers can start up in few seconds instead of minutes, like a VM.
+1. **Container startup is fast**: Containers can start up in few seconds instead of minutes, like a VM.
 
 The above benefits make containers a popular choice for developers and IT operations alike.
 
@@ -44,13 +44,13 @@ Container orchestration is a concept that describes all the tasks you or a syste
 
 ## What is a cloud-native application?
 
-A cloud-native application is an application designed and built to take advantage of services such as auto-scaling, rolling updates, self-healing, and the other tasks listed above. These are applications that run and are managed in an orchestration platform such as Kubernetes. A cloud-native application isn't limited to running in public or private cloud environments as it can also run in a hybrid cloud and on-premises data centers.
+A cloud-native application is an application designed and built to take advantage of services such as autoscaling, rolling updates, self-healing, and the other tasks listed above. These are applications that run and are managed in an orchestration platform such as Kubernetes. A cloud-native application isn't limited to running in public or private cloud environments as it can also run in a hybrid cloud and on-premises data centers.
 
 ## What is a microservices application?
 
-A microservices application is an application that is designed and structured as loosely coupled collaborative services. These services are deployed separately from each other to simplify large application design and maintenance. The services communicate over RESTful APIs, or Advanced Message Queuing Protocol (AMQP) enabled services. A microservice designed application forms an important part of cloud-native applications.
+A microservices application is an application that is designed and structured as loosely coupled collaborative services. These services are deployed separately from each other to simplify large application design and maintenance. The services typically communicate over RESTful APIs, or Advanced Message Queuing Protocol (AMQP) enabled services. A microservice designed application forms an important part of cloud-native applications.
 
-In the drone tracking example, you can see how each of the components is easily identifiable as a microservice. You can deploy, update, and scale each service independently from the other.
+In the drone tracking example, each of the components is easily identifiable as a microservice. Each service can be deployed, updated, and scaled independently from the other.
 
 ## What is Kubernetes?
 
@@ -62,23 +62,23 @@ Kubernetes is a portable, extensible open-source platform for automating deploym
 
 The benefits of using Kubernetes is based on the abstraction of tasks, these tasks include:
 
-- Deployment of containers
+- Deployment of containers.
 
-- Self-heal of containers, for example, restarting containers that fail or replacing containers
+- Self-healing of containers. For example, restarting containers that fail or replacing containers.
 
-- Scale application container count up or down dynamically based on demand
+- Scaling application container count up or down dynamically based on demand.
 
-- Automate rolling updates and rollbacks of containers
+- Automation of rolling updates and rollbacks of containers.
 
-- Management of storage
+- Management of storage.
 
-- Management of network traffic
+- Management of network traffic.
 
-- Store and manage sensitive information such as usernames and passwords
+- Storage and management of sensitive information such as usernames and passwords.
 
 Keep in mind, all of the above aspects of Kubernetes requires configuration and a good understanding of the underlying technologies covered. For example, you need to understand concepts such as virtual networks, load balancers, reverse proxies, and so on to configure Kubernetes networking.
 
-### Kubernetes disadvantages
+### Kubernetes considerations
 
 Kubernetes allows you to view your data center as one large computer. You don't worry about how and where you deploy your containers, only about deploying and scaling your applications as needed. However, this view might be slightly misleading as there are a few aspects to keep in mind:
 

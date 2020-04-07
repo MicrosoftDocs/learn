@@ -12,7 +12,7 @@ title: Introduction to Kubernetes
 summary: Determine the types of business problems that can be solved using Kubernetes. Describe the benefits of container orchestration with features like deployment management, automatic updates, and self-healing.
 abstract: |
   In this module, you will:
-  - Evaluate whether Kubernetes is an appropriate orchestration platform for you
+  - Evaluate whether Kubernetes is an appropriate orchestration platform for your workload
   - Describe the difference between master nodes and nodes in a Kubernetes cluster
   - Describe how the components of Kubernetes work to support compute container orchestration
 prerequisites: |

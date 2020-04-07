@@ -8,7 +8,7 @@ The drone tracking solution is built as microservices that are designed as loose
 
 - A cache services that store frequent requested information displayed on the website
 
-- A RESTFul API where tracked drones send data about the drone status, such as a GPS location and battery charge levels
+- A RESTful API where tracked drones send data about the drone status, such as a GPS location and battery charge levels
 
 - A queue that holds unprocessed data collected by the RESTful API
 

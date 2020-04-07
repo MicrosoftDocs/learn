@@ -86,9 +86,9 @@ kubelet is the agent that runs on each node in the cluster and monitors work req
 
 kubelet is responsible for monitoring the nodes and making sure that the containers scheduled on each node run as expected. kubelete only manages containers created by Kubernetes and isn't responsible for rescheduling work to run on other nodes if the current node can't run the work.
 
-#### What is the Container runtime
+#### What is the Container runtime?
 
-The Container Runtime is the underlying software that runs containers on a Kubernetes cluster. The runtime is responsible for fetching, starting, and stopping container images. Kubernetes supports several container runtimes, including but not limited to docker, rkt, CRI-O, containerd, and frakti. The support for many container runtime types are based on the Container Runtime Interface (CRI). The CRI is a plugin design that provides a container runtime interface and allows Kubelet to communicate with the available container runtime.
+The Container Runtime is the underlying software that runs containers on a Kubernetes cluster. The runtime is responsible for fetching, starting, and stopping container images. Kubernetes supports several container runtimes, including but not limited to Docker, rkt, CRI-O, containerd, and frakti. The support for many container runtime types are based on the Container Runtime Interface (CRI). The CRI is a plugin design that provides a container runtime interface and allows Kubelet to communicate with the available container runtime.
 
 The default container runtime in Azure Kubernetes Service (AKS) is Docker. However, you may also use kata-containers and containerd. Keep in mind that the Windows support for containerd is experimental.
 
@@ -100,45 +100,45 @@ Kube-proxy is responsible for local cluster networking and runs on each node. It
 
 The workloads you run on Kubernetes are containerized applications. However, unlike in a docker environment, you can't run containers directly on Kubernetes. You have to package the container into a Kubernetes object. This object is called a Pod and is the smallest object that you can create in Kubernetes.
 
-A Pod represents a single instance of an application. A single Pod can also group of one or more containers. However, a Pod typically doesn't contain multiples of the same application.
+A pod represents a single instance of an application. A single pod can also group of one or more containers. However, a pod typically doesn't contain multiples of the same application.
 
-A Pod includes information about the shared storage and network configuration, and a specification on how to run its packaged containers. You use Pod templates to define the information about the pods that run in your cluster. Pod templates are YAML coded files you reuse and include in other objects to manage pod deployments.
+A pod includes information about the shared storage and network configuration, and a specification on how to run its packaged containers. You use pod templates to define the information about the pods that run in your cluster. Pod templates are YAML coded files you reuse and include in other objects to manage pod deployments.
 
-For example, assume you want to deploy a pod that contains a website to a Kubernetes cluster. You'll create the Pod definition file that specifies the application container images and configuration. Then you deploy the Pod definition file to Kubernetes.
+For example, assume you want to deploy a pod that contains a website to a Kubernetes cluster. You'll create the pod definition file that specifies the application container images and configuration. Then you deploy the pod definition file to Kubernetes.
 
-:::image type="content" source="../media/3-diagram-pod-with-website-tmp.svg" alt-text="Diagram of Pod with a website as the primary container." border="false":::
+:::image type="content" source="../media/3-diagram-pod-with-website-tmp.svg" alt-text="Diagram of pod with a website as the primary container." border="false":::
 
 It's unlikely to see a web application that has a website as the only component in the solution. A web application typically has some kind of datastore and other supporting elements. Kubernetes Pods can also contain more than one container.
 
-:::image type="content" source="../media/3-diagram-pod-with-website-database-tmp.svg" alt-text="Diagram of Pod with a website as the primary container and a supporting container. The node has both an assigned IP address and a localhost host address." border="false":::
+:::image type="content" source="../media/3-diagram-pod-with-website-database-tmp.svg" alt-text="Diagram of pod with a website as the primary container and a supporting container. The node has both an assigned IP address and a localhost host address." border="false":::
 
-Assume your site uses a database. Here the website is packaged in the main container and the database in the supporting container. For these two containers to function and communicate with each other, you expect them to run in an environment that provides a host OS, a network stack, kernel namespaces, shared memory, and volumes to persist data. The Pod is the sandbox environment that provides all of these services to your application and allows the containers to share the Pod's assigned IP address.
+Assume your site uses a database. Here the website is packaged in the main container and the database in the supporting container. For these two containers to function and communicate with each other, you expect them to run in an environment that provides a host OS, a network stack, kernel namespaces, shared memory, and volumes to persist data. The pod is the sandbox environment that provides all of these services to your application and allows the containers to share the pod's assigned IP address.
 
-Since you can potentially create many Pods that are running on many nodes, it can hard to identify them. You recognize and group Pods using string labels you specify when you define a Pod.
+Since you can potentially create many pods that are running on many nodes, it can hard to identify them. You recognize and group pods using string labels you specify when you define a pod.
 
-### The lifecycle of a Kubernetes Pod
+### The lifecycle of a Kubernetes pod
 
-Kubernetes Pods have a distinct lifecycle that impacts the way you deploy, run, and update Pods.
+Kubernetes pods have a distinct lifecycle that impacts the way you deploy, run, and update pods.
 
-You start by submitting the Pod YAML manifest to the cluster. Once submitted and persisted to the cluster, the manifest file defines the desired state of the Pod. The Scheduler schedules the Pod to a healthy node with enough resources to run the Pod.
+You start by submitting the pod YAML manifest to the cluster. Once submitted and persisted to the cluster, the manifest file defines the desired state of the pod. The Scheduler schedules the pod to a healthy node with enough resources to run the pod.
 
-:::image type="content" source="../media/3-pod-lifecycle-tmp.png" alt-text="Diagram that shows the lifecycle of the Pod." border="false":::
+:::image type="content" source="../media/3-pod-lifecycle-tmp.png" alt-text="Diagram that shows the lifecycle of the pod." border="false":::
 
-Let's look at the phases in a Pods lifecycle.
+Let's look at the phases in a pod lifecycle.
 
 |||
 |---|---|
-| Pending | Once scheduled, the container runtime downloads container images and starts all containers for the Pod. |
-| Running | The Pod transitions to a running state once all of the resources within a Pod are ready. |
-| Succeeded | The Pod transitions to a succeeded state when the Pod completed its intended task and ran successfully. |
-| Failed | Pods can fail for various reasons. For example, it could be that a container in the Pod failed, and all other containers terminated, or an image wasn't found while preparing the Pod containers. In these types of cases, the Pod can go to a Failed state. Pods can transition to a failed state from both pending and running. A specific failure can also place a Pod back into the Pending phase. |
-| Unknown | If the state of the Pod can't be determined, the Pod is an unknown phase. |
+| Pending | Once scheduled, the container runtime downloads container images and starts all containers for the pod. |
+| Running | The pod transitions to a running state once all of the resources within a pod are ready. |
+| Succeeded | The pod transitions to a succeeded state when the pod completed its intended task and ran successfully. |
+| Failed | Pods can fail for various reasons. For example, it could be that a container in the pod failed, and all other containers terminated, or an image wasn't found while preparing the pod containers. In these types of cases, the pod can go to a failed state. Pods can transition to a failed state from both pending and running. A specific failure can also place a pod back into the pending state. |
+| Unknown | If the state of the pod can't be determined, the pod is an unknown state. |
 
-Pods are kept on a cluster until a controller, the control plane, or a user explicitly removes them. When a Pod is deleted and is replaced by a new Pod, the new Pod is an entirely new instance of the Pod based on the Pod manifest. The cluster doesn't save the Pod's state or dynamically assigned configuration, for example, the Pod ID or IP address. This aspect impacts how you deploy Pods and how you design your apps. For example, you can't rely on preassigned IP addresses for your Pods.
+Pods are kept on a cluster until a controller, the control plane, or a user explicitly removes them. When a pod is deleted and is replaced by a new pod, the new pod is an entirely new instance of the pod based on the pod manifest. The cluster doesn't save the pod's state or dynamically assigned configuration, for example, the pod ID or IP address. This aspect impacts how you deploy pods and how you design your apps. For example, you can't rely on preassigned IP addresses for your pods.
 
 ### Container states
 
-Keep in mind that the phases are a summary of where the Pod is in its lifecycle. When you inspect Pods, there are three states the cluster uses to track your containers inside the Pod.
+Keep in mind that the phases are a summary of where the pod is in its lifecycle. When you inspect pods, there are three states the cluster uses to track your containers inside the Pod.
 
 |||
 |---|---|

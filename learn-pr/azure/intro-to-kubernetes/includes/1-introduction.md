@@ -6,17 +6,17 @@ Suppose you work at a drone management company. Your company provides a drone tr
 
 **[Image of the high-level architecture that describes the drone tracking solution.]**
 
-- A drone tracking website that includes maps and information about tracked drones
+- A drone tracking website that includes maps and information about tracked drones.
 
-- A cache service that stores frequent requested information displayed on the website
+- A cache service that stores frequent requested information displayed on the website.
 
-- A RESTFul API where tracked drones send data about the drone status, such as a GPS location and battery charge levels
+- A RESTful API where tracked drones send data about the drone status, such as a GPS location and battery charge levels.
 
-- A queue that holds unprocessed data collected by the RESTful API
+- A queue that holds unprocessed data collected by the RESTful API.
 
-- A data processing service that fetches and processes data from the queue
+- A data processing service that fetches and processes data from the queue.
 
-- A NoSQL database that stores processed tracking data and user information captured from the website and data processing service
+- A NoSQL database that stores processed tracking data and user information captured from the website and data processing service.
 
 You're using containerized instances to quickly deploy into new customer regions and scale resources as needed to meet customer demands. You want to use a container orchestration platform that makes it simple to develop, deploy, and manage these containerized applications.
 
@@ -26,8 +26,8 @@ Here, you'll see how Kubernetes makes it simple to orchestrate containerized app
 
 In this module, you will:
 
-- Evaluate whether Kubernetes is an appropriate orchestration platform for you
-- Describe how the components of a Kubernetes cluster work and support compute container orchestration
+- Evaluate whether Kubernetes is an appropriate orchestration platform for your workload.
+- Describe how the components of a Kubernetes cluster work and support compute container orchestration.
 
 ## Prerequisites
 
