@@ -77,7 +77,7 @@ You can unpause execution and continue by pressing the **F5**.
 
 Now the code will pause on your second breakpoint in the _vacation.routes.ts_ file. The Node.js Express route `vacations` was hit by the Angular application.
 
-### Stop the Debuggers
+### Stop the debuggers
 
 There are two debugging processes running: one for Angular and one for Node.js Express. Let's stop both debuggers.
 
