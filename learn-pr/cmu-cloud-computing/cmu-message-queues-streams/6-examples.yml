@@ -1,0 +1,31 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-computing.distributed-programming.message-queues-stream-processing.6-examples
+title: Real-time architectures in practice
+metadata:
+  title: Real-time architectures in practice
+  description: Real-time architectures in practice
+  ms.date: 03/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 9
+content: |
+  [!include[](includes/6-examples.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which of the following is true about LinkedIn's original architecture?"
+    choices:
+    - content: "It was log-oriented"
+      isCorrect: false
+      explanation: "Incorrect. This is true about their final architecture. Review this page if you're not sure."
+    - content: "It uses all-to-all communication between production services and backend databases"
+      isCorrect: true
+      explanation: "Correct! The system had individual links between each communicating component."
+    - content: "Cluster membership was highly automated"
+      isCorrect: false
+      explanation: "Incorrect. This is true about their final architecture. Review this page if you're not sure."
+    - content: "Insight was provided in real-time using online analysis"
+      isCorrect: false
+      explanation: "Incorrect. This is true about their final architecture. Review this page if you're not sure."
