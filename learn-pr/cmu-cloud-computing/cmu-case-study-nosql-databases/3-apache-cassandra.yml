@@ -23,7 +23,7 @@ quiz:
 # Did I Get This block 2 question 1
   - content: "Which topology does Cassandra follow?"
     choices:
-    - content: "Master-slave topology"
+    - content: "Master-subordinate topology"
       isCorrect: false
       explanation: "Incorrect. All the nodes in Cassandra have the same role."
     - content: "Peer-to-peer topology"
