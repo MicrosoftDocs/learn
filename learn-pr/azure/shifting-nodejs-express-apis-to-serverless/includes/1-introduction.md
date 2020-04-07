@@ -31,7 +31,7 @@ You're ready to shift your Express.js APIs to the serverless model. But first, l
 
 Serverless architecture eases the server maintenance, scaling, and cost for you.
 
-Why would you make this shift? Overall there's less to think about with serverless.
+Why would you make this shift? Overall there's less to think about when building a serverless app.
 
 ## About your project
 
