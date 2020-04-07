@@ -75,7 +75,7 @@ When the application launches, it gets the list of vacations. The Angular `Vacat
 
 You can unpause execution and continue by pressing the **F5**.
 
-Now the code will pause on your second breakpoint in the _vacation.routes.ts_ file. The Node.js Express route `vacations` was hit by the Angular application.
+Now the code pauses on your second breakpoint in the _vacation.routes.ts_ file because the Node.js Express route `vacations` was hit by the Angular application.
 
 ### Stop the debuggers
 
