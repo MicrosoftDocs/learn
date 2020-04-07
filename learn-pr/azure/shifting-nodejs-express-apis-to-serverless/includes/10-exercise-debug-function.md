@@ -53,6 +53,7 @@ We'll allow the Angular application to proxy requests to the Azure Functions app
 
 You just told the Angular application that it can talk to the Azure Functions application.
 
+> ![NOTE]
 > The Node.js Express application uses port **7070** and the Azure Functions application uses port **7071**. If we were truly removing the Node.js Express application, we could keep the same port. But for educational purposes, let's keep them both.
 
 ### Debug Both Applications
