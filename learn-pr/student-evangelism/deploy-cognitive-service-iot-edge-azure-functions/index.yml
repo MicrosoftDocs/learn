@@ -26,3 +26,8 @@ products:
 - azure-iot-edge
 units:
 - learn.oxford.deploy-cog-ser-iot-edge-azure-func.introduction
+- learn.oxford.deploy-cog-ser-iot-edge-azure-func.design-cog-ser
+- learn.oxford.deploy-cog-ser-iot-edge-azure-func.config-edge-device
+- learn.oxford.deploy-cog-ser-iot-edge-azure-func.create-cog-serv
+- learn.oxford.deploy-cog-ser-iot-edge-azure-func.deploy-azure-functions
+- learn.oxford.deploy-cog-ser-iot-edge-azure-func.deploy-device-code
