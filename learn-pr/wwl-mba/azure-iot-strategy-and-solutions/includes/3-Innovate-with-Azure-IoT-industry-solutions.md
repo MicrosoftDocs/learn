@@ -36,11 +36,11 @@ With preventative maintenance and stream analytics through IoT, you set conditio
 
 > [!Video https://www.microsoft.com/videoplayer/embed/RE2NQ4B]
 
-Through a greater understanding of engine maintenance planning, Rolls-Royce's airline customers reduced flight disruptions, and saving millions of dollars per year.
+Through a greater understanding of engine maintenance planning, Rolls-Royce's airline customers reduced flight disruptions, and saved millions of dollars per year.
 
 ### How Azure IoT works for transportation and smart cities
 
-With Azure IoT solutions, including Azure IoT Edge and Azure IoT Hub, the Alaska Department of Transportation found a scalable IoT solution to track storms.
+With Azure IoT solutions, including Azure IoT Edge and Azure IoT Hub, the Alaska Department of Transportation found a scalable IoT solution to track powerful storms.
 
 |  |  |
 | ------------ | -------------|
@@ -52,7 +52,7 @@ Azure IoT isn't only a transformative tool for driving business outcomes, it's a
 
 |  |  |
 | ------------ | -------------|
-|![Icon of lightbulb](../media/lightbulb.png)|*Take another look at the variety of business outcomes supported by Azure IoT. Which ones are relevant to your industry or your organization? Are there solutions from other industries that you might leverage?*
+|![Icon of lightbulb](../media/lightbulb.png)|*Take another look at the variety of business outcomes supported by Azure IoT. Which ones are relevant to your industry or your organization? Are there solutions from other industries that might work for you?*
 |
 
-Now that you've seen examples of IoT being applied to some industries, let's take a look at IoT solutions.
+Now that you've seen examples of IoT being applied to some industries, let's take a look at Azure IoT services.

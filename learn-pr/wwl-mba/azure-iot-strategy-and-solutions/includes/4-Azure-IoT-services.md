@@ -1,13 +1,15 @@
 Now that you've learned how Azure IoT can be applied to various industries, let's learn more about when and how you can use Azure IoT services.
 
-### Azure IoT Services
+### Top-tier Azure IoT Services
 
 The two top-tier services are IoT Hub, and IoT Central. All IoT solutions must have one or the other of these resources.
 
 |Business Need | Azure Services | Description | Benefits |
 |---------|---------|---------|---------|
-|Connect, monitor, and control millions of IoT assets.|Azure IoT Hub |A managed service hosted in the cloud, Azure IoT Hub acts as a central message hub for bi-directional communication between your IoT application and the devices it manages. It provides reliable and secure communications between millions of IoT devices and a cloud-hosted solution backend.|Azure IoT Hub monitoring helps you maintain the health of your solution by tracking events such as device creation, device failures, and device connections.|
+|Connect, monitor, and control millions of IoT assets.|Azure IoT Hub |A managed service hosted in the cloud, Azure IoT Hub acts as a central message hub for bi-directional communication between your IoT application and the devices it manages. It provides reliable and secure communications between millions of IoT devices and a cloud-hosted solution backend.|Azure IoT hubs are designed to handle billions of telemetry messages from millions of devices. Metrics are maintained, devices monitored, and alerts can be defined to trigger actions. These actions range from sending a warning email, to triggering an automated Azure Function. A host of other specialized features can be attached to an IoT hub, such as routing, storage, automated device provisioning, time series insights, and machine learning.|
 |An easier entry point for IoT app building.|Azure IoT Central|A hosted IoT app platform that's secure, scales with you as your business grows, and integrates with your existing business apps.|Simplify setup, and reduce management burden, operational costs, and overhead of a typical IoT project. ​Bring solutions to market faster, while staying focused on your customers​|
+
+### Azure IoT security
 
 There are many services that support the top-tier resources. Let's start with security.
 
@@ -17,13 +19,17 @@ There are many services that support the top-tier resources. Let's start with se
 |Ability to authenticate a huge number of IoT devices, with little or no human involvement.|Azure Device Provisioning Service|Azure DPS provisions devices globally, at scale, from a single cloud control point.|Zero touch device registration. Devices are automatically and securely connected to the IoT Hub service and provisioned with an initial configuration. Removes manual errors.|
 |Ability to view all security issues, recommendations, threats, from a single portal location.|Azure Security Center for IoT|Provides a holistic view of IoT solution security posture for DevOps and IoT solution managers. |Review and manage day to day security status.|
 
+### Azure IoT devices
+
 There are services aimed at improving the flow, efficiency, and customization of IoT data.
 
 |Business Need | Azure Services | Description | Benefits |
 |---------|---------|---------|---------|
 |Ability to route data to multiple locations. A cold path for storage, a warm path for analytics.|Azure IoT Event Hubs|Provides a sophisticated range of routing options, for masses of incoming data.|Manages multiple goals, such as a cold path for archiving data, a warm path for rapid analysis, and a cooler path for in-depth analysis.|
 |Extend intelligence from the cloud to your edge devices.|Azure IoT Edge|Azure IoT Edge is a service that builds on top of Azure IoT Hub. This service is meant for customers who want to analyze data on devices instead of in the cloud. Azure IoT Edge devices can be deployed and executed locally.|Enable scenarios that aren't currently cloud-feasible due to networking issues, low-latency requirements, or regulatory concerns.|
-|For intermediate and advanced developers, the ability to build custom IoT devices.|Azure IoT Device SDK|A REST-based SDK, to support third-party industry-specific sensors, and other IoT devices. Supports RTOS, Linux, Windows, Android, and iOS.|Provides the customization options that might be needed for specialized devices.|
+|For intermediate and advanced developers, the ability to build custom IoT apps.|Azure IoT Device SDK|A REST-based SDK, to support third-party industry-specific sensors, and other IoT devices. Supports RTOS, Linux, Windows, Android, and iOS.|Provides the customization options that might be needed for specialized devices.|
+
+### Azure IoT data analysis
 
 There are many services that enable data analysis, here are some of them.
 
