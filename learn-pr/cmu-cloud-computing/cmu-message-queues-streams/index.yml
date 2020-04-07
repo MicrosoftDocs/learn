@@ -2,7 +2,7 @@
 uid: learn.cmu-cloud-computing.distributed-programming.message-queues-stream-processing
 metadata:
   title: Message queues and stream processing
-  description: Carnegie Mellon University's Cloud Developer course. The increase of available data has led to the rise of continuous streams of real-time data to process. Learn about different systems and techniques for consuming and processing real-time data streams.
+  description: Carnegie Mellon University's cloud developer course. The increase of available data has led to the rise of continuous streams of real-time data to process. Learn about different systems and techniques for consuming and processing real-time data streams.
   ms.date: 03/20/2020
   author: shanamatthews
   ms.author: shanama
@@ -14,7 +14,7 @@ summary: The increase of available data has led to the rise of continuous stream
 abstract: | 
   In this module, you will:
   - Define a message queue and recall a basic architecture
-  - Recall the characteristics, and present the advantages and disadvantages of a message queue
+  - Recall the characteristics, and present the advantages and disadvantages, of a message queue
   - Explain the basic architecture of Apache Kafka
   - Discuss the roles of topics and partitions, as well as how scalability and fault tolerance are achieved
   - Discuss general requirements of stream processing systems
@@ -26,7 +26,7 @@ abstract: |
 
   In partnership with Dr. Majd Sakr and Carnegie Mellon University.
 prerequisites: |
-  - Understand what is cloud computing, including cloud service models, and common cloud providers
+  - Understand what cloud computing is, including cloud service models and common cloud providers
   - Know the technologies that enable cloud computing
   - Understand how cloud service providers pay for and bill for the cloud
   - Know what datacenters are and why they exist
@@ -40,8 +40,8 @@ prerequisites: |
   - Know about the different types of data and how they're stored
   - Be familiar with distributed file systems and how they work
   - Be familiar with NoSQL databases and object storage, and how they work
-  - Know what is distributed programming and why it's useful for the cloud
-  - Understand MapReduce and how it enables big data computing
+  - Know what distributed programming is and why it's useful for the cloud
+  - Understand MapReduce and how it enables big-data computing
   - Understand Spark and how it differs from MapReduce
   - Understand GraphLab and how it differs from MapReduce and Spark
 iconUrl: /learn/achievements/cmu-cloud-developer/message-queues-stream-processing.svg

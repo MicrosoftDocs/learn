@@ -15,7 +15,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "What is the main difference between the Lambda and Kappa Architectures?"
+  - content: "What is the main difference between the Lambda and Kappa architectures?"
     choices:
     - content: "Lambda architectures include a layer for batch processing, while Kappa architectures do not."
       isCorrect: true

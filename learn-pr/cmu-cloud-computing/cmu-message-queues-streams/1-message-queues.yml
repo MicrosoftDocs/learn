@@ -17,12 +17,12 @@ quiz:
   questions:
   - content: "Which of the following is **not** an advantage of message queues over traditional messaging approaches?"
     choices:
-    - content: "Message queue systems are simpler to set up and less complex architecturally"
+    - content: "Message queue systems are simpler to set up and less complex architecturally."
       isCorrect: true
       explanation: "Correct! Message queues add complexity to a system's architecture."
-    - content: "Message queue systems allow for loose coupling between communicating entities"
+    - content: "Message queue systems allow for loose coupling between communicating entities."
       isCorrect: false
       explanation: "Incorrect. This is an advantage that message queues have over traditional messaging approaches. Review this page if you're not sure."
-    - content: "Message queue systems provide asynchronous communication through buffering"
+    - content: "Message queue systems provide asynchronous communication through buffering."
       isCorrect: false
       explanation: "Incorrect. This is an advantage that message queues have over traditional messaging approaches. Review this page if you're not sure."

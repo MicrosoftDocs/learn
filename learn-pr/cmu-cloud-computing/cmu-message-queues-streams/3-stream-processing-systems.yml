@@ -16,18 +16,17 @@ quiz:
   title: Check your knowledge
   questions:
 
-# sharded is correct term. Remove this comment in the edit pass.
   - content: "Which of the following is desirable in stream processing engines?"
     choices:
     - content: "Passive (poll-driven) querying"
       isCorrect: false
-      explanation: "Incorrect. Active querying is a desireable trait. Review this page if you're not sure."
+      explanation: "Incorrect. Active querying is a desirable trait. Review this page if you're not sure."
     - content: "Partitioning data for scale"
       isCorrect: true
       explanation: "Correct! These systems are inherently horizontally scalable as long as the data can be sharded across all workers."
     - content: "Backup and manual recovery"
       isCorrect: false
-      explanation: "Incorrect. Manual recovery is undesireable. Review this page if you're not sure."
+      explanation: "Incorrect. Manual recovery is undesirable. Review this page if you're not sure."
     - content: "Integrating stored state from a remote database"
       isCorrect: false
       explanation: "Incorrect. Remote databases lead to a very high latency. Review this page if you're not sure."
