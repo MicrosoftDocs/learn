@@ -4,12 +4,12 @@ title: What is the Azure AD join?
 metadata:
   title:  What is Azure AD join?
   description: Learn about Azure AD join
-  ms.date: 03/30/2020
+  ms.date: 04/15/2020
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 5
+durationInMinutes: 7
 content: |
   [!include[](includes/3-what-is-ad-join.md)]
 quiz:

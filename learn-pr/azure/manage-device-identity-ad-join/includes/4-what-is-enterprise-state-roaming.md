@@ -20,17 +20,15 @@ Enterprise state roaming requires a Premium Azure Active Directory subscription.
 
 Enterprise state roaming requires a device to authenticate with a known Azure AD identity. For Azure AD joined devices, this identity is the account the user first signed in with.
 
-There are just a few steps to enable enterprise state roaming:
+To enable enterprise state roaming, go to **Azure Active Directory** > **Devices** > **Enterprise State Roaming**.
 
-1. Sign in to the [Azure portal.](https://portal.azure.com/)
-1. Select **Azure Active Directory** > **Devices** > **Enterprise State Roaming**.
-1. For **Users may sync settings and app data across devices**, select **All** or **Selected**.
+![Screenshot of enterprise state roaming options in the Azure portal.](../media/4-enable-enterprise-state-roaming.png)
 
-   ![Screenshot of enterprise state roaming options in the Azure portal.](../media/4-enable-enterprise-state-roaming.png)
+For **Users may sync settings and app data across devices**, select **All** or **Selected**. 
 
-   With **Selected**. you add the users or groups that will have enterprise state roaming available.
+With **Selected**. you add the users or groups that will have enterprise state roaming available.
 
-   ![Screenshot of enterprise state roaming options in the Azure portal.](../media/4-enterprise-state-roaming-selected.png)
+![Screenshot that shows how you'd add members allowed to sync settings and app data.](../media/4-enterprise-state-roaming-selected.png)
 
 ## Data storage
 

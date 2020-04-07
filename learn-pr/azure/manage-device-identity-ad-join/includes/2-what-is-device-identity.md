@@ -58,7 +58,7 @@ Conditional Access evaluates the signals and provides a decision:
 
 Those criteria can be one or more of:
 
-- Multi-Factor Authentication
+- Multi-Factor Authentication (MFA)
 - Device marked as compliant
 - Device is Hybrid Azure AD joined
 - An approved application
@@ -74,7 +74,7 @@ If your organization uses MFA, users don't have to do MFA when they're using an 
 To create a Conditional Access policy, go to **Azure Active Directory** > **Security** > **Conditional Access** > **New policy**.
 
 >[!div class="mx-imgBorder"]
->![Screenshot that show a new Conditional Access policy with no assignments or access controls set.](../media/2-conditional-access-policies.png)
+>![Screenshot that shows a new Conditional Access policy with no assignments or access controls set.](../media/2-conditional-access-policies.png)
 
 ## Benefits of device identity management
 
