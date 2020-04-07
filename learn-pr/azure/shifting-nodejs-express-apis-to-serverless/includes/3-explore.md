@@ -1,4 +1,4 @@
-Now our code is ready for us to run it. But before we do, let's step back and see what we have.
+While the app is ready to run, let's first step back what's in the project.
 
 ## Node and Express APIs
 
@@ -29,7 +29,7 @@ server
 
 The entry point is the _server/index.ts_ file, which runs the _server.ts_ code to start the Express server. Then the routes (such as `/vacations`) are loaded from the _/routes_ folder. These routes execute the appropriate code in the _/services_ folder. The _data.ts_ file is where the app defines the data store configuration.
 
-For example, when the client app makes an HTTP GET to the _/vacations_ route, the route executes the logic in the _/services/vacation.service.ts_ file to get the vacations.
+For example, when the client app makes an HTTP GET request to the _/vacations_ route, the route executes the logic in the _/services/vacation.service.ts_ file to get the vacations.
 
 Feel free to explore the code for the Express logic in the _server_ folder on your own.
 

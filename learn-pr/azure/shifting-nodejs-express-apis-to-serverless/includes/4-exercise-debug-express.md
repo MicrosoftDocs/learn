@@ -2,11 +2,11 @@ When I want to become familiar with an app, I find it helpful to run and step th
 
 Let's start by opening the app in Visual Studio Code.
 
-## Set Breakpoints
+## Set breakpoints
 
 We see a list of vacations displayed in the application. Let's explore the code that fetches the vacations and renders them in the browser. We'll step through the code with the debugger by setting breakpoints in the Express and Angular code.
 
-### Set a Breakpoint in the Angular Code
+### Set a breakpoint in the Angular code
 
 The vacations are rendered using the `VacationComponent` Angular code found in the file _src/app/vacations/vacations.component.ts_. We'll set a breakpoint in this file where it makes the call to get the list of vacations.
 
@@ -20,9 +20,9 @@ The vacations are rendered using the `VacationComponent` Angular code found in t
    }
    ```
 
-### Set a Breakpoint in the Express Code
+### Set a breakpoint in the Express code
 
-The Angular application makes a call to the `vacations` endpoint in the Node.js Express API. The endpoint's route is defined in the file _server/routes/vacation.routes.ts_. We'll set a breakpoint in this file so we can step through the code that fetches the vacations.
+The Angular application makes a call to the `vacations` endpoint in the Node.js Express API. The endpoint's route is defined in the _server/routes/vacation.routes.ts_ file. We'll set a breakpoint in this file so we can step through the code that fetches the vacations.
 
 1. Open _server/routes/vacation.routes.ts_ and locate the code shown below.
 
@@ -36,11 +36,11 @@ The Angular application makes a call to the `vacations` endpoint in the Node.js 
 
 > The files _.vscode/launch.json_ and _.vscode/tasks.json_ are integral to the debugging experience for this project. I encourage you to explore those files and copy/refactor their contents for your own purposes.
 
-## Run and Debug the Application
+## Run and debug the application
 
 You've set a breakpoint in both the Angular and the Node.js Express applications. Now it's time to run and debug them together.
 
-### Proxy the Requests from Angular to Node.js Express
+### Proxy the requests from Angular to Node.js Express
 
 The Node.js Express API runs on port **7070**. The Angular application runs on a different port, **4200**. The Angular application can't make requests across the domains to the Node.js Express application. We'll proxy the calls from the Angular application to the Node.js Express application.
 
@@ -58,7 +58,7 @@ We'll allow the Angular application to proxy requests to the Node.js Express app
    }
    ```
 
-You just told the Angular application that it can talk to the Node.js Express application.
+With this change, the Angular application can now talk to the Node.js Express application.
 
 ### Debug both applications
 
