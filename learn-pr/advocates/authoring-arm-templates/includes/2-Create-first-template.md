@@ -41,50 +41,35 @@ Each of these section serves a very defined purpose.
 #### Schema
 | Required | Description |
 |:--- |:--- |
-|Yes |Location of the JSON schema file that describes the version of the template language. The version number you use depends on the scope of the deployment and your JSON editor.<br><br>If you're using [VS Code with the Azure Resource Manager tools extension](use-vs-code-to-create-template.md), use the latest version for resource group deployments:<br>`https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#`<br><br>Other editors (including Visual Studio) may not be able to process this schema. For those editors, use:<br>`https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#`<br><br>For subscription deployments, use:<br>`https://schema.management.azure.com/schemas/2018-05-01/subscriptionDeploymentTemplate.json#`<br><br>For management group deployments, use:<br>`https://schema.management.azure.com/schemas/2019-08-01/managementGroupDeploymentTemplate.json#`<br><br>For tenant deployments, use:<br>`https://schema.management.azure.com/schemas/2019-08-01/tenantDeploymentTemplate.json#` |
+|Yes |Location of the JSON schema file that describes the structure of JSON data. The version number you use depends on the scope of the deployment and your JSON editor.  for example:<br><br>If you use [VS Code with the Azure Resource Manager tools extension](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/use-vs-code-to-create-template), use the latest version for resource group deployments:<br>`https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#`<br><br>Other editors (including Visual Studio) may not be able to process this schema. For those editors, use:<br>`https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#`<br><br>For subscription deployments, use:<br>`https://schema.management.azure.com/schemas/2018-05-01/subscriptionDeploymentTemplate.json#`<br><br>For management group deployments, use:<br>`https://schema.management.azure.com/schemas/2019-08-01/managementGroupDeploymentTemplate.json#`<br><br>For tenant deployments, use:<br>`https://schema.management.azure.com/schemas/2019-08-01/tenantDeploymentTemplate.json#` |
 
 #### contentVersion
 | Required | Description |
 |:--- |:--- |
-|Yes |Version of the template (such as 1.0.0.0). You can provide any value for this element. Use this value to document significant changes in your template. When deploying resources using the template, this value can be used to make sure that the right template is being used. |
+|Yes |Version of your template (such as 1.0.0.0). This is an optional section that allows you to provide any value for this element. You can use this value to document significant changes in your template and therefore can help you ensure you're deploying the right template. |
 
-### apiProfile
+#### apiProfile
 | Required | Description |
 |:--- |:--- |
-|No | An API version that serves as a collection of API versions for resource types. Use this value to avoid having to specify API versions for each resource in the template. When you specify an API profile version and don't specify an API version for the resource type, Resource Manager uses the API version for that resource type that is defined in the profile.<br><br>The API profile property is especially helpful when deploying a template to different environments, such as Azure Stack and global Azure. Use the API profile version to make sure your template automatically uses versions that are supported in both environments. For a list of the current API profile versions and the resources API versions defined in the profile, see [API Profile](https://github.com/Azure/azure-rest-api-specs/tree/master/profile).<br><br>For more information, see [Track versions using API profiles](templates-cloud-consistency.md#track-versions-using-api-profiles). |
+|No | An API version that serves as a collection of API versions for resource types.<br>You can use this value to avoid having to specify API versions for **each resource** in the template. When you specify an API profile version and don't specify an API version for the resource type, Resource Manager uses the API version for that resource type that is defined in the profile. |
 #### Parameters
 | Required | Description |
 |:--- |:--- |
-|No |Values that are provided when deployment is executed to customize resource deployment. |
+|No |Values that are provided when deployment is executed to customize resource deployment.  These values can be provided by a parameter file, by command line parameters or in the portal.  Depending on your deployment mechanism. |
 #### Variables
 | Required | Description |
 |:--- |:--- |
-|No |Values that are used as JSON fragments in the template to simplify template language expressions. |
+|No |[Variables](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/template-variables) are values that are used as JSON fragments in the template to simplify template language expressions. These variable can be constructed by modifying, or processing parameters and/or other strings with several template functions.<br>For example:<br><br>**"variables": {"storageName": "[concat(toLower(parameters('storageNamePrefix')), uniqueString(resourceGroup().id))]"},**<br><br>Where 'storageNamePrefix' is a parameter passed into the template. |
 #### User-defined functions
 | Required | Description |
 |:--- |:--- |
-|No |User-defined functions that are available within the template. |
+|No |[User-defined functions](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/template-user-defined-functions) that are available within the template. User-defined functions are separate from the standard template functions that are automatically available within your template. You can create your own functions when you have complicated expressions that are used repeatedly in your template. |
 #### Resources
 | Required | Description |
 |:--- |:--- |
-|Yes |Resource types that are deployed or updated in a resource group or subscription. |
+|Yes |[Resources](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/template-syntax#resources) are the actual items you want to deploy or updated in a resource group or a subscription.  These resources can be a virtual network, a virtual machine, a storage account...  the list of resource provider can be found [here](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/azure-services-resource-providers). |
+
 #### Output
 | Required | Description |
 |:--- |:--- |
-|No |Values that are returned after deployment. |
-
-
-### Deployment methods
-
-#### AzureCLI & Powershell
-
-#### Azure Portal
-
-#### 
-
-
-
-----
-
-### References
-
+|No |The [output](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/template-syntax#outputs) section is where you specify the values that will be returned from deployment. |
