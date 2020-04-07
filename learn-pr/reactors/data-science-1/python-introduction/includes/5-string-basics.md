@@ -1,14 +1,3 @@
-> [!div class="alert is-tip"]
-> ### Learning goal
->
-> By the end of this unit, you should be comfortable working with strings at a basic level in Python.
-
-> [!Note]
-> **Sarah: Conversion feedback**
-> 
-> Consider moving the learning goal text to the list of Learning Objectives in the Introduction unit.
->
-
 Besides numbers, Python can also manipulate strings. Strings can be enclosed in single quotes ('...') or double quotes ("...") with the same result. Use backslash (\) to escape quotes; that is, use \ in order to use quotation marks within the string itself:
 
 ```Python
@@ -35,7 +24,7 @@ Besides numbers, Python can also manipulate strings. Strings can be enclosed in 
 "doesn't"
 ```
 
-In the interactive interpreter and Jupyter Notebooks, the output string is enclosed in quotes and special characters are escaped with backslashes. Although this output sometimes looks different from the input (the enclosing quotes could change), the two strings are equivalent. The string is enclosed in double quotes if the string contains a single quote and no double quotes; otherwise, it’s enclosed in single quotes. The [print()](https://docs.python.org/3.6/library/functions.html#print) function produces a more readable output by omitting the enclosing quotes and by printing escaped and special characters:
+In Python's interactive interpreter and Jupyter Notebooks in VS Code, the output string is enclosed in quotes and special characters are escaped with backslashes. Although this output sometimes looks different from the input (the enclosing quotes could change), the two strings are equivalent. The string is enclosed in double quotes if the string contains a single quote and no double quotes; otherwise, it’s enclosed in single quotes. The [print()](https://docs.python.org/3.6/library/functions.html#print) function produces a more readable output by omitting the enclosing quotes and by printing escaped and special characters:
 
 ```Python
 '"Isn\'t," she said.'

@@ -1,8 +1,3 @@
->[!div class="alert is-tip"]
->### Learning goal
->
->By the end of this subsection, you should be comfortable with and understand how to use Boolean masking in NumPy in order to answer basic questions about your data.
-
 *Masking* is when you want to manipulate or count or extract values in an array based on a criterion. For example, counting all the values in an array greater than a certain value is an example of masking. Boolean masking is often the most efficient way to accomplish these types of tasks in NumPy and it plays a large part in cleaning and otherwise preparing data for analysis (see Section 5).
 
 ## Example: Counting Rainy Days
@@ -14,7 +9,7 @@ import numpy as np
 import pandas as pd
 ```
 
-Use pandas to extract rainfall as a NumPy array:
+Use pandas to extract rainfall as a NumPy array. You need to make sure you have cloned the [Reactor repository](https://github.com/microsoft/Reactors) and opened the [Learn/Intro-Python-Data-Science folder](https://github.com/microsoft/Reactors/tree/master/Learn/Intro-python-data-science/README.md) in VS Code as described in the [environment setup unit](#). In this folder you will find a data folder with the required `csv` files.
 
 ```python
 rainfall_2003 = pd.read_csv('Data/Observed_Monthly_Rain_Gauge_Accumulations_-_Oct_2002_to_May_2017.csv')['RG01'][ 2:14].values
@@ -24,6 +19,7 @@ rainfall_2003
 >[!NOTE]
 > **Sarah action item:**
 > the rainfall data csv file needs to be accessible for the preceding operation... and this link may need to be updated depending on where that file is.
+> **From Sarah** Added instructions as to where they can find it, please link to the correct Learn unit.
 
 ```output
 array([6.55, 1.61, 5.01, 2.27, 0.91, 0.49, 0.12, 0.33, 0.97, 6.32, 2.54,

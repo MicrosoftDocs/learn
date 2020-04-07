@@ -1,20 +1,3 @@
-> [!div class="alert is-tip"]
-> ### Learning goal
->
-> By the end of this subsection, you should be comfortable using basic control flows in Python.
-
-Now that you have a working understanding of the fundamental data types and structures in Python, we can move on to actual programming using Python.
-
-> [!Note]
-> **Sarah: Conversion feedback**
-> 
-> Consider moving the learning goal text to the list of Learning Objectives in the Introduction unit.
->
-> **Sarah: Action items**
-> 
-> Expand **Exercise** H3 headings so each heading is unique. Search on "TBD".
->
-
 ## If-statements
 
 `If` statements in Python are similar to those in other programming languages like Java, and they form the backbone of the logical flow of most programs.
@@ -29,7 +12,7 @@ if y % 2 == 0:
 Even
 ```
 
-### Exercise: TBD subtitle
+### Explore if-statement control logic
 
 What behavior do you experience if you change `y` to be odd?
 
@@ -67,11 +50,11 @@ One
 
 Notice that, in the previous example, the `if` statement exited after finding the first logical test that was true. If `y = 1`, and while 1 is indeed odd, the if statement executed and exited after finding that `y == 1`, rather than continuing to the end of the statement.
 
-### Exercise: TBD subtitle
+### Try it yourself
 
 Try changing the value of `y` in the snippet above. Do you get the output that you expect?
 
-## For loops
+## For loop: Basics
 
 It is often necessary in programs to iterate over some set of items. This is where `for` loops prove useful. For example, they can provide a useful way to iterate over the items of a list:
 
@@ -118,7 +101,7 @@ for j in range(5):
 
 In addition to `range(`_`stop`_`)`, the `range` function can take up to three parameters: `range(`_`start`_`,` _`stop`_`[,` _`step`_`])`. This odd-looking notation just means that if you pass a single argument to `range()`, it will take that argument to be the _`stop`_ value. Two arguments will be the _`start`_ and _`stop`_ values. Three values are _`star`_, _`stop`_, and _`step`_.
 
-### Exercise: TBD subtitle
+### Explore for loop control flow
 
 How would you use `range` and a `for` loop to print the sequence of numbers from 10 to 20?
 
@@ -149,10 +132,11 @@ for n in range(2, 10):
 
 Note that, in the example above, the `else` statement belongs to the `for` loop, not to the if statement.
 
-### Exercise: TBD subtitle
+### Try it yourself
 
 Try changing the code snippet above after you remove the `break` statement. What output does it now produce?
 
+## For loop: Continue
 As part of the control flow of your program, you might want to continue to the next iteration of your `for` loop. The `continue` statement (also borrowed from C) can help with that:
 
 ```Python
@@ -174,7 +158,7 @@ Found an even number: 8
 Found an odd number: 9
 ```
 
-### Exercise: TBD subtitle
+### Try it yourself
 
 What happens when you replace the `continue` statement above with a `break`?
 

@@ -12,9 +12,10 @@ title: Introduction to NumPy for data science
 summary: Learn about NumPy for data science. Create, index, and sort arrays.
 abstract: |
   In this module, you will:
-  - TBD
-  - TBD
-  - TBD
+  - Import the NumPy Python library into your VS Code Jupyter Notebook
+  - Understand how NumPy arrays compare to Python lists
+  - Learn how to use NumPy arrays for large, in-memory data sets
+  - Explore NumPy functions for arrays and simple data manipulation
 prerequisites: |
   - Set up your environment
   - Introduction to Python for data science
@@ -26,8 +27,10 @@ levels:
 roles:
 - developer
 - student
+- data-scientist
 products:
 - azure
+- vs-code
 units:
 - learn.reactors.data-science-1.numpy-introduction.1-introduction
 - learn.reactors.data-science-1.numpy-introduction.2-help
@@ -41,6 +44,5 @@ units:
 - learn.reactors.data-science-1.numpy-introduction.10-compare-masks-boolean-logic
 - learn.reactors.data-science-1.numpy-introduction.11-boolean-arrays
 - learn.reactors.data-science-1.numpy-introduction.12-boolean-arrays-masks
-- learn.reactors.data-science-1.numpy-introduction.13-summary
 badge:
   uid: learn.reactors.data-science-1.numpy-introduction.badge

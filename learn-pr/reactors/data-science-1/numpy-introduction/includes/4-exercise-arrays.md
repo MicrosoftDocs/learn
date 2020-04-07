@@ -1,8 +1,3 @@
->[!div class="alert is-tip"]
->### Learning goal
->
->By the end of this subsection, you should be comfortable working with NumPy arrays in basic ways.
-
 Now that you know how to create arrays in NumPy, you need to get comfortable manipulating them for two reasons. First, you will work with NumPy arrays as part of your exploration of data science. Second, our other important Python data-science tool, pandas, is actually built around NumPy. Getting good at working with NumPy arrays will pay dividends in the next section (Section 4) and beyond: NumPy arrays are the building blocks for the `Series` and `DataFrame` data structures in the Python pandas library and you will use them *a lot* in data science. To get comfortable with array manipulation, we will cover five specifics:
 
 - **Arrays attributes**: Assessing the size, shape, and data types of arrays
@@ -54,6 +49,7 @@ dtype: int64
 
 >[!NOTE]
 > **Sarah action item** : this output was copied from the file, but when I run this in vscode, the output I get is `dtype: int32`
+> ** From Sarah: ** I still get int64 - it might be whether you're on a 64-bit or 32-bit machine. Let's leave as 64 for now. 
 
 #### Exercise
 
@@ -70,6 +66,7 @@ dtype: int64
 
 >[!NOTE]
 > **Sarah action item** : this output was copied from the file, but when I run this in vscode, the output I get is `dtype: int32`
+> ** From Sarah: ** I still get int64 - it might be whether you're on a 64-bit or 32-bit machine. Let's leave as 64 for now. 
 
 ## Indexing arrays
 

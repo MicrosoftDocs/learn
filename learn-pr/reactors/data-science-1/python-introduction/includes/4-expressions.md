@@ -8,12 +8,6 @@ As with other programming languages, expressions are critical for decision makin
 True
 ```
 
-> [!Note]
-> **Sarah: Conversion feedback**
-> 
-> This unit has four knowledge check questions. These are grouped together at the end of the unit. The quiz is in the unit YML file.
->
-
 Python supplies serveral comparison operators:
 
 | Operator | Description | Sample input | Sample output |

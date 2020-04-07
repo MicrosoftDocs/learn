@@ -1,11 +1,5 @@
 Another immutable data type in Python are tuples. It can be useful at times to create a data structure that won't be altered later in a program, such as to protect constant data from being overwritten on accident or to improve performance for iterating over data. This is where tuples come in. You create tuples much as you do lists, only using parentheses instead of brackets.
 
-> [!Note]
-> **Sarah: Conversion feedback**
-> 
-> This unit has a knowledge check question at the end that's more similar to a Try it yourself block. We revised the format.
->
-
 ```Python
 t = (1, 2, 3)
 t

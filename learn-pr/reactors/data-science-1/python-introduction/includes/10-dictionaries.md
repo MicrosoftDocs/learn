@@ -1,12 +1,5 @@
 Dictionaries in Python provide a means of mapping information between unique keys and values. You create dictionaries by listing zero or more key-value pairs inside of braces, like this:
 
-> [!Note]
-> **Sarah: Action items**
-> 
-> Please verify:
-> I added a link for popItem: https://docs.python.org/3.6/library/stdtypes.html?highlight=popitem#dict.popitem.
->
-
 ```Python
 capitals = {'France': ('Paris', 2140526)}
 ```

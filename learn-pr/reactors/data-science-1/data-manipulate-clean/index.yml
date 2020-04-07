@@ -20,13 +20,15 @@ abstract:  |
 prerequisites: |
   - Environment setup
   - Introduction to Python for data science
-  - Introduction to pandas for data science
+  - Introduction to NumPy for data science
+  - Introduction to Pandas for data science
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
 roles:
 - developer
 - student
+- data-scientist
 products:
 - azure
 - vs-code

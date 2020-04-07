@@ -16,9 +16,11 @@ In this module, you will:
 
   - Environment setup
   - Introduction to Python for data science
+  - Introduction to NumPy for data science
   - Introduction to pandas for data science
 
 > [!NOTE]
 > **SARAH**, would you confirm what the prerequisites should be? If they are specific modules in the learning path, would you like us to use links to the modules when they are available, or just plain text? Thanks.
+> **From Sarah** Linking to the previous modules would be great!
 
 Working with data starts with a knowledge of data structures. Let's see what Python has to offer.

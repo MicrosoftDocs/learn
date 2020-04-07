@@ -1,8 +1,3 @@
->[!div class="alert is-tip"]
->### Learning goal
->
->By the end of this subsection, you should have a basic understanding of how broadcasting works in NumPy (and why NumPy uses it).
-
 Another means of vectorizing operations is to use NumPy's *broadcasting* functionality: creating rules for applying binary ufuncs like addition, subtraction, or multiplication on arrays of different sizes.
 
 Before, when we performed binary operations on arrays of the same size, those operations were performed on an element-by-element basis.

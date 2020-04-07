@@ -17,8 +17,11 @@ summary: |
   In this learning path, you'll:
     - Learn about Python for data science
     - Understand the basics of using the NumPy and Pandas packages
-    - Test your code in VS Code
-    - TBD
+    - Clean and manipulate data to prepare for analysis
+    - Work with your data in VS Code with Jupyter Notebooks
+
+  Complimentary content to Microsoft Reactor Workshops.
+  
 prerequisites: |
   None.
 iconUrl: /learn/achievements/generic-trophy.svg

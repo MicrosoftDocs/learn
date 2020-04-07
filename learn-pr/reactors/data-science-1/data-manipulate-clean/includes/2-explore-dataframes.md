@@ -1,11 +1,4 @@
-> [!div class="alert is-tip"]
-> ### Learning goal
->
-> By the end of this module, you should be comfortable finding general information about the data that's stored in pandas DataFrames.
-
 After you load your data into pandas, the data most likely will be in a DataFrame. However, if the data set in your DataFrame has 60,000 rows and 400 columns, how do you even begin to get a sense of what you're working with? Fortunately, pandas provides some convenient tools to quickly look at overall information about a DataFrame and the first few and last few rows.
-
-By the end of this module, you should be comfortable finding general information about the data stored in pandas DataFrames.
 
 To explore DataFrames in pandas, we will import the Python scikit-learn library and use an iconic dataset that every data scientist has seen hundreds of times: British biologist Ronald Fisher's Iris dataset that Fisher used in his 1936 paper *The use of multiple measurements in taxonomic problems*.
 
@@ -26,12 +19,19 @@ Let's take a look at this dataset to see what we have:
 ```python
 iris_df.info()
 ```
+```output
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 150 entries, 0 to 149
+Data columns (total 4 columns):
+sepal length (cm)    150 non-null float64
+sepal width (cm)     150 non-null float64
+petal length (cm)    150 non-null float64
+petal width (cm)     150 non-null float64
+dtypes: float64(4)
+memory usage: 4.8 KB
+```
 
 From the output, we know that the Iris dataset has 150 entries in four columns. All of the data is stored as 64-bit floating-point numbers.
-
-> [!NOTE]
-> 
-> **SARAH** - It seems like we would need to display the output in the module. Would you agree?
 
 ## `DataFrame.head`
 

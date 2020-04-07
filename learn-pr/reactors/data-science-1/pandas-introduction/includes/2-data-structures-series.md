@@ -53,8 +53,15 @@ RangeIndex(start=0, stop=4, step=1)
 Just as with `ndarrays`, you can access specific data elements in a `Series` via the familiar Python square-bracket `[]` index notation and slicing:
 
 ```Python
-Series_example[1]
-Series_example[1:3]
+series_example[1]
+```
+
+```Output
+0.75
+```
+
+```Python
+series_example[1:3]
 ```
 
 ```Output
@@ -88,13 +95,17 @@ Series_example2['b']
 0.75
 ```
 
-## Exercises
+### Try it yourself
 
-Let's try these exercises.
+You're experienced in Jupyter Notebooks and experimenting with Python now, so use those new super-powers to predict and test:
+Predict: What would happen if you sliced `series_example2` using its explicit index?
+Test: Try it out in VS Code, what that what you expected?
 
-### Slicing
+## Explicit Indices
 
 Do explicit `Series` indices work _exactly_ the way you might expect? Try slicing `Series_example2` using its explicit index and find out.
+
+### Slicing
 
 With explicit indices in the mix, a `Series` is basically a fixed-length, ordered dictionary in that it maps arbitrary typed index values to arbitrary typed data values. But like `ndarrays` these data are all of the same type, which is important. Just as the type-specific compiled code behind `ndarray` makes them more efficient than a Python lists for certain operations, the type information of pandas `Series` makes them much more efficient than Python dictionaries for certain operations.
 
@@ -124,6 +135,18 @@ So, at one level, you can interact with `Series` as you would with dictionaries:
 ```Python
 population['Russia']
 ```
+
+```Output
+143910127
+```
+
+### Try it yourself
+
+But you can also do powerful array-like operations with Series like slicing. 
+Predict: Whould slicing be possible if Series keys were not ordered?
+Test: Try it out in VS Code, create an unordered Series and try slicing it? Did it do what you expected?
+
+## Slice population Series
 
 ```Output
 143910127
@@ -167,9 +190,3 @@ dtype: float64
 ```
 
 Notice that in the case of 'Germany', 'Japan', 'Russia', and 'Spain' (and 'Albania', depending on what you did in the previous exercise), the addition operation produced NaN (not a number) values. Pandas does not treat missing values as 0, but as NaN. (It can be helpful to think of arithmetic operations involving NaN as essentially $NaN + x= NaN$).
-
-> [!Note]
-> **Sarah: Conversion feedback**
-> 
-> We recommend a transition to a new unit topic here.
-> Move to the next unit inthe module to continue with the content from the source material.

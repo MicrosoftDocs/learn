@@ -24,11 +24,15 @@ Get used to this convention - it's a common convention in Python, and it's the w
 <!-- List of learning objectives for this module -->
 In this module, you will:
 
-- Explore NumPy
-- _TBD - can incorporate from the **Learning goals** that are present in some of the units_
-- _TBD_
+- Import the NumPy library
+- Understand how NumPy arrays differ from the other Python data structures
+- Explore daya with NumPy arrays
+- Understand NumPy universal functions and how (and why) to use them
+- Know how to aggregate data in NumPy
+- Be able to broadcast in NumPy
+- Understand how to use Boolean masking in NumPy
 
 ## Prerequisites
 <!-- List of prerequisites for this module; otherwise, "None." -->
 - Set up your environment
-- Python for data science
+- Introduction to Python for data science

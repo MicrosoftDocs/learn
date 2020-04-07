@@ -1,8 +1,3 @@
-> [!div class="alert is-tip"]
-> ### Learning goal
->
-> By the end of this module, you should know how to replace or remove null values from DataFrames.
-
 Most of the time the datasets you want to use (of have to use) have missing values in them. How missing data is handled carries with it subtle trade-offs that can affect your final analysis and real-world outcomes.
 
 Pandas handles missing values in two ways. The first you've seen before in previous sections: **NaN**, or Not a Number. This is actually a special value that is part of the IEEE floating-point specification. **NaN** is used only to indicate missing floating-point values.
@@ -178,6 +173,7 @@ Before you do so, what do you expect to see?
 > 
 > **SARAH** - Should we provide some output or feedback when a "rhetorical" query is given to the student to ponder in an exercise?
 >
+>**From sarah** - Yes, I added some in the Pandas module 2 for reference.
 
 > [!div class="alert is-tip"]
 > ### Key takeaway

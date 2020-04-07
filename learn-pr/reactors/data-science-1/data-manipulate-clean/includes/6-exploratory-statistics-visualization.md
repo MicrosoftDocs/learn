@@ -1,10 +1,5 @@
 An old joke goes: “What does a data scientist see when they look at a dataset? A bunch of numbers.” There is more than a little truth in that joke. Visualization often is the key to finding patterns and correlations in your data. Although a visualization often can't deliver precise results, it can point you in the right direction to ask better questions and efficiently find value in the data.
 
-> [!div class="alert is-tip"]
-> ### Learning goal
->
-> By the end of this unit,  you should be familiar with some of the ways to visually explore the data that's stored in a pandas DataFrame.
-
 Often when probing a new dataset, it's invaluable to get high-level information about what the dataset holds. Earlier in this module, we discussed using methods like `DataFrame.info`, `DataFrame.head`, and `DataFrame.tail` to examine some aspects of a DataFrame. Although these methods are critical, on their own they often are insufficient to get enough information to know how to approach a new dataset. This is where exploratory statistics and visualizations for datasets come in.
 
 To see what we mean in terms of gaining exploratory insight—both visually and numerically—let's dig into one of the datasets that come with the scikit-learn library, the Boston Housing Dataset. First, load the dataset from a CSV file:

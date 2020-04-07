@@ -1,9 +1,3 @@
->[!div class="alert is-tip"]
->
-> ### Learning goal
->
-> By the end of this subsection, you should have a basic understanding of what NumPy arrays are and how they differ from the other Python data structures you have studied thus far.
-
 We started the discussion in this section by noting that data science starts by representing data as arrays of numbers.
 
 "Wait!" you might be thinking. "Can't we just use Python lists for that?"

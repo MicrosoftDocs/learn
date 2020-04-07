@@ -4,17 +4,11 @@ But it was not always this way. Wes McKinney developed the library out of necess
 
 The name _pandas_ actually has nothing to do with Chinese bears, but rather comes from the term _panel data_, a form of multi-dimensional data involving measurements over time that comes out the econometrics and statistics community. Ironically, while panel data is a usable data structure in pandas, it's not generally used today and we won't examine it in this course. Instead, we'll focus on the two most widely used data structures in pandas: `Series` and `DataFrames`.
 
-> [!Note]
-> **Sarah: Conversion feedback**
-> 
-> The environment set up content is the first module in this learning path and it's extremely short--one unit topic.
-> Suggest moving the setup content into this unit topic, and duplicate the set up content in all modules (as needed) in the learning path.
->
-> **Sarah: Action items**
->
-> - Add list of learning objectives.
-> - Add list of prerequisites, or "None."
-> - Lead sentence mentions NumPy module in the LP, which isn't standard for Learn content.
+## Set up your environment
+
+For details about how to set up your environment, see the first unit in the Python module:
+- Set up your environment
+- Test your environment
 
 ## Tips: Import data and access the docs
 
@@ -35,19 +29,53 @@ pd?
 
 Because it can be useful to lean about `Series` and `DataFrames` in pandas a extension of `ndarrays` in NumPy, go ahead also import NumPy. You will want it for some of the examples later on:
 
+```Output
+Type:        module
+String form: 
+File:        /opt/anaconda3/lib/python3.7/site-packages/pandas/__init__.py
+Docstring:  
+pandas - a powerful data analysis and manipulation library for Python
+=====================================================================
+
+**pandas** is a Python package providing fast, flexible, and expressive data
+structures designed to make working with "relational" or "labeled" data both
+easy and intuitive. It aims to be the fundamental high-level building block for
+doing practical, **real world** data analysis in Python. Additionally, it has
+the broader goal of becoming **the most powerful and flexible open source data
+analysis / manipulation tool available in any language**. It is already well on
+its way toward this goal.
+
+Main Features
+-------------
+Here are just a few of the things that pandas does well:
+
+  - Easy handling of missing data in floating point as well as non-floating
+    point data.
+  - Size mutability: columns can be inserted and deleted from DataFrame and
+    higher dimensional objects
+  - Automatic and explicit data alignment: objects can be explicitly aligned
+    to a set of labels, or the user can simply ignore the labels and let
+    `Series`, `DataFrame`, etc. automatically align the data for you in
+    computations.
+  - Powerful, flexible group by functionality to perform split-apply-combine
+    operations on data sets, for both aggregating and transforming data.
+```
+
+Because it can be useful to lean about Series and DataFrames in pandas a extension of ndarrays in NumPy, go ahead also import NumPy. You will want it for some of the examples later on:
+
 ```Python
 import numpy as np
 ```
 
 ## Learning objectives
 In this module, you will:
-
-- Explore Pandas
-- TBD
-- TBD
+  - Import the Pandas library into Jupyter Notebooks in VS Code
+  - Understand how to use Series and DataFrames to store remote data
+  - Learn how to clean and manipulate large, remote datasets
+  - Apply operations to Series and DataFrames for data science analysis
 
 ## Prerequisites
-
-None.
+- Introduction to Python for data science
+- Introduction to NumPy for data science
 
 Now, on to pandas!

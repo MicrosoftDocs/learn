@@ -1,15 +1,4 @@
-> [!div class="alert is-tip"]
-> ### Learning goal
->
-> By the end of this subsection, you should understand how to pass and receive data from functions.
-
 As in other programming languages, it is often essential in Python to break down your program into reusable chunks. A primary means of doing that is through functions.
-
-> [!Note]
-> **Sarah: Conversion feedback**
-> 
-> Consider moving the learning goal text to the list of Learning Objectives in the Introduction unit.
->
 
 For example, we could rewrite the `while` loop code snippet above as a formal function:
 
