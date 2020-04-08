@@ -38,8 +38,8 @@ In this unit, you will create a new logic app that will be triggered via an HTTP
 
 1. The **Logic Apps Designer** surface will open with the visual designer displayed, and with the **When a HTTP request is received** trigger selected.
 
-    [![Logic apps designer with HHTP request trigger](../media/logic-apps-designer1.png)](../media/logic-apps-designer1.png#lightbox)
-    
+    [![Logic apps designer with HTTP request trigger](../media/logic-apps-designer1.png)](../media/logic-apps-designer1.png#lightbox)
+
 1. On the **When a HTTP request is received** trigger, click the **Use sample payload to generate schema** link.
 
 1. When prompted, paste in the following sample JSON into the textbox, change the IoT Hub name field to the one you used in previous unit to create the IoT Hub instance (cheesecavesmanager-&lt;your ID&gt;), and click **Done**.
@@ -119,7 +119,7 @@ In this unit, you will create a new logic app that will be triggered via an HTTP
 
     [![Fill out email information](../media/email_content.png)](../media/email_content.png#lightbox)
 
-  1. Click **Save** to save all changes to the Logic App Workflow.
+1. Click **Save** to save all changes to the Logic App Workflow.
 
 1. Expand the **When a HTTP request is received** trigger, copy the value for the **HTTP POST URL** that is displayed, and save it for future referent. This is the Web Hook endpoint URL for the Logic App that will be used by Event Grid to trigger the execution of the Logic App workflow.
 

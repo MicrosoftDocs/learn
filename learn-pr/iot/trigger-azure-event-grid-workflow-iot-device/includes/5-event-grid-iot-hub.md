@@ -2,7 +2,7 @@ Azure IoT Hub integrates with Azure Event Grid so that you can send event notifi
 
 We recommend you take a few minutes to watch this video that explains how the integration between IoT Hub and Event Grid works. If you prefer reading, check out the following paragraph.
 
-> [!VIDEO https://channel9.msdn.com/Shows/Internet-of-Things-Show/IoT-Devices-and-Event-Grid/player]
+> [!VIDEO https://channel9.msdn.com/Shows/Internet-of-Things-Show/IoT-Devices-and-Event-Grid/player?format=ny]
 
 ## Event types and schema
 
