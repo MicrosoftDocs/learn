@@ -15,9 +15,9 @@ When you're satisfied you don't need to return to the CheeseCaveHub-{YOUR-ID}, d
 
 Take your interest further with:
 
-* [Azure IoT Hub Documentation](https://docs.microsoft.com/en-us/azure/iot-hub/)
-* [Azure Event Grid Documentation](https://docs.microsoft.com/en-us/azure/event-grid/)
-* [Azure Logic Apps Documentation](https://docs.microsoft.com/en-us/azure/logic-apps/)
+* [Azure IoT Hub Documentation](https://docs.microsoft.com/azure/iot-hub/)
+* [Azure Event Grid Documentation](https://docs.microsoft.com/azure/event-grid/)
+* [Azure Logic Apps Documentation](https://docs.microsoft.com/azure/logic-apps/)
   
 And look out for additional Learn modules on IoT Hub.
 
