@@ -4,6 +4,8 @@ The next question is: within your organization, who is responsible for what task
 
 ## Enabling AI in your organization is a collective responsibility
 
+:::row:::
+:::column span="2":::
 Everyone has a role to play in AI transformation, not just IT. It's important to empower people from all functions across your company to actively contribute ideas about AI applications. After you've chosen an idea to run with, it's equally important to foster collaboration between business and technical teams when planning design and implementation. After deployment, teams across the technical and operational sides of the business need to be involved in maintaining AI solutions over time:
 
 * Measuring business performance and ROI from the AI solution
@@ -11,6 +13,13 @@ Everyone has a role to play in AI transformation, not just IT. It's important to
 * Acting on insights gained from an AI solution
 * Addressing issues that arise and deciding how to improve the solution over time
 * Collecting and evaluating feedback from AI users (whether they are customers or employees)
+:::column-end:::
+:::column span="2":::
+:::image type="complex" source="../media/manage-ai-organizations-4.png" alt-text="Venn diagram showing that AI requires multidisciplinary skills.":::
+The diagram is composed of three circles. The top circle in the diagram is labeled "Domain Understanding." The bottom left circle is labeled "IT Skills." The bottom right circle is labeled "AI Skills." The three circles are dark blue, and the overlapping sections are light blue. The very middle of the diagram, where all three circles overlap is a slightly darker circle. 
+:::image-end:::
+:::column-end:::
+:::row-end:::
 
 It's the ultimate responsibility of the C-suite to own the overall AI strategy and investment decisions, creating an AI-ready culture, change management, and responsible AI policies.
 
@@ -18,10 +27,20 @@ As for the other leaders across an organization, there's no single model to foll
 
 ### Line of business leader
 
+:::row:::
+:::column span="2":::
 This person is a business executive responsible for operations of a particular function, line of business, or process within an organization.
 
 * **Source ideas from all employees:** It's important to empower people from every department and level to contribute ideas, ask questions, and make suggestions related to AI. We've discovered that ideas for our most impactful application of AI have come from our employees within business functions, not from outside or above. See the first unit in this module for more information on this topic. 
 * **Identify new business models:** The real value of AI lies in business transformation: driving new business models, enabling innovative services, creating new revenue streams, and more. For example, Telefónica, one of the world's largest telecommunications companies, used a personalized AI-based assistant to transform its relationships with customers.<sup>5</sup> Ultimately, this increased customer loyalty and satisfaction. 
+:::column-end:::
+:::column span="2":::
+:::image type="complex" source="../media/manage-ai-organizations-5.png" alt-text="Diagram showing AI-related roles.":::
+This graphic shows the business roles that are involved with AI initiatives. There are four blue circles with labels underneath them, arranged in a square formation. The first blue circle in the top left is labeled “Business Leader.” In the circle, there is a simple icon of three people standing shoulder to shoulder. In the top right, the blue circle is labeled “Chief Digital Officer.” In the blue circle there is an icon of a person in a suit. In the bottom left circle, labeled “HR,” There is an icon of three people surrounding a single person, to represent support. In the bottom right blue circle, there is an icon of a person next to a computer with a bar graph on it, indicating an upward trend. This blue circle is labeled “IT.”
+:::image-end:::
+:::column-end:::
+:::row-end:::
+
 * **Create optional communities for exchanging ideas:** These communities provide opportunities for IT and business roles to connect on an ongoing basis. This could be done virtually through tools such as Yammer, or in-person at networking events or brown bag sessions.
 * **Train business experts to become Agile Product Owners:** A Product Owner is a member of the Agile team responsible for defining the features of the application and streamlining execution. Including this role as part or all of a business expert's responsibilities will allow them to dedicate time and effort to AI initiatives.
 

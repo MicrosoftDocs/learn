@@ -1,0 +1,29 @@
+### YamlMime:LearningPath
+uid: learn.ai-business-school-managing-an-ai-organization
+metadata:
+  title: Managing an AI organization
+  description: Learn to manage AI organization to create business value in manufacturing, healthcare, financial services, retail, education, and Government.
+  brand: azure
+  ms.date: 04/26/2019
+  author: RWortmanMorris
+  ms.author: rawortma
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Managing an AI organization
+summary: In this learning path, you’ll get a high-level overview of how to manage an AI organization, team, department, or center of excellence. You’ll learn about fueling innovation at all levels, evaluating and prioritizing AI investments, establishing technical processes for AI, and distributing AI-related responsibilities across the organization. 
+prerequisites: None
+iconUrl: /learn/achievements/ai-business-school-managing-an-ai-organization.svg
+levels:
+- intermediate
+roles:
+- functional-consultant
+- business-user
+products:
+- azure
+- dynamics
+- m365
+modules:
+- learn-wwl.manage-ai-organizations
+- learn-wwl.manage-mlops
+trophy:
+  uid: learn.ai-business-school-managing-an-ai-organization.trophy
