@@ -25,7 +25,7 @@ A local area network (LAN) provides networking needs around a single location. T
 
 ### What is a metropolitan area network?
 
-![A diagram of a metropolitan area network](../media/2-man-diagram.svg)
+:::image type="icon" source="../media/2-man-diagram.svg":::
 
 A metropolitan area network (MAN) provides networking capabilities between two different locations within a city or metropolitan area to provide a single extensive network. Typically, a MAN requires a dedicated and secure connection between each LAN joined to the MAN.
 
@@ -55,19 +55,19 @@ A network topology describes the physical composition of a network. Let's look a
 
 ### Bus topology
 
-![A diagram of a bus topology](../media/2-bus-network.svg)
+:::image type="content" source="../media/2-bus-network.svg" alt-text="A diagram of a bus topology showing five nodes connected of a single network segment.":::
 
 In a bus topology, each network device is connected to a single network cable. Even though it's the simplest type of network to implement, there are limitations to it. The first limitation is the length of the main cable or bus. The longer it gets, the higher the chance of signal dropout. This limitation constrains the physical layout of the network. All devices have to be physically located near each other, for example, in the same room. Finally, if there's a break in the bus cable, the whole network fails.
 
 ### Ring topology
 
-![A diagram of a ring topology](../media/2-ring-network.svg)
+:::image type="content" source="../media/2-ring-network.svg" alt-text="A diagram of a ring topology showing nodes connected in a ring.":::
 
 In a ring topology, each network device is connected to its neighbor to form a ring. This form of network is more resilient than the bus topology. A break in the cable ring also affects the performance of the network.
 
 ### Mesh topology
 
-![A diagram of a mesh topology](../media/2-mesh-network.svg)
+:::image type="content" source="../media/2-mesh-network.svg" alt-text="A diagram of a mesh topology where all nodes are connected to all other nodes.":::
 
 The mesh topology is described as either a physical mesh or a logical mesh.
 
@@ -77,7 +77,7 @@ There's a subtle difference between a physical mesh network and a logical one. T
 
 ### Star topology
 
-![A diagram of a star topology](../media/2-star-network.svg)
+:::image type="content" source="../media/2-star-network.svg" alt-text="A diagram of a star topology with a single node connected to all other nodes.":::
 
 The star topology is the most commonly used network topology. Each network device connects to a centralized hub or switch. Switches and hubs can be linked together to extend and build more extensive networks. This type of typology is, by far, the most robust and scalable.
 
@@ -115,7 +115,7 @@ Azure comes with several networking tools and services.
 
 ### Azure Virtual Network
 
-![A diagram showing a virtual network design](../media/2-virtual-network.svg)
+:::image type="content" source="../media/2-virtual-network.svg" alt-text="A diagram showing a virtual network design with a web server and a SQL server assigned IP addresses from a virtual network range to isolate the servers.":::
 
 Using Azure Virtual Network, you can build complex virtual networks that emulate the structure of your actual on-premises networks. You can provision and manage your cloud-based virtual networks. You also can create hybrid virtual networks that integrate with your on-premises networks when you use Azure Virtual Network.
 

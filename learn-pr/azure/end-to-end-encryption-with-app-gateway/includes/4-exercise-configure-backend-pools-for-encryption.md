@@ -58,9 +58,9 @@ The following image highlights the elements you'll configure in this exercise. Y
 
    ![Warning about an unauthenticated server in Microsoft Edge](../media/4-warning.png)
 
-  The warning message can vary, depending on your browser. The example image shows Microsoft Edge. Proceed to the website by selecting **Go on to the webpage** or the equivalent. You should see the home page for the shipping portal. This is a sample app to test that the server is configured correctly.
+    The warning message can vary, depending on your browser. The example image shows Microsoft Edge. Proceed to the website by selecting **Go on to the webpage** or the equivalent. You should see the home page for the shipping portal. This is a sample app to test that the server is configured correctly.
 
-   ![Home page for the shipping portal in Microsoft Edge](../media/4-shippingportal.png)
+    :::image type="content" source="../media/4-shippingportal.png" alt-text="Home page for the shipping portal in Microsoft Edge." loc-scope="other"::: <!-- no-loc -->
 
 ## Configure the backend pool for encryption
 

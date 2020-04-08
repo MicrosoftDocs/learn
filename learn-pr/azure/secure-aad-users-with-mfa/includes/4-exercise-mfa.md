@@ -25,7 +25,7 @@ Let's walk through the basic steps necessary to configure and enable Azure Multi
 
 Next let's examine how to set up Conditional Access policy rules that would enforce MFA for guest users accessing specific apps on your network.
 
-1. Switch back to the Azure portal and select **Azure Active Directory > Conditional access**.
+1. Switch back to the Azure portal and select **Azure Active Directory > Security > Conditional access**.
 
 1. Select **New policy** from the top menu.
 

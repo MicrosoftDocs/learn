@@ -3,7 +3,7 @@ uid: learn.languages.python-create-first.exercise-hello-name
 title: Exercise - Hello name
 metadata:
   title: Exercise - Hello name
-  description: Build on the previous exercise to learn about accepting user input, variables, string concatenation, and more.
+  description: Build on the preceding exercise to learn about accepting user input, variables, string concatenation, and more.
   ms.date: 1/7/2020
   author: bobtabor-msft
   ms.author: rotabor

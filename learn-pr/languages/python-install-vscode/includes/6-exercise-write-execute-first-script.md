@@ -1,136 +1,140 @@
-Now that you have Visual Studio Code installed, let's install the Python extension for Visual Studio Code and optionally setup other tools and settings.
+Now that you have Visual Studio Code installed, you'll install the Python extension for Visual Studio Code and, optionally, set up other tools and settings.
 
 ## Install the Python extension for Visual Studio Code
 
-Visual Studio Code is a great light-weight general purpose code editor.  Extensions provide additional functionality for only those programming languages or features you want to enable.  The Python extension for Visual Studio Code provides visual cues and tools to help you write helps you write better Python code faster.
+Visual Studio Code is a great lightweight general-purpose code editor.  Extensions provide additional functionality for only the programming languages or features that you want to enable. The Python extension for Visual Studio Code provides visual cues and tools to help you write better Python code, and to write code faster.
 
-### Step 1 - Open the Extensions view
+### Step 1 - Open Extensions view
 
-You can browse and install extensions from within Visual Studio Code. 
+You can browse through extensions and install them from within Visual Studio Code. 
 
-Bring up the Extensions view.  Go to **View** and select  **Extensions**, or click **Extensions** in the Activity Bar on the left side of Visual Studio Code.
+Bring up the Extensions view. Go to **View** and select **Extensions**, or select the **Extensions** icon in the Activity Bar on the left side of Visual Studio Code.
 
-The Extensions view will display a list of the most popular Visual Studio Code extensions on the Visual Studio Code Marketplace.
+Extensions view will display a list of the Visual Studio Code extensions that are the most popular on the Visual Studio Code Marketplace.
 
-### Step 2 - Search for the Python Extension
+### Step 2 - Search for the Python extension
 
-To filter the list of extensions, type `python` in the search bar at the top of the Extensions view,
+To filter the list of extensions, enter **python** in the search box at the top of the Extensions view.
 
-Select the extension that is published by Microsoft (usually first in the list).  This will display the details about that extension in a tab in the main area to the right.
+Select the extension that's published by Microsoft (usually the first one in the list). The details about that extension will appear in a tab in the main area to the right.
 
 ::: zone pivot="windows"
 
-### Step 3 - Install the Python Extension
+### Step 3 - Install the Python extension
 
-In the main area where you see the details about the Python extension, select **Install**.
+In the main area, where you see the details about the Python extension, select **Install**.
 
-When complete, the button's text will change to **Uninstall**.  This lets you know that you've successfully installed the Python extension.
+When the installation is complete, the button's text will change to **Uninstall**. This lets you know that you've successfully installed the Python extension.
 
 ::: zone-end
 
 ::: zone pivot="linux"
 
-### Step 3 - Install the Python Extension
+### Step 3 - Install the Python extension
 
-In the main area where you see the details about the Python extension, select **Install**.
+In the main area, where you see the details about the Python extension, select **Install**.
 
-When complete, the button's text will change to **Uninstall**.  This lets you know that you've successfully installed the Python extension.
+When the installation is complete, the button's text will change to **Uninstall**. This lets you know that you've successfully installed the Python extension.
 
 ::: zone-end
 
 ::: zone pivot="macos"
 
-### Step 3 - Install the Python Extension
+### Step 3 - Install the Python extension
 
-In the main area where you see the details about the Python extension, select **Install**.
+In the main area, where you see the details about the Python extension, select **Install**.
 
-When complete, the button's text will change to **Uninstall**.  This lets you know that you've successfully installed the Python extension.
+When the installation is complete, the button's text will change to **Uninstall**.  This lets you know that you've successfully installed the Python extension.
 
 > [!IMPORTANT]
-> It's possible that once you install the Python extension, you'll see a dialog appear that will ask you whether you want to install the command line developer tools.  You should select **Install**.  You will be required to agree to the Command Line Tools License Agreement.  The installation process could take as much as 20 minutes or more, depending on the speed of your internet connection.  Once complete, you'll see a dialog stating that the software was installed.  You can select **Done** to proceed.
+> After you install the Python extension, you might see a dialog box that asks you whether you want to install the command-line developer tools. You should select **Install**. You'll need to agree to the Command Line Tools License Agreement. The installation process could take as long as 20 minutes or more, depending on your internet connection. After the installation is done, you'll see a dialog box stating that the software is installed. You can select **Done** to proceed.
 
 ::: zone-end
 
-## Install pylint
+## Install Pylint
 
-pylint is one of the more popular Python linters.  A *linter* is a useful tool that can check your code for possible bugs and coding style.  By installing a linter, Visual Studio Code will check your code each time you save your code file.  There are several linter tools available for Python.
+Pylint is one of the more popular Python linters. A *linter* is a useful tool that can check your code for possible bugs and coding style. If you install a linter, Visual Studio Code will check your code each time you save your code file. There are several linter tools available for Python.
 
-The Python extension for Visual Studio Code will recommend you install pylint and will handle most of the details required for installation.
+The Python extension for Visual Studio Code will recommend that you install Pylint and will handle most of the installation details.
 
-To initiate installation, you'll create a new file with a .py file extension, which will trigger a pop-up message with an easy install button.  We'll begin that process in the next step.
+To start installation, you'll create a file with a .py file extension, which will trigger a pop-up window with an install button. We'll begin that process in the next step.
 
 > [!NOTE]
-> In this module, we'll merely create a file as a means of triggering the Python extension for Visual Studio Code to display a pop up message to initiate the installation of pylint.  We will not use the file in this module, but will learn how to write and execute a code file in the next module titled "Create your First Python Program".
+> In this module, we'll just create a file as a way to trigger the Python extension for Visual Studio Code to display a pop-up window to start the installation of Pylint. We won't use the file in this module, but you'll learn to write and run a code file in the next module, titled "Create your first Python program."
 
-### Step 1 - Open the Explorer view in Visual Studio Code
+### Step 1 - Open Explorer view in Visual Studio Code
 
-Bring up the Explorer view.  Go to **View**, and select **Explorer**, or click the Explorer icon in the Activity Bar on the left side of Visual Studio Code.
+Open Explorer view. Go to **View** and select **Explorer**, or select the **Explorer** icon in the Activity Bar on the left side of Visual Studio Code.
 
-The Explorer displays two sections: 
+There are two sections in Explorer: 
 
-- `Open Editors` displaying all of the tabs visible in the main area.
+- **Open Editors**, which displays all the tabs visible in the main area
 - The name of the current working folder
 
-However, since this is the first time you've open Visual Studio Code, you will see a section titled "No Folder Opened" instead.  Below this header, you'll see the message "You have not yet opened a folder" and an **Open Folder** button.
+But because this is the first time you've opened Visual Studio Code, you'll see a section titled **No Folder Opened** instead. Below this header, you'll see the message "You have not yet opened a folder" and an **Open Folder** button.
 
-### Step 2 - Create a new Working folder
+### Step 2 - Create a working folder
 
-Click the **Open Folder** button to reveal your operating system's Open dialog.
+Select **Open Folder** to open your operating system's Open dialog box.
 
-You should create a folder in your system's Documents folder called **hello** and select it.
+Create a folder called **hello** in your system's Documents folder. Select it.
 
-Once you select the new **hello** folder, back in the Explorer view, you should see the title of the section change to "hello".
+After you select the new **hello** folder, back in Explorer view, you should see the title of the section change to **hello**.
 
-### Step 3 - Create a new file
+### Step 3 - Create a file
 
-To create a new script file in your **hello** folder, go to **File**, and select **New File**.
+To create a script file in your **hello** folder, go to **File** and select **New File**.
 
 In the main area, the new file appears.
 
-It's likely that you'll see one or more pop-up messages appear in the lower right-hand corner of Visual Studio Code.
+You'll probably see one or more pop-up messages appear in the lower right corner of Visual Studio Code.
 
-### Step 4 - Initiate the pylint installation from the pop-up
+### Step 4 - Start Pylint installation from the pop-up window
 
-In this step, we'll focus on the pop-up with the message "Linter pylint is not installed".
+In this step, we'll focus on the pop-up window with the message "Linter pylint is not installed."
 
 > [!NOTE]
-> Installing pylint is optional.  If you have a specific reason to not install it, use the `x` icon to close the pop-up message.
+> Installation of Pylint is optional. If for some reason you don't want to install it, select the **x** to close the pop-up message.
 
-To install pylint, click **Install**.  Visual Studio Code's terminal window will open below your code file.  A command-line utility named **pip** is used to install pylint.
+To install Pylint, select **Install**. The Visual Studio Code terminal window will open below your code file. You can use a command-line tool named pip to install Pylint.
 
 ::: zone pivot="linux"
 
 > [!IMPORTANT]
-> If you get an error that pip is not installed, you can use the following `apt` command in Linux to install pip.
-
-```bash
-sudo apt-get install python3-pip
-```
-It's possible that running this command will require certain services be restarted.  We suggest you read the prompts and messages from your system and respond accordingly.
-
-After installing pip, you can manually attempt to install pylint using pip with the following command in Linux.
-
-```bash
-sudo pip3 install pylint
-```
+> If you see an error message stating that pip isn't installed, you can use this APT command in Linux to install pip:
+>
+> ```bash
+> sudo apt-get install python3-pip
+> ```
+> If you run this command, some services might need to be restarted. We suggest you read the prompts and messages from your system and respond accordingly.
+>
+> After you install pip, you can use the following command in Linux to try to install Pylint manually by using pip:
+>
+> ```bash
+> sudo pip3 install pylint
+> ```
 
 ::: zone-end
 
 
 ### Step 5 - Address other pop-up messages
 
-You may see other pop-up messages appear.
+You might see other pop-up messages.
 
-The most critical of these messages is: "No Python interpreter is selected.  You need to select a Python interpreter to enable features such as IntelliSense, linting, and debugging."
+The most critical of these messages is this one: 
 
-If you click **Select Python Interpreter**, you will see a list of Python interpreters displayed near the top of Visual Studio Code in the command bar.  Click on the most recent version you have installed, making sure that it is at least version 3.
+"No Python interpreter is selected.  You need to select a Python interpreter to enable features such as IntelliSense, linting, and debugging."
 
-Your select will be reflected in Visual Studio Code's status bar near the bottom left-hand corner.
+If you click **Select Python Interpreter**, you'll see a list of Python interpreters near the top of Visual Studio Code, in the command bar.  Select the most recent version that you have installed, making sure that it's version 3 or later.
 
-Alternatively, you might see the following message: "Tip: you can change the Python interpreter used by the Python extension by clicking on the Python version in the status bar".
+Your selection will be reflected in the Visual Studio Code status bar, near the lower-left corner.
 
-This message just alerts you to the fact that you have an interpreter selected, but you can change it if you want by clicking the currently selected interpreter near the bottom left-hand corner, then choosing from the list of Python interpreters displayed near the top of Visual Studio Code in the command bar.
+Alternatively, you might see this message: 
 
-Click **Got it!** to dismiss, or **Do not show again** to permanently disable this tip.
+"Tip: you can change the Python interpreter used by the Python extension by clicking on the Python version in the status bar."
 
-Once you've addressed all of the pop-up messages, you've successfully set up the Python extension for Visual Studio Code and are ready to begin writing Python code!
+This message just lets you know you have an interpreter selected, but you can change it if you want. You can change it by clicking the currently selected interpreter near the lower-left corner and then choosing from the list of Python interpreters displayed near the top of Visual Studio Code in the command bar.
+
+Select **Got it!** to dismiss the tip, or select **Do not show again** to permanently disable it.
+
+After you've addressed all the pop-up messages, you've successfully set up the Python extension for Visual Studio Code and are ready to begin writing Python code!

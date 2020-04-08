@@ -1,23 +1,23 @@
 ### YamlMime:Module
 uid: learn.authenticate-apps-with-managed-identities
 metadata:
-  title: Authenticate apps to Azure services with service principals and managed identities for Azure resources
-  description: Securely authenticate applications to Azure to manage and access Azure services. Service principles and managed identities for Azure resources provides your app with an Azure Active Directory identity for use within your application.
+  title: Authenticate apps to Azure services by using service principals and managed identities for Azure resources
+  description: Securely authenticate apps to Azure to manage and access Azure services. Service principals and managed identities give your app an Azure AD identity.
   ms.date: 03/11/2020
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Authenticate apps to Azure services with service principals and managed identities for Azure resources
-summary: Securely authenticate applications to Azure to manage and access Azure services. Service principles and managed identities for Azure resources provides your app with an Azure Active Directory identity for use within your application.
+title: Authenticate apps to Azure services by using service principals and managed identities for Azure resources
+summary: Securely authenticate applications to Azure to manage and access Azure services. Service principals and managed identities for Azure resources give your app an Azure Active Directory identity.
 abstract: | 
   In this module, you will:
-  - Identify the benefits and use cases for using service principals
-  - Identify the benefits of using managed identities for Azure resources
-  - Enable managed identity on an Azure VM
-  - Use managed identity with Azure SDKs in applications
+  - Identify the benefits of and use cases for service principals.
+  - Identify the benefits of using managed identities for Azure resources.
+  - Enable managed identity on an Azure VM.
+  - Use managed identity with Azure SDKs in applications.
 prerequisites: | 
-  - Familiarity with Azure Active Directory concepts
+  - Familiarity with Azure Active Directory (Azure AD) concepts
   - Familiarity with general concepts of authorization and authentication
   - Experience developing and deploying IaaS applications
 iconUrl: /learn/achievements/authenticate-apps-with-managed-identities.svg

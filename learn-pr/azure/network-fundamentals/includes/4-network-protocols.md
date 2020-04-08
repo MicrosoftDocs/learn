@@ -6,7 +6,7 @@ In this unit, you'll learn about the essential network protocols that enable com
 
 A network protocol is a set of conditions and rules that specify how network devices communicate on a given network. It provides a common framework for establishing and maintaining a communications channel, and how to handle errors or faults should they occur. Network protocols allow communication between different network-enabled devices, for example, laptops, tablets, smartphones, desktops, servers, and other network-enabled devices.
 
-![An image showing devices connected to a network](../media/4-network-devices.svg)
+:::image type="icon" source="../media/4-network-devices.svg":::
 
 The network protocol is an essential building block in the design of an organization's network architecture. There are many network protocols available. Each network protocol has many properties that govern its use and implementation.
 
@@ -132,7 +132,7 @@ The IPS is an abstract, layered networking reference model. The IPS describes th
 
 The IPS model is one of several similar networking models that varies between three and seven layers. The best-known model is the Open Systems Interconnection (OSI) networking reference model. We're not going to cover the OSI model here. A documentation link is available in the "Learn more" section at the end of this module.
 
-![Image shows the four layers of the Internet Protocol suite](../media/4-internet-protocol-suite-layers.svg)
+:::image type="content" source="../media/4-internet-protocol-suite-layers.svg" alt-text="Table that shows the four layers of the Internet Protocol suite and the protocols used on each layer.":::
 
 - **Application layer**: The top layer of this stack is concerned with application or process communication. The application layer is responsible for determining which communication protocols to use based on what type of message is transmitted. For example, the layer assigns the correct email protocols such as POP, SMTP, or IMAP if the message is email content.
 - **Transport layer**: This layer is responsible for host-to-host communication on the network. The protocols associated with this layer are TCP and UDP. TCP is responsible for flow control. UDP is responsible for providing a datagram service.

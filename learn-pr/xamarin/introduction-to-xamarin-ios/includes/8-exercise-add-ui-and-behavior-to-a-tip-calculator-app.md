@@ -65,7 +65,7 @@ The `View` property of the `ViewController` class is set to fill the device's fu
     
     You need to use the `View.Bounds.Width` to expand the control across the view. You can either pass the calculated `CGRect` into the constructor or set the `Frame` property. Add the `topPadding` value - the Y value of the frame. You can find the `CGRect` class in the `CoreGraphics` namespace.
 
-    ![Illustration showing the heights and paddings of the TipCalculator controls](../media/8-layout-spacing.png)
+    ![Annotated iOS screenshot showing the heights and paddings of the TipCalculator controls rendered as entered.](../media/8-layout-spacing.png)
 
     ```csharp
     using CoreGraphics;
@@ -240,7 +240,7 @@ If you don't see the on-screen keyboard when you tap on the text field, but you 
 
 Notice that the on-screen keyboard appears automatically when you tap in the edit field. However, the keyboard doesn't dismiss when you tap the button. You'll fix this behavior in a following step.
 
-![Screenshot compilation of an iOS simulator with the numeric keyboard shown and the Simulator menu for Connect Hardware Keyboard highlighted](../media/8-finished-App.png)
+![Screenshot compilation of an iOS simulator with the numeric keyboard shown and the macOS Simulator menu for Connect Hardware Keyboard highlighted.](../media/8-finished-app.png)
 
 ## Handle button taps
 
@@ -324,6 +324,6 @@ In the `calcButton` touch event handler, call the `ResignFirstResponder` method 
 
 1. Enter a total amount and tap the **Calculate** button. It should display a 20% tip amount.
 
-    ![Screenshot of the completed TipCalculator app running in an iOS simulator](../media/8-completed-project.png)
+    ![Screenshot of the completed TipCalculator app running in an iOS simulator, with a yellow background, input text field, calculate button, and calculated result label.](../media/8-completed-project.png)
 
 You can view the completed solution in the **exercise2** > **final** folder in your copy of the cloned or downloaded [!INCLUDE [module-exercise-repo](module-exercise-repo.md)] from GitHub.
