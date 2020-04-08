@@ -22,7 +22,7 @@ prerequisites: |
   - An introductory knowledge of the purpose of Azure IoT
   - Ability to navigate Azure IoT portal
   - An outlook.com email address
-iconUrl: https://docs.microsoft.com/media/learn/module.svg
+iconUrl: /learn/achievements/iot/trigger-azure-event-grid-workflow-iot-device.svg
 levels: 
 - intermediate
 roles:
