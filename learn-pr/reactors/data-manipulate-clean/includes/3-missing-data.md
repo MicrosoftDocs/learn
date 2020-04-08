@@ -250,16 +250,13 @@ The output looks like this:
 > **SARAH** - *Insert image*: Add screenshot of the output table.
 >
 
-### Exercise
+### Try it yourself
 
-How might you go about dropping just column 3?
-
-<div class="test-collapsible-container">
-<h2 class="test-collapsible-controller">How might you go about dropping just column 3?</h2>
-<div class="test-collapsible-target">
-<p>remember that you will need to supply both the axis parameter and the `how` parameter.</p>
-</div>
-
+<details>
+  <summary>How might you go about dropping just column 3?</summary>
+  
+  Hint: Remember that you will need to supply both the axis parameter and the `how` parameter.
+</details>
 
 The `thresh` parameter gives you finer-grained control: you set the number of non-null values that a row or column needs to have in order to be kept:
 
