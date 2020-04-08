@@ -25,7 +25,7 @@ There are services aimed at improving the flow, efficiency, and customization of
 
 |Business Need | Azure Services | Description | Benefits |
 |---------|---------|---------|---------|
-|Ability to route data to multiple locations. A cold path for storage, a warm path for analytics.|Azure IoT Event Hubs|Provides a sophisticated range of routing options, for masses of incoming data.|Manages multiple goals, such as a cold path for archiving data, a warm path for rapid analysis, and a cooler path for in-depth analysis.|
+|Ability to route data to multiple locations. A cold path for storage, a warm path for analytics.|Azure Event Hubs|Provides a sophisticated range of routing options, for masses of incoming data.|Manages multiple goals, such as a cold path for archiving data, a warm path for rapid analysis, and a cooler path for in-depth analysis.|
 |Extend intelligence from the cloud to your edge devices.|Azure IoT Edge|Azure IoT Edge is a service that builds on top of Azure IoT Hub. This service is meant for customers who want to analyze data on devices instead of in the cloud. Azure IoT Edge devices can be deployed and executed locally.|Enable scenarios that aren't currently cloud-feasible due to networking issues, low-latency requirements, or regulatory concerns.|
 |For intermediate and advanced developers, the ability to build custom IoT apps.|Azure IoT Device SDK|A REST-based SDK, to support third-party industry-specific sensors, and other IoT devices. Supports RTOS, Linux, Windows, Android, and iOS.|Provides the customization options that might be needed for specialized devices.|
 
