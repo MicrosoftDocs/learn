@@ -257,7 +257,7 @@ True    1.0   0.0     20.185714
 Name: MEDV, dtype: float64
 ```
 
-Let's take a moment to analyze these results in more depth. The first row reports that communities with less than half of houses built before 1940, with a highway-access index of 1, and that are not situated on the Charles River have a mean house price of \$24,667 (1970s dollars). The next row shows that communities that are similar to the first row, except for being located on the Charles River, have a mean house price of \$50,000.
+Let's take a moment to analyze these results in more depth. The first row reports that communities with less than half of houses built before 1940, with a highway-access index of 1, and that are not situated on the Charles River have a mean house price of $24,667 (1970s dollars). The next row shows that communities that are similar to the first row, except for being located on the Charles River, have a mean house price of $50,000.
 
 One insight that pops out from continuing down this is that, all else being equal, being located next to the Charles River can significantly increase the value of newer housing stock. The story is more ambiguous for communities dominated by older houses: proximity to the Charles significantly increases home prices in one community (and that one presumably farther away from the city). For all others, being situated on the river either provided a modest increase in value or actually decreased mean home prices.
 
