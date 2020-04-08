@@ -252,9 +252,17 @@ The output looks like this:
 
 ### Try it yourself
 
-How might you go about dropping just column 3?
+<details><summary>How might you go about dropping just column 3?</summary>
   
-Hint: Remember that you will need to supply both the axis parameter and the `how` parameter.
+<p>Hint: Remember that you will need to supply both the axis parameter and the `how` parameter.
+
+You can add code, too:
+
+```python
+merge
+```
+
+</p></details>
 
 The `thresh` parameter gives you finer-grained control: you set the number of non-null values that a row or column needs to have in order to be kept:
 
