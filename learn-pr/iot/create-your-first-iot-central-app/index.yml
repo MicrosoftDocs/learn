@@ -4,7 +4,7 @@ metadata:
   title: Create your first Azure IoT Central app
   description: This module builds an IoT Central app to monitor and command a refrigerated truck. The first unit creates the app, the second unit defines a device template for a refrigerated truck. Then, create a programming project, add code to simulate a truck, and communicate with your IoT Central app. The truck is monitored through a custom dashboard.
   ms.date: 01/01/2020
-  author: PeterTurcan
+  author: olivierbloch
   ms.author: Olivier.Bloch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
