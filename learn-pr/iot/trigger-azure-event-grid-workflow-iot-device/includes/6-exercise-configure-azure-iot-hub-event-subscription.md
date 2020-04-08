@@ -1,10 +1,10 @@
 # Configure Azure IoT Hub Event Subscription
 
-In this unit, you will create an Event Subscription within Azure IoT Hub to setup Event Grid integration that will trigger a Logic App to send an alert email.
+In this unit, you will create an Event Subscription within Azure IoT Hub to set up Event Grid integration that will trigger a Logic App to send an alert email.
 
-1. Return to the Azure Portal and navigate to the Azure IoT Hub created earlier.
+1. Return to the Azure portal and navigate to the Azure IoT Hub created earlier.
 
-1. On the IoT Hub summary blade, click the **Events** link on the left-side of the blade.
+1. On the IoT Hub summary page, click the **Events** link on the left-side.
 
 1. On the **Events** pane, click the **+Event Subscription** button at the top.
 
@@ -16,7 +16,7 @@ In this unit, you will create an Event Subscription within Azure IoT Hub to setu
 
     [![subscription event types](../media/subscription-event-types.png)](../media/subscription-event-types.png#lightbox)
 
-   * **Endpoint Details**: Select Endpoint Type as **Web Hook** and select *select an endpoint* and paste the URL that you copied from your logic app and confirm selection.
+   * **Endpoint Details**: Select Endpoint Type as **Web Hook** and select *Select an endpoint* and paste the URL that you copied from your logic app and confirm selection.
 
     When you're done, the pane should look like the following example:
 

@@ -16,4 +16,4 @@ In this unit, we create an IoT Hub.
 1. Click **Go to resource**, when this option is available, to go to the home page for your temporary hub. If you miss this alert, you can search for your resource from your home page.
 1. It's a good idea to bookmark the home page of your IoT Hub.
 
-You now have an IoT Hub. In the following unit we will create the Logic Apps that will send an email and configure the integration with event grid.
+You now have an IoT Hub. In the following unit, we will create the Logic Apps that will send an email and configure the integration with event grid.

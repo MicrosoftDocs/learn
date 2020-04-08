@@ -2,7 +2,7 @@ In this unit, you will create a new logic app that will be triggered via an HTTP
 
 ## Create HTTP Web Hook logic app that sends an email
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) (which you may still have open), click **+Create a resource** to open the Azure Marketplace.
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) (which you may still have open), click **+Create a resource** to open the Azure marketplace.
 1. On the **New** page, in the **Search the Marketplace** box, type in and search for **Logic App**.
 1. In the search results, select the **Logic App** item.
 1. On the **Logic App** item, click **Create**.
@@ -27,20 +27,20 @@ In this unit, you will create a new logic app that will be triggered via an HTTP
     > [!NOTE]
     > It will take a minute or two for the Logic App deployment to complete.
 
-1. Navigate to the **Logic App** resource that was just deployed.
+1. Navigate to the **Logic App** resource that was deployed.
 
 1. When navigating to the **Logic App** for the first time, the **Logic Apps Designer** pane will be displayed.
 
     > [!TIP]
     > If the **Logic Apps Designer** pane doesn't open automatically, click on the **Logic app designer** link under the **Development Tools** section on the **Logic App** blade.
 
-1. The Logic App we are creating will be triggered via an HTTP request that will be sent from an Event Grid so, select the **When a HTTP request is received** trigger under the **Start with a common trigger** section to get started.
+1. The Logic App we are creating will be triggered via an HTTP request that will be sent from an Event Grid so, select the **When an HTTP request is received** trigger under the **Start with a common trigger** section to get started.
 
-1. The **Logic Apps Designer** surface will open with the visual designer displayed, and with the **When a HTTP request is received** trigger selected.
+1. The **Logic Apps Designer** surface will open with the visual designer displayed, and with the **When an HTTP request is received** trigger selected.
 
     [![Logic apps designer with HTTP request trigger](../media/logic-apps-designer1.png)](../media/logic-apps-designer1.png#lightbox)
 
-1. On the **When a HTTP request is received** trigger, click the **Use sample payload to generate schema** link.
+1. On the **When an HTTP request is received** trigger, click the **Use sample payload to generate schema** link.
 
 1. When prompted, paste in the following sample JSON into the textbox, change the IoT Hub name field to the one you used in previous unit to create the IoT Hub instance (cheesecavesmanager-&lt;your ID&gt;), and click **Done**.
 
@@ -94,7 +94,7 @@ In this unit, you will create a new logic app that will be triggered via an HTTP
 
 1. Notice the **Request Body JSON Schema** box is now populated with a JSON Schema that was automatically generated based on the Sample JSON that was pasted in.
 
-1. Click the **+New step** button below the **When a HTTP request is received** trigger.
+1. Click the **+New step** button below the **When an HTTP request is received** trigger.
 
 1. Enter "**Outlook.com**" into the search box, then locate and select the **Send an email (V2)** action for the **Outlook.com** connector.
 
@@ -113,7 +113,7 @@ In this unit, you will create a new logic app that will be triggered via an HTTP
 
    * **To**: Enter the email address to receive the notification emails. For this tutorial, use an email account that you can access for testing.
 
-   * **Subject**: Fill in the text for the subject. When you click on the Subject text box, you can select dynamic content to include. Type in `IoT Hub alert:`. If you can't see Dynamic content, select the **Add dynamic content** hyperlink -- this toggles it on and off.
+   * **Subject**: Fill in the text for the subject. When you click on the Subject text box, you can select dynamic content to include. Type in `IoT Hub alert:`. If you can't see Dynamic content, select the **Add dynamic content** hyperlink to toggle it on and off.
 
    * **Body**: Write the text for your email. Select JSON properties from the selector tool to include dynamic content based on event data. For this lab, add the following text and dynamic content: `This is an automated email to inform you that: {eventType} occurred at {eventTime} IoT Hub: {hubName} Device ID: {deviceID} Connection state: {connectionState}`.  If you can't see the Dynamic content, select the **Add dynamic content** hyperlink under the **Body** text box. If it doesn't show you the fields you want, click *more* in the Dynamic content screen to include the fields from the previous action.
 
@@ -121,17 +121,17 @@ In this unit, you will create a new logic app that will be triggered via an HTTP
 
 1. Click **Save** to save all changes to the Logic App Workflow.
 
-1. Expand the **When a HTTP request is received** trigger, copy the value for the **HTTP POST URL** that is displayed, and save it for future referent. This is the Web Hook endpoint URL for the Logic App that will be used by Event Grid to trigger the execution of the Logic App workflow.
+1. Expand the **When an HTTP request is received** trigger, copy the value for the **HTTP POST URL** that is displayed, and save it for future referent. You now have the Web Hook endpoint URL for the Logic App that will be used by Event Grid to trigger the execution of the Logic App workflow.
 
     [![HTTP request info](../media/http_post.png)](../media/http_post.png#lightbox)
 
-    The **HTTP POST URL** will be similar to the following:
+    The **HTTP POST URL** will be similar to this sample:
 
     ```text
     https://prod-87.eastus.logic.azure.com:443/workflows/b16b5556cbc54c97b063479ed55b2669/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=ZGqYl-R5JKTugLG3GR5Ir1FuM0zIpCrMw4Q2WycJRiM
     ```
 
-    This URL is the Web Hook endpoint to call the Logic App trigger via HTTPS. Notice the **sig** query string parameter and it's value. The **sig** parameter contains the shared access key that is used to authenticate requests to the Web Hook endpoint.
+    This URL is the Web Hook endpoint to call the Logic App trigger via HTTPS. Notice the **sig** query string parameter and its value. The **sig** parameter contains the shared access key that is used to authenticate requests to the Web Hook endpoint.
 
     > [!TIP]
     > Make a note of the Web Hook endpoint URL - you will need it as part of the scenario to integrate IoT Hub and the Event Grid.

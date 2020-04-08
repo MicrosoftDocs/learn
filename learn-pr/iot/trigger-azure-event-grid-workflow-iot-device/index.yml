@@ -17,7 +17,7 @@ abstract: |
     - Create an IoT Hub
     - Create a Logic App that sends an email
     - Configure Azure IoT Hub Event Subscription
-    - Create new devices triggering a Logic App which sends an email when alert is flagged by device
+    - Create new devices triggering a Logic App, which sends an email when alert is flagged by device
 prerequisites: |
   - An introductory knowledge of the purpose of Azure IoT
   - Ability to navigate Azure IoT portal

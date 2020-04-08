@@ -5,7 +5,7 @@ In this module, you learned how to:
 * Create an IoT Hub
 * Create a Logic App that sends an email
 * Configure Azure IoT Hub Event Subscription
-* Create new devices triggering a Logic App which sends an email when alert is flagged by device
+* Create new devices triggering a Logic App that sends an email when alert is flagged by device
 
 ## Clean up
 

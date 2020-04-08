@@ -20,13 +20,13 @@ You can use either the Azure portal or Azure CLI to configure which events to pu
 
 IoT Hub events contain all the information you need to respond to changes in your device life cycle as well as telemetry conditions. You can identify an IoT Hub event by checking that the `eventType` property starts with **Microsoft.Devices**.
 
-There are 2 types of schemas for IoT Hub events. One for events related to devices life cycle and one for telemetry events.
+There are two types of schemas for IoT Hub events. One for events related to devices life cycle and one for telemetry events.
 
 For more information about how to use the IoT Hub integration with Event Grid, visit the [documentation](https://docs.microsoft.com/azure/iot-hub/iot-hub-event-grid).
 
 ## Events filtering and enrichment
 
-Depending on the type of events you want to post to Event Grid for other services to be notified you might want to implement some filtering as not all telemetry or device life cycle events might be relevant to the workflow you want to implement. The IoT Hub event subscriptions can filter events based on event type, data content an subject (which is the device name). To learn more on events filtering, refer to the [documentation](https://docs.microsoft.com/azure/iot-hub/iot-hub-event-grid#filter-events).
+Depending on the type of events, you want to post to Event Grid for other services to be notified you might want to implement some filtering as not all telemetry or device life-cycle events might be relevant to the workflow you want to implement. The IoT Hub event subscriptions can filter events based on event type, data content a subject (which is the device name). To learn more on events filtering, refer to the [documentation](https://docs.microsoft.com/azure/iot-hub/iot-hub-event-grid#filter-events).
 
 Before events are posted to Event Grid, you have the ability to enrich them by selecting the endpoint as Event Grid. For more information, see [Message Enrichments Overview](https://docs.microsoft.com/azure/iot-hub/iot-hub-message-enrichments-overview).
 
@@ -38,8 +38,8 @@ Applications that handle IoT Hub events should follow these suggested practices:
 
 * Don't assume that all events you receive are the types that you expect. Always check the eventType before processing the message.
 
-* Messages can arrive out of order or after a delay. Use the etag field to understand if your information about objects is up-to-date for device created or device deleted events.
+* Messages can arrive out of order or after a delay. Use the etag field to understand if your information about objects is up to date for device created or device deleted events.
 
 ## Next Steps
 
-Now we have a better understanding of what Event Grid is and how IoT Hub and Event Grid can be integrated, the next unit will walk-through connecting the dots between the IoT Hub, Event Grid and the email-sending Logic App.
+Now we have a better understanding of what Event Grid is and how IoT Hub and Event Grid can be integrated, the next unit will walk through connecting the dots between the IoT Hub, Event Grid, and the email-sending Logic App.
