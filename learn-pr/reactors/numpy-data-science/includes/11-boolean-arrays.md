@@ -128,10 +128,10 @@ The following table summarizes the bitwise Boolean operators and their equivalen
 
 | Operator | Equivalent ufunc |
 | --- | --- |
-| `&` | `np.bitwise_and` | 
-| `|` | `np.bitwise_or` |
-| `^` | `np.bitwise_xor` |
-| `~` | `np.bitwise_not` |
+| & | `np.bitwise_and` | 
+| \| | `np.bitwise_or` |
+| ^ | `np.bitwise_xor` |
+| ~ | `np.bitwise_not` |
 
 Using these tools, you can start to answer the types of questions we listed above about the Seattle rainfall data. Here are some examples of results we can compute when combining masking with aggregations:
 
