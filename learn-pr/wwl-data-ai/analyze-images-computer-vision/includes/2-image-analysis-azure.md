@@ -67,7 +67,7 @@ You would see a slightly different categorization returned for the following ima
 
 ![family picture with father, mother, son, and daughter](../media/family-photo.png)
 
-Review the 86-category list [here](https://docs.microsoft.com/azure/cognitive-services/computer-vision/category-taxonomy.)
+Review the 86-category list [here](https://docs.microsoft.com/azure/cognitive-services/computer-vision/category-taxonomy).
 
 ### Detecting faces
 
