@@ -15,7 +15,8 @@ abstract: |
   - PLACEHOLDER
 prerequisites: None
 iconUrl: http://via.placeholder.com/120x120
-levels: beginner
+levels: 
+- beginner
 roles: 
 - data-scientist
 - student
