@@ -330,10 +330,7 @@ Here's the output:
 <matplotlib.axes._subplots.AxesSubplot at 0x12cddbed0>
 ```
 
-> [!NOTE]
-> 
-> **SARAH** - *Insert image*: Add screenshot of the output table.
->
+![A screenshot that shows the output of running df with CHAS and plot](../media/df-chas-plot.png)
 
 > [!NOTE]
 > The IPython magic command `%matplotlib inline` enables you to view the chart inline.
@@ -346,10 +343,7 @@ df.corr(method='pearson')
 
 Here's the output:
 
-> [!NOTE]
-> 
-> **SARAH** - *Insert image*: Add screenshot of the output table.
->
+<!-- waiting for input  ![A screenshot that shows the output of running df.corr](../media/df-corr.png) -->
 
 Suppose you want to look only at the correlations between all the columns and one variable? Let's examine only the correlation between all other variables and the percentage of owner-occupied houses build before 1940 (`AGE`). We will do this by accessing the column by index number:
 
@@ -394,10 +388,7 @@ Here's the output:
 <matplotlib.axes._subplots.AxesSubplot at 0x12e168ad0>
 ```
 
-> [!NOTE]
-> 
-> **SARAH** - *Insert image*: Add screenshot of the output table.
->
+![A screenshot that shows the output of running sns.heatmap](../media/sns-heatmap.png)
 
 Histograms are another valuable tool for investigating your data. For example, what is the overall distribution of prices of owner-occupied houses in the Boston area?
 
@@ -414,10 +405,7 @@ Here's the output:
  <a list of 10 Patch objects>)
 ```
 
-> [!NOTE]
-> 
-> **SARAH** - *Insert image*: Add screenshot of the output table.
->
+![A screenshot that shows the output of running plt-hist](../media/plt-hist.png)
 
 The default bin size for the matplotlib histogram (essentially big of buckets of percentages that you include in each histogram bar in this case) is pretty large and might mask smaller details. To get a finer-grained view of the AGE column, you can manually increase the number of bins in the histogram:
 
@@ -440,10 +428,7 @@ Here's the output:
  <a list of 50 Patch objects>)
 ```
 
-> [!NOTE]
-> 
-> **SARAH** - *Insert image*: Add screenshot of the output table.
->
+![A screenshot that shows the output of running plt-hist with the number of bins increased to 50](../media/plt-hist-bin-50.png)
 
 Seaborn has a somewhat more attractive version of the standard matplotlib histogram: the distribution plot. This is a combination histogram and kernel density estimate (KDE) plot (essentially a smoothed histogram):
 
@@ -457,10 +442,7 @@ Here's the output:
 <matplotlib.axes._subplots.AxesSubplot at 0x12dde6bd0>
 ```
 
-> [!NOTE]
-> 
-> **SARAH** - *Insert image*: Add screenshot of the output.
->
+![A screenshot that shows the output of running sns.distplot](../media/sns-distplot.png)
 
 Another commonly used plot is the Seaborn `jointplot`, which combines histograms for two columns along with a scatterplot:
 
@@ -474,10 +456,7 @@ Here's the output:
 <seaborn.axisgrid.JointGrid at 0x12e0f35d0>
 ```
 
-> [!NOTE]
-> 
-> **SARAH** - *Insert image*: Add screenshot of the output.
->
+![A screenshot that shows the output of running sns.jointplot](../media/sns-jointplot.png)
 
 Unfortunately, many of the dots print over each other. You can help address this by adding some alpha blending, a figure that sets the transparency for the dots so that concentrations of them drawing over one another will be apparent:
 
@@ -491,10 +470,7 @@ Here's the output:
 <seaborn.axisgrid.JointGrid at 0x12e760510>
 ```
 
-> [!NOTE]
-> 
-> **SARAH** - *Insert image*: Add screenshot of the output.
->
+![A screenshot that shows the output of running sns.jointplot with alpha blending](../media/sns-jointplot-alpha-blend.png)
 
 Another way to see patterns in your data is with a two-dimensional KDE plot. Darker colors represent a higher concentration of data points:
 
@@ -508,10 +484,7 @@ Here's the output:
 <matplotlib.axes._subplots.AxesSubplot at 0x11c455650>
 ```
 
-> [!NOTE]
-> 
-> **SARAH** - *Insert image*: Add screenshot of the output.
->
+![A screenshot that shows the output of running sns.kdeplot](../media/sns-kdeplot.png)
 
 Note that although the KDE plot is very good at showing concentrations of data points, finer structures like linear relationships (such as the clear relationship between the number of rooms in homes and the house price) are lost in the KDE plot.
 
@@ -527,10 +500,6 @@ Here's the output:
 <seaborn.axisgrid.PairGrid at 0x12eb4dd10>
 ```
 
-:::image type="content" source="../media/sns-pairplot.png" alt-text="A screenshot that shows the output of running sns.pairplot":::
-
 ![A screenshot that shows the output of running sns.pairplot](../media/sns-pairplot.png)
-
-
 
 Visualization is the start of the really cool, fun part of data science. So play around with these visualization tools and see what you can learn from the data!
