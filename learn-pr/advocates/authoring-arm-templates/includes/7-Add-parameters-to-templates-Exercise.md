@@ -1,10 +1,10 @@
-#### Review template
+#### Review your template
 At the end of the previous exercise, your template had the following JSON code in it:
 
 ```json
 {
     "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
-    "contentVersion": "1.0.0.1",
+    "contentVersion": "1.0.0.2",
     "apiProfile": "",
     "parameters": {},
     "variables": {},
@@ -46,7 +46,7 @@ code azuredeploy.json
               
 2. Copy and paste the following code in the resource section of your ARM template.
 
-:::code language="JSON" source="../samples/parameter-azuredeploy.json" highlight: "5-10,17":::
+:::code language="JSON" source="../samples/exercise3-parameter-azuredeploy.json" highlight: "5-10,17":::
 
 You'll notice that the code has changed from the last one.  In this exercise, we are adding parameters.  Therefore we have to define the parameter in the **parameters** section (line 5-10) and then insert the referral to the parameter in the **resources** section (line 17)
 
@@ -74,7 +74,7 @@ To run this deployment you will use Azure CLI that is built-in the Azure shell t
 
 Copy and execute this code block in the shell provided.
 
-:::code language="azurecli" source="../samples/exercise3-deploymenty.sh" highlight: "9":::
+:::code language="azurecli" source="../samples/exercise3-storagenameparamdeploy.sh" highlight: "9":::
 
 The deployment command returns results in a JSON format. Look for `ProvisioningState` to see whether the deployment succeeded.
 
@@ -108,110 +108,43 @@ You can verify the deployment by exploring the resource group from the Azure por
    ![View deployment summary](../media/Template-deploy-details-parameters.png)
 
    ---
-___________________________________________________  
-
 
 #### Customize by environment
-Parameters enable you to customize the deployment by providing values that are tailored for a particular environment. For example, you can pass different values based on whether you're deploying to an environment for development, test, and production.
 
-The previous template always deployed a Standard_LRS storage account. You might want the flexibility to deploy different SKUs depending on the environment. The following example shows the changes to add a parameter for SKU. Copy the whole file and paste over your template.
-JSON
+The previous version of the template you used in exercise 2 always deployed a Standard_LRS storage account. You might want the flexibility to deploy different SKUs depending on the environment. In the following task you will changes the template to add a parameter for SKU. 
 
-Copy
-{
- "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
- "contentVersion": "1.0.0.0",
- "parameters": {
-   "storageName": {
-     "type": "string",
-     "minLength": 3,
-     "maxLength": 24
-   },
-   "storageSKU": {
-     "type": "string",
-     "defaultValue": "Standard_LRS",
-     "allowedValues": [
-       "Standard_LRS",
-       "Standard_GRS",
-       "Standard_RAGRS",
-       "Standard_ZRS",
-       "Premium_LRS",
-       "Premium_ZRS",
-       "Standard_GZRS",
-       "Standard_RAGZRS"
-     ]
-   }
- },
- "resources": [
-   {
-     "type": "Microsoft.Storage/storageAccounts",
-     "apiVersion": "2019-04-01",
-     "name": "[parameters('storageName')]",
-     "location": "eastus",
-     "sku": {
-       "name": "[parameters('storageSKU')]"
-     },
-     "kind": "StorageV2",
-     "properties": {
-       "supportsHttpsTrafficOnly": true
-     }
-   }
- ]
-}
-The storageSKU parameter has a default value. This value is used when a value isn't specified during the deployment. It also has a list of allowed values. These values match the values that are needed to create a storage account. You don't want users of your template to pass in SKUs that don't work.
+You will use the code below to update the template you have been working with.
 
-Redeploy template
+1. Open Visual Studio Code and the template you created in the first exercise.  From the Azure shell provided here, type the following command.
+       
+```azurecli
+code azuredeploy.json
+```
+
+2. Copy the whole file and paste over your template. As you may notice the new code includes a storageSKU parameter with a default value. This value is used when a value isn't specified during the deployment. It also has a list of allowed values. These values match the values that are needed to create a storage account. You don't want users of your template to pass in SKUs that don't work.
+
+:::code language="JSON" source="../samples/exercise3-parameter-sku.json" highlight: "10-23,31-33":::
+
+#### Redeploy template
 You're ready to deploy again. Because the default SKU is set to Standard_LRS, you don't need to provide a value for that parameter.
 
-PowerShell
-Azure CLI
-Azure PowerShell
+Copy and execute this code block in the shell provided.  Remember to change **{your-unique-name}** in the code below with the **same** name you used in the previous exercise.
 
-Copy
-New-AzResourceGroupDeployment `
-  -Name addskuparameter `
-  -ResourceGroupName myResourceGroup `
-  -TemplateFile $templateFile `
-  -storageName "{your-unique-name}"
- Note
+:::code language="azurecli" source="../samples/exercise3-skuparamdeploy.sh" highlight: "9":::
 
-If the deployment failed, use the debug switch with the deployment command to show the debug logs. You can also use the verbose switch to show the full debug logs.
+
+>[!NOTE]If the deployment failed, use the **--debug** switch with the deployment command to show the debug logs. You can also use the **--verbose** switch to show the full debug logs.
 
 To see the flexibility of your template, let's deploy again. This time set the SKU parameter to Standard_GRS. You can either pass in a new name to create a different storage account, or use the same name to update your existing storage account. Both options work.
 
-PowerShell
-Azure CLI
-Azure PowerShell
+Again. Copy and execute this code block in the shell provided.  Remember to change **{your-unique-name}** in the code below with the **same** name you used in the previous exercise.
 
-Copy
-New-AzResourceGroupDeployment `
-  -Name usenondefaultsku `
-  -ResourceGroupName myResourceGroup `
-  -TemplateFile $templateFile `
-  -storageName "{your-unique-name}" `
-  -storageSKU Standard_GRS
-Finally, let's run one more test and see what happens when you pass in a SKU that isn't one of the allowed values. In this case, we test the scenario where a user of your template thinks basic is one of the SKUs.
+:::code language="azurecli" source="../samples/exercise3-skuparamdeploy-badsku.sh" highlight: "9":::
 
-PowerShell
-Azure CLI
-Azure PowerShell
+Finally, let's run one more test and see what happens when you pass in a SKU that isn't one of the allowed values. In this case, we test the scenario where a user of your template thinks **basic** is one of the SKUs.
 
-Copy
-New-AzResourceGroupDeployment `
-  -Name testskuparameter `
-  -ResourceGroupName myResourceGroup `
-  -TemplateFile $templateFile `
-  -storageName "{your-unique-name}" `
-  -storageSKU basic
 The command fails immediately with an error message that states which values are allowed. Resource Manager identifies the error before the deployment starts.
 
-Clean up resources
-If you're moving on to the next tutorial, you don't need to delete the resource group.
+![Deployment template validation failed](../media/deploy-validation-failed.png)
 
-If you're stopping now, you might want to clean up the resources you deployed by deleting the resource group.
-
-From the Azure portal, select Resource group from the left menu.
-Enter the resource group name in the Filter by name field.
-Select the resource group name.
-Select Delete resource group from the top menu.
-Next steps
+You have now added a parameters to your template.  The next unit will cover how to add and us functions.
