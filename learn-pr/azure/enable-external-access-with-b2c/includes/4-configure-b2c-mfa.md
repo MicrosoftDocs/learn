@@ -40,7 +40,7 @@ You use user flows to manage things like sign-ins and sign-ups. Your Azure AD B2
 
 ![Create user flows](../media/4-create-user-flows.png)
 
-Create a user flow for sign-ups and sign-ins for your users. You use the **Sign-up and sign-in** user flow to handle the steps for users to create an account for the app and to access the app. This user flow guides users through several pages that help them sign in or sign up.
+Create a user flow for sign-ups and sign-ins for your users. You use the **Sign-up and sign-in** user flow to guide users through the several pages to create an account for the app (sign up) and to access the app (sign in).
 
 Use this form to create the user flow:
 

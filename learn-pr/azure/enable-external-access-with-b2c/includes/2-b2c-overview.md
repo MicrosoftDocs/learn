@@ -10,7 +10,7 @@ Azure AD B2C is a service that you use to manage customer identities and their a
 
 ### Configure user journeys through policies
 
-A user journey is the path that you want people to take in your application to achieve their goal. For example, a user might want to make a new account or update their profile. You use policies in Azure AD B2C to configure user journeys. For example, policies help you detail profile creation, sign-in, or account editing for users. Azure AD B2C comes with preconfigured policies called *user flows* that control how people interact with your application.
+A user journey is the path that you want people to take in your application to achieve their goal. For example, a user might want to make a new account or update their profile. You use policies in Azure AD B2C to configure user journeys. Policies help you detail journeys like profile creation, sign-in, or account editing for users. Azure AD B2C comes with preconfigured policies called *user flows* that control how people interact with your application.
 
 User flows are used to configure:
 
@@ -28,11 +28,11 @@ There are different types of user flows, such as for profile editing or password
 
 ![Sign-in user flow](../media/2-signin-user-flow.png)
 
-First, the user goes to your application, perhaps on their computer's internet browser or their mobile device. The user is presented with a sign-in form for authentication, and enters their account credentials in the form. If you've enabled multi-factor authentication for your user flow, the user is then prompted to enter a code that they receive on their mobile device. The user's code is verified, and if successful, they are forwarded to your application.
+First, the user goes to your application, perhaps on their computer's internet browser or their mobile device. The user is presented with a sign-in form for authentication, and enters their account credentials in the form. If you've enabled multi-factor authentication for your user flow, the user is then prompted to enter a code that they receive on their mobile device. The code is verified and, if it succeeds, the user is forwarded to your application.
 
 Azure AD B2C also supports industry-standard OAuth 2.0 and OpenID Connect authentication protocols for your user flows. Use these protocols when you're building apps like Web API, or mobile applications. Sign-up and sign-in can be outsourced to Azure AD B2C for your applications, whatever languages they're built on.
 
-### Allow users to use different identity providers
+### Support different identity providers
 
 Use identity providers to let users sign in by using their social identities, such as a Microsoft account, Facebook, Twitter, or LinkedIn.
 

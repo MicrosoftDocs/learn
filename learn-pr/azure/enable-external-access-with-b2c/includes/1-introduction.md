@@ -4,8 +4,6 @@ You're the solutions architect for a healthcare organization. The organization i
 
 In this module, you'll create an Azure AD B2C tenant and use it to register an application. You'll use the user flows in Azure AD B2C to help manage patient access to the application. You'll also use multi-factor authentication with Azure AD B2C to add a second layer of protection for users.
 
-By the end of this module, you'll know how to use Azure AD B2C with multi-factor authentication.
-
 ## Learning objectives
 
 At the end of this module, you'll be able to:
