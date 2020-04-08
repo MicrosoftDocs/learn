@@ -14,13 +14,9 @@ In this module, you will:
 
 ## Prerequisites
 
-  - Environment setup
-  - Introduction to Python for data science
-  - Introduction to NumPy for data science
-  - Introduction to pandas for data science
-
-> [!NOTE]
-> **SARAH**, would you confirm what the prerequisites should be? If they are specific modules in the learning path, would you like us to use links to the modules when they are available, or just plain text? Thanks.
-> **From Sarah** Linking to the previous modules would be great!
+  - [Environment setup](https://github.com/MicrosoftDocs/learn-pr/blob/new-data-science-1/learn-pr/reactors/python-data-science/includes/1-introduction.md#set-up-your-environment)
+  - [Introduction to Python for data science](https://github.com/MicrosoftDocs/learn-pr/blob/new-data-science-1/learn-pr/reactors/python-data-science/index.yml)
+  - [Introduction to NumPy for data science](https://github.com/MicrosoftDocs/learn-pr/blob/new-data-science-1/learn-pr/reactors/numpy-data-science/index.yml)
+  - [Introduction to pandas for data science](https://github.com/MicrosoftDocs/learn-pr/blob/new-data-science-1/learn-pr/reactors/pandas-data-science/index.yml)
 
 Working with data starts with a knowledge of data structures. Let's see what Python has to offer.

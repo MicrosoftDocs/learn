@@ -169,12 +169,6 @@ Try running example3[example3.notnull()].
 
 Before you do so, what do you expect to see?
 
-> [!NOTE]
-> 
-> **SARAH** - Should we provide some output or feedback when a "rhetorical" query is given to the student to ponder in an exercise?
->
->**From sarah** - Yes, I added some in the Pandas module 2 for reference.
-
 > [!div class="alert is-tip"]
 > ### Key takeaway
 >
@@ -260,9 +254,14 @@ The output looks like this:
 
 How might you go about dropping just column 3?
 
-Hint: remember that you will need to supply both the axis parameter and the `how` parameter.
+<div class="test-collapsible-container">
+<h2 class="test-collapsible-controller">How might you go about dropping just column 3?</h2>
+<div class="test-collapsible-target">
+<p>remember that you will need to supply both the axis parameter and the `how` parameter.</p>
+</div>
 
-The thresh parameter gives you finer-grained control: you set the number of non-null values that a row or column needs to have in order to be kept:
+
+The `thresh` parameter gives you finer-grained control: you set the number of non-null values that a row or column needs to have in order to be kept:
 
 ```python
 example4.dropna(axis='rows', thresh=3)
