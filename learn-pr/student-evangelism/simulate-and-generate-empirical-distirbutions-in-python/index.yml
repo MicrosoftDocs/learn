@@ -1,0 +1,34 @@
+uid: learn.student-evangelism.simulate-and-generate-empirical-distirbutions-in-python
+metadata:
+  title: Simulate And Generate Empirical Distirbutions In Python
+  description: Learn
+  ms.date: 19/03/2020
+  author: sauravmittal
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+title: Simulate And Generate Empirical Distirbutions In Python
+summary: '** TODO: FILL IN **'
+abstract: |
+  In this module, you will:
+  - PLACEHOLDER
+prerequisites: None
+iconUrl: http://via.placeholder.com/120x120
+levels: beginner
+roles: 
+- data-scientist
+- student
+products: 
+- azure
+units: 
+- learn.student-evangelism.simulate-and-generate-empirical-distirbutions-in-python.simulation
+- learn.student-evangelism.simulate-and-generate-empirical-distirbutions-in-python.monty-hall-problem
+- learn.student-evangelism.simulate-and-generate-empirical-distirbutions-in-python.sampling-and-empirical-distributions
+- learn.student-evangelism.simulate-and-generate-empirical-distirbutions-in-python.empirical-distributions
+- learn.student-evangelism.simulate-and-generate-empirical-distirbutions-in-python.sampling-from-a-population
+- learn.student-evangelism.simulate-and-generate-empirical-distirbutions-in-python.empirical-distribution-of-a-statistic
+- learn.student-evangelism.simulate-and-generate-empirical-distirbutions-in-python.randomization
+- learn.student-evangelism.simulate-and-generate-empirical-distirbutions-in-python.endnote
+- learn.student-evangelism.simulate-and-generate-empirical-distirbutions-in-python.summary
+badge:
+  uid: learn.student-evangelism.simulate-and-generate-empirical-distirbutions-in-python.badge
