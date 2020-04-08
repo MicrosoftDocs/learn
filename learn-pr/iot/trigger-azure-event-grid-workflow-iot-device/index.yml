@@ -36,7 +36,7 @@ units:
 - learn.iot.trigger-azure-event-grid-workflow-iot-device.business-integration-with-event-grid
 - learn.iot.trigger-azure-event-grid-workflow-iot-device.exercise-create-iot-hub
 - learn.iot.trigger-azure-event-grid-workflow-iot-device.exercise-http-web-hook-logic-app-email
-- learn.iot.trigger-azure-event-grid-workflow-iot-device.exercise-event-grid-iot-hub
+- learn.iot.trigger-azure-event-grid-workflow-iot-device.event-grid-iot-hub
 - learn.iot.trigger-azure-event-grid-workflow-iot-device.exercise-configure-azure-iot-hub-event-subscription
 - learn.iot.trigger-azure-event-grid-workflow-iot-device.exercise-test-logic-app
 - learn.iot.trigger-azure-event-grid-workflow-iot-device.summary

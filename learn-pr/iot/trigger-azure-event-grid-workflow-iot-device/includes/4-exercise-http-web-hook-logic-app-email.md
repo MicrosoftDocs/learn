@@ -1,6 +1,6 @@
-# Create HTTP Web Hook logic app that sends an email
-
 In this unit, you will create a new logic app that will be triggered via an HTTP Web Hook, then send an email using an Outlook.com email address.
+
+## Create HTTP Web Hook logic app that sends an email
 
 1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) (which you may still have open), click **+Create a resource** to open the Azure Marketplace.
 1. On the **New** page, in the **Search the Marketplace** box, type in and search for **Logic App**.
@@ -42,7 +42,7 @@ In this unit, you will create a new logic app that will be triggered via an HTTP
     
 1. On the **When a HTTP request is received** trigger, click the **Use sample payload to generate schema** link.
 
-1. When prompted, paste in the following sample JSON into the textbox and click **Done**.
+1. When prompted, paste in the following sample JSON into the textbox, change the IoT Hub name field to the one you used in previous unit to create the IoT Hub instance (cheesecavesmanager-&lt;your ID&gt;), and click **Done**.
 
     ```json
      [{
@@ -82,7 +82,7 @@ In this unit, you will create a new logic app that will be triggered via an HTTP
             }
           }
         },
-        "hubName": "egtesthub1",
+        "hubName": "cheesecavesmanager-<your ID>",
         "deviceId": "LogicAppTestDevice"
       },
       "dataVersion": "1",
