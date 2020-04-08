@@ -527,9 +527,10 @@ Here's the output:
 <seaborn.axisgrid.PairGrid at 0x12eb4dd10>
 ```
 
-> [!NOTE]
-> 
-> **SARAH** - *Insert image*: Add screenshot of the output.
->
+:::image type="content" source="../media/sns-pairplot.png" alt-text="A screenshot that shows the output of running sns.pairplot":::
+
+![A screenshot that shows the output of running sns.pairplot](../media/sns-pairplot.png)
+
+
 
 Visualization is the start of the really cool, fun part of data science. So play around with these visualization tools and see what you can learn from the data!
