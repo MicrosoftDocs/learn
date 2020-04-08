@@ -178,7 +178,7 @@ Let's set up an Ingress resource with a route to the ratings-web service.
 
 ## Test the application
 
-Open the host name you configured on the ingress in a web browser to view and interact with the application. For example, at http://frontend.13-68-177-68.nip.io.
+Open the host name you configured on the ingress in a web browser to view and interact with the application. For example, at http:\//frontend.13-68-177-68.nip.io.
 
 ![Screenshot of the ratings-web application](../media/07-ratings-web-ingress.png)
 
