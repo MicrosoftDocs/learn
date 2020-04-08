@@ -5,7 +5,7 @@ In order to carry on with your exercises, you will add a storage account definit
 1. Open Visual Studio Code and the template you created in the first exercise.  From the Azure shell provided here, type the following command.
        
 ```shell
-    code azuredeploy.json
+code azuredeploy.json
 ```
               
 2. Copy and paste the following code in the resource section of your ARM template.
@@ -76,7 +76,7 @@ You can deploy the template to create the storage account. Give your deployment 
 
 Just as it was in the first exercise, you need to specify a resource group that will contain the resources. Before running the deployment command, you **must** create the resource group. However, in the **sandbox** provided here, you already have a resource group to target your deployment.
 
-1. To get the name of the resource group in the sandbox, you can use an azurecli command. Type the code below in the sandbox to list the resource group name.
+1. To get the name of the resource group in the sandbox, you can use an Azure CLI command. Type the code below in the sandbox to list the resource group name.
 
     ```shell
     az group list --query "[?contains(name, 'learn')]" -o table

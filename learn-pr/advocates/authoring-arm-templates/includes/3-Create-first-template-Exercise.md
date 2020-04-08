@@ -38,7 +38,7 @@ Copy and paste the following JSON into the editor:
 
 When you deploy a template, you need to specify a resource group that will contain the resources. Before running the deployment command, you must create the resource group. However, in the sandbox provided here, you already have a resource group to target your deployments.
 
-1. To get the name of the resource group in the sandbox, you can use an azurecli command. Type the code below in the sandbox to list the resource group name.
+1. To get the name of the resource group in the sandbox, you can use an Azure CLI command. Type the code below in the sandbox to list the resource group name.
 
     ```shell
     az group list --query "[?contains(name, 'learn')]" -o table
@@ -94,7 +94,7 @@ You can verify the deployment by exploring the resource group from the Azure por
 
    ![View deployment status](../media/portal-verify-deployment.png)
 
-1. You see a history of deployment for the resource group. Select the deployment that is **blanktemplate** and the deployment date.
+1. You see a history of deployment for the resource group. Select the deployment that is has as part of the name **blanktemplate** and the deployment date.
 
    ![Select deployment](../media/portal-verify-blanktemplate.png)
 
