@@ -45,7 +45,7 @@ Here's the output:
 
 ![A screenshot that shows the output of running iris_df.head()](../media/iris-df-head.png)
 
-### Exercise
+### Try it yourself
 
 By default, `DataFrame.head` returns the first five rows of a DataFrame. In the code cell below, can you figure out how to get it to show more?
 

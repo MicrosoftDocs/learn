@@ -96,7 +96,7 @@ Here's the output:
 (nan, nan, nan)
 ```
 
-### Exercise
+### Try it yourself
 
 What happens if you add np.nan and **None** together?
 
@@ -120,7 +120,7 @@ Here's the output:
 dtype: int64
 ```
 
-### Exercise
+### Try it yourself
 
 Now set an element of int_series equal to **None**.
 
@@ -163,17 +163,11 @@ Look closely at the output. Does any of it surprise you? While 0 is an arithmeti
 
 Now, let's turn this around and use these methods in a manner more like you will use them in practice. You can use Boolean masks directly as a Series or DataFrame index, which can be useful when trying to work with isolated missing (or present) values.
 
-### Exercise
+### Try it yourself
 
 Try running example3[example3.notnull()].
 
 Before you do so, what do you expect to see?
-
-> [!NOTE]
-> 
-> **SARAH** - Should we provide some output or feedback when a "rhetorical" query is given to the student to ponder in an exercise?
->
->**From sarah** - Yes, I added some in the Pandas module 2 for reference.
 
 > [!div class="alert is-tip"]
 > ### Key takeaway
@@ -222,9 +216,9 @@ example4.dropna()
 
 The output looks like this:
 
-> [!NOTE]
+> [!IMPORTANT]
 > 
-> **SARAH** - *Insert image*: Add screenshot of the output table.
+> Waiting for a decision about how to display table output--screenshot or div. If screenshot, how extensive alt text should be.
 >
 
 If necessary, you can drop NA values from columns. Use axis=1 to do so:
@@ -235,9 +229,9 @@ example4.dropna(axis='columns')
 
 The output looks like this:
 
-> [!NOTE]
+> [!IMPORTANT]
 > 
-> **SARAH** - *Insert image*: Add screenshot of the output table.
+> Waiting for a decision about how to display table output--screenshot or div. If screenshot, how extensive alt text should be.
 >
 
 Notice that this can drop a lot of data that you might want to keep, particularly in smaller datasets. What if you just want to drop rows or columns that contain several or even just all null values? You specify those setting in `dropna` with the `how` and `thresh` parameters.
@@ -251,18 +245,26 @@ example4
 
 The output looks like this:
 
-> [!NOTE]
+> [!IMPORTANT]
 > 
-> **SARAH** - *Insert image*: Add screenshot of the output table.
+> Waiting for a decision about how to display table output--screenshot or div. If screenshot, how extensive alt text should be.
 >
 
-### Exercise
+### Try it yourself
 
-How might you go about dropping just column 3?
+<details><summary>How might you go about dropping just column 3?</summary>
+  
+<p>Hint: Remember that you will need to supply both the axis parameter and the <code>how</code> parameter.
 
-Hint: remember that you will need to supply both the axis parameter and the `how` parameter.
+You can add code, too:
 
-The thresh parameter gives you finer-grained control: you set the number of non-null values that a row or column needs to have in order to be kept:
+```python
+merge
+```
+
+</p></details>
+
+The `thresh` parameter gives you finer-grained control: you set the number of non-null values that a row or column needs to have in order to be kept:
 
 ```python
 example4.dropna(axis='rows', thresh=3)
@@ -270,9 +272,9 @@ example4.dropna(axis='rows', thresh=3)
 
 The output looks like this:
 
-> [!NOTE]
+> [!IMPORTANT]
 > 
-> **SARAH** - *Insert image*: Add screenshot of the output table.
+> Waiting for a decision about how to display table output--screenshot or div. If screenshot, how extensive alt text should be.
 >
 
 Here, the first and last row were dropped because they contain only two non-null values.
@@ -314,7 +316,7 @@ e    3.0
 dtype: float64
 ```
 
-### Exercise
+### Try it yourself
 
 What happens if you try to fill null values with a string, like ''?
 
@@ -360,9 +362,9 @@ example4
 
 The output looks like this:
 
-> [!NOTE]
+> [!IMPORTANT]
 > 
-> **SARAH** - *Insert image*: Add screenshot of the output table.
+> Waiting for a decision about how to display table output--screenshot or div. If screenshot, how extensive alt text should be.
 >
 
 ```python
@@ -371,14 +373,14 @@ example4.fillna(method='ffill', axis=1)
 
 The output looks like this:
 
-> [!NOTE]
+> [!IMPORTANT]
 > 
-> **SARAH** - *Insert image*: Add screenshot of the output table.
+> Waiting for a decision about how to display table output--screenshot or div. If screenshot, how extensive alt text should be.
 >
 
 Notice that when a previous value is not available for forward-filling, the null value remains.
 
-### Exercise
+### Try it yourself
 
 What output does example4.fillna(method='bfill', axis=1) produce?
 
@@ -394,9 +396,9 @@ example4.fillna(example4.mean())
 
 The output looks like this:
 
-> [!NOTE]
+> [!IMPORTANT]
 > 
-> **SARAH** - *Insert image*: Add screenshot of the output table.
+> Waiting for a decision about how to display table output--screenshot or div. If screenshot, how extensive alt text should be.
 >
 
 Notice that column 3 is still valueless: the default direction is to fill values row-wise.

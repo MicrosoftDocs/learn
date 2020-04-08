@@ -95,7 +95,7 @@ The output shows that 77.5% is the median of `AGE`:
 77.5
 ```
 
-### Exercise
+### Try it yourself
 
 Now, find the maximum value in `df['AGE']`.
 
@@ -173,7 +173,7 @@ AGE
 Name: MEDV, Length: 356, dtype: float64
 ```
 
-### Exercise
+### Try it yourself
 
 Now try to find the median value for `AGE` for each value of `MEDV`.
 
@@ -257,7 +257,7 @@ True    1.0   0.0     20.185714
 Name: MEDV, dtype: float64
 ```
 
-Let's take a moment to analyze these results in more depth. The first row reports that communities with less than half of houses built before 1940, with a highway-access index of 1, and that are not situated on the Charles River have a mean house price of \$24,667 (1970s dollars). The next row shows that communities that are similar to the first row, except for being located on the Charles River, have a mean house price of \$50,000.
+Let's take a moment to analyze these results in more depth. The first row reports that communities with less than half of houses built before 1940, with a highway-access index of 1, and that are not situated on the Charles River have a mean house price of $24,667 (1970s dollars). The next row shows that communities that are similar to the first row, except for being located on the Charles River, have a mean house price of $50,000.
 
 One insight that pops out from continuing down this is that, all else being equal, being located next to the Charles River can significantly increase the value of newer housing stock. The story is more ambiguous for communities dominated by older houses: proximity to the Charles significantly increases home prices in one community (and that one presumably farther away from the city). For all others, being situated on the river either provided a modest increase in value or actually decreased mean home prices.
 
@@ -269,12 +269,12 @@ groupby_twovar.unstack()
 
 Here's the output:
 
-> [!NOTE]
+> [!IMPORTANT]
 > 
-> **SARAH** - *Insert image*: Add screenshot of the output table.
+> Waiting for a decision about how to display table output--screenshot or div. If screenshot, how extensive alt text should be.
 >
 
-### Exercise
+### Try it yourself
 
 How could you use `groupby` to get a sense of the proportion of residential land zoned for lots larger than 25,000 sq.ft., the proportion of non-retail business acres per town, and the distance of towns from employment centers in Boston?
 
@@ -330,10 +330,7 @@ Here's the output:
 <matplotlib.axes._subplots.AxesSubplot at 0x12cddbed0>
 ```
 
-> [!NOTE]
-> 
-> **SARAH** - *Insert image*: Add screenshot of the output table.
->
+![A screenshot that shows the output of running df with CHAS and plot](../media/df-chas-plot.png)
 
 > [!NOTE]
 > The IPython magic command `%matplotlib inline` enables you to view the chart inline.
@@ -346,10 +343,7 @@ df.corr(method='pearson')
 
 Here's the output:
 
-> [!NOTE]
-> 
-> **SARAH** - *Insert image*: Add screenshot of the output table.
->
+<!-- waiting for input  ![A screenshot that shows the output of running df.corr](../media/df-corr.png) -->
 
 Suppose you want to look only at the correlations between all the columns and one variable? Let's examine only the correlation between all other variables and the percentage of owner-occupied houses build before 1940 (`AGE`). We will do this by accessing the column by index number:
 
@@ -394,10 +388,7 @@ Here's the output:
 <matplotlib.axes._subplots.AxesSubplot at 0x12e168ad0>
 ```
 
-> [!NOTE]
-> 
-> **SARAH** - *Insert image*: Add screenshot of the output table.
->
+![A screenshot that shows the output of running sns.heatmap](../media/sns-heatmap.png)
 
 Histograms are another valuable tool for investigating your data. For example, what is the overall distribution of prices of owner-occupied houses in the Boston area?
 
@@ -414,10 +405,7 @@ Here's the output:
  <a list of 10 Patch objects>)
 ```
 
-> [!NOTE]
-> 
-> **SARAH** - *Insert image*: Add screenshot of the output table.
->
+![A screenshot that shows the output of running plt-hist](../media/plt-hist.png)
 
 The default bin size for the matplotlib histogram (essentially big of buckets of percentages that you include in each histogram bar in this case) is pretty large and might mask smaller details. To get a finer-grained view of the AGE column, you can manually increase the number of bins in the histogram:
 
@@ -440,10 +428,7 @@ Here's the output:
  <a list of 50 Patch objects>)
 ```
 
-> [!NOTE]
-> 
-> **SARAH** - *Insert image*: Add screenshot of the output table.
->
+![A screenshot that shows the output of running plt-hist with the number of bins increased to 50](../media/plt-hist-bin-50.png)
 
 Seaborn has a somewhat more attractive version of the standard matplotlib histogram: the distribution plot. This is a combination histogram and kernel density estimate (KDE) plot (essentially a smoothed histogram):
 
@@ -457,10 +442,7 @@ Here's the output:
 <matplotlib.axes._subplots.AxesSubplot at 0x12dde6bd0>
 ```
 
-> [!NOTE]
-> 
-> **SARAH** - *Insert image*: Add screenshot of the output.
->
+![A screenshot that shows the output of running sns.distplot](../media/sns-distplot.png)
 
 Another commonly used plot is the Seaborn `jointplot`, which combines histograms for two columns along with a scatterplot:
 
@@ -474,10 +456,7 @@ Here's the output:
 <seaborn.axisgrid.JointGrid at 0x12e0f35d0>
 ```
 
-> [!NOTE]
-> 
-> **SARAH** - *Insert image*: Add screenshot of the output.
->
+![A screenshot that shows the output of running sns.jointplot](../media/sns-jointplot.png)
 
 Unfortunately, many of the dots print over each other. You can help address this by adding some alpha blending, a figure that sets the transparency for the dots so that concentrations of them drawing over one another will be apparent:
 
@@ -491,10 +470,7 @@ Here's the output:
 <seaborn.axisgrid.JointGrid at 0x12e760510>
 ```
 
-> [!NOTE]
-> 
-> **SARAH** - *Insert image*: Add screenshot of the output.
->
+![A screenshot that shows the output of running sns.jointplot with alpha blending](../media/sns-jointplot-alpha-blend.png)
 
 Another way to see patterns in your data is with a two-dimensional KDE plot. Darker colors represent a higher concentration of data points:
 
@@ -508,10 +484,7 @@ Here's the output:
 <matplotlib.axes._subplots.AxesSubplot at 0x11c455650>
 ```
 
-> [!NOTE]
-> 
-> **SARAH** - *Insert image*: Add screenshot of the output.
->
+![A screenshot that shows the output of running sns.kdeplot](../media/sns-kdeplot.png)
 
 Note that although the KDE plot is very good at showing concentrations of data points, finer structures like linear relationships (such as the clear relationship between the number of rooms in homes and the house price) are lost in the KDE plot.
 
@@ -527,9 +500,6 @@ Here's the output:
 <seaborn.axisgrid.PairGrid at 0x12eb4dd10>
 ```
 
-> [!NOTE]
-> 
-> **SARAH** - *Insert image*: Add screenshot of the output.
->
+![A screenshot that shows the output of running sns.pairplot](../media/sns-pairplot.png)
 
 Visualization is the start of the really cool, fun part of data science. So play around with these visualization tools and see what you can learn from the data!
