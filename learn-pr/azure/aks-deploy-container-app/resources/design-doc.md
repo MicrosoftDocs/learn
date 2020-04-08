@@ -58,7 +58,7 @@ Identify the subtasks of *module title*
 | 4 | Deploy an application using imperative paradigm | Learning context to tasks 5 and 6 | None just as a context | 2, 4 | No, joined with 5 |
 | 5 | Write Kubernetes YAML files | Pros of using a declarative structure, YAML files are needed to deploy the application | Knowledge Check | 2, 4, 3 | Yes |
 | 6 | Deploy an application using YAML files | Deploy the written files to the cluster | Exercise | 2, 4, 3 | No, joined with 5 |
-| 7 | Expose the application to the Web | The application needs to be exposed for other users to use | Exercise | 2, 5 | Yes |
+| 7 | Expose the application to the Web | The application must be exposed for other users to use | Exercise | 2, 5 | Yes |
 
 ## Outline the units
 
@@ -66,16 +66,16 @@ Identify the subtasks of *module title*
 
 1. **Introduction**
 
-    Let's suppose you work for a growing company that, due to the increased demand, needed to scale the product so it can provide a better experience to all customers. For that they asked you, the devOps Engineer, to assess which tool would be the best for the job.
+    Let's suppose you work for a growing company that, because of the increased demand, needed to scale the product so it can provide a better experience to all customers. For that they asked you, the devOps Engineer, to assess which tool would be the best for the job.
 
-    After experimenting with Kubernetes you got to Azure Kubernetes Service, which fits all the prerequisites to be the perfect tool for the company's increased growth. So, after clearance from the leadership, you have to create the future structure which will support the company in the future!
+    After experimenting with Kubernetes you got to Azure Kubernetes Service, which fits all the prerequisites to be the perfect tool for the company's increased growth. So, after clearance from the leadership, you have to create the future structure that will support the company in the future!
 
     <!-- *Add your scenario [(Scenario guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-scenarios)* -->
 
 2. **Create an AKS Cluster**
 
     - Access the Azure portal and create a cluster using the GUI and also show the learner how to create a cluster from the CLI
-    - Use the AZ CLI command to install `kubectl` (if the user already has it installed, no need to go through this)
+    - Use the AZ CLI command to install `kubectl` (if the user already has it installed, no need to go through this step)
     - Use the AZ CLI command to create a `kubectl` context
     - Test the commands
 
@@ -121,7 +121,7 @@ Identify the subtasks of *module title*
 
     - Briefly describe service types to contextualize
     - Create YAML files for the service as LoadBalancer type
-    - Show the load balancer created in Azure Portal
+    - Show the load balancer created in Azure portal
     - Test connection
 
     **Knowledge check**
@@ -141,9 +141,9 @@ Identify the subtasks of *module title*
 
 8. **Summary**
 
-    The company needed to deploy its infrastructure from the ground up. So we created an AKS cluster and deployed an ping application to check it's working properly.
+    The company needed to deploy its infrastructure from the ground up. So we created an AKS cluster and deployed a ping application to check it's working properly.
 
-    We used Kubernetes' declarative paradigm to help us describe what we wanted to create, this way we can keep a version history and make it easily reproducible. AZ CLI allowed us to connect to our managed Kubernetes service with AKS without having to worry about infrastructure and to get up and running very fast.
+    We used Kubernetes' declarative paradigm to help us describe what we wanted to create, this way we can keep a version history and make it easily reproducible. AZ CLI allowed us to connect to our managed Kubernetes service with AKS without having to worry about infrastructure and to get up and running fast.
 
     Imagine how would it be to deploy this application on a VM or another environment without Kubernetes. Having AKS to manage the heavy lifting for us, it made possible not only to save much time but to make our deployment much simpler.
 
