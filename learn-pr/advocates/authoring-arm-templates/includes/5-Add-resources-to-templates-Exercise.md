@@ -2,7 +2,7 @@
 
 In order to carry on with your exercises, you will add a storage account definition to your existing template.  To do so, you will edit the empty template you created in the last exercise.
 
-1. Open Visual Studio Code from the Azure shell provides here in the **sandbox** provided for you by using the following command.
+1. Open Visual Studio Code and the template you created in the first exercise.  From the Azure shell provided here, type the following command.
        
 ```shell
     code azuredeploy.json
@@ -41,7 +41,7 @@ At this point your ARM template should now look like the following:
     "resources": [
          {
              "type": "Microsoft.Storage/storageAccounts",
-             "apiVersion": "2019-04-01",
+             "apiVersion": "2019-06-01",
              "name": "{provide-unique-name}",
              "location": "eastus",
              "sku": {
@@ -59,7 +59,16 @@ At this point your ARM template should now look like the following:
 > [!NOTE]
 >Notice that in this example we incremented the "contentVersion" value since we are making a significant change to the template.
 
-#### Resource properties
+In this exercise, you're adding a storage account to the empty template we created in unit 3. So, Let's look at the additions you entered:
+
+1. **"type": "Microsoft.Storage/storageAccounts",** - To identify we are deploying a storage account.
+1. **"apiVersion": "2019-06-01",** - The API version for storageAccounts is [2019-06-01](https://docs.microsoft.com/en-us/azure/templates/microsoft.storage/2019-04-01/storageaccounts)
+1. **"name": "{provide-unique-name}",** - The unique name you want to give to this resource.
+1. **"location": "eastus",** - The location of the resource.
+1. **"sku": {"name": "Standard_LRS"},** - the '[sku](https://docs.microsoft.com/en-us/rest/api/storagerp/srp_sku_types)' is the type of storage the account will be setup for. Standard or premium, and LRS (Locally Redundant storage), GRS(Geo Redundant storage), RA-GRS(Read-Access Geo Redundant storage), ZRS, GZRS (Geo and Zone Redundant Storage), RA-GZRS (Read Access Geo and Zone Redundant Storage)
+
+
+Please notice that you didn't add all of the properties available to the Microsoft.Storage/storageAccounts resource to your template. Many of the properties mentioned [here](https://docs.microsoft.com/en-us/azure/templates/microsoft.storage/2019-06-01/storageaccounts) are optional, so you only define what is needed.
 
 #### Deploy template
 
