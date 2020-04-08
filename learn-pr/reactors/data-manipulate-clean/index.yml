@@ -3,7 +3,7 @@ uid: learn.reactors.data-manipulate-clean
 metadata:
   title: Manipulate and clean data in Python
   description: Learn how to manipulate and clean data and datasets in Python, pandas, and NumPy.
-  ms.date: 05/19/2020
+  ms.date: 04/22/2020
   author: sguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial
@@ -17,7 +17,6 @@ abstract:  |
   - Learn how to identify and remove duplicate values from a DataFrame.
   - Learn how to replace or remove null values in a DataFrame.
   - Learn ways to visually explore the data that's stored in a pandas DataFrame.
-
 
   Complementary content for Microsoft Reactor Workshops.
 prerequisites: |
@@ -42,6 +41,5 @@ units:
 - learn.reactors.data-manipulate-clean.4-duplicate-data
 - learn.reactors.data-manipulate-clean.5-combine-datasets
 - learn.reactors.data-manipulate-clean.6-exploratory-statistics-visualization
-- learn.reactors.data-manipulate-clean.7-summary
 badge:
   uid: learn.reactors.data-manipulate-clean.badge 

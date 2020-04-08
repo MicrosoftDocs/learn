@@ -1,9 +1,9 @@
 ### YamlMime:Module
-uid: learn.reactors.data-science-1.pandas-introduction
+uid: learn.reactors.pandas-data-science
 metadata:
   title: Introduction to the Pandas library for data science
   description: Learn about the Pandas library for data science. Execute statements and scripts, declare variables, and create a basic Pandas app.
-  ms.date: 05/19/2020
+  ms.date: 04/22/2020
   author: sguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial
@@ -16,6 +16,9 @@ abstract: |
   - Understand how to use Series and DataFrames to store remote data
   - Learn how to clean and manipulate large, remote datasets
   - Apply operations to Series and DataFrames for data science analysis
+
+  Complementary content for Microsoft Reactor Workshops.
+
 prerequisites: |
   - Set up your environment
   - Introduction to Python for data science
@@ -32,15 +35,15 @@ products:
 - azure
 - vs-code
 units:
-- learn.reactors.data-science-1.pandas-introduction.1-introduction
-- learn.reactors.data-science-1.pandas-introduction.2-data-structures-series
-- learn.reactors.data-science-1.pandas-introduction.3-data-structures-dataframes
-- learn.reactors.data-science-1.pandas-introduction.4-index-objects
-- learn.reactors.data-science-1.pandas-introduction.5-select-data-series
-- learn.reactors.data-science-1.pandas-introduction.6-select-data-dataframes
-- learn.reactors.data-science-1.pandas-introduction.7-operate-index
-- learn.reactors.data-science-1.pandas-introduction.8-index-series
-- learn.reactors.data-science-1.pandas-introduction.9-index-dataframes
-- learn.reactors.data-science-1.pandas-introduction.10-operations-dataframes-series
+- learn.reactors.pandas-data-science.1-introduction
+- learn.reactors.pandas-data-science.2-data-structures-series
+- learn.reactors.pandas-data-science.3-data-structures-dataframes
+- learn.reactors.pandas-data-science.4-index-objects
+- learn.reactors.pandas-data-science.5-select-data-series
+- learn.reactors.pandas-data-science.6-select-data-dataframes
+- learn.reactors.pandas-data-science.7-operate-index
+- learn.reactors.pandas-data-science.8-index-series
+- learn.reactors.pandas-data-science.9-index-dataframes
+- learn.reactors.pandas-data-science.10-operations-dataframes-series
 badge:
-  uid: learn.reactors.data-science-1.pandas-introduction.badge
+  uid: learn.reactors.pandas-data-science.badge

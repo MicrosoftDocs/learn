@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.reactors.data-science-1.python-introduction.14-import-modules
+uid: learn.reactors.python-data-science.14-import-modules
 title: Import modules
 metadata:
   title: Import modules in Python for data science
   description: Learn how to import modules in Python for data science.
-  ms.date: 05/19/2020
+  ms.date: 04/22/2020
   author: sguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial

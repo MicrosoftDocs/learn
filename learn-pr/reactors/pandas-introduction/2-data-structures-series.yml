@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.reactors.data-science-1.pandas-introduction.2-data-structures-series
+uid: learn.reactors.pandas-data-science.2-data-structures-series
 title: 'Data structures: Series object'
 metadata:
   title: 'Data structures: Series object'
   description: Learn about one of the primary Pandas data structures, the Series object.
-  ms.date: 05/19/2020
+  ms.date: 04/22/2020
   author: sguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial

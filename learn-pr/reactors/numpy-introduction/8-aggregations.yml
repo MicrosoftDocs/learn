@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.reactors.data-science-1.numpy-introduction.8-aggregations
+uid: learn.reactors.numpy-data-science.8-aggregations
 title: Aggregations
 metadata:
   title: Aggregations
   description: Learn ways to aggregate data in NumPy.
-  ms.date: 05/19/2020
+  ms.date: 04/22/2020
   author: sguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial

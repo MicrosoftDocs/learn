@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.reactors.data-science-1.pandas-introduction.10-operations-dataframes-series
+uid: learn.reactors.pandas-data-science.10-operations-dataframes-series
 title: Operations between DataFrames and Series objects
 metadata:
   title: Operations between DataFrames and Series objects
   description: Operations between DataFrames and Series objects
-  ms.date: 05/19/2020
+  ms.date: 04/22/2020
   author: sguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial

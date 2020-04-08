@@ -35,9 +35,9 @@ products:
 - azure
 - vs-code
 modules:
-- learn.reactors.introduction-python-data-science.python-introduction
-- learn.reactors.introduction-python-data-science.numpy-introduction
-- learn.reactors.introduction-python-data-science.pandas-introduction
-- learn.reactors.introduction-python-data-science.data-manipulate-clean
+- learn.reactors.python-data-science
+- learn.reactors.numpy-data-science
+- learn.reactors.pandas-data-science
+- learn.reactors.data-manipulate-clean
 trophy:
   uid: learn.reactors.introduction-python-data-science.trophy

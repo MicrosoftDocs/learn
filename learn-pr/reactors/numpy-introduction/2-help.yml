@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.reactors.data-science-1.numpy-introduction.2-help
+uid: learn.reactors.numpy-data-science.2-help
 title: Built-in help
 metadata:
   title: Built-in help
   description: Learn tips about getting help with the NumPy library installed.
-  ms.date: 05/19/2020
+  ms.date: 04/22/2020
   author: sguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial

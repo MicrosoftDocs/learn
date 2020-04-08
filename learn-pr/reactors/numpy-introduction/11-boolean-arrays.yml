@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.reactors.data-science-1.numpy-introduction.11-boolean-arrays
+uid: learn.reactors.numpy-data-science.11-boolean-arrays
 title: Working with Boolean arrays
 metadata:
   title: Working with Boolean arrays
   description: Learn about some of the useful operations can do with Boolean arrays.
-  ms.date: 05/19/2020
+  ms.date: 04/22/2020
   author: sguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial

@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.reactors.data-science-1.numpy-introduction.7-computation
+uid: learn.reactors.numpy-data-science.7-computation
 title: 'Efficient computation on NumPy arrays: Universal functions'
 metadata:
   title: 'Efficient computation on NumPy arrays: Universal functions'
   description: Get a basic understanding of what NumPy universal functions are and how (and why) to use them.
-  ms.date: 05/19/2020
+  ms.date: 04/22/2020
   author: sguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial

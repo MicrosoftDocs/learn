@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.reactors.data-science-1.numpy-introduction.9-computation-broadcast
-title: Computation on arrays with broadcasting¶
+uid: learn.reactors.numpy-data-science.9-computation-broadcast
+title: Computation on arrays with broadcasting
 metadata:
-  title: Computation on arrays with broadcasting¶
+  title: Computation on arrays with broadcasting
   description: Learn how broadcasting works in NumPy (and why NumPy uses it).
-  ms.date: 05/19/2020
+  ms.date: 04/22/2020
   author: sguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial
