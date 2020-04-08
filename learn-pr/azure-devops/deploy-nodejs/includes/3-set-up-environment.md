@@ -1,4 +1,4 @@
-In this section, you make sure that your Azure DevOps organization is set up to complete the rest of this module. You also create the Azure App Service environments that you'll deploy to.
+In this section, you make sure that your Azure DevOps organization is set up to complete the rest of this module. You also create the Azure App Service environment that you'll deploy to.
 
 To accomplish these goals, you:
 
@@ -26,8 +26,6 @@ Here you clone the GitHub repo required for this project. It's a simple Hello Wo
 
 > [!IMPORTANT]
 > In this module, the [Clean up your Azure DevOps environment](/learn/modules/deploy-nodejs/5-clean-up-environment?azure-portal=true) page contains important cleanup steps. Cleaning up helps ensure that you don't run out of free build minutes. Be sure to follow the cleanup steps even if you don't complete this module.
-
-[!include[](../../shared/includes/project-visibility.md)]
 
 ## Create the Azure App Service environment
 
@@ -89,7 +87,7 @@ This solution requires several Azure resources for deployment, which will be cre
 	az group create --name nodejs-cicd-rg
     ```
 
-1. Run the following `az appservice plan create` command to create an App Service plan using the name defined earlier.
+1. Run the following `az appservice plan create` command to create an App Service plan.
 
     ```azurecli
 	az appservice plan create \
@@ -104,7 +102,7 @@ This solution requires several Azure resources for deployment, which will be cre
     > [!IMPORTANT]
     > If the B1 SKU isn't available in your Azure subscription, [choose a different plan](https://azure.microsoft.com/pricing/details/app-service/linux/?azure-portal=true), such as S1 (Standard).
 
-1. Run the following `az webapp create` command to create the App Service instance.
+1. Run the following `az webapp create` command to create the App Service instance. The name must be globally unique, so a random number will be added to the end. If this step fails due to a naming conflict, try running it again.
 
     ```azurecli
     az webapp create \
@@ -123,7 +121,7 @@ This solution requires several Azure resources for deployment, which will be cre
 	  --output table
     ```
 
-    Note the host name for each running service. You'll need the web host name later when you verify your work. Here's an example:
+    Note the host name for your running service. You'll need the web host name later when you verify your work. Here's an example:
 
     ```output
     HostName                             State
@@ -131,7 +129,7 @@ This solution requires several Azure resources for deployment, which will be cre
     nodejs-cicd-16353.azurewebsites.net  Running
     ```
 
-1. As an optional step, go to one or more of the host names. Verify that they're running and that the default home page appears.
+1. As an optional step, navigate your browser to the host name. Verify that it is running and that the default home page appears.
 
     Here's what you see:
 

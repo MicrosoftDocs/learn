@@ -50,7 +50,7 @@ The pipeline is configured to run whenever a change is committed to the *master*
 
 ### Pipeline variables
 
-To aid in pipeline maintenance, the default template uses variables for commonly-used parameters, such as the name of the service connection string used to connect to Azure. You can also import variables from pipeline libraries managed outside of the pipeline itself.
+To aid in pipeline maintenance, the default template uses variables for commonly-used parameters, such as the name of the service connection string used to connect to Azure. You can also import variables from pipeline libraries managed outside of the pipeline itself. Note that the exact values will vary for your pipeline.
 
 [!code-yml[](code/4-2-azure-pipelines.yml)]
 
@@ -109,4 +109,4 @@ You can learn more about the flexibility of this task in the official docs for t
 
     ![Reviewing Hellow World](../media/4-hello-world.png)
 
-Don't be fooled by the modest presentation. This automated deployment was an engineering feat to rival the greatest of our time.
+Don't be fooled by the modest presentation. Your automated deployment pipeline is an engineering feat to rival the greatest of our time.

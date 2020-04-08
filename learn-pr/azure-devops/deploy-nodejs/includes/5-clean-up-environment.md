@@ -63,7 +63,7 @@ Delete your Azure DevOps project, including the contents of Azure Boards and you
 
 To delete the project:
 
-1. In Azure DevOps, navigate to your project. Earlier, we recommended that you name this project **Space Game - web - Azure Functions**.
+1. In Azure DevOps, navigate to your project. This will be the name you entered when creating the project after installing the Azure Pipelines extension in GitHub.
 1. Select the gear icon next to the project name.
 
     The icon might not appear until you move your mouse over the area.
