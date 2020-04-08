@@ -12,9 +12,9 @@ example6
 
 The output looks like this:
 
-> [!NOTE]
+> [!IMPORTANT]
 > 
-> **SARAH** - *Insert image*: Add screenshot of the output table.
+> Waiting for a decision about how to display table output--screenshot or div. If screenshot, how extensive alt text should be.
 >
 
 ```python
@@ -42,9 +42,9 @@ example6.drop_duplicates()
 
 The output looks like this:
 
-> [!NOTE]
+> [!IMPORTANT]
 > 
-> **SARAH** - *Insert image*: Add screenshot of the output table.
+> Waiting for a decision about how to display table output--screenshot or div. If screenshot, how extensive alt text should be.
 >
 
 Both `duplicated` and `drop_duplicates` default to consider all columns, but you can specify that they examine only a subset of columns in your DataFrame:
@@ -55,9 +55,9 @@ example6.drop_duplicates(['letters'])
 
 The output looks like this:
 
-> [!NOTE]
+> [!IMPORTANT]
 > 
-> **SARAH** - *Insert image*: Add screenshot of the output table.
+> Waiting for a decision about how to display table output--screenshot or div. If screenshot, how extensive alt text should be.
 >
 
 > [!div class="alert is-tip"]

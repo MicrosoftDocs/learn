@@ -95,7 +95,7 @@ The output shows that 77.5% is the median of `AGE`:
 77.5
 ```
 
-### Exercise
+### Try it yourself
 
 Now, find the maximum value in `df['AGE']`.
 
@@ -173,7 +173,7 @@ AGE
 Name: MEDV, Length: 356, dtype: float64
 ```
 
-### Exercise
+### Try it yourself
 
 Now try to find the median value for `AGE` for each value of `MEDV`.
 
@@ -269,12 +269,12 @@ groupby_twovar.unstack()
 
 Here's the output:
 
-> [!NOTE]
+> [!IMPORTANT]
 > 
-> **SARAH** - *Insert image*: Add screenshot of the output table.
+> Waiting for a decision about how to display table output--screenshot or div. If screenshot, how extensive alt text should be.
 >
 
-### Exercise
+### Try it yourself
 
 How could you use `groupby` to get a sense of the proportion of residential land zoned for lots larger than 25,000 sq.ft., the proportion of non-retail business acres per town, and the distance of towns from employment centers in Boston?
 
