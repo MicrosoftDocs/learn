@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="150px" height="160px" viewBox="0 0 150 160" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>CMU dev 4 Distributed programming on the cloud/CMU-dev-4-Distributed-programming-on-the-cloud</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M0,20 L0,80 L0,80 C0,118.66 31.33998,150 70.0002438,150 C108.66002,150 140,118.66 140,80 L140,20 C140,8.954305 131.045695,-2.02906125e-15 120,0 L20,0 C8.954305,2.02906125e-15 -1.3527075e-15,8.954305 0,20 Z" id="path-1"></path>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#3550A6" offset="0%"></stop>
+            <stop stop-color="#293E9C" offset="100%"></stop>
+        </linearGradient>
+        <path d="M120,0 C130.930636,0 139.813225,8.76872859 139.997093,19.6555106 L140,20 L140,80 C140,118.66 108.66002,150 70.0002438,150 C31.7265826,150 0.627531629,119.283666 0.00937797431,81.15758 L0,80 L0,20 C0,9.06936433 8.76872859,0.186774951 19.6555106,0.00290705581 L20,0 L120,0 Z M120,5 L20,5 C11.8205929,5 5.17026978,11.5467864 5.00321776,19.6861718 L5,20 L5,80 C5,115.898618 34.1014459,145 70.0002438,145 C105.53964,145 134.417293,116.477667 134.991292,81.074895 L135,80 L135,20 C135,11.8205929 128.453214,5.17026978 120.313828,5.00321776 L120,5 Z" id="path-4"></path>
+        <filter x="-14.0%" y="-19.7%" width="127.9%" height="139.3%" filterUnits="objectBoundingBox" id="filter-6">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-7">
+            <stop stop-color="#D2EBFF" offset="0%"></stop>
+            <stop stop-color="#F0FFFD" offset="100%"></stop>
+        </linearGradient>
+        <filter x="-21.1%" y="-34.3%" width="142.1%" height="168.6%" filterUnits="objectBoundingBox" id="filter-8">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <linearGradient x1="50%" y1="125.699103%" x2="50%" y2="6.86796686%" id="linearGradient-9">
+            <stop stop-color="#198AB3" offset="0%"></stop>
+            <stop stop-color="#198AB3" offset="0%"></stop>
+            <stop stop-color="#22A5CB" offset="11%"></stop>
+            <stop stop-color="#29BADE" offset="23%"></stop>
+            <stop stop-color="#2EC9EB" offset="37%"></stop>
+            <stop stop-color="#31D1F3" offset="53%"></stop>
+            <stop stop-color="#32D4F5" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Badges" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="[CMU-dev-4]-Distributed-programming-on-the-cloud" transform="translate(-136.000000, -50.000000)">
+            <g id="CMU-dev-4-Distributed-programming-on-the-cloud/CMU-dev-4-Distributed-programming-on-the-cloud" transform="translate(161.000000, 73.000000)">
+                <g id="Trophy-Plates/Cup-Up" transform="translate(0.000000, 7.000000)">
+                    <g id="BG" transform="translate(-20.000000, -25.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <path stroke="#FFFFFF" stroke-width="5" d="M20,-2.5 C13.7867966,-2.5 8.16179656,0.0183982822 4.09009742,4.09009742 C0.0183982822,8.16179656 -2.5,13.7867966 -2.5,20 L-2.5,80 C-2.5,100.020375 5.61483157,118.145388 18.7347908,131.265302 C31.8547252,144.38519 49.97977,152.5 70.0002438,152.5 C90.0204999,152.5 108.145449,144.385168 121.26533,131.265242 C134.385192,118.145334 142.5,100.020345 142.5,80 L142.5,20 C142.5,15.7966146 141.466177,11.8231318 135.884138,8.36212299 C132.073619,5.99950292 125.826879,3.84946754 115.58772,2.14294114 C98.2437756,-0.747716272 69.0318548,-2.5 20,-2.5 Z"></path>
+                        <g id="Colors/Microsoft-365/BG-Gradient-4" mask="url(#mask-2)" fill="url(#linearGradient-3)">
+                            <rect id="Rectangle" x="0" y="0" width="140" height="150"></rect>
+                        </g>
+                    </g>
+                    <g id="Border" transform="translate(-20.000000, -25.000000)">
+                        <mask id="mask-5" fill="white">
+                            <use xlink:href="#path-4"></use>
+                        </mask>
+                        <use fill="#000000" fill-rule="nonzero" xlink:href="#path-4"></use>
+                        <g id="Colors/Microsoft-365/Border" mask="url(#mask-5)" fill="#0076D7">
+                            <rect id="Microsoft-365/Border" x="0" y="0" width="140" height="150"></rect>
+                        </g>
+                    </g>
+                </g>
+                <g id="Cloud-White" filter="url(#filter-6)" transform="translate(6.967400, 0.000000)" fill="url(#linearGradient-7)" fill-rule="nonzero">
+                    <g id="Group-31" transform="translate(0.032600, 0.000000)">
+                        <g id="Icon-migrate-281-Azure-Migrate">
+                            <path d="M84.3855422,41.7136188 C84.0956584,32.2893514 77.1249753,24.4642611 67.9158122,23.2251689 C67.3486117,9.95484773 56.3793726,-0.389063987 43.2985127,0.0112366597 C32.9402381,-0.0989404426 23.6275859,6.39939624 20.0197424,16.2550824 C8.78967881,17.5798474 0.244102134,27.1106802 0,38.5829867 C0.657381857,51.3301368 11.1709683,61.2427021 23.7443457,60.9699596 L64.4821936,60.9699596 L65.5297383,60.9699596 C75.9228105,60.8100538 84.2919557,52.2631304 84.3855422,41.7136188 L84.3855422,41.7136188 Z" id="Path"></path>
+                        </g>
+                    </g>
+                </g>
+                <g id="Group-5" transform="translate(16.000000, 65.000000)">
+                    <g id="Group-4">
+                        <g id="Group-2" filter="url(#filter-8)">
+                            <line x1="11.7755102" y1="0" x2="11.7755102" y2="15" id="Path-15" stroke="#FFFFFF" stroke-width="2.5"></line>
+                            <rect id="Rectangle" fill="#F3F3F3" x="0.275510204" y="10" width="23" height="13" rx="1"></rect>
+                            <rect id="Rectangle" fill="url(#linearGradient-9)" x="14" y="14" width="5" height="5"></rect>
+                            <rect id="Rectangle" fill="url(#linearGradient-9)" x="5" y="14" width="5" height="5"></rect>
+                            <line x1="54.7755102" y1="0" x2="54.7755102" y2="15" id="Path-15" stroke="#FFFFFF" stroke-width="2.5"></line>
+                            <line x1="33.7755102" y1="0.460526316" x2="33.7755102" y2="35" id="Path-15" stroke="#FFFFFF" stroke-width="2.5"></line>
+                        </g>
+                        <rect id="Rectangle" fill="#F3F3F3" x="43.2755102" y="10" width="23" height="13" rx="1"></rect>
+                        <rect id="Rectangle" fill="url(#linearGradient-9)" x="57" y="14" width="5" height="5"></rect>
+                        <rect id="Rectangle" fill="url(#linearGradient-9)" x="48" y="14" width="5" height="5"></rect>
+                        <rect id="Rectangle" fill="#F3F3F3" x="23" y="30" width="22" height="13" rx="1"></rect>
+                        <rect id="Rectangle" fill="url(#linearGradient-9)" x="36" y="34" width="5" height="5"></rect>
+                        <rect id="Rectangle" fill="url(#linearGradient-9)" x="27" y="34" width="5" height="5"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

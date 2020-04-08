@@ -6,6 +6,6 @@ In this module you will understand the two methods for connecting remotely to Az
 You will also see how to back up Azure VMs using a couple of the recommended methods:
 
 * **Single Azure VM:** Directly from the VM settings in the Azure portal. 
-* **Multiple Azure VMs:** Set up a Recovery Services vault and configure backup for multiple Azure VMs.
+* **Multiple Azure VMs:** Set up a Recovery Services vault and configure backup for multiple Azure VMs. 
 
 Lastly, you will see how to define a disaster recovery approach for  running SAP workloads in Azure.

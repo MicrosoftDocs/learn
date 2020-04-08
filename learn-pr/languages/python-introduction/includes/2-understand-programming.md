@@ -1,65 +1,113 @@
-Let's start at the beginning and talk about programming in general; what is a programming language?  How does a programming language help humans communicate commands to the computer?
+We'll start by talking about programming in general. What is a programming language? How does a programming language help you communicate commands to a computer?
 
-## Software versus hardware
+## Hardware vs. software
 
-Most of us understand that there's two sides to our computers and devices like phones and tablets: hardware and software.  
+Most of us understand that there are two sides to our computers and devices like phones and tablets: hardware and software.
 
-**Hardware** describes the physical components that accept input, processes that input, and emits output.  Hardware might include a Central Processing Unit (CPU), Random Access Memory (RAM) for short-term storage, a hard drive for long-term storage, a screen, a microphone, connector ports like a headphone jack or USB port, and so on.
+_Hardware_ describes the physical components that accept input, process that input, and emit output. Hardware might include:
 
-**Software** describes the electronic instructions that tell the hardware what to do.  Types of software include the Operating System (OS) that provides a foundation for interacting with the device, as well as games, word processors, spreadsheets, web browsers and so on.  We often refer to software as **programs**.
+- A central processing unit (CPU).
+- Random-access memory (RAM) for short-term storage.
+- A hard drive for long-term storage.
+- A screen.
+- A microphone.
+- Connector ports like headphone jacks and USB ports.
+
+_Software_ describes the electronic instructions that tell the hardware what to do. Types of software include:
+
+- Operating systems that provide a foundation for device interaction.
+- Games.
+- Word processors.
+- Spreadsheets.
+- Web browsers.
+
+People often refer to software as _programs_.
 
 ## What is a program?
 
-A program is a set of instructions that perform one or more computing tasks.  These instructions are compiled into a format that the computer can understand, and can be initiated, or rather, _executed_, by a user.  The term _user_ could mean a human user or another program, depending on the situation.
+A program is a set of instructions that do computing tasks. These instructions are compiled into a format that a computer understands. The compiled instructions are initiated or _run_ by a user. The term _user_ can mean either a human or another program.
 
-Once initiated, the computer's Central Processing Unit (CPU) executes each instruction in the program line by line, saving or retrieving information to and from temporary or permanent storage, performing calculations or manipulations of the data, displaying information to a screen, or communicating with other programs via a network connection. 
+The computer's CPU runs each instruction in the program line by line. The CPU:
 
-Even the most basic program will perform one or more of the following tasks:
+- Saves and retrieves information, which is in temporary or permanent storage.
+- Calculates and manipulates data.
+- Displays information on a screen.
+- Communicates with other programs via a network connection.
 
-- **Input** - Input includes accepting information from a user typing on a keyboard, clicking on a user interface, data stored in a file, or communication from a network connection.
-- **Processing** - Processing includes performing logic, mathematical formulas, or some other manipulation or calculation of the input to produce new data.
-- **Output** - Output includes information displayed on screen to a user, or saved to a file, or sent to another program via a network connection.
+Even the most basic program will do one or more of the following tasks:
 
-A program could be a fully self-enclosed _application_ like a game, a text editor, or billing software.  Or a program could be a _script_ that executes inside of another program to automate some functionality, like a sophisticated macro.  Or a program could be a combination of live code, equations and visualizations of data when used in Jupyter Notebooks.  Python is frequently used for all of these purposes.
+- **Input** - Input includes information:
+  - Accepted from a user typing on a keyboard or clicking on a user interface.
+  - Stored as data in a file.
+  - Communicated from a network connection.
+- **Processing** - Processing includes:
+  - Performing logic.
+  - Calculation of mathematical formulas.
+  - Other manipulation or calculation of input to produce new data.
+- **Output** - Output includes information:
+  - Displayed on a screen to a user.
+  - Saved to a file.
+  - Sent to another program via a network connection.
 
-Some programs only require a single line of code, or just a dozen lines of code, like many of the programs we'll build as we get started.  Other programs require tens of thousands, or even a million lines of code, like Operating Systems and other sophisticated programs.
+A program can be:
 
-Some programs are small enough that they can be built by a single software developer.  Other programs are so large and complex that they must be built and maintained by dozens or hundreds of developers each working on some small part of the whole.
+- A fully self-enclosed app like a game, a text editor, or billing software.
+- A script like a sophisticated macro that executes inside another program to automate some functionality.
+- A combination of live code, equations, and data visualizations used in Jupyter notebooks.
+
+Python is frequently used for all of these purposes.
+
+Some programs, including many you'll build as we get started, require at most a dozen lines of code. But sophisticated programs like operating systems require tens of thousands or even a million lines of code.
+
+Some programs are small enough that a single software developer can build them. Others are so large and complex that dozens or even hundreds of developers build and maintain them. In that case, each developer works on some small part of the whole.
 
 ### What is programming?
 
-**Programming** is the act of writing instructions for a computer to create an application or script.  Some people use different terms to describe programming, including "coding", and "developing".
+_Programming_ is the act of writing instructions for a computer to create an app or script. Some people use different terms like _coding_ or _developing_ to describe programming.
 
-A _programmer_ is someone who writes those instructions using a **programming language** like Python.  Synonyms for programmer include "coder", "software developer", and "developer".
+A _programmer_ is someone who writes those instructions using a programming language like Python. Synonyms for programmer include _coder_, _software developer_, and _developer_.
 
 ### What is a programming language?
 
-Programming languages like Python allow you to write instructions that you want the computer to carry out. Each programming language has a different **syntax**, but after you learn your first programming language and then attempt to learn a second one, you'll quickly realize that they all share many similar ideas. A programming language's job is to enable a human to write instructions in a human-readable and understandable way. The instructions you write in a programming language is called "source code", or just "code".
+Programming languages like Python let you write instructions that you want a computer to carry out.
 
-The source code can be understood and modified by a software developer, but the computer can't understand or execute the source code. The source code must be compiled into a format that the computer can understand.  We'll talk about compilation, interpretation, and execution in a few moments.
+Each programming language has a different syntax. But after you learn your first programming language and then attempt to learn another one, you'll quickly realize they all share many similar ideas.
+
+A programming language lets someone write instructions in a way that's readable and understandable by humans. The instructions you write in a programming language are called _source code_ or just _code_.
+
+A software developer understands and modifies source code. But a computer can't understand or run source code. The source code must be compiled into a format that the computer understands. We'll talk about compilation, interpretation, and execution later in this module.
 
 ### What is syntax?
 
-The **syntax** of a programming language includes the keywords, the operators (those special keyboard characters like the parenthesis or equals sign), and other grammar rules. Even a simple line of Python code may follow a dozen different syntax rules and several different operators.  
+The _syntax_ of a programming language includes keywords, operators, and grammar rules. Operators are special characters like parentheses and the equal sign. A simple line of Python code might follow a dozen different syntax rules and use several different operators.
 
-Many programming languages use English words and phrases as keywords.  Python, too, uses English words as keywords, such as `if`, `return`, `while`, and `import`.  Fortunately, there are fewer than 40 keywords in Python, so you don't need to know English before you can get started with Python.
+Many programming languages use English words and phrases as keywords. Python uses English words like **if**, **return**, **while**, and **import** as keywords. Fortunately, there are fewer than 40 keywords in Python, so you don't need to know English before you can start with Python.
 
-To become fluent in any language, you need to learn and practice vocabulary and new concepts.  Learning a programming language is no exception.  While there's much to learn, fortunately each concept is simple on its own. Don't give up! You can learn it!
+To become fluent in any language, you need to learn and practice new vocabulary and concepts. Learning a programming language is no exception. For any language, there's much to learn. Fortunately, each concept is simple on its own. Don't give up! You can learn it!
 
-### Why are there so many programming languages?  
+### Why are there so many programming languages?
 
-There are dozens of different programming languages.  Over the years, programmers have discovered that the available programming languages don't give them the flexibility, control, or ease of use for a particular need and decide to craft their own.
+There are dozens of different programming languages. Programmers have discovered that available languages don't always offer needed flexibility, control, and ease of use. So they decide to craft their own.
 
-Python was created to simplify the creation of software by masking more complex interactions with the hardware.  The tradeoff is that Python offers less control over those complex interactions, meaning that Python may not be ideal for some processor intensive applications.
+Python was created to simplify software development by masking more complex interactions with the hardware. The tradeoff is that Python offers less control over those interactions. So Python might not be ideal for some processor-intensive apps.
 
-Other programming languages provide greater control over complex interactions with the hardware and if used properly can yield better performance, but are more difficult to understand. Many software applications don't require this degree of optimization to improve performance.
+Other programming languages provide greater control over complex interactions with the hardware. If used properly, they can yield performance better than Python's. But they can be more difficult to understand. Many software apps don't require this degree of optimization to improve performance.
 
 ### Should I learn Python first?
 
-With so many options, you might wonder if you're making the right choice about starting your programming career with Python.  Python is a beginner-friendly language.  You'll learn how to employ basic logic, program structure, how to build expressions and statements, how to work with data, and more.  Many of the syntax elements and other concepts are similar across all programming languages, so starting with a beginner-friendly language can be a great first step.  Later, you can add a second or third programming language.  You then can focus on just those parts of the new language that are different from Python, which will give you a great head-start.
+With so many options, you might wonder if you're making the right choice by starting your programming career with Python.
 
-Furthermore, there's a strong demand for Python skills across a wide range of industries.
+Python is a language friendly to beginners. Among other things, you'll learn how to:
 
-There's plenty of learning resources available for Python, including this Learning Path, as well as videos, articles, books and more.  It's well supported, and if you run into a problem, there are many communities of experienced developers who are willing to help you get unstuck.
+- Employ basic logic.
+- Create program structure.
+- Build expressions and statements.
+- Work with data.
+
+Many of the syntax elements and other concepts are similar for all programming languages. Starting with a language friendly to beginners is a great first step. Later, you can add more programming languages. You'll then focus on just those parts of the new languages that differ from Python.
+
+Furthermore, there's a strong demand for Python skills in a wide range of industries.
+
+Plenty of learning resources are available for Python. Resources include this Learning Path, videos, articles, and books. Python is also well supported. If you run into a problem, there are many communities of experienced developers who are willing to help you solve the problem.
 
 So yes, if you're looking to get started in programming, Python is a great choice.

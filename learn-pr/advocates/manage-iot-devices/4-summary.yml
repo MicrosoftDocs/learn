@@ -1,29 +1,27 @@
 ### YamlMime:ModuleUnit
 uid: learn.manage-iot-devices.4-summary
 metadata:
-  title: Summary
-  description: Summary
-  author: lnyswonger
-  ms.date: 09/24/2018
-  ms.author: luken
+  description: Summarizes what you have learnt in this module, describes some next steps, and finishes with a short knowledge check.
+  author: WirelessLife
+  ms.date: 03/30/2020
+  ms.author: abartolo
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 title: Summary
-durationInMinutes: 7
+durationInMinutes: 4
 content: |
   [!include[](includes/4-summary.md)]
 quiz:
   title: Check your knowledge
   questions:
-  - content: "True or false: IoT Hub is an Azure service that enables back-end developers to build device management solutions?"
+  - content: "True or false: IoT Hub is an Azure service that enables back-end developers to build remote device management solutions?"
     choices:
     - content: "True"
       isCorrect: true
-      explanation: "Azure IoT Hub provides features and an extensibility model that enables device and back-end developers to build robust device management solutions. Devices range from constrained sensors and single purpose microcontrollers, to powerful gateways that route communications for groups of devices."
+      explanation: "Devices range from sensors, to powerful gateways that route communications for groups of devices."
     - content: "False"
       isCorrect: false
-      explanation: "Azure IoT Hub provides features and an extensibility model that enables device and back-end developers to build robust device management solutions. Devices range from constrained sensors and single purpose microcontrollers, to powerful gateways that route communications for groups of devices."    
+      explanation: "Devices range from sensors, to powerful gateways that route communications for groups of devices."    
 
   - content: "True or false: you can't receive telemetry data in the Azure portal when using the Raspberry Pi Azure IoT Simulator?"
     choices:
@@ -34,4 +32,32 @@ quiz:
       isCorrect: true
       explanation: "Even though you're not using physical hardware, you can still receive telemetry data when using the Raspberry Pi Azure IoT Simulator."  
 
+  - content: "Which two metrics are shown by default in the Overview page for your IoT hub?"
+    choices:
+    - content: 'Properties and Settings'
+      isCorrect: false
+      explanation: Properties and Setting are left-hand menu entries, not metrics.
+    - content: 'Device to cloud messages, and Cloud to device messages'
+      isCorrect: false
+      explanation: There are a range of metrics for messages going either way, but cloud to device messages aren't shown by default.
+    - content: "Telemetry data sent, and Successful twin reads from back end"
+      isCorrect: true
+      explanation: For a single device, the first metric might show a few hundred messages, and the second metric will show 1.
+    - content: "Device to cloud messages, and Device twin operations"
+      isCorrect: false
+      explanation: Close, these phrases are the titles of the tiles, not the names of the metrics.
 
+  - content: 'What left-hand menu option do you select to view the hub keys?'
+    choices:
+    - content: 'IoT devices'
+      isCorrect: false
+      explanation: This entry will give you the device keys, but not the hub keys.
+    - content: 'Shared access policies'
+      isCorrect: true
+      explanation: The keys are displayed by clicking on a policy, such as iothubowner.
+    - content: 'Properties'
+      isCorrect: false
+      explanation: This entry provides information on names, location, subscription, and so on. But not the keys.
+    - content: 'Security'
+      isCorrect: false
+      explanation: This entry provides information on threat prevention, and resource health.

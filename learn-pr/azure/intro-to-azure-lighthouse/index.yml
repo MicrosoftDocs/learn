@@ -8,7 +8,7 @@ metadata:
   ms.author: v-geo
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Use Azure Lighthouse with your managed business service
+title: Use Azure Lighthouse with your managed service business
 summary: Learn about and adopt Azure Lighthouse for your managed service business to manage your customers at scale.
 abstract: | 
   In this module, you will:
@@ -36,3 +36,4 @@ units:
 - learn.intro-to-azure-lighthouse.7-summary
 badge:
   uid: learn.intro-to-azure-lighthouse.badge
+  

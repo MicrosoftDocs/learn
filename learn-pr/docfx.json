@@ -309,9 +309,6 @@
             "uhfHeaderId": "MSDocsHeader-Learn"
         },
         "fileMetadata": {
-            "brand": {
-                "azure/**/*.yml": "azure"
-            },
             "sandbox-disabled": {},
             "localization_scopes": {
                 "azure/**/*.yml": [
