@@ -16,7 +16,7 @@ The Core Tools feature a variety of functions-related capabilities, but their pr
 
 The Core Tools are packaged as a single command-line utility named `func`. If you run `func` from the command line without any additional commands, it will display version information and a usage guide. You don't need to read it now, but here's what it looks like:
 
-![A portion of the help text output by `func`](../media/2-func-help-output.png)
+:::image type="content" source="../media/2-func-help-output.png" alt-text="A portion of the help text output by func." loc-scope="other":::
 
 The Core Tools are standalone utilities, not an extension of a larger integrated development environment or tool. You can accomplish the above tasks with nothing but the command line and the Core Tools, and use any text editor you like to write code and modify configuration. In practice, you'll also need the Azure CLI or Azure PowerShell to log in to Azure and perform other management tasks.
 
@@ -50,7 +50,7 @@ With the Azure Functions Core Tools, you'll never need to do this! You can use t
 
 To create a new functions project, run `func init` on the command line.
 
-![Output from `func init` creating a JavaScript function project](../media/2-func-init-output.png)
+:::image type="content" source="../media/2-func-init-output.png" alt-text="Output from func init creating a JavaScript function project." loc-scope="other":::
 
 `func init` will ask you which language runtime you'd like to use for the app and tailor the project folder's contents appropriately.
 
@@ -65,7 +65,7 @@ Functions projects that `func init` generates don't have any functions in them. 
 
 Each individual function in a project requires code and configuration to define its behavior. Running `func new` in a functions project folder will create a new function and all the files you need to get started developing.
 
-![Output from `func new` creating a JavaScript function](../media/2-func-new-output.png)
+:::image type="content" source="../media/2-func-new-output.png" alt-text="Output from func new creating a JavaScript function." loc-scope="other":::
 
 After asking you which kind of function trigger you want to use and what you'd like to name your function, `func new` will generate a complete, publish-ready starter implementation in your function project's chosen language. The starter code illustrates how to use the type of trigger you selected and is there to help you get started quickly: just replace the body of the function with your own implementation, and you're ready to build, run, test and publish.
 
@@ -79,4 +79,4 @@ You can use the Core Tools to run your own instance of the functions host and tr
 
 To start the functions host locally, run `func start` from a functions project folder. At the end of the output, the Core Tools will display local URLs you can use to call of each of your functions. While the host is running, you can use any tools or libraries that make HTTP calls, like `curl`, to interact with your functions. The Core Tools will write any log output produced by the host to the terminal in real time.
 
-![`func start` output showing a function invocation URL](../media/2-func-start-output.png)
+:::image type="content" source="../media/2-func-start-output.png" alt-text="func start output showing a function invocation URL." loc-scope="other":::

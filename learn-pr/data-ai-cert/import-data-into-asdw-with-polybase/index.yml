@@ -26,7 +26,7 @@ roles:
 - solution-architect
 products:
 - azure
-- azure-sql-data-warehouse
+- azure-synapse-analytics
 units:
 - learn.data-ai.import-data-into-asdw-with-polybase.introduction
 - learn.data-ai.import-data-into-asdw-with-polybase.introduction-to-polybase

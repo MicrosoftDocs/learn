@@ -1,0 +1,27 @@
+- Virtualizing a physical CPU (pCPU) involves: (1) timesharing the pCPU among virtual CPUs (vCPUs) contained and executed in VMs (called _vCPU scheduling_) and (2) virtualizing the ISA of the pCPU to make it amenable to host vCPUs with different ISAs.
+- A vCPU acts as a proxy to a pCPU.
+- In principle, a VM can have one or many vCPUs.
+- A VM that includes more than one vCPU is called a _symmetric multiprocessing_ _(SMP) VM_, while a VM with one vCPU is called a _uniprocessor (UP) VM_.
+- In principle, hypervisors can support three levels of scheduling: _process_, _thread_, and _vCPU scheduling_.
+- Examples of vCPU schedulers are _Simple Earliest Deadline First_ (SEDF) and _Credit Scheduler_ (CS) from Xen.
+- In addition to vCPU scheduling, virtualizing a pCPU requires virtualizing the instructions defined in its ISA.
+- Instructions in ISAs can generally be classified into two types: _privileged_ and _unprivileged_ instructions.
+- A privileged instruction is defined as one that _traps_ in user mode and does not trap in system mode.
+- Instructions can be further classified into two different categories: _sensitive_ and _innocuous_. 
+- Sensitive instructions can be either _control sensitive_ or _behavior sensitive._
+- Control-sensitive instructions are those that attempt to modify the configuration of resources in a system (e.g., LPSW from IBM System/370).
+- Behavior-sensitive instructions are those whose behaviors are determined by the current configuration of resources in a system (e.g., POPF from Intel IA-32).
+- When the instruction is neither control sensitive nor behavior sensitive, it is innocuous.
+- Sensitive instructions can be privileged (e.g., LPSW) and unprivileged (e.g., POPF).
+- Popek and Goldberg (1974) suggested that a hypervisor can be constructed only if the set of sensitive instructions is a subset of the set of privileged instructions (i.e., sensitive instructions always trap in the user mode).
+- A problem arises when instructions that are sensitive but unprivileged are issued in VMs running in user mode (i.e., they will not trap as such).
+- The instructions that are sensitive and unprivileged are called _critical instructions_.
+- A hypervisor can still be constructed for ISAs that contain critical instructions. 
+- Constructing a hypervisor with the presence of critical instructions can be achieved using _code patching_, _full virtualization_, and/or _paravirtualization._
+- Code patching replaces all critical instructions with system calls to the hypervisor, thus enforcing them to trap.
+- Full virtualization emulates all instructions in the ISA.
+- Emulation is a popular technique in virtualizing CPUs. It allows the interfaces and functionalities of one system (the _source_) to be implemented on a system with different interfaces and functionalities (the _target_).
+- Emulation can be implemented using either _interpretation_ or _binary translation_.
+- Interpretation techniques (e.g., _decode and dispatch_, _indirect threaded_, and _direct threaded_) translate source instructions to target instructions one at a time, while binary translation converts blocks of source instructions to target instructions and caches them for repeated use.
+- Paravirtualization rewrites every critical instruction as a _hypercall_ that traps to the hypervisor (which typically requires modifying guest OSs).
+- As concrete examples, VMware uses full virtualization, while Xen employs paravirtualization.

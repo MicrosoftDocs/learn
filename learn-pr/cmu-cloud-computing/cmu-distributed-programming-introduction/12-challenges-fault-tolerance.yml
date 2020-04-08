@@ -1,0 +1,41 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-computing.distributed-programming.introduction.12-challenges-fault-tolerance
+title: 'Cloud challenges: Fault tolerance'
+metadata:
+  title: 'Cloud challenges: Fault tolerance'
+  description: Learn about fault-tolerance challenges in building cloud programs.
+  ms.date: 03/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 11
+content: |
+  [!include[](includes/12-challenges-fault-tolerance.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+# Did I Get This block uses an image "quiz-fault-tolerance.png".
+  - content: "Consider the actions performed by the processes P and Q in the following figure:<ul>
+              <li>Arrows denote the messages that are passed between the processes.</li>
+              <li>P<sub>1</sub> through P<sub>5</sub> denote the checkpoints of P.</li>
+              <li>Q<sub>1</sub> through Q<sub>3</sub> denote the checkpoints of Q.</li></ul>
+              <img src=./media/quiz-fault-tolerance.png></img> <br>
+              What checkpoints at P and Q form a recovery line that processes P and Q can roll back to?"
+    choices:
+    - content: "P<sub>3</sub> and Q<sub>2</sub>"
+      isCorrect: true
+      explanation: "Correct! There are no messages sent between P and Q in between checkpoints P<sub>3</sub> and Q<sub>2</sub>. The checkpoint leads to a consistent state from which the system can recover."
+    - content: "P<sub>1</sub> and Q<sub>1</sub>"
+      isCorrect: false
+      explanation: "Incorrect. A number of messages are sent between P and Q, so a recovery line can't be formed. The recovery line needs to be consistent with respect to the states of the processes. Find one
+                where no messages are passed in the time between the recovery points."
+    - content: "P<sub>5</sub> and Q<sub>3</sub>"
+      isCorrect: false
+      explanation: "Incorrect. A number of messages are sent between P and Q, so a recovery line can't be formed. The recovery line needs to be consistent with respect to the states of the processes. Find one
+                where no messages are passed in the time between the recovery points."
+    - content: "P<sub>2</sub> and Q<sub>2</sub>"
+      isCorrect: false
+      explanation: "Incorrect. A number of messages are sent between P and Q, so a recovery line can't be formed. The recovery line needs to be consistent with respect to the states of the processes. Find one
+                where no messages are passed in the time between the recovery points."
