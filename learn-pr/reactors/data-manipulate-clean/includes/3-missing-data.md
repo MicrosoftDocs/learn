@@ -254,7 +254,7 @@ The output looks like this:
 
 <details><summary>How might you go about dropping just column 3?</summary>
   
-<p>Hint: Remember that you will need to supply both the axis parameter and the `how` parameter.
+<p>Hint: Remember that you will need to supply both the axis parameter and the <code>how</code> parameter.
 
 You can add code, too:
 
