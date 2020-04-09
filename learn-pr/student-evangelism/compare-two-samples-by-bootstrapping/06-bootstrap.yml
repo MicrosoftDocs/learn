@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.compare-two-samples-by-bootstrapping.bootstrap
+title: Bootstrap
+metadata:
+  title: Bootstrap
+  description: '** TODO: FILL IN **'
+  ms.date: 19/03/2020
+  author: sauravmittal
+  ms.author: leescott
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/06-bootstrap.md)]
