@@ -53,9 +53,7 @@ df.describe()
 
 Here's the output, which shows all the values:
 
-
 ![A screenshot that shows the output of running df.describe()](../media/df-describe.png)
-
 
 Because a dataset can have only so many columns, often it can be useful to transpose the results of `DataFrame.describe` to use them better.
 
@@ -293,7 +291,7 @@ groupby_twovar.unstack()
 
 Here's the output:
 
-ktoliver TO DO/in progress
+![A screenshot that shows the output of running groupby_twovar](../media/groupby-twovar.png)
 
 ### Try it yourself
 

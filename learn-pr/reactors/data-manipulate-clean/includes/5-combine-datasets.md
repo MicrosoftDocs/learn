@@ -157,25 +157,25 @@ Here's the output:
 | 5 | HR         | organization  |
 ```
 
-Then, run this command in a cell:
+Then, run this code in a cell:
 
 ```python
 pd.merge(df1, df5, on='group')
 ```
 
-Here's the output:
+This output is returned:
 
 ```output
-|   | empoyee |  group     | core_skills   |
+|   | employee | group      | core_skills   |
 --------------------------------------------
-| 0 | Gary    | Accounting | math          |
-| 1 | Gary    | Accounting | spreadsheets  |
-| 2 | Stu     | Marketing  | writing       |
-| 3 | Stu     | Marketing  | communication |
-| 4 | Mary    | Marketing  | writing       |
-| 5 | Mary    | Marketing  | communication |
-| 6 | Sue     | HR         | spreadsheets  |
-| 7 | Sue     | HR         | organization  |
+| 0 | Gary     | Accounting | math          |
+| 1 | Gary     | Accounting | spreadsheets  |
+| 2 | Stu      | Marketing  | writing       |
+| 3 | Stu      | Marketing  | communication |
+| 4 | Mary     | Marketing  | writing       |
+| 5 | Mary     | Marketing  | communication |
+| 6 | Sue      | HR         | spreadsheets  |
+| 7 | Sue      | HR         | organization  |
 ```
 
 Again, to avoid ambiguity about which column to join on, it's a good idea to explicitly tell `merge` which one to use with the `on` parameter.
@@ -225,7 +225,7 @@ Using the documentation, can you figure out how to use `.drop()` to get rid of t
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
   
-You will need to supply two parameters to `.drop()`.
+You will need to supply two parameters to <code>.drop()</code>.
 </details>
 
 ## left_index and right_index keywords
@@ -249,14 +249,14 @@ Here's the output:
 | Sue      | HR         | 
 ```
 
-Next, run this command in a cell:
+Next, run this code in a cell:
 
 ```python
 df2a = df2.set_index('employee')
 df2a
 ```
 
-Here's the output:
+This output is returned:
 
 ```output
 |          | hire_date | 
@@ -300,13 +300,13 @@ Add hint... TBD.
 </details>
 
 
-You can also use the join method for DataFrames, which produces the same effect but merges on indices by default:
+You can also use the `join` method for DataFrames, which produces the same effect but merges on indices by default:
 
 ```python
 df1a.join(df2a)
 ```
 
-Here's the output:
+This output is returned:
 
 ```output
 |          | group      | hire_date |
@@ -355,6 +355,8 @@ Here's the output:
 | 2 | Sales       | communication |
 ```
 
+Run this code in a cell:
+
 ```python
 pd.merge(df1, df5, on='group')
 ```
@@ -392,7 +394,7 @@ The complement of the inner join is the outer join, which returns the union of t
 > [!NOTE]
 > **To Sarah** - TBD: Could you provide the hints or solutions for the two exercises in this "try it"?
 
-The keyword for perfoming an outer join is `how='outer'`. How would you perform it?
+The keyword for perfoming an outer join is `how`='outer'. How would you perform it?
 
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
@@ -408,7 +410,6 @@ What do you expect the output of an outer join of df1 and df5 to be?
   
 Add hint... TBD.
 </details>
-
 
 
 Notice in your resulting DataFrame that not every row in df1 and df5 had a value that corresponds to the union of the key values (the **group** column). Pandas fills in these missing values with NaNs.
@@ -472,7 +473,7 @@ Here's the output:
 | 3 | Sue  | 4    | 
 ```
 
-Next, run this command in a cell:
+Next, run this code in a cell:
 
 ```python
 df8 = pd.DataFrame({'name': ['Gary', 'Stu', 'Mary', 'Sue'],
@@ -492,7 +493,7 @@ Here's the output:
 | 3 | Sue  | 2    | 
 ```
 
-Next, run this command in a cell:
+Run this code in a cell:
 
 ```python
 pd.merge(df7, df8, on='name')
@@ -566,7 +567,7 @@ Notice that the `axis=1` parameter makes the concatenation occur along columns r
 
 ## Concatenation in pandas
 
-pandas has a function, `pd.concat()` that can be used for a simple concatenation of `Series` or `DataFrame` objects similar to `np.concatenate()` with `ndarrays`.
+pandas has a function, `pd.concat()` that can be used for a simple concatenation of Series or DataFrame objects similar to `np.concatenate()` with `ndarrays`.
 
 ```python
 ser1 = pd.Series(['a', 'b', 'c'], index=[1, 2, 3])
@@ -603,7 +604,7 @@ Here's the output:
 | 1 | c | d | 
 ```
 
-Run this command in a cell:
+Run this code in a cell:
 
 ```python
 pd.concat([df9, df9])
@@ -674,7 +675,7 @@ Here's the output:
 | 1 | d | e | f |
 ```
 
-Run this command in a cell:
+Run this code in a cell:
 
 ```python
 df11 = pd.DataFrame({'B': ['u', 'x'],
@@ -692,7 +693,7 @@ Here's the output:
 | 1 | x | y | z |
 ```
 
-Run this command in a cell:
+Run this code in a cell:
 
 ```python
 pd.concat([df10, df11])
@@ -746,7 +747,7 @@ Here's the output:
 
 ### `append()`
 
-Because direct array concatenation is so common, `Series` and `DataFrame` objects have an `append` method that can accomplish the same thing in fewer keystrokes. For example, rather than calling `pd.concat([df9, df9])`, you can call `df9.append(df9)`:
+Because direct array concatenation is so common, Series and DataFrame objects have an `append` method that can accomplish the same thing in fewer keystrokes. For example, rather than calling `pd.concat([df9, df9])`, you can call `df9.append(df9)`:
 
 ```python
 df9.append(df9)
