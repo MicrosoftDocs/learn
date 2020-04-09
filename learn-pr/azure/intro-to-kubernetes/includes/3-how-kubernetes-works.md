@@ -122,7 +122,7 @@ Kubernetes pods have a distinct lifecycle that impacts the way you deploy, run, 
 
 You start by submitting the pod YAML manifest to the cluster. Once submitted and persisted to the cluster, the manifest file defines the desired state of the pod. The Scheduler schedules the pod to a healthy node with enough resources to run the pod.
 
-:::image type="content" source="../media/3-pod-lifecycle.png" alt-text="Diagram that shows the lifecycle of the pod." border="false":::
+:::image type="content" source="../media/3-pod-lifecycle.svg" alt-text="Diagram that shows the lifecycle of the pod." border="false":::
 
 Let's look at the phases in a pod lifecycle.
 
