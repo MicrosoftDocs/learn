@@ -1,0 +1,34 @@
+### YamlMime:Module
+uid: learn.student-evangelism.understand-the-normal-curve
+metadata:
+  title: Understand The Normal Curve
+  description: Learn
+  ms.date: 19/03/2020
+  author: sauravmittal
+  ms.author: leescott
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+title: Understand The Normal Curve
+summary: '** TODO: FILL IN **'
+abstract: |
+  In this module, you will:
+  - PLACEHOLDER
+prerequisites: None
+iconUrl: http://via.placeholder.com/120x120
+levels: 
+- beginner
+roles: 
+- data-scientist
+- student
+products: 
+- azure
+units: 
+- learn.student-evangelism.understand-the-normal-curve.introduction
+- learn.student-evangelism.understand-the-normal-curve.variability
+- learn.student-evangelism.understand-the-normal-curve.sd-and-the-normal-curve
+- learn.student-evangelism.understand-the-normal-curve.central-limit-theorem
+- learn.student-evangelism.understand-the-normal-curve.variability-of-the-sample-mean
+- learn.student-evangelism.understand-the-normal-curve.choosing-a-sample-size
+- learn.student-evangelism.understand-the-normal-curve.summary
+badge:
+  uid: learn.student-evangelism.understand-the-normal-curve.badge
