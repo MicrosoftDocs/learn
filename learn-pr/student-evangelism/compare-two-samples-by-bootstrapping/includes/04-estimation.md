@@ -9,9 +9,9 @@ import numpy as np
 
 ### Estimation
 
-In the previous chapter we began to develop ways of inferential
+In the previous chapter, we began to develop ways of inferential
 thinking. In particular, we learned how to use data to decide between
-two hypotheses about the world. But often we just want to know how big
+two hypotheses about the world. But often we just want to know how large
 something is.
 
 For example, in an earlier chapter we investigated how many warplanes
@@ -25,10 +25,10 @@ In this chapter, we will develop a way to *estimate* an unknown
 with a population.
 
 To figure out the value of a parameter, we need data. If we have the
-relevant data for the entire population, we can simply calculate the
+relevant data for the entire population, we can calculate the
 parameter.
 
-But if the population is very large -- for example, if it consists of
+But if the population is very large--for example, if it consists of
 all the households in the United States -- then it might be too
 expensive and time-consuming to gather data from the entire population.
 In such situations, data scientists rely on sampling at random from the
@@ -50,7 +50,7 @@ estimate based on a random sample, they are faced with a question:
 **"How different could this estimate have been, if the sample had come
 out differently?"**
 
-In this chapter you will learn one way of answering this question. The
+In this chapter, you will learn one way of answering this question. The
 answer will give you the tools to estimate a numerical parameter and
 quantify the amount of error in your estimate.
 
