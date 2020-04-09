@@ -8,7 +8,7 @@ Suppose you work at a drone management company. Your company provides a drone tr
 
 - A drone tracking website that includes maps and information about tracked drones.
 
-- A cache service that stores frequent requested information displayed on the website.
+- A cache service that stores frequently requested information displayed on the website.
 
 - A RESTful API where tracked drones send data about the drone status, such as a GPS location and battery charge levels.
 
@@ -26,8 +26,9 @@ Here, you'll see how Kubernetes makes it simple to orchestrate containerized app
 
 In this module, you will:
 
-- Evaluate whether Kubernetes is an appropriate orchestration platform for your workload.
-- Describe how the components of a Kubernetes cluster work and support compute container orchestration.
+- Evaluate whether Kubernetes is an appropriate orchestration platform for your workload
+- Describe the difference between master nodes and nodes in a Kubernetes cluster
+- Describe how the components of a Kubernetes cluster work and support compute container orchestration
 
 ## Prerequisites
 

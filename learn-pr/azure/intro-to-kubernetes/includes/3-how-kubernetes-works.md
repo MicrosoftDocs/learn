@@ -2,7 +2,7 @@ A successfully configured Kubernetes installation depends on a good understandin
 
 ### What is a computer cluster?
 
-:::image type="content" source="../media/3-diagram-cluster-tmp.png" alt-text="Diagram of computer cluster." border="false":::
+:::image type="content" source="../media/3-diagram-cluster.png" alt-text="Diagram of computer cluster." border="false":::
 
 A cluster is a set of computers that you configure to work together and view as a single system. The computers configured in the cluster will typically do the same kinds of tasks. For example, host websites, APIs, or run compute-intensive work.
 
@@ -12,7 +12,7 @@ A cluster uses centralized software that is responsible for scheduling and contr
 
 Recall from earlier, that an orchestrator is a system that deploys and manages applications. You also learned that a cluster is a set of computers that work together and viewed as a single system. You use Kubernetes as the orchestration and cluster software to deploy your apps and respond to changes in compute resource needs.
 
-:::image type="content" source="../media/3-cluster-arch-components-tmp.svg" alt-text="Diagram of a Kubernetes cluster architecture that shows the components installed on the control plane and the worker nodes." border="false":::
+:::image type="content" source="../media/3-cluster-arch-components.svg" alt-text="Diagram of a Kubernetes cluster architecture that shows the components installed on the control plane and the worker nodes." border="false":::
 
 A Kubernetes cluster contains at least one master and one or more nodes. Both the master and node instances can be physical devices, virtual machines, or instances in the cloud. The default host operating system in Kubernetes is Linux, with default support for Linux-based workloads. It is, however, also possible to run Microsoft workloads using Windows Server 2019 or later on cluster nodes. For example, let's assume the data processing service in the drone tracking application is written as a .NET 4.5 application that makes use of specific Windows OS API calls. This service can only execute on nodes that run a Windows Server OS.
 
@@ -106,11 +106,11 @@ A pod includes information about the shared storage and network configuration, a
 
 For example, assume you want to deploy a pod that contains a website to a Kubernetes cluster. You'll create the pod definition file that specifies the application container images and configuration. Then you deploy the pod definition file to Kubernetes.
 
-:::image type="content" source="../media/3-diagram-pod-with-website-tmp.svg" alt-text="Diagram of pod with a website as the primary container." border="false":::
+:::image type="content" source="../media/3-diagram-pod-with-website.svg" alt-text="Diagram of pod with a website as the primary container." border="false":::
 
 It's unlikely to see a web application that has a website as the only component in the solution. A web application typically has some kind of datastore and other supporting elements. Kubernetes Pods can also contain more than one container.
 
-:::image type="content" source="../media/3-diagram-pod-with-website-database-tmp.svg" alt-text="Diagram of pod with a website as the primary container and a supporting container. The node has both an assigned IP address and a localhost host address." border="false":::
+:::image type="content" source="../media/3-diagram-pod-with-website-database.svg" alt-text="Diagram of pod with a website as the primary container and a supporting container. The node has both an assigned IP address and a localhost host address." border="false":::
 
 Assume your site uses a database. Here the website is packaged in the main container and the database in the supporting container. For these two containers to function and communicate with each other, you expect them to run in an environment that provides a host OS, a network stack, kernel namespaces, shared memory, and volumes to persist data. The pod is the sandbox environment that provides all of these services to your application and allows the containers to share the pod's assigned IP address.
 
@@ -122,7 +122,7 @@ Kubernetes pods have a distinct lifecycle that impacts the way you deploy, run, 
 
 You start by submitting the pod YAML manifest to the cluster. Once submitted and persisted to the cluster, the manifest file defines the desired state of the pod. The Scheduler schedules the pod to a healthy node with enough resources to run the pod.
 
-:::image type="content" source="../media/3-pod-lifecycle-tmp.png" alt-text="Diagram that shows the lifecycle of the pod." border="false":::
+:::image type="content" source="../media/3-pod-lifecycle.png" alt-text="Diagram that shows the lifecycle of the pod." border="false":::
 
 Let's look at the phases in a pod lifecycle.
 
