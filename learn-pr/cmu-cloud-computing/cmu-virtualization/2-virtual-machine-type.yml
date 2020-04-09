@@ -31,7 +31,7 @@ quiz:
       isCorrect: false
       explanation: "Incorrect. The browser is simply another program running on the OS. It is not a system virtual machine. At what level does this virtualization engine run in this application?"
 
-  - content: "Connectix Virtual Game Station (CVGS) is a program developed by Connectix that allows PCs (typically running a 32-bit x26 processor or PowerPC architecture) to run video games designed to run on Sony PlayStation (running on a 32-bit MIPS processor). CVGS is compatible with Microsoft Windows and Mac OS. What kind of application is CVGS?"
+  - content: "Connectix Virtual Game Station (CVGS) is a program developed by Connectix that allows PCs (typically running a 32-bit x26 processor or PowerPC architecture) to run video games designed to run on Sony PlayStation (running on a 32-bit MIPS processor). CVGS is compatible with Windows and Mac OS. What kind of application is CVGS?"
     choices:
     - content: "A process virtual machine with hardware-assisted virtualization"
       isCorrect: false
@@ -43,7 +43,7 @@ quiz:
       isCorrect: false
       explanation: "Incorrect. CVGS is simply a program that runs on an OS. It allows, via emulation, the execution of video games compiled for an ISA different from that of the host machine. Do x86 and MIPS share the same ISA?"
 
-  - content: "VirtualBox is a popular hypervisor that allows users to run multiple OSs on a single machine. VirtualBox can run on top of Microsoft Windows, Linux, Mac OS, and Solaris. What kind of hypervisor is VirtualBox?"
+  - content: "VirtualBox is a popular hypervisor that allows users to run multiple OSs on a single machine. VirtualBox can run on top of Windows, Linux, Mac OS, and Solaris. What kind of hypervisor is VirtualBox?"
     choices:
     - content: "A hosted system virtual machine"
       isCorrect: true
