@@ -17,7 +17,7 @@ example1 = np.array([2, None, 6, 8])
 example1
 ```
 
-This is returned:
+This output is returned:
 
 ```output
 array([2, None, 6, 8], dtype=object)
@@ -33,7 +33,7 @@ Try it:
 example1.sum()
 ```
 
-This is returned:
+This output is returned:
 
 ```output
 ---------------------------------------------------------------------------
@@ -66,19 +66,19 @@ For example:
 np.nan + 1
 ```
 
-This is returned:
+This output is returned:
 
 ```output
 nan
 ```
 
-Run this in a cell:
+Run this code in a cell:
 
 ```python
 np.nan * 0
 ```
 
-This is returned:
+This output is returned:
 
 ```output
 nan
@@ -86,7 +86,7 @@ nan
 
 The good news: aggregations that are run on arrays that have **NaN** in them don't pop errors. The bad news: the results are not uniformly useful.
 
-Run this in a cell:
+Run this code in a cell:
 
 ```python
 example2 = np.array([2, np.nan, 6, 8]) 
@@ -120,7 +120,7 @@ int_series = pd.Series([1, 2, 3], dtype=int)
 int_series
 ```
 
-This is returned:
+This output is returned:
 
 ```output
 0    1
@@ -179,7 +179,7 @@ example3 = pd.Series([0, np.nan, '', None])
 example3.isnull()
 ```
 
-This is returned:
+This output is returned:
 
 ```output
 0    False
@@ -232,7 +232,7 @@ Note that this should look like your output from `example3[example3.notnull()]`.
 
 Because DataFrames have two dimensions, they afford more options for dropping data.
 
-Run this in a cell:
+Run this code in a cell:
 
 ```python
 example4 = pd.DataFrame([[1,      np.nan, 7], 
@@ -259,7 +259,7 @@ You can't drop a single value from a DataFrame—you have to drop full rows or c
 example4.dropna()
 ```
 
-This is returned:
+This output is returned:
 
 ```output
 |   | 0   | 1   | 2 | 
@@ -287,14 +287,14 @@ Notice that this can drop a lot of data that you might want to keep, particularl
 
 By default, `how`=*any*. (If you would like to check for yourself or see what other parameters the method has, run `example4.dropna?` in a code cell.) You could alternatively specify `how=all` to drop only rows or columns that contain all null values. Let's expand our example DataFrame to see this in action.
 
-Run this in a cell:
+Run this code in a cell:
 
 ```python
 example4[3] = np.nan
 example4
 ```
 
-This is returned:
+This output is returned:
 
 ```output
 |   | 0   | 1   | 2 | 3   |
@@ -316,13 +316,13 @@ Remember that you will need to supply both the axis parameter and the <code>how<
 
 The `thresh` parameter gives you more fine-grained control: you set the number of non-null values that a row or column needs to have in order to be kept:
 
-Run this in a cell:
+Run this code in a cell:
 
 ```python
 example4.dropna(axis='rows', thresh=3)
 ```
 
-This is returned:
+This output is returned:
 
 ```output
 |   | 0   | 1   | 2 | 3   |
@@ -336,7 +336,7 @@ Here, the first and last row were dropped because they contain only two non-null
 
 Depending on your dataset, sometimes it makes more sense to fill null values with valid ones rather than drop them. You could use `isnull` to do this in place, but that can be laborious, particularly if you have a lot of values to fill. Because this is such a common task in data science, pandas provides `fillna`, which returns a copy of the Series or DataFrame with the missing values replaced with one that you choose. Let's create another example Series to see how this works in practice.
 
-Run this in a cell:
+Run this code in a cell:
 
 ```python
 example5 = pd.Series([1, np.nan, 2, None, 3], index=list('abcde'))
@@ -408,7 +408,7 @@ You can also back-fill to propagate the next valid value backward to fill a null
 example5.fillna(method='bfill')
 ```
 
-This is returned:
+This output is returned:
 
 ```output
 a    1.0
@@ -435,7 +435,7 @@ The output looks like this:
 | 2 | NaN | 6.0 | 9 | NaN |
 ```
 
-To forward-fill null values in a DataFrame, run this in a cell:
+To forward-fill null values in a DataFrame, run this code in a cell:
 
 ```python
 example4.fillna(method='ffill', axis=1)
@@ -484,7 +484,7 @@ Add hint... TBD.
 
 You can be creative about how you use `fillna`. For example, let's look at `example4` again, but this time, we'll fill the missing values with the average of all the values in the DataFrame.
 
-Run this in a cell:
+Run this code in a cell:
 
 ```python
 example4.fillna(example4.mean())

@@ -2,7 +2,7 @@ In addition to missing data, in real-world datasets, you frequently encounter du
 
 ## Identify duplicates: `duplicated`
 
-You can easily spot duplicate values by using the `duplicated` method in pandas. `duplicated` returns a Boolean mask that indicates whether an entry in a DataFrame is a duplicate of an ealier one. Let's create another example DataFrame to see this in action:
+You can easily spot duplicate values by using the `duplicated` method in pandas. `duplicated` returns a Boolean mask that indicates whether an entry in a DataFrame is a duplicate of an earlier one. Let's create another example DataFrame to see this in action:
 
 ```python
 example6 = pd.DataFrame({'letters': ['A','B'] * 2 + ['B'],
@@ -10,11 +10,11 @@ example6 = pd.DataFrame({'letters': ['A','B'] * 2 + ['B'],
 example6
 ```
 
-This is returned:
+Here's the output:
 
 ```output
 |   | letters | numbers |
----------------------------
+-------------------------
 | 0 | A       | 1       |
 | 1 | B       | 2       |
 | 2 | A       | 1       |
@@ -22,13 +22,13 @@ This is returned:
 | 4 | B       | 3       |
 ```
 
-Then run this:
+Then run this code in a cell:
 
 ```python
 example6.duplicated()
 ```
 
-This is returned:
+Here's the output:
 
 ```output
 0    False
@@ -43,17 +43,17 @@ dtype: bool
 
 `drop_duplicates` simply returns a copy of the data for which all of the duplicated values are `False`.
 
-Run this in a cell:
+Run this code in a cell:
 
 ```python
 example6.drop_duplicates()
 ```
 
-You get this:
+Here's the output:
 
 ```output
 |   | letters | numbers |
----------------------------
+-------------------------
 | 0 | A       | 1       |
 | 1 | B       | 2       |
 | 3 | B       | 3       |
@@ -61,17 +61,17 @@ You get this:
 
 Both `duplicated` and `drop_duplicates` default to consider all columns, but you can specify that they examine only a subset of columns in your DataFrame.
 
-Run this:
+Run this code in a cell:
 
 ```python
 example6.drop_duplicates(['letters'])
 ```
 
-This is returned:
+Here's the output:
 
 ```output
 |   | letters | numbers |
----------------------------
+-------------------------
 | 0 | A       | 1       |
 | 1 | B       | 2       |
 ```

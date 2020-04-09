@@ -1,4 +1,4 @@
-Your most interesting analyses often will come from data melded together from more than one source. Because of this, pandas provides several methods of merging and joining datasets to make this necessary job easier:
+Your most interesting analyses often will come from data that's melded together from more than one source. Because of this, pandas provides several methods of merging and joining datasets to make this necessary job easier:
 
 * `pandas.merge` connects rows in DataFrames based on one or more keys.
 * `pandas.concat` concatenates or “stacks” together objects along an axis.
@@ -8,7 +8,7 @@ Let's examine merging data first, because it will be the most familiar to those 
 
 ## Categories of joins
 
-`merge` carries out several types of joins: one-to-one, many-to-one, and many-to-many. You use the same basic function call to implement all of them, and we will examine all three. You will need all three at some point in your data-delving, depending on the data.) We will start with one-to-one joins because they generally are the simplest example.
+`merge` carries out several types of joins: one-to-one, many-to-one, and many-to-many. You use the same basic function call to implement all of them, and we will examine all three. You will need all three at some point in your data-delving, depending on the data. We will start with one-to-one joins because they generally are the simplest example.
 
 ## One-to-one joins
 
@@ -24,10 +24,14 @@ df1
 
 Here's the output:
 
-> [!IMPORTANT]
-> 
-> Waiting for a decision about how to display table output--screenshot or div. If screenshot, how extensive alt text should be.
->
+```output
+|   | employee | group      |
+-----------------------------
+| 0 | Gary     | Accounting |
+| 1 | Stu      | Marketing  |
+| 2 | Mary     | Marketing  |
+| 3 | Sue      | HR         |
+```
 
 Next, let's look at the years that the same four employees were hired:
 
@@ -37,12 +41,16 @@ df2 = pd.DataFrame({'employee': ['Mary', 'Stu', 'Gary', 'Sue'],
 df2
 ```
 
-Here's the output:
+This output is returned:
 
-> [!IMPORTANT]
-> 
-> Waiting for a decision about how to display table output--screenshot or div. If screenshot, how extensive alt text should be.
->
+```output
+|   | employee | hire_date |
+-----------------------------
+| 0 | Mary     | 2008      |
+| 1 | Stu      | 2012      |
+| 2 | Gary     | 2017      |
+| 3 | Sue      | 2018      |
+```
 
 Combine this information in a single DataFrame by using the `merge` function:
 
@@ -53,12 +61,16 @@ df3
 
 Here's the output:
 
-> [!IMPORTANT]
-> 
-> Waiting for a decision about how to display table output--screenshot or div. If screenshot, how extensive alt text should be.
->
+```output
+|   | employee | group      | hire_date |
+-----------------------------------------
+| 0 | Mary     | Accounting | 2008      |
+| 1 | Stu      | Marketing  | 2012      |
+| 2 | Gary     | Marketing  | 2017      |
+| 3 | Sue      | HR         | 2018      |
+```
 
-pandas joined on the employee column because it was the only column common to both df1 and df2. (Notice also that the original indices of df1 and df2 were discarded by merge; this is generally the case with merges unless you conduct them by index, which we will discuss later on.)
+pandas joined on the employee column because it was the only column common to both df1 and df2. (Notice also that the original indices of df1 and df2 were discarded by `merge`; this is generally the case with merges unless you conduct them by index, which we will discuss later on.)
 
 ## Many-to-one joins
 
@@ -74,10 +86,13 @@ df4
 
 Here's the output:
 
-> [!IMPORTANT]
-> 
-> Waiting for a decision about how to display table output--screenshot or div. If screenshot, how extensive alt text should be.
->
+```output
+|   | group      | supervisor |
+-------------------------------
+| 0 | Accounting | Carlos     |
+| 1 | Marketing  | Giada      |
+| 2 | HR         | Stephanie  |
+```
 
 You also can join two data sources:
 
@@ -85,27 +100,37 @@ You also can join two data sources:
 pd.merge(df3, df4)
 ```
 
-Here's the output:
+This output is returned:
 
-> [!IMPORTANT]
-> 
-> Waiting for a decision about how to display table output--screenshot or div. If screenshot, how extensive alt text should be.
->
+```output
+|   | employee | group      | hire_date | supervisor |
+------------------------------------------------------
+| 0 | Gary     | Accounting | 2017      | Carlos     |
+| 1 | Stu      | Marketing  | 2012      | Giada      |
+| 2 | Mary     | Marketing  | 2008      | Giada      |
+| 3 | Sue      | HR         | 2018      | Stephanie  |
+```
 
 The resulting DataFrame has an additional column for supervisor; that column has an extra occurrence of **Giada** that did not occur in df4 because more than one employee in the merged DataFrame works in the **Marketing** group.
 
-Notice that we didn’t specify which column to join on. When you don't specify that information, `merge` uses the overlapping column names as the keys. However, that can be ambiguous; several columns might meet that condition. For that reason, it is a good practice to explicitly specify on which key to join. You can do this with the `on` parameter:
+Notice that we didn’t specify which column to join on. When you don't specify that information, `merge` uses the overlapping column names as the keys. However, that can be ambiguous; several columns might meet that condition. For that reason, it is a good practice to explicitly specify on which key to join. You can do this with the `on` parameter. 
+
+Here's an example
 
 ```python
 pd.merge(df3, df4, on='group')
 ```
 
-Here's the output:
+This output is returned:
 
-> [!IMPORTANT]
-> 
-> Waiting for a decision about how to display table output--screenshot or div. If screenshot, how extensive alt text should be.
->
+```output
+|   | employee | group      | hire_date | supervisor |
+------------------------------------------------------
+| 0 | Gary     | Accounting | 2017      | Carlos     |
+| 1 | Stu      | Marketing  | 2012      | Giada      |
+| 2 | Mary     | Marketing  | 2008      | Giada      |
+| 3 | Sue      | HR         | 2018      | Stephanie  |
+```
 
 ## Many-to-many joins
 
@@ -121,12 +146,18 @@ df5
 
 Here's the output:
 
-> [!IMPORTANT]
-> 
-> Waiting for a decision about how to display table output--screenshot or div. If screenshot, how extensive alt text should be.
->
+```output
+|   | group      | core_skills   |
+-----------------------------------
+| 0 | Accounting | math          |
+| 1 | Accounting | spreadsheets  |
+| 2 | Marketing  | writing       |
+| 3 | Marketing  | communication |
+| 4 | HR         | spreadsheets  |
+| 5 | HR         | organization  |
+```
 
-*TBD* introduce the next code/commands:
+Then, run this command in a cell:
 
 ```python
 pd.merge(df1, df5, on='group')
@@ -134,10 +165,18 @@ pd.merge(df1, df5, on='group')
 
 Here's the output:
 
-> [!IMPORTANT]
-> 
-> Waiting for a decision about how to display table output--screenshot or div. If screenshot, how extensive alt text should be.
->
+```output
+|   | empoyee |  group     | core_skills   |
+--------------------------------------------
+| 0 | Gary    | Accounting | math          |
+| 1 | Gary    | Accounting | spreadsheets  |
+| 2 | Stu     | Marketing  | writing       |
+| 3 | Stu     | Marketing  | communication |
+| 4 | Mary    | Marketing  | writing       |
+| 5 | Mary    | Marketing  | communication |
+| 6 | Sue     | HR         | spreadsheets  |
+| 7 | Sue     | HR         | organization  |
+```
 
 Again, to avoid ambiguity about which column to join on, it's a good idea to explicitly tell `merge` which one to use with the `on` parameter.
 
@@ -153,23 +192,31 @@ df6
 
 Here's the output:
 
-> [!IMPORTANT]
-> 
-> Waiting for a decision about how to display table output--screenshot or div. If screenshot, how extensive alt text should be.
->
+```output
+|   | name | salary |
+---------------------
+| 0 | Gary | 7000   |
+| 1 | Stu  | 8000   |
+| 2 | Mary | 120000 |
+| 3 | Sue  | 9000   |
+```
 
-*TBD* introduce the next code/commands:
+Next, run this code in a cell:
 
 ```python
 pd.merge(df1, df6, left_on="employee", right_on="name")
 ```
 
-Here's the output:
+This output is returned:
 
-> [!IMPORTANT]
-> 
-> Waiting for a decision about how to display table output--screenshot or div. If screenshot, how extensive alt text should be.
->
+```output
+|   | employee | group      | name | salary |
+---------------------------------------------
+| 0 | Gary     | Accounting | Gary | 7000   |
+| 1 | Stu      | Marketing  | Stu  | 8000   |
+| 2 | Mary     | Marketing  | Mary | 120000 |
+| 3 | Sue      | HR         | Sue  | 9000   |
+```
 
 ### Try it yourself
 
