@@ -4,7 +4,7 @@ Now it's time for you to plan the shift to serverless. The Node.js Express app c
 1. The routes, which are in _routes/_
 1. The data access logic, which is in _services/vacation.service.ts_
 
-Let's think through the steps you'll follow to refactor your code from Node.js Express to Azure Functions.
+Here are the steps you'll follow to refactor your code from Node.js Express to Azure Functions.
 
 1. Create the Azure Functions application
 1. Create a function for every route endpoint

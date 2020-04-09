@@ -1,4 +1,4 @@
-In this module, you refactored your Node.js Express application to Azure Functions. Now you can think about servers less (get it, because we're using serverless?).
+In this module, you refactored your Node.js Express application to Azure Functions. Now you can think about servers less (get it, because you're using serverless?).
 
 Node.js and Express have been incredibly powerful and oft used for serving API endpoints. Now with serverless you could shift your APIs and not worry about server setup or maintenance. You can also possibly reduce your cost of an always-on server by replacing the Node.js Express server with Azure Functions. And for your efforts, you get an API that scales well. Ultimately, with Azure Functions you can focus on the code, not the servers.
 

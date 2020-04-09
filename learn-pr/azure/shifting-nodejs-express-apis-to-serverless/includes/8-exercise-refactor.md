@@ -4,18 +4,18 @@ In this exercise, you'll migrate the logic that gets the data from the Node.js E
 
 ## Migrating from Node.js Express to Azure Functions
 
-At first glance you might think migrating the code wouldn't work, but let's consider what is different about the Node.js Express application and the Azure Functions application. Here are some main differences in the services.
+At first glance you might think migrating the code wouldn't work, but consider what is different about the Node.js Express application and the Azure Functions application. Here are some main differences in the services.
 
-|                                      | Node.js Express | Azure Functions                 |
-| ------------------------------------ | --------------- | ------------------------------- |
+|                                          | Node.js Express | Azure Functions                 |
+| ---------------------------------------- | --------------- | ------------------------------- |
 | **npm package to serve the application** | `express`       | `@azure/functions`              |
 | **Request and Response objects**         | `req` and `res` | `context.req` and `context.res` |
 
-Once we're armed with this information, we can copy the services code from the Node.js Express application to the Azure Functions application with minimal changes. Let's copy the code now.
+Once you're armed with this information, you can copy the services code from the Node.js Express application to the Azure Functions application with minimal changes. Copy the code now.
 
 ### Shift the Code from Express to Functions
 
-Why write everything from scratch and throw away your hard work if you don't have to, right? We can take the services code from our Express application and copy it to our Azure Functions application.
+Why write everything from scratch and throw away your hard work? Especially if you don't have to. You can take the services code from our Express application and copy it to our Azure Functions application.
 
 1. Open Visual Studio Code
 1. Copy the _server/services_ folder
@@ -23,11 +23,11 @@ Why write everything from scratch and throw away your hard work if you don't hav
 
 ### Refactor the Request and Response Code
 
-Now we have some minor refactoring to make the code work with Azure Functions instead of Node.js Express. Let's refactor the code to handle importing the appropriate npm package. Then we'll refactor to handle the differences between how the request and response are passed.
+Now you have some minor refactoring to make the code work with Azure Functions instead of Node.js Express. Refactor the code to handle importing the appropriate npm package. Then you'll refactor to handle the differences between how the request and response are passed.
 
 There are four functions where request and response are parameters. One each for `getVacations`, `postVacation`, `putVacation`, and `deleteVacation`.
 
-The parameters to every function in the Node.js Express application contain `req` and `res`. The Azure Functions application can access the request and response objects, but they're contained within a `context` object. We use destructuring to access them.
+The parameters to every function in the Node.js Express application contain `req` and `res`. The Azure Functions application can access the request and response objects, but they're contained within a `context` object. You use destructuring to access them.
 
 1. Open the _functions/services/vacation.service.ts_ file
 1. Remove the following code
@@ -97,7 +97,7 @@ You've refactored the code to handle your HTTP requests. Next you'll refactor th
 
 ### Refactor the Route
 
-When the Angular application makes an HTTP GET request to `vacations`, your route endpoint must go get the vacations data. Let's refactor the route logic now.
+When the Angular application makes an HTTP GET request to `vacations`, your route endpoint must go get the vacations data. Refactor the route logic now.
 
 Modify the code in your function to point get the vacations from the `getVacations` function in your service.
 
@@ -121,13 +121,13 @@ The code that you add calls the asynchronous function `vacationService.getVacati
 
 ### Create the Remaining Functions
 
-There are four endpoints in the Node.js Express application and we just created the first one. Now, follow these steps to create an Azure Function for the rest of the route endpoints. Here are the endpoints you'll create.
+There are four endpoints in the Node.js Express application and you just created the first one. Now, follow these steps to create an Azure Function for the rest of the route endpoints. Here are the endpoints you'll create.
 
-| methods | route endpoints      |
-| ------- | -------------------- |
-| POST    | *vacations-post*   |
-| PUT     | *vacations-put*    |
-| DELETE  | *vacations-delete* |
+| methods | route endpoints    |
+| ------- | ------------------ |
+| POST    | _vacations-post_   |
+| PUT     | _vacations-put_    |
+| DELETE  | _vacations-delete_ |
 
 #### Create the HTTP Post Function
 

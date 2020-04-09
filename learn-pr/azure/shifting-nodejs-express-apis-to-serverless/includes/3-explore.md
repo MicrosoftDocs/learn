@@ -1,8 +1,8 @@
-While the app is ready to run, let's first step back what's in the project.
+While the app is ready to run, you'll first step back what's in the project.
 
 ## Node and Express APIs
 
-Let's explore the sample project we cloned and built. The application is a conventional Node.js and Express API that serves the following four endpoints.
+Now explore the sample project you cloned and built. The application is a conventional Node.js and Express API that serves the following four endpoints.
 
 | methods | route endpoints |
 | ------- | --------------- |
@@ -33,4 +33,4 @@ For example, when the client app makes an HTTP GET request to the _/vacations_ r
 
 Feel free to explore the code for the Express logic in the _server_ folder on your own.
 
-Next, we'll run the application and test our HTTP endpoints.
+Next, you'll run the application and test our HTTP endpoints.

@@ -1,8 +1,8 @@
-Congratulations! You completed your Azure Functions application by shifting your Node.js Express code and making minimal changes. Next, let's review the structure of your application.
+Congratulations! You completed your Azure Functions application by shifting your Node.js Express code and making minimal changes. Next, review the structure of your application.
 
-## What We Learned About Shifting from Express to Azure Functions
+## What You Learned About Shifting from Express to Azure Functions
 
-Let's reflect on what steps you followed to refactor your code from Node.js Express to Azure Functions.
+Now, reflect on what steps you followed to refactor your code from Node.js Express to Azure Functions.
 
 1. You created the Azure Functions application
 1. You created a function for every route endpoint

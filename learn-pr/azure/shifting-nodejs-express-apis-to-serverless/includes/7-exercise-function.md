@@ -1,4 +1,4 @@
-You may recall that we have four endpoints in the Node.js Express app. In this exercise, you'll create the function for the first of these endpoints. We'll come back and create the other endpoints in a future exercise.
+You may recall that there are four endpoints in the Node.js Express app. In this exercise, you'll create the function for the first of these endpoints. We'll come back and create the other endpoints in a future exercise.
 
 ## Create a New Function
 
@@ -52,4 +52,4 @@ Your _function.json_ should look like the following code.
 
 The other important file here in the _functions/vacations-get_ folder is _index.ts_. This file contains the logic that runs when the route endpoint is requested. The Node.js Express app already includes the logic that you'll move into this file.
 
-In the next unit, we'll shift our endpoint's logic from the Node.js Express application to our Azure Functions application.
+In the next unit, you'll shift our endpoint's logic from the Node.js Express application to your Azure Functions application.

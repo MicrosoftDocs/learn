@@ -23,7 +23,7 @@ In this tutorial, you move from an Express API to a serverless architecture thro
 
 ## Planning the Shift to Serverless
 
-You're ready to shift your Express.js APIs to the serverless model. But first, let's consider why you might make these changes and what effort is required to update your app. Here are three things to consider:
+You're ready to shift your Express.js APIs to the serverless model. But first, consider why you might make these changes and what effort is required to update your app. Here are three things to consider:
 
 1. Configure and maintain the physical server for your Express app
 1. Managing scaling for your app (up and down), as demand fluctuates
@@ -50,4 +50,4 @@ The client application is developed with Angular, however you could easily have 
 
 When you're done, your application and its API will feature all the benefits of serverless technology!
 
-Next, we'll get the sample application, install its dependencies, and build it locally.
+Next, you'll get the sample application, install its dependencies, and build it locally.
