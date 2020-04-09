@@ -4,20 +4,24 @@ You will use the following components in the design of the solution:
 
 - **Azure Functions and serverless:** Serverless computing enables developers to build applications without worrying about application infrastructure. Serverless computing has three parts:
 
-   a) Serverless Kubernetes
+   - Serverless Kubernetes
+- Serverless Functions
+   - Serverless Application Environments
 
-   b) Serverless Functions
-
-   c) Serverless Application Environments
-
-  In this module, we use Azure functions only. Azure Functions enable you to develop serverless applications. You run small pieces of code (called "functions").  Specific events trigger the function to run the code.
+   In this module, we use Azure functions only. Azure Functions enable you to develop serverless applications. You run small pieces of code (called "functions").  Specific events trigger the function to run the code.
 
 - **Cognitive Speech Service:** The Speech service is an API that provides you speech-to-text, text-to-speech, and speech translation functionality into a single Azure subscription. In this module, you will use the Cognitive Speech service to integrate real-time speech translation.  
+
 - **Visual Studio Code**: is a source-code editor. You use Visual Studio Code as a development tool for the IoT Devkit.  
+
 - **Azure IoT Device Workbench:** is a Visual Studio Code extension. You use the Azure IoT Device Workbench to open a project, create and deploy Azure functions, and debug IoT Devkit.  
+
 - **C#:**  You will develop Azure Function by using C# programming language in .NET class libraries.
+
 - **Function app:** is the container that hosts the execution of individual functions.
-- **Devkit Translator:** is a project sample using Azure Functions and Cognitive Services that are available on Github: [https://github.com/Azure-Samples/mxchip-iot-devkit-translator](about:blank). You will use this code as a basis and modify it for the scenario outlined above  
+
+- **Devkit Translator:** is a project sample using Azure Functions and Cognitive Services that are available on GitHub: [https://github.com/Azure-Samples/mxchip-iot-devkit-translator](about:blank). You will use this code as a basis and modify it for the scenario outlined above  
+
 - **Device code:** is Arduino Sketch File (.ino file extension) that you can use for controlling an Arduino circuit board.  
 
 The overall module steps are :
