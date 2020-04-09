@@ -1,4 +1,4 @@
-The Express server runs the API on a server. You can create an Azure Functions project to run the APIs instead. In this exercise, you'll create the Azure Functions application using the [VS Code Extension for Azure Functions](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions&WT.mc_id=devto-blog-jopapa).
+The Express server runs the API on a server. You can create an Azure Functions project to run the APIs instead. In this exercise, you'll create the Azure Functions application using the [Visual Studio Code Extension for Azure Functions](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions&WT.mc_id=devto-blog-jopapa).
 
 Once the extension is installed, follow these steps to create the Azure Functions on your computer.
 
