@@ -50,6 +50,6 @@ Your _function.json_ should look like the following code.
 }
 ```
 
-The other important file here in the _functions/vacations-get_ folder is _index.ts_. This file contains the logic that runs when the route endpoint is requested. The Node.js Express app already includes the logic which you'll move into this file.
+The other important file here in the _functions/vacations-get_ folder is _index.ts_. This file contains the logic that runs when the route endpoint is requested. The Node.js Express app already includes the logic that you'll move into this file.
 
 In the next unit, we'll shift our endpoint's logic from the Node.js Express application to our Azure Functions application.

@@ -7,7 +7,7 @@ Node.js and Express have been incredibly powerful and oft used for serving API e
 
 The complete solution for the [sample project is on GitHub here](https://github.com/johnpapa/express-to-functions). The instructions on how to get started are also in the README file. You can explore running the Express app or the Azure Functions app to get a sense of the differences. Then try to apply this same shift to your code.
 
-To verify your implementation, you can reference the _solution_ branch. Click [here to view the solution code on GitHub](https://github.com/MicrosoftDocs/mslearn-advocates.azure-functions-and-signalr/tree/master/solution).
+To verify your implementation, you can reference the _solution_ branch. [View the solution code on GitHub](https://github.com/MicrosoftDocs/mslearn-advocates.azure-functions-and-signalr/tree/master/solution).
 
 ## Additional Resources
 
