@@ -239,7 +239,17 @@ df1a
 
 Here's the output:
 
-ktoliver TO DO/in progress
+```output
+|          | group      | 
+-------------------------
+| employee |            |
+| Gary     | Accounting | 
+| Stu      | Marketing  |
+| Mary     | Marketing  |
+| Sue      | HR         | 
+```
+
+Next, run this command in a cell:
 
 ```python
 df2a = df2.set_index('employee')
@@ -248,8 +258,15 @@ df2a
 
 Here's the output:
 
-ktoliver TO DO/in progress
-
+```output
+|          | hire_date | 
+------------------------
+| employee |           |
+| Mary     | 2008      | 
+| Stu      | 2012      |
+| Gary     | 2017      |
+| Sue      | 2018      | 
+```
 
 To merge on the index, specify the **left_index** and **right_index** parameters in merge:
 
@@ -259,8 +276,15 @@ pd.merge(df1a, df2a, left_index=True, right_index=True)
 
 Here's the output:
 
-ktoliver TO DO/in progress
-
+```output
+|          | group      | hire_date |
+-------------------------------------
+| employee |            |           |
+| Gary     | Accounting | 2017      | 
+| Stu      | Marketing  | 2012      |
+| Mary     | Marketing  | 2008      |
+| Sue      | HR         | 2018      | 
+```
 
 ### Try it yourself
 
@@ -284,8 +308,15 @@ df1a.join(df2a)
 
 Here's the output:
 
-ktoliver TO DO/in progress
-
+```output
+|          | group      | hire_date |
+-------------------------------------
+| employee |            |           |
+| Gary     | Accounting | 2017      | 
+| Stu      | Marketing  | 2012      |
+| Mary     | Marketing  | 2008      |
+| Sue      | HR         | 2018      | 
+```
 
 You can also mix and match **left_index**/**right_index** with **right_on**/**left_on**:
 
@@ -295,8 +326,14 @@ pd.merge(df1a, df6, left_index=True, right_on='name')
 
 Here's the output:
 
-ktoliver TO DO/in progress
-
+```output
+|   | group      | name | salary |
+----------------------------------
+| 0 | Accounting | Gary | 7000   |
+| 1 | Marketing  | Stu  | 8000   |
+| 2 | Marketing  | Mary | 12000  | 
+| 3 | HR         | Sue  | 9000   | 
+```
 
 ## Set arithmetic for joins
 
@@ -310,8 +347,13 @@ df5
 
 Here's the output:
 
-ktoliver TO DO/in progress
-
+```output
+|   | group       | core_skills   |
+-----------------------------------
+| 0 | Engineering | math          |
+| 1 | Marketing   | writing       | 
+| 2 | Sales       | communication |
+```
 
 ```python
 pd.merge(df1, df5, on='group')
@@ -319,8 +361,12 @@ pd.merge(df1, df5, on='group')
 
 Here's the output:
 
-ktoliver TO DO/in progress
-
+```output
+|   | employee | group     | core_skills |
+------------------------------------------
+| 0 | Stu      | Marketing | writing     |
+| 1 | Mary     | Marketing | writing     |
+```
 
 Notice that after we have restructured df5 and then rerun the merge with df1, we have only two entries in the result. This is because we merged on **group** and **Marketing** was the only entry that appeared in the **group** column of both DataFrames.
 
@@ -332,7 +378,12 @@ pd.merge(df1, df5, on='group', how='inner')
 
 Here's the output:
 
-ktoliver TO DO/in progress
+```output
+|   | employee | group     | core_skills |
+------------------------------------------
+| 0 | Stu      | Marketing | writing     |
+| 1 | Mary     | Marketing | writing     |
+```
 
 The complement of the inner join is the outer join, which returns the union of the two DataFrames.
 
@@ -370,8 +421,14 @@ pd.merge(df1, df5, how='left')
 
 Here's the output:
 
-ktoliver TO DO/in progress
-
+```output
+|   | employee | group      | core_skills |
+-------------------------------------------
+| 0 | Gary     | Accounting | NaN         |
+| 1 | Stu      | Marketing  | writing     |
+| 2 | Mary     | Marketing  | writing     | 
+| 3 | Sue      | HR         | NaN         | 
+```
 
 ### Try it yourself
 
@@ -406,8 +463,16 @@ df7
 
 Here's the output:
 
-ktoliver TO DO/in progress
+```output
+|   | name | rank |
+-------------------
+| 0 | Gary | 1    |
+| 1 | Stu  | 2    | 
+| 2 | Mary | 3    |
+| 3 | Sue  | 4    | 
+```
 
+Next, run this command in a cell:
 
 ```python
 df8 = pd.DataFrame({'name': ['Gary', 'Stu', 'Mary', 'Sue'],
@@ -418,7 +483,31 @@ pd.merge(df7, df8, on='name')
 
 Here's the output:
 
-ktoliver TO DO/in progress
+```output
+|   | name | rank |
+-------------------
+| 0 | Gary | 3    |
+| 1 | Stu  | 1    | 
+| 2 | Mary | 4    |
+| 3 | Sue  | 2    | 
+```
+
+Next, run this command in a cell:
+
+```python
+pd.merge(df7, df8, on='name')
+```
+
+Output:
+
+```output
+|   | name | rank_x | rank_y |
+------------------------------
+| 0 | Gary | 1      | 3      |
+| 1 | Stu  | 2      | 1      |
+| 2 | Mary | 3      | 4      |
+| 3 | Sue  | 4      | 2      |
+```
 
 
 Each column name in a DataFrame must be unique, so in cases where two joined DataFrames share column names (aside from the column serving as the key), the `merge` function automatically appends the suffix **_x** or **_y** to the conflicting column names in order to make them unique. In cases where it is best to control your column names, you can specify a custom suffix for merge to append through the suffixes keyword:
@@ -430,8 +519,14 @@ pd.merge(df7, df8, on='name', suffixes=['_left', '_right'])
 
 Here's the output:
 
-ktoliver TO DO/in progress
-
+```output
+|   | name | rank_left | rank_right |
+-------------------------------------
+| 0 | Gary | 1         | 3          |
+| 1 | Stu  | 2         | 1          |
+| 2 | Mary | 3         | 4          |
+| 3 | Sue  | 4         | 2          |
+```
 
 These suffixes work if there are multiple conflicting columns.
 
@@ -450,9 +545,9 @@ Concatenation in pandas is built by using the concatenation functionality for Nu
 
    Here's the output:
 
-  ktoliver TO DO/in progress
-
-
+  ```output
+  array([1, 2, 3, 4, 5, 6, 7, 8, 9])
+  ```
 * For two-dimensional arrays:
 
    ```python
@@ -461,10 +556,12 @@ Concatenation in pandas is built by using the concatenation functionality for Nu
    np.concatenate([x, x], axis=1)
    ```
 
-  Here's the output:
-
-  ktoliver TO DO/in progress
-
+   Here's the output:
+   
+   ```output
+   array([[1, 2, 1, 2],
+       [3, 4, 3, 4]])
+   ```
 
 Notice that the `axis=1` parameter makes the concatenation occur along columns rather than rows. Concatenation in pandas looks similar to this.
 
@@ -500,9 +597,14 @@ df9
 
 Here's the output:
 
-ktoliver TO DO/in progress
+```output
+|   | A | B |
+-------------
+| 0 | a | b |
+| 1 | c | d | 
+```
 
-
+Run this command in a cell:
 
 ```python
 pd.concat([df9, df9])
@@ -510,8 +612,14 @@ pd.concat([df9, df9])
 
 Here's the output:
 
-ktoliver TO DO/in progress
-
+```output
+|   | A | B |
+-------------
+| 0 | a | b |
+| 1 | c | d | 
+| 0 | a | b |
+| 1 | c | d | 
+```
 
 Notice that `pd.concat` has preserved the indexing, even though that means that it has been duplicated. You can have the results reindexed (and avoid potential confusion down the road), like this:
 
@@ -521,8 +629,14 @@ pd.concat([df9, df9], ignore_index=True)
 
 Here's the output:
 
-ktoliver TO DO/in progress
-
+```output
+|   | A | B |
+-------------
+| 0 | a | b |
+| 1 | c | d | 
+| 2 | a | b |
+| 3 | c | d | 
+```
 
 By default, `pd.concat` concatenates row-wise within the DataFrame (that is, axis=0 by default). You can specify the axis along which to concatenate:
 
@@ -532,7 +646,12 @@ pd.concat([df9, df9], axis=1)
 
 Here's the output:
 
-ktoliver TO DO/in progress
+```output
+|   | A | B | A | B |
+----------------------
+| 0 | a | b | a | b |
+| 1 | c | d | c | d |
+```
 
 Although pandas display the output without error, you will get an error message if you try to assign this result as a new DataFrame. Column names in DataFrames must be unique.
 
@@ -549,8 +668,14 @@ df10
 
 Here's the output:
 
-ktoliver TO DO/in progress
+```output
+|   | A | B | C |
+-----------------
+| 0 | a | b | c |
+| 1 | d | e | f |
+```
 
+Run this command in a cell:
 
 ```python
 df11 = pd.DataFrame({'B': ['u', 'x'],
@@ -561,8 +686,14 @@ df11
 
 Here's the output:
 
-ktoliver TO DO/in progress
+```output
+|   | B | C | D |
+-----------------
+| 0 | u | v | w |
+| 1 | x | y | z |
+```
 
+Run this command in a cell:
 
 ```python
 pd.concat([df10, df11])
@@ -570,7 +701,14 @@ pd.concat([df10, df11])
 
 Here's the output:
 
-ktoliver TO DO/in progress
+```output
+|   | A   | B | C | D   |
+-------------------------
+| 0 | a   | b | c | NaN |
+| 1 | d   | e | f | NaN |
+| 0 | NaN | u | v | w   |
+| 1 | NaN | x | y | z   |
+```
 
 
 As we saw earlier, the default join for this is an outer join and entries for which no data is available are filled with **NaN** values. You can also do an inner join:
