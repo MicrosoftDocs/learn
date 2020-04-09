@@ -42,6 +42,8 @@ The parameters to every function in the Node.js Express application contain `req
    import { Context } from '@azure/functions';
    ```
 
+   Now the Functions app is responsible for managing request and response messages.
+
 1. Find every instance of the following code
 
    ```typescript

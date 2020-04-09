@@ -14,6 +14,6 @@ Congratulations, you just created an Azure Function app!
 > ![NOTE]
 > You created the function app in the _functions_ folder, which separates it from the Angular app in the same project. You can decide how to structure your application, but for this sample it helps to see them all in one place.
 
-The Azure Functions app is what serves our routes.
+The Azure Functions app is what serves the applications's API endpoints.
 
 Next you'll create the function that will fetch and return the list of vacations.

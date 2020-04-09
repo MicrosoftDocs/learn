@@ -6,6 +6,11 @@ Let's start by getting the code and setting up your development environment. Fol
 
    ```bash
    git clone https://github.com/MicrosoftDocs/mslearn-module-shifting-nodejs-express-apis-to-serverless learn-functions
+   ```
+
+1. Change your directory to where you put the code repository
+
+   ```bash
    cd learn-functions
    ```
 
