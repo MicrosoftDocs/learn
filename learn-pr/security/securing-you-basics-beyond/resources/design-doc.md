@@ -10,8 +10,7 @@
 
 ## Prerequisites
 
-- Experience with accessing sensitive information and/or resources in information systems. 
-- A user familiar with identity management systems for accessing sensitive information.  
+- Experience using an identity to access online systems.
 
 ## Summary
 
