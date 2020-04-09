@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="101px" height="101px" viewBox="0 0 101 101" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>CMU dev 4 Distributed programming on the cloud/Distributed-computing-on-the-cloud-MapReduce</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="94.3396226" height="94.3396226" rx="47.1698113"></rect>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#99D3FF" offset="0%"></stop>
+            <stop stop-color="#0FA6FF" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-4" x="0" y="0" width="100" height="100" rx="50"></rect>
+        <filter x="-0.5%" y="-0.5%" width="102.0%" height="102.0%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="1" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="4" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="1" dy="1" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <path d="M50,2.83018868 C76.0511674,2.83018868 97.1698113,23.9488326 97.1698113,50 C97.1698113,76.0511674 76.0511674,97.1698113 50,97.1698113 C23.9488326,97.1698113 2.83018868,76.0511674 2.83018868,50 C2.83018868,23.9488326 23.9488326,2.83018868 50,2.83018868 Z M50,6.60377358 C26.032926,6.60377358 6.60377358,26.032926 6.60377358,50 C6.60377358,73.967074 26.032926,93.3962264 50,93.3962264 C73.967074,93.3962264 93.3962264,73.967074 93.3962264,50 C93.3962264,26.032926 73.967074,6.60377358 50,6.60377358 Z" id="path-6"></path>
+        <filter x="-25.0%" y="-35.7%" width="150.0%" height="171.4%" filterUnits="objectBoundingBox" id="filter-8">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-9">
+            <stop stop-color="#D2EBFF" offset="0%"></stop>
+            <stop stop-color="#F0FFFD" offset="100%"></stop>
+        </linearGradient>
+        <filter x="-27.9%" y="-42.9%" width="155.8%" height="185.7%" filterUnits="objectBoundingBox" id="filter-10">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <linearGradient x1="50%" y1="125.699103%" x2="50%" y2="6.86796686%" id="linearGradient-11">
+            <stop stop-color="#198AB3" offset="0%"></stop>
+            <stop stop-color="#198AB3" offset="0%"></stop>
+            <stop stop-color="#22A5CB" offset="11%"></stop>
+            <stop stop-color="#29BADE" offset="23%"></stop>
+            <stop stop-color="#2EC9EB" offset="37%"></stop>
+            <stop stop-color="#31D1F3" offset="53%"></stop>
+            <stop stop-color="#32D4F5" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50.0140555%" y1="2.51545844e-15%" x2="50.0140555%" y2="100.054352%" id="linearGradient-12">
+            <stop stop-color="#B77AF4" offset="0%"></stop>
+            <stop stop-color="#8C4FE4" offset="62%"></stop>
+            <stop stop-color="#773ADC" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Badges" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="[CMU-dev-4]-Distributed-programming-on-the-cloud" transform="translate(-160.000000, -510.000000)">
+            <g id="CMU-dev-4-Distributed-programming-on-the-cloud/Distributed-computing-on-the-cloud-MapReduce" transform="translate(160.000000, 510.000000)">
+                <g id="Badge-Plates/Circle">
+                    <g id="BG" transform="translate(2.830189, 2.830189)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g></g>
+                        <g id="Colors/Microsoft-365/BG-Gradient-1" mask="url(#mask-2)" fill="url(#linearGradient-3)">
+                            <rect id="Rectangle" x="0" y="0" width="94.3396226" height="94.3396226"></rect>
+                        </g>
+                    </g>
+                    <g id="Border">
+                        <g id="White-Border">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
+                            <rect stroke="#F2F1F0" stroke-width="4" stroke-linejoin="square" x="2" y="2" width="96" height="96" rx="48"></rect>
+                        </g>
+                        <mask id="mask-7" fill="white">
+                            <use xlink:href="#path-6"></use>
+                        </mask>
+                        <use id="Boarder" fill="#0078D4" fill-rule="nonzero" xlink:href="#path-6"></use>
+                        <g id="Colors/Microsoft-365/Border" mask="url(#mask-7)" fill="#0076D7">
+                            <g transform="translate(2.830189, 2.830189)" id="Microsoft-365/Border">
+                                <rect x="0" y="0" width="94.3396226" height="94.3396226"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="Group" transform="translate(25.000000, 18.000000)">
+                    <g id="Cloud-White" filter="url(#filter-8)" fill="url(#linearGradient-9)" fill-rule="nonzero">
+                        <g id="Group-31" transform="translate(0.382950, 0.000000)">
+                            <g id="Icon-migrate-281-Azure-Migrate">
+                                <path d="M38.9261065,13.3259166 C38.6010143,5.71179788 32.3139692,-0.223233435 24.8166438,0.00644726373 C18.8797745,-0.0567691064 13.5422061,3.67178473 11.4743622,9.32668662 C5.03782496,10.0867977 0.139907709,15.5553083 0,22.1377793 C0.376779948,29.4517178 6.40266662,35.1392553 13.6091272,34.9827637 L36.95812,34.9827637 L37.5585227,34.9827637 C43.5153363,34.8910145 48.3121314,29.987042 48.3657708,23.9340436 C48.1996232,18.526677 44.2043599,14.0368711 38.9261065,13.3259166 Z" id="Path"></path>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Group-2" filter="url(#filter-10)" transform="translate(4.000000, 36.000000)">
+                        <line x1="35.4117647" y1="-1.55431223e-14" x2="35.4117647" y2="10.3999481" id="Path-15" stroke="#FFFFFF" stroke-width="1.5"></line>
+                        <rect id="Rectangle" fill="#F3F3F3" x="27.8235294" y="6.2915119" width="15.1764706" height="8" rx="1"></rect>
+                        <line x1="7.58823529" y1="-1.55431223e-14" x2="7.58823529" y2="10.3999481" id="Path-15" stroke="#FFFFFF" stroke-width="1.5"></line>
+                        <rect id="Rectangle" fill="#F3F3F3" x="0" y="6.2915119" width="15.1764706" height="8" rx="1"></rect>
+                        <line x1="21.3262934" y1="1.33333333" x2="21.3262934" y2="22.2915119" id="Path-15" stroke="#FFFFFF" stroke-width="1.5"></line>
+                        <rect id="Rectangle" fill="#F3F3F3" x="13.9117647" y="19.6248452" width="15.1764706" height="8" rx="1"></rect>
+                    </g>
+                    <rect id="Rectangle" fill="url(#linearGradient-11)" x="7" y="45" width="3" height="3"></rect>
+                    <rect id="Rectangle" fill="url(#linearGradient-11)" x="13" y="45" width="3" height="3"></rect>
+                    <rect id="Rectangle" fill="url(#linearGradient-11)" x="35" y="45" width="3" height="3"></rect>
+                    <rect id="Rectangle" fill="url(#linearGradient-11)" x="41" y="45" width="3" height="3"></rect>
+                    <rect id="Rectangle" fill="url(#linearGradient-11)" x="21" y="58" width="3" height="3"></rect>
+                    <rect id="Rectangle" fill="url(#linearGradient-11)" x="27" y="58" width="3" height="3"></rect>
+                </g>
+                <path d="M50.0019678,25 C48.0701474,25.0539627 46.2415724,25.856841 44.9265166,27.2284948 C43.6114607,28.6001485 42.9200352,30.4257274 43.0073739,32.2956298 C43.0073739,35.4848623 47.1826084,42.9472493 49.0765292,47.4080058 C49.2297427,47.7663463 49.590756,48 49.9912069,48 C50.3916577,48 50.752671,47.7663463 50.9058845,47.4080058 C52.8213272,42.90556 56.9965617,35.380639 56.9965617,32.2956298 C57.1181239,28.4200363 54.0014952,25.169273 50.0019678,25 Z M46.3098764,33.5434597 C45.6836976,32.0463033 46.0241585,30.3191867 47.1716726,29.1716726 C48.3191867,28.0241585 50.0463033,27.6836976 51.5434597,28.3098764 C53.0406162,28.9360553 54.0110585,30.4047577 53.9999049,32.0275495 C53.9999049,33.0810836 53.5813901,34.0914678 52.8364289,34.8364289 C52.0914678,35.5813901 51.0810836,35.9999049 50.0275495,35.9999049 C48.4047577,36.0110585 46.9360553,35.0406162 46.3098764,33.5434597 Z" id="Location-Pin" fill="url(#linearGradient-12)" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>

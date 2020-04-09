@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.languages.python-datatypes-numeric-operations.exercise-isnumeric
-title: Exercise - Determine if a string can be converted to a number
+title: Exercise - Determine whether a string can be converted to a number
 metadata:
-  title: Exercise - Determine if a string can be converted to a number
-  description: Use the string's `isnumeric()` helper method to inspect its contents
+  title: Exercise - Determine whether a string can be converted to a number
+  description: Use a string's `isnumeric()` helper method to inspect its contents.
   ms.date: 02/18/2020
   author: bobtabor-msft
   ms.author: rotabor

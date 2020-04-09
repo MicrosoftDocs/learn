@@ -1,0 +1,142 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-computing.distributed-programming.analytics-engines-mapreduce.2-data-structure-flow
+title: Data structure
+metadata:
+  title: Data structure
+  description: The data structure used in MapReduce.
+  ms.date: 03/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 12
+content: |
+  [!include[](includes/2-data-structure-flow.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+# Did I Get This block 1 question 1
+  - content: "Where is the map intermediate output typically written to?"
+    choices:
+    - content: "Local disk"
+      isCorrect: true
+      explanation: "Correct! Map intermediate outputs are written by default to the local disk of the node that the map operation was executed on."
+    - content: "Network store or SAN"
+      isCorrect: false
+      explanation: "Incorrect. The MapReduce model does not rely on any form of shared-disk infrastructure. The intermediate output needs to be written quickly, and does not require replication."
+    - content: "Hadoop Distributed File System (HDFS)"
+      isCorrect: false
+      explanation: "Incorrect. Reduce tasks write final outputs, but not map tasks, to HDFS by default. The intermediate output needs to be written quickly, and does not require replication."
+    - content: "None of the above"
+      isCorrect: false
+      explanation: "Incorrect. The intermediate output needs to be written quickly, and does not require replication. The answer is one of the three choices above."
+
+# Did I Get This block 1 question 2
+  - content: "Where is the reduce output typically written to?"
+    choices:
+    - content: "Local disk"
+      isCorrect: false
+      explanation: "Incorrect. Map tasks, but not reduce tasks, write final outputs to local disk by default. The output may be used as input for further analysis and is typically replicated."
+    - content: "Network store or SAN"
+      isCorrect: false
+      explanation: "Incorrect. The output may be used as input for further analysis and is typically replicated."
+    - content: "Hadoop Distributed File System (HDFS)"
+      isCorrect: true
+      explanation: "Correct! Reduce task outputs are written by default to HDFS."
+    - content: "None of the above"
+      isCorrect: false
+      explanation: "Incorrect. The output may be used as input for further analysis and is typically replicated. The answer is one of the three choices above."
+
+# Did I Get This block 2 question 1
+  - content: "What is the default relationship between an HDFS block and an input split in MapReduce?"
+    choices:
+    - content: "1:1"
+      isCorrect: true
+      explanation: "Correct! The default relationship between an HDFS block and an input split in MapReduce is 1:1. This allows a map task to execute over an entire HDFS block simultaneously."
+    - content: "M:N"
+      isCorrect: false
+      explanation: "Incorrect. The default relationship between an HDFS block and an input split in MapReduce is 1:1. Think about which of the options may be most efficient in a typical MapReduce job."
+    - content: "N:1"
+      isCorrect: false
+      explanation: "Incorrect. The default relationship between an HDFS block and an input split in MapReduce is 1:1. Think about which of the options may be most efficient in a typical MapReduce job."
+    - content: "1:N"
+      isCorrect: false
+      explanation: "Incorrect. A single HDFS block will not be sent to multiple map tasks by default. Think about which of the options may be most efficient in a typical MapReduce job."
+
+# Did I Get This block 2 question 2
+  - content: "In a MapReduce job, which statement describes the ratio between map and reduce tasks?"
+    choices:
+    - content: "Zero to many map tasks and at least one reduce task"
+      isCorrect: false
+      explanation: "Incorrect. A MapReduce job cannot have zero map tasks. Reduce tasks are optional. Do we always need map tasks or reduce tasks in a MapReduce job?"
+    - content: "Zero to many map tasks and zero to many reduce tasks"
+      isCorrect: false
+      explanation: "Incorrect. A MapReduce job cannot have zero map tasks. Do we always need map tasks or reduce tasks in a MapReduce job?"
+    - content: "At least one map task and one reduce task"
+      isCorrect: false
+      explanation: "Incorrect. Reduce tasks are optional in MapReduce. Do we always need map tasks or reduce tasks in a MapReduce job?"
+    - content: "At least one map task and zero to many reduce tasks"
+      isCorrect: true
+      explanation: "Correct! A MapReduce job must have at least one map task. Reduce tasks are optional."
+
+# Did I Get This block 2 question 3
+  - content: "Where are key-value pairs typically used in MapReduce?"
+    choices:
+    - content: "Map inputs"
+      isCorrect: false
+      explanation: "That's not quite right. Data needs to be ordered in some form between all of the stages in a MapReduce job. Key-value pairs are used for map inputs, but is this the only place where key-value pairs are used in MapReduce?"
+    - content: "Intermediate outputs"
+      isCorrect: false
+      explanation: "That's not quite right. Data needs to be ordered in some form between all of the stages in a MapReduce job. Key-value pairs are used for intermediate outputs, but is this the only place where key-value pairs are used in MapReduce?"
+    - content: "Reduce outputs"
+      isCorrect: false
+      explanation: "That's not quite right. Data needs to be ordered in some form between all of the stages in a MapReduce job. Key-value pairs are used for reduce outputs, but is this the only place where key-value pairs are used in MapReduce?"
+    - content: "All of the above"
+      isCorrect: true
+      explanation: "Correct! Key-value pairs are typically used for map inputs, intermediate outputs, and reduce outputs."
+
+# Did I Get This block 2 question 4
+  - content: "Key-value pair types have to be identical between which of the following phases?"
+    choices:
+    - content: "Input to map and input to reduce"
+      isCorrect: false
+      explanation: "Incorrect. The key-value pair types need to be identical between the output of the map and the input to the reduce phase. Can the reduce task designed to work with a certain input type accept another type that is the output of a map task?"
+    - content: "Input to shuffle and output of reduce"
+      isCorrect: false
+      explanation: "Incorrect. The key-value pair types need to be identical between the output of the map and the input to the reduce phase. Can the reduce task designed to work with a certain input type accept another type that is the output of a map task?"
+    - content: "Input to map and output of shuffle"
+      isCorrect: false
+      explanation: "Incorrect. The key-value pair types need to be identical between the output of the map and the input to the reduce phase. Can the reduce task designed to work with a certain input type accept another type that is the output of a map task?"
+    - content: "None of the above"
+      isCorrect: true
+      explanation: "Correct! The key-value pair types need to be identical between the output of the map and the input to the reduce phase."
+
+# Did I Get This block 2 question 5
+  - content: "What benefits do combiner functions provide in MapReduce?"
+    choices:
+    - content: "A. Reduce the amount of data shuffled in the network"
+      isCorrect: false
+      explanation: "That's not quite right. Combiner functions do reduce the amount of data shuffled in the network, but is this the only benefit that combiner functions provide? Think about the operation that combiners perform and how it affects the MapReduce job."
+    - content: "B. Potential performance improvements"
+      isCorrect: false
+      explanation: "That's not quite right. Combiner functions can provide performance improvements, but is this the only benefit that combiner functions provide? Think about the operation that combiners perform and how it affects the MapReduce job."
+    - content: "C. A way to eliminate the reduce function"
+      isCorrect: false
+      explanation: "Incorrect. Combiners are designed to compliment reducers, not eliminate them entirely. Think about the operation that combiners perform and how it affects the MapReduce job."    
+    - content: "A. and B."
+      isCorrect: true
+      explanation: "Correct! Combiners reduce the amount of data shuffled in the network and hence bring potential performance improvements."
+    - content: "All of the above"
+      isCorrect: false
+      explanation: "That's not quite right. Combiners don't necessarily eliminate reducers in MapReduce. Think about the operation that combiners perform and how it affects the MapReduce job."
+
+# Did I Get This block 2 question 6
+  - content: "A MapReduce job uses a reduce function, which calculates the standard deviation of all the values of a particular key. Can a combiner function be used to potentially optimize the runtime of this job and produce the same output?"
+    choices:
+    - content: "Yes"
+      isCorrect: false
+      explanation: "Incorrect. A standard deviation calculation is neither an associative and commutative nor a distributive operation, and hence, can't be used."
+    - content: "No"
+      isCorrect: true
+      explanation: "Correct! A standard deviation calculation is neither an associative and commutative nor a distributive operation, and hence, can't be used."
