@@ -9,8 +9,9 @@ df = pd.read_csv('Data/housing_dataset.csv')
 df.head()
 ```
 
-ktoliver TO DO/in progress
+Here's what is returned:
 
+![A screenshot that shows the output of running df.head()](../media/df-head.png)
 
 This dataset contains information that was collected from the U.S Census Bureau about housing in the area of Boston, Massachusetts. The dataset was first published in 1978. The dataset has 14 columns:
 
@@ -52,7 +53,8 @@ df.describe()
 
 Here's the output, which shows all the values:
 
-ktoliver TO DO/in progress
+
+![A screenshot that shows the output of running df.describe()](../media/df-describe.png)
 
 
 Because a dataset can have only so many columns, often it can be useful to transpose the results of `DataFrame.describe` to use them better.
@@ -111,7 +113,6 @@ Now, find the maximum value in `df['AGE']`.
   
 Add hint... TBD.
 </details>
-
 
 Other information that you often will want to see is the relationship between different columns. To do this, use the `DataFrame.groupby` method. For example, you could examine the average `MEDV` (median value of owner-occupied homes) for each value of `AGE` (proportion of owner-occupied units built prior to 1940):
 
@@ -199,7 +200,6 @@ Now try to find the median value for `AGE` for each value of `MEDV`.
   
 Add hint... TBD.
 </details>
-
 
 You can also apply a lambda function to each element of a DataFrame column by using the `apply` method. For example, say you wanted to create a new column that flagged a row if more than 50 percent of owner-occupied homes were build before 1940:
 
@@ -373,7 +373,7 @@ df.corr(method='pearson')
 
 Here's the output:
 
-ktoliver TO DO/in progress
+![A screenshot that shows the output of running df.corr with the person method](../media/df-corr-pearson.png)
 
 Suppose you want to look only at the correlations between all the columns and one variable? Let's examine only the correlation between all other variables and the percentage of owner-occupied houses build before 1940 (`AGE`). We will do this by accessing the column by index number:
 

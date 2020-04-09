@@ -509,7 +509,6 @@ Output:
 | 3 | Sue  | 4      | 2      |
 ```
 
-
 Each column name in a DataFrame must be unique, so in cases where two joined DataFrames share column names (aside from the column serving as the key), the `merge` function automatically appends the suffix **_x** or **_y** to the conflicting column names in order to make them unique. In cases where it is best to control your column names, you can specify a custom suffix for merge to append through the suffixes keyword:
 
 ```python
@@ -648,7 +647,7 @@ Here's the output:
 
 ```output
 |   | A | B | A | B |
-----------------------
+---------------------
 | 0 | a | b | a | b |
 | 1 | c | d | c | d |
 ```
@@ -710,7 +709,6 @@ Here's the output:
 | 1 | NaN | x | y | z   |
 ```
 
-
 As we saw earlier, the default join for this is an outer join and entries for which no data is available are filled with **NaN** values. You can also do an inner join:
 
 ```python
@@ -719,8 +717,14 @@ pd.concat([df10, df11], join='inner')
 
 Here's the output:
 
-ktoliver TO DO/in progress
-
+```output
+|   |  B | C |
+--------------
+| 0 | b  | c | 
+| 1 | e  | f |
+| 0 | u  | v |
+| 1 | x  | y |
+```
 
 Another option is to directly specify the index of the remaining columns using the `join_axes` argument, which takes a list of index objects. Here, we will specify that the returned columns should be the same as those of the first input `(df10)`:
 
@@ -731,8 +735,16 @@ append()
 
 Here's the output:
 
-ktoliver TO DO/in progress
+```output
+|   | A   | B | C |
+-------------------
+| 0 | a   | b | c |
+| 1 | d   | e | f |
+| 0 | NaN | u | v |
+| 1 | NaN | x | y |
+```
 
+### `append()`
 
 Because direct array concatenation is so common, `Series` and `DataFrame` objects have an `append` method that can accomplish the same thing in fewer keystrokes. For example, rather than calling `pd.concat([df9, df9])`, you can call `df9.append(df9)`:
 
@@ -742,8 +754,14 @@ df9.append(df9)
 
 Here's the output:
 
-ktoliver TO DO/in progress
-
+```output
+|   | A | B |
+-------------
+| 0 | a | b |
+| 1 | c | d |
+| 0 | a | b |
+| 1 | c | d |
+```
 
 > [!IMPORTANT]
 > Unlike the `append()` and `extend()` methods of Python lists, the `append()` method in pandas does not modify the original object. Instead, it creates a new object with the combined data.
