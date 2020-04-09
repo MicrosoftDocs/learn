@@ -4,7 +4,7 @@ As with other programming languages, expressions are critical for decision makin
 2 < 5
 ```
 
-```output
+```Output
 True
 ```
 
@@ -29,7 +29,7 @@ a, b, c = 1, 2, 3
 a < b < c
 ```
 
-```output
+```Output
 True
 ```
 
@@ -41,7 +41,7 @@ You can also use built-in functions in Python for comparing data. For example:
 min(3, 2.4, 5)
 ```
 
-```output
+```Output
 2.4
 ```
 
@@ -49,7 +49,7 @@ min(3, 2.4, 5)
 max(3, 2.4, 5)
 ```
 
-```output
+```Output
 5
 ```
 
@@ -59,7 +59,7 @@ You can also combine comparison operators into compound expressions. For example
 1 < 2 and 2 < 3
 ```
 
-```output
+```Output
 True
 ```
 
@@ -71,7 +71,7 @@ Python also provides the `or` Boolean operator, which requires that only one sim
 1 < 2 or 1 > 2
 ```
 
-```output
+```Output
 True
 ```
 
@@ -81,7 +81,7 @@ Finally, not inverts the truth evaluation of an expression, such as in:
 not (2 < 3)
 ```
 
-```output
+```Output
 False
 ```
 

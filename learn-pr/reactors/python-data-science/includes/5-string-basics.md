@@ -4,7 +4,7 @@ Besides numbers, Python can also manipulate strings. Strings can be enclosed in 
 'spam eggs'  # Single quotes.
 ```
 
-```output
+```Output
 'spam eggs'
 ```
 
@@ -12,7 +12,7 @@ Besides numbers, Python can also manipulate strings. Strings can be enclosed in 
 'doesn\'t'  # Use \' to escape the single quote...
 ```
 
-```output
+```Output
 "doesn't"
 ```
 
@@ -20,7 +20,7 @@ Besides numbers, Python can also manipulate strings. Strings can be enclosed in 
 "doesn't"  # ...or use double quotes instead.
 ```
 
-```output
+```Output
 "doesn't"
 ```
 
@@ -30,7 +30,7 @@ In Python's interactive interpreter and Jupyter Notebooks in VS Code, the output
 '"Isn\'t," she said.'
 ```
 
-```output
+```Output
 '"Isn\'t," she said.'
 ```
 
@@ -38,7 +38,7 @@ In Python's interactive interpreter and Jupyter Notebooks in VS Code, the output
 print('"Isn\'t," she said.')
 ```
 
-```output
+```Output
 "Isn\'t," she said.
 ```
 
@@ -49,7 +49,7 @@ print('C:\some\name')  # Here \n means newline!
 # Im adding some more comments - woo!
 ```
 
-```output
+```Output
 C:\some
 ame
 ```
@@ -58,7 +58,7 @@ ame
 print(r'C:\some\name')  # Note the r before the quote.
 ```
 
-```output
+```Output
 C:\some\name
 ```
 
@@ -77,7 +77,7 @@ used in code, the string is ignored. Convenient, eh?
 """
 ```
 
-```output
+```Output
 "\nEverything between the first three quotes, including new lines,\nis part of the multi-line comment. Technically, the Python interpreter\nsimply sees the comment as a string, and because it's not otherwise\nused in code, the string is ignored. Convenient, eh?\n"
 ```
 
@@ -90,7 +90,7 @@ Strings can be _concatenated_ (glued together) with the plus (+) operator, and r
 3 * 'un' + 'ium'
 ```
 
-```output
+```Output
 'unununium'
 ```
 
@@ -104,7 +104,7 @@ Two or more _string literals_ placed next to each other are automatically concat
 'Py' 'thon'
 ```
 
-```output
+```Output
 'Python'
 ```
 
@@ -115,6 +115,6 @@ prefix = 'Py'
 prefix + 'thon'
 ```
 
-```output
+```Output
 'Python'
 ```

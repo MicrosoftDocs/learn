@@ -8,7 +8,7 @@ Expression syntax is straightforward. The operators plus (+), minus (-), multipl
 
 And you should get:
 
-```output
+```Output
 5
 ```
 
@@ -18,7 +18,7 @@ The order of operations also works as in other programming languages (and in mat
 30 - 4 * 5
 ```
 
-```output
+```Output
 10
 ```
 
@@ -28,7 +28,7 @@ Note what happens when you use division:
 7 / 5
 ```
 
-```output
+```Output
 1.4
 ```
 
@@ -40,7 +40,7 @@ You can mix numeric types in calculations:
 3 * 3.5
 ```
 
-```output
+```Output
 10.5
 ```
 
@@ -48,7 +48,7 @@ You can mix numeric types in calculations:
 7.0 / 5
 ```
 
-```output
+```Output
 1.4
 ```
 
@@ -58,7 +58,7 @@ You can perform a type of division that returns an integer: [floor division](htt
 7 // 5
 ```
 
-```output
+```Output
 1
 ```
 
@@ -68,7 +68,7 @@ To calculate the remainder, you can use the modulo operator (%):
 7 % 5
 ```
 
-```output
+```Output
 2
 ```
 
@@ -78,7 +78,7 @@ For exponents, use the power (**) operator. For example, you can write $5^2$ as:
 5 ** 2
 ```
 
-```output
+```Output
 25
 ```
 
@@ -88,7 +88,7 @@ Conversely, $2^5$ would be:
 2 ** 5
 ```
 
-```output
+```Output
 32
 ```
 
@@ -98,7 +98,7 @@ Note that power (**) has higher precedence in the order of operations than the n
 -5 ** 2
 ```
 
-```output
+```Output
 -25
 ```
 
@@ -108,7 +108,7 @@ In order to assert the order of precedence that you want, use parentheses ():
 (-5) ** 2
 ```
 
-```output
+```Output
 25
 ```
 
@@ -118,6 +118,6 @@ Parentheses () can supersede the order of operations in any calculation you need
 (30 - 4) * 5
 ```
 
-```output
+```Output
 130
 ```

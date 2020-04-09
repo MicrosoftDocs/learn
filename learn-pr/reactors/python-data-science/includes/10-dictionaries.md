@@ -13,7 +13,7 @@ capitals['Nigeria'] = ('Lagos', 6048430)
 capitals
 ```
 
-```output
+```Output
 {'France': ('Paris', 2140526), 'Nigeria': ('Lagos', 6048430)}
 ```
 
@@ -27,7 +27,7 @@ You reference entries much like you do as through an index number for a string, 
 capitals['France']
 ```
 
-```output
+```Output
 ('Paris', 2140526)
 ```
 
@@ -38,7 +38,7 @@ capitals['Nigeria'] = ('Abuja', 1235880)
 capitals
 ```
 
-```output
+```Output
 {'France': ('Paris', 2140526), 'Nigeria': ('Abuja', 1235880)}
 ```
 
@@ -48,7 +48,7 @@ When used on a dictionary, the `len()` method returns the number of keys in a di
 len(capitals)
 ```
 
-```output
+```Output
 2
 ```
 
@@ -58,7 +58,7 @@ Similar to the `pop()` method for lists, the [popitem()](https://docs.python.org
 capitals.popitem()
 ```
 
-```output
+```Output
 ('Nigeria', ('Abuja', 1235880))
 ```
 
@@ -66,7 +66,7 @@ capitals.popitem()
 capitals
 ```
 
-```output
+```Output
 {'France': ('Paris', 2140526)}
 ```
 

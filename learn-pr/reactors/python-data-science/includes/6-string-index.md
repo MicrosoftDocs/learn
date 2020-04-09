@@ -5,7 +5,7 @@ word = 'Python'
 word[0]  # Character in position 0.
 ```
 
-```output
+```Output
 'P'
 ```
 
@@ -13,7 +13,7 @@ word[0]  # Character in position 0.
 word[5]  # Character in position 5.
 ```
 
-```output
+```Output
 'n'
 ```
 
@@ -23,7 +23,7 @@ Indices may also be negative numbers, which means to start counting from the end
 word[-1]  # Last character.
 ```
 
-```output
+```Output
 'n'
 ```
 
@@ -31,7 +31,7 @@ word[-1]  # Last character.
 word[-2]  # Second-last character.
 ```
 
-```output
+```Output
 'o'
 ```
 
@@ -39,7 +39,7 @@ word[-2]  # Second-last character.
 word[-6]
 ```
 
-```output
+```Output
 'P'
 ```
 
@@ -51,7 +51,7 @@ In addition to indexing, which extracts individual characters, Python also suppo
 word[0:2]  # Characters from position 0 (included) to 2 (excluded).
 ```
 
-```output
+```Output
 'Py'
 ```
 
@@ -59,7 +59,7 @@ word[0:2]  # Characters from position 0 (included) to 2 (excluded).
 word[2:5]  # Characters from position 2 (included) to 5 (excluded).
 ```
 
-```output
+```Output
 'tho'
 ```
 
@@ -69,7 +69,7 @@ If you omit either position, the default start position is 0 and the default end
 word[:2]   # Character from the beginning to position 2 (excluded).
 ```
 
-```output
+```Output
 'Py'
 ```
 
@@ -77,7 +77,7 @@ word[:2]   # Character from the beginning to position 2 (excluded).
 word[4:]  # Characters from position 4 (included) to the end.
 ```
 
-```output
+```Output
 'on'
 ```
 
@@ -85,7 +85,7 @@ word[4:]  # Characters from position 4 (included) to the end.
 word[-2:] # Characters from the second-last (included) to the end.
 ```
 
-```output
+```Output
 'on'
 ```
 
@@ -95,7 +95,7 @@ This characteristic means that `s[:i] + s[i:]` is always equal to `s`:
 word[:2] + word[2:]
 ```
 
-```output
+```Output
 'Python'
 ```
 
@@ -103,7 +103,7 @@ word[:2] + word[2:]
 word[:4] + word[4:]
 ```
 
-```output
+```Output
 'Python'
 ```
 
@@ -124,7 +124,7 @@ Attempting to use an index that is too large results in an error:
 word[42]  # The word only has 6 characters.
 ```
 
-```output
+```Output
 ---------------------------------------------------------------------------
 IndexError                                Traceback (most recent call last)
 <ipython-input-70-e894f93573ea> in <module>
@@ -138,7 +138,7 @@ However, when used in a range, an index that's too large defaults to the size of
 word[4:42]
 ```
 
-```output
+```Output
 'on'
 ```
 
@@ -146,7 +146,7 @@ word[4:42]
 word[42:]
 ```
 
-```output
+```Output
 ''
 ```
 
@@ -156,7 +156,7 @@ Python strings are [immutable](https://docs.python.org/3.6/glossary.html#term-im
 word[0] = 'J'
 ```
 
-```output
+```Output
 ---------------------------------------------------------------------------
 TypeError                                 Traceback (most recent call last)
 <ipython-input-73-91a956888ca7> in <module>
@@ -170,7 +170,7 @@ The following cell also produces an error:
 word[2:] = 'py'
 ```
 
-```output
+```Output
 ---------------------------------------------------------------------------
 TypeError                                 Traceback (most recent call last)
 <ipython-input-74-6488bbf78f5a> in <module>
@@ -184,7 +184,7 @@ A slice is itself a value that you can concatenate with other values using +:
 'J' + word[1:]
 ```
 
-```output
+```Output
 'Jython'
 ```
 
@@ -192,7 +192,7 @@ A slice is itself a value that you can concatenate with other values using +:
 word[:2] + 'Py'
 ```
 
-```output
+```Output
 'PyPy'
 ```
 
@@ -202,7 +202,7 @@ A slice, however, is not a string literal, and it cannot be used with automatic 
 word[:2] 'Py'    # Slice is not a literal; produces an error
 ```
 
-```output
+```Output
   File "<ipython-input-77-60be1c701626>", line 1
     word[:2] 'Py'    # Slice is not a literal; produces an error
                 ^
@@ -216,7 +216,7 @@ s = 'supercalifragilisticexpialidocious'
 len(s)
 ```
 
-```output
+```Output
 34
 ```
 
@@ -226,7 +226,7 @@ Another useful built-in function for working with strings is [str()](https://doc
 str(2)
 ```
 
-```output
+```Output
 '2'
 ```
 
@@ -234,7 +234,7 @@ str(2)
 str(2.5)
 ```
 
-```output
+```Output
 '2.5'
 ```
 

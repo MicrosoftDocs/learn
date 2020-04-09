@@ -6,7 +6,7 @@ For example, the `factorial()` function is not one of the standard functions bui
 factorial(5)
 ```
 
-```output
+```Output
 ---------------------------------------------------------------------------
 NameError                                 Traceback (most recent call last)
 <ipython-input-147-637175d621a4> in <module>
@@ -21,7 +21,7 @@ import math
 math.factorial(5)
 ```
 
-```output
+```Output
 120
 ```
 
@@ -32,7 +32,7 @@ from math import factorial
 factorial(5)
 ```
 
-```output
+```Output
 120
 ```
 

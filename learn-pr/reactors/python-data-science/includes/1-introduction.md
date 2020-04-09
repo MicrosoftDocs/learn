@@ -4,8 +4,6 @@ Since its first release in 1991, Python has risen to become not just a popular g
 > **Sarah: Action items**
 >
 > - Search on "TBD" and add content as needed.
-> - Add list of learning objectives.
-> - Add list of prerequisites, or "None."
 >
 
 Several examples in this learning path draw from the [python.org introductory tutorial](https://docs.python.org/3.5/tutorial/introduction.html) and examples given in the [Python 3 documentation](https://docs.python.org/3/) (with edits and amendments). This introduction to Python is written for Python 3.6.7 but is generally applicable to other Python 3.x versions.
@@ -59,7 +57,7 @@ print(text)
 
 Open the TBD in VS Code. Copy and paste the code snippet from above into a Python code cell Run it and you should get the following 
 
-```output
+```Output
 # This is not a comment because it's inside quotes.
 ```
 
@@ -75,7 +73,7 @@ print("Hello, world.")
 
 Run the cell and your output should be:
 
-```output
+```Output
 Hello, world.
 ```
 
@@ -92,4 +90,4 @@ In this module, you will:
 
 ## Prerequisites
 
-Have Visual Studio Code setup with the Python extension running Jupyter Notebooks. 
+Have Visual Studio Code set up with the Python extension running Jupyter Notebooks. 

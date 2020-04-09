@@ -6,7 +6,7 @@ width = 3 * 5
 length * width
 ```
 
-```output
+```Output
 225
 ```
 
@@ -17,7 +17,7 @@ length = 15
 length
 ```
 
-```output
+```Output
 15
 ```
 
@@ -26,7 +26,7 @@ length = 15.0
 length
 ```
 
-```output
+```Output
 15.0
 ```
 
@@ -35,7 +35,7 @@ length = 'fifteen'
 length
 ```
 
-```output
+```Output
 'fifteen'
 ```
 
@@ -45,7 +45,7 @@ Note that, for all the flexibility of variables in Python, you do have to define
 n
 ```
 
-```output
+```Output
 ---------------------------------------------------------------------------
 NameError                                 Traceback (most recent call last)
 <ipython-input-34-ab0680a89434> in <module>
@@ -61,7 +61,7 @@ price = 19.95
 price * tax
 ```
 
-```output
+```Output
 2.25435
 ```
 
@@ -69,7 +69,7 @@ price * tax
 price + _
 ```
 
-```output
+```Output
 22.204349999999998
 ```
 
@@ -81,7 +81,7 @@ Our previous output was kind of a mess, however; we generally use only two or fe
 round(_, 2)
 ```
 
-```output
+```Output
 22.2
 ```
 
@@ -94,7 +94,7 @@ a, b, c, = 3.2, 1, 6
 a, b, c
 ```
 
-```output
+```Output
 (3.2, 1, 6)
 ```
 
@@ -107,7 +107,7 @@ x += 1  # Pythonic variable augmentation
 x
 ```
 
-```output
+```Output
 7
 ```
 

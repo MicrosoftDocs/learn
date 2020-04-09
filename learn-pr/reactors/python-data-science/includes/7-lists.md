@@ -5,7 +5,7 @@ squares = [1, 4, 9, 16, 25]
 squares
 ```
 
-```output
+```Output
 [1, 4, 9, 16, 25]
 ```
 
@@ -15,7 +15,7 @@ Like strings (and all other built-in [sequence types](https://docs.python.org/3.
 squares[0]  # Indexing returns the item.
 ```
 
-```output
+```Output
 1
 ```
 
@@ -23,7 +23,7 @@ squares[0]  # Indexing returns the item.
 squares[-1]
 ```
 
-```output
+```Output
 25
 ```
 
@@ -31,7 +31,7 @@ squares[-1]
 squares[-3:]  # Slicing returns a new list.
 ```
 
-```output
+```Output
 [9, 16, 25]
 ```
 
@@ -41,7 +41,7 @@ All slice operations return a new list containing the requested elements. This m
 squares[:]
 ```
 
-```output
+```Output
 [1, 4, 9, 16, 25]
 ```
 
@@ -51,7 +51,7 @@ Lists also support concatenation with the + operator:
 squares + [36, 49, 64, 81, 100]
 ```
 
-```output
+```Output
 [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
 ```
 
@@ -62,7 +62,7 @@ cubes = [1, 8, 27, 65, 125]  # Something's wrong here ...
 4 ** 3  # the cube of 4 is 64, not 65!
 ```
 
-```output
+```Output
 64
 ```
 
@@ -71,7 +71,7 @@ cubes[3] = 64  # Replace the wrong value.
 cubes
 ```
 
-```output
+```Output
 [1, 8, 27, 64, 125]
 ```
 
@@ -82,7 +82,7 @@ letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
 letters
 ```
 
-```output
+```Output
 ['a', 'b', 'c', 'd', 'e', 'f', 'g']
 ```
 
@@ -92,7 +92,7 @@ letters[2:5] = ['C', 'D', 'E']
 letters
 ```
 
-```output
+```Output
 ['a', 'b', 'C', 'D', 'E', 'f', 'g']
 ```
 
@@ -102,7 +102,7 @@ letters[2:5] = []
 letters
 ```
 
-```output
+```Output
 ['a', 'b', 'f', 'g']
 ```
 
@@ -112,7 +112,7 @@ letters[:] = []
 letters
 ```
 
-```output
+```Output
 []
 ```
 
@@ -123,7 +123,7 @@ letters = ['a', 'b', 'c', 'd']
 len(letters)
 ```
 
-```output
+```Output
 4
 ```
 
@@ -136,7 +136,7 @@ x = [a, n]
 x
 ```
 
-```output
+```Output
 [['a', 'b', 'c'], [1, 2, 3]]
 ```
 
@@ -146,7 +146,7 @@ x
 x[0]
 ```
 
-```output
+```Output
 ['a', 'b', 'c']
 ```
 
@@ -156,7 +156,7 @@ And by using additional index numbers, you can directly access elements within t
 x[0][0]
 ```
 
-```output
+```Output
 'a'
 ```
 
