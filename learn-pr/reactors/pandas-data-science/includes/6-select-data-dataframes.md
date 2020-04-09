@@ -90,11 +90,11 @@ countries.T
 ```
 
 ```Output
-|                     | Albania  | France        | Germany       | Japan         | Russia        |
---------------------------------------------------------------------------------------------------
-| Area                | 2.874800e+04 | 6.438010e+05 | 3.573860e+05 | 3.779720e+05 | 1.712520e+07 |
-| Population          | 2.937590e+06 | 6.542950e+07 | 8.240871e+07 | 1.269223e+08 | 1.439101e+08 |
-| Population density  | 1.021842e+02 | 1.016300e+02 | 2.305874e+02 | 3.357982e+02 | 8.403413e+00 |
+|                     | Albania       | France        | Germany       | Japan         | Russia        |
+-------------------------------------------------------------------------------------------------------
+| Area                | 2.874800e+04  | 6.438010e+05  | 3.573860e+05  | 3.779720e+05  | 1.712520e+07  |
+| Population          | 2.937590e+06  | 6.542950e+07  | 8.240871e+07  | 1.269223e+08  | 1.439101e+08  |
+| Population density  | 1.021842e+02  | 1.016300e+02  | 2.305874e+02  | 3.357982e+02  | 8.403413e+00  |
 ```
 
 `DataFrames` also uses the `loc` and `iloc` indexers. With `iloc`, you can index the underlying array as if it were an `ndarray` but with the `DataFrame` index and column labels maintained in the result:
