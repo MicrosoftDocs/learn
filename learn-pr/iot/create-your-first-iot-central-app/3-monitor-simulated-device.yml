@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.iot.create-your-first-iot-central-app.monitor-a-simulated-device
 metadata:
-  title: Create a rich dashboard and a real device
+  title: Exercise - Create a rich dashboard and a real device
   description: Use the IoT Central portal to build a rich dashboard from an array of tiles. The center piece of the dashboard is the location map. Following this, create a real IoT device, and record its connection keys. Finish the unit with a short knowledge check.
   ms.date: 10/17/2019
-  author: PeterTurcan
+  author: olivierbloch
   ms.author: Olivier.Bloch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

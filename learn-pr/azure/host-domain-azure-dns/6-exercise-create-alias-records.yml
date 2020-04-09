@@ -1,0 +1,24 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.host-domain-azure-dns.exercise-create-alias-records
+title: Exercise - Create alias records for Azure DNS
+metadata:
+  title: Exercise - Create alias records for Azure DNS
+  description: Exercise - Create alias records for Azure DNS
+  ms.date: 03/20/2020
+  author: cwatson-cat
+  ms.author: cwatson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  zone_pivot_groups: 
+interactive: bash
+azureSandbox: true
+durationInMinutes: 12
+content: |
+  [!include[](includes/6-exercise-create-alias-records.md)]
+tasks:
+- action: exists
+  environment: azure
+  hint: "Follow the directions to setup a virtual network, Load balancer, and VMs in Azure."
+  azure:
+    resource:
+      type: "Microsoft.Network/loadBalancers"

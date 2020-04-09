@@ -17,7 +17,9 @@ The Azure Cosmos DB Data Explorer is a tool included in the Azure portal that is
 
 1. In the **Open Full Screen** box, click **Open** as shown in the following screenshot.
 
-   ![Screenshot showing how to open the Data Explorer tool in the Azure portal with a full screen of data](../media/3-azure-cosmosdb-data-explorer-full-screen.png)
+    :::image type="complex" source="../media/3-azure-cosmosdb-data-explorer-full-screen.png" alt-text="Screenshot showing how to open the Data Explorer tool in the Azure portal with a full screen of data.":::
+        Screenshot highlights selecting the Data Explorer navigation item, then the open icon button, then the open text button from within the Open Full Screen pop-up.
+    :::image-end:::
 
     The web browser displays the new full-screen Data Explorer, which gives you more space and a dedicated environment for working with your database.
 
@@ -25,7 +27,9 @@ The Azure Cosmos DB Data Explorer is a tool included in the Azure portal that is
 
 1. To create a new JSON document, in the SQL API pane, expand **Clothing**, select **Items**, then select **New Item** in the toolbar.
 
-   ![Screenshot showing the steps to create new documents in Data Explorer in the Azure portal](../media/3-azure-cosmosdb-data-explorer-new-document.png)
+    :::image type="complex" source="../media/3-azure-cosmosdb-data-explorer-new-document.png" alt-text="Screenshot showing the steps to create new documents in Data Explorer in the Azure portal.":::
+        Screenshot highlights selecting the Products > Clothing > Items node within the Products database, then the New Item button.
+    :::image-end:::
 
 1. Now, add a document to the container with the following structure. Paste the following JSON block into the **Items** tab, overwriting the current content:
 
@@ -50,7 +54,7 @@ The Azure Cosmos DB Data Explorer is a tool included in the Azure portal that is
 
 1. Select **Save**.
 
-    ![Copy in JSON data and click Save in Data Explorer in the Azure portal](../media/3-azure-cosmosdb-data-explorer-save-document.png)
+    ![Screenshot of the Items pane showing the pasted JSON with the Save button highlighted.](../media/3-azure-cosmosdb-data-explorer-save-document.png)
 
 1. Create and save another document by selecting **New Item** again, and pasting the following JSON object into Data Explorer and then saving the item.
 
@@ -75,6 +79,6 @@ The Azure Cosmos DB Data Explorer is a tool included in the Azure portal that is
 
 1. Confirm the documents have been saved by clicking **Items** on the left-hand menu. You should see two items as shown in the following screenshot.
 
-    ![Screenshot showing how Data Explorer displays the two documents in the Items tab](../media/3-show-two-available-items.png)
+    ![Screenshot showing Data Explorer displaying two documents in the Items tab.](../media/3-show-two-available-items.png)
 
 You've added two documents, each representing a product in your product catalog, to your database by using the Data Explorer. The Data Explorer is a good way to create documents, modify documents, and get started with Azure Cosmos DB.

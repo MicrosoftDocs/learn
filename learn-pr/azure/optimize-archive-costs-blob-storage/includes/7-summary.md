@@ -18,8 +18,8 @@ Managing access tiers using REST API:
 
 Managing access tiers using Java apps:
 
-* [CloudBlockBlob.uploadStandardBlobTier Method](https://docs.microsoft.com/java/api/com.microsoft.azure.storage.blob._cloud_block_blob.uploadstandardblobtier?view=azure-java-legacy)
+* [CloudBlockBlob.uploadStandardBlobTier Method](https://docs.microsoft.com/java/api/com.microsoft.azure.storage.blob.cloudblockblob.uploadstandardblobtier?view=azure-java-legacy)
 
-* [BlobProperties.setStandardBlobTier Method](https://docs.microsoft.com/java/api/com.microsoft.azure.storage.blob._blob_properties.setstandardblobtier?view=azure-java-legacy)
+* [BlobProperties.setStandardBlobTier Method](https://docs.microsoft.com/java/api/com.microsoft.azure.storage.blob.blobproperties.setstandardblobtier?view=azure-java-legacy)
 
-* [BlobProperties.getStandardBlobTier Method](https://docs.microsoft.com/java/api/com.microsoft.azure.storage.blob._blob_properties.getstandardblobtier?view=azure-java-legacy)
+* [BlobProperties.getStandardBlobTier Method](https://docs.microsoft.com/java/api/com.microsoft.azure.storage.blob.blobproperties.getstandardblobtier?view=azure-java-legacy)
