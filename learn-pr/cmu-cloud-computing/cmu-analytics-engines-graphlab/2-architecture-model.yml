@@ -1,0 +1,37 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-computing.distributed-programming.analytics-engines-graphlab.2-architecture-model
+title: Architectural model
+metadata:
+  title: Architectural model
+  description: Architectural model
+  ms.date: 03/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-architecture-model.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+ 
+# Original course uses interactive GUI not available in YAML. Using sample choices for now.
+# Original course presents one question with two drop-down boxes. Formatting as two questions here.
+  - content: "What kind of system is GraphLab?"
+    choices:
+    - content: "Master-subordinate"
+      isCorrect: false
+      explanation: "Incorrect. Although GraphLab has a monitoring or master engine, processes in the system don't need the master to communicate and perform computation."
+    - content: "Peer-to-peer"
+      isCorrect: true
+      explanation: "Correct! Although GraphLab has a monitoring or master engine, processes in the system do not need the master to communicate and perform computation."
+
+  - content: "What strategy does GraphLab use to schedule vertices?"
+    choices:
+    - content: "Push-based"
+      isCorrect: true
+      explanation: "Correct!"
+    - content: "Pull-based"
+      isCorrect: false
+      explanation: "Incorrect."

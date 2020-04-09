@@ -170,7 +170,7 @@ CI and PR triggers let us control which branches participate in the overall proc
 
 ### What are scheduled triggers?
 
-A _scheduled trigger_ uses [cron syntax](https://docs.microsoft.com/azure/devops/pipelines/build/triggers?view=azure-devops&tabs=yaml&azure-portal=true#supported-cron-syntax) to cause a build to run on a defined schedule.
+A _scheduled trigger_ uses [cron syntax](https://docs.microsoft.com/azure/devops/pipelines/process/scheduled-triggers?view=azure-devops&tabs=yaml&azure-portal=true#supported-cron-syntax) to cause a build to run on a defined schedule.
 
 On Unix and Linux systems, cron is a popular way to schedule jobs to run on a set time interval or at a specific time. In Azure Pipelines, scheduled triggers use the cron syntax to define when a stage runs.
 
