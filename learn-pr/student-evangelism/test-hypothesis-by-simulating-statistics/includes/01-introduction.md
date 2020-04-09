@@ -13,13 +13,13 @@ In data science, a "model" is a set of assumptions about data. Often,
 models include assumptions about chance processes used to generate data.
 
 Sometimes, data scientists have to decide whether or not their models
-are good. In this section we will discuss two examples of making such
-decisions. In later sections we will use the methods developed here as
+are good. In this section, we will discuss two examples of making such
+decisions. In later sections, we will use the methods developed here as
 the building blocks of a general framework for testing hypotheses.
 
 ### U.S. Supreme Court, 1965: Swain vs. Alabama
 
-In the early 1960's, in Talladega County in Alabama, a black man called
+In the early 1960s, in Talladega County in Alabama, a black man called
 Robert Swain was convicted of raping a white woman and was sentenced to
 death. He appealed his sentence, citing among other factors the
 all-white jury. At the time, only men aged 21 or older were allowed to
@@ -39,7 +39,7 @@ men on a panel of 100 might seem low.
 
 ### A Model
 
-But one view of the data -- a model, in other words -- is that the panel
+But one view of the data--a model, in other words--is that the panel
 was selected at random and ended up with a small number of black men
 just due to chance. This model is consistent with what the Supreme Court
 wrote in its ruling.
@@ -70,7 +70,7 @@ the alternative viewpoint.
 
 ### Predicting the Statistic Under the Model
 
-If the model were true, how big would the statistic typically be? To
+If the model were true, how large would the statistic typically be? To
 answer that, we have to start by working out the details of the
 simulation.
 
@@ -176,7 +176,7 @@ variation. The counts range from about 10 to about 45.
 ### Comparing the Prediction and the Data
 
 Though the simulated counts are quite varied, very few of them came out
-to be eight or less. The value eight is far out in the left hand tail of
+to be eight or less. The value eight is far out in the left-hand tail of
 the histogram. It's the red dot on the horizontal axis of the histogram.
 
 ``` {.python}
@@ -206,7 +206,7 @@ supported by the evidence. Swain's jury panel does not look like the
 result of random sampling from the population of eligible jurors.
 
 This method of assessing models is very general. Here is an example in
-which we use it to assess a model in a completely different setting.
+which we use it to assess a model in a different setting.
 
 ### Mendel's Pea Flowers
 
@@ -263,7 +263,7 @@ $$
 
 ### Predicting the Statistic Under the Model
 
-To see how big the distance would be if Mendel's model were true, we can
+To see how big the distance would be if Mendel's model was true, we can
 use `sample_proportions` to simulate the distance under the assumptions
 of the model.
 
@@ -281,7 +281,7 @@ The steps in the calculation:
 -   Sample 929 times at random from the distribution specified by the
     model and find the sample proportion in the purple-flowering
     category.
--   Multiply the proportion by 100 to get a pecent.
+-   Multiply the proportion by 100 to get a percent.
 -   Subtract 75 and take the absolute value of the difference.
 
 That's the statistic: the distance between the sample percent and 75.

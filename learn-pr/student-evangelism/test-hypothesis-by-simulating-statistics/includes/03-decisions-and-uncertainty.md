@@ -18,7 +18,7 @@ away from the predictions, or very close to them.
 But outcomes are not always so clear cut. How far is "far"? Exactly what
 does "close" mean? While these questions don't have universal answers,
 there are guidelines and conventions that you can follow. In this
-section we will describe some of them.
+section, we will describe some of them.
 
 But first let us develop a general framework of decision making, into
 which all our examples will fit.
@@ -620,7 +620,7 @@ That's the average of 27 randomly selected scores. The cell below
 collects the code necessary for generating this random average.
 
 Now we can simulate the random sample average by repeating the
-calculation multple times.
+calculation multiple times.
 
 ``` {.python}
 def random_sample_average():
@@ -659,8 +659,8 @@ towards the alternative hypothesis, that the average score in the
 section is too low for it to look like a random sample from the class.
 
 Is the observed statistic of 13.667 "too low" in relation to this
-distribution? In other words, is the red far enough out into the left
-hand tail of the histogram for you to think that it is "too far"?
+distribution? In other words, is the red far enough out into the 
+left-hand tail of the histogram for you to think that it is "too far"?
 
 It's up to you to decide! Use your judgment. Go ahead -- it's OK to do
 so.

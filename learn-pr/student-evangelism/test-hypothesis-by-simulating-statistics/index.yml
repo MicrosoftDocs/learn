@@ -27,6 +27,6 @@ units:
 - learn.student-evangelism.test-hypothesis-by-simulating-statistics.multiple-categories
 - learn.student-evangelism.test-hypothesis-by-simulating-statistics.decisions-and-uncertainty
 - learn.student-evangelism.test-hypothesis-by-simulating-statistics.error-probabilities
-- learn.student-evangelism.test-hypothesis-by-simulating-statistics.error-summary
+- learn.student-evangelism.test-hypothesis-by-simulating-statistics.summary
 badge:
   uid: learn.student-evangelism.test-hypothesis-by-simulating-statistics.badge

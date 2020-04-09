@@ -323,7 +323,7 @@ jury.barh('Ethnicity')
 
 ![png](../media/42_Multiple_Categories_16_0.png)
 
-For this we will compute a quantity called the *total variation
+For this, we will compute a quantity called the *total variation
 distance* between two distributions. The calculation is as an extension
 of the calculation of the distance between two numbers.
 
@@ -431,7 +431,7 @@ Other
 </table>
 Take a look at the column `Difference` and notice that the sum of its
 entries is 0: the positive entries add up to 0.14, exactly canceling the
-total of the negative entries which is -0.14.
+total of the negative entries, which is -0.14.
 
 This is numerical evidence of the fact that in the bar chart, the gold
 bars exceed the blue bars by exactly as much as the blue bars exceed the
