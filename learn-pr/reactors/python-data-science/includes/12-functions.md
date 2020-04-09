@@ -17,7 +17,7 @@ Now we can call this function and compute the Fibonacci series up to some arbitr
 fib(2000)
 ```
 
-```output
+```Output
 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597,
 ```
 
@@ -28,7 +28,7 @@ nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 list(filter(lambda x: x % 2 != 0, nums))
 ```
 
-```output
+```Output
 [1, 3, 5, 7, 9]
 ```
 

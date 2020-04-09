@@ -8,7 +8,7 @@ if y % 2 == 0:
     print('Even')
 ```
 
-```output
+```Output
 Even
 ```
 
@@ -28,7 +28,7 @@ else:
     print('Odd')
 ```
 
-```output
+```Output
 Odd
 ```
 
@@ -44,7 +44,7 @@ else:
     print('Odd')
 ```
 
-```output
+```Output
 One
 ```
 
@@ -64,7 +64,7 @@ for color in colors:
     print(color)
 ```
 
-```output
+```Output
 red
 yellow
 blue
@@ -78,7 +78,7 @@ for i in range(len(comp_colors)):
     print(colors[i], comp_colors[i])
 ```
 
-```output
+```Output
 red green
 yellow purple
 blue orange
@@ -91,7 +91,7 @@ for j in range(5):
     print(j)
 ```
 
-```output
+```Output
 0
 1
 2
@@ -119,7 +119,7 @@ for n in range(2, 10):
         print(n, 'is a prime number')
 ```
 
-```output
+```Output
 2 is a prime number
 3 is a prime number
 4 equals 2 * 2
@@ -147,7 +147,7 @@ for num in range(2, 10):
     print("Found an odd number:", num)
 ```
 
-```output
+```Output
 Found an even number: 2
 Found an odd number: 3
 Found an even number: 4
@@ -176,7 +176,7 @@ while b < 100:
     a, b = b, a+b
 ```
 
-```output
+```Output
 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89,
 ```
 
@@ -186,3 +186,4 @@ Go ahead and play with the number of iterations for the `while` loop. Notice tha
 > ### Takeaway
 >
 > Control flows are what make programs programs, as opposed to a single sequence of operations. Mastering the logical flow of information in Python will enable you to automate tasks that would be impossibly complex or time-consuming to do manually.
+>

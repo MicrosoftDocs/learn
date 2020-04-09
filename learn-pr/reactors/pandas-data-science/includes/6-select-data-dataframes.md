@@ -1,11 +1,3 @@
-<div>
-<style>
-   table { border-collapse: collapse; border: 1px solid darkgrey; background-color:rgb(240,240,240); width: 300px; padding: 5px; }
-   tr { border: 1px solid darkgrey; text-align: left; padding: 5px; }
-   td { border: 1px solid darkgrey; padding: 5px; }
-</style>
-</div>
-
 `DataFrames` also exhibit dual behavior, acting both like a two-dimensional `ndarray` and like a dictionary of `Series` sharing the same index.
 
 > [!Note]
@@ -33,15 +25,15 @@ countries = pd.DataFrame({'Area': area, 'Population': population})
 countries
 ```
 
-```Output```
-
-|   | Area | Population |
-|---|---|---|
-| **Albania** | 28748 | 2937590 |
-| **France** | 643801 | 65429495 | 
-| **Germany** | 357386 | 82408706 | 
-| **Japan** | 377972 | 126922333 | 
-| **Russia** | 17125200 | 143910127 | 
+```Output
+|          | Area     | Population | 
+------------------------------------
+| Albania  | 28748    | 2937590    |
+| France   | 643801   | 65429495   | 
+| Germany  | 357386   | 82408706   | 
+| Japan    | 377972   | 126922333  | 
+| Russia   | 17125200 | 143910127  | 
+```
 
 You can access the individual `Series` that make up the columns of a `DataFrame` via dictionary-style indexing of the column name:
 
@@ -65,15 +57,15 @@ countries['Population Density'] = countries['Population'] / countries['Area']
 countries
 ```
 
-```Output```
-
-|   | Area |  Population | Population density |
-|---|---|---|---|
-| **Albania** | 28748 | 2937590 | 102.184152 |
-| **France** | 643801 | 65429495 | 101.629999 |
-| **Germany** | 357386 | 82408706 | 230.587393 |
-| **Japan** | 377972 | 126922333 | 335.798242 |
-| **Russia** | 17125200 | 143910127 | 8.403413 |
+```Output
+|          | Area      | Population   | Population density |
+------------------------------------------------------------
+| Albania  | 28748     | 2937590      | 102.184152         |
+| France   | 643801    | 65429495.0   | 101.629999         |
+| Germany  | 357386    | 82408706.0   | 230.587393         |
+| Japan    | 377972    | 126922333.0  | 335.798242         |
+| Russia   | 17125200  | 143910127.0  | 8.403413           |
+```
 
 ## DataFrame as two-dimensional array
 
@@ -97,13 +89,13 @@ Viewed this way, it makes sense that we can transpose the rows and columns of a 
 countries.T
 ```
 
-```Output```
-
-|   | Albania |  France | Germany | Japan | Russia |
-|---|---|---|---|---|---|
-| **Area** | 2.874800e+04 | 6.438010e+05 | 3.573860e+05 | 3.779720e+05 | 1.712520e+07 |
-| **Population** | 2.937590e+06 | 6.542950e+07 | 8.240871e+07 | 1.269223e+08 | 1.439101e+08 |
-| **Population density** | 1.021842e+02 | 1.016300e+02 | 2.305874e+02 | 3.357982e+02 | 8.403413e+00 |
+```Output
+|                     | Albania  | France        | Germany       | Japan         | Russia        |
+--------------------------------------------------------------------------------------------------
+| Area                | 2.874800e+04 | 6.438010e+05 | 3.573860e+05 | 3.779720e+05 | 1.712520e+07 |
+| Population          | 2.937590e+06 | 6.542950e+07 | 8.240871e+07 | 1.269223e+08 | 1.439101e+08 |
+| Population density  | 1.021842e+02 | 1.016300e+02 | 2.305874e+02 | 3.357982e+02 | 8.403413e+00 |
+```
 
 `DataFrames` also uses the `loc` and `iloc` indexers. With `iloc`, you can index the underlying array as if it were an `ndarray` but with the `DataFrame` index and column labels maintained in the result:
 
@@ -111,13 +103,13 @@ countries.T
 countries.iloc[:3, :2]
 ```
 
-```Output```
-
-|   | Area | Population |
-|---|---|---|
-| **Albania** | 28748 | 2937590 |
-| **France** | 643801 | 65429495 | 
-| **Germany** | 357386 | 82408706 | 
+```Output
+|          | Area     | Population | 
+------------------------------------
+| Albania  | 28748    | 2937590    |
+| France   | 643801   | 65429495   | 
+| Germany  | 357386   | 82408706   | 
+```
 
 `loc` also permits array-like slicing but using the explicit index and column names:
 
@@ -125,13 +117,13 @@ countries.iloc[:3, :2]
 countries.loc[:'Germany', :'Population']
 ```
 
-```Output```
-
-|   | Area | Population |
-|---|---|---|
-| **Albania** | 28748 | 2937590 |
-| **France** | 643801 | 65429495 | 
-| **Germany** | 357386 | 82408706 | 
+```Output
+|          | Area     | Population | 
+------------------------------------
+| Albania  | 28748    | 2937590    |
+| France   | 643801   | 65429495   | 
+| Germany  | 357386   | 82408706   | 
+```
 
 You can also use array-like techniques such as masking and fancy indexing with loc.
 
@@ -152,13 +144,13 @@ In practice in the world of data science (and pandas more generally), _indexing_
 countries['France':'Japan']
 ```
 
-```Output```
-
-|   | Area |  Population | Population density |
-|---|---|---|---|
-| **France** | 643801 | 65429495 | 101.629999 |
-| **Germany** | 357386 | 82408706 | 230.587393 |
-| **Japan** | 377972 | 126922333| 335.798242 |
+```Output
+|          | Area      | Population   | Population density |
+------------------------------------------------------------
+| France   | 643801    | 65429495.0   | 101.629999         |
+| Germany  | 357386    | 82408706.0   | 230.587393         |
+| Japan    | 377972    | 126922333.0  | 335.798242         |
+```
 
 Such slices can also refer to rows by number rather than by index:
 
@@ -166,12 +158,12 @@ Such slices can also refer to rows by number rather than by index:
 countries[1:3]
 ```
 
-```Output```
-
-|   | Area |  Population | Population density |
-|---|---|---|---|
-| **France** | 643801 | 65429495 | 101.629999 |
-| **Germany** | 357386 | 82408706 | 230.587393 |
+```Output
+|          | Area      | Population   | Population density |
+------------------------------------------------------------
+| France   | 643801    | 65429495.0   | 101.629999         |
+| Germany  | 357386    | 82408706.0   | 230.587393         |
+```
 
 Similarly, direct masking operations are also interpreted row-wise rather than column-wise:
 
@@ -179,11 +171,11 @@ Similarly, direct masking operations are also interpreted row-wise rather than c
 countries[countries['Population Density'] > 200]
 ```
 
-```Output```
-
-|   | Area |  Population | Population density |
-|---|---|---|---|
-| **Germany** | 357386 | 82408706 | 230.587393 |
-| **Japan** | 377972 | 126922333| 335.798242 |
+```Output
+|          | Area      | Population   | Population density |
+------------------------------------------------------------
+| Germany  | 357386    | 82408706.0   | 230.587393         |
+| Japan    | 377972    | 126922333.0  | 335.798242         |
+```
 
 These two conventions are syntactically similar to those on a NumPy array, and while these may not precisely fit the mold of the Pandas conventions, they are nevertheless quite useful in practice.

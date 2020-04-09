@@ -5,7 +5,7 @@ t = (1, 2, 3)
 t
 ```
 
-```output
+```Output
 (1, 2, 3)
 ```
 
@@ -15,7 +15,7 @@ Because tuples are immutable, you cannot change elements within them:
 t[1] = 2.0
 ```
 
-```output
+```Output
 ---------------------------------------------------------------------------
 TypeError                                 Traceback (most recent call last)
 <ipython-input-110-823b86083d61> in <module>
@@ -29,7 +29,7 @@ However, you can refer to elements within them:
 t[1]
 ```
 
-```output
+```Output
 2
 ```
 
@@ -39,7 +39,7 @@ You can also slice tuples:
 t[:2]
 ```
 
-```output
+```Output
 (1, 2)
 ```
 
@@ -51,7 +51,7 @@ l = tuple(l)
 l
 ```
 
-```output
+```Output
 ('baked', 'beans', 'spam')
 ```
 
@@ -62,7 +62,7 @@ l = list(l)
 l
 ```
 
-```output
+```Output
 ['baked', 'beans', 'spam']
 ```
 
@@ -75,7 +75,7 @@ tup = ('a', 'b', 'c')
 'b' in tup
 ```
 
-```output
+```Output
 True
 ```
 
@@ -86,7 +86,7 @@ lis = ['a', 'b', 'c']
 'a' not in lis
 ```
 
-```output
+```Output
 False
 ```
 
