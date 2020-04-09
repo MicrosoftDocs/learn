@@ -2,7 +2,7 @@ A successfully configured Kubernetes installation depends on a good understandin
 
 ### What is a computer cluster?
 
-:::image type="content" source="../media/3-diagram-cluster.png" alt-text="Diagram of computer cluster." border="false":::
+:::image type="content" source="../media/3-diagram-cluster.svg" alt-text="Diagram of computer cluster." border="false":::
 
 A cluster is a set of computers that you configure to work together and view as a single system. The computers configured in the cluster will typically do the same kinds of tasks. For example, host websites, APIs, or run compute-intensive work.
 
