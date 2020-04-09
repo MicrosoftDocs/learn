@@ -8,7 +8,7 @@ groupMembers.append('Quinn')
 groupMembers
 ```
 
-```output
+```Output
 ['Jordan', 'Parker', 'Quinn']
 ```
 
@@ -20,7 +20,7 @@ groupMembers2.append(['Stuart', 'Pete'])
 groupMembers2
 ```
 
-```output
+```Output
 ['Jordan', 'Parker', 'Quinn', ['Stuart', 'Pete']]
 ```
 
@@ -31,7 +31,7 @@ groupMembers.extend(['Stuart', 'Pete'])
 groupMembers
 ```
 
-```output
+```Output
 ['Jordan', 'Parker', 'Quinn', 'Stuart', 'Pete']
 ```
 
@@ -41,7 +41,7 @@ groupMembers
 groupMembers.index('Quinn')
 ```
 
-```output
+```Output
 2
 ```
 
@@ -51,7 +51,7 @@ The [count()](https://docs.python.org/3.6/tutorial/datastructures.html) method r
 groupMembers.count('Jordan')
 ```
 
-```output
+```Output
 1
 ```
 
@@ -62,7 +62,7 @@ groupMembers.remove('Stuart')
 groupMembers
 ```
 
-```output
+```Output
 ['Jordan', 'Parker', 'Quinn', 'Pete']
 ```
 
@@ -72,7 +72,7 @@ The other method for removing items from lists is the [pop()](https://docs.pytho
 groupMembers.pop()
 ```
 
-```output
+```Output
 'Pete'
 ```
 
@@ -83,7 +83,7 @@ groupMembers.insert(1, 'Riley')
 groupMembers
 ```
 
-```output
+```Output
 ['Jordan', 'Riley', 'Parker', 'Quinn']
 ```
 
@@ -94,7 +94,7 @@ groupMembers.reverse()
 groupMembers
 ```
 
-```output
+```Output
 ['Quinn', 'Parker', 'Riley', 'Jordan']
 ```
 
@@ -105,7 +105,7 @@ groupMembers.sort()
 groupMembers
 ```
 
-```output
+```Output
 ['Quinn', 'Jordan', 'Parker', 'Riley']
 ```
 

@@ -5,7 +5,7 @@ numbers = [x for x in range(1,11)] # Remember to create a range 1 more than the 
 numbers
 ```
 
-```output
+```Output
 [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 ```
 
@@ -16,7 +16,7 @@ squares = [x*x for x in range(1,11)]
 squares
 ```
 
-```output
+```Output
 [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
 ```
 
@@ -27,7 +27,7 @@ odd_squares = [x*x for x in range(1,11) if x % 2 != 0]
 odd_squares
 ```
 
-```output
+```Output
 [1, 9, 25, 49, 81]
 ```
 
