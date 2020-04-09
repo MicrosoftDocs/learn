@@ -45,9 +45,7 @@ Identify the subtasks of *Securing you: basics and beyond*
 
     Hackers often employ a technique called "credential stuffing" where special tools are used that steal usernames and passwords leaked via data breaches at other sites. If the username-password combos matched, these were published for purchasing on the dark web. In some cases, hackers have also published the tools they used to let other hackers try these techniques for themselves. The result? Hackers are able to gain access to user accounts and can even attempt to compromise devices and assets belonging to the user. 
 
-    *Add your scenario [(Scenario guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-scenarios)*
-
-2. **Understanding Phishing**
+1. **Understanding Phishing**
     - Phishing Awareness objective
         - (Phishing scenario story)
         - What happened?
@@ -64,12 +62,16 @@ Identify the subtasks of *Securing you: basics and beyond*
     - Tools
         - Phishing indicators
     - ACTIONS: what can I do?
+    - Identifying phishing video
+        - recorded video/PowerPoint with voiceover - examples of phishing and what to look for
 
-3. **Exercise 1 - Identifying Phishing**
+    **Knowledge check**
 
-    - recorded video/PowerPoint with voiceover - examples of phishing and what to look for
-    
-4. **Passwords**
+    What types of questions will test *learning objective*? *[(Knowledge check guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-knowledge-check)*
+
+    - 3x Questions (Multiple choice, all of the above)
+
+1. **Passwords**
     - (Password Scenario story)
     - Password "Hall of Shame"
         - Review poor password management behaviors
@@ -85,12 +87,17 @@ Identify the subtasks of *Securing you: basics and beyond*
             - Cloud-based storage
         - MFA, Tokens, and Secrets
     - ACTIONS: what can I do?
+    - Good passwords vs. bad passwords video
+        - recorded video/PowerPoint with voiceover - examples reviewing good/bad password strategies
 
-5. **Exercise 2 - Good Passwords vs. Bad Passwords**
-    - recorded video/PowerPoint with voiceover - examples reviewing good/bad password strategies
+    **Knowledge check**
 
-6. **Has my Identity been compromised?**
-    
+    What types of questions will test *learning objective*? *[(Knowledge check guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-knowledge-check)*
+
+    - 3x Questions (Multiple choice, all of the above)
+
+1. **Has my Identity been compromised?**
+
     - Compromised Identity Awareness objective
         - ("pwned" scenario story)
     - Terminology
@@ -104,20 +111,14 @@ Identify the subtasks of *Securing you: basics and beyond*
     - Identifying if I've been compromised
         - "Indicators of Compromise"
     - ACTIONS: what can I do?
-    
+
     **Knowledge check**
 
     What types of questions will test *learning objective*? *[(Knowledge check guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-knowledge-check)*
 
     - 3x Questions (Multiple choice, all of the above) 
 
-7. **Final Quiz - knowledge check**
-
-    What types of questions will test *learning objective*? *[(Knowledge check guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-knowledge-check)*
-
-    - 10x Questions (Multiple choice, all of the above)
-    
-8. **Final Summary - What can I do?**
+1. **Summary**
     - "Securing You"
         - Go Do's
         - Don't Do's
@@ -125,7 +126,7 @@ Identify the subtasks of *Securing you: basics and beyond*
     - Continuing research and education
         - Share
         - Keep Learning
-    
+
 ## Notes
 
 ### Strategies and Resources
