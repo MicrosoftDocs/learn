@@ -14,8 +14,8 @@ abstract: |
   In this module, you will:
     - Establish an Application Programming Interfaces (API).
     - Evaluate an existing project that implements Express APIs.
-    - Create a new Azure Functions application.
-    - Refactor the Express APIs to the Azure Functions application.
+    - Create a new Azure Functions application with TypeScript/JavaScript.
+    - Refactor the Node.js Express APIs to the Azure Functions application.
     - Run and debug the application locally.
     - Understand the differences and similarities in refactoring Express APIs to Azure Functions.
 prerequisites: |
