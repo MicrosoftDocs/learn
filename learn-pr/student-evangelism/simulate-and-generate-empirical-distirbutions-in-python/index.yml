@@ -23,7 +23,7 @@ roles:
 products: 
 - azure
 units: 
-- learn.student-evangelism.simulate-and-generate-empirical-distirbutions-in-python.simulation
+- learn.student-evangelism.simulate-and-generate-empirical-distirbutions-in-python.introduction
 - learn.student-evangelism.simulate-and-generate-empirical-distirbutions-in-python.monty-hall-problem
 - learn.student-evangelism.simulate-and-generate-empirical-distirbutions-in-python.sampling-and-empirical-distributions
 - learn.student-evangelism.simulate-and-generate-empirical-distirbutions-in-python.empirical-distributions
