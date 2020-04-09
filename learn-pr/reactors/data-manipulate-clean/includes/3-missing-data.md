@@ -106,7 +106,7 @@ What happens if you add `np.nan` and **None** together?
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
   
-Remember: **NaN** is just for missing floating-point values; there is no **NaN** equivalent for integers, strings, or Booleans.
+Remember: <b>NaN</b> is just for missing floating-point values; there is no <b>NaN</b> equivalent for integers, strings, or Booleans.
 </details>
 
 ## NaN and None: Null values in pandas
@@ -158,6 +158,8 @@ What is the `dtype` of the series?
 Add hint... TBD.
 </details>
 
+
+
 In the process of upcasting data types to establish data homogeneity in Series and DataFrames, pandas will willingly switch missing values between **None** and **NaN**. Because of this design feature, it can be helpful to think of **None** and **NaN** as two different flavors of null in pandas. Indeed, some of the core methods you will use to deal with missing values in pandas reflect this idea in their names:
 
 * `isnull()`: Generates a Boolean mask that indicates missing values
@@ -196,7 +198,7 @@ Now, let's turn this around and use these methods in a manner more like you will
 ### Try it yourself
 
 > [!NOTE]
-> **To Sarah** - TBD: Could you provide the hints or solutions for the three exercises in this "try it"?
+> **To Sarah** - TBD: Could you provide the hint or solution for this exercise?
 
 Try running `example3[example3.notnull()]`. But before you do, what do you expect to see?
 
@@ -374,7 +376,7 @@ dtype: float64
 ### Try it yourself
 
 > [!NOTE]
-> **To Sarah** - TBD: Could you provide the hints or solutions for the three exercises in this "try it"?
+> **To Sarah** - TBD: Could you provide the hint or solution for this exercise?
 
 What happens if you try to fill null values with a string, like `''`?
 
@@ -481,6 +483,8 @@ Can you think of a longer code snippet to write that can fill all the null value
   
 Add hint... TBD.
 </details>
+
+
 
 You can be creative about how you use `fillna`. For example, let's look at `example4` again, but this time, we'll fill the missing values with the average of all the values in the DataFrame.
 
