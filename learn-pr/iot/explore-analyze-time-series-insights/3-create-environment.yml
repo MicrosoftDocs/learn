@@ -3,7 +3,7 @@ uid: learn.iot.explore-and-analyze-time-series-insights.create-time-series-insig
 metadata:
   title: Create a Time Series Insights environment
   description: In this module, you'll create a Time Series Insights environment and connect it to IoT Hub.
-  ms.date: 10/03/2020
+  ms.date: 04/10/2020
   author: cmaneu
   ms.author: chmaneu
   ms.topic: interactive-tutorial
