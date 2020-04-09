@@ -23,6 +23,7 @@ roles:
 products: 
 - azure
 units: 
+- learn.student-evangelism.understand-the-normal-curve.setup
 - learn.student-evangelism.understand-the-normal-curve.introduction
 - learn.student-evangelism.understand-the-normal-curve.variability
 - learn.student-evangelism.understand-the-normal-curve.sd-and-the-normal-curve
