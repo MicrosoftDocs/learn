@@ -27,6 +27,7 @@ modules:
 - learn.connect-app-to-azure-storage
 - learn.ha-application-storage-with-grs
 - learn.azure.secure-azure-storage-account
+- learn.store-and-share-with-azure-files
 - learn.choose-the-right-disk-storage-for-vm-workload
 - learn.monitor-diagnose-and-troubleshoot-azure-storage
 trophy:

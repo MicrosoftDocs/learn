@@ -10,7 +10,7 @@ The SQLite native libraries are built in to Android and iOS by default; however,
 
 ## What is SQLite.NET?
 
-![An illustration showing SQLite being accessed by our application through a .NET API](../media/3-dotnet-api.png)
+![Illustration showing SQLite being accessed by your application through a third-party .NET API.](../media/3-dotnet-api.png)
 
 There are several C# wrappers around the native SQLite engine that .NET developers can use. Many Xamarin developers use a popular C# wrapper called SQLite.NET.
 

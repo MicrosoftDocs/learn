@@ -1,25 +1,26 @@
 ### YamlMime:Module
 uid: learn.languages.python-lists
 metadata:
-  title: Manage a sequence of data with Python lists
-  description: Use lists to manage a collection of data, then use helper methods to manipulate it and the for statement to iterate through it.
+  title: Manage a sequence of data by using Python lists
+  description: Learn how to use lists to manage a collection of data. Use helper functions to manipulate the list. Use the `for` statement to iterate through the list.
   ms.date: 02/19/2020
   author: bobtabor-msft
   ms.author: rotabor
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Manage a sequence of data with Python lists
-summary: Use lists to manage a collection of data, then use helper methods to manipulate it and the for statement to iterate through it. 
+title: Manage a sequence of data by using Python lists
+summary: Learn how to use lists to manage a collection of data. Use helper functions to manipulate the list. Use the for statement to iterate through the list.
 abstract: |
   In this module, you will:
-  - Create lists containing related data.
-  - Get an item or a subset of items from the list using indices and slices.
-  - Add and remove items from the list and other list-related actions using helper functions.
-  - Iterate through the list using the `for` iteration statement.
+  - Create lists of related data.
+  - Get an item or a subset of items from a list by using indexes and slices.
+  - Add and remove items from a list.
+  - Use helper functions for other list-related actions.
+  - Iterate through a list by using the `for` iteration statement.
 prerequisites: |
-  - You should have your local Python development setup and are able to create a working folder for your code, add code files, and execute those code files from the command line or your code editor.
-  - You should know how to work with data types like `str` and `int`, know how to work with variables, and so on.
-  - You should be familiar with importing the `random` module and how to call functions from that module like `randint()`.
+  - A local Python development setup where you can create a working folder for your code, add code files, and execute those code files from the command line or your code editor.
+  - Understanding of how to work with variables, data types like `str` and `int`, and so on.
+  - Familiarity with importing the `random` module and with how to call functions like `randint()` from the module.
 ratingEnabled: true
 iconUrl: /learn/achievements/generic-badge.svg
 levels:

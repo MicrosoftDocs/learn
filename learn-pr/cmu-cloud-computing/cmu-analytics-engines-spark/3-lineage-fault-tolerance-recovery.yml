@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-computing.distributed-programming.analytics-engines-spark.3-lineage-fault-tolerance-recovery
+title: Lineage, fault tolerance, and recovery
+metadata:
+  title: Lineage, fault tolerance, and recovery
+  description: Lineage, fault tolerance, and recovery
+  ms.date: 03/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-lineage-fault-tolerance-recovery.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+# Did I Get This block 1
+  - content: "What is an RDD?"
+    choices:
+    - content: "Distributed collection of objects on disk"
+      isCorrect: false
+      explanation: "Incorrect. Think of the different ways RDDs can be persisted."
+    - content: "Distributed collection of objects in memory"
+      isCorrect: false
+      explanation: "Incorrect. Think of the different ways RDDs can be persisted."
+    - content: "Distributed collection of objects in Cassandra"
+      isCorrect: false
+      explanation: "Incorrect. Think of the different ways RDDs can be persisted."
+    - content: "All of the above"
+      isCorrect: true
+      explanation: "Correct!"
+
+# Did I Get This block 2
+  - content: "Compare the data-loss fault-tolerance mechanisms of Spark and Hadoop for a long computation:"
+    choices:
+    - content: "Spark fault tolerance is **more** costly to implement. Spark node failure is **more** costly to recover from."
+      isCorrect: false
+      explanation: "Incorrect. Spark uses lineage for fault tolerance. Hadoop uses replication of blocks on HDFS."
+    - content: "Spark fault tolerance is **less** costly to implement. Spark node failure is **less** costly to recover from."
+      isCorrect: false
+      explanation: "Incorrect. Spark uses lineage for fault tolerance. Hadoop uses replication of blocks on HDFS."
+    - content: "Spark fault tolerance is **more** costly to implement. Spark node failure is **less** costly to recover from."
+      isCorrect: false
+      explanation: "Incorrect. Spark uses lineage for fault tolerance. Hadoop uses replication of blocks on HDFS."
+    - content: "Spark fault tolerance is **less** costly to implement. Spark node failure is **more** costly to recover from."
+      isCorrect: true
+      explanation: "Correct!"

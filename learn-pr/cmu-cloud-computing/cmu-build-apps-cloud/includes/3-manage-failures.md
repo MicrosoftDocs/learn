@@ -1,10 +1,10 @@
-A large part of datacenter and cloud service management involves designing and maintaining a reliable service based on unreliable parts. The following figure shows part of Google's training for new hires, and should provide an idea of the large number (and types) of failures that are experienced regularly at a large datacenter. 
+A large part of datacenter and cloud service management involves designing and maintaining a reliable service based on unreliable parts. The following figure shows part of a training for new hires, and should provide an idea of the large number (and types) of failures that are experienced regularly at a large datacenter. 
 
-![Reliability issues as shown in a Google presentation](../media/google.png)
+![Reliability issues as shown in a training presentation](../media/reliability-slide.png)
 
-_Figure 2: Reliability issues as shown in a Google presentation_
+_Figure 2: Reliability issues as shown in a training presentation_
 
-A failure in a system occurs as a result of an invalid state introduced within the system due to a fault. Systems typically develop faults of one of the following types: 
+A failure in a system occurs as a result of an invalid state introduced within the system due to a fault. Systems typically develop faults of one of the following types:
 - **Transient faults**: Temporary faults in the system that correct themselves with time. 
 - **Permanent faults**: Faults that cannot be recovered from and generally require replacement of resources. 
 - **Intermittent faults**: Faults that occur periodically in a system.

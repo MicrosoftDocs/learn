@@ -1,10 +1,12 @@
-In the previous unit, we got our first chance to create our own functions.  We created functions with multiple input parameters, and even input parameters with default values.  However, you have additional options when it comes to input parameters including arbitrary argument lists and keyword arguments (also referred to as named arguments).
+In the previous unit, you got your first chance to create your own functions. You created functions with multiple input parameters and input parameters with default values.
 
-### Step 1 - Add a new file for this exercise to your working directory.
+You have additional options for input parameters. These options include arbitrary arguments lists and keyword (or named) arguments.
 
-Assuming you're continuing from the previous unit, use the techniques you learned in previous modules to add a new code file in the current folder dedicated to this module.  For example, you might create a new file named `exercise2.py`.
+### Step 1 - Add a new file for this exercise to your working directory
 
-### Step 2 - Add code that creates a function accepting an arbitrary arguments list.
+This unit assumes you're continuing from the previous unit. Use the techniques you learned in previous modules to add a new code file in the folder dedicated to this module. Name the new file exercise2.py.
+
+### Step 2 - Add code that creates a function accepting an arbitrary arguments list
 
 Add the following code to your new code file:
 
@@ -17,11 +19,12 @@ print_args('a')
 print_args('a', 'b')
 print_args('a', 'b', 'c')
 ```
-Here we create the `print_args()` function that accepts an arbitrary arguments list as defined by the `*args` input parameter.  This means that a caller of this function can pass any number of arguments into the function.  You can then access all of the arguments using the `args` variable.  `args` stores a collection of the arguments that you can iterate through.
 
-Below the function definition, we call `print_args()` three times passing in different values.
+Here you create the `print_args()` function that accepts an arbitrary arguments list as defined by the `*args` input parameter. A caller of this function can pass any number of arguments into the function. The function then uses the `args` variable to access all the arguments. That variable stores a collection of the arguments that the function can iterate through.
 
-When you execute the code, you should see the following output:
+After the function definition, the code calls `print_args()` three times, passing in a different value each time.
+
+When you run the code, you should see the following output:
 
 ```output
 arg = a
@@ -31,9 +34,10 @@ arg = a
 arg = b
 arg = c
 ```
-Arbitrary argument lists are useful when you do not know how many arguments that caller will pass, but you want to be able to handle whatever they pass.  This likely means you will need to iterate through each item in the `args` and sum, concatenate, or perform some other aggregate operation on those items.
 
-But what is the data type of `args`?  Comment out the iteration statement and add the print statements that display the content of `args` and the data type of `args`, respectively.
+Use arbitrary arguments lists in functions when you don't know how many arguments callers will pass but want the functions to handle whatever is passed. Your code will likely need to iterate through each item in `args` and sum, concatenate, or do some other aggregate operation on those items.
+
+But what is the data type of `args`? Comment out the iteration statement and add `print` statements that display the content and data type of `args`.
 
 ```python
 def print_args(*args):
@@ -46,7 +50,8 @@ print_args('a')
 print_args('a', 'b')
 print_args('a', 'b', 'c')
 ```
-When you execute the code, you should see the following output:
+
+When you run the code, you should see the following output:
 
 ```output
 ('a',)
@@ -56,20 +61,26 @@ When you execute the code, you should see the following output:
 ('a', 'b', 'c')
 <class 'tuple'>
 ```
-The arbitrary arguments list is not of type `list`, but rather of type `tuple`.  What is a tuple?  In short, it's just like a list with a few differences.  The most notable difference is that you cannot modify the contents of the tuple.  In other words, you cannot call `append()` or `remove()`, you cannot call `sort()` or `reverse()`, and you can't assign a new value to an element.  In other words, you could not do this:
+
+An arbitrary arguments list isn't of type **list** but rather is of type **tuple**.
+
+What is a tuple? In short, it's just like a list with a few differences. The most notable difference is that you can't modify the contents of a tuple. In the current code sample, the function can't call **append()** or **remove()**, call **sort()** or **reverse()**, or assign a new value to an element.
+
+For example, your code can't do this assignment:
 
 ```python
 args[0] = 'z'
 ```
-Otherwise, you would get an error:
+
+Such code produces this error:
 
 ```output
 TypeError: 'tuple' object does not support item assignment
 ```
 
-### Step 3 - Comment out the code from the previous step and add code that accepts keyword arguments.
+### Step 3 - Comment out the code from the previous step and add code that accepts keyword arguments
 
-Similar to the arbitrary arguments list is the keyword arguments (also known as named arguments).  Callers can pass an arbitrary number of arguments and each argument must specify a name of the argument along with the value.
+Keyword arguments, which are also known as named arguments, are similar to arbitrary arguments lists. Callers can pass any number of keyword arguments. Each argument must specify its name along with its value.
 
 Comment out the code from the previous step and add the following code listing:
 
@@ -86,18 +97,23 @@ print_keyword_args(first='b', second='c')
 print_keyword_args(first='d', second='e', third='f')
 ```
 
-In this case, we call the `print_keyword_args()` function three times.  Each time, we pass in one or more keyword arguments, like `first='a'`.  In the body of the function, we can access a specific argument (if it exists) using the `kwargs.get()` method.  We call it passing in a name that could potentially be passed in, and a default value.  In our example, we're looking for a keyword named `'third'`.  If it doesn't exist in `kwargs`, then we set it to the default value `None`.
+In this case, the code calls the `print_keyword_args()` function three times. Each time, it passes in one or more keyword arguments like `first='a'`. The function body can access a specific existing argument by using the `kwargs.get()` method.
 
-When you execute the code, you should see the following output:
+Each call to `kwargs.get()` passes in a name and a default value. In the current example, the function looks for a keyword named `'third'`. If `'third'` doesn't exist in `kwargs`, the variable `third` is set to the default value `None`.
+
+When you run the code, you should see the following output:
 
 ```output
 third arg = f
 ```
-This system provides a flexible way to allow the caller to pass in.  The downside to this approach is that you need to rely on documentation or the caller needs to read the function's source code in order to understand what it expects.  If we didn't already know that we could (or should) pass an argument called `third`, then we may never understand how to use the function correctly.
 
-### Step 4 - Update the code example to iterate through each keyword and value.
+This approach provides a flexible way for a caller to pass in arguments. The downside is that you must rely on a function's documentation or source code to understand what that function expects. If you didn't already know that you could (or should) pass an argument called `third`, you might never understand how to use the function correctly.
 
-Next, we'll iterate through each keyword and value in kwargs.  Update the exercise code to match the following code listing:
+### Step 4 - Update the code example to iterate through each keyword and value
+
+Next, you'll learn how to iterate through each keyword and value in `kwargs`.
+
+Update the exercise code to match the following code listing:
 
 ```python
 def print_keyword_args(**kwargs):
@@ -118,15 +134,15 @@ print_keyword_args(first='d', second='e', third='f')
 
 ```
 
-We added a `for` statement to iterate through the collection.  If you're familiar with using `for` statement to iterate through a `list`, then you might wonder how this code works:
+You added a `for` statement to iterate through the collection. If you're familiar with using a `for` statement to iterate through a **list** object, you might wonder how this code works:
 
 ```python
 for key, value in kwargs.items():
 ```
 
-In this case, we're not working with a `list`, but rather a `dict`, or rather, a dictionary.  A dictionary is similar to a list, except each item has two parts: a name (or key) and a value.  We'll learn more about the dictionary in another module.  However, in our code example, the `key` is populated with the argument's keyword, and the `value` is populated with the argument's value.
+In this case, you're working with not a **list** object but rather a **dict** object or dictionary. A dictionary is like a list, except each item has two parts: a name (or key) and a value. You'll learn more about dictionaries in another module. In your code example, `key` is set to an argument's keyword, and `value` is set to that argument's value.
 
-When you execute the code, you should see the following output:
+When you run the code, you should see the following output:
 
 ```output
 first = a 
@@ -142,9 +158,9 @@ third = f
 third arg = f
 ```
 
-### Step 5 - Update the code example to print the value of kwargs and its data type.
+### Step 5 - Update the code example to print the value of kwargs and its data type
 
-To further illustrate the data type of `kwargs`, update exercise code to match the following code listing:
+To see the data type of `kwargs`, update the exercise code to match the following code listing:
 
 ```python
 def print_keyword_args(**kwargs):
@@ -166,7 +182,7 @@ print_keyword_args(first='b', second='c')
 print_keyword_args(first='d', second='e', third='f')
 ```
 
-When you execute the code, you should see the following output:
+When you run the code, you should see the following output:
 
 ```output
 {'first': 'a'}
@@ -188,11 +204,11 @@ third = f
 third arg = f
 ```
 
-The dictionary is defined using a set of curly braces `{}`, and each item in the dictionary follows the format `'name': 'value'`.  We also see that the data type of `kwargs` is `dict`.
+The dictionary is defined using braces symbols (`{}`). Each item in the dictionary follows the format `'<name>': '<value>'`. You also see that the data type of `kwargs` is `dict`.
 
 ## Recap
 
-In this exercise, we learned about a few ways to make our functions more flexible, including:
+In this exercise, you learned a few ways to make your functions more flexible.
 
-- You can define functions using arbitrary arguments list.  This allows the caller to pass in any number of arguments.  The `args` input parameter manages the entries as a `tuple`.
-- You can define functions using keyword arguments (or named arguments).  This allows the caller to pass in any number of named arguments.  The `kwargs` input parameter manages the entries as a `dict`.
+- You can define functions that use arbitrary arguments lists. A list lets a caller pass in any number of arguments. In the previous examples, the `args` input parameter manages the entries as **tuple** values.
+- You can define functions that use keyword or named arguments. A caller can pass in any number of named arguments. In the previous examples, the `kwargs` input parameter manages the entries as **dict** values.
