@@ -1,8 +1,8 @@
-Azure provides several options to improve security and restrict access to file shares you've created. 
+Azure provides several options to improve security and restrict access to file shares you've created.
 
-The finance company you're working for wants to migrate existing data files from their on-premises file shares. Before moving these files to the cloud, the company wants to ensure that only their data center and branch offices can access them. To ensure security is in place, you'll enable secure transfers, and then only allow access from a specific set of IP addresses.
+The finance company you're working for wants to migrate existing data files from their on-premises file shares. Before moving these files to the cloud, the company wants to ensure that only their datacenter and branch offices can access them. To ensure security is in place, you'll enable secure transfers, and then allow access only from a specific set of IP addresses.
 
-In this exercise, you'll check that secure transfers are enforced on the file shares you created previously. After checking, you'll add firewall rules to restrict access to a specific IP address, then test that it can't be accessed from anywhere else. Finally, you'll create a snapshot of your file share that you can use to recover files.
+In this exercise, you'll check that secure transfers are enforced on the file shares you created previously. After checking, you'll add firewall rules to restrict access to a specific IP address, and then test that it can't be accessed from anywhere else. Finally, you'll create a snapshot of your file share that you can use to recover files.
 
 ## Enable secure file transfer
 
@@ -21,8 +21,8 @@ In this exercise, you'll check that secure transfers are enforced on the file sh
 
     ![Screenshot showing the firewalls and virtual networks options](../media/6-add-firewall-protections.png)
 
-1. Select to allow access from **Selected networks**.
-1. Under Firewall, in the address range input, enter the IP address of your VM. You can see this in the title bar of the remote desktop connection.
+1. Under **Allow access from**, select the **Selected networks** option.
+1. Under **Firewall**, in the address range input, enter the IP address of your VM. You can see this address in the title bar of the remote desktop connection.
 1. Select **Save**.
 
 ## Test security of the file share
@@ -42,33 +42,33 @@ In this exercise, you'll check that secure transfers are enforced on the file sh
 1. Return to the **Firewalls and virtual networks** settings.
 1. Select the **Add your client IP address** check box.
 1. Select **Save**.
-1. Select **Overview**, then select **File shares**.
+1. Select **Overview**, and then select **File shares**.
 1. Select the **data** file share.
 1. You can now browse the file share in your local browser.
 
 > [!NOTE]
-> You may need to navigate to the reports share as the error page could be cached for the data file share.
+> You might need to go to the reports share because the error page could be cached for the data file share.
 
-<!-- ## Install AzCopy and log in to Azure
+<!-- ## Install AzCopy and sign in to Azure
 
-1. Connect to your VM using the Remote Desktop Connection.
+1. Connect to your VM by using the remote desktop connection.
 1. Use the browser to download AzCopy by going to [https://aka.ms/downloadazcopy-v10-windows](https://aka.ms/downloadazcopy-v10-windows).
 1. In the browser, select **Save**.
-1. Open the folder containing the zip file.
+1. Open the folder that contains the zip file.
 
     ![Screenshot of expanding the AzCopy zip folder](../media/6-unzip-azcopy.png)
 
 1. Select the **azcopy_windows_amd64** zip file.
-1. In the menu, select **Compressed Folder Tools**, then select **Extract all**.
+1. On the menu, select **Compressed Folder Tools**, and then select **Extract all**.
 1. In the Extract Compressed (Zipped) Folders window, select **Extract**.
-1. Select **Start**, then the **Windows PowerShell folder**, then select **Windows PowerShell**.
-1. Move to the folder containing **AzCopy**.
+1. Select **Start**, select the **Windows PowerShell folder**, and then select **Windows PowerShell**.
+1. Move to the folder that contains **AzCopy**.
 
     ```powershell
     cd C:\Users\azureuser\Downloads\azcopy_windows_amd64_10.3.2\azcopy_windows_amd64_10.3.2
     ```
 
-1. Use AzCopy to copy the files to Azure, by first signing into the sandbox.
+1. Use AzCopy to copy the files to Azure by first signing in to the sandbox.
 
     ```powershell
     .\azcopy.exe login
@@ -78,7 +78,7 @@ In this exercise, you'll check that secure transfers are enforced on the file sh
 
 ## Copy local files to Azure
 
-1. Create some local example test files using PowerShell.
+1. Create some local example test files by using PowerShell.
 
     ```powershell
     1..100 | % { New-Item -Path F:\ -Name "$_.txt" -Value (Get-Date).toString() -ItemType file}
@@ -89,12 +89,12 @@ In this exercise, you'll check that secure transfers are enforced on the file sh
 1. Select the created storage account. It should be named **learnazurefileshare** followed by random numbers.
 1. Under **Settings**, select **Shared access signatures**.
 
-    ![text](../media/6-sas-connection-string.png)
+    ![Screenshot showing Shared access signatures](../media/6-sas-connection-string.png)
 
-1. AzCopy requires a shared access signature to authorize access to the share. 
+1. AzCopy requires a shared access signature (SAS) to authorize access to the share.
 1. Select **Generate SAS and connection string**.
 1. Copy the **File service SAS URL**.
-1. Paste the connection string into notepad and add a path to the data share. Change the string by adding `data/` to the path from:
+1. Paste the connection string into Notepad and add a path to the data share. Change the string by adding `data/` to the path from:
 
     `https://learnazurefileshare6438.file.core.windows.net/?sv=2019-02-02&ss=bfqt&srt=sco&sp=rwdlacup&se=2019-12-05T20:46:09Z&st=2019-12-05T12:46:09Z&spr=https&sig=TW1ZMwzksKMhKMqJxSCMBy5wFmut7yuR3vNlTSwFhKQ%3D`
 
@@ -131,17 +131,17 @@ In this exercise, you'll check that secure transfers are enforced on the file sh
 
 ## Create a share snapshot
 
-1. On the [Azure portal](https://portal.azure.com/?azure-portal=true), in the portal menu on the left, select **Storage Accounts**.
+1. In the [Azure portal](https://portal.azure.com/?azure-portal=true), in the portal menu on the left, select **Storage Accounts**.
 1. Select the created storage account. It should be named **learnazurefileshare** followed by random numbers.
-1. Select **File shares**, then select the **data** share.
+1. Select **File shares**, and then select the **data** share.
 1. At the top of the pane, select **Create Snapshot**.
 
     ![Screenshot showing the Create Snapshot option](../media/5-create-snapshot.png)
 
 1. Return to your VM, and open **File Explorer**.
-1. Browse to the data share mounted at the **F:** drive, right-click on any of the text files, and select **Properties**.
+1. Browse to the data share mounted at the **F** drive, right-click any of the text files, and select **Properties**.
 1. In the File properties window, select **Previous Versions**, and see the listed snapshots created on the file share.
 
-    ![Screenshot of the file properties window, showing previous snapshots](../media/6-previous-versions.png)
+    ![Screenshot of the file properties window showing previous snapshots](../media/6-previous-versions.png)
     
-    From here, you can **Open** the previous version to browse the files at that snapshot, or **Restore** files from a snapshot.
+    From here, you can select **Open** to open the previous version to browse the files at that snapshot. Or you can select **Restore** to restore files from a snapshot.
