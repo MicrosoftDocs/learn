@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.securing-you-basics-beyond
+metadata:
+  title: "Securing you: Basics and beyond"
+  description: Learn how to secure yourself from common online threats and protect your identity at work and home.
+  ms.date: 05/30/2020
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: "Securing you: Basics and beyond"
+summary: As security threats increase in number and sophistication, protecting yourself online has become incredibly important. This module will provide an overview of the security landscape, reviewing strategies and resources available for staying secure at work and at home. You'll learn about privacy, get an in-depth view into current threats, and learn effective techniques for maintaining a strong security posture.
+abstract: | 
+  In this module, you will:
+  - Understand of the current landscape of information security and associated risks
+  - Apply defensive strategies against phishing
+  - Understand the risks and mitigation strategies associated with identity breaches
+  - Identify proper password management techniques
+  - Apply appropriate defensive measures to secure your identity
+prerequisites: | 
+  - Experience using an identity to access online systems
+iconUrl: http://via.placeholder.com/120x120
+levels:
+- beginner
+roles:
+- solution-architect
+- administrator
+- developer
+products:
+- azure
+units:
+- learn.securing-you-basics-beyond.1-introduction
+- learn.securing-you-basics-beyond.2-phishing
+- learn.securing-you-basics-beyond.3-passwords
+- learn.securing-you-basics-beyond.4-compromised-identity
+- learn.securing-you-basics-beyond.5-summary
+badge:
+  uid: learn.securing-you-basics-beyond.badge

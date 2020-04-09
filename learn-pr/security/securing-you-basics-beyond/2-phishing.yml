@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.securing-you-basics-beyond.2-phishing
+metadata:
+  title: Protect yourself from phishing
+  description: Protect yourself from phishing
+  ms.date: 05/30/2020
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Protect yourself from phishing
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-phishing.md)]

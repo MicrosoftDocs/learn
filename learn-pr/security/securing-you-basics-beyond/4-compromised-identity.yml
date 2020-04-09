@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.securing-you-basics-beyond.4-comromised-identity
+metadata:
+  title: Monitor and respond to a compromised identity
+  description: Monitor and respond to a compromised identity
+  ms.date: 05/30/2020
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Monitor and respond to a compromised identity
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-compromised-identity.md)]
