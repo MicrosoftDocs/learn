@@ -182,10 +182,15 @@ a1
 array([3, 0, 3, 3, 7, 9])
 ```
 
-#### Exercise
+#### Try it yourself
 
 What happens if you try to insert a string into a1?
-Hint: try both a string like '3' and one like 'three'.
+
+<details>
+  <summary>Hint (expand to reveal)</summary>
+  
+Try both a string like '3' and one like 'three'.
+</details>
 
 ## Slicing arrays
 
