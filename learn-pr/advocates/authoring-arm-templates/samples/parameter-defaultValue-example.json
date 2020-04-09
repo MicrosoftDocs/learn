@@ -1,0 +1,9 @@
+"parameters": {
+    "storageAccountType": {
+        "type": "string",
+        "defaultValue": "Standard_GRS",
+        "metadata": {
+            "description": "The type of the new storage account created to store the VM disks."
+        }
+    }
+}

@@ -12,6 +12,8 @@ Any one on your team can leverage the templates you build in order to deploy sim
 
 Other benefits to name a few are:
 
+- **Idempotent**: Templates are idempotent, which means you can deploy the same template many times and get the same resource types in the same state
+
 - **Orchestration**: Unlike a script, You don't have to worry about the order of operations. The Azure Resource Manager orchestrates the deployment of the resources so they're created in the correct order and when possible, in parallel so your deployments finish faster than scripted  deployments.
 
     ![Template Processing](../media/template-processing.png)
@@ -20,7 +22,9 @@ Other benefits to name a few are:
 
 
 - **Modular**: You can break your templates into smaller, reusable components and link them together at deployment time. You can also nest one or multiple templates inside another templates.
+
 - **Tracked deployments**: In the Azure portal, you can review your deployment history and get information about the state of the deployment. You can see all the parameter values passed in, and any output values.
+
 - **CI/CD integration**: You can integrate templates into continuous integration and continuous deployment (CI/CD) tools like [Azure Pipelines](https://azure.microsoft.com/en-us/services/devops/pipelines/), which can automate your release pipelines for fast and reliable application and infrastructure updates. By using Azure DevOps and ARM template tasks, you can continuously build and deploy your projects.
 
 

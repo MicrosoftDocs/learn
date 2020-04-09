@@ -36,7 +36,7 @@ To make your template reusable, you will switch from a hard-coded method to a de
 
 The JSON code in the following example shows what you need to change in your template. The storageName parameter is identified as a string. The max length is set to 24 characters to prevent any names that are too long.
 
-In order to carry on with your exercises, you will add a storage account definition to your existing template.  To do so, you will edit the empty template you created in the last exercise.
+In order to carry on with your exercises, you will add a storage account definition to your existing template.  To do so, you will edit the template you used in the first 2 exercises.
 
 1. Open Visual Studio Code and the template you created in the first exercise.  From the Azure shell provided here, type the following command.
        
@@ -54,6 +54,10 @@ You'll notice that the code has changed from the last one.  In this exercise, we
 >As it was the case in the second exercise, you'll notice that the value in the **"contentVersion"** section is incremented to **"1.0.0.2"** because again, you are making changes to your template.
 
 #### Deploy template
+
+
+
+This way of handling updates means your template can include all of the resources you need for an Azure solution. You can safely redeploy the template and know that resources are changed or created only when needed. For example, if you have added files to your storage account, you can redeploy the storage account without losing those files.
 
 Now that you have modified the template, Let's deploy it. The following example deploys the template with Azure CLI.
 

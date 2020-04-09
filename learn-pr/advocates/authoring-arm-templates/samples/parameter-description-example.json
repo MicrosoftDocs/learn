@@ -1,0 +1,8 @@
+"parameters": {
+    "storageAccountType": {
+        "type": "string",
+        "metadata": {
+            "description": "The type of the new storage account created to store the VM data disks."
+        }
+    }
+}
