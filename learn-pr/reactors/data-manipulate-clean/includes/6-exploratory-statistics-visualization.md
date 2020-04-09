@@ -9,6 +9,9 @@ df = pd.read_csv('Data/housing_dataset.csv')
 df.head()
 ```
 
+ktoliver TO DO/in progress
+
+
 This dataset contains information that was collected from the U.S Census Bureau about housing in the area of Boston, Massachusetts. The dataset was first published in 1978. The dataset has 14 columns:
 
 * **`CRIM`**: Per-capita crime rate by town
@@ -49,7 +52,8 @@ df.describe()
 
 Here's the output, which shows all the values:
 
-![A screenshot that shows the output of running df.describe()](../media/iris-df-head.png)
+ktoliver TO DO/in progress
+
 
 Because a dataset can have only so many columns, often it can be useful to transpose the results of `DataFrame.describe` to use them better.
 
@@ -97,7 +101,17 @@ The output shows that 77.5% is the median of `AGE`:
 
 ### Try it yourself
 
+> [!NOTE]
+> **To Sarah** - TBD: Could you provide the hint or solution for this exercise?
+
 Now, find the maximum value in `df['AGE']`.
+
+<details>
+  <summary>Hint <i>(expand to reveal)</i></summary>
+  
+Add hint... TBD.
+</details>
+
 
 Other information that you often will want to see is the relationship between different columns. To do this, use the `DataFrame.groupby` method. For example, you could examine the average `MEDV` (median value of owner-occupied homes) for each value of `AGE` (proportion of owner-occupied units built prior to 1940):
 
@@ -175,7 +189,17 @@ Name: MEDV, Length: 356, dtype: float64
 
 ### Try it yourself
 
+> [!NOTE]
+> **To Sarah** - TBD: Could you provide the hint or solution for this exercise?
+
 Now try to find the median value for `AGE` for each value of `MEDV`.
+
+<details>
+  <summary>Hint <i>(expand to reveal)</i></summary>
+  
+Add hint... TBD.
+</details>
+
 
 You can also apply a lambda function to each element of a DataFrame column by using the `apply` method. For example, say you wanted to create a new column that flagged a row if more than 50 percent of owner-occupied homes were build before 1940:
 
@@ -269,14 +293,20 @@ groupby_twovar.unstack()
 
 Here's the output:
 
-> [!IMPORTANT]
-> 
-> Waiting for a decision about how to display table output--screenshot or div. If screenshot, how extensive alt text should be.
->
+ktoliver TO DO/in progress
 
 ### Try it yourself
 
+> [!NOTE]
+> **To Sarah** - TBD: Could you provide the hint or solution for this exercise?
+
 How could you use `groupby` to get a sense of the proportion of residential land zoned for lots larger than 25,000 sq.ft., the proportion of non-retail business acres per town, and the distance of towns from employment centers in Boston?
+
+<details>
+  <summary>Hint <i>(expand to reveal)</i></summary>
+  
+Add hint... TBD.
+</details>
 
 It's often valuable to know how many unique values a column has in it by using the `nunique` method:
 
@@ -343,7 +373,7 @@ df.corr(method='pearson')
 
 Here's the output:
 
-<!-- waiting for input  ![A screenshot that shows the output of running df.corr](../media/df-corr.png) -->
+ktoliver TO DO/in progress
 
 Suppose you want to look only at the correlations between all the columns and one variable? Let's examine only the correlation between all other variables and the percentage of owner-occupied houses build before 1940 (`AGE`). We will do this by accessing the column by index number:
 

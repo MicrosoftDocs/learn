@@ -1,4 +1,4 @@
-Your most interesting analyses often will come from data melded together from more than one source. Because of this, pandas provides several methods of merging and joining datasets to make this necessary job easier:
+Your most interesting analyses often will come from data that's melded together from more than one source. Because of this, pandas provides several methods of merging and joining datasets to make this necessary job easier:
 
 * `pandas.merge` connects rows in DataFrames based on one or more keys.
 * `pandas.concat` concatenates or “stacks” together objects along an axis.
@@ -8,7 +8,7 @@ Let's examine merging data first, because it will be the most familiar to those 
 
 ## Categories of joins
 
-`merge` carries out several types of joins: one-to-one, many-to-one, and many-to-many. You use the same basic function call to implement all of them, and we will examine all three. You will need all three at some point in your data-delving, depending on the data.) We will start with one-to-one joins because they generally are the simplest example.
+`merge` carries out several types of joins: one-to-one, many-to-one, and many-to-many. You use the same basic function call to implement all of them, and we will examine all three. You will need all three at some point in your data-delving, depending on the data. We will start with one-to-one joins because they generally are the simplest example.
 
 ## One-to-one joins
 
@@ -24,10 +24,14 @@ df1
 
 Here's the output:
 
-> [!IMPORTANT]
-> 
-> Waiting for a decision about how to display table output--screenshot or div. If screenshot, how extensive alt text should be.
->
+```output
+|   | employee | group      |
+-----------------------------
+| 0 | Gary     | Accounting |
+| 1 | Stu      | Marketing  |
+| 2 | Mary     | Marketing  |
+| 3 | Sue      | HR         |
+```
 
 Next, let's look at the years that the same four employees were hired:
 
@@ -37,12 +41,16 @@ df2 = pd.DataFrame({'employee': ['Mary', 'Stu', 'Gary', 'Sue'],
 df2
 ```
 
-Here's the output:
+This output is returned:
 
-> [!IMPORTANT]
-> 
-> Waiting for a decision about how to display table output--screenshot or div. If screenshot, how extensive alt text should be.
->
+```output
+|   | employee | hire_date |
+----------------------------
+| 0 | Mary     | 2008      |
+| 1 | Stu      | 2012      |
+| 2 | Gary     | 2017      |
+| 3 | Sue      | 2018      |
+```
 
 Combine this information in a single DataFrame by using the `merge` function:
 
@@ -53,12 +61,16 @@ df3
 
 Here's the output:
 
-> [!IMPORTANT]
-> 
-> Waiting for a decision about how to display table output--screenshot or div. If screenshot, how extensive alt text should be.
->
+```output
+|   | employee | group      | hire_date |
+-----------------------------------------
+| 0 | Mary     | Accounting | 2008      |
+| 1 | Stu      | Marketing  | 2012      |
+| 2 | Gary     | Marketing  | 2017      |
+| 3 | Sue      | HR         | 2018      |
+```
 
-pandas joined on the employee column because it was the only column common to both df1 and df2. (Notice also that the original indices of df1 and df2 were discarded by merge; this is generally the case with merges unless you conduct them by index, which we will discuss later on.)
+pandas joined on the employee column because it was the only column common to both df1 and df2. (Notice also that the original indices of df1 and df2 were discarded by `merge`; this is generally the case with merges unless you conduct them by index, which we will discuss later on.)
 
 ## Many-to-one joins
 
@@ -74,10 +86,13 @@ df4
 
 Here's the output:
 
-> [!IMPORTANT]
-> 
-> Waiting for a decision about how to display table output--screenshot or div. If screenshot, how extensive alt text should be.
->
+```output
+|   | group      | supervisor |
+-------------------------------
+| 0 | Accounting | Carlos     |
+| 1 | Marketing  | Giada      |
+| 2 | HR         | Stephanie  |
+```
 
 You also can join two data sources:
 
@@ -85,27 +100,37 @@ You also can join two data sources:
 pd.merge(df3, df4)
 ```
 
-Here's the output:
+This output is returned:
 
-> [!IMPORTANT]
-> 
-> Waiting for a decision about how to display table output--screenshot or div. If screenshot, how extensive alt text should be.
->
+```output
+|   | employee | group      | hire_date | supervisor |
+------------------------------------------------------
+| 0 | Gary     | Accounting | 2017      | Carlos     |
+| 1 | Stu      | Marketing  | 2012      | Giada      |
+| 2 | Mary     | Marketing  | 2008      | Giada      |
+| 3 | Sue      | HR         | 2018      | Stephanie  |
+```
 
 The resulting DataFrame has an additional column for supervisor; that column has an extra occurrence of **Giada** that did not occur in df4 because more than one employee in the merged DataFrame works in the **Marketing** group.
 
-Notice that we didn’t specify which column to join on. When you don't specify that information, `merge` uses the overlapping column names as the keys. However, that can be ambiguous; several columns might meet that condition. For that reason, it is a good practice to explicitly specify on which key to join. You can do this with the `on` parameter:
+Notice that we didn’t specify which column to join on. When you don't specify that information, `merge` uses the overlapping column names as the keys. However, that can be ambiguous; several columns might meet that condition. For that reason, it is a good practice to explicitly specify on which key to join. You can do this with the `on` parameter. 
+
+Here's an example
 
 ```python
 pd.merge(df3, df4, on='group')
 ```
 
-Here's the output:
+This output is returned:
 
-> [!IMPORTANT]
-> 
-> Waiting for a decision about how to display table output--screenshot or div. If screenshot, how extensive alt text should be.
->
+```output
+|   | employee | group      | hire_date | supervisor |
+------------------------------------------------------
+| 0 | Gary     | Accounting | 2017      | Carlos     |
+| 1 | Stu      | Marketing  | 2012      | Giada      |
+| 2 | Mary     | Marketing  | 2008      | Giada      |
+| 3 | Sue      | HR         | 2018      | Stephanie  |
+```
 
 ## Many-to-many joins
 
@@ -121,12 +146,18 @@ df5
 
 Here's the output:
 
-> [!IMPORTANT]
-> 
-> Waiting for a decision about how to display table output--screenshot or div. If screenshot, how extensive alt text should be.
->
+```output
+|   | group      | core_skills   |
+----------------------------------
+| 0 | Accounting | math          |
+| 1 | Accounting | spreadsheets  |
+| 2 | Marketing  | writing       |
+| 3 | Marketing  | communication |
+| 4 | HR         | spreadsheets  |
+| 5 | HR         | organization  |
+```
 
-*TBD* introduce the next code/commands:
+Then, run this command in a cell:
 
 ```python
 pd.merge(df1, df5, on='group')
@@ -134,10 +165,18 @@ pd.merge(df1, df5, on='group')
 
 Here's the output:
 
-> [!IMPORTANT]
-> 
-> Waiting for a decision about how to display table output--screenshot or div. If screenshot, how extensive alt text should be.
->
+```output
+|   | empoyee |  group     | core_skills   |
+--------------------------------------------
+| 0 | Gary    | Accounting | math          |
+| 1 | Gary    | Accounting | spreadsheets  |
+| 2 | Stu     | Marketing  | writing       |
+| 3 | Stu     | Marketing  | communication |
+| 4 | Mary    | Marketing  | writing       |
+| 5 | Mary    | Marketing  | communication |
+| 6 | Sue     | HR         | spreadsheets  |
+| 7 | Sue     | HR         | organization  |
+```
 
 Again, to avoid ambiguity about which column to join on, it's a good idea to explicitly tell `merge` which one to use with the `on` parameter.
 
@@ -153,29 +192,41 @@ df6
 
 Here's the output:
 
-> [!IMPORTANT]
-> 
-> Waiting for a decision about how to display table output--screenshot or div. If screenshot, how extensive alt text should be.
->
+```output
+|   | name | salary |
+---------------------
+| 0 | Gary | 7000   |
+| 1 | Stu  | 8000   |
+| 2 | Mary | 120000 |
+| 3 | Sue  | 9000   |
+```
 
-*TBD* introduce the next code/commands:
+Next, run this code in a cell:
 
 ```python
 pd.merge(df1, df6, left_on="employee", right_on="name")
 ```
 
-Here's the output:
+This output is returned:
 
-> [!IMPORTANT]
-> 
-> Waiting for a decision about how to display table output--screenshot or div. If screenshot, how extensive alt text should be.
->
+```output
+|   | employee | group      | name | salary |
+---------------------------------------------
+| 0 | Gary     | Accounting | Gary | 7000   |
+| 1 | Stu      | Marketing  | Stu  | 8000   |
+| 2 | Mary     | Marketing  | Mary | 120000 |
+| 3 | Sue      | HR         | Sue  | 9000   |
+```
 
 ### Try it yourself
 
 Using the documentation, can you figure out how to use `.drop()` to get rid of the **name** column?
 
-Hint: You will need to supply two parameters to `.drop()`.
+<details>
+  <summary>Hint <i>(expand to reveal)</i></summary>
+  
+You will need to supply two parameters to `.drop()`.
+</details>
 
 ## left_index and right_index keywords
 
@@ -188,12 +239,7 @@ df1a
 
 Here's the output:
 
-> [!IMPORTANT]
-> 
-> Waiting for a decision about how to display table output--screenshot or div. If screenshot, how extensive alt text should be.
->
-
-*TBD* introduce the next code/commands:
+ktoliver TO DO/in progress
 
 ```python
 df2a = df2.set_index('employee')
@@ -202,10 +248,8 @@ df2a
 
 Here's the output:
 
-> [!IMPORTANT]
-> 
-> Waiting for a decision about how to display table output--screenshot or div. If screenshot, how extensive alt text should be.
->
+ktoliver TO DO/in progress
+
 
 To merge on the index, specify the **left_index** and **right_index** parameters in merge:
 
@@ -215,14 +259,22 @@ pd.merge(df1a, df2a, left_index=True, right_index=True)
 
 Here's the output:
 
-> [!IMPORTANT]
-> 
-> Waiting for a decision about how to display table output--screenshot or div. If screenshot, how extensive alt text should be.
->
+ktoliver TO DO/in progress
+
 
 ### Try it yourself
 
+> [!NOTE]
+> **To Sarah** - TBD: Could you provide the hint or solution for this exercise?
+
 What happens if you specify only **left_index** or **right_index**?
+
+<details>
+  <summary>Hint <i>(expand to reveal)</i></summary>
+  
+Add hint... TBD.
+</details>
+
 
 You can also use the join method for DataFrames, which produces the same effect but merges on indices by default:
 
@@ -232,10 +284,8 @@ df1a.join(df2a)
 
 Here's the output:
 
-> [!IMPORTANT]
-> 
-> Waiting for a decision about how to display table output--screenshot or div. If screenshot, how extensive alt text should be.
->
+ktoliver TO DO/in progress
+
 
 You can also mix and match **left_index**/**right_index** with **right_on**/**left_on**:
 
@@ -245,10 +295,8 @@ pd.merge(df1a, df6, left_index=True, right_on='name')
 
 Here's the output:
 
-> [!IMPORTANT]
-> 
-> Waiting for a decision about how to display table output--screenshot or div. If screenshot, how extensive alt text should be.
->
+ktoliver TO DO/in progress
+
 
 ## Set arithmetic for joins
 
@@ -262,12 +310,8 @@ df5
 
 Here's the output:
 
-> [!IMPORTANT]
-> 
-> Waiting for a decision about how to display table output--screenshot or div. If screenshot, how extensive alt text should be.
->
+ktoliver TO DO/in progress
 
-*TBD* introduce the next code/commands:
 
 ```python
 pd.merge(df1, df5, on='group')
@@ -275,10 +319,8 @@ pd.merge(df1, df5, on='group')
 
 Here's the output:
 
-> [!IMPORTANT]
-> 
-> Waiting for a decision about how to display table output--screenshot or div. If screenshot, how extensive alt text should be.
->
+ktoliver TO DO/in progress
+
 
 Notice that after we have restructured df5 and then rerun the merge with df1, we have only two entries in the result. This is because we merged on **group** and **Marketing** was the only entry that appeared in the **group** column of both DataFrames.
 
@@ -290,18 +332,33 @@ pd.merge(df1, df5, on='group', how='inner')
 
 Here's the output:
 
-> [!IMPORTANT]
-> 
-> Waiting for a decision about how to display table output--screenshot or div. If screenshot, how extensive alt text should be.
->
+ktoliver TO DO/in progress
 
 The complement of the inner join is the outer join, which returns the union of the two DataFrames.
 
 ### Try it yourself
 
+> [!NOTE]
+> **To Sarah** - TBD: Could you provide the hints or solutions for the two exercises in this "try it"?
+
 The keyword for perfoming an outer join is `how='outer'`. How would you perform it?
 
+<details>
+  <summary>Hint <i>(expand to reveal)</i></summary>
+  
+Add hint... TBD.
+</details>
+
+
 What do you expect the output of an outer join of df1 and df5 to be?
+
+<details>
+  <summary>Hint <i>(expand to reveal)</i></summary>
+  
+Add hint... TBD.
+</details>
+
+
 
 Notice in your resulting DataFrame that not every row in df1 and df5 had a value that corresponds to the union of the key values (the **group** column). Pandas fills in these missing values with NaNs.
 
@@ -313,16 +370,29 @@ pd.merge(df1, df5, how='left')
 
 Here's the output:
 
-> [!IMPORTANT]
-> 
-> Waiting for a decision about how to display table output--screenshot or div. If screenshot, how extensive alt text should be.
->
+ktoliver TO DO/in progress
+
 
 ### Try it yourself
 
+> [!NOTE]
+> **To Sarah** - TBD: Could you provide the hints or solutions for the two exercises in this "try it"?
+
 Now run the right merge between df1 and df5.
 
+<details>
+  <summary>Hint <i>(expand to reveal)</i></summary>
+  
+Add hint... TBD.
+</details>
+
 What do you expect to see?
+
+<details>
+  <summary>Hint <i>(expand to reveal)</i></summary>
+  
+Add hint... TBD.
+</details>
 
 ## suffixes keyword: dealing with conflicting column names
 
@@ -336,12 +406,8 @@ df7
 
 Here's the output:
 
-> [!IMPORTANT]
-> 
-> Waiting for a decision about how to display table output--screenshot or div. If screenshot, how extensive alt text should be.
->
+ktoliver TO DO/in progress
 
-*TBD* introduce the next code/commands:
 
 ```python
 df8 = pd.DataFrame({'name': ['Gary', 'Stu', 'Mary', 'Sue'],
@@ -352,10 +418,8 @@ pd.merge(df7, df8, on='name')
 
 Here's the output:
 
-> [!IMPORTANT]
-> 
-> Waiting for a decision about how to display table output--screenshot or div. If screenshot, how extensive alt text should be.
->
+ktoliver TO DO/in progress
+
 
 Each column name in a DataFrame must be unique, so in cases where two joined DataFrames share column names (aside from the column serving as the key), the `merge` function automatically appends the suffix **_x** or **_y** to the conflicting column names in order to make them unique. In cases where it is best to control your column names, you can specify a custom suffix for merge to append through the suffixes keyword:
 
@@ -366,10 +430,8 @@ pd.merge(df7, df8, on='name', suffixes=['_left', '_right'])
 
 Here's the output:
 
-> [!IMPORTANT]
-> 
-> Waiting for a decision about how to display table output--screenshot or div. If screenshot, how extensive alt text should be.
->
+ktoliver TO DO/in progress
+
 
 These suffixes work if there are multiple conflicting columns.
 
@@ -388,10 +450,8 @@ Concatenation in pandas is built by using the concatenation functionality for Nu
 
    Here's the output:
 
-  > [!IMPORTANT]
-  > 
-  > Waiting for a decision about how to display table output--screenshot or div. If screenshot, how extensive alt text should be.
-  >
+  ktoliver TO DO/in progress
+
 
 * For two-dimensional arrays:
 
@@ -403,10 +463,8 @@ Concatenation in pandas is built by using the concatenation functionality for Nu
 
   Here's the output:
 
-  > [!IMPORTANT]
-  > 
-  > Waiting for a decision about how to display table output--screenshot or div. If screenshot, how extensive alt text should be.
-  >
+  ktoliver TO DO/in progress
+
 
 Notice that the `axis=1` parameter makes the concatenation occur along columns rather than rows. Concatenation in pandas looks similar to this.
 
@@ -442,12 +500,9 @@ df9
 
 Here's the output:
 
-> [!IMPORTANT]
-> 
-> Waiting for a decision about how to display table output--screenshot or div. If screenshot, how extensive alt text should be.
->
+ktoliver TO DO/in progress
 
-*TBD* introduce the next code/commands:
+
 
 ```python
 pd.concat([df9, df9])
@@ -455,10 +510,8 @@ pd.concat([df9, df9])
 
 Here's the output:
 
-> [!IMPORTANT]
-> 
-> Waiting for a decision about how to display table output--screenshot or div. If screenshot, how extensive alt text should be.
->
+ktoliver TO DO/in progress
+
 
 Notice that `pd.concat` has preserved the indexing, even though that means that it has been duplicated. You can have the results reindexed (and avoid potential confusion down the road), like this:
 
@@ -468,10 +521,8 @@ pd.concat([df9, df9], ignore_index=True)
 
 Here's the output:
 
-> [!IMPORTANT]
-> 
-> Waiting for a decision about how to display table output--screenshot or div. If screenshot, how extensive alt text should be.
->
+ktoliver TO DO/in progress
+
 
 By default, `pd.concat` concatenates row-wise within the DataFrame (that is, axis=0 by default). You can specify the axis along which to concatenate:
 
@@ -481,10 +532,7 @@ pd.concat([df9, df9], axis=1)
 
 Here's the output:
 
-> [!IMPORTANT]
-> 
-> Waiting for a decision about how to display table output--screenshot or div. If screenshot, how extensive alt text should be.
->
+ktoliver TO DO/in progress
 
 Although pandas display the output without error, you will get an error message if you try to assign this result as a new DataFrame. Column names in DataFrames must be unique.
 
@@ -501,10 +549,8 @@ df10
 
 Here's the output:
 
-> [!IMPORTANT]
-> 
-> Waiting for a decision about how to display table output--screenshot or div. If screenshot, how extensive alt text should be.
->
+ktoliver TO DO/in progress
+
 
 ```python
 df11 = pd.DataFrame({'B': ['u', 'x'],
@@ -515,10 +561,8 @@ df11
 
 Here's the output:
 
-> [!IMPORTANT]
-> 
-> Waiting for a decision about how to display table output--screenshot or div. If screenshot, how extensive alt text should be.
->
+ktoliver TO DO/in progress
+
 
 ```python
 pd.concat([df10, df11])
@@ -526,10 +570,8 @@ pd.concat([df10, df11])
 
 Here's the output:
 
-> [!IMPORTANT]
-> 
-> Waiting for a decision about how to display table output--screenshot or div. If screenshot, how extensive alt text should be.
->
+ktoliver TO DO/in progress
+
 
 As we saw earlier, the default join for this is an outer join and entries for which no data is available are filled with **NaN** values. You can also do an inner join:
 
@@ -539,10 +581,8 @@ pd.concat([df10, df11], join='inner')
 
 Here's the output:
 
-> [!IMPORTANT]
-> 
-> Waiting for a decision about how to display table output--screenshot or div. If screenshot, how extensive alt text should be.
->
+ktoliver TO DO/in progress
+
 
 Another option is to directly specify the index of the remaining columns using the `join_axes` argument, which takes a list of index objects. Here, we will specify that the returned columns should be the same as those of the first input `(df10)`:
 
@@ -553,10 +593,8 @@ append()
 
 Here's the output:
 
-> [!IMPORTANT]
-> 
-> Waiting for a decision about how to display table output--screenshot or div. If screenshot, how extensive alt text should be.
->
+ktoliver TO DO/in progress
+
 
 Because direct array concatenation is so common, `Series` and `DataFrame` objects have an `append` method that can accomplish the same thing in fewer keystrokes. For example, rather than calling `pd.concat([df9, df9])`, you can call `df9.append(df9)`:
 
@@ -566,12 +604,8 @@ df9.append(df9)
 
 Here's the output:
 
-![Output from the call df9.append command](../media/call-df-append.png)
+ktoliver TO DO/in progress
 
-> [!IMPORTANT]
-> 
-> Waiting for a decision about how to display table output--screenshot or div. If screenshot, how extensive alt text should be.
->
 
 > [!IMPORTANT]
 > Unlike the `append()` and `extend()` methods of Python lists, the `append()` method in pandas does not modify the original object. Instead, it creates a new object with the combined data.
