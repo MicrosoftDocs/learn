@@ -19,7 +19,7 @@ abstract: |
 prerequisites: | 
   - An introductory knowledge of Azure IoT
   - A Basic understanding of the Azure CLI. Following [**Control Azure services with the CLI**](https://docs.microsoft.com/learn/modules/control-azure-services-with-cli/) module is recommended.
-iconUrl:  /learn/achievements/iot/explore-and-analyze-time-stamped-data-with-time-series-insights.svg
+iconUrl:  /learn/achievements/iot/explore-analyze-time-stamped-data-time-series-insights.png.svg
 levels:
 - intermediate
 roles:
