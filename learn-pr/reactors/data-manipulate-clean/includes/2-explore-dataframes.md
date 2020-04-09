@@ -1,6 +1,6 @@
-After you load your data into pandas, the data most likely will be in a DataFrame. However, if the data set in your DataFrame has 60,000 rows and 400 columns, how do you even begin to get a sense of what you're working with? Fortunately, pandas provides some convenient tools to quickly look at overall information about a DataFrame and the first few and last few rows.
+After you load your data into pandas, the data most likely will be in a DataFrame. However, if the dataset in your DataFrame has 60,000 rows and 400 columns, how do you even begin to get a sense of what you're working with? Fortunately, pandas provides some convenient tools to help you quickly look at overall information about a DataFrame, including the first few and last few rows of data.
 
-To explore DataFrames in pandas, we will import the Python scikit-learn library and use an iconic dataset that every data scientist has seen hundreds of times: British biologist Ronald Fisher's Iris dataset that Fisher used in his 1936 paper *The use of multiple measurements in taxonomic problems*.
+To explore DataFrames in pandas, we will import the Python scikit-learn library and use an iconic dataset that every data scientist has seen hundreds of times: British biologist Ronald Fisher's Iris dataset. Fisher used the Iris dataset in his 1936 paper *The Use of Multiple Measurements in Taxonomic Problems*.
 
 First, import pandas and import the Python scikit-learn dataset:
 
@@ -14,11 +14,14 @@ iris_df = pd.DataFrame(data=iris['data'], columns=iris['feature_names'])
 
 ## `DataFrame.info`
 
-Let's take a look at this dataset to see what we have:
+To take a look at this dataset to see what we have, run:
 
 ```python
 iris_df.info()
 ```
+
+The output looks like this:
+
 ```output
 <class 'pandas.core.frame.DataFrame'>
 RangeIndex: 150 entries, 0 to 149
@@ -31,38 +34,57 @@ dtypes: float64(4)
 memory usage: 4.8 KB
 ```
 
-From the output, we know that the Iris dataset has 150 entries in four columns. All of the data is stored as 64-bit floating-point numbers.
+From the output, we know that the Iris dataset has 150 entries in four columns. All the data is stored as 64-bit floating-point numbers.
 
 ## `DataFrame.head`
 
-Next, let's see what the first few rows of our DataFrame look like:
+Next, let's see what the first few rows of our DataFrame look like. To return the first five rows of data, run:
 
 ```python
 iris_df.head()
 ```
 
-Here's the output:
+This is what is in the first five rows of the Iris dataset:
 
-![A screenshot that shows the output of running iris_df.head()](../media/iris-df-head.png)
+```output
+|    | sepal length (cm) | sepal width (cm) | petal length (cm) | petal width (cm) |
+------------------------------------------------------------------------------------
+| 0  | 5.1               | 3.5              | 1.4               | 0.2              |
+| 1  | 4.9               | 3.0              | 1.4               | 0.2              |
+| 2  | 4.7               | 3.2              | 1.3               | 0.2              |
+| 3  | 4.6               | 3.1              | 1.5               | 0.2              |
+| 4  | 5.0               | 3.6              | 1.4               | 0.2              |
+```
 
 ### Try it yourself
 
-By default, `DataFrame.head` returns the first five rows of a DataFrame. In the code cell below, can you figure out how to get it to show more?
+By default, `DataFrame.head` returns the first five rows in a DataFrame. In a new code cell, can you figure out how to get it to show more?
 
-> [!TIP]
-> Consult the documentation by using `iris_df.head`.
+<details>
+  <summary>Hint <i>(expand to reveal)</i></summary>
+  
+Run `iris_df.head` to consult the documentation.
+</details>
 
 ## `DataFrame.tail`
 
-The flip side of `DataFrame.head` is `DataFrame.tail`, which returns the last five rows of a DataFrame:
+The flip side of `DataFrame.head` is `DataFrame.tail`, which returns the *last* five rows of a DataFrame:
 
 ```python
 iris_df.tail()
 ```
 
-Here's the output:
+This is what you'll find in the last five rows of the Iris dataset:
 
-![A screenshot that shows the output of running iris_df.tail()](../media/iris-df-tail.png)
+```output
+|     | sepal length (cm) | sepal width (cm) | petal length (cm) | petal width (cm) |
+------------------------------------------------------------------------------------
+| 145 | 6.7               | 3.0              | 5.2               | 2.3              |
+| 147 | 6.3               | 2.5              | 5.0               | 1.9              |
+| 148 | 6.5               | 3.0              | 5.2               | 2.0              |
+| 149 | 6.2               | 3.4              | 5.4               | 2.3              |
+| 150 | 6.9               | 3.0              | 5.1               | 1.8              |
+```
 
 In practice, it's useful to be able to easily examine the first few rows or the last few rows of a DataFrame, particularly when you are looking for outliers in ordered datasets.
 
