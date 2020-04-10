@@ -17,7 +17,7 @@ abstract: |
    - Build and publish a natural-language machine-learning model.
 prerequisites: |
   Ability to navigate the Azure portal
-iconUrl: /learn/achievements/create-and-publish-a-luis-model.svg
+iconUrl: /learn/achievements/create-publish-luis-model.svg
 levels:
 - intermediate
 roles:
