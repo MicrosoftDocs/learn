@@ -10,7 +10,7 @@ metadata:
   ms.prod: learning-azure
 title: Explore natural language processing
 prerequisites: |
-  Ability to navigate the Azure portal
+  Ability to navigate the Azure portal.
 summary: |
   Natural language processing supports applications that can see, hear, speak with, and understand users.  Using text analytics, translation, and language understanding services, Microsoft Azure makes it easy to build applications that support natural language.
 iconUrl: /learn/achievements/generic-trophy.svg
