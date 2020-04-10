@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.reactors.numpy-data-science.7-computation
+uid: learn.reactors.numpy-data-science.8-computation
 title: 'Efficient computation on NumPy arrays: Universal functions'
 metadata:
   title: 'Efficient computation on NumPy arrays: Universal functions'
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-reactors
 durationInMinutes: 5
 content: |
-  [!include[](includes/7-computation.md)]
+  [!include[](includes/8-computation.md)]

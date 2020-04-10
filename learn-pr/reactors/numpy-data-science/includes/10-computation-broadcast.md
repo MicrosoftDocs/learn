@@ -1,4 +1,4 @@
-Another means of vectorizing operations is to use NumPy's *broadcasting* functionality: creating rules for applying binary ufuncs like addition, subtraction, or multiplication on arrays of different sizes.
+Another means of vectorizing operations is to use NumPy's *broadcasting* functionality: creating rules for applying binary ufuncs like addition, subtraction, or multiplication on arrays of different sizes.
 
 Before, when we performed binary operations on arrays of the same size, those operations were performed on an element-by-element basis.
 
@@ -81,7 +81,7 @@ array([[0, 1, 2],
 
 ## Rules of broadcasting
 
-Broadcasting ollows a set of rules to determine the interaction between the two arrays:
+Broadcasting follows a set of rules to determine the interaction between the two arrays:
 
 - **Rule 1**: If the two arrays differ in their number of dimensions, the shape of the one with fewer dimensions is *padded* with ones on its leading (left) side.
 - **Rule 2**: If the shape of the two arrays does not match in any dimension, the array with shape equal to 1 in that dimension is stretched to match the other shape.
@@ -127,17 +127,24 @@ array([[1., 2., 3.],
 #### Exercise
 
 Flip this around. Try adding these with `two_dim_array = np.ones((3, 2))`
-and `one_dim_array = np.arange(3)[:, np.newaxis]`.
+and `one_dim_array = np.arange(3)[:, np.newaxis]`. 
+
 What do you get?
+
+> <details>
+>  <summary>Sarah TBA Hint (expand to reveal)</summary>
+>  
+> **Sarah TBA** or remove the hint.
+> </details>
 
 ### Broadcasting example 2
 
 Let's examine what happens when both arrays need to be broadcast:
 
-In [137]:
-
+```python
 vertical_array = np.arange(3).reshape((3, 1))
 horizontal_array = np.arange(3)
+```
 
 Again, we'll start by writing out the shape of the arrays:
 

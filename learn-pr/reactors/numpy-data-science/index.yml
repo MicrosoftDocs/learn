@@ -36,15 +36,16 @@ products:
 units:
 - learn.reactors.numpy-data-science.1-introduction
 - learn.reactors.numpy-data-science.2-help
-- learn.reactors.numpy-data-science.3-arrays
-- learn.reactors.numpy-data-science.4-exercise-arrays
-- learn.reactors.numpy-data-science.5-fancy-index
-- learn.reactors.numpy-data-science.6-sort-arrays
-- learn.reactors.numpy-data-science.7-computation
-- learn.reactors.numpy-data-science.8-aggregations
-- learn.reactors.numpy-data-science.9-computation-broadcast
-- learn.reactors.numpy-data-science.10-compare-masks-boolean-logic
-- learn.reactors.numpy-data-science.11-boolean-arrays
-- learn.reactors.numpy-data-science.12-boolean-arrays-masks
+- learn.reactors.numpy-data-science.3-about-arrays
+- learn.reactors.numpy-data-science.4-arrays-basics
+- learn.reactors.numpy-data-science.5-arrays-basics-2
+- learn.reactors.numpy-data-science.6-fancy-index
+- learn.reactors.numpy-data-science.7-sort-arrays
+- learn.reactors.numpy-data-science.8-computation
+- learn.reactors.numpy-data-science.9-aggregations
+- learn.reactors.numpy-data-science.10-computation-broadcast
+- learn.reactors.numpy-data-science.11-compare-masks-boolean-logic
+- learn.reactors.numpy-data-science.12-boolean-arrays
+- learn.reactors.numpy-data-science.13-boolean-arrays-masks
 badge:
   uid: learn.reactors.numpy-data-science.badge

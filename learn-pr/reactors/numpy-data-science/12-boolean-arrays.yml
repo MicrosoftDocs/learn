@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.reactors.numpy-data-science.11-boolean-arrays
+uid: learn.reactors.numpy-data-science.12-boolean-arrays
 title: Working with Boolean arrays
 metadata:
   title: Working with Boolean arrays
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-reactors
 durationInMinutes: 5
 content: |
-  [!include[](includes/11-boolean-arrays.md)]
+  [!include[](includes/12-boolean-arrays.md)]

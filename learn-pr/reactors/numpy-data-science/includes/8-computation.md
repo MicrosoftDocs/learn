@@ -35,7 +35,7 @@ big_array = np.random.randint(1, 100, size=1000000)
 
 You certainly noticed that delay. The slowness of this looping becomes noticeable when we repeat many small operations many times.
 
-The performance bottleneck is not the operations themselves, but the type-checking and function dispatches that Python performs on each cycle of the loop. In the case of the `compute_reciprocals` function above, each time Python computes the reciprocal, it first examines the object's type and does a dynamic lookup of the correct function to use for that type. Such is life with interpreted code. However, were we working with compiled code instead (such as in C), the object-type specification would be known before the code executes, and the result could be computed much more efficiently. This is where NumPy universal functions come into play.
+The performance bottleneck is not the operations themselves, but the type-checking and function dispatches that Python performs on each cycle of the loop. In the case of the `compute_reciprocals` function above, each time Python computes the reciprocal, it first examines the object's type and does a dynamic lookup of the correct function to use for that type. Such is life with interpreted code. However, were we working with compiled code instead (such as in C), the object-type specification would be known before the code executes, and the result could be computed much more efficiently. This is where NumPy universal functions come into play.
 
 ## Ufuncs
 
@@ -43,7 +43,6 @@ Universal functions in NumPy (often shortened to *ufuncs*) provide a statically
 
 Let's examine what this means in practice. Let's find the reciprocals of `big_array` again, this time using a built-in NumPy division ufunc on the array:
 
-In [104]:
 ```python
 %timeit (1.0 / big_array)
 ```

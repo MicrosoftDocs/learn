@@ -49,10 +49,15 @@ array([[71, 86],
 
 `arr` is a one-dimensional array, but `ind`, your index array, is a 2 x 2 array, and that is the shape the results comes back in.
 
-##### Exercise
+##### Try it yourself
 
 What happens when your index array is bigger than the target array?
-Hint: you could use a large one-dimensional array or something fancier like ind = np.arange(0, 12).reshape((6, 2)).
+
+> <details>
+>  <summary>Hint (expand to reveal)</summary>
+>  
+> You could use a large one-dimensional array or something fancier like `ind = np.arange(0, 12).reshape((6, 2))`.
+> </details>
 
 Fancy indexing also works in multiple dimensions:
 
@@ -95,14 +100,18 @@ array([[ 2,  1,  3],
 
 Here, each row value is matched with each column vector, exactly as we saw in broadcasting of arithmetic operations.
 
-#### Exercise
+#### Try it yourself
 
 Now try broadcasting this on your own.
-What do you get with `row[:, np.newaxis] * col`?
-Or `row[:, np.newaxis] * row? col[:, np.newaxis] * row`?
-What about `col[:, np.newaxis] * row`?
-Hint: think back to the broadcast rules.
+- What do you get with `row[:, np.newaxis] * col`?
+- Or `row[:, np.newaxis] * row? col[:, np.newaxis] * row`?
+- What about `col[:, np.newaxis] * row`?
 
+> <details>
+>  <summary>Hint (expand to reveal)</summary>
+> Think back to the broadcast rules.
+> </details>
+ 
 >[!div class="alert is-tip"]
 >### The big takeaway
 >
@@ -229,9 +238,16 @@ print(ind)
 [0. 0. 1. 2. 3. 0. 0. 0. 0. 0.]
 ```
 
-##### Exercise
+##### Try it yourself
 
 What does np.subtract.at(ind, arr, 1) give you?
+
+> <details>
+>  <summary>Sarah TBA Hint (expand to reveal)</summary>
+>  
+> **Sarah TBA** or remove the hint.
+> </details>
+
 Play around with some of the other ufuncs we have seen.
 
 >[!div class="alert is-tip"]
