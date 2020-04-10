@@ -89,7 +89,7 @@ quiz:
 # Did I get this block 3
   - content: "Azure's App Service is an example of PaaS. Given that you read the PaaS section, which of the following statements about App Service is *incorrect*?"
     choices:
-    - content: "The applications deployed on App Service have the same security, privacy, and data protection policies that Google's applications have. Hence, end users can take advantage of the reliability, performance, and security of Google's infrastructure."
+    - content: "The applications deployed on App Service have the same security, privacy, and data protection policies that Microsoft's applications have. Hence, end users can take advantage of the reliability, performance, and security of Azure's infrastructure."
       isCorrect: false
       explanation: "Incorrect. We're looking for an incorrect statement about App Service. This statement is correct because PaaS has built-in scaling mechanisms of deployed software that are automatically handled by the cloud provider with load-balancing and failover mechanisms. Think about the difference between App Service and an IaaS service, like VMs."
     - content: "Customers have the flexibility to decide the number and configuration of physical servers required for hosting an application."
