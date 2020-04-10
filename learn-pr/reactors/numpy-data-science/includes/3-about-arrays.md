@@ -182,7 +182,7 @@ np.linspace(0, 1, 5)
 array([0.  , 0.25, 0.5 , 0.75, 1.  ])
 ```
 
-Create a 3x3 array of uniformly distributed random values between 0 and 1:
+Create a 3 x 3 array of uniformly distributed random values between 0 and 1:
 
 ```python
 np.random.random((3, 3))
@@ -194,7 +194,7 @@ array([[0.1293533 , 0.00963681, 0.76015197],
        [0.28123745, 0.37741323, 0.01221669]])
 ```
 
-Create a 3x3 array of normally distributed random values
+Create a 3 x 3 array of normally distributed random values
 with mean 0 and standard deviation 1:
 
 ```python
@@ -207,7 +207,7 @@ array([[ 0.41781774,  1.10706673, -1.84875856],
        [-1.18743752,  0.48199796,  0.37693047]])
 ```
 
-Create a 3x3 array of random integers in the interval [0, 10):
+Create a 3 x 3 array of random integers in the interval [0, 10):
 
 ```python
 np.random.randint(0, 10, (3, 3))
@@ -219,7 +219,7 @@ array([[0, 3, 7],
        [0, 5, 7]])
 ```
 
-Create a 3x3 identity matrix:
+Create a 3 x 3 identity matrix:
 ```python
 np.eye(3)
 ```
