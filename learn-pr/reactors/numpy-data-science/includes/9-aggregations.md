@@ -4,7 +4,7 @@ NumPy has fast built-in aggregation functions for working on arrays that are the
 
 ## Summing the values of an array
 
-You can use the built-in Python `sum` function to sum up the values in an array.
+You can use the built-in Python `sum` function to sum up the values in an array.
 
 ```python
 import numpy as np
@@ -101,9 +101,15 @@ md.min(axis=0)
 array([0.18441813, 0.11936151, 0.37497044, 0.03193135])
 ```
 
-#### Exercise
+#### Try it yourself
 
 What do you get when you try `md.max(axis=1)`?
+
+> <details>
+>  <summary>Sarah TBA Hint (expand to reveal)</summary>
+>  
+> **Sarah TBA** or remove the hint.
+> </details>
 
 Remember that the `axis` keyword specifies the *dimension of the array that is to be collapsed*, not the dimension that will be returned. Thus specifying `axis=0` means that the first axis will be the one collapsed: for two-dimensional arrays, this means that values within each column will be aggregated.
 

@@ -15,9 +15,7 @@ Azure Monitor for containers is a comprehensive monitoring solution for Azure Ku
 
 You use Log Analytics in Azure Monitor to store monitoring data, events, and metrics from your AKS cluster and the applications. First, you'll pre-create the Log Analytics workspace in your assigned environment resource group.
 
-1. Sign in to [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true) with an Azure account.
-
-1. You need a unique name for the workspace. Run the command below to generate a name similar to **aksworkshop-workspace-12345**.
+1. You need a unique name for the workspace. Run the command below in Cloud Shell to generate a name similar to **aksworkshop-workspace-12345**.
 
     ```bash
     WORKSPACE=aksworkshop-workspace-$RANDOM
@@ -65,7 +63,10 @@ We view utilization reports and charts for your cluster in the Azure portal by u
 
 Let's look at the steps you need to take to get a detailed view of the health of nodes and pods in a cluster.
 
-1. Switch to the [Azure portal](https://portal.azure.com?azure-portal=true).
+1. Sign in to the Azure portal.
+
+    > [!div class="nextstepaction"]
+    > [Azure portal](https://portal.azure.com?azure-portal=true)
 
 1. Select **Azure Monitor** from the left pane in the Azure portal.
 
@@ -108,7 +109,7 @@ We use a role binding to grant the permissions defined in a role to a user or se
 
 In this exercise, you'll set up *Roles* and *RoleBindings* that aren't limited to a specific namespace. You can configure *Roles* and *RoleBindings* to grant permissions and bind roles to users across the entire cluster or to cluster resources outside a given namespace.
 
-1. Create a file called `logreader-rbac.yaml` by using the integrated editor.
+1. Create a file called `logreader-rbac.yaml` by using the integrated editor in Cloud Shell.
 
     ```bash
     code logreader-rbac.yaml

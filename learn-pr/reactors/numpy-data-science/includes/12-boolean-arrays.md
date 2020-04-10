@@ -60,10 +60,15 @@ np.any(two_dim_array < 0)
 False
 ```
 
-#### Exercise
+#### Try it yourself
 
 Now check to see if all values less than 10?
-Hint: use `np.all()`
+
+> <details>
+>  <summary>Hint (expand to reveal)</summary>
+>  
+> Use `np.all()`.
+> </details>
 
 `np.all` and `np.any` can be used along particular axes as well. For example:
 

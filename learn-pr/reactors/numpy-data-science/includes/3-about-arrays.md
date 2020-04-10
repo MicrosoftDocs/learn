@@ -73,13 +73,18 @@ np.array([3.14, 4, 2, 3])
 array([3.14, 4.  , 2.  , 3.  ])
 ```
 
-#### Exercise
+#### Try it yourself
 
 What happens if you construct an array using a list that contains a combination of integers, floats, and strings?
 
+> <details>
+>  <summary>Sara TBA Hint (expand to reveal)</summary>
+>  
+> **Sarah TBA** or remove the hint.
+> </details>
+
 If you want to explicitly set the data type of your array when you create it, you can use the `dtype` keyword:
 
-In [7]:
 ```python
 np.array([1, 2, 3, 4], dtype='float32')
 ```
@@ -88,9 +93,16 @@ np.array([1, 2, 3, 4], dtype='float32')
 array([1., 2., 3., 4.], dtype=float32)
 ```
 
-#### Exercise
+#### Try it yourself
 
 Try this using a different `dtype`.
+
+> <details>
+>  <summary>Sarah TBA Hint (expand to reveal)</summary>
+>  
+> **Sarah TBA** or remove the hint.
+> </details>
+
 Remember that you can always refer to the documentation with the command `np.array`.
 
 Most usefully for a lot of applications in data science, NumPy arrays can explicitly be multidimensional (like matrices or tensors). Here's one way of creating a multidimensional array using a list of lists.
@@ -123,7 +135,7 @@ np.zeros(10, dtype=int)
 array([0, 0, 0, 0, 0, 0, 0, 0, 0, 0])
 ```
 
-Create a 3x5 floating-point array filled with ones:
+Create a 3 x 5 floating-point array filled with ones:
 
 ```python
 np.ones((3, 5), dtype=float)
@@ -135,7 +147,7 @@ array([[1., 1., 1., 1., 1.],
        [1., 1., 1., 1., 1.]])
 ```
 
-Create a 3x5 array filled with 3.14.
+Create a 3 x 5 array filled with 3.14.
 The first number in the tuple gives the number of rows.
 The second number in the tuple sets the number of columns.
 
@@ -170,8 +182,7 @@ np.linspace(0, 1, 5)
 array([0.  , 0.25, 0.5 , 0.75, 1.  ])
 ```
 
-Create a 3x3 array of uniformly distributed
-random values between 0 and 1:
+Create a 3 x 3 array of uniformly distributed random values between 0 and 1:
 
 ```python
 np.random.random((3, 3))
@@ -183,7 +194,7 @@ array([[0.1293533 , 0.00963681, 0.76015197],
        [0.28123745, 0.37741323, 0.01221669]])
 ```
 
-Create a 3x3 array of normally distributed random values
+Create a 3 x 3 array of normally distributed random values
 with mean 0 and standard deviation 1:
 
 ```python
@@ -196,7 +207,7 @@ array([[ 0.41781774,  1.10706673, -1.84875856],
        [-1.18743752,  0.48199796,  0.37693047]])
 ```
 
-Create a 3x3 array of random integers in the interval [0, 10):
+Create a 3 x 3 array of random integers in the interval [0, 10):
 
 ```python
 np.random.randint(0, 10, (3, 3))
@@ -208,7 +219,7 @@ array([[0, 3, 7],
        [0, 5, 7]])
 ```
 
-Create a 3x3 identity matrix:
+Create a 3 x 3 identity matrix:
 ```python
 np.eye(3)
 ```
@@ -235,18 +246,14 @@ Below is a table listing out several of the array-creation functions in NumPy.
 
 | Function | Description |
 | --- | --- |
-| `array` | Converts input data (list, tuple, array, or other sequence type) to an ndarray either |
-|  | by inferring a dtype or explicitly specifying a dtype. Copies the input data by default. |
+| `array` | Converts input data (list, tuple, array, or other sequence type) to an ndarray either by inferring a dtype or explicitly specifying a dtype. Copies the input data by default. |
 | `asarray` | Converts input to ndarray, but does not copy if the input is already an ndarray. |
 | `arange` | Similar to the built-in `range()` function but returns an ndarray instead of a list. |
-| `ones`, `ones_like` | Produces an array of all 1s with the given shape and dtype. |
-|  | `ones_like` takes another array and produces a ones-array of the same shape and dtype. |
+| `ones`, `ones_like` | Produces an array of all 1s with the given shape and dtype. <br /> <br /> `ones_like` takes another array and produces a ones-array of the same shape and dtype. |
 | `zeros`, `zeros_like` | Similar to `ones` and `ones_like` but producing arrays of 0s instead. |
-| `empty`, `empty_like` | Creates new arrays by allocating new memory, but does not populate with any values |
-|  | like `ones` and `zeros`. |
-| `full`, `full_like` | Produces an array of the given shape and dtype with all values set to the indicated "fill value." |
-|  | `full_like` takes another array and produces a a filled array of the same shape and dtype. |
-| `eye`, `identity` | Create a square ![$N \times N$](https://render.githubusercontent.com/render/math?math=N%20%5Ctimes%20N&mode=inline) identity matrix (1s on the diagonal and 0s elsewhere) |
+| `empty`, `empty_like` | Creates new arrays by allocating new memory, but does not populate with any values like `ones` and `zeros`. |
+| `full`, `full_like` | Produces an array of the given shape and dtype with all values set to the indicated "fill value." <br /> <br /> `full_like` takes another array and produces a a filled array of the same shape and dtype. |
+| `eye`, `identity` | Create a square N x N identity matrix (1s on the diagonal and 0s elsewhere) |
 
 ## NumPy data types
 
@@ -286,4 +293,4 @@ If these data types seem a lot like those in C, that's because NumPy is built in
 >
 > ### Takeaway
 >
-> NumPy arrays are a data structure similar to Python lists that provide high performance when storing and working on large amounts of homogeneous data - precisely the kind of data that you will encounter frequently in doing data science. NumPy arrays support many data types beyond those discussed in this course. With all of that said, however, don't worry about memorizing all of the NumPy dtypes. **It's often just necessary to care about the general kind of data you're dealing with: floating point, integer, Boolean, string, or general Python object.
+> NumPy arrays are a data structure similar to Python lists that provide high performance when storing and working on large amounts of homogeneous data - precisely the kind of data that you will encounter frequently in doing data science. NumPy arrays support many data types beyond those discussed in this course. With all of that said, however, don't worry about memorizing all of the NumPy `dtypes`. **It's often just necessary to care about the general kind of data you're dealing with: floating point, integer, Boolean, string, or general Python object.**
