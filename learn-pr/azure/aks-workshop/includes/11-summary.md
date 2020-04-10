@@ -6,7 +6,10 @@ You can now use what you learned to deploy container-based applications in your 
 
 In this module, you created resources by using your Azure subscription. You want to clean up these resources so that there's no continued charge against your account for these resources.
 
-1. Open the [Azure portal](https://portal.azure.com?azure-portal=true).
+1. Open the Azure portal.
+
+    > [!div class="nextstepaction"]
+    > [Azure portal](https://portal.azure.com?azure-portal=true)
 
 1. Select **Resource groups** on the left.
 
