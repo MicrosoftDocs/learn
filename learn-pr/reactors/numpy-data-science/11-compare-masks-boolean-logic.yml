@@ -9,6 +9,6 @@ metadata:
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-reactors
-durationInMinutes: 5
+durationInMinutes: 9
 content: |
   [!include[](includes/11-compare-masks-boolean-logic.md)]

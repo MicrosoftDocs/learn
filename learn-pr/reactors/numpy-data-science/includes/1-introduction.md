@@ -26,7 +26,7 @@ In this module, you will:
 
 - Import the NumPy library
 - Understand how NumPy arrays differ from the other Python data structures
-- Explore daya with NumPy arrays
+- Explore data with NumPy arrays
 - Understand NumPy universal functions and how (and why) to use them
 - Know how to aggregate data in NumPy
 - Be able to broadcast in NumPy
@@ -34,5 +34,5 @@ In this module, you will:
 
 ## Prerequisites
 
-- [Set up your environment](../../python-data-science/includes/1-introduction.md#set-up-your-environment)
+- [Set up your environment](../../python-data-science/1-introduction.yml)
 - [Introduction to Python for data science](../../python-data-science/index.yml)
