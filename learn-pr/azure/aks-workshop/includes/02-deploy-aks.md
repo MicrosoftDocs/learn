@@ -119,7 +119,7 @@ With the new virtual network in place, you can go ahead and create your new clus
     --location $REGION_NAME \
     --kubernetes-version $VERSION \
     --network-plugin azure \
-    --vnet-subnet-id $SUBNET_NAME_ID \
+    --vnet-subnet-id $SUBNET_ID \
     --service-cidr 10.2.0.0/24 \
     --dns-service-ip 10.2.0.10 \
     --docker-bridge-address 172.17.0.1/16 \
@@ -130,7 +130,7 @@ With the new virtual network in place, you can go ahead and create your new clus
 
     - `$AKS_CLUSTER_NAME` specifies the name of the AKS cluster.
     - `$VERSION` is the latest Kubernetes version you retrieved earlier.
-    - `$SUBNET_NAME_ID` is the ID of the subnet created on the virtual network to be configured with AKS.
+    - `$SUBNET_ID` is the ID of the subnet created on the virtual network to be configured with AKS.
 
     Note the following deployment configuration:
 
