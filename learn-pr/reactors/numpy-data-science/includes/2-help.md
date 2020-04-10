@@ -9,7 +9,7 @@ np.<TAB>
 
 When you do so, a drop-down menu will appear next to the `np.`
 
-#### Exercise
+#### Try it yourself
 
 Start typing `np.` and see the list of available functions come up.
 

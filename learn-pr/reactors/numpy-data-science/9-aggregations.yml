@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.reactors.numpy-data-science.8-aggregations
+uid: learn.reactors.numpy-data-science.9-aggregations
 title: Aggregations
 metadata:
   title: Aggregations
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-reactors
 durationInMinutes: 5
 content: |
-  [!include[](includes/8-aggregations.md)]
+  [!include[](includes/9-aggregations.md)]

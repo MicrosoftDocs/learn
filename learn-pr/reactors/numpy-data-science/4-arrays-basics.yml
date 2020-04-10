@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.reactors.numpy-data-science.4-exercise-arrays
-title: 'Working with NumPy arrays: the basics'
+uid: learn.reactors.numpy-data-science.4-arrays-basics
+title: 'Work with NumPy arrays: the basics'
 metadata:
-  title: 'Working with NumPy arrays: the basics'
+  title: 'Work with NumPy arrays: the basics'
   description: Learn how to work with NumPy arrays in basic ways.
   ms.date: 04/22/2020
   author: sguthals
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-reactors
 durationInMinutes: 5
 content: |
-  [!include[](includes/4-exercise-arrays.md)]
+  [!include[](includes/4-arrays-basics.md)]

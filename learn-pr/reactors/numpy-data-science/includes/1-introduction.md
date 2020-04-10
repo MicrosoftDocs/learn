@@ -21,7 +21,7 @@ import numpy as np
 Get used to this convention - it's a common convention in Python, and it's the way we will use and refer to NumPy throughout the rest of this course.
 
 ## Learning objectives
-<!-- List of learning objectives for this module -->
+
 In this module, you will:
 
 - Import the NumPy library
@@ -33,6 +33,6 @@ In this module, you will:
 - Understand how to use Boolean masking in NumPy
 
 ## Prerequisites
-<!-- List of prerequisites for this module; otherwise, "None." -->
-- Set up your environment
-- Introduction to Python for data science
+
+- [Set up your environment](../../python-data-science/1-introduction.yml)
+- [Introduction to Python for data science](../../python-data-science/index.yml)
