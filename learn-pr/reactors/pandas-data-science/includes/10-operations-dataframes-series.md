@@ -1,11 +1,3 @@
-<div>
-<style>
-   table { border-collapse: collapse; border: 1px solid darkgrey; background-color:rgb(240,240,240); width: 300px; padding: 5px; }
-   tr { border: 1px solid darkgrey; text-align: left; padding: 5px; }
-   td { border: 1px solid darkgrey; padding: 5px; }
-</style>
-</div>
-
 Index and column alignment gets maintained in operations between a `DataFrame` and a `Series` as well. To see this, consider a common operation in data science, wherein we find the difference of a `DataFrame` and one of its rows. Because pandas inherits ufuncs from NumPy, pandas will compute the difference row-wise by default:
 
 ```Python
