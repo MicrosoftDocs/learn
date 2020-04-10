@@ -8,7 +8,7 @@ At the other end, in the cloud, a resource known as an _IoT hub_ collects the da
 
 ### Why is IoT useful?
 
-IoT enables a single human operator, through a cloud portal, to monitor and control a vast array of remote devices. IoT enables businesses to evolve their operations. Once data is collected, it becomes possible to analyze the data to gain meaningful, actionable insights. These insights might help increase efficiency, reduce waste, and lower costs. Alternatively, these insights might make smart spaces more secure. From manufacturing, to transportation, to retail, Azure IoT can start fueling new business operations with IoT solutions designed for that industry's needs.
+IoT enables a single human operator, through a cloud portal, to monitor and control a vast array of remote devices. IoT enables businesses to evolve their operations. Once data is collected, it becomes possible to analyze the data to gain meaningful, actionable insights. These insights might help increase efficiency, reduce waste, or lower costs. Alternatively, these insights might make smart spaces more secure. From manufacturing, to transportation, to retail, Azure IoT can start fueling new business operations with IoT solutions designed for that industry's needs.
 
 ## Learning objectives
 
@@ -26,12 +26,12 @@ With IoT solutions, everyday things can be IoT-enabled: office buildings, convey
 IoT can be envisioned as a set of technologies connected across three main areas:
 
 - **Things:** Physical "things," with embedded sensors, that are connected to the Internet. These things send telemetry data.
-- **Insights:** The results from processing and analyzing the data. IoT real-time analysis, machine learning, and other processes, produce these insights.
+- **Insights:** The results from processing and analyzing the data. IoT real-time analysis, machine learning, and other backend processes, produce these insights.
 - **Actions:** The automated, or manual, response to the insights. Actions include the automated changing of device settings, a manual intervention to repair a piece of equipment, or an update to a computer system that is not working optimally.
 
 |  |  |
 | ------------ | -------------|
-|![Icon of lightbulb](../media/lightbulb.png)|*Let's review one example of an IoT-enabled object. An engine (a thing) collects pressure and temperature data that is used to evaluate whether the engine is performing as expected (the insights). This data is used to prioritize the engine maintenance schedule (the actions).  Now think about the things that you use every day at work. Pick one, and list out some insights that this item could collect. What actions would these insights enable? How might these actions simplify your work?*
+|![Icon of lightbulb](../media/lightbulb.png)|*Let's review one example of an IoT-enabled object. An engine (a thing) collects pressure and temperature data that is used to evaluate whether the engine is performing as expected (the insights). This data is used to prioritize the engine maintenance schedule (the actions).  Now think about the things that you use every day at work. Pick one, and list out some insights that data from this item might expose. What actions would these insights enable? How might these actions simplify your work?*
 |
 
 Now that you know more about IoT in everyday business, let's apply it to Microsoft Azure IoT.
