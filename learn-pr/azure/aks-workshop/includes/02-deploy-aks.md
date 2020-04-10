@@ -200,7 +200,7 @@ Let's create a namespace for your ratings application.
 1. Use the `kubectl create namespace` command to create a namespace for the application called **ratingsapp**.
 
     ```bash
-    kubectl create namespace *ratingsapp*
+    kubectl create namespace ratingsapp
     ```
 
     You'll see a confirmation that the namespace was created.
