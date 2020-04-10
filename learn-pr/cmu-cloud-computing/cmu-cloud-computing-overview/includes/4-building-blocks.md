@@ -94,9 +94,9 @@ However, there are situations where SaaS may not be the right choice, such as:
 
 ### SaaS examples
 
-Webmail is one of the early examples of SaaS. Webmail enables users with a browser and an internet connection to access their e-mail anywhere at any time. Offerings like Hotmail, Yahoo Mail, and Gmail are extremely popular. These services are based on the "freemium" model, wherein basic services are free, and more advanced features are available with a subscription. Furthermore, providers earn revenue mainly from advertisements that are displayed to the users as they use the service.
+Webmail is one of the early examples of SaaS. Webmail enables users with a browser and an internet connection to access their e-mail anywhere at any time. Offerings like Outlook, Yahoo Mail, and Gmail are extremely popular. Some of these services are based on the "freemium" model, wherein basic services are free, and more advanced features are available with a subscription. Furthermore, providers earn revenue mainly from advertisements that are displayed to the users as they use the service.
 
-Another popular example of SaaS is online office suites, such as Google Drive and Microsoft Office 365, which allow users to create, edit, and share documents online. Google utilizes the freemium model for individual users. Microsoft has a charge model based on the features required and the number of users per month.
+Another popular example of SaaS is online office suites, such as Microsoft Office 365, which allow users to create, edit, and share documents online.
 
 ## PaaS model
 
@@ -121,7 +121,7 @@ PaaS offerings vary among providers but usually feature some basic functionality
 
 ### PaaS pricing models
 
-Unlike the SaaS pricing model (which is a subscription- or advertisement-based model), PaaS usually is priced in terms of usage of the platform. For example, Google App Engine's [charge model](https://cloud.google.com/pricing/) accounts for an application's inbound and outbound bandwidth as well as certain API requests. Consequently, the more an application developed using PaaS gets used, the more the PaaS developer gets charged.
+Unlike the SaaS pricing model (which is a subscription- or advertisement-based model), PaaS usually is priced in terms of usage of the platform. For example, Azure Functions' [pricing model](https://azure.microsoft.com/pricing/details/functions/) charges for total number of executions as well as execution time. Consequently, the more an application developed using PaaS gets used, the more the PaaS developer gets charged.
 
 ### PaaS use cases
 
@@ -139,7 +139,7 @@ There are certain scenarios in which PaaS may not be ideal, such as:
 
 ### PaaS examples
 
-Google App Engine is an example of a PaaS. Using Google's APIs, developers can create web and mobile applications that run on Google's infrastructure.
+Azure Functions is an example of a PaaS. Using Azure Functions, developers can run small pieces of code on Azure's infrastructure without worrying about managing their own.
 
 ## IaaS model
 
@@ -164,9 +164,9 @@ IaaS has the following characteristics:
 
 ### IaaS pricing models
 
-Unlike the SaaS pricing model (which is a subscription- or advertisement-based model) or the PaaS model (which usually is priced in terms of number of transactions or bandwidth or storage used), IaaS usually is priced on an hourly basis, per instance. For example, Amazon Elastic Compute Cloud (EC2) offers a spectrum of compute resources as virtualized OS instances, which vary in compute, memory, storage, and bandwidth.
+Unlike the SaaS pricing model (which is a subscription- or advertisement-based model) or the PaaS model (which usually is priced in terms of number of transactions or bandwidth or storage used), IaaS usually is priced on an hourly basis, per instance. For example, Azure Virtual Machines offer a spectrum of compute resources as virtualized OS instances, which vary in compute, memory, storage, and bandwidth.
 
-Cloud providers can also choose to bill on a prorated or non-prorated basis. On a prorated basis, each partial hour is billed partially, while on a non-prorated basis, each partial hour is billed as a full hour. This difference becomes significant when IaaS users need a large number of instances for a short period of time for burst processing. Amazon EC2 instances are billed on a non-prorated basis.
+Cloud providers can also choose to bill on a prorated or non-prorated basis. On a prorated basis, each partial hour is billed partially, while on a non-prorated basis, each partial hour is billed as a full hour. This difference becomes significant when IaaS users need a large number of instances for a short period of time for burst processing.
 
 ### IaaS use cases
 
@@ -185,4 +185,4 @@ IaaS may not be the best option when:
 
 ### IaaS examples
 
-Amazon Web Services (AWS), Microsoft Azure, and Rackspace are cloud service providers that offer IaaS products. Specifically, AWS's EC2 is one of the first commercially successful IaaS products. EC2 rents out instances from various datacenter locations scattered around the world. Users can choose from various instance types, from a low-memory, single CPU (which costs about several cents an hour), all the way up to multicore, high-performance, GPU-accelerated instances (which can cost up to several US dollars an hour).
+All major cloud providers offer IaaS products. Azure VMs rent out instances from various datacenter locations scattered around the world. Users can choose from various instance types, from a low-memory, single CPU (which costs about several cents an hour), all the way up to multicore, high-performance, GPU-accelerated instances (which can cost up to several US dollars an hour).
