@@ -5,9 +5,8 @@ Both `Series` and `DataFrames` are a lot like the `ndarrays` you encountered in 
 > [!Note]
 > **Sarah: Action items**
 > 
-> - Add one or more sentences as introduction / scenario statement for the Exercises H2 heading and H3 headings that follow.
-> - Search on "code cell below." These statements will need to be updated to coordinate with the new side-by-side exercise model. 
-> - Lead sentence mentions NumPy module in the LP, which isn't standard for Learn content.
+> - Search on "TBD" and add content as needed, including Hints for Try it yourself blocks.
+>
 
 ## Series objects in pandas
 
@@ -17,6 +16,8 @@ A pandas `Series` is a lot like an `ndarray` in NumPy, a one-dimensional array o
 Series_example = pd.`Series`([-0.5, 0.75, 1.0, -2])
 Series_example
 ```
+
+The output is:
 
 ```Output
 0   -0.50
@@ -36,6 +37,8 @@ Try accessing the `values` first; they are just a familiar NumPy array:
 Series_example.values
 ```
 
+The output is:
+
 ```Output
 array([-0.5 ,  0.75,  1.  , -2.  ])
 ```
@@ -45,6 +48,8 @@ The `index` is also an array-like object:
 ```Python
 Series_example.index
 ```
+
+The output is:
 
 ```Output
 RangeIndex(start=0, stop=4, step=1)
@@ -56,13 +61,19 @@ Just as with `ndarrays`, you can access specific data elements in a `Series` via
 series_example[1]
 ```
 
+The output is:
+
 ```Output
 0.75
 ```
 
+Another example:
+
 ```Python
 series_example[1:3]
 ```
+
+The output is:
 
 ```Output
 1    0.75
@@ -76,6 +87,8 @@ Despite a lot of similarities, pandas `Series` have an important distinction fro
 Series_example2 = pd.`Series`([-0.5, 0.75, 1.0, -2], index=['a', 'b', 'c', 'd'])
 Series_example2
 ```
+
+The output is:
 
 ```Output
 a   -0.50
@@ -91,21 +104,25 @@ These explicit indices work exactly the way you would expect them to:
 Series_example2['b']
 ```
 
+The output is:
+
 ```Output
 0.75
 ```
 
 ### Try it yourself
 
-You're experienced in Jupyter Notebooks and experimenting with Python now, so use those new super-powers to predict and test:
-Predict: What would happen if you sliced `series_example2` using its explicit index?
-Test: Try it out in VS Code, what that what you expected?
+You're experienced in Jupyter Notebooks and experimenting with Python now, so use those new super-powers to predict and test.
+- Predict: What would happen if you sliced `series_example2` using its explicit index?
+- Test: Try it out in VS Code. Was the output what you expected?
 
-## Explicit Indices
+<details>
+  <summary>Sarah: TBD Hint <i>(expand to reveal)</i></summary>
+
+  Hint goes here.
+</details>
 
 Do explicit `Series` indices work _exactly_ the way you might expect? Try slicing `Series_example2` using its explicit index and find out.
-
-### Slicing
 
 With explicit indices in the mix, a `Series` is basically a fixed-length, ordered dictionary in that it maps arbitrary typed index values to arbitrary typed data values. But like `ndarrays` these data are all of the same type, which is important. Just as the type-specific compiled code behind `ndarray` makes them more efficient than a Python lists for certain operations, the type information of pandas `Series` makes them much more efficient than Python dictionaries for certain operations.
 
@@ -119,6 +136,8 @@ population_dict = { 'France': 65429495,
 population = pd.`Series`(population_dict)
 population
 ```
+
+The output is:
 
 ```Output
 France      65429495
@@ -136,41 +155,37 @@ So, at one level, you can interact with `Series` as you would with dictionaries:
 population['Russia']
 ```
 
+The output is:
+
 ```Output
 143910127
 ```
 
 ### Try it yourself
 
-But you can also do powerful array-like operations with Series like slicing. 
-Predict: Whould slicing be possible if Series keys were not ordered?
-Test: Try it out in VS Code, create an unordered Series and try slicing it? Did it do what you expected?
+But you can also do powerful array-like operations with `Series` like slicing. 
+- Predict: Would slicing be possible if `Series` keys were not ordered?
+- Test: Try it out in VS Code. Create an unordered `Series` and try slicing it. Did it do what you expected?
 
-## Slice population Series
+<details>
+  <summary>Sarah: TBD Hint <i>(expand to reveal)</i></summary>
 
-```Output
-143910127
-```
+  Hint goes here.
+</details>
 
-### Use array-like operations
-
-You can also do powerful array-like operations with `Series` like slicing.
-
-- Try slicing on the `population` `Series` on your own.
-
-Would slicing be possible if `Series` keys were not ordered?
-
-### Add elements
+### Try it yourself
 
 You can also add elements to a `Series` the way that you would to an `ndarray`.
+- Try adding elements to a `Series` in the code cell below.
+- Try running `population['Albania'] = 2937590` (or another country of your choice).
 
-1. Try adding elements to a `Series` in the code cell below.
+<details>
+  <summary>Sarah: TBD Hint <i>(expand to reveal)</i></summary>
 
-1. Try running `population['Albania'] = 2937590` (or another country of your choice).
+  Hint goes here.
+</details>
 
 What order do the keys appear in when you run `population`? Is it what you expected?
-
-### Align indexed data
 
 Another useful `Series` feature (and definitely a difference from dictionaries) is that `Series` automatically aligns differently indexed data in arithmetic operations:
 
@@ -178,6 +193,8 @@ Another useful `Series` feature (and definitely a difference from dictionaries) 
 pop2 = pd.`Series`({'Spain': 46432074, 'France': 102321, 'Albania': 50532})
 population + pop2
 ```
+
+The output is:
 
 ```Output
 Albania           NaN
