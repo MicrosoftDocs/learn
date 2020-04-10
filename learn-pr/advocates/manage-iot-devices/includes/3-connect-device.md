@@ -87,7 +87,7 @@ IoT hub is receiving the device-to-cloud messages sent from the simulated device
 
 1. Change the time range to **Last 30 minutes**. Wait a few minutes for the data to enter the picture.
 
-   [![Screenshot showing the Pi simulator Run button](../media/iot-admin-device-metrics.png)](../media/iot-admin-device-metrics.png#lightbox)
+   [![Graph with the time range changed to 30 minutes](../media/iot-admin-device-metrics.png)](../media/iot-admin-device-metrics.png#lightbox)
 
 1. The shape of the graph will depend on the volume of messages arriving, and the sequence of **Run**, **Stop**, and **Reset** commands that you use. Feel free to stop and restart the sending of telemetry. Notice how the graph changes, and when it changes, because there's some latency.
 
