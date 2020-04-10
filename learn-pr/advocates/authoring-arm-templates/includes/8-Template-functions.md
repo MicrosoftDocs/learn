@@ -18,3 +18,6 @@ The parameter default value calls the resourceGroup function. This function retu
 
 [ARM template functions](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/template-functions)
 
+
+
+The brackets indicate that the syntax inside the brackets is a template expression. Azure Resource Manager resolves the syntax rather than treating it as a literal value and therefore substitute the value set in the parameters section.

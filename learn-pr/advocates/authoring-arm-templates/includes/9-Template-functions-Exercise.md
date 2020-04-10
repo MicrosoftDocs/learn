@@ -19,7 +19,7 @@ code azuredeploy.json
     - "[resourceGroup().location]"
     - "[parameters('\<parameterName\>')]"
 
-The first usage is taking advantage of the "Resource" functions where we can extract value of the resource group properties such as depicted in the following JSON file.
+The first usage is taking advantage of the **"Resource"** functions where we can extract value of the resource group properties such as depicted in the following JSON file.
 
 ```json
 {
@@ -35,10 +35,13 @@ The first usage is taking advantage of the "Resource" functions where we can ext
   }
 }
 ```
+
+The second time you used a function is when you added "[parameters('storageName')]" to your template in the last exercise. 
+
 In this exercise you will use the function **[resourceGroup().location]** to store the location of the target resource group in the "Location" parameter as a default value. Therefore, you can still pass a location if needed, however if you don't the default value will be used.  this, is the flexibility you will benefit from.
 
 >[!NOTE]
->As it was the case in the previous exercise, you'll notice that the value in the **"contentVersion"** section is incremented to **"1.0.0.4"** because again, you are making changes to your template.
+>As it was the case in the previous exercises, you'll notice that the value in the **"contentVersion"** section is incremented to **"1.0.0.4"** because again, you are making changes to your template.
 
 3. Copy the whole file and replace your template with its contents, or just adjust with the highlighted section.
 
@@ -50,15 +53,18 @@ In this exercise you will use the function **[resourceGroup().location]** to sto
 
 Now that you have modified the template, again, Let's deploy it. The following example deploys the template with Azure CLI.
 
-Just as it was in the first two exercises, you need to specify a resource group that will contain the resources. Before running the deployment command. In the **sandbox** provided here, you already have a resource group to target your deployment.
+Just as it was in the first few exercises, you need to specify a resource group that will contain the resources. Before running the deployment command. In the **sandbox** provided here, you already have a resource group to target your deployment.
 
-1. To get the name of the resource group in the sandbox, you can use an Azure CLI command. Type the code below in the sandbox to list the resource group name. the second command will store that value in a variable for Azure CLI to use to deploy the template.
+1. To get the name of the resource group in the sandbox, you can use an Azure CLI command. The Resource Group name might already be stored in the variable $RG from the last exercises.  in the shell use following command:
 
-    ```azurecli
-    az group list --query "[?contains(name, 'learn')]" -o table
-    RG=$(az group list --query "[?contains(name, 'learn')].name" -o tsv)
+```bash
+echo $RG
+```
+in no result is displayed, Type the code below in the sandbox to store the value of the Resource Group name in the "RG" variable for Azure CLI to use to deploy the template.
 
-    ```
+```azurecli
+RG=$(az group list --query "[?contains(name, 'learn')].name" -o tsv)
+```
 
 To run this deployment you will use Azure CLI that is built-in the Azure shell that is currently available in the sandbox provided for this exercise.  To deploy your new template version, use the code below.  This code will store the template name, the date (used to create the deployment name) and the constructed deployment name in variables to be used by the **az deployment** command as parameters.
 
@@ -67,10 +73,18 @@ To run this deployment you will use Azure CLI that is built-in the Azure shell t
 
 Copy and execute this code block in the shell provided.
 
-:::code language="azurecli" source="../samples/exercise3-storagenameparamdeploy.sh" highlight: "9":::
+:::code language="azurecli" source="../samples/exercise4-function-add.sh" highlight: "9":::
 
 The deployment command returns results in a JSON format. Look for `ProvisioningState` to see whether the deployment succeeded.
 
 ![Azure CLI deployment provisioning state](../media/deploy-succeed.png)
 
----
+#### Verify deployment
+
+You can verify the deployment by exploring the resource group from the Azure portal.
+
+1. Sign in to the Azure [Azure portal for sandbox](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
+1. From the left menu, select Resource groups.
+1. Select the resource group you deployed to.
+1. You see that a storage account resource has been deployed and has the same location as the resource group.
+

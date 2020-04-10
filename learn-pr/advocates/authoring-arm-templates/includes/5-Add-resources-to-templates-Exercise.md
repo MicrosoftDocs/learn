@@ -11,23 +11,15 @@ code azuredeploy.json
 2. Copy and paste the following code in the resource section of your ARM template.
 
 > [!IMPORTANT]
-> When copying the code. Please ensure to replace the **{provide-unique-name}** (including the curly brackets) with a unique storage account name.  Guessing a unique names for Azure resources isn't easy and should not be counted on to address automating large deployments. Later in this Learn Module, you'll use built-in template features to create a unique name.
+> When copying the code. Please ensure to replace the **{provide-unique-name}** (including the curly brackets) with a unique storage account name.  Guessing a unique names for Azure resources isn't easy and should not be counted on to address automating large deployments. Later in this Learn Module, you'll use built-in template features to create a unique name.  You also need to set the location to the same location a resource group provided for you in the **sandbox**.  In order to get the resource group name and location use the following command.
 
-```json
-   {
-     "type": "Microsoft.Storage/storageAccounts",
-     "apiVersion": "2019-04-01",
-     "name": "{provide-unique-name}",
-     "location": "eastus",
-     "sku": {
-       "name": "Standard_LRS"
-     },
-     "kind": "StorageV2",
-     "properties": {
-       "supportsHttpsTrafficOnly": true
-     }
-   }
+```azurecli
+az group list --query "[?contains(name, 'learn')]" -o table
 ```
+Now, you can copy the code and change the highlighted sections into the resource section of your existing empty template.
+
+:::code language="azurecli" source="../samples/Exercise2-resource.json" highlight: "4-5":::
+
 At this point your ARM template should now look like the following:
 
 ```JSON
@@ -43,7 +35,7 @@ At this point your ARM template should now look like the following:
              "type": "Microsoft.Storage/storageAccounts",
              "apiVersion": "2019-06-01",
              "name": "{provide-unique-name}",
-             "location": "eastus",
+             "location": "{Location}",
              "sku": {
                "name": "Standard_LRS"
              },
@@ -78,15 +70,15 @@ Just as it was in the first exercise, you need to specify a resource group that 
 
 1. To get the name of the resource group in the sandbox, you can use an Azure CLI command. Type the code below in the sandbox to list the resource group name.
 
-    ```shell
-    az group list --query "[?contains(name, 'learn')]" -o table
-    ```
+```shell
+az group list --query "[?contains(name, 'learn')]" -o table
+```
 
 1. In order to use the resource group name in the deployment, we will store it in a variable in the shell by using the command:
 
-    ```shell
-    RG=$(az group list --query "[?contains(name, 'learn')].name" -o tsv)
-    ```
+```shell
+RG=$(az group list --query "[?contains(name, 'learn')].name" -o tsv)
+```
 
 #### Azure CLI
 

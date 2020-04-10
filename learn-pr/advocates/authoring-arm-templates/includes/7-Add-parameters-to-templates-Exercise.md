@@ -63,26 +63,23 @@ Just as it was in the first two exercises, you need to specify a resource group 
 
 1. To get the name of the resource group in the sandbox, you can use an Azure CLI command. Type the code below in the sandbox to list the resource group name. the second command will store that value in a variable for Azure CLI to use to deploy the template.
 
-    ```azurecli
-    az group list --query "[?contains(name, 'learn')]" -o table
-    RG=$(az group list --query "[?contains(name, 'learn')].name" -o tsv)
-
-    ```
+```azurecli
+az group list --query "[?contains(name, 'learn')]" -o table
+RG=$(az group list --query "[?contains(name, 'learn')].name" -o tsv)
+```
 
 To run this deployment you will use Azure CLI that is built-in the Azure shell that is currently available in the sandbox provided for this exercise.  To deploy your new template version, use the code below.  This code will store the template name, the date (used to create the deployment name) and the constructed deployment name in variables to be used by the **az deployment** command as parameters.
 
 > [!IMPORTANT]
 > Don't forget to change **{your-unique-name}** in the code below with the **same** name you used in the previous exercise.
 
-Copy and execute this code block in the shell provided.
+2. Copy and execute this code block in the shell provided.
 
 :::code language="azurecli" source="../samples/exercise3-storagenameparamdeploy.sh" highlight: "9":::
 
 The deployment command returns results in a JSON format. Look for `ProvisioningState` to see whether the deployment succeeded.
 
 ![Azure CLI deployment provisioning state](../media/deploy-succeed.png)
-
----
 
 ### Verify deployment
 
