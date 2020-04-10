@@ -8,7 +8,6 @@ metadata:
   ms.author: jopapa
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 title: Exercise - Run and Debug the Node.js and Express API Application
 durationInMinutes: 5
 content: |

@@ -34,7 +34,7 @@ The Angular application makes a call to the `vacations` endpoint in the Node.js 
 
 1. Set a breakpoint by clicking in the editor's gutter to the left of the line of code `vacationService.getVacations(req, res);`.
 
-> ![NOTE]
+> [!NOTE]
 > The files _.vscode/launch.json_ and _.vscode/tasks.json_ are integral to the debugging experience for this project. You should explore those files and copy/refactor their contents for your own purposes.
 
 ## Run and debug the application

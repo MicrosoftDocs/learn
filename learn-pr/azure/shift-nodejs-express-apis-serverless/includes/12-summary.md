@@ -2,7 +2,7 @@ In this module, you refactored your Node.js Express application to Azure Functio
 
 Node.js and Express have been incredibly powerful and oft used for serving API endpoints. Now with serverless you could shift your APIs and not worry about server setup or maintenance. You can also possibly reduce your cost of an always-on server by replacing the Node.js Express server with Azure Functions. And for your efforts, you get an API that scales well. Ultimately, with Azure Functions you can focus on the code, not the servers.
 
-> ![NOTE]
+> [!NOTE]
 > If you want to deploy the Azure Functions app to the cloud, you can [deploy it by following this tutorial](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions). All you need is an [Azure account](https://azure.microsoft.com/free/) and then use the Azure Functions extension for Visual Studio Code to deploy it.
 
 The complete solution for the [sample project is on GitHub here](https://github.com/johnpapa/express-to-functions). The instructions on how to get started are also in the README file. You can explore running the Express app or the Azure Functions app to get a sense of the differences. Then try to apply this same shift to your code.

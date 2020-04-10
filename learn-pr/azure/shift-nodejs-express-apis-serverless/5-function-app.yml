@@ -8,7 +8,6 @@ metadata:
   ms.author: jopapa
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 title: Analyzing the Shift from Node.js and Express to Azure Functions
 durationInMinutes: 2
 content: |
