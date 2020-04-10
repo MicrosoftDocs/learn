@@ -4,7 +4,7 @@ You have set up an Azure virtual network and need to ensure that any data transf
 
 ## What is a VPN gateway?
 
-An Azure VPN gateway provides an endpoint for incoming encrypted connections from on-premises locations to Azure over the Internet. It can also send encrypted traffic between Azure virtual networks over Microsoft's dedicated network that links Azure datacenters in different regions. This configuration allows you to link virtual machines and services in different regions securely.
+An Azure virtual network gateway provides an endpoint for incoming connections from on-premises locations to Azure over the Internet. A VPN gateway is a specific type of virtual network gateway that can be an endpoint for encrypted connections. It can also send encrypted traffic between Azure virtual networks over Microsoft's dedicated network that links Azure datacenters in different regions. This configuration allows you to link virtual machines and services in different regions securely.
 
 Each virtual network can have only one VPN gateway. All connections to that VPN gateway share the available network bandwidth.
 
@@ -12,7 +12,7 @@ Within each virtual network gateway there are two or more virtual machines (VMs)
 
 Creating a virtual network gateway can take some time to complete, so it's vital that you plan appropriately. When you create a virtual network gateway, the provisioning process generates the gateway VMs and deploys them to the gateway subnet. These VMs will have the settings that you configure on the gateway.
 
-A key setting is the **_gateway type_**, which for a VPN gateway will be of type "vpn". Options for VPN gateways include:
+A key setting is the **_gateway type_**. The gateway type determines the way the gateway functions. For a VPN gateway, the gateway type is "vpn". Options for VPN gateways include:
 
 - Network-to-network connections over IPsec/IKE VPN tunneling, linking VPN gateways to other VPN gateways.
 
@@ -55,17 +55,7 @@ The following table summarizes some of these planning issues. The remainder are 
 
 ### Gateway SKUs
 
-Azure offers the following SKUs for gateway services:
-
-| SKU              |  S2S/network-to-network tunnels | P2S connections  |  Aggregate throughput benchmark   | Use for                         |
-| -------------    | -------------             | -------------    | ---------                         | ---------                       |
-| Basic            | Max 10                    | Max 128          | 100 Mbps                          | Dev/test/POC                    |
-| VpnGw1           | Max 30                    | Max 128          | 650 Mbps                          | Production/critical workloads   |
-| VpnGw2           | Max 30                    | Max 128          | 1 Gbps                            | Production/critical workloads   |
-| VpnGw3           | Max 30                    | Max 128          | 1.25 Gbps                          | Production/critical workloads   |
-
-> [!Note]
-> It's important that you choose the right SKU. If you have set up your VPN gateway with the wrong one, you'll have to take it down and rebuild the gateway, which can be time consuming.
+It's important that you choose the right SKU. If you have set up your VPN gateway with the wrong one, you'll have to take it down and rebuild the gateway, which can be time consuming. For the latest information about gateway SKUs, including throughput, see [What is VPN Gateway? - Gateway SKUs](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways#gwsku).
 
 ## Workflow
 
