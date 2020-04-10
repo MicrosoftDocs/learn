@@ -29,10 +29,12 @@ The output is:
 
 Now try adding another country (or something else) to the capitals dictionary.
 
-<details>
+<details> 
+
   <summary>Sarah: TBD Hint <i>(expand to reveal)</i></summary>
 
   Hint goes here.
+  
 </details>
 
 You reference entries much like you do as through an index number for a string, list, or tuple, but instead of an index, use a key:

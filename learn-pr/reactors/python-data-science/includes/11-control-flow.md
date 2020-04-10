@@ -69,9 +69,11 @@ Notice that, in the previous example, the `if` statement exited after finding th
 Try changing the value of `y` in the snippet above. Do you get the output that you expect?
 
 <details>
+
   <summary>Sarah: TBD Hint <i>(expand to reveal)</i></summary>
 
   Hint goes here.
+
 </details>
 
 ## For loop: Basics
@@ -165,9 +167,11 @@ Note that, in the example above, the `else` statement belongs to the `for` loop,
 Try changing the code snippet above after you remove the `break` statement. What output does it now produce?
 
 <details>
+
   <summary>Sarah: TBD Hint <i>(expand to reveal)</i></summary>
 
   Hint goes here.
+
 </details>
 
 ## For loop: Continue
@@ -199,9 +203,11 @@ Found an odd number: 9
 What happens when you replace the `continue` statement above with a `break`?
 
 <details>
+
   <summary>Sarah: TBD Hint <i>(expand to reveal)</i></summary>
 
   Hint goes here.
+  
 </details>
 
 ## While-loops

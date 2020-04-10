@@ -118,7 +118,9 @@ i = 7
 ```
 
 <details>
+
   <summary>Sarah: TBD Hint <i>(expand to reveal)</i></summary>
 
   Hint goes here.
+  
 </details>

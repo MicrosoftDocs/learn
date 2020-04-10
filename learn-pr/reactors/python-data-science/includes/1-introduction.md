@@ -1,6 +1,6 @@
 Since its first release in 1991, Python has risen to become not just a popular general-purpose programming language, but a preeminent computer language for data science. This learning path will use Python and the Python extension for Visual Studio Code as the primary means of illustrating data-science tools and resources.
 
->
+> [!Note]
 > **Sarah: Action items**
 >
 > - Search on "TBD" and add content as needed, including Hints for Try it yourself blocks.
@@ -40,9 +40,11 @@ The output is:
 Open the TBD in VS Code. Copy and paste the code snippet from above into a Python code cell. Run the code and you should get the following output:
 
 <details>
+
   <summary>Sarah: TBD Hint <i>(expand to reveal)</i></summary>
 
   Hint goes here.
+  
 </details>
 
 Python is an interpreted language, which means that you can interactively use the interpreter to get immediate results. You can see this by using the Python interpreter as a simple calculator: type an expression, and you can see the output immediately.
