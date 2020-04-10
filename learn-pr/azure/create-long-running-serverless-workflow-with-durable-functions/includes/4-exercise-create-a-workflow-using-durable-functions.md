@@ -45,7 +45,7 @@ Since we are creating JavaScript Durable Functions, we need to install the `dura
 
     A command prompt appears. This command prompt window is running on the web server. Additionally, the console should display the directory structure of the function app. An Explorer window also appears above the command line, showing the folder and file hierarchy on the web server.
 
-1. In the Explorer window, navigate to the **site** folder, and then select the ***wwwroot** folder.
+1. In the Explorer window, navigate to the **site** folder, and then select the **wwwroot** folder.
 
 1. In the command prompt window, make sure you are in the folder **D:\home\site\wwwroot**. Run the following command:
 
@@ -174,6 +174,18 @@ Since we are creating JavaScript Durable Functions, we need to install the `dura
     ```
 
 1. Select **Save** to save your new function. 
+
+## Enable V2 compatibility mode
+
+JavaScript Durable Functions currently requires the Azure Functions V2 compatibility to be enabled.
+
+1. In the function app's **Platform Features** tab or menu, select **Configuration**.
+
+1. Select the **Function runtime settings** tab.
+
+1. Change the **Runtime version** to **~2**.
+
+1. Select **Save** to persist the change.
 
 ## Verify that the durable functions workflow starts
 
