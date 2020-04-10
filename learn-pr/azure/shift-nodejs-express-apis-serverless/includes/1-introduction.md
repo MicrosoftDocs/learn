@@ -14,7 +14,7 @@ Plus, you could write less code!
 
 In this tutorial, you move from an Express API to a serverless architecture through the following steps:
 
-1. You'll begin by exploring and running the Node and Express APIs in the sample project
+1. You'll begin by exploring and running the Node.js and Express APIs in the sample project
 1. Next, you'll create an Azure Functions application
 1. Then, you'll refactor the Express routes and data calls to use the Azure Functions application
 1. Finally, you'll explore and launch your application, as shown below
@@ -35,7 +35,7 @@ Why would you make this shift? Overall there's less to think about when building
 
 ## About your project
 
-The app begins as a Node Express application in TypeScript that you'll shift to an Azure Functions app.
+The app begins as a Node.js Express application in TypeScript that you'll shift to an Azure Functions app.
 
 > [!NOTE]
 > If your Express app is using JavaScript instead of TypeScript, create an Azure Functions app using JavaScript.

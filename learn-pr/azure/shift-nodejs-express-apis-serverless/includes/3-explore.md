@@ -1,6 +1,6 @@
 While the app is ready to run, you'll first step back what's in the project.
 
-## Node and Express APIs
+## Node.js and Express APIs
 
 Now explore the sample project you cloned and built. The application is a conventional Node.js and Express API that serves the following four endpoints.
 
@@ -11,7 +11,7 @@ Now explore the sample project you cloned and built. The application is a conven
 | PUT     | `vacations:id`  |
 | DELETE  | `vacations/:id` |
 
-The structure of the Node Express app is straight-forward and contained in the _server_ folder.
+The structure of the Node.js Express app is straight-forward and contained in the _server_ folder.
 
 ```files
 server

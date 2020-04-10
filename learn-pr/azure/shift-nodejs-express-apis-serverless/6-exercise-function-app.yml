@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.shift-express-api-azure-functions.6-exercise-function-app
 metadata:
-  title: Exercise - Creating Your Azure Functions Application
-  description: Creating Your Azure Functions Application
+  title: Exercise - Create your Azure Functions application
+  description: Create your Azure Functions application
   ms.date: 03/30/20
   author: johnpapa
   ms.author: jopapa
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Exercise - Creating Your Azure Functions Application
+title: Exercise - Create your Azure Functions application
 durationInMinutes: 3
 content: |
   [!include[](includes/6-exercise-function-app.md)]

@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.azure.shift-express-api-azure-functions
 metadata:
-  title: Refactor Node.js and Express APIs to Serverless APIs with Azure Functions
+  title: Refactor Node.js and Express APIs to serverless APIs with Azure Functions
   description: Refactor Node.js and Express APIs from a server-based architecture to serverless APIs with Azure Functions.
   ms.date: 04/10/20
   author: johnpapa

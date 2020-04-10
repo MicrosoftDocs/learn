@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.shift-express-api-azure-functions.2-exercise-setup
 metadata:
-  title: Exercise - Getting Started
-  description: Getting started with the Node.js Express API application
+  title: Exercise - Get started
+  description: Get started with the Node.js Express API application
   ms.date: 03/30/20
   author: johnpapa
   ms.author: jopapa
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Exercise - Getting Started
+title: Exercise - Get started
 durationInMinutes: 2
 content: |
   [!include[](includes/2-exercise-setup.md)]
