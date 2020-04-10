@@ -3,7 +3,7 @@ uid: learn.azure.shift-express-api-azure-functions.8-exercise-refactor
 metadata:
   title: Exercise - Shift the services to Azure Functions
   description: Shift the services to Azure Functions
-  ms.date: 03/30/20
+  ms.date: 04/10/20
   author: johnpapa
   ms.author: jopapa
   ms.topic: interactive-tutorial
