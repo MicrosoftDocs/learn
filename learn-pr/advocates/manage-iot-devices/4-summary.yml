@@ -23,14 +23,14 @@ quiz:
       isCorrect: false
       explanation: "Devices range from sensors to powerful gateways that route communications for groups of devices."    
 
-  - content: "True or false: you can't receive telemetry data in the Azure portal when using the Raspberry Pi Azure IoT Simulator."
+  - content: "True or false: you can't receive telemetry data in the Azure portal when using the Raspberry Pi Azure IoT simulator."
     choices:
     - content: "True"
       isCorrect: false
-      explanation: "Even though you're not using physical hardware, you can still receive telemetry data when using the Raspberry Pi Azure IoT Simulator."
+      explanation: "Even though you're not using physical hardware, you can still receive telemetry data when using the Raspberry Pi Azure IoT simulator."
     - content: "False"
       isCorrect: true
-      explanation: "Even though you're not using physical hardware, you can still receive telemetry data when using the Raspberry Pi Azure IoT Simulator."  
+      explanation: "Even though you're not using physical hardware, you can still receive telemetry data when using the Raspberry Pi Azure IoT simulator."  
 
   - content: "Which two metrics are shown by default on the overview page for your IoT hub?"
     choices:

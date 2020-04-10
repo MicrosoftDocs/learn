@@ -10,11 +10,11 @@ Start by selecting the **Overview** menu entry.
 
 ### Overview
 
-The overview contains some useful data. If you scroll to the bottom of the page, you'll see two charts. By default, the **Telemetry data sent** and **Successful twin reads from back end** metrics are displayed here. These charts are a good place to go to when you're verifying that the telemetry from a device is being received.
+The overview contains some useful data. If you scroll to the bottom of the page, you'll see two charts. By default, the **Telemetry messages sent** and **Successful twin reads from back end** metrics are displayed here. These charts are a good place to go to when you're verifying that the telemetry from a device is being received.
 
 [![Screenshot showing the default charts in the IoT hub overview](../media/iot-admin-overview.png)](../media/iot-admin-overview.png#lightbox)
 
-The overview, however, isn't the most useful of the menu entries, as we'll see as we explore the menu. You can select **Activity log**, though you may not understand what and why the entries are there. Logs often contain too much information! Also, select **Diagnose and solve problems**. This page is a resource to go to if problems arise. There's no guarantee that it will have all the information you need, but it's a good place to start.
+The overview, however, isn't the most useful of the menu entries, as we'll see as we explore the menu. You can select **Activity log**, though you might not understand why the entries are there. Logs often contain too much information! Also, select **Diagnose and solve problems**. This page is a resource to go to if problems arise. There's no guarantee that it will have all the information you need, but it's a good place to start.
 
 [![Screenshot showing the troubleshooting options for an IoT hub](../media/iot-admin-common-problems.png)](../media/iot-admin-common-problems.png#lightbox)
 
@@ -60,7 +60,7 @@ Finally, find the **Monitoring** section.
 You have already used **Metrics**, in the previous unit. Another useful entry is **Alerts**. Alerts fire when certain conditions, usually errors or warnings, are met.
 
 To get detailed experience with metrics, and to set up some alerts, add the following module to your to-do list:
-[Manage your Azure IoT Hub with alerts and metrics](https://docs.microsoft.com/learn/modules/manage-azure-iot-hub-with-metrics-alerts/).
+[Manage your Azure IoT hub with alerts and metrics](https://docs.microsoft.com/learn/modules/manage-azure-iot-hub-with-metrics-alerts/).
 
 ### Next steps
 

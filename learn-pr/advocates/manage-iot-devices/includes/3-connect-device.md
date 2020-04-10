@@ -18,9 +18,9 @@ To start collecting data from the Raspberry Pi simulator, you need to first crea
 
 1. In the **IoT hub** pane, enter the following information for your IoT hub:
 
-   - **Subscription**: Use the **Concierge subscription** for this example. This entry is the sandbox subscription.
+   - **Subscription**: Use **Concierge Subscription** for this example. This entry is the sandbox subscription.
    - **Resource group**: Use the sandbox resource group.
-   - **Name**: Create a unique name for your IoT hub. For example, use something like **PiHub-your-id**, but replace "your-id" with something appropriate. If the name you enter is available, a green check mark appears.
+   - **IoT hub name**: Create a unique name for your IoT hub. For example, use something like **PiHub-your-id**, but replace "your-id" with something appropriate. If the name that you enter is available, a green check mark appears.
    - **Region**: Select the closest region to your location.
 
     > [!IMPORTANT]
@@ -38,7 +38,7 @@ To start collecting data from the Raspberry Pi simulator, you need to first crea
 
 A device must be registered with your IoT hub before the device can connect.
 
-1. In your IoT hub navigation menu, open **IoT devices**, and then select **+ New**.
+1. On your IoT hub's left menu, select **IoT devices**, and then select **+ New**.
 
    [![Screenshot showing how to add a device to your IoT hub](../media/iot-admin-create-device.png)](../media/iot-admin-create-device.png#lightbox)
 
@@ -65,15 +65,15 @@ A device must be registered with your IoT hub before the device can connect.
 
    [![Screenshot showing where to replace the device connection string](../media/iot-admin-line-15.png)](../media/iot-admin-line-15.png#lightbox)
 
-1. Select the `Run` button, or enter `npm start` in the console window, to run the application.
+1. Select **Run**, or enter `npm start` in the console window, to run the application.
 
    [![Screenshot showing the Pi simulator Run button](../media/iot-admin-device-run.png)](../media/iot-admin-device-run.png#lightbox)
 
-1. You should see output similar to the following, showing the sensor data and messages sent to your IoT hub.
+1. You should see output similar to the following. It shows the sensor data and messages sent to your IoT hub.
 
    [![Screenshot showing the Pi simulator console output](../media/iot-admin-device-telemetry.png)](../media/iot-admin-device-telemetry.png#lightbox)
 
-1. Make sure you don't miss the LED flash, each time a message is sent!
+1. Make sure you don't miss the LED flash each time a message is sent!
 
    [![Screenshot showing the Pi simulator LED flash](../media/iot-admin-led-flash.png)](../media/iot-admin-led-flash.png#lightbox)
 
@@ -83,13 +83,13 @@ IoT hub is receiving the device-to-cloud messages sent from the simulated device
 
 1. In your IoT hub, under **Monitoring**, select **Metrics**.
 
-1. For **Metric**, locate **Telemetry messages sent**. It's near the end of the list of available metrics. Select **Sum** for **Aggregation**.
+1. For **Metric**, find **Telemetry messages sent**. It's near the end of the list of available metrics. Select **Sum** for **Aggregation**.
 
 1. Change the time range to **Last 30 minutes**. Wait a few minutes for the data to enter the picture.
 
    [![Screenshot showing the Pi simulator Run button](../media/iot-admin-device-metrics.png)](../media/iot-admin-device-metrics.png#lightbox)
 
-1. The shape of the graph will depend on the volume of messages arriving, and the sequence of `Run`, `Stop`, and `Reset` commands that you use. Feel free to stop and restart the sending of telemetry. Notice how the graph changes, and when it changes, because there's some latency.
+1. The shape of the graph will depend on the volume of messages arriving, and the sequence of **Run**, **Stop**, and **Reset** commands that you use. Feel free to stop and restart the sending of telemetry. Notice how the graph changes, and when it changes, because there's some latency.
 
 ### Next steps
 
