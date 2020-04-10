@@ -123,7 +123,7 @@ The code that you add calls the asynchronous function `vacationService.getVacati
 
 There are four endpoints in the Node.js Express application and you just created the first one. Now, follow these steps to create an Azure Function for the rest of the route endpoints. Here are the endpoints you'll create.
 
-| methods | route endpoints    |
+| Methods | Route endpoints    |
 | ------- | ------------------ |
 | POST    | _vacations-post_   |
 | PUT     | _vacations-put_    |

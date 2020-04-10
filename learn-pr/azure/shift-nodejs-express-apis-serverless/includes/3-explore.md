@@ -4,7 +4,7 @@ While the app is ready to run, you'll first step back what's in the project.
 
 Now explore the sample project you cloned and built. The application is a conventional Node.js and Express API that serves the following four endpoints.
 
-| methods | route endpoints |
+| Methods | Route endpoints |
 | ------- | --------------- |
 | GET     | `vacations`     |
 | POST    | `vacations`     |

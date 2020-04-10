@@ -1,8 +1,8 @@
 Now it's time for you to plan the shift to serverless. The Node.js Express app can be broken down into its three main areas:
 
-1. The Express server, which is mostly in _server.ts_
-1. The routes, which are in _routes/_
-1. The data access logic, which is in _services/vacation.service.ts_
+- The Express server, which is mostly in _server.ts_
+- The routes, which are in _routes/_
+- The data access logic, which is in _services/vacation.service.ts_
 
 Here are the steps you'll follow to refactor your code from Node.js Express to Azure Functions.
 

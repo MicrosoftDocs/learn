@@ -17,7 +17,7 @@ Now, reflect on what steps you followed to refactor your code from Node.js Expre
 
 The Azure Functions application has folders that map to each of their appropriate endpoints, as shown below.
 
-| methods | route endpoints | folders          |
+| Methods | Route endpoints | Folders          |
 | ------- | --------------- | ---------------- |
 | GET     | `vacations`     | vacations-get    |
 | POST    | `vacations`     | vacations-post   |
