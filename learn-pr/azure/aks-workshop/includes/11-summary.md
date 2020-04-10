@@ -8,8 +8,8 @@ In this module, you created resources by using your Azure subscription. You want
 
 1. Open the Azure portal.
 
-  > [!div class="nextstepaction"]
-  > [Azure portal](https://portal.azure.com?azure-portal=true)
+    > [!div class="nextstepaction"]
+    > [Azure portal](https://portal.azure.com?azure-portal=true)
 
 1. Select **Resource groups** on the left.
 
