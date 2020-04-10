@@ -177,7 +177,7 @@ Since we are creating JavaScript Durable Functions, we need to install the `dura
 
 ## Enable V2 compatibility mode
 
-JavaScript Durable Functions currently requires the Azure Functions V2 compatibility to be enabled.
+JavaScript Durable Functions currently require Azure Functions V2 compatibility to be enabled.
 
 1. In the function app's **Platform Features** tab or menu, select **Configuration**.
 
