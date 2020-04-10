@@ -1,4 +1,4 @@
-The best way to learn how to use Azure Cognitive Services for translation is to explore them for yourself.
+The best way to learn how to use the Translator Text and Speech services for translation is to explore them for yourself.
 
 ## Before you start
 
