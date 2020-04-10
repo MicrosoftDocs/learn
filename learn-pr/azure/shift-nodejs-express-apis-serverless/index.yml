@@ -1,0 +1,51 @@
+### YamlMime:Module
+uid: learn.azure.shift-express-api-azure-functions
+metadata:
+  title: Refactor Node.js and Express APIs to serverless APIs with Azure Functions
+  description: Refactor Node.js and Express APIs from a server-based architecture to serverless APIs with Azure Functions.
+  ms.date: 04/10/2020
+  author: johnpapa
+  ms.author: jopapa
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Refactor Node.js and Express APIs to Serverless APIs with Azure Functions
+summary: Refactor Node.js and Express APIs from a server-based architecture to serverless APIs with Azure Functions.
+abstract: |
+  In this module, you will:
+    - Establish an Application Programming Interfaces (API).
+    - Evaluate an existing project that implements Express APIs.
+    - Create a new Azure Functions application with TypeScript/JavaScript.
+    - Refactor the Node.js Express APIs to the Azure Functions application.
+    - Run and debug the application locally.
+    - Understand the differences and similarities in refactoring Express APIs to Azure Functions.
+prerequisites: |
+  - Must have some knowledge of JavaScript
+  - Must have some familiarity with Node.js and Express APIs
+  - Must have some familiarity with Azure Functions
+  - Must have [Node.js](https://nodejs.org/) installed
+  - Must have [Visual Studio Code](https://code.visualstudio.com/) installed
+  - Must have [Azure Functions Core Tools](https://github.com/Azure/azure-functions-core-tools) installed
+  - Must have the [Azure Functions](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions) extension installed
+iconUrl: /learn/achievements/shift-express-api-azure-functions.png
+levels:
+  - beginner
+roles:
+  - developer
+products:
+  - azure
+  - azure-functions
+units:
+  - learn.azure.shift-express-api-azure-functions.1-introduction
+  - learn.azure.shift-express-api-azure-functions.2-exercise-setup
+  - learn.azure.shift-express-api-azure-functions.3-explore
+  - learn.azure.shift-express-api-azure-functions.4-exercise-debug-express
+  - learn.azure.shift-express-api-azure-functions.5-function-app
+  - learn.azure.shift-express-api-azure-functions.6-exercise-function-app
+  - learn.azure.shift-express-api-azure-functions.7-exercise-function
+  - learn.azure.shift-express-api-azure-functions.8-exercise-refactor
+  - learn.azure.shift-express-api-azure-functions.9-solution
+  - learn.azure.shift-express-api-azure-functions.10-exercise-debug-function
+  - learn.azure.shift-express-api-azure-functions.11-knowledge-check
+  - learn.azure.shift-express-api-azure-functions.12-summary
+badge:
+  uid: learn.azure.shift-express-api-azure-functions.badge
