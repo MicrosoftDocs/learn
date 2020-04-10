@@ -42,7 +42,11 @@ There are many services that enable data analysis, here are some of them.
 
 ### Azure IoT Hub SDKs
 
-For intermediate and advanced developers, there is a range of IoT SDKs. The SDKs support new features from IoT Hub, as updates are released, so you can incorporate these new features with minimal code, and ensure your solution is up-to-date. The SDKs support .NET, C, Java, Node.js, Python, and iOS.
+For intermediate and advanced developers, there is a range of IoT SDKs. The SDKs support new features from IoT Hub, as updates are released, so you can incorporate these new features with minimal code, and ensure your solution is up-to-date.
+
+In the context of IoT, a _module_ is an independent connection from a device to a hub. Suppose a device has three sensors, and each sensor sends telemetry to a different department in your organization. If your IoT solution uses modules, then each department will only have visibility to the sensor data that they own.
+
+The SDKs support .NET, C, Java, Node.js, Python, and iOS.
 
 |Business need | Azure services | Description | Benefits |
 |---------|---------|---------|---------|
