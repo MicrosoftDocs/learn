@@ -18,7 +18,10 @@ In this exercise, you will:
 
 You'll first need to create a resource group for your resources to deploy into.
 
-1. Sign in to [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true) with your Azure account. Select the Bash version of Cloud Shell.
+1. Sign in to Azure Cloud Shell with your Azure account. Select the Bash version of Cloud Shell.
+
+    > [!div class="nextstepaction"]
+    > [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true)
 
 1. We're going to reuse some values throughout the deployment scripts. For example, you need to choose a region where you want to create a resource group, for example, **East US**. If you select a different value, remember it for the rest of the exercises in this module. You may need to redefine the value between Cloud Shell sessions. Run the following commands to record these values in Bash variables.
 
