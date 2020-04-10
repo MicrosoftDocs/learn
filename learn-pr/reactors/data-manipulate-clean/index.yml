@@ -20,8 +20,8 @@ abstract:  |
 
   Complementary content for Microsoft Reactor Workshops.
 prerequisites: |
-  - <a href="../../python-data-science/includes/1-introduction.yml">Set up your environment</a>
-  - [Set up your environment](../../python-data-science/includes/1-introduction.yml)
+  - <a href="../../python-data-science/1-introduction.yml">Set up your environment</a>
+  - [Set up your environment](../../python-data-science/1-introduction.yml)
   - Introduction to Python for data science
   - Introduction to NumPy for data science
   - Introduction to Pandas for data science
