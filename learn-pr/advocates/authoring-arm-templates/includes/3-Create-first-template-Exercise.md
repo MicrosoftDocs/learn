@@ -32,7 +32,7 @@ Copy and paste the following JSON into the editor:
 - **contentVersion**: Specifies the version of the template (such as 1.0.0.0). You can provide any value for this element. Use this value to document significant changes in your template. When deploying resources using the template, this value can be used to make sure that the right template is being used.
 - **resources**: Contains the resources you want to deploy or update. Currently, it's empty, but you'll add resources later.
 
-1. Now that you saved the template. Close the editor by either clicking on the ellipsis (upper right corner **...**) and select **Close Editor**, or the keyboard shortcut **CTRL-Q**.
+1. Now that you saved the template. Close the editor by either clicking on the ellipsis (upper right corner **...**) and select **Close Editor**, or use the keyboard shortcut **CTRL-Q**.
 ---
 ### Create resource group
 
@@ -94,7 +94,7 @@ You can verify the deployment by exploring the resource group from the Azure por
 
    ![View deployment status](../media/portal-verify-deployment.png)
 
-1. You see a history of deployment for the resource group. Select the deployment that is has as part of the name **blanktemplate** and the deployment date.
+1. You see a history of the deployments for the resource group. Select the deployment that is contains  **blanktemplate** and the deployment date as part of the name.
 
    ![Select deployment](../media/portal-verify-blanktemplate.png)
 

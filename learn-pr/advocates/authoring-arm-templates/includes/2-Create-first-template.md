@@ -1,8 +1,8 @@
-### What are Azure resource manager templates (ARM)
+### What are Azure Resource Manager templates (ARM)
 
-Azure Resource Manager (ARM) templates are a JavaScript Object Notation (JSON) file that defines the infrastructure and configuration for your deployment. The template uses a declarative syntax. Declarative syntax is a way of building the structure and elements that outlines what resources will look like without describing its control flow.  Unlike imperative syntax that uses commands for the computer to perform. Imperative scripting focuses on specifying each steps in deploying the resources.
+Azure Resource Manager (ARM) templates are a JavaScript Object Notation (JSON) file that defines the infrastructure and configuration for your deployment. The template uses a declarative syntax. Declarative syntax is a way of building the structure and elements that outline what resources will look like without describing its control flow.  Unlike imperative syntax that uses commands for the computer to perform. Imperative scripting focuses on specifying each step in deploying the resources.
 
-ARM templates allow you state what you intend to deploy without having to write the sequence of programming commands to create it.  In the template, you specify the resources to deploy and the properties for those resources, then the [Azure Resource Manager](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/overview) uses that information to deploys the resources in an organized and consistent manner.
+ARM templates allow you declare what you intend to deploy without having to write the sequence of programming commands to create it.  In the template, you specify the resources to deploy and the properties for those resources, then the [Azure Resource Manager](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/overview) uses that information to deploys the resources in an organized and consistent manner.
 
 #### Benefits of using ARM Templates
 
@@ -29,7 +29,7 @@ Other benefits to name a few are:
 
 
 ### Template file structure
-When writing an ARM template you need to understand all the parts that makes up the template and what they do. In the template files (JSON), you will notice that these files are made up of the following elements:
+When writing an ARM template, you need to understand all the parts that makes up the template and what they do. In the template files (JSON), you will notice that these files are made up of the following elements:
 
 - Schema
 - ContentVersion
@@ -40,7 +40,7 @@ When writing an ARM template you need to understand all the parts that makes up 
 - Resources
 - Outputs
 
-Each of these section serves a very defined purpose.
+Each of the section serves a defined purpose.
 
 #### Schema
 | Required | Description |
@@ -50,7 +50,7 @@ Each of these section serves a very defined purpose.
 #### contentVersion
 | Required | Description |
 |:--- |:--- |
-|Yes |Version of your template (such as 1.0.0.0). This is an optional section that allows you to provide any value for this element. You can use this value to document significant changes in your template and therefore can help you ensure you're deploying the right template. |
+|Yes |Version of your template (such as 1.0.0.0). contentVersion is an optional section that allows you to provide any value for this element. You can use this value to document significant changes in your template and therefore can help you ensure you're deploying the right template. |
 
 #### apiProfile
 | Required | Description |
@@ -59,11 +59,11 @@ Each of these section serves a very defined purpose.
 #### Parameters
 | Required | Description |
 |:--- |:--- |
-|No |Values that are provided when deployment is executed to customize resource deployment.  These values can be provided by a parameter file, by command line parameters or in the portal.  Depending on your deployment mechanism. |
+|No |Values that are provided when deployment is executed to customize resource deployment.  These values can be provided by a parameter file, by command-line parameters or in the portal.  Depending on your deployment mechanism. |
 #### Variables
 | Required | Description |
 |:--- |:--- |
-|No |[Variables](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/template-variables) are values that are used as JSON fragments in the template to simplify template language expressions. These variable can be constructed by modifying, or processing parameters and/or other strings with several template functions.<br>For example:<br><br>**"variables": {"storageName": "[concat(toLower(parameters('storageNamePrefix')), uniqueString(resourceGroup().id))]"},**<br><br>Where 'storageNamePrefix' is a parameter passed into the template. |
+|No |[Variables](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/template-variables) are values that are used as JSON fragments in the template to simplify template language expressions. These variables can be constructed by modifying, or processing parameters and/or other strings with several template functions.<br>For example:<br><br>**"variables": {"storageName": "[concat(toLower(parameters('storageNamePrefix')), uniqueString(resourceGroup().id))]"},**<br><br>Where 'storageNamePrefix' is a parameter passed into the template. |
 #### User-defined functions
 | Required | Description |
 |:--- |:--- |
