@@ -2,16 +2,6 @@ The other crucial data structure in pandas to get to know for data science is th
 
 Just as a `Series` is like a one-dimensional array with flexible indices, a `DataFrame` is like a two-dimensional array with both flexible row indices and flexible column names. Essentially, a `DataFrame` represents a rectangular table of data and contains an ordered collection of labeled columns, each of which can be a different value type (`string`, `int`, `float`, and so on). The `DataFrame` has both a row and column index; in this way you can think of it as a dictionary of `Series`, all of which share the same index.
 
-> [!Note]
-> **Sarah: Conversion feedback**
-> 
-> - Line 223: I converted some bold text to an Important note alert. I revised the text to "upcast to the `string` type."
->
-> **Sarah: Action items**
-> 
-> - Search on "code cell below." These statements will need to be updated to coordinate with the new side-by-side exercise model. 
->
-
 Let's take a look at how this works in practice. We will start by creating a `Series` called `area`:
 
 ```Python
@@ -23,6 +13,8 @@ area_dict = {'Albania': 28748,
 area = pd.Series(area_dict)
 area
 ```
+
+The output is:
 
 ```Output
 Albania       28748
@@ -39,6 +31,8 @@ Now you can combine this with the `population` `Series` you created earlier by u
 countries = pd.DataFrame({'Population': population, 'Area': area})
 countries
 ```
+
+The output is:
 
 ```Output
 |          | Population   | Area      |
@@ -59,6 +53,8 @@ countries['Capital'] = ['Tirana', 'Paris', 'Berlin', 'Tokyo', 'Moscow']
 countries
 ```
 
+The output is:
+
 ```Output
 |          | Population   | Area      | Capital  |
 --------------------------------------------------
@@ -76,6 +72,8 @@ countries = countries[['Capital', 'Area', 'Population']]
 countries
 ```
 
+The output is:
+
 ```Output
 |          | Capital   | Area      | Population   |
 --------------------------------------------------
@@ -92,6 +90,8 @@ Commonly in a data science context, it is necessary to generate new columns of d
 countries['Population Density'] = countries['Population'] / countries['Area']
 countries
 ```
+
+The output is:
 
 ```Output
 |          | Capital   | Area      | Population   | Population density |
@@ -112,6 +112,8 @@ We have stated before that `DataFrames` are like dictionaries, and it's true. Yo
 countries['Area']
 ```
 
+The output is:
+
 ```Output
 Albania       28748
 France       643801
@@ -131,6 +133,8 @@ This returns an error. `DataFrames` are dictionaries of `Series`, which are the 
 countries.loc['Japan']
 ```
 
+The output is:
+
 ```Output
 Capital                     Tokyo
 Area                       377972
@@ -145,6 +149,8 @@ Note that what the `.loc` method returns is an indexed object in its own right a
 countries.loc['Japan']['Area']
 ```
 
+The output is:
+
 ```Output
 377972
 ```
@@ -154,7 +160,6 @@ Can you think of a way to return the area of Japan without using the `.iloc` met
 > [!Tip]
 > Try putting the column index first.
 
-
 Can you slice along these indices as well?
 
 Sometimes it's helpful in data science projects to add a column to a `DataFrame` without assigning values to it:
@@ -163,6 +168,8 @@ Sometimes it's helpful in data science projects to add a column to a `DataFrame`
 countries['Debt-to-GDP Ratio'] = np.nan
 countries
 ```
+
+The output is:
 
 ```Output
 |          | Capital   | Area      | Population   | Population density | Debt-to-GDP ratio |
@@ -184,6 +191,8 @@ countries['Debt-to-GDP Ratio'] = debt
 countries
 ```
 
+The output is:
+
 ```Output
 |          | Capital   | Area      | Population   | Population density | Debt-to-GDP ratio |
 --------------------------------------------------------------------------------------------
@@ -201,6 +210,8 @@ del countries['Capital']
 countries
 ```
 
+The output is:
+
 ```Output
 |          | Area      | Population   | Population density | Debt-to-GDP ratio |
 --------------------------------------------------------------------------------
@@ -216,6 +227,8 @@ In addition to their dictionary-like behavior, `DataFrames` also behave like two
 ```Python
 countries.T
 ```
+
+The output is:
 
 ```Output
 |                     | Albania  | France        | Germany       | Japan         | Russia        |
@@ -239,6 +252,8 @@ pd.DataFrame(np.random.rand(3, 2),
              columns=['foo', 'bar'],
              index=['a', 'b', 'c'])
 ```
+
+The output is:
 
 ```Output
 |    | foo       | bar       |

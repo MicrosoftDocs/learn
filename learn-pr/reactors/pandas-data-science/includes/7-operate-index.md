@@ -17,6 +17,8 @@ ser_example = pd.Series(rng.randint(0, 10, 4))
 ser_example
 ```
 
+The output is: 
+
 ```Output
 0    6
 1    3
@@ -33,6 +35,8 @@ df_example = pd.DataFrame(rng.randint(0, 10, (3, 4)),
 df_example
 ```
 
+The output is: 
+
 ```Output
 |    | A  | B  | C  | D  |
 --------------------------
@@ -47,6 +51,8 @@ Let's apply a ufunc to our example `Series`:
 np.exp(ser_example)
 ```
 
+The output is: 
+
 ```Output
 0     403.428793
 1      20.085537
@@ -60,6 +66,8 @@ The same thing happens with a slightly more complex operation on our example `Da
 ```Python
 np.cos(df_example * np.pi / 4)
 ```
+
+The output is: 
 
 ```Output
 |    |       A       |        B       |        C       |        D       |

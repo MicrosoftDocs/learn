@@ -6,6 +6,8 @@ width = 3 * 5
 length * width
 ```
 
+The output is:
+
 ```Output
 225
 ```
@@ -17,23 +19,33 @@ length = 15
 length
 ```
 
+The output is:
+
 ```Output
 15
 ```
+
+Another example:
 
 ```Python
 length = 15.0
 length
 ```
 
+The output is:
+
 ```Output
 15.0
 ```
+
+Another example:
 
 ```Python
 length = 'fifteen'
 length
 ```
+
+The output is:
 
 ```Output
 'fifteen'
@@ -44,6 +56,8 @@ Note that, for all the flexibility of variables in Python, you do have to define
 ```Python
 n
 ```
+
+The error output is:
 
 ```Output
 ---------------------------------------------------------------------------
@@ -61,13 +75,19 @@ price = 19.95
 price * tax
 ```
 
+The output is:
+
 ```Output
 2.25435
 ```
 
+Another example:
+
 ```Python
 price + _
 ```
+
+The output is:
 
 ```Output
 22.204349999999998
@@ -80,6 +100,8 @@ Our previous output was kind of a mess, however; we generally use only two or fe
 ```Python
 round(_, 2)
 ```
+
+The output is:
 
 ```Output
 22.2
@@ -94,6 +116,8 @@ a, b, c, = 3.2, 1, 6
 a, b, c
 ```
 
+The output is:
+
 ```Output
 (3.2, 1, 6)
 ```
@@ -106,6 +130,8 @@ x = x + 1  # Un-pythonic variable augmentation
 x += 1  # Pythonic variable augmentation
 x
 ```
+
+The output is:
 
 ```Output
 7

@@ -1,9 +1,17 @@
 Another immutable data type in Python are tuples. It can be useful at times to create a data structure that won't be altered later in a program, such as to protect constant data from being overwritten on accident or to improve performance for iterating over data. This is where tuples come in. You create tuples much as you do lists, only using parentheses instead of brackets.
 
+> [!Note]
+> **Sarah: Action items**
+> 
+> - Search on "TBD" and add content as needed, including Hints for Try it yourself blocks.
+>
+
 ```Python
 t = (1, 2, 3)
 t
 ```
+
+The output is:
 
 ```Output
 (1, 2, 3)
@@ -14,6 +22,8 @@ Because tuples are immutable, you cannot change elements within them:
 ```Python
 t[1] = 2.0
 ```
+
+The error output is:
 
 ```Output
 ---------------------------------------------------------------------------
@@ -29,6 +39,8 @@ However, you can refer to elements within them:
 t[1]
 ```
 
+The output is:
+
 ```Output
 2
 ```
@@ -38,6 +50,8 @@ You can also slice tuples:
 ```Python
 t[:2]
 ```
+
+The output is:
 
 ```Output
 (1, 2)
@@ -51,6 +65,8 @@ l = tuple(l)
 l
 ```
 
+The output is:
+
 ```Output
 ('baked', 'beans', 'spam')
 ```
@@ -61,6 +77,8 @@ Or you can create lists from tuples:
 l = list(l)
 l
 ```
+
+The output is:
 
 ```Output
 ['baked', 'beans', 'spam']
@@ -75,6 +93,8 @@ tup = ('a', 'b', 'c')
 'b' in tup
 ```
 
+The output is:
+
 ```Output
 True
 ```
@@ -86,11 +106,19 @@ lis = ['a', 'b', 'c']
 'a' not in lis
 ```
 
+The output is:
+
 ```Output
 False
 ```
 
-## Try it yourself
+### Try it yourself
 
 - What happens if you run `lis` in `lis`? Is that the behavior you expected?
 - If not, think back to the nested lists we’ve already encountered.
+
+<details>
+  <summary>Sarah: TBD Hint <i>(expand to reveal)</i></summary>
+
+  Hint goes here.
+</details>

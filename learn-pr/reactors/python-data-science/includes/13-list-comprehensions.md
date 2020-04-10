@@ -1,9 +1,17 @@
 Sometimes, it makes more sense to generate a list algorithmically. Consider the last example. We really wanted just a list of numbers from 1 to 10. Rather than type those out, we can use a _list comprehension_ to generate it:
 
+> [!Note]
+> **Sarah: Action items**
+> 
+> - Search on "TBD" and add content as needed, including Hints for Try it yourself blocks.
+>
+
 ```Python
 numbers = [x for x in range(1,11)] # Remember to create a range 1 more than the number you actually want.
 numbers
 ```
+
+The output is:
 
 ```Output
 [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
@@ -16,6 +24,8 @@ squares = [x*x for x in range(1,11)]
 squares
 ```
 
+The output is:
+
 ```Output
 [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
 ```
@@ -27,6 +37,8 @@ odd_squares = [x*x for x in range(1,11) if x % 2 != 0]
 odd_squares
 ```
 
+The output is:
+
 ```Output
 [1, 9, 25, 49, 81]
 ```
@@ -34,6 +46,12 @@ odd_squares
 ### Try it yourself
 
 Use a list comprehension to generate a list of odd cubes from 1 to 2,197.
+
+<details>
+  <summary>Sarah: TBD Hint <i>(expand to reveal)</i></summary>
+
+  Hint goes here.
+</details>
 
 > [!div class="alert is-tip"]
 > ### Takeaway

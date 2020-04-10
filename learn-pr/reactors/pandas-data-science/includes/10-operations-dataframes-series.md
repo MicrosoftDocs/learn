@@ -5,6 +5,8 @@ df3 = pd.DataFrame(rng.randint(10, size=(3, 4)), columns=list('WXYZ'))
 df3
 ```
 
+The output is:
+
 ```Output
 |    | W  | X  | Y  | Z  |
 --------------------------
@@ -13,9 +15,13 @@ df3
 | 2  | 6  | 1  | 3  | 8  |
 ```
 
+Another example:
+
 ```Python
 df3 - df3.iloc[0]
 ```
+
+The output is:
 
 ```Output
 |    | W   | X   | Y  | Z  |
@@ -30,6 +36,8 @@ But what if you need to operate column-wise? You can do this by using object met
 ```Python
 df3.subtract(df3['X'], axis=0)
 ```
+
+The output is:
 
 ```Output
 |    | W   | X  | Y   | Z   |
@@ -46,6 +54,8 @@ halfrow = df3.iloc[0, ::2]
 halfrow
 ```
 
+The output is:
+
 ```Output
 W    3
 Y    2
@@ -57,6 +67,8 @@ Note that the output from that operation was transposed. That was so that we can
 ```Python
 df3 - halfrow
 ```
+
+The output is:
 
 ```Output
 |    |  W   |  X   |  Y   |  Z   |

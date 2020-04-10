@@ -4,13 +4,7 @@ But it was not always this way. Wes McKinney developed the library out of necess
 
 The name _pandas_ actually has nothing to do with Chinese bears, but rather comes from the term _panel data_, a form of multi-dimensional data involving measurements over time that comes out the econometrics and statistics community. Ironically, while panel data is a usable data structure in pandas, it's not generally used today and we won't examine it in this course. Instead, we'll focus on the two most widely used data structures in pandas: `Series` and `DataFrames`.
 
-## Set up your environment
-
-For details about how to set up your environment, see the first unit in the Python module:
-- Set up your environment
-- Test your environment
-
-## Tips: Import data and access the docs
+## Reminders about importing and documentation
 
 Just as you imported NumPy with the alias `np`, we will import pandas under the alias `pd`. Make sure you've installed Pandas first (run `pip install pandas` in the terminal below).
 
@@ -27,7 +21,13 @@ ipython
 pd?
 ```
 
-Because it can be useful to lean about `Series` and `DataFrames` in pandas a extension of `ndarrays` in NumPy, go ahead also import NumPy. You will want it for some of the examples later on:
+Because it can be useful to lean about `Series` and `DataFrames` in pandas, which is an extension of `ndarrays` in NumPy, go ahead and also import NumPy. You will want it for some of the examples later on:
+
+```Python
+import numpy as np
+```
+
+Here's the output:
 
 ```Output
 Type:        module
@@ -61,21 +61,19 @@ Here are just a few of the things that pandas does well:
     operations on data sets, for both aggregating and transforming data.
 ```
 
-Because it can be useful to lean about Series and DataFrames in pandas a extension of ndarrays in NumPy, go ahead also import NumPy. You will want it for some of the examples later on:
-
-```Python
-import numpy as np
-```
-
 ## Learning objectives
+
 In this module, you will:
-  - Import the Pandas library into Jupyter Notebooks in VS Code
-  - Understand how to use Series and DataFrames to store remote data
+
+  - Import the pandas library into Jupyter Notebooks in VS Code
+  - Understand how to use `Series` and `DataFrames` to store remote data
   - Learn how to clean and manipulate large, remote datasets
-  - Apply operations to Series and DataFrames for data science analysis
+  - Apply operations to `Series` and `DataFrames` for data science analysis
 
 ## Prerequisites
-- Introduction to Python for data science
-- Introduction to NumPy for data science
+
+- [Set up your environment](https://github.com/MicrosoftDocs/learn-pr/blob/new-data-science-1/learn-pr/reactors/python-data-science/includes/1-introduction.md#set-up-your-environment)
+- [Introduction to Python for data science](https://github.com/MicrosoftDocs/learn-pr/blob/new-data-science-1/learn-pr/reactors/python-data-science/index.yml)
+- [Introduction to NumPy for data science](https://github.com/MicrosoftDocs/learn-pr/blob/new-data-science-1/learn-pr/reactors/numpy-data-science/index.yml)
 
 Now, on to pandas!
