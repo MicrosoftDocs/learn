@@ -9,6 +9,6 @@ metadata:
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-reactors
-durationInMinutes: 5
+durationInMinutes: 13
 content: |
   [!include[](includes/10-computation-broadcast.md)]

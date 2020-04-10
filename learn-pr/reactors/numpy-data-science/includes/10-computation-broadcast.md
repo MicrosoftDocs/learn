@@ -124,7 +124,7 @@ array([[1., 2., 3.],
        [1., 2., 3.]])
 ```
 
-#### Exercise
+#### Try it yourself
 
 Flip this around. Try adding these with `two_dim_array = np.ones((3, 2))`
 and `one_dim_array = np.arange(3)[:, np.newaxis]`. 
