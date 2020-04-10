@@ -1,17 +1,17 @@
 Congratulations! You completed your Azure Functions application by shifting your Node.js Express code and making minimal changes. Next, review the structure of your application.
 
-## What You Learned About Shifting from Express to Azure Functions
+## What you learned about Shifting from Express to Azure Functions
 
-Now, reflect on what steps you followed to refactor your code from Node.js Express to Azure Functions.
+Now, reflect on what steps you followed to refactor your code from Node.js Express to Azure Functions. I this module, you:
 
-1. You created the Azure Functions application
-1. You created a function for every route endpoint
-1. You set the method appropriately for each route endpoint in each function's _function.json_ file
-1. You named each route endpoint in each function's _function.json_ file
-1. You copied Node.js Express services from the _server/services_ folder to the _functions_ folder
-1. You refactored the services in the functions to import `Context` from `@azure/functions`
-1. You refactored the services in the functions to use destructuring to access the `Context.req` and `Context.res`
-1. You added code to each function to call the appropriate service
+1. Created the Azure Functions application
+1. Created a function for every route endpoint
+1. Set the method for each endpoint in the function's _function.json_ file
+1. Named each endpoint in the function's _function.json_ file
+1. Copied the Node.js Express services from the _server/services_ folder to the _functions_ folder
+1. Imported the Functions host `Context` from `@azure/functions`
+1. Used destructuring to access the request and response objects
+1. Added code to each function to call the appropriate service
 
 ## Azure Functions and Folders
 
