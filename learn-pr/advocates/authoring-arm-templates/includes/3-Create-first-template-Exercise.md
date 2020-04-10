@@ -51,7 +51,7 @@ When you deploy a template, you need to specify a resource group that will conta
     ```
 
 
-### Deploy template
+### Deploy the template
 
 To deploy the template using Azure CLI using the resource group created for you in the sandbox, you will use the code below and you will also give a name to the deployment with a date code so you can easily identify it in the deployment history, even if you deploy the same template multiple times over multiple days.
 

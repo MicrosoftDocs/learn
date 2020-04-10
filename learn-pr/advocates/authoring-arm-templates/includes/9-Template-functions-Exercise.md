@@ -1,7 +1,76 @@
 #### Add template functions to your ARM template
 
-At the end of the previous tutorial, your template had the following JSON:
+At the end of the previous tutorial, your template had the following JSON code in it:
 
 :::code language="JSON" source="../samples/exercise3-parameter-sku.json":::
 
-In this exercise you will update your template to remove the hard coded **Location** from **East US** (or **eastus**).  The location of the storage account is hard-coded to East US. However, you may need to deploy the storage account to other regions. You're again facing an issue of your template lacking flexibility. You could add a parameter for location, but it would be great if its default value made more sense than just a hard-coded value.
+In this exercise you will update your template to remove the hard coded **Location** from **East US** (or **eastus**) to something more flexible so you can enjoy the flexibility to deploy the resources in another region. You could add a parameter for location, but there's a better way.
+
+This is where **functions** become very helpful. When you completed the previous exercise, you already used a function. When you added **"[parameters('storageName')]"**, you used the parameters function.  In the following exercise we will make good use of functions by replacing the hard coded values wit proper function.
+
+#### Use function
+
+1. Open Visual Studio Code and the template you created in the first exercise.  From the Azure shell provided here, type the following command.
+       
+```azurecli
+code azuredeploy.json
+```
+2. You'll notice that in the example below, we are making use of 2 functions
+    - "[resourceGroup().location]"
+    - "[parameters('\<parameterName\>')]"
+
+The first usage is taking advantage of the "Resource" functions where we can extract value of the resource group properties such as depicted in the following JSON file.
+
+```json
+{
+  "id": "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}",
+  "name": "{resourceGroupName}",
+  "type":"Microsoft.Resources/resourceGroups",
+  "location": "{resourceGroupLocation}",
+  "managedBy": "{identifier-of-managing-resource}",
+  "tags": {
+  },
+  "properties": {
+    "provisioningState": "{status}"
+  }
+}
+```
+In this exercise you will use the function **[resourceGroup().location]** to store the location of the target resource group in the "Location" parameter as a default value. Therefore, you can still pass a location if needed, however if you don't the default value will be used.  this, is the flexibility you will benefit from.
+
+>[!NOTE]
+>As it was the case in the previous exercise, you'll notice that the value in the **"contentVersion"** section is incremented to **"1.0.0.4"** because again, you are making changes to your template.
+
+3. Copy the whole file and replace your template with its contents, or just adjust with the highlighted section.
+
+:::code language="JSON" source="../samples/exercise4-function-1.json" highlight: "24-27,34":::
+
+4. Save the updated template, prepare to deploy it.
+
+#### Deploy The modified template
+
+Now that you have modified the template, again, Let's deploy it. The following example deploys the template with Azure CLI.
+
+Just as it was in the first two exercises, you need to specify a resource group that will contain the resources. Before running the deployment command. In the **sandbox** provided here, you already have a resource group to target your deployment.
+
+1. To get the name of the resource group in the sandbox, you can use an Azure CLI command. Type the code below in the sandbox to list the resource group name. the second command will store that value in a variable for Azure CLI to use to deploy the template.
+
+    ```azurecli
+    az group list --query "[?contains(name, 'learn')]" -o table
+    RG=$(az group list --query "[?contains(name, 'learn')].name" -o tsv)
+
+    ```
+
+To run this deployment you will use Azure CLI that is built-in the Azure shell that is currently available in the sandbox provided for this exercise.  To deploy your new template version, use the code below.  This code will store the template name, the date (used to create the deployment name) and the constructed deployment name in variables to be used by the **az deployment** command as parameters.
+
+> [!IMPORTANT]
+> Don't forget to change **{your-unique-name}** in the code below with the **same** name you used in the previous exercise.
+
+Copy and execute this code block in the shell provided.
+
+:::code language="azurecli" source="../samples/exercise3-storagenameparamdeploy.sh" highlight: "9":::
+
+The deployment command returns results in a JSON format. Look for `ProvisioningState` to see whether the deployment succeeded.
+
+![Azure CLI deployment provisioning state](../media/deploy-succeed.png)
+
+---

@@ -70,7 +70,7 @@ In this exercise, you're adding a storage account to the empty template we creat
 
 Please notice that you didn't add all of the properties available to the Microsoft.Storage/storageAccounts resource to your template. Many of the properties mentioned [here](https://docs.microsoft.com/en-us/azure/templates/microsoft.storage/2019-06-01/storageaccounts) are optional, so you only define what is needed.
 
-#### Deploy template
+#### Deploy The modified template
 
 You can deploy the template to create the storage account. Give your deployment a different name so you can easily find it in the history.
 

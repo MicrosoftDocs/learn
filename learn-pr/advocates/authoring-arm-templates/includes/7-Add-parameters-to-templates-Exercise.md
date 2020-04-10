@@ -53,9 +53,7 @@ You'll notice that the code has changed from the last one.  In this exercise, we
 >[!NOTE]
 >As it was the case in the second exercise, you'll notice that the value in the **"contentVersion"** section is incremented to **"1.0.0.2"** because again, you are making changes to your template.
 
-#### Deploy template
-
-
+#### Deploy The modified template
 
 This way of handling updates means your template can include all of the resources you need for an Azure solution. You can safely redeploy the template and know that resources are changed or created only when needed. For example, if you have added files to your storage account, you can redeploy the storage account without losing those files.
 
