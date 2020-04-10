@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.translate-text-with-translation-service.exercise-translate-text-use-azure
+title: Exercise Translate text and speech
+metadata:
+  title: Exercise Translate text and speech
+  description: "Get hands on with Azure cognitive services for text and speech translation."
+  ms.date: 04/24/2020
+  author: wwlpublish
+  ms.author: gerryo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 20
+content: |
+  [!include[](includes/3-exercise-translate-text-use-azure.md)]
