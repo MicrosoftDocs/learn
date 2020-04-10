@@ -4,11 +4,11 @@ title: Explore DataFrame information
 metadata:
   title: Explore DataFrame information
   description: Explore DataFrame information.
-  ms.date: 05/19/2020
+  ms.date: 04/22/2020
   author: sguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-python
-durationInMinutes: 10
+durationInMinutes: 8
 content: |
   [!include[](includes/2-explore-dataframes.md)]

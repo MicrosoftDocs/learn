@@ -4,11 +4,11 @@ title: Work with missing data
 metadata:
   title: Work with missing data
   description: Work with missing data in a pandas DataFrame.
-  ms.date: 05/19/2020
+  ms.date: 04/22/2020
   author: sguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-python
-durationInMinutes: 10
+durationInMinutes: 16
 content: |
   [!include[](includes/3-missing-data.md)]
