@@ -1,0 +1,37 @@
+### YamlMime:ModuleUnit
+uid: learn.cela-accessibility-intro.02-before-the-cloud
+title: Before the cloud
+metadata:
+  title: Before the cloud
+  description: Pre-Cloud Computing Domains and Applications
+  ms.date: 08/15/2019
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 17
+content: |
+  [!include[](includes/02-before-the-cloud.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Your customer base is growing, and the servers that host your Web site are struggling to handle the load. Which of the following solutions might you use to scale the system?"
+    choices:
+    - content: "Increase the number of servers to handle increased traffic"
+      isCorrect: false
+      explanation: "Incorrect. Horizontal scaling is one solution, but is it the only solution?"
+    - content: "Replace older servers with new ones containing more RAM and faster CPUs"
+      isCorrect: false
+      explanation: "Incorrect. Vertical scaling is one solution, but is it the only solution?"
+    - content: "Reboot the servers using a round-robin scheduling algorithm"
+      isCorrect: false
+      explanation: "Incorrect. Rebooting servers does not increase the capacity of the server farm."
+    - content: "Option 1 or Option 2"
+      isCorrect: true
+      explanation: "Correct! You can increase the capacity of the server farm by scaling horizontally or vertically."
+    - content: "Option 2 or Option 3"
+      isCorrect: false
+      explanation: "Incorrect. Rebooting servers does not increase the capacity of the server farm."
+    - content: "Option 1 or Option 3"
+      isCorrect: false
+      explanation: "Incorrect. Rebooting servers does not increase the capacity of the server farm."

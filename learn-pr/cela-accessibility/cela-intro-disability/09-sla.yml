@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.cela-disability-intro.09-sla
+title: Service-level agreements
+metadata:
+  title: Service-level agreements
+  description: Service-Level Agreements
+  ms.date: 08/15/2019
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 8
+content: |
+  [!include[](includes/09-sla.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+    - content: "Microsoft offers customers a 10% service credit if the monthly up-time for an Azure App Service falls below 99.95%. Assuming a month is 31 days long, how many minutes must an App Service be down in one month to trigger a credit?"
+      choices:
+      - content: "11 minutes"
+        isCorrect: false
+        explanation: "Incorrect. The answer is (31 * 24 * 60) * 0.0005."
+      - content: "22 minutes"
+        isCorrect: true
+        explanation: "Correct! The answer is (31 * 24 *60) * 0.0005 = 22 minutes."
+      - content: "33 minutes"
+        isCorrect: false
+        explanation: "Incorrect. The answer is (31 * 24 * 60) * 0.0005."
+      - content: "44 minutes"
+        isCorrect: false
+        explanation: "Incorrect. The answer is (31 * 24 * 60) * 0.0005."
+  
+    - content: "Suppose you build a solution consisting of two interconnected cloud services, each of which comes with an SLA guaranteeing that the service will be up at least 99.50% of the time. What is the expected minimum up-time for the solution as a whole?"
+      choices:
+      - content: "99.75%"
+        isCorrect: false
+        explanation: "Incorrect. Given that the solution is 'down' if either service is unavailable, the combined up-time must be less than the individual up-times."
+      - content: "99.50%"
+        isCorrect: false
+        explanation: "Incorrect. Given that the solution is 'down' if either service is unavailable, the combined up-time must be less than the individual up-times."
+      - content: "99.00%"
+        isCorrect: true
+        explanation: "Correct! The up-time for the solution is the product of the up-times for the individual services that comprise it."
+      - content: "95.20%"
+        isCorrect: false
+        explanation: "Incorrect. Given that the solution is 'down' if either service is unavailable, the combined up-time must be less than the individual up-times."

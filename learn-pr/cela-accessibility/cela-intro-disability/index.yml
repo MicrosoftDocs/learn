@@ -1,0 +1,53 @@
+### YamlMime:Module
+#LP name: Introduction to the Cloud with Carnegie Mellon
+uid: learn.cela-disability-intro
+metadata:
+  title: Foundations of cloud computing for administrators
+  description: Cloud Admin course from Dr. Majd Sakr at Carnegie Mellon University. Learn about the cloud, including the history, building blocks, and types on your way to becoming a Cloud Administrator.
+  ms.date: 08/15/2019
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  showCreativeCommonsFooter: true
+title: Foundations of cloud computing for administrators
+summary: Learn about the cloud, including the history, building blocks, and types on your way to becoming a Cloud Administrator.
+abstract: | 
+  In this module you will:
+  - Explain the concept of cloud computing
+  - Briefly understand how computing systems across domains dealt with scale before the cloud
+  - Briefly recall the recent history of cloud computing, illustrating its evolution
+  - List some of the enabling technologies in cloud computing, and discuss their significance
+  - Recognize cloud service models such as IaaS, PaaS, and SaaS and differentiate between them
+  - Enumerate the different types of clouds, and compare and contrast them
+  - List some of the common cloud providers and the features offered in their cloud stacks
+  - Articulate the economic benefits of the cloud paradigm for cloud users and cloud service providers
+  - Discuss some of the advantages and disadvantages of the cloud paradigm
+  - Define SLAs and SLOs and describe their importance in Cloud Computing
+  - Recall popular cloud use case scenarios
+
+  This content is provided in partnership with Dr. Majd Sakr and Carnegie Mellon University.
+prerequisites: None
+iconUrl: /learn/achievements/cmu-cloud-admin/cloud-admin-overview.svg
+levels:
+- beginner
+roles:
+- administrator
+- student
+products:
+- azure
+units:
+- learn.cela-disability-intro.00-intro
+- learn.cela-disability-intro.01-define-cloud-computing
+- learn.cela-disability-intro.02-before-the-cloud
+- learn.cela-disability-intro.03-evolution
+- learn.cela-disability-intro.04-building-blocks
+- learn.cela-disability-intro.05-cloud-types
+- learn.cela-disability-intro.06-cloud-providers
+- learn.cela-disability-intro.07-economics
+- learn.cela-disability-intro.08-pros-cons
+- learn.cela-disability-intro.09-sla
+- learn.cela-disability-intro.10-use-cases
+- learn.cela-disability-intro.11-summary
+badge:
+  uid: learn.cela-disability-intro.badge
