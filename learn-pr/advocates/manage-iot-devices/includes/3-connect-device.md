@@ -10,11 +10,11 @@ To start collecting data from the Raspberry Pi simulator, you need to first crea
 
 1. Choose **Create a resource** in the upper-left corner of the Azure portal, and then search for **IoT Hub**.
 
-   [![Screenshot of Azure portal menu bar](../media/iot-admin-create-resource.png)](../media/iot-admin-create-resource.png#lightbox)
+   [![Screenshot of the Azure portal menu bar](../media/iot-admin-create-resource.png)](../media/iot-admin-create-resource.png#lightbox)
 
 1. Create an IoT hub resource.
 
-   [![Screenshot of the Azure portal menu bar](../media/iot-admin-create-hub.png)](../media/iot-admin-create-hub.png#lightbox)
+   [![Screenshot of the selection for creating an IoT hub resource](../media/iot-admin-create-hub.png)](../media/iot-admin-create-hub.png#lightbox)
 
 1. In the **IoT hub** pane, enter the following information for your IoT hub:
 
@@ -24,7 +24,7 @@ To start collecting data from the Raspberry Pi simulator, you need to first crea
    - **Region**: Select the closest region to your location.
 
     > [!IMPORTANT]
-    > The IoT hub will be publicly discoverable as a DNS endpoint, so make sure to avoid any sensitive information while naming it.
+    > The IoT hub will be publicly discoverable as a DNS endpoint, so don't use any sensitive information while naming it.
 
    [![Screenshot showing the IoT Hub creation fields](../media/iot-admin-name-hub.png)](../media/iot-admin-name-hub.png#lightbox)
 
@@ -42,7 +42,7 @@ A device must be registered with your IoT hub before the device can connect.
 
    [![Screenshot showing how to add a device to your IoT hub](../media/iot-admin-create-device.png)](../media/iot-admin-create-device.png#lightbox)
 
-1. For **Device ID**, enter an ID for the new device. Choose something meaningful, like **PiHubDevice-your-id** (again replacing "your-id" with something appropriate). Device IDs are case-sensitive.
+1. For **Device ID**, enter an ID for the new device. Choose something meaningful, like **PiHubDevice-your-id**. (Again, replace "your-id" with something appropriate.) Device IDs are case-sensitive.
 
    > [!IMPORTANT]
    > The device ID might be visible in the logs collected for customer support and troubleshooting, so don't use any sensitive information while naming it.
@@ -79,7 +79,7 @@ A device must be registered with your IoT hub before the device can connect.
 
 ## Read the telemetry from your hub
 
-So what's happening? IoT hub is receiving the device-to-cloud messages sent from the simulated device. To see that, let's take a quick look at how Azure IoT Hub is processing the incoming data.
+IoT hub is receiving the device-to-cloud messages sent from the simulated device. To see that, let's take a quick look at how Azure IoT Hub is processing the incoming data.
 
 1. In your IoT hub, under **Monitoring**, select **Metrics**.
 
@@ -89,8 +89,8 @@ So what's happening? IoT hub is receiving the device-to-cloud messages sent from
 
    [![Screenshot showing the Pi simulator Run button](../media/iot-admin-device-metrics.png)](../media/iot-admin-device-metrics.png#lightbox)
 
-1. The shape of the graph will depend on the volume of messages arriving, and the sequence of `Run`, `Stop`, and `Reset` commands that you use. Feel free to stop, and restart, the sending of telemetry. Notice how the graph changes, and when it changes, as there's some latency.
+1. The shape of the graph will depend on the volume of messages arriving, and the sequence of `Run`, `Stop`, and `Reset` commands that you use. Feel free to stop and restart the sending of telemetry. Notice how the graph changes, and when it changes, because there's some latency.
 
 ### Next steps
 
-For the penultimate unit of this module, let's look at some of the most useful left-hand menu entries for your job as hub administrator.
+Let's look at some of the most useful menu entries for your job as hub administrator.

@@ -33,4 +33,4 @@ In this module, you will:
 - Get an introduction to IoT  
 - Configure an Azure IoT hub to capture data
 - Interact with a Raspberry Pi simulator
-- Use the IoT hub's left menu
+- Explore the IoT hub's left menu
