@@ -20,18 +20,16 @@ However, if you would rather create an Azure Cosmos DB database and container pr
 
     ![The Azure portal Data Explorer, Add Container pane](../media/5-azure-cosmosdb-data-explorer.png)
 
-1. In the **Add Container** page, enter the settings for the new container.
+1. In the **Add Container** page, enter the following settings for the new container.
 
     | Setting | Suggested value | Description |
     |---|---|---|
     | Database id  | Products | Enter *Products* as the name for the new database. Database names must be 1 to 255 characters in length, and must not contain /, \\, #, ?, or a trailing space. |
+    | Throughput | 1000 RU | Change the throughput to 1000 request units per second (RU/s). |
     | Container id | Clothing | Enter *Clothing* as the name for your new container. Container ids have the same character requirements as database names. |
     | Partition key | productId | productId is a good partition key for an online retail scenario, as so many queries are based around the product ID. |
-    | Throughput | 1000 RU | Change the throughput to 1000 request units per second (RU/s). |
-   
-    For now, don't check the **Provision database throughput** option, and don't add any unique keys to the container.
     
-1. Click **OK**. The Data Explorer displays the new database **Products** and the container **Clothing**.
+1. Accept the defaults for any remaining options, and then click **OK**. The Data Explorer displays the new database **Products** and the container **Clothing**.
 
     ![The Azure portal Data Explorer, showing the new database and container](../media/5-azure-cosmos-db-new-collection.png)
 
