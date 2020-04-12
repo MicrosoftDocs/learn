@@ -3,7 +3,7 @@ uid: learn.azdo.deploy-python.4-deploy-python
 title: Exercise - Deploy a Python app to Azure
 metadata:
   title: Exercise - Deploy a Python app to Azure
-  description: Extend the CI/CD pipeline to build and deploy a Python app.
+  description: Create a CI/CD pipeline to build, test, and deploy a Python app.
   ms.date: 04/14/2020
   author: tpetchel
   ms.author: tpetchel
