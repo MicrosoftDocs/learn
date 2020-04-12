@@ -582,12 +582,10 @@ mvn exec:java -Dexec.mainClass=com.mslearn.App -Dexec.cleanupDaemonThreads=false
 Your Application will create a new database inside your Azure Cosmos DB account. You will see the name on the output console:
 
 ```output
-...
 Database Id:    Products
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-...
 ```
 
 ### Create a partitioned container using Java
