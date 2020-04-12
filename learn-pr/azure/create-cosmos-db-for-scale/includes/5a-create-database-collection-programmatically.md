@@ -408,9 +408,9 @@ In this exercise, you'll create an Azure Cosmos DB  database, and container usin
 
 1. In the Explorer pane of the Code Editor, expand the nodes in the tree to *src\main\java\com\mslearn*, then click *App.java* to open the file in the editor.
 
-![Bash Shell and Code Editor](../media/5-azure-cosmos-db-new-shell-editor-java-app.png)
+    ![Bash Shell and Code Editor](../media/5-azure-cosmos-db-new-shell-editor-java-app.png)
 
-1.  Below the `package com.mslearn` line, add the following imports:
+1. Below the `package com.mslearn` line, add the following imports:
 
     ```java
     import com.azure.cosmos.ConnectionPolicy;
