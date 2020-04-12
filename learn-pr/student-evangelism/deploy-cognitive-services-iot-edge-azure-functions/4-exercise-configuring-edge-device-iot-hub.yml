@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.oxford.deploy-cog-ser-iot-edge-azure-func.exercise-configuring-edge-device-iot-hub
+title: Exercise - Configuring IoT DevKit to the IoT Hub
+metadata:
+  title: Exercise - Configuring IoT DevKit to the IoT Hub
+  description: In this section, we help the learner to configure IoT Devkit to the IoT Hub
+  ms.date: 04/12/2020
+  author: leestott
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-edge
+durationInMinutes: 10 # dummy number at present
+content: |
+  [!include[](includes/4-exercise-configuring-edge-device-iot-hub.md)]
