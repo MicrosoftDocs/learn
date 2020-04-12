@@ -1,13 +1,19 @@
 variables:
 
   # Azure Resource Manager connection created during pipeline creation
-  azureSubscription: '457991d3-d669-4e6f-980d-510798914090'
+  azureServiceConnectionId: '53cc8e4a-13f6-4721-8d57-2d0c4017cd06'
   
   # Web app name
-  webAppName: 'nodejs-cicd-16353'
-  
-  # Environment name
-  environmentName: 'nodejs-cicd-16353'
+  webAppName: 'python-cicd-16353'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
+
+  # Environment name
+  environmentName: 'python-cicd-16353'
+
+  # Project root folder. Point to the folder containing manage.py file.
+  projectRoot: $(System.DefaultWorkingDirectory)/Application
+  
+  # Python version: 3.7
+  pythonVersion: '3.7'

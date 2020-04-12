@@ -19,9 +19,9 @@ Then sign out of Azure DevOps and sign in. Use the Microsoft account that you us
 
 ## Clone the GitHub repo
 
-Here you clone the GitHub repo required for this project. It's a simple Hello World app built using Node.js.
+Here you clone the GitHub repo required for this project. It's a simple Python web app built using the Django framework.
 
-1. Navigate your browser to the [Node.js Hello World repo](https://github.com/Azure-Samples/python-docs-hello-world?azure-portal=true).
+1. Navigate your browser to the [Python with Django repo](https://github.com/MicrosoftDocs/mslearn-python-django?azure-portal=true).
 1. Select **Fork** and select an account to fork into.
 
 > [!IMPORTANT]
@@ -31,9 +31,9 @@ Here you clone the GitHub repo required for this project. It's a simple Hello Wo
 
 ## Create the Azure App Service environment
 
-Here you create the App Service required to deploy the Node.js app.
+Here you create the App Service required to deploy the Python app.
 
-In this module, you use the Azure CLI to spin up the Azure App Service that will host the Node.js app. You can access the Azure CLI from a terminal or through Visual Studio Code. Here you access the Azure CLI from Azure Cloud Shell. This browser-based shell experience is hosted in the cloud. In Cloud Shell, the Azure CLI is configured for use with your Azure subscription.
+In this module, you use the Azure CLI to spin up the Azure App Service that will host the Python app. You can access the Azure CLI from a terminal or through Visual Studio Code. Here you access the Azure CLI from Azure Cloud Shell. This browser-based shell experience is hosted in the cloud. In Cloud Shell, the Azure CLI is configured for use with your Azure subscription.
 
 > [!IMPORTANT]
 > You need your own Azure subscription to complete the exercises in this module.

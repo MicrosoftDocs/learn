@@ -1,23 +1,17 @@
-- stage: Deploy
-  displayName: Deploy stage
-  dependsOn: Build
-  condition: succeeded()
-  jobs:
-  - deployment: Deploy
-    displayName: Deploy
-    environment: $(environmentName)
-    pool: 
-      vmImage: $(vmImageName)
-    strategy:
-      runOnce:
-        deploy:
-          steps:            
-          - task: AzureWebApp@1
-            displayName: 'Azure Web App Deploy: nodejs-cicd-16353'
-            inputs:
-              azureSubscription: $(azureSubscription)
-              appType: webAppLinux
-              appName: $(webAppName)
-              runtimeStack: 'NODE|10.10'
-              package: $(Pipeline.Workspace)/drop/$(Build.BuildId).zip
-              startUpCommand: 'npm run start'
+    - script: |
+        pip install setup
+        pip install -r $(projectRoot)/requirements.txt
+        pip install pytest
+        pytest Tests/unit_tests --junitxml=$(System.DefaultWorkingDirectory)/TestResults/test-results-unit.xml
+        pip install pycmd
+        py.cleanup Tests/
+      displayName: 'Run unit tests'
+
+    - task: PublishTestResults@2
+      inputs:        
+        searchFolder: $(System.DefaultWorkingDirectory)
+        testResultsFiles: '**/test-*.xml'
+      displayName: 'Publish test results'
+
+    - publish: $(System.DefaultWorkingDirectory)/Tests
+      artifact: tests

@@ -1,4 +1,4 @@
-The GitHub repo cloned for this project contains the source for a minimal Node.js project. In this unit you create an Azure DevOps pipeline to build and deploy that project to the Azure app service created earlier. 
+The GitHub repo cloned for this project contains the source for a basic Python Django web project. In addition, it also includes some very useful unit and functional tests for validating the code before and after deployment. In this unit you create an Azure DevOps pipeline to build and deploy that project to the Azure app service created earlier. 
 
 In this part, you'll:
 
@@ -6,7 +6,10 @@ In this part, you'll:
 > * Install Azure Pipelines for your GitHub repo.
 > * Set up an Azure DevOps project for this module.
 > * Create a CI/CD pipeline triggered by commits to the *master* branch.
-> * Review the pipeline tasks.
+> * Update the default pipeline to build the source project.
+> * Add tasks to run unit tests and publish their results.
+> * Review the publish task.
+> * Add tasks to run functional tests against the deployment and publish their results.
 > * Save the pipeline to trigger a CI/CD workflow.
 
 ## Install the Azure Pipelines extension
@@ -17,7 +20,7 @@ Here you install Azure Pipelines for the forked repo
 1. Search for **Azure Pipelines** and select the **Azure Pipelines** result.
 1. Locate the *Free* option and select **Install it for free**.
 1. Select **Complete order and begin installation**.
-1. Select **Only select repositories** and choose the **python-docs-hello-world** repo forked earlier.
+1. Select **Only select repositories** and choose the **mslearn-python-django** repo forked earlier.
 1. Select **Install**.
 
 ## Set up an Azure DevOps project
@@ -32,7 +35,7 @@ The previous task will begin the process of linking your GitHub repo to your Azu
 
 Here you create a new CI/CD pipeline using one of the built-in templates. This will be saved as *azure-pipelines.yml* in the repo root.
 
-1. Select the Node.js project created earlier (called *python-docs-hello-world*).
+1. Select the Node.js project created earlier (called *mslearn-python-django*).
 1. Select **Node.js Express Web App to Linux on Azure**.
 1. If prompted, select the Azure subscription you created resources under earlier.
 1. Select the **Web App name** created earlier.
@@ -52,7 +55,9 @@ The pipeline is configured to run whenever a change is committed to the *master*
 
 To aid in pipeline maintenance, the default template uses variables for commonly-used parameters, such as the name of the service connection string used to connect to Azure. You can also import variables from pipeline libraries managed outside of the pipeline itself.
 
-[!code-yml[](code/4-2-azure-pipelines.yml)]
+Update the **projectRoot** variable to use the */Application* path under the default working directory. This is where *manage.py* is located in the source.
+
+[!code-yml[](code/4-2-azure-pipelines.yml?highlight=16)]
 
 ### The Build stage
 
@@ -60,15 +65,15 @@ This pipeline is divided into two stages: *Build* and *Deploy*. The build stage 
 
 [!code-yml[](code/4-3-azure-pipelines.yml)]
 
-### Node.js Tool Installer task
+### Use Python Version task
 
-The `NodeTool@0` task is designed to set up the build environment for Node.js projects. For the purposes of this pipeline, only the `versionSpec` parameter is needed to specify the version of the Node.js tools to install. You can learn more about this task in the official docs for the [Node.js Tool Installer task](/azure/devops/pipelines/tasks/tool/node-js?azure-portal=true).
+The `UsePythonVersion@0` task is designed to set up the build environment for Python projects. For the purposes of this pipeline, only the `versionSpec` parameter is needed to specify the version of the Python tools to install. You can learn more about this task in the official docs for the [Use Python Version task](/azure/devops/pipelines/tasks/tool/use-python-version?azure-portal=true).
 
 [!code-yml[](code/4-4-azure-pipelines.yml)]
 
 ### Running the build
 
-The build itself is run using `npm` commands in an inline script. This project doesn't have any tests in its source right now, but if you added them, they would be run as part of the `npm run test` command.
+The build itself is run using `python` and `pip` commands in an inline script. These commands are run from the project root directory of the source and pull in components specified in *requirements.txt*.
 
 [!code-yml[](code/4-5-azure-pipelines.yml)]
 
@@ -78,15 +83,23 @@ After the build completes, the `ArchiveFiles@2` task is used to zip the output. 
 
 [!code-yml[](code/4-6-azure-pipelines.yml)]
 
+### Running unit tests
+
+After the build has been archived, unit tests are run. These could be run at any point after the build, but to keep things cleaner in this unit we will place all the unit test tasks together. Once the tests are run using the command line, their results are published using the `PublishTestResults@2` task. These published results are then incorporated into the pipeline results to be presented in the portal. Finally, the *Tests* folder, which contains the functional tests to be run after deployment, will be archived for use in the deployment job. 
+
+Add the YAML below immediately after the *upload* task. Be sure the editor is satisfied with your indentation before continuing.
+
+[!code-yml[](code/4-7-azure-pipelines.yml)]
+
 ### Deploying the build
 
 The second stage of the pipeline manages deploying the solution out to Azure. It takes a dependency on the **Build** stage completing successfully, after which it uses the pipeline's Azure service connection to deploy the app to the configured target.
 
-[!code-yml[](code/4-7-azure-pipelines.yml)]
+[!code-yml[](code/4-8-azure-pipelines.yml)]
 
 ### Azure Web App task
 
-The `AzureWebApp@1` task is designed to deploy web apps to an Azure App Service. It's a very flexible task that supports apps across a variety of platforms and includes everything needed for this Node.js scenario:
+The `AzureWebApp@1` task is designed to deploy web apps to an Azure App Service. It's a very flexible task that supports apps across a variety of platforms and includes everything needed for this Python scenario:
 
 * `azureSubscription` refers to the name of your Azure service connection pipeline variable.
 * `appType` indicates whether the app is being deployed for Linux (`webAppLinux`).
@@ -96,6 +109,14 @@ The `AzureWebApp@1` task is designed to deploy web apps to an Azure App Service.
 * `startUpCommand` specifies the startup command to run after the app has been deployed, which is required for Linux deployments.
 
 You can learn more about the flexibility of this task in the official docs for the [Azure Web App task](/azure/devops/pipelines/tasks/deploy/azure-rm-web-app?azure-portal=true)
+
+### Running functional tests
+
+The final stage of the pipeline runs functional tests to validate the deployment. In this case there is a single test that confirms that the home page loads as expected using the production URL. Afterwards, the test results are published to be included alongside the unit test results from the build job.
+
+Add the YAML below to the end of the pipeline. Be sure the editor is satisfied with your indentation before continuing.
+
+[!code-yml[](code/4-9-azure-pipelines.yml)]
 
 ## Save the pipeline to trigger a build and release
 
@@ -107,6 +128,12 @@ You can learn more about the flexibility of this task in the official docs for t
 
 1. You see the site in production.
 
-    ![Reviewing Hellow World](../media/4-hello-world.png)
+    ![Reviewing the Python Django site](../media/4-python-django.png)
 
-Don't be fooled by the modest presentation. This automated deployment was an engineering feat to rival the greatest of our time.
+1. Return to the pipeline summary in Azure DevOps. You see the details of the pipeline run, which also include the test results. Scroll down to the stages view to see how the test run in each stage performed. Select one of the test links to view the aggregated performance.
+
+    ![Reviewing the pipeline summary](../media/4-pipeline-run-summary.png)
+
+1. The test run summary provides details about the test runs. If you would like to review specific tests, you may update the filters option to include *Passed* tests. By default it only shows tests that failed or were aborted.
+
+    ![Reviewing the pipeline summary](../media/4-test-run-summary.png)

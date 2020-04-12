@@ -1,5 +1,4 @@
-    steps:
-    - task: NodeTool@0
+    - task: UsePythonVersion@0
       inputs:
-        versionSpec: '10.x'
-      displayName: 'Install Node.js'
+        versionSpec: '$(pythonVersion)'
+      displayName: 'Use Python $(pythonVersion)'

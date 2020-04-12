@@ -7,7 +7,7 @@ You're finished with the tasks for this module. Here you'll clean up your Azure 
 
 Here you delete your Azure App Service instances. The easiest way to delete the instances is to delete their parent resource group. When you delete a resource group, you delete all resources in that group.
 
-In the [Create a release pipeline with Azure Pipelines](/learn/modules/create-release-pipeline?azure-portal=true) module, you managed Azure resources through the Azure portal. Here you tear down your deployment by using the Azure CLI through Azure Cloud Shell. The steps are similar to the steps that you used when you created the resources.
+You may use the Azure portal user interface or Azure CLI to manage resources. Here you tear down your deployment by using the Azure CLI through Azure Cloud Shell. The steps are similar to the steps that you used when you created the resources.
 
 To clean up your resource group:
 
@@ -59,11 +59,11 @@ To disable the pipeline:
 
 ### Option 2 - Delete the Azure DevOps project
 
-Delete your Azure DevOps project, including the contents of Azure Boards and your build pipeline. In future modules, you can run another template that brings up a new project in a state where this project leaves off. Choose this option if you don't need your DevOps project for future reference.
+Delete your Azure DevOps project, including your build pipeline. Choose this option if you don't need your DevOps project for future reference.
 
 To delete the project:
 
-1. In Azure DevOps, navigate to your project. Earlier, we recommended that you name this project **Space Game - web - Azure Functions**.
+1. In Azure DevOps, navigate to the project created for this module.
 1. Select the gear icon next to the project name.
 
     The icon might not appear until you move your mouse over the area.
