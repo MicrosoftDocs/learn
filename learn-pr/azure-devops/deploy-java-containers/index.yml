@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.azdo.deploy-java-containers
+metadata:
+  title: Automate Java container deployments with Azure Pipelines - Learn
+  description: Learn to implement a CI/CD pipeline for Java containers.
+  ms.date: 04/28/2020
+  author: tpetchel
+  ms.author: tpetchel
+  ms.topic: interactive-tutorial
+  #ms.learn-contact: tpetchel
+  ms.prod: learning-azure
+title: Automate Java container deployments with Azure Pipelines
+summary: Learn to implement a CI/CD pipeline for Java containers.
+abstract: |
+  In this module, you will:
+  - Create Azure resources to support a Java container solution.
+  - Create an Azure DevOps pipeline to build and release the solution to Azure.
+  - Monitor the build, release, and deployment of the project.
+prerequisites: |
+  - An Azure subscription
+  - An Azure DevOps organization
+  - A GitHub account
+iconUrl: /learn/achievements/azure-devops/create-multi-stage-pipeline.svg
+levels:
+- beginner
+roles:
+- devops-engineer
+- administrator
+- developer
+- solution-architect
+products:
+- azure
+- azure-devops
+units:
+- learn.azdo.deploy-java-containers.1-introduction
+- learn.azdo.deploy-java-containers.2-what-are-java-containers
+- learn.azdo.deploy-java-containers.3-set-up-environment
+- learn.azdo.deploy-java-containers.4-deploy-java-container
+- learn.azdo.deploy-java-containers.5-clean-up-environment
+- learn.azdo.deploy-java-containers.6-summary
+badge:
+  uid: learn.azdo.deploy-java-containers.badge
