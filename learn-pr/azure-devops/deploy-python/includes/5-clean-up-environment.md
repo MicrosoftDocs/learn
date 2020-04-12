@@ -5,7 +5,7 @@ You're finished with the tasks for this module. Here you'll clean up your Azure 
 
 ## Clean up Azure resources
 
-Here you delete your Azure App Service instances. The easiest way to delete the instances is to delete their parent resource group. When you delete a resource group, you delete all resources in that group.
+Here you delete your Azure App Service instance. The easiest way to delete the instance is to delete its parent resource group. When you delete a resource group, you delete all resources in that group.
 
 You may use the Azure portal user interface or Azure CLI to manage resources. Here you tear down your deployment by using the Azure CLI through Azure Cloud Shell. The steps are similar to the steps that you used when you created the resources.
 
@@ -34,9 +34,7 @@ To clean up your resource group:
 
 ## Disable the pipeline or delete your project
 
-Each module in this learning path provides a template. You can run the template to create a clean environment for the module.
-
-Running multiple templates gives you multiple Azure Pipelines projects. Each project points to the same GitHub repository. This setup can trigger multiple pipelines to run each time you push a change to your GitHub repository. The pipeline runs use up free build minutes on our hosted agents. To avoid losing those free build minutes, disable or delete your pipeline before you move to the next module.
+This project was configured to automatically run a pipeline each time there was a change to the repo. The pipeline runs use up free build minutes on our hosted agents. To avoid losing those free build minutes, disable or delete your pipeline before you move to the next module.
 
 Choose one of the following options.
 
@@ -59,11 +57,11 @@ To disable the pipeline:
 
 ### Option 2 - Delete the Azure DevOps project
 
-Delete your Azure DevOps project, including your build pipeline. Choose this option if you don't need your DevOps project for future reference.
+Delete your Azure DevOps project, including the build pipeline. Choose this option if you don't need your DevOps project for future reference.
 
 To delete the project:
 
-1. In Azure DevOps, navigate to the project created for this module.
+1. In Azure DevOps, navigate to your project. This will be the name you entered when creating the project after installing the Azure Pipelines extension in GitHub.
 1. Select the gear icon next to the project name.
 
     The icon might not appear until you move your mouse over the area.
