@@ -12,7 +12,7 @@ However, if you would rather create an Azure Cosmos DB database and container pr
 
 1. On the Azure portal menu, select **All services**.
 
-1. Select **Databases** > **Azure Cosmos DB**. Then select your account, click **Data Explorer**, and then click **Open Full Screen**.
+1. Select **Databases** > **Azure Cosmos DB**. Select your account, and then click **Data Explorer**.
 
 1. Click the **New Container** button in the toolbar.
     
