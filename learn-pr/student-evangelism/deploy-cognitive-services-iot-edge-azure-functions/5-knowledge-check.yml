@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.oxford.deploy-prebuilt-module-edge-device.5-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: In this section, we create interactive questions that validate if the learner has understood the learning objectives
+  ms.date: 04/12/2020
+  author: leestott
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-hub
+durationInMinutes: 5 # dummy number at present
+content: |
+quiz:
+  questions:
+  - content: ""
+    choices:
+    - content: ""
+      isCorrect: 
+      explanation: ""
+    - content: ""
+      isCorrect:
+      explanation: ""
+    - content: ""
+      isCorrect:
+      explanation: ""
+  - content: ""
+    choices:
+    - content: ""
+      isCorrect: 
+      explanation: ""
+    - content: ""
+      isCorrect: 
+      explanation: ""
+    - content: ""
+      isCorrect: 
+      explanation: ""
+  - content: ""
+    choices:
+    - content: ""
+      isCorrect: 
+      explanation: ""
+    - content: ""
+      isCorrect: 
+      explanation: ""
+    - content: ""
+      isCorrect: 
+      explanation: ""
+
