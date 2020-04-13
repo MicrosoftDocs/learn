@@ -1,4 +1,4 @@
-In this unit, using the example from the previous unit, you'll learn how to create an approval workflow in the Azure portal using  Durable Functions.
+In this exercise, you'll use the example scenario from the previous unit to learn how to create an approval workflow in the Azure portal using Durable Functions.
 
 ## Create a Function App
 
@@ -83,7 +83,7 @@ Since we are creating JavaScript Durable Functions, we need to install the `dura
     npm install durable-functions
     ```
 
-    This command instructs the node package manager to install the durable-functions package and any dependencies that are required. This may take a few minutes to complete, and the node package manager will display some warnings, which you can ignore.
+    This command instructs the node package manager to install the durable-functions package and any dependencies that are required. This may take a few minutes to complete, and the node package manager may display some warnings, which you can ignore.
 
 1. Wait until all packages have finished installing, then close the Kudu window and return to the Function App page in the Azure portal.
 
