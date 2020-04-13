@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.oxford.deploy-cog-ser-iot-edge-azure-func.deploy-device-code
+uid: learn.oxford.deploy-cognitive-service-iot-edge-azure-func.deploy-device-code
 title: How to deploy device code to the Edge device
 metadata:
   title: How to deploy device code to the Edge device

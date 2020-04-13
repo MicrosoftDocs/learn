@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.oxford.deploy-cog-ser-iot-edge-azure-func.config-edge-device
+uid: learn.oxford.deploy-cognitive-service-iot-edge-azure-func.config-edge-device
 title: How to configure MXchip Devkit to the IoT Hub
 metadata:
   title: How to configure MXchip Devkit to the IoT Hub
