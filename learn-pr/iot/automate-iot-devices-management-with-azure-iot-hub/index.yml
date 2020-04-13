@@ -25,7 +25,7 @@ prerequisites: |
   - Ability to use the Azure CLI
   - Ability to use C#, at the beginner level
   - Experience using Visual Studio Code, at the beginner level
-iconUrl: https://docs.microsoft.com/media/learn/module.svg
+iconUrl: /learn/achievements/iot/automate-iot-devices-management-with-azure-iot-hub.svg
 levels: 
 - intermediate
 roles:
