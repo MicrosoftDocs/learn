@@ -12,7 +12,10 @@ Depicted by parallel lines, this element represents data stored on a temporary o
 - Use the data store element whenever you're storing data somewhere, like Azure DB or local cache
 - If you're establishing communication between two data-stores, don't forget to add a process between them
 - Data stores and external entities start the data-flow, so verify you have either one in place
-- Avoid data sinks by including Analytics Services and other processes to handle data post-storage
+- Avoid data-sinks by including Analytics Services and other processes to handle data post-storage
+
+> [!TIP]
+> In threat modeling, the term **avoiding data-sinks** refers to how data is used after it is stored, and should be called out accordingly. Analytics services is an example.
 
 ## What Context Should I Include?
 
