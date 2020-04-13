@@ -183,10 +183,7 @@ Since we are creating JavaScript Durable Functions, we need to install the `dura
     });
     ```
 
-    This code calls an Activity function named **Approval**, which you'll create shortly. The code in the orchestrator function invokes the **Approval** function twice.
-    
-        - The first time simulates accepting the proposal.
-        - The second time tests the proposal rejection logic.
+    This code calls an Activity function named **Approval**, which you'll create shortly. The code in the orchestrator function invokes the **Approval** function twice. The first time simulates accepting the proposal, and the second time tests the proposal rejection logic.
 
     The value returned by each call is combined together, and passed back to the client function. In a production environment, your orchestration function would call a series of activity functions that make the accept/reject decision, and return the result of these activities.
 
@@ -267,7 +264,4 @@ JavaScript Durable Functions currently require Azure Functions version 2 compati
     }
     ```
 
-    Recall that the orchestration function runs the activity function twice.
-    
-        - The first time, the activity function indicates that the project proposal has been accepted.
-	- The second time, the proposal is rejected. The messages from both function calls are combined by the orchestration function and returned to the client function.
+    Recall that the orchestration function runs the activity function twice. The first time, the activity function indicates that the project proposal has been accepted. The second time, the proposal is rejected. The messages from both function calls are combined by the orchestration function and returned to the client function.
