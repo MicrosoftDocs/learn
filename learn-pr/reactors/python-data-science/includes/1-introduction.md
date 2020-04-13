@@ -63,7 +63,7 @@ The output is:
 ## Try it yourself
  
 Open the TBD in VS Code. Copy and paste the code snippet from above into a Python code cell. Run the code and you should get the following output:
-<br />
+<br /><br />
 
 
 <details>	
