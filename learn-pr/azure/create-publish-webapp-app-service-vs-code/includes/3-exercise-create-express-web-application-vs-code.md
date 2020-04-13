@@ -127,6 +127,238 @@ Now the app is complete, let's run it on your local computer and see if it shows
 
 ::: zone pivot="pythonflask"
 
-TODO
+As you'll see, using Python and the py utility to install Flask, you can create a webapp very quickly. 
+
+Suppose you've been asked to start building the website to promote the new video game launch. You've decided to use Flask to run server-side code and, to make the development as quick as possible, you're going to use the default Jinja templating engine. You want to create a quick, proof-of-concept webapp that displays a countdown to the launch date.
+
+Here, you'll install the necessary software and then use VS Code to create and test a website.
+
+> [!NOTE]
+> You must have Python installed on your computer before you begin this exercise.
+
+## Create an app folder
+
+You can use VS Code to run all the commands and edit all the code for your webapp. Here, you'll use its integrated terminal to set up a folder for your project:
+
+1. Start VS Code. 
+1. On the **View** menu, click **Terminal**.
+1. To create a new folder, type the following commands:
+
+    ```console
+    mkdir countdownFlaskApp
+    cd countdownFlaskApp
+    ```
+
+1. On the **File** menu, select **Open folder** and then browse to the **countdownFlaskApp** folder.
+
+## Create and activate a virtual environment for Flask development
+
+Using a virtual environment avoids installing Flask into a global Python environment and gives you exact control over the libraries used in an application.  
+
+1. If the integrated terminal is not visible, on the **View** menu, click **Terminal**.
+1. To create a virutal environment named `env`, type the following command into the terminal:
+
+    ```console
+    py -m venv env
+    ```
+    You will not see a success message or any other feedback.
+
+1. Open the Command Palette (Ctrl+Shift+P) and execute the **Use the Python: Select Interpreter** command.
+
+    Visual Studio Code displays a list of available global environments, including the virtual environment you just created.  You should see the virtual environment named `env` in the list.  Use the arrow keys to select the `env` entry and select <kbd>enter</kbd>.
+
+    ![Screenshot of completed project in web browser.](../media/3-python-select-interpreter.png)
+
+1. Close the integrated terminal.
+
+1. Run **Terminal: Create New Integrated Terminal (Ctrl+Shift+`)** from the Command Palette, which creates a terminal and automatically activates the virtual environment by running its activation script *activate.bat*.
+
+    You should now see the command line prompt prefixed with `(env)`.
+
+    ![Screenshot of VS Code's Terminal displaying commany prompt with (env) prefix.](../media/3-python-terminal-env.png)
+
+    > [!IMPORTANT]
+    > If you do not see the prefix `(env)` on your command prompt you are not working in the virtual environment.
+
+    > [!IMPORTANT]
+    > On Windows, if your default terminal type is PowerShell, you may see an error that it cannot run activate.ps1 because running scripts is disabled on the system. The error provides a link for information on how to allow scripts. Otherwise, use erminal: Select Default Shell to set "Command Prompt" or "Git Bash" as your default instead.
+
+    Once you have created and activated the virtual environment, you're ready to install Flask inside of your virtual environment.
+
+## Install Flask into the virtual environment
+
+1. If the integrated terminal is not visible, on the **View** menu, click **Terminal**.
+1. To install Flask in the virutal environment, ensure the command line is prefaced with `(env)`, execute this command in the terminal:
+
+    ```console
+    pip3 install flask
+    ```
+
+    Once the pip3 utility has finished, you should see a success message similar to the following:
+
+    ```output
+    Successfully installed Jinja2-2.11.2 MarkupSafe-1.1.1 Werkzeug-1.0.1 click-7.1.1 flask-1.1.2 itsdangerous-1.1.0
+    ```
+
+## Add code files
+
+1. In the VS Code Explorer view, use the **New file** icon to create a new file named `app.py`.  This will be where we write our Python code to create a Flask app, create a function to handle incoming requests, and perform the logic for our app.
+
+1. Use the **New folder** icon to a new folder called `templates`.
+
+1. Select the `templates` folder, the use the **New file** icon to add a new file called `countdown.html`.
+
+## Add logic to calculate the countdown
+
+Now that we have the file structure in place, we can focus on the application logic.
+
+Our aim here is to:
+    - Add `import` statements to pull in the various packages we'll need to support our web app.
+    - Create an instance of the Flask object that essentially starts the web app.
+    - Define a function that will handle the default route.  Since this is a simple app, we'll do all our business logic (i.e., our date time math) and send the number of milliseconds to our Jinja template.
+
+1. In the VS Code Explorer window, select **app.py** and add the following code:
+
+    ```python
+    from flask import Flask
+    from flask import render_template
+    from datetime import datetime
+    ```
+
+    These first lines of code just import the Flask library.  The `render_template` package provides the Jinja templating support.  Finally, we'll need `datetime` package to work with dates and times.
+
+1. Next, create an instance of the Flask object by adding the following code to the **app.py** file:
+
+    ```JavaScript
+    app = Flask(__name__)
+    ```
+
+1. Finally, create a function that will handle the default route.  
+
+    ```JavaScript
+    @app.route("/")
+    def countdown():
+
+        launchTime = datetime(2020, 6, 1)
+        currentTime = datetime.now()
+        diff = launchTime - currentTime
+        numberOfMilliseconds = int(diff.total_seconds() * 1000)
+
+        return render_template(
+            "countdown.html",
+            time=numberOfMilliseconds
+        )
+    ```
+
+    There's quite a bit to unpack in this function.
+
+    Above the function's definition, we use `@app.route()` to adorn the function with the route attribute to tell Flask which URL pattern to route to this function.  In this case, we're only handling the route for the root of the site.
+
+    First, you create two variables, `launchTime` and `currentTime`, to hold the future date and the current date, respectively.  
+
+    Next, you create the `diff` variable to hold the difference between the two dates.  This will return the value in microseconds, so you will need to multiply that value by 1000.  Then, to eliminate any fractions of milliseconds, you convert the floating number to an integer using the `int()` function.  You store that value in a new variable named `numberOfMilliseconds`.
+
+    Finally, you call the `render_template()` function passing in the name of the template in the templates folder, and the value you want to inject into the template.  Soon we'll create the template and will use the template replacement code named `time` in the template, so here we set `time` to the value stored in `numberOfMilliseconds`.
+
+    The entire app.py file should match the following code listing:
+
+    ```python
+    from flask import Flask
+    from flask import render_template
+    from datetime import datetime
+
+    app = Flask(__name__)
+
+    @app.route("/")
+    def countdown():
+
+        launchTime = datetime(2020, 6, 1)
+        currentTime = datetime.now()
+        diff = launchTime - currentTime
+        numberOfMilliseconds = int(diff.total_seconds() * 1000)
+
+        return render_template(
+            "countdown.html",
+            time=numberOfMilliseconds
+        )
+    ```
+
+1. On the **File** menu, select **Save**, then close the **app.py** file.
+
+    > [!NOTE]
+    > For this initial version, you're happy to display the countdown in milliseconds. Later, we'll update the code to display a whole number of days, which is what a user might expect.
+
+## Render the countdown 
+
+Now, we'll build the template to display the countdown:
+
+1. In the VS Code Explorer window, expand **templates**, and then select **countdown.html**. This file defines a Jinja template for the app's homepage. We can add code to display the countdown here.
+
+1. Add the following HTML code:
+
+    ```html
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8" />
+            <title>Countdown to Launch</title>
+            <style>
+                body {
+                    margin-top: 100px;
+                    margin-left: 60px;
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+            </style>
+        </head>
+        <body>
+            <h1>Countdown to Launch</h1>
+            <p>Only a few days left until our new game launch!</p>
+            <p>Countdown: x milliseconds</p>
+        </body>
+    </html>
+    ```
+
+1. Replace the following line:
+
+    ```html
+    <p>Countdown: x milliseconds</p>
+    ```
+
+    ... with the following line of code:
+
+    ```html
+    <p>Countdown: {{ time }} milliseconds</p>
+    ```
+
+    Here we use the `{{ }}` replacement syntax, and the replacement code `time` that we referenced in the previous section.  You'll recall, we called `render_template()` and set `time` to the value we set in the variable `numberOfMilliseconds`.  At runtime, Flask will dynamically replace `{{ time }}` with a long numeric value.
+
+1. On the **File** menu, select **Save** and then close the **countdown.html** file.
+
+## Run the webapp
+
+Now the app is complete, let's run it on your local computer and see if it shows the countdown:
+
+1. In the VS Code Terminal, 
+
+    ```command
+    py -m flask run
+    ```
+
+    In the Terminal, you should see some feedback confirming that the development server is running your app correctly:
+
+    ```console
+    * Environment: production
+    WARNING: This is a development server. Do not use it in a production deployment.
+    Use a production WSGI server instead.
+    * Debug mode: off
+    * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+    ```
+
+1. Open a web browser and navigate to the address `http://localhost:5000`.
+
+![Screenshot of completed project in web browser.](../media/3-flask-complete.png)
+
+1. Close the web browser. In the VS Code Terminal, enter <kbd>CTRL-C</kbd> to quit the development server.
+
 
 ::: zone-end
