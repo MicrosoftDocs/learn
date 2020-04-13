@@ -16,34 +16,35 @@ quiz:
   - content: ""
     choices:
     - content: ""
-      isCorrect: 
+      isCorrect: ""
       explanation: ""
     - content: ""
-      isCorrect:
+      isCorrect: ""
       explanation: ""
     - content: ""
-      isCorrect:
+      isCorrect: ""
       explanation: ""
   - content: ""
     choices:
     - content: ""
-      isCorrect: 
+      isCorrect: ""
       explanation: ""
     - content: ""
-      isCorrect: 
+      isCorrect: ""
       explanation: ""
     - content: ""
-      isCorrect: 
+      isCorrect: ""
       explanation: ""
   - content: ""
     choices:
     - content: ""
-      isCorrect: 
+      isCorrect: ""
       explanation: ""
     - content: ""
-      isCorrect: 
+      isCorrect: ""
       explanation: ""
     - content: ""
-      isCorrect: 
+      isCorrect: ""
       explanation: ""
+
 
