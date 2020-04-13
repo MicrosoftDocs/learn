@@ -245,11 +245,11 @@ JavaScript Durable Functions currently require Azure Functions version 2 compati
     ```json
     {
       "id": "f0e1d2c3b4a5968778695a4b3c2d1e0f",
-      "statusQueryGetUri": "https://example.azurewebsites.net/...,
-      "sendEventPostUri": "https://example.azurewebsites.net/...,
-      "terminatePostUri": "https://example.azurewebsites.net/...,
-      "rewindPostUri": "https://example.azurewebsites.net/...,
-      "purgeHistoryDeleteUri": "https://example.azurewebsites.net/...
+      "statusQueryGetUri": "https://example.azurewebsites.net/...",
+      "sendEventPostUri": "https://example.azurewebsites.net/...",
+      "terminatePostUri": "https://example.azurewebsites.net/...",
+      "rewindPostUri": "https://example.azurewebsites.net/...",
+      "purgeHistoryDeleteUri": "https://example.azurewebsites.net/..."
     }
     ```
 
