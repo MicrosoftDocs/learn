@@ -1,9 +1,9 @@
 ### YamlMime:Module
 uid: learn.oxford.deploy-cog-ser-iot-edge-azure-func
 metadata:
-  title: "Introduction to Azure functions for IoT Edge"
+  title: "Deploying Cognitive Services on Edge devices using Azure Functions"
   description: "University of Oxford"
-  ms.date: 03/30/2020
+  ms.date: 03/31/2020
   author: leestott
   ms.author: leestott
   ms.topic: interactive-tutorial
@@ -11,13 +11,12 @@ metadata:
 title: "Deploying Cognitive Services on Edge devices using Azure Functions "
 summary: ""
 abstract: |
-     
 prerequisites: |
     - Familiarity with Azure
-    - Basic understanding of IoT Edge 
+    - Basic understanding of IoT Edge
 iconUrl: http://via.placeholder.com/120x120
 badge:
-  uid: learn.oxford.intro-to-iot-funtions-iot-edge
+  uid: learn.oxford.deploy-cog-ser-iot-edge-azure-func
 levels:
 - intermediate
 roles:
