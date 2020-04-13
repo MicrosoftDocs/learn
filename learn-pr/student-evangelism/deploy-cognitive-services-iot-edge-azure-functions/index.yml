@@ -29,7 +29,7 @@ units:
 - learn.oxford.deploy-cog-ser-iot-edge-azure-func.design-cog-ser
 - learn.oxford.deploy-cog-ser-iot-edge-azure-func.config-edge-device
 - learn.oxford.deploy-cog-ser-iot-edge-azure-func.exercise-configuring-edge-device-iot-hub
-- learn.oxford.deploy-prebuilt-module-edge-device.knowledge-check
+- learn.oxford.deploy-cog-ser-iot-edge-azure-func.knowledge-check
 - learn.oxford.deploy-cog-ser-iot-edge-azure-func.create-cog-serv
 - learn.oxford.deploy-cog-ser-iot-edge-azure-func.deploy-azure-functions
 - learn.oxford.deploy-cog-ser-iot-edge-azure-func.deploy-device-code
