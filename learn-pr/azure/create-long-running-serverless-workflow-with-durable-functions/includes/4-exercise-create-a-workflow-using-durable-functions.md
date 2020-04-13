@@ -20,7 +20,7 @@ In this exercise, you'll use the example scenario from the previous unit to lear
         | **Publish** | _Code_ | Specifies that the function will use code instead of a container. |
         | **Runtime Stack** | _Node.js_ | Specifies that the sample code in this module is written in JavaScript. |
         | **Version** | _12_ | Specifies the version of the runtime stack. |
-        | **Region** | _[Select from the list below]_ | Choose the regrion that closest to you that is also one of the allowed *Sandbox regions* listed below. |
+        | **Region** | _[Select from the list below]_ | Choose the region closest to you that is also one of the allowed *Sandbox regions* listed below. |
 
         **Sandbox regions**
 
