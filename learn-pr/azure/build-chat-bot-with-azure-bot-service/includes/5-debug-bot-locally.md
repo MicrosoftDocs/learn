@@ -105,7 +105,7 @@ Now that we have the emulator installed,
 
 1. Confirm that "test bot endpoint at `http://localhost:3978/api/messages`" appears in the debug console.
 
-    ![Screenshot of Visual Studio Code showing the Debug system with the Debug navigation item and debug play button used to start a debugging session highlighted.](../media/5-vs-launch-debugger.png)
+    :::image type="content" source="../media/5-vs-launch-debugger.png" alt-text="Screenshot of Visual Studio Code showing the Debug system with the Debug navigation item and debug play button highlighted." loc-scope="vs-code":::
 
     Your bot code is now running locally.
 
@@ -120,7 +120,7 @@ Now that we have the emulator installed,
     >[!TIP]
     > In the future, you can reconnect to the bot simply by selecting the bot name under "My Bots".
 
-    ![Screenshot of the Bot Framework Emulator showing the New bot configuration screen with the Save and connect button highlighted.](../media/5-new-bot-configuration.png)
+    :::image type="content" source="../media/5-new-bot-configuration.png" alt-text="Screenshot of the Bot Framework Emulator showing the New bot configuration screen." loc-scope="other"::: <!-- no-loc -->
 
 ## Test the local bot
 

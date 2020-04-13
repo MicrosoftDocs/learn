@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-computing.distributed-programming.analytics-engines-graphlab.6-example
+title: An example application in GraphLab
+metadata:
+  title: An example application in GraphLab
+  description: An example application in GraphLab
+  ms.date: 03/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  show_latex: true
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-example.md)]

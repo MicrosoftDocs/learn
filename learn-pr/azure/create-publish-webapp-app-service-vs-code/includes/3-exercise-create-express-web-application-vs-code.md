@@ -7,7 +7,7 @@ Suppose you've been asked to start building the website to promote the new video
 Here, you'll install the necessary software and then use VS Code to create and test a website.
 
 > [!NOTE]
-> You must have VS Code and Node.js installed on your computer before you begin this exercise.
+> You must have [Visual Studio Code](https://code.visualstudio.com) and [Node.js](https://nodejs.org) installed on your computer before you begin this exercise.
 
 ## Create an app folder
 
@@ -39,7 +39,7 @@ You can use the Express Generator tool to create all the components of an Expres
 
 1. Examine the contents of the Explorer window to see the files the generator has created.
 
-    ![Express generated files](../media/3-express-generator-files.png)
+    :::image type="content" source="../media/3-express-generator-files.png" alt-text="Express generated files." loc-scope="vs-code":::
 
 ## Calculate the countdown
 
@@ -119,7 +119,7 @@ Now the app is complete, let's run it on your local computer and see if it shows
 
 1. Open a web browser and navigate to the address `http://localhost:3000`.
 
-    ![Browse the completed webapp](../media/3-complete-webapp.png)
+    :::image type="content" source="../media/3-complete-webapp.png" alt-text="Browse the completed webapp." loc-scope="other":::
 
 1. Close the web browser. In the Code integrated terminal, press <kbd>CTRL-C</kbd> to stop the webapp. If the prompt displays `Terminate batch job (Y/N)?`, type <kbd>Y</kbd> and press <kbd>Enter</kbd>.
 
@@ -134,7 +134,7 @@ Suppose you've been asked to start building the website to promote the new video
 Here, you'll install the necessary software and then use VS Code to create and test a website.
 
 > [!NOTE]
-> You must have Python installed on your computer before you begin this exercise.
+> You must have [Visual Studio Code](https://code.visualstudio.com) and [Python](https://www.python.org) installed on your computer before you begin this exercise.
 
 ## Create an app folder
 

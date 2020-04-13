@@ -8,26 +8,22 @@ In this exercise, you'll use Eclipse to create a Java web app that uses Java Ser
 
 1. On the **File** menu, select **New**, and then click **Dynamic Web Project**.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of the **File** menu in Eclipse. The user has selected the **Dynamic Web Project** command.](../media/3-new-web-project-menu.png)
+    :::image type="content" source="../media/3-new-web-project-menu.png" alt-text="Screenshot of the File menu in Eclipse. The user has selected the Dynamic Web Project command." loc-scope="third-party":::
 
 1. In the **New Dynamic Web Project** wizard, on the **Dynamic Web Project** page, enter **SampleWebApp** in the **Project name** box. Make sure the **Target runtime** is set to **Apache Tomcat v8.0**, and then click **Finish**.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of the **Dynamic Web Project** page in the **New Dynamic Web Project** wizard, in Eclipse.](../media/3-dynamic-web-project.png)
-
+    :::image type="content" source="../media/3-dynamic-web-project.png" alt-text="Screenshot of the Dynamic Web Project page in the New Dynamic Web Project wizard, in Eclipse." loc-scope="third-party":::
+    
     > [!NOTE]
     > If the **Apache Tomcat v8.0** runtime isn't listed, click **New Runtime**, and download it
 
 1. In the **Project Explorer** pane, expand **SampleWebApp**, expand **Java Resources**, right-click **src**, select **New**, and then click **JSP File**.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of the **New** menu for a source code item. The user has selected **JSP File**.](../media/3-new-jsp-file.png)
+    :::image type="content" source="../media/3-new-jsp-file.png" alt-text="Screenshot of the New menu for a source code item. The user has selected JSP File." loc-scope="third-party":::
 
 1. In the **New JSP File** wizard, on the **JSP** page, verify that the parent folder is set to **SampleWebApp/WebContent**. In the **File name** box, enter **index.jsp**, and then click **Finish**.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of the **New JSP File** wizard in Eclipse, showing the **JSP** page.](../media/3-jsp-file.png)
+    :::image type="content" source="../media/3-jsp-file.png" alt-text="Screenshot of the New JSP File wizard in Eclipse, showing the JSP page." loc-scope="third-party":::
 
 1. A code editor window appears, displaying the **index.jsp** file. In the **head** section of the page, change the HTML markup for the title to **Sample Web App**, as follows:
 
@@ -88,21 +84,18 @@ In this exercise, you'll use Eclipse to create a Java web app that uses Java Ser
 
 1. On the **Run** menu, click **Run**.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of the **Run** menu in Eclipse. The user has selected the **Run** command.](../media/3-run-app.png)
+    :::image type="content" source="../media/3-run-app.png" alt-text="Screenshot of the Run menu in Eclipse. The user has selected the Run command." loc-scope="third-party":::
 
 1. In the **Run On Server** wizard, select **Tomcat v8.0 Server at localhost**, and then click **Finish**.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of the **Run On Server** wizard in Eclipse. The user has selected the Tomcat v8.0 Server at localhost server.](../media/3-run-on-server.png)
+    :::image type="content" source="../media/3-run-on-server.png" alt-text="Screenshot of the Run On Server wizard in Eclipse. The user has selected the Tomcat v8.0 Server at localhost server." loc-scope="third-party":::
 
     >[!NOTE]
     > If you have recently installed Tomcat, there might not be an existing server available. In this case, select **Manually define a new server**, and select **Tomcat v8.0 Server**.
 
 1. You'll see a few messages appear as the Tomcat server starts running. Eclipse will show the output of the web application in a browser window inside the IDE, which should look similar to the image shown below.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of the output from the sample web application in Eclipse.](../media/3-results.png)
+    :::image type="content" source="../media/3-results.png" alt-text="Screenshot of the output from the sample web application in Eclipse." loc-scope="third-party":::
 
 1. Click the **Go to the selected URL** button – the green arrow next to the URL in the **Sample Web App** window – to refresh the page. You should see the time change as the page regenerated and the Java code executes again.
 

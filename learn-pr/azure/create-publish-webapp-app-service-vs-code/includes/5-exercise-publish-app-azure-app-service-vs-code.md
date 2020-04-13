@@ -1,6 +1,6 @@
 ::: zone pivot="nodeexpress"
 
-In VS Code, you can use the Azure App Service extension to create and deploy webapps to Azure.
+In Visual Studio Code, you can use the Azure App Service extension to create and deploy webapps to Azure.
 
 Suppose you have started to create the new website that will promote the new video game launch. The new site has been written in JavaScript and uses Node.js and Express.js. You've decided that the completed website will be hosted in Azure App Service. Now, you want to create that instance of App Service and deploy the first version of the website to it.
 
@@ -13,7 +13,7 @@ The **Azure App Service** extension is not installed by default in VS Code. Let'
 1. In VS Code, on the **View** menu, select **Extensions**.
 1. In the **Search Extensions in Marketplace** textbox, type **Azure App Service**, and then select the **Azure App Service** extension.
 
-    ![Add the Azure App Service extension in Code](../media/5-add-azure-app-service-extension.png)
+    :::image type="content" source="../media/5-add-azure-app-service-extension.png" alt-text="Add the Azure App Service extension in Code." loc-scope="vs-code":::
 
 1. Select **Install**.
 
@@ -24,7 +24,7 @@ To view and make changes in your Azure subscription, first authenticate yourself
 1. In VS Code, to open the **Azure** explorer, on the **View** menu, select **Open View...** and then select **Azure**.
 1. In the **AZURE** explorer, select **Sign in to Azure...**.
 
-    ![Sign into Azure in Code](../media/5-sign-in-to-azure.png)
+    :::image type="content" source="../media/5-sign-in-to-azure.png" alt-text="Sign into Azure in Code." loc-scope="vs-code":::
 
 1. Sign in with the same credentials you used to set up the sandbox and then close the browser page.
 
@@ -36,7 +36,7 @@ Now that the extension is installed, we can use it to create an instance of App 
 1. Right-click the **Concierge Subscription**, and then select **Create new web app... (Advanced)**.
 1. In the first page of the **Create new web app** wizard, type a globally unique name for the app, such as **LaunchCountDown&lt;your initials&gt;**, and then press Enter.
 
-    ![Create new web app](../media/5-create-new-web-app-1.png)
+    :::image type="content" source="../media/5-create-new-web-app-1.png" alt-text="Create new web app." loc-scope="vs-code":::
 
 1. Select the resource group **<rgn>[sandbox resource group name]</rgn>**, select **Linux**, and then select **Node 12 LTS**. 
 1. Select **Create new App Service plan** and name the new plan **LaunchCountDownPlan**.
@@ -53,7 +53,7 @@ Now, you can deploy your Express.js site to Azure:
 1. If you are asked if you are sure, click **Deploy**. If you are asked if you always want to deploy this workspace to App Service, click **Yes**.
 1. When the deployment is complete, select **Browse Website**, and then select **Open Link**. Then Azure website is displayed in your browser. Notice that the website is hosted in the **azurewebsites.net** domain.
 
-    ![Express.js website hosted in Azure](../media/5-deployed-webapp.png)
+    :::image type="content" source="../media/5-deployed-webapp.png" alt-text="Express.js website hosted in Azure." loc-scope="other":::
 
 ::: zone-end
 

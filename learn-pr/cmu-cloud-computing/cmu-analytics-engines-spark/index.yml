@@ -1,0 +1,63 @@
+### YamlMime:Module
+uid: learn.cmu-cloud-computing.distributed-programming.analytics-engines-spark
+metadata:
+  title: 'Distributed computing on the cloud: Spark'
+  description: Carnegie Mellon University's cloud developer course. Spark is an open-source cluster-computing framework with different strengths than MapReduce has. Learn about how Spark works.
+  ms.date: 03/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  showCreativeCommonsFooter: true
+title: 'Distributed computing on the cloud: Spark'	
+summary: Spark is an open-source cluster-computing framework with different strengths than MapReduce has. Learn about how Spark works.
+abstract: | 
+  In this module, you will:
+    - Recall the features of an iterative programming framework
+    - Describe the architecture and job flow in Spark
+    - Recall the role of resilient distributed datasets (RDDs) in Spark
+    - Describe the properties of RDDs in Spark
+    - Compare and contrast RDDs with distributed shared-memory systems
+    - Describe fault-tolerance mechanics in Spark
+    - Describe the role of lineage in RDDs for fault tolerance and recovery
+    - Understand the different types of dependencies between RDDs
+    - Understand the basic operations on Spark RDDs
+    - Step through a simple iterative Spark program
+    - Recall the various Spark libraries and their functions
+  
+  In partnership with Dr. Majd Sakr and Carnegie Mellon University.
+prerequisites: |
+  - Understand what cloud computing is, including cloud service models and common cloud providers
+  - Know the technologies that enable cloud computing
+  - Understand how cloud service providers pay for and bill for the cloud
+  - Know what datacenters are and why they exist
+  - Know how datacenters are set up, powered, and provisioned
+  - Understand how cloud resources are provisioned and metered
+  - Be familiar with the concept of virtualization
+  - Know the different types of virtualization
+  - Understand CPU virtualization
+  - Understand memory virtualization
+  - Understand I/O virtualization
+  - Know about the different types of data and how they're stored
+  - Be familiar with distributed file systems and how they work
+  - Be familiar with NoSQL databases and object storage, and how they work
+  - Know what distributed programming is and why it's useful for the cloud
+  - Understand MapReduce and how it enables big data computing
+iconUrl: /learn/achievements/cmu-cloud-developer/distributed-programming-spark.svg
+levels:
+- beginner
+roles:
+- developer
+- student
+products:
+- azure
+units:
+- learn.cmu-cloud-computing.distributed-programming.analytics-engines-spark.0-introduction
+- learn.cmu-cloud-computing.distributed-programming.analytics-engines-spark.1-overview
+- learn.cmu-cloud-computing.distributed-programming.analytics-engines-spark.2-resilient-distributed-datasets
+- learn.cmu-cloud-computing.distributed-programming.analytics-engines-spark.3-lineage-fault-tolerance-recovery
+- learn.cmu-cloud-computing.distributed-programming.analytics-engines-spark.4-programming
+- learn.cmu-cloud-computing.distributed-programming.analytics-engines-spark.5-spark-ecosystem
+- learn.cmu-cloud-computing.distributed-programming.analytics-engines-spark.6-summary
+badge:
+  uid: learn.cmu-cloud-computing.distributed-programming.analytics-engines-spark.badge
