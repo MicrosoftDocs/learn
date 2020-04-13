@@ -23,7 +23,7 @@ Durable functions allows you to define stateful workflows using an `Orchestratio
 
 ## Function types
 
-You can use three durable function types: `client`, `orchestrator`, and `activity`.
+You can use three durable function types: _Client_, _Orchestrator_, and _Activity_.
 
 **Client** functions  are the entry point for creating an instance of a Durable Functions orchestration. They can run in response to an event from many sources, such as a new HTTP request arriving, a message being posted to a message queue, an event arriving in an event stream. You can write them in any of the supported languages.
 
@@ -37,13 +37,23 @@ You can use Durable Functions to implement many common workflow patterns. These 
 
 - **Function chaining** -  In this pattern, the workflow executes a sequence of functions in a specified order. The output of one function is applied to the input of the next function in the sequence. The output of the final function is used to generate a result.
 
+    ![Function chaining pattern](../media/function-chaining.png)
+
 - **Fan out/fan in** -  This pattern runs multiple functions in parallel and then waits for all the functions to finish. The results of the parallel executions can be aggregated or used to compute a final result.
+
+    ![Fan out/fan in pattern](../media/fan-out-fan-in.png)
 
 - **Async HTTP APIs** -  This pattern addresses the problem of coordinating state of long-running operations with external clients. An HTTP call can trigger the long-running action. Then, it can redirect the client to a status endpoint. The client can learn when the operation is finished by polling this endpoint.
 
+    ![Async HTTP API pattern](../media/async-http-api.png)
+
 - **Monitor** -  This pattern implements a recurring process in a workflow, possibly looking for a change in state. For example, you could use this pattern to poll until specific conditions are met.
 
+    ![Monitor pattern](../media/monitor.png)
+
 - **Human interaction** -  This pattern combines automated processes that also involve some human interaction. A manual process within an automated process is tricky because people aren't as highly available and as responsive as most computers. Human interaction can be incorporated using timeouts and compensation logic that runs if the human fails to interact correctly within a specified response time. An approval process is an example of a process that involves human interaction.
+
+    ![Human interaction pattern](../media/approval.png)
 
 ## Comparison with Logic Apps
 
