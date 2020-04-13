@@ -71,20 +71,22 @@ Open the TBD in VS Code. Copy and paste the code snippet from above into a Pytho
   Hint goes here.	
 
 </details>
+
+
  
 Python is an interpreted language, which means that you can interactively use the interpreter to get immediate results. You can see this by using the Python interpreter as a simple calculator: type an expression, and you can see the output immediately.
- 
-How can you see the results? The Python interpreter runs inside this notebook. To run the code inside a cell, either click the **Run Cell** button at the top of the window or press **Ctrl+Enter**.  
- 
+
+How can you see the results? The Python interpreter runs inside this notebook. To run the code inside a cell, either click the **Run Cell** button at the top of the window or press **Ctrl+Enter**. 
+
 Open the Python.ipynb file in VS Code and type this into a Python cell. (Don't worry, we'll cover what the syntax of the Python code means later on in this module.)
- 
+
 ```Python
 print("Hello, world.")
 ```
  
 Run the cell and your output should be:
  
-```Output
+```output
 Hello, world.
 ```
 
