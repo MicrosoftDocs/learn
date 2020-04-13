@@ -121,7 +121,7 @@ In this unit, you will create a new logic app that will be triggered via an HTTP
 
 1. Click **Save** to save all changes to the Logic App Workflow.
 
-1. Expand the **When an HTTP request is received** trigger, copy the value for the **HTTP POST URL** that is displayed, and save it for future referent. You now have the Web Hook endpoint URL for the Logic App that will be used by Event Grid to trigger the execution of the Logic App workflow.
+1. Expand the **When an HTTP request is received** trigger, copy the value for the **HTTP POST URL** that is displayed, and save it for future reference. You now have the Web Hook endpoint URL for the Logic App that will be used by Event Grid to trigger the execution of the Logic App workflow.
 
     [![HTTP request info](../media/http_post.png)](../media/http_post.png#lightbox)
 

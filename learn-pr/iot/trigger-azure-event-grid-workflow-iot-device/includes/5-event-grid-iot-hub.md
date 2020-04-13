@@ -26,7 +26,7 @@ For more information about how to use the IoT Hub integration with Event Grid, v
 
 ## Events filtering and enrichment
 
-Depending on the type of events, you want to post to Event Grid for other services to be notified you might want to implement some filtering as not all telemetry or device life-cycle events might be relevant to the workflow you want to implement. The IoT Hub event subscriptions can filter events based on event type, data content a subject (which is the device name). To learn more on events filtering, refer to the [documentation](https://docs.microsoft.com/azure/iot-hub/iot-hub-event-grid#filter-events).
+Depending on the type of events, you want to post to Event Grid for other services to be notified, you might want to implement some filtering as not all telemetry or device life-cycle events might be relevant to the workflow you want to implement. The IoT Hub event subscriptions can filter events based on event type, data content and subject (which is the device name). To learn more on events filtering, refer to the [documentation](https://docs.microsoft.com/azure/iot-hub/iot-hub-event-grid#filter-events).
 
 Before events are posted to Event Grid, you have the ability to enrich them by selecting the endpoint as Event Grid. For more information, see [Message Enrichments Overview](https://docs.microsoft.com/azure/iot-hub/iot-hub-message-enrichments-overview).
 
