@@ -33,6 +33,7 @@ levels:
 roles:
 - developer
 products:
+- azure-iot
 - azure-iot-central
 - azure-maps
 units:
