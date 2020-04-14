@@ -2,10 +2,10 @@ With intelligently connected devices and systems, organizations can evolve their
 
 Now that you've reviewed this module, you should be able to:
 
-- Understand the Microsoft vision for Azure IoT.
-- Understand what Azure IoT is, how it works, and how it's built.
-- Identify ways you can use Azure IoT.
-- Understand how Azure IoT enables digital transformation to address business challenges.
+- Understand the Microsoft vision for Azure IoT
+- Understand what Azure IoT is, how it works, and how it's built
+- Identify ways you can use Azure IoT
+- Understand how Azure IoT enables digital transformation to address business challenges
 
 [![Graph showing vibration telemetry](../media/iot-strategy-vibrations.png)](../media/iot-strategy-vibrations.png#lightbox)
 
@@ -31,9 +31,6 @@ Here are the three key takeaways from this module:
 
 Use these resources to discover more.
 
->[!TIP]
->To open a resource link, right-click and select "Open in a new tab or window," that way, you can check out the resource and easily return to the module tab to unlock your achievement when done.
-
 Learn more about IoT Products:
 - [Azure IoT](https://azure.com/iot)
 
@@ -49,6 +46,9 @@ Learn more about IoT customer Stories:
 - [ExxonMobil](https://customers.microsoft.com/story/exxonmobil-mining-oil-gas-azure)
 - [Kohler](https://customers.microsoft.com/story/kohler-konnect-azure-iot)
 - [Roche Diagnostics](https://customers.microsoft.com/story/roche-diagnostics)
+
+> [!TIP]
+> To open a resource link, right-click and select "Open in a new tab or window," that way, you can check out the resource and easily return to the module tab to unlock your achievement when done.
 
 ## Learn more with a Channel 9 video series
 

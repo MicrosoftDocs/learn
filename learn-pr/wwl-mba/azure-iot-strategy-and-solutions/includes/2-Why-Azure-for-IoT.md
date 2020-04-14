@@ -22,7 +22,7 @@ The diagram illustrates a recommended IoT solution architecture that will work f
 
 An IoT application consists of the following subsystems:
 
-1. **Devices** that can securely register with the cloud, and send telemetry data. These devices might have settings that can be specified from the cloud. Alternatively, multiple devices might communicate locally with an _Edge Gateway_ device. The Edge device can perform some local optimization, and communicates with the cloud for the global picture.
+1. **Devices** that can securely register with the cloud, and send telemetry data. These devices might have settings that can be specified from the cloud. Alternatively, multiple devices might communicate locally with an _Edge Gateway_ device. The edge device can perform some local optimization, and communicates with the cloud for the global picture.
 
 1. A cloud gateway service, or **hub**, to securely read the incoming data, and provide some device management capabilities.
 
