@@ -27,7 +27,7 @@ UI changes are also required to collect the additional user profile information.
     > Run the following command from the project root to view valid values for the `--files` option:
     >
     > ```dotnetcli
-    > dotnet aspnet-codegenerator identity --listFiles --force
+    > dotnet aspnet-codegenerator identity --listFiles
     > ```
 
     The following files are added to the *:::no-loc text="Areas/Identity":::* directory:

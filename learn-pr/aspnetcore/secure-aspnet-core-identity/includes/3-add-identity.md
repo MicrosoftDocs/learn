@@ -29,31 +29,12 @@ In this unit, Identity will be added to the existing ASP.NET Core Razor Pages pr
 
 1. Add the following NuGet packages to the project:
 
-    ::: zone pivot="pg"
-
     ```dotnetcli
     dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design --version 3.1.2 && \
         dotnet add package Microsoft.AspNetCore.Identity.UI --version 3.1.3 && \
-        dotnet add package Microsoft.AspNetCore.Identity.EntityFrameworkCore --version 3.1.3 && \
-        dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL --version 3.1.3 && \
-        dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 3.1.3 && \
-        dotnet add package Microsoft.EntityFrameworkCore.Design --version 3.1.3
+        dotnet add package Microsoft.EntityFrameworkCore.Design --version 3.1.3 && \
+        dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 3.1.3
     ```
-
-    ::: zone-end
-
-    ::: zone pivot="sql"
-
-    ```dotnetcli
-    dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design --version 3.1.2 && \
-        dotnet add package Microsoft.AspNetCore.Identity.UI --version 3.1.3 && \
-        dotnet add package Microsoft.AspNetCore.Identity.EntityFrameworkCore --version 3.1.3 && \
-        dotnet add package System.Data.SqlClient --version 4.8.1 && \
-        dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 3.1.3 && \
-        dotnet add package Microsoft.EntityFrameworkCore.Design --version 3.1.3
-    ```
-
-    ::: zone-end
 
     These packages install code generation templates and dependencies that are used by the scaffolder.
 
@@ -92,6 +73,20 @@ In this unit, Identity will be added to the existing ASP.NET Core Razor Pages pr
 
     Areas provide a way to partition an ASP.NET Core web app into smaller functional groups.
 
+::: zone pivot="pg"
+
+## Add the PostgreSQL database provider
+
+Run the following command from the project root to install the PostgreSQL database provider for EF Core:
+
+```dotnetcli
+dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL --version 3.1.3
+```
+
+This NuGet package provides EF Core with knowledge of how to interact with a PostgreSQL database.
+
+::: zone-end
+
 ## Configure the database connection
 
 1. Replace the `Configure` method of *:::no-loc text="Areas/Identity/IdentityHostingStartup.cs":::* with the following code:
@@ -112,7 +107,8 @@ In this unit, Identity will be added to the existing ASP.NET Core Razor Pages pr
             services.AddDbContext<ContosoPetsAuth>(options =>
                 options.UseNpgsql(connBuilder.ConnectionString));
 
-            services.AddDefaultIdentity<IdentityUser>()
+            services.AddDefaultIdentity<IdentityUser>(options =>
+                    options.SignIn.RequireConfirmedAccount = true)
                 .AddDefaultUI()
                 .AddEntityFrameworkStores<ContosoPetsAuth>();
         });
@@ -153,8 +149,10 @@ In this unit, Identity will be added to the existing ASP.NET Core Razor Pages pr
 
         ::: zone pivot="pg"
 
+        ```csharp
         Username = context.Configuration["DbUsername"],
         Password = context.Configuration["DbPassword"]
+        ```
 
         ::: zone-end
 
