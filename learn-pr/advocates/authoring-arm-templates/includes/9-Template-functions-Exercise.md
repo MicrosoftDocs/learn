@@ -1,52 +1,28 @@
-#### Add template functions to your template
+#### Add template functions to your template.
 
 At the end of the previous tutorial, your template had the following JSON code in it:
 
 :::code language="JSON" source="../samples/exercise3-parameter-sku.json":::
 
+In this exercise, you'll update your template to remove the hard-coded **Location** to something more flexible so you can enjoy the flexibility to deploy the resources in another region.
 
-In this exercise, you will update your template to remove the hard-coded **Location** from **{Location}** to something more flexible so you can enjoy the flexibility to deploy the resources in another region. You could add a parameter for location, but there's a better way.
-
-This is where **functions** become helpful. When you completed the previous exercise, you already used a function. When you added **"[parameters('storageName')]"**, you used the parameters function.  In the following exercise, we will make good use of functions by replacing the hard-coded values wit proper function.
+This is where **functions** become helpful. You already used functions when you completed the previous exercises. When you added **"[parameters('storageName')]"**, you used the parameters function.  In this exercise, you'll use a functions to replace the hard-coded values with proper function.
 
 #### Use function
 
-1. Open Visual Studio Code and the template you created in the first exercise.  From the Azure shell provided here, type the following command.
-       
+1. Open Visual Studio Code and the template you created in the last exercise.  From the Azure shell provided here, type the following command.
+
 ```azurecli
 code azuredeploy.json
 ```
-2. You'll notice that in the example below, we are making use of two functions
-    - "[resourceGroup().location]"
-    - "[parameters('\<parameterName\>')]"
-
-The first usage is taking advantage of the **"Resource"** functions where we can extract value of the resource group properties such as depicted in the following JSON file.
-
-```json
-{
-  "id": "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}",
-  "name": "{resourceGroupName}",
-  "type":"Microsoft.Resources/resourceGroups",
-  "location": "{resourceGroupLocation}",
-  "managedBy": "{identifier-of-managing-resource}",
-  "tags": {
-  },
-  "properties": {
-    "provisioningState": "{status}"
-  }
-}
-```
-
-The second time you used a function is when you added "[parameters('storageName')]" to your template in the last exercise. 
-
-In this exercise, you will use the function **[resourceGroup().location]** to store the location of the target resource group in the "Location" parameter as a default value. Therefore, you can still pass a location if needed, however if you don't the default value will be used.  this, is the flexibility you will benefit from.
-
->[!NOTE]
->As it was the case in the previous exercises, you'll notice that the value in the **"contentVersion"** section is incremented to **"1.0.0.4"** because again, you are making changes to your template.
+2. You'll notice that in the example below, we are making use of two functions.  The first usage is taking advantage of the **"resource"** functions ("[resourceGroup().location]") where we can extract value of the resource group properties such as depicted in the following JSON file. The second time you used a function is when you added "[parameters('storageName')]" to your template.
 
 3. Copy the whole file and replace your template with its contents, or just adjust with the highlighted section.
 
 :::code language="JSON" source="../samples/exercise4-function-1.json" highlight: "24-27,34":::
+
+>[!NOTE]
+>As it was the case in the previous exercises, you'll notice that the value in the **"contentVersion"** section is incremented to **"1.0.0.4"** because again, you are making changes to your template.
 
 4. Save the updated template, prepare to deploy it.
 
