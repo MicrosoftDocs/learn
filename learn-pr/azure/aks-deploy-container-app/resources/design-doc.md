@@ -38,10 +38,8 @@ Rapidly deploy a containerized application hosted on Azure Container Services or
 Upon the completion of this module, the learner will be able to:
 
 1. Create and set up an Azure Kubernetes Cluster
-2. Identify the steps required to deploy a containerized app to AKS
-3. Understand the correct representation/structure of Kubernetes' YAML files
-4. Deploy Kubernetes workloads using public images
-5. Expose pods to internal and external networks
+2. Create Kubernetes deployment and service YAML files
+3. Deploy and expose Kubernetes workloads using public images
 
 ## Chunk your content into subtasks
 
@@ -52,10 +50,10 @@ Identify the subtasks of *module title*
 | 1 | Create an AKS Cluster | Through the steps of creating an AKS cluster using CLI and portal | Exercise | 1 | Yes |
 | 2 | Install Kubectl via Azure CLI | Understanding kubectl is needed to deploy the application | Knowledge Check | 1 | No, together with 1 |
 | 3 | Create AKS context into Kubectl | Setting up local development is needed to deploy the app | Knowledge Check | 1 | No, joined with 1 |
-| 4 | Deploy an application using imperative paradigm | Learning context to tasks 5 and 6 | None just as a context | 2, 4 | No, joined with 5 |
-| 5 | Write Kubernetes YAML files | Pros of using a declarative structure, YAML files are needed to deploy the application | Knowledge Check | 2, 4, 3 | Yes |
-| 6 | Deploy an application using YAML files | Deploy the written files to the cluster | Exercise | 2, 4, 3 | No, joined with 5 |
-| 7 | Expose the application to the Web | The application must be exposed for other users to use | Exercise | 2, 5 | Yes |
+| 4 | Deploy an application using imperative paradigm | Learning context to tasks 5 and 6 | None just as a context | 2 | No, joined with 5 |
+| 5 | Write Kubernetes YAML files | Pros of using a declarative structure, YAML files are needed to deploy the application | Knowledge Check | 2 | Yes |
+| 6 | Deploy an application using YAML files | Deploy the written files to the cluster | Exercise | 2, 3 | No, joined with 5 |
+| 7 | Expose the application to the Web | The application must be exposed for other users to use | Exercise | 3 | Yes |
 
 ## Outline the units
 
