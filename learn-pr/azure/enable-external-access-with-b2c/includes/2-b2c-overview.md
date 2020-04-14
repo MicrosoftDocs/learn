@@ -8,7 +8,7 @@ Here, you'll discover why you should use Azure Active Directory B2C (Azure AD B2
 
 Azure AD B2C is a service that you use to manage customer identities and their access to your applications. The service can support millions of users. Use Azure AD B2C to securely authenticate your customers by using their preferred identity providers. Azure AD B2C can handle billions of authentications per day. Use the service to monitor for, and automatically take care of, threats like brute-force and denial-of-service attacks. Azure AD B2C integrates with other services, such as Application Insights. Use this integration to improve your application's security and user experience.
 
-### Configure user journeys through policies
+### Configure user journeys by using policies
 
 A user journey is the path that you want people to take in your application to achieve their goal. For example, a user might want to make a new account or update their profile. You use policies in Azure AD B2C to configure user journeys. Policies help you detail journeys like profile creation, sign-in, or account editing for users. Azure AD B2C comes with preconfigured policies called *user flows* that control how people interact with your application.
 
