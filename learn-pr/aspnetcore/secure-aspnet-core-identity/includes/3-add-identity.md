@@ -108,8 +108,7 @@ This NuGet package provides EF Core with knowledge of how to interact with a Pos
             services.AddDbContext<ContosoPetsAuth>(options =>
                 options.UseNpgsql(connBuilder.ConnectionString));
 
-            services.AddDefaultIdentity<IdentityUser>(options =>
-                    options.SignIn.RequireConfirmedAccount = true)
+            services.AddDefaultIdentity<IdentityUser>()
                 .AddDefaultUI()
                 .AddEntityFrameworkStores<ContosoPetsAuth>();
         });
@@ -134,8 +133,7 @@ This NuGet package provides EF Core with knowledge of how to interact with a Pos
             services.AddDbContext<ContosoPetsAuth>(options =>
                 options.UseSqlServer(connBuilder.ConnectionString));
 
-            services.AddDefaultIdentity<IdentityUser>(options =>
-                    options.SignIn.RequireConfirmedAccount = true)
+            services.AddDefaultIdentity<IdentityUser>()
                 .AddDefaultUI()
                 .AddEntityFrameworkStores<ContosoPetsAuth>();
         });
@@ -252,7 +250,7 @@ This NuGet package provides EF Core with knowledge of how to interact with a Pos
     * Generate code called a migration to create and update the database that supports the Identity entity model.
     * Execute migrations against an existing database.
     * Be invoked via `dotnet ef` in this module.
-    
+
 1. Create and run an EF Core migration to update the database:
 
     ```dotnetcli
@@ -293,25 +291,25 @@ This NuGet package provides EF Core with knowledge of how to interact with a Pos
 
     ```console
     info: Microsoft.EntityFrameworkCore.Database.Command[20101]
-        Executed DbCommand (36ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-        CREATE TABLE [AspNetUsers] (
-            [Id] nvarchar(450) NOT NULL,
-            [UserName] nvarchar(256) NULL,
-            [NormalizedUserName] nvarchar(256) NULL,
-            [Email] nvarchar(256) NULL,
-            [NormalizedEmail] nvarchar(256) NULL,
-            [EmailConfirmed] bit NOT NULL,
-            [PasswordHash] nvarchar(max) NULL,
-            [SecurityStamp] nvarchar(max) NULL,
-            [ConcurrencyStamp] nvarchar(max) NULL,
-            [PhoneNumber] nvarchar(max) NULL,
-            [PhoneNumberConfirmed] bit NOT NULL,
-            [TwoFactorEnabled] bit NOT NULL,
-            [LockoutEnd] datetimeoffset NULL,
-            [LockoutEnabled] bit NOT NULL,
-            [AccessFailedCount] int NOT NULL,
-            CONSTRAINT [PK_AspNetUsers] PRIMARY KEY ([Id])
-        );
+          Executed DbCommand (98ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+          CREATE TABLE [AspNetUsers] (
+              [Id] nvarchar(450) NOT NULL,
+              [UserName] nvarchar(256) NULL,
+              [NormalizedUserName] nvarchar(256) NULL,
+              [Email] nvarchar(256) NULL,
+              [NormalizedEmail] nvarchar(256) NULL,
+              [EmailConfirmed] bit NOT NULL,
+              [PasswordHash] nvarchar(max) NULL,
+              [SecurityStamp] nvarchar(max) NULL,
+              [ConcurrencyStamp] nvarchar(max) NULL,
+              [PhoneNumber] nvarchar(max) NULL,
+              [PhoneNumberConfirmed] bit NOT NULL,
+              [TwoFactorEnabled] bit NOT NULL,
+              [LockoutEnd] datetimeoffset NULL,
+              [LockoutEnabled] bit NOT NULL,
+              [AccessFailedCount] int NOT NULL,
+              CONSTRAINT [PK_AspNetUsers] PRIMARY KEY ([Id])
+          );
     ```
 
     ::: zone-end
@@ -375,7 +373,7 @@ This NuGet package provides EF Core with knowledge of how to interact with a Pos
     <partial name="_LoginPartial" />
     ```
 
-    The preceding markup renders the `_LoginPartial` partial view within the header of any page that uses the default layout. `_LoginPartial` was added by the Identity scaffold. This partial view presents the user with **Log in** and **Register** links if the user isn't signed in.
+    The preceding markup renders the `_LoginPartial` partial view within the header of any page that uses the default layout. `_LoginPartial` was added by the Identity scaffold. This partial view presents the user with **Login** and **Register** links if the user isn't signed in.
 
 1. [!INCLUDE[dotnet build command](../../includes/dotnet-build-no-restore-command.md)]
 
