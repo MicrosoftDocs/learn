@@ -31,6 +31,7 @@ In this unit, Identity will be added to the existing ASP.NET Core Razor Pages pr
 
     ```dotnetcli
     dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design --version 3.1.2 && \
+        dotnet add package Microsoft.AspNetCore.Identity.EntityFrameworkCore --version 3.1.3 && \
         dotnet add package Microsoft.AspNetCore.Identity.UI --version 3.1.3 && \
         dotnet add package Microsoft.EntityFrameworkCore.Design --version 3.1.3 && \
         dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 3.1.3
@@ -184,7 +185,7 @@ This NuGet package provides EF Core with knowledge of how to interact with a Pos
     ::: zone pivot="sql"
 
     ```csharp
-    using System.Data.SqlClient;
+    using Microsoft.Data.SqlClient;
     ```
 
     The preceding code resolves the reference to the `SqlConnectionStringBuilder` class in the `Configure` method.
