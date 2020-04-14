@@ -24,5 +24,6 @@ products:
 - azure-language-understanding
 - azure-bot-service
 modules:
+- learn.wwl.build-faq-chatbot-qna-maker-azure-bot-service
 trophy:
   uid: learn.data-ai.create-bots-with-the-azure-bot-service.trophy
