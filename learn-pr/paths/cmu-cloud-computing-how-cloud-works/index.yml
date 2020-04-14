@@ -45,7 +45,7 @@ modules:
 - learn.cmu-cloud-computing.how-cloud-works.cmu-virtualize-computing-power
 - learn.cmu-cloud-computing.how-cloud-works.cmu-virtualize-memory
 - learn.cmu-cloud-computing.how-cloud-works.cmu-virtualize-input-output
-- learn.cmu-cloud-computing.how-cloud-works.cmu-virtualization-case-studies
+#- learn.cmu-cloud-computing.how-cloud-works.cmu-virtualization-case-studies
 - learn.cmu-cloud-computing.how-cloud-works.cmu-storage-network-virtualization
 trophy:
   uid: learn.cmu-cloud-computing.how-cloud-works.trophy
