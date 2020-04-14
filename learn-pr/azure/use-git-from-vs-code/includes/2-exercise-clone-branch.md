@@ -41,7 +41,7 @@ You need the URL of your fork to clone it to your local hard drive. Near the top
 
 In the **Clone with HTTPS** window, select the clipboard icon next to the URL to copy the URL to the clipboard.
 
-:::image type="content" source="../media/2-exercise-clone-branch-02.png" alt-text="Screenshot of the GitHub repository webpage, with focus on the "Clone or download" button and the clipboard icon.":::
+:::image type="content" source="../media/2-exercise-clone-branch-02.png" alt-text="Screenshot of the GitHub repository webpage, with focus on the Clone or download button and the clipboard icon.":::
 
 ### Step 3 - Clone the forked project to your local development environment
 
