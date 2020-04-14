@@ -97,17 +97,17 @@ namespace Qrng {
 Don't worry if you don't fully understand the content of the operation, we will
 explain it in more detail in the next unit. But let's comment here what each
 command is doing:
-1. In Q# to obtain a qubit that we can use we need to "ask" the computer for
-   them with the block `using` in which we specify how many qubits we need and
-   its name. In our case we just need one qubit. Every qubit we borrow with the
+1. In Q#, to obtain qubits that we can use we need to "ask" the computer for
+   them with the block `using`. In it which we specify how many qubits we need and
+   their name. In our case we just need one qubit. Every qubit we borrow with the
    command `using` starts by defect in the `0` state.
 2. We can put our qubit in a quantum superposition by applying the `H` operation
-   from the Intrinsic library. To apply the we only need to specify the
+   from the Intrinsic library. To apply it we only need to specify the
    target qubit inside the brackets.
 3. After throwing our qubit in a quantum superposition we can measure the state
-   using the `M` operation from the Intrinsic library and store the `Result` in
-   a variable. We store the state in the variable `r`.
-4. In Q#, at the end of every operation we need to make sure that any used qubit
-   is left in the same way we encounter it: in the state `0`. To do it we can
+   using the `M` operation from the Intrinsic library. We store the state in the 
+   variable `r`.
+4. In Q#, at the end of every operation we need to make sure that any qubit used
+   is left in the same way we found it: in the state `0`. To do it we can
    use the `Reset(q)` operation from the Intrinsic library.
 5. We return the result of our measurement, this is, a random bit.
