@@ -1,4 +1,4 @@
-You can use Durable Functions to orchestrate a long-running workflow as a set of activities. You can map each step in the process to a function type, and each task to an activity. Having an automated process means you don't have to worry about manually monitoring or escalating a task if isn't done. 
+You can use Durable Functions to orchestrate a long-running workflow as a set of activities. You can map each step in the process to a function type, and each task to an activity. Having an automated process means you don't have to worry about manually monitoring or escalating a task if it isn't done. 
 
 As we continue to think about automating our proposal approval process, we need to consider the cases when a step in the process does not complete in time and needs to be escalated. For example: what if we need a manager's approval for a particular size of proposal, but the manager is late with a response?
 
