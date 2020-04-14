@@ -1,0 +1,35 @@
+### YamlMime:Module
+uid: learn.qdk.build-a-quantum-random-number-generator
+metadata:
+  title: Build a Quantum Random Number Generator with the Quantum Development Kit
+  description: Learn how to use the Quantum Development Kit to combine quantum and classical programs to create a quantum random number generator.
+  ms.date: 04/14/2020
+  author: geduardo
+  ms.author: v-edsanc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-quantum
+title: Build a Quantum Random Number Generator with the Quantum Development Kit
+summary: Learn how to use the Quantum Development Kit to combine quantum and classical programs to create a quantum random number generator.
+abstract: |
+  In this module you will:
+  - Learn to build a quantum random number generator with the QDK.
+  - Learn to combine Q# programs with a classical host program in Python.
+  - Learn to put qubits in superposition with Q#.
+  - Learn to perform qubit measurements with the QDK.
+prerequisites: To have installed the Microsoft Quantum Development Kit and Visual Studio Code.
+iconUrl: /learn/achievements/data-ai/TODO.svg
+levels:
+- beginner
+roles:
+- scientist
+- quantum-engineer
+- computer-scientist
+- student
+products:
+- Quantum Development Kit
+units:
+- learn.qdk.build-a-quantum-random-number-generator.introduction
+- learn.qdk.build-a-quantum-random-number-generator.knowledge-check
+- learn.qdk.build-a-quantum-random-number-generator.summary
+badge:
+  uid: learn.qdk.build-a-quantum-random-number-generator.badge

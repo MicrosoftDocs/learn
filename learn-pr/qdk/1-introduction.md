@@ -1,3 +1,5 @@
+# Introduction to the QDK
+
 The Microsoft's Quantum Development Kit (QDK) comprises a wide range of tools which give developers everything they need to start writing quantum programs. The QDK uses the programming language Q#, domain-specific programming language used for expressing quantum algorithms. It provides quantum programmers a framework to focus on the algorithms without having to worry about technical details like gate sequence optimization or the physical implementation of a quantum computer.
 
 Video showing the interactivity of QDK. Explaining what people expect from this modules, the process of downloading and installing QDK and running a sample program, e.g. "you can make a quantum random number generator", "explore entanglement", "do a Grover search", "estimate the ground state energies of molecular hydrogen", "set up a quantum machine learning algorithm", etc. 
