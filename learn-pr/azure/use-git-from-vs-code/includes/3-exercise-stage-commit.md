@@ -1,8 +1,8 @@
-If you've worked with Git, you've probably relied heavily on the `git status` command to help understand what files are unstaged or staged. You've also likely relied on `git commit -m "<Your commit message>"` to commit staged files.  Visual Studio Code's Git integration helps accelerate these and other activities.
+If you've worked with Git, you've probably relied heavily on the `git status` command to help understand which files are unstaged or staged. You've also likely relied on `git commit -m "<Your commit message>"` to commit staged files. The Visual Studio Code integration with Git helps accelerate these and other activities.
 
 ## What you'll accomplish in this exercise
 
-Having made a change to the source code in the preceding exercise, you now have an unstaged change that you need to commit.  Next, you want to push the new branch with your new commit to your forked repository. To do these things, you'll use Visual Studio Code's integrated Git tooling.
+Having made a change to the source code in the preceding exercise, you now have an unstaged change that you need to commit. After that, you want to push the new branch with your new commit to your forked repository. You'll do these things by using Visual Studio Code's integrated Git tooling.
 
 ### Step 1 - Open the Source Control view to view unstaged changes
 
@@ -12,35 +12,35 @@ In Visual Studio Code, select the Source Control icon in the left column.  The S
 
 You can see that your *index.js* file is listed under **Changes**.  To the right of the file name are four icons:
 
-- **File icon**: Select to open and display the file in the main area.
+- **File icon**: Select to open and display the file in the main editor pane.
 - **Counterclockwise arrow icon**: Select to discard changes and revert the file to its state in the previous commit.
 - **Plus sign (+) icon**: Select to stage your changes to be committed.
 - **"M" icon**: Indicates that this file existed previously and has been modified.
 
 ### Step 2 - Stage the changed file
 
-Select the **Plus sign** (**+**) (stage changes) icon to move the file to a new section titled **Staged Changes**.
+Select the **plus sign** (**+**) to move the file to a new section titled **Staged Changes**.
 
 ### Step 3 - Unstage the changed file, and stage it again
 
-To unstage the changed file, under **Staged Changes**, select the **Minus sign** (**-**) next to the *index.js* file.  This action moves the file back to the unstaged **Changes** section. You might this useful if you mistakenly stage a change that you intended for a different commit.
+To unstage the changed file, under **Staged Changes**, select the **minus sign** (**-**) next to the *index.js* file.  This action moves the file back to the unstaged **Changes** section. You might find this useful if you mistakenly stage a change that was intended for a different commit.
 
-To restage the change, repeat step 2.
+To restage the change, repeat Step 2.
 
 ### Step 4 - Create a commit
 
 The Source Control pane displays several icons at the upper right. To begin committing your changes, select the **checkmark** icon.
 
-You want to add a commit message to your commit.  In the text box beneath the checkmark icon, enter the following message:
+You want to add a commit message to your commit.  In the text box below the **checkmark** icon, enter the following message:
 
 ```
 updated response object
 ```
 
 > [!NOTE]
-> You'll receive a warning if you use more than 50 characters in the subject line (which is a commonly accepted limit).
+> You'll receive a warning if the subject line contains more than 50 characters, the commonly accepted limit.
 
-To complete the commit, select <kbd>Ctrl+Enter</kbd> or click the checkmark icon.
+To complete the commit, select <kbd>Ctrl+Enter</kbd> or select the checkmark icon.
 
 ### Step 5 - Push the changes to your repository
 
@@ -75,4 +75,4 @@ Several important ideas were covered in this exercise:
 - To stage your changes, open the **Source Control** view, and then select the plus sign (+) next to the file you want to stage.
 - To unstage your changes, select the minus sign (-) next to the file you want to unstage.
 - To commit your changes to your forked repository, select the checkmark icon or select the keyboard shortcut <kbd>Ctrl+Enter</kbd>.  To add a commit message, type it in the box below the checkmark.
-- To push your changes, select the **Synchronize Changes** icon in the Status Bar.  This action performs a `git pull` and `git push` to your forked repository. Displayed next to the icon are the number of commits that will be pulled and pushed.
+- To push your changes, select the **Synchronize Changes** icon in the Status Bar.  This action performs a `git pull` and a `git push` to your forked repository. Displayed next to the icon are the number of commits that will be pulled and pushed.
