@@ -1,104 +1,104 @@
-As we stated in the introduction, Visual Studio Code provides tight source control integration with Git by default and with other source code management (SCM) providers through extensions.   
+Visual Studio Code provides tight source-control integration with Git, by default, and with other source code management (SCM) providers through Visual Studio Code extensions.   
 
-If you're an avid user of Visual Studio Code, it's possible you have kept Git bash open in a separate window, or used Visual Studio Code's integrated terminal window to type Git commands.  While this technique will work, you may come to realize that you can enhance your workflow by learning more about what Visual Studio Code has to offer.  Visual Studio Code provides lots of visual cues, helpful prompts, and shortcuts to common git features tucked away and available using common tools like the Command Palette, the Status Bar, and the Source Control view.
+If you're an avid user of Visual Studio Code, it's possible that you've either kept Git Bash open in a separate window or used the Visual Studio Code integrated terminal window to enter Git commands. Although this technique works, you might want to improve your workflow efficiency by learning more about other tools that Visual Studio Code has to offer.  Visual Studio Code provides many visual cues, helpful prompts, and shortcuts to common Git features that are tucked away and available when you use common tools such as the Command Palette, the Status Bar, and the Source Control view.
 
 ## What you'll accomplish in this exercise
 
-In this first exercise, you'll simulate the process of contributing to an open-source library.  This will provide the perfect context for using Visual Studio Code's Git integration.  You'll see how each tool and feature plays a part in creating a local clone and making your first change to the project's code.  In the next exercise, we'll stage and commit the changes and push to your remote fork.
+In this first exercise, you'll simulate the process of contributing to an open-source library.  This provides the perfect context for using the Visual Studio Code integration with Git.  You'll see how each tool and feature plays a part in creating a local clone and making your first change to your project code.  In the next exercise, you'll stage and commit the changes and then push them to your remote fork.
 
 > [!IMPORTANT]
-> To continue with this exercise, you will need to observe the requirements for this module: Git should be installed locally, as well as Visual Studio Code.  Also, you'll need a GitHub account.  Finally, this exercise assumes you already know how to use Git.  The intent is to demonstrate Git integration in Visual Studio Code.
+> To continue with this exercise, you will need to observe the requirements for this module: both Git and Visual Studio Code should be installed locally.  Also, you'll need a GitHub account.  Finally, this exercise assumes that you already know how to use Git.  The intent of the exercise is to demonstrate Git integration in Visual Studio Code.
 
-### Step 1 - Create a fork of an open-source project in GitHub.
+### Step 1 - Create a fork of an open-source project in GitHub
 
-If you clone someone else's GitHub repository and make some changes, you'll find that you don't have permission to push those changes back to GitHub. The workflow for making contributions to other peoples' projects on GitHub is a little more complex than working directly in the project repository, and starts with creating a **fork**.
+If you clone someone else's GitHub repository and make some changes, you'll find that you don't have permission to push those changes back to GitHub. The workflow for making contributions to other people's projects on GitHub is a little more complex than working directly in the project repository. 
 
-A fork is a copy of a GitHub repository that is associated with your GitHub account. When you create a fork, you will be granted full permissions to push changes to it, even if you don't have those permissions on the original repository.
+It all starts with creating a *fork*.
 
-Once you've created a fork of the repository you want to contribute to, you can clone the fork repository to your computer, make the changes you want, then push them back to your fork. Then, you can ask the project maintainers to merge your changes into their repository by creating GitHub pull requests from your fork.
+A fork is a copy of a GitHub repository that's associated with your GitHub account. When you create a fork, you're granted full permissions to push changes to it, even if you don't have those permissions in the original repository.
 
-Creating a fork of a repository you want to contribute to is an important first step. Forking takes place entirely within GitHub, so we use the GitHub web interface to do it, not a tool on your development computer.
+After you've created a fork of the repository that you want to contribute to, you can clone that fork to your computer, make the changes you want, and then push them back to your fork. You can then ask the project maintainers to merge your changes from your fork into their repository by creating GitHub pull requests.
 
-First, log into your GitHub account.  If you don't already have an account, you should create one now.
+Creating a fork of the repository that you want to contribute to is an important first step. Forking takes place entirely within GitHub, so you use the GitHub web interface to do it, not a tool on your development computer.
 
-Next, navigate to:
+First, sign in to your GitHub account.  If you don't already have an account, you should create one now.
 
-[https://github.com/MicrosoftDocs/mslearn-use-git-from-vs-code](https://github.com/MicrosoftDocs/mslearn-use-git-from-vs-code)
+Next, go to the repository that we've named [mslearn-use-git-from-vs-code](https://github.com/MicrosoftDocs/mslearn-use-git-from-vs-code).
 
-We don't need to worry about what the code in this repository does, how it works, nor get it running locally since we're only interested in Visual Studio Code's Git integration.  This project contains code we can fork, clone, and modify.
+At this time, don't worry about what the code in this repository does or how it works, or try to get it running locally. In this exercise, you're interested only in learning about the Visual Studio Code integration with Git.  This project contains code that you can fork, clone, and modify.
 
-Next, select the Fork button near the upper right-hand corner of the web page.
+Next, select the **Fork** button near the top right of the webpage.
 
-![Screenshot of a GitHub repository web page with a callout highlighting the Fork button.](../media/2-exercise-clone-branch-01.png)
+![Screenshot of a GitHub repository webpage with a callout highlighting the Fork button.](../media/2-exercise-clone-branch-01.png)
 
-After a moment or two, the repository will be forked to your GitHub account.
+After a moment or two, the repository is forked to your GitHub account.
 
-### Step 2 - Copy the URL to your forked repository.
+### Step 2 - Copy the URL to your forked repository
 
-When you are working with a fork of a project repository, you usually want to perform the clone operation from the fork and not from the original repository. This automatically configures Git on your development computer to push your changes to the fork, where you have permissions to do so.
+When you're working with a fork of a project repository, you usually want to perform the clone operation from your own fork, not from the original repository. This automatically configures Git on your development computer to push your changes to the fork, where you have permissions to do so.
 
-You'll need the URL of your fork to clone it to your local hard drive. To copy the URL, select the green "Clone or download" button near the upper-right hand corner of the web page.  A dropdown will appear titled "Clone with HTTPS".  
+You need the URL of your fork to clone it to your local hard drive. Near the top right of the webpage for your fork, copy the URL by selecting the green **Clone or download** button.
 
-Select the clipboard icon next to the URL to copy the URL to your computer's clipboard.
+In the **Clone with HTTPS** window, select the clipboard icon next to the URL to copy the URL to the clipboard.
 
-:::image type="content" source="../media/2-exercise-clone-branch-02.png" alt-text="Screenshot of the GitHub repository web page with focus on the Clone or download button and the clipboard icon to copy the URL.":::
+:::image type="content" source="../media/2-exercise-clone-branch-02.png" alt-text="Screenshot of the GitHub repository webpage, with focus on the "Clone or download" button and the clipboard icon.":::
 
-### Step 3 - Clone the forked project to your local development environment.
+### Step 3 - Clone the forked project to your local development environment
 
-Launch Visual Studio Code.
+Open Visual Studio Code.
 
-In Windows, select <kbd>Ctrl+Shift+P</kbd> to open the Visual Studio Code Command Palette.
+Select <kbd>Ctrl+Shift+P</kbd> to open the **Command Palette**.
 
-Enter the word `clone`.  The dropdown option should list "Git: Clone" as the selected option.  Select <kbd>Enter</kbd>.
+In the Search box, enter **clone**.  The drop-down option should list **Git: Clone** as the selected option.  Select <kbd>Enter</kbd>.
 
-The Command Palette will prompt you to enter the "Repository URL".  Select <kbd>Ctrl+V</kbd> to paste the URL you copied in the previous step.  Select <kbd>Enter</kbd>.
-
-> [!NOTE]
-> The Command Palette provides access to many git features with helpful prompts.  If you're curious as to what you can accomplish from the Command Palette, open it by selecting select <kbd>Ctrl+Shift+P</kbd>, then type `git`.  You'll see a long list containing dozens of commands.
-
-Next, the Select Folder dialog will appear.  Choose the folder on your local hard drive where you want to store the files for the cloned repository.  Once you've navigated the file system, select the "Select Repository Location" button to continue.
-
-A dialog will appear in the lower right-hand corner asking if you would like to open the closed repository.  Choose "Open".
-
-You should now see all of the code files for the repository in Visual Studio Code's Explorer view.
+At the prompt, enter the repository URL by selecting <kbd>Ctrl+V</kbd>. This action pastes the URL that you copied from the **Clone with HTTPS** window in Step 2.  Select <kbd>Enter</kbd>.
 
 > [!NOTE]
-> You might see another dialog appear in the lower right-hand corner suggesting you install one or more Visual Studio Code extensions for the files in this workspace.  You can safely ignore this by selecting the dialog's `X` icon in the upper right-hand corner.
+> The Command Palette provides access to many Git features with helpful prompts.  If you're curious about what you can accomplish from the Command Palette, open it by selecting <kbd>Ctrl+Shift+P</kbd>, then enter **git** to display a list containing dozens of commands.
 
-### Step 3 - Create a branch for your changes.
+Next, the **Select Folder** window is displayed.  Choose the folder on your local hard drive where you want to store the files for the cloned repository.  
 
-The Status Bar provides a host of functionality depending on the extensions you have loaded and what you're working on.  The Status Bar features some handy Git information and functionality.  There are two parts:
+Select the **Select Repository Location** button.
 
-- On the left, you see the name of current working branch.  If you modify any tracked files in the working branch, it will add an asterisk symbol `*` next to the branch name.  
+A windows is displayed at the lower right asking whether you want to open the closed repository.  Select **Open**.
+
+All the repository's code files are displayed in the Visual Studio Code **Explorer** view.
+
+> [!NOTE]
+> An additional window might open at the lower right, suggesting that you install one or more Visual Studio Code extensions for the files in this workspace.  You can safely dismiss it for now by selecting the **Close** button (**X**).
+
+### Step 3 - Create a branch for your changes
+
+The **Status Bar**, displayed at the bottom of the Visual Studio Code window, provides a host of functionality, depending on the extensions you've loaded and what you're working on.  The Status Bar features some handy Git information and functionality. It displays two parts:
+
+- On the left is the name of the current working branch.  If you modify any tracked files in the working branch, the Status Bar adds an asterisk symbol (*) next to the branch name.  
 
 ![Screenshot of the Status Bar with an arrow pointing to the asterisk next to the working branch name.](../media/2-exercise-clone-branch-03.png)
 
-When you stage those changes, the asterisk changes into a plus symbol `+`.  Once you commit staged changes, the plus symbol disappears and you only see the branch name.
+When you stage your changes, the asterisk becomes a plus sign (+).  After you commit your staged changes, the plus sign disappears, and only the branch name is displayed.
 
-- On the right, you see an icon that switches from a circle with arrows ("Synchronize Changes") to a cloud with an arrow pointing upwards ("Publish Changes").
+- On the right is an icon that switches from a circle with arrows ("Synchronize Changes") to a cloud with an arrow pointing upward ("Publish Changes").
 
-The following image shows you what the "Synchronize Changes" icon looks like:
+The "Synchronize Changes" icon is displayed in the following image:
 
 ![Screenshot of the Status Bar with an arrow pointing to the Synchronize Changes icon.](../media/2-exercise-clone-branch-04.png)
 
 And the following image shows you what the "Publish Changes" icon looks like:
 
-![Screenshot of the Status Bar with an arrow pointing to the Publish Changes icon.](../media/2-exercise-clone-branch-05.png)
+![Screenshot of the Status Bar with an arrow pointing to the Synchronize Changes icon.](../media/2-exercise-clone-branch-05.png)
 
-To create a branch, click the branch name (currently set to `master`) in the Status Bar.  This will pop open the Command Palette and allow you to either:
-- Switch to an existing branch
-- Create a new branch
+To create a branch, select the branch name (currently set to **master**) in the Status Bar.  This opens the **Command Palette** and allows you to either switch to an existing branch or create a new branch.
 
-Start typing the name of the new branch: `update-response`.  When you do, you'll notice that the existing branch names disappear.
+Start typing the name of the new branch, **update-response**.  As you type, notice that the existing branch names disappear.
 
-After typing `update-response`, select <kbd>Enter</kbd>.  The Command Palette will prompt you to select the branch you will base your new branch on.  Select `master`.
+After you type **update-response**, select <kbd>Enter</kbd>.  The Command Palette prompts you to select the branch that you will base your new branch on.  Select **master**.
 
-The Status Bar should now display `update-response` indicating the branch you're now working on.
+The Status Bar should now display **update-response**, indicating the branch you're now working on.
 
 
-### Step 4 - Make a change to the source code.
+### Step 4 - Make a change to the source code
 
-In the Explorer View, expand the `node/routes` folder and select the `index.js` file so that it is displayed in the code editor area of Visual Studio Code.
+In the Explorer View, expand the *node/routes* folder and select the *index.js* file so that it is displayed in the code editor area of Visual Studio Code.
 
 Update the code example to match the following passage of code:
 
@@ -116,32 +116,32 @@ module.exports = router;
 ```
 
 > [!IMPORTANT]
-> Resist the urge to save your changes for now.  We want to reserve that task for the next step so we can observe how Visual Studio Code provides visual feedback that your code is in a state that needs to be staged and committed.
+> Resist the urge to save your changes for now. You want to reserve that task for the next step so that you can observe how Visual Studio Code provides visual feedback when your code is in a state that needs to be staged and committed.
 
-### Step 5 - Observe the current state of your branch in the status bar.
+### Step 5 - Observe the current state of your branch in the status bar
 
-If you pay close attention, you'll notice several visual clues indicating a change of state to your files in Visual Studio Code.  As you're editing the file, a small blue icon will appear on the Explorer View icon in the left column.  The number indicates how many files have unsaved changes.
+If you pay close attention, you'll notice several visual clues that indicate a change of state to your files in Visual Studio Code.  As you're editing the file, a small blue circle with a number appears on the Explorer View icon in the left column.  The number indicates how many files have unsaved changes.
 
-Once you save your changes to the file using <kbd>Ctrl+S</kbd>, the blue icon on the Explorer View will disappear.  However, a moment later, a new blue icon featuring a clock will appear over the Source Control View's icon in the left column.  This indicates that Visual Studio Code is working with Git behind the scenes to understand what just changed.
+When you save your changes to the file by using <kbd>Ctrl+S</kbd>, the blue circle disappears.  However, a moment later, a new blue icon featuring a clock will appear over the Source Control View icon in the left column.  This indicates that Visual Studio Code is working with Git behind the scenes to understand what just changed.
 
-After a moment, the clock icon will disappear, and a new blue icon with a number will appear indicating the number of pending changes (unstaged or staged changes) are ready to be committed.  The number will increment as you make more changes to the files.
+After a moment, the clock icon disappears, and a new blue icon with a number appears, indicating the number of pending changes (unstaged or staged) that are ready to be committed.  The number increments as you make more changes to the files.
 
-:::image type="content" source="../media/2-exercise-clone-branch-06.png" alt-text="Screenshot of the Status Bar with an arrow pointing to the Publish Changes icon.":::
+:::image type="content" source="../media/2-exercise-clone-branch-06.png" alt-text="Screenshot of the Source Control icon with a circled number indicating the number of changed files ready to commit.":::
 
-This corresponds to the appearance of the asterisk symbol `*` in the Status Bar next to the branch name.
+This number corresponds to the appearance of the asterisk symbol (*) in the Status Bar next to the branch name.
 
-Finally, after you commit your changes, this icon will disappear.  We'll do that in the next exercise.
+Finally, after you commit your changes, this icon disappears.  You'll commit the changes in the next exercise.
 
 > [!NOTE]
-> If you ever forget what any symbol means and are unsure about what to do next, you can always open Terminal from the View menu, and perform `git status` to understand the current state of your branch.  You always have the option of using a combination of command line git operations and Visual Studio Code's integrated Git functionality together.
+> If you ever forget what any symbol means and are unsure about what to do next, you can select **Terminal** from the **View** menu, and run `git status` to understand the current state of your branch.  You can use a combination of command-line Git operations and Visual Studio Code functionality integrated with Git.
 
 ## Recap
 
 There are a few important takeaways from this exercise:
 
-- To quickly clone a repository, open the Command Palette (<kbd>Ctrl+Shift+P</kbd>) and enter `clone`.
-- To quickly see which branch you're working with, glance at the Status Bar.
-- To quickly switch to a new branch or create a new branch, click the current branch name in the Status Bar.
-- To quickly perform a `git pull` and `git push` on an existing branch, click the "Synchronize Changes" button.
-- To quickly perform a `git push` on a new branch, click the "Publish Changes" button.
-- To quickly see how many unstaged or staged changes there are, glance at the blue icon over the Source Control icon in the left column.
+- To quickly clone a repository, open the Command Palette by selecting <kbd>Ctrl+Shift+P</kbd> and entering **clone**.
+- To quickly see which branch you're working with, look at the Status Bar.
+- To quickly switch to a new branch or create a new branch, select the current branch name in the Status Bar.
+- To quickly run `git pull` and `git push` commands on an existing branch, select the **Synchronize Changes** button.
+- To quickly run a `git push` command on a new branch, select the **Publish Changes** button.
+- To quickly see how many unstaged or staged changes there are, look at the blue numbered circle over the Source Control icon in the left column.
