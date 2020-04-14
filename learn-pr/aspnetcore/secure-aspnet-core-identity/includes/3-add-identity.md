@@ -17,8 +17,8 @@ In this unit, Identity will be added to the existing ASP.NET Core Razor Pages pr
     The following output appears:
 
     ```console
-    You can invoke the tool using the following command: dotnet-aspnet-codegenerator
-    Tool 'dotnet-aspnet-codegenerator' (version '<VERSION>') was successfully installed. Entry is added to the manifest file /home/<user>/contoso-pets/src/ContosoPets.Ui/.config/dotnet-tools.json.
+    You can invoke the tool from this directory using the following commands: 'dotnet tool run dotnet-aspnet-codegenerator' or 'dotnet dotnet-aspnet-codegenerator'.
+    Tool 'dotnet-aspnet-codegenerator' (version '3.1.2') was successfully installed. Entry is added to the manifest file /home/<USER>/contoso-pets/src/ContosoPets.Ui/.config/dotnet-tools.json.
     ```
 
     The scaffolder is a .NET Core tool that will:
@@ -36,6 +36,7 @@ In this unit, Identity will be added to the existing ASP.NET Core Razor Pages pr
         dotnet add package Microsoft.AspNetCore.Identity.UI --version 3.1.3 && \
         dotnet add package Microsoft.AspNetCore.Identity.EntityFrameworkCore --version 3.1.3 && \
         dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL --version 3.1.3 && \
+        dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 3.1.3 && \
         dotnet add package Microsoft.EntityFrameworkCore.Design --version 3.1.3
     ```
 
@@ -104,8 +105,8 @@ In this unit, Identity will be added to the existing ASP.NET Core Razor Pages pr
             var connBuilder = new NpgsqlConnectionStringBuilder(
                 context.Configuration.GetConnectionString("ContosoPetsAuthConnection"))
             {
-                Username = context.Configuration["DbUsername"];
-                Password = context.Configuration["DbPassword"];
+                Username = context.Configuration["DbUsername"],
+                Password = context.Configuration["DbPassword"]
             };
 
             services.AddDbContext<ContosoPetsAuth>(options =>
@@ -149,10 +150,21 @@ In this unit, Identity will be added to the existing ASP.NET Core Razor Pages pr
 
     * The Azure Key Vault configuration provider is implicitly used to retrieve the database username and password:
 
+        ::: zone pivot="pg"
+
+        Username = context.Configuration["DbUsername"],
+        Password = context.Configuration["DbPassword"]
+
+        ::: zone-end
+
+        ::: zone pivot="sql"
+
         ```csharp
-        UserID = context.Configuration["DbUsername"];
-        Password = context.Configuration["DbPassword"];
+        UserID = context.Configuration["DbUsername"],
+        Password = context.Configuration["DbPassword"]
         ```
+
+        ::: zone-end
 
     * The database username and password are injected into the connection string stored in *:::no-loc text="appsettings.json":::*.
     * The EF Core database context class, named `ContosoPetsAuth`, is configured with the appropriate connection string.
@@ -232,7 +244,7 @@ In this unit, Identity will be added to the existing ASP.NET Core Razor Pages pr
 
     ```console
     You can invoke the tool from this directory using the following commands: 'dotnet tool run dotnet-ef' or 'dotnet dotnet-ef'.
-    Tool 'dotnet-ef' (version '3.1.3') was successfully installed. Entry is added to the manifest file /home/<user>/contoso-pets/src/ContosoPets.Ui/.config/dotnet-tools.json.
+    Tool 'dotnet-ef' (version '3.1.3') was successfully installed. Entry is added to the manifest file /home/<USER>/contoso-pets/src/ContosoPets.Ui/.config/dotnet-tools.json.
     ```
 
     The migration tool is a .NET Core tool that will:
