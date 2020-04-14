@@ -1,0 +1,36 @@
+### YamlMime:Module
+uid: learn.azure-well-architected-cost-optimization
+metadata:
+  title: Azure Well Architected - Cost optimization
+  description: Learn how to design an Azure architecture that is efficient, eliminates waste, and gives you full visibility into what's happening in your environment.
+  ms.date: 05/19/2020
+  author: jboeshart 
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Azure Well Architected - Cost optimization
+summary: Learn how to design an Azure architecture that is cost- and operationally-efficient, eliminates waste, and gives you full visibility into what's happening in your environment.
+abstract:  | 
+  In this module, you will:
+    - Maximize the efficiency of your cloud environment
+    - Use monitoring and analytics to gain operational insights
+    - Use automation to reduce effort and error
+prerequisites: None
+iconUrl: /learn/achievements/azure-well-architected-cost-optimization.svg
+levels:
+- intermediate
+roles:
+- solution-architect
+products:
+- azure
+- azure-cost-management
+- azure-advisor
+- azure-monitor
+units:
+- learn.azure-well-architected-cost-optimization.1-introduction
+- learn.azure-well-architected-cost-optimization.2-maximize-efficiency-of-cloud-spend
+- learn.azure-well-architected-cost-optimization.3-use-monitoring-and-analytics-to-gain-operational-insights
+- learn.azure-well-architected-cost-optimization.4-use-automation-to-reduce-effort-and-error
+- learn.azure-well-architected-cost-optimization.5-summary
+badge:
+  uid: learn.azure-well-architected-cost-optimization.badge

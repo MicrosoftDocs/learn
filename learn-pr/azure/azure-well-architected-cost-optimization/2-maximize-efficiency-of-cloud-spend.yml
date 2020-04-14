@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-well-architected-cost-optimization.2-maximize-efficiency-of-cloud-spend
+title: Maximize efficiency of cloud spend
+metadata:
+  title: Maximize efficiency of cloud spend
+  description: In this unit, we'll discuss how to maximize the efficiency of your cloud expenditures
+  ms.date: 05/19/2020
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 15
+content: |
+  [!include[](includes/2-maximize-efficiency-of-cloud-spend.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: 'Which of the next items is the best candidate for a reserved instance?'
+    choices:
+    - content: 'A web application deployed on Azure App Service.'
+      isCorrect: false
+      explanation: 'Azure App Service is a PaaS service, reserved instances are a feature for select compute services.'
+    - content: 'A non-production virtual machine that is automatically shut down in off-hours when not in use.'
+      isCorrect: false
+      explanation: 'Since this virtual machine won''t run the majority of the time it won''t fully use the instance reservation, and isn''t a good candidate for a reserved instance.'
+    - content: 'An ExpressRoute circuit.'
+      isCorrect: false
+      explanation: 'ExpressRoute is a network service, reserved instances are a feature for select compute services.'
+    - content: 'A database server for an HR system for a global business.'
+      isCorrect: true
+      explanation: 'Because of the criticality and global nature of this system, it''s likely that it would be running the majority of the time, making it a great candidate for a reserved instance.'
+
+  - content: 'When do compute costs associated with a VM stop accruing?'
+    choices:
+    - content: 'When you shut down the virtual machine from inside the OS'
+      isCorrect: false
+      explanation: 'If you shut down the OS of the virtual machine, it''s still allocated on the Azure platform and will continue to accrue compute costs.'
+    - content: 'When you click the Stop button in the Azure portal.'
+      isCorrect: true
+      explanation: 'Clicking the Stop button will deallocate the virtual machine from the Azure platform and it will no longer accrue compute costs.'
