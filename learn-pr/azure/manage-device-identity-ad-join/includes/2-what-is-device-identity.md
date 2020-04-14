@@ -1,12 +1,8 @@
-Device identity in Azure helps you control the devices you add to your organization's active directory, and the data, resources, and assets they can access.
-
-Your organization wants to add another layer of device-level security. You want to understand the meaning of device identity. You also need to know how to build up details of any device that's added to your network.
-
-In this unit, you'll learn about device identity, the registration options, and how they apply to various devices. You'll see how you can apply condition access to improve access control with your devices. Finally, you'll look at the benefits, and the considerations, of using device identity in Azure.
+In this unit, you'll learn about device identity, the registration options, and how they apply to various devices. You'll see how you can apply conditional access to improve access control with your devices. Finally, you'll look at the benefits, and the considerations, of using device identity in Azure.
 
 ## What is device identity?
 
-Device identity management provides a framework to implement device-based conditional access. You can use a device-based conditional access policy to limit device access to your organization's assets.
+Device identity in Azure Active Directory (Azure AD) helps you control the devices you add to your organization's Azure AD, and the data, resources, and assets they can access. It provides a framework to implement device-based conditional access. You can use a device-based conditional access policy to limit device access to your organization's assets.
 
 Today's work environment extends beyond the controllable boundaries of your on-premises workspace. Your staff can now work in different locations, not only in their home country or region but abroad. Users can access a broader range of technologies. Some are owned by your organization, but others aren't.
 
@@ -14,19 +10,19 @@ The challenge faced by IT staff is how to give users flexibility, while protecti
 
 Finding a balance between protecting assets and allowing users greater flexibility in the devices they use is at the heart of device identity. Every device you want to connect to your network must be known. Tools such as Microsoft Intune can enhance what's known about a device by ensuring compliance with organizational requirements.
 
-By combining Azure Active Directory (Azure AD) with single sign-on, users can access services and apps through any device. This outcome meets your organization's need to protect its resources and assets, and gives users the flexibility they want.
+By combining Azure AD with single sign-on, users can access services and apps through any device. This outcome meets your organization's need to protect its resources and assets, and gives users the flexibility they want.
 
 ## Device registration options
 
 You have three device registration options to add a device to your Azure AD: 
 
-- **Azure AD registered** devices fall into the Bring Your Own Device (BYOD) category. These devices are privately owned and use a personal or local Microsoft account. This method of device registration is the least restrictive as it supports devices running Windows 10, iOS, iPadOS, Android, and macOS. Device security is typically provided from a password, PIN, pattern, or Windows Hello.
+- **Azure AD registered** devices fall into the Bring Your Own Device (BYOD) category. These devices are usually privately owned or mobile devices that use a personal  Microsoft account or another local account. This method of device registration is the least restrictive as it supports devices running Windows 10, iOS, iPadOS, Android, and MacOS. Device security is typically provided from a password, PIN, pattern, or Windows Hello.
 
-- **Azure AD joined** devices are owned by your organization. Users access your cloud-based Azure AD through their work account. Device identities only exist in the cloud. This option is only available to Windows 10 devices. Security for this option uses either a password or Microsoft Hello.
+- **Azure AD joined** devices are owned by your organization. Users access your cloud-based Azure AD through their work account. Device identities only exist in the cloud. This option is only available to Windows 10 or Windows Server 2019 devices. Windows Server 2019 Server Core installation isn't supported. Security for this option uses either a password or Windows Hello.
 
 - **Hybrid Azure AD joined** is similar to AD joined. The devices are owned by the organization, and are signed in with an Azure AD account that belongs to that organization. Device identities exist in the cloud and on-premises. The hybrid option is better suited to organizations that need on-premises and the cloud access. This option supports Windows 7, 8.1 and 10, and Windows Server 2008 or better.
 
-## Conditional access
+## Conditional Access
 
 Conditional Access in Azure AD uses data from different sources, known as signals, validates them against a user-definable rules base, and chooses the best outcome to enforce your organization's security policies. Conditional Access enables device identity management but Conditional Access policies can be complex. At their simplest, these policies can be thought of as 'if-then' statements. If a device wants access to a resource, it must fulfill the condition to complete the request.
 
