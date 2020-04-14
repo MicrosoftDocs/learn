@@ -61,14 +61,19 @@ achievements:
   summary: Secure your Azure resources with Conditional Access
   iconUrl: /learn/achievements/secure-azure-resources-with-conditional-access.svg
 # HACK: Adding achievement from UID that was never meant to be published, but was earned by 280+ folks anyway.
-- uid: learn.cert-administer-infrastructure-resources-in-azure.trophy
+- uid: learn.cert.administer-infrastructure-resources-in-azure.trophy
   type: trophy
   title: Administer infrastructure resources in Azure
   summary: Administer infrastructure resources in Azure
   iconUrl: /learn/achievements/generic-trophy.svg
 # HACK: Adding achievement from UID that was never meant to be published, but was earned by 280+ folks anyway.
-- uid: learn.cert-administer-compute-resources-in-azure.trophy
+- uid: learn.cert.administer-compute-resources-in-azure.trophy
   type: trophy
   title: Administer compute resources in Azure
   summary: Administer compute resources in Azure
   iconUrl: /learn/achievements/generic-trophy.svg
+- uid: learn.data-ai.build-a-faq-chat-bot-with-qna-maker-and-azure-bot-service.badge
+  type: badge
+  title: Build an FAQ chatbot with QnA Maker and Azure Bot Service
+  summary: Build an FAQ chatbot with QnA Maker and Azure Bot Service
+  iconUrl: /learn/achievements/data-ai/build-a-faq-chat-bot-with-qna-maker-and-azure-bot-service.svg

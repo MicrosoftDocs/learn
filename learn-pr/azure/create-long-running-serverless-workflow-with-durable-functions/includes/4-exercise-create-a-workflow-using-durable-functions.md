@@ -40,7 +40,7 @@ In this exercise, you'll use the example scenario from the previous unit to lear
         |---|---|---|
         | **Enable Application Insights** | _No_ | Specifies that Application Insights will be disabled for this module. |
 
-1. Click **Review + create** and review the options that you configured. If you are satisfied with your options, click **Create** to provision and deploy the function app.
+1. Click **Review + create** and review the options that you configured. If you're satisfied with your options, click **Create** to provision and deploy the function app.
 
 1. Wait for the deployment to complete before continuing. This might take a few minutes.
 
@@ -77,7 +77,7 @@ Since we are creating JavaScript Durable Functions, we need to install the `dura
 
     1. Click **Save**.
 
-1. In the command prompt window, verify that you are in the **D:\home\site\wwwroot** folder, then run the following command:
+1. In the command prompt window, verify that you're in the **D:\home\site\wwwroot** folder, then run the following command:
 
     ```command-prompt
     npm install durable-functions
