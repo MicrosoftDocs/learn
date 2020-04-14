@@ -11,7 +11,7 @@ In this unit, Identity will be added to the existing ASP.NET Core Razor Pages pr
 1. Install the ASP.NET Core code scaffolder:
 
     ```dotnetcli
-    dotnet tool install dotnet-aspnet-codegenerator
+    dotnet tool install dotnet-aspnet-codegenerator --version 3.1.2
     ```
 
     The following output appears:
@@ -32,11 +32,11 @@ In this unit, Identity will be added to the existing ASP.NET Core Razor Pages pr
     ::: zone pivot="pg"
 
     ```dotnetcli
-    dotnet add packages Microsoft.VisualStudio.Web.CodeGeneration.Design
-    dotnet add package Microsoft.AspNetCore.Identity.UI
-    dotnet add package Microsoft.AspNetCore.Identity.EntityFrameworkCore
-    dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL
-    dotnet add package Microsoft.EntityFrameworkCore.Design 
+    dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design --version 3.1.2 && \
+        dotnet add package Microsoft.AspNetCore.Identity.UI --version 3.1.3 && \
+        dotnet add package Microsoft.AspNetCore.Identity.EntityFrameworkCore --version 3.1.3 && \
+        dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL --version 3.1.3 && \
+        dotnet add package Microsoft.EntityFrameworkCore.Design --version 3.1.3
     ```
 
     ::: zone-end
@@ -44,12 +44,12 @@ In this unit, Identity will be added to the existing ASP.NET Core Razor Pages pr
     ::: zone pivot="sql"
 
     ```dotnetcli
-    dotnet add packages Microsoft.VisualStudio.Web.CodeGeneration.Design
-    dotnet add package Microsoft.AspNetCore.Identity.UI
-    dotnet add package Microsoft.AspNetCore.Identity.EntityFrameworkCore
-    dotnet add package System.Data.SqlClient
-    dotnet add package Microsoft.EntityFrameworkCore.SqlServer
-    dotnet add package Microsoft.EntityFrameworkCore.Design 
+    dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design --version 3.1.2 && \
+        dotnet add package Microsoft.AspNetCore.Identity.UI --version 3.1.3 && \
+        dotnet add package Microsoft.AspNetCore.Identity.EntityFrameworkCore --version 3.1.3 && \
+        dotnet add package System.Data.SqlClient --version 4.8.1 && \
+        dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 3.1.3 && \
+        dotnet add package Microsoft.EntityFrameworkCore.Design --version 3.1.3
     ```
 
     ::: zone-end
@@ -107,7 +107,6 @@ In this unit, Identity will be added to the existing ASP.NET Core Razor Pages pr
                 Username = context.Configuration["DbUsername"];
                 Password = context.Configuration["DbPassword"];
             };
-
 
             services.AddDbContext<ContosoPetsAuth>(options =>
                 options.UseNpgsql(connBuilder.ConnectionString));
@@ -226,19 +225,19 @@ In this unit, Identity will be added to the existing ASP.NET Core Razor Pages pr
 1. Install the Entity Framework Core migration tool:
 
     ```dotnetcli
-    dotnet tool install dotnet-ef
+    dotnet tool install dotnet-ef --version 3.1.3
     ```
 
     The following output appears:
 
     ```console
     You can invoke the tool from this directory using the following commands: 'dotnet tool run dotnet-ef' or 'dotnet dotnet-ef'.
-    Tool 'dotnet-ef' (version '3.0.0') was successfully installed. Entry is added to the manifest file /home/<user>/contoso-pets/src/ContosoPets.Ui/.config/dotnet-tools.json.
+    Tool 'dotnet-ef' (version '3.1.3') was successfully installed. Entry is added to the manifest file /home/<user>/contoso-pets/src/ContosoPets.Ui/.config/dotnet-tools.json.
     ```
 
     The migration tool is a .NET Core tool that will:
 
-    * Generate code called a migration to create and update the database that supports the Identity entity model. 
+    * Generate code called a migration to create and update the database that supports the Identity entity model.
     * Execute migrations against an existing database.
     * Be invoked via `dotnet ef` in this module.
     
