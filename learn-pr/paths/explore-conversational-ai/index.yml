@@ -1,0 +1,31 @@
+### YamlMime:LearningPath
+uid: learn.wwl.explore-conversational-ai
+metadata:
+  title: Explore Conversational AI with Microsoft Azure
+  description: Conversational AI revolves around interactions with chat bots.  Coverage will include basic chatbot creation, integration with the Q&amp;A Maker service, and creating branded experiences with the Virtual Assistant for bots.
+  ms.date: 04/24/2020
+  author: gerryo
+  ms.author: gerryo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Explore conversational AI
+prerequisites: |
+  Ability to navigate the Azure portal
+summary: |
+  Conversational AI revolves around interactions with chat bots.  Coverage will include basic chatbot creation, integration with the Q&amp;A Maker service, and creating branded experiences with the Virtual Assistant for bots.
+iconUrl: /learn/achievements/generic-trophy.svg
+levels:
+- beginner
+roles:
+- ai-engineer
+- data-scientist
+- developer
+- solution-architect
+- student
+products:
+- azure-bot-service
+- azure-cognitive-services
+modules:
+- learn.wwl.build-faq-chatbot-qna-maker-azure-bot-service
+trophy:
+  uid: learn.wwl.explore-conversational-ai.trophy

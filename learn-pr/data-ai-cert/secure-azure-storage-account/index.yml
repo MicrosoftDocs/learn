@@ -23,6 +23,7 @@ iconUrl: /learn/achievements/data-ai/secure-azure-storage-account-badge.svg
 levels:
 - beginner
 roles:
+- administrator
 - data-engineer
 - solution-architect
 - security-engineer

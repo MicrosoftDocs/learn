@@ -24,9 +24,16 @@ The app is built with ASP.NET Core MVC. Follow the instructions below to execute
 - Click the button shown to start the migration (alternatively, you can run `dotnet ef database` update on the command line)
 - When the migration has completed, refresh the page
 
+## Follow along with the demos
+
+If you'd like to follow along with the demos shown during the session, please switch to Azure portal. You can use our Learn Live Sandbox environment if you have activated it.
+
+> [!IMPORTANT]
+> Activate the Azure Sandbox to execute the lab instructions in a free subscription and open [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true)
+
 ## Resources
 
 - Learn Live GitHub repository for this series: [github.com/MicrosoftDocs/mslearn-live-migrating-to-the-cloud](https://github.com/MicrosoftDocs/mslearn-live-migrating-to-the-cloud)
 - Architecture Reference Center: [docs.microsoft.com/azure/architecture/](https://docs.microsoft.com/azure/architecture/)
-- Learn Live Sandbox: [aka.ms/learnlivesandbox](https://aka.ms/learnlivesandbox)
-- Azure Naming Conventions: [docs.microsoft.com/azure/architecture/best-practices/naming-conventions](https://docs.microsoft.comazure/architecture/best-practices/naming-conventions)
+- Learn Live Sandbox: [docs.microsoft.com/learn/support/?pivots=sandbox](https://docs.microsoft.com/learn/support/?pivots=sandbox)
+- Azure Naming Conventions: [docs.microsoft.com/azure/architecture/best-practices/naming-conventions](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions)

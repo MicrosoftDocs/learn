@@ -1,0 +1,32 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-computing.cloud-basics.cmu-data-center-cloud-service.1-middleware
+title: Cloud middleware
+metadata:
+  title: Cloud middleware
+  description: Cloud middleware
+  ms.date: 02/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/1-middleware.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which of the following is **not** an example of cloud middleware functionality?"
+    choices:
+    - content: "An API that allows users to use both public IaaS services from two different cloud providers"
+      isCorrect: false
+      explanation: "Incorrect. The selected option is an example of a cloud middleware service. One of the options is a canonical example of middleware that existed even before the cloud."
+    - content: "An authentication management system that tracks users' roles and grants access to launching different types of instances"
+      isCorrect: false
+      explanation: "Incorrect. The selected option is an example of a cloud middleware service. One of the options is a canonical example of middleware that existed even before the cloud."
+    - content: "A trigger that tracks if a VM instance is unhealthy and launches a replacement instance"
+      isCorrect: false
+      explanation: "Incorrect. The selected option is an example of a cloud middleware service. One of the options is a canonical example of middleware that existed even before the cloud."
+    - content: "Enabling a connection between a web server and a database using ODBC"
+      isCorrect: true
+      explanation: "Correct!"
+

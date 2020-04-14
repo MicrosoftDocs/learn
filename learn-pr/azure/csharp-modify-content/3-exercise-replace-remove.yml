@@ -6,7 +6,7 @@ metadata:
   description: Remove characters and replace characters of a source string
   ms.date: 11/05/2019
   author: bobtabor-msft
-  ms.author: rtabor
+  ms.author: rotabor
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 4

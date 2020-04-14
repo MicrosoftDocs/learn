@@ -8,7 +8,7 @@ As an initial troubleshooting step, you can check the status of a service by exa
 from azureml.core.webservice import AksWebservice
 
 # Get the deployed service
-service = AciWebservice(name='classifier_service', workspace=ws)
+service = AciWebservice(name='classifier-service', workspace=ws)
 
 # Check its state
 print(service.state)
@@ -37,7 +37,7 @@ Deployment and runtime errors can be easier to diagnose by deploying the service
 from azureml.core.webservice import LocalWebservice
 
 deployment_config = LocalWebservice.deploy_configuration(port=8890)
-service = Model.deploy(ws, 'test_svc', [model], inference_config, deployment_config)
+service = Model.deploy(ws, 'test-svc', [model], inference_config, deployment_config)
 ```
 
 You can then test the locally deployed service using the SDK:

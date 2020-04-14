@@ -12,7 +12,7 @@ We'll use the `az redis create` command to create a new Azure Cache for Redis. I
 > | `--name`    | The name of the cache - this must be globally unique and composed of letters, numbers, and dashes. |
 > | `--resource-group` | Use the pre-created Resource Group **<rgn>[sandbox resource group name]</rgn>**, which is part of the Azure sandbox. |
 > | `--location` | Specify the location where the cache should be located. Normally, you will want to choose a location close to the data consumers. In this case, you are limited to the locations available in the Azure sandbox. Select the closest one to you. |
-> | `--size` | The size of the Azure Cache for Redis. Valid values are [C0, C1, C2, C3, C4, C5, C6, P1, P2, P3, P4]. |
+> | `--vm-size` | The size of the Azure Cache for Redis. Valid values are [C0, C1, C2, C3, C4, C5, C6, P1, P2, P3, P4]. |
 > | `--sku` | The Azure Cache for Redis SKU. Valid values are [Basic, Standard, Premium]. |
 
 ### Select a location

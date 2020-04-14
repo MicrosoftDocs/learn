@@ -1,0 +1,51 @@
+### YamlMime:Module
+uid: learn.cmu-cloud-computing.cloud-basics.cmu-build-apps-cloud
+metadata:
+  title: Build applications on the cloud
+  description: Carnegie Mellon University's Cloud Developer course. Learn how developers write programs that run on the cloud, including how to deploy, be fault-tolerant, load balance, scale, and deal with latency.
+  ms.date: 02/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  showCreativeCommonsFooter: true
+title: Build applications on the cloud
+summary: Learn how developers write programs that run on the cloud, including how to deploy, be fault-tolerant, load balance, scale, and deal with latency.
+abstract: | 
+  In this module, you will:
+  - Evaluate different considerations when programming applications that run on clouds
+  - Evaluate different considerations when deploying applications on clouds
+  - Compare and contrast proactive and reactive measures for fault tolerance in cloud applications
+  - Describe the importance of load balancing in cloud applications and enumerate various methods to achieve it
+  - Enumerate the strategies and considerations in scaling cloud applications
+  - Motivate the case for minimizing tail latency and discuss the various strategies to reduce tail latency
+  - Describe the strategies to optimize total operational cost of using cloud services
+  
+  In partnership with Dr. Majd Sakr and Carnegie Mellon University.
+prerequisites: |
+  - Understand what cloud computing is, including cloud service models, and common cloud providers
+  - Know the technologies that enable cloud computing
+  - Understand how cloud service providers pay for and bill for the cloud
+  - Know what datacenters are and why they exist
+  - Know how datacenters are set up, powered, and provisioned
+  - Understand how cloud resources are provisioned and metered
+iconUrl: /learn/achievements/cmu-cloud-developer/build-applications-on-the-cloud.svg
+levels:
+- beginner
+roles:
+- developer
+- student
+products:
+- azure
+units:
+- learn.cmu-cloud-computing.cloud-basics.cmu-build-apps-cloud.0-introduction
+- learn.cmu-cloud-computing.cloud-basics.cmu-build-apps-cloud.1-program-cloud
+- learn.cmu-cloud-computing.cloud-basics.cmu-build-apps-cloud.2-deployments
+- learn.cmu-cloud-computing.cloud-basics.cmu-build-apps-cloud.3-manage-failures
+- learn.cmu-cloud-computing.cloud-basics.cmu-build-apps-cloud.4-load-balance
+- learn.cmu-cloud-computing.cloud-basics.cmu-build-apps-cloud.5-scale
+- learn.cmu-cloud-computing.cloud-basics.cmu-build-apps-cloud.6-tail-latency
+- learn.cmu-cloud-computing.cloud-basics.cmu-build-apps-cloud.7-economics
+- learn.cmu-cloud-computing.cloud-basics.cmu-build-apps-cloud.8-summary
+badge:
+  uid: learn.cmu-cloud-computing.cloud-basics.cmu-build-apps-cloud.badge

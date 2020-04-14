@@ -82,7 +82,7 @@ variable "resource_group_location" {
 }
 ```
 
-When you define your resource group, you use the `${var.variable}` syntax to read your variable. Here's an example:
+When you define your resource group, you use the `var.variable` syntax to read your variable. Here's an example:
 
 [!code-terraform[](code/main.tf?range=30-33&highlight=32)]
 

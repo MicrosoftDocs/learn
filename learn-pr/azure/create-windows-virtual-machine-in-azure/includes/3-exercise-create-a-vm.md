@@ -10,11 +10,9 @@ We can create Windows VMs with the Azure portal, Azure CLI, or Azure PowerShell.
 
 1. In the search box, enter  **Windows Server**  and then click on the link with the same title in the presented list.
 
-    ![Screenshot showing the virtual machine image search result.](../media/3-azure-portal-search-image.png)
+    :::image type="content" source="../media/3-azure-portal-search-image.png" border="false" alt-text="Screenshot showing the virtual machine image search result.":::
 
-1. There are several Windows Server versions we can select from to create our VM. In the *Windows Server* image overview panel, click on the **Select a software plan** dropdown list and find the **[smalldisk] Windows Server 2016 Datacenter** option.
-
-    [![](../media/3-select-windows-server.png "A screenshot that shows which software plan to select.")](../media/3-select-windows-server-expanded.png#lightbox)
+1. There are several Windows Server versions we can select from to create our VM. In the *Windows Server* image overview panel, click on the **Select a software plan** dropdown list and find the **[smalldisk] Windows Server 2019 Datacenter** option.
 
 1. Click the **Create** button to start configuring the VM.
 
@@ -22,7 +20,7 @@ We can create Windows VMs with the Azure portal, Azure CLI, or Azure PowerShell.
 
 The VM creation experience in the portal is presented in a "wizard" format to walk you through all the configuration areas for the VM. Clicking the "Next" button will take you to the next configurable section. However, you can move between the sections at will with the tabs running across the top that identify each section.
 
-![Screenshot showing the virtual machine creation experience in the Azure portal.](../media/3-azure-portal-create-vm.png)
+:::image type="content" source="../media/3-azure-portal-create-vm.png" border="true" alt-text="Screenshot showing the virtual machine creation experience in the Azure portal.":::
 
 Once you fill in all the required options (identified with red stars), you can skip the remainder of the wizard experience and start creating the VM through the **Review + Create** button at the bottom.
 

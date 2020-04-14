@@ -16,9 +16,9 @@ Once you are logged into the Azure portal, we can start exploring things. In the
 
 1. Selecting any of items in the Azure Marketplace list will show popular services for that category on the right of the **New** pane. This list is a subset of the entire range of computing resources available for that category. As with the Azure Marketplace, you can select on the **See all** link for a more comprehensive list. We will talk more about this list in subsequent sections.
 
-1. Returning to the **New** pane, select on **Get started** and you should see a list on the right side of the pane that includes services such as Windows Server 2016 Datacenter, Ubuntu Server VM, SQL Database, and so on. Most of these items include a **Quickstart tutorial** link directly below the name. This link opens a new browser tab with the quickstart Microsoft documentation for that item.
+1. Returning to the **New** pane, select on **Get started** and you should see a list on the right side of the pane that includes services such as Windows Server 2016 Datacenter, Ubuntu Server VM, SQL Database, and so on. Most of these items include a **Quickstarts + tutorials** link directly below the name. This link opens a new browser tab with the quickstart Microsoft documentation for that item.
 
-1. Optional: select **Quickstart tutorial** under **Windows Server 2016 Datacenter** and, in the new browser window, look through the Windows VM tutorials. When you are finished, close this new tab to return to the Azure portal.
+1. Optional: select **Quickstarts + tutorials** under **Windows Server 2016 Datacenter** and, in the new browser window, look through the Windows VM tutorials. When you are finished, close this new tab to return to the Azure portal.
 
 ## View resources
 
@@ -46,7 +46,7 @@ This search defaults to checking every Azure service category to get its results
 
 1. Select any of the results that interest you to learn more about that service, including how to get started. Select the **X** in the corner to explore a different service. When you're done, move to the next step.
 
-1. Select the **X** in the right-hand end of the search box. The **X** button will erase your search term but does not reset any of the drop-down filters you've set. You can either reset those filters manually, or close the **Compute** pane with the **X** icon in the upper right corner and reopen it. When you are finished trying out the search and filtering options, move on to the next step.
+1. Select the **X** in the right-hand end of the search box. The **X** button will erase your search term but does not reset any of the drop-down filters you've set. You can either reset those filters manually, or close the **Marketplace** pane with the **X** icon in the upper right corner and reopen it. When you are finished trying out the search and filtering options, move on to the next step.
 
 1. Select the **X** at the top right-hand corner to close the **Marketplace** pane. Now you will see the **New** pane once again.
 

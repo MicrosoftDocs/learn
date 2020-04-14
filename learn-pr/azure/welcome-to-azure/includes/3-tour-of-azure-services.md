@@ -2,7 +2,7 @@ Azure can help you tackle tough business challenges. You bring your requirements
 
 Let's take a quick tour of the high-level services Azure offers.
 
-#### Azure: the big picture
+#### Azure: overall picture
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2yuas]
 
@@ -10,24 +10,28 @@ Let's take a quick tour of the high-level services Azure offers.
 
 Here's a big-picture view of the available services and features in Azure.
 
-[ ![Diagram showing the big picture view of Azure services](../media/3-azure-services.png) ](../media/3-azure-services.png#lightbox)
+[![Diagram showing overall view of Azure services with sections for security and management, platform services, hybrid cloud, and infrastructure services.](../media/3-azure-services.png)](../media/3-azure-services.png#lightbox)
 
-Let's take a closer look at the most commonly-used categories:
+Let's take a closer look at the most commonly used categories:
 
 :::row:::
   :::column:::
+
 - Compute
 - Networking
 - Storage
 - Mobile
 - Databases
+
   :::column-end:::
   :::column:::
+
 - Web
 - Internet of Things
 - Big Data
 - Artificial Intelligence
 - DevOps
+
   :::column-end:::
 :::row-end:::
 
@@ -93,6 +97,7 @@ These services all share several common characteristics:
 Azure enables developers to create mobile backend services for iOS, Android, and Windows apps quickly and easily. Features that used to take time and increase project risks, such as adding corporate sign-in and then connecting to on-premises resources such as SAP, Oracle, SQL Server, and SharePoint, are now simple to include.
 
 Other features of this service include:
+
 - Offline data synchronization.
 - Connectivity to on-premises data.
 - Broadcasting push notifications.
@@ -139,12 +144,12 @@ There are a number of services that can assist and drive end-to-end solutions fo
 > | Service Name | Description |
 > |--------------|-------------|
 > | IoT Central | Fully-managed global IoT software as a service (SaaS) solution that makes it easy to connect, monitor, and manage your IoT assets at scale |
-> | Azure IoT Hub | Messaging hub that provides secure communications and monitoring between millions of IoT devices |
+> | Azure IoT Hub | Messaging hub that provides secure communications between and monitoring of millions of IoT devices |
 > | IoT Edge | Push your data analysis models directly onto your IoT devices, allowing them to react quickly to state changes without needing to consult cloud-based AI models.
 
 ### Big Data
 
-Data comes in all formats and sizes. When we talk about Big Data, we're referring to _large_ volumes of data. Data from weather systems, communications systems, genomic research, imaging platforms, and many other scenarios generate hundreds of gigabytes of data. This amount of data makes it hard to analyze and make decisions around. It's often so large that traditional forms of processing and analysis are no longer appropriate.
+Data comes in all formats and sizes. When we talk about Big Data, we're referring to _large_ volumes of data. Data from weather systems, communications systems, genomic research, imaging platforms, and many other scenarios generate hundreds of gigabytes of data. This amount of data makes it hard to analyze and make decisions. It's often so large that traditional forms of processing and analysis are no longer appropriate.
 
 Open source cluster technologies have been developed to deal with these large data sets. Microsoft Azure supports a broad range of technologies and services to provide big data and analytic solutions.
 

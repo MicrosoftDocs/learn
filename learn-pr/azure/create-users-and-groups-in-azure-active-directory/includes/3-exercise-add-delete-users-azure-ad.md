@@ -29,13 +29,13 @@ Create a new organization to hold all of the users you create in this exercise.
 
 You'll need to activate a free trial for Azure AD Premium to complete all the exercises in this module.
 
-1. In the organization you just created, select **Get started**.
+1. In the organization you just created, select **Getting started**.
 1. Under **Getting started with Azure AD**, select **Get a free trial for Azure AD Premium**.
 
     ![Screenshot that shows the link to create trial](../media/3-ad-get-started-get-trial.png)
-1. Under **Azure AD Premium 2**, select **Free trial** > **Activate**.
-1. In the left pane, select **Overview**. 
-1. Refresh the browser until you see **Azure AD Premium P2** under the organization name.
+1. Under **Azure AD Premium 2**, select **Free trial** > **Activate**. If you don't have that option, that's ok. You can complete most of the exercises without it.
+1. In the left pane, select **Overview**.
+1. Refresh the browser until you see **Azure AD Premium P2** under the organization name. It may take a couple of minutes.
 
     ![Screenshot that shows trial enabled](../media/3-azure-ad-premium-2.png)
 
@@ -54,8 +54,9 @@ You'll need to activate a free trial for Azure AD Premium to complete all the ex
    In the Azure AD organization you created, under **Manage**, select **Users** > **New User**.
 1. The **User** pane now appears. Provide the following values:
 
-    - **Name**: *Chris Green*
     - **User Name**: chris@contosomarketingXXXXXX.onmicrosoft.com. Use the domain name you noted earlier.
+    - **Name**: *Chris Green*
+
 1. Select **Show Password**, and copy it somewhere you can refer to it later.
 
 1. Select **Create**. The user is now created and registered to your organization.

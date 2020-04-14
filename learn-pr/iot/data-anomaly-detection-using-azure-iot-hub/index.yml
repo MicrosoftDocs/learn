@@ -32,6 +32,7 @@ levels:
 roles:
 - developer
 products:
+- azure-iot
 - azure-iot-hub
 - azure-stream-analytics
 - azure-storage

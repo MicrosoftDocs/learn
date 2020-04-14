@@ -54,7 +54,7 @@ IaC is merely an abstract concept without tools to implement it. The next lesson
 
 1. _Mark Burgess's personal webpage. <http://markburgess.org/bio.html>._
 
-1. _Wiley Publishing. *Principles of Network and System Administration*. <https://www.wiley.com/en-us/Principles+of+Network+and+System+Administration%2C+2nd+Edition-p-9780470868072>._
+1. _Wiley Publishing. *Principles of Network and System Administration*. <https://www.wiley.com/Principles+of+Network+and+System+Administration%2C+2nd+Edition-p-9780470868072>._
 
 1. _Mark Burgess's blog. <http://markburgess.org/blog_cd.html>._
 
@@ -62,7 +62,7 @@ IaC is merely an abstract concept without tools to implement it. The next lesson
 
 [^1]: http://markburgess.org/bio.html
 
-[^2]: https://www.wiley.com/en-us/Principles+of+Network+and+System+Administration%2C+2nd+Edition-p-9780470868072
+[^2]: https://www.wiley.com/Principles+of+Network+and+System+Administration%2C+2nd+Edition-p-9780470868072
 
 [^3]: http://markburgess.org/blog_cd.html
 

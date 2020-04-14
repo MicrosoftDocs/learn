@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.iot.create-your-first-iot-central-app.test-your-iot-device
 metadata:
-  title: Test your IoT Central device
+  title: Exercise - Test your IoT Central device
   description: Test a device by monitoring the results on the dashboard.
   ms.date: 10/17/2019
-  author: PeterTurcan
+  author: olivierbloch
   ms.author: Olivier.Bloch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

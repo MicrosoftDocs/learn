@@ -4,7 +4,7 @@ title: Exercise - Use diagnostic data
 metadata:
   title: Exercise - Use diagnostic data
   description: Add an alert for your VM. Then you'll cause the VM CPU usage to spike, and receive the alert email.
-  ms.date: 10/18/2019
+  ms.date: 02/26/2020
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial
@@ -17,7 +17,7 @@ content: |
 tasks:
 - action: exists
   environment: azure
-  hint: "Create the action group for your alert in the Azure portal."
+  hint: "Create the action group for your alert in the Azure portal."
   azure:
     resource:
       type: "microsoft.insights/actiongroups"

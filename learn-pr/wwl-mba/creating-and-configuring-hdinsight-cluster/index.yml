@@ -15,14 +15,13 @@ abstract: |
   - Create an HDInsight Spark Cluster
   - Execute queries on an HDInsight Spark Cluster
   - Monitor an HDInsight Spark Cluster
-  - Learn how to fix common provisioning issue
+  - Learn how to fix common provisioning issues
 ratingEnabled: true
 prerequisites: |
   The following pre-requisite should be completed:
   - Successfully login to the Azure portal
   - Understand the Azure storage options
   - Understand the Azure compute options
-  - Create and configure a HDInsight Cluster in the Azure portal
 iconUrl: /learn/achievements/learn-pr/achievements/creating-and-configuring-a-hdinsight-cluster.svg
 levels:
 - beginner

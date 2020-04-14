@@ -9,7 +9,7 @@ Let's set up a project on SonarCloud. You need to save some information, such as
 
 ### Sign in with GitHub
 
-1. From a browser tab, go to [SonarCloud](https://sonarcloud.io/?azure-portal=true) and sign in. 
+1. From a browser tab, go to [SonarCloud](https://sonarcloud.io/?azure-portal=true) and sign in using your GitHub account. 
 1. In the upper corner, select **+** and then select **Analyze new project**.
 1. If your organization is not filled in automatically, select **Import another organization**.
     * Select **Choose an organization on GitHub**.
@@ -22,7 +22,7 @@ Let's set up a project on SonarCloud. You need to save some information, such as
     * Select **Continue**.
     * Under **Choose a plan** select **Free plan** and then **Create Organization**.
 
-    ![Setting up a SonarCloud project manually through the web interface](../media/3-sonar-cloud-create-project.png)
+    ![Screenshot of setting up a SonarCloud project manually through the web interface with an organization, key, display name, and avatar entered.](../media/3-sonar-cloud-create-project.png)
 
 ## Set up your project for analysis
 
@@ -230,6 +230,7 @@ The SonarCloud scanner runs Java code during the scanning process. So, you start
 
 Here you return to the SonarCloud portal and review the results of your scan.
 
+1. Wait for the scan to finish.
 1. From a web browser, go back to your SonarCloud project.
 
     If you closed your browser tab, go to [SonarCloud](https://sonarcloud.io/?azure-portal=true), sign in, and then select your project.
@@ -238,11 +239,11 @@ Here you return to the SonarCloud portal and review the results of your scan.
 
     There are several categories that you can examine. Start with **Reliability** at the top. If you have bugs, they show up here. We have two bugs. Select it to see more details.
 
-    ![The SonarCloud dashboard](../media/3-sonar-scan-dashboard.png)
+    ![Screenshot of SonarCloud dashboard showing 2 bugs (C rating), 4 vulnerabilities (B rating), 4 code smells with 15 minutes of debt (A rating), and 11.5 percent coverage.](../media/3-sonar-scan-dashboard.png)
 
     The first bug recommends that you replace the bold `<b>` tag with the `<strong>` tag.
 
-    ![Bug details on SonarCloud](../media/3-sonar-scan-bug.png)
+    ![Screenshot of SonarCloud bug details for "Replace this <b> tag by <strong>".](../media/3-sonar-scan-bug.png)
 
     You can select **See Rule** to learn more about the rationale behind this recommendation.
 
