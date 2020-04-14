@@ -1,0 +1,18 @@
+- stage: 'Build'
+  displayName: 'Build and push'
+  jobs:  
+  - job: 'Build'
+    displayName: 'Build job'
+    pool:
+      vmImage: 'ubuntu-16.04'
+    steps:
+    - task: Docker@2
+      displayName: 'Build and push the image to container registry'
+      inputs:
+        command: buildAndPush
+        buildContext: $(Build.Repository.LocalPath)
+        repository: $(webRepository)
+        dockerfile: '$(Build.SourcesDirectory)/Tailspin.SpaceGame.Web/Dockerfile'
+        containerRegistry: 'Container Registry Connection'
+        tags: |
+          $(tag)

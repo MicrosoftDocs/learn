@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.azdo.deploy-docker.2-what-is-docker
+title: What is Docker?
+metadata:
+  title: What is Docker?
+  description: Understand the benefits of Docker containers and when to use them.
+  ms.date: 03/11/2020
+  author: edkaim
+  ms.author: v-edkaim
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-what-is-docker.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which of the following is not a good reason to use Docker?"
+    choices:
+    - content: "You build mobile apps and want a single mobile container to run across different operating systems."
+      isCorrect: true
+      explanation: "Unfortunately, mobile container apps are not supported at this time."
+    - content: "Your application has very specific dependency requirements and you want to package them along with the app itself for deployment."
+      isCorrect: false
+      explanation: "With containers, you can ensure your application runs with the exact dependencies it needs because they are included as part of the deployment."
+    - content: "You want the different stages of your DevOps pipeline to use the same application environment to be used in production."
+      isCorrect: false
+      explanation: "Container immutability ensures that all copies of the same container work from the same source build and dependencies wherever loaded."
+  - content: "How are containers and virtual machines similar?"
+    choices:
+    - content: "They both run their own virtualized operating systems."
+      isCorrect: false
+      explanation: "While virtual machines run their own operating systems, containers execute against the host kernel."
+    - content: "They both provide isolation for the applications they contain."
+      isCorrect: true
+      explanation: "Virtual machines and containers both isolate their applications to avoid security risks and dependency conflicts. However, it's important to note that multiple applications running within the same virtual machine may still face these traditional problems."
+    - content: "They both offer the same performance."
+      isCorrect: false
+      explanation: "While there is overhead in both scenarios, container applications have near-instant startup time and run against the host kernel. Virtual machines, on the other hand, face a more substantial performance hit due to their complete virtualization."
+  - content: "How much overhead does migrating an existing .NET Core application to use a Docker container require?"
+    choices:
+    - content: "A lot. Docker uses its own programming languages and development framework, so applications need to be rebuilt."
+      isCorrect: false
+      explanation: "Docker is a packaging and deployment technology. It does not impact the fundamental development of the software it hosts."
+    - content: "Quite a bit. Application code will need to be adjusted to load Docker settings and configuration data."
+      isCorrect: false
+      explanation: "A Docker container is configured based on the needs of the application. The application doesn't need to care whether it's running in Docker."
+    - content: "Very little. The application should require no changes, but a Docker manifest that specifies application requirements will need to be added."
+      isCorrect: true
+      explanation: "The application doesn't need to account for Docker, but Docker needs to account for the application."
