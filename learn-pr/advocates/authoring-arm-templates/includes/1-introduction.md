@@ -6,7 +6,7 @@ To meet these challenges, you can use the practice of infrastructure as code (Ia
 
 To implement infrastructure as code for your Azure solutions, use Azure Resource Manager (ARM) templates. The template is a JavaScript Object Notation (JSON) file that defines the infrastructure and configuration for your project.
 
-## Learning objectives
+#### Learning objectives
 
 In this module, you will learn:
 
@@ -14,7 +14,7 @@ In this module, you will learn:
 - To write an Azure Resource Manager template from scratch.
 - You'll learn to add parameters, variables, resources, and functions to your template.
 
-## Prerequisites
+#### Prerequisites
 
 - Experience using Bash and the Azure CLI
 - Experience working with Azure resources and resource groups
