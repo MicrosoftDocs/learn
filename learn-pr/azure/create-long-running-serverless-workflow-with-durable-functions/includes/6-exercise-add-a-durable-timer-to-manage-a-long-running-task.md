@@ -56,7 +56,7 @@ Before changing our workflow, we'll add the **moment** npm package to our functi
     const moment = require("moment");
     ```
 
-1. Replace the body of the function with the following code, which test will whether the deadline for approval has passed:
+1. Replace the body of the function with the following code, which will test whether the deadline for approval has passed:
 
     ```javascript
     module.exports = df.orchestrator(function* (context) {
