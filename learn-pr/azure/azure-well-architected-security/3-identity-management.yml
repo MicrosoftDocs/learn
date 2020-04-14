@@ -1,0 +1,32 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-well-architected-security.3-identity-management
+title: Identity management
+metadata:
+  title: Identity management
+  description: In this unit we'll discuss how to protect your identities
+  ms.date: 05/19/2020
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-identity-management.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: 'Which of the following is NOT a benefit of single sign-on?'
+    choices:
+    - content: 'Increased complexity assigning permissions to users'
+      isCorrect: true
+      explanation: 'Single sign-on can reduce the complexity needed to assign permissions to users because there are less identities to manage.'
+    - content: 'Fewer IDs and passwords for users to remember'
+      isCorrect: false
+      explanation: 'Single sign-on can reduce the complexity needed to assign permissions to users because there are less identities to manage.'
+    - content: 'Lower administration effort when users change roles or leave an organization'
+      isCorrect: false
+      explanation: 'Single sign-on can reduce the complexity needed to assign permissions to users because there are less identities to manage.'
+    - content: 'Ensures a consistent password policy across applications'
+      isCorrect: false
+      explanation: 'Single sign-on can reduce the complexity needed to assign permissions to users because there are less identities to manage.'
+
