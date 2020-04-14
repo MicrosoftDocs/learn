@@ -13,7 +13,7 @@ prerequisites: |
   Ability to navigate the Azure portal
 summary: |
   Conversational AI revolves around interactions with chat bots.  Coverage will include basic chatbot creation, integration with the Q&amp;A Maker service, and creating branded experiences with the Virtual Assistant for bots.
-iconUrl: http://via.placeholder.com/120x120
+iconUrl: /learn/achievements/generic-trophy.svg
 levels:
 - beginner
 roles:
