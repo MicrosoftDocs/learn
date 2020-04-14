@@ -137,7 +137,8 @@ In this unit, Identity will be added to the existing ASP.NET Core Razor Pages pr
             services.AddDbContext<ContosoPetsAuth>(options =>
                 options.UseSqlServer(connBuilder.ConnectionString));
 
-            services.AddDefaultIdentity<IdentityUser>()
+            services.AddDefaultIdentity<IdentityUser>(options =>
+                    options.SignIn.RequireConfirmedAccount = true)
                 .AddDefaultUI()
                 .AddEntityFrameworkStores<ContosoPetsAuth>();
         });
