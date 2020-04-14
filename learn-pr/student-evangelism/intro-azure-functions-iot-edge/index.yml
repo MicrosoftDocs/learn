@@ -1,0 +1,33 @@
+### YamlMime:Module
+uid: learn.oxford.intro-iot-funtions-iot-edge
+metadata:
+  title: "Introduction to Azure functions for IoT Edge"
+  description: "University of Oxford"
+  ms.date: 03/24/2020
+  author: leestott
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-edge
+title: "Introduction to Azure functions for IoT Edge"
+summary: ""
+abstract: |
+     
+prerequisites: |
+    - Familiarity with Azure
+    - Basic knowledge of REST and APIs
+    - Basic understanding of IoT 
+    - Basic understanding of IoT Edge 
+iconUrl: http://via.placeholder.com/120x120
+badge:
+  uid: learn.oxford.intro-to-iot-funtions-iot-edge
+levels:
+- beginner
+roles:
+- ai-edge-engineer
+products:
+- azure-iot-edge
+units:
+- learn.oxford.intro-iot-funtions-iot-edge.introduction
+- learn.oxford.intro-iot-funtions-iot-edge.what-azure-functions-iot-edge
+- learn.oxford.intro-iot-funtions-iot-edge.azure-functions-works
+- learn.oxford.intro-iot-funtions-iot-edge.when-use-azure-functions

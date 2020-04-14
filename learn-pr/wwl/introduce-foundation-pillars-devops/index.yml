@@ -1,0 +1,51 @@
+### YamlMime:Module
+uid: learn.wwl.introduce-foundation-pillars-devops
+metadata:
+  title: '1-Introduce the foundation pillars of DevOps: Culture and Lean Product'
+  description: "DevOps is the union of people, process, and products to enable continuous delivery of value to our end users. Discover the first two foundation pillars of DevOps: Culture and Lean Product."
+  ms.date: 03/06/2020
+  author: wwlpublish
+  ms.author: sallybre
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: 'Introduce the foundation pillars of DevOps: Culture and Lean Product'
+summary: 'DevOps is the union of people, process, and products to enable continuous delivery of value to our end users. Discover the first two foundation pillars of DevOps: Culture and Lean Product.'
+abstract: |
+  - List the 4 pillars and 8 capabilities of DevOps.
+  - List the benefits of DevOps.
+  - Describe the 12 examples of a DevOps mindset within the DevOps Culture.
+  - Explain the importance of Lean Product Management.
+  - Describe the 6 principles of Lean Product Management.
+prerequisites: |
+  None
+iconUrl: /learn/achievements/introduce-foundation-pillars-devops-culture-learn-product.svg
+levels:
+- beginner
+roles:
+- administrator
+- ai-edge-engineer
+- ai-engineer
+- business-analyst
+- business-owner
+- business-user
+- data-analyst
+- data-engineer
+- data-scientist
+- developer
+- devops-engineer
+- functional-consultant
+- maker
+- security-engineer
+- solution-architect
+- technology-manager
+products:
+- azure
+units:
+- learn.wwl.introduce-foundation-pillars-devops.introduction
+- learn.wwl.introduce-foundation-pillars-devops.discover-devops
+- learn.wwl.introduce-foundation-pillars-devops.explore-first-foundation
+- learn.wwl.introduce-foundation-pillars-devops.explore-second-foundation
+- learn.wwl.introduce-foundation-pillars-devops.knowledge-check
+- learn.wwl.introduce-foundation-pillars-devops.summary
+badge:
+  uid: learn.wwl.introduce-foundation-pillars-devops.badge

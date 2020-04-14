@@ -19,7 +19,7 @@ You can create a hidden message that won't appear on your webpage. However, what
 
 ```javascript
 ...
-console.log('Here\'s a hidden message')
+console.log('Here\'s a hidden message');
 ```
 
 In **Visual Studio Code**, when in JavaScript file, you can use autocomplete by typing `log` then hitting enter (return).
@@ -62,10 +62,10 @@ It would be convenient to see today's date on our webpage. There are a few main 
 
 ```javascript
 ...
-let today = new Date()
-let formatDate = today.toDateString()
-let selectElement = document.getElementById('date')
-selectElement.innerHTML = formatDate
+let today = new Date();
+let formatDate = today.toDateString();
+let selectElement = document.getElementById('date');
+selectElement.innerHTML = formatDate;
 ```
 
 Here we're using the word `let` to create a *variable* named `today`, which holds the date and time. It's a convention to use *camel case* for variable names with more than one word—for example, the variable `formatDate`.

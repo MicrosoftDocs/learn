@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.oxford.intro-iot-funtions-iot-edge.azure-functions-works
+title: How Azure Functions for IoT Edge works
+metadata:
+  title: How Azure Functions for IoT Edge works
+  description: In this section, we provide a high-level explanation of the parts of the product and explain how these parts work together. We also show how the product would work when solving the scenario outlined in the introduction section
+  ms.date: 03/24/2020
+  author: leestott
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-edge
+durationInMinutes: 6 # dummy number at present
+content: |
+  [!include[](includes/3-how-azure-functions-iot-edge-works.md)]

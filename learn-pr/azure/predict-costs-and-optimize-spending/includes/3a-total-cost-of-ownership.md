@@ -4,7 +4,7 @@ If you are starting to migrate to the cloud, a useful tool you can use to predic
 
 ### Step 1: Open the TCO calculator
 
-Start by opening the [Total Cost of Ownership calculator](https://azure.microsoft.com/pricing/tco/?azure-portal=true) website.
+Start by browsing to the [Total Cost of Ownership calculator](https://azure.microsoft.com/pricing/tco/?azure-portal=true) website.
 
 ### Step 2: Define your workloads
 
@@ -19,13 +19,14 @@ Start by entering details about your on-premises infrastructure into the TCO cal
 
 ### Step 3: Adjust assumptions
 
-Adjust the values of assumptions that the TCO calculator makes, which might vary between customers. To improve the accuracy of the TCO calculator, you should adjust the values, so they match the costs of your current on-premises infrastructure. The assumptions you can customize include:
+Adjust the values of assumptions that the TCO calculator makes, which might vary between customers. To improve the accuracy of the TCO calculator, you should adjust the values so they match the costs of your current on-premises infrastructure. The assumptions you can customize include:
 
+- Virtual machine costs
+- Electricity costs
 - Storage costs
 - IT labor costs
 - Hardware costs
 - Software costs
-- Electricity costs
 - Virtualization costs
 - Datacenter costs
 - Networking costs
@@ -35,4 +36,4 @@ Adjust the values of assumptions that the TCO calculator makes, which might vary
 
 The TCO calculator generates a detailed report based on the details you enter and the adjustments you make. The report allows you to compare the costs of your on-premises infrastructure with the costs of using Azure products and services to host your infrastructure in the cloud.
 
-![Depicts two TCO pie charts. One for total on-premises cost of $30,702,495 and one for Azure cost of $595,618](../media/3a-TCO-calculator-report.png)
+![Two TCO pie charts: one for total on-premises costs of $30,702,495 and another for Azure cost of $595,618.](../media/3a-TCO-calculator-report.png)

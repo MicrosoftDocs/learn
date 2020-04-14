@@ -34,7 +34,7 @@ Next, you'll create a temporary app in App Center to explore the App Center serv
 
 1. The button will present the option to **Add new app** or **Add new organization**. Click **Add new app** to start creating a temporary App Center app.
 
-    ![Screenshot of Add new button with dropdown showing Add new app option highlighted](../media/8-app-center-add-new-app.png)
+    ![Screenshot of Add new button with dropdown showing Add new app option highlighted.](../media/8-app-center-add-new-app.png)
 
 1. Enter an **App name** of your choice.
 
@@ -48,7 +48,7 @@ Next, you'll create a temporary app in App Center to explore the App Center serv
 
 1. Click the **Add new app** button at the bottom.
 
-    ![Screenshot of the new App Center app with arbitrary values entered and chosen](../media/8-app-center-new-app-form.png)
+    ![Screenshot of the new App Center app with arbitrary values entered and chosen.](../media/8-app-center-new-app-form.png)
 
 Once you have created your new app, App Center will present with the various service options on the left-hand navigation. The **Overview** section will be selected for you. Since this is a new app, the overview section will show you instructions and documentation links for integrating the SDK with the OS and platform you chose for your temporary app.
 
@@ -60,7 +60,7 @@ Next, you'll explore the various services represented in the left-hand navigatio
 
 * Click into the **Build** section from the left-hand menu. Depending on your web browser's window width, you may have to click the hamburger menu icon at the top left to see the left-hand menu.
 
-  ![Screenshot of the App Center app navigation with Build section selected](../media/8-app-center-navigation-build.png)
+  ![Screenshot of the App Center app navigation with Build section selected.](../media/8-app-center-navigation-build.png)
 
 The **Build** section is where you can configure builds of your app's source code. Builds can be started automatically for each commit to a branch, or manually from the App Center portal.
 
@@ -80,7 +80,7 @@ You might also create a device set that represents the devices that seem to prod
 
 * Click into the **Distribute** section from the left-hand menu. From the **Distribute** section, you can send previous builds to your various distribution groups, or directly to an app store. It has several sub-sections: **Release**, **Groups**, and **Stores**.
 
-  ![Screenshot of the App Center app navigation showing the Distribute section and its sub-sections](../media/8-app-center-navigation-distribute-release.png)
+  ![Screenshot of the App Center app navigation showing the Distribute section and its sub-sections.](../media/8-app-center-navigation-distribute-release.png)
 
   * Within the **Releases** section of Distribute, you can distribute a release. You either upload a build manually or tell it which previous build you want to distribute. You will go through  You create distribution groups from the **Distribute** > **Groups** section. You'll be able to pick which release group or app store to send your build in the new release steps, destinations you set up in the other sections of Distribute. Within each release you distribute, you will be able to see the distribution group that was used as well as the download count of that release.
 
@@ -96,7 +96,7 @@ You might also create a device set that represents the devices that seem to prod
 
 * Click into the **Analytics** section from the left-hand menu. From the **Analytics** section, you'll have several sub-sections: **Overview**, **Events**, and **Log flow**.
 
-  ![Screenshot of the App Center app navigation showing the Analytics section and its sub-sections](../media/8-app-center-navigation-analytics-overview.png)
+  ![Screenshot of the App Center app navigation showing the Analytics section and its sub-sections.](../media/8-app-center-navigation-analytics-overview.png)
 
   * Within the **Overview** section of Analytics, you'll see charts of active users and sessions counts. As well, you'll see charts to tell you your app's most popular devices, most common geographic locations and user languages, and most popular release versions. Once your app has collected some data, your analytics overview will start to look more like this screenshot.
 

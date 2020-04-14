@@ -10,25 +10,25 @@ One of the core benefits of cloud computing is the ability to manage costs by pa
 - Start on-demand and stop automatically when no longer required.
 - Scale automatically based on workload processing needs.
 
-## Types of Compute
+## Types of compute
 
 Azure Machine Learning supports multiple types of compute for experimentation and training, and for production inferencing. This enables you to select the most appropriate type of compute target for your particular needs.
 
-### Local Compute
+### Local compute
 
-You can specify a *local* compute target for most processing tasks in Azure Machine Learning. This runs the experiment on the same compute target as the code used to initiate the experiment, which may be you physical workstation or a virtual machine such as an Azure Machine Learning compute instance on which you are running a notebook.
+You can specify a *local* compute target for most processing tasks in Azure Machine Learning. This runs the experiment on the same compute target as the code used to initiate the experiment, which may be your physical workstation or a virtual machine such as an Azure Machine Learning compute instance on which you are running a notebook.
 
 Local compute is generally a great choice during development and testing with low to moderate volumes of data.
 
-### Training Clusters
+### Training clusters
 
 For training workloads with high scalability requirements, you can use Azure Machine Learning training clusters; which are multi-node clusters of Virtual Machines that automatically scale up or down to meet demand. This is a cost-effective way to run experiments that need to handle large volumes of data or use parallel processing to distribute the workload and reduce the time it takes to run.
 
-### Inference Clusters
+### Inference clusters
 
 To deploy trained models as production services, you can use Azure Machine Learning inference clusters, which use containerization technologies to enable rapid initialization of compute for on-demand inferencing.
 
-### Attached Compute
+### Attached compute
 
 If you already use an Azure-based compute environment for data science, such as a virtual machine or an Azure Databricks cluster, you can attach it to your Azure Machine Learning workspace and use it as a compute target for certain types of workload.
 

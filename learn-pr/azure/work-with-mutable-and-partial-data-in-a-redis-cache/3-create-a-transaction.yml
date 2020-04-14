@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Create a transaction in Azure Cache for Redis
   description: Create a transaction in Azure Cache for Redis
   ms.date: 09/24/2018
-  author: markjulmar
-  ms.author: smmark
+  author: adrianstevens
+  ms.author: adsteven
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX

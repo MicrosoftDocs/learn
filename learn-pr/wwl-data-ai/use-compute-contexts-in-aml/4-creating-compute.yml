@@ -3,12 +3,13 @@ uid: learn.wwl.use-compute-contexts-in-aml.creating-compute
 title: Create compute targets
 metadata:
   title: Create compute targets
-  description: Learn how to create compute targets for experiments.
+  description: "Learn how to create compute targets for experiments."
   ms.date: 02/10/2020
-  author: GraemeMalcolm
+  author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+azureSandbox: false
 durationInMinutes: 5
 content: |
   [!include[](includes/4-creating-compute.md)]

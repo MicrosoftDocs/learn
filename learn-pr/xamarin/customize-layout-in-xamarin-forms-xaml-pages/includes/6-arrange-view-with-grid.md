@@ -4,7 +4,7 @@ Suppose you're building a page that displays images in a 7x5 grid. It's possible
 
 `Grid` is a layout panel that consists of rows and columns. The following illustration shows a conceptual view of a grid.
 
-![An illustration showing a grid with rows and columns.](../media/6-grid.png)
+![Illustration showing an example grid with rows and columns of boxes, with one box spanning multiple rows and columns.](../media/6-grid.png)
 
 You place views in the cells that are created from the intersection of the rows and columns. For example, if you create a `Grid` that has three columns and two rows, there will be six cells available for views. The rows and columns can be different sizes, or they can be set to automatically adapt to the size of the children placed inside them. Child views can occupy a single cell or span across many cells. This flexibility makes `Grid` a good choice for the root layout panel for many apps.
 
@@ -154,7 +154,7 @@ When we add a view to a `Grid`, we add it to a specific cell. Cells are created 
 
 The numbering of rows and columns starts at zero. The origin is the upper-left corner. Here's an illustration showing the numbering for a `Grid` with four rows and two columns.
 
-![An illustration showing a grid with four rows and two columns and the numbering for each.](../media/6-grid-numbering.png)
+![Illustration showing a grid with four rows and two columns and the numbering for each, from the top left box at column zero and row zero to the bottom right box at column one and row 3.](../media/6-grid-numbering.png)
 
 For example, if we wanted to add a view to the bottom-right cell, we'd say the view's position was `row 3 column 1.`
 
@@ -186,7 +186,7 @@ This example shows how to create a `Grid` and add a view by using attached prope
 
 As you can see, `Grid.Row=1` and `Grid.Column=0` are key-value pairs that get added to an internal collection of the `BoxView`. The `Grid` will use those values to determine where the view should be positioned. Here's what this `Grid` would look like if you ran the application on a device.
 
-![An illustration showing a Grid with three rows and two columns. A `BoxView` is displayed in the second row of the first column.](../media/6-grid-boxview.png)
+![Illustration showing a Grid with three rows and two columns. A BoxView is displayed in the second row of the first column.](../media/6-grid-boxview.png)
 
 ### How to make a view span multiple rows or columns
 
@@ -210,4 +210,4 @@ There are two more attached properties you should be aware of: `Grid.RowSpan` an
 
 Notice that in this example we're setting the `ColumnSpan` to `2`. This view will occupy two columns starting at `Column` `0`. Here's what this `Grid` would look like if you ran the application on a device.
 
-![An illustration showing a Grid with three rows and two columns. A `BoxView` is positioned in the second row of the first column and spans two columns.](../media/6-grid-span.png)
+![Illustration showing a Grid with three rows and two columns. A BoxView is positioned in the second row of the first column and spans both columns.](../media/6-grid-span.png)

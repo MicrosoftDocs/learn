@@ -54,7 +54,7 @@ Here, you manually create a single binding in code. There are three required pie
 
 1. Run the application, and make sure the country picker is correctly populated. Change its value, and then select **Show**. It should change the underlying object as shown in the following screenshot.
 
-    ![Screenshot of the FlagFacts app showing the extra information for New Zealand.](../media/show-flag.png)
+    ![Screenshot of the FlagFacts app showing the extra details pop-up for New Zealand.](../media/show-flag.png)
 
 ## Create bindings in XAML
 

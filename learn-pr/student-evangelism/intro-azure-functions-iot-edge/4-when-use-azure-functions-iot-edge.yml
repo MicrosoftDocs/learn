@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.oxford.intro-iot-funtions-iot-edge.when-use-azure-functions
+title: When to use Azure functions for IoT Edge
+metadata:
+  title: When to use Azure functions for IoT Edge
+  description: When to use Azure functions for IoT Edge
+  ms.date: 03/24/2020
+  author: leestott
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-edge
+durationInMinutes: 8 # dummy number at present
+content: |
+  [!include[](includes/4-when-use-azure-functions-iot-edge.md)]

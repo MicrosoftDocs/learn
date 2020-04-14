@@ -16,4 +16,4 @@ For information on the support settings and limitations for migrating Hyper-V VM
 
 - [Hyper-V hosts](https://docs.microsoft.com/azure/migrate/migrate-support-matrix-hyper-v-migration#hyper-v-hosts)
 - [Hyper-V VMs](https://docs.microsoft.com/azure/migrate/migrate-support-matrix-hyper-v-migration#hyper-v-vms)
-- [Set up the appliance VM](https://docs.microsoft.com/azure/migrate/tutorial-assess-hyper-v#set-up-the-appliance-vm)
+- [Set up the appliance VM](https://docs.microsoft.com/azure/migrate/tutorial-assess-hyper-v#set-up-the-azure-migrate-appliance)

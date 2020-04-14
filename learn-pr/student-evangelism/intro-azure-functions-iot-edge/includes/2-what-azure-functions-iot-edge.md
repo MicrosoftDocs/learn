@@ -1,0 +1,1 @@
+Azure functions for IoT Edge are a technique to create scalable IoT solutions that you can rapidly deploy without provisioning a fixed infrastructure capacity in advance. Using this approach, you can create scalable IoT Edge applications where the solution needs the business logic embedded on to edge devices. 
