@@ -26,7 +26,7 @@ In this exercise, you set up Traffic Manager to use the United States endpoint a
 1. Run this command to deploy a Resource Manager template. The template creates two servers, one in the East Asia region, and one in the West US 2 region.
 
     ```azurecli
-    az group deployment create \
+    az deployment group create \
         --resource-group <rgn>Sandbox resource group </rgn> \
         --template-uri  https://raw.githubusercontent.com/MicrosoftDocs/mslearn-distribute-load-with-traffic-manager/master/azuredeploy.json \
         --parameters password="$(head /dev/urandom | tr -dc A-Za-z0-9 | head -c 32)"

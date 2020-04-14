@@ -47,7 +47,7 @@ The following table summarizes some of these planning issues. The remainder are 
 |                           |  Point to site            | Site to site                          |  ExpressRoute                 |
 | -------------             | -------------             | -------------                         | ---------                     |
 | Azure supported services  | Cloud services and VMs    | Cloud services and VMs                | All supported services        |
-| Typical bandwidth         | Depends on VPN Gateway SKU    | Up to 1 Gbps with aggregation         | From 50 Mbps to 10 Gbps       |
+| Typical bandwidth         | Depends on [VPN Gateway SKU](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways#gwsku)    | Depends on [VPN Gateway SKU](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways#gwsku)       | See [ExpressRoute bandwidth options](https://docs.microsoft.com/azure/expressroute/expressroute-introduction#bandwidth-options)       |
 | Protocols supported       | SSTP and IPsec            | IPsec                                 | Direct connection, VLANs      |
 | Routing                   | RouteBased (dynamic)      | PolicyBased (static) and RouteBased   | BGP                           |
 | Connection resiliency     | Active-passive            | Active-passive or active-active       | Active-active                 |

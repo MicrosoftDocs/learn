@@ -13,7 +13,7 @@ Let's start by deploying the application. First, we need to create the Azure res
 1. Run this command to deploy the resources that are needed for this application. This deployment takes a few minutes.
 
     ```azurecli
-    az group deployment create \
+    az deployment group create \
         --resource-group <rgn>[sandbox resource group]</rgn> \
         --template-uri https://raw.githubusercontent.com/MicrosoftDocs/mslearn-microservices-architecture/master/deployment/azuredeploy.json
     ```

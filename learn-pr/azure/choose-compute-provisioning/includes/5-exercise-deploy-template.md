@@ -142,7 +142,7 @@ Now that we know the template is valid, we can perform the deployment.
 1. To deploy the template, run the following command. When prompted for a password, enter a complex password of your choice.
 
     ```azurecli
-    az group deployment create \
+    az deployment group create \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
         --template-file template.json \
         --parameters vmName=hostVM1 adminUsername=serveradmin
