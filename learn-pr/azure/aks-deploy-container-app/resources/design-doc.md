@@ -1,6 +1,3 @@
----
-no-loc: ["Kubernetes", "kubectl", "Docker", "cluster", "Azure Container Registry"]
----
 # Title
 
 <!-- *Add the working title [(Title guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-title)* -->
