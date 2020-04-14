@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.azure-well-architected-performance-efficiency
+metadata:
+  title: Azure Well Architected - Performance efficiency
+  description: Learn how to adjust your capacity based on workload, and how to optimize network performance, storage and database performance.
+  ms.date: 05/19/2020
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Azure Well Architected - Performance efficiency
+summary: Scaling your system to handle load, identifying network bottlenecks, and optimizing your storage performance are important to ensure your users have the best experience. Learn how to make your application perform at its best.
+abstract:  | 
+  In this module, you will:
+  - Adjust your capacity based on workload by scaling up and scaling out
+  - Optimize network performance
+  - Optimize storage and database performance
+prerequisites: None
+iconUrl: /learn/achievements/azure-well-architected-performance-efficiency.svg
+levels:
+- intermediate
+roles:
+- solution-architect
+products:
+- azure
+- azure-cdn
+- azure-virtual-machines
+- azure-app-service
+- azure-sql-database
+- azure-functions
+- azure-container-instances
+- azure-kubernetes-service
+- azure-traffic-manager
+- azure-redis-cache
+- azure-monitor
+- azure-expressroute
+- azure-virtual-network
+units:
+- learn.azure-well-architected-performance-efficiency.1-introduction
+- learn.azure-well-architected-performance-efficiency.2-scaling-up-and-scaling-out
+- learn.azure-well-architected-performance-efficiency.3-optimize-network-performance
+- learn.azure-well-architected-performance-efficiency.4-optimize-storage-performance
+- learn.azure-well-architected-performance-efficiency.5-identify-performance-bottlenecks-in-your-application
+- learn.azure-well-architected-performance-efficiency.6-summary
+badge:
+  uid: learn.azure-well-architected-performance-efficiency.badge
