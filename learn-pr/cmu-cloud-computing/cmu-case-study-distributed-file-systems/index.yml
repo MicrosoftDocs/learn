@@ -9,7 +9,6 @@ metadata:
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  showCreativeCommonsFooter: true
 title: 'Case studies: Distributed file systems'
 summary: Discover how distributed file systems work, then learn about Hadoop and Ceph.
 abstract: | 
