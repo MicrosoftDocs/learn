@@ -14,7 +14,7 @@ At the end of the previous exercise, your template had the following JSON code i
              "type": "Microsoft.Storage/storageAccounts",
              "apiVersion": "2019-06-01",
              "name": "{provide-unique-name}",
-             "location": "eastus",
+             "location": "{Location}",
              "sku": {
                "name": "Standard_LRS"
              },

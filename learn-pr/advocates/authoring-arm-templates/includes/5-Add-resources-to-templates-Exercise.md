@@ -1,6 +1,6 @@
 ### Adding resources to your ARM template
 
-In order to carry on with your exercises, you will add a storage account definition to your existing template.  To do so, you will edit the empty template you created in the last exercise.
+In tris exercise, you will add a storage account definition to your existing template.  To do so, you will edit the empty template you created in the last exercise.
 
 1. Open Visual Studio Code and the template you created in the first exercise.  From the Azure shell provided here, type the following command.
        
@@ -8,46 +8,19 @@ In order to carry on with your exercises, you will add a storage account definit
 code azuredeploy.json
 ```
               
-2. Copy and paste the following code in the resource section of your ARM template.
+2. In this step you will modify the existing template to add the new resource.  You can copy and paste the code found below the note in the resource section of your ARM template.
 
 > [!IMPORTANT]
-> When copying the code. Please ensure to replace the **{provide-unique-name}** (including the curly brackets) with a unique storage account name.  Guessing a unique names for Azure resources isn't easy and should not be counted on to address automating large deployments. Later in this Learn Module, you'll use built-in template features to create a unique name.  You also need to set the location to the same location a resource group provided for you in the **sandbox**.  In order to get the resource group name and location use the following command.
+> When copying the code. Please ensure to replace the **{provide-unique-name}** (including the curly brackets) with a unique storage account name all lower caps and with no spaces, dashes or special characters.<br><br>You also need to set the **{location}** in the template, to the **same** location a resource group provided for you in the **sandbox**.  In order to get the resource group name and location use the following command.<br><br>**az group list --query "[?contains(name, 'learn')]" -o table**
 
-```azurecli
-az group list --query "[?contains(name, 'learn')]" -o table
-```
 Now, you can copy the code and change the highlighted sections into the resource section of your existing empty template.
 
 :::code language="azurecli" source="../samples/Exercise2-resource.json" highlight: "4-5":::
 
 At this point your ARM template should now look like the following:
 
-```JSON
-{
-    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
-    "contentVersion": "1.0.0.1",
-    "apiProfile": "",
-    "parameters": {},
-    "variables": {},
-    "functions": [],
-    "resources": [
-         {
-             "type": "Microsoft.Storage/storageAccounts",
-             "apiVersion": "2019-06-01",
-             "name": "{provide-unique-name}",
-             "location": "{Location}",
-             "sku": {
-               "name": "Standard_LRS"
-             },
-             "kind": "StorageV2",
-             "properties": {
-               "supportsHttpsTrafficOnly": true
-             }
-          }
-    ],
-    "outputs": {}
-}
-```
+:::code language="azurecli" source="../samples/exercise2-add-resource.json":::
+
 > [!NOTE]
 >Notice that in this example we incremented the "contentVersion" value since we are making a significant change to the template.
 
