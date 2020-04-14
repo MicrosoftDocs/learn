@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: Expose an application over the network.7-exercise-expose-app
+metadata:
+  title: Exercise - Enable network access to an application
+  description: Exercise - Enable network access to an application
+  ms.date: 05/30/2020
+  author: cryophobia
+  ms.author: chrvaw
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise - Enable network access to an application
+durationInMinutes: 10
+interactive: bash
+azureSandbox: true
+content: |
+  [!include[](includes/7-exercise-expose-app.md)]

@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.aks-deploy-container-app
+metadata:
+  title: Deploy a containerized application on Azure Kubernetes Service
+  description: Deploy a containerized application on Azure Kubernetes Service
+  ms.date: 05/30/2020
+  author: cryophobia
+  ms.author: chrvaw
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Deploy a containerized application on Azure Kubernetes Service
+summary: TODO
+abstract: | 
+  In this module, you will:
+  - Create and set up an Azure Kubernetes Cluster
+  - Create Kubernetes deployment and service YAML files
+  - Deploy and expose Kubernetes workloads using public images
+prerequisites: | 
+  - An Azure subscription
+  - Ability to use the Azure CLI
+  - Ability to create a Docker container
+  - Ability to navigate the Azure portal
+  - Basic knowledge of Kubernetes and its concepts
+iconUrl: http://via.placeholder.com/120x120
+levels:
+- beginner
+roles:
+- solution-architect
+- developer
+- devops-engineer
+products:
+- azure
+- azure-kubernetes-service
+units:
+- learn.aks-deploy-container-app.1-introduction
+- learn.aks-deploy-container-app.2-create-aks-cluster
+- learn.aks-deploy-container-app.3-exercise-create-aks-cluster
+- learn.aks-deploy-container-app.4-deploy-app
+- learn.aks-deploy-container-app.5-exercise-deploy-app
+- learn.aks-deploy-container-app.6-expose-app
+- learn.aks-deploy-container-app.7-exercise-expose-app
+- learn.aks-deploy-container-app.8-summary
+badge:
+  uid: learn.aks-deploy-container-app.badge

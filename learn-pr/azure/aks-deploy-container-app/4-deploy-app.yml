@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.aks-deploy-container-app.4-deploy-app
+metadata:
+  title: Deploy an application on your AKS cluster
+  description: Deploy an application on your AKS cluster
+  ms.date: 05/30/2020
+  author: cryophobia
+  ms.author: chrvaw
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Deploy an application on your AKS cluster
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-deploy-app.md)]

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.aks-deploy-container-app.3-exercise-create-aks-cluster
+metadata:
+  title: Exercise - Create an Azure Kubernetes Service cluster
+  description: Exercise - Create an Azure Kubernetes Service cluster
+  ms.date: 05/30/2020
+  author: cryophobia
+  ms.author: chrvaw
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise - Create an Azure Kubernetes Service cluster
+durationInMinutes: 10
+interactive: bash
+azureSandbox: true
+content: |
+  [!include[](includes/3-exercise-create-aks-cluster.md)]
