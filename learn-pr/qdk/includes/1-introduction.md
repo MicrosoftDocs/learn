@@ -19,10 +19,11 @@ Alongside the Q# language, the QDK includes:
 
 In this module you will:
 
-- Gain hands-on experience using the QDK and Q# libraries
+- Gain hands-on experience using the QDK to create a quantum program
 - Understand how to use Q# to express quantum algorithms
+- Learn how to combine Q# with a host program in Python
 - Start your journey as a quantum developer
-- Contribute to the open-source quantum community
+- Learn how to contribute to the open-source quantum community
 
 ## Prerequisites
 
@@ -30,9 +31,10 @@ In this module you will:
 - Ability to code in any programming language, at the beginner level
 - Experience using Visual Studio Code, at the beginner level *may not need if we enable embedded coding excercises 
 
-## Learn the scenario
+## Why are you here?
 
-Suppose you are a software developer in a company creating simulation tools for chemistry and material science laboratories. The complexity of simulating the system scales exponentially with the size of the quantum system in question. You constantly run into the limitations of the state-of-the-art classical computation. Thus, you are starting to explore possibilities of using quantum computing for simulations.  
+Since you're here you are probably interested at some level in quantum computing, maybe you're a quantum computing researcher
+that wants to try the Microsoft Quantum Development Kit or a hobbyist that want to want to understand what quantum programming looks like and to contribute with your own projects to this emerging community. In any case, this is a great place to start exploring what tools Microsoft offers to quantum developers and how you can start today to write your own quantum programming projects. 
 
 :::image type="content" source="../.../....jpg" alt-text="software dev":::
 
@@ -42,9 +44,5 @@ In the following units you will go through these steps:
 
 - Install the QDK (*if we are enabling embedded coding experience, we may chose a fixed method and environment)
 - Create a Q# project
-- Make a quantum random number generator
-- Set up a Bell State in Q#
-- Implement a Grover's Search algorithm
-- Simulate the ground state energies of molecular hydrogen
-- Set up a quantum machine learning algorithm
+- Combine Q# and Python to create a quantum random number generator
 - As a call to action: learn more about QDK and Q# on the docs page, practice on quanutm katas, contribute to the QDK 
