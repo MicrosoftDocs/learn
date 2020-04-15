@@ -58,7 +58,7 @@ In this section, we'll look at the time aggregation feature.
 
 1. For **Actions**, fire off another email. Give the email an appropriate title and note.
 
-    The rule will fire off one email in a five-minute period, if the contents temperature exceeds or equals 0 degrees at any point during the five-minute period. You can see you could enter a rule that would only fire if the _average_ temperature was above a certain threshold. When we get round to testing this rule, we can try out these different options.
+    The rule will fire off one email in a five-minute period, if the contents temperature exceeds or equals 0 degrees at any point during the five-minute period. You could enter a rule that would only fire if the _average_ temperature was above a certain threshold. When we get round to testing this rule, we can try out these different options.
 
 1. Make sure to click **Save**, to save off this rule.
 
