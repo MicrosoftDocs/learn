@@ -4,7 +4,7 @@ While this module specifically focused on a Python app deployed to an Azure App 
 
 ## Learn more
 
-In this module, you worked with Python, which is just one of the many platforms Azure supports natively. To learn about support and tutorials for different developer platforms, see [Build applications with Azure](https://azure.microsoft.com/en-us/developer/?azure-portal=true).
+In this module, you worked with Python, which is just one of the many platforms Azure supports natively. To learn about support and tutorials for different developer platforms, see [Build applications with Azure](https://azure.microsoft.com/developer/?azure-portal=true).
 
 In addition to supporting multiple platforms, Azure also provides a variety of resources that can be used from Python solutions. For a learning path full of examples on how to use Python with Azure's data analysis and machine learning tools, see [Introduction to machine learning with Python and Azure Notebooks](/learn/paths/intro-to-ml-with-python/?azure-portal=true). You may also be interested in using Python with Azure Cognitive Services, which is covered in [Build an AI web app by using Python and Flask](/learn/modules/python-flask-build-ai-web-app/?azure-portal=true).
 
