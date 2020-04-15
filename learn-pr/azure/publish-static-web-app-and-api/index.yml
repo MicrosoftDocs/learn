@@ -33,7 +33,6 @@ products:
   - azure-app-service
   - azure-app-service-web
 units:
-  - learn.azure.publish-static-web-app-and-api.intro
   - learn.azure.publish-static-web-app-and-api.1-introduction
   - learn.azure.publish-static-web-app-and-api.2-exercise-setup
   - learn.azure.publish-static-web-app-and-api.11-knowledge-check
