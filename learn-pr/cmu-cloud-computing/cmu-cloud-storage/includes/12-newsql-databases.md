@@ -7,7 +7,7 @@ NoSQL databases have been quite successful in very specific domains. The most po
 
 ## H-Store and VoltDB
 
-H-Store is a good example of a NewSQL system. H-Store is deployed on a cluster of nodes, using a shared-nothing architecture. At the heart of H-Store is a highly optimized single-threaded database engine that quickly processes individual queries. The database is then sharded across the cluster such that every individual core is responsible for a disjoint subset of the data. The data in H-Store is stored in the memory of each of the nodes in the system.
+H-Store is an experimental example of a NewSQL system, designed by a team at Brown University, Carnegie Mellon University, the Massachusetts Institute of Technology, and Yale University. H-Store is deployed on a cluster of nodes, using a shared-nothing architecture. At the heart of H-Store is a highly optimized single-threaded database engine that quickly processes individual queries. The database is then sharded across the cluster such that every individual core is responsible for a disjoint subset of the data. The data in H-Store is stored in the memory of each of the nodes in the system.
 
 Because each engine has exclusive access to all of the data at a partition, only one transaction at a time is able to access the data stored in the partition, eliminating the need for locks and latches in the system. As a result, no transaction will stall waiting for another transaction once started, at least for queries that do not span a single partition.
 
