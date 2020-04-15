@@ -4,6 +4,7 @@ You've also seen how to use enterprise state roaming to separate corporate data 
 
 ## Learn more
 
+- [Plan your Conditional Access deployment in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/plan-conditional-access)
 - [Enroll Windows devices in Intune by using the Windows Autopilot](https://docs.microsoft.com/mem/intune/enrollment/enrollment-autopilot)
 - [How SSO to on-premises resources works on Azure AD joined devices](https://docs.microsoft.com/azure/active-directory/devices/azuread-join-sso)
 - [Manage device identities using the Azure portal](https://docs.microsoft.com/azure/active-directory/devices/device-management-azure-portal)

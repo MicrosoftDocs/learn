@@ -24,7 +24,7 @@ You have three device registration options to add a device to your Azure AD:
 
 ## Conditional Access
 
-Conditional Access in Azure AD uses data from different sources, known as signals, validates them against a user-definable rules base, and chooses the best outcome to enforce your organization's security policies. Conditional Access enables device identity management but Conditional Access policies can be complex. At their simplest, these policies can be thought of as 'if-then' statements. If a device wants access to a resource, it must fulfill the condition to complete the request.
+Conditional Access in Azure AD uses data from different sources, known as signals, validates them against a user-definable rules base, and chooses the best outcome to enforce your organization's security policies. Conditional Access enables device identity management but Conditional Access policies can be complex. At their simplest, these policies can be thought of as 'if-then' statements. If a user wants access to a resource, then they must fulfill the condition to complete the request. Example: A payroll manager wants to access the payroll application. The Conditional Access policy requires that they're using a compliant device and they complete multi-factor authentication to access the application.
 
 ![Illustration that shows conditional signal plus decision to get enforcement.](../media/2-conditional-access.png)
 
@@ -54,7 +54,7 @@ Conditional Access evaluates the signals and provides a decision:
 
 Those criteria can be one or more of:
 
-- Multi-Factor Authentication (MFA)
+- Multi-factor authentication (MFA)
 - Device marked as compliant
 - Device is Hybrid Azure AD joined
 - An approved application
@@ -65,12 +65,32 @@ If your organization uses MFA, users don't have to do MFA when they're using an 
 >[!div class="mx-imgBorder"]
 >![Screenshot of the access control grant settings with the options selected: Require MFA, Require device compliant, and Require one of the selected controls.](../media/2-access-controls-grant.png)
 
+### Commonly applied policies
+
+Many organizations have common access concerns that Conditional Access policies can help with such as:
+
+- Requiring multi-factor authentication for users with administrative roles
+- Requiring multi-factor authentication for Azure management tasks
+- Blocking sign-ins for users attempting to use legacy authentication protocols
+- Requiring trusted locations for Azure Multi-Factor Authentication registration
+- Blocking or granting access from specific locations
+- Blocking risky sign-in behaviors
+- Requiring organization-managed devices for specific applications
+
 ### Create Conditional Access policies
 
 To create a Conditional Access policy, go to **Azure Active Directory** > **Security** > **Conditional Access** > **New policy**.
 
 >[!div class="mx-imgBorder"]
 >![Screenshot that shows a new Conditional Access policy with no assignments or access controls set.](../media/2-conditional-access-policies.png)
+
+To make your policy work, you must configure:
+
+| What           | How                                  | Why |
+| :--            | :--                                  | :-- |
+| **Cloud apps** |Select one or more apps.  | The goal of a Conditional Access policy is to enable you to control how authorized users can access cloud apps.|
+| **Users and groups** | Select at least one user or group that is authorized to access your selected cloud apps. | A Conditional Access policy that has no users and groups assigned, is never triggered. |
+| **Access controls** | Select at least one access control. | If your conditions are satisfied, your policy processor needs to know what to do. |
 
 ## Benefits of device identity management
 
@@ -80,11 +100,10 @@ Some of the benefits of using device identity, combined with Conditional Access 
 - Reduces the friction for users when switching between different devices.
 - Azure AD supports mobile device management tools such as Microsoft Intune.
 - You can use single sign-on (SSO) with any registered or joined device.
-- Conditional Access is included with your Microsoft 365 Business license.
 
 ## Considerations when using device identity management
 
 When evaluating device identity, consider the following factors:
 
-- Using Azure AD join or Hybrid AD joined options limits you to using Windows or Windows Server-based operating system on the device.
-- Conditional Access requires an Azure AD Premium P1 license.
+- Using Azure AD join or Hybrid Azure AD joined options limits you to using Windows or Windows Server-based operating system on the device.
+- Conditional Access requires an Azure AD Premium P1 license or a Microsoft 365 Business licenses.
