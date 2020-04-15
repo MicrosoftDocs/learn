@@ -1,7 +1,5 @@
 Your organization wants to improve the security of its devices. So far, you've seen how security is enhanced by using device identity and Azure AD join. But you need to maintain the security seamlessly when a user switches between devices. You want to see the options Azure offers to allow users to transition their accounts between devices. Users need to maintain data and settings without increasing technical overhead or maintenance.
 
-Enterprise state roaming in Azure automatically synchronizes user and application data to the cloud. When a user joins a new device to your Azure Active Directory (Azure AD) organization, their data synchronizes from the cloud to their device. You can enable enterprise state roaming for individuals or groups.
-
 In this unit, you'll learn about enterprise state roaming, how to enable it, where the user's application and settings data is stored, and how long the data is kept for.
 
 ## What is enterprise state roaming?
@@ -15,6 +13,21 @@ Some of the key benefits of using enterprise state roaming are:
 - Better management and monitoring so you decide who can sync their data and from which devices.
 
 Enterprise state roaming requires a Premium Azure Active Directory subscription.
+
+## What data syncs and follows users?
+
+**Windows settings**:
+The PC settings that are built into the Windows operating system. Generally, these are settings that personalize your PC, and they include the following categories:
+
+* *Theme*, which includes features such as desktop theme and taskbar settings.
+* *Internet Explorer settings*, including recently opened tabs and favorites.
+* *Microsoft Edge browser settings*, such as favorites.
+* *Passwords*, including Internet passwords, Wi-Fi profiles, and others.
+* *Language preferences*, which include settings for keyboard layouts, system language, date and time, and more.
+* *Ease of access features*, such as high-contrast theme, Narrator, and Magnifier.
+* *Other Windows settings*, such as mouse settings.
+
+**Application data**: Universal Windows apps can write settings data to a roaming folder, and any data written to this folder will automatically be synced. It's up to the individual app developer to design an app to take advantage of this capability.
 
 ## Enabling enterprise state roaming
 
