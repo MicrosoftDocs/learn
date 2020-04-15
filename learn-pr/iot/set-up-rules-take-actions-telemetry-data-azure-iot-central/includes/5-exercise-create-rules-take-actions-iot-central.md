@@ -23,7 +23,7 @@ In this example, we'll create a rule with a single condition. Let's fire off an 
 
 1. In **Display name**, enter a title for the email, perhaps "Cooling system failed"!
 
-1. For **To**, enter the email you have used for your IoT Central account. And for **Note** enter some descriptive text that will form the body of the email.
+1. For **To**, enter the email you've used for your IoT Central account. And for **Note** enter some descriptive text that will form the body of the email.
 
 1. Click **Done**.
 
@@ -58,7 +58,7 @@ In this section, we'll look at the time aggregation feature.
 
 1. For **Actions**, fire off another email. Give the email an appropriate title and note.
 
-    The rule will fire off one email in a five-minute period, if the contents temperature exceeds or equals 0 degrees at any point during the five-minute period. You can see that you could enter a rule that would only fire if the _average_ temperature was above a certain threshold. When we get round to testing this rule, we can try out these different options.
+    The rule will fire off one email in a five-minute period, if the contents temperature exceeds or equals 0 degrees at any point during the five-minute period. You can see you could enter a rule that would only fire if the _average_ temperature was above a certain threshold. When we get round to testing this rule, we can try out these different options.
 
 1. Make sure to click **Save**, to save off this rule.
 
@@ -87,7 +87,7 @@ In this rule, we're going to investigate the use of multiple conditions to fire 
 
 ## Create a rule to fire when the temperature of the contents is OK
 
-The rules we've entered so far are triggered mostly when something goes wrong, though the "Truck leaving base" rule is an event, rather than an error.
+The rules we've entered so far trigger mostly when something goes wrong, though the "Truck leaving base" rule is an event, rather than an error.
 
 An alternative way of looking at rules is to trigger them when everything is OK. For example, let's enter a rule that triggers every five minutes to let operators know everything is fine.
 
@@ -101,4 +101,4 @@ An alternative way of looking at rules is to trigger them when everything is OK.
 
     [![Screenshot showing the summary of the four rules](../media/rules-actions-four-rules.png)](../media/rules-actions-four-rules.png#lightbox)
 
-That is enough rules for now! Let's get the app running, and test the rules out.
+These rules are enough for now! Let's get the app running, and test the rules out.
