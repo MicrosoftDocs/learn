@@ -77,17 +77,17 @@ The **Status Bar**, displayed at the bottom of the Visual Studio Code window, pr
 
    ![Screenshot of the Status Bar with an arrow pointing to the asterisk next to the working branch name.](../media/2-exercise-clone-branch-03.png)
 
-When you stage your changes, the asterisk becomes a plus sign (+).  After you commit your staged changes, the plus sign disappears, and only the branch name is displayed.
+   When you stage your changes, the asterisk becomes a plus sign (+).  After you commit your staged changes, the plus sign disappears, and only the branch name is displayed.
 
-- On the right is an icon that switches from a circle with arrows ("Synchronize Changes") to a cloud with an arrow pointing upward ("Publish Changes").
+- On the right is an icon that switches from a circle with arrows (**Synchronize Changes**) to a cloud with an arrow pointing upward (**Publish Changes**).
 
-   The "Synchronize Changes" icon is displayed in the following image:
+   The **Synchronize Changes** icon is displayed in the following image:
 
    ![Screenshot of the Status Bar with an arrow pointing to the Synchronize Changes icon.](../media/2-exercise-clone-branch-04.png)
 
-   And the following image shows you what the "Publish Changes" icon looks like:
+   And the following image shows you what the **Publish Changes** icon looks like:
 
-   ![Screenshot of the Status Bar with an arrow pointing to the Synchronize Changes icon.](../media/2-exercise-clone-branch-05.png)
+   ![Screenshot of the Status Bar with an arrow pointing to the Publish Changes icon.](../media/2-exercise-clone-branch-05.png)
 
 To create a branch, select the branch name (currently set to **master**) in the Status Bar.  This opens the **Command Palette** and allows you to either switch to an existing branch or create a new branch.
 
