@@ -14,9 +14,9 @@ Schemas are not mere guidelines, but are enforced in relational systems. Schema-
 
 However, the rigid enforcement of a schema is also a barrier to flexibility. As an application evolves, changing the schema of a table that is already populated with rows is difficult, if not impossible, depending on the table and the constraints provided. 
 
-On the other hand, there are systems that have either flexible schemas or no schema whatsoever. An example of a system with practically no schema is a generic **key-value store**, which basically acts as mapping between keys of a certain type and an associated value. Some key-value stores are very flexible; they allow for any arbitrary binary data to be stored under a particular key. Some key-value stores, such as Dynamo, require that the type of the key (string, integer, etc.) be made explicit when a new table is created. Some systems allow for nested values to be present in data attributes, typically stored as JSON or XML.
+On the other hand, there are systems that have either flexible schemas or no schema whatsoever. An example of a system with practically no schema is a generic **key-value store**, which basically acts as mapping between keys of a certain type and an associated value. Some key-value stores are very flexible; they allow for any arbitrary binary data to be stored under a particular key. Some key-value stores, such as AWS Dynamo DB, require that the type of the key (string, integer, etc.) be made explicit when a new table is created. Some systems allow for nested values to be present in data attributes, typically stored as JSON or XML, such as Azure Table storage.
 
-Another variation is systems like Bigtable and HBase, which have a semi-flexible schema. These systems require the number of columns to be declared when a table is created, but a column can have any number of nested sub-columns. These systems will be covered in detail in the next module.
+Another variation is systems like GCP's Bigtable and Apache HBase, which have a semi-flexible schema. These systems require the number of columns to be declared when a table is created, but a column can have any number of nested sub-columns. These systems will be covered in detail in the next module.
 
 ## Transaction vs. analytical processing
 
