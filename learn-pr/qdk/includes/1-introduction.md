@@ -18,7 +18,6 @@ Alongside the Q# language, the QDK includes:
 ## Learning objectives
 
 In this module you will:
-
 - Gain hands-on experience using the QDK to create a quantum program
 - Understand how to use Q# to express quantum algorithms
 - Learn how to combine Q# with a host program in Python
@@ -34,7 +33,10 @@ In this module you will:
 ## Why are you here?
 
 Since you're here you are probably interested at some level in quantum computing, maybe you're a quantum computing researcher
-that wants to try the Microsoft Quantum Development Kit or a hobbyist that want to want to understand what quantum programming looks like and to contribute with your own projects to this emerging community. In any case, this is a great place to start exploring what tools Microsoft offers to quantum developers and how you can start today to write your own quantum programming projects. 
+that wants to try the Microsoft Quantum Development Kit or a hobbyist that want to want to understand what quantum programming 
+looks like and to contribute with your own projects to this emerging community. In any case, this is a great place to start
+exploring what tools Microsoft offers to quantum developers and how you can start today to write your own quantum programming 
+projects.
 
 :::image type="content" source="../.../....jpg" alt-text="software dev":::
 
@@ -46,3 +48,4 @@ In the following units you will go through these steps:
 - Create a Q# project
 - Combine Q# and Python to create a quantum random number generator
 - As a call to action: learn more about QDK and Q# on the docs page, practice on quanutm katas, contribute to the QDK 
+
