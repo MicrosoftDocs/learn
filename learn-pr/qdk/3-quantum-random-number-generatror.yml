@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.qdk.introduction-to-qdk.quantum-random-number-generator
+title: Create a Quantum Random Number Generator with the Quantum Development Kit.
+metadata: Tutorial that teaches how to create a aplication with Q# and Python to generate random numbers.
+  title: Create a Quantum Random Number Generator with the Quantum Development Kit.
+  description: Tutorial that teaches how to create a aplication with Q# and Python to generate random numbers.
+  ms.date: 04/14/2020
+  author: geduardo
+  ms.author: v-edsanc
+  ms.topic: tutorial
+  ms.prod: learning-qdk
+  ROBOTS: NOINDEX
+durationInMinutes: 2
+content: |
+  [!include[](includes/3-Create a Quantum Random Number Generator.md)]

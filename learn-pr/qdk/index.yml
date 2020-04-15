@@ -31,6 +31,7 @@ products:
 units:
 - learn.introduction-to-qdk.introduction
 - learn.introduction-to-qdk.install
-- learn.qdk.summary
+- learn.introduction-to-qdk.quantum-random-number-generator
+- learn.introduction-to-qdk.summary
 badge:
-  uid: learn.qdk.build-a-quantum-random-number-generator.badge
+  uid: learn.qdk.introduction-to-qdk.badge
