@@ -2,7 +2,7 @@ Azure and Azure DevOps provide first-class support for Python. Through a variety
 
 In this module, you'll walk through the process of creating an automated CI/CD pipeline for a Python web app that uses the Django framework. You'll learn about how a project can begin in GitHub and flow through Azure DevOps in order to build, publish, and deploy a solution to an Azure App Service.
 
-While this module focuses on the core build and deploy jobs, it's important to understand that all of the other features of Azure Pipelines are still available for Node.js solutions. You can integrate testing, multiple stages, and other tasks just like you would for other scenarios. They're just skipped for this module to keep things focused.
+While this module focuses on the core build and deploy jobs, it's important to understand that all of the other features of Azure Pipelines are still available for Python solutions. You can integrate testing, multiple stages, and other tasks just like you would for other scenarios. They're just skipped for this module to keep things focused.
 
 ## Learning objectives
 

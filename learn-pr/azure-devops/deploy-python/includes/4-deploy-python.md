@@ -35,8 +35,8 @@ The previous task will begin the process of linking your GitHub repo to your Azu
 
 Here you create a new CI/CD pipeline using one of the built-in templates. This will be saved as *azure-pipelines.yml* in the repo root.
 
-1. Select the Node.js project created earlier (called *mslearn-python-django*).
-1. Select **Node.js Express Web App to Linux on Azure**.
+1. Select the Python project created earlier (called *mslearn-python-django*).
+1. Select **Python to Linux Web App on Azure**.
 1. If prompted, select the Azure subscription you created resources under earlier.
 1. Select the **Web App name** created earlier.
 1. Select **Validate and configure**. 
@@ -61,7 +61,7 @@ Update the **projectRoot** variable to use the */Application* path under the def
 
 ### The Build stage
 
-This pipeline is divided into two stages: *Build* and *Deploy*. The build stage configures and runs the build, publishing its zipped output to artifact storage.
+This pipeline is divided into two stages: *Build* and *Deploy*. The build stage configures and runs the build, publishing its zipped output to artifact storage. The YAML below defines the host agent the stage's job will run on.
 
 [!code-yml[](code/4-3-azure-pipelines.yml)]
 
@@ -79,7 +79,7 @@ The build itself is run using `python` and `pip` commands in an inline script. T
 
 ### Publishing the build
 
-After the build completes, the `ArchiveFiles@2` task is used to zip the output. The resulting zip is then published to artifact storage using the alias *drop* for future usage and review.
+After the build completes, the `ArchiveFiles@2` task zips the output. The resulting zip is then uploaded to artifact storage using the alias *drop* for future usage and review.
 
 [!code-yml[](code/4-6-azure-pipelines.yml)]
 
@@ -112,7 +112,7 @@ You can learn more about the flexibility of this task in the official docs for t
 
 ### Running functional tests
 
-The final stage of the pipeline runs functional tests to validate the deployment. In this case there is a single test that confirms that the home page loads as expected using the production URL. Afterwards, the test results are published to be included alongside the unit test results from the build job.
+The final stage of the pipeline runs functional tests to validate the deployment. In this case there is a single Selenium test that confirms that the home page loads as expected using the production URL. Afterwards, the test results are published to be included alongside the unit test results from the build job.
 
 Add the YAML below to the end of the pipeline. Be sure the editor is satisfied with your indentation before continuing.
 

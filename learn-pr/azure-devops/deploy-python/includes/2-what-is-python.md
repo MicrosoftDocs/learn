@@ -4,7 +4,7 @@
 
 ## What is Django?
 
-**Django** is a framework designed to make the development of web applications in Python practical. It offers a collection of modules and conventions that enable Python developers to efficiently build and maintain web applications using a variety of development tools and deployment targets. You can learn more about the details on the [official Python site](https://www.djangoproject.com/?azure-portal=true).
+**Django** is a framework designed to make the development of web applications in Python practical. It offers a collection of modules and conventions that enable Python developers to efficiently build and maintain web applications using a variety of development tools and deployment targets. You can learn more about the details on the [official Django site](https://www.djangoproject.com/?azure-portal=true).
 
 > [!NOTE]
 > This module is based on a Python project that makes use of Django, although its contents should generally apply to a broad array of Python scenarios that may use other frameworks (or none at all).
