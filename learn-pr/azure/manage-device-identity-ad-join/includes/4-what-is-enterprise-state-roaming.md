@@ -14,7 +14,7 @@ Some of the key benefits of using enterprise state roaming are:
 
 Enterprise state roaming requires a Premium Azure Active Directory subscription.
 
-## What data syncs and follows users?
+## What data syncs and roams?
 
 **Windows settings**:
 The PC settings that are built into the Windows operating system. Generally, these are settings that personalize your PC, and they include the following categories:

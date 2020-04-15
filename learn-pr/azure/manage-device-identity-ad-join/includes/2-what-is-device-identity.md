@@ -106,4 +106,4 @@ Some of the benefits of using device identity, combined with Conditional Access 
 When evaluating device identity, consider the following factors:
 
 - Using Azure AD join or Hybrid Azure AD joined options limits you to using Windows or Windows Server-based operating system on the device.
-- Conditional Access requires an Azure AD Premium P1 license or a Microsoft 365 Business licenses.
+- Conditional Access requires an Azure AD Premium P1 license or a Microsoft 365 Business license.
