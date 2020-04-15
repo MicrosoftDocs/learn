@@ -8,7 +8,6 @@ metadata:
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  showCreativeCommonsFooter: true
 title: Storage and network virtualization
 summary: Learn about how storage and network resources can be virtualized to support software defined datacenters.
 abstract: | 

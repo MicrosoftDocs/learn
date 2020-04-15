@@ -66,7 +66,7 @@ Each A record requires the following details:
 
 #### CNAME record
 
-The CNAME is the canonical name, or the alias for an A record. Use CNAME when you have different domain names that all access the same website. For example, you might need a CNAME in the *wideworldimports* zone, if you want both www.wideworldimports.com and wideworldimports.com to resolve to the same IP address.
+The CNAME is the canonical name, or the alias for an A record. Use CNAME when you have different domain names that all access the same website. For example, you might need a CNAME in the *wideworldimports* zone, if you want both www\.wideworldimports.com and wideworldimports.com to resolve to the same IP address.
 
 You would create the CNAME record in the *wideworldimports* zone with the following information:
 
