@@ -1,17 +1,40 @@
 The cloud has changed the way organizations solve their business challenges, and how applications and systems are designed. The role of a solution architect is not only to deliver business value through the functional requirements of the application, but to ensure the solution is designed in ways that are scalable, resilient, efficient and secure. Solution architecture is concerned with the planning, design, implementation, and ongoing improvement of a technology system. The architecture of a system must balance and align the business requirements with the technical capabilities needed to execute those requirements. It includes an evaluation of risk, cost, and capability throughout the system and its components.
 
-#### Design a great Azure Architecture
+#### Azure Well Architected framework
 
-While there is no one-size-fits-all approach to designing an architecture, there are some universal concepts that will apply regardless of the architecture, technology, or cloud provider. While these are not all-inclusive, focusing on these concepts will help you build a reliable, secure, and flexible foundation for your application.
+The Azure Well Architected framework is a set of guiding tenants to build high quality solutions on Azure. While there is no one-size-fits-all approach to designing an architecture, there are some universal concepts that will apply regardless of the architecture, technology, or cloud provider. While these are not all-inclusive, focusing on these concepts will help you build a reliable, secure, and flexible foundation for your application.
 
-A great architecture starts with a solid foundation built on four pillars:
+The Azure Well Architected famework consists of five pillars:
 
+* Cost optimization
+* Operational excellence
+* Performance efficiency
+* Reliability
 * Security
-* Performance and scalability
-* Availability and recoverability
-* Efficiency and operations
 
-![An illustrations showing the Pillars of a great Azure architecture](../media/pillars.png)
+![An illustration showing the pillars of the Azure Well Architected framework](../media/pillars.png)
+
+## Cost optimization
+
+You will want to design your cloud environment so that it's cost-effective to operate and develop against. Inefficiency and waste in cloud spending should be identified to ensure you're spending money where we can make the greatest use of it. 
+
+![An illustration showing increasing quality, speed, and efficiency while maintaining decreasing costs.](../media/efficiency.png)
+
+## Operational excellence
+
+You need to have a good monitoring architecture in place so that you can detect failures and problems before they happen or, at a minimum, before your customers notice. You also need to have some visibility in to how your application is using its available resources, through a robust monitoring framework.
+
+## Performance efficiency
+
+For an architecture to perform well and be scalable, it should properly match resource capacity to demand. Traditionally, cloud architectures do so by scaling applications dynamically based on activity in the application. Demand for services change, so it's important for your architecture to have the ability to adjust to demand as well. By designing your architecture with performance and scalability in mind, you'll provide a great experience for your customers while being cost-effective.
+
+![An illustration showing how resources in the cloud scale dynamically based on demand resulting in highly efficient usage. On the contrary when resources are implemented at a fixed level, it results in inefficient usage during low demand and shortage during the high demand periods.](../media/performance-demand.png)
+
+## Reliability
+
+Every architect’s worst fear is having your architecture go down with no way to recover it. A successful cloud environment is designed in a way that anticipates failure at all levels. Part of anticipating these failures is designing a system that can recover from the failure, within the time required by your stakeholders and customers.
+
+:::image type="content" source="../media/system-failure.png" alt-text="An illustration showing two virtual machines in a virtual network. One of the machines is shown as failed while the other is working to service customer requests." loc-scope="other"::: <!--no-loc -->
 
 ## Security
 
@@ -20,24 +43,6 @@ Data is the most valuable piece of your organization's technical footprint. In t
 You must think about security throughout the entire lifecycle of your application, from design and implementation to deployment and operations. The cloud provides protections against a variety of threats, such as network intrusion and DDoS attacks, but you still need to build security into your application, processes, and organizational culture.
 
 ![An illustration showing the types of security threats and attacks that might affect your data in the cloud.](../media/security.png)
-
-## Performance and scalability
-
-For an architecture to perform well and be scalable, it should properly match resource capacity to demand. Traditionally, cloud architectures do so by scaling applications dynamically based on activity in the application. Demand for services change, so it's important for your architecture to have the ability to adjust to demand as well. By designing your architecture with performance and scalability in mind, you'll provide a great experience for your customers while being cost-effective.
-
-![An illustration showing how resources in the cloud scale dynamically based on demand resulting in highly efficient usage. On the contrary when resources are implemented at a fixed level, it results in inefficient usage during low demand and shortage during the high demand periods.](../media/performance-demand.png)
-
-## Availability and recoverability
-
-Every architect’s worst fear is having your architecture go down with no way to recover it. A successful cloud environment is designed in a way that anticipates failure at all levels. Part of anticipating these failures is designing a system that can recover from the failure, within the time required by your stakeholders and customers.
-
-:::image type="content" source="../media/system-failure.png" alt-text="An illustration showing two virtual machines in a virtual network. One of the machines is shown as failed while the other is working to service customer requests." loc-scope="other"::: <!--no-loc -->
-
-## Efficiency and operations
-
-You will want to design your cloud environment so that it's cost-effective to operate and develop against. Inefficiency and waste in cloud spending should be identified to ensure you're spending money where we can make the greatest use of it. You need to have a good monitoring architecture in place so that you can detect failures and problems before they happen or, at a minimum, before your customers notice. You also need to have some visibility in to how your application is using its available resources, through a robust monitoring framework.
-
-![An illustration showing increasing quality, speed, and efficiency while maintaining decreasing costs.](../media/efficiency.png)
 
 # Shared responsibility
 
