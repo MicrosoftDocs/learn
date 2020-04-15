@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.publish-static-web-app-and-api.2-exercise-setup
+uid: learn.azure.publish-static-web-app-and-api.3-exercise-sandbox
 metadata:
   title: Setup
   description: Setup the app
@@ -8,8 +8,8 @@ metadata:
   ms.author: jopapa
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  zone_pivot_groups: dev-javascript-framework
+azureSandbox: true
 title: Setup
 durationInMinutes: 1
 content: |
-  [!include[](includes/2-exercise-setup.md)]
+  [!include[](includes/3-exercise-sandbox.md)]

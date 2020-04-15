@@ -35,6 +35,7 @@ products:
 units:
   - learn.azure.publish-static-web-app-and-api.1-introduction
   - learn.azure.publish-static-web-app-and-api.2-exercise-setup
+  - learn.azure.publish-static-web-app-and-api.3-exercise-sandbox
   - learn.azure.publish-static-web-app-and-api.11-knowledge-check
   - learn.azure.publish-static-web-app-and-api.12-summary
 badge:
