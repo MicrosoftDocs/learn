@@ -75,7 +75,7 @@ In this rule, we're going to investigate the use of multiple conditions to fire 
     | Location / Latitude | Is greater than | 47.64 |
     | Location / Latitude | Is less than | 47.65 |
     | Location / Longitude | Is greater than | -122.14 |
-    | Location / Latitude | Is less than | -122.11 |
+    | Location / Longitude | Is less than | -122.11 |
     | Truck state | Equals | enroute |
 
     >[!NOTE]
