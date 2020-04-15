@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.iot.continuous-data-export-from-iot-central.summary
+metadata:
+  title: Summary
+  description: Summary
+  ms.date: 5/1/2020
+  author: PeterTurcan
+  ms.author: Olivier.Bloch
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Summary
+durationInMinutes: 4
+content: |
+  [!include[](includes/7-summary.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: 'Why do we need an Azure Maps account for this module?'
+    choices: 
+    - content: 'To enter the location of the truck on a map.'
+      isCorrect: false
+      explanation: The location of the truck is handled by the IoT Central dashboard.
+    - content: 'To calculate the best route from one location to another'
+      isCorrect: true
+      explanation: Azure Maps enables many route finding options.
+    - content: 'To display a map background'
+      isCorrect: false
+      explanation: We don't render any particular background in this module.
