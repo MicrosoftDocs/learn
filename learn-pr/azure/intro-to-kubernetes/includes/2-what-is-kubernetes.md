@@ -1,6 +1,6 @@
 Let's start with a few definitions that we'll use before our tour into Kubernetes. This overview should help you decide whether Kubernetes might be a good fit for your containerization management strategy.
 
-Before we look at what Kubernetes is, let's summarize a few key concepts that are key to the applications you develope and deploye to Kubernetes.
+Before we look at what Kubernetes is, let's summarize a few key concepts that are key to the applications you develop and deploy to Kubernetes.
 
 ### What is a container?
 
@@ -8,7 +8,7 @@ A *container* is an atomic unit of software that packages up code, dependencies,
 
 For example, each of the applications in the drone tracking solution 
 
-:::image type="content" source="../media/2-container.png" alt-text="An image of a server or application replicated as containers for cloud deployment" border="false":::
+:::image type="content" source="../media/2-container.png" alt-text="An image of a server or application that is replicated as containers for cloud deployment." border="false":::
 
 The container concept gives you three major benefits:
 
@@ -56,7 +56,7 @@ Kubernetes is a portable, extensible open-source platform for automating deploym
 
 ### Kubernetes benefits
 
-The benefits of using Kubernetes is based on the abstraction of tasks, these tasks include:
+The benefits of using Kubernetes are based on the abstraction of tasks, these tasks include:
 
 - Deployment of containers.
 
@@ -72,7 +72,7 @@ The benefits of using Kubernetes is based on the abstraction of tasks, these tas
 
 - Storage and management of sensitive information such as usernames and passwords.
 
-Keep in mind, all of the above aspects of Kubernetes requires configuration and a good understanding of the underlying technologies covered. For example, you need to understand concepts such as virtual networks, load balancers, reverse proxies, and so on to configure Kubernetes networking.
+Keep in mind, all of the above aspects of Kubernetes requires configuration and a good understanding of the underlying technologies covered. For example, you need to understand concepts such as virtual networks, load balancers, reverse proxies, and so on, to configure Kubernetes networking.
 
 ### Kubernetes considerations
 
@@ -95,4 +95,4 @@ Cloud services such Azure Kubernetes Service (AKS),  greatly reduce these challe
 
 ### The use of Docker in Kubernetes
 
-For Kubernetes to run containers, it needs to support a container runtime. Kubernetes is responsible for managing the container runtime and does not directly manage containers. The container runtime, is the object that is responsible for managing containers. For example, the container runtime starts, stops and reports on the container's status. Docker is such a container runtime.
+For Kubernetes to run containers, it needs to support a container runtime. Kubernetes is responsible for managing the container runtime and doesn't directly manage containers. The container runtime, is the object that is responsible for managing containers. For example, the container runtime starts, stops and reports on the container's status. Docker is such a container runtime.

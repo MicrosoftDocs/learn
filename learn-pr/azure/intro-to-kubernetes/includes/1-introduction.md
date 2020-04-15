@@ -4,9 +4,9 @@ The standard container management runtime is focused on managing individual cont
 
 Suppose you work at a drone management company. Your company provides a drone tracking solution to customers worldwide. Your drone tracking solution is built and deployed as microservices and includes several major applications:
 
-**[Image of the high-level architecture that describes the drone tracking solution.]**
+:::image type="content" source="../media/1-drone-solution-arch.svg" alt-text="Diagram of the high-level architecture that describes the drone tracking solution." border="false":::
 
-- A drone tracking website that includes maps and information about tracked drones.
+- A drone tracking web front end that includes maps and information about tracked drones.
 
 - A cache service that stores frequently requested information displayed on the website.
 

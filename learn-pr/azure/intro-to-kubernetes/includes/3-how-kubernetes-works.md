@@ -10,11 +10,11 @@ A cluster uses centralized software that is responsible for scheduling and contr
 
 ## Kubernetes architecture
 
-Recall from earlier, that an orchestrator is a system that deploys and manages applications. You also learned that a cluster is a set of computers that work together and viewed as a single system. You use Kubernetes as the orchestration and cluster software to deploy your apps and respond to changes in compute resource needs.
+Recall from earlier, an orchestrator is a system that deploys and manages applications. You also learned a cluster is a set of computers that work together and viewed as a single system. You use Kubernetes as the orchestration and cluster software to deploy your apps and respond to changes in compute resource needs.
 
 :::image type="content" source="../media/3-cluster-arch-components.svg" alt-text="Diagram of a Kubernetes cluster architecture that shows the components installed on the control plane and the worker nodes." border="false":::
 
-A Kubernetes cluster contains at least one master and one or more nodes. Both the master and node instances can be physical devices, virtual machines, or instances in the cloud. The default host operating system in Kubernetes is Linux, with default support for Linux-based workloads. It is, however, also possible to run Microsoft workloads using Windows Server 2019 or later on cluster nodes. For example, let's assume the data processing service in the drone tracking application is written as a .NET 4.5 application that makes use of specific Windows OS API calls. This service can only execute on nodes that run a Windows Server OS.
+A Kubernetes cluster contains at least one master and one or more nodes. Both the master and node instances can be physical devices, virtual machines, or instances in the cloud. The default host operating system in Kubernetes is Linux, with default support for Linux-based workloads. It is, however, also possible to run Microsoft workloads using Windows Server 2019 or later on cluster nodes. For example, assume the data processing service in the drone tracking application is written as a .NET 4.5 application that makes use of specific Windows OS API calls. This service can only execute on nodes that run a Windows Server OS.
 
 Let's look at both the master and worker nodes and the software that runs on each in more detail. Understanding the role of each component and where each component runs in the cluster helps you when it comes to installing Kubernetes.
 
@@ -56,13 +56,13 @@ The Scheduler is the component that is responsible for the assignment of workloa
 
 #### What is the controller manager?
 
-The controller manager is responsible for launching the controllers configured for a cluster as well as monitoring them through the API server.
+The controller manager is responsible for launching and monitoring the controllers configured for a cluster through the API server.
 
 Kubernetes makes use of controllers to track the state of objects in the cluster. Each controller runs in a non-terminating loop while watching and responding to events in the cluster. For example, there are controllers to monitor nodes, containers, endpoints, and so on.
 
-The controller communicates with the API server to determine the state of the object. If the current state is different from the desired state of the object, then the controller will take action to ensure the desired state.
+The controller communicates with the API server to determine the state of the object. If the current state is different from the wanted state of the object, then the controller will take action to ensure the wanted state.
 
-Let's assume one of three containers running in your cluster stops responding and has died. In this case, a controller decides whether it's required to launch new containers to ensure that your applications are always available. If the desired state is to run three containers at any time, then a new container is scheduled to run.
+Let's assume one of three containers running in your cluster stops responding and has died. In this case, a controller decides whether it's required to launch new containers to ensure that your applications are always available. If the wanted state is to run three containers at any time, then a new container is scheduled to run.
 
 #### What is the cloud controller manager?
 
@@ -88,17 +88,31 @@ kubelet is responsible for monitoring the nodes and making sure that the contain
 
 #### What is the Container runtime?
 
-The Container Runtime is the underlying software that runs containers on a Kubernetes cluster. The runtime is responsible for fetching, starting, and stopping container images. Kubernetes supports several container runtimes, including but not limited to Docker, rkt, CRI-O, containerd, and frakti. The support for many container runtime types are based on the Container Runtime Interface (CRI). The CRI is a plugin design that provides a container runtime interface and allows Kubelet to communicate with the available container runtime.
+The Container Runtime is the underlying software that runs containers on a Kubernetes cluster. The runtime is responsible for fetching, starting, and stopping container images. Kubernetes supports several container runtimes, including but not limited to Docker, rkt, CRI-O, containerd, and frakti. The support for many container runtime types is based on the Container Runtime Interface (CRI). The CRI is a plugin design that provides a container runtime interface and allows Kubelet to communicate with the available container runtime.
 
 The default container runtime in Azure Kubernetes Service (AKS) is Docker. However, you may also use kata-containers and containerd. Keep in mind that the Windows support for containerd is experimental.
 
 #### What is kube-proxy?
 
-Kube-proxy is responsible for local cluster networking and runs on each node. It's kube-proxy's responsibility to make sure that each node has a unique IP address. Kube-proxy also implements rules to handle routing and load-balancing of traffic using IPTABLES and IPVS. Kube-proxy does not provide DNS services by itself. A DNS cluster add-on based on coreDNS is recommended and installed by default.
+Kube-proxy is responsible for local cluster networking and runs on each node. It's kube-proxy's responsibility to make sure that each node has a unique IP address. Kube-proxy also implements rules to handle routing and load-balancing of traffic using IPTABLES and IPVS. Kube-proxy doesn't provide DNS services by itself. A DNS cluster add-on based on coreDNS is recommended and installed by default.
+
+## How to interact with a Kubernetes cluster
+
+Kubernetes provides a command-line tool called `kubectl` that you use to manage your cluster. You use `kubectl` to send commands to the cluster's control plane or fetch information about all Kubernetes objects via the API server.
+
+`kubectl` uses a configuration file to includes configuration information to identify a *Cluster*, a *User*, and a *Context*.
+
+The **Cluster** configuration allows you to specify a cluster name, certificate information, and the service API endpoint associated with the cluster. This definition enables you to connect from a single workstation to multiple clusters.
+
+The **User** configuration allows you to specify the users and their permissions levels when accessing the configured clusters.
+
+The **Context** configuration allows you to group clusters and users using a friendly name. For example, you may have a 'dev-cluster' and a 'prod-cluster' to identify your development and production clusters.
+
+You can configure `kubectl` to connect to multiple clusters by providing the correct context as part of the command-line syntax.
 
 ## Kubernetes Pods
 
-The workloads you run on Kubernetes are containerized applications. However, unlike in a docker environment, you can't run containers directly on Kubernetes. You have to package the container into a Kubernetes object. This object is called a Pod and is the smallest object that you can create in Kubernetes.
+The workloads you run on Kubernetes are containerized applications. However, unlike in a docker environment, you can't run containers directly on Kubernetes. You package the container into a Kubernetes object. This object is called a Pod and is the smallest object that you can create in Kubernetes.
 
 A pod represents a single instance of an application. A single pod can also group of one or more containers. However, a pod typically doesn't contain multiples of the same application.
 
@@ -120,7 +134,7 @@ Since you can potentially create many pods that are running on many nodes, it ca
 
 Kubernetes pods have a distinct lifecycle that impacts the way you deploy, run, and update pods.
 
-You start by submitting the pod YAML manifest to the cluster. Once submitted and persisted to the cluster, the manifest file defines the desired state of the pod. The Scheduler schedules the pod to a healthy node with enough resources to run the pod.
+You start by submitting the pod YAML manifest to the cluster. Once submitted and persisted to the cluster, the manifest file defines the wanted state of the pod. The Scheduler schedules the pod to a healthy node with enough resources to run the pod.
 
 :::image type="content" source="../media/3-pod-lifecycle.svg" alt-text="Diagram that shows the lifecycle of the pod." border="false":::
 
