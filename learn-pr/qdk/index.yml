@@ -29,9 +29,9 @@ roles:
 products:
 - Quantum Development Kit
 units:
-- learn.introduction-to-qdk.introduction
-- learn.introduction-to-qdk.install
-- learn.introduction-to-qdk.quantum-random-number-generator
-- learn.introduction-to-qdk.summary
+- learn.qdk.introduction-to-qdk.introduction
+- learn.qdk.introduction-to-qdk.install
+- learn.qdk.introduction-to-qdk.quantum-random-number-generator
+- learn.qdk.introduction-to-qdk.summary
 badge:
   uid: learn.qdk.introduction-to-qdk.badge
