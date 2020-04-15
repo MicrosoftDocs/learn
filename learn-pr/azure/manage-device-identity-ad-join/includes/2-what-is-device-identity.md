@@ -16,7 +16,7 @@ By combining Azure AD with single sign-on, users can access services and apps th
 
 You have three device registration options to add a device to your Azure AD: 
 
-- **Azure AD registered** devices fall into the Bring Your Own Device (BYOD) category. These devices are usually privately owned or mobile devices that use a personal  Microsoft account or another local account. This method of device registration is the least restrictive as it supports devices running Windows 10, iOS, iPadOS, Android, and MacOS. Device security is typically provided from a password, PIN, pattern, or Windows Hello.
+- **Azure AD registered** devices fall into the Bring Your Own Device (BYOD) category. These devices are typically privately owned or mobile devices that use a personal  Microsoft account or another local account. This method of device registration is the least restrictive as it supports devices running Windows 10, iOS, iPadOS, Android, and macOS. Device security is typically provided from a password, PIN, pattern, or Windows Hello.
 
 - **Azure AD joined** devices are owned by your organization. Users access your cloud-based Azure AD through their work account. Device identities only exist in the cloud. This option is only available to Windows 10 or Windows Server 2019 devices. Windows Server 2019 Server Core installation isn't supported. Security for this option uses either a password or Windows Hello.
 

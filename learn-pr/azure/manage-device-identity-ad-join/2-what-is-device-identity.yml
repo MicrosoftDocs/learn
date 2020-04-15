@@ -26,7 +26,7 @@ quiz:
     - content: "Windows 10 and macOS"
       isCorrect: false
       explanation: "Azure AD register supports any device running Windows 10, iOS, iPadOS, Android, and macOS."
-  - content: "What device security sign in options are supported by Azure AD join?"
+  - content: "What device security sign-in options are supported by Azure AD join?"
     choices:
     - content: "An Azure AD organizational account with password, PIN, pattern, or Windows Hello"
       isCorrect: false
