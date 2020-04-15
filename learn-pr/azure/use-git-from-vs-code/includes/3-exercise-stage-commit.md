@@ -2,7 +2,7 @@ If you've worked with Git, you've probably relied heavily on the `git status` co
 
 ## What you'll accomplish in this exercise
 
-Having made a change to the source code in the preceding exercise, you now have an unstaged change that you need to commit. After that, you want to push the new branch with your new commit to your forked repository. You'll do these things by using Visual Studio Code's integrated Git tooling.
+Having made a change to the source code in the preceding exercise, you now have an unstaged change that you need to commit. After that, you want to push the new branch with your new commit to your forked repository. You'll do these things by using integrated Git tooling in Visual Studio Code.
 
 ### Step 1 - Open the Source Control view to view unstaged changes
 
