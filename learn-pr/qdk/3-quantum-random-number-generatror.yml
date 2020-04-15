@@ -10,6 +10,6 @@ metadata: Tutorial that teaches how to create a aplication with Q# and Python to
   ms.topic: tutorial
   ms.prod: learning-qdk
   ROBOTS: NOINDEX
-durationInMinutes: 2
+durationInMinutes: 25
 content: |
   [!include[](includes/3-Create a Quantum Random Number Generator.md)]
