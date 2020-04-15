@@ -9,7 +9,6 @@ metadata:
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  showCreativeCommonsFooter: true
 title: Virtualization - Sharing cloud resources
 summary: |
   Dive deeper into how the cloud works by understanding virtualization. How are computing power, memory, input and output, networking, and storage virtualized?
@@ -30,6 +29,7 @@ prerequisites: |
   - Know what datacenters are and why they exist
   - Know how datacenters are set up, powered, and provisioned
   - Understand how cloud resources are provisioned and metered
+showCreativeCommonsFooter: true
 iconUrl: /learn/achievements/cmu-cloud-developer/virtualization-share-cloud-resources.svg
 levels:
 - beginner
@@ -45,7 +45,7 @@ modules:
 - learn.cmu-cloud-computing.how-cloud-works.cmu-virtualize-computing-power
 - learn.cmu-cloud-computing.how-cloud-works.cmu-virtualize-memory
 - learn.cmu-cloud-computing.how-cloud-works.cmu-virtualize-input-output
-- learn.cmu-cloud-computing.how-cloud-works.cmu-virtualization-case-studies
+#- learn.cmu-cloud-computing.how-cloud-works.cmu-virtualization-case-studies
 - learn.cmu-cloud-computing.how-cloud-works.cmu-storage-network-virtualization
 trophy:
   uid: learn.cmu-cloud-computing.how-cloud-works.trophy
