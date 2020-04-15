@@ -75,7 +75,7 @@ By default, two virtual hard disks (VHDs) will be created for your Windows VM:
 
 #### What about data?
 
-You can store data on the C: drive along with the OS, but a better approach is to create dedicated _data disks_. You can create and attach additional disks to the VM. Each disk can hold up to 4095 GB of data, with the maximum amount of storage determined by the VM size you select.
+You can store data on the C: drive along with the OS, but a better approach is to create dedicated _data disks_. You can create and attach additional disks to the VM. Each data disk can hold up to 32,767 gibibytes (GiB) of data, with the maximum amount of storage determined by the VM size you select.
 
 > [!NOTE]
 > An interesting capability is to create a VHD image from a real disk. This allows you to easily migrate _existing_ information from an on-premises computer to the cloud.

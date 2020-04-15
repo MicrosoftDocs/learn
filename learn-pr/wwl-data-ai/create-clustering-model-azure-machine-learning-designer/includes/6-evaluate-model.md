@@ -6,7 +6,8 @@ Evaluating a clustering model is made difficult by the fact that there are no pr
 2. In the pane on the left, in the **Model Scoring & Evaluation** section, drag an **Evaluate Model** module to the canvas, under the **Train Clustering Model** module, and connect the **Results dataset** (right) output of the **Train Clustering Model** module to the **Scored dataset** (left) input of the **Evaluate Model** module.
 3. Ensure your pipeline looks like this:
 
-<p style='text-align:center'><img src='media/evaluate-cluster.jpg' alt='Evaluate Model module added to Score Model module'/></p>
+> [!div class="centered"]
+> ![Evaluate Model module added to Score Model module](../media/evaluate-cluster.png)
 
 4. Select **Submit**, and run the pipeline using the existing experiment named **iris-training**.
 5. Wait for the experiment run to complete.

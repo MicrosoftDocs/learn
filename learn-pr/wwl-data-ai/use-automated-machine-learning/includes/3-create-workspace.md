@@ -19,6 +19,6 @@ Follow these steps to create a workspace:
 4. On the **Overview** page for your workspace, launch Azure Machine Learning Studio (or open a new browser tab and navigate to [https://ml.azure.com](https://ml.azure.com)), and sign into Azure Machine Learning studio using your Microsoft account.
 
 >[!IMPORTANT] 
->If you intend to use an Azure Machine Learning workspace that you created previously using the **Basic** edition, upgrade it to **Enterprise** edition to make the *designer* interface available.
+>If you intend to use an Azure Machine Learning workspace that you created previously using the **Basic** edition, upgrade it to **Enterprise** edition to make the *automated machine learning* interface available.
 
 You can manage your workspace using the Azure portal, but for data scientists and Machine Learning operations engineers, Azure Machine Learning studio provides a more focused user interface for managing workspace resources.

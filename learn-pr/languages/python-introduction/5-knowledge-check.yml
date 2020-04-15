@@ -3,7 +3,7 @@ uid: learn.languages.python-introduction.knowledge-check
 title: Knowledge check
 metadata:
   title: Check your knowledge
-  description: Review what you've learned
+  description: Review what you've learned.
   ms.date: 12/04/2019
   author: bobtabor-msft
   ms.author: rotabor
@@ -13,32 +13,32 @@ durationInMinutes: 3
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which tool can you use to pause the execution of your program, step through each line of Python code and watch as it executes, observe changes your code makes to values stored in memory?"
+  - content: "Which tool lets you pause program execution, step through each line of Python code to watch as it runs, and observe changes your code makes to values stored in RAM?"
     choices:
     - content: "A compiler"
       isCorrect: false
-      explanation: "The Python compiler converts human readable Python into a more compact syntax that is interpreted and executed."
+      explanation: "A Python compiler converts human readable Python into a more compact syntax that is interpreted and run."
     - content: "An interpreter"
       isCorrect: false
-      explanation: "The Python interpreter executes the code that was created by the compiler."
+      explanation: "A Python interpreter runs the code that a compiler created."
     - content: "An editor"
       isCorrect: false
       explanation: "An editor is the tool you use to write your code."
     - content: "A debugger"
       isCorrect: true
       explanation: "Correct!"
-  - content: "Which is _not_ a step in the software development process?"
+  - content: "Which of the following steps is _not_ part of the software development process?"
     choices:
     - content: "Software vendor acquisition"
       isCorrect: true
-      explanation: "Correct!  While choosing vendors for tools and services might be an important business consideration, it's not part of the software development process."
+      explanation: "Correct! While choosing vendors for tools and services might be an important business consideration, it's not part of the software development process."
     - content: "Testing code"
       isCorrect: false
-      explanation: "Testing code is the part of the software development process."
+      explanation: "Testing code is part of the software development process."
     - content: "Analysis of the requirements"
       isCorrect: false
-      explanation: "Analysis is the part of the software development process."
+      explanation: "Analysis is part of the software development process."
     - content: "Writing code"
       isCorrect: false
-      explanation: "Writing code is the part of the software development process."  
+      explanation: "Writing code is part of the software development process."
   

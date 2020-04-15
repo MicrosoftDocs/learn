@@ -2,9 +2,9 @@ CORS is nifty for production, but it's a bummer when you're trying to build an a
 
 ## Allow CORS access for development
 
-1. If the Function app is running, press the "disconnect" button in the debug bar to terminate it.
+1. If the Function app is running, press the "disconnect" button in the debug bar to terminate it.im
 
-   ![VS Code debug bar with a red box outlining the disconnect button](../media/terminate-debug-process.png)
+    :::image type="content" source="../media/terminate-debug-process.png" alt-text="Screenshot of VS Code debug bar with a red box outlining the disconnect button." loc-scope="vs-code":::
 
 1. Open the `api/local.settings.json` file.
 
@@ -40,7 +40,7 @@ CORS is nifty for production, but it's a bummer when you're trying to build an a
 
 1. The application loads in the data from the API.
 
-   ![Products Manager application shown populated with data](../media/working-application.png)
+   :::image type="content" source="../media/working-application.png" alt-text="Screenshot of web browser displaying the Products Manager application shown populated with data." loc-scope="other":::
 
 1. Try creating, updating, and deleting products to ensure that all endpoints work.
 

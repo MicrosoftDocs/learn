@@ -4,7 +4,7 @@ The terms *drawer navigation* and *master-detail navigation* are often used inte
 
 *Drawer navigation* is a navigation pattern that uses a slide-out drawer to host a menu of pages. It has a separate content area to display the user's selected page.
 
-![Illustration that shows a drawer menu of conference app pages. An arrow indicates how selecting an entry from the drawer loads new content into the details section.](../media/2-drawer-navigation-illustration.png)
+![Illustration showing a drawer menu of conference app pages. An arrow indicates how selecting an entry from the drawer loads new content into the details section.](../media/2-drawer-navigation-illustration.png)
 
 This pattern consists of an off-screen piece of UI called the *drawer*. Typically, the drawer opens when a user presses a menu button. Most apps use a menu button that consists of three horizontal lines stacked vertically (commonly referred to as a "hamburger icon"). When the user selects an item from the drawer, the drawer is dismissed and the relevant page is shown in the content area.
 

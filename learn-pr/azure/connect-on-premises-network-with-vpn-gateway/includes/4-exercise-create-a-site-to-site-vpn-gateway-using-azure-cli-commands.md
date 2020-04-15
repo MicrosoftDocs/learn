@@ -89,14 +89,14 @@ az network vnet-gateway list \
 
 Remember to wait until the lists of gateways are successfully returned. Also, remember that the local network gateway resources define the settings of the *remote* gateway and network that they're named after. For example, the **LNG-Azure-VNet-1** local network gateway contains information like the IP address and networks for **Azure-VNet-1**.
 
-1. Run this command in Cloud Shell to retrieve the IPv4 address assigned to **PIP-VNG-Azure-VNet-1**.
+1. Run this command in Cloud Shell to retrieve the IPv4 address assigned to **PIP-VNG-Azure-VNet-1** and store it in a variable.
 
     ```bash
-    PIPVNGAZUREVNET1="$(az network public-ip show \
+    PIPVNGAZUREVNET1=$(az network public-ip show \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
         --name PIP-VNG-Azure-VNet-1 \
         --query "[ipAddress]" \
-        --output tsv)"
+        --output tsv)
     ```
 
 1. Run this command in Cloud Shell to update the **LNG-Azure-VNet-1** local network gateway so that it points to the public IP address attached to the **VNG-Azure-VNet-1** virtual network gateway.
@@ -108,14 +108,14 @@ Remember to wait until the lists of gateways are successfully returned. Also, re
         --gateway-ip-address $PIPVNGAZUREVNET1
     ```
 
-1. Run this command in Cloud Shell to retrieve the IPv4 address assigned to **PIP-VNG-HQ-Network**.
+1. Run this command in Cloud Shell to retrieve the IPv4 address assigned to **PIP-VNG-HQ-Network** and store it in a variable.
 
     ```bash
-    PIPVNGHQNETWORK="$(az network public-ip show \
+    PIPVNGHQNETWORK=$(az network public-ip show \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
         --name PIP-VNG-HQ-Network \
         --query "[ipAddress]" \
-        --output tsv)"
+        --output tsv)
     ```
 
 1. Run this command in Cloud Shell to update the **LNG-HQ-Network** local network gateway so that it points to the public IP address attached to the **VNG-HQ-Network** virtual network gateway.

@@ -18,7 +18,7 @@ In Azure Machine Learning, operations that you run are called *experiments*. Fol
             - **Primary metric**: Normalized root mean square error (more about this later!)
             - **Automated featurization**: Selected
             - **Explain best model**: Unselected
-            - **Blocked algorithms**: *Block <u>all</u> other than **RandomForest** and **LightGBM** - normally you'd want to try as many as possible, but doing so will take a lot of time!*
+            - **Blocked algorithms**: *Block **all** other than **RandomForest** and **LightGBM** - normally you'd want to try as many as possible, but doing so will take a lot of time!*
 3. When you finish submitting the automated ML run details, it will start automatically. Wait for the run status to change from *Preparing* to *Running* (this may take five minutes or so, as the cluster nodes need to be initialized before training can begin - now might be a good time for a coffee break!). You may need to select **&#8635; Refresh** periodically.
 4. When the run status changes to *Running*, view the **Models** tab and observe as each possible combination of training algorithm and pre-processing steps is tried and the performance of the resulting model is evaluated. The page will automatically refresh periodically, but you can also select **&#8635; Refresh**.
 5. After a few models have been trained and evaluated (with a status of **Completed**), select **&#10754; Cancel** to cancel the remaining iterations
@@ -35,8 +35,10 @@ Although you canceled the automated machine learning run, some models were train
 
 The **Predicted vs. True** chart should show a diagonal trend in which the predicted value correlates closely to the true value. A dotted line shows how a perfect model should perform, and the closer the line for your model's average predicted value is to this, the better its performance. A histogram below the line chart shows the distribution of true values.
 
-<p style='text-align:center'><img src='media/predicted-vs-true.png' alt='Predicted vs True chart'/></p>
+> [!div class="centered"]
+> ![Predicted vs True chart](../media/predicted-vs-true.png)
 
 The **Residual Histogram** shows the frequency of residual value ranges. Residuals represent variance between predicted and true values that can't be explained by the model - in other words, errors; so what you should hope to see is that the most frequently occurring residual values are clustered around 0 (in other words, most of the errors are small), with fewer errors at the extreme ends of the scale.
 
-<p style='text-align:center'><img src='media/residual-histogram.png' alt='Residuals histogram'/></p>
+> [!div class="centered"]
+> ![Residuals histogram](../media/residual-histogram.png)

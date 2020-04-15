@@ -32,7 +32,7 @@ Perform the following steps in the Azure portal to assess if connectivity betwee
 ![Event ID 5002](../media/5-event-id-5002.png "Event ID 5002")
 
 17. Close the Event Viewer and all other windows that were opened.
-18. Close the Remote Desktop Connection application.
+18. Sign out of the Remote Desktop Connection application.
 
 ## Schedule Update Deployments
 

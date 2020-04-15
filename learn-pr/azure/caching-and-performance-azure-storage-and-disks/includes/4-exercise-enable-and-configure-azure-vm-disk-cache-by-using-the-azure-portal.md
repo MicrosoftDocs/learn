@@ -100,4 +100,4 @@ Let's move on to data disk cache configuration. To configure a disk, we'll need 
 
 In this exercise, we used the Azure portal to configure caching on a new VM, change cache settings on an existing disk, and configure caching on a new data disk. The following screenshot shows the final configuration:
 
-![Screenshot of the Azure portal showing the OS disk and new data disk in the Disks section of our VM pane, with both disks set to Read-only caching.](../media/disks-final-config-portal.PNG)
+![Screenshot showing the OS disk and new data disk in the Disks section of our VM pane, with both disks set to Read-only caching.](../media/disks-final-config-portal.PNG)

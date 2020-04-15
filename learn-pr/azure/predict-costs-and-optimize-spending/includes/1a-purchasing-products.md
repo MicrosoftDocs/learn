@@ -1,6 +1,6 @@
-Products and services in Azure are arranged by category, which has various resources that you can provision. You select the Azure products and services that fit your requirements, and your account is billed according to Azure's pay-for-what-you-use model.
+Products and services in Azure are arranged by category, with various resources that you can provision. You select the Azure products and services that fit your requirements, and your account is billed according to Azure's pay-for-what-you-use model.
 
-![Depiction of the various Azure products with the Featured products selection highlighted, displaying names and short descriptions of those products](../media/1a-Azure-products-overview.png)
+![Screenshot the featured products list from the Azure Pricing Calculator, displaying names and short descriptions of featured products.](../media/1a-Azure-products-overview.png)
 
 ### Usage meters
 
@@ -8,22 +8,16 @@ When you provision an Azure resource, Azure creates one or more meter instances 
 
 For example, a single virtual machine that you provision in Azure might have the following meters tracking its usage:
 
-:::row:::
-  :::column:::
 - Compute Hours
 - IP Address Hours
 - Data Transfer In
 - Data Transfer Out
 - Standard Managed Disk
-  :::column-end:::
-  :::column:::
 - Standard Managed Disk Operations
 - Standard IO-Disk
 - Standard IO-Block Blob Read
 - Standard IO-Block Blob Write
 - Standard IO-Block Blob Delete
-  :::column-end:::
-:::row-end:::
 
 The meters and pricing vary per product and often have different pricing tiers based on the size or capacity of the resource. Check the documentation for specific details on what each service area costs.
 
