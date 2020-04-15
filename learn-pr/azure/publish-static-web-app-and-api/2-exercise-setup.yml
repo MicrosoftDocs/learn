@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.publish-static-web-app-and-api.2-exercise-setup
+metadata:
+  title: Setup
+  description: Setup the app
+  ms.date: 04/10/2020
+  author: johnpapa
+  ms.author: jopapa
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Setup
+durationInMinutes: 1
+content: |
+  [!include[](includes/2-exercise-setup.md)]

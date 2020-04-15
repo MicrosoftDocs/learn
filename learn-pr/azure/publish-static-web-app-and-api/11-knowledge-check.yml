@@ -1,0 +1,31 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.publish-static-web-app-and-api.11-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Three multiple-choice questions
+  ms.date: 05/01/2020
+  author: jopapa
+  ms.author: jopapa
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/11-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: "How would you change the route endpoint for a function in a folder named _vacations-get_ to `vacations`?"
+      choices:
+        - content: "The `route` property in the `bindings` array `req` object in the _function.json_ file"
+          isCorrect: true
+          explanation: "Correct.  By convention, the `req` object will default the route to the same name as the folder that contains the function. When you want to override the name of the route, you can add a `route` property to the `req` object in the `bindings` array of the _function.json_."
+        - content: "The `methods` property in the `bindings` array `req` object in the _function.json_ file"
+          isCorrect: false
+          explanation: "Incorrect. The `methods` property defines which HTTP methods will be directed to the route."
+        - content: "The `authLevel` property in the `bindings` array `req` object in the _function.json_ file"
+          isCorrect: false
+          explanation: "Incorrect. The `authLevel` property defines the authorization level required to access the function."
+        - content: "The `redirect` property in the `bindings` array `req` object in the _function.json_ file"
+          isCorrect: false
+          explanation: "Incorrect. There isn't redirect property in the `bindings` array `req` object."
