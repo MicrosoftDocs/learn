@@ -43,7 +43,7 @@ The rapidly expanding information and communications technology (ICT) that is pe
 
 _Figure 2: Predicted growth of data from 2009 to 2020_<sup>[1][^1]</sup>
 
-Organizations are trying to leverage or cope with the massive amounts of data that is growing at ever-increasing rates. Microsot, Google, Yahoo, and Facebook have gone from processing gigabytes and terabytes to the petabyte range, which puts immense pressure on their computing infrastructures that need to be available 24/7 and must scale seamlessly as the amount of data produced rises exponentially. These are the challenges to which present and future storage technologies must respond.
+Organizations are trying to leverage or cope with the massive amounts of data that is growing at ever-increasing rates. Microsoft, Google, Yahoo, and Facebook have gone from processing gigabytes and terabytes to the petabyte range, which puts immense pressure on their computing infrastructures that need to be available 24/7 and must scale seamlessly as the amount of data produced rises exponentially. These are the challenges to which present and future storage technologies must respond.
 <br>
 ***
 ### References
