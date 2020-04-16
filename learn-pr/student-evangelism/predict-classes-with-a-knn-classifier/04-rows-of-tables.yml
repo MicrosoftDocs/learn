@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.predict-classes-with-a-knn-classifier.rows-of-tables
+title: Rows Of Tables
+metadata:
+  title: Rows Of Tables
+  description: '** TODO: FILL IN **'
+  ms.date: 19/03/2020
+  author: sauravmittal
+  ms.author: leescott
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/04-rows-of-tables.md)]
