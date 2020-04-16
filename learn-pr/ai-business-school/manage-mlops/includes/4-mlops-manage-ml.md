@@ -4,7 +4,7 @@ In this unit, we'll describe the process of managing, monitoring, and retraining
 
 ## ML lifecycle: why do ML models need to be monitored and retrained
 
-All models—including those that work perfectly on deployment—require monitoring and retraining over time to maintain high performance. 
+All models—including those that work perfectly on deployment—require monitoring and retraining over time to maintain high performance.
 
 :::row:::
 :::column span="2":::
