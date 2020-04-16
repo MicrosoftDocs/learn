@@ -40,7 +40,7 @@ exploring what tools Microsoft offers to quantum developers and how you can star
 
 In the following units you will go through these steps:
 
-- Install the QDK (*if we are enabling embedded coding experience, we may chose a fixed method and environment)
+- Install the QDK (*may be a different experience if Q# stand-alone executable is available)
 - Create a Q# project
 - Combine Q# and Python to create a quantum random number generator
 - As a call to action: learn more about QDK and Q# on the docs page, practice on quanutm katas, contribute to the QDK 
