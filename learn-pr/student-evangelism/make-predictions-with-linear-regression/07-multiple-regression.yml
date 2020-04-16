@@ -1,13 +1,14 @@
+### YamlMime:ModuleUnit
 uid: learn.student-evangelism.make-predictions-with-linear-regression.multiple-regression
 title: Multiple Regression
 metadata:
   title: Multiple Regression
-  description: '** TODO: FILL IN **'
+  description: Multiple Linear Regression
   ms.date: 19/03/2020
   author: sauravmittal
   ms.author: leescott
   ms.topic: interactive-tutorial
   ms.prod: azure
-durationInMinutes: 5
+durationInMinutes: 10
 content: |
   [!include[](includes/07-multiple-regression.md)]

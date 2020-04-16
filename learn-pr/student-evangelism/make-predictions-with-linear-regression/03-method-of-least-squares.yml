@@ -2,12 +2,12 @@ uid: learn.student-evangelism.make-predictions-with-linear-regression.method-of-
 title: Method Of Least Squares
 metadata:
   title: Method Of Least Squares
-  description: '** TODO: FILL IN **'
+  description: Understand the method of least squares
   ms.date: 19/03/2020
   author: sauravmittal
   ms.author: leescott
   ms.topic: interactive-tutorial
   ms.prod: azure
-durationInMinutes: 5
+durationInMinutes: 10
 content: |
   [!include[](includes/03-method-of-least-squares.md)]

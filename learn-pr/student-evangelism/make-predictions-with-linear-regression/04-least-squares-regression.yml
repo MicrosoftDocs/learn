@@ -2,12 +2,12 @@ uid: learn.student-evangelism.make-predictions-with-linear-regression.least-squa
 title: Least Squares Regression
 metadata:
   title: Least Squares Regression
-  description: '** TODO: FILL IN **'
+  description: Regression using least squares
   ms.date: 19/03/2020
   author: sauravmittal
   ms.author: leescott
   ms.topic: interactive-tutorial
   ms.prod: azure
-durationInMinutes: 5
+durationInMinutes: 7
 content: |
   [!include[](includes/04-least-squares-regression.md)]

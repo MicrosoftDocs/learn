@@ -1,6 +1,6 @@
 uid: learn.student-evangelism.make-predictions-with-linear-regression
 metadata:
-  title: Make Predictions With Linear Regression
+  title: Learn linear regression
   description: Learn
   ms.date: 19/03/2020
   author: sauravmittal
@@ -8,7 +8,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: azure
 title: Make Predictions With Linear Regression
-summary: '** TODO: FILL IN **'
+summary: Learn how to make predictions using linear regression
 abstract: |
   In this module, you will:
   - PLACEHOLDER
@@ -29,6 +29,6 @@ units:
 - learn.student-evangelism.make-predictions-with-linear-regression.visual-diagnostics
 - learn.student-evangelism.make-predictions-with-linear-regression.numerical-diagnostics
 - learn.student-evangelism.make-predictions-with-linear-regression.multiple-regression
-- learn.student-evangelism.make-predictions-with-linear-regression.multiple-summary
+- learn.student-evangelism.make-predictions-with-linear-regression.summary
 badge:
   uid: learn.student-evangelism.make-predictions-with-linear-regression.badge
