@@ -29,7 +29,7 @@ In this module you will:
 - Ability to code in any programming language, at the beginner level
 - Experience using Visual Studio Code, at the beginner level *may not need if we enable embedded coding excercises 
 
-## Why are you here?
+## Learning scenario
 
 Since you are here, you are probably interested at some level in quantum computing. Maybe you are a quantum computing researcher who wants to try the Microsoft Quantum Development Kit or a hobbyist who want to understand what quantum programming looks like. You may wonder how to contribute your own projects to this emerging industry. In any case, this is a great place to start
 exploring what tools Microsoft offers to quantum developers and how you can start today to write your own quantum programs.
