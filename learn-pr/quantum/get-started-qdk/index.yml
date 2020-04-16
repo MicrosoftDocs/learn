@@ -8,7 +8,7 @@ metadata:
   ms.author: v-edsanc
   ms.topic: tutorial
   ms.prod: learning-quantum
-title: Introduction to the Quantum Development Kit
+title: Get started with quantum computing with the Quantum Development Kit
 summary: Learn how to install and use the Quantum Development Kit to combine quantum and classical programs to create a quantum random number generator.
 abstract: |
   In this module you will:
