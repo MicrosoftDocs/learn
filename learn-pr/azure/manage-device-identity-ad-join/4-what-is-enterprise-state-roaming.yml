@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.manage-device-identity-ad-join.what-is-enterprise-state-roaming
-title: What is enterprise state roaming?
+title: What is Enterprise State Roaming?
 metadata:
-  title:  What is enterprise state roaming?
-  description: Learn about enterprise state roaming.
-  ms.date: 04/15/2020
+  title:  What is Enterprise State Roaming?
+  description: Learn about Enterprise State Roaming.
+  ms.date: 04/16/2020
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial
@@ -26,14 +26,14 @@ quiz:
     - content: "Any data that hasn't been accessed for more than 360 days."
       isCorrect: true
       explanation: "Any data that hasn't been accessed for one year or more is considered stale and is automatically deleted."
-  - content: "Name one of the benefits of using enterprise state roaming?"
+  - content: "Name one of the benefits of using Enterprise State Roaming?"
     choices:
     - content: "Enhanced security"
       isCorrect: true
       explanation: "All applicable device data is encrypted using Azure Rights Management before synchronizing with the cloud. All stored data remains encrypted."
     - content: "Separation of cloud and device data"
       isCorrect: false
-      explanation: "The three benefits of enterprise state roaming are: Separation of corporate and consumer data, enhanced security, and better management."
+      explanation: "The three benefits of Enterprise State Roaming are: Separation of corporate and consumer data, enhanced security, and better management."
     - content: "Improved consumer data management"
       isCorrect: false
-      explanation: "The three benefits of enterprise state roaming are: Separation of corporate and consumer data, enhanced security, and better management."
+      explanation: "The three benefits of Enterprise State Roaming are: Separation of corporate and consumer data, enhanced security, and better management."

@@ -4,7 +4,7 @@ title: What is the device identity in Azure?
 metadata:
   title:  What is device identity in Azure?
   description: Learn about device identity in Azure.
-  ms.date: 04/15/2020
+  ms.date: 04/16/2020
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial
@@ -19,22 +19,22 @@ quiz:
     choices:
     - content: "Windows 10, iOS, Android, and macOS"
       isCorrect: true
-      explanation: "Azure AD register supports any device running Windows 10, Windows Server 2019, iOS, iPadOS, Android, and macOS."
+      explanation: "Azure AD register supports devices that run Windows 10, iOS, iPadOS, Android, and macOS."
     - content: "Windows 7, Windows 8.1, and Windows 10 only."
       isCorrect: false
-      explanation: "Azure AD register supports any device running Windows 10, Windows Server 2019, iOS, iPadOS, Android, and macOS."
+      explanation: "Azure AD register supports devices that run Windows 10, iOS, iPadOS, Android, and macOS."
     - content: "Windows 10 and macOS"
       isCorrect: false
-      explanation: "Azure AD register supports any device running Windows 10, Windows Server 2019, iOS, iPadOS, Android, and macOS."
+      explanation: "Azure AD register supports devices that run Windows 10, iOS, iPadOS, Android, and macOS."
   - content: "What device security sign-in options are supported by Azure AD join?"
     choices:
     - content: "An Azure AD organizational account with password, PIN, pattern, or Windows Hello"
       isCorrect: false
       explanation: "No, Azure AD join doesn't support PIN or pattern."
-    - content: "An Azure AD organizational account with password or Windows Hello, and MFA"
+    - content: "An Azure AD organizational account with password or Windows Hello, and multi-factor authentication"
       isCorrect: true
-      explanation: "Azure AD join supports Windows 10 devices where users sign in by using their organizational account with a password or Windows Hello. Azure MFA is also supported."
-    - content: "A Microsoft account with password, Windows Hello, and MFA."
+      explanation: "Azure AD join supports Windows 10 or Windows Server 2019 devices where users sign in by using their organizational account with a password or Windows Hello. Azure Multi-Factor Authentication is also supported."
+    - content: "A Microsoft account with password, Windows Hello, and multi-factor authentication."
       isCorrect: false
       explanation: "No, Azure AD join requires users to access your Azure AD organization through their Azure AD organizational account."
   - content: "When is Conditional Access applied?"
