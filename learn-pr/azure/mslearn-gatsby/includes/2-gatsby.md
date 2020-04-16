@@ -83,11 +83,11 @@ The easiest way to find out what query to write is to go to the GraphQL endpoint
 
 There you will find a view like this:
 
-![GraphQL view](todo)
+TODO GraphQL view iamge
 
 As you expand the node you want to your left you will see how the query is constructed on your right
 
-![Constructed query](TODO)
+TODO GraphQL constructed query
 
 Copy the query and put it in a statement like this:
 
