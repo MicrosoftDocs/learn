@@ -1014,6 +1014,16 @@
       "source_path": "learn-pr/data-ai-cert/build-a-faq-chat-bot-with-qna-maker-and-azure-bot-service/7-summary.md",
       "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/build-faq-chatbot-qna-maker-azure-bot-service/",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/cmu-cloud-computing/cmu-case-study-nosql-databases/4-amazon-dynamodb.md",
+      "redirect_url": "https://docs.microsoft.com/learn/cmu-cloud-computing/cmu-case-study-nosql-databases/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/cmu-cloud-computing/cmu-case-study-nosql-databases/5-amazon-s3.md",
+      "redirect_url": "https://docs.microsoft.com/learn/cmu-cloud-computing/cmu-case-study-nosql-databases/5-openstack-swift/",
+      "redirect_document_id": true
     }
   ]
 }
