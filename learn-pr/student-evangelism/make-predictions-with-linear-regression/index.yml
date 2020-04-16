@@ -1,0 +1,34 @@
+uid: learn.student-evangelism.make-predictions-with-linear-regression
+metadata:
+  title: Make Predictions With Linear Regression
+  description: Learn
+  ms.date: 19/03/2020
+  author: sauravmittal
+  ms.author: leescott
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+title: Make Predictions With Linear Regression
+summary: '** TODO: FILL IN **'
+abstract: |
+  In this module, you will:
+  - PLACEHOLDER
+prerequisites: None
+iconUrl: http://via.placeholder.com/120x120
+levels:
+- beginner
+roles:
+- data-scientist
+- student
+products:
+- azure
+units: 
+- learn.student-evangelism.make-predictions-with-linear-regression.introduction
+- learn.student-evangelism.make-predictions-with-linear-regression.regression-line
+- learn.student-evangelism.make-predictions-with-linear-regression.method-of-least-squares
+- learn.student-evangelism.make-predictions-with-linear-regression.least-squares-regression
+- learn.student-evangelism.make-predictions-with-linear-regression.visual-diagnostics
+- learn.student-evangelism.make-predictions-with-linear-regression.numerical-diagnostics
+- learn.student-evangelism.make-predictions-with-linear-regression.multiple-regression
+- learn.student-evangelism.make-predictions-with-linear-regression.multiple-summary
+badge:
+  uid: learn.student-evangelism.make-predictions-with-linear-regression.badge
