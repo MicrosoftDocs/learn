@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.static-apps-gatsby.2-gatsby
+title: Gatsby
+metadata:
+  title: Gatsby
+  description: Gatsby
+  author: softchris
+  ms.author: chnoring
+  ms.date: 04/14/2020
+  ms.topic: interactive-tutorial
+  ms.prod: vs
+durationInMinutes: 1
+content: |
+  [!include[](includes/2-gatsby.md)]

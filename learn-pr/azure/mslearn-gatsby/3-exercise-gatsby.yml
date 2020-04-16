@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.static-apps-gatsby.3-exercise-gatsby
+title: Exercise - Gatsby
+metadata:
+  title: Exercise - Gatsby
+  description: Exercise in how to use Gatsby and understanding a sample project
+  author: softchris
+  ms.author: chnoring
+  ms.date: 04/14/2020
+  ms.topic: interactive-tutorial
+  ms.prod: vs
+durationInMinutes: 1
+content: |
+  [!include[](includes/3-exercise-gatsby.md)]

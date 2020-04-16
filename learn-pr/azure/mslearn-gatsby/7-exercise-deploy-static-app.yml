@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.static-apps-gatsby.6-exercise-deploy-static-app
+title: Exercise - deploy static app
+metadata:
+  title: Exercise - deploy static app
+  description: Exercise - deploy static app
+  author: softchris
+  ms.author: chnoring
+  ms.date: 04/14/2020
+  ms.topic: interactive-tutorial
+  ms.prod: vs
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-exercise-deploy-static-app.md)]

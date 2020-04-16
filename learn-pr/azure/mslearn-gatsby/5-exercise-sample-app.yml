@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.static-apps-gatsby.5-exercise-sample-app
+title: Exercise - Sample app
+metadata:
+  title: Exercise - Sample app
+  description: Exercise - Sample app
+  author: softchris
+  ms.author: chnoring
+  ms.date: 04/14/2020
+  ms.topic: interactive-tutorial
+  ms.prod: vs
+durationInMinutes: 1
+content: |
+  [!include[](includes/5-exercise-sample-app.md)]
