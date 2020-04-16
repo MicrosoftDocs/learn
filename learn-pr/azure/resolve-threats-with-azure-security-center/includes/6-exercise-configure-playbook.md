@@ -11,7 +11,7 @@ Workflow Automations are created directly in the Security Center portal.
 
     ![Screenshot showing the playbook creation screen](../media/7-playbooks.png)
 
-1. Select the **Add workflkow automation** button to create a new automation.
+1. Select the **Add workflow automation** button to create a new automation.
 
 1. In the **Logic App** panel, enter the following information:
     - **Name**: _RespondToMalwareAlert_

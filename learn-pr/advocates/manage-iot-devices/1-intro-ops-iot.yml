@@ -2,9 +2,9 @@
 uid: learn.manage-iot-devices.1-intro-to-ops-in-iot
 metadata:
   description: Describes the learning objectives, and scenario, for this module.
-  author: lnyswonger
+  author: WirelessLife
   ms.date: 03/30/2020
-  ms.author: luken
+  ms.author: abartolo
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to the Internet-of-Things

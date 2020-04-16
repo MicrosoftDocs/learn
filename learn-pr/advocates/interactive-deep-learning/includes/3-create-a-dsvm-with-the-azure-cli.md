@@ -18,7 +18,7 @@ The Azure CLI includes the `az group deployment` command to manage Azure Resourc
 
 For a complete list of available deployment commands, see the [az group deployment command reference](https://docs.microsoft.com/cli/azure/group/deployment?view=azure-cli-latest#az-group-deployment-create)
 
-We'll use `az group deployment create` to provision our virtual machine.
+We'll use `az deployment group create` to provision our virtual machine.
 
 ## Create a JSON deployment parameters file
 
@@ -77,12 +77,12 @@ az group create --location <location> --name learn-deep-dsvm
 
 ## Deploy the DSVM to your resource group
 
-We now have a resource group and have defined parameters for the DSVM Resource Manager template in a file called `parameter_file.json`. We'll run the `az group deployment create` next to provision our virtual machine.
+We now have a resource group and have defined parameters for the DSVM Resource Manager template in a file called `parameter_file.json`. We'll run the `az deployment group create` next to provision our virtual machine.
 
 1. Execute the following command in Azure Cloud Shell:
 
     ```azurecli
-    az group deployment create \
+    az deployment group create \
     --resource-group learn-deep-dsvm \
     --template-uri https://raw.githubusercontent.com/Azure/DataScienceVM/master/Scripts/CreateDSVM/Ubuntu/azuredeploy.json \
     --parameters parameter_file.json

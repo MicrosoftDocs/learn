@@ -3,7 +3,7 @@ uid: learn.languages.python-lists.solution
 title: Solution - Deal a deck of cards
 metadata:
   title: Solution - Deal a deck of cards
-  description: This is the solution to the coding challenge from the previous unit.
+  description: See a possible solution to the coding challenge from the previous unit. You succeeded if your result matched the output and each deal resulted in a different set of cards.
   ms.date: 02/19/2020
   author: bobtabor-msft
   ms.author: rotabor

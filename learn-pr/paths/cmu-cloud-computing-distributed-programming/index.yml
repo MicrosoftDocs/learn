@@ -1,0 +1,61 @@
+### YamlMime:LearningPath
+uid: learn.cmu-cloud-computing.distributed-programming
+metadata:
+  title: Distributed programming on the cloud
+  description: Carnegie Mellon University's Cloud Developer course. Gain a deep understanding of data and how it's stored on the cloud.
+  brand: azure
+  ms.date: 03/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Distributed programming on the cloud
+summary: |
+  Learn about how complex computer programs must be architected for the cloud by using distributed programming.
+
+  In this module, you will:
+    - Classify programs as sequential, concurrent, parallel, and distributed
+    - Indicate why programmers usually parallelize sequential programs
+    - Define distributed programming models
+    - Discuss the challenges with scalability, communication, heterogeneity, synchronization, fault tolerance, and scheduling that are encountered when building cloud programs
+    - Define heterogeneous and homogenous clouds, and identify the main reasons for heterogeneity in the cloud
+    - List the main challenges that heterogeneity poses on distributed programs, and outline some strategies for how to address such challenges
+    - State when and why synchronization is required in the cloud
+    - Identify the main technique that can be used to tolerate faults in clouds
+    - Outline the difference between task scheduling and job scheduling
+    - Explain how heterogeneity and locality can influence task schedulers
+
+  In partnership with Dr. Majd Sakr and Carnegie Mellon University.
+prerequisites: |
+  - Understand what cloud computing is, including cloud service models and common cloud providers
+  - Know the technologies that enable cloud computing
+  - Understand how cloud service providers pay for and bill for the cloud
+  - Know what datacenters are and why they exist
+  - Know how datacenters are set up, powered, and provisioned
+  - Understand how cloud resources are provisioned and metered
+  - Be familiar with the concept of virtualization
+  - Know the different types of virtualization
+  - Understand CPU virtualization
+  - Understand memory virtualization
+  - Understand I/O virtualization
+  - Know about the different types of data and how they're stored
+  - Be familiar with distributed file systems and how they work
+  - Be familiar with NoSQL databases and object storage, and how they work
+showCreativeCommonsFooter: true
+iconUrl: /learn/achievements/cmu-cloud-developer/distributed-programming-cloud-computing.svg
+levels:
+- beginner
+- intermediate
+roles:
+- developer
+- student
+products:
+- azure
+modules:
+- learn.cmu-cloud-computing.distributed-programming.introduction
+- learn.cmu-cloud-computing.distributed-programming.analytics-engines-mapreduce
+- learn.cmu-cloud-computing.distributed-programming.analytics-engines-graphlab
+- learn.cmu-cloud-computing.distributed-programming.analytics-engines-spark
+- learn.cmu-cloud-computing.distributed-programming.message-queues-stream-processing
+trophy:
+  uid: learn.cmu-cloud-computing.distributed-programming.trophy

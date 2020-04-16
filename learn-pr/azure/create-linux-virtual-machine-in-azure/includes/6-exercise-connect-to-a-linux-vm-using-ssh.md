@@ -63,7 +63,7 @@ Any additional drives you create from scratch need to be initialized and formatt
 1. Finally, we need to mount the drive to the file system. Let's assume we will have a `data` folder. Let's create the mount point folder and mount the drive.
 
     ```bash
-    sudo mkdir /data & sudo mount /dev/sdc1 /data
+    sudo mkdir /data && sudo mount /dev/sdc1 /data
     ```
 
     > [!TIP]
