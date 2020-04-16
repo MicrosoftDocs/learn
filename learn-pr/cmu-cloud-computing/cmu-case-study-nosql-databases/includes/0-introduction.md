@@ -27,7 +27,7 @@ Object storage is particularly important in web services. where static web conte
 
 In this module, you will:
 
-  - Explain the Apache HBase, Apache Cassandra, MongoDB, and Amazon DynamoDB NoSQL database data models.
+  - Explain the Apache HBase, Apache Cassandra and MongoDB NoSQL database data models.
   - List the common operations in HBase, Cassandra, and MongoDB.
   - Summarize the architectures of HBase, Cassandra, and MongoDB.
   - List the use cases of HBase, Cassandra, and MongoDB.

@@ -13,7 +13,7 @@ title: 'Case studies: NoSQL databases and cloud object storage'
 summary:  Learn about two more types of storage - NoSQL databases and object storage - with case studies from industry.
 abstract: | 
   In this module, you will:
-  - Explain the Apache HBase, Apache Cassandra, MongoDB, and Amazon DynamoDB NoSQL database data models.
+  - Explain the Apache HBase, Apache Cassandra and MongoDB NoSQL database data models.
   - List the common operations in HBase, Cassandra, and MongoDB.
   - Summarize the architectures of HBase, Cassandra, and MongoDB.
   - List the use cases of HBase, Cassandra, and MongoDB.
