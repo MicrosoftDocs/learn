@@ -20,7 +20,6 @@ Alongside the Q# language, the QDK includes:
 In this module you will:
 - Prepare your development environment for writing quantum programs
 - Understand how to use Q# to express quantum algorithms
-- Learn how to combine Q# with a host program in Python
 - Start your journey as a quantum developer
 - Learn how to contribute to the open-source quantum community
 
