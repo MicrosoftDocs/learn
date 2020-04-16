@@ -235,18 +235,16 @@ Add the YAML below to the end of the pipeline.
 
 1. Select **Save and run** from the top right corner of the page. Confirm the **Save and run** to trigger a run.
 1. In Azure Pipelines, go to the build. Trace the build as it runs.
-1. After the build has succeeded, select the web site's deploy task and click the URL to view the deployed site.
+1. After the build has succeeded, select the web site's deploy task and copy the URL to view the deployed site.
 
     ![Locating the web site URL](../media/4-deploy-url.png)
 
-1. You see the site in production.
+1. The site is hosted under the */myshuttledev/* path on the server. Append that path to the copied URL and navigate to it in a new browser tab, such as:
 
-    ![Reviewing the Python Django site](../media/4-python-django.png)
+    ```
+    http://java-container-cicd-18116.azurewebsites.net/myshuttledev/
+    ```
 
-1. Return to the pipeline summary in Azure DevOps. You see the details of the pipeline run, which also include the test results. Scroll down to the stages view to see how the test run in each stage performed. Select one of the test links to view the aggregated performance.
+1. You see the site in production. You may log in to the site using the credentials *fred*/*fredpassword*.
 
-    ![Reviewing the pipeline summary](../media/4-pipeline-run-summary.png)
-
-1. The test run summary provides details about the test runs. If you would like to review specific tests, you may update the filters option to include *Passed* tests. By default it only shows tests that failed or were aborted.
-
-    ![Reviewing the pipeline summary](../media/4-test-run-summary.png)
+    ![Reviewing the Java container site](../media/4-myshuttle.png)

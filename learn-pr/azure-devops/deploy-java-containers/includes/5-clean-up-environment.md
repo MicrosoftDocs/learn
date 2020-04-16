@@ -16,10 +16,10 @@ To clean up your resource group:
 
     ![Selecting Cloud Shell from the menu bar](../../shared/media/azure-portal-menu-cloud-shell.png)
 
-1. Run the following `az group delete` command to delete the resource group that you used, `python-cicd-rg`.
+1. Run the following `az group delete` command to delete the resource group that you used, `java-containers-cicd-rg`.
 
     ```bash
-    az group delete --name python-cicd-rg
+    az group delete --name java-containers-cicd-rg
     ```
 
     When prompted, enter `y` to confirm the operation.
@@ -30,7 +30,7 @@ To clean up your resource group:
     az group list --output table
     ```
 
-    You see that the resource group `python-cicd-rg` no longer exists.
+    You see that the resource group `java-containers-cicd-rg` no longer exists.
 
 ## Disable the pipeline or delete your project
 

@@ -15,36 +15,36 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "What kind of source changes will the typical Java container project require in order to run on Azure?"
+  - content: "What kind of source changes will the typical Java project require in order to run on Azure?"
     choices:
-    - content: "Java container apps will need to be rewritten in C# or another .NET language before they will run properly on Azure."
+    - content: "Java apps will need to be rewritten in C# or another .NET language before they will run properly on Azure."
       isCorrect: false
-      explanation: "Docker containers are supported as a first-class app platform in Azure, so anything they can run is supported as-is."
+      explanation: "Java is supported as a first-class app platform in Azure."
     - content: "Configuration code will have to be rewritten to connect to Azure's configuration service."
       isCorrect: false
       explanation: "Azure is designed to provide application settings using standard mechanisms, such as configuration files and environment variables."
     - content: "No changes are required."
       isCorrect: true
-      explanation: "Docker containers are supported as a first-class app platform in Azure, so anything they can run is supported as-is."
-  - content: "How does hosting Java container apps on Azure differ from hosting apps built for other platforms (like .NET) on Azure?"
+      explanation: "Java is supported as a first-class app platform in Azure."
+  - content: "How does hosting Java apps on Azure differ from hosting apps built for other platforms (like .NET) on Azure?"
     choices:
     - content: "Each app platform has its own dependencies, so developers need to be sure the Azure target they're using is configured correctly."
       isCorrect: true
       explanation: "Just like deploying anywhere else, the application environment needs to account for application prerequisites in order to run properly."
-    - content: "Java container deployments require use of specialized Java container performance and monitoring tools."
+    - content: "Java deployments require use of Java performance and monitoring tools."
       isCorrect: false
-      explanation: "While specialized Java container tools will work as expected, all container deployments will also benefit from the same performance and monitoring tools used by Azure for other containers."
-    - content: "Java container deployments are limited to web sites on Azure."
+      explanation: "While specialized Java tools will work as expected, your Java deployments will also benefit from the same performance and monitoring tools used by Azure for apps across all platforms."
+    - content: "Java deployments are limited to web sites on Azure."
       isCorrect: false
-      explanation: "You can deploy Java container apps to any container service supported on Azure, including Azure Kubernetes Service and Azure Container Service."
-  - content: "What databases can a Java container app deployed on Azure connect to?"
+      explanation: "You can deploy Java apps to App Services, Azure Functions, container-based services, and more."
+  - content: "What databases can a Java app deployed on Azure connect to?"
     choices:
     - content: "Azure SQL Database is the only option."
       isCorrect: false
-      explanation: "While Java container apps in Azure can connect to Azure SQL Database, they are not limited in the databases and services they can access."
+      explanation: "While Java apps in Azure can connect to Azure SQL Database, they are not limited in the databases and services they can access."
     - content: "Azure Database for MySQL is the only option."
       isCorrect: false
-      explanation: "While Java container apps in Azure can connect to Azure Database for MySQL, they are not limited in the databases and services they can access."
+      explanation: "While Java apps in Azure can connect to Azure Database for MySQL, they are not limited in the databases and services they can access."
     - content: "They can connect to any database or service."
       isCorrect: true
-      explanation: "There is no limit to the databases or services Java container apps can connect to when running on Azure."
+      explanation: "There is no limit to the databases or services Java apps can connect to when running on Azure."
