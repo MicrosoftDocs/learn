@@ -31,46 +31,50 @@ The major advantages of REST are that it is:
 - A platform-independent approach that is ideally suited for the internet. 
 - A language-independent interface because all instructions are passed over HTTP so that, for example, a C# client can talk to a Python server. 
 -  A standards-based communication because it runs on top of HTTP.
-- Operational in the presence of firewalls as long as HTTP or HTTPS traffic is not filtered. 
+- Operational in the presence of firewalls as long as HTTP or HTTPS traffic is not filtered.
 
-## Object storage systems - Amazon S3
+## Object storage systems
 
 The following video covers the basics ideas behind object storage systems:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4q0qD]
 
-An example of object-based storage on the cloud is Amazon's Simple Storage Service (S3). S3 allows users to store **objects** in **buckets**. Each object can be created, read, and deleted. Note that in the S3 model, although no native update-object method exists, an entire object can be deleted and re-created, similar to a file overwrite. However, S3 supports object versioning and can maintain multiple versions of an object on S3 if it is explicitly enabled by the object owner. 
+An example of object-based storage on the cloud is Azure's Blob Storage. Blob Storage allows users to store **objects** in **containers**. Each object can be created, read, and deleted. Note that in the Blob Storage model, although no native update-object method exists, an entire object can be deleted and re-created, similar to a file overwrite.
 
-Here is an example of a RESTful HTTP call to Amazon S3 to create a bucket named `mybucket`. The HTTP call includes authorization information for the client to access the bucket. 
-
-``` text
-PUT /mybucket HTTP/1.1
-Content-Length: 0
-User/Agent: jClientUpload
-Host: s3.amazonaws.com
-Date: Sun, 05 Aug 2007 15:33:59 GMT
-Authorization: AWS 15B4D3461F177624206A:YFhSWKDg3qDnGbV7JCnkfdz/IHY= LE:k3nL7gH3+PadhTEVn5EXAMPLE
-```
-
-S3 can process the request and will send back an HTTP response similar to the following:
+Here is an example of a RESTful HTTP call to Azure Blob Storage to create a container named `mycontainer`. The HTTP call includes authorization information for the client to access the bucket. 
 
 ``` text
-HTTP/1.1 200 OK
-x-amz-id-2: tILPE8NBqoQ2Xn9BaddGf/YlLCSiwrKP+OQOpbi5zazMQ3pC56KQgGk
-x-amz-request-id: 676918167DFF7F8C
-Date: Sun, 05 Aug 2007 15:30:28 GMT
-Location: /mybucket
-Content-Length: 0
-Server: AmazonS3
+PUT https://myaccount.blob.core.windows.net/mycontainer?restype=container HTTP/1.1  
+  
+Request Headers:  
+x-ms-version: 2011-08-18  
+x-ms-date: Sun, 25 Sep 2011 22:50:32 GMT  
+x-ms-meta-Name: StorageSample  
+Authorization: SharedKey myaccount:Z5043vY9MesKNh0PNtksNc9nbXSSqGHueE00JdjidOQ=
 ```
 
-In the response, Amazon has acknowledged the request, indicated that the request was successful (with a "200 OK" message), and returned some information regarding the request. The `x-amz-id-2` and `x-amz-request-id` fields are unique identifiers that can be used to keep track of responses for troubleshooting and debugging purposes. 
+Blob Storage can process the request and will send back an HTTP response similar to the following:
+
+``` text
+Response Status:  
+HTTP/1.1 201 Created  
+  
+Response Headers:  
+Transfer-Encoding: chunked  
+Date: Sun, 25 Sep 2011 23:00:12 GMT  
+ETag: "0x8CB14C3E29B7E82"  
+Last-Modified: Sun, 25 Sep 2011 23:00:06 GMT  
+x-ms-version: 2011-08-18  
+Server: Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0
+```
+
+In the response, Azure has acknowledged the request, indicated that the request was successful (with a "201 Created" message), and returned some information regarding the request.
 
 ## Cloud object storage standards: CDMI
 
-The lack of a common standard for object storage is an issue plaguing cloud object storage. The most popular cloud-based object storage system is Amazon S3, which is proprietary.
+The lack of a common standard for object storage is an issue plaguing cloud object storage.
 
-The Storage Networking Industry Association (SNIA) is promoting an open standard for cloud objects, called **Cloud Data Management Interface (CDMI)**. 
+The Storage Networking Industry Association (SNIA) is promoting an open standard for cloud objects, called **Cloud Data Management Interface (CDMI)**.
 
 ![CDMI](../media/cdmi.png)
 
@@ -102,4 +106,4 @@ The advantages of CDMI include the following:
 - It adheres to existing standards, such as RESTful interfaces for data access, and can work with multiple underlying storage abstractions, such as shared and networked file systems.
 - It is a mature standard, which has a reference implementation and ISO standardization.
 
-The disadvantage of CDMI is that its adoption is yet to be seen. The CDMI standard is backed by many storage companies, but it is not yet officially supported by vendors such as Amazon, and the standard's success remains unclear.
+The disadvantage of CDMI is that its adoption is yet to be seen. The CDMI standard is backed by many storage companies, but it is not yet officially supported by most vendors, and the standard's success remains unclear.

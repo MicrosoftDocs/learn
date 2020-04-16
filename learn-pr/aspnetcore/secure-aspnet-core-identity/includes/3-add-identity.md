@@ -11,30 +11,33 @@ In this unit, Identity will be added to the existing ASP.NET Core Razor Pages pr
 1. Install the ASP.NET Core code scaffolder:
 
     ```dotnetcli
-    dotnet tool install -g dotnet-aspnet-codegenerator --version 2.2.4
+    dotnet tool install dotnet-aspnet-codegenerator --version 3.1.2
     ```
 
     The following output appears:
 
     ```console
-    You can invoke the tool using the following command: dotnet-aspnet-codegenerator
-    Tool 'dotnet-aspnet-codegenerator' (version '<VERSION>') was successfully installed.
+    You can invoke the tool from this directory using the following commands: 'dotnet tool run dotnet-aspnet-codegenerator' or 'dotnet dotnet-aspnet-codegenerator'.
+    Tool 'dotnet-aspnet-codegenerator' (version '3.1.2') was successfully installed. Entry is added to the manifest file /home/<USER>/contoso-pets/src/ContosoPets.Ui/.config/dotnet-tools.json.
     ```
 
-    The scaffolder is a .NET Core global tool that will:
+    The scaffolder is a .NET Core tool that will:
 
     * Be used to add the default Identity components to the project.
     * Enable customization of Identity UI components in the next unit.
     * Be invoked via `dotnet aspnet-codegenerator` in this module.
 
-1. Add the following NuGet package to the project:
+1. Add the following NuGet packages to the project:
 
     ```dotnetcli
-    dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design \
-        --version 2.2.4
+    dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design --version 3.1.2 && \
+        dotnet add package Microsoft.AspNetCore.Identity.EntityFrameworkCore --version 3.1.3 && \
+        dotnet add package Microsoft.AspNetCore.Identity.UI --version 3.1.3 && \
+        dotnet add package Microsoft.EntityFrameworkCore.Design --version 3.1.3 && \
+        dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 3.1.3
     ```
 
-    The package installs code generation templates that are used by the scaffolder.
+    These packages install code generation templates and dependencies that are used by the scaffolder.
 
     > [!TIP]
     > To view the available generators:
@@ -78,7 +81,7 @@ In this unit, Identity will be added to the existing ASP.NET Core Razor Pages pr
 Run the following command from the project root to install the PostgreSQL database provider for EF Core:
 
 ```dotnetcli
-dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL --version 2.2.4
+dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL --version 3.1.3
 ```
 
 This NuGet package provides EF Core with knowledge of how to interact with a PostgreSQL database.
@@ -96,15 +99,17 @@ This NuGet package provides EF Core with knowledge of how to interact with a Pos
     {
         builder.ConfigureServices((context, services) => {
             var connBuilder = new NpgsqlConnectionStringBuilder(
-                context.Configuration.GetConnectionString("ContosoPetsAuthConnection"));
-            connBuilder.Username = context.Configuration["DbUsername"];
-            connBuilder.Password = context.Configuration["DbPassword"];
+                context.Configuration.GetConnectionString("ContosoPetsAuthConnection"))
+            {
+                Username = context.Configuration["DbUsername"],
+                Password = context.Configuration["DbPassword"]
+            };
 
             services.AddDbContext<ContosoPetsAuth>(options =>
                 options.UseNpgsql(connBuilder.ConnectionString));
 
             services.AddDefaultIdentity<IdentityUser>()
-                .AddDefaultUI(UIFramework.Bootstrap4)
+                .AddDefaultUI()
                 .AddEntityFrameworkStores<ContosoPetsAuth>();
         });
     }
@@ -119,15 +124,17 @@ This NuGet package provides EF Core with knowledge of how to interact with a Pos
     {
         builder.ConfigureServices((context, services) => {
             var connBuilder = new SqlConnectionStringBuilder(
-                context.Configuration.GetConnectionString("ContosoPetsAuthConnection"));
-            connBuilder.UserID = context.Configuration["DbUsername"];
-            connBuilder.Password = context.Configuration["DbPassword"];
+                context.Configuration.GetConnectionString("ContosoPetsAuthConnection"))
+            {
+                UserID = context.Configuration["DbUsername"],
+                Password = context.Configuration["DbPassword"]
+            };
 
             services.AddDbContext<ContosoPetsAuth>(options =>
                 options.UseSqlServer(connBuilder.ConnectionString));
 
             services.AddDefaultIdentity<IdentityUser>()
-                .AddDefaultUI(UIFramework.Bootstrap4)
+                .AddDefaultUI()
                 .AddEntityFrameworkStores<ContosoPetsAuth>();
         });
     }
@@ -139,14 +146,27 @@ This NuGet package provides EF Core with knowledge of how to interact with a Pos
 
     * The Azure Key Vault configuration provider is implicitly used to retrieve the database username and password:
 
+        ::: zone pivot="pg"
+
         ```csharp
-        connBuilder.UserID = context.Configuration["DbUsername"];
-        connBuilder.Password = context.Configuration["DbPassword"];
+        Username = context.Configuration["DbUsername"],
+        Password = context.Configuration["DbPassword"]
         ```
+
+        ::: zone-end
+
+        ::: zone pivot="sql"
+
+        ```csharp
+        UserID = context.Configuration["DbUsername"],
+        Password = context.Configuration["DbPassword"]
+        ```
+
+        ::: zone-end
 
     * The database username and password are injected into the connection string stored in *:::no-loc text="appsettings.json":::*.
     * The EF Core database context class, named `ContosoPetsAuth`, is configured with the appropriate connection string.
-    * The Identity services are registered, including the default UI (based on Bootstrap version 4), token providers, and cookie-based authentication.
+    * The Identity services are registered, including the default UI, token providers, and cookie-based authentication.
 
 1. Also in *:::no-loc text="IdentityHostingStartup.cs":::*, add the following code to the block of `using` statements at the top. Save your changes.
 
@@ -163,7 +183,7 @@ This NuGet package provides EF Core with knowledge of how to interact with a Pos
     ::: zone pivot="sql"
 
     ```csharp
-    using System.Data.SqlClient;
+    using Microsoft.Data.SqlClient;
     ```
 
     The preceding code resolves the reference to the `SqlConnectionStringBuilder` class in the `Configure` method.
@@ -212,6 +232,25 @@ This NuGet package provides EF Core with knowledge of how to interact with a Pos
 
 ## Update the database
 
+1. Install the Entity Framework Core migration tool:
+
+    ```dotnetcli
+    dotnet tool install dotnet-ef --version 3.1.3
+    ```
+
+    The following output appears:
+
+    ```console
+    You can invoke the tool from this directory using the following commands: 'dotnet tool run dotnet-ef' or 'dotnet dotnet-ef'.
+    Tool 'dotnet-ef' (version '3.1.3') was successfully installed. Entry is added to the manifest file /home/<USER>/contoso-pets/src/ContosoPets.Ui/.config/dotnet-tools.json.
+    ```
+
+    The migration tool is a .NET Core tool that will:
+
+    * Generate code called a migration to create and update the database that supports the Identity entity model.
+    * Execute migrations against an existing database.
+    * Be invoked via `dotnet ef` in this module.
+
 1. Create and run an EF Core migration to update the database:
 
     ```dotnetcli
@@ -252,25 +291,25 @@ This NuGet package provides EF Core with knowledge of how to interact with a Pos
 
     ```console
     info: Microsoft.EntityFrameworkCore.Database.Command[20101]
-        Executed DbCommand (36ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-        CREATE TABLE [AspNetUsers] (
-            [Id] nvarchar(450) NOT NULL,
-            [UserName] nvarchar(256) NULL,
-            [NormalizedUserName] nvarchar(256) NULL,
-            [Email] nvarchar(256) NULL,
-            [NormalizedEmail] nvarchar(256) NULL,
-            [EmailConfirmed] bit NOT NULL,
-            [PasswordHash] nvarchar(max) NULL,
-            [SecurityStamp] nvarchar(max) NULL,
-            [ConcurrencyStamp] nvarchar(max) NULL,
-            [PhoneNumber] nvarchar(max) NULL,
-            [PhoneNumberConfirmed] bit NOT NULL,
-            [TwoFactorEnabled] bit NOT NULL,
-            [LockoutEnd] datetimeoffset NULL,
-            [LockoutEnabled] bit NOT NULL,
-            [AccessFailedCount] int NOT NULL,
-            CONSTRAINT [PK_AspNetUsers] PRIMARY KEY ([Id])
-        );
+          Executed DbCommand (98ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+          CREATE TABLE [AspNetUsers] (
+              [Id] nvarchar(450) NOT NULL,
+              [UserName] nvarchar(256) NULL,
+              [NormalizedUserName] nvarchar(256) NULL,
+              [Email] nvarchar(256) NULL,
+              [NormalizedEmail] nvarchar(256) NULL,
+              [EmailConfirmed] bit NOT NULL,
+              [PasswordHash] nvarchar(max) NULL,
+              [SecurityStamp] nvarchar(max) NULL,
+              [ConcurrencyStamp] nvarchar(max) NULL,
+              [PhoneNumber] nvarchar(max) NULL,
+              [PhoneNumberConfirmed] bit NOT NULL,
+              [TwoFactorEnabled] bit NOT NULL,
+              [LockoutEnd] datetimeoffset NULL,
+              [LockoutEnabled] bit NOT NULL,
+              [AccessFailedCount] int NOT NULL,
+              CONSTRAINT [PK_AspNetUsers] PRIMARY KEY ([Id])
+          );
     ```
 
     ::: zone-end
@@ -334,7 +373,7 @@ This NuGet package provides EF Core with knowledge of how to interact with a Pos
     <partial name="_LoginPartial" />
     ```
 
-    The preceding markup renders the `_LoginPartial` partial view within the header of any page that uses the default layout. `_LoginPartial` was added by the Identity scaffold. This partial view presents the user with **Log in** and **Register** links if the user isn't signed in.
+    The preceding markup renders the `_LoginPartial` partial view within the header of any page that uses the default layout. `_LoginPartial` was added by the Identity scaffold. This partial view presents the user with **Login** and **Register** links if the user isn't signed in.
 
 1. [!INCLUDE[dotnet build command](../../includes/dotnet-build-no-restore-command.md)]
 

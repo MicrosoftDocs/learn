@@ -8,7 +8,6 @@ metadata:
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  showCreativeCommonsFooter: true
 title: Datacenter components
 summary: Take a deep dive into datacenters to discover how they are laid out and how computing resources are provisioned and metered.
 abstract: | 
