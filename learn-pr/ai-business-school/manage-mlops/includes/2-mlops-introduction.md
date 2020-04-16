@@ -26,7 +26,7 @@ These challenges are similar to what application development teams face when cre
 :::row:::
 :::column span="2":::
 3. **Validate:** At this point, the team evaluates how model performance compares to their business goals. For example, a company might want to optimize for accuracy over speed in some cases.
-   * **Repeat steps 1-3:** It can take hundreds of training hours to find a satisfactory model. The development team may train many versions of the model by adjusting training data, tuning algorithm hyperparameters, or trying totally different algorithms. Ideally the model improves with each round of adjustment. Ultimately, its development team's role to determine which version of the model best fits the business use case.
+   * **Repeat steps 1-3:** It can take hundreds of training hours to find a satisfactory model. The development team may train many versions of the model by adjusting training data, tuning algorithm hyperparameters, or trying totally different algorithms. Ideally the model improves with each round of adjustment. Ultimately, it's the development team's role to determine which version of the model best fits the business use case.
 4. **Deploy:** Finally, they deploy the model in the cloud (often through an API), on an on-prem server, or at the edge on devices like cameras, IoT gateways, or machinery.
 5. **Monitor and retrain:** Even if a model works well at first, it needs to be continually monitored and retrained to stay relevant and accurate.
 :::column-end:::

@@ -1,4 +1,4 @@
-MLOps is the practice of collaboration among data scientists, ML engineers, app developers, and other IT teams to manage the ML lifecycle.
+In this unit, we discuss the importance of MLOps – the practice of collaboration among data scientists, ML engineers, app developers, and other IT teams to manage the ML lifecycle.
 
 MLOps processes and tools help those teams collaborate and provide visibility through shared, auditable documentation. MLOps technologies provide the ability to save and track changes to data sources, code, libraries, SDKs, and models. These technologies can also create efficiencies and accelerate the lifecycle with automation, repeatable workflows, and reusable assets.
 
