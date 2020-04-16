@@ -77,11 +77,16 @@ array([3.14, 4.  , 2.  , 3.  ])
 
 What happens if you construct an array using a list that contains a combination of integers, floats, and strings?
 
-> <details>
->  <summary>Sara TBA Hint (expand to reveal)</summary>
->  
-> **Sarah TBA** or remove the hint.
-> </details>
+<details>
+  <summary>Hint <i>(expand to reveal)</i></summary>
+  ```Python
+  np.array([3.14, 'pi', 3])
+  ```
+
+  ```Output
+  array(['3.14', 'pi', '3'], dtype='<U32')
+  ```
+</details>
 
 If you want to explicitly set the data type of your array when you create it, you can use the `dtype` keyword:
 
@@ -97,11 +102,16 @@ array([1., 2., 3., 4.], dtype=float32)
 
 Try this using a different `dtype`.
 
-> <details>
->  <summary>Sarah TBA Hint (expand to reveal)</summary>
->  
-> **Sarah TBA** or remove the hint.
-> </details>
+<details>
+  <summary>Hint <i>(expand to reveal)</i></summary>
+  ```Python
+  np.array([1.0, 2.5, 3, 4], dtype='int32')
+  ```
+
+  ```Output
+  array([1, 2, 3, 4])
+  ```
+</details>
 
 Remember that you can always refer to the documentation with the command `np.array`.
 

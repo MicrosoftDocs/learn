@@ -1,8 +1,5 @@
 We continue with the basics of array manipulation in NumPy. Learn more about array slicing, how to reshape arrays, and about joining and splitting.
 
->[!NOTE]
-> **Sarah**: Since we split this into two units I added some transitional text (above). Vet it and adjust as needed.
-
 ### Slices are no-copy views
 
 It's important to know that slicing produces *views* of array data, not *copies*. This is a **huge** difference between NumPy array slicing and Python list slicing. With Python lists, slices are only shallow copies of lists; if you modify a copy, it doesn't affect the parent list. When you modify a NumPy subarray, you modify the original list. Be careful: this can have ramifications when you are trying to just work with a small part of a large dataset and you don't want to change the whole thing. Let's look more closely.
@@ -52,18 +49,6 @@ print(a2)
  [ 7  6  8  8]
  [ 1  6  7  7]]
 ```
-
-#### Try it yourself
-
-Now try reversing the column and row order of `a2_sub`.
-
-Does `a2` look the way you expected it would after that manipulation?
-
-> <details>
->  <summary>Sarah TBA Hint (expand to reveal)</summary>
->  
-> **Sarah TBA** or remove the hint.
-> </details>
 
 The fact that slicing produces views rather than copies is useful for data-science work. As you work with large datasets, you will often find that it is easier to access and manipulate pieces of those datasets rather than copying them entirely.
 
@@ -228,11 +213,17 @@ Recall that axes are zero-indexed in NumPy.
 
 What do you predict np.concatenate([grid, grid], axis=1) will produce?
 
-> <details>
->  <summary>Sarah TBA Hint (expand to reveal)</summary>
->  
-> **Sarah TBA** or remove the hint.
-> </details>
+<details>
+  <summary>Hint <i>(expand to reveal)</i></summary>
+  ```python
+  np.concatenate([grid, grid], axis=1)
+  ```
+  
+  ```output
+  array([[1, 2, 3, 1, 2, 3],
+       [4, 5, 6, 4, 5, 6]])
+  ```
+</details>
 
 ### Splitting arrays
 
@@ -272,11 +263,38 @@ What does `np.split(grid, [1, 2])` produce?
 
 What about `np.split(grid, [1, 2], axis=1)`?
 
-> <details>
->  <summary>Sarah TBA Hint (expand to reveal)</summary>
->  
-> **Sarah TBA** or remove the hint.
-> </details>
+<details>
+  <summary>Hint <i>(expand to reveal)</i></summary>
+  ```python
+  np.split(grid, [1, 2])
+  ```
+  
+  ```output
+  [array([[0, 1, 2, 3]]),
+   array([[4, 5, 6, 7]]),
+   array([[ 8,  9, 10, 11],
+        [12, 13, 14, 15]])]
+  ```
+
+  ```python
+  np.split(grid, [1, 2], axis=1)
+  ```
+  
+  ```output
+  [array([[ 0],
+        [ 4],
+        [ 8],
+        [12]]),
+   array([[ 1],
+        [ 5],
+        [ 9],
+        [13]]),
+   array([[ 2,  3],
+        [ 6,  7],
+        [10, 11],
+        [14, 15]])]
+  ```
+</details>
 
 >[!div class="alert is-tip"]
 >### Takeaway

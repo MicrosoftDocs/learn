@@ -1,11 +1,5 @@
 `DataFrames` also exhibit dual behavior, acting both like a two-dimensional `ndarray` and like a dictionary of `Series` sharing the same index.
 
-> [!Note]
-> **Sarah: Action items**
-> 
-> - Search on "TBD" in Hints for Try it yourself blocks.
->
-
 ## DataFrame as dictionary of Series
 
 Let's return to our earlier example of countries' areas and populations in order to examine `DataFrames` as a dictionary of `Series`.
@@ -151,9 +145,18 @@ Can you think of how to combine masking and fancy indexing in one line?
 Be sure to put the the masking and fancy indexing inside the square brackets: `countries.loc[]`.
 
 <details>
-  <summary>Sarah: TBD Hint <i>(expand to reveal)</i></summary>
+  <summary>Hint <i>(expand to reveal)</i></summary>
 
-  Hint goes here.
+  ```Python
+  countries.loc[countries['Population Density'] > 200, ('Population', 'Population Density')]
+  ```
+
+  ```Output
+  |         | Population | Population Density | 
+  --------------------------------------------- 
+  | Germany | 82408706   | 230.587393         | 
+  | Japan   | 126922333  | 335.798242         |
+  ```
 </details>
 
 ## Indexing conventions

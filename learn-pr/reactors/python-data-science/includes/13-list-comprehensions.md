@@ -1,11 +1,5 @@
 Sometimes, it makes more sense to generate a list algorithmically. Consider the last example. We really wanted just a list of numbers from 1 to 10. Rather than type those out, we can use a _list comprehension_ to generate it:
 
-> [!Note]
-> **Sarah: Action items**
-> 
-> - Search on "TBD" and add content as needed, including Hints for Try it yourself blocks.
->
-
 ```Python
 numbers = [x for x in range(1,11)] # Remember to create a range 1 more than the number you actually want.
 numbers
@@ -48,9 +42,25 @@ The output is:
 Use a list comprehension to generate a list of odd cubes from 1 to 2,197.
 
 <details>
-  <summary>Sarah: TBD Hint <i>(expand to reveal)</i></summary>
+  <summary>Hint <i>(expand to reveal)</i></summary>
 
-  Hint goes here.
+  ```Python
+  odd_cubes = [x*x*x for x in range(1, 2197) if x % 2 != 0]
+  odd_cubes
+  ```
+
+  ```Output
+  [1,
+   27,
+   125,
+   343,
+   729,
+   1331,
+   2197,
+   3375,
+   4913,
+   ...]
+  ```
 </details>
 
 > [!div class="alert is-tip"]

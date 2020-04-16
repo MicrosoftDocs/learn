@@ -14,7 +14,6 @@ In this module, you will:
 
 ## Prerequisites
 
-- [Set up your environment](../../python-data-science/1-introduction.yml)
 - [Introduction to Python for data science](../../python-data-science/index.yml)
 - [Introduction to NumPy for data science](../../numpy-data-science/index.yml)
 - [Introduction to pandas for data science](../../pandas-data-science/index.yml)

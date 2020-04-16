@@ -1,11 +1,5 @@
 Another immutable data type in Python are tuples. It can be useful at times to create a data structure that won't be altered later in a program, such as to protect constant data from being overwritten on accident or to improve performance for iterating over data. This is where tuples come in. You create tuples much as you do lists, only using parentheses instead of brackets.
 
-> [!Note]
-> **Sarah: Action items**
-> 
-> - Search on "TBD" and add content as needed, including Hints for Try it yourself blocks.
->
-
 ```Python
 t = (1, 2, 3)
 t
@@ -118,7 +112,12 @@ False
 - If not, think back to the nested lists we’ve already encountered.
 
 <details>
-  <summary>Sarah: TBD Hint <i>(expand to reveal)</i></summary>
+  <summary>Hint <i>(expand to reveal)</i></summary>
 
-  Hint goes here.
+  ```Python
+  lis in lis
+  ```
+  ```Output
+  False
+  ```
 </details>

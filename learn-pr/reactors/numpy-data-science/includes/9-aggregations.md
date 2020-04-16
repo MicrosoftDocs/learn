@@ -105,11 +105,16 @@ array([0.18441813, 0.11936151, 0.37497044, 0.03193135])
 
 What do you get when you try `md.max(axis=1)`?
 
-> <details>
->  <summary>Sarah TBA Hint (expand to reveal)</summary>
->  
-> **Sarah TBA** or remove the hint.
-> </details>
+<details>
+  <summary>Hint <i>(expand to reveal)</i></summary>
+  ```python
+  md.max(axis=1)
+  ```
+  
+  ```output
+  array([0.95274259, 0.76371195, 0.37578601])
+  ```
+</details>
 
 Remember that the `axis` keyword specifies the *dimension of the array that is to be collapsed*, not the dimension that will be returned. Thus specifying `axis=0` means that the first axis will be the one collapsed: for two-dimensional arrays, this means that values within each column will be aggregated.
 

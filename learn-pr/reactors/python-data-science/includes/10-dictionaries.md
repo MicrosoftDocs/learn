@@ -1,11 +1,5 @@
 Dictionaries in Python provide a means of mapping information between unique keys and values. You create dictionaries by listing zero or more key-value pairs inside of braces, like this:
 
-> [!Note]
-> **Sarah: Action items**
-> 
-> - Search on "TBD" and add content as needed, including Hints for Try it yourself blocks.
->
-
 ```Python
 capitals = {'France': ('Paris', 2140526)}
 ```
@@ -31,9 +25,17 @@ Now try adding another country (or something else) to the capitals dictionary.
 
 <details> 
 
-  <summary>Sarah: TBD Hint <i>(expand to reveal)</i></summary>
+  <summary>Hint <i>(expand to reveal)</i></summary>
 
-  Hint goes here.
+  ```Python
+  capitals['United States'] = ('DC', 100000000000)
+  capitals
+  ```
+  ```Output
+  {'France': ('Paris', 2140526),
+ 'Nigeria': ('Lagos', 6048430),
+ 'United States': ('DC', 100000000000)}
+  ```
   
 </details>
 

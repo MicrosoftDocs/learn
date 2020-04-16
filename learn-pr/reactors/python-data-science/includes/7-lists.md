@@ -1,11 +1,5 @@
 Python knows a number of compound data types, which are used to group together other values. The most versatile is the [list](https://docs.python.org/3.5/library/stdtypes.html#typesseq-list), which can be written as a sequence of comma-separated values (items) between square brackets. Lists might contain items of different types, but usually the items all have the same type.
 
-> [!Note]
-> **Sarah: Action items**
-> 
-> - Search on "TBD" and add content as needed, including Hints for Try it yourself blocks.
->
-
 ```Python
 squares = [1, 4, 9, 16, 25]
 squares
@@ -217,7 +211,11 @@ Nested lists come up a lot in programming, so it pays to practice.
 - How about to get the output `3`?
 
 <details>
-  <summary>Sarah: TBD Hint <i>(expand to reveal)</i></summary>
-
-  Hint goes here.
+  <summary>Hint <i>(expand to reveal)</i></summary>
+  ```Python
+  x[0][2]
+  ```
+  ```Python
+  x[1][2]
+  ```
 </details>

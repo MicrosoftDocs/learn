@@ -1,12 +1,5 @@
 A huge part of data science is manipulating data in order to analyze it. (One rule of thumb is that 80% of any data science project will be concerned with cleaning and organizing the data for the project.) So it makes sense to learn the tools that pandas provides for handling data in `Series` and especially `DataFrames`. Because both of those data structures are ordered, let's first start by taking a closer look at what gives them their structure: the `Index`.
 
-> [!Note]
-> **Sarah: Action items**
-> 
-> - Search on "TBD" and add content as needed, including Hints for Try it yourself blocks.
-> - Starting at Line 76, I converted the content and requests for the user to a Try it yourself action.
->
-
 ## Index objects in pandas
 
 Both `Series` and `DataFrames` in pandas have explicit indices that enable you to reference and modify data in them. These indices are actually objects themselves. The `Index` object can be thought of as both an immutable array or as fixed-size set.
@@ -89,9 +82,31 @@ Try the following:
 - The symmetric difference (`ind_odd ^ ind_prime`) of `ind_odd` and `ind_prime`
 
 <details>
-  <summary>Sarah: TBD Hint <i>(expand to reveal)</i></summary>
+  <summary>Hint <i>(expand to reveal)</i></summary>
 
-  Hint goes here.
+  ```Python
+  ind_odd & ind_prime
+  ```
+
+  ```Output
+  Int64Index([3, 5, 7], dtype='int64')
+  ```
+
+  ```Python
+  ind_odd | ind_prime
+  ```
+
+  ```Output
+  Int64Index([1, 2, 3, 5, 7, 9, 11], dtype='int64')
+  ```
+
+  ```Python
+  ind_odd ^ ind_prime
+  ```
+
+  ```Output
+  Int64Index([1, 2, 9, 11], dtype='int64')
+  ```
 </details>
 
 These operations may also be accessed via object methods, for example `ind_odd.intersection(ind_prime)`. Below is a table listing some useful `Index` methods and properties.

@@ -1,11 +1,5 @@
 The same kind of alignment takes place in both dimension (columns and indices) when you perform operations on `DataFrames`.
 
-> [!Note]
-> **Sarah: Action items**
-> 
-> - Search on "TBD" and add content as needed, including Hints for Try it yourself blocks.
->
-
 ```Python
 df1 = pd.DataFrame(rng.randint(0, 20, (2, 2)),
                    columns=list('AB'))
@@ -44,9 +38,19 @@ The output is:
 Add df1 and df2. Is the output what you expected?
 
 <details>
-  <summary>Sarah: TBD Hint <i>(expand to reveal)</i></summary>
+  <summary>Hint <i>(expand to reveal)</i></summary>
 
-  Hint goes here.
+  ```Python
+  df1 + df2
+  ```
+
+  ```Output
+  |    | A  | B  | C  |
+  ---------------------
+  | 0  | 1.0  | 15.0 | NaN |
+  | 1  | 13.0 | 6.0  | NaN |
+  | 2  | NaN  | NaN  | NaN |
+  ```
 </details>
 
 Even though we passed the columns in a different order in `df2` than in `df1`, the indices were aligned correctly sorted in the resulting union of columns.
