@@ -161,7 +161,7 @@ Shot Put Distance
 shotput.scatter('Weight Lifted')
 ```
 
-![png](../media/64_Least_Squares_Regression_5_0.png)
+![png](../media/79-least-squares-regression-5-0.png)
 
 That's not a football shaped scatter plot. In fact, it seems to have a
 slight non-linear component. But if we insist on using a straight line
@@ -228,7 +228,7 @@ fitted = fit(shotput, 'Weight Lifted', 'Shot Put Distance')
 shotput.with_column('Best Straight Line', fitted).scatter('Weight Lifted')
 ```
 
-![png](../media/64_Least_Squares_Regression_13_0.png)
+![png](../media/79-least-squares-regression-13-0.png)
 
 ### Nonlinear Regression
 
@@ -308,4 +308,5 @@ shotput_fit = best.item(0)*(x**2) + best.item(1)*x + best.item(2)
 shotput.with_column('Best Quadratic Curve', shotput_fit).scatter(0)
 ```
 
-![png](../media/64_Least_Squares_Regression_23_0.png)
+![png](../media/79-least-squares-regression-23-0.png)
+g](79_Least_Squares_Regression_files/79_Least_Squares_Regression_23_0.png)

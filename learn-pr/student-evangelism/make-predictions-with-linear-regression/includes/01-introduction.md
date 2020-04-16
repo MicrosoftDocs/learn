@@ -146,7 +146,7 @@ Child
 heights.scatter('MidParent')
 ```
 
-![png](../media/60_Prediction_5_0.png)
+![png](../media/75-prediction-5-0.png)
 
 The primary reason for collecting the data was to be able to predict the
 adult height of a child born to parents similar to those in the dataset.
@@ -190,7 +190,7 @@ heights_with_predictions = heights.with_column(
 heights_with_predictions.scatter('MidParent')
 ```
 
-![png](../media/60_Prediction_10_0.png)
+![png](../media/75-prediction-10-0.png)
 
 The prediction at a given midparent height lies roughly at the center of
 the vertical strip of points at the given height. This method of
@@ -486,7 +486,7 @@ the horizontal.
 hybrid.scatter('acceleration', 'msrp')
 ```
 
-![png](../media/61_Correlation_7_0.png)
+![png](../media/76-correlation-7-0.png)
 
 Notice the positive association. The scatter of points is sloping
 upwards, indicating that cars with greater acceleration tended to cost
@@ -503,7 +503,7 @@ scatter plot showed, those were also the cars that tended to cost more.
 hybrid.scatter('mpg', 'msrp')
 ```
 
-![png](../media/61_Correlation_9_0.png)
+![png](../media/76-correlation-9-0.png)
 
 Along with the negative association, the scatter diagram of price versus
 efficiency shows a non-linear relation between the two variables. The
@@ -520,13 +520,13 @@ suv = hybrid.where('class', 'SUV')
 suv.scatter('mpg', 'msrp')
 ```
 
-![png](../media/61_Correlation_11_0.png)
+![png](../media/76-correlation-11-0.png)
 
 ``` {.python}
 suv.scatter('acceleration', 'msrp')
 ```
 
-![png](../media/61_Correlation_12_0.png)
+![png](../media/76-correlation-12-0.png)
 
 You will have noticed that we can derive useful information from the
 general orientation and shape of a scatter diagram even without paying
@@ -557,7 +557,7 @@ plots.xlim(-3, 3)
 plots.ylim(-3, 3);
 ```
 
-![png](../media/61_Correlation_16_0.png)
+![png](../media/76-correlation-16-0.png)
 
 ``` {.python}
 Table().with_columns(
@@ -568,7 +568,7 @@ plots.xlim(-3, 3)
 plots.ylim(-3, 3);
 ```
 
-![png](../media/61_Correlation_17_0.png)
+![png](../media/76-correlation-17-0.png)
 
 The associations that we see in these figures are the same as those we
 saw before. Also, because the two scatter diagrams are now drawn on
@@ -614,25 +614,25 @@ and the variables are said to be *uncorrelated*.
 r_scatter(0.9)
 ```
 
-![png](../media/61_Correlation_21_0.png)
+![png](../media/76-correlation-21-0.png)
 
 ``` {.python}
 r_scatter(0.25)
 ```
 
-![png](../media/61_Correlation_22_0.png)
+![png](../media/76-correlation-22-0.png)
 
 ``` {.python}
 r_scatter(0)
 ```
 
-![png](../media/61_Correlation_23_0.png)
+![png](../media/76-correlation-23-0.png)
 
 ``` {.python}
 r_scatter(-0.55)
 ```
 
-![png](../media/61_Correlation_24_0.png)
+![png](../media/76-correlation-24-0.png)
 
 ### Calculating $r$
 
@@ -728,7 +728,7 @@ not equal to 1.
 t.scatter(0, 1, s=30, color='red')
 ```
 
-![png](../media/61_Correlation_28_0.png)
+![png](../media/76-correlation-28-0.png)
 
 **Step 1.** Convert each variable to standard units.
 
@@ -1007,7 +1007,7 @@ The calculation shows that:
 t.scatter('y', 'x', s=30, color='red')
 ```
 
-![png](../media/61_Correlation_37_0.png)
+![png](../media/76-correlation-37-0.png)
 
 ### The `correlation` function
 
@@ -1095,7 +1095,7 @@ nonlinear = Table().with_columns(
 nonlinear.scatter('x', 'y', s=30, color='r')
 ```
 
-![png](../media/61_Correlation_51_0.png)
+![png](../media/76-correlation-51-0.png)
 
 ``` {.python}
 correlation(nonlinear, 'x', 'y')
@@ -1117,7 +1117,7 @@ line = Table().with_columns(
 line.scatter('x', 'y', s=30, color='r')
 ```
 
-![png](../media/61_Correlation_54_0.png)
+![png](../media/76-correlation-54-0.png)
 
 ``` {.python}
 correlation(line, 'x', 'y')
@@ -1133,7 +1133,7 @@ outlier = Table().with_columns(
 outlier.scatter('x', 'y', s=30, color='r')
 ```
 
-![png](../media/61_Correlation_56_0.png)
+![png](../media/76-correlation-56-0.png)
 
 ``` {.python}
 correlation(outlier, 'x', 'y')
@@ -1393,7 +1393,7 @@ to 0.985.
 sat2014.scatter('Critical Reading', 'Math')
 ```
 
-![png](../media/61_Correlation_61_0.png)
+![png](../media/76-correlation-61-0.png)
 
 ``` {.python}
 correlation(sat2014, 'Critical Reading', 'Math')
@@ -1440,7 +1440,20 @@ from IPython.display import Image
 Image("../../../images/chocoNobel.png")
 ```
 
-![png](../media/61_Correlation_65_0.png)
+![png](../media/76-correlation-65-0.png)
+
+``` {.python}
+```
+d in the paper, should motivate you to go and
+take a look.
+
+``` {.python}
+
+from IPython.display import Image
+Image("../../../images/chocoNobel.png")
+```
+
+![png](76_Correlation_files/76_Correlation_65_0.png)
 
 ``` {.python}
 ```

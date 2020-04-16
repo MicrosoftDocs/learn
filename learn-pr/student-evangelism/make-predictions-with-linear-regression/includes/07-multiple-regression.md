@@ -27,8 +27,7 @@ variable. Predicting a numerical quantity is called regression, and a
 commonly used method to use multiple attributes for regression is called
 *multiple linear regression*.
 
-Home Prices
------------
+## Home Prices
 
 The following dataset of house prices and attributes was collected over
 several years for the city of Ames, Iowa. A [description of the dataset
@@ -422,7 +421,7 @@ UserWarning: The 'normed' kwarg is deprecated, and has been replaced by
 the 'density' kwarg. warnings.warn("The 'normed' kwarg is deprecated,
 and has been"
 
-![png](../media/67_Multiple_Regression_5_1.png)
+![png](../media/82-multiple-regression-5-1.png)
 
 #### Correlation
 
@@ -434,7 +433,7 @@ with sale price but only explains some of its variability.
 sales.scatter('1st Flr SF', 'SalePrice')
 ```
 
-![png](../media/67_Multiple_Regression_7_0.png)
+![png](../media/82-multiple-regression-7-0.png)
 
 ``` {.python}
 correlation(sales, 'SalePrice', '1st Flr SF')
@@ -477,8 +476,7 @@ attribute to predict the sale price. In a dataset with multiple observed
 attributes and a single numerical value to be predicted (the sale price
 in this case), multiple linear regression can be an effective technique.
 
-Multiple Linear Regression
---------------------------
+## Multiple Linear Regression
 
 In multiple linear regression, a numerical output is predicted from
 numerical input attributes by multiplying each attribute value by a
@@ -682,7 +680,7 @@ test.with_column('Fitted', test.drop(0).apply(fit)).scatter('Fitted', 0)
 plots.plot([0, 5e5], [0, 5e5]);
 ```
 
-![png](../media/67_Multiple_Regression_26_0.png)
+![png](../media/82-multiple-regression-26-0.png)
 
 A residual plot for multiple regression typically compares the errors
 (residuals) to the actual values of the predicted variable. We see in
@@ -695,7 +693,7 @@ test.with_column('Residual', test_prices-test.drop(0).apply(fit)).scatter(0, 'Re
 plots.plot([0, 7e5], [0, 0]);
 ```
 
-![png](../media/67_Multiple_Regression_28_0.png)
+![png](../media/82-multiple-regression-28-0.png)
 
 As with simple linear regression, interpreting the result of a predictor
 is at least as important as making predictions. There are many lessons
@@ -703,8 +701,7 @@ about interpreting multiple regression that are not included in this
 textbook. A natural next step after completing this text would be to
 study linear modeling and regression in further depth.
 
-Nearest Neighbors for Regression
---------------------------------
+## Nearest Neighbors for Regression
 
 Another approach to predicting the sale price of a house is to use the
 price of similar houses. This *nearest neighbor* approach is very
@@ -1041,7 +1038,18 @@ test.with_column('Residual', test_prices-nn_test_predictions).scatter(0, 'Residu
 plots.plot([0, 7e5], [0, 0]);
 ```
 
-![png](../media/67_Multiple_Regression_41_0.png)
+![png](../media/82-multiple-regression-41-0.png)
+
+``` {.python}
+```
+, 0]);
+```
+
+![png](82_Multiple_Regression_files/82_Multiple_Regression_41_0.png)
+
+``` {.python}
+```
+sion_files/82_Multiple_Regression_41_0.png)
 
 ``` {.python}
 ```

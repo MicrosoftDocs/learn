@@ -52,7 +52,7 @@ heights_with_predictions = heights.with_column(
 heights_with_predictions.scatter('MidParent')
 ```
 
-![png](../media/62_Regression_Line_5_0.png)
+![png](../media/77-regression-line-5-0.png)
 
 ### Measuring in Standard Units
 
@@ -218,7 +218,7 @@ heights_with_su_predictions = heights_SU.with_column(
 heights_with_su_predictions.scatter('MidParent SU')
 ```
 
-![png](../media/62_Regression_Line_15_0.png)
+![png](../media/77-regression-line-15-0.png)
 
 This plot looks exactly like the plot drawn on the original scale. Only
 the numbers on the axes have changed. This confirms that we can
@@ -252,7 +252,7 @@ plots.xlabel('x in standard units')
 plots.ylabel('y in standard units');
 ```
 
-![png](../media/62_Regression_Line_18_0.png)
+![png](../media/77-regression-line-18-0.png)
 
 But the 45 degree line is not the line that picks off the centers of the
 vertical strips. You can see that in the figure below, where the
@@ -276,7 +276,7 @@ plots.xlabel('x in standard units')
 plots.ylabel('y in standard units');
 ```
 
-![png](../media/62_Regression_Line_20_0.png)
+![png](../media/77-regression-line-20-0.png)
 
 So the 45 degree line is not the "graph of averages." That line is the
 green one shown below.
@@ -297,7 +297,7 @@ plots.xlabel('x in standard units')
 plots.ylabel('y in standard units');
 ```
 
-![png](../media/62_Regression_Line_22_0.png)
+![png](../media/77-regression-line-22-0.png)
 
 Both lines go through the origin (0, 0). The green line goes through the
 centers of the vertical strips (at least roughly), and is *flatter* than
@@ -340,13 +340,13 @@ def regression_line(r):
 regression_line(0.95)
 ```
 
-![png](../media/62_Regression_Line_26_0.png)
+![png](../media/77-regression-line-26-0.png)
 
 ``` {.python}
 regression_line(0.6)
 ```
 
-![png](../media/62_Regression_Line_27_0.png)
+![png](../media/77-regression-line-27-0.png)
 
 When $r$ is close to 1, the scatter plot, the 45 degree line, and the
 regression line are all very close to each other. But for more moderate
@@ -708,7 +708,7 @@ Regression Prediction
 heights_with_predictions.scatter('MidParent')
 ```
 
-![png](../media/62_Regression_Line_43_0.png)
+![png](../media/77-regression-line-43-0.png)
 
 The grey dots show the regression predictions, all on the regression
 line. Notice how the line is very close to the gold graph of averages.
@@ -736,7 +736,7 @@ It is easier to see the line in the graph below than in the one above.
 heights.with_column('Fitted', fit(heights, 'MidParent', 'Child')).scatter('MidParent')
 ```
 
-![png](../media/62_Regression_Line_48_0.png)
+![png](../media/77-regression-line-48-0.png)
 
 Another way to draw the line is to use the option `fit_line=True` with
 the Table method `scatter`.
@@ -745,7 +745,7 @@ the Table method `scatter`.
 heights.scatter('MidParent', fit_line=True)
 ```
 
-![png](../media/62_Regression_Line_50_0.png)
+![png](../media/77-regression-line-50-0.png)
 
 ### Units of Measurement of the Slope
 
@@ -765,7 +765,7 @@ baby = Table.read_table(path_data + 'baby.csv')
 baby.scatter('Maternal Height', 'Maternal Pregnancy Weight', fit_line=True)
 ```
 
-![png](../media/62_Regression_Line_53_0.png)
+![png](../media/77-regression-line-53-0.png)
 
 ``` {.python}
 slope(baby, 'Maternal Height', 'Maternal Pregnancy Weight')
@@ -842,6 +842,10 @@ decreases.
 Even though we won't establish the mathematical basis for the regression
 equation, we can see that it gives pretty good predictions when the
 scatter plot is football shaped. It is a surprising mathematical fact
+that no matter what the shape of the scatter plot, the same equation
+gives the "best" among all straight lines. That's the topic of the next
+section.
+prising mathematical fact
 that no matter what the shape of the scatter plot, the same equation
 gives the "best" among all straight lines. That's the topic of the next
 section.

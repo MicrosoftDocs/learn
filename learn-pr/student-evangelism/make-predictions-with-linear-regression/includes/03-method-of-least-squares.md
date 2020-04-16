@@ -107,7 +107,7 @@ Characters
 little_women.scatter('Periods', 'Characters')
 ```
 
-![png](../media/63_Method_of_Least_Squares_5_0.png)
+![png](../media/78-method-of-least-squares-5-0.png)
 
 To explore the data, we will need to use the functions `correlation`,
 `slope`, `intercept`, and `fit` defined in the previous section.
@@ -132,7 +132,7 @@ lw_with_predictions = little_women.with_column('Linear Prediction', fit(little_w
 lw_with_predictions.scatter('Periods')
 ```
 
-![png](../media/63_Method_of_Least_Squares_10_0.png)
+![png](../media/78-method-of-least-squares-10-0.png)
 
 Corresponding to each point on the scatter plot, there is an error of
 prediction calculated as the actual value minus the predicted value. It
@@ -344,7 +344,7 @@ lw_errors(lw_reg_slope, lw_reg_intercept)
 Slope of Regression Line: 87.0 characters per period Intercept of
 Regression Line: 4745.0 characters
 
-![png](../media/63_Method_of_Least_Squares_17_1.png)
+![png](../media/78-method-of-least-squares-17-1.png)
 
 Had we used a different line to create our estimates, the errors would
 have been different. The graph below shows how big the errors would be
@@ -355,13 +355,13 @@ large errors obtained by using a line that is downright silly.
 lw_errors(50, 10000)
 ```
 
-![png](../media/63_Method_of_Least_Squares_19_0.png)
+![png](../media/78-method-of-least-squares-19-0.png)
 
 ``` {.python}
 lw_errors(-100, 50000)
 ```
 
-![png](../media/63_Method_of_Least_Squares_20_0.png)
+![png](../media/78-method-of-least-squares-20-0.png)
 
 ### Root Mean Squared Error
 
@@ -413,7 +413,7 @@ lw_rmse(50, 10000)
 
 Root mean squared error: 4322.167831766537
 
-![png](../media/63_Method_of_Least_Squares_24_1.png)
+![png](../media/78-method-of-least-squares-24-1.png)
 
 ``` {.python}
 lw_rmse(-100, 50000)
@@ -421,7 +421,7 @@ lw_rmse(-100, 50000)
 
 Root mean squared error: 16710.11983735375
 
-![png](../media/63_Method_of_Least_Squares_25_1.png)
+![png](../media/78-method-of-least-squares-25-1.png)
 
 Bad lines have big values of rmse, as expected. But the rmse is much
 smaller if we choose a slope and intercept close to those of the
@@ -433,7 +433,7 @@ lw_rmse(90, 4000)
 
 Root mean squared error: 2715.5391063834586
 
-![png](../media/63_Method_of_Least_Squares_27_1.png)
+![png](../media/78-method-of-least-squares-27-1.png)
 
 Here is the root mean squared error corresponding to the regression
 line. By a remarkable fact of mathematics, no other line can beat this
@@ -448,7 +448,7 @@ lw_rmse(lw_reg_slope, lw_reg_intercept)
 
 Root mean squared error: 2701.690785311856
 
-![png](../media/63_Method_of_Least_Squares_29_1.png)
+![png](../media/78-method-of-least-squares-29-1.png)
 
 The proof of this statement requires abstract mathematics that is beyond
 the scope of this course. On the other hand, we do have a powerful tool
@@ -497,7 +497,7 @@ lw_rmse(lw_reg_slope, lw_reg_intercept)
 
 Root mean squared error: 2701.690785311856
 
-![png](../media/63_Method_of_Least_Squares_36_1.png)
+![png](../media/78-method-of-least-squares-36-1.png)
 
 You can confirm that `lw_mse` returns the correct value for other slopes
 and intercepts too. For example, here is the rmse of the extremely bad
@@ -564,6 +564,12 @@ from minimize: 4744.784845352655
 
 Therefore, we have found not only that the regression line minimizes
 mean squared error, but also that minimizing mean squared error gives us
+the regression line. The regression line is the only line that minimizes
+mean squared error.
+
+That is why the regression line is sometimes called the "least squares
+line."
+squared error, but also that minimizing mean squared error gives us
 the regression line. The regression line is the only line that minimizes
 mean squared error.
 

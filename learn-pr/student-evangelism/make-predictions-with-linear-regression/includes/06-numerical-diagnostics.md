@@ -264,7 +264,7 @@ heights of all the points in the scatter plot and are more variable.
 scatter_fit(heights, 'MidParent', 'Child')
 ```
 
-![png](../media/66_Numerical_Diagnostics_23_0.png)
+![png](../media/81-numerical-diagnostics-23-0.png)
 
 The fitted values range from about 64 to about 71, whereas the heights
 of all the children are quite a bit more variable, ranging from about 55
@@ -318,6 +318,10 @@ and therefore, by squaring both sides of our result,
 
 $$
 \frac{\mbox{variance of fitted values}}{\mbox{variance of }y} ~=~ r^2
+$$
+
+``` {.python}
+```
 $$
 
 ``` {.python}
