@@ -2,7 +2,7 @@
 
 One of the cornerstones of the Quantum Development Kit is the quantum
 programming language Q#. In this unit you are going to learn how to create a
-quantum application in Q# with Visual Studio Code. This application consists on
+quantum application in Q# with Visual Studio Code. This application consists of
 a quantum random bit generator and it will be the base for our quantum random
 number generator.
 
