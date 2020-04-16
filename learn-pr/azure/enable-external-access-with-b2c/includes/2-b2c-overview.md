@@ -48,4 +48,4 @@ You enable different page layout templates in the Azure portal. Go to your user 
 
 For example, if you choose the **Ocean Blue** template, it would be applied to your user flow. When a user goes to your application, they'll see the layout has changed, as shown below. Take advantage of templates to customize the user experience.
 
-![Customized UI](../media/2-customized-ui.png)
+:::image type="content" source="../media/2-customized-ui.png" alt-text="Customized UI."  loc-scope="azure-active-directory-b2c":::

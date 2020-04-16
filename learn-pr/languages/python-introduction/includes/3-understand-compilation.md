@@ -1,29 +1,40 @@
-Previously, we said that the source code must be compiled in order to be executed.  In this unit, we'll work on understanding this process a little better and how Python's compilation and execution is different from other traditional programming languages and execution models.
+We previously said that source code must be compiled before it can run. In this unit, you'll work on understanding compilation a little better. You'll also learn how Python's compilation and execution differ from that of other traditional programming languages and execution models.
 
 ## What is compilation?
 
-In many programming languages, Once you finish writing your source code, you use a special program called a **compiler** to convert your source code into a different format that is executable by the computer's CPU.
+After you finish writing your source code, you often use a special program called a _compiler_. This program converts source code into a format that a computer's CPU can run.
 
-Why is it necessary to compile your source code?  Even though most programming languages seem cryptic at first, they can be more easily understood by humans than the computer's preferred form of communication, which is expressed by turning thousands of tiny switches either on or off. Compilers bridge these two worlds by translating your human-readable instructions into a computer-understandable set of instructions.
+Why do you need to compile your source code? Most programming languages seem cryptic at first. But they're more easily understood by humans than are a computer's preferred form of communication. That communication is expressed by turning on and off thousands of tiny switches. Compilers bridge these two worlds by translating instructions readable by humans into instructions understood by computers.
 
-Those instructions are collected and compacted together into a single file, which can be executed when invoked by a user.  
+Those instructions are collected and compacted together into a single file, which can be run by a user.
 
-In many programming languages, each time a programmer makes a change to the source code, they must recompile the application to create an executable file.  However, each time a user wants to run the program, they merely need to launch the compiled executable file.  No additional compilation is necessary.
+With many programming languages, each time you change the source code, you must recompile the app to create an executable file. However, each time a user wants to run a program, that user merely opens the compiled executable file. No additional compilation is necessary.
 
-Finally, in many programming languages, you use a compiler for the specific computing platform you want your code to run on.  In other words, to run your program on a Windows computer, you must compile your source code using a Windows compiler for your particular programming language.  To run your program on a macOS computer, you must compile your source code using a macOS compiler for your particular programming language.
+You often must use a compiler for your specific computing platform. For example, to run your program on a Windows computer, you must compile using a Windows compiler. To run your program on a macOS computer, you must compile using a macOS compiler.
 
 ## How does Python work?
 
-Python has similar features to many programming languages, but it functions differently in a few key ways.
+Python has features similar to many programming languages, but it functions differently in a few key ways.
 
-Python has a compiler, but the Python compiler does not translate the code directly into a computer understandable format.  Instead, it compiles the code into a special format that can then be interpreted and executed by the Python **interpreter**.  The interpreter is a program that executes each instruction, tracking where it stores values in memory, knowing how to interface with external resources like the file system and the network, and so on.  In other words, it is an execution environment that takes care of complex interactions between your intent and the computer's inner workings.
+Python has a compiler. But the compiler doesn't translate the source code directly into a format that computers can understand. Instead, the compiler produces code in a special format that a Python interpreter can interpret and run.
 
-Furthermore, each time you want to execute your program, the Python source code is recompiled.
+An _interpreter_ is a program that runs each instruction. It tracks where it stores values in RAM. An interpreter also knows how to interact with external resources like a file system or a network.
+
+In other words, an interpreter is an execution environment that manages complex interactions between your intent and the computer's inner workings.
+
+Furthermore, each time you run your program, its Python source code is recompiled.
 
 There are several benefits to this approach.
 
-First, a version of the Python interpreter is available on many computer platforms.  So, if you write Python code on Linux, it will run on macOS and Windows, and vice versa.  You would not need to compile your source code to target a specific computing platform to execute your program.
+First, a Python interpreter is available for many computer platforms. For example, if you write Python code on Linux, it will also run on macOS and Windows. You can run a program without needing to compile your source code for a specific computing platform.
 
-Second, you can write and execute a single line of Python at a time.  So, as you're learning, you may want to experiment with a new idea without going through the process of creating a new project, a new file, and so on.  You merely run Python in _interactive mode_ and begin typing Python code at a terminal or command prompt.  This code will be lost when you exit Python's _interactive mode_, but for a quick experiment, it works well.
+Second, you can write and execute one line of Python at a time. As you learn, you might want to experiment with a new idea without having to create a new project or file. Instead, you merely run Python in interactive mode and begin entering Python code in a terminal or command line. This code is lost when you exit Python's interactive mode. But for a quick experiment, it works well.
 
-Furthermore, you can edit a program as it's running.  Using a special software tool called a **debugger**, you can pause the execution of your program, step through each line of Python code and watch as it executes, observe changes your code makes to values stored in memory, and more.  You can also edit code that will be executed next as the program is running, which is usually something that can't be done using other programming languages that are not interpreted.  It's just another reason why Python is considered to be beginner-friendly.
+Finally, you can use a special software tool called a _debugger_ to:
+
+- Edit your program as it's running.
+- Pause the execution of your program.
+- Step through each line of Python code to watch as it runs.
+- Observe changes your code makes to values stored in RAM.
+
+You can edit the code that will be run next during program execution. Such edits usually can't be done with programming languages that aren't interpreted. This editing is just another reason why Python is considered to be friendly to beginners.

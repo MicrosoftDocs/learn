@@ -8,7 +8,6 @@ metadata:
   ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 title: Exercise - Create an Azure Cosmos DB account in the Azure portal
 azureSandbox: true
 durationInMinutes: 6

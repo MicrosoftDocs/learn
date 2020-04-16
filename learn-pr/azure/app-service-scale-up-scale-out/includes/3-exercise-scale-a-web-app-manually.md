@@ -71,7 +71,7 @@ The exercise also runs a client app that simulates a number of users issuing POS
 
 1. Use your web browser to go to `http://<your-webapp-name>.azurewebsites.net/api/reservations/1`. You should see a JSON document that contains the details for reservation number 1:
 
-    ![Screenshot of the running web app, showing the details for reservation number 1 in JSON format.](../media/3-web-app.png)
+    :::image type="content" source="../media/3-web-app.png" alt-text="Screenshot of the running web app, showing the details for reservation number 1 in JSON format." loc-scope="other"::: <!-- no loc -->
 
 ## Monitor the performance of the web app before scaling out
 
@@ -117,7 +117,8 @@ The exercise also runs a client app that simulates a number of users issuing POS
     dotnet run
     ```
 
-   ![Screenshot of a running client app, showing the responses and error messages that occur.](../media/3-web-client.png)
+    :::image type="content" source="../media/3-web-client.png" alt-text="Screenshot of a running client app, showing the responses and error messages that occur." loc-scope="other"::: <!-- no-loc -->
+
 
 1. In the Azure portal, go to the pane for your web app (not the service plan). Under **Monitoring**, select **Metrics**.
 
