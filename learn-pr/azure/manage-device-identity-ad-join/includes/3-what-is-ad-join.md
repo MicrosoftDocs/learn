@@ -78,7 +78,7 @@ In the Azure portal, you control how new devices are joined to your organization
 |Users may join devices to Azure AD   |  **All** allows for any user to join their device. **Selected** allows you to add specific users that can join devices. **None** prevents all users from joining their devices.     |
 |Additional local administrators on Azure AD joined devices     | Lets you specify other users to be included as local administrators on all joined devices. By default, this option is enabled. Azure AD adds the global administrator and device administrator roles as local administrators on device. |
 |Users may register their devices with Azure AD|Allows users to register their devices with Azure AD Join. If you're using Microsoft Intune or Mobile Device Management for Office 365, device registration is required. If either of these services are configured in your Azure AD organization, **All** is selected and this option is disabled.|
-|Require Multi-Factor Authentication to join device |  Lets you enforce Azure Multi-Factor Authentication (MFA) when the device joins your Azure AD. For the users that join devices to Azure AD using Azure MFA, the device itself becomes a second factor.   |
+|Require Multi-Factor Authentication to join device |  Lets you enforce Azure Multi-Factor Authentication when the device joins your Azure AD. For the users that join devices to Azure AD using Multi-Factor Authentication, the device itself becomes a second factor.   |
 |Maximum number of devices per user| Maximum number of devices a user can have in Azure AD. If they reach this maximum, the user would need to remove a device to add a new one. |
 
 For our scenario, we could add a pilot group of users to try AD join. In that case, you'd choose **Users may join devices to Azure AD** > **Selected** and then add members of your pilot group. When you're ready to deploy Azure AD join to your entire Azure AD organization, select **All**.
@@ -104,7 +104,7 @@ Recall that you need to restrict access to the organization's resources to only 
 
 ## User experience when joining a Windows 10 device
 
-You've given a new device to a tech-savvy employee. They'll use the self-service approach to join the device to your Active Directory organization, which is using MFA. The following steps show you what that workflow looks like.
+You've given a new device to a tech-savvy employee. They'll use the self-service approach to join the device to your Active Directory organization, which is using Multi-Factor Authentication. The following steps show you what that workflow looks like.
 
 1. After starting the device, they follow the prompts to set it up, including customizing their region and selecting a language.
 
@@ -119,7 +119,7 @@ You've given a new device to a tech-savvy employee. They'll use the self-service
     >![Screenshot that shows the who owns this pc prompt.](../media/3-walk-who-owns.png)
 
 1. Employee signs in with the credentials supplied by your organization.
-1. The employee is prompted with an MFA challenge.
+1. The employee is prompted with a multi-factor authentication challenge.
 1. Azure AD checks the configuration settings to see if the device should be enrolled in MDM.
 1. When successful, the device is registered with the organization's Azure AD. If MDM is being used, the device is enrolled and managed.
 
