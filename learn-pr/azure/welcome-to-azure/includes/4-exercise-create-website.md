@@ -64,6 +64,9 @@ In the free Azure sandbox environment, you'll use the pre-created resource group
     Your configuration should look like this:
 
     [![Screenshot of Azure portal showing the new WordPress app service configured as instructed.](../media/4-config-info-create.png)](../media/4-config-info-create-expanded.png#lightbox)
+    
+    > [!NOTE]
+    > If you still see a section called **Database**, make sure you selected the correct **Database Provider** described in the configuration above.
 
 1. Now let's configure the App Service plan to use a specific pricing tier. The App Service plan specifies the compute resources and location for the web app. Select **App Service plan/location**.
 
