@@ -18,7 +18,7 @@ Alongside the Q# language, the QDK includes:
 ## Learning objectives
 
 In this module you will:
-- Gain hands-on experience using the QDK to create a quantum program
+- Prepare your development environment for writing quantum programs
 - Understand how to use Q# to express quantum algorithms
 - Learn how to combine Q# with a host program in Python
 - Start your journey as a quantum developer
@@ -48,4 +48,3 @@ In the following units you will go through these steps:
 - Create a Q# project
 - Combine Q# and Python to create a quantum random number generator
 - As a call to action: learn more about QDK and Q# on the docs page, practice on quanutm katas, contribute to the QDK 
-
