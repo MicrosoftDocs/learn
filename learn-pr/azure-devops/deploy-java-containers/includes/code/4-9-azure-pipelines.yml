@@ -1,12 +1,6 @@
-          - script: |
-              pip install selenium
-              pip install pytest
-              pytest tests/functional_tests/ --webAppUrl=https://$(webAppName).azurewebsites.net --junitxml=$(System.DefaultWorkingDirectory)/TestResults/test-results-functional.xml
-            workingDirectory: $(Pipeline.Workspace)
-            displayName: 'Run functional tests'
-
-          - task: PublishTestResults@2
+          - task: AzureWebAppContainer@1
+            displayName: Update the web app with the new container
             inputs:
-              searchFolder: $(Pipeline.Workspace)
-              testResultsFiles: '**/test-*.xml'
-            displayName: 'Publish test results' 
+              appName: $(WebAppName)
+              azureSubscription: 'Azure Connection'
+              imageName: $(RegistryName)/$(webRepository):$(build.buildId)

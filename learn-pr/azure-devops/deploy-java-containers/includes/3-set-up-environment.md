@@ -17,28 +17,15 @@ If you use different Microsoft accounts to sign in to Azure and Azure DevOps, ad
 
 Then sign out of Azure DevOps and sign in. Use the Microsoft account that you use to sign in to your Azure subscription.
 
-## Get the Azure DevOps project
+## Clone the GitHub repo
 
-Here you make sure that your Azure DevOps organization is set up to complete the rest of this module. You set it up by running a template that creates a project in Azure DevOps.
+Here you clone the GitHub repo required for this project. It's a simple Java web app designed to be built and deployed as a Docker container.
 
-### Run the template
+1. Navigate your browser to the [Java Containers repo](https://github.com/MicrosoftDocs/mslearn-java-containers?azure-portal=true).
+1. Select **Fork** and select an account to fork into.
 
-Run a template that sets up your Azure DevOps organization.
-
-> [!div class="nextstepaction"]
-> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?TemplateId=77371&Name=MyShuttle&azure-portal=true)
-
-On the Azure DevOps Demo Generator site, follow these steps to run the template:
-
-1. Select **Sign In** and accept the usage terms.
-1. On the **Create New Project** page, select your Azure DevOps organization. Then enter a project name, such as *java-container-cicd*.
-
-    ![Creating a project through the Azure DevOps Demo Generator](../media/4-create-new-project.png)
-
-1. Select **Create Project**.
-
-    The template takes a few moments to run.
-1. Select **Navigate to project** to go to your project in Azure DevOps.
+> [!IMPORTANT]
+> In this module, the [Clean up your Azure DevOps environment](/learn/modules/deploy-java-containers/5-clean-up-environment?azure-portal=true) page contains important cleanup steps. Cleaning up helps ensure that you don't run out of free build minutes. Be sure to follow the cleanup steps even if you don't complete this module.
 
 ## Create the Azure App Service environment
 
@@ -137,7 +124,7 @@ This solution requires several Azure resources for deployment, which will be cre
       --version 5.7
     ```
 
-1. Run the following `az mysql server firewall-rule create` command to create a firewall rule to allow services hosted in Azure (like the one you are deploying) to access the server. By default, all incoming connections to the server are blocked, so it should be necessary to add at least one rule for it to be accessible.
+1. By default, all incoming connections to the MySQL server are blocked, so it is necessary to add at least one rule for it to be accessible. Run the following `az mysql server firewall-rule create` command to create a firewall rule to allow services hosted in Azure (like the one you are deploying) to access the server. 
 
     ```azurecli
 	az mysql server firewall-rule create \
@@ -218,86 +205,3 @@ This solution requires several Azure resources for deployment, which will be cre
 
 > [!IMPORTANT]
 > The [Clean up your Azure DevOps environment](/learn/modules/deploy-java-containers/5-clean-up-environment?azure-portal=true) page in this module contains important cleanup steps. Cleaning up helps ensure that you're not charged for Azure resources after you complete this module. Be sure to perform the cleanup steps even if you don't complete this module.
-
-## Create pipeline variables in Azure Pipelines
-
-Your pipeline is going to need to include some variable names that specify the resources created in the previous steps. You could hard-code these names in your pipeline configuration, but if you define them as variables, your configuration will be more reusable. Plus, if the names of your instances change, you can update the variables and trigger your pipeline without modifying your configuration.
-
-To add the variables:
-
-1. In Azure DevOps, go to the project created for this module.
-
-1. Under **Pipelines**, select **Library**.
-
-    ![Azure Pipelines showing the Library menu option](../media/3-pipelines-library.png)
-
-1. Select **+ Variable group**.
-
-1. Under **Properties**, enter **Release** for the variable group name.
-
-1. Under **Variables**, select **+ Add**.
-
-1. For the name of your variable, enter *WebAppName*. For the value, enter the name of the App Service instance created above, such as *java-container-cicd-18116*.
-
-    > [!IMPORTANT]
-    > Set the name of the App Service instance, not its host name. In this example, you would enter *java-container-cicd-18116* and not *java-container-cicd-18116.azurewebsites.net*.
-
-1. Repeat the process to add another variable named *RegistryName* with the value of your Azure Container Registry login server, such as *javacontainercicd18116.azurecr.io*.
-
-1. Repeat the process to add another variable named *MySqlServer* with the value of your MySQL server host name, such as *java-cicd-18116*. You should not use the fully qualified domain, just the host. If you followed the instructions as-is, then this is the same as your web app name.
-
-1. Repeat the process to add another variable named *MySqlUserName* with the value of the MySQL user name used to create the server, such as *sysadmin*.
-
-1. Repeat the process to add another variable named *MySqlPassword* with the value of the MySQL password used to create the server, such as *P@ssw0rd*.
-
-    > [!IMPORTANT]
-    > In a real world scenario, you should use a more secure storage mechanism for credentials, such as Azure Key Vault. To learn more about Azure Key Valult, see [Configure and manage secrets in Azure Key Vault](/learn/modules/configure-and-manage-azure-key-vault/?azure-portal=true).
-
-1. Near the top of the page, select **Save** to save your variable to the pipeline.
-
-    Your variable group resembles this one:
-
-    ![Azure Pipeline showing the variable group](../media/3-library-variable-group.png)
-
-## Create required service connections
-
-Here you create a service connection that enables Azure Pipelines to access your Azure subscription. Azure Pipelines uses this service connection to deploy the website to App Service. You created a similar service connection in the previous module. You will also create a Docker Registry connection to publish your container to the Azure Container Registry.
-
-> [!IMPORTANT]
-> Make sure that you're signed in to both the Azure portal and Azure DevOps under the same Microsoft account.
-
-1. In Azure DevOps, go to the project created for this module.
-1. From the bottom corner of the page, select **Project settings**.
-1. Under **Pipelines**, select **Service connections**.
-1. Select **Create service connection**, then choose **Azure Resource Manager**, then select **Next**.
-1. Near the top of the page, select **Service principal (automatic)**.
-1. Fill in these fields:
-
-    | Field           | Value                                        |
-    |-----------------|----------------------------------------------|
-    | Scope level     | **Subscription**                             |
-    | Subscription    | Your Azure subscription                      |
-    | Resource Group  | **java-container-cicd-rg**                   |
-    | Service connection name | *Azure Connection*                           |
-
-    During the process, you might be prompted to sign in to your Microsoft account.
-
-1. Ensure that **Allow all pipelines to use this connection** is selected.
-
-1. Select **OK**.
-
-    Azure DevOps performs a test connection to verify that it can connect to your Azure subscription. If Azure DevOps can't connect, you have the chance to sign in a second time.
-
-1. Select **New service connection**, then choose **Docker Registry**, then select **Next**.
-1. Near the top of the page, select **Azure Container Registry**.
-1. Fill in these fields:
-
-    | Field               | Value                                        |
-    |---------------------|----------------------------------------------|
-    | Subscription    | Your Azure subscription                          |
-    | Azure container registry  | **Select the one you created earlier** |
-    | Service connection name | *Container Registry Connection*          |
-
-1. Ensure that **Grant access permission to all pipelines** is selected.
-
-1. Select **OK**.

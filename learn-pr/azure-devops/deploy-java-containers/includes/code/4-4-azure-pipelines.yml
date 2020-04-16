@@ -1,4 +1,5 @@
-    - task: UsePythonVersion@0
+    - task: Maven@3
+      displayName: 'Maven pom.xml'
       inputs:
-        versionSpec: '$(pythonVersion)'
-      displayName: 'Use Python $(pythonVersion)'
+        options: '-DskipITs --settings ./maven/settings.xml'
+        publishJUnitResults: false

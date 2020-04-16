@@ -1,12 +1,10 @@
-    - task: ArchiveFiles@2
-      displayName: 'Archive files'
+    - task: Docker@2
+      displayName: Build and push Java container image to registry
       inputs:
-        rootFolderOrFile: '$(projectRoot)'
-        includeRootFolder: false
-        archiveType: zip
-        archiveFile: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
-        replaceExistingArchive: true
-
-    - upload: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
-      displayName: 'Upload package'
-      artifact: drop
+        command: buildAndPush
+        buildContext: '$(build.artifactstagingdirectory)'
+        repository: $(webRepository)
+        dockerfile: $(dockerfilePath)
+        containerRegistry: 'Container Registry Connection'
+        tags: |
+          $(tag)

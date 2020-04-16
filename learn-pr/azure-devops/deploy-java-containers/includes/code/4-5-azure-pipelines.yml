@@ -1,8 +1,8 @@
-    - script: |
-        python -m venv antenv
-        source antenv/bin/activate
-        python -m pip install --upgrade pip
-        pip install setup
-        pip install -r requirements.txt
-      workingDirectory: $(projectRoot)
-      displayName: "Install requirements"
+    - task: CopyFiles@2
+      displayName: Copy WAR file to staging directory
+      inputs:
+        SourceFolder: '$(build.sourcesdirectory)'
+        Contents: |
+          target/myshuttledev*.war
+          *.sql
+        TargetFolder: '$(build.artifactstagingdirectory)'
