@@ -1,6 +1,4 @@
-You now have a better understanding of device identity and Conditional Access. You want to investigate Azure AD join and how it might be used to improve device management for both Azure and your on-premises active directories.
-
-Azure AD join manages the process of adding new devices to your Azure Active Directory (Azure AD) through the mobile device management platform.
+You now have a better understanding of device identity and Conditional Access. You want to investigate Azure AD join and how it might be used to improve device management for both Azure and your on-premises Active Directory Domain Services.
 
 In this unit, you'll learn about Azure AD join, and how to use it for infrastructure and device management.
 
@@ -10,16 +8,16 @@ Azure AD join allows you to join devices to your Azure Active Directory (AD) org
 
 ## Supported devices
 
-Azure AD join works with Windows 10 devices. If you're using an earlier Windows operating system like Windows 7 or 8.1, you'll need to upgrade to Windows 10.
+Azure AD join works with Windows 10 or Windows Server 2019 devices. Windows Server 2019 Server Core installation isn't supported. If you're using an earlier Windows operating system, you'll need to upgrade to Windows 10 or Windows Server 2019.
 
 ## Identity infrastructure
 
 Decide what identity infrastructure model best supports your organization's needs.
 
-- **Managed environment**: Uses Pass-through Authentication or password hash sync to provide seamless single sign-on (SSO) to your devices.
+- **Managed environment**: Uses pass-through authentication or password hash sync to provide seamless single sign-on (SSO) to your devices.
 - **Federated environments**: Require the use of an identity provider. That provider must support the WS-Trust and WS-Fed protocols for Azure AD join to work natively with Windows devices. WS-Fed is required to join a device to your Azure AD. WS-Trust is needed to sign in to an Azure AD joined device.
 - **Smartcards and certificate-based authentication**: These methods aren't valid ways to join devices to Azure AD. But, if you have Active Directory Federation Services (AD FS) configured, you can use smartcards to sign in to Azure AD joined devices. It's recommended you use a service like Windows Hello for Business, which supports password-less authentication to Windows 10 devices.
-- **Manual user configuration**: Best used in a hybrid environment where there's an on-premises Active Directory and an Azure AD. You need to synchronize the accounts to your Azure AD by using Azure AD Connect. Ideally, you should migrate all managed identity accounts to use your Azure AD.
+- **Manual user configuration**: If you create users in your on-premises Active Directory, you need to synchronize the accounts to your Azure AD by using Azure AD Connect. If you create users in Azure AD, no additional setup is needed.
 
 ## Device management
 
@@ -37,11 +35,11 @@ We recommend that you use MDM-only approach to manage all Azure AD joined device
 
 ## Considerations for resources and application access
 
-For the best user experience and to improve access to your application, you should consider moving all applications and resources to the Azure cloud. While that may be possible in some cases, it isn't always practical. In this section, we'll explore different access options for your applications and resources.
+For the best user experience and to improve access to your application, you should consider moving all applications and resources to the Azure. While that may be possible in some cases, it isn't always practical. In this section, we'll explore different access options for your applications and resources.
 
 - **Cloud-based applications**: Any migrated apps and all new applications will be added to the Azure AD app gallery. Azure AD join users can use SSO to seamlessly access those applications. SSO is supported by the majority of browsers. Azure AD join provides SSO support for device access to applications still using Win32.
 
-- **On-premises web applications**: Any bespoke or custom-made software that's hosted on-premises can still be accessed using Azure AD join. Access to those applications will need each user to add the app to their trusted sites. This action allows the application to use Windows-integrated authentication without prompting the user to authenticate.
+- **On-premises web applications**: Any bespoke or custom-made software that's hosted on-premises can still be accessed using Azure AD join. Access to those applications need each user to add the app to their trusted sites or intranet zone depending on where the app exists. This action allows the application to use Windows-integrated authentication without prompting the user to authenticate.
 
 - **Other devices**: Includes existing applications using legacy protocols, and on-premises network shares. Both are available to Azure AD joined devices using SSO, providing the device is connected to your domain controller.
 
@@ -78,9 +76,9 @@ In the Azure portal, you control how new devices are joined to your organization
 |Field  |Description  |
 |---------|---------|
 |Users may join devices to Azure AD   |  **All** allows for any user to join their device. **Selected** allows you to add specific users that can join devices. **None** prevents all users from joining their devices.     |
-|Additional local administrators on Azure AD joined devices     | Lets you specify other users to be included as local administrators on all joined devices. By default, this option is enabled. Azure adds the global administrator and device administrator roles as local administrators on device. |
+|Additional local administrators on Azure AD joined devices     | Lets you specify other users to be included as local administrators on all joined devices. By default, this option is enabled. Azure AD adds the global administrator and device administrator roles as local administrators on device. |
 |Users may register their devices with Azure AD|Allows users to register their devices with Azure AD Join. If you're using Microsoft Intune or Mobile Device Management for Office 365, device registration is required. If either of these services are configured in your Azure AD organization, **All** is selected and this option is disabled.|
-|Require Multi-Factor Authentication to join device |  Lets you enforce Multi-Factor Authentication (MFA) when the device joins your Azure AD. For the users that join devices to Azure AD using MFA, the device itself becomes a 2nd factor.   |
+|Require Multi-Factor Authentication to join device |  Lets you enforce Azure Multi-Factor Authentication (MFA) when the device joins your Azure AD. For the users that join devices to Azure AD using Azure MFA, the device itself becomes a second factor.   |
 |Maximum number of devices per user| Maximum number of devices a user can have in Azure AD. If they reach this maximum, the user would need to remove a device to add a new one. |
 
 For our scenario, we could add a pilot group of users to try AD join. In that case, you'd choose **Users may join devices to Azure AD** > **Selected** and then add members of your pilot group. When you're ready to deploy Azure AD join to your entire Azure AD organization, select **All**.
@@ -110,13 +108,16 @@ You've given a new device to a tech-savvy employee. They'll use the self-service
 
 1. After starting the device, they follow the prompts to set it up, including customizing their region and selecting a language.
 
-    ![Screenshot of the region customization for Windows 10.](../media/3-walk-setup-pc.png)
+    >[!div class="mx-imgBorder"]
+    >![Screenshot of the region customization for Windows 10.](../media/3-walk-setup-pc.png)
 
 1. Accept the Microsoft Software Licensing Terms.
 1. Select the network connection to use to connect to the cloud.
 1. When asked **Who owns this PC?**, select **This device belongs to my organization**.
 
-    ![Screenshot that shows the who owns this pc prompt.](../media/3-walk-who-owns.png)
+    >[!div class="mx-imgBorder"]
+    >![Screenshot that shows the who owns this pc prompt.](../media/3-walk-who-owns.png)
+
 1. Employee signs in with the credentials supplied by your organization.
 1. The employee is prompted with an MFA challenge.
 1. Azure AD checks the configuration settings to see if the device should be enrolled in MDM.
