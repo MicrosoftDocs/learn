@@ -34,7 +34,7 @@ quiz:
     - content: "The device can't join  Azure AD until the device has been registered with MDM."
       isCorrect: false
       explanation: "The device can join  Azure AD, but it's unmanaged."
-    - content: "The Azure AD Join completes without the MDM enrollment."
+    - content: "The Azure AD join completes without the MDM enrollment."
       isCorrect: true
       explanation: "The device is joined, but it's unmanaged by the MDM system."
   
