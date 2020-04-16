@@ -27,7 +27,8 @@ roles:
 #- quantum-engineer
 #- computer-scientist
 #- student
-#products:
+products:
+- azure # TODO: Get product taxonomy
 #- Quantum Development Kit
 units:
 - learn.quantum.get-started-qdk.1-introduction

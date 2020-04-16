@@ -132,8 +132,9 @@ the classical value assigned to that pole when measured. For example, the qubit
 state represented by the red arrow below has a higher probability of giving the
 value **0** if we measure it.
 
-<img src="../media/qrng-Bloch.png" width="175" alt="A qubit state with a high
-probability of measuring zero">
+![A qubit state with a high probability of measuring zero](../media/qrng-Bloch.png)
+<!--img src="../media/qrng-Bloch.png" width="175" alt="A qubit state with a high
+probability of measuring zero"-->
 
 We can use this representation to visualize what the code is doing:
 
@@ -141,14 +142,16 @@ We can use this representation to visualize what the code is doing:
   create a superposition in which the probabilities for **0** and **1** are the
   same.
 
-<img src="../media/qrng-H.png" width="450" alt="Preparing a qubit in
-superposition">
+![Preparing a qubit in superposition](../media/qrng-H.png)
+<!--img src="../media/qrng-H.png" width="450" alt="Preparing a qubit in
+superposition"-->
 
 
 * Then we measure the qubit and save the output:
 
-<img src="../media/qrng-meas.png" width="450" alt="Measuring a qubit and saving
-the output">
+![Measuring a qubit and saving the output](../media/qrng-meas.png)
+<!--img src="../media/qrng-meas.png" width="450" alt="Measuring a qubit and saving
+the output"-->
 
 Since the outcome of the measurement is completely random, we have obtained a
 random bit. We can call this operation several times to create integers. For

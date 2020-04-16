@@ -6,7 +6,7 @@ One of most direct the applications of quantum devices is the generation of
 verified random numbers. We can perform measurements on quantum systems to
 obtain pure random values.
 
-![Schrodinger's cat](../media/cat.png) 
+![A conceptual image of Schrodinger's cat](../media/cat.png) 
 
 In Schrödinger's cat thought experiment, if we open the box to check if the cat
 is dead or alive, the quantum state of the cat randomly collapses into one of

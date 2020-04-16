@@ -38,21 +38,25 @@ Then, continue on below.
 Open VS Code, find the "Extensions" tab, and search for "Quantum Development Kit".
 Click the install button.
 
-<img src="./2-install/2-1.PNG" alt="extension" width="600">
+![](../media/2-1.PNG)
+<!--img src="./2-install/2-1.PNG" alt="extension" width="600"-->
 
 Next, we will install the project templates, so that you can immediately get up and running with your first quantum program.
 
 - Go to **View** -> **Command Palette**
 
-<img src="./2-install/2-2.PNG" alt="commandpalette" width="300">
+![](../media/2-2.PNG)
+<!--img src="./2-install/2-2.PNG" alt="commandpalette" width="300"-->
 
 - Select **Q#: Install project templates**
 
-<img src="./2-install/2-3.PNG" alt="projecttemplates" width="300">
+![](../media/2-3.PNG)
+<!--img src="./2-install/2-3.PNG" alt="projecttemplates" width="300"-->
 
 After a few seconds you should see the following pop-up on the lower right-hand side of your screen.
 
-<img src="./2-install/2-4.PNG" alt="installedpopup" width="300">
+![](../media/2-4.PNG)
+<!--img src="./2-install/2-4.PNG" alt="installedpopup" width="300"-->
 
 You now have the Quantum Development Kit installed and ready to use in your own applications and libraries.
 
@@ -65,27 +69,32 @@ To create a new Q# project:
 - Go to **View** -> **Command Palette**
 - Select **Q#: Create New Project**
 
-<img src="./2-install/2-5.PNG" alt="createnewproject" width="300">
+![](../media/2-5.PNG)
+<!--img src="./2-install/2-5.PNG" alt="createnewproject" width="300"-->
 
 - Select **Standalone console application**
 
-<img src="./2-install/2-6.PNG" alt="standaloneconsoleapp" width="300">
+![](../media/2-6.PNG)
+<!--img src="./2-install/2-6.PNG" alt="standaloneconsoleapp" width="300"-->
 
 - Navigate to the location on the file system where you would like to create the application, and name your project.
 
-<img src="./2-install/2-7.PNG" alt="projectlocation" width="600">
+![](../media/2-7.PNG)
+<!--img src="./2-install/2-7.PNG" alt="projectlocation" width="600"-->
 
 
 - Click on the **Open new project...** button, once the project has been created
 
-<img src="./2-install/2-8.PNG" alt="opennewproject" width="300">
+![](../media/2-8.PNG)
+<!--img src="./2-install/2-8.PNG" alt="opennewproject" width="300"-->
 
 Note that if you don't already have the C# extension for VS Code installed, a pop-up will appear.
 Simply go ahead and install the extension. 
 
 You should now see the following files in your project folder:
 
-<img src="./2-install/2-9.PNG" alt="projecttemplates" width="300">
+![](../media/2-9.PNG)
+<!--img src="./2-install/2-9.PNG" alt="projecttemplates" width="300"-->
 
 `Program.qs` is the Q# program file, and `Driver.cs` is the C# host file.
 Note that `<project-name>.csproj` is also automatically generated, and simply containing information about which .NET Core and QDK versions are to be used by the compiler.
@@ -94,8 +103,10 @@ Note that `<project-name>.csproj` is also automatically generated, and simply co
 Explore both the Q# and C# files, and think about how they might work.
 In particular, note that the C# host file calls the quantum operation defined in the Q# file.
 
-<img src="./2-install/2-10.PNG" alt="qsharpfile" width="500">
-<img src="./2-install/2-11.PNG" alt="csharpfile" width="500">
+![](../media/2-10.PNG)
+![](../media/2-11.PNG)
+<!--img src="./2-install/2-10.PNG" alt="qsharpfile" width="500"-->
+<!--img src="./2-install/2-11.PNG" alt="csharpfile" width="500"-->
 
 In the next unit, you will learn more about this behavior, and Q# files in general.
 
@@ -103,11 +114,13 @@ In the next unit, you will learn more about this behavior, and Q# files in gener
 
 - Go to **Terminal** -> **New Terminal**
 
-<img src="./2-install/2-12.PNG" alt="newterminal" width="240">
+![](../media/2-12.PNG)
+<!--img src="./2-install/2-12.PNG" alt="newterminal" width="240"-->
 
 - Enter `dotnet run`, and you should see your first quantum program saying hello!
 
-<img src="./2-install/2-13.PNG" alt="helloworld" width="500">
+![](../media/2-13.PNG)
+<!--img src="./2-install/2-13.PNG" alt="helloworld" width="500"-->
 
 
 ### Continue to the next unit
