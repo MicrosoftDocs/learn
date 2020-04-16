@@ -18,7 +18,7 @@ In this module you will:
 
 (come up with a story related to the QIO example) e.g. Suppose you manage a research department of a pharmaceutical company, that is working on the vaccination against the latest influenzas. Your company has been delivering drugs around the world and prioritizes its business on researching on chemicals that can defend against the ever evolving viruses. 
 
-:::image type="content" source="../.../....jpg" alt-text="Pharma Research":::
+<!-- :::image type="content" source="../.../....jpg" alt-text="Pharma Research"::: -->
 
 ## What you will do in this module
 
