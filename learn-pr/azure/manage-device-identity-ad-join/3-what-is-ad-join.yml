@@ -15,20 +15,6 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which of these infrastructure models isn't a valid method of joining a device to your Azure AD?"
-    choices:
-    - content: "Manual user configuration"
-      isCorrect: false
-      explanation: "Manual user configuration supports using Azure AD join."
-    - content: "Smartcards and certificate-based authentication"
-      isCorrect: true
-      explanation: "Smartcards and certificate-based authentication aren't valid methods for joining devices to your Azure AD."
-    - content: "Federated environments"
-      isCorrect: false
-      explanation: "Federated environments require the use of an identity provider, but it's a valid method for joining an Azure AD."
-    - content: "A managed environment "
-      isCorrect: false
-      explanation: "A managed environment uses Pass-Through Authentication or Password Hash Sync to provide Seamless Single Sign-on to your devices."
   - content: "What provisioning options are available through Azure AD join?"
     choices:
     - content: "Self-service by using the Windows out-of-box experience (OOBE), Windows Autopilot, or Bulk enrollment"
