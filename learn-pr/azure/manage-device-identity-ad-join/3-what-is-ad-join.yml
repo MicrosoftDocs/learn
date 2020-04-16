@@ -4,52 +4,37 @@ title: What is the Azure AD join?
 metadata:
   title:  What is Azure AD join?
   description: Learn about Azure AD join
-  ms.date: 10/08/2019
+  ms.date: 04/16/2020
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
-durationInMinutes: 6
+durationInMinutes: 7
 content: |
   [!include[](includes/3-what-is-ad-join.md)]
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which of these infrastructure models is not a valid method of joining a device to your Azure AD?"
+  - content: "What are the provisioning options that are available through Azure AD join?"
     choices:
-    - content: "Manual user configuration"
-      isCorrect: false
-      explanation: "Manual user configuration supports using Azure AD join."
-    - content: "Smartcards and certificate-based authentication"
-      isCorrect: true
-      explanation: "Smartcards and certificate based authentication are not valid methods for joining devices to your Azure AD."
-    - content: "Federated environments"
-      isCorrect: false
-      explanation: "Federated environments require the use of an identity provider, but it is a valid method for joining an Azure AD."
-    - content: "A managed environment "
-      isCorrect: false
-      explanation: "A managed environment uses Pass-Through Authentication or Password Hash Sync to provide Seamless Single Sign-on to your devices."
-  - content: "What provisioning options are available through Azure AD join?"
-    choices:
-    - content: "Self-service using OOBE, Windows Autopilot, or Bulk enrollment"
+    - content: "Self-service by using the Windows out-of-box experience (OOBE), Windows Autopilot, or bulk enrollment"
       isCorrect: true
       explanation: "All three options allow devices to be joined to your Azure AD."
-    - content: "Self-service using MDM, Windows Autopilot, or Bulk enrollment"
+    - content: "Self-service using MDM, Windows Autopilot, or bulk enrollment"
       isCorrect: false
-      explanation: "There is no self-service capability using MDM."
-    - content: "Self-service using Azure AD, Windows Autopilot, or Bulk enrollment"
+      explanation: "There's no self-service capability using MDM."
+    - content: "Windows Autopilot, or bulk enrollment"
       isCorrect: false
-      explanation: "There is no self-service capability for joining a device to Azure AD."
-  - content: "What happens when a device is not in the MDM scope?"
+      explanation: "Windows Autopilot and bulk enrollment are supported but you can also use the self-service OOBE option with Azure AD join."
+  - content: "What happens when a device isn't in the MDM scope?"
     choices:
-    - content: "The user will be asked to add the device to the MDM before the device can join the Azure AD."
+    - content: "The user is asked to add the device to the MDM before the device can join the Azure AD."
       isCorrect: false
-      explanation: "The user will never be asked to join the device to an MDM."
-    - content: "The device will not be able to join the Azure AD until the device has been registered with MDM."
+      explanation: "The user is never asked to join the device to an MDM."
+    - content: "The device can't join  Azure AD until the device has been registered with MDM."
       isCorrect: false
-      explanation: "The device will be able to join the Azure AD, but will be un-managed."
-    - content: "The Azure AD Join completes without the MDM enrollment."
+      explanation: "The device can join  Azure AD, but it's unmanaged."
+    - content: "The Azure AD join completes without the MDM enrollment."
       isCorrect: true
-      explanation: "The device will be be joined, but will be unmanaged by the MDM system."
+      explanation: "The device is joined, but it's unmanaged by the MDM system."
   
