@@ -53,11 +53,27 @@ array([[71, 86],
 
 What happens when your index array is bigger than the target array?
 
-> <details>
->  <summary>Hint (expand to reveal)</summary>
->  
-> You could use a large one-dimensional array or something fancier like `ind = np.arange(0, 12).reshape((6, 2))`.
-> </details>
+<details>
+
+  <summary>Hint <i>(expand to reveal)</i></summary>
+
+  ```python
+  ind = np.arange(0, 12).reshape((6, 2))
+  arr(ind)
+  ```
+  
+  ```output
+  ---------------------------------------------------------------------------
+  TypeError                                 Traceback (most recent call last)
+   in 
+      2 # Hint: you could use a large one-dimensional array or something fancier like ind = np.arange(0, 12).  reshape((6, 2))
+        3 ind = np.arange(0, 12).reshape((6, 2))
+  ----> 4 arr(ind)
+  
+  TypeError: 'numpy.ndarray' object is not callable
+  ```
+  
+</details>
 
 Fancy indexing also works in multiple dimensions:
 
@@ -103,15 +119,49 @@ Here, each row value is matched with each column vector, exactly as we saw in br
 #### Try it yourself
 
 Now try broadcasting this on your own.
+
 - What do you get with `row[:, np.newaxis] * col`?
-- Or `row[:, np.newaxis] * row? col[:, np.newaxis] * row`?
+- Or `row[:, np.newaxis] * row`?
 - What about `col[:, np.newaxis] * row`?
 
-> <details>
->  <summary>Hint (expand to reveal)</summary>
-> Think back to the broadcast rules.
-> </details>
- 
+Think back to the broadcast rules.
+
+<details>
+
+  <summary>Hint <i>(expand to reveal)</i></summary>
+
+  ```python
+  row[:, np.newaxis] * col
+  ```
+  
+  ```output
+  array([[0, 0, 0],
+       [2, 1, 3],
+       [4, 2, 6]])
+  ```
+
+  ```python
+  row[:, np.newaxis] * row
+  ```
+  
+  ```output
+  array([[0, 0, 0],
+       [0, 1, 2],
+       [0, 2, 4]])
+  ```
+
+  ```python
+  col[:, np.newaxis] * row
+  ```
+  
+  ```output
+  array([[0, 2, 4],
+       [0, 1, 2],
+       [0, 3, 6]])
+  ```
+
+</details>
+
 >[!div class="alert is-tip"]
 >### The big takeaway
 >
@@ -227,7 +277,6 @@ This happened because `ind[arr] += 1` is really shorthand for `ind[arr] = ind
 
 But what if you want an operation to repeat? To do this, use the `at()` method of ufuncs:
 
-In [91]:
 ```python
 ind = np.zeros(10)
 np.add.at(ind, arr, 1)
@@ -242,11 +291,20 @@ print(ind)
 
 What does np.subtract.at(ind, arr, 1) give you?
 
-> <details>
->  <summary>Sarah TBA Hint (expand to reveal)</summary>
->  
-> **Sarah TBA** or remove the hint.
-> </details>
+<details>
+
+  <summary>Hint <i>(expand to reveal)</i></summary>
+
+  ```python
+  np.subtract.at(ind, arr, 1)
+  print(ind)
+  ```
+  
+  ```output
+  [ 0.  0. -2. -4. -6.  0.  0.  0.  0.  0.]
+  ```
+  
+</details>
 
 Play around with some of the other ufuncs we have seen.
 

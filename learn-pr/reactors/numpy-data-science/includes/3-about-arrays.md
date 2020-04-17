@@ -77,11 +77,19 @@ array([3.14, 4.  , 2.  , 3.  ])
 
 What happens if you construct an array using a list that contains a combination of integers, floats, and strings?
 
-> <details>
->  <summary>Sara TBA Hint (expand to reveal)</summary>
->  
-> **Sarah TBA** or remove the hint.
-> </details>
+<details>
+
+  <summary>Hint <i>(expand to reveal)</i></summary>
+  
+  ```Python
+  np.array([3.14, 'pi', 3])
+  ```
+
+  ```Output
+  array(['3.14', 'pi', '3'], dtype='<U32')
+  ```
+
+</details>
 
 If you want to explicitly set the data type of your array when you create it, you can use the `dtype` keyword:
 
@@ -97,11 +105,19 @@ array([1., 2., 3., 4.], dtype=float32)
 
 Try this using a different `dtype`.
 
-> <details>
->  <summary>Sarah TBA Hint (expand to reveal)</summary>
->  
-> **Sarah TBA** or remove the hint.
-> </details>
+<details>
+
+  <summary>Hint <i>(expand to reveal)</i></summary>
+
+  ```Python
+  np.array([1.0, 2.5, 3, 4], dtype='int32')
+  ```
+
+  ```Output
+  array([1, 2, 3, 4])
+  ```
+  
+</details>
 
 Remember that you can always refer to the documentation with the command `np.array`.
 
@@ -182,7 +198,7 @@ np.linspace(0, 1, 5)
 array([0.  , 0.25, 0.5 , 0.75, 1.  ])
 ```
 
-Create a 3x3 array of uniformly distributed random values between 0 and 1:
+Create a 3 x 3 array of uniformly distributed random values between 0 and 1:
 
 ```python
 np.random.random((3, 3))
@@ -194,7 +210,7 @@ array([[0.1293533 , 0.00963681, 0.76015197],
        [0.28123745, 0.37741323, 0.01221669]])
 ```
 
-Create a 3x3 array of normally distributed random values
+Create a 3 x 3 array of normally distributed random values
 with mean 0 and standard deviation 1:
 
 ```python
@@ -207,7 +223,7 @@ array([[ 0.41781774,  1.10706673, -1.84875856],
        [-1.18743752,  0.48199796,  0.37693047]])
 ```
 
-Create a 3x3 array of random integers in the interval [0, 10):
+Create a 3 x 3 array of random integers in the interval [0, 10):
 
 ```python
 np.random.randint(0, 10, (3, 3))
@@ -219,7 +235,8 @@ array([[0, 3, 7],
        [0, 5, 7]])
 ```
 
-Create a 3x3 identity matrix:
+Create a 3 x 3 identity matrix:
+
 ```python
 np.eye(3)
 ```
@@ -232,6 +249,7 @@ array([[1., 0., 0.],
 
 Create an uninitialized array of three integers:
 The values will be whatever happens to already exist at that memory location.
+
 ```python
 np.empty(3)
 ```

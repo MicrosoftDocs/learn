@@ -1,17 +1,11 @@
-<div>
-<style>
-   table { border-collapse: collapse; border: 1px solid darkgrey; background-color:rgb(240,240,240); width: 300px; padding: 5px; }
-   tr { border: 1px solid darkgrey; text-align: left; padding: 5px; }
-   td { border: 1px solid darkgrey; padding: 5px; }
-</style>
-</div>
-
 Index and column alignment gets maintained in operations between a `DataFrame` and a `Series` as well. To see this, consider a common operation in data science, wherein we find the difference of a `DataFrame` and one of its rows. Because pandas inherits ufuncs from NumPy, pandas will compute the difference row-wise by default:
 
 ```Python
 df3 = pd.DataFrame(rng.randint(10, size=(3, 4)), columns=list('WXYZ'))
 df3
 ```
+
+The output is:
 
 ```Output
 |    | W  | X  | Y  | Z  |
@@ -21,9 +15,13 @@ df3
 | 2  | 6  | 1  | 3  | 8  |
 ```
 
+Another example:
+
 ```Python
 df3 - df3.iloc[0]
 ```
+
+The output is:
 
 ```Output
 |    | W   | X   | Y  | Z  |
@@ -38,6 +36,8 @@ But what if you need to operate column-wise? You can do this by using object met
 ```Python
 df3.subtract(df3['X'], axis=0)
 ```
+
+The output is:
 
 ```Output
 |    | W   | X  | Y   | Z   |
@@ -54,6 +54,8 @@ halfrow = df3.iloc[0, ::2]
 halfrow
 ```
 
+The output is:
+
 ```Output
 W    3
 Y    2
@@ -65,6 +67,8 @@ Note that the output from that operation was transposed. That was so that we can
 ```Python
 df3 - halfrow
 ```
+
+The output is:
 
 ```Output
 |    |  W   |  X   |  Y   |  Z   |

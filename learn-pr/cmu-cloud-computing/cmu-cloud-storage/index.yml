@@ -1,0 +1,67 @@
+### YamlMime:Module
+uid: learn.cmu-cloud-computing.cloud-storage.cloud-storage-overview
+metadata:
+  title: Cloud storage overview
+  description: Carnegie Mellon University's Cloud Developer course. Learn all about data and get an overview of how it's stored, including local and distributed file systems, databases, and object storage.
+  brand: azure
+  ms.date: 03/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Cloud storage overview
+summary: Learn all about data and get an overview of how it's stored, including local and distributed file systems, databases, and object storage.
+abstract: | 
+  In this module, you will:
+    - Describe the overall characteristics of data
+    - List and classify different data types within the data taxonomy
+    - Identify the problems of scale and management in big data
+    - Discuss the various application requirements in storage, and map the design choices for storage systems
+    - Recall the memory hierarchy in computer systems and explain the tradeoffs of cost, performance, and capacity at each layer
+    - Recall the various types of devices used in storage systems
+    - Describe the various abstractions exposed to applications in storage systems
+    - Discuss the design considerations of local and distributed file systems
+    - Compare and contrast different types of databases and their design tradeoffs
+    - Identify the characteristics of a relational database system
+    - Discuss the concepts of cloud object storage
+    - Identify the characteristics of a NewSQL database system
+
+  In partnership with Dr. Majd Sakr and Carnegie Mellon University.
+prerequisites: |
+  - Understand what cloud computing is, including cloud service models, and common cloud providers
+  - Know the technologies that enable cloud computing
+  - Understand how cloud service providers pay for and bill for the cloud
+  - Know what datacenters are and why they exist
+  - Know how datacenters are set up, powered, and provisioned
+  - Understand how cloud resources are provisioned and metered
+  - Be familiar with the concept of virtualization
+  - Know what the different types of virtualization are
+  - Understand CPU virtualization
+  - Understand memory virtualization
+  - Understand I/O virtualization 
+iconUrl: /learn/achievements/cmu-cloud-developer/cloud-storage-overview.svg
+levels:
+- beginner
+roles:
+- developer
+- student
+products:
+- azure
+units:
+- learn.cmu-cloud-computing.cloud-storage.cloud-storage-overview.0-introduction
+- learn.cmu-cloud-computing.cloud-storage.cloud-storage-overview.1-data-overview
+- learn.cmu-cloud-computing.cloud-storage.cloud-storage-overview.2-apps-requirements
+- learn.cmu-cloud-computing.cloud-storage.cloud-storage-overview.3-storage-devices
+- learn.cmu-cloud-computing.cloud-storage.cloud-storage-overview.4-storage-abstractions
+- learn.cmu-cloud-computing.cloud-storage.cloud-storage-overview.5-local-file-systems
+- learn.cmu-cloud-computing.cloud-storage.cloud-storage-overview.6-distributed-file-systems
+- learn.cmu-cloud-computing.cloud-storage.cloud-storage-overview.7-databases
+- learn.cmu-cloud-computing.cloud-storage.cloud-storage-overview.8-database-schema-scalability
+- learn.cmu-cloud-computing.cloud-storage.cloud-storage-overview.9-database-consistency-cap-theorem
+- learn.cmu-cloud-computing.cloud-storage.cloud-storage-overview.10-relational-databases
+- learn.cmu-cloud-computing.cloud-storage.cloud-storage-overview.11-nosql-databases
+- learn.cmu-cloud-computing.cloud-storage.cloud-storage-overview.12-newsql-databases
+- learn.cmu-cloud-computing.cloud-storage.cloud-storage-overview.13-object-storage-cloud-service
+- learn.cmu-cloud-computing.cloud-storage.cloud-storage-overview.14-summary
+badge:
+  uid: learn.cmu-cloud-computing.cloud-storage.cloud-storage-overview.badge

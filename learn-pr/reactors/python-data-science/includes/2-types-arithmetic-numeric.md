@@ -18,6 +18,8 @@ The order of operations also works as in other programming languages (and in mat
 30 - 4 * 5
 ```
 
+The output looks like this:
+
 ```Output
 10
 ```
@@ -27,6 +29,8 @@ Note what happens when you use division:
 ```Python
 7 / 5
 ```
+
+The output is:
 
 ```Output
 1.4
@@ -40,13 +44,19 @@ You can mix numeric types in calculations:
 3 * 3.5
 ```
 
+The output is:
+
 ```Output
 10.5
 ```
 
+Another example of mixed types:
+
 ```Python
 7.0 / 5
 ```
+
+The output is:
 
 ```Output
 1.4
@@ -58,6 +68,8 @@ You can perform a type of division that returns an integer: [floor division](htt
 7 // 5
 ```
 
+The output is:
+
 ```Output
 1
 ```
@@ -67,6 +79,8 @@ To calculate the remainder, you can use the modulo operator (%):
 ```Python
 7 % 5
 ```
+
+The output is:
 
 ```Output
 2
@@ -78,6 +92,8 @@ For exponents, use the power (**) operator. For example, you can write $5^2$ as:
 5 ** 2
 ```
 
+The output is:
+
 ```Output
 25
 ```
@@ -87,6 +103,8 @@ Conversely, $2^5$ would be:
 ```Python
 2 ** 5
 ```
+
+The output is:
 
 ```Output
 32
@@ -98,6 +116,8 @@ Note that power (**) has higher precedence in the order of operations than the n
 -5 ** 2
 ```
 
+The output is:
+
 ```Output
 -25
 ```
@@ -108,6 +128,8 @@ In order to assert the order of precedence that you want, use parentheses ():
 (-5) ** 2
 ```
 
+The output is:
+
 ```Output
 25
 ```
@@ -117,6 +139,8 @@ Parentheses () can supersede the order of operations in any calculation you need
 ```Python
 (30 - 4) * 5
 ```
+
+The output is:
 
 ```Output
 130

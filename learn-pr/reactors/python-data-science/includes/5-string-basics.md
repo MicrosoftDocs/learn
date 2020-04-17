@@ -4,21 +4,31 @@ Besides numbers, Python can also manipulate strings. Strings can be enclosed in 
 'spam eggs'  # Single quotes.
 ```
 
+The output is:
+
 ```Output
 'spam eggs'
 ```
+
+Another example:
 
 ```Python
 'doesn\'t'  # Use \' to escape the single quote...
 ```
 
+The output is:
+
 ```Output
 "doesn't"
 ```
 
+Another example:
+
 ```Python
 "doesn't"  # ...or use double quotes instead.
 ```
+
+The output is:
 
 ```Output
 "doesn't"
@@ -30,13 +40,19 @@ In Python's interactive interpreter and Jupyter Notebooks in VS Code, the output
 '"Isn\'t," she said.'
 ```
 
+The output is:
+
 ```Output
 '"Isn\'t," she said.'
 ```
 
+Another example:
+
 ```Python
 print('"Isn\'t," she said.')
 ```
+
+The output is:
 
 ```Output
 "Isn\'t," she said.
@@ -49,14 +65,20 @@ print('C:\some\name')  # Here \n means newline!
 # Im adding some more comments - woo!
 ```
 
+The output is:
+
 ```Output
 C:\some
 ame
 ```
 
+Another example:
+
 ```Python
 print(r'C:\some\name')  # Note the r before the quote.
 ```
+
+The output is:
 
 ```Output
 C:\some\name
@@ -77,6 +99,8 @@ used in code, the string is ignored. Convenient, eh?
 """
 ```
 
+The output is:
+
 ```Output
 "\nEverything between the first three quotes, including new lines,\nis part of the multi-line comment. Technically, the Python interpreter\nsimply sees the comment as a string, and because it's not otherwise\nused in code, the string is ignored. Convenient, eh?\n"
 ```
@@ -89,6 +113,8 @@ Strings can be _concatenated_ (glued together) with the plus (+) operator, and r
 # 3 times 'un', followed by 'ium'
 3 * 'un' + 'ium'
 ```
+
+The output is:
 
 ```Output
 'unununium'
@@ -104,6 +130,8 @@ Two or more _string literals_ placed next to each other are automatically concat
 'Py' 'thon'
 ```
 
+The output is:
+
 ```Output
 'Python'
 ```
@@ -114,6 +142,8 @@ However, to concatenate variables or a variable and a literal, use +:
 prefix = 'Py'
 prefix + 'thon'
 ```
+
+The output is:
 
 ```Output
 'Python'

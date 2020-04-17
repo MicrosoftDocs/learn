@@ -35,7 +35,7 @@ Let's say you want to find a Resource Manager template that brings up a basic VM
 
     You see this.
 
-    ![The GitHub README for the Resource Manager template](../../media/3-github-page-windows.png)
+    :::image type="content" source="../../media/3-github-page-windows.png" alt-text="The GitHub README for the Resource Manager template." loc-scope="third-party"::: <!-- GitHub, no-loc -->
 
     The **Deploy to Azure** button enables you to deploy the template directly through the Azure portal, just like you saw on the gallery page.
 
@@ -45,13 +45,13 @@ Let's say you want to find a Resource Manager template that brings up a basic VM
 
     You can use your mouse to arrange the resources. You can also use your mouse's scroll wheel to zoom in an out.
 
-    ![The Azure Resource Manager Visualizer showing Azure resources visually](../../media/3-armviz-windows.png)
+    :::image type="content" source="../../media/3-armviz-windows.png" alt-text="The Azure Resource Manager Visualizer showing Azure resources visually." loc-scope="third-party"::: <!-- product is Azure Resource Manager Visualizer, no-loc -->
 
 1. Click on the **Virtual Machine** resource labeled **SimpleWinVM**.
 
     You see the source code that defines the VM resource.
 
-    ![The Azure Resource Manager Visualizer showing the template's source code](../../media/3-armviz-vm-windows.png)
+    :::image type="content" source="../../media/3-armviz-vm-windows.png" alt-text="The Azure Resource Manager Visualizer showing the template's source code." loc-scope="third-party"::: <!-- product is Azure Resource Manager Visualizer, no-loc -->
 
     You'll have more time to inspect the source code in just a bit. But for now, take a moment to review it briefly.
 

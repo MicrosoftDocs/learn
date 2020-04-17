@@ -6,6 +6,8 @@ For example, the `factorial()` function is not one of the standard functions bui
 factorial(5)
 ```
 
+The error output is:
+
 ```Output
 ---------------------------------------------------------------------------
 NameError                                 Traceback (most recent call last)
@@ -21,6 +23,8 @@ import math
 math.factorial(5)
 ```
 
+The output is:
+
 ```Output
 120
 ```
@@ -31,6 +35,8 @@ Notice that we still have to prepend `math` to the front of the `factorial()` fu
 from math import factorial
 factorial(5)
 ```
+
+The output is:
 
 ```Output
 120

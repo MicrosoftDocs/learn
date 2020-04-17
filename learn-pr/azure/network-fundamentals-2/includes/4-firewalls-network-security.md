@@ -37,7 +37,7 @@ To address this problem, you can create security policies based on these analyti
 
 Attackers often use email to access your network. An email that looks genuine might ask users to select a link and provide details that the attacker uses to access resources and devices on your network. Email applications like Microsoft Outlook help us identify suspicious messages and senders.
 
-![Outlook suspicious message](../media/4-email-outlook.png)
+:::image type="content" source="../media/4-email-outlook.png" alt-text="Image showing a suspicious email message in Outlook. The email has a header that reads This message authenticates but sent by a different responsible sender."  loc-scope="office-outlook":::
 
 ### Intrusion detection and prevention
 
@@ -49,7 +49,7 @@ For example, Azure Network Watcher can provide data to an open-source intrusion 
 
 A virtual private network (VPN) can establish an encrypted connection from one network to another over the internet. The VPN configures an encrypted tunnel that either uses TLS or IPSec to provide secure communication and remote access capabilities across your networks.
 
-![VPN tunnel](../media/4-vpn-connection.svg)
+:::image type="content" source="../media/4-vpn-connection.svg" alt-text="Diagram that shows a VPN tunnel that is set up between two gateways across an internet connection.":::
 
 ### Web security
 
@@ -67,7 +67,7 @@ A network security zone is a network segment that has specific security policies
 
 A trusted or private zone contains the resources and devices that should never be accessible to anyone who's outside your organization. Examples include printers, workstations used by internal users, and internal servers. In this zone, you'll configure the devices with private IP addresses.
 
-![Network security zones](../media/4-network-security-zones.svg)
+:::image type="content" source="../media/4-network-security-zones.svg" alt-text="Diagram that shows the inside and outside network security zones in relation to the perimeter network.":::
 
 ### Public zones
 
@@ -109,11 +109,11 @@ Firewalls can perform several different functions across your network:
 
 - **Proxy server firewalls** control the information that goes into and out of a network. Firewall proxy servers provide safety and security by providing internet access to all devices on a network. This ability means the server can monitor, filter, and cache data requests to and from the network.
 
-  ![A diagram showing the allowed traffic flow through a proxy server](../media/4-proxy-server.svg)
+    :::image type="content" source="../media/4-proxy-server.svg" alt-text="Diagram showing allowed traffic flow through a proxy server and all other traffic blocked.":::
 
 - **Stateful firewalls and next-generation firewalls** inspect characteristics about the connections on your network. The firewall also monitors packets over time and stores a combination of this information in a state table. When a connection and packet match aren't recognized, based on the information held in the table, traffic is blocked.
 
-  ![A diagram showing how a stateful firewall block requests](../media/4-stateful-firewall.svg)
+    :::image type="content" source="../media/4-stateful-firewall.svg" alt-text="Diagram showing how a stateful firewall block requests from an address that is not allowed.":::
 
 - **Next-generation firewalls** perform many of the same functions as stateful firewalls, but they can encompass more functions from other types of firewalls, such as packet filtering and VPN support. This type of firewall also investigates packets more thoroughly when compared to stateful firewalls. For example, a next-generation firewall could look at the payload for each packet and inspect it for suspicious characteristics and malware.
 
@@ -125,30 +125,29 @@ Firewalls help protect your network from the outside world. If you don't have a 
 - Sensitive and private information about employees and clients could be stolen.
 - Your resources, devices, and the entire network could be held to ransom.
 
-It's important to place firewalls between your network and any outside connection. You can combine different types of firewalls to 
-achieve the most robust network security.
+It's important to place firewalls between your network and any outside connection. You can combine different types of firewalls to achieve the most robust network security.
 
 ## Azure network security tools
 
-Azure provides a number of tools that you can use as part of your network security. Each of these tools is designed to address a different aspect of your network's security.
+Azure provides several tools that you can use as part of your network security. Each of these tools is designed to address a different aspect of your network's security.
 
-You can build your own networks through Azure Virtual Network. Use **Network Security Groups** to filter traffic from Azure and on-premises resources to, and from, resources that form part of your virtual networks. A Network Security Group filters traffic through security rules that you specify to deny or permit different types of traffic across your networks.
+You can build your networks through Azure Virtual Network. Use **Network Security Groups** to filter traffic from Azure and on-premises resources to, and from, resources that form part of your virtual networks. A Network Security Group filters traffic through security rules that you specify to deny or permit different types of traffic across your networks.
 
-![Azure Network Security Group at work](../media/4-nsg.svg)
+:::image type="content" source="../media/4-nsg.svg" alt-text="Diagram of an Azure Network Security Group at work with an inbound rule configured to allow TCP and UDP traffic on port 80.":::
 
 You can also log all the traffic flowing through your network security groups for analysis. Use the Azure Network Watcher service and enable NSG flow logs. Your logs will then be stored for use in a JSON file in a storage account.
 
 **Azure Firewall** is a fully managed firewall that you can use to protect the resources that are inside your Azure virtual networks. Because Azure Firewall is cloud-based, it comes with certain advantages. You won't have to worry about whether Azure Firewall can scale to the number of resources on your networks. It comes preconfigured with high availability to prevent your firewall from going down.
 
-![A diagram showing how an Azure firewall blocks traffic](../media/4-azure-firewall.svg)
+:::image type="content" source="../media/4-azure-firewall.svg" alt-text="Diagram showing how an Azure firewall blocks traffic.":::
 
 You connect your on-premises network to your Azure virtual networks by configuring a **site-to-site VPN** connection with Azure. Use a VPN gateway (which is a VPN appliance from Azure), along with your local VPN device, to establish a VPN tunnel for communication. Your cloud and on-premises resources then communicate across the VPN tunnel.
 
-![A diagram showing an Azure site-to-site connection](../media/4-site-to-site-vpn.svg)
+:::image type="content" source="../media/4-site-to-site-vpn.svg" alt-text="Diagram showing an Azure site-to-site connection using an IPSec IKE S2S VPN tunnel.":::
 
 You can also set up a **point-to-site VPN** connection between Azure and your on-premises network. Here, individual users and clients can connect to your Azure resources through a secure tunnel.
 
-![A diagram showing an Azure point-to-site connection](../media/4-point-to-site-vpn.svg)
+:::image type="content" source="../media/4-point-to-site-vpn.svg" alt-text="A diagram showing an Azure point-to-site connection using P2S SSTP tunnels.":::
 
 ### Azure network security considerations
 

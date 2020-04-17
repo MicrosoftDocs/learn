@@ -5,13 +5,19 @@ word = 'Python'
 word[0]  # Character in position 0.
 ```
 
+The output is:
+
 ```Output
 'P'
 ```
 
+Another example:
+
 ```Python
 word[5]  # Character in position 5.
 ```
+
+The output is:
 
 ```Output
 'n'
@@ -23,21 +29,31 @@ Indices may also be negative numbers, which means to start counting from the end
 word[-1]  # Last character.
 ```
 
+The output is:
+
 ```Output
 'n'
 ```
+
+Another example:
 
 ```Python
 word[-2]  # Second-last character.
 ```
 
+The output is:
+
 ```Output
 'o'
 ```
 
+Another example:
+
 ```Python
 word[-6]
 ```
+
+The output is:
 
 ```Output
 'P'
@@ -51,13 +67,19 @@ In addition to indexing, which extracts individual characters, Python also suppo
 word[0:2]  # Characters from position 0 (included) to 2 (excluded).
 ```
 
+The output is:
+
 ```Output
 'Py'
 ```
 
+Another example:
+
 ```Python
 word[2:5]  # Characters from position 2 (included) to 5 (excluded).
 ```
+
+The output is:
 
 ```Output
 'tho'
@@ -69,21 +91,31 @@ If you omit either position, the default start position is 0 and the default end
 word[:2]   # Character from the beginning to position 2 (excluded).
 ```
 
+The output is:
+
 ```Output
 'Py'
 ```
+
+Another example:
 
 ```Python
 word[4:]  # Characters from position 4 (included) to the end.
 ```
 
+The output is:
+
 ```Output
 'on'
 ```
 
+Another example:
+
 ```Python
 word[-2:] # Characters from the second-last (included) to the end.
 ```
+
+The output is:
 
 ```Output
 'on'
@@ -95,13 +127,19 @@ This characteristic means that `s[:i] + s[i:]` is always equal to `s`:
 word[:2] + word[2:]
 ```
 
+The output is:
+
 ```Output
 'Python'
 ```
 
+Another example:
+
 ```Python
 word[:4] + word[4:]
 ```
+
+The output is:
 
 ```Output
 'Python'
@@ -124,6 +162,8 @@ Attempting to use an index that is too large results in an error:
 word[42]  # The word only has 6 characters.
 ```
 
+The error output is:
+
 ```Output
 ---------------------------------------------------------------------------
 IndexError                                Traceback (most recent call last)
@@ -138,13 +178,19 @@ However, when used in a range, an index that's too large defaults to the size of
 word[4:42]
 ```
 
+The output is:
+
 ```Output
 'on'
 ```
 
+Another example:
+
 ```Python
 word[42:]
 ```
+
+The output is:
 
 ```Output
 ''
@@ -155,6 +201,8 @@ Python strings are [immutable](https://docs.python.org/3.6/glossary.html#term-im
 ```Python
 word[0] = 'J'
 ```
+
+The error output is:
 
 ```Output
 ---------------------------------------------------------------------------
@@ -170,6 +218,8 @@ The following cell also produces an error:
 word[2:] = 'py'
 ```
 
+The error output is:
+
 ```Output
 ---------------------------------------------------------------------------
 TypeError                                 Traceback (most recent call last)
@@ -184,13 +234,19 @@ A slice is itself a value that you can concatenate with other values using +:
 'J' + word[1:]
 ```
 
+The output is:
+
 ```Output
 'Jython'
 ```
 
+Another example:
+
 ```Python
 word[:2] + 'Py'
 ```
+
+The output is:
 
 ```Output
 'PyPy'
@@ -201,6 +257,8 @@ A slice, however, is not a string literal, and it cannot be used with automatic 
 ```Python
 word[:2] 'Py'    # Slice is not a literal; produces an error
 ```
+
+The output is:
 
 ```Output
   File "<ipython-input-77-60be1c701626>", line 1
@@ -216,6 +274,8 @@ s = 'supercalifragilisticexpialidocious'
 len(s)
 ```
 
+The output is:
+
 ```Output
 34
 ```
@@ -226,13 +286,19 @@ Another useful built-in function for working with strings is [str()](https://doc
 str(2)
 ```
 
+The output is:
+
 ```Output
 '2'
 ```
 
+Another example:
+
 ```Python
 str(2.5)
 ```
+
+The output is:
 
 ```Output
 '2.5'

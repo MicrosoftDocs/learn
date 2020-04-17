@@ -157,25 +157,25 @@ Here's the output:
 | 5 | HR         | organization  |
 ```
 
-Then, run this command in a cell:
+Then, run this code in a cell:
 
 ```python
 pd.merge(df1, df5, on='group')
 ```
 
-Here's the output:
+This output is returned:
 
 ```output
-|   | empoyee |  group     | core_skills   |
+|   | employee | group      | core_skills   |
 --------------------------------------------
-| 0 | Gary    | Accounting | math          |
-| 1 | Gary    | Accounting | spreadsheets  |
-| 2 | Stu     | Marketing  | writing       |
-| 3 | Stu     | Marketing  | communication |
-| 4 | Mary    | Marketing  | writing       |
-| 5 | Mary    | Marketing  | communication |
-| 6 | Sue     | HR         | spreadsheets  |
-| 7 | Sue     | HR         | organization  |
+| 0 | Gary     | Accounting | math          |
+| 1 | Gary     | Accounting | spreadsheets  |
+| 2 | Stu      | Marketing  | writing       |
+| 3 | Stu      | Marketing  | communication |
+| 4 | Mary     | Marketing  | writing       |
+| 5 | Mary     | Marketing  | communication |
+| 6 | Sue      | HR         | spreadsheets  |
+| 7 | Sue      | HR         | organization  |
 ```
 
 Again, to avoid ambiguity about which column to join on, it's a good idea to explicitly tell `merge` which one to use with the `on` parameter.
@@ -220,12 +220,22 @@ This output is returned:
 
 ### Try it yourself
 
-Using the documentation, can you figure out how to use `.drop()` to get rid of the **name** column?
+Using the documentation, can you figure out how to use `.drop()` to get rid of the **name** column? You will need to supply two parameters to `.drop()`.
 
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
-  
-You will need to supply two parameters to `.drop()`.
+  ```Python
+  pd.merge(df1, df6, left_on="employee", right_on="name").drop("name", axis=1)
+  ```
+
+  ```Output
+  |   | employee | group      | salary |
+  ---------------------------------------------
+  | 0 | Gary     | Accounting | 7000   |
+  | 1 | Stu      | Marketing  | 8000   |
+  | 2 | Mary     | Marketing  | 120000 |
+  | 3 | Sue      | HR         | 9000   |
+  ```
 </details>
 
 ## left_index and right_index keywords
@@ -239,17 +249,34 @@ df1a
 
 Here's the output:
 
-ktoliver TO DO/in progress
+```output
+|          | group      | 
+-------------------------
+| employee |            |
+| Gary     | Accounting | 
+| Stu      | Marketing  |
+| Mary     | Marketing  |
+| Sue      | HR         | 
+```
+
+Next, run this code in a cell:
 
 ```python
 df2a = df2.set_index('employee')
 df2a
 ```
 
-Here's the output:
+This output is returned:
 
-ktoliver TO DO/in progress
-
+```output
+|          | hire_date | 
+------------------------
+| employee |           |
+| Mary     | 2008      | 
+| Stu      | 2012      |
+| Gary     | 2017      |
+| Sue      | 2018      | 
+```
 
 To merge on the index, specify the **left_index** and **right_index** parameters in merge:
 
@@ -259,33 +286,77 @@ pd.merge(df1a, df2a, left_index=True, right_index=True)
 
 Here's the output:
 
-ktoliver TO DO/in progress
-
+```output
+|          | group      | hire_date |
+-------------------------------------
+| employee |            |           |
+| Gary     | Accounting | 2017      | 
+| Stu      | Marketing  | 2012      |
+| Mary     | Marketing  | 2008      |
+| Sue      | HR         | 2018      | 
+```
 
 ### Try it yourself
-
-> [!NOTE]
-> **To Sarah** - TBD: Could you provide the hint or solution for this exercise?
 
 What happens if you specify only **left_index** or **right_index**?
 
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
   
-Add hint... TBD.
+  ```Python
+  pd.merge(df1a, df2a, left_index=True)
+  ```
+
+  ```Output
+  ---------------------------------------------------------------------------
+  MergeError                                Traceback (most recent call last)
+  <ipython-input-40-41267a9d884c> in <module>()
+        1 # What happens if you specify only left_index or right_index?
+  ----> 2 pd.merge(df1a, df2a, left_index=True)
+  
+~/anaconda3_420/lib/python3.5/site-packages/pandas/tools/merge.py in merge(left, right, how, on, left_on,   right_on, left_index, right_index, sort, suffixes, copy, indicator)
+       59                          right_on=right_on, left_index=left_index,
+       60                          right_index=right_index, sort=sort, suffixes=suffixes,
+  ---> 61                          copy=copy, indicator=indicator)
+       62     return op.get_result()
+       63 if __debug__:
+  
+~/anaconda3_420/lib/python3.5/site-packages/pandas/tools/merge.py in __init__(self, left, right, how, on,   left_on, right_on, axis, left_index, right_index, sort, suffixes, copy, indicator)
+      536             warnings.warn(msg, UserWarning)
+      537 
+  --> 538         self._validate_specification()
+      539 
+      540         # note this function has side effects
+  
+  ~/anaconda3_420/lib/python3.5/site-packages/pandas/tools/merge.py in _validate_specification(self)
+      872             elif self.left_index:
+      873                 if self.right_on is None:
+  --> 874                     raise MergeError('Must pass right_on or right_index=True')
+      875             elif self.right_index:
+      876                 if self.left_on is None:
+  
+  MergeError: Must pass right_on or right_index=True
+  ```
 </details>
 
 
-You can also use the join method for DataFrames, which produces the same effect but merges on indices by default:
+You can also use the `join` method for DataFrames, which produces the same effect but merges on indices by default:
 
 ```python
 df1a.join(df2a)
 ```
 
-Here's the output:
+This output is returned:
 
-ktoliver TO DO/in progress
-
+```output
+|          | group      | hire_date |
+-------------------------------------
+| employee |            |           |
+| Gary     | Accounting | 2017      | 
+| Stu      | Marketing  | 2012      |
+| Mary     | Marketing  | 2008      |
+| Sue      | HR         | 2018      | 
+```
 
 You can also mix and match **left_index**/**right_index** with **right_on**/**left_on**:
 
@@ -295,8 +366,14 @@ pd.merge(df1a, df6, left_index=True, right_on='name')
 
 Here's the output:
 
-ktoliver TO DO/in progress
-
+```output
+|   | group      | name | salary |
+----------------------------------
+| 0 | Accounting | Gary | 7000   |
+| 1 | Marketing  | Stu  | 8000   |
+| 2 | Marketing  | Mary | 12000  | 
+| 3 | HR         | Sue  | 9000   | 
+```
 
 ## Set arithmetic for joins
 
@@ -310,8 +387,15 @@ df5
 
 Here's the output:
 
-ktoliver TO DO/in progress
+```output
+|   | group       | core_skills   |
+-----------------------------------
+| 0 | Engineering | math          |
+| 1 | Marketing   | writing       | 
+| 2 | Sales       | communication |
+```
 
+Run this code in a cell:
 
 ```python
 pd.merge(df1, df5, on='group')
@@ -319,8 +403,12 @@ pd.merge(df1, df5, on='group')
 
 Here's the output:
 
-ktoliver TO DO/in progress
-
+```output
+|   | employee | group     | core_skills |
+------------------------------------------
+| 0 | Stu      | Marketing | writing     |
+| 1 | Mary     | Marketing | writing     |
+```
 
 Notice that after we have restructured df5 and then rerun the merge with df1, we have only two entries in the result. This is because we merged on **group** and **Marketing** was the only entry that appeared in the **group** column of both DataFrames.
 
@@ -332,32 +420,37 @@ pd.merge(df1, df5, on='group', how='inner')
 
 Here's the output:
 
-ktoliver TO DO/in progress
+```output
+|   | employee | group     | core_skills |
+------------------------------------------
+| 0 | Stu      | Marketing | writing     |
+| 1 | Mary     | Marketing | writing     |
+```
 
 The complement of the inner join is the outer join, which returns the union of the two DataFrames.
 
 ### Try it yourself
 
-> [!NOTE]
-> **To Sarah** - TBD: Could you provide the hints or solutions for the two exercises in this "try it"?
-
-The keyword for perfoming an outer join is `how='outer'`. How would you perform it?
+The keyword for perfoming an outer join is `how`='outer'. How would you perform it? What do you expect the output of an outer join of df1 and df5 to be?
 
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
   
-Add hint... TBD.
+  ```Python
+  pd.merge(df1, df5, on='group', how='outer')
+  ```
+
+  ```Output
+  |   | employee | group       | core_skills   |
+  ----------------------------------------------
+  | 0 | Gary     | Accounting  | NaN           |
+  | 1 | Stu      | Marketing   | writing       |
+  | 2 | Mary     | Marketing   | writing       |
+  | 3 | Sue      | HR          | NaN           |
+  | 4 | NaN      | Engineering | math          |
+  | 5 | NaN      | Sales       | communication |
+  ```
 </details>
-
-
-What do you expect the output of an outer join of df1 and df5 to be?
-
-<details>
-  <summary>Hint <i>(expand to reveal)</i></summary>
-  
-Add hint... TBD.
-</details>
-
 
 
 Notice in your resulting DataFrame that not every row in df1 and df5 had a value that corresponds to the union of the key values (the **group** column). Pandas fills in these missing values with NaNs.
@@ -370,28 +463,34 @@ pd.merge(df1, df5, how='left')
 
 Here's the output:
 
-ktoliver TO DO/in progress
-
+```output
+|   | employee | group      | core_skills |
+-------------------------------------------
+| 0 | Gary     | Accounting | NaN         |
+| 1 | Stu      | Marketing  | writing     |
+| 2 | Mary     | Marketing  | writing     | 
+| 3 | Sue      | HR         | NaN         | 
+```
 
 ### Try it yourself
 
-> [!NOTE]
-> **To Sarah** - TBD: Could you provide the hints or solutions for the two exercises in this "try it"?
-
-Now run the right merge between df1 and df5.
+Now run the right merge between df1 and df5. What do you expect to see?
 
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
   
-Add hint... TBD.
-</details>
+  ```Python
+  pd.merge(df1, df5, how='right')
+  ```
 
-What do you expect to see?
-
-<details>
-  <summary>Hint <i>(expand to reveal)</i></summary>
-  
-Add hint... TBD.
+  ```Output
+  |   | employee | group       | core_skills   |
+  ----------------------------------------------
+  | 0 | Stu      | Marketing   | writing       |
+  | 1 | Mary     | Marketing   | writing       |
+  | 2 | NaN      | Engineering | math          | 
+  | 3 | NaN      | Sales       | communication | 
+  ```
 </details>
 
 ## suffixes keyword: dealing with conflicting column names
@@ -406,8 +505,16 @@ df7
 
 Here's the output:
 
-ktoliver TO DO/in progress
+```output
+|   | name | rank |
+-------------------
+| 0 | Gary | 1    |
+| 1 | Stu  | 2    | 
+| 2 | Mary | 3    |
+| 3 | Sue  | 4    | 
+```
 
+Next, run this code in a cell:
 
 ```python
 df8 = pd.DataFrame({'name': ['Gary', 'Stu', 'Mary', 'Sue'],
@@ -418,8 +525,31 @@ pd.merge(df7, df8, on='name')
 
 Here's the output:
 
-ktoliver TO DO/in progress
+```output
+|   | name | rank |
+-------------------
+| 0 | Gary | 3    |
+| 1 | Stu  | 1    | 
+| 2 | Mary | 4    |
+| 3 | Sue  | 2    | 
+```
 
+Run this code in a cell:
+
+```python
+pd.merge(df7, df8, on='name')
+```
+
+Output:
+
+```output
+|   | name | rank_x | rank_y |
+------------------------------
+| 0 | Gary | 1      | 3      |
+| 1 | Stu  | 2      | 1      |
+| 2 | Mary | 3      | 4      |
+| 3 | Sue  | 4      | 2      |
+```
 
 Each column name in a DataFrame must be unique, so in cases where two joined DataFrames share column names (aside from the column serving as the key), the `merge` function automatically appends the suffix **_x** or **_y** to the conflicting column names in order to make them unique. In cases where it is best to control your column names, you can specify a custom suffix for merge to append through the suffixes keyword:
 
@@ -430,8 +560,14 @@ pd.merge(df7, df8, on='name', suffixes=['_left', '_right'])
 
 Here's the output:
 
-ktoliver TO DO/in progress
-
+```output
+|   | name | rank_left | rank_right |
+-------------------------------------
+| 0 | Gary | 1         | 3          |
+| 1 | Stu  | 2         | 1          |
+| 2 | Mary | 3         | 4          |
+| 3 | Sue  | 4         | 2          |
+```
 
 These suffixes work if there are multiple conflicting columns.
 
@@ -450,9 +586,9 @@ Concatenation in pandas is built by using the concatenation functionality for Nu
 
    Here's the output:
 
-  ktoliver TO DO/in progress
-
-
+  ```output
+  array([1, 2, 3, 4, 5, 6, 7, 8, 9])
+  ```
 * For two-dimensional arrays:
 
    ```python
@@ -461,16 +597,18 @@ Concatenation in pandas is built by using the concatenation functionality for Nu
    np.concatenate([x, x], axis=1)
    ```
 
-  Here's the output:
-
-  ktoliver TO DO/in progress
-
+   Here's the output:
+   
+   ```output
+   array([[1, 2, 1, 2],
+       [3, 4, 3, 4]])
+   ```
 
 Notice that the `axis=1` parameter makes the concatenation occur along columns rather than rows. Concatenation in pandas looks similar to this.
 
 ## Concatenation in pandas
 
-pandas has a function, `pd.concat()` that can be used for a simple concatenation of `Series` or `DataFrame` objects similar to `np.concatenate()` with `ndarrays`.
+pandas has a function, `pd.concat()` that can be used for a simple concatenation of Series or DataFrame objects similar to `np.concatenate()` with `ndarrays`.
 
 ```python
 ser1 = pd.Series(['a', 'b', 'c'], index=[1, 2, 3])
@@ -500,9 +638,14 @@ df9
 
 Here's the output:
 
-ktoliver TO DO/in progress
+```output
+|   | A | B |
+-------------
+| 0 | a | b |
+| 1 | c | d | 
+```
 
-
+Run this code in a cell:
 
 ```python
 pd.concat([df9, df9])
@@ -510,8 +653,14 @@ pd.concat([df9, df9])
 
 Here's the output:
 
-ktoliver TO DO/in progress
-
+```output
+|   | A | B |
+-------------
+| 0 | a | b |
+| 1 | c | d | 
+| 0 | a | b |
+| 1 | c | d | 
+```
 
 Notice that `pd.concat` has preserved the indexing, even though that means that it has been duplicated. You can have the results reindexed (and avoid potential confusion down the road), like this:
 
@@ -521,8 +670,14 @@ pd.concat([df9, df9], ignore_index=True)
 
 Here's the output:
 
-ktoliver TO DO/in progress
-
+```output
+|   | A | B |
+-------------
+| 0 | a | b |
+| 1 | c | d | 
+| 2 | a | b |
+| 3 | c | d | 
+```
 
 By default, `pd.concat` concatenates row-wise within the DataFrame (that is, axis=0 by default). You can specify the axis along which to concatenate:
 
@@ -532,7 +687,12 @@ pd.concat([df9, df9], axis=1)
 
 Here's the output:
 
-ktoliver TO DO/in progress
+```output
+|   | A | B | A | B |
+---------------------
+| 0 | a | b | a | b |
+| 1 | c | d | c | d |
+```
 
 Although pandas display the output without error, you will get an error message if you try to assign this result as a new DataFrame. Column names in DataFrames must be unique.
 
@@ -549,8 +709,14 @@ df10
 
 Here's the output:
 
-ktoliver TO DO/in progress
+```output
+|   | A | B | C |
+-----------------
+| 0 | a | b | c |
+| 1 | d | e | f |
+```
 
+Run this code in a cell:
 
 ```python
 df11 = pd.DataFrame({'B': ['u', 'x'],
@@ -561,8 +727,14 @@ df11
 
 Here's the output:
 
-ktoliver TO DO/in progress
+```output
+|   | B | C | D |
+-----------------
+| 0 | u | v | w |
+| 1 | x | y | z |
+```
 
+Run this code in a cell:
 
 ```python
 pd.concat([df10, df11])
@@ -570,8 +742,14 @@ pd.concat([df10, df11])
 
 Here's the output:
 
-ktoliver TO DO/in progress
-
+```output
+|   | A   | B | C | D   |
+-------------------------
+| 0 | a   | b | c | NaN |
+| 1 | d   | e | f | NaN |
+| 0 | NaN | u | v | w   |
+| 1 | NaN | x | y | z   |
+```
 
 As we saw earlier, the default join for this is an outer join and entries for which no data is available are filled with **NaN** values. You can also do an inner join:
 
@@ -581,8 +759,14 @@ pd.concat([df10, df11], join='inner')
 
 Here's the output:
 
-ktoliver TO DO/in progress
-
+```output
+|   |  B | C |
+--------------
+| 0 | b  | c | 
+| 1 | e  | f |
+| 0 | u  | v |
+| 1 | x  | y |
+```
 
 Another option is to directly specify the index of the remaining columns using the `join_axes` argument, which takes a list of index objects. Here, we will specify that the returned columns should be the same as those of the first input `(df10)`:
 
@@ -593,10 +777,18 @@ append()
 
 Here's the output:
 
-ktoliver TO DO/in progress
+```output
+|   | A   | B | C |
+-------------------
+| 0 | a   | b | c |
+| 1 | d   | e | f |
+| 0 | NaN | u | v |
+| 1 | NaN | x | y |
+```
 
+### `append()`
 
-Because direct array concatenation is so common, `Series` and `DataFrame` objects have an `append` method that can accomplish the same thing in fewer keystrokes. For example, rather than calling `pd.concat([df9, df9])`, you can call `df9.append(df9)`:
+Because direct array concatenation is so common, Series and DataFrame objects have an `append` method that can accomplish the same thing in fewer keystrokes. For example, rather than calling `pd.concat([df9, df9])`, you can call `df9.append(df9)`:
 
 ```python
 df9.append(df9)
@@ -604,8 +796,14 @@ df9.append(df9)
 
 Here's the output:
 
-ktoliver TO DO/in progress
-
+```output
+|   | A | B |
+-------------
+| 0 | a | b |
+| 1 | c | d |
+| 0 | a | b |
+| 1 | c | d |
+```
 
 > [!IMPORTANT]
 > Unlike the `append()` and `extend()` methods of Python lists, the `append()` method in pandas does not modify the original object. Instead, it creates a new object with the combined data.

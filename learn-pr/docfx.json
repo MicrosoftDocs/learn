@@ -302,7 +302,6 @@
         "overwrite": [],
         "externalReference": [],
         "globalMetadata": {
-            "show_latex": true,
             "breadcrumb_path": "/learn/breadcrumb/toc.json",
             "feedback_system": "GitHub",
             "feedback_github_repo": "MicrosoftDocs/learn",
@@ -310,9 +309,6 @@
             "uhfHeaderId": "MSDocsHeader-Learn"
         },
         "fileMetadata": {
-            "brand": {
-                "azure/**/*.yml": "azure"
-            },
             "sandbox-disabled": {},
             "localization_scopes": {
                 "azure/**/*.yml": [

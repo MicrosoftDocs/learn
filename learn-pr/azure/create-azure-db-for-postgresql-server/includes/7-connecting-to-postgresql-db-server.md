@@ -16,7 +16,7 @@ You also need to disable the **Enforce SSL connection** option.
 
 1. Select the **Connection Security** option to open the connection security pane to the right.
 
-    ![Screenshot of the Azure portal showing the Connection security section of the PostgreSQL database resource pane](../media/6-db-security-settings.png)
+    :::image type="content" source="../media/6-db-security-settings.png" alt-text="Screenshot of the Azure portal showing the Connection security section of the PostgreSQL database resource pane.":::
 
 Recall that you want to allow access to PowerShell clients running `psql`.
 

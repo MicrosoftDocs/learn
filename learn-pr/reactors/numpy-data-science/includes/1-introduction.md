@@ -26,7 +26,7 @@ In this module, you will:
 
 - Import the NumPy library
 - Understand how NumPy arrays differ from the other Python data structures
-- Explore daya with NumPy arrays
+- Explore data with NumPy arrays
 - Understand NumPy universal functions and how (and why) to use them
 - Know how to aggregate data in NumPy
 - Be able to broadcast in NumPy

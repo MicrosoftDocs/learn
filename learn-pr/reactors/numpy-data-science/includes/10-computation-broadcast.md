@@ -124,18 +124,40 @@ array([[1., 2., 3.],
        [1., 2., 3.]])
 ```
 
-#### Exercise
+#### Try it yourself
 
 Flip this around. Try adding these with `two_dim_array = np.ones((3, 2))`
 and `one_dim_array = np.arange(3)[:, np.newaxis]`. 
 
 What do you get?
 
-> <details>
->  <summary>Sarah TBA Hint (expand to reveal)</summary>
->  
-> **Sarah TBA** or remove the hint.
-> </details>
+<details>
+
+  <summary>Hint <i>(expand to reveal)</i></summary>
+
+  ```python
+  two_dim_array = np.ones((3, 2))
+  two_dim_array
+  ```
+  
+  ```output
+  array([[1., 1.],
+       [1., 1.],
+       [1., 1.]])
+  ```
+
+  ```python
+  one_dim_array = np.arange(3)[:, np.newaxis]
+  one_dim_array
+  ```
+  
+  ```output
+  array([[0],
+       [1],
+       [2]])
+  ```
+  
+</details>
 
 ### Broadcasting example 2
 

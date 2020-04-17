@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-computing.distributed-programming.analytics-engines-graphlab.5-fault-tolerance
+title: Fault tolerance
+metadata:
+  title: Fault tolerance
+  description: Fault tolerance
+  ms.date: 03/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  show_latex: true
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-fault-tolerance.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+# Original course uses text boxes for user to enter answers. Using sample choices for now. Added more choices.
+  - content: "What are the distributed checkpointing mechanisms that are used in GraphLab?"
+    choices:
+    - content: "Asynchronous"
+      isCorrect: false
+      explanation: "That's not quite right. Is this the only distributed checkpointing mechanism that's available in GraphLab?"
+    - content: "Asynchronous and peer-to-peer"
+      isCorrect: false
+      explanation: "Incorrect. The peer-to-peer method isn't a distributed checkpointing mechanism."          
+    - content: "Synchronous and asynchronous"
+      isCorrect: true
+      explanation: "Correct! Both synchronous and asynchronous distributed checkpointing mechanisms are available in GraphLab."    
+    - content: "Synchronous"
+      isCorrect: false
+      explanation: "That's not quite right. Is this the only distributed checkpointing mechanism that's available in GraphLab?"
+    - content: "Synchronous and master-subordinate"
+      isCorrect: false
+      explanation: "Incorrect. The master-subordinate method isn't a distributed checkpointing mechanism."  
+
+  - content: "What's the main difference between synchronous and asynchronous mechanisms for checkpointing in GraphLab?"
+    choices:
+    - content: "Synchronous checkpoints suspend the computation and flush all internal communication messages to capture the local checkpoint at every node. Asynchronous checkpoints can be run in parallel on vertices following edge consistency."
+      isCorrect: true
+      explanation: "Correct! Synchronous checkpoints require computation to be suspended, while asynchronous checkpoints can be run in parallel."
+    - content: "Synchronous checkpoints halt the computation and flush all internal communication messages to capture the global checkpoint of the cluster. Asynchronous checkpoints can be run in parallel on vertices following vertex consistency."
+      isCorrect: false
+      explanation: "Incorrect. Synchronous checkpoints do not require the computation to be halted completely. Asynchronous checkpoints do not follow vertex consistency."
+    - content: "Synchronous checkpoints can be run in parallel on vertices following vertex consistency. Asynchronous checkpoints halt the computation and flush all internal communication messages to capture the global checkpoint of the cluster."
+      isCorrect: false
+      explanation: "Incorrect."

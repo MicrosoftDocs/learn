@@ -1,3 +1,5 @@
+Now we'll take a closer look at `if` statements.
+
 ## If-statements
 
 `If` statements in Python are similar to those in other programming languages like Java, and they form the backbone of the logical flow of most programs.
@@ -7,6 +9,8 @@ y = 6
 if y % 2 == 0:
     print('Even')
 ```
+
+The output is:
 
 ```Output
 Even
@@ -28,6 +32,8 @@ else:
     print('Odd')
 ```
 
+The output is:
+
 ```Output
 Odd
 ```
@@ -44,6 +50,8 @@ else:
     print('Odd')
 ```
 
+The output is:
+
 ```Output
 One
 ```
@@ -54,6 +62,40 @@ Notice that, in the previous example, the `if` statement exited after finding th
 
 Try changing the value of `y` in the snippet above. Do you get the output that you expect?
 
+<details>
+
+  <summary>Hint <i>(expand to reveal)</i></summary>
+
+  ```Python
+  y = 3
+  if y % 2 == 0:
+    print('Even')
+  elif y == 1:
+    print('One')
+  else:
+    print('Odd')
+  ```
+
+  ```Output
+  Odd
+  ```
+
+  ```Python
+  y = 4
+  if y % 2 == 0:
+    print('Even')
+  elif y == 1:
+    print('One')
+  else:
+    print('Odd')
+  ```
+
+  ```Output
+  Even
+  ```
+
+</details>
+
 ## For loop: Basics
 
 It is often necessary in programs to iterate over some set of items. This is where `for` loops prove useful. For example, they can provide a useful way to iterate over the items of a list:
@@ -63,6 +105,8 @@ colors = ['red', 'yellow', 'blue']
 for color in colors:
     print(color)
 ```
+
+The output is:
 
 ```Output
 red
@@ -78,6 +122,8 @@ for i in range(len(comp_colors)):
     print(colors[i], comp_colors[i])
 ```
 
+The output is:
+
 ```Output
 red green
 yellow purple
@@ -90,6 +136,8 @@ We've met `len()` before, but [range()](https://docs.python.org/3/library/functi
 for j in range(5):
     print(j)
 ```
+
+The output is:
 
 ```Output
 0
@@ -119,6 +167,8 @@ for n in range(2, 10):
         print(n, 'is a prime number')
 ```
 
+The output is:
+
 ```Output
 2 is a prime number
 3 is a prime number
@@ -134,7 +184,39 @@ Note that, in the example above, the `else` statement belongs to the `for` loop,
 
 ### Try it yourself
 
-Try changing the code snippet above after you remove the `break` statement. What output does it now produce?
+Try changing the code snippet above by removing the `break` statement. What output does it now produce?
+
+<details>
+
+  <summary>Hint <i>(expand to reveal)</i></summary>
+
+  ```Python
+  for n in range(2, 10):
+    for x in range(2, n):
+        if n % x == 0:
+            print(n, 'equals', x, '*', n//x)
+    else:
+        print(n, 'is a prime number')
+  ```
+
+  ```Output
+  2 is a prime number
+  3 is a prime number
+  4 equals 2 * 2
+  4 is a prime number
+  5 is a prime number
+  6 equals 2 * 3
+  6 equals 3 * 2
+  6 is a prime number
+  7 is a prime number
+  8 equals 2 * 4
+  8 equals 4 * 2
+  8 is a prime number
+  9 equals 3 * 3
+  9 is a prime number
+  ```
+
+</details>
 
 ## For loop: Continue
 As part of the control flow of your program, you might want to continue to the next iteration of your `for` loop. The `continue` statement (also borrowed from C) can help with that:
@@ -146,6 +228,8 @@ for num in range(2, 10):
         continue
     print("Found an odd number:", num)
 ```
+
+The output is:
 
 ```Output
 Found an even number: 2
@@ -162,6 +246,23 @@ Found an odd number: 9
 
 What happens when you replace the `continue` statement above with a `break`?
 
+<details>
+
+  <summary>Hint <i>(expand to reveal)</i></summary>
+
+  ```Python
+  for num in range(2, 10):
+    if num % 2 == 0:
+        print("Found an even number:", num)
+        break
+    print("Found an odd number:", num)
+  ```
+  ```Output
+  Found an even number: 2
+  ```
+  
+</details>
+
 ## While-loops
 
 If we cross the functionality of the `if` statement with that of the `for` loop, we would get the `while` loop, a loop that iterates while some logical condition remains true. Consider this snippet of code to compute the initial sub-sequence of the Fibonacci sequence:
@@ -175,6 +276,8 @@ while b < 100:
     print(b, end=', ')
     a, b = b, a+b
 ```
+
+The output is:
 
 ```Output
 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89,

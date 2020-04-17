@@ -1,17 +1,13 @@
 As a refresher, a `Series` object acts in many ways like both a one-dimensional `ndarray` and a standard Python dictionary.
 
-> [!Note]
-> **Sarah: Action items**
-> 
-> - Add one or more sentences as introduction / scenario statement for the `Series` as one-dimensional array H2 heading and H3 headings that follow.
->
-
 Like a dictionary, the `Series` object provides a mapping from a collection of arbitrary keys to a collection of arbitrary values. Back to an old example:
 
 ```Python
 series_example2 = pd.Series([-0.5, 0.75, 1.0, -2], index=['a', 'b', 'c', 'd'])
 series_example2
 ```
+
+The output is:
 
 ```Output
 a   -0.50
@@ -25,6 +21,8 @@ dtype: f
 series_example2['b']
 ```
 
+The output is:
+
 ```Output
 0.75
 ```
@@ -35,21 +33,31 @@ You can also examine the keys/indices and values using dictionary-like Python to
 'a' in series_example2
 ```
 
+The output is:
+
 ```Output
 True
 ```
+
+Another example:
 
 ```Python
 series_example2.keys()
 ```
 
+The output is:
+
 ```Output
 Index(['a', 'b', 'c', 'd'], dtype='object')
 ```
 
+Another example:
+
 ```Python
 list(series_example2.items())
 ```
+
+The output is:
 
 ```Output
 [('a', -0.5), ('b', 0.75), ('c', 1.0), ('d', -2.0)]
@@ -61,6 +69,8 @@ As with dictionaries, you can extend a dictionary by assigning to a new key, you
 series_example2['e'] = 1.25
 series_example2
 ```
+
+The output is:
 
 ```Output
 a   -0.50
@@ -81,6 +91,8 @@ Because `Series` also provide array-style functionality, you can use the NumPy t
 series_example2['a':'c']
 ```
 
+The output is:
+
 ```Output
 a   -0.50
 b    0.75
@@ -94,6 +106,8 @@ dtype: float64
 series_example2[0:2]
 ```
 
+The output is:
+
 ```Output
 a   -0.50
 b    0.75
@@ -106,6 +120,8 @@ dtype: float64
 series_example2[(series_example2 > -1) & (series_example2 < 0.8)]
 ```
 
+The output is:
+
 ```Output
 a   -0.50
 b    0.75
@@ -117,6 +133,8 @@ dtype: float64
 ```Python
 series_example2[['a', 'e']]
 ```
+
+The output is:
 
 ```Output
 a   -0.50
@@ -139,13 +157,19 @@ The `loc` attribute allows indexing and slicing that always references the expli
 series_example2.loc['a']
 ```
 
+The output is:
+
 ```Output
 -0.5
 ```
 
+Another example:
+
 ```Python
 series_example2.loc['a':'c']
 ```
+
+The output is:
 
 ```Output
 a   -0.50
@@ -160,13 +184,19 @@ The `iloc` attribute enables indexing and slicing using the implicit, Python-sty
 series_example2.iloc[0]
 ```
 
+The output is:
+
 ```Output
 -0.5
 ```
 
+Another example:
+
 ```Python
 series_example2.iloc[0:2]
 ```
+
+The output is:
 
 ```Output
 a   -0.50

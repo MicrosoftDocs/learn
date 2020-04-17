@@ -1,11 +1,5 @@
 `DataFrames` also exhibit dual behavior, acting both like a two-dimensional `ndarray` and like a dictionary of `Series` sharing the same index.
 
-> [!Note]
-> **Sarah: Action items**
-> 
-> - Add one or more sentences as introduction / scenario statement for the Exercise H2 heading.
->
-
 ## DataFrame as dictionary of Series
 
 Let's return to our earlier example of countries' areas and populations in order to examine `DataFrames` as a dictionary of `Series`.
@@ -25,6 +19,8 @@ countries = pd.DataFrame({'Area': area, 'Population': population})
 countries
 ```
 
+The output is:
+
 ```Output
 |          | Area     | Population | 
 ------------------------------------
@@ -41,6 +37,8 @@ You can access the individual `Series` that make up the columns of a `DataFrame`
 countries['Area']
 ```
 
+The output is:
+
 ```Output
 Albania       28748
 France       643801
@@ -56,6 +54,8 @@ And you can use dictionary-style syntax can also be used to modify `DataFrames`,
 countries['Population Density'] = countries['Population'] / countries['Area']
 countries
 ```
+
+The output is:
 
 ```Output
 |          | Area      | Population   | Population density |
@@ -75,6 +75,8 @@ You can also think of `DataFrames` as two-dimensional arrays. You can examine th
 countries.values
 ```
 
+The output is:
+
 ```Output
 array([[2.87480000e+04, 2.93759000e+06, 1.02184152e+02],
        [6.43801000e+05, 6.54294950e+07, 1.01629999e+02],
@@ -88,6 +90,8 @@ Viewed this way, it makes sense that we can transpose the rows and columns of a 
 ```Python
 countries.T
 ```
+
+The output is:
 
 ```Output
 |                     | Albania       | France        | Germany       | Japan         | Russia        |
@@ -103,6 +107,8 @@ countries.T
 countries.iloc[:3, :2]
 ```
 
+The output is:
+
 ```Output
 |          | Area     | Population | 
 ------------------------------------
@@ -117,6 +123,8 @@ countries.iloc[:3, :2]
 countries.loc[:'Germany', :'Population']
 ```
 
+The output is:
+
 ```Output
 |          | Area     | Population | 
 ------------------------------------
@@ -127,7 +135,7 @@ countries.loc[:'Germany', :'Population']
 
 You can also use array-like techniques such as masking and fancy indexing with loc.
 
-## Exercise
+### Try it yrouself
 
 Can you think of how to combine masking and fancy indexing in one line?
 
@@ -136,6 +144,21 @@ Can you think of how to combine masking and fancy indexing in one line?
 
 Be sure to put the the masking and fancy indexing inside the square brackets: `countries.loc[]`.
 
+<details>
+  <summary>Hint <i>(expand to reveal)</i></summary>
+
+  ```Python
+  countries.loc[countries['Population Density'] > 200, ('Population', 'Population Density')]
+  ```
+
+  ```Output
+  |         | Population | Population Density | 
+  --------------------------------------------- 
+  | Germany | 82408706   | 230.587393         | 
+  | Japan   | 126922333  | 335.798242         |
+  ```
+</details>
+
 ## Indexing conventions
 
 In practice in the world of data science (and pandas more generally), _indexing_ refers to columns while _slicing_ refers to rows.
@@ -143,6 +166,8 @@ In practice in the world of data science (and pandas more generally), _indexing_
 ```Python
 countries['France':'Japan']
 ```
+
+The output is:
 
 ```Output
 |          | Area      | Population   | Population density |
@@ -158,6 +183,8 @@ Such slices can also refer to rows by number rather than by index:
 countries[1:3]
 ```
 
+The output is:
+
 ```Output
 |          | Area      | Population   | Population density |
 ------------------------------------------------------------
@@ -170,6 +197,8 @@ Similarly, direct masking operations are also interpreted row-wise rather than c
 ```Python
 countries[countries['Population Density'] > 200]
 ```
+
+The output is:
 
 ```Output
 |          | Area      | Population   | Population density |

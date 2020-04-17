@@ -8,6 +8,8 @@ groupMembers.append('Quinn')
 groupMembers
 ```
 
+The output is:
+
 ```Output
 ['Jordan', 'Parker', 'Quinn']
 ```
@@ -20,6 +22,8 @@ groupMembers2.append(['Stuart', 'Pete'])
 groupMembers2
 ```
 
+The output is:
+
 ```Output
 ['Jordan', 'Parker', 'Quinn', ['Stuart', 'Pete']]
 ```
@@ -31,6 +35,8 @@ groupMembers.extend(['Stuart', 'Pete'])
 groupMembers
 ```
 
+The output is:
+
 ```Output
 ['Jordan', 'Parker', 'Quinn', 'Stuart', 'Pete']
 ```
@@ -41,6 +47,8 @@ groupMembers
 groupMembers.index('Quinn')
 ```
 
+The output is:
+
 ```Output
 2
 ```
@@ -50,6 +58,8 @@ The [count()](https://docs.python.org/3.6/tutorial/datastructures.html) method r
 ```Python
 groupMembers.count('Jordan')
 ```
+
+The output is:
 
 ```Output
 1
@@ -62,6 +72,8 @@ groupMembers.remove('Stuart')
 groupMembers
 ```
 
+The output is:
+
 ```Output
 ['Jordan', 'Parker', 'Quinn', 'Pete']
 ```
@@ -71,6 +83,8 @@ The other method for removing items from lists is the [pop()](https://docs.pytho
 ```Python
 groupMembers.pop()
 ```
+
+The output is:
 
 ```Output
 'Pete'
@@ -83,6 +97,8 @@ groupMembers.insert(1, 'Riley')
 groupMembers
 ```
 
+The output is:
+
 ```Output
 ['Jordan', 'Riley', 'Parker', 'Quinn']
 ```
@@ -93,6 +109,8 @@ Unsurprisingly, the [reverse()](https://docs.python.org/3.6/tutorial/datastructu
 groupMembers.reverse()
 groupMembers
 ```
+
+The output is:
 
 ```Output
 ['Quinn', 'Parker', 'Riley', 'Jordan']
@@ -105,13 +123,28 @@ groupMembers.sort()
 groupMembers
 ```
 
+The output is:
+
 ```Output
 ['Quinn', 'Jordan', 'Parker', 'Riley']
 ```
 
-## Try it yourself
+### Try it yourself
 
 - What happens if you run `groupMembers.extend(groupMembers)`?
 - How about `groupMembers.append(groupMembers)`?
+
+<details>
+  <summary>Hint <i>(expand to reveal)</i></summary>
+
+  ```Python
+  beatles.append(beatles)
+  beatles
+  ```
+
+  ```Output
+  ['John', 'Paul', 'George', [...]]
+  ```
+</details>
 
 Note that you can supply your own _lambda function _to `sort()` for use in comparing items in a list. We will cover lambda functions in a later topic.

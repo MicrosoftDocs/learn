@@ -9,9 +9,30 @@ population = pd.Series({'China': 1409517397, 'India': 1339180127,
                         'Brazil': 207652865}, name='population')
 ```
 
-```Python
-# Now divide these to compute the population density
-```
+### Try it yourself
+
+Now divide these to compute the population density
+
+<details>
+
+  <summary>Hint <i>(expand to reveal)</i></summary>
+
+  ```Python
+  population / area
+  ```
+
+  ```Output
+  Brazil        24.387066
+  Canada              NaN
+  China        146.853885
+  India               NaN
+  Indonesia           NaN
+  Russia              NaN
+  USA           33.018235
+  dtype: float64
+  ```
+  
+</details>
 
 Your resulting array contains the **union** of indices of the two input arrays: seven countries in total. All of the countries in the array without an entry (because they lacked either area data or population data) are marked with the now familiar NaN, or "Not a Number," designation.
 
@@ -22,6 +43,8 @@ series1 = pd.Series([2, 4, 6], index=[0, 1, 2])
 series2 = pd.Series([3, 5, 7], index=[1, 2, 3])
 series1 + series2
 ```
+
+The output is: 
 
 ```Output
 0     NaN
@@ -36,6 +59,8 @@ NaN values are not always convenient to work with; NaN combined with any other v
 ```Python
 series1.add(series2, fill_value=0)
 ```
+
+The output is: 
 
 ```Output
 0     2.0
