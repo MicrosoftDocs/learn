@@ -47,5 +47,3 @@ At each layer, there are some common attacks that you will want to protect again
 Revisiting the model of shared responsibility, we can reframe this in the context of security. Depending on the type of service you select, some security protections will be built in to the service, while others will remain your responsibility. Careful evaluation of the services and technologies you select will be necessary, to ensure you are providing the proper security controls for your architecture.
 
 ![An illustration showing how cloud providers and customers share security responsibilities under different types of cloud service models: on-premises, infrastructure as a service, platform as a service, and software as a service. ](../media/shared_responsibilities.png)
-
-## Summary
