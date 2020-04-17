@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-sql-intro.4-purchasing-models-service-tiers
+metadata:
+  title: Purchasing models, service tiers, and hardware choices
+  description: Purchasing models, service tiers, and hardware choices
+  ms.date: 07/31/2020
+  author: amthomas46
+  ms.author: antho
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Purchasing models, service tiers, and hardware choices
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-purchasing-models-service-tiers.md)]
