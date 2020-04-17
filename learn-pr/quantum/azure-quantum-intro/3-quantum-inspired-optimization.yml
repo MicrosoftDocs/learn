@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.quantum.azure-quantum-intro.3-quantum-inspired-optimization
+title: What is Quantum Inspired Optimization?
+metadata:
+  title: What is Quantum Inspired Optimization?
+  description: TBD.
+  ms.date: 05/19/2020
+  author: KittyYeungQ
+  ms.author: kitty
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/3-quantum-inspired-optimization.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "This is a placeholder"
+    choices:
+    - content: "A"
+      isCorrect: false
+      explanation: "."
+    - content: "B"
+      isCorrect: false
+      explanation: "."
+    - content: "C"
+      isCorrect: true
+      explanation: "."
+  - content: "We can add knowledge check questions here"
+    choices:
+    - content: "A"
+      isCorrect: false
+      explanation: "."
+    - content: "B"
+      isCorrect: false
+      explanation: "."
+    - content: "C"
+      isCorrect: true
+      explanation: "."
+  - content: "Or in a later unit"
+    choices:
+    - content: "A"
+      isCorrect: false
+      explanation: "."
+    - content: "B"
+      isCorrect: false
+      explanation: "."
+    - content: "C"
+      isCorrect: true
+      explanation: "."

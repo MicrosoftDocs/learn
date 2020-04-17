@@ -1,0 +1,34 @@
+### YamlMime:Module
+uid: learn.quantum.azure-quantum-intro
+metadata:
+  title: Introduction to Azure Quantum - Learn
+  description: TBD.
+  ms.date: 05/19/2020
+  author: KittyYeungQ
+  ms.author: kitty
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction to Azure Quantum
+summary: TBD.
+abstract: |
+  In this module, you will:
+  - Understand the types of problems Azure Quantum service can help you solve.
+  - Understand the process of creating a project on Azure Quantum portal.
+  - Learn about the hardware systems you can use through Azure Quantum.
+prerequisites: Basic knowledge of quantum computing
+iconUrl: /learn/achievements/generic-badge.svg
+ratingEnabled: true
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure-quantum
+units:
+- learn.quantum.azure-quantum-intro.1-introduction
+- learn.quantum.azure-quantum-intro.2-what-is-azure-quantum
+- learn.quantum.azure-quantum-intro.3-quantum-inspired-optimization
+- learn.quantum.azure-quantum-intro.4-quantum-execution
+- learn.quantum.azure-quantum-intro.5-summary
+badge:
+  uid: learn.quantum.azure-quantum-intro.badge
