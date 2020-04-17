@@ -47,6 +47,8 @@ The goal of this module is to train experienced SQL Server professionals.
 
 ## Outline the units
 
+1. **Introduction**
+
 1. **Security Capabilities and Tasks**  
     - Understand the capabilities and tasks required to secure Azure SQL Database and Managed Instance  
     https://github.com/microsoft/sqlworkshops-azuresqlworkshop/blob/master/azuresqlworkshop/03-Security.md  
