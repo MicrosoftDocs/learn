@@ -1,4 +1,4 @@
-Azure App Service allows you host websites with server-side code developed using many different popular programming languages and web frameworks.
+Azure App Service allows you to host websites with server-side code developed using many different popular programming languages and web frameworks.
 
 Suppose you work as a web developer for a video game studio. Your organization is launching a brand new video game they have been developing in secret. This year's biggest video game expo is happening in just a few weeks. The studio wants a brand new website to be ready for the launch as soon as possible to maximize exposure. The site must have a live countdown to the date of the studio's on-stage announcement where they'll finally reveal their new video game. The studio isn't sure about the exact details they want to put up on the website, but they'll know closer to the day of their announcement. You must be able to easily and rapidly update the site with the details when the time comes.
 
