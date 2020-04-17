@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.azure-sql-deploy-configure
+metadata:
+  title: Azure SQL - Deploy and configure servers, instances, and databases
+  description: Azure SQL - Deploy and configure servers, instances, and databases
+  ms.date: 07/31/2020
+  author: amthomas46
+  ms.author: antho
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Azure SQL - Deploy and configure servers, instances, and databases
+summary: TODO
+abstract: | 
+  In this module, you will:
+  - TODO
+  - TODO
+  - TODO
+prerequisites: | 
+  - TODO
+iconUrl: http://via.placeholder.com/120x120
+levels:
+- beginner
+roles:
+- solution-architect
+products:
+- azure
+units:
+- learn.azure-sql-deploy-configure.1-introduction
+- learn.azure-sql-deploy-configure.2-plan-deploy-verify
+- learn.azure-sql-deploy-configure.3-exercise-deploy-database
+- learn.azure-sql-deploy-configure.4-exercise-verify-database
+- learn.azure-sql-deploy-configure.5-configure-database
+- learn.azure-sql-deploy-configure.6-exercise-configure-database
+- learn.azure-sql-deploy-configure.7-load-data
+- learn.azure-sql-deploy-configure.8-exercise-load-data
+- learn.azure-sql-deploy-configure.9-summary
+badge:
+  uid: learn.azure-sql-deploy-configure.badge
