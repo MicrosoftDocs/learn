@@ -9,7 +9,7 @@ The Azure Well Architected framework will help you design, build, and continuous
 
 In this module, you will:
 
-- Identify key pillars for architecting a solution in the cloud
+- Describe the pillars of the Azure Well Architected framework
 - Apply key principles for creating a solid architectural foundation
 
 ## Prerequisites  

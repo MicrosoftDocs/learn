@@ -1,10 +1,10 @@
-Imagine a news story has just been published covering your organization's breakthrough cancer treatment. This is a terrific milestone, and will undoubtedly bring a large influx of traffic to your website. Will the website handle this traffic increase, or will the load cause the site to be slow or unresponsive?
+Imagine a news story has just been published covering your organization's recent product announcement. This additional publicity will undoubtedly bring a large influx of traffic to your website. Will the website handle this traffic increase, or will the load cause the site to be slow or unresponsive?
 
 Here, we'll look at some of the basic principles of ensuring outstanding application performance using scaling and optimization principles.
 
-## What is scaling and performance optimization?
+## What is performance efficiency?
 
-Scaling and performance optimization are about matching the resources available to an application with the demand it is receiving. Performance optimization includes scaling resources, identifying and optimizing potential bottlenecks, and optimizing your application code for peak performance.
+Performance efficiency is matching the resources available to an application with the demand it is receiving. Performance efficicney includes scaling resources, identifying and optimizing potential bottlenecks, and optimizing your application code for peak performance.
 
 ### Scaling
 
@@ -27,7 +27,7 @@ When optimizing for performance, you'll look at network and storage to ensure pe
 
 Performance optimization will also include understanding how the applications themselves are performing. Errors, poorly performing code, and bottlenecks in dependent systems can all be uncovered through an application performance management tool. Often, these issues may be hidden or obfuscated for end users, developers, and administrators, but can have adverse impact on the overall performance of your application.
 
-## Scalability and performance patterns and practices
+## Principles of performance efficiency
 
 Let's take a look at some patterns and practices that can be leveraged to enhance the scalability and performance of your application.
 

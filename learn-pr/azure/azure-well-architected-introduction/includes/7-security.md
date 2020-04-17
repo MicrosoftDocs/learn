@@ -1,16 +1,18 @@
-Your healthcare organization stores personal and potentially sensitive client data. A security incident could expose this sensitive data, which could cause personal embarrassment or financial harm. How do you ensure the integrity of their data and ensure your systems are secure? 
+Healthcare organizations store personal and potentially sensitive client data. Financial institutions store account numbers, balances, and transaction history. Retailers store purchase history, account information, and demographic details of customers. A security incident could expose this sensitive data, which could cause personal embarrassment or financial harm. How do you ensure the integrity of their data and ensure your systems are secure? 
 
 Here, we'll talk about how to approach the security of an architecture.
 
-## What should I protect?
+## What is security?
 
-The data your organization stores or handles is at the heart of your securable assets. This data could be sensitive data about customers, financial information about your organization, or critical line-of-business data supporting your organization. Along with data, securing the infrastructure it exists on, and the identities we use to access it, are also critically important.
+Security is ultimately about protecting the data your organization uses, stores, and trasmits. The data your organization stores or handles is at the heart of your securable assets. This data could be sensitive data about customers, financial information about your organization, or critical line-of-business data supporting your organization. Along with data, securing the infrastructure it exists on, and the identities used to access it, are also critically important.
 
 Your data may be subject to additional legal and regulatory requirements depending on where you are located, the type of data you are storing, or the industry that your application operates in. For instance, in the healthcare industry in the US, there is a law called the Health Insurance Portability and Accountability Act (HIPAA). In the financial industry, the Payment Card Industry Data Security Standard is concerned with the handling of credit card data. Organizations that store data that is in scope for these laws and standards are required to ensure certain safeguards are in place for the protection of this data. In Europe, the General Data Protection Regulation (GDPR) lays out the rules of how personal data is protected, and defines individuals' rights related to stored data. Some countries require that certain types of data do not leave their borders.
 
 When a security breach occurs, there can be substantial impacts to the finances and reputation of both organizations and customers. This breaks down the trust customers are willing to instill in your organization, and can impact its long-term health.
 
-## Defense in depth
+## Principles of security
+
+### Defense in depth
 
 A multilayered approach to securing your environment will increase the security posture of your environment. Commonly known as _defense in depth_, we can break down the layers as follows:
 
@@ -28,7 +30,7 @@ Each layer focuses on a different area where attacks can happen and creates a de
 
 There is no single security system, control, or technology that will fully protect your architecture. Security is more than just technology, it's also about people and processes. Creating an environment that looks holistically at security, and making it a requirement by default will help ensure your organization is as secure as possible.
 
-## Common attacks
+### Protect from common attacks
 
 At each layer, there are some common attacks that you will want to protect against. These are not all-inclusive, but can give you an idea of how each layer can be attacked and what types of protections you may need to look at.
 
@@ -40,8 +42,10 @@ At each layer, there are some common attacks that you will want to protect again
 * **Policies & access layer**: This is where authentication occurs for your application. This could include modern authentication protocols such as OpenID Connect, OAuth, or Kerberos-based authentication such as Active Directory. Exposed credentials are a risk here and it's important to limit the permissions of identities. We also want to have monitoring in place to look for possible compromised accounts, such as logins coming from unusual places.
 * **Physical layer**: Unauthorized access to facilities through methods such as door drafting and theft of security badges can be seen at this layer.
 
-## Shared security responsibility
+### Shared security responsibility
 
 Revisiting the model of shared responsibility, we can reframe this in the context of security. Depending on the type of service you select, some security protections will be built in to the service, while others will remain your responsibility. Careful evaluation of the services and technologies you select will be necessary, to ensure you are providing the proper security controls for your architecture.
 
 ![An illustration showing how cloud providers and customers share security responsibilities under different types of cloud service models: on-premises, infrastructure as a service, platform as a service, and software as a service. ](../media/shared_responsibilities.png)
+
+## Summary
