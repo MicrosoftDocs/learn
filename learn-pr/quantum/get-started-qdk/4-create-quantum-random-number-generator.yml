@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.quantum.get-started-qdk.4-create-quantum-random-number-generator
+title: Exercise - Create a quantum random number generator
+metadata:
+  title: Exercise - Create a quantum random number generator
+  description: TBD
+  ms.date: 05/19/2020
+  author: geduardo
+  ms.author: v-edsanc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/4-create-quantum-random-number-generator.md)]

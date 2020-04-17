@@ -25,7 +25,7 @@ The following steps show how Azure AD B2B lets you collaborate with external par
 
     At the second stage in the diagram, the guest user receives an invitation via email, and then uses the **Get started** link to access the services you want to share with them.
 
-    ![Screenshot of the email confirmation](../media/2-email-confirmation.png)
+    :::image type="content" source="../media/2-email-confirmation.png" alt-text="Screenshot of the email confirmation." loc-scope="other"::: <!-- APEX10 -->
 
     The first time the link is used, the user is asked for consent. In this way, Azure AD B2B helps to provide transparency for partner users. Your external users will always know what information they're sharing. The user must accept the permissions needed by Azure AD B2B before they can gain access.
 
@@ -41,4 +41,5 @@ The following steps show how Azure AD B2B lets you collaborate with external par
 
     Your guest user is then forwarded to the access panel page, where they can access all the applications and services you've shared with them. These applications and services can be cloud-based, or on-premises.
 
-    ![Screenshot of access panel page, showing shared apps](../media/2-shared-apps.png)
+    :::image type="content" source="../media/2-shared-apps.png" alt-text="Screenshot of access panel page, showing shared apps." loc-scope="other"::: <!-- APEX10 -->
+
