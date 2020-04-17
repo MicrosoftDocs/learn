@@ -8,11 +8,11 @@ The next question is: within your organization, who is responsible for what task
 :::column span="2":::
 Everyone has a role to play in AI transformation, not just IT. It's important to empower people from all functions across your company to actively contribute ideas about AI applications. After you've chosen an idea to run with, it's equally important to foster collaboration between business and technical teams when planning design and implementation. After deployment, teams across the technical and operational sides of the business need to be involved in maintaining AI solutions over time:
 
-* Measuring business performance and ROI from the AI solution
-* Monitoring model performance and accuracy 
-* Acting on insights gained from an AI solution
-* Addressing issues that arise and deciding how to improve the solution over time
-* Collecting and evaluating feedback from AI users (whether they are customers or employees)
+* Measuring business performance and ROI from the AI solution.
+* Monitoring model performance and accuracy.
+* Acting on insights gained from an AI solution.
+* Addressing issues that arise and deciding how to improve the solution over time.
+* Collecting and evaluating feedback from AI users (whether they are customers or employees).
 :::column-end:::
 :::column span="2":::
 :::image type="complex" source="../media/manage-ai-organizations-4.png" alt-text="Venn diagram showing that AI requires multidisciplinary skills.":::
@@ -31,8 +31,8 @@ As for the other leaders across an organization, there's no single model to foll
 :::column span="2":::
 This person is a business executive responsible for operations of a particular function, line of business, or process within an organization.
 
-* **Source ideas from all employees:** It's important to empower people from every department and level to contribute ideas, ask questions, and make suggestions related to AI. We've discovered that ideas for our most impactful application of AI have come from our employees within business functions, not from outside or above. See the first unit in this module for more information on this topic. 
-* **Identify new business models:** The real value of AI lies in business transformation: driving new business models, enabling innovative services, creating new revenue streams, and more. For example, Telefónica, one of the world's largest telecommunications companies, used a personalized AI-based assistant to transform its relationships with customers.<sup>5</sup> Ultimately, this increased customer loyalty and satisfaction. 
+* **Source ideas from all employees:** It's important to empower people from every department and level to contribute ideas, ask questions, and make suggestions related to AI. We've discovered that ideas for our most impactful application of AI have come from our employees within business functions, not from outside or above. See the first unit in this module for more information on this topic.
+* **Identify new business models:** The real value of AI lies in business transformation: driving new business models, enabling innovative services, creating new revenue streams, and more. For example, Telefónica, one of the world's largest telecommunications companies, used a personalized AI-based assistant to transform its relationships with customers.<sup>5</sup> Ultimately, this increased customer loyalty and satisfaction.
 :::column-end:::
 :::column span="2":::
 :::image type="complex" source="../media/manage-ai-organizations-5.png" alt-text="Diagram showing AI-related roles.":::
@@ -67,8 +67,9 @@ An HR director makes fundamental contributions to an organization's culture and 
 
 ### IT leader
 
-While the Chief Digital Officer is charged with creating and implementing overall digital strategy, an IT director oversees the day-to-day technology operations. 
-* **Launch Agile working initiatives between business and IT:** Implementing Agile processes between business and IT teams can help keep those teams aligned around a common goal. This requires a cultural shift to facilitate collaboration and reduce turf wars. Tools such as Microsoft Teams, Skype, and Slack are effective collaboration tools. 
+While the Chief Digital Officer is charged with creating and implementing overall digital strategy, an IT director oversees the day-to-day technology operations.
+
+* **Launch Agile working initiatives between business and IT:** Implementing Agile processes between business and IT teams can help keep those teams aligned around a common goal. This requires a cultural shift to facilitate collaboration and reduce turf wars. Tools such as Microsoft Teams, Skype, and Slack are effective collaboration tools.
 * **Create a "dark data" remediation plan:** Dark data is unstructured, untagged, and siloed data that organizations fail to analyze. Across industries, companies stand to benefit greatly if they can bring dark data into the light. To do so, they need a plan to remove data siloes, extract structured information from unstructured content, and clean out unnecessary data. 
 * **Set up agile cross-functional delivery teams and projects:** Cross-functional delivery teams are crucial to running successful AI projects. People with intimate knowledge of and control over business goals and processes should be a central part of planning and maintaining AI solutions. Data scientists working in isolation might create models that lack the context, purpose, or value that would make them effective.
 * **Scale MLOps across the company:** Managing the entire machine learning (ML) lifecycle at scale is complicated. Organizations need an approach that brings the agility of DevOps to the ML lifecycle. We call this approach MLOps: the practice of collaboration between data scientists, ML engineers, app developers, and other IT teams to manage the end-to-end ML lifecycle. Learn more about MLOps in the previous units of this module.

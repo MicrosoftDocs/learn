@@ -27,10 +27,10 @@ Horizon 1 (H1) represents AI initiatives that optimize core business functions. 
 
 #### H1 examples:
 
-* Optimizing transit routes automatically
-* Analyzing sentiment in customer feedback or social media
-* Scoring marketing leads
-* Forecasting demand or revenue
+* Optimizing transit routes automatically.
+* Analyzing sentiment in customer feedback or social media.
+* Scoring marketing leads.
+* Forecasting demand or revenue.
 :::column-end:::
 :::column span="2":::
 :::image type="complex" source="../media/manage-ai-organizations-1.png" alt-text="Illustration of horizon framework.":::
@@ -45,10 +45,10 @@ Horizon 2 (H2) initiatives take advantage of emerging opportunities. These initi
 
 #### H2 examples:
 
-* Predictive and preventative maintenance for machinery
-* Personalized recommendations or discounts
-* Supply chain, inventory, or price optimization
-* Detecting fraudulent behavior or security risks
+* Predictive and preventative maintenance for machinery.
+* Personalized recommendations or discounts.
+* Supply chain, inventory, or price optimization.
+* Detecting fraudulent behavior or security risks.
 
 ### Horizon 3: Transforming (change market position)
 
@@ -58,9 +58,9 @@ For example, a chemical manufacturer could sell "fertilizer-as-a-service"—whic
 
 #### H3 examples:
 
-* Predicting which patients are at risk of cardiac arrest leveraging EHR patient data
-* Building an interactive assistant that enables employees to find expertise and share ideas
-* Mapping chemical and flavor compounds of beverages to create new products faster
+* Predicting which patients are at risk of cardiac arrest leveraging EHR patient data.
+* Building an interactive assistant that enables employees to find expertise and share ideas.
+* Mapping chemical and flavor compounds of beverages to create new products faster.
 
 ## Map scenarios and use cases to the framework
 
