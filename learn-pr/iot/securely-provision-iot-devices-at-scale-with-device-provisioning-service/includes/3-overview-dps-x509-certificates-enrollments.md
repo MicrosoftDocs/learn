@@ -54,7 +54,7 @@ This process is how you provide proof that you own the root certificate. There's
 
 ### Another level of security
 
-Sensitive data, such as the certificates, could be stored in a Hardware Security Module (HSM). HSMs are physical devices, either in the form of an external drive, or an internal plug-in card. HSMs are designed to safeguard digital keys, and a cryptoprocessor chip is part of the device. These devices are connected directly to a network server. An alternative, and well suited to storing secret data, is the Azure Key Vault resource. This resource ensures apps have no direct access to the keys. For more information on both of these options, follow the links on the Summary page.
+Sensitive data, such as the certificates, could be stored in a Hardware Security Module (HSM). HSMs are physical devices, either in the form of an external drive, or an internal plug-in card. HSMs are designed to safeguard digital keys, and a cryptoprocessor chip is part of the device. These devices are connected directly to a network server. An alternative, and well suited to storing passwords, and other secret data, is the Azure Key Vault resource. This resource ensures apps have no direct access to the secret data. For more information on both of these options, follow the links on the Summary page.
 
 ### Next step
 
