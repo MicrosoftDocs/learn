@@ -3,7 +3,7 @@ uid: learn.static-apps-gatsby.4-sample-app
 title: Sample app
 metadata:
   title: Sample app
-  description: Sample app
+  description: This unit describes how you can build a static app with Gatsby that uses JSON as its static data
   author: softchris
   ms.author: chnoring
   ms.date: 04/14/2020

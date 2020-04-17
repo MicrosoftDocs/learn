@@ -3,7 +3,7 @@ uid: learn.static-apps-gatsby.7-exercise-deploy-static-app
 title: Exercise - deploy static app
 metadata:
   title: Exercise - deploy static app
-  description: Exercise - deploy static app
+  description: This exercise takes us through initializing a Git repo to pushing it to GitHub to finally deploy the repo to the Cloud.
   author: softchris
   ms.author: chnoring
   ms.date: 04/14/2020

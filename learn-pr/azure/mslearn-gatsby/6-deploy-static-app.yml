@@ -3,7 +3,7 @@ uid: learn.static-apps-gatsby.6-deploy-static-app
 title: Deploy static app
 metadata:
   title: Deploy static app
-  description: Deploy static app
+  description: This unit lists the different tasks we need to perform to deploy our static app successfully.
   author: softchris
   ms.author: chnoring
   ms.date: 04/14/2020

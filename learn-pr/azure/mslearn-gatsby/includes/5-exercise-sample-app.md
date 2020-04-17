@@ -1,13 +1,13 @@
 
-In this exercise we will learn to build a sample application. We will learn how to:
+In this exercise, we will learn to build a sample application. We will learn how to:
 
 - Add styling to our app
 - Use plugins to work with JSON data
-- Set up routing for wild card routes and working with context data
+- Set up routing for wild-card routes and working with context data
 
 ## Building the Sample app
 
-You can find the sample app the following GitHub repo [](TODO url to github repo)
+You can find the sample app the following GitHub repo [](TODO url to GitHub repo)
 
 Our sample application shows us different Vacations we would be willing to embark on. You will be able see all your suggestions and you can also select a specific one and learn more details about that vacation suggestion.
 
@@ -30,7 +30,7 @@ We need to do the following:
 
 ### Scaffolding our project
 
-All of our Gatsby projects starts with the usage of the Gatsby cli. To create a new project we type:
+All of our Gatsby projects start with the usage of the Gatsby CLI. To create a new project, we type:
 
 ```bash
 gatsby new wishlist
@@ -52,7 +52,7 @@ We are also going to use some styles from the library `bulma`. To install that t
 npm install bulma
 ```
 
-After that we need to open up `gatsby-config.js` and add the following entry:
+After that we need to open up `gatsby-config.js`, and add the following entry:
 
 ```javascript
 plugins: [`gatsby-plugin-sass`]
@@ -80,7 +80,7 @@ ul.list {
 
 ### Adding data
 
-Create a `data/` directory under source. In the `/data` directory create a file `wishlist.json`. Your file-system should roughly look like so:
+Create a `data/` directory under source. In the  directory, create a file `wishlist.json`. Your file-system should roughly look like so:
 
 ```bash
 - | src/
@@ -103,7 +103,7 @@ Give the file `wishlist.json` the following content:
 }]
 ```
 
-Next, we need to install a plugin for Gatsby to pick up this data and have it added to the Gatsby data Graph. To install said plugin we run the command:
+Next, we need to install a plugin for Gatsby to pick up this data and have it added to the Gatsby data Graph. To install said plugin, we run the command:
 
 ```bash
 npm install gatsby-transformer-json
@@ -121,9 +121,9 @@ Additionally we need to add some configuration in `gatsby-config.js`:
   }
 ```
 
-This is to ensure that Gatsby knows where to find the JSON data. The above reads: Look for data in the directory pointed by `path`, i.e our `/data` directory.
+This configuration is to ensure that Gatsby knows where to find the JSON data. The above reads: Look for data in the directory pointed by `path`, i.e our `/data` directory.
 
-This creates the following entries in our data Graph `allWishlistJson` and `wishlistJson`. As you can see from the naming it uses the name of the JSON file to create these entries.
+This creates the following entries in our data Graph `allWishlistJson` and `wishlistJson`. As you can see from the naming, it uses the name of the JSON file to create these entries.
 
 `allWishlistJson` is used to list all the entries and `wishlistJson` is meant for filtering down to a specific request.
 
@@ -131,7 +131,7 @@ Let's visit our GraphQL query endpoint at `http://localhost:8000/___graphql`. We
 
 ![Sample data query](../media/gatsby-sample-graphql.png)
 
-On the left 1) we can see how we expanded our `allWishListJson` resources until we found the data we needed under `allWishListJson -> edges > node`. In the middle section 2) we see how the UI constructed the data query for us being:
+On the left 1), we can see how we expanded our `allWishListJson` resources until we found the data we needed under `allWishListJson -> edges > node`. In the middle section 2) we see how the UI constructed the data query for us being:
 
 ```bash
 query MyQuery {
@@ -147,11 +147,11 @@ query MyQuery {
 }
 ```
 
-Finally on the right 3), we see the result of running the query, which corresponds to the content in our JSON file. The JSON content have now been imported into the Gatsby data Graph.
+Finally on the right 3), we see the result of running the query, which corresponds to the content in our JSON file. The JSON content has now been imported into the Gatsby data Graph.
 
 ### Creating a list component
 
-To list all the wishes in our wishlist we need to create the page component `pages/wishlist.js` with the following content:
+To list all the wishes in our wishlist, we need to create the page component `pages/wishlist.js` with the following content:
 
 ```javascript
 import React from 'react';
