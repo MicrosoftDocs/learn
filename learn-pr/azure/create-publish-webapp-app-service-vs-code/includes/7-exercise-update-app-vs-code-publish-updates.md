@@ -71,32 +71,6 @@ Your changes are complete. Let's deploy the finished website to Azure:
 
 ::: zone-end
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ::: zone pivot="pythonflask"
 
 When you have changes to deploy to the webapp, you can use the same tools in Visual Studio Code.
@@ -170,7 +144,7 @@ py -m flask run
 ```
 
 1. Open a web browser to http://127.0.0.1:5000 and confirm that the changes function correctly.
-1. Select <kbd>COMMAND-C</kbd> to stop the development server.
+1. In the terminal select <kbd>CTRL-C</kbd> to stop the development server.
 
 ## Publish the new version
 

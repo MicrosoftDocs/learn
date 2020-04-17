@@ -156,16 +156,16 @@ You can use VS Code to run all the commands and edit all the code for your webap
 Using a virtual environment avoids installing Flask into a global Python environment and gives you exact control over the libraries used in an application.  
 
 1. If the integrated terminal is not visible, on the **View** menu, click **Terminal**.
-1. To create a virutal environment named `env`, type the following command into the terminal:
+1. To create a virtual environment named `env`, type the following command into the terminal:
 
     ```console
     py -m venv env
     ```
     You will not see a success message or any other feedback.
 
-1. Open the Command Palette (Ctrl+Shift+P) and execute the **Use the Python: Select Interpreter** command.
+1. Open the Command Palette (Ctrl+Shift+P) and execute the **Python: Select Interpreter** command.
 
-    Visual Studio Code displays a list of available global environments, including the virtual environment you just created.  You should see the virtual environment named `env` in the list.  Use the arrow keys to select the `env` entry and select <kbd>enter</kbd>.
+    Visual Studio Code displays a list of available global environments, including the virtual environment you just created.  You should see the virtual environment named `env` in the list.  Use the arrow keys to select the `env` entry and select <kbd>Enter</kbd>.
 
     ![Screenshot of completed project in web browser.](../media/3-python-select-interpreter.png)
 
@@ -175,7 +175,7 @@ Using a virtual environment avoids installing Flask into a global Python environ
 
     You should now see the command line prompt prefixed with `(env)`.
 
-    ![Screenshot of VS Code's Terminal displaying commany prompt with (env) prefix.](../media/3-python-terminal-env.png)
+    ![Screenshot of VS Code's Terminal displaying command prompt with (env) prefix.](../media/3-python-terminal-env.png)
 
     > [!IMPORTANT]
     > If you do not see the prefix `(env)` on your command prompt you are not working in the virtual environment.
@@ -188,7 +188,7 @@ Using a virtual environment avoids installing Flask into a global Python environ
 ## Install Flask into the virtual environment
 
 1. If the integrated terminal is not visible, on the **View** menu, click **Terminal**.
-1. To install Flask in the virutal environment, ensure the command line is prefaced with `(env)`, execute this command in the terminal:
+1. To install Flask in the virtual environment, ensure the command line is prefaced with `(env)`, execute this command in the terminal:
 
     ```console
     pip3 install flask
