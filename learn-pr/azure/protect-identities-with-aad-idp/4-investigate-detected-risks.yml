@@ -1,32 +1,32 @@
 ### YamlMime:ModuleUnit
 uid: learn.protect-identities-with-aad-idp.4-investigate-detected-risks
 metadata:
-  title: Investigate and remediate risks detected by Identity Protection
-  description: Investigate and remediate risks detected by Identity Protection
+  title: Investigate and remediate risks detected by Azure AD Identity Protection
+  description: Investigate and remediate risks detected by Azure AD Identity Protection
   ms.date: 03/23/2019
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Investigate and remediate risks detected by Identity Protection
+title: Investigate and remediate risks detected by Azure AD Identity Protection
 durationInMinutes: 10
 content: |
   [!include[](includes/4-investigate-detected-risks.md)]
 quiz:
   title: Check your knowledge
   questions:
-  - content: Which report would you review to find devices that have been identified as part of a detected risk?
+  - content: Which report would you review to find devices that were identified as part of a detected risk?
     choices:
     - content: Risky sign-in report
       isCorrect: true
-      explanation: Information like device details and location details are included in risky sign-in reports.
+      explanation: Information like device details and location details is included in risky sign-in reports.
     - content: Risky user report
       isCorrect: false
       explanation: A risky user report shows things like lists of users at risk and a user's history of risky sign-ins.
     - content: Risky registration report
       isCorrect: false
       explanation: There's no such thing as a risky registration report.
-  - content: You want to use a risky sign-ins report to find information on risky sign-ins for the past 29 days. How can you access this report?
+  - content: You want to use a risky sign-in report to find information on risky sign-ins for the past 29 days. How can you access this report?
     choices:
     - content: You can access and download the report from the Azure portal.
       isCorrect: true
@@ -34,6 +34,6 @@ quiz:
     - content: You can't access the report from the portal because the data isn't retained any longer.
       isCorrect: false
       explanation: You can access the report. The report data is retained for 30 days. 
-    - content: You can't access the report from the portal but only if you've downloaded it in the first 30 days. 
+    - content: You can't access the report from the portal, but only if you downloaded it in the first 30 days. 
       isCorrect: false
       explanation: While it's good practice to keep a copy, you don't need to download the report if you want to view data from the last 30 days.

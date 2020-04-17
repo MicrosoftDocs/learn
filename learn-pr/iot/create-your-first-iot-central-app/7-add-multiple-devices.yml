@@ -4,7 +4,7 @@ metadata:
   title: Exercise - Continue the tests of your IoT Central device
   description: Test a device by issuing commands, and monitoring the results on the dashboard.
   ms.date: 10/17/2019
-  author: PeterTurcan
+  author: olivierbloch
   ms.author: Olivier.Bloch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

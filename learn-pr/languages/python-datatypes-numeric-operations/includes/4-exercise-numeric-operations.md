@@ -1,22 +1,20 @@
-Until now, we've been concerned with getting the data into the proper format so that we can perform mathematical operations on the numbers.  However, besides simple arithmetic, we've not explored the kinds of operations we can perform on numbers.
+Until now, you've been concerned with getting the data into the proper format so that you can perform mathematical operations on the numbers. Besides simple arithmetic, you haven't yet explored the other kinds of operations you can perform on numbers.
 
-In this unit, we'll look at several mathematical operations using Python operators.  
+In this unit, we look at several mathematical operations that use Python operators.  
 
-Other more complex operations are available from Python's math module.  Once you learn how to use other modules from Python's Standard Library, you'll understand how to take advantage of this added set of functionality.  For more information, see the following URL:
+Other, more complex operations are available from the Python math module.  After you learn how to use other modules from the [Python Standard Library](https://docs.python.org/3/library/math.html?azure-portal=true), you'll understand how to take advantage of this added set of functionality.
 
-[https://docs.python.org/3/library/math.html](https://docs.python.org/3/library/math.html?azure-portal=true)
+You can obtain additional mathematical operations and data science and visualization functionality from third-party open source libraries, such as Pandas, NumPy, SciPy, Matplotlib, and many others. Later, you'll utilize some of these libraries in more advanced modules on Microsoft Learn.
 
-Still other mathematical operations and data science and visualization functionality can be obtained from third-party Open Source libraries such as Pandas, NumPy, SciPy, Matplotlib, and many others.  We utilize some of these in more advanced modules on Microsoft Learn.
-
-In this exercise, we'll learn about operators that allow us to perform typical mathematical operations on numeric data.
+In this exercise, you learn about operators that allow you to perform typical mathematical operations on numeric data.
 
 ### Step 1 - Create a new file
 
-Assuming you're continuing from the previous unit, use the techniques you learned in previous modules to add a new code file in the current folder dedicated to this module.  For example, you might create a new file named `exercise3.py`.
+Use the techniques you learned in previous modules to add a new code file in the current folder that's dedicated to this module.  For example, you might create a file named *exercise3.py*.
 
-### Step 2 - Write code that performs various mathematical operations in the new code file.
+### Step 2 - Write code that performs various mathematical operations in the new code file
 
-Add the following code to your new code file:
+In the new code file, add the following code:
 
 ```python
 first_value = 5
@@ -36,17 +34,17 @@ print('Quotient: ' + str(quotient))
 print('Modulus: ' + str(modulus))
 print('Exponent: ' + str(exponent))
 ```
-Many of the operators are obvious, but just in case you're not sure:
+Many of the operators are obvious but if you're not sure, they're listed here:
 
-- Addition operator `+`
-- Subtraction operator `-`
-- Multiplication operator `*`
-- Division operator `/`
-- Modulus operator `%` ... this gives you the remainder (if any) after dividing two values.  Useful to know whether one value is evenly divisible.
-- Exponent operator `**` ... read like "5 to the fourth power", or 5 * 5 * 5 * 5.
+- `+`: Addition operator 
+- `-`: Subtraction operator 
+- `*`: Multiplication operator 
+- `/`: Division operator 
+- `%`: Modulus operator, which gives you the remainder (if any) after you divide one value into another. It's useful to know whether one value is evenly divisible by the other.
+- `**`: Exponent operator. For example, "5 to the fourth power" is expressed as 5 * 5 * 5 * 5.
 
 > [!NOTE]
-> In the next module, we'll learn how to use "format strings" or "f-strings" to avoid the data conversion back to string.
+> In the next module, you'll learn how to use *format strings* or *f-strings* to avoid the data conversion back to a string.
 
 If you run the code, you should see the following output:
 
@@ -59,24 +57,24 @@ Modulus: 1
 Exponent: 625
 ```
 
-### Step 3 - Comment out the previous code and add code that allows you to control the default order of operations.
+### Step 3 - Comment out the previous code and add code that allows you to control the default order of operations
 
-Python follows the PEMDAS acronym for the order of operations, which should be performed.
+Python follows the PEMDAS acronym, which indicates the order in which the operations should be performed.
 
-- **P**arenthesis - resolve operations between parenthesis first
-- **E**xponents - resolve exponents
-- **M**ultiplication - next, multiplication, order of left to right
-- **D**ivision - then division, order of left to right
-- **A**ddition - then addition, order of left to right
-- **S**ubtraction - then subtraction, order of left to right
+- **P**arentheses: Resolve operations between parentheses first.
+- **E**xponents: Resolve exponents.
+- **M**ultiplication: Perform multiplication, from left to right.
+- **D**ivision: Perform division, from left to right.
+- **A**ddition: Perform addition, from left to right.
+- **S**ubtraction: Perform subtraction, from left to right.
 
-To see this in action, comment out the previous code in the file, then add the following lines of code:
+To see this operation in action, comment out the previous code in the file, and then add the following lines of code:
 
 ```python
 print(3 + 4 * 5)
 print((3 + 4) * 5)
 ```
-In the first line, we allow the natural order of operations before introducing parentheses to control the order.  In the second line, we add parentheses around the first two values to force that to be evaluated first, then we multiply by the last value.
+In the first line, you allow the natural order of operations before introducing parentheses to control the order.  In the second line, you add parentheses around the first two values to force them to be evaluated first, and then you multiply by the last value.
 
 If you run the code, you'll see the following output.
 
@@ -84,14 +82,14 @@ If you run the code, you'll see the following output.
 23
 35
 ```
-Take a moment to observe how the placement of parentheses changes the order (and ultimately, the result) of mathematical operations.
+Take a moment to observe how the placement of parentheses changes the order and, ultimately, the result of mathematical operations.
 
 
-### Step 4 - Comment out code from previous steps and add code to investigate division more closely.
+### Step 4 - Comment out the code from previous steps and add code to investigate division more closely
 
-Let's revisit division for a moment.  When we perform division, we provide a dividend and a divisor.  If these are values are of an `int` data type, they will implicitly result in a quotient of type `float`.
+Let's revisit division for a moment.  When you perform division, you provide a dividend and a divisor.  If these are values are of an `int` data type, they will implicitly result in a quotient of type `float`.
 
-To see this in action, comment out the previous code in the file, then add the following lines of code:
+To see this in action, comment out the previous code in the file, and then add the following lines of code:
 
 ```python
 first_value = 5
@@ -110,13 +108,13 @@ If you run the code, you'll see the following output:
 1.25
 ```
 
-Usually, you will be able to work with both `int` values and `float` values without any trouble.  Occasionally, you will need to convert a `float` into an `int`.  Sometimes, this will happen implicitly (without your explicit instruction).  So, you may want to take control of that process.
+Usually, you'll be able to work with both `int` values and `float` values without any trouble.  Occasionally, you'll need to convert a `float` into an `int`.  Sometimes, this happens implicitly (without your explicit instruction).  So, you might want to take control of that process.
 
-### Step 5 - Comment out the previous code and add the code to convert a float into an int.
+### Step 5 - Comment out the previous code and add code to convert a `float` into an `int`
 
-When converting a `float` value into an `int` value, you must be aware of truncation.
+When you convert a `float` value into an `int` value, you must be aware of truncation.
 
-Comment out code from the previous steps, then add the following code listing to the code file:
+Comment out the code from the previous steps, and then add the following code listing to the code file:
 
 ```python
 pi = 3.14
@@ -160,13 +158,14 @@ If you run the code, you should see the following output:
 99
 100
 ```
+
 The `round()` function provides a way to perform rounding and conversion from a `float` value into an `int` value.
 
-### Step 6 - Comment out the previous code and add code that rounds to a specific decimal place.
+### Step 6 - Comment out the previous code and add code that rounds to a specific decimal place
 
-The built-in function `round()` can be used to round to a certain number of decimal places, not just the next whole number as we did in previous step.
+You can use the built-in function `round()` to round to a certain number of decimal places, not just the next whole number as you did in the preceding step.
 
-To see this in action, comment out the lines of code added in previous steps, then add the following lines of code:
+To see this in action, comment out the lines of code that you added in previous steps, and then add the following lines of code:
 
 ```python
 first_value = round(7.654321, 2)
@@ -175,11 +174,11 @@ print(first_value)
 second_value = round(9.87654, 3)
 print(second_value)
 ```
-By supplying a second argument when calling the `round()` function, we can control the number of decimal places to round to.
+By supplying a second argument when you call the `round()` function, you can control the number of decimal places to round to.
 
-To call a function and pass more than one argument, you use a comma symbol `,` to separate each argument.  As we'll learn when we dive deeper into functions, you can create functions that have optional input parameters.  In this case, if we do not supply the second argument, the `round()` function will default to `0` values after the decimal place, thereby giving us an `int` value.
+To call a function and pass more than one argument, you use a comma (**,**) to separate each argument.  As you'll learn when we dive deeper into functions, you can create functions that have optional input parameters.  In this case, if you don't supply the second argument, the `round()` function defaults to *0* places after the decimal, which gives you an `int` value.
 
-If you execute the code, you'll see the following result:
+If you run the code, you'll see the following result:
 
 ```output
 7.65
@@ -188,10 +187,10 @@ If you execute the code, you'll see the following result:
 
 ### Recap
 
-Here's a few important ideas to keep in mind from this unit:
+Here are a few important ideas to keep in mind from this unit:
 
-- Operators are mini short-cut functions that perform an operation on one or more operands (literal or variable values, etc.)
-- There are built in mathematical operators for most common needs.  More advanced mathematical operations have been addressed by the math module in the Python Standard Library. Other third-party Open Source libraries cover a wide range of functionality needed in Data Science, data visualization, and Machine Learning.
+- Operators are mini shortcut functions that perform an operation on one or more operands (literal or variable values, and so forth).
+- There are built-in mathematical operators for most common needs.  More advanced mathematical operations have been addressed by the math module in the Python Standard Library. Other third-party, open source libraries cover a wide range of functionality that's needed in data science, data visualization, and machine learning.
 - The order of mathematical operations in Python follows the rules of PEMDAS.
-- When converting from a value of type `float` to a value of type `int`, values after the decimal will be truncated and lost.  Use the `round()` function to control how values are rounded.
-- Some functions are defined with multiple input parameters.  To pass multiple arguments to the function, you use the comma symbol `,` between each argument.  Sometimes, arguments are optional.  In these cases, the function continues to operator, but uses a default value or alternative implementation.
+- When you convert from a value of type `float` to a value of type `int`, values after the decimal are truncated and lost.  Use the `round()` function to control how values are rounded.
+- Some functions are defined with multiple input parameters.  To pass multiple arguments to the function, you use a comma (**,**) between each argument.  Sometimes, arguments are optional.  In these cases, the function continues to operate, but it uses a default value or alternative implementation.

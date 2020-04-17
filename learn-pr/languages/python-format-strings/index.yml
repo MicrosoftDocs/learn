@@ -12,16 +12,16 @@ title: Manipulate and format string data for display in Python
 summary: Use built-in features of the string class and other helper methods to control string data.
 abstract: |
   In this module, you will:
-  - Use escape characters in literal strings to add new lines, tabs and more.
+  - Use escape characters in literal strings to add new lines and tabs.
   - Use features of the `print()` function to format strings for display.
-  - Call one of many built-in functions to strip empty spaces, add padding, find and replace substrings, and much more.
-  - Use the `format()` function to create a format string containing a series of replacement fields
+  - Call one of many built-in functions to strip empty spaces, add padding, and find and replace substrings.
+  - Use the `format()` function to create a format string that contains a series of replacement fields.
 prerequisites: |
-  - You should know how to create a working folder and add code files.
-  - You should know how to execute a Python code file using either tooling support in Visual Studio Code or from the command line.
-  - You should understand how you can pass values as arguments to a function.
-  - You should have worked with the `print()` function, variables and literal strings, as well as numeric data.
-  - You should be aware that you can call helper functions on a data type, a literal value and a variable.
+  - Know how to create a working folder and add code files.
+  - Know how to run a Python code file by using either tooling support in Visual Studio Code or the command line.
+  - Understand how you can pass values as arguments to a function.
+  - Have experience with the `print()` function, variables and literal strings, and numeric data.
+  - Have awareness of calling helper functions on a data type, a literal value, and a variable.
 ratingEnabled: true
 iconUrl: /learn/achievements/generic-badge.svg
 levels:

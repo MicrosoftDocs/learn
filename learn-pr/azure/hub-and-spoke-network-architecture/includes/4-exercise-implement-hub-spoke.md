@@ -11,7 +11,7 @@ This deployment will create the Azure network resources matching the preceding d
 First, create the virtual networks and subnets for your server resources. Run the following command:
 
 ```azurecli
-az group deployment create \
+az deployment group create \
     --resource-group <rgn>[sandbox resource group name]</rgn> \
     --template-uri https://raw.githubusercontent.com/MicrosoftDocs/mslearn-hub-and-spoke-network-architecture/master/azuredeploy.json
 ```

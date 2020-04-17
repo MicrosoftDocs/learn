@@ -4,8 +4,7 @@ On the other hand, virtualization relaxes physical constraints and enables optim
 
 Nonetheless, the unique benefits offered by virtualization come at some cost. For instance, the degree of isolation comes at the cost of efficiency. Efficiency can be measured in terms of overall execution time. In general, VMs provide inferior performance compared to equivalent physical machines. This is mainly due to (1) the overhead of context switching between VMs and the hypervisor, and (2) the duplication of efforts by the hypervisor and the OSs running in VMs (e.g., all might be running schedulers, managing virtual memories, and interpreting I/O requests).
 
-Figure 4 demonstrates approximate logical locations of the two leading examples in virtualization, Xen Project and VMware ESX (more on these later in the module) vis-à-vis some traditional OSs along the efficiency and isolation dimensions. The x-axis indicates the kind of isolation supported by the shown hypervisors and OSs, and the y-axis exhibits qualitative efficiency. A basic observation is that, to date (March 2013), there is no VM technology that has reached the ideal case of maximizing both efficiency and isolation.
-
+Figure 4 demonstrates approximate logical locations of the two leading examples in virtualization, Xen Project and VMware ESXi (more on these later in the module) vis-à-vis some traditional OSs along the efficiency and isolation dimensions. The x-axis indicates the kind of isolation supported by the shown hypervisors and OSs, and the y-axis exhibits qualitative efficiency. A basic observation is that, to date, there is no VM technology that has reached the ideal case of maximizing both efficiency and isolation.
 
 ![Traditional operating systems and popular hypervisors along the efficiency and isolation dimensions](../media/os-hypervisors-isolation-dimensions.png)
 
