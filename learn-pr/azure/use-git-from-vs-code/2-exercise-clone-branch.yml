@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.use-git-from-vs-code.exercise-clone-branch
-title: Exercise - Clone a repository and create a branch using Visual Studio Code's Git integration
+title: Exercise - Clone a repository and create a branch
 metadata:
-  title: Exercise - Clone a repository and create a branch using Visual Studio Code's Git integration
-  description: Use built-in Git tools to perform common commands using shortcuts and visual cues in Visual Studio Code.
+  title: Exercise - Clone a repository and create a branch
+  description: Perform common tasks in Visual Studio Code by using shortcuts, visual cues, and built-in Git tools.
   ms.date: 3/18/2020
   author: bobtabor-msft
   ms.author: rotabor
